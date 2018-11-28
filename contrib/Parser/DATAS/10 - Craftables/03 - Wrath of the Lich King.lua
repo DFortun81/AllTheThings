@@ -214,6 +214,114 @@ _.Craftables =
 				i(45849),	-- Twilight Tome
 			}),
 		}),
+		n(-186, { 	-- Jewelcrafting
+		-- Reviewed and updated as of 11.27.2018 BfA 8.0
+			filter(51, {	-- Neck
+				{	-- Blood Sun Necklace
+					["itemID"] = 42339,	-- Blood Sun Necklace
+				},
+				{	-- Crystal Chalcedony Amulet
+					["itemID"] = 43245,	-- Crystal Chalcedony Amulet
+				},
+				{	-- Crystal Citrine Necklace
+					["itemID"] = 43244,	-- Crystal Citrine Necklace
+				},
+				{	-- Emerald Choker
+					["itemID"] = 45812,	-- Emerald Choker
+				},
+				{	-- Jade Dagger Pendant
+					["itemID"] = 42338,	-- Jade Dagger Pendant
+				},
+				{	-- Sky Sapphire Amulet
+					["itemID"] = 45813,	-- Sky Sapphire Amulet
+				},
+				{	-- Titanium Earthguard Chain
+					["itemID"] = 42646,	-- Titanium Earthguard Chain
+				},
+				{	-- Titanium Impact Choker
+					["itemID"] = 42645,	-- Titanium Impact Choker
+				},
+				{	-- Titanium Spellshock Necklace
+					["itemID"] = 42647,	-- Titanium Spellshock Necklace
+				},
+			}),
+			filter(52, {	-- Finger
+				{	-- Bloodstone Band
+					["itemID"] = 42336,	-- Bloodstone Band
+				},
+				{	-- Dream Signet
+					["itemID"] = 42340,	-- Dream Signet
+				},
+				{	-- Earthshadow Ring
+					["itemID"] = 43246,	-- Earthshadow Ring
+				},
+				{	-- Jade Ring of Slaying
+					["itemID"] = 43247,	-- Jade Ring of Slaying
+				},
+				{	-- Ring of Earthen Might
+					["itemID"] = 43250,	-- Ring of Earthen Might
+				},
+				{	-- Ring of Northern Tears
+					["itemID"] = 43253,	-- Ring of Northern Tears
+				},
+				{	-- Ring of Scarlet Shadows
+					["itemID"] = 43251,	-- Ring of Scarlet Shadows
+				},
+				{	-- Runed Mana Band
+					["itemID"] = 45808,	-- Runed Mana Band
+				},
+				{	-- Savage Titanium Band
+					["itemID"] = 43498,	-- Savage Titanium Band
+				},
+				{	-- Savage Titanium Ring
+					["itemID"] = 43482,	-- Savage Titanium Ring
+				},
+				{	-- Scarlet Signet
+					["itemID"] = 45809,	-- Scarlet Signet
+				},
+				{	-- Shadowmight Ring
+					["itemID"] = 43249,	-- Shadowmight Ring
+				},
+				{	-- Stoneguard Band
+					["itemID"] = 43248,	-- Stoneguard Band
+				},
+				{	-- Sun Rock Ring
+					["itemID"] = 42337,	-- Sun Rock Ring
+				},
+				{	-- Titanium Earthguard Ring
+					["itemID"] = 42643,	-- Titanium Earthguard Ring
+				},
+				{	-- Titanium Frostguard Ring
+					["itemID"] = 43582,	-- Titanium Frostguard Ring
+				},
+				{	-- Titanium Impact Band
+					["itemID"] = 42642,	-- Titanium Impact Band
+				},
+				{	-- Titanium Spellshock Ring
+					["itemID"] = 42644,	-- Titanium Spellshock Ring
+				},
+				{	-- Windfire Band
+					["itemID"] = 43252,	-- Windfire Band
+				},
+			}),
+			filter(53, {	-- Trinket
+				{	-- Figurine - Emerald Boar
+					["itemID"] = 42418,	-- Figurine - Emerald Boar
+				},
+				{	-- Figurine - Monarch Crab
+					["itemID"] = 44063,	-- Figurine - Monarch Crab
+				},
+				{	-- Figurine - Ruby Hare
+					["itemID"] = 42341,	-- Figurine - Ruby Hare
+				},
+				{	-- Figurine - Sapphire Owl
+					["itemID"] = 42413,	-- Figurine - Sapphire Owl
+				},
+				{	-- Figurine - Twilight Serpent
+					["itemID"] = 42395,	-- Figurine - Twilight Serpent
+				},
+			}),
+		}),
 		n(-187, { 	-- Leatherworking
 			n(-322, { 	-- Cloak
 				i(38441),	-- Cloak of Harsh Winds

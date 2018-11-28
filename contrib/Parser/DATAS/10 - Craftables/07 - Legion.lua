@@ -216,10 +216,105 @@ _.Craftables =
 			}),
 		}),
 		n(-186, { -- Jewelcrafting
-			i(151587),	-- Empyrial Cosmic Crown
-			i(151588),	-- Empyrial Deep Crown
-			i(151589),	-- Empyrial Elemental Crown
-			i(151590),	-- Empyrial Titan Crown
+		-- Reviewed and updated as of 11.27.2018 BfA 8.0
+			filter(102, {	-- Toy
+				{	-- Chatterstone
+					["itemID"] = 130254,	-- Chatterstone
+				},
+				{	-- JewelCraft
+					["itemID"] = 130251,	-- JewelCraft
+				},
+			}),
+			n(-320, {		-- Head
+				{	-- Empyrial Cosmic Crown
+					["itemID"] = 151587,	-- Empyrial Cosmic Crown
+				},
+				{	-- Empyrial Deep Crown
+					["itemID"] = 151588,	-- Empyrial Deep Crown
+				},
+				{	-- Empyrial Elemental Crown
+					["itemID"] = 151589,	-- Empyrial Elemental Crown
+				},
+				{	-- Empyrial Titan Crown
+					["itemID"] = 151590,	-- Empyrial Titan Crown
+				},
+			}),
+			filter(51, {	-- Neck
+				{	-- Ancient Maelstrom Amulet
+					["itemID"] = 130241,	-- Ancient Maelstrom Amulet
+				},
+				{	-- Azsunite Pendant
+					["itemID"] = 130228,	-- Azsunite Pendant
+				},
+				{	-- Blessed Dawnlight Medallion
+					["itemID"] = 130234,	-- Blessed Dawnlight Medallion
+				},
+				{	-- Deep Amber Pendant
+					["itemID"] = 130226,	-- Deep Amber Pendant
+				},
+				{	-- Grim Furystone Gorget
+					["itemID"] = 130244,	-- Grim Furystone Gorget
+				},
+				{	-- Intrepid Necklace of Prophecy
+					["itemID"] = 130240,	-- Intrepid Necklace of Prophecy
+				},
+				{	-- Queen's Opal Pendant
+					["itemID"] = 136712,	-- Queen's Opal Pendant
+				},
+				{	-- Raging Furystone Gorget
+					["itemID"] = 130243,	-- Raging Furystone Gorget
+				},
+				{	-- Righteous Dawnlight Medallion
+					["itemID"]	= 130242,	-- Righteous Dawnlight Medallion
+				},
+				{	-- Skystone Pendant
+					["itemID"] = 130227,	-- Skystone Pendant
+				},
+				{	-- Sorcerous Shadowruby Pendant
+					["itemID"] = 130233,	-- Sorcerous Shadowruby Pendant
+				},
+				{	-- Subtle Shadowruby Pendant
+					["itemID"] = 130236,	-- Subtle Shadowruby Pendant
+				},
+				{	-- Slyvan Maelstrom Amulet
+					["itemID"] = 130239,	-- Slyvan Maelstrom Amulet
+				},
+				{	-- Tranquil Necklace of Prophecy
+					["itemID"] = 130237,	-- Tranquil Necklace of Prophecy
+				},
+				{	-- Twisted Pandemonite Choker
+					["itemID"] = 130235,	-- Twisted Pandemonite Choker
+				},
+				{	-- Vindictive Pandemonite Choker
+					["itemID"] = 130238,	-- Vindictive Pandemonite Choker
+				},
+			}),
+			filter(52, {	-- Finger
+				{	-- Azsunite Loop
+					["itemID"] = 130225,	-- Azsunite Loop
+				},
+				{	-- Dawnlight Band
+					["itemID" ] = 130231,	-- Dawnlight Band
+				},
+				{	-- Deep Amber Loop
+					["itemID"] = 130223,	-- Deep Amber Loop
+				},
+				{	-- Maelstrom Band
+					["itemID"] = 130230,	-- Maelstrom Band
+				},
+				{	-- Prophetic Band
+					["itemID"] = 130229,	-- Prophetic Band
+				},
+				{	-- Queen's Opal Loop
+					["itemID"] = 136711,	-- Queen's Opal Loop
+				},
+				{	-- Shadowruby Band
+					["itemID"] = 136713,	-- Shadowruby Band
+				},
+				{	-- Skystone Loop
+					["itemID"] = 130224,	-- Skystone Loop
+				},
+			}),
 		}),
 		n(-187, { -- Leatherworking
 			n(-349, { 	-- Cosmetic		

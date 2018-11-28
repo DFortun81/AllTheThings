@@ -199,19 +199,50 @@ _.Craftables =
 			}),
 		}),
 		n(-186, { -- Jewelcrafting
-			i(153686),	-- Amberblaze Loop
-			i(153689),	-- Golden Beryl Ring
-			i(159939),	-- Honorable Combatant's Staff of Intuition
-			i(153688),	-- Kubiline Ring
-			i(153687),	-- Kyanite Ring
-			i(153639),	-- Laribole Staff of Alacrity
-			i(153685),	-- Owlseye Loop
-			i(153683),	-- Royal Quartz Loop
-			i(153637),	-- Rubellite Staff of Intuition
-			i(153640),	-- Scarlet Diamond Staff of Intuition
-			i(153690),	-- Solstone Ring
-			i(153684),	-- Tidal Amethyst Loop
-			i(153638),	-- Viridium Staff of Alacrity
+		-- Reviewed and updated as of 11.27.2018 BfA 8.0
+			filter(28, {	-- Staves
+				{	-- Honorable Combatant's Staff of Intuition
+					["itemID"] = 159939,	-- Honorable Combatant's Staff of Intuition
+				},
+				{	-- Laribole Staff of Alacrity
+					["itemID"] = 153639,	-- Laribole Staff of Alacrity
+				},
+				{	-- Rubellite Staff of Intuition
+					["itemID"] = 153637,	-- Rubellite Staff of Intuition
+				},
+				{	-- Scarlet Diamond Staff of Intuition
+					["itemID"] = 153640,	-- Scarlet Diamond Staff of Intuition
+				},
+				{	-- Viridium Staff of Alacrity
+					["itemID"] = 153638,	-- Viridium Staff of Alacrity
+				},
+			}),
+			filter(52, {	-- Finger
+				{	-- Amberblaze Loop
+					["itemID"] = 153686,	-- Amberblaze Loop
+				},
+				{	-- Golden Beryl Ring
+					["itemID"] = 153689,	-- Golden Beryl Ring
+				},
+				{	-- Kubiline Ring
+					["itemID"] = 153688,	-- Kubiline Ring
+				},
+				{	-- Kyanite Ring
+					["itemID"] = 153687,	-- Kyanite Ring
+				},
+				{	-- Owlseye Loop
+					["itemID"] = 153685,	-- Owlseye Loop
+				},
+				{	-- Royal Quartz Loop
+					["itemID"] = 153683,	-- Royal Quartz Loop
+				},
+				{	-- Solstone Ring
+					["itemID"] = 153690,	-- Solstone Ring
+				},
+				{	-- Tidal Amethyst Loop
+					["itemID"] = 153684,	-- Tidal Amethyst Loop
+				},
+			}),
 		}),
 		n(-187, { -- Leatherworking
 			i(154145),	-- Coarse Leather Armguards

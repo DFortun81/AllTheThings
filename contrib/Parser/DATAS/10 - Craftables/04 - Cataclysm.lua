@@ -167,20 +167,95 @@ _.Craftables =
 			}),
 		}),
 		n(-186, { 	-- Jewelcrafting
-			i(52492),	-- Carnelian Spikes
-			i(52493),	-- The Perforator
-			i(52487,  {	-- Jeweler's Amber Monocle
-				["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
+		-- Reviewed and updated as of 11.27.2018 BfA 8.0
+			filter(34, {	-- Fist Weapons
+				{	-- Carnelian Spikes
+					["itemID"] = 52492,	-- Carnelian Spikes
+				},
+				{	-- The Perforator
+					["itemID"] = 52493,	-- The Perforator
+				},
 			}),
-			i(52485, {	-- Jeweler's Ruby Monocle
-				["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
+			n(-320, {		-- Head
+				{	-- Jeweler's Amber Monocle
+					["itemID"] = 52487,	-- Jeweler's Amber Monocle
+					["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
+				},
+				{	-- Jeweler's Ruby Monocle
+					["itemID"] = 52485,	-- Jeweler's Ruby Monocle
+					["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
+				},
+				{	-- Jeweler's Sapphire Monocle
+					["itemID"] = 52486,	-- Jeweler's Sapphire Monocle
+					["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
+				},
+				{	-- Rhinestone Sunglasses
+					["itemID"] = 52489,	-- Rhinestone Sunglasses
+					["u"] = 15,
+					["description"] = "To learn this specific item you will need to buy the Black Market AH version",
+				},
 			}),
-			i(52486, {	-- Jeweler's Sapphire Monocle
-				["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
+			filter(51, {	-- Neck
+				{	-- Alicite Pendant
+					["itemID"] = 52307,	-- Alicite Pendant
+				},
+				{	-- Brazen Elementium Medallion
+					["itemID"]=  52350,	-- Brazen Elementium Medallion
+				},
+				{	-- Elementium Guardian
+					["itemID"] = 52323,	-- Elementium Guardian
+				},
+				{	-- Entwined Elementium Choker
+					["itemID"] = 52321,	-- Entwined Elementium Choker
+				},
+				{	-- Eye of Many Deaths
+					["itemID"] = 52322,	-- Eye of Many Deaths
+				},
+				{	-- Nightstone Choker
+					["itemID"] = 52309,	-- Nightstone Choker
+				},
+				{	-- Vicious Amberjewel Pendant
+					["itemID"] = 75075,	-- Vicious Amberjewel Pendant
+				},
+				{	-- Vicious Ruby Choker
+					["itemID"] = 75078,	-- Vicious Ruby Choker
+				},
+				{	-- Vicious Sapphire Necklace
+					["itemID"] = 75074,	-- Vicious Sapphire Necklace
+				},
 			}),
-			un(15, i(52489, {	-- Rhinestone Sunglasses
-				["description"] = "To learn this specific item you will need to buy the Black Market AH version",
-			})),
+			filter(52, {	-- Finger
+				{	-- Band of Blades
+					["itemID"] = 52318,	-- Band of Blades
+				},
+				{	-- Elementium Destroyer's Ring
+					["itemID"] = 52348,	-- Elementium Destroyer's Ring
+				},
+				{	-- Elementium Moebius Band
+					["itemID"] = 52320,	-- Elementium Moebius Band
+				},
+				{	-- Hessonite Band
+					["itemID"] = 52308,	-- Hessonite Band
+				},
+				{	-- Jasper Ring
+					["itemID"] = 52306,	-- Jasper Ring
+				},
+				{	-- Punisher's Band
+					["itemID"] = 69852,
+				},
+				{	-- Ring of Warring Elements
+					["itemID"] = 52319,	-- Ring of Warring Elements
+				},
+				{	-- Vicious Amberjewel Band
+					["itemID"] = 75068,	-- Vicious Amberjewel Band
+				},
+				{	-- Vicious Ruby Signet
+					["itemID"] = 75071,	-- Vicious Ruby Signet
+				},
+				{	-- Vicious Sapphire Ring
+					["itemID"] = 75067,	-- Vicious Sapphire Ring
+				},
+			}),
 		}),
 		n(-187, { 	-- Leatherworking
 			n(-322, { 	-- Cloak

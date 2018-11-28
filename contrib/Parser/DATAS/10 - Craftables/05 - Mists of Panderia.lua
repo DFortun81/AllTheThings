@@ -5,7 +5,7 @@ _.Craftables =
 {
 	tier(5, { -- Mists of Pandaria
 		n(-180, {	-- Alchemy
---[[	20.Nov.2018 - automation should handle discovery. Leaving this here incase we change our mind later
+--[[	20.Nov.2018 - automation should handle discovery. Leaving this here in case we change our mind later
 			n(-37, {	-- Discovery
 				["description"] = "These recipes can be discovered randomly by crafting Mists of Pandaria potions, elixirs, flasks or transmutations.",
 				["groups"] = {
@@ -48,7 +48,7 @@ _.Craftables =
 				i(75274),	-- Zen Alchemist Stone
 			}),
 		}),
-		n(-181, { -- Blacksmithing
+		n(-181, { 	-- Blacksmithing
 			n(-319, { -- Weapons
 				i(94587, {	-- Fireguard, Reborn
 					i(94589, {	-- Blazeguard, Reborn
@@ -231,7 +231,7 @@ _.Craftables =
 				i(87405),	-- Unyielding Bloodplate
 			}),
 		}),
-		n(-183, { -- Engineering
+		n(-183, { 	-- Engineering
 			n(-494, { -- Miscellaneous
 				n(43929, { -- Blingtron 4000
 					i(86623, { -- Blingtron 4000 Gift Package
@@ -262,7 +262,7 @@ _.Craftables =
 			i(77539),	-- Reinforced Retinal Armor
 			i(77538),	-- Specialized Retinal Armor
 		}),
-		n(-185, { -- Inscription
+		n(-185, { 	-- Inscription
 		-- Reviewed and updated as of 11.21.2018 BfA 8.0
 			n(-491, { -- Tarot Cards
 				sp(111830, {	-- Darkmoon Card of Mists
@@ -304,7 +304,75 @@ _.Craftables =
 				}),
 			}),
 		}),
-		n(-187, { -- Leatherworking
+		n(-186, { 	-- Jewelcrafting
+		-- Reviewed and updated as of 11.27.2018 BfA 8.0
+			filter(100, {	-- Mount
+				{	-- Jade Panther
+					["itemID"] = 83088,	-- Jade Panther
+				},
+				{	-- Jeweled Onyx Panther
+					["itemID"] = 82453,	-- Jeweled Onyx Panther
+				},
+				{	-- Ruby Panther
+					["itemID"] = 83087,	-- Ruby Panther
+				},
+				{	-- Sapphire Panther
+					["itemID"] = 83090,	-- Sapphire Panther
+				},
+				{	-- Sunstone Panther
+					["itemID"] = 83089,	-- Sunstone Panther
+				},
+			}),
+			filter(102, {	-- Toy
+				{	-- Jade Owl
+					["itemID"] = 82774,	-- Jade Owl
+				},
+				{	-- Sapphire Cub
+					["itemID"] = 82775, -- Sapphire Cub
+				},
+			}),
+			filter(51, {	-- Neck
+				{	-- Golembreaker Amulet
+					["itemID"] = 83803,	-- Golembreaker Amulet
+				},
+				{	-- Reflection of the Sea
+					["itemID"] = 83802,	-- Reflection of the Sea
+				},
+				{	-- Shadowfire Necklace
+					["itemID"] = 83794,	-- Shadowfire Necklace
+				},
+				{	-- Skymage Circle
+					["itemID"] = 83805,	-- Skymage Circle
+				},
+				{	-- Tiger Opal Pendant
+					["itemID"] = 83806,	-- Tiger Opal Pendant
+				},
+				{	-- Widow Chain
+					["itemID"] = 83804,	-- Widow Chain
+				},
+			}),
+			filter(52, {	-- Finger
+				{	-- Band of Blood
+					["itemID"] = 83801,	-- Band of Blood
+				},
+				{	-- Heart of the Earth
+					["itemID"] = 83796,	-- Heart of the Earth
+				},
+				{	-- Lionsfall Ring
+					["itemID"] = 83800,	-- Lionsfall Ring
+				},
+				{	-- Lord's Signet
+					["itemID"] = 83799,	-- Lord's Signet
+				},
+				{	-- Ornate Band
+					["itemID"] = 83793,	-- Ornate Band
+				},
+				{	-- Roguestone Shadowband
+					["itemID"] = 83798,	-- Roguestone Shadowband
+				},
+			}),
+		}),
+		n(-187, { 	-- Leatherworking
 			n(-322, { 	-- Cloak
 				i(85851),	-- Misthide Drape
 				i(85852),	-- Quick Strike Cloak
@@ -559,7 +627,7 @@ _.Craftables =
 				i(85848),	-- Stormscale Shoulders
 			}),
 		}),
-		n(-190, { -- Tailoring
+		n(-190, { 	-- Tailoring
 			n(-37, {	-- Discovery
 				spell(143011, {	-- Celestial Cloth
 					recipe(142964),	-- Belt of the Night Sky

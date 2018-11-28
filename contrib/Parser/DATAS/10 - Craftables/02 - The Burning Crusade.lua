@@ -256,31 +256,172 @@ _.Craftables =
 			}),
 		}),
 		n(-186, { 	-- Jewelcrafting
-			n(-320, {	-- Head
-				i(24123),	-- Circlet of Arcane Might
-				i(24122),	-- Coronet of Verdant Flame
-				i(32776),	-- Crown of the Sea Witch
-				i(21774),	-- Emerald Crown of Destruction
-				i(20954),	-- Heavy Iron Knuckles
-				i(20832),	-- Moonsoul Crown
-				i(20969),	-- Ruby Crown of Restoration
-				un(1, i(21780)),	-- Blood Crown
+		-- Reviewed and updated as of 11.26.2018 BfA 8.0
+			n(-320, {		-- Head
+				{	-- Blood Crown
+					["itemID"] = 21780,	-- Blood Crown
+					["u"] = 1,
+				},
+				{	-- Circlet of Arcane Might
+					["itemID"] = 24123,	-- Circlet of Arcane Might
+				},
+				{	-- Coronet of Verdant Flame
+					["itemID"] = 24122,	-- Coronet of Verdant Flame
+				},
+				{	-- Crown of the Sea Witch
+					["itemID"] = 32776,	-- Crown of the Sea Witch
+				},
 			}),
 			filter(51, {	-- Neck
-				i(24114),	-- Braided Eternium Chain
-				i(24121),	-- Chain of the Twilight Owl
-				i(24117),	-- Embrace of the Dawn
-				i(24116),	-- Eye of the Night
-				i(24110),	-- Living Ruby Pendant
-				i(32508),	-- Necklace of the Deep
-				i(24092),	-- Pendant of Frozen Flame
-				i(24097),	-- Pendant of Shadow's End
-				i(24093),	-- Pendant of Thawing
-				i(24098),	-- Pendant of the Null Rune
-				i(24095),	-- Pendant of Withering
-				i(24077),	-- Thick Adamantite Necklace
-				i(24106),	-- Thick Felsteel Necklace
-				un(1, i(21793)),	-- Arcanite Sword Pendant
+				{	-- Arcanite Sword Pendant
+					["itemID"] = 21793,	-- Arcanite Sword Pendant
+					["u"] = 1,
+				},
+				{	-- Amulet of Flowing Life
+					["itemID" ] = 34360,	-- Amulet of Flowing Life
+				},
+				{	-- Braided Eternium Chain
+					["itemID"] = 24114,	-- Braided Eternium Chain
+				},
+				{	-- Chain of the Twilight Owl
+					["itemID"] = 24121,	-- Chain of the Twilight Owl
+				},
+				{	-- Embrace of the Dawn
+					["itemID"] = 24117,	-- Embrace of the Dawn
+				},
+				{	-- Eye of the Night
+					["itemID"] = 24116,	-- Eye of the Night
+				},
+				{	-- Hard Khorium Choker
+					["itemID" ] = 34358,	-- Hard Khorium Choker
+				},
+				{	-- Living Ruby Pendant
+					["itemID"] = 24110,	-- Living Ruby Pendant
+				},
+				{	-- Necklace of the Deep
+					["itemID"] = 32508,	-- Necklace of the Deep
+				},
+				{	-- Pendant of Frozen Flame
+					["itemID"] = 24092,	-- Pendant of Frozen Flame
+				},
+				{	-- Pendant of Shadow's End
+					["itemID"] = 24097,	-- Pendant of Shadow's End
+				},
+				{	-- Pendant of Sunfire
+					["itemID"] = 34359,	-- Pendant of Sunfire
+				},
+				{	-- Pendant of Thawing
+					["itemID"] = 24093,	-- Pendant of Thawing
+				},
+				{	-- Pendant of the Null Rune
+					["itemID"] = 24098,	-- Pendant of the Null Rune
+				},
+				{	-- Thick Adamantite Necklace
+					["itemID"] = 24077,	-- Thick Adamantite Necklace
+				},
+				{	-- Thick Felsteel Necklace
+					["itemID"] = 24106,	-- Thick Felsteel Necklace
+				},
+				{	-- Pendant of Withering
+					["itemID"] = 24095,	-- Pendant of Withering
+				},
+			}),
+			filter(52, {	-- Finger
+				{	-- Arcane Khorium Band
+					["itemID"] = 24086,	-- Arcane Khorium Band
+				},
+				{	-- Azure Moonstone Ring
+					["itemID"] = 24076,	-- Azure Moonstone Ring
+				},
+				{	-- Band of Natural Fire
+					["itemID"] = 21779,	-- Band of Natural Fire
+				},
+				{	-- Blazing Eternium Band
+					["itemID"] = 24089,	-- Blazing Eternium Band
+				},
+				{	-- Brilliant Pearl Band
+					["itemID"] = 32772,	-- Brilliant Pearl Band
+				},
+				{	-- Delicate Eternium Ring
+					["itemID"] = 24088,	-- Delicate Eternium Ring
+				},
+				{	-- Fel Iron Blood Ring
+					["itemID"] = 24074,	-- Fel Iron Blood Ring
+				},
+				{	-- Golden Draenite Ring
+					["itemID"] = 24075,	-- Golden Draenite Ring
+				},
+				{	-- Hard Khorium Band
+					["itemID"] = 34361,	-- Hard Khorium Band
+				},
+				{	-- Heavy Adamantite Ring
+					["itemID"] = 24078,	-- Heavy Adamantite Ring
+				},
+				{	-- Heavy Felsteel Ring
+					["itemID"] = 24087,	-- Heavy Felsteel Ring
+				},
+				{	-- Khorium Band of Frost
+					["itemID"] = 24080,	-- Khorium Band of Frost
+				},
+				{	-- Khorium Band of Leaves
+					["itemID"] = 24085,	-- Khorium Band of Leaves
+				},
+				{	-- Khorium Band of Shadows
+					["itemID"] = 24079,	-- Khorium Band of Shadows
+				},
+				{	-- Khorium Inferno Band
+					["itemID"] = 24082,	-- Khorium Inferno Band
+				},
+				{	-- Loop of Forged Power
+					["itemID"] = 34362,	-- Loop of Forged Power
+				},
+				{	-- Ring of Arcane Shielding
+					["itemID"] = 30825,	-- Ring of Arcane Shielding
+				},
+				{	-- Ring of Flowing Life
+					["itemID"] = 34363,	-- Ring of Flowing Life
+				},
+				{	-- The Black Pearl
+					["itemID"] = 32774,	-- The Black Pearl
+				},
+				{	-- The Frozen Eye
+					["itemID"] = 31398,	-- The Frozen Eye
+				},
+				{	-- The Natural Ward
+					["itemID"] = 31399,	-- The Natural Ward
+				},
+			}),
+			filter(53, {	-- Trinket
+				{	-- Figurine - Crimson Serpent
+					["itemID"] = 35700,	-- Figurine - Crimson Serpent
+				},
+				{	-- Figurine - Dawnstone Crab
+					["itemID"] = 24125,	-- Figurine - Dawnstone Crab
+				},
+				{	-- Figurine - Empyrean Tortoise
+					["itemID"] = 35693,	-- Figurine - Empyrean Tortoise
+				},
+				{	-- Figurine - Felsteel Boar
+					["itemID"] = 24124,	-- Figurine - Felsteel Boar
+				},
+				{	-- Figurine - Khorium Boar
+					["itemID"] = 35694,	-- Figurine - Khorium Boar
+				},
+				{	-- Figurine - Living Ruby Serpent
+					["itemID"] = 24126,	-- Figurine - Living Ruby Serpent
+				},
+				{	-- Figurine - Nightseye Panther
+					["itemID"] = 24128,	-- Figurine - Nightseye Panther
+				},
+				{	-- Figurine - Seaspray Albatross
+					["itemID"] = 35703,	-- Figurine - Seaspray Albatross
+				},
+				{	-- Figurine - Shadowsong Panther
+					["itemID"] = 35702,	-- Figurine - Shadowsong Panther
+				},
+				{	-- Figurine - Talasite Owl
+					["itemID"] = 24127,	-- Figurine - Talasite Owl
+				},
 			}),
 		}),
 		n(-187, { 	-- Leatherworking

@@ -105,6 +105,46 @@ _.Craftables =
 				WOD_CRAFTED_ITEM(113131),	-- Warmaster's Firestick
 			}),
 		}),
+		n(-186, { 	-- Jewelcrafting
+		-- Reviewed and updated as of 11.27.2018 BfA 8.0
+			filter(51, {	-- Neck
+				{	-- Glowing Iron Choker
+					["itemID"] = 115990,	-- Glowing Iron Choker
+				},
+				WOD_CRAFTED_ITEM(115799),	-- Glowing Taladite Pendant
+				{	-- Shifting Iron Choker
+					["itemID"] = 115991,	-- Shifting Iron Choker
+				},
+				WOD_CRAFTED_ITEM(115800),	-- Shifting Taladite Pendant
+				{	-- Whispering Iron Choker
+					["itemID"] = 115992,	-- Whispering Iron Choker
+				},
+				WOD_CRAFTED_ITEM(115801),	-- Whispering Taladite Pendant
+			}),
+			filter(52, {	-- Finger
+				{	-- Glowing Blackrock Band
+					["itemID"] = 115993,	-- Glowing Blackrock Band
+				},
+				{	-- Glowing Iron Band
+					["itemID"] = 115987,	-- Glowing Iron Band
+				},
+				WOD_CRAFTED_ITEM(115794),	-- Glowing Taladite Ring
+				{	-- Shifting Blackrock Band
+					["itemID"] = 115994,	-- Shifting Blackrock Band
+				},
+				{	-- Shifting Iron Band
+					["itemID"] = 115988,	-- Shifting Iron Band
+				},
+				WOD_CRAFTED_ITEM(115796),	-- Shifting Taladite Ring
+				{	-- Whispering Blackrock Band
+					["itemID"] = 115995,	-- Whispering Blackrock Band
+				},
+				{	-- Whispering Iron Band
+					["itemID"] = 115989,	-- Whispering Iron Band
+				},
+				WOD_CRAFTED_ITEM(115798),	-- Whispering Taladite Ring
+			}),
+		}),
 		n(-187, { 	-- Leatherworking
 			n(-322, { 	-- Cloak
 				WOD_CRAFTED_ITEM(116175),	-- Brilliant Burnished Cloak

@@ -419,12 +419,16 @@ _.Zones =
 								["classes"] = { 4 },
 							})),
 							un(40, qh(9491, {	-- Greed
-								un(2, i(23921)),	-- Bulging Sack of Silver
+								["g"] = {
+									un(2, i(23921)),	-- Bulging Sack of Silver
+								},
 								["classes"] = { 4 },
 							})),
 							un(40, q(10548, {	-- The Sad Truth
-								un(2, i(30504)),	-- Leafblade-dagger
-								un(2, i(30505)),	-- Ghostclaw Tunic
+								["g"] = {
+									un(2, i(30504)),	-- Leafblade-dagger
+									un(2, i(30505)),	-- Ghostclaw Tunic
+								},
 								["classes"] = { 4 },
 							})),
 						}),

@@ -339,24 +339,215 @@ _.Craftables =
 			}),
 		}),
 		n(-186, { 	-- Jewelcrafting
+		-- Reviewed and updated as of 11.26.2018 BfA 8.0
+			filter(34, {	-- Fist Weapons
+				{	-- Heavy Iron Knuckles
+					["itemID"] = 20954,	-- Heavy Iron Knuckles
+				},
+			}),
+			n(-320, {		-- Head
+				{	-- Emerald Crown of Destruction
+					["itemID"] = 21774,	-- Emerald Crown of Destruction
+				},
+				{	-- Moonsoul Crown
+					["itemID"] = 20832,	-- Moonsoul Crown
+				},
+				{	-- Ruby Crown of Restoration
+					["itemID"] = 20969,	-- Ruby Crown of Restoration
+				},
+			}),
 			filter(51, {	-- Neck
-				i(20830),	-- Amulet of the Moon
-				i(21755),	-- Aquamarine Pendant of the Warrior
-				i(20909),	-- Barbaric Iron Collar
-				i(30419),	-- Brilliant Necklace
-				i(31154),	-- Bronze Torc
-				i(20967),	-- Citrine Pendant of Golden Healing
-				i(20831),	-- Heavy Golden Necklace of Battle
-				i(20966),	-- Jade Pendant of Blasting
-				i(25438),	-- Malachite Pendant
-				i(21792),	-- Necklace of the Diamond Tower
-				i(21766),	-- Opal Necklace of Impact
-				i(21934),	-- Ornate Tigerseye Necklace
-				i(20950),	-- Pendant of the Agate Shield
-				i(21764),	-- Ruby Pendant of Fire
-				i(21790),	-- Sapphire Pendant of Winter Night
-				i(21933),	-- Thick Bronze Necklace
-				un(1, i(20956)),	-- Silver Rose Pendant
+				{	-- Amulet of the Moon
+					["itemID"] = 20830,	-- Amulet of the Moon
+				},
+				{	-- Amulet of Truesight
+					["itemID"] = 45627,	-- Amulet of Truesight
+				},
+				{	-- Aquamarine Pendant of the Warrior
+					["itemID"] = 21755,	-- Aquamarine Pendant of the Warrior
+				},
+				{	-- Barbaric Iron Collar
+					["itemID"] = 20909,	-- Barbaric Iron Collar
+				},
+				{	-- Brilliant Necklace
+					["itemID"] = 30419,	-- Brilliant Necklace
+				},
+				{	-- Bronze Torc
+					["itemID"] = 31154,	-- Bronze Torc
+				},
+				{	-- Citrine Pendant of Golden Healing
+					["itemID"] = 20967,	-- Citrine Pendant of Golden Healing
+				},
+				{	-- Heavy Golden Necklace of Battle
+					["itemID"] = 20831,	-- Heavy Golden Necklace of Battle
+				},
+				{	-- Jade Pendant of Blasting
+					["itemID"] = 20966,	-- Jade Pendant of Blasting
+				},
+				{	-- Living Emerald Pendant
+					["itemID"] = 21791,	-- Living Emerald Pendant
+				},
+				{	-- Malachite Pendant
+					["itemID"] = 25438,	-- Malachite Pendant
+				},
+				{	-- Necklace of the Diamond Tower
+					["itemID"] = 21792,	-- Necklace of the Diamond Tower
+				},
+				{	-- Opal Necklace of Impact
+					["itemID"] = 21766,	-- Opal Necklace of Impact
+				},
+				{	-- Ornate Tigerseye Necklace
+					["itemID"] = 21934,	-- Ornate Tigerseye Necklace
+				},
+				{	-- Pendant of the Agate Shield
+					["itemID"] = 20950,	-- Pendant of the Agate Shield
+				},
+				{	-- Ruby Pendant of Fire
+					["itemID"] = 21764,	-- Ruby Pendant of Fire
+				},
+				{	-- Sapphire Pendant of Winter Night
+					["itemID"] = 21790,	-- Sapphire Pendant of Winter Night
+				},
+				{	-- Silver Rose Pendant
+					["itemID"] = 20956,	-- Silver Rose Pendant
+					["u"] = 1,
+				},
+				{	-- Thick Bronze Necklace
+					["itemID"] = 21933,	-- Thick Bronze Necklace
+				},
+			}),
+			filter(52, {	-- Finger
+				{	-- Aquamarine Signet
+					["itemID"] = 20964,	-- Aquamarine Signet
+				},
+				{	-- Blazing Citrine Ring
+					["itemID"] = 20958,	-- Blazing Citrine Ring
+				},
+				{	-- Braided Copper Ring
+					["itemID"] = 20906,	-- Braided Copper Ring
+				},
+				{	-- Bronze Band of Force
+					["itemID"] = 30804,	-- Bronze Band of Force
+				},
+				{	-- Citrine Ring of Rapid Healing
+					["itemID"] = 20961,	-- Citrine Ring of Rapid Healing
+				},
+				{	-- Diamond Focus Ring
+					["itemID"] = 30422,	-- Diamond Focus Ring
+				},
+				{	-- Elegant Silver Ring
+					["itemID"] = 20818,	-- Elegant Silver Ring
+				},
+				{	-- Emerald Lion Ring
+					["itemID"] = 29160,	-- Emerald Lion Ring
+				},
+				{	-- Engraved Truesilver Ring
+					["itemID"] = 20960,	-- Engraved Truesilver Ring
+				},
+				{	-- Gem Studded Band
+					["itemID"] = 21753,	-- Gem Studded Band
+				},
+				{	-- Gloom Band
+					["itemID"] = 20823,	-- Gloom Band
+				},
+				{	-- Glowing Thorium Band
+					["itemID"] = 29159,	-- Glowing Thorium Band
+				},
+				{	-- Golden Dragon Ring
+					["itemID"] = 20955,	-- Golden Dragon Ring
+				},
+				{	-- Golden Ring of Power
+					["itemID"] = 29157,	-- Golden Ring of Power
+				},
+				{	-- Heavy Cooper Ring
+					["itemID"] = 21932,	-- Heavy Cooper Ring
+				},
+				{	-- Heavy Jade Ring
+					["itemID"] = 30420,	-- Heavy Jade Ring
+				},
+				{	-- Heavy Silver Ring
+					["itemID"] = 20826,	-- Heavy Silver Ring
+				},
+				{	-- Inlaid Malachite Ring
+					["itemID"] = 20821,	-- Inlaid Malachite Ring
+				},
+				{	-- Onslaught Ring
+					["itemID"] = 21775,	-- Onslaught Ring
+				},
+				{	-- Red Ring of Destruction
+					["itemID"] = 30421,	-- Red Ring of Destruction
+				},
+				{	-- Ring of Bitter Shadows
+					["itemID"] = 21778,	-- Ring of Bitter Shadows
+				},
+				{	-- Ring of Silver Might
+					["itemID"] = 20827,	-- Ring of Silver Might
+				},
+				{	-- Ring of Twilight Shadows
+					["itemID"] = 20828,	-- Ring of Twilight Shadows
+				},
+				{	-- Sapphire Signet
+					["itemID"] = 21768,	-- Sapphire Signet
+				},
+				{	-- Simple Opal Ring
+					["itemID"] = 21767,	-- Simple Opal Ring
+				},
+				{	-- Simple Pearl Ring
+					["itemID"] = 20820,	-- Simple Pearl Ring
+				},
+				{	-- Solid Bronze Ring
+					["itemID"] = 20907,	-- Solid Bronze Ring
+				},
+				{	-- The Aquamarine Ward
+					["itemID"] = 21754,	-- The Aquamarine Ward
+				},
+				{	-- The Jade Eye
+					["itemID"] = 20959,	-- The Jade Eye
+				},
+				{	-- Tigerseye Band
+					["itemID"] = 25439,	-- Tigerseye Band
+				},
+				{	-- Truesilver Commander's Ring
+					["itemID"] = 29158,	-- Truesilver Commander's Ring
+				},
+				{	-- Truesilver Healing Ring
+					["itemID"] = 21765,	-- Truesilver Healing Ring
+				},
+				{	-- Wicked Moonstone Ring
+					["itemID"] = 20833,	-- Wicked Moonstone Ring
+				},
+				{	-- Woven Copper Ring
+					["itemID"] = 21931,	-- Woven Copper Ring
+				},
+			}),
+			filter(53, {	-- Trinket
+				{	-- Figurine - Black Diamond Crab
+					["itemID"] = 21784,	-- Figurine - Black Diamond Crab
+				},
+				{	-- Figurine - Black Pearl Panther
+					["itemID"] = 21758,	-- Figurine - Black Pearl Panther
+				},
+				{	-- Figurine - Dark Iron Scorpid
+					["itemID"] = 21789,	-- Figurine - Dark Iron Scorpid
+				},
+				{	-- Figurine - Emerald Owl
+					["itemID"] = 21777,	-- Figurine - Emerald Owl
+				},
+				{	-- Figurine - Golden Hare
+					["itemID"] = 21756,	-- Figurine - Golden Hare
+				},
+				{	-- Figurine - Jade Owl
+					["itemID"] = 21748,	-- Figurine - Jade Owl
+				},
+				{	-- Figurine - Ruby Serpent
+					["itemID"] = 21769,	-- Figurine - Ruby Serpent
+				},
+				{	-- Figurine - Truesilver Boar
+					["itemID"] = 21763,	-- Figurine - Truesilver Boar
+				},
+				{	-- Figurine - Truesilver Crab
+					["itemID"] = 21760,	-- Figurine - Truesilver Crab
+				},
 			}),
 		}),
 		n(-187, {	-- Leatherworking
