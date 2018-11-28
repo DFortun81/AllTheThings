@@ -10,32 +10,7 @@ _.Zones =
 				["mapID"] = 554,	-- Timeless Isle
 				["g"] = {
 					n(-16, {	-- Rares
-						n(72766, {	-- Ancient Spineclaw
-							{
-								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
-								["criteriaID"] = 32,		-- Scuttler's Shell [Criteria]
-								["itemID"] = 104293,		-- Scuttler's Shell [Item]
-								["dr"] = 10,
-							},
-						}),
-						{
-							["vignetteID"] = 32961,	-- Angry Sprite & Scary Sprite (Skrillex Reference)
-							["qgs"] = {
-								71824,	-- Angry Sprite
-								71826,	-- Scary Sprite
-							},
-							["isDaily"] = true,
-							["description"] = "Click on Neverending Spritewood (Purple Crystal) to transform and be able to attack the sprites. The more you AOE and kill them, the longer they will continue to spawn.",
-							["groups"] = {
-								{
-									["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
-									["criteriaID"] = 53,		-- Dandelion Frolicker [Criteria]
-									["itemID"] = 104160,		-- Dandelion Frolicker [Item]
-									["dr"] = 1,
-								},
-							},
-						},
-						{	-- Archiereus of Flame
+						{	-- Archiereus of Flame*
 							["npcID"] = 73174,	-- Archiereus of Flame
 							["questID"] = 33312,
 							["isDaily"] = true,
@@ -67,50 +42,14 @@ _.Zones =
 								},
 							}),
 						}),
-						n(72877, {	-- Ashleaf Sprite
-							{
-								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
-								["criteriaID"] = 36,		-- Faintly-Glowing Herb [Criteria]
-								["itemID"] = 104289,	-- Faintly-Glowing Herb [Item]
-								["dr"] = 10,
-							},
-							{
-								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
-								["criteriaID"] = 7,		-- Big Bag of Herbs [Criteria]
-								["itemID"] = 106130,	-- Big Bag of Herbs [Item]
-								["dr"] = 1.0,
-							},
-						}),
-						n(72897, {	-- Blazebound Chanter
-							{
-								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
-								["criteriaID"] = 30,		-- Ordon Ceremonial Robes [Criteria]
-								["itemID"] = 104296,	-- Ordon Ceremonial Robes [Item]
-								["dr"] = 1.0,
-							},
-							{
-								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
-								["criteriaID"] = 24,		-- Blizzard Stone [Criteria]
-								["itemID"] = 104304,	-- Blizzard Stone [Item]
-								["dr"] = 0.5,
-							},
-						}),
-						n(72762, {	-- Brilliant Windfeather
-							{
-								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
-								["criteriaID"] = 38,		-- Windfeather Plume [Criteria]
-								["itemID"] = 104287,	-- Windfeather Plume [Item]
-								["dr"] = 8,
-							},
-						}),
-						{	-- Bufo
+						{	-- Bufo*
 							["npcID"] = 72775,	-- Bufo
 							["questID"] = 33301,
 							["isDaily"] = true,
 							["coords"] = {
 								{ 66.81, 67.21, 554 },
-								{ 65.62, 69.82, 554  },
-								{ 63.63, 72.63, 554  },
+								{ 65.62, 69.82, 554 },
+								{ 63.63, 72.63, 554 },
 							},
 							["g"] = {
 								{	-- Bufo
@@ -125,25 +64,11 @@ _.Zones =
 								},
 							},
 						},
-						n(72895, { 	-- Burning Berserker
-							{
-								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
-								["criteriaID"] = 6,		-- Forager's Gloves [Criteria]
-								["itemID"] = 86566,	-- Forager's Gloves [Item]
-								["dr"] = 1.2,
-							},
-							{
-								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
-								["criteriaID"] = 7,		-- Big Bag of Herbs [Criteria]
-								["itemID"] = 106130,	-- Big Bag of Herbs [Item]
-								["dr"] = 1.0,
-							},
-						}),
-						{	-- Champion of the Black Flame	
+						{	-- Champion of the Black Flame*
 							["npcID"] = 73171,	-- Champion of the Black Flame
 							["questID"] = 33299,
 							["isDaily"] = true,
-							["coords"] = {	
+							["coords"] = {
 								{ 60.01, 51.01, 554 },
 								{ 60.61, 48.41, 554 },
 								{ 61.01, 47.21, 554 },
@@ -190,11 +115,11 @@ _.Zones =
 								{ 70.81, 47.21, 554 },
 								{ 70.81, 47.61, 554 },
 								{ 70.81, 50.41, 554 },
-							},	
+							},
 							["g"] = {
-								{	-- Champion of the Black Flame	
+								{	-- Champion of the Black Flame
 									["achievementID"] = 8714,	-- Timeless Champion
-									["criteriaID"] = 23,		-- Champion of the Black Flame	
+									["criteriaID"] = 23,		-- Champion of the Black Flame
 								},
 								{	-- Big Bag of Herbs
 									["achievementID"] = 8728,	-- Going To Need A Bigger Bag
@@ -216,18 +141,18 @@ _.Zones =
 								},
 							},
 						},
-						{	-- Chelon	
+						{	-- Chelon*
 							["npcID"] = 72045,	-- Chelon
 							["questID"] = 32966,
 							["isDaily"] = true,
-							["coords"] = {	
+							["coords"] = {
 								{ 25.23, 35.83, 554 },
-							},	
+							},
 							["description"] = "Click on Conspicuously Empty Shell to cause the boss to become attackable.",
 							["g"] = {
-								{	-- Chelon	
+								{	-- Chelon
 									["achievementID"] = 8714,	-- Timeless Champion
-									["criteriaID"] = 8,			-- Chelon	
+									["criteriaID"] = 8,			-- Chelon
 								},
 								{	-- Hardened Shell
 									["itemID"] = 86584,	-- Hardened Shell
@@ -241,20 +166,30 @@ _.Zones =
 								},
 							},
 						},
-						n(73175, {	-- Cinderfall
-							{
-								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
-								["criteriaID"] = 27,		-- Falling Flame [Criteria]
-								["itemID"] = 104299,	-- Falling Flame [Item]
-								["dr"] = 2,
+						{	-- Cinderfall*
+							["npcID"] = 73175,	-- Cinderfall
+							["questID"] = 33310,
+							["isDaily"] = true,
+							["coords"] = {
+								{ 54.19, 52.96, 554 },
 							},
-							{
-								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
-								["criteriaID"] = 44,		-- Glowing Blue Ash [Criteria]
-								["itemID"] = 104261,	-- Glowing Blue Ash [Item]
-								["dr"] = 2,
+							["g"] = {
+								{	-- Cinderfall
+									["achievementID"] = 8714,	-- Timeless Champion
+									["criteriaID"] = 24,		-- Cinderfall
+								},
+								{	-- Falling Flame
+									["achievementID"] = 8728,	-- Going To Need A Bigger Bag
+									["criteriaID"] = 27,		-- Falling Flame
+									["itemID"] = 104299,		-- Falling Flame
+								},
+								{	-- Glowing Blue Ashfs
+									["achievementID"] = 8728,	-- Going To Need A Bigger Bag
+									["criteriaID"] = 44,		-- Glowing Blue Ash
+									["itemID"] = 104261,		-- Glowing Blue Ash
+								},
 							},
-						}),
+						},
 						n(72049, {	-- Cranegnasher
 							["description"] = "Locate the bloodied red crane corpse, Fishgorged Crane at coords ~44,70. If it's not present then the rare can't be spawned yet. It can be inspected, and the flavour text suggests it must be the favourite food of some creature.\n\nHead south and aggro one of the living Fishgorged Cranes by the ocean (these are a different ID to the corpse version, coords ~45,84). Kite it back to the corpse. Cranegnasher should then appear and attack!",
 							["groups"] = {
@@ -264,60 +199,6 @@ _.Zones =
 									["itemID"] = 104268,	-- Pristine Stalker Hide [Item]
 									["dr"] = 1.8,
 								},
-							},
-						}),
-						o(222685, {	-- Crane Nest
-							["groups"] = {
-								{
-									["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
-									["criteriaID"] = 55,		-- Azure Crane Chick [Criteria]
-									["itemID"] = 104157,	-- Azure Crane Chick [Item]
-									["dr"] = 3,
-								},
-							},
-							["model"] = "World\\Expansion01\\Doodads\\Generic\\Arakkoa\\Nest\\AK_NestDebris01.mdx",
-							["modelScale"] = 2.3,
-							["icon"] = "Interface\\Icons\\INV_Egg_07",
-						}),
-						n(72876, {	-- Crimsonscale Firestorm
-							{
-								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
-								["criteriaID"] = 39,		-- Quivering Firestorm Egg [Criteria]
-								["itemID"] = 104286,	-- Quivering Firestorm Egg [Item]
-								["dr"] = 8,
-							},
-						}),
-						n(71920, {	-- Cursed Hozen Swabby
-							dr(8.0, i(104015, {	-- Barnacle Encrusted Key
-								{
-									["objectID"] = 220832, -- Sunken Treasure
-									["description"] = "In the belly of the sunken ship.",
-									["coord"] = { 40.4, 92.3 },
-									["groups"] = {
-										{
-											["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
-											["criteriaID"] = 1,		-- Cursed Swabby Helmet [Criteria]
-											["itemID"] = 134024,	-- Cursed Swabby Helmet [Item]
-											["dr"] = 100,
-										},
-									},
-								},
-							})),
-						}),
-						n(72771, {	-- Damp Shambler
-							{
-								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
-								["criteriaID"] = 19,		-- Strange Glowing Mushroom [Criteria]
-								["itemID"] = 104312,		-- Strange Glowing Mushroom [Item]
-								["dr"] = 47,
-							},
-						}),
-						n(72841, {	-- Death Adder
-							{
-								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
-								["criteriaID"] = 33,		-- Partially-Digested Meal [Criteria]
-								["itemID"] = 104292,	-- Partially-Digested Meal [Item]
-								["dr"] = 2,
 							},
 						}),
 						n(73281, { 	-- Dread Ship Vazuvius
@@ -333,42 +214,36 @@ _.Zones =
 							["isDaily"] = true,
 							["description"] = "|cff66ccffNeed to have Mist-Filled Spirit Lantern from Evermaw to summon this boss when the Cursed Gravestone is active. |r",
 						}),
-						n(73158, {	-- Emerald Gander
-							{
-								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
-								["criteriaID"] = 38,		-- Windfeather Plume [Criteria]
-								["itemID"] = 104287,	-- Windfeather Plume [Item]
-								["dr"] = 50,
+						{	-- Emerald Gander*
+							["npcID"] = 73158,	-- Emerald Gander
+							["coords"] = {
+								{ 44.26, 61.65, 554 },
+								{ 45.04, 53.56, 554 },
+								{ 44.72, 54.88, 554 },
+								{ 36.47, 46.35, 554 },
 							},
-						}),
-						n(72809, { 	-- Eroded Cliffdweller
-							{
-								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
-								["criteriaID"] = 42,		-- Glinting Pile of Stone [Criteria]
-								["itemID"] = 104263,	-- Glinting Pile of Stone [Item]
-								["dr"] = 0.9,
+							["g"] = {
+								{	-- Emerald Gander
+									["achievementID"] = 8714,	-- Timeless Champion
+									["criteriaID"] = 1,			-- Emerald Gander
+								},
+								{	-- Meaty Crane Leg
+									["itemID"] = 104264,	-- Meaty Crane Leg
+									["questID"] = 33234,	-- Meaty Crane Leg
+									["qg"] = 73657,			-- Great Chef Wood
+									["coords"] = {
+										{ 41.81, 63.71 },
+									},
+									["description"] = "Can be turned in at for 20 Timeless Isle coins.",
+									["repeatable"] = true,
+								},
+								{	-- Windfeather Plume
+									["achievementID"] = 8728,	-- Going To Need A Bigger Bag
+									["criteriaID"] = 38,		-- Windfeather Plume
+									["itemID"] = 104287,		-- Windfeather Plume
+								},
 							},
-							{
-								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
-								["criteriaID"] = 43,		-- Odd Polished Stone [Criteria]
-								["itemID"] = 104262,	-- Odd Polished Stone [Item]
-								["dr"] = 0.3,
-							},
-						}),
-						n(72896, { 	-- Eternal Kilnmaster
-							{
-								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
-								["criteriaID"] = 29,		-- Blazing Sigil of Ordos [Criteria]
-								["itemID"] = 104297,	-- Blazing Sigil of Ordos [Item]
-								["dr"] = 1.8,
-							},
-							{
-								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
-								["criteriaID"] = 20,		-- Eternal Kiln [Criteria]
-								["itemID"] = 104309,	-- Eternal Kiln [Item]
-								["dr"] = 0.5,
-							},
-						}),
+						},
 						n(73279, {	-- Evermaw <Gnawing Hunger of the Deep>
 							{
 								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
@@ -379,27 +254,15 @@ _.Zones =
 							},
 						}),
 						n(73172, {	-- Flintlord Gairan
+								["questID"] = 33309,
+								["g"] = {
 							{
 								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
 								["criteriaID"] = 28,		-- Ordon Death Chime [Criteria]
 								["itemID"] = 104298,	-- Ordon Death Chime [Item]
 								["dr"] = 3,
 							},
-						}),
-						n(73162, { 	-- Foreboding Flame
-							{
-								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
-								["criteriaID"] = 44,		-- Glowing Blue Ash [Criteria]
-								["itemID"] = 104261,	-- Glowing Blue Ash [Item]
-								["dr"] = 0.9,
 							},
-							{
-								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
-								["criteriaID"] = 50,		-- Ominous Flame [Criteria]
-								["itemID"] = 104166,	-- Ominous Flame [Item]
-								["dr"] = 0.5,
-							},
-							dr(0.7, i(104227)),	-- Technique: Glyph of Pillar of Light
 						}),
 						n(73282, { 	-- Garnia
 							["groups"] = {
@@ -461,14 +324,6 @@ _.Zones =
 							["questID"] = 33294,
 							["isDaily"] = true,
 						}),
-						n(72898, { 	-- High Priest of Ordos
-							{
-								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
-								["criteriaID"] = 14,		-- Ash-Covered Horn [Criteria]
-								["itemID"] = 104329,		-- Ash-Covered Horn [Item]
-								["dr"] = 1.3,
-							},
-						}),
 						n(73167, { 	-- Huolon
 							["groups"] = {
 								{
@@ -510,24 +365,6 @@ _.Zones =
 							["isDaily"] = true,
 							["groups"] = {
 								i(89770),	-- Tuft of Yak Fur
-							},
-						}),
-						n(72767, { 	-- Jademist Dancer
-							{
-								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
-								["criteriaID"] = 37,		-- Condensed Jademist [Criteria]
-								["itemID"] = 104288,	-- Condensed Jademist [Item]
-								["dr"] = 8,
-							},
-							{
-								["itemID"] = 104224,	-- Technique: Glyph of Evaporation
-								["dr"] = 0.7,
-							},
-							{
-								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
-								["criteriaID"] = 51,		-- Jademist Dancer [Criteria]
-								["itemID"] = 104164,	-- Jademist Dancer [Item]
-								["dr"] = 0.5,
 							},
 						}),
 						n(73169, { 	-- Jakur of Ordon
@@ -575,27 +412,6 @@ _.Zones =
 							["questID"] = 33298,
 							["isDaily"] = true,
 						}),
-						n(72007, { 	-- Master Kukuru
-							["groups"] = {
-								i(101538, {	-- Kukuru's Cache Key
-									{
-										["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
-										["criteriaID"] = 46,		-- Bonkers [Criteria]
-										["itemID"] = 104202,	-- Bonkers [Item]
-										["dr"] = 1.6,
-									},
-								}),
-							},
-							["description"] = "|cff66ccffBuy Kukuru's Cache Key and open chests for chance at pet.|r",
-						}),
-						n(72888, { 	-- Molten Guardian
-							{
-								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
-								["criteriaID"] = 15,		-- Cauterizing Core [Criteria]
-								["itemID"] = 104328,		-- Cauterizing Core [Item]
-								["dr"] = 2,
-							},
-						}),
 						n(73166, { 	-- Monstrous Spineclaw
 							["groups"] = {
 								{
@@ -614,44 +430,6 @@ _.Zones =
 							["questID"] = 33302,
 							["isDaily"] = true,
 						}),
-						n(72875, {	-- Ordon Candlekeeper
-							{
-								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
-								["criteriaID"] = 5,		-- Battle Horn [Criteria]
-								["itemID"] = 86565,	-- Battle Horn [Item]
-								["dr"] = 0.5,
-							},
-						}),
-						n(72894, {	-- Ordon Fire-Watcher
-							{
-								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
-								["criteriaID"] = 29,		-- Blazing Sigil of Ordos [Criteria]
-								["itemID"] = 104297,	-- Blazing Sigil of Ordos [Item]
-								["dr"] = 1.3,
-							},
-							{
-								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
-								["criteriaID"] = 30,		-- Ordon Ceremonial Robes [Criteria]
-								["itemID"] = 104296,	-- Ordon Ceremonial Robes [Item]
-								["dr"] = 0.9,
-							},
-						}),
-						n(72892, {	-- Ordon Oathguard
-							{
-								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
-								["criteriaID"] = 2,		-- Warped Warning Sign [Criteria]
-								["itemID"] = 104330,	-- Warped Warning Sign [Item]
-								["dr"] = 5,
-							},
-						}),
-						n(72805, {	-- Primal Stalker
-							{
-								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
-								["criteriaID"] = 41,		-- Pristine Stalker Hide [Criteria]
-								["itemID"] = 104268,	-- Pristine Stalker Hide [Item]
-								["dr"] = 1.0,
-							},
-						}),
 						n(72048, { 	-- Rattleskew
 							{
 								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
@@ -664,82 +442,26 @@ _.Zones =
 								["dr"] = 0.7,
 							},
 						}),
-						n(73157, {	-- Rock Moss
-							{
-								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
-								["criteriaID"] = 19,		-- Strange Glowing Mushroom [Criteria]
-								["itemID"] = 104312,		-- Strange Glowing Mushroom [Item]
-								["dr"] = 51,
-							},
-							{
-								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
-								["criteriaID"] = 18,		-- Golden Moss [Criteria]
-								["itemID"] = 104313,		-- Golden Moss [Item]
-								["dr"] = 3.0,
-							},
-						}),
-						n(73018, {	-- Spectral Brewmaster
-							{
-								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
-								["criteriaID"] = 11,		-- Thick Pi'jiu Brew [Criteria]
-								["itemID"] = 104335,	-- Thick Pi'jiu Brew [Item]
-								["dr"] = 8,
-							},
-							dr(0.4, i(104235)),		-- Technique: Glyph of Lingering Ancestors
-						}),
-						n(73025, {	-- Spectral Mistweaver
-							{
-								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
-								["criteriaID"] = 12,		-- Misty Pi'jiu Brew [Criteria]
-								["itemID"] = 104334,	-- Misty Pi'jiu Brew [Item]
-								["dr"] = 8,
-							},
-							dr(0.4, i(104235)),		-- Technique: Glyph of Lingering Ancestors
-						}),
-						n(73021, {	-- Spectral Windwalker
-							{
-								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
-								["criteriaID"] = 10,		-- Bubbling Pi'jiu Brew [Criteria]
-								["itemID"] = 104336,	-- Bubbling Pi'jiu Brew [Item]
-								["dr"] = 8,
-							},
-							dr(0.4, i(104235)),		-- Technique: Glyph of Lingering Ancestors
-						}),
-						n(71864, {	-- Spelurk
-							{
-								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
-								["criteriaID"] = 17,		-- Cursed Talisman [Criteria]
-								["itemID"] = 104320,		-- Cursed Talisman [Item]
-								["dr"] = 0.9,
-							},
-						}),
-						n(72769, { 	-- Spirit of Jadefire
-							["groups"] = {
-								{
-									["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
-									["criteriaID"] = 45,		-- Glowing Green Ash [Criteria]
-									["itemID"] = 104258,	-- Glowing Green Ash [Item]
-									["dr"] = 1.9,
-								},
-								{
-									["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
-									["criteriaID"] = 21,		-- Jadefire Spirit [Criteria]
-									["itemID"] = 104307,		-- Jadefire Spirit [Item]
-									["dr"] = 1.9,
-								},
-								dr(0.8, i(104227)),	-- Technique: Glyph of Pillar of Light
-							},
-							["questID"] = 33293,
+						{	-- Spelurk*
+							["npcID"] = 71864,	-- Spelurk
+							["questID"] = 33164,
 							["isDaily"] = true,
-						}),
-						n(72908, {	-- Spotted Swarmer
-							{
-								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
-								["criteriaID"] = 35,		-- Sticky Silkworm Goo [Criteria]
-								["itemID"] = 104290,		-- Sticky Silkworm Goo [Item]
-								["dr"] = 1.8,
+							["coords"] = {
+								{ 59.54, 48.95, 554 },
 							},
-						}),
+							["description"] = "You will need to either Blink (Mage) or Displacer Beast (Druid) in order to get inside the cave and open it up to spawn the rare.",
+							["g"] = {
+								{	-- Spelurk
+									["achievementID"] = 8714,	-- Timeless Champion
+									["criteriaID"] = 9,			-- Spelurk
+								},
+								{
+									["achievementID"] = 8728,	-- Going To Need A Bigger Bag
+									["criteriaID"] = 17,		-- Cursed Talisman
+									["itemID"] = 104320,		-- Cursed Talisman
+								},
+							},
+						},
 						n(73704, { 	-- Stinkbraid
 							["questID"] = 33305,
 							["isDaily"] = true,
@@ -748,14 +470,19 @@ _.Zones =
 							},
 						}),
 						n(72808, {	-- Tsavo'ka
+							["questID"] = 33304,
+							["g"] = {
 							{
 								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
 								["criteriaID"] = 41,		-- Pristine Stalker Hide [Criteria]
 								["itemID"] = 104268,	-- Pristine Stalker Hide [Item]
 								["dr"] = 1.9,
 							},
+							},
 						}),
 						n(73173, {	-- Urdur the Cauterizer
+							["questID"] = 33308,
+							["g"] = {
 							{
 								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
 								["criteriaID"] = 22,		-- Sunset Stone [Criteria]
@@ -768,8 +495,11 @@ _.Zones =
 								["itemID"] = 104296,	-- Ordon Ceremonial Robes [Item]
 								["dr"] = 2.0,
 							},
+							},
 						}),
 						n(73170, {	-- Watcher Osu
+								["questID"] = 33322,
+							["g"] = {
 							{
 								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
 								["criteriaID"] = 30,		-- Ordon Ceremonial Robes [Criteria]
@@ -782,16 +512,17 @@ _.Zones =
 								["itemID"] = 104305,	-- Ashen Stone [Item]
 								["dr"] = 1.0,
 							},
-						}),
-						n(72761, {	-- Windfeather Nestkeeper
-							dr(0.4, i(104231)),	-- Technique: Glyph of Inspired Hymns
+							},
 						}),
 						n(72245, {	-- Zesqua
+								["questID"] = 33316,
+							["g"] = {
 							{
 								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
 								["criteriaID"] = 25,		-- Rain Stone [Criteria]
 								["itemID"] = 104303,	-- Rain Stone [Item]
 								["dr"] = 0.9,
+							},
 							},
 						}),
 						n(71919, { 	-- Zhu-Gon the Sour
