@@ -1366,6 +1366,24 @@ _.Zones =
 						i(13478),	-- Recipe: Elixir of Superior Defense
 						i(5642),	-- Recipe: Free Action Potion
 					}),
+					{	-- Lady Palanseer (removed in 4.0.3a)
+						["npcID"] = 34043,
+						["groups"] = {
+							i(41563),	-- Design: Willful Huge Citrine
+							i(41564),	-- Design: Empowered Huge Citrine
+							i(41565),	-- Design: Lucent Huge Citrine
+							i(41575),	-- Design: Mysterious Shadow Crystal
+							i(41559),	-- Design: Mystic Sun Crystal
+							i(41573),	-- Design: Opaque Dark Jade
+							i(41566),	-- Design: Resplendent Huge Citrine
+							i(41569),	-- Design: Shattered Dark Jade
+							i(41572),	-- Design: Steady Dark Jade
+							i(41560),	-- Design: Stormy Chalcedony
+							i(41570),	-- Design: Radiant Dark Jade
+							i(41571),	-- Design: Turbid Dark Jade
+						},
+						["u"] = 43,
+					},
 					n(133239, {	-- Leyweaver Aurielle
 						i(6270),	-- Pattern: Blue Linen Vest
 						i(6274),	-- Pattern: Blue Overalls
