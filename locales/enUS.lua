@@ -277,6 +277,11 @@ AllTheThings.Locales.enUS = {
 	};
 	["FILTER_ID_ICONS"] = {
 		[1] = "Interface\\Icons\\inv_misc_orb_01",							-- Held in Off-hand
+		[8] = "Interface\\Icons\\inv_shield_06",							-- Shield
+		[20] = "Interface\\Icons\\inv_weapon_shortblade_01",				-- Daggers
+		[22] = "Interface\\Icons\\inv_axe_09",								-- 2H Axes
+		[23] = "Interface\\Icons\\inv_mace_02",								-- 1H Maces
+		[25] = "Interface\\Icons\\inv_sword_04",							-- 1H Swords
 		[27] = "Interface\\Icons\\inv_wand_02",								-- Wands
 		[28] = "Interface\\Icons\\inv_staff_27",							-- Staves
 		[34] = "Interface\\Icons\\inv_misc_monsterclaw_02",					-- Fist Weapons

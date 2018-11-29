@@ -15,26 +15,26 @@ _.Zones =
 							{	-- Quests
 								["npcID"] = -17,	-- Quests
 								["g"] = {
-									un(40, qa(27106, {	-- A Villain Unmasked
+									un(40, qa(27106, {		-- A Villain Unmasked
 										un(2, i(63919)),	-- Corruption-Seeking Chestguard
 										un(2, i(63918)),	-- Detective's Shoulderplates
 										un(2, i(63920)),	-- Treads of Revelation
 										un(2, i(63921)),	-- Truth-Seeker Belt
 										un(2, i(63917)),	-- Truthbreaker Shield
 									})),
-									un(40, qa(396, {	-- An Audience with the King
+									un(40, qa(396, {		-- An Audience with the King
 										un(2, i(2933)),	-- Seal of Wrynn
 									})),
 									un(40, q(1942, { 		-- Astral Knot Garment
 										un(2, i(9516)),	-- Astral Knot Blouse
 										un(2, i(7511)),	-- Astral Knot Robe
 									})),
-									un(40, qa(7496, {	-- Celebrating Good Times
+									un(40, qa(7496, {		-- Celebrating Good Times
 										un(2, i(18403)),	-- Dragonslayer's Signet
 										un(2, i(18406)),	-- Onyxia Blood Talisman
 										un(2, i(18404)),	-- Onyxia Tooth Pendant
 									})),
-									un(40, q(168, {		-- Collecting Memories
+									un(40, q(168, {			-- Collecting Memories
 										un(2, i(2036)),	-- Dusty Mining Gloves
 										un(2, i(2037)),	-- Tunneler's Boots
 									})),
@@ -55,12 +55,12 @@ _.Zones =
 										i(7508),	-- Ley Orb	NOTE: Item still available from other quests
 										i(9513),	-- Ley Staff NOTE: Item still available from other quests
 									}))),
-									un(40, qa(27038, {	-- Missing Parts
+									un(40, qa(27038, {		-- Missing Parts
 										un(2, i(63927)),	-- Machine-Linker Girdle
 										un(2, i(63926)),	-- Reconstructing Hauberk
 										un(2, i(63925)),	-- Scavenger Bracers
 									})),
-									un(40, q(167, {		-- Oh Brother...
+									un(40, q(167, {			-- Oh Brother...
 										un(2, i(1893)),	-- Miner's Revenge
 									})),
 									un(40, q(6187, {		-- Order Must Be Restored
@@ -83,12 +83,21 @@ _.Zones =
 									un(40, qc4(q(2206, { 	-- Snatch and Grab
 										un(2, i(7298)),	-- Blade of Cunning
 									}))),	
-									un(40, qp164(q(2758, {	-- The Origins of Smithing
-										un(2, i(9367, {	-- Plans: Golden Scale Gauntlets
-											un(8, i(9366)),		-- Golden Scale Gauntlets
-										})),
-									}))),
-									un(40, qc9(q(397, {	-- You Have Served Us Well
+									{	-- The Origins of Smithing
+										["questID"] = 2758,	-- The Origins of Smithing
+										["qg"] = 7798, -- Hank the Hammer
+										["requireSkill"] = 164,	-- Blacksmithing
+										["isBreadcrumb"] = true,
+										["races"] = ALLIANCE_ONLY,
+										["u"] = 40,
+										["g"] = {
+											{	-- Plans: Golden Scale Gauntlets
+												["itemID"] = 9367, -- Plans: Golden Scale Gauntlets
+												["u"] = 2,
+											},
+										},
+									},
+									un(40, qc9(q(397, {		-- You Have Served Us Well
 										un(2, i(3556)),	-- Dread Mage Hat
 									}))),
 								},

@@ -998,6 +998,15 @@ _.Zones =
 						un(40, q( 617, {	-- Akiris by the Bundle
 							un(2, i(4117)),	-- Scorching Sash
 						})),
+						{	-- Booty Bay or Bust!
+							["questID"] = 2757,	-- Booty Bay or Bust!
+							["qg"] = 7793, -- Ox
+							["sourceQuests"] = { 2756 }, -- The Old Ways
+							["requireSkill"] = 164,	-- Blacksmithing
+							["isBreadcrumb"] = true,
+							["races"] = HORDE_ONLY,
+							["u"] = 40,
+						},
 						un(40, qa(613, {	-- Cracking Maury's Foot
 							un(2, i(4129)),	-- Collection Plate
 						})),
@@ -1013,10 +1022,19 @@ _.Zones =
 						un(40, q( 213, {	-- Hostile Takeover
 							un(2, i(4121)),	-- Gemmed Gloves
 						})),
+						{	-- In Search of Galvan
+							["questID"] = 2759,	-- In Search of Galvan
+							["qg"] = 7798, -- Hank the Hammer
+							["sourceQuests"] = { 2758 }, -- The Origins of Smithing
+							["requireSkill"] = 164,	-- Blacksmithing
+							["isBreadcrumb"] = true,
+							["races"] = ALLIANCE_ONLY,
+							["u"] = 40,
+						},
 						un(40, qa(576, {	-- Keep An Eye Out
 							i(4114),	-- Darktide Cape NOTE: Awarded from new version of quest 26614
 						})),
-						un(40, q(630, {	-- Message in a Bottle
+						un(40, q(630, {		-- Message in a Bottle
 							un(2, i(4118)),	-- Poobah's Nose Ring
 						})),
 						un(40, qh(573, {	-- Mok'thardin's Enchantment
@@ -1025,7 +1043,7 @@ _.Zones =
 						un(40, q( 348, {	-- Stranglethorn Fever
 							un(2, i(4113)),	-- Medicine Blanket
 						})),
-						un(40, q(608, {	-- The Bloodsail Buccaneers
+						un(40, q(608, {		-- The Bloodsail Buccaneers
 							un(2,  i(4138)),	-- Blackwater Tunic
 						})),
 						un(40, qa(614, {	-- The Captain's Chest

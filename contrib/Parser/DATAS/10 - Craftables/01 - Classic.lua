@@ -6,10 +6,225 @@ _.Craftables =
 	tier(1, { -- Classic
 		n(-180, {	-- Alchemy
 			filter(53, {	-- Trinket
-				i(9149),	-- Philosopher's Stone
+				{	-- Philosopher's Stone
+					["itemID"] = 9149,	-- Philosopher's Stone
+				},
 			}),
 		}),
 		n(-181, { 	-- Blacksmithing
+			n(-320, {		-- Head
+				{	-- Barbaric Iron Helm
+					["itemID"] = 7915,	-- Barbaric Iron Helm
+				},
+				{	-- Dark Iron Helm
+					["itemID"] = 19148,	-- Dark Iron Helm
+				},
+				{	-- Darkrune Helm
+					["itemID"] = 20551,	-- Darkrune Helm
+				},
+				{	-- Enchanted Thorium Helm
+					["itemID"] = 12620,	-- Enchanted Thorium Helm
+					["u"] = 8,
+				},
+				{	-- Golden Scale Coif
+					["itemID"] = 3837,	-- Golden Scale Coif
+				},
+				{	-- Green Iron Helm
+					["itemID"] = 3836,	-- Green Iron Helm
+				},
+				{	-- Heavy Mithril Helm
+					["itemID"] = 7934,	-- Heavy Mithril Helm
+				},
+				{	-- Helm of the Great Chief
+					["itemID"] = 12636,	-- Helm of the Great Chief
+				},
+				{	-- Imperial Plate Helm
+					["itemID"] = 12427,	-- Imperial Plate Helm
+				},
+				{	-- Lionheart Helm
+					["itemID"] = 12640,	-- Lionheart Helm
+				},
+				{	-- Mithril Coif
+					["itemID"] = 7931,	-- Mithril Coif
+				},
+				{	-- Ornate Mithril Helm
+					["itemID"] = 7937,	-- Ornate Mithril Helm
+					["u"] = 8,
+				},
+				{	-- Radiant Circlet
+					["itemID"] = 12417,	-- Radiant Circlet
+				},
+				{	-- Runic Plate Helm
+					["itemID"] = 12612,	-- Runic Plate Helm
+				},
+				{	-- Steel Plate Helm
+					["itemID"] = 7922,	-- Steel Plate Helm
+				},
+				{	-- Thorium Helm
+					["itemID"] = 12410,	-- Thorium Helm
+				},
+				{	-- Whitesoul Helm
+					["itemID"] = 12633,	-- Whitesoul Helm
+				},
+			}),
+			n(-321, {		-- Shoulders
+				{	-- Barbaric Iron Shoulders
+					["itemID"] = 7913,	-- Barbaric Iron Shoulders
+				},
+				{	-- Bloodsoul Shoulders
+					["itemID"] = 19691,	-- Bloodsoul Shoulders
+					["u"]= 8,
+				},
+				{	-- Dark Iron Shoulders
+					["itemID"] = 11605,	-- Dark Iron Shoulders
+				},
+				{	-- Darksoul Shoulders
+					["itemID"] = 19695,	-- Darksoul Shoulders
+					["u"] = 8,
+				},
+				{	-- 12625,	-- Dawnbringer Shoulders
+					["itemID"] = 12625,	-- Dawnbringer Shoulders
+				},
+				{	-- Fiery Chain Shoulders
+					["itemID"] = 16988,	-- Fiery Chain Shoulders
+				},
+				{	-- Golden Scale Shoulders
+					["itemID"] = 3841,	-- Golden Scale Shoulders
+				},
+				{	-- Green Iron Shoulders
+					["itemID"] = 3840,	-- Green Iron Shoulders
+				},
+				{	-- Heavy Mithril Shoulder
+					["itemID"] = 7918,	-- Heavy Mithril Shoulder
+				},
+				{	-- Imperial Plate Shoulders
+					["itemID"] = 12428,	-- Imperial Plate Shoulders
+				},
+				{	-- Mithril Scale Shoulders
+					["itemID"] = 7932,	-- Mithril Scale Shoulders
+				},
+				{	-- Ornate Mithril Shoulder
+					["itemID"] = 7928,	-- Ornate Mithril Shoulder
+					["u"] = 8,
+				},
+				{	-- Rough Bronze Shoulders
+					["itemID"] = 3480,	-- Rough Bronze Shoulders
+				},
+				{	-- Runic Plate Shoulders
+					["itemID"] = 12610,	-- Runic Plate Shoulders
+				},
+				{	-- Silvered Bronze Shoulders
+					["itemID"] = 3481,	-- Silvered Bronze Shoulders
+				},
+			}),
+			n(-323, {		-- Chest
+				{	-- Barbaric Iron Breastplate
+					["itemID"] = 7914,	-- Barbaric Iron Breastplate
+				},
+				{	-- Barbaric Iron Hauberk
+					["itemID"] = 163964,	-- Barbaric Iron Hauberk
+				},
+				{	-- Bloodsoul Breastplate
+					["itemID"] = 19690,	-- Bloodsoul Breastplate
+					["u"] = 8,
+				},
+				{	-- Copper Chain Vest
+					["itemID"] = 3471,	-- Copper Chain Vest
+				},
+				{	-- Dark Iron Plate
+					["itemID"] = 11604,	-- Dark Iron Plate
+				},
+				{	-- Dark Iron Plate
+					["itemID"] = 11606,	-- Dark Iron Plate
+				},
+				{	-- Darkrune Breastplate
+					["itemID"] = 20550,	-- Darkrune Breastplate
+				},
+				{	-- Darksoul Breastplate
+					["itemID"] = 19693,	-- Darksoul Breastplate
+					["u"] = 8,
+				},
+				{	-- Demon Forged Breastplate
+					["itemID"] = 12628,	-- Demon Forged Breastplate
+					["u"] = 8,
+				},
+				{	-- Enchanted Thorium Breastplate
+					["itemID"] = 12618,	-- Enchanted Thorium Breastplate
+					["u"] = 8,
+				},
+				{	-- Golden Scale Cuirass
+					["itemID"] = 3845,	-- Golden Scale Cuirass
+				},
+				{	-- Green Iron Hauberk
+					["itemID"] = 3844,	-- Green Iron Hauberk
+				},
+				{	-- Heavy Mithril Breastplate
+					["itemID"] = 7930,	-- Heavy Mithril Breastplate
+				},
+				{	-- Icebane Breastplate
+					["itemID"] = 22669,	-- Icebane Breastplate
+					["u"] = 8,
+				},
+				{	-- Imperial Plate Chest
+					["itemID"] = 12422,	-- Imperial Plate Chest
+				},
+				{	-- Invulnerable Mail
+					["itemID"] = 12641,	-- Invulnerable Mail
+				},
+				{	-- Ironforge Breastplate
+					["itemID"] = 6731,	-- Ironforge Breastplate
+				},
+				{	-- Ironforge Chain
+					["itemID"] = 6730,	-- Ironforge Chain
+					["u"] = 1,	-- Never implemented
+				},
+				{	-- Ironvine Breastplate
+					["itemID"] = 22762,	-- Ironvine Breastplate
+				},
+				{	-- Obsidian Plate Tunic
+					["itemID" ] = 22191,	-- Obsidian Plate Tunic
+				},
+				{	-- Ornate Mithril Breastplate
+					["itemID"] = 7935,	-- Ornate Mithril Breastplate
+					["u"] = 8,
+				},
+				{	-- Radiant Breastplate
+					["itemID"] = 12415,	-- Radiant Breastplate
+				},
+				{	-- Rough Bronze Cuirass
+					["itemID"] = 2866,	-- Rough Bronze Cuirass
+				},
+				{	-- Runed Copper Breastplate
+					["itemID"] = 2864,	-- Runed Copper Breastplate
+				},
+				{	-- Runic Breastplate
+					["itemID"] = 12613,	-- Runic Breastplate
+					["u"] = 8,
+				},
+				{	-- Shining Silver Breastplate
+					["itemID"] = 2870,	-- Shining Silver Breastplate
+				},
+				{	-- Silvered Bronze Breastplate
+					["itemID"] = 2869,	-- Silvered Bronze Breastplate
+				},
+				{	-- Steel Breastplate
+					["itemID"] = 7963,	-- Steel Breastplate
+				},
+				{	-- Thick Obsidian Breastplate
+					["itemID"] = 22196,	-- Thick Obsidian Breastplate
+				},
+				{	-- Thorium Armor
+					["itemID"] = 12405,	-- Thorium Armor
+				},
+				{	-- Truesilver Breastplate
+					["itemID"] = 7939,	-- Truesilver Breastplate
+					["u"] = 8,
+				},
+				{	-- Wildthorn Mail
+					["itemID"] = 12624,	-- Wildthorn Mail
+				},
+			}),
+		
 			n(-319, { 	-- Weapons
 				un(8, i(12776)),	-- Enchanted Battlehammer
 				un(8, i(12794)),	-- Masterwork Stormhammer
@@ -81,141 +296,78 @@ _.Craftables =
 				i(7943),	-- Wicked Mithril Blade
 			}),
 			n(-45, { 	-- Mail
-				un(8, i(19690)),	-- Bloodsoul Breastplate
 				un(8, i(19692)),	-- Bloodsoul Gauntlets
-				un(8, i(19691)),	-- Bloodsoul Shoulders
 				un(8, i(9366)),		-- Golden Scale Gauntlets
 				un(8, i(7929)),		-- Orcish War Leggings
 				i(7916),	-- Barbaric Iron Boots
 				i(7917),	-- Barbaric Iron Gloves
-				i(7915),	-- Barbaric Iron Helm
-				i(163964),	-- Barbaric Iron Hauberk [TEMP; MOVING TO BFA SOON]
-				i(7913),	-- Barbaric Iron Shoulders
 				i(22194),	-- Black Grasp of the Destroyer
-				i(3471),	-- Copper Chain Vest
-				i(11606),	-- Dark Iron Plate
 				i(16989),	-- Fiery Chain Girdle
-				i(16988),	-- Fiery Chain Shoulders
 				i(3474),	-- Gemmed Copper Gauntlets
 				i(3847),	-- Golden Scale Boots
 				i(6040),	-- Golden Scale Bracers
-				i(3837),	-- Golden Scale Coif
-				i(3845),	-- Golden Scale Cuirass
 				i(3843),	-- Golden Scale Leggings
-				i(3841),	-- Golden Scale Shoulders
 				i(3484),	-- Green Iron Boots
 				i(3835),	-- Green Iron Bracers
 				i(3485),	-- Green Iron Gauntlets
-				i(3844),	-- Green Iron Hauberk
-				i(3836),	-- Green Iron Helm
 				i(3842),	-- Green Iron Leggings
-				i(3840),	-- Green Iron Shoulders
 				i(19043),	-- Heavy Timbermaw Belt
 				i(19048),	-- Heavy Timbermaw Boots
-				i(12636),	-- Helm of the Great Chief
-				i(12641),	-- Invulnerable Mail
-				i(6731),	-- Ironforge Breastplate
 				i(22195),	-- Light Obsidian Belt
-				i(7931),	-- Mithril Coif
 				i(7924),	-- Mithril Scale Bracers
 				i(7920),	-- Mithril Scale Pants
-				i(7932),	-- Mithril Scale Shoulders
-				i(22191),	-- Obsidian Plate Tunic
 				i(2868),	-- Patterned Bronze Bracers
 				i(3846),	-- Polished Steel Boots
 				i(12416),	-- Radiant Belt
 				i(12419),	-- Radiant Boots
-				i(12415),	-- Radiant Breastplate
-				i(12417),	-- Radiant Circlet
 				i(12418),	-- Radiant Gloves
 				i(12420),	-- Radiant Leggings
 				i(6350),	-- Rough Bronze Boots
-				i(2866),	-- Rough Bronze Cuirass
 				i(2865),	-- Rough Bronze Leggings
-				i(3480),	-- Rough Bronze Shoulders
 				i(2857),	-- Runed Copper Belt
 				i(2854),	-- Runed Copper Bracers
-				i(2864),	-- Runed Copper Breastplate
 				i(3472),	-- Runed Copper Gauntlets
 				i(3473),	-- Runed Copper Pants
-				i(2870),	-- Shining Silver Breastplate
 				i(3482),	-- Silvered Bronze Boots
-				i(2869),	-- Silvered Bronze Breastplate
 				i(3483),	-- Silvered Bronze Gauntlets
 				i(10423),	-- Silvered Bronze Leggings
-				i(3481),	-- Silvered Bronze Shoulders
-				i(7963),	-- Steel Breastplate
 				i(12632),	-- Storm Gauntlets
-				i(12624),	-- Wildthorn Mail
 			}),
 			n(-46, { 	-- Plate
-				un(8, i(19693)),	-- Darksoul Breastplate
 				un(8, i(19694)),	-- Darksoul Leggings
-				un(8, i(19695)),	-- Darksoul Shoulders
-				un(8, i(12628)),	-- Demon Forged Breastplate
-				un(8, i(12618)),	-- Enchanted Thorium Breastplate
-				un(8, i(12620)),	-- Enchanted Thorium Helm
 				un(8, i(12619)),	-- Enchanted Thorium Leggings
 				un(8, i(12631)),	-- Fiery Plate Gauntlets
 				un(8, i(22671)),	-- Icebane Bracers
-				un(8, i(22669)),	-- Icebane Breastplate
 				un(8, i(22670)),	-- Icebane Gauntlets
 				un(8, i(7936)),		-- Ornate Mithril Boots
-				un(8, i(7935)),		-- Ornate Mithril Breastplate
 				un(8, i(7927)),		-- Ornate Mithril Gloves
-				un(8, i(7937)),		-- Ornate Mithril Helm
 				un(8, i(7926)),		-- Ornate Mithril Pants
-				un(8, i(7928)),		-- Ornate Mithril Shoulder
-				un(8, i(12613)),	-- Runic Breastplate
-				un(8, i(7939)),		-- Truesilver Breastplate
 				un(8, i(7938)),		-- Truesilver Gauntlets
-				i(7914),	-- Barbaric Iron Breastplate
 				i(20039),	-- Dark Iron Boots
 				i(17014),	-- Dark Iron Bracers
 				i(19164),	-- Dark Iron Gauntlets
-				i(19148),	-- Dark Iron Helm
 				i(17013),	-- Dark Iron Leggings
-				i(11604),	-- Dark Iron Plate
-				i(11605),	-- Dark Iron Shoulders
-				i(20550),	-- Darkrune Breastplate
 				i(20549),	-- Darkrune Gauntlets
-				i(20551),	-- Darkrune Helm
-				i(12625),	-- Dawnbringer Shoulders
 				i(19051),	-- Girdle of the Dawn
 				i(19057),	-- Gloves of the Dawn
 				i(7933),	-- Heavy Mithril Boots
-				i(7930),	-- Heavy Mithril Breastplate
 				i(7919),	-- Heavy Mithril Gauntlet
-				i(7934),	-- Heavy Mithril Helm
 				i(7921),	-- Heavy Mithril Pants
-				i(7918),	-- Heavy Mithril Shoulder
 				i(22197),	-- Heavy Obsidian Belt
 				i(12424),	-- Imperial Plate Belt
 				i(12426),	-- Imperial Plate Boots
 				i(12425),	-- Imperial Plate Bracers
-				i(12422),	-- Imperial Plate Chest
-				i(12427),	-- Imperial Plate Helm
 				i(12429),	-- Imperial Plate Leggings
-				i(12428),	-- Imperial Plate Shoulders
 				i(22764),	-- Ironvine Belt
-				i(22762),	-- Ironvine Breastplate
 				i(22763),	-- Ironvine Gloves
-				i(12640),	-- Lionheart Helm
 				i(12611),	-- Runic Plate Boots
-				i(12612),	-- Runic Plate Helm
 				i(12614),	-- Runic Plate Leggings
-				i(12610),	-- Runic Plate Shoulders
-				i(7922),	-- Steel Plate Helm
 				i(12639),	-- Stronghold Gauntlets
-				i(22196),	-- Thick Obsidian Breastplate
-				i(12405),	-- Thorium Armor
 				i(12406),	-- Thorium Belt
 				i(12409),	-- Thorium Boots
 				i(12408),	-- Thorium Bracers
-				i(12410),	-- Thorium Helm
 				i(12414),	-- Thorium Leggings
 				i(22385),	-- Titanic Leggings
-				i(12633),	-- Whitesoul Helm
 			}),
 		}),
 		n(-182, { 	-- Enchanting
@@ -225,6 +377,9 @@ _.Craftables =
 			i(11289),	-- Lesser Mystic Wand
 		}),
 		n(-183, { 	-- Engineering
+			{	-- Plans: Inlaid Mithril Cylinder
+				["itemID"] = 10713,	-- Plans: Inlaid Mithril Cylinder
+			},
 			i(10644),	-- Recipe: Goblin Rocket Fuel (Engineers make the recipe for alchemists)
 			i(18282),	-- Core Marksman Rifle
 			i(16004),	-- Dark Iron Rifle

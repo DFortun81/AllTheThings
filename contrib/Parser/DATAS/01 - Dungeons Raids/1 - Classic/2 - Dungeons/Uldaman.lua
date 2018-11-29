@@ -290,6 +290,15 @@ _.Instances =
 					o(141979, {				-- Ancient Treasure (No Localization)
 						["groups"] = {
 							i(20976),	-- Design: Citrine Pendant of Golden Healing
+							{	-- Plans: Heavy Mithril Helm
+								["itemID"] = 7990,	-- Plans: Heavy Mithril Helm 
+							},
+							{	-- Plans: Mithril Shield Spike
+								["itemID"] = 7976,	-- Plans: Mithril Shield Spike
+							},
+							{	-- Plans: Mithril Spurs
+								["itemID"] = 7989,	-- Plans: Mithril Spurs
+							},
 							dr(4.0, i( 4063)),	-- Imperial Leather Gloves
 							dr(4.0, i( 7475)),	-- Regal Cuffs
 							dr(3.0, i(  866)),	-- Monk's Staff
@@ -361,7 +370,6 @@ _.Instances =
 							dr(1.0, i( 4734)),	-- Mistscape Mantle
 							dr(1.0, i( 6429)),	-- Mistscape Wizard Hat
 							dr(1.0, i(10302)),	-- Pattern: Red Mageweave Pants
-							dr(1.0, i( 7990)),	-- Plans: Heavy Mithril Helm 
 							dr(1.0, i( 7471)),	-- Regal Gloves
 							dr(1.0, i( 9906)),	-- Royal Sash
 							dr(1.0, i(10604)), 	-- Plans: Heavy Mithril Helm

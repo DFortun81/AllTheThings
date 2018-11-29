@@ -128,13 +128,16 @@ _.Instances = { tier(1, {	-- Classic
 						un(8, i(22671)),	-- Icebane Bracers
 					},
 				},
-				{
+				{	-- Icebane Breastplate
 					["questID"] = 9236,	-- Icebane Breastplate
 					["sourceQuest"] = 9233,	-- Omarion's Handbook
 					["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
 					["u"] = 40,
 					["groups"] = {
-						un(8, i(22669)),	-- Icebane Breastplate
+						{	-- Plans: Icebane Breastplate
+							["recipeID"] = 28242, -- Plans: Icebane Breastplate
+							["u"] = 2,
+						},
 					},
 				},
 				{

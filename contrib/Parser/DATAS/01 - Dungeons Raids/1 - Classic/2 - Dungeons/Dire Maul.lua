@@ -448,6 +448,17 @@ _.Instances =
 						["groups"] = {
 							n(-12, {	-- Warpwood Quarter [East - Demon]
 								n(-17, {	-- Quests (Legacy)
+									{	-- Enchanted Thorium Platemail: Volume III
+										["questID"] = 7651,	-- Enchanted Thorium Platemail: Volume III
+										["requireSkill"] = 164,	-- Blacksmithing
+										["u"]=  40,
+										["g"] = {
+											{	-- Plans: Enchanted Thorium Helm
+												["itemID"] = 12725,	-- Plans: Enchanted Thorium Helm
+												["u"] = 2,
+											},
+										},
+									},
 									un(2, i(18401, {	-- Foror's Compendium of Dragon Slaying
 										["groups"] = {
 											un(40, q(7507)),	-- Furor's Compendium

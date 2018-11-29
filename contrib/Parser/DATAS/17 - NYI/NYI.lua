@@ -315,7 +315,6 @@ _.NeverImplemented =
 	un(1, i(150645)), -- Mountainsage Sandals
 	un(1, i(150650)), -- Mountainsage Shoulderpads
 	un(1, i(150652)), -- Mountainsage Wristwraps
-	
 	un(1, i(166699)),	-- Desert Rucksack
 	un(1, i(150715)), -- Illidari Warglaive
 	un(1, i(134110)), -- Hidden Helm
@@ -341,12 +340,6 @@ _.NeverImplemented =
 	un(1, i(32176)),	-- Chancellor's Pummeler
 	un(1, i(38468)),	-- Kalu'ak Peacebringer
 	un(1, i(107390)),	-- Obliterator Firing Lever
-	un(1, i(108058)),	-- Draenic Steel Mace
-	un(1, i(108154)),	-- Hardened Draenic Steel Mace
-	un(1, i(108238)),	-- Peerless Draenic Steel Mace
-	un(1, i(108239)),	-- Peerless Draenic Steel Mace
-	un(1, i(108240)),	-- Peerless Draenic Steel Mace
-	un(1, i(108241)),	-- Peerless Draenic Steel Mace
 	un(1, i(115296)),	-- Spectral Warmace
 	un(1, i(115299)),	-- Spectral Scepter
 	un(1, i(4989)),	-- Mage Dragon Robe (intended to be quest reward, never made it to live?)
@@ -391,7 +384,6 @@ _.NeverImplemented =
 	un(1, i(12107)),	-- Whispersilk Leggings
 	un(1, i(13080)),	-- Widow's Clutch
 	un(1, i(18341)),	-- Quel'dorei Sash
-	un(1, i(21780)),	-- Blood Crown
 	un(1, i(23433)),	-- Blood Robes
 	un(1, i(23434)),	-- Robes of the Shard
 	un(1, i(25793)),	-- Curate's Footwraps

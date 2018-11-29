@@ -30,6 +30,87 @@ _.WorldDrops =
 					i(13487),	-- Recipe: Transmute Water to Undeath
 					i(9294),	-- Recipe: Wildvine Potion
 				}),
+				n(-181, { -- Blacksmithing
+					{	-- Plans: Copper Chain Vest
+						["itemID"] = 3609,	-- Plans: Copper Chain Vest
+					},
+					{	-- Plans: Dawnbringer Shoulders
+						["itemID"] = 12698,	-- Plans: Dawnbringer Shoulders
+					},
+					{	-- Plans: Golden Scale Cuirass
+						["itemID"] = 3873,	-- Plans: Golden Scale Cuirass
+					},
+					{	-- Plans: Golden Scale Shoulders
+						["itemID"] = 3871,	-- Plans: Golden Scale Shoulders
+					},
+					{	-- Plans: Green Iron Shoulders
+						["itemID"] = 3870,	-- Plans: Green Iron Shoulders
+					},
+					{	-- Plans: Heavy Mithril Helm
+						["itemID"]= 7990, -- Plans: Heavy Mithril Helm
+					},
+					{	-- Plans: Helm of the Great Chief
+						["itemID"] = 12716,	-- Plans: Helm of the Great Chief
+					},
+					{	-- Plans: Invulnerable Mail
+						["itemID"] = 12728,	-- Plans: Invulnerable Mail
+					},
+					{	-- Plans: Iron Counterweight
+						["itemID"] = 6045,	-- Plans: Iron Counterweight
+					},
+					{	-- Plans: Iron Shield Spike
+						["itemID"] = 6044,	-- Plans: Iron Shield Spike
+					},
+					{	-- Plans: Ironforge Chain
+						["itemID"] = 6734,	-- -- Plans: Ironforge Chain
+						["u"] = 1, -- Never implemented
+					},
+					{	-- Plans: Lionheart Helm
+						["itemID"] = 12717,	-- Plans: Lionheart Helm
+					},
+					{	-- Plans: Mithril Scale Shoulders
+						["itemID"] = 7991,	-- Plans: Mithril Scale Shoulders
+					},
+					{	-- Plans: Mithril Shield Spike
+						["itemID"] = 7976,	-- Plans: Mithril Shield Spike
+					},
+					{	-- Plans: Mithril Spurs
+						["itemID"] = 7989,	-- Plans: Mithril Spurs
+					},
+					{	-- Plans: Radiant Breastplate
+						["itemID"] = 12689,	-- Plans: Radiant Breastplate
+					},
+					{	-- Plans: Radiant Circlet
+						["itemID"] = 12702,	-- Plans: Radiant Circlet
+					},
+					{	-- Plans: Runed Copper Breastplate
+						["itemID"] = 2881,	-- Plans: Runed Copper Breastplate
+					},
+					{	-- Plans: Silvered Bronze Breastplate
+						["itemID"] = 5578,	-- Plans: Silvered Bronze Breastplate
+					},
+					{	-- Plans: Silvered Bronze Shoulders
+						["itemID"] = 2882,	-- Plans: Silvered Bronze Shoulders
+					},
+					{	-- Plans: Steel Weapon Chain
+						["itemID"] = 6046,	-- Plans: Steel Weapon Chain
+					},
+					{	-- Plans: Thorium Armor
+						["itemID"] = 12682,	-- Plans: Thorium Armor
+					},
+					{	-- Plans: Thorium Helm
+						["itemID"] = 12694, -- Plans: Thorium Helm
+					},
+					{	-- Plans: Thorium Shield Spike
+						["itemID"] = 12692,	-- Plans: Thorium Shield Spike
+					},
+					{	-- Plans: Whitesoul Helm
+						["itemID"] = 12711,	-- Plans: Whitesoul Helm
+					},
+					{	-- Plans: Wildthorn Mail
+						["itemID"] = 12691,	-- Plans: Wildthorn Mail
+					},
+				}),
 				n(-186, { 	-- Jewelcrafting
 					i(20976),	-- Design: Citrine Pendant of Golden Healing
 					i(21953),	-- Design: Emerald Owl

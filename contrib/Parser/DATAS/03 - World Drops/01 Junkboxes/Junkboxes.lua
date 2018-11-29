@@ -5,12 +5,6 @@ _.WorldDrops =
 {
 	n(-165, { 	-- Junkboxes
 		["groups"] = {
-			i(4634, {	-- Iron Lockbox
-				i(20974),	-- Design: Jade Pendant of Blasting
-			}),
-			i(4636, {	-- Strong Iron Lockbox
-				i(20976),	-- Design: Citrine Pendant of Golden Healing
-			}),
 			i(16882, { 	-- Battered Junkbox
 				dr(0.007, i(11968)), -- Amber Hoop
 				dr(0.007, i(4999)), -- Azora's Will

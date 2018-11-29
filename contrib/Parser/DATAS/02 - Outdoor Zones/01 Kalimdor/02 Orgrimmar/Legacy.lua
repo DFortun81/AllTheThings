@@ -85,7 +85,7 @@ _.Zones =
 								un(2, i(22111)),	-- Feralheart Kilt
 								un(2, i(22112)),	-- Feralheart Spaulders
 							}))),
-							un(40, qh(3507, {	-- Betrayed
+							un(40, qh(3507, {		-- Betrayed
 								un(2, i(11120)),	-- Belgrom's Hammer
 								un(2, i(10709)),	-- Pyrestone Orb
 							})),
@@ -99,7 +99,7 @@ _.Zones =
 								un(2, i(11870)),	-- Oblivion Orb 
 								un(2, i(11871)),	-- Snarkshaw Spaulders
 							})),
-							un(40, qh(7491, {	-- For All To See
+							un(40, qh(7491, {		-- For All To See
 								un(2, i(18403)),	-- Dragonslayer's Signet
 								un(2, i(18406)),	-- Onyxia Blood Talisman
 								un(2, i(18404)),	-- Onyxia Tooth Pendant
@@ -186,12 +186,26 @@ _.Zones =
 								un(2, i(22109)),	-- Feralheart Cowl 
 								un(2, i(22113)),	-- Feralheart Vest
 							}))),
-							un(40, qh(8258, {	-- The Darkreaver Menace
+							un(40, qh(8258, {		-- The Darkreaver Menace
 								["groups"] = {
 									un(2, i(20134)),	-- Skyfury Helm
 								},
 								["classes"] = { 7 },	-- Shaman
 							})),
+							{	-- The Old Ways
+								["questID"] = 2756,	-- The Old Ways
+								["qg"] = 7792, -- Aturk the Anvil
+								["requireSkill"] = 164,	-- Blacksmithing
+								["isBreadcrumb"] = true,
+								["races"] = HORDE_ONLY,
+								["u"] = 40,
+								["g"] = {
+									{	-- Plans: Orcish War Leggings
+										["itemID"] = 7994, -- Plans: Orcish War Leggings
+										["u"] = 2,
+									},
+								},
+							},
 							un(40, qc4(q(1858, { 	-- The Shattered Hand
 								un(2, i(7298)),	-- Blade of Cunning
 							}))),

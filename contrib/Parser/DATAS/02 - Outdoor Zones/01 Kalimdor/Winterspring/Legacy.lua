@@ -23,6 +23,12 @@ _.Zones =
 								un(2, i(15786)),	-- Fempulse Jerkin
 								un(2, i(15787)),	-- Willow Band Hauberk
 							})),
+							{	-- Lorax's Tale
+								["questID"] = 5126,	-- Lorax's Tale
+								["qg"] = 10918, -- Lorax
+								["requireSkill"] = 164,	-- Blacksmithing
+								["u"] = 40,
+							},
 							un(40, qh(5057, {	-- Past Endeavors
 								un(2, i(15704)),	-- Hunter's Insignia Medal
 							})),
@@ -43,6 +49,31 @@ _.Zones =
 								un(2, i(15792)),	-- Plow Wood Spaulders
 								un(2, i(15791)),	-- Turquoise Sash
 							})),
+							{	-- The Demon Forge
+								["questID"] = 5127,	-- The Demon Forge
+								["qg"] = 10918, -- Lorax
+								["sourceQuests"] = { 5126 }, -- Lorax's Tale
+								["requireSkill"] = 164,	-- Blacksmithing
+								["u"] = 40,
+								["g"] = {
+									{	-- Plans: Demon Forged Breastplate
+										["itemID" ] = 12696, -- Plans: Demon Forged Breastplate
+										["u"] = 2,
+									},
+									{	-- Demon Kissed Sack
+										["itemID"] = 12849, -- Demon Kissed Sack
+										["u"] = 2,
+										["g"] = {
+											{	-- Commander's Pauldrons
+												["itemID"] = 10383, -- Commander's Pauldrons
+											},
+											{	-- Commander's Vambraces
+												["itemID"] = 10377, -- Commander's Vambraces
+											},
+										},
+									},
+								},
+							},
 							un(40, qa(4902, {	-- Wildkin of Elune
 								un(2, i(16623)),	-- Opaline Medallion
 								un(2, i(16622)),	-- Thornflinger

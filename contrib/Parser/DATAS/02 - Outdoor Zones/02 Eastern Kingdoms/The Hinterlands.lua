@@ -215,7 +215,17 @@ _.Zones =
 					qh(26212, {	-- Lard Lost His Lunch
 						["qg"] = 14731,	-- Lard
 						["groups"] = {
-							i(19035),	-- Lard's Special Picnic Basket
+							i(19035, {	-- Lard's Special Picnic Basket
+								["g"] = {
+									{	-- Plans: Golden Scale Shoulders
+										["itemID"] = 3871,	-- Plans: Golden Scale Shoulders
+									},
+									{	-- Plans: Iron Shield Spike
+										["itemID"] = 6044,	-- Plans: Iron Shield Spike
+									},
+								},
+								["description"] = "These items have a small chance of dropping from this box.",
+							}),
 						},
 					}),
 					qa(26515, {	-- Ongo'longo's Revenge
