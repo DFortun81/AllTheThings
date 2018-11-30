@@ -5,176 +5,247 @@ _.NeverImplemented =
 {   ---------------
 	---- ARMOR ----
 	---------------
-	---- MAIL  ----
-	un(1, i(12615)),	    -- Savage Mail Tunic (never added to live)
-	un(1, i(12616)),	    -- Savage Boots (never added to live)
-	un(1, i(12617)),	    -- Savage Pauldrons (never added to live)
-	un(1, i(18304)),	    -- Greenroot Mail (never added to live)
-	un(1, i(21584)),	    -- Bracers of Eternal Reckoning (never added to live)
-	un(1, i(21588)),	    -- Wristguards of Elemental Fury (never added to live)
-	un(1, i(21612)),	    -- Wormscale Stompers (never added to live)
-	---- MAIL (HUNTER ONLY) ----
-	un(1, i(32133)),	    -- Chancellor's Chain Armor
-	un(1, i(32134)),	    -- Chancellor's Chain Gauntlets
-	un(1, i(32135)),	    -- Chancellor's Chain Helm
-	un(1, i(32136)),	    -- Chancellor's Chain Leggings
-	un(1, i(32137)),	    -- Chancellor's Chain Spaulders
-	---- MAIL (SHAMAN ONLY) ----
-	cl(7, {	-- Shaman
-		un(1, i(32138)),	    -- Chancellor's Linked Armor
-		un(1, i(32139)),	    -- Chancellor's Linked Gauntlets
-		un(1, i(32140)),	    -- Chancellor's Linked Helm
-		un(1, i(32141)),	    -- Chancellor's Linked Leggings
-		un(1, i(32142)),	    -- Chancellor's Linked Spaulders
-		un(1, i(32143)),	    -- Chancellor's Mail Armor
-		un(1, i(32144)),	    -- Chancellor's Mail Gauntlets
-		un(1, i(32145)),	    -- Chancellor's Mail Helm
-		un(1, i(32146)),	    -- Chancellor's Mail Leggings
-		un(1, i(32147)),	    -- Chancellor's Mail Sppaulders
-		un(1, i(32148)),	    -- Chancellor's Ringmail Chestguard
-		un(1, i(32149)),	    -- Chancellor's Ringmail Gloves
-		un(1, i(32150)),	    -- Chancellor's Ringmail Headpiece
-		un(1, i(32151)),	    -- Chancellor's Ringmail Legguards
-		un(1, i(32152)),	    -- Chancellor's Ringmail Shoulders
+	n(-45, { -- Mail
+		cl(7, {	-- Shaman
+			un(1, i(32138)),	    -- Chancellor's Linked Armor
+			un(1, i(32139)),	    -- Chancellor's Linked Gauntlets
+			un(1, i(32140)),	    -- Chancellor's Linked Helm
+			un(1, i(32141)),	    -- Chancellor's Linked Leggings
+			un(1, i(32142)),	    -- Chancellor's Linked Spaulders
+			un(1, i(32143)),	    -- Chancellor's Mail Armor
+			un(1, i(32144)),	    -- Chancellor's Mail Gauntlets
+			un(1, i(32145)),	    -- Chancellor's Mail Helm
+			un(1, i(32146)),	    -- Chancellor's Mail Leggings
+			un(1, i(32147)),	    -- Chancellor's Mail Sppaulders
+			un(1, i(32148)),	    -- Chancellor's Ringmail Chestguard
+			un(1, i(32149)),	    -- Chancellor's Ringmail Gloves
+			un(1, i(32150)),	    -- Chancellor's Ringmail Headpiece
+			un(1, i(32151)),	    -- Chancellor's Ringmail Legguards
+			un(1, i(32152)),	    -- Chancellor's Ringmail Shoulders
+		}),
+		cl(3, {	-- Hunter
+			un(1, i(32133)),	    -- Chancellor's Chain Armor
+			un(1, i(32134)),	    -- Chancellor's Chain Gauntlets
+			un(1, i(32135)),	    -- Chancellor's Chain Helm
+			un(1, i(32136)),	    -- Chancellor's Chain Leggings
+			un(1, i(32137)),	    -- Chancellor's Chain Spaulders
+		}),
+		un(1, i(12615)),	    -- Savage Mail Tunic (never added to live)
+		un(1, i(12616)),	    -- Savage Boots (never added to live)
+		un(1, i(12617)),	    -- Savage Pauldrons (never added to live)
+		un(1, i(18304)),	    -- Greenroot Mail (never added to live)
+		un(1, i(21584)),	    -- Bracers of Eternal Reckoning (never added to live)
+		un(1, i(21588)),	    -- Wristguards of Elemental Fury (never added to live)
+		un(1, i(21612)),	    -- Wormscale Stompers (never added to live)
+		un(1, i(38387)),	    -- Grizzled Hat
+		un(1, i(38388)),	    -- Cap of the North
+		un(1, i(38389)),	    -- Comfy Raccoonskin Hat
+		un(1, i(38390)),	    -- The Rugged Marksman
 	}),
-	
-	---- MISC ----
-	un(1, i(146801)),	-- [BUILDING CONTRIBUTION REWARD ITEM [NYI]]
-	un(1, i(146800)),	-- [BUILDING CONTRIBUTION REWARD ITEM [NYI]]
-	un(1, i(146799)),	-- [BUILDING CONTRIBUTION REWARD ITEM [NYI]]
-	un(1, i(115371)),	-- [PLACEHOLDER TIER 3 ITEM]
-	un(1, i(111810)),	-- Barracks, Level 1 - unused version (used version is 111956)
-	
-	----------------------
-	----	MOUNTS	  ----
-	----------------------
-	un(1, i(8627)),	-- Reins of the Nightsaber								(Never added in Game)
-	un(1, a(model(6447, i(8628)))),	-- Reins of the Spotted Nightsaber 		(Never added in Game)
-	un(1, a(model(6443, i(8630, {		-- Reins of the Bengal Tiger 			(Never added in Game)
-		{ ["mountID"]= 10790 }	
-	})))),							
-	un(1, a(model(4805, i(8633, {		-- Reins of the Leopard 				(Never added in Game)
-		{ ["mountID"]= 10788 }	
-	})))),							
-	un(1, a(model(4805, i(12325)))),	-- Reins of the Primal Leopard 			(Never added in Game)
-	un(1, a(model(6442, i(12326)))),	-- Reins of the Tawny Sabercat 			(Never added in Game)
-	un(1, a(model(9714, i(12327)))),	-- Reins of the Golden Sabercat 		(Never added in Game)
-	un(1, i(156884, {	-- Black Gladiator's Proto-Drake
-		["mountID"] = 262027,
-	})),
-	un(1, i(156880, {	-- Blue Gladiator's Proto-Drake
-		["mountID"] = 262023,
-	})),
-	un(1, i(156885, {	-- Gold Gladiator's Proto-Drake
-		["mountID"] = 262028,
-	})),
-	un(1, i(156883, {	-- Green Gladiator's Proto-Drake
-		["mountID"] = 262026,
-	})),
-	un(1, i(156882, {	-- Pale Gladiator's Proto-Drake
-		["mountID"] = 262025,
-	})),
-	un(1, i(156881, {	-- Purple Gladiator's Proto-Drake
-		["mountID"] = 262024,
-	})),
-	---------------------
-	---- PROFESSIONS ----
-	---------------------
-	
-	---- INSCRIPTION ----
-	un(1, i(87830)),	-- Recipe: Tigersblood Tincture
-	un(1, i(87829)),	-- Recipe: Incarnadine Ink
-	un(1, i(129139)),	-- Tome of Rapid Pathfinding (WoD PTR only, why Blizz why?)
-	un(1, i(146335)),	-- Vantus Rune Technique: Black Rook Hold (likely PTR version)
-	un(1, i(146355)),	-- Vantus Rune Technique: Black Rook Hold (likely PTR version)
-	un(1, i(146375)),	-- Vantus Rune Technique: Black Rook Hold (likely PTR version)
-	un(1, i(146344)),	-- Vantus Rune Technique: Cathedral of Eternal Night (likely PTR version)
-	un(1, i(146364)),	-- Vantus Rune Technique: Cathedral of Eternal Night (likely PTR version)
-	un(1, i(146384)),	-- Vantus Rune Technique: Cathedral of Eternal Night (likely PTR version)
-	un(1, i(146395)),	-- Vantus Rune Technique: Court of Stars (likely PTR version)
-	un(1, i(146397)),	-- Vantus Rune Technique: Court of Stars (likely PTR version)
-	un(1, i(146399)),	-- Vantus Rune Technique: Court of Stars (likely PTR version)
-	un(1, i(146336)),	-- Vantus Rune Technique: Darkheart Thicket (likely PTR version)
-	un(1, i(146356)),	-- Vantus Rune Technique: Darkheart Thicket (likely PTR version)
-	un(1, i(146376)),	-- Vantus Rune Technique: Darkheart Thicket (likely PTR version)
-	un(1, i(146396)),	-- Vantus Rune Technique: Eye of Azshara (likely PTR version)
-	un(1, i(146398)),	-- Vantus Rune Technique: Eye of Azshara (likely PTR version)
-	un(1, i(146400)),	-- Vantus Rune Technique: Eye of Azshara (likely PTR version)
-	un(1, i(146337)),	-- Vantus Rune Technique: Halls of Valor (likely PTR version)
-	un(1, i(146357)),	-- Vantus Rune Technique: Halls of Valor (likely PTR version)
-	un(1, i(146377)),	-- Vantus Rune Technique: Halls of Valor (likely PTR version)
-	un(1, i(146338)),	-- Vantus Rune Technique: Maw of Souls (likely PTR version)
-	un(1, i(146358)),	-- Vantus Rune Technique: Maw of Souls (likely PTR version)
-	un(1, i(146378)),	-- Vantus Rune Technique: Maw of Souls (likely PTR version)
-	un(1, i(146339)),	-- Vantus Rune Technique: Neltharion's Lair (likely PTR version)
-	un(1, i(146359)),	-- Vantus Rune Technique: Neltharion's Lair (likely PTR version)
-	un(1, i(146379)),	-- Vantus Rune Technique: Neltharion's Lair (likely PTR version)
-	un(1, i(146340)),	-- Vantus Rune Technique: Return to Karazhan (Lower) (likely PTR version)
-	un(1, i(146360)),	-- Vantus Rune Technique: Return to Karazhan (Lower) (likely PTR version)
-	un(1, i(146380)),	-- Vantus Rune Technique: Return to Karazhan (Lower) (likely PTR version)
-	un(1, i(146345)),	-- Vantus Rune Technique: Return to Karazhan (Upper) (likely PTR version)
-	un(1, i(146365)),	-- Vantus Rune Technique: Return to Karazhan (Upper) (likely PTR version)
-	un(1, i(146385)),	-- Vantus Rune Technique: Return to Karazhan (Upper) (likely PTR version)
-	un(1, i(146341)),	-- Vantus Rune Technique: The Arcway (likely PTR version)
-	un(1, i(146361)),	-- Vantus Rune Technique: The Arcway (likely PTR version)
-	un(1, i(146381)),	-- Vantus Rune Technique: The Arcway (likely PTR version)
-	un(1, i(146342)),	-- Vantus Rune Technique: Vault of the Wardens (likely PTR version)
-	un(1, i(146362)),	-- Vantus Rune Technique: Vault of the Wardens (likely PTR version)
-	un(1, i(146382)),	-- Vantus Rune Technique: Vault of the Wardens (likely PTR version)
-	un(1, i(146343)),	-- Vantus Rune Technique: Violet Hold (likely PTR version)
-	un(1, i(146363)),	-- Vantus Rune Technique: Violet Hold (likely PTR version)
-	un(1, i(146383)),	-- Vantus Rune Technique: Violet Hold (likely PTR version)
-	un(1, i(141061)),	-- Technique: Glyph of the Abyssal (Item never made it into the game)
-	un(1, i(141065)),	-- Technique: Glyph of the Terrorguard (Item never made it into the game)
-	
-	---- TAILORING ----
-	un(1, i(42196)),	-- Pattern: Aurora Slippers (pattern never went live, but it's learned at the trainer)
-	un(1, i(7093)),		-- Pattern: Boots of Darkness
-	un(1, i(42190)),	-- Pattern: Deathchill Cloak (pattern never went live, but it's learned at the trainer)
-	un(1, i(42180)),	-- Pattern: Ebonweave (pattern never went live, but it's learned at the trainer)
-	un(1, i(42200)),	-- Pattern: Ebonweave Gloves (pattern never went live, but it's learned at the trainer)
-	un(1, i(42199)),	-- Pattern: Ebonweave Robe (pattern never went live, but it's learned at the trainer)
-	un(1, i(162424)),	-- Pattern: Embroidered Deep Sea Cloak of the Feather (alliance)
-	un(1, i(162770)),	-- Pattern: Embroidered Deep Sea Cloak of the Feather (horde)
-	un(1, i(162426)),	-- Pattern: Embroidered Deep Sea Cloak of Resilience (alliance)
-	un(1, i(162771)),	-- Pattern: Embroidered Deep Sea Cloak of Resilience (horde)
-	un(1, i(162428)),	-- Pattern: Embroidered Deep Sea Gloves (Rank 3)
-	un(1, i(162430)),	-- Pattern: Embroidered Deep Sea Breeches (Rank 3)
-	un(1, i(21369)),	-- Pattern: Felcloth Bag
-	un(1, i(42194)),	-- Pattern: Frostmoon Pants (pattern never went live, but it's learned at the trainer)
-	un(1, i(42186)),	-- Pattern: Frostweave Bag (pattern never went live, but it's learned at the trainer)
-	un(1, i(42179)),	-- Pattern: Green Workman's Shirt (pattern never went live, but it's learned at the trainer)
-	un(1, i(42191)),	-- Pattern: Hat of Wintry Doom (pattern never went live, but it's learned at the trainer)
-	un(1, i(30473)),	-- Pattern: Lifeblood Belt
-	un(1, i(30474)),	-- Pattern: Lifeblood Bracers
-	un(1, i(30472)),	-- Pattern: Lifeblood Leggings
-	un(1, i(42195)),	-- Pattern: Light Blessed Mittens (pattern never went live, but it's learned at the trainer)
-	un(1, i(114867)),	-- Pattern: Miniature Flying Carpet - NYI
-	un(1, i(42181)),	-- Pattern: Moonshroud (pattern never went live, but it's learned at the trainer)
-	un(1, i(42198)),	-- Pattern: Moonshroud Gloves (pattern never went live, but it's learned at the trainer)
-	un(1, i(42197)),	-- Pattern: Moonshroud Robe (pattern never went live, but it's learned at the trainer)
-	un(1, i(118098)),	-- Pattern: Murloc Chew Toy
-	un(1, i(30470)),	-- Pattern: Netherflame Belt
-	un(1, i(30471)),	-- Pattern: Netherflame Boots
-	un(1, i(30469)),	-- Pattern: Netherflame Robe
-	un(1, i(137981)),	-- Pattern: Silkweave Cloak
-	un(1, i(42192)),	-- Pattern: Silky Iceshard Boots (pattern never went live, but it's learned at the trainer)
-	un(1, i(42182)),	-- Pattern: Spellweave (pattern never went live, but it's learned at the trainer)
-	un(1, i(42202)),	-- Pattern: Spellweave Gloves (pattern never went live, but it's learned at the trainer)
-	un(1, i(42201)),	-- Pattern: Spellweave Robe (pattern never went live, but it's learned at the trainer)
-	un(1, i(10303)),	-- Pattern: Stormcloth Pants (pattern never went live despite it showing in the appearance tab)
-	un(1, i(10304)),	-- Pattern: Stormcloth Gloves (pattern never went live despite it showing in the appearance tab)
-	un(1, i(10313)),	-- Pattern: Stormcloth Vest (pattern never went live despite it showing in the appearance tab)
-	un(1, i(10319)),	-- Pattern: Stormcloth Headband (pattern never went live despite it showing in the appearance tab)
-	un(1, i(10322)),	-- Pattern: Stormcloth Shoulders (pattern never went live despite it showing in the appearance tab)
-	un(1, i(10324)),	-- Pattern: Stormcloth Boots (pattern never went live despite it showing in the appearance tab)
-	un(1, i(42189)),	-- Pattern: Wispcloak (pattern never went live, but it's learned at the trainer)
-	un(1, i(42174)),	-- Pattern: Yellow Lumberjack Shirt (pattern never went live, but it's learned at the trainer)
-	
-	-----------------
-	---- WEAPONS ----
-	-----------------
-	un(1, i(33475)),	-- Artefact Frostmourne
+	n(-494, { -- Misc
+		un(1, i(146801)),	-- [BUILDING CONTRIBUTION REWARD ITEM [NYI]]
+		un(1, i(146800)),	-- [BUILDING CONTRIBUTION REWARD ITEM [NYI]]
+		un(1, i(146799)),	-- [BUILDING CONTRIBUTION REWARD ITEM [NYI]]
+		un(1, i(115371)),	-- [PLACEHOLDER TIER 3 ITEM]
+		un(1, i(111810)),	-- Barracks, Level 1 - unused version (used version is 111956)
+	}),
+	n(-160, { -- Mounts
+		un(1, i(8627)),	-- Reins of the Nightsaber								(Never added in Game)
+		un(1, a(model(6447, i(8628)))),	-- Reins of the Spotted Nightsaber 		(Never added in Game)
+		un(1, a(model(6443, i(8630, {		-- Reins of the Bengal Tiger 			(Never added in Game)
+			{ ["mountID"]= 10790 }	
+		})))),							
+		un(1, a(model(4805, i(8633, {		-- Reins of the Leopard 				(Never added in Game)
+			{ ["mountID"]= 10788 }	
+		})))),							
+		un(1, a(model(4805, i(12325)))),	-- Reins of the Primal Leopard 			(Never added in Game)
+		un(1, a(model(6442, i(12326)))),	-- Reins of the Tawny Sabercat 			(Never added in Game)
+		un(1, a(model(9714, i(12327)))),	-- Reins of the Golden Sabercat 		(Never added in Game)
+		un(1, i(156884, {	-- Black Gladiator's Proto-Drake
+			["mountID"] = 262027,
+		})),
+		un(1, i(156880, {	-- Blue Gladiator's Proto-Drake
+			["mountID"] = 262023,
+		})),
+		un(1, i(156885, {	-- Gold Gladiator's Proto-Drake
+			["mountID"] = 262028,
+		})),
+		un(1, i(156883, {	-- Green Gladiator's Proto-Drake
+			["mountID"] = 262026,
+		})),
+		un(1, i(156882, {	-- Pale Gladiator's Proto-Drake
+			["mountID"] = 262025,
+		})),
+		un(1, i(156881, {	-- Purple Gladiator's Proto-Drake
+			["mountID"] = 262024,
+		})),
+		un(1, model(41089, i(84753))),		-- Reins of the White Riding Yak 		(Never added in Game)
+		un(1, model(43707, i(87784))),		-- Reins of the Jungle Riding Crane 	(Never added in Game)
+		un(1, model(43709, i(87786))),		-- Reins of the Black Riding Yak 		(Never added in Game)
+		un(1, model(43710, i(87787))),		-- Reins of the Brown Riding Yak 		(Never added in Game)
+		un(1, model(43715, i(87792))),		-- Reins of the Orange Water Strider 	(Never added in Game)
+		un(1, model(43714, i(87793))),		-- Reins of the Jade Water Strider 		(Never added in Game)
+		un(1, model(51323, i(104011))),	-- Stormcrow 							(Never added in Game)
+		un(1, i(143752)),	-- Sound Test Mount
+		un(1, i(37598)),	-- Swift Zhevra OLD
+		un(1, i(44557)),	-- Swift Ebonweave Carpet (NOT IN GAME)
+		un(1, i(44556)),	-- Swift Spellfire Carpet (NOT IN GAME)
+		un(1, i(44555)),	-- Swift Mooncloth Carpet (NOT IN GAME)
+		un(1, i(84728)),	-- Reins of the Crimson Riding Crane
+		un(1, i(87785)),	-- Reins of the Albino Riding Crane
+		un(1, i(87794)),	-- Reins of the Golden Water Strider
+		un(1, i(116657)),	-- Ancient Leatherhide
+		un(1, i(129744)),	-- Iron Warhorse
+		un(1, i(137576)),	-- Dim Coldflame Core
+		un(1, i(137615)),	-- Molten Flarecore
+		un(1, i(156798)),	-- The Hivemind
+	}),
+	n(-38, { -- Professions
+		n(-180, { -- Alchemy
+			un(1, i(2556)),     -- Recipe: Elixir of Tongues
+			un(1, i(5641)),		-- Recipe: Cowardly Flight Potion
+			un(1, i(34481)),	-- Recipe: Mad Alchemist's Potion (Recipe was added to trainers instead of a usable item)
+			un(1, i(71955)),	-- Recipe: Transmute Deepholm Iolite
+			un(1, i(71956)),	-- Recipe: Transmute Elven Peridot
+			un(1, i(71957)),	-- Recipe: Transmute Lightstone
+			un(1, i(71958)),	-- Recipe: Transmute Lava Coral
+			un(1, i(71959)),	-- Recipe: Transmute Shadow Spinel
+			un(1, i(71960)),	-- Recipe: Transmute Queen's Garnet
+			un(1, i(112025)),	-- Recipe: UNUSED
+			un(1, i(112032)),	-- Recipe: UNUSED
+			un(1, i(113625)),	-- Recipe: UNUSED
+			un(1, i(113626)),	-- Recipe: UNUSED
+			un(1, i(112049)),	-- Recipe: Alchemical Catalyst - Fireweed
+			un(1, i(112050)),	-- Recipe: Alchemical Catalyst - Flytrap
+			un(1, i(112051)),	-- Recipe: Alchemical Catalyst - Starflower
+			un(1, i(112052)),	-- Recipe: Alchemical Catalyst - Arrowbloom
+			un(1, i(112053)),	-- Recipe: Alchemical Catalyst - Orchid
+			un(1, i(112054)),	-- Recipe: Alchemical Catalyst - Lotus
+			un(1, i(152620)),	-- Recipe: Astral Mana Potion (Rank 1)
+			un(1, i(152621)),	-- Recipe: Astral Mana Potion (Rank 2)
+			un(1, i(152622)),	-- Recipe: Astral Mana Potion (Rank 3)
+		}),
+		n(-185, { -- Inscription
+			un(1, i(87830)),	-- Recipe: Tigersblood Tincture
+			un(1, i(87829)),	-- Recipe: Incarnadine Ink
+			un(1, i(129139)),	-- Tome of Rapid Pathfinding (WoD PTR only, why Blizz why?)
+			un(1, i(146335)),	-- Vantus Rune Technique: Black Rook Hold (likely PTR version)
+			un(1, i(146355)),	-- Vantus Rune Technique: Black Rook Hold (likely PTR version)
+			un(1, i(146375)),	-- Vantus Rune Technique: Black Rook Hold (likely PTR version)
+			un(1, i(146344)),	-- Vantus Rune Technique: Cathedral of Eternal Night (likely PTR version)
+			un(1, i(146364)),	-- Vantus Rune Technique: Cathedral of Eternal Night (likely PTR version)
+			un(1, i(146384)),	-- Vantus Rune Technique: Cathedral of Eternal Night (likely PTR version)
+			un(1, i(146395)),	-- Vantus Rune Technique: Court of Stars (likely PTR version)
+			un(1, i(146397)),	-- Vantus Rune Technique: Court of Stars (likely PTR version)
+			un(1, i(146399)),	-- Vantus Rune Technique: Court of Stars (likely PTR version)
+			un(1, i(146336)),	-- Vantus Rune Technique: Darkheart Thicket (likely PTR version)
+			un(1, i(146356)),	-- Vantus Rune Technique: Darkheart Thicket (likely PTR version)
+			un(1, i(146376)),	-- Vantus Rune Technique: Darkheart Thicket (likely PTR version)
+			un(1, i(146396)),	-- Vantus Rune Technique: Eye of Azshara (likely PTR version)
+			un(1, i(146398)),	-- Vantus Rune Technique: Eye of Azshara (likely PTR version)
+			un(1, i(146400)),	-- Vantus Rune Technique: Eye of Azshara (likely PTR version)
+			un(1, i(146337)),	-- Vantus Rune Technique: Halls of Valor (likely PTR version)
+			un(1, i(146357)),	-- Vantus Rune Technique: Halls of Valor (likely PTR version)
+			un(1, i(146377)),	-- Vantus Rune Technique: Halls of Valor (likely PTR version)
+			un(1, i(146338)),	-- Vantus Rune Technique: Maw of Souls (likely PTR version)
+			un(1, i(146358)),	-- Vantus Rune Technique: Maw of Souls (likely PTR version)
+			un(1, i(146378)),	-- Vantus Rune Technique: Maw of Souls (likely PTR version)
+			un(1, i(146339)),	-- Vantus Rune Technique: Neltharion's Lair (likely PTR version)
+			un(1, i(146359)),	-- Vantus Rune Technique: Neltharion's Lair (likely PTR version)
+			un(1, i(146379)),	-- Vantus Rune Technique: Neltharion's Lair (likely PTR version)
+			un(1, i(146340)),	-- Vantus Rune Technique: Return to Karazhan (Lower) (likely PTR version)
+			un(1, i(146360)),	-- Vantus Rune Technique: Return to Karazhan (Lower) (likely PTR version)
+			un(1, i(146380)),	-- Vantus Rune Technique: Return to Karazhan (Lower) (likely PTR version)
+			un(1, i(146345)),	-- Vantus Rune Technique: Return to Karazhan (Upper) (likely PTR version)
+			un(1, i(146365)),	-- Vantus Rune Technique: Return to Karazhan (Upper) (likely PTR version)
+			un(1, i(146385)),	-- Vantus Rune Technique: Return to Karazhan (Upper) (likely PTR version)
+			un(1, i(146341)),	-- Vantus Rune Technique: The Arcway (likely PTR version)
+			un(1, i(146361)),	-- Vantus Rune Technique: The Arcway (likely PTR version)
+			un(1, i(146381)),	-- Vantus Rune Technique: The Arcway (likely PTR version)
+			un(1, i(146342)),	-- Vantus Rune Technique: Vault of the Wardens (likely PTR version)
+			un(1, i(146362)),	-- Vantus Rune Technique: Vault of the Wardens (likely PTR version)
+			un(1, i(146382)),	-- Vantus Rune Technique: Vault of the Wardens (likely PTR version)
+			un(1, i(146343)),	-- Vantus Rune Technique: Violet Hold (likely PTR version)
+			un(1, i(146363)),	-- Vantus Rune Technique: Violet Hold (likely PTR version)
+			un(1, i(146383)),	-- Vantus Rune Technique: Violet Hold (likely PTR version)
+			un(1, i(141061)),	-- Technique: Glyph of the Abyssal (Item never made it into the game)
+			un(1, i(141065)),	-- Technique: Glyph of the Terrorguard (Item never made it into the game)
+		}),
+		n(-190, { -- Tailoring
+			un(1, i(42196)),	-- Pattern: Aurora Slippers (pattern never went live, but it's learned at the trainer)
+			un(1, i(7093)),		-- Pattern: Boots of Darkness
+			un(1, i(42190)),	-- Pattern: Deathchill Cloak (pattern never went live, but it's learned at the trainer)
+			un(1, i(42180)),	-- Pattern: Ebonweave (pattern never went live, but it's learned at the trainer)
+			un(1, i(42200)),	-- Pattern: Ebonweave Gloves (pattern never went live, but it's learned at the trainer)
+			un(1, i(42199)),	-- Pattern: Ebonweave Robe (pattern never went live, but it's learned at the trainer)
+			un(1, i(162424)),	-- Pattern: Embroidered Deep Sea Cloak of the Feather (alliance)
+			un(1, i(162770)),	-- Pattern: Embroidered Deep Sea Cloak of the Feather (horde)
+			un(1, i(162426)),	-- Pattern: Embroidered Deep Sea Cloak of Resilience (alliance)
+			un(1, i(162771)),	-- Pattern: Embroidered Deep Sea Cloak of Resilience (horde)
+			un(1, i(162428)),	-- Pattern: Embroidered Deep Sea Gloves (Rank 3)
+			un(1, i(162430)),	-- Pattern: Embroidered Deep Sea Breeches (Rank 3)
+			un(1, i(21369)),	-- Pattern: Felcloth Bag
+			un(1, i(42194)),	-- Pattern: Frostmoon Pants (pattern never went live, but it's learned at the trainer)
+			un(1, i(42186)),	-- Pattern: Frostweave Bag (pattern never went live, but it's learned at the trainer)
+			un(1, i(42179)),	-- Pattern: Green Workman's Shirt (pattern never went live, but it's learned at the trainer)
+			un(1, i(42191)),	-- Pattern: Hat of Wintry Doom (pattern never went live, but it's learned at the trainer)
+			un(1, i(30473)),	-- Pattern: Lifeblood Belt
+			un(1, i(30474)),	-- Pattern: Lifeblood Bracers
+			un(1, i(30472)),	-- Pattern: Lifeblood Leggings
+			un(1, i(42195)),	-- Pattern: Light Blessed Mittens (pattern never went live, but it's learned at the trainer)
+			un(1, i(114867)),	-- Pattern: Miniature Flying Carpet - NYI
+			un(1, i(42181)),	-- Pattern: Moonshroud (pattern never went live, but it's learned at the trainer)
+			un(1, i(42198)),	-- Pattern: Moonshroud Gloves (pattern never went live, but it's learned at the trainer)
+			un(1, i(42197)),	-- Pattern: Moonshroud Robe (pattern never went live, but it's learned at the trainer)
+			un(1, i(118098)),	-- Pattern: Murloc Chew Toy
+			un(1, i(30470)),	-- Pattern: Netherflame Belt
+			un(1, i(30471)),	-- Pattern: Netherflame Boots
+			un(1, i(30469)),	-- Pattern: Netherflame Robe
+			un(1, i(137981)),	-- Pattern: Silkweave Cloak
+			un(1, i(42192)),	-- Pattern: Silky Iceshard Boots (pattern never went live, but it's learned at the trainer)
+			un(1, i(42182)),	-- Pattern: Spellweave (pattern never went live, but it's learned at the trainer)
+			un(1, i(42202)),	-- Pattern: Spellweave Gloves (pattern never went live, but it's learned at the trainer)
+			un(1, i(42201)),	-- Pattern: Spellweave Robe (pattern never went live, but it's learned at the trainer)
+			un(1, i(10303)),	-- Pattern: Stormcloth Pants (pattern never went live despite it showing in the appearance tab)
+			un(1, i(10304)),	-- Pattern: Stormcloth Gloves (pattern never went live despite it showing in the appearance tab)
+			un(1, i(10313)),	-- Pattern: Stormcloth Vest (pattern never went live despite it showing in the appearance tab)
+			un(1, i(10319)),	-- Pattern: Stormcloth Headband (pattern never went live despite it showing in the appearance tab)
+			un(1, i(10322)),	-- Pattern: Stormcloth Shoulders (pattern never went live despite it showing in the appearance tab)
+			un(1, i(10324)),	-- Pattern: Stormcloth Boots (pattern never went live despite it showing in the appearance tab)
+			un(1, i(42189)),	-- Pattern: Wispcloak (pattern never went live, but it's learned at the trainer)
+			un(1, i(42174)),	-- Pattern: Yellow Lumberjack Shirt (pattern never went live, but it's learned at the trainer)
+		}),
+	}),
+	n(-319, { -- Weapons
+		n(-347, { -- Crossbow
+			un(1, i(32187)),    -- Chancellor's Heavy Crossbow
+		}),
+		n(-333, { -- Daggers
+			un(1, i(32179)),    -- Chancellor's Shiv
+			un(1, i(23458)),    -- High Warlord's Spellblade (23466 was the added version)
+		}),
+		n(-348, { -- Fist Weapons
+			un(1, i(32188)),    -- Chancellor's Fleshslicer
+			un(1, i(32189)),    -- Chancellor's Ripper
+		}),
+		n(-342, { -- Staves
+			un(1, i(132474)),	-- Unknown - was under Legion>Staves
+			un(1, i(132475)),	-- Unknown - was under Legion>Staves
+			un(1, i(132476)),	-- Unknown - was under Legion>Staves
+			un(1, i(132477)),	-- Unknown - was under Legion>Staves
+			un(1, i(132478)),	-- Unknown - was under Legion>Staves
+			un(1, i(132479)),	-- Unknown - was under Legion>Staves
+			un(1, i(132480)),	-- Unknown - was under Legion>Staves
+			un(1, i(132481)),	-- Unknown - was under Legion>Staves
+			un(1, i(132482)),	-- Unknown - was under Legion>Staves
+			un(1, i(132483)),	-- Unknown - was under Legion>Staves
+			un(1, i(134066)),	-- Unknown - was under Legion>Staves
+			un(1, i(134068)),	-- Unknown - was under Legion>Staves
+			un(1, i(32185)),    -- Chancellor's War Staff
+		}),
+		n(-339, { -- Two Handed Swords
+			un(1, i(33475)),	-- Artefact Frostmourne
+		}),
 	un(1, i(80980)),	-- Axe of Aborted Deforestation (Never made it to Live, yet into our Appearances Tab)
 	un(1, i(80983)),	-- Extravagant Tree Chopper (Never made it to Live, yet into our Appearances Tab)
 	un(1, i(32178)),	-- Chancellor's Shanker
@@ -188,76 +259,12 @@ _.NeverImplemented =
 	un(1, i(18342)), -- Quel'dorei Guard [NPC Shield I believe]
 	un(1, i(20502)), -- Ironbark Shield [NPC Shield]
 	un(1, i(32181)),	    -- Chancellor's Bonegrinder
-	
-	----  AXES    ----
 	un(1, i(141606)),   -- Fel Hacker, unused Version
 	un(1, i(32174)),    -- Chancellor's Cleaver
 	un(1, i(32182)),    -- Chancellor's Decapitator
 	un(1, i(38244)),    -- Valorous Exterminator (Never added)
-	
-	---- CROSSBOWS ----
-	un(1, i(32187)),    -- Chancellor's Heavy Crossbow
-	
-	---- DAGGERS  ----
-	un(1, i(32179)),    -- Chancellor's Shiv
-	un(1, i(23458)),    -- High Warlord's Spellblade (23466 was the added version)
-	
-	---- FIST WEAPONS ----
-	un(1, i(32188)),    -- Chancellor's Fleshslicer
-	un(1, i(32189)),    -- Chancellor's Ripper
-	
-	---- STAVES  ----
-	un(1, i(132474)),	-- Unknown - was under Legion>Staves
-	un(1, i(132475)),	-- Unknown - was under Legion>Staves
-	un(1, i(132476)),	-- Unknown - was under Legion>Staves
-	un(1, i(132477)),	-- Unknown - was under Legion>Staves
-	un(1, i(132478)),	-- Unknown - was under Legion>Staves
-	un(1, i(132479)),	-- Unknown - was under Legion>Staves
-	un(1, i(132480)),	-- Unknown - was under Legion>Staves
-	un(1, i(132481)),	-- Unknown - was under Legion>Staves
-	un(1, i(132482)),	-- Unknown - was under Legion>Staves
-	un(1, i(132483)),	-- Unknown - was under Legion>Staves
-	un(1, i(134066)),	-- Unknown - was under Legion>Staves
-	un(1, i(134068)),	-- Unknown - was under Legion>Staves
-	un(1, i(32185)),    -- Chancellor's War Staff
-	
-	---- SWORDS  ----
 	un(1, i(32177)),    -- Chancellor's Quickblade
 	un(1, i(32180)),    -- Chancellor's Slicer
-	
-	un(1, i(2556)),     -- Recipe: Elixir of Tongues
-	un(1, i(5641)),		-- Recipe: Cowardly Flight Potion
-	un(1, i(34481)),	-- Recipe: Mad Alchemist's Potion (Recipe was added to trainers instead of a usable item)
-	un(1, i(71955)),	-- Recipe: Transmute Deepholm Iolite
-	un(1, i(71956)),	-- Recipe: Transmute Elven Peridot
-	un(1, i(71957)),	-- Recipe: Transmute Lightstone
-	un(1, i(71958)),	-- Recipe: Transmute Lava Coral
-	un(1, i(71959)),	-- Recipe: Transmute Shadow Spinel
-	un(1, i(71960)),	-- Recipe: Transmute Queen's Garnet
-	un(1, i(112025)),	-- Recipe: UNUSED
-	un(1, i(112032)),	-- Recipe: UNUSED
-	un(1, i(113625)),	-- Recipe: UNUSED
-	un(1, i(113626)),	-- Recipe: UNUSED
-	un(1, i(112049)),	-- Recipe: Alchemical Catalyst - Fireweed
-	un(1, i(112050)),	-- Recipe: Alchemical Catalyst - Flytrap
-	un(1, i(112051)),	-- Recipe: Alchemical Catalyst - Starflower
-	un(1, i(112052)),	-- Recipe: Alchemical Catalyst - Arrowbloom
-	un(1, i(112053)),	-- Recipe: Alchemical Catalyst - Orchid
-	un(1, i(112054)),	-- Recipe: Alchemical Catalyst - Lotus
-	un(1, i(152620)),	-- Recipe: Astral Mana Potion (Rank 1)
-	un(1, i(152621)),	-- Recipe: Astral Mana Potion (Rank 2)
-	un(1, i(152622)),	-- Recipe: Astral Mana Potion (Rank 3)
-	un(1, i(44600)),	-- Tome of Polymorph: Serpent (Never made it out of beta)
-	un(1, i(44811)),	-- Tome of Polymorph: Turkey
-	un(1, i(143752)),	-- Sound Test Mount
-	un(1, i(37598)),	-- Swift Zhevra OLD
-	un(1, i(44557)),	-- Swift Ebonweave Carpet (NOT IN GAME)
-	un(1, i(44556)),	-- Swift Spellfire Carpet (NOT IN GAME)
-	un(1, i(44555)),	-- Swift Mooncloth Carpet (NOT IN GAME)
-	un(1, i(22230)),	-- Frightmaw Hide (Cloak)
-	un(1, i(78017)),	-- Replica Magister's Leggings (Cloth)
-	un(1, i(54655)),	-- Stormshroud Armor (Leather)
-	un(1, i(138489)), 	-- Kargath's Sacrified Hands
 	un(1, i(23461)),	-- High Warlord's Quickblade [This was never actually added]
 	un(1, i(77588)),	-- Replica High Warlord's Quickblade
 	un(1, i(77586)),	-- Replica High Warlord's Spellblade
@@ -267,14 +274,14 @@ _.NeverImplemented =
 	un(1, i(32190)),	-- Chancellor's Spellblade
 	un(1, i(32183)),	-- Chancellor's Maul
 	un(1, i(77587)),	-- Replica High Warlord's Destroyer
-	un(1, i(84728)),	-- Reins of the Crimson Riding Crane
-	un(1, i(87785)),	-- Reins of the Albino Riding Crane
-	un(1, i(87794)),	-- Reins of the Golden Water Strider
-	un(1, i(116657)),	-- Ancient Leatherhide
-	un(1, i(129744)),	-- Iron Warhorse
-	un(1, i(137576)),	-- Dim Coldflame Core
-	un(1, i(137615)),	-- Molten Flarecore
-	un(1, i(156798)),	-- The Hivemind
+	}),
+	
+	un(1, i(44600)),	-- Tome of Polymorph: Serpent (Never made it out of beta)
+	un(1, i(44811)),	-- Tome of Polymorph: Turkey
+	un(1, i(22230)),	-- Frightmaw Hide (Cloak)
+	un(1, i(78017)),	-- Replica Magister's Leggings (Cloth)
+	un(1, i(54655)),	-- Stormshroud Armor (Leather)
+	un(1, i(138489)), 	-- Kargath's Sacrified Hands
 	un(1, i(80981)),	-- Scavenged Rotor Blade
 	un(1, i(81320)),	-- Right-Handed Invis Knuckles
 	un(1, i(84697)),	-- Dreadful Gladiator's Fleshslicer
@@ -566,13 +573,6 @@ _.NeverImplemented =
 		["description"] = "|cff66ccffUnable to find species for this pet, so using Black Piglet to make it so you can see the model for this pet.|r",
 	}))),
 	un(1, i(67600)), 	-- Lil' Alexstrasza										(Never added in Game)
-	un(1, model(41089, i(84753))),		-- Reins of the White Riding Yak 		(Never added in Game)
-	un(1, model(43707, i(87784))),		-- Reins of the Jungle Riding Crane 	(Never added in Game)
-	un(1, model(43709, i(87786))),		-- Reins of the Black Riding Yak 		(Never added in Game)
-	un(1, model(43710, i(87787))),		-- Reins of the Brown Riding Yak 		(Never added in Game)
-	un(1, model(43715, i(87792))),		-- Reins of the Orange Water Strider 	(Never added in Game)
-	un(1, model(43714, i(87793))),		-- Reins of the Jade Water Strider 		(Never added in Game)
-	un(1, model(51323, i(104011))),	-- Stormcrow 							(Never added in Game)
 	un(1, i(85588)), 	-- Reflex Edges [This version never implemented]
 	un(1, i(105956)), 	-- Wrath Gladiator's Razor [Not implemented, other version was instead]
 	un(1, i(117010)),	-- Forester's Axe 										(Never added in Game)
@@ -738,12 +738,12 @@ un(1, i(154047)), -- Oathsworn Defender Stone
 i(105914), -- Danger Detector Boots
 i(105915), -- Danger Detector Harness
 -- Shirt
-i(53869), -- War Paint (Shirt) NOT GOOD FOR THE LADIES (NYI)
-i(60619), -- No Shirt
-i(63074), -- "Behind You!" Shirt
-i(129294), -- Bonespeaker Tatoos
-i(137118), -- The Crone's Shirt
-i(137552), -- Purple Shirt
+un(1, i(53869)), -- War Paint (Shirt) NOT GOOD FOR THE LADIES (NYI)
+un(1, i(60619)), -- No Shirt
+un(1, i(63074)), -- "Behind You!" Shirt
+un(1, i(129294)), -- Bonespeaker Tatoos
+un(1, i(137118)), -- The Crone's Shirt
+un(1, i(137552)), -- Purple Shirt
 
 --  Hiding this information here so it's not spammy in the addon, but provides additional information to the user in Zul'Gurub "Cache of Madness"
 n(52446, { -- Ancient Dwarven Artifact

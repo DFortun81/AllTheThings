@@ -594,6 +594,9 @@ _.PVP =
 				{	-- Dread Aspirant's Drape
 					["itemID"] = 162967,	-- Dread Aspirant's Drape
 				},
+				{	-- Dread Aspirant's Drape
+					["itemID"] = 163723,	-- Dread Aspirant's Drape
+				},
 				{	-- Dread Aspirant's Emblem
 					["itemID"] = 162898,	-- Dread Aspirant's Emblem
 				},
