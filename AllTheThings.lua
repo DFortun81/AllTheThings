@@ -2033,15 +2033,15 @@ end
 local function AddTomTomWaypoint(group, auto)
 	if TomTom and group.visible then
 		if group.coords or group.coord then
-			local waypointFilters = GetDataMember("WaypointFilters")
-			for headerID, enabled in pairs(waypointFilters) do
-				if auto 
-				   and (
-				   (UnitOnTaxi("player") and not GetDataMember("EnableTomTomWaypointsOnTaxi"))
-				   or (app.RecursiveIsDescendantOfParentWithValue(group, "npcID", headerID) and not enabled)
-				   )
-				   then
-					return
+			if auto then
+				if C_Map.GetMapInfo(app.GetCurrentMapID()).mapType ~= 3 then return end -- only set waypoints if the current map is a zone
+				local waypointFilters = GetDataMember("WaypointFilters")
+				for headerID, enabled in pairs(waypointFilters) do
+					if (UnitOnTaxi("player") and not GetDataMember("EnableTomTomWaypointsOnTaxi"))
+					   or (app.RecursiveIsDescendantOfParentWithValue(group, "npcID", headerID) and not enabled)
+					then
+						return
+					end
 				end
 			end
 			local opt = {
