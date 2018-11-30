@@ -115,6 +115,20 @@ _.GearSets =
 					i(31640),	-- Grand Marshal's Ringmail Chestguard
 					i(31641),	-- Grand Marshal's Ringmail Gloves
 					i(31643),	-- Grand Marshal's Ringmail Legguards
+					i(31646),	    -- High Warlord Ringmail Chestguard
+					i(31647),	    -- High Warlord Ringmail Gloves
+					i(31648),	    -- High Warlord Ringmail Headpiece
+					i(31649),	    -- High Warlord Ringmail Legguards
+					i(31650),	    -- High Warlord Ringmail Shoulders
+					i(28805),	    -- High Warlord Chain Armor
+					i(28806),	    -- High Warlord Chain Gauntlets
+					i(28808),	    -- High Warlord Chain Leggings
+					i(28809),	    -- High Warlord Chain Spaulders
+					i(28841),	    -- High Warlord Linked Armor
+					i(28842),	    -- High Warlord Linked Gauntlets
+					i(28843),	    -- High Warlord Linked Helm
+					i(28844),	    -- High Warlord Linked Leggings
+					i(28845),	    -- High Warlord Linked Spaulders
 				}),
 				cl(8, { -- Mage
 					-- Grand Marshal's Silk [Mage]

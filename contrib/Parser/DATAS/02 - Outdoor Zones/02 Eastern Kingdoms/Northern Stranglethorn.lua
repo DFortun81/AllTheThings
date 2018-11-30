@@ -1334,6 +1334,11 @@ _.Zones =
 							4260,	-- Venture Co. Shredder
 						},
 					}),
+					i(1703, {	-- Crystal Basilisk Spine 
+						["crs"] = {
+							689,	-- Crystal Spine Basilisk
+						},
+					}),
 					i(48126), 	-- Razzashi Hatchling
 					i(8494),	-- Parrot Cage (Hyacinth Macaw)
 					i(1997, {	-- Pressed Felt Robe

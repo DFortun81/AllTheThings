@@ -264,6 +264,29 @@ _.Zones =
 									un(2, i(31642)),	    -- Grand Marshal's Ringmail Headpiece
 									un(2, i(31643)),	    -- Grand Marshal's Ringmail Legguards
 									un(2, i(31644)),	    -- Grand Marshal's Ringmail Shoulders
+									un(2, i(28615)),	-- Grand Marshal's Chain Helm
+									un(2, i(28617)),	-- Grand Marshal's Chain Spaulders
+									un(2, i(28613)),	-- Grand Marshal's Chain Armor
+									un(2, i(28614)),	-- Grand Marshal's Chain Gauntlets
+									un(2, i(28616)),	-- Grand Marshal's Chain Leggings
+									-- Grand Marshal's Linked [Shaman]
+									un(2, i(28691)),	-- Grand Marshal's Linked Helm
+									un(2, i(28693)),	-- Grand Marshal's Linked Spaulders
+									un(2, i(28689)),	-- Grand Marshal's Linked Armor
+									un(2, i(28690)),	-- Grand Marshal's Linked Gauntlets
+									un(2, i(28692)),	-- Grand Marshal's Linked Leggings
+									-- Grand Marshal's Mail [Shaman]
+									un(2, i(28696)),	-- Grand Marshal's Mail Helm
+									un(2, i(28698)),	-- Grand Marshal's Mail Spaulders
+									un(2, i(28694)),	-- Grand Marshal's Mail Armor
+									un(2, i(28695)),	-- Grand Marshal's Mail Gauntlets
+									un(2, i(28697)),	-- Grand Marshal's Mail Leggings
+									-- Grand Marshal's Ringmail [Shaman]
+									un(2, i(31642)),	-- Grand Marshal's Ringmail Headpiece
+									un(2, i(31644)),	-- Grand Marshal's Ringmail Shoulders
+									un(2, i(31640)),	-- Grand Marshal's Ringmail Chestguard
+									un(2, i(31641)),	-- Grand Marshal's Ringmail Gloves
+									un(2, i(31643)),	-- Grand Marshal's Ringmail Legguards
 								},
 							},
 							{	-- Captain Lancy Revshon <Stormwind Quartermaster>
