@@ -146,6 +146,7 @@ _.Zones =
 								un(2, i(22106)), 	-- Feralheart Belt
 								un(2, i(22110)), 	-- Feralheart Gloves
 							}))),
+							un(40, qh(7667)),  	 	-- Material Assistance
 							un(40, q(3924, {		-- Samophlange Manual
 								un(2, i(11854)),	-- Samophlange Screwdriver 
 								un(2, i(11855)),	-- Tork Wrench
@@ -189,6 +190,7 @@ _.Zones =
 							un(40, qh(8258, {		-- The Darkreaver Menace
 								["groups"] = {
 									un(2, i(20134)),	-- Skyfury Helm
+									un(32, i(18807)), 	-- Helm of Latent Power (1.4 till 1.7 only)
 								},
 								["classes"] = { 7 },	-- Shaman
 							})),

@@ -29,8 +29,69 @@ _.NeverImplemented =
 				un(1, i(150645)), -- Mountainsage Sandals
 				un(1, i(150650)), -- Mountainsage Shoulderpads
 				un(1, i(150652)), -- Mountainsage Wristwraps
+				un(1, i(48730)),	-- Sunstrider's Gauntlets of Conquest
+				un(1, i(48731)),	-- Sunstrider's Hood of Conquest
+				un(1, i(48732)),	-- Sunstrider's Leggings of Conquest
+				un(1, i(48733)),	-- Sunstrider's Robe of Conquest
+				un(1, i(48734)),	-- Sunstrider's Shoulderpads of Conquest
 			}),
 			un(1, i(78017)),	-- Replica Magister's Leggings (Cloth)
+			un(1, i(4989)),	-- Mage Dragon Robe (intended to be quest reward, never made it to live?)
+			un(1, i(4990)),	-- Scorched Bands
+			un(1, i(10010)),	-- Stormcloth Pants
+			un(1, i(10011)),	-- Stormcloth Gloves
+			un(1, i(10020)),	-- Stormcloth Vest
+			un(1, i(10032)),	-- Stormcloth Headband
+			un(1, i(10038)),	-- Stormcloth Shoulders (comment on wowhead says they have the pattern, but I'm pretty sure that's fake - no history of the pattern or item on UMJ)
+			un(1, i(10039)),	-- Stormcloth Boots
+			un(1, i(12107)),	-- Whispersilk Leggings
+			un(1, i(13080)),	-- Widow's Clutch
+			un(1, i(18341)),	-- Quel'dorei Sash
+			un(1, i(23433)),	-- Blood Robes
+			un(1, i(23434)),	-- Robes of the Shard
+			un(1, i(25793)),	-- Curate's Footwraps
+			un(1, i(25970)),	-- Shalassi Oracle's Sandals (removed in beta)
+			un(1, i(26015)),	-- Anchorite Neophyte's Cuffs
+			un(1, i(27720)),	-- Robes of the Aldor
+			un(1, i(30287)),	-- Mantle of Arcane Mastery
+			un(1, i(30459)),	-- Netherflame Robe
+			un(1, i(30460)),	-- Netherflame Belt
+			un(1, i(30461)),	-- Netherflame Boots
+			un(1, i(30463)),	-- Lifeblood Belt
+			un(1, i(30464)),	-- Lifeblood Bracers
+			un(1, i(30465)),	-- Lifeblood Leggings
+			un(1, i(34107)),	-- Tattered Shoulderpads
+			un(1, i(37210)),	-- Seafarer Cinch (removed in beta)
+			un(1, i(37225)),	-- Sweltering Sandals (removed in beta)
+			un(1, i(37245)),	-- Tangled Web Bindings
+			un(1, i(37273)),	-- Crimson Keeper Mitts
+			un(1, i(37295)),	-- HF28 Cloth Spell Head4
+			un(1, i(39364)),	-- Hood of the Titan Defender
+			un(1, i(43878)),	-- Mantle of Unholy Power
+			un(1, i(45629)),	-- Shadoweave Belt
+			un(1, i(47103)),	-- Rotting Handwraps
+			un(1, i(54542)),	-- Robes of Restored Hope
+			un(1, i(54550)),	-- Hood of Vigorous Defense
+			un(1, i(54977)),	-- Revitalizing Sandals
+			un(1, i(57528)),	-- Hogger's Mangy Handgrips
+			un(1, i(60728)),	-- Keeshan's Burlap Vest
+			un(1, i(62988)),	-- Sash of the Unhonored
+			un(1, i(65746)),	-- Leggings of Valorous Defense
+			un(1, i(66013)),	-- Mantle of the Glorious Song
+			un(1, i(80948)),	-- Peacebreaker's Silk Cowl
+			un(1, i(80949)),	-- Peacebreaker's Satin Hood
+			un(1, i(80988)),	-- Scavenger's Silk Amice
+			un(1, i(80989)),	-- Scavenger's Satin Mantle
+			un(1, i(80997)),	-- Silk Robe of Eminent Domain
+			un(1, i(80998)),	-- Satin Robe of Eminent Domain
+			un(1, i(81006)),	-- Honorary Combat Engineer's Silk Trousers
+			un(1, i(81007)),	-- Honorary Combat Engineer's Satin Leggings
+			un(1, i(81015)),	-- Landfall Silk Treads
+			un(1, i(81016)),	-- Landfall Satin Treads
+			un(1, i(81033)),	-- Scavenger's Silk Handguards
+			un(1, i(81034)),	-- Scavenger's Satin Gloves
+			un(1, i(81042)),	-- Scavenger's Silk Cuffs
+			un(1, i(81043)),	-- Scavenger's Satin Cuffs
 		}),
 		n(-44, { -- Leather
 			un(1, i(54655)),	-- Stormshroud Armor (Leather)
@@ -112,6 +173,21 @@ _.NeverImplemented =
 				un(1, i(48853)),	-- Thrall's Grips of Conquest
 				un(1, i(48854)),	-- Thrall's Shoulderguards of Conquest
 				un(1, i(48855)),	-- Thrall's War-Kilt of Conquest
+				un(1, i(48829)),	-- Thrall's Handguards of Conquest
+				un(1, i(48830)),	-- Thrall's Headpiece of Conquest
+				un(1, i(48831)),	-- Thrall's Legguards of Conquest
+				un(1, i(48832)),	-- Thrall's Spaulders of Conquest
+				un(1, i(48833)),	-- Thrall's Tunic of Conquest
+				un(1, i(48841)),	-- Thrall's Gloves of Conquest
+				un(1, i(48842)),	-- Thrall's Hauberk of Conquest
+				un(1, i(48843)),	-- Thrall's Helm of Conquest
+				un(1, i(48844)),	-- Thrall's Kilt of Conquest
+				un(1, i(48845)),	-- Thrall's Shoulderpads of Conquest
+				un(1, i(48851)),	-- Thrall's Chestguard of Conquest
+				un(1, i(48852)),	-- Thrall's Faceguard of Conquest
+				un(1, i(48853)),	-- Thrall's Grips of Conquest
+				un(1, i(48854)),	-- Thrall's Shoulderguards of Conquest
+				un(1, i(48855)),	-- Thrall's War-Kilt of Conquest
 			}),
 			cl(3, {	-- Hunter
 				un(1, i(32133)),	    -- Chancellor's Chain Armor
@@ -139,6 +215,11 @@ _.NeverImplemented =
 			un(1, i(38388)),	    -- Cap of the North
 			un(1, i(38389)),	    -- Comfy Raccoonskin Hat
 			un(1, i(38390)),	    -- The Rugged Marksman
+			un(1, i(6733)),	    -- Ironforge Gauntlets (Wow comments claims it was ingame, but found no proof whatsoever)
+			un(1, i(80947)),	    -- Peacebreaker's Chain Helm
+			un(1, i(80951)),	    -- Peacebreaker's Ringmail Helm
+			un(1, i(81000)),	    -- Ringmail Armor of Eminent Domain (not added version)
+			un(1, i(80996)),	    -- Chain Armor of Eminent Domain (not added version)
 		}),
 		n(-46, { -- Plate
 			cl(6, { -- DK
@@ -181,6 +262,20 @@ _.NeverImplemented =
 				un(1, i(48872)),	-- Hellscream's Handguards of Conquest
 				un(1, i(48873)),	-- Hellscream's Legguards of Conquest
 				un(1, i(48874)),	-- Hellscream's Pauldrons of Conquest
+				un(1, i(154041)), -- Oathsworn Faceguard
+				-- UNUSED Classtrial
+				un(1, i(154048)), -- Oathsworn Shoulderguards
+				un(1, i(154038)), -- Oathsworn Cloak of Stoicism
+				un(1, i(154037)), -- Oathsworn Chestguard
+				un(1, i(154050)), -- Oathsworn Armguards
+				un(1, i(154040)), -- Oathsworn Handguards
+				un(1, i(154049)), -- Oathsworn Waistband
+				un(1, i(154042)), -- Oathsworn Legguards
+				un(1, i(154039)), -- Oathsworn Greaves
+				un(1, i(154045)), -- Oathsworn Band of Stoicism
+				un(1, i(154046)), -- Oathsworn Ring of Stoicism
+				un(1, i(154044)), -- Oathsworn Defender Idol
+				un(1, i(154047)), -- Oathsworn Defender Stone
 			}),
 		}),
 		n(-45, { -- Cloaks
@@ -199,8 +294,10 @@ _.NeverImplemented =
 			un(1, i(134110)), -- Hidden Helm
 			un(1, i(134111)), -- Hidden Cloak
 		}),
-	--	n(-325, { -- Tabard
-		--}),
+		n(-325, { -- Tabard
+			un(1, i(147204)), -- Black Apron - TEST
+			un(1, i(23388)), -- Tranquillen Tabard
+		}),
 	}),
 	n(-494, { -- Misc
 		un(1, i(146801)),	-- [BUILDING CONTRIBUTION REWARD ITEM [NYI]]
@@ -209,6 +306,7 @@ _.NeverImplemented =
 		un(1, i(115371)),	-- [PLACEHOLDER TIER 3 ITEM]
 		un(1, i(111810)),	-- Barracks, Level 1 - unused version (used version is 111956)
 		un(1, i(134013)), -- Chef's Hat [Likely the cosmetic effect from when you use the toy]
+		un(1, i(130156)),	-- Crane Bag
 	}),
 	n(-160, { -- Mounts
 		un(1, a(model(9475, i(13325)))),		-- Fluorescent Green Mechanostrider (Never added in Game)
@@ -265,6 +363,26 @@ _.NeverImplemented =
 		un(1, i(137576)),	-- Dim Coldflame Core
 		un(1, i(137615)),	-- Molten Flarecore
 		un(1, i(156798)),	-- The Hivemind
+	}),
+	n(-162, { -- Pets
+		un(1, model(65527, i(129108, {	-- Son of Goredome		 				(Never added in Game)
+		p(1751),
+	}))),
+		un(1, model(15393, i(130145, {	-- Unknown
+		p(1758),
+	}))),
+		un(1, model(15393, i(82800, {	-- "Pet Cage"
+		p(1758),
+	}))),
+		un(1, model(15393, i(62769, { 	-- Hardboiled Egg 						(Never added in Game)
+		["groups"] = {				-- /dump C_PetJournal.FindPetIDByName("Hardboiled Egg")
+			p(1758),
+		},							
+		["description"] = "|cff66ccffUnable to find species for this pet, so using Black Piglet to make it so you can see the model for this pet.|r",
+	}))),
+	un(1, model(65670, i(136907, { 	-- Black Piglet	 						(Never added in Game)
+		p(1758),
+	}))),
 	}),
 	n(-38, { -- Professions
 		n(-180, { -- Alchemy
@@ -390,8 +508,10 @@ _.NeverImplemented =
 			un(1, i(42174)),	-- Pattern: Yellow Lumberjack Shirt (pattern never went live, but it's learned at the trainer)
 		}),
 	}),
-	--n(-161, { -- Toys
-	--}),
+	n(-161, { -- Toys
+		un(1, i(140779)),	-- Falanaar Echo
+		un(1, i(141300)), 	-- Magi Focusing Crystal
+	}),
 	n(-319, { -- Weapons
 		n(-347, { -- Crossbow
 			un(1, i(32187)),    -- Chancellor's Heavy Crossbow
@@ -467,6 +587,21 @@ _.NeverImplemented =
 	un(1, i(77588)),	-- Replica High Warlord's Quickblade
 	un(1, i(77586)),	-- Replica High Warlord's Spellblade
 	un(1, i(77570)),	-- Replica High Warlord's Battle Mace
+	un(1, i(32482)),	-- Touch of Victory
+	un(1, i(34138)),	-- Enchanted White Wand
+	un(1, i(34139)),	-- Enchanted Crimson Wand
+	un(1, i(34144)),	-- Branch of Destruction
+	un(1, i(34145)),	-- Rod of Devastation
+	un(1, i(34146)),	-- Red Death
+	un(1, i(34147)),	-- Silverstave
+	un(1, i(34148)),	-- Purified Silverstave
+	un(1, i(34149)),	-- Lightstave
+	un(1, i(58505)),	-- ObsoleteQA Combat Test Caster DPS Wand 2
+	un(1, i(64694)),	-- Bloodthirsty Gladiator's Baton of Light
+	un(1, i(64861)),	-- Bloodthirsty Gladiator's Touch of Defeat
+	un(1, i(65878)),	-- Charbelching Wand
+	un(1, i(109384)),	-- 6.0 QA Combat Test Caster DPS Wand
+	un(1, i(23459)),	-- High Warlord's Battle Mace
 	un(1, i(32192)),	-- Chancellor's Barricade
 	un(1, i(32175)),	-- Chancellor's Hacker
 	un(1, i(32190)),	-- Chancellor's Spellblade
@@ -504,9 +639,6 @@ _.NeverImplemented =
 	un(1, i(32186)),	-- Chancellor's Warblade
 	un(1, i(54553)),	-- Kliklak's Fearsome Greatsword (never made it to live)
 	}),
-	un(1, i(147204)), -- Black Apron - TEST
-	un(1, i(23388)), -- Tranquillen Tabard
-	un(1, i(130156)),	-- Crane Bag
 	un(1, i(157650)), -- Tracker's Spear
 	un(1, i(157648)), -- Oakenstaff Protector
 	un(1, i(157620)), -- Halberd of Ferocity
@@ -515,29 +647,12 @@ _.NeverImplemented =
 	un(1, i(150715)), -- Illidari Warglaive
 	un(1, i(3738)),	-- Brewing Rod
 	un(1, i(1216)),	-- Frost Bracers
-	un(1, i(32482)),	-- Touch of Victory
-	un(1, i(34138)),	-- Enchanted White Wand
-	un(1, i(34139)),	-- Enchanted Crimson Wand
-	un(1, i(34144)),	-- Branch of Destruction
-	un(1, i(34145)),	-- Rod of Devastation
-	un(1, i(34146)),	-- Red Death
-	un(1, i(34147)),	-- Silverstave
-	un(1, i(34148)),	-- Purified Silverstave
-	un(1, i(34149)),	-- Lightstave
-	un(1, i(58505)),	-- ObsoleteQA Combat Test Caster DPS Wand 2
-	un(1, i(64694)),	-- Bloodthirsty Gladiator's Baton of Light
-	un(1, i(64861)),	-- Bloodthirsty Gladiator's Touch of Defeat
-	un(1, i(65878)),	-- Charbelching Wand
-	un(1, i(109384)),	-- 6.0 QA Combat Test Caster DPS Wand
-	un(1, i(23459)),	-- High Warlord's Battle Mace
 	un(1, i(32173)),	-- Chancellor's Bonecracker
 	un(1, i(32176)),	-- Chancellor's Pummeler
 	un(1, i(38468)),	-- Kalu'ak Peacebringer
 	un(1, i(107390)),	-- Obliterator Firing Lever
 	un(1, i(115296)),	-- Spectral Warmace
 	un(1, i(115299)),	-- Spectral Scepter
-	un(1, i(4989)),	-- Mage Dragon Robe (intended to be quest reward, never made it to live?)
-	un(1, i(4990)),	-- Scorched Bands
 	un(1, i(6273)),	-- Green Woolen Robe
 	un(1, i(6478)),	-- Rat Stompers
 	un(1, i(18316)),	-- Obsidian Bauble
@@ -545,60 +660,6 @@ _.NeverImplemented =
 	un(1, i(56701)),	-- Jinxed Vest (never made it to live)
 	un(1, i(56702)),	-- Saw Blade (never made it to live)
 	un(1, i(5255)),	-- Quilboar Tomahawk
-	un(1, i(10010)),	-- Stormcloth Pants
-	un(1, i(10011)),	-- Stormcloth Gloves
-	un(1, i(10020)),	-- Stormcloth Vest
-	un(1, i(10032)),	-- Stormcloth Headband
-	un(1, i(10038)),	-- Stormcloth Shoulders (comment on wowhead says they have the pattern, but I'm pretty sure that's fake - no history of the pattern or item on UMJ)
-	un(1, i(10039)),	-- Stormcloth Boots
-	un(1, i(12107)),	-- Whispersilk Leggings
-	un(1, i(13080)),	-- Widow's Clutch
-	un(1, i(18341)),	-- Quel'dorei Sash
-	un(1, i(23433)),	-- Blood Robes
-	un(1, i(23434)),	-- Robes of the Shard
-	un(1, i(25793)),	-- Curate's Footwraps
-	un(1, i(25970)),	-- Shalassi Oracle's Sandals (removed in beta)
-	un(1, i(26015)),	-- Anchorite Neophyte's Cuffs
-	un(1, i(27720)),	-- Robes of the Aldor
-	un(1, i(30287)),	-- Mantle of Arcane Mastery
-	un(1, i(30459)),	-- Netherflame Robe
-	un(1, i(30460)),	-- Netherflame Belt
-	un(1, i(30461)),	-- Netherflame Boots
-	un(1, i(30463)),	-- Lifeblood Belt
-	un(1, i(30464)),	-- Lifeblood Bracers
-	un(1, i(30465)),	-- Lifeblood Leggings
-	un(1, i(34107)),	-- Tattered Shoulderpads
-	un(1, i(37210)),	-- Seafarer Cinch (removed in beta)
-	un(1, i(37225)),	-- Sweltering Sandals (removed in beta)
-	un(1, i(37245)),	-- Tangled Web Bindings
-	un(1, i(37273)),	-- Crimson Keeper Mitts
-	un(1, i(37295)),	-- HF28 Cloth Spell Head4
-	un(1, i(39364)),	-- Hood of the Titan Defender
-	un(1, i(43878)),	-- Mantle of Unholy Power
-	un(1, i(45629)),	-- Shadoweave Belt
-	un(1, i(47103)),	-- Rotting Handwraps
-	un(1, i(54542)),	-- Robes of Restored Hope
-	un(1, i(54550)),	-- Hood of Vigorous Defense
-	un(1, i(54977)),	-- Revitalizing Sandals
-	un(1, i(57528)),	-- Hogger's Mangy Handgrips
-	un(1, i(60728)),	-- Keeshan's Burlap Vest
-	un(1, i(62988)),	-- Sash of the Unhonored
-	un(1, i(65746)),	-- Leggings of Valorous Defense
-	un(1, i(66013)),	-- Mantle of the Glorious Song
-	un(1, i(80948)),	-- Peacebreaker's Silk Cowl
-	un(1, i(80949)),	-- Peacebreaker's Satin Hood
-	un(1, i(80988)),	-- Scavenger's Silk Amice
-	un(1, i(80989)),	-- Scavenger's Satin Mantle
-	un(1, i(80997)),	-- Silk Robe of Eminent Domain
-	un(1, i(80998)),	-- Satin Robe of Eminent Domain
-	un(1, i(81006)),	-- Honorary Combat Engineer's Silk Trousers
-	un(1, i(81007)),	-- Honorary Combat Engineer's Satin Leggings
-	un(1, i(81015)),	-- Landfall Silk Treads
-	un(1, i(81016)),	-- Landfall Satin Treads
-	un(1, i(81033)),	-- Scavenger's Silk Handguards
-	un(1, i(81034)),	-- Scavenger's Satin Gloves
-	un(1, i(81042)),	-- Scavenger's Silk Cuffs
-	un(1, i(81043)),	-- Scavenger's Satin Cuffs
 	un(1, i(90358)),	-- Honorary Combat Engineer's Silk Trousers
 	un(1, i(90359)),	-- Honorary Combat Engineer's Satin Leggings
 	un(1, i(17142)),	-- Shard of the Defiler
@@ -614,11 +675,6 @@ _.NeverImplemented =
 	un(1, i(12764)),	-- Thorium Greatsword									(Never added in Game)
 	un(1, i(12779)),	-- Rune Edge											(Never added in Game)
 	un(15, i(31279)),	-- Enchanted Illidari Tabard [Temp Quest Item]
-	un(1, i(48730)),	-- Sunstrider's Gauntlets of Conquest
-	un(1, i(48731)),	-- Sunstrider's Hood of Conquest
-	un(1, i(48732)),	-- Sunstrider's Leggings of Conquest
-	un(1, i(48733)),	-- Sunstrider's Robe of Conquest
-	un(1, i(48734)),	-- Sunstrider's Shoulderpads of Conquest
 	un(1, i(48735)),	-- Gul'dan's Gloves of Conquest
 	un(1, i(48736)),	-- Gul'dan's Hood of Conquest
 	un(1, i(48737)),	-- Gul'dan's Leggings of Conquest
@@ -654,21 +710,6 @@ _.NeverImplemented =
 	un(1, i(48806)),	-- Garona's Helmet of Conquest
 	un(1, i(48807)),	-- Garona's Legplates of Conquest
 	un(1, i(48808)),	-- Garona's Pauldrons of Conquest
-	un(1, i(48829)),	-- Thrall's Handguards of Conquest
-	un(1, i(48830)),	-- Thrall's Headpiece of Conquest
-	un(1, i(48831)),	-- Thrall's Legguards of Conquest
-	un(1, i(48832)),	-- Thrall's Spaulders of Conquest
-	un(1, i(48833)),	-- Thrall's Tunic of Conquest
-	un(1, i(48841)),	-- Thrall's Gloves of Conquest
-	un(1, i(48842)),	-- Thrall's Hauberk of Conquest
-	un(1, i(48843)),	-- Thrall's Helm of Conquest
-	un(1, i(48844)),	-- Thrall's Kilt of Conquest
-	un(1, i(48845)),	-- Thrall's Shoulderpads of Conquest
-	un(1, i(48851)),	-- Thrall's Chestguard of Conquest
-	un(1, i(48852)),	-- Thrall's Faceguard of Conquest
-	un(1, i(48853)),	-- Thrall's Grips of Conquest
-	un(1, i(48854)),	-- Thrall's Shoulderguards of Conquest
-	un(1, i(48855)),	-- Thrall's War-Kilt of Conquest
 	un(1, i(52548)),	-- Initiate's Tunic
 	un(1, i(53879)), 	-- Rugged Work Shirt
 	un(1, i(53880)), 	-- Super Girly Shirt
@@ -677,12 +718,6 @@ _.NeverImplemented =
 	un(1, i(59796)), 	-- Treads of Decapod Death
 	un(1, i(59797)),	-- Abalone-Linked Robes
 	un(1, i(62061)), 	-- Irradiated Gnome Shirt
-	un(1, model(15393, i(62769, { 	-- Hardboiled Egg 						(Never added in Game)
-		["groups"] = {				-- /dump C_PetJournal.FindPetIDByName("Hardboiled Egg")
-			p(1758),
-		},							
-		["description"] = "|cff66ccffUnable to find species for this pet, so using Black Piglet to make it so you can see the model for this pet.|r",
-	}))),
 	un(1, i(67600)), 	-- Lil' Alexstrasza										(Never added in Game)
 	un(1, i(85588)), 	-- Reflex Edges [This version never implemented]
 	un(1, i(105956)), 	-- Wrath Gladiator's Razor [Not implemented, other version was instead]
@@ -691,22 +726,14 @@ _.NeverImplemented =
 	un(1, i(119221)),	-- Horde Gladiator's Banner
 	un(1, i(120272)), 	-- High Warlord's Razor [This version never implemented]
 	un(1, i(120273)), 	-- High Warlord's Razor [This version never implemented]
-	un(1, i(128824)), 	-- Tome of the Silver Hand
-	un(1, model(65527, i(129108, {	-- Son of Goredome		 				(Never added in Game)
-		p(1751),
-	}))),		
+	un(1, i(128824)), 	-- Tome of the Silver Hand		
 	un(1, i(129111)),	-- Kvaldir Raiding Horn
 	un(1, i(129735)), 	-- Verus
 	un(1, i(129736)), 	-- Verus
 	un(1, i(129737)), 	-- Verus
 	un(1, i(130249)),	-- Waywatcher's Boon
 	un(1, i(134112)), 	-- Hidden Shoulder
-	un(1, i(136593)), 	-- Doomhammer Offhand Appearance Record (referenced by actual item)
-	un(1, model(65670, i(136907, { 	-- Black Piglet	 						(Never added in Game)
-		p(1758),
-	}))),	
-	un(1, i(140779)),	-- Falanaar Echo
-	un(1, i(141300)), 	-- Magi Focusing Crystal
+	un(1, i(136593)), 	-- Doomhammer Offhand Appearance Record (referenced by actual item)	
 	un(1, i(142360)),	-- Blazing Ember Signet
 	un(1, i(142503)), 	-- Hidden Shirt
 	un(1, i(142504)), 	-- Hidden Tabard
@@ -829,23 +856,6 @@ i(60780),   -- Unknown
 i(60781),   -- Unknown
 i(50329),   -- Unknown
 
-------------------------
--- CLASS TRIAL UNUSED --
-------------------------
-
-un(1, i(154041)), -- Oathsworn Faceguard
-un(1, i(154048)), -- Oathsworn Shoulderguards
-un(1, i(154038)), -- Oathsworn Cloak of Stoicism
-un(1, i(154037)), -- Oathsworn Chestguard
-un(1, i(154050)), -- Oathsworn Armguards
-un(1, i(154040)), -- Oathsworn Handguards
-un(1, i(154049)), -- Oathsworn Waistband
-un(1, i(154042)), -- Oathsworn Legguards
-un(1, i(154039)), -- Oathsworn Greaves
-un(1, i(154045)), -- Oathsworn Band of Stoicism
-un(1, i(154046)), -- Oathsworn Ring of Stoicism
-un(1, i(154044)), -- Oathsworn Defender Idol
-un(1, i(154047)), -- Oathsworn Defender Stone
 	
 ------------------------------------------------------------
 --			T E M P O R A R Y			I T E M S		  --

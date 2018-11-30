@@ -109,6 +109,14 @@ _.Instances =
 									un(2, i(65950)),	-- Shackles of Punishment
 									un(2, i(65995)),	-- Signet of the Darkmaster
 								})),
+								un(40, q(7668, { 	-- The Darkreaver Menace
+									["groups"] = {
+										un(32, i(18807)), 	-- Helm of Latent Power (1.4 till 1.7 only)
+										un(2, i(20134)), 	-- Skyfury Helm
+									},
+									["classes"] = { 7 },
+									["races"] = { 6 },
+								})),
 								un(40, q(5466, { 	-- The Lich, Ras Frostwhisper
 									un(2, i(13986)), 	-- Crown of Caer Darrow
 									un(2, i(14002)), 	-- Darrowshire Strongguard
