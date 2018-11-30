@@ -2310,7 +2310,7 @@ local function OpenMiniList(field, id, label)
 		end
 		
 		-- If we have determined that we want to expand this section, then do it
-		if expandible then
+		if expandible and results.g then
 			if popout.data then
 				ExpandGroupsRecursively(popout.data, false);
 			end
