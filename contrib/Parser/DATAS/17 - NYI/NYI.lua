@@ -20,21 +20,23 @@ _.NeverImplemented =
 	un(1, i(32136)),	    -- Chancellor's Chain Leggings
 	un(1, i(32137)),	    -- Chancellor's Chain Spaulders
 	---- MAIL (SHAMAN ONLY) ----
-	un(1, i(32138)),	    -- Chancellor's Linked Armor
-	un(1, i(32139)),	    -- Chancellor's Linked Gauntlets
-	un(1, i(32140)),	    -- Chancellor's Linked Helm
-	un(1, i(32141)),	    -- Chancellor's Linked Leggings
-	un(1, i(32142)),	    -- Chancellor's Linked Spaulders
-	un(1, i(32143)),	    -- Chancellor's Mail Armor
-	un(1, i(32144)),	    -- Chancellor's Mail Gauntlets
-	un(1, i(32145)),	    -- Chancellor's Mail Helm
-	un(1, i(32146)),	    -- Chancellor's Mail Leggings
-	un(1, i(32147)),	    -- Chancellor's Mail Sppaulders
-	un(1, i(32148)),	    -- Chancellor's Ringmail Chestguard
-	un(1, i(32149)),	    -- Chancellor's Ringmail Gloves
-	un(1, i(32150)),	    -- Chancellor's Ringmail Headpiece
-	un(1, i(32151)),	    -- Chancellor's Ringmail Legguards
-	un(1, i(32152)),	    -- Chancellor's Ringmail Shoulders
+	cl(7, {	-- Shaman
+		un(1, i(32138)),	    -- Chancellor's Linked Armor
+		un(1, i(32139)),	    -- Chancellor's Linked Gauntlets
+		un(1, i(32140)),	    -- Chancellor's Linked Helm
+		un(1, i(32141)),	    -- Chancellor's Linked Leggings
+		un(1, i(32142)),	    -- Chancellor's Linked Spaulders
+		un(1, i(32143)),	    -- Chancellor's Mail Armor
+		un(1, i(32144)),	    -- Chancellor's Mail Gauntlets
+		un(1, i(32145)),	    -- Chancellor's Mail Helm
+		un(1, i(32146)),	    -- Chancellor's Mail Leggings
+		un(1, i(32147)),	    -- Chancellor's Mail Sppaulders
+		un(1, i(32148)),	    -- Chancellor's Ringmail Chestguard
+		un(1, i(32149)),	    -- Chancellor's Ringmail Gloves
+		un(1, i(32150)),	    -- Chancellor's Ringmail Headpiece
+		un(1, i(32151)),	    -- Chancellor's Ringmail Legguards
+		un(1, i(32152)),	    -- Chancellor's Ringmail Shoulders
+	}),
 	
 	---- MISC ----
 	un(1, i(146801)),	-- [BUILDING CONTRIBUTION REWARD ITEM [NYI]]
