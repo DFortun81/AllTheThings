@@ -194,6 +194,7 @@ _.NeverImplemented =
 	
 	---- DAGGERS  ----
 	un(1, i(32179)),    -- Chancellor's Shiv
+	un(1, i(23458)),    -- High Warlord's Spellblade (23466 was the added version)
 	
 	---- FIST WEAPONS ----
 	un(1, i(32188)),    -- Chancellor's Fleshslicer

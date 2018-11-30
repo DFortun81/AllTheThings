@@ -2188,6 +2188,11 @@ _.Zones =
 						i(73454),	-- Cataclysmic Gladiator's Ripper
 						i(73455),	-- Cataclysmic Gladiator's Shanker
 						i(73456),	-- Cataclysmic Gladiator's Pike
+						un(2, i(28926)),	    -- High Warlord's Quickblade
+						un(2, i(28937)),	    -- High Warlord's Slicer
+						un(2, i(28929)),	    -- High Warlord's Shanker
+						un(2, i(28930)),	    -- High Warlord's Shiv
+						un(2, i(28931)),	    -- High Warlord's Spellblade
 					}),
 					n(3333, {	-- Shankys <Fishing Supplies>
 						i(17062),	-- Recipe: Mithril Head Trout
