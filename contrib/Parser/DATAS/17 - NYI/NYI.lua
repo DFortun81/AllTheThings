@@ -4,12 +4,18 @@
 _.NeverImplemented = 
 {   
 	n(-220, { -- Class
+		cl(12, { -- DH
+			un(1, i(129738)), -- Verus
+		}),
+		cl(3, {	-- Hunter
+			un(1, i(147770)),	-- Tome of the PTR Beast		
+		}),
 		cl(8, { -- Mage
 			un(1, i(44600)),	-- Tome of Polymorph: Serpent (Never made it out of beta)
 			un(1, i(44811)),	-- Tome of Polymorph: Turkey
 		}),
-		cl(12, { -- DH
-			un(1, i(129738)), -- Verus
+		cl(7, {	-- Shaman
+			un(1, i(136971)),	-- Tome of Hex: Snake		
 		}),
 	}),
 	n(-163, { -- Armor
@@ -91,6 +97,21 @@ _.NeverImplemented =
 				un(1, i(51759)),	    -- Frost Witch's Helm
 				un(1, i(51760)),	    -- Frost Witch's Kilt
 				un(1, i(51761)),	    -- Frost Witch's Shoulderpads
+				un(1, i(48829)),	-- Thrall's Handguards of Conquest
+				un(1, i(48830)),	-- Thrall's Headpiece of Conquest
+				un(1, i(48831)),	-- Thrall's Legguards of Conquest
+				un(1, i(48832)),	-- Thrall's Spaulders of Conquest
+				un(1, i(48833)),	-- Thrall's Tunic of Conquest
+				un(1, i(48841)),	-- Thrall's Gloves of Conquest
+				un(1, i(48842)),	-- Thrall's Hauberk of Conquest
+				un(1, i(48843)),	-- Thrall's Helm of Conquest
+				un(1, i(48844)),	-- Thrall's Kilt of Conquest
+				un(1, i(48845)),	-- Thrall's Shoulderpads of Conquest
+				un(1, i(48851)),	-- Thrall's Chestguard of Conquest
+				un(1, i(48852)),	-- Thrall's Faceguard of Conquest
+				un(1, i(48853)),	-- Thrall's Grips of Conquest
+				un(1, i(48854)),	-- Thrall's Shoulderguards of Conquest
+				un(1, i(48855)),	-- Thrall's War-Kilt of Conquest
 			}),
 			cl(3, {	-- Hunter
 				un(1, i(32133)),	    -- Chancellor's Chain Armor
@@ -99,6 +120,11 @@ _.NeverImplemented =
 				un(1, i(32136)),	    -- Chancellor's Chain Leggings
 				un(1, i(32137)),	    -- Chancellor's Chain Spaulders
 				un(1, i(46274)),	    -- Scourgestalker Headpiece
+				un(1, i(48814)),	-- Windrunner's Handguards of Conquest
+				un(1, i(48815)),	-- Windrunner's Headpiece of Conquest
+				un(1, i(48816)),	-- Windrunner's Legguards of Conquest
+				un(1, i(48817)),	-- Windrunner's Spaulders of Conquest
+				un(1, i(48818)),	-- Windrunner's Tunic of Conquest
 			}),
 			un(1, i(56507)),	    -- Razorshell Helm
 			un(1, i(56514)),	    -- Windbound Helm
@@ -114,8 +140,49 @@ _.NeverImplemented =
 			un(1, i(38389)),	    -- Comfy Raccoonskin Hat
 			un(1, i(38390)),	    -- The Rugged Marksman
 		}),
-		--n(-46, { -- Plate
-		--}),
+		n(-46, { -- Plate
+			cl(6, { -- DK
+				un(1, i(48880)),	-- Koltira's Battleplate of Conquest
+				un(1, i(48881)),	-- Koltira's Gauntlets of Conquest
+				un(1, i(48882)),	-- Koltira's Helmet of Conquest
+				un(1, i(48883)),	-- Koltira's Legplates of Conquest
+				un(1, i(48884)),	-- Koltira's Shoulderpads of Conquest
+				un(1, i(48890)),	-- Koltira's Chestguard of Conquest
+				un(1, i(48891)),	-- Koltira's Faceguard of Conquest
+				un(1, i(48892)),	-- Koltira's Handguards of Conquest
+				un(1, i(48893)),	-- Koltira's Legguards of Conquest
+				un(1, i(48894)),	-- Koltira's Pauldrons of Conquest
+			}),
+			cl(2, { -- Paladin
+				un(1, i(48905)),	-- Liadrin's Tunic of Conquest
+				un(1, i(48906)),	-- Liadrin's Spaulders of Conquest
+				un(1, i(48907)),	-- Liadrin's Headpiece of Conquest
+				un(1, i(48908)),	-- Liadrin's Greaves of Conquest
+				un(1, i(48909)),	-- Liadrin's Gloves of Conquest
+				un(1, i(48910)),	-- Liadrin's Battleplate of Conquest
+				un(1, i(48911)),	-- Liadrin's Gauntlets of Conquest
+				un(1, i(48912)),	-- Liadrin's Helm of Conquest
+				un(1, i(48913)),	-- Liadrin's Legplates of Conquest
+				un(1, i(48914)),	-- Liadrin's Shoulderplates of Conquest
+				un(1, i(48922)),	-- Liadrin's Breastplate of Conquest
+				un(1, i(48923)),	-- Liadrin's Faceguard of Conquest
+				un(1, i(48924)),	-- Liadrin's Handguards of Conquest
+				un(1, i(48925)),	-- Liadrin's Legguards of Conquest
+				un(1, i(48926)),	-- Liadrin's Shoulderguards of Conquest
+			}),
+			cl(1, { -- Warrior
+				un(1, i(48860)),	-- Hellscream's Battleplate of Conquest
+				un(1, i(48861)),	-- Hellscream's Gauntlets of Conquest
+				un(1, i(48862)),	-- Hellscream's Helmet of Conquest
+				un(1, i(48863)),	-- Hellscream's Legplates of Conquest
+				un(1, i(48864)),	-- Hellscream's Shoulderplates of Conquest
+				un(1, i(48870)),	-- Hellscream's Breastplate of Conquest
+				un(1, i(48871)),	-- Hellscream's Greathelm of Conquest
+				un(1, i(48872)),	-- Hellscream's Handguards of Conquest
+				un(1, i(48873)),	-- Hellscream's Legguards of Conquest
+				un(1, i(48874)),	-- Hellscream's Pauldrons of Conquest
+			}),
+		}),
 		n(-45, { -- Cloaks
 			un(1, i(22230)),	-- Frightmaw Hide (Cloak)
 			un(1, i(157751)), -- Drape of New Beginnings
@@ -128,6 +195,12 @@ _.NeverImplemented =
 			un(1, i(134579)), -- Vanguard Cape
 			un(1, i(134605)), -- Vanguard Cloak
 		}),
+		n(-349, { -- Cosmetic
+			un(1, i(134110)), -- Hidden Helm
+			un(1, i(134111)), -- Hidden Cloak
+		}),
+	--	n(-325, { -- Tabard
+		--}),
 	}),
 	n(-494, { -- Misc
 		un(1, i(146801)),	-- [BUILDING CONTRIBUTION REWARD ITEM [NYI]]
@@ -135,6 +208,7 @@ _.NeverImplemented =
 		un(1, i(146799)),	-- [BUILDING CONTRIBUTION REWARD ITEM [NYI]]
 		un(1, i(115371)),	-- [PLACEHOLDER TIER 3 ITEM]
 		un(1, i(111810)),	-- Barracks, Level 1 - unused version (used version is 111956)
+		un(1, i(134013)), -- Chef's Hat [Likely the cosmetic effect from when you use the toy]
 	}),
 	n(-160, { -- Mounts
 		un(1, a(model(9475, i(13325)))),		-- Fluorescent Green Mechanostrider (Never added in Game)
@@ -330,6 +404,16 @@ _.NeverImplemented =
 			un(1, i(32188)),    -- Chancellor's Fleshslicer
 			un(1, i(32189)),    -- Chancellor's Ripper
 		}),
+		n(-338, { -- One-Handed Swords
+			un(1, i(108803)),	-- Unknown - was under Legion>1Handed Swords
+			un(1, i(108804)),	-- Unknown - was under Legion>1Handed Swords
+			un(1, i(108805)),	-- Unknown - was under Legion>1Handed Swords
+			un(1, i(109320)),	-- 6.0 QA Combat Test Strength 1h Sword 2
+			un(1, i(109377)),   -- 6.0 QA Combat Test Strength 1H Sword 3
+			un(1, i(109445)),   -- 6.0 QA Combat Test Strength 1h Sword
+			un(1, i(109448)),   -- 7.0 QA Combat Test Caster DPS Sword
+			un(1, i(109458)),   -- 6.0 QA Combat Test Agility 1h Sword
+		}),
 		n(-342, { -- Staves
 			un(1, i(132474)),	-- Unknown - was under Legion>Staves
 			un(1, i(132475)),	-- Unknown - was under Legion>Staves
@@ -347,7 +431,19 @@ _.NeverImplemented =
 		}),
 		n(-339, { -- Two Handed Swords
 			un(1, i(33475)),	-- Artefact Frostmourne
+			un(1, i(137581)),	-- Test Ashbringer 1
+			un(1, i(137582)),	-- Test Ashbringer 2
+			un(1, i(131738)),	-- Unknown, tagged as 2Hand Sword
+			un(1, i(131739)),	-- Unknown, tagged as 2Hand Sword
+			un(1, i(131741)),	-- Unknown, tagged as 2Hand Sword
+			un(1, i(131742)),	-- Unknown, tagged as 2Hand Sword
 		}),
+	un(1, i(23462)),	-- High Warlord's Tome of Destruction
+	un(1, i(23463)),	-- High Warlord's Tome of Mending
+	un(1, i(32191)),	-- Chancellor's Battletome
+	un(1, i(42523)),	-- Savage Gladiator's Endgame
+	un(1, i(42529)),	-- Savage Gladiator's Reprieve
+	un(1, i(42535)),	-- Savage Gladiator's Grimoire
 	un(1, i(80980)),	-- Axe of Aborted Deforestation (Never made it to Live, yet into our Appearances Tab)
 	un(1, i(80983)),	-- Extravagant Tree Chopper (Never made it to Live, yet into our Appearances Tab)
 	un(1, i(32178)),	-- Chancellor's Shanker
@@ -375,6 +471,7 @@ _.NeverImplemented =
 	un(1, i(32175)),	-- Chancellor's Hacker
 	un(1, i(32190)),	-- Chancellor's Spellblade
 	un(1, i(32183)),	-- Chancellor's Maul
+	un(1, i(153505)),	-- Monelite Boomstick
 	un(1, i(77587)),	-- Replica High Warlord's Destroyer
 	un(1, i(138489)), 	-- Kargath's Sacrified Hands
 	un(1, i(80981)),	-- Scavenged Rotor Blade
@@ -413,14 +510,9 @@ _.NeverImplemented =
 	un(1, i(157650)), -- Tracker's Spear
 	un(1, i(157648)), -- Oakenstaff Protector
 	un(1, i(157620)), -- Halberd of Ferocity
-	
 	un(1, i(151377)), -- Arne Test Heirloom - Bloodied Arcanite Reaper
-	un(1, i(134013)), -- Chef's Hat [Likely the cosmetic effect from when you use the toy]
-	-- LIKELY PART OF 110 TRIAL SET
 	un(1, i(166699)),	-- Desert Rucksack
 	un(1, i(150715)), -- Illidari Warglaive
-	un(1, i(134110)), -- Hidden Helm
-	un(1, i(134111)), -- Hidden Cloak
 	un(1, i(3738)),	-- Brewing Rod
 	un(1, i(1216)),	-- Frost Bracers
 	un(1, i(32482)),	-- Touch of Victory
@@ -450,12 +542,6 @@ _.NeverImplemented =
 	un(1, i(6478)),	-- Rat Stompers
 	un(1, i(18316)),	-- Obsidian Bauble
 	un(1, i(19989)),	-- Tome of Devouring Shadows
-	un(1, i(23462)),	-- High Warlord's Tome of Destruction
-	un(1, i(23463)),	-- High Warlord's Tome of Mending
-	un(1, i(32191)),	-- Chancellor's Battletome
-	un(1, i(42523)),	-- Savage Gladiator's Endgame
-	un(1, i(42529)),	-- Savage Gladiator's Reprieve
-	un(1, i(42535)),	-- Savage Gladiator's Grimoire
 	un(1, i(56701)),	-- Jinxed Vest (never made it to live)
 	un(1, i(56702)),	-- Saw Blade (never made it to live)
 	un(1, i(5255)),	-- Quilboar Tomahawk
@@ -568,11 +654,6 @@ _.NeverImplemented =
 	un(1, i(48806)),	-- Garona's Helmet of Conquest
 	un(1, i(48807)),	-- Garona's Legplates of Conquest
 	un(1, i(48808)),	-- Garona's Pauldrons of Conquest
-	un(1, i(48814)),	-- Windrunner's Handguards of Conquest
-	un(1, i(48815)),	-- Windrunner's Headpiece of Conquest
-	un(1, i(48816)),	-- Windrunner's Legguards of Conquest
-	un(1, i(48817)),	-- Windrunner's Spaulders of Conquest
-	un(1, i(48818)),	-- Windrunner's Tunic of Conquest
 	un(1, i(48829)),	-- Thrall's Handguards of Conquest
 	un(1, i(48830)),	-- Thrall's Headpiece of Conquest
 	un(1, i(48831)),	-- Thrall's Legguards of Conquest
@@ -588,41 +669,6 @@ _.NeverImplemented =
 	un(1, i(48853)),	-- Thrall's Grips of Conquest
 	un(1, i(48854)),	-- Thrall's Shoulderguards of Conquest
 	un(1, i(48855)),	-- Thrall's War-Kilt of Conquest
-	un(1, i(48860)),	-- Hellscream's Battleplate of Conquest
-	un(1, i(48861)),	-- Hellscream's Gauntlets of Conquest
-	un(1, i(48862)),	-- Hellscream's Helmet of Conquest
-	un(1, i(48863)),	-- Hellscream's Legplates of Conquest
-	un(1, i(48864)),	-- Hellscream's Shoulderplates of Conquest
-	un(1, i(48870)),	-- Hellscream's Breastplate of Conquest
-	un(1, i(48871)),	-- Hellscream's Greathelm of Conquest
-	un(1, i(48872)),	-- Hellscream's Handguards of Conquest
-	un(1, i(48873)),	-- Hellscream's Legguards of Conquest
-	un(1, i(48874)),	-- Hellscream's Pauldrons of Conquest
-	un(1, i(48880)),	-- Koltira's Battleplate of Conquest
-	un(1, i(48881)),	-- Koltira's Gauntlets of Conquest
-	un(1, i(48882)),	-- Koltira's Helmet of Conquest
-	un(1, i(48883)),	-- Koltira's Legplates of Conquest
-	un(1, i(48884)),	-- Koltira's Shoulderpads of Conquest
-	un(1, i(48890)),	-- Koltira's Chestguard of Conquest
-	un(1, i(48891)),	-- Koltira's Faceguard of Conquest
-	un(1, i(48892)),	-- Koltira's Handguards of Conquest
-	un(1, i(48893)),	-- Koltira's Legguards of Conquest
-	un(1, i(48894)),	-- Koltira's Pauldrons of Conquest
-	un(1, i(48905)),	-- Liadrin's Tunic of Conquest
-	un(1, i(48906)),	-- Liadrin's Spaulders of Conquest
-	un(1, i(48907)),	-- Liadrin's Headpiece of Conquest
-	un(1, i(48908)),	-- Liadrin's Greaves of Conquest
-	un(1, i(48909)),	-- Liadrin's Gloves of Conquest
-	un(1, i(48910)),	-- Liadrin's Battleplate of Conquest
-	un(1, i(48911)),	-- Liadrin's Gauntlets of Conquest
-	un(1, i(48912)),	-- Liadrin's Helm of Conquest
-	un(1, i(48913)),	-- Liadrin's Legplates of Conquest
-	un(1, i(48914)),	-- Liadrin's Shoulderplates of Conquest
-	un(1, i(48922)),	-- Liadrin's Breastplate of Conquest
-	un(1, i(48923)),	-- Liadrin's Faceguard of Conquest
-	un(1, i(48924)),	-- Liadrin's Handguards of Conquest
-	un(1, i(48925)),	-- Liadrin's Legguards of Conquest
-	un(1, i(48926)),	-- Liadrin's Shoulderguards of Conquest
 	un(1, i(52548)),	-- Initiate's Tunic
 	un(1, i(53879)), 	-- Rugged Work Shirt
 	un(1, i(53880)), 	-- Super Girly Shirt

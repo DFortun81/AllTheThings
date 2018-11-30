@@ -80,10 +80,18 @@ _.Zones =
 					qa(26524, {	-- Dark Vessels
 						["groups"] = {
 							i(59252),	-- Sandals of Tainted Blood
---							i(59253),	-- Not transmoggable
+							i(59253, { -- Sandrene's Invisible Hauberk
+								["groups"] = {
+								},
+								["description"] = "You will not be able to transmog this item.",
+							}),
 							i(59254),	-- Spider Venom Leggings
 							i(59255),	-- Dark Vessel Breastplate
---							i(131544),	-- Not transmoggable
+							i(131544, { -- Sandrene's Invisible Hauberk
+								["groups"] = {
+								},
+								["description"] = "You will not be able to transmog this item.",
+							}),
 							i(131545),	-- Spider Venom Legguards
 						},
 						["qg"] = 43156,	-- Fraggar Thundermantle
@@ -92,10 +100,18 @@ _.Zones =
 					qh(26309, { -- Dark Vessels
 						["groups"] = {
 							i(59294),	-- Sandals of Tainted Blood
---							i(59295),	-- Not transmoggable
+							i(59295, { -- Sandrene's Invisible Vest
+								["groups"] = {
+								},
+								["description"] = "You will not be able to transmog this item.",
+							}),
 							i(59296),	-- Spider Venom Leggings
 							i(59297),	-- Dark Vessel Breastplate
---							i(131510),	-- Not transmoggable
+							i(131510, { -- Sandrene's Invisible Hauberk
+								["groups"] = {
+								},
+								["description"] = "You will not be able to transmog this item.",
+							}),
 							i(131511),	-- Spider Venom Legguards
 						},
 						["qg"] = 42622,	-- Eliza Darkgrin
