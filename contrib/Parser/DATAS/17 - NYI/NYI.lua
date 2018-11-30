@@ -10,6 +10,9 @@ _.NeverImplemented =
 	un(1, i(12616)),	    -- Savage Boots (never added to live)
 	un(1, i(12617)),	    -- Savage Pauldrons (never added to live)
 	un(1, i(18304)),	    -- Greenroot Mail (never added to live)
+	un(1, i(21584)),	    -- Bracers of Eternal Reckoning (never added to live)
+	un(1, i(21588)),	    -- Wristguards of Elemental Fury (never added to live)
+	un(1, i(21612)),	    -- Wormscale Stompers (never added to live)
 	---- MAIL (HUNTER ONLY) ----
 	un(1, i(32133)),	    -- Chancellor's Chain Armor
 	un(1, i(32134)),	    -- Chancellor's Chain Gauntlets

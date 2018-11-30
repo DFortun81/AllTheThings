@@ -3034,7 +3034,7 @@ AllTheThings.Locales.enUS = {
 	};
 	["UNOBTAINABLE_ITEM_REASONS"] = {
 		-- {header, description, name}, header: header id, 1-3 as above, 4 is legacy.
-		{1, "|CFFFF0000The source of this item has been removed or was never available to players.|r", "Never Available (1)"}, -- No Hope -- 1
+		{1, "|CFFFF0000The source of this item was never available to players.|r", "Never Available (1)"}, -- No Hope -- 1
 		{1, "|CFFFF0000The source of this item has been removed and the item is Bind on Pickup or Bind on Account.|r", "BoP / BoA Item (2)"}, -- No Hope -- 2
 		{1, "|CFFFF0000This was obtainable only during a special promotion or one time event by Blizzard.|r", "Blizzard Promotion (3)"}, -- No Hope -- 3
 		{1, "|CFFFF0000The achievement criteria required to obtain these rewards is no longer obtainable or was only available for a limited time.|r", "Legacy Achievement (4)"},	-- Little Hope -- 4

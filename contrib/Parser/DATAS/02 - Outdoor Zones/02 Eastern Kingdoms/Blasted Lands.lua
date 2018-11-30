@@ -1009,8 +1009,16 @@ _.Zones =
 								},
 							})),
 						}),
-						--n(-16, {	-- Rares (Legacy)
-						--}),
+						n(-16, {	-- Rares (Legacy)
+							n(8716, { 	-- Dreadlord
+								un(2, i(4213)), 	-- Grimoire of Doom
+								un(7, i(18665)), 	-- The Eye of Shadow
+							}),
+							n(12396, { 	-- Doomguard Commander
+								un(2, i(4213)), 	-- Grimoire of Doom
+								un(7, i(18665)), 	-- The Eye of Shadow
+							}),
+						}),
 						--n(  0, {	-- Zone Drop (Legacy)
 						--}),
 					},
