@@ -1386,6 +1386,11 @@ _.Zones =
 							un(2, i(31648)),	    -- High Warlord Ringmail Headpiece
 							un(2, i(31649)),	    -- High Warlord Ringmail Legguards
 							un(2, i(31650)),	    -- High Warlord Ringmail Shoulders
+							un(2, i(28846)),	    -- High Warlord Mail Armor
+							un(2, i(28847)),	    -- High Warlord Mail Gauntlets
+							un(2, i(28848)),	    -- High Warlord Mail Helm
+							un(2, i(28849)),	    -- High Warlord Mail Leggings
+							un(2, i(28850)),	    -- High Warlord Mail Spaulders
 							un(2, i(28805)),	    -- High Warlord Chain Armor
 							un(2, i(28806)),	    -- High Warlord Chain Gauntlets
 							un(2, i(28808)),	    -- High Warlord Chain Leggings
@@ -2208,6 +2213,16 @@ _.Zones =
 						un(2, i(28929)),	    -- High Warlord's Shanker
 						un(2, i(28930)),	    -- High Warlord's Shiv
 						un(2, i(28931)),	    -- High Warlord's Spellblade
+						un(2, i(28293)),	    -- High Warlord's Claymore
+						un(2, i(28918)),	    -- High Warlord's Decapitator
+						un(2, i(28920)),	    -- High Warlord's Cleaver
+						un(2, i(28921)),	    -- High Warlord's Hacker
+						un(2, i(28922)),	    -- High Warlord's Fleshslicer
+						un(2, i(28928)),	    -- High Warlord's Ripper
+						un(2, i(28923)),	    -- High Warlord's Painsaw
+						un(2, i(28933)),	    -- High Warlord's Crossbow
+						un(2, i(28935)),	    -- High Warlord's War Staff
+						un(2, i(28938)),	    -- High Warlord's Battletome
 					}),
 					n(3333, {	-- Shankys <Fishing Supplies>
 						i(17062),	-- Recipe: Mithril Head Trout

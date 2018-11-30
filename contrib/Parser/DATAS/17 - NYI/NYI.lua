@@ -2,45 +2,132 @@
 --         N E V E R       I M P L E M E N T E D       M O D U L E       --
 ---------------------------------------------------------------------------
 _.NeverImplemented = 
-{   ---------------
-	---- ARMOR ----
-	---------------
-	n(-45, { -- Mail
-		cl(7, {	-- Shaman
-			un(1, i(32138)),	    -- Chancellor's Linked Armor
-			un(1, i(32139)),	    -- Chancellor's Linked Gauntlets
-			un(1, i(32140)),	    -- Chancellor's Linked Helm
-			un(1, i(32141)),	    -- Chancellor's Linked Leggings
-			un(1, i(32142)),	    -- Chancellor's Linked Spaulders
-			un(1, i(32143)),	    -- Chancellor's Mail Armor
-			un(1, i(32144)),	    -- Chancellor's Mail Gauntlets
-			un(1, i(32145)),	    -- Chancellor's Mail Helm
-			un(1, i(32146)),	    -- Chancellor's Mail Leggings
-			un(1, i(32147)),	    -- Chancellor's Mail Sppaulders
-			un(1, i(32148)),	    -- Chancellor's Ringmail Chestguard
-			un(1, i(32149)),	    -- Chancellor's Ringmail Gloves
-			un(1, i(32150)),	    -- Chancellor's Ringmail Headpiece
-			un(1, i(32151)),	    -- Chancellor's Ringmail Legguards
-			un(1, i(32152)),	    -- Chancellor's Ringmail Shoulders
+{   
+	n(-220, { -- Class
+		cl(8, { -- Mage
+			un(1, i(44600)),	-- Tome of Polymorph: Serpent (Never made it out of beta)
+			un(1, i(44811)),	-- Tome of Polymorph: Turkey
 		}),
-		cl(3, {	-- Hunter
-			un(1, i(32133)),	    -- Chancellor's Chain Armor
-			un(1, i(32134)),	    -- Chancellor's Chain Gauntlets
-			un(1, i(32135)),	    -- Chancellor's Chain Helm
-			un(1, i(32136)),	    -- Chancellor's Chain Leggings
-			un(1, i(32137)),	    -- Chancellor's Chain Spaulders
+		cl(12, { -- DH
+			un(1, i(129738)), -- Verus
 		}),
-		un(1, i(12615)),	    -- Savage Mail Tunic (never added to live)
-		un(1, i(12616)),	    -- Savage Boots (never added to live)
-		un(1, i(12617)),	    -- Savage Pauldrons (never added to live)
-		un(1, i(18304)),	    -- Greenroot Mail (never added to live)
-		un(1, i(21584)),	    -- Bracers of Eternal Reckoning (never added to live)
-		un(1, i(21588)),	    -- Wristguards of Elemental Fury (never added to live)
-		un(1, i(21612)),	    -- Wormscale Stompers (never added to live)
-		un(1, i(38387)),	    -- Grizzled Hat
-		un(1, i(38388)),	    -- Cap of the North
-		un(1, i(38389)),	    -- Comfy Raccoonskin Hat
-		un(1, i(38390)),	    -- The Rugged Marksman
+	}),
+	n(-163, { -- Armor
+		n(-43, { -- Cloth
+			cl(8, { -- Mage
+				un(1, i(150651)), -- Mountainsage Cord
+				un(1, i(150646)), -- Mountainsage Handwraps
+				un(1, i(150647)), -- Mountainsage Hood
+				un(1, i(150648)), -- Mountainsage Leggings
+				un(1, i(150649)), -- Mountainsage Robe
+				un(1, i(150645)), -- Mountainsage Sandals
+				un(1, i(150650)), -- Mountainsage Shoulderpads
+				un(1, i(150652)), -- Mountainsage Wristwraps
+			}),
+			un(1, i(78017)),	-- Replica Magister's Leggings (Cloth)
+		}),
+		n(-44, { -- Leather
+			un(1, i(54655)),	-- Stormshroud Armor (Leather)
+		}),
+		n(-45, { -- Mail
+			cl(7, {	-- Shaman
+				un(1, i(32138)),	    -- Chancellor's Linked Armor
+				un(1, i(32139)),	    -- Chancellor's Linked Gauntlets
+				un(1, i(32140)),	    -- Chancellor's Linked Helm
+				un(1, i(32141)),	    -- Chancellor's Linked Leggings
+				un(1, i(32142)),	    -- Chancellor's Linked Spaulders
+				un(1, i(32143)),	    -- Chancellor's Mail Armor
+				un(1, i(32144)),	    -- Chancellor's Mail Gauntlets
+				un(1, i(32145)),	    -- Chancellor's Mail Helm
+				un(1, i(32146)),	    -- Chancellor's Mail Leggings
+				un(1, i(32147)),	    -- Chancellor's Mail Sppaulders
+				un(1, i(32148)),	    -- Chancellor's Ringmail Chestguard
+				un(1, i(32149)),	    -- Chancellor's Ringmail Gloves
+				un(1, i(32150)),	    -- Chancellor's Ringmail Headpiece
+				un(1, i(32151)),	    -- Chancellor's Ringmail Legguards
+				un(1, i(32152)),	    -- Chancellor's Ringmail Shoulders
+				un(1, i(46293)),	    -- Worldbreaker Chestguard
+				un(1, i(46294)),	    -- Worldbreaker Faceguard
+				un(1, i(46295)),	    -- Worldbreaker Gloves
+				un(1, i(46296)),	    -- Worldbreaker Grips
+				un(1, i(46297)),	    -- Worldbreaker Handguards
+				un(1, i(46298)),	    -- Worldbreaker Hauberk
+				un(1, i(46299)),	    -- Worldbreaker Headpiece
+				un(1, i(46300)),	    -- Worldbreaker Helm
+				un(1, i(46301)),	    -- Worldbreaker Kilt
+				un(1, i(46302)),	    -- Worldbreaker Legguards
+				un(1, i(46303)),	    -- Worldbreaker Shoulderguards
+				un(1, i(46304)),	    -- Worldbreaker Shoulderpads
+				un(1, i(46305)),	    -- Worldbreaker Spaulbers
+				un(1, i(46306)),	    -- Worldbreaker Tunic
+				un(1, i(46307)),	    -- Worldbreaker War-Kilt
+				un(1, i(48824)),	    -- Nobundo's Handguards
+				un(1, i(48825)),	    -- Nobundo's Headpiece
+				un(1, i(48826)),	    -- Nobundo's Legguards
+				un(1, i(48827)),	    -- Nobundo's Spaulders
+				un(1, i(48828)),	    -- Nobundo's Tunic
+				un(1, i(48836)),	    -- Nobundo's Gloves
+				un(1, i(48837)),	    -- Nobundo's Hauberk
+				un(1, i(48838)),	    -- Nobundo's Helm
+				un(1, i(48839)),	    -- Nobundo's Kilt
+				un(1, i(48840)),	    -- Nobundo's Shoulderpads
+				un(1, i(48846)),	    -- Nobundo's Chestguard
+				un(1, i(48847)),	    -- Nobundo's Faceguard
+				un(1, i(48848)),	    -- Nobundo's Grips
+				un(1, i(48849)),	    -- Nobundo's Shoulderguards
+				un(1, i(48850)),	    -- Nobundo's War-Kilt
+				un(1, i(51747)),	    -- Frost Witch's Tunic
+				un(1, i(51748)),	    -- Frost Witch's Handguards
+				un(1, i(51749)),	    -- Frost Witch's Headpiece
+				un(1, i(51750)),	    -- Frost Witch's Legguards
+				un(1, i(51751)),	    -- Frost Witch's Spaulders
+				un(1, i(51752)),	    -- Frost Witch's Chestguard
+				un(1, i(51753)),	    -- Frost Witch's Grips
+				un(1, i(51754)),	    -- Frost Witch's Faceguard
+				un(1, i(51755)),	    -- Frost Witch's War-Kilt
+				un(1, i(51756)),	    -- Frost Witch's Shoulderguards
+				un(1, i(51757)),	    -- Frost Witch's Hauberk
+				un(1, i(51758)),	    -- Frost Witch's Gloves
+				un(1, i(51759)),	    -- Frost Witch's Helm
+				un(1, i(51760)),	    -- Frost Witch's Kilt
+				un(1, i(51761)),	    -- Frost Witch's Shoulderpads
+			}),
+			cl(3, {	-- Hunter
+				un(1, i(32133)),	    -- Chancellor's Chain Armor
+				un(1, i(32134)),	    -- Chancellor's Chain Gauntlets
+				un(1, i(32135)),	    -- Chancellor's Chain Helm
+				un(1, i(32136)),	    -- Chancellor's Chain Leggings
+				un(1, i(32137)),	    -- Chancellor's Chain Spaulders
+				un(1, i(46274)),	    -- Scourgestalker Headpiece
+			}),
+			un(1, i(56507)),	    -- Razorshell Helm
+			un(1, i(56514)),	    -- Windbound Helm
+			un(1, i(12615)),	    -- Savage Mail Tunic (never added to live)
+			un(1, i(12616)),	    -- Savage Boots (never added to live)
+			un(1, i(12617)),	    -- Savage Pauldrons (never added to live)
+			un(1, i(18304)),	    -- Greenroot Mail (never added to live)
+			un(1, i(21584)),	    -- Bracers of Eternal Reckoning (never added to live)
+			un(1, i(21588)),	    -- Wristguards of Elemental Fury (never added to live)
+			un(1, i(21612)),	    -- Wormscale Stompers (never added to live)
+			un(1, i(38387)),	    -- Grizzled Hat
+			un(1, i(38388)),	    -- Cap of the North
+			un(1, i(38389)),	    -- Comfy Raccoonskin Hat
+			un(1, i(38390)),	    -- The Rugged Marksman
+		}),
+		--n(-46, { -- Plate
+		--}),
+		n(-45, { -- Cloaks
+			un(1, i(22230)),	-- Frightmaw Hide (Cloak)
+			un(1, i(157751)), -- Drape of New Beginnings
+			un(1, i(134693)), -- Enveloping Cape
+			un(1, i(134699)), -- Enveloping Drape
+			un(1, i(134609)), -- Scorching Cape
+			un(1, i(134617)), -- Scorching Drape
+			un(1, i(150489)), -- Shroud of Forgiveness
+			un(1, i(150714)), -- Travel-Worn Shawl
+			un(1, i(134579)), -- Vanguard Cape
+			un(1, i(134605)), -- Vanguard Cloak
+		}),
 	}),
 	n(-494, { -- Misc
 		un(1, i(146801)),	-- [BUILDING CONTRIBUTION REWARD ITEM [NYI]]
@@ -50,6 +137,11 @@ _.NeverImplemented =
 		un(1, i(111810)),	-- Barracks, Level 1 - unused version (used version is 111956)
 	}),
 	n(-160, { -- Mounts
+		un(1, a(model(9475, i(13325)))),		-- Fluorescent Green Mechanostrider (Never added in Game)
+		un(1, h(model(11641, i(14062, {		-- Kodo Mount 						(Never added in Game)
+			{ ["mountID"]= 18363 }	
+		})))),
+		un(1, model(17890, i(25596))), 	-- Peep's Whistle	 					(Never added in Game)
 		un(1, i(8627)),	-- Reins of the Nightsaber								(Never added in Game)
 		un(1, a(model(6447, i(8628)))),	-- Reins of the Spotted Nightsaber 		(Never added in Game)
 		un(1, a(model(6443, i(8630, {		-- Reins of the Bengal Tiger 			(Never added in Game)
@@ -124,6 +216,14 @@ _.NeverImplemented =
 			un(1, i(152620)),	-- Recipe: Astral Mana Potion (Rank 1)
 			un(1, i(152621)),	-- Recipe: Astral Mana Potion (Rank 2)
 			un(1, i(152622)),	-- Recipe: Astral Mana Potion (Rank 3)
+		}),
+		n(-192, { -- Cooking
+			un(1, i(86512)),	-- Journeyman Cookbook
+			un(1, i(86550)),	-- Apprentice Cookbook
+			un(1, i(86551)),	-- Expert Cookbook
+			un(1, i(86552)),	-- Artisan Cookbook
+			un(1, i(86553)),	-- Master Cookbook
+			un(1, i(86554)),	-- Grand Master Cookbook
 		}),
 		n(-185, { -- Inscription
 			un(1, i(87830)),	-- Recipe: Tigersblood Tincture
@@ -216,6 +316,8 @@ _.NeverImplemented =
 			un(1, i(42174)),	-- Pattern: Yellow Lumberjack Shirt (pattern never went live, but it's learned at the trainer)
 		}),
 	}),
+	--n(-161, { -- Toys
+	--}),
 	n(-319, { -- Weapons
 		n(-347, { -- Crossbow
 			un(1, i(32187)),    -- Chancellor's Heavy Crossbow
@@ -274,13 +376,6 @@ _.NeverImplemented =
 	un(1, i(32190)),	-- Chancellor's Spellblade
 	un(1, i(32183)),	-- Chancellor's Maul
 	un(1, i(77587)),	-- Replica High Warlord's Destroyer
-	}),
-	
-	un(1, i(44600)),	-- Tome of Polymorph: Serpent (Never made it out of beta)
-	un(1, i(44811)),	-- Tome of Polymorph: Turkey
-	un(1, i(22230)),	-- Frightmaw Hide (Cloak)
-	un(1, i(78017)),	-- Replica Magister's Leggings (Cloth)
-	un(1, i(54655)),	-- Stormshroud Armor (Leather)
 	un(1, i(138489)), 	-- Kargath's Sacrified Hands
 	un(1, i(80981)),	-- Scavenged Rotor Blade
 	un(1, i(81320)),	-- Right-Handed Invis Knuckles
@@ -293,15 +388,25 @@ _.NeverImplemented =
 	un(1, i(84695)),	-- Dreadful Gladiator's Spellblade (blue)
 	un(1, i(84708)),	-- Dreadful Gladiator's Shanker (blue)
 	un(1, i(84698)),	-- Dreadful Gladiator's Slasher
-	
-	un(1, i(86512)),	-- Journeyman Cookbook
-	un(1, i(86550)),	-- Apprentice Cookbook
-	un(1, i(86551)),	-- Expert Cookbook
-	un(1, i(86552)),	-- Artisan Cookbook
-	un(1, i(86553)),	-- Master Cookbook
-	un(1, i(86554)),	-- Grand Master Cookbook
-	
-	un(1, i(129738)), -- Verus
+	un(1, i(70209)),	-- Ruthless Gladiator's Reprieve
+	un(1, i(23420)),	-- Engraved Axe
+	un(1, i(23422)),	-- Engraved Dagger
+	un(1, i(20522)),	-- Feral Staff
+	un(1, i(20003)),	-- Devilsaur Claws
+	un(1, i(20005)),	-- Devilsaur Claws
+	un(1, i(12795)),	-- Blood Talon [Was going to be a Blacksmithing item]
+	un(1, i(3222)),	-- Wicked Dagger
+	un(1, i(38245)),	-- Crystalline Providence
+	un(1, i(38248)),	-- Torch of the Fallen Souls
+	un(1, i(84085)),	-- Dreadwaste Meditation Staff
+	un(1, i(84086)),	-- Dreadwaste Diviner's Rod
+	un(1, i(84527)),	-- Hidden Pass Meditation Staff
+	un(1, i(913)),	-- Huge Ogre Sword
+	un(1, i(12469)),	-- Mutilator
+	un(1, i(23432)),	-- Engraved Greatsword
+	un(1, i(32186)),	-- Chancellor's Warblade
+	un(1, i(54553)),	-- Kliklak's Fearsome Greatsword (never made it to live)
+	}),
 	un(1, i(147204)), -- Black Apron - TEST
 	un(1, i(23388)), -- Tranquillen Tabard
 	un(1, i(130156)),	-- Crane Bag
@@ -310,25 +415,8 @@ _.NeverImplemented =
 	un(1, i(157620)), -- Halberd of Ferocity
 	
 	un(1, i(151377)), -- Arne Test Heirloom - Bloodied Arcanite Reaper
-	un(1, i(157751)), -- Drape of New Beginnings
-	un(1, i(134693)), -- Enveloping Cape
-	un(1, i(134699)), -- Enveloping Drape
-	un(1, i(134609)), -- Scorching Cape
-	un(1, i(134617)), -- Scorching Drape
-	un(1, i(150489)), -- Shroud of Forgiveness
-	un(1, i(150714)), -- Travel-Worn Shawl
-	un(1, i(134579)), -- Vanguard Cape
-	un(1, i(134605)), -- Vanguard Cloak
 	un(1, i(134013)), -- Chef's Hat [Likely the cosmetic effect from when you use the toy]
 	-- LIKELY PART OF 110 TRIAL SET
-	un(1, i(150651)), -- Mountainsage Cord
-	un(1, i(150646)), -- Mountainsage Handwraps
-	un(1, i(150647)), -- Mountainsage Hood
-	un(1, i(150648)), -- Mountainsage Leggings
-	un(1, i(150649)), -- Mountainsage Robe
-	un(1, i(150645)), -- Mountainsage Sandals
-	un(1, i(150650)), -- Mountainsage Shoulderpads
-	un(1, i(150652)), -- Mountainsage Wristwraps
 	un(1, i(166699)),	-- Desert Rucksack
 	un(1, i(150715)), -- Illidari Warglaive
 	un(1, i(134110)), -- Hidden Helm
@@ -368,24 +456,6 @@ _.NeverImplemented =
 	un(1, i(42523)),	-- Savage Gladiator's Endgame
 	un(1, i(42529)),	-- Savage Gladiator's Reprieve
 	un(1, i(42535)),	-- Savage Gladiator's Grimoire
-	un(1, i(70209)),	-- Ruthless Gladiator's Reprieve
-	un(1, i(23420)),	-- Engraved Axe
-	un(1, i(23422)),	-- Engraved Dagger
-	un(1, i(20522)),	-- Feral Staff
-	un(1, i(20003)),	-- Devilsaur Claws
-	un(1, i(20005)),	-- Devilsaur Claws
-	un(1, i(12795)),	-- Blood Talon [Was going to be a Blacksmithing item]
-	un(1, i(3222)),	-- Wicked Dagger
-	un(1, i(38245)),	-- Crystalline Providence
-	un(1, i(38248)),	-- Torch of the Fallen Souls
-	un(1, i(84085)),	-- Dreadwaste Meditation Staff
-	un(1, i(84086)),	-- Dreadwaste Diviner's Rod
-	un(1, i(84527)),	-- Hidden Pass Meditation Staff
-	un(1, i(913)),	-- Huge Ogre Sword
-	un(1, i(12469)),	-- Mutilator
-	un(1, i(23432)),	-- Engraved Greatsword
-	un(1, i(32186)),	-- Chancellor's Warblade
-	un(1, i(54553)),	-- Kliklak's Fearsome Greatsword (never made it to live)
 	un(1, i(56701)),	-- Jinxed Vest (never made it to live)
 	un(1, i(56702)),	-- Saw Blade (never made it to live)
 	un(1, i(5255)),	-- Quilboar Tomahawk
@@ -457,11 +527,6 @@ _.NeverImplemented =
 	un(1, i(12772)),	-- Inlaid Thorium Hammer								(Never added in Game)
 	un(1, i(12764)),	-- Thorium Greatsword									(Never added in Game)
 	un(1, i(12779)),	-- Rune Edge											(Never added in Game)
-	un(1, a(model(9475, i(13325)))),		-- Fluorescent Green Mechanostrider (Never added in Game)
-	un(1, h(model(11641, i(14062, {		-- Kodo Mount 						(Never added in Game)
-		{ ["mountID"]= 18363 }	
-	})))),
-	un(1, model(17890, i(25596))), 	-- Peep's Whistle	 					(Never added in Game)
 	un(15, i(31279)),	-- Enchanted Illidari Tabard [Temp Quest Item]
 	un(1, i(48730)),	-- Sunstrider's Gauntlets of Conquest
 	un(1, i(48731)),	-- Sunstrider's Hood of Conquest
@@ -708,6 +773,15 @@ i(54778),	-- Burnished Boots (Again)
 i(54781),	-- Thorbia's Gauntlets
 i(54783),	-- Silvered Bronze Shoulders
 i(54789),	-- Art Template Plate Belt - Plate_Common_C_01 - Rust
+i(47058),   -- Unknown
+i(59791),   -- Unknown
+i(60221),   -- Furlbrow Cloak
+i(60774),   -- Unknown
+i(60775),   -- Unknown
+i(60777),   -- Unknown
+i(60780),   -- Unknown
+i(60781),   -- Unknown
+i(50329),   -- Unknown
 
 ------------------------
 -- CLASS TRIAL UNUSED --
@@ -735,8 +809,8 @@ un(1, i(154047)), -- Oathsworn Defender Stone
 -- TRASH GREYS/WHITES -
 -----------------------
 -- Toy
-i(105914), -- Danger Detector Boots
-i(105915), -- Danger Detector Harness
+un(1, i(105914)), -- Danger Detector Boots
+un(1, i(105915)), -- Danger Detector Harness
 -- Shirt
 un(1, i(53869)), -- War Paint (Shirt) NOT GOOD FOR THE LADIES (NYI)
 un(1, i(60619)), -- No Shirt

@@ -76,9 +76,9 @@ _.Zones =
 							})),
 							un(40, q(1370, {	-- Stealing Supplies
 								un(2, i(32378)),	-- Silver Star
-								i(3463, { -- Broken Silver Star
+								un(2, i(3463, { -- Broken Silver Star
    								 ["f"] = 50,    -- Miscellaneous
-								}),
+								})),
 								un(2, i(3464)),	-- Feathered Arrow
 								un(2, i(3465)),	-- Exploding Shot
 							})),

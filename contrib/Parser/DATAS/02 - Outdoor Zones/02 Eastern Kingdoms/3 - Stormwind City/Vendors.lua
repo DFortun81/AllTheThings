@@ -315,6 +315,7 @@ _.Zones =
 									i(41560),	-- Design: Stormy Chalcedony
 									i(41570),	-- Design: Radiant Dark Jade
 									i(41571),	-- Design: Turbid Dark Jade
+									un(2, i(28960)),	    -- Grand Marshal's Heavy Crossbow
 								},
 								["u"] = 43,
 							},
