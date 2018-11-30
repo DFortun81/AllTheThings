@@ -1381,6 +1381,11 @@ _.Zones =
 							i(41560),	-- Design: Stormy Chalcedony
 							i(41570),	-- Design: Radiant Dark Jade
 							i(41571),	-- Design: Turbid Dark Jade
+							un(2, i(31646)),	    -- High Warlord Ringmail Chestguard
+							un(2, i(31647)),	    -- High Warlord Ringmail Gloves
+							un(2, i(31648)),	    -- High Warlord Ringmail Headpiece
+							un(2, i(31649)),	    -- High Warlord Ringmail Legguards
+							un(2, i(31650)),	    -- High Warlord Ringmail Shoulders
 						},
 						["u"] = 43,
 					},

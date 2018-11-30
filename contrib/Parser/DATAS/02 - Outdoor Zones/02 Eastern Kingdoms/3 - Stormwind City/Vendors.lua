@@ -259,6 +259,11 @@ _.Zones =
 									i(73454),	-- Cataclysmic Gladiator's Ripper
 									i(73455),	-- Cataclysmic Gladiator's Shanker
 									i(73456),	-- Cataclysmic Gladiator's Pike
+									un(2, i(31640)),	    -- Grand Marshal's Ringmail Chestguard
+									un(2, i(31641)),	    -- Grand Marshal's Ringmail Gloves
+									un(2, i(31642)),	    -- Grand Marshal's Ringmail Headpiece
+									un(2, i(31643)),	    -- Grand Marshal's Ringmail Legguards
+									un(2, i(31644)),	    -- Grand Marshal's Ringmail Shoulders
 								},
 							},
 							{	-- Captain Lancy Revshon <Stormwind Quartermaster>
