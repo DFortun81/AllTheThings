@@ -321,6 +321,18 @@ _.Instances =
 										11472,	-- Eldreth Spirit
 									},
 								}),
+								i(18332, {	-- Libram of Rapidity
+									["crs"] = {
+										11441,	-- Gorduk Brute
+										11448,	-- Gorduk Warlock
+										11444,	-- Gorduk Mage-Lord
+										11450,	-- Gorduk Reaver
+										11445,	-- Gorduk Captain
+										13021,	-- Warpwood Crusher
+										11462,	-- Warpwood Treant
+										-- More Mobs can drop this item, but statistic wise its already 0,00%
+									},
+								}),
 								i(18340, {	-- Eidolon Talisman
 									["crs"] = {
 										11471,	-- Eldreth Apparition

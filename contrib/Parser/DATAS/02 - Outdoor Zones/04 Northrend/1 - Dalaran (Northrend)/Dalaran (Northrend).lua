@@ -2044,6 +2044,7 @@ _.Zones =
 						i(137294),	-- Dalaran Initiates' Pin Toy [Mage only]
 						i(136846),	-- Familiar Stone Toy [Mage only]
 						i(136797),	-- Mystical Tome: Arcane Linguist [Mage only]
+						un(2, i(44714)), -- Tome of Dalaran Brilliance. Deprecated and removed in 7.0.3. Any existing copies were renamed to [Magic Consumed Book]. 
 						--i(136799),	-- Mystical Tome: Illusion [Mage only]
 						{
 							["itemID"] = 136799,	-- Mystical Tome: Illusion [Mage only]

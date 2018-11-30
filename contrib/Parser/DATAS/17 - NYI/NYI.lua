@@ -191,6 +191,7 @@ _.NeverImplemented =
 	un(1, i(141606)),   -- Fel Hacker, unused Version
 	un(1, i(32174)),    -- Chancellor's Cleaver
 	un(1, i(32182)),    -- Chancellor's Decapitator
+	un(1, i(38244)),    -- Valorous Exterminator (Never added)
 	
 	---- CROSSBOWS ----
 	un(1, i(32187)),    -- Chancellor's Heavy Crossbow
@@ -676,7 +677,6 @@ un(2, i(103785)), -- Tusks of Mannoroth [Heroic]
 ------------------------------------------------------------
 --			R E T R I E V I N G 			D A T A 	  --
 ------------------------------------------------------------
-
 i(120370),
 i(120371),
 i(23351),
@@ -696,6 +696,16 @@ i(94899),	-- Never made to Live. Malevolent Gladiator's Baton of Light
 i(94898),	-- Never made to Live. Malevolent Gladiator's Touch of Death
 i(85118),	-- Never made to Live. 490 Malevolent Gladiator's Shiv
 i(84895),	-- Never made to Live. Malevolent Gladiator's Shiv
+i(54757),	-- Double Link Tunic
+i(54765),	-- Burnished Leggings
+i(54766),	-- Burnished Gloves
+i(54767),	-- Burnished Girdle
+i(54768),	-- Burnished Boots
+i(54769),	-- Rough Bronze Bracers
+i(54778),	-- Burnished Boots (Again)
+i(54781),	-- Thorbia's Gauntlets
+i(54783),	-- Silvered Bronze Shoulders
+i(54789),	-- Art Template Plate Belt - Plate_Common_C_01 - Rust
 
 ------------------------
 -- CLASS TRIAL UNUSED --
