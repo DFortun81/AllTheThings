@@ -78,7 +78,10 @@ _.Zones =
 							}),
 						}),
 						n(-17, { -- Quests
-							{
+							{	-- Agressive Growth
+								["questID"] = 29139,	-- Aggressive Growth
+							},
+							{	-- Breach in the Defenses
 								["questID"] = 29137,	-- Breach in the Defenses
 								["sourceQuest"] = 29201,	-- Through the Gates of Hell
 								["qg"] = 52824,	-- General Taldris Moonfall

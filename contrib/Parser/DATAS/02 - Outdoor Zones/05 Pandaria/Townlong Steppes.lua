@@ -2329,52 +2329,57 @@ _.Zones =
 						i(86738),	-- Red Crane Spaulders
 					}),
 					n(64595, {	-- Rushi the Fox <Shado-Pan Quartermaster>
-						i(89076),	-- Blackguard Cape
-						i(89081),	-- Blossom of Pure Snow
-						i(89660),	-- Brambleguard Leggings
-						i(89655),	-- Brushcutter's Gloves
-						i(89077),	-- Cloak of Snow Blossoms
-						i(89074),	-- Cloak of the Dark Disciple
-						i(89523),	-- Etched Golden Loop
-						i(89337),	-- Firecracker Corona
-						i(84584),	-- Formula: Enchant Weapon - Dancing Steel
-						i(84583),	-- Formula: Enchant Weapon - Jade Spirit
-						i(84580),	-- Formula: Enchant Weapon - River's Song
-						i(138877),	-- Formula: Tome of Illusions: Secrets of the Shado-Pan
-						i(89656),	-- Gauntlets of Restraint
-						i(89654),	-- Gloves of Forgotten Wisdom
-						i(93220),	-- Grand Commendation of the Shado-Pan
-						i(89291),	-- Hawkmaster's Headguard
-						i(89082),	-- Hawkmaster's Talon
-						i(89083),	-- Iron Belly Wok
-						i(89079),	-- Lao-Chin's Liquid Courage
-						i(89522),	-- Mark of the Dancing Crane
-						i(89296),	-- Nightwatcher's Helm
-						i(89300),	-- Red Smoke Bandana
-						i(89307),	-- Reins of the Blue Shado-Pan Riding Tiger
-						i(89305),	-- Reins of the Green Shado-Pan Riding Tiger
-						i(89306),	-- Reins of the Red Shado-Pan Riding Tiger
-						i(90846),	-- Replica Shado-Pan Helmet
-						i(90845),	-- Replica Shado-Pan Helmet
-						i(90844),	-- Replica Shado-Pan Helmet
-						i(89801),	-- Replica Shado-Pan Helmet
-						i(89673),	-- Robe of Eternal Dynasty
-						i(89672),	-- Robe of Quiet Meditation
-						i(89078),	-- Sagewhisper's Wrap
-						i(89080),	-- Scroll of Revered Ancestors
-						i(88995),	-- Shado-Pan Dragon Gun
-						i(89800),	-- Shado-Pan Tabard
-						i(89526),	-- Signet of the Slumbering Emperor
-						i(89096),	-- Six Pool's Open Helm
-						i(89308),	-- Snowdrift Helm
-						i(89524),	-- Sorcerer-King's Seal
-						i(89525),	-- Thunderstone Ring
-						i(89661),	-- Tough Mushanhide Leggings
-						i(89280),	-- Voice Amplyifying Greathelm
-						i(89657),	-- Wall Breaker Gauntlets
-						i(89338),	-- Yalia's Cowl
-						i(89075),	-- Yi's Cloak of Courage
-						i(89216),	-- Yi's Least Favorite Helmet
+						["coords"] = {
+							{ 48.85, 70.59, 388 },
+						},
+						["g"] = {
+							i(89076),	-- Blackguard Cape
+							i(89081),	-- Blossom of Pure Snow
+							i(89660),	-- Brambleguard Leggings
+							i(89655),	-- Brushcutter's Gloves
+							i(89077),	-- Cloak of Snow Blossoms
+							i(89074),	-- Cloak of the Dark Disciple
+							i(89523),	-- Etched Golden Loop
+							i(89337),	-- Firecracker Corona
+							i(84584),	-- Formula: Enchant Weapon - Dancing Steel
+							i(84583),	-- Formula: Enchant Weapon - Jade Spirit
+							i(84580),	-- Formula: Enchant Weapon - River's Song
+							i(138877),	-- Formula: Tome of Illusions: Secrets of the Shado-Pan
+							i(89656),	-- Gauntlets of Restraint
+							i(89654),	-- Gloves of Forgotten Wisdom
+							i(93220),	-- Grand Commendation of the Shado-Pan
+							i(89291),	-- Hawkmaster's Headguard
+							i(89082),	-- Hawkmaster's Talon
+							i(89083),	-- Iron Belly Wok
+							i(89079),	-- Lao-Chin's Liquid Courage
+							i(89522),	-- Mark of the Dancing Crane
+							i(89296),	-- Nightwatcher's Helm
+							i(89300),	-- Red Smoke Bandana
+							i(89307),	-- Reins of the Blue Shado-Pan Riding Tiger
+							i(89305),	-- Reins of the Green Shado-Pan Riding Tiger
+							i(89306),	-- Reins of the Red Shado-Pan Riding Tiger
+							i(90846),	-- Replica Shado-Pan Helmet
+							i(90845),	-- Replica Shado-Pan Helmet
+							i(90844),	-- Replica Shado-Pan Helmet
+							i(89801),	-- Replica Shado-Pan Helmet
+							i(89673),	-- Robe of Eternal Dynasty
+							i(89672),	-- Robe of Quiet Meditation
+							i(89078),	-- Sagewhisper's Wrap
+							i(89080),	-- Scroll of Revered Ancestors
+							i(88995),	-- Shado-Pan Dragon Gun
+							i(89800),	-- Shado-Pan Tabard
+							i(89526),	-- Signet of the Slumbering Emperor
+							i(89096),	-- Six Pool's Open Helm
+							i(89308),	-- Snowdrift Helm
+							i(89524),	-- Sorcerer-King's Seal
+							i(89525),	-- Thunderstone Ring
+							i(89661),	-- Tough Mushanhide Leggings
+							i(89280),	-- Voice Amplyifying Greathelm
+							i(89657),	-- Wall Breaker Gauntlets
+							i(89338),	-- Yalia's Cowl
+							i(89075),	-- Yi's Cloak of Courage
+							i(89216),	-- Yi's Least Favorite Helmet
+						},
 					}),
 					n(62737, {	-- Supplier Xin
 						i(83158),	-- Wasteland Satin Hood

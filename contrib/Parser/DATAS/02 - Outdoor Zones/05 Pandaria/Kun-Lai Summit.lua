@@ -1076,6 +1076,7 @@ _.Zones =
 							["npcID"] = 50769,	-- Zai the Outcast
 							["coords"] = {
 								{ 73.35, 76.31, 379 },
+								{ 74.41, 79.34, 379 },
 							},
 							["g"] = {
 								{	-- Farwater Conch

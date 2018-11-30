@@ -291,35 +291,40 @@ _.Zones =
 							},
 						},
 						n(73307, {	-- Speaker Gulan <Emissary of Ordos>
-							currency(789, { -- Bloody Coin
-								["description"] = "Earn these by transforming into an Emissary of Ordos and participating in PvP.",
-								["groups"] = {
-									ach(8717),	-- Candlekeeper
-									ach(8718),	-- Oathguard
-									ach(8720),	-- Kilnmaster
+							["coords"] = {
+								{ 74.92, 44.92, 554 },
+							},
+							["g"] = {
+								currency(789, { -- Bloody Coin
+									["description"] = "Earn these by transforming into an Emissary of Ordos and participating in PvP.",
+									["groups"] = {
+										ach(8717),	-- Candlekeeper
+										ach(8718),	-- Oathguard
+										ach(8720),	-- Kilnmaster
+										{
+											["achievementID"] = 8721,	-- Fire-Watcher
+											["groups"] = {
+												title(251),	-- Fire-Watcher
+											},
+										},
+										i(103638),	-- Reins of the Ashhide Mushan Beast [Mount]
+										i(103637),	-- Vengeful Porcupette [Pet]
+										i(103639),	-- Pouch of White Ash [Trinket]
+										i(102464),	-- Black Ash
+									},
+								}),
+								currency(777, { -- Timeless Coin
 									{
-										["achievementID"] = 8721,	-- Fire-Watcher
+										["itemID"] = 102467,	-- Censer of Eternal Agony [Toy]
 										["groups"] = {
-											title(251),	-- Fire-Watcher
+											ach(8716),	-- Emissary of Ordos
 										},
 									},
-									i(103638),	-- Reins of the Ashhide Mushan Beast [Mount]
-									i(103637),	-- Vengeful Porcupette [Pet]
-									i(103639),	-- Pouch of White Ash [Trinket]
-									i(102464),	-- Black Ash
-								},
-							}),
-							currency(777, { -- Timeless Coin
-								{
-									["itemID"] = 102467,	-- Censer of Eternal Agony [Toy]
-									["groups"] = {
-										ach(8716),	-- Emissary of Ordos
+									{
+										["itemID"] = 102463,	-- Fire-Watcher's Oath
 									},
-								},
-								{
-									["itemID"] = 102463,	-- Fire-Watcher's Oath
-								},
-							}),
+								}),
+							},
 						}),
 						{
 							["npcID"] = 73293,	-- Whizzig

@@ -198,7 +198,8 @@ _.Zones =
 						}),
 						n(59908, {	-- Jaluu the Generous <The Golden Lotus Quartermaster>
 							["coords"] = {
-								{ 84.23, 62.79, 390 },
+								{ 84.23, 62.79, 390 },	-- Alliance
+								{ 63.23, 22.08, 390 },	-- Horde
 							},
 							["g"] = {
 								i(89797),	-- Golden Lotus Tabard
@@ -375,54 +376,59 @@ _.Zones =
 							},
 						},
 						nh(64001, {	-- Sage Lotusbloom <The August Celestials Quartermaster>
-							i(89799),	-- August Celestials Tabard
-							i(89304),	-- Reins of the Thundering August Cloud Serpent Mount
-							i(86377),	-- Pattern: Royal Satchel
-							i(84561),	-- Formula: Enchant Bracer - Exceptional Strength
-							i(84557),	-- Formula: Enchant Bracer - Greater Agility
-							i(84559),	-- Formula: Enchant Bracer - Super Intellect
-							i(93224),	-- Grand Commendation of the August Celestials
-							i(89124),	-- Celestial Offering
-							i(89532),	-- Bladesong Cloak [Back]
-							i(89533),	-- Cloak of Ancient Curses [Back]
-							i(89537),	-- Cloak of the Silent Mountain [Back]
-							i(89534),	-- Pressed Flower Cloak [Back]
-							i(89535),	-- Ribcracker's Cloak [Back]
-							i(88880),	-- Battle Shadow Bracers [Wrists]
-							i(88892),	-- Bracers of Inlaid Jade [Wrists]
-							i(88879),	-- Braided Black and White Bracer [Wrists]
-							i(88883),	-- Brewmaster Chani's Bracers [Wrists]
-							i(88885),	-- Clever Ashyo's Armbands [Wrists]
-							i(88881),	-- Fallen Sentinel Bracers [Wrists]
-							i(88893),	-- Minh's Beaten Bracers [Wrists]
-							i(88884),	-- Quillpaw Family Bracers [Wrists]
-							i(88882),	-- Tiger-Striped Wristguards [Wrists]
-							i(88749),	-- Gauntlets of Jade Sutras [Hands]
-							i(88741),	-- Gloves of Red Feathers [Hands]
-							i(88746),	-- Gloves of the Overwhelming Swarm [Hands]
-							i(88743),	-- Ogo's Elder Gloves [Hands]
-							i(88748),	-- Ravenmane's Gloves [Hands]
-							i(88745),	-- Sentinel Commander's Gauntlets [Hands]
-							i(88747),	-- Streetfighter's Iron Knuckles [Hands]
-							i(88742),	-- Sunspeaker's Flared Gloves [Hands]
-							i(88744),	-- Fingers of the Loneliest Monk [Ring]
-							i(89668),	-- Mountain Stream Ringmail [Chest]
-							i(89667),	-- Refurbished Zandalari Vestment [Chest]
-							i(89669),	-- Undergrowth Stalker Chestpiece [Chest]
-							i(89666),	-- Vestment of the Ascendant Tribe [Chest]
-							i(89665),	-- Leggings of Ponderous Advance [Legs]
-							i(89659),	-- Leggings of Unfinished Conquest [Legs]
-							i(89658),	-- Subversive Leggings [Legs]
-							i(89664),	-- Valiant's Shinguards [Legs]
-							i(88876),	-- Boots of the High Adept [Feet]
-							i(88865),	-- Bramblestaff Boots [Feet]
-							i(88867),	-- Sandals of the Elder Sage [Feet]
-							i(88866),	-- Steps of the War Serpent [Feet]
-							i(88877),	-- Storm-Sing Sandals [Feet]
-							i(88862),	-- Tankiss Warstompers [Feet]
-							i(88868),	-- Tukka-Tuk's Hairy Boots [Feet]
-							i(88878),	-- Void Flame Slippers [Feet]
-							i(88864),	-- Yu'lon Guardian Boots [Feet]
+							["coords"] = {
+								{ 62.79, 23.38 },
+							},
+							["g"] = {
+								i(89799),	-- August Celestials Tabard
+								i(89304),	-- Reins of the Thundering August Cloud Serpent Mount
+								i(86377),	-- Pattern: Royal Satchel
+								i(84561),	-- Formula: Enchant Bracer - Exceptional Strength
+								i(84557),	-- Formula: Enchant Bracer - Greater Agility
+								i(84559),	-- Formula: Enchant Bracer - Super Intellect
+								i(93224),	-- Grand Commendation of the August Celestials
+								i(89124),	-- Celestial Offering
+								i(89532),	-- Bladesong Cloak [Back]
+								i(89533),	-- Cloak of Ancient Curses [Back]
+								i(89537),	-- Cloak of the Silent Mountain [Back]
+								i(89534),	-- Pressed Flower Cloak [Back]
+								i(89535),	-- Ribcracker's Cloak [Back]
+								i(88880),	-- Battle Shadow Bracers [Wrists]
+								i(88892),	-- Bracers of Inlaid Jade [Wrists]
+								i(88879),	-- Braided Black and White Bracer [Wrists]
+								i(88883),	-- Brewmaster Chani's Bracers [Wrists]
+								i(88885),	-- Clever Ashyo's Armbands [Wrists]
+								i(88881),	-- Fallen Sentinel Bracers [Wrists]
+								i(88893),	-- Minh's Beaten Bracers [Wrists]
+								i(88884),	-- Quillpaw Family Bracers [Wrists]
+								i(88882),	-- Tiger-Striped Wristguards [Wrists]
+								i(88749),	-- Gauntlets of Jade Sutras [Hands]
+								i(88741),	-- Gloves of Red Feathers [Hands]
+								i(88746),	-- Gloves of the Overwhelming Swarm [Hands]
+								i(88743),	-- Ogo's Elder Gloves [Hands]
+								i(88748),	-- Ravenmane's Gloves [Hands]
+								i(88745),	-- Sentinel Commander's Gauntlets [Hands]
+								i(88747),	-- Streetfighter's Iron Knuckles [Hands]
+								i(88742),	-- Sunspeaker's Flared Gloves [Hands]
+								i(88744),	-- Fingers of the Loneliest Monk [Ring]
+								i(89668),	-- Mountain Stream Ringmail [Chest]
+								i(89667),	-- Refurbished Zandalari Vestment [Chest]
+								i(89669),	-- Undergrowth Stalker Chestpiece [Chest]
+								i(89666),	-- Vestment of the Ascendant Tribe [Chest]
+								i(89665),	-- Leggings of Ponderous Advance [Legs]
+								i(89659),	-- Leggings of Unfinished Conquest [Legs]
+								i(89658),	-- Subversive Leggings [Legs]
+								i(89664),	-- Valiant's Shinguards [Legs]
+								i(88876),	-- Boots of the High Adept [Feet]
+								i(88865),	-- Bramblestaff Boots [Feet]
+								i(88867),	-- Sandals of the Elder Sage [Feet]
+								i(88866),	-- Steps of the War Serpent [Feet]
+								i(88877),	-- Storm-Sing Sandals [Feet]
+								i(88862),	-- Tankiss Warstompers [Feet]
+								i(88868),	-- Tukka-Tuk's Hairy Boots [Feet]
+								i(88878),	-- Void Flame Slippers [Feet]
+								i(88864),	-- Yu'lon Guardian Boots [Feet]
+							},
 						}),
 						na(64032, {	-- Sage Whiteheart <The August Celestials Quartermaster>
 							["coords"] = {
