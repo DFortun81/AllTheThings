@@ -97,6 +97,28 @@ _.WorldEvents =
 				i(44971),	-- Tirisfal Batling Pet
 				i(49287),	-- Tuskarr Kite
 			}),
+			n(-235, {	-- Recipes
+				["g"] = {
+					i(86238),	-- Pattern: Chestguard of Nemeses
+					i(86272),	-- Pattern: Fists of Lightning
+					i(86380),	-- Pattern: Imperial Silk Gloves
+					i(86381),	-- Pattern: Legacy of the Emperor
+					i(86279),	-- Pattern: Liferuned Leather Gloves
+					i(86280),	-- Pattern: Murderer's Gloves
+					i(86281),	-- Pattern: Nightfire Robe
+					i(86283),	-- Pattern: Raiment of Blood and Bone
+					i(86284),	-- Pattern: Raven Lord's Gloves
+					i(86379),	-- Pattern: Robe of Eternal Rule
+					i(86297),	-- Pattern: Stormbreaker Chestguard
+					i(86382),	-- Pattern: Touch of the Light
+					i(87411),	-- Plans: Bloodforged Warfists
+					i(87412),	-- Plans: Chestplate of Limitless Faith
+					i(87409),	-- Plans: Gauntlets of Battle Command
+					i(87413),	-- Plans: Gauntlets of Unbound Devotion
+					i(87410),	-- Plans: Ornate Battleplate of the Master
+					i(87408),	-- Plans: Unyielding Bloodplate
+				},
+			}),
 			n(-325, { -- Tabard
 				i(38312),	-- Tabard of Brilliance
 				i(23705),	-- Tabard of Flame
@@ -200,7 +222,7 @@ _.WorldEvents =
 						un(9, i(22420)),	-- Dreadnaught Sabatons
 					}),		
 				},
-				["achievementID"] = 11744, -- Drop Dead, Gorgeous
+				["achievementID"] = 11744,	-- Drop Dead, Gorgeous
 			}),
 			n(-161, { -- Toy
 				i(33223),	-- Fishing Chair
@@ -352,6 +374,28 @@ _.WorldEvents =
 						i(44971),	-- Tirisfal Batling Pet **
 						i(49287),	-- Tuskarr Kite **
 					}),
+					n(-235, {	-- Recipes
+						["g"] = {
+							i(86238),	-- Pattern: Chestguard of Nemeses
+							i(86272),	-- Pattern: Fists of Lightning
+							i(86380),	-- Pattern: Imperial Silk Gloves
+							i(86381),	-- Pattern: Legacy of the Emperor
+							i(86279),	-- Pattern: Liferuned Leather Gloves
+							i(86280),	-- Pattern: Murderer's Gloves
+							i(86281),	-- Pattern: Nightfire Robe
+							i(86283),	-- Pattern: Raiment of Blood and Bone
+							i(86284),	-- Pattern: Raven Lord's Gloves
+							i(86379),	-- Pattern: Robe of Eternal Rule
+							i(86297),	-- Pattern: Stormbreaker Chestguard
+							i(86382),	-- Pattern: Touch of the Light
+							i(87411),	-- Plans: Bloodforged Warfists
+							i(87412),	-- Plans: Chestplate of Limitless Faith
+							i(87409),	-- Plans: Gauntlets of Battle Command
+							i(87413),	-- Plans: Gauntlets of Unbound Devotion
+							i(87410),	-- Plans: Ornate Battleplate of the Master
+							i(87408),	-- Plans: Unyielding Bloodplate
+						},
+					}),
 					n(-325, { -- Tabard **
 						i(38312),	-- Tabard of Brilliance **
 						i(23705),	-- Tabard of Flame **
@@ -455,7 +499,7 @@ _.WorldEvents =
 								un(9, i(22420)),	-- Dreadnaught Sabatons
 							}),		
 						},
-						["achievementID"] = 11744, -- Drop Dead, Gorgeous
+						["achievementID"] = 11744,	-- Drop Dead, Gorgeous
 					}),
 					n(-161, { -- Toy **
 						i(33223),	-- Fishing Chair **
@@ -505,16 +549,28 @@ _.WorldEvents =
 			}),
 		},
 		["description"] = "This list is close to what you can expect to find on the Black Market Auction House, but keep in mind other items could pop up.",
-		["maps"] = { 625 }, -- Dalaran: Broken Isles
+		["maps"] = {
+			1161,	-- Boralus
+			625,	-- Dalaran: Broken Isles
+			626,	-- Dalaran: Rogue Class Hall
+			628,	-- Dalaran: The Underbelly
+			862,	-- Dazar'alor
+			590,	-- Frostwall
+			582,	-- Lunarfall
+		},
 		["crs"] = {
+			142062,	-- Madam Gosu [Boralus - Alliance]
 			103791,	-- Madam Gosu [Rogue Class Hall]
+			135709,	-- Madam Goya [Dazar'alor - Horde]
 			100986,	-- Madam Goya [Underbelly]
-			94829, -- Zhang Yeog [Garrison]
-			142062, -- Madam Gosu [Boralus - Alliance]
-			135709, -- Madam Gosu [Dazar'alor - Horde]
+			94829,	-- Zhang Yeoh [Garrison]
 		},
 		["coords"] = {
 			{ 56.71, 46.32, 1161 },	-- Madam Gosu, Boralus
+			{ 57.91, 46.28, 626 },	-- Madam Gosu, Dalaran: Rogue Class Hall
+			{ 71.37, 17.93, 628 },	-- Madam Goya, Dalaran: The Underbelly
+			{ 63.54, 62.68, 862 },	-- Madam Goya, Dazar'alor
+			{ 44.96, 50.07, 590 },	-- Zhang Yeoh, Frostwall
 		},
 		["u"] = 9,
 	}),

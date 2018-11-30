@@ -474,6 +474,7 @@ AllTheThings.Locales.enUS = {
 		[-232] = "Interface\\Icons\\Spell_Shadow_DeathScream",
 		[-233] = "Interface\\Icons\\achievement_zone_arathihighlands_01",		-- Warfront: The Battle for Stromgarde
 		[-234] = "Interface\\Icons\\achievement_zone_arathihighlands_01",		-- Warfront: The Battle for Stromgarde
+		[-235] = "Interface\\Icons\\inv_scroll_05",
 		[-297] = "Interface\\Icons\\inv_letter_17", 							-- Mailbox
 		[-299] = "Interface\\Icons\\achievement_garrisonquests_1000", 			-- Missions
 		[-304] = "Interface\\Icons\\INV_BannerPVP_03",							-- Battlegrounds
@@ -1117,6 +1118,7 @@ AllTheThings.Locales.enUS = {
 		[-232] = BATTLE_PET_BREED_QUALITY4.." - "..FACTION_HORDE,				-- Rares - Horde  [Note: Temp Solution]
 		[-233] = GetSpellInfo(279443),											-- Warfront: The Battle for Stromgarde [Horde]
 		[-234] = GetSpellInfo(279443),											-- Warfront: The Battle for Stromgarde [Alliance]
+		[-235] = AUCTION_CATEGORY_RECIPES,										-- Recipes
 		
 -- Other
 		[-294] = "Killed First",
