@@ -17,11 +17,19 @@ _.PVP =
 							["description"] = "This item was removed in Patch 1.6",
 							["u"] = 2,
 						}),
+						i(19111, { -- Winteraxe Epaulets
+							["description"] = "This item was removed in Patch 1.6",
+							["u"] = 2,
+						}),
 					},
 				}),
 				n(13256, { -- Lokholar the Ice Lord
 					["groups"] = {
 						i(19110, { -- Cold Forged Blade
+							["description"] = "This item was removed in Patch 1.6",
+							["u"] = 2,
+						}),
+						i(19111, { -- Winteraxe Epaulets
 							["description"] = "This item was removed in Patch 1.6",
 							["u"] = 2,
 						}),

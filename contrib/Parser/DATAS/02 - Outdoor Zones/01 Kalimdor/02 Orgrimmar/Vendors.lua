@@ -1386,6 +1386,21 @@ _.Zones =
 							un(2, i(31648)),	    -- High Warlord Ringmail Headpiece
 							un(2, i(31649)),	    -- High Warlord Ringmail Legguards
 							un(2, i(31650)),	    -- High Warlord Ringmail Shoulders
+							un(2, i(28805)),	    -- High Warlord Chain Armor
+							un(2, i(28806)),	    -- High Warlord Chain Gauntlets
+							un(2, i(28808)),	    -- High Warlord Chain Leggings
+							un(2, i(28809)),	    -- High Warlord Chain Spaulders
+							un(2, i(28841)),	    -- High Warlord Linked Armor
+							un(2, i(28842)),	    -- High Warlord Linked Gauntlets
+							un(2, i(28843)),	    -- High Warlord Linked Helm
+							un(2, i(28844)),	    -- High Warlord Linked Leggings
+							un(2, i(28845)),	    -- High Warlord Linked Spaulders
+							un(2, i(16518)),	    -- Blood Guard's Mail Walker (1.4 till 1.11)
+							un(2, i(16519)),	    -- Blood Guard's Mail Grips(1.4 till 1.11)
+							un(2, i(16521)),	    -- Champion's Mail Helm(1.4 till 1.11)
+							un(2, i(16522)),	    -- Legionnaire's Mail Chestpiece (1.4 till 1.11)
+							un(2, i(16523)),	    -- Legionnaire's Mail Leggings (1.4 till 1.11)
+							un(2, i(16524)),	    -- Champion's Mail Shoulders(1.4 till 1.11)
 						},
 						["u"] = 43,
 					},
