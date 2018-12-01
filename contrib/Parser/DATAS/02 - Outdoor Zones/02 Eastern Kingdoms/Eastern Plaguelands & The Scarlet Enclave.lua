@@ -1479,6 +1479,12 @@ _.Zones =
 							un(40, q(5214, {	-- The Great Fras Siabi
 								un(2, i(13171)),	-- Smokey's Lighter
 							})),
+							un(40, q(9211, {	-- The Ice Guard
+								un(2, i(22636)),	-- Ice Guard
+							})),
+							un(40, q(9213, {	-- The Shadow Guard
+								un(2, i(22638)),	-- Shadow Guard
+							})),
 							un(40, q( 6041, {	-- When Smokey Sings, I Get Violent
 								un(2, i(17523)),	-- Smokey's Drape
 								un(2, i(16992)),	-- Smokey's Explosive Launcher

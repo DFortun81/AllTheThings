@@ -392,6 +392,16 @@ _.NeverImplemented =
 		un(1, i(70104)),	-- Unknown
 		un(1, i(45924)),	-- Certificate of Appreciation
 		un(1, i(34548)),	-- Cache of the Shattered Sun
+		un(1, i(8502)),	-- Bronze Lotterybox
+		un(1, i(8503)),	-- Heavy Bronze Lotterybox
+		un(1, i(8504)),	-- Iron Lotterybox
+		un(1, i(8505)),	-- Heavy Iron Lotterybox
+		un(1, i(8506)),	-- Mithril Lotterybox
+		un(1, i(8507)),	-- Heavy Mithril Lotterybox
+		un(1, i(13247)),	-- Quartermaster Zigris' Footlocker
+		un(1, i(19804)),	-- Pale Ghoulfish
+		un(1, i(21135)),	-- Broken Assassin's Throwing Axe
+		
 	}),
 	n(-160, { -- Mounts
 		un(1, a(model(9475, i(13325)))),		-- Fluorescent Green Mechanostrider (Never added in Game)
@@ -640,6 +650,8 @@ _.NeverImplemented =
 		un(1, i(100898)),	-- Kull Bloodseeker's Reward
 		un(1, i(109012)),	-- Frostwolf Ancestral Totem
 		un(1, i(124644)),	-- Unknown
+		un(1, i(93660)),	-- Thunder-Laced Egg
+		un(1, i(92563)),	-- The Eye of the Storm
 	}),
 	n(-161, { -- Toys
 		un(1, i(140779)),	-- Falanaar Echo
@@ -663,7 +675,7 @@ _.NeverImplemented =
 			un(1, i(32189)),    -- Chancellor's Ripper
 			un(1, i(38243)),    -- Ravaging Steelfist
 		}),
-		n(-34, { -- Guns
+		n(-345, { -- Guns
 			un(1, i(49455)),	-- Blunderbuss of Deforestation
 			un(1, i(38246)),	-- Skull-Forged Blunderbuss
 		}),

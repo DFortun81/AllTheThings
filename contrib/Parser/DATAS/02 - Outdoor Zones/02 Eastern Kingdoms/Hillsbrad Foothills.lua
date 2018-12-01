@@ -299,7 +299,9 @@ _.Zones =
 --					q(43285),	-- Invasion: Hillsbrad Foothills (REMOVED, from Legion pre-patch)
 --					q(42805),	-- Invasion: Hillsbrad Foothills (REMOVED, from Legion pre-patch)
 					qr(q(8249, {	-- Junkboxes Needed
-						["qg"] = 7323,	-- Winstone Wolfe
+						un(2, i(20086, {	-- Broken Dusksteel Throwing Knife
+							["qg"] = 7323,	-- Winstone Wolfe
+						})),
 					})),
 					qh(28354, { -- Kasha Will Fly Again
 						["groups"] = {

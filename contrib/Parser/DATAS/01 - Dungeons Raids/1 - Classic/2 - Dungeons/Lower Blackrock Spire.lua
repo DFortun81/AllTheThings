@@ -137,6 +137,7 @@ _.Instances =
 						i(22231),	-- Kayser's Boots of Precision
 						un(7, i(16676)),	-- Beaststalker's Gloves
 						un(2, i(13175)),	-- Voone's Twitchbow
+						un(2, i(13173)),	-- Broken Flightblade Throwing Axe
 					})),
 					n(  9596, {			-- Bannok Grimaxe
 						["groups"] = {	

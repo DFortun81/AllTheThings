@@ -119,6 +119,15 @@ _.Zones =
 									un(7, i(20721)),	-- Band of the Cultist
 								})),
 							})),
+							un(40, q(8857, { 	-- Secrets of the Colossus - Ashi - Was only possible during the 10 hours of AQ opening
+								un(2, i(21528)), 	-- Colossal Bag of Loot
+							})),
+							un(40, q(8858, { 	-- Secrets of the Colossus - Regal - Was only possible during the 10 hours of AQ opening
+								un(2, i(21528)), 	-- Colossal Bag of Loot
+							})),
+							un(40, q(8859, { 	-- Secrets of the Colossus - Zora - Was only possible during the 10 hours of AQ opening
+								un(2, i(21528)), 	-- Colossal Bag of Loot
+							})),
 							un(40, q(8348, { 	-- Signet of the Dukes
 								un(2, i(20601, { 	-- Sack of Spoils
 									un(7, i(20696)), 	-- Crystal Spiked Maul
@@ -136,6 +145,12 @@ _.Zones =
 								["sourceQuest"] = 8314,	-- Unraveling the Mystery
 								["u"] = 40,	-- Legacy Quest
 							},
+							--un(40, qr(8302, {	-- The Hand of the Righteous (until Neutral)
+							--	un(2, i(20403)),	-- 	Proxy of Nozdormu
+							--})),
+							un(40, qa(8301, {	-- The Path of the Righteous
+								un(2, i(20402)),	-- 	Agent of Nozdormu
+							})),
 							un(40, q(9023, {	-- The Perfect Poison
 								un(2, i(22348)),	-- Doomulus Prime
 								un(2, i(22347)),	-- Fahrad's Reloading Repeater
