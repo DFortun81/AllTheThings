@@ -242,7 +242,6 @@ _.NeverImplemented =
 			un(1, i(38388)),	    -- Cap of the North
 			un(1, i(38389)),	    -- Comfy Raccoonskin Hat
 			un(1, i(38390)),	    -- The Rugged Marksman
-			un(1, i(6733)),	    -- Ironforge Gauntlets (Wow comments claims it was ingame, but found no proof whatsoever)
 			un(1, i(80947)),	    -- Peacebreaker's Chain Helm
 			un(1, i(80951)),	    -- Peacebreaker's Ringmail Helm
 			un(1, i(81000)),	    -- Ringmail Armor of Eminent Domain (not added version)
@@ -724,7 +723,6 @@ _.NeverImplemented =
 	un(1, i(20522)),	-- Feral Staff
 	un(1, i(20003)),	-- Devilsaur Claws
 	un(1, i(20005)),	-- Devilsaur Claws
-	un(1, i(12795)),	-- Blood Talon [Was going to be a Blacksmithing item]
 	un(1, i(3222)),	-- Wicked Dagger
 	un(1, i(38245)),	-- Crystalline Providence
 	un(1, i(38248)),	-- Torch of the Fallen Souls
@@ -764,10 +762,7 @@ _.NeverImplemented =
 	un(1, i(33964)), -- Helm of the Stormcaller - Never Added
 	un(3, i(19160)), -- Contest Winner's Tabard   [NOTE: Temporarily here until we get groups working with un/u tag again}
 	un(1, i(2664)),	-- Spinner Fang
-	un(1, i(8195)),	-- Nightscape Cloak										(Pattern never actually went live)	
-	un(1, i(12772)),	-- Inlaid Thorium Hammer								(Never added in Game)
-	un(1, i(12764)),	-- Thorium Greatsword									(Never added in Game)
-	un(1, i(12779)),	-- Rune Edge											(Never added in Game)
+	un(1, i(8195)),	-- Nightscape Cloak										(Pattern never actually went live)
 	un(15, i(31279)),	-- Enchanted Illidari Tabard [Temp Quest Item]
 	un(1, i(48769)),	-- Runetotem's Handguards of Conquest
 	un(1, i(48770)),	-- Runetotem's Headpiece of Conquest

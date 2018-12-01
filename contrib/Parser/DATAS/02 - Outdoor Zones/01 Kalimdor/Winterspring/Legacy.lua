@@ -17,6 +17,34 @@ _.Zones =
 								["description"] = "The quest that teaches this recipe was removed, but Engineers who learned it before can still craft this pet.  Tranquil Mechanical Yeti can also be found inside Blingtron boxes.",
 							})),
 							un(40, q(28516)),	-- Centuries of Suffering
+							{	-- Fiery Plate Gauntlets
+								["questID"] = 5124,	-- Fiery Plate Gauntlets
+								["qg"] = 10637, -- Malyfous Darkhammer
+								["sourceQuests"] = { 5103 }, -- Hot Fiery Death
+								["requireSkill"] = 164,	-- Blacksmithing
+								["u"] = 40,
+								["g"] = {
+									{	-- Plans: Fiery Plate Gauntlets
+										["itemID"] = 12699, -- Plans: Fiery Plate Gauntlets
+										["u"] = 2,
+									},
+									{	-- Fiery Plate Gauntlets
+										["itemID"] = 12631, -- Fiery Plate Gauntlets
+										["u"] = 8,
+									},
+								},
+							},
+							{	-- Corruption
+								["questID"] = 5307,	-- Corruption
+								["qg"] = 11193, -- Seril Scourgebane
+								["u"] = 40,
+								["g"] = {
+									{	-- Plans: Blazing Rapier
+										["itemID"] = 12825, -- Plans: Blazing Rapier
+										["collectible"] = false,	-- If we mark this unobtainable, u = 2, the recipe that is available from the plans 142358 will be incorrectly marked unobtainable in the profession window since they share the same recipeID
+									},
+								},
+							},
 							un(40, qa(4970)),	-- Frostsaber Provisions
 							un(40, q( 5121, {	-- High Chief Winterfall
 								un(2, i(15784)),	-- Crystal Breeze Mantle
@@ -41,9 +69,32 @@ _.Zones =
 								un(2, i(15783)),	-- Beasthunter Dagger
 								un(2, i(15782)),	-- Beaststalker Blade
 							})),
+							{	-- Snakestone of the Shadow Huntress
+								["questID"] = 5306,	-- Snakestone of the Shadow Huntress
+								["qg"] = 11192, -- Kilram
+								["u"] = 40,
+								["g"] = {
+									{	-- Plans: Dawn's Edge
+										["itemID"] = 12821, -- Plans: Dawn's Edge
+										["collectible"] = false,	-- If we mark this unobtainable, u = 2, the recipe that is available from the plans 142357 will be incorrectly marked unobtainable in the profession window since they share the same recipeID
+									},
+								},
+							},
 							un(40, q( 4842, {	-- Strange Sources
 								un(2, i(15789)),	-- Deep River Cloak
 							})),
+							{	-- Sweet Serenity
+								["questID"] = 5305,	-- Sweet Serenity
+								["qg"] = 11191, -- Lilith the Lithe
+								["requireSkill"] = 164,	-- Blacksmithing
+								["u"] = 40,
+								["g"] = {
+									{	-- Plans: Enchanted Battlehammer
+										["itemID"] = 12824, -- Plans: Enchanted Battlehammer
+										["u"] = 2,
+									},
+								},
+							},
 							un(40, qa(5253, {	-- The Crystal of Zin-Malor
 								un(2, i(15795)),	-- Emerald Mist Gauntlets
 								un(2, i(15792)),	-- Plow Wood Spaulders

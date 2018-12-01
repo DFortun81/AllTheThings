@@ -127,6 +127,9 @@ _.Craftables =
 			}),
 		}),
 		n(-181, { -- Blacksmithing
+			n(-160, { -- Mounts
+				i(137686), -- Steelbound Harness
+			}),
 			i(146667),	-- Rethu's Incessant Courage
 			i(123913),	-- Demonsteel Helm
 			i(123915),	-- Demonsteel Pauldrons

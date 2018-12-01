@@ -12,6 +12,256 @@ _.Craftables =
 			}),
 		}),
 		n(-181, { 	-- Blacksmithing
+			filter(20, {	-- Daggers
+				{	-- Big Bronze Knife
+					["itemID"] = 3848,	-- Big Bronze Knife
+				},
+				{	-- Black Amnesty
+					["itemID"] = 19166,	-- Black Amnesty
+				},
+				{	-- Deadly Bronze Poniard
+					["itemID"] = 3490,	-- Deadly Bronze Poniard
+				},
+				{	-- Ebon Shiv
+					["itemID"] = 7947,	-- Ebon Shiv
+				},
+				{	-- Glinting Steel Dagger
+					["itemID"] = 12259,	-- Glinting Steel Dagger
+				},
+				{	-- Heartseeker
+					["itemID"] = 12783,	-- Heartseeker
+				},
+				{	-- Pearl-Handled Dagger
+					["itemID"] = 5540,	-- Pearl-Handled Dagger
+				},
+				{	-- Searing Golden Blade
+					["itemID"] = 12260,	-- Searing Golden Blade
+				},
+			}),
+			filter(21, {	-- 1H Axes
+				{	-- Annihilator
+					["itemID"] = 12798,	-- Annihilator
+				},
+				{	-- Blue Glittering Axe
+					["itemID"] = 7942,	-- Blue Glittering Axe
+				},
+				{	-- Bronze Axe
+					["itemID"] = 2849,	-- Bronze Axe
+				},
+				{	-- Dawn's Edge
+					["itemID"] = 12774,	-- Dawn's Edge
+				},
+				{	-- Dark Iron Destroyer
+					["itemID"] = 17016,	-- Dark Iron Destroyer
+				},
+				{	-- Edge of Winter
+					["itemID"] = 17704,	-- Edge of Winter
+				},
+				{	-- Heavy Mithril Axe
+					["itemID"] = 7941,	-- Heavy Mithril Axe
+				},
+				{	-- Ornate Thorium Handaxe
+					["itemID"] = 12773,	-- Ornate Thorium Handaxe
+				},
+				{	-- Rune Edge
+					["itemID"] = 12779,	-- Rune Edge
+					["u"] = 1,
+				},
+				{	-- Thick War Axe
+					["itemID"] = 3489,	-- Thick War Axe
+				},
+			}),
+			filter(22, {	-- 2H Axes
+				{	-- Arcanite Reaper
+					["itemID"] = 12784,	-- Arcanite Reaper
+				},
+				{	-- Bleakwood Hew
+					["itemID"] = 12769,	-- Bleakwood Hew
+				},
+				{	-- Bronze Battle Axe
+					["itemID"] = 7958,	-- Bronze Battle Axe
+				},
+				{	-- Copper Battle Axe
+					["itemID"] = 3488,	-- Copper Battle Axe
+				},
+				{	-- Dark Iron Sunderer
+					["itemID"] = 11607,	-- Dark Iron Sunderer
+				},
+				{	-- Huge Thorium Battleaxe
+					["itemID"] = 12775,	-- Huge Thorium Battleaxe
+				},
+				{	-- Massive Iron Axe
+					["itemID"] = 3855,	-- Massive Iron Axe
+				},
+				{	-- Nightfall
+					["itemID"] = 19169,	-- Nightfall
+				},
+				{	-- Shadow Crescent Axe
+					["itemID"] = 3856,	-- Shadow Crescent Axe
+				},
+			}),
+			filter(23, {	-- 1H Maces
+				{	-- Big Black Mace
+					["itemID"] = 7945,	-- Big Black Mace
+				},
+				{	-- Bronze Mace
+					["itemID"] = 2848,	-- Bronze Mace
+				},
+				{	-- Ebon Hand
+					["itemID"] = 19170,	-- Ebon Hand
+				},
+				{	-- Heavy Bronze Mace
+					["itemID"] = 3491,	-- Heavy Bronze Mace
+				},
+				{	-- Iridescent Hammer
+					["itemID"] = 5541,	-- Iridescent Hammer
+				},
+				{	-- Masterwork Stormhammer
+					["itemID"] = 12794,	-- Masterwork Stormhammer
+					["u"] = 8,
+				},
+				{	-- Mighty Iron Hammer
+					["itemID"] = 3492,	-- Mighty Iron Hammer
+				},
+				{	-- Persuader
+					["itemID"] = 22384,	-- Persuader
+				},
+				{	-- Runed Mithril Hammer
+					["itemID"] = 7946,	-- Runed Mithril Hammer
+				},
+				{	-- Serenity	
+					["itemID"] = 12781,	-- Serenity
+				},
+				{	-- The Shatterer
+					["itemID"] = 7954,	-- The Shatterer
+					["u"] = 8,
+				},
+				{	-- Volcanic Hammer
+					["itemID"] = 12792,	-- Volcanic Hammer
+				},
+			}),
+			filter(24, {	-- 2H Maces
+				{	-- Bronze Warhammer
+					["itemID"] = 7956,	-- Bronze Warhammer
+				},
+				{	-- Dark Iron Pulverizer
+					["itemID"] = 11608,	-- Dark Iron Pulverizer
+				},
+				{	-- Enchanted Battlehammer
+					["itemID"] = 12776,	-- Enchanted Battlehammer
+					["u"] = 8,
+				},
+				{	-- Golden Iron Destroyer
+					["itemID"] = 3852,	-- Golden Iron Destroyer
+				},
+				{	-- Hammer of the Titans
+					["itemID"] = 12796,	-- Hammer of the Titans
+				},
+				{	-- Inlaid Thorium Hammer
+					["itemID"] = 12772,	-- Inlaid Thorium Hammer
+					["u"] = 1,
+				},
+				{	-- Solid Iron Maul
+					["itemID"] = 3851,	-- Solid Iron Maul
+				},
+				{	-- Sulfuron Hammer
+					["itemID"] = 17193,	-- Sulfuron Hammer
+				},
+			}),
+			filter(25, {	-- 1H Swords
+				{	-- Blackguard
+					["itemID"] = 19168,	-- Blackguard
+				},
+				{	-- Blazing Rapier
+					["itemID"] = 12777,	-- Blazing Rapier
+				},
+				{	-- Bronze Shortsword
+					["itemID"] = 2850,	-- Bronze Shortsword
+				},
+				{	-- Dark Iron Reaver
+					["itemID"] = 17015,	-- Dark Iron Reaver
+				},
+				{	-- Dazzling Mithril Rapier
+					["itemID"] = 7944,	-- Dazzling Mithril Rapier
+				},
+				{	-- Frostguard
+					["itemID"] = 12797,	-- Frostguard
+				},
+				{	-- Hardened Iron Shortsword
+					["itemID"] = 3849,	-- Hardened Iron Shortsword
+				},
+				{	-- Heavy Copper Longsword
+					["itemID"] = 33791,	-- Heavy Copper Longsword
+				},
+				{	-- Jade Serpentblade
+					["itemID"] = 3850,	-- Jade Serpentblade
+				},
+				{	-- Light Earthforged Blade
+					["itemID"] = 30071,	-- Light Earthforged Blade
+				},
+				{	-- Phantom Blade
+					["itemID"] = 7961,	-- Phantom Blade
+				},
+				{	-- Sageblade
+					["itemID"] = 22383,	-- Sageblade
+				},
+				{	-- Wicked Mithril Blade
+					["itemID"] = 7943,	-- Wicked Mithril Blade
+				},
+			}),
+			filter(26, {	-- 2H Swords
+				{	-- Arcanite Champion
+					["itemID"] = 12790,	-- Arcanite Champion
+				},
+				{	-- Bronze Greatsword
+					["itemID"] = 7957,	-- Bronze Greatsword
+				},
+				{	-- Corruption
+					["itemID"] = 12782,	-- Corruption
+				},
+				{	-- Frost Tiger Blade
+					["itemID"] = 3854,	-- Frost Tiger Blade
+				},
+				{	-- Heavy Copper Broadsword
+					["itemID"] = 3487,	-- Heavy Copper Broadsword
+				},
+				{	-- Heavy Copper Maul
+					["itemID"] = 6214,	-- Heavy Copper Maul
+				},
+				{	-- Moonsteel Broadsword
+					["itemID"] = 3853,	-- Moonsteel Broadsword
+				},
+				{	-- Thorium Greatsword
+					["itemID"] = 12764,	-- Thorium Greatsword
+					["u"] = 1,
+				},
+				{	-- Truesilver Champion
+					["itemID"] = 7960,	-- Truesilver Champion
+					["u"] = 8,
+				},
+			}),
+			filter(29, {	-- Polearms
+				{	-- Blackfury
+					["itemID"] = 19167,	-- Blackfury
+				},
+				{	-- Blight
+					["itemID"] = 7959,	-- Blight
+				},
+				{	-- Darkspear
+					["itemID"] = 12802,	-- Darkspear
+				},
+			}),
+			filter(34, {	-- First Weapons
+				{	-- Blood Talon
+					["itemID"] = 12795,	-- Blood Talon
+					["u"] = 1,
+				},
+			}),
+			filter(8, {		-- Shield
+				{	-- Jagged Obsidian Shield
+					["itemID"] = 22198,	-- Jagged Obsidian Shield
+				},
+			}),
 			n(-320, {		-- Head
 				{	-- Barbaric Iron Helm
 					["itemID"] = 7915,	-- Barbaric Iron Helm
@@ -224,150 +474,249 @@ _.Craftables =
 					["itemID"] = 12624,	-- Wildthorn Mail
 				},
 			}),
-		
-			n(-319, { 	-- Weapons
-				un(8, i(12776)),	-- Enchanted Battlehammer
-				un(8, i(12794)),	-- Masterwork Stormhammer
-				un(8, i(7954)),		-- The Shatterer
-				un(8, i(7960)),		-- Truesilver Champion
-				i(12798),	-- Annihilator
-				i(12790),	-- Arcanite Champion
-				i(12784),	-- Arcanite Reaper
-				i(7945),	-- Big Black Mace
-				i(3848),	-- Big Bronze Knife
-				i(19166),	-- Black Amnesty
-				i(19167),	-- Blackfury
-				i(19168),	-- Blackguard
-				i(12777),	-- Blazing Rapier
-				i(12769),	-- Bleakwood Hew
-				i(7959),	-- Blight
-				i(7942),	-- Blue Glittering Axe
-				i(2849),	-- Bronze Axe
-				i(7958),	-- Bronze Battle Axe
-				i(7957),	-- Bronze Greatsword
-				i(2848),	-- Bronze Mace
-				i(2850),	-- Bronze Shortsword
-				i(7956),	-- Bronze Warhammer
-				i(3488),	-- Copper Battle Axe
-				i(12782),	-- Corruption
-				i(17016),	-- Dark Iron Destroyer
-				i(11608),	-- Dark Iron Pulverizer
-				i(17015),	-- Dark Iron Reaver
-				i(11607),	-- Dark Iron Sunderer
-				i(12802),	-- Darkspear
-				i(12774),	-- Dawn's Edge
-				i(7944),	-- Dazzling Mithril Rapier
-				i(3490),	-- Deadly Bronze Poniard
-				i(19170),	-- Ebon Hand
-				i(7947),	-- Ebon Shiv
-				i(17704),	-- Edge of Winter
-				i(3854),	-- Frost Tiger Blade
-				i(12797),	-- Frostguard
-				i(12259),	-- Glinting Steel Dagger
-				i(3852),	-- Golden Iron Destroyer
-				i(12796),	-- Hammer of the Titans
-				i(3849),	-- Hardened Iron Shortsword
-				i(12783),	-- Heartseeker
-				i(3491),	-- Heavy Bronze Mace
-				i(3487),	-- Heavy Copper Broadsword
-				i(6214),	-- Heavy Copper Maul
-				i(7941),	-- Heavy Mithril Axe
-				i(12775),	-- Huge Thorium Battleaxe
-				i(5541),	-- Iridescent Hammer
-				i(3850),	-- Jade Serpentblade
-				i(22198),	-- Jagged Obsidian Shield
-				i(3855),	-- Massive Iron Axe
-				i(3492),	-- Mighty Iron Hammer
-				i(3853),	-- Moonsteel Broadsword
-				i(19169),	-- Nightfall
-				i(12773),	-- Ornate Thorium Handaxe
-				i(5540),	-- Pearl-Handled Dagger
-				i(22384),	-- Persuader
-				i(7961),	-- Phantom Blade
-				i(7946),	-- Runed Mithril Hammer
-				i(22383),	-- Sageblade
-				i(12260),	-- Searing Golden Blade
-				i(12781),	-- Serenity
-				i(3856),	-- Shadow Crescent Axe
-				i(3851),	-- Solid Iron Maul
-				i(17193),	-- Sulfuron Hammer
-				i(3489),	-- Thick War Axe
-				i(12792),	-- Volcanic Hammer
-				i(7943),	-- Wicked Mithril Blade
+			n(-327, {		-- Hands
+				{	-- Barbaric Iron Gloves
+					["itemID"] = 7917,	-- Barbaric Iron Gloves
+				},
+				{	-- Black Grasp of the Destroyer
+					["itemID"] = 22194,	-- Black Grasp of the Destroyer
+				},
+				{	-- Bloodsoul Gauntlets
+					["itemID"] = 19692,	-- Bloodsoul Gauntlets
+					["u"] = 8,
+				},
+				{	-- Dark Iron Gauntlets
+					["itemID"] = 19164,	-- Dark Iron Gauntlets
+				},
+				{	-- Darkrune Gauntlets
+					["itemID"] = 20549,	-- Darkrune Gauntlets
+				},
+				{	-- Fiery Plate Gauntlets
+					["itemID"] = 12631, -- Fiery Plate Gauntlets
+					["u"] = 8,
+				},
+				{	-- Gemmed Copper Gauntlets
+					["itemID"] = 3474,	-- Gemmed Copper Gauntlets
+				},
+				{	-- Gloves of the Dawn
+					["itemID"] = 19057,	-- Gloves of the Dawn
+				},
+				{	-- Golden Scale Gauntlets
+					["itemID"] = 9366,	-- Golden Scale Gauntlets
+					["u"] = 8,
+				},
+				{	-- Green Iron Gauntlets
+					["itemID"] = 3485,	-- Green Iron Gauntlets
+				},
+				{	-- Heavy Mithril Gauntlet
+					["itemID"] = 7919,	-- Heavy Mithril Gauntlet
+				},
+				{	-- Icebane Gauntlets
+					["itemID"] = 22670,	-- Icebane Gauntlets
+					["u"] = 8,
+				},
+				{	-- Ironforge Gauntlets
+					["itemID"] = 6733,	-- Ironforge Gauntlets
+					["u"] = 1,
+				},
+				{	-- Ironvine Gloves
+					["itemID"] = 22763,	-- Ironvine Gloves
+				},
+				{	-- Mithril Scale Gloves
+					["itemID"] = 7925,	-- Mithril Scale Gloves
+					["u"] = 1,
+				},
+				{	-- Ornate Mithril Gloves
+					["itemID"] = 7927,	-- Ornate Mithril Gloves
+					["u"] = 8,
+				},
+				{	-- Radiant Gloves
+					["itemID"] = 12418,	-- Radiant Gloves
+				},
+				{	-- Runed Copper Gauntlets
+					["itemID"] = 3472,	-- Runed Copper Gauntlets
+				},
+				{	-- Silvered Bronze Gauntlets
+					["itemID"] = 3483,	-- Silvered Bronze Gauntlets
+				},
+				{	-- Storm Gauntlets
+					["itemID"] = 12632,	-- Storm Gauntlets
+				},
+				{	-- Stronghold Gauntlets
+					["itemID"] = 12639,	-- Stronghold Gauntlets
+				},
+				{	-- Truesilver Gauntlets
+					["itemID"] = 7938,	-- Truesilver Gauntlets
+					["u"] = 8,
+				},
 			}),
-			n(-45, { 	-- Mail
-				un(8, i(19692)),	-- Bloodsoul Gauntlets
-				un(8, i(9366)),		-- Golden Scale Gauntlets
-				un(8, i(7929)),		-- Orcish War Leggings
-				i(7916),	-- Barbaric Iron Boots
-				i(7917),	-- Barbaric Iron Gloves
-				i(22194),	-- Black Grasp of the Destroyer
-				i(16989),	-- Fiery Chain Girdle
-				i(3474),	-- Gemmed Copper Gauntlets
-				i(3847),	-- Golden Scale Boots
-				i(6040),	-- Golden Scale Bracers
-				i(3843),	-- Golden Scale Leggings
-				i(3484),	-- Green Iron Boots
-				i(3835),	-- Green Iron Bracers
-				i(3485),	-- Green Iron Gauntlets
-				i(3842),	-- Green Iron Leggings
-				i(19043),	-- Heavy Timbermaw Belt
-				i(19048),	-- Heavy Timbermaw Boots
-				i(22195),	-- Light Obsidian Belt
-				i(7924),	-- Mithril Scale Bracers
-				i(7920),	-- Mithril Scale Pants
-				i(2868),	-- Patterned Bronze Bracers
-				i(3846),	-- Polished Steel Boots
-				i(12416),	-- Radiant Belt
-				i(12419),	-- Radiant Boots
-				i(12418),	-- Radiant Gloves
-				i(12420),	-- Radiant Leggings
-				i(6350),	-- Rough Bronze Boots
-				i(2865),	-- Rough Bronze Leggings
-				i(2857),	-- Runed Copper Belt
-				i(2854),	-- Runed Copper Bracers
-				i(3472),	-- Runed Copper Gauntlets
-				i(3473),	-- Runed Copper Pants
-				i(3482),	-- Silvered Bronze Boots
-				i(3483),	-- Silvered Bronze Gauntlets
-				i(10423),	-- Silvered Bronze Leggings
-				i(12632),	-- Storm Gauntlets
+			n(-326, {		-- Wrist
+				{	-- Dark Iron Bracers
+					["itemID"] = 17014,	-- Dark Iron Bracers
+				},
+				{	--	Golden Scale Bracers
+					["itemID"] = 6040,	-- Golden Scale Bracers
+				},
+				{	-- Green Iron Bracers
+					["itemID"] = 3835,	-- Green Iron Bracers
+				},
+				{	-- Icebane Bracers
+					["itemID"] = 22671,	-- Icebane Bracers
+					["u"] = 8,
+				},
+				{	-- Imperial Plate Bracers
+					["itemID"] = 12425,	-- Imperial Plate Bracers
+				},
+				{	-- Mithril Scale Bracers
+					["itemID"] = 7924,	-- Mithril Scale Bracers
+				},
+				{	-- Patterned Bronze Bracers
+					["itemID"] = 2868,	-- Patterned Bronze Bracers
+				},
+				{	-- Rough Bronze Bracers
+					["itemID"] = 2867,	-- Rough Bronze Bracers
+					["u"] = 1,
+				},
+				{	-- Runed Copper Bracers
+					["itemID"] = 2854,	-- Runed Copper Bracers
+				},
+				{	-- Thorium Bracers
+					["itemID"] = 12408,	-- Thorium Bracers
+				},
 			}),
-			n(-46, { 	-- Plate
-				un(8, i(19694)),	-- Darksoul Leggings
-				un(8, i(12619)),	-- Enchanted Thorium Leggings
-				un(8, i(12631)),	-- Fiery Plate Gauntlets
-				un(8, i(22671)),	-- Icebane Bracers
-				un(8, i(22670)),	-- Icebane Gauntlets
-				un(8, i(7936)),		-- Ornate Mithril Boots
-				un(8, i(7927)),		-- Ornate Mithril Gloves
-				un(8, i(7926)),		-- Ornate Mithril Pants
-				un(8, i(7938)),		-- Truesilver Gauntlets
-				i(20039),	-- Dark Iron Boots
-				i(17014),	-- Dark Iron Bracers
-				i(19164),	-- Dark Iron Gauntlets
-				i(17013),	-- Dark Iron Leggings
-				i(20549),	-- Darkrune Gauntlets
-				i(19051),	-- Girdle of the Dawn
-				i(19057),	-- Gloves of the Dawn
-				i(7933),	-- Heavy Mithril Boots
-				i(7919),	-- Heavy Mithril Gauntlet
-				i(7921),	-- Heavy Mithril Pants
-				i(22197),	-- Heavy Obsidian Belt
-				i(12424),	-- Imperial Plate Belt
-				i(12426),	-- Imperial Plate Boots
-				i(12425),	-- Imperial Plate Bracers
-				i(12429),	-- Imperial Plate Leggings
-				i(22764),	-- Ironvine Belt
-				i(22763),	-- Ironvine Gloves
-				i(12611),	-- Runic Plate Boots
-				i(12614),	-- Runic Plate Leggings
-				i(12639),	-- Stronghold Gauntlets
-				i(12406),	-- Thorium Belt
-				i(12409),	-- Thorium Boots
-				i(12408),	-- Thorium Bracers
-				i(12414),	-- Thorium Leggings
-				i(22385),	-- Titanic Leggings
+			n(-328, {		-- Waist
+				{	-- Fiery Chain Girdle
+					["itemID"] = 16989,	-- Fiery Chain Girdle
+				},
+				{	-- Girdle of the Dawn
+					["itemID"] = 19051,	-- Girdle of the Dawn
+				},
+				{	-- Heavy Obsidian Belt
+					["itemID"] = 22197,	-- Heavy Obsidian Belt
+				},
+				{	-- Heavy Timbermaw Belt
+					["itemID"] = 19043,	-- Heavy Timbermaw Belt
+				},
+				{	-- Imperial Plate Belt
+					["itemID"] = 12424,	-- Imperial Plate Belt
+				},
+				{	-- Ironvine Belt
+					["itemID"] = 22764,	-- Ironvine Belt
+				},
+				{	-- Light Obsidian Belt
+					["itemID"] = 22195,	-- Light Obsidian Belt
+				},
+				{	-- Radiant Belt
+					["itemID"] = 12416,	-- Radiant Belt
+				},
+				{	-- Runed Copper Belt
+					["itemID"] = 2857,	-- Runed Copper Belt
+				},
+				{	-- Thorium Belt
+					["itemID"] = 12406,	-- Thorium Belt
+				},
+			}),
+			n(-329, {		-- Legs
+				{	-- Dark Iron Leggings
+					["itemID"] = 17013,	-- Dark Iron Leggings
+				},
+				{	-- Darksoul Leggings
+					["itemID"] = 19694,	-- Darksoul Leggings
+					["u"] = 8,
+				},
+				{	-- Enchanted Thorium Leggings
+					["itemID"] = 12619,	-- Enchanted Thorium Leggings
+					["u"] = 8,
+				},
+				{	-- Golden Scale Leggings
+					["itemID"] = 3843,	-- Golden Scale Leggings
+				},
+				{	-- Green Iron Leggings
+					["itemID"] = 3842,	-- Green Iron Leggings
+				},
+				{	-- Heavy Mithril Pants
+					["itemID"] = 7921,	-- Heavy Mithril Pants
+				},
+				{	-- Imperial Plate Leggings
+					["itemID"] = 12429,	-- Imperial Plate Leggings
+				},
+				{	-- Mithril Scale Pants
+					["itemID"] = 7920,	-- Mithril Scale Pants
+				},
+				{	-- Orcish War Leggings
+					["itemID"] = 7929,	-- Orcish War Leggings
+					["u"] = 8,
+				},
+				{	-- Ornate Mithril Pants
+					["itemID"] = 7926,	-- Ornate Mithril Pants
+					["u"] = 8,
+				},
+				{	-- Radiant Leggings
+					["itemID"] = 12420,	-- Radiant Leggings
+				},
+				{	-- Rough Bronze Leggings
+					["itemID"] = 2865,	-- Rough Bronze Leggings
+				},
+				{	-- Runed Copper Pants
+					["itemID"] = 3473,	-- Runed Copper Pants
+				},
+				{	-- Runic Plate Leggings
+					["itemID"] = 12614,	-- Runic Plate Leggings
+				},
+				{	-- Silvered Bronze Leggings
+					["itemID"] = 10423,	-- Silvered Bronze Leggings
+				},
+				{	-- Thorium Leggings
+					["itemID"] = 12414,	-- Thorium Leggings
+				},
+				{	-- Titanic Leggings
+					["itemID"] = 22385,	-- Titanic Leggings
+				},
+			}),
+			n(-330, {		-- Feet
+				{	-- Barbaric Iron Boots
+					["itemID"] = 7916,	-- Barbaric Iron Boots
+				},
+				{	-- Dark Iron Boots
+					["itemID"] = 20039,	-- Dark Iron Boots
+				},
+				{	-- Golden Scale Boots
+					["itemID"] = 3847,	-- Golden Scale Boots
+				},
+				{	-- Green Iron Boots
+					["itemID"] = 3484,	-- Green Iron Boots
+				},
+				{	-- Heavy Mithril Boots
+					["itemID"] = 7933,	-- Heavy Mithril Boots
+				},
+				{	-- Heavy Timbermaw Boots
+					["itemID"] = 19048,	-- Heavy Timbermaw Boots
+				},
+				{	-- Imperial Plate Boots
+					["itemID"] = 12426,	-- Imperial Plate Boots
+				},
+				{	-- Ornate Mithril Boots
+					["itemID"] = 7936,	-- Ornate Mithril Boots
+					["u"] = 8,
+				},
+				{	-- Polished Steel Boots
+					["itemID"] = 3846,	-- Polished Steel Boots
+				},
+				{	-- Radiant Boots
+					["itemID"] = 12419,	-- Radiant Boots
+				},
+				{	-- Rough Bronze Boots
+					["itemID"] = 6350,	-- Rough Bronze Boots
+				},
+				{	-- Runic Plate Boots
+					["itemID"] = 12611,	-- Runic Plate Boots
+				},
+				{	-- Silvered Bronze Boots
+					["itemID"] = 3482,	-- Silvered Bronze Boots
+				},
+				{	-- Thorium Boots
+					["itemID"] = 12409,	-- Thorium Boots
+				},
 			}),
 		}),
 		n(-182, { 	-- Enchanting

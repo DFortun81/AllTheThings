@@ -93,7 +93,7 @@ _.Zones =
 										["g"] = {
 											{	-- Plans: Golden Scale Gauntlets
 												["itemID"] = 9367, -- Plans: Golden Scale Gauntlets
-												["u"] = 2,
+												["u"] = 7,
 											},
 										},
 									},

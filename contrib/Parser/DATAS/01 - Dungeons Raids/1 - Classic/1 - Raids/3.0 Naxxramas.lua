@@ -73,7 +73,7 @@ _.Instances = { tier(1, {	-- Classic
 				},
 			}),
 			n(-17, { 	-- Quests
-				{
+				{	-- Echoes of War
 					["questID"] = 9033,	-- Echoes of War
 					["sourceQuests"] = {
 						9121,	-- The Dread Citadel - Naxxramas
@@ -83,7 +83,7 @@ _.Instances = { tier(1, {	-- Classic
 					["qg"] = 16115,	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
 					["u"] = 40,
 				},
-				{
+				{	-- Glacial Cloak
 					["questID"] = 9237,	-- Glacial Cloak
 					["sourceQuest"] = 9233,	-- Omarion's Handbook
 					["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
@@ -92,7 +92,7 @@ _.Instances = { tier(1, {	-- Classic
 						un(8, i(22658)),	-- Glacial Cloak
 					},
 				},
-				{
+				{	-- Glacial Gloves
 					["questID"] = 9239,	-- Glacial Gloves
 					["sourceQuest"] = 9233,	-- Omarion's Handbook
 					["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
@@ -101,7 +101,7 @@ _.Instances = { tier(1, {	-- Classic
 						un(8, i(22654)),	-- Glacial Gloves
 					},
 				},
-				{
+				{	-- Glacial Vest
 					["questID"] = 9240,	-- Glacial Vest
 					["sourceQuest"] = 9233,	-- Omarion's Handbook
 					["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
@@ -110,7 +110,7 @@ _.Instances = { tier(1, {	-- Classic
 						un(8, i(22652)),	-- Glacial Vest
 					},
 				},
-				{
+				{	-- Glacial Wrists
 					["questID"] = 9238,	-- Glacial Wrists
 					["sourceQuest"] = 9233,	-- Omarion's Handbook
 					["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
@@ -119,13 +119,16 @@ _.Instances = { tier(1, {	-- Classic
 						un(8, i(22655)),	-- Glacial Wrists
 					},
 				},
-				{
+				{	-- Icebane Bracers
 					["questID"] = 9235,	-- Icebane Bracers
 					["sourceQuest"] = 9233,	-- Omarion's Handbook
 					["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
 					["u"] = 40,
 					["groups"] = {
-						un(8, i(22671)),	-- Icebane Bracers
+						{	-- Plans: Icebane Bracers
+							["recipeID"] = 28244, -- Plans: Icebane Bracers
+							["u"] = 2,
+						},
 					},
 				},
 				{	-- Icebane Breastplate
@@ -140,16 +143,19 @@ _.Instances = { tier(1, {	-- Classic
 						},
 					},
 				},
-				{
+				{	-- Icebane Gauntlets
 					["questID"] = 9234,	-- Icebane Gauntlets
 					["sourceQuest"] = 9233,	-- Omarion's Handbook
 					["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
 					["u"] = 40,
 					["groups"] = {
-						un(8, i(22670)),	-- Icebane Gauntlets
+						{	-- Plans: Icebane Gauntlets
+							["recipeID"] = 28243, -- Plans: Icebane Gauntlets
+							["u"] = 2,
+						},
 					},
 				},
-				{
+				{	-- Icy Scale Bracers
 					["questID"] = 9244,	-- Icy Scale Bracers
 					["sourceQuest"] = 9233,	-- Omarion's Handbook
 					["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
@@ -158,7 +164,7 @@ _.Instances = { tier(1, {	-- Classic
 						un(8, i(22665)),	-- Icy Scale Bracers
 					},
 				},
-				{
+				{	-- Icy Scale Breastplate
 					["questID"] = 9246,	-- Icy Scale Breastplate
 					["sourceQuest"] = 9233,	-- Omarion's Handbook
 					["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
@@ -167,7 +173,7 @@ _.Instances = { tier(1, {	-- Classic
 						un(8, i(22664)),	-- Icy Scale Breastplate
 					},
 				},
-				{
+				{	-- Icy Scale Gauntlets
 					["questID"] = 9245,	-- Icy Scale Gauntlets
 					["sourceQuest"] = 9233,	-- Omarion's Handbook
 					["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
@@ -176,7 +182,7 @@ _.Instances = { tier(1, {	-- Classic
 						un(8, i(22666)),	-- Icy Scale Gauntlets
 					},
 				},
-				{
+				{	-- Polar Bracers
 					["questID"] = 9241,	-- Polar Bracers
 					["sourceQuest"] = 9233,	-- Omarion's Handbook
 					["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
@@ -185,7 +191,7 @@ _.Instances = { tier(1, {	-- Classic
 						un(8, i(22663)),	-- Polar Bracers
 					},
 				},
-				{
+				{	-- Polar Gloves
 					["questID"] = 9242,	-- Polar Gloves
 					["sourceQuest"] = 9233,	-- Omarion's Handbook
 					["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
@@ -194,7 +200,7 @@ _.Instances = { tier(1, {	-- Classic
 						un(8, i(22662)),	-- Polar Gloves
 					},
 				},
-				{
+				{	-- Polar Tunic
 					["questID"] = 9243,	-- Polar Tunic
 					["sourceQuest"] = 9233,	-- Omarion's Handbook
 					["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
@@ -203,7 +209,7 @@ _.Instances = { tier(1, {	-- Classic
 						un(8, i(22661)),	-- Polar Tunic
 					},
 				},
-				{
+				{	-- Ramaladni's Icy Grasp
 					["questID"] = 9230,	-- Ramaladni's Icy Grasp
 					["sourceQuest"] = 9229,	-- The Fate of Ramaldni
 					["qg"] = 16112,	-- Korfax, Champion of the Light <Brotherhood of the Light>
@@ -212,31 +218,31 @@ _.Instances = { tier(1, {	-- Classic
 						un(2, i(22707)),	-- Ramaladni's Icy Grasp
 					},
 				},
-				{
+				{	-- The Dread Citadel - Naxxramas
 					["questID"] = 9121,	-- The Dread Citadel - Naxxramas
 					["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
 					["isBreadcrumb"] = true,
 					["u"] = 40,
 				},
-				{
+				{	-- The Dread Citadel - Naxxramas
 					["questID"] = 9122,	-- The Dread Citadel - Naxxramas
 					["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
 					["isBreadcrumb"] = true,
 					["u"] = 40,
 				},
-				{
+				{	-- The Dread Citadel - Naxxramas
 					["questID"] = 9123,	-- The Dread Citadel - Naxxramas
 					["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
 					["isBreadcrumb"] = true,
 					["u"] = 40,
 				},
-				{
+				{	-- The Fate of Ramaldni
 					["questID"] = 9229,	-- The Fate of Ramaldni
 					["sourceQuest"] = 9033,	-- Echoes of War
 					["qg"] = 16112,	-- Korfax, Champion of the Light <Brotherhood of the Light>
 					["u"] = 40,
 				},
-				{
+				{	-- The Only Song I Know...
 					["questID"] = 9232,	-- The Only Song I Know...
 					["sourceQuest"] = 9033,	-- Echoes of War
 					["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
@@ -1057,19 +1063,19 @@ _.Instances = { tier(1, {	-- Classic
 					n(16365, {	-- Master Craftsman Omarion <Brotherhood of the Light>
 						["description"] = "Omarion is an artisan blacksmithing, leatherworking, and tailoring craftsman. Unfortunately he was gravely injured inside Naxxramas and doesn't have much time left. He is willing to teach other master crafters his knowledge so it doesn't die with him.\n\nOmarion can teach the following plans and patterns to master craftsmen who have the required reputation with the Argent Dawn.",
 						["groups"] = {
-							un(8, i(22685)),	-- Pattern: Glacial Cloak
-							un(8, i(22684)),	-- Pattern: Glacial Gloves
-							un(8, i(22686)),	-- Pattern: Glacial Vest
-							un(8, i(22687)), 	-- Pattern: Glacial Wrists
-							un(8, i(22705)),	-- Pattern: Icebane Bracers
-							un(8, i(22703)),	-- Pattern: Icebane Breastplate
-							un(8, i(22704)),	-- Pattern: Icebane Gauntlets
-							un(8, i(22698)),	-- Pattern: Icy Scale Bracers
-							un(8, i(22696)),	-- Pattern: Icy Scale Breastplate
-							un(8, i(22697)),	-- Pattern: Icy Scale Gauntlets
-							un(8, i(22695)),	-- Pattern: Polar Bracers
-							un(8, i(22694)),	-- Pattern: Polar Gloves
-							un(8, i(22692)),	-- Pattern: Polar Tunic
+							un(2, i(22685)),	-- Pattern: Glacial Cloak
+							un(2, i(22684)),	-- Pattern: Glacial Gloves
+							un(2, i(22686)),	-- Pattern: Glacial Vest
+							un(2, i(22687)), 	-- Pattern: Glacial Wrists
+							un(2, i(22705)),	-- Pattern: Icebane Bracers
+							un(2, i(22703)),	-- Pattern: Icebane Breastplate
+							un(2, i(22704)),	-- Pattern: Icebane Gauntlets
+							un(2, i(22698)),	-- Pattern: Icy Scale Bracers
+							un(2, i(22696)),	-- Pattern: Icy Scale Breastplate
+							un(2, i(22697)),	-- Pattern: Icy Scale Gauntlets
+							un(2, i(22695)),	-- Pattern: Polar Bracers
+							un(2, i(22694)),	-- Pattern: Polar Gloves
+							un(2, i(22692)),	-- Pattern: Polar Tunic
 							un(2, i(22719, {	-- Omarion's Handbook
 								["description"] = "Non-crafters can take his handbook to Craftsman Wilhelm at Light's Hope Chapel who can make all the items as well, as long as the players provide the materials and pay a hefty fee.",
 								["questID"] = 9233,	-- Omarion's Handbook [Quest]

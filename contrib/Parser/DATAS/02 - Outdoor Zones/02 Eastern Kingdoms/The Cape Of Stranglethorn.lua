@@ -935,9 +935,7 @@ _.Zones =
 					}),
 					n(2843, {	-- Jutak <Blade Trader>
 						i(12248),	-- Daring Dirk
-						i(12162, {	-- Plans: Hardened Iron Shortsword
-							i(3849),	-- Hardened Iron Shortsword
-						}),
+						i(12162),	-- Plans: Hardened Iron Shortsword
 					}),
 					n(2664, {	-- Kelsey Yance <Cook>
 						i(13940),	-- Recipe: Cooked Glossy Mightfish

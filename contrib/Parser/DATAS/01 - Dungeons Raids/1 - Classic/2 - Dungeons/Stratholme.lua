@@ -254,7 +254,7 @@ _.Instances =
 						},
 						["maps"] = { 317 }	-- Stratholme Living Side
 					}),
-					n(-389, {	-- Side Entrance
+					n(-389, {	-- Service Entrance
 						["description"] = "Stratholme is divided by several gates that ultimately make for two sides.\n\nThis side is commonly referred to as the \"Dead\" or \"Scourge\" side, which the Scourge has taken over.",
 						["groups"] = {
 							n(-17, {	-- Quests
@@ -298,20 +298,26 @@ _.Instances =
 											10464,	-- Wailing Banshee
 										},
 									}),
+									--[[ No evidence that this drops from any mobs, only that it can be looted from the Blacksmithing Plans object.
 									n(10391, {	-- Skeletal Berserker
 										["groups"] = {
 											i(12827),	-- Plans: Serenity
 										},
 									}),
+									--]]
 									o(173232, {	-- Blacksmithing Plans
 										["groups"] = {
 											i(12827, {	-- Plans: Serenity
-												["groups"] = {},
 												["description"] = "This plan is found in the Scarlet Bastion. Only a Blacksmith can loot the plans. This will despawn once a player interacts with it.",
+												["requireSkill"] = 164,	-- Blacksmithing
+												["g"] = {
+												},
 											}),
 											i(12830, {	-- Plans: Corruption
-												["groups"] = {},
 												["description"] = "This plan is found near the second ziggurat. Only a Blacksmith can loot the plans. This will despawn once a player interacts with it.",
+												["requireSkill"] = 164,	-- Blacksmithing
+												["g"] = {
+												},
 											}),
 										},
 									}),
@@ -480,9 +486,9 @@ _.Instances =
 										un(2, i(16709)),	-- Shadowcraft Pants
 										un(2, i(16719)),	-- Wildheart Kilt
 									})),
-									un(43, n(16387, {	-- Atiesh <Hand of Sargeras>
-										un(15, i(22736)),	-- Andonisus, Reaper of Souls
-									})),
+									un(43, n(16387, {    -- Atiesh <Hand of Sargeras>
+                                        un(15, i(22736)),    -- Andonisus, Reaper of Souls
+                                    })),
 								},
 							}),
 						},

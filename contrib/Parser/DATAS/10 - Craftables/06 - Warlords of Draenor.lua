@@ -20,7 +20,113 @@ _.Craftables =
 			}),
 		}),
 		n(-181, { 	-- Blacksmithing
-		-- Never made it out of Beta
+			n(-25, { -- Pet Battles
+				i(119328),	-- Soul of the Forge
+			}),
+			filter(8, {		-- Shield
+				{	-- Draenic Steel Bulwark
+					["itemID"] = 108062,	-- Draenic Steel Bulwark
+					["u"] = 1,	-- Never made it out of Beta
+				},
+				{	-- Hardened Draenic Steel Bulwark
+					["itemID"] = 108158,	-- Hardened Draenic Steel Bulwark
+					["u"] = 1,	-- Never made it out of Beta
+				},
+				{	-- Peerless Draenic Steel Bulwark
+					["itemID"] = 108242,	-- Peerless Draenic Steel Bulwark
+					["u"] = 1,	-- Never made it out of Beta
+				},
+				{	-- Peerless Draenic Steel Bulwark
+					["itemID"] = 108243,	-- Peerless Draenic Steel Bulwark
+					["u"] = 1,	-- Never made it out of Beta
+				},
+				{	-- Peerless Draenic Steel Bulwark
+					["itemID"] = 108244,	-- Peerless Draenic Steel Bulwark
+					["u"] = 1,	-- Never made it out of Beta
+				},
+				{	-- Peerless Draenic Steel Bulwark
+					["itemID"] = 108245,	-- Peerless Draenic Steel Bulwark
+					["u"] = 1,	-- Never made it out of Beta
+				},
+			}),
+			filter(20, {	-- Daggers
+				{	-- Draenic Steel Dagger
+					["itemID"] = 108054,	-- Draenic Steel Dagger
+					["u"] = 1,	-- Never made it out of Beta
+				},
+				{	-- Hardened Draenic Steel Dagger
+					["itemID"] = 108150,	-- Hardened Draenic Steel Dagger
+					["u"] = 1,	-- Never made it out of Beta
+				},
+				{	-- Peerless Draenic Steel Dagger
+					["itemID"] = 108234,	-- Peerless Draenic Steel Dagger
+					["u"] = 1,	-- Never made it out of Beta
+				},
+				{	-- Peerless Draenic Steel Dagger
+					["itemID"] = 108235,	-- Peerless Draenic Steel Dagger
+					["u"] = 1,	-- Never made it out of Beta
+				},
+				{	-- Peerless Draenic Steel Dagger
+					["itemID"] = 108236,	-- Peerless Draenic Steel Dagger
+					["u"] = 1,	-- Never made it out of Beta
+				},
+				{	-- Peerless Draenic Steel Dagger
+					["itemID"] = 108237,	-- Peerless Draenic Steel Dagger
+					["u"] = 1,	-- Never made it out of Beta
+				},
+			}),
+			filter(22, {	-- 2H Axes
+				{	-- Draenic Steel War Axe
+					["itemID"] = 108046,	-- Draenic Steel War Axe
+					["u"] = 1,	-- Never made it out of Beta
+				},
+				{	-- Hardened Draenic Steel War Axe
+					["itemID"] = 108142,	-- Hardened Draenic Steel War Axe
+					["u"] = 1,	-- Never made it out of Beta
+				},
+				{	-- Peerless Draenic Steel War Axe
+					["itemID"] = 108226,	-- Peerless Draenic Steel War Axe
+					["u"] = 1,	-- Never made it out of Beta
+				},
+				{	-- Peerless Draenic Steel War Axe
+					["itemID"] = 108227,	-- Peerless Draenic Steel War Axe
+					["u"] = 1,	-- Never made it out of Beta
+				},
+				{	-- Peerless Draenic Steel War Axe
+					["itemID"] = 108228,	-- Peerless Draenic Steel War Axe
+					["u"] = 1,	-- Never made it out of Beta
+				},
+				{	-- Peerless Draenic Steel War Axe
+					["itemID"] = 108229,	-- Peerless Draenic Steel War Axe
+					["u"] = 1,	-- Never made it out of Beta
+				},
+			}),
+			filter(23, {	-- 1H Maces
+				{	-- Draenic Steel Mace
+					["itemID"] = 108058,	-- Draenic Steel Mace
+					["u"] = 1,	-- Never made it out of Beta
+				},
+				{	-- Hardened Draenic Steel Mace
+					["itemID"] = 108154,	-- Hardened Draenic Steel Mace
+					["u"] = 1,	-- Never made it out of Beta
+				},
+				{	-- Peerless Draenic Steel Mace
+					["itemID"] = 108238,	-- Peerless Draenic Steel Mace
+					["u"] = 1,	-- Never made it out of Beta
+				},
+				{	-- Peerless Draenic Steel Mace
+					["itemID"] = 108239,	-- Peerless Draenic Steel Mace
+					["u"] = 1,	-- Never made it out of Beta
+				},
+				{	-- Peerless Draenic Steel Mace
+					["itemID"] = 108240,	-- Peerless Draenic Steel Mace
+					["u"] = 1,	-- Never made it out of Beta
+				},
+				{	-- Peerless Draenic Steel Mace
+					["itemID"] = 108241,	-- Peerless Draenic Steel Mace
+					["u"] = 1,	-- Never made it out of Beta
+				},
+			}),
 			n(-320, {		-- Head
 				{	-- Draenic Steel Helm
 					["itemID"] = 107971,	-- Draenic Steel Helm
@@ -357,110 +463,7 @@ _.Craftables =
 					["u"] = 1,	-- Never made it out of Beta
 				},
 			}),
-			filter(8, {		-- Shield
-				{	-- Draenic Steel Bulwark
-					["itemID"] = 108062,	-- Draenic Steel Bulwark
-					["u"] = 1,	-- Never made it out of Beta
-				},
-				{	-- Hardened Draenic Steel Bulwark
-					["itemID"] = 108158,	-- Hardened Draenic Steel Bulwark
-					["u"] = 1,	-- Never made it out of Beta
-				},
-				{	-- Peerless Draenic Steel Bulwark
-					["itemID"] = 108242,	-- Peerless Draenic Steel Bulwark
-					["u"] = 1,	-- Never made it out of Beta
-				},
-				{	-- Peerless Draenic Steel Bulwark
-					["itemID"] = 108243,	-- Peerless Draenic Steel Bulwark
-					["u"] = 1,	-- Never made it out of Beta
-				},
-				{	-- Peerless Draenic Steel Bulwark
-					["itemID"] = 108244,	-- Peerless Draenic Steel Bulwark
-					["u"] = 1,	-- Never made it out of Beta
-				},
-				{	-- Peerless Draenic Steel Bulwark
-					["itemID"] = 108245,	-- Peerless Draenic Steel Bulwark
-					["u"] = 1,	-- Never made it out of Beta
-				},
-			}),
-			filter(20, {	-- Daggers
-				{	-- Draenic Steel Dagger
-					["itemID"] = 108054,	-- Draenic Steel Dagger
-					["u"] = 1,	-- Never made it out of Beta
-				},
-				{	-- Hardened Draenic Steel Dagger
-					["itemID"] = 108150,	-- Hardened Draenic Steel Dagger
-					["u"] = 1,	-- Never made it out of Beta
-				},
-				{	-- Peerless Draenic Steel Dagger
-					["itemID"] = 108234,	-- Peerless Draenic Steel Dagger
-					["u"] = 1,	-- Never made it out of Beta
-				},
-				{	-- Peerless Draenic Steel Dagger
-					["itemID"] = 108235,	-- Peerless Draenic Steel Dagger
-					["u"] = 1,	-- Never made it out of Beta
-				},
-				{	-- Peerless Draenic Steel Dagger
-					["itemID"] = 108236,	-- Peerless Draenic Steel Dagger
-					["u"] = 1,	-- Never made it out of Beta
-				},
-				{	-- Peerless Draenic Steel Dagger
-					["itemID"] = 108237,	-- Peerless Draenic Steel Dagger
-					["u"] = 1,	-- Never made it out of Beta
-				},
-			}),
-			filter(22, {	-- 2H Axes
-				{	-- Draenic Steel War Axe
-					["itemID"] = 108046,	-- Draenic Steel War Axe
-					["u"] = 1,	-- Never made it out of Beta
-				},
-				{	-- Hardened Draenic Steel War Axe
-					["itemID"] = 108142,	-- Hardened Draenic Steel War Axe
-					["u"] = 1,	-- Never made it out of Beta
-				},
-				{	-- Peerless Draenic Steel War Axe
-					["itemID"] = 108226,	-- Peerless Draenic Steel War Axe
-					["u"] = 1,	-- Never made it out of Beta
-				},
-				{	-- Peerless Draenic Steel War Axe
-					["itemID"] = 108227,	-- Peerless Draenic Steel War Axe
-					["u"] = 1,	-- Never made it out of Beta
-				},
-				{	-- Peerless Draenic Steel War Axe
-					["itemID"] = 108228,	-- Peerless Draenic Steel War Axe
-					["u"] = 1,	-- Never made it out of Beta
-				},
-				{	-- Peerless Draenic Steel War Axe
-					["itemID"] = 108229,	-- Peerless Draenic Steel War Axe
-					["u"] = 1,	-- Never made it out of Beta
-				},
-			}),
-			filter(23, {	-- 1H Maces
-				{	-- Draenic Steel Mace
-					["itemID"] = 108058,	-- Draenic Steel Mace
-					["u"] = 1,	-- Never made it out of Beta
-				},
-				{	-- Hardened Draenic Steel Mace
-					["itemID"] = 108154,	-- Hardened Draenic Steel Mace
-					["u"] = 1,	-- Never made it out of Beta
-				},
-				{	-- Peerless Draenic Steel Mace
-					["itemID"] = 108238,	-- Peerless Draenic Steel Mace
-					["u"] = 1,	-- Never made it out of Beta
-				},
-				{	-- Peerless Draenic Steel Mace
-					["itemID"] = 108239,	-- Peerless Draenic Steel Mace
-					["u"] = 1,	-- Never made it out of Beta
-				},
-				{	-- Peerless Draenic Steel Mace
-					["itemID"] = 108240,	-- Peerless Draenic Steel Mace
-					["u"] = 1,	-- Never made it out of Beta
-				},
-				{	-- Peerless Draenic Steel Mace
-					["itemID"] = 108241,	-- Peerless Draenic Steel Mace
-					["u"] = 1,	-- Never made it out of Beta
-				},
-			}),			
+						
 			
 			n(-319, { -- Weapons
 				WOD_CRAFTED_ITEM(116647), -- Steelforged Shield

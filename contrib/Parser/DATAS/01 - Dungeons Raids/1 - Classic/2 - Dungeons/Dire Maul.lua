@@ -321,6 +321,14 @@ _.Instances =
 										11472,	-- Eldreth Spirit
 									},
 								}),
+								i(18340, {	-- Eidolon Talisman
+									["crs"] = {
+										11471,	-- Eldreth Apparition
+										11475,	-- Eldreth Phantasm
+										11473,	-- Eldreth Spectre
+										11472,	-- Eldreth Spirit
+									},
+								}),
 								i(18332, {	-- Libram of Rapidity
 									["crs"] = {
 										11441,	-- Gorduk Brute
@@ -331,14 +339,6 @@ _.Instances =
 										13021,	-- Warpwood Crusher
 										11462,	-- Warpwood Treant
 										-- More Mobs can drop this item, but statistic wise its already 0,00%
-									},
-								}),
-								i(18340, {	-- Eidolon Talisman
-									["crs"] = {
-										11471,	-- Eldreth Apparition
-										11475,	-- Eldreth Phantasm
-										11473,	-- Eldreth Spectre
-										11472,	-- Eldreth Spirit
 									},
 								}),
 								i(18337, {	-- Orphic Bracers
@@ -591,6 +591,17 @@ _.Instances =
 							}),
 							n(-14, {	-- Capital Gardens [West - Elves]
 								n(-17, {	-- Quests (Legacy)
+									{	-- Enchanted Thorium Platemail: Volume II
+										["questID"] = 7650,	-- Enchanted Thorium Platemail: Volume II
+										["requireSkill"] = 164,	-- Blacksmithing
+										["u"]=  40,
+										["g"] = {
+											{	-- Plans: Enchanted Thorium Leggings
+												["itemID"] = 12726,	-- Plans: Enchanted Thorium Leggings
+												["u"] = 2,
+											},
+										},
+									},
 									un(2, i(18401, {	-- Foror's Compendium of Dragon Slaying
 										["groups"] = {
 											un(40, q(7507)),	-- Furor's Compendium

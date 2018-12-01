@@ -80,9 +80,7 @@ _.Zones =
 						["sourceQuests"] = { 26112 },	-- Demanding Answers
 					}),
 					qp164(qg(6031, qa( 1578, {	-- Supplying the Front
-						i(33792, {	-- Plans: Heavy Copper Longsword
-							i(33791),	-- Heavy Copper Longsword
-						}),
+						i(33792),	-- Plans: Heavy Copper Longsword
 					}))),
 					qa(39956, {	-- The Legacy Passed On
 						["qg"] = 97762,	-- Bill Spearshaker <Author Extrodinaire>

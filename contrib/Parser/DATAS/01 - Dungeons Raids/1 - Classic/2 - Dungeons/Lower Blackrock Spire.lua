@@ -225,7 +225,7 @@ _.Instances =
 					})),
 					n(-40, {	-- Legacy
 						["groups"] = {
-							n(  0, {	-- Zone Drop (Legacy)
+							n(0, {		-- Zone Drop (Legacy)
 								un(7, i(16680, {	-- Beaststalker's Belt
 									["crs"] = {
 										9692,	-- Bloodaxe Raider
@@ -300,6 +300,19 @@ _.Instances =
 										9258, 	-- Scarshield Raider
 									},
 								})),
+							}),
+							n(-17, {	-- Quests (Legacy)
+								{	-- Human Remains
+									["objectID"] = 176090,	-- Human Remains
+									["g"] = {
+										{	-- Hot Fiery Death
+											["questID"] = 5103,	-- Hot Fiery Death
+											["requireSkill"] = 164,	-- Blacksmithing
+											["isBreadcrumb"] = true,
+											["u"] = 40,
+										},
+									},
+								}
 							}),
 						},
 					}),

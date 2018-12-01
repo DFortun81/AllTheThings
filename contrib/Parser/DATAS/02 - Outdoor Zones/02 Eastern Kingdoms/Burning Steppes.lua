@@ -1049,15 +1049,13 @@ _.Zones =
 						dr(01.0, i(10086)),	-- Gothic Plate Armor
 						dr(01.0, i(10239)),	-- Heavy Lamellar Vambraces
 						dr(01.0, i(10072)),	-- Righteous Gloves
-						i(12828), -- Plans: Volcanic Hammer
+						i(12828), -- Plans: Volcanic Hammer [May no longer drop after Cata or extremely rare, no recent reports as of 2018 and recipe is no longer in the blacksmithing profession window.]
 					}), 
 				}),
 				n(-2,  {	-- Vendors
 					n(115805, {	-- Hoddruc Bladebender
 						["groups"]	= {
-							i(142346, {	-- Plans: Bleakwood Hew
-								i(12769),	-- Bleakwood Hew
-							}),
+							i(142346),	-- Plans: Bleakwood Hew
 						},
 						["description"]	= "Vendor only sells the recipe to those who have completed the quest 'Worth Its Weight in Steel'|r",
 					}),

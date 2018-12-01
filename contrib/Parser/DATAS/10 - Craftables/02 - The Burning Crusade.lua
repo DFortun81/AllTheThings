@@ -104,10 +104,8 @@ _.Craftables =
 				i(30093),	-- Great Earthforged Hammer
 				i(32854),	-- Hammer of Righteous Might
 				i(23556),	-- Hand of Eternity
-				i(33791),	-- Heavy Copper Longsword
 				i(23541),	-- Khorium Champion
 				i(30089),	-- Lavaforged Warhammer
-				i(30071),	-- Light Earthforged Blade
 				i(23544),	-- Runic Hammer
 				i(30088),	-- Skyforged Great Axe
 				i(30086),	-- Stoneforged Claymore

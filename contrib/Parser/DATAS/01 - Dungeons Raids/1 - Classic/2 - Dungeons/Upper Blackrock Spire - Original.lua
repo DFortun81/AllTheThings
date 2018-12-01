@@ -131,9 +131,15 @@ _.Instances =
 								},
 								["description"] = "Combine with the Top Half of Advanced Armorsmithing: Volume 1",
 							}),
-							i(12834),	-- Plans: Arcanite Champion
-							i(12728),	-- Plans: Invulnerable Mail
-							i(12837),	-- Plans: Masterwork Stormhammer
+							{	-- Plans: Arcanite Champion
+								["itemID"] = 12834,	-- Plans: Arcanite Champion
+								["collectible"] = false,	-- If we mark this unobtainable the recipe that is available from the trainer will be incorrectly marked unobtainable
+							},
+							{	-- Plans: Invulnerable Mail
+								["itemID"] = 12728,	-- Plans: Invulnerable Mail
+								["collectible"] = false,	-- If we mark this unobtainable the recipe that is available from the trainer will be incorrectly marked unobtainable
+							},
+							un(2, i(12837)),	-- Plans: Masterwork Stormhammer
 							un(2, i(18048)), 	-- Mastersmith's Hammer
 							un(2, i(13502)), 	-- Handcrafted Mastersmith Girdle
 							un(2, i(13498)), 	-- Handcrafted Mastersmith Leggings

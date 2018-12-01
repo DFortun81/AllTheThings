@@ -1045,6 +1045,9 @@ _.Zones =
 						dr(01.0, i(9879)),	-- Sorcerer Bracelets					
 					}), 
 					n(1885, { 	-- Scarlet Smith
+						{	-- Plans: Runic Plate Leggings
+							["itemID"] = 12719,	-- Plans: Runic Plate Leggings
+						},
 						dr(06.0, i(7433)),	-- Twilight Gloves
 						dr(04.0, i(9862)),	-- Archer's Trousers
 						dr(04.0, i(7458)),	-- Knight's Boots
