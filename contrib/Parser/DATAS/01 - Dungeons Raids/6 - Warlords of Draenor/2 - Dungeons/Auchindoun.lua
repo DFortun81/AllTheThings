@@ -436,6 +436,7 @@ _.Instances =
 								i(109794),	-- Verdant Plate Treads
 								i(110005),	-- Crystalline Blood Drop
 								i(110010),	-- Mote of Corruption
+								un(40, i(114240)),	-- Corrupted Blood of Teron'gor
 							})),
 						},
 					}),
@@ -644,6 +645,7 @@ _.Instances =
 								i(109794),	-- Verdant Plate Treads
 								i(110005),	-- Crystalline Blood Drop
 								i(110010),	-- Mote of Corruption
+								un(40, i(114240)),	-- Corrupted Blood of Teron'gor
 							})),
 						},
 					}),

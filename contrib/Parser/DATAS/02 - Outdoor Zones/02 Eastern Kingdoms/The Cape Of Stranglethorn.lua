@@ -952,6 +952,16 @@ _.Zones =
 						i(4778),	-- Heavy Spiked Mace
 						i(4777),	-- Ironwood Maul
 					}),
+					n(17249, {	-- Landro Longshot <The Black Flame>
+						un(10, i(50301, {	-- Landro's Pet Box
+							un(10, i(46779)),	-- Path of Cenarius
+							un(10, i(35223)),	-- Papa Hummel's Old-Fashioned Pet Biscuit
+							un(10, i(45047)),	-- Sandbox Tiger
+							un(10, i(32588)),	-- Banana Charm
+							un(10, i(34493)),	-- Dragon Kite
+							un(10, i(38050)),	-- Soul-Trader Beacon
+						})),
+					}),
 					n(54232, {	-- Mrs. Gant <Cooking Trainer & Supplies>
 						i(21219),	-- Recipe: Sagefish Delight
 						i(21099),	-- Recipe: Smoked Sagefish

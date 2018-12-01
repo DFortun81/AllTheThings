@@ -69,6 +69,7 @@ _.NeverImplemented =
 			un(1, i(10039)),	-- Stormcloth Boots
 			un(1, i(12107)),	-- Whispersilk Leggings
 			un(1, i(13080)),	-- Widow's Clutch
+			un(1, i(1216)),	-- Frost Bracers
 			un(1, i(18341)),	-- Quel'dorei Sash
 			un(1, i(23433)),	-- Blood Robes
 			un(1, i(23434)),	-- Robes of the Shard
@@ -117,6 +118,30 @@ _.NeverImplemented =
 			un(1, i(81043)),	-- Scavenger's Satin Cuffs
 		}),
 		n(-44, { -- Leather
+			cl(11, { -- Druid
+				un(1, i(48769)),	-- Runetotem's Handguards of Conquest
+				un(1, i(48770)),	-- Runetotem's Headpiece of Conquest
+				un(1, i(48771)),	-- Runetotem's Leggings of Conquest
+				un(1, i(48772)),	-- Runetotem's Robe of Conquest
+				un(1, i(48773)),	-- Runetotem's Spaulders of Conquest
+				un(1, i(48781)),	-- Runetotem's Cover of Conquest
+				un(1, i(48782)),	-- Runetotem's Gloves of Conquest
+				un(1, i(48783)),	-- Runetotem's Mantle of Conquest
+				un(1, i(48784)),	-- Runetotem's Trousers of Conquest
+				un(1, i(48785)),	-- Runetotem's Vestments of Conquest
+				un(1, i(48794)),	-- Runetotem's Handgrips of Conquest
+				un(1, i(48795)),	-- Runetotem's Headguard of Conquest
+				un(1, i(48796)),	-- Runetotem's Legguards of Conquest
+				un(1, i(48797)),	-- Runetotem's Raiments of Conquest
+				un(1, i(48798)),	-- Runetotem's Shoulderpads of Conquest
+			}),
+			cl(4, { -- Rogue
+				un(1, i(48804)),	-- Garona's Breastplate of Conquest
+				un(1, i(48805)),	-- Garona's Gauntlets of Conquest
+				un(1, i(48806)),	-- Garona's Helmet of Conquest
+				un(1, i(48807)),	-- Garona's Legplates of Conquest
+				un(1, i(48808)),	-- Garona's Pauldrons of Conquest
+			}),
 			un(1, i(54655)),	-- Stormshroud Armor (Leather)
 			un(1, i(25975)),	-- Gloves of Preservation (not added version)
 			un(1, i(25976)),	-- Lurking Shadow Spaulders (only beta)
@@ -320,6 +345,9 @@ _.NeverImplemented =
 		n(-349, { -- Cosmetic
 			un(1, i(134110)), -- Hidden Helm
 			un(1, i(134111)), -- Hidden Cloak
+			un(1, i(142503)), 	-- Hidden Shirt
+			un(1, i(142504)), 	-- Hidden Tabard
+			un(1, i(143539)), 	-- Hidden Belt
 		}),
 		n(-324, { -- Shirts
 			un(1, i(53869)), -- War Paint (Shirt) NOT GOOD FOR THE LADIES (NYI)
@@ -353,6 +381,11 @@ _.NeverImplemented =
 		un(1, i(28261)),	-- Video Invis Broken Fitz's Throwing Axe
 		un(1, i(25641)),	-- Broken Fitz's Throwing Axe
 		un(1, i(33564)),	-- World Drop Certificate
+		un(1, i(20560)),
+		un(1, i(41596)),
+		un(1, i(43016)),
+		un(1, i(52446)),
+		un(1, i(62898)),
 		un(1, i(33565)),	-- Uncommon Drop Certificate
 		un(1, i(105914)), -- Danger Detector Boots
 		un(1, i(105915)), -- Danger Detector Harness
@@ -443,6 +476,24 @@ _.NeverImplemented =
 		un(1, i(119112)), -- Son of Sethe (unsed Version)
 		un(1, i(118600)), -- Forest Sproutling (unsed Version)
 		un(1, i(118597)), -- Never added
+		model(49086, n(71700, { 	-- Crafty 								(Never added in Game)
+			["groups"] = {	
+				p(1257),
+			},
+			["u"] = 1,
+		})), 
+		model(74515, n(117343, { 	-- Hearthy 								(Never added in Game)
+			["groups"] = {	
+				p(2003),	
+			},
+			["u"] = 1,
+		})), 
+		model(57821, n(83589, {		-- Kelp Sproutling				 		(Never added in Game)
+			["groups"] = {	
+				p(1431),
+			},
+			["u"] = 1,
+		})), 
 		un(1, i(31665)), -- Toy RC Mortar Tank
 		un(1, i(13342)), -- Pet Fish
 		un(1, i(13343)), -- Pet Stone
@@ -539,6 +590,7 @@ _.NeverImplemented =
 		n(-190, { -- Tailoring
 			un(1, i(42196)),	-- Pattern: Aurora Slippers (pattern never went live, but it's learned at the trainer)
 			un(1, i(7093)),		-- Pattern: Boots of Darkness
+			un(1, i(6273)),	-- Pattern: Green Woolen Robe
 			un(1, i(42190)),	-- Pattern: Deathchill Cloak (pattern never went live, but it's learned at the trainer)
 			un(1, i(42180)),	-- Pattern: Ebonweave (pattern never went live, but it's learned at the trainer)
 			un(1, i(42200)),	-- Pattern: Ebonweave Gloves (pattern never went live, but it's learned at the trainer)
@@ -582,12 +634,21 @@ _.NeverImplemented =
 			un(1, i(42174)),	-- Pattern: Yellow Lumberjack Shirt (pattern never went live, but it's learned at the trainer)
 		}),
 	}),
+	n(-104, { -- Quest Items
+		un(1, i(100894)),	-- Deathtoll's Reward
+		un(1, i(100897)),	-- Skel'tik the Baleful's Reward
+		un(1, i(100898)),	-- Kull Bloodseeker's Reward
+		un(1, i(109012)),	-- Frostwolf Ancestral Totem
+		un(1, i(124644)),	-- Unknown
+	}),
 	n(-161, { -- Toys
 		un(1, i(140779)),	-- Falanaar Echo
 		un(1, i(141300)), 	-- Magi Focusing Crystal	
 		un(1, i(38568)), 	-- Drakkari Charm Bracelet
 		un(1, i(38569)), 	-- Unknown	
-		un(1, i(38570)), 	-- Unknown			
+		un(1, i(38570)), 	-- Unknown	
+		un(1, i(119220)),	-- Alliance Gladiator's Banner
+		un(1, i(119221)),	-- Horde Gladiator's Banner		
 	}),
 	n(-319, { -- Weapons
 		n(-347, { -- Crossbow
@@ -655,6 +716,7 @@ _.NeverImplemented =
 		n(-340, { -- War Glaives
 			un(1, i(129735)), 	-- Verus
 			un(1, i(129736)), 	-- Verus
+			un(1, i(151138)), 	-- Warglaive of Azzinoth [This version not implemented; was testing for transmog]
 			un(1, i(129737)), 	-- Verus
 		}),
 	un(1, i(32191)),	-- Chancellor's Battletome
@@ -748,7 +810,6 @@ _.NeverImplemented =
 	}),
 	un(1, i(151377)), -- Arne Test Heirloom - Bloodied Arcanite Reaper
 	un(1, i(166699)),	-- Desert Rucksack
-	un(1, i(1216)),	-- Frost Bracers
 	un(1, i(6273)),	-- Pattern: Green Woolen Robe
 	un(1, i(18316)),	-- Obsidian Bauble
 	un(1, i(19989)),	-- Tome of Devouring Shadows
@@ -764,26 +825,6 @@ _.NeverImplemented =
 	un(1, i(2664)),	-- Spinner Fang
 	un(1, i(8195)),	-- Nightscape Cloak										(Pattern never actually went live)
 	un(15, i(31279)),	-- Enchanted Illidari Tabard [Temp Quest Item]
-	un(1, i(48769)),	-- Runetotem's Handguards of Conquest
-	un(1, i(48770)),	-- Runetotem's Headpiece of Conquest
-	un(1, i(48771)),	-- Runetotem's Leggings of Conquest
-	un(1, i(48772)),	-- Runetotem's Robe of Conquest
-	un(1, i(48773)),	-- Runetotem's Spaulders of Conquest
-	un(1, i(48781)),	-- Runetotem's Cover of Conquest
-	un(1, i(48782)),	-- Runetotem's Gloves of Conquest
-	un(1, i(48783)),	-- Runetotem's Mantle of Conquest
-	un(1, i(48784)),	-- Runetotem's Trousers of Conquest
-	un(1, i(48785)),	-- Runetotem's Vestments of Conquest
-	un(1, i(48794)),	-- Runetotem's Handgrips of Conquest
-	un(1, i(48795)),	-- Runetotem's Headguard of Conquest
-	un(1, i(48796)),	-- Runetotem's Legguards of Conquest
-	un(1, i(48797)),	-- Runetotem's Raiments of Conquest
-	un(1, i(48798)),	-- Runetotem's Shoulderpads of Conquest
-	un(1, i(48804)),	-- Garona's Breastplate of Conquest
-	un(1, i(48805)),	-- Garona's Gauntlets of Conquest
-	un(1, i(48806)),	-- Garona's Helmet of Conquest
-	un(1, i(48807)),	-- Garona's Legplates of Conquest
-	un(1, i(48808)),	-- Garona's Pauldrons of Conquest
 	un(1, i(56405)),	-- Oasis Bracers
 	un(1, i(59795)),	-- Harp Shell Shoulderplates
 	un(1, i(59796)), 	-- Treads of Decapod Death
@@ -793,8 +834,6 @@ _.NeverImplemented =
 	un(1, i(85588)), 	-- Reflex Edges [This version never implemented]
 	un(1, i(105956)), 	-- Wrath Gladiator's Razor [Not implemented, other version was instead]
 	un(1, i(117010)),	-- Forester's Axe 										(Never added in Game)
-	un(1, i(119220)),	-- Alliance Gladiator's Banner
-	un(1, i(119221)),	-- Horde Gladiator's Banner
 	un(1, i(120272)), 	-- High Warlord's Razor [This version never implemented]
 	un(1, i(120273)), 	-- High Warlord's Razor [This version never implemented]
 	un(1, i(128824)), 	-- Tome of the Silver Hand		
@@ -803,9 +842,6 @@ _.NeverImplemented =
 	un(1, i(134112)), 	-- Hidden Shoulder
 	un(1, i(136593)), 	-- Doomhammer Offhand Appearance Record (referenced by actual item)	
 	un(1, i(142360)),	-- Blazing Ember Signet
-	un(1, i(142503)), 	-- Hidden Shirt
-	un(1, i(142504)), 	-- Hidden Tabard
-	un(1, i(143539)), 	-- Hidden Belt
 	un(1, i(143545)),	-- Fel Focusing Crystal 
 	un(1, i(146305)), 	-- Green Winter Hat										{STUCK ON RETRIEVING DATA)
 	un(1, i(146306)), 	-- Green Winter Clothes 								(STUCK ON RETRIEVING DATA)
@@ -814,26 +850,7 @@ _.NeverImplemented =
 	un(1, i(147036)),	-- Fel-Stippled Legguards 								(removed Beta)
 	un(1, i(147058)), 	-- Chaos-Calming Wristguards 							(removed Beta)
 	un(1, i(147074)),	-- Vambraces of Resoulte Justice 						(removed Beta)
-	un(1, i(151138)), 	-- Warglaive of Azzinoth [This version not implemented; was testing for transmog]
 	model(38311, n(51634, {["u"] = 1,} )),	-- Bubbles 					(Never added in Game)
-	model(49086, n(71700, { 	-- Crafty 								(Never added in Game)
-		["groups"] = {	
-			p(1257),
-		},
-		["u"] = 1,
-	})), 
-	model(74515, n(117343, { 	-- Hearthy 								(Never added in Game)
-		["groups"] = {	
-			p(2003),	
-		},
-		["u"] = 1,
-	})), 
-	model(57821, n(83589, {		-- Kelp Sproutling				 		(Never added in Game)
-		["groups"] = {	
-			p(1431),
-		},
-		["u"] = 1,
-	})), 
 	model(36583, n(51636, {["u"] = 1,})),	-- Lizzy 					(Never added in Game)
 	model(14657, n(14629, {["u"] = 1,})), 	-- Loggerhead Snapjaw 		(Never added in Game)
 	model(36129, n(48376, {["u"] = 1,})),	-- Rumbling Rockling 		(Never added in Game)
@@ -846,12 +863,6 @@ _.NeverImplemented =
 	model(36130, n(48377, {["u"] = 1,})),	-- Swirling Stormling 		(Never added in Game)
 	model(36131, n(48378, {["u"] = 1,})), 	-- Whirling Waveling 		(Never added in Game)
 	model(29060, n(34031, {["u"] = 1,})), 	-- XS-001 Constructor Bot 	(Never added in Game)
-
-	i(20560),
-	i(41596),
-	i(43016),
-	i(52446),
-	i(62898),
 	
 un(1, i(105393, { -- Tusks of Mannoroth [Heroic Warforged]
 	["description"] = "|CFFFF0000If you had this item drop in SoO Heroic please screenshot and submit it to the ATT Discord.\n\nIf you have the item already and are running completionist mode please screenshot as well. Tag 105393",

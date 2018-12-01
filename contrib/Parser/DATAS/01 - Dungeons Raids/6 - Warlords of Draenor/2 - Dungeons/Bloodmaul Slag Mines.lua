@@ -229,6 +229,9 @@ _.Instances =
 					d(2, {	-- Heroic
 						["lvl"] = 100,
 						["groups"] = {
+							n(-17, {	-- Quests 		
+								un(40, q(35990)), -- Core of Flame
+							}),	
 							cr(74787, e(888, {	-- Slave Watcher Crushto
 								i(110040),	-- Crushto's Neck Separator
 								i(109939),	-- Streamslither Spaulders
@@ -438,12 +441,16 @@ _.Instances =
 								i(109778),	-- Signet of the Glorious Protector
 								i(109769),	-- Slicebinder Loop
 								i(109777),	-- Unsullied Signet
+								un(40, i(113682)),	-- Core of Flame
 							})),
 						},
 					}),
 					d(23, {	-- Mythic
 						["lvl"] = 100,
 						["groups"] = {
+							n(-17, {	-- Quests 		
+								un(40, q(35990)), -- Core of Flame
+							}),	
 							cr(74787, e(888, {	-- Slave Watcher Crushto
 								i(110040),	-- Crushto's Neck Separator
 								i(109939),	-- Streamslither Spaulders
@@ -646,6 +653,7 @@ _.Instances =
 								i(109778),	-- Signet of the Glorious Protector
 								i(109769),	-- Slicebinder Loop
 								i(109777),	-- Unsullied Signet
+								un(40, i(113682)),	-- Core of Flame
 							})),
 						},
 					}),
