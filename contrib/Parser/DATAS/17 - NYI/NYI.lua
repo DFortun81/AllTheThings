@@ -35,11 +35,32 @@ _.NeverImplemented =
 				un(1, i(48733)),	-- Sunstrider's Robe of Conquest
 				un(1, i(48734)),	-- Sunstrider's Shoulderpads of Conquest
 			}),
+			cl(5, { -- Priest
+				un(1, i(48750)),	-- Zabra's Cowl of Conquest
+				un(1, i(48751)),	-- Zabra's Gloves of Conquest
+				un(1, i(48752)),	-- Zabra's Leggings of Conquest
+				un(1, i(48753)),	-- Zabra's Robe of Conquest
+				un(1, i(48754)),	-- Zabra's Shoulderpads of Conquest
+				un(1, i(48760)),	-- Zabra's Circlet of Conquest
+				un(1, i(48761)),	-- Zabra's Handwraps of Conquest
+				un(1, i(48762)),	-- Zabra's Mantle of Conquest
+				un(1, i(48763)),	-- Zabra's Pants of Conquest
+				un(1, i(48764)),	-- Zabra's Raiments of Conquest
+			}),
+			cl(9, { -- Warlock
+				un(1, i(48735)),	-- Gul'dan's Gloves of Conquest
+				un(1, i(48736)),	-- Gul'dan's Hood of Conquest
+				un(1, i(48737)),	-- Gul'dan's Leggings of Conquest
+				un(1, i(48738)),	-- Gul'dan's Robe of Conquest
+				un(1, i(48739)),	-- Gul'dan's Shoulderpads of Conquest
+			}),
 			un(1, i(78017)),	-- Replica Magister's Leggings (Cloth)
 			un(1, i(4989)),	-- Mage Dragon Robe (intended to be quest reward, never made it to live?)
 			un(1, i(4990)),	-- Scorched Bands
+			un(1, i(104335)),	-- Titan Rocket Boots
 			un(1, i(90358)),	-- Honorary Combat Engineer's Silk Trousers
 			un(1, i(90359)),	-- Honorary Combat Engineer's Satin Leggings
+			un(1, i(6478)),	-- Rat Stompers
 			un(1, i(10010)),	-- Stormcloth Pants
 			un(1, i(10011)),	-- Stormcloth Gloves
 			un(1, i(10020)),	-- Stormcloth Vest
@@ -226,6 +247,7 @@ _.NeverImplemented =
 			un(1, i(80951)),	    -- Peacebreaker's Ringmail Helm
 			un(1, i(81000)),	    -- Ringmail Armor of Eminent Domain (not added version)
 			un(1, i(80996)),	    -- Chain Armor of Eminent Domain (not added version)
+			un(1, i(37454)),	    -- HF28 Mail Physical Chest4
 		}),
 		n(-46, { -- Plate
 			cl(6, { -- DK
@@ -305,6 +327,10 @@ _.NeverImplemented =
 			un(1, i(23388)), -- Tranquillen Tabard
 		}),
 	}),
+	n(-113, { -- Bags
+		un(1, i(22233)), -- Zigris' Footlocker
+		un(1, i(35874)), -- Whizzlespark's Portable Pet Mansion
+	}),
 	n(-494, { -- Misc
 		un(1, i(146801)),	-- [BUILDING CONTRIBUTION REWARD ITEM [NYI]]
 		un(1, i(146800)),	-- [BUILDING CONTRIBUTION REWARD ITEM [NYI]]
@@ -322,6 +348,7 @@ _.NeverImplemented =
 		un(1, i(33565)),	-- Uncommon Drop Certificate
 		un(1, i(70104)),	-- Unknown
 		un(1, i(45924)),	-- Certificate of Appreciation
+		un(1, i(34548)),	-- Cache of the Shattered Sun
 	}),
 	n(-160, { -- Mounts
 		un(1, a(model(9475, i(13325)))),		-- Fluorescent Green Mechanostrider (Never added in Game)
@@ -402,6 +429,13 @@ _.NeverImplemented =
 		p(1751),
 	}))),
 		un(1, i(130145)), -- Unknown
+		un(1, i(119147)), -- Nether Ray Fry (unsed Version)
+		un(1, i(119112)), -- Son of Sethe (unsed Version)
+		un(1, i(118600)), -- Forest Sproutling (unsed Version)
+		un(1, i(118597)), -- Never added
+		un(1, i(31665)), -- Toy RC Mortar Tank
+		un(1, i(13342)), -- Pet Fish
+		un(1, i(13343)), -- Pet Stone
 		un(1, i(82800)),  -- "Pet Cage"
 		un(1, i(62769, { 	-- Hardboiled Egg 						(Never added in Game)
 		["groups"] = {				-- /dump C_PetJournal.FindPetIDByName("Hardboiled Egg")
@@ -503,6 +537,7 @@ _.NeverImplemented =
 			un(1, i(162770)),	-- Pattern: Embroidered Deep Sea Cloak of the Feather (horde)
 			un(1, i(162426)),	-- Pattern: Embroidered Deep Sea Cloak of Resilience (alliance)
 			un(1, i(162771)),	-- Pattern: Embroidered Deep Sea Cloak of Resilience (horde)
+			un(1, i(8388)),	-- Pattern: Nightscape Cloak							(Never added in Game)
 			un(1, i(162428)),	-- Pattern: Embroidered Deep Sea Gloves (Rank 3)
 			un(1, i(162430)),	-- Pattern: Embroidered Deep Sea Breeches (Rank 3)
 			un(1, i(21369)),	-- Pattern: Felcloth Bag
@@ -691,8 +726,7 @@ _.NeverImplemented =
 	un(1, i(151377)), -- Arne Test Heirloom - Bloodied Arcanite Reaper
 	un(1, i(166699)),	-- Desert Rucksack
 	un(1, i(1216)),	-- Frost Bracers
-	un(1, i(6273)),	-- Green Woolen Robe
-	un(1, i(6478)),	-- Rat Stompers
+	un(1, i(6273)),	-- Pattern: Green Woolen Robe
 	un(1, i(18316)),	-- Obsidian Bauble
 	un(1, i(19989)),	-- Tome of Devouring Shadows
 	un(1, i(56701)),	-- Jinxed Vest (never made it to live)
@@ -705,27 +739,11 @@ _.NeverImplemented =
 	un(1, i(33964)), -- Helm of the Stormcaller - Never Added
 	un(3, i(19160)), -- Contest Winner's Tabard   [NOTE: Temporarily here until we get groups working with un/u tag again}
 	un(1, i(2664)),	-- Spinner Fang
-	un(1, i(8195)),	-- Nightscape Cloak										(Pattern never actually went live)
-	un(1, i(8388)),	-- Pattern: Nightscape Cloak							(Never added in Game)	
+	un(1, i(8195)),	-- Nightscape Cloak										(Pattern never actually went live)	
 	un(1, i(12772)),	-- Inlaid Thorium Hammer								(Never added in Game)
 	un(1, i(12764)),	-- Thorium Greatsword									(Never added in Game)
 	un(1, i(12779)),	-- Rune Edge											(Never added in Game)
 	un(15, i(31279)),	-- Enchanted Illidari Tabard [Temp Quest Item]
-	un(1, i(48735)),	-- Gul'dan's Gloves of Conquest
-	un(1, i(48736)),	-- Gul'dan's Hood of Conquest
-	un(1, i(48737)),	-- Gul'dan's Leggings of Conquest
-	un(1, i(48738)),	-- Gul'dan's Robe of Conquest
-	un(1, i(48739)),	-- Gul'dan's Shoulderpads of Conquest
-	un(1, i(48750)),	-- Zabra's Cowl of Conquest
-	un(1, i(48751)),	-- Zabra's Gloves of Conquest
-	un(1, i(48752)),	-- Zabra's Leggings of Conquest
-	un(1, i(48753)),	-- Zabra's Robe of Conquest
-	un(1, i(48754)),	-- Zabra's Shoulderpads of Conquest
-	un(1, i(48760)),	-- Zabra's Circlet of Conquest
-	un(1, i(48761)),	-- Zabra's Handwraps of Conquest
-	un(1, i(48762)),	-- Zabra's Mantle of Conquest
-	un(1, i(48763)),	-- Zabra's Pants of Conquest
-	un(1, i(48764)),	-- Zabra's Raiments of Conquest
 	un(1, i(48769)),	-- Runetotem's Handguards of Conquest
 	un(1, i(48770)),	-- Runetotem's Headpiece of Conquest
 	un(1, i(48771)),	-- Runetotem's Leggings of Conquest
