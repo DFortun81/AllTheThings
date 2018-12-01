@@ -115,16 +115,40 @@ _.Instances =
 						h(i(122215)),	-- Music Roll: Zul'Gurub Voodoo
 					})),
 					-- Elite Mobs
-					n(52418,  {	-- Lost Offspring of Gahz'ranka
-						i(70719,  {	-- Water-Filled Gills
-							i(52326),	-- Volatile Water
-						}),
-					}),
 					n(52442,  {	-- Florawing Hive Queen
 						i(69817,  {	-- Hive Queen's Honeycomb
 							i(52328),	-- Volatile Air
 							i(52329),	-- Volatile Life
 							i(52987),	-- Twilight Jasmine
+						}),
+					}),
+					n(52440,  {	-- Gub <Destroyer of Fish>
+						i(69823,  {	-- Gub's Catch
+							i(53068),	-- Lavascale Catfish
+							i(53070),	-- Fatheom Eal
+							i(53071),	-- Algaefin Rockfish
+							i(53072),	-- Deepsea Sagefish
+						}),
+					}),
+					n(52422,  {	-- Kaulema the Mover
+						i(69818,  {	-- Giant Sack
+							i(52185),	-- Elementium Ore
+							i(52180),	-- Nightstone
+							i(52182),	-- Jasper
+							i(52178),	-- Zephyrite
+						}),
+					}),
+					n(52418,  {	-- Lost Offspring of Gahz'ranka
+						i(70719,  {	-- Water-Filled Gills
+							i(52326),	-- Volatile Water
+						}),
+					}),
+					n(52405,  {	-- Mor'Lek the Dismantler
+						i(69818,  {	-- Giant Sack
+							i(52185),	-- Elementium Ore
+							i(52180),	-- Nightstone
+							i(52182),	-- Jasper
+							i(52178),	-- Zephyrite
 						}),
 					}),
 				},

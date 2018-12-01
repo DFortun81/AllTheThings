@@ -157,6 +157,9 @@ profession(794, {	-- Archaeology
 		n(-319, {	-- Weapons
 			sp(90608, { i(64377) }),	-- Zin'rokh, Destroyer of Worlds
 		}),
+		n(-494, {	-- Misc
+			sp(88262, { i(63115) }),	-- Zandalari Voodoo Doll
+		}),
 	}),
 	currency(399,  {	-- Vrykul
 		n(-161, {	-- Toys

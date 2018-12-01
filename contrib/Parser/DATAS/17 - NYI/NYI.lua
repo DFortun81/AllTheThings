@@ -322,20 +322,29 @@ _.NeverImplemented =
 			un(1, i(134110)), -- Hidden Helm
 			un(1, i(134111)), -- Hidden Cloak
 		}),
+		n(-324, { -- Shirts
+			un(1, i(53869)), -- War Paint (Shirt) NOT GOOD FOR THE LADIES (NYI)
+			un(1, i(60619)), -- No Shirt
+			un(1, i(63074)), -- "Behind You!" Shirt
+			un(1, i(129294)), -- Bonespeaker Tatoos
+			un(1, i(137118)), -- The Crone's Shirt
+			un(1, i(137552)), -- Purple Shirt
+			un(1, i(52548)),	-- Initiate's Tunic
+			un(1, i(53879)), 	-- Rugged Work Shirt
+			un(1, i(53880)), 	-- Super Girly Shirt
+		}),
 		n(-325, { -- Tabard
 			un(1, i(147204)), -- Black Apron - TEST
 			un(1, i(23388)), -- Tranquillen Tabard
 		}),
-	}),
-	n(-113, { -- Bags
-		un(1, i(22233)), -- Zigris' Footlocker
-		un(1, i(35874)), -- Whizzlespark's Portable Pet Mansion
 	}),
 	n(-494, { -- Misc
 		un(1, i(146801)),	-- [BUILDING CONTRIBUTION REWARD ITEM [NYI]]
 		un(1, i(146800)),	-- [BUILDING CONTRIBUTION REWARD ITEM [NYI]]
 		un(1, i(146799)),	-- [BUILDING CONTRIBUTION REWARD ITEM [NYI]]
 		un(1, i(115371)),	-- [PLACEHOLDER TIER 3 ITEM]
+		un(1, i(22233)), -- Zigris' Footlocker
+		un(1, i(35874)), -- Whizzlespark's Portable Pet Mansion
 		un(1, i(111810)),	-- Barracks, Level 1 - unused version (used version is 111956)
 		un(1, i(134013)), -- Chef's Hat [Likely the cosmetic effect from when you use the toy]
 		un(1, i(130156)),	-- Crane Bag
@@ -346,6 +355,8 @@ _.NeverImplemented =
 		un(1, i(25641)),	-- Broken Fitz's Throwing Axe
 		un(1, i(33564)),	-- World Drop Certificate
 		un(1, i(33565)),	-- Uncommon Drop Certificate
+		un(1, i(105914)), -- Danger Detector Boots
+		un(1, i(105915)), -- Danger Detector Harness
 		un(1, i(70104)),	-- Unknown
 		un(1, i(45924)),	-- Certificate of Appreciation
 		un(1, i(34548)),	-- Cache of the Shattered Sun
@@ -590,10 +601,24 @@ _.NeverImplemented =
 		n(-348, { -- Fist Weapons
 			un(1, i(32188)),    -- Chancellor's Fleshslicer
 			un(1, i(32189)),    -- Chancellor's Ripper
+			un(1, i(38243)),    -- Ravaging Steelfist
+		}),
+		n(-34, { -- Guns
+			un(1, i(49455)),	-- Blunderbuss of Deforestation
+			un(1, i(38246)),	-- Skull-Forged Blunderbuss
+		}),
+		n(-331, { -- Held in Offhand
+			un(1, i(23462)),	-- High Warlord's Tome of Destruction
+			un(1, i(23463)),	-- High Warlord's Tome of Mending
+		}),
+		n(-334, { -- One-Handed Axes
+			un(1, i(49456)),	-- Will of the Earth
+			un(1, i(50251)),	-- Unknown
 		}),
 		n(-338, { -- One-Handed Swords
 			un(1, i(108803)),	-- Unknown - was under Legion>1Handed Swords
 			un(1, i(108804)),	-- Unknown - was under Legion>1Handed Swords
+			un(1, i(47846)),	-- Cruel Barb (Glow, Purple - Low)
 			un(1, i(108805)),	-- Unknown - was under Legion>1Handed Swords
 			un(1, i(109320)),	-- 6.0 QA Combat Test Strength 1h Sword 2
 			un(1, i(109377)),   -- 6.0 QA Combat Test Strength 1H Sword 3
@@ -628,13 +653,13 @@ _.NeverImplemented =
 			un(1, i(131741)),	-- Unknown, tagged as 2Hand Sword
 			un(1, i(131742)),	-- Unknown, tagged as 2Hand Sword
 		}),
-	un(1, i(23462)),	-- High Warlord's Tome of Destruction
-	un(1, i(23463)),	-- High Warlord's Tome of Mending
+		n(-340, { -- War Glaives
+			un(1, i(129735)), 	-- Verus
+			un(1, i(129736)), 	-- Verus
+			un(1, i(129737)), 	-- Verus
+		}),
 	un(1, i(32191)),	-- Chancellor's Battletome
 	un(1, i(42523)),	-- Savage Gladiator's Endgame
-	un(1, i(129735)), 	-- Verus
-	un(1, i(129736)), 	-- Verus
-	un(1, i(129737)), 	-- Verus
 	un(1, i(42529)),	-- Savage Gladiator's Reprieve
 	un(1, i(42535)),	-- Savage Gladiator's Grimoire
 	un(1, i(80980)),	-- Axe of Aborted Deforestation (Never made it to Live, yet into our Appearances Tab)
@@ -764,9 +789,6 @@ _.NeverImplemented =
 	un(1, i(48806)),	-- Garona's Helmet of Conquest
 	un(1, i(48807)),	-- Garona's Legplates of Conquest
 	un(1, i(48808)),	-- Garona's Pauldrons of Conquest
-	un(1, i(52548)),	-- Initiate's Tunic
-	un(1, i(53879)), 	-- Rugged Work Shirt
-	un(1, i(53880)), 	-- Super Girly Shirt
 	un(1, i(56405)),	-- Oasis Bracers
 	un(1, i(59795)),	-- Harp Shell Shoulderplates
 	un(1, i(59796)), 	-- Treads of Decapod Death
@@ -893,20 +915,6 @@ i(50329),   -- Unknown
 ------------------------------------------------------------
 --			T E M P O R A R Y			I T E M S		  --
 ------------------------------------------------------------
-
------------------------
--- TRASH GREYS/WHITES -
------------------------
--- Toy
-un(1, i(105914)), -- Danger Detector Boots
-un(1, i(105915)), -- Danger Detector Harness
--- Shirt
-un(1, i(53869)), -- War Paint (Shirt) NOT GOOD FOR THE LADIES (NYI)
-un(1, i(60619)), -- No Shirt
-un(1, i(63074)), -- "Behind You!" Shirt
-un(1, i(129294)), -- Bonespeaker Tatoos
-un(1, i(137118)), -- The Crone's Shirt
-un(1, i(137552)), -- Purple Shirt
 
 --  Hiding this information here so it's not spammy in the addon, but provides additional information to the user in Zul'Gurub "Cache of Madness"
 n(52446, { -- Ancient Dwarven Artifact
