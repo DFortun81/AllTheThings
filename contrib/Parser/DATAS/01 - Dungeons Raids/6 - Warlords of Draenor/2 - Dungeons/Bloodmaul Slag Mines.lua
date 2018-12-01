@@ -229,9 +229,6 @@ _.Instances =
 					d(2, {	-- Heroic
 						["lvl"] = 100,
 						["groups"] = {
-							n(-17, {	-- Quests 		
-								un(40, q(35990)), -- Core of Flame
-							}),	
 							cr(74787, e(888, {	-- Slave Watcher Crushto
 								i(110040),	-- Crushto's Neck Separator
 								i(109939),	-- Streamslither Spaulders
@@ -448,9 +445,6 @@ _.Instances =
 					d(23, {	-- Mythic
 						["lvl"] = 100,
 						["groups"] = {
-							n(-17, {	-- Quests 		
-								un(40, q(35990)), -- Core of Flame
-							}),	
 							cr(74787, e(888, {	-- Slave Watcher Crushto
 								i(110040),	-- Crushto's Neck Separator
 								i(109939),	-- Streamslither Spaulders

@@ -280,7 +280,6 @@ _.Instances =
 								q(37165, {
 									i(118935), -- Ever-Blooming Frond ["isToy"] = True
 								}),	
-								un(40, q(35992)), -- Core of Life
 							}),	
 							cr(81522, e(1214, {	-- Witherbark
 								i(119175),	-- Leafhide Penetrator
@@ -532,9 +531,6 @@ _.Instances =
 					}),
 					d(23, {	-- Mythic
 						["groups"] = {
-							n(-17, {	-- Quests 		
-								un(40, q(35992)), -- Core of Life
-							}),	
 							cr(81522, e(1214, { -- Witherbark
 								i(119175),	-- Leafhide Penetrator
 								i(109912),	-- Bloody-Blade Drape

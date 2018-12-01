@@ -8,10 +8,6 @@ _.Instances =
 		["groups"] = {
 			inst(477, {	-- Highmaul
 				["groups"] = {
-					n(-17, {	-- Quests 		
-						un(40, q(35998)), -- Legacy of the Sorcerer Kings
-						un(40, q(35997)), -- Empire's Fall
-					}),
 					d(17, {	-- LFR
 						ach(8986, {	-- The Walled City	
 							["crs"] = {

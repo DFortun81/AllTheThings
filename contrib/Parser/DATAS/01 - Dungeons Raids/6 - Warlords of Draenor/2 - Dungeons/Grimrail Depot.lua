@@ -190,7 +190,6 @@ _.Instances =
 								q(37160, {
 									i(118937),  -- Gamon's Braid Toy ["isToy"] = True
 								}),		
-								un(40, q(35991)), -- Core of Flame
 							}),
 							cr(77803, e(1138, {	-- Railmaster Rocketspark
 								i(110051),	-- Overseer's Final Word
@@ -354,9 +353,6 @@ _.Instances =
 					}),
 					d(23, {		-- Mythic
 						["groups"] = {
-							n(-17, {	-- Quests 				
-								un(40, q(35991)), -- Core of Flame
-							}),
 							cr(77803, e(1138, {	-- Railmaster Rocketspark
 								i(110051),	-- Overseer's Final Word
 								i(109829),	-- Belt of Burning Focus

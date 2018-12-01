@@ -2504,7 +2504,8 @@ _.ExpansionFeatures =
 							i(122219), -- Music Roll: Way of the Monk
 							i(122215), -- Music Roll: Zul'Gurub Voodoo
 						}),
-					}),							
+					}),	
+					un(40, q(35988)), -- Call of the Archmage					
 					qh(34364, { -- For the Horde
 						i(111535),
 						i(111537),

@@ -2510,7 +2510,8 @@ _.ExpansionFeatures =
 							i(122219), -- Music Roll: Way of the Monk
 							i(122207), -- Tinkertown
 						}),
-					}),									
+					}),	
+					un(40, q(35988)), -- Call of the Archmage
 					q(34583, { 	-- For the Alliance
 						i(108908),
 						i(108909),

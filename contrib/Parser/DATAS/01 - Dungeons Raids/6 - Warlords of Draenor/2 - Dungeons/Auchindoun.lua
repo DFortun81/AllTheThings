@@ -233,7 +233,6 @@ _.Instances =
 								q(37156, {
 									i(119039), -- Lilian's Warning Sign Toy ["isToy"] = True
 								}),
-								un(40, q(35993)), -- Tackling Teron'gor
 							}),
 							cr(75839, e(1185, {	-- Vigilant Kaathar
 								i(110045),	-- Kamui's Crystalline Staff of Wizardry
@@ -444,9 +443,6 @@ _.Instances =
 					d(23, {		-- Mythic
 						["lvl"] = 100,
 						["groups"] = {
-							n(-17, {	-- Quests 		
-								un(40, q(35993)), -- Tackling Teron'gor
-							}),
 							cr(75839, e(1185, {	-- Vigilant Kaathar
 								i(110045),	-- Kamui's Crystalline Staff of Wizardry
 								i(109829),	-- Belt of Burning Focus
