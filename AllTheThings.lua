@@ -1881,7 +1881,7 @@ local function SearchForItemLink(field, link)
 												end
 												text = " |CFFFF0000!|r " .. link .. (GetDataMember("ShowItemID") and (" (" .. (otherSourceID == sourceID and "*" or otherSource.itemID or "???") .. ")") or "");
 												if otherSource.isCollected then SetDataSubMember("CollectedSources", otherSourceID, 1); end
-												text = text	.. " |CFFFF0000(MISSING IN ATT - " .. otherSourceID .. ")|r/" .. GetCollectionIcon(otherSource.isCollected);
+												text = text	.. " |CFFFF0000(MISSING IN ATT - " .. otherSourceID .. ")|r" .. DESCRIPTION_SEPARATOR .. GetCollectionIcon(otherSource.isCollected);
 												tinsert(listing, text);
 											end
 										end
