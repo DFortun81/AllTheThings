@@ -4,9 +4,9 @@
 _.Zones =
 {
 	m(572, {	-- Draenor
-		m(535, {	-- Talador
+		m(550, {	-- Nagrand (WOD)
 			["groups"] = {
-				n(-550, {	-- Legacy
+				n(-40, {	-- Legacy
 					["groups"] = {
 						n(-17, {	-- Quests
 							un(40, q(36206)), -- The Dragon's Tale

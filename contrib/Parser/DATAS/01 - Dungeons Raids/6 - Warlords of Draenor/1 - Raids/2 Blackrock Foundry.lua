@@ -66,6 +66,7 @@ _.Instances =
 									i(120379),	-- Sootfur Legwraps
 									i(116303),	-- Firecaller's Scorched Seal
 									i(116315),	-- Furyheart Talisman
+									un(40, i(115479)),	-- Heart of the Fury
 								})),
 							},
 						}),
@@ -109,6 +110,7 @@ _.Instances =
 									i(116040),	-- Magma-Mauled Leggings
 									i(116011),	-- Fixated Treads
 									i(116316),	-- Captured Flickerspark
+									un(40, i(115493)),	-- Flamebender's Tome
 								})),					
 								cr(77692, e(1162, {	-- Kromog <Legend of the Mountain>
 									{
@@ -196,6 +198,7 @@ _.Instances =
 									i(116010),	-- Incendiary Leggings
 									i(116250),	-- Impaler's Greatboots
 									i(116314),	-- Blackheart Enforcer's Medallion
+									un(40, i(115494)),	-- Draenic Thaumaturgical Orb
 								})),
 							},
 						}),
@@ -221,6 +224,7 @@ _.Instances =
 									i(116251),	-- Ironshatter Legplates
 									i(116042),	-- Ram-Carrier's Treads
 									i(116317),	-- Storage House Key
+									un(40, i(115523)),	-- Blackhand's Severed Arm
 								})),
 							},
 						}),
@@ -323,6 +327,7 @@ _.Instances =
 							i(113888),	-- Slagstomper Treads
 							i(113893),	-- Blast Furnace Door
 							i(113889),	-- Elementalist's Shielding Talisman
+							un(40, i(115479)),	-- Heart of the Fury
 						})),
 						cr(76973, e(1155, {	-- Hans'gar and Franzok (76974)
 							ach(8980),	-- Stamp Stamp Revolution
@@ -385,6 +390,7 @@ _.Instances =
 							i(113917),	-- Cinderwolf Signet
 							i(113922),	-- Seal of Unquenchable Flame
 							i(119193),	-- Horn of Screaming Spirits
+							un(40, i(115493)),	-- Flamebender's Tome
 						})),
 						cr(77692, e(1162, {	-- Kromog <Legend of the Mountain>
 							ach(8983),	-- Would You Give Me a Hand?
@@ -543,6 +549,7 @@ _.Instances =
 							i(113974),	-- Treads of the Dark Hunt
 							i(113975),	-- Uk'urogg's Corrupted Seal
 							i(113969),	-- Vial of Convulsive Shadows
+							un(40, i(115494)),	-- Draenic Thaumaturgical Orb
 						})),
 						cr(77325, e(959, {	-- Blackhand
 							ach(8952),	-- Ashes, Ashes...
@@ -755,6 +762,7 @@ _.Instances =
 							i(113984),	-- Blackiron Micro Crucible
 							i(113983),	-- Forgemaster's Insignia
 							i(113985),	-- Humming Blackiron Trigger
+							un(40, i(115523)),	-- Blackhand's Severed Arm
 						})),
 					}),
 					d(15, {		-- Heroic
@@ -855,6 +863,7 @@ _.Instances =
 							i(113888),	-- Slagstomper Treads
 							i(113893),	-- Blast Furnace Door
 							i(113889),	-- Elementalist's Shielding Talisman
+							un(40, i(115479)),	-- Heart of the Fury
 						})),
 						cr(76973, e(1155, {	-- Hans'gar and Franzok (76974)
 							ach(8980),	-- Stamp Stamp Revolution
@@ -917,6 +926,7 @@ _.Instances =
 							i(113917),	-- Cinderwolf Signet
 							i(113922),	-- Seal of Unquenchable Flame
 							i(119193),	-- Horn of Screaming Spirits
+							un(40, i(115493)),	-- Flamebender's Tome
 						})),
 						cr(77692, e(1162, {	-- Kromog <Legend of the Mountain>
 							ach(8983),	-- Would You Give Me a Hand?
@@ -1075,6 +1085,7 @@ _.Instances =
 							i(113974),	-- Treads of the Dark Hunt
 							i(113975),	-- Uk'urogg's Corrupted Seal
 							i(113969),	-- Vial of Convulsive Shadows
+							un(40, i(115494)),	-- Draenic Thaumaturgical Orb
 						})),
 						cr(77325, e(959, {	-- Blackhand
 							{
@@ -1291,6 +1302,7 @@ _.Instances =
 							i(113984),	-- Blackiron Micro Crucible
 							i(113983),	-- Forgemaster's Insignia
 							i(113985),	-- Humming Blackiron Trigger
+							un(40, i(115523)),	-- Blackhand's Severed Arm
 						}))
 					}),
 					d(16, {		-- Mythic
@@ -1394,6 +1406,7 @@ _.Instances =
 							i(113888),	-- Slagstomper Treads
 							i(113893),	-- Blast Furnace Door
 							i(113889),	-- Elementalist's Shielding Talisman
+							un(40, i(115479)),	-- Heart of the Fury
 						})),
 						cr(76973, e(1155, {	-- Hans'gar and Franzok (76974)
 							ach(8980),	-- Stamp Stamp Revolution
@@ -1458,6 +1471,7 @@ _.Instances =
 							i(113917),	-- Cinderwolf Signet
 							i(113922),	-- Seal of Unquenchable Flame
 							i(119193),	-- Horn of Screaming Spirits
+							un(40, i(115493)),	-- Flamebender's Tome
 						})),
 						cr(77692, e(1162, {	-- Kromog <Legend of the Mountain>
 							ach(8983),	-- Would You Give Me a Hand?
@@ -1620,6 +1634,7 @@ _.Instances =
 							i(113974),	-- Treads of the Dark Hunt
 							i(113975),	-- Uk'urogg's Corrupted Seal
 							i(113969),	-- Vial of Convulsive Shadows
+							un(40, i(115494)),	-- Draenic Thaumaturgical Orb
 						})),
 						cr(77325, e(959, {	-- Blackhand
 							{
@@ -1848,6 +1863,7 @@ _.Instances =
 							i(113984),	-- Blackiron Micro Crucible
 							i(113983),	-- Forgemaster's Insignia
 							i(113985),	-- Humming Blackiron Trigger
+							un(40, i(115523)),	-- Blackhand's Severed Arm
 						}))
 					})
 				},
