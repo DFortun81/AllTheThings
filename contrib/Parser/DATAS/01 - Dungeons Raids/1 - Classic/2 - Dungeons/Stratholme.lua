@@ -480,6 +480,9 @@ _.Instances =
 										un(2, i(16709)),	-- Shadowcraft Pants
 										un(2, i(16719)),	-- Wildheart Kilt
 									})),
+									un(43, n(16387, {	-- Atiesh <Hand of Sargeras>
+										un(15, i(22736)),	-- Andonisus, Reaper of Souls
+									})),
 								},
 							}),
 						},

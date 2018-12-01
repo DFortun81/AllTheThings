@@ -38,6 +38,8 @@ _.NeverImplemented =
 			un(1, i(78017)),	-- Replica Magister's Leggings (Cloth)
 			un(1, i(4989)),	-- Mage Dragon Robe (intended to be quest reward, never made it to live?)
 			un(1, i(4990)),	-- Scorched Bands
+			un(1, i(90358)),	-- Honorary Combat Engineer's Silk Trousers
+			un(1, i(90359)),	-- Honorary Combat Engineer's Satin Leggings
 			un(1, i(10010)),	-- Stormcloth Pants
 			un(1, i(10011)),	-- Stormcloth Gloves
 			un(1, i(10020)),	-- Stormcloth Vest
@@ -95,6 +97,9 @@ _.NeverImplemented =
 		}),
 		n(-44, { -- Leather
 			un(1, i(54655)),	-- Stormshroud Armor (Leather)
+			un(1, i(25975)),	-- Gloves of Preservation (not added version)
+			un(1, i(25976)),	-- Lurking Shadow Spaulders (only beta)
+			un(1, i(26029)),	-- Watchman's Bracers
 		}),
 		n(-45, { -- Mail
 			cl(7, {	-- Shaman
@@ -212,6 +217,7 @@ _.NeverImplemented =
 			un(1, i(21588)),	    -- Wristguards of Elemental Fury (never added to live)
 			un(1, i(21612)),	    -- Wormscale Stompers (never added to live)
 			un(1, i(38387)),	    -- Grizzled Hat
+			un(1, i(25794)),	    -- Bone Studded Girdle (not out of beta)
 			un(1, i(38388)),	    -- Cap of the North
 			un(1, i(38389)),	    -- Comfy Raccoonskin Hat
 			un(1, i(38390)),	    -- The Rugged Marksman
@@ -278,7 +284,7 @@ _.NeverImplemented =
 				un(1, i(154047)), -- Oathsworn Defender Stone
 			}),
 		}),
-		n(-45, { -- Cloaks
+		n(-322, { -- Cloaks
 			un(1, i(22230)),	-- Frightmaw Hide (Cloak)
 			un(1, i(157751)), -- Drape of New Beginnings
 			un(1, i(134693)), -- Enveloping Cape
@@ -307,12 +313,39 @@ _.NeverImplemented =
 		un(1, i(111810)),	-- Barracks, Level 1 - unused version (used version is 111956)
 		un(1, i(134013)), -- Chef's Hat [Likely the cosmetic effect from when you use the toy]
 		un(1, i(130156)),	-- Crane Bag
+		un(1, i(116130)),	-- Draenic Crystal Fragments (Did not make it out of beta)
+		un(1, i(25497)),	-- Broken Balanced Stone Dirk
+		un(1, i(28025)),	-- Video Mount
+		un(1, i(28261)),	-- Video Invis Broken Fitz's Throwing Axe
+		un(1, i(25641)),	-- Broken Fitz's Throwing Axe
+		un(1, i(33564)),	-- World Drop Certificate
+		un(1, i(33565)),	-- Uncommon Drop Certificate
+		un(1, i(70104)),	-- Unknown
+		un(1, i(45924)),	-- Certificate of Appreciation
 	}),
 	n(-160, { -- Mounts
 		un(1, a(model(9475, i(13325)))),		-- Fluorescent Green Mechanostrider (Never added in Game)
 		un(1, h(model(11641, i(14062, {		-- Kodo Mount 						(Never added in Game)
 			{ ["mountID"]= 18363 }	
 		})))),
+		a(model(10662, n(11148, {	-- Purple Mechanostrider 				(Never added in Game)
+			["groups"] = {	
+				{ ["mountID"]= 17455 }
+			},
+			["u"] = 1,
+		}))),
+		a(model(10664, n(11149, {	-- Red and Blue Mechanostrider 			(Never added in Game)
+			["groups"] = {	
+				{ ["mountID"]= 17456 }
+			},
+			["u"] = 1,
+		}))),
+		a(model(9476, n(10180, {	-- Unpainted Mechanostrider 			(Never added in Game)
+			["groups"] = {	
+				{ ["mountID"]= 15781 }
+			},
+			["u"] = 1,
+		}))),
 		un(1, model(17890, i(25596))), 	-- Peep's Whistle	 					(Never added in Game)
 		un(1, i(8627)),	-- Reins of the Nightsaber								(Never added in Game)
 		un(1, a(model(6447, i(8628)))),	-- Reins of the Spotted Nightsaber 		(Never added in Game)
@@ -368,18 +401,14 @@ _.NeverImplemented =
 		un(1, model(65527, i(129108, {	-- Son of Goredome		 				(Never added in Game)
 		p(1751),
 	}))),
-		un(1, model(15393, i(130145, {	-- Unknown
-		p(1758),
-	}))),
-		un(1, model(15393, i(82800, {	-- "Pet Cage"
-		p(1758),
-	}))),
-		un(1, model(15393, i(62769, { 	-- Hardboiled Egg 						(Never added in Game)
+		un(1, i(130145)), -- Unknown
+		un(1, i(82800)),  -- "Pet Cage"
+		un(1, i(62769, { 	-- Hardboiled Egg 						(Never added in Game)
 		["groups"] = {				-- /dump C_PetJournal.FindPetIDByName("Hardboiled Egg")
 			p(1758),
 		},							
 		["description"] = "|cff66ccffUnable to find species for this pet, so using Black Piglet to make it so you can see the model for this pet.|r",
-	}))),
+	})),
 	un(1, model(65670, i(136907, { 	-- Black Piglet	 						(Never added in Game)
 		p(1758),
 	}))),
@@ -510,7 +539,10 @@ _.NeverImplemented =
 	}),
 	n(-161, { -- Toys
 		un(1, i(140779)),	-- Falanaar Echo
-		un(1, i(141300)), 	-- Magi Focusing Crystal
+		un(1, i(141300)), 	-- Magi Focusing Crystal	
+		un(1, i(38568)), 	-- Drakkari Charm Bracelet
+		un(1, i(38569)), 	-- Unknown	
+		un(1, i(38570)), 	-- Unknown			
 	}),
 	n(-319, { -- Weapons
 		n(-347, { -- Crossbow
@@ -533,6 +565,9 @@ _.NeverImplemented =
 			un(1, i(109445)),   -- 6.0 QA Combat Test Strength 1h Sword
 			un(1, i(109448)),   -- 7.0 QA Combat Test Caster DPS Sword
 			un(1, i(109458)),   -- 6.0 QA Combat Test Agility 1h Sword
+			un(1, i(124079)),	-- Unknown - was under WoD>1Handed Swords
+			un(1, i(124084)),	-- Unknown - was under WoD>1Handed Swords
+			un(1, i(127852)),	-- Unknown - was under WoD>1Handed Swords
 		}),
 		n(-342, { -- Staves
 			un(1, i(132474)),	-- Unknown - was under Legion>Staves
@@ -562,6 +597,9 @@ _.NeverImplemented =
 	un(1, i(23463)),	-- High Warlord's Tome of Mending
 	un(1, i(32191)),	-- Chancellor's Battletome
 	un(1, i(42523)),	-- Savage Gladiator's Endgame
+	un(1, i(129735)), 	-- Verus
+	un(1, i(129736)), 	-- Verus
+	un(1, i(129737)), 	-- Verus
 	un(1, i(42529)),	-- Savage Gladiator's Reprieve
 	un(1, i(42535)),	-- Savage Gladiator's Grimoire
 	un(1, i(80980)),	-- Axe of Aborted Deforestation (Never made it to Live, yet into our Appearances Tab)
@@ -638,21 +676,21 @@ _.NeverImplemented =
 	un(1, i(23432)),	-- Engraved Greatsword
 	un(1, i(32186)),	-- Chancellor's Warblade
 	un(1, i(54553)),	-- Kliklak's Fearsome Greatsword (never made it to live)
-	}),
 	un(1, i(157650)), -- Tracker's Spear
 	un(1, i(157648)), -- Oakenstaff Protector
 	un(1, i(157620)), -- Halberd of Ferocity
-	un(1, i(151377)), -- Arne Test Heirloom - Bloodied Arcanite Reaper
-	un(1, i(166699)),	-- Desert Rucksack
-	un(1, i(150715)), -- Illidari Warglaive
-	un(1, i(3738)),	-- Brewing Rod
-	un(1, i(1216)),	-- Frost Bracers
 	un(1, i(32173)),	-- Chancellor's Bonecracker
 	un(1, i(32176)),	-- Chancellor's Pummeler
 	un(1, i(38468)),	-- Kalu'ak Peacebringer
 	un(1, i(107390)),	-- Obliterator Firing Lever
 	un(1, i(115296)),	-- Spectral Warmace
 	un(1, i(115299)),	-- Spectral Scepter
+	un(1, i(150715)), -- Illidari Warglaive
+	un(1, i(3738)),	-- Brewing Rod
+	}),
+	un(1, i(151377)), -- Arne Test Heirloom - Bloodied Arcanite Reaper
+	un(1, i(166699)),	-- Desert Rucksack
+	un(1, i(1216)),	-- Frost Bracers
 	un(1, i(6273)),	-- Green Woolen Robe
 	un(1, i(6478)),	-- Rat Stompers
 	un(1, i(18316)),	-- Obsidian Bauble
@@ -660,8 +698,6 @@ _.NeverImplemented =
 	un(1, i(56701)),	-- Jinxed Vest (never made it to live)
 	un(1, i(56702)),	-- Saw Blade (never made it to live)
 	un(1, i(5255)),	-- Quilboar Tomahawk
-	un(1, i(90358)),	-- Honorary Combat Engineer's Silk Trousers
-	un(1, i(90359)),	-- Honorary Combat Engineer's Satin Leggings
 	un(1, i(17142)),	-- Shard of the Defiler
 	un(1, i(140011)),	-- Duskwatch Adjudicator's Pauldrons
 	un(1, i(44972)), -- Alarming Clockbot (NOT IN USE)
@@ -728,9 +764,6 @@ _.NeverImplemented =
 	un(1, i(120273)), 	-- High Warlord's Razor [This version never implemented]
 	un(1, i(128824)), 	-- Tome of the Silver Hand		
 	un(1, i(129111)),	-- Kvaldir Raiding Horn
-	un(1, i(129735)), 	-- Verus
-	un(1, i(129736)), 	-- Verus
-	un(1, i(129737)), 	-- Verus
 	un(1, i(130249)),	-- Waywatcher's Boon
 	un(1, i(134112)), 	-- Hidden Shoulder
 	un(1, i(136593)), 	-- Doomhammer Offhand Appearance Record (referenced by actual item)	
@@ -778,24 +811,6 @@ _.NeverImplemented =
 	model(36130, n(48377, {["u"] = 1,})),	-- Swirling Stormling 		(Never added in Game)
 	model(36131, n(48378, {["u"] = 1,})), 	-- Whirling Waveling 		(Never added in Game)
 	model(29060, n(34031, {["u"] = 1,})), 	-- XS-001 Constructor Bot 	(Never added in Game)
-	a(model(10662, n(11148, {	-- Purple Mechanostrider 				(Never added in Game)
-		["groups"] = {	
-			{ ["mountID"]= 17455 }
-		},
-		["u"] = 1,
-	}))),
-	a(model(10664, n(11149, {	-- Red and Blue Mechanostrider 			(Never added in Game)
-		["groups"] = {	
-			{ ["mountID"]= 17456 }
-		},
-		["u"] = 1,
-	}))),
-	a(model(9476, n(10180, {	-- Unpainted Mechanostrider 			(Never added in Game)
-		["groups"] = {	
-			{ ["mountID"]= 15781 }
-		},
-		["u"] = 1,
-	}))),
 
 	i(20560),
 	i(41596),

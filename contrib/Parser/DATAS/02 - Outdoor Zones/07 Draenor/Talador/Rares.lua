@@ -27,6 +27,14 @@ _.Zones =
 									},
 								},
 							},
+							{	-- Amethyl Crystal
+								["objectID"] = 227955,	-- Amethyl Crystal
+								["questID"] = 34236,
+								["coord"] = { 62.1, 32.5 },
+								["g"] = {
+									i(116131),	-- Amethyl Crystal
+								},
+							},
 							{	-- Avatar of Socrethar
 								["npcID"] = 88043,	-- Avatar of Socrethar
 								["questID"] = 37338,

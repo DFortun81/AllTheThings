@@ -611,6 +611,13 @@ _.Zones =
 								["races"] = { 10 },	-- Blood Elf
 								["classes"] = { 5 },	-- Priest
 							})),
+							un(40, qh(9673, {	-- Beast Training
+								["groups"] = {
+									un(2, i(24136)),	-- Farstrider's Bow
+								},
+								["races"] = { 10 },	-- Blood Elf
+								["classes"] = { 3 },	-- Hunter
+							})),
 						}),
 						--n(-16, {	-- Rares (Legacy)
 						--}),

@@ -114,6 +114,19 @@ _.Instances =
 						i(69623),	-- Vestments of the Soulflayer
 						h(i(122215)),	-- Music Roll: Zul'Gurub Voodoo
 					})),
+					-- Elite Mobs
+					n(52418,  {	-- Lost Offspring of Gahz'ranka
+						i(70719,  {	-- Water-Filled Gills
+							i(52326),	-- Volatile Water
+						}),
+					}),
+					n(52442,  {	-- Florawing Hive Queen
+						i(69817,  {	-- Hive Queen's Honeycomb
+							i(52328),	-- Volatile Air
+							i(52329),	-- Volatile Life
+							i(52987),	-- Twilight Jasmine
+						}),
+					}),
 				},
 				["lvl"] = 85,
 				["mapID"] = 337
