@@ -3958,6 +3958,8 @@ end
 	local arrOfNodes = {
 		1,		-- Durotar (All of Kalimdor)
 		36,		-- Burning Steppes (All of Eastern Kingdoms)
+		94,     -- Eversong Woods (and Ghostlands + Isle of Quel'Danas)
+		97,     -- Azuremyst Isle (and Bloodmyst)
 		100,	-- Hellfire Peninsula (All of Outland)
 		118,	-- Icecrown (All of Northrend)
 		422,	-- Dread Wastes (All of Pandaria)
