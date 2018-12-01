@@ -152,7 +152,11 @@ _.Zones =
 					ach(12074, { -- Shoot First, Loot Later
 						o(276490, { -- Krokul Emergency Cache
 							["groups"] = {
-								i(153304), --Oronaar Miner's Dredger
+								{
+									["achievementID"] = 12074,	-- Shoot First, Loot Later
+									["criteriaID"] = 1,	-- Krokul Emergency Cache
+								},
+								i(153304), -- Oronaar Miner's Dredger
 							},
 							["questID"] = 48884,
 							["description"] = "This chest is located at |cFFFFFFFF50.7,75.3|r in Krokruun. You will need |cFFFFD700Lightforged Warframe|r to get into the cave.",
@@ -162,6 +166,10 @@ _.Zones =
 						}),
 						o(277343, {	-- Long-Lost Augari Treasure
 							["groups"] = {
+								{
+									["achievementID"] = 12074,	-- Shoot First, Loot Later
+									["criteriaID"] = 20,	-- Long-Lost Augari Treasure
+								},
 								i(153284),	-- Augari Wakener's Treads
 							},
 							["questID"] = 49154,
@@ -171,7 +179,11 @@ _.Zones =
 						}),
 						o(277344, {	-- Precious Augari Keepsakes
 							["groups"] = {
-								i(153283), --Augari Wakener's Vestments
+								{
+									["achievementID"] = 12074,	-- Shoot First, Loot Later
+									["criteriaID"] = 21,	-- Precious Augari Keepsakes
+								},
+								i(153283), -- Augari Wakener's Vestments
 							},
 							["questID"] = 49156,
 							["icon"] = "Interface\\Icons\\inv_misc_treasurechest04d",
@@ -891,7 +903,7 @@ _.Zones =
 					}),
 					n(122912, { -- Commander Sathrenael
 						["groups"] = {
-							-- i(153113), -- Demon's Soulstone
+							i(153113), -- Demon's Soulstone
 						},
 						["questID"] = 48562,
 					}),
@@ -1064,7 +1076,7 @@ _.Zones =
 					}),
 					n(125388, { -- Vagath the Betrayed
 						["groups"] = {
-							-- i(153114), -- Nathrezim Tome of Manipulation
+							i(153114), -- Nathrezim Tome of Manipulation
 						},
 						["questID"] = 48629,
 					}),
@@ -1095,7 +1107,7 @@ _.Zones =
 							["requireSkill"] = 171,	-- Alchemy
 							["g"] = {
 								{	-- Recipe: Tears of the Naaru (Rank 2)
-									["itemID"] = 151704,	-- -- Recipe: Tears of the Naaru (Rank 2)
+									["itemID"] = 151704,	-- Recipe: Tears of the Naaru (Rank 2)
 								},
 							},
 						},
@@ -1260,6 +1272,9 @@ _.Zones =
 							model(79440, ach(12103, { -- ...And Chew Mana Buns
 								i(153041), -- Bleakhoof Ruinstrider
 							})),
+							ach(12104, {	-- And We're All Out of Mana Buns
+								title(367),		-- Demonslayer
+							}),
 							ach(12078, { -- Commander of Argus
 								i(152396, { -- Arsenal: Weapons of the Lightforged
 									i(152332), -- Brilliant Daybreak Aegis
