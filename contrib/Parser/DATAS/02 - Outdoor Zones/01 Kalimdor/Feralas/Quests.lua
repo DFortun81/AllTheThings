@@ -173,12 +173,6 @@ _.Zones =
 							},
 						}),
 						crit(4, {	-- Freed
-							{	-- The Darkmist Ruins (is this required?)
-								["questID"] = 25643,
-								["qg"] = 5390,	-- Sage Palerunner
-								["coord"] = { 75.0, 42.7 },
-								["races"] = HORDE_ONLY,
-							},
 							{	-- Ancient Suffering
 								["questID"] = 25423,
 								["qg"] = 40131,	-- Sensiria
@@ -261,6 +255,7 @@ _.Zones =
 						["qg"] = 4544,	-- Krueg Skullsplitter
 						["coord"] = { 74.8, 43.3 },
 						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 25345,	-- Faerie Dragon Muisek
 					},
 					{	-- Adella's Covert Camp
 						["questID"] = 26574,
@@ -300,6 +295,15 @@ _.Zones =
 						["qg"] = 7776,	-- Talo Thornhoof
 						["coord"] = { 41.5, 15.2 },
 						["races"] = HORDE_ONLY,
+					},
+					{	-- Empty Pedestal
+						["objectID"] = 203134,
+						["groups"] = {
+							{	-- Return to Vestia
+								["questID"] = 26401,
+								["races"] = ALLIANCE_ONLY,
+							},
+						},
 					},
 					{	-- Estulan's Examination
 						["questID"] = 25402,
@@ -468,6 +472,7 @@ _.Zones =
 						["questID"] = 25454,
 						["qg"] = 39896,	-- Feral Scar Yeti
 						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 25452,	-- The Mark of Quality
 					},
 					{	-- Perfect Yeti Hide
 						["itemID"] = 55166,
@@ -490,19 +495,10 @@ _.Zones =
 						["coord"] = { 53.3, 55.6 },
 						["sourceQuest"] = 25475,	-- Find OOX-22/FE!
 					},
-					{	-- Empty Pedestal
-						["objectID"] = 203134,
-						["groups"] = {
-							{	-- Return to Vestia
-								["questID"] = 26401,
-								["races"] = ALLIANCE_ONLY,
-							},
-						},
-					},
 					{	-- Rulers of Dire Maul
 						["questID"] = 25252,
 						["qg"] = 39656,	-- Orhan Ogreblade
-						["coord"] = { 21.9, 48.0 },
+						["coord"] = { 51.9, 48.0 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 25209,	-- The Gordunni Threat
 					},
@@ -624,20 +620,11 @@ _.Zones =
 						["qg"] = 3936,	-- Shandris Feathermoon
 						["races"] = ALLIANCE_ONLY,
 					},
-					{	-- Woodpaw Battle Map
-						["objectID"] = 142195,
-						["coord"] = { 71.6, 55.9 },
-						["groups"] = {
-							{	-- The Battle Plans
-								["questID"] = 25366,
-								["groups"] = {
-									i(54950),	-- Swiftstride Boots
-									i(54949),	-- Hadoken Band
-								},
-								["races"] = HORDE_ONLY,
-								["sourceQuest"] = 25365,	-- Woodpaw Investigation
-							},
-						},
+					{	-- The Darkmist Ruins
+						["questID"] = 25643,
+						["qg"] = 5390,	-- Sage Palerunner
+						["coord"] = { 75.0, 42.7 },
+						["races"] = HORDE_ONLY,
 					},
 					{	-- The Gordunni Orb
 						["questID"] = 25401,
@@ -769,6 +756,21 @@ _.Zones =
 						["questID"] = 25426,
 						["qg"] = 39725,	-- Adella
 						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- Woodpaw Battle Map
+						["objectID"] = 142195,
+						["coord"] = { 71.6, 55.9 },
+						["groups"] = {
+							{	-- The Battle Plans
+								["questID"] = 25366,
+								["groups"] = {
+									i(54950),	-- Swiftstride Boots
+									i(54949),	-- Hadoken Band
+								},
+								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 25365,	-- Woodpaw Investigation
+							},
+						},
 					},
 					{	-- Woodpaw Investigation
 						["questID"] = 25365,
