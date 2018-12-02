@@ -13,6 +13,16 @@ _.Instances =
 							qg(64738, q(31493)),	-- Just for Safekeeping, Of Course
 							qg(64738, q(31490)),	-- Rank and File
 						}),
+						n(0, { 		-- Zone Drop
+							i(7786, {    -- Headsplitter
+								["crs"] = {
+									59241,    -- Scarlet Treasurer
+									58876,    -- Starving Hound
+									59293,    -- Scarlet Cannoneer
+									59372,    -- Scarlet Scholar
+								},
+							}),					
+						}),
 						cr(59303, e(660, {	-- Houndmaster Braun
 							i(88264),	-- Houndmaster's Compound Crossbow
 							i(88268),	-- Canine Commander's Breastplate

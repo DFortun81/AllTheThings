@@ -573,6 +573,7 @@ _.Zones =
 						i(13114),	-- Troll's Bane Leggings
 						i(6592),	-- Battleforge Armor
 						i(7728),	-- Beguiler Robes
+						i(7786),    -- Headsplitter
 					},
 					["crs"] = {
 						4284, -- Scarlet Augur		

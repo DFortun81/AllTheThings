@@ -663,7 +663,11 @@ _.NeverImplemented =
 		un(1, i(119221)),	-- Horde Gladiator's Banner		
 	}),
 	n(-319, { -- Weapons
-		n(-347, { -- Crossbow
+		n(-347, { -- Bows
+			un(1, i(108783)),    -- Unknown
+			un(1, i(109283)),    -- 6.0 QA Combat Test Hunter Bow
+		}),
+		n(-346, { -- Crossbows
 			un(1, i(32187)),    -- Chancellor's Heavy Crossbow
 		}),
 		n(-333, { -- Daggers

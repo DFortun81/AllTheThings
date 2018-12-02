@@ -31,6 +31,11 @@ _.Instances =
 								7754,	-- Scarlet Sentry
 							},
 						}),
+						i(7786, {	-- Headsplitter
+							["crs"] = {
+								7754,	-- Scarlet Sentry
+							},
+						}),
 						i(10329),	-- Scarlet Belt
 						i(10332),	-- Scarlet Boots
 						i(10328),	-- Scarlet Chestpiece
