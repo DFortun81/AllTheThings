@@ -546,7 +546,7 @@ _.Zones =
 					qg(, qa(31917)),	-- A Tamer's Homecoming
 					qg(, qh(26404)),	-- Above My Pay Grade
 --]]					
-					qg(7406, q(3721, { -- An OOX of Your Own
+					qg(7406, q(3721, { -- An OOX of Your Own -- TODO:: These quests should be put in their respective zones
 						["groups"] = {
 							q(351, { -- Find OOX-17/TN!
 								["groups"] = {

@@ -509,7 +509,10 @@ _.Zones =
 					}),
 					qh(25487, {	-- The Grimtotem are Coming
 						["qg"] = 39895,	-- Kanati Greycloud
-						["sourceQuests"] = { 25478 },	-- To the Summit
+						["sourceQuests"] = {
+							25356,	-- To the Summit (Feralas)
+							25478,	-- To the Summit (Dustwallow Marsh)
+						},
 					}),
 					q( 25704, {	-- The Mad Magus
 						["groups"] = {

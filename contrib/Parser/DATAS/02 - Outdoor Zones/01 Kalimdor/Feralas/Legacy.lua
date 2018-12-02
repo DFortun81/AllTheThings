@@ -45,6 +45,7 @@ _.Zones =
 								},
 								["qg"] = 7852, -- Pratt McGrubben                
 							})),
+							un(40, q(25305)),	-- Never Look Back
 							un(40, qa(4267, {	-- Rise of the Silithid
 								un(2, i(34416)),	-- Gloves of the Dune
 								un(2, i(34417)),	-- Marauder's Handwraps
