@@ -28,11 +28,11 @@ _.Zones =
 							un(40, q(36009)), -- Heart of the Fury
 							un(40, q(36006)), -- Hunter: Hunted
 							un(40, q(35989, {	-- Khadgar's Task
-								un(2, i(118290)),	-- Solium Band of Might
-								un(2, i(118291)),	-- Solium Band of Wisdom
-								un(2, i(118292)),	-- Solium Band of Dexterity
-								un(2, i(118293)),	-- Solium Band of Endurance
-								un(2, i(118294)),	-- Solium Band of Mending
+								un(4, i(118290)),	-- Solium Band of Might
+								un(4, i(118291)),	-- Solium Band of Wisdom
+								un(4, i(118292)),	-- Solium Band of Dexterity
+								un(4, i(118293)),	-- Solium Band of Endurance
+								un(4, i(118294)),	-- Solium Band of Mending
 							})),
 							un(40, q(35998)), -- Legacy of the Sorcerer Kings
 							un(40, q(37834, {	-- Orb of Dominion
@@ -42,6 +42,7 @@ _.Zones =
 							un(40, q(36012)), -- Reverse Piracy
 							un(40, q(36157)), -- Spires of the Betrayer
 							un(40, q(35993)), -- Tackling Teron'gor
+							un(40, q(37841)), -- The Final Assault
 							un(40, q(36016, {	-- The Unbroken Circle
 								un(4, i(118305)),	-- Spellbound Runic Band of Elemental Power
 								un(4, i(118306)),	-- Spellbound Runic Band of the All-Seeing Eye

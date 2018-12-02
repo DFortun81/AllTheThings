@@ -82,6 +82,43 @@ _.Zones =
 							},
 							["coord"] = { 71.6, 30.2 },
 						}),
+						n(86949, {	-- Zooti Fizzlefury 
+							["groups"] = { 
+								currency(1191, { -- Valor
+									un(2, i(127785, { -- Crystallized Fel
+										["f"] = 50, 
+									})),
+								}),
+								un(4, i(118290)),	-- Solium Band of Might
+								un(4, i(118291)),	-- Solium Band of Wisdom
+								un(4, i(118292)),	-- Solium Band of Dexterity
+								un(4, i(118293)),	-- Solium Band of Endurance
+								un(4, i(118294)),	-- Solium Band of Mending
+								un(4, i(118305)),	-- Spellbound Runic Band of Elemental Power
+								un(4, i(118306)),	-- Spellbound Runic Band of the All-Seeing Eye
+								un(4, i(118307)),	-- Spellbound Runic Band of Unrelenting Slaughter
+								un(4, i(118308)),	-- Spellbound Runic Band of Elemental Invincibility
+								un(4, i(118309)),	-- Spellbound Runic Band of Infinite Preservation
+								un(4, i(118300)),	-- Spellbound Solium Band of Sorcerous Strength
+								un(4, i(118301)),	-- Spellbound Solium Band of the Kirin-Tor
+								un(4, i(118302)),	-- Spellbound Solium Band of Fatal Strikes
+								un(4, i(118303)),	-- Spellbound Solium Band of Sorcerous Invincibility
+								un(4, i(118304)),	-- Spellbound Solium Band of the Immortal Spirit
+								un(4, i(118295)),	-- Timeless Solium Band of Brutality
+								un(4, i(118296)),	-- Timeless Solium Band of the Archmage
+								un(4, i(118297)),	-- Timeless Solium Band of the Assassin
+								un(4, i(118298)),	-- Timeless Solium Band of the Bulwark
+								un(4, i(118299)),	-- Timeless Solium Band of Lifegiving
+								un(4, i(124634)),	-- Thorasus, the Stone Heart of Draenor
+								un(4, i(124635)),	-- Nithramus, the All-Seer
+								un(4, i(124636)),	-- Maalus, the Blood Drinker
+								un(4, i(124637)),	-- Sanctus, Sigil of the Unbroken
+								un(4, i(124638)),	-- Etheralus, the Eternal Reward
+							},
+							["coords"] = {
+								{ 85.0, 31.0 },	-- 
+							},
+						}),
 					}),
 				},
 			},		

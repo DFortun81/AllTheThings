@@ -9,6 +9,25 @@ _.Instances =
 			inst(669, { 	-- Hellfire Citadel
 				["groups"] = {
 					d(17, {		-- LFR
+						n(0, {	-- Zone Drop
+							un(40, i(127115, {	-- Tome of Chaos
+								["crs"] = {
+									95068,	-- Hellfire Assault
+									90284,	-- Iron Reaver
+									90776,	-- Kormrok
+									92146,	-- Hellfire High Council
+									90378,	-- Kilrogg
+									91809,	-- Gorefiend
+									95067,	-- Shadow-Lord Iskar
+									90296,	-- Socrethar
+									93439,	-- Tyrant Velhari
+									89890,	-- Fel Lord Zakuun
+									93068,	-- Xhul
+									91349,	-- Manno
+									91331,	-- Archi
+								},
+							})),
+						}),
 						ach(10023, { 	-- Hellbreach
 							["crs"] = {
 								94870,	-- Seer Kazal <Shadowmoon Exile>
@@ -285,6 +304,23 @@ _.Instances =
 							i(124252),	-- Jungle Assassin's Footpads
 							i(124288),	-- Unhallowed Voidlink Boots
 							i(118840),	-- Firecrystal Chain
+							un(40, i(127115, {	-- Tome of Chaos
+								["crs"] = {
+									95068,	-- Hellfire Assault
+									90284,	-- Iron Reaver
+									90776,	-- Kormrok
+									92146,	-- Hellfire High Council
+									90378,	-- Kilrogg
+									91809,	-- Gorefiend
+									95067,	-- Shadow-Lord Iskar
+									90296,	-- Socrethar
+									93439,	-- Tyrant Velhari
+									89890,	-- Fel Lord Zakuun
+									93068,	-- Xhul
+									91349,	-- Manno
+									91331,	-- Archi
+								},
+							})),
 						}),
 						cr(95068, e(1426, {	-- Hellfire Assault (Siegemaster Mar'tak)
 							i(124365),	-- Blackfuse Company Utility Knife
@@ -649,6 +685,7 @@ _.Instances =
 								i(124514),	-- Seed of Creation
 								i(124516),	-- Tome of Shifting Words
 							}),
+							un(2, i(127785)),	-- Crystallized Fel
 						}))
 					}),
 					d(15, {		-- Heroic
@@ -672,6 +709,23 @@ _.Instances =
 							i(124252),	-- Jungle Assassin's Footpads
 							i(124288),	-- Unhallowed Voidlink Boots
 							i(118840),	-- Firecrystal Chain
+							un(40, i(127115, {	-- Tome of Chaos
+								["crs"] = {
+									95068,	-- Hellfire Assault
+									90284,	-- Iron Reaver
+									90776,	-- Kormrok
+									92146,	-- Hellfire High Council
+									90378,	-- Kilrogg
+									91809,	-- Gorefiend
+									95067,	-- Shadow-Lord Iskar
+									90296,	-- Socrethar
+									93439,	-- Tyrant Velhari
+									89890,	-- Fel Lord Zakuun
+									93068,	-- Xhul
+									91349,	-- Manno
+									91331,	-- Archi
+								},
+							})),
 						}),
 						cr(95068, e(1426, {	-- Hellfire Assault (Siegemaster Mar'tak)
 							i(124365),	-- Blackfuse Company Utility Knife
@@ -1042,6 +1096,7 @@ _.Instances =
 								i(124514),	-- Seed of Creation
 								i(124516),	-- Tome of Shifting Words
 							}),
+							un(2, i(127785)),	-- Crystallized Fel
 						})),
 					}),
 					d(16, {		-- Mythic
@@ -1064,6 +1119,23 @@ _.Instances =
 							i(124350),	-- Girdle of Demonic Wrath
 							i(124252),	-- Jungle Assassin's Footpads
 							i(124288),	-- Unhallowed Voidlink Boots
+							un(40, i(127115, {	-- Tome of Chaos
+								["crs"] = {
+									95068,	-- Hellfire Assault
+									90284,	-- Iron Reaver
+									90776,	-- Kormrok
+									92146,	-- Hellfire High Council
+									90378,	-- Kilrogg
+									91809,	-- Gorefiend
+									95067,	-- Shadow-Lord Iskar
+									90296,	-- Socrethar
+									93439,	-- Tyrant Velhari
+									89890,	-- Fel Lord Zakuun
+									93068,	-- Xhul
+									91349,	-- Manno
+									91331,	-- Archi
+								},
+							})),
 						}),
 						cr(95068, e(1426, {	-- Hellfire Assault (Siegemaster Mar'tak)
 							i(124365),	-- Blackfuse Company Utility Knife
@@ -1430,6 +1502,7 @@ _.Instances =
 								i(124514),	-- Seed of Creation
 								i(124516),	-- Tome of Shifting Words
 							}),
+							un(2, i(127785)),	-- Crystallized Fel
 						})),
 					})
 				},
