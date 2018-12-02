@@ -809,6 +809,9 @@ _.NeverImplemented =
 			un(1, i(131739)),	-- Unknown, tagged as 2Hand Sword
 			un(1, i(131741)),	-- Unknown, tagged as 2Hand Sword
 			un(1, i(131742)),	-- Unknown, tagged as 2Hand Sword
+			un(1, i(108806)),	-- Unknown, tagged as 2Hand Sword
+			un(1, i(109373)),	-- 6.0 QA Combat Test Strength 2h Sword
+			un(1, i(122747)),	-- Unknown
 		}),
 		n(-340, { -- War Glaives
 			un(1, i(129735)), 	-- Verus

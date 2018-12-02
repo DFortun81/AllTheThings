@@ -9,6 +9,8 @@ _.WorldEvents =
 				["groups"] = {
 					n(-548, {	-- China Only
 						i(103630),	-- Lucky Riding Turtle
+						i(103629),	-- Lucky Satchel
+						i(103631),	-- Lucky Path of Cenarius
 					}),
 				},
 				["u"] = 3,

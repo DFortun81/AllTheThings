@@ -13,9 +13,22 @@ _.Zones =
 						a(spell(170108, {	-- Smuggling Run!
 							["groups"] = {
 								na(82459, { -- Honest Jim
-									["groups"] = {
+									["groups"] = bubbleDown({["f"] = 50}, {
 										i(113096), -- Bloodmane Charm
-									},
+										i(116915, { -- Inactive Apexis Guardian
+											follower(168),  -- Ziri'ak
+										}),
+										i(117415), -- Smuggled Tonic
+										i(113273),	-- Orb of the Soulstealer
+										i(113274),	-- Plume of Celerity
+										i(113275),	-- Ravenlord's Talon
+										i(113276),	-- Pridehunter's Fang
+										i(113277),	-- Ogreblood Potion
+										i(113278),	-- Scavenger's Eyepiece
+										i(113290),	-- Spirevine Fruit
+										i(113094),	-- Gronnskin Bag
+										i(79249),	-- Fel-Charred Tome
+									}),
 									["description"] = "|cff66ccffMust have chosen Smuggler's Den as your Outpost Building.|r",
 								}),
 							},
@@ -24,11 +37,24 @@ _.Zones =
 						h(spell(170097, {	-- Smuggling Run!
 							["groups"] = {
 								nh(84243, { -- Linny "The Skinny" Leadpockets
-									["groups"] = {
+									["groups"] = bubbleDown({["f"] = 50}, {
 										i(113096), -- Bloodmane Charm
-									},
+										i(116915, { -- Inactive Apexis Guardian
+											follower(168),  -- Ziri'ak
+										}),
+										i(117415), -- Smuggled Tonic
+										i(113273),	-- Orb of the Soulstealer
+										i(113274),	-- Plume of Celerity
+										i(113275),	-- Ravenlord's Talon
+										i(113276),	-- Pridehunter's Fang
+										i(113277),	-- Ogreblood Potion
+										i(113278),	-- Scavenger's Eyepiece
+										i(113290),	-- Spirevine Fruit
+										i(113094),	-- Gronnskin Bag
+										i(79249),	-- Fel-Charred Tome
+									}),
 									["description"] = "|cff66ccffMust have chosen Smuggler's Den as your Outpost Building.|r",
-								}),	
+								}),
 							},
 							["description"] = "|cff66ccffMust have chosen Smuggler's Den as your Outpost Building.|r",
 						})),
