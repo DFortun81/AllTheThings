@@ -296,6 +296,7 @@ _.GearSets =
 					i(151824), -- Valarjar Berserkers
 					i(137077), -- Weight of the Earth
 					i(137052), -- Ayala's Stone Heart
+					i(151650),	-- Soul of the Battlelord
 					i(137054), -- The Walls Fell
 				}),
 			-- Legion
