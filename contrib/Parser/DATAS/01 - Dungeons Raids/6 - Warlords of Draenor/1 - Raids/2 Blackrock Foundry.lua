@@ -11,7 +11,9 @@ _.Instances =
 					d(17, {		-- LFR
 						n(0, {	-- Zone Drop
 							un(40, i(115510, {	-- Elemental Rune
-								un(40, i(115509)),	-- Elemental Tablet
+								["groups"] = {
+									un(40, i(115509)),	-- Elemental Tablet
+								},
 								["crs"] = {
 									77182,	-- Oregorger
 									76877,	-- Gruul
@@ -264,7 +266,9 @@ _.Instances =
 							i(119340),	-- Iron-Flecked Sandals
 							i(119339),	-- Treads of the Veteran Smith
 							un(40, i(115510, {	-- Elemental Rune
-								un(40, i(115509)),	-- Elemental Tablet
+								["groups"] = {
+									un(40, i(115509)),	-- Elemental Tablet
+								},
 								["crs"] = {
 									77182,	-- Oregorger
 									76877,	-- Gruul
@@ -815,7 +819,9 @@ _.Instances =
 							i(119340),	-- Iron-Flecked Sandals
 							i(119339),	-- Treads of the Veteran Smith
 							un(40, i(115510, {	-- Elemental Rune
-								un(40, i(115509)),	-- Elemental Tablet
+								["groups"] = {
+									un(40, i(115509)),	-- Elemental Tablet
+								},
 								["crs"] = {
 									77182,	-- Oregorger
 									76877,	-- Gruul
@@ -1370,7 +1376,9 @@ _.Instances =
 							i(119340),	-- Iron-Flecked Sandals
 							i(119339),	-- Treads of the Veteran Smith
 							un(40, i(115510, {	-- Elemental Rune
-								un(40, i(115509)),	-- Elemental Tablet
+								["groups"] = {
+									un(40, i(115509)),	-- Elemental Tablet
+								},
 								["crs"] = {
 									77182,	-- Oregorger
 									76877,	-- Gruul
