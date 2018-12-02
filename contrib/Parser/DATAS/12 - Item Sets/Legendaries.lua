@@ -323,15 +323,27 @@ _.GearSets =
 			i(146668, { -- Vigilance Perch 
 				["classes"] = { 3, 7 }
 			}),
-			i(132444), -- Prydaz, Xavric's Magnum Opus
-			i(152626), -- Insignia of the Grand Army
-			i(132452), -- Sephuz's Secret
+			i(132444, { -- Prydaz, Xavric's Magnum Opus
+				["f"] = 50,
+			}),
+			i(152626, { -- Insignia of the Grand Army
+				["f"] = 50,
+			}),
+			i(132452, { -- Sephuz's Secret
+				["f"] = 50,
+			}),
 			i(144249, { -- Archimonde's Hatred Reborn
+				["f"] = 50,
 				["classes"] = { 1, 2, 6, 10, 11, 12 }
 			}),
-			i(154172), -- Aman'Thul's Vision
-			i(144259), -- Kil'jaeden's Burning Wish
+			i(154172, { -- Aman'Thul's Vision
+				["f"] = 50,
+			}),
+			i(144259, {  -- Kil'jaeden's Burning Wish
+				["f"] = 50,
+			}),
 			i(144258, { -- Velen's Future Sight
+				["f"] = 50,
 				["classes"] = { 2, 5, 7, 10, 11 }
 			}),
 			-- Warlords of Draenor
