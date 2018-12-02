@@ -266,6 +266,7 @@ _.Craftables =
 		-- Reviewed and updated as of 11.21.2018 BfA 8.0
 			n(-491, { -- Tarot Cards
 				sp(111830, {	-- Darkmoon Card of Mists
+					i(79283, {["f"] = 55}),    -- Ace of Tigers
 					i(79325, {	-- Crane Deck
 						i(79330),	-- Relic of Chi-Ji
 					}),
