@@ -9,8 +9,11 @@ _.Zones =
 				n(-40, {	-- Legacy
 					["groups"] = {
 						n(-17, {	-- Quests
-							un(40, q(37837)), -- An Inside Job
-							-- Rewards Garona, https://www.wowhead.com/follower=466/garona-halforcen
+							un(40, q(37837, {
+   							 ["groups"] = {
+   							     un(2, follower(466)),    -- Garona Halforcen
+								 },
+							})),
 							un(40, q(36014)), -- Blackhand's Secret
 							un(40, q(37836)), -- Breaking Badness
 							un(40, q(39023)), -- Call of the Archmage (kind of a q to know where continue if you stopped after blackhand q)

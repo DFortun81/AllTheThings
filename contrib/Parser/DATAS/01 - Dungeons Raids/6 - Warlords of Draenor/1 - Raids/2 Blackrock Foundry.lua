@@ -10,21 +10,20 @@ _.Instances =
 				["groups"] = {
 					d(17, {		-- LFR
 						n(0, {	-- Zone Drop
-							un(40, i(115509, {	-- Elemental Tablet
-								un(40, i(115510, {	-- Elemental Rune
-									["crs"] = {
-										77182,	-- Oregorger
-										76877,	-- Gruul
-										76806,	-- The Blast Furnace
-										76973,	-- Hans'gar and Franzo
-										76814,	-- Flamebender Ka'graz
-										77692,	-- Kromog
-										76865,	-- Beastlord Darmac
-										76906,	-- Operator Thogar
-										76557,	-- The Iron Maidens
-										77325,	-- Blackhand
-									},
-								})),
+							un(40, i(115510, {	-- Elemental Rune
+								un(40, i(115509)),	-- Elemental Tablet
+								["crs"] = {
+									77182,	-- Oregorger
+									76877,	-- Gruul
+									76806,	-- The Blast Furnace
+									76973,	-- Hans'gar and Franzo
+									76814,	-- Flamebender Ka'graz
+									77692,	-- Kromog
+									76865,	-- Beastlord Darmac
+									76906,	-- Operator Thogar
+									76557,	-- The Iron Maidens
+									77325,	-- Blackhand
+								},
 							})),
 						}),
 						ach(8989, { 	-- Slagworks	
@@ -264,21 +263,20 @@ _.Instances =
 							i(119342),	-- Furnace Stoker's Footwraps
 							i(119340),	-- Iron-Flecked Sandals
 							i(119339),	-- Treads of the Veteran Smith
-							un(40, i(115509, {	-- Elemental Tablet
-								un(40, i(115510, {	-- Elemental Rune
-									["crs"] = {
-										77182,	-- Oregorger
-										76877,	-- Gruul
-										76806,	-- The Blast Furnace
-										76973,	-- Hans'gar and Franzo
-										76814,	-- Flamebender Ka'graz
-										77692,	-- Kromog
-										76865,	-- Beastlord Darmac
-										76906,	-- Operator Thogar
-										76557,	-- The Iron Maidens
-										77325,	-- Blackhand
-									},
-								})),
+							un(40, i(115510, {	-- Elemental Rune
+								un(40, i(115509)),	-- Elemental Tablet
+								["crs"] = {
+									77182,	-- Oregorger
+									76877,	-- Gruul
+									76806,	-- The Blast Furnace
+									76973,	-- Hans'gar and Franzo
+									76814,	-- Flamebender Ka'graz
+									77692,	-- Kromog
+									76865,	-- Beastlord Darmac
+									76906,	-- Operator Thogar
+									76557,	-- The Iron Maidens
+									77325,	-- Blackhand
+								},
 							})),
 						}),
 						cr(77182, e(1202, {	-- Oregorger
@@ -816,21 +814,20 @@ _.Instances =
 							i(119342),	-- Furnace Stoker's Footwraps
 							i(119340),	-- Iron-Flecked Sandals
 							i(119339),	-- Treads of the Veteran Smith
-							un(40, i(115509, {	-- Elemental Tablet
-								un(40, i(115510, {	-- Elemental Rune
-									["crs"] = {
-										77182,	-- Oregorger
-										76877,	-- Gruul
-										76806,	-- The Blast Furnace
-										76973,	-- Hans'gar and Franzo
-										76814,	-- Flamebender Ka'graz
-										77692,	-- Kromog
-										76865,	-- Beastlord Darmac
-										76906,	-- Operator Thogar
-										76557,	-- The Iron Maidens
-										77325,	-- Blackhand
-									},
-								})),
+							un(40, i(115510, {	-- Elemental Rune
+								un(40, i(115509)),	-- Elemental Tablet
+								["crs"] = {
+									77182,	-- Oregorger
+									76877,	-- Gruul
+									76806,	-- The Blast Furnace
+									76973,	-- Hans'gar and Franzo
+									76814,	-- Flamebender Ka'graz
+									77692,	-- Kromog
+									76865,	-- Beastlord Darmac
+									76906,	-- Operator Thogar
+									76557,	-- The Iron Maidens
+									77325,	-- Blackhand
+								},
 							})),
 						}),
 						cr(77182, e(1202, {	-- Oregorger
@@ -1372,21 +1369,20 @@ _.Instances =
 							i(119342),	-- Furnace Stoker's Footwraps
 							i(119340),	-- Iron-Flecked Sandals
 							i(119339),	-- Treads of the Veteran Smith
-							un(40, i(115509, {	-- Elemental Tablet
-								un(40, i(115510, {	-- Elemental Rune
-									["crs"] = {
-										77182,	-- Oregorger
-										76877,	-- Gruul
-										76806,	-- The Blast Furnace
-										76973,	-- Hans'gar and Franzo
-										76814,	-- Flamebender Ka'graz
-										77692,	-- Kromog
-										76865,	-- Beastlord Darmac
-										76906,	-- Operator Thogar
-										76557,	-- The Iron Maidens
-										77325,	-- Blackhand
-									},
-								})),
+							un(40, i(115510, {	-- Elemental Rune
+								un(40, i(115509)),	-- Elemental Tablet
+								["crs"] = {
+									77182,	-- Oregorger
+									76877,	-- Gruul
+									76806,	-- The Blast Furnace
+									76973,	-- Hans'gar and Franzo
+									76814,	-- Flamebender Ka'graz
+									77692,	-- Kromog
+									76865,	-- Beastlord Darmac
+									76906,	-- Operator Thogar
+									76557,	-- The Iron Maidens
+									77325,	-- Blackhand
+								},
 							})),
 						}),
 						cr(77182, e(1202, {	-- Oregorger
