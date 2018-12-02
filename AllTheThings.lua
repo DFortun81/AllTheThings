@@ -2039,6 +2039,7 @@ local function AddTomTomWaypoint(group, auto)
 				for headerID, enabled in pairs(waypointFilters) do
 					if (UnitOnTaxi("player") and not GetDataMember("EnableTomTomWaypointsOnTaxi"))
 					   or (app.RecursiveIsDescendantOfParentWithValue(group, "npcID", headerID) and not enabled)
+					   or (GetDataMember("TomTomIgnoreCompletedObjects") and app.IsComplete(group))
 					then
 						return
 					end
@@ -5816,6 +5817,7 @@ app.SeasonalFilter = app.NoFilter;
 app.RequiredSkillFilter = app.NoFilter;
 app.ShowIncompleteQuests = app.Filter;
 app.AutomateTomTomWaypoints = app.NoFilter;
+app.TomTomIgnoreCompletedObjects = app.Filter;
 
 -- Recursive Checks
 app.RecursiveClassAndRaceFilter = function(group)
@@ -10459,6 +10461,11 @@ app.events.VARIABLES_LOADED = function()
 	else
 		app.AutomateTomTomWaypoints = app.Filter
 	end
+	if GetDataMember("TomTomIgnoreCompletedObjects", true) then
+		app.TomTomIgnoreCompletedObjects = app.Filter
+	else
+		app.TomTomIgnoreCompletedObjects = app.NoFilter
+	end
 	if GetDataMember("RequireBindingFilter", false) then
 		app.RequireBindingFilter = app.FilterItemClass_RequireBinding;
 	else
@@ -10504,6 +10511,8 @@ app.events.VARIABLES_LOADED = function()
 	GetDataMember("AutoProfessionMiniList", true);
 	GetDataMember("AutoMinimize", true);
 	GetDataMember("AutomateTomTomWaypoints", false);
+	GetDataMember("EnableTomTomWaypointsOnTaxi", false);
+	GetDataMember("TomTomIgnoreCompletedObjects", false);
 	
 	GetDataMember("ShowAchievementID", false);
 	GetDataMember("ShowArtifactID", false);

@@ -555,7 +555,7 @@ local function createGeneralFrame(parent)
 	addObject(elm,tomtomOptions);
 	
 	local tomtomOptionsFrame = CreateFrame("Frame", name .. "-" .. tabName .. "-tomtomFrame", child, "ThinBorderTemplate");
-	tomtomOptionsFrame:SetSize(child:GetWidth(),110);
+	tomtomOptionsFrame:SetSize(child:GetWidth(),135);
 	tomtomOptionsFrame:SetPoint("TOPLEFT",tomtomOptions,0,-frameSpacer);
 	tomtomOptionsFrame:SetAlpha(0.3);
 	addObject(elm,tomtomOptionsFrame);
@@ -590,9 +590,19 @@ local function createGeneralFrame(parent)
 	setTomTomWaypointsOnTaxi.Label:SetWidth(setTomTomWaypointsOnTaxi.Label:GetWidth() * 1.5);
 	addObject(elm,setTomTomWaypointsOnTaxi);
 	
+	local tomTomWaypointIgnoreCompleted = createCheckBox("Ignore Completed Objects", child, function(self)
+			app.SetDataMember("TomTomIgnoreCompletedObjects", self:GetChecked());
+		end,
+		function(self) 
+			self:SetChecked(app.GetDataMember("TomTomIgnoreCompletedObjects", true));
+		end);
+	tomTomWaypointIgnoreCompleted:SetPoint("TOPLEFT",setTomTomWaypointsOnTaxi,0,-frameSpacer);
+	tomTomWaypointIgnoreCompleted.Label:SetWidth(tomTomWaypointIgnoreCompleted.Label:GetWidth() * 1.5);
+	addObject(elm,tomTomWaypointIgnoreCompleted);
+	
 	local tomtomSubFrame = CreateFrame("Frame", name .. "-" .. tabName .. "-tomtomSubFrame", child, "ThinBorderTemplate");
-	tomtomSubFrame:SetSize(tomtomOptionsFrame:GetWidth()-20,tomtomOptionsFrame:GetHeight()-55);
-	tomtomSubFrame:SetPoint("TOPLEFT",setTomTomWaypointsOnTaxi,5,-30);
+	tomtomSubFrame:SetSize(tomtomOptionsFrame:GetWidth()-20,55);
+	tomtomSubFrame:SetPoint("TOPLEFT",tomTomWaypointIgnoreCompleted,5,-30);
 	tomtomSubFrame:SetAlpha(0.3);
 	addObject(elm,tomtomSubFrame);
 	
