@@ -282,66 +282,6 @@ _.Zones =
 							},
 						}),
 						crit(5, {	-- Nijel's Point/For The Horde
-							{	-- Blubbergut
-								["questID"] = 14334,
-								["groups"] = {
-									i(55955),   -- Whalefang's Pendant
-									i(55956),	-- Blubber-Stained Grips
-									i(55957),	-- Orca-Oiled Spaulders
-									i(55958),   -- Orca-Tooth Ring
-								},
-								["qg"] = 12031,	-- Mai'Lahii
-								["coord"] = { 22.6, 71.9 },
-								["races"] = HORDE_ONLY,
-								["sourceQuest"] = 14337,	-- Shadowprey Village
-							},
-							{	-- Fish in a Bucket
-								["questID"] = 5421,
-								["qg"] = 11317,	-- Jinar'Zillen
-								["coord"] = { 22.4, 73.1 },
-								["races"] = HORDE_ONLY,
-							},
-							{	-- Infernal Encroachment
-								["questID"] = 14342,
-								["groups"] = {
-									i(55934),	-- Demonkiller Mask
-									i(55933),	-- Darkblood Dagger
-									i(55935),	-- Claw-Scarred Bulwark
-								},
-								["qg"] = 5395,	-- Felgur Twocuts
-								["coord"] = { 56.1, 59.5 },
-								["races"] = HORDE_ONLY,
-							},
-							{	-- Portals of the Legion
-								["questID"] = 5581,
-								["groups"] = {
-									i(55940),	-- Bracer of Portals
-									i(55941),	-- Spaulders of Sealing
-									i(55939),	-- Binding Staff
-									i(131233),	-- Securing Bindings
-									un(2, i(16873)),	-- Braidfur Gloves
-									un(2, i(16794)),	-- Gripsteel Wristguards
-								},
-								["qg"] = 5395,	-- Felgur Twocuts
-								["coord"] = { 56.1, 59.5 },
-								["races"] = HORDE_ONLY,
-							},
-							{	-- Chipping In
-								["questID"] = 14335,
-								["groups"] = {
-									i(55960),	-- Carapace Robes
-									i(55961),	-- Ghost Walker Treads
-									i(55959),	-- Coven Battleaxe
-									i(131348),	-- Lob Stompers
-								},
-								["qg"] = 11624,	-- Taiga Wisemane
-								["coord"] = { 25.8, 68.2 },
-								["races"] = HORDE_ONLY,
-								["sourceQuests"] = {
-									14334,	-- Blubbergut
-									5421,	-- Fish in a Bucket
-								},
-							},
 							{	-- Avenge Furien!
 								["questID"] = 14188,
 								["qg"] = 35295,	-- Cerelia
@@ -421,6 +361,66 @@ _.Zones =
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 14225,	-- You'll Know it When You See It
 							},
+							{	-- Blubbergut
+								["questID"] = 14334,
+								["groups"] = {
+									i(55955),   -- Whalefang's Pendant
+									i(55956),	-- Blubber-Stained Grips
+									i(55957),	-- Orca-Oiled Spaulders
+									i(55958),   -- Orca-Tooth Ring
+								},
+								["qg"] = 12031,	-- Mai'Lahii
+								["coord"] = { 22.6, 71.9 },
+								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 14337,	-- Shadowprey Village
+							},
+							{	-- Fish in a Bucket
+								["questID"] = 5421,
+								["qg"] = 11317,	-- Jinar'Zillen
+								["coord"] = { 22.4, 73.1 },
+								["races"] = HORDE_ONLY,
+							},
+							{	-- Chipping In
+								["questID"] = 14335,
+								["groups"] = {
+									i(55960),	-- Carapace Robes
+									i(55961),	-- Ghost Walker Treads
+									i(55959),	-- Coven Battleaxe
+									i(131348),	-- Lob Stompers
+								},
+								["qg"] = 11624,	-- Taiga Wisemane
+								["coord"] = { 25.8, 68.2 },
+								["races"] = HORDE_ONLY,
+								["sourceQuests"] = {
+									14334,	-- Blubbergut
+									5421,	-- Fish in a Bucket
+								},
+							},
+							{	-- Infernal Encroachment
+								["questID"] = 14342,
+								["groups"] = {
+									i(55934),	-- Demonkiller Mask
+									i(55933),	-- Darkblood Dagger
+									i(55935),	-- Claw-Scarred Bulwark
+								},
+								["qg"] = 5395,	-- Felgur Twocuts
+								["coord"] = { 56.1, 59.5 },
+								["races"] = HORDE_ONLY,
+							},
+							{	-- Portals of the Legion
+								["questID"] = 5581,
+								["groups"] = {
+									i(55940),	-- Bracer of Portals
+									i(55941),	-- Spaulders of Sealing
+									i(55939),	-- Binding Staff
+									i(131233),	-- Securing Bindings
+									un(2, i(16873)),	-- Braidfur Gloves
+									un(2, i(16794)),	-- Gripsteel Wristguards
+								},
+								["qg"] = 5395,	-- Felgur Twocuts
+								["coord"] = { 56.1, 59.5 },
+								["races"] = HORDE_ONLY,
+							},
 						}),
 					}),
 					{	-- An Impactful Discovery
@@ -448,7 +448,7 @@ _.Zones =
 					},
 					{	-- Broken Relic
 						["objectID"] = 196393,
-						["coord"] = { 12.5, 49.3 },
+						["coord"] = { 12.5, 49.3, 67 },	-- quest starts in Maraudon's mapID
 						["groups"] = {
 							{	-- While You're Here
 								["questID"] = 14333,
