@@ -7,7 +7,7 @@ _.Zones =
 	m(905, { 	-- Argus
 		m(882, { -- Mac'Aree
 			["groups"] = {
-				n(-4, { 	-- Achievement
+				n(-4,   {	-- Achievement
 					ach(12074, { -- Shoot First, Loot Later
 						o(277342, {	-- Augari Goods
 							["groups"] = {
@@ -118,7 +118,7 @@ _.Zones =
 						["description"] = "Vindicaar, Krokruun",
 					}),
 				}),
-				n(-25, {	-- Pet Battle
+				n(-25,  {	-- Pet Battle
 					["groups"] = {
 						ach(12088, { -- Anomalous Animals of Argus
 							["groups"] = {
@@ -522,7 +522,7 @@ _.Zones =
 						p(2128), 	-- Warpstalker Runt
 					},
 				}),
-				n(-17, { 	-- Quests						
+				n(-17,  {	-- Quests						
 --[[
 					n(-34, {	-- World Quests
 						q(48729),	-- Ataxon
@@ -713,7 +713,7 @@ _.Zones =
 					q(47854),	-- Wrath of the High Exarch
 --]]					
 				}),	
-				n(-16, { 	-- Rares
+				n(-16,  {	-- Rares
 					n(126887, { -- Ataxon
 						["groups"] = {
 							i(153034),	-- Technique: Glyph of the Voidling
@@ -721,7 +721,7 @@ _.Zones =
 						},
 						["questID"] = 48709
 					}),
-					o(273301, {	-- Ancient Eredar Cache (south of main road, mostly east of center)
+					o(273301, {	-- Ancient Eredar Cache
 						["groups"] = {
 							i(153271), -- Forgotten Conservatory Helm
 							i(153288), -- Forgotten Conservatory Robes
@@ -731,9 +731,29 @@ _.Zones =
 							i(153334), -- Mac'Aree Lightseeker's Spaulders
 							i(153332), -- Mac'Aree Lightseeker's Chestpiece
 						},
+						["coords"] = {
+							{ 54.9, 57.7 },
+							{ 48.0, 61.2 },
+							{ 47.1, 62.5 },
+							{ 52.7, 61.8 },
+							{ 57.5, 61.6 },
+							{ 59.5, 63.9 },
+							{ 50.9, 67.2 },
+							{ 53.0, 66.5 },
+							{ 54.7, 66.9 },
+							{ 59.8, 69.7 },
+							{ 60.9, 70.6 },
+							{ 51.8, 71.4 },
+							{ 50.0, 75.9 },
+							{ 55.4, 73.4 },
+							{ 57.5, 75.1 },
+							{ 55.2, 77.8 },
+							{ 53.2, 80.0 },
+							{ 52.9, 82.5 },
+						},
 						["questID"] = 48346,
 					}),
-					o(273407, {	-- Ancient Eredar Cache (north central)
+					o(273407, {	-- Ancient Eredar Cache
 						["groups"] = {
 							i(153275), -- Forgotten Conservatory Slippers
 							i(153334),	-- Mac'Aree Lightseeker's Spaulders
@@ -742,9 +762,23 @@ _.Zones =
 							i(153330),	-- Mac'Aree Lightseeker's Greaves
 							i(153337),	-- Mac'Aree Lightseeker's Treads
 						},
+						["coords"] = {
+							{ 53.9, 23.2 },
+							{ 54.9, 25.0 },
+							{ 53.5, 27.5 },
+							{ 59.5, 20.9 },
+							{ 63.3, 19.8 },
+							{ 63.3, 22.5 },
+							{ 62.2, 26.3 },
+							{ 53.6, 34.3 },
+							{ 55.0, 35.2 },
+							{ 60.5, 32.0 },
+							{ 60.5, 33.5 },
+							{ 58.7, 40.7 },
+						},
 						["questID"] = 48350,
 					}),
-					o(273412, {	-- Ancient Eredar Cache (southwest-ish)
+					o(273412, {	-- Ancient Eredar Cache
 						["groups"] = {
 							i(153277),	-- Forgotten Conservatory Wristwraps
 							i(153272),	-- Forgotten Conservatory Gloves
@@ -756,28 +790,114 @@ _.Zones =
 							i(153333),	-- Mac'Aree Lightseeker's Waistplate
 							i(153337),	-- Mac'Aree Lightseeker's Treads
 						},
+						["coords"] = {
+							{ 33.8, 55.5 },
+							{ 34.2, 57.3 },
+							{ 34.3, 59.1 },
+							{ 35.6, 56.2 },
+							{ 35.6, 57.1 },
+							{ 37.2, 55.5 },
+							{ 40.5, 55.5 },
+							{ 42.6, 53.7 },
+							{ 43.9, 56.5 },
+							{ 42.3, 57.5 },
+							{ 39.2, 59.2 },
+							{ 37.9, 58.7 },
+							{ 37.1, 61.0 },
+							{ 37.2, 62.7 },
+							{ 38.1, 63.7 },
+							{ 38.5, 64.4 },
+							{ 40.5, 63.0 },
+							{ 41.6, 63.4 },
+							{ 34.2, 65.6 },
+							{ 36.3, 66.4 },
+							{ 38.5, 66.9 },
+							{ 42.4, 61.3 },
+							{ 43.5, 60.1 },
+							{ 41.1, 68.9 },
+							{ 43.8, 68.5 },
+							{ 44.6, 68.6 },
+							{ 43.6, 71.5 },
+							{ 47.3, 70.7 },
+							{ 46.0, 72.2 },
+							{ 47.0, 73.3 },
+						},
 						["questID"] = 48351,
 					}),
-					o(273414, {	-- Ancient Eredar Cache (central/eastern - around Conservatory of the Arcane)
+					o(273414, {	-- Ancient Eredar Cache
 						["groups"] = {
 							i(153271),	-- Forgotten Conservatory Helm
 							i(153276),	-- Forgotten Conservatory Amice
 							i(153288),	-- Forgotten Conservatory Robes
-							i(153275), -- Forgotten Conservatory Slippers
+							i(153275),	-- Forgotten Conservatory Slippers
 							i(153273),	-- Forgotten Conservatory Leggings
 							i(153332),	-- Mac'Aree Lightseeker's Chestpiece
 							i(153336),	-- Mac'Aree Lightseeker's Armguards
 							i(153335),	-- Mac'Aree Lightseeker's Handguards
 						},
+						["coords"] = {
+							{ 62.2, 32.7 },
+							{ 64.9, 29.5 },
+							{ 66.4, 29.0 },
+							{ 67.2, 28.2 },
+							{ 67.8, 31.9 },
+							{ 69.5, 32.7 },
+							{ 70.1, 33.8 },
+							{ 65.3, 35.6 },
+							{ 68.8, 37.1 },
+							{ 62.2, 40.7 },
+							{ 61.9, 42.7 },
+							{ 60.9, 43.7 },
+							{ 69.8, 46.6 },
+							{ 65.5, 41.9 },
+							{ 68.5, 41.5 },
+							{ 63.8, 45.3 },
+							{ 66.1, 46.9 },
+							{ 67.2, 46.2 },
+							{ 69.5, 44.9 },
+							{ 68.2, 49.1 },
+							{ 69.7, 49.4 },
+							{ 70.5, 51.1 },
+							{ 62.7, 50.6 },
+							{ 61.5, 55.5 },
+							{ 68.5, 53.1 },
+							{ 67.2, 53.7 },
+							{ 67.1, 56.9 },
+							{ 64.6, 56.0 },
+							{ 64.5, 59.5 },
+							{ 65.9, 60.0 },
+						},
 						["questID"] = 48362,
 					}),
-					o(273415, {	-- Ancient Eredar Cache (northeast (not on side with Vigilant Thanos)
+					o(273415, {	-- Ancient Eredar Cache
 						["groups"] = {
 							i(153276),	-- Forgotten Conservatory Amice
 							i(153273),	-- Forgotten Conservatory Leggings
-							i(153275), -- Forgotten Conservatory Slippers
+							i(153275),	-- Forgotten Conservatory Slippers
 							i(153335),	-- Mac'Aree Lightseeker's Handguards
 							i(153337),	-- Mac'Aree Lightseeker's Treads
+						},
+						["coords"] = {
+							{ 53.3, 8.50 },
+							{ 58.0, 10.6 },
+							{ 58.7, 13.3 },
+							{ 53.5, 13.0 },
+							{ 53.0, 16.8 },
+							{ 55.0, 17.5 },
+							{ 50.0, 14.2 },
+							{ 48.4, 12.9 },
+							{ 45.1, 13.5 },
+							{ 46.1, 13.2 },
+							{ 46.5, 15.1 },
+							{ 42.6, 17.9 },
+							{ 44.6, 18.4 },
+							{ 47.7, 19.4 },
+							{ 48.6, 21.1 },
+							{ 47.6, 21.8 },
+							{ 49.5, 24.1 },
+							{ 45.1, 24.8 },
+							{ 49.9, 29.3 },
+							{ 51.7, 28.6 },
 						},
 						["questID"] = 48357,
 					}),
@@ -785,13 +905,31 @@ _.Zones =
 						["groups"] = {
 							i(153277),	-- Forgotten Conservatory Wristwraps
 							i(153272),	-- Forgotten Conservatory Gloves
-							i(153275), -- Forgotten Conservatory Slippers
+							i(153275),	-- Forgotten Conservatory Slippers
 							i(153331),	-- Mac'Aree Lightseeker's Helmet
 							i(153334),	-- Mac'Aree Lightseeker's Spaulders
 							i(153332),	-- Mac'Aree Lightseeker's Chestpiece
 							i(153336),	-- Mac'Aree Lightseeker's Armguards
 							i(153333),	-- Mac'Aree Lightseeker's Waistplate
 							i(153330),	-- Mac'Aree Lightseeker's Greaves
+						},
+						["coords"] = {
+							{ 59.3, 58.6 },
+							{ 50.6, 55.8 },
+							{ 49.9, 55.1 },
+							{ 53.6, 42.0 },
+							{ 54.5, 44.7 },
+							{ 51.0, 47.8 },
+							{ 48.7, 49.8 },
+							{ 49.8, 41.6 },
+							{ 49.0, 39.5 },
+							{ 49.5, 35.8 },
+							{ 47.1, 36.6 },
+							{ 32.6, 47.0 },
+							{ 25.5, 30.0 },
+							{ 29.0, 33.8 },
+							{ 24.7, 38.6 },
+							{ 19.7, 42.1 },
 						},
 						["questID"] = 48371,
 					}),
@@ -972,7 +1110,7 @@ _.Zones =
 						["questID"] = 48719,
 					}),
 				}),
-				n(-34, { -- World Quests
+				n(-34,  {	-- World Quests
 					["groups"] = {
 						n(-322, { -- Cloak
 							i(150988), -- Twisted-Ritualist's Shawl
@@ -1019,7 +1157,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(0, { -- Zone Drop
+				n(0,    {	-- Zone Drop
 					["groups"] = {
 						
 						n(-318, { -- Armor
@@ -1130,7 +1268,7 @@ _.Zones =
 					
 					["description"] = "|cFFFFD700Pond Nettle|r can be fished up from the fel waters of Argus.\n\n|cFFFFD700Unsullied tokens|r can drop off any mob, rare or treasure chest in the zone.\n\nTreasure items can drop from treasure chests only.",
 				}),
-				n(-74, { -- Zone Wide
+				n(-74,  {	-- Zone Wide
 					["groups"] = {
 						n(-4, { -- Achievements
 							model(79440, ach(12103, { -- ...And Chew Mana Buns
