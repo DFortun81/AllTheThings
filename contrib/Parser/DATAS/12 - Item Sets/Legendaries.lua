@@ -120,11 +120,9 @@ _.GearSets =
 					i(137101), -- Call of the Wild
 					i(141353), -- Magnetized Blasting Cap Launcher
 					i(144303), -- MKII  Gyroscopic Stabilizer
-					i(146668), -- Vigilance Perch (Hunter, Shaman)
 					i(137082), -- Hellbrine, Rope of the Mist Marauder
 					i(137080), -- Roar of the Seven Lions
 					i(137081), -- War Belt of the Sentinel Army
-					i(132466), -- Roots of Shaladrassil (Hunter, Shaman)
 					i(137034), -- Nesingwary's Trapping Treads
 					i(137227), -- Qa'pla, Eredun War Order
 					i(137033), -- Ulr's Feather Snowshoes
@@ -253,11 +251,9 @@ _.GearSets =
 					i(137104), -- Nobundo's Redemption
 					i(137058), -- Praetorian's Tidecallers
 					i(151819), -- Smoldering Heart
-					i(146668), -- Vigilance Perch (Hunter, Shaman)
 					i(137085), -- Intact Nazjatar Molting
 					i(137083), -- Pristine Prot-Scale Girdle
 					i(137103), -- Storm Tempests
-					i(132466), -- Roots of Shaladrassil (Hunter, Shaman)
 					i(137036), -- Elemental Rebalancers
 					i(138117), -- Spiritual Journey
 					i(137035), -- The Deceiver's Blood Pact
@@ -318,8 +314,14 @@ _.GearSets =
 			i(146667, { -- Rethu's Incessant Courage
 				["classes"] = { 1, 2, 6 }
 			}),
+			i(132466, { -- Roots of Shaladrassil
+				["classes"] = { 3, 7 }
+			}),
 			i(146669, { -- The Sentinel's Eternal Refuge
 				["classes"] = { 11, 4, 10, 12 }
+			}),
+			i(146668, { -- Vigilance Perch 
+				["classes"] = { 3, 7 }
 			}),
 			i(132444), -- Prydaz, Xavric's Magnum Opus
 			i(152626), -- Insignia of the Grand Army
