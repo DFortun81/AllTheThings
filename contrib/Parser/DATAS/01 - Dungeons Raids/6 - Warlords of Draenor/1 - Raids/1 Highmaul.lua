@@ -21,6 +21,17 @@ _.Instances =
 									77428,	-- Imperator Mar'gok 
 								},
 							})),
+							un(40, i(115281, {	-- Abrogator Stone Cluster
+								["crs"] = {
+									78714,	-- Kargath
+									77404,	-- The Butcher
+									78491,	-- Brackenspore
+									78948,	-- Tectus
+									78237,	-- Twins
+									79015,	-- Ko'ragh
+									77428,	-- Imperator Mar'gok 
+								},
+							})),
 						}),
 						ach(8986, {	-- The Walled City	
 							["crs"] = {
@@ -178,6 +189,17 @@ _.Instances =
 							}),
 							i(119337),	-- Ripswallow Plate Belt
 							un(40, i(115280, {	-- Abrogator Stone
+								["crs"] = {
+									78714,	-- Kargath
+									77404,	-- The Butcher
+									78491,	-- Brackenspore
+									78948,	-- Tectus
+									78237,	-- Twins
+									79015,	-- Ko'ragh
+									77428,	-- Imperator Mar'gok 
+								},
+							})),
+							un(40, i(115281, {	-- Abrogator Stone Cluster
 								["crs"] = {
 									78714,	-- Kargath
 									77404,	-- The Butcher
@@ -363,6 +385,17 @@ _.Instances =
 									77428,	-- Imperator Mar'gok 
 								},
 							})),
+							un(40, i(115281, {	-- Abrogator Stone Cluster
+								["crs"] = {
+									78714,	-- Kargath
+									77404,	-- The Butcher
+									78491,	-- Brackenspore
+									78948,	-- Tectus
+									78237,	-- Twins
+									79015,	-- Ko'ragh
+									77428,	-- Imperator Mar'gok 
+								},
+							})),
 						}),
 						cr(78714, e(1128, {	-- Kargath Bladefist <Warlord of the Shattered Hand>
 							i(138807),	-- Illusion: Mark of the Shattered Hand
@@ -528,6 +561,17 @@ _.Instances =
 							}),
 							i(119337),	-- Ripswallow Plate Belt
 							un(40, i(115280, {	-- Abrogator Stone
+								["crs"] = {
+									78714,	-- Kargath
+									77404,	-- The Butcher
+									78491,	-- Brackenspore
+									78948,	-- Tectus
+									78237,	-- Twins
+									79015,	-- Ko'ragh
+									77428,	-- Imperator Mar'gok 
+								},
+							})),
+							un(40, i(115281, {	-- Abrogator Stone Cluster
 								["crs"] = {
 									78714,	-- Kargath
 									77404,	-- The Butcher

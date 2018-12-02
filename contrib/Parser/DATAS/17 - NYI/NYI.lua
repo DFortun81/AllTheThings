@@ -145,6 +145,7 @@ _.NeverImplemented =
 			un(1, i(54655)),	-- Stormshroud Armor (Leather)
 			un(1, i(25975)),	-- Gloves of Preservation (not added version)
 			un(1, i(25976)),	-- Lurking Shadow Spaulders (only beta)
+			un(1, i(56701)),	-- Jinxed Vest (never made it to live)
 			un(1, i(26029)),	-- Watchman's Bracers
 		}),
 		n(-45, { -- Mail
@@ -329,6 +330,17 @@ _.NeverImplemented =
 				un(1, i(154044)), -- Oathsworn Defender Idol
 				un(1, i(154047)), -- Oathsworn Defender Stone
 			}),
+			un(1, i(24137)), -- PH Plate Ramparts Reward
+			un(1, i(105393, { -- Tusks of Mannoroth [Heroic Warforged]
+				["description"] = "|CFFFF0000If you had this item drop in SoO Heroic please screenshot and submit it to the ATT Discord.\n\nIf you have the item already and are running completionist mode please screenshot as well. Tag 105393",
+			})),
+			un(1, i(104646, {  -- Tusks of Mannoroth [Mythic]
+				["description"] = "|CFFFF0000If you had this item drop in SoO please screenshot and submit it to the ATT Discord.\n\nIf you have the item already and are running completionist mode please screenshot as well. Tag: 104646",
+			})),	
+			un(1, i(105642, { -- Tusks of Mannoroth [Mythic Warforged]
+				["description"] = "|CFFFF0000If you had this item drop in SoO please screenshot and submit it to the ATT Discord.\n\nIf you have the item already and are running completionist mode please screenshot as well. Tag: 105642",
+			})),
+			un(2, i(103785)), -- Tusks of Mannoroth [Heroic]
 		}),
 		n(-322, { -- Cloaks
 			un(1, i(22230)),	-- Frightmaw Hide (Cloak)
@@ -346,7 +358,10 @@ _.NeverImplemented =
 			un(1, i(134110)), -- Hidden Helm
 			un(1, i(134111)), -- Hidden Cloak
 			un(1, i(142503)), 	-- Hidden Shirt
+			un(1, i(146305)), 	-- Green Winter Hat										{STUCK ON RETRIEVING DATA)
+			un(1, i(146306)), 	-- Green Winter Clothes 								(STUCK ON RETRIEVING DATA)
 			un(1, i(142504)), 	-- Hidden Tabard
+			un(1, i(134112)), 	-- Hidden Shoulder
 			un(1, i(143539)), 	-- Hidden Belt
 		}),
 		n(-324, { -- Shirts
@@ -401,7 +416,44 @@ _.NeverImplemented =
 		un(1, i(13247)),	-- Quartermaster Zigris' Footlocker
 		un(1, i(19804)),	-- Pale Ghoulfish
 		un(1, i(21135)),	-- Broken Assassin's Throwing Axe
-		
+		i(120370),
+		i(120371),
+		i(23351),
+		i(23470),
+		i(46103),
+		i(49402),
+		i(49405),
+		i(49410),
+		i(49414),
+		i(49418),
+		i(49422),
+		i(54331),
+		i(55047),
+		i(21163),
+		i(84897),	-- Never made to Live. Malevolent Gladiator's Heavy Crossbow
+		i(94899),	-- Never made to Live. Malevolent Gladiator's Baton of Light
+		i(94898),	-- Never made to Live. Malevolent Gladiator's Touch of Death
+		i(85118),	-- Never made to Live. 490 Malevolent Gladiator's Shiv
+		i(84895),	-- Never made to Live. Malevolent Gladiator's Shiv
+		i(54757),	-- Double Link Tunic
+		i(54765),	-- Burnished Leggings
+		i(54766),	-- Burnished Gloves
+		i(54767),	-- Burnished Girdle
+		i(54768),	-- Burnished Boots
+		i(54769),	-- Rough Bronze Bracers
+		i(54778),	-- Burnished Boots (Again)
+		i(54781),	-- Thorbia's Gauntlets
+		i(54783),	-- Silvered Bronze Shoulders
+		i(54789),	-- Art Template Plate Belt - Plate_Common_C_01 - Rust
+		i(47058),   -- Unknown
+		i(59791),   -- Unknown
+		i(60221),   -- Furlbrow Cloak
+		i(60774),   -- Unknown
+		i(60775),   -- Unknown
+		i(60777),   -- Unknown
+		i(60780),   -- Unknown
+		i(60781),   -- Unknown
+		i(50329),   -- Unknown	
 	}),
 	n(-160, { -- Mounts
 		un(1, a(model(9475, i(13325)))),		-- Fluorescent Green Mechanostrider (Never added in Game)
@@ -484,8 +536,22 @@ _.NeverImplemented =
 		un(1, i(130145)), -- Unknown
 		un(1, i(119147)), -- Nether Ray Fry (unsed Version)
 		un(1, i(119112)), -- Son of Sethe (unsed Version)
+		model(38311, n(51634, {["u"] = 1,} )),	-- Bubbles 					(Never added in Game)
+		model(36583, n(51636, {["u"] = 1,})),	-- Lizzy 					(Never added in Game)
+		model(14657, n(14629, {["u"] = 1,})), 	-- Loggerhead Snapjaw 		(Never added in Game)
+		model(36129, n(48376, {["u"] = 1,})),	-- Rumbling Rockling 		(Never added in Game)
+		model(57820, n(83592, { 	-- Sassy Sproutling 					(Never added in Game)
+			["groups"] = {	
+				p(1433),
+			},
+			["u"] = 1,
+		})), 			
+		model(36130, n(48377, {["u"] = 1,})),	-- Swirling Stormling 		(Never added in Game)
+		model(36131, n(48378, {["u"] = 1,})), 	-- Whirling Waveling 		(Never added in Game)
+		model(29060, n(34031, {["u"] = 1,})), 	-- XS-001 Constructor Bot 	(Never added in Game)
 		un(1, i(118600)), -- Forest Sproutling (unsed Version)
 		un(1, i(118597)), -- Never added
+		un(1, i(44972)), -- Alarming Clockbot (NOT IN USE)
 		model(49086, n(71700, { 	-- Crafty 								(Never added in Game)
 			["groups"] = {	
 				p(1257),
@@ -630,6 +696,7 @@ _.NeverImplemented =
 			un(1, i(30471)),	-- Pattern: Netherflame Boots
 			un(1, i(30469)),	-- Pattern: Netherflame Robe
 			un(1, i(137981)),	-- Pattern: Silkweave Cloak
+			un(1, i(6273)),	-- Pattern: Green Woolen Robe
 			un(1, i(42192)),	-- Pattern: Silky Iceshard Boots (pattern never went live, but it's learned at the trainer)
 			un(1, i(42182)),	-- Pattern: Spellweave (pattern never went live, but it's learned at the trainer)
 			un(1, i(42202)),	-- Pattern: Spellweave Gloves (pattern never went live, but it's learned at the trainer)
@@ -655,12 +722,26 @@ _.NeverImplemented =
 	}),
 	n(-161, { -- Toys
 		un(1, i(140779)),	-- Falanaar Echo
+		un(1, i(143545)),	-- Fel Focusing Crystal 
 		un(1, i(141300)), 	-- Magi Focusing Crystal	
 		un(1, i(38568)), 	-- Drakkari Charm Bracelet
 		un(1, i(38569)), 	-- Unknown	
+		un(1, i(129111)),	-- Kvaldir Raiding Horn
+		un(1, i(130249)),	-- Waywatcher's Boon
 		un(1, i(38570)), 	-- Unknown	
 		un(1, i(119220)),	-- Alliance Gladiator's Banner
-		un(1, i(119221)),	-- Horde Gladiator's Banner		
+		un(1, i(119221)),	-- Horde Gladiator's Banner	
+		un(1, i(100902)),	-- Unknown
+		un(1, i(100903)),	-- Unknown	
+		un(1, i(108638)),	-- Unknown
+		un(1, i(108639)),	-- Unknown
+		un(1, i(122220)),	-- Unknown
+		un(1, i(122225)),	-- Unknown
+		un(1, i(122227)),	-- Unknown
+		un(1, i(122230)),	-- Unknown
+		un(1, i(122235)),	-- Unknown
+		un(1, i(108640)),	-- Unknown	
+		un(1, i(119179)),	-- Iron Star Roller
 	}),
 	n(-319, { -- Weapons
 		n(-347, { -- Bows
@@ -746,6 +827,8 @@ _.NeverImplemented =
 	un(1, i(129899)), -- The Eagle Spear
 	un(1, i(119408)), -- Foereaver Polearm [This version wasn't added]
 	un(1, i(115297)), -- Spectral Polearm
+	un(1, i(18316)),	-- Obsidian Bauble
+	un(1, i(19989)),	-- Tome of Devouring Shadows
 	un(1, i(32184)), -- Chancellor's Painsaw
 	un(1, i(7188)), --  Stormwind Guard Shield [This is used by NPC's]
 	un(1, i(18303)), -- Nimble Buckler
@@ -807,6 +890,11 @@ _.NeverImplemented =
 	un(1, i(84085)),	-- Dreadwaste Meditation Staff
 	un(1, i(84086)),	-- Dreadwaste Diviner's Rod
 	un(1, i(84527)),	-- Hidden Pass Meditation Staff
+	un(1, i(85588)), 	-- Reflex Edges [This version never implemented]
+	un(1, i(105956)), 	-- Wrath Gladiator's Razor [Not implemented, other version was instead]
+	un(1, i(117010)),	-- Forester's Axe 										(Never added in Game)
+	un(1, i(120272)), 	-- High Warlord's Razor [This version never implemented]
+	un(1, i(120273)), 	-- High Warlord's Razor [This version never implemented]
 	un(1, i(913)),	-- Huge Ogre Sword
 	un(1, i(12469)),	-- Mutilator
 	un(1, i(23432)),	-- Engraved Greatsword
@@ -821,24 +909,19 @@ _.NeverImplemented =
 	un(1, i(107390)),	-- Obliterator Firing Lever
 	un(1, i(115296)),	-- Spectral Warmace
 	un(1, i(115299)),	-- Spectral Scepter
-	un(1, i(150715)), -- Illidari Warglaive
-	un(1, i(3738)),	-- Brewing Rod
-	}),
-	un(1, i(151377)), -- Arne Test Heirloom - Bloodied Arcanite Reaper
-	un(1, i(166699)),	-- Desert Rucksack
-	un(1, i(6273)),	-- Pattern: Green Woolen Robe
-	un(1, i(18316)),	-- Obsidian Bauble
-	un(1, i(19989)),	-- Tome of Devouring Shadows
-	un(1, i(56701)),	-- Jinxed Vest (never made it to live)
 	un(1, i(56702)),	-- Saw Blade (never made it to live)
 	un(1, i(5255)),	-- Quilboar Tomahawk
 	un(1, i(17142)),	-- Shard of the Defiler
+	un(1, i(2664)),	-- Spinner Fang
+	un(1, i(150715)), -- Illidari Warglaive
+	un(1, i(3738)),	-- Brewing Rod
+	un(1, i(128824)), 	-- Tome of the Silver Hand	
+	}),
+	un(1, i(151377)), -- Arne Test Heirloom - Bloodied Arcanite Reaper
+	un(1, i(166699)),	-- Desert Rucksack
 	un(1, i(140011)),	-- Duskwatch Adjudicator's Pauldrons
-	un(1, i(44972)), -- Alarming Clockbot (NOT IN USE)
-	un(1, i(24137)), -- PH Plate Ramparts Reward
 	un(1, i(33964)), -- Helm of the Stormcaller - Never Added
 	un(3, i(19160)), -- Contest Winner's Tabard   [NOTE: Temporarily here until we get groups working with un/u tag again}
-	un(1, i(2664)),	-- Spinner Fang
 	un(1, i(8195)),	-- Nightscape Cloak										(Pattern never actually went live)
 	un(15, i(31279)),	-- Enchanted Illidari Tabard [Temp Quest Item]
 	un(1, i(56405)),	-- Oasis Bracers
@@ -846,94 +929,15 @@ _.NeverImplemented =
 	un(1, i(59796)), 	-- Treads of Decapod Death
 	un(1, i(59797)),	-- Abalone-Linked Robes
 	un(1, i(62061)), 	-- Irradiated Gnome Shirt
-	un(1, i(67600)), 	-- Lil' Alexstrasza										(Never added in Game)
-	un(1, i(85588)), 	-- Reflex Edges [This version never implemented]
-	un(1, i(105956)), 	-- Wrath Gladiator's Razor [Not implemented, other version was instead]
-	un(1, i(117010)),	-- Forester's Axe 										(Never added in Game)
-	un(1, i(120272)), 	-- High Warlord's Razor [This version never implemented]
-	un(1, i(120273)), 	-- High Warlord's Razor [This version never implemented]
-	un(1, i(128824)), 	-- Tome of the Silver Hand		
-	un(1, i(129111)),	-- Kvaldir Raiding Horn
-	un(1, i(130249)),	-- Waywatcher's Boon
-	un(1, i(134112)), 	-- Hidden Shoulder
+	un(1, i(67600)), 	-- Lil' Alexstrasza										(Never added in Game)	
 	un(1, i(136593)), 	-- Doomhammer Offhand Appearance Record (referenced by actual item)	
 	un(1, i(142360)),	-- Blazing Ember Signet
-	un(1, i(143545)),	-- Fel Focusing Crystal 
-	un(1, i(146305)), 	-- Green Winter Hat										{STUCK ON RETRIEVING DATA)
-	un(1, i(146306)), 	-- Green Winter Clothes 								(STUCK ON RETRIEVING DATA)
 	un(1, i(146307)), 	-- Winter Boots 										(STUCK ON RETRIEVING DATA)
 	un(1, i(146651)),	-- Arsenal: Gladiator's Weapons							(Never added in Game; instead was combined with Merciless)
 	un(1, i(147036)),	-- Fel-Stippled Legguards 								(removed Beta)
 	un(1, i(147058)), 	-- Chaos-Calming Wristguards 							(removed Beta)
 	un(1, i(147074)),	-- Vambraces of Resoulte Justice 						(removed Beta)
-	model(38311, n(51634, {["u"] = 1,} )),	-- Bubbles 					(Never added in Game)
-	model(36583, n(51636, {["u"] = 1,})),	-- Lizzy 					(Never added in Game)
-	model(14657, n(14629, {["u"] = 1,})), 	-- Loggerhead Snapjaw 		(Never added in Game)
-	model(36129, n(48376, {["u"] = 1,})),	-- Rumbling Rockling 		(Never added in Game)
-	model(57820, n(83592, { 	-- Sassy Sproutling 					(Never added in Game)
-		["groups"] = {	
-			p(1433),
-		},
-		["u"] = 1,
-	})), 			
-	model(36130, n(48377, {["u"] = 1,})),	-- Swirling Stormling 		(Never added in Game)
-	model(36131, n(48378, {["u"] = 1,})), 	-- Whirling Waveling 		(Never added in Game)
-	model(29060, n(34031, {["u"] = 1,})), 	-- XS-001 Constructor Bot 	(Never added in Game)
-	
-un(1, i(105393, { -- Tusks of Mannoroth [Heroic Warforged]
-	["description"] = "|CFFFF0000If you had this item drop in SoO Heroic please screenshot and submit it to the ATT Discord.\n\nIf you have the item already and are running completionist mode please screenshot as well. Tag 105393",
-})),
-un(1, i(104646, {  -- Tusks of Mannoroth [Mythic]
-	["description"] = "|CFFFF0000If you had this item drop in SoO please screenshot and submit it to the ATT Discord.\n\nIf you have the item already and are running completionist mode please screenshot as well. Tag: 104646",
-})),	
-un(1, i(105642, { -- Tusks of Mannoroth [Mythic Warforged]
-	["description"] = "|CFFFF0000If you had this item drop in SoO please screenshot and submit it to the ATT Discord.\n\nIf you have the item already and are running completionist mode please screenshot as well. Tag: 105642",
-})),
-un(2, i(103785)), -- Tusks of Mannoroth [Heroic]
 
-------------------------------------------------------------
---			R E T R I E V I N G 			D A T A 	  --
-------------------------------------------------------------
-i(120370),
-i(120371),
-i(23351),
-i(23470),
-i(46103),
-i(49402),
-i(49405),
-i(49410),
-i(49414),
-i(49418),
-i(49422),
-i(54331),
-i(55047),
-i(21163),
-i(84897),	-- Never made to Live. Malevolent Gladiator's Heavy Crossbow
-i(94899),	-- Never made to Live. Malevolent Gladiator's Baton of Light
-i(94898),	-- Never made to Live. Malevolent Gladiator's Touch of Death
-i(85118),	-- Never made to Live. 490 Malevolent Gladiator's Shiv
-i(84895),	-- Never made to Live. Malevolent Gladiator's Shiv
-i(54757),	-- Double Link Tunic
-i(54765),	-- Burnished Leggings
-i(54766),	-- Burnished Gloves
-i(54767),	-- Burnished Girdle
-i(54768),	-- Burnished Boots
-i(54769),	-- Rough Bronze Bracers
-i(54778),	-- Burnished Boots (Again)
-i(54781),	-- Thorbia's Gauntlets
-i(54783),	-- Silvered Bronze Shoulders
-i(54789),	-- Art Template Plate Belt - Plate_Common_C_01 - Rust
-i(47058),   -- Unknown
-i(59791),   -- Unknown
-i(60221),   -- Furlbrow Cloak
-i(60774),   -- Unknown
-i(60775),   -- Unknown
-i(60777),   -- Unknown
-i(60780),   -- Unknown
-i(60781),   -- Unknown
-i(50329),   -- Unknown
-
-	
 ------------------------------------------------------------
 --			T E M P O R A R Y			I T E M S		  --
 ------------------------------------------------------------

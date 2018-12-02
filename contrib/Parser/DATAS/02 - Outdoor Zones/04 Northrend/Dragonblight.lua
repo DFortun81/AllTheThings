@@ -1701,6 +1701,12 @@ _.Zones =
 							27333, -- Onslaught Mason
 						},
 					}),
+					i(120137, { -- Tome of Polymorph: Polar Bear Cub
+						["crs"] = {
+							26482, -- Arctic Grizzly
+						},
+						["classes"] = { 8 },
+					}),
 				}),
 			},
 			["lvl"] = 61,	
