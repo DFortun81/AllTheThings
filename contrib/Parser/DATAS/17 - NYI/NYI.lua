@@ -744,6 +744,7 @@ _.NeverImplemented =
 		un(1, i(119179)),	-- Iron Star Roller
 	}),
 	n(-319, { -- Weapons
+		un(1, i(130162)),    -- Val-Sharah Artifact Gem #1
 		n(-347, { -- Bows
 			un(1, i(108783)),    -- Unknown
 			un(1, i(109283)),    -- 6.0 QA Combat Test Hunter Bow
