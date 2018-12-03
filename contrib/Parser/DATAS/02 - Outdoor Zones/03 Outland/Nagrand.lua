@@ -729,17 +729,19 @@ _.Zones =
 				}),
 				n(0,    {	-- Zone Drop
 					["groups"] = {
-						n(18203, { -- Murkblood Raider
-							["groups"] = {
-								i(23608), -- Plans: Khorium Belt
+						{	-- Plans: Khorium Belt
+							["itemID"]  = 23608,	-- Plans: Khorium Belt
+							["crs"] = {
+								18203,	--Murkblood Raider
 							},
-						}),
-						i(23611, { -- Plans: Ragesteel Gloves
+						},
+						{	-- Plans: Ragesteel Gloves
+							["itemID"]  = 23611,	-- Plans: Ragesteel Gloves
 							["crs"] = {
 								17137, -- Boulderfist Mage
 								17136, -- Boulderfist Warrior
 							},
-						}),
+						},
 					},
 				}),
 			},

@@ -58,11 +58,12 @@ _.Instances =
 								20869,	-- Arcatraz Sentinel
 							},
 						}),
-						i(23606, {	-- Plans: Felsteel Leggings
+						{	-- Plans: Felsteel Leggings
+							["itemID"]  = 23606,	-- Plans: Felsteel Leggings
 							["crs"] = {
 								20900,	-- Unchained Doombringer
 							},
-						}),
+						},
 					}),
 					d(  1, {	-- Normal
 						cr(20870, e(548, {	-- Zereketh the Unbound

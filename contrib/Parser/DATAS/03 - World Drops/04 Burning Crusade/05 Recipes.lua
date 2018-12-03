@@ -4,7 +4,7 @@
 _.WorldDrops = 
 {
 	{
-		["groups"] = {	-- Classic
+		["groups"] = {	-- Burning Crusade
 			filter(200, {	-- Recipes
 				n(-180, {	-- Alchemy
 					i(22914),	-- Recipe: Destruction Potion
@@ -15,7 +15,69 @@ _.WorldDrops =
 					i(22912),	-- Recipe: Heroic Potion
 					i(22903),	-- Recipe: Insane Strength Potion
 				}),
-				n(-186, { -- Jewelcrafting
+				n(-181, {	-- Blacksmithing
+					{	-- Plans: Adamantite Weapon Chain
+						["itemID"] = 33186,	-- Plans: Adamantite Weapon Chain
+					},
+					{	-- Plans: Black Felsteel Bracers
+						["itemID"] = 23626,	-- Plans: Black Felsteel Bracers
+					},
+					{	-- Plans: Blessed Bracers
+						["itemID"] = 23628,	-- Plans: Blessed Bracers
+					},
+					{	-- Plans: Bracers of the Green Fortress
+						["itemID"] = 23627,	-- Plans: Bracers of the Green Fortress
+					},
+					{	-- Plans: Dirge
+						["itemID"] = 23636,	-- Plans: Dirge
+					},
+					{	-- Plans: Eternium Runed Blade
+						["itemID"] = 23635,	-- Plans: Eternium Runed Blade
+					},
+					{	-- Plans: Fel Edged Battleaxe
+						["itemID"] = 23631,	-- Plans: Fel Edged Battleaxe
+					},
+					{	-- Plans: Fel Hardened Maul
+						["itemID"] = 23634,	-- Plans: Fel Hardened Maul
+					},
+					{	-- Plans: Felfury Gauntlets
+						["itemID"] = 23620,	-- Plans: Felfury Gauntlets
+					},
+					{	-- Plans: Felsteel Longblade
+						["itemID"] = 23629,	-- Plans: Felsteel Longblade
+					},
+					{	-- Plans: Felsteel Reaper
+						["itemID"] = 23632,	-- Plans: Felsteel Reaper
+					},
+					{	-- Plans: Gauntlets of the Iron Tower
+						["itemID"] = 23621,	-- Plans: Gauntlets of the Iron Tower
+					},
+					{	-- Plans: Hammer of Righteous Might
+						["itemID"] = 33954,	-- Plans: Hammer of Righteous Might
+					},
+					{	-- Plans: Hand of Eternity
+						["itemID"] = 23637,	-- Plans: Hand of Eternity
+					},
+					{	-- Plans: Helm of the Stalwart Defender
+						["itemID"] = 23624,	-- Plans: Helm of the Stalwart Defender
+					},
+					{	-- Plans: Khorium Champion
+						["itemID"] = 23630,	-- Plans: Khorium Champion
+					},
+					{	-- Plans: Oathkeeper's Helm
+						["itemID"] = 23625,	-- Plans: Oathkeeper's Helm
+					},
+					{	-- Plans: Runic Hammer
+						["itemID"] = 23633,	-- Plans: Runic Hammer
+					},
+					{	-- Plans: Steelgrip Gauntlets
+						["itemID"] = 23622,	-- Plans: Steelgrip Gauntlets
+					},
+					{	-- Plans: Storm Helm
+						["itemID"] = 23623,	-- Plans: Storm Helm
+					},
+				}),
+				n(-186, { 	-- Jewelcrafting
 					i(24193),	-- Design: Bold Living Ruby
 					i(24168),	-- Design: Braided Eternium Chain
 					i(24196),	-- Design: Brilliant Living Ruby

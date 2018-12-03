@@ -331,6 +331,8 @@ _.NeverImplemented =
 				un(1, i(154047)), -- Oathsworn Defender Stone
 			}),
 			un(1, i(24137)), -- PH Plate Ramparts Reward
+			un(1, i(27965)),	-- TEST 130 Epic Paladin DPS Chest
+			un(1, i(37468)),	-- HF28 Plate Physical Boots
 			un(1, i(105393, { -- Tusks of Mannoroth [Heroic Warforged]
 				["description"] = "|CFFFF0000If you had this item drop in SoO Heroic please screenshot and submit it to the ATT Discord.\n\nIf you have the item already and are running completionist mode please screenshot as well. Tag 105393",
 			})),

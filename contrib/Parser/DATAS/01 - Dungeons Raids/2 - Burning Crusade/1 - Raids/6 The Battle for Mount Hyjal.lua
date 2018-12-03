@@ -227,16 +227,11 @@ _.Instances =
 								17899,    -- Shadowy Necromancer
 							},
 						}),
-					 -- i(32754),	-- Pattern: Bracers of Nimble Thought (BT ONLY)
-					 -- i(32744),	-- Pattern: Bracers of Renewed Life (BT ONLY)
-					 -- i(32750),	-- Pattern: Living Earth Bindings (BT ONLY)
-						i(32751),	-- Pattern: Living Earth Shoulders (Hyjal ONLY)
-						i(32755),	-- Pattern: Mantle of Nimble Thought (Hyjal ONLY)
-						i(32745),	-- Pattern: Shoulderpads of Renewed Life (Hyjal ONLY)
-					 -- i(32749),	-- Pattern: Shoulders of Lightning Reflexes (BT ONLY)
-					 -- i(32753),	-- Pattern: Swiftheal Mantle(BT ONLY)
-						i(32752),	-- Pattern: Swiftheal Wraps (Hyjal ONLY)
-						i(32746, {		-- Pattern: Swiftstrike Bracers (Hyjal ONLY)
+						i(32751),	-- Pattern: Living Earth Shoulders
+						i(32755),	-- Pattern: Mantle of Nimble Thought
+						i(32745),	-- Pattern: Shoulderpads of Renewed Life
+						i(32752),	-- Pattern: Swiftheal Wraps
+						i(32746, {		-- Pattern: Swiftstrike Bracers
 							["crs"] = {
 								17898,    -- Abomination
 								17905,    -- Banshee
@@ -248,12 +243,9 @@ _.Instances =
 								17908,    -- Giant Infernal
 								17899,    -- Shadowy Necromancer
 							},
-						}),						
-					 -- i(32747),	-- Pattern: Swiftstrike Shoulders (BT ONLY)
-					 -- i(32738),	-- Plans: Dawnsteel Bracers (BT ONLY)
-						i(32739),	-- Plans: Dawnsteel Shoulders (BT & Hyjal)
-						i(32736),	-- Plans: Swiftsteel Bracers (Hyjal ONLY)
-					 -- i(32737),	-- Plans: Swiftsteel Shoulders (BT ONLY)
+						}),
+						i(32739),	-- Plans: Dawnsteel Shoulders
+						i(32736),	-- Plans: Swiftsteel Bracers
 					}),
 					e(1577, {	-- Rage Winterchill
 						["groups"] = {

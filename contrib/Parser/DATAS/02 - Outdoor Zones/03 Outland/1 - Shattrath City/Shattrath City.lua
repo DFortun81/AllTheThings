@@ -606,11 +606,22 @@ _.Zones =
 				n(-2,   {	-- Vendors
 					n(19662, {	-- Aaron Hollman <Blacksmithing Supplies>
 						["groups"] = {
-							i(23591),	-- Plans: Adamantite Cleaver
-							i(23592),	-- Plans: Adamantite Dagger
-							i(23590),	-- Plans: Adamantite Maul
-							i(23593),	-- Plans: Adamantite Rapier
-							un(1, i(25846)), -- Plans: Adamantite Rod
+							{	-- Plans: Adamantite Cleaver
+								["itemID"] = 23591,	-- Plans: Adamantite Cleaver
+							},
+							{	-- Plans: Adamantite Dagger
+								["itemID"] = 23592,	-- Plans: Adamantite Dagger
+							},
+							{	-- Plans: Adamantite Maul
+								["itemID"] = 23590,	-- Plans: Adamantite Maul
+							},
+							{	-- Plans: Adamantite Rapier
+								["itemID"] = 23593,	-- Plans: Adamantite Rapier
+							},
+							{	-- Plans: Adamantite Rod
+								["itemID"]  = 25846, -- Plans: Adamantite Rod
+								["u"] = 1,
+							},
 						},
 						["coord" ] = { 64.0, 71.8 },
 					}),

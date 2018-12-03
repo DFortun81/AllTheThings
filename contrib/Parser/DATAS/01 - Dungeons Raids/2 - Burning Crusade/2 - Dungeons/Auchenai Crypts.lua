@@ -9,12 +9,18 @@ _.Instances =
 			inst(247, { 	-- Auchenai Crypts
 				["groups"] = {
 					n(0, {	-- Zone Drops
-						n(18497, {	-- Auchenai Monk
-							dr(1.7, i(23605)),	-- Plans: Felsteel Gloves
-						}),
-						n(18521, {	-- Raging Skeleton
-							dr(7.0, i(22544)),	-- Formula: Enchant Boots - Dexterity
-						}),
+						{	-- Formula: Enchant Boots - Dexterity
+							["itemID"]  = 22544,	-- Formula: Enchant Boots - Dexterity
+							["crs"] = {
+								18521,	-- Raging Skeleton
+							},
+						},
+						{	-- Plans: Felsteel Gloves
+							["itemID"]  = 23605,	-- Plans: Felsteel Gloves
+							["crs"] = {
+								18497,	-- Auchenai Monk
+							},
+						},
 					}),
 					d(1, {	-- Normal
 						n(-17, {	-- Quests

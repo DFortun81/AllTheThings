@@ -20,22 +20,14 @@ _.Instances =
 						i(32943),	-- Swiftsteel Bludgeon
 						i(32593),	-- Treads of the Den Mother
 						-- Recipes
-					 -- i(32748),	-- Pattern: Bindings of Lightning Reflexes (Hyjal ONLY)
-						i(32754),	-- Pattern: Bracers of Nimble Thought (BT ONLY)
-						i(32744),	-- Pattern: Bracers of Renewed Life (BT ONLY)
-						i(32750),	-- Pattern: Living Earth Bindings (BT ONLY)
-					 -- i(32751),	-- Pattern: Living Earth Shoulders (Hyjal ONLY)
-					 -- i(32755),	-- Pattern: Mantle of Nimble Thought (Hyjal ONLY)
-					 -- i(32745),	-- Pattern: Shoulderpads of Renewed Life (Hyjal ONLY)
-						i(32749),	-- Pattern: Shoulders of Lightning Reflexes (BT ONLY)
-					 -- i(32746),	-- Pattern: Swiftstrike Bracers (Hyjal ONLY)
-						i(32747),	-- Pattern: Swiftstrike Shoulders (BT ONLY)
-						i(32753),	-- Pattern: Swiftheal Mantle(BT ONLY)
-					 -- i(32752),	-- Pattern: Swiftheal Wraps (Hyjal ONLY)
-						i(32738),	-- Plans: Dawnsteel Bracers (BT ONLY)
-						i(32739),	-- Plans: Dawnsteel Shoulders (BT & Hyjal)
-					 -- i(32736),	-- Plans: Swiftsteel Bracers (Hyjal ONLY)
-						i(32737),	-- Plans: Swiftsteel Shoulders (BT ONLY)
+						i(32754),	-- Pattern: Bracers of Nimble Thought
+						i(32744),	-- Pattern: Bracers of Renewed Life
+						i(32750),	-- Pattern: Living Earth Bindings
+						i(32749),	-- Pattern: Shoulders of Lightning Reflexes
+						i(32747),	-- Pattern: Swiftstrike Shoulders
+						i(32753),	-- Pattern: Swiftheal Mantle
+						i(32738),	-- Plans: Dawnsteel Bracers
+						i(32737),	-- Plans: Swiftsteel Shoulders
 					}),
 					n(-17, {	-- Quests
 						q(10957, {	-- Redemption of the Ashtongue (UNTESTED, NEEDS CONFIRMATION)

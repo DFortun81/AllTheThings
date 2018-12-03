@@ -319,6 +319,20 @@ _.Zones =
 									--23385,	-- Simon Unit [Wowhead lists, but probably due to AoE loot]
 								},
 							},
+							{	-- Plans: Ragesteel Helm
+								["itemID"]  = 23612,	-- Plans: Ragesteel Helm
+								["coords"] = {
+									{ 72.8, 40.6 },
+									{ 72.8, 41.6 },
+									{ 73.6, 38.4 },
+									{ 73.6, 39.6 },
+									{ 73.6, 43.6 },
+									{ 74.2, 41.6 },
+								},
+								["crs"] = {
+									16952,	-- Anger Guard
+								},
+							},
 							{	-- Mistshroud Shoulders
 								["itemID"] = 31569,	-- Mistshroud Shoulders
 								["coords"] = {
@@ -385,22 +399,6 @@ _.Zones =
 										["itemID"] = 22925,	-- Recipe: Major Holy Protection Potion
 									},
 								},
-							},
-							{	-- Anger Guard
-								["npcID"] = 16952,	-- Anger Guard
-								["coords"] = {
-									{ 72.8, 40.6 },
-									{ 72.8, 41.6 },
-									{ 73.6, 38.4 },
-									{ 73.6, 39.6 },
-									{ 73.6, 43.6 },
-									{ 74.2, 41.6 },
-								},
-								["g"] = {
-									{	-- Plans: Ragesteel Helm
-										["itemID"]  = 23612,	-- Plans: Ragesteel Helm
-									},
-								}
 							},
 							{	-- Bloodmaul Geomancer
 								["npcID"] = 19952,	-- Bloodmaul Geomancer

@@ -160,7 +160,6 @@ _.WorldDrops =
 					i(45927),	-- Handwraps of Resonance
 				}),
 				n(-328, { -- Waist
-					i(30034),	-- Belt of the Guardian
 					i(35594),	-- Snowmelt Silken Cinch
 					i(35653),	-- Girdle of the Mystical Prison
 					i(36978),	-- Ley-Whelphide Belt
