@@ -52,7 +52,7 @@ local DESCRIPTION_SEPARATOR = "`";
 app.refreshing = {};
 local function OnUpdate(self)
 	for i=#self.__stack,1,-1 do
-		if not self.__stack[i][1]() then
+		if not self.__stack[i][1](self) then
 			table.remove(self.__stack, i);
 			if #self.__stack < 1 then
 				self:SetScript("OnUpdate", nil);
@@ -5439,6 +5439,8 @@ app.BaseToy = {
 			return GetDataSubMember("CollectedToys", t.itemID);
 		elseif key == "f" then
 			return 102;
+		elseif key == "isToy" then
+			return true;
 		elseif key == "text" then
 			return C_ToyBox_GetToyLink(t.itemID);
 		elseif key == "link" then
@@ -8246,6 +8248,7 @@ function app:GetWindow(suffix, parent, onUpdate)
 		-- Create the window instance.
 		window = CreateFrame("FRAME", app:GetName() .. "-Window-" .. suffix, parent or UIParent);
 		app.Windows[suffix] = window;
+		window.Suffix = suffix;
 		window.Toggle = ToggleWindow;
 		window.Update = onUpdate or UpdateWindow;
 		window.SetVisible = SetWindowVisibility;
@@ -8277,6 +8280,152 @@ function app:GetWindow(suffix, parent, onUpdate)
 			}
 		};
 		window:Hide();
+		window.AddObject = function(self, info)
+			-- Bubble Up the Maps
+			local mapInfo;
+			local mapID = app.GetCurrentMapID();
+			if mapID then
+				local pos = C_Map.GetPlayerMapPosition(mapID, "player");
+				if pos then
+					local px, py = pos:GetXY();
+					info.coord = { px * 100, py * 100 };
+				end
+				repeat
+					mapInfo = C_Map.GetMapInfo(mapID);
+					if mapInfo then
+						info = { ["mapID"] = mapInfo.mapID, ["g"] = { info } };
+						mapID = mapInfo.parentMapID
+					end
+				until not mapInfo or not mapID;
+			end
+			
+			self:MergeObject(self.data.g, self:CreateObject(info));
+			self:MergeObject(self.rawData, info);
+			self:Update();
+		end
+		window.Clear = function(self)
+			self.rawData = {};
+			app.SetDataMember(self.Suffix, self.rawData);
+			wipe(self.data.g);
+			self:Update();
+		end
+		window.CreateObject = function(self, t)
+			local s = {};
+			if t[1] then
+				-- array
+				for i,o in ipairs(t) do
+					table.insert(s, self:CreateObject(o));
+				end
+				return s;
+			else
+				if t.isToy then s.isToy = true; end
+				for key,value in pairs(t) do
+					if key ~= "parent" then
+						s[key] = value;
+					end
+				end
+				if t.g then
+					s.g = {};
+					for i,o in ipairs(t.g) do
+						table.insert(s.g, self:CreateObject(o));
+					end
+				end
+				t = s;
+				if t.mapID then
+					t = app.CreateMap(t.mapID, t);
+				elseif t.encounterID then
+					t = app.CreateEncounter(t.encounterID, t);
+				elseif t.currencyID then
+					t = app.CreateCurrencyClass(t.currencyID, t);
+				elseif t.speciesID then
+					t = app.CreateSpecies(t.speciesID, t);
+				elseif t.objectID then
+					t = app.CreateObject(t.objectID, t);
+				elseif t.followerID then
+					t = app.CreateFollower(t.followerID, t);
+				elseif t.recipeID then
+					t = app.CreateRecipe(t.recipeID, t);
+				elseif t.professionID then
+					t = app.CreateProfession(t.professionID, t);
+				elseif t.spellID then
+					t = app.CreateSpell(t.spellID, t);
+				elseif t.categoryID then
+					t = app.CreateCategory(t.categoryID, t);
+				elseif t.criteriaID then
+					t = app.CreateAchievementCriteria(t.criteriaID, t);
+				elseif t.achievementID then
+					t = app.CreateAchievement(t.achievementID, t);
+				elseif t.itemID then
+					if t.isToy then
+						t = app.CreateToy(t.itemID, t);
+					else
+						t = app.CreateItem(t.itemID, t);
+					end
+				elseif t.npcID or t.creatureID then
+					t = app.CreateNPC(t.npcID or t.creatureID, t);
+				elseif t.questID then
+					t = app.CreateQuest(t.questID, t);
+				end
+				t.visible = true;
+				t.expanded = true;
+				return t;
+			end
+		end
+		window.MergeObject = function(self, g, t)
+			local key = t.key;
+			if not key then
+				if t.mapID then
+					key = "mapID";
+				elseif t.currencyID then
+					key = "currencyID";
+				elseif t.objectID then
+					key = "objectID";
+				elseif t.followerID then
+					key = "followerID";
+				elseif t.recipeID then
+					key = "recipeID";
+				elseif t.professionID then
+					key = "professionID";
+				elseif t.spellID then
+					key = "spellID";
+				elseif t.categoryID then
+					key = "categoryID";
+				elseif t.achievementID then
+					key = "achievementID";
+				elseif t.toyID then
+					key = "toyID";
+				elseif t.itemID then
+					key = "itemID";
+				elseif t.npcID then
+					key = "npcID";
+				elseif t.creatureID then
+					key = "creatureID";
+				elseif t.questID then
+					key = "questID";
+				end
+			end
+			for i,o in ipairs(g) do
+				if o[key] == t[key] then
+					if t.g then
+						local tg = t.g;
+						t.g = nil;
+						if o.g then
+							for j,k in ipairs(tg) do
+								self:MergeObject(o.g, k);
+							end
+						else
+							o.g = tg;
+						end
+					end
+					for k,value in pairs(t) do
+						o[k] = value;
+					end
+					return o;
+				end
+			end
+			table.insert(g, t);
+			return t;
+		end
 		
 		-- The Close Button. It's assigned as a local variable so you can change how it behaves.
 		window.CloseButton = CreateFrame("Button", nil, window, "UIPanelCloseButton");
@@ -8326,19 +8475,6 @@ app:GetWindow("Prime");
 app:GetWindow("Unsorted");
 --[[
 -- AllTheThings:GetWindow("Unsorted"):Show();
--- split a string
-function string:split(delimiter)
-  local result = { }
-  local from  = 1
-  local delim_from, delim_to = string.find( self, delimiter, from  )
-  while delim_from do
-    table.insert( result, string.sub( self, from , delim_from-1 ) )
-    from  = delim_to + 1
-    delim_from, delim_to = string.find( self, delimiter, from  )
-  end
-  table.insert( result, string.sub( self, from  ) )
-  return result
-end
 app:GetWindow("Debugger", UIParent, function(self)
 	if not self.initialized then
 		self.initialized = true;
@@ -8352,137 +8488,6 @@ app:GetWindow("Debugger", UIParent, function(self)
 			['g'] = {},
 		};
 		self.rawData = {};
-		self.AddObject = function(self, info)
-			-- Bubble Up the Maps
-			local mapInfo;
-			local mapID = app.GetCurrentMapID();
-			if mapID then
-				local pos = C_Map.GetPlayerMapPosition(mapID, "player");
-				if pos then
-					local px, py = pos:GetXY();
-					info.coord = { px * 100, py * 100 };
-				end
-				repeat
-					mapInfo = C_Map.GetMapInfo(mapID);
-					if mapInfo then
-						info = { ["mapID"] = mapInfo.mapID, ["g"] = { info } };
-						mapID = mapInfo.parentMapID
-					end
-				until not mapInfo or not mapID;
-			end
-			
-			self:MergeObject(self.data.g, self:CreateObject(info));
-			self:MergeObject(self.rawData, info);
-			self:Update();
-		end
-		self.Clear = function(self)
-			self.rawData = {};
-			app.SetDataMember("Debugger", self.rawData);
-			wipe(self.data.g);
-			self:Update();
-		end
-		self.CreateObject = function(self, t)
-			local s = {};
-			if t[1] then
-				-- array
-				for i,o in ipairs(t) do
-					table.insert(s, self:CreateObject(o));
-				end
-				return s;
-			else
-				for key,value in pairs(t) do
-					s[key] = value;
-				end
-				if t.g then
-					s.g = {};
-					for i,o in ipairs(t.g) do
-						table.insert(s.g, self:CreateObject(o));
-					end
-					t = s;
-				end
-				if t.mapID then
-					t = app.CreateMap(t.mapID, t);
-				elseif t.currencyID then
-					t = app.CreateCurrencyClass(t.currencyID, t);
-				elseif t.objectID then
-					t = app.CreateObject(t.objectID, t);
-				elseif t.followerID then
-					t = app.CreateFollower(t.followerID, t);
-				elseif t.recipeID then
-					t = app.CreateRecipe(t.recipeID, t);
-				elseif t.professionID then
-					t = app.CreateProfession(t.professionID, t);
-				elseif t.spellID then
-					t = app.CreateSpell(t.spellID, t);
-				elseif t.categoryID then
-					t = app.CreateCategory(t.categoryID, t);
-				elseif t.achievementID then
-					t = app.CreateAchievement(t.achievementID, t);
-				elseif t.questID then
-					t = app.CreateQuest(t.questID, t);
-				elseif t.npcID or t.creatureID then
-					t = app.CreateNPC(t.npcID or t.creatureID, t);
-				elseif t.itemID then
-					t = app.CreateItem(t.itemID, t);
-				end
-				t.visible = true;
-				t.expanded = true;
-				return t;
-			end
-		end
-		self.MergeObject = function(self, g, t)
-			local key = t.key;
-			if not key then
-				if t.mapID then
-					key = "mapID";
-				elseif t.currencyID then
-					key = "currencyID";
-				elseif t.objectID then
-					key = "objectID";
-				elseif t.followerID then
-					key = "followerID";
-				elseif t.recipeID then
-					key = "recipeID";
-				elseif t.professionID then
-					key = "professionID";
-				elseif t.spellID then
-					key = "spellID";
-				elseif t.categoryID then
-					key = "categoryID";
-				elseif t.achievementID then
-					key = "achievementID";
-				elseif t.questID then
-					key = "questID";
-				elseif t.npcID then
-					key = "npcID";
-				elseif t.creatureID then
-					key = "creatureID";
-				elseif t.itemID then
-					key = "itemID";
-				end
-			end
-			for i,o in ipairs(g) do
-				if o[key] == t[key] then
-					if t.g then
-						local tg = t.g;
-						t.g = nil;
-						if o.g then
-							for j,k in ipairs(tg) do
-								self:MergeObject(o.g, k);
-							end
-						else
-							o.g = tg;
-						end
-					end
-					for k,value in pairs(t) do
-						o[k] = value;
-					end
-					return o;
-				end
-			end
-			table.insert(g, t);
-			return t;
-		end
 		
 		-- Setup Event Handlers and register for events
 		-- /script AllTheThings:GetWindow("Debugger"):Show();
@@ -8738,7 +8743,7 @@ app:GetWindow("Debugger", UIParent, function(self)
 	end
 	UpdateWindow(self, true);
 end):Show();
---]]
+--]]--
 app:GetWindow("CurrentInstance");
 app:GetWindow("RaidAssistant", UIParent, function(self)
 	if not self.initialized then
