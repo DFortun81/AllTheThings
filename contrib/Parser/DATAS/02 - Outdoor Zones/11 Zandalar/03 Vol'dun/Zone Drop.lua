@@ -139,6 +139,7 @@ _.Zones =
 						i(160155),	-- Stormforger Girdle
 						i(160157),	-- Stormforger Legguards
 						i(160159),	-- Stormforger Sabatons
+						i(160170),	-- Arid Caravan Band
 					}),
 				}),
 			},
