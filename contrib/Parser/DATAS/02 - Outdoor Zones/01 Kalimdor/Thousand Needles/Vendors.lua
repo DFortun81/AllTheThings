@@ -8,11 +8,17 @@ _.Zones =
 			["groups"] = {
 				n(-2,  {	-- Vendors
 					n(41135, {	-- "Plucky" Johnson
-						i(11023),	-- Ancona Chicken (PET!)
+						["groups"] = {
+							i(11023),	-- Ancona Chicken
+						},
+						["coord"] = { 85.6, 91.6 },
 					}),
 					n(41452, {	-- Starn <Gunsmith & Bowyer>
-						i(11305),	-- Dense Shortbow
-						i(11304),	-- Fine Longbow
+						["groups"] = {
+							i(11305),	-- Dense Shortbow
+							i(11304),	-- Fine Longbow
+						},
+						["coord"] = { 46.2, 57.6 },
 					}),
 				}),
 			},
