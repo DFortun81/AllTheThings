@@ -5992,6 +5992,8 @@ UpdateGroup = function(parent, group)
 		-- This group doesn't meet requirements.
 		group.visible = false;
 	end
+	
+	if group.OnUpdate then group:OnUpdate(); end
 end
 UpdateGroups = function(parent, g)
 	if g then
@@ -9189,6 +9191,223 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 	end
 	UpdateWindow(self, true);
 end);
+--[[
+(function()
+	local worldMapIDs = {
+		619,	-- The Broken Isles
+		885,	-- Antoran Wastes
+		830,	-- Krokuun
+		882,	-- Mac'Aree
+		875,	-- Zandalar
+		876,	-- Kul'Tiras
+	};
+	app:GetWindow("WorldQuests", UIParent, function(self)
+		if not self.initialized then
+			self.initialized = true;
+			self.data = {
+				['text'] = "World Quests",
+				['icon'] = "Interface\\Icons\\INV_Misc_Map08.blp", 
+				["description"] = "These are World Quests that are currently available somewhere. Go get 'em!",
+				['visible'] = true, 
+				['expanded'] = true,
+				['back'] = 1,
+				['g'] = {},
+			};
+			self.rawData = {};
+			local OnUpdateForItem = function(self)
+				for i,o in ipairs(self.g) do
+					o.visible = false;
+				end
+			end;
+			self.Rebuild = function(self)
+				-- Rebuild all World Quest data
+				local retry = false;
+				local temp = {};
+				for _,mapID in pairs(worldMapIDs) do
+					local mapObject = { mapID=mapID,g={},progress=0,total=0};
+					local cache = fieldCache["mapID"][mapID];
+					if cache then
+						for _,data in ipairs(cache) do
+							if data.mapID and data.icon then
+								mapObject.icon = data.icon;
+								mapObject.lvl = data.lvl;
+								mapObject.description = data.description;
+								break;
+							end
+						end
+					end
+					
+					local pois = C_TaskQuest.GetQuestsForPlayerByMapID(mapID);
+					if pois then
+						for i,poi in ipairs(pois) do
+							local questObject = {questID=poi.questId,g={},progress=0,total=0};
+							tinsert(mapObject.g, questObject);
+							local tagID, tagName, worldQuestType, rarity, isElite, tradeskillLineIndex = GetQuestTagInfo(questObject.questID);
+							if worldQuestType == LE_QUEST_TAG_TYPE_PVP or worldQuestType == LE_QUEST_TAG_TYPE_BOUNTY then
+								questObject.icon = "Interface\\Icons\\Achievement_PVP_P_09";
+							elseif worldQuestType == LE_QUEST_TAG_TYPE_PET_BATTLE then
+								questObject.icon = "Interface\\Icons\\PetJournalPortrait";
+							elseif worldQuestType == LE_QUEST_TAG_TYPE_PROFESSION then
+								questObject.icon = "Interface\\Icons\\Trade_BlackSmithing";
+							elseif worldQuestType == LE_QUEST_TAG_TYPE_DUNGEON then
+								-- questObject.icon = "Interface\\Icons\\Achievement_PVP_P_09";
+								-- TODO: Add the relevent dungeon icon.
+								
+							elseif worldQuestType == LE_QUEST_TAG_TYPE_RAID then
+								-- questObject.icon = "Interface\\Icons\\Achievement_PVP_P_09";
+								-- TODO: Add the relevent dungeon icon.
+							elseif worldQuestType == LE_QUEST_TAG_TYPE_INVASION or worldQuestType == LE_QUEST_TAG_TYPE_INVASION_WRAPPER then
+								questObject.icon = "Interface\\Icons\\achievements_zone_brokenshore";
+							--elseif worldQuestType == LE_QUEST_TAG_TYPE_TAG then
+								-- completely useless
+								--questObject.icon = "Interface\\Icons\\INV_Misc_QuestionMark";
+							--elseif worldQuestType == LE_QUEST_TAG_TYPE_NORMAL then
+							--	questObject.icon = "Interface\\Icons\\INV_Misc_QuestionMark";
+							end
+							
+							cache = fieldCache["questID"][questObject.questID];
+							if cache then
+								for _,data in ipairs(cache) do
+									for key,value in pairs(data) do
+										if not (key == "g" or key == "parent") then
+											questObject[key] = value;
+										end
+									end
+									if data.g then
+										for _,entry in ipairs(data.g) do
+											tinsert(questObject.g, entry);
+										end
+									end
+								end
+							end
+							
+							local numQuestRewards = GetNumQuestLogRewards (questObject.questID)
+							for j=1,numQuestRewards,1 do
+								local itemID = select(6, GetQuestLogRewardInfo (j, questObject.questID));
+								if itemID then
+									-- QuestHarvester:SetQuestLogItem("reward", j, questObject.questID);
+									local item = { ["itemID"] = itemID, ["expanded"] = false, };
+									cache = fieldCache["itemID"][itemID];
+									if cache then
+										for _,data in ipairs(cache) do
+											if data.f then
+												item.f = data.f;
+											end
+											if data.s then
+												item.s = data.s;
+											end
+											if data.g and #data.g > 0 then
+												if not item.g then
+													item.g = {};
+													item.progress = 0;
+													item.total = 0;
+													item.OnUpdate = OnUpdateForItem;
+												end
+												for __,subdata in ipairs(data.g) do
+													self:MergeObject(item.g, subdata);
+												end
+											end
+										end
+									end
+									self:MergeObject(questObject.g, item);
+								else
+									return true;
+								end
+							end
+							
+							local numCurrencies = GetNumQuestLogRewardCurrencies(questObject.questID);
+							if numCurrencies > 0 then
+								for j=1,numCurrencies,1 do
+									local name, texture, numItems, currencyID = GetQuestLogRewardCurrencyInfo(j, questObject.questID);
+									if currencyID then
+										local item = { ["currencyID"] = currencyID, ["expanded"] = false, };
+										cache = fieldCache["currencyID"][currencyID];
+										if cache then
+											for _,data in ipairs(cache) do
+												if data.f then
+													item.f = data.f;
+												end
+												if data.g and #data.g > 0 then
+													if not item.g then
+														item.g = {};
+														item.progress = 0;
+														item.total = 0;
+														item.OnUpdate = OnUpdateForItem;
+													end
+													for __,subdata in ipairs(data.g) do
+														self:MergeObject(item.g, subdata);
+													end
+												end
+											end
+										end
+										if not item.g then
+											item.g = {};
+											item.progress = 0;
+											item.total = 0;
+											item.OnUpdate = OnUpdateForItem;
+										end
+										self:MergeObject(questObject.g, item);
+									else
+										return true;
+									end
+								end
+							end
+							--print(i, ": ", mapID, " ", poi.mapID, ", ", questObject.questID, timeRemaining);
+							--print(tagID, tagName, worldQuestType, rarity, isElite, tradeskillLineIndex, displayTimeLeft);
+						end
+						table.sort(mapObject.g, self.Sort);
+					end
+					if #mapObject.g > 0 then
+						self:MergeObject(temp, mapObject);
+					end
+				end
+				wipe(self.rawData);
+				for i,o in ipairs(temp) do
+					self:MergeObject(self.rawData, o);
+				end
+				self.data.g = self:CreateObject(self.rawData);
+				BuildGroups(self.data, self.data.g);
+				self:Update();
+			end
+			self.Sort = function(a, b)
+				if a.isRaid then
+					if b.isRaid then
+						return false;
+					else
+						return true;
+					end
+				elseif b.isRaid then
+					return false;
+				end
+				if a.questID then
+					if b.questID then
+						return a.questID < b.questID;
+					else
+						return true;
+					end
+				end
+				return false;
+			end;
+			
+			-- Setup Event Handlers and register for events
+			self.events = {};
+			self:SetScript("OnEvent", function(self, e, ...)
+				-- print(e, ...);
+				-- Rebuild all World Quest data
+				Push(self, "Rebuild", self.Rebuild);
+			end);
+			self:RegisterEvent("PLAYER_ENTERING_WORLD");
+			self:RegisterEvent("ZONE_CHANGED_NEW_AREA");
+		end
+		
+		-- Update the window and all of its row data
+		self.data.progress = 0;
+		self.data.total = 0;
+		UpdateGroups(self.data, self.data.g, 1);
+		UpdateWindow(self, true);
+	end):Show();
+end)();
+--]]
 
 GameTooltip:HookScript("OnShow", AttachTooltip);
 GameTooltip:HookScript("OnTooltipSetQuest", AttachTooltip);
