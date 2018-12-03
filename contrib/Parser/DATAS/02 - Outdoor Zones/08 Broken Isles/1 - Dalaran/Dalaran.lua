@@ -3937,13 +3937,18 @@ _.Zones =
 							["icon"] = "Interface\\Worldmap\\GlowSkull_64Red",	-- Red
 						}),	
 					})),
-					n(106655, { -- Arcanomancer Vridiel <Blacksmithing Trainer>
-						currency(1533, { -- Wakening Essences
-							{
+					{	-- Arcanomancer Vridiel <Blacksmithing Trainer>
+						["npcID"] = 106655,	-- Arcanomancer Vridiel <Blacksmithing Trainer>
+						["currencyID"] = 1533,	-- Wakening Essences
+						["coords"] = {
+							{ 45.21, 29.11, 627 },
+						},
+						["g"] = {
+							{	-- Awoken Titan Essence
 								["itemID"] = 154879,	-- Awoken Titan Essence
 								["description"] = "Unless you played during Legion and have legendaries still not at their maximum iLvl, this item is completely useless.",
 							},
-							{
+							{	-- Purified Titan Essence
 								["itemID"] = 157796,	-- Purified Titan Essence
 								["description"] = "If you still have this item, refer to the BoA tokens to know what you can get for your class. If you already know all of the legendaries for your class, this item will give you a random BoA token instead.",
 								["u"] = 1,
@@ -4254,8 +4259,8 @@ _.Zones =
 								i(151650),	-- Soul of the Battlelord
 								i(137054),	-- The Walls Fell
 							}),
-						}),
-					}),
+						},
+					},
 					n(96979, { 	-- Bragund Brightlink <Mail Armor Merchant>
 						i(50993),	-- Band of the Night Raven
 						i(50980),	-- Blizzard Keeper's Mitts

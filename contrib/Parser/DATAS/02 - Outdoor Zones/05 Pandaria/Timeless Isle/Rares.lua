@@ -50,6 +50,7 @@ _.Zones =
 								{ 66.81, 67.21, 554 },
 								{ 65.62, 69.82, 554 },
 								{ 63.63, 72.63, 554 },
+								{ 62.10, 77.14, 554 },
 							},
 							["g"] = {
 								{	-- Bufo
@@ -201,18 +202,29 @@ _.Zones =
 								},
 							},
 						}),
-						n(73281, { 	-- Dread Ship Vazuvius
-							["groups"] = {
+						{	-- Dread Ship Vazuvius
+							["npcID"] = 73281,		-- Dread Ship Vazuvius
+							["questID"] = 33290,	-- Note!! Quest 33314 also fires off on first kill of the week.  Need to check on another day if both fire off still
+							
+							["isDaily"] = true,
+							["description"] = "Need to have Mist-Filled Spirit Lantern from Evermaw to summon this boss when the Cursed Gravestone is active.",
+							["g"] = {
 								{
-									["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
-									["criteriaID"] = 31,		-- Rime of the Time-Lost Mariner [Criteria]
-									["itemID"] = 104294,	-- Rime of the Time-Lost Mariner [Item]
-									["dr"] = 14,
+									["itemID"] = 104294,	-- Rime of the Time-Lost Mariner
+									["g"] = {
+										{
+											["achievementID"] = 8728,	-- Going To Need A Bigger Bag
+											["criteriaID"] = 31,		-- Rime of the Time-Lost Mariner
+										},
+									},
 								},
 							},
+						},
+						n(73281, { 	-- Dread Ship Vazuvius
+							["groups"] = {
+								
+							},
 							["questID"] = 33314,
-							["isDaily"] = true,
-							["description"] = "|cff66ccffNeed to have Mist-Filled Spirit Lantern from Evermaw to summon this boss when the Cursed Gravestone is active. |r",
 						}),
 						{	-- Emerald Gander*
 							["npcID"] = 73158,	-- Emerald Gander
@@ -444,7 +456,8 @@ _.Zones =
 						}),
 						{	-- Spelurk*
 							["npcID"] = 71864,	-- Spelurk
-							["questID"] = 33164,
+							["questID"] = 32960, -- Says Cave-In, but should be KillID
+							--["questID"] = 33164, -- Says killID but should be cave in
 							["isDaily"] = true,
 							["coords"] = {
 								{ 59.54, 48.95, 554 },
