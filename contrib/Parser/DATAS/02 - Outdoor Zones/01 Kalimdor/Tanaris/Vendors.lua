@@ -456,6 +456,16 @@ _.Zones =
 					n(40589, {	-- Dirge Quikcleave <Butcher>
 						i(18046),	-- Recipe: Tender Wolf Steak
 					}),
+					n(69979, {	-- Ecton Brasstumbler <Honor Quartermaster>
+						["groups"] = {
+							un(2, i(70542)),	-- Vicious Gladiator's Cloak of Alacrity
+							un(2, i(70543)),	-- Vicious Gladiator's Cloak of Prowess
+							un(2, i(70555)),	-- Vicious Gladiator's Drape of Diffusion
+							un(2, i(70556)),	-- Vicious Gladiator's Drape o of Mediation
+							un(2, i(70557)),	-- Vicious Gladiator's Drape o of Prowess
+						},
+						["u"] = 2, -- Vendor no longer exists
+					}),
 					n(40572, {	-- Haughty Modiste <Fashion Designer>
 						i(37915),	-- Pattern: Dress Shoes
 						i(38327),	-- Pattern: Haliscan Jacket

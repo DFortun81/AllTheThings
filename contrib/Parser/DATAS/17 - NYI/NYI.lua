@@ -165,6 +165,21 @@ _.NeverImplemented =
 				un(1, i(32150)),	    -- Chancellor's Ringmail Headpiece
 				un(1, i(32151)),	    -- Chancellor's Ringmail Legguards
 				un(1, i(32152)),	    -- Chancellor's Ringmail Shoulders
+				un(1, i(64961)),	    -- Gladiator's Linked Gauntlets
+				un(1, i(64960)),	    -- Gladiator's Linked Helm
+				un(1, i(64959)),	    -- Gladiator's Linked Leggings
+				un(1, i(64958)),	    -- Gladiator's Linked Spaulders
+				un(1, i(64962)),		-- Gladiator's Linked Armor
+				un(1, i(65156)),	    -- Gladiator's Mail Armor
+				un(1, i(65155)),	    -- Gladiator's Mail Gauntlets
+				un(1, i(65154)),	    -- Gladiator's Mail Helm
+				un(1, i(65153)),	    -- Gladiator's Mail Leggings
+				un(1, i(65152)),	    -- Gladiator's Mail Sppaulders
+				un(1, i(65151)),	    -- Gladiator's Ringmail Armor
+				un(1, i(65150)),	    -- Gladiator's Ringmail Gauntlets
+				un(1, i(65149)),	    -- Gladiator's Ringmail Helm
+				un(1, i(65148)),	    -- Gladiator's Ringmail Leggings
+				un(1, i(65147)),	    -- Gladiator's Ringmail Spaulders
 				un(1, i(46293)),	    -- Worldbreaker Chestguard
 				un(1, i(46294)),	    -- Worldbreaker Faceguard
 				un(1, i(46295)),	    -- Worldbreaker Gloves
@@ -258,6 +273,7 @@ _.NeverImplemented =
 			un(1, i(56514)),	    -- Windbound Helm
 			un(1, i(12615)),	    -- Savage Mail Tunic (never added to live)
 			un(1, i(12616)),	    -- Savage Boots (never added to live)
+			un(1, i(59789)),	    -- Unknown
 			un(1, i(12617)),	    -- Savage Pauldrons (never added to live)
 			un(1, i(18304)),	    -- Greenroot Mail (never added to live)
 			un(1, i(21584)),	    -- Bracers of Eternal Reckoning (never added to live)

@@ -1384,7 +1384,7 @@ _.Zones =
 							{	-- Knight-Lieutenant T'Maire Sydes <Ruthless Gladiator>
 								["npcID"] = 69974,	-- Knight-Lieutenant T'Maire Sydes <Ruthless Gladiator>
 								["coord"] = { 74.94, 67.25 },
-								["g" ] ={
+								["g" ] = {
 									-- Ensembles not added as unable to verify contents
 									i(146640, { -- Arsenal: Ruthless Gladiator's Weapons
 										i(70242),	-- Ruthless Gladiator's Barrier
@@ -1582,6 +1582,11 @@ _.Zones =
 									i(70387),	-- Ruthless Gladiator's Drape of Diffusion
 									i(70388),	-- Ruthless Gladiator's Drape of Prowess
 									i(70389),	-- Ruthless Gladiator's Drape of Meditation
+									un(2, i(70542)),	-- Vicious Gladiator's Cloak of Alacrity
+									un(2, i(70543)),	-- Vicious Gladiator's Cloak of Prowess
+									un(2, i(70555)),	-- Vicious Gladiator's Drape of Diffusion
+									un(2, i(70556)),	-- Vicious Gladiator's Drape o of Mediation
+									un(2, i(70557)),	-- Vicious Gladiator's Drape o of Prowess
 								},
 							},
 							{	-- Lelanai <Saber Handler>

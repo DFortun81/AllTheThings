@@ -4965,6 +4965,16 @@ _.Zones =
 							},
 							["itemID"] = 137642,  -- Marks of Honor
 						}),
+						n(54651, {	-- Zom Bocom (Same name, different npc)
+							["groups"] = {
+								un(2, i(70542)),	-- Vicious Gladiator's Cloak of Alacrity
+								un(2, i(70543)),	-- Vicious Gladiator's Cloak of Prowess
+								un(2, i(70555)),	-- Vicious Gladiator's Drape of Diffusion
+								un(2, i(70556)),	-- Vicious Gladiator's Drape o of Mediation
+								un(2, i(70557)),	-- Vicious Gladiator's Drape o of Prowess
+							},
+							["u"] = 2, -- Vendor no longer exists
+						}),
 					}),
 				}),
 			},

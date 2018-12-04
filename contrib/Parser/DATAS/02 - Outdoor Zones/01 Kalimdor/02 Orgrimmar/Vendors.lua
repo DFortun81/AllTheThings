@@ -223,6 +223,16 @@ _.Zones =
 						i(70388),	-- Ruthless Gladiator's Drape of Prowess
 						i(70389),	-- Ruthless Gladiator's Drape of Meditation
 					}),
+					n(54659, {	-- Blood Guard Zar'shi  (Same name, different npc)
+						["groups"] = {
+							un(2, i(70542)),	-- Vicious Gladiator's Cloak of Alacrity
+							un(2, i(70543)),	-- Vicious Gladiator's Cloak of Prowess
+							un(2, i(70555)),	-- Vicious Gladiator's Drape of Diffusion
+							un(2, i(70556)),	-- Vicious Gladiator's Drape o of Mediation
+							un(2, i(70557)),	-- Vicious Gladiator's Drape o of Prowess
+							},
+						["u"] = 2, -- Vendor no longer exists
+					}),
 					n(3364, {	-- Borya <Tailoring Supplies>
 						i(54440, {	-- Dreamcloth
 							i(54601),	-- Pattern: Belt of the Depths
