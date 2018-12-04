@@ -1292,8 +1292,8 @@ _.Zones =
 					}),
 					h(n(2393, {	-- Christoph Jeffcoat <Tradesman>
 						i(20971, {	-- Design: Heavy Iron Knuckles (Removed in Cata and available through trainer now)
-							["collectible"] = false,
-							["description"] = "Design has been removed but recipe is still available at trainer.",
+							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
+							["u"] = 2,
 						}),
 						i(6054), -- Recipe: Shadow Protection Potion
 						i(5788), -- Pattern: Thick Murloc Armor						
@@ -1544,16 +1544,16 @@ _.Zones =
 						n(-2, {	-- Vendors (Legacy)
 							un(43, n(2381, {	-- Micha Yance <Trade Goods>
 								i(20973, {	-- Design: Blazing Citrine Ring (Removed in Cata and available through trainer now)
-									["collectible"] = false,
-									["description"] = "Design has been removed but recipe is still available at trainer.",
+									["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
+									["u"] = 7,
 								}),
 								i(20971, {	-- Design: Heavy Iron Knuckles (Removed in Cata and available through trainer now)
-									["collectible"] = false,
-									["description"] = "Design has been removed but recipe is still available at trainer.",
+									["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
 								i(11163, {	-- Formula: Enchant Bracer - Lesser Dodge (Removed in Cata and available through trainer now)
-									["collectible"] = false,
-									["description"] = "Design has been removed but recipe is still available at trainer.",
+									["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
 							})),
 						}),

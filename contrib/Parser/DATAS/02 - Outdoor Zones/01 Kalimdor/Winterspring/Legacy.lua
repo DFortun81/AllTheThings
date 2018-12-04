@@ -41,7 +41,8 @@ _.Zones =
 								["g"] = {
 									{	-- Plans: Blazing Rapier
 										["itemID"] = 12825, -- Plans: Blazing Rapier
-										["collectible"] = false,	-- If we mark this unobtainable, u = 2, the recipe that is available from the plans 142358 will be incorrectly marked unobtainable in the profession window since they share the same recipeID
+										["spellID"] = 0,	-- This is now available via 142358, need to delink the old plans from the recipe
+										["u"] = 2,
 									},
 								},
 							},
@@ -76,7 +77,8 @@ _.Zones =
 								["g"] = {
 									{	-- Plans: Dawn's Edge
 										["itemID"] = 12821, -- Plans: Dawn's Edge
-										["collectible"] = false,	-- If we mark this unobtainable, u = 2, the recipe that is available from the plans 142357 will be incorrectly marked unobtainable in the profession window since they share the same recipeID
+										["spellID"] = 0,	-- This is now available via 142357, need to delink the old plans from the recipe
+										["u"] = 2,
 									},
 								},
 							},

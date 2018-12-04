@@ -1290,7 +1290,7 @@ _.Zones =
 						n(19796, {	-- Eclipsion Archmage
 							{
 								["itemID"] = 28276,	-- Formula: Enchant Cloak - Greater Arcane Resistance
-								["collectible"] = false,
+								["spellID"] = 0,
 								["u"] = 2,
 							},
 						}),

@@ -759,8 +759,8 @@ _.Zones =
 						n(-2, {		-- Vendors (Legacy)
 							n(1448, {	-- Neal Allen <Engineering Supplies & General Goods>
 								i(20970, {	-- Design: Pendant of the Agate Shield (Removed in Cata and available through trainer now)
-									["collectible"] = false,
-									["description"] = "Design has been removed but recipe is still available at trainer.",
+									["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
 							}),
 						}),

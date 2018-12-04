@@ -55,7 +55,8 @@ _.Zones =
 								["g"] = {
 									{	-- Plans: Imperial Plate Belt
 										["itemID"] = 12688,	-- Plans: Imperial Plate Belt
-										["collectible"] = false,	-- If we mark this unobtainable the recipe that is available from the trainer will be incorrectly marked unobtainable
+										["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
+										["u"] = 2,
 									},
 								},
 							},
@@ -67,7 +68,8 @@ _.Zones =
 								["g"] = {
 									{	-- Plans: Imperial Plate Boots
 										["itemID"] = 12700,	-- Plans: Imperial Plate Boots
-										["collectible"] = false,	-- If we mark this unobtainable the recipe that is available from the trainer will be incorrectly marked unobtainable
+										["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
+										["u"] = 2,
 									},
 								},
 							},
@@ -79,7 +81,8 @@ _.Zones =
 								["g"] = {
 									{	-- Plans: Imperial Plate Bracers
 										["itemID"] = 12690,	-- Plans: Imperial Plate Bracers
-										["collectible"] = false,	-- If we mark this unobtainable the recipe that is available from the trainer will be incorrectly marked unobtainable
+										["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
+										["u"] = 2,
 									},
 								},
 							},
@@ -91,7 +94,8 @@ _.Zones =
 								["g"] = {
 									{	-- Plans: Imperial Plate Chest
 										["itemID"] = 12705,	-- Plans: Imperial Plate Chest
-										["collectible"] = false,	-- If we mark this unobtainable the recipe that is available from the trainer will be incorrectly marked unobtainable
+										["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
+										["u"] = 2,
 									},
 								},
 							},
@@ -103,7 +107,8 @@ _.Zones =
 								["g"] = {
 									{	-- Plans: Imperial Plate Helm
 										["itemID"] = 12701,	-- Plans: Imperial Plate Helm
-										["collectible"] = false,	-- If we mark this unobtainable the recipe that is available from the trainer will be incorrectly marked unobtainable
+										["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
+										["u"] = 2,
 									},
 								},
 							},
@@ -115,7 +120,8 @@ _.Zones =
 								["g"] = {
 									{	-- Plans: Imperial Plate Leggings
 										["itemID"] = 12715,	-- Plans: Imperial Plate Leggings
-										["collectible"] = false,	-- If we mark this unobtainable the recipe that is available from the trainer will be incorrectly marked unobtainable
+										["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
+										["u"] = 2,
 									},
 								},
 							},
@@ -127,7 +133,8 @@ _.Zones =
 								["g"] = {
 									{	-- Plans: Imperial Plate Shoulders
 										["itemID"] = 12687,	-- Plans: Imperial Plate Shoulders
-										["collectible"] = false,	-- If we mark this unobtainable the recipe that is available from the trainer will be incorrectly marked unobtainable
+										["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
+										["u"] = 2,
 									},
 								},
 							},

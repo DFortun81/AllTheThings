@@ -62,9 +62,11 @@ _.Instances =
 								i(35504),	-- Phoenix Hatchling
 								i(35275), 	-- Orb of Sin'dorei
 								i(35305),	-- Design: Brilliant Living Ruby
-								i(24195, {	-- Design: Brilliant Living Ruby [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
-								}),
+								{	-- Design: Brilliant Living Ruby
+									["itemID"] = 24195,	-- Design: Brilliant Living Ruby
+									["spellID"] = 0,	-- This is now available via 35305, need to delink the old plans from the recipe
+									["u"] = 7,
+								},
 								i(35307),	-- Design: Rigid Star of Elune
 								i(35304),	-- Design: Solid Star of Elune
 								i(35308),	-- Pattern: Unyielding Bracers
@@ -159,9 +161,11 @@ _.Instances =
 									i(35504),	-- Phoenix Hatchling (PET!)
 									i(35275), 	-- Orb of Sin'dorei (TOY!)
 									i(35305),	-- Design: Brilliant Living Ruby
-									i(24195, {	-- Design: Brilliant Living Ruby [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-										["collectible"] = false,
-									}),
+									{	-- Design: Brilliant Living Ruby
+										["itemID"] = 24195,	-- Design: Brilliant Living Ruby
+										["spellID"] = 0,	-- This is now available via 35305, need to delink the old plans from the recipe
+										["u"] = 7,
+									},
 									i(35307),	-- Design: Rigid Star of Elune
 									i(35304),	-- Design: Solid Star of Elune
 									i(35308),	-- Pattern: Unyielding Bracers

@@ -219,8 +219,6 @@ _.Instances =
 								h(i(47646)), -- Pattern: Black Chitin Bracers
 								a(i(47635)), -- Pattern: Bracers of Swift Death
 								h(i(47647)), -- Pattern: Bracers of Swift Death
-								a(i(47622)), -- Plans: Breastplate of the White Knight
-								h(i(47640)), -- Plans: Breastplate of the White Knight
 								a(i(47631)), -- Pattern: Crusader's Dragonscale Bracers
 								h(i(47648)), -- Pattern: Crusader's Dragonscale Bracers
 								a(i(47630)), -- Pattern: Crusader's Dragonscale Breastplate
@@ -239,16 +237,18 @@ _.Instances =
 								h(i(47637)), -- Pattern: Royal Moonshroud Bracers
 								a(i(47657)), -- Pattern: Royal Moonshroud Robe
 								h(i(47636)), -- Pattern: Royal Moonshroud Robe
-								a(i(47623)), -- Plans: Saronite Swordbreakers
-								h(i(47641)), -- Plans: Saronite Swordbreakers
-								a(i(47627)), -- Plans: Sunforged Bracers
-								h(i(47642)), -- Plans: Sunforged Bracers
-								a(i(47626)), -- Plans: Sunforged Breastplate
-								h(i(47643)), -- Plans: Sunforged Breastplate
-								a(i(47624)), -- Plans: Titanium Razorplate
-								h(i(47644)), -- Plans: Titanium Razorplate
-								a(i(47625)), -- Plans: Titanium Spikeguards
-								h(i(47645)), -- Plans: Titanium Spikeguards
+								i(47622), -- Plans: Breastplate of the White Knight [A]
+								i(47640), -- Plans: Breastplate of the White Knight [H]
+								i(47623), -- Plans: Saronite Swordbreakers [A]
+								i(47641), -- Plans: Saronite Swordbreakers [H]
+								i(47627), -- Plans: Sunforged Bracers [A]
+								i(47642), -- Plans: Sunforged Bracers [H]
+								i(47626), -- Plans: Sunforged Breastplate [A]
+								i(47643), -- Plans: Sunforged Breastplate [H]
+								i(47624), -- Plans: Titanium Razorplate [A]
+								i(47644), -- Plans: Titanium Razorplate [H]
+								i(47625), -- Plans: Titanium Spikeguards [A]
+								i(47645), -- Plans: Titanium Spikeguards [H]
 							},
 							["crs"] = {
 								34796, -- Gormok
@@ -518,18 +518,18 @@ _.Instances =
 								h(i(47637)), -- Pattern: Royal Moonshroud Bracers
 								a(i(47657)), -- Pattern: Royal Moonshroud Robe
 								h(i(47636)), -- Pattern: Royal Moonshroud Robe
-								a(i(47622)), -- Plans: Breastplate of the White Knight
-								h(i(47640)), -- Plans: Breastplate of the White Knight
-								a(i(47623)), -- Plans: Saronite Swordbreakers
-								h(i(47641)), -- Plans: Saronite Swordbreakers
-								a(i(47627)), -- Plans: Sunforged Bracers
-								h(i(47642)), -- Plans: Sunforged Bracers
-								a(i(47626)), -- Plans: Sunforged Breastplate
-								h(i(47643)), -- Plans: Sunforged Breastplate
-								a(i(47624)), -- Plans: Titanium Razorplate
-								h(i(47644)), -- Plans: Titanium Razorplate
-								a(i(47625)), -- Plans: Titanium Spikeguards
-								h(i(47645)), -- Plans: Titanium Spikeguards
+								i(47622), -- Plans: Breastplate of the White Knight [A]
+								i(47640), -- Plans: Breastplate of the White Knight [H]
+								i(47623), -- Plans: Saronite Swordbreakers [A]
+								i(47641), -- Plans: Saronite Swordbreakers [H]
+								i(47627), -- Plans: Sunforged Bracers [A]
+								i(47642), -- Plans: Sunforged Bracers [H]
+								i(47626), -- Plans: Sunforged Breastplate [A]
+								i(47643), -- Plans: Sunforged Breastplate [H]
+								i(47624), -- Plans: Titanium Razorplate [A]
+								i(47644), -- Plans: Titanium Razorplate [H]
+								i(47625), -- Plans: Titanium Spikeguards [A]
+								i(47645), -- Plans: Titanium Spikeguards [H]
 							},
 							["crs"] = {
 								34796, -- Gormok
@@ -809,8 +809,6 @@ _.Instances =
 								h(i(47646)), -- Pattern: Black Chitin Bracers
 								a(i(47635)), -- Pattern: Bracers of Swift Death
 								h(i(47647)), -- Pattern: Bracers of Swift Death
-								a(i(47622)), -- Plans: Breastplate of the White Knight
-								h(i(47640)), -- Plans: Breastplate of the White Knight
 								a(i(47631)), -- Pattern: Crusader's Dragonscale Bracers
 								h(i(47648)), -- Pattern: Crusader's Dragonscale Bracers
 								a(i(47630)), -- Pattern: Crusader's Dragonscale Breastplate
@@ -829,16 +827,18 @@ _.Instances =
 								h(i(47637)), -- Pattern: Royal Moonshroud Bracers
 								a(i(47657)), -- Pattern: Royal Moonshroud Robe
 								h(i(47636)), -- Pattern: Royal Moonshroud Robe
-								a(i(47623)), -- Plans: Saronite Swordbreakers
-								h(i(47641)), -- Plans: Saronite Swordbreakers
-								a(i(47627)), -- Plans: Sunforged Bracers
-								h(i(47642)), -- Plans: Sunforged Bracers
-								a(i(47626)), -- Plans: Sunforged Breastplate
-								h(i(47643)), -- Plans: Sunforged Breastplate
-								a(i(47624)), -- Plans: Titanium Razorplate
-								h(i(47644)), -- Plans: Titanium Razorplate
-								a(i(47625)), -- Plans: Titanium Spikeguards
-								h(i(47645)), -- Plans: Titanium Spikeguards
+								i(47622), -- Plans: Breastplate of the White Knight [A]
+								i(47640), -- Plans: Breastplate of the White Knight [H]
+								i(47623), -- Plans: Saronite Swordbreakers [A]
+								i(47641), -- Plans: Saronite Swordbreakers [H]
+								i(47627), -- Plans: Sunforged Bracers [A]
+								i(47642), -- Plans: Sunforged Bracers [H]
+								i(47626), -- Plans: Sunforged Breastplate [A]
+								i(47643), -- Plans: Sunforged Breastplate [H]
+								i(47624), -- Plans: Titanium Razorplate [A]
+								i(47644), -- Plans: Titanium Razorplate [H]
+								i(47625), -- Plans: Titanium Spikeguards [A]
+								i(47645), -- Plans: Titanium Spikeguards [H]
 							},
 							["crs"] = {
 								34796, -- Gormok

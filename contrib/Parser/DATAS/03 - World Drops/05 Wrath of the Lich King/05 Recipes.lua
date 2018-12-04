@@ -10,10 +10,12 @@ _.WorldDrops =
 				n(-180, {	-- Alchemy
 					un(1, i(112022)),	-- Recipe: Mighty Shadow Protection Potion
 				}),
+				n(-181, { 	-- Blacksmithing
+				}),
 				n(-185, { 	-- Inscription
 					i(45912),	-- Book of Glyph Mastery
 				}),
-				n(-186, { -- Jewelcrafting
+				n(-186, { 	-- Jewelcrafting
 					i(41818, {	-- Design: Accurate Twilight Opal
 						["crs"] = {
 							28851,	-- Enraged Mammoth

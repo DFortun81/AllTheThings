@@ -1970,12 +1970,6 @@ _.Zones =
 						i(20758),	-- Formula: Minor Wizard Oil
 						i(22307),	-- Pattern: Enchanted Mageweave Pouch
 					}),
-					n(32564, { -- Logistics Officer Silverstone (Borean Tundra)
-						["groups"] = {
-							i(44937), -- Plans: Titanium Plating
-						},
-						["races"] = ALLIANCE_ONLY,
-					}),
 				}),
 			},
 			["lvl"] = 58,	

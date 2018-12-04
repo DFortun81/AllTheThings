@@ -133,11 +133,13 @@ _.Instances =
 							}),
 							{	-- Plans: Arcanite Champion
 								["itemID"] = 12834,	-- Plans: Arcanite Champion
-								["collectible"] = false,	-- If we mark this unobtainable the recipe that is available from the trainer will be incorrectly marked unobtainable
+								["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
+								["u"] = 7,
 							},
 							{	-- Plans: Invulnerable Mail
 								["itemID"] = 12728,	-- Plans: Invulnerable Mail
-								["collectible"] = false,	-- If we mark this unobtainable the recipe that is available from the trainer will be incorrectly marked unobtainable
+								["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
+								["u"] = 7,
 							},
 							un(2, i(12837)),	-- Plans: Masterwork Stormhammer
 							un(2, i(18048)), 	-- Mastersmith's Hammer

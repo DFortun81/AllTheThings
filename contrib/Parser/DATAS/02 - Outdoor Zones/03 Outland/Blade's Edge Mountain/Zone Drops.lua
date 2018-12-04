@@ -278,6 +278,8 @@ _.Zones =
 							},
 							{	-- Design: Rigid Azure Moonstone [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
 								["itemID"] = 23151,	-- Design: Rigid Azure Moonstone
+								["spellID"] = 0,	-- This is now available via 31870, need to delink the old plans from the recipe
+								["u"] = 2,
 								["crs"] = {
 									22275,	-- Apexis Guardian
 									23390,	-- Bash'ir's Harbinger
@@ -291,7 +293,6 @@ _.Zones =
 									23333,	-- The Grand Collector
 									23355,	-- Zarcsin
 								},
-								["collectible"] = false,
 							},
 							{	-- Design: Veiled Shadow Draenite
 								["itemID"]  = 31873,	-- Design: Veiled Shadow Draenite

@@ -25,10 +25,11 @@ _.Zones =
 					}),
 					n(9636, {	-- Kireena <Trade Goods>
 						["groups"] = {
-							i(20973, {	-- Design: Blazing Citrine Ring (Removed in Cata and available through trainer now)
-								["collectible"] = false,
-								["description"] = "Design has been removed but recipe is still available at trainer.",
-							}),
+							{	-- Design: Blazing Citrine Ring
+								["itemID"] = 20973,	-- Design: Blazing Citrine Ring
+								["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
+								["u"] = 7,
+							},
 							i(7114),	-- Pattern: Azure Silk Gloves
 							i(12232),	-- Recipe: Carrion Surprise
 							i(12240),	-- Recipe: Heavy Kodo Stew

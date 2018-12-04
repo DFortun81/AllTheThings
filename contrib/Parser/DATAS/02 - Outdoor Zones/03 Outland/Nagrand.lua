@@ -564,19 +564,23 @@ _.Zones =
 						i(24178),	-- Design: Pendant of the Null Rune
 						i(23136),	-- Design: Reckless Flame Spessarite
 						i(33622),	-- Design: Relentless Earthstorm Diamond
-						i(32412, {	-- Design: Relentless Earthstorm Diamond [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-							["collectible"] = false,
+						i(32412, {	-- Design: Relentless Earthstorm Diamond
+							["spellID"] = 0,	-- This is now available via 33622, need to delink the old plans from the recipe
+							["u"] = 2,
 						}),
 						i(23146),	-- Design: Shifting Shadow Draenite
-						i(31871, {	-- Design: Shifting Shadow Draenite [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-							["collectible"] = false,
+						i(31871, {	-- Design: Shifting Shadow Draenite
+							["spellID"] = 0,	-- This is now available via 23146, need to delink the old plans from the recipe
+							["u"] = 2,
 						}),
-						i(31872, {	-- Design: Shifting Shadow Draenite [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-							["collectible"] = false,
+						i(31872, {	-- Design: Shifting Shadow Draenite
+							["spellID"] = 0,	-- This is now available via 23146, need to delink the old plans from the recipe
+							["u"] = 2,
 						}),
 						i(23155),	-- Design: Sparkling Azure Moonstone
-						i(23153, {	-- Design: Sparkling Azure Moonstone [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-							["collectible"] = false,
+						i(23153, {	-- Design: Sparkling Azure Moonstone
+							["spellID"] = 0,	-- This is now available via 23155, need to delink the old plans from the recipe
+							["u"] = 2,
 						}),
 						i(23150),	-- Design: Subtle Golden Draenite
 						i(25908),	-- Design: Swift Skyfire Diamond

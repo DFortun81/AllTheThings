@@ -1093,58 +1093,70 @@ _.Zones =
 								i(47010),	-- Design: Accurate Dreadstone
 								i(46917),	-- Design: Bold Cardinal Ruby
 								i(46916),	-- Design: Brilliant Cardinal Ruby
-								i(46930, {	-- Design: Brilliant Cardinal Ruby [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(46930, {	-- Design: Brilliant Cardinal Ruby
+									["spellID"] = 0,	-- This is now available via 46916, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
 								i(47015),	-- Design: Champion's Ametrine
 								i(46949),	-- Design: Deadly Ametrine
-								i(47011, {	-- Design: Deadly Ametrine [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(47011, {	-- Design: Deadly Ametrine
+									["spellID"] = 0,	-- This is now available via 46949, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
 								i(46941),	-- Design: Defender's Dreadstone
 								i(47020),	-- Design: Deft Ametrine
-								i(47023, {	-- Design: Deft Ametrine [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(47023, {	-- Design: Deft Ametrine
+									["spellID"] = 0,	-- This is now available via 47020, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
 								i(46918),	-- Design: Delicate Cardinal Ruby
-								i(46919, {	-- Design: Delicate Cardinal Ruby [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(46919, {	-- Design: Delicate Cardinal Ruby
+									["spellID"] = 0,	-- This is now available via 46918, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
 								i(46912),	-- Design: Energized Eye of Zul
-								i(46910, {	-- Design: Energized Eye of Zul [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(46910, {	-- Design: Energized Eye of Zul
+									["spellID"] = 0,	-- This is now available via 46912, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
 								i(46953),	-- Design: Etched Dreadstone
 								i(47019),	-- Design: Fierce Ametrine
 								i(46923),	-- Design: Flashing Cardinal Ruby
 								i(46904),	-- Design: Forceful Eye of Zul
 								i(46956),	-- Design: Glinting Dreadstone
-								i(46945, {	-- Design: Glinting Dreadstone [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(46945, {	-- Design: Glinting Dreadstone
+									["spellID"] = 0,	-- This is now available via 46956, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
-								i(46946, {	-- Design: Glinting Dreadstone [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(46946, {	-- Design: Glinting Dreadstone
+									["spellID"] = 0,	-- This is now available via 46956, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
-								i(47008, {	-- Design: Glinting Dreadstone [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(47008, {	-- Design: Glinting Dreadstone
+									["spellID"] = 0,	-- This is now available via 46956, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
 								i(46942),	-- Design: Guardian's Dreadstone
 								i(46948),	-- Design: Inscribed Ametrine
 								i(46901),	-- Design: Jagged Eye of Zul
-								i(46944, {	-- Design: Jagged Eye of Zul [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(46944, {	-- Design: Jagged Eye of Zul
+									["spellID"] = 0,	-- This is now available via 46901, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
 								i(46909),	-- Design: Lightning Eye of Zul
-								i(46907, {	-- Design: Lightning Eye of Zul [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(46907, {	-- Design: Lightning Eye of Zul
+									["spellID"] = 0,	-- This is now available via 46909, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
 								i(47021),	-- Design: Lucent Ametrine
-								i(47016, {	-- Design: Lucent Ametrine [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(47016, {	-- Design: Lucent Ametrine
+									["spellID"] = 0,	-- This is now available via 47021, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
 								i(46905),	-- Design: Misty Eye of Zul
-								i(46906, {	-- Design: Misty Eye of Zul [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(46906, {	-- Design: Misty Eye of Zul
+									["spellID"] = 0,	-- This is now available via 46905, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
 								i(46943),	-- Design: Mysterious Dreadstone
 								i(46932),	-- Design: Mystic King's Amber
@@ -1153,63 +1165,76 @@ _.Zones =
 								i(46950),	-- Design: Potent Ametrine
 								i(46920),	-- Design: Precise Cardinal Ruby
 								i(46937),	-- Design: Purified Dreadstone
-								i(46900, {	-- Design: Purified Dreadstone [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(46900, {	-- Design: Purified Dreadstone
+									["spellID"] = 0,	-- This is now available via 46937, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
-								i(46903, {	-- Design: Purified Dreadstone [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(46903, {	-- Design: Purified Dreadstone
+									["spellID"] = 0,	-- This is now available via 46937, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
-								i(46947, {	-- Design: Purified Dreadstone [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(46947, {	-- Design: Purified Dreadstone
+									["spellID"] = 0,	-- This is now available via 46937, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
-								i(46939, {	-- Design: Purified Dreadstone [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(46939, {	-- Design: Purified Dreadstone
+									["spellID"] = 0,	-- This is now available via 46937, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
 								i(46933),	-- Design: Quick King's Amber
 								i(46911),	-- Design: Radiant Eye of Zul
-								i(46908, {	-- Design: Radiant Eye of Zul [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(46908, {	-- Design: Radiant Eye of Zul
+									["spellID"] = 0,	-- This is now available via 46911, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
 								i(47007),	-- Design: Reckless Ametrine
 								i(46897),	-- Design: Regal Eye of Zul
-								i(46940, {	-- Design: Regal Eye of Zul [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(46940, {	-- Design: Regal Eye of Zul
+									["spellID"] = 0,	-- This is now available via 46897, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
 								i(47022),	-- Design: Resolute Ametrine
 								i(47018),	-- Design: Resplendent Ametrine
 								i(46928),	-- Design: Rigid Majestic Zircon
 								i(46913),	-- Design: Shattered Eye of Zul
 								i(46938),	-- Design: Shifting Dreadstone
-								i(46934, {	-- Design: Shifting Dreadstone [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(46934, {	-- Design: Shifting Dreadstone
+									["spellID"] = 0,	-- This is now available via 46938, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
 								i(46929),	-- Design: Smooth King's Amber
-								i(46921, {	-- Design: Smooth King's Amber [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(46921, {	-- Design: Smooth King's Amber
+									["spellID"] = 0,	-- This is now available via 46929, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
 								i(46924),	-- Design: Solid Majestic Zircon
 								i(46935),	-- Design: Sovereign Dreadstone
 								i(46925),	-- Design: Sparkling Majestic Zircon
-								i(46927, {	-- Design: Sparkling Majestic Zircon [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(46927, {	-- Design: Sparkling Majestic Zircon
+									["spellID"] = 0,	-- This is now available via 46925, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
 								i(47017),	-- Design: Stalwart Ametrine
-								i(47012, {	-- Design: Stalwart Ametrine [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(47012, {	-- Design: Stalwart Ametrine
+									["spellID"] = 0,	-- This is now available via 47017, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
 								i(46898),	-- Design: Steady Eye of Zul
 								i(46926),	-- Design: Stormy Majestic Zircon
 								i(46922),	-- Design: Subtle King's Amber
-								i(46931, {	-- Design: Subtle King's Amber [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(46931, {	-- Design: Subtle King's Amber
+									["spellID"] = 0,	-- This is now available via 46922, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
 								i(46902),	-- Design: Timeless Dreadstone
-								i(46936, {	-- Design: Timeless Dreadstone [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(46936, {	-- Design: Timeless Dreadstone
+									["spellID"] = 0,	-- This is now available via 46902, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
 								i(46915),	-- Design: Turbid Eye of Zul
-								i(46914, {	-- Design: Turbid Eye of Zul [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(46914, {	-- Design: Turbid Eye of Zul
+									["spellID"] = 0,	-- This is now available via 46915, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
 								i(46951),	-- Design: Veiled Dreadstone
 								i(46952),	-- Design: Willful Ametrine
@@ -1320,58 +1345,70 @@ _.Zones =
 								i(47010),	-- Design: Accurate Dreadstone
 								i(46917),	-- Design: Bold Cardinal Ruby
 								i(46916),	-- Design: Brilliant Cardinal Ruby
-								i(46930, {	-- Design: Brilliant Cardinal Ruby [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(46930, {	-- Design: Brilliant Cardinal Ruby
+									["spellID"] = 0,	-- This is now available via 46916, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
 								i(47015),	-- Design: Champion's Ametrine
 								i(46949),	-- Design: Deadly Ametrine
-								i(47011, {	-- Design: Deadly Ametrine [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(47011, {	-- Design: Deadly Ametrine
+									["spellID"] = 0,	-- This is now available via 46949, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
 								i(46941),	-- Design: Defender's Dreadstone
 								i(47020),	-- Design: Deft Ametrine
-								i(47023, {	-- Design: Deft Ametrine [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(47023, {	-- Design: Deft Ametrine
+									["spellID"] = 0,	-- This is now available via 47020, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
 								i(46918),	-- Design: Delicate Cardinal Ruby
-								i(46919, {	-- Design: Delicate Cardinal Ruby [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(46919, {	-- Design: Delicate Cardinal Ruby
+									["spellID"] = 0,	-- This is now available via 46918, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
 								i(46912),	-- Design: Energized Eye of Zul
-								i(46910, {	-- Design: Energized Eye of Zul [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(46910, {	-- Design: Energized Eye of Zul
+									["spellID"] = 0,	-- This is now available via 46912, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
 								i(46953),	-- Design: Etched Dreadstone
 								i(47019),	-- Design: Fierce Ametrine
 								i(46923),	-- Design: Flashing Cardinal Ruby
 								i(46904),	-- Design: Forceful Eye of Zul
 								i(46956),	-- Design: Glinting Dreadstone
-								i(46945, {	-- Design: Glinting Dreadstone [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(46945, {	-- Design: Glinting Dreadstone
+									["spellID"] = 0,	-- This is now available via 46956, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
-								i(46946, {	-- Design: Glinting Dreadstone [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(46946, {	-- Design: Glinting Dreadstone
+									["spellID"] = 0,	-- This is now available via 46956, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
-								i(47008, {	-- Design: Glinting Dreadstone [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(47008, {	-- Design: Glinting Dreadstone
+									["spellID"] = 0,	-- This is now available via 46956, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
 								i(46942),	-- Design: Guardian's Dreadstone
 								i(46948),	-- Design: Inscribed Ametrine
 								i(46901),	-- Design: Jagged Eye of Zul
-								i(46944, {	-- Design: Jagged Eye of Zul [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(46944, {	-- Design: Jagged Eye of Zul
+									["spellID"] = 0,	-- This is now available via 46901, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
 								i(46909),	-- Design: Lightning Eye of Zul
-								i(46907, {	-- Design: Lightning Eye of Zul [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(46907, {	-- Design: Lightning Eye of Zul
+									["spellID"] = 0,	-- This is now available via 46909, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
 								i(47021),	-- Design: Lucent Ametrine
-								i(47016, {	-- Design: Lucent Ametrine [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(47016, {	-- Design: Lucent Ametrine
+									["spellID"] = 0,	-- This is now available via 47021, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
 								i(46905),	-- Design: Misty Eye of Zul
-								i(46906, {	-- Design: Misty Eye of Zul [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(46906, {	-- Design: Misty Eye of Zul
+									["spellID"] = 0,	-- This is now available via 46905, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
 								i(46943),	-- Design: Mysterious Dreadstone
 								i(46932),	-- Design: Mystic King's Amber
@@ -1380,63 +1417,76 @@ _.Zones =
 								i(46950),	-- Design: Potent Ametrine
 								i(46920),	-- Design: Precise Cardinal Ruby
 								i(46937),	-- Design: Purified Dreadstone
-								i(46900, {	-- Design: Purified Dreadstone [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(46900, {	-- Design: Purified Dreadstone
+									["spellID"] = 0,	-- This is now available via 46937, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
-								i(46903, {	-- Design: Purified Dreadstone [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(46903, {	-- Design: Purified Dreadstone
+									["spellID"] = 0,	-- This is now available via 46937, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
-								i(46947, {	-- Design: Purified Dreadstone [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(46947, {	-- Design: Purified Dreadstone
+									["spellID"] = 0,	-- This is now available via 46937, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
-								i(46939, {	-- Design: Purified Dreadstone [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(46939, {	-- Design: Purified Dreadstone
+									["spellID"] = 0,	-- This is now available via 46937, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
 								i(46933),	-- Design: Quick King's Amber
 								i(46911),	-- Design: Radiant Eye of Zul
-								i(46908, {	-- Design: Radiant Eye of Zul [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(46908, {	-- Design: Radiant Eye of Zul
+									["spellID"] = 0,	-- This is now available via 46911, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
 								i(47007),	-- Design: Reckless Ametrine
 								i(46897),	-- Design: Regal Eye of Zul
-								i(46940, {	-- Design: Regal Eye of Zul [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(46940, {	-- Design: Regal Eye of Zul
+									["spellID"] = 0,	-- This is now available via 46897, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
 								i(47022),	-- Design: Resolute Ametrine
 								i(47018),	-- Design: Resplendent Ametrine
 								i(46928),	-- Design: Rigid Majestic Zircon
 								i(46913),	-- Design: Shattered Eye of Zul
 								i(46938),	-- Design: Shifting Dreadstone
-								i(46934, {	-- Design: Shifting Dreadstone [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(46934, {	-- Design: Shifting Dreadstone
+									["spellID"] = 0,	-- This is now available via 46938, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
 								i(46929),	-- Design: Smooth King's Amber
-								i(46921, {	-- Design: Smooth King's Amber [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(46921, {	-- Design: Smooth King's Amber
+									["spellID"] = 0,	-- This is now available via 46929, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
 								i(46924),	-- Design: Solid Majestic Zircon
 								i(46935),	-- Design: Sovereign Dreadstone
 								i(46925),	-- Design: Sparkling Majestic Zircon
-								i(46927, {	-- Design: Sparkling Majestic Zircon [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(46927, {	-- Design: Sparkling Majestic Zircon
+									["spellID"] = 0,	-- This is now available via 46925, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
 								i(47017),	-- Design: Stalwart Ametrine
-								i(47012, {	-- Design: Stalwart Ametrine [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(47012, {	-- Design: Stalwart Ametrine
+									["spellID"] = 0,	-- This is now available via 47017, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
 								i(46898),	-- Design: Steady Eye of Zul
 								i(46926),	-- Design: Stormy Majestic Zircon
 								i(46922),	-- Design: Subtle King's Amber
-								i(46931, {	-- Design: Subtle King's Amber [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(46931, {	-- Design: Subtle King's Amber
+									["spellID"] = 0,	-- This is now available via 46922, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
 								i(46902),	-- Design: Timeless Dreadstone
-								i(46936, {	-- Design: Timeless Dreadstone [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(46936, {	-- Design: Timeless Dreadstone
+									["spellID"] = 0,	-- This is now available via 46902, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
 								i(46915),	-- Design: Turbid Eye of Zul
-								i(46914, {	-- Design: Turbid Eye of Zul [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(46914, {	-- Design: Turbid Eye of Zul
+									["spellID"] = 0,	-- This is now available via 46915, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
 								i(46951),	-- Design: Veiled Dreadstone
 								i(46952),	-- Design: Willful Ametrine
@@ -1568,58 +1618,70 @@ _.Zones =
 								i(47010),	-- Design: Accurate Dreadstone
 								i(46917),	-- Design: Bold Cardinal Ruby
 								i(46916),	-- Design: Brilliant Cardinal Ruby
-								i(46930, {	-- Design: Brilliant Cardinal Ruby [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(46930, {	-- Design: Brilliant Cardinal Ruby
+									["spellID"] = 0,	-- This is now available via 46916, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
 								i(47015),	-- Design: Champion's Ametrine
 								i(46949),	-- Design: Deadly Ametrine
-								i(47011, {	-- Design: Deadly Ametrine [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(47011, {	-- Design: Deadly Ametrine
+									["spellID"] = 0,	-- This is now available via 46949, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
 								i(46941),	-- Design: Defender's Dreadstone
 								i(47020),	-- Design: Deft Ametrine
-								i(47023, {	-- Design: Deft Ametrine [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(47023, {	-- Design: Deft Ametrine
+									["spellID"] = 0,	-- This is now available via 47020, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
 								i(46918),	-- Design: Delicate Cardinal Ruby
-								i(46919, {	-- Design: Delicate Cardinal Ruby [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(46919, {	-- Design: Delicate Cardinal Ruby
+									["spellID"] = 0,	-- This is now available via 46918, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
 								i(46912),	-- Design: Energized Eye of Zul
-								i(46910, {	-- Design: Energized Eye of Zul [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(46910, {	-- Design: Energized Eye of Zul
+									["spellID"] = 0,	-- This is now available via 46912, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
 								i(46953),	-- Design: Etched Dreadstone
 								i(47019),	-- Design: Fierce Ametrine
 								i(46923),	-- Design: Flashing Cardinal Ruby
 								i(46904),	-- Design: Forceful Eye of Zul
 								i(46956),	-- Design: Glinting Dreadstone
-								i(46945, {	-- Design: Glinting Dreadstone [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(46945, {	-- Design: Glinting Dreadstone
+									["spellID"] = 0,	-- This is now available via 46956, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
-								i(46946, {	-- Design: Glinting Dreadstone [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(46946, {	-- Design: Glinting Dreadstone
+									["spellID"] = 0,	-- This is now available via 46956, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
-								i(47008, {	-- Design: Glinting Dreadstone [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(47008, {	-- Design: Glinting Dreadstone
+									["spellID"] = 0,	-- This is now available via 46956, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
 								i(46942),	-- Design: Guardian's Dreadstone
 								i(46948),	-- Design: Inscribed Ametrine
 								i(46901),	-- Design: Jagged Eye of Zul
-								i(46944, {	-- Design: Jagged Eye of Zul [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(46944, {	-- Design: Jagged Eye of Zul
+									["spellID"] = 0,	-- This is now available via 46901, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
 								i(46909),	-- Design: Lightning Eye of Zul
-								i(46907, {	-- Design: Lightning Eye of Zul [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(46907, {	-- Design: Lightning Eye of Zul
+									["spellID"] = 0,	-- This is now available via 46909, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
 								i(47021),	-- Design: Lucent Ametrine
-								i(47016, {	-- Design: Lucent Ametrine [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(47016, {	-- Design: Lucent Ametrine
+									["spellID"] = 0,	-- This is now available via 47021, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
 								i(46905),	-- Design: Misty Eye of Zul
-								i(46906, {	-- Design: Misty Eye of Zul [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(46906, {	-- Design: Misty Eye of Zul
+									["spellID"] = 0,	-- This is now available via 46905, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
 								i(46943),	-- Design: Mysterious Dreadstone
 								i(46932),	-- Design: Mystic King's Amber
@@ -1628,63 +1690,76 @@ _.Zones =
 								i(46950),	-- Design: Potent Ametrine
 								i(46920),	-- Design: Precise Cardinal Ruby
 								i(46937),	-- Design: Purified Dreadstone
-								i(46900, {	-- Design: Purified Dreadstone [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(46900, {	-- Design: Purified Dreadstone
+									["spellID"] = 0,	-- This is now available via 46937, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
-								i(46903, {	-- Design: Purified Dreadstone [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(46903, {	-- Design: Purified Dreadstone
+									["spellID"] = 0,	-- This is now available via 46937, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
-								i(46947, {	-- Design: Purified Dreadstone [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(46947, {	-- Design: Purified Dreadstone
+									["spellID"] = 0,	-- This is now available via 46937, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
-								i(46939, {	-- Design: Purified Dreadstone [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(46939, {	-- Design: Purified Dreadstone
+									["spellID"] = 0,	-- This is now available via 46937, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
 								i(46933),	-- Design: Quick King's Amber
 								i(46911),	-- Design: Radiant Eye of Zul
-								i(46908, {	-- Design: Radiant Eye of Zul [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(46908, {	-- Design: Radiant Eye of Zul
+									["spellID"] = 0,	-- This is now available via 46911, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
 								i(47007),	-- Design: Reckless Ametrine
 								i(46897),	-- Design: Regal Eye of Zul
-								i(46940, {	-- Design: Regal Eye of Zul [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(46940, {	-- Design: Regal Eye of Zul
+									["spellID"] = 0,	-- This is now available via 46897, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
 								i(47022),	-- Design: Resolute Ametrine
 								i(47018),	-- Design: Resplendent Ametrine
 								i(46928),	-- Design: Rigid Majestic Zircon
 								i(46913),	-- Design: Shattered Eye of Zul
 								i(46938),	-- Design: Shifting Dreadstone
-								i(46934, {	-- Design: Shifting Dreadstone [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(46934, {	-- Design: Shifting Dreadstone
+									["spellID"] = 0,	-- This is now available via 46938, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
 								i(46929),	-- Design: Smooth King's Amber
-								i(46921, {	-- Design: Smooth King's Amber [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(46921, {	-- Design: Smooth King's Amber
+									["spellID"] = 0,	-- This is now available via 46929, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
 								i(46924),	-- Design: Solid Majestic Zircon
 								i(46935),	-- Design: Sovereign Dreadstone
 								i(46925),	-- Design: Sparkling Majestic Zircon
-								i(46927, {	-- Design: Sparkling Majestic Zircon [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(46927, {	-- Design: Sparkling Majestic Zircon
+									["spellID"] = 0,	-- This is now available via 46925, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
 								i(47017),	-- Design: Stalwart Ametrine
-								i(47012, {	-- Design: Stalwart Ametrine [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(47012, {	-- Design: Stalwart Ametrine
+									["spellID"] = 0,	-- This is now available via 47017, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
 								i(46898),	-- Design: Steady Eye of Zul
 								i(46926),	-- Design: Stormy Majestic Zircon
 								i(46922),	-- Design: Subtle King's Amber
-								i(46931, {	-- Design: Subtle King's Amber [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(46931, {	-- Design: Subtle King's Amber
+									["spellID"] = 0,	-- This is now available via 46922, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
 								i(46902),	-- Design: Timeless Dreadstone
-								i(46936, {	-- Design: Timeless Dreadstone [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(46936, {	-- Design: Timeless Dreadstone
+									["spellID"] = 0,	-- This is now available via 46902, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
 								i(46915),	-- Design: Turbid Eye of Zul
-								i(46914, {	-- Design: Turbid Eye of Zul [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(46914, {	-- Design: Turbid Eye of Zul
+									["spellID"] = 0,	-- This is now available via 46915, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
 								i(46951),	-- Design: Veiled Dreadstone
 								i(46952),	-- Design: Willful Ametrine
@@ -1696,67 +1771,79 @@ _.Zones =
 						["groups"] = {
 							i(35244),	-- Design: Bold Crimson Spinel
 							i(35248),	-- Design: Brilliant Crimson Spinel
-							i(35250, {	-- Design: Brilliant Crimson Spinel [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-								["collectible"] = false,
+							i(35250, {	-- Design: Brilliant Crimson Spinel
+								["spellID"] = 0,	-- This is now available via 35248, need to delink the old plans from the recipe
+									["u"] = 2,
 							}),
-							i(35255, {	-- Design: Brilliant Crimson Spinel [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-								["collectible"] = false,
+							i(35255, {	-- Design: Brilliant Crimson Spinel
+								["spellID"] = 0,	-- This is now available via 35248, need to delink the old plans from the recipe
+									["u"] = 2,
 							}),
 							i(35271),	-- Design: Deadly Pyrestone
 							i(35246),	-- Design: Delicate Crimson Spinel
-							i(35245, {	-- Design: Delicate Crimson Spinel [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-								["collectible"] = false,
+							i(35245, {	-- Design: Delicate Crimson Spinel
+								["spellID"] = 0,	-- This is now available via 35246, need to delink the old plans from the recipe
+									["u"] = 2,
 							}),
 							i(35247),	-- Design: Flashing Crimson Spinel
 							i(35769),	-- Design: Forceful Seaspray Emerald
 							i(35325),	-- Design: Forceful Talasite
 							i(35266),	-- Design: Glinting Shadowsong Amethyst
-							i(35240, {	-- Design: Glinting Shadowsong Amethyst [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-								["collectible"] = false,
+							i(35240, {	-- Design: Glinting Shadowsong Amethyst
+								["spellID"] = 0,	-- This is now available via 35266, need to delink the old plans from the recipe
+									["u"] = 2,
 							}),
 							i(35267),	-- Design: Inscribed Pyrestone
 							i(35253),	-- Design: Jagged Seaspray Emerald
 							i(35258),	-- Design: Mystic Lionseye
 							i(35269),	-- Design: Potent Pyrestone
 							i(35251),	-- Design: Purified Shadowsong Amethyst
-							i(35241, {	-- Design: Purified Shadowsong Amethyst [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-								["collectible"] = false,
+							i(35241, {	-- Design: Purified Shadowsong Amethyst
+								["spellID"] = 0,	-- This is now available via 35251, need to delink the old plans from the recipe
+									["u"] = 2,
 							}),
-							i(37504, {	-- Design: Purified Shadowsong Amethyst [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-								["collectible"] = false,
+							i(37504, {	-- Design: Purified Shadowsong Amethyst
+								["spellID"] = 0,	-- This is now available via 35251, need to delink the old plans from the recipe
+									["u"] = 2,
 							}),
 							i(35322),	-- Design: Quick Dawnstone
 							i(35768),	-- Design: Quick Lionseye
 							i(35254),	-- Design: Radiant Seaspray Emerald
 							i(35323),	-- Design: Reckless Noble Topaz
 							i(35767),	-- Design: Reckless Pyrestone
-							i(35268, {	-- Design: Reckless Pyrestone [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-								["collectible"] = false,
+							i(35268, {	-- Design: Reckless Pyrestone
+								["spellID"] = 0,	-- This is now available via 35767, need to delink the old plans from the recipe
+									["u"] = 2,
 							}),
 							i(35252),	-- Design: Regal Seaspray Emerald
 							i(35259),	-- Design: Rigid Empyrean Sapphire
-							i(35257, {	-- Design: Rigid Empyrean Sapphire [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-								["collectible"] = false,
+							i(35257, {	-- Design: Rigid Empyrean Sapphire
+								["spellID"] = 0,	-- This is now available via 35259, need to delink the old plans from the recipe
+									["u"] = 2,
 							}),
 							i(35242),	-- Design: Shifting Shadowsong Amethyst
-							i(35238, {	-- Design: Shifting Shadowsong Amethyst [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-								["collectible"] = false,
+							i(35238, {	-- Design: Shifting Shadowsong Amethyst
+								["spellID"] = 0,	-- This is now available via 35242, need to delink the old plans from the recipe
+									["u"] = 2,
 							}),
 							i(35260),	-- Design: Smooth Lionseye
-							i(35256, {	-- Design: Smooth Lionseye [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-								["collectible"] = false,
+							i(35256, {	-- Design: Smooth Lionseye
+								["spellID"] = 0,	-- This is now available via 35260, need to delink the old plans from the recipe
+									["u"] = 2,
 							}),
 							i(35263),	-- Design: Solid Empyrean Sapphire
 							i(35243),	-- Design: Sovereign Shadowsong Amethyst
 							i(35264),	-- Design: Sparkling Empyrean Sapphire
-							i(35262, {	-- Design: Sparkling Empyrean Sapphire [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-								["collectible"] = false,
+							i(35262, {	-- Design: Sparkling Empyrean Sapphire
+								["spellID"] = 0,	-- This is now available via 35264, need to delink the old plans from the recipe
+									["u"] = 2,
 							}),
 							i(35766),	-- Design: Steady Seaspray Emerald
 							i(35265),	-- Design: Stormy Empyrean Sapphire
 							i(35249),	-- Design: Subtle Lionseye
-							i(35261, {	-- Design: Subtle Lionseye [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-								["collectible"] = false,
+							i(35261, {	-- Design: Subtle Lionseye
+								["spellID"] = 0,	-- This is now available via 35249, need to delink the old plans from the recipe
+									["u"] = 2,
 							}),
 							i(35239),	-- Design: Timeless Shadowsong Amethyst
 							i(35270),	-- Design: Veiled Shadowsong Amethyst
@@ -1770,12 +1857,14 @@ _.Zones =
 							i(29130),	-- Auchenai Staff
 							i(24177),	-- Design: Pendant of Shadow's End
 							i(23145),	-- Design: Purified Shadow Draenite
-							i(23143, {	-- Design: Purified Shadow Draenite [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-								["collectible"] = false,
+							i(23143, {	-- Design: Purified Shadow Draenite
+								["spellID"] = 0,	-- This is now available via 23145, need to delink the old plans from the recipe
+									["u"] = 2,
 							}),
 							i(23149),	-- Design: Smooth Golden Draenite
-							i(28291, {	-- Design: Smooth Golden Draenite [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-								["collectible"] = false,
+							i(28291, {	-- Design: Smooth Golden Draenite
+								["spellID"] = 0,	-- This is now available via 23149, need to delink the old plans from the recipe
+									["u"] = 2,
 							}),
 							i(29128),	-- Lightwarden's Band
 							i(29123),	-- Medallion of the Lightbearer

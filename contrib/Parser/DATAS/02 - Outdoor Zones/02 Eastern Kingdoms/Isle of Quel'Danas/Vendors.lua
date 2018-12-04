@@ -91,9 +91,10 @@ _.Zones =
 								{	-- Design: Reckless Pyrestone
 									["itemID"] = 35767,	-- Design: Reckless Pyrestone
 								},
-								{	-- Design: Reckless Pyrestone [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
+								{	-- Design: Reckless Pyrestone
 									["itemID"] = 35268,	-- Design: Reckless Pyrestone
-									["collectible"] = false,
+									["spellID"] = 0,	-- This is now available via 35767, need to delink the old plans from the recipe
+									["u"] = 2,
 								},
 								{	-- Design: Regal Talasite
 									["itemID"] = 35708,	-- Design: Regal Talasite
@@ -660,13 +661,15 @@ _.Zones =
 								{	-- Design: Brilliant Crimson Spinel
 									["itemID"] = 35248,	-- Design: Brilliant Crimson Spinel
 								},
-								{	-- Design: Brilliant Crimson Spinel [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
+								{	-- Design: Brilliant Crimson Spinel
 									["itemID"] = 35250,	-- Design: Brilliant Crimson Spinel
-									["collectible"] = false,
+									["spellID"] = 0,	-- This is now available via 35248, need to delink the old plans from the recipe
+									["u"] = 2,
 								},
-								{	-- Design: Brilliant Crimson Spinel [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
+								{	-- Design: Brilliant Crimson Spinel
 									["itemID"] = 35255,	-- Design: Brilliant Crimson Spinel
-									["collectible"] = false,
+									["spellID"] = 0,	-- This is now available via 35248, need to delink the old plans from the recipe
+									["u"] = 2,
 								},
 								{	-- Design: Deadly Pyrestone
 									["itemID"] = 35271,	-- Design: Deadly Pyrestone
@@ -674,9 +677,10 @@ _.Zones =
 								{	-- Design: Delicate Crimson Spinel
 									["itemID"] = 35246,	-- Design: Delicate Crimson Spinel
 								},
-								{	-- Design: Delicate Crimson Spinel [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
+								{	-- Design: Delicate Crimson Spinel
 									["itemID"] = 35245,	-- Design: Delicate Crimson Spinel
-									["collectible"] = false,
+									["spellID"] = 0,	-- This is now available via 35246, need to delink the old plans from the recipe
+									["u"] = 2,
 								},
 								{	-- Design: Flashing Crimson Spinel
 									["itemID"] = 35247,	-- Design: Flashing Crimson Spinel
@@ -690,9 +694,10 @@ _.Zones =
 								{	-- Design: Glinting Shadowsong Amethyst
 									["itemID"] = 35266,	-- Design: Glinting Shadowsong Amethyst
 								},
-								{	-- Design: Glinting Shadowsong Amethyst [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
+								{	-- Design: Glinting Shadowsong Amethyst
 									["itemID"] = 35240,	-- Design: Glinting Shadowsong Amethyst
-									["collectible"] = false,
+									["spellID"] = 0,	-- This is now available via 35266, need to delink the old plans from the recipe
+									["u"] = 2,
 								},
 								{	-- Design: Inscribed Pyrestone
 									["itemID"] = 35267,	-- Design: Inscribed Pyrestone
@@ -709,13 +714,15 @@ _.Zones =
 								{	-- Design: Purified Shadowsong Amethyst
 									["itemID"] = 35251,	-- Design: Purified Shadowsong Amethyst
 								},
-								{	-- Design: Purified Shadowsong Amethyst [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
+								{	-- Design: Purified Shadowsong Amethyst
 									["itemID"] = 35241,	-- Design: Purified Shadowsong Amethyst
-									["collectible"] = false,
+									["spellID"] = 0,	-- This is now available via 35251, need to delink the old plans from the recipe
+									["u"] = 2,
 								},
-								{	-- Design: Purified Shadowsong Amethyst [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
+								{	-- Design: Purified Shadowsong Amethyst
 									["itemID"] = 37504,	-- Design: Purified Shadowsong Amethyst
-									["collectible"] = false,
+									["spellID"] = 0,	-- This is now available via 35251, need to delink the old plans from the recipe
+									["u"] = 2,
 								},
 								{	-- Design: Quick Dawnstone
 									["itemID"] = 35322,	-- Design: Quick Dawnstone
@@ -732,9 +739,10 @@ _.Zones =
 								{	-- Design: Reckless Pyrestone
 									["itemID"] = 35767,	-- Design: Reckless Pyrestone
 								},
-								{	-- Design: Reckless Pyrestone [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
+								{	-- Design: Reckless Pyrestone
 									["itemID"] = 35268,	-- Design: Reckless Pyrestone
-									["collectible"] = false,
+									["spellID"] = 0,	-- This is now available via 35767, need to delink the old plans from the recipe
+									["u"] = 2,
 								},
 								{	-- Design: Regal Seaspray Emerald
 									["itemID"] = 35252,	-- Design: Regal Seaspray Emerald
@@ -742,23 +750,26 @@ _.Zones =
 								{	-- Design: Rigid Empyrean Sapphire
 									["itemID"] = 35259,	-- Design: Rigid Empyrean Sapphire
 								},
-								{	-- Design: Rigid Empyrean Sapphire [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
+								{	-- Design: Rigid Empyrean Sapphire
 									["itemID"] = 35257,	-- Design: Rigid Empyrean Sapphire
-									["collectible"] = false,
+									["spellID"] = 0,	-- This is now available via 35259, need to delink the old plans from the recipe
+									["u"] = 2,
 								},
 								{	-- Design: Shifting Shadowsong Amethyst
 									["itemID"] = 35242,	-- Design: Shifting Shadowsong Amethyst
 								},
-								{	-- Design: Shifting Shadowsong Amethyst [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
+								{	-- Design: Shifting Shadowsong Amethyst
 									["itemID"] = 35238,	-- Design: Shifting Shadowsong Amethyst
-									["collectible"] = false,
+									["spellID"] = 0,	-- This is now available via 35242, need to delink the old plans from the recipe
+									["u"] = 2,
 								},
 								{	-- Design: Smooth Lionseye
 									["itemID"] = 35260,	-- Design: Smooth Lionseye
 								},
-								{	-- Design: Smooth Lionseye [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
+								{	-- Design: Smooth Lionseye
 									["itemID"] = 35256,	-- Design: Smooth Lionseye
-									["collectible"] = false,
+									["spellID"] = 0,	-- This is now available via 35260, need to delink the old plans from the recipe
+									["u"] = 2,
 								},
 								{	-- Design: Solid Empyrean Sapphire
 									["itemID"] = 35263,	-- Design: Solid Empyrean Sapphire
@@ -769,9 +780,10 @@ _.Zones =
 								{	-- Design: Sparkling Empyrean Sapphire
 									["itemID"] = 35264,	-- Design: Sparkling Empyrean Sapphire
 								},
-								{	-- Design: Sparkling Empyrean Sapphire [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
+								{	-- Design: Sparkling Empyrean Sapphire
 									["itemID"] = 35262,	-- Design: Sparkling Empyrean Sapphire
-									["collectible"] = false,
+									["spellID"] = 0,	-- This is now available via 35262, need to delink the old plans from the recipe
+									["u"] = 2,
 								},
 								{	-- Design: Steady Seaspray Emerald
 									["itemID"] = 35766,	-- Design: Steady Seaspray Emerald
@@ -782,9 +794,10 @@ _.Zones =
 								{	-- Design: Subtle Lionseye
 									["itemID"] = 35249,	-- Design: Subtle Lionseye
 								},
-								{	-- Design: Subtle Lionseye [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
+								{	-- Design: Subtle Lionseye
 									["itemID"] = 35261,	-- Design: Subtle Lionseye
-									["collectible"] = false,
+									["spellID"] = 0,	-- This is now available via 35261, need to delink the old plans from the recipe
+									["u"] = 2,
 								},
 								{	-- Design: Timeless Shadowsong Amethyst
 									["itemID"] = 35239,	-- Design: Timeless Shadowsong Amethyst
