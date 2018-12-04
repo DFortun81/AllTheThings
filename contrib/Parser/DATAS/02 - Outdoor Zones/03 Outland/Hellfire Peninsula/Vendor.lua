@@ -9,61 +9,101 @@ _.Zones =
 			{	-- Hellfire Peninsula
 				["mapID"] = 100,	-- Hellfire Peninsula
 				["g"] = {
-					n(-2, {		-- Vendors
-						na(18802, {		-- Alchemist Gribble <Alchemy Trainer>
-							i(22900),	-- Recipe: Elixir of Camouflage
+					n(-2, {	-- Vendors
+						n(18802, {	-- Alchemist Gribble <Alchemy Trainer>
+							["groups"] = {
+								i(22900),	-- Recipe: Elixir of Camouflage
+							},
+							["coord"] = { 53.8, 65.8 },
+							["races"] = ALLIANCE_ONLY,
 						}),
-						nh(16588, {		-- Apothecary Antonivich <Alchemy Trainer>
-							i(22900),	-- Recipe: Elixir of Camouflage
+						n(16588, {	-- Apothecary Antonivich <Alchemy Trainer>
+							["groups"] = {
+								i(22900),	-- Recipe: Elixir of Camouflage
+							},
+							["coord"] = { 52.2, 36.4 },
+							["races"] = HORDE_ONLY,
 						}),
-						nh(18267, {		-- Battlecryer Blackeye
-							i(24581, {	-- Mark of Thrallmar
-								i(27832),	-- Band of the Victor
-								i(27830),	-- Circlet of the Victor
-							}),
+						n(18267, {	-- Battlecryer Blackeye
+							["groups"] = {
+								i(24581, {	-- Mark of Thrallmar
+									i(27832),	-- Band of the Victor
+									i(27830),	-- Circlet of the Victor
+								}),
+							},
+							["coord"] = { 55.8, 39.0 },
+							["races"] = HORDE_ONLY,
 						}),
-						nh(35099, {		-- Bana Wildmane <Wind Rider Keeper>
-							i(25477),	-- Swift Red Wind Rider Mount
-							i(25531),	-- Swift Green Wind Rider Mount
-							i(25532),	-- Swift Yellow Wind Rider Mount
-							i(25533),	-- Swift Purple Wind Rider Mount
-							i(25474),	-- Tawny Wind Rider Mount
-							i(25475),	-- Blue Wind Rider Mount
-							i(25476),	-- Green Wind Rider Mount
+						n(35099, {	-- Bana Wildmane <Wind Rider Keeper>
+							["groups"] = {
+								i(25477),	-- Swift Red Wind Rider Mount
+								i(25531),	-- Swift Green Wind Rider Mount
+								i(25532),	-- Swift Yellow Wind Rider Mount
+								i(25533),	-- Swift Purple Wind Rider Mount
+								i(25474),	-- Tawny Wind Rider Mount
+								i(25475),	-- Blue Wind Rider Mount
+								i(25476),	-- Green Wind Rider Mount
+							},
+							["coord"] = { 54.2, 41.6 },
+							["races"] = HORDE_ONLY,
 						}),
-						nh(16585, {		-- Cookie One-Eye <Food & Drink>
-							i(27688),	-- Recipe: Ravager Dog
+						n(16585, {	-- Cookie One-Eye <Food & Drink>
+							["groups"] = {
+								i(27688),	-- Recipe: Ravager Dog
+							},
+							["coord"] = { 54.6, 41.0 },
+							["races"] = HORDE_ONLY,
 						}),
-						nh(18997, {		-- Fallesh Sunfallow <Weapon Merchant>
-							i(30753),	-- Warphorn Spear
-							i(30755),	-- Mag'hari Fighting Claw
+						n(18997, {	-- Fallesh Sunfallow <Weapon Merchant>
+							["groups"] = {
+								i(30753),	-- Warphorn Spear
+								i(30755),	-- Mag'hari Fighting Claw
+							},
+							["coord"] = { 26.4, 60.2 },
+							["races"] = HORDE_ONLY,
 						}),
-						nh(18753, {		-- Felannia <Enchanting Trainer>
-							i(20753),	-- Formula: Lesser Wizard Oil
-							i(20752),	-- Formula: Minor Mana Oil
-							i(20758),	-- Formula: Minor Wizard Oil
-							i(22307),	-- Pattern: Enchanted Mageweave Pouch
+						n(18753, {	-- Felannia <Enchanting Trainer>
+							["groups"] = {
+								i(20753),	-- Formula: Lesser Wizard Oil
+								i(20752),	-- Formula: Minor Mana Oil
+								i(20758),	-- Formula: Minor Wizard Oil
+								i(22307),	-- Pattern: Enchanted Mageweave Pouch
+							},
+							["coord"] = { 52.2, 36.0 },
+							["races"] = HORDE_ONLY,
 						}),
-						na(35101, {		-- Grunda Bronzewing <Gryphon Keeper>	
-							i(25473),	-- Swift Blue Gryphon Mount
-							i(25527),	-- Swift Red Gryphon Mount
-							i(25528),	-- Swift Green Gryphon Mount
-							i(25529),	-- Swift Purple Gryphon Mount
-							i(25470),	-- Golden Gryphon Mount
-							i(25471),	-- Ebon Gryphon Mount
-							i(25472),	-- Snowy Gryphon Mount
+						n(35101, {	-- Grunda Bronzewing <Gryphon Keeper>
+							["groups"] = {
+								i(25473),	-- Swift Blue Gryphon Mount
+								i(25527),	-- Swift Red Gryphon Mount
+								i(25528),	-- Swift Green Gryphon Mount
+								i(25529),	-- Swift Purple Gryphon Mount
+								i(25470),	-- Golden Gryphon Mount
+								i(25471),	-- Ebon Gryphon Mount
+								i(25472),	-- Snowy Gryphon Mount
+							},
+							["coord"] = { 54.2, 62.6 },
+							["races"] = ALLIANCE_ONLY,
 						}),
-						na(18773, {		-- Johan Barnes <Enchanting Trainer>
-							i(20753),	-- Formula: Lesser Wizard Oil
-							i(20752),	-- Formula: Minor Mana Oil
-							i(20758),	-- Formula: Minor Wizard Oil
-							i(22307),	-- Pattern: Enchanted Mageweave Pouch
+						n(18773, {	-- Johan Barnes <Enchanting Trainer>
+							["groups"] = {
+								i(20753),	-- Formula: Lesser Wizard Oil
+								i(20752),	-- Formula: Minor Mana Oil
+								i(20758),	-- Formula: Minor Wizard Oil
+								i(22307),	-- Pattern: Enchanted Mageweave Pouch
+							},
+							["coord"] = { 53.6, 66.0 },
+							["races"] = ALLIANCE_ONLY,
 						}),
-						na(18775, {		-- Lebowski <Engineering Trainer>
-							i(23805),	-- Schematic: Ultra-Spectropic Detection Goggles
-							i(23803),	-- Schematic: Cogspinner Goggles
+						n(18775, {	-- Lebowski <Engineering Trainer>
+							["groups"] = {
+								i(23805),	-- Schematic: Ultra-Spectropic Detection Goggles
+								i(23803),	-- Schematic: Cogspinner Goggles
+							},
+							["coord"] = { 55.6, 65.6 },
+							["races"] = ALLIANCE_ONLY,
 						}),
-						n(17657, {		-- Logistics Officer Ulrike <Honor Hold Quartermaster>
+						n(17657, {	-- Logistics Officer Ulrike <Honor Hold Quartermaster>
 							["groups"] = {
 								i(23999),	-- Honor Hold Tabard
 								i(24180),	-- Design: Dawnstone Crab
@@ -102,12 +142,17 @@ _.Zones =
 								i(29169),	-- Ring of Convalescence
 								i(25826),	-- Sage's Band
 							},
+							["coord"] = { 56.6, 62.6 },
 							["races"] = ALLIANCE_ONLY,
 						}),
-						nh(19836, {		-- Mixie Farshot <Gun Merchant>
-							i(23803),	-- Schematic: Cogspinner Goggles
+						n(19836, {	-- Mixie Farshot <Gun Merchant>
+							["groups"] = {
+								i(23803),	-- Schematic: Cogspinner Goggles
+							},
+							["coord"] = { 61.0, 81.4 },
+							["races"] = HORDE_ONLY,
 						}),
-						n(17585, {		-- Quartermaster Urgronn <Thrallmar Quartermaster>
+						n(17585, {	-- Quartermaster Urgronn <Thrallmar Quartermaster>
 							["groups"] = {
 								i(24004),	-- Thrallmar Tabard
 								i(31358),	-- Design: Dawnstone Crab
@@ -146,27 +191,41 @@ _.Zones =
 								i(29168),	-- Ancestral Band
 								i(25824),	-- Farseer's Band
 							},
+							["coord"] = { 54.8, 37.8 },
 							["races"] = HORDE_ONLY,
 						}),
-						n(16583, { 		-- Rohok
+						n(16583, {	-- Rohok
 							["groups"] = {
 								un(1, i(25847)), -- Plans: Eternium Rod
 								i(23638), -- Plans: Lesser Ward of Shielding
 							},
+							["coord"] = { 53.2, 38.2 },
 							["races"] = HORDE_ONLY,
 						}),
-						na(16826, {		-- Sid Limbardi <Innkeeper>
-							i(27688),	-- Recipe: Ravager Dog
+						n(16826, {	-- Sid Limbardi <Innkeeper>
+							["groups"] = {
+								i(27688),	-- Recipe: Ravager Dog
+							},
+							["coord"] = { 54.2, 63.6 },
+							["races"] = ALLIANCE_ONLY,
 						}),
-						na(19001, {		-- Talaara <Weapon Merchant>
-							i(30753),	-- Warphorn Spear
-							i(30755),	-- Mag'hari Fighting Claw
+						n(19001, {	-- Talaara <Weapon Merchant>
+							["groups"] = {
+								i(30753),	-- Warphorn Spear
+								i(30755),	-- Mag'hari Fighting Claw
+							},
+							["coord"] = { 23.2, 40.0 },
+							["races"] = ALLIANCE_ONLY,
 						}),
-						na(18266, {		-- Warrant Officer Tracy Proudwell
-							i(24579, {	-- Mark of Honor Hold
-								i(27833),	-- Band of the Victor
-								i(27834),	-- Circlet of the Victor
-							}),
+						n(18266, {	-- Warrant Officer Tracy Proudwell
+							["groups"] = {
+								i(24579, {	-- Mark of Honor Hold
+									i(27833),	-- Band of the Victor
+									i(27834),	-- Circlet of the Victor
+								}),
+							},
+							["coord"] = { 56.4, 62.8 },
+							["races"] = ALLIANCE_ONLY,
 						}),
 					}),
 				},
