@@ -370,6 +370,13 @@ _.NeverImplemented =
 			un(1, i(150489)), -- Shroud of Forgiveness
 			un(1, i(150714)), -- Travel-Worn Shawl
 			un(1, i(134579)), -- Vanguard Cape
+			un(1, i(108814)), -- 6.0 PH Cloak Agi
+			un(1, i(108822)), -- 6.0 PH Cloak STR
+			un(1, i(108823)), -- 6.0 PH Cloak Int
+			un(1, i(109282)), -- 7.0 QA Combat Test Cloak 1
+			un(1, i(109453)), -- 7.0 QA Combat Test Cloak 2
+			un(1, i(109496)), -- 7.0 QA Combat Test Cloak 4
+			un(1, i(109538)), -- 7.0 QA Combat Test Cloak 3
 			un(1, i(134605)), -- Vanguard Cloak
 		}),
 		n(-349, { -- Cosmetic
@@ -737,6 +744,11 @@ _.NeverImplemented =
 		un(1, i(124644)),	-- Unknown
 		un(1, i(93660)),	-- Thunder-Laced Egg
 		un(1, i(136621)),	-- Unknown
+		un(1, i(40796)),	-- Unknown
+		un(1, i(42147)),	-- Unknown
+		un(1, i(43254)),	-- Unknown
+		un(1, i(44125)),	-- zzzOLDLesser Inscription of Template - PH
+		un(1, i(44126)),	-- zzzOLDGreater Inscription of Template - PH
 		un(1, i(92563)),	-- The Eye of the Storm
 	}),
 	n(-161, { -- Toys
