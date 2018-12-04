@@ -188,6 +188,10 @@ _.Zones =
 						i(157002), -- Exorcist's Crossbow
 						i(156975), -- Exorcist's Dagger						
 					})),
+					qa(26620, {	-- Seasoned Wolf Kabobs
+						i(2701),	-- Recipe: Seasoned Wolf Kabob
+					}),
+
 --[[					
 					qg(272, qa(26620)),	-- Seasoned Wolf Kabobs
 					qg(111041, q(43391, {	-- Secrets of the Void
