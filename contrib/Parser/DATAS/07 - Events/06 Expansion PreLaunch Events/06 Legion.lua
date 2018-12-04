@@ -142,6 +142,7 @@ _.WorldEvents =
 									un(3, i(141609)), -- Corrupted Argus Gavel
 									un(3, i(141595)), -- Eredar Battle Blade
 									un(3, i(141602)), -- Eredar Splitter
+									un(3, i(141607)), -- Eredar Battle Blade
 									un(3, i(141599)), -- Fel Barbed Spear
 									un(3, i(141594)), -- Fel Hacker
 									un(3, i(141603)), -- Fel Lord's Warmace

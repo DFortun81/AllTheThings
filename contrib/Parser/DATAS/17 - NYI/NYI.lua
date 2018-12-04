@@ -720,6 +720,7 @@ _.NeverImplemented =
 		un(1, i(109012)),	-- Frostwolf Ancestral Totem
 		un(1, i(124644)),	-- Unknown
 		un(1, i(93660)),	-- Thunder-Laced Egg
+		un(1, i(136621)),	-- Unknown
 		un(1, i(92563)),	-- The Eye of the Storm
 	}),
 	n(-161, { -- Toys
@@ -727,6 +728,7 @@ _.NeverImplemented =
 		un(1, i(143545)),	-- Fel Focusing Crystal 
 		un(1, i(141300)), 	-- Magi Focusing Crystal	
 		un(1, i(38568)), 	-- Drakkari Charm Bracelet
+		un(1, i(134017)), 	-- Don Carlos' Famous Hat (testing version?)
 		un(1, i(38569)), 	-- Unknown	
 		un(1, i(129111)),	-- Kvaldir Raiding Horn
 		un(1, i(130249)),	-- Waywatcher's Boon
@@ -778,7 +780,11 @@ _.NeverImplemented =
 		n(-338, { -- One-Handed Swords
 			un(1, i(108803)),	-- Unknown - was under Legion>1Handed Swords
 			un(1, i(108804)),	-- Unknown - was under Legion>1Handed Swords
+			un(1, i(134562)),	-- Odyns Fury
+			un(1, i(140705)),	-- Outlaw Cutlass
+			un(1, i(137225)),	-- Thunderfury, Blessed Blade of the Windseeker (mog testing)
 			un(1, i(47846)),	-- Cruel Barb (Glow, Purple - Low)
+			un(1, i(147378)),	-- Wooden Toy Sword(Visual usage for toy weapon set)
 			un(1, i(108805)),	-- Unknown - was under Legion>1Handed Swords
 			un(1, i(109320)),	-- 6.0 QA Combat Test Strength 1h Sword 2
 			un(1, i(109377)),   -- 6.0 QA Combat Test Strength 1H Sword 3
@@ -803,6 +809,9 @@ _.NeverImplemented =
 			un(1, i(134066)),	-- Unknown - was under Legion>Staves
 			un(1, i(134068)),	-- Unknown - was under Legion>Staves
 			un(1, i(32185)),    -- Chancellor's War Staff
+		}),
+		n(-335, { -- Two Handed Axes
+			un(1, i(134563)),	-- Unknown
 		}),
 		n(-339, { -- Two Handed Swords
 			un(1, i(33475)),	-- Artefact Frostmourne

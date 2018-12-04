@@ -51,7 +51,7 @@ _.Zones =
 							i(57487),	-- Krom'gar Legionnaire's Plate Bracers
 							i(57488),	-- Krom'gar Legionnaire's Armored Bracers
 							i(131884),	-- Krom'gar Legionnaire's Mesh Wraps
-							i(131884),	-- Krom'gar Legionnaire's Chain Bracers
+							i(131885),	-- Krom'gar Legionnaire's Chain Bracers
 							i(57472),	-- Krom'gar Sergeant's Linen Footwraps
 							i(57473),	-- Krom'gar Sergeant's Hide Boots
 							i(57474),	-- Krom'gar Sergeant's Leather Boots
