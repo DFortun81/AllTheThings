@@ -44,6 +44,19 @@ _.Zones =
 									un(40, qc1(q(1706, { 	-- Grimand's Armor
 										un(2, i(6971)),	-- Fire Hardened Coif
 									}))),
+									{	-- In Search of Galvan
+										["questID"] = 2758,	-- In Search of Galvan
+										["qg"] = 7798, -- Hank the Hammer
+										["requireSkill"] = 164,	-- Blacksmithing
+										["races"] = ALLIANCE_ONLY,
+										["u"] = 40,
+										["g"] = {
+											{	-- Mithril Insignia
+												["itemID"] = 8663, -- Mithril Insignia
+												["u"] = 2,
+											},
+										},
+									},
 									un(40, qc8(q(1941, {	-- Manaweave Robe
 										i(7509),	-- Manaweave Robe	-- NOTE: This item is actually obtainable so we only want to mark the quest as legacy
 									}))),

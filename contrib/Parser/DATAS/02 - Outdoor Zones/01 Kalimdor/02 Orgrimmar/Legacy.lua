@@ -94,6 +94,19 @@ _.Zones =
 								un(2, i(11863)),	-- White Bone Shredder
 								un(2, i(11864)),	-- White Bone Spear
 							})),
+							{	-- Booty Bay or Bust!
+								["questID"] = 2757,	-- Booty Bay or Bust!
+								["qg"] = 7793, -- Ox
+								["requireSkill"] = 164,	-- Blacksmithing
+								["races"] = HORDE_ONLY,
+								["u"] = 40,
+								["g"] = {
+									{	-- Mithril Insignia
+										["itemID"] = 8663, -- Mithril Insignia
+										["u"] = 2,
+									},
+								},
+							},	
 							un(40, qh(4511, {		-- Calm Before the Storm
 								un(2, i(11872)),	-- Eschewal Greaves 
 								un(2, i(11870)),	-- Oblivion Orb 
