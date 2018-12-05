@@ -449,7 +449,7 @@ local function createGeneralFrame(parent)
 	addObject(elm,other)
 	
 	local otherFrame = CreateFrame("Frame", name .. "-" .. tabName .. "-otherFrame", child, "ThinBorderTemplate");
-	otherFrame:SetSize(child:GetWidth(),110)
+	otherFrame:SetSize(child:GetWidth(),140)
 	otherFrame:SetPoint("TOPLEFT",other,0,-frameSpacer);
 	otherFrame:SetAlpha(0.3);
 	addObject(elm,otherFrame)
@@ -529,8 +529,28 @@ local function createGeneralFrame(parent)
 			GameTooltip:SetText ("Enable this option if you want to see an alternative group/party/raid settings manager called the 'Raid Assistant'. The list will automatically update whenever group settings change.\n\nDrag the window and rescale it where you want it to appear.\n\nYou can also bind this setting to a Key.\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Raid Assistant", nil, nil, nil, nil, true);
 			GameTooltip:Show();
 		end);
+	autoRaidAssistant.Label:SetWidth(500);
 	autoRaidAssistant:SetPoint("TOPLEFT",autoProfessionMinilist,0,-frameSpacer)
 	addObject(elm,autoRaidAssistant)
+	
+	-- show the world quests list auto
+	local autoWorldQuests = createCheckBox("Show the World Quests List Automatically", child, function(self)
+			app.SetDataMember("AutoWorldQuestsList", self:GetChecked());
+			if self:GetChecked() then
+				app:GetWindow("WorldQuests"):Show();
+			end
+		end, 
+		function(self) 
+			self:SetChecked(app.GetDataMember("AutoWorldQuestsList", false));
+		end,
+		function(self)
+			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
+			GameTooltip:SetText ("Enable this option if you want the 'World Quests' list to appear automatically. The list will automatically update whenever you switch zones.\n\nDrag the window and rescale it where you want it to appear.\n\nYou can also bind this setting to a Key.\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle World Quests List", nil, nil, nil, nil, true);
+			GameTooltip:Show();
+		end);
+	autoWorldQuests.Label:SetWidth(500);
+	autoWorldQuests:SetPoint("TOPLEFT",autoRaidAssistant,0,-frameSpacer)
+	addObject(elm,autoWorldQuests)
 	
 	-- auto minimize when not applicable 
 	local autoMin = createCheckBox("Automatically Minimize Inactive Difficulties in Mini Lists", child, function(self)
@@ -544,7 +564,7 @@ local function createGeneralFrame(parent)
 			GameTooltip:SetText ("Enable this option if you want to automatically minimize difficulty headers in the mini list that are not active when you enter a dungeon or raid.\n\nExample: Minimize the Heroic header when in a Normal difficulty dungeon", nil, nil, nil, nil, true);
 			GameTooltip:Show();
 		end);
-	autoMin:SetPoint("TOPLEFT",autoRaidAssistant,0,-frameSpacer)
+	autoMin:SetPoint("TOPLEFT",autoWorldQuests,0,-frameSpacer)
 	autoMin.Label:SetWidth(autoMin.Label:GetWidth() * 1.5);
 	addObject(elm,autoMin)
 	

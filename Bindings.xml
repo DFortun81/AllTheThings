@@ -29,4 +29,7 @@
 	<Binding name="ALLTHETHINGS_TOGGLE_RAID_ASSISTANT" category="ADDONS">
 		AllTheThings:GetWindow("RaidAssistant"):Toggle();
 	</Binding>
+	<Binding name="ALLTHETHINGS_TOGGLE_WORLD_QUESTS_LIST" category="ADDONS">
+		AllTheThings:GetWindow("WorldQuests"):Toggle();
+	</Binding>
 </Bindings>

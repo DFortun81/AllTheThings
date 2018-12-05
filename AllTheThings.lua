@@ -2549,15 +2549,10 @@ local function RefreshLocationCoroutine()
 		OpenMiniList("mapID", mapID, "Map ID");
 		wipe(searchCache);
 	end
-	if GetDataMember("AutoRaidAssistant", false) then
-		app:GetWindow("RaidAssistant"):Show();
-	end
 end
 local function RefreshLocation()
 	if GetDataMember("AutoMiniList") or app:GetWindow("CurrentInstance"):IsVisible() then
 		StartCoroutine("RefreshLocation", RefreshLocationCoroutine);
-	elseif GetDataMember("AutoRaidAssistant", false) then
-		app:GetWindow("RaidAssistant"):Show();
 	end
 end
 local function RefreshSavesCoroutine()
@@ -7602,10 +7597,7 @@ local function UpdateWindow(self, force, got)
 			else
 				for i, data in ipairs(self.data.g) do
 					if data.visible then
-						local oldExpanded = data.expanded;
-						data.expanded = true;
 						ProcessGroup(self.rowData, data, 0, self.data.back or 0);
-						data.expanded = oldExpanded;
 					end
 				end
 			end
@@ -8369,7 +8361,6 @@ function app:GetWindow(suffix, parent, onUpdate)
 					t = app.CreateQuest(t.questID, t);
 				end
 				t.visible = true;
-				t.expanded = true;
 				return t;
 			end
 		end
@@ -8420,11 +8411,14 @@ function app:GetWindow(suffix, parent, onUpdate)
 						end
 					end
 					for k,value in pairs(t) do
-						o[k] = value;
+						if k ~= "expanded" then
+							o[k] = value;
+						end
 					end
 					return o;
 				end
 			end
+			t.expanded = true;
 			table.insert(g, t);
 			return t;
 		end
@@ -9191,7 +9185,6 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 	end
 	UpdateWindow(self, true);
 end);
---[[
 (function()
 	local worldMapIDs = {
 		619,	-- The Broken Isles
@@ -9211,7 +9204,21 @@ end);
 				['visible'] = true, 
 				['expanded'] = true,
 				['back'] = 1,
-				['g'] = {},
+				['g'] = {
+					{
+						['text'] = "Update World Quests Now",
+						['icon'] = "Interface\\Icons\\INV_Misc_Map_01",
+						['description'] = "Sometimes the World Quest API is slow or fails to return new data. If you wish to forcibly refresh the data without changing zones, click this button now!",
+						['visible'] = true,
+						['f'] = -1,
+						['key'] = "nope",
+						['OnClick'] = function(row, button)
+							Push(self, "Rebuild", self.Rebuild);
+							return true;
+						end,
+						['back'] = 0.5,
+					},
+				},
 			};
 			self.rawData = {};
 			local OnUpdateForItem = function(self)
@@ -9378,16 +9385,11 @@ end);
 						self:MergeObject(temp, mapObject);
 					end
 				end
-				--wipe(self.rawData);
 				for i,o in ipairs(temp) do
 					self:MergeObject(self.rawData, o);
 				end
-				if self.data.g then
-					for i,o in ipairs(self.rawData) do
-						self:MergeObject(self.data.g, self:CreateObject(o));
-					end
-				else
-					self.data.g = self:CreateObject(self.rawData);
+				for i,o in ipairs(self.rawData) do
+					self:MergeObject(self.data.g, self:CreateObject(o));
 				end
 				BuildGroups(self.data, self.data.g);
 				self:Update();
@@ -9439,9 +9441,8 @@ end);
 		self.data.total = 0;
 		UpdateGroups(self.data, self.data.g, 1);
 		UpdateWindow(self, true);
-	end):Show();
+	end);
 end)();
---]]
 
 GameTooltip:HookScript("OnShow", AttachTooltip);
 GameTooltip:HookScript("OnTooltipSetQuest", AttachTooltip);
@@ -9491,6 +9492,8 @@ SlashCmdList["AllTheThings"] = function(cmd)
 		ToggleMiniListForCurrentZone();
 	elseif cmd == "ra" then
 		app:GetWindow("RaidAssistant"):Toggle();
+	elseif cmd == "wq" then
+		app:GetWindow("WorldQuests"):Toggle();
 	elseif string.sub(cmd,1,string.len("load "))=="load " then
 		app.Settings:profileLoad(string.sub(cmd,string.len("load ")))
 	elseif cmd == "load" or cmd =="load " then	
@@ -9532,6 +9535,11 @@ end
 SLASH_AllTheThingsRA1 = "/attra";
 SlashCmdList["AllTheThingsRA"] = function(cmd)
 	app:GetWindow("RaidAssistant"):Toggle();
+end
+
+SLASH_AllTheThingsWQ1 = "/attwq";
+SlashCmdList["AllTheThingsWQ"] = function(cmd)
+	app:GetWindow("WorldQuests"):Toggle();
 end
 
 -- Register Events required at the start
@@ -9586,6 +9594,7 @@ app.events.VARIABLES_LOADED = function()
 	BINDING_NAME_ALLTHETHINGS_TOGGLEDEBUGMODE = L("TOGGLE_DEBUG_MODE");
 	BINDING_NAME_ALLTHETHINGS_OPEN_RAID_ASSISTANT = L("OPEN_RAID_ASSISTANT");
 	BINDING_NAME_ALLTHETHINGS_TOGGLE_RAID_ASSISTANT = L("TOGGLE_RAID_ASSISTANT");
+	BINDING_NAME_ALLTHETHINGS_TOGGLE_WORLD_QUESTS_LIST = L("TOGGLE_WORLD_QUESTS_LIST");
 	
 	-- Cache information about the player.
 	local _, class, classIndex = UnitClass("player");
@@ -9878,6 +9887,12 @@ app.events.PLAYER_LOGIN = function()
 		OnEnter = MinimapButtonOnEnter,
 		OnLeave = MinimapButtonOnLeave,
 	})
+	if GetDataMember("AutoRaidAssistant", false) then
+		app:GetWindow("RaidAssistant"):Show();
+	end
+	if GetDataMember("AutoWorldQuestsList", false) then
+		app:GetWindow("WorldQuests"):Show();
+	end
 end
 app.events.ACHIEVEMENT_EARNED = function(achievementID, ...)
 	if achievementID then

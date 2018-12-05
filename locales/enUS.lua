@@ -31,6 +31,7 @@ AllTheThings.Locales.enUS = {
 	["TOGGLE_MINILIST"] = "Toggle Mini List";
 	["TOGGLE_BOEITEMS"] = "Toggle BoE/BoA Items";
 	["TOGGLE_RAID_ASSISTANT"] = "Toggle Raid Assistant";
+	["TOGGLE_WORLD_QUESTS_LIST"] = "Toggle World Quests List";
 
 	-- Frame Text
 	["LIST_FRAME_TITLE"] = "ITEM COLLECTION";
