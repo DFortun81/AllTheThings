@@ -901,6 +901,10 @@ _.Zones =
 							un(40, qh(1430, {	-- [DEPRECATED]Fresh Meat
 								un(2, i(9682)),	-- Leather Chef's Belt
 							})),
+							un(40, q(2702)), 	-- Heroes of Old
+							un(40, q(2702, {	-- Heroes of Old 2
+								un(2, i(10659)), 	-- Shard of Afrasa
+							})), 
 							un(40, qa(1393, { -- Galen's Escape
 								un(2, i(6828)),	-- Visionary Buckler
 							})),
@@ -909,6 +913,7 @@ _.Zones =
 								un(2, i(9678)),	-- Tok'kar's Murloc Basher
 								un(2, i(9679)),	-- Tok'kar's Murloc Chopper
 							})),
+							un(40, q(2681)), 	-- The Stones That Bind Us
 						}),
 						n(-16, {	-- Rares (Legacy)
 							un(43, n(766, { 	-- Tangled Horror

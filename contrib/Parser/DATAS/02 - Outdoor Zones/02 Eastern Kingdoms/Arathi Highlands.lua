@@ -661,6 +661,7 @@ _.Zones =
 						un(7, i(2622)),	-- Nimar's Tribal Headdress						
 					}), 
 					n(2779, { 	-- Prince Nazjak
+						dr(07.0, i(1404)),	-- Tidal Charm
 						dr(06.0, i(6600)),	-- Dervish Belt
 						dr(04.0, i(6595)),	-- Battleforge Gauntlets
 						dr(04.0, i(6602)),	-- Dervish Bracers

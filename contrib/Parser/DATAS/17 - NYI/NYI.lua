@@ -421,6 +421,13 @@ _.NeverImplemented =
 			un(1, i(147204)), -- Black Apron - TEST
 			un(1, i(23388)), -- Tranquillen Tabard
 		}),
+		n(-386, {	-- Trinket
+			un(1, i(12805)), -- Orb of Fire
+			un(1, i(18355)), -- Ferras Collar
+			un(1, i(18438)), -- Sergeant's Mark
+			un(1, i(20084)), -- Hunting Net
+			un(1, i(20525)), -- Earthen Sigil
+		}),
 	}),
 	n(-494, { -- Misc
 		un(1, i(146801)),	-- [BUILDING CONTRIBUTION REWARD ITEM [NYI]]

@@ -621,6 +621,7 @@ _.Instances = { tier(1, {	-- Classic
 				i(18809),	-- Sash of Whispered Secrets
 				i(18806),	-- Core Forged Greaves
 				i(19140),	-- Cauterizing Band
+				un(2, i(18646)),	-- The Eye of Divinity
 			})),
 			cr(11502, e(1528, { -- Ragnaros
 				ach(686),	-- Molten Core

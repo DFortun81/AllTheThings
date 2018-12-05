@@ -719,12 +719,19 @@ _.Craftables =
 					["itemID"] = 12409,	-- Thorium Boots
 				},
 			}),
+			n(-386, {	-- Trinket
+				{	-- Mithril Insignia
+					["itemID"] = 8663, 	-- Mithril Insignia
+					["u"] = 2,
+				},
+			}),
 		}),
 		n(-182, { 	-- Enchanting
 			i(11288),	-- Greater Magic Wand
 			i(11290),	-- Greater Mystic Wan
 			i(11287),	-- Lesser Magic Wand
 			i(11289),	-- Lesser Mystic Wand
+			i(11811),	-- Smoking Heart of the Mountain
 		}),
 		n(-183, { 	-- Engineering
 			{	-- Plans: Inlaid Mithril Cylinder
@@ -781,7 +788,9 @@ _.Craftables =
 				i(18638),	-- Hyper-Radiant Flame Reflector
 				i(4396),	-- Mechanical Dragonling
 				i(10576),	-- Mithril Mechanical Dragonling
+				i(4381),	-- Minor Recombobulator
 				i(18639),	-- Ultra-Flash Shadow Reflector
+				i(18637),	-- Major Recombobulator
 			}),
 		}),
 		n(-185, { 	-- Inscription
