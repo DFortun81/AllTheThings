@@ -1,4 +1,3 @@
---[[
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
@@ -7,7 +6,37 @@
 
 _.ExpansionFeatures =
 {
-	n(-17, { -- Quests
+	{	-- War Effort
+		["npcID"] = -10057,	-- War Effort
+		["g"] = {
+			{	-- Ready for War
+				["achievementID"] = 12509,	-- Ready for War
+				["races"] = HORDE_ONLY,
+				["lvl"] = 110,
+				--["maps"] = {
+				--	1161,	--  Boralus
+				--},
+				["g"] = { 
+					{	-- Uniting Zandalar
+						["questID"] = 51916,	-- Uniting Zandalar
+						["qg"] = 135691,	-- Nathanos Blightcaller <Champion of the Banshee Queen>
+						["groups"] = {
+							i(141605),	-- Flight Master Whistle
+						},
+					--	["sourceQuests"] = {
+					--		52654,	-- The War Campaign
+					--	},
+						["lvl"] = 120,
+						["races"] = HORDE_ONLY,
+						-- NOTE!! Also grants credit for Horde Equivalent == 52451 and 51916
+						-- NOTE!! Also grants credit for Alliance Other Quest (Same Name) == 52450
+					},
+				},
+			},
+		},
+	},
+};
+--[[	n(-17, { -- Quests
 		-- We need to attach lvl requirements in various areas here as the quests are specific to certain levels.  To ensure everything works properly we'll attach lvls to each quest to be safe.
 		["groups"] = {
 			q(52749, {	-- The War Campaign
@@ -40,12 +69,5 @@ _.ExpansionFeatures =
 				["qg"] = 138708,	-- Garona Halforceen
 				["sourceQuests"] = { 51771 },	-- War of Shadows
 				["lvl"] = 110,
-			}),
-			
-		},
-	}),
-	["races"] = HORDE_ONLY,
-	["lvl"] = 110,	
-	["achievementID"] = 12509, -- Ready for Wara
-};
---]]
+				
+--]]		
