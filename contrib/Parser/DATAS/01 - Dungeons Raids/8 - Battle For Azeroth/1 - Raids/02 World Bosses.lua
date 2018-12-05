@@ -30,6 +30,16 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				}),
 				e(2210, {	-- Dunegorger Kraulok [QID]
 					["groups"] = bubbleDown({["modID"] = 3}, {
+						{
+							["questID"] = 53000,	-- Kraulok looted
+							["title"] = "Kraulok looted",
+							["isWeekly"] = true,
+						},
+						{
+							["questID"] = 52265,	-- Kraulok Bonusroll used
+							["title"] = "Kraulok Bonusroll used",
+							["isWeekly"] = true,
+						},
 						sz(12587, 5),	--  Dunegorger Kraulok Criteria
 						i(161404),	-- Hood of the Sinuous Devilsaur
 						i(164385),	-- Desert Nomad's Wrap
@@ -47,8 +57,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					},
 					["isRaid"] = true,
 					["maps"] = { 864 },	-- Vol'dun
-					["questID"] = 53000,
-					-- Note!! WQ ID: 52196, -- Sandswept Bones
+					["questID"] = 52196,	-- Sandswept Bones
 				}),
 				e(2197, {	-- Hailstone Construct [QID]
 					["groups"] = bubbleDown({["modID"] = 3}, {

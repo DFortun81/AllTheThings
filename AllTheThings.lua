@@ -9378,11 +9378,17 @@ end);
 						self:MergeObject(temp, mapObject);
 					end
 				end
-				wipe(self.rawData);
+				--wipe(self.rawData);
 				for i,o in ipairs(temp) do
 					self:MergeObject(self.rawData, o);
 				end
-				self.data.g = self:CreateObject(self.rawData);
+				if self.data.g then
+					for i,o in ipairs(self.rawData) do
+						self:MergeObject(self.data.g, self:CreateObject(o));
+					end
+				else
+					self.data.g = self:CreateObject(self.rawData);
+				end
 				BuildGroups(self.data, self.data.g);
 				self:Update();
 			end

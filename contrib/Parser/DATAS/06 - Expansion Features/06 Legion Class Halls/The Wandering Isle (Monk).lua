@@ -8,8 +8,9 @@ _.ExpansionFeatures =
 			cl(10, { -- The Wandering Isle -- Monk
 				["groups"] = {
 					gt(254, {	-- Brewhouse
-						["description"] = "All you have to do is click this once per day. Quest ID pending.",
+						["description"] = "All you have to do is click this once per day.",
 						["coord"] = { 55, 56.5 },
+						["questID"] = 43974,
 						["groups"] = {
 							i(139561, {	-- Legend of the Monkey King
 								artifact(959), -- Brewmater Monk Hidden Appearance
