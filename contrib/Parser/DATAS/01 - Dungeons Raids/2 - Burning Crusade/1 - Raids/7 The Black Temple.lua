@@ -26,8 +26,17 @@ _.Instances =
 						i(32749),	-- Pattern: Shoulders of Lightning Reflexes
 						i(32747),	-- Pattern: Swiftstrike Shoulders
 						i(32753),	-- Pattern: Swiftheal Mantle
-						i(32738),	-- Plans: Dawnsteel Bracers
-						i(32737),	-- Plans: Swiftsteel Shoulders
+						{	-- Plans: Dawnsteel Bracers
+							["itemID"] = 32738,	-- Plans: Dawnsteel Bracers
+						},
+						{	-- Plans: Swiftsteel Shoulders
+							["itemID"] = 32737,	-- Plans: Swiftsteel Shoulders
+						},
+						{	-- Plans: Swiftsteel Shoulders
+							["itemID"] = 35532,	-- Plans: Swiftsteel Shoulders
+							["spellID"] = 0,	-- This is now available via 32737, need to delink the old plans from the recipe
+							["u"] = 1,
+						},
 					}),
 					n(-17, {	-- Quests
 						q(10957, {	-- Redemption of the Ashtongue (UNTESTED, NEEDS CONFIRMATION)

@@ -306,7 +306,14 @@ _.Instances =
 								17899,    -- Shadowy Necromancer
 							},
 						}),
-						i(32739),	-- Plans: Dawnsteel Shoulders
+						{	-- Plans: Dawnsteel Shoulders
+							["itemID"] = 32739,	-- Plans: Dawnsteel Shoulders
+						},
+						{	-- Plans: Dawnsteel Shoulders
+							["itemID"] = 35530,	-- Plans: Dawnsteel Shoulders
+							["spellID"] = 0,	-- This is now available via 32739, need to delink the old plans from the recipe
+							["u"] = 1,
+						},
 						i(32736),	-- Plans: Swiftsteel Bracers
 					}),
 					e(1577, {	-- Rage Winterchill
