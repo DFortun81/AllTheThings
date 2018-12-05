@@ -209,7 +209,7 @@ _.Instances = { tier(7, {	-- Legion
 				["isRaid"] = true,
 				["maps"] = { 680 }, -- Suramar
 			})),	
-			cr(107544, e(1749, { -- Nithogg 
+			e(1749, { -- Nithogg 
 				["groups"] = {
 					{
 						["achievementID"] = 11160,	-- Unleashed Monstrosities [Achievement]
@@ -228,7 +228,11 @@ _.Instances = { tier(7, {	-- Legion
 				["questID"] = 42270, -- Change to tracking quest later.
 				["isRaid"] = true,
 				["maps"] = { 634 }, -- Stormheim
-			})),
+				["crs"] = {
+					107544, 
+					107023,
+				},
+			}),
 			cr(108678, e(1763, { -- Shar'thos 
 				["groups"] = {
 					{
