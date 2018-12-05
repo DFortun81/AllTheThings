@@ -21,6 +21,7 @@ _.NeverImplemented =
 	n(-163, { -- Armor
 		n(-43, { -- Cloth
 			cl(8, { -- Mage
+				-- Possible Unused Level 120/Lv 120 Classtrial
 				un(1, i(150651)), -- Mountainsage Cord
 				un(1, i(150646)), -- Mountainsage Handwraps
 				un(1, i(150647)), -- Mountainsage Hood
@@ -46,6 +47,9 @@ _.NeverImplemented =
 				un(1, i(48762)),	-- Zabra's Mantle of Conquest
 				un(1, i(48763)),	-- Zabra's Pants of Conquest
 				un(1, i(48764)),	-- Zabra's Raiments of Conquest
+				-- Possible Unused Level 120/Lv 120 Classtrial
+				un(1, i(157634)),	-- Whispering Staff of the Void
+				un(1, i(157633)),	-- Staff of Radiance
 			}),
 			cl(9, { -- Warlock
 				un(1, i(48735)),	-- Gul'dan's Gloves of Conquest
@@ -53,6 +57,9 @@ _.NeverImplemented =
 				un(1, i(48737)),	-- Gul'dan's Leggings of Conquest
 				un(1, i(48738)),	-- Gul'dan's Robe of Conquest
 				un(1, i(48739)),	-- Gul'dan's Shoulderpads of Conquest
+				-- Possible Unused Level 120/Lv 120 Classtrial
+				un(1, i(157642)),	-- Demonologist's Staff
+				un(1, i(157641)),	-- Destructive Spellstaff
 			}),
 			un(1, i(78017)),	-- Replica Magister's Leggings (Cloth)
 			un(1, i(4989)),	-- Mage Dragon Robe (intended to be quest reward, never made it to live?)
@@ -141,6 +148,9 @@ _.NeverImplemented =
 				un(1, i(48806)),	-- Garona's Helmet of Conquest
 				un(1, i(48807)),	-- Garona's Legplates of Conquest
 				un(1, i(48808)),	-- Garona's Pauldrons of Conquest
+				-- Possible Unused Level 120/Lv 120 Classtrial
+				un(1, i(150600)),	-- Outlaw's Cutlass
+				un(1, i(157637)),	-- Swaggering Cutlass
 			}),
 			un(1, i(54655)),	-- Stormshroud Armor (Leather)
 			un(1, i(25975)),	-- Gloves of Preservation (not added version)
@@ -268,6 +278,8 @@ _.NeverImplemented =
 				un(1, i(48816)),	-- Windrunner's Legguards of Conquest
 				un(1, i(48817)),	-- Windrunner's Spaulders of Conquest
 				un(1, i(48818)),	-- Windrunner's Tunic of Conquest
+				-- Possible Unused Level 120/Lv 120 Classtrial
+				un(1, i(150642)),	-- Trailseeker Spaulders
 			}),
 			un(1, i(56507)),	    -- Razorshell Helm
 			un(1, i(56514)),	    -- Windbound Helm
@@ -302,6 +314,9 @@ _.NeverImplemented =
 				un(1, i(48892)),	-- Koltira's Handguards of Conquest
 				un(1, i(48893)),	-- Koltira's Legguards of Conquest
 				un(1, i(48894)),	-- Koltira's Pauldrons of Conquest
+				-- Possible Unused Level 120/Lv 120 Classtrial
+				un(1, i(157618)),	-- Unholy Runeblade
+				un(1, i(157646)),	-- Bloodcaked Runeblade
 			}),
 			cl(2, { -- Paladin
 				un(1, i(48905)),	-- Liadrin's Tunic of Conquest
@@ -332,7 +347,7 @@ _.NeverImplemented =
 				un(1, i(48873)),	-- Hellscream's Legguards of Conquest
 				un(1, i(48874)),	-- Hellscream's Pauldrons of Conquest
 				un(1, i(154041)), -- Oathsworn Faceguard
-				-- UNUSED Classtrial
+				-- Possible Unused Level 120/Lv 120 Classtrial
 				un(1, i(154048)), -- Oathsworn Shoulderguards
 				un(1, i(154038)), -- Oathsworn Cloak of Stoicism
 				un(1, i(154037)), -- Oathsworn Chestguard
@@ -378,6 +393,8 @@ _.NeverImplemented =
 			un(1, i(109496)), -- 7.0 QA Combat Test Cloak 4
 			un(1, i(109538)), -- 7.0 QA Combat Test Cloak 3
 			un(1, i(134605)), -- Vanguard Cloak
+			un(1, i(154698)), -- Tidespray Linen Cloak of the Feather (Doesnt load ingame)
+			un(1, i(154701)), -- Tidespray Linen Cloak of Resilience (Doesnt load ingame)
 		}),
 		n(-349, { -- Cosmetic
 			un(1, i(134110)), -- Hidden Helm
@@ -559,9 +576,11 @@ _.NeverImplemented =
 		p(1751),
 	}))),
 		un(1, i(130145)), -- Unknown
+		un(1, i(100870)), -- Murkimus' Tyrannical Spear
 		un(1, i(119147)), -- Nether Ray Fry (unsed Version)
 		un(1, i(119112)), -- Son of Sethe (unsed Version)
 		model(38311, n(51634, {["u"] = 1,} )),	-- Bubbles 					(Never added in Game)
+		
 		model(36583, n(51636, {["u"] = 1,})),	-- Lizzy 					(Never added in Game)
 		model(14657, n(14629, {["u"] = 1,})), 	-- Loggerhead Snapjaw 		(Never added in Game)
 		model(36129, n(48376, {["u"] = 1,})),	-- Rumbling Rockling 		(Never added in Game)
@@ -594,7 +613,7 @@ _.NeverImplemented =
 				p(1431),
 			},
 			["u"] = 1,
-		})), 
+		})),  
 		un(1, i(31665)), -- Toy RC Mortar Tank
 		un(1, i(13342)), -- Pet Fish
 		un(1, i(13343)), -- Pet Stone
@@ -783,6 +802,7 @@ _.NeverImplemented =
 		}),
 		n(-346, { -- Crossbows
 			un(1, i(32187)),    -- Chancellor's Heavy Crossbow
+			un(1, i(108784)),    -- Unknown
 		}),
 		n(-333, { -- Daggers
 			un(1, i(32179)),    -- Chancellor's Shiv
@@ -792,6 +812,12 @@ _.NeverImplemented =
 			un(1, i(32188)),    -- Chancellor's Fleshslicer
 			un(1, i(32189)),    -- Chancellor's Ripper
 			un(1, i(38243)),    -- Ravaging Steelfist
+			un(1, i(108787)),    -- Unknown
+			un(1, i(108788)),    -- Unknown
+			un(1, i(108789)),    -- Unknown
+			un(1, i(109361)),    -- Unknown
+			un(1, i(109535)),    -- Unknown
+			un(1, i(109534)),    -- Unknown
 		}),
 		n(-345, { -- Guns
 			un(1, i(49455)),	-- Blunderbuss of Deforestation
@@ -836,7 +862,31 @@ _.NeverImplemented =
 			un(1, i(132483)),	-- Unknown - was under Legion>Staves
 			un(1, i(134066)),	-- Unknown - was under Legion>Staves
 			un(1, i(134068)),	-- Unknown - was under Legion>Staves
+			un(1, i(108800)),	-- Unknown - was under Legion>Staves
+			un(1, i(108801)),	-- Unknown - was under Legion>Staves
+			un(1, i(108802)),	-- Unknown - was under Legion>Staves
+			un(1, i(109291)),	-- Unknown - was under Legion>Staves
+			un(1, i(109374)),	-- Unknown - was under Legion>Staves
+			un(1, i(109406)),	-- Unknown - was under Legion>Staves
+			un(1, i(109429)),	-- Unknown - was under Legion>Staves
+			un(1, i(109507)),	-- Unknown - was under Legion>Staves
+			un(1, i(109531)),	-- Unknown - was under Legion>Staves
+			un(1, i(109532)),	-- Unknown - was under Legion>Staves
 			un(1, i(32185)),    -- Chancellor's War Staff
+			un(1, i(118180)),	-- Aluneth
+			un(1, i(129752)),	-- Aluneth
+			un(1, i(129753)),	-- Aluneth
+			un(1, i(129754)),	-- Aluneth
+			un(1, i(129755)),	-- Aluneth
+			un(1, i(129967)),	-- Sheilun
+			un(1, i(129968)),	-- Sheilun
+			un(1, i(129969)),	-- Sheilun
+			un(1, i(129970)),	-- Sheilun
+			un(1, i(159579)),	-- 8.0 PH - Weapon - Staff
+			un(1, i(159580)),	-- 8.0 PH - Weapon - Staff
+			un(1, i(159581)),	-- 8.0 PH - Weapon - Staff
+			un(1, i(159582)),	-- 8.0 PH - Weapon - Staff
+			un(1, i(159583)),	-- 8.0 PH - Weapon - Staff
 		}),
 		n(-335, { -- Two Handed Axes
 			un(1, i(134563)),	-- Unknown

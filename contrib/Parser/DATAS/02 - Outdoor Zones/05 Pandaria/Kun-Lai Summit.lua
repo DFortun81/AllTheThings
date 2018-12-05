@@ -3119,6 +3119,17 @@ _.Zones =
 						i(87788),	-- Reins of the Grey Riding Yak Mount
 					}),
 				}),
+				n(0, { 	-- Zone Drops
+					["groups"] = {
+						i(120140, {	-- Tome of Polymorph: Porcupine
+							["collectible"] = false,
+							["crs"] = {
+								64745,	-- Lowland Porcupine
+								65839,	-- Razorquill Porcupine
+							},
+						}),
+					},
+				}),
 				n(-362, {	-- Peak of Serenity
 					["groups"] = {
 						n(-17, { 	-- Quests

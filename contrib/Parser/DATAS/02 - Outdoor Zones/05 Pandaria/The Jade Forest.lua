@@ -3063,6 +3063,13 @@ _.Zones =
 								61562,	-- Slingtail Treeleaper
 							},
 						}),
+						i(120140, {	-- Tome of Polymorph: Porcupine
+							["collectible"] = false,
+							["crs"] = {
+								54896,	-- Glade Porcupine
+								59772,	-- Smoky Porcupine
+							},
+						}),
 						i(87521, {	-- Zoid's Scorched Bracers
 							["crs"] = {
 								66290,	-- Garrosh'ar Gear-Greaser

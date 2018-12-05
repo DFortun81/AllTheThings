@@ -1739,6 +1739,24 @@ _.Zones =
 							un(2, i(127369)),	-- Warmongering Gladiator's Tabard
 							un(2, i(127375)),	-- Wild Gladiator's Greatcloak
 							un(2, i(127366)),	-- Wild Gladiator's Tabard
+							-- Crossbow
+							un(2, i(125650)),	-- Wild Gladiator's  Heavy Crossbow
+							un(2, i(126764)),	-- Warmongering Gladiator's  Heavy Crossbow
+							-- 2 Hand Axes
+							un(2, i(125631)),	-- Wild Gladiator's  Decapi
+							un(2, i(126745)),	-- Warmongering Gladiator's  Decapi
+							-- 2 Hand Swords
+							un(2, i(125633)),	-- Wild Gladiator's  Greatsword
+							un(2, i(126747)),	-- Warmongering Gladiator's  Greatsword
+							-- 1 Hand Axes
+							un(2, i(125634)),	-- Wild Gladiator's Cleaver
+							un(2, i(125766)),	-- Wild Gladiator's Hacker
+							un(2, i(129936)),	-- Wild Gladiator's Runeaxe
+							un(2, i(126748)),	-- Warmongering Gladiator's Cleaver
+							un(2, i(126880)),	-- Warmongering Gladiator's Hacker
+							-- Bows
+							un(2, i(125637)),	-- Wild Gladiator's Longbow
+							un(2, i(126751)),	-- Warmongering Gladiator's Longbow
 						},
 						["u"] = 2, -- Vendor doesn't sell anything in 7.0+
 					}),
@@ -1752,6 +1770,24 @@ _.Zones =
 							un(2, i(127371)),	-- Warmongering Gladiator's Tabard
 							un(2, i(127374)),	-- Wild Gladiator's Greatcloak
 							un(2, i(127365)),	-- Wild Gladiator's Tabard
+							-- Crossbow
+							un(2, i(125650)),	-- Wild Gladiator's  Heavy Crossbow
+							un(2, i(126764)),	-- Warmongering Gladiator's  Heavy Crossbow
+							-- 2 Hand Axes
+							un(2, i(125631)),	-- Wild Gladiator's  Decapi
+							un(2, i(126745)),	-- Warmongering Gladiator's  Decapi
+							-- 2 Hand Swords
+							un(2, i(125633)),	-- Wild Gladiator's  Greatsword
+							un(2, i(126747)),	-- Warmongering Gladiator's  Greatsword
+							-- 1 Hand Axes
+							un(2, i(125634)),	-- Wild Gladiator's Cleaver
+							un(2, i(125766)),	-- Wild Gladiator's Hacker
+							un(2, i(129936)),	-- Wild Gladiator's Runeaxe
+							un(2, i(126748)),	-- Warmongering Gladiator's Cleaver
+							un(2, i(126880)),	-- Warmongering Gladiator's Hacker
+							-- Bows
+							un(2, i(125637)),	-- Wild Gladiator's Longbow
+							un(2, i(126751)),	-- Warmongering Gladiator's Longbow
 						},
 						["u"] = 2, -- Vendor doesn't sell anything in 7.0+
 					}),
