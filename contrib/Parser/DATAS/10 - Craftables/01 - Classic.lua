@@ -719,12 +719,6 @@ _.Craftables =
 					["itemID"] = 12409,	-- Thorium Boots
 				},
 			}),
-			n(-386, {	-- Trinket
-				{	-- Mithril Insignia
-					["itemID"] = 8663, 	-- Mithril Insignia
-					["u"] = 2,
-				},
-			}),
 		}),
 		n(-182, { 	-- Enchanting
 			i(11288),	-- Greater Magic Wand
