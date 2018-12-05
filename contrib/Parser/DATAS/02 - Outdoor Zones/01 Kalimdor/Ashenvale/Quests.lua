@@ -473,13 +473,13 @@ _.Zones =
 						["coord"] = { 37.7, 43.5 },
 						["races"] = HORDE_ONLY,
 					},
-					qdg(qh(26894, {	-- Blackfathom Deeps
+					qh(26894, {	-- Blackfathom Deeps
 						["qg"] = 34122,	-- Commander Grimfang
 						["coord"] = { 12.1, 33.8 },
-					})),
-					qdg(qa(26897, {	-- Blackfathom Deeps
+					}),
+					qa(26897, {	-- Blackfathom Deeps
 						["qg"] = 3845,	-- Shindrell Swiftfire
-					})),
+					}),
 					qa(13965, {	-- Check in on the Edunes
 						["qg"] = 3996,	-- Faldreas Goeth'Shael
 						["sourceQuest"] = 26478,	-- Playing Possum

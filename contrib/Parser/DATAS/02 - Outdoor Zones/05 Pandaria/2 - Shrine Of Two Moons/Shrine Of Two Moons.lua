@@ -15,15 +15,15 @@ _.Zones =
 					qh(31511),	-- A Witness to History
 --]]
 --[[ CHALLENGE MODE DAILIES -- REMOVED?
-					qdg(qh(31528, {	-- A Worthy Challenge: Darkmaster Gandling
+					qh(31528, {	-- A Worthy Challenge: Darkmaster Gandling
 						i(98134),	-- Heroic Cache of Treasures
-					})),
-					qdg(qh(31526, {	-- A Worthy Challenge: Durand
+					}),
+					qh(31526, {	-- A Worthy Challenge: Durand
 						i(98134),	-- Heroic Cache of Treasures
-					})),
-					qdg(qh(31527, {	-- A Worthy Challenge: Flameweaver Koegler
+					}),
+					qh(31527, {	-- A Worthy Challenge: Flameweaver Koegler
 						i(98134),	-- Heroic Cache of Treasures
-					})),
+					}),
 --]]
 --[[
 					qh( 32242),	-- Buried Secrets

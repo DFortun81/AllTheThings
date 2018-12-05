@@ -325,10 +325,10 @@ _.Zones =
 								["races"] = { 3 },	-- Dwarf
 								["classes"] = { 5 },	-- Priest
 							})),
-							un(40, qdg(qa(4126, {	-- Hurley Blackbreath
+							un(40, qa(4126, {	-- Hurley Blackbreath
 								un(2, i(12000)),	-- Limb Cleaver
 								un(2, i(11964)),	-- Swiftstrike Cudgel
-							}))),
+							})),
 							un(40, qa(466, {	-- Search for Incendicite
 								un(2, i(3565)),	-- Beerstained Gloves
 							})),

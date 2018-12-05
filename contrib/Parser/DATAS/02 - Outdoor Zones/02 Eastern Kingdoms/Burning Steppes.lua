@@ -488,9 +488,9 @@ _.Zones =
 						-- sz(775, 1, { -- Dreadmaul Rock
 						-- }),
 						sz(775, 2, { -- Morgan's Vigil
-							qdg(qa(27471, {	-- Blackrock Anomaly
+							qa(27471, {	-- Blackrock Anomaly
 								["qg"] = 9562,	-- Hellendis Riverhorn
-							})),
+							}),
 							qa(28569, {	-- The Bogpaddle Bullet (mutually exclusive with "Hero's Call: Swamp of Sorrows!")
 								["qg"] = 9177,	-- Oralius
 								["isBreadcrumb"] = true,
@@ -558,23 +558,23 @@ _.Zones =
 						-- sz(775, 9, { -- Altar of Storms
 						-- }),
 						sz(775, 10, { -- Blackrock Mountain
-							qdg(q(7848, {	-- Attunement to the Core
+							q(7848, {	-- Attunement to the Core
 								["qg"] = 14387,	-- Lothos Riftwalker
 								["description"] = "This quest is no longer required to enter Molten Core - you can now speak to Lothos and have him transport you inside without doing the attunement.",
-							})),
+							}),
 						}),
 	--[[				o(207304, {	-- Adventure Board (according to a wowhead comment, these are only available between 47 and 56, can't confirm)
-							qdg(qa(28068)),	-- Adventurers Wanted: Blackrock Depths
+							qa(28068),	-- Adventurers Wanted: Blackrock Depths
 						}),
 						o(207303, {	-- Adventure Board
-							qdg(qh(28069)),	-- Adventurers Wanted: Blackrock Depths
+							qh(28069),	-- Adventurers Wanted: Blackrock Depths
 						}), --]]					
-	--[[				qdg(qg(9563, qa(27469))),	-- Friends on The Other Side (Alliance NPC doesn't seem to offer the quest - marked Horde NPC as "q" instead of "qh")
+	--[[				qg(9563, qa(27469)),	-- Friends on The Other Side (Alliance NPC doesn't seem to offer the quest - marked Horde NPC as "q" instead of "qh")
 							["qg"] = 9563,	-- Ragged John
 						})),	--]]
-						qdg(q(27469, {	-- Friends on The Other Side
+						q(27469, {	-- Friends on The Other Side
 							["qg"] = 56899,	-- Ragged Jong
-						})),
+						}),
 					}),
 				}),
 				n(-16, { 	-- Rares	
@@ -1089,43 +1089,43 @@ _.Zones =
 				}),
 				n(-40, {	-- Legacy
 					n(-17, {	-- Quests (Legacy)
-						un(40, qdg(q(4024, {	-- A Taste of Flame
+						un(40, q(4024, {	-- A Taste of Flame
 							un(2, i(12066)),	-- Shaleskin Cape
 							un(2, i(12083)),	-- Valconian Sash
 							un(2, i(12082)),	-- Wyrmhide Spaulders
-						}))),
-						un(40, qdg(qa(4263, {	-- Incendius!
+						})),
+						un(40, qa(4263, {	-- Incendius!
 							un(2, i(12112)),	-- Crypt Demon Bracers
 							un(2, i(12114)),	-- Nightfall Gloves
 							un(2, i(12115)),	-- Stalwart Clutch
 							un(2, i(12113)),	-- Sunborne Cape
-						}))),
+						})),
 						un(40, qh(3822, {		-- Krom'Grul
 							un(2, i(11869)),	-- Sha'ni's Ring
 						})),
-						un(40, qdg(qa(5081, {	-- Maxwell's Mission
+						un(40, qa(5081, {	-- Maxwell's Mission
 							un(2, i(13961)),	-- Halcyon's Muzzle
 							un(2, i(13959)),	-- Omokk's Girth Restrainer
 							un(2, i(13963)),	-- Voone's Vice Grips
 							un(2, i(13962)),	-- Vosh'gajin's Strand
 							un(2, i(13958)),	-- Wyrmthalak's Shackles
-						}))),
+						})),
 						un(40, qa(3825, {		-- Ogre Head On A Stick = Party
 							un(2, i(11868)),	-- Choking Band
 							un(2, i(11867)),	-- Maddening Gauntlets
 						})),
-						un(40, qdg(qa(4701, {	-- Put Her Down
+						un(40, qa(4701, {	-- Put Her Down
 							un(2, i(15824)),	-- Astoria Robes
 							un(2, i(15827)),	-- Jadescale Breastplate
 							un(2, i(15825)),	-- Traphook Jerkin
-						}))),
-						un(40, qdg(qh(4903, {	-- Warlord's Command
+						})),
+						un(40, qh(4903, {	-- Warlord's Command
 							un(2, i(13961)),	-- Halcyon's Muzzle
 							un(2, i(13959)),	-- Omokk's Girth Restrainer
 							un(2, i(13963)),	-- Voone's Vice Grips
 							un(2, i(13962)),	-- Vosh'gajin's Strand
 							un(2, i(13958)),	-- Wyrmthalak's Shackles
-						}))),
+						})),
 					}),
 					n(-16, {	-- Rares (Legacy)
 						n(9046, {	-- Scarshield Quartermaster <Scarshield Legion>

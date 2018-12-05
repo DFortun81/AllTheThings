@@ -152,10 +152,10 @@ _.Zones =
 --[[					
 					q(10920),	-- For the Fallen
 --]]
-					qdg(q(10665, {	-- Fresh from the Mechanar
+					q(10665, {	-- Fresh from the Mechanar
 						["qg"] = 21465,	-- David Wayne
 						["sourceQuests"] = { 10664 },	-- Additional Materials
-					})),
+					}),
 --[[
 					q(10929),	-- Fumping
 					qh( 29582),	-- Grek's Crazy Night
@@ -280,10 +280,10 @@ _.Zones =
 					qh( 10862),	-- Surrender to the Horde
 					q(10873),	-- Taken in the Night
 --]]
-					qdg(q(10670, {	-- Tear of the Earthmother
+					q(10670, {	-- Tear of the Earthmother
 						["qg"] = 21465,	-- David Wayne
 						["sourceQuests"] = { 10665, 10666 },	-- Fresh From the Mechanar & The Lexicon Demonica
-					})),
+					}),
 					q(11073,  {  -- Terokk's Downfall
 						i(32831),	-- Jeweled Rod
 						i(32830),	-- Severin's Cane
@@ -337,10 +337,10 @@ _.Zones =
 					qh(  9888),	-- The Impotent Leader
 					q(10896),	-- The Infested Protectors
 --]]
-					qdg(q(10666, {	-- The Lexicon Demonica
+					q(10666, {	-- The Lexicon Demonica
 						["qg"] = 21465,	-- David Wayne
 						["sourceQuests"] = { 10664 },	-- Additional Materials
-					})),
+					}),
 					q(11667, { -- The One That Got Away
 						i(34863,  {  -- Bag of Fishing Treasures
 							i(33820),  -- Weather-Beaten Fishing Hat
@@ -375,10 +375,10 @@ _.Zones =
 						i(25937),	-- Terokkar Tablet of Precision
 						i(25936),	-- Terokkar Tablet of Vim
 					}),
-					qdg(q(10667, {	-- Underworld Loam
+					q(10667, {	-- Underworld Loam
 						["qg"] = 21465,	-- David Wayne
 						["sourceQuests"] = { 10665, 10666 },	-- Fresh From the Mechanar & The Lexicon Demonica
-					})),
+					}),
 --					qa(  9998),	-- Unruly Neighbors
 					q(10861,  {  -- Veil Lithic: Preemptive Strike
 						i(25958),	-- Eagle Engraved Bracers
@@ -650,18 +650,18 @@ _.Zones =
 								un(1, i(25969)),	-- Rapscallion's Touch
 								un(1, i(25970)),	-- Shalassi Oracle's Sandals
 							})),
-							un(40, qdg(q(10218, {	-- Someone Else's Hard Work Pays Off
+							un(40, q(10218, {	-- Someone Else's Hard Work Pays Off
 								un(2, i(29328)),	-- Consortium Prince's Wrap
 								un(2, i(29327)),	-- Cryo-mitts
 								un(2, i(29326)),	-- Consortium Mantle of Phasing
 								un(2, i(29325)),	-- Flesh Beast's Metal Greaves
-							}))),
-							un(40, qdg(q(10165, {	-- Undercutting the Competition
+							})),
+							un(40, q(10165, {	-- Undercutting the Competition
 								un(2, i(29342)),	-- Consortium Plated Legguards
 								un(2, i(29343)),	-- Haramad's Leggings of the Third Coin
 								un(2, i(29345)),	-- Haramad's Leg Wraps
 								un(2, i(29344)),	-- Haramad's Linked Chain Pantaloons
-							}))),
+							})),
 						}),
 					},
 				}),

@@ -905,10 +905,10 @@ _.Zones =
 					}),
 				-- q(10850),	-- Nether Gas In a Fel Fire Engine (doesn't ever register as completed and irrelevant, it's only part of "Fel Reavers, No Thanks!")
 					-- DUNGEON QUESTS
-					qdg(q( 10257, {	-- Capturing the Keystone (awarded "The Violet Tower" criteria)
+					q( 10257, {	-- Capturing the Keystone (awarded "The Violet Tower" criteria)
 						["qg"] = 19481,	-- Archmage Vargoth
 						["sourceQuests"] = { 10256 },	-- Finding the Keymaster
-					})),
+					}),
 				}),	
 				n(-16,  {	-- Rares	
 					n(18697, { 	-- Chief Engineer Lorthander

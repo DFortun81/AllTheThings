@@ -32,16 +32,16 @@ _.Zones =
 								un(2, i(15585)),	-- Pardoc Grips
 								un(2, i(15587)),	-- Ringtail Girdle
 							})),
-							un(40, qdg(qa(7065, {	-- Corruption of Earth and Seed
+							un(40, qa(7065, {	-- Corruption of Earth and Seed
 								un(2, i(17705)),	-- Thrash Blade
 								un(2, i(17743)),	-- Resurgence Rod
 								un(2, i(17753)),	-- Verdant Keeper's Aim
-							}))),
-							un(40, qdg(qh(7064, {	-- Corruption of Earth and Seed
+							})),
+							un(40, qh(7064, {	-- Corruption of Earth and Seed
 								un(2, i(17705)),	-- Thrash Blade
 								un(2, i(17743)),	-- Resurgence Rod
 								un(2, i(17753)),	-- Verdant Keeper's Aim
-							}))),
+							})),
 							un(40, qh(1368)), -- Gelkis Alliance
 							un(40, q( 5943, {	-- Gizelton Caravan (REMOVED per wowhead comment)
 								un(2, i(15692)),	-- Kodo Brander
@@ -91,12 +91,12 @@ _.Zones =
 								un(2, i(6791)),	-- Hellion Boots
 								un(2, i(6792)),	-- Sanguine Pauldrons
 							})),
-							un(40, qdg(q(7028, {	-- Twisted Evils
+							un(40, q(7028, {	-- Twisted Evils
 								un(2, i(17775)),	-- Acumen Robes
 								un(2, i(17779)),	-- Hulkstone Pauldrons
 								un(2, i(17777)),	-- Relentless Chain
 								un(2, i(17776)),	-- Sprightring Helm
-							}))),
+							})),
 --[[  NO REWARDS			qg(12340, qh( 6143)),	-- Other Fish to Fry (REMOVED with Cata per wowhead comment)
 							qh( 1432),	-- Alliance Relations (REMOVED per wowhead comment)
 							qh( 1434),	-- Befouled by Satyr (REMOVED per wowhead comment)

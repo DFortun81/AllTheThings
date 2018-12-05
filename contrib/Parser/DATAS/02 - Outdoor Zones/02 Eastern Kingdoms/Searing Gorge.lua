@@ -202,9 +202,9 @@ _.Zones =
 							}),
 						}),
 						sz(774, 2, { -- The Cauldron
-							qdg(q(27470, {	-- A Potential Ally
+							q(27470, {	-- A Potential Ally
 								["qg"] = 14625,	-- Overseer Oilfist
-							})),
+							}),
 						}),
 						-- sz(774, 3, { -- Blackchar Cave
 						-- }),

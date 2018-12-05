@@ -339,13 +339,13 @@ _.Zones =
 						["qg"] = 19684,	-- Haggard War Veteran
 						["coord"] = { 59.6, 41.4 },
 					}),
-					qdg(qh(10167, {	-- Auchindoun...
+					qh(10167, {	-- Auchindoun...
 						["qg"] = 18481,	-- A'dal
 						["sourceQuests"] = { 10102 },	-- A Secret Revealed (*UNTESTED*)
-					})),
-					un(40, qdg(q( 10180, {	-- Can't Stay Away
+					}),
+					un(40, q( 10180, {	-- Can't Stay Away
 						["qg"] = 19045,	-- Oloraak
-					}))), -- Quest seems removed. Gold 28.10.2018
+					})), -- Quest seems removed. Gold 28.10.2018
 					qh(11046, {	-- Chief Apothecary Hildagard
 						["qg"] = 19678,	-- Fantei
 						["isBreadcrumb"] = true,	-- for "A Haunted History" in Shadowmoon Valley
@@ -387,7 +387,7 @@ _.Zones =
 						["coord"] = { 54.2, 44.4 },
 						["sourceQuests"] = { 10948 },	-- The Hostage Soul *UNTESTED*
 					}),
-					qdg(q(10704, {	-- How to Break Into the Arcatraz
+					q(10704, {	-- How to Break Into the Arcatraz
 						["groups"] = {
 							i(31465),	-- Sha'tari Achorite's Cloak
 							i(31461),	-- A'dal's Gift
@@ -397,7 +397,7 @@ _.Zones =
 						},
 						["qg"] = 18481,	-- A'dal
 						["sourceQuests"] = { 10280 },	-- Special Delivery to Shattrath City
-					})),
+					}),
 					q(  9990, {	-- Investigate Tuurem
 						["qg"] = 18484,	-- Wind Trader Lathrai
 						["sourceQuests"] = { 10112 },	-- A Personal Favor *UNTESTED*
@@ -517,83 +517,83 @@ _.Zones =
 						["sourceQuests"] = { 10884, 10885, 10886 },	-- Trial of the Naaru: Mercy, Strength, & Tenacity
 					})),
 --					q(10888),	-- Trial of the Naaru: Magtheridon (REMOVED / REPLACED WITH PREVIOUS QUEST)
-					qdg(q(10884, {	-- Trial of the Naaru: Mercy
+					q(10884, {	-- Trial of the Naaru: Mercy
 						["qg"] = 18481,	-- A'dal
 						["sourceQuests"] = { 10883 },	-- The Tempest Key
-					})),
-					qdg(q(10885, {	-- Trial of the Naaru: Strength
+					}),
+					q(10885, {	-- Trial of the Naaru: Strength
 						["qg"] = 18481,	-- A'dal
 						["sourceQuests"] = { 10883 },	-- The Tempest Key
-					})),
-					qdg(q(10886, {	-- Trial of the Naaru: Tenacity
+					}),
+					q(10886, {	-- Trial of the Naaru: Tenacity
 						["qg"] = 18481,	-- A'dal
 						["sourceQuests"] = { 10883 },	-- The Tempest Key
-					})),
-					qdg(q(29642, {	-- Trouble at Auchindoun
+					}),
+					q(29642, {	-- Trouble at Auchindoun
 						["qg"] = 18893,	-- Spymistress Mehlisah Highcrown
 						["isBreadcrumb"] = true,
 						-- ["sourceQuests"] = {  },	-- UNKNOWN IF HAS SOURCE
-					})),
-					qdg(q(11369, {	-- Wanted: A Black Stalker Egg
+					}),
+					q(11369, {	-- Wanted: A Black Stalker Egg
 						["qg"] = 24369,	-- Wind Trader Zhareem
 						["isDaily"] = true,
-					})),
-					qdg(q(11389, {	-- Wanted: Arcatraz Sentinels
+					}),
+					q(11389, {	-- Wanted: Arcatraz Sentinels
 						["groups"] = {
 							i(29460),	-- Ethereum Prison Key
 						},
 						["qg"] = 24370,	-- Nether-Stalker Mah'duun
 						["isDaily"] = true,
-					})),
-					qdg(q(11371, {	-- Wanted: Coilfang Myrmidons
+					}),
+					q(11371, {	-- Wanted: Coilfang Myrmidons
 						["groups"] = {
 							i(29460),	-- Ethereum Prison Key
 						},
 						["qg"] = 24370,	-- Nether-Stalker Mah'duun
 						["isDaily"] = true,
-					})),
-					qdg(q(11376, {	-- Wanted: Malicious Instructors
+					}),
+					q(11376, {	-- Wanted: Malicious Instructors
 						["groups"] = {
 							i(29460),	-- Ethereum Prison Key
 						},
 						["qg"] = 24370,	-- Nether-Stalker Mah'duun
 						["isDaily"] = true,
-					})),
-					qdg(q(11383, {	-- Wanted: Rift Lords
+					}),
+					q(11383, {	-- Wanted: Rift Lords
 						["groups"] = {
 							i(29460),	-- Ethereum Prison Key
 						},
 						["qg"] = 24370,	-- Nether-Stalker Mah'duun
 						["isDaily"] = true,
-					})),
-					qdg(q(11364, {	-- Wanted: Shattered Hand Centurions
+					}),
+					q(11364, {	-- Wanted: Shattered Hand Centurions
 						["groups"] = {
 							i(29460),	-- Ethereum Prison Key
 						},
 						["qg"] = 24370,	-- Nether-Stalker Mah'duun
 						["isDaily"] = true,
-					})),
-					qdg(q(11500, {	-- Wanted: Sisters of Torment
+					}),
+					q(11500, {	-- Wanted: Sisters of Torment
 						["groups"] = {
 							i(29460),	-- Ethereum Prison Key
 						},
 						["qg"] = 24370,	-- Nether-Stalker Mah'duun
 						["isDaily"] = true,
-					})),
-					qdg(q(11385, {	-- Wanted: Sunseeker Channelers
+					}),
+					q(11385, {	-- Wanted: Sunseeker Channelers
 						["groups"] = {
 							i(29460),	-- Ethereum Prison Key
 						},
 						["qg"] = 24370,	-- Nether-Stalker Mah'duun
 						["isDaily"] = true,
-					})),
-					qdg(q(11387, {	-- Wanted: Tempest-Forge Destroyers
+					}),
+					q(11387, {	-- Wanted: Tempest-Forge Destroyers
 						["groups"] = {
 							i(29460),	-- Ethereum Prison Key
 						},
 						["qg"] = 24370,	-- Nether-Stalker Mah'duun
 						["isDaily"] = true,
-					})),
+					}),
 					q( 10231, {	-- What Book? I Don't See Any Book.
 						["qg"] = 19715,	-- Ezekiel
 						["sourceQuests"] = { 10228 },	-- Ezekiel *UNTESTED*

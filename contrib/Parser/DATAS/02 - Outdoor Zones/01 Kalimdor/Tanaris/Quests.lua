@@ -265,19 +265,19 @@ _.Zones =
 						["sourceQuests"] = { 24910 },	-- Rocket Rescue
 						["isBreadcrumb"] = true,
 					}),
-					qdg(q(12513, {	-- Nice Hat...
+					q(12513, {	-- Nice Hat...
 						["qg"] = 28126,	-- Don Carlos
-					})),
+					}),
 	--					q(38890),	-- Not Dead Yet! (not in game?)
 					o(246438, {	-- Blingtron Circuit Design
 						q(40881, {	-- Oil Rags to Riches
 							["requireSkill"] = 202,	-- Engineering
 						}),
 					}),
-					qdg(q(10282, {	-- Old Hillsbrad
+					q(10282, {	-- Old Hillsbrad
 						["qg"] = 20130,	-- Andormu
 						["sourceQuests"] = { 10277 },	-- The Caverns of Time
-					})),
+					}),
 					qa(28881, {	-- Prospector Gunstan
 						["qg"] = 39059,	-- Kelsey steelspark
 						["sourceQuests"] = { 25065 },	-- You Too, Brute?
@@ -371,9 +371,9 @@ _.Zones =
 					qa(25063, {	-- Terrapination
 						["qg"] = 39059,	-- Kelsey Steelspark
 					}),
-					qdg(q(10296, {	-- The Black Morass
+					q(10296, {	-- The Black Morass
 						["qg"] = 20130,	-- Andormu
-					})),
+					}),
 					q(10277, {	-- The Caverns of Time
 						["qg"] = 20130,	-- Andormu
 						["sourceQuests"] = { 10279 },	-- To The Master's Lair

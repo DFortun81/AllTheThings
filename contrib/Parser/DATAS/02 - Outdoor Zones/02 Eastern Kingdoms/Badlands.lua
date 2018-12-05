@@ -840,35 +840,35 @@ _.Zones =
 						un(40, qa(719, {	-- A Dwarf and His Tools
 							un(2, i(4978)),	-- Ryedol's Hammer
 						})),
-						un(40, qdg(h({		-- Badlands Reagent Run II
+						un(40, h({		-- Badlands Reagent Run II
 							["questID"] = 2258,	-- Badlands Reagent Run II
 							["qg"] = 6868,	-- Quest Giver: Jarkal Mossmeld
 							["sourceQuests"] = 2202,	-- Source Quest: Uldaman Reagent Run
 							["groups"] = {
 								un(2, recipe(11452)),	-- Restorative Potion
 							},
-						}))),
-						un(40, qdg(qh(4983, {	-- Bijou's Reconnaissance Report (may only have been both factions)
+						})),
+						un(40, qh(4983, {	-- Bijou's Reconnaissance Report (may only have been both factions)
 							un(2, i(15858)),	-- Freewind Gloves
 							un(2, i(15859)),	-- Seapost Girdle
-						}))),
+						})),
 						un(40, qh(793, {	-- Broken Alliances
 							un(2, i(11193)),	-- Blazewind Breastplate
 							un(2, i(11196)),	-- Mindburst Medallion
 							un(2, i(11194)),	-- Prismscale Hauberk
 							un(2, i(11195)),	-- Warforged Chestplate
 						})),
-						un(40, qdg({		-- Liquid Stone
+						un(40, {		-- Liquid Stone
 							["questID"] = 715,	-- Liquid Stone
 							["qg"] = 2920,	-- Quest Giver: Lucien Tosselwrench
 							["groups"] = {
 								un(7, i(4624)),	-- Recipe: Lesser Stoneshield Potion [REMOVED FROM GAME]
 							},
-						})),
-						un(40, qdg(qh(4134, {	-- Lost Thunderbrew Recipe
+						}),
+						un(40, qh(4134, {	-- Lost Thunderbrew Recipe
 							un(2, i(12000)),	-- Limb Cleaver
 							un(2, i(11964)),	-- Swiftstrike Cudgel
-						}))),
+						})),
 						un(40, qa(739, {	-- Murdaloc
 							un(2, i(4983)),	-- Rock Pulverizer
 						})),
@@ -876,9 +876,9 @@ _.Zones =
 							un(2, i(6729)),	-- Fizzle's Zippy Lighter
 							un(2, i(6732)),	-- Gnomish Mechanic's Gloves
 						})),
-						un(40, qdg(qh(2341, {	-- Necklace Recovery, Take 3
+						un(40, qh(2341, {	-- Necklace Recovery, Take 3
 							un(2, i(7888)),		-- Jarkal's Enhancing Necklace
-						}))),
+						})),
 						un(40, q( 705, {	-- Pearl Diving
 							un(2, i(4086)),	-- Flash Rifle
 							un(2, i(5248)),	-- Flash Wand
@@ -888,9 +888,9 @@ _.Zones =
 							un(2, i( 9522)),	-- Energized Stone Circle
 							un(2, i(10359)),	-- Everlast Boots
 						})),
-						un(40, qdg(qa(2361, {	-- Restoring the Necklace
+						un(40, qa(2361, {	-- Restoring the Necklace
 							un(2, i(7673)),		-- Talvash's Enhancing Necklace
-						}))),
+						})),
 						un(40, qa(733, {	-- Scrounging
 							un(2, i(4653)),	-- Ironheel Boots
 							un(2, i(4652)),	-- Salbac Shield
@@ -901,20 +901,20 @@ _.Zones =
 						un(40, q( 716, {	-- Stone Is Better than Cloth
 							un(2, i(4979)),	-- Enchanted Stonecloth Bracers
 						})),
-						un(40, qdg(qa(1139, {	-- The Lost Tablets of Will
+						un(40, qa(1139, {	-- The Lost Tablets of Will
 							un(2, i(6723)),		-- Medal of Courage
-						}))),
-						un(40, qdg(qh(4724, {	-- The Pack Mistress
+						})),
+						un(40, qh(4724, {	-- The Pack Mistress
 							un(2, i(15824)),	-- Astoria Robes
 							un(2, i(15827)),	-- Jadescale Breastplate
 							un(2, i(15825)),	-- Traphook Jerkin
-						}))),
-						un(40, qdg(qh(4063, {	-- The Rise of the Machines
+						})),
+						un(40, qh(4063, {	-- The Rise of the Machines
 							un(2, i(12109)),	-- Azure Moon Amice
 							un(2, i(12108)),	-- Basaltscale Armor
 							un(2, i(12111)),	-- Lavaplate Gauntlets
 							un(2, i(12110)),	-- Raincaster Drape
-						}))),
+						})),
 						un(40, q(778, {	-- This Is Going to Be Hard
 							un(2, i(2820)),	-- Nifty Stopwatch
 						})),
@@ -924,11 +924,12 @@ _.Zones =
 							un(2, i(11194)),	-- Prismscale Hauberk
 							un(2, i(11195)),	-- Warforged Chestplate
 						})),
-						un(40, qdg({		-- Uldaman Reagent Run
+						{		-- Uldaman Reagent Run
 							["questID"] = 2202,	-- Uldaman Reagent Run
 							["qg"] = 6868,	-- Quest Giver: Jarkal Mossmeld
 							["sourceQuests"] = 2258,	-- Source Quest: Badlands Reagent Run
-						})),
+							["u"] = 40,
+						},
 					}),
 					n(-16, {	-- Rares (Legacy)
 						un(43, n(7057, {	-- Digmaster Shovelphlange

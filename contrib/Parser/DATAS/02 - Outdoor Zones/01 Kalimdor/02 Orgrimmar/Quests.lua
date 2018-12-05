@@ -71,37 +71,37 @@ _.Zones =
 						["qg"] = 132254, -- Nathanos Blightcaller
 						["sourceQuests"] = { 50341 } , -- A Recent Discovery
 					}),
-					qdg(q(27400, {	-- Mastering the Arcane
+					q(27400, {	-- Mastering the Arcane
 						["groups"] = {
 							i(65468),	-- Staff of the Arcane Path
 						},
 						["qg"] = 47246,	-- Ureda
 						["coord"] = { 51.2, 72.4 },
 						["classes"] = { 8 },	-- Mage
-					})),
-					qdg(q(28458, {	-- The Pyromancer's Grimoire
+					}),
+					q(28458, {	-- The Pyromancer's Grimoire
 						["groups"] = {
 							i(65620),	-- Hood of the Arcane Path
 						},
 						["qg"] = 47246,	-- Ureda
 						["classes"] = { 8 },	-- Mage
-					})),
-					qdg(q(28457, {	-- A Dangerous Alliance
+					}),
+					q(28457, {	-- A Dangerous Alliance
 						["groups"] = {
 							i(65625),	-- Faceguard of the Horde
 							i(65642),	-- Headguard of the Horde
 						},
 						["qg"] = 3353,	-- Grezz Ragefist
 						["classes"] = { 1 },	-- Warrior
-					})),
-					qdg(q(27365, {	-- A Fitting Weapon
+					}),
+					q(27365, {	-- A Fitting Weapon
 						["groups"] = {
 							i(65494),	-- Broadaxe of the Horde
 							i(65495),	-- Greataxe of the Horde
 						},
 						["qg"] = 3353,	-- Grezz Ragefist
 						["classes"] = { 1 },	-- Warrior
-					})),
+					}),
 					q(26588, {	-- A Furious Catch
 						["qg"] = 43239,	-- Razgar
 						["coord"] = { 65.7, 41.1 },
@@ -120,37 +120,37 @@ _.Zones =
 						["classes"] = {11},	-- Druid Only
 						["isBreadcrumb"] = true,
 					},
-					qdg(q( 27395, {	-- A Marksman's Weapon
+					q( 27395, {	-- A Marksman's Weapon
 						["groups"] = {
 							i(65466),	-- Bow of the Great Hunter
 						},
 						["qg"] = 3352,	-- Ormak Grimshot
 						["classes"] = { 3 },	-- Hunter
-					})),
+					}),
 --					qp755(qg(50482, q( 25160))),	-- A Present for Lila
-					qdg(q(27435, {	-- A Seer's Staff
+					q(27435, {	-- A Seer's Staff
 						["groups"] = {
 							i(65484),	-- Staff of the Earthmother
 						},
 						["qg"] = 44735,	-- Seer Liwatha
 						["races"] = { 6, 9 },	-- Tauren, Goblin
 						["classes"] = { 5 },	-- Priest
-					})), 
-					qdg(q(27441, {	-- A Seer's Staff
+					}), 
+					q(27441, {	-- A Seer's Staff
 						["groups"] = {
 							i(65481),	-- Staff of Golden Worship
 						},
 						["qg"] = 45347,	-- Brother Silverhallow
 						["races"] = { 9 },	-- Goblin
 						["classes"] = { 5 },	-- Priest
-					})),
+					}),
 --					qp129(qg(43239, q( 26557))),	-- A Staggering Effort
 					q(32309, {	-- A Tale of Six Masters
 						["qg"] = 88705,	-- Kranosh
 						["classes"] = { 9 },	-- Warlock
 					}),
 --					q( 43461),	-- A Time to Reflect (LEGACY? 2016 anniversary event)
-					qdg(q(27403, {	-- A True Sunwalker
+					q(27403, {	-- A True Sunwalker
 						["groups"] = {
 							i(65472),	-- Mace of the Sunwalker
 							i(65473),	-- Battlehammer of the Sunwalker
@@ -159,7 +159,7 @@ _.Zones =
 						["qg"] = 44725,	-- Sunwalker Atohmo
 						["races"] = { 6 },	-- Tauren
 						["classes"] = { 2 },	-- Paladin
-					})),
+					}),
 					q(25264, {	-- Ak'Zeloth
 						["qg"] = 3216,	-- Arnak Fireblade
 						["coord"] = { 58.5, 53.6 },
@@ -230,14 +230,14 @@ Legacy				q( 1436),	-- Alliance Relations
 						["sourceQuest"] = 2754, -- Horns of Frenzy
 						["requireSkill"] = 164, -- Blacksmithing
 					}),
-					qdg(q(27396, {	-- Blade of the Shattered Hand
+					q(27396, {	-- Blade of the Shattered Hand
 						["groups"] = {
 							i(65487),	-- Blade of the Shattered Hand
 						},
 						["qg"] = 47233,	-- Gordul
 						["coord"] = { 32.9, 65.8 },
 						["classes"] = { 4 },	-- Rogue
-					})),
+					}),
 					q(29401, {  	-- Blown Away
 						["groups"] = {
 							i(72045), -- Horde Balloon
@@ -289,10 +289,10 @@ Legacy				q( 1436),	-- Alliance Relations
 					qp755(qg(50482, q(25162))),	-- Elemental Goo
 					qp171(qg(3347, q(29481))),	-- Elixir Master
 --]]
-					qdg(q(31034, {	-- Enemies Below
+					q(31034, {	-- Enemies Below
 						["qg"] = 14720,	-- Eitrigg
 						["coord"] = { 49.2, 72.3 },
-					})),
+					}),
 					q(26235, {	-- Even Thieves Get Hungry
 						["qg"] = 42506,	-- Marogg
 						["coord"] = { 56.5, 62.5 },
@@ -350,13 +350,13 @@ Legacy				q( 1436),	-- Alliance Relations
 						["qg"] = 14720,	-- High Overlord Saurfang
 						["sourceQuests"] = { 28717 },	-- Warchief's Command: Twilight Highlands!
 					}),
-					qdg(q(27400, {	-- Mastering the Arcane
+					q(27400, {	-- Mastering the Arcane
 						["groups"] = {
 							i(65468),	-- Staff of the Arcane Path
 						},
 						["qg"] = 47246,	-- Ureda
 						["classes"] = { 8 },	-- Mage
-					})),
+					}),
 --[[
 					qg(47571, q(28296)),	-- Meetup with the Caravan
 					qg(54141, q(29415)),	-- Missing Heirlooms
@@ -373,9 +373,9 @@ Legacy				q( 1436),	-- Alliance Relations
 					qp755(qg(50482, q(25158))),	-- Nibbler! No!
 					qp129(qg(43239, q(26556))),	-- No Dumping Allowed
 --]]
-					qdg(qg(3412, q(2950, {	-- Nogg's Ring Redo
+					qg(3412, q(2950, {	-- Nogg's Ring Redo
 						["sourceQuests"] = { 2949 },	-- Return of the Ring
-					}))),
+					})),
 --[[
 					qg(43062, q(26417)),	-- Northern Stranglethorn: The Fallen Empire
 					qp755(qg(50482, q(25161))),	-- Ogrezonians in the Mood
@@ -403,22 +403,22 @@ Legacy				q( 1436),	-- Alliance Relations
 --[[
 					qg(88705, q(32317)),	-- Seeking the Soulstones
 --]]
-					qdg(q(28465, {	-- Slaves of the Firelord
+					q(28465, {	-- Slaves of the Firelord
 						["groups"] = {
 							i(65643),	-- Mask of the Speaker
 							i(65630),	-- Headcover of the Speaker
 						},
 						["qg"] = 72939,	-- Terga Earthbreaker (add'l QG 3344)
 						["classes"] = { 7 },	-- Shaman
-					})),
-					qdg(q( 27439, {	-- Staff of the Light
+					}),
+					q( 27439, {	-- Staff of the Light
 						["groups"] = {
 							i(65478),	-- Staff of the Sunchaser
 						},
 						["qg"] = 45337,	-- Tyelis
 						["races"] = { 10 },	-- Blood Elf
 						["classes"] = { 5 },	-- Priest
-					})),	
+					}),	
 					qg(42506, q(26234, {	-- Stealing From Our Own
 						["qg"] = 42506,	-- Marogg
 						["coord"] = { 56.5, 62.5 },
@@ -444,27 +444,27 @@ Legacy				q( 1436),	-- Alliance Relations
 						},
 						["requireSkill"] = 185,	-- Cooking
 					})),
-					qdg(q(28459, {	-- Stones of Binding
+					q(28459, {	-- Stones of Binding
 						["groups"] = {
 							i(65627),	-- Horns of the Left Hand Path
 						},
 						["qg"] = 88705,	-- Kranosh
 						["classes"] = { 9 },	-- Warlock
-					})),
+					}),
 					q(50303, {	-- Stranger in a Strange Land
 						["qg"] = 133407,	-- Ambassador Blackguard
 						["coord"] = { 39.4, 79.5 },
 						["races"] = { 27 },	-- Nightborne
 					}),
-					qdg(q(27397, {	-- Terga's Task
+					q(27397, {	-- Terga's Task
 						["groups"] = {
 							i(65490),	-- Battleaxe of the Speaker
 							i(65491),	-- Spell Axe of the Speaker
 						},
 						["qg"] = 3344,	-- Kardris Dreamseeker
 						["classes"] = { 7 },	-- Shaman
-					})),
-					qdg(q( 27434, {	-- The Adept's Path
+					}),
+					q( 27434, {	-- The Adept's Path
 						["groups"] = {
 							i(65469),	-- Morningstar of the Order
 							i(65470),	-- Battlemace of the Order
@@ -473,33 +473,33 @@ Legacy				q( 1436),	-- Alliance Relations
 						["qg"] = 23128,	-- Master Pyreanor
 						["races"] = { 10 },	-- Blood Elf
 						["classes"] = { 2 },
-					})),
+					}),
 					qg(45244, q(29440)),	-- The Call of the World-Shaman
-					qdg(q(27437, {	-- The Dark Cleric's Bidding
+					q(27437, {	-- The Dark Cleric's Bidding
 						["groups"] = {
 							i(65479),	-- Staff of the Forsaken Faith
 						},
 						["qg"] = 45339,	-- Dark Cleric Cecille
 						["races"] = { 5 },	-- Undead
 						["classes"] = { 5 },	-- Priest
-					})),
-					qdg(q(28463, {	-- The Dark Iron Army
+					}),
+					q(28463, {	-- The Dark Iron Army
 						["groups"] = {
 							i(65629),	-- Facemask of the Shattered Hand
 						},
 						["qg"] = 47233,	-- Gordul
 						["classes"] = { 4 },	-- Rogue
-					})), 
+					}), 
 					qg(55382, q( 7926)),	-- The Darkmoon Faire (HOLIDAY/WORLD EVENT - DARKMOON FAIRE; add'l QG 55382)
-					qdg(qg(52382, q(30094))),	-- The End Time
+					qg(52382, q(30094)),	-- The End Time
 					qg(45244, q(28805)),	-- The Eye of the Storm
-					qdg(q(28461, {	-- The Golem Lord's Creations
+					q(28461, {	-- The Golem Lord's Creations
 						["groups"] = {
 							i(65628),	-- Helm of the Great Hunter
 						},
 						["qg"] = 3352,	-- Ormak Grimshot
 						["classes"] = { 3 },	-- Hunter
-					})),
+					}),
 --					q(43472),	-- The Historians (LEGACY - 2016 anniversary)
 					qg(39605, q(31013, {	-- The Horde Way
 						["races"] = { 26 },	-- Pandaren
@@ -514,34 +514,34 @@ Legacy				q( 1436),	-- Alliance Relations
 					qg(45244, q(27203)),	-- The Maelstrom
 --					q(47254),	-- The Originals (LEGACY - 13th anniversary)
 --]]
-					qdg(q(28458, {	-- The Pyromancer's Grimoire
+					q(28458, {	-- The Pyromancer's Grimoire
 						["groups"] = {
 							i(65626),	-- Hood of the Arcane Path
 						},
 						["qg"] = 47246,	-- Ureda
 						["classes"] = { 8 },	-- Mage
-					})),
-					qdg(q( 27436, {	-- The Shadow-Walker's Task
+					}),
+					q( 27436, {	-- The Shadow-Walker's Task
 						["groups"] = {
 							i(65485),	-- Shadow-Walker Staff
 						},
 						["qg"] = 45137,	-- Shadow-Walker Zuru
 						["races"] = { 8 },	-- Troll
 						["classes"] = { 5 },	-- Priest
-					})),
+					}),
 --					q(40786),	-- The Smoldering Ember (QG item received from final boss in TW dungeons)
 --[[					
 					qg(52234, q(29220)),	-- To Bambala
 					qp185(qg(3399, q( 6611))),	-- To Gadgetzan You Go!
 					qg(45244, q(28816)),	-- To the Depths
 --]]					
-					qdg(q(27402, {	-- Token of Power
+					q(27402, {	-- Token of Power
 						["groups"] = {
 							i(65497),	-- Staff of the Left Hand Path
 						},
 						["qg"] = 88705,	-- Kranosh
 						["classes"] = { 9 },	-- Warlock
-					})),
+					}),
 					{
 						["questID"] = 26830,	-- Traitor's Bait
 						["sourceQuest"] = 26798,	-- Saurfang Will be Pleased
@@ -557,46 +557,46 @@ Legacy				q( 1436),	-- Alliance Relations
 						["lvl"] = 84,
 					},
 --					qp171(qg(3347, q(29482))),	-- Transmutation Master
-					qdg(q(28475, {	-- Twilight Scheming
+					q(28475, {	-- Twilight Scheming
 						["groups"] = {
 							i(65634),	-- Crown of the Sunchaser
 						},
 						["qg"] = 45337,	-- Tyelis
 						["races"] = { 10 },	-- Blood Elf
 						["classes"] = { 5 },	-- Priest
-					})),
-					qdg(q(28478, {	-- Twilight Scheming
+					}),
+					q(28478, {	-- Twilight Scheming
 						["groups"] = {
 							i(65637),	-- Crown of Golden Worship
 						},
 						["qg"] = 45347,	-- Brother Silverhallow
 						["races"] = { 9 },	-- Goblin
 						["classes"] = { 5 },	-- Priest
-					})),
-					qdg(q(28474, {	-- Twilight Scheming
+					}),
+					q(28474, {	-- Twilight Scheming
 						["groups"] = {
 							i(65633),	-- Crown of Forsaken Faith
 						},
 						["qg"] = 45339,	-- Dark Cleric Cecille
 						["races"] = { 5 },	-- Undead
 						["classes"] = { 5 },	-- Priest
-					})),
-					qdg(q(28476, {	-- Twilight Scheming
+					}),
+					q(28476, {	-- Twilight Scheming
 						["groups"] = {
 							i(65635),	-- Crown of the Earthmother
 						},
 						["qg"] = 44735,	-- Seer Liwatha
 						["races"] = { 6 },	-- Tauren
 						["classes"] = { 5 },	-- Priest
-					})),
-					qdg(q(28477, {	-- Twilight Scheming
+					}),
+					q(28477, {	-- Twilight Scheming
 						["groups"] = {
 							i(65636),	-- Crown of the Shadow-Walker
 						},
 						["qg"] = 45137,	-- Shadow-Walker Zuru
 						["races"] = { 8 },	-- Troll
 						["classes"] = { 5 },	-- Priest
-					})),
+					}),
 					q(26311,  {  -- Unfamiliar Waters
 						["groups"] = {
 							i(63922),	-- Awestruck Bracers
@@ -606,7 +606,7 @@ Legacy				q( 1436),	-- Alliance Relations
 						["qg"] = 42637,	-- Sauranok the Mystic
 						["sourceQuests"] = { 28909 },	-- Sauranok Will Paint the Way
 					}), 
-					qdg(q(28466, {	-- Weapons of Darkness
+					q(28466, {	-- Weapons of Darkness
 						["groups"] = {
 							i(65631),	-- Helm of the Sunwalker
 							i(65644),	-- Faceguard of the Sunwalker
@@ -616,8 +616,8 @@ Legacy				q( 1436),	-- Alliance Relations
 						["races"] = { 6 },	-- Tauren
 						["classes"] = { 2 },	-- Paladin
 --						["sourceQuests"] = { 28302 },	-- Meet with Sunwalker Atohmo
-					})),
-					qdg(q(28473, {	-- Weapons of Darkness
+					}),
+					q(28473, {	-- Weapons of Darkness
 						["groups"] = {
 							i(65632),	-- Helm of the Order
 							i(65645),	-- Faceguard of the Order
@@ -628,7 +628,7 @@ Legacy				q( 1436),	-- Alliance Relations
 						["races"] = { 10 },	-- Blood Elf
 						["classes"] = { 2 },	-- Paladin
 --						["sourceQuests"] = { 28303 },	-- Meet with Master Pyreanor (unknown if breadcrumb)
-					})),
+					}),
 					q(26324, {	-- Where Is My Warfleet?
 						["qg"] = 14720,	-- High Overlord Saurfang
 						["sourceQuests"] = { 26311 },	-- Unfamiliar Waters

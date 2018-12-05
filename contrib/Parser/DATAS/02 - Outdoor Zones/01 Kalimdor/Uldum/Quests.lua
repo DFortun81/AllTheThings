@@ -652,11 +652,11 @@ _.Zones =
 							["qg"] = 45799,
 							["sourceQuests"] = {28135},
 						}),
-						qdg(q(28845, {	-- The Vortex Pinnacle
+						q(28845, {	-- The Vortex Pinnacle
 							["qg"] = 45772,
 							["sourceQuests"] = {27519,27520,27706},
 							["isBreadcrumb"] = true,	-- for 28779/28760
-						})),
+						}),
 						q(28200, {	-- The Elements of Supplies
 							["groups"] = {
 								i(65839),	-- Sarcophagus Bracers
@@ -680,11 +680,11 @@ _.Zones =
 							["qg"] = 46134,
 							["sourceQuests"] = {28201},
 						}),
-						qdg(q(28870, {	-- Return to the Lost City
+						q(28870, {	-- Return to the Lost City
 							["qg"] = 47684,
 							["sourceQuests"] = {28520},
 							["isBreadcrumb"] = true,	-- For 28783
-						})),
+						}),
 						q(27187, {	-- Do the World a Favor
 							["qg"] = 45202,
 							["sourceQuests"] = {27141},

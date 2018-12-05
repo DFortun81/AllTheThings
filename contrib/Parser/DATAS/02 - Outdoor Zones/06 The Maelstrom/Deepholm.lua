@@ -731,10 +731,10 @@ _.Zones =
 						-- sz(4864, 7, {	--The Pale Roost
 						-- }),
 						sz(4864, 8, {	--Therazane's Throne
-							qdg(q(28824, {	--  Wayward Child
+							q(28824, {	--  Wayward Child
 								["qg"] = 42465,	-- Therazane
 								["sourceQuests"] = {26871},
-							})),
+							}),
 							q(26709, {	--  The Stone Throne
 								["qg"] = 43792,	-- Therazane
 								["sourceQuests"] = {26971},
@@ -793,9 +793,9 @@ _.Zones =
 						-- sz(4864, 9, {	--The Quaking Fields
 						-- }),
 						sz(4864, 10, {	--Twilight Overlook
-							qdg(q(28866, {	--  Into the Stonecore
+							q(28866, {	--  Into the Stonecore
 								["qg"] = 44010,	-- Stormcaller Mylra
-							})),
+							}),
 						}),
 						-- sz(4864, 11, {	--Masters' Gate
 						-- }),

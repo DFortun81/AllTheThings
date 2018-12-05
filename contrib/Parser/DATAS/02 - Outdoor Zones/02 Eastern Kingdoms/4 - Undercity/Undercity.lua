@@ -18,7 +18,7 @@ _.Zones =
 					p(454),		-- Undercity Rat
 				}),
 				n(-17, { 	-- Quests
-					qdg(qg(10181, qh(31037))),	-- Enemies Below (MAY ONLY BE AVAILABLE FOR UNDEAD)
+					qg(10181, qh(31037)),	-- Enemies Below (MAY ONLY BE AVAILABLE FOR UNDEAD)
 					qh(39960, {	-- The Legacy Passed On
 						["qg"] = 97766,	-- Francis Serbacon <Author Extrodinaire>
 						["sourceQuests"] = { 39959 },	-- The Plot Thickens
@@ -813,11 +813,11 @@ _.Zones =
 				n(-40, {	-- Legacy
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)
-							un(40, qdg(qh(6521, {	-- An Unholy Alliance
+							un(40, qh(6521, {	-- An Unholy Alliance
 								un(2, i(17042)),	-- Nail Splitter
 								un(2, i(17039)),	-- Skullbreaker
 								un(2, i(17043)),	-- Zealot's Robe
-							}))),
+							})),
 							un(40, qh(1847, {	-- Brutal Legguards
 								["groups"] = {
 									un(2, i(7132)),	-- Brutal Legguards
@@ -835,11 +835,11 @@ _.Zones =
 							un(40, q( 737, {	-- Forbidden Knowledge
 								un(2, i(4984)),	-- Skull of Impending Doom
 							})),
-							un(40, qdg(qh(1048, {	-- Into the Scarlet Monastery
+							un(40, qh(1048, {	-- Into the Scarlet Monastery
 								un(2, i(10711)),	-- Dragon's Blood Necklace
 								un(2, i(6803)),	-- Prophetic Cane
 								un(2, i(6802)),	-- Sword of Omen
-							}))),
+							})),
 							un(40, qh(4642, {	-- Melding of Influences
 								un(2, i(15702)),	-- Chemist's Ring
 								un(2, i(15703)),	-- Chemist's Smock
@@ -865,11 +865,11 @@ _.Zones =
 								},
 								["classes"] = { 8 },	-- Mage
 							})),
-							un(40, qdg(qh(5725, {	-- The Power to Destroy
+							un(40, qh(5725, {	-- The Power to Destroy
 								un(2, i(15449)),	-- Ghastly Trousers
 								un(2, i(15450)),	-- Dredgemire Leggings
 								un(2, i(15451)),	-- Gargoyle Leggings
-							}))),
+							})),
 							un(40, qh(1164, {	-- To Steal From Thieves
 								un(2, i(2032)),	-- Gallan Cuffs
 								un(2, i(4443)),	-- Grim Pauldrons

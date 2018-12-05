@@ -104,10 +104,10 @@ _.Zones =
 								["qg"] = 21826,	-- Sanoru
 								["sourceQuests"] = { 10622 },	-- Proof of Allegiance
 							}),
-							qdg(q(10705, {	-- Seer Udalo
+							q(10705, {	-- Seer Udalo
 								["qg"] = 21700,	-- Akama
 								["sourceQuests"] = { 10628 },	-- Akama
-							})),
+							}),
 							q(10707, {	-- The Ata'mal Terrace
 								["qg"] = 21770,	-- Akama
 								["sourceQuests"] = { 10706 },	-- A Mysterious Portent
@@ -477,11 +477,11 @@ _.Zones =
 								["coord"] = { 57.3, 49.5 },
 								["sourceQuests"] = { 10622 },	-- Proof of Allegiance
 							}),
-							qdg(q(10705, {	-- Seer Udalo
+							q(10705, {	-- Seer Udalo
 								["qg"] = 21700,	-- Akama
 								["coord"] = { 58.1, 48.1 },
 								["sourceQuests"] = { 10628 },	-- Akama
-							})),
+							}),
 							q(10707, {	-- The Ata'mal Terrace
 								["qg"] = 21770,	-- Akama
 								["coord"] = { 58.1, 48.1 },

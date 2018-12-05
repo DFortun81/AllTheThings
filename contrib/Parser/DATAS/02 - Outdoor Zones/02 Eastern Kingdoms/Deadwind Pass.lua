@@ -56,12 +56,12 @@ _.Zones =
 					qart(qg(100323, q(40834, {	-- Following the Curse
 						["classes"] = {11},
 					}))),
-					qdg(qg(114310, q(44734))),	-- Fragments of the Past
+					qg(114310, q(44734)),	-- Fragments of the Past
 					qg(101547, q(40755)),	-- Hiding in the Stacks
 					qg(114310, q(44683)),	-- Holding the Lines
-					qdg(qg(18255, q(45296, {	-- No Bones About It
+					qg(18255, q(45296, {	-- No Bones About It
 						 ["description"] = "This quest is offered after completion of 'Return to Karazhan: Clearing Out the Cobwebs.'",
-					}))),
+					})),
 					qg(18253, q(10731)),	-- Path of the Violet Assassin
 					qg(18253, q(10729)),	-- Path of the Violet Mage
 					qg(18253, q(10732)),	-- Path of the Violet Protector
@@ -69,22 +69,22 @@ _.Zones =
 					qg(18253, q(11032)),	-- Protector No More
 					qg(114310, q(44685)),	-- Reclaiming the Ramparts
 					qg(18253, q(11034)),	-- Restorer No More
-					qdg(qg(18255, q(45291))),	-- Return to Karazhan: Book Wyrms
-					qdg(qg(18255, q(45295))),	-- Return to Karazhan: Clearing Out the Cobwebs
-					qdg(qg(18255, q(45294))),	-- Return to Karazhan: High Stress Hiatus
-					qdg(qg(114310, q(44735))),	-- Return to Karazhan: In the Eye of the Beholder					
+					qg(18255, q(45291)),	-- Return to Karazhan: Book Wyrms
+					qg(18255, q(45295)),	-- Return to Karazhan: Clearing Out the Cobwebs
+					qg(18255, q(45294)),	-- Return to Karazhan: High Stress Hiatus
+					qg(114310, q(44735)),	-- Return to Karazhan: In the Eye of the Beholder					
 					n(114312, {	-- Moroes
 						["groups"] = {
 							i(142246, {	-- Broken Pocket Watch
-								qdg(q(44803, {	-- Return to Karazhan: Master of the House
-									qdg(q(44865)),	-- Butler to the Great
-								})),
+								q(44803, {	-- Return to Karazhan: Master of the House
+									q(44865),	-- Butler to the Great
+								}),
 							}),
 						},
 						["description"] = "This questline rewards Moroes as a Class Champion.|r",
 					}),
-					qdg(qg(18255, q(45293))),	-- Return to Karazhan: New Shoes
-					qdg(qg(18255, q(45292))),	-- Return to Karazhan: Rebooting the Cleaner
+					qg(18255, q(45293)),	-- Return to Karazhan: New Shoes
+					qg(18255, q(45292)),	-- Return to Karazhan: Rebooting the Cleaner
 					qart(qg(101282, q(40900, {	-- The Burden Borne (map blank, not sure if starts in Deadwind Pass, a scenario, or elsewhere)
 						["classes"] = {11},
 					}))),

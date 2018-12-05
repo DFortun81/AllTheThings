@@ -467,14 +467,14 @@ _.Zones =
 								["sourceQuests"] = {12029},
 								["isDaily"] = true,
 							}),
-							qdg(q(12037, {	--  Search and Rescue
+							q(12037, {	--  Search and Rescue
 								["qg"] = 26604,	-- Mack Fearsen
 								["sourceQuests"] = {12029},
-							})),
-							qdg(q(12238, {	--  Cleansing Drak'Tharon
+							}),
+							q(12238, {	--  Cleansing Drak'Tharon
 								["qg"] = 26787,	-- Image of Drakuru
 								["sourceQuests"] = {12068},
-							})),
+							}),
 						}),
 						sz(1266, 6, {	--Grizzlemaw
 						}),

@@ -530,12 +530,12 @@ _.Zones =
 						qh(10117),	-- Wanted: Chieftain Mummaki
 					}),
 -- DUNGEON QUESTS
-					qdg(q(29566, {	-- Checking Up
+					q(29566, {	-- Checking Up
 						["qg"] = 17841,	-- Ysiel Windsinger
-					})),
-					qdg(q(29616, {	-- Storming the Steamvault
+					}),
+					q(29616, {	-- Storming the Steamvault
 						["qg"] = 17841,	-- Ysiel Windsinger
-					})),
+					}),
 
 -- CENARION EXPEDITION QUESTS
 					faction(942, {	-- Cenarion Expedition
@@ -747,12 +747,12 @@ _.Zones =
 				n(-40, {	-- Legacy
 					["groups"] = {
 						n(-17, {	-- Quests
-							un(40, qdg(q(9763, {	-- The Warlord's Hideout
+							un(40, q(9763, {	-- The Warlord's Hideout
 								un(2, i(28181)),	-- Earthwarden's Coif
 								un(2, i(28182)),	-- Helm of the Claw
 								un(2, i(28183)),	-- Hydromancer's Headwrap
 								un(2, i(28180)),	-- Myrmidon's Headdress
-							}))),
+							})),
 						}),
 						--n(-16, {	-- Rares (Legacy)
 						--}),

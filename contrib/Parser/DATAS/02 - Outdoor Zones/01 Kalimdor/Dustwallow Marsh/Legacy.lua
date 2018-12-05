@@ -87,10 +87,10 @@ _.Zones =
 							un(40, qa(1267, {	-- The Missing Diplomat
 								un(2, i(6757)),	-- Jaina's Signet Ring
 							})),
-							un(40, qdg(q(2846, {	-- Tiara of the Deep
+							un(40, q(2846, {	-- Tiara of the Deep
 								un(2, i(9527)),	-- Spellshifter Rod
 								un(2, i(9531)),	-- Gemshale Pauldrons
-							}))),
+							})),
 						}),
 						n(-16, {	-- Rares
 							un(43, n(4368, { -- Strashaz Myrmidon

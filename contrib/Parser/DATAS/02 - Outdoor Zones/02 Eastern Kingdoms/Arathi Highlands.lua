@@ -327,9 +327,9 @@ _.Zones =
 					}),
 					
 -- DUNGEON QUESTS
-					qdg(qa(26943, {	-- Home Sweet Gnome (mutually exclusive with 26944 "Exploring Gnomeregan")
+					qa(26943, {	-- Home Sweet Gnome (mutually exclusive with 26944 "Exploring Gnomeregan")
 						["qg"] = 2789,	-- Skuerto
-					})),
+					}),
 
 -- PVP QUESTS
 					qpvp(qa(8262, {	-- Arathor Advanced Care Package

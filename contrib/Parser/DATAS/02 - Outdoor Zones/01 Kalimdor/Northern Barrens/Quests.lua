@@ -380,10 +380,10 @@ _.Zones =
 					}),
 					n(-91006, {	-- Crossroads
 						["groups"] = {
-							qdg(q(26878, {	-- Disciples of Naralex
+							q(26878, {	-- Disciples of Naralex
 								["qg"] = 3448,	-- Tonga Runetotem
 								["coord"] = { 49.5, 58.6 },
-							})),
+							}),
 							q(848, {	-- Fungal Spores
 								["qg"] = 3390,	-- Apothecary Helbrim
 								["coord"] = { 48.6, 58.2 },

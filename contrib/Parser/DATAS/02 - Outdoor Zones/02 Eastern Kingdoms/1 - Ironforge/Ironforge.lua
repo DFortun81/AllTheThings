@@ -65,9 +65,9 @@ _.Zones =
 						["isBreadcrumb"] = true,	-- for Triage
 						["requireSkill"] = 129,	-- First Aid
 					}),
-					qdg(qg(6826, qa( 2948, {	-- Gnome Improvement
+					qg(6826, qa( 2948, {	-- Gnome Improvement
 						["sourceQuests"] = { 2947 },	-- Return of the Ring
-					}))),
+					})),
 					qa(26118, { -- Seize the Ambassador
 						["g"] = {
 							i(57583),	-- The Slaghammer

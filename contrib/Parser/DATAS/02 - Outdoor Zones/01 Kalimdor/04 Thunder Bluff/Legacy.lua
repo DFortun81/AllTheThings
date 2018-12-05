@@ -26,15 +26,15 @@ _.Zones =
 							un(40, qh(1845, {	-- Brutal Helm
 								un(2, i(7130)),	-- Brutal Helm
 							})),
-							un(40, qdg(qh(1049, {	-- Compendium of the Fallen
+							un(40, qh(1049, {	-- Compendium of the Fallen
 								un(2, i( 7747)),	-- Vile Protector
 								un(2, i(17508)),	-- Forcestone Buckler
 								un(2, i( 7749)),	-- Omega Orb
-							}))),
-							un(40, qdg(qh( 914, {	-- Leaders of the Fang
+							})),
+							un(40, qh( 914, {	-- Leaders of the Fang
 								un(2, i(6505)),	-- Crescent Staff
 								un(2, i(6504)),	-- Wingblade
-							}))),
+							})),
 							{
 								["questID"] = 776,	-- Rites of the Earthmother
 								["groups"] = {
@@ -44,9 +44,9 @@ _.Zones =
 								["races"] = HORDE_ONLY,
 								["u"] = 40,
 							},
-							un(40, qdg(qh(965, {	-- Serpentbloom
+							un(40, qh(965, {	-- Serpentbloom
 								un(2, i(10919)),	-- Apothecary Gloves
-							}))),
+							})),
 							{
 								["questID"] = 2440,	-- The Platinum Discs
 								["sourceQuest"] = 2280,	-- The Platinum Discs

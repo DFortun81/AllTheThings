@@ -653,9 +653,9 @@ _.Zones =
 					q(45810),	-- The Gnomes Stole Our Bombs! (WORLD QUEST)
 					q(45811),	-- The Goblins Stole Our Bombs! (WORLD QUEST)	--]]
 -- DUNGEON QUESTS					
-					qdg(qh(27062, {	-- Looming Threat
+					qh(27062, {	-- Looming Threat
 						["qg"] = 39895,	-- Kanati Greycloud
-					})),
+					}),
 -- SHAMAN CLASS HALL QUESTS					
 					qg(120244, q(44800, {	-- Against Magatha's Will
 						["classes"] = { 7 },	-- Shaman

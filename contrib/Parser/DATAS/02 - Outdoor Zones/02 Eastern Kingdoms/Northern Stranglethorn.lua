@@ -805,7 +805,7 @@ _.Zones =
 						i(131892),	-- Excelsior Footwear
 						i(61106),	-- Excelsior Waders
 					})),
-					qdg(qg(44018, qa(26944))),	-- Exploring Gnomeregan (mutually exclusive with 26943 "Home Sweet Gnome")
+					qg(44018, qa(26944)),	-- Exploring Gnomeregan (mutually exclusive with 26943 "Home Sweet Gnome")
 --[[
 					qg(42736, qh(26323)),	-- Favored Skull
 					qg(42736, qa(26745)),	-- Favored Skull

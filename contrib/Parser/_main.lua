@@ -749,11 +749,6 @@ qd = function(t)							-- Gives a quest the Daily Description
 	return t;
 	
 end
-qdg = function(t)						-- Gives a quest the Dungeon Description
-	t.description = "Can only be done in dungeons.";
-	t.icon = "Interface\\Minimap\\Dungeon_Icon";
-	return t;
-end
 ql = function(t)							-- Gives a quest the Legendary Description
 	t.description = "This quest is part of a legendary quest line.";
 	t.icon = "Interface\\Icons\\70_inscription_vantus_rune_odyn";

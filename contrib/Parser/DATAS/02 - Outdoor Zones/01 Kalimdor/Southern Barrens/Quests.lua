@@ -516,11 +516,11 @@ _.Zones =
 						["qg"] = 39155,	-- Marley Twinbraid
 						["sourceQuests"] = { 25104 },	-- Digsite Status
 					}),
-					qdg(q(26908, {	-- Feeling Thorny
+					q(26908, {	-- Feeling Thorny
 						["qg"] = 37812,	-- Mahka
 						["lvl"] = 30,
 						["coord"] = { 45.1, 85.4 },
-					})),
+					}),
 					qa(25043, {	-- Fields of Blood
 						["qg"] = 38323,	-- General Hawthorne
 					}),

@@ -487,14 +487,14 @@ _.Zones =
 								},
 								["qg"] = 16365,	-- Master Craftsman Omarion
 							}),
- 							qr(qdg(q(28756, {	-- Aberrations of Bone
+ 							qr(q(28756, {	-- Aberrations of Bone
 								["qg"] = 49856,	-- 
 								["sourceQuests"] = {27464},
-							}))),
-							qr(qdg(q(28755, {	-- Annals of the Silver Hand
+							})),
+							qr(q(28755, {	-- Annals of the Silver Hand
 								["qg"] = 49856,	-- 
 								["sourceQuests"] = {27464},
-							}))),
+							})),
 							q( 27762, {	-- Fuselight, Ho!
 								["qg"] = 48704,	-- Gek Nozzlerocket
 								["isBreadcrumb"] = true,	-- for "To Fuselight Proper"
@@ -561,9 +561,9 @@ _.Zones =
 							}),
 						}),
 						sz(771, 18, { -- Northpass Tower
- 							qdg(q(27422, {	-- A City Under Siege
+ 							q(27422, {	-- A City Under Siege
 								["qg"] = 45482,	-- Argent Officer Irizarry
-							})),
+							}),
  							q(27521, {	-- Wretched Hive of Scum and Villainy
 								["qg"] = 45826,	-- Kirkian Dawnshield
 							}),
@@ -1450,14 +1450,14 @@ _.Zones =
 								un(2, i(15857)),	-- Magebane Scion
 								un(2, i(15855)),	-- Ring of Protection
 							})),
-							un(40, qdg({		-- Houses of the Holy
+							un(40, {		-- Houses of the Holy
 								["questID"] = 5243,	-- Houses of the Holy
 								["qg"]	= 11036, -- Leonid Barthalomew the Revered
 								["groups"] = {
 									un(2, i(13217)),	-- Band of the Penitent
 									un(2, i(13216)),	-- Crown of the Penitent
 								},
-							})),
+							}),
 							un(40, qh(6163, {	-- Ramstein
 								un(2, i(17001)),	-- Elemental Circle
 								un(2, i(18022)),	-- Royal Seal of Alexis

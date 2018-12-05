@@ -31,7 +31,7 @@ _.Zones =
 					})),
 					qg(67940, qa(32414)),	-- Darnassus Attacked? (QG in Krasarang Wilds)
 --]]					
-					qdg(q (27362, {	-- Favored of Elune
+					q (27362, {	-- Favored of Elune
 						["groups"] = {
 							i(65483),	-- Moon Staff of Elune
 						},
@@ -39,7 +39,7 @@ _.Zones =
 						["races"] = { 4 },	-- Night Elf
 						["classes"] = { 5 },	-- Priest
 --						["sourceQuests"] = {  },	-- 
-					})),
+					}),
 --[[					
 					qp129(qg(4156, qa(29321))),	-- Happy as a Clam Digger
 					o(207321, {	-- Hero's Call Board (Darnassus)	

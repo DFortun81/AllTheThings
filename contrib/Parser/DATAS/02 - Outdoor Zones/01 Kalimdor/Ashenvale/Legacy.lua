@@ -9,10 +9,10 @@ _.Zones =
 				n(-40, {	-- Legacy
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)
-							un(40, qdg(qh(6565, {	-- Allegiance to the Old Gods
+							un(40, qh(6565, {	-- Allegiance to the Old Gods
 								un(2, i(17694)),	-- Band of the Fist
 								un(2, i(17695)),	-- Chestnut Mantle
-							}))),
+							})),
 							un(40, qa(1044, {	-- Answered Questions
 								un(2, i(5817)),	-- Lunaris Bow
 								un(2, i(5818)),	-- Moonbeam Wand

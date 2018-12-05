@@ -21,10 +21,10 @@ _.Zones =
 								un(2, i(15469)),	-- Windsong Cinch
 								un(2, i(15468)),	-- Windsong Drape
 							})),
-							un(40, qdg(q(2770, {	-- Gahz'rilla (may have been Horde-only)
+							un(40, q(2770, {	-- Gahz'rilla (may have been Horde-only)
 								un(2, i(11122)),	-- Carrot on a Stick
 								un(2, i( 9653)),	-- Speedy Racer Goggles
-							}))),
+							})),
 							un(40, qh(5064, {	-- Grimtotem Spying
 								un(2, i(15457)),	-- Desert Shoulders
 								un(2, i(15459)),	-- Grimtoll Wristguards

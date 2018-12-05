@@ -76,10 +76,10 @@ _.Zones =
 								["qg"] = 18417,	-- Altruis
 								["sourceQuests"] = { 10641, 10668, 10669 },	-- Against the Legion, Against the Illidari, & Against All Odds
 							}),
-							qdg(q(10649, {	-- The Book of Fel Names
+							q(10649, {	-- The Book of Fel Names
 								["qg"] = 18417,	-- Altruis
 								["sourceQuests"] = { 10646 },	-- Illidan's Pupil
-							})),
+							}),
 							q(10650, {	-- Return to the Aldor
 								["qg"] = 18417,	-- Altruis the Sufferer
 								["sourceQuests"] = { 10649 },	-- The Book of Fel Names
@@ -122,11 +122,11 @@ _.Zones =
 									10669,	-- Against All Odds
 								},
 							}),
-							qdg(q(10649, {	-- The Book of Fel Names
+							q(10649, {	-- The Book of Fel Names
 								["qg"] = 18417,	-- Altruis
 								["coord"] = { 27.3, 43.0 },
 								["sourceQuests"] = { 10646 },	-- Illidan's Pupil
-							})),
+							}),
 							q(10691, {	-- Return to the Scryers
 								["qg"] = 18417,	-- Altruis
 								["coord"] = { 27.3, 43.0 },
