@@ -705,6 +705,9 @@ _.ExpansionFeatures =
 					{	-- Uniting Kul Tiras
 						["questID"] = 52026,	-- Uniting Kul Tiras
 						["qg"] = 135612,	-- Halford Wyrmbane
+						["groups"] = {
+							i(141605),	-- Flight Master Whistle
+						},
 						["sourceQuests"] = {
 							52654,	-- The War Campaign
 						},
