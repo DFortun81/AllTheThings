@@ -2276,6 +2276,7 @@ AllTheThings.Locales.enUS = {
 		[175756] = select(1,GetAchievementCriteriaInfo(1244,34)), -- The Scourge of Lordaeron
 		[176090] = "Human Remains",
 		[176091] = "Deadwood Cauldron",
+		[176115] = "Wanted Poster - Arnak Grimtotem",
 		[176392] = "Scourge Cauldron",
 		[179485] = "A Broken Trap",
 		[179501] = "Knot Thimblejack's Cache",

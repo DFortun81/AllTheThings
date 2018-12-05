@@ -7,6 +7,13 @@ _.Zones =
 		m(64, {	-- Thousand Needles
 			["groups"] = {
 				n(-2,  {	-- Vendors
+					n(4878, {	-- Montarr
+						["groups"] = {
+							un(2, i(6068)),	-- Recipe: Shadow Oil
+						},
+						["u"] = 43,
+						["races"] = HORDE_ONLY,
+					}),
 					n(41135, {	-- "Plucky" Johnson
 						["groups"] = {
 							i(11023),	-- Ancona Chicken

@@ -105,6 +105,12 @@ _.Zones =
 						},
 						["coord"] = { 55.2, 40.6 },
 					}),
+					n(4099, { 	-- Galak Marauder
+						["groups"] = {
+							un(7, i(1493)),	-- Heaver Marauder Scimitar
+						},
+						["u"] = 43,
+					}),
 					n(14427, {	-- Gibblesnik
 						["groups"] = {
 							dr(	12	, i(	7491	)), --	Captain's Shoulderguards
