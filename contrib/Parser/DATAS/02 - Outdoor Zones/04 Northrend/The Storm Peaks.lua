@@ -19,8 +19,9 @@ _.Zones =
 								i(44080),	-- Reins of the Ice Mammoth Mount - Horde
 							}),
 							i(41720),	-- Design: Smooth Autumn's Glow
-							i(41817, {	-- Design: Smooth Autumn's Glow [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-								["collectible"] = false,
+							i(41817, {	-- Design: Smooth Autumn's Glow
+								["spellID"] = 0,	-- This is now available via 41720, need to delink the old plans from the recipe
+								["u"] = 2,
 							}),
 							i(42184),	-- Pattern: Glacial Bag
 							i(44510),	-- Pattern: Mammoth Mining Bag
@@ -857,8 +858,9 @@ _.Zones =
 								29792, -- Frostfeather Screecher
 							},
 						}),
-						i(41736, {  -- Design: Radiant Forest Emerald [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-							["collectible"] = false,
+						i(41736, {  -- Design: Radiant Forest Emerald
+							["spellID"] = 0,	-- This is now available via 41819, need to delink the old plans from the recipe
+							["u"] = 2,
 							["crs"] = {
 								29793, -- Frostfeather Witch
 								29792, -- Frostfeather Screecher

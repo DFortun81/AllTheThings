@@ -33,7 +33,8 @@ _.WorldDrops =
 				n(-181, { -- Blacksmithing
 					{	-- Plans: Bleakwood Hew
 						["itemID"] = 12817,	-- Plans: Bleakwood Hew
-						["collectible"] = false,	-- If we mark this unobtainable, u = 1, the recipe that is available from the plans 142346 will be incorrectly marked unobtainable in the profession window since they share the same recipeID
+						["spellID"] = 0,	-- This is available via 142346, need to delink the old plans from the recipe
+						["u"] = 1,
 					},
 					{	-- Plans: Blood Talon
 						["itemID"] = 12831,	-- Plans: Blood Talon
@@ -47,7 +48,8 @@ _.WorldDrops =
 					},
 					{	-- Plans: Darkspear
 						["itemID"] = 12832,	-- Plans: Darkspear
-						["collectible"] = false,	-- If we mark this unobtainable, u = 1, the recipe that is available from the plans 142383 will be incorrectly marked unobtainable in the profession window since they share the same recipeID
+						["spellID"] = 0,	-- This is available via 142383, need to delink the old plans from the recipe
+						["u"] = 1,
 					},
 					{	-- Plans: Dawnbringer Shoulders
 						["itemID"] = 12698,	-- Plans: Dawnbringer Shoulders

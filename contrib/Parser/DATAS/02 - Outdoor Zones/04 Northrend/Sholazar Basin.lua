@@ -261,8 +261,9 @@ _.Zones =
 								}),
 							}),
 							i(41724),	-- Design: Misty Forest Emerald
-							i(41781, {	-- Design: Misty Forest Emerald [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-								["collectible"] = false,
+							i(41781, {	-- Design: Misty Forest Emerald
+								["spellID"] = 0,	-- This is now available via 41724, need to delink the old plans from the recipe
+								["u"] = 2,
 							}),
 							i(41567),	-- Design: Nimble Dark Jade
 							i(44108),	-- Shinygem Rod

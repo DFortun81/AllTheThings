@@ -31,11 +31,13 @@ _.WorldDrops =
 					i(41777),	-- Design: Etched Twilight Opal
 					i(41789),	-- Design: Inscribed Monarch Topaz
 					i(41783),	-- Design: Purified Twilight Opal
-					i(41699, {	-- Design: Purified Twilight Opal [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-						["collectible"] = false,
+					i(41699, {	-- Design: Purified Twilight Opal
+						["spellID"] = 0,	-- This is now available via 41783, need to delink the old plans from the recipe
+						["u"] = 2,
 					}),
-					i(41701, {	-- Design: Purified Twilight Opal [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-						["collectible"] = false,
+					i(41701, {	-- Design: Purified Twilight Opal
+						["spellID"] = 0,	-- This is now available via 41783, need to delink the old plans from the recipe
+						["u"] = 2,
 					}),
 					i(41778),	-- Design: Resolute Monarch Topaz
 					i(41784),	-- Design: Sovereign Twilight Opal

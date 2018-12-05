@@ -559,44 +559,52 @@ _.Zones =
 								i(42298),	-- Design: Bold Dragon's Eye
 								i(41576),	-- Design: Bold Scarlet Ruby
 								i(42309),	-- Design: Brilliant Dragon's Eye
-								i(42300, {	-- Design: Brilliant Dragon's Eye [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(42300, {	-- Design: Brilliant Dragon's Eye
+									["spellID"] = 0,	-- This is now available via 42309, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
 								i(41704),	-- Design: Chaotic Skyflare Diamond
 								i(41687),	-- Design: Deft Monarch Topaz
-								i(41792, {	-- Design: Design: Deft Monarch Topaz [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(41792, {	-- Design: Design: Deft Monarch Topaz
+									["spellID"] = 0,	-- This is now available via 41687, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
 								i(42301),	-- Design: Delicate Dragon's Eye
-								i(42299, {	-- Design: Delicate Dragon's Eye [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(42299, {	-- Design: Delicate Dragon's Eye
+									["spellID"] = 0,	-- This is now available via 42301, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
 								i(41577),	-- Design: Delicate Scarlet Ruby
 								i(41706),	-- Design: Ember Skyflare Diamond
 								i(41692),	-- Design: Energized Forest Emerald
-								i(41694, {	-- Design: Energized Forest Emerald [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(41694, {	-- Design: Energized Forest Emerald
+									["spellID"] = 0,	-- This is now available via 41692, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
 								i(42302),	-- Design: Flashing Dragon's Eye
 								i(41578),	-- Design: Flashing Scarlet Ruby
 								i(41693),	-- Design: Forceful Forest Emerald
 								i(41582),	-- Design: Glinting Twilight Opal
-								i(41785, {	-- Design: Glinting Twilight Opal [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(41785, {	-- Design: Glinting Twilight Opal
+									["spellID"] = 0,	-- This is now available via 41582, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
-								i(41796, {	-- Design: Glinting Twilight Opal [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(41796, {	-- Design: Glinting Twilight Opal
+									["spellID"] = 0,	-- This is now available via 41796, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
 								i(41708),	-- Design: Insightful Earthsiege Diamond
 								i(41709),	-- Design: Invigorating Earthsiege Diamond
 								i(41702),	-- Design: Jagged Forest Emerald
 								i(41696),	-- Design: Lightning Forest Emerald
-								i(41782, {	-- Design: Lightning Forest Emerald [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(41782, {	-- Design: Lightning Forest Emerald
+									["spellID"] = 0,	-- This is now available via 41696, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
 								i(41565),	-- Design: Lucent Huge Citrine
-								i(41564, {	-- Design: Lucent Huge Citrine [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(41564, {	-- Design: Lucent Huge Citrine
+									["spellID"] = 0,	-- This is now available via 41565, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
 								i(41575),	-- Design: Mysterious Shadow Crystal
 								i(42305),	-- Design: Mystic Dragon's Eye
@@ -608,12 +616,14 @@ _.Zones =
 								i(42307),	-- Design: Quick Dragon's Eye
 								i(41570),	-- Design: Radiant Dark Jade
 								i(41690),	-- Design: Reckless Monarch Topaz
-								i(41689, {	-- Design: Design: Reckless Monarch Topaz [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(41689, {	-- Design: Design: Reckless Monarch Topaz
+									["spellID"] = 0,	-- This is now available via 41690, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
 								i(41697),	-- Design: Regal Forest Emerald
-								i(41703, {	-- Design: Regal Forest Emerald [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(41703, {	-- Design: Regal Forest Emerald
+									["spellID"] = 0,	-- This is now available via 41697, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
 								i(41710),	-- Design: Relentless Earthsiege Diamond
 								i(41566),	-- Design: Resplendent Huge Citrine
@@ -629,26 +639,30 @@ _.Zones =
 								i(41705),	-- Design: Shielded Skyflare Diamond
 								i(41747),	-- Design: Shifting Twilight Opal
 								i(42310),	-- Design: Smooth Dragon's Eye
-								i(42303, {	-- Design: Smooth Dragon's Eye [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(42303, {	-- Design: Smooth Dragon's Eye
+									["spellID"] = 0,	-- This is now available via 42310, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
 								i(42311),	-- Design: Solid Dragon's Eye
 								i(42138),	-- Design: Solid Sky Sapphire
 								i(42312),	-- Design: Sparkling Dragon's Eye
-								i(42304, {	-- Design: Sparkling Dragon's Eye [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(42304, {	-- Design: Sparkling Dragon's Eye
+									["spellID"] = 0,	-- This is now available via 42312, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
 								i(41581),	-- Design: Sparkling Sky Sapphire
 								i(41572),	-- Design: Steady Dark Jade
 								i(41560),	-- Design: Stormy Chalcedony
 								i(42313),	-- Design: Stormy Dragon's Eye
 								i(41719),	-- Design: Subtle Autumn's Glow
-								i(41791, {	-- Design: Subtle Autumn's Glow [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(41791, {	-- Design: Subtle Autumn's Glow
+									["spellID"] = 0,	-- This is now available via 41719, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
 								i(42314),	-- Design: Subtle Dragon's Eye
-								i(42315, {	-- Design: Subtle Dragon's Eye [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(42315, {	-- Design: Subtle Dragon's Eye
+									["spellID"] = 0,	-- This is now available via 42314, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
 								i(42652),	-- Design: Titanium Earthguard Chain
 								i(42649),	-- Design: Titanium Earthguard Ring
@@ -659,8 +673,9 @@ _.Zones =
 								i(42650),	-- Design: Titanium Spellshock Ring
 								i(41711),	-- Design: Trenchant Earthsiege Diamond
 								i(41571),	-- Design: Turbid Dark Jade
-								i(41573, {	-- Design: Turbid Dark Jade [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-									["collectible"] = false,
+								i(41573, {	-- Design: Turbid Dark Jade
+									["spellID"] = 0,	-- This is now available via 41571, need to delink the old plans from the recipe
+									["u"] = 2,
 								}),
 								i(41688),	-- Design: Veiled Twilight Opal
 								i(41563),	-- Design: Willful Huge Citrine

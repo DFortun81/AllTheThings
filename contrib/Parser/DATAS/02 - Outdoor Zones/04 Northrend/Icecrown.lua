@@ -38,12 +38,14 @@ _.Zones =
 							i(43155),	-- Tabard of the Ebon Blade
 							i(41562),	-- Design: Deadly Huge Citrine
 							i(41721),	-- Design: Deadly Monarch Topaz
-							i(41794, {	-- Design: Deadly Monarch Topaz [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-								["collectible"] = false,
+							i(41794, {	-- Design: Deadly Monarch Topaz
+								["spellID"] = 0,	-- This is now available via 41721, need to delink the old plans from the recipe
+								["u"] = 2,
 							}),
 							i(41725),	-- Design: Timeless Twilight Opal
-							i(41795, {	-- Design: Timeless Twilight Opal [There are multiple unobtainable versions of gem recipes that Blizz has linked to the same spellID/recipeID so we can't mark unobtainable or it shows in professions incorrectly]
-								["collectible"] = false,
+							i(41795, {	-- Design: Timeless Twilight Opal
+								["spellID"] = 0,	-- This is now available via 41725, need to delink the old plans from the recipe
+								["u"] = 2,
 							}),
 							i(42183),	-- Pattern: Abyssal Bag
 							i(44250),	-- Reaper of Dark Souls
@@ -1013,12 +1015,12 @@ _.Zones =
 					n(32290, {	-- Cult Alchemist <Cult of the Damned>
 						{
 							["itemID"] = 37330,		-- Formula: Enchant Cloak - Superior Nature Resistance
-							["collectible"] = false,
+							["spellID"] = 0,
 							["u"] = 2,
 						},
 						{
 							["itemID"] = 44563,		-- Pattern: Fur Lining - Nature Resist
-							["collectible"] = false,
+							["spellID"] = 0,
 							["u"] = 2,
 						},
 						dr(0.3, i(44567)),	-- Recipe: Mighty Nature Protection Potion
@@ -1026,12 +1028,12 @@ _.Zones =
 					n(32297, {	-- Cult Researcher <Cult of the Damned>
 						{
 							["itemID"] = 37330,		-- Formula: Enchant Cloak - Superior Arcane Resistance
-							["collectible"] = false,
+							["spellID"] = 0,
 							["u"] = 2,
 						},
 						{
 							["itemID"] = 44563,		-- Pattern: Fur Lining - Arcane Resist
-							["collectible"] = false,
+							["spellID"] = 0,
 							["u"] = 2,
 						},
 						dr(0.6, i(44564)),	-- Recipe: Mighty Arcane Protection Potion
@@ -1039,12 +1041,12 @@ _.Zones =
 					n(32349, {	-- Cultist Shard Watcher <Cult of the Damned>
 						{
 							["itemID"] = 37334,		-- Formula: Enchant Cloak - Superior Shadow Resistance
-							["collectible"] = false,
+							["spellID"] = 0,
 							["u"] = 2,
 						},
 						{
 							["itemID"] = 44561,		-- Pattern: Fur Lining - Shadow Resist
-							["collectible"] = false,
+							["spellID"] = 0,
 							["u"] = 2,
 						},
 						dr(0.6, i(44568)),	-- Recipe: Mighty Shadow Protection Potion
@@ -1052,12 +1054,12 @@ _.Zones =
 					n(32289, {	-- Damned Apothecary <Cult of the Damned>
 						{
 							["itemID"] = 37332,		-- Formula: Enchant Cloak - Superior Frost Resistance
-							["collectible"] = false,
+							["spellID"] = 0,
 							["u"] = 2,
 						},
 						{
 							["itemID"] = 44560,		-- Pattern: Fur Lining - Frost Resist
-							["collectible"] = false,
+							["spellID"] = 0,
 							["u"] = 2,
 						},
 						dr(0.3, i(44566)),	-- Recipe: Mighty Frost Protection Potion
@@ -1065,12 +1067,12 @@ _.Zones =
 					n(31702, {	-- Frostbrood Spawn
 						{
 							["itemID"] = 37330,		-- Formula: Enchant Cloak - Superior Arcane Resistance
-							["collectible"] = false,
+							["spellID"] = 0,
 							["u"] = 2,
 						},
 						{
 							["itemID"] = 44563,		-- Pattern: Fur Lining - Arcane Resist
-							["collectible"] = false,
+							["spellID"] = 0,
 							["u"] = 2,
 						},
 						dr(0.18, i(44564)),	-- Recipe: Mighty Arcane Protection Potion
@@ -1078,12 +1080,12 @@ _.Zones =
 					n(31321, {	-- Skeletal Runesmith
 						{
 							["itemID"] = 37331,		-- Formula: Enchant Cloak - Superior Fire Resistance
-							["collectible"] = false,
+							["spellID"] = 0,
 							["u"] = 2,
 						},
 						{
 							["itemID"] = 44559,		-- Pattern: Fur Lining - Fire Resist
-							["collectible"] = false,
+							["spellID"] = 0,
 							["u"] = 2,
 						},
 						dr(0.9, i(44565)),	-- Recipe: Mighty Fire Protection Potion
@@ -1091,12 +1093,12 @@ _.Zones =
 					n(30921, {	-- Skeletal Runesmith
 						{
 							["itemID"] = 37331,		-- Formula: Enchant Cloak - Superior Fire Resistance
-							["collectible"] = false,
+							["spellID"] = 0,
 							["u"] = 2,
 						},
 						{
 							["itemID"] = 44559,		-- Pattern: Fur Lining - Fire Resist
-							["collectible"] = false,
+							["spellID"] = 0,
 							["u"] = 2,
 						},
 						dr(0.5, i(44565)),	-- Recipe: Mighty Fire Protection Potion
