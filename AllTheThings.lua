@@ -9241,7 +9241,24 @@ end);
 					if pois then
 						for i,poi in ipairs(pois) do
 							local questObject = {questID=poi.questId,g={},progress=0,total=0};
-							tinsert(mapObject.g, questObject);
+							if poi.mapID ~= mapID then
+								local subMapObject = { mapID=poi.mapID,g={},progress=0,total=0};
+								cache = fieldCache["mapID"][poi.mapID];
+								if cache then
+									for _,data in ipairs(cache) do
+										if data.mapID and data.icon then
+											subMapObject.icon = data.icon;
+											subMapObject.lvl = data.lvl;
+											subMapObject.description = data.description;
+											break;
+										end
+									end
+								end
+								self:MergeObject(subMapObject.g, questObject);
+								self:MergeObject(mapObject.g, subMapObject);
+							else
+								self:MergeObject(mapObject.g, questObject);
+							end
 							local tagID, tagName, worldQuestType, rarity, isElite, tradeskillLineIndex = GetQuestTagInfo(questObject.questID);
 							if worldQuestType == LE_QUEST_TAG_TYPE_PVP or worldQuestType == LE_QUEST_TAG_TYPE_BOUNTY then
 								questObject.icon = "Interface\\Icons\\Achievement_PVP_P_09";
@@ -9382,6 +9399,17 @@ end);
 				if a.questID then
 					if b.questID then
 						return a.questID < b.questID;
+					else
+						return true;
+					end
+				end
+				if a.mapID then
+					if b.mapID then
+						if a.text and b.text then
+							return a.text < b.text;
+						else
+							return a.mapID < b.mapID;
+						end
 					else
 						return true;
 					end
