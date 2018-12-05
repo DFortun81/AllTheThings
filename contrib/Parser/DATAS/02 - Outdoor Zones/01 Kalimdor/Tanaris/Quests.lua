@@ -599,12 +599,12 @@ _.Zones =
 						["qg"] = 38578,	-- Flinn
 						["isBreadcrumb"] = true,
 					}),
-					qraid(q(13432, {	-- The Vials of Eternity
+					q(13432, {	-- The Vials of Eternity
 						["qgs"] = {
 							19935,	-- Soridormi
 							19936,	-- Arazmodu
 						}
-					})),
+					}),
 					qa(25513,  {  -- Thunderdrome: Grudge Match!
 						["groups"] = {
 							i(56891),	-- Thunderdrome Ring

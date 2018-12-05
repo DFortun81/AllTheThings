@@ -834,11 +834,6 @@ qpvp = function(t)						-- Gives a quest the PvP Description
 	t.icon = "Interface\\PVPFrame\\Icons\\prestige-icon-3";
 	return t;
 end
-qraid = function(t)						-- Gives a quest the Raid Description
-	t.description = "This quest can only be completed in raids.";
-	t.icon = "Interface\\Minimap\\Raid_Icon";
-	return t;
-end
 qr = function(t)
 	t.repeatable = true;
 	return t;

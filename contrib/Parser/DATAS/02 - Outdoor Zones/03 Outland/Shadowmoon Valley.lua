@@ -868,14 +868,14 @@ _.Zones =
 						["coord"] = { 58.0, 48.2 },
 						["sourceQuests"] = { 10944 },	-- The Secret Compromised
 					}),
-					qraid(q(10958, {	-- Seek Out the Ashtongue (UNTESTED, NEEDS CONFIRMATION)
+					q(10958, {	-- Seek Out the Ashtongue (UNTESTED, NEEDS CONFIRMATION)
 						["qg"] = 18528,	-- Xi'ri
 						["coord"] = { 65.2, 44.0 },
 						["sourceQuests"] = {
 							10985,	-- A Distraction for Akama (Alliance)
 							13429,	-- A Distraction for Akama (Horde)
 						},
-					})),
+					}),
 					qa(10572, {	-- Setting Up the Bomb
 						["qg"] = 21357,	-- Wing Commander Nuainn
 						["coord"] = { 39.5, 53.7 },
