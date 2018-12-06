@@ -64,6 +64,112 @@ _.Zones =
 						un(3, i(97672)),	-- Insurrection Spaulders
 						un(3, i(97761)),	-- Insurrection Spaulders
 					})),
+					un(3, i(97826, {	-- Latent Kor'kron Chestpiece (they had unique stats before 6.0)
+						un(3, i(97722)),	-- Insubordination Breastplate
+						un(3, i(97738)),	-- Insubordination Breastplate
+						un(3, i(97746)),	-- Malcontent's Vest
+						un(3, i(97646)),	-- Malcontent's Vest
+						un(3, i(97636)),	-- Tallgrass Guerilla's Tunic
+						un(3, i(97669)),	--  Dissident's Robes
+						un(3, i(97688)),	-- Crimson Schism hestpiece
+						un(3, i(97747)),	-- Crimson Schism hestpiece
+						un(3, i(97754)),	-- Crimson Schism hestpiece
+						un(3, i(97634)),	-- Secessionist's Breastplate
+						un(3, i(97777)),	-- Secessionist's Breastplate
+						un(3, i(97782)),	-- Secessionist's Breastplate
+						un(3, i(97670)),	-- Reformationist's Robe
+						un(3, i(97633)),	-- Disowner's  Tunic
+						un(3, i(97628)),	-- Unbending Spirit Vest
+						un(3, i(97771)),	-- Unbending Spirit Vest
+						un(3, i(97669)),	-- Perjurious Robe
+						un(3, i(97632)),	-- Insurrection Breastplate
+						un(3, i(97766)),	-- Insurrection Breastplate
+					})),
+					un(3, i(97828, {	-- Latent Kor'kron Gloves (they had unique stats before 6.0)
+						un(3, i(97724)),	-- Insubordination Gauntlets
+						un(3, i(97733)),	-- Insubordination Gauntlets
+						un(3, i(97744)),	-- Malcontent's Gloves
+						un(3, i(97652)),	-- Malcontent's Gloves
+						un(3, i(97651)),	-- Tallgrass Guerilla's Gloves
+						un(3, i(97649)),	--  Dissident's Gloves
+						un(3, i(97693)),	-- Crimson Schism Mitts
+						un(3, i(97749)),	-- Crimson Schism Mitts
+						un(3, i(97756)),	-- Crimson Schism Mitts
+--[[						un(3, i(97634)),	-- Secessionist's Breastplate
+						un(3, i(97777)),	-- Secessionist's Breastplate
+						un(3, i(97782)),	-- Secessionist's Breastplate
+						un(3, i(97670)),	-- Reformationist's Robe
+						un(3, i(97633)),	-- Disowner's  Tunic
+						un(3, i(97628)),	-- Unbending Spirit Vest
+						un(3, i(97771)),	-- Unbending Spirit Vest
+						un(3, i(97669)),	-- Perjurious Robe
+						un(3, i(97632)),	-- Insurrection Breastplate
+						un(3, i(97766)),	-- Insurrection Breastplate
+--]]					})),
+					un(3, i(97832, {	-- Latent Kor'kron Belt (they had unique stats before 6.0)
+						un(3, i(97728)),	-- Insubordination Belt
+						un(3, i(97737)),	-- Insubordination Belt
+						un(3, i(97740)),	-- Malcontent's Belt
+						un(3, i(97687)),	-- Malcontent's Belt
+						un(3, i(97685)),	-- Tallgrass Guerilla's Belt
+						un(3, i(97686)),	--  Dissident's Belt
+						un(3, i(97691)),	-- Crimson Schism Cord
+						un(3, i(97753)),	-- Crimson Schism Cord
+						un(3, i(97760)),	-- Crimson Schism Cord
+--[[						un(3, i(97634)),	-- Secessionist's Breastplate
+						un(3, i(97777)),	-- Secessionist's Breastplate
+						un(3, i(97782)),	-- Secessionist's Breastplate
+						un(3, i(97670)),	-- Reformationist's Robe
+						un(3, i(97633)),	-- Disowner's  Tunic
+						un(3, i(97628)),	-- Unbending Spirit Vest
+						un(3, i(97771)),	-- Unbending Spirit Vest
+						un(3, i(97669)),	-- Perjurious Robe
+						un(3, i(97632)),	-- Insurrection Breastplate
+						un(3, i(97766)),	-- Insurrection Breastplate
+--]]					})),
+					un(3, i(97830, {	-- Latent Kor'kron Leggings (they had unique stats before 6.0)
+						un(3, i(97726)),	-- Insubordination egplates
+						un(3, i(97735)),	-- Insubordination egplates
+						un(3, i(97741)),	-- Malcontent's Kilt
+						un(3, i(97668)),	-- Malcontent's Kilt
+						un(3, i(97667)),	-- Tallgrass Guerilla's Pants
+						un(3, i(97666)),	--  Dissident's Leggings
+						un(3, i(97690)),	-- Crimson Schism Leggings
+						un(3, i(97751)),	-- Crimson Schism Leggings
+						un(3, i(97758)),	-- Crimson Schism Leggings
+--[[						un(3, i(97634)),	-- Secessionist's Breastplate
+						un(3, i(97777)),	-- Secessionist's Breastplate
+						un(3, i(97782)),	-- Secessionist's Breastplate
+						un(3, i(97670)),	-- Reformationist's Robe
+						un(3, i(97633)),	-- Disowner's  Tunic
+						un(3, i(97628)),	-- Unbending Spirit Vest
+						un(3, i(97771)),	-- Unbending Spirit Vest
+						un(3, i(97669)),	-- Perjurious Robe
+						un(3, i(97632)),	-- Insurrection Breastplate
+						un(3, i(97766)),	-- Insurrection Breastplate
+--]]					})),
+					un(3, i(97827, {	-- Latent Kor'kron Boots (they had unique stats before 6.0)
+						un(3, i(97723)),	-- Insubordination Boots
+						un(3, i(97739)),	-- Insubordination Boots
+						un(3, i(97743)),	-- Malcontent's Boots
+						un(3, i(97644)),	-- Malcontent's Boots
+						un(3, i(97643)),	-- Tallgrass Guerilla's Boots
+						un(3, i(97642)),	--  Dissident's Boots
+						un(3, i(97696)),	-- Crimson Schism Slippers
+						un(3, i(97748)),	-- Crimson Schism Slippers
+						un(3, i(97755)),	-- Crimson Schism Slippers
+--[[						un(3, i(97634)),	-- Secessionist's Breastplate
+						un(3, i(97777)),	-- Secessionist's Breastplate
+						un(3, i(97782)),	-- Secessionist's Breastplate
+						un(3, i(97670)),	-- Reformationist's Robe
+						un(3, i(97633)),	-- Disowner's  Tunic
+						un(3, i(97628)),	-- Unbending Spirit Vest
+						un(3, i(97771)),	-- Unbending Spirit Vest
+						un(3, i(97669)),	-- Perjurious Robe
+						un(3, i(97632)),	-- Insurrection Breastplate
+						un(3, i(97766)),	-- Insurrection Breastplate
+--]]					})),
+
 					desc(i(6663), "Can drop from any mob in the Barrens."),	-- Recipe: Elixir of Giant Growth
 					desc(i(6661), "Can drop from any mob in the Barrens."),	-- Recipe: Savory Deviate Delight
 				}),
