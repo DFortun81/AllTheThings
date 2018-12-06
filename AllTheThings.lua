@@ -9226,7 +9226,7 @@ end);
 					o.visible = false;
 				end
 			end;
-			self.Rebuild = function(self)
+			self.Rebuild = function(self, no)
 				-- Rebuild all World Quest data
 				local retry = false;
 				local temp = {};
@@ -9392,7 +9392,7 @@ end);
 					self:MergeObject(self.data.g, self:CreateObject(o));
 				end
 				BuildGroups(self.data, self.data.g);
-				self:Update();
+				if not no then self:Update(); end
 			end
 			self.Sort = function(a, b)
 				if a.isRaid then
@@ -9424,16 +9424,6 @@ end);
 				end
 				return false;
 			end;
-			
-			-- Setup Event Handlers and register for events
-			self.events = {};
-			self:SetScript("OnEvent", function(self, e, ...)
-				-- print(e, ...);
-				-- Rebuild all World Quest data
-				Push(self, "Rebuild", self.Rebuild);
-			end);
-			self:RegisterEvent("PLAYER_ENTERING_WORLD");
-			self:RegisterEvent("ZONE_CHANGED_NEW_AREA");
 		end
 		
 		-- Update the window and all of its row data
