@@ -48,6 +48,36 @@ _.Instances =
 					},
 				},
 			},
+			{	-- Mogu'shan Vaults
+				["instanceID"] = 317,	-- Mogu'shan Vaults
+				["coords"] = {
+					{ 59.6, 39.1, 379 },	-- Kun-Lai Summit (Mogu'shan Terrace)
+				},
+			},
+			{	-- Heart of Fear
+				["instanceID"] = 330,	-- Heart of Fear
+				["coords"] = {
+					{ 39.0, 34.9, 422 },	-- Heart of Fear, Dread Wastes
+				},
+			},
+			{	-- Terrace of Endless Spring
+				["instanceID"] = 320,	-- Terrace of Endless Spring
+				["coords"] = {
+					{ 48.4, 61.4, 433 },	-- Terrace of Endless Spring, The Veiled Stair
+				},
+			},
+			{	-- Throne of Thunder
+				["instanceID"] = 362,	-- Throne of Thunder
+				["coords"] = {
+					{ 63.4, 32.6, 504 },	-- Throne of Thunder, Isle of Thunder
+				},
+			},
+			{	-- Siege of Orgrimmar
+				["instanceID"] = 369,	-- Siege of Orgrimmar
+				["coords"] = {
+					{ 72.4, 44.3, 390 },	-- Siege of Orgrimmar, Vale of Eternal Blossoms (door leading downstairs to entrance)
+				},
+			},
 		},
 	},
 };
