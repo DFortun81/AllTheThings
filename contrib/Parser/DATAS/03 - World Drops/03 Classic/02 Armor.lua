@@ -36,7 +36,7 @@ _.WorldDrops =
 					i(3345),	-- Silk Wizard Hat
 					un(7, i(3392)),	-- Ringed Helm
 					un(7, i(4724)),	-- Humbert's Helm
-					un(7, i(5608)),	-- Living Cowl
+					i(5608),	-- Living Cowl
 					un(7, i(5624)),	-- Circlet of the Order
 					un(7, i(5753)),	-- Ruffled Chaplet
 					i(5819),	-- Sunblaze Coif
