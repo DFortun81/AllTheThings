@@ -2894,7 +2894,7 @@ app.SetCompletedThings = function(checked, fromSettings)
 		if setting then setting:SetChecked(checked); end
 	end
 	app.SetDataMember("ShowCompletedGroups", checked);
-	app.SetDataMember("ShowCompletedGroups", checked);
+	app.SetDataMember("ShowCollectedItems", checked);
 	if checked then
 		app.GroupVisibilityFilter = app.NoFilter;
 		app.CollectedItemVisibilityFilter = app.NoFilter;
@@ -9855,6 +9855,7 @@ app.events.VARIABLES_LOADED = function()
 	GetDataMember("ShowProgress", true);
 	GetDataMember("ShowDescriptions", true);
 	GetDataMember("ShowModels", true);
+	GetDataMember("AutoMainList", false);
 	GetDataMember("AutoMiniList", true);
 	GetDataMember("AutoProfessionMiniList", true);
 	GetDataMember("AutoMinimize", true);
@@ -9941,6 +9942,9 @@ app.events.PLAYER_LOGIN = function()
 	end
 	if GetDataMember("AutoWorldQuestsList", false) then
 		app:GetWindow("WorldQuests"):Show();
+	end
+	if GetDataMember("AutoMainList") then
+		app:OpenMainList();
 	end
 end
 app.events.ACHIEVEMENT_EARNED = function(achievementID, ...)

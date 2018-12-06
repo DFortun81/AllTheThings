@@ -475,6 +475,24 @@ local function createGeneralFrame(parent)
 	minimapButton:SetPoint("TOPLEFT",other,5,-frameSpacer)
 	addObject(elm,minimapButton)
 	
+	-- show main list auto
+	local autoMainList = createCheckBox("Show the Main List Automatically", child, function(self)
+			app.SetDataMember("AutoMainList", self:GetChecked());
+			if self:GetChecked() then
+				app.OpenMainList();
+			end
+		end, 
+		function(self) 
+			self:SetChecked(app.GetDataMember("AutoMainList", true));
+		end,
+		function(self)
+			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
+			GameTooltip:SetText ("Enable this option if you want to see everything you can collect in the game based on your current filters.\n\nDrag the window and rescale it where you want it to appear.\n\nYou can also bind this setting to a Key.\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Main List", nil, nil, nil, nil, true);
+			GameTooltip:Show();
+		end);
+	autoMainList:SetPoint("TOPLEFT",minimapButton,0,-frameSpacer)
+	addObject(elm,autoMainList)
+	
 	-- show mini list auto
 	local autoMinilist = createCheckBox("Show the Mini List Automatically", child, function(self)
 			app.SetDataMember("AutoMiniList", self:GetChecked());
@@ -490,7 +508,7 @@ local function createGeneralFrame(parent)
 			GameTooltip:SetText ("Enable this option if you want to see everything you can collect in your current zone. The list will automatically switch when you change zones.\n\nDrag the window and rescale it where you want it to appear.\n\nSome people don't like this feature, but when you are solo farming, this feature is extremely useful.\n\nYou can also bind this setting to a Key.\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Mini List", nil, nil, nil, nil, true);
 			GameTooltip:Show();
 		end);
-	autoMinilist:SetPoint("TOPLEFT",minimapButton,0,-frameSpacer)
+	autoMinilist:SetPoint("TOPLEFT",autoMainList,0,-frameSpacer)
 	addObject(elm,autoMinilist)
 	
 	-- show profession mini list auto
