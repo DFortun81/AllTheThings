@@ -2886,7 +2886,7 @@ app.ToggleBOEItems = function()
 	app.SetHideBOEItems(not app.GetDataMember("RequireBindingFilter"));
 end
 
-app.SetCompletedThings = function(checked)
+app.SetCompletedThings = function(checked, fromSettings)
 	if not fromSettings then
 		local setting = _G[app:GetName() .. "-Show Completed Groups"];
 		if setting then setting:SetChecked(checked); end
@@ -2907,7 +2907,7 @@ end
 app.ToggleCompletedThings = function()
 	app.SetCompletedThings(not app.GetDataMember("ShowCompletedGroups"));
 end
-app.SetCompletedGroups = function(checked)
+app.SetCompletedGroups = function(checked, fromSettings)
 	if not fromSettings then
 		local setting = _G[app:GetName() .. "-Show Completed Groups"];
 		if setting then setting:SetChecked(checked); end
