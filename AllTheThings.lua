@@ -9484,6 +9484,8 @@ SlashCmdList["AllTheThings"] = function(cmd)
 		app:GetWindow("RaidAssistant"):Toggle();
 	elseif cmd == "wq" then
 		app:GetWindow("WorldQuests"):Toggle();
+	elseif cmd == "unsorted" then
+		app:GetWindow("Unsorted"):Toggle();
 	elseif string.sub(cmd,1,string.len("load "))=="load " then
 		app.Settings:profileLoad(string.sub(cmd,string.len("load ")))
 	elseif cmd == "load" or cmd =="load " then	
