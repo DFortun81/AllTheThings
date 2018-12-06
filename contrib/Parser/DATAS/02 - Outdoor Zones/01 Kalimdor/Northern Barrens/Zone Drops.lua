@@ -42,7 +42,27 @@ _.Zones =
 						un(3, i(97653)),	-- Perjurious Mask 
 						un(3, i(97654)),	-- Insurrection Helm
 						un(3, i(97764)),	-- Insurrection Helm
-						
+					})),
+					un(3, i(97831, {	-- Latent Kor'kron Spaulders (they had unique stats before 6.0)
+						un(3, i(97727)),	-- Insubordination Shoulderpads
+						un(3, i(97736)),	-- Insubordination Shoulderpads
+						un(3, i(97742)),	-- Malcontent's Spaulders
+						un(3, i(97679)),	-- Malcontent's Spaulders
+						un(3, i(97678)),	-- Tallgrass Guerilla's Mantle
+						un(3, i(97677)),	--  Dissident's Mantle
+						un(3, i(97689)),	-- Crimson Schism Pauldrons
+						un(3, i(97752)),	-- Crimson Schism Pauldrons
+						un(3, i(97759)),	-- Crimson Schism Pauldrons
+						un(3, i(97676)),	-- Secessionist's Spaulders
+						un(3, i(97781)),	-- Secessionist's Spaulders,
+						un(3, i(97787)),	-- Secessionist's Spaulders,
+						un(3, i(97674)),	-- Reformationist's Mantle
+						un(3, i(97675)),	-- Disowner's Spaulders
+						un(3, i(97630)),	-- Unbending Spirit Pauldrons
+						un(3, i(97769)),	-- Unbending Spirit Pauldrons
+						un(3, i(97673)),	-- Perjurious Mantle
+						un(3, i(97672)),	-- Insurrection Spaulders
+						un(3, i(97761)),	-- Insurrection Spaulders
 					})),
 					desc(i(6663), "Can drop from any mob in the Barrens."),	-- Recipe: Elixir of Giant Growth
 					desc(i(6661), "Can drop from any mob in the Barrens."),	-- Recipe: Savory Deviate Delight
