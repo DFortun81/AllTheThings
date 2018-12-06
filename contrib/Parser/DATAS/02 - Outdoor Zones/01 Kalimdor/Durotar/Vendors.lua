@@ -14,7 +14,7 @@ _.Zones =
 							},
 							["coord"] = { 50.8, 42.8 },
 						}),
-						n(113615, {	-- Ravika <Darkspear Quartermaster>
+						n(113615, {	-- Ravika <Darkspear Quartermaster> Legion Version
 							["groups"] = {
 								i(97901),	-- Griftah's Authentic Troll Shoes
 								i(97919),	-- Whole-Body Shinka' Toy
@@ -22,8 +22,26 @@ _.Zones =
 								i(98552),	-- Xan'tish's Flute Toy
 							},
 							["coord"] = { 55.4, 11.2 },
-							["description"] = "Vendor is only available at this location if you are on the quest 'The Legion Returns'. This vendor is also available on the Echo Isles.",
+							["description"] = "Only available with the quest'The Legion Returns'. Permanent available on the Echo Isles.",
 						}),
+						un(43, n(71226, {	-- Ravika <Darkspear Quartermaster> 5.3 Version
+							["groups"] = {
+								i(97901),	-- Griftah's Authentic Troll Shoes
+								i(97919),	-- Whole-Body Shinka' Toy
+								i(97942),	-- Sen'jin Spirit Drum Toy
+								i(98552),	-- Xan'tish's Flute Toy
+								un(3, i(97829)),	-- Latent Kor'kron Helm (they had unique stats before 6.0)
+								un(3, i(97831)),	-- Latent Kor'kron Spaulders (they had unique stats before 6.0)
+								un(3, i(97826)),	-- Latent Kor'kron Chestpiece (they had unique stats before 6.0)
+								un(3, i(97828)),	-- Latent Kor'kron Gloves (they had unique stats before 6.0)
+								un(3, i(97832)),	-- Latent Kor'kron Belt (they had unique stats before 6.0)
+								un(3, i(97830)),	-- Latent Kor'kron Leggings (they had unique stats before 6.0)
+								un(3, i(97827)),	-- Latent Kor'kron Boots (they had unique stats before 6.0)
+								un(40, i(97990)),	-- Raptorhide Boxing Gloves
+								un(3, i(98561)),	-- Darkspear Battle Standard
+								un(3, i(98563)),	-- Rainstick
+							},
+						})),
 						n(5942, { -- Zansoa <Fishing Supplies>
 							["groups"] = {
 								i(6368),	-- Recipe: Rainbow Fin Albacore
