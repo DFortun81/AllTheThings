@@ -1564,13 +1564,7 @@ local function createMiniListFrame(parent)
 	addObject(elm,showFrame)
 	
 	local showComp = createCheckBox("Show Completed Groups", child, function(self)
-			app.SetDataMember("ShowCompletedGroups", self:GetChecked());
-			if self:GetChecked() then
-				app.GroupVisibilityFilter = app.NoFilter;
-			else
-				app.GroupVisibilityFilter = app.FilterGroupsByCompletion;
-			end
-			app:RefreshData();
+			app.SetCompletedGroups(self:GetChecked(), true);
 		end, 
 		function(self) 
 			self:SetChecked(app.GetDataMember("ShowCompletedGroups"));
@@ -1584,13 +1578,7 @@ local function createMiniListFrame(parent)
 	addObject(elm,showComp)
 	
 	local showCollected = createCheckBox("Show Collected Things", child, function(self)
-			app.SetDataMember("ShowCollectedItems", self:GetChecked());
-			if self:GetChecked() then
-				app.CollectedItemVisibilityFilter = app.NoFilter;
-			else
-				app.CollectedItemVisibilityFilter = app.Filter;
-			end
-			app:RefreshData();
+			app.SetCollectedThings(self:GetChecked(), true);
 		end, 
 		function(self) 
 			self:SetChecked(app.GetDataMember("ShowCollectedItems"));

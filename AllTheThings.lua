@@ -2886,6 +2886,60 @@ app.ToggleBOEItems = function()
 	app.SetHideBOEItems(not app.GetDataMember("RequireBindingFilter"));
 end
 
+app.SetCompletedThings = function(checked)
+	if not fromSettings then
+		local setting = _G[app:GetName() .. "-Show Completed Groups"];
+		if setting then setting:SetChecked(checked); end
+		setting = _G[app:GetName() .. "-Show Collected Things"];
+		if setting then setting:SetChecked(checked); end
+	end
+	app.SetDataMember("ShowCompletedGroups", checked);
+	app.SetDataMember("ShowCompletedGroups", checked);
+	if checked then
+		app.GroupVisibilityFilter = app.NoFilter;
+		app.CollectedItemVisibilityFilter = app.NoFilter;
+	else
+		app.GroupVisibilityFilter = app.FilterGroupsByCompletion;
+		app.CollectedItemVisibilityFilter = app.Filter;
+	end
+	app:RefreshData();
+end
+app.ToggleCompletedThings = function()
+	app.SetCompletedThings(not app.GetDataMember("ShowCompletedGroups"));
+end
+app.SetCompletedGroups = function(checked)
+	if not fromSettings then
+		local setting = _G[app:GetName() .. "-Show Completed Groups"];
+		if setting then setting:SetChecked(checked); end
+	end
+	app.SetDataMember("ShowCompletedGroups", checked);
+	if checked then
+		app.GroupVisibilityFilter = app.NoFilter;
+	else
+		app.GroupVisibilityFilter = app.FilterGroupsByCompletion;
+	end
+	app:RefreshData();
+end
+app.ToggleCompletedGroups = function()
+	app.SetCompletedGroups(not app.GetDataMember("ShowCompletedGroups"));
+end
+app.SetCollectedThings = function(checked, fromSettings)
+	if not fromSettings then
+		local setting = _G[app:GetName() .. "-Show Collected Things"];
+		if setting then setting:SetChecked(checked); end
+	end
+	app.SetDataMember("ShowCollectedItems", checked);
+	if checked then
+		app.CollectedItemVisibilityFilter = app.NoFilter;
+	else
+		app.CollectedItemVisibilityFilter = app.Filter;
+	end
+	app:RefreshData();
+end
+app.ToggleCollectedThings = function()
+	app.SetCollectedThings(not app.GetDataMember("ShowCollectedItems"));
+end
+
 app.SetPortraitTexture = _G["SetPortraitTextureFromCreatureDisplayID"];
 app.GetCurrentMapID = function()
 	local uiMapID = C_Map.GetBestMapForUnit("player");
@@ -9582,6 +9636,9 @@ app.events.VARIABLES_LOADED = function()
 	BINDING_NAME_ALLTHETHINGS_TOGGLEMAINLIST = L("TOGGLE_MAINLIST");
 	BINDING_NAME_ALLTHETHINGS_TOGGLEMINILIST = L("TOGGLE_MINILIST");
 	BINDING_NAME_ALLTHETHINGS_TOGGLEBOEITEMS = L("TOGGLE_BOEITEMS");
+	BINDING_NAME_ALLTHETHINGS_TOGGLECOMPLETEDTHINGS = L("TOGGLE_COMPLETEDTHINGS");
+	BINDING_NAME_ALLTHETHINGS_TOGGLECOMPLETEDGROUPS = L("TOGGLE_COMPLETEDGROUPS");
+	BINDING_NAME_ALLTHETHINGS_TOGGLECOLLECTEDTHINGS = L("TOGGLE_COLLECTEDTHINGS");
 	BINDING_NAME_ALLTHETHINGS_TOGGLECOMPLETIONISTMODE = L("TOGGLE_COMPLETIONIST_MODE");
 	BINDING_NAME_ALLTHETHINGS_TOGGLEDEBUGMODE = L("TOGGLE_DEBUG_MODE");
 	BINDING_NAME_ALLTHETHINGS_OPEN_RAID_ASSISTANT = L("OPEN_RAID_ASSISTANT");

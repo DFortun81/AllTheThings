@@ -20,6 +20,15 @@
 	<Binding name="ALLTHETHINGS_TOGGLEBOEITEMS" category="ADDONS">
 		AllTheThings.ToggleBOEItems();
 	</Binding>
+	<Binding name="ALLTHETHINGS_TOGGLECOMPLETEDTHINGS" category="ADDONS">
+		AllTheThings.ToggleCompletedThings();
+	</Binding>
+	<Binding name="ALLTHETHINGS_TOGGLECOMPLETEDGROUPS" category="ADDONS">
+		AllTheThings.ToggleCompletedGroups();
+	</Binding>
+	<Binding name="ALLTHETHINGS_TOGGLECOLLECTEDTHINGS" category="ADDONS">
+		AllTheThings.ToggleCollectedThings();
+	</Binding>
 	<Binding name="ALLTHETHINGS_TOGGLECOMPLETIONISTMODE" category="ADDONS">
 		AllTheThings.ToggleCompletionistMode();
 	</Binding>
