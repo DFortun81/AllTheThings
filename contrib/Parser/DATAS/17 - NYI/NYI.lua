@@ -434,6 +434,20 @@ _.NeverImplemented =
 		un(1, i(146800)),	-- [BUILDING CONTRIBUTION REWARD ITEM [NYI]]
 		un(1, i(146799)),	-- [BUILDING CONTRIBUTION REWARD ITEM [NYI]]
 		un(1, i(115371)),	-- [PLACEHOLDER TIER 3 ITEM]
+		un(1, i(100894)),	-- Deathtoll's Reward
+		un(1, i(100897)),	-- Skel'tik the Baleful's Reward
+		un(1, i(100898)),	-- Kull Bloodseeker's Reward
+		un(1, i(109012)),	-- Frostwolf Ancestral Totem
+		un(1, i(124644)),	-- Unknown
+		un(1, i(93660)),	-- Thunder-Laced Egg
+		un(1, i(136621)),	-- Unknown
+		un(1, i(40796)),	-- Unknown
+		un(1, i(42147)),	-- Unknown
+		un(1, i(43254)),	-- Unknown
+		un(1, i(44125)),	-- zzzOLDLesser Inscription of Template - PH
+		un(1, i(44126)),	-- zzzOLDGreater Inscription of Template - PH
+		un(1, i(92563)),	-- The Eye of the Storm
+		un(1, i(136411)),	-- Unknown
 		un(1, i(22233)), -- Zigris' Footlocker
 		un(1, i(35874)), -- Whizzlespark's Portable Pet Mansion
 		un(1, i(111810)),	-- Barracks, Level 1 - unused version (used version is 111956)
@@ -761,21 +775,6 @@ _.NeverImplemented =
 			un(1, i(42189)),	-- Pattern: Wispcloak (pattern never went live, but it's learned at the trainer)
 			un(1, i(42174)),	-- Pattern: Yellow Lumberjack Shirt (pattern never went live, but it's learned at the trainer)
 		}),
-	}),
-	n(-104, { -- Quest Items
-		un(1, i(100894)),	-- Deathtoll's Reward
-		un(1, i(100897)),	-- Skel'tik the Baleful's Reward
-		un(1, i(100898)),	-- Kull Bloodseeker's Reward
-		un(1, i(109012)),	-- Frostwolf Ancestral Totem
-		un(1, i(124644)),	-- Unknown
-		un(1, i(93660)),	-- Thunder-Laced Egg
-		un(1, i(136621)),	-- Unknown
-		un(1, i(40796)),	-- Unknown
-		un(1, i(42147)),	-- Unknown
-		un(1, i(43254)),	-- Unknown
-		un(1, i(44125)),	-- zzzOLDLesser Inscription of Template - PH
-		un(1, i(44126)),	-- zzzOLDGreater Inscription of Template - PH
-		un(1, i(92563)),	-- The Eye of the Storm
 	}),
 	n(-161, { -- Toys
 		un(1, i(140779)),	-- Falanaar Echo
