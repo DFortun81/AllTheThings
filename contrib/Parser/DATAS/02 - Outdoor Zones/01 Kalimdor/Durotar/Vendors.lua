@@ -30,6 +30,8 @@ _.Zones =
 								i(97919),	-- Whole-Body Shinka' Toy
 								i(97942),	-- Sen'jin Spirit Drum Toy
 								i(98552),	-- Xan'tish's Flute Toy
+								i(97921),	-- Bom'bay's Color-Seein' Sauce
+								i(97821),	-- Gahz'rooki's Summoning Stone
 								un(3, i(97829)),	-- Latent Kor'kron Helm (they had unique stats before 6.0)
 								un(3, i(97831)),	-- Latent Kor'kron Spaulders (they had unique stats before 6.0)
 								un(3, i(97826)),	-- Latent Kor'kron Chestpiece (they had unique stats before 6.0)

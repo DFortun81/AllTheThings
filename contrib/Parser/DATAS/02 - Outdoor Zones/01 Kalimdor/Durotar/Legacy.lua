@@ -15,6 +15,22 @@ _.Zones =
 									["u"] = 40, -- Legacy Quest/Quest Item
 								}),
 							}),
+							q(32872, {	-- Battlefield: Barrens Ally
+								["groups"] = {
+									un(3, i(97849)),	-- Radical Mojo
+								},
+								["races"] = ALLIANCE_ONLY,
+								["isWeekly"] = true,
+								["u"] = 40, -- Legacy Quest/Quest Item
+							}),
+							q(32862, {	-- Battlefield: Barrens Horde
+								["groups"] = {
+									un(3, i(97849)),	-- Radical Mojo
+								},
+								["races"] = HORDE_ONLY,
+								["isWeekly"] = true,
+								["u"] = 40, -- Legacy Quest/Quest Item
+							}),
 							q(1843, {	-- Brutal Gauntlets
 								["groups"] = {
 									un(2, i(7129)),	-- Brutal Gauntlets
