@@ -53,7 +53,7 @@ _.GearSets =
 					n(-145, { -- Mountainsage
 						["groups"] = {
 							i(101083),	-- Mountainsage Staff
-							i(101172),	-- Mountainsage Wand
+							i(101081),	-- Mountainsage Wand
 							i(101075),	-- Mountainsage Hood
 							i(101068),	-- Mountainsage Medallion
 							i(101082),	-- Mountainsage Cloak of Destruction

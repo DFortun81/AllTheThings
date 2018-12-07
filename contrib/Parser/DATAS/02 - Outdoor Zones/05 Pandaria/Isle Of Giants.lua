@@ -42,6 +42,7 @@ _.Zones =
 									i(90724),	-- Spriggin's Sproggin' Leggin'
 									i(90718),	-- Torik-Ethis' Bloodied Legguards
 									i(90722),	-- Torik-Ethis' Gilded Legplates
+									i(95179),	-- Necklace of the Hazillosaurus
 								}), 
 								dr(1, {
 									i(90725),	-- Gaarn's Leggings of Infestation
