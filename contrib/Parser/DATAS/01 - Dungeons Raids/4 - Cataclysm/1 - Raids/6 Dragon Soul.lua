@@ -704,6 +704,7 @@ _.Instances =
 								i(77193),	-- Souldrinker
 								i(78359),	-- Vishanka, Jaws of the Earth
 								i(122198),	-- Music Roll: The Shattering
+								i(78352),	-- Fragment of Deathwing's Jaw
 							})),
 						},
 					}),
@@ -1149,6 +1150,7 @@ _.Instances =
 								i(78479),	-- Souldrinker
 								i(78471),	-- Vishanka, Jaws of the Earth
 								i(122198),	-- Music Roll: The Shattering
+								i(78352),	-- Fragment of Deathwing's Jaw
 							})),
 						},
 					}),
