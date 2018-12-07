@@ -11,7 +11,7 @@ _.Zones =
 				["g"] = {
 					{	-- Pet Battle
 						["npcID"] = -25,	-- Pet Battle
-						["f"] = 101,	-- Battle Pets
+						["f"] = 101,		-- Battle Pets
 						["g"] = {
 							{	-- Fel-Touched Pet Supplies
 								["itemID"] = 127751,	-- Fel-Touched Pet Supplies
