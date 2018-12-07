@@ -8,7 +8,7 @@ _.Zones =
 			["groups"] = {
 				n(-17, {	-- Quests
 --[[				
-					qp129(qg(4156, qa(29325))),	-- A Slippery Snack
+					qg(4156, qa(29325, { ["requireSkill"] = 129 })),	-- A Slippery Snack
 					qg(4087, qa(27225, {	-- A Summons from Ander Germaine (breadcrumb quest for 27337)
 					["classes"] = {1},
 					})),
@@ -18,11 +18,11 @@ _.Zones =
 					qg(4217, qa(27273, {	-- An Invitation from Moonglade (breadcrumb quest for 27356)
 						["classes"] = {11},
 					})),
-					qp129(qg(4156, qa(29359))),	-- An Old Favorite
+					qg(4156, qa(29359, { ["requireSkill"] = 129 })),	-- An Old Favorite
 					qg(7316, qa( 6342, {	-- An Unexpected Gift
 						["races"] = {4},
 					})),
-					qp185(qg(4210, qa(29316))),	-- Back to Basics
+					qg(4210, qa(29316, { ["requireSkill"] = 185 })),	-- Back to Basics
 					qg(42936, qa(26383, {	-- Breaking Waves of Change (breadcrumb quest for 13518, not available if 26385, 28490 are completed)
 						["races"]= {1,3,4,7,11,22,24,25},
 					})),
@@ -41,7 +41,7 @@ _.Zones =
 --						["sourceQuests"] = {  },	-- 
 					}),
 --[[					
-					qp129(qg(4156, qa(29321))),	-- Happy as a Clam Digger
+					qg(4156, qa(29321, { ["requireSkill"] = 129 })),	-- Happy as a Clam Digger
 					o(207321, {	-- Hero's Call Board (Darnassus)	
 						qa(29391),	-- Guardians of Hyjal: Call of the Ancients
 						qa(29387),	-- Guardians of Hyjal: Firelands Invasion!
@@ -108,22 +108,27 @@ _.Zones =
 					qg(4217, q(28289, {	-- Moonglade Calls (breadcrumb quest for 28343)
 						["classes"] = {11},
 					})),
-					qp165(qg(6034, qa( 1582))),	-- Moonglow Vest
-					qp185(qg(4210, qa(29314))),	-- Remembering the Ancestors
+					{	-- Moonglow Vest
+						["questID"] = 1582,
+						["qg"] = 6034,	-- Lotherias
+						["races"] = ALLIANCE_ONLY,
+						["requireSkill"] = 165,	-- Leatherworking
+					},
+					qg(4210, qa(29314, { ["requireSkill"] = 185 })),	-- Remembering the Ancestors
 					qg(40552, qa( 6343, {	-- Return to Nyoma
 						["races"] = {4},
 					})),
-					qp185(qg(4210, qa(29318))),	-- Ribs for the Sentinels
-					qp185(qg(4210, qa(29357))),	-- Spice Bread Aplenty
-					qp129(qg(4156, qa(29323))),	-- Stocking Up
+					qg(4210, qa(29318, { ["requireSkill"] = 185 })),	-- Ribs for the Sentinels
+					qg(4210, qa(29357, { ["requireSkill"] = 185 })),	-- Spice Bread Aplenty
+					qg(4156, qa(29323, { ["requireSkill"] = 129 })),	-- Stocking Up
 					qg(46908, qa(27846, {	-- The Grateful Dead (HOLIDAY: day of the dead)
 						["races"] = {22},
 					})),
 					qg(34479, qa(14170, {	-- The Grateful Dead (HOLIDAY: day of the dead)
 						["races"] = {4},
 					})),
-					qp185(qg(4210, qa(29313))),	-- The Secret to Perfect Kimchi
-					qp129(qg(4156, qa(29324))),	-- The Sister's Pendant
+					qg(4210, qa(29313, { ["requireSkill"] = 185 })),	-- The Secret to Perfect Kimchi
+					qg(4156, qa(29324, { ["requireSkill"] = 129 })),	-- The Sister's Pendant
 					qg(11401, qa(27269, {	-- The Temple of the Moon (breadcrumb quest for 27362)
 						["races"] = {4},
 						["classes"] = {5},

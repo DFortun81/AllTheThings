@@ -127,7 +127,13 @@ _.Zones =
 						["qg"] = 3352,	-- Ormak Grimshot
 						["classes"] = { 3 },	-- Hunter
 					}),
---					qp755(qg(50482, q( 25160))),	-- A Present for Lila
+					{	-- A Present for Lila
+						["questID"] = 25160,
+						["qg"] = 50482,	-- Marith Lazuria
+						["coord"] = { 72.4, 34.6 },
+						["isDaily"] = true,
+						["requireSkill"] = 755,	-- Jewelcrafting
+					},
 					q(27435, {	-- A Seer's Staff
 						["groups"] = {
 							i(65484),	-- Staff of the Earthmother
@@ -144,7 +150,7 @@ _.Zones =
 						["races"] = { 9 },	-- Goblin
 						["classes"] = { 5 },	-- Priest
 					}),
---					qp129(qg(43239, q( 26557))),	-- A Staggering Effort
+--					qg(43239, q( 26557, { ["requireSkill"] = 129 })),	-- A Staggering Effort
 					q(32309, {	-- A Tale of Six Masters
 						["qg"] = 88705,	-- Kranosh
 						["classes"] = { 9 },	-- Warlock
@@ -259,7 +265,7 @@ Legacy				q( 1436),	-- Alliance Relations
 					}),
 --[[					
 					qg(53081, q(29219)),	-- Bwemba's Spirit
-					qp129(qg(43239, q(26543))),	-- Clammy Hands
+					qg(43239, q(26543, { ["requireSkill"] = 129 })),	-- Clammy Hands
 					qg(15116, q( 8228)),	-- Could I get a Fishing Flier?
 --]]					
 					q(6385, { -- Doras the Wind Rider Master
@@ -285,9 +291,20 @@ Legacy				q( 1436),	-- Alliance Relations
 						["coord"] = { 49.2, 72.3 },
 						["sourceQuest"] = 13841,	-- All Apologies
 					},
---[[					
-					qp755(qg(50482, q(25162))),	-- Elemental Goo
-					qp171(qg(3347, q(29481))),	-- Elixir Master
+					{	-- Elemental Goo
+						["questID"] = 25162,
+						["qg"] = 50482,	-- Marith Lazuria
+						["coord"] = { 72.4, 34.4 },
+						["isDaily"] = true,
+						["requireSkill"] = 755,	-- Jewelcrafting
+					},
+--[[
+					{	-- Elixir Master
+						["questID"] = 29481,
+						["qg"] = 3347,	-- Yelmak
+						["coord"] = { 55.6, 45.8 },
+						["requireSkill"] = 171,	-- Alchemy
+					},
 --]]
 					q(31034, {	-- Enemies Below
 						["qg"] = 14720,	-- Eitrigg
@@ -313,16 +330,15 @@ Legacy				q( 1436),	-- Alliance Relations
 					}),
 --[[
 					i(63276, {	-- Forged Documents
-						qp773(q(27686, {	-- Forged Documents
-							["groups"] = {
-							},
+						q(27686, {	-- Forged Documents
+							["requireSkill"] = 733,	-- Inscription
 							["description"] = "After creating Forged Documents with Inscription, search the city for an NPC to accept them - the quest can end in a variety of different places.",
-						})),
+						}),
 					}),
 					
-					qp202(qg(11017, q(29477))),	-- Gnomish Engineering
-					qp202(qg(11017, q(29475))),	-- Goblin Engineering
-					qp356(qg(45540, q( 6623))),	-- Horde Trauma
+					qg(11017, q(29477, { ["requireSkill"] = 202 })),	-- Gnomish Engineering
+					qg(11017, q(29475, { ["requireSkill"] = 202 })),	-- Goblin Engineering
+					qg(45540, q( 6623)),	-- Horde Trauma -- previously required First Aid. Is this still available now that First Aid was removed?
 --]]					
 --[[					
 					desc(q( 32674), "This quest is automatically offered to Horde players upon reaching level 60."),	-- I Believe You Can Fly (despite this quest, you can learn flying anywhere - not sure if it should be included?)
@@ -370,23 +386,40 @@ Legacy				q( 1436),	-- Alliance Relations
 						},
 						["classes"] = {11},
 					})),
-					qp755(qg(50482, q(25158))),	-- Nibbler! No!
-					qp129(qg(43239, q(26556))),	-- No Dumping Allowed
 --]]
+					{	-- Nibbler! No!
+						["questID"] = 25158,
+						["qg"] = 50482,	-- Marith Lazuria
+						["coord"] = { 72.4, 34.4 },
+						["isDaily"] = true,
+						["requireSkill"] = 755,	-- Jewelcrafting
+					},
+					--qg(43239, q(26556, { ["requireSkill"] = 129 })),	-- No Dumping Allowed
 					qg(3412, q(2950, {	-- Nogg's Ring Redo
 						["sourceQuests"] = { 2949 },	-- Return of the Ring
 					})),
 --[[
 					qg(43062, q(26417)),	-- Northern Stranglethorn: The Fallen Empire
-					qp755(qg(50482, q(25161))),	-- Ogrezonians in the Mood
 --]]
+					{	-- Ogrezonians in the Mood
+						["questID"] = 25161,
+						["qg"] = 50482,	-- Marith Lazuria
+						["coord"] = { 72.4, 34.4 },
+						["isDaily"] = true,
+						["requireSkill"] = 755,	-- Jewelcrafting
+					},
 					q(26642, {	-- Preserving the Barrens
 						["qg"] = 35068,	-- Gotura Fourwinds
 						["coord"] = { 47.6, 71.3 },
 						["isBreadcrumb"] = true,
 					}),
 --[[
-					qp171(qg(3347, q(29067))),	-- Potion Master
+					{	-- Potion Master
+						["questID"] = 29067,
+						["qg"] = 3347,	-- Yelmak
+						["coord"] = { 55.6, 45.8 },
+						["requireSkill"] = 171,	-- Alchemy
+					},
 --					qg(95234, q(44092)),	-- Protect the Home Front (LEGACY - pre-Legion)
 					qg(14720, q(25275)),	-- Report to the Labor Captain (QG in Orgrimmar, additional QGs 39605 and 86832, previous Horde leaders)
 --]]
@@ -505,7 +538,13 @@ Legacy				q( 1436),	-- Alliance Relations
 						["races"] = { 26 },	-- Pandaren
 					})),
 					qg(14392, q( 7493)),	-- The Journey Has Just Begun
---					qp755(qg(50482, q(25159))),	-- The Latest Fashion!
+					{	-- The Latest Fashion!
+						["questID"] = 25159,
+						["qg"] = 50482,	-- Marith Lazuria
+						["coord"] = { 72.4, 34.4 },
+						["isDaily"] = true,
+						["requireSkill"] = 755,	-- Jewelcrafting
+					},
 		--]]			
 					qg(14720, q( 7784,	{	-- The Lord of Blackrock (QG listed on wowhead as 4949 but I'm assuming it's Saurfang now - would need someone w/ a Horde character to turn in Nef's head)
 						i(19366),	-- Master Dragonslayer's Orb
@@ -532,7 +571,7 @@ Legacy				q( 1436),	-- Alliance Relations
 --					q(40786),	-- The Smoldering Ember (QG item received from final boss in TW dungeons)
 --[[					
 					qg(52234, q(29220)),	-- To Bambala
-					qp185(qg(3399, q( 6611))),	-- To Gadgetzan You Go!
+					qg(3399, q(6611, { ["requireSkill"] = 185 })),	-- To Gadgetzan You Go!
 					qg(45244, q(28816)),	-- To the Depths
 --]]					
 					q(27402, {	-- Token of Power
@@ -556,7 +595,14 @@ Legacy				q( 1436),	-- Alliance Relations
 						},
 						["lvl"] = 84,
 					},
---					qp171(qg(3347, q(29482))),	-- Transmutation Master
+--[[
+					{	-- Transmutation Master
+						["questID"] = 29482,
+						["qg"] = 3347,	-- Yelmak
+						["coord"] = { 55.6, 45.8 },
+						["requireSkill"] = 171,	-- Alchemy
+					},
+]]--
 					q(28475, {	-- Twilight Scheming
 						["groups"] = {
 							i(65634),	-- Crown of the Sunchaser
@@ -635,7 +681,7 @@ Legacy				q( 1436),	-- Alliance Relations
 					}),
 --					qg( 3362, q( 7660)),	-- Wolf Swapping - Arctic Wolf
 --					qg( 3362, q( 7661)),	-- Wolf Swapping - Red Wolf
---					qp129(qg(3332, q( 6608))),	-- You Too Good.	
+--					qg(3332, q( 6608, { ["requireSkill"] = 129 })),	-- You Too Good.	
 --]]					
 				})),
 			},

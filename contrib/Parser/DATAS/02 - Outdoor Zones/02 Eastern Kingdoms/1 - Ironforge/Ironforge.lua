@@ -79,9 +79,16 @@ _.Zones =
 						["coord"] = { 39.7, 57.3 },
 						["sourceQuests"] = { 26112 },	-- Demanding Answers
 					}),
-					qp164(qg(6031, qa( 1578, {	-- Supplying the Front
-						i(33792),	-- Plans: Heavy Copper Longsword
-					}))),
+					{	-- Supplying the Front
+						["questID"] = 1578,
+						["groups"] = {
+							i(33792),	-- Plans: Heavy Copper Longsword
+						},
+						["qg"] = 6031,	-- Tormus Deepforge
+						["coord"] = { 49.0, 42.4 },
+						["races"] = ALLIANCE_ONLY,
+						["requireSkill"] = 164,	-- Blacksmithing
+					},
 					qa(39956, {	-- The Legacy Passed On
 						["qg"] = 97762,	-- Bill Spearshaker <Author Extrodinaire>
 						["sourceQuests"] = { 39955 },	-- The Plot Thickens
@@ -105,8 +112,8 @@ _.Zones =
 					})),
 					qg(6569, qa( 2039)),	-- Find Bingles
 					qg(6031, qa( 1618)),	-- Gearing Redridge
-					qp202(qg(5174, q 29477))),	-- Gnomish Engineering
-					qp202(qg(5174, q 29475))),	-- Goblin Engineering
+					qg(5174, q 29477, { ["requireSkill"] = 202 })),	-- Gnomish Engineering
+					qg(5174, q 29475, { ["requireSkill"] = 202 })),	-- Goblin Engineering
 					qg(4256, qa( 6388, {	-- Gryth Thurden
 						["races"] = {3,7}, -- Dwarf, Gnome
 					})),
@@ -133,7 +140,7 @@ _.Zones =
 						qa(28565),	-- Hero's Call: Wetlands!
 						qa(29156),	-- The Troll Incursion
 					}),
-					qp129(qg(5161, qa( 6609))),	-- I Got Nothin' Left!
+					qg(5161, qa( 6609, { ["requireSkill"] = 129 })),	-- I Got Nothin' Left!
 					qg(5159, qa( 6612)),	-- I Know A Guy...
 					qg(5146, qa(27271, {	-- Journey to the Wizard's Sanctum
 						["classes"] = {8}, -- Mage

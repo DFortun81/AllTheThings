@@ -354,6 +354,7 @@ _.Zones =
 	--					q(38892),	-- Scouting Report (not in game?)
 					qh(24906, {	-- Seaside Salvage
 						["qg"] = 38534,	-- Megs Dreadshredder
+						["sourceQuest"] = 27447,	-- Tanaris is Calling
 					}),
 					qa(25048, {	-- Seaside Salvage
 						["qg"] = 38535,	-- Kelsey Steelspark

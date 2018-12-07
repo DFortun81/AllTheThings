@@ -747,86 +747,10 @@ end
 qd = function(t)							-- Gives a quest the Daily Description
 	t.isDaily = true;
 	return t;
-	
 end
 ql = function(t)							-- Gives a quest the Legendary Description
 	t.description = "This quest is part of a legendary quest line.";
 	t.icon = "Interface\\Icons\\70_inscription_vantus_rune_odyn";
-	return t;
-end
-qp171 = function(t)						-- Gives a quest the Alchemy Description
-	t.description = "This quest requires the Alchemy profession.";
-	t.icon = "Interface\\Icons\\trade_alchemy";
-	return t;
-end
-qp794 = function(t)						-- Gives a quest the Archaeology Description
-	t.description = "This quest requires the Archaeology profession.";
-	t.icon = "Interface\\Icons\\trade_archaeology";
-	return t;
-end
-qp164 = function(t)						-- Gives a quest the Blacksmithing Description
-	t.description = "This quest requires the Blacksmithing profession.";
-	t.icon = "Interface\\Icons\\trade_blacksmithing";
-	return t;
-end
-qp185 = function(t)						-- Gives a quest the Cooking Description
-	t.description = "This quest requires the Cooking profession.";
-	t.icon = "Interface\\Icons\\inv_misc_food_15";
-	return t;
-end
-qp333 = function(t)						-- Gives a quest the Enchanting Description
-	t.description = "This quest requires the Enchanting profession.";
-	t.icon = "Interface\\Icons\\trade_engraving";
-	return t;
-end
-qp202 = function(t)						-- Gives a quest the Engineering Description
-	t.description = "This quest requires the Engineering profession.";
-	t.icon = "Interface\\Icons\\trade_engineering";
-	return t;
-end
-qp129 = function(t)						-- Gives a quest the Fishing Description
-	t.description = "This quest requires the Fishing profession.";
-	t.icon = "Interface\\Icons\\spell_holy_sealofsacrifice";
-	return t;
-end
-qp356 = function(t)						-- Gives a quest the First Aid Description
-	t.description = "This quest requires the First Aid profession.";
-	t.icon = "Interface\\Icons\\trade_fishing";
-	return t;
-end
-qp182 = function(t)						-- Gives a quest the Herbalism Description
-	t.description = "This quest requires the Herbalism profession.";
-	t.icon = "Interface\\Icons\\spell_nature_naturetouchgrow";
-	return t;
-end
-qp773 = function(t)						-- Gives a quest the Inscription Description
-	t.description = "This quest requires the Inscription profession.";
-	t.icon = "Interface\\Icons\\inv_inscription_tradeskill01";
-	return t;
-end
-qp755 = function(t)						-- Gives a quest the Jewelcrafting Description
-	t.description = "This quest requires the Jewelcrafting profession.";
-	t.icon = "Interface\\Icons\\inv_misc_gem_01";
-	return t;
-end
-qp165 = function(t)						-- Gives a quest the Leatherworking Description
-	t.description = "This quest requires the Leatherworking profession.";
-	t.icon = "Interface\\Icons\\inv_misc_armorkit_17";
-	return t;
-end
-qp186 = function(t)						-- Gives a quest the Mining Description
-	t.description = "This quest requires the Mining profession.";
-	t.icon = "Interface\\Icons\\trade_mining";
-	return t;
-end
-qp393 = function(t)						-- Gives a quest the Skinning Description
-	t.description = "This quest requires the Skinning profession.";
-	t.icon = "Interface\\Icons\\inv_misc_pelt_wolf_01";
-	return t;
-end
-qp197 = function(t)						-- Gives a quest the Tailoring Description
-	t.description = "This quest requires the Tailoring profession.";
-	t.icon = "Interface\\Icons\\trade_tailoring";
 	return t;
 end
 qpvp = function(t)						-- Gives a quest the PvP Description
@@ -838,7 +762,7 @@ qr = function(t)
 	t.repeatable = true;
 	return t;
 end
-qw = function(t)		
+qw = function(t)
 	t.isWeekly = true;
 	return t;
 end

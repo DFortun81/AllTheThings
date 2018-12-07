@@ -27,8 +27,13 @@ _.Zones =
 						["coord"] = { 41.5, 83.6 },
 						["sourceQuests"] = { 2541 },	-- The Sleeping Druid
 					}),
---[[					
-					qp171(qg(2083, qa(1581))),	-- Elixirs for the Bladeleafs
+--[[
+					{	-- Elixirs for the Bladeleafs
+						["questID"] = 1581,
+						["qg"] = 2083,	-- Syral Bladeleaf
+						["coord"] = { 55.8, 50.4 },
+						["requireSkill"] = 171,	-- Alchemy
+					},
 					qg(3567, qa( 2459)),	-- Ferocitas the Dream Eater
 --]]
 					qa(476, {	-- Gnarlpine Corruption

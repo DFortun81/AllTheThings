@@ -908,7 +908,7 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 28159,	-- The Doomstone
 					},
-					{	-- Submerged Outhouse (check if this is actually required)
+					{	-- Submerged Outhouse
 						["objectID"] = 202975,
 						["coord"] = { 79.5, 75.0 },
 						["groups"] = {
