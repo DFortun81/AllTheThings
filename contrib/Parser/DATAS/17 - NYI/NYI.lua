@@ -597,6 +597,7 @@ _.NeverImplemented =
 		p(1751),
 	}))),
 		un(1, i(130145)), -- Unknown
+		un(1, i(91031)), -- Darkmoon Glowfly (you get it via pet battles)
 		un(1, i(100870)), -- Murkimus' Tyrannical Spear
 		un(1, i(119147)), -- Nether Ray Fry (unsed Version)
 		un(1, i(119112)), -- Son of Sethe (unsed Version)
