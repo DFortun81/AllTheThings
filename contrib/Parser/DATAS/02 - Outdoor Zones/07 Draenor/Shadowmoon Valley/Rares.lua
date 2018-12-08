@@ -74,6 +74,11 @@ _.Zones =
 									i(113540), -- Ba'ruun's Bountiful Bloom Toy 
 								},
 							},
+							{	-- Bahameye	-- drops meat but no gear other than world drops
+								["npcID"] = 81406,
+								["questID"] = 35281,
+								["coord"] = { 29.8, 6.8 },
+							},
 							{	-- Beloved's Offering 
 								["objectID"] = 232591,	-- Beloved's Offering 
 								["questID"] = 33046,
@@ -344,6 +349,7 @@ _.Zones =
 							},
 							{	-- Leaf-Reader Kurri
 								["npcID"] = 72537,	-- Leaf-Reader Kurri
+								["questID"] = 33055,
 								["coord"] = { 37.4, 14.4 },
 								["g"] = {
 									i(108907),	-- Mushroom of Destiny
