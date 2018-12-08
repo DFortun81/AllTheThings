@@ -100,9 +100,54 @@ i(143939, 1388);	-- Commendation of the Sunreaver Onslaught
 i(143941, 1272);	-- Commendation of The Tillers
 
 -- Miscellaneous Rep Items
+
+-- Classic
+i(21229, 910);		-- Qiraji Lord's Insignia [Brood of Nozdormu]
+i(21230, 910);		-- Ancient Qiraji Artifact [Brood of Nozdormu]
+
+-- Burning Crusade
+i(24291, 970);		-- Bog Lord Tendrils [Sporeggar]
+i(24246, 970);		-- Sanguine Hibiscus [Sporeggar]
+i(29425, 932);		-- Mark of Kil'jaden [The Aldor]
+i(30809, 932);		-- Mark of Sargeras [The Aldor]
+i(29740, 932);		-- Fel Armament [The Aldor]
+i(29426, 934);		-- Firewing Signet [The Scryers]
+i(30810, 934);		-- Sunfury Signet [The Scryers]
+i(29739, 934);		-- Arcane Tome [The Scryers]
+i(32506, 1015);		-- Netherwing Egg [Netherwing]
+
+-- Wrath of the Lich King
+i(42780, 1119);		-- Relics of Ulduar [Sons of Hodir]
+
+-- Cataclysm
+i(63518, 1178);		-- Hellscream's Reach Commendation
+i(63517, 1177);		-- Baradin's Wardens Commendation
+
+-- Mists of Pandaria
 i(104286, 1271);	-- Quivering Firestorm Egg [Order of the Cloud Serpent]
 i(89155, 1271);		-- Onyx Egg [Order of the Cloud Serpent]
-i(32506, 1015);		-- Netherwing Egg [Netherwing]
+
+-- Warlords of Draenor
+i(118099, 1711);	-- Gorian Artifact Fragment [Steamwheedle Preservation]
+i(118100, 1711);	-- Highmaul Relic [Steamwheedle Preservation]
+i(118654, 1711);	-- Aogexon's Fang [Steamwheedle Preservation]
+i(118655, 1711);	-- Bergruu's Horn [Steamwheedle Preservation]
+i(118656, 1711);	-- Dekorhan's Tusk [Steamwheedle Preservation]
+i(118657, 1711);	-- Direhoof's Hide [Steamwheedle Preservation]
+i(118658, 1711);	-- Gagrog's Skull [Steamwheedle Preservation]
+i(118659, 1711);	-- Mu'gra's Head [Steamwheedle Preservation]
+i(118660, 1711);	-- Thek'talon's Talon [Steamwheedle Preservation]
+i(118661, 1711);	-- Xelganak's Stinger [Steamwheedle Preservation]
+i(120172, 1711);	-- Vileclaw's Claw [Steamwheedle Preservation]
+i(117492, 1515);	-- Relic of Rukhmar [Arakkoa Outcasts]
+
+
+
+
+
+-- Legion
+
+-- Battle For Azeroth
 i(163217, 2164);	-- Azeroth's Tear [Champions of Azeroth]
 i(163616, 2160);	-- Dented Coin [Proudmore Admiralty]
 i(163614, 2161);	-- Exotic Spices [Order of Embers]
@@ -112,16 +157,3 @@ i(163615, 2162);	-- Lost Sea Scroll [Storm's Wake]
 i(163617, 2159);	-- Rusted Alliance Insignia [7th Legion]
 i(163621, 2157);	-- Rusted Horde Insignia [Honorbound]
 i(163618, 2158);	-- Shimmering Shell [Volundai]
-i(24291, 970);		-- Bog Lord Tendrils [Sporeggar]
-i(24246, 970);		-- Sanguine Hibiscus [Sporeggar]
-i(42780, 1119);		-- Relics of Ulduar [Sons of Hodir]
-i(63518, 1178);		-- Hellscream's Reach Commendation
-i(63517, 1177);		-- Baradin's Wardens Commendation
-i(29425, 932);		-- Mark of Kil'jaden [The Aldor]
-i(30809, 932);		-- Mark of Sargeras [The Aldor]
-i(29740, 932);		-- Fel Armament [The Aldor]
-i(29426, 934);		-- Firewing Signet [The Scryers]
-i(30810, 934);		-- Sunfury Signet [The Scryers]
-i(29739, 934);		-- Arcane Tome [The Scryers]
-i(21229, 910);		-- Qiraji Lord's Insignia [Brood of Nozdormu]
-i(21230, 910);		-- Ancient Qiraji Artifact [Brood of Nozdormu]
