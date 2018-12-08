@@ -8393,18 +8393,18 @@ function app:GetWindow(suffix, parent, onUpdate)
 					t = app.CreateObject(t.objectID, t);
 				elseif t.followerID then
 					t = app.CreateFollower(t.followerID, t);
-				elseif t.recipeID then
-					t = app.CreateRecipe(t.recipeID, t);
 				elseif t.professionID then
 					t = app.CreateProfession(t.professionID, t);
-				elseif t.spellID then
-					t = app.CreateSpell(t.spellID, t);
 				elseif t.categoryID then
 					t = app.CreateCategory(t.categoryID, t);
 				elseif t.criteriaID then
 					t = app.CreateAchievementCriteria(t.criteriaID, t);
 				elseif t.achievementID then
 					t = app.CreateAchievement(t.achievementID, t);
+				elseif t.recipeID then
+					t = app.CreateRecipe(t.recipeID, t);
+				elseif t.spellID then
+					t = app.CreateRecipe(t.spellID, t);
 				elseif t.itemID then
 					if t.isToy then
 						t = app.CreateToy(t.itemID, t);
