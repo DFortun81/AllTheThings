@@ -9280,10 +9280,18 @@ end);
 					o.visible = false;
 				end
 			end;
+			self.Clear = function(self)
+				local temp = self.data.g[1];
+				wipe(self.data.g);
+				wipe(self.rawData);
+				tinsert(self.data.g, temp);
+				self:Rebuild();
+			end
 			self.Rebuild = function(self, no)
 				-- Rebuild all World Quest data
 				local retry = false;
 				local temp = {};
+				local showCurrencies = GetDataMember("ShowCurrencyOnWorldQuestList", false);
 				for _,mapID in pairs(worldMapIDs) do
 					local mapObject = { mapID=mapID,g={},progress=0,total=0};
 					local cache = fieldCache["mapID"][mapID];
@@ -9363,47 +9371,17 @@ end);
 							for j=1,numQuestRewards,1 do
 								local itemID = select(6, GetQuestLogRewardInfo (j, questObject.questID));
 								if itemID then
-									-- QuestHarvester:SetQuestLogItem("reward", j, questObject.questID);
-									local item = { ["itemID"] = itemID, ["expanded"] = false, };
-									cache = fieldCache["itemID"][itemID];
-									if cache then
-										for _,data in ipairs(cache) do
-											if data.f then
-												item.f = data.f;
-											end
-											if data.s then
-												item.s = data.s;
-											end
-											if data.g and #data.g > 0 then
-												if not item.g then
-													item.g = {};
-													item.progress = 0;
-													item.total = 0;
-													item.OnUpdate = OnUpdateForItem;
-												end
-												for __,subdata in ipairs(data.g) do
-													self:MergeObject(item.g, subdata);
-												end
-											end
-										end
-									end
-									self:MergeObject(questObject.g, item);
-								else
-									return true;
-								end
-							end
-							
-							local numCurrencies = GetNumQuestLogRewardCurrencies(questObject.questID);
-							if numCurrencies > 0 then
-								for j=1,numCurrencies,1 do
-									local name, texture, numItems, currencyID = GetQuestLogRewardCurrencyInfo(j, questObject.questID);
-									if currencyID then
-										local item = { ["currencyID"] = currencyID, ["expanded"] = false, };
-										cache = fieldCache["currencyID"][currencyID];
+									if showCurrencies or (itemID ~= 116415 and itemID ~= 163036) then
+										-- QuestHarvester:SetQuestLogItem("reward", j, questObject.questID);
+										local item = { ["itemID"] = itemID, ["expanded"] = false, };
+										cache = fieldCache["itemID"][itemID];
 										if cache then
 											for _,data in ipairs(cache) do
 												if data.f then
 													item.f = data.f;
+												end
+												if data.s then
+													item.s = data.s;
 												end
 												if data.g and #data.g > 0 then
 													if not item.g then
@@ -9418,15 +9396,49 @@ end);
 												end
 											end
 										end
-										if not item.g then
-											item.g = {};
-											item.progress = 0;
-											item.total = 0;
-											item.OnUpdate = OnUpdateForItem;
-										end
 										self:MergeObject(questObject.g, item);
-									else
-										return true;
+									end
+								else
+									return true;
+								end
+							end
+							
+							if showCurrencies then
+								local numCurrencies = GetNumQuestLogRewardCurrencies(questObject.questID);
+								if numCurrencies > 0 then
+									for j=1,numCurrencies,1 do
+										local name, texture, numItems, currencyID = GetQuestLogRewardCurrencyInfo(j, questObject.questID);
+										if currencyID then
+											local item = { ["currencyID"] = currencyID, ["expanded"] = false, };
+											cache = fieldCache["currencyID"][currencyID];
+											if cache then
+												for _,data in ipairs(cache) do
+													if data.f then
+														item.f = data.f;
+													end
+													if data.g and #data.g > 0 then
+														if not item.g then
+															item.g = {};
+															item.progress = 0;
+															item.total = 0;
+															item.OnUpdate = OnUpdateForItem;
+														end
+														for __,subdata in ipairs(data.g) do
+															self:MergeObject(item.g, subdata);
+														end
+													end
+												end
+											end
+											if not item.g then
+												item.g = {};
+												item.progress = 0;
+												item.total = 0;
+												item.OnUpdate = OnUpdateForItem;
+											end
+											self:MergeObject(questObject.g, item);
+										else
+											return true;
+										end
 									end
 								end
 							end

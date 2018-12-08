@@ -1576,7 +1576,7 @@ local function createMiniListFrame(parent)
 	addObject(elm,show)
 	
 	local showFrame = CreateFrame("Frame", name .. "-" .. tabName .. "-showFrame", child, "ThinBorderTemplate");
-	showFrame:SetSize(child:GetWidth()/2.5,160)
+	showFrame:SetSize(child:GetWidth()/2.5,190)
 	showFrame:SetPoint("TOPLEFT",show,0,-frameSpacer);
 	showFrame:SetAlpha(0.3);
 	addObject(elm,showFrame)
@@ -1680,6 +1680,17 @@ local function createMiniListFrame(parent)
 		end);
 	showModels:SetPoint("TOPLEFT",showDes, 0, -frameSpacer)
 	addObject(elm,showModels)
+	
+	-- Show Currency on World Quest List
+	local showCurrencyOnWorldQuestList = createCheckBox("Show Currency on World Quest List", child, function(self)
+			app.SetDataMember("ShowCurrencyOnWorldQuestList", self:GetChecked());
+			if not self:GetChecked() then app:GetWindow("WorldQuests"):Clear(); end
+		end, 
+		function(self) 
+			self:SetChecked(app.GetDataMember("ShowCurrencyOnWorldQuestList", true));
+		end);
+	showCurrencyOnWorldQuestList:SetPoint("TOPLEFT",showModels, 0, -frameSpacer)
+	addObject(elm,showCurrencyOnWorldQuestList)
 	
 	--Item Filters
 	local item = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
