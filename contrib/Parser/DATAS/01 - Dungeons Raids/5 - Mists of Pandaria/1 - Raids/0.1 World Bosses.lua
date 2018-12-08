@@ -288,6 +288,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				["lvl"] = 85,			-- Confirmed by Lucetia November 5, 2018
 				["groups"] = {
 					ach(8123),	-- Millions of Years of Evolution vs. My Fist
+					i(94228),	-- Reins of the Cobalt Primordial Direhorn
 					i(95601, { -- Shiny Pile of Refuse
 						i(95972),	-- Abandoned Zandalari Arrowlinks
 						i(95976),	-- Abandoned Zandalari Bucklebreaker
@@ -332,34 +333,43 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						i(48124),	-- Razormaw Hatchling
 						i(48126),	-- Razzashi Hatchling
 					}),
-					i(95183),
-					i(95182),
-					i(95153),
-					i(95152),
-					i(95151),
-					i(95150),
-					i(95149),
-					i(95148),
-					i(95147),
-					i(95197),
-					i(95196),
-					i(95195),
-					i(95194),
-					i(95193),
-					i(95201),
-					i(95200),
-					i(95199),
-					i(95198),
-					i(95192),
-					i(95191),
-					i(95190),
-					i(95189),
-					i(95188),
-					i(95187),
-					i(95186),
-					i(95185),
-					i(95184),
-					i(94228)
+					i(95181),	-- Amulet of the Titanorex
+					i(95177),	-- Choker of Stygimolochy
+					i(95178),	-- Lootraptor's Amulet
+					i(95179),	-- Necklace of the Hazillosaurus
+					i(95180),	-- Overcompensating Chain of the Alpha Male
+					i(95152),	-- Breastplate of the Iguanocolossus
+					i(95147),	-- Fancifully Frilled Tunic
+					i(95149),	-- Gorgoraptor Scale Chest
+					i(95150),	-- Mail of the Mosschopper
+					i(95182),	-- Robes of Zalmoxes
+					i(95151),	-- Scorched Spiritfire Drape
+					i(95153),	-- Tyrant King Battleplate
+					i(95148),	-- Vest of the Bordomorono
+					i(95183),	-- Waistband of Elder Falcarius
+					i(95199),	-- Carnotaur Battlegloves
+					i(95196),	-- Gloves of Gastric Rumbling
+					i(95194),	-- Gloves of Tyranomancy
+					i(95195),	-- Gloves of Unliving Fossil
+					i(95193),	-- Gloves of Varsoon the Greater
+					i(95200),	-- Orndo Mando's Gloves
+					i(95201),	-- Skullsmashing Gauntlets
+					i(95197),	-- Therapsid Scale Gloves
+					i(95198),	-- Vulcanodon Gauntlets
+					i(95186),	-- Belt of Crushed Dreams
+					i(95188),	-- Belt of the Arch Avimimus
+					i(95189),	-- Belt of the Dying Diemetradon
+					i(95192),	-- Belt of the Tyrannotitan
+					i(95184),	-- Girdle of Dimorphodontics
+					i(95187),	-- Girdle of the Derrodoccus
+					i(95185),	-- Terrorful Weave
+					i(95191),	-- Voolar's Bloodied Belt
+					i(95190),	-- Waistband of Furious Stomping
+					i(95165),	-- Achillobator Ring
+					i(95164),	-- Eye of Oondasta
+					i(95166),	-- Forzarra's Last Meal
+					i(95167),	-- Ring of King Kangrom
+					i(95163),	-- Ring of Shamuru
 				},
 			})),
 			cr(72057, e(861, { 	-- Ordos, Fire-God of the Yaungol
