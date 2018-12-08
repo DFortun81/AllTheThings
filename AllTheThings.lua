@@ -7305,7 +7305,7 @@ local function RowOnEnter(self)
 		if reference.setID then GameTooltip:AddDoubleLine(L("SET_ID"), tostring(reference.setID)); end
 		if reference.setHeaderID then GameTooltip:AddDoubleLine(L("SET_ID"), tostring(reference.setHeaderID)); end
 		if reference.setSubHeaderID then GameTooltip:AddDoubleLine(L("SET_ID"), tostring(reference.setSubHeaderID)); end
-		if reference.description and GetDataMember("ShowDescriptions") and not reference.itemID then GameTooltip:AddLine(reference.description, 0.4, 0.8, 1, 1); end
+		if reference.description and GetDataMember("ShowDescriptions") and not reference.itemID and not reference.speciesID then GameTooltip:AddLine(reference.description, 0.4, 0.8, 1, 1); end
 		if reference.mapID and GetDataMember("ShowMapID") then GameTooltip:AddDoubleLine(L("MAP_ID"), tostring(reference.mapID)); end
 		if reference.coords and app.GetDataMember("ShowCoordinatesInTooltip") then
 			local j = 0;
