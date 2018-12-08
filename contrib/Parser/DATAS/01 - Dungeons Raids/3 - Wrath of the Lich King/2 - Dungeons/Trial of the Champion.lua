@@ -172,7 +172,7 @@ _.Instances =
 								i(47185), -- Leggings of the Haggard Apprentice
 								i(47495), -- Legplates of Relentless Onslaught
 								i(47511), -- Plated Greaves of Providence
-								i(47200), -- Signet of Purity
+								i(47512), -- Sinner's Confession
 								i(47213), -- Abyssal Rune
 								i(47214), -- Banner of Victory
 							})),
@@ -476,7 +476,7 @@ _.Instances =
 								i(47185), -- Leggings of the Haggard Apprentice
 								i(47495), -- Legplates of Relentless Onslaught
 								i(47511), -- Plated Greaves of Providence
-								i(47200), -- Signet of Purity
+								i(47512), -- Sinner's Confession
 								i(47213), -- Abyssal Rune
 								i(47214), -- Banner of Victory
 							})),
