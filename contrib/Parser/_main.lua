@@ -684,66 +684,6 @@ qart = function(t)						-- Gives a quest the Artifact Description
 	t.icon = "Interface\\Minimap\\TrapInactive_HammerGold";
 	return t;
 end
-qc1 = function(t)						-- Gives a quest the Warrior Description
-	t.description = "This quest is for the class Warrior only.";
-	t.icon = "Interface\\Icons\\ClassIcon_Warrior";
-	return t;
-end
-qc2 = function(t)						-- Gives a quest the Paladin Description
-	t.description = "This quest is for the class Paladin only.";
-	t.icon = "Interface\\Icons\\ClassIcon_Paladin";
-	return t;
-end
-qc3 = function(t)						-- Gives a quest the Hunter Description
-	t.description = "This quest is for the class Hunter only.";
-	t.icon = "Interface\\Icons\\ClassIcon_Hunter";
-	return t;
-end
-qc4 = function(t)						-- Gives a quest the Rogue Description
-	t.description = "This quest is for the class Rogue only.";
-	t.icon = "Interface\\Icons\\ClassIcon_Rogue";
-	return t;
-end
-qc5 = function(t)						-- Gives a quest the Priest Description
-	t.description = "This quest is for the class Priest only.";
-	t.icon = "Interface\\Icons\\ClassIcon_Priest";
-	return t;
-end
-qc6 = function(t)						-- Gives a quest the Death Knight Description
-	t.description = "This quest is for the class Death Knight only.";
-	t.icon = "Interface\\Icons\\ClassIcon_DeathKnight";
-	return t;
-end
-qc7 = function(t)						-- Gives a quest the Shaman Description
-	t.description = "This quest is for the class Shaman only.";
-	t.icon = "Interface\\Icons\\ClassIcon_Shaman";
-	return t;
-end
-qc8 = function(t)						-- Gives a quest the Mage Description
-	t.description = "This quest is for the class Mage only.";
-	t.icon = "Interface\\Icons\\ClassIcon_Mage";
-	return t;
-end
-qc9 = function(t)						-- Gives a quest the Warlock Description
-	t.description = "This quest is for the class Warlock only.";
-	t.icon = "Interface\\Icons\\ClassIcon_Warlock";
-	return t;
-end
-qc10 = function(t)						-- Gives a quest the Monk Description
-	t.description = "This quest is for the class Monk only.";
-	t.icon = "Interface\\Icons\\ClassIcon_Monk";
-	return t;
-end
-qc11 = function(t)						-- Gives a quest the Druid Description
-	t.description = "This quest is for the class Druid only.";
-	t.icon = "Interface\\Icons\\ClassIcon_Druid";
-	return t;
-end
-qc12 = function(t)						-- Gives a quest the Demon Hunter Description
-	t.description = "This quest is for the class Demon Hunter only.";
-	t.icon = "Interface\\Icons\\ClassIcon_DemonHunter";
-	return t;
-end
 qd = function(t)							-- Gives a quest the Daily Description
 	t.isDaily = true;
 	return t;

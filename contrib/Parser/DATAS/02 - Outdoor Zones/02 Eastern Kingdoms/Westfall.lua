@@ -556,9 +556,16 @@ _.Zones =
 								un(2, i(1480)),	-- Fist of the People's Militia
 								un(2, i(12296)),-- Spark of the People's Militia
 							})),
-							un(40, qc2(q(1652, { 	-- The Tome of Valor
-								un(2, i(9607)),	-- Bastion of Stormwind 
-							}))),
+							{ 	-- The Tome of Valor
+								["questID"] = 1652,
+								["groups"] = {
+									un(2, i(9607)),	-- Bastion of Stormwind
+								},
+								["u"] = 40,
+								["qg"] = 6182,	-- Daphne Stilwell
+								["races"] = ALLIANCE_ONLY,
+								["classes"] = { 11 },	-- Druid
+							},
 						}),
 						n(-16, {	-- Rares (Legacy)
 							un(43, n(619, { 	-- Defias Conjurer 

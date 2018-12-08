@@ -228,7 +228,7 @@ _.ExpansionFeatures =
 							["classes"] = {8},
 						}))),					
 						q(42434),	-- A Covert Operation
-						qc8(qg(108247, q(46338))),	-- A Creative Solution (mage class hall)
+						qg(108247, q(46338)),	-- A Creative Solution (mage class hall)
 						q(43415),	-- A Hero's Weapon
 						qart(qg(41085, q(41085, {	-- A Mage's Weapon (mage class hall)
 							["groups"] = {

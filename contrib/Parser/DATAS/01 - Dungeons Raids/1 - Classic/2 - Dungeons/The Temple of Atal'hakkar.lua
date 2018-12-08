@@ -223,34 +223,65 @@ _.Instances =
 						["u"] = 12,
 						["groups"] = {
 							n(-17, {	-- Quests (Legacy)
-								un(40, qc11(q(9053, { 	-- A Better Ingredient
-									un(2, i(22272)),	-- Forest's Embrace
-									un(2, i(53562)),	-- Grizzled Hide
-									un(2, i(22274)),	-- Grizzled Pelt
-									un(2, i(53560)),	-- Moonshadow Staff
-									un(2, i(22458)),	-- Moonshadow Stave
-									un(2, i(53561)),	-- Thicket's Embrace
-								}))),
-								un(40, qc5(q(8257, {	-- Blood of Morphaz
-									un(2, i(19990)),	-- Blessed Prayer Beads
-									un(2, i(20006)),	-- Circle of Hope
-									un(2, i(20082)),	-- Woestave
-								}))),
-								un(40, qc7(q(8413, { 	-- Da Voodoo
-									un(2, i(20369)),	-- Azurite Fists
-									un(2, i(20503)),	-- Enamored Water Spirit
-									un(2, i(20556)),	-- Wildstaff
-								}))),
-								un(40, qc8(q(8253, { 	-- Destroy Morphaz
-									un(2, i(20037)),	-- Arcane Crystal Pendant
-									un(2, i(20036)),	-- Fire Ruby
-									un(2, i(20035)),	-- Glacial Spike
-								}))),
-								un(40, qc2(qa(8418, { 	-- Forging the Mightstone
-									un(2, i(20505)),	-- Chivalrous Signet
-									un(2, i(20504)),	-- Lightforged Blade
-									un(2, i(20512)),	-- Sanctified Orb
-								}))),
+								{	-- A Better Ingredient
+									["questID"] = 9053,
+									["groups"] = {
+										un(2, i(22272)),	-- Forest's Embrace
+										un(2, i(53562)),	-- Grizzled Hide
+										un(2, i(22274)),	-- Grizzled Pelt
+										un(2, i(53560)),	-- Moonshadow Staff
+										un(2, i(22458)),	-- Moonshadow Stave
+										un(2, i(53561)),	-- Thicket's Embrace
+									},
+									["u"] = 40,
+									["qg"] = 9619,	-- Torwa Pathfinder
+									["classes"] = { 11 },	-- Druid
+								},
+								{	-- Blood of Morphaz
+									["questID"] = 8257,
+									["groups"] = {
+										un(2, i(19990)),	-- Blessed Prayer Beads
+										un(2, i(20006)),	-- Circle of Hope
+										un(2, i(20082)),	-- Woestave
+									},
+									["u"] = 40,
+									["qg"] = 8405,	-- Ogtinc
+									["classes"] = { 5 },	-- Priest
+								},
+								{ 	-- Da Voodoo
+									["questID"] = 8413,
+									["groups"] = {
+										un(2, i(20369)),	-- Azurite Fists
+										un(2, i(20503)),	-- Enamored Water Spirit
+										un(2, i(20556)),	-- Wildstaff
+									},
+									["u"] = 40,
+									["qg"] = 6176,	-- Bath'rah the Windwatcher
+									["classes"] = { 7 },	-- Shaman
+								},
+								{	-- Destroy Morphaz
+									["questID"] = 8253,
+									["groups"] = {
+										un(2, i(20037)),	-- Arcane Crystal Pendant
+										un(2, i(20036)),	-- Fire Ruby
+										un(2, i(20035)),	-- Glacial Spike
+									},
+									["u"] = 40,
+									["qg"] = 8379,	-- Archmage Xylem
+									["classes"] = { 8 },	-- Mage
+								},
+								{	-- Forging the Mightstone
+									["questID"] = 8418,
+									["groups"] = {
+										un(2, i(20505)),	-- Chivalrous Signet
+										un(2, i(20504)),	-- Lightforged Blade
+										un(2, i(20512)),	-- Sanctified Orb
+									},
+									["u"] = 40,
+									["qg"] = 10838,	-- Commander Ashlam Valorfist
+									["races"] = ALLIANCE_ONLY,
+									["classes"] = { 2 },	-- Paladin
+								},
 								un(40, qa(1475, {	-- Into The Temple of Atal'Hakkar
 									un(2, i(1490)),	-- Guardian Talisman
 								})),
@@ -261,34 +292,58 @@ _.Instances =
 										un(2, i(10780)),	-- Mark of Hakkar
 									})),
 								})),
-								un(40, qc4(q(8236, { 	-- The Azure Key
-									un(2, i(19982)),	-- Duskbat Drape
-									un(2, i(19984)),	-- Ebon Mask
-									un(2, i(20255)),	-- Whisperwalk Boots
-								}))),
+								{	-- The Azure Key
+									["questID"] = 8236,
+									["groups"] = {
+										un(2, i(19982)),	-- Duskbat Drape
+										un(2, i(19984)),	-- Ebon Mask
+										un(2, i(20255)),	-- Whisperwalk Boots
+									},
+									["u"] = 40,
+									["qg"] = 8379,	-- Archmage Xylem
+									["classes"] = { 4 },	-- Rogue
+								},
 								un(40, q(3528, {		-- The God Hakkar
 									un(2, i(10749)),	-- Avenguard Helm
 									un(2, i(10750)),	-- Lifeforce Dirk
 									un(2, i(10751)),	-- Gemburst Circlet
 								})),
-								un(40, qc3(q(8232, { 	-- The Green Drake
-									un(2, i(19991)),	-- Devilsaur Eye
-									un(2, i(19992)),	-- Devilsaur Tooth
-									un(2, i(20083)),	-- Hunting Spear
-								}))),
+								{	-- The Green Drake
+									["questID"] = 8232,
+									["groups"] = {
+										un(2, i(19991)),	-- Devilsaur Eye
+										un(2, i(19992)),	-- Devilsaur Tooth
+										un(2, i(20083)),	-- Hunting Spear
+									},
+									["u"] = 40,
+									["qg"] = 8405,	-- Ogtinc
+									["classes"] = { 3 },	-- Hunter
+								},
 								un(40, qh(1445, {	-- [DEPRECATED]The Temple of Atal'Hakkar
 									un(2, i(1490)),	-- Guardian Talisman
 								})),
-								un(40, qc9(q(8422, { 	-- Trolls of a Feather
-									un(2, i(20534)),	-- Abyss Shard
-									un(2, i(20530)),	-- Robes of Servitude
-									un(2, i(20536)),	-- Soul Harvester
-								}))),
-								un(40, qc1(q(8425, {	-- Voodoo Feathers
-									un(2, i(20130)),	-- Diamond Flask
-									un(2, i(20521)),	-- Fury Visor
-									un(2, i(20517)),	-- Razorsteel Shoulders
-								}))),
+								{	-- Trolls of a Feather
+									["questID"] = 8422,
+									["groups"] = {
+										un(2, i(20534)),	-- Abyss Shard
+										un(2, i(20530)),	-- Robes of Servitude
+										un(2, i(20536)),	-- Soul Harvester
+									},
+									["u"] = 40,
+									["qg"] = 14470,	-- Impsy
+									["classes"] = { 9 },	-- Warlock
+								},
+								{	-- Voodoo Feathers
+									["questID"] = 8425,
+									["groups"] = {
+										un(2, i(20130)),	-- Diamond Flask
+										un(2, i(20521)),	-- Fury Visor
+										un(2, i(20517)),	-- Razorsteel Shoulders
+									},
+									["u"] = 40,
+									["qg"] = 7572,	-- Fallen Hero of the Horde
+									["classes"] = { 1 },	-- Warrior
+								},
 							}),
 							n(  0, {	-- Zone Drop (Legacy)
 								un(7, i(15733)),	-- Pattern: Green Dragonscale Leggings (old version)

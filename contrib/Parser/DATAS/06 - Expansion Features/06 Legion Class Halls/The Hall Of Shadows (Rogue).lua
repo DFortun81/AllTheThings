@@ -176,9 +176,9 @@ _.ExpansionFeatures =
 						h(ach(10745)),	-- The Prestige (Horde) [Still in WoW UI as of 8.0]
 					}),
 						n(-17, { -- Quests
-							qc4(qg(101513, q(45571))),	-- A Bit of Espionage 
-							qc4(qg(101513, q(43958))),	-- A Body of Evidence 
-							qc4(qg(98100, q(43485))),	-- A Burning Distraction 
+							qg(101513, q(45571)),	-- A Bit of Espionage 
+							qg(101513, q(43958)),	-- A Body of Evidence 
+							qg(98100, q(43485)),	-- A Burning Distraction 
 							qart(qg(94159, q(40847, {	-- A Friendly Accord 
 								["groups"] = {
 								},
@@ -194,7 +194,7 @@ _.ExpansionFeatures =
 								},
 								["classes"] = {4},
 							}))),						
-							qc4(qg(98092, q(42140))),	-- A More Wretched Hive of Scum and Villainy 
+							qg(98092, q(42140)),	-- A More Wretched Hive of Scum and Villainy 
 							qa(46089, { -- The Sunken Vault
 								["groups"] = {
 									i(143493), -- Razor-Lined Reins of Dark Potent

@@ -815,245 +815,542 @@ _.Zones =
 				n(-40, {	-- Legacy
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)
-							un(40, qa(2964, {	-- A Future Task
-								un(2, i(34418)),	-- Scrying Wand
-							})),
-							un(40, qa(700, {	-- A King's Tribute
-								un(2, i(4535)),	-- Ironforge Memorial Ring
-							})),
-							{
-								["questID"] = 762,	-- An Ambassador of Evil
-								["sourceQuest"] = 726,	-- Passing Word of a Threat
-								["qg"] = 2916,	-- Historian Karnik
+							{	-- A Future Task
+								["questID"] = 2964,
+								["groups"] = {
+									un(2, i(34418)),	-- Scrying Wand
+								},
 								["u"] = 40,
+								["qg"] = 2916,	-- Historian Karnik
+								["races"] = ALLIANCE_ONLY,
+							},
+							{	-- A King's Tribute
+								["questID"] = 700,
+								["groups"] = {
+									un(2, i(4535)),	-- Ironforge Memorial Ring
+								},
+								["u"] = 40,
+								["qg"] = 2790,	-- Grand Mason Marblesten
+								["races"] = ALLIANCE_ONLY,
+							},
+							{	-- An Ambassador of Evil
+								["questID"] = 762,
 								["groups"] = {
 									un(2, i(4987)),	-- Dwarf Captain's Sword
 								},
+								["u"] = 40,
+								["qg"] = 2916,	-- Historian Karnik
+								["sourceQuest"] = 726,	-- Passing Word of a Threat
 							},
-							un(40, qc1(qa(8912, { 	-- An Earnest Proposal
-								un(2, i(21996)),	-- Bracers of Heroism
-							}))),
-							un(40, qc2(qa(8908, {	-- An Earnest Proposal 
-								un(2, i(22088)),	-- Soulforge Bracers 
-							}))),
-							un(40, qc3(qa(8906, {	-- An Earnest Proposal
-								un(2, i(22011)),	-- Beastmaster's Bindings 						
-							}))),
-							un(40, qc4(qa(8910, {	-- An Earnest Proposal
-								un(2, i(22004)),	-- Darkmantle Bracers 
-							}))),
-							un(40, qc5(qa(8909, {	-- An Earnest Proposal
-								un(2, i(22079)),	-- Virtuous Bracers 						
-							}))),
-							un(40, qc7(qa(10492, {	-- An Earnest Proposal
-								un(2, i(22095)),	-- Bindings of The Five Thunders 						
-							}))),
-							un(40, qc8(qa(8907, {	-- An Earnest Proposal
-								un(2, i(22063)),	-- Sorcerer's Bindings 					
-							}))),
-							un(40, qc9(qa(8911, {	-- An Earnest Proposal
-								un(2, i(22071)),	-- Deathmist Bracers 						
-							}))),
-							un(40, qc11(qa(8905, {	-- An Earnest Proposal
-								un(2, i(22108)),	-- Feralheart Bracers 						
-							}))),
-							un(40, qc1(qa(8959, { 	-- Anthion's Parting Words
-								un(2, i(21995)),	-- Boots of Heroism
-								un(2, i(22000)),	-- Legplates of Heroism
-								un(2, i(22001)),	-- Spaulders of Heroism
-							}))),
-							un(40, qc2(qa(8954, {	-- Anthion's Parting Words
-								un(2, i(22087)),	-- Soulforge Boots
-								un(2, i(22092)),	-- Soulforge Legplates
-								un(2, i(22093)),	-- Soulforge Spaulders
-							}))),
-							un(40, qc3(qa(8952, {	-- Anthion's Parting Words
-								un(2, i(22061)),	-- Beastmaster's Boots
-								un(2, i(22016)),	-- Beastmaster's Mantle
-								un(2, i(22017)),	-- Beastmaster's Pants
-							}))),
-							un(40, qc4(qa(8956, {	-- Anthion's Parting Words
-								un(2, i(22003)),	-- Darkmantle Boots
-								un(2, i(22007)),	-- Darkmantle Pants
-								un(2, i(22008)),	-- Darkmantle Spaulders
-							}))),
-							un(40, qc5(qa(8955, {	-- Anthion's Parting Words
-								un(2, i(22082)),	-- Virtuous Mantle
-								un(2, i(22084)),	-- Virtuous Sandals
-								un(2, i(22085)),	-- Virtuous Skirt
-							}))),
-							un(40, qc7(qa(10496, {	-- Anthion's Parting Words
-								un(2, i(22096)),	-- Boots of The Five Thunders
-								un(2, i(22100)),	-- Kilt of The Five Thunders.
-								un(2, i(22101)),	-- Pauldrons of The Five Thunders
-							}))),
-							un(40, qc8(qa(8953, {	-- Anthion's Parting Words
-								un(2, i(22064)),	-- Sorcerer's Boots
-								un(2, i(22067)),	-- Sorcerer's Leggings
-								un(2, i(22068)),	-- Sorcerer's Mantle
-							}))),
-							un(40, qc9(qa(8958, {	-- Anthion's Parting Words
-								un(2, i(22072)),	-- Deathmist Leggings
-								un(2, i(22073)),	-- Deathmist Mantle
-								un(2, i(22076)),	-- Deathmist Sandals
-							}))),
-							un(40, qc11(qa(8951, {	-- Anthion's Parting Words
-								un(2, i(22107)),	-- Feralheart Boots
-								un(2, i(22111)),	-- Feralheart Kilt
-								un(2, i(22112)),	-- Feralheart Spaulders
-							}))),
-							un(40, q( 737, {	-- Forbidden Knowledge
-								un(2, i(4984)),	-- Skull of Impending Doom
-							})),
-							un(40, qa(1682, {	-- Grey Iron Weapons
+							{ 	-- An Earnest Proposal
+								["questID"] = 8912,
+								["groups"] = {
+									un(2, i(21996)),	-- Bracers of Heroism
+								},
+								["u"] = 40,
+								["qg"] = 16013,	-- Deliana
+								["races"] = ALLIANCE_ONLY,
+								["classes"] = { 1 },	-- Warrior
+							},
+							{	-- An Earnest Proposal
+								["questID"] = 8908,
+								["groups"] = {
+									un(2, i(22088)),	-- Soulforge Bracers
+								},
+								["u"] = 40,
+								["qg"] = 16013,	-- Deliana
+								["races"] = ALLIANCE_ONLY,
+								["classes"] = { 2 },	-- Paladin
+							},
+							{	-- An Earnest Proposal
+								["questID"] = 8906,
+								["groups"] = {
+									un(2, i(22011)),	-- Beastmaster's Bindings
+								},
+								["u"] = 40,
+								["qg"] = 16013,	-- Deliana
+								["races"] = ALLIANCE_ONLY,
+								["classes"] = { 3 },	-- Hunter
+							},
+							{	-- An Earnest Proposal
+								["questID"] = 8910,
+								["groups"] = {
+									un(2, i(22004)),	-- Darkmantle Bracers
+								},
+								["u"] = 40,
+								["qg"] = 16013,	-- Deliana
+								["races"] = ALLIANCE_ONLY,
+								["classes"] = { 4 },	-- Rogue
+							},
+							{	-- An Earnest Proposal
+								["questID"] = 8909,
+								["groups"] = {
+									un(2, i(22079)),	-- Virtuous Bracers
+								},
+								["u"] = 40,
+								["qg"] = 16013,	-- Deliana
+								["races"] = ALLIANCE_ONLY,
+								["classes"] = { 5 },	-- Priest
+							},
+							{	-- An Earnest Proposal
+								["questID"] = 10492,
+								["groups"] = {
+									un(2, i(22095)),	-- Bindings of The Five Thunders
+								},
+								["u"] = 40,
+								["qg"] = 16013,	-- Deliana
+								["races"] = ALLIANCE_ONLY,
+								["classes"] = { 7 },	-- Shaman
+							},
+							{	-- An Earnest Proposal
+								["questID"] = 8907,
+								["groups"] = {
+									un(2, i(22063)),	-- Sorcerer's Bindings
+								},
+								["u"] = 40,
+								["qg"] = 16013,	-- Deliana
+								["races"] = ALLIANCE_ONLY,
+								["classes"] = { 8 },	-- Mage
+							},
+							{	-- An Earnest Proposal
+								["questID"] = 8911,
+								["groups"] = {
+									un(2, i(22071)),	-- Deathmist Bracers
+								},
+								["u"] = 40,
+								["qg"] = 16013,	-- Deliana
+								["races"] = ALLIANCE_ONLY,
+								["classes"] = { 9 },	-- Warlock
+							},
+							{	-- An Earnest Proposal
+								["questID"] = 8905,
+								["groups"] = {
+									un(2, i(22108)),	-- Feralheart Bracers
+								},
+								["u"] = 40,
+								["qg"] = 16013,	-- Deliana
+								["races"] = ALLIANCE_ONLY,
+								["classes"] = { 11 },	-- Druid
+							},
+							{ 	-- Anthion's Parting Words
+								["questID"] = 8959,
+								["groups"] = {
+									un(2, i(21995)),	-- Boots of Heroism
+									un(2, i(22000)),	-- Legplates of Heroism
+									un(2, i(22001)),	-- Spaulders of Heroism
+								},
+								["u"] = 40,
+								["qg"] = 16016,	-- Anthion Harmon
+								["races"] = ALLIANCE_ONLY,
+								["classes"] = { 1 },	-- Warrior
+							},
+							{	-- Anthion's Parting Words
+								["questID"] = 8954,
+								["groups"] = {
+									un(2, i(22087)),	-- Soulforge Boots
+									un(2, i(22092)),	-- Soulforge Legplates
+									un(2, i(22093)),	-- Soulforge Spaulders
+								},
+								["u"] = 40,
+								["qg"] = 16016,	-- Anthion Harmon
+								["races"] = ALLIANCE_ONLY,
+								["classes"] = { 2 },	-- Paladin
+							},
+							{	-- Anthion's Parting Words
+								["questID"] = 8952,
+								["groups"] = {
+									un(2, i(22061)),	-- Beastmaster's Boots
+									un(2, i(22016)),	-- Beastmaster's Mantle
+									un(2, i(22017)),	-- Beastmaster's Pants
+								},
+								["u"] = 40,
+								["qg"] = 16016,	-- Anthion Harmon
+								["races"] = ALLIANCE_ONLY,
+								["classes"] = { 3 },	-- Hunter
+							},
+							{	-- Anthion's Parting Words
+								["questID"] = 8956,
+								["groups"] = {
+									un(2, i(22003)),	-- Darkmantle Boots
+									un(2, i(22007)),	-- Darkmantle Pants
+									un(2, i(22008)),	-- Darkmantle Spaulders
+								},
+								["u"] = 40,
+								["qg"] = 16016,	-- Anthion Harmon
+								["races"] = ALLIANCE_ONLY,
+								["classes"] = { 4 },	-- Rogue
+							},
+							{	-- Anthion's Parting Words
+								["questID"] = 8955,
+								["groups"] = {
+									un(2, i(22082)),	-- Virtuous Mantle
+									un(2, i(22084)),	-- Virtuous Sandals
+									un(2, i(22085)),	-- Virtuous Skirt
+								},
+								["u"] = 40,
+								["qg"] = 16016,	-- Anthion Harmon
+								["races"] = ALLIANCE_ONLY,
+								["classes"] = { 5 },	-- Priest
+							},
+							{	-- Anthion's Parting Words
+								["questID"] = 10496,
+								["groups"] = {
+									un(2, i(22096)),	-- Boots of The Five Thunders
+									un(2, i(22100)),	-- Kilt of The Five Thunders.
+									un(2, i(22101)),	-- Pauldrons of The Five Thunders
+								},
+								["u"] = 40,
+								["qg"] = 16016,	-- Anthion Harmon
+								["races"] = ALLIANCE_ONLY,
+								["classes"] = { 7 },	-- Shaman
+							},
+							{	-- Anthion's Parting Words
+								["questID"] = 8953,
+								["groups"] = {
+									un(2, i(22064)),	-- Sorcerer's Boots
+									un(2, i(22067)),	-- Sorcerer's Leggings
+									un(2, i(22068)),	-- Sorcerer's Mantle
+								},
+								["u"] = 40,
+								["qg"] = 16016,	-- Anthion Harmon
+								["races"] = ALLIANCE_ONLY,
+								["classes"] = { 8 },	-- Mage
+							},
+							{	-- Anthion's Parting Words
+								["questID"] = 8958,
+								["groups"] = {
+									un(2, i(22072)),	-- Deathmist Leggings
+									un(2, i(22073)),	-- Deathmist Mantle
+									un(2, i(22076)),	-- Deathmist Sandals
+								},
+								["u"] = 40,
+								["qg"] = 16016,	-- Anthion Harmon
+								["races"] = ALLIANCE_ONLY,
+								["classes"] = { 9 },	-- Warlock
+							},
+							{	-- Anthion's Parting Words
+								["questID"] = 8951,
+								["groups"] = {
+									un(2, i(22107)),	-- Feralheart Boots
+									un(2, i(22111)),	-- Feralheart Kilt
+									un(2, i(22112)),	-- Feralheart Spaulders
+								},
+								["u"] = 40,
+								["qg"] = 16016,	-- Anthion Harmon
+								["races"] = ALLIANCE_ONLY,
+								["classes"] = { 11 },	-- Druid
+							},
+							{	-- Forbidden Knowledge
+								["questID"] = 737,
+								["groups"] = {
+									un(2, i(4984)),	-- Skull of Impending Doom
+								},
+								["u"] = 40,
+							},
+							{	-- Grey Iron Weapons
+								["questID"] = 1682,
 								["groups"] = {
 									un(2, i(6978)),	-- Umbral Axe
 									un(2, i(6982)),	-- Umbral Mace
 									un(2, i(6981)),	-- Umbral Dagger
 									un(2, i(6984)),	-- Umbral Sword
 								},
+								["u"] = 40,
+								["qg"] = 6031,	-- Tormus Deepforge
+								["races"] = ALLIANCE_ONLY,
 								["classes"] = { 1 },	-- Warrior
-							})),
-							un(40, qc1(qa(8937, {	-- Just Compensation
-								un(2, i(21994)), 	-- Belt of Heroism
-								un(2, i(21998)), 	-- Gauntlets of Heroism
-							}))),
-							un(40, qc2(qa(8933, {	-- Just Compensation
-								un(2, i(22086)), 	-- Soulforge Belt
-								un(2, i(22090)), 	-- Soulforge Gauntlets
-							}))),
-							un(40, qc3(qa(8931, {	-- Just Compensation
-								un(2, i(22010)), 	-- Beastmaster's Belt
-								un(2, i(22015)), 	-- Beastmaster's Gloves
-							}))),
-							un(40, qc4(qa(8935, {	-- Just Compensation
-								un(2, i(22002)), 	-- Darkmantle Belt
-								un(2, i(22006)), 	-- Darkmantle Gloves
-							}))),
-							un(40, qc5(qa(8934, {	-- Just Compensation
-								un(2, i(22078)), 	-- Virtuous Belt 
-								un(2, i(22081)), 	-- Virtuous Gloves
-							}))),
-							un(40, qc7(qa(10494, {	-- Just Compensation
-								un(2, i(22098)), 	-- Cord of The Five Thunders
-								un(2, i(22099)), 	-- Gauntlets of The Five Thunders
-							}))),
-							un(40, qc8(qa(8932, {	-- Just Compensation
-								un(2, i(22062)), 	-- Sorcerer's Belt 
-								un(2, i(22066)), 	-- Sorcerer's Gloves
-							}))),
-							un(40, qc9(qa(8936, {	-- Just Compensation
-								un(2, i(22070)), 	-- Deathmist Belt
-								un(2, i(22077)), 	-- Deathmist Wraps
-							}))),
-							un(40, qc11(qa(8926, {	-- Just Compensation
-								un(2, i(22106)), 	-- Feralheart Belt
-								un(2, i(22110)), 	-- Feralheart Gloves
-							}))),
-							un(40, qa(1709, {	-- Klockmort's Creation
+							},
+							{	-- Just Compensation
+								["questID"] = 8937,
+								["groups"] = {
+									un(2, i(21994)), 	-- Belt of Heroism
+									un(2, i(21998)), 	-- Gauntlets of Heroism
+								},
+								["u"] = 40,
+								["qg"] = 16013,	-- Deliana
+								["races"] = ALLIANCE_ONLY,
+								["classes"] = { 1 },	-- Warrior
+							},
+							{	-- Just Compensation
+								["questID"] = 8933,
+								["groups"] = {
+									un(2, i(22086)), 	-- Soulforge Belt
+									un(2, i(22090)), 	-- Soulforge Gauntlets
+								},
+								["u"] = 40,
+								["qg"] = 16013,	-- Deliana
+								["races"] = ALLIANCE_ONLY,
+								["classes"] = { 2 },	-- Paladin
+							},
+							{	-- Just Compensation
+								["questID"] = 8931,
+								["groups"] = {
+									un(2, i(22010)), 	-- Beastmaster's Belt
+									un(2, i(22015)), 	-- Beastmaster's Gloves
+								},
+								["u"] = 40,
+								["qg"] = 16013,	-- Deliana
+								["races"] = ALLIANCE_ONLY,
+								["classes"] = { 3 },	-- Hunter
+							},
+							{	-- Just Compensation
+								["questID"] = 8935,
+								["groups"] = {
+									un(2, i(22002)), 	-- Darkmantle Belt
+									un(2, i(22006)), 	-- Darkmantle Gloves
+								},
+								["u"] = 40,
+								["qg"] = 16013,	-- Deliana
+								["races"] = ALLIANCE_ONLY,
+								["classes"] = { 4 },	-- Rogue
+							},
+							{	-- Just Compensation
+								["questID"] = 8934,
+								["groups"] = {
+									un(2, i(22078)), 	-- Virtuous Belt 
+									un(2, i(22081)), 	-- Virtuous Gloves
+								},
+								["u"] = 40,
+								["qg"] = 16013,	-- Deliana
+								["races"] = ALLIANCE_ONLY,
+								["classes"] = { 5 },	-- Priest
+							},
+							{	-- Just Compensation
+								["questID"] = 10494,
+								["groups"] = {
+									un(2, i(22098)), 	-- Cord of The Five Thunders
+									un(2, i(22099)), 	-- Gauntlets of The Five Thunders
+								},
+								["u"] = 40,
+								["qg"] = 16013,	-- Deliana
+								["races"] = ALLIANCE_ONLY,
+								["classes"] = { 7 },	-- Shaman
+							},
+							{	-- Just Compensation
+								["questID"] = 8932,
+								["groups"] = {
+									un(2, i(22062)), 	-- Sorcerer's Belt 
+									un(2, i(22066)), 	-- Sorcerer's Gloves
+								},
+								["u"] = 40,
+								["qg"] = 16013,	-- Deliana
+								["races"] = ALLIANCE_ONLY,
+								["classes"] = { 8 },	-- Mage
+							},
+							{	-- Just Compensation
+								["questID"] = 8936,
+								["groups"] = {
+									un(2, i(22070)), 	-- Deathmist Belt
+									un(2, i(22077)), 	-- Deathmist Wraps
+								},
+								["u"] = 40,
+								["qg"] = 16013,	-- Deliana
+								["races"] = ALLIANCE_ONLY,
+								["classes"] = { 9 },	-- Warlock
+							},
+							{	-- Just Compensation
+								["questID"] = 8926,
+								["groups"] = {
+									un(2, i(22106)), 	-- Feralheart Belt
+									un(2, i(22110)), 	-- Feralheart Gloves
+								},
+								["u"] = 40,
+								["qg"] = 16013,	-- Deliana
+								["races"] = ALLIANCE_ONLY,
+								["classes"] = { 11 },	-- Druid
+							},
+							{	-- Klockmort's Creation
+								["questID"] = 1709,
 								["groups"] = {
 									un(2, i(6974)),	-- Fire Hardened Gauntlets
 								},
+								["u"] = 40,
+								["qg"] = 6169,	-- Klockmort Spannerspan
+								["races"] = ALLIANCE_ONLY,
 								["classes"] = { 1 },	-- Warrior
-							})),
-							un(40, qa(1880, {	-- Mage-tastic Gizmonitor
+							},
+							{	-- Mage-tastic Gizmonitor
+								["questID"] = 1880,
 								["groups"] = {
 									un(2, i(7507)),	-- Arcane Orb
 									un(2, i(9514)),	-- Arcane Staff
 								},
+								["u"] = 40,
+								["qg"] = 5144,	-- Bink
+								["races"] = ALLIANCE_ONLY,
 								["classes"] = { 8 },	-- Mage
-							})),
-							un(40, qa(1050, {	-- Mythology of the Titans
-								un(2, i(7746)),	-- Explorers' League Commendation
-							})),
-							{
-								["questID"] = 725,	-- Passing Word of a Threat
-								["sourceQuest"] = 725,	-- Passing Word of a Threat
-								["qg"] = 2916,	-- Historian Karnik
-								["u"] = 40,
 							},
-							{
-								["questID"] = 726,	-- Passing Word of a Threat
-								["sourceQuest"] = 725,	-- Passing Word of a Threat
+							{	-- Mythology of the Titans
+								["questID"] = 1050,
+								["groups"] = {
+									un(2, i(7746)),	-- Explorers' League Commendation
+								},
+								["u"] = 40,
+								["races"] = ALLIANCE_ONLY,
+							},
+							{	-- Passing Word of a Threat
+								["questID"] = 725,
+								["u"] = 40,
+								["qg"] = 2916,	-- Historian Karnik
+								["races"] = ALLIANCE_ONLY,
+							},
+							{	-- Passing Word of a Threat
+								["questID"] = 726,
+								["u"] = 40,
 								["qg"] = 2918,	-- Advisor Belgrum
-								["u"] = 40,
+								["races"] = ALLIANCE_ONLY,
+								["sourceQuest"] = 725,	-- Passing Word of a Threat
 							},
-							{
-								["questID"] = 2963,	-- Portents of Uldum
-								["sourceQuest"] = 2439,	-- The Platinum Discs
-								["qg"] = 5387,	-- High Explorer Magellas <Explorers' League>
+							{	-- Portents of Uldum
+								["questID"] = 2963,
 								["u"] = 40,
+								["qg"] = 5387,	-- High Explorer Magellas
+								["races"] = ALLIANCE_ONLY,
+								["sourceQuest"] = 2439,	-- The Platinum Disc
 							},
-							un(40, qc1(qa(9006, {	-- Saving the Best for Last
-								un(2, i(21997)),	-- Breastplate of Heroism
-								un(2, i(21999)),	-- Helm of Heroism
-							}))),
-							un(40, qc2(qa(9002, {	-- Saving the Best for Last 
-								un(2, i(22089)),	-- Soulforge Breastplate
-								un(2, i(22091)),	-- Soulforge Helm
-							}))),
-							un(40, qc3(qa(9000, { 	-- Saving the Best for Last 
-								un(2, i(22013)),	-- Beastmaster's Cap 
-								un(2, i(22060)),	-- Beastmaster's Tunic
-							}))),
-							un(40, qc4(qa(9004, {	-- Saving the Best for Last
-								un(2, i(22005)),	-- Darkmantle Cap
-								un(2, i(22009)),	-- Darkmantle Tunic
-							}))),
-							un(40, qc5(qa(9003, {	-- Saving the Best for Last
-								un(2, i(22080)),	-- Virtuous Crown 
-								un(2, i(22083)),	-- Virtuous Robe
-							}))),
-							un(40, qc7(qa(10498, {	-- Saving the Best for Last
-								un(2, i(22097)),	-- Coif of The Five Thunders 
-								un(2, i(22102)),	-- Vest of The Five Thunders
-							}))),
-							un(40, qc8(qa(9001, {	-- Saving the Best for Last
-								un(2, i(22065)),	-- Sorcerer's Crown
-								un(2, i(22069)),	-- Sorcerer's Robes
-							}))),
-							un(40, qc9(qa(9005, {	-- Saving the Best for Last
-								un(2, i(22074)),	-- Deathmist Mask 
-								un(2, i(22075)),	-- Deathmist Robe
-							}))),
-							un(40, qc11(qa(8999, {	-- Saving the Best for Last
-								un(2, i(22109)),	-- Feralheart Cowl 
-								un(2, i(22113)),	-- Feralheart Vest
-							}))),
-							a({
-								["questID"] = 2946,	-- Seeing What Happens
-								["sourceQuest"] = 2963,	-- Portents of Uldum
+							{	-- Saving the Best for Last
+								["questID"] = 9006,
+								["groups"] = {
+									un(2, i(21997)),	-- Breastplate of Heroism
+									un(2, i(21999)),	-- Helm of Heroism
+								},
+								["u"] = 40,
+								["qg"] = 16013,	-- Deliana
+								["races"] = ALLIANCE_ONLY,
+								["classes"] = { 1 },	-- Warrior
+							},
+							{	-- Saving the Best for Last
+								["questID"] = 9002,
+								["groups"] = {
+									un(2, i(22089)),	-- Soulforge Breastplate
+									un(2, i(22091)),	-- Soulforge Helm
+								},
+								["u"] = 40,
+								["qg"] = 16013,	-- Deliana
+								["races"] = ALLIANCE_ONLY,
+								["classes"] = { 2 },	-- Paladin
+							},
+							{	-- Saving the Best for Last
+								["questID"] = 9000,
+								["groups"] = {
+									un(2, i(22013)),	-- Beastmaster's Cap 
+									un(2, i(22060)),	-- Beastmaster's Tunic
+								},
+								["u"] = 40,
+								["qg"] = 16013,	-- Deliana
+								["races"] = ALLIANCE_ONLY,
+								["classes"] = { 3 },	-- Hunter
+							},
+							{	-- Saving the Best for Last
+								["questID"] = 9004,
+								["groups"] = {
+									un(2, i(22005)),	-- Darkmantle Cap
+									un(2, i(22009)),	-- Darkmantle Tunic
+								},
+								["u"] = 40,
+								["qg"] = 16013,	-- Deliana
+								["races"] = ALLIANCE_ONLY,
+								["classes"] = { 4 },	-- Rogue
+							},
+							{	-- Saving the Best for Last
+								["questID"] = 9003,
+								["groups"] = {
+									un(2, i(22080)),	-- Virtuous Crown 
+									un(2, i(22083)),	-- Virtuous Robe
+								},
+								["u"] = 40,
+								["qg"] = 16013,	-- Deliana
+								["races"] = ALLIANCE_ONLY,
+								["classes"] = { 5 },	-- Priest
+							},
+							{	-- Saving the Best for Last
+								["questID"] = 10498,
+								["groups"] = {
+									un(2, i(22097)),	-- Coif of The Five Thunders 
+									un(2, i(22102)),	-- Vest of The Five Thunders
+								},
+								["u"] = 40,
+								["qg"] = 16013,	-- Deliana
+								["races"] = ALLIANCE_ONLY,
+								["classes"] = { 7 },	-- Shaman
+							},
+							{	-- Saving the Best for Last
+								["questID"] = 9001,
+								["groups"] = {
+									un(2, i(22065)),	-- Sorcerer's Crown
+									un(2, i(22069)),	-- Sorcerer's Robes
+								},
+								["u"] = 40,
+								["qg"] = 16013,	-- Deliana
+								["races"] = ALLIANCE_ONLY,
+								["classes"] = { 8 },	-- Mage
+							},
+							{	-- Saving the Best for Last
+								["questID"] = 9005,
+								["groups"] = {
+									un(2, i(22074)),	-- Deathmist Mask 
+									un(2, i(22075)),	-- Deathmist Robe
+								},
+								["u"] = 40,
+								["qg"] = 16013,	-- Deliana
+								["races"] = ALLIANCE_ONLY,
+								["classes"] = { 9 },	-- Warlock
+							},
+							{	-- Saving the Best for Last
+								["questID"] = 8999,
+								["groups"] = {
+									un(2, i(22109)),	-- Feralheart Cowl 
+									un(2, i(22113)),	-- Feralheart Vest
+								},
+								["u"] = 40,
+								["qg"] = 16013,	-- Deliana
+								["races"] = ALLIANCE_ONLY,
+								["classes"] = { 11 },	-- Druid
+							},
+							{	-- Seeing What Happens
+								["questID"] = 2946,
+								["u"] = 40,
 								["qg"] = 2916,	-- Historian Karnik
+								["races"] = ALLIANCE_ONLY,
+								["sourceQuest"] = 2963,	-- Portents of Uldum
+							},
+							{	-- Tome of the Cabal
+								["questID"] = 1802,
 								["u"] = 40,
-							}),
-							a({
-								["questID"] = 1802,	-- Tome of the Cabal
+								["qg"] = 6294,	-- Krom Stoutarm
+								["lvl"] = 30,
+								["races"] = ALLIANCE_ONLY,
+								["classes"] = { 9 },	-- Warlock Only
 								["sourceQuest"] = 1758,	-- Tome of the Cabal
+							},
+							{	-- Tome of the Cabal
+								["questID"] = 1804,
+								["u"] = 40,
 								["qg"] = 6294,	-- Krom Stoutarm
 								["lvl"] = 30,
-								["u"] = 40,
+								["races"] = ALLIANCE_ONLY,
 								["classes"] = { 9 },	-- Warlock Only
-							}),
-							a({
-								["questID"] = 1804,	-- Tome of the Cabal
 								["sourceQuest"] = 1802,	-- Tome of the Cabal
-								["qg"] = 6294,	-- Krom Stoutarm
-								["lvl"] = 30,
-								["u"] = 40,
-								["classes"] = { 9 },	-- Warlock Only
-							}),
-							a({
-								["questID"] = 2439,	-- The Platinum Discs
-								["sourceQuest"] = 2280,	-- The Platinum Discs
-								["qg"] = 5387,	-- High Explorer Magellas <Explorers' League>
-								["u"] = 40,
+							},
+							{	-- The Platinum Discs
+								["questID"] = 2439,
 								["groups"] = {
 									un(2, i(9587)),	-- Thawpelt Sack
 								},
-							}),
-							un(40, qa(3701, {	-- The Smoldering Ruins of Thaurissan
-								un(2, i(12102)),	-- Ring of the Aristocrat
-							})),
+								["u"] = 40,
+								["qg"] = 5387,	-- High Explorer Magellas
+								["races"] = ALLIANCE_ONLY,
+								["sourceQuest"] = 2280,	-- The Platinum Discs
+							},
+							{	-- The Smoldering Ruins of Thaurissan
+								["questID"] = 3701,
+								["groups"] = {
+									un(2, i(12102)),	-- Ring of the Aristocrat
+								},
+								["u"] = 40,
+								["qg"] = 8879,	-- Royal Historian Archersonus
+								["races"] = ALLIANCE_ONLY,
+							},
 						}),
 					},
 				}),

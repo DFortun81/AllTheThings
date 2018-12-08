@@ -2427,6 +2427,7 @@ AllTheThings.Locales.enUS = {
 		[204959] = "Gigantic Painite Cluster",
 		[205134] = "Forgemaster's Log",
 		[205143] = "Abandoned Outhouse",
+		[205198] = "Pile of Explosives",
 		[205207] = "Maziel's Journal",
 		[205258] = "Broken Weapons Crate",
 		[205266] = "Elaborate Disc",
