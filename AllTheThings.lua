@@ -2235,6 +2235,8 @@ local function OpenMiniList(field, id, label)
 				app.HolidayHeader.visible = true;
 				app.HolidayHeader.parent = header;
 				tinsert(header.g, 1, app.HolidayHeader);
+				app.HolidayHeader.progress = 0;
+				app.HolidayHeader.total = 0;
 				app.UpdateGroups(app.HolidayHeader, app.HolidayHeader.g, 1);
 				app.HolidayHeader.visible = app.GroupVisibilityFilter(app.HolidayHeader);
 			else
