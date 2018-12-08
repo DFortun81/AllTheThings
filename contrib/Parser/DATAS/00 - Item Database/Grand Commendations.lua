@@ -66,7 +66,6 @@ i(129950, 989);		-- Commendation of the Keepers of Time
 i(129946, 935);		-- Commendation of The Sha'tar
 i(129947, 947);		-- Commendation of Thrallmar
 
-
 -- Timewalking: Wrath of the Lich King
 i(129955, 1037);	-- Commendation of the Alliance Vanguard
 i(129942, 1106);	-- Commendation of the Argent Crusade
@@ -85,8 +84,6 @@ i(133154, 1173);	-- Commendation of the Ramkahen
 i(133151, 1174);	-- Commendation of the Wildhammer Clan
 i(133160, 1171);	-- Commendation of Therazane
 
-
-
 -- Timewalking: Mists of Pandaria
 i(143947, 1492);	-- Commendation of Emperor Shaohao
 i(143944, 1376);	-- Commendation of Operation: Shieldwall
@@ -101,3 +98,30 @@ i(143936, 1270);	-- Commendation of the Shado-Pan
 i(143945, 1435);	-- Commendation of the Shado-Pan Assault
 i(143939, 1388);	-- Commendation of the Sunreaver Onslaught
 i(143941, 1272);	-- Commendation of The Tillers
+
+-- Miscellaneous Rep Items
+i(104286, 1271);	-- Quivering Firestorm Egg [Order of the Cloud Serpent]
+i(89155, 1271);		-- Onyx Egg [Order of the Cloud Serpent]
+i(32506, 1015);		-- Netherwing Egg [Netherwing]
+i(163217, 2164);	-- Azeroth's Tear [Champions of Azeroth]
+i(163616, 2160);	-- Dented Coin [Proudmore Admiralty]
+i(163614, 2161);	-- Exotic Spices [Order of Embers]
+i(163619, 2156);	-- Golden Beetle [Talanji's Expedition]
+i(163620, 2103);	-- Island Flotsam [Zandalari Empire]
+i(163615, 2162);	-- Lost Sea Scroll [Storm's Wake]
+i(163617, 2159);	-- Rusted Alliance Insignia [7th Legion]
+i(163621, 2157);	-- Rusted Horde Insignia [Honorbound]
+i(163618, 2158);	-- Shimmering Shell [Volundai]
+i(24291, 970);		-- Bog Lord Tendrils [Sporeggar]
+i(24246, 970);		-- Sanguine Hibiscus [Sporeggar]
+i(42780, 1119);		-- Relics of Ulduar [Sons of Hodir]
+i(63518, 1178);		-- Hellscream's Reach Commendation
+i(63517, 1177);		-- Baradin's Wardens Commendation
+i(29425, 932);		-- Mark of Kil'jaden [The Aldor]
+i(30809, 932);		-- Mark of Sargeras [The Aldor]
+i(29740, 932);		-- Fel Armament [The Aldor]
+i(29426, 934);		-- Firewing Signet [The Scryers]
+i(30810, 934);		-- Sunfury Signet [The Scryers]
+i(29739, 934);		-- Arcane Tome [The Scryers]
+i(21229, 910);		-- Qiraji Lord's Insignia [Brood of Nozdormu]
+i(21230, 910);		-- Ancient Qiraji Artifact [Brood of Nozdormu]
