@@ -388,7 +388,7 @@ _.Zones =
 						["qg"] = 47432,	-- Apothecary Underhill
 						["sourceQuests"] = { 28096 },	-- Welcome to the Machine
 					}),
-					ql(q(30118, {	-- Patricide
+--[[ Moved to DS	ql(q(30118, {	-- Patricide
 						["groups"] = {
 							i(77949),	-- Golad, Twilight of Aspects (LEGENDARY!)
 							i(77950),	-- Tiriosh, Nightmare of Ages (LEGENDARY!)
@@ -397,7 +397,7 @@ _.Zones =
 						["classes"] = { 4 },	-- Rogue
 						["sourceQuests"] = { 30116 },	-- Sharpening Your Fangs
 					})),
-					{
+--]]					{
 						["qgs"] = {
 							2370,	-- Daggerspine Screamer
 							2369,	-- Daggerspine Shorehunter

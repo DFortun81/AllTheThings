@@ -15,6 +15,7 @@ _.Zones =
 										ach(13041),	-- Hungry, Hungry Ranishu
 									},
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
+									["races"] = HORDE_ONLY,
 								}),
 								q(51422, {	-- Azerite Madness
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120

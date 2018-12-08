@@ -387,7 +387,10 @@ _.Instances = { tier(1, {	-- Classic
 				i(16859),	-- Lawbringer Boots (Paladin)
 				i(18879),	-- Heavy Dark Iron Ring
 				i(19147),	-- Ring of Spell Power
-				un(2, i(16665)),	-- Tome of Tranquilizing Shot
+			--	un(2, i(16665, { -- Tome of Tranquilizing Shot
+			--		["class"] = { 3 },
+			--		["collectible"] = false,
+			--	})),
 			})),
 			cr(11982, e(1520, { -- Magmadar
 				i(18260),	-- Formula: Enchant Weapon - Healing Power

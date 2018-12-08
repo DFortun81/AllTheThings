@@ -7,6 +7,79 @@ _.Instances =
 		["groups"] = {
 			inst(187, { 	-- Dragon Soul
 				["groups"] = {
+					n(-10066, {	-- Legendary Questline
+						["classes"] = { 4 },    -- Rogue
+						["title"] = "Fangs of the Father",
+						["icon"] = "Interface\\Icons\\ability_backstab",
+						["isRaid"] = true,
+						["lvl"] = 85,
+--[[					["maps"] = {
+							25,	-- Hillsbrad Foothills (maybe needs specific rogue building id)
+							74, -- Tanaris: Caverns of Time Entrance
+							75, -- Tanaris: Caverns of Time
+							84,	-- Stormwind City
+							85,	-- Orgrimmar
+							86,	-- Orgrimmar: The Drag
+							129,	-- The Nexus
+							198,	-- Mount Hyjal
+							114,	-- Borean Tundra
+						},
+--]]					["groups"] = {
+--[[						{
+								["description"] = "This quest is auto accepted upon killing a Molten Lord.",
+								["allianceQuestID"] = 29453,	-- Your Time Has Come [A]
+								["hordeQuestID"] = 	  29452,	-- Your Time Has Come [H]
+								["qg"] = 53115, -- Molten Lord
+								["isBreadcrumb"] = true,    -- for A Legendary Engagement
+							},
+							{
+								["description"] = "This is a really great quest to pick up on a character that you don't plan to ever get the legendary on. So long as you never finish this quest you have a very very convenient port to the heart of the Caverns of Time from Stormwind or Orgrimmar.",
+								["allianceQuestID"] = 29129,	-- A Legendary Engagement [A]
+								["hordeQuestID"] = 	  29132,	-- A Legendary Engagement [H]
+								["qg"] = 52382,	-- Ziradormi
+								["sourceQuests"] = { 29453, 29452 },	-- Your Time Has Come
+							},
+--]]						q(30118, {	-- Patricide
+								["qg"] = 57777,	-- Wrathion <The Black Prince>
+								["sourceQuests"] = { 30116 },	-- Sharpening Your Fangs
+								["groups"] = {
+									i(78352, {	-- Fragment of Deathwing's Jaw
+										["description"] = "Drops from Madness of Deathwing",
+										["questID"] = 30118,
+										["crs"] = {
+											56173,	-- Madness of Deathwing
+										},
+									}),
+									i(77949, {	-- Golad, Twilight of Aspects
+										["questID"] = 30118,
+									}),
+									i(77950, {	-- Tiriosh, Nightmare of Ages
+										["questID"] = 30118,
+									}),
+								},
+							}),
+							q(30116, {	-- Sharpening Your Fangs
+								["qg"] = 57777,	-- Wrathion <The Black Prince>
+								["sourceQuests"] = { 30113 },	-- Victory in the Depths
+								["groups"] = {
+									i(77952, {	-- Elementium Gem Cluster
+										["description"] = "Requires 60. You cant open them",
+										["questID"] = 30116,
+										["crs"] = {
+											55265,	-- Morchok
+											55308,	-- Warlord Zon'ozz
+											55312,	-- Yor'sahj the Unsleeping
+											55689,	-- Hagara the Stormbinder
+											55294,	-- Ultraxion
+											56427,	-- Warmaster Blackthorn
+											53879,	-- Spine of Deathwing
+											56173,	-- Madness of Deathwing
+										},
+									}),
+								},
+							}),
+						},
+					}),
 					d(7, {	-- LFR
 						["ignoreBonus"] = true,
 						["groups"] = {
@@ -704,9 +777,6 @@ _.Instances =
 								i(77193),	-- Souldrinker
 								i(78359),	-- Vishanka, Jaws of the Earth
 								i(122198),	-- Music Roll: The Shattering
-							--	i(78352, {,	-- Fragment of Deathwing's Jaw
-							--		["class"] = 4,
-							--	},
 							})),
 						},
 					}),
@@ -1152,9 +1222,6 @@ _.Instances =
 								i(78479),	-- Souldrinker
 								i(78471),	-- Vishanka, Jaws of the Earth
 								i(122198),	-- Music Roll: The Shattering
-							--	i(78352, {,	-- Fragment of Deathwing's Jaw
-							--		["class"] = 4,
-							--	},
 							})),
 						},
 					}),

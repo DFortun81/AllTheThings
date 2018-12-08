@@ -21,6 +21,11 @@ _.GearSets =
 				i(71086, { -- Dragonwrath, Tarecgosa's Rest (Priest, Mage, Lock, Druid, Shaman)
 					["classes"] = { 5, 8, 9, 11, 7 }
 				}),
+				i(77949, { -- Golad, Twilight of Aspects
+					i(77950, { -- Tiriosh, Nightmare of Ages
+						["classes"] = { 4 }
+					}),
+				}),
 				i(49623, { -- Shadowmourne
 					["classes"] = { 1, 2, 6 }
 				}),
@@ -217,14 +222,7 @@ _.GearSets =
 					i(137276), -- N'ero, Band of Promises
 					i(151646), -- Soul of the High Priest
 				}),
-				cl(4, { 	-- Rogue
-					i(77949, { -- Golad, Twilight of Aspects
-						i(77950), -- Tiriosh, Nightmare of Ages
-						i(77945), -- Fear
-						i(77946), -- Vengeance
-						i(77947), -- The Sleeper
-						i(77948), -- The Dreamer
-					}),				
+				cl(4, { 	-- Rogue		
 					i(151815), -- The Empty Crown
 					i(144236), -- Mantle of the Master Assassin
 					i(151817), -- The Curse of Restlessness
