@@ -1668,14 +1668,18 @@ end
 local function SearchForFieldAndSummarizeForCurrentDifficulty(field, value)
 	local group = SearchForField(field, value);
 	if group then
-		local _, _, difficultyID = GetInstanceInfo();
-		local subgroup = {};
-		for i,j in ipairs(group) do
-			if GetRelativeDifficulty(j, difficultyID) then
-				tinsert(subgroup, j);
+		local difficultyID = select(3, GetInstanceInfo());
+		if difficultyID and difficultyID > 0 then
+			local subgroup = {};
+			for i,j in ipairs(group) do
+				if GetRelativeDifficulty(j, difficultyID) then
+					tinsert(subgroup, j);
+				end
 			end
+			return {}, subgroup;
+		else
+			return {}, group;
 		end
-		return {}, #subgroup > 0 and subgroup or group;
 	end
 end
 local function SearchForItemIDRecursively(group, itemID)
