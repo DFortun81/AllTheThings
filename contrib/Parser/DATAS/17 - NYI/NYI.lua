@@ -810,6 +810,9 @@ _.NeverImplemented =
 		n(-346, { -- Crossbows
 			un(1, i(32187)),    -- Chancellor's Heavy Crossbow
 			un(1, i(108784)),    -- Unknown
+			un(1, i(103003)),    -- Prideful Gladiator's Heavy Crossbow (they ditched those items)
+			un(1, i(103375)),    -- Prideful Gladiator's Heavy Crossbow (they ditched those items)
+			un(1, i(102613)),    -- Prideful Gladiator's Heavy Crossbow (they ditched those items)		
 		}),
 		n(-333, { -- Daggers
 			un(1, i(32179)),    -- Chancellor's Shiv
@@ -837,6 +840,12 @@ _.NeverImplemented =
 		n(-334, { -- One-Handed Axes
 			un(1, i(49456)),	-- Will of the Earth
 			un(1, i(50251)),	-- Unknown
+			un(1, i(108779)),	-- Unknown
+			un(1, i(108780)),	-- Unknown
+			un(1, i(108781)),	-- Unknown
+			un(1, i(109319)),	-- 6.0 QA Combat Test Agility 1h Axe 2
+			un(1, i(109502)),	-- 6.0 QA Combat Test Agility 1h Axe
+			un(1, i(109536)),	-- 6.0 QA Combat Test Offhand Agility Axe 2
 		}),
 		n(-338, { -- One-Handed Swords
 			un(1, i(108803)),	-- Unknown - was under Legion>1Handed Swords
@@ -889,6 +898,7 @@ _.NeverImplemented =
 			un(1, i(129968)),	-- Sheilun
 			un(1, i(129969)),	-- Sheilun
 			un(1, i(129970)),	-- Sheilun
+			un(1, i(102595)),	-- Prideful Gladiator's Staff
 			un(1, i(159579)),	-- 8.0 PH - Weapon - Staff
 			un(1, i(159580)),	-- 8.0 PH - Weapon - Staff
 			un(1, i(159581)),	-- 8.0 PH - Weapon - Staff

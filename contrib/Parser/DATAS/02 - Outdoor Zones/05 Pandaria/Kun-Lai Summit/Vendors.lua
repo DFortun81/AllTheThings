@@ -238,6 +238,63 @@ _.Zones =
 								i(102982),	-- Grievous Gladiator's Barrier
 								i(102983),	-- Grievous Gladiator's Endgame
 							}),
+							nh(73145, { -- Acon Deathwielder (5.4.7 Elite and removed Version) -- Link for all the Items https://www.wowhead.com/npc=73145/acon-deathwielder#comments
+								["groups"] = {
+									un(2, i(102984)),	-- Elite Prideful Gladiator's Decapitator
+									un(2, i(103032)),	-- Elite Prideful Gladiator's Energy Staff
+									un(2, i(102987)),	-- Elite Prideful Gladiator's Cleaver
+									un(2, i(103119)),	-- Elite Prideful Gladiator's Hacker
+									un(2, i(102989)),	-- Elite Prideful Gladiator's Quick blade
+									un(2, i(103117)),	-- Elite Prideful Gladiator's Mageblade
+									un(2, i(103121)),	-- Elite Prideful Gladiator's Slicer
+									un(2, i(102997)),	-- Elite Prideful Gladiator's Endgame
+									un(2, i(103001)),	-- Elite Prideful Gladiator's Reprieve
+									un(2, i(102999)),	-- Elite Prideful Gladiator's Spellblade
+									un(2, i(103114)),	-- Elite Prideful Gladiator's Shanker
+									un(2, i(103029)),	-- Elite Prideful Gladiator's Rifle
+									un(2, i(103077)),	-- Elite Prideful Gladiator's Pike
+									un(2, i(103115)),	-- Elite Prideful Gladiator's Ripper
+									un(2, i(103116)),	-- Elite Prideful Gladiator's Render
+									un(2, i(102986)),	-- Elite Prideful Gladiator's Greatsword
+									-- Hunter
+									un(2, i(103039)),	-- Elite Prideful Gladiator's Chain Helm
+									un(2, i(103041)),	-- Elite Prideful Gladiator's Chain Spaulders
+									un(2, i(103037)),	-- Elite Prideful Gladiator's Chain Armor
+								--	un(2, i(102984)),	-- Wrists?
+									un(2, i(103038)),	-- Elite Prideful Gladiator's Chain Gauntlets
+									un(2, i(103033)),	-- Elite Prideful Gladiator's Chain Links
+									un(2, i(103040)),	-- Elite Prideful Gladiator's Chain Leggings
+									un(2, i(103035)),	-- Elite Prideful Gladiator's Chain Sabatons
+									-- Shaman
+									un(2, i(103105)),	-- Elite Prideful Gladiator's Linked Helm
+									un(2, i(103107)),	-- Elite Prideful Gladiator's Linked Spaulders
+									un(2, i(103103)),	-- Elite Prideful Gladiator's Linked Armor
+								--	un(2, i(102984)),	-- Wrists?
+									un(2, i(103104)),	-- Elite Prideful Gladiator's Linked Gauntlets
+									un(2, i(103034)),	-- Elite Prideful Gladiator's Linked Waistband
+									un(2, i(103106)),	-- Elite Prideful Gladiator's Linked Leggings
+									un(2, i(103036)),	-- Elite Prideful Gladiator's Linked Sabatons
+								
+									un(2, i(103100)),	-- Elite Prideful Gladiator's Ringmail Helm
+									un(2, i(103102)),	-- Elite Prideful Gladiator's Ringmail Spaulders
+									un(2, i(103098)),	-- Elite Prideful Gladiator's Ringmail Armor
+								--	un(2, i(102984)),	-- Wrists?
+									un(2, i(103099)),	-- Elite Prideful Gladiator's Ringmail Gauntlets
+									un(2, i(103095)),	-- Elite Prideful Gladiator's Ringmail Waistband
+									un(2, i(103101)),	-- Elite Prideful Gladiator's Ringmail Leggings
+									un(2, i(103096)),	-- Elite Prideful Gladiator's Ringmail Footguards
+									
+									un(2, i(103111)),	-- Elite Prideful Gladiator's Mail Helm
+									un(2, i(103113)),	-- Elite Prideful Gladiator's Mail Spaulders
+									un(2, i(103109)),	-- Elite Prideful Gladiator's Mail Armor
+								--	un(2, i(102984)),	-- Wrists?
+									un(2, i(103110)),	-- Elite Prideful Gladiator's Mail Gauntlets
+									un(2, i(103108)),	-- Elite Prideful Gladiator's Mail Waistguard
+									un(2, i(103112)),	-- Elite Prideful Gladiator's Mail Leggings
+									un(2, i(103097)),	-- Elite Prideful Gladiator's Mail Footguards
+								},
+								["u"] = 2, -- Vendor no longer exists
+							}),
 							{	-- Doris Chiltonius
 								["npcID"] = 75693,	-- Doris Chiltonius
 								["coords"] = {

@@ -236,6 +236,7 @@ _.Instances =
 								i(127506),	-- Traditionally Dyed Handguards
 								i(127507),	-- The General's Steel Girdle
 								i(127505),	-- Patroller's War-Kilt
+								i(127526),	-- Awakened Handguards (Dropped on 9th December for me during TW - Gold)
 							})),
 							cr(28587, e(598, {	-- Volkhan
 								i(127525),	-- Helm of the Lightning Halls
