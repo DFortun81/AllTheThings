@@ -294,6 +294,14 @@ _.NeverImplemented =
 			un(1, i(38387)),	    -- Grizzled Hat
 			un(1, i(25794)),	    -- Bone Studded Girdle (not out of beta)
 			un(1, i(38388)),	    -- Cap of the North
+			un(1, i(107863)),	    -- Unknown
+			un(1, i(107867)),	    -- Unknown
+			un(1, i(107872)),	    -- Unknown
+			un(1, i(107875)),	    -- Unknown
+			un(1, i(107879)),	    -- Unknown
+			un(1, i(107885)),	    -- Unknown
+			un(1, i(107888)),	    -- Unknown
+			un(1, i(107892)),	    -- Unknown
 			un(1, i(38389)),	    -- Comfy Raccoonskin Hat
 			un(1, i(38390)),	    -- The Rugged Marksman
 			un(1, i(80947)),	    -- Peacebreaker's Chain Helm
@@ -597,6 +605,7 @@ _.NeverImplemented =
 		p(1751),
 	}))),
 		un(1, i(130145)), -- Unknown
+		un(1, i(113569)), -- Autumnal Sproutling (unused ver)
 		un(1, i(91031)), -- Darkmoon Glowfly (you get it via pet battles)
 		un(1, i(100870)), -- Murkimus' Tyrannical Spear
 		un(1, i(119147)), -- Nether Ray Fry (unsed Version)
@@ -812,7 +821,8 @@ _.NeverImplemented =
 			un(1, i(108784)),    -- Unknown
 			un(1, i(103003)),    -- Prideful Gladiator's Heavy Crossbow (they ditched those items)
 			un(1, i(103375)),    -- Prideful Gladiator's Heavy Crossbow (they ditched those items)
-			un(1, i(102613)),    -- Prideful Gladiator's Heavy Crossbow (they ditched those items)		
+			un(1, i(102613)),    -- Prideful Gladiator's Heavy Crossbow (they ditched those items)	
+			un(1, i(102810)),    -- Grievous Gladiator's Heavy Crossbow (they ditched those items)
 		}),
 		n(-333, { -- Daggers
 			un(1, i(32179)),    -- Chancellor's Shiv
@@ -907,6 +917,8 @@ _.NeverImplemented =
 		}),
 		n(-335, { -- Two Handed Axes
 			un(1, i(134563)),	-- Unknown
+			un(1, i(108782)),	-- Unknown
+			un(1, i(109519)),	-- Unknown
 		}),
 		n(-339, { -- Two Handed Swords
 			un(1, i(33475)),	-- Artefact Frostmourne
