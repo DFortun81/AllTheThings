@@ -7,137 +7,402 @@ _.Zones =
 		m(89, {	-- Darnassus
 			["groups"] = {
 				n(-17, {	-- Quests
---[[				
-					qg(4156, qa(29325, { ["requireSkill"] = 129 })),	-- A Slippery Snack
-					qg(4087, qa(27225, {	-- A Summons from Ander Germaine (breadcrumb quest for 27337)
-					["classes"] = {1},
-					})),
-					qg(52292, qa(27270, {	-- An Audience with the Farseer (breadcrumb quest for 27353)
-						["classes"] = {7},
-					})),
-					qg(4217, qa(27273, {	-- An Invitation from Moonglade (breadcrumb quest for 27356)
-						["classes"] = {11},
-					})),
-					qg(4156, qa(29359, { ["requireSkill"] = 129 })),	-- An Old Favorite
-					qg(7316, qa( 6342, {	-- An Unexpected Gift
-						["races"] = {4},
-					})),
-					qg(4210, qa(29316, { ["requireSkill"] = 185 })),	-- Back to Basics
-					qg(42936, qa(26383, {	-- Breaking Waves of Change (breadcrumb quest for 13518, not available if 26385, 28490 are completed)
-						["races"]= {1,3,4,7,11,22,24,25},
-					})),
-					qg(48736, qa(26385, {	-- Breaking Waves of Change (breadcrumb quest for 13518, not available if 26383, 28490 are completed)
-						["races"] = {22},
-					})),
-					qg(67940, qa(32414)),	-- Darnassus Attacked? (QG in Krasarang Wilds)
---]]					
-					q (27362, {	-- Favored of Elune
+					{	-- A Slippery Snack
+						["questID"] = 29325,
+						["groups"] = {
+							{
+								["achievementID"] = 5848,
+								["criteriaID"] = 4,
+							},
+							i(67414, {	-- Bag of Shiny Things
+								i(44983),	-- Strand Crawler
+								i(33820),	-- Weather-Beaten Fishing Hat
+								i(34834),	-- Recipe: Captain Rumsey's Lager
+								i(34109),	-- Weather-Beaten Journal
+								i(45991),	-- Bone Fishing Pole
+								i(45992),	-- Jeweled Fishing Pole
+							}),
+						},
+						["qg"] = 4156,	-- Astaia
+						["coord"] = { 49.0, 61.0 },
+						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+						["requireSkill"] = 129,	-- Fishing
+					},
+					{	-- A Summons from Ander Germaine
+						["questID"] = 27225,
+						["qg"] = 4087,	-- Arias'ta Bladesinger
+						["coord"] = { 56.4, 46.2 },
+						["races"] = ALLIANCE_ONLY,
+						["classes"] = { 1 },	-- Warrior
+						["isBreadcrumb"] = true,
+					},
+					{	-- An Audience with the Farseer
+						["questID"] = 27270,
+						["qg"] = 52292,	-- Droha
+						["coord"] = { 43.8, 78.8 },
+						["races"] = ALLIANCE_ONLY,
+						["classes"] = { 7 },	-- Shaman
+						["isBreadcrumb"] = true,
+					},
+					{	-- An Invitation from Moonglade
+						["questID"] = 27273,
+						["qg"] = 4217,	-- Mathrengyl Bearwalker
+						["coord"] = { 40.4, 27.6 },
+						["races"] = {
+							4,	-- Night Elf
+							22,	-- Worgen
+						},
+						["classes"] = { 11 },	-- Druid
+						["isBreadcrumb"] = true,
+					},
+					{	-- An Old Favorite
+						["questID"] = 29359,
+						["groups"] = {
+							{
+								["achievementID"] = 5848,
+								["criteriaID"] = 5,
+							},
+							i(67414),	-- Bag of Shiny Things
+						},
+						["qg"] = 4156,	-- Astaia
+						["coord"] = { 49.0, 61.0 },
+						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+						["requireSkill"] = 129,	-- Fishing
+					},
+					{	-- An Unexpected Gift
+						["questID"] = 6342,
+						["qg"] = 7316,	-- Sister Aquinne
+						["coord"] = { 36.2, 53.2 },
+						["races"] = { 4 },	-- Night Elf
+						["sourceQuest"] = 6341,	-- To Darnassus
+					},
+					{	-- Back to Basics
+						["questID"] = 29316,
+						["groups"] = {
+							{
+								["achievementID"] = 5842,
+								["criteriaID"] = 3,
+							},
+							currency(81),	-- Epicurean's Award
+						},
+						["qg"] = 4210,	-- Alegorn
+						["coord"] = { 50.0, 36.6 },
+						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+						["requireSkill"] = 185,	-- Cooking
+					},
+					{	-- Breaking Waves of Change
+						["questID"] = 26383,
+						["qg"] = 42936,	-- Sentinel Cordressa Briarbow
+						["coord"] = { 43.8, 76.2 },
+						["races"] = exclude(22, ALLIANCE_ONLY),	-- All alliance races exception Worgen
+						["isBreadcrumb"] = true,
+					},
+					{	-- Breaking Waves of Change
+						["questID"] = 26385,
+						["qg"] = 48736,	-- Genn Greymane
+						["coord"] = { 48.2, 14.6 },
+						["races"] = { 22 },	-- Worgen
+						["isBreadcrumb"] = true,
+					},
+					{	-- Calm Before the Storm
+						["questID"] = 4510,
+						["groups"] = {
+							un(2, i(11872)),	-- Eschewal Greaves
+							un(2, i(11870)),	-- Oblivion Orb
+							un(2, i(11871)),	-- Snarkshaw Spaulders
+						},
+						["u"] = 40,
+						["qg"] = 7740,	-- Gracina Spiritmight
+						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- Favored of Elune
+						["questID"] = 27362,
 						["groups"] = {
 							i(65483),	-- Moon Staff of Elune
 						},
 						["qg"] = 7999,	-- Tyrande Whisperwind
 						["races"] = { 4 },	-- Night Elf
 						["classes"] = { 5 },	-- Priest
---						["sourceQuests"] = {  },	-- 
-					}),
---[[					
-					qg(4156, qa(29321, { ["requireSkill"] = 129 })),	-- Happy as a Clam Digger
-					o(207321, {	-- Hero's Call Board (Darnassus)	
-						qa(29391),	-- Guardians of Hyjal: Call of the Ancients
-						qa(29387),	-- Guardians of Hyjal: Firelands Invasion!
-						qa(28492),	-- Hero's Call: Ashenvale! (breadcrumb quest for 13594, not available if 26408 is completed) (max level 23)
-						qa(28490),	-- Hero's Call: Darkshore! (breadcrumb quest for 13518, not available if 26383, 26385 are completed) (max level 13)
-						qa(27727),	-- Hero's Call: Deepholm! (breadcrumb quest for 27203) (max level 93)
-						qa(28531),	-- Hero's Call: Desolace! (breadcrumb quest for 14384, not available if 25938 is completed) (max level 33)
-						qa(28552),	-- Hero's Call: Dustwallow Marsh! (breadcrumb quest for 27210, not available if 26702 is completed) (max level 38)
-						qa(28543),	-- Hero's Call: Felwood! (breadcrumb quest for 27997) (max level 48)
-						qa(28511),	-- Hero's Call: Feralas! (breadcrumb quest for 25447, not available if 14410 is completed) (max level 38)
-						qa(27726),	-- Hero's Call: Mount Hyjal! (max level 100)
-						qa(28709),	-- Hero's Call: Northrend! (breadcrumb quest for 11672) (max level 78)
-						qa(28708),	-- Hero's Call: Outland!(breadcrumb quest for 10288) (max level 68)
-						qa(28528),	-- Hero's Call: Silithus! (breadcrumb quest for 8280, not available if 28859,28856,28527 are completed) (max level 58)
-						qa(28550),	-- Hero's Call: Southern Barrens! (breadcrumb quest for 24862) (max level 33)
-						qa(28539), 	-- Hero's Call: Stonetalon Mountains!  (max level 28)
-						qa(28507),	-- Hero's Call: Tanaris! (breadcrumb quest for 25048, not available if 27446 is completed) (max level 48)
-						qa(28503),	-- Hero's Call: Thousand Needles! (breadcrumb quest for 25486, not available if 25479,25481 are completed) (max level 43)
-						qa(28716),	-- Hero's Call: Twilight Highlands! (breadcrumb quest for 26960) (max level 93)
-						qa(28558),	-- Hero's Call: Uldum! (breadcrumb quest for 27003, not available if 28295 is completed) (max level 100)
-						qa(28525),	-- Hero's Call: Un'Goro Crater! (breadcrumb quest for 24740, not available if 24911 is completed) (max level 53)
-						qa(27724),	-- Hero's Call: Vashj'ir! (breadcrumb quest for 14482, not available if 28827,14481 are completed) (max level 100)
-						qa(28544),	-- Hero's Call: Winterspring! (breadcrumb quest for ???, not available if 28524,28545,28768 are completed) (max level 53)
-						qa(29156),	-- The Troll Incursion
-					}),					
-					qg(3515, qa(14039)),	-- Home of the Kaldorei
-					qg(50690, qa(27271, {	-- Journey to the Wizard's Sanctum (breadcrumb quest for 27354)
-						["classes"] = {8},
-					})),
-					desc(qa(32664), "This quest is available to Night Elves upon reaching level 20.", {	-- Learn To Ride
-						["races"] = {4},
-					}),
-					-- qa(14085),	-- Learn to Ride in Darnassus (REMOVED according to wowhead, replaced with race-specific riding quests)
-					qg(35281, qa(27265, {	-- Lord Grayson Shadowbreaker (breadcrumb quest for 27343)
-						["classes"] = {2},
-					})),
-					qg(4214, qa(27267, {	-- Make Contact with SI:7 (breadcrumb quest for 27351)
-						["classes"] = {4},
-					})),
-					qg(11401, qa(27268, {	-- Make Haste to the Cathedral (breadcrumb quest for 27361)
-						["classes"] = {5},
-					})),
-					qg(4087, qa(28258, {	-- Meet with Ander Germaine (breadcrumb quest for 28393)
-						["classes"] = {1},
-					})),
-					qg(52292, qa(28287, {	-- Meet with Farseer Umbrua  (breadcrumb quest for 28401)
-						["classes"] = {7},
-					})),
-					qg(11401, qa(28285, {	-- Meet with High Priestess Laurena (breadcrumb quest for 28328)
-						["classes"] = {5},
-					})),
-					qg(35281, qa(28268, {	-- Meet with Lord Grayson Shadowbreaker  (breadcrumb quest for 28405)
-						["classes"] = {2},
-					})),
-					qg(4214, qa(28262, {	-- Meet with Lord Tony Romano (breadcrumb quest for 28406)
-						["classes"] = {4},
-					})),
-					qg(50690, qa(28263, {	-- Meet with Maginor Dumas (breadcrumb quest for 28398)
-						["classes"] = {8},
-					})),
-					qg(4138, qa(28260, {	-- Meet with Wulf Hansreim (breadcrumb quest for 28394)
-						["classes"] = {3},
-					})),
-					qg(4217, q(28289, {	-- Moonglade Calls (breadcrumb quest for 28343)
-						["classes"] = {11},
-					})),
+					},
+					{	-- Happy as a Clam Digger
+						["questID"] = 29321,
+						["groups"] = {
+							{
+								["achievementID"] = 5848,
+								["criteriaID"] = 1,
+							},
+							i(67414),	-- Bag of Shiny Things
+						},
+						["qg"] = 4156,	-- Astaia
+						["coord"] = { 49.0, 61.0 },
+						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+						["requireSkill"] = 129,	-- Fishing
+					},
+					{	-- Journey to the Wizard's Sanctum
+						["questID"] = 27271,
+						["qg"] = 50690,	-- Tarelvir
+						["coord"] = { 37.6, 80.0 },
+						["races"] = ALLIANCE_ONLY,
+						["classes"] = { 8 },	-- Mage
+						["isBreadcrumb"] = true,
+					},
+					{	-- Learn to Ride
+						["questID"] = 32664,
+						["races"] = { 4 },	-- Night Elf
+						["lvl"] = 20,
+						["description"] = "This quest is available to Night Elves upon reaching level 20.",
+					},
+					{	-- Riding Training Pamphlet
+						["itemID"] = 46876,
+						["groups"] = {
+							{	-- Learn to Ride in Darnassus
+								["questID"] = 14085,
+								["u"] = 40,
+								["races"] = ALLIANCE_ONLY,
+							}
+						},
+					},
+					{	-- Lord Grayson Shadowbreaker
+						["questID"] = 27265,
+						["qg"] = 35281,	-- Rukua
+						["coord"] = { 43.6, 78.4 },
+						["races"] = ALLIANCE_ONLY,
+						["classes"] = { 2 },	-- Paladin
+						["isBreadcrumb"] = true,
+					},
+					{	-- Make Contact with SI:7
+						["questID"] = 27267,
+						["qg"] = 4214,
+						["coord"] = { 40.0, 39.6 },
+						["races"] = ALLIANCE_ONLY,
+						["classes"] = { 4 },	-- Rogue
+						["isBreadcrumb"] = true,
+					},
+					{	-- Make Haste to the Cathedral
+						["questID"] = 27268,
+						["qg"] = 11401,
+						["coord"] = { 43.4, 79.2 },
+						["races"] = ALLIANCE_ONLY,
+						["classes"] = { 5 },	-- Priest
+						["isBreadcrumb"] = true,
+					},
+					{	-- Mathiel's Armor
+						["questID"] = 1711,
+						["groups"] = {
+							un(2, i(6973)),	-- Fire Hardened Leggings
+						},
+						["u"] = 40,
+						["qg"] = 6142,	-- Mathiel
+						["races"] = ALLIANCE_ONLY,
+						["classes"] = { 1 },	-- Warrior
+					},
+					{	-- Meet with Ander Germaine
+						["questID"] = 28258,
+						["qg"] = 4087,	-- Arias'ta Bladesinger
+						["coord"] = { 56.4, 46.2 },
+						["races"] = ALLIANCE_ONLY,
+						["classes"] = { 1 },	-- Warrior
+						["isBreadcrumb"] = true,
+					},
+					{	-- Meet with Farseer Umbrua
+						["questID"] = 28287,
+						["qg"] = 52292,	-- Droha
+						["coord"] = { 43.8, 78.8 },
+						["races"] = ALLIANCE_ONLY,
+						["classes"] = { 7 },	-- Shaman
+						["isBreadcrumb"] = true,
+					},
+					{	-- Meet with High Priestess Laurena
+						["questID"] = 28285,
+						["qg"] = 11401,	-- Priestess Alathea
+						["coord"] = { 43.4, 79.2 },
+						["races"] = ALLIANCE_ONLY,
+						["classes"] = { 5 },	-- Priest
+						["isBreadcrumb"] = true,
+					},
+					{	-- Meet with Lord Grayson Shadowbreaker
+						["questID"] = 28268,
+						["qg"] = 35281,	-- Rukua
+						["coord"] = { 43.6, 78.4 },
+						["races"] = ALLIANCE_ONLY,
+						["classes"] = { 2 },	-- Paladin
+						["isBreadcrumb"] = true,
+					},
+					{	-- Meet with Lord Tony Romano
+						["questID"] = 28262,
+						["qg"] = 4214,	-- Erion Shadewhisper
+						["coord"] = { 40.0, 39.6 },
+						["races"] = ALLIANCE_ONLY,
+						["classes"] = { 4 },	-- Rogue
+						["isBreadcrumb"] = true,
+					},
+					{	-- Meet with Maginor Dumas
+						["questID"] = 28263,
+						["qg"] = 50690,	-- Tarelvir
+						["coord"] = { 37.6, 80.0 },
+						["races"] = ALLIANCE_ONLY,
+						["classes"] = { 8 },	-- Mage
+						["isBreadcrumb"] = true,
+					},
+					{	-- Meet with Wulf Hansreim
+						["questID"] = 28260,
+						["qg"] = 4138,	-- Jeen'ra Nightrunner
+						["coord"] = { 43.4, 26.0 },
+						["races"] = ALLIANCE_ONLY,
+						["classes"] = { 3 },	-- Hunter
+						["isBreadcrumb"] = true,
+					},
+					{	-- Moonglade Calls
+						["questID"] = 28289,
+						["qg"] = 4217,	-- Mathrengyl Bearwalker
+						["coord"] = { 40.4, 27.6 },
+						["classes"] = { 11 },	-- Druid
+						["isBreadcrumb"] = true,
+					},
 					{	-- Moonglow Vest
 						["questID"] = 1582,
 						["qg"] = 6034,	-- Lotherias
+						["coord"] = { 60.4, 37.0 },
 						["races"] = ALLIANCE_ONLY,
 						["requireSkill"] = 165,	-- Leatherworking
 					},
-					qg(4210, qa(29314, { ["requireSkill"] = 185 })),	-- Remembering the Ancestors
-					qg(40552, qa( 6343, {	-- Return to Nyoma
-						["races"] = {4},
-					})),
-					qg(4210, qa(29318, { ["requireSkill"] = 185 })),	-- Ribs for the Sentinels
-					qg(4210, qa(29357, { ["requireSkill"] = 185 })),	-- Spice Bread Aplenty
-					qg(4156, qa(29323, { ["requireSkill"] = 129 })),	-- Stocking Up
-					qg(46908, qa(27846, {	-- The Grateful Dead (HOLIDAY: day of the dead)
-						["races"] = {22},
-					})),
-					qg(34479, qa(14170, {	-- The Grateful Dead (HOLIDAY: day of the dead)
-						["races"] = {4},
-					})),
-					qg(4210, qa(29313, { ["requireSkill"] = 185 })),	-- The Secret to Perfect Kimchi
-					qg(4156, qa(29324, { ["requireSkill"] = 129 })),	-- The Sister's Pendant
-					qg(11401, qa(27269, {	-- The Temple of the Moon (breadcrumb quest for 27362)
-						["races"] = {4},
-						["classes"] = {5},
-					})),
-					desc(qg(68651, qa(32460)), "If you leave before completing this quest, you may need to abandon it and pick it near the east gate of Darnassus rather than returning to where you originally picked it up."),	-- Tracking the Thieves
-					qg(4138, qa(27266, {	-- Wulf Calls (breadcrumb quest for 27344)
-						["classes"] = {3},
-					})),
---]]
+					{	-- Remembering the Ancestors
+						["questID"] = 29314,
+						["groups"] = {
+							{
+								["achievementID"] = 5842,
+								["criteriaID"] = 3,
+							},
+							currency(81),	-- Epicurean's Award
+						},
+						["qg"] = 4210,	-- Alegorn
+						["coord"] = { 50.0, 36.6 },
+						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+						["requireSkill"] = 185,	-- Cooking
+					},
+					{	-- Return to Nyoma
+						["questID"] = 6343,
+						["qg"] = 40552,	-- Leora
+						["coord"] = { 36.6, 48.0 },
+						["races"] = { 4 },	-- Night Elf
+						["sourceQuest"] = 6342,	-- An Unexpected Gift
+					},
+					{	-- Ribs for the Sentinels
+						["questID"] = 29318,
+						["groups"] = {
+							{
+								["achievementID"] = 5842,
+								["criteriaID"] = 4,
+							},
+							currency(81),	-- Epicurean's Award
+						},
+						["qg"] = 4210,	-- Alegorn
+						["coord"] = { 50.0, 36.6 },
+						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+						["requireSkill"] = 185,	-- Cooking
+					},
+					{	-- Spice Bread Aplenty
+						["questID"] = 29357,
+						["groups"] = {
+							{
+								["achievementID"] = 5842,
+								["criteriaID"] = 5,
+							},
+							currency(81),	-- Epicurean's Award
+						},
+						["qg"] = 4210,	-- Alegorn
+						["coord"] = { 50.0, 36.6 },
+						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+						["requireSkill"] = 185,	-- Cooking
+					},
+					{	-- Stocking Up
+						["questID"] = 29323,
+						["groups"] = {
+							{
+								["achievementID"] = 5848,
+								["criteriaID"] = 2,
+							},
+							i(67414),	-- Bag of Shiny Things
+						},
+						["qg"] = 4156,	-- Astaia
+						["coord"] = { 49.0, 61.0 },
+						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+						["requireSkill"] = 129,	-- Fishing
+					},
+					{	-- The Secret to Perfect Kimchi
+						["questID"] = 29313,
+						["groups"] = {
+							{
+								["achievementID"] = 5842,
+								["criteriaID"] = 1,
+							},
+							currency(81),	-- Epicurean's Award
+						},
+						["qg"] = 4210,	-- Alegorn
+						["coord"] = { 50.0, 36.6 },
+						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+						["requireSkill"] = 185,	-- Cooking
+					},
+					{	-- The Sister's Pendant
+						["questID"] = 29324,
+						["groups"] = {
+							{
+								["achievementID"] = 5848,
+								["criteriaID"] = 3,
+							},
+							i(67414),	-- Bag of Shiny Things
+						},
+						["qg"] = 4156,	-- Astaia
+						["coord"] = { 49.0, 61.0 },
+						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+						["requireSkill"] = 129,	-- Fishing
+					},
+					{	-- The Temple of the Moon
+						["questID"] = 27269,
+						["qg"] = 11401,	-- Priestess Alathea
+						["coord"] = { 43.4, 79.2 },
+						["races"] = { 4 },	-- Night Elf
+						["classes"] = { 5 },	-- Priest
+						["isBreadcrumb"] = true,
+					},
+					{	-- Tracking the Thieves
+						["questID"] = 32460,
+						["qg"] = 68651,	-- Lady Jaina Proudmoore
+						["coord"] = { 39.0, 32.8 },
+						["races"] = ALLIANCE_ONLY,
+						["description"] = "If you leave before completing this quest, you may need to abandon it and pick it near the east gate of Darnassus rather than returning to where you originally picked it up.",
+					},
+					{	-- Weapons of Elunite
+						["questID"] = 1693,
+						["groups"] = {
+							un(2, i(6966)),	-- Elunite Axe
+							un(2, i(6968)),	-- Elunite Hammer
+							un(2, i(6969)),	-- Elunite Dagger
+							un(2, i(6967)),	-- Elunite Sword
+						},
+						["u"] = 40,
+						["qg"] = 6142,	-- Mathiel
+						["races"] = ALLIANCE_ONLY,
+						["classes"] = { 1 },	-- Warrior
+					},
+					{	-- Wulf Calls
+						["questID"] = 27266,
+						["qg"] = 4138,	-- Jeen'ra Nightrunner
+						["coord"] = { 43.4, 26.0 },
+						["races"] = ALLIANCE_ONLY,
+						["classes"] = { 3 },	-- Hunter
+						["isBreadcrumb"] = true,
+					},
 				}),
 			},
 		}),
