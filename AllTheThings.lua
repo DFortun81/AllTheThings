@@ -1669,7 +1669,7 @@ local function SearchForFieldAndSummarizeForCurrentDifficulty(field, value)
 	local group = SearchForField(field, value);
 	if group then
 		local difficultyID = select(3, GetInstanceInfo());
-		if difficultyID and difficultyID > 0 then
+		if difficultyID and difficultyID > 0 and select(1, IsInInstance()) then
 			local subgroup = {};
 			for i,j in ipairs(group) do
 				if GetRelativeDifficulty(j, difficultyID) then
