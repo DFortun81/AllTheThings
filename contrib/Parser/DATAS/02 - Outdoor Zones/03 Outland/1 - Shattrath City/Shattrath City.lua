@@ -295,6 +295,17 @@ _.Zones =
 						},
 						["collectible"] = false,	-- Turn off Collectible flags.
 					}),
+					faction(935, { -- The Sha'tar
+						["g"] = {
+							q(13430, { -- Trial of the Naaru: Magtheridon
+								["g"] = {
+									i(31746) -- Phoenix-Fire Band
+								},
+								["qg"] = 18481, -- A'dal
+								["sourceQuests"] = { 10884, 10885, 10886 }, -- Trial of the Naaru: Mercy, Trial of the Naaru: Strength, Trial of the Naaru: Tenacity
+							}),
+						},
+					}),
 					faction(1031, {	-- Sha'tari Skyguard
 						["groups"] = {
 							q(11096, {	-- Threat from Above
