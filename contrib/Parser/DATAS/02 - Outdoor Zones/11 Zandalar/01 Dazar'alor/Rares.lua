@@ -59,6 +59,13 @@ _.Zones =
 							["questID"] = 50948,
 							--["questID"] = 50947, -- This is the unlock for actual chest [Under Treasures]
 						}),
+						n(122639, {	-- Old R'gal
+							["g"] = {
+								i(161049),	-- Ferocious Devilsaur Legwraps
+							},
+							["coord"] = { 50.6, 59.6, 1165 },
+							["races"] = ALLIANCE_ONLY,
+						}),
 						{	-- Sky Queen [A]
 							["npcID"] = 125816,	-- Sky Queen
 							["questID"] = 53567,

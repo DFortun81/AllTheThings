@@ -258,105 +258,127 @@ _.Zones =
 --]]
 				}),
 				n(-16,  {	-- Rares	
-					n(45785, { 	-- Carved One
-						dr(06.0, i(9773)),	-- Greenweave Robe
-						dr(05.0, i(9782)),	-- Bandit Jerkin
-						dr(05.0, i(6573)),	-- Defender Boots
-						dr(05.0, i(6577)),	-- Defender Gauntlets
-						dr(05.0, i(6578)),	-- Defender Leggings
-						dr(05.0, i(9774)),	-- Greenweave Vest
-						dr(04.0, i(6580)),	-- Defender Tunic
-						dr(04.0, i(6586)),	-- Scouting Gloves
-						dr(04.0, i(6587)),	-- Scouting Trousers
-						dr(04.0, i(9805)),	-- Superior Cloak
-						dr(03.0, i(9814)),	-- Fortified Belt
-						dr(03.0, i(9811)),	-- Fortified Bracers
-						dr(03.0, i(9812)),	-- Fortified Cloak
-						dr(03.0, i(10287)),	-- Greenweave Mantle
-						dr(03.0, i(6570)),	-- Shimmering Sash
-						dr(03.0, i(6568)),	-- Shimmering Trousers
-						dr(02.0, i(9781)),	-- Bandit Pants
-						dr(02.0, i(6574)),	-- Defender Bracers
-						dr(02.0, i(6576)),	-- Defender Girdle
-						dr(02.0, i(9772)),	-- Greenweave Leggings
-						dr(02.0, i(6565)),	-- Shimmering Gloves
-						dr(01.9, i(6582)),	-- Scouting Boots
-						dr(01.7, i(9792)),	-- Ivycloth Boots
-						dr(01.4, i(9801)),	-- Superior Belt
-						dr(01.3, i(9810)),	-- Fortified Boots
-						dr(01.3, i(9794)),	-- Ivycloth Cloak
-						dr(01.0, i(6604)),	-- Dervish Cape
-						dr(01.0, i(9817)),	-- Fortified Spaulders
-						dr(01.0, i(9795)),	-- Ivycloth Gloves
-						dr(01.0, i(9799)),	-- Ivycloth Sash
-						dr(01.0, i(6584)),	-- Scouting Tunic
-						dr(01.0, i(6569)),	-- Shimmering Robe					
+					n(45785, {	-- Carved One
+						["g"] = {
+							dr(06.0, i(9773)),	-- Greenweave Robe
+							dr(05.0, i(9782)),	-- Bandit Jerkin
+							dr(05.0, i(6573)),	-- Defender Boots
+							dr(05.0, i(6577)),	-- Defender Gauntlets
+							dr(05.0, i(6578)),	-- Defender Leggings
+							dr(05.0, i(9774)),	-- Greenweave Vest
+							dr(04.0, i(6580)),	-- Defender Tunic
+							dr(04.0, i(6586)),	-- Scouting Gloves
+							dr(04.0, i(6587)),	-- Scouting Trousers
+							dr(04.0, i(9805)),	-- Superior Cloak
+							dr(03.0, i(9814)),	-- Fortified Belt
+							dr(03.0, i(9811)),	-- Fortified Bracers
+							dr(03.0, i(9812)),	-- Fortified Cloak
+							dr(03.0, i(10287)),	-- Greenweave Mantle
+							dr(03.0, i(6570)),	-- Shimmering Sash
+							dr(03.0, i(6568)),	-- Shimmering Trousers
+							dr(02.0, i(9781)),	-- Bandit Pants
+							dr(02.0, i(6574)),	-- Defender Bracers
+							dr(02.0, i(6576)),	-- Defender Girdle
+							dr(02.0, i(9772)),	-- Greenweave Leggings
+							dr(02.0, i(6565)),	-- Shimmering Gloves
+							dr(01.9, i(6582)),	-- Scouting Boots
+							dr(01.7, i(9792)),	-- Ivycloth Boots
+							dr(01.4, i(9801)),	-- Superior Belt
+							dr(01.3, i(9810)),	-- Fortified Boots
+							dr(01.3, i(9794)),	-- Ivycloth Cloak
+							dr(01.0, i(6604)),	-- Dervish Cape
+							dr(01.0, i(9817)),	-- Fortified Spaulders
+							dr(01.0, i(9795)),	-- Ivycloth Gloves
+							dr(01.0, i(9799)),	-- Ivycloth Sash
+							dr(01.0, i(6584)),	-- Scouting Tunic
+							dr(01.0, i(6569)),	-- Shimmering Robe
+						},
+						["coords"] = {	-- pats in a circle, coords not exhaustive
+							{ 48.4, 70.4 },
+							{ 47.6, 73.0 },
+							{ 50.6, 72.8 },
+							{ 49.4, 75.6 },
+						},
 					}), 
-					n(45801, { 	-- Eliza
-						dr(09.0, i(9805)),	-- Superior Cloak
-						dr(07.0, i(9814)),	-- Fortified Belt
-						dr(07.0, i(9811)),	-- Fortified Bracers
-						dr(07.0, i(6587)),	-- Scouting Trousers
-						dr(07.0, i(6568)),	-- Shimmering Trousers
-						dr(05.0, i(6586)),	-- Scouting Gloves
-						dr(04.0, i(9773)),	-- Greenweave Robe
-						dr(03.0, i(9782)),	-- Bandit Jerkin
-						dr(03.0, i(6573)),	-- Defender Boots
-						dr(03.0, i(6577)),	-- Defender Gauntlets
-						dr(03.0, i(6578)),	-- Defender Leggings
-						dr(03.0, i(6580)),	-- Defender Tunic
-						dr(03.0, i(9813)),	-- Fortified Gauntlets
-						dr(03.0, i(9774)),	-- Greenweave Vest
-						dr(02.0, i(9792)),	-- Ivycloth Boots
-						dr(02.0, i(9803)),	-- Superior Bracers
-						dr(01.8, i(6584)),	-- Scouting Tunic
-						dr(01.7, i(9796)),	-- Ivycloth Mantle
-						dr(01.6, i(6600)),	-- Dervish Belt
-						dr(01.6, i(9794)),	-- Ivycloth Cloak
-						dr(01.6, i(9802)),	-- Superior Boots
-						dr(01.5, i(9799)),	-- Ivycloth Sash
-						dr(01.3, i(6593)),	-- Battleforge Cloak
-						dr(01.3, i(6604)),	-- Dervish Cape
-						dr(01.3, i(9818)),	-- Fortified Chain
-						dr(01.3, i(9815)),	-- Fortified Leggings
-						dr(01.3, i(9817)),	-- Fortified Spaulders
-						dr(01.2, i(6591)),	-- Battleforge Wristguards
-						dr(01.2, i(9810)),	-- Fortified Boots
-						dr(01.2, i(9795)),	-- Ivycloth Gloves
-						dr(01.1, i(9793)),	-- Ivycloth Bracelets
-						dr(01.1, i(6569)),	-- Shimmering Robe
-						dr(01.0, i(9801)),	-- Superior Belt					
+					n(45801, {	-- Eliza
+						["g"] = {
+							dr(09.0, i(9805)),	-- Superior Cloak
+							dr(07.0, i(9814)),	-- Fortified Belt
+							dr(07.0, i(9811)),	-- Fortified Bracers
+							dr(07.0, i(6587)),	-- Scouting Trousers
+							dr(07.0, i(6568)),	-- Shimmering Trousers
+							dr(05.0, i(6586)),	-- Scouting Gloves
+							dr(04.0, i(9773)),	-- Greenweave Robe
+							dr(03.0, i(9782)),	-- Bandit Jerkin
+							dr(03.0, i(6573)),	-- Defender Boots
+							dr(03.0, i(6577)),	-- Defender Gauntlets
+							dr(03.0, i(6578)),	-- Defender Leggings
+							dr(03.0, i(6580)),	-- Defender Tunic
+							dr(03.0, i(9813)),	-- Fortified Gauntlets
+							dr(03.0, i(9774)),	-- Greenweave Vest
+							dr(02.0, i(9792)),	-- Ivycloth Boots
+							dr(02.0, i(9803)),	-- Superior Bracers
+							dr(01.8, i(6584)),	-- Scouting Tunic
+							dr(01.7, i(9796)),	-- Ivycloth Mantle
+							dr(01.6, i(6600)),	-- Dervish Belt
+							dr(01.6, i(9794)),	-- Ivycloth Cloak
+							dr(01.6, i(9802)),	-- Superior Boots
+							dr(01.5, i(9799)),	-- Ivycloth Sash
+							dr(01.3, i(6593)),	-- Battleforge Cloak
+							dr(01.3, i(6604)),	-- Dervish Cape
+							dr(01.3, i(9818)),	-- Fortified Chain
+							dr(01.3, i(9815)),	-- Fortified Leggings
+							dr(01.3, i(9817)),	-- Fortified Spaulders
+							dr(01.2, i(6591)),	-- Battleforge Wristguards
+							dr(01.2, i(9810)),	-- Fortified Boots
+							dr(01.2, i(9795)),	-- Ivycloth Gloves
+							dr(01.1, i(9793)),	-- Ivycloth Bracelets
+							dr(01.1, i(6569)),	-- Shimmering Robe
+							dr(01.0, i(9801)),	-- Superior Belt
+						},
+						["coord"] = { 27.6, 31.6 },
 					}), 
-					n(507, { 	-- Fenros
-						dr(06.0, i(6581)),	-- Scouting Belt
-						dr(05.0, i(9781)),	-- Bandit Pants
-						dr(05.0, i(9812)),	-- Fortified Cloak
-						dr(05.0, i(10287)),	-- Greenweave Mantle
-						dr(05.0, i(6570)),	-- Shimmering Sash
-						dr(04.0, i(6574)),	-- Defender Bracers
-						dr(04.0, i(6576)),	-- Defender Girdle
-						dr(04.0, i(9772)),	-- Greenweave Leggings
-						dr(04.0, i(6582)),	-- Scouting Boots
-						dr(04.0, i(6583)),	-- Scouting Bracers
-						dr(04.0, i(6586)),	-- Scouting Gloves
-						dr(04.0, i(6562)),	-- Shimmering Boots
-						dr(04.0, i(6563)),	-- Shimmering Bracers
-						dr(04.0, i(6564)),	-- Shimmering Cloak
-						dr(04.0, i(6565)),	-- Shimmering Gloves
-						dr(03.0, i(9805)),	-- Superior Cloak
-						dr(02.0, i(6573)),	-- Defender Boots
-						dr(02.0, i(6580)),	-- Defender Tunic
-						dr(02.0, i(6568)),	-- Shimmering Trousers
-						dr(01.9, i(9814)),	-- Fortified Belt
-						dr(01.9, i(9811)),	-- Fortified Bracers
-						dr(01.9, i(9774)),	-- Greenweave Vest
-						dr(01.9, i(6587)),	-- Scouting Trousers
-						dr(01.6, i(9782)),	-- Bandit Jerkin
-						dr(01.6, i(6578)),	-- Defender Leggings
-						dr(01.5, i(6577)),	-- Defender Gauntlets
-						dr(01.3, i(9773)),	-- Greenweave Robe
-						un(7, i(4474)), 	-- Ravenwood Bow
-						un(7, i(6204)),		-- Tribal Worg Helm			
+					n(507,   {	-- Fenros
+						["g"] = {
+							dr(06.0, i(6581)),	-- Scouting Belt
+							dr(05.0, i(9781)),	-- Bandit Pants
+							dr(05.0, i(9812)),	-- Fortified Cloak
+							dr(05.0, i(10287)),	-- Greenweave Mantle
+							dr(05.0, i(6570)),	-- Shimmering Sash
+							dr(04.0, i(6574)),	-- Defender Bracers
+							dr(04.0, i(6576)),	-- Defender Girdle
+							dr(04.0, i(9772)),	-- Greenweave Leggings
+							dr(04.0, i(6582)),	-- Scouting Boots
+							dr(04.0, i(6583)),	-- Scouting Bracers
+							dr(04.0, i(6586)),	-- Scouting Gloves
+							dr(04.0, i(6562)),	-- Shimmering Boots
+							dr(04.0, i(6563)),	-- Shimmering Bracers
+							dr(04.0, i(6564)),	-- Shimmering Cloak
+							dr(04.0, i(6565)),	-- Shimmering Gloves
+							dr(03.0, i(9805)),	-- Superior Cloak
+							dr(02.0, i(6573)),	-- Defender Boots
+							dr(02.0, i(6580)),	-- Defender Tunic
+							dr(02.0, i(6568)),	-- Shimmering Trousers
+							dr(01.9, i(9814)),	-- Fortified Belt
+							dr(01.9, i(9811)),	-- Fortified Bracers
+							dr(01.9, i(9774)),	-- Greenweave Vest
+							dr(01.9, i(6587)),	-- Scouting Trousers
+							dr(01.6, i(9782)),	-- Bandit Jerkin
+							dr(01.6, i(6578)),	-- Defender Leggings
+							dr(01.5, i(6577)),	-- Defender Gauntlets
+							dr(01.3, i(9773)),	-- Greenweave Robe
+							un(7, i(4474)), 	-- Ravenwood Bow
+							un(7, i(6204)),		-- Tribal Worg Helm
+						},
+						["coords"] = {	-- pats?  and multiple spawnpoints, coords not exhaustive
+							{ 58.4, 29.8 },
+							{ 62.0, 37.2 },
+							{ 61.8, 41.0 },
+							{ 63.0, 43.2 },
+							{ 61.2, 45.2 },
+							{ 64.4, 47.8 },
+							{ 64.0, 51.2 },
+						},
 					}), 
 					n(91592, {	-- Forlorn Composer
 						["groups"] = {
@@ -364,252 +386,289 @@ _.Zones =
 						},
 						["description"] = "Travel to the northeast corner of Raven Hill Cemetery. Getting this music requires you to speak to Forlorn Composer while you are dead. The easiest way to do this is to fly up very high and dismount (removing armor first will avoid repair charges)."
 					}),
-					n(521, { 	-- Lupos
-						dr(06.0, i(9776)),	-- Bandit Boots
-						dr(06.0, i(9766)),	-- Greenweave Sash
-						dr(06.0, i(9783)),	-- Raider's Chestpiece
-						dr(06.0, i(6585)),	-- Scouting Cloak
-						dr(06.0, i(6562)),	-- Shimmering Boots
-						dr(05.0, i(9780)),	-- Bandit Gloves
-						dr(05.0, i(6575)),	-- Defender Cloak
-						dr(05.0, i(9771)),	-- Greenweave Gloves
-						dr(03.0, i(9789)),	-- Raider's Legguards
-						dr(03.0, i(6581)),	-- Scouting Belt
-						dr(03.0, i(6582)),	-- Scouting Boots
-						dr(03.0, i(6563)),	-- Shimmering Bracers
-						dr(03.0, i(6564)),	-- Shimmering Cloak
-						dr(02.0, i(6552)),	-- Bard's Tunic
-						dr(02.0, i(9768)),	-- Greenweave Bracers
-						dr(02.0, i(9770)),	-- Greenweave Cloak
-						dr(02.0, i(9767)),	-- Greenweave Sandals
-						dr(02.0, i(6583)),	-- Scouting Bracers
-						dr(01.9, i(9775)),	-- Bandit Cinch
-						dr(01.9, i(9784)),	-- Raider's Boots
-						dr(01.9, i(9787)),	-- Raider's Gauntlets
-						dr(01.8, i(9777)),	-- Bandit Bracers
-						dr(01.7, i(10287)),	-- Greenweave Mantle
-						dr(01.6, i(6538)),	-- Willow Robe
-						dr(01.5, i(9781)),	-- Bandit Pants
-						dr(01.5, i(6536)),	-- Willow Vest
-						dr(01.2, i(6565)),	-- Shimmering Gloves
-						dr(01.1, i(6570)),	-- Shimmering Sash
-						dr(01.0, i(6574)),	-- Defender Bracers
-						dr(01.0, i(6576)),	-- Defender Girdle
-						dr(01.0, i(9812)),	-- Fortified Cloak
-						dr(01.0, i(9774)),	-- Greenweave Vest	
-						un(7, i(3018)),	-- Hide of Lupos
-						un(7, i(3227)),	-- Nightbane Staff
+					n(521,   {	-- Lupos
+						["g"] = {
+							dr(06.0, i(9776)),	-- Bandit Boots
+							dr(06.0, i(9766)),	-- Greenweave Sash
+							dr(06.0, i(9783)),	-- Raider's Chestpiece
+							dr(06.0, i(6585)),	-- Scouting Cloak
+							dr(06.0, i(6562)),	-- Shimmering Boots
+							dr(05.0, i(9780)),	-- Bandit Gloves
+							dr(05.0, i(6575)),	-- Defender Cloak
+							dr(05.0, i(9771)),	-- Greenweave Gloves
+							dr(03.0, i(9789)),	-- Raider's Legguards
+							dr(03.0, i(6581)),	-- Scouting Belt
+							dr(03.0, i(6582)),	-- Scouting Boots
+							dr(03.0, i(6563)),	-- Shimmering Bracers
+							dr(03.0, i(6564)),	-- Shimmering Cloak
+							dr(02.0, i(6552)),	-- Bard's Tunic
+							dr(02.0, i(9768)),	-- Greenweave Bracers
+							dr(02.0, i(9770)),	-- Greenweave Cloak
+							dr(02.0, i(9767)),	-- Greenweave Sandals
+							dr(02.0, i(6583)),	-- Scouting Bracers
+							dr(01.9, i(9775)),	-- Bandit Cinch
+							dr(01.9, i(9784)),	-- Raider's Boots
+							dr(01.9, i(9787)),	-- Raider's Gauntlets
+							dr(01.8, i(9777)),	-- Bandit Bracers
+							dr(01.7, i(10287)),	-- Greenweave Mantle
+							dr(01.6, i(6538)),	-- Willow Robe
+							dr(01.5, i(9781)),	-- Bandit Pants
+							dr(01.5, i(6536)),	-- Willow Vest
+							dr(01.2, i(6565)),	-- Shimmering Gloves
+							dr(01.1, i(6570)),	-- Shimmering Sash
+							dr(01.0, i(6574)),	-- Defender Bracers
+							dr(01.0, i(6576)),	-- Defender Girdle
+							dr(01.0, i(9812)),	-- Fortified Cloak
+							dr(01.0, i(9774)),	-- Greenweave Vest
+							un(7, i(3018)),	-- Hide of Lupos
+							un(7, i(3227)),	-- Nightbane Staff
+						},
+						["coords"] = {	-- pats and/or multiple spawnpoints, coords not exhaustive
+							{ 60.8, 20.6 },
+							{ 65.6, 19.6 },
+							{ 70.2, 24.4 },
+						},
 					}), 
 					n(45811, { 	-- Marina DeSirrus
-						dr(05.0, i(9814)),	-- Fortified Belt
-						dr(05.0, i(9818)),	-- Fortified Chain
-						dr(05.0, i(6567)),	-- Shimmering Armor
-						dr(05.0, i(9805)),	-- Superior Cloak
-						dr(04.0, i(9811)),	-- Fortified Bracers
-						dr(04.0, i(9792)),	-- Ivycloth Boots
-						dr(04.0, i(9793)),	-- Ivycloth Bracelets
-						dr(04.0, i(9794)),	-- Ivycloth Cloak
-						dr(04.0, i(6587)),	-- Scouting Trousers
-						dr(04.0, i(6584)),	-- Scouting Tunic
-						dr(04.0, i(6569)),	-- Shimmering Robe
-						dr(04.0, i(6568)),	-- Shimmering Trousers
-						dr(04.0, i(9801)),	-- Superior Belt
-						dr(03.0, i(6593)),	-- Battleforge Cloak
-						dr(03.0, i(9810)),	-- Fortified Boots
-						dr(03.0, i(9813)),	-- Fortified Gauntlets
-						dr(03.0, i(9815)),	-- Fortified Leggings
-						dr(03.0, i(9802)),	-- Superior Boots
-						dr(02.0, i(6604)),	-- Dervish Cape
-						dr(02.0, i(4715)),	-- Emblazoned Cloak
-						dr(02.0, i(9817)),	-- Fortified Spaulders
-						dr(02.0, i(9795)),	-- Ivycloth Gloves
-						dr(02.0, i(9803)),	-- Superior Bracers
-						dr(01.8, i(6600)),	-- Dervish Belt
-						dr(01.7, i(9796)),	-- Ivycloth Mantle
-						dr(01.6, i(9799)),	-- Ivycloth Sash
-						dr(01.2, i(6602)),	-- Dervish Bracers
-						dr(01.2, i(9806)),	-- Superior Gloves
-						dr(01.2, i(9807)),	-- Superior Shoulders
-						dr(01.0, i(6591)),	-- Battleforge Wristguards					
+						["g"] = {
+							dr(05.0, i(9814)),	-- Fortified Belt
+							dr(05.0, i(9818)),	-- Fortified Chain
+							dr(05.0, i(6567)),	-- Shimmering Armor
+							dr(05.0, i(9805)),	-- Superior Cloak
+							dr(04.0, i(9811)),	-- Fortified Bracers
+							dr(04.0, i(9792)),	-- Ivycloth Boots
+							dr(04.0, i(9793)),	-- Ivycloth Bracelets
+							dr(04.0, i(9794)),	-- Ivycloth Cloak
+							dr(04.0, i(6587)),	-- Scouting Trousers
+							dr(04.0, i(6584)),	-- Scouting Tunic
+							dr(04.0, i(6569)),	-- Shimmering Robe
+							dr(04.0, i(6568)),	-- Shimmering Trousers
+							dr(04.0, i(9801)),	-- Superior Belt
+							dr(03.0, i(6593)),	-- Battleforge Cloak
+							dr(03.0, i(9810)),	-- Fortified Boots
+							dr(03.0, i(9813)),	-- Fortified Gauntlets
+							dr(03.0, i(9815)),	-- Fortified Leggings
+							dr(03.0, i(9802)),	-- Superior Boots
+							dr(02.0, i(6604)),	-- Dervish Cape
+							dr(02.0, i(4715)),	-- Emblazoned Cloak
+							dr(02.0, i(9817)),	-- Fortified Spaulders
+							dr(02.0, i(9795)),	-- Ivycloth Gloves
+							dr(02.0, i(9803)),	-- Superior Bracers
+							dr(01.8, i(6600)),	-- Dervish Belt
+							dr(01.7, i(9796)),	-- Ivycloth Mantle
+							dr(01.6, i(9799)),	-- Ivycloth Sash
+							dr(01.2, i(6602)),	-- Dervish Bracers
+							dr(01.2, i(9806)),	-- Superior Gloves
+							dr(01.2, i(9807)),	-- Superior Shoulders
+							dr(01.0, i(6591)),	-- Battleforge Wristguards
+						},
+						["coord"] = { 7.80, 34.2 },
 					}),
 					n(45771, { 	-- Marus
-						dr(06.0, i(6578)),	-- Defender Leggings
-						dr(06.0, i(6580)),	-- Defender Tunic
-						dr(06.0, i(6586)),	-- Scouting Gloves
-						dr(05.0, i(9782)),	-- Bandit Jerkin
-						dr(05.0, i(6577)),	-- Defender Gauntlets
-						dr(05.0, i(9773)),	-- Greenweave Robe
-						dr(04.0, i(6573)),	-- Defender Boots
-						dr(04.0, i(9774)),	-- Greenweave Vest
-						dr(03.0, i(9781)),	-- Bandit Pants
-						dr(03.0, i(6576)),	-- Defender Girdle
-						dr(03.0, i(9814)),	-- Fortified Belt
-						dr(03.0, i(9811)),	-- Fortified Bracers
-						dr(03.0, i(9812)),	-- Fortified Cloak
-						dr(03.0, i(9772)),	-- Greenweave Leggings
-						dr(03.0, i(6587)),	-- Scouting Trousers
-						dr(03.0, i(6568)),	-- Shimmering Trousers
-						dr(03.0, i(9805)),	-- Superior Cloak
-						dr(02.0, i(6565)),	-- Shimmering Gloves
-						dr(02.0, i(6570)),	-- Shimmering Sash
-						dr(01.9, i(10287)),	-- Greenweave Mantle
-						dr(01.9, i(6582)),	-- Scouting Boots
-						dr(01.8, i(6574)),	-- Defender Bracers
-						dr(01.8, i(6567)),	-- Shimmering Armor
-						dr(01.7, i(9802)),	-- Superior Boots
-						dr(01.2, i(9815)),	-- Fortified Leggings
-						dr(01.1, i(6593)),	-- Battleforge Cloak
-						dr(01.1, i(9817)),	-- Fortified Spaulders
-						dr(01.1, i(9793)),	-- Ivycloth Bracelets
-						dr(01.1, i(9801)),	-- Superior Belt
-						dr(01.1, i(9803)),	-- Superior Bracers
-						dr(01.0, i(6604)),	-- Dervish Cape
-						dr(01.0, i(9813)),	-- Fortified Gauntlets
-						dr(01.0, i(6569)),	-- Shimmering Robe					
+						["g"] = {
+							dr(06.0, i(6578)),	-- Defender Leggings
+							dr(06.0, i(6580)),	-- Defender Tunic
+							dr(06.0, i(6586)),	-- Scouting Gloves
+							dr(05.0, i(9782)),	-- Bandit Jerkin
+							dr(05.0, i(6577)),	-- Defender Gauntlets
+							dr(05.0, i(9773)),	-- Greenweave Robe
+							dr(04.0, i(6573)),	-- Defender Boots
+							dr(04.0, i(9774)),	-- Greenweave Vest
+							dr(03.0, i(9781)),	-- Bandit Pants
+							dr(03.0, i(6576)),	-- Defender Girdle
+							dr(03.0, i(9814)),	-- Fortified Belt
+							dr(03.0, i(9811)),	-- Fortified Bracers
+							dr(03.0, i(9812)),	-- Fortified Cloak
+							dr(03.0, i(9772)),	-- Greenweave Leggings
+							dr(03.0, i(6587)),	-- Scouting Trousers
+							dr(03.0, i(6568)),	-- Shimmering Trousers
+							dr(03.0, i(9805)),	-- Superior Cloak
+							dr(02.0, i(6565)),	-- Shimmering Gloves
+							dr(02.0, i(6570)),	-- Shimmering Sash
+							dr(01.9, i(10287)),	-- Greenweave Mantle
+							dr(01.9, i(6582)),	-- Scouting Boots
+							dr(01.8, i(6574)),	-- Defender Bracers
+							dr(01.8, i(6567)),	-- Shimmering Armor
+							dr(01.7, i(9802)),	-- Superior Boots
+							dr(01.2, i(9815)),	-- Fortified Leggings
+							dr(01.1, i(6593)),	-- Battleforge Cloak
+							dr(01.1, i(9817)),	-- Fortified Spaulders
+							dr(01.1, i(9793)),	-- Ivycloth Bracelets
+							dr(01.1, i(9801)),	-- Superior Belt
+							dr(01.1, i(9803)),	-- Superior Bracers
+							dr(01.0, i(6604)),	-- Dervish Cape
+							dr(01.0, i(9813)),	-- Fortified Gauntlets
+							dr(01.0, i(6569)),	-- Shimmering Robe
+						},
+						["coords"] = {	--	pats and/or multiple spawnpoints, coords not exhaustive
+							{ 65.2, 68.0 },
+							{ 63.2, 70.6 },
+							{ 61.8, 73.4 },
+							{ 61.0, 74.6 },
+							{ 60.8, 81.4 },
+						},
 					}), 
-					n(574, { 	-- Naraxis
-						dr(10.0, i(6581)),	-- Scouting Belt
-						dr(09.0, i(6563)),	-- Shimmering Bracers
-						dr(08.0, i(6564)),	-- Shimmering Cloak
-						dr(07.0, i(6562)),	-- Shimmering Boots
-						dr(06.0, i(6583)),	-- Scouting Bracers
-						dr(04.0, i(9780)),	-- Bandit Gloves
-						dr(04.0, i(6575)),	-- Defender Cloak
-						dr(04.0, i(6585)),	-- Scouting Cloak
-						dr(03.0, i(9776)),	-- Bandit Boots
-						dr(03.0, i(6576)),	-- Defender Girdle
-						dr(03.0, i(9771)),	-- Greenweave Gloves
-						dr(03.0, i(9766)),	-- Greenweave Sash
-						dr(03.0, i(9783)),	-- Raider's Chestpiece
-						dr(02.0, i(6574)),	-- Defender Bracers
-						dr(02.0, i(9805)),	-- Superior Cloak
-						dr(01.8, i(6573)),	-- Defender Boots
-						dr(01.8, i(10287)),	-- Greenweave Mantle
-						dr(01.7, i(9781)),	-- Bandit Pants
-						dr(01.7, i(6580)),	-- Defender Tunic
-						dr(01.7, i(6582)),	-- Scouting Boots
-						dr(01.5, i(6565)),	-- Shimmering Gloves
-						dr(01.5, i(6568)),	-- Shimmering Trousers
-						dr(01.4, i(9782)),	-- Bandit Jerkin
-						dr(01.4, i(9812)),	-- Fortified Cloak
-						dr(01.3, i(6570)),	-- Shimmering Sash
-						dr(01.2, i(6586)),	-- Scouting Gloves
-						dr(01.1, i(6577)),	-- Defender Gauntlets
-						dr(01.0, i(9772)),	-- Greenweave Leggings
-						dr(01.0, i(6587)),	-- Scouting Trousers	
-						un(7, i(4448)),	-- Husk of Naraxis
-						un(7, i(4449)),	-- Naraxis' Fang
+					n(574,   {	-- Naraxis
+						["g"] = {
+							dr(10.0, i(6581)),	-- Scouting Belt
+							dr(09.0, i(6563)),	-- Shimmering Bracers
+							dr(08.0, i(6564)),	-- Shimmering Cloak
+							dr(07.0, i(6562)),	-- Shimmering Boots
+							dr(06.0, i(6583)),	-- Scouting Bracers
+							dr(04.0, i(9780)),	-- Bandit Gloves
+							dr(04.0, i(6575)),	-- Defender Cloak
+							dr(04.0, i(6585)),	-- Scouting Cloak
+							dr(03.0, i(9776)),	-- Bandit Boots
+							dr(03.0, i(6576)),	-- Defender Girdle
+							dr(03.0, i(9771)),	-- Greenweave Gloves
+							dr(03.0, i(9766)),	-- Greenweave Sash
+							dr(03.0, i(9783)),	-- Raider's Chestpiece
+							dr(02.0, i(6574)),	-- Defender Bracers
+							dr(02.0, i(9805)),	-- Superior Cloak
+							dr(01.8, i(6573)),	-- Defender Boots
+							dr(01.8, i(10287)),	-- Greenweave Mantle
+							dr(01.7, i(9781)),	-- Bandit Pants
+							dr(01.7, i(6580)),	-- Defender Tunic
+							dr(01.7, i(6582)),	-- Scouting Boots
+							dr(01.5, i(6565)),	-- Shimmering Gloves
+							dr(01.5, i(6568)),	-- Shimmering Trousers
+							dr(01.4, i(9782)),	-- Bandit Jerkin
+							dr(01.4, i(9812)),	-- Fortified Cloak
+							dr(01.3, i(6570)),	-- Shimmering Sash
+							dr(01.2, i(6586)),	-- Scouting Gloves
+							dr(01.1, i(6577)),	-- Defender Gauntlets
+							dr(01.0, i(9772)),	-- Greenweave Leggings
+							dr(01.0, i(6587)),	-- Scouting Trousers
+							un(7, i(4448)),	-- Husk of Naraxis
+							un(7, i(4449)),	-- Naraxis' Fang
+						},
+						["coord"] = { 86.4, 48.0 },
 					}), 
-					n(534, { 	-- Nefaru
-						dr(09.0, i(9814)),	-- Fortified Belt
-						dr(09.0, i(9805)),	-- Superior Cloak
-						dr(08.0, i(9811)),	-- Fortified Bracers
-						dr(08.0, i(6587)),	-- Scouting Trousers
-						dr(08.0, i(6568)),	-- Shimmering Trousers
-						dr(03.0, i(9782)),	-- Bandit Jerkin
-						dr(03.0, i(6577)),	-- Defender Gauntlets
-						dr(03.0, i(6578)),	-- Defender Leggings
-						dr(03.0, i(6580)),	-- Defender Tunic
-						dr(03.0, i(9773)),	-- Greenweave Robe
-						dr(03.0, i(9774)),	-- Greenweave Vest
-						dr(03.0, i(6586)),	-- Scouting Gloves
-						dr(02.0, i(6573)),	-- Defender Boots
-						dr(01.9, i(6604)),	-- Dervish Cape
-						dr(01.8, i(9794)),	-- Ivycloth Cloak
-						dr(01.8, i(6584)),	-- Scouting Tunic
-						dr(01.8, i(9802)),	-- Superior Boots
-						dr(01.7, i(9818)),	-- Fortified Chain
-						dr(01.7, i(9801)),	-- Superior Belt
-						dr(01.5, i(9793)),	-- Ivycloth Bracelets
-						dr(01.4, i(9792)),	-- Ivycloth Boots
-						dr(01.4, i(9803)),	-- Superior Bracers
-						dr(01.3, i(9815)),	-- Fortified Leggings
-						dr(01.2, i(9813)),	-- Fortified Gauntlets
-						dr(01.2, i(6569)),	-- Shimmering Robe
-						dr(01.2, i(9807)),	-- Superior Shoulders
-						dr(01.1, i(6600)),	-- Dervish Belt
-						dr(01.1, i(9810)),	-- Fortified Boots
-						dr(01.1, i(9799)),	-- Ivycloth Sash
-						dr(01.0, i(6593)),	-- Battleforge Cloak
-						dr(01.0, i(6602)),	-- Dervish Bracers
-						dr(01.0, i(9817)),	-- Fortified Spaulders
-						dr(01.0, i(9795)),	-- Ivycloth Gloves	
-						un(7, i(4477)),	-- Nefarious Buckler
-						un(7, i(4476)),	-- Beastwalker Robe		
+					n(534,   {	-- Nefaru
+						["g"] = {
+							dr(09.0, i(9814)),	-- Fortified Belt
+							dr(09.0, i(9805)),	-- Superior Cloak
+							dr(08.0, i(9811)),	-- Fortified Bracers
+							dr(08.0, i(6587)),	-- Scouting Trousers
+							dr(08.0, i(6568)),	-- Shimmering Trousers
+							dr(03.0, i(9782)),	-- Bandit Jerkin
+							dr(03.0, i(6577)),	-- Defender Gauntlets
+							dr(03.0, i(6578)),	-- Defender Leggings
+							dr(03.0, i(6580)),	-- Defender Tunic
+							dr(03.0, i(9773)),	-- Greenweave Robe
+							dr(03.0, i(9774)),	-- Greenweave Vest
+							dr(03.0, i(6586)),	-- Scouting Gloves
+							dr(02.0, i(6573)),	-- Defender Boots
+							dr(01.9, i(6604)),	-- Dervish Cape
+							dr(01.8, i(9794)),	-- Ivycloth Cloak
+							dr(01.8, i(6584)),	-- Scouting Tunic
+							dr(01.8, i(9802)),	-- Superior Boots
+							dr(01.7, i(9818)),	-- Fortified Chain
+							dr(01.7, i(9801)),	-- Superior Belt
+							dr(01.5, i(9793)),	-- Ivycloth Bracelets
+							dr(01.4, i(9792)),	-- Ivycloth Boots
+							dr(01.4, i(9803)),	-- Superior Bracers
+							dr(01.3, i(9815)),	-- Fortified Leggings
+							dr(01.2, i(9813)),	-- Fortified Gauntlets
+							dr(01.2, i(6569)),	-- Shimmering Robe
+							dr(01.2, i(9807)),	-- Superior Shoulders
+							dr(01.1, i(6600)),	-- Dervish Belt
+							dr(01.1, i(9810)),	-- Fortified Boots
+							dr(01.1, i(9799)),	-- Ivycloth Sash
+							dr(01.0, i(6593)),	-- Battleforge Cloak
+							dr(01.0, i(6602)),	-- Dervish Bracers
+							dr(01.0, i(9817)),	-- Fortified Spaulders
+							dr(01.0, i(9795)),	-- Ivycloth Gloves
+							un(7, i(4477)),	-- Nefarious Buckler
+							un(7, i(4476)),	-- Beastwalker Robe
+						},
+						["coord"] = { 74.0, 78.6 },
 					}), 
 					n(45739, { 	-- The Unknown Soldier
-						dr(06.0, i(9776)),	-- Bandit Boots
-						dr(06.0, i(9780)),	-- Bandit Gloves
-						dr(06.0, i(9766)),	-- Greenweave Sash
-						dr(06.0, i(6585)),	-- Scouting Cloak
-						dr(05.0, i(6575)),	-- Defender Cloak
-						dr(05.0, i(9771)),	-- Greenweave Gloves
-						dr(05.0, i(9783)),	-- Raider's Chestpiece
-						dr(04.0, i(9775)),	-- Bandit Cinch
-						dr(04.0, i(6581)),	-- Scouting Belt
-						dr(03.0, i(9784)),	-- Raider's Boots
-						dr(03.0, i(6583)),	-- Scouting Bracers
-						dr(03.0, i(6564)),	-- Shimmering Cloak
-						dr(03.0, i(6536)),	-- Willow Vest
-						dr(02.0, i(6552)),	-- Bard's Tunic
-						dr(02.0, i(9768)),	-- Greenweave Bracers
-						dr(02.0, i(9770)),	-- Greenweave Cloak
-						dr(02.0, i(9787)),	-- Raider's Gauntlets
-						dr(02.0, i(9789)),	-- Raider's Legguards
-						dr(02.0, i(6562)),	-- Shimmering Boots
-						dr(02.0, i(6563)),	-- Shimmering Bracers
-						dr(02.0, i(6538)),	-- Willow Robe
-						dr(01.6, i(9767)),	-- Greenweave Sandals
-						dr(01.5, i(9777)),	-- Bandit Bracers
-						dr(01.4, i(9781)),	-- Bandit Pants
-						dr(01.4, i(6582)),	-- Scouting Boots
-						dr(01.4, i(6565)),	-- Shimmering Gloves
-						dr(01.3, i(6574)),	-- Defender Bracers
-						dr(01.3, i(9772)),	-- Greenweave Leggings
-						dr(01.3, i(9774)),	-- Greenweave Vest
-						dr(01.3, i(6570)),	-- Shimmering Sash
-						dr(01.0, i(9782)),	-- Bandit Jerkin
-						dr(01.0, i(6577)),	-- Defender Gauntlets
-						dr(01.0, i(10287)),	-- Greenweave Mantle					
+						["g"] = {
+							dr(06.0, i(9776)),	-- Bandit Boots
+							dr(06.0, i(9780)),	-- Bandit Gloves
+							dr(06.0, i(9766)),	-- Greenweave Sash
+							dr(06.0, i(6585)),	-- Scouting Cloak
+							dr(05.0, i(6575)),	-- Defender Cloak
+							dr(05.0, i(9771)),	-- Greenweave Gloves
+							dr(05.0, i(9783)),	-- Raider's Chestpiece
+							dr(04.0, i(9775)),	-- Bandit Cinch
+							dr(04.0, i(6581)),	-- Scouting Belt
+							dr(03.0, i(9784)),	-- Raider's Boots
+							dr(03.0, i(6583)),	-- Scouting Bracers
+							dr(03.0, i(6564)),	-- Shimmering Cloak
+							dr(03.0, i(6536)),	-- Willow Vest
+							dr(02.0, i(6552)),	-- Bard's Tunic
+							dr(02.0, i(9768)),	-- Greenweave Bracers
+							dr(02.0, i(9770)),	-- Greenweave Cloak
+							dr(02.0, i(9787)),	-- Raider's Gauntlets
+							dr(02.0, i(9789)),	-- Raider's Legguards
+							dr(02.0, i(6562)),	-- Shimmering Boots
+							dr(02.0, i(6563)),	-- Shimmering Bracers
+							dr(02.0, i(6538)),	-- Willow Robe
+							dr(01.6, i(9767)),	-- Greenweave Sandals
+							dr(01.5, i(9777)),	-- Bandit Bracers
+							dr(01.4, i(9781)),	-- Bandit Pants
+							dr(01.4, i(6582)),	-- Scouting Boots
+							dr(01.4, i(6565)),	-- Shimmering Gloves
+							dr(01.3, i(6574)),	-- Defender Bracers
+							dr(01.3, i(9772)),	-- Greenweave Leggings
+							dr(01.3, i(9774)),	-- Greenweave Vest
+							dr(01.3, i(6570)),	-- Shimmering Sash
+							dr(01.0, i(9782)),	-- Bandit Jerkin
+							dr(01.0, i(6577)),	-- Defender Gauntlets
+							dr(01.0, i(10287)),	-- Greenweave Mantle
+						},
+						["coord"] = { 90.6, 30.6 },
 					}), 
 					n(45740, { 	-- Watcher Eva
-						dr(09.0, i(6563)),	-- Shimmering Bracers
-						dr(08.0, i(6581)),	-- Scouting Belt
-						dr(07.0, i(6583)),	-- Scouting Bracers
-						dr(07.0, i(6562)),	-- Shimmering Boots
-						dr(07.0, i(6564)),	-- Shimmering Cloak
-						dr(06.0, i(9774)),	-- Greenweave Vest
-						dr(04.0, i(9776)),	-- Bandit Boots
-						dr(03.0, i(9780)),	-- Bandit Gloves
-						dr(03.0, i(9771)),	-- Greenweave Gloves
-						dr(03.0, i(9766)),	-- Greenweave Sash
-						dr(03.0, i(9783)),	-- Raider's Chestpiece
-						dr(03.0, i(6585)),	-- Scouting Cloak
-						dr(02.0, i(6575)),	-- Defender Cloak
-						dr(02.0, i(9812)),	-- Fortified Cloak
-						dr(02.0, i(6582)),	-- Scouting Boots
-						dr(01.9, i(6570)),	-- Shimmering Sash
-						dr(01.8, i(6578)),	-- Defender Leggings
-						dr(01.8, i(10287)),	-- Greenweave Mantle
-						dr(01.6, i(9781)),	-- Bandit Pants
-						dr(01.6, i(6576)),	-- Defender Girdle
-						dr(01.6, i(9814)),	-- Fortified Belt
-						dr(01.5, i(9782)),	-- Bandit Jerkin
-						dr(01.5, i(6573)),	-- Defender Boots
-						dr(01.5, i(6580)),	-- Defender Tunic
-						dr(01.5, i(9772)),	-- Greenweave Leggings
-						dr(01.5, i(9773)),	-- Greenweave Robe
-						dr(01.4, i(6574)),	-- Defender Bracers
-						dr(01.4, i(9811)),	-- Fortified Bracers
-						dr(01.4, i(9805)),	-- Superior Cloak
-						dr(01.2, i(6586)),	-- Scouting Gloves
-						dr(01.1, i(6577)),	-- Defender Gauntlets
-						dr(01.1, i(6587)),	-- Scouting Trousers
-						dr(01.1, i(6565)),	-- Shimmering Gloves					
+						["g"] = {
+							dr(09.0, i(6563)),	-- Shimmering Bracers
+							dr(08.0, i(6581)),	-- Scouting Belt
+							dr(07.0, i(6583)),	-- Scouting Bracers
+							dr(07.0, i(6562)),	-- Shimmering Boots
+							dr(07.0, i(6564)),	-- Shimmering Cloak
+							dr(06.0, i(9774)),	-- Greenweave Vest
+							dr(04.0, i(9776)),	-- Bandit Boots
+							dr(03.0, i(9780)),	-- Bandit Gloves
+							dr(03.0, i(9771)),	-- Greenweave Gloves
+							dr(03.0, i(9766)),	-- Greenweave Sash
+							dr(03.0, i(9783)),	-- Raider's Chestpiece
+							dr(03.0, i(6585)),	-- Scouting Cloak
+							dr(02.0, i(6575)),	-- Defender Cloak
+							dr(02.0, i(9812)),	-- Fortified Cloak
+							dr(02.0, i(6582)),	-- Scouting Boots
+							dr(01.9, i(6570)),	-- Shimmering Sash
+							dr(01.8, i(6578)),	-- Defender Leggings
+							dr(01.8, i(10287)),	-- Greenweave Mantle
+							dr(01.6, i(9781)),	-- Bandit Pants
+							dr(01.6, i(6576)),	-- Defender Girdle
+							dr(01.6, i(9814)),	-- Fortified Belt
+							dr(01.5, i(9782)),	-- Bandit Jerkin
+							dr(01.5, i(6573)),	-- Defender Boots
+							dr(01.5, i(6580)),	-- Defender Tunic
+							dr(01.5, i(9772)),	-- Greenweave Leggings
+							dr(01.5, i(9773)),	-- Greenweave Robe
+							dr(01.4, i(6574)),	-- Defender Bracers
+							dr(01.4, i(9811)),	-- Fortified Bracers
+							dr(01.4, i(9805)),	-- Superior Cloak
+							dr(01.2, i(6586)),	-- Scouting Gloves
+							dr(01.1, i(6577)),	-- Defender Gauntlets
+							dr(01.1, i(6587)),	-- Scouting Trousers
+							dr(01.1, i(6565)),	-- Shimmering Gloves
+						},
+						["coords"] = {	-- pats and/or multiple spawnpoints, coords not exhaustive
+							{ 81.4, 59.0 },
+							{ 80.8, 62.4 },
+							{ 80.8, 65.4 },
+							{ 80.8, 68.2 },
+							{ 79.8, 70.6 },
+						},
 					}),
 				}),
 				n(-2,   {	-- Vendors
-					a(n(844, {	-- Antonio Perelli <Traveling Salesman>
+					a(n(844,  {	-- Antonio Perelli <Traveling Salesman>
 						["groups"] = {
 							i(4795),	-- Bear Bracers
 							i(4796),	-- Owl Bracers
@@ -618,38 +677,61 @@ _.Zones =
 							i(4778),	-- Heavy Spiked Mace
 							i(4777),	-- Ironwood Maul
 						},
+						["coords"] = {	-- probably has additional coordinates, but this is all that's listed on wowhead
+							{ 74.4, 41.2 },
+							{ 75.0, 46.4 },
+							{ 19.6, 60.6 },
+						},
 						["description"] = "This vendor travels in a big circuit from Elwynn Forest(stopping in Goldshire) to Westfall(stopping in Sentinel Hill) to Duskwood(stopping in Darkshire) to Redridge Mountains(stopping in Lakeshire) and then back to Elwynn Forest, so if you cannot find him in this zone, check one of the other three zones.|r",
 					})),
-					a(n(228, {	-- Avette Fellwood <Bowyer>
-						i(11304),	-- Fine Longbow
+					a(n(228,  {	-- Avette Fellwood <Bowyer>
+						["g"] = {
+							i(11304),	-- Fine Longbow
+						},
+						["coord"] = { 73.2, 44.8 },
 					})),
 					a(n(2668, {	-- Danielle Zipstitch <Tailoring Supplies>
-						i(14627), 	-- Pattern: Bright Yellow Shirt
+						["g"] = {
+							i(14627), 	-- Pattern: Bright Yellow Shirt
+						},
+						["coord"] = { 75.8, 45.4 },
 					})),
-					a(n(225, {	-- Gavin Gnarltree <Weaponsmith>
-						i(12247),	-- Broad Bladed Knife
-						i(12249),	-- Merciless Axe
+					a(n(225,  {	-- Gavin Gnarltree <Weaponsmith>
+						["g"] = {
+							i(12247),	-- Broad Bladed Knife
+							i(12249),	-- Merciless Axe
+						},
+						["coord"] = { 73.6, 48.8 },
 					})),
-					n(3134, {	-- Kzixx <Rare Goods>
-						i(6053),	-- Recipe: Holy Protection Potion
-						i(7561),	-- Schematic: Goblin Jumper Cables
-						i(4836),	-- Fireproof Orb
-						i(4838),	-- Orb of Power
-						i(4837),	-- Strength of Will
-						i(4829),	-- Dreamer's Belt
-						i(4828),	-- Nightwind Belt
-						i(4827),	-- Wizard's Belt
+					n(3134,   {	-- Kzixx <Rare Goods>
+						["g"] = {
+							i(6053),	-- Recipe: Holy Protection Potion
+							i(7561),	-- Schematic: Goblin Jumper Cables
+							i(4836),	-- Fireproof Orb
+							i(4838),	-- Orb of Power
+							i(4837),	-- Strength of Will
+							i(4829),	-- Dreamer's Belt
+							i(4828),	-- Nightwind Belt
+							i(4827),	-- Wizard's Belt
+						},
+						["coord"] = { 81.8, 19.8 },
 					}),
-					a(n(226, {	-- Morg Gnarltree <Armorer>
-						i(4797),	-- Fiery Cloak
-						i(4798),	-- Heavy Runed Cloak
-						i(4816),	-- Legionnaire's Leggings
-						i(4799),	-- Antiquated Cloak
-						i(4800),	-- Mighty Chain Pants
+					a(n(226,  {	-- Morg Gnarltree <Armorer>
+						["g"] = {
+							i(4797),	-- Fiery Cloak
+							i(4798),	-- Heavy Runed Cloak
+							i(4816),	-- Legionnaire's Leggings
+							i(4799),	-- Antiquated Cloak
+							i(4800),	-- Mighty Chain Pants
+						},
+						["coord"] = { 73.8, 48.6 },
 					})),
 					a(n(2669, {	-- Sheri Zipstitch <Tailoring Supplies>
-						i(6401), 	-- Pattern: Dark Silk Shirt
-						i(6275), 	-- Pattern: Greater Adept's Robe
+						["g"] = {
+							i(6401), 	-- Pattern: Dark Silk Shirt
+							i(6275), 	-- Pattern: Greater Adept's Robe
+						},
+						["coord"] = { 75.6, 45.4 },
 					})),
 				}),
 				n(-40,  {	-- Legacy
