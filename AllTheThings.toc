@@ -1,11 +1,11 @@
 ## Author: Crieve-Sargeras
-## Interface: 80000
+## Interface: 81000
 ## Title: AllTheThings
 ## Name: AllTheThings
 ## SavedVariables: AllTheThingsAD, AllTheThingsHarvestItems
 ## SavedVariablesPerCharacter: AllTheThingsPCD
 ## Notes: Addon for Tracking Collections & Account Completion
-## Version: 1.7.7
+## Version: 1.7.8
 lib\LibStub\LibStub.lua
 lib\CallbackHandler-1.0\CallbackHandler-1.0.lua
 lib\LibDataBroker-1.1\LibDataBroker-1.1.lua
