@@ -96,7 +96,7 @@ _.ExpansionFeatures =
 				--]]
 				n(-4, { 	-- Achievements
 					ach(9630),		-- Defender of Draenor (Alliance)
-					ach(9928, {		-- Don't Call Me Junior (Alliance)
+					ach(9928, 9901, {		-- Don't Call Me Junior
 						follower(465),	-- Harrison Jones
 						crit(1),		-- Master Relic Hunter
 					}),

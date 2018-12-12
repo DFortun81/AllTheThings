@@ -3657,8 +3657,8 @@ app.BaseAchievementCriteria = {
 				local m = GetAchievementNumCriteria(t.achievementID);
 				if m and t.criteriaID <= m then
 					return select(3, GetAchievementCriteriaInfo(t.achievementID, t.criteriaID, true));
-				elseif t.achievementID ~= 12891 and t.achievementID ~= 12479 then
-					print(t.achievementID, t.criteriaID, " > ", m); 
+				--elseif t.achievementID ~= 12891 and t.achievementID ~= 12479 and t.achievementID ~= 12593 and t.achievementID ~= 12455 then
+				--	print(t.achievementID, t.criteriaID, " > ", m); 
 				end
 			end
 		elseif key == "index" then
