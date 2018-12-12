@@ -651,7 +651,6 @@ end
 GameTooltipModel:Hide();
 
 -- Localization Lib
-app.Locales = {};
 app.yell = function(msg)
 	UIErrorsFrame:AddMessage(msg or "nil", 1, 0, 0);
 	app:PlayRemoveSound();

@@ -5,14 +5,14 @@
 ## SavedVariables: AllTheThingsAD, AllTheThingsHarvestItems
 ## SavedVariablesPerCharacter: AllTheThingsPCD
 ## Notes: Addon for Tracking Collections & Account Completion
-## Version: 1.7.8
+## Version: 1.7.8b
 lib\LibStub\LibStub.lua
 lib\CallbackHandler-1.0\CallbackHandler-1.0.lua
 lib\LibDataBroker-1.1\LibDataBroker-1.1.lua
 lib\!NoTaint_UIDropDownMenu\UIDropDownMenu.xml
 src\base.lua
-AllTheThings.lua
 locales\enUS.lua
+AllTheThings.lua
 db\Presets.lua
 db\RaceDB.lua
 db\NPCDB.lua

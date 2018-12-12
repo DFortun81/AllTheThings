@@ -12,6 +12,7 @@ app.refreshDataForce = true;
 app.events = {};
 app:SetSize(1, 1);
 app:Show();
+app.Locales = {};
 
 -- ReloadUI slash command (for ease of use)
 SLASH_RELOADUI1 = "/reloadui";
