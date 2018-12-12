@@ -3545,7 +3545,13 @@ end)();
 -- Achievement Lib
 app.BaseAchievement = {
 	__index = function(t, key)
-		if key == "text" then
+		if key == "achievementID" then
+			local achievementID = t.altAchID and app.Faction == "Horde" and t.altAchID or t.achID;
+			if achievementID then
+				rawset(t, "achievementID", achievementID);
+				return achievementID;
+			end
+		elseif key == "text" then
 			--local IDNumber, Name, Points, Completed, Month, Day, Year, Description, Flags, Image, RewardText, isGuildAch = GetAchievementInfo(t.achievementID);
 			return GetAchievementLink(t.achievementID) or select(2, GetAchievementInfo(t.achievementID)) or ("Achievement #" .. t.achievementID);
 		elseif key == "key" then
@@ -3570,13 +3576,18 @@ app.BaseAchievement = {
 	end
 };
 app.CreateAchievement = function(id, t)
-	return createInstance(constructor(id, t, "achievementID"), app.BaseAchievement);
+	return createInstance(constructor(id, t, "achID"), app.BaseAchievement);
 end
 
 -- Achievement Criteria Lib
 app.BaseAchievementCriteria = { 
 	__index = function(t, key)
 		if key == "achievementID" then
+			local achievementID = t.altAchID and app.Faction == "Horde" and t.altAchID or t.achID;
+			if achievementID then
+				rawset(t, "achievementID", achievementID);
+				return achievementID;
+			end
 			return t.parent.achievementID or t.parent.parent.achievementID;
 		elseif key == "key" then
 			return "criteriaID";
@@ -3643,7 +3654,7 @@ app.BaseAchievementCriteria = {
 				if m and t.criteriaID <= m then
 					return select(3, GetAchievementCriteriaInfo(t.achievementID, t.criteriaID, true));
 				else
-					-- print(t.achievementID, t.criteriaID, " > ", m);
+					print(t.achievementID, t.criteriaID, " > ", m); 
 				end
 			end
 		elseif key == "index" then
@@ -3988,7 +3999,13 @@ app.BaseFaction = {
 	-- name, description, standingID, barMin, barMax, barValue, atWarWith, canToggleAtWar, isHeader, isCollapsed, hasRep, isWatched, isChild, factionID, hasBonusRepGain, canBeLFGBonus = GetFactionInfo(factionIndex)
 	-- friendID, friendRep, friendMaxRep, friendName, friendText, friendTexture, friendTextLevel, friendThreshold, nextFriendThreshold = GetFriendshipReputation(factionID)
 	__index = function(t, key)
-		if key == "key" then
+		if key == "achievementID" then
+			local achievementID = t.altAchID and app.Faction == "Horde" and t.altAchID or t.achID;
+			if achievementID then
+				rawset(t, "achievementID", achievementID);
+				return achievementID;
+			end
+		elseif key == "key" then
 			return "factionID";
 		elseif key == "f" then
 			return 112;
@@ -4541,7 +4558,13 @@ app.CreateGearSource = function(id)
 end
 app.BaseGearSetHeader = {
 	__index = function(t, key)
-		if key == "key" then
+		if key == "achievementID" then
+			local achievementID = t.altAchID and app.Faction == "Horde" and t.altAchID or t.achID;
+			if achievementID then
+				rawset(t, "achievementID", achievementID);
+				return achievementID;
+			end
+		elseif key == "key" then
 			return "setHeaderID";
 		elseif key == "text" then
 			local info = C_TransmogSets_GetSetInfo(t.setHeaderID);
@@ -4561,7 +4584,13 @@ app.CreateGearSetHeader = function(id, t)
 end
 app.BaseGearSetSubHeader = {
 	__index = function(t, key)
-		if key == "key" then
+		if key == "achievementID" then
+			local achievementID = t.altAchID and app.Faction == "Horde" and t.altAchID or t.achID;
+			if achievementID then
+				rawset(t, "achievementID", achievementID);
+				return achievementID;
+			end
+		elseif key == "key" then
 			return "setSubHeaderID";
 		elseif key == "text" then
 			local info = C_TransmogSets_GetSetInfo(t.setSubHeaderID);
@@ -4813,7 +4842,13 @@ end
 -- Map Lib
 app.BaseMap = {
 	__index = function(t, key)
-		if key == "key" then
+		if key == "achievementID" then
+			local achievementID = t.altAchID and app.Faction == "Horde" and t.altAchID or t.achID;
+			if achievementID then
+				rawset(t, "achievementID", achievementID);
+				return achievementID;
+			end
+		elseif key == "key" then
 			return "mapID";
 		elseif key == "text" then
 			if t["isRaid"] then return "|cffff8000" .. app.GetMapName(t.mapID) .. "|r"; end
@@ -4980,7 +5015,13 @@ end
 -- NPC Lib
 app.BaseNPC = {
 	__index = function(t, key)
-		if key == "key" then
+		if key == "achievementID" then
+			local achievementID = t.altAchID and app.Faction == "Horde" and t.altAchID or t.achID;
+			if achievementID then
+				rawset(t, "achievementID", achievementID);
+				return achievementID;
+			end
+		elseif key == "key" then
 			return "npcID";
 		elseif key == "text" then
 			if t["isRaid"] and t.name then return "|cffff8000" .. t.name .. "|r"; end
@@ -7081,7 +7122,7 @@ local function RowOnClick(self, button)
 							end
 							TSMAPI_FOUR.Groups.AppendOperation(groupPath, "Shopping", operation)
 							for i,group in ipairs(missingItems) do
-								if (not group.spellID and not group.achievementID) or group.itemID then
+								if (not group.spellID and not group.achID) or group.itemID then
 									itemString = group.tsm;
 									if itemString then
 										groupPath = BuildSourceTextForTSM(group, 0);
@@ -8411,8 +8452,8 @@ function app:GetWindow(suffix, parent, onUpdate)
 					t = app.CreateCategory(t.categoryID, t);
 				elseif t.criteriaID then
 					t = app.CreateAchievementCriteria(t.criteriaID, t);
-				elseif t.achievementID then
-					t = app.CreateAchievement(t.achievementID, t);
+				elseif t.achID then
+					t = app.CreateAchievement(t.achID, t);
 				elseif t.recipeID then
 					t = app.CreateRecipe(t.recipeID, t);
 				elseif t.spellID then
@@ -8451,8 +8492,8 @@ function app:GetWindow(suffix, parent, onUpdate)
 					key = "spellID";
 				elseif t.categoryID then
 					key = "categoryID";
-				elseif t.achievementID then
-					key = "achievementID";
+				elseif t.achID then
+					key = "achID";
 				elseif t.toyID then
 					key = "toyID";
 				elseif t.itemID then
@@ -9624,7 +9665,6 @@ app:RegisterEvent("TOYS_UPDATED");
 app:RegisterEvent("TRADE_SKILL_LIST_UPDATE");
 app:RegisterEvent("TRADE_SKILL_SHOW");
 app:RegisterEvent("TRADE_SKILL_CLOSE");
---app:RegisterEvent("ACHIEVEMENT_EARNED");
 app:RegisterEvent("SCENARIO_UPDATE");
 app:RegisterEvent("COMPANION_LEARNED");
 app:RegisterEvent("COMPANION_UNLEARNED");
@@ -9971,11 +10011,6 @@ app.events.PLAYER_LOGIN = function()
 	end
 	if GetDataMember("AutoMainList") then
 		app:OpenMainList();
-	end
-end
-app.events.ACHIEVEMENT_EARNED = function(achievementID, ...)
-	if achievementID then
-		print("ACHIEVEMENT_EARNED", achievementID, ...);
 	end
 end
 app.events.SCENARIO_UPDATE = RefreshLocation;

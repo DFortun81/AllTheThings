@@ -822,6 +822,23 @@ namespace Parser_V2
                         return "questID";
                     }
 
+                case "altAchID":
+                case "altAchievementID":
+                case "hAchievementID":
+                case "hordeAchievementID":
+                    {
+                        return "altAchID";
+                    }
+
+                case "achID":
+                case "achievementID":
+                case "aAchievementID":
+                case "allyAchievementID":
+                case "allianceAchievementID":
+                    {
+                        return "achID";
+                    }
+
                 // This field is just fine the way it is.
                 default: return field;
             }

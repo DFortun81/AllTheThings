@@ -269,12 +269,13 @@ namespace Parser_V2
 
                     // Integer Data Type Fields
                     case "altItemID":
+                    case "altAchID":
                     case "altQuestID":
                     case "buildingID":
                     case "questID":
                     case "musicRollID":
                     case "illusionID":
-                    case "achievementID":
+                    case "achID":
                     case "requireSkill":
                     case "class":
                     case "subclass":
@@ -549,6 +550,7 @@ namespace Parser_V2
                     case "questID":
                     case "mountID":
                     case "altItemID":
+                    case "altAchID":
                     case "altQuestID":
                     case "buildingID":
                     case "musicRollID":
@@ -557,7 +559,7 @@ namespace Parser_V2
                     case "speciesID":
                     case "spellID":
                     case "factionID":
-                    case "achievementID":
+                    case "achID":
                     case "requireSkill":
                     case "isToy":
                     case "f":

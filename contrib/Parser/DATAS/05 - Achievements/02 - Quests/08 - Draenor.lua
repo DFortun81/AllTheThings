@@ -272,7 +272,7 @@ _.Achievements =
 						crit(3),		-- In the Land of Giants
 						crit(4),		-- The Iron Approach
 					})),
-					a(ach(10072, {	-- Rumble in the Jungle (Alliance) (Tanaan Jungle)
+					achAH(10072, 10265, {	-- Rumble in the Jungle (Alliance) (Tanaan Jungle)
 						title(318),		-- of the Jungle
 						crit(1),		-- In Pursuit of Gul'dan
 						crit(2),		-- Draenor's Last Stand
@@ -282,7 +282,8 @@ _.Achievements =
 						crit(6),		-- Explore Tanaan Jungle
 						crit(7),		-- I Came, I Clawed, I Conquered
 						crit(8),		-- The Legion Will NOT Conquer All
-					})),
+					}),
+					--[[
 					h(ach(10265, {	-- Rumble in the Jungle (Horde) (Tanaan Jungle)
 						title(318),		-- of the Jungle
 						crit(1),		-- In Pursuit of Gul'dan
@@ -294,6 +295,7 @@ _.Achievements =
 						crit(7),		-- I Came, I Clawed, I Conquered
 						crit(8),		-- The Legion Will NOT Conquer All
 					})),
+					]]--
 					a(ach(9564, {	-- Securing Draenor (Alliance)
 						crit(9),		-- Assault on Darktide Roost
 						crit(3),		-- Assault on Magnarok

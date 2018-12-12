@@ -428,6 +428,11 @@ end
 ach = function(id, t)									-- Create an ACHIEVEMENT Object
 	return struct("achievementID", id, t);
 end
+achAH = function(allianceAchievementID, hordeAchievementID, t)	-- Create an ACHIEVEMENT Object
+	t = struct("allianceAchievementID", allianceAchievementID, t);
+	t["hordeAchievementID"] = hordeAchievementID;
+	return t;
+end
 battlepet = function(id, t)								-- Create a BATTLE PET Object (Battle Pet == Species == Pet)
 	return struct("speciesID", id, t);
 end

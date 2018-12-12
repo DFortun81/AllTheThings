@@ -99,7 +99,7 @@ namespace Parser_V2
                 new ObjectData("itemID", "i"),//, new List<string>{ "lvl" }),
                 new ObjectData("factionID", "faction"),
                 new ObjectData("questID", "q"),
-                new ObjectData("achievementID", "ach"),
+                new ObjectData("achID", "ach"),
                 new ObjectData("tierID", "t"),
                 new ObjectData("professionID", "prof", new List<string>{ "requireSkill" }),
                 new ObjectData("vignetteID", "v"),
@@ -1027,7 +1027,7 @@ namespace Parser_V2
                 if (data.ContainsKey("illusionID")) return Filters.Illusion;
                 if (data.ContainsKey("professionID")) return Filters.Recipe;
                 if (data.ContainsKey("questID")) return Filters.Quest;
-                if (data.ContainsKey("achievementID")) return Filters.Achievement;
+                if (data.ContainsKey("achID")) return Filters.Achievement;
 
                 // Calculate the Filter ID based on Item Class, Sub Class, and Inventory Type
                 int itemClass = -1, itemSubClass = -1, inventoryType = -1;
@@ -1355,6 +1355,7 @@ namespace Parser_V2
                     //case "questID":
                     //case "musicRollID":
                     //case "illusionID":
+                    case "altAchID":
                     case "altQuestID":
                     case "requireSkill":
                     case "class":
@@ -1721,7 +1722,7 @@ namespace Parser_V2
                                 }
                             }
                         }
-                        else if (data2.TryGetValue("achievementID", out fieldRef))
+                        else if (data2.TryGetValue("achID", out fieldRef))
                         {
                             // The data we're merging has a Achievement ID. (we only want to merge them if they're the same!)
                             var achievementID = Convert.ToInt32(fieldRef);
@@ -1734,7 +1735,7 @@ namespace Parser_V2
                                 // Compare the most significant IDs and if they match, this is what I'm looking for!
                                 if (temp.TryGetValue(mostSignificantID, out fieldRef) && fieldRef.Equals(id))
                                 {
-                                    if (temp.TryGetValue("achievementID", out fieldRef) && fieldRef.Equals(achievementID))
+                                    if (temp.TryGetValue("achID", out fieldRef) && fieldRef.Equals(achievementID))
                                     {
                                         entry = temp;
                                         break;
