@@ -905,6 +905,7 @@ _.Zones =
 						["groups"] = {
 							i(153277),	-- Forgotten Conservatory Wristwraps
 							i(153272),	-- Forgotten Conservatory Gloves
+							i(153288),	-- Forgotten Conservatory Robes*
 							i(153275),	-- Forgotten Conservatory Slippers
 							i(153331),	-- Mac'Aree Lightseeker's Helmet
 							i(153334),	-- Mac'Aree Lightseeker's Spaulders
