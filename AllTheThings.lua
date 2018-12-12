@@ -3607,7 +3607,11 @@ app.BaseAchievementCriteria = {
 			if t.encounterID then
 				return select(1, EJ_GetEncounterInfo(t.encounterID)) or "";
 			end
-			return GetAchievementCriteriaInfo(t.achievementID,t.criteriaID, true);
+			local m = GetAchievementNumCriteria(t.achievementID);
+			if m and t.criteriaID <= m then
+				return GetAchievementCriteriaInfo(t.achievementID,t.criteriaID, true);
+			end
+			return "You might need to be on the other faction to view this.";
 		elseif key == "description" then
 			if t.encounterID then
 				return select(2, EJ_GetEncounterInfo(t.encounterID)) or "";
