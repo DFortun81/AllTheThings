@@ -4072,10 +4072,9 @@ end
 				end
 			end
 		end
-		-- SetDataMember("CrieveIsAwesome", cachedNodeData);
 	end
 	app.CacheFlightPathDataForCurrentNode = function()
-		local allNodeData = C_TaxiMap.GetAllTaxiNodes();
+		local allNodeData = C_TaxiMap.GetAllTaxiNodes(app.GetCurrentMapID());
 		if allNodeData then
 			local knownNodeIDs = {};
 			for j,nodeData in ipairs(allNodeData) do
@@ -4109,7 +4108,6 @@ end
 				end
 			end
 		end
-		--app:RefreshData();
 	end
 	app:RegisterEvent("TAXIMAP_OPENED");
 	app.events.TAXIMAP_OPENED = app.CacheFlightPathDataForCurrentNode;
