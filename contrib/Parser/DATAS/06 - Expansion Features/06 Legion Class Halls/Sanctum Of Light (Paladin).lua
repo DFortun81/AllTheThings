@@ -79,6 +79,13 @@ _.ExpansionFeatures =
 							crit(3),		-- Keystone Master
 							crit(4),		-- Glory of the Legion Hero
 						}),
+						achAH(10749, 11173, {	-- Fighting with Style: War-torn
+							crit(1),		-- The Prestige
+							crit(2),		-- Crest of Heroism
+							crit(3),		-- Crest of Carnage
+							crit(4),		-- Crest of Devastation
+						}),
+						--[[
 						a(ach(10749, {	-- Fighting with Style: War-torn (Alliance)
 							crit(1),		-- The Prestige
 							crit(2),		-- Crest of Heroism
@@ -91,6 +98,7 @@ _.ExpansionFeatures =
 							crit(3),		-- Crest of Carnage
 							crit(4),		-- Crest of Devastation
 						})),
+						]]--
 						ach(10746),		-- Forged for Battle
 						ach(10460),		-- Hidden Potential
 						ach(10459),		-- Improving on History

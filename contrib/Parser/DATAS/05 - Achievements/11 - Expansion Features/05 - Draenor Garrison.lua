@@ -138,6 +138,46 @@ _.Achievements =
 						},
 						["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 					}),
+					achAH(10015, 10016, {	-- Full Discography
+						--[[
+						crit(1),		-- The Burning Legion (Black Temple - Illidan Stormrage)
+						crit(2),		-- Wrath of the Lich King (Naxxramas - Kel'Thuzad)
+						crit(3),		-- Legends of Azeroth (Blackwind Descent - Nefarian)
+						crit(4),		-- The Shattering (Dragon Soul - Deathwing)
+						crit(5),		-- Heart of Pandaria (Terrace of Endless Spring - Sha of Fear)
+						crit(6),		-- A Siege of Worlds (Blackrock Foundry - Blackhand)
+						crit(7),		-- Stormwind (Garrison quest reward - Bringing the Bass)
+						crit(8),		-- High Seas (Krasarang Wilds - Proveditor Grantley - 500 Domination points)
+						crit(9),		-- Ironforge (Garrison quest reward - Bringing the Bass)
+						crit(10),		-- Cold Mountain (Fishing - Ironforge)
+						crit(11),		-- Night Song (Garrison quest reward - Bringing the Bass)
+						crit(12),		-- Gnomeregan (Garrison quest reward - Bringing the Bass)
+						crit(13),		-- Tinkertown (Garrison quest reward - Bringing the Bass)
+						crit(14),		-- Exodar (Garrison quest reward - Bringing the Bass)
+						crit(15),		-- Curse of the Worgen (Garrison quest reward - Bringing the Bass)
+						crit(16),		-- Angelic (The Cape of Stranglethorn, Stranglethorn Vale - Arena Treasure Chest)
+						crit(17),		-- Ghost (Duskwood - Forlorn Composer)
+						crit(18),		-- Mountains (Winterspring - Frozen Supplies)
+						crit(19),		-- Magic (Ashenvale - Lost Sentinel's Pouch)
+						crit(20),		-- The Black Temple (Shadowmoon Valley - Warden's Scroll Case)
+						crit(21),		-- Invincible (Icecrown Citadel - The Lich King)
+						crit(22),		-- Karazhan Opera House (Karazhan - The Big Bad Wolf, Romulo, The Crone, Julianne)
+						crit(23),		-- The Argent Tournament (Argent Tourament - Faction Vendors - 25 Champion's Seals)
+						crit(24),		-- Lament of the Highborne (Undercity - Sylvanas' Strongbox)
+						crit(25),		-- Faerie Dragon (Tirisfal Glades - Faerie Dragon Nest)
+						crit(26),		-- Totems of the Grizzlemaw (Grizzly Hills - Remington Brode)
+						crit(27),		-- Mountains of Thunder (Halls of Lighting - Loken)
+						crit(28),		-- Darkmoon Carousel (Darkmoon Island - Chester - 90 Darkmoon Prize Tickets)
+						crit(29),		-- Shalandis Isle (Darnassus - High Priestess' Reliquary)
+						crit(30),		-- Way of the Monk (Garrison quest reward - Bringing the Bass)
+						crit(31),		-- Song of Liu Lang (Vale of Enternal Blossoms - Tan Shin Tiao - 100 gold)
+						]]--
+						achAH(9912, 9914, {	-- Azeroth's Top Twenty Tunes (20)
+							i(122700),	-- Portable Audiophone
+						}),
+						achAH(9828, 9897),	-- Ten Hit Tunes (10)
+					}),
+					--[[
 					a(ach(10015, {	-- Full Discography (Alliance)
 						crit(1),		-- The Burning Legion (Black Temple - Illidan Stormrage)
 						crit(2),		-- Wrath of the Lich King (Naxxramas - Kel'Thuzad)
@@ -212,6 +252,7 @@ _.Achievements =
 						}),
 						ach(9897),	-- Ten Hit Tunes (Horde) (10)
 					})),
+					]]--
 					ach(9094, {		-- Garrison Architect
 						title(260),		-- Architect
 						crit(1),		-- Draftsman

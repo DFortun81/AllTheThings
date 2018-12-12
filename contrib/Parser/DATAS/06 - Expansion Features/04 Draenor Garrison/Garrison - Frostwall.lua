@@ -103,22 +103,23 @@ _.ExpansionFeatures =
 					ach(9546, {		-- Even More Plots (Horde)
 						ach(9545),		-- More Plots (Horde)
 					}),
-					ach(10016, {	-- Full Discography (Horde)
+					achAH(10015, 10016, {	-- Full Discography
+						--[[
 						crit(1),		-- The Burning Legion (Black Temple - Illidan Stormrage)
 						crit(2),		-- Wrath of the Lich King (Naxxramas - Kel'Thuzad)
 						crit(3),		-- Legends of Azeroth (Blackwind Descent - Nefarian)
 						crit(4),		-- The Shattering (Dragon Soul - Deathwing)
 						crit(5),		-- Heart of Pandaria (Terrace of Endless Spring - Sha of Fear)
 						crit(6),		-- A Siege of Worlds (Blackrock Foundry - Blackhand)
-						crit(7),		-- Orgrimmar (Garrison quest reward - Bringing the Bass)
-						crit(8),		-- War March (Krasarang Wilds - Ongrom Black Tooth - 500 Lion's Landing Commissions)
-						crit(9),		-- Thunder Bluff (Garrison quest reward - Bringing the Bass)
-						crit(10),		-- Mulgore Plains (Fishing - Thunder Bluff)
-						crit(11),		-- Undercity (Garrison quest reward - Bringing the Bass)
-						crit(12),		-- Zul'Gurub Voo Doo (Garrison quest reward - Bringing the Bass)
-						crit(13),		-- The Zandalari (Garrison quest reward - Bringing the Bass)
-						crit(14),		-- Silvermoon (Garrison quest reward - Bringing the Bass)
-						crit(15),		-- Rescue the Warchief (Garrison quest reward - Bringing the Bass)
+						crit(7),		-- Stormwind (Garrison quest reward - Bringing the Bass)
+						crit(8),		-- High Seas (Krasarang Wilds - Proveditor Grantley - 500 Domination points)
+						crit(9),		-- Ironforge (Garrison quest reward - Bringing the Bass)
+						crit(10),		-- Cold Mountain (Fishing - Ironforge)
+						crit(11),		-- Night Song (Garrison quest reward - Bringing the Bass)
+						crit(12),		-- Gnomeregan (Garrison quest reward - Bringing the Bass)
+						crit(13),		-- Tinkertown (Garrison quest reward - Bringing the Bass)
+						crit(14),		-- Exodar (Garrison quest reward - Bringing the Bass)
+						crit(15),		-- Curse of the Worgen (Garrison quest reward - Bringing the Bass)
 						crit(16),		-- Angelic (The Cape of Stranglethorn, Stranglethorn Vale - Arena Treasure Chest)
 						crit(17),		-- Ghost (Duskwood - Forlorn Composer)
 						crit(18),		-- Mountains (Winterspring - Frozen Supplies)
@@ -135,10 +136,11 @@ _.ExpansionFeatures =
 						crit(29),		-- Shalandis Isle (Darnassus - High Priestess' Reliquary)
 						crit(30),		-- Way of the Monk (Garrison quest reward - Bringing the Bass)
 						crit(31),		-- Song of Liu Lang (Vale of Enternal Blossoms - Tan Shin Tiao - 100 gold)
-						ach(9914, {	-- Azeroth's Top Twenty Tunes (Horde) (20)
+						]]--
+						achAH(9912, 9914, {	-- Azeroth's Top Twenty Tunes (20)
 							i(122700),	-- Portable Audiophone
 						}),
-						ach(9897),	-- Ten Hit Tunes (Horde) (10)
+						achAH(9828, 9897),	-- Ten Hit Tunes (10)
 					}),
 					ach(9094, {		-- Garrison Architect
 						title(260),		-- Architect

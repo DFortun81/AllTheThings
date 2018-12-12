@@ -103,7 +103,8 @@ _.ExpansionFeatures =
 					ach(9101, {		-- Even More Plots (Alliance)
 						ach(9100),		-- More Plots (Alliance)
 					}),
-					ach(10015, {	-- Full Discography (Alliance)
+					achAH(10015, 10016, {	-- Full Discography
+						--[[
 						crit(1),		-- The Burning Legion (Black Temple - Illidan Stormrage)
 						crit(2),		-- Wrath of the Lich King (Naxxramas - Kel'Thuzad)
 						crit(3),		-- Legends of Azeroth (Blackwind Descent - Nefarian)
@@ -135,10 +136,11 @@ _.ExpansionFeatures =
 						crit(29),		-- Shalandis Isle (Darnassus - High Priestess' Reliquary)
 						crit(30),		-- Way of the Monk (Garrison quest reward - Bringing the Bass)
 						crit(31),		-- Song of Liu Lang (Vale of Enternal Blossoms - Tan Shin Tiao - 100 gold)
-						ach(9912, {	-- Azeroth's Top Twenty Tunes (Alliance) (20)
+						]]--
+						achAH(9912, 9914, {	-- Azeroth's Top Twenty Tunes (20)
 							i(122700),	-- Portable Audiophone
 						}),
-						ach(9828),	-- Ten Hit Tunes (Alliance) (10)
+						achAH(9828, 9897),	-- Ten Hit Tunes (10)
 					}),
 					ach(9094, {		-- Garrison Architect
 						title(260),		-- Architect
