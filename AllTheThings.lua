@@ -3597,7 +3597,7 @@ app.BaseAchievementCriteria = {
 			if t.encounterID then
 				return select(1, EJ_GetEncounterInfo(t.encounterID)) or "";
 			end
-			return GetAchievementCriteriaInfo(t.achievementID,t.criteriaID);
+			return GetAchievementCriteriaInfo(t.achievementID,t.criteriaID, true);
 		elseif key == "description" then
 			if t.encounterID then
 				return select(2, EJ_GetEncounterInfo(t.encounterID)) or "";
@@ -3637,7 +3637,16 @@ app.BaseAchievementCriteria = {
 		elseif key == "collectible" then
 			return GetDataMember("TreatAchievementsAsCollectible");
 		elseif key == "saved" or key == "collected" then
-			return select(4, GetAchievementInfo(t.achievementID)) or select(3, GetAchievementCriteriaInfo(t.achievementID, math.min(t.criteriaID, GetAchievementNumCriteria(t.achievementID))));
+			if select(4, GetAchievementInfo(t.achievementID)) then
+				return true;
+			elseif t.criteriaID then
+				local m = GetAchievementNumCriteria(t.achievementID);
+				if m and t.criteriaID <= m then
+					return select(3, GetAchievementCriteriaInfo(t.achievementID, t.criteriaID, true));
+				else
+					-- print(t.achievementID, t.criteriaID, " > ", m);
+				end
+			end
 		elseif key == "index" then
 			return 1;
 		else
