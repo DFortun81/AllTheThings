@@ -96,14 +96,14 @@ _.ExpansionFeatures =
 				--]]
 				nh(-4, { 	-- Achievements
 					ach(9248),		-- Defender of Draenor (Horde)
-					ach(9901, {		-- Don't Call Me Junior (Horde)
+					ach(9928, 9901, {		-- Don't Call Me Junior (Horde)
 						follower(465),	-- Harrison Jones
 						crit(1),		-- Master Relic Hunter
 					}),
 					ach(9546, {		-- Even More Plots (Horde)
 						ach(9545),		-- More Plots (Horde)
 					}),
-					achAH(10015, 10016, {	-- Full Discography
+					ach(10015, 10016, {	-- Full Discography
 						--[[
 						crit(1),		-- The Burning Legion (Black Temple - Illidan Stormrage)
 						crit(2),		-- Wrath of the Lich King (Naxxramas - Kel'Thuzad)
@@ -137,10 +137,10 @@ _.ExpansionFeatures =
 						crit(30),		-- Way of the Monk (Garrison quest reward - Bringing the Bass)
 						crit(31),		-- Song of Liu Lang (Vale of Enternal Blossoms - Tan Shin Tiao - 100 gold)
 						]]--
-						achAH(9912, 9914, {	-- Azeroth's Top Twenty Tunes (20)
+						ach(9912, 9914, {	-- Azeroth's Top Twenty Tunes (20)
 							i(122700),	-- Portable Audiophone
 						}),
-						achAH(9828, 9897),	-- Ten Hit Tunes (10)
+						ach(9828, 9897),	-- Ten Hit Tunes (10)
 					}),
 					ach(9094, {		-- Garrison Architect
 						title(260),		-- Architect
@@ -5621,7 +5621,7 @@ _.ExpansionFeatures =
 								i(109255),		-- Lumber Mill, Level 3 [Blueprints]
 								crit(1), 		-- Place 75 Work Order at the Lumber Mill
 								crit(2),		-- Legacy of the Ancients
-								crit(3),		-- Reduction in Force
+								--crit(3),		-- Reduction in Force
 							},
 							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 						}),

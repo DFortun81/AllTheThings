@@ -58,13 +58,18 @@ _.Achievements =
 						crit(9),		-- Red Skeletal Warhorse
 						crit(10),		-- Swift Warstrider
 					}),
-					a(ach(908)),	-- Call to Arms! (Alliance)
-					h(ach(909)),	-- Call to Arms! (Horde)
-					a(ach(388)),	-- City Defender (Alliance)
-					h(ach(1006)),	-- City Defender (Horde)
+					ach(908, 909),	-- Call to Arms!
+					ach(388, 1006),	-- City Defender
 					ach(227),		-- Damage Control
 					a(ach(612)),	-- Downing the Dark Lady
 					ach(1157),		-- Duel-icious
+					ach(614, 619, {	-- For the Alliance! / For the Horde!
+						a(i(44223)),	-- Reins of the Black War Bear
+						crit(1),		-- Bleeding Bloodhoof
+						crit(2),		-- Downing the Dark Lady
+						crit(3),		-- Killed in Quel'Thalas
+					}),
+					--[[
 					a(ach(614, {	-- For the Alliance!
 						a(i(44223)),	-- Reins of the Black War Bear
 						crit(1),		-- Bleeding Bloodhoof
@@ -77,6 +82,7 @@ _.Achievements =
 						crit(2),		-- Overthrow the Council
 						crit(3),		-- Putting Out the Light
 					})),
+					]]--
 					a(ach(2016, {	-- Grizzled Veteran (Alliance)
 						crit(1),		-- Blackriver Skirmish
 						crit(2),		-- Pieces Parts
@@ -102,22 +108,14 @@ _.Achievements =
 					ach(396),		-- Gurubashi Arena Grand Master
 					ach(389),		-- Gurubashi Arena Master
 					ach(10561),		-- Honorable Medallion
-					a(ach(8052, {	-- Khan (Alliance)
+					ach(8052, 8055, {	-- Khan
 						style(2, title(220)),	-- Khan
 						crit(1),		-- Master of the Battle for Gilneas
 						crit(2),		-- Master of Isle of Conquest
 						crit(3),		-- Master of Twin Peaks
 						crit(4),		-- Master of Silvershard Mines
 						crit(5),		-- Master of Temple of Kotmogu
-					})),
-					h(ach(8055, {	-- Khan (Horde)
-						style(2, title(220)),	-- Khan
-						crit(1),		-- Master of the Battle for Gilneas
-						crit(2),		-- Master of Isle of Conquest
-						crit(3),		-- Master of Twin Peaks
-						crit(4),		-- Master of Silvershard Mines
-						crit(5),		-- Master of Temple of Kotmogu
-					})),
+					}),
 					a(ach(613)),	-- Killed in Quel'Thalas
 					a(ach(246, {	-- Know Thy Enemy (Alliance)
 						crit(1),		-- Pandaren

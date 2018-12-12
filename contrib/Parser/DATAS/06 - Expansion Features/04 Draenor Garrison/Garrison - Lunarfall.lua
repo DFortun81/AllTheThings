@@ -103,7 +103,7 @@ _.ExpansionFeatures =
 					ach(9101, {		-- Even More Plots (Alliance)
 						ach(9100),		-- More Plots (Alliance)
 					}),
-					achAH(10015, 10016, {	-- Full Discography
+					ach(10015, 10016, {	-- Full Discography
 						--[[
 						crit(1),		-- The Burning Legion (Black Temple - Illidan Stormrage)
 						crit(2),		-- Wrath of the Lich King (Naxxramas - Kel'Thuzad)
@@ -137,10 +137,10 @@ _.ExpansionFeatures =
 						crit(30),		-- Way of the Monk (Garrison quest reward - Bringing the Bass)
 						crit(31),		-- Song of Liu Lang (Vale of Enternal Blossoms - Tan Shin Tiao - 100 gold)
 						]]--
-						achAH(9912, 9914, {	-- Azeroth's Top Twenty Tunes (20)
+						ach(9912, 9914, {	-- Azeroth's Top Twenty Tunes (20)
 							i(122700),	-- Portable Audiophone
 						}),
-						achAH(9828, 9897),	-- Ten Hit Tunes (10)
+						ach(9828, 9897),	-- Ten Hit Tunes (10)
 					}),
 					ach(9094, {		-- Garrison Architect
 						title(260),		-- Architect
@@ -5639,7 +5639,7 @@ _.ExpansionFeatures =
 								i(109255),		-- Lumber Mill, Level 3 [Blueprints]
 								crit(1), 		-- Place 75 Work Order at the Lumber Mill
 								crit(2),		-- Legacy of the Ancients
-								crit(3),		-- Reduction in Force
+								--crit(3),		-- Reduction in Force
 							},
 							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 						}),

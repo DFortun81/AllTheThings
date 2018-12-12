@@ -91,7 +91,7 @@ _.ExpansionFeatures =
 							crit(3),		-- Keystone Master
 							crit(4),		-- Glory of the Legion Hero
 						}),
-						achAH(10749, 11173, {	-- Fighting with Style: War-torn
+						ach(10749, 11173, {	-- Fighting with Style: War-torn
 							crit(1),		-- The Prestige
 							crit(2),		-- Crest of Heroism
 							crit(3),		-- Crest of Carnage

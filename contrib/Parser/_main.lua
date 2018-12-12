@@ -425,13 +425,14 @@ end
 artifact = function(id, t)								-- Create an ARTIFACT Object
 	return struct("artifactID", id, t);
 end
-ach = function(id, t)									-- Create an ACHIEVEMENT Object
-	return struct("achievementID", id, t);
-end
-achAH = function(allianceAchievementID, hordeAchievementID, t)	-- Create an ACHIEVEMENT Object
-	t = struct("allianceAchievementID", allianceAchievementID, t);
-	t["hordeAchievementID"] = hordeAchievementID;
-	return t;
+ach = function(id, altID, t)									-- Create an ACHIEVEMENT Object
+	if t or type(altID) == "number" then
+		t = struct("allianceAchievementID", id, t or {});
+		t["hordeAchievementID"] = altID;
+		return t;
+	else
+		return struct("achievementID", id, altID);
+	end
 end
 battlepet = function(id, t)								-- Create a BATTLE PET Object (Battle Pet == Species == Pet)
 	return struct("speciesID", id, t);

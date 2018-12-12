@@ -36,7 +36,7 @@ _.Achievements =
 						crit(6),		-- The Pursuit of Justice
 						crit(7),		-- Purifying the Gene Pool
 					})),
-					a(ach(8925, {	-- Between Arak and a Hard Place (Alliance)
+					ach(8925, 8926, {	-- Between Arak and a Hard Place (Alliance)
 						follower(218),	-- Talonpriest Ishaal
 						crit(1),		-- Shadows Gather
 						crit(2),		-- Admiral Taylor's Garrison
@@ -47,19 +47,7 @@ _.Achievements =
 						crit(7),		-- Securing Southport
 						crit(8),		-- Pinchwhistle Gearworks
 						crit(9),		-- When the Raven Swallows the Day
-					})),
-					h(ach(8926, {	-- Between Arak and a Hard Place (Horde)
-						follower(218),	-- Talonpriest Ishaal
-						crit(1),		-- Shadows Gather
-						crit(2),		-- Admiral Taylor's Garrison
-						crit(3),		-- Secrets of the Talonpriests
-						crit(4),		-- The Gods of Arak
-						crit(5),		-- Legacy of the Apexis
-						crit(6),		-- Terokk's Legend
-						crit(7),		-- Establishing Axefall
-						crit(8),		-- Pinchwhistle Gearworks
-						crit(9),		-- When the Raven Swallows the Day
-					})),
+					}),
 					ach(9635),		-- Bobbing for Orcs (Shattrath City)
 					ach(9533),		-- Breaker of Chains (Bloodmaul Stronghold)
 					ach(9571, {		-- Broke Back Precipice (Broken Precipice)
@@ -89,19 +77,13 @@ _.Achievements =
 						crit(8),		-- Xothear, the Destroyer
 					}),
 					ach(9534),		-- Delectable Ogre Delicacies (Bloodmaul Stronghold)
-					a(ach(8920, {	-- Don't Let the Tala-door Hit You on the Way Out (Alliance) (unlocks ability to buy Talador Treasure Map from Grakis in Stormshield)
+					ach(8920, 8919, {	-- Don't Let the Tala-door Hit You on the Way Out (unlocks ability to buy Talador Treasure Map from Grakis in Stormshield or Srikka in Warspear)
 						crit(1),		-- Establishing your Outpost
 						crit(2),		-- The Battle for Shattrath
 						crit(3),		-- The Plight of the Arakkoa
 						crit(4),		-- In the Shadows of Auchindoun
-					})),
-					h(ach(8919, {	-- Don't Let the Tala-door Hit You on the Way Out (Horde) (unlocks ability to buy Gorgrond Treasure Map from Srikka in Warspear)
-						crit(1),		-- Establishing your Outpost
-						crit(2),		-- The Battle for Shattrath
-						crit(3),		-- The Plight of the Arakkoa
-						crit(4),		-- In the Shadows of Auchindoun
-					})),
-					a(ach(10068, {	-- Draenor's Last Stand (Alliance) (Tanaan Jungle)
+					}),
+					ach(10068, 10075, {	-- Draenor's Last Stand (Tanaan Jungle)
 						crit(1),		-- Ironhold Harbor
 						crit(2),		-- Ruins of Kra'nak
 						crit(3),		-- Temple of Sha'naar
@@ -109,16 +91,7 @@ _.Achievements =
 						crit(5),		-- The Iron Front
 						crit(6),		-- Throne of Kil'jaeden
 						crit(7),		-- Zeth'gol
-					})),
-					h(ach(10075, {	-- Draenor's Last Stand (Horde) (Tanaan Jungle)
-						crit(1),		-- Ironhold Harbor
-						crit(2),		-- Ruins of Kra'nak
-						crit(3),		-- Temple of Sha'naar
-						crit(4),		-- The Fel Forge
-						crit(5),		-- The Iron Front
-						crit(6),		-- Throne of Kil'jaeden
-						crit(7),		-- Zeth'gol
-					})),
+					}),
 					ach(9612),		-- Eggs in One Basket (Skettis Ruins)
 					ach(9655, {		-- Fight the Power (The Pit)
 						crit(6),		-- Blademaster Ro'gor
@@ -160,22 +133,14 @@ _.Achievements =
 					}),
 					ach(9483),		-- I Was Framed! (Darktide Roost)
 					ach(9656),		-- In Plain Sight (The Pit)
-					a(ach(10067, {	-- In Pursuit of Gul'dan (Alliance) (Garrison)
+					ach(10067, 10074, {	-- In Pursuit of Gul'dan (Garrison)
 						crit(1),		-- All Hands On Deck
 						crit(2),		-- The Invasion of Tanaan
 						crit(3),		-- Bane of the Bleeding Hollow
 						crit(4),		-- Dark Ascension
 						crit(5),		-- The Fate of Teron'gor
 						crit(6),		-- The Cipher of Damnation
-					})),
-					h(ach(10074, {	-- In Pursuit of Gul'dan (Horde) (Garrison)
-						crit(1),		-- All Hands On Deck
-						crit(2),		-- The Invasion of Tanaan
-						crit(3),		-- Bane of the Bleeding Hollow
-						crit(4),		-- Dark Ascension
-						crit(5),		-- The Fate of Teron'gor
-						crit(6),		-- The Cipher of Damnation
-					})),
+					}),
 					ach(9659),		-- Iron Wings (The Pit)
 					ach(9436),		-- It's the Stones! (Socrethar's Rise)
 					ach(9601, {		-- King of the Monsters (Lost Veil Anzu)
@@ -185,6 +150,14 @@ _.Achievements =
 						crit(1),		-- Morphed Sentient
 						crit(3),		-- Shadow Hulk
 					}),
+					ach(9833, 9923, {	-- Loremaster of Draenor
+						crit(1),		-- As I Walk Through the Valley of the Shadow of Moon
+						crit(2),		-- Putting the Gore in Gorgrond
+						crit(3),		-- Don't Let the Tala-door Hit You on the Way Out
+						crit(4),		-- Between Arak and a Hard Place
+						crit(5),		-- Nagrandeur
+					}),
+					--[[
 					a(ach(9833, {	-- Loremaster of Draenor (Alliance)
 						crit(1),		-- As I Walk Through the Valley of the Shadow of Moon
 						crit(2),		-- Putting the Gore in Gorgrond
@@ -199,6 +172,7 @@ _.Achievements =
 						crit(4),		-- Between Arak and a Hard Place
 						crit(5),		-- Nagrandeur
 					})),
+					]]--
 					ach(9607, {		-- Make It a Bonus
 						crit(1),		-- Bonus Objective: Brimstone Springs
 						crit(2),		-- Bonus Objective: Iyun Weald
@@ -211,27 +185,30 @@ _.Achievements =
 						crit(8),		-- Stonemaul Arena or Tangleheart
 					}),
 					ach(9617),		-- Making the Cut (Gorian Proving Grounds)
-					a(ach(9825, {	-- Master Relic Hunter (Alliance)
+					ach(9825, 9836, {	-- Master Relic Hunter (Alliance)
 						crit(2),		-- Breaching the Barrier
 						crit(5),		-- Taking from the Taker
 						crit(3),		-- The Apexis Device
 						crit(1),		-- The Blessing of Beasts
 						crit(6),		-- The Crystal Reborn
 						crit(4),		-- The Spirit Forge
-					})),
-					h(ach(9836, {	-- Master Relic Hunter (Horde)
-						crit(2),		-- Breaching the Barrier
-						crit(5),		-- Taking from the Taker
-						crit(3),		-- The Apexis Device
-						crit(1),		-- The Blessing of Beasts
-						crit(6),		-- The Crystal Reborn
-						crit(4),		-- The Spirit Forge
-					})),
+					}),
 					ach(9654),		-- Mean and Green (Everbloom Wilds)
 					ach(9600, {		-- Monster Mash (Lost Veil Anzu)
 						crit(1),		-- Shadow Hulk
 						crit(2),		-- Gluttonous Giant)
 					}),
+					ach(8927, 8928, {	-- Nagrandeur (unlocks ability to buy Nagrand Treasure Map from Grakis in Stormshield / Srikka in Warspear)
+						crit(1),		-- The Might of Steel and Blood
+						crit(2),		-- The Ring of Trials
+						crit(3),		-- The Shadow of the Void
+						crit(4),		-- The Dark Heart of Oshu'gun
+						crit(5),		-- A Blademaster's Honor / Remains of Telaar
+						crit(6),		-- Trouble at the Overwatch
+						crit(7),		-- The Taking of Lok-rath
+						crit(8),		-- The Legacy of Garrosh Hellscream
+					}),
+					--[[
 					a(ach(8927, {	-- Nagrandeur (Alliance) (unlocks ability to buy Nagrand Treasure Map from Grakis in Stormshield)
 						crit(1),		-- The Might of Steel and Blood
 						crit(2),		-- The Ring of Trials
@@ -252,27 +229,21 @@ _.Achievements =
 						crit(7),		-- The Taking of Lok-rath
 						crit(8),		-- The Legacy of Garrosh Hellscream
 					})),
-					a(ach(9528)),	-- On the Shadow's Trail (Alliance) (Shadowmoon Valley)
-					h(ach(9529)),	-- On the Shadow's Trail (Horde) (Frostfire Ridge)
+					]]--
+					ach(9528, 9529),	-- On the Shadow's Trail (Alliance) (Shadowmoon Valley) / (Horde) (Frostfire Ridge)
 					ach(9434),		-- One of Us! One of Us! (Shadowmoon Enclave)
 					ach(9663),		-- Picky Palate (Everbloom Wilds)
 					ach(9658),		-- Pillars of Draenor (Everbloom Wilds)
 					ach(9711),		-- Planned to Fail (Iron Siegeworks)
 					ach(9710),		-- Poisoning the Well (Iron Siegeworks)
 					ach(9637),		-- Poor Communication (Shattrath City)
-					a(ach(8923, {	-- Putting the Gore in Gorgrond (Alliance) (unlocks ability to buy Gorgrond Treasure Map from Grakis in Stormshield)
-						crit(1),		-- We Need An Outpost
+					ach(8923, 8924, {	-- Putting the Gore in Gorgrond (Alliance) (unlocks ability to buy Gorgrond Treasure Map from Grakis in Stormshield / Srikka in Warspear)
+						crit(1),		-- We Need An Outpost / Your Base, Your Choice
 						crit(2),		-- Supporting Your Garrison
 						crit(3),		-- In the Land of Giants
 						crit(4),		-- The Iron Approach
-					})),
-					h(ach(8924, {	-- Putting the Gore in Gorgrond (Horde) (unlocks ability to buy Gorgrond Treasure Map from Srikka in Warspear)
-						crit(1),		-- Your Base, Your Choice
-						crit(2),		-- Supporting Your Garrison
-						crit(3),		-- In the Land of Giants
-						crit(4),		-- The Iron Approach
-					})),
-					achAH(10072, 10265, {	-- Rumble in the Jungle (Alliance) (Tanaan Jungle)
+					}),
+					ach(10072, 10265, {	-- Rumble in the Jungle (Alliance) (Tanaan Jungle)
 						title(318),		-- of the Jungle
 						crit(1),		-- In Pursuit of Gul'dan
 						crit(2),		-- Draenor's Last Stand
@@ -283,19 +254,6 @@ _.Achievements =
 						crit(7),		-- I Came, I Clawed, I Conquered
 						crit(8),		-- The Legion Will NOT Conquer All
 					}),
-					--[[
-					h(ach(10265, {	-- Rumble in the Jungle (Horde) (Tanaan Jungle)
-						title(318),		-- of the Jungle
-						crit(1),		-- In Pursuit of Gul'dan
-						crit(2),		-- Draenor's Last Stand
-						crit(3),		-- Hellbane
-						crit(4),		-- Jungle Stalker
-						crit(5),		-- Jungle Treasure Master
-						crit(6),		-- Explore Tanaan Jungle
-						crit(7),		-- I Came, I Clawed, I Conquered
-						crit(8),		-- The Legion Will NOT Conquer All
-					})),
-					]]--
 					a(ach(9564, {	-- Securing Draenor (Alliance)
 						crit(9),		-- Assault on Darktide Roost
 						crit(3),		-- Assault on Magnarok
@@ -333,7 +291,7 @@ _.Achievements =
 					ach(9536),		-- Slagnarok (Magnarok)
 					ach(9435),		-- Take From Them Everything (Socrethar's Rise)
 					ach(9535),		-- That Was Entirely Unnecessary (Magnarok)
-					a(ach(9491, {	-- The Garrison Campaign (Alliance)
+					ach(9491, 9492, {	-- The Garrison Campaign
 						crit(11),		-- A Strike at the Heart
 						crit(7),		-- Bloodmaul Compound
 						crit(8),		-- Broken Precipice
@@ -341,26 +299,12 @@ _.Achievements =
 						crit(10),		-- Heart of the Breakers
 						crit(4),		-- Iron Siegeworks
 						crit(12),		-- Primal Fury
-						crit(9),		-- The Exarch's Call
+						crit(9),		-- The Exarch's Call / Ours is the Fury
 						crit(6),		-- The Fall of Shattrath
 						crit(5),		-- The Ring of Blood
 						crit(2),		-- The Sargerei
 						crit(1),		-- The Warlord's Council
-					})),
-					h(ach(9492, {	-- The Garrison Campaign (Horde)
-						crit(11),		-- A Strike at the Heart
-						crit(7),		-- Bloodmaul Compound
-						crit(9),		-- Broken Precipice
-						crit(3),		-- Darktide Roost
-						crit(10),		-- Heart of the Breakers
-						crit(4),		-- Iron Siegeworks
-						crit(8),		-- Ours is the Fury
-						crit(12),		-- Primal Fury
-						crit(6),		-- The Fall of Shattrath
-						crit(5),		-- The Ring of Blood
-						crit(2),		-- The Sargerei
-						crit(1),		-- The Warlord's Council
-					})),
+					}),
 					ach(9632),		-- The Power Is Yours (Shattrath City)
 					ach(9541, {		-- The Song of Silence (Mok'gol Outpost)
 						crit(1),		-- Karosh Blackwind
@@ -369,8 +313,7 @@ _.Achievements =
 						crit(4),		-- Gortag Steelgrip
 					}),
 					ach(9636),		-- United We Stand (Shattrath City)
-					a(ach(8921)),	-- Welcome to Draenor (Alliance) NOTE: Quests look like they start in Blasted Lands, not added to any zone files
-					h(ach(8922)),	-- Welcome to Draenor (Horde) NOTE: Quests look like they start in Blasted Lands, not added to any zone files
+					ach(8921, 8922),	-- Welcome to Draenor NOTE: Quests look like they start in Blasted Lands, not added to any zone files
 					ach(9615, {		-- With a Nagrand Cherry On Top
 						crit(1),		-- Bonus Objective: Hemet's Happy Hunting Grounds
 						crit(2),		-- Bonus Objective: Ironfist Harbor

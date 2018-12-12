@@ -242,6 +242,7 @@ _.Achievements =
 						crit(4),		-- Fractured Tablet
 					}),
 					ach(13094, {	-- Cursed Game Hunter
+						--[[
 						crit(1),		-- Goats
 						crit(2),		-- Deer
 						crit(3),		-- Pigs
@@ -255,6 +256,7 @@ _.Achievements =
 						crit(11),		-- Horses
 						crit(12),		-- Sharks
 						crit(13),		-- Crabs
+						]]--
 					}),
 					ach(13064, {	-- Drust the Facts, Ma'am
 						crit(1),		-- Drust Stele: The Circle

@@ -10,6 +10,7 @@ _.Zones =
 				n(-4, {	-- Achievement
 					["groups"] = {
 						ach(13094, {	-- Cursed Game Hunter
+							--[[
 							{	-- Goats
 								["crs"] = {
 									143929,	-- Hexed Craghopper
@@ -103,6 +104,7 @@ _.Zones =
 								},
 								["criteriaID"] = 13,	-- Crabs
 							},
+							]]--
 						}),
 						ach(13064, {	-- Drust the Facts, Ma'am
 							o(296915, {	-- Drust Stele: The Circle

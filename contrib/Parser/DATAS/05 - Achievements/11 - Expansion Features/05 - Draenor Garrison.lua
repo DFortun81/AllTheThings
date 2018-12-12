@@ -9,25 +9,17 @@ _.Achievements =
 			n(-9966, { -- Draenor Garrison
 				["groups"] = {
 					ach(9130),		-- A Rare Friend
-					a(ach(10174, {	-- Admiral (Alliance)
-						ach(10173),		-- Fleet Commander
-						ach(10172, {	-- Petty Officer
+					ach(10174, 10276, {	-- Admiral
+						ach(10173, 10275),		-- Fleet Commander
+						ach(10172, 10255, {	-- Petty Officer
 							i(128362),		-- Captain's Hat
-						}),
-						ach(10170, {	-- Seaman
-							i(128353),		-- Admiral's Compass
-						}),
-					})),
-					h(ach(10276, {	-- Admiral (Horde)
-						ach(10275),		-- Fleet Commander
-						ach(10255, {	-- Petty Officer
 							i(128363),		-- Captain's Hat
 						}),
 						ach(10170, {	-- Seaman
 							i(128353),		-- Admiral's Compass
 						}),
-					})),
-					a(ach(9539, {	-- Advanced Husbandry (Alliance)
+					}),
+					ach(9539, 9705, {	-- Advanced Husbandry
 						i(116668),		-- Armored Frostboar
 						crit(1),		-- Maimclaw Killed
 						crit(2),		-- Beast-Lasher Killed
@@ -35,54 +27,31 @@ _.Achievements =
 						crit(4),		-- Thundercall Killed
 						crit(5),		-- Ironbore Killed
 						crit(6),		-- Karak Killed
-					})),
-					h(ach(9705, {	-- Advanced Husbandry (Horde)
-						i(116668),		-- Armored Frostboar
-						crit(1),		-- Maimclaw Killed
-						crit(2),		-- Beast-Lasher Killed
-						crit(3),		-- Moth of Wrath Killed
-						crit(4),		-- Thundercall Killed
-						crit(5),		-- Ironbore Killed
-						crit(6),		-- Karak Killed
-					})),
+					}),
 					ach(9131),		-- An Epic Buddy
 					ach(9208),		-- Botani Invasion
-					a(ach(9078, {	-- Choppin' Even More Logs (Alliance) (100)
+					ach(9078, 9080, {	-- Choppin' Even More Logs (100)
 						title(259),		-- the Commandojack
-						ach(9077, {		-- Choppin' Some More Logs (50)
-							title(257),		-- Lumberjack
-						}),
-						ach(9076),		-- Choppin' Some Logs (10)
-					})),
-					h(ach(9080, {	-- Choppin' Even More Logs (Horde) (100)
 						title(258),		-- Timber Lord
 						ach(9077, {		-- Choppin' Some More Logs (50)
 							title(257),		-- Lumberjack
 						}),
 						ach(9076),		-- Choppin' Some Logs (10)
-					})),
+					}),
 					ach(9494, {		-- Commander (40)
 						ach(9109),		-- Fearless Leader (25)
 						ach(9108),		-- Where You Go, They Will Follow (10)
 						ach(9107),		-- Follow the Leader (5)
 					}),
-					a(ach(9630)),	-- Defender of Draenor (Alliance)
-					h(ach(9248)),	-- Defender of Draenor (Horde)
-					a(ach(9928, {	-- Don't Call Me Junior (Alliance)
+					ach(9630, 9248),	-- Defender of Draenor
+					ach(9928, 9901, {	-- Don't Call Me Junior
 						follower(465),	-- Harrison Jones
 						crit(1),		-- Master Relic Hunter
-					})),
-					h(ach(9901, {	-- Don't Call Me Junior (Horde)
-						follower(465),	-- Harrison Jones
-						crit(1),	-- Master Relic Hunter
-					})),
+					}),
 					ach(9264),		-- Draenor Pet Brawler
-					a(ach(9101, {	-- Even More Plots (Alliance)
-						ach(9100),		-- More Plots (Alliance)
-					})),
-					h(ach(9546, {	-- Even More Plots (Horde)
-						ach(9545),		-- More Plots (Horde)
-					})),
+					ach(9101, 9546, {	-- Even More Plots
+						ach(9100, 9545),		-- More Plots
+					}),
 					ach(9900, {		-- Exploration Mission Master
 						ach(9150),		-- Exploration Mission Specialist
 						crit(1),		-- Exploration: Oshu'gun Dig Site
@@ -99,28 +68,18 @@ _.Achievements =
 						crit(12),		-- Exploration: Burial Fields
 						crit(13),		-- Exploration: Umbrafen Dig Site
 					}),
-					a(ach(10167, {	-- Exploring the High Seas (Alliance)
+					ach(10167, 10307, {	-- Exploring the High Seas
 						crit(1),		-- The House Always Wins
 						crit(2),		-- For Hate's Sake
 						crit(3),		-- Black Market Journal
 						crit(4),		-- Orphaned Aquatic Animal Rescue
 						crit(5),		-- The Wave Mistress
 						crit(6),		-- It's a Boat, It's a Plane, It's... Just a Riverbeast.
-						ach(10256, {	-- Charting a Course
+						ach(10256, 10258, {	-- Charting a Course
 							i(128365),		-- Fleet Commander's Hat
-						}),
-					})),
-					h(ach(10307, {	-- Exploring the High Seas (Horde)
-						crit(1),		-- The House Always Wins
-						crit(2),		-- For Hate's Sake
-						crit(3),		-- Black Market Journal
-						crit(4),		-- Orphaned Aquatic Animal Rescue
-						crit(5),		-- The Wave Mistress
-						crit(6),		-- It's a Boat, It's a Plane, It's... Just a Riverbeast.
-						ach(10258, {	-- Charting a Course
 							i(128364),		-- Fleet Commander's Hat
 						}),
-					})),
+					}),
 					ach(9639),		-- Fight, Kill, Salute!
 					ach(9129, {		-- Filling the Ranks (20 - lvl 100)
 						["groups"] = {
@@ -138,7 +97,7 @@ _.Achievements =
 						},
 						["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 					}),
-					achAH(10015, 10016, {	-- Full Discography
+					ach(10015, 10016, {	-- Full Discography
 						--[[
 						crit(1),		-- The Burning Legion (Black Temple - Illidan Stormrage)
 						crit(2),		-- Wrath of the Lich King (Naxxramas - Kel'Thuzad)
@@ -172,10 +131,10 @@ _.Achievements =
 						crit(30),		-- Way of the Monk (Garrison quest reward - Bringing the Bass)
 						crit(31),		-- Song of Liu Lang (Vale of Enternal Blossoms - Tan Shin Tiao - 100 gold)
 						]]--
-						achAH(9912, 9914, {	-- Azeroth's Top Twenty Tunes (20)
+						ach(9912, 9914, {	-- Azeroth's Top Twenty Tunes (20)
 							i(122700),	-- Portable Audiophone
 						}),
-						achAH(9828, 9897),	-- Ten Hit Tunes (10)
+						ach(9828, 9897),	-- Ten Hit Tunes (10)
 					}),
 					--[[
 					a(ach(10015, {	-- Full Discography (Alliance)
@@ -261,8 +220,7 @@ _.Achievements =
 						crit(4),		-- Master Builder
 						crit(5),		-- Keepin' Busy
 					}),
-					a(ach(9210)),	-- Garrison Buddies (Alliance)
-					h(ach(9132)),	-- Garrison Buddies (Horde)
+					ach(9210, 9132),	-- Garrison Buddies
 					ach(9207),		-- Goren Invasion
 					ach(9487, {	-- Got My Mind On My Draenor Money (10,000)
 						["groups"] = {
@@ -369,7 +327,7 @@ _.Achievements =
 					ach(9098, {		-- Movin' On Up (Lvl 3)
 						ach(9099),		-- Time for an Upgrade (Lvl 2)
 					}),
-					a(ach(9631, {	-- Mythic Draenor Raider (Alliance)
+					ach(9631, 9255, {	-- Mythic Draenor Raider
 						crit(1),		-- Mythic: Gruul (M Blackrock Foundry)
 						crit(2),		-- Mythic: Oregorger (M Blackrock Foundry)
 						crit(3),		-- Mythic: Hans'gar and Franzok (M Blackrock Foundry)
@@ -387,26 +345,7 @@ _.Achievements =
 						crit(15),		-- Mythic: Twin Ogron (M Highmaul)
 						crit(16),		-- Mythic: Ko'ragh (M Highmaul)
 						crit(17),		-- Mythic: Imperator's Fall (M Highmaul)
-					})),
-					h(ach(9255, {	-- Mythic Draenor Raider (Horde)
-						crit(1),		-- Mythic: Gruul (M Blackrock Foundry)
-						crit(2),		-- Mythic: Oregorger (M Blackrock Foundry)
-						crit(3),		-- Mythic: Hans'gar and Franzok (M Blackrock Foundry)
-						crit(4),		-- Mythic: Beastlord Darmac (M Blackrock Foundry)
-						crit(5),		-- Mythic: Flamebender Ka'graz (M Blackrock Foundry)
-						crit(6),		-- Mythic: Operator Thogar (M Blackrock Foundry)
-						crit(7),		-- Mythic: Blast Furnace (M Blackrock Foundry)
-						crit(8),		-- Mythic: Kromog (M Blackrock Foundry)
-						crit(9),		-- Mythic: Iron Maidens (M Blackrock Foundry)
-						crit(10),		-- Mythic: Blackhand's Crucible (M Blackhand Foundry)
-						crit(11),		-- Mythic: Kargath Bladefist (M Highmaul)
-						crit(12),		-- Mythic: The Butcher (M Highmaul)
-						crit(13),		-- Mythic: Tectus (M Highmaul)
-						crit(14),		-- Mythic: Brackenspore (M Highmaul)
-						crit(15),		-- Mythic: Twin Ogron (M Highmaul)
-						crit(16),		-- Mythic: Ko'ragh (M Highmaul)
-						crit(17),		-- Mythic: Imperator's Fall (M Highmaul)
-					})),
+					}),
 					ach(10168, {	-- Naval Armada
 						ach(10169),		-- Naval Fleet
 						ach(10177),		-- Set Sail!
@@ -576,7 +515,7 @@ _.Achievements =
 						ach(9142), 		-- Keeping It Rare
 						ach(9141), 		-- A Rare Mission
 					}),
-					a(ach(9540, {	-- The Stable Master (Alliance)
+					ach(9540, 9706, {	-- The Stable Master
 						i(116781),		-- Armored Frostwolf
 						title(277),		-- Stable Master
 						crit(1),		-- Maimclaw Killed
@@ -585,17 +524,7 @@ _.Achievements =
 						crit(4),		-- Thundercall Killed
 						crit(5),		-- Ironbore Killed
 						crit(6),		-- Karak Killed
-					})),
-					h(ach(9706, {	-- The Stable Master (Horde)
-						i(116781),		-- Armored Frostwolf
-						title(277),		-- Stable Master
-						crit(1),		-- Maimclaw Killed
-						crit(2),		-- Beast-Lasher Killed
-						crit(3),		-- Moth of Wrath Killed
-						crit(4),		-- Thundercall Killed
-						crit(5),		-- Ironbore Killed
-						crit(6),		-- Karak Killed
-					})),
+					}),
 					ach(9452, {		-- Trap Superstar (500)
 						ach(9451),		-- Trapper's Delight (250)
 						ach(9565, {		-- Master Trapper (125)
@@ -614,7 +543,7 @@ _.Achievements =
 							i(109255),		-- Lumber Mill, Level 3 [Blueprints]
 							crit(1), 		-- Place 75 Work Order at the Lumber Mill
 							crit(2),		-- Legacy of the Ancients
-							crit(3),		-- Reduction in Force
+							--crit(3),		-- Reduction in Force
 						},
 						["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 					}),

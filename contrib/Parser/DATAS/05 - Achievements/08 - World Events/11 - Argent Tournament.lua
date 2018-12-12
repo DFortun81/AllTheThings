@@ -20,6 +20,30 @@ _.Achievements =
 					ach(2758, {		-- Argent Valor
 						ach(2756),		-- Argent Aspiration
 					}),
+					ach(2817, 2816, {	-- Exalted Argent Champion of the Alliance / Exalted Argent Champion of the Horde
+						title(123),		-- Crusader
+						crit(1),		-- The Argent Crusade
+						crit(2),		-- Exalted Champion of Darnassus / Orgrimmar
+						crit(3),		-- Exalted Champion of the Exodar / Sen'jin
+						crit(4),		-- Exalted Champion of Gnomeregan / Silvermoon City
+						crit(5),		-- Exalted Champion of Stormwind / the Undercity
+						crit(6),		-- Exalted Champion of Ironforge / Thunder Bluff
+						ach(2770, 2771, {		-- Exalted Champion of the Alliance / Exalted Champion of the Horde
+							crit(1),		-- Exalted Champion of Darnassus / Orgrimmar
+							crit(2),		-- Exalted Champion of the Exodar / Sen'jin
+							crit(3),		-- Exalted Champion of Gnomeregan / Silvermoon City
+							crit(4),		-- Exalted Champion of Stormwind / the Undercity
+							crit(5),		-- Exalted Champion of Ironforge / Thunder Bluff
+						}),
+						ach(2782, 2788, {		-- Champion of the Alliance / Champion of the Horde
+							crit(1),		-- Champion of Darnassus / Orgrimmar
+							crit(2),		-- Champion of the Exodar / Sen'jin
+							crit(3),		-- Champion of Gnomeregan / Silvermoon City
+							crit(4),		-- Champion of Stormwind / the Undercity
+							crit(5),		-- Champion of Ironforge / Thunder Bluff
+						}),
+					}),
+					--[[
 					a(ach(2817, {	-- Exalted Argent Champion of the Alliance
 						title(123),		-- Crusader
 						crit(1),		-- The Argent Crusade
@@ -66,6 +90,7 @@ _.Achievements =
 							crit(5),		-- Champion of Thunder Bluff
 						}),
 					})),
+					]]--
 					a(ach(2760, {	-- Exalted Champion of Darnassus
 						title(114),		-- of Darnassus
 						crit(1),		-- Exalted with Darnassus

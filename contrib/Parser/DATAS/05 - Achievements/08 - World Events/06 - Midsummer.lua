@@ -17,27 +17,19 @@ _.Achievements =
 			n(-10019, { -- Midsummer
 				["groups"] = {
 					ach(271),		-- Burning Hot Pole Dance
-					a(ach(1035, {	-- Desecration of the Horde (Alliance)
+					ach(1035, 1037, {	-- Desecration of the Horde (Alliance)
 						crit(1),		-- Extinguishing the Cataclysm
 						crit(2),		-- Extinguishing Eastern Kingdoms
 						crit(3),		-- Extinguishing Kalimdor
 						crit(4),		-- Extinguishing Northrend
 						crit(5),		-- Extinguishing Outland
-					})),
-					h(ach(1037, {	-- Desecration of the Alliance (Horde)
-						crit(1),		-- Extinguishing the Cataclysm
-						crit(2),		-- Extinguishing Eastern Kingdoms
-						crit(3),		-- Extinguishing Kalimdor
-						crit(4),		-- Extinguishing Northrend
-						crit(5),		-- Extinguishing Outland
-					})),
-					a(ach(11276)),	-- Extinguishing Draenor (Frostfire Ridge) (Alliance)
-					h(ach(11277)),	-- Extinguishing Draenor (Shadowmoon Valley) (Horde)
+					}),
+					ach(11276, 11277),	-- Extinguishing Draenor (Frostfire Ridge)
 					a(ach(1028, {	-- Extinguishing Eastern Kingdoms (Alliance)
 						crit(1),		-- Arathi Highlands
 						crit(2),		-- Badlands
 						crit(3),		-- Blasted Lands
-						crit(4),		-- Buring Steppes
+						crit(4),		-- Burning Steppes
 						crit(5),		-- Eversong Woods
 						crit(6),		-- Ghostlands
 						crit(7),		-- Hillsbrad Foothills
@@ -53,7 +45,7 @@ _.Achievements =
 						crit(1),		-- Arathi Highlands
 						crit(2),		-- Badlands
 						crit(3),		-- Blasted Lands
-						crit(4),		-- Buring Steppes
+						crit(4),		-- Burning Steppes
 						crit(5),		-- Dun Morogh
 						crit(6),		-- Duskwood
 						crit(7),		-- Elwynn Forest
@@ -315,20 +307,13 @@ _.Achievements =
 					})),
 					ach(263),		-- Ice the Frost Lord (Slave Pens - Ahune)
 					ach(1145),		-- King of the Fire Festival
-					a(ach(1034, {	-- The Fires of Azeroth (Alliance)
+					ach(1034, 1036, {	-- The Fires of Azeroth
 						crit(1),		-- Flame Warden of Cataclysm
 						crit(2),		-- Flame Warden of Eastern Kingdoms
 						crit(3),		-- Flame Warden of Kalimdor
 						crit(4),		-- Flame Warden of Northrend
 						crit(5),		-- Flame Warden of Outland
-					})),
-					h(ach(1036, {	-- The Fires of Azeroth (Horde)
-						crit(1),		-- Flame Keeper of Cataclysm
-						crit(2),		-- Flame Keeper of Eastern Kingdoms
-						crit(3),		-- Flame Keeper of Kalimdor
-						crit(4),		-- Flame Keeper of Northrend
-						crit(5),		-- Flame Keeper of Outland
-					})),
+					}),
 					ach(272),		-- Torch Juggler
 				},
 			}),
