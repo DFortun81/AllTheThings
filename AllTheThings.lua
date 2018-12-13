@@ -8583,7 +8583,6 @@ end
 app:GetWindow("Prime");
 app:GetWindow("Unsorted");
 --[[
--- AllTheThings:GetWindow("Unsorted"):Show();
 app:GetWindow("Debugger", UIParent, function(self)
 	if not self.initialized then
 		self.initialized = true;
@@ -8610,7 +8609,11 @@ app:GetWindow("Debugger", UIParent, function(self)
 		self:SetScript("OnEvent", function(self, e, ...)
 			print(e, ...);
 			if e == "PLAYER_LOGIN" then
-				self.rawData = app.GetDataMember("Debugger", {});
+				if not AllTheThingsDebugData then
+					AllTheThingsDebugData = app.GetDataMember("Debugger", {});
+					app.SetDataMember("Debugger", nil);
+				end
+				self.rawData = AllTheThingsDebugData;
 				self.data.g = self:CreateObject(self.rawData);
 				self:Update();
 			elseif e == "ZONE_CHANGED_NEW_AREA" or e == "NEW_WMO_CHUNK" then
@@ -8748,11 +8751,18 @@ app:GetWindow("Debugger", UIParent, function(self)
 								table.insert(categoryList, category);
 							end
 						end
-						table.insert(categories[currentCategoryID].g, {
+						local recipe = {
 							["recipeID"] = spellRecipeInfo.recipeID,
 							["requireSkill"] = tradeSkillID,
 							["name"] = spellRecipeInfo.name,
-						});
+						};
+						if spellRecipeInfo.previousRecipeID then
+							recipe.previousRecipeID = spellRecipeInfo.previousRecipeID;
+						end
+						if spellRecipeInfo.nextRecipeID then
+							recipe.nextRecipeID = spellRecipeInfo.nextRecipeID;
+						end
+						table.insert(categories[currentCategoryID].g, recipe);
 					end
 				end
 				
