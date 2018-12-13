@@ -6,6 +6,20 @@ _.WorldDrops =
 	{
 		["groups"] = {	-- Classic
 			filter(200, {	-- Recipes
+				n(-181, {	-- Blacksmithing
+					{	-- Plans: Balanced Trillium Ingot and Its Uses
+						["itemID"] = 100865,	-- Plans: Balanced Trillium Ingot and Its Uses
+						["spellID"] = 0,
+						["g"] = {
+							{	-- Accelerated Balanced Trillium Ingot
+								["recipeID"] = 146921,	-- Accelerated Balanced Trillium Ingot
+							},
+							{	-- Balanced Trillium Ingot
+								["recipeID"] = 143255,	--Balanced Trillium Ingot
+							},
+						},
+					},
+				}),
 				n(-185, { -- Inscription
 					{	-- Technique: Crafted Malevolent Gladiator's Medallion of Tenacity
 						["itemID"] = 102534,	-- Technique: Crafted Malevolent Gladiator's Medallion of Tenacity
@@ -24,28 +38,62 @@ _.WorldDrops =
 					},
 				}),
 				n(-186, { -- Jewelcrafting
-					i(83811),	-- Design: Agile Primal Diamond
-					i(83815),	-- Design: Austere Primal Diamond
-					i(83825),	-- Design: Burning Primal Diamond
-					i(83840),	-- Design: Destructive Primal Diamond
-					i(83842),	-- Design: Effulgent Primal Diamond
-					i(83844),	-- Design: Ember Primal Diamond
-					i(83848),	-- Design: Enigmatic Primal Diamond
-					i(83851),	-- Design: Eternal Primal Diamond
-					i(83859),	-- Design: Fleet Primal Diamond
-					i(83862),	-- Design: Forlorn Primal Diamond
-					i(83872),	-- Design: Impassive Primal Diamond
-					i(83901),	-- Design: Powerful Primal Diamond
-					i(95471),	-- Design: Primal Diamond
-					i(83925),	-- Design: Reverberating Primal Diamond
-					i(83926),	-- Design: Revitalizing Primal Diamond
-					i(95470),	-- Design: Serpent's Heart
+					{	-- Design: Agile Primal Diamond
+						["itemID"] = 83811,	-- Design: Agile Primal Diamond
+					},
+					{	-- Design: Austere Primal Diamond
+						["itemID"] = 83815,	-- Design: Austere Primal Diamond
+					},
+					{	-- Design: Burning Primal Diamond
+						["itemID"] = 83825,	-- Design: Burning Primal Diamond
+					},
+					{	-- Design: Destructive Primal Diamond
+						["itemID"] = 83840,	-- Design: Destructive Primal Diamond
+					},
+					{	-- Design: Effulgent Primal Diamond
+						["itemID"] = 83842,	-- Design: Effulgent Primal Diamond
+					},
+					{	-- Design: Ember Primal Diamond
+						["itemID"] = 83844,	-- Design: Ember Primal Diamond
+					},
+					{	-- Design: Enigmatic Primal Diamond
+						["itemID"] = 83848,	-- Design: Enigmatic Primal Diamond
+					},
+					{	-- Design: Eternal Primal Diamond
+						["itemID"] = 83851,	-- Design: Eternal Primal Diamond
+					},
+					{	-- Design: Fleet Primal Diamond
+						["itemID"] = 83859,	-- Design: Fleet Primal Diamond
+					},
+					{	-- Design: Forlorn Primal Diamond
+						["itemID"] = 83862,	-- Design: Forlorn Primal Diamond
+					},
+					{	-- Design: Impassive Primal Diamond
+						["itemID"] = 83872,	-- Design: Impassive Primal Diamond
+					},
+					{	-- Design: Powerful Primal Diamond
+						["itemID"] = 83901,	-- Design: Powerful Primal Diamond
+					},
+					{	-- Design: Primal Diamond
+						["itemID"] = 95471,	-- Design: Primal Diamond
+					},
+					{	-- Design: Reverberating Primal Diamond
+						["itemID"] = 83925,	-- Design: Reverberating Primal Diamond
+					},
+					{	-- Design: Revitalizing Primal Diamond
+						["itemID"] = 83926,	-- Design: Revitalizing Primal Diamond
+					},
+					{	-- Design: Serpent's Heart
+						["itemID"] = 95470,	-- Design: Serpent's Heart
+					},
 				}),
 				n(-190, {	-- Tailoring
 					i(100863, {	-- Pattern: Celestial Cloth and Its Uses
 						["spellID"] = 0,	-- Not learnable.
 						["groups"] = {
-							recipe(143011),	-- Celestial Cloth
+							{	-- Celestial Cloth
+								["recipeID"] = 143011,	-- Celestial Cloth
+							},
 						},
 					}),
 				}),

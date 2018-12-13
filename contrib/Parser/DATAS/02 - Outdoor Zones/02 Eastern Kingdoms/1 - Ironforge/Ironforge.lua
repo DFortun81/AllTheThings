@@ -79,16 +79,16 @@ _.Zones =
 						["coord"] = { 39.7, 57.3 },
 						["sourceQuests"] = { 26112 },	-- Demanding Answers
 					}),
-					{	-- Supplying the Front
-						["questID"] = 1578,
-						["groups"] = {
-							i(33792),	-- Plans: Heavy Copper Longsword
-						},
-						["qg"] = 6031,	-- Tormus Deepforge
-						["coord"] = { 49.0, 42.4 },
-						["races"] = ALLIANCE_ONLY,
-						["requireSkill"] = 164,	-- Blacksmithing
-					},
+					{    -- Supplying the Front
+                        ["questID"] = 1578,
+                        ["groups"] = {
+                            i(33792),    -- Plans: Heavy Copper Longsword
+                        },
+                        ["qg"] = 6031,    -- Tormus Deepforge
+                        ["coord"] = { 49.0, 42.4 },
+                        ["races"] = ALLIANCE_ONLY,
+                        ["requireSkill"] = 164,    -- Blacksmithing
+                    },
 					qa(39956, {	-- The Legacy Passed On
 						["qg"] = 97762,	-- Bill Spearshaker <Author Extrodinaire>
 						["sourceQuests"] = { 39955 },	-- The Plot Thickens
@@ -112,8 +112,8 @@ _.Zones =
 					})),
 					qg(6569, qa( 2039)),	-- Find Bingles
 					qg(6031, qa( 1618)),	-- Gearing Redridge
-					qg(5174, q 29477, { ["requireSkill"] = 202 })),	-- Gnomish Engineering
-					qg(5174, q 29475, { ["requireSkill"] = 202 })),	-- Goblin Engineering
+					qg(5174, q 29477, { ["requireSkill"] = 202 })),    -- Gnomish Engineering
+                    qg(5174, q 29475, { ["requireSkill"] = 202 })),    -- Goblin Engineering
 					qg(4256, qa( 6388, {	-- Gryth Thurden
 						["races"] = {3,7}, -- Dwarf, Gnome
 					})),
@@ -140,7 +140,7 @@ _.Zones =
 						qa(28565),	-- Hero's Call: Wetlands!
 						qa(29156),	-- The Troll Incursion
 					}),
-					qg(5161, qa( 6609, { ["requireSkill"] = 129 })),	-- I Got Nothin' Left!
+					qg(5161, qa( 6609, { ["requireSkill"] = 129 })),    -- I Got Nothin' Left!
 					qg(5159, qa( 6612)),	-- I Know A Guy...
 					qg(5146, qa(27271, {	-- Journey to the Wizard's Sanctum
 						["classes"] = {8}, -- Mage
@@ -752,39 +752,133 @@ _.Zones =
 						i(6369),	-- Recipe: Rockscale Cod
 						i(6326),	-- Recipe: Slitherskin Mackerel
 					}),
-					n(4259, {	-- Thurgrum Deepforge <Blacksmithing Supplies>
-						i(66122),	-- Plans: Vicious Pyrium Legguards
-						i(66123),	-- Plans: Vicious Pyrium Helm
-						i(66124),	-- Plans: Vicious Pyrium Breastplate
-						i(66130),	-- Plans: Vicious Ornate Pyrium Legguards
-						i(66131),	-- Plans: Vicious Ornate Pyrium Helm
-						i(66132),	-- Plans: Vicious Ornate Pyrium Breastplate
-						i(66110),	-- Plans: Elementium Spellblade
-						i(66112),	-- Plans: Elementium Poleaxe
-						i(66114),	-- Plans: Elementium Shank
-						i(66115),	-- Plans: Elementium Earthguard
-						i(66116),	-- Plans: Elementium Stormshield
-						i(66121),	-- Plans: Vicious Pyrium Shoulders
-						i(66129),	-- Plans: Vicious Ornate Pyrium Shoulders
-						i(67606),	-- Plans: Forged Elementium Mindcrusher
-						i(66104),	-- Plans: Hardened Elementium Hauberk
-						i(66106),	-- Plans: Elementium Deathplate
-						i(66108),	-- Plans: Light Elementium Chestguard
-						i(66111),	-- Plans: Elementium Hammer
-						i(66113),	-- Plans: Elementium Bonesplitter
-						i(66120),	-- Plans: Vicious Pyrium Boots
-						i(66128),	-- Plans: Vicious Ornate Pyrium Boots
-						i(67603),	-- Plans: Elementium Gutslicer
-						i(66105),	-- Plans: Hardened Elementium Girdle
-						i(66107),	-- Plans: Elementium Girdle of Pain
-						i(66109),	-- Plans: Light Elementium Belt
-						i(66119),	-- Plans: Vicious Pyrium Belt
-						i(66127),	-- Plans: Vicious Ornate Pyrium Belt
-						i(66117),	-- Plans: Vicious Pyrium Bracers
-						i(66118),	-- Plans: Vicious Pyrium Gauntlets
-						i(66125),	-- Plans: Vicious Ornate Pyrium Bracers
-						i(66126),	-- Plans: Vicious Ornate Pyrium Gauntlets
-					}),
+					{	-- Thurgrum Deepforge <Blacksmithing Supplies>
+						["npcID"] = 4259,	-- Thurgrum Deepforge <Blacksmithing Supplies>
+						["g"] = {
+							{	-- Elementium Bar
+								["itemID"] = 52186,	-- Elementium Bar
+								["g"] = {
+									{	-- Plans: Elementium Girdle of Pain
+										["itemID"] = 66107,	-- Plans: Elementium Girdle of Pain
+									},
+									{	-- Plans: Elementium Shield Spike
+										["itemID"] = 66102,	-- Plans: Elementium Shield Spike
+										["spellID"] = 0,	-- This is available via the trainer, need to delink the unused plans from the recipe
+										["u"] = 1,
+									},
+									{	-- Plans: Hardened Elementium Girdle
+										["itemID"] = 66105,	-- Plans: Hardened Elementium Girdle
+									},
+									{	-- Plans: Light Elementium Belt
+										["itemID"] = 66109,	-- Plans: Light Elementium Belt
+									},
+									{	-- Plans: Pyrium Weapon Chain
+										["itemID"] = 66103,	-- Plans: Pyrium Weapon Chain
+									},
+									{	-- Plans: Vicious Ornate Pyrium Belt
+										["itemID"] = 66127,	-- Plans: Vicious Ornate Pyrium Belt
+									},
+									{	-- Plans: Vicious Ornate Pyrium Bracers
+										["itemID"] = 66125,	-- Plans: Vicious Ornate Pyrium Bracers
+									},
+									{	-- Plans: Vicious Ornate Pyrium Gauntlets
+										["itemID"] = 66126,	-- Plans: Vicious Ornate Pyrium Gauntlets
+									},
+									{	-- Plans: Vicious Pyrium Belt
+										["itemID"] = 66119,	-- Plans: Vicious Pyrium Belt
+									},
+									{	-- Plans: Vicious Pyrium Bracers
+										["itemID"] = 66117,	-- Plans: Vicious Pyrium Bracers
+									},
+									{	-- Plans: Vicious Pyrium Gauntlets
+										["itemID"] = 66118,	-- Plans: Vicious Pyrium Gauntlets
+									},
+								},
+							},
+							{	-- Hardened Elementium Bar
+								["itemID"] = 53039,	-- Hardened Elementium Bar
+								["g"] = {
+									{	-- Plans: Ebonsteel Belt Buckle
+										["itemID"] = 66100,	-- Plans: Ebonsteel Belt Buckle
+									},
+									{	-- Plans: Forged Elementium Mindcrusher
+										["itemID"] = 67606,	-- Plans: Forged Elementium Mindcrusher
+									},
+									{	-- Plans: Pyrium Shield Spike
+										["itemID"] = 66101,	-- Plans: Pyrium Shield Spike
+									},
+									{	-- Plans: Vicious Ornate Pyrium Breastplate
+										["itemID"] = 66132,	-- Plans: Vicious Ornate Pyrium Breastplate
+									},
+									{	-- Plans: Vicious Ornate Pyrium Helm
+										["itemID"] = 66131,	-- Plans: Vicious Ornate Pyrium Helm
+									},
+									{	-- Plans: Vicious Ornate Pyrium Legguards
+										["itemID"] = 66130,	-- Plans: Vicious Ornate Pyrium Legguards
+									},
+									{	-- Plans: Vicious Pyrium Breastplate
+										["itemID"] = 66124,	-- Plans: Vicious Pyrium Breastplate
+									},
+									{	-- Plans: Vicious Pyrium Helm
+										["itemID"] = 66123,	-- Plans: Vicious Pyrium Helm
+									},
+									{	-- Plans: Vicious Pyrium Legguards
+										["itemID"] = 66122,	-- Plans: Vicious Pyrium Legguards
+									},
+								},
+							},
+							{	-- Pyrium Bar
+								["itemID"] = 51950,	-- Pyrium Bar
+								["g"] = {
+									{	-- Plans: Elementium Bonesplitter
+										["itemID"] = 66113,	-- Plans: Elementium Bonesplitter
+									},
+									{	-- Plans: Elementium Deathplate
+										["itemID"] = 66106,	-- Plans: Elementium Deathplate
+									},
+									{	-- Plans: Elementium Earthguard
+										["itemID"] = 66115,	-- Plans: Elementium Earthguard
+									},
+									{	-- Plans: Elementium Gutslicer
+										["itemID"] = 67603,	-- Plans: Elementium Gutslicer
+									},
+									{	-- Plans: Elementium Hammer
+										["itemID"] = 66111,	-- Plans: Elementium Hammer
+									},
+									{	-- Plans: Elementium Poleaxe
+										["itemID"] = 66112,	-- Plans: Elementium Poleaxe
+									},
+									{	-- Plans: Elementium Shank
+										["itemID"] = 66114,	-- Plans: Elementium Shank
+									},
+									{	-- Plans: Elementium Spellblade
+										["itemID"] = 66110,	-- Plans: Elementium Spellblade
+									},
+									{	-- Plans: Elementium Stormshield
+										["itemID"] = 66116,	-- Plans: Elementium Stormshield
+									},
+									{	-- Plans: Hardened Elementium Hauberk
+										["itemID"] = 66104,	-- Plans: Hardened Elementium Hauberk
+									},
+									{	-- Plans: Light Elementium Chestguard
+										["itemID"] = 66108,	-- Plans: Light Elementium Chestguard
+									},
+									{	-- Plans: Vicious Ornate Pyrium Boots
+										["itemID"] = 66128,	-- Plans: Vicious Ornate Pyrium Boots
+									},
+									{	-- Plans: Vicious Ornate Pyrium Shoulders
+										["itemID"] = 66129,	-- Plans: Vicious Ornate Pyrium Shoulders
+									},
+									{	-- Plans: Vicious Pyrium Boots
+										["itemID"] = 66120,	-- Plans: Vicious Pyrium Boots
+									},
+									{	-- Plans: Vicious Pyrium Shoulders
+										["itemID"] = 66121,	-- Plans: Vicious Pyrium Shoulders
+									},
+								},
+							},
+						},
+					},
 					n(5158, {	-- Tilli Thistlefuzz <Enchanting Supplies>
 						i(6349),	-- Formula: Enchant 2H Weapon - Lesser Intellect
 						i(20753),	-- Formula: Lesser Wizard Oil

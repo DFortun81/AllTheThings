@@ -154,6 +154,11 @@ _.Zones =
 								{	-- Plans: Elementium Girdle of Pain
 									["itemID"] = 66107,	-- Plans: Elementium Girdle of Pain
 								},
+								{	-- Plans: Elementium Shield Spike
+									["itemID"] = 66102,	-- Plans: Elementium Shield Spike
+									["spellID"] = 0,	-- This is available via the trainer, need to delink the unused plans from the recipe
+									["u"] = 1,
+								},
 								{	-- Plans: Hardened Elementium Girdle
 									["itemID"] = 66105,	-- Plans: Hardened Elementium Girdle
 								},

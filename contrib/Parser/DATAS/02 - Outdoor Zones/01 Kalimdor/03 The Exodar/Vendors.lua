@@ -11,137 +11,146 @@ _.Zones =
 						i(22900),	-- Recipe: Elixir of Camouflage
 						i(23574),	-- Recipe: Transmute Primal Might
 					}),
-					a(n(16713, {	-- Arras <Blacksmithing Supplies>
-						{	-- Plans: Adamantite Cleaver
-							["itemID"] = 23591,	-- Plans: Adamantite Cleaver
-						},
-						{	-- Plans: Adamantite Dagger
-							["itemID"] = 23592,	-- Plans: Adamantite Dagger
-						},
-						{	-- Plans: Adamantite Maul
-							["itemID"] = 23590,	-- Plans: Adamantite Maul
-						},
-						{	-- Plans: Adamantite Rapier
-							["itemID"] = 23593,	-- Plans: Adamantite Rapier
-						},
-						{	-- Elementium Bar
-							["itemID"] = 52186,	-- Elementium Bar
-							["g"] = {
-								{	-- Plans: Elementium Girdle of Pain
-									["itemID"] = 66107,	-- Plans: Elementium Girdle of Pain
+					{	-- Arras <Blacksmithing Supplies>
+						["npcID"] = 16713,	-- Arras <Blacksmithing Supplies>
+						["g"] = {
+							{	-- Plans: Adamantite Cleaver
+								["itemID"] = 23591,	-- Plans: Adamantite Cleaver
+							},
+							{	-- Plans: Adamantite Dagger
+								["itemID"] = 23592,	-- Plans: Adamantite Dagger
+							},
+							{	-- Plans: Adamantite Maul
+								["itemID"] = 23590,	-- Plans: Adamantite Maul
+							},
+							{	-- Plans: Adamantite Rapier
+								["itemID"] = 23593,	-- Plans: Adamantite Rapier
+							},
+							{	-- Elementium Bar
+								["itemID"] = 52186,	-- Elementium Bar
+								["g"] = {
+									{	-- Plans: Elementium Girdle of Pain
+										["itemID"] = 66107,	-- Plans: Elementium Girdle of Pain
+									},
+									{	-- Plans: Elementium Shield Spike
+										["itemID"] = 66102,	-- Plans: Elementium Shield Spike
+										["spellID"] = 0,	-- This is available via the trainer, need to delink the unused plans from the recipe
+										["u"] = 1,
+									},
+									{	-- Plans: Hardened Elementium Girdle
+										["itemID"] = 66105,	-- Plans: Hardened Elementium Girdle
+									},
+									{	-- Plans: Light Elementium Belt
+										["itemID"] = 66109,	-- Plans: Light Elementium Belt
+									},
+									{	-- Plans: Pyrium Weapon Chain
+										["itemID"] = 66103,	-- Plans: Pyrium Weapon Chain
+									},
+									{	-- Plans: Vicious Ornate Pyrium Belt
+										["itemID"] = 66127,	-- Plans: Vicious Ornate Pyrium Belt
+									},
+									{	-- Plans: Vicious Ornate Pyrium Bracers
+										["itemID"] = 66125,	-- Plans: Vicious Ornate Pyrium Bracers
+									},
+									{	-- Plans: Vicious Ornate Pyrium Gauntlets
+										["itemID"] = 66126,	-- Plans: Vicious Ornate Pyrium Gauntlets
+									},
+									{	-- Plans: Vicious Pyrium Belt
+										["itemID"] = 66119,	-- Plans: Vicious Pyrium Belt
+									},
+									{	-- Plans: Vicious Pyrium Bracers
+										["itemID"] = 66117,	-- Plans: Vicious Pyrium Bracers
+									},
+									{	-- Plans: Vicious Pyrium Gauntlets
+										["itemID"] = 66118,	-- Plans: Vicious Pyrium Gauntlets
+									},
 								},
-								{	-- Plans: Hardened Elementium Girdle
-									["itemID"] = 66105,	-- Plans: Hardened Elementium Girdle
+							},
+							{	-- Hardened Elementium Bar
+								["itemID"] = 53039,	-- Hardened Elementium Bar
+								["g"] = {
+									{	-- Plans: Ebonsteel Belt Buckle
+										["itemID"] = 66100,	-- Plans: Ebonsteel Belt Buckle
+									},
+									{	-- Plans: Forged Elementium Mindcrusher
+										["itemID"] = 67606,	-- Plans: Forged Elementium Mindcrusher
+									},
+									{	-- Plans: Pyrium Shield Spike
+										["itemID"] = 66101,	-- Plans: Pyrium Shield Spike
+									},
+									{	-- Plans: Vicious Ornate Pyrium Breastplate
+										["itemID"] = 66132,	-- Plans: Vicious Ornate Pyrium Breastplate
+									},
+									{	-- Plans: Vicious Ornate Pyrium Helm
+										["itemID"] = 66131,	-- Plans: Vicious Ornate Pyrium Helm
+									},
+									{	-- Plans: Vicious Ornate Pyrium Legguards
+										["itemID"] = 66130,	-- Plans: Vicious Ornate Pyrium Legguards
+									},
+									{	-- Plans: Vicious Pyrium Breastplate
+										["itemID"] = 66124,	-- Plans: Vicious Pyrium Breastplate
+									},
+									{	-- Plans: Vicious Pyrium Helm
+										["itemID"] = 66123,	-- Plans: Vicious Pyrium Helm
+									},
+									{	-- Plans: Vicious Pyrium Legguards
+										["itemID"] = 66122,	-- Plans: Vicious Pyrium Legguards
+									},
 								},
-								{	-- Plans: Light Elementium Belt
-									["itemID"] = 66109,	-- Plans: Light Elementium Belt
-								},
-								{	-- Plans: Pyrium Weapon Chain
-									["itemID"] = 66103,	-- Plans: Pyrium Weapon Chain
-								},
-								{	-- Plans: Vicious Ornate Pyrium Belt
-									["itemID"] = 66127,	-- Plans: Vicious Ornate Pyrium Belt
-								},
-								{	-- Plans: Vicious Ornate Pyrium Bracers
-									["itemID"] = 66125,	-- Plans: Vicious Ornate Pyrium Bracers
-								},
-								{	-- Plans: Vicious Ornate Pyrium Gauntlets
-									["itemID"] = 66126,	-- Plans: Vicious Ornate Pyrium Gauntlets
-								},
-								{	-- Plans: Vicious Pyrium Belt
-									["itemID"] = 66119,	-- Plans: Vicious Pyrium Belt
-								},
-								{	-- Plans: Vicious Pyrium Bracers
-									["itemID"] = 66117,	-- Plans: Vicious Pyrium Bracers
-								},
-								{	-- Plans: Vicious Pyrium Gauntlets
-									["itemID"] = 66118,	-- Plans: Vicious Pyrium Gauntlets
+							},
+							{	-- Pyrium Bar
+								["itemID"] = 51950,	-- Pyrium Bar
+								["g"] = {
+									{	-- Plans: Elementium Bonesplitter
+										["itemID"] = 66113,	-- Plans: Elementium Bonesplitter
+									},
+									{	-- Plans: Elementium Deathplate
+										["itemID"] = 66106,	-- Plans: Elementium Deathplate
+									},
+									{	-- Plans: Elementium Earthguard
+										["itemID"] = 66115,	-- Plans: Elementium Earthguard
+									},
+									{	-- Plans: Elementium Gutslicer
+										["itemID"] = 67603,	-- Plans: Elementium Gutslicer
+									},
+									{	-- Plans: Elementium Hammer
+										["itemID"] = 66111,	-- Plans: Elementium Hammer
+									},
+									{	-- Plans: Elementium Poleaxe
+										["itemID"] = 66112,	-- Plans: Elementium Poleaxe
+									},
+									{	-- Plans: Elementium Shank
+										["itemID"] = 66114,	-- Plans: Elementium Shank
+									},
+									{	-- Plans: Elementium Spellblade
+										["itemID"] = 66110,	-- Plans: Elementium Spellblade
+									},
+									{	-- Plans: Elementium Stormshield
+										["itemID"] = 66116,	-- Plans: Elementium Stormshield
+									},
+									{	-- Plans: Hardened Elementium Hauberk
+										["itemID"] = 66104,	-- Plans: Hardened Elementium Hauberk
+									},
+									{	-- Plans: Light Elementium Chestguard
+										["itemID"] = 66108,	-- Plans: Light Elementium Chestguard
+									},
+									{	-- Plans: Vicious Ornate Pyrium Boots
+										["itemID"] = 66128,	-- Plans: Vicious Ornate Pyrium Boots
+									},
+									{	-- Plans: Vicious Ornate Pyrium Shoulders
+										["itemID"] = 66129,	-- Plans: Vicious Ornate Pyrium Shoulders
+									},
+									{	-- Plans: Vicious Pyrium Boots
+										["itemID"] = 66120,	-- Plans: Vicious Pyrium Boots
+									},
+									{	-- Plans: Vicious Pyrium Shoulders
+										["itemID"] = 66121,	-- Plans: Vicious Pyrium Shoulders
+									},
 								},
 							},
 						},
-						{	-- Hardened Elementium Bar
-							["itemID"] = 53039,	-- Hardened Elementium Bar
-							["g"] = {
-								{	-- Plans: Ebonsteel Belt Buckle
-									["itemID"] = 66100,	-- Plans: Ebonsteel Belt Buckle
-								},
-								{	-- Plans: Forged Elementium Mindcrusher
-									["itemID"] = 67606,	-- Plans: Forged Elementium Mindcrusher
-								},
-								{	-- Plans: Pyrium Shield Spike
-									["itemID"] = 66101,	-- Plans: Pyrium Shield Spike
-								},
-								{	-- Plans: Vicious Ornate Pyrium Breastplate
-									["itemID"] = 66132,	-- Plans: Vicious Ornate Pyrium Breastplate
-								},
-								{	-- Plans: Vicious Ornate Pyrium Helm
-									["itemID"] = 66131,	-- Plans: Vicious Ornate Pyrium Helm
-								},
-								{	-- Plans: Vicious Ornate Pyrium Legguards
-									["itemID"] = 66130,	-- Plans: Vicious Ornate Pyrium Legguards
-								},
-								{	-- Plans: Vicious Pyrium Breastplate
-									["itemID"] = 66124,	-- Plans: Vicious Pyrium Breastplate
-								},
-								{	-- Plans: Vicious Pyrium Helm
-									["itemID"] = 66123,	-- Plans: Vicious Pyrium Helm
-								},
-								{	-- Plans: Vicious Pyrium Legguards
-									["itemID"] = 66122,	-- Plans: Vicious Pyrium Legguards
-								},
-							},
-						},
-						{	-- Pyrium Bar
-							["itemID"] = 51950,	-- Pyrium Bar
-							["g"] = {
-								{	-- Plans: Elementium Bonesplitter
-									["itemID"] = 66113,	-- Plans: Elementium Bonesplitter
-								},
-								{	-- Plans: Elementium Deathplate
-									["itemID"] = 66106,	-- Plans: Elementium Deathplate
-								},
-								{	-- Plans: Elementium Earthguard
-									["itemID"] = 66115,	-- Plans: Elementium Earthguard
-								},
-								{	-- Plans: Elementium Gutslicer
-									["itemID"] = 67603,	-- Plans: Elementium Gutslicer
-								},
-								{	-- Plans: Elementium Hammer
-									["itemID"] = 66111,	-- Plans: Elementium Hammer
-								},
-								{	-- Plans: Elementium Poleaxe
-									["itemID"] = 66112,	-- Plans: Elementium Poleaxe
-								},
-								{	-- Plans: Elementium Shank
-									["itemID"] = 66114,	-- Plans: Elementium Shank
-								},
-								{	-- Plans: Elementium Spellblade
-									["itemID"] = 66110,	-- Plans: Elementium Spellblade
-								},
-								{	-- Plans: Elementium Stormshield
-									["itemID"] = 66116,	-- Plans: Elementium Stormshield
-								},
-								{	-- Plans: Hardened Elementium Hauberk
-									["itemID"] = 66104,	-- Plans: Hardened Elementium Hauberk
-								},
-								{	-- Plans: Light Elementium Chestguard
-									["itemID"] = 66108,	-- Plans: Light Elementium Chestguard
-								},
-								{	-- Plans: Vicious Ornate Pyrium Boots
-									["itemID"] = 66128,	-- Plans: Vicious Ornate Pyrium Boots
-								},
-								{	-- Plans: Vicious Ornate Pyrium Shoulders
-									["itemID"] = 66129,	-- Plans: Vicious Ornate Pyrium Shoulders
-								},
-								{	-- Plans: Vicious Pyrium Boots
-									["itemID"] = 66120,	-- Plans: Vicious Pyrium Boots
-								},
-								{	-- Plans: Vicious Pyrium Shoulders
-									["itemID"] = 66121,	-- Plans: Vicious Pyrium Shoulders
-								},
-							},
-						},
-					})),
+						["races"] = ALLIANCE_ONLY,
+					},
 					na(17512, {	-- Arred <Jewelcrafting Supplies>
 						i(20854),	-- Design: Amulet of the Moon
 						i(20856),	-- Design: Heavy Golden Necklace of Battle

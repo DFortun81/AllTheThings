@@ -933,10 +933,17 @@ _.Zones =
 						},
 						["description"] = "Will only sell to those who have proven themselves friends of the Bloodsail Buccaneers, either while on the quest chain that makes you friendly, or by raising your reputation with them the hard way. The pets are also sold in Booty Bay by Narkk.|r",
 					}),
-					n(2843, {	-- Jutak <Blade Trader>
-						i(12248),	-- Daring Dirk
-						i(12162),	-- Plans: Hardened Iron Shortsword
-					}),
+					{	-- Jutak <Blade Trader>
+						["npcID"] = 2843,	-- Jutak <Blade Trader>
+						["g"] = {
+							{	-- Plans: Hardened Iron Shortsword
+								["itemID"] = 12162,	-- Plans: Hardened Iron Shortsword
+							},
+							{	-- Daring Dirk
+								["itemID"] = 12248,	-- Daring Dirk
+							},
+						},
+					},
 					n(2664, {	-- Kelsey Yance <Cook>
 						i(13940),	-- Recipe: Cooked Glossy Mightfish
 						i(13941),	-- Recipe: Filet of Redgill

@@ -31,92 +31,287 @@ _.Craftables =
 			}),
 		}),
 		n(-181, { 	-- Blacksmithing
-			n(-319, { 	-- Weapons
-				i(70155),	-- Brainsplinter
-				i(55044),	-- Cold-Forged Shank
-				i(55043),	-- Decapitator's Razor
-				i(55067),	-- Elementium Bonesplitter
-				i(55069),	-- Elementium Earthguard
-				i(67602),	-- Elementium Gutslicer
-				i(55065),	-- Elementium Hammer
-				i(55066),	-- Elementium Poleaxe
-				i(55068),	-- Elementium Shank
-				i(55064),	-- Elementium Spellblade
-				i(55070),	-- Elementium Stormshield
-				i(70158),	-- Elementium-Edged Scalper
-				i(55045),	-- Fire-Etched Dagger
-				i(67605),	-- Forged Elementium Mindcrusher
-				i(55041),	-- Hardened Obsidium Shield
-				i(55046),	-- Lifeforce Hammer
-				i(70157),	-- Lightforged Elementium Hammer
-				i(70164),	-- Masterwork Elementium Deathblade
-				i(70156),	-- Masterwork Elementium Spellblade
-				i(55246),	-- Obsidium Bladespear
-				i(55052),	-- Obsidium Executioner
-				i(70162),	-- Pyrium Spellward
-				i(55042),	-- Stormforged Shield
-				i(70163),	-- Unbreakable Guardian
-				i(70165),	-- Witch-Hunter's Harvester
+		-- Reviewed and updated as of 12.06.2018 BfA 8.0
+			filter(20, {	-- Daggers
+				{	-- Brainsplinter
+					["itemID"] = 70155,	-- Brainsplinter
+				},
+				{	-- Cold-Forged Shank
+					["itemID"] = 55044,	-- Cold-Forged Shank
+				},
+				{	-- Elementium Shank
+					["itemID"] = 55068,	-- Elementium Shank
+				},
+				{	-- Elementium Spellblade
+					["itemID"] = 55064,	-- Elementium Spellblade
+				},
+				{	-- Fire-Etched Dagger
+					["itemID"] = 55045,	-- Fire-Etched Dagger
+				},
+				{	-- Masterwork Elementium Spellblade
+					["itemID"] = 70156,	-- Masterwork Elementium Spellblade
+				},
 			}),
-			n(-46, { 	-- Plate
-				i(71992),	-- Bracers of Destructive Strength
-				i(55060),	-- Elementium Deathplate
-				i(55061),	-- Elementium Girdle of Pain
-				i(69948),	-- Emberforged Elementium Boots
-				i(69937),	-- Eternal Elementium Handguards
-				i(69936),	-- Fists of Fury
-				i(71984),	-- Foundations of Courage
-				i(55059),	-- Hardened Elementium Girdle
-				i(55058),	-- Hardened Elementium Hauberk
-				i(54853),	-- Hardened Obsidium Belt
-				i(54854),	-- Hardened Obsidium Boots
-				i(54850),	-- Hardened Obsidium Bracers
-				i(55024),	-- Hardened Obsidium Breastplate
-				i(54852),	-- Hardened Obsidium Gauntlets
-				i(55023),	-- Hardened Obsidium Helm
-				i(55022),	-- Hardened Obsidium Legguards
-				i(54876),	-- Hardened Obsidium Shoulders
-				i(69938),	-- Holy Flame Gauntlets
-				i(55063),	-- Light Elementium Belt
-				i(55062),	-- Light Elementium Chestguard
-				i(69947),	-- Mirrored Boots
-				i(71982),	-- Pyrium Legplates of Purified Evil
-				i(55027),	-- Redsteel Belt
-				i(55028),	-- Redsteel Boots
-				i(55025),	-- Redsteel Bracers
-				i(55032),	-- Redsteel Breastplate
-				i(55026),	-- Redsteel Gauntlets
-				i(55031),	-- Redsteel Helm
-				i(55030),	-- Redsteel Legguards
-				i(55029),	-- Redsteel Shoulders
-				i(71991),	-- Soul Redeemer Bracers
-				i(55035),	-- Stormforged Belt
-				i(55036),	-- Stormforged Boots
-				i(55033),	-- Stormforged Bracers
-				i(55040),	-- Stormforged Breastplate
-				i(55034),	-- Stormforged Gauntlets
-				i(55039),	-- Stormforged Helm
-				i(55038),	-- Stormforged Legguards
-				i(55037),	-- Stormforged Shoulders
-				i(71993),	-- Titanguard Wristplates
-				i(71983),	-- Unstoppable Destroyer's Legplates
-				i(75118),	-- Vicious Ornate Pyrium Belt
-				i(75132),	-- Vicious Ornate Pyrium Boots
-				i(75125),	-- Vicious Ornate Pyrium Bracers
-				i(75128),	-- Vicious Ornate Pyrium Breastplate
-				i(75121),	-- Vicious Ornate Pyrium Gauntlets
-				i(75129),	-- Vicious Ornate Pyrium Helm
-				i(75133),	-- Vicious Ornate Pyrium Legguards
-				i(75134),	-- Vicious Ornate Pyrium Shoulders
-				i(75123),	-- Vicious Pyrium Belt
-				i(75120),	-- Vicious Pyrium Boots
-				i(75124),	-- Vicious Pyrium Bracers
-				i(75135),	-- Vicious Pyrium Breastplate
-				i(75122),	-- Vicious Pyrium Gauntlets
-				i(75126),	-- Vicious Pyrium Helm
-				i(75136),	-- Vicious Pyrium Legguards
-				i(75119),	-- Vicious Pyrium Shoulders
-				i(69946),	-- Warboots of Mighty Lords
+			filter(21, {	-- 1H Axes
+				{	--	 Decapitator's Razor
+					["itemID"] = 55043,	-- Decapitator's Razor
+				},
+				{	-- Elementium Bonesplitter
+					["itemID"] = 55067,	-- Elementium Bonesplitter
+				},
+				{	-- Elementium Gutslicer
+					["itemID"] = 67602,	-- Elementium Gutslicer
+				},
+				{	-- Elementium-Edged Scalper
+					["itemID"] = 70158,	-- Elementium-Edged Scalper
+				},
+			}),
+			filter(23, {	-- 1H Maces
+				{	-- Elementium Hammer
+					["itemID"] = 55065,	-- Elementium Hammer
+				},
+				{	-- Lifeforce Hammer
+					["itemID"] = 55046,	-- Lifeforce Hammer
+				},
+				{	-- Lightforged Elementium Hammer
+					["itemID"] = 70157,	-- Lightforged Elementium Hammer
+				},
+			}),
+			filter(24, {	-- 2H Maces
+				{	-- Forged Elementium Mindcrusher
+					["itemID"] = 67605,	-- Forged Elementium Mindcrusher
+				},
+			}),
+			filter(25, {	-- 1H Swords
+				{	-- Unbreakable Guardian
+					["itemID"] = 70163,	-- Unbreakable Guardian
+				},
+			}),
+			filter(26, {	-- 2H Swords
+				{	-- Masterwork Elementium Deathblade
+					["itemID"] = 70164,	-- Masterwork Elementium Deathblade
+				},
+				{	-- Obsidium Executioner
+					["itemID"] = 55052,	-- Obsidium Executioner
+				},
+				{	-- Pyrium Spellward
+					["itemID"] = 70162,	-- Pyrium Spellward
+				},
+			}),
+			filter(29, {	-- Polearms
+				{	-- Elementium Poleaxe
+					["itemID"] = 55066,	-- Elementium Poleaxe
+				},
+				{	-- Obsidium Bladespear
+					["itemID"] = 55246,	-- Obsidium Bladespear
+				},
+				{	-- Witch-Hunter's Harvester
+					["itemID"] = 70165,	-- Witch-Hunter's Harvester
+				},
+			}),
+			filter(8, {		-- Shield
+				{	-- Elementium Earthguard
+					["itemID"] = 55069,	-- Elementium Earthguard
+				},
+				{	-- Elementium Stormshield
+					["itemID"] = 55070,	-- Elementium Stormshield
+				},
+				{	-- Hardened Obsidium Shield
+					["itemID"] = 55041,	-- Hardened Obsidium Shield
+				},
+				{	-- Stormforged Shield
+					["itemID"] = 55042,	-- Stormforged Shield
+				},
+			}),
+			n(-320, {		-- Head
+				{	-- Hardened Obsidium Helm
+					["itemID"] = 55023,	-- Hardened Obsidium Helm
+				},
+				{	-- Redsteel Helm
+					["itemID"] = 55031,	-- Redsteel Helm
+				},
+				{	-- Stormforged Helm
+					["itemID"] = 55039,	-- Stormforged Helm
+				},
+				{	-- Vicious Ornate Pyrium Helm
+					["itemID"] = 75129,	-- Vicious Ornate Pyrium Helm
+				},
+				{	-- Vicious Pyrium Helm
+					["itemID"] = 75126,	-- Vicious Pyrium Helm
+				},
+			}),
+			n(-321, {		-- Shoulders
+				{	-- Hardened Obsidium Shoulders
+					["itemID"] = 54876,	-- Hardened Obsidium Shoulders
+				},
+				{	-- Redsteel Shoulders
+					["itemID"] = 55029,	-- Redsteel Shoulders
+				},
+				{	-- Stormforged Shoulders
+					["itemID"] = 55037,	-- Stormforged Shoulders
+				},
+				{	-- Vicious Ornate Pyrium Shoulders
+					["itemID"] = 75134,	-- Vicious Ornate Pyrium Shoulders
+				},
+				{	-- Vicious Pyrium Shoulders
+					["itemID"] = 75119,	-- Vicious Pyrium Shoulders
+				},
+			}),
+			n(-323, {		-- Chest
+				{	-- Elementium Deathplate
+					["itemID"] = 55060,	-- Elementium Deathplate
+				},
+				{	-- Hardened Elementium Hauberk
+					["itemID"] = 55058,	-- Hardened Elementium Hauberk
+				},
+				{	-- Hardened Obsidium Breastplate
+					["itemID"] = 55024,	-- Hardened Obsidium Breastplate
+				},
+				{	-- Light Elementium Chestguard
+					["itemID"] = 55062,	-- Light Elementium Chestguard
+				},
+				{	-- Redsteel Breastplate
+					["itemID"] = 55032,	-- Redsteel Breastplate
+				},
+				{	-- Stormforged Breastplate
+					["itemID"] = 55040,	-- Stormforged Breastplate
+				},
+				{	-- Vicious Ornate Pyrium Breastplate
+					["itemID"] = 75128,	-- Vicious Ornate Pyrium Breastplate
+				},
+				{	-- Vicious Pyrium Breastplate
+					["itemID"] = 75135,	-- Vicious Pyrium Breastplate
+				},
+			}),
+			n(-327, {		-- Hands
+				{	-- Eternal Elementium Handguards
+					["itemID"] = 69937,	-- Eternal Elementium Handguards
+				},
+				{	-- Fists of Fury
+					["itemID"] = 69936,	-- Fists of Fury
+				},
+				{	-- Hardened Obsidium Gauntlets
+					["itemID"] = 54852,	-- Hardened Obsidium Gauntlets
+				},
+				{	-- Holy Flame Gauntlets
+					["itemID"] = 69938,	-- Holy Flame Gauntlets
+				},
+				{	-- Redsteel Gauntlets
+					["itemID"] = 55026,	-- Redsteel Gauntlets
+				},
+				{	-- Stormforged Gauntlets
+					["itemID"] = 55034,	-- Stormforged Gauntlets
+				},
+				{	-- Vicious Ornate Pyrium Gauntlets
+					["itemID"] = 75121,	-- Vicious Ornate Pyrium Gauntlets
+				},
+				{	-- Vicious Pyrium Gauntlets
+					["itemID"] = 75122,	-- Vicious Pyrium Gauntlets
+				},
+			}),
+			n(-326, {		-- Wrist
+				{	-- Bracers of Destructive Strength
+					["itemID"] = 71992,	-- Bracers of Destructive Strength
+				},
+				{	-- Hardened Obsidium Bracers
+					["itemID"] = 54850,	-- Hardened Obsidium Bracers
+				},
+				{	-- Redsteel Bracers
+					["itemID"] = 55025,	-- Redsteel Bracers
+				},
+				{	-- Soul Redeemer Bracers
+					["itemID"] = 71991,	-- Soul Redeemer Bracers
+				},
+				{	-- Stormforged Bracers
+					["itemID"] = 55033,	-- Stormforged Bracers
+				},
+				{	-- Titanguard Wristplates
+					["itemID"] = 71993,	-- Titanguard Wristplates
+				},
+				{	-- Vicious Ornate Pyrium Bracers
+					["itemID"] = 75125,	-- Vicious Ornate Pyrium Bracers
+				},
+				{	-- Vicious Pyrium Bracers
+					["itemID"] = 75124,	-- Vicious Pyrium Bracers
+				},
+			}),
+			n(-328, {		-- Waist
+				{	-- Elementium Girdle of Pain
+					["itemID"] = 55061,	-- Elementium Girdle of Pain
+				},
+				{	-- Hardened Elementium Girdle
+					["itemID"] = 55059,	-- Hardened Elementium Girdle
+				},
+				{	-- Hardened Obsidium Belt
+					["itemID"] = 54853,	-- Hardened Obsidium Belt
+				},
+				{	-- Light Elementium Belt
+					["itemID"] = 55063,	-- Light Elementium Belt
+				},
+				{	-- Redsteel Belt
+					["itemID"] = 55027,	-- Redsteel Belt
+				},
+				{	-- Stormforged Belt
+					["itemID"] = 55035,	-- Stormforged Belt
+				},
+				{	-- Vicious Ornate Pyrium Belt
+					["itemID"] = 75118,	-- Vicious Ornate Pyrium Belt
+				},
+				{	-- Vicious Pyrium Belt
+					["itemID"] = 75123,	-- Vicious Pyrium Belt
+				},
+			}),
+			n(-329, {		-- Legs
+				{	-- Foundations of Courage
+					["itemID"] = 71984,	-- Foundations of Courage
+				},
+				{	-- Hardened Obsidium Legguards
+					["itemID"] = 55022,	-- Hardened Obsidium Legguards
+				},
+				{	-- Pyrium Legplates of Purified Evil
+					["itemID"] = 71982,	-- Pyrium Legplates of Purified Evil
+				},
+				{	-- Redsteel Legguards
+					["itemID"] = 55030,	-- Redsteel Legguards
+				},
+				{	-- Stormforged Legguards
+					["itemID"] = 55038,	-- Stormforged Legguards
+				},
+				{	-- Unstoppable Destroyer's Legplates
+					["itemID"] = 71983,	-- Unstoppable Destroyer's Legplates
+				},
+				{	-- Vicious Ornate Pyrium Legguards
+					["itemID"] = 75133,	-- Vicious Ornate Pyrium Legguards
+				},
+				{	-- Vicious Pyrium Legguards
+					["itemID"] = 75136,	-- Vicious Pyrium Legguards
+				},
+			}),
+			n(-330, {		-- Feet
+				{	-- Emberforged Elementium Boots
+					["itemID"] = 69948,	-- Emberforged Elementium Boots
+				},
+				{	-- Hardened Obsidium Boots
+					["itemID"] = 54854,	-- Hardened Obsidium Boots
+				},
+				{	-- Mirrored Boots
+					["itemID"] = 69947,	-- Mirrored Boots
+				},
+				{	-- Redsteel Boots
+					["itemID"] = 55028,	-- Redsteel Boots
+				},
+				{	-- Stormforged Boots
+					["itemID"] = 55036,	-- Stormforged Boots
+				},
+				{	-- Vicious Ornate Pyrium Boots
+					["itemID"] = 75132,	-- Vicious Ornate Pyrium Boots
+				},
+				{	-- Vicious Pyrium Boots
+					["itemID"] = 75120,	-- Vicious Pyrium Boots
+				},
+				{	-- Warboots of Mighty Lords
+					["itemID"] = 69946,	-- Warboots of Mighty Lords
+				},
 			}),
 		}),
 		n(-183, { 	-- Engineering
