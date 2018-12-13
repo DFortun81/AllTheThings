@@ -8713,7 +8713,6 @@ app:GetWindow("Debugger", UIParent, function(self)
 				end);
 			elseif e == "TRADE_SKILL_LIST_UPDATE" then
 				local tradeSkillID = AllTheThings.GetTradeSkillLine();
-				local spellRecipeInfo = {};
 				local currentCategoryGroup, currentCategoryID, categories = {}, -1, {};
 				local categoryList, rawGroups = {}, {};
 				local categoryIDs = { C_TradeSkillUI.GetCategories() };
@@ -8736,6 +8735,7 @@ app:GetWindow("Debugger", UIParent, function(self)
 				
 				local recipeIDs = C_TradeSkillUI.GetAllRecipeIDs();
 				for i = 1,#recipeIDs do
+					local spellRecipeInfo = {};
 					if C_TradeSkillUI.GetRecipeInfo(recipeIDs[i], spellRecipeInfo) then
 						currentCategoryID = spellRecipeInfo.categoryID;
 						if not categories[currentCategoryID] then
