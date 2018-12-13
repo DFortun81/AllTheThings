@@ -145,3 +145,13 @@ i(157870, 263707);	-- Zandalari Direhorn
 i(161134, 261437);	-- Mecha-Mogul Mk2
 i(153493, 243201);	-- Demonic Gladiator's Storm Dragon
 i(156879, 262022);	-- Dread Gladiator's Proto-Drake
+
+---------------
+-- PATCH 8.1 --
+---------------
+
+i(166432, 288495);	-- Ashenvale Chimaera
+i(166438, 288438);	-- Caged Bear
+i(166437, 288505);	-- Captured Kaldorei Nightsaber
+i(166434, 288503);	-- Captured Umber Nightsaber
+i(166803, 288503);	-- Umber Nightsaber

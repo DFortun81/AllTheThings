@@ -548,3 +548,13 @@ t(69896);	-- Yellow Balloon
 t(153180);	-- Yellow Conservatory Scroll
 t(156649);	-- Zandalari Effigy Amulet
 t(116691);	-- Zhevra Lounge Cushion
+
+---------------
+-- PATCH 8.1 --
+---------------
+
+t(166785);	-- Detoxified Blight Grenade
+t(166790);	-- Highborne Memento
+t(166784);	-- Narassin's Soul Gem
+t(166787);	-- Twiddle Twirler: Sentinel's Glaive
+t(166788);	-- Twiddle Twirler: Shredder Blade

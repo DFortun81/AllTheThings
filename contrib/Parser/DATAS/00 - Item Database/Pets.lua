@@ -705,3 +705,16 @@ pet(128423, 1255);	-- Zeradar
 pet(13582, 94); 	-- Zergling Leash (Zergling)
 pet(113554, 1428);	-- Zomstrok
 pet(137298, 1903); 	-- Zoom
+
+---------------
+-- PATCH 8.1 --
+---------------
+
+pet(166448, 2545);	-- Binding of Cyclarus
+pet(166452, 2547);	-- Bottled Essence of Hydrath
+pet(166449, 2544);	-- Darkshore Sentinel
+pet(166453, 2548);	-- Everburning Treant
+pet(166528, 2563);	-- Nightwreathed Watcher
+pet(166451, 2546);	-- Rattling Bones
+pet(166454, 2549);	-- Squishy Purple Goo
+pet(166455, 2550);	-- Zur'aj the Depleted
