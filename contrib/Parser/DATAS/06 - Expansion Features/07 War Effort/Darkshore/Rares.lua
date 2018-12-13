@@ -61,6 +61,9 @@ _.ExpansionFeatures =
 							["coords"] = {
 								{ 57.38, 15.67, 62 },
 							},
+							["crs"] = {
+								147746,	-- Glrglrr
+							},
 						},
 						{	-- Athil Dewfire [H Only]
 							["hordeQuestID"] = 54431,		-- Athil Dewfire [H]

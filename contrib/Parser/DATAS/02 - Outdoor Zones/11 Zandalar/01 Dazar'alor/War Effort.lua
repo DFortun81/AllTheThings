@@ -12,6 +12,81 @@ _.Zones =
 					["groups"] = {
 						n(-17, {	-- Quests
 							["groups"] = {
+								q(53992, {	-- Warfront: The Battle for Darkshore [Tier 3]
+									["groups"] = {
+										i(166370, {	-- Sentinel Equipment Cache
+											["groups"] = bubbleDown({["modID"] = 6}, {
+															-- HORDE SET --
+												i(165614),	-- Apothecary Spellstaff
+												i(165608),	-- Blightspreader's Crescent
+												i(165622),	-- Deathguard's Blade
+												i(166897),	-- Deathguard's Gavel
+												i(163528),	-- Deathguard's Gladius
+												i(166482),	-- Deathguard's Greatsword
+												i(165620),	-- Deathguard's Warshield
+												i(165611),	-- Deathstalker's Headcracker
+												i(165619),	-- Deathstalker's Warglaive
+												i(165621),	-- Deadshot Handcannon
+												i(165610),	-- Plaguebringer's Dirk
+												i(165613),	-- Plaguebringer's Halberd
+												i(166802),	-- Plaguebringer's Spellblade
+												i(166762),	-- Plaguebringer's Drape
+												i(166763),	-- Deathstalker's Cloak
+												i(166764),	-- Blightguard's Cloak
+												i(166765),	-- Deathguard's Greatcloak
+												i(165467),	-- Plaguebringer's Cowl
+												i(166564),	-- Plaguebringer's Skullcap
+												i(166554),	-- Plaguebringer's Mantle
+												i(165469),	-- Plaguebringer's Shoulderguards
+												i(166573),	-- Plaguebringer's Vestments
+												i(165492),	-- Plaguebringer's Robe
+												i(165471),	-- Plaguebringer's Armwraps
+												i(165466),	-- Plaguebringer's Gloves
+												i(165470),	-- Plaguebringer's Cord
+												i(165468),	-- Plaguebringer's Legwraps
+												i(165465),	-- Plaguebringer's Boots
+												i(165475),	-- Deathstalker's Collar
+												i(166563),	-- Deathstalker's Mask
+												i(166553),	-- Deathstalker's Shoulderpads
+												i(165477),	-- Deathstalker's Shoulderguards
+												i(166576),	-- Deathstalker's Jerkin
+												i(165472),	-- Deathstalker's Chestpiece
+												i(165479),	-- Deathstalker's Bindings
+												i(165474),	-- Deathstalker's Grips
+												i(165478),	-- Deathstalker's Belt
+												i(165476),	-- Deathstalker's Leggings
+												i(165473),	-- Deathstalker's Treads
+												i(166562),	-- Blightguard's Casque
+												i(165483),	-- Blightguard's Helmet
+												i(166552),	-- Blightguard's Spaulders
+												i(165485),	-- Blightguard's Shoulderguards
+												i(166575),	-- Blightguard's Chainmail
+												i(165480),	-- Blightguard's Harness
+												i(165487),	-- Blightguard's Bracers
+												i(165486),	-- Blightguard's Girdle
+												i(165482),	-- Blightguard's Grasps
+												i(165484),	-- Blightguard's Legguards
+												i(165481),	-- Blightguard's Footguards
+												i(166561),	-- Deathguard's Casque
+												i(165491),	-- Deathguard's Helm
+												i(165494),	-- Deathguard's Pauldrons
+												i(166551),	-- Deathguard's Shoulderplates
+												i(166574),	-- Deathguard's Breastplate
+												i(165488),	-- Deathguard's Chestplate
+												i(165496),	-- Deathguard's Vambraces
+												i(165490),	-- Deathguard's Gauntlets
+												i(165495),	-- Deathguard's Waistplate
+												i(165493),	-- Deathguard's Greaves
+												i(165489),	-- Deathguard's Sabatons
+											}),
+										}),
+									},
+									["qg"] = 138949,	-- Throk <Recruitment Officer>
+									["coords"] = {
+										{ 52.97, 94.35, 1165 },
+									},
+									["races"] = HORDE_ONLY,
+								}),
 								q(53416, {	-- Warfront: The Battle For Stromgarde [Tier 3]
 									["groups"] = {
 										i(164577, {	-- Warfronts Equipment Cache

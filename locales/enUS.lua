@@ -1139,6 +1139,9 @@ AllTheThings.Locales.enUS = {
 		[-233] = GetSpellInfo(279443),											-- Warfront: The Battle for Stromgarde [Horde]
 		[-234] = GetSpellInfo(279443),											-- Warfront: The Battle for Stromgarde [Alliance]
 		[-235] = AUCTION_CATEGORY_RECIPES,										-- Recipes
+		[-237] = GetSpellInfo(290253),											-- Warfront: The Battle for Darkshore [Alliance]
+		[-238] = GetSpellInfo(290228),											-- Warfront: The Battle for Darkshore [Horde]
+		
 		
 -- Other
 		[-294] = "Killed First",
