@@ -9300,12 +9300,14 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 end);
 (function()
 	local worldMapIDs = {
+		14,		-- Arathi Highlands
+		62,		-- Darkshore
+		875,	-- Zandalar
+		876,	-- Kul'Tiras
 		619,	-- The Broken Isles
 		885,	-- Antoran Wastes
 		830,	-- Krokuun
 		882,	-- Mac'Aree
-		875,	-- Zandalar
-		876,	-- Kul'Tiras
 	};
 	app:GetWindow("WorldQuests", UIParent, function(self)
 		if not self.initialized then
