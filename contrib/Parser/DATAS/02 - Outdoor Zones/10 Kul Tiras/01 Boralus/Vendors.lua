@@ -9,6 +9,93 @@ _.Zones =
 			["groups"] = {
 				n(-2, {  -- Vendors
 					["groups"] = {
+						{	-- Captain Klarisa
+							["npcID"] = 148922,	-- Captain Klarisa
+							["races"] = ALLIANCE_ONLY,
+							["coords"] = {
+								{ 66.04, 32.29, 1161 },
+							},
+							["g"] = {
+								{	-- Seafarer's Dubloon
+									["currencyID"] = 1710,	-- Seafarer's Dubloon
+									["g"] = {
+										{	-- Saltwater Seahorse
+											["itemID"] = 166471,	-- Saltwater Seahorse
+											["description"] = "Cost: 500 Seafarer's Dubloons",
+										},
+										{	-- Siltwing Albatross
+											["itemID"] = 166745,	-- Siltwing Albatross
+											["description"] = "Cost: 1000 Seafarer's Dubloons",
+										},
+										{	-- Albino Duskwatcher
+											["itemID"] = 166491,	-- Albino Duskwatcher
+											["description"] = "Cost: 200 Seafarer's Dubloons",
+										},
+										{	-- Crimson Octopode
+											["itemID"] = 166500,	-- Crimson Octopode
+											["description"] = "Cost: 100 Seafarer's Dubloons",
+										},
+										{	-- Cranky Crab
+											["itemID"] = 166662,	-- Cranky Crab
+											["description"] = "Cost: 200 Seafarer's Dubloons",
+										},
+										{	-- Gnarlwood Waveboard
+											["itemID"] = 166461,	-- Gnarlwood Waveboard
+											["description"] = "Cost: 300 Seafarer's Dubloons",
+										},
+										{	-- Hand Anchor
+											["itemID"] = 166663,	-- Hand Anchor
+											["description"] = "Cost: 150 Seafarer's Dubloons",
+										},
+										{	-- Blue Tricorne Hat
+											["itemID"] = 160286,	-- Blue Tricorne Hat
+											["description"] = "Cost: 100 Seafarer's Dubloons",
+										},
+										{	-- Grey Tricorne Hat
+											["itemID"] = 160289,	-- Grey Tricorne Hat
+											["description"] = "Cost: 100 Seafarer's Dubloons",
+										},
+										{	-- Red Tricorne Hat
+											["itemID"] = 160290,	-- Red Tricorne Hat
+											["description"] = "Cost: 100 Seafarer's Dubloons",
+										},
+										{	-- Lyrics: Song of the Sea
+											["itemID"] = 166749,	-- Lyrics: Song of the Sea
+											["description"] = "Cost: 25 Seafarer's Dubloons",
+										},
+										{	-- Dented Coin [A]
+											["itemID"] = 163616,	-- Dented Coin
+											--["questID"] = 53118,	-- Dented Coin
+											--Note!! We are commenting out the questID so we no longer show "Incomplete" on the item
+											["repeatable"] = true,
+											["description"] = "Cost: 100 Seafarer's Dubloons",
+											["races"] = ALLIANCE_ONLY,
+										},
+										{	-- Exotic Spices [A]
+											["itemID"] = 163614,	-- Exotic Spices
+											--["questID"] = 53120,	-- Exotic Spices
+											--Note!! We are commenting out the questID so we no longer show "Incomplete" on the item
+											["repeatable"] = true,
+											["description"] = "Cost: 100 Seafarer's Dubloons",
+											["races"] = ALLIANCE_ONLY,
+										},
+										{	-- Lost Sea Scroll [A]
+											["itemID"] = 163615,	-- Lost Sea Scroll
+											--["questID"] = 53119,	-- Lost Sea Scroll
+											--Note!! We are commenting out the questID so we no longer show "Incomplete" on the item
+											["repeatable"] = true,
+											["description"] = "Cost: 100 Seafarer's Dubloons",
+											["races"] = ALLIANCE_ONLY,
+										},
+										{	-- Soggy Page
+											["itemID"] = 166501,	-- Soggy Page
+											["repeatable"] = true,
+											["description"] = "Tortollan Reputation\nCost: 100 Seafarer's Dubloons"
+										},
+									},
+								},
+							},
+						},
 						n(141009, {	-- Col. Tenders <Chicken Vendor>
 							["groups"] = {
 								i(11023), -- Ancona Chicken

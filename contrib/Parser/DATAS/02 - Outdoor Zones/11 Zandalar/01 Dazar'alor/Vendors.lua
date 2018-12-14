@@ -28,6 +28,93 @@ _.Zones =
 								},
 							},
 						},
+						{	-- Captain Zen'taga
+							["npcID"] = 148923,	-- Captain Zen'taga
+							["races"] = HORDE_ONLY,
+							["coords"] = {
+								{ 44.47, 94.46, 1165 },
+							},
+							["g"] = {
+								{	-- Seafarer's Dubloon
+									["currencyID"] = 1710,	-- Seafarer's Dubloon
+									["g"] = {
+										{	-- Saltwater Seahorse
+											["itemID"] = 166471,	-- Saltwater Seahorse
+											["description"] = "Cost: 500 Seafarer's Dubloons",
+										},
+										{	-- Siltwing Albatross
+											["itemID"] = 166745,	-- Siltwing Albatross
+											["description"] = "Cost: 1000 Seafarer's Dubloons",
+										},
+										{	-- Albino Duskwatcher
+											["itemID"] = 166491,	-- Albino Duskwatcher
+											["description"] = "Cost: 200 Seafarer's Dubloons",
+										},
+										{	-- Crimson Octopode
+											["itemID"] = 166500,	-- Crimson Octopode
+											["description"] = "Cost: 100 Seafarer's Dubloons",
+										},
+										{	-- Cranky Crab
+											["itemID"] = 166662,	-- Cranky Crab
+											["description"] = "Cost: 200 Seafarer's Dubloons",
+										},
+										{	-- Gnarlwood Waveboard
+											["itemID"] = 166461,	-- Gnarlwood Waveboard
+											["description"] = "Cost: 300 Seafarer's Dubloons",
+										},
+										{	-- Hand Anchor
+											["itemID"] = 166663,	-- Hand Anchor
+											["description"] = "Cost: 150 Seafarer's Dubloons",
+										},
+										{	-- Blue Tricorne Hat
+											["itemID"] = 160286,	-- Blue Tricorne Hat
+											["description"] = "Cost: 100 Seafarer's Dubloons",
+										},
+										{	-- Grey Tricorne Hat
+											["itemID"] = 160289,	-- Grey Tricorne Hat
+											["description"] = "Cost: 100 Seafarer's Dubloons",
+										},
+										{	-- Red Tricorne Hat
+											["itemID"] = 160290,	-- Red Tricorne Hat
+											["description"] = "Cost: 100 Seafarer's Dubloons",
+										},
+										{	-- Lyrics: Song of the Sea
+											["itemID"] = 166749,	-- Lyrics: Song of the Sea
+											["description"] = "Cost: 25 Seafarer's Dubloons",
+										},
+										{	-- Golden Beetle [H]
+											["itemID"] = 163619,	-- Golden Beetle
+											--["questID"] = 53114,	-- Golden Beetle
+											--Note!! We are commenting out the questID so we no longer show "Incomplete" on the item
+											["repeatable"] = true,
+											["description"] = "Cost: 100 Seafarer's Dubloons",
+											["races"] = HORDE_ONLY,
+										},
+										{	-- Island Flotsam [H]
+											["itemID"] = 163620,	-- Island Flotsam
+											--["questID"] = 53115,	-- Island Flotsam
+											--Note!! We are commenting out the questID so we no longer show "Incomplete" on the item
+											["repeatable"] = true,
+											["description"] = "Cost: 100 Seafarer's Dubloons",
+											["races"] = HORDE_ONLY,
+										},
+										{	-- Shimmering Shell [H]
+											["itemID"] = 163618,	-- Shimmering Shell
+											--["questID"] = 53113,	-- Shimminering Shell
+											--Note!! We are commenting out the questID so we no longer show "Incomplete" on the item
+											["repeatable"] = true,
+											["description"] = "Cost: 100 Seafarer's Dubloons",
+											["races"] = HORDE_ONLY,
+										},
+										{	-- Soggy Page
+											["itemID"] = 166501,	-- Soggy Page
+											["repeatable"] = true,
+											["description"] = "Tortollan Reputation\nCost: 100 Seafarer's Dubloons"
+										},
+									},
+								},
+							},
+						},
 						{	-- Elly Fraze <Toys and Curiosities> [AH]
 							["npcID"] = 138033, 	-- Elly Fraze <Toys and Curiosities>
 							["coords"] = {
