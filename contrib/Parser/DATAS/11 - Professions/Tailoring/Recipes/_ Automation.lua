@@ -1,2936 +1,4129 @@
 --[[
 DO NOT MODIFY THIS FILE, I WILL CUT YOU.
  With love,
-    - CRIEVE
+    -CRIEVE
 ]]--
 profession(197, {	-- Tailoring
-	filter(200, {	-- Recipes
+	filter(200, {
 		{
-			["categoryID"] = 432--[[Training]],
+			["name"] = "Training",
+			["categoryID"] = 432,
 			["g"] = {
 				{
-					["recipeID"] = 186799--[[Basic Silkweave Robe]]
+					["name"] = "Basic Silkweave Robe",
+					["recipeID"] = 186799
 				},
 				{
-					["recipeID"] = 186801--[[Embroidered Silkweave Robe]]
+					["name"] = "Embroidered Silkweave Robe",
+					["recipeID"] = 186801
 				},
 				{
-					["recipeID"] = 186803--[[Handcrafted Silkweave Bag]]
+					["name"] = "Handcrafted Silkweave Bag",
+					["recipeID"] = 186803
 				},
 				{
-					["recipeID"] = 187060--[[Handcrafted Silkweave Hood]]
+					["name"] = "Handcrafted Silkweave Hood",
+					["recipeID"] = 187060
 				},
 				{
-					["recipeID"] = 186738--[[Handcrafted Silkweave Robe]]
+					["name"] = "Handcrafted Silkweave Robe",
+					["recipeID"] = 186738
 				},
 				{
-					["recipeID"] = 187066--[[Masterwork Silkweave Bracers]]
+					["name"] = "Masterwork Silkweave Bracers",
+					["recipeID"] = 187066
 				},
 				{
-					["recipeID"] = 186764--[[Rune-Threaded Silkweave Bracers]]
+					["name"] = "Rune-Threaded Silkweave Bracers",
+					["recipeID"] = 186764
 				},
 				{
-					["recipeID"] = 186763--[[Rune-Threaded Silkweave Robe]]
+					["name"] = "Rune-Threaded Silkweave Robe",
+					["recipeID"] = 186763
 				},
 				{
-					["recipeID"] = 187064--[[Silkweave Bracer Lining]]
+					["name"] = "Silkweave Bracer Lining",
+					["recipeID"] = 187064
 				},
 				{
-					["recipeID"] = 187065--[[Silkweave Bracer: Outer Layer]]
+					["name"] = "Silkweave Bracer: Outer Layer",
+					["recipeID"] = 187065
 				},
 				{
-					["recipeID"] = 187058--[[Silkweave Hood Lining]]
+					["name"] = "Silkweave Hood Lining",
+					["recipeID"] = 187058
 				},
 				{
-					["recipeID"] = 187059--[[Silkweave Hood: Outer Layer]]
+					["name"] = "Silkweave Hood: Outer Layer",
+					["recipeID"] = 187059
 				}
 			}
 		},
 		{
-			["categoryID"] = 942--[[Kul Tiran Patterns]],
+			["name"] = "Zandalari Patterns",
+			["categoryID"] = 942,
 			["g"] = {
 				{
-					["categoryID"] = 1116--[[Embroidery]],
+					["name"] = "Embroidery",
+					["categoryID"] = 1116,
 					["g"] = {
 						{
-							["recipeID"] = 272440--[[Embroidered Deep Sea Satin]]
+							["name"] = "Discreet Spellthread",
+							["recipeID"] = 279183
 						},
 						{
-							["recipeID"] = 279183--[[Discreet Spellthread]]
+							["name"] = "Embroidered Deep Sea Satin",
+							["recipeID"] = 272440
 						},
 						{
-							["recipeID"] = 279184--[[Feathery Spellthread]]
+							["name"] = "Feathery Spellthread",
+							["recipeID"] = 279184
 						},
 						{
-							["recipeID"] = 279182--[[Resilient Spellthread]]
+							["name"] = "Resilient Spellthread",
+							["recipeID"] = 279182
 						}
 					}
 				},
 				{
-					["categoryID"] = 943--[[Bags]],
+					["name"] = "Bags",
+					["categoryID"] = 943,
 					["g"] = {
 						{
-							["recipeID"] = 257127--[[Deep Sea Bag]]
+							["name"] = "Deep Sea Bag",
+							["nextRecipeID"] = 257126,
+							["recipeID"] = 257125
 						},
 						{
-							["recipeID"] = 257128--[[Embroidered Deep Sea Bag]]
+							["name"] = "Deep Sea Bag",
+							["nextRecipeID"] = 257127,
+							["previousRecipeID"] = 257125,
+							["recipeID"] = 257126
 						},
 						{
-							["recipeID"] = 257129--[[Embroidered Deep Sea Bag]]
+							["name"] = "Deep Sea Bag",
+							["previousRecipeID"] = 257126,
+							["recipeID"] = 257127
 						},
 						{
-							["recipeID"] = 257130--[[Embroidered Deep Sea Bag]]
+							["name"] = "Embroidered Deep Sea Bag",
+							["nextRecipeID"] = 257129,
+							["recipeID"] = 257128
 						},
 						{
-							["recipeID"] = 257126--[[Deep Sea Bag]]
+							["name"] = "Embroidered Deep Sea Bag",
+							["nextRecipeID"] = 257130,
+							["previousRecipeID"] = 257128,
+							["recipeID"] = 257129
 						},
 						{
-							["recipeID"] = 257125--[[Deep Sea Bag]]
+							["name"] = "Embroidered Deep Sea Bag",
+							["previousRecipeID"] = 257129,
+							["recipeID"] = 257130
 						}
 					}
 				},
 				{
-					["categoryID"] = 944--[[Armor]],
+					["name"] = "Armor",
+					["categoryID"] = 944,
 					["g"] = {
 						{
-							["recipeID"] = 257121--[[Emblazoned Deep Sea Gloves]]
+							["name"] = "Emblazoned Deep Sea Breeches",
+							["recipeID"] = 257124
 						},
 						{
-							["recipeID"] = 257122--[[Embroidered Deep Sea Breeches]]
+							["name"] = "Emblazoned Deep Sea Gloves",
+							["recipeID"] = 257121
 						},
 						{
-							["recipeID"] = 257118--[[Embroidered Deep Sea Gloves]]
+							["name"] = "Embroidered Deep Sea Breeches",
+							["recipeID"] = 257122
 						},
 						{
-							["recipeID"] = 269601--[[Honorable Combatant's Satin Boots]]
+							["name"] = "Embroidered Deep Sea Cloak",
+							["nextRecipeID"] = 257115,
+							["recipeID"] = 257114
 						},
 						{
-							["recipeID"] = 269613--[[Honorable Combatant's Satin Bracers]]
+							["name"] = "Embroidered Deep Sea Cloak",
+							["nextRecipeID"] = 257116,
+							["previousRecipeID"] = 257114,
+							["recipeID"] = 257115
 						},
 						{
-							["recipeID"] = 269604--[[Honorable Combatant's Satin Mittens]]
+							["name"] = "Embroidered Deep Sea Cloak",
+							["previousRecipeID"] = 257115,
+							["recipeID"] = 257116
 						},
 						{
-							["recipeID"] = 269607--[[Honorable Combatant's Satin Pants]]
+							["name"] = "Embroidered Deep Sea Gloves",
+							["recipeID"] = 257118
 						},
 						{
-							["recipeID"] = 257123--[[Imbued Deep Sea Breeches]]
+							["name"] = "Enhanced Deep Sea Breeches",
+							["recipeID"] = 285077
 						},
 						{
-							["recipeID"] = 257120--[[Imbued Deep Sea Gloves]]
+							["name"] = "Enhanced Deep Sea Gloves",
+							["recipeID"] = 285078
 						},
 						{
-							["recipeID"] = 257124--[[Emblazoned Deep Sea Breeches]]
+							["name"] = "Fortified Deep Sea Breeches",
+							["recipeID"] = 285085
 						},
 						{
-							["recipeID"] = 257115--[[Embroidered Deep Sea Cloak]]
+							["name"] = "Fortified Deep Sea Gloves",
+							["recipeID"] = 285086
 						},
 						{
-							["recipeID"] = 257116--[[Embroidered Deep Sea Cloak]]
+							["name"] = "Honorable Combatant's Satin Belt",
+							["nextRecipeID"] = 269609,
+							["recipeID"] = 269608
 						},
 						{
-							["recipeID"] = 269610--[[Honorable Combatant's Satin Belt]]
+							["name"] = "Honorable Combatant's Satin Belt",
+							["nextRecipeID"] = 269610,
+							["previousRecipeID"] = 269608,
+							["recipeID"] = 269609
 						},
 						{
-							["recipeID"] = 269598--[[Honorable Combatant's Satin Cloak]]
+							["name"] = "Honorable Combatant's Satin Belt",
+							["previousRecipeID"] = 269609,
+							["recipeID"] = 269610
 						},
 						{
-							["recipeID"] = 269600--[[Honorable Combatant's Satin Boots]]
+							["name"] = "Honorable Combatant's Satin Boots",
+							["nextRecipeID"] = 269600,
+							["recipeID"] = 269599
 						},
 						{
-							["recipeID"] = 269612--[[Honorable Combatant's Satin Bracers]]
+							["name"] = "Honorable Combatant's Satin Boots",
+							["nextRecipeID"] = 269601,
+							["previousRecipeID"] = 269599,
+							["recipeID"] = 269600
 						},
 						{
-							["recipeID"] = 269603--[[Honorable Combatant's Satin Mittens]]
+							["name"] = "Honorable Combatant's Satin Boots",
+							["previousRecipeID"] = 269600,
+							["recipeID"] = 269601
 						},
 						{
-							["recipeID"] = 269606--[[Honorable Combatant's Satin Pants]]
+							["name"] = "Honorable Combatant's Satin Bracers",
+							["nextRecipeID"] = 269612,
+							["recipeID"] = 269611
 						},
 						{
-							["recipeID"] = 269609--[[Honorable Combatant's Satin Belt]]
+							["name"] = "Honorable Combatant's Satin Bracers",
+							["nextRecipeID"] = 269613,
+							["previousRecipeID"] = 269611,
+							["recipeID"] = 269612
 						},
 						{
-							["recipeID"] = 269597--[[Honorable Combatant's Satin Cloak]]
+							["name"] = "Honorable Combatant's Satin Bracers",
+							["previousRecipeID"] = 269612,
+							["recipeID"] = 269613
 						},
 						{
-							["recipeID"] = 269599--[[Honorable Combatant's Satin Boots]]
+							["name"] = "Honorable Combatant's Satin Cloak",
+							["nextRecipeID"] = 269597,
+							["recipeID"] = 269596
 						},
 						{
-							["recipeID"] = 269611--[[Honorable Combatant's Satin Bracers]]
+							["name"] = "Honorable Combatant's Satin Cloak",
+							["nextRecipeID"] = 269598,
+							["previousRecipeID"] = 269596,
+							["recipeID"] = 269597
 						},
 						{
-							["recipeID"] = 269602--[[Honorable Combatant's Satin Mittens]]
+							["name"] = "Honorable Combatant's Satin Cloak",
+							["previousRecipeID"] = 269597,
+							["recipeID"] = 269598
 						},
 						{
-							["recipeID"] = 269605--[[Honorable Combatant's Satin Pants]]
+							["name"] = "Honorable Combatant's Satin Mittens",
+							["nextRecipeID"] = 269603,
+							["recipeID"] = 269602
 						},
 						{
-							["recipeID"] = 257114--[[Embroidered Deep Sea Cloak]]
+							["name"] = "Honorable Combatant's Satin Mittens",
+							["nextRecipeID"] = 269604,
+							["previousRecipeID"] = 269602,
+							["recipeID"] = 269603
 						},
 						{
-							["recipeID"] = 269608--[[Honorable Combatant's Satin Belt]]
+							["name"] = "Honorable Combatant's Satin Mittens",
+							["previousRecipeID"] = 269603,
+							["recipeID"] = 269604
 						},
 						{
-							["recipeID"] = 269596--[[Honorable Combatant's Satin Cloak]]
+							["name"] = "Honorable Combatant's Satin Pants",
+							["nextRecipeID"] = 269606,
+							["recipeID"] = 269605
 						},
 						{
-							["recipeID"] = 257107--[[Tidespray Linen Cloak]]
+							["name"] = "Honorable Combatant's Satin Pants",
+							["nextRecipeID"] = 269607,
+							["previousRecipeID"] = 269605,
+							["recipeID"] = 269606
 						},
 						{
-							["recipeID"] = 257097--[[Tidespray Linen Hood]]
+							["name"] = "Honorable Combatant's Satin Pants",
+							["previousRecipeID"] = 269606,
+							["recipeID"] = 269607
 						},
 						{
-							["recipeID"] = 257104--[[Tidespray Linen Robe]]
+							["name"] = "Imbued Deep Sea Breeches",
+							["recipeID"] = 257123
 						},
 						{
-							["recipeID"] = 257101--[[Tidespray Linen Spaulders]]
+							["name"] = "Imbued Deep Sea Gloves",
+							["recipeID"] = 257120
 						},
 						{
-							["recipeID"] = 257102--[[Tidespray Linen Belt]]
+							["name"] = "Sinister Combatant's Satin Belt",
+							["nextRecipeID"] = 282169,
+							["recipeID"] = 282168
 						},
 						{
-							["recipeID"] = 257103--[[Tidespray Linen Bracers]]
+							["name"] = "Sinister Combatant's Satin Belt",
+							["nextRecipeID"] = 282170,
+							["previousRecipeID"] = 282168,
+							["recipeID"] = 282169
 						},
 						{
-							["recipeID"] = 257096--[[Tidespray Linen Mittens]]
+							["name"] = "Sinister Combatant's Satin Belt",
+							["previousRecipeID"] = 282169,
+							["recipeID"] = 282170
 						},
 						{
-							["recipeID"] = 257099--[[Tidespray Linen Pants]]
+							["name"] = "Sinister Combatant's Satin Boots",
+							["nextRecipeID"] = 282195,
+							["recipeID"] = 282194
 						},
 						{
-							["recipeID"] = 257095--[[Tidespray Linen Sandals]]
+							["name"] = "Sinister Combatant's Satin Boots",
+							["nextRecipeID"] = 282196,
+							["previousRecipeID"] = 282194,
+							["recipeID"] = 282195
+						},
+						{
+							["name"] = "Sinister Combatant's Satin Boots",
+							["previousRecipeID"] = 282195,
+							["recipeID"] = 282196
+						},
+						{
+							["name"] = "Sinister Combatant's Satin Bracers",
+							["nextRecipeID"] = 282165,
+							["recipeID"] = 282164
+						},
+						{
+							["name"] = "Sinister Combatant's Satin Bracers",
+							["nextRecipeID"] = 282166,
+							["previousRecipeID"] = 282164,
+							["recipeID"] = 282165
+						},
+						{
+							["name"] = "Sinister Combatant's Satin Bracers",
+							["previousRecipeID"] = 282165,
+							["recipeID"] = 282166
+						},
+						{
+							["name"] = "Sinister Combatant's Satin Cloak",
+							["nextRecipeID"] = 282275,
+							["recipeID"] = 282204
+						},
+						{
+							["name"] = "Sinister Combatant's Satin Cloak",
+							["nextRecipeID"] = 282276,
+							["previousRecipeID"] = 282204,
+							["recipeID"] = 282275
+						},
+						{
+							["name"] = "Sinister Combatant's Satin Cloak",
+							["previousRecipeID"] = 282275,
+							["recipeID"] = 282276
+						},
+						{
+							["name"] = "Sinister Combatant's Satin Mittens",
+							["nextRecipeID"] = 282192,
+							["recipeID"] = 282191
+						},
+						{
+							["name"] = "Sinister Combatant's Satin Mittens",
+							["nextRecipeID"] = 282193,
+							["previousRecipeID"] = 282191,
+							["recipeID"] = 282192
+						},
+						{
+							["name"] = "Sinister Combatant's Satin Mittens",
+							["previousRecipeID"] = 282192,
+							["recipeID"] = 282193
+						},
+						{
+							["name"] = "Sinister Combatant's Satin Pants",
+							["nextRecipeID"] = 282176,
+							["recipeID"] = 282175
+						},
+						{
+							["name"] = "Sinister Combatant's Satin Pants",
+							["nextRecipeID"] = 282177,
+							["previousRecipeID"] = 282175,
+							["recipeID"] = 282176
+						},
+						{
+							["name"] = "Sinister Combatant's Satin Pants",
+							["previousRecipeID"] = 282176,
+							["recipeID"] = 282177
+						},
+						{
+							["name"] = "Tempered Deep Sea Breeches",
+							["recipeID"] = 285093
+						},
+						{
+							["name"] = "Tempered Deep Sea Gloves",
+							["recipeID"] = 285094
+						},
+						{
+							["name"] = "Tidespray Linen Belt",
+							["recipeID"] = 257102
+						},
+						{
+							["name"] = "Tidespray Linen Bracers",
+							["recipeID"] = 257103
+						},
+						{
+							["name"] = "Tidespray Linen Cloak",
+							["recipeID"] = 257107
+						},
+						{
+							["name"] = "Tidespray Linen Hood",
+							["recipeID"] = 257097
+						},
+						{
+							["name"] = "Tidespray Linen Mittens",
+							["recipeID"] = 257096
+						},
+						{
+							["name"] = "Tidespray Linen Pants",
+							["recipeID"] = 257099
+						},
+						{
+							["name"] = "Tidespray Linen Robe",
+							["recipeID"] = 257104
+						},
+						{
+							["name"] = "Tidespray Linen Sandals",
+							["recipeID"] = 257095
+						},
+						{
+							["name"] = "Tidespray Linen Spaulders",
+							["recipeID"] = 257101
 						}
 					}
 				},
 				{
-					["categoryID"] = 945--[[Battle Flags]],
+					["name"] = "Battle Flags",
+					["categoryID"] = 945,
 					["g"] = {
 						{
-							["recipeID"] = 257136--[[Battle Flag: Phalanx Defense]]
+							["name"] = "Battle Flag: Phalanx Defense",
+							["nextRecipeID"] = 257135,
+							["recipeID"] = 257134
 						},
 						{
-							["recipeID"] = 257135--[[Battle Flag: Phalanx Defense]]
+							["name"] = "Battle Flag: Phalanx Defense",
+							["nextRecipeID"] = 257136,
+							["previousRecipeID"] = 257134,
+							["recipeID"] = 257135
 						},
 						{
-							["recipeID"] = 257138--[[Battle Flag: Rallying Swiftness]]
+							["name"] = "Battle Flag: Phalanx Defense",
+							["previousRecipeID"] = 257135,
+							["recipeID"] = 257136
 						},
 						{
-							["recipeID"] = 257139--[[Battle Flag: Rallying Swiftness]]
+							["name"] = "Battle Flag: Rallying Swiftness",
+							["nextRecipeID"] = 257138,
+							["recipeID"] = 257137
 						},
 						{
-							["recipeID"] = 257132--[[Battle Flag: Spirit of Freedom]]
+							["name"] = "Battle Flag: Rallying Swiftness",
+							["nextRecipeID"] = 257139,
+							["previousRecipeID"] = 257137,
+							["recipeID"] = 257138
 						},
 						{
-							["recipeID"] = 257133--[[Battle Flag: Spirit of Freedom]]
+							["name"] = "Battle Flag: Rallying Swiftness",
+							["previousRecipeID"] = 257138,
+							["recipeID"] = 257139
 						},
 						{
-							["recipeID"] = 257134--[[Battle Flag: Phalanx Defense]]
+							["name"] = "Battle Flag: Spirit of Freedom",
+							["nextRecipeID"] = 257132,
+							["recipeID"] = 257131
 						},
 						{
-							["recipeID"] = 257137--[[Battle Flag: Rallying Swiftness]]
+							["name"] = "Battle Flag: Spirit of Freedom",
+							["nextRecipeID"] = 257133,
+							["previousRecipeID"] = 257131,
+							["recipeID"] = 257132
 						},
 						{
-							["recipeID"] = 257131--[[Battle Flag: Spirit of Freedom]]
+							["name"] = "Battle Flag: Spirit of Freedom",
+							["previousRecipeID"] = 257132,
+							["recipeID"] = 257133
 						}
 					}
 				},
 				{
-					["categoryID"] = 946--[[Other]],
+					["name"] = "Other",
+					["categoryID"] = 946,
 					["g"] = {
 						{
-							["recipeID"] = 268983--[[Hooked Deep Sea Net]]
+							["name"] = "Hooked Deep Sea Net",
+							["recipeID"] = 268983
 						},
 						{
-							["recipeID"] = 268982--[[Tidespray Linen Net]]
+							["name"] = "Tidespray Linen Net",
+							["recipeID"] = 268982
 						}
 					}
 				},
 				{
-					["categoryID"] = 1086--[[Bandages]],
+					["name"] = "Bandages",
+					["categoryID"] = 1086,
 					["g"] = {
 						{
-							["recipeID"] = 267202--[[Deep Sea Bandage]]
+							["name"] = "Deep Sea Bandage",
+							["recipeID"] = 267202
 						},
 						{
-							["recipeID"] = 267201--[[Tidespray Linen Bandage]]
+							["name"] = "Tidespray Linen Bandage",
+							["recipeID"] = 267201
 						}
 					}
 				},
 				{
-					["categoryID"] = 1230--[[Follower Equipment]],
+					["name"] = "Conversions",
+					["categoryID"] = 1245,
 					["g"] = {
 						{
-							["recipeID"] = 278414--[[Rough-hooked Tidespray Linen]]
-						}
-					}
-				}
-			}
-		},
-		{
-			["categoryID"] = 430--[[Legion Patterns]],
-			["g"] = {
-				{
-					["categoryID"] = 496--[[Reagents]],
-					["g"] = {
+							["name"] = "Aqueous Alteration",
+							["recipeID"] = 287274
+						},
 						{
-							["recipeID"] = 185962--[[Imbued Silkweave]]
+							["name"] = "Sanguinated Alteration",
+							["recipeID"] = 286654
 						}
 					}
 				},
 				{
-					["categoryID"] = 495--[[Cloth Armor]],
+					["name"] = "Follower Equipment",
+					["categoryID"] = 1230,
 					["g"] = {
 						{
-							["recipeID"] = 239412--[[Celumbra, the Night's Dichotomy]]
-						},
-						{
-							["recipeID"] = 247809--[[Lightweave Breeches]]
-						},
-						{
-							["recipeID"] = 247808--[[Lightweave Breeches]]
-						},
-						{
-							["recipeID"] = 247807--[[Lightweave Breeches]]
-						},
-						{
-							["recipeID"] = 185954--[[Imbued Silkweave Bracers]]
-						},
-						{
-							["recipeID"] = 185946--[[Imbued Silkweave Bracers]]
-						},
-						{
-							["recipeID"] = 185955--[[Imbued Silkweave Cinch]]
-						},
-						{
-							["recipeID"] = 185947--[[Imbued Silkweave Cinch]]
-						},
-						{
-							["recipeID"] = 185956--[[Imbued Silkweave Epaulets]]
-						},
-						{
-							["recipeID"] = 185948--[[Imbued Silkweave Epaulets]]
-						},
-						{
-							["recipeID"] = 185951--[[Imbued Silkweave Gloves]]
-						},
-						{
-							["recipeID"] = 185959--[[Imbued Silkweave Gloves]]
-						},
-						{
-							["recipeID"] = 185958--[[Imbued Silkweave Hood]]
-						},
-						{
-							["recipeID"] = 185950--[[Imbued Silkweave Hood]]
-						},
-						{
-							["recipeID"] = 185957--[[Imbued Silkweave Pantaloons]]
-						},
-						{
-							["recipeID"] = 185949--[[Imbued Silkweave Pantaloons]]
-						},
-						{
-							["recipeID"] = 185961--[[Imbued Silkweave Robe]]
-						},
-						{
-							["recipeID"] = 185953--[[Imbued Silkweave Robe]]
-						},
-						{
-							["recipeID"] = 185960--[[Imbued Silkweave Slippers]]
-						},
-						{
-							["recipeID"] = 185952--[[Imbued Silkweave Slippers]]
-						},
-						{
-							["recipeID"] = 185926--[[Imbued Silkweave Bracers]]
-						},
-						{
-							["recipeID"] = 185927--[[Imbued Silkweave Cinch]]
-						},
-						{
-							["recipeID"] = 185928--[[Imbued Silkweave Epaulets]]
-						},
-						{
-							["recipeID"] = 185931--[[Imbued Silkweave Gloves]]
-						},
-						{
-							["recipeID"] = 185930--[[Imbued Silkweave Hood]]
-						},
-						{
-							["recipeID"] = 185929--[[Imbued Silkweave Pantaloons]]
-						},
-						{
-							["recipeID"] = 185933--[[Imbued Silkweave Robe]]
-						},
-						{
-							["recipeID"] = 185932--[[Imbued Silkweave Slippers]]
-						},
-						{
-							["recipeID"] = 208350--[[Silkweave Gloves]]
-						},
-						{
-							["recipeID"] = 208351--[[Silkweave Hood]]
-						},
-						{
-							["recipeID"] = 208353--[[Silkweave Pantaloons]]
-						},
-						{
-							["recipeID"] = 208352--[[Silkweave Slippers]]
-						},
-						{
-							["recipeID"] = 185942--[[Silkweave Bracers]]
-						},
-						{
-							["recipeID"] = 185945--[[Silkweave Robe]]
-						},
-						{
-							["recipeID"] = 185943--[[Silkweave Cinch]]
-						},
-						{
-							["recipeID"] = 185944--[[Silkweave Epaulets]]
-						},
-						{
-							["recipeID"] = 185939--[[Silkweave Gloves]]
-						},
-						{
-							["recipeID"] = 185938--[[Silkweave Hood]]
-						},
-						{
-							["recipeID"] = 185937--[[Silkweave Pantaloons]]
-						},
-						{
-							["recipeID"] = 185940--[[Silkweave Slippers]]
-						},
-						{
-							["recipeID"] = 185934--[[Silkweave Bracers]]
-						},
-						{
-							["recipeID"] = 185941--[[Silkweave Robe]]
-						},
-						{
-							["recipeID"] = 185935--[[Silkweave Cinch]]
-						},
-						{
-							["recipeID"] = 185936--[[Silkweave Epaulets]]
-						},
-						{
-							["recipeID"] = 185923--[[Silkweave Gloves]]
-						},
-						{
-							["recipeID"] = 185922--[[Silkweave Hood]]
-						},
-						{
-							["recipeID"] = 185921--[[Silkweave Pantaloons]]
-						},
-						{
-							["recipeID"] = 185924--[[Silkweave Slippers]]
-						},
-						{
-							["recipeID"] = 185918--[[Silkweave Bracers]]
-						},
-						{
-							["recipeID"] = 185925--[[Silkweave Robe]]
-						},
-						{
-							["recipeID"] = 185919--[[Silkweave Cinch]]
-						},
-						{
-							["recipeID"] = 185920--[[Silkweave Epaulets]]
-						}
-					}
-				},
-				{
-					["categoryID"] = 431--[[Cloaks]],
-					["g"] = {
-						{
-							["recipeID"] = 186114--[[Imbued Silkweave Cover]]
-						},
-						{
-							["recipeID"] = 186113--[[Imbued Silkweave Cover]]
-						},
-						{
-							["recipeID"] = 186116--[[Imbued Silkweave Drape]]
-						},
-						{
-							["recipeID"] = 186117--[[Imbued Silkweave Drape]]
-						},
-						{
-							["recipeID"] = 186110--[[Imbued Silkweave Flourish]]
-						},
-						{
-							["recipeID"] = 186111--[[Imbued Silkweave Flourish]]
-						},
-						{
-							["recipeID"] = 186107--[[Imbued Silkweave Shade]]
-						},
-						{
-							["recipeID"] = 186108--[[Imbued Silkweave Shade]]
-						},
-						{
-							["recipeID"] = 186112--[[Imbued Silkweave Cover]]
-						},
-						{
-							["recipeID"] = 186115--[[Imbued Silkweave Drape]]
-						},
-						{
-							["recipeID"] = 186109--[[Imbued Silkweave Flourish]]
-						},
-						{
-							["recipeID"] = 186106--[[Imbued Silkweave Shade]]
-						},
-						{
-							["recipeID"] = 186097--[[Silkweave Cover]]
-						},
-						{
-							["recipeID"] = 186100--[[Silkweave Drape]]
-						},
-						{
-							["recipeID"] = 186094--[[Silkweave Flourish]]
-						},
-						{
-							["recipeID"] = 186091--[[Silkweave Shade]]
-						}
-					}
-				},
-				{
-					["categoryID"] = 497--[[Other]],
-					["g"] = {
-						{
-							["recipeID"] = 229045--[[Imbued Silkweave Bag]]
-						},
-						{
-							["recipeID"] = 229043--[[Imbued Silkweave Bag]]
-						},
-						{
-							["recipeID"] = 229041--[[Imbued Silkweave Bag]]
-						},
-						{
-							["recipeID"] = 186388--[[Silkweave Satchel]]
-						},
-						{
-							["recipeID"] = 220511--[[Bloodtotem Saddle Blanket]]
-						},
-						{
-							["recipeID"] = 213035--[[Clothes Chest: Dalaran Citizens]]
-						},
-						{
-							["recipeID"] = 213036--[[Clothes Chest: Karazhan Opera House]]
-						},
-						{
-							["recipeID"] = 213037--[[Clothes Chest: Molten Core]]
-						}
-					}
-				},
-				{
-					["categoryID"] = 1088--[[Cures of the Broken Isles]],
-					["g"] = {
-						{
-							["recipeID"] = 202854--[[Silkweave Splint]]
-						},
-						{
-							["recipeID"] = 230047--[[Feathered Luffa]]
-						},
-						{
-							["recipeID"] = 202853--[[Silkweave Bandage]]
+							["name"] = "Rough-hooked Tidespray Linen",
+							["recipeID"] = 278414
 						}
 					}
 				}
 			}
 		},
 		{
-			["categoryID"] = 369--[[Draenor Patterns]],
+			["name"] = "Legion Patterns",
+			["categoryID"] = 430,
 			["g"] = {
 				{
-					["categoryID"] = 400--[[Battle Standards]],
+					["name"] = "Reagents",
+					["categoryID"] = 496,
 					["g"] = {
 						{
-							["recipeID"] = 176316--[[Fearsome Battle Standard]]
-						},
-						{
-							["recipeID"] = 176314--[[Fearsome Battle Standard]]
-						},
-						{
-							["recipeID"] = 176313--[[Inspiring Battle Standard]]
-						},
-						{
-							["recipeID"] = 176315--[[Inspiring Battle Standard]]
+							["name"] = "Imbued Silkweave",
+							["recipeID"] = 185962
 						}
 					}
 				},
 				{
-					["categoryID"] = 366--[[Reagents and Research]],
+					["name"] = "Cloth Armor",
+					["categoryID"] = 495,
 					["g"] = {
 						{
-							["recipeID"] = 168835--[[Hexweave Cloth]]
+							["name"] = "Celumbra, the Night's Dichotomy",
+							["recipeID"] = 239412
 						},
 						{
-							["recipeID"] = 169669--[[Hexweave Cloth]]
+							["name"] = "Imbued Silkweave Bracers",
+							["nextRecipeID"] = 185946,
+							["recipeID"] = 185926
 						},
 						{
-							["recipeID"] = 182123--[[Primal Weaving]]
+							["name"] = "Imbued Silkweave Bracers",
+							["nextRecipeID"] = 185954,
+							["previousRecipeID"] = 185926,
+							["recipeID"] = 185946
 						},
 						{
-							["recipeID"] = 176058--[[Secrets of Draenor Tailoring]]
+							["name"] = "Imbued Silkweave Bracers",
+							["previousRecipeID"] = 185946,
+							["recipeID"] = 185954
+						},
+						{
+							["name"] = "Imbued Silkweave Cinch",
+							["nextRecipeID"] = 185947,
+							["recipeID"] = 185927
+						},
+						{
+							["name"] = "Imbued Silkweave Cinch",
+							["nextRecipeID"] = 185955,
+							["previousRecipeID"] = 185927,
+							["recipeID"] = 185947
+						},
+						{
+							["name"] = "Imbued Silkweave Cinch",
+							["previousRecipeID"] = 185947,
+							["recipeID"] = 185955
+						},
+						{
+							["name"] = "Imbued Silkweave Epaulets",
+							["nextRecipeID"] = 185948,
+							["recipeID"] = 185928
+						},
+						{
+							["name"] = "Imbued Silkweave Epaulets",
+							["nextRecipeID"] = 185956,
+							["previousRecipeID"] = 185928,
+							["recipeID"] = 185948
+						},
+						{
+							["name"] = "Imbued Silkweave Epaulets",
+							["previousRecipeID"] = 185948,
+							["recipeID"] = 185956
+						},
+						{
+							["name"] = "Imbued Silkweave Gloves",
+							["nextRecipeID"] = 185951,
+							["recipeID"] = 185931
+						},
+						{
+							["name"] = "Imbued Silkweave Gloves",
+							["nextRecipeID"] = 185959,
+							["previousRecipeID"] = 185931,
+							["recipeID"] = 185951
+						},
+						{
+							["name"] = "Imbued Silkweave Gloves",
+							["previousRecipeID"] = 185951,
+							["recipeID"] = 185959
+						},
+						{
+							["name"] = "Imbued Silkweave Hood",
+							["nextRecipeID"] = 185950,
+							["recipeID"] = 185930
+						},
+						{
+							["name"] = "Imbued Silkweave Hood",
+							["nextRecipeID"] = 185958,
+							["previousRecipeID"] = 185930,
+							["recipeID"] = 185950
+						},
+						{
+							["name"] = "Imbued Silkweave Hood",
+							["previousRecipeID"] = 185950,
+							["recipeID"] = 185958
+						},
+						{
+							["name"] = "Imbued Silkweave Pantaloons",
+							["nextRecipeID"] = 185949,
+							["recipeID"] = 185929
+						},
+						{
+							["name"] = "Imbued Silkweave Pantaloons",
+							["nextRecipeID"] = 185957,
+							["previousRecipeID"] = 185929,
+							["recipeID"] = 185949
+						},
+						{
+							["name"] = "Imbued Silkweave Pantaloons",
+							["previousRecipeID"] = 185949,
+							["recipeID"] = 185957
+						},
+						{
+							["name"] = "Imbued Silkweave Robe",
+							["nextRecipeID"] = 185953,
+							["recipeID"] = 185933
+						},
+						{
+							["name"] = "Imbued Silkweave Robe",
+							["nextRecipeID"] = 185961,
+							["previousRecipeID"] = 185933,
+							["recipeID"] = 185953
+						},
+						{
+							["name"] = "Imbued Silkweave Robe",
+							["previousRecipeID"] = 185953,
+							["recipeID"] = 185961
+						},
+						{
+							["name"] = "Imbued Silkweave Slippers",
+							["nextRecipeID"] = 185952,
+							["recipeID"] = 185932
+						},
+						{
+							["name"] = "Imbued Silkweave Slippers",
+							["nextRecipeID"] = 185960,
+							["previousRecipeID"] = 185932,
+							["recipeID"] = 185952
+						},
+						{
+							["name"] = "Imbued Silkweave Slippers",
+							["previousRecipeID"] = 185952,
+							["recipeID"] = 185960
+						},
+						{
+							["name"] = "Lightweave Breeches",
+							["nextRecipeID"] = 247808,
+							["recipeID"] = 247807
+						},
+						{
+							["name"] = "Lightweave Breeches",
+							["nextRecipeID"] = 247809,
+							["previousRecipeID"] = 247807,
+							["recipeID"] = 247808
+						},
+						{
+							["name"] = "Lightweave Breeches",
+							["previousRecipeID"] = 247808,
+							["recipeID"] = 247809
+						},
+						{
+							["name"] = "Silkweave Bracers",
+							["nextRecipeID"] = 185934,
+							["recipeID"] = 185918
+						},
+						{
+							["name"] = "Silkweave Bracers",
+							["nextRecipeID"] = 185942,
+							["previousRecipeID"] = 185918,
+							["recipeID"] = 185934
+						},
+						{
+							["name"] = "Silkweave Bracers",
+							["previousRecipeID"] = 185934,
+							["recipeID"] = 185942
+						},
+						{
+							["name"] = "Silkweave Cinch",
+							["nextRecipeID"] = 185935,
+							["recipeID"] = 185919
+						},
+						{
+							["name"] = "Silkweave Cinch",
+							["nextRecipeID"] = 185943,
+							["previousRecipeID"] = 185919,
+							["recipeID"] = 185935
+						},
+						{
+							["name"] = "Silkweave Cinch",
+							["previousRecipeID"] = 185935,
+							["recipeID"] = 185943
+						},
+						{
+							["name"] = "Silkweave Epaulets",
+							["nextRecipeID"] = 185936,
+							["recipeID"] = 185920
+						},
+						{
+							["name"] = "Silkweave Epaulets",
+							["nextRecipeID"] = 185944,
+							["previousRecipeID"] = 185920,
+							["recipeID"] = 185936
+						},
+						{
+							["name"] = "Silkweave Epaulets",
+							["previousRecipeID"] = 185936,
+							["recipeID"] = 185944
+						},
+						{
+							["name"] = "Silkweave Gloves",
+							["nextRecipeID"] = 185939,
+							["recipeID"] = 185923
+						},
+						{
+							["name"] = "Silkweave Gloves",
+							["nextRecipeID"] = 208350,
+							["previousRecipeID"] = 185923,
+							["recipeID"] = 185939
+						},
+						{
+							["name"] = "Silkweave Gloves",
+							["previousRecipeID"] = 185939,
+							["recipeID"] = 208350
+						},
+						{
+							["name"] = "Silkweave Hood",
+							["nextRecipeID"] = 185938,
+							["recipeID"] = 185922
+						},
+						{
+							["name"] = "Silkweave Hood",
+							["nextRecipeID"] = 208351,
+							["previousRecipeID"] = 185922,
+							["recipeID"] = 185938
+						},
+						{
+							["name"] = "Silkweave Hood",
+							["previousRecipeID"] = 185938,
+							["recipeID"] = 208351
+						},
+						{
+							["name"] = "Silkweave Pantaloons",
+							["nextRecipeID"] = 185937,
+							["recipeID"] = 185921
+						},
+						{
+							["name"] = "Silkweave Pantaloons",
+							["nextRecipeID"] = 208353,
+							["previousRecipeID"] = 185921,
+							["recipeID"] = 185937
+						},
+						{
+							["name"] = "Silkweave Pantaloons",
+							["previousRecipeID"] = 185937,
+							["recipeID"] = 208353
+						},
+						{
+							["name"] = "Silkweave Robe",
+							["nextRecipeID"] = 185941,
+							["recipeID"] = 185925
+						},
+						{
+							["name"] = "Silkweave Robe",
+							["nextRecipeID"] = 185945,
+							["previousRecipeID"] = 185925,
+							["recipeID"] = 185941
+						},
+						{
+							["name"] = "Silkweave Robe",
+							["previousRecipeID"] = 185941,
+							["recipeID"] = 185945
+						},
+						{
+							["name"] = "Silkweave Slippers",
+							["nextRecipeID"] = 185940,
+							["recipeID"] = 185924
+						},
+						{
+							["name"] = "Silkweave Slippers",
+							["nextRecipeID"] = 208352,
+							["previousRecipeID"] = 185924,
+							["recipeID"] = 185940
+						},
+						{
+							["name"] = "Silkweave Slippers",
+							["previousRecipeID"] = 185940,
+							["recipeID"] = 208352
 						}
 					}
 				},
 				{
-					["categoryID"] = 364--[[Dyes and Thread]],
+					["name"] = "Cloaks",
+					["categoryID"] = 431,
 					["g"] = {
 						{
-							["recipeID"] = 187516--[[Savage Hexweave Essence]]
+							["name"] = "Imbued Silkweave Cover",
+							["nextRecipeID"] = 186113,
+							["recipeID"] = 186112
 						},
 						{
-							["recipeID"] = 187492--[[Mighty Hexweave Essence]]
+							["name"] = "Imbued Silkweave Cover",
+							["nextRecipeID"] = 186114,
+							["previousRecipeID"] = 186112,
+							["recipeID"] = 186113
 						},
 						{
-							["recipeID"] = 168855--[[Hexweave Essence]]
+							["name"] = "Imbued Silkweave Cover",
+							["previousRecipeID"] = 186113,
+							["recipeID"] = 186114
 						},
 						{
-							["recipeID"] = 168836--[[Hexweave Embroidery]]
+							["name"] = "Imbued Silkweave Drape",
+							["nextRecipeID"] = 186116,
+							["recipeID"] = 186115
+						},
+						{
+							["name"] = "Imbued Silkweave Drape",
+							["nextRecipeID"] = 186117,
+							["previousRecipeID"] = 186115,
+							["recipeID"] = 186116
+						},
+						{
+							["name"] = "Imbued Silkweave Drape",
+							["previousRecipeID"] = 186116,
+							["recipeID"] = 186117
+						},
+						{
+							["name"] = "Imbued Silkweave Flourish",
+							["nextRecipeID"] = 186110,
+							["recipeID"] = 186109
+						},
+						{
+							["name"] = "Imbued Silkweave Flourish",
+							["nextRecipeID"] = 186111,
+							["previousRecipeID"] = 186109,
+							["recipeID"] = 186110
+						},
+						{
+							["name"] = "Imbued Silkweave Flourish",
+							["previousRecipeID"] = 186110,
+							["recipeID"] = 186111
+						},
+						{
+							["name"] = "Imbued Silkweave Shade",
+							["nextRecipeID"] = 186107,
+							["recipeID"] = 186106
+						},
+						{
+							["name"] = "Imbued Silkweave Shade",
+							["nextRecipeID"] = 186108,
+							["previousRecipeID"] = 186106,
+							["recipeID"] = 186107
+						},
+						{
+							["name"] = "Imbued Silkweave Shade",
+							["previousRecipeID"] = 186107,
+							["recipeID"] = 186108
+						},
+						{
+							["name"] = "Silkweave Cover",
+							["recipeID"] = 186097
+						},
+						{
+							["name"] = "Silkweave Drape",
+							["recipeID"] = 186100
+						},
+						{
+							["name"] = "Silkweave Flourish",
+							["recipeID"] = 186094
+						},
+						{
+							["name"] = "Silkweave Shade",
+							["recipeID"] = 186091
 						}
 					}
 				},
 				{
-					["categoryID"] = 363--[[Armor]],
+					["name"] = "Other",
+					["categoryID"] = 497,
 					["g"] = {
 						{
-							["recipeID"] = 168847--[[Brilliant Hexweave Cloak]]
+							["name"] = "Bloodtotem Saddle Blanket",
+							["recipeID"] = 220511
 						},
 						{
-							["recipeID"] = 168844--[[Hexweave Belt]]
+							["name"] = "Clothes Chest: Dalaran Citizens",
+							["recipeID"] = 213035
 						},
 						{
-							["recipeID"] = 168842--[[Hexweave Bracers]]
+							["name"] = "Clothes Chest: Karazhan Opera House",
+							["recipeID"] = 213036
 						},
 						{
-							["recipeID"] = 168838--[[Hexweave Cowl]]
+							["name"] = "Clothes Chest: Molten Core",
+							["recipeID"] = 213037
 						},
 						{
-							["recipeID"] = 168840--[[Hexweave Gloves]]
+							["name"] = "Imbued Silkweave Bag",
+							["nextRecipeID"] = 229043,
+							["recipeID"] = 229041
 						},
 						{
-							["recipeID"] = 168839--[[Hexweave Leggings]]
+							["name"] = "Imbued Silkweave Bag",
+							["nextRecipeID"] = 229045,
+							["previousRecipeID"] = 229041,
+							["recipeID"] = 229043
 						},
 						{
-							["recipeID"] = 168837--[[Hexweave Mantle]]
+							["name"] = "Imbued Silkweave Bag",
+							["previousRecipeID"] = 229043,
+							["recipeID"] = 229045
 						},
 						{
-							["recipeID"] = 168841--[[Hexweave Robe]]
-						},
-						{
-							["recipeID"] = 168843--[[Hexweave Slippers]]
-						},
-						{
-							["recipeID"] = 168846--[[Nimble Hexweave Cloak]]
-						},
-						{
-							["recipeID"] = 168845--[[Powerful Hexweave Cloak]]
-						},
-						{
-							["recipeID"] = 168852--[[Sumptuous Cowl]]
-						},
-						{
-							["recipeID"] = 168853--[[Sumptuous Robes]]
-						},
-						{
-							["recipeID"] = 168854--[[Sumptuous Leggings]]
+							["name"] = "Silkweave Satchel",
+							["recipeID"] = 186388
 						}
 					}
 				},
 				{
-					["categoryID"] = 367--[[Other]],
+					["name"] = "Cures of the Broken Isles",
+					["categoryID"] = 1088,
 					["g"] = {
 						{
-							["recipeID"] = 173415--[[Murloc Chew Toy]]
+							["name"] = "Feathered Luffa",
+							["recipeID"] = 230047
 						},
 						{
-							["recipeID"] = 168850--[[Creeping Carpet]]
+							["name"] = "Silkweave Bandage",
+							["recipeID"] = 202853
 						},
 						{
-							["recipeID"] = 168848--[[Hexweave Bag]]
-						},
-						{
-							["recipeID"] = 168849--[[Elekk Plushie]]
-						},
-						{
-							["recipeID"] = 168851--[[Miniature Flying Carpet]]
-						}
-					}
-				},
-				{
-					["categoryID"] = 1087--[[Cures of Draenor]],
-					["g"] = {
-						{
-							["recipeID"] = 172539--[[Antiseptic Bandage]]
+							["name"] = "Silkweave Splint",
+							["recipeID"] = 202854
 						}
 					}
 				}
 			}
 		},
 		{
-			["categoryID"] = 950--[[Pandaria Patterns]],
+			["name"] = "Draenor Patterns",
+			["categoryID"] = 369,
 			["g"] = {
 				{
-					["categoryID"] = 958--[[Materials]],
+					["name"] = "Battle Standards",
+					["categoryID"] = 400,
 					["g"] = {
 						{
-							["recipeID"] = 146925--[[Accelerated Celestial Cloth]]
+							["name"] = "Fearsome Battle Standard",
+							["recipeID"] = 176316
 						},
 						{
-							["recipeID"] = 143011--[[Celestial Cloth]]
+							["name"] = "Fearsome Battle Standard",
+							["recipeID"] = 176314
 						},
 						{
-							["recipeID"] = 130325--[[Song of Harmony]]
+							["name"] = "Inspiring Battle Standard",
+							["recipeID"] = 176315
 						},
 						{
-							["recipeID"] = 125557--[[Imperial Silk]]
-						},
-						{
-							["recipeID"] = 125551--[[Bolt of Windwool Cloth]]
+							["name"] = "Inspiring Battle Standard",
+							["recipeID"] = 176313
 						}
 					}
 				},
 				{
-					["categoryID"] = 959--[[Embroidery]],
+					["name"] = "Reagents and Research",
+					["categoryID"] = 366,
 					["g"] = {
 						{
-							["recipeID"] = 125496--[[Master's Spellthread]]
+							["name"] = "Hexweave Cloth",
+							["recipeID"] = 168835
 						},
 						{
-							["recipeID"] = 125497--[[Sanctified Spellthread]]
+							["name"] = "Hexweave Cloth",
+							["recipeID"] = 169669
+						},
+						{
+							["name"] = "Primal Weaving",
+							["recipeID"] = 182123
+						},
+						{
+							["name"] = "Secrets of Draenor Tailoring",
+							["recipeID"] = 176058
 						}
 					}
 				},
 				{
-					["categoryID"] = 960--[[Spellthreads]],
+					["name"] = "Dyes and Thread",
+					["categoryID"] = 364,
 					["g"] = {
 						{
-							["recipeID"] = 125555--[[Greater Cerulean Spellthread]]
+							["name"] = "Hexweave Embroidery",
+							["recipeID"] = 168836
 						},
 						{
-							["recipeID"] = 125554--[[Greater Pearlescent Spellthread]]
+							["name"] = "Hexweave Essence",
+							["recipeID"] = 168855
 						},
 						{
-							["recipeID"] = 125553--[[Cerulean Spellthread]]
+							["name"] = "Mighty Hexweave Essence",
+							["recipeID"] = 187492
 						},
 						{
-							["recipeID"] = 125552--[[Pearlescent Spellthread]]
+							["name"] = "Savage Hexweave Essence",
+							["recipeID"] = 187516
 						}
 					}
 				},
 				{
-					["categoryID"] = 961--[[Bags]],
+					["name"] = "Armor",
+					["categoryID"] = 363,
 					["g"] = {
 						{
-							["recipeID"] = 125556--[[Royal Satchel]]
+							["name"] = "Brilliant Hexweave Cloak",
+							["recipeID"] = 168847
+						},
+						{
+							["name"] = "Hexweave Belt",
+							["recipeID"] = 168844
+						},
+						{
+							["name"] = "Hexweave Bracers",
+							["recipeID"] = 168842
+						},
+						{
+							["name"] = "Hexweave Cowl",
+							["recipeID"] = 168838
+						},
+						{
+							["name"] = "Hexweave Gloves",
+							["recipeID"] = 168840
+						},
+						{
+							["name"] = "Hexweave Leggings",
+							["recipeID"] = 168839
+						},
+						{
+							["name"] = "Hexweave Mantle",
+							["recipeID"] = 168837
+						},
+						{
+							["name"] = "Hexweave Robe",
+							["recipeID"] = 168841
+						},
+						{
+							["name"] = "Hexweave Slippers",
+							["recipeID"] = 168843
+						},
+						{
+							["name"] = "Nimble Hexweave Cloak",
+							["recipeID"] = 168846
+						},
+						{
+							["name"] = "Powerful Hexweave Cloak",
+							["recipeID"] = 168845
+						},
+						{
+							["name"] = "Sumptuous Cowl",
+							["recipeID"] = 168852
+						},
+						{
+							["name"] = "Sumptuous Leggings",
+							["recipeID"] = 168854
+						},
+						{
+							["name"] = "Sumptuous Robes",
+							["recipeID"] = 168853
 						}
 					}
 				},
 				{
-					["categoryID"] = 962--[[Hats & Hoods]],
+					["name"] = "Other",
+					["categoryID"] = 367,
 					["g"] = {
 						{
-							["recipeID"] = 138598--[[Falling Blossom Cowl]]
+							["name"] = "Creeping Carpet",
+							["recipeID"] = 168850
 						},
 						{
-							["recipeID"] = 138600--[[Falling Blossom Hood]]
+							["name"] = "Elekk Plushie",
+							["recipeID"] = 168849
 						},
 						{
-							["recipeID"] = 125539--[[Contender's Satin Cowl]]
+							["name"] = "Hexweave Bag",
+							["recipeID"] = 168848
 						},
 						{
-							["recipeID"] = 125531--[[Contender's Silk Cowl]]
+							["name"] = "Miniature Flying Carpet",
+							["recipeID"] = 168851
 						},
 						{
-							["recipeID"] = 137939--[[Crafted Dreadful Gladiator's Felweave Cowl]]
-						},
-						{
-							["recipeID"] = 137927--[[Crafted Dreadful Gladiator's Mooncloth Helm]]
-						},
-						{
-							["recipeID"] = 137932--[[Crafted Dreadful Gladiator's Satin Hood]]
-						},
-						{
-							["recipeID"] = 137922--[[Crafted Dreadful Gladiator's Silk Cowl]]
-						},
-						{
-							["recipeID"] = 143085--[[Crafted Malevolent Gladiator's Felweave Cowl]]
-						},
-						{
-							["recipeID"] = 143073--[[Crafted Malevolent Gladiator's Mooncloth Helm]]
-						},
-						{
-							["recipeID"] = 143078--[[Crafted Malevolent Gladiator's Satin Hood]]
-						},
-						{
-							["recipeID"] = 143068--[[Crafted Malevolent Gladiator's Silk Cowl]]
-						},
-						{
-							["recipeID"] = 125523--[[Windwool Hood]]
+							["name"] = "Murloc Chew Toy",
+							["recipeID"] = 173415
 						}
 					}
 				},
 				{
-					["categoryID"] = 963--[[Shoulders]],
+					["name"] = "Cures of Draenor",
+					["categoryID"] = 1087,
 					["g"] = {
 						{
-							["recipeID"] = 125540--[[Contender's Satin Amice]]
-						},
-						{
-							["recipeID"] = 125532--[[Contender's Silk Amice]]
-						},
-						{
-							["recipeID"] = 137942--[[Crafted Dreadful Gladiator's Felweave Amice]]
-						},
-						{
-							["recipeID"] = 137930--[[Crafted Dreadful Gladiator's Mooncloth Mantle]]
-						},
-						{
-							["recipeID"] = 137935--[[Crafted Dreadful Gladiator's Satin Mantle]]
-						},
-						{
-							["recipeID"] = 137925--[[Crafted Dreadful Gladiator's Silk Amice]]
-						},
-						{
-							["recipeID"] = 143088--[[Crafted Malevolent Gladiator's Felweave Amice]]
-						},
-						{
-							["recipeID"] = 143076--[[Crafted Malevolent Gladiator's Mooncloth Mantle]]
-						},
-						{
-							["recipeID"] = 143081--[[Crafted Malevolent Gladiator's Satin Mantle]]
-						},
-						{
-							["recipeID"] = 143071--[[Crafted Malevolent Gladiator's Silk Amice]]
-						},
-						{
-							["recipeID"] = 125524--[[Windwool Shoulders]]
-						}
-					}
-				},
-				{
-					["categoryID"] = 964--[[Robes & Tunics]],
-					["g"] = {
-						{
-							["recipeID"] = 125541--[[Contender's Satin Raiment]]
-						},
-						{
-							["recipeID"] = 125533--[[Contender's Silk Raiment]]
-						},
-						{
-							["recipeID"] = 137941--[[Crafted Dreadful Gladiator's Felweave Raiment]]
-						},
-						{
-							["recipeID"] = 137929--[[Crafted Dreadful Gladiator's Mooncloth Robe]]
-						},
-						{
-							["recipeID"] = 137934--[[Crafted Dreadful Gladiator's Satin Robe]]
-						},
-						{
-							["recipeID"] = 137924--[[Crafted Dreadful Gladiator's Silk Robe]]
-						},
-						{
-							["recipeID"] = 143087--[[Crafted Malevolent Gladiator's Felweave Raiment]]
-						},
-						{
-							["recipeID"] = 143075--[[Crafted Malevolent Gladiator's Mooncloth Robe]]
-						},
-						{
-							["recipeID"] = 143080--[[Crafted Malevolent Gladiator's Satin Robe]]
-						},
-						{
-							["recipeID"] = 143070--[[Crafted Malevolent Gladiator's Silk Robe]]
-						},
-						{
-							["recipeID"] = 125560--[[Legacy of the Emperor]]
-						},
-						{
-							["recipeID"] = 125558--[[Robe of Eternal Rule]]
-						},
-						{
-							["recipeID"] = 125549--[[Robes of Creation]]
-						},
-						{
-							["recipeID"] = 125547--[[Spelltwister's Grand Robe]]
-						},
-						{
-							["recipeID"] = 125525--[[Windwool Tunic]]
-						}
-					}
-				},
-				{
-					["categoryID"] = 965--[[Bracers]],
-					["g"] = {
-						{
-							["recipeID"] = 125544--[[Contender's Satin Cuffs]]
-						},
-						{
-							["recipeID"] = 125536--[[Contender's Silk Cuffs]]
-						},
-						{
-							["recipeID"] = 137915--[[Crafted Dreadful Gladiator's Cuffs of Accuracy]]
-						},
-						{
-							["recipeID"] = 137917--[[Crafted Dreadful Gladiator's Cuffs of Meditation]]
-						},
-						{
-							["recipeID"] = 137916--[[Crafted Dreadful Gladiator's Cuffs of Prowess]]
-						},
-						{
-							["recipeID"] = 143061--[[Crafted Malevolent Gladiator's Cuffs of Accuracy]]
-						},
-						{
-							["recipeID"] = 143063--[[Crafted Malevolent Gladiator's Cuffs of Meditation]]
-						},
-						{
-							["recipeID"] = 143062--[[Crafted Malevolent Gladiator's Cuffs of Prowess]]
-						},
-						{
-							["recipeID"] = 125528--[[Windwool Bracers]]
-						}
-					}
-				},
-				{
-					["categoryID"] = 966--[[Belts]],
-					["g"] = {
-						{
-							["recipeID"] = 142964--[[Belt of the Night Sky]]
-						},
-						{
-							["recipeID"] = 142960--[[White Cloud Belt]]
-						},
-						{
-							["recipeID"] = 125546--[[Contender's Satin Belt]]
-						},
-						{
-							["recipeID"] = 125538--[[Contender's Silk Belt]]
-						},
-						{
-							["recipeID"] = 137910--[[Crafted Dreadful Gladiator's Cord of Accuracy]]
-						},
-						{
-							["recipeID"] = 137909--[[Crafted Dreadful Gladiator's Cord of Cruelty]]
-						},
-						{
-							["recipeID"] = 137911--[[Crafted Dreadful Gladiator's Cord of Meditation]]
-						},
-						{
-							["recipeID"] = 143056--[[Crafted Malevolent Gladiator's Cord of Accuracy]]
-						},
-						{
-							["recipeID"] = 143055--[[Crafted Malevolent Gladiator's Cord of Cruelty]]
-						},
-						{
-							["recipeID"] = 143057--[[Crafted Malevolent Gladiator's Cord of Meditation]]
-						},
-						{
-							["recipeID"] = 125530--[[Windwool Belt]]
-						}
-					}
-				},
-				{
-					["categoryID"] = 967--[[Gloves]],
-					["g"] = {
-						{
-							["recipeID"] = 125542--[[Contender's Satin Handwraps]]
-						},
-						{
-							["recipeID"] = 125534--[[Contender's Silk Handwraps]]
-						},
-						{
-							["recipeID"] = 137938--[[Crafted Dreadful Gladiator's Felweave Handguards]]
-						},
-						{
-							["recipeID"] = 137926--[[Crafted Dreadful Gladiator's Mooncloth Gloves]]
-						},
-						{
-							["recipeID"] = 137931--[[Crafted Dreadful Gladiator's Satin Gloves]]
-						},
-						{
-							["recipeID"] = 137921--[[Crafted Dreadful Gladiator's Silk Handguards]]
-						},
-						{
-							["recipeID"] = 143084--[[Crafted Malevolent Gladiator's Felweave Handguards]]
-						},
-						{
-							["recipeID"] = 143072--[[Crafted Malevolent Gladiator's Mooncloth Gloves]]
-						},
-						{
-							["recipeID"] = 143077--[[Crafted Malevolent Gladiator's Satin Gloves]]
-						},
-						{
-							["recipeID"] = 143067--[[Crafted Malevolent Gladiator's Silk Handguards]]
-						},
-						{
-							["recipeID"] = 125550--[[Gloves of Creation]]
-						},
-						{
-							["recipeID"] = 125559--[[Imperial Silk Gloves]]
-						},
-						{
-							["recipeID"] = 125548--[[Spelltwister's Gloves]]
-						},
-						{
-							["recipeID"] = 125561--[[Touch of the Light]]
-						},
-						{
-							["recipeID"] = 125526--[[Windwool Gloves]]
-						},
-						{
-							["recipeID"] = 134585--[[Bipsi's Gloves]]
-						}
-					}
-				},
-				{
-					["categoryID"] = 968--[[Pants]],
-					["g"] = {
-						{
-							["recipeID"] = 142955--[[Leggings of the Night Sky]]
-						},
-						{
-							["recipeID"] = 142951--[[White Cloud Leggings]]
-						},
-						{
-							["recipeID"] = 125543--[[Contender's Satin Pants]]
-						},
-						{
-							["recipeID"] = 125535--[[Contender's Silk Pants]]
-						},
-						{
-							["recipeID"] = 137940--[[Crafted Dreadful Gladiator's Felweave Trousers]]
-						},
-						{
-							["recipeID"] = 137928--[[Crafted Dreadful Gladiator's Mooncloth Leggings]]
-						},
-						{
-							["recipeID"] = 137933--[[Crafted Dreadful Gladiator's Satin Leggings]]
-						},
-						{
-							["recipeID"] = 137923--[[Crafted Dreadful Gladiator's Silk Trousers]]
-						},
-						{
-							["recipeID"] = 143086--[[Crafted Malevolent Gladiator's Felweave Trousers]]
-						},
-						{
-							["recipeID"] = 143074--[[Crafted Malevolent Gladiator's Mooncloth Leggings]]
-						},
-						{
-							["recipeID"] = 143079--[[Crafted Malevolent Gladiator's Satin Leggings]]
-						},
-						{
-							["recipeID"] = 143069--[[Crafted Malevolent Gladiator's Silk Trousers]]
-						},
-						{
-							["recipeID"] = 125527--[[Windwool Pants]]
-						}
-					}
-				},
-				{
-					["categoryID"] = 969--[[Boots]],
-					["g"] = {
-						{
-							["recipeID"] = 138599--[[Falling Blossom Sandals]]
-						},
-						{
-							["recipeID"] = 138597--[[Falling Blossom Treads]]
-						},
-						{
-							["recipeID"] = 125545--[[Contender's Satin Footwraps]]
-						},
-						{
-							["recipeID"] = 125537--[[Contender's Silk Footwraps]]
-						},
-						{
-							["recipeID"] = 137913--[[Crafted Dreadful Gladiator's Treads of Alacrity]]
-						},
-						{
-							["recipeID"] = 137912--[[Crafted Dreadful Gladiator's Treads of Cruelty]]
-						},
-						{
-							["recipeID"] = 137914--[[Crafted Dreadful Gladiator's Treads of Meditation]]
-						},
-						{
-							["recipeID"] = 143059--[[Crafted Malevolent Gladiator's Treads of Alacrity]]
-						},
-						{
-							["recipeID"] = 143058--[[Crafted Malevolent Gladiator's Treads of Cruelty]]
-						},
-						{
-							["recipeID"] = 143060--[[Crafted Malevolent Gladiator's Treads of Meditation]]
-						},
-						{
-							["recipeID"] = 125529--[[Windwool Boots]]
-						}
-					}
-				},
-				{
-					["categoryID"] = 970--[[Cloaks]],
-					["g"] = {
-						{
-							["recipeID"] = 137907--[[Crafted Dreadful Gladiator's Cape of Cruelty]]
-						},
-						{
-							["recipeID"] = 137908--[[Crafted Dreadful Gladiator's Cape of Prowess]]
-						},
-						{
-							["recipeID"] = 137936--[[Crafted Dreadful Gladiator's Cloak of Alacrity]]
-						},
-						{
-							["recipeID"] = 137937--[[Crafted Dreadful Gladiator's Cloak of Prowess]]
-						},
-						{
-							["recipeID"] = 137918--[[Crafted Dreadful Gladiator's Drape of Cruelty]]
-						},
-						{
-							["recipeID"] = 137920--[[Crafted Dreadful Gladiator's Drape of Meditation]]
-						},
-						{
-							["recipeID"] = 137919--[[Crafted Dreadful Gladiator's Drape of Prowess]]
-						},
-						{
-							["recipeID"] = 143053--[[Crafted Malevolent Gladiator's Cape of Cruelty]]
-						},
-						{
-							["recipeID"] = 143054--[[Crafted Malevolent Gladiator's Cape of Prowess]]
-						},
-						{
-							["recipeID"] = 143082--[[Crafted Malevolent Gladiator's Cloak of Alacrity]]
-						},
-						{
-							["recipeID"] = 143083--[[Crafted Malevolent Gladiator's Cloak of Prowess]]
-						},
-						{
-							["recipeID"] = 143064--[[Crafted Malevolent Gladiator's Drape of Cruelty]]
-						},
-						{
-							["recipeID"] = 143066--[[Crafted Malevolent Gladiator's Drape of Meditation]]
-						},
-						{
-							["recipeID"] = 143065--[[Crafted Malevolent Gladiator's Drape of Prowess]]
-						}
-					}
-				},
-				{
-					["categoryID"] = 1093--[[Bandages]],
-					["g"] = {
-						{
-							["recipeID"] = 102698--[[Heavy Windwool Bandage]]
-						},
-						{
-							["recipeID"] = 102697--[[Windwool Bandage]]
+							["name"] = "Antiseptic Bandage",
+							["recipeID"] = 172539
 						}
 					}
 				}
 			}
 		},
 		{
-			["categoryID"] = 952--[[Cataclysm Patterns]],
+			["name"] = "Pandaria Patterns",
+			["categoryID"] = 950,
 			["g"] = {
 				{
-					["categoryID"] = 972--[[Materials]],
+					["name"] = "Materials",
+					["categoryID"] = 958,
 					["g"] = {
 						{
-							["recipeID"] = 75146--[[Dream of Azshara]]
+							["name"] = "Accelerated Celestial Cloth",
+							["recipeID"] = 146925
 						},
 						{
-							["recipeID"] = 75142--[[Dream of Deepholm]]
+							["name"] = "Bolt of Windwool Cloth",
+							["recipeID"] = 125551
 						},
 						{
-							["recipeID"] = 94743--[[Dream of Destruction]]
+							["name"] = "Celestial Cloth",
+							["recipeID"] = 143011
 						},
 						{
-							["recipeID"] = 75144--[[Dream of Hyjal]]
+							["name"] = "Imperial Silk",
+							["recipeID"] = 125557
 						},
 						{
-							["recipeID"] = 75145--[[Dream of Ragnaros]]
-						},
-						{
-							["recipeID"] = 75141--[[Dream of Skywall]]
-						},
-						{
-							["recipeID"] = 74964--[[Bolt of Embersilk Cloth]]
+							["name"] = "Song of Harmony",
+							["recipeID"] = 130325
 						}
 					}
 				},
 				{
-					["categoryID"] = 973--[[Spellthreads]],
+					["name"] = "Embroidery",
+					["categoryID"] = 959,
 					["g"] = {
 						{
-							["recipeID"] = 75310--[[Powerful Ghostly Spellthread]]
+							["name"] = "Master's Spellthread",
+							["recipeID"] = 125496
 						},
 						{
-							["recipeID"] = 75309--[[Powerful Enchanted Spellthread]]
-						},
-						{
-							["recipeID"] = 75255--[[Ghostly Spellthread]]
-						},
-						{
-							["recipeID"] = 75250--[[Enchanted Spellthread]]
+							["name"] = "Sanctified Spellthread",
+							["recipeID"] = 125497
 						}
 					}
 				},
 				{
-					["categoryID"] = 974--[[Bags]],
+					["name"] = "Spellthreads",
+					["categoryID"] = 960,
 					["g"] = {
 						{
-							["recipeID"] = 75308--[[Illusionary Bag]]
+							["name"] = "Cerulean Spellthread",
+							["recipeID"] = 125553
 						},
 						{
-							["recipeID"] = 75268--[[Hyjal Expedition Bag]]
+							["name"] = "Greater Cerulean Spellthread",
+							["recipeID"] = 125555
 						},
 						{
-							["recipeID"] = 100585--[[Luxurious Silk Gem Bag]]
+							["name"] = "Greater Pearlescent Spellthread",
+							["recipeID"] = 125554
 						},
 						{
-							["recipeID"] = 75264--[[Embersilk Bag]]
-						},
-						{
-							["recipeID"] = 75265--[[Otherworldly Bag]]
+							["name"] = "Pearlescent Spellthread",
+							["recipeID"] = 125552
 						}
 					}
 				},
 				{
-					["categoryID"] = 975--[[Hats & Hoods]],
+					["name"] = "Bags",
+					["categoryID"] = 961,
 					["g"] = {
 						{
-							["recipeID"] = 75306--[[Vicious Embersilk Cowl]]
-						},
-						{
-							["recipeID"] = 75304--[[Vicious Fireweave Cowl]]
-						},
-						{
-							["recipeID"] = 75289--[[High Society Top Hat]]
-						},
-						{
-							["recipeID"] = 75266--[[Spiritmend Cowl]]
-						},
-						{
-							["recipeID"] = 75256--[[Deathsilk Cowl]]
+							["name"] = "Royal Satchel",
+							["recipeID"] = 125556
 						}
 					}
 				},
 				{
-					["categoryID"] = 976--[[Shoulders]],
+					["name"] = "Hats & Hoods",
+					["categoryID"] = 962,
 					["g"] = {
 						{
-							["recipeID"] = 75292--[[Vicious Fireweave Shoulders]]
+							["name"] = "Contender's Satin Cowl",
+							["recipeID"] = 125539
 						},
 						{
-							["recipeID"] = 75291--[[Vicious Embersilk Shoulders]]
+							["name"] = "Contender's Silk Cowl",
+							["recipeID"] = 125531
 						},
 						{
-							["recipeID"] = 75260--[[Spiritmend Shoulders]]
+							["name"] = "Crafted Dreadful Gladiator's Felweave Cowl",
+							["recipeID"] = 137939
 						},
 						{
-							["recipeID"] = 75251--[[Deathsilk Shoulders]]
+							["name"] = "Crafted Dreadful Gladiator's Mooncloth Helm",
+							["recipeID"] = 137927
+						},
+						{
+							["name"] = "Crafted Dreadful Gladiator's Satin Hood",
+							["recipeID"] = 137932
+						},
+						{
+							["name"] = "Crafted Dreadful Gladiator's Silk Cowl",
+							["recipeID"] = 137922
+						},
+						{
+							["name"] = "Crafted Malevolent Gladiator's Felweave Cowl",
+							["recipeID"] = 143085
+						},
+						{
+							["name"] = "Crafted Malevolent Gladiator's Mooncloth Helm",
+							["recipeID"] = 143073
+						},
+						{
+							["name"] = "Crafted Malevolent Gladiator's Satin Hood",
+							["recipeID"] = 143078
+						},
+						{
+							["name"] = "Crafted Malevolent Gladiator's Silk Cowl",
+							["recipeID"] = 143068
+						},
+						{
+							["name"] = "Falling Blossom Cowl",
+							["recipeID"] = 138598
+						},
+						{
+							["name"] = "Falling Blossom Hood",
+							["recipeID"] = 138600
+						},
+						{
+							["name"] = "Windwool Hood",
+							["recipeID"] = 125523
 						}
 					}
 				},
 				{
-					["categoryID"] = 977--[[Robes & Tunics]],
+					["name"] = "Shoulders",
+					["categoryID"] = 963,
 					["g"] = {
 						{
-							["recipeID"] = 75305--[[Vicious Embersilk Robe]]
+							["name"] = "Contender's Satin Amice",
+							["recipeID"] = 125540
 						},
 						{
-							["recipeID"] = 75303--[[Vicious Fireweave Robe]]
+							["name"] = "Contender's Silk Amice",
+							["recipeID"] = 125532
 						},
 						{
-							["recipeID"] = 75288--[[Black Embersilk Gown]]
+							["name"] = "Crafted Dreadful Gladiator's Felweave Amice",
+							["recipeID"] = 137942
 						},
 						{
-							["recipeID"] = 75267--[[Spiritmend Robe]]
+							["name"] = "Crafted Dreadful Gladiator's Mooncloth Mantle",
+							["recipeID"] = 137930
 						},
 						{
-							["recipeID"] = 75257--[[Deathsilk Robe]]
+							["name"] = "Crafted Dreadful Gladiator's Satin Mantle",
+							["recipeID"] = 137935
+						},
+						{
+							["name"] = "Crafted Dreadful Gladiator's Silk Amice",
+							["recipeID"] = 137925
+						},
+						{
+							["name"] = "Crafted Malevolent Gladiator's Felweave Amice",
+							["recipeID"] = 143088
+						},
+						{
+							["name"] = "Crafted Malevolent Gladiator's Mooncloth Mantle",
+							["recipeID"] = 143076
+						},
+						{
+							["name"] = "Crafted Malevolent Gladiator's Satin Mantle",
+							["recipeID"] = 143081
+						},
+						{
+							["name"] = "Crafted Malevolent Gladiator's Silk Amice",
+							["recipeID"] = 143071
+						},
+						{
+							["name"] = "Windwool Shoulders",
+							["recipeID"] = 125524
 						}
 					}
 				},
 				{
-					["categoryID"] = 978--[[Bracers]],
+					["name"] = "Robes & Tunics",
+					["categoryID"] = 964,
 					["g"] = {
 						{
-							["recipeID"] = 101923--[[Bracers of Unconquered Power]]
+							["name"] = "Contender's Satin Raiment",
+							["recipeID"] = 125541
 						},
 						{
-							["recipeID"] = 101922--[[Dreamwraps of the Light]]
+							["name"] = "Contender's Silk Raiment",
+							["recipeID"] = 125533
 						},
 						{
-							["recipeID"] = 75270--[[Vicious Embersilk Bracers]]
+							["name"] = "Crafted Dreadful Gladiator's Felweave Raiment",
+							["recipeID"] = 137941
 						},
 						{
-							["recipeID"] = 75290--[[Vicious Fireweave Bracers]]
+							["name"] = "Crafted Dreadful Gladiator's Mooncloth Robe",
+							["recipeID"] = 137929
 						},
 						{
-							["recipeID"] = 75259--[[Spiritmend Bracers]]
+							["name"] = "Crafted Dreadful Gladiator's Satin Robe",
+							["recipeID"] = 137934
 						},
 						{
-							["recipeID"] = 75249--[[Deathsilk Bracers]]
+							["name"] = "Crafted Dreadful Gladiator's Silk Robe",
+							["recipeID"] = 137924
+						},
+						{
+							["name"] = "Crafted Malevolent Gladiator's Felweave Raiment",
+							["recipeID"] = 143087
+						},
+						{
+							["name"] = "Crafted Malevolent Gladiator's Mooncloth Robe",
+							["recipeID"] = 143075
+						},
+						{
+							["name"] = "Crafted Malevolent Gladiator's Satin Robe",
+							["recipeID"] = 143080
+						},
+						{
+							["name"] = "Crafted Malevolent Gladiator's Silk Robe",
+							["recipeID"] = 143070
+						},
+						{
+							["name"] = "Legacy of the Emperor",
+							["recipeID"] = 125560
+						},
+						{
+							["name"] = "Robe of Eternal Rule",
+							["recipeID"] = 125558
+						},
+						{
+							["name"] = "Robes of Creation",
+							["recipeID"] = 125549
+						},
+						{
+							["name"] = "Spelltwister's Grand Robe",
+							["recipeID"] = 125547
+						},
+						{
+							["name"] = "Windwool Tunic",
+							["recipeID"] = 125525
 						}
 					}
 				},
 				{
-					["categoryID"] = 979--[[Belts]],
+					["name"] = "Bracers",
+					["categoryID"] = 965,
 					["g"] = {
 						{
-							["recipeID"] = 75298--[[Belt of the Depths]]
+							["name"] = "Contender's Satin Cuffs",
+							["recipeID"] = 125544
 						},
 						{
-							["recipeID"] = 75299--[[Dreamless Belt]]
+							["name"] = "Contender's Silk Cuffs",
+							["recipeID"] = 125536
 						},
 						{
-							["recipeID"] = 75293--[[Vicious Embersilk Belt]]
+							["name"] = "Crafted Dreadful Gladiator's Cuffs of Accuracy",
+							["recipeID"] = 137915
 						},
 						{
-							["recipeID"] = 75269--[[Vicious Fireweave Belt]]
+							["name"] = "Crafted Dreadful Gladiator's Cuffs of Meditation",
+							["recipeID"] = 137917
 						},
 						{
-							["recipeID"] = 75258--[[Spiritmend Belt]]
+							["name"] = "Crafted Dreadful Gladiator's Cuffs of Prowess",
+							["recipeID"] = 137916
 						},
 						{
-							["recipeID"] = 75248--[[Deathsilk Belt]]
+							["name"] = "Crafted Malevolent Gladiator's Cuffs of Accuracy",
+							["recipeID"] = 143061
+						},
+						{
+							["name"] = "Crafted Malevolent Gladiator's Cuffs of Meditation",
+							["recipeID"] = 143063
+						},
+						{
+							["name"] = "Crafted Malevolent Gladiator's Cuffs of Prowess",
+							["recipeID"] = 143062
+						},
+						{
+							["name"] = "Windwool Bracers",
+							["recipeID"] = 125528
 						}
 					}
 				},
 				{
-					["categoryID"] = 980--[[Gloves]],
+					["name"] = "Belts",
+					["categoryID"] = 966,
 					["g"] = {
 						{
-							["recipeID"] = 99449--[[Don Tayo's Inferno Mittens]]
+							["name"] = "Belt of the Night Sky",
+							["recipeID"] = 142964
 						},
 						{
-							["recipeID"] = 99448--[[Grips of Altered Reality]]
+							["name"] = "Contender's Satin Belt",
+							["recipeID"] = 125546
 						},
 						{
-							["recipeID"] = 75295--[[Vicious Embersilk Gloves]]
+							["name"] = "Contender's Silk Belt",
+							["recipeID"] = 125538
 						},
 						{
-							["recipeID"] = 75296--[[Vicious Fireweave Gloves]]
+							["name"] = "Crafted Dreadful Gladiator's Cord of Accuracy",
+							["recipeID"] = 137910
 						},
 						{
-							["recipeID"] = 75262--[[Spiritmend Gloves]]
+							["name"] = "Crafted Dreadful Gladiator's Cord of Cruelty",
+							["recipeID"] = 137909
 						},
 						{
-							["recipeID"] = 75253--[[Deathsilk Gloves]]
+							["name"] = "Crafted Dreadful Gladiator's Cord of Meditation",
+							["recipeID"] = 137911
+						},
+						{
+							["name"] = "Crafted Malevolent Gladiator's Cord of Accuracy",
+							["recipeID"] = 143056
+						},
+						{
+							["name"] = "Crafted Malevolent Gladiator's Cord of Cruelty",
+							["recipeID"] = 143055
+						},
+						{
+							["name"] = "Crafted Malevolent Gladiator's Cord of Meditation",
+							["recipeID"] = 143057
+						},
+						{
+							["name"] = "White Cloud Belt",
+							["recipeID"] = 142960
+						},
+						{
+							["name"] = "Windwool Belt",
+							["recipeID"] = 125530
 						}
 					}
 				},
 				{
-					["categoryID"] = 981--[[Pants]],
+					["name"] = "Gloves",
+					["categoryID"] = 967,
 					["g"] = {
 						{
-							["recipeID"] = 101921--[[Lavaquake Legwraps]]
+							["name"] = "Bipsi's Gloves",
+							["recipeID"] = 134585
 						},
 						{
-							["recipeID"] = 101920--[[World Mender's Pants]]
+							["name"] = "Contender's Satin Handwraps",
+							["recipeID"] = 125542
 						},
 						{
-							["recipeID"] = 75300--[[Breeches of Mended Nightmares]]
+							["name"] = "Contender's Silk Handwraps",
+							["recipeID"] = 125534
 						},
 						{
-							["recipeID"] = 75301--[[Flame-Ascended Pantaloons]]
+							["name"] = "Crafted Dreadful Gladiator's Felweave Handguards",
+							["recipeID"] = 137938
 						},
 						{
-							["recipeID"] = 75307--[[Vicious Embersilk Pants]]
+							["name"] = "Crafted Dreadful Gladiator's Mooncloth Gloves",
+							["recipeID"] = 137926
 						},
 						{
-							["recipeID"] = 75302--[[Vicious Fireweave Pants]]
+							["name"] = "Crafted Dreadful Gladiator's Satin Gloves",
+							["recipeID"] = 137931
 						},
 						{
-							["recipeID"] = 75263--[[Spiritmend Leggings]]
+							["name"] = "Crafted Dreadful Gladiator's Silk Handguards",
+							["recipeID"] = 137921
 						},
 						{
-							["recipeID"] = 75254--[[Deathsilk Leggings]]
+							["name"] = "Crafted Malevolent Gladiator's Felweave Handguards",
+							["recipeID"] = 143084
+						},
+						{
+							["name"] = "Crafted Malevolent Gladiator's Mooncloth Gloves",
+							["recipeID"] = 143072
+						},
+						{
+							["name"] = "Crafted Malevolent Gladiator's Satin Gloves",
+							["recipeID"] = 143077
+						},
+						{
+							["name"] = "Crafted Malevolent Gladiator's Silk Handguards",
+							["recipeID"] = 143067
+						},
+						{
+							["name"] = "Gloves of Creation",
+							["recipeID"] = 125550
+						},
+						{
+							["name"] = "Imperial Silk Gloves",
+							["recipeID"] = 125559
+						},
+						{
+							["name"] = "Spelltwister's Gloves",
+							["recipeID"] = 125548
+						},
+						{
+							["name"] = "Touch of the Light",
+							["recipeID"] = 125561
+						},
+						{
+							["name"] = "Windwool Gloves",
+							["recipeID"] = 125526
 						}
 					}
 				},
 				{
-					["categoryID"] = 982--[[Boots]],
+					["name"] = "Pants",
+					["categoryID"] = 968,
 					["g"] = {
 						{
-							["recipeID"] = 99460--[[Boots of the Black Flame]]
+							["name"] = "Contender's Satin Pants",
+							["recipeID"] = 125543
 						},
 						{
-							["recipeID"] = 99459--[[Endless Dream Walkers]]
+							["name"] = "Contender's Silk Pants",
+							["recipeID"] = 125535
 						},
 						{
-							["recipeID"] = 75297--[[Vicious Embersilk Boots]]
+							["name"] = "Crafted Dreadful Gladiator's Felweave Trousers",
+							["recipeID"] = 137940
 						},
 						{
-							["recipeID"] = 75294--[[Vicious Fireweave Boots]]
+							["name"] = "Crafted Dreadful Gladiator's Mooncloth Leggings",
+							["recipeID"] = 137928
 						},
 						{
-							["recipeID"] = 75261--[[Spiritmend Boots]]
+							["name"] = "Crafted Dreadful Gladiator's Satin Leggings",
+							["recipeID"] = 137933
 						},
 						{
-							["recipeID"] = 75252--[[Deathsilk Boots]]
+							["name"] = "Crafted Dreadful Gladiator's Silk Trousers",
+							["recipeID"] = 137923
+						},
+						{
+							["name"] = "Crafted Malevolent Gladiator's Felweave Trousers",
+							["recipeID"] = 143086
+						},
+						{
+							["name"] = "Crafted Malevolent Gladiator's Mooncloth Leggings",
+							["recipeID"] = 143074
+						},
+						{
+							["name"] = "Crafted Malevolent Gladiator's Satin Leggings",
+							["recipeID"] = 143079
+						},
+						{
+							["name"] = "Crafted Malevolent Gladiator's Silk Trousers",
+							["recipeID"] = 143069
+						},
+						{
+							["name"] = "Leggings of the Night Sky",
+							["recipeID"] = 142955
+						},
+						{
+							["name"] = "White Cloud Leggings",
+							["recipeID"] = 142951
+						},
+						{
+							["name"] = "Windwool Pants",
+							["recipeID"] = 125527
 						}
 					}
 				},
 				{
-					["categoryID"] = 983--[[Cloaks]],
+					["name"] = "Boots",
+					["categoryID"] = 969,
 					["g"] = {
 						{
-							["recipeID"] = 99537--[[Vicious Embersilk Cape]]
+							["name"] = "Contender's Satin Footwraps",
+							["recipeID"] = 125545
+						},
+						{
+							["name"] = "Contender's Silk Footwraps",
+							["recipeID"] = 125537
+						},
+						{
+							["name"] = "Crafted Dreadful Gladiator's Treads of Alacrity",
+							["recipeID"] = 137913
+						},
+						{
+							["name"] = "Crafted Dreadful Gladiator's Treads of Cruelty",
+							["recipeID"] = 137912
+						},
+						{
+							["name"] = "Crafted Dreadful Gladiator's Treads of Meditation",
+							["recipeID"] = 137914
+						},
+						{
+							["name"] = "Crafted Malevolent Gladiator's Treads of Alacrity",
+							["recipeID"] = 143059
+						},
+						{
+							["name"] = "Crafted Malevolent Gladiator's Treads of Cruelty",
+							["recipeID"] = 143058
+						},
+						{
+							["name"] = "Crafted Malevolent Gladiator's Treads of Meditation",
+							["recipeID"] = 143060
+						},
+						{
+							["name"] = "Falling Blossom Sandals",
+							["recipeID"] = 138599
+						},
+						{
+							["name"] = "Falling Blossom Treads",
+							["recipeID"] = 138597
+						},
+						{
+							["name"] = "Windwool Boots",
+							["recipeID"] = 125529
 						}
 					}
 				},
 				{
-					["categoryID"] = 984--[[Nets]],
+					["name"] = "Cloaks",
+					["categoryID"] = 970,
 					["g"] = {
 						{
-							["recipeID"] = 75247--[[Embersilk Net]]
+							["name"] = "Crafted Dreadful Gladiator's Cape of Cruelty",
+							["recipeID"] = 137907
+						},
+						{
+							["name"] = "Crafted Dreadful Gladiator's Cape of Prowess",
+							["recipeID"] = 137908
+						},
+						{
+							["name"] = "Crafted Dreadful Gladiator's Cloak of Alacrity",
+							["recipeID"] = 137936
+						},
+						{
+							["name"] = "Crafted Dreadful Gladiator's Cloak of Prowess",
+							["recipeID"] = 137937
+						},
+						{
+							["name"] = "Crafted Dreadful Gladiator's Drape of Cruelty",
+							["recipeID"] = 137918
+						},
+						{
+							["name"] = "Crafted Dreadful Gladiator's Drape of Meditation",
+							["recipeID"] = 137920
+						},
+						{
+							["name"] = "Crafted Dreadful Gladiator's Drape of Prowess",
+							["recipeID"] = 137919
+						},
+						{
+							["name"] = "Crafted Malevolent Gladiator's Cape of Cruelty",
+							["recipeID"] = 143053
+						},
+						{
+							["name"] = "Crafted Malevolent Gladiator's Cape of Prowess",
+							["recipeID"] = 143054
+						},
+						{
+							["name"] = "Crafted Malevolent Gladiator's Cloak of Alacrity",
+							["recipeID"] = 143082
+						},
+						{
+							["name"] = "Crafted Malevolent Gladiator's Cloak of Prowess",
+							["recipeID"] = 143083
+						},
+						{
+							["name"] = "Crafted Malevolent Gladiator's Drape of Cruelty",
+							["recipeID"] = 143064
+						},
+						{
+							["name"] = "Crafted Malevolent Gladiator's Drape of Meditation",
+							["recipeID"] = 143066
+						},
+						{
+							["name"] = "Crafted Malevolent Gladiator's Drape of Prowess",
+							["recipeID"] = 143065
 						}
 					}
 				},
 				{
-					["categoryID"] = 1092--[[Bandages]],
+					["name"] = "Bandages",
+					["categoryID"] = 1093,
 					["g"] = {
 						{
-							["recipeID"] = 74557--[[Heavy Embersilk Bandage]]
+							["name"] = "Heavy Windwool Bandage",
+							["recipeID"] = 102698
 						},
 						{
-							["recipeID"] = 88893--[[Dense Embersilk Bandage]]
-						},
-						{
-							["recipeID"] = 74558--[[Field Bandage: Dense Embersilk]]
-						},
-						{
-							["recipeID"] = 74556--[[Embersilk Bandage]]
+							["name"] = "Windwool Bandage",
+							["recipeID"] = 102697
 						}
 					}
 				}
 			}
 		},
 		{
-			["categoryID"] = 954--[[Northrend Patterns]],
+			["name"] = "Cataclysm Patterns",
+			["categoryID"] = 952,
 			["g"] = {
 				{
-					["categoryID"] = 985--[[Materials]],
+					["name"] = "Materials",
+					["categoryID"] = 972,
 					["g"] = {
 						{
-							["recipeID"] = 56002--[[Ebonweave]]
+							["name"] = "Bolt of Embersilk Cloth",
+							["recipeID"] = 74964
 						},
 						{
-							["recipeID"] = 56001--[[Moonshroud]]
+							["name"] = "Dream of Azshara",
+							["recipeID"] = 75146
 						},
 						{
-							["recipeID"] = 56003--[[Spellweave]]
+							["name"] = "Dream of Deepholm",
+							["recipeID"] = 75142
 						},
 						{
-							["recipeID"] = 55900--[[Bolt of Imbued Frostweave]]
+							["name"] = "Dream of Destruction",
+							["recipeID"] = 94743
 						},
 						{
-							["recipeID"] = 55899--[[Bolt of Frostweave]]
+							["name"] = "Dream of Hyjal",
+							["recipeID"] = 75144
+						},
+						{
+							["name"] = "Dream of Ragnaros",
+							["recipeID"] = 75145
+						},
+						{
+							["name"] = "Dream of Skywall",
+							["recipeID"] = 75141
 						}
 					}
 				},
 				{
-					["categoryID"] = 986--[[Spellthread]],
+					["name"] = "Spellthreads",
+					["categoryID"] = 973,
 					["g"] = {
 						{
-							["recipeID"] = 56009--[[Brilliant Spellthread]]
+							["name"] = "Enchanted Spellthread",
+							["recipeID"] = 75250
 						},
 						{
-							["recipeID"] = 56011--[[Sapphire Spellthread]]
+							["name"] = "Ghostly Spellthread",
+							["recipeID"] = 75255
 						},
 						{
-							["recipeID"] = 56010--[[Azure Spellthread]]
+							["name"] = "Powerful Enchanted Spellthread",
+							["recipeID"] = 75309
 						},
 						{
-							["recipeID"] = 56008--[[Shining Spellthread]]
+							["name"] = "Powerful Ghostly Spellthread",
+							["recipeID"] = 75310
 						}
 					}
 				},
 				{
-					["categoryID"] = 987--[[Bags]],
+					["name"] = "Bags",
+					["categoryID"] = 974,
 					["g"] = {
 						{
-							["recipeID"] = 56004--[[Abyssal Bag]]
+							["name"] = "Embersilk Bag",
+							["recipeID"] = 75264
 						},
 						{
-							["recipeID"] = 63924--[[Emerald Bag]]
+							["name"] = "Hyjal Expedition Bag",
+							["recipeID"] = 75268
 						},
 						{
-							["recipeID"] = 56007--[[Frostweave Bag]]
+							["name"] = "Illusionary Bag",
+							["recipeID"] = 75308
 						},
 						{
-							["recipeID"] = 56005--[[Glacial Bag]]
+							["name"] = "Luxurious Silk Gem Bag",
+							["recipeID"] = 100585
 						},
 						{
-							["recipeID"] = 56006--[[Mysterious Bag]]
+							["name"] = "Otherworldly Bag",
+							["recipeID"] = 75265
 						}
 					}
 				},
 				{
-					["categoryID"] = 988--[[Hats & Hoods]],
+					["name"] = "Hats & Hoods",
+					["categoryID"] = 975,
 					["g"] = {
 						{
-							["recipeID"] = 59589--[[Frostsavage Cowl]]
+							["name"] = "Deathsilk Cowl",
+							["recipeID"] = 75256
 						},
 						{
-							["recipeID"] = 56018--[[Hat of Wintry Doom]]
+							["name"] = "High Society Top Hat",
+							["recipeID"] = 75289
 						},
 						{
-							["recipeID"] = 55919--[[Duskweave Cowl]]
+							["name"] = "Spiritmend Cowl",
+							["recipeID"] = 75266
 						},
 						{
-							["recipeID"] = 55907--[[Frostwoven Cowl]]
+							["name"] = "Vicious Embersilk Cowl",
+							["recipeID"] = 75306
+						},
+						{
+							["name"] = "Vicious Fireweave Cowl",
+							["recipeID"] = 75304
 						}
 					}
 				},
 				{
-					["categoryID"] = 989--[[Shoulders]],
+					["name"] = "Shoulders",
+					["categoryID"] = 976,
 					["g"] = {
 						{
-							["recipeID"] = 59584--[[Frostsavage Shoulders]]
+							["name"] = "Deathsilk Shoulders",
+							["recipeID"] = 75251
 						},
 						{
-							["recipeID"] = 55923--[[Duskweave Shoulders]]
+							["name"] = "Spiritmend Shoulders",
+							["recipeID"] = 75260
 						},
 						{
-							["recipeID"] = 55910--[[Mystic Frostwoven Shoulders]]
+							["name"] = "Vicious Embersilk Shoulders",
+							["recipeID"] = 75291
 						},
 						{
-							["recipeID"] = 55902--[[Frostwoven Shoulders]]
+							["name"] = "Vicious Fireweave Shoulders",
+							["recipeID"] = 75292
 						}
 					}
 				},
 				{
-					["categoryID"] = 990--[[Robes & Tunics]],
+					["name"] = "Robes & Tunics",
+					["categoryID"] = 977,
 					["g"] = {
 						{
-							["recipeID"] = 56026--[[Ebonweave Robe]]
+							["name"] = "Black Embersilk Gown",
+							["recipeID"] = 75288
 						},
 						{
-							["recipeID"] = 59587--[[Frostsavage Robe]]
+							["name"] = "Deathsilk Robe",
+							["recipeID"] = 75257
 						},
 						{
-							["recipeID"] = 60993--[[Glacial Robe]]
+							["name"] = "Spiritmend Robe",
+							["recipeID"] = 75267
 						},
 						{
-							["recipeID"] = 67066--[[Merlin's Robe]]
+							["name"] = "Vicious Embersilk Robe",
+							["recipeID"] = 75305
 						},
 						{
-							["recipeID"] = 56024--[[Moonshroud Robe]]
-						},
-						{
-							["recipeID"] = 67064--[[Royal Moonshroud Robe]]
-						},
-						{
-							["recipeID"] = 56028--[[Spellweave Robe]]
-						},
-						{
-							["recipeID"] = 55941--[[Black Duskweave Robe]]
-						},
-						{
-							["recipeID"] = 55921--[[Duskweave Robe]]
-						},
-						{
-							["recipeID"] = 55911--[[Mystic Frostwoven Robe]]
-						},
-						{
-							["recipeID"] = 55903--[[Frostwoven Robe]]
+							["name"] = "Vicious Fireweave Robe",
+							["recipeID"] = 75303
 						}
 					}
 				},
 				{
-					["categoryID"] = 991--[[Bracers]],
+					["name"] = "Bracers",
+					["categoryID"] = 978,
 					["g"] = {
 						{
-							["recipeID"] = 67079--[[Bejeweled Wizard's Bracers]]
+							["name"] = "Bracers of Unconquered Power",
+							["recipeID"] = 101923
 						},
 						{
-							["recipeID"] = 67065--[[Royal Moonshroud Bracers]]
+							["name"] = "Deathsilk Bracers",
+							["recipeID"] = 75249
 						},
 						{
-							["recipeID"] = 59583--[[Frostsavage Bracers]]
+							["name"] = "Dreamwraps of the Light",
+							["recipeID"] = 101922
 						},
 						{
-							["recipeID"] = 55943--[[Black Duskweave Wristwraps]]
+							["name"] = "Spiritmend Bracers",
+							["recipeID"] = 75259
 						},
 						{
-							["recipeID"] = 55920--[[Duskweave Wristwraps]]
+							["name"] = "Vicious Embersilk Bracers",
+							["recipeID"] = 75270
 						},
 						{
-							["recipeID"] = 55913--[[Mystic Frostwoven Wristwraps]]
-						},
-						{
-							["recipeID"] = 56031--[[Frostwoven Wristwraps]]
+							["name"] = "Vicious Fireweave Bracers",
+							["recipeID"] = 75290
 						}
 					}
 				},
 				{
-					["categoryID"] = 992--[[Belts]],
+					["name"] = "Belts",
+					["categoryID"] = 979,
 					["g"] = {
 						{
-							["recipeID"] = 63205--[[Cord of the White Dawn]]
+							["name"] = "Belt of the Depths",
+							["recipeID"] = 75298
 						},
 						{
-							["recipeID"] = 56020--[[Deep Frozen Cord]]
+							["name"] = "Deathsilk Belt",
+							["recipeID"] = 75248
 						},
 						{
-							["recipeID"] = 60990--[[Glacial Waistband]]
+							["name"] = "Dreamless Belt",
+							["recipeID"] = 75299
 						},
 						{
-							["recipeID"] = 63203--[[Sash of Ancient Power]]
+							["name"] = "Spiritmend Belt",
+							["recipeID"] = 75258
 						},
 						{
-							["recipeID"] = 59582--[[Frostsavage Belt]]
+							["name"] = "Vicious Embersilk Belt",
+							["recipeID"] = 75293
 						},
 						{
-							["recipeID"] = 55914--[[Duskweave Belt]]
-						},
-						{
-							["recipeID"] = 55908--[[Frostwoven Belt]]
+							["name"] = "Vicious Fireweave Belt",
+							["recipeID"] = 75269
 						}
 					}
 				},
 				{
-					["categoryID"] = 993--[[Gloves]],
+					["name"] = "Gloves",
+					["categoryID"] = 980,
 					["g"] = {
 						{
-							["recipeID"] = 56027--[[Ebonweave Gloves]]
+							["name"] = "Deathsilk Gloves",
+							["recipeID"] = 75253
 						},
 						{
-							["recipeID"] = 59586--[[Frostsavage Gloves]]
+							["name"] = "Don Tayo's Inferno Mittens",
+							["recipeID"] = 99449
 						},
 						{
-							["recipeID"] = 56022--[[Light Blessed Mittens]]
+							["name"] = "Grips of Altered Reality",
+							["recipeID"] = 99448
 						},
 						{
-							["recipeID"] = 56025--[[Moonshroud Gloves]]
+							["name"] = "Spiritmend Gloves",
+							["recipeID"] = 75262
 						},
 						{
-							["recipeID"] = 56029--[[Spellweave Gloves]]
+							["name"] = "Vicious Embersilk Gloves",
+							["recipeID"] = 75295
 						},
 						{
-							["recipeID"] = 55922--[[Duskweave Gloves]]
-						},
-						{
-							["recipeID"] = 55904--[[Frostwoven Gloves]]
+							["name"] = "Vicious Fireweave Gloves",
+							["recipeID"] = 75296
 						}
 					}
 				},
 				{
-					["categoryID"] = 994--[[Pants]],
+					["name"] = "Pants",
+					["categoryID"] = 981,
 					["g"] = {
 						{
-							["recipeID"] = 59588--[[Frostsavage Leggings]]
+							["name"] = "Breeches of Mended Nightmares",
+							["recipeID"] = 75300
 						},
 						{
-							["recipeID"] = 70550--[[Leggings of Woven Death]]
+							["name"] = "Deathsilk Leggings",
+							["recipeID"] = 75254
 						},
 						{
-							["recipeID"] = 70552--[[Lightweave Leggings]]
+							["name"] = "Flame-Ascended Pantaloons",
+							["recipeID"] = 75301
 						},
 						{
-							["recipeID"] = 56021--[[Frostmoon Pants]]
+							["name"] = "Lavaquake Legwraps",
+							["recipeID"] = 101921
 						},
 						{
-							["recipeID"] = 55925--[[Black Duskweave Leggings]]
+							["name"] = "Spiritmend Leggings",
+							["recipeID"] = 75263
 						},
 						{
-							["recipeID"] = 55901--[[Duskweave Leggings]]
+							["name"] = "Vicious Embersilk Pants",
+							["recipeID"] = 75307
 						},
 						{
-							["recipeID"] = 56030--[[Frostwoven Leggings]]
+							["name"] = "Vicious Fireweave Pants",
+							["recipeID"] = 75302
+						},
+						{
+							["name"] = "World Mender's Pants",
+							["recipeID"] = 101920
 						}
 					}
 				},
 				{
-					["categoryID"] = 995--[[Boots]],
+					["name"] = "Boots",
+					["categoryID"] = 982,
 					["g"] = {
 						{
-							["recipeID"] = 56023--[[Aurora Slippers]]
+							["name"] = "Boots of the Black Flame",
+							["recipeID"] = 99460
 						},
 						{
-							["recipeID"] = 70551--[[Deathfrost Boots]]
+							["name"] = "Deathsilk Boots",
+							["recipeID"] = 75252
 						},
 						{
-							["recipeID"] = 59585--[[Frostsavage Boots]]
+							["name"] = "Endless Dream Walkers",
+							["recipeID"] = 99459
 						},
 						{
-							["recipeID"] = 60994--[[Glacial Slippers]]
+							["name"] = "Spiritmend Boots",
+							["recipeID"] = 75261
 						},
 						{
-							["recipeID"] = 70553--[[Sandals of Consecration]]
+							["name"] = "Vicious Embersilk Boots",
+							["recipeID"] = 75297
 						},
 						{
-							["recipeID"] = 63206--[[Savior's Slippers]]
-						},
-						{
-							["recipeID"] = 56019--[[Silky Iceshard Boots]]
-						},
-						{
-							["recipeID"] = 63204--[[Spellslinger's Slippers]]
-						},
-						{
-							["recipeID"] = 55924--[[Duskweave Boots]]
-						},
-						{
-							["recipeID"] = 55906--[[Frostwoven Boots]]
+							["name"] = "Vicious Fireweave Boots",
+							["recipeID"] = 75294
 						}
 					}
 				},
 				{
-					["categoryID"] = 996--[[Cloaks]],
+					["name"] = "Cloaks",
+					["categoryID"] = 983,
 					["g"] = {
 						{
-							["recipeID"] = 56017--[[Deathchill Cloak]]
-						},
-						{
-							["recipeID"] = 56016--[[Wispcloak]]
-						},
-						{
-							["recipeID"] = 64730--[[Cloak of Crimson Snow]]
-						},
-						{
-							["recipeID"] = 64729--[[Frostguard Drape]]
-						},
-						{
-							["recipeID"] = 56015--[[Cloak of Frozen Spirits]]
-						},
-						{
-							["recipeID"] = 56014--[[Cloak of the Moon]]
+							["name"] = "Vicious Embersilk Cape",
+							["recipeID"] = 99537
 						}
 					}
 				},
 				{
-					["categoryID"] = 997--[[Shirts]],
+					["name"] = "Nets",
+					["categoryID"] = 984,
 					["g"] = {
 						{
-							["recipeID"] = 55994--[[Blue Lumberjack Shirt]]
-						},
-						{
-							["recipeID"] = 55998--[[Blue Workman's Shirt]]
-						},
-						{
-							["recipeID"] = 55996--[[Green Lumberjack Shirt]]
-						},
-						{
-							["recipeID"] = 56000--[[Green Workman's Shirt]]
-						},
-						{
-							["recipeID"] = 55993--[[Red Lumberjack Shirt]]
-						},
-						{
-							["recipeID"] = 55997--[[Red Workman's Shirt]]
-						},
-						{
-							["recipeID"] = 55999--[[Rustic Workman's Shirt]]
-						},
-						{
-							["recipeID"] = 55995--[[Yellow Lumberjack Shirt]]
+							["name"] = "Embersilk Net",
+							["recipeID"] = 75247
 						}
 					}
 				},
 				{
-					["categoryID"] = 998--[[Mounts]],
+					["name"] = "Bandages",
+					["categoryID"] = 1092,
 					["g"] = {
 						{
-							["recipeID"] = 75597--[[Frosty Flying Carpet]]
+							["name"] = "Dense Embersilk Bandage",
+							["recipeID"] = 88893
 						},
 						{
-							["recipeID"] = 60971--[[Magnificent Flying Carpet]]
+							["name"] = "Embersilk Bandage",
+							["recipeID"] = 74556
 						},
 						{
-							["recipeID"] = 60969--[[Flying Carpet]]
-						}
-					}
-				},
-				{
-					["categoryID"] = 999--[[Nets]],
-					["g"] = {
-						{
-							["recipeID"] = 55898--[[Frostweave Net]]
-						}
-					}
-				},
-				{
-					["categoryID"] = 1091--[[Bandages]],
-					["g"] = {
-						{
-							["recipeID"] = 45546--[[Heavy Frostweave Bandage]]
+							["name"] = "Field Bandage: Dense Embersilk",
+							["recipeID"] = 74558
 						},
 						{
-							["recipeID"] = 45545--[[Frostweave Bandage]]
+							["name"] = "Heavy Embersilk Bandage",
+							["recipeID"] = 74557
 						}
 					}
 				}
 			}
 		},
 		{
-			["categoryID"] = 956--[[Outland Patterns]],
+			["name"] = "Northrend Patterns",
+			["categoryID"] = 954,
 			["g"] = {
 				{
-					["categoryID"] = 1000--[[Materials]],
+					["name"] = "Materials",
+					["categoryID"] = 985,
 					["g"] = {
 						{
-							["recipeID"] = 26751--[[Primal Mooncloth]]
+							["name"] = "Bolt of Frostweave",
+							["recipeID"] = 55899
 						},
 						{
-							["recipeID"] = 36686--[[Shadowcloth]]
+							["name"] = "Bolt of Imbued Frostweave",
+							["recipeID"] = 55900
 						},
 						{
-							["recipeID"] = 31373--[[Spellcloth]]
+							["name"] = "Ebonweave",
+							["recipeID"] = 56002
 						},
 						{
-							["recipeID"] = 26750--[[Bolt of Soulcloth]]
+							["name"] = "Moonshroud",
+							["recipeID"] = 56001
 						},
 						{
-							["recipeID"] = 26747--[[Bolt of Imbued Netherweave]]
-						},
-						{
-							["recipeID"] = 26745--[[Bolt of Netherweave]]
+							["name"] = "Spellweave",
+							["recipeID"] = 56003
 						}
 					}
 				},
 				{
-					["categoryID"] = 1001--[[Spellthreads]],
+					["name"] = "Spellthread",
+					["categoryID"] = 986,
 					["g"] = {
 						{
-							["recipeID"] = 31433--[[Golden Spellthread]]
+							["name"] = "Azure Spellthread",
+							["recipeID"] = 56010
 						},
 						{
-							["recipeID"] = 31432--[[Runic Spellthread]]
+							["name"] = "Brilliant Spellthread",
+							["recipeID"] = 56009
 						},
 						{
-							["recipeID"] = 31430--[[Mystic Spellthread]]
+							["name"] = "Sapphire Spellthread",
+							["recipeID"] = 56011
 						},
 						{
-							["recipeID"] = 31431--[[Silver Spellthread]]
+							["name"] = "Shining Spellthread",
+							["recipeID"] = 56008
 						}
 					}
 				},
 				{
-					["categoryID"] = 1002--[[Bags]],
+					["name"] = "Bags",
+					["categoryID"] = 987,
 					["g"] = {
 						{
-							["recipeID"] = 26755--[[Spellfire Bag]]
+							["name"] = "Abyssal Bag",
+							["recipeID"] = 56004
 						},
 						{
-							["recipeID"] = 26759--[[Ebon Shadowbag]]
+							["name"] = "Emerald Bag",
+							["recipeID"] = 63924
 						},
 						{
-							["recipeID"] = 50194--[[Mycah's Botanical Bag]]
+							["name"] = "Frostweave Bag",
+							["recipeID"] = 56007
 						},
 						{
-							["recipeID"] = 26763--[[Primal Mooncloth Bag]]
+							["name"] = "Glacial Bag",
+							["recipeID"] = 56005
 						},
 						{
-							["recipeID"] = 31459--[[Bag of Jewels]]
-						},
-						{
-							["recipeID"] = 26749--[[Imbued Netherweave Bag]]
-						},
-						{
-							["recipeID"] = 27660--[[Big Bag of Enchantment]]
-						},
-						{
-							["recipeID"] = 27725--[[Satchel of Cenarius]]
-						},
-						{
-							["recipeID"] = 26746--[[Netherweave Bag]]
+							["name"] = "Mysterious Bag",
+							["recipeID"] = 56006
 						}
 					}
 				},
 				{
-					["categoryID"] = 1003--[[Hats & Hoods]],
+					["name"] = "Hats & Hoods",
+					["categoryID"] = 988,
 					["g"] = {
 						{
-							["recipeID"] = 31456--[[Battlecast Hood]]
+							["name"] = "Duskweave Cowl",
+							["recipeID"] = 55919
 						},
 						{
-							["recipeID"] = 31455--[[Spellstrike Hood]]
+							["name"] = "Frostsavage Cowl",
+							["recipeID"] = 59589
 						},
 						{
-							["recipeID"] = 31454--[[Whitemend Hood]]
+							["name"] = "Frostwoven Cowl",
+							["recipeID"] = 55907
 						},
 						{
-							["recipeID"] = 28481--[[Sylvan Crown]]
+							["name"] = "Hat of Wintry Doom",
+							["recipeID"] = 56018
 						}
 					}
 				},
 				{
-					["categoryID"] = 1004--[[Shoulders]],
+					["name"] = "Shoulders",
+					["categoryID"] = 989,
 					["g"] = {
 						{
-							["recipeID"] = 41206--[[Mantle of Nimble Thought]]
+							["name"] = "Duskweave Shoulders",
+							["recipeID"] = 55923
 						},
 						{
-							["recipeID"] = 41208--[[Swiftheal Mantle]]
+							["name"] = "Frostsavage Shoulders",
+							["recipeID"] = 59584
 						},
 						{
-							["recipeID"] = 26756--[[Frozen Shadoweave Shoulders]]
+							["name"] = "Frostwoven Shoulders",
+							["recipeID"] = 55902
 						},
 						{
-							["recipeID"] = 26761--[[Primal Mooncloth Shoulders]]
-						},
-						{
-							["recipeID"] = 26780--[[Soulcloth Shoulders]]
-						},
-						{
-							["recipeID"] = 28482--[[Sylvan Shoulders]]
+							["name"] = "Mystic Frostwoven Shoulders",
+							["recipeID"] = 55910
 						}
 					}
 				},
 				{
-					["categoryID"] = 1005--[[Robes & Tunics]],
+					["name"] = "Robes & Tunics",
+					["categoryID"] = 990,
 					["g"] = {
 						{
-							["recipeID"] = 46131--[[Robe of Eternal Light]]
+							["name"] = "Black Duskweave Robe",
+							["recipeID"] = 55941
 						},
 						{
-							["recipeID"] = 46130--[[Sunfire Robe]]
+							["name"] = "Duskweave Robe",
+							["recipeID"] = 55921
 						},
 						{
-							["recipeID"] = 26784--[[Arcanoweave Robe]]
+							["name"] = "Ebonweave Robe",
+							["recipeID"] = 56026
 						},
 						{
-							["recipeID"] = 37884--[[Flameheart Vest]]
+							["name"] = "Frostsavage Robe",
+							["recipeID"] = 59587
 						},
 						{
-							["recipeID"] = 26762--[[Primal Mooncloth Robe]]
+							["name"] = "Frostwoven Robe",
+							["recipeID"] = 55903
 						},
 						{
-							["recipeID"] = 26777--[[Imbued Netherweave Robe]]
+							["name"] = "Glacial Robe",
+							["recipeID"] = 60993
 						},
 						{
-							["recipeID"] = 26778--[[Imbued Netherweave Tunic]]
+							["name"] = "Merlin's Robe",
+							["recipeID"] = 67066
 						},
 						{
-							["recipeID"] = 36665--[[Netherflame Robe]]
+							["name"] = "Merlin's Robe",
+							["recipeID"] = 67146
 						},
 						{
-							["recipeID"] = 26758--[[Frozen Shadoweave Robe]]
+							["name"] = "Moonshroud Robe",
+							["recipeID"] = 56024
 						},
 						{
-							["recipeID"] = 26754--[[Spellfire Robe]]
+							["name"] = "Mystic Frostwoven Robe",
+							["recipeID"] = 55911
 						},
 						{
-							["recipeID"] = 26781--[[Soulcloth Vest]]
+							["name"] = "Royal Moonshroud Robe",
+							["recipeID"] = 67064
 						},
 						{
-							["recipeID"] = 26774--[[Netherweave Tunic]]
+							["name"] = "Royal Moonshroud Robe",
+							["recipeID"] = 67144
 						},
 						{
-							["recipeID"] = 26773--[[Netherweave Robe]]
-						},
-						{
-							["recipeID"] = 28207--[[Glacial Vest]]
-						},
-						{
-							["recipeID"] = 28480--[[Sylvan Vest]]
+							["name"] = "Spellweave Robe",
+							["recipeID"] = 56028
 						}
 					}
 				},
 				{
-					["categoryID"] = 1006--[[Bracers]],
+					["name"] = "Bracers",
+					["categoryID"] = 991,
 					["g"] = {
 						{
-							["recipeID"] = 41205--[[Bracers of Nimble Thought]]
+							["name"] = "Bejeweled Wizard's Bracers",
+							["recipeID"] = 67079
 						},
 						{
-							["recipeID"] = 41207--[[Swiftheal Wraps]]
+							["name"] = "Bejeweled Wizard's Bracers",
+							["recipeID"] = 67145
 						},
 						{
-							["recipeID"] = 40021--[[Soulguard Bracers]]
+							["name"] = "Black Duskweave Wristwraps",
+							["recipeID"] = 55943
 						},
 						{
-							["recipeID"] = 36672--[[Lifeblood Bracers]]
+							["name"] = "Duskweave Wristwraps",
+							["recipeID"] = 55920
 						},
 						{
-							["recipeID"] = 26782--[[Arcanoweave Bracers]]
+							["name"] = "Frostsavage Bracers",
+							["recipeID"] = 59583
 						},
 						{
-							["recipeID"] = 31437--[[Blackstrike Bracers]]
+							["name"] = "Frostwoven Wristwraps",
+							["recipeID"] = 56031
 						},
 						{
-							["recipeID"] = 31435--[[Bracers of Havok]]
+							["name"] = "Mystic Frostwoven Wristwraps",
+							["recipeID"] = 55913
 						},
 						{
-							["recipeID"] = 37882--[[Flameheart Bracers]]
+							["name"] = "Royal Moonshroud Bracers",
+							["recipeID"] = 67065
 						},
 						{
-							["recipeID"] = 31434--[[Unyielding Bracers]]
-						},
-						{
-							["recipeID"] = 28209--[[Glacial Wrists]]
-						},
-						{
-							["recipeID"] = 26764--[[Netherweave Bracers]]
+							["name"] = "Royal Moonshroud Bracers",
+							["recipeID"] = 67147
 						}
 					}
 				},
 				{
-					["categoryID"] = 1007--[[Belts]],
+					["name"] = "Belts",
+					["categoryID"] = 992,
 					["g"] = {
 						{
-							["recipeID"] = 36315--[[Belt of Blasting]]
+							["name"] = "Cord of the White Dawn",
+							["recipeID"] = 63205
 						},
 						{
-							["recipeID"] = 36316--[[Belt of the Long Road]]
+							["name"] = "Deep Frozen Cord",
+							["recipeID"] = 56020
 						},
 						{
-							["recipeID"] = 26760--[[Primal Mooncloth Belt]]
+							["name"] = "Duskweave Belt",
+							["recipeID"] = 55914
 						},
 						{
-							["recipeID"] = 40024--[[Soulguard Girdle]]
+							["name"] = "Frostsavage Belt",
+							["recipeID"] = 59582
 						},
 						{
-							["recipeID"] = 36670--[[Lifeblood Belt]]
+							["name"] = "Frostwoven Belt",
+							["recipeID"] = 55908
 						},
 						{
-							["recipeID"] = 36667--[[Netherflame Belt]]
+							["name"] = "Glacial Waistband",
+							["recipeID"] = 60990
 						},
 						{
-							["recipeID"] = 31444--[[Black Belt of Knowledge]]
-						},
-						{
-							["recipeID"] = 31443--[[Girdle of Ruination]]
-						},
-						{
-							["recipeID"] = 26752--[[Spellfire Belt]]
-						},
-						{
-							["recipeID"] = 31442--[[Unyielding Girdle]]
-						},
-						{
-							["recipeID"] = 26765--[[Netherweave Belt]]
+							["name"] = "Sash of Ancient Power",
+							["recipeID"] = 63203
 						}
 					}
 				},
 				{
-					["categoryID"] = 1008--[[Gloves]],
+					["name"] = "Gloves",
+					["categoryID"] = 993,
 					["g"] = {
 						{
-							["recipeID"] = 46129--[[Hands of Eternal Light]]
+							["name"] = "Duskweave Gloves",
+							["recipeID"] = 55922
 						},
 						{
-							["recipeID"] = 46128--[[Sunfire Handwraps]]
+							["name"] = "Ebonweave Gloves",
+							["recipeID"] = 56027
 						},
 						{
-							["recipeID"] = 37883--[[Flameheart Gloves]]
+							["name"] = "Frostsavage Gloves",
+							["recipeID"] = 59586
 						},
 						{
-							["recipeID"] = 26753--[[Spellfire Gloves]]
+							["name"] = "Frostwoven Gloves",
+							["recipeID"] = 55904
 						},
 						{
-							["recipeID"] = 26779--[[Soulcloth Gloves]]
+							["name"] = "Light Blessed Mittens",
+							["recipeID"] = 56022
 						},
 						{
-							["recipeID"] = 28205--[[Glacial Gloves]]
+							["name"] = "Moonshroud Gloves",
+							["recipeID"] = 56025
 						},
 						{
-							["recipeID"] = 26770--[[Netherweave Gloves]]
+							["name"] = "Spellweave Gloves",
+							["recipeID"] = 56029
 						}
 					}
 				},
 				{
-					["categoryID"] = 1009--[[Pants]],
+					["name"] = "Pants",
+					["categoryID"] = 994,
 					["g"] = {
 						{
-							["recipeID"] = 40023--[[Soulguard Leggings]]
+							["name"] = "Black Duskweave Leggings",
+							["recipeID"] = 55925
 						},
 						{
-							["recipeID"] = 36669--[[Lifeblood Leggings]]
+							["name"] = "Duskweave Leggings",
+							["recipeID"] = 55901
 						},
 						{
-							["recipeID"] = 31453--[[Battlecast Pants]]
+							["name"] = "Frostmoon Pants",
+							["recipeID"] = 56021
 						},
 						{
-							["recipeID"] = 31452--[[Spellstrike Pants]]
+							["name"] = "Frostsavage Leggings",
+							["recipeID"] = 59588
 						},
 						{
-							["recipeID"] = 31451--[[Whitemend Pants]]
+							["name"] = "Frostwoven Leggings",
+							["recipeID"] = 56030
 						},
 						{
-							["recipeID"] = 26775--[[Imbued Netherweave Pants]]
+							["name"] = "Leggings of Woven Death",
+							["recipeID"] = 70550
 						},
 						{
-							["recipeID"] = 26771--[[Netherweave Pants]]
+							["name"] = "Lightweave Leggings",
+							["recipeID"] = 70552
 						}
 					}
 				},
 				{
-					["categoryID"] = 1010--[[Boots]],
+					["name"] = "Boots",
+					["categoryID"] = 995,
 					["g"] = {
 						{
-							["recipeID"] = 36317--[[Boots of Blasting]]
+							["name"] = "Aurora Slippers",
+							["recipeID"] = 56023
 						},
 						{
-							["recipeID"] = 36318--[[Boots of the Long Road]]
+							["name"] = "Deathfrost Boots",
+							["recipeID"] = 70551
 						},
 						{
-							["recipeID"] = 40020--[[Soulguard Slippers]]
+							["name"] = "Duskweave Boots",
+							["recipeID"] = 55924
 						},
 						{
-							["recipeID"] = 26783--[[Arcanoweave Boots]]
+							["name"] = "Frostsavage Boots",
+							["recipeID"] = 59585
 						},
 						{
-							["recipeID"] = 36668--[[Netherflame Boots]]
+							["name"] = "Frostwoven Boots",
+							["recipeID"] = 55906
 						},
 						{
-							["recipeID"] = 26757--[[Frozen Shadoweave Boots]]
+							["name"] = "Glacial Slippers",
+							["recipeID"] = 60994
 						},
 						{
-							["recipeID"] = 26776--[[Imbued Netherweave Boots]]
+							["name"] = "Sandals of Consecration",
+							["recipeID"] = 70553
 						},
 						{
-							["recipeID"] = 26772--[[Netherweave Boots]]
+							["name"] = "Savior's Slippers",
+							["recipeID"] = 63206
+						},
+						{
+							["name"] = "Silky Iceshard Boots",
+							["recipeID"] = 56019
+						},
+						{
+							["name"] = "Spellslinger's Slippers",
+							["recipeID"] = 63204
 						}
 					}
 				},
 				{
-					["categoryID"] = 1011--[[Cloaks]],
+					["name"] = "Cloaks",
+					["categoryID"] = 996,
 					["g"] = {
 						{
-							["recipeID"] = 40060--[[Night's End]]
+							["name"] = "Cloak of Crimson Snow",
+							["recipeID"] = 64730
 						},
 						{
-							["recipeID"] = 31450--[[Manaweave Cloak]]
+							["name"] = "Cloak of Frozen Spirits",
+							["recipeID"] = 56015
 						},
 						{
-							["recipeID"] = 31448--[[Resolute Cape]]
+							["name"] = "Cloak of the Moon",
+							["recipeID"] = 56014
 						},
 						{
-							["recipeID"] = 31449--[[Vengeance Wrap]]
+							["name"] = "Deathchill Cloak",
+							["recipeID"] = 56017
 						},
 						{
-							["recipeID"] = 37873--[[Cloak of Arcane Evasion]]
+							["name"] = "Frostguard Drape",
+							["recipeID"] = 64729
 						},
 						{
-							["recipeID"] = 31440--[[Cloak of Eternity]]
-						},
-						{
-							["recipeID"] = 31438--[[Cloak of the Black Void]]
-						},
-						{
-							["recipeID"] = 31441--[[White Remedy Cape]]
-						},
-						{
-							["recipeID"] = 28210--[[Gaea's Embrace]]
-						},
-						{
-							["recipeID"] = 28208--[[Glacial Cloak]]
+							["name"] = "Wispcloak",
+							["recipeID"] = 56016
 						}
 					}
 				},
 				{
-					["categoryID"] = 1012--[[Nets]],
+					["name"] = "Shirts",
+					["categoryID"] = 997,
 					["g"] = {
 						{
-							["recipeID"] = 31461--[[Heavy Netherweave Net]]
+							["name"] = "Blue Lumberjack Shirt",
+							["recipeID"] = 55994
 						},
 						{
-							["recipeID"] = 31460--[[Netherweave Net]]
+							["name"] = "Blue Workman's Shirt",
+							["recipeID"] = 55998
+						},
+						{
+							["name"] = "Green Lumberjack Shirt",
+							["recipeID"] = 55996
+						},
+						{
+							["name"] = "Green Workman's Shirt",
+							["recipeID"] = 56000
+						},
+						{
+							["name"] = "Red Lumberjack Shirt",
+							["recipeID"] = 55993
+						},
+						{
+							["name"] = "Red Workman's Shirt",
+							["recipeID"] = 55997
+						},
+						{
+							["name"] = "Rustic Workman's Shirt",
+							["recipeID"] = 55999
+						},
+						{
+							["name"] = "Yellow Lumberjack Shirt",
+							["recipeID"] = 55995
 						}
 					}
 				},
 				{
-					["categoryID"] = 1090--[[Bandages]],
+					["name"] = "Mounts",
+					["categoryID"] = 998,
 					["g"] = {
 						{
-							["recipeID"] = 27033--[[Heavy Netherweave Bandage]]
+							["name"] = "Flying Carpet",
+							["recipeID"] = 60969
 						},
 						{
-							["recipeID"] = 27032--[[Netherweave Bandage]]
+							["name"] = "Frosty Flying Carpet",
+							["recipeID"] = 75597
+						},
+						{
+							["name"] = "Magnificent Flying Carpet",
+							["recipeID"] = 60971
+						}
+					}
+				},
+				{
+					["name"] = "Nets",
+					["categoryID"] = 999,
+					["g"] = {
+						{
+							["name"] = "Frostweave Net",
+							["recipeID"] = 55898
+						}
+					}
+				},
+				{
+					["name"] = "Bandages",
+					["categoryID"] = 1091,
+					["g"] = {
+						{
+							["name"] = "Frostweave Bandage",
+							["recipeID"] = 45545
+						},
+						{
+							["name"] = "Heavy Frostweave Bandage",
+							["recipeID"] = 45546
 						}
 					}
 				}
 			}
 		},
 		{
-			["categoryID"] = 362--[[Tailoring Patterns]],
+			["name"] = "Outland Patterns",
+			["categoryID"] = 956,
 			["g"] = {
 				{
-					["categoryID"] = 230--[[Materials]],
+					["name"] = "Materials",
+					["categoryID"] = 1000,
 					["g"] = {
 						{
-							["recipeID"] = 18560--[[Mooncloth]]
+							["name"] = "Bolt of Imbued Netherweave",
+							["recipeID"] = 26747
 						},
 						{
-							["recipeID"] = 18401--[[Bolt of Runecloth]]
+							["name"] = "Bolt of Netherweave",
+							["recipeID"] = 26745
 						},
 						{
-							["recipeID"] = 3865--[[Bolt of Mageweave]]
+							["name"] = "Bolt of Soulcloth",
+							["recipeID"] = 26750
 						},
 						{
-							["recipeID"] = 3839--[[Bolt of Silk Cloth]]
+							["name"] = "Primal Mooncloth",
+							["recipeID"] = 26751
 						},
 						{
-							["recipeID"] = 2964--[[Bolt of Woolen Cloth]]
+							["name"] = "Shadowcloth",
+							["recipeID"] = 36686
 						},
 						{
-							["recipeID"] = 2963--[[Bolt of Linen Cloth]]
+							["name"] = "Spellcloth",
+							["recipeID"] = 31373
 						}
 					}
 				},
 				{
-					["categoryID"] = 233--[[Bags]],
+					["name"] = "Spellthreads",
+					["categoryID"] = 1001,
 					["g"] = {
 						{
-							["recipeID"] = 18455--[[Bottomless Bag]]
+							["name"] = "Golden Spellthread",
+							["recipeID"] = 31433
 						},
 						{
-							["recipeID"] = 26087--[[Core Felcloth Bag]]
+							["name"] = "Mystic Spellthread",
+							["recipeID"] = 31430
 						},
 						{
-							["recipeID"] = 18445--[[Mooncloth Bag]]
+							["name"] = "Runic Spellthread",
+							["recipeID"] = 31432
 						},
 						{
-							["recipeID"] = 26086--[[Felcloth Bag]]
-						},
-						{
-							["recipeID"] = 27724--[[Cenarion Herb Bag]]
-						},
-						{
-							["recipeID"] = 27659--[[Enchanted Runecloth Bag]]
-						},
-						{
-							["recipeID"] = 18405--[[Runecloth Bag]]
-						},
-						{
-							["recipeID"] = 26085--[[Soul Pouch]]
-						},
-						{
-							["recipeID"] = 12079--[[Red Mageweave Bag]]
-						},
-						{
-							["recipeID"] = 27658--[[Enchanted Mageweave Pouch]]
-						},
-						{
-							["recipeID"] = 12065--[[Mageweave Bag]]
-						},
-						{
-							["recipeID"] = 6695--[[Black Silk Pack]]
-						},
-						{
-							["recipeID"] = 6693--[[Green Silk Pack]]
-						},
-						{
-							["recipeID"] = 3813--[[Small Silk Pack]]
-						},
-						{
-							["recipeID"] = 6688--[[Red Woolen Bag]]
-						},
-						{
-							["recipeID"] = 3758--[[Green Woolen Bag]]
-						},
-						{
-							["recipeID"] = 3757--[[Woolen Bag]]
-						},
-						{
-							["recipeID"] = 6686--[[Red Linen Bag]]
-						},
-						{
-							["recipeID"] = 3755--[[Linen Bag]]
+							["name"] = "Silver Spellthread",
+							["recipeID"] = 31431
 						}
 					}
 				},
 				{
-					["categoryID"] = 234--[[Hats & Hoods]],
+					["name"] = "Bags",
+					["categoryID"] = 1002,
 					["g"] = {
 						{
-							["recipeID"] = 18452--[[Mooncloth Circlet]]
+							["name"] = "Bag of Jewels",
+							["recipeID"] = 31459
 						},
 						{
-							["recipeID"] = 18444--[[Runecloth Headband]]
+							["name"] = "Big Bag of Enchantment",
+							["recipeID"] = 27660
 						},
 						{
-							["recipeID"] = 18450--[[Wizardweave Turban]]
+							["name"] = "Ebon Shadowbag",
+							["recipeID"] = 26759
 						},
 						{
-							["recipeID"] = 18442--[[Felcloth Hood]]
+							["name"] = "Imbued Netherweave Bag",
+							["recipeID"] = 26749
 						},
 						{
-							["recipeID"] = 12092--[[Dreamweave Circlet]]
+							["name"] = "Mycah's Botanical Bag",
+							["recipeID"] = 50194
 						},
 						{
-							["recipeID"] = 12086--[[Shadoweave Mask]]
+							["name"] = "Netherweave Bag",
+							["recipeID"] = 26746
 						},
 						{
-							["recipeID"] = 12081--[[Admiral's Hat]]
+							["name"] = "Primal Mooncloth Bag",
+							["recipeID"] = 26763
 						},
 						{
-							["recipeID"] = 12084--[[Red Mageweave Headband]]
+							["name"] = "Satchel of Cenarius",
+							["recipeID"] = 27725
 						},
 						{
-							["recipeID"] = 12083--[[Stormcloth Headband]]
-						},
-						{
-							["recipeID"] = 12072--[[Black Mageweave Headband]]
-						},
-						{
-							["recipeID"] = 12059--[[White Bandit Mask]]
-						},
-						{
-							["recipeID"] = 3858--[[Shadow Hood]]
-						},
-						{
-							["recipeID"] = 3857--[[Enchanter's Cowl]]
-						},
-						{
-							["recipeID"] = 8762--[[Silk Headband]]
-						},
-						{
-							["recipeID"] = 8760--[[Azure Silk Hood]]
+							["name"] = "Spellfire Bag",
+							["recipeID"] = 26755
 						}
 					}
 				},
 				{
-					["categoryID"] = 235--[[Shoulders]],
+					["name"] = "Hats & Hoods",
+					["categoryID"] = 1003,
 					["g"] = {
 						{
-							["recipeID"] = 23665--[[Argent Shoulders]]
+							["name"] = "Battlecast Hood",
+							["recipeID"] = 31456
 						},
 						{
-							["recipeID"] = 18453--[[Felcloth Shoulders]]
+							["name"] = "Spellstrike Hood",
+							["recipeID"] = 31455
 						},
 						{
-							["recipeID"] = 20848--[[Flarecore Mantle]]
-						},
-						{
-							["recipeID"] = 23663--[[Mantle of the Timbermaw]]
-						},
-						{
-							["recipeID"] = 18448--[[Mooncloth Shoulders]]
-						},
-						{
-							["recipeID"] = 18449--[[Runecloth Shoulders]]
-						},
-						{
-							["recipeID"] = 12087--[[Stormcloth Shoulders]]
-						},
-						{
-							["recipeID"] = 12078--[[Red Mageweave Shoulders]]
-						},
-						{
-							["recipeID"] = 12076--[[Shadoweave Shoulders]]
-						},
-						{
-							["recipeID"] = 12074--[[Black Mageweave Shoulders]]
-						},
-						{
-							["recipeID"] = 8795--[[Azure Shoulders]]
-						},
-						{
-							["recipeID"] = 8793--[[Crimson Silk Shoulders]]
-						},
-						{
-							["recipeID"] = 8774--[[Green Silken Shoulders]]
-						},
-						{
-							["recipeID"] = 3849--[[Reinforced Woolen Shoulders]]
-						},
-						{
-							["recipeID"] = 3848--[[Double-stitched Woolen Shoulders]]
+							["name"] = "Whitemend Hood",
+							["recipeID"] = 31454
 						}
 					}
 				},
 				{
-					["categoryID"] = 236--[[Robes & Tunics]],
+					["name"] = "Shoulders",
+					["categoryID"] = 1004,
 					["g"] = {
 						{
-							["recipeID"] = 24091--[[Bloodvine Vest]]
+							["name"] = "Frozen Shadoweave Shoulders",
+							["recipeID"] = 26756
 						},
 						{
-							["recipeID"] = 18451--[[Felcloth Robe]]
+							["name"] = "Mantle of Nimble Thought",
+							["recipeID"] = 41206
 						},
 						{
-							["recipeID"] = 23666--[[Flarecore Robe]]
+							["name"] = "Primal Mooncloth Shoulders",
+							["recipeID"] = 26761
 						},
 						{
-							["recipeID"] = 22902--[[Mooncloth Robe]]
+							["name"] = "Soulcloth Shoulders",
+							["recipeID"] = 26780
 						},
 						{
-							["recipeID"] = 18447--[[Mooncloth Vest]]
-						},
-						{
-							["recipeID"] = 18457--[[Robe of the Archmage]]
-						},
-						{
-							["recipeID"] = 18458--[[Robe of the Void]]
-						},
-						{
-							["recipeID"] = 18456--[[Truefaith Vestments]]
-						},
-						{
-							["recipeID"] = 18446--[[Wizardweave Robe]]
-						},
-						{
-							["recipeID"] = 18436--[[Robe of Winter Night]]
-						},
-						{
-							["recipeID"] = 18416--[[Ghostweave Vest]]
-						},
-						{
-							["recipeID"] = 18414--[[Brightcloth Robe]]
-						},
-						{
-							["recipeID"] = 18408--[[Cindercloth Vest]]
-						},
-						{
-							["recipeID"] = 18406--[[Runecloth Robe]]
-						},
-						{
-							["recipeID"] = 18407--[[Runecloth Tunic]]
-						},
-						{
-							["recipeID"] = 18404--[[Frostweave Robe]]
-						},
-						{
-							["recipeID"] = 18403--[[Frostweave Tunic]]
-						},
-						{
-							["recipeID"] = 26403--[[Festival Dress]]
-						},
-						{
-							["recipeID"] = 26407--[[Festival Suit]]
-						},
-						{
-							["recipeID"] = 50644--[[Haliscan Jacket]]
-						},
-						{
-							["recipeID"] = 12093--[[Tuxedo Jacket]]
-						},
-						{
-							["recipeID"] = 12069--[[Cindercloth Robe]]
-						},
-						{
-							["recipeID"] = 12070--[[Dreamweave Vest]]
-						},
-						{
-							["recipeID"] = 12068--[[Stormcloth Vest]]
-						},
-						{
-							["recipeID"] = 12091--[[White Wedding Dress]]
-						},
-						{
-							["recipeID"] = 12056--[[Red Mageweave Vest]]
-						},
-						{
-							["recipeID"] = 12055--[[Shadoweave Robe]]
-						},
-						{
-							["recipeID"] = 12050--[[Black Mageweave Robe]]
-						},
-						{
-							["recipeID"] = 12048--[[Black Mageweave Vest]]
-						},
-						{
-							["recipeID"] = 8802--[[Crimson Silk Robe]]
-						},
-						{
-							["recipeID"] = 44950--[[Green Winter Clothes]]
-						},
-						{
-							["recipeID"] = 44958--[[Red Winter Clothes]]
-						},
-						{
-							["recipeID"] = 12077--[[Simple Black Dress]]
-						},
-						{
-							["recipeID"] = 8770--[[Robe of Power]]
-						},
-						{
-							["recipeID"] = 8791--[[Crimson Silk Vest]]
-						},
-						{
-							["recipeID"] = 8764--[[Earthen Vest]]
-						},
-						{
-							["recipeID"] = 8784--[[Green Silk Armor]]
-						},
-						{
-							["recipeID"] = 3859--[[Azure Silk Vest]]
-						},
-						{
-							["recipeID"] = 6692--[[Robes of Arcana]]
-						},
-						{
-							["recipeID"] = 6690--[[Lesser Wizard's Robe]]
-						},
-						{
-							["recipeID"] = 7643--[[Greater Adept's Robe]]
-						},
-						{
-							["recipeID"] = 8467--[[White Woolen Dress]]
-						},
-						{
-							["recipeID"] = 2403--[[Gray Woolen Robe]]
-						},
-						{
-							["recipeID"] = 7639--[[Blue Overalls]]
-						},
-						{
-							["recipeID"] = 7636--[[Green Woolen Robe]]
-						},
-						{
-							["recipeID"] = 2399--[[Green Woolen Vest]]
-						},
-						{
-							["recipeID"] = 2395--[[Barbaric Linen Vest]]
-						},
-						{
-							["recipeID"] = 7633--[[Blue Linen Robe]]
-						},
-						{
-							["recipeID"] = 7630--[[Blue Linen Vest]]
-						},
-						{
-							["recipeID"] = 7629--[[Red Linen Vest]]
-						},
-						{
-							["recipeID"] = 2389--[[Red Linen Robe]]
-						},
-						{
-							["recipeID"] = 8465--[[Simple Dress]]
-						},
-						{
-							["recipeID"] = 7623--[[Brown Linen Robe]]
-						},
-						{
-							["recipeID"] = 7624--[[White Linen Robe]]
-						},
-						{
-							["recipeID"] = 2385--[[Brown Linen Vest]]
+							["name"] = "Swiftheal Mantle",
+							["recipeID"] = 41208
 						}
 					}
 				},
 				{
-					["categoryID"] = 237--[[Bracers]],
+					["name"] = "Robes & Tunics",
+					["categoryID"] = 1005,
 					["g"] = {
 						{
-							["recipeID"] = 22759--[[Flarecore Wraps]]
+							["name"] = "Arcanoweave Robe",
+							["recipeID"] = 26784
 						},
 						{
-							["recipeID"] = 3841--[[Green Linen Bracers]]
+							["name"] = "Flameheart Vest",
+							["recipeID"] = 37884
+						},
+						{
+							["name"] = "Frozen Shadoweave Robe",
+							["recipeID"] = 26758
+						},
+						{
+							["name"] = "Glacial Vest",
+							["recipeID"] = 28207
+						},
+						{
+							["name"] = "Imbued Netherweave Robe",
+							["recipeID"] = 26777
+						},
+						{
+							["name"] = "Imbued Netherweave Tunic",
+							["recipeID"] = 26778
+						},
+						{
+							["name"] = "Netherflame Robe",
+							["recipeID"] = 36665
+						},
+						{
+							["name"] = "Netherweave Robe",
+							["recipeID"] = 26773
+						},
+						{
+							["name"] = "Netherweave Tunic",
+							["recipeID"] = 26774
+						},
+						{
+							["name"] = "Primal Mooncloth Robe",
+							["recipeID"] = 26762
+						},
+						{
+							["name"] = "Robe of Eternal Light",
+							["recipeID"] = 46131
+						},
+						{
+							["name"] = "Soulcloth Vest",
+							["recipeID"] = 26781
+						},
+						{
+							["name"] = "Spellfire Robe",
+							["recipeID"] = 26754
+						},
+						{
+							["name"] = "Sunfire Robe",
+							["recipeID"] = 46130
 						}
 					}
 				},
 				{
-					["categoryID"] = 238--[[Belts]],
+					["name"] = "Bracers",
+					["categoryID"] = 1006,
 					["g"] = {
 						{
-							["recipeID"] = 22866--[[Belt of the Archmage]]
+							["name"] = "Arcanoweave Bracers",
+							["recipeID"] = 26782
 						},
 						{
-							["recipeID"] = 24902--[[Runed Stygian Belt]]
+							["name"] = "Blackstrike Bracers",
+							["recipeID"] = 31437
 						},
 						{
-							["recipeID"] = 23662--[[Wisdom of the Timbermaw]]
+							["name"] = "Bracers of Havok",
+							["recipeID"] = 31435
 						},
 						{
-							["recipeID"] = 18410--[[Ghostweave Belt]]
+							["name"] = "Bracers of Nimble Thought",
+							["recipeID"] = 41205
 						},
 						{
-							["recipeID"] = 18402--[[Runecloth Belt]]
+							["name"] = "Flameheart Bracers",
+							["recipeID"] = 37882
 						},
 						{
-							["recipeID"] = 3864--[[Star Belt]]
+							["name"] = "Glacial Wrists",
+							["recipeID"] = 28209
 						},
 						{
-							["recipeID"] = 8797--[[Earthen Silk Belt]]
+							["name"] = "Lifeblood Bracers",
+							["recipeID"] = 36672
 						},
 						{
-							["recipeID"] = 3863--[[Spider Belt]]
+							["name"] = "Netherweave Bracers",
+							["recipeID"] = 26764
 						},
 						{
-							["recipeID"] = 8766--[[Azure Silk Belt]]
+							["name"] = "Soulguard Bracers",
+							["recipeID"] = 40021
 						},
 						{
-							["recipeID"] = 8772--[[Crimson Silk Belt]]
+							["name"] = "Swiftheal Wraps",
+							["recipeID"] = 41207
 						},
 						{
-							["recipeID"] = 8776--[[Linen Belt]]
+							["name"] = "Unyielding Bracers",
+							["recipeID"] = 31434
 						}
 					}
 				},
 				{
-					["categoryID"] = 239--[[Gloves]],
+					["name"] = "Belts",
+					["categoryID"] = 1007,
 					["g"] = {
 						{
-							["recipeID"] = 22867--[[Felcloth Gloves]]
+							["name"] = "Belt of Blasting",
+							["recipeID"] = 36315
 						},
 						{
-							["recipeID"] = 20849--[[Flarecore Gloves]]
+							["name"] = "Belt of the Long Road",
+							["recipeID"] = 36316
 						},
 						{
-							["recipeID"] = 18454--[[Gloves of Spell Mastery]]
+							["name"] = "Black Belt of Knowledge",
+							["recipeID"] = 31444
 						},
 						{
-							["recipeID"] = 22868--[[Inferno Gloves]]
+							["name"] = "Girdle of Ruination",
+							["recipeID"] = 31443
 						},
 						{
-							["recipeID"] = 22869--[[Mooncloth Gloves]]
+							["name"] = "Lifeblood Belt",
+							["recipeID"] = 36670
 						},
 						{
-							["recipeID"] = 18417--[[Runecloth Gloves]]
+							["name"] = "Netherflame Belt",
+							["recipeID"] = 36667
 						},
 						{
-							["recipeID"] = 18415--[[Brightcloth Gloves]]
+							["name"] = "Netherweave Belt",
+							["recipeID"] = 26765
 						},
 						{
-							["recipeID"] = 18412--[[Cindercloth Gloves]]
+							["name"] = "Primal Mooncloth Belt",
+							["recipeID"] = 26760
 						},
 						{
-							["recipeID"] = 18413--[[Ghostweave Gloves]]
+							["name"] = "Soulguard Girdle",
+							["recipeID"] = 40024
 						},
 						{
-							["recipeID"] = 18411--[[Frostweave Gloves]]
+							["name"] = "Spellfire Belt",
+							["recipeID"] = 26752
 						},
 						{
-							["recipeID"] = 12067--[[Dreamweave Gloves]]
-						},
-						{
-							["recipeID"] = 12066--[[Red Mageweave Gloves]]
-						},
-						{
-							["recipeID"] = 12071--[[Shadoweave Gloves]]
-						},
-						{
-							["recipeID"] = 12063--[[Stormcloth Gloves]]
-						},
-						{
-							["recipeID"] = 12053--[[Black Mageweave Gloves]]
-						},
-						{
-							["recipeID"] = 8804--[[Crimson Silk Gloves]]
-						},
-						{
-							["recipeID"] = 8782--[[Truefaith Gloves]]
-						},
-						{
-							["recipeID"] = 3854--[[Azure Silk Gloves]]
-						},
-						{
-							["recipeID"] = 8780--[[Hands of Darkness]]
-						},
-						{
-							["recipeID"] = 3868--[[Phoenix Gloves]]
-						},
-						{
-							["recipeID"] = 3852--[[Gloves of Meditation]]
-						},
-						{
-							["recipeID"] = 3843--[[Heavy Woolen Gloves]]
-						},
-						{
-							["recipeID"] = 3840--[[Heavy Linen Gloves]]
+							["name"] = "Unyielding Girdle",
+							["recipeID"] = 31442
 						}
 					}
 				},
 				{
-					["categoryID"] = 240--[[Pants]],
+					["name"] = "Gloves",
+					["categoryID"] = 1008,
 					["g"] = {
 						{
-							["recipeID"] = 24092--[[Bloodvine Leggings]]
+							["name"] = "Flameheart Gloves",
+							["recipeID"] = 37883
 						},
 						{
-							["recipeID"] = 23667--[[Flarecore Leggings]]
+							["name"] = "Glacial Gloves",
+							["recipeID"] = 28205
 						},
 						{
-							["recipeID"] = 24901--[[Runed Stygian Leggings]]
+							["name"] = "Hands of Eternal Light",
+							["recipeID"] = 46129
 						},
 						{
-							["recipeID"] = 18439--[[Brightcloth Pants]]
+							["name"] = "Netherweave Gloves",
+							["recipeID"] = 26770
 						},
 						{
-							["recipeID"] = 18441--[[Ghostweave Pants]]
+							["name"] = "Soulcloth Gloves",
+							["recipeID"] = 26779
 						},
 						{
-							["recipeID"] = 18440--[[Mooncloth Leggings]]
+							["name"] = "Spellfire Gloves",
+							["recipeID"] = 26753
 						},
 						{
-							["recipeID"] = 18438--[[Runecloth Pants]]
-						},
-						{
-							["recipeID"] = 18434--[[Cindercloth Pants]]
-						},
-						{
-							["recipeID"] = 18424--[[Frostweave Pants]]
-						},
-						{
-							["recipeID"] = 18419--[[Felcloth Pants]]
-						},
-						{
-							["recipeID"] = 18421--[[Wizardweave Leggings]]
-						},
-						{
-							["recipeID"] = 12062--[[Stormcloth Pants]]
-						},
-						{
-							["recipeID"] = 12060--[[Red Mageweave Pants]]
-						},
-						{
-							["recipeID"] = 50647--[[Haliscan Pantaloons]]
-						},
-						{
-							["recipeID"] = 12089--[[Tuxedo Pants]]
-						},
-						{
-							["recipeID"] = 12052--[[Shadoweave Pants]]
-						},
-						{
-							["recipeID"] = 12049--[[Black Mageweave Leggings]]
-						},
-						{
-							["recipeID"] = 8799--[[Crimson Silk Pantaloons]]
-						},
-						{
-							["recipeID"] = 8758--[[Azure Silk Pants]]
-						},
-						{
-							["recipeID"] = 3851--[[Phoenix Pants]]
-						},
-						{
-							["recipeID"] = 12047--[[Colorful Kilt]]
-						},
-						{
-							["recipeID"] = 3850--[[Heavy Woolen Pants]]
-						},
-						{
-							["recipeID"] = 12046--[[Simple Kilt]]
-						},
-						{
-							["recipeID"] = 3842--[[Handstitched Linen Britches]]
-						},
-						{
-							["recipeID"] = 3914--[[Brown Linen Pants]]
-						},
-						{
-							["recipeID"] = 12044--[[Simple Linen Pants]]
+							["name"] = "Sunfire Handwraps",
+							["recipeID"] = 46128
 						}
 					}
 				},
 				{
-					["categoryID"] = 241--[[Boots]],
+					["name"] = "Pants",
+					["categoryID"] = 1009,
 					["g"] = {
 						{
-							["recipeID"] = 24093--[[Bloodvine Boots]]
+							["name"] = "Battlecast Pants",
+							["recipeID"] = 31453
 						},
 						{
-							["recipeID"] = 24903--[[Runed Stygian Boots]]
+							["name"] = "Imbued Netherweave Pants",
+							["recipeID"] = 26775
 						},
 						{
-							["recipeID"] = 23664--[[Argent Boots]]
+							["name"] = "Lifeblood Leggings",
+							["recipeID"] = 36669
 						},
 						{
-							["recipeID"] = 18437--[[Felcloth Boots]]
+							["name"] = "Netherweave Pants",
+							["recipeID"] = 26771
 						},
 						{
-							["recipeID"] = 19435--[[Mooncloth Boots]]
+							["name"] = "Soulguard Leggings",
+							["recipeID"] = 40023
 						},
 						{
-							["recipeID"] = 18423--[[Runecloth Boots]]
+							["name"] = "Spellstrike Pants",
+							["recipeID"] = 31452
 						},
 						{
-							["recipeID"] = 12090--[[Stormcloth Boots]]
-						},
-						{
-							["recipeID"] = 12088--[[Cindercloth Boots]]
-						},
-						{
-							["recipeID"] = 12082--[[Shadoweave Boots]]
-						},
-						{
-							["recipeID"] = 49677--[[Dress Shoes]]
-						},
-						{
-							["recipeID"] = 12073--[[Black Mageweave Boots]]
-						},
-						{
-							["recipeID"] = 3860--[[Boots of the Enchanter]]
-						},
-						{
-							["recipeID"] = 8778--[[Boots of Darkness]]
-						},
-						{
-							["recipeID"] = 3856--[[Spider Silk Slippers]]
-						},
-						{
-							["recipeID"] = 3855--[[Spidersilk Boots]]
-						},
-						{
-							["recipeID"] = 3847--[[Red Woolen Boots]]
-						},
-						{
-							["recipeID"] = 2401--[[Woolen Boots]]
-						},
-						{
-							["recipeID"] = 3845--[[Soft-soled Linen Boots]]
-						},
-						{
-							["recipeID"] = 2386--[[Linen Boots]]
-						},
-						{
-							["recipeID"] = 12045--[[Simple Linen Boots]]
+							["name"] = "Whitemend Pants",
+							["recipeID"] = 31451
 						}
 					}
 				},
 				{
-					["categoryID"] = 242--[[Cloaks]],
+					["name"] = "Boots",
+					["categoryID"] = 1010,
 					["g"] = {
 						{
-							["recipeID"] = 22870--[[Cloak of Warding]]
+							["name"] = "Arcanoweave Boots",
+							["recipeID"] = 26783
 						},
 						{
-							["recipeID"] = 18420--[[Brightcloth Cloak]]
+							["name"] = "Boots of Blasting",
+							["recipeID"] = 36317
 						},
 						{
-							["recipeID"] = 18418--[[Cindercloth Cloak]]
+							["name"] = "Boots of the Long Road",
+							["recipeID"] = 36318
 						},
 						{
-							["recipeID"] = 18422--[[Cloak of Fire]]
+							["name"] = "Frozen Shadoweave Boots",
+							["recipeID"] = 26757
 						},
 						{
-							["recipeID"] = 18409--[[Runecloth Cloak]]
+							["name"] = "Imbued Netherweave Boots",
+							["recipeID"] = 26776
 						},
 						{
-							["recipeID"] = 3862--[[Icy Cloak]]
+							["name"] = "Netherflame Boots",
+							["recipeID"] = 36668
 						},
 						{
-							["recipeID"] = 3861--[[Long Silken Cloak]]
+							["name"] = "Netherweave Boots",
+							["recipeID"] = 26772
 						},
 						{
-							["recipeID"] = 8789--[[Crimson Silk Cloak]]
-						},
-						{
-							["recipeID"] = 8786--[[Azure Silk Cloak]]
-						},
-						{
-							["recipeID"] = 63742--[[Spidersilk Drape]]
-						},
-						{
-							["recipeID"] = 3844--[[Heavy Woolen Cloak]]
-						},
-						{
-							["recipeID"] = 6521--[[Pearl-clasped Cloak]]
-						},
-						{
-							["recipeID"] = 2402--[[Woolen Cape]]
-						},
-						{
-							["recipeID"] = 2397--[[Reinforced Linen Cape]]
-						},
-						{
-							["recipeID"] = 2387--[[Linen Cloak]]
+							["name"] = "Soulguard Slippers",
+							["recipeID"] = 40020
 						}
 					}
 				},
 				{
-					["categoryID"] = 243--[[Shirts]],
+					["name"] = "Cloaks",
+					["categoryID"] = 1011,
 					["g"] = {
 						{
-							["recipeID"] = 12085--[[Tuxedo Shirt]]
+							["name"] = "Cloak of Arcane Evasion",
+							["recipeID"] = 37873
 						},
 						{
-							["recipeID"] = 12080--[[Pink Mageweave Shirt]]
+							["name"] = "Cloak of Eternity",
+							["recipeID"] = 31440
 						},
 						{
-							["recipeID"] = 12075--[[Lavender Mageweave Shirt]]
+							["name"] = "Cloak of the Black Void",
+							["recipeID"] = 31438
 						},
 						{
-							["recipeID"] = 12064--[[Orange Martial Shirt]]
+							["name"] = "Glacial Cloak",
+							["recipeID"] = 28208
 						},
 						{
-							["recipeID"] = 12061--[[Orange Mageweave Shirt]]
+							["name"] = "Manaweave Cloak",
+							["recipeID"] = 31450
 						},
 						{
-							["recipeID"] = 3873--[[Black Swashbuckler's Shirt]]
+							["name"] = "Night's End",
+							["recipeID"] = 40060
 						},
 						{
-							["recipeID"] = 21945--[[Green Holiday Shirt]]
+							["name"] = "Resolute Cape",
+							["recipeID"] = 31448
 						},
 						{
-							["recipeID"] = 3872--[[Rich Purple Silk Shirt]]
+							["name"] = "Vengeance Wrap",
+							["recipeID"] = 31449
 						},
 						{
-							["recipeID"] = 8489--[[Red Swashbuckler's Shirt]]
-						},
-						{
-							["recipeID"] = 3871--[[Formal White Shirt]]
-						},
-						{
-							["recipeID"] = 7892--[[Stylish Blue Shirt]]
-						},
-						{
-							["recipeID"] = 7893--[[Stylish Green Shirt]]
-						},
-						{
-							["recipeID"] = 8483--[[White Swashbuckler's Shirt]]
-						},
-						{
-							["recipeID"] = 3870--[[Dark Silk Shirt]]
-						},
-						{
-							["recipeID"] = 3866--[[Stylish Red Shirt]]
-						},
-						{
-							["recipeID"] = 3869--[[Bright Yellow Shirt]]
-						},
-						{
-							["recipeID"] = 2406--[[Gray Woolen Shirt]]
-						},
-						{
-							["recipeID"] = 2396--[[Green Linen Shirt]]
-						},
-						{
-							["recipeID"] = 2394--[[Blue Linen Shirt]]
-						},
-						{
-							["recipeID"] = 2392--[[Red Linen Shirt]]
-						},
-						{
-							["recipeID"] = 3915--[[Brown Linen Shirt]]
-						},
-						{
-							["recipeID"] = 2393--[[White Linen Shirt]]
+							["name"] = "White Remedy Cape",
+							["recipeID"] = 31441
 						}
 					}
 				},
 				{
-					["categoryID"] = 246--[[Special]],
+					["name"] = "Nets",
+					["categoryID"] = 1012,
 					["g"] = {
 						{
-							["recipeID"] = 22813--[[Gordok Ogre Suit]]
+							["name"] = "Netherweave Net",
+							["recipeID"] = 31460
 						}
 					}
 				},
 				{
-					["categoryID"] = 1089--[[Bandages]],
+					["name"] = "Bandages",
+					["categoryID"] = 1090,
 					["g"] = {
 						{
-							["recipeID"] = 18630--[[Heavy Runecloth Bandage]]
+							["name"] = "Heavy Netherweave Bandage",
+							["recipeID"] = 27033
 						},
 						{
-							["recipeID"] = 18629--[[Runecloth Bandage]]
+							["name"] = "Netherweave Bandage",
+							["recipeID"] = 27032
+						}
+					}
+				}
+			}
+		},
+		{
+			["name"] = "Tailoring Patterns",
+			["categoryID"] = 362,
+			["g"] = {
+				{
+					["name"] = "Materials",
+					["categoryID"] = 230,
+					["g"] = {
+						{
+							["name"] = "Bolt of Linen Cloth",
+							["recipeID"] = 2963
 						},
 						{
-							["recipeID"] = 10841--[[Heavy Mageweave Bandage]]
+							["name"] = "Bolt of Mageweave",
+							["recipeID"] = 3865
 						},
 						{
-							["recipeID"] = 10840--[[Mageweave Bandage]]
+							["name"] = "Bolt of Runecloth",
+							["recipeID"] = 18401
 						},
 						{
-							["recipeID"] = 7929--[[Heavy Silk Bandage]]
+							["name"] = "Bolt of Silk Cloth",
+							["recipeID"] = 3839
 						},
 						{
-							["recipeID"] = 7928--[[Silk Bandage]]
+							["name"] = "Bolt of Woolen Cloth",
+							["recipeID"] = 2964
 						},
 						{
-							["recipeID"] = 3278--[[Heavy Wool Bandage]]
+							["name"] = "Mooncloth",
+							["recipeID"] = 18560
+						}
+					}
+				},
+				{
+					["name"] = "Bags",
+					["categoryID"] = 233,
+					["g"] = {
+						{
+							["name"] = "Black Silk Pack",
+							["recipeID"] = 6695
 						},
 						{
-							["recipeID"] = 3277--[[Wool Bandage]]
+							["name"] = "Bottomless Bag",
+							["recipeID"] = 18455
 						},
 						{
-							["recipeID"] = 3276--[[Heavy Linen Bandage]]
+							["name"] = "Cenarion Herb Bag",
+							["recipeID"] = 27724
 						},
 						{
-							["recipeID"] = 3275--[[Linen Bandage]]
+							["name"] = "Core Felcloth Bag",
+							["recipeID"] = 26087
+						},
+						{
+							["name"] = "Enchanted Mageweave Pouch",
+							["recipeID"] = 27658
+						},
+						{
+							["name"] = "Enchanted Runecloth Bag",
+							["recipeID"] = 27659
+						},
+						{
+							["name"] = "Felcloth Bag",
+							["recipeID"] = 26086
+						},
+						{
+							["name"] = "Green Silk Pack",
+							["recipeID"] = 6693
+						},
+						{
+							["name"] = "Green Woolen Bag",
+							["recipeID"] = 3758
+						},
+						{
+							["name"] = "Linen Bag",
+							["recipeID"] = 3755
+						},
+						{
+							["name"] = "Mageweave Bag",
+							["recipeID"] = 12065
+						},
+						{
+							["name"] = "Mooncloth Bag",
+							["recipeID"] = 18445
+						},
+						{
+							["name"] = "Red Linen Bag",
+							["recipeID"] = 6686
+						},
+						{
+							["name"] = "Red Mageweave Bag",
+							["recipeID"] = 12079
+						},
+						{
+							["name"] = "Red Woolen Bag",
+							["recipeID"] = 6688
+						},
+						{
+							["name"] = "Runecloth Bag",
+							["recipeID"] = 18405
+						},
+						{
+							["name"] = "Small Silk Pack",
+							["recipeID"] = 3813
+						},
+						{
+							["name"] = "Soul Pouch",
+							["recipeID"] = 26085
+						},
+						{
+							["name"] = "Woolen Bag",
+							["recipeID"] = 3757
+						}
+					}
+				},
+				{
+					["name"] = "Hats & Hoods",
+					["categoryID"] = 234,
+					["g"] = {
+						{
+							["name"] = "Admiral's Hat",
+							["recipeID"] = 12081
+						},
+						{
+							["name"] = "Azure Silk Hood",
+							["recipeID"] = 8760
+						},
+						{
+							["name"] = "Black Mageweave Headband",
+							["recipeID"] = 12072
+						},
+						{
+							["name"] = "Dreamweave Circlet",
+							["recipeID"] = 12092
+						},
+						{
+							["name"] = "Enchanter's Cowl",
+							["recipeID"] = 3857
+						},
+						{
+							["name"] = "Felcloth Hood",
+							["recipeID"] = 18442
+						},
+						{
+							["name"] = "Mooncloth Circlet",
+							["recipeID"] = 18452
+						},
+						{
+							["name"] = "Red Mageweave Headband",
+							["recipeID"] = 12084
+						},
+						{
+							["name"] = "Runecloth Headband",
+							["recipeID"] = 18444
+						},
+						{
+							["name"] = "Shadow Hood",
+							["recipeID"] = 3858
+						},
+						{
+							["name"] = "Shadoweave Mask",
+							["recipeID"] = 12086
+						},
+						{
+							["name"] = "Silk Headband",
+							["recipeID"] = 8762
+						},
+						{
+							["name"] = "Stormcloth Headband",
+							["recipeID"] = 12083
+						},
+						{
+							["name"] = "Sylvan Crown",
+							["recipeID"] = 28481
+						},
+						{
+							["name"] = "White Bandit Mask",
+							["recipeID"] = 12059
+						},
+						{
+							["name"] = "Wizardweave Turban",
+							["recipeID"] = 18450
+						}
+					}
+				},
+				{
+					["name"] = "Shoulders",
+					["categoryID"] = 235,
+					["g"] = {
+						{
+							["name"] = "Argent Shoulders",
+							["recipeID"] = 23665
+						},
+						{
+							["name"] = "Azure Shoulders",
+							["recipeID"] = 8795
+						},
+						{
+							["name"] = "Black Mageweave Shoulders",
+							["recipeID"] = 12074
+						},
+						{
+							["name"] = "Crimson Silk Shoulders",
+							["recipeID"] = 8793
+						},
+						{
+							["name"] = "Double-stitched Woolen Shoulders",
+							["recipeID"] = 3848
+						},
+						{
+							["name"] = "Felcloth Shoulders",
+							["recipeID"] = 18453
+						},
+						{
+							["name"] = "Flarecore Mantle",
+							["recipeID"] = 20848
+						},
+						{
+							["name"] = "Green Silken Shoulders",
+							["recipeID"] = 8774
+						},
+						{
+							["name"] = "Mantle of the Timbermaw",
+							["recipeID"] = 23663
+						},
+						{
+							["name"] = "Mooncloth Shoulders",
+							["recipeID"] = 18448
+						},
+						{
+							["name"] = "Red Mageweave Shoulders",
+							["recipeID"] = 12078
+						},
+						{
+							["name"] = "Reinforced Woolen Shoulders",
+							["recipeID"] = 3849
+						},
+						{
+							["name"] = "Runecloth Shoulders",
+							["recipeID"] = 18449
+						},
+						{
+							["name"] = "Shadoweave Shoulders",
+							["recipeID"] = 12076
+						},
+						{
+							["name"] = "Stormcloth Shoulders",
+							["recipeID"] = 12087
+						},
+						{
+							["name"] = "Sylvan Shoulders",
+							["recipeID"] = 28482
+						}
+					}
+				},
+				{
+					["name"] = "Robes & Tunics",
+					["categoryID"] = 236,
+					["g"] = {
+						{
+							["name"] = "Azure Silk Vest",
+							["recipeID"] = 3859
+						},
+						{
+							["name"] = "Barbaric Linen Vest",
+							["recipeID"] = 2395
+						},
+						{
+							["name"] = "Black Mageweave Robe",
+							["recipeID"] = 12050
+						},
+						{
+							["name"] = "Black Mageweave Vest",
+							["recipeID"] = 12048
+						},
+						{
+							["name"] = "Bloodvine Vest",
+							["recipeID"] = 24091
+						},
+						{
+							["name"] = "Blue Linen Robe",
+							["recipeID"] = 7633
+						},
+						{
+							["name"] = "Blue Linen Vest",
+							["recipeID"] = 7630
+						},
+						{
+							["name"] = "Blue Overalls",
+							["recipeID"] = 7639
+						},
+						{
+							["name"] = "Brightcloth Robe",
+							["recipeID"] = 18414
+						},
+						{
+							["name"] = "Brown Linen Robe",
+							["recipeID"] = 7623
+						},
+						{
+							["name"] = "Brown Linen Vest",
+							["recipeID"] = 2385
+						},
+						{
+							["name"] = "Cindercloth Robe",
+							["recipeID"] = 12069
+						},
+						{
+							["name"] = "Cindercloth Vest",
+							["recipeID"] = 18408
+						},
+						{
+							["name"] = "Crimson Silk Robe",
+							["recipeID"] = 8802
+						},
+						{
+							["name"] = "Crimson Silk Vest",
+							["recipeID"] = 8791
+						},
+						{
+							["name"] = "Dreamweave Vest",
+							["recipeID"] = 12070
+						},
+						{
+							["name"] = "Earthen Vest",
+							["recipeID"] = 8764
+						},
+						{
+							["name"] = "Felcloth Robe",
+							["recipeID"] = 18451
+						},
+						{
+							["name"] = "Festival Dress",
+							["recipeID"] = 26403
+						},
+						{
+							["name"] = "Festival Suit",
+							["recipeID"] = 26407
+						},
+						{
+							["name"] = "Flarecore Robe",
+							["recipeID"] = 23666
+						},
+						{
+							["name"] = "Frostweave Robe",
+							["recipeID"] = 18404
+						},
+						{
+							["name"] = "Frostweave Tunic",
+							["recipeID"] = 18403
+						},
+						{
+							["name"] = "Ghostweave Vest",
+							["recipeID"] = 18416
+						},
+						{
+							["name"] = "Gray Woolen Robe",
+							["recipeID"] = 2403
+						},
+						{
+							["name"] = "Greater Adept's Robe",
+							["recipeID"] = 7643
+						},
+						{
+							["name"] = "Green Silk Armor",
+							["recipeID"] = 8784
+						},
+						{
+							["name"] = "Green Winter Clothes",
+							["recipeID"] = 44950
+						},
+						{
+							["name"] = "Green Woolen Robe",
+							["recipeID"] = 7636
+						},
+						{
+							["name"] = "Green Woolen Vest",
+							["recipeID"] = 2399
+						},
+						{
+							["name"] = "Haliscan Jacket",
+							["recipeID"] = 50644
+						},
+						{
+							["name"] = "Lesser Wizard's Robe",
+							["recipeID"] = 6690
+						},
+						{
+							["name"] = "Mooncloth Robe",
+							["recipeID"] = 22902
+						},
+						{
+							["name"] = "Mooncloth Vest",
+							["recipeID"] = 18447
+						},
+						{
+							["name"] = "Red Linen Robe",
+							["recipeID"] = 2389
+						},
+						{
+							["name"] = "Red Linen Vest",
+							["recipeID"] = 7629
+						},
+						{
+							["name"] = "Red Mageweave Vest",
+							["recipeID"] = 12056
+						},
+						{
+							["name"] = "Red Winter Clothes",
+							["recipeID"] = 44958
+						},
+						{
+							["name"] = "Robe of Power",
+							["recipeID"] = 8770
+						},
+						{
+							["name"] = "Robe of the Archmage",
+							["recipeID"] = 18457
+						},
+						{
+							["name"] = "Robe of the Void",
+							["recipeID"] = 18458
+						},
+						{
+							["name"] = "Robe of Winter Night",
+							["recipeID"] = 18436
+						},
+						{
+							["name"] = "Robes of Arcana",
+							["recipeID"] = 6692
+						},
+						{
+							["name"] = "Runecloth Robe",
+							["recipeID"] = 18406
+						},
+						{
+							["name"] = "Runecloth Tunic",
+							["recipeID"] = 18407
+						},
+						{
+							["name"] = "Shadoweave Robe",
+							["recipeID"] = 12055
+						},
+						{
+							["name"] = "Simple Black Dress",
+							["recipeID"] = 12077
+						},
+						{
+							["name"] = "Simple Dress",
+							["recipeID"] = 8465
+						},
+						{
+							["name"] = "Stormcloth Vest",
+							["recipeID"] = 12068
+						},
+						{
+							["name"] = "Sylvan Vest",
+							["recipeID"] = 28480
+						},
+						{
+							["name"] = "Truefaith Vestments",
+							["recipeID"] = 18456
+						},
+						{
+							["name"] = "Tuxedo Jacket",
+							["recipeID"] = 12093
+						},
+						{
+							["name"] = "White Linen Robe",
+							["recipeID"] = 7624
+						},
+						{
+							["name"] = "White Wedding Dress",
+							["recipeID"] = 12091
+						},
+						{
+							["name"] = "White Woolen Dress",
+							["recipeID"] = 8467
+						},
+						{
+							["name"] = "Wizardweave Robe",
+							["recipeID"] = 18446
+						}
+					}
+				},
+				{
+					["name"] = "Bracers",
+					["categoryID"] = 237,
+					["g"] = {
+						{
+							["name"] = "Flarecore Wraps",
+							["recipeID"] = 22759
+						},
+						{
+							["name"] = "Green Linen Bracers",
+							["recipeID"] = 3841
+						}
+					}
+				},
+				{
+					["name"] = "Belts",
+					["categoryID"] = 238,
+					["g"] = {
+						{
+							["name"] = "Azure Silk Belt",
+							["recipeID"] = 8766
+						},
+						{
+							["name"] = "Belt of the Archmage",
+							["recipeID"] = 22866
+						},
+						{
+							["name"] = "Crimson Silk Belt",
+							["recipeID"] = 8772
+						},
+						{
+							["name"] = "Earthen Silk Belt",
+							["recipeID"] = 8797
+						},
+						{
+							["name"] = "Ghostweave Belt",
+							["recipeID"] = 18410
+						},
+						{
+							["name"] = "Linen Belt",
+							["recipeID"] = 8776
+						},
+						{
+							["name"] = "Runecloth Belt",
+							["recipeID"] = 18402
+						},
+						{
+							["name"] = "Runed Stygian Belt",
+							["recipeID"] = 24902
+						},
+						{
+							["name"] = "Spider Belt",
+							["recipeID"] = 3863
+						},
+						{
+							["name"] = "Star Belt",
+							["recipeID"] = 3864
+						},
+						{
+							["name"] = "Wisdom of the Timbermaw",
+							["recipeID"] = 23662
+						}
+					}
+				},
+				{
+					["name"] = "Gloves",
+					["categoryID"] = 239,
+					["g"] = {
+						{
+							["name"] = "Azure Silk Gloves",
+							["recipeID"] = 3854
+						},
+						{
+							["name"] = "Black Mageweave Gloves",
+							["recipeID"] = 12053
+						},
+						{
+							["name"] = "Brightcloth Gloves",
+							["recipeID"] = 18415
+						},
+						{
+							["name"] = "Cindercloth Gloves",
+							["recipeID"] = 18412
+						},
+						{
+							["name"] = "Crimson Silk Gloves",
+							["recipeID"] = 8804
+						},
+						{
+							["name"] = "Dreamweave Gloves",
+							["recipeID"] = 12067
+						},
+						{
+							["name"] = "Felcloth Gloves",
+							["recipeID"] = 22867
+						},
+						{
+							["name"] = "Flarecore Gloves",
+							["recipeID"] = 20849
+						},
+						{
+							["name"] = "Frostweave Gloves",
+							["recipeID"] = 18411
+						},
+						{
+							["name"] = "Ghostweave Gloves",
+							["recipeID"] = 18413
+						},
+						{
+							["name"] = "Gloves of Meditation",
+							["recipeID"] = 3852
+						},
+						{
+							["name"] = "Gloves of Spell Mastery",
+							["recipeID"] = 18454
+						},
+						{
+							["name"] = "Hands of Darkness",
+							["recipeID"] = 8780
+						},
+						{
+							["name"] = "Heavy Linen Gloves",
+							["recipeID"] = 3840
+						},
+						{
+							["name"] = "Heavy Woolen Gloves",
+							["recipeID"] = 3843
+						},
+						{
+							["name"] = "Inferno Gloves",
+							["recipeID"] = 22868
+						},
+						{
+							["name"] = "Mooncloth Gloves",
+							["recipeID"] = 22869
+						},
+						{
+							["name"] = "Phoenix Gloves",
+							["recipeID"] = 3868
+						},
+						{
+							["name"] = "Red Mageweave Gloves",
+							["recipeID"] = 12066
+						},
+						{
+							["name"] = "Runecloth Gloves",
+							["recipeID"] = 18417
+						},
+						{
+							["name"] = "Shadoweave Gloves",
+							["recipeID"] = 12071
+						},
+						{
+							["name"] = "Stormcloth Gloves",
+							["recipeID"] = 12063
+						},
+						{
+							["name"] = "Truefaith Gloves",
+							["recipeID"] = 8782
+						}
+					}
+				},
+				{
+					["name"] = "Pants",
+					["categoryID"] = 240,
+					["g"] = {
+						{
+							["name"] = "Azure Silk Pants",
+							["recipeID"] = 8758
+						},
+						{
+							["name"] = "Black Mageweave Leggings",
+							["recipeID"] = 12049
+						},
+						{
+							["name"] = "Bloodvine Leggings",
+							["recipeID"] = 24092
+						},
+						{
+							["name"] = "Brightcloth Pants",
+							["recipeID"] = 18439
+						},
+						{
+							["name"] = "Brown Linen Pants",
+							["recipeID"] = 3914
+						},
+						{
+							["name"] = "Cindercloth Pants",
+							["recipeID"] = 18434
+						},
+						{
+							["name"] = "Colorful Kilt",
+							["recipeID"] = 12047
+						},
+						{
+							["name"] = "Crimson Silk Pantaloons",
+							["recipeID"] = 8799
+						},
+						{
+							["name"] = "Felcloth Pants",
+							["recipeID"] = 18419
+						},
+						{
+							["name"] = "Flarecore Leggings",
+							["recipeID"] = 23667
+						},
+						{
+							["name"] = "Frostweave Pants",
+							["recipeID"] = 18424
+						},
+						{
+							["name"] = "Ghostweave Pants",
+							["recipeID"] = 18441
+						},
+						{
+							["name"] = "Haliscan Pantaloons",
+							["recipeID"] = 50647
+						},
+						{
+							["name"] = "Handstitched Linen Britches",
+							["recipeID"] = 3842
+						},
+						{
+							["name"] = "Heavy Woolen Pants",
+							["recipeID"] = 3850
+						},
+						{
+							["name"] = "Mooncloth Leggings",
+							["recipeID"] = 18440
+						},
+						{
+							["name"] = "Phoenix Pants",
+							["recipeID"] = 3851
+						},
+						{
+							["name"] = "Red Mageweave Pants",
+							["recipeID"] = 12060
+						},
+						{
+							["name"] = "Runecloth Pants",
+							["recipeID"] = 18438
+						},
+						{
+							["name"] = "Runed Stygian Leggings",
+							["recipeID"] = 24901
+						},
+						{
+							["name"] = "Shadoweave Pants",
+							["recipeID"] = 12052
+						},
+						{
+							["name"] = "Simple Kilt",
+							["recipeID"] = 12046
+						},
+						{
+							["name"] = "Simple Linen Pants",
+							["recipeID"] = 12044
+						},
+						{
+							["name"] = "Stormcloth Pants",
+							["recipeID"] = 12062
+						},
+						{
+							["name"] = "Tuxedo Pants",
+							["recipeID"] = 12089
+						},
+						{
+							["name"] = "Wizardweave Leggings",
+							["recipeID"] = 18421
+						}
+					}
+				},
+				{
+					["name"] = "Boots",
+					["categoryID"] = 241,
+					["g"] = {
+						{
+							["name"] = "Argent Boots",
+							["recipeID"] = 23664
+						},
+						{
+							["name"] = "Black Mageweave Boots",
+							["recipeID"] = 12073
+						},
+						{
+							["name"] = "Bloodvine Boots",
+							["recipeID"] = 24093
+						},
+						{
+							["name"] = "Boots of Darkness",
+							["recipeID"] = 8778
+						},
+						{
+							["name"] = "Boots of the Enchanter",
+							["recipeID"] = 3860
+						},
+						{
+							["name"] = "Cindercloth Boots",
+							["recipeID"] = 12088
+						},
+						{
+							["name"] = "Dress Shoes",
+							["recipeID"] = 49677
+						},
+						{
+							["name"] = "Felcloth Boots",
+							["recipeID"] = 18437
+						},
+						{
+							["name"] = "Linen Boots",
+							["recipeID"] = 2386
+						},
+						{
+							["name"] = "Mooncloth Boots",
+							["recipeID"] = 19435
+						},
+						{
+							["name"] = "Red Woolen Boots",
+							["recipeID"] = 3847
+						},
+						{
+							["name"] = "Runecloth Boots",
+							["recipeID"] = 18423
+						},
+						{
+							["name"] = "Runed Stygian Boots",
+							["recipeID"] = 24903
+						},
+						{
+							["name"] = "Shadoweave Boots",
+							["recipeID"] = 12082
+						},
+						{
+							["name"] = "Simple Linen Boots",
+							["recipeID"] = 12045
+						},
+						{
+							["name"] = "Soft-soled Linen Boots",
+							["recipeID"] = 3845
+						},
+						{
+							["name"] = "Spider Silk Slippers",
+							["recipeID"] = 3856
+						},
+						{
+							["name"] = "Spidersilk Boots",
+							["recipeID"] = 3855
+						},
+						{
+							["name"] = "Stormcloth Boots",
+							["recipeID"] = 12090
+						},
+						{
+							["name"] = "Woolen Boots",
+							["recipeID"] = 2401
+						}
+					}
+				},
+				{
+					["name"] = "Cloaks",
+					["categoryID"] = 242,
+					["g"] = {
+						{
+							["name"] = "Azure Silk Cloak",
+							["recipeID"] = 8786
+						},
+						{
+							["name"] = "Brightcloth Cloak",
+							["recipeID"] = 18420
+						},
+						{
+							["name"] = "Cindercloth Cloak",
+							["recipeID"] = 18418
+						},
+						{
+							["name"] = "Cloak of Fire",
+							["recipeID"] = 18422
+						},
+						{
+							["name"] = "Cloak of Warding",
+							["recipeID"] = 22870
+						},
+						{
+							["name"] = "Crimson Silk Cloak",
+							["recipeID"] = 8789
+						},
+						{
+							["name"] = "Gaea's Embrace",
+							["recipeID"] = 28210
+						},
+						{
+							["name"] = "Heavy Woolen Cloak",
+							["recipeID"] = 3844
+						},
+						{
+							["name"] = "Icy Cloak",
+							["recipeID"] = 3862
+						},
+						{
+							["name"] = "Linen Cloak",
+							["recipeID"] = 2387
+						},
+						{
+							["name"] = "Long Silken Cloak",
+							["recipeID"] = 3861
+						},
+						{
+							["name"] = "Pearl-clasped Cloak",
+							["recipeID"] = 6521
+						},
+						{
+							["name"] = "Reinforced Linen Cape",
+							["recipeID"] = 2397
+						},
+						{
+							["name"] = "Runecloth Cloak",
+							["recipeID"] = 18409
+						},
+						{
+							["name"] = "Spidersilk Drape",
+							["recipeID"] = 63742
+						},
+						{
+							["name"] = "Woolen Cape",
+							["recipeID"] = 2402
+						}
+					}
+				},
+				{
+					["name"] = "Shirts",
+					["categoryID"] = 243,
+					["g"] = {
+						{
+							["name"] = "Black Swashbuckler's Shirt",
+							["recipeID"] = 3873
+						},
+						{
+							["name"] = "Blue Linen Shirt",
+							["recipeID"] = 2394
+						},
+						{
+							["name"] = "Bright Yellow Shirt",
+							["recipeID"] = 3869
+						},
+						{
+							["name"] = "Brown Linen Shirt",
+							["recipeID"] = 3915
+						},
+						{
+							["name"] = "Dark Silk Shirt",
+							["recipeID"] = 3870
+						},
+						{
+							["name"] = "Formal White Shirt",
+							["recipeID"] = 3871
+						},
+						{
+							["name"] = "Gray Woolen Shirt",
+							["recipeID"] = 2406
+						},
+						{
+							["name"] = "Green Holiday Shirt",
+							["recipeID"] = 21945
+						},
+						{
+							["name"] = "Green Linen Shirt",
+							["recipeID"] = 2396
+						},
+						{
+							["name"] = "Lavender Mageweave Shirt",
+							["recipeID"] = 12075
+						},
+						{
+							["name"] = "Orange Mageweave Shirt",
+							["recipeID"] = 12061
+						},
+						{
+							["name"] = "Orange Martial Shirt",
+							["recipeID"] = 12064
+						},
+						{
+							["name"] = "Pink Mageweave Shirt",
+							["recipeID"] = 12080
+						},
+						{
+							["name"] = "Red Linen Shirt",
+							["recipeID"] = 2392
+						},
+						{
+							["name"] = "Red Swashbuckler's Shirt",
+							["recipeID"] = 8489
+						},
+						{
+							["name"] = "Rich Purple Silk Shirt",
+							["recipeID"] = 3872
+						},
+						{
+							["name"] = "Stylish Blue Shirt",
+							["recipeID"] = 7892
+						},
+						{
+							["name"] = "Stylish Green Shirt",
+							["recipeID"] = 7893
+						},
+						{
+							["name"] = "Stylish Red Shirt",
+							["recipeID"] = 3866
+						},
+						{
+							["name"] = "Tuxedo Shirt",
+							["recipeID"] = 12085
+						},
+						{
+							["name"] = "White Linen Shirt",
+							["recipeID"] = 2393
+						},
+						{
+							["name"] = "White Swashbuckler's Shirt",
+							["recipeID"] = 8483
+						}
+					}
+				},
+				{
+					["name"] = "Special",
+					["categoryID"] = 246,
+					["g"] = {
+						{
+							["name"] = "Gordok Ogre Suit",
+							["recipeID"] = 22813
+						}
+					}
+				},
+				{
+					["name"] = "Bandages",
+					["categoryID"] = 1089,
+					["g"] = {
+						{
+							["name"] = "Heavy Linen Bandage",
+							["recipeID"] = 3276
+						},
+						{
+							["name"] = "Heavy Mageweave Bandage",
+							["recipeID"] = 10841
+						},
+						{
+							["name"] = "Heavy Runecloth Bandage",
+							["recipeID"] = 18630
+						},
+						{
+							["name"] = "Heavy Silk Bandage",
+							["recipeID"] = 7929
+						},
+						{
+							["name"] = "Heavy Wool Bandage",
+							["recipeID"] = 3278
+						},
+						{
+							["name"] = "Linen Bandage",
+							["recipeID"] = 3275
+						},
+						{
+							["name"] = "Mageweave Bandage",
+							["recipeID"] = 10840
+						},
+						{
+							["name"] = "Runecloth Bandage",
+							["recipeID"] = 18629
+						},
+						{
+							["name"] = "Silk Bandage",
+							["recipeID"] = 7928
+						},
+						{
+							["name"] = "Wool Bandage",
+							["recipeID"] = 3277
 						}
 					}
 				}

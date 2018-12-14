@@ -1,1654 +1,2361 @@
 --[[
 DO NOT MODIFY THIS FILE, I WILL CUT YOU.
  With love,
-    - CRIEVE
+    -CRIEVE
 ]]--
 profession(773, {	-- Inscription
-	filter(200, {	-- Recipes
+	filter(200, {
 		{
-			["categoryID"] = 403--[[Merchant Orders]],
+			["name"] = "Merchant Orders",
+			["categoryID"] = 403,
 			["g"] = {
 				{
-					["recipeID"] = 176513--[[Draenor Merchant Order]]
+					["name"] = "Draenor Merchant Order",
+					["recipeID"] = 176513
 				}
 			}
 		},
 		{
-			["categoryID"] = 759--[[Zandalari Inscription]],
+			["name"] = "Zandalari Inscription",
+			["categoryID"] = 759,
 			["g"] = {
 				{
-					["categoryID"] = 1026--[[Inks]],
+					["name"] = "Inks",
+					["categoryID"] = 1026,
 					["g"] = {
 						{
-							["recipeID"] = 264777--[[Crimson Ink]]
+							["name"] = "Crimson Ink",
+							["recipeID"] = 264777
 						},
 						{
-							["recipeID"] = 264776--[[Ultramarine Ink]]
+							["name"] = "Ultramarine Ink",
+							["recipeID"] = 264776
 						},
 						{
-							["recipeID"] = 264778--[[Viridescent Ink]]
+							["name"] = "Viridescent Ink",
+							["recipeID"] = 264778
 						}
 					}
 				},
 				{
-					["categoryID"] = 771--[[Books & Scrolls]],
+					["name"] = "Books & Scrolls",
+					["categoryID"] = 771,
 					["g"] = {
 						{
-							["recipeID"] = 256233--[[Codex of the Quiet Mind]]
+							["name"] = "Codex of the Quiet Mind",
+							["nextRecipeID"] = 256233,
+							["recipeID"] = 256232
 						},
 						{
-							["recipeID"] = 256234--[[Codex of the Quiet Mind]]
+							["name"] = "Codex of the Quiet Mind",
+							["nextRecipeID"] = 256234,
+							["previousRecipeID"] = 256232,
+							["recipeID"] = 256233
 						},
 						{
-							["recipeID"] = 264767--[[War-Scroll of Battle Shout]]
+							["name"] = "Codex of the Quiet Mind",
+							["previousRecipeID"] = 256233,
+							["recipeID"] = 256234
 						},
 						{
-							["recipeID"] = 256232--[[Codex of the Quiet Mind]]
+							["name"] = "Scroll of Unlocking",
+							["recipeID"] = 269065
 						},
 						{
-							["recipeID"] = 256236--[[Tome of the Quiet Mind]]
+							["name"] = "Tome of the Quiet Mind",
+							["nextRecipeID"] = 256236,
+							["recipeID"] = 256235
 						},
 						{
-							["recipeID"] = 256237--[[Tome of the Quiet Mind]]
+							["name"] = "Tome of the Quiet Mind",
+							["nextRecipeID"] = 256237,
+							["previousRecipeID"] = 256235,
+							["recipeID"] = 256236
 						},
 						{
-							["recipeID"] = 264769--[[War-Scroll of Fortitude]]
+							["name"] = "Tome of the Quiet Mind",
+							["previousRecipeID"] = 256236,
+							["recipeID"] = 256237
 						},
 						{
-							["recipeID"] = 264766--[[War-Scroll of Intellect]]
+							["name"] = "War-Scroll of Battle Shout",
+							["recipeID"] = 264767
 						},
 						{
-							["recipeID"] = 269065--[[Scroll of Unlocking]]
+							["name"] = "War-Scroll of Fortitude",
+							["recipeID"] = 264769
 						},
 						{
-							["recipeID"] = 256235--[[Tome of the Quiet Mind]]
+							["name"] = "War-Scroll of Intellect",
+							["recipeID"] = 264766
 						}
 					}
 				},
 				{
-					["categoryID"] = 772--[[Contracts]],
+					["name"] = "Contracts",
+					["categoryID"] = 772,
 					["g"] = {
 						{
-							["recipeID"] = 256299--[[Contract: Champions of Azeroth]]
+							["name"] = "Contract: Champions of Azeroth",
+							["nextRecipeID"] = 256298,
+							["recipeID"] = 256297
 						},
 						{
-							["recipeID"] = 256289--[[Contract: Talanji's Expedition]]
+							["name"] = "Contract: Champions of Azeroth",
+							["nextRecipeID"] = 256299,
+							["previousRecipeID"] = 256297,
+							["recipeID"] = 256298
 						},
 						{
-							["recipeID"] = 256296--[[Contract: Tortollan Seekers]]
+							["name"] = "Contract: Champions of Azeroth",
+							["previousRecipeID"] = 256298,
+							["recipeID"] = 256299
 						},
 						{
-							["recipeID"] = 256293--[[Contract: Voldunai]]
+							["name"] = "Contract: Talanji's Expedition",
+							["nextRecipeID"] = 256288,
+							["recipeID"] = 256287
 						},
 						{
-							["recipeID"] = 256286--[[Contract: Zandalari Empire]]
+							["name"] = "Contract: Talanji's Expedition",
+							["nextRecipeID"] = 256289,
+							["previousRecipeID"] = 256287,
+							["recipeID"] = 256288
 						},
 						{
-							["recipeID"] = 256298--[[Contract: Champions of Azeroth]]
+							["name"] = "Contract: Talanji's Expedition",
+							["previousRecipeID"] = 256288,
+							["recipeID"] = 256289
 						},
 						{
-							["recipeID"] = 256288--[[Contract: Talanji's Expedition]]
+							["name"] = "Contract: The Honorbound",
+							["nextRecipeID"] = 284296,
+							["recipeID"] = 284295
 						},
 						{
-							["recipeID"] = 256295--[[Contract: Tortollan Seekers]]
+							["name"] = "Contract: The Honorbound",
+							["nextRecipeID"] = 284297,
+							["previousRecipeID"] = 284295,
+							["recipeID"] = 284296
 						},
 						{
-							["recipeID"] = 256291--[[Contract: Voldunai]]
+							["name"] = "Contract: The Honorbound",
+							["previousRecipeID"] = 284296,
+							["recipeID"] = 284297
 						},
 						{
-							["recipeID"] = 256285--[[Contract: Zandalari Empire]]
+							["name"] = "Contract: Tortollan Seekers",
+							["nextRecipeID"] = 256295,
+							["recipeID"] = 256294
 						},
 						{
-							["recipeID"] = 256297--[[Contract: Champions of Azeroth]]
+							["name"] = "Contract: Tortollan Seekers",
+							["nextRecipeID"] = 256296,
+							["previousRecipeID"] = 256294,
+							["recipeID"] = 256295
 						},
 						{
-							["recipeID"] = 256287--[[Contract: Talanji's Expedition]]
+							["name"] = "Contract: Tortollan Seekers",
+							["previousRecipeID"] = 256295,
+							["recipeID"] = 256296
 						},
 						{
-							["recipeID"] = 256294--[[Contract: Tortollan Seekers]]
+							["name"] = "Contract: Voldunai",
+							["nextRecipeID"] = 256291,
+							["recipeID"] = 256290
 						},
 						{
-							["recipeID"] = 256290--[[Contract: Voldunai]]
+							["name"] = "Contract: Voldunai",
+							["nextRecipeID"] = 256293,
+							["previousRecipeID"] = 256290,
+							["recipeID"] = 256291
 						},
 						{
-							["recipeID"] = 256284--[[Contract: Zandalari Empire]]
+							["name"] = "Contract: Voldunai",
+							["previousRecipeID"] = 256291,
+							["recipeID"] = 256293
+						},
+						{
+							["name"] = "Contract: Zandalari Empire",
+							["nextRecipeID"] = 256285,
+							["recipeID"] = 256284
+						},
+						{
+							["name"] = "Contract: Zandalari Empire",
+							["nextRecipeID"] = 256286,
+							["previousRecipeID"] = 256284,
+							["recipeID"] = 256285
+						},
+						{
+							["name"] = "Contract: Zandalari Empire",
+							["previousRecipeID"] = 256285,
+							["recipeID"] = 256286
 						}
 					}
 				},
 				{
-					["categoryID"] = 773--[[Cards]],
+					["name"] = "Cards",
+					["categoryID"] = 773,
 					["g"] = {
 						{
-							["recipeID"] = 256245--[[Darkmoon Card of War]]
+							["name"] = "Darkmoon Card of War",
+							["nextRecipeID"] = 256245,
+							["recipeID"] = 278527
 						},
 						{
-							["recipeID"] = 256246--[[Darkmoon Card of War]]
+							["name"] = "Darkmoon Card of War",
+							["nextRecipeID"] = 256246,
+							["previousRecipeID"] = 278527,
+							["recipeID"] = 256245
 						},
 						{
-							["recipeID"] = 278527--[[Darkmoon Card of War]]
+							["name"] = "Darkmoon Card of War",
+							["previousRecipeID"] = 256245,
+							["recipeID"] = 256246
 						}
 					}
 				},
 				{
-					["categoryID"] = 774--[[Off-Hands]],
+					["name"] = "Off-Hands",
+					["categoryID"] = 774,
 					["g"] = {
 						{
-							["recipeID"] = 269742--[[Honorable Combatant's Etched Vessel]]
+							["name"] = "Honorable Combatant's Etched Vessel",
+							["nextRecipeID"] = 269741,
+							["recipeID"] = 269740
 						},
 						{
-							["recipeID"] = 256249--[[Inscribed Vessel of Mysticism]]
+							["name"] = "Honorable Combatant's Etched Vessel",
+							["nextRecipeID"] = 269742,
+							["previousRecipeID"] = 269740,
+							["recipeID"] = 269741
 						},
 						{
-							["recipeID"] = 256248--[[Inscribed Vessel of Mysticism]]
+							["name"] = "Honorable Combatant's Etched Vessel",
+							["previousRecipeID"] = 269741,
+							["recipeID"] = 269742
 						},
 						{
-							["recipeID"] = 269741--[[Honorable Combatant's Etched Vessel]]
+							["name"] = "Inscribed Vessel of Mysticism",
+							["nextRecipeID"] = 256248,
+							["recipeID"] = 256247
 						},
 						{
-							["recipeID"] = 269740--[[Honorable Combatant's Etched Vessel]]
+							["name"] = "Inscribed Vessel of Mysticism",
+							["nextRecipeID"] = 256249,
+							["previousRecipeID"] = 256247,
+							["recipeID"] = 256248
 						},
 						{
-							["recipeID"] = 256247--[[Inscribed Vessel of Mysticism]]
+							["name"] = "Inscribed Vessel of Mysticism",
+							["previousRecipeID"] = 256248,
+							["recipeID"] = 256249
+						},
+						{
+							["name"] = "Sinister Combatant's Etched Vessel",
+							["nextRecipeID"] = 282804,
+							["recipeID"] = 282803
+						},
+						{
+							["name"] = "Sinister Combatant's Etched Vessel",
+							["nextRecipeID"] = 282805,
+							["previousRecipeID"] = 282803,
+							["recipeID"] = 282804
+						},
+						{
+							["name"] = "Sinister Combatant's Etched Vessel",
+							["previousRecipeID"] = 282804,
+							["recipeID"] = 282805
 						}
 					}
 				},
 				{
-					["categoryID"] = 775--[[Mass Milling]],
+					["name"] = "Mass Milling",
+					["categoryID"] = 775,
 					["g"] = {
 						{
-							["recipeID"] = 256219--[[Mass Mill Akunda's Bite]]
+							["name"] = "Mass Mill Akunda's Bite",
+							["recipeID"] = 256219
 						},
 						{
-							["recipeID"] = 256308--[[Mass Mill Anchor Weed]]
+							["name"] = "Mass Mill Anchor Weed",
+							["recipeID"] = 256308
 						},
 						{
-							["recipeID"] = 256217--[[Mass Mill Riverbud]]
+							["name"] = "Mass Mill Riverbud",
+							["recipeID"] = 256217
 						},
 						{
-							["recipeID"] = 256223--[[Mass Mill Sea Stalk]]
+							["name"] = "Mass Mill Sea Stalk",
+							["recipeID"] = 256223
 						},
 						{
-							["recipeID"] = 256221--[[Mass Mill Siren's Pollen]]
+							["name"] = "Mass Mill Siren's Pollen",
+							["recipeID"] = 256221
 						},
 						{
-							["recipeID"] = 256218--[[Mass Mill Star Moss]]
+							["name"] = "Mass Mill Star Moss",
+							["recipeID"] = 256218
 						},
 						{
-							["recipeID"] = 256220--[[Mass Mill Winter's Kiss]]
+							["name"] = "Mass Mill Winter's Kiss",
+							["recipeID"] = 256220
 						}
 					}
 				},
 				{
-					["categoryID"] = 776--[[Vantus Runes]],
+					["name"] = "Vantus Runes",
+					["categoryID"] = 776,
 					["g"] = {
 						{
-							["recipeID"] = 256303--[[Vantus Rune: Uldir]]
+							["name"] = "Vantus Rune: Battle of Dazar'alor",
+							["nextRecipeID"] = 285640,
+							["recipeID"] = 285639
 						},
 						{
-							["recipeID"] = 256304--[[Vantus Rune: Uldir]]
+							["name"] = "Vantus Rune: Battle of Dazar'alor",
+							["nextRecipeID"] = 285641,
+							["previousRecipeID"] = 285639,
+							["recipeID"] = 285640
 						},
 						{
-							["recipeID"] = 256305--[[Vantus Rune: Uldir]]
+							["name"] = "Vantus Rune: Battle of Dazar'alor",
+							["previousRecipeID"] = 285640,
+							["recipeID"] = 285641
+						},
+						{
+							["name"] = "Vantus Rune: Uldir",
+							["nextRecipeID"] = 256304,
+							["recipeID"] = 256303
+						},
+						{
+							["name"] = "Vantus Rune: Uldir",
+							["nextRecipeID"] = 256305,
+							["previousRecipeID"] = 256303,
+							["recipeID"] = 256304
+						},
+						{
+							["name"] = "Vantus Rune: Uldir",
+							["previousRecipeID"] = 256304,
+							["recipeID"] = 256305
 						}
 					}
 				},
 				{
-					["categoryID"] = 1130--[[Glyphs]],
+					["name"] = "Glyphs",
+					["categoryID"] = 1130,
 					["g"] = {
 						{
-							["recipeID"] = 276121--[[Glyph of the Humble Flyer]]
+							["name"] = "Glyph of the Dolphin",
+							["recipeID"] = 276059
 						},
 						{
-							["recipeID"] = 276059--[[Glyph of the Dolphin]]
+							["name"] = "Glyph of the Humble Flyer",
+							["recipeID"] = 276121
 						},
 						{
-							["recipeID"] = 276088--[[Glyph of the Tideskipper]]
+							["name"] = "Glyph of the Tides",
+							["recipeID"] = 289313
+						},
+						{
+							["name"] = "Glyph of the Tideskipper",
+							["recipeID"] = 276088
 						}
 					}
 				},
 				{
-					["categoryID"] = 1235--[[Follower Equipment]],
+					["name"] = "Conversions",
+					["categoryID"] = 1242,
 					["g"] = {
 						{
-							["recipeID"] = 278422--[[Crimson Ink Well]]
-						}
-					}
-				}
-			}
-		},
-		{
-			["categoryID"] = 450--[[Legion Inscription]],
-			["g"] = {
-				{
-					["categoryID"] = 451--[[Cards]],
-					["g"] = {
-						{
-							["recipeID"] = 192855--[[Prophecy Tarot]]
+							["name"] = "Aqueous Chromotography",
+							["recipeID"] = 287271
 						},
 						{
-							["recipeID"] = 192856--[[Prophecy Tarot]]
-						},
-						{
-							["recipeID"] = 192890--[[Darkmoon Card of the Legion]]
-						},
-						{
-							["recipeID"] = 192854--[[Prophecy Tarot]]
-						},
-						{
-							["recipeID"] = 192859--[[Darkmoon Card of the Legion]]
-						},
-						{
-							["recipeID"] = 191659--[[Darkmoon Card of the Legion]]
+							["name"] = "Sanguinated Chromotography",
+							["recipeID"] = 286649
 						}
 					}
 				},
 				{
-					["categoryID"] = 492--[[Mass Milling]],
+					["name"] = "Follower Equipment",
+					["categoryID"] = 1235,
 					["g"] = {
 						{
-							["recipeID"] = 247861--[[Mass Mill Astral Glory]]
-						},
-						{
-							["recipeID"] = 209664--[[Mass Mill Felwort]]
-						},
-						{
-							["recipeID"] = 209661--[[Mass Mill Fjarnskaggl]]
-						},
-						{
-							["recipeID"] = 209662--[[Mass Mill Starlight Rose]]
-						},
-						{
-							["recipeID"] = 210116--[[Mass Mill Yseralline Seeds]]
-						},
-						{
-							["recipeID"] = 209659--[[Mass Mill Dreamleaf]]
-						},
-						{
-							["recipeID"] = 209660--[[Mass Mill Foxflower]]
-						},
-						{
-							["recipeID"] = 209658--[[Mass Mill Aethril]]
-						}
-					}
-				},
-				{
-					["categoryID"] = 91--[[Glyphs]],
-					["g"] = {
-						{
-							["recipeID"] = 225535--[[Glyph of Arachnophobia]]
-						},
-						{
-							["recipeID"] = 225534--[[Glyph of Autumnal Bloom]]
-						},
-						{
-							["recipeID"] = 192841--[[Glyph of Blackout]]
-						},
-						{
-							["recipeID"] = 225548--[[Glyph of Burnout]]
-						},
-						{
-							["recipeID"] = 225522--[[Glyph of Cracked Ice]]
-						},
-						{
-							["recipeID"] = 192843--[[Glyph of Crackling Crane Lightning]]
-						},
-						{
-							["recipeID"] = 192850--[[Glyph of Crackling Flames]]
-						},
-						{
-							["recipeID"] = 232274--[[Glyph of Crackling Ox Lightning]]
-						},
-						{
-							["recipeID"] = 225550--[[Glyph of Critterhex]]
-						},
-						{
-							["recipeID"] = 254238--[[Glyph of Dark Absolution]]
-						},
-						{
-							["recipeID"] = 246982--[[Glyph of Ember Shards]]
-						},
-						{
-							["recipeID"] = 228381--[[Glyph of Falling Thunder]]
-						},
-						{
-							["recipeID"] = 192851--[[Glyph of Fallow Wings]]
-						},
-						{
-							["recipeID"] = 192839--[[Glyph of Fel Imp]]
-						},
-						{
-							["recipeID"] = 192849--[[Glyph of Fel Touched Souls]]
-						},
-						{
-							["recipeID"] = 225527--[[Glyph of Fel Wings]]
-						},
-						{
-							["recipeID"] = 225528--[[Glyph of Fel-Enemies]]
-						},
-						{
-							["recipeID"] = 246999--[[Glyph of Fel-Touched Shards]]
-						},
-						{
-							["recipeID"] = 225549--[[Glyph of Flash Bang]]
-						},
-						{
-							["recipeID"] = 225551--[[Glyph of Flickering]]
-						},
-						{
-							["recipeID"] = 246984--[[Glyph of Floating Shards]]
-						},
-						{
-							["recipeID"] = 192838--[[Glyph of Ghostly Fade]]
-						},
-						{
-							["recipeID"] = 225529--[[Glyph of Mana Touched Souls]]
-						},
-						{
-							["recipeID"] = 225536--[[Glyph of Nesingwary's Nemeses]]
-						},
-						{
-							["recipeID"] = 225552--[[Glyph of Pebbles]]
-						},
-						{
-							["recipeID"] = 225545--[[Glyph of Polymorphic Proportions]]
-						},
-						{
-							["recipeID"] = 225530--[[Glyph of Shadow-Enemies]]
-						},
-						{
-							["recipeID"] = 225546--[[Glyph of Smolder]]
-						},
-						{
-							["recipeID"] = 192840--[[Glyph of Sparkles]]
-						},
-						{
-							["recipeID"] = 192845--[[Glyph of Stellar Flare]]
-						},
-						{
-							["recipeID"] = 192852--[[Glyph of Tattered Wings]]
-						},
-						{
-							["recipeID"] = 225560--[[Glyph of the Blazing Savior]]
-						},
-						{
-							["recipeID"] = 225524--[[Glyph of the Chilled Shell]]
-						},
-						{
-							["recipeID"] = 225525--[[Glyph of the Crimson Shell]]
-						},
-						{
-							["recipeID"] = 225538--[[Glyph of the Dire Stable]]
-						},
-						{
-							["recipeID"] = 225531--[[Glyph of the Doe]]
-						},
-						{
-							["recipeID"] = 225532--[[Glyph of the Feral Chameleon]]
-						},
-						{
-							["recipeID"] = 225533--[[Glyph of the Forest Path]]
-						},
-						{
-							["recipeID"] = 225539--[[Glyph of the Goblin Anti-Grav Flare]]
-						},
-						{
-							["recipeID"] = 225540--[[Glyph of the Headhunter]]
-						},
-						{
-							["recipeID"] = 225541--[[Glyph of the Hook]]
-						},
-						{
-							["recipeID"] = 225554--[[Glyph of the Inquisitor's Eye]]
-						},
-						{
-							["recipeID"] = 254227--[[Glyph of the Lightspawn]]
-						},
-						{
-							["recipeID"] = 225555--[[Glyph of the Observer]]
-						},
-						{
-							["recipeID"] = 192846--[[Glyph of the Queen]]
-						},
-						{
-							["recipeID"] = 192842--[[Glyph of the Sentinel]]
-						},
-						{
-							["recipeID"] = 240272--[[Glyph of the Shadow Succubus]]
-						},
-						{
-							["recipeID"] = 225556--[[Glyph of the Shivarra]]
-						},
-						{
-							["recipeID"] = 192844--[[Glyph of the Spectral Raptor]]
-						},
-						{
-							["recipeID"] = 225543--[[Glyph of the Trident]]
-						},
-						{
-							["recipeID"] = 232275--[[Glyph of the Trusted Steed]]
-						},
-						{
-							["recipeID"] = 254231--[[Glyph of the Voidling]]
-						},
-						{
-							["recipeID"] = 225558--[[Glyph of the Voidlord]]
-						},
-						{
-							["recipeID"] = 233278--[[Glyph of Twilight Bloom]]
-						},
-						{
-							["recipeID"] = 225559--[[Glyph of Wrathguard]]
-						},
-						{
-							["recipeID"] = 225547--[[Glyph of Yu'lon's Grace]]
-						}
-					}
-				},
-				{
-					["categoryID"] = 453--[[Vantus Runes]],
-					["g"] = {
-						{
-							["recipeID"] = 247614--[[Vantus Rune: Antorus, the Burning Throne]]
-						},
-						{
-							["recipeID"] = 247615--[[Vantus Rune: Antorus, the Burning Throne]]
-						},
-						{
-							["recipeID"] = 247616--[[Vantus Rune: Antorus, the Burning Throne]]
-						},
-						{
-							["recipeID"] = 192897--[[Vantus Rune: Cenarius]]
-						},
-						{
-							["recipeID"] = 192868--[[Vantus Rune: Chronomatic Anomaly]]
-						},
-						{
-							["recipeID"] = 192899--[[Vantus Rune: Chronomatic Anomaly]]
-						},
-						{
-							["recipeID"] = 192894--[[Vantus Rune: Dragons of Nightmare]]
-						},
-						{
-							["recipeID"] = 192896--[[Vantus Rune: Elerethe Renferal]]
-						},
-						{
-							["recipeID"] = 192875--[[Vantus Rune: Grand Magistrix Elisande]]
-						},
-						{
-							["recipeID"] = 192906--[[Vantus Rune: Grand Magistrix Elisande]]
-						},
-						{
-							["recipeID"] = 229184--[[Vantus Rune: Guarm]]
-						},
-						{
-							["recipeID"] = 192907--[[Vantus Rune: Gul'dan]]
-						},
-						{
-							["recipeID"] = 192876--[[Vantus Rune: Gul'dan]]
-						},
-						{
-							["recipeID"] = 229185--[[Vantus Rune: Helya]]
-						},
-						{
-							["recipeID"] = 192903--[[Vantus Rune: High Botanist Tel'arn]]
-						},
-						{
-							["recipeID"] = 192872--[[Vantus Rune: High Botanist Tel'arn]]
-						},
-						{
-							["recipeID"] = 192893--[[Vantus Rune: Il'gynoth, The Heart of Corruption]]
-						},
-						{
-							["recipeID"] = 192904--[[Vantus Rune: Krosus]]
-						},
-						{
-							["recipeID"] = 192873--[[Vantus Rune: Krosus]]
-						},
-						{
-							["recipeID"] = 192892--[[Vantus Rune: Nythendra]]
-						},
-						{
-							["recipeID"] = 229183--[[Vantus Rune: Odyn]]
-						},
-						{
-							["recipeID"] = 192867--[[Vantus Rune: Skorpyron]]
-						},
-						{
-							["recipeID"] = 192898--[[Vantus Rune: Skorpyron]]
-						},
-						{
-							["recipeID"] = 192901--[[Vantus Rune: Spellblade Aluriel]]
-						},
-						{
-							["recipeID"] = 192870--[[Vantus Rune: Spellblade Aluriel]]
-						},
-						{
-							["recipeID"] = 192905--[[Vantus Rune: Star Augur Etraeus]]
-						},
-						{
-							["recipeID"] = 192874--[[Vantus Rune: Star Augur Etraeus]]
-						},
-						{
-							["recipeID"] = 192902--[[Vantus Rune: Tichondrius]]
-						},
-						{
-							["recipeID"] = 192871--[[Vantus Rune: Tichondrius]]
-						},
-						{
-							["recipeID"] = 238579--[[Vantus Rune: Tomb of Sargeras]]
-						},
-						{
-							["recipeID"] = 192900--[[Vantus Rune: Trilliax]]
-						},
-						{
-							["recipeID"] = 192869--[[Vantus Rune: Trilliax]]
-						},
-						{
-							["recipeID"] = 192891--[[Vantus Rune: Ursoc]]
-						},
-						{
-							["recipeID"] = 192895--[[Vantus Rune: Xavius]]
-						},
-						{
-							["recipeID"] = 192866--[[Vantus Rune: Cenarius]]
-						},
-						{
-							["recipeID"] = 192816--[[Vantus Rune: Chronomatic Anomaly]]
-						},
-						{
-							["recipeID"] = 192863--[[Vantus Rune: Dragons of Nightmare]]
-						},
-						{
-							["recipeID"] = 192865--[[Vantus Rune: Elerethe Renferal]]
-						},
-						{
-							["recipeID"] = 192823--[[Vantus Rune: Grand Magistrix Elisande]]
-						},
-						{
-							["recipeID"] = 229181--[[Vantus Rune: Guarm]]
-						},
-						{
-							["recipeID"] = 229178--[[Vantus Rune: Guarm]]
-						},
-						{
-							["recipeID"] = 192824--[[Vantus Rune: Gul'dan]]
-						},
-						{
-							["recipeID"] = 229182--[[Vantus Rune: Helya]]
-						},
-						{
-							["recipeID"] = 229179--[[Vantus Rune: Helya]]
-						},
-						{
-							["recipeID"] = 192820--[[Vantus Rune: High Botanist Tel'arn]]
-						},
-						{
-							["recipeID"] = 192862--[[Vantus Rune: Il'gynoth, The Heart of Corruption]]
-						},
-						{
-							["recipeID"] = 192821--[[Vantus Rune: Krosus]]
-						},
-						{
-							["recipeID"] = 192861--[[Vantus Rune: Nythendra]]
-						},
-						{
-							["recipeID"] = 229180--[[Vantus Rune: Odyn]]
-						},
-						{
-							["recipeID"] = 229177--[[Vantus Rune: Odyn]]
-						},
-						{
-							["recipeID"] = 192815--[[Vantus Rune: Skorpyron]]
-						},
-						{
-							["recipeID"] = 192818--[[Vantus Rune: Spellblade Aluriel]]
-						},
-						{
-							["recipeID"] = 192822--[[Vantus Rune: Star Augur Etraeus]]
-						},
-						{
-							["recipeID"] = 192819--[[Vantus Rune: Tichondrius]]
-						},
-						{
-							["recipeID"] = 238578--[[Vantus Rune: Tomb of Sargeras]]
-						},
-						{
-							["recipeID"] = 192817--[[Vantus Rune: Trilliax]]
-						},
-						{
-							["recipeID"] = 192860--[[Vantus Rune: Ursoc]]
-						},
-						{
-							["recipeID"] = 192864--[[Vantus Rune: Xavius]]
-						},
-						{
-							["recipeID"] = 192814--[[Vantus Rune: Cenarius]]
-						},
-						{
-							["recipeID"] = 192811--[[Vantus Rune: Dragons of Nightmare]]
-						},
-						{
-							["recipeID"] = 192813--[[Vantus Rune: Elerethe Renferal]]
-						},
-						{
-							["recipeID"] = 192810--[[Vantus Rune: Il'gynoth, The Heart of Corruption]]
-						},
-						{
-							["recipeID"] = 192809--[[Vantus Rune: Nythendra]]
-						},
-						{
-							["recipeID"] = 238577--[[Vantus Rune: Tomb of Sargeras]]
-						},
-						{
-							["recipeID"] = 192808--[[Vantus Rune: Ursoc]]
-						},
-						{
-							["recipeID"] = 192812--[[Vantus Rune: Xavius]]
-						}
-					}
-				},
-				{
-					["categoryID"] = 454--[[Books & Scrolls]],
-					["g"] = {
-						{
-							["recipeID"] = 210653--[[Songs of Battle]]
-						},
-						{
-							["recipeID"] = 210654--[[Songs of Peace]]
-						},
-						{
-							["recipeID"] = 223941--[[Songs of the Alliance]]
-						},
-						{
-							["recipeID"] = 223940--[[Songs of the Horde]]
-						},
-						{
-							["recipeID"] = 210656--[[Songs of the Legion]]
-						},
-						{
-							["recipeID"] = 222408--[[Unwritten Legend]]
-						},
-						{
-							["recipeID"] = 227240--[[Codex of the Tranquil Mind]]
-						},
-						{
-							["recipeID"] = 227239--[[Codex of the Tranquil Mind]]
-						},
-						{
-							["recipeID"] = 226248--[[Codex of the Tranquil Mind]]
-						},
-						{
-							["recipeID"] = 192802--[[Scroll of Forgotten Knowledge]]
-						},
-						{
-							["recipeID"] = 227043--[[Tome of the Tranquil Mind]]
-						},
-						{
-							["recipeID"] = 192804--[[Steamy Romance Novel Kit]]
-						}
-					}
-				},
-				{
-					["categoryID"] = 491--[[Relics]],
-					["g"] = {
-						{
-							["recipeID"] = 209510--[[Aqual Mark]]
-						},
-						{
-							["recipeID"] = 209511--[[Straszan Mark]]
+							["name"] = "Crimson Ink Well",
+							["recipeID"] = 278422
 						}
 					}
 				}
 			}
 		},
 		{
-			["categoryID"] = 410--[[Draenor Inscription]],
+			["name"] = "Legion Inscription",
+			["categoryID"] = 450,
 			["g"] = {
 				{
-					["categoryID"] = 414--[[Reagents and Research]],
+					["name"] = "Cards",
+					["categoryID"] = 451,
 					["g"] = {
 						{
-							["recipeID"] = 177045--[[Secrets of Draenor Inscription]]
+							["name"] = "Darkmoon Card of the Legion",
+							["nextRecipeID"] = 192859,
+							["recipeID"] = 191659
 						},
 						{
-							["recipeID"] = 182125--[[The Spirit of War]]
+							["name"] = "Darkmoon Card of the Legion",
+							["nextRecipeID"] = 192890,
+							["previousRecipeID"] = 191659,
+							["recipeID"] = 192859
 						},
 						{
-							["recipeID"] = 178240--[[War Paints]]
+							["name"] = "Darkmoon Card of the Legion",
+							["previousRecipeID"] = 192859,
+							["recipeID"] = 192890
 						},
 						{
-							["recipeID"] = 169081--[[War Paints]]
+							["name"] = "Prophecy Tarot",
+							["nextRecipeID"] = 192855,
+							["recipeID"] = 192854
 						},
 						{
-							["recipeID"] = 167950--[[Research: Warbinder's Ink]]
+							["name"] = "Prophecy Tarot",
+							["nextRecipeID"] = 192856,
+							["previousRecipeID"] = 192854,
+							["recipeID"] = 192855
 						},
 						{
-							["recipeID"] = 178497--[[Warbinder's Ink]]
+							["name"] = "Prophecy Tarot",
+							["previousRecipeID"] = 192855,
+							["recipeID"] = 192856
 						}
 					}
 				},
 				{
-					["categoryID"] = 420--[[Tools]],
+					["name"] = "Mass Milling",
+					["categoryID"] = 492,
 					["g"] = {
 						{
-							["recipeID"] = 227562--[[Codex of the Clear Mind]]
+							["name"] = "Mass Mill Aethril",
+							["recipeID"] = 209658
 						},
 						{
-							["recipeID"] = 227561--[[Tome of the Clear Mind]]
+							["name"] = "Mass Mill Astral Glory",
+							["recipeID"] = 247861
 						},
 						{
-							["recipeID"] = 178550--[[Draenic Mortar]]
+							["name"] = "Mass Mill Dreamleaf",
+							["recipeID"] = 209659
+						},
+						{
+							["name"] = "Mass Mill Felwort",
+							["recipeID"] = 209664
+						},
+						{
+							["name"] = "Mass Mill Fjarnskaggl",
+							["recipeID"] = 209661
+						},
+						{
+							["name"] = "Mass Mill Foxflower",
+							["recipeID"] = 209660
+						},
+						{
+							["name"] = "Mass Mill Starlight Rose",
+							["recipeID"] = 209662
+						},
+						{
+							["name"] = "Mass Mill Yseralline Seeds",
+							["recipeID"] = 210116
 						}
 					}
 				},
 				{
-					["categoryID"] = 440--[[Mass Milling]],
+					["name"] = "Glyphs",
+					["categoryID"] = 91,
 					["g"] = {
 						{
-							["recipeID"] = 190382--[[Mass Mill Fireweed]]
+							["name"] = "Glyph of Arachnophobia",
+							["recipeID"] = 225535
 						},
 						{
-							["recipeID"] = 190381--[[Mass Mill Frostweed]]
+							["name"] = "Glyph of Autumnal Bloom",
+							["recipeID"] = 225534
 						},
 						{
-							["recipeID"] = 190383--[[Mass Mill Gorgrond Flytrap]]
+							["name"] = "Glyph of Blackout",
+							["recipeID"] = 192841
 						},
 						{
-							["recipeID"] = 190385--[[Mass Mill Nagrand Arrowbloom]]
+							["name"] = "Glyph of Burnout",
+							["recipeID"] = 225548
 						},
 						{
-							["recipeID"] = 190384--[[Mass Mill Starflower]]
+							["name"] = "Glyph of Cracked Ice",
+							["recipeID"] = 225522
 						},
 						{
-							["recipeID"] = 190386--[[Mass Mill Talador Orchid]]
+							["name"] = "Glyph of Crackling Crane Lightning",
+							["recipeID"] = 192843
+						},
+						{
+							["name"] = "Glyph of Crackling Flames",
+							["recipeID"] = 192850
+						},
+						{
+							["name"] = "Glyph of Crackling Ox Lightning",
+							["recipeID"] = 232274
+						},
+						{
+							["name"] = "Glyph of Critterhex",
+							["recipeID"] = 225550
+						},
+						{
+							["name"] = "Glyph of Dark Absolution",
+							["recipeID"] = 254238
+						},
+						{
+							["name"] = "Glyph of Ember Shards",
+							["recipeID"] = 246982
+						},
+						{
+							["name"] = "Glyph of Falling Thunder",
+							["recipeID"] = 228381
+						},
+						{
+							["name"] = "Glyph of Fallow Wings",
+							["recipeID"] = 192851
+						},
+						{
+							["name"] = "Glyph of Fel Imp",
+							["recipeID"] = 192839
+						},
+						{
+							["name"] = "Glyph of Fel Touched Souls",
+							["recipeID"] = 192849
+						},
+						{
+							["name"] = "Glyph of Fel Wings",
+							["recipeID"] = 225527
+						},
+						{
+							["name"] = "Glyph of Fel-Enemies",
+							["recipeID"] = 225528
+						},
+						{
+							["name"] = "Glyph of Fel-Touched Shards",
+							["recipeID"] = 246999
+						},
+						{
+							["name"] = "Glyph of Flash Bang",
+							["recipeID"] = 225549
+						},
+						{
+							["name"] = "Glyph of Flickering",
+							["recipeID"] = 225551
+						},
+						{
+							["name"] = "Glyph of Floating Shards",
+							["recipeID"] = 246984
+						},
+						{
+							["name"] = "Glyph of Ghostly Fade",
+							["recipeID"] = 192838
+						},
+						{
+							["name"] = "Glyph of Mana Touched Souls",
+							["recipeID"] = 225529
+						},
+						{
+							["name"] = "Glyph of Nesingwary's Nemeses",
+							["recipeID"] = 225536
+						},
+						{
+							["name"] = "Glyph of Pebbles",
+							["recipeID"] = 225552
+						},
+						{
+							["name"] = "Glyph of Polymorphic Proportions",
+							["recipeID"] = 225545
+						},
+						{
+							["name"] = "Glyph of Shadow-Enemies",
+							["recipeID"] = 225530
+						},
+						{
+							["name"] = "Glyph of Smolder",
+							["recipeID"] = 225546
+						},
+						{
+							["name"] = "Glyph of Sparkles",
+							["recipeID"] = 192840
+						},
+						{
+							["name"] = "Glyph of Stellar Flare",
+							["recipeID"] = 192845
+						},
+						{
+							["name"] = "Glyph of Tattered Wings",
+							["recipeID"] = 192852
+						},
+						{
+							["name"] = "Glyph of the Blazing Savior",
+							["recipeID"] = 225560
+						},
+						{
+							["name"] = "Glyph of the Chilled Shell",
+							["recipeID"] = 225524
+						},
+						{
+							["name"] = "Glyph of the Crimson Shell",
+							["recipeID"] = 225525
+						},
+						{
+							["name"] = "Glyph of the Dire Stable",
+							["recipeID"] = 225538
+						},
+						{
+							["name"] = "Glyph of the Doe",
+							["recipeID"] = 225531
+						},
+						{
+							["name"] = "Glyph of the Feral Chameleon",
+							["recipeID"] = 225532
+						},
+						{
+							["name"] = "Glyph of the Forest Path",
+							["recipeID"] = 225533
+						},
+						{
+							["name"] = "Glyph of the Goblin Anti-Grav Flare",
+							["recipeID"] = 225539
+						},
+						{
+							["name"] = "Glyph of the Hook",
+							["recipeID"] = 225541
+						},
+						{
+							["name"] = "Glyph of the Inquisitor's Eye",
+							["recipeID"] = 225554
+						},
+						{
+							["name"] = "Glyph of the Lightspawn",
+							["recipeID"] = 254227
+						},
+						{
+							["name"] = "Glyph of the Observer",
+							["recipeID"] = 225555
+						},
+						{
+							["name"] = "Glyph of the Queen",
+							["recipeID"] = 192846
+						},
+						{
+							["name"] = "Glyph of the Sentinel",
+							["recipeID"] = 192842
+						},
+						{
+							["name"] = "Glyph of the Shadow Succubus",
+							["recipeID"] = 240272
+						},
+						{
+							["name"] = "Glyph of the Shivarra",
+							["recipeID"] = 225556
+						},
+						{
+							["name"] = "Glyph of the Spectral Raptor",
+							["recipeID"] = 192844
+						},
+						{
+							["name"] = "Glyph of the Trident",
+							["recipeID"] = 225543
+						},
+						{
+							["name"] = "Glyph of the Trusted Steed",
+							["recipeID"] = 232275
+						},
+						{
+							["name"] = "Glyph of the Voidling",
+							["recipeID"] = 254231
+						},
+						{
+							["name"] = "Glyph of the Voidlord",
+							["recipeID"] = 225558
+						},
+						{
+							["name"] = "Glyph of Twilight Bloom",
+							["recipeID"] = 233278
+						},
+						{
+							["name"] = "Glyph of Wrathguard",
+							["recipeID"] = 225559
+						},
+						{
+							["name"] = "Glyph of Yu'lon's Grace",
+							["recipeID"] = 225547
 						}
 					}
 				},
 				{
-					["categoryID"] = 361--[[Item Enhancers]],
+					["name"] = "Vantus Runes",
+					["categoryID"] = 453,
 					["g"] = {
 						{
-							["recipeID"] = 187519--[[Savage Ensorcelled Tarot]]
+							["name"] = "Vantus Rune: Antorus, the Burning Throne",
+							["nextRecipeID"] = 247615,
+							["recipeID"] = 247614
 						},
 						{
-							["recipeID"] = 187518--[[Savage Weapon Crystal]]
+							["name"] = "Vantus Rune: Antorus, the Burning Throne",
+							["nextRecipeID"] = 247616,
+							["previousRecipeID"] = 247614,
+							["recipeID"] = 247615
 						},
 						{
-							["recipeID"] = 187495--[[Mighty Ensorcelled Tarot]]
+							["name"] = "Vantus Rune: Antorus, the Burning Throne",
+							["previousRecipeID"] = 247615,
+							["recipeID"] = 247616
 						},
 						{
-							["recipeID"] = 187494--[[Mighty Weapon Crystal]]
+							["name"] = "Vantus Rune: Cenarius",
+							["nextRecipeID"] = 192866,
+							["recipeID"] = 192814
 						},
 						{
-							["recipeID"] = 178248--[[Ensorcelled Tarot]]
+							["name"] = "Vantus Rune: Cenarius",
+							["nextRecipeID"] = 192897,
+							["previousRecipeID"] = 192814,
+							["recipeID"] = 192866
 						},
 						{
-							["recipeID"] = 166366--[[Weapon Crystal]]
+							["name"] = "Vantus Rune: Cenarius",
+							["previousRecipeID"] = 192866,
+							["recipeID"] = 192897
 						},
 						{
-							["recipeID"] = 166432--[[Volatile Crystal]]
+							["name"] = "Vantus Rune: Chronomatic Anomaly",
+							["nextRecipeID"] = 192868,
+							["recipeID"] = 192816
+						},
+						{
+							["name"] = "Vantus Rune: Chronomatic Anomaly",
+							["nextRecipeID"] = 192899,
+							["previousRecipeID"] = 192816,
+							["recipeID"] = 192868
+						},
+						{
+							["name"] = "Vantus Rune: Chronomatic Anomaly",
+							["previousRecipeID"] = 192868,
+							["recipeID"] = 192899
+						},
+						{
+							["name"] = "Vantus Rune: Dragons of Nightmare",
+							["nextRecipeID"] = 192863,
+							["recipeID"] = 192811
+						},
+						{
+							["name"] = "Vantus Rune: Dragons of Nightmare",
+							["nextRecipeID"] = 192894,
+							["previousRecipeID"] = 192811,
+							["recipeID"] = 192863
+						},
+						{
+							["name"] = "Vantus Rune: Dragons of Nightmare",
+							["previousRecipeID"] = 192863,
+							["recipeID"] = 192894
+						},
+						{
+							["name"] = "Vantus Rune: Elerethe Renferal",
+							["nextRecipeID"] = 192865,
+							["recipeID"] = 192813
+						},
+						{
+							["name"] = "Vantus Rune: Elerethe Renferal",
+							["nextRecipeID"] = 192896,
+							["previousRecipeID"] = 192813,
+							["recipeID"] = 192865
+						},
+						{
+							["name"] = "Vantus Rune: Elerethe Renferal",
+							["previousRecipeID"] = 192865,
+							["recipeID"] = 192896
+						},
+						{
+							["name"] = "Vantus Rune: Grand Magistrix Elisande",
+							["nextRecipeID"] = 192875,
+							["recipeID"] = 192823
+						},
+						{
+							["name"] = "Vantus Rune: Grand Magistrix Elisande",
+							["nextRecipeID"] = 192906,
+							["previousRecipeID"] = 192823,
+							["recipeID"] = 192875
+						},
+						{
+							["name"] = "Vantus Rune: Grand Magistrix Elisande",
+							["previousRecipeID"] = 192875,
+							["recipeID"] = 192906
+						},
+						{
+							["name"] = "Vantus Rune: Guarm",
+							["nextRecipeID"] = 229181,
+							["recipeID"] = 229178
+						},
+						{
+							["name"] = "Vantus Rune: Guarm",
+							["nextRecipeID"] = 229184,
+							["previousRecipeID"] = 229178,
+							["recipeID"] = 229181
+						},
+						{
+							["name"] = "Vantus Rune: Guarm",
+							["previousRecipeID"] = 229181,
+							["recipeID"] = 229184
+						},
+						{
+							["name"] = "Vantus Rune: Gul'dan",
+							["nextRecipeID"] = 192876,
+							["recipeID"] = 192824
+						},
+						{
+							["name"] = "Vantus Rune: Gul'dan",
+							["nextRecipeID"] = 192907,
+							["previousRecipeID"] = 192824,
+							["recipeID"] = 192876
+						},
+						{
+							["name"] = "Vantus Rune: Gul'dan",
+							["previousRecipeID"] = 192876,
+							["recipeID"] = 192907
+						},
+						{
+							["name"] = "Vantus Rune: Helya",
+							["nextRecipeID"] = 229182,
+							["recipeID"] = 229179
+						},
+						{
+							["name"] = "Vantus Rune: Helya",
+							["nextRecipeID"] = 229185,
+							["previousRecipeID"] = 229179,
+							["recipeID"] = 229182
+						},
+						{
+							["name"] = "Vantus Rune: Helya",
+							["previousRecipeID"] = 229182,
+							["recipeID"] = 229185
+						},
+						{
+							["name"] = "Vantus Rune: High Botanist Tel'arn",
+							["nextRecipeID"] = 192872,
+							["recipeID"] = 192820
+						},
+						{
+							["name"] = "Vantus Rune: High Botanist Tel'arn",
+							["nextRecipeID"] = 192903,
+							["previousRecipeID"] = 192820,
+							["recipeID"] = 192872
+						},
+						{
+							["name"] = "Vantus Rune: High Botanist Tel'arn",
+							["previousRecipeID"] = 192872,
+							["recipeID"] = 192903
+						},
+						{
+							["name"] = "Vantus Rune: Il'gynoth, The Heart of Corruption",
+							["nextRecipeID"] = 192862,
+							["recipeID"] = 192810
+						},
+						{
+							["name"] = "Vantus Rune: Il'gynoth, The Heart of Corruption",
+							["nextRecipeID"] = 192893,
+							["previousRecipeID"] = 192810,
+							["recipeID"] = 192862
+						},
+						{
+							["name"] = "Vantus Rune: Il'gynoth, The Heart of Corruption",
+							["previousRecipeID"] = 192862,
+							["recipeID"] = 192893
+						},
+						{
+							["name"] = "Vantus Rune: Krosus",
+							["nextRecipeID"] = 192873,
+							["recipeID"] = 192821
+						},
+						{
+							["name"] = "Vantus Rune: Krosus",
+							["nextRecipeID"] = 192904,
+							["previousRecipeID"] = 192821,
+							["recipeID"] = 192873
+						},
+						{
+							["name"] = "Vantus Rune: Krosus",
+							["previousRecipeID"] = 192873,
+							["recipeID"] = 192904
+						},
+						{
+							["name"] = "Vantus Rune: Nythendra",
+							["nextRecipeID"] = 192861,
+							["recipeID"] = 192809
+						},
+						{
+							["name"] = "Vantus Rune: Nythendra",
+							["nextRecipeID"] = 192892,
+							["previousRecipeID"] = 192809,
+							["recipeID"] = 192861
+						},
+						{
+							["name"] = "Vantus Rune: Nythendra",
+							["previousRecipeID"] = 192861,
+							["recipeID"] = 192892
+						},
+						{
+							["name"] = "Vantus Rune: Odyn",
+							["nextRecipeID"] = 229180,
+							["recipeID"] = 229177
+						},
+						{
+							["name"] = "Vantus Rune: Odyn",
+							["nextRecipeID"] = 229183,
+							["previousRecipeID"] = 229177,
+							["recipeID"] = 229180
+						},
+						{
+							["name"] = "Vantus Rune: Odyn",
+							["previousRecipeID"] = 229180,
+							["recipeID"] = 229183
+						},
+						{
+							["name"] = "Vantus Rune: Skorpyron",
+							["nextRecipeID"] = 192867,
+							["recipeID"] = 192815
+						},
+						{
+							["name"] = "Vantus Rune: Skorpyron",
+							["nextRecipeID"] = 192898,
+							["previousRecipeID"] = 192815,
+							["recipeID"] = 192867
+						},
+						{
+							["name"] = "Vantus Rune: Skorpyron",
+							["previousRecipeID"] = 192867,
+							["recipeID"] = 192898
+						},
+						{
+							["name"] = "Vantus Rune: Spellblade Aluriel",
+							["nextRecipeID"] = 192870,
+							["recipeID"] = 192818
+						},
+						{
+							["name"] = "Vantus Rune: Spellblade Aluriel",
+							["nextRecipeID"] = 192901,
+							["previousRecipeID"] = 192818,
+							["recipeID"] = 192870
+						},
+						{
+							["name"] = "Vantus Rune: Spellblade Aluriel",
+							["previousRecipeID"] = 192870,
+							["recipeID"] = 192901
+						},
+						{
+							["name"] = "Vantus Rune: Star Augur Etraeus",
+							["nextRecipeID"] = 192874,
+							["recipeID"] = 192822
+						},
+						{
+							["name"] = "Vantus Rune: Star Augur Etraeus",
+							["nextRecipeID"] = 192905,
+							["previousRecipeID"] = 192822,
+							["recipeID"] = 192874
+						},
+						{
+							["name"] = "Vantus Rune: Star Augur Etraeus",
+							["previousRecipeID"] = 192874,
+							["recipeID"] = 192905
+						},
+						{
+							["name"] = "Vantus Rune: Tichondrius",
+							["nextRecipeID"] = 192871,
+							["recipeID"] = 192819
+						},
+						{
+							["name"] = "Vantus Rune: Tichondrius",
+							["nextRecipeID"] = 192902,
+							["previousRecipeID"] = 192819,
+							["recipeID"] = 192871
+						},
+						{
+							["name"] = "Vantus Rune: Tichondrius",
+							["previousRecipeID"] = 192871,
+							["recipeID"] = 192902
+						},
+						{
+							["name"] = "Vantus Rune: Tomb of Sargeras",
+							["nextRecipeID"] = 238578,
+							["recipeID"] = 238577
+						},
+						{
+							["name"] = "Vantus Rune: Tomb of Sargeras",
+							["nextRecipeID"] = 238579,
+							["previousRecipeID"] = 238577,
+							["recipeID"] = 238578
+						},
+						{
+							["name"] = "Vantus Rune: Tomb of Sargeras",
+							["previousRecipeID"] = 238578,
+							["recipeID"] = 238579
+						},
+						{
+							["name"] = "Vantus Rune: Trilliax",
+							["nextRecipeID"] = 192869,
+							["recipeID"] = 192817
+						},
+						{
+							["name"] = "Vantus Rune: Trilliax",
+							["nextRecipeID"] = 192900,
+							["previousRecipeID"] = 192817,
+							["recipeID"] = 192869
+						},
+						{
+							["name"] = "Vantus Rune: Trilliax",
+							["previousRecipeID"] = 192869,
+							["recipeID"] = 192900
+						},
+						{
+							["name"] = "Vantus Rune: Ursoc",
+							["nextRecipeID"] = 192860,
+							["recipeID"] = 192808
+						},
+						{
+							["name"] = "Vantus Rune: Ursoc",
+							["nextRecipeID"] = 192891,
+							["previousRecipeID"] = 192808,
+							["recipeID"] = 192860
+						},
+						{
+							["name"] = "Vantus Rune: Ursoc",
+							["previousRecipeID"] = 192860,
+							["recipeID"] = 192891
+						},
+						{
+							["name"] = "Vantus Rune: Xavius",
+							["nextRecipeID"] = 192864,
+							["recipeID"] = 192812
+						},
+						{
+							["name"] = "Vantus Rune: Xavius",
+							["nextRecipeID"] = 192895,
+							["previousRecipeID"] = 192812,
+							["recipeID"] = 192864
+						},
+						{
+							["name"] = "Vantus Rune: Xavius",
+							["previousRecipeID"] = 192864,
+							["recipeID"] = 192895
 						}
 					}
 				},
 				{
-					["categoryID"] = 412--[[Card]],
+					["name"] = "Books & Scrolls",
+					["categoryID"] = 454,
 					["g"] = {
 						{
-							["recipeID"] = 163294--[[Darkmoon Card of Draenor]]
+							["name"] = "Codex of the Tranquil Mind",
+							["nextRecipeID"] = 227239,
+							["recipeID"] = 226248
 						},
 						{
-							["recipeID"] = 166669--[[Card of Omens]]
+							["name"] = "Codex of the Tranquil Mind",
+							["nextRecipeID"] = 227240,
+							["previousRecipeID"] = 226248,
+							["recipeID"] = 227239
 						},
 						{
-							["recipeID"] = 175392--[[Savage Tarot]]
+							["name"] = "Codex of the Tranquil Mind",
+							["previousRecipeID"] = 227239,
+							["recipeID"] = 227240
 						},
 						{
-							["recipeID"] = 175390--[[Laughing Tarot]]
+							["name"] = "Scroll of Forgotten Knowledge",
+							["recipeID"] = 192802
 						},
 						{
-							["recipeID"] = 175389--[[Ocean Tarot]]
+							["name"] = "Songs of Battle",
+							["recipeID"] = 210653
+						},
+						{
+							["name"] = "Songs of Peace",
+							["recipeID"] = 210654
+						},
+						{
+							["name"] = "Songs of the Alliance",
+							["recipeID"] = 223941
+						},
+						{
+							["name"] = "Songs of the Horde",
+							["recipeID"] = 223940
+						},
+						{
+							["name"] = "Songs of the Legion",
+							["recipeID"] = 210656
+						},
+						{
+							["name"] = "Steamy Romance Novel Kit",
+							["recipeID"] = 192804
+						},
+						{
+							["name"] = "Tome of the Tranquil Mind",
+							["recipeID"] = 227043
+						},
+						{
+							["name"] = "Unwritten Legend",
+							["recipeID"] = 222408
 						}
 					}
 				},
 				{
-					["categoryID"] = 411--[[Staves & Wands]],
+					["name"] = "Relics",
+					["categoryID"] = 491,
 					["g"] = {
 						{
-							["recipeID"] = 166356--[[Crystalfire Spellstaff]]
+							["name"] = "Aqual Mark",
+							["recipeID"] = 209510
 						},
 						{
-							["recipeID"] = 166359--[[Etched-Blade Warstaff]]
-						},
-						{
-							["recipeID"] = 165804--[[Warmaster's Firestick]]
-						}
-					}
-				},
-				{
-					["categoryID"] = 413--[[Off-hand]],
-					["g"] = {
-						{
-							["recipeID"] = 166363--[[Shadowtome]]
+							["name"] = "Straszan Mark",
+							["recipeID"] = 209511
 						}
 					}
 				}
 			}
 		},
 		{
-			["categoryID"] = 763--[[Pandaria Inscription]],
+			["name"] = "Draenor Inscription",
+			["categoryID"] = 410,
 			["g"] = {
 				{
-					["categoryID"] = 779--[[Inks]],
+					["name"] = "Reagents and Research",
+					["categoryID"] = 414,
 					["g"] = {
 						{
-							["recipeID"] = 111645--[[Ink of Dreams]]
+							["name"] = "Research: Warbinder's Ink",
+							["recipeID"] = 167950
 						},
 						{
-							["recipeID"] = 111646--[[Starlight Ink]]
+							["name"] = "Secrets of Draenor Inscription",
+							["recipeID"] = 177045
+						},
+						{
+							["name"] = "The Spirit of War",
+							["recipeID"] = 182125
+						},
+						{
+							["name"] = "War Paints",
+							["recipeID"] = 178240
+						},
+						{
+							["name"] = "War Paints",
+							["recipeID"] = 169081
+						},
+						{
+							["name"] = "Warbinder's Ink",
+							["recipeID"] = 178497
 						}
 					}
 				},
 				{
-					["categoryID"] = 777--[[Glyphs]],
+					["name"] = "Tools",
+					["categoryID"] = 420,
 					["g"] = {
 						{
-							["recipeID"] = 64261--[[Glyph of Deluge]]
+							["name"] = "Codex of the Clear Mind",
+							["recipeID"] = 227562
 						},
 						{
-							["recipeID"] = 58301--[[Glyph of Lesser Proportion]]
+							["name"] = "Draenic Mortar",
+							["recipeID"] = 178550
 						},
 						{
-							["recipeID"] = 148274--[[Glyph of Pillar of Light]]
-						},
-						{
-							["recipeID"] = 126696--[[Glyph of the Val'kyr]]
-						},
-						{
-							["recipeID"] = 182158--[[Glyph of the Sun]]
+							["name"] = "Tome of the Clear Mind",
+							["recipeID"] = 227561
 						}
 					}
 				},
 				{
-					["categoryID"] = 778--[[Staves & Off-Hands]],
+					["name"] = "Mass Milling",
+					["categoryID"] = 440,
 					["g"] = {
 						{
-							["recipeID"] = 111918--[[Inscribed Crane Staff]]
+							["name"] = "Mass Mill Fireweed",
+							["recipeID"] = 190382
 						},
 						{
-							["recipeID"] = 111909--[[Inscribed Jade Fan]]
+							["name"] = "Mass Mill Frostweed",
+							["recipeID"] = 190381
 						},
 						{
-							["recipeID"] = 111910--[[Inscribed Red Fan]]
+							["name"] = "Mass Mill Gorgrond Flytrap",
+							["recipeID"] = 190383
 						},
 						{
-							["recipeID"] = 111919--[[Inscribed Serpent Staff]]
+							["name"] = "Mass Mill Nagrand Arrowbloom",
+							["recipeID"] = 190385
 						},
 						{
-							["recipeID"] = 111921--[[Inscribed Tiger Staff]]
+							["name"] = "Mass Mill Starflower",
+							["recipeID"] = 190384
 						},
 						{
-							["recipeID"] = 111920--[[Ghost Iron Staff]]
-						},
-						{
-							["recipeID"] = 111908--[[Inscribed Fan]]
-						},
-						{
-							["recipeID"] = 111917--[[Rain Poppy Staff]]
+							["name"] = "Mass Mill Talador Orchid",
+							["recipeID"] = 190386
 						}
 					}
 				},
 				{
-					["categoryID"] = 784--[[Trinkets]],
+					["name"] = "Item Enhancers",
+					["categoryID"] = 361,
 					["g"] = {
 						{
-							["recipeID"] = 146638--[[Crafted Malevolent Gladiator's Medallion of Tenacity]]
+							["name"] = "Ensorcelled Tarot",
+							["recipeID"] = 178248
+						},
+						{
+							["name"] = "Mighty Ensorcelled Tarot",
+							["recipeID"] = 187495
+						},
+						{
+							["name"] = "Mighty Weapon Crystal",
+							["recipeID"] = 187494
+						},
+						{
+							["name"] = "Savage Ensorcelled Tarot",
+							["recipeID"] = 187519
+						},
+						{
+							["name"] = "Savage Weapon Crystal",
+							["recipeID"] = 187518
+						},
+						{
+							["name"] = "Volatile Crystal",
+							["recipeID"] = 166432
+						},
+						{
+							["name"] = "Weapon Crystal",
+							["recipeID"] = 166366
 						}
 					}
 				},
 				{
-					["categoryID"] = 780--[[Cards]],
+					["name"] = "Card",
+					["categoryID"] = 412,
 					["g"] = {
 						{
-							["recipeID"] = 111830--[[Darkmoon Card of Mists]]
+							["name"] = "Card of Omens",
+							["recipeID"] = 166669
 						},
 						{
-							["recipeID"] = 130407--[[Mystery of the Mists]]
+							["name"] = "Darkmoon Card of Draenor",
+							["recipeID"] = 163294
+						},
+						{
+							["name"] = "Laughing Tarot",
+							["recipeID"] = 175390
+						},
+						{
+							["name"] = "Ocean Tarot",
+							["recipeID"] = 175389
+						},
+						{
+							["name"] = "Savage Tarot",
+							["recipeID"] = 175392
 						}
 					}
 				},
 				{
-					["categoryID"] = 781--[[Scrolls & Research]],
+					["name"] = "Staves & Wands",
+					["categoryID"] = 411,
 					["g"] = {
 						{
-							["recipeID"] = 112045--[[Runescroll of Fortitude III]]
+							["name"] = "Crystalfire Spellstaff",
+							["recipeID"] = 166356
 						},
 						{
-							["recipeID"] = 112996--[[Scroll of Wisdom]]
+							["name"] = "Etched-Blade Warstaff",
+							["recipeID"] = 166359
 						},
 						{
-							["recipeID"] = 165467--[[Research: Ink of Dreams]]
+							["name"] = "Warmaster's Firestick",
+							["recipeID"] = 165804
 						}
 					}
 				},
 				{
-					["categoryID"] = 119--[[Shoulder Inscription]],
+					["name"] = "Off-hand",
+					["categoryID"] = 413,
 					["g"] = {
 						{
-							["recipeID"] = 126995--[[Greater Crane Wing Inscription]]
-						},
-						{
-							["recipeID"] = 126994--[[Greater Ox Horn Inscription]]
-						},
-						{
-							["recipeID"] = 126996--[[Greater Tiger Claw Inscription]]
-						},
-						{
-							["recipeID"] = 126997--[[Greater Tiger Fang Inscription]]
-						},
-						{
-							["recipeID"] = 127023--[[Secret Crane Wing Inscription]]
-						},
-						{
-							["recipeID"] = 127024--[[Secret Ox Horn Inscription]]
-						},
-						{
-							["recipeID"] = 127021--[[Secret Tiger Claw Inscription]]
-						},
-						{
-							["recipeID"] = 127020--[[Secret Tiger Fang Inscription]]
-						},
-						{
-							["recipeID"] = 127018--[[Crane Wing Inscription]]
-						},
-						{
-							["recipeID"] = 127019--[[Ox Horn Inscription]]
-						},
-						{
-							["recipeID"] = 127017--[[Tiger Claw Inscription]]
-						},
-						{
-							["recipeID"] = 127016--[[Tiger Fang Inscription]]
-						}
-					}
-				},
-				{
-					["categoryID"] = 782--[[Quest]],
-					["g"] = {
-						{
-							["recipeID"] = 127378--[[Commissioned Painting]]
-						},
-						{
-							["recipeID"] = 127391--[[Engraved Jade Disk]]
-						},
-						{
-							["recipeID"] = 127475--[[Incarnadine Ink]]
-						},
-						{
-							["recipeID"] = 128922--[[Portrait of Madam Goya]]
-						},
-						{
-							["recipeID"] = 127481--[[Inscribed Monument]]
-						}
-					}
-				},
-				{
-					["categoryID"] = 783--[[Toys & Pets]],
-					["g"] = {
-						{
-							["recipeID"] = 126988--[[Origami Crane]]
-						},
-						{
-							["recipeID"] = 126989--[[Origami Frog]]
-						},
-						{
-							["recipeID"] = 127009--[[Chi-ji Kite]]
-						},
-						{
-							["recipeID"] = 127007--[[Yu'lon Kite]]
+							["name"] = "Shadowtome",
+							["recipeID"] = 166363
 						}
 					}
 				}
 			}
 		},
 		{
-			["categoryID"] = 765--[[Cataclysm Inscription]],
+			["name"] = "Pandaria Inscription",
+			["categoryID"] = 763,
 			["g"] = {
 				{
-					["categoryID"] = 785--[[Inks]],
+					["name"] = "Inks",
+					["categoryID"] = 779,
 					["g"] = {
 						{
-							["recipeID"] = 86005--[[Inferno Ink]]
+							["name"] = "Ink of Dreams",
+							["recipeID"] = 111645
 						},
 						{
-							["recipeID"] = 86004--[[Blackfallow Ink]]
+							["name"] = "Starlight Ink",
+							["recipeID"] = 111646
 						}
 					}
 				},
 				{
-					["categoryID"] = 786--[[Glyphs]],
+					["name"] = "Glyphs",
+					["categoryID"] = 777,
 					["g"] = {
 						{
-							["recipeID"] = 112430--[[Glyph of Burning Anger]]
+							["name"] = "Glyph of Lesser Proportion",
+							["recipeID"] = 58301
 						},
 						{
-							["recipeID"] = 112462--[[Glyph of Crackling Tiger Lightning]]
+							["name"] = "Glyph of Pillar of Light",
+							["recipeID"] = 148274
 						},
 						{
-							["recipeID"] = 56986--[[Glyph of Crittermorph]]
+							["name"] = "Glyph of the Sun",
+							["recipeID"] = 182158
 						},
 						{
-							["recipeID"] = 64260--[[Glyph of Disguise]]
-						},
-						{
-							["recipeID"] = 126800--[[Glyph of Shadowy Friends]]
-						},
-						{
-							["recipeID"] = 124466--[[Glyph of the Heavens]]
-						},
-						{
-							["recipeID"] = 58287--[[Glyph of the Ursol Chameleon]]
-						},
-						{
-							["recipeID"] = 68166--[[Glyph of Thunder Strike]]
+							["name"] = "Glyph of the Val'kyr",
+							["recipeID"] = 126696
 						}
 					}
 				},
 				{
-					["categoryID"] = 787--[[Scrolls & Research]],
+					["name"] = "Staves & Off-Hands",
+					["categoryID"] = 778,
 					["g"] = {
 						{
-							["recipeID"] = 165466--[[Research: Blackfallow Ink]]
+							["name"] = "Ghost Iron Staff",
+							["recipeID"] = 111920
 						},
 						{
-							["recipeID"] = 85785--[[Runescroll of Fortitude II]]
+							["name"] = "Inscribed Crane Staff",
+							["recipeID"] = 111918
 						},
 						{
-							["recipeID"] = 89370--[[Scroll of Agility IX]]
+							["name"] = "Inscribed Fan",
+							["recipeID"] = 111908
 						},
 						{
-							["recipeID"] = 89369--[[Scroll of Strength IX]]
+							["name"] = "Inscribed Jade Fan",
+							["recipeID"] = 111909
 						},
 						{
-							["recipeID"] = 89372--[[Scroll of Stamina IX]]
+							["name"] = "Inscribed Red Fan",
+							["recipeID"] = 111910
 						},
 						{
-							["recipeID"] = 89371--[[Scroll of Versatility IX]]
+							["name"] = "Inscribed Serpent Staff",
+							["recipeID"] = 111919
 						},
 						{
-							["recipeID"] = 89373--[[Scroll of Protection IX]]
+							["name"] = "Inscribed Tiger Staff",
+							["recipeID"] = 111921
 						},
 						{
-							["recipeID"] = 89368--[[Scroll of Intellect IX]]
+							["name"] = "Rain Poppy Staff",
+							["recipeID"] = 111917
 						}
 					}
 				},
 				{
-					["categoryID"] = 788--[[Cards]],
+					["name"] = "Trinkets",
+					["categoryID"] = 784,
 					["g"] = {
 						{
-							["recipeID"] = 86615--[[Darkmoon Card of Destruction]]
-						},
-						{
-							["recipeID"] = 86609--[[Mysterious Fortune Card]]
+							["name"] = "Crafted Malevolent Gladiator's Medallion of Tenacity",
+							["recipeID"] = 146638
 						}
 					}
 				},
 				{
-					["categoryID"] = 789--[[Shoulder Inscription]],
+					["name"] = "Cards",
+					["categoryID"] = 780,
 					["g"] = {
 						{
-							["recipeID"] = 86403--[[Felfire Inscription]]
+							["name"] = "Darkmoon Card of Mists",
+							["recipeID"] = 111830
 						},
 						{
-							["recipeID"] = 86402--[[Inscription of the Earth Prince]]
-						},
-						{
-							["recipeID"] = 86401--[[Lionsmane Inscription]]
-						},
-						{
-							["recipeID"] = 86375--[[Swiftsteel Inscription]]
+							["name"] = "Mystery of the Mists",
+							["recipeID"] = 130407
 						}
 					}
 				},
 				{
-					["categoryID"] = 790--[[Weapons & Off-Hands]],
+					["name"] = "Scrolls & Research",
+					["categoryID"] = 781,
 					["g"] = {
 						{
-							["recipeID"] = 86643--[[Battle Tome]]
+							["name"] = "Research: Ink of Dreams",
+							["recipeID"] = 165467
 						},
 						{
-							["recipeID"] = 86642--[[Divine Companion]]
+							["name"] = "Runescroll of Fortitude III",
+							["recipeID"] = 112045
 						},
 						{
-							["recipeID"] = 86641--[[Dungeoneering Guide]]
-						},
-						{
-							["recipeID"] = 86652--[[Rosethorn Staff]]
-						},
-						{
-							["recipeID"] = 86653--[[Silver Inlaid Staff]]
-						},
-						{
-							["recipeID"] = 86649--[[Runed Staff]]
-						},
-						{
-							["recipeID"] = 86648--[[Key to the Planes]]
-						},
-						{
-							["recipeID"] = 86616--[[Book of Blood]]
-						},
-						{
-							["recipeID"] = 86640--[[Lord Rottington's Pressed Wisp Book]]
+							["name"] = "Scroll of Wisdom",
+							["recipeID"] = 112996
 						}
 					}
 				},
 				{
-					["categoryID"] = 791--[[Quest]],
+					["name"] = "Shoulder Inscription",
+					["categoryID"] = 119,
 					["g"] = {
 						{
-							["recipeID"] = 86654--[[Forged Documents]]
+							["name"] = "Crane Wing Inscription",
+							["recipeID"] = 127018
+						},
+						{
+							["name"] = "Greater Crane Wing Inscription",
+							["recipeID"] = 126995
+						},
+						{
+							["name"] = "Greater Ox Horn Inscription",
+							["recipeID"] = 126994
+						},
+						{
+							["name"] = "Greater Tiger Claw Inscription",
+							["recipeID"] = 126996
+						},
+						{
+							["name"] = "Greater Tiger Fang Inscription",
+							["recipeID"] = 126997
+						},
+						{
+							["name"] = "Ox Horn Inscription",
+							["recipeID"] = 127019
+						},
+						{
+							["name"] = "Secret Crane Wing Inscription",
+							["recipeID"] = 127023
+						},
+						{
+							["name"] = "Secret Ox Horn Inscription",
+							["recipeID"] = 127024
+						},
+						{
+							["name"] = "Secret Tiger Claw Inscription",
+							["recipeID"] = 127021
+						},
+						{
+							["name"] = "Secret Tiger Fang Inscription",
+							["recipeID"] = 127020
+						},
+						{
+							["name"] = "Tiger Claw Inscription",
+							["recipeID"] = 127017
+						},
+						{
+							["name"] = "Tiger Fang Inscription",
+							["recipeID"] = 127016
 						}
 					}
 				},
 				{
-					["categoryID"] = 792--[[Toys]],
+					["name"] = "Quest",
+					["categoryID"] = 782,
 					["g"] = {
 						{
-							["recipeID"] = 86646--[[Origami Beetle]]
+							["name"] = "Commissioned Painting",
+							["recipeID"] = 127378
 						},
 						{
-							["recipeID"] = 86645--[[Origami Rock]]
+							["name"] = "Engraved Jade Disk",
+							["recipeID"] = 127391
 						},
 						{
-							["recipeID"] = 86644--[[Origami Slime]]
+							["name"] = "Incarnadine Ink",
+							["recipeID"] = 127475
+						},
+						{
+							["name"] = "Inscribed Monument",
+							["recipeID"] = 127481
+						},
+						{
+							["name"] = "Portrait of Madam Goya",
+							["recipeID"] = 128922
+						}
+					}
+				},
+				{
+					["name"] = "Toys & Pets",
+					["categoryID"] = 783,
+					["g"] = {
+						{
+							["name"] = "Chi-ji Kite",
+							["recipeID"] = 127009
+						},
+						{
+							["name"] = "Origami Crane",
+							["recipeID"] = 126988
+						},
+						{
+							["name"] = "Origami Frog",
+							["recipeID"] = 126989
+						},
+						{
+							["name"] = "Yu'lon Kite",
+							["recipeID"] = 127007
 						}
 					}
 				}
 			}
 		},
 		{
-			["categoryID"] = 767--[[Northrend Inscription]],
+			["name"] = "Cataclysm Inscription",
+			["categoryID"] = 765,
 			["g"] = {
 				{
-					["categoryID"] = 793--[[Inks]],
+					["name"] = "Inks",
+					["categoryID"] = 785,
 					["g"] = {
 						{
-							["recipeID"] = 57715--[[Ink of the Sea]]
+							["name"] = "Blackfallow Ink",
+							["recipeID"] = 86004
 						},
 						{
-							["recipeID"] = 57716--[[Snowfall Ink]]
+							["name"] = "Inferno Ink",
+							["recipeID"] = 86005
 						}
 					}
 				},
 				{
-					["categoryID"] = 794--[[Glyphs]],
+					["name"] = "Glyphs",
+					["categoryID"] = 786,
 					["g"] = {
 						{
-							["recipeID"] = 148275--[[Glyph of Angels]]
+							["name"] = "Glyph of Burning Anger",
+							["recipeID"] = 112430
 						},
 						{
-							["recipeID"] = 112469--[[Glyph of Fighting Pose]]
+							["name"] = "Glyph of Crackling Tiger Lightning",
+							["recipeID"] = 112462
 						},
 						{
-							["recipeID"] = 112464--[[Glyph of Honor]]
+							["name"] = "Glyph of Crittermorph",
+							["recipeID"] = 56986
 						},
 						{
-							["recipeID"] = 56948--[[Glyph of the Orca]]
+							["name"] = "Glyph of Disguise",
+							["recipeID"] = 64260
+						},
+						{
+							["name"] = "Glyph of Shadowy Friends",
+							["recipeID"] = 126800
+						},
+						{
+							["name"] = "Glyph of the Heavens",
+							["recipeID"] = 124466
+						},
+						{
+							["name"] = "Glyph of the Ursol Chameleon",
+							["recipeID"] = 58287
+						},
+						{
+							["name"] = "Glyph of Thunder Strike",
+							["recipeID"] = 68166
 						}
 					}
 				},
 				{
-					["categoryID"] = 795--[[Scrolls & Research]],
+					["name"] = "Scrolls & Research",
+					["categoryID"] = 787,
 					["g"] = {
 						{
-							["recipeID"] = 69385--[[Runescroll of Fortitude]]
+							["name"] = "Research: Blackfallow Ink",
+							["recipeID"] = 165466
 						},
 						{
-							["recipeID"] = 165465--[[Research: Ink of the Sea]]
+							["name"] = "Runescroll of Fortitude II",
+							["recipeID"] = 85785
 						},
 						{
-							["recipeID"] = 58483--[[Scroll of Agility VIII]]
+							["name"] = "Scroll of Agility IX",
+							["recipeID"] = 89370
 						},
 						{
-							["recipeID"] = 58491--[[Scroll of Strength VIII]]
+							["name"] = "Scroll of Intellect IX",
+							["recipeID"] = 89368
 						},
 						{
-							["recipeID"] = 50604--[[Scroll of Intellect VIII]]
+							["name"] = "Scroll of Protection IX",
+							["recipeID"] = 89373
 						},
 						{
-							["recipeID"] = 50611--[[Scroll of Versatility VIII]]
+							["name"] = "Scroll of Stamina IX",
+							["recipeID"] = 89372
 						},
 						{
-							["recipeID"] = 50620--[[Scroll of Stamina VIII]]
+							["name"] = "Scroll of Strength IX",
+							["recipeID"] = 89369
 						},
 						{
-							["recipeID"] = 58482--[[Scroll of Agility VII]]
-						},
-						{
-							["recipeID"] = 50603--[[Scroll of Intellect VII]]
-						},
-						{
-							["recipeID"] = 60337--[[Scroll of Recall III]]
-						},
-						{
-							["recipeID"] = 50619--[[Scroll of Stamina VII]]
-						},
-						{
-							["recipeID"] = 58490--[[Scroll of Strength VII]]
-						},
-						{
-							["recipeID"] = 50610--[[Scroll of Versatility VII]]
+							["name"] = "Scroll of Versatility IX",
+							["recipeID"] = 89371
 						}
 					}
 				},
 				{
-					["categoryID"] = 796--[[Cards]],
+					["name"] = "Cards",
+					["categoryID"] = 788,
 					["g"] = {
 						{
-							["recipeID"] = 59504--[[Darkmoon Card of the North]]
+							["name"] = "Darkmoon Card of Destruction",
+							["recipeID"] = 86615
+						},
+						{
+							["name"] = "Mysterious Fortune Card",
+							["recipeID"] = 86609
 						}
 					}
 				},
 				{
-					["categoryID"] = 797--[[Off-Hands]],
+					["name"] = "Shoulder Inscription",
+					["categoryID"] = 789,
 					["g"] = {
 						{
-							["recipeID"] = 59498--[[Faces of Doom]]
+							["name"] = "Felfire Inscription",
+							["recipeID"] = 86403
 						},
 						{
-							["recipeID"] = 59497--[[Iron-bound Tome]]
+							["name"] = "Inscription of the Earth Prince",
+							["recipeID"] = 86402
 						},
 						{
-							["recipeID"] = 64051--[[Rituals of the Moon]]
+							["name"] = "Lionsmane Inscription",
+							["recipeID"] = 86401
 						},
 						{
-							["recipeID"] = 64053--[[Twilight Tome]]
+							["name"] = "Swiftsteel Inscription",
+							["recipeID"] = 86375
 						}
 					}
 				},
 				{
-					["categoryID"] = 798--[[Shoulder Inscription]],
+					["name"] = "Weapons & Off-Hands",
+					["categoryID"] = 790,
 					["g"] = {
 						{
-							["recipeID"] = 61117--[[Master's Inscription of the Axe]]
+							["name"] = "Battle Tome",
+							["recipeID"] = 86643
 						},
 						{
-							["recipeID"] = 61118--[[Master's Inscription of the Crag]]
+							["name"] = "Book of Blood",
+							["recipeID"] = 86616
 						},
 						{
-							["recipeID"] = 61119--[[Master's Inscription of the Pinnacle]]
+							["name"] = "Divine Companion",
+							["recipeID"] = 86642
 						},
 						{
-							["recipeID"] = 61120--[[Master's Inscription of the Storm]]
+							["name"] = "Dungeoneering Guide",
+							["recipeID"] = 86641
+						},
+						{
+							["name"] = "Key to the Planes",
+							["recipeID"] = 86648
+						},
+						{
+							["name"] = "Lord Rottington's Pressed Wisp Book",
+							["recipeID"] = 86640
+						},
+						{
+							["name"] = "Rosethorn Staff",
+							["recipeID"] = 86652
+						},
+						{
+							["name"] = "Runed Staff",
+							["recipeID"] = 86649
+						},
+						{
+							["name"] = "Silver Inlaid Staff",
+							["recipeID"] = 86653
+						}
+					}
+				},
+				{
+					["name"] = "Quest",
+					["categoryID"] = 791,
+					["g"] = {
+						{
+							["name"] = "Forged Documents",
+							["recipeID"] = 86654
+						}
+					}
+				},
+				{
+					["name"] = "Toys",
+					["categoryID"] = 792,
+					["g"] = {
+						{
+							["name"] = "Origami Beetle",
+							["recipeID"] = 86646
+						},
+						{
+							["name"] = "Origami Rock",
+							["recipeID"] = 86645
+						},
+						{
+							["name"] = "Origami Slime",
+							["recipeID"] = 86644
 						}
 					}
 				}
 			}
 		},
 		{
-			["categoryID"] = 769--[[Outland Inscription]],
+			["name"] = "Northrend Inscription",
+			["categoryID"] = 767,
 			["g"] = {
 				{
-					["categoryID"] = 799--[[Inks]],
+					["name"] = "Inks",
+					["categoryID"] = 793,
 					["g"] = {
 						{
-							["recipeID"] = 57714--[[Darkflame Ink]]
+							["name"] = "Ink of the Sea",
+							["recipeID"] = 57715
 						},
 						{
-							["recipeID"] = 57713--[[Ethereal Ink]]
+							["name"] = "Snowfall Ink",
+							["recipeID"] = 57716
 						}
 					}
 				},
 				{
-					["categoryID"] = 800--[[Glyphs]],
+					["name"] = "Glyphs",
+					["categoryID"] = 794,
 					["g"] = {
 						{
-							["recipeID"] = 57263--[[Glyph of Felguard]]
+							["name"] = "Glyph of Angels",
+							["recipeID"] = 148275
 						},
 						{
-							["recipeID"] = 148276--[[Glyph of the Sha]]
+							["name"] = "Glyph of Fighting Pose",
+							["recipeID"] = 112469
+						},
+						{
+							["name"] = "Glyph of Honor",
+							["recipeID"] = 112464
+						},
+						{
+							["name"] = "Glyph of the Orca",
+							["recipeID"] = 56948
 						}
 					}
 				},
 				{
-					["categoryID"] = 801--[[Cards]],
+					["name"] = "Scrolls & Research",
+					["categoryID"] = 795,
 					["g"] = {
 						{
-							["recipeID"] = 59503--[[Greater Darkmoon Card]]
+							["name"] = "Research: Ink of the Sea",
+							["recipeID"] = 165465
+						},
+						{
+							["name"] = "Runescroll of Fortitude",
+							["recipeID"] = 69385
+						},
+						{
+							["name"] = "Scroll of Agility VII",
+							["recipeID"] = 58482
+						},
+						{
+							["name"] = "Scroll of Agility VIII",
+							["recipeID"] = 58483
+						},
+						{
+							["name"] = "Scroll of Intellect VII",
+							["recipeID"] = 50603
+						},
+						{
+							["name"] = "Scroll of Intellect VIII",
+							["recipeID"] = 50604
+						},
+						{
+							["name"] = "Scroll of Recall III",
+							["recipeID"] = 60337
+						},
+						{
+							["name"] = "Scroll of Stamina VII",
+							["recipeID"] = 50619
+						},
+						{
+							["name"] = "Scroll of Stamina VIII",
+							["recipeID"] = 50620
+						},
+						{
+							["name"] = "Scroll of Strength VII",
+							["recipeID"] = 58490
+						},
+						{
+							["name"] = "Scroll of Strength VIII",
+							["recipeID"] = 58491
+						},
+						{
+							["name"] = "Scroll of Versatility VII",
+							["recipeID"] = 50610
+						},
+						{
+							["name"] = "Scroll of Versatility VIII",
+							["recipeID"] = 50611
 						}
 					}
 				},
 				{
-					["categoryID"] = 802--[[Scrolls & Research]],
+					["name"] = "Cards",
+					["categoryID"] = 796,
 					["g"] = {
 						{
-							["recipeID"] = 165464--[[Research: Ethereal Ink]]
-						},
-						{
-							["recipeID"] = 58481--[[Scroll of Agility VI]]
-						},
-						{
-							["recipeID"] = 58489--[[Scroll of Strength VI]]
-						},
-						{
-							["recipeID"] = 50602--[[Scroll of Intellect VI]]
+							["name"] = "Darkmoon Card of the North",
+							["recipeID"] = 59504
 						}
 					}
 				},
 				{
-					["categoryID"] = 803--[[Off-Hands]],
+					["name"] = "Off-Hands",
+					["categoryID"] = 797,
 					["g"] = {
 						{
-							["recipeID"] = 59496--[[Book of Clever Tricks]]
+							["name"] = "Faces of Doom",
+							["recipeID"] = 59498
 						},
 						{
-							["recipeID"] = 59495--[[Hellfire Tome]]
+							["name"] = "Iron-bound Tome",
+							["recipeID"] = 59497
+						},
+						{
+							["name"] = "Rituals of the Moon",
+							["recipeID"] = 64051
+						},
+						{
+							["name"] = "Twilight Tome",
+							["recipeID"] = 64053
+						}
+					}
+				},
+				{
+					["name"] = "Shoulder Inscription",
+					["categoryID"] = 798,
+					["g"] = {
+						{
+							["name"] = "Master's Inscription of the Axe",
+							["recipeID"] = 61117
+						},
+						{
+							["name"] = "Master's Inscription of the Crag",
+							["recipeID"] = 61118
+						},
+						{
+							["name"] = "Master's Inscription of the Pinnacle",
+							["recipeID"] = 61119
+						},
+						{
+							["name"] = "Master's Inscription of the Storm",
+							["recipeID"] = 61120
 						}
 					}
 				}
 			}
 		},
 		{
-			["categoryID"] = 415--[[Inscription]],
+			["name"] = "Outland Inscription",
+			["categoryID"] = 769,
 			["g"] = {
 				{
-					["categoryID"] = 108--[[Research]],
+					["name"] = "Inks",
+					["categoryID"] = 799,
 					["g"] = {
 						{
-							["recipeID"] = 165461--[[Research: Celestial Ink]]
+							["name"] = "Darkflame Ink",
+							["recipeID"] = 57714
 						},
 						{
-							["recipeID"] = 165460--[[Research: Jadefire Ink]]
-						},
-						{
-							["recipeID"] = 165456--[[Research: Lion's Ink]]
-						},
-						{
-							["recipeID"] = 165463--[[Research: Shimmering Ink]]
-						},
-						{
-							["recipeID"] = 165304--[[Research: Midnight Ink]]
-						},
-						{
-							["recipeID"] = 165564--[[Research: Moonglow Ink]]
+							["name"] = "Ethereal Ink",
+							["recipeID"] = 57713
 						}
 					}
 				},
 				{
-					["categoryID"] = 104--[[Ink]],
+					["name"] = "Glyphs",
+					["categoryID"] = 800,
 					["g"] = {
 						{
-							["recipeID"] = 57712--[[Ink of the Sky]]
+							["name"] = "Glyph of Felguard",
+							["recipeID"] = 57263
 						},
 						{
-							["recipeID"] = 57711--[[Shimmering Ink]]
-						},
-						{
-							["recipeID"] = 57710--[[Fiery Ink]]
-						},
-						{
-							["recipeID"] = 57709--[[Celestial Ink]]
-						},
-						{
-							["recipeID"] = 57708--[[Royal Ink]]
-						},
-						{
-							["recipeID"] = 57707--[[Jadefire Ink]]
-						},
-						{
-							["recipeID"] = 57706--[[Dawnstar Ink]]
-						},
-						{
-							["recipeID"] = 57704--[[Lion's Ink]]
-						},
-						{
-							["recipeID"] = 57703--[[Hunter's Ink]]
-						},
-						{
-							["recipeID"] = 53462--[[Midnight Ink]]
-						},
-						{
-							["recipeID"] = 52843--[[Moonglow Ink]]
+							["name"] = "Glyph of the Sha",
+							["recipeID"] = 148276
 						}
 					}
 				},
 				{
-					["categoryID"] = 106--[[Card]],
+					["name"] = "Cards",
+					["categoryID"] = 801,
 					["g"] = {
 						{
-							["recipeID"] = 59502--[[Darkmoon Card]]
-						},
-						{
-							["recipeID"] = 59491--[[Shadowy Tarot]]
-						},
-						{
-							["recipeID"] = 59487--[[Arcane Tarot]]
-						},
-						{
-							["recipeID"] = 59480--[[Strange Tarot]]
-						},
-						{
-							["recipeID"] = 48247--[[Mysterious Tarot]]
+							["name"] = "Greater Darkmoon Card",
+							["recipeID"] = 59503
 						}
 					}
 				},
 				{
-					["categoryID"] = 103--[[Off-hand]],
+					["name"] = "Scrolls & Research",
+					["categoryID"] = 802,
 					["g"] = {
 						{
-							["recipeID"] = 59494--[[Manual of Clouds]]
+							["name"] = "Research: Ethereal Ink",
+							["recipeID"] = 165464
 						},
 						{
-							["recipeID"] = 59493--[[Stormbound Tome]]
+							["name"] = "Scroll of Agility VI",
+							["recipeID"] = 58481
 						},
 						{
-							["recipeID"] = 59490--[[Book of Stars]]
+							["name"] = "Scroll of Intellect VI",
+							["recipeID"] = 50602
 						},
 						{
-							["recipeID"] = 59489--[[Fire Eater's Guide]]
-						},
-						{
-							["recipeID"] = 59486--[[Royal Guide of Escape Routes]]
-						},
-						{
-							["recipeID"] = 59484--[[Tome of Kings]]
-						},
-						{
-							["recipeID"] = 59478--[[Book of Survival]]
-						},
-						{
-							["recipeID"] = 59475--[[Tome of the Dawn]]
-						},
-						{
-							["recipeID"] = 58565--[[Mystic Tome]]
+							["name"] = "Scroll of Strength VI",
+							["recipeID"] = 58489
 						}
 					}
 				},
 				{
-					["categoryID"] = 107--[[Scrolls]],
+					["name"] = "Off-Hands",
+					["categoryID"] = 803,
 					["g"] = {
 						{
-							["recipeID"] = 50618--[[Scroll of Stamina VI]]
+							["name"] = "Book of Clever Tricks",
+							["recipeID"] = 59496
 						},
 						{
-							["recipeID"] = 50609--[[Scroll of Versatility VI]]
+							["name"] = "Hellfire Tome",
+							["recipeID"] = 59495
+						}
+					}
+				}
+			}
+		},
+		{
+			["name"] = "Inscription",
+			["categoryID"] = 415,
+			["g"] = {
+				{
+					["name"] = "Research",
+					["categoryID"] = 108,
+					["g"] = {
+						{
+							["name"] = "Research: Celestial Ink",
+							["recipeID"] = 165461
 						},
 						{
-							["recipeID"] = 58480--[[Scroll of Agility V]]
+							["name"] = "Research: Jadefire Ink",
+							["recipeID"] = 165460
 						},
 						{
-							["recipeID"] = 58488--[[Scroll of Strength V]]
+							["name"] = "Research: Lion's Ink",
+							["recipeID"] = 165456
 						},
 						{
-							["recipeID"] = 50601--[[Scroll of Intellect V]]
+							["name"] = "Research: Midnight Ink",
+							["recipeID"] = 165304
 						},
 						{
-							["recipeID"] = 50608--[[Scroll of Versatility V]]
+							["name"] = "Research: Moonglow Ink",
+							["recipeID"] = 165564
 						},
 						{
-							["recipeID"] = 50617--[[Scroll of Stamina V]]
-						},
-						{
-							["recipeID"] = 58478--[[Scroll of Agility IV]]
-						},
-						{
-							["recipeID"] = 58487--[[Scroll of Strength IV]]
-						},
-						{
-							["recipeID"] = 50600--[[Scroll of Intellect IV]]
-						},
-						{
-							["recipeID"] = 60336--[[Scroll of Recall II]]
-						},
-						{
-							["recipeID"] = 50607--[[Scroll of Versatility IV]]
-						},
-						{
-							["recipeID"] = 50616--[[Scroll of Stamina IV]]
-						},
-						{
-							["recipeID"] = 58476--[[Scroll of Agility III]]
-						},
-						{
-							["recipeID"] = 58486--[[Scroll of Strength III]]
-						},
-						{
-							["recipeID"] = 50599--[[Scroll of Intellect III]]
-						},
-						{
-							["recipeID"] = 50606--[[Scroll of Versatility III]]
-						},
-						{
-							["recipeID"] = 50614--[[Scroll of Stamina III]]
-						},
-						{
-							["recipeID"] = 58473--[[Scroll of Agility II]]
-						},
-						{
-							["recipeID"] = 58485--[[Scroll of Strength II]]
-						},
-						{
-							["recipeID"] = 50598--[[Scroll of Intellect II]]
-						},
-						{
-							["recipeID"] = 48248--[[Scroll of Recall]]
-						},
-						{
-							["recipeID"] = 50612--[[Scroll of Stamina II]]
-						},
-						{
-							["recipeID"] = 50605--[[Scroll of Versatility II]]
-						},
-						{
-							["recipeID"] = 58472--[[Scroll of Agility]]
-						},
-						{
-							["recipeID"] = 48114--[[Scroll of Intellect]]
-						},
-						{
-							["recipeID"] = 45382--[[Scroll of Stamina]]
-						},
-						{
-							["recipeID"] = 58484--[[Scroll of Strength]]
-						},
-						{
-							["recipeID"] = 48116--[[Scroll of Versatility]]
+							["name"] = "Research: Shimmering Ink",
+							["recipeID"] = 165463
 						}
 					}
 				},
 				{
-					["categoryID"] = 105--[[Clear Mind]],
+					["name"] = "Ink",
+					["categoryID"] = 104,
 					["g"] = {
 						{
-							["recipeID"] = 92026--[[Vanishing Powder]]
+							["name"] = "Celestial Ink",
+							["recipeID"] = 57709
+						},
+						{
+							["name"] = "Dawnstar Ink",
+							["recipeID"] = 57706
+						},
+						{
+							["name"] = "Fiery Ink",
+							["recipeID"] = 57710
+						},
+						{
+							["name"] = "Hunter's Ink",
+							["recipeID"] = 57703
+						},
+						{
+							["name"] = "Ink of the Sky",
+							["recipeID"] = 57712
+						},
+						{
+							["name"] = "Jadefire Ink",
+							["recipeID"] = 57707
+						},
+						{
+							["name"] = "Lion's Ink",
+							["recipeID"] = 57704
+						},
+						{
+							["name"] = "Midnight Ink",
+							["recipeID"] = 53462
+						},
+						{
+							["name"] = "Moonglow Ink",
+							["recipeID"] = 52843
+						},
+						{
+							["name"] = "Royal Ink",
+							["recipeID"] = 57708
+						},
+						{
+							["name"] = "Shimmering Ink",
+							["recipeID"] = 57711
 						}
 					}
 				},
 				{
-					["categoryID"] = 1126--[[Glyphs]],
+					["name"] = "Card",
+					["categoryID"] = 106,
 					["g"] = {
 						{
-							["recipeID"] = 64250--[[Glyph of Crimson Banish]]
+							["name"] = "Arcane Tarot",
+							["recipeID"] = 59487
 						},
 						{
-							["recipeID"] = 148271--[[Glyph of Evaporation]]
+							["name"] = "Darkmoon Card",
+							["recipeID"] = 59502
 						},
 						{
-							["recipeID"] = 58316--[[Glyph of Fire From the Heavens]]
+							["name"] = "Mysterious Tarot",
+							["recipeID"] = 48247
 						},
 						{
-							["recipeID"] = 57224--[[Glyph of Foul Menagerie]]
+							["name"] = "Shadowy Tarot",
+							["recipeID"] = 59491
 						},
 						{
-							["recipeID"] = 58345--[[Glyph of Gushing Wound]]
-						},
-						{
-							["recipeID"] = 112429--[[Glyph of Hawk Feast]]
-						},
-						{
-							["recipeID"] = 148278--[[Glyph of Inspired Hymns]]
-						},
-						{
-							["recipeID"] = 148282--[[Glyph of Lingering Ancestors]]
-						},
-						{
-							["recipeID"] = 58347--[[Glyph of Mighty Victory]]
-						},
-						{
-							["recipeID"] = 112466--[[Glyph of Rising Tiger Kick]]
-						},
-						{
-							["recipeID"] = 58320--[[Glyph of Shackle Undead]]
-						},
-						{
-							["recipeID"] = 107907--[[Glyph of Shadow]]
-						},
-						{
-							["recipeID"] = 58341--[[Glyph of Soulwell]]
-						},
-						{
-							["recipeID"] = 148281--[[Glyph of Spirit Raptors]]
-						},
-						{
-							["recipeID"] = 56965--[[Glyph of Stars]]
-						},
-						{
-							["recipeID"] = 123781--[[Glyph of the Blazing Trail]]
-						},
-						{
-							["recipeID"] = 131152--[[Glyph of the Cheetah]]
-						},
-						{
-							["recipeID"] = 57209--[[Glyph of the Geist]]
-						},
-						{
-							["recipeID"] = 57032--[[Glyph of the Luminous Charger]]
-						},
-						{
-							["recipeID"] = 148266--[[Glyph of the Skeleton]]
-						},
-						{
-							["recipeID"] = 58332--[[Glyph of the Spectral Wolf]]
-						},
-						{
-							["recipeID"] = 148270--[[Glyph of the Unbound Elemental]]
-						},
-						{
-							["recipeID"] = 148292--[[Glyph of the Weaponmaster]]
-						},
-						{
-							["recipeID"] = 58312--[[Glyph of Winged Vengeance]]
+							["name"] = "Strange Tarot",
+							["recipeID"] = 59480
 						}
 					}
 				},
 				{
-					["categoryID"] = 114--[[Other]],
+					["name"] = "Off-hand",
+					["categoryID"] = 103,
 					["g"] = {
 						{
-							["recipeID"] = 59387--[[Certificate of Ownership]]
+							["name"] = "Book of Stars",
+							["recipeID"] = 59490
 						},
 						{
-							["recipeID"] = 52739--[[Enchanting Vellum]]
+							["name"] = "Book of Survival",
+							["recipeID"] = 59478
+						},
+						{
+							["name"] = "Fire Eater's Guide",
+							["recipeID"] = 59489
+						},
+						{
+							["name"] = "Manual of Clouds",
+							["recipeID"] = 59494
+						},
+						{
+							["name"] = "Mystic Tome",
+							["recipeID"] = 58565
+						},
+						{
+							["name"] = "Royal Guide of Escape Routes",
+							["recipeID"] = 59486
+						},
+						{
+							["name"] = "Stormbound Tome",
+							["recipeID"] = 59493
+						},
+						{
+							["name"] = "Tome of Kings",
+							["recipeID"] = 59484
+						},
+						{
+							["name"] = "Tome of the Dawn",
+							["recipeID"] = 59475
+						}
+					}
+				},
+				{
+					["name"] = "Scrolls",
+					["categoryID"] = 107,
+					["g"] = {
+						{
+							["name"] = "Scroll of Agility",
+							["recipeID"] = 58472
+						},
+						{
+							["name"] = "Scroll of Agility II",
+							["recipeID"] = 58473
+						},
+						{
+							["name"] = "Scroll of Agility III",
+							["recipeID"] = 58476
+						},
+						{
+							["name"] = "Scroll of Agility IV",
+							["recipeID"] = 58478
+						},
+						{
+							["name"] = "Scroll of Agility V",
+							["recipeID"] = 58480
+						},
+						{
+							["name"] = "Scroll of Intellect",
+							["recipeID"] = 48114
+						},
+						{
+							["name"] = "Scroll of Intellect II",
+							["recipeID"] = 50598
+						},
+						{
+							["name"] = "Scroll of Intellect III",
+							["recipeID"] = 50599
+						},
+						{
+							["name"] = "Scroll of Intellect IV",
+							["recipeID"] = 50600
+						},
+						{
+							["name"] = "Scroll of Intellect V",
+							["recipeID"] = 50601
+						},
+						{
+							["name"] = "Scroll of Recall",
+							["recipeID"] = 48248
+						},
+						{
+							["name"] = "Scroll of Recall II",
+							["recipeID"] = 60336
+						},
+						{
+							["name"] = "Scroll of Stamina",
+							["recipeID"] = 45382
+						},
+						{
+							["name"] = "Scroll of Stamina II",
+							["recipeID"] = 50612
+						},
+						{
+							["name"] = "Scroll of Stamina III",
+							["recipeID"] = 50614
+						},
+						{
+							["name"] = "Scroll of Stamina IV",
+							["recipeID"] = 50616
+						},
+						{
+							["name"] = "Scroll of Stamina V",
+							["recipeID"] = 50617
+						},
+						{
+							["name"] = "Scroll of Stamina VI",
+							["recipeID"] = 50618
+						},
+						{
+							["name"] = "Scroll of Strength",
+							["recipeID"] = 58484
+						},
+						{
+							["name"] = "Scroll of Strength II",
+							["recipeID"] = 58485
+						},
+						{
+							["name"] = "Scroll of Strength III",
+							["recipeID"] = 58486
+						},
+						{
+							["name"] = "Scroll of Strength IV",
+							["recipeID"] = 58487
+						},
+						{
+							["name"] = "Scroll of Strength V",
+							["recipeID"] = 58488
+						},
+						{
+							["name"] = "Scroll of Versatility",
+							["recipeID"] = 48116
+						},
+						{
+							["name"] = "Scroll of Versatility II",
+							["recipeID"] = 50605
+						},
+						{
+							["name"] = "Scroll of Versatility III",
+							["recipeID"] = 50606
+						},
+						{
+							["name"] = "Scroll of Versatility IV",
+							["recipeID"] = 50607
+						},
+						{
+							["name"] = "Scroll of Versatility V",
+							["recipeID"] = 50608
+						},
+						{
+							["name"] = "Scroll of Versatility VI",
+							["recipeID"] = 50609
+						}
+					}
+				},
+				{
+					["name"] = "Clear Mind",
+					["categoryID"] = 105,
+					["g"] = {
+						{
+							["name"] = "Vanishing Powder",
+							["recipeID"] = 92026
+						}
+					}
+				},
+				{
+					["name"] = "Glyphs",
+					["categoryID"] = 1126,
+					["g"] = {
+						{
+							["name"] = "Glyph of Crimson Banish",
+							["recipeID"] = 64250
+						},
+						{
+							["name"] = "Glyph of Evaporation",
+							["recipeID"] = 148271
+						},
+						{
+							["name"] = "Glyph of Fire From the Heavens",
+							["recipeID"] = 58316
+						},
+						{
+							["name"] = "Glyph of Foul Menagerie",
+							["recipeID"] = 57224
+						},
+						{
+							["name"] = "Glyph of Gushing Wound",
+							["recipeID"] = 58345
+						},
+						{
+							["name"] = "Glyph of Hawk Feast",
+							["recipeID"] = 112429
+						},
+						{
+							["name"] = "Glyph of Inspired Hymns",
+							["recipeID"] = 148278
+						},
+						{
+							["name"] = "Glyph of Lingering Ancestors",
+							["recipeID"] = 148282
+						},
+						{
+							["name"] = "Glyph of Mighty Victory",
+							["recipeID"] = 58347
+						},
+						{
+							["name"] = "Glyph of Rising Tiger Kick",
+							["recipeID"] = 112466
+						},
+						{
+							["name"] = "Glyph of Shackle Undead",
+							["recipeID"] = 58320
+						},
+						{
+							["name"] = "Glyph of Shadow",
+							["recipeID"] = 107907
+						},
+						{
+							["name"] = "Glyph of Soulwell",
+							["recipeID"] = 58341
+						},
+						{
+							["name"] = "Glyph of Spirit Raptors",
+							["recipeID"] = 148281
+						},
+						{
+							["name"] = "Glyph of Stars",
+							["recipeID"] = 56965
+						},
+						{
+							["name"] = "Glyph of the Blazing Trail",
+							["recipeID"] = 123781
+						},
+						{
+							["name"] = "Glyph of the Cheetah",
+							["recipeID"] = 131152
+						},
+						{
+							["name"] = "Glyph of the Geist",
+							["recipeID"] = 57209
+						},
+						{
+							["name"] = "Glyph of the Luminous Charger",
+							["recipeID"] = 57032
+						},
+						{
+							["name"] = "Glyph of the Skeleton",
+							["recipeID"] = 148266
+						},
+						{
+							["name"] = "Glyph of the Spectral Wolf",
+							["recipeID"] = 58332
+						},
+						{
+							["name"] = "Glyph of the Unbound Elemental",
+							["recipeID"] = 148270
+						},
+						{
+							["name"] = "Glyph of the Weaponmaster",
+							["recipeID"] = 148292
+						},
+						{
+							["name"] = "Glyph of Winged Vengeance",
+							["recipeID"] = 58312
+						}
+					}
+				},
+				{
+					["name"] = "Other",
+					["categoryID"] = 114,
+					["g"] = {
+						{
+							["name"] = "Certificate of Ownership",
+							["recipeID"] = 59387
+						},
+						{
+							["name"] = "Enchanting Vellum",
+							["recipeID"] = 52739
 						}
 					}
 				}

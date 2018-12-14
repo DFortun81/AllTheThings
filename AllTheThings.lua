@@ -5259,7 +5259,7 @@ app.BaseRecipe = {
 					return link;
 				end
 			end
-			return (t.requireSkill and select(3, GetSpellInfo(t.requireSkill))) or select(3, GetSpellInfo(t.spellID));
+			return select(3, GetSpellInfo(t.spellID)) or (t.requireSkill and select(3, GetSpellInfo(t.requireSkill)));
 		elseif key == "link" then
 			if t.itemID then
 				local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(t.itemID);

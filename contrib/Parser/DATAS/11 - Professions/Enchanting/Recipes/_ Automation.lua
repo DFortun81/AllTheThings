@@ -1,2105 +1,3013 @@
 --[[
 DO NOT MODIFY THIS FILE, I WILL CUT YOU.
  With love,
-    - CRIEVE
+    -CRIEVE
 ]]--
 profession(333, {	-- Enchanting
-	filter(200, {	-- Recipes
+	filter(200, {
 		{
-			["categoryID"] = 399--[[Illusions]],
+			["name"] = "Illusions",
+			["categoryID"] = 399,
 			["g"] = {
 				{
-					["recipeID"] = 173716--[[Illusion: Agility]]
+					["name"] = "Illusion: Agility",
+					["recipeID"] = 173716
 				},
 				{
-					["recipeID"] = 173717--[[Illusion: Battlemaster]]
+					["name"] = "Illusion: Battlemaster",
+					["recipeID"] = 173717
 				},
 				{
-					["recipeID"] = 173718--[[Illusion: Berserking]]
+					["name"] = "Illusion: Berserking",
+					["recipeID"] = 173718
 				},
 				{
-					["recipeID"] = 174979--[[Illusion: Blood Draining]]
+					["name"] = "Illusion: Blood Draining",
+					["recipeID"] = 174979
 				},
 				{
-					["recipeID"] = 173720--[[Illusion: Crusader]]
+					["name"] = "Illusion: Crusader",
+					["recipeID"] = 173720
 				},
 				{
-					["recipeID"] = 175076--[[Illusion: Earthliving]]
+					["name"] = "Illusion: Earthliving",
+					["recipeID"] = 175076
 				},
 				{
-					["recipeID"] = 173721--[[Illusion: Elemental Force]]
+					["name"] = "Illusion: Elemental Force",
+					["recipeID"] = 173721
 				},
 				{
-					["recipeID"] = 173722--[[Illusion: Executioner]]
+					["name"] = "Illusion: Executioner",
+					["recipeID"] = 173722
 				},
 				{
-					["recipeID"] = 173723--[[Illusion: Fiery Weapon]]
+					["name"] = "Illusion: Fiery Weapon",
+					["recipeID"] = 173723
 				},
 				{
-					["recipeID"] = 175072--[[Illusion: Flametongue]]
+					["name"] = "Illusion: Flametongue",
+					["recipeID"] = 175072
 				},
 				{
-					["recipeID"] = 175071--[[Illusion: Frostbrand]]
+					["name"] = "Illusion: Frostbrand",
+					["recipeID"] = 175071
 				},
 				{
-					["recipeID"] = 173719--[[Illusion: Greater Spellpower]]
+					["name"] = "Illusion: Greater Spellpower",
+					["recipeID"] = 173719
 				},
 				{
-					["recipeID"] = 173724--[[Illusion: Hidden]]
+					["name"] = "Illusion: Hidden",
+					["recipeID"] = 173724
 				},
 				{
-					["recipeID"] = 181870--[[Illusion: Holy Infusion]]
+					["name"] = "Illusion: Holy Infusion",
+					["recipeID"] = 181870
 				},
 				{
-					["recipeID"] = 175070--[[Illusion: Jade Spirit]]
+					["name"] = "Illusion: Jade Spirit",
+					["recipeID"] = 175070
 				},
 				{
-					["recipeID"] = 173725--[[Illusion: Landslide]]
+					["name"] = "Illusion: Landslide",
+					["recipeID"] = 173725
 				},
 				{
-					["recipeID"] = 173726--[[Illusion: Lifestealing]]
+					["name"] = "Illusion: Lifestealing",
+					["recipeID"] = 173726
 				},
 				{
-					["recipeID"] = 175085--[[Illusion: Mending]]
+					["name"] = "Illusion: Mending",
+					["recipeID"] = 175085
 				},
 				{
-					["recipeID"] = 173727--[[Illusion: Mongoose]]
+					["name"] = "Illusion: Mongoose",
+					["recipeID"] = 173727
 				},
 				{
-					["recipeID"] = 173728--[[Illusion: Poisoned]]
+					["name"] = "Illusion: Poisoned",
+					["recipeID"] = 173728
 				},
 				{
-					["recipeID"] = 173729--[[Illusion: Power Torrent]]
+					["name"] = "Illusion: Power Torrent",
+					["recipeID"] = 173729
 				},
 				{
-					["recipeID"] = 175086--[[Illusion: River's Song]]
+					["name"] = "Illusion: River's Song",
+					["recipeID"] = 175086
 				},
 				{
-					["recipeID"] = 175078--[[Illusion: Rockbiter]]
+					["name"] = "Illusion: Rockbiter",
+					["recipeID"] = 175078
 				},
 				{
-					["recipeID"] = 173730--[[Illusion: Spellsurge]]
+					["name"] = "Illusion: Spellsurge",
+					["recipeID"] = 173730
 				},
 				{
-					["recipeID"] = 173731--[[Illusion: Striking]]
+					["name"] = "Illusion: Striking",
+					["recipeID"] = 173731
 				},
 				{
-					["recipeID"] = 173732--[[Illusion: Unholy]]
+					["name"] = "Illusion: Unholy",
+					["recipeID"] = 173732
 				},
 				{
-					["recipeID"] = 175074--[[Illusion: Windfury]]
+					["name"] = "Illusion: Windfury",
+					["recipeID"] = 175074
 				}
 			}
 		},
 		{
-			["categoryID"] = 404--[[Removal]],
+			["name"] = "Removal",
+			["categoryID"] = 404,
 			["g"] = {
 				{
-					["recipeID"] = 177355--[[Remove Illusion]]
+					["name"] = "Remove Illusion",
+					["recipeID"] = 177355
 				}
 			}
 		},
 		{
-			["categoryID"] = 647--[[Zandalari Enchanting]],
+			["name"] = "Zandalari Enchanting",
+			["categoryID"] = 647,
 			["g"] = {
 				{
-					["categoryID"] = 650--[[Glove Enchantments]],
+					["name"] = "Glove Enchantments",
+					["categoryID"] = 650,
 					["g"] = {
 						{
-							["recipeID"] = 267498--[[Zandalari Crafting]]
+							["name"] = "Kul Tiran Crafting",
+							["recipeID"] = 255070
 						},
 						{
-							["recipeID"] = 267458--[[Zandalari Herbalism]]
+							["name"] = "Kul Tiran Herbalism",
+							["recipeID"] = 255035
 						},
 						{
-							["recipeID"] = 267482--[[Zandalari Mining]]
+							["name"] = "Kul Tiran Mining",
+							["recipeID"] = 255040
 						},
 						{
-							["recipeID"] = 267486--[[Zandalari Skinning]]
+							["name"] = "Kul Tiran Skinning",
+							["recipeID"] = 255065
 						},
 						{
-							["recipeID"] = 267490--[[Zandalari Surveying]]
+							["name"] = "Kul Tiran Surveying",
+							["recipeID"] = 255066
+						},
+						{
+							["name"] = "Zandalari Crafting",
+							["recipeID"] = 267498
+						},
+						{
+							["name"] = "Zandalari Herbalism",
+							["recipeID"] = 267458
+						},
+						{
+							["name"] = "Zandalari Mining",
+							["recipeID"] = 267482
+						},
+						{
+							["name"] = "Zandalari Skinning",
+							["recipeID"] = 267486
+						},
+						{
+							["name"] = "Zandalari Surveying",
+							["recipeID"] = 267490
 						}
 					}
 				},
 				{
-					["categoryID"] = 651--[[Ring Enchantments]],
+					["name"] = "Ring Enchantments",
+					["categoryID"] = 651,
 					["g"] = {
 						{
-							["recipeID"] = 255098--[[Pact of Critical Strike]]
+							["name"] = "Pact of Critical Strike",
+							["nextRecipeID"] = 255090,
+							["recipeID"] = 255075
 						},
 						{
-							["recipeID"] = 255090--[[Pact of Critical Strike]]
+							["name"] = "Pact of Critical Strike",
+							["nextRecipeID"] = 255098,
+							["previousRecipeID"] = 255075,
+							["recipeID"] = 255090
 						},
 						{
-							["recipeID"] = 255099--[[Pact of Haste]]
+							["name"] = "Pact of Critical Strike",
+							["previousRecipeID"] = 255090,
+							["recipeID"] = 255098
 						},
 						{
-							["recipeID"] = 255091--[[Pact of Haste]]
+							["name"] = "Pact of Haste",
+							["nextRecipeID"] = 255091,
+							["recipeID"] = 255076
 						},
 						{
-							["recipeID"] = 255100--[[Pact of Mastery]]
+							["name"] = "Pact of Haste",
+							["nextRecipeID"] = 255099,
+							["previousRecipeID"] = 255076,
+							["recipeID"] = 255091
 						},
 						{
-							["recipeID"] = 255092--[[Pact of Mastery]]
+							["name"] = "Pact of Haste",
+							["previousRecipeID"] = 255091,
+							["recipeID"] = 255099
 						},
 						{
-							["recipeID"] = 255093--[[Pact of Versatility]]
+							["name"] = "Pact of Mastery",
+							["nextRecipeID"] = 255092,
+							["recipeID"] = 255077
 						},
 						{
-							["recipeID"] = 255101--[[Pact of Versatility]]
+							["name"] = "Pact of Mastery",
+							["nextRecipeID"] = 255100,
+							["previousRecipeID"] = 255077,
+							["recipeID"] = 255092
 						},
 						{
-							["recipeID"] = 255075--[[Pact of Critical Strike]]
+							["name"] = "Pact of Mastery",
+							["previousRecipeID"] = 255092,
+							["recipeID"] = 255100
 						},
 						{
-							["recipeID"] = 255076--[[Pact of Haste]]
+							["name"] = "Pact of Versatility",
+							["nextRecipeID"] = 255093,
+							["recipeID"] = 255078
 						},
 						{
-							["recipeID"] = 255077--[[Pact of Mastery]]
+							["name"] = "Pact of Versatility",
+							["nextRecipeID"] = 255101,
+							["previousRecipeID"] = 255078,
+							["recipeID"] = 255093
 						},
 						{
-							["recipeID"] = 255078--[[Pact of Versatility]]
+							["name"] = "Pact of Versatility",
+							["previousRecipeID"] = 255093,
+							["recipeID"] = 255101
 						},
 						{
-							["recipeID"] = 255094--[[Seal of Critical Strike]]
+							["name"] = "Seal of Critical Strike",
+							["nextRecipeID"] = 255086,
+							["recipeID"] = 255071
 						},
 						{
-							["recipeID"] = 255095--[[Seal of Haste]]
+							["name"] = "Seal of Critical Strike",
+							["nextRecipeID"] = 255094,
+							["previousRecipeID"] = 255071,
+							["recipeID"] = 255086
 						},
 						{
-							["recipeID"] = 255096--[[Seal of Mastery]]
+							["name"] = "Seal of Critical Strike",
+							["previousRecipeID"] = 255086,
+							["recipeID"] = 255094
 						},
 						{
-							["recipeID"] = 255097--[[Seal of Versatility]]
+							["name"] = "Seal of Haste",
+							["nextRecipeID"] = 255087,
+							["recipeID"] = 255072
 						},
 						{
-							["recipeID"] = 255086--[[Seal of Critical Strike]]
+							["name"] = "Seal of Haste",
+							["nextRecipeID"] = 255095,
+							["previousRecipeID"] = 255072,
+							["recipeID"] = 255087
 						},
 						{
-							["recipeID"] = 255087--[[Seal of Haste]]
+							["name"] = "Seal of Haste",
+							["previousRecipeID"] = 255087,
+							["recipeID"] = 255095
 						},
 						{
-							["recipeID"] = 255088--[[Seal of Mastery]]
+							["name"] = "Seal of Mastery",
+							["nextRecipeID"] = 255088,
+							["recipeID"] = 255073
 						},
 						{
-							["recipeID"] = 255089--[[Seal of Versatility]]
+							["name"] = "Seal of Mastery",
+							["nextRecipeID"] = 255096,
+							["previousRecipeID"] = 255073,
+							["recipeID"] = 255088
 						},
 						{
-							["recipeID"] = 255071--[[Seal of Critical Strike]]
+							["name"] = "Seal of Mastery",
+							["previousRecipeID"] = 255088,
+							["recipeID"] = 255096
 						},
 						{
-							["recipeID"] = 255072--[[Seal of Haste]]
+							["name"] = "Seal of Versatility",
+							["nextRecipeID"] = 255089,
+							["recipeID"] = 255074
 						},
 						{
-							["recipeID"] = 255073--[[Seal of Mastery]]
+							["name"] = "Seal of Versatility",
+							["nextRecipeID"] = 255097,
+							["previousRecipeID"] = 255074,
+							["recipeID"] = 255089
 						},
 						{
-							["recipeID"] = 255074--[[Seal of Versatility]]
+							["name"] = "Seal of Versatility",
+							["previousRecipeID"] = 255089,
+							["recipeID"] = 255097
 						}
 					}
 				},
 				{
-					["categoryID"] = 652--[[Weapon Enchantments]],
+					["name"] = "Weapon Enchantments",
+					["categoryID"] = 652,
 					["g"] = {
 						{
-							["recipeID"] = 268908--[[Weapon Enchant - Deadly Navigation]]
+							["name"] = "Weapon Enchant - Coastal Surge",
+							["nextRecipeID"] = 255104,
+							["recipeID"] = 255103
 						},
 						{
-							["recipeID"] = 268909--[[Weapon Enchant - Deadly Navigation]]
+							["name"] = "Weapon Enchant - Coastal Surge",
+							["nextRecipeID"] = 255105,
+							["previousRecipeID"] = 255103,
+							["recipeID"] = 255104
 						},
 						{
-							["recipeID"] = 268902--[[Weapon Enchant - Masterful Navigation]]
+							["name"] = "Weapon Enchant - Coastal Surge",
+							["previousRecipeID"] = 255104,
+							["recipeID"] = 255105
 						},
 						{
-							["recipeID"] = 268903--[[Weapon Enchant - Masterful Navigation]]
+							["name"] = "Weapon Enchant - Deadly Navigation",
+							["nextRecipeID"] = 268908,
+							["recipeID"] = 268907
 						},
 						{
-							["recipeID"] = 268897--[[Weapon Enchant - Quick Navigation]]
+							["name"] = "Weapon Enchant - Deadly Navigation",
+							["nextRecipeID"] = 268909,
+							["previousRecipeID"] = 268907,
+							["recipeID"] = 268908
 						},
 						{
-							["recipeID"] = 268895--[[Weapon Enchant - Quick Navigation]]
+							["name"] = "Weapon Enchant - Deadly Navigation",
+							["previousRecipeID"] = 268908,
+							["recipeID"] = 268909
 						},
 						{
-							["recipeID"] = 268915--[[Weapon Enchant - Stalwart Navigation]]
+							["name"] = "Weapon Enchant - Gale-Force Striking",
+							["nextRecipeID"] = 255142,
+							["recipeID"] = 255141
 						},
 						{
-							["recipeID"] = 268914--[[Weapon Enchant - Stalwart Navigation]]
+							["name"] = "Weapon Enchant - Gale-Force Striking",
+							["nextRecipeID"] = 255143,
+							["previousRecipeID"] = 255141,
+							["recipeID"] = 255142
 						},
 						{
-							["recipeID"] = 268879--[[Weapon Enchant - Versatile Navigation]]
+							["name"] = "Weapon Enchant - Gale-Force Striking",
+							["previousRecipeID"] = 255142,
+							["recipeID"] = 255143
 						},
 						{
-							["recipeID"] = 268878--[[Weapon Enchant - Versatile Navigation]]
+							["name"] = "Weapon Enchant - Masterful Navigation",
+							["nextRecipeID"] = 268902,
+							["recipeID"] = 268901
 						},
 						{
-							["recipeID"] = 255105--[[Weapon Enchant - Coastal Surge]]
+							["name"] = "Weapon Enchant - Masterful Navigation",
+							["nextRecipeID"] = 268903,
+							["previousRecipeID"] = 268901,
+							["recipeID"] = 268902
 						},
 						{
-							["recipeID"] = 255143--[[Weapon Enchant - Gale-Force Striking]]
+							["name"] = "Weapon Enchant - Masterful Navigation",
+							["previousRecipeID"] = 268902,
+							["recipeID"] = 268903
 						},
 						{
-							["recipeID"] = 255112--[[Weapon Enchant - Siphoning]]
+							["name"] = "Weapon Enchant - Quick Navigation",
+							["nextRecipeID"] = 268895,
+							["recipeID"] = 268894
 						},
 						{
-							["recipeID"] = 255131--[[Weapon Enchant - Torrent of Elements]]
+							["name"] = "Weapon Enchant - Quick Navigation",
+							["nextRecipeID"] = 268897,
+							["previousRecipeID"] = 268894,
+							["recipeID"] = 268895
 						},
 						{
-							["recipeID"] = 255104--[[Weapon Enchant - Coastal Surge]]
+							["name"] = "Weapon Enchant - Quick Navigation",
+							["previousRecipeID"] = 268895,
+							["recipeID"] = 268897
 						},
 						{
-							["recipeID"] = 255142--[[Weapon Enchant - Gale-Force Striking]]
+							["name"] = "Weapon Enchant - Siphoning",
+							["nextRecipeID"] = 255111,
+							["recipeID"] = 255110
 						},
 						{
-							["recipeID"] = 255111--[[Weapon Enchant - Siphoning]]
+							["name"] = "Weapon Enchant - Siphoning",
+							["nextRecipeID"] = 255112,
+							["previousRecipeID"] = 255110,
+							["recipeID"] = 255111
 						},
 						{
-							["recipeID"] = 255130--[[Weapon Enchant - Torrent of Elements]]
+							["name"] = "Weapon Enchant - Siphoning",
+							["previousRecipeID"] = 255111,
+							["recipeID"] = 255112
 						},
 						{
-							["recipeID"] = 268907--[[Weapon Enchant - Deadly Navigation]]
+							["name"] = "Weapon Enchant - Stalwart Navigation",
+							["nextRecipeID"] = 268914,
+							["recipeID"] = 268913
 						},
 						{
-							["recipeID"] = 268901--[[Weapon Enchant - Masterful Navigation]]
+							["name"] = "Weapon Enchant - Stalwart Navigation",
+							["nextRecipeID"] = 268915,
+							["previousRecipeID"] = 268913,
+							["recipeID"] = 268914
 						},
 						{
-							["recipeID"] = 268894--[[Weapon Enchant - Quick Navigation]]
+							["name"] = "Weapon Enchant - Stalwart Navigation",
+							["previousRecipeID"] = 268914,
+							["recipeID"] = 268915
 						},
 						{
-							["recipeID"] = 268913--[[Weapon Enchant - Stalwart Navigation]]
+							["name"] = "Weapon Enchant - Torrent of Elements",
+							["nextRecipeID"] = 255130,
+							["recipeID"] = 255129
 						},
 						{
-							["recipeID"] = 268852--[[Weapon Enchant - Versatile Navigation]]
+							["name"] = "Weapon Enchant - Torrent of Elements",
+							["nextRecipeID"] = 255131,
+							["previousRecipeID"] = 255129,
+							["recipeID"] = 255130
 						},
 						{
-							["recipeID"] = 255103--[[Weapon Enchant - Coastal Surge]]
+							["name"] = "Weapon Enchant - Torrent of Elements",
+							["previousRecipeID"] = 255130,
+							["recipeID"] = 255131
 						},
 						{
-							["recipeID"] = 255141--[[Weapon Enchant - Gale-Force Striking]]
+							["name"] = "Weapon Enchant - Versatile Navigation",
+							["nextRecipeID"] = 268878,
+							["recipeID"] = 268852
 						},
 						{
-							["recipeID"] = 255110--[[Weapon Enchant - Siphoning]]
+							["name"] = "Weapon Enchant - Versatile Navigation",
+							["nextRecipeID"] = 268879,
+							["previousRecipeID"] = 268852,
+							["recipeID"] = 268878
 						},
 						{
-							["recipeID"] = 255129--[[Weapon Enchant - Torrent of Elements]]
+							["name"] = "Weapon Enchant - Versatile Navigation",
+							["previousRecipeID"] = 268878,
+							["recipeID"] = 268879
 						}
 					}
 				},
 				{
-					["categoryID"] = 1098--[[Wrist Enchantments]],
+					["name"] = "Wrist Enchantments",
+					["categoryID"] = 1098,
 					["g"] = {
 						{
-							["recipeID"] = 271433--[[Cooled Hearthing]]
+							["name"] = "Cooled Hearthing",
+							["recipeID"] = 271433
 						},
 						{
-							["recipeID"] = 271366--[[Safe Hearthing]]
+							["name"] = "Safe Hearthing",
+							["recipeID"] = 271366
 						},
 						{
-							["recipeID"] = 267495--[[Swift Hearthing]]
+							["name"] = "Swift Hearthing",
+							["recipeID"] = 255068
+						},
+						{
+							["name"] = "Swift Hearthing",
+							["recipeID"] = 267495
 						}
 					}
 				},
 				{
-					["categoryID"] = 1097--[[Wands]],
+					["name"] = "Wands",
+					["categoryID"] = 1097,
 					["g"] = {
 						{
-							["recipeID"] = 265110--[[Enchanter's Sorcerous Scepter]]
+							["name"] = "Enchanter's Sorcerous Scepter",
+							["nextRecipeID"] = 265111,
+							["recipeID"] = 265110
 						},
 						{
-							["recipeID"] = 265111--[[Enchanter's Sorcerous Scepter]]
+							["name"] = "Enchanter's Sorcerous Scepter",
+							["nextRecipeID"] = 265112,
+							["previousRecipeID"] = 265110,
+							["recipeID"] = 265111
 						},
 						{
-							["recipeID"] = 265112--[[Enchanter's Sorcerous Scepter]]
+							["name"] = "Enchanter's Sorcerous Scepter",
+							["previousRecipeID"] = 265111,
+							["recipeID"] = 265112
 						},
 						{
-							["recipeID"] = 269719--[[Honorable Combatant's Sorcerous Scepter]]
+							["name"] = "Enchanter's Umbral Wand",
+							["recipeID"] = 265106
 						},
 						{
-							["recipeID"] = 269716--[[Honorable Combatant's Sorcerous Scepter]]
+							["name"] = "Honorable Combatant's Sorcerous Scepter",
+							["nextRecipeID"] = 269716,
+							["recipeID"] = 269715
 						},
 						{
-							["recipeID"] = 269715--[[Honorable Combatant's Sorcerous Scepter]]
+							["name"] = "Honorable Combatant's Sorcerous Scepter",
+							["nextRecipeID"] = 269719,
+							["previousRecipeID"] = 269715,
+							["recipeID"] = 269716
 						},
 						{
-							["recipeID"] = 265106--[[Enchanter's Umbral Wand]]
+							["name"] = "Honorable Combatant's Sorcerous Scepter",
+							["previousRecipeID"] = 269716,
+							["recipeID"] = 269719
+						},
+						{
+							["name"] = "Sinister Combatant's Sorcerous Scepter",
+							["nextRecipeID"] = 282855,
+							["recipeID"] = 282851
+						},
+						{
+							["name"] = "Sinister Combatant's Sorcerous Scepter",
+							["nextRecipeID"] = 282857,
+							["previousRecipeID"] = 282851,
+							["recipeID"] = 282855
+						},
+						{
+							["name"] = "Sinister Combatant's Sorcerous Scepter",
+							["previousRecipeID"] = 282855,
+							["recipeID"] = 282857
 						}
 					}
 				},
 				{
-					["categoryID"] = 1232--[[Follower Equipment]],
+					["name"] = "Pets",
+					["categoryID"] = 1237,
 					["g"] = {
 						{
-							["recipeID"] = 278418--[[Disenchanting Rod]]
-						}
-					}
-				}
-			}
-		},
-		{
-			["categoryID"] = 443--[[Legion Enchanting]],
-			["g"] = {
-				{
-					["categoryID"] = 506--[[Disenchant]],
-					["g"] = {
-						{
-							["recipeID"] = 252106--[[Chaos Shatter]]
-						},
-						{
-							["recipeID"] = 224199--[[Ley Shatter]]
+							["name"] = "Enchanted Tiki Mask",
+							["recipeID"] = 285644
 						}
 					}
 				},
 				{
-					["categoryID"] = 445--[[Ring Enchantments]],
+					["name"] = "Conversions",
+					["categoryID"] = 1240,
 					["g"] = {
 						{
-							["recipeID"] = 191013--[[Binding of Critical Strike]]
+							["name"] = "Aqueous Invocation",
+							["recipeID"] = 287270
 						},
 						{
-							["recipeID"] = 191014--[[Binding of Haste]]
+							["name"] = "Sanguinated Expulsion",
+							["recipeID"] = 286665
 						},
 						{
-							["recipeID"] = 191015--[[Binding of Mastery]]
-						},
-						{
-							["recipeID"] = 191016--[[Binding of Versatility]]
-						},
-						{
-							["recipeID"] = 190996--[[Binding of Critical Strike]]
-						},
-						{
-							["recipeID"] = 190997--[[Binding of Haste]]
-						},
-						{
-							["recipeID"] = 190998--[[Binding of Mastery]]
-						},
-						{
-							["recipeID"] = 190999--[[Binding of Versatility]]
-						},
-						{
-							["recipeID"] = 190870--[[Binding of Critical Strike]]
-						},
-						{
-							["recipeID"] = 190871--[[Binding of Haste]]
-						},
-						{
-							["recipeID"] = 190872--[[Binding of Mastery]]
-						},
-						{
-							["recipeID"] = 190873--[[Binding of Versatility]]
-						},
-						{
-							["recipeID"] = 191009--[[Word of Critical Strike]]
-						},
-						{
-							["recipeID"] = 191010--[[Word of Haste]]
-						},
-						{
-							["recipeID"] = 191011--[[Word of Mastery]]
-						},
-						{
-							["recipeID"] = 191012--[[Word of Versatility]]
-						},
-						{
-							["recipeID"] = 190992--[[Word of Critical Strike]]
-						},
-						{
-							["recipeID"] = 190993--[[Word of Haste]]
-						},
-						{
-							["recipeID"] = 190994--[[Word of Mastery]]
-						},
-						{
-							["recipeID"] = 190995--[[Word of Versatility]]
-						},
-						{
-							["recipeID"] = 190866--[[Word of Critical Strike]]
-						},
-						{
-							["recipeID"] = 190867--[[Word of Haste]]
-						},
-						{
-							["recipeID"] = 190868--[[Word of Mastery]]
-						},
-						{
-							["recipeID"] = 190869--[[Word of Versatility]]
+							["name"] = "Sanguinated Invocation",
+							["recipeID"] = 286644
 						}
 					}
 				},
 				{
-					["categoryID"] = 446--[[Cloak Enchantments]],
+					["name"] = "Disenchants",
+					["categoryID"] = 1251,
 					["g"] = {
 						{
-							["recipeID"] = 191021--[[Binding of Agility]]
+							["name"] = "Umbra Shatter",
+							["recipeID"] = 290360
 						},
 						{
-							["recipeID"] = 191022--[[Binding of Intellect]]
-						},
-						{
-							["recipeID"] = 191020--[[Binding of Strength]]
-						},
-						{
-							["recipeID"] = 191004--[[Binding of Agility]]
-						},
-						{
-							["recipeID"] = 191005--[[Binding of Intellect]]
-						},
-						{
-							["recipeID"] = 191003--[[Binding of Strength]]
-						},
-						{
-							["recipeID"] = 190878--[[Binding of Agility]]
-						},
-						{
-							["recipeID"] = 190879--[[Binding of Intellect]]
-						},
-						{
-							["recipeID"] = 190877--[[Binding of Strength]]
-						},
-						{
-							["recipeID"] = 191018--[[Word of Agility]]
-						},
-						{
-							["recipeID"] = 191019--[[Word of Intellect]]
-						},
-						{
-							["recipeID"] = 191017--[[Word of Strength]]
-						},
-						{
-							["recipeID"] = 191001--[[Word of Agility]]
-						},
-						{
-							["recipeID"] = 191002--[[Word of Intellect]]
-						},
-						{
-							["recipeID"] = 191000--[[Word of Strength]]
-						},
-						{
-							["recipeID"] = 190875--[[Word of Agility]]
-						},
-						{
-							["recipeID"] = 190876--[[Word of Intellect]]
-						},
-						{
-							["recipeID"] = 190874--[[Word of Strength]]
+							["name"] = "Veiled Shatter",
+							["recipeID"] = 290361
 						}
 					}
 				},
 				{
-					["categoryID"] = 444--[[Neck Enchantments]],
+					["name"] = "Follower Equipment",
+					["categoryID"] = 1232,
 					["g"] = {
 						{
-							["recipeID"] = 228410--[[Mark of the Ancient Priestess]]
-						},
-						{
-							["recipeID"] = 191023--[[Mark of the Claw]]
-						},
-						{
-							["recipeID"] = 191024--[[Mark of the Distant Army]]
-						},
-						{
-							["recipeID"] = 228404--[[Mark of the Heavy Hide]]
-						},
-						{
-							["recipeID"] = 191025--[[Mark of the Hidden Satyr]]
-						},
-						{
-							["recipeID"] = 228407--[[Mark of the Trained Soldier]]
-						},
-						{
-							["recipeID"] = 228409--[[Mark of the Ancient Priestess]]
-						},
-						{
-							["recipeID"] = 191006--[[Mark of the Claw]]
-						},
-						{
-							["recipeID"] = 235706--[[Mark of the Deadly]]
-						},
-						{
-							["recipeID"] = 191007--[[Mark of the Distant Army]]
-						},
-						{
-							["recipeID"] = 228403--[[Mark of the Heavy Hide]]
-						},
-						{
-							["recipeID"] = 191008--[[Mark of the Hidden Satyr]]
-						},
-						{
-							["recipeID"] = 235703--[[Mark of the Master]]
-						},
-						{
-							["recipeID"] = 235705--[[Mark of the Quick]]
-						},
-						{
-							["recipeID"] = 228406--[[Mark of the Trained Soldier]]
-						},
-						{
-							["recipeID"] = 235704--[[Mark of the Versatile]]
-						},
-						{
-							["recipeID"] = 235702--[[Mark of the Deadly]]
-						},
-						{
-							["recipeID"] = 235699--[[Mark of the Master]]
-						},
-						{
-							["recipeID"] = 235701--[[Mark of the Quick]]
-						},
-						{
-							["recipeID"] = 235700--[[Mark of the Versatile]]
-						},
-						{
-							["recipeID"] = 228408--[[Mark of the Ancient Priestess]]
-						},
-						{
-							["recipeID"] = 190892--[[Mark of the Claw]]
-						},
-						{
-							["recipeID"] = 235698--[[Mark of the Deadly]]
-						},
-						{
-							["recipeID"] = 190893--[[Mark of the Distant Army]]
-						},
-						{
-							["recipeID"] = 228402--[[Mark of the Heavy Hide]]
-						},
-						{
-							["recipeID"] = 190894--[[Mark of the Hidden Satyr]]
-						},
-						{
-							["recipeID"] = 235695--[[Mark of the Master]]
-						},
-						{
-							["recipeID"] = 235697--[[Mark of the Quick]]
-						},
-						{
-							["recipeID"] = 228405--[[Mark of the Trained Soldier]]
-						},
-						{
-							["recipeID"] = 235696--[[Mark of the Versatile]]
-						}
-					}
-				},
-				{
-					["categoryID"] = 447--[[Shoulder Enchantments]],
-					["g"] = {
-						{
-							["recipeID"] = 190954--[[Boon of the Scavenger]]
-						}
-					}
-				},
-				{
-					["categoryID"] = 448--[[Glove Enchantments]],
-					["g"] = {
-						{
-							["recipeID"] = 190988--[[Legion Herbalism]]
-						},
-						{
-							["recipeID"] = 190989--[[Legion Mining]]
-						},
-						{
-							["recipeID"] = 190990--[[Legion Skinning]]
-						},
-						{
-							["recipeID"] = 190991--[[Legion Surveying]]
-						}
-					}
-				},
-				{
-					["categoryID"] = 490--[[Relics]],
-					["g"] = {
-						{
-							["recipeID"] = 209509--[[Immaculate Fibril]]
-						},
-						{
-							["recipeID"] = 209507--[[Soul Fibril]]
-						}
-					}
-				},
-				{
-					["categoryID"] = 449--[[Toys, Pets, and Mounts]],
-					["g"] = {
-						{
-							["recipeID"] = 191078--[[Leylight Brazier]]
-						},
-						{
-							["recipeID"] = 191074--[[Enchanted Cauldron]]
-						},
-						{
-							["recipeID"] = 191076--[[Enchanted Pen]]
-						},
-						{
-							["recipeID"] = 191075--[[Enchanted Torch]]
+							["name"] = "Disenchanting Rod",
+							["recipeID"] = 278418
 						}
 					}
 				}
 			}
 		},
 		{
-			["categoryID"] = 348--[[Draenor Enchanting]],
+			["name"] = "Legion Enchanting",
+			["categoryID"] = 443,
 			["g"] = {
 				{
-					["categoryID"] = 409--[[Reagents and Research]],
+					["name"] = "Disenchant",
+					["categoryID"] = 506,
 					["g"] = {
 						{
-							["recipeID"] = 182129--[[Temporal Binding]]
+							["name"] = "Chaos Shatter",
+							["recipeID"] = 252106
 						},
 						{
-							["recipeID"] = 177043--[[Secrets of Draenor Enchanting]]
-						},
-						{
-							["recipeID"] = 178241--[[Temporal Crystal]]
-						},
-						{
-							["recipeID"] = 169092--[[Temporal Crystal]]
-						},
-						{
-							["recipeID"] = 169091--[[Luminous Shard]]
+							["name"] = "Ley Shatter",
+							["recipeID"] = 224199
 						}
 					}
 				},
 				{
-					["categoryID"] = 653--[[Illusions]],
+					["name"] = "Ring Enchantments",
+					["categoryID"] = 445,
 					["g"] = {
 						{
-							["recipeID"] = 217655--[[Tome of Illusions: Draenor]]
+							["name"] = "Binding of Critical Strike",
+							["nextRecipeID"] = 190996,
+							["recipeID"] = 190870
+						},
+						{
+							["name"] = "Binding of Critical Strike",
+							["nextRecipeID"] = 191013,
+							["previousRecipeID"] = 190870,
+							["recipeID"] = 190996
+						},
+						{
+							["name"] = "Binding of Critical Strike",
+							["previousRecipeID"] = 190996,
+							["recipeID"] = 191013
+						},
+						{
+							["name"] = "Binding of Haste",
+							["nextRecipeID"] = 190997,
+							["recipeID"] = 190871
+						},
+						{
+							["name"] = "Binding of Haste",
+							["nextRecipeID"] = 191014,
+							["previousRecipeID"] = 190871,
+							["recipeID"] = 190997
+						},
+						{
+							["name"] = "Binding of Haste",
+							["previousRecipeID"] = 190997,
+							["recipeID"] = 191014
+						},
+						{
+							["name"] = "Binding of Mastery",
+							["nextRecipeID"] = 190998,
+							["recipeID"] = 190872
+						},
+						{
+							["name"] = "Binding of Mastery",
+							["nextRecipeID"] = 191015,
+							["previousRecipeID"] = 190872,
+							["recipeID"] = 190998
+						},
+						{
+							["name"] = "Binding of Mastery",
+							["previousRecipeID"] = 190998,
+							["recipeID"] = 191015
+						},
+						{
+							["name"] = "Binding of Versatility",
+							["nextRecipeID"] = 190999,
+							["recipeID"] = 190873
+						},
+						{
+							["name"] = "Binding of Versatility",
+							["nextRecipeID"] = 191016,
+							["previousRecipeID"] = 190873,
+							["recipeID"] = 190999
+						},
+						{
+							["name"] = "Binding of Versatility",
+							["previousRecipeID"] = 190999,
+							["recipeID"] = 191016
+						},
+						{
+							["name"] = "Word of Critical Strike",
+							["nextRecipeID"] = 190992,
+							["recipeID"] = 190866
+						},
+						{
+							["name"] = "Word of Critical Strike",
+							["nextRecipeID"] = 191009,
+							["previousRecipeID"] = 190866,
+							["recipeID"] = 190992
+						},
+						{
+							["name"] = "Word of Critical Strike",
+							["previousRecipeID"] = 190992,
+							["recipeID"] = 191009
+						},
+						{
+							["name"] = "Word of Haste",
+							["nextRecipeID"] = 190993,
+							["recipeID"] = 190867
+						},
+						{
+							["name"] = "Word of Haste",
+							["nextRecipeID"] = 191010,
+							["previousRecipeID"] = 190867,
+							["recipeID"] = 190993
+						},
+						{
+							["name"] = "Word of Haste",
+							["previousRecipeID"] = 190993,
+							["recipeID"] = 191010
+						},
+						{
+							["name"] = "Word of Mastery",
+							["nextRecipeID"] = 190994,
+							["recipeID"] = 190868
+						},
+						{
+							["name"] = "Word of Mastery",
+							["nextRecipeID"] = 191011,
+							["previousRecipeID"] = 190868,
+							["recipeID"] = 190994
+						},
+						{
+							["name"] = "Word of Mastery",
+							["previousRecipeID"] = 190994,
+							["recipeID"] = 191011
+						},
+						{
+							["name"] = "Word of Versatility",
+							["nextRecipeID"] = 190995,
+							["recipeID"] = 190869
+						},
+						{
+							["name"] = "Word of Versatility",
+							["nextRecipeID"] = 191012,
+							["previousRecipeID"] = 190869,
+							["recipeID"] = 190995
+						},
+						{
+							["name"] = "Word of Versatility",
+							["previousRecipeID"] = 190995,
+							["recipeID"] = 191012
 						}
 					}
 				},
 				{
-					["categoryID"] = 352--[[Weapon]],
+					["name"] = "Cloak Enchantments",
+					["categoryID"] = 446,
 					["g"] = {
 						{
-							["recipeID"] = 159674--[[Mark of Blackrock]]
+							["name"] = "Binding of Agility",
+							["nextRecipeID"] = 191004,
+							["recipeID"] = 190878
 						},
 						{
-							["recipeID"] = 173323--[[Mark of Bleeding Hollow]]
+							["name"] = "Binding of Agility",
+							["nextRecipeID"] = 191021,
+							["previousRecipeID"] = 190878,
+							["recipeID"] = 191004
 						},
 						{
-							["recipeID"] = 159673--[[Mark of Shadowmoon]]
+							["name"] = "Binding of Agility",
+							["previousRecipeID"] = 191004,
+							["recipeID"] = 191021
 						},
 						{
-							["recipeID"] = 159672--[[Mark of the Frostwolf]]
+							["name"] = "Binding of Intellect",
+							["nextRecipeID"] = 191005,
+							["recipeID"] = 190879
 						},
 						{
-							["recipeID"] = 159236--[[Mark of the Shattered Hand]]
+							["name"] = "Binding of Intellect",
+							["nextRecipeID"] = 191022,
+							["previousRecipeID"] = 190879,
+							["recipeID"] = 191005
 						},
 						{
-							["recipeID"] = 159235--[[Mark of the Thunderlord]]
+							["name"] = "Binding of Intellect",
+							["previousRecipeID"] = 191005,
+							["recipeID"] = 191022
 						},
 						{
-							["recipeID"] = 159671--[[Mark of Warsong]]
+							["name"] = "Binding of Strength",
+							["nextRecipeID"] = 191003,
+							["recipeID"] = 190877
+						},
+						{
+							["name"] = "Binding of Strength",
+							["nextRecipeID"] = 191020,
+							["previousRecipeID"] = 190877,
+							["recipeID"] = 191003
+						},
+						{
+							["name"] = "Binding of Strength",
+							["previousRecipeID"] = 191003,
+							["recipeID"] = 191020
+						},
+						{
+							["name"] = "Word of Agility",
+							["nextRecipeID"] = 191001,
+							["recipeID"] = 190875
+						},
+						{
+							["name"] = "Word of Agility",
+							["nextRecipeID"] = 191018,
+							["previousRecipeID"] = 190875,
+							["recipeID"] = 191001
+						},
+						{
+							["name"] = "Word of Agility",
+							["previousRecipeID"] = 191001,
+							["recipeID"] = 191018
+						},
+						{
+							["name"] = "Word of Intellect",
+							["nextRecipeID"] = 191002,
+							["recipeID"] = 190876
+						},
+						{
+							["name"] = "Word of Intellect",
+							["nextRecipeID"] = 191019,
+							["previousRecipeID"] = 190876,
+							["recipeID"] = 191002
+						},
+						{
+							["name"] = "Word of Intellect",
+							["previousRecipeID"] = 191002,
+							["recipeID"] = 191019
+						},
+						{
+							["name"] = "Word of Strength",
+							["nextRecipeID"] = 191000,
+							["recipeID"] = 190874
+						},
+						{
+							["name"] = "Word of Strength",
+							["nextRecipeID"] = 191017,
+							["previousRecipeID"] = 190874,
+							["recipeID"] = 191000
+						},
+						{
+							["name"] = "Word of Strength",
+							["previousRecipeID"] = 191000,
+							["recipeID"] = 191017
 						}
 					}
 				},
 				{
-					["categoryID"] = 349--[[Cloak]],
+					["name"] = "Neck Enchantments",
+					["categoryID"] = 444,
 					["g"] = {
 						{
-							["recipeID"] = 158884--[[Gift of Critical Strike]]
+							["name"] = "Mark of the Ancient Priestess",
+							["nextRecipeID"] = 228409,
+							["recipeID"] = 228408
 						},
 						{
-							["recipeID"] = 158885--[[Gift of Haste]]
+							["name"] = "Mark of the Ancient Priestess",
+							["nextRecipeID"] = 228410,
+							["previousRecipeID"] = 228408,
+							["recipeID"] = 228409
 						},
 						{
-							["recipeID"] = 158886--[[Gift of Mastery]]
+							["name"] = "Mark of the Ancient Priestess",
+							["previousRecipeID"] = 228409,
+							["recipeID"] = 228410
 						},
 						{
-							["recipeID"] = 158889--[[Gift of Versatility]]
+							["name"] = "Mark of the Claw",
+							["nextRecipeID"] = 191006,
+							["recipeID"] = 190892
 						},
 						{
-							["recipeID"] = 158877--[[Breath of Critical Strike]]
+							["name"] = "Mark of the Claw",
+							["nextRecipeID"] = 191023,
+							["previousRecipeID"] = 190892,
+							["recipeID"] = 191006
 						},
 						{
-							["recipeID"] = 158878--[[Breath of Haste]]
+							["name"] = "Mark of the Claw",
+							["previousRecipeID"] = 191006,
+							["recipeID"] = 191023
 						},
 						{
-							["recipeID"] = 158879--[[Breath of Mastery]]
+							["name"] = "Mark of the Deadly",
+							["nextRecipeID"] = 235702,
+							["recipeID"] = 235698
 						},
 						{
-							["recipeID"] = 158881--[[Breath of Versatility]]
+							["name"] = "Mark of the Deadly",
+							["nextRecipeID"] = 235706,
+							["previousRecipeID"] = 235698,
+							["recipeID"] = 235702
+						},
+						{
+							["name"] = "Mark of the Deadly",
+							["previousRecipeID"] = 235702,
+							["recipeID"] = 235706
+						},
+						{
+							["name"] = "Mark of the Distant Army",
+							["nextRecipeID"] = 191007,
+							["recipeID"] = 190893
+						},
+						{
+							["name"] = "Mark of the Distant Army",
+							["nextRecipeID"] = 191024,
+							["previousRecipeID"] = 190893,
+							["recipeID"] = 191007
+						},
+						{
+							["name"] = "Mark of the Distant Army",
+							["previousRecipeID"] = 191007,
+							["recipeID"] = 191024
+						},
+						{
+							["name"] = "Mark of the Heavy Hide",
+							["nextRecipeID"] = 228403,
+							["recipeID"] = 228402
+						},
+						{
+							["name"] = "Mark of the Heavy Hide",
+							["nextRecipeID"] = 228404,
+							["previousRecipeID"] = 228402,
+							["recipeID"] = 228403
+						},
+						{
+							["name"] = "Mark of the Heavy Hide",
+							["previousRecipeID"] = 228403,
+							["recipeID"] = 228404
+						},
+						{
+							["name"] = "Mark of the Hidden Satyr",
+							["nextRecipeID"] = 191008,
+							["recipeID"] = 190894
+						},
+						{
+							["name"] = "Mark of the Hidden Satyr",
+							["nextRecipeID"] = 191025,
+							["previousRecipeID"] = 190894,
+							["recipeID"] = 191008
+						},
+						{
+							["name"] = "Mark of the Hidden Satyr",
+							["previousRecipeID"] = 191008,
+							["recipeID"] = 191025
+						},
+						{
+							["name"] = "Mark of the Master",
+							["nextRecipeID"] = 235699,
+							["recipeID"] = 235695
+						},
+						{
+							["name"] = "Mark of the Master",
+							["nextRecipeID"] = 235703,
+							["previousRecipeID"] = 235695,
+							["recipeID"] = 235699
+						},
+						{
+							["name"] = "Mark of the Master",
+							["previousRecipeID"] = 235699,
+							["recipeID"] = 235703
+						},
+						{
+							["name"] = "Mark of the Quick",
+							["nextRecipeID"] = 235701,
+							["recipeID"] = 235697
+						},
+						{
+							["name"] = "Mark of the Quick",
+							["nextRecipeID"] = 235705,
+							["previousRecipeID"] = 235697,
+							["recipeID"] = 235701
+						},
+						{
+							["name"] = "Mark of the Quick",
+							["previousRecipeID"] = 235701,
+							["recipeID"] = 235705
+						},
+						{
+							["name"] = "Mark of the Trained Soldier",
+							["nextRecipeID"] = 228406,
+							["recipeID"] = 228405
+						},
+						{
+							["name"] = "Mark of the Trained Soldier",
+							["nextRecipeID"] = 228407,
+							["previousRecipeID"] = 228405,
+							["recipeID"] = 228406
+						},
+						{
+							["name"] = "Mark of the Trained Soldier",
+							["previousRecipeID"] = 228406,
+							["recipeID"] = 228407
+						},
+						{
+							["name"] = "Mark of the Versatile",
+							["nextRecipeID"] = 235700,
+							["recipeID"] = 235696
+						},
+						{
+							["name"] = "Mark of the Versatile",
+							["nextRecipeID"] = 235704,
+							["previousRecipeID"] = 235696,
+							["recipeID"] = 235700
+						},
+						{
+							["name"] = "Mark of the Versatile",
+							["previousRecipeID"] = 235700,
+							["recipeID"] = 235704
 						}
 					}
 				},
 				{
-					["categoryID"] = 350--[[Neck]],
+					["name"] = "Shoulder Enchantments",
+					["categoryID"] = 447,
 					["g"] = {
 						{
-							["recipeID"] = 158899--[[Gift of Critical Strike]]
-						},
-						{
-							["recipeID"] = 158900--[[Gift of Haste]]
-						},
-						{
-							["recipeID"] = 158901--[[Gift of Mastery]]
-						},
-						{
-							["recipeID"] = 158903--[[Gift of Versatility]]
-						},
-						{
-							["recipeID"] = 158892--[[Breath of Critical Strike]]
-						},
-						{
-							["recipeID"] = 158893--[[Breath of Haste]]
-						},
-						{
-							["recipeID"] = 158894--[[Breath of Mastery]]
-						},
-						{
-							["recipeID"] = 158896--[[Breath of Versatility]]
+							["name"] = "Boon of the Scavenger",
+							["recipeID"] = 190954
 						}
 					}
 				},
 				{
-					["categoryID"] = 351--[[Ring]],
+					["name"] = "Glove Enchantments",
+					["categoryID"] = 448,
 					["g"] = {
 						{
-							["recipeID"] = 158914--[[Gift of Critical Strike]]
+							["name"] = "Legion Herbalism",
+							["recipeID"] = 190988
 						},
 						{
-							["recipeID"] = 158915--[[Gift of Haste]]
+							["name"] = "Legion Mining",
+							["recipeID"] = 190989
 						},
 						{
-							["recipeID"] = 158916--[[Gift of Mastery]]
+							["name"] = "Legion Skinning",
+							["recipeID"] = 190990
 						},
 						{
-							["recipeID"] = 158918--[[Gift of Versatility]]
-						},
-						{
-							["recipeID"] = 158907--[[Breath of Critical Strike]]
-						},
-						{
-							["recipeID"] = 158908--[[Breath of Haste]]
-						},
-						{
-							["recipeID"] = 158909--[[Breath of Mastery]]
-						},
-						{
-							["recipeID"] = 158911--[[Breath of Versatility]]
+							["name"] = "Legion Surveying",
+							["recipeID"] = 190991
 						}
 					}
 				},
 				{
-					["categoryID"] = 354--[[Other]],
+					["name"] = "Relics",
+					["categoryID"] = 490,
 					["g"] = {
 						{
-							["recipeID"] = 162948--[[Enchanted Dust]]
+							["name"] = "Immaculate Fibril",
+							["recipeID"] = 209509
+						},
+						{
+							["name"] = "Soul Fibril",
+							["recipeID"] = 209507
+						}
+					}
+				},
+				{
+					["name"] = "Toys, Pets, and Mounts",
+					["categoryID"] = 449,
+					["g"] = {
+						{
+							["name"] = "Enchanted Cauldron",
+							["recipeID"] = 191074
+						},
+						{
+							["name"] = "Enchanted Pen",
+							["recipeID"] = 191076
+						},
+						{
+							["name"] = "Enchanted Torch",
+							["recipeID"] = 191075
+						},
+						{
+							["name"] = "Leylight Brazier",
+							["recipeID"] = 191078
 						}
 					}
 				}
 			}
 		},
 		{
-			["categoryID"] = 656--[[Pandaria Enchanting]],
+			["name"] = "Draenor Enchanting",
+			["categoryID"] = 348,
 			["g"] = {
 				{
-					["categoryID"] = 702--[[Illusions]],
+					["name"] = "Reagents and Research",
+					["categoryID"] = 409,
 					["g"] = {
 						{
-							["recipeID"] = 217650--[[Tome of Illusions: Pandaria]]
+							["name"] = "Luminous Shard",
+							["recipeID"] = 169091
 						},
 						{
-							["recipeID"] = 217651--[[Tome of Illusions: Secrets of the Shado-Pan]]
+							["name"] = "Secrets of Draenor Enchanting",
+							["recipeID"] = 177043
+						},
+						{
+							["name"] = "Temporal Binding",
+							["recipeID"] = 182129
+						},
+						{
+							["name"] = "Temporal Crystal",
+							["recipeID"] = 178241
+						},
+						{
+							["name"] = "Temporal Crystal",
+							["recipeID"] = 169092
 						}
 					}
 				},
 				{
-					["categoryID"] = 654--[[Reagents]],
+					["name"] = "Illusions",
+					["categoryID"] = 653,
 					["g"] = {
 						{
-							["recipeID"] = 116498--[[Ethereal Shard]]
-						},
-						{
-							["recipeID"] = 116499--[[Sha Crystal]]
-						},
-						{
-							["recipeID"] = 118239--[[Sha Shatter]]
-						},
-						{
-							["recipeID"] = 118238--[[Ethereal Shatter]]
-						},
-						{
-							["recipeID"] = 116497--[[Mysterious Essence]]
-						},
-						{
-							["recipeID"] = 118237--[[Mysterious Diffusion]]
+							["name"] = "Tome of Illusions: Draenor",
+							["recipeID"] = 217655
 						}
 					}
 				},
 				{
-					["categoryID"] = 657--[[Armor Enchantments]],
+					["name"] = "Weapon",
+					["categoryID"] = 352,
 					["g"] = {
 						{
-							["recipeID"] = 104398--[[Accuracy]]
+							["name"] = "Mark of Blackrock",
+							["recipeID"] = 159674
 						},
 						{
-							["recipeID"] = 104409--[[Blurred Speed]]
+							["name"] = "Mark of Bleeding Hollow",
+							["recipeID"] = 173323
 						},
 						{
-							["recipeID"] = 104390--[[Exceptional Strength]]
+							["name"] = "Mark of Shadowmoon",
+							["recipeID"] = 159673
 						},
 						{
-							["recipeID"] = 104395--[[Glorious Stats]]
+							["name"] = "Mark of the Frostwolf",
+							["recipeID"] = 159672
 						},
 						{
-							["recipeID"] = 104391--[[Greater Agility]]
+							["name"] = "Mark of the Shattered Hand",
+							["recipeID"] = 159236
 						},
 						{
-							["recipeID"] = 104407--[[Greater Haste]]
+							["name"] = "Mark of the Thunderlord",
+							["recipeID"] = 159235
 						},
 						{
-							["recipeID"] = 104401--[[Greater Protection]]
-						},
-						{
-							["recipeID"] = 104414--[[Pandaren's Step]]
-						},
-						{
-							["recipeID"] = 104389--[[Super Intellect]]
-						},
-						{
-							["recipeID"] = 104419--[[Super Strength]]
-						},
-						{
-							["recipeID"] = 104417--[[Superior Haste]]
-						},
-						{
-							["recipeID"] = 104420--[[Superior Mastery]]
-						},
-						{
-							["recipeID"] = 104397--[[Superior Stamina]]
-						},
-						{
-							["recipeID"] = 104416--[[Greater Haste]]
-						},
-						{
-							["recipeID"] = 104408--[[Greater Precision]]
-						},
-						{
-							["recipeID"] = 104385--[[Major Dodge]]
-						},
-						{
-							["recipeID"] = 104393--[[Mighty Versatility]]
-						},
-						{
-							["recipeID"] = 104392--[[Super Resilience]]
-						},
-						{
-							["recipeID"] = 104403--[[Superior Intellect]]
-						},
-						{
-							["recipeID"] = 104338--[[Mastery]]
-						},
-						{
-							["recipeID"] = 104404--[[Superior Critical Strike]]
+							["name"] = "Mark of Warsong",
+							["recipeID"] = 159671
 						}
 					}
 				},
 				{
-					["categoryID"] = 658--[[Weapon Enchantments]],
+					["name"] = "Cloak",
+					["categoryID"] = 349,
 					["g"] = {
 						{
-							["recipeID"] = 104440--[[Colossus]]
+							["name"] = "Breath of Critical Strike",
+							["recipeID"] = 158877
 						},
 						{
-							["recipeID"] = 104434--[[Dancing Steel]]
+							["name"] = "Breath of Haste",
+							["recipeID"] = 158878
 						},
 						{
-							["recipeID"] = 104427--[[Jade Spirit]]
+							["name"] = "Breath of Mastery",
+							["recipeID"] = 158879
 						},
 						{
-							["recipeID"] = 104442--[[River's Song]]
+							["name"] = "Breath of Versatility",
+							["recipeID"] = 158881
 						},
 						{
-							["recipeID"] = 104425--[[Windsong]]
+							["name"] = "Gift of Critical Strike",
+							["recipeID"] = 158884
 						},
 						{
-							["recipeID"] = 104430--[[Elemental Force]]
+							["name"] = "Gift of Haste",
+							["recipeID"] = 158885
+						},
+						{
+							["name"] = "Gift of Mastery",
+							["recipeID"] = 158886
+						},
+						{
+							["name"] = "Gift of Versatility",
+							["recipeID"] = 158889
 						}
 					}
 				},
 				{
-					["categoryID"] = 659--[[Shield and Off-Hand Enchantments]],
+					["name"] = "Neck",
+					["categoryID"] = 350,
 					["g"] = {
 						{
-							["recipeID"] = 130758--[[Greater Parry]]
+							["name"] = "Breath of Critical Strike",
+							["recipeID"] = 158892
 						},
 						{
-							["recipeID"] = 104445--[[Major Intellect]]
+							["name"] = "Breath of Haste",
+							["recipeID"] = 158893
+						},
+						{
+							["name"] = "Breath of Mastery",
+							["recipeID"] = 158894
+						},
+						{
+							["name"] = "Breath of Versatility",
+							["recipeID"] = 158896
+						},
+						{
+							["name"] = "Gift of Critical Strike",
+							["recipeID"] = 158899
+						},
+						{
+							["name"] = "Gift of Haste",
+							["recipeID"] = 158900
+						},
+						{
+							["name"] = "Gift of Mastery",
+							["recipeID"] = 158901
+						},
+						{
+							["name"] = "Gift of Versatility",
+							["recipeID"] = 158903
+						}
+					}
+				},
+				{
+					["name"] = "Ring",
+					["categoryID"] = 351,
+					["g"] = {
+						{
+							["name"] = "Breath of Critical Strike",
+							["recipeID"] = 158907
+						},
+						{
+							["name"] = "Breath of Haste",
+							["recipeID"] = 158908
+						},
+						{
+							["name"] = "Breath of Mastery",
+							["recipeID"] = 158909
+						},
+						{
+							["name"] = "Breath of Versatility",
+							["recipeID"] = 158911
+						},
+						{
+							["name"] = "Gift of Critical Strike",
+							["recipeID"] = 158914
+						},
+						{
+							["name"] = "Gift of Haste",
+							["recipeID"] = 158915
+						},
+						{
+							["name"] = "Gift of Mastery",
+							["recipeID"] = 158916
+						},
+						{
+							["name"] = "Gift of Versatility",
+							["recipeID"] = 158918
+						}
+					}
+				},
+				{
+					["name"] = "Other",
+					["categoryID"] = 354,
+					["g"] = {
+						{
+							["name"] = "Enchanted Dust",
+							["recipeID"] = 162948
 						}
 					}
 				}
 			}
 		},
 		{
-			["categoryID"] = 661--[[Cataclysm Enchanting]],
+			["name"] = "Pandaria Enchanting",
+			["categoryID"] = 656,
 			["g"] = {
 				{
-					["categoryID"] = 703--[[Illusions]],
+					["name"] = "Illusions",
+					["categoryID"] = 702,
 					["g"] = {
 						{
-							["recipeID"] = 217645--[[Tome of Illusions: Cataclysm]]
+							["name"] = "Tome of Illusions: Pandaria",
+							["recipeID"] = 217650
 						},
 						{
-							["recipeID"] = 217649--[[Tome of Illusions: Elemental Lords]]
+							["name"] = "Tome of Illusions: Secrets of the Shado-Pan",
+							["recipeID"] = 217651
 						}
 					}
 				},
 				{
-					["categoryID"] = 707--[[Reagents]],
+					["name"] = "Reagents",
+					["categoryID"] = 654,
 					["g"] = {
 						{
-							["recipeID"] = 104698--[[Maelstrom Shatter]]
+							["name"] = "Ethereal Shard",
+							["recipeID"] = 116498
+						},
+						{
+							["name"] = "Ethereal Shatter",
+							["recipeID"] = 118238
+						},
+						{
+							["name"] = "Mysterious Diffusion",
+							["recipeID"] = 118237
+						},
+						{
+							["name"] = "Mysterious Essence",
+							["recipeID"] = 116497
+						},
+						{
+							["name"] = "Sha Crystal",
+							["recipeID"] = 116499
+						},
+						{
+							["name"] = "Sha Shatter",
+							["recipeID"] = 118239
 						}
 					}
 				},
 				{
-					["categoryID"] = 668--[[Armor Enchantments]],
+					["name"] = "Armor Enchantments",
+					["categoryID"] = 657,
 					["g"] = {
 						{
-							["recipeID"] = 96264--[[Agility]]
+							["name"] = "Accuracy",
+							["recipeID"] = 104398
 						},
 						{
-							["recipeID"] = 74252--[[Assassin's Step]]
+							["name"] = "Blurred Speed",
+							["recipeID"] = 104409
 						},
 						{
-							["recipeID"] = 74237--[[Exceptional Versatility]]
+							["name"] = "Exceptional Strength",
+							["recipeID"] = 104390
 						},
 						{
-							["recipeID"] = 74231--[[Exceptional Versatility]]
+							["name"] = "Glorious Stats",
+							["recipeID"] = 104395
 						},
 						{
-							["recipeID"] = 74248--[[Greater Critical Strike]]
+							["name"] = "Greater Agility",
+							["recipeID"] = 104391
 						},
 						{
-							["recipeID"] = 74247--[[Greater Critical Strike]]
+							["name"] = "Greater Haste",
+							["recipeID"] = 104407
 						},
 						{
-							["recipeID"] = 74239--[[Greater Haste]]
+							["name"] = "Greater Haste",
+							["recipeID"] = 104416
 						},
 						{
-							["recipeID"] = 74240--[[Greater Intellect]]
+							["name"] = "Greater Precision",
+							["recipeID"] = 104408
 						},
 						{
-							["recipeID"] = 74255--[[Greater Mastery]]
+							["name"] = "Greater Protection",
+							["recipeID"] = 104401
 						},
 						{
-							["recipeID"] = 74256--[[Greater Speed]]
+							["name"] = "Major Dodge",
+							["recipeID"] = 104385
 						},
 						{
-							["recipeID"] = 74251--[[Greater Stamina]]
+							["name"] = "Mastery",
+							["recipeID"] = 104338
 						},
 						{
-							["recipeID"] = 74253--[[Lavawalker]]
+							["name"] = "Mighty Versatility",
+							["recipeID"] = 104393
 						},
 						{
-							["recipeID"] = 96261--[[Major Strength]]
+							["name"] = "Pandaren's Step",
+							["recipeID"] = 104414
 						},
 						{
-							["recipeID"] = 74238--[[Mastery]]
+							["name"] = "Super Intellect",
+							["recipeID"] = 104389
 						},
 						{
-							["recipeID"] = 96262--[[Mighty Intellect]]
+							["name"] = "Super Resilience",
+							["recipeID"] = 104392
 						},
 						{
-							["recipeID"] = 74254--[[Mighty Strength]]
+							["name"] = "Super Strength",
+							["recipeID"] = 104419
 						},
 						{
-							["recipeID"] = 74250--[[Peerless Stats]]
+							["name"] = "Superior Critical Strike",
+							["recipeID"] = 104404
 						},
 						{
-							["recipeID"] = 74232--[[Precision]]
+							["name"] = "Superior Haste",
+							["recipeID"] = 104417
 						},
 						{
-							["recipeID"] = 74234--[[Protection]]
+							["name"] = "Superior Intellect",
+							["recipeID"] = 104403
 						},
 						{
-							["recipeID"] = 74230--[[Critical Strike]]
+							["name"] = "Superior Mastery",
+							["recipeID"] = 104420
 						},
 						{
-							["recipeID"] = 74229--[[Superior Dodge]]
-						},
-						{
-							["recipeID"] = 74236--[[Precision]]
-						},
-						{
-							["recipeID"] = 74220--[[Greater Haste]]
-						},
-						{
-							["recipeID"] = 74213--[[Major Agility]]
-						},
-						{
-							["recipeID"] = 74214--[[Mighty Resilience]]
-						},
-						{
-							["recipeID"] = 74212--[[Exceptional Strength]]
-						},
-						{
-							["recipeID"] = 74202--[[Intellect]]
-						},
-						{
-							["recipeID"] = 74201--[[Critical Strike]]
-						},
-						{
-							["recipeID"] = 74200--[[Stamina]]
-						},
-						{
-							["recipeID"] = 74199--[[Haste]]
-						},
-						{
-							["recipeID"] = 74198--[[Haste]]
-						},
-						{
-							["recipeID"] = 74192--[[Lesser Power]]
-						},
-						{
-							["recipeID"] = 74193--[[Speed]]
-						},
-						{
-							["recipeID"] = 74189--[[Earthen Vitality]]
-						},
-						{
-							["recipeID"] = 74132--[[Mastery]]
-						},
-						{
-							["recipeID"] = 74191--[[Mighty Stats]]
+							["name"] = "Superior Stamina",
+							["recipeID"] = 104397
 						}
 					}
 				},
 				{
-					["categoryID"] = 669--[[Weapon Enchantments]],
+					["name"] = "Weapon Enchantments",
+					["categoryID"] = 658,
 					["g"] = {
 						{
-							["recipeID"] = 74246--[[Landslide]]
+							["name"] = "Colossus",
+							["recipeID"] = 104440
 						},
 						{
-							["recipeID"] = 74242--[[Power Torrent]]
+							["name"] = "Dancing Steel",
+							["recipeID"] = 104434
 						},
 						{
-							["recipeID"] = 74244--[[Windwalk]]
+							["name"] = "Elemental Force",
+							["recipeID"] = 104430
 						},
 						{
-							["recipeID"] = 74225--[[Heartsong]]
+							["name"] = "Jade Spirit",
+							["recipeID"] = 104427
 						},
 						{
-							["recipeID"] = 74223--[[Hurricane]]
+							["name"] = "River's Song",
+							["recipeID"] = 104442
 						},
 						{
-							["recipeID"] = 74211--[[Elemental Slayer]]
-						},
-						{
-							["recipeID"] = 95471--[[Mighty Agility]]
-						},
-						{
-							["recipeID"] = 74197--[[Avalanche]]
-						},
-						{
-							["recipeID"] = 74195--[[Mending]]
+							["name"] = "Windsong",
+							["recipeID"] = 104425
 						}
 					}
 				},
 				{
-					["categoryID"] = 670--[[Shield and Off-Hand Enchantments]],
+					["name"] = "Shield and Off-Hand Enchantments",
+					["categoryID"] = 659,
 					["g"] = {
 						{
-							["recipeID"] = 74235--[[Superior Intellect]]
+							["name"] = "Greater Parry",
+							["recipeID"] = 130758
 						},
 						{
-							["recipeID"] = 74226--[[Mastery]]
-						},
-						{
-							["recipeID"] = 74207--[[Protection]]
-						}
-					}
-				},
-				{
-					["categoryID"] = 671--[[Pets]],
-					["g"] = {
-						{
-							["recipeID"] = 93841--[[Enchanted Lantern]]
+							["name"] = "Major Intellect",
+							["recipeID"] = 104445
 						}
 					}
 				}
 			}
 		},
 		{
-			["categoryID"] = 663--[[Northrend Enchanting]],
+			["name"] = "Cataclysm Enchanting",
+			["categoryID"] = 661,
 			["g"] = {
 				{
-					["categoryID"] = 704--[[Illusions]],
+					["name"] = "Illusions",
+					["categoryID"] = 703,
 					["g"] = {
 						{
-							["recipeID"] = 217644--[[Tome of Illusions: Northrend]]
+							["name"] = "Tome of Illusions: Cataclysm",
+							["recipeID"] = 217645
+						},
+						{
+							["name"] = "Tome of Illusions: Elemental Lords",
+							["recipeID"] = 217649
 						}
 					}
 				},
 				{
-					["categoryID"] = 672--[[Reagents]],
+					["name"] = "Reagents",
+					["categoryID"] = 707,
 					["g"] = {
 						{
-							["recipeID"] = 69412--[[Abyssal Shatter]]
+							["name"] = "Maelstrom Shatter",
+							["recipeID"] = 104698
 						}
 					}
 				},
 				{
-					["categoryID"] = 673--[[Boot Enchantments]],
+					["name"] = "Armor Enchantments",
+					["categoryID"] = 668,
 					["g"] = {
 						{
-							["recipeID"] = 60763--[[Greater Assault]]
+							["name"] = "Agility",
+							["recipeID"] = 96264
 						},
 						{
-							["recipeID"] = 47901--[[Tuskarr's Vitality]]
+							["name"] = "Assassin's Step",
+							["recipeID"] = 74252
 						},
 						{
-							["recipeID"] = 44589--[[Superior Agility]]
+							["name"] = "Critical Strike",
+							["recipeID"] = 74230
 						},
 						{
-							["recipeID"] = 44508--[[Greater Versatility]]
+							["name"] = "Critical Strike",
+							["recipeID"] = 74201
 						},
 						{
-							["recipeID"] = 44584--[[Greater Vitality]]
+							["name"] = "Earthen Vitality",
+							["recipeID"] = 74189
 						},
 						{
-							["recipeID"] = 60623--[[Icewalker]]
+							["name"] = "Exceptional Strength",
+							["recipeID"] = 74212
 						},
 						{
-							["recipeID"] = 44528--[[Greater Fortitude]]
+							["name"] = "Exceptional Versatility",
+							["recipeID"] = 74237
 						},
 						{
-							["recipeID"] = 60606--[[Assault]]
+							["name"] = "Exceptional Versatility",
+							["recipeID"] = 74231
+						},
+						{
+							["name"] = "Greater Critical Strike",
+							["recipeID"] = 74248
+						},
+						{
+							["name"] = "Greater Critical Strike",
+							["recipeID"] = 74247
+						},
+						{
+							["name"] = "Greater Haste",
+							["recipeID"] = 74239
+						},
+						{
+							["name"] = "Greater Haste",
+							["recipeID"] = 74220
+						},
+						{
+							["name"] = "Greater Intellect",
+							["recipeID"] = 74240
+						},
+						{
+							["name"] = "Greater Mastery",
+							["recipeID"] = 74255
+						},
+						{
+							["name"] = "Greater Speed",
+							["recipeID"] = 74256
+						},
+						{
+							["name"] = "Greater Stamina",
+							["recipeID"] = 74251
+						},
+						{
+							["name"] = "Haste",
+							["recipeID"] = 74198
+						},
+						{
+							["name"] = "Haste",
+							["recipeID"] = 74199
+						},
+						{
+							["name"] = "Intellect",
+							["recipeID"] = 74202
+						},
+						{
+							["name"] = "Lavawalker",
+							["recipeID"] = 74253
+						},
+						{
+							["name"] = "Lesser Power",
+							["recipeID"] = 74192
+						},
+						{
+							["name"] = "Major Agility",
+							["recipeID"] = 74213
+						},
+						{
+							["name"] = "Major Strength",
+							["recipeID"] = 96261
+						},
+						{
+							["name"] = "Mastery",
+							["recipeID"] = 74132
+						},
+						{
+							["name"] = "Mastery",
+							["recipeID"] = 74238
+						},
+						{
+							["name"] = "Mighty Intellect",
+							["recipeID"] = 96262
+						},
+						{
+							["name"] = "Mighty Resilience",
+							["recipeID"] = 74214
+						},
+						{
+							["name"] = "Mighty Stats",
+							["recipeID"] = 74191
+						},
+						{
+							["name"] = "Mighty Strength",
+							["recipeID"] = 74254
+						},
+						{
+							["name"] = "Peerless Stats",
+							["recipeID"] = 74250
+						},
+						{
+							["name"] = "Precision",
+							["recipeID"] = 74236
+						},
+						{
+							["name"] = "Precision",
+							["recipeID"] = 74232
+						},
+						{
+							["name"] = "Protection",
+							["recipeID"] = 74234
+						},
+						{
+							["name"] = "Speed",
+							["recipeID"] = 74193
+						},
+						{
+							["name"] = "Stamina",
+							["recipeID"] = 74200
+						},
+						{
+							["name"] = "Superior Dodge",
+							["recipeID"] = 74229
 						}
 					}
 				},
 				{
-					["categoryID"] = 674--[[Glove Enchantments]],
+					["name"] = "Weapon Enchantments",
+					["categoryID"] = 669,
 					["g"] = {
 						{
-							["recipeID"] = 44625--[[Armsman]]
+							["name"] = "Avalanche",
+							["recipeID"] = 74197
 						},
 						{
-							["recipeID"] = 60668--[[Crusher]]
+							["name"] = "Elemental Slayer",
+							["recipeID"] = 74211
 						},
 						{
-							["recipeID"] = 44529--[[Major Agility]]
+							["name"] = "Heartsong",
+							["recipeID"] = 74225
 						},
 						{
-							["recipeID"] = 44488--[[Precision]]
+							["name"] = "Hurricane",
+							["recipeID"] = 74223
 						},
 						{
-							["recipeID"] = 44484--[[Haste]]
+							["name"] = "Landslide",
+							["recipeID"] = 74246
 						},
 						{
-							["recipeID"] = 44513--[[Greater Assault]]
+							["name"] = "Mending",
+							["recipeID"] = 74195
 						},
 						{
-							["recipeID"] = 44612--[[Greater Blasting]]
+							["name"] = "Mighty Agility",
+							["recipeID"] = 95471
 						},
 						{
-							["recipeID"] = 71692--[[Angler]]
+							["name"] = "Power Torrent",
+							["recipeID"] = 74242
 						},
 						{
-							["recipeID"] = 44506--[[Gatherer]]
-						},
-						{
-							["recipeID"] = 44592--[[Exceptional Spellpower]]
+							["name"] = "Windwalk",
+							["recipeID"] = 74244
 						}
 					}
 				},
 				{
-					["categoryID"] = 675--[[Chest Enchantments]],
+					["name"] = "Shield and Off-Hand Enchantments",
+					["categoryID"] = 670,
 					["g"] = {
 						{
-							["recipeID"] = 44588--[[Exceptional Resilience]]
+							["name"] = "Mastery",
+							["recipeID"] = 74226
 						},
 						{
-							["recipeID"] = 44509--[[Greater Versatility]]
+							["name"] = "Protection",
+							["recipeID"] = 74207
 						},
 						{
-							["recipeID"] = 60692--[[Powerful Stats]]
-						},
-						{
-							["recipeID"] = 47900--[[Super Health]]
-						},
-						{
-							["recipeID"] = 47766--[[Greater Dodge]]
-						},
-						{
-							["recipeID"] = 44492--[[Mighty Health]]
-						},
-						{
-							["recipeID"] = 44623--[[Super Stats]]
-						},
-						{
-							["recipeID"] = 27958--[[Exceptional Mana]]
+							["name"] = "Superior Intellect",
+							["recipeID"] = 74235
 						}
 					}
 				},
 				{
-					["categoryID"] = 676--[[Cloak Enchantments]],
+					["name"] = "Pets",
+					["categoryID"] = 671,
 					["g"] = {
 						{
-							["recipeID"] = 47898--[[Greater Speed]]
+							["name"] = "Enchanted Lantern",
+							["recipeID"] = 93841
 						},
 						{
-							["recipeID"] = 60663--[[Major Agility]]
-						},
-						{
-							["recipeID"] = 47672--[[Mighty Stamina]]
-						},
-						{
-							["recipeID"] = 44631--[[Shadow Armor]]
-						},
-						{
-							["recipeID"] = 44591--[[Superior Dodge]]
-						},
-						{
-							["recipeID"] = 47899--[[Wisdom]]
-						},
-						{
-							["recipeID"] = 44500--[[Superior Agility]]
-						},
-						{
-							["recipeID"] = 44582--[[Minor Power]]
-						},
-						{
-							["recipeID"] = 60609--[[Speed]]
-						}
-					}
-				},
-				{
-					["categoryID"] = 677--[[Bracer Enchantments]],
-					["g"] = {
-						{
-							["recipeID"] = 44575--[[Greater Assault]]
-						},
-						{
-							["recipeID"] = 62256--[[Major Stamina]]
-						},
-						{
-							["recipeID"] = 44593--[[Major Versatility]]
-						},
-						{
-							["recipeID"] = 60767--[[Superior Spellpower]]
-						},
-						{
-							["recipeID"] = 44598--[[Haste]]
-						},
-						{
-							["recipeID"] = 44616--[[Greater Stats]]
-						},
-						{
-							["recipeID"] = 44635--[[Greater Spellpower]]
-						},
-						{
-							["recipeID"] = 44555--[[Exceptional Intellect]]
-						},
-						{
-							["recipeID"] = 60616--[[Assault]]
-						}
-					}
-				},
-				{
-					["categoryID"] = 678--[[Weapon Enchantments]],
-					["g"] = {
-						{
-							["recipeID"] = 59619--[[Accuracy]]
-						},
-						{
-							["recipeID"] = 59621--[[Berserking]]
-						},
-						{
-							["recipeID"] = 59625--[[Black Magic]]
-						},
-						{
-							["recipeID"] = 64441--[[Blade Ward]]
-						},
-						{
-							["recipeID"] = 64579--[[Blood Draining]]
-						},
-						{
-							["recipeID"] = 44621--[[Giant Slayer]]
-						},
-						{
-							["recipeID"] = 62948--[[Greater Spellpower]]
-						},
-						{
-							["recipeID"] = 44524--[[Icebreaker]]
-						},
-						{
-							["recipeID"] = 44576--[[Lifeward]]
-						},
-						{
-							["recipeID"] = 60691--[[Massacre]]
-						},
-						{
-							["recipeID"] = 60714--[[Mighty Spellpower]]
-						},
-						{
-							["recipeID"] = 44595--[[Scourgebane]]
-						},
-						{
-							["recipeID"] = 60707--[[Superior Potency]]
-						},
-						{
-							["recipeID"] = 62257--[[Titanguard]]
-						},
-						{
-							["recipeID"] = 44633--[[Exceptional Agility]]
-						},
-						{
-							["recipeID"] = 44510--[[Exceptional Versatility]]
-						},
-						{
-							["recipeID"] = 44629--[[Exceptional Spellpower]]
-						},
-						{
-							["recipeID"] = 44630--[[Greater Savagery]]
-						},
-						{
-							["recipeID"] = 62959--[[Spellpower]]
-						},
-						{
-							["recipeID"] = 60621--[[Greater Potency]]
-						}
-					}
-				},
-				{
-					["categoryID"] = 679--[[Shield Enchantments]],
-					["g"] = {
-						{
-							["recipeID"] = 44489--[[Dodge]]
-						},
-						{
-							["recipeID"] = 60653--[[Greater Intellect]]
+							["name"] = "Magic Lamp",
+							["recipeID"] = 93843
 						}
 					}
 				}
 			}
 		},
 		{
-			["categoryID"] = 665--[[Outland Enchanting]],
+			["name"] = "Northrend Enchanting",
+			["categoryID"] = 663,
 			["g"] = {
 				{
-					["categoryID"] = 705--[[Illusions]],
+					["name"] = "Illusions",
+					["categoryID"] = 704,
 					["g"] = {
 						{
-							["recipeID"] = 217641--[[Tome of Illusions: Outland]]
+							["name"] = "Tome of Illusions: Northrend",
+							["recipeID"] = 217644
 						}
 					}
 				},
 				{
-					["categoryID"] = 680--[[Reagents]],
+					["name"] = "Reagents",
+					["categoryID"] = 672,
 					["g"] = {
 						{
-							["recipeID"] = 45765--[[Void Shatter]]
-						},
-						{
-							["recipeID"] = 28021--[[Arcane Dust]]
-						},
-						{
-							["recipeID"] = 42615--[[Small Prismatic Shard]]
-						},
-						{
-							["recipeID"] = 28022--[[Large Prismatic Shard]]
+							["name"] = "Abyssal Shatter",
+							["recipeID"] = 69412
 						}
 					}
 				},
 				{
-					["categoryID"] = 681--[[Boot Enchantments]],
+					["name"] = "Boot Enchantments",
+					["categoryID"] = 673,
 					["g"] = {
 						{
-							["recipeID"] = 34008--[[Boar's Speed]]
+							["name"] = "Assault",
+							["recipeID"] = 60606
 						},
 						{
-							["recipeID"] = 34007--[[Cat's Swiftness]]
+							["name"] = "Greater Assault",
+							["recipeID"] = 60763
 						},
 						{
-							["recipeID"] = 27951--[[Dexterity]]
+							["name"] = "Greater Fortitude",
+							["recipeID"] = 44528
 						},
 						{
-							["recipeID"] = 27954--[[Surefooted]]
+							["name"] = "Greater Versatility",
+							["recipeID"] = 44508
 						},
 						{
-							["recipeID"] = 27950--[[Fortitude]]
+							["name"] = "Greater Vitality",
+							["recipeID"] = 44584
 						},
 						{
-							["recipeID"] = 27948--[[Vitality]]
+							["name"] = "Icewalker",
+							["recipeID"] = 60623
+						},
+						{
+							["name"] = "Superior Agility",
+							["recipeID"] = 44589
+						},
+						{
+							["name"] = "Tuskarr's Vitality",
+							["recipeID"] = 47901
 						}
 					}
 				},
 				{
-					["categoryID"] = 682--[[Bracer Enchantments]],
+					["name"] = "Glove Enchantments",
+					["categoryID"] = 674,
 					["g"] = {
 						{
-							["recipeID"] = 27914--[[Fortitude]]
+							["name"] = "Angler",
+							["recipeID"] = 71692
 						},
 						{
-							["recipeID"] = 27917--[[Spellpower]]
+							["name"] = "Armsman",
+							["recipeID"] = 44625
 						},
 						{
-							["recipeID"] = 27911--[[Superior Healing]]
+							["name"] = "Crusher",
+							["recipeID"] = 60668
 						},
 						{
-							["recipeID"] = 27913--[[Versatility Prime]]
+							["name"] = "Exceptional Spellpower",
+							["recipeID"] = 44592
 						},
 						{
-							["recipeID"] = 27906--[[Greater Dodge]]
+							["name"] = "Gatherer",
+							["recipeID"] = 44506
 						},
 						{
-							["recipeID"] = 27905--[[Stats]]
+							["name"] = "Greater Assault",
+							["recipeID"] = 44513
 						},
 						{
-							["recipeID"] = 27899--[[Brawn]]
+							["name"] = "Greater Blasting",
+							["recipeID"] = 44612
 						},
 						{
-							["recipeID"] = 34001--[[Major Intellect]]
+							["name"] = "Haste",
+							["recipeID"] = 44484
 						},
 						{
-							["recipeID"] = 34002--[[Lesser Assault]]
+							["name"] = "Major Agility",
+							["recipeID"] = 44529
+						},
+						{
+							["name"] = "Precision",
+							["recipeID"] = 44488
 						}
 					}
 				},
 				{
-					["categoryID"] = 683--[[Chest Enchantments]],
+					["name"] = "Chest Enchantments",
+					["categoryID"] = 675,
 					["g"] = {
 						{
-							["recipeID"] = 46594--[[Dodge]]
+							["name"] = "Exceptional Mana",
+							["recipeID"] = 27958
 						},
 						{
-							["recipeID"] = 27960--[[Exceptional Stats]]
+							["name"] = "Exceptional Resilience",
+							["recipeID"] = 44588
 						},
 						{
-							["recipeID"] = 33992--[[Major Resilience]]
+							["name"] = "Greater Dodge",
+							["recipeID"] = 47766
 						},
 						{
-							["recipeID"] = 33990--[[Major Versatility]]
+							["name"] = "Greater Versatility",
+							["recipeID"] = 44509
 						},
 						{
-							["recipeID"] = 27957--[[Exceptional Health]]
+							["name"] = "Mighty Health",
+							["recipeID"] = 44492
 						},
 						{
-							["recipeID"] = 33991--[[Versatility Prime]]
+							["name"] = "Powerful Stats",
+							["recipeID"] = 60692
+						},
+						{
+							["name"] = "Super Health",
+							["recipeID"] = 47900
+						},
+						{
+							["name"] = "Super Stats",
+							["recipeID"] = 44623
 						}
 					}
 				},
 				{
-					["categoryID"] = 684--[[Cloak Enchantments]],
+					["name"] = "Cloak Enchantments",
+					["categoryID"] = 676,
 					["g"] = {
 						{
-							["recipeID"] = 47051--[[Greater Dodge]]
+							["name"] = "Greater Speed",
+							["recipeID"] = 47898
 						},
 						{
-							["recipeID"] = 34003--[[PvP Power]]
+							["name"] = "Major Agility",
+							["recipeID"] = 60663
 						},
 						{
-							["recipeID"] = 25086--[[Dodge]]
+							["name"] = "Mighty Stamina",
+							["recipeID"] = 47672
 						},
 						{
-							["recipeID"] = 34004--[[Greater Agility]]
+							["name"] = "Minor Power",
+							["recipeID"] = 44582
 						},
 						{
-							["recipeID"] = 27961--[[Major Armor]]
+							["name"] = "Shadow Armor",
+							["recipeID"] = 44631
 						},
 						{
-							["recipeID"] = 25083--[[Stealth]]
+							["name"] = "Speed",
+							["recipeID"] = 60609
 						},
 						{
-							["recipeID"] = 25084--[[Subtlety]]
+							["name"] = "Superior Agility",
+							["recipeID"] = 44500
+						},
+						{
+							["name"] = "Superior Dodge",
+							["recipeID"] = 44591
+						},
+						{
+							["name"] = "Wisdom",
+							["recipeID"] = 47899
 						}
 					}
 				},
 				{
-					["categoryID"] = 685--[[Glove Enchantments]],
+					["name"] = "Bracer Enchantments",
+					["categoryID"] = 677,
 					["g"] = {
 						{
-							["recipeID"] = 33999--[[Major Healing]]
+							["name"] = "Assault",
+							["recipeID"] = 60616
 						},
 						{
-							["recipeID"] = 33997--[[Major Spellpower]]
+							["name"] = "Exceptional Intellect",
+							["recipeID"] = 44555
 						},
 						{
-							["recipeID"] = 33995--[[Major Strength]]
+							["name"] = "Greater Assault",
+							["recipeID"] = 44575
 						},
 						{
-							["recipeID"] = 33994--[[Precise Strikes]]
+							["name"] = "Greater Spellpower",
+							["recipeID"] = 44635
 						},
 						{
-							["recipeID"] = 33996--[[Assault]]
+							["name"] = "Greater Stats",
+							["recipeID"] = 44616
 						},
 						{
-							["recipeID"] = 25080--[[Superior Agility]]
+							["name"] = "Haste",
+							["recipeID"] = 44598
 						},
 						{
-							["recipeID"] = 25072--[[Threat]]
+							["name"] = "Major Stamina",
+							["recipeID"] = 62256
 						},
 						{
-							["recipeID"] = 33993--[[Blasting]]
+							["name"] = "Major Versatility",
+							["recipeID"] = 44593
+						},
+						{
+							["name"] = "Superior Spellpower",
+							["recipeID"] = 60767
 						}
 					}
 				},
 				{
-					["categoryID"] = 686--[[Weapon Enchantments]],
+					["name"] = "Weapon Enchantments",
+					["categoryID"] = 678,
 					["g"] = {
 						{
-							["recipeID"] = 28004--[[Battlemaster]]
+							["name"] = "Accuracy",
+							["recipeID"] = 59619
 						},
 						{
-							["recipeID"] = 42974--[[Executioner]]
+							["name"] = "Berserking",
+							["recipeID"] = 59621
 						},
 						{
-							["recipeID"] = 42620--[[Greater Agility]]
+							["name"] = "Black Magic",
+							["recipeID"] = 59625
 						},
 						{
-							["recipeID"] = 27977--[[Major Agility]]
+							["name"] = "Blade Ward",
+							["recipeID"] = 64441
 						},
 						{
-							["recipeID"] = 34010--[[Major Healing]]
+							["name"] = "Blood Draining",
+							["recipeID"] = 64579
 						},
 						{
-							["recipeID"] = 27968--[[Major Intellect]]
+							["name"] = "Exceptional Agility",
+							["recipeID"] = 44633
 						},
 						{
-							["recipeID"] = 27975--[[Major Spellpower]]
+							["name"] = "Exceptional Spellpower",
+							["recipeID"] = 44629
 						},
 						{
-							["recipeID"] = 27967--[[Major Striking]]
+							["name"] = "Exceptional Versatility",
+							["recipeID"] = 44510
 						},
 						{
-							["recipeID"] = 27984--[[Mongoose]]
+							["name"] = "Giant Slayer",
+							["recipeID"] = 44621
 						},
 						{
-							["recipeID"] = 27972--[[Potency]]
+							["name"] = "Greater Potency",
+							["recipeID"] = 60621
 						},
 						{
-							["recipeID"] = 27971--[[Savagery]]
+							["name"] = "Greater Savagery",
+							["recipeID"] = 44630
 						},
 						{
-							["recipeID"] = 27982--[[Soulfrost]]
+							["name"] = "Greater Spellpower",
+							["recipeID"] = 62948
 						},
 						{
-							["recipeID"] = 28003--[[Spellsurge]]
+							["name"] = "Icebreaker",
+							["recipeID"] = 44524
 						},
 						{
-							["recipeID"] = 27981--[[Sunfire]]
+							["name"] = "Lifeward",
+							["recipeID"] = 44576
 						},
 						{
-							["recipeID"] = 46578--[[Deathfrost]]
+							["name"] = "Massacre",
+							["recipeID"] = 60691
+						},
+						{
+							["name"] = "Mighty Spellpower",
+							["recipeID"] = 60714
+						},
+						{
+							["name"] = "Scourgebane",
+							["recipeID"] = 44595
+						},
+						{
+							["name"] = "Spellpower",
+							["recipeID"] = 62959
+						},
+						{
+							["name"] = "Superior Potency",
+							["recipeID"] = 60707
+						},
+						{
+							["name"] = "Titanguard",
+							["recipeID"] = 62257
 						}
 					}
 				},
 				{
-					["categoryID"] = 687--[[Shield Enchantments]],
+					["name"] = "Shield Enchantments",
+					["categoryID"] = 679,
 					["g"] = {
 						{
-							["recipeID"] = 27946--[[Parry]]
+							["name"] = "Dodge",
+							["recipeID"] = 44489
 						},
 						{
-							["recipeID"] = 27945--[[Intellect]]
-						},
-						{
-							["recipeID"] = 34009--[[Major Stamina]]
-						},
-						{
-							["recipeID"] = 44383--[[Resilience]]
-						},
-						{
-							["recipeID"] = 27944--[[Lesser Dodge]]
-						}
-					}
-				},
-				{
-					["categoryID"] = 688--[[Oils]],
-					["g"] = {
-						{
-							["recipeID"] = 28019--[[Superior Wizard Oil]]
-						},
-						{
-							["recipeID"] = 28016--[[Superior Mana Oil]]
-						}
-					}
-				},
-				{
-					["categoryID"] = 689--[[Other]],
-					["g"] = {
-						{
-							["recipeID"] = 28028--[[Void Sphere]]
-						},
-						{
-							["recipeID"] = 28027--[[Prismatic Sphere]]
+							["name"] = "Greater Intellect",
+							["recipeID"] = 60653
 						}
 					}
 				}
 			}
 		},
 		{
-			["categoryID"] = 667--[[Enchanting]],
+			["name"] = "Outland Enchanting",
+			["categoryID"] = 665,
 			["g"] = {
 				{
-					["categoryID"] = 697--[[Rods]],
+					["name"] = "Illusions",
+					["categoryID"] = 705,
 					["g"] = {
 						{
-							["recipeID"] = 7421--[[Runed Copper Rod]]
+							["name"] = "Tome of Illusions: Outland",
+							["recipeID"] = 217641
 						}
 					}
 				},
 				{
-					["categoryID"] = 706--[[Illusions]],
+					["name"] = "Reagents",
+					["categoryID"] = 680,
 					["g"] = {
 						{
-							["recipeID"] = 217637--[[Tome of Illusions: Azeroth]]
+							["name"] = "Arcane Dust",
+							["recipeID"] = 28021
+						},
+						{
+							["name"] = "Large Prismatic Shard",
+							["recipeID"] = 28022
+						},
+						{
+							["name"] = "Small Prismatic Shard",
+							["recipeID"] = 42615
+						},
+						{
+							["name"] = "Void Shatter",
+							["recipeID"] = 45765
 						}
 					}
 				},
 				{
-					["categoryID"] = 701--[[Reagents]],
+					["name"] = "Boot Enchantments",
+					["categoryID"] = 681,
 					["g"] = {
 						{
-							["recipeID"] = 17181--[[Enchanted Leather]]
+							["name"] = "Boar's Speed",
+							["recipeID"] = 34008
 						},
 						{
-							["recipeID"] = 17180--[[Enchanted Thorium Bar]]
+							["name"] = "Cat's Swiftness",
+							["recipeID"] = 34007
+						},
+						{
+							["name"] = "Dexterity",
+							["recipeID"] = 27951
+						},
+						{
+							["name"] = "Fortitude",
+							["recipeID"] = 27950
+						},
+						{
+							["name"] = "Surefooted",
+							["recipeID"] = 27954
+						},
+						{
+							["name"] = "Vitality",
+							["recipeID"] = 27948
 						}
 					}
 				},
 				{
-					["categoryID"] = 690--[[Boot Enchantments]],
+					["name"] = "Bracer Enchantments",
+					["categoryID"] = 682,
 					["g"] = {
 						{
-							["recipeID"] = 20023--[[Greater Agility]]
+							["name"] = "Brawn",
+							["recipeID"] = 27899
 						},
 						{
-							["recipeID"] = 20020--[[Greater Stamina]]
+							["name"] = "Fortitude",
+							["recipeID"] = 27914
 						},
 						{
-							["recipeID"] = 20024--[[Versatility]]
+							["name"] = "Greater Dodge",
+							["recipeID"] = 27906
 						},
 						{
-							["recipeID"] = 13935--[[Agility]]
+							["name"] = "Lesser Assault",
+							["recipeID"] = 34002
 						},
 						{
-							["recipeID"] = 63746--[[Lesser Accuracy]]
+							["name"] = "Major Intellect",
+							["recipeID"] = 34001
 						},
 						{
-							["recipeID"] = 13890--[[Minor Speed]]
+							["name"] = "Spellpower",
+							["recipeID"] = 27917
 						},
 						{
-							["recipeID"] = 13836--[[Stamina]]
+							["name"] = "Stats",
+							["recipeID"] = 27905
 						},
 						{
-							["recipeID"] = 13687--[[Lesser Versatility]]
+							["name"] = "Superior Healing",
+							["recipeID"] = 27911
 						},
 						{
-							["recipeID"] = 13644--[[Lesser Stamina]]
-						},
-						{
-							["recipeID"] = 13637--[[Lesser Agility]]
-						},
-						{
-							["recipeID"] = 7867--[[Minor Agility]]
-						},
-						{
-							["recipeID"] = 7863--[[Minor Stamina]]
+							["name"] = "Versatility Prime",
+							["recipeID"] = 27913
 						}
 					}
 				},
 				{
-					["categoryID"] = 691--[[Bracer Enchantments]],
+					["name"] = "Chest Enchantments",
+					["categoryID"] = 683,
 					["g"] = {
 						{
-							["recipeID"] = 23801--[[Argent Versatility]]
+							["name"] = "Dodge",
+							["recipeID"] = 46594
 						},
 						{
-							["recipeID"] = 20008--[[Greater Intellect]]
+							["name"] = "Exceptional Health",
+							["recipeID"] = 27957
 						},
 						{
-							["recipeID"] = 13945--[[Greater Stamina]]
+							["name"] = "Exceptional Stats",
+							["recipeID"] = 27960
 						},
 						{
-							["recipeID"] = 13939--[[Greater Strength]]
+							["name"] = "Major Resilience",
+							["recipeID"] = 33992
 						},
 						{
-							["recipeID"] = 23802--[[Healing Power]]
+							["name"] = "Major Versatility",
+							["recipeID"] = 33990
 						},
 						{
-							["recipeID"] = 20011--[[Superior Stamina]]
-						},
-						{
-							["recipeID"] = 20010--[[Superior Strength]]
-						},
-						{
-							["recipeID"] = 20009--[[Superior Versatility]]
-						},
-						{
-							["recipeID"] = 13931--[[Dodge]]
-						},
-						{
-							["recipeID"] = 13846--[[Greater Versatility]]
-						},
-						{
-							["recipeID"] = 13822--[[Intellect]]
-						},
-						{
-							["recipeID"] = 13661--[[Strength]]
-						},
-						{
-							["recipeID"] = 13646--[[Lesser Dodge]]
-						},
-						{
-							["recipeID"] = 13648--[[Stamina]]
-						},
-						{
-							["recipeID"] = 13642--[[Versatility]]
-						},
-						{
-							["recipeID"] = 13622--[[Lesser Intellect]]
-						},
-						{
-							["recipeID"] = 13536--[[Lesser Strength]]
-						},
-						{
-							["recipeID"] = 13501--[[Lesser Stamina]]
-						},
-						{
-							["recipeID"] = 7859--[[Lesser Versatility]]
-						},
-						{
-							["recipeID"] = 7779--[[Minor Agility]]
-						},
-						{
-							["recipeID"] = 7782--[[Minor Strength]]
-						},
-						{
-							["recipeID"] = 7766--[[Minor Versatility]]
-						},
-						{
-							["recipeID"] = 7457--[[Minor Stamina]]
-						},
-						{
-							["recipeID"] = 7428--[[Minor Dodge]]
-						},
-						{
-							["recipeID"] = 7418--[[Minor Health]]
+							["name"] = "Versatility Prime",
+							["recipeID"] = 33991
 						}
 					}
 				},
 				{
-					["categoryID"] = 692--[[Chest Enchantments]],
+					["name"] = "Cloak Enchantments",
+					["categoryID"] = 684,
 					["g"] = {
 						{
-							["recipeID"] = 20025--[[Greater Stats]]
+							["name"] = "Dodge",
+							["recipeID"] = 25086
 						},
 						{
-							["recipeID"] = 20026--[[Major Health]]
+							["name"] = "Greater Agility",
+							["recipeID"] = 34004
 						},
 						{
-							["recipeID"] = 20028--[[Major Mana]]
+							["name"] = "Greater Dodge",
+							["recipeID"] = 47051
 						},
 						{
-							["recipeID"] = 13941--[[Stats]]
+							["name"] = "Major Armor",
+							["recipeID"] = 27961
 						},
 						{
-							["recipeID"] = 13917--[[Superior Mana]]
+							["name"] = "PvP Power",
+							["recipeID"] = 34003
 						},
 						{
-							["recipeID"] = 13858--[[Superior Health]]
+							["name"] = "Stealth",
+							["recipeID"] = 25083
 						},
 						{
-							["recipeID"] = 13700--[[Lesser Stats]]
-						},
-						{
-							["recipeID"] = 13663--[[Greater Mana]]
-						},
-						{
-							["recipeID"] = 13640--[[Greater Health]]
-						},
-						{
-							["recipeID"] = 13626--[[Minor Stats]]
-						},
-						{
-							["recipeID"] = 13607--[[Mana]]
-						},
-						{
-							["recipeID"] = 13538--[[Lesser Absorption]]
-						},
-						{
-							["recipeID"] = 7857--[[Health]]
-						},
-						{
-							["recipeID"] = 7776--[[Lesser Mana]]
-						},
-						{
-							["recipeID"] = 7748--[[Lesser Health]]
-						},
-						{
-							["recipeID"] = 7426--[[Minor Absorption]]
-						},
-						{
-							["recipeID"] = 7443--[[Minor Mana]]
-						},
-						{
-							["recipeID"] = 7420--[[Minor Health]]
+							["name"] = "Subtlety",
+							["recipeID"] = 25084
 						}
 					}
 				},
 				{
-					["categoryID"] = 693--[[Cloak Enchantments]],
+					["name"] = "Glove Enchantments",
+					["categoryID"] = 685,
 					["g"] = {
 						{
-							["recipeID"] = 20015--[[Superior Defense]]
+							["name"] = "Assault",
+							["recipeID"] = 33996
 						},
 						{
-							["recipeID"] = 13882--[[Lesser Agility]]
+							["name"] = "Blasting",
+							["recipeID"] = 33993
 						},
 						{
-							["recipeID"] = 13746--[[Greater Defense]]
+							["name"] = "Major Healing",
+							["recipeID"] = 33999
 						},
 						{
-							["recipeID"] = 13635--[[Defense]]
+							["name"] = "Major Spellpower",
+							["recipeID"] = 33997
 						},
 						{
-							["recipeID"] = 13421--[[Lesser Protection]]
+							["name"] = "Major Strength",
+							["recipeID"] = 33995
 						},
 						{
-							["recipeID"] = 13419--[[Minor Agility]]
+							["name"] = "Precise Strikes",
+							["recipeID"] = 33994
 						},
 						{
-							["recipeID"] = 7771--[[Minor Protection]]
+							["name"] = "Superior Agility",
+							["recipeID"] = 25080
+						},
+						{
+							["name"] = "Threat",
+							["recipeID"] = 25072
 						}
 					}
 				},
 				{
-					["categoryID"] = 694--[[Glove Enchantments]],
+					["name"] = "Weapon Enchantments",
+					["categoryID"] = 686,
 					["g"] = {
 						{
-							["recipeID"] = 25078--[[Fire Power]]
+							["name"] = "Battlemaster",
+							["recipeID"] = 28004
 						},
 						{
-							["recipeID"] = 25074--[[Frost Power]]
+							["name"] = "Deathfrost",
+							["recipeID"] = 46578
 						},
 						{
-							["recipeID"] = 20012--[[Greater Agility]]
+							["name"] = "Executioner",
+							["recipeID"] = 42974
 						},
 						{
-							["recipeID"] = 20013--[[Greater Strength]]
+							["name"] = "Greater Agility",
+							["recipeID"] = 42620
 						},
 						{
-							["recipeID"] = 25079--[[Healing Power]]
+							["name"] = "Major Agility",
+							["recipeID"] = 27977
 						},
 						{
-							["recipeID"] = 13948--[[Minor Haste]]
+							["name"] = "Major Healing",
+							["recipeID"] = 34010
 						},
 						{
-							["recipeID"] = 13947--[[Riding Skill]]
+							["name"] = "Major Intellect",
+							["recipeID"] = 27968
 						},
 						{
-							["recipeID"] = 25073--[[Shadow Power]]
+							["name"] = "Major Spellpower",
+							["recipeID"] = 27975
 						},
 						{
-							["recipeID"] = 13868--[[Advanced Herbalism]]
+							["name"] = "Major Striking",
+							["recipeID"] = 27967
 						},
 						{
-							["recipeID"] = 13887--[[Strength]]
+							["name"] = "Mongoose",
+							["recipeID"] = 27984
 						},
 						{
-							["recipeID"] = 13841--[[Advanced Mining]]
+							["name"] = "Potency",
+							["recipeID"] = 27972
 						},
 						{
-							["recipeID"] = 13815--[[Agility]]
+							["name"] = "Savagery",
+							["recipeID"] = 27971
 						},
 						{
-							["recipeID"] = 13698--[[Skinning]]
+							["name"] = "Soulfrost",
+							["recipeID"] = 27982
 						},
 						{
-							["recipeID"] = 13620--[[Fishing]]
+							["name"] = "Spellsurge",
+							["recipeID"] = 28003
 						},
 						{
-							["recipeID"] = 13617--[[Herbalism]]
-						},
-						{
-							["recipeID"] = 13612--[[Mining]]
+							["name"] = "Sunfire",
+							["recipeID"] = 27981
 						}
 					}
 				},
 				{
-					["categoryID"] = 695--[[Weapon Enchantments]],
+					["name"] = "Shield Enchantments",
+					["categoryID"] = 687,
 					["g"] = {
 						{
-							["recipeID"] = 23800--[[Agility]]
+							["name"] = "Intellect",
+							["recipeID"] = 27945
 						},
 						{
-							["recipeID"] = 27837--[[Agility]]
+							["name"] = "Lesser Dodge",
+							["recipeID"] = 27944
 						},
 						{
-							["recipeID"] = 20034--[[Crusader]]
+							["name"] = "Major Stamina",
+							["recipeID"] = 34009
 						},
 						{
-							["recipeID"] = 13898--[[Fiery Weapon]]
+							["name"] = "Parry",
+							["recipeID"] = 27946
 						},
 						{
-							["recipeID"] = 13937--[[Greater Impact]]
-						},
-						{
-							["recipeID"] = 13943--[[Greater Striking]]
-						},
-						{
-							["recipeID"] = 22750--[[Healing Power]]
-						},
-						{
-							["recipeID"] = 20029--[[Icy Chill]]
-						},
-						{
-							["recipeID"] = 20032--[[Lifestealing]]
-						},
-						{
-							["recipeID"] = 20036--[[Major Intellect]]
-						},
-						{
-							["recipeID"] = 20035--[[Major Versatility]]
-						},
-						{
-							["recipeID"] = 23804--[[Mighty Intellect]]
-						},
-						{
-							["recipeID"] = 23803--[[Mighty Versatility]]
-						},
-						{
-							["recipeID"] = 22749--[[Spellpower]]
-						},
-						{
-							["recipeID"] = 23799--[[Strength]]
-						},
-						{
-							["recipeID"] = 20030--[[Superior Impact]]
-						},
-						{
-							["recipeID"] = 20031--[[Superior Striking]]
-						},
-						{
-							["recipeID"] = 20033--[[Unholy Weapon]]
-						},
-						{
-							["recipeID"] = 13915--[[Demonslaying]]
-						},
-						{
-							["recipeID"] = 13695--[[Impact]]
-						},
-						{
-							["recipeID"] = 13693--[[Striking]]
-						},
-						{
-							["recipeID"] = 21931--[[Winter's Might]]
-						},
-						{
-							["recipeID"] = 13653--[[Lesser Beastslayer]]
-						},
-						{
-							["recipeID"] = 13655--[[Lesser Elemental Slayer]]
-						},
-						{
-							["recipeID"] = 13529--[[Lesser Impact]]
-						},
-						{
-							["recipeID"] = 13503--[[Lesser Striking]]
-						},
-						{
-							["recipeID"] = 13380--[[Lesser Versatility]]
-						},
-						{
-							["recipeID"] = 7793--[[Lesser Intellect]]
-						},
-						{
-							["recipeID"] = 7745--[[Minor Impact]]
-						},
-						{
-							["recipeID"] = 7786--[[Minor Beastslayer]]
-						},
-						{
-							["recipeID"] = 7788--[[Minor Striking]]
+							["name"] = "Resilience",
+							["recipeID"] = 44383
 						}
 					}
 				},
 				{
-					["categoryID"] = 696--[[Shield Enchantments]],
+					["name"] = "Oils",
+					["categoryID"] = 688,
 					["g"] = {
 						{
-							["recipeID"] = 20017--[[Greater Stamina]]
+							["name"] = "Superior Mana Oil",
+							["recipeID"] = 28016
 						},
 						{
-							["recipeID"] = 20016--[[Vitality]]
-						},
-						{
-							["recipeID"] = 13905--[[Greater Versatility]]
-						},
-						{
-							["recipeID"] = 13817--[[Stamina]]
-						},
-						{
-							["recipeID"] = 13689--[[Lesser Parry]]
-						},
-						{
-							["recipeID"] = 13659--[[Versatility]]
-						},
-						{
-							["recipeID"] = 13631--[[Lesser Stamina]]
-						},
-						{
-							["recipeID"] = 13485--[[Lesser Versatility]]
-						},
-						{
-							["recipeID"] = 13464--[[Lesser Protection]]
-						},
-						{
-							["recipeID"] = 13378--[[Minor Stamina]]
+							["name"] = "Superior Wizard Oil",
+							["recipeID"] = 28019
 						}
 					}
 				},
 				{
-					["categoryID"] = 698--[[Wands]],
+					["name"] = "Other",
+					["categoryID"] = 689,
 					["g"] = {
 						{
-							["recipeID"] = 14810--[[Greater Mystic Wand]]
+							["name"] = "Prismatic Sphere",
+							["recipeID"] = 28027
 						},
 						{
-							["recipeID"] = 14809--[[Lesser Mystic Wand]]
-						},
+							["name"] = "Void Sphere",
+							["recipeID"] = 28028
+						}
+					}
+				}
+			}
+		},
+		{
+			["name"] = "Enchanting",
+			["categoryID"] = 667,
+			["g"] = {
+				{
+					["name"] = "Rods",
+					["categoryID"] = 697,
+					["g"] = {
 						{
-							["recipeID"] = 14807--[[Greater Magic Wand]]
-						},
-						{
-							["recipeID"] = 14293--[[Lesser Magic Wand]]
+							["name"] = "Runed Copper Rod",
+							["recipeID"] = 7421
 						}
 					}
 				},
 				{
-					["categoryID"] = 699--[[Oils]],
+					["name"] = "Illusions",
+					["categoryID"] = 706,
 					["g"] = {
 						{
-							["recipeID"] = 25130--[[Brilliant Mana Oil]]
-						},
-						{
-							["recipeID"] = 25129--[[Brilliant Wizard Oil]]
-						},
-						{
-							["recipeID"] = 25128--[[Wizard Oil]]
-						},
-						{
-							["recipeID"] = 25127--[[Lesser Mana Oil]]
-						},
-						{
-							["recipeID"] = 25126--[[Lesser Wizard Oil]]
-						},
-						{
-							["recipeID"] = 25125--[[Minor Mana Oil]]
-						},
-						{
-							["recipeID"] = 25124--[[Minor Wizard Oil]]
+							["name"] = "Tome of Illusions: Azeroth",
+							["recipeID"] = 217637
 						}
 					}
 				},
 				{
-					["categoryID"] = 700--[[Trinket]],
+					["name"] = "Reagents",
+					["categoryID"] = 701,
 					["g"] = {
 						{
-							["recipeID"] = 15596--[[Smoking Heart of the Mountain]]
+							["name"] = "Enchanted Leather",
+							["recipeID"] = 17181
+						},
+						{
+							["name"] = "Enchanted Thorium Bar",
+							["recipeID"] = 17180
+						}
+					}
+				},
+				{
+					["name"] = "Boot Enchantments",
+					["categoryID"] = 690,
+					["g"] = {
+						{
+							["name"] = "Agility",
+							["recipeID"] = 13935
+						},
+						{
+							["name"] = "Greater Agility",
+							["recipeID"] = 20023
+						},
+						{
+							["name"] = "Greater Stamina",
+							["recipeID"] = 20020
+						},
+						{
+							["name"] = "Lesser Accuracy",
+							["recipeID"] = 63746
+						},
+						{
+							["name"] = "Lesser Agility",
+							["recipeID"] = 13637
+						},
+						{
+							["name"] = "Lesser Stamina",
+							["recipeID"] = 13644
+						},
+						{
+							["name"] = "Lesser Versatility",
+							["recipeID"] = 13687
+						},
+						{
+							["name"] = "Minor Agility",
+							["recipeID"] = 7867
+						},
+						{
+							["name"] = "Minor Speed",
+							["recipeID"] = 13890
+						},
+						{
+							["name"] = "Minor Stamina",
+							["recipeID"] = 7863
+						},
+						{
+							["name"] = "Stamina",
+							["recipeID"] = 13836
+						},
+						{
+							["name"] = "Versatility",
+							["recipeID"] = 20024
+						}
+					}
+				},
+				{
+					["name"] = "Bracer Enchantments",
+					["categoryID"] = 691,
+					["g"] = {
+						{
+							["name"] = "Argent Versatility",
+							["recipeID"] = 23801
+						},
+						{
+							["name"] = "Dodge",
+							["recipeID"] = 13931
+						},
+						{
+							["name"] = "Greater Intellect",
+							["recipeID"] = 20008
+						},
+						{
+							["name"] = "Greater Stamina",
+							["recipeID"] = 13945
+						},
+						{
+							["name"] = "Greater Strength",
+							["recipeID"] = 13939
+						},
+						{
+							["name"] = "Greater Versatility",
+							["recipeID"] = 13846
+						},
+						{
+							["name"] = "Healing Power",
+							["recipeID"] = 23802
+						},
+						{
+							["name"] = "Intellect",
+							["recipeID"] = 13822
+						},
+						{
+							["name"] = "Lesser Dodge",
+							["recipeID"] = 13646
+						},
+						{
+							["name"] = "Lesser Intellect",
+							["recipeID"] = 13622
+						},
+						{
+							["name"] = "Lesser Stamina",
+							["recipeID"] = 13501
+						},
+						{
+							["name"] = "Lesser Strength",
+							["recipeID"] = 13536
+						},
+						{
+							["name"] = "Lesser Versatility",
+							["recipeID"] = 7859
+						},
+						{
+							["name"] = "Minor Agility",
+							["recipeID"] = 7779
+						},
+						{
+							["name"] = "Minor Dodge",
+							["recipeID"] = 7428
+						},
+						{
+							["name"] = "Minor Health",
+							["recipeID"] = 7418
+						},
+						{
+							["name"] = "Minor Stamina",
+							["recipeID"] = 7457
+						},
+						{
+							["name"] = "Minor Strength",
+							["recipeID"] = 7782
+						},
+						{
+							["name"] = "Minor Versatility",
+							["recipeID"] = 7766
+						},
+						{
+							["name"] = "Stamina",
+							["recipeID"] = 13648
+						},
+						{
+							["name"] = "Strength",
+							["recipeID"] = 13661
+						},
+						{
+							["name"] = "Superior Stamina",
+							["recipeID"] = 20011
+						},
+						{
+							["name"] = "Superior Strength",
+							["recipeID"] = 20010
+						},
+						{
+							["name"] = "Superior Versatility",
+							["recipeID"] = 20009
+						},
+						{
+							["name"] = "Versatility",
+							["recipeID"] = 13642
+						}
+					}
+				},
+				{
+					["name"] = "Chest Enchantments",
+					["categoryID"] = 692,
+					["g"] = {
+						{
+							["name"] = "Greater Health",
+							["recipeID"] = 13640
+						},
+						{
+							["name"] = "Greater Mana",
+							["recipeID"] = 13663
+						},
+						{
+							["name"] = "Greater Stats",
+							["recipeID"] = 20025
+						},
+						{
+							["name"] = "Health",
+							["recipeID"] = 7857
+						},
+						{
+							["name"] = "Lesser Absorption",
+							["recipeID"] = 13538
+						},
+						{
+							["name"] = "Lesser Health",
+							["recipeID"] = 7748
+						},
+						{
+							["name"] = "Lesser Mana",
+							["recipeID"] = 7776
+						},
+						{
+							["name"] = "Lesser Stats",
+							["recipeID"] = 13700
+						},
+						{
+							["name"] = "Major Health",
+							["recipeID"] = 20026
+						},
+						{
+							["name"] = "Major Mana",
+							["recipeID"] = 20028
+						},
+						{
+							["name"] = "Mana",
+							["recipeID"] = 13607
+						},
+						{
+							["name"] = "Minor Absorption",
+							["recipeID"] = 7426
+						},
+						{
+							["name"] = "Minor Health",
+							["recipeID"] = 7420
+						},
+						{
+							["name"] = "Minor Mana",
+							["recipeID"] = 7443
+						},
+						{
+							["name"] = "Minor Stats",
+							["recipeID"] = 13626
+						},
+						{
+							["name"] = "Stats",
+							["recipeID"] = 13941
+						},
+						{
+							["name"] = "Superior Health",
+							["recipeID"] = 13858
+						},
+						{
+							["name"] = "Superior Mana",
+							["recipeID"] = 13917
+						}
+					}
+				},
+				{
+					["name"] = "Cloak Enchantments",
+					["categoryID"] = 693,
+					["g"] = {
+						{
+							["name"] = "Defense",
+							["recipeID"] = 13635
+						},
+						{
+							["name"] = "Greater Defense",
+							["recipeID"] = 13746
+						},
+						{
+							["name"] = "Lesser Agility",
+							["recipeID"] = 13882
+						},
+						{
+							["name"] = "Lesser Protection",
+							["recipeID"] = 13421
+						},
+						{
+							["name"] = "Minor Agility",
+							["recipeID"] = 13419
+						},
+						{
+							["name"] = "Minor Protection",
+							["recipeID"] = 7771
+						},
+						{
+							["name"] = "Superior Defense",
+							["recipeID"] = 20015
+						}
+					}
+				},
+				{
+					["name"] = "Glove Enchantments",
+					["categoryID"] = 694,
+					["g"] = {
+						{
+							["name"] = "Advanced Herbalism",
+							["recipeID"] = 13868
+						},
+						{
+							["name"] = "Advanced Mining",
+							["recipeID"] = 13841
+						},
+						{
+							["name"] = "Agility",
+							["recipeID"] = 13815
+						},
+						{
+							["name"] = "Fire Power",
+							["recipeID"] = 25078
+						},
+						{
+							["name"] = "Fishing",
+							["recipeID"] = 13620
+						},
+						{
+							["name"] = "Frost Power",
+							["recipeID"] = 25074
+						},
+						{
+							["name"] = "Greater Agility",
+							["recipeID"] = 20012
+						},
+						{
+							["name"] = "Greater Strength",
+							["recipeID"] = 20013
+						},
+						{
+							["name"] = "Healing Power",
+							["recipeID"] = 25079
+						},
+						{
+							["name"] = "Herbalism",
+							["recipeID"] = 13617
+						},
+						{
+							["name"] = "Mining",
+							["recipeID"] = 13612
+						},
+						{
+							["name"] = "Minor Haste",
+							["recipeID"] = 13948
+						},
+						{
+							["name"] = "Riding Skill",
+							["recipeID"] = 13947
+						},
+						{
+							["name"] = "Shadow Power",
+							["recipeID"] = 25073
+						},
+						{
+							["name"] = "Skinning",
+							["recipeID"] = 13698
+						},
+						{
+							["name"] = "Strength",
+							["recipeID"] = 13887
+						}
+					}
+				},
+				{
+					["name"] = "Weapon Enchantments",
+					["categoryID"] = 695,
+					["g"] = {
+						{
+							["name"] = "Agility",
+							["recipeID"] = 27837
+						},
+						{
+							["name"] = "Agility",
+							["recipeID"] = 23800
+						},
+						{
+							["name"] = "Crusader",
+							["recipeID"] = 20034
+						},
+						{
+							["name"] = "Demonslaying",
+							["recipeID"] = 13915
+						},
+						{
+							["name"] = "Fiery Weapon",
+							["recipeID"] = 13898
+						},
+						{
+							["name"] = "Greater Impact",
+							["recipeID"] = 13937
+						},
+						{
+							["name"] = "Greater Striking",
+							["recipeID"] = 13943
+						},
+						{
+							["name"] = "Healing Power",
+							["recipeID"] = 22750
+						},
+						{
+							["name"] = "Icy Chill",
+							["recipeID"] = 20029
+						},
+						{
+							["name"] = "Impact",
+							["recipeID"] = 13695
+						},
+						{
+							["name"] = "Lesser Beastslayer",
+							["recipeID"] = 13653
+						},
+						{
+							["name"] = "Lesser Elemental Slayer",
+							["recipeID"] = 13655
+						},
+						{
+							["name"] = "Lesser Impact",
+							["recipeID"] = 13529
+						},
+						{
+							["name"] = "Lesser Intellect",
+							["recipeID"] = 7793
+						},
+						{
+							["name"] = "Lesser Striking",
+							["recipeID"] = 13503
+						},
+						{
+							["name"] = "Lesser Versatility",
+							["recipeID"] = 13380
+						},
+						{
+							["name"] = "Lifestealing",
+							["recipeID"] = 20032
+						},
+						{
+							["name"] = "Major Intellect",
+							["recipeID"] = 20036
+						},
+						{
+							["name"] = "Major Versatility",
+							["recipeID"] = 20035
+						},
+						{
+							["name"] = "Mighty Intellect",
+							["recipeID"] = 23804
+						},
+						{
+							["name"] = "Mighty Versatility",
+							["recipeID"] = 23803
+						},
+						{
+							["name"] = "Minor Beastslayer",
+							["recipeID"] = 7786
+						},
+						{
+							["name"] = "Minor Impact",
+							["recipeID"] = 7745
+						},
+						{
+							["name"] = "Minor Striking",
+							["recipeID"] = 7788
+						},
+						{
+							["name"] = "Spellpower",
+							["recipeID"] = 22749
+						},
+						{
+							["name"] = "Strength",
+							["recipeID"] = 23799
+						},
+						{
+							["name"] = "Striking",
+							["recipeID"] = 13693
+						},
+						{
+							["name"] = "Superior Impact",
+							["recipeID"] = 20030
+						},
+						{
+							["name"] = "Superior Striking",
+							["recipeID"] = 20031
+						},
+						{
+							["name"] = "Unholy Weapon",
+							["recipeID"] = 20033
+						},
+						{
+							["name"] = "Winter's Might",
+							["recipeID"] = 21931
+						}
+					}
+				},
+				{
+					["name"] = "Shield Enchantments",
+					["categoryID"] = 696,
+					["g"] = {
+						{
+							["name"] = "Greater Stamina",
+							["recipeID"] = 20017
+						},
+						{
+							["name"] = "Greater Versatility",
+							["recipeID"] = 13905
+						},
+						{
+							["name"] = "Lesser Parry",
+							["recipeID"] = 13689
+						},
+						{
+							["name"] = "Lesser Protection",
+							["recipeID"] = 13464
+						},
+						{
+							["name"] = "Lesser Stamina",
+							["recipeID"] = 13631
+						},
+						{
+							["name"] = "Lesser Versatility",
+							["recipeID"] = 13485
+						},
+						{
+							["name"] = "Minor Stamina",
+							["recipeID"] = 13378
+						},
+						{
+							["name"] = "Stamina",
+							["recipeID"] = 13817
+						},
+						{
+							["name"] = "Versatility",
+							["recipeID"] = 13659
+						},
+						{
+							["name"] = "Vitality",
+							["recipeID"] = 20016
+						}
+					}
+				},
+				{
+					["name"] = "Wands",
+					["categoryID"] = 698,
+					["g"] = {
+						{
+							["name"] = "Greater Magic Wand",
+							["recipeID"] = 14807
+						},
+						{
+							["name"] = "Greater Mystic Wand",
+							["recipeID"] = 14810
+						},
+						{
+							["name"] = "Lesser Magic Wand",
+							["recipeID"] = 14293
+						},
+						{
+							["name"] = "Lesser Mystic Wand",
+							["recipeID"] = 14809
+						}
+					}
+				},
+				{
+					["name"] = "Oils",
+					["categoryID"] = 699,
+					["g"] = {
+						{
+							["name"] = "Brilliant Mana Oil",
+							["recipeID"] = 25130
+						},
+						{
+							["name"] = "Brilliant Wizard Oil",
+							["recipeID"] = 25129
+						},
+						{
+							["name"] = "Lesser Mana Oil",
+							["recipeID"] = 25127
+						},
+						{
+							["name"] = "Lesser Wizard Oil",
+							["recipeID"] = 25126
+						},
+						{
+							["name"] = "Minor Mana Oil",
+							["recipeID"] = 25125
+						},
+						{
+							["name"] = "Minor Wizard Oil",
+							["recipeID"] = 25124
+						},
+						{
+							["name"] = "Wizard Oil",
+							["recipeID"] = 25128
+						}
+					}
+				},
+				{
+					["name"] = "Trinket",
+					["categoryID"] = 700,
+					["g"] = {
+						{
+							["name"] = "Smoking Heart of the Mountain",
+							["recipeID"] = 15596
 						}
 					}
 				}

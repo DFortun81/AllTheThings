@@ -1,125 +1,161 @@
 --[[
 DO NOT MODIFY THIS FILE, I WILL CUT YOU.
  With love,
-    - CRIEVE
+    -CRIEVE
 ]]--
 profession(393, {	-- Skinning
-	filter(200, {	-- Recipes
+	filter(200, {
 		{
-			["categoryID"] = 1046--[[Zandalari Skinning]],
+			["name"] = "Zandalari Skinning",
+			["categoryID"] = 1046,
 			["g"] = {
 				{
-					["categoryID"] = 1061--[[Skinning Techniques]],
+					["name"] = "Skinning Techniques",
+					["categoryID"] = 1061,
 					["g"] = {
 						{
-							["recipeID"] = 257152--[[Bone Gathering]]
+							["name"] = "Bone Gathering",
+							["nextRecipeID"] = 257153,
+							["recipeID"] = 257152
 						},
 						{
-							["recipeID"] = 257153--[[Bone Gathering]]
+							["name"] = "Bone Gathering",
+							["nextRecipeID"] = 257154,
+							["previousRecipeID"] = 257152,
+							["recipeID"] = 257153
 						},
 						{
-							["recipeID"] = 257154--[[Bone Gathering]]
+							["name"] = "Bone Gathering",
+							["previousRecipeID"] = 257153,
+							["recipeID"] = 257154
 						},
 						{
-							["recipeID"] = 257146--[[Leather Gathering]]
+							["name"] = "Leather Gathering",
+							["nextRecipeID"] = 257147,
+							["recipeID"] = 257146
 						},
 						{
-							["recipeID"] = 257147--[[Leather Gathering]]
+							["name"] = "Leather Gathering",
+							["nextRecipeID"] = 257148,
+							["previousRecipeID"] = 257146,
+							["recipeID"] = 257147
 						},
 						{
-							["recipeID"] = 257148--[[Leather Gathering]]
+							["name"] = "Leather Gathering",
+							["previousRecipeID"] = 257147,
+							["recipeID"] = 257148
 						},
 						{
-							["recipeID"] = 257151--[[Scale Gathering]]
+							["name"] = "Scale Gathering",
+							["nextRecipeID"] = 257150,
+							["recipeID"] = 257149
 						},
 						{
-							["recipeID"] = 257149--[[Scale Gathering]]
+							["name"] = "Scale Gathering",
+							["nextRecipeID"] = 257151,
+							["previousRecipeID"] = 257149,
+							["recipeID"] = 257150
 						},
 						{
-							["recipeID"] = 257150--[[Scale Gathering]]
+							["name"] = "Scale Gathering",
+							["previousRecipeID"] = 257150,
+							["recipeID"] = 257151
 						}
 					}
 				}
 			}
 		},
 		{
-			["categoryID"] = 459--[[Legion Skinning]],
+			["name"] = "Legion Skinning",
+			["categoryID"] = 459,
 			["g"] = {
 				{
-					["categoryID"] = 1062--[[Skinning Techniques]],
+					["name"] = "Skinning Techniques",
+					["categoryID"] = 1062,
 					["g"] = {
 						{
-							["recipeID"] = 194169--[[Felhide]]
+							["name"] = "Felhide",
+							["nextRecipeID"] = 194168,
+							["recipeID"] = 194167
 						},
 						{
-							["recipeID"] = 194168--[[Felhide]]
+							["name"] = "Felhide",
+							["nextRecipeID"] = 194169,
+							["previousRecipeID"] = 194167,
+							["recipeID"] = 194168
 						},
 						{
-							["recipeID"] = 194167--[[Felhide]]
+							["name"] = "Felhide",
+							["previousRecipeID"] = 194168,
+							["recipeID"] = 194169
 						},
 						{
-							["recipeID"] = 247842--[[Fiendish Leather]]
+							["name"] = "Fiendish Leather",
+							["nextRecipeID"] = 247843,
+							["recipeID"] = 247842
 						},
 						{
-							["recipeID"] = 247844--[[Fiendish Leather]]
+							["name"] = "Fiendish Leather",
+							["nextRecipeID"] = 247844,
+							["previousRecipeID"] = 247842,
+							["recipeID"] = 247843
 						},
 						{
-							["recipeID"] = 247843--[[Fiendish Leather]]
+							["name"] = "Fiendish Leather",
+							["previousRecipeID"] = 247843,
+							["recipeID"] = 247844
 						},
 						{
-							["recipeID"] = 194173--[[Legion Butchery]]
+							["name"] = "Legion Butchery",
+							["recipeID"] = 194173
 						},
 						{
-							["recipeID"] = 194203--[[Legion Gutting]]
+							["name"] = "Legion Gutting",
+							["recipeID"] = 194203
 						},
 						{
-							["recipeID"] = 194163--[[Stonehide Leather]]
+							["name"] = "Stonehide Leather",
+							["nextRecipeID"] = 194162,
+							["recipeID"] = 194161
 						},
 						{
-							["recipeID"] = 194162--[[Stonehide Leather]]
+							["name"] = "Stonehide Leather",
+							["nextRecipeID"] = 194163,
+							["previousRecipeID"] = 194161,
+							["recipeID"] = 194162
 						},
 						{
-							["recipeID"] = 194161--[[Stonehide Leather]]
+							["name"] = "Stonehide Leather",
+							["previousRecipeID"] = 194162,
+							["recipeID"] = 194163
 						},
 						{
-							["recipeID"] = 194166--[[Stormscale]]
+							["name"] = "Stormscale",
+							["nextRecipeID"] = 194165,
+							["recipeID"] = 194164
 						},
 						{
-							["recipeID"] = 194165--[[Stormscale]]
+							["name"] = "Stormscale",
+							["nextRecipeID"] = 194166,
+							["previousRecipeID"] = 194164,
+							["recipeID"] = 194165
 						},
 						{
-							["recipeID"] = 194164--[[Stormscale]]
+							["name"] = "Stormscale",
+							["previousRecipeID"] = 194165,
+							["recipeID"] = 194166
 						},
 						{
-							["recipeID"] = 194171--[[Unbroken Claw]]
+							["name"] = "Unbroken Claw",
+							["recipeID"] = 194171
 						},
 						{
-							["recipeID"] = 194170--[[Unbroken Tooth]]
+							["name"] = "Unbroken Tooth",
+							["recipeID"] = 194170
 						}
 					}
 				}
 			}
-		},
-		--[===[
-		-- Nothing to learn here... yet.
-		{
-			["categoryID"] = 1050--[[Draenor Skinning]]
-		},
-		{
-			["categoryID"] = 1052--[[Pandaria Skinning]]
-		},
-		{
-			["categoryID"] = 1054--[[Cataclysm Skinning]]
-		},
-		{
-			["categoryID"] = 1056--[[Northrend Skinning]]
-		},
-		{
-			["categoryID"] = 1058--[[Outland Skinning]]
-		},
-		{
-			["categoryID"] = 1060--[[Skinning]]
 		}
-		]===]--
 	}),
 });

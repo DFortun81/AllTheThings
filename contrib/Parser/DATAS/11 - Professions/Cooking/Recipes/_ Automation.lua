@@ -1,1432 +1,2083 @@
 --[[
 DO NOT MODIFY THIS FILE, I WILL CUT YOU.
  With love,
-    - CRIEVE
+    -CRIEVE
 ]]--
 profession(185, {	-- Cooking
-	filter(200, {	-- Recipes
+	filter(200, {
 		{
-			["categoryID"] = 1118--[[Zandalari Cuisine]],
+			["name"] = "Zandalari Cuisine",
+			["categoryID"] = 1118,
 			["g"] = {
 				{
-					["categoryID"] = 1120--[[Light Meals]],
+					["name"] = "Light Meals",
+					["categoryID"] = 1120,
 					["g"] = {
 						{
-							["recipeID"] = 259434--[[Seasoned Loins]]
+							["name"] = "Grilled Catfish",
+							["nextRecipeID"] = 259431,
+							["recipeID"] = 259430
 						},
 						{
-							["recipeID"] = 259435--[[Seasoned Loins]]
+							["name"] = "Grilled Catfish",
+							["nextRecipeID"] = 259432,
+							["previousRecipeID"] = 259430,
+							["recipeID"] = 259431
 						},
 						{
-							["recipeID"] = 259433--[[Seasoned Loins]]
+							["name"] = "Grilled Catfish",
+							["previousRecipeID"] = 259431,
+							["recipeID"] = 259432
 						},
 						{
-							["recipeID"] = 259432--[[Grilled Catfish]]
+							["name"] = "Heartsbane Hexwurst",
+							["recipeID"] = 280282
 						},
 						{
-							["recipeID"] = 259431--[[Grilled Catfish]]
+							["name"] = "Honey Potpie",
+							["recipeID"] = 286381
 						},
 						{
-							["recipeID"] = 280282--[[Heartsbane Hexwurst]]
+							["name"] = "Seasoned Loins",
+							["nextRecipeID"] = 259434,
+							["recipeID"] = 259433
 						},
 						{
-							["recipeID"] = 259430--[[Grilled Catfish]]
+							["name"] = "Seasoned Loins",
+							["nextRecipeID"] = 259435,
+							["previousRecipeID"] = 259433,
+							["recipeID"] = 259434
+						},
+						{
+							["name"] = "Seasoned Loins",
+							["previousRecipeID"] = 259434,
+							["recipeID"] = 259435
 						}
 					}
 				},
 				{
-					["categoryID"] = 1119--[[Desserts]],
+					["name"] = "Desserts",
+					["categoryID"] = 1119,
 					["g"] = {
 						{
-							["recipeID"] = 259413--[[Kul Tiramisu]]
+							["name"] = "Kul Tiramisu",
+							["nextRecipeID"] = 259412,
+							["recipeID"] = 259411
 						},
 						{
-							["recipeID"] = 259438--[[Loa Loaf]]
+							["name"] = "Kul Tiramisu",
+							["nextRecipeID"] = 259413,
+							["previousRecipeID"] = 259411,
+							["recipeID"] = 259412
 						},
 						{
-							["recipeID"] = 259444--[[Mon'Dazi]]
+							["name"] = "Kul Tiramisu",
+							["previousRecipeID"] = 259412,
+							["recipeID"] = 259413
 						},
 						{
-							["recipeID"] = 259426--[[Ravenberry Tarts]]
+							["name"] = "Loa Loaf",
+							["nextRecipeID"] = 259437,
+							["recipeID"] = 259436
 						},
 						{
-							["recipeID"] = 259412--[[Kul Tiramisu]]
+							["name"] = "Loa Loaf",
+							["nextRecipeID"] = 259438,
+							["previousRecipeID"] = 259436,
+							["recipeID"] = 259437
 						},
 						{
-							["recipeID"] = 259437--[[Loa Loaf]]
+							["name"] = "Loa Loaf",
+							["previousRecipeID"] = 259437,
+							["recipeID"] = 259438
 						},
 						{
-							["recipeID"] = 259443--[[Mon'Dazi]]
+							["name"] = "Mon'Dazi",
+							["nextRecipeID"] = 259443,
+							["recipeID"] = 259442
 						},
 						{
-							["recipeID"] = 259425--[[Ravenberry Tarts]]
+							["name"] = "Mon'Dazi",
+							["nextRecipeID"] = 259444,
+							["previousRecipeID"] = 259442,
+							["recipeID"] = 259443
 						},
 						{
-							["recipeID"] = 259411--[[Kul Tiramisu]]
+							["name"] = "Mon'Dazi",
+							["previousRecipeID"] = 259443,
+							["recipeID"] = 259444
 						},
 						{
-							["recipeID"] = 259436--[[Loa Loaf]]
+							["name"] = "Ravenberry Tarts",
+							["nextRecipeID"] = 259425,
+							["recipeID"] = 259424
 						},
 						{
-							["recipeID"] = 259442--[[Mon'Dazi]]
+							["name"] = "Ravenberry Tarts",
+							["nextRecipeID"] = 259426,
+							["previousRecipeID"] = 259424,
+							["recipeID"] = 259425
 						},
 						{
-							["recipeID"] = 259424--[[Ravenberry Tarts]]
+							["name"] = "Ravenberry Tarts",
+							["previousRecipeID"] = 259425,
+							["recipeID"] = 259426
+						},
+						{
+							["name"] = "Wild Berry Bread",
+							["nextRecipeID"] = 288028,
+							["recipeID"] = 288027
+						},
+						{
+							["name"] = "Wild Berry Bread",
+							["nextRecipeID"] = 288029,
+							["previousRecipeID"] = 288027,
+							["recipeID"] = 288028
+						},
+						{
+							["name"] = "Wild Berry Bread",
+							["previousRecipeID"] = 288028,
+							["recipeID"] = 288029
 						}
 					}
 				},
 				{
-					["categoryID"] = 1121--[[Large Meals]],
+					["name"] = "Large Meals",
+					["categoryID"] = 1121,
 					["g"] = {
 						{
-							["recipeID"] = 259415--[[Honey-Glazed Haunches]]
+							["name"] = "Boralus Blood Sausage",
+							["nextRecipeID"] = 290472,
+							["recipeID"] = 290471
 						},
 						{
-							["recipeID"] = 259416--[[Honey-Glazed Haunches]]
+							["name"] = "Boralus Blood Sausage",
+							["nextRecipeID"] = 290473,
+							["previousRecipeID"] = 290471,
+							["recipeID"] = 290472
 						},
 						{
-							["recipeID"] = 259440--[[Sailor's Pie]]
+							["name"] = "Boralus Blood Sausage",
+							["previousRecipeID"] = 290472,
+							["recipeID"] = 290473
 						},
 						{
-							["recipeID"] = 259441--[[Sailor's Pie]]
+							["name"] = "Honey-Glazed Haunches",
+							["nextRecipeID"] = 259415,
+							["recipeID"] = 259414
 						},
 						{
-							["recipeID"] = 259447--[[Spiced Snapper]]
+							["name"] = "Honey-Glazed Haunches",
+							["nextRecipeID"] = 259416,
+							["previousRecipeID"] = 259414,
+							["recipeID"] = 259415
 						},
 						{
-							["recipeID"] = 259446--[[Spiced Snapper]]
+							["name"] = "Honey-Glazed Haunches",
+							["previousRecipeID"] = 259415,
+							["recipeID"] = 259416
 						},
 						{
-							["recipeID"] = 259428--[[Swamp Fish 'n Chips]]
+							["name"] = "Sailor's Pie",
+							["nextRecipeID"] = 259440,
+							["recipeID"] = 259439
 						},
 						{
-							["recipeID"] = 259429--[[Swamp Fish 'n Chips]]
+							["name"] = "Sailor's Pie",
+							["nextRecipeID"] = 259441,
+							["previousRecipeID"] = 259439,
+							["recipeID"] = 259440
 						},
 						{
-							["recipeID"] = 259414--[[Honey-Glazed Haunches]]
+							["name"] = "Sailor's Pie",
+							["previousRecipeID"] = 259440,
+							["recipeID"] = 259441
 						},
 						{
-							["recipeID"] = 259439--[[Sailor's Pie]]
+							["name"] = "Seasoned Steak and Potatoes",
+							["nextRecipeID"] = 288032,
+							["recipeID"] = 288030
 						},
 						{
-							["recipeID"] = 259445--[[Spiced Snapper]]
+							["name"] = "Seasoned Steak and Potatoes",
+							["nextRecipeID"] = 288033,
+							["previousRecipeID"] = 288030,
+							["recipeID"] = 288032
 						},
 						{
-							["recipeID"] = 259427--[[Swamp Fish 'n Chips]]
+							["name"] = "Seasoned Steak and Potatoes",
+							["previousRecipeID"] = 288032,
+							["recipeID"] = 288033
+						},
+						{
+							["name"] = "Spiced Snapper",
+							["nextRecipeID"] = 259446,
+							["recipeID"] = 259445
+						},
+						{
+							["name"] = "Spiced Snapper",
+							["nextRecipeID"] = 259447,
+							["previousRecipeID"] = 259445,
+							["recipeID"] = 259446
+						},
+						{
+							["name"] = "Spiced Snapper",
+							["previousRecipeID"] = 259446,
+							["recipeID"] = 259447
+						},
+						{
+							["name"] = "Swamp Fish 'n Chips",
+							["nextRecipeID"] = 259428,
+							["recipeID"] = 259427
+						},
+						{
+							["name"] = "Swamp Fish 'n Chips",
+							["nextRecipeID"] = 259429,
+							["previousRecipeID"] = 259427,
+							["recipeID"] = 259428
+						},
+						{
+							["name"] = "Swamp Fish 'n Chips",
+							["previousRecipeID"] = 259428,
+							["recipeID"] = 259429
 						}
 					}
 				},
 				{
-					["categoryID"] = 1122--[[Feasts]],
+					["name"] = "Feasts",
+					["categoryID"] = 1122,
 					["g"] = {
 						{
-							["recipeID"] = 259421--[[Bountiful Captain's Feast]]
+							["name"] = "Bountiful Captain's Feast",
+							["nextRecipeID"] = 259422,
+							["recipeID"] = 259421
 						},
 						{
-							["recipeID"] = 259422--[[Bountiful Captain's Feast]]
+							["name"] = "Bountiful Captain's Feast",
+							["nextRecipeID"] = 259423,
+							["previousRecipeID"] = 259421,
+							["recipeID"] = 259422
 						},
 						{
-							["recipeID"] = 259423--[[Bountiful Captain's Feast]]
+							["name"] = "Bountiful Captain's Feast",
+							["previousRecipeID"] = 259422,
+							["recipeID"] = 259423
 						},
 						{
-							["recipeID"] = 259419--[[Galley Banquet]]
+							["name"] = "Galley Banquet",
+							["nextRecipeID"] = 259419,
+							["recipeID"] = 259418
 						},
 						{
-							["recipeID"] = 259420--[[Galley Banquet]]
+							["name"] = "Galley Banquet",
+							["nextRecipeID"] = 259420,
+							["previousRecipeID"] = 259418,
+							["recipeID"] = 259419
 						},
 						{
-							["recipeID"] = 259418--[[Galley Banquet]]
+							["name"] = "Galley Banquet",
+							["previousRecipeID"] = 259419,
+							["recipeID"] = 259420
+						},
+						{
+							["name"] = "Sanguinated Feast",
+							["nextRecipeID"] = 287110,
+							["recipeID"] = 287108
+						},
+						{
+							["name"] = "Sanguinated Feast",
+							["nextRecipeID"] = 287112,
+							["previousRecipeID"] = 287108,
+							["recipeID"] = 287110
+						},
+						{
+							["name"] = "Sanguinated Feast",
+							["previousRecipeID"] = 287110,
+							["recipeID"] = 287112
 						}
 					}
 				}
 			}
 		},
 		{
-			["categoryID"] = 475--[[Food of the Broken Isles]],
+			["name"] = "Food of the Broken Isles",
+			["categoryID"] = 475,
 			["g"] = {
 				{
-					["categoryID"] = 476--[[Snacks]],
+					["name"] = "Snacks",
+					["categoryID"] = 476,
 					["g"] = {
 						{
-							["recipeID"] = 201685--[[Crispy Bacon]]
+							["name"] = "Bear Tartare",
+							["nextRecipeID"] = 201540,
+							["recipeID"] = 201513
 						},
 						{
-							["recipeID"] = 201684--[[Crispy Bacon]]
+							["name"] = "Bear Tartare",
+							["nextRecipeID"] = 201560,
+							["previousRecipeID"] = 201513,
+							["recipeID"] = 201540
 						},
 						{
-							["recipeID"] = 230046--[[Spiced Falcosaur Omelet]]
+							["name"] = "Bear Tartare",
+							["previousRecipeID"] = 201540,
+							["recipeID"] = 201560
 						},
 						{
-							["recipeID"] = 201560--[[Bear Tartare]]
+							["name"] = "Crispy Bacon",
+							["nextRecipeID"] = 201684,
+							["recipeID"] = 201683
 						},
 						{
-							["recipeID"] = 201683--[[Crispy Bacon]]
+							["name"] = "Crispy Bacon",
+							["nextRecipeID"] = 201685,
+							["previousRecipeID"] = 201683,
+							["recipeID"] = 201684
 						},
 						{
-							["recipeID"] = 201559--[[Dried Mackerel Strips]]
+							["name"] = "Crispy Bacon",
+							["previousRecipeID"] = 201684,
+							["recipeID"] = 201685
 						},
 						{
-							["recipeID"] = 201561--[[Fighter Chow]]
+							["name"] = "Dried Mackerel Strips",
+							["nextRecipeID"] = 201539,
+							["recipeID"] = 201512
 						},
 						{
-							["recipeID"] = 201540--[[Bear Tartare]]
+							["name"] = "Dried Mackerel Strips",
+							["nextRecipeID"] = 201559,
+							["previousRecipeID"] = 201512,
+							["recipeID"] = 201539
 						},
 						{
-							["recipeID"] = 201539--[[Dried Mackerel Strips]]
+							["name"] = "Dried Mackerel Strips",
+							["previousRecipeID"] = 201539,
+							["recipeID"] = 201559
 						},
 						{
-							["recipeID"] = 201541--[[Fighter Chow]]
+							["name"] = "Fighter Chow",
+							["nextRecipeID"] = 201541,
+							["recipeID"] = 201514
 						},
 						{
-							["recipeID"] = 201513--[[Bear Tartare]]
+							["name"] = "Fighter Chow",
+							["nextRecipeID"] = 201561,
+							["previousRecipeID"] = 201514,
+							["recipeID"] = 201541
 						},
 						{
-							["recipeID"] = 201512--[[Dried Mackerel Strips]]
+							["name"] = "Fighter Chow",
+							["previousRecipeID"] = 201541,
+							["recipeID"] = 201561
 						},
 						{
-							["recipeID"] = 201514--[[Fighter Chow]]
+							["name"] = "Spiced Falcosaur Omelet",
+							["recipeID"] = 230046
 						}
 					}
 				},
 				{
-					["categoryID"] = 477--[[Light Meals]],
+					["name"] = "Light Meals",
+					["categoryID"] = 477,
 					["g"] = {
 						{
-							["recipeID"] = 201545--[[Deep-Fried Mossgill]]
+							["name"] = "Deep-Fried Mossgill",
+							["nextRecipeID"] = 201525,
+							["recipeID"] = 201496
 						},
 						{
-							["recipeID"] = 201547--[[Faronaar Fizz]]
+							["name"] = "Deep-Fried Mossgill",
+							["nextRecipeID"] = 201545,
+							["previousRecipeID"] = 201496,
+							["recipeID"] = 201525
 						},
 						{
-							["recipeID"] = 201546--[[Pickled Stormray]]
+							["name"] = "Deep-Fried Mossgill",
+							["previousRecipeID"] = 201525,
+							["recipeID"] = 201545
 						},
 						{
-							["recipeID"] = 201544--[[Salt and Pepper Shank]]
+							["name"] = "Faronaar Fizz",
+							["nextRecipeID"] = 201527,
+							["recipeID"] = 201498
 						},
 						{
-							["recipeID"] = 201548--[[Spiced Rib Roast]]
+							["name"] = "Faronaar Fizz",
+							["nextRecipeID"] = 201547,
+							["previousRecipeID"] = 201498,
+							["recipeID"] = 201527
 						},
 						{
-							["recipeID"] = 201525--[[Deep-Fried Mossgill]]
+							["name"] = "Faronaar Fizz",
+							["previousRecipeID"] = 201527,
+							["recipeID"] = 201547
 						},
 						{
-							["recipeID"] = 201527--[[Faronaar Fizz]]
+							["name"] = "Pickled Stormray",
+							["nextRecipeID"] = 201526,
+							["recipeID"] = 201497
 						},
 						{
-							["recipeID"] = 201526--[[Pickled Stormray]]
+							["name"] = "Pickled Stormray",
+							["nextRecipeID"] = 201546,
+							["previousRecipeID"] = 201497,
+							["recipeID"] = 201526
 						},
 						{
-							["recipeID"] = 201524--[[Salt and Pepper Shank]]
+							["name"] = "Pickled Stormray",
+							["previousRecipeID"] = 201526,
+							["recipeID"] = 201546
 						},
 						{
-							["recipeID"] = 201528--[[Spiced Rib Roast]]
+							["name"] = "Salt and Pepper Shank",
+							["nextRecipeID"] = 201524,
+							["recipeID"] = 201413
 						},
 						{
-							["recipeID"] = 201496--[[Deep-Fried Mossgill]]
+							["name"] = "Salt and Pepper Shank",
+							["nextRecipeID"] = 201544,
+							["previousRecipeID"] = 201413,
+							["recipeID"] = 201524
 						},
 						{
-							["recipeID"] = 201498--[[Faronaar Fizz]]
+							["name"] = "Salt and Pepper Shank",
+							["previousRecipeID"] = 201524,
+							["recipeID"] = 201544
 						},
 						{
-							["recipeID"] = 201497--[[Pickled Stormray]]
+							["name"] = "Spiced Rib Roast",
+							["nextRecipeID"] = 201528,
+							["recipeID"] = 201499
 						},
 						{
-							["recipeID"] = 201413--[[Salt and Pepper Shank]]
+							["name"] = "Spiced Rib Roast",
+							["nextRecipeID"] = 201548,
+							["previousRecipeID"] = 201499,
+							["recipeID"] = 201528
 						},
 						{
-							["recipeID"] = 201499--[[Spiced Rib Roast]]
+							["name"] = "Spiced Rib Roast",
+							["previousRecipeID"] = 201528,
+							["recipeID"] = 201548
 						}
 					}
 				},
 				{
-					["categoryID"] = 478--[[Large Meals]],
+					["name"] = "Large Meals",
+					["categoryID"] = 478,
 					["g"] = {
 						{
-							["recipeID"] = 201551--[[Barracuda Mrglgagh]]
+							["name"] = "Barracuda Mrglgagh",
+							["nextRecipeID"] = 201531,
+							["recipeID"] = 201502
 						},
 						{
-							["recipeID"] = 201553--[[Drogbar-Style Salmon]]
+							["name"] = "Barracuda Mrglgagh",
+							["nextRecipeID"] = 201551,
+							["previousRecipeID"] = 201502,
+							["recipeID"] = 201531
 						},
 						{
-							["recipeID"] = 201552--[[Koi-Scented Stormray]]
+							["name"] = "Barracuda Mrglgagh",
+							["previousRecipeID"] = 201531,
+							["recipeID"] = 201551
 						},
 						{
-							["recipeID"] = 201549--[[Leybeque Ribs]]
+							["name"] = "Drogbar-Style Salmon",
+							["nextRecipeID"] = 201533,
+							["recipeID"] = 201504
 						},
 						{
-							["recipeID"] = 201550--[[Suramar Surf and Turf]]
+							["name"] = "Drogbar-Style Salmon",
+							["nextRecipeID"] = 201553,
+							["previousRecipeID"] = 201504,
+							["recipeID"] = 201533
 						},
 						{
-							["recipeID"] = 201531--[[Barracuda Mrglgagh]]
+							["name"] = "Drogbar-Style Salmon",
+							["previousRecipeID"] = 201533,
+							["recipeID"] = 201553
 						},
 						{
-							["recipeID"] = 201533--[[Drogbar-Style Salmon]]
+							["name"] = "Koi-Scented Stormray",
+							["nextRecipeID"] = 201532,
+							["recipeID"] = 201503
 						},
 						{
-							["recipeID"] = 201532--[[Koi-Scented Stormray]]
+							["name"] = "Koi-Scented Stormray",
+							["nextRecipeID"] = 201552,
+							["previousRecipeID"] = 201503,
+							["recipeID"] = 201532
 						},
 						{
-							["recipeID"] = 201529--[[Leybeque Ribs]]
+							["name"] = "Koi-Scented Stormray",
+							["previousRecipeID"] = 201532,
+							["recipeID"] = 201552
 						},
 						{
-							["recipeID"] = 201530--[[Suramar Surf and Turf]]
+							["name"] = "Leybeque Ribs",
+							["nextRecipeID"] = 201529,
+							["recipeID"] = 201500
 						},
 						{
-							["recipeID"] = 201502--[[Barracuda Mrglgagh]]
+							["name"] = "Leybeque Ribs",
+							["nextRecipeID"] = 201549,
+							["previousRecipeID"] = 201500,
+							["recipeID"] = 201529
 						},
 						{
-							["recipeID"] = 201504--[[Drogbar-Style Salmon]]
+							["name"] = "Leybeque Ribs",
+							["previousRecipeID"] = 201529,
+							["recipeID"] = 201549
 						},
 						{
-							["recipeID"] = 201503--[[Koi-Scented Stormray]]
+							["name"] = "Suramar Surf and Turf",
+							["nextRecipeID"] = 201530,
+							["recipeID"] = 201501
 						},
 						{
-							["recipeID"] = 201500--[[Leybeque Ribs]]
+							["name"] = "Suramar Surf and Turf",
+							["nextRecipeID"] = 201550,
+							["previousRecipeID"] = 201501,
+							["recipeID"] = 201530
 						},
 						{
-							["recipeID"] = 201501--[[Suramar Surf and Turf]]
+							["name"] = "Suramar Surf and Turf",
+							["previousRecipeID"] = 201530,
+							["recipeID"] = 201550
 						}
 					}
 				},
 				{
-					["categoryID"] = 479--[[Delicacies]],
+					["name"] = "Delicacies",
+					["categoryID"] = 479,
 					["g"] = {
 						{
-							["recipeID"] = 201555--[[Azshari Salad]]
+							["name"] = "Azshari Salad",
+							["nextRecipeID"] = 201535,
+							["recipeID"] = 201506
 						},
 						{
-							["recipeID"] = 201535--[[Azshari Salad]]
+							["name"] = "Azshari Salad",
+							["nextRecipeID"] = 201555,
+							["previousRecipeID"] = 201506,
+							["recipeID"] = 201535
 						},
 						{
-							["recipeID"] = 201558--[[Fishbrul Special]]
+							["name"] = "Azshari Salad",
+							["previousRecipeID"] = 201535,
+							["recipeID"] = 201555
 						},
 						{
-							["recipeID"] = 201538--[[Fishbrul Special]]
+							["name"] = "Fishbrul Special",
+							["nextRecipeID"] = 201538,
+							["recipeID"] = 201511
 						},
 						{
-							["recipeID"] = 201556--[[Nightborne Delicacy Platter]]
+							["name"] = "Fishbrul Special",
+							["nextRecipeID"] = 201558,
+							["previousRecipeID"] = 201511,
+							["recipeID"] = 201538
 						},
 						{
-							["recipeID"] = 201536--[[Nightborne Delicacy Platter]]
+							["name"] = "Fishbrul Special",
+							["previousRecipeID"] = 201538,
+							["recipeID"] = 201558
 						},
 						{
-							["recipeID"] = 201557--[[Seed-Battered Fish Plate]]
+							["name"] = "Nightborne Delicacy Platter",
+							["nextRecipeID"] = 201536,
+							["recipeID"] = 201507
 						},
 						{
-							["recipeID"] = 201537--[[Seed-Battered Fish Plate]]
+							["name"] = "Nightborne Delicacy Platter",
+							["nextRecipeID"] = 201556,
+							["previousRecipeID"] = 201507,
+							["recipeID"] = 201536
 						},
 						{
-							["recipeID"] = 201554--[[The Hungry Magister]]
+							["name"] = "Nightborne Delicacy Platter",
+							["previousRecipeID"] = 201536,
+							["recipeID"] = 201556
 						},
 						{
-							["recipeID"] = 201534--[[The Hungry Magister]]
+							["name"] = "Seed-Battered Fish Plate",
+							["nextRecipeID"] = 201537,
+							["recipeID"] = 201508
 						},
 						{
-							["recipeID"] = 201506--[[Azshari Salad]]
+							["name"] = "Seed-Battered Fish Plate",
+							["nextRecipeID"] = 201557,
+							["previousRecipeID"] = 201508,
+							["recipeID"] = 201537
 						},
 						{
-							["recipeID"] = 201511--[[Fishbrul Special]]
+							["name"] = "Seed-Battered Fish Plate",
+							["previousRecipeID"] = 201537,
+							["recipeID"] = 201557
 						},
 						{
-							["recipeID"] = 201507--[[Nightborne Delicacy Platter]]
+							["name"] = "The Hungry Magister",
+							["nextRecipeID"] = 201534,
+							["recipeID"] = 201505
 						},
 						{
-							["recipeID"] = 201508--[[Seed-Battered Fish Plate]]
+							["name"] = "The Hungry Magister",
+							["nextRecipeID"] = 201554,
+							["previousRecipeID"] = 201505,
+							["recipeID"] = 201534
 						},
 						{
-							["recipeID"] = 201505--[[The Hungry Magister]]
+							["name"] = "The Hungry Magister",
+							["previousRecipeID"] = 201534,
+							["recipeID"] = 201554
 						}
 					}
 				},
 				{
-					["categoryID"] = 480--[[Feasts]],
+					["name"] = "Feasts",
+					["categoryID"] = 480,
 					["g"] = {
 						{
-							["recipeID"] = 201562--[[Hearty Feast]]
+							["name"] = "Feast of the Fishes",
+							["recipeID"] = 251258
 						},
 						{
-							["recipeID"] = 201563--[[Lavish Suramar Feast]]
+							["name"] = "Hearty Feast",
+							["nextRecipeID"] = 201542,
+							["recipeID"] = 201515
 						},
 						{
-							["recipeID"] = 201543--[[Lavish Suramar Feast]]
+							["name"] = "Hearty Feast",
+							["nextRecipeID"] = 201562,
+							["previousRecipeID"] = 201515,
+							["recipeID"] = 201542
 						},
 						{
-							["recipeID"] = 251258--[[Feast of the Fishes]]
+							["name"] = "Hearty Feast",
+							["previousRecipeID"] = 201542,
+							["recipeID"] = 201562
 						},
 						{
-							["recipeID"] = 201542--[[Hearty Feast]]
+							["name"] = "Lavish Suramar Feast",
+							["nextRecipeID"] = 201543,
+							["recipeID"] = 201516
 						},
 						{
-							["recipeID"] = 201516--[[Lavish Suramar Feast]]
+							["name"] = "Lavish Suramar Feast",
+							["nextRecipeID"] = 201563,
+							["previousRecipeID"] = 201516,
+							["recipeID"] = 201543
 						},
 						{
-							["recipeID"] = 201515--[[Hearty Feast]]
+							["name"] = "Lavish Suramar Feast",
+							["previousRecipeID"] = 201543,
+							["recipeID"] = 201563
 						}
 					}
 				}
 			}
 		},
 		{
-			["categoryID"] = 1013--[[Food of Draenor - Header]],
+			["name"] = "Food of Draenor - Header",
+			["categoryID"] = 1013,
 			["g"] = {
 				{
-					["categoryID"] = 342--[[Food of Draenor]],
+					["name"] = "Food of Draenor",
+					["categoryID"] = 342,
 					["g"] = {
 						{
-							["categoryID"] = 345--[[Feasts]],
+							["name"] = "Marinated Elekk Steak",
+							["recipeID"] = 169696
+						},
+						{
+							["name"] = "Seasoned Elekk Ribeye",
+							["recipeID"] = 169699
+						},
+						{
+							["name"] = "Whole Pot-Roasted Elekk",
+							["recipeID"] = 169693
+						},
+						{
+							["name"] = "Feasts",
+							["categoryID"] = 345,
 							["g"] = {
 								{
-									["recipeID"] = 173978--[[Feast of Blood]]
+									["name"] = "Feast of Blood",
+									["recipeID"] = 173978
 								},
 								{
-									["recipeID"] = 173979--[[Feast of the Waters]]
+									["name"] = "Feast of the Waters",
+									["recipeID"] = 173979
 								}
 							}
 						},
 						{
-							["categoryID"] = 346--[[Delicacies]],
+							["name"] = "Delicacies",
+							["categoryID"] = 346,
 							["g"] = {
 								{
-									["recipeID"] = 160986--[[Blackrock Barbecue]]
+									["name"] = "Blackrock Barbecue",
+									["recipeID"] = 160986
 								},
 								{
-									["recipeID"] = 160999--[[Calamari Crepes]]
+									["name"] = "Calamari Crepes",
+									["recipeID"] = 160999
 								},
 								{
-									["recipeID"] = 160987--[[Frosty Stew]]
+									["name"] = "Frosty Stew",
+									["recipeID"] = 160987
 								},
 								{
-									["recipeID"] = 161000--[[Gorgrond Chowder]]
+									["name"] = "Gorgrond Chowder",
+									["recipeID"] = 161000
 								},
 								{
-									["recipeID"] = 160989--[[Sleeper Surprise]]
+									["name"] = "Sleeper Surprise",
+									["recipeID"] = 160989
 								},
 								{
-									["recipeID"] = 160984--[[Talador Surf and Turf]]
+									["name"] = "Talador Surf and Turf",
+									["recipeID"] = 160984
 								}
 							}
 						},
 						{
-							["categoryID"] = 343--[[Meat Dishes]],
+							["name"] = "Meat Dishes",
+							["categoryID"] = 343,
 							["g"] = {
 								{
-									["recipeID"] = 160962--[[Blackrock Ham]]
+									["name"] = "Blackrock Ham",
+									["recipeID"] = 160962
 								},
 								{
-									["recipeID"] = 160968--[[Braised Riverbeast]]
+									["name"] = "Braised Riverbeast",
+									["recipeID"] = 160968
 								},
 								{
-									["recipeID"] = 160971--[[Clefthoof Sausages]]
+									["name"] = "Clefthoof Sausages",
+									["recipeID"] = 160971
 								},
 								{
-									["recipeID"] = 160958--[[Hearty Elekk Steak]]
+									["name"] = "Fel Eggs and Ham",
+									["recipeID"] = 190788
 								},
 								{
-									["recipeID"] = 160966--[[Pan-Seared Talbuk]]
+									["name"] = "Hearty Elekk Steak",
+									["recipeID"] = 160958
 								},
 								{
-									["recipeID"] = 160969--[[Rylak Crepes]]
+									["name"] = "Pan-Seared Talbuk",
+									["recipeID"] = 160966
 								},
 								{
-									["recipeID"] = 190788--[[Fel Eggs and Ham]]
+									["name"] = "Rylak Crepes",
+									["recipeID"] = 160969
 								}
 							}
 						},
 						{
-							["categoryID"] = 344--[[Fish Dishes]],
+							["name"] = "Fish Dishes",
+							["categoryID"] = 344,
 							["g"] = {
 								{
-									["recipeID"] = 160981--[[Fat Sleeper Cakes]]
+									["name"] = "Buttered Sturgeon",
+									["recipeID"] = 180761
 								},
 								{
-									["recipeID"] = 160982--[[Fiery Calamari]]
+									["name"] = "Fat Sleeper Cakes",
+									["recipeID"] = 160981
 								},
 								{
-									["recipeID"] = 160978--[[Grilled Gulper]]
+									["name"] = "Fiery Calamari",
+									["recipeID"] = 160982
 								},
 								{
-									["recipeID"] = 160983--[[Skulker Chowder]]
+									["name"] = "Grilled Gulper",
+									["recipeID"] = 160978
 								},
 								{
-									["recipeID"] = 160973--[[Steamed Scorpion]]
+									["name"] = "Grilled Saberfish",
+									["recipeID"] = 161002
 								},
 								{
-									["recipeID"] = 160979--[[Sturgeon Stew]]
+									["name"] = "Jumbo Sea Dog",
+									["recipeID"] = 180759
 								},
 								{
-									["recipeID"] = 161002--[[Grilled Saberfish]]
+									["name"] = "Pickled Eel",
+									["recipeID"] = 180758
 								},
 								{
-									["recipeID"] = 161001--[[Saberfish Broth]]
+									["name"] = "Saberfish Broth",
+									["recipeID"] = 161001
 								},
 								{
-									["recipeID"] = 180761--[[Buttered Sturgeon]]
+									["name"] = "Salty Squid Roll",
+									["recipeID"] = 180757
 								},
 								{
-									["recipeID"] = 180759--[[Jumbo Sea Dog]]
+									["name"] = "Skulker Chowder",
+									["recipeID"] = 160983
 								},
 								{
-									["recipeID"] = 180758--[[Pickled Eel]]
+									["name"] = "Sleeper Sushi",
+									["recipeID"] = 180762
 								},
 								{
-									["recipeID"] = 180757--[[Salty Squid Roll]]
+									["name"] = "Steamed Scorpion",
+									["recipeID"] = 160973
 								},
 								{
-									["recipeID"] = 180762--[[Sleeper Sushi]]
+									["name"] = "Sturgeon Stew",
+									["recipeID"] = 160979
 								},
 								{
-									["recipeID"] = 180760--[[Whiptail Fillet]]
+									["name"] = "Whiptail Fillet",
+									["recipeID"] = 180760
 								}
 							}
-						},
-						{
-							["recipeID"] = 169696--[[Marinated Elekk Steak]]
-						},
-						{
-							["recipeID"] = 169699--[[Seasoned Elekk Ribeye]]
-						},
-						{
-							["recipeID"] = 169693--[[Whole Pot-Roasted Elekk]]
 						}
 					}
 				}
 			}
 		},
 		{
-			["categoryID"] = 90--[[Pandaren Cuisine]],
+			["name"] = "Pandaren Cuisine",
+			["categoryID"] = 90,
 			["g"] = {
 				{
-					["categoryID"] = 64--[[Way of the Grill]],
+					["name"] = "Way of the Grill",
+					["categoryID"] = 64,
 					["g"] = {
 						{
-							["recipeID"] = 125141--[[Banquet of the Grill]]
+							["name"] = "Banquet of the Grill",
+							["recipeID"] = 125141
 						},
 						{
-							["recipeID"] = 104300--[[Black Pepper Ribs and Shrimp]]
+							["name"] = "Black Pepper Ribs and Shrimp",
+							["recipeID"] = 104300
 						},
 						{
-							["recipeID"] = 145311--[[Fluffy Silkfeather Omelet]]
+							["name"] = "Charbroiled Tiger Steak",
+							["recipeID"] = 104298
 						},
 						{
-							["recipeID"] = 125142--[[Great Banquet of the Grill]]
+							["name"] = "Eternal Blossom Fish",
+							["recipeID"] = 104299
 						},
 						{
-							["recipeID"] = 104299--[[Eternal Blossom Fish]]
+							["name"] = "Fluffy Silkfeather Omelet",
+							["recipeID"] = 145311
 						},
 						{
-							["recipeID"] = 104298--[[Charbroiled Tiger Steak]]
+							["name"] = "Great Banquet of the Grill",
+							["recipeID"] = 125142
 						}
 					}
 				},
 				{
-					["categoryID"] = 65--[[Way of the Wok]],
+					["name"] = "Way of the Wok",
+					["categoryID"] = 65,
 					["g"] = {
 						{
-							["recipeID"] = 125594--[[Banquet of the Wok]]
+							["name"] = "Banquet of the Wok",
+							["recipeID"] = 125594
 						},
 						{
-							["recipeID"] = 125595--[[Great Banquet of the Wok]]
+							["name"] = "Great Banquet of the Wok",
+							["recipeID"] = 125595
 						},
 						{
-							["recipeID"] = 104303--[[Sea Mist Rice Noodles]]
+							["name"] = "Sauteed Carrots",
+							["recipeID"] = 104301
 						},
 						{
-							["recipeID"] = 145305--[[Seasoned Pomfruit Slices]]
+							["name"] = "Sea Mist Rice Noodles",
+							["recipeID"] = 104303
 						},
 						{
-							["recipeID"] = 104302--[[Valley Stir Fry]]
+							["name"] = "Seasoned Pomfruit Slices",
+							["recipeID"] = 145305
 						},
 						{
-							["recipeID"] = 104301--[[Sauteed Carrots]]
+							["name"] = "Valley Stir Fry",
+							["recipeID"] = 104302
 						}
 					}
 				},
 				{
-					["categoryID"] = 66--[[Way of the Pot]],
+					["name"] = "Way of the Pot",
+					["categoryID"] = 66,
 					["g"] = {
 						{
-							["recipeID"] = 125596--[[Banquet of the Pot]]
+							["name"] = "Banquet of the Pot",
+							["recipeID"] = 125596
 						},
 						{
-							["recipeID"] = 125597--[[Great Banquet of the Pot]]
+							["name"] = "Braised Turtle",
+							["recipeID"] = 104305
 						},
 						{
-							["recipeID"] = 104306--[[Mogu Fish Stew]]
+							["name"] = "Great Banquet of the Pot",
+							["recipeID"] = 125597
 						},
 						{
-							["recipeID"] = 145307--[[Spiced Blossom Soup]]
+							["name"] = "Mogu Fish Stew",
+							["recipeID"] = 104306
 						},
 						{
-							["recipeID"] = 104305--[[Braised Turtle]]
+							["name"] = "Spiced Blossom Soup",
+							["recipeID"] = 145307
 						},
 						{
-							["recipeID"] = 104304--[[Swirling Mist Soup]]
+							["name"] = "Swirling Mist Soup",
+							["recipeID"] = 104304
 						}
 					}
 				},
 				{
-					["categoryID"] = 67--[[Way of the Steamer]],
+					["name"] = "Way of the Steamer",
+					["categoryID"] = 67,
 					["g"] = {
 						{
-							["recipeID"] = 125598--[[Banquet of the Steamer]]
+							["name"] = "Banquet of the Steamer",
+							["recipeID"] = 125598
 						},
 						{
-							["recipeID"] = 145309--[[Farmer's Delight]]
+							["name"] = "Farmer's Delight",
+							["recipeID"] = 145309
 						},
 						{
-							["recipeID"] = 125599--[[Great Banquet of the Steamer]]
+							["name"] = "Fire Spirit Salmon",
+							["recipeID"] = 104308
 						},
 						{
-							["recipeID"] = 104309--[[Steamed Crab Surprise]]
+							["name"] = "Great Banquet of the Steamer",
+							["recipeID"] = 125599
 						},
 						{
-							["recipeID"] = 104308--[[Fire Spirit Salmon]]
+							["name"] = "Shrimp Dumplings",
+							["recipeID"] = 104307
 						},
 						{
-							["recipeID"] = 104307--[[Shrimp Dumplings]]
+							["name"] = "Steamed Crab Surprise",
+							["recipeID"] = 104309
 						}
 					}
 				},
 				{
-					["categoryID"] = 68--[[Way of the Oven]],
+					["name"] = "Way of the Oven",
+					["categoryID"] = 68,
 					["g"] = {
 						{
-							["recipeID"] = 125600--[[Banquet of the Oven]]
+							["name"] = "Banquet of the Oven",
+							["recipeID"] = 125600
 						},
 						{
-							["recipeID"] = 104312--[[Chun Tian Spring Rolls]]
+							["name"] = "Chun Tian Spring Rolls",
+							["recipeID"] = 104312
 						},
 						{
-							["recipeID"] = 125601--[[Great Banquet of the Oven]]
+							["name"] = "Great Banquet of the Oven",
+							["recipeID"] = 125601
 						},
 						{
-							["recipeID"] = 145310--[[Stuffed Lushrooms]]
+							["name"] = "Stuffed Lushrooms",
+							["recipeID"] = 145310
 						},
 						{
-							["recipeID"] = 104311--[[Twin Fish Platter]]
+							["name"] = "Twin Fish Platter",
+							["recipeID"] = 104311
 						},
 						{
-							["recipeID"] = 104310--[[Wildfowl Roast]]
+							["name"] = "Wildfowl Roast",
+							["recipeID"] = 104310
 						}
 					}
 				},
 				{
-					["categoryID"] = 69--[[Way of the Brew]],
+					["name"] = "Way of the Brew",
+					["categoryID"] = 69,
 					["g"] = {
 						{
-							["recipeID"] = 125602--[[Banquet of the Brew]]
+							["name"] = "Banana Infused Rum",
+							["recipeID"] = 126655
 						},
 						{
-							["recipeID"] = 125603--[[Great Banquet of the Brew]]
+							["name"] = "Banquet of the Brew",
+							["recipeID"] = 125602
 						},
 						{
-							["recipeID"] = 124054--[[Mad Brewer's Breakfast]]
+							["name"] = "Four Senses Brew",
+							["recipeID"] = 126654
 						},
 						{
-							["recipeID"] = 126655--[[Banana Infused Rum]]
+							["name"] = "Ginseng Tea",
+							["recipeID"] = 124052
 						},
 						{
-							["recipeID"] = 126654--[[Four Senses Brew]]
+							["name"] = "Great Banquet of the Brew",
+							["recipeID"] = 125603
 						},
 						{
-							["recipeID"] = 124053--[[Jade Witch Brew]]
+							["name"] = "Jade Witch Brew",
+							["recipeID"] = 124053
 						},
 						{
-							["recipeID"] = 124052--[[Ginseng Tea]]
+							["name"] = "Mad Brewer's Breakfast",
+							["recipeID"] = 124054
 						}
 					}
 				},
 				{
-					["categoryID"] = 63--[[Everyday Cooking]],
+					["name"] = "Everyday Cooking",
+					["categoryID"] = 63,
 					["g"] = {
 						{
-							["recipeID"] = 145061--[[Deluxe Noodle Cart Kit]]
+							["name"] = "Blanched Needle Mushrooms",
+							["recipeID"] = 124233
 						},
 						{
-							["recipeID"] = 145170--[[Grand Deluxe Noodle Cart Kit]]
+							["name"] = "Boiled Silkworm Pupa",
+							["recipeID"] = 124228
 						},
 						{
-							["recipeID"] = 145167--[[Grand Noodle Cart Kit]]
+							["name"] = "Deluxe Noodle Cart Kit",
+							["recipeID"] = 145061
 						},
 						{
-							["recipeID"] = 145197--[[Grand Pandaren Treasure Noodle Cart Kit]]
+							["name"] = "Dried Needle Mushrooms",
+							["recipeID"] = 124227
 						},
 						{
-							["recipeID"] = 105194--[[Great Pandaren Banquet]]
+							["name"] = "Dried Peaches",
+							["recipeID"] = 124226
 						},
 						{
-							["recipeID"] = 145308--[[Mango Ice]]
+							["name"] = "Fish Cake",
+							["recipeID"] = 104297
 						},
 						{
-							["recipeID"] = 145038--[[Noodle Cart Kit]]
+							["name"] = "Golden Carp Consomme",
+							["recipeID"] = 104237
 						},
 						{
-							["recipeID"] = 105190--[[Pandaren Banquet]]
+							["name"] = "Grand Deluxe Noodle Cart Kit",
+							["recipeID"] = 145170
 						},
 						{
-							["recipeID"] = 145062--[[Pandaren Treasure Noodle Cart Kit]]
+							["name"] = "Grand Noodle Cart Kit",
+							["recipeID"] = 145167
 						},
 						{
-							["recipeID"] = 125120--[[Spicy Salmon]]
+							["name"] = "Grand Pandaren Treasure Noodle Cart Kit",
+							["recipeID"] = 145197
 						},
 						{
-							["recipeID"] = 125123--[[Spicy Vegetable Chips]]
+							["name"] = "Great Pandaren Banquet",
+							["recipeID"] = 105194
 						},
 						{
-							["recipeID"] = 125122--[[Rice Pudding]]
+							["name"] = "Green Curry Fish",
+							["recipeID"] = 124231
 						},
 						{
-							["recipeID"] = 124032--[[Krasarang Fritters]]
+							["name"] = "Krasarang Fritters",
+							["recipeID"] = 124032
 						},
 						{
-							["recipeID"] = 124029--[[Viseclaw Soup]]
+							["name"] = "Mango Ice",
+							["recipeID"] = 145308
 						},
 						{
-							["recipeID"] = 124233--[[Blanched Needle Mushrooms]]
+							["name"] = "Noodle Cart Kit",
+							["recipeID"] = 145038
 						},
 						{
-							["recipeID"] = 124231--[[Green Curry Fish]]
+							["name"] = "Pandaren Banquet",
+							["recipeID"] = 105190
 						},
 						{
-							["recipeID"] = 124232--[[Peach Pie]]
+							["name"] = "Pandaren Treasure Noodle Cart Kit",
+							["recipeID"] = 145062
 						},
 						{
-							["recipeID"] = 125080--[[Pearl Milk Tea]]
+							["name"] = "Peach Pie",
+							["recipeID"] = 124232
 						},
 						{
-							["recipeID"] = 124229--[[Red Bean Bun]]
+							["name"] = "Pearl Milk Tea",
+							["recipeID"] = 125080
 						},
 						{
-							["recipeID"] = 124234--[[Skewered Peanut Chicken]]
+							["name"] = "Perfectly Cooked Instant Noodles",
+							["recipeID"] = 125067
 						},
 						{
-							["recipeID"] = 124230--[[Tangy Yogurt]]
+							["name"] = "Pounded Rice Cake",
+							["recipeID"] = 124223
 						},
 						{
-							["recipeID"] = 125121--[[Wildfowl Ginseng Soup]]
+							["name"] = "Red Bean Bun",
+							["recipeID"] = 124229
 						},
 						{
-							["recipeID"] = 124228--[[Boiled Silkworm Pupa]]
+							["name"] = "Rice Pudding",
+							["recipeID"] = 125122
 						},
 						{
-							["recipeID"] = 124227--[[Dried Needle Mushrooms]]
+							["name"] = "Roasted Barley Tea",
+							["recipeID"] = 125078
 						},
 						{
-							["recipeID"] = 124226--[[Dried Peaches]]
+							["name"] = "Skewered Peanut Chicken",
+							["recipeID"] = 124234
 						},
 						{
-							["recipeID"] = 104297--[[Fish Cake]]
+							["name"] = "Sliced Peaches",
+							["recipeID"] = 125117
 						},
 						{
-							["recipeID"] = 104237--[[Golden Carp Consomme]]
+							["name"] = "Spicy Salmon",
+							["recipeID"] = 125120
 						},
 						{
-							["recipeID"] = 125067--[[Perfectly Cooked Instant Noodles]]
+							["name"] = "Spicy Vegetable Chips",
+							["recipeID"] = 125123
 						},
 						{
-							["recipeID"] = 124223--[[Pounded Rice Cake]]
+							["name"] = "Tangy Yogurt",
+							["recipeID"] = 124230
 						},
 						{
-							["recipeID"] = 125078--[[Roasted Barley Tea]]
+							["name"] = "Toasted Fish Jerky",
+							["recipeID"] = 124225
 						},
 						{
-							["recipeID"] = 125117--[[Sliced Peaches]]
+							["name"] = "Viseclaw Soup",
+							["recipeID"] = 124029
 						},
 						{
-							["recipeID"] = 124225--[[Toasted Fish Jerky]]
+							["name"] = "Wildfowl Ginseng Soup",
+							["recipeID"] = 125121
 						},
 						{
-							["recipeID"] = 124224--[[Yak Cheese Curds]]
+							["name"] = "Yak Cheese Curds",
+							["recipeID"] = 124224
 						}
 					}
 				}
 			}
 		},
 		{
-			["categoryID"] = 75--[[Cataclysm Recipes]],
+			["name"] = "Cataclysm Recipes",
+			["categoryID"] = 75,
 			["g"] = {
 				{
-					["categoryID"] = 1020--[[Everyday Cooking]],
+					["name"] = "Everyday Cooking",
+					["categoryID"] = 1020,
 					["g"] = {
 						{
-							["recipeID"] = 88003--[[Baked Rockfish]]
+							["name"] = "Baked Rockfish",
+							["recipeID"] = 88003
 						},
 						{
-							["recipeID"] = 88004--[[Basilisk Liverdog]]
+							["name"] = "Basilisk Liverdog",
+							["recipeID"] = 88004
 						},
 						{
-							["recipeID"] = 88005--[[Beer-Basted Crocolisk]]
+							["name"] = "Beer-Basted Crocolisk",
+							["recipeID"] = 88005
 						},
 						{
-							["recipeID"] = 88034--[[Blackbelly Sushi]]
+							["name"] = "Blackbelly Sushi",
+							["recipeID"] = 88034
 						},
 						{
-							["recipeID"] = 88011--[[Broiled Dragon Feast]]
+							["name"] = "Blackened Surprise",
+							["recipeID"] = 88006
 						},
 						{
-							["recipeID"] = 88014--[[Crocolisk Au Gratin]]
+							["name"] = "Broiled Dragon Feast",
+							["recipeID"] = 88011
 						},
 						{
-							["recipeID"] = 88016--[[Delicious Sagefish Tail]]
+							["name"] = "Broiled Mountain Trout",
+							["recipeID"] = 88012
 						},
 						{
-							["recipeID"] = 88019--[[Fortune Cookie]]
+							["name"] = "Chocolate Cookie",
+							["recipeID"] = 88013
 						},
 						{
-							["recipeID"] = 88020--[[Grilled Dragon]]
+							["name"] = "Crocolisk Au Gratin",
+							["recipeID"] = 88014
 						},
 						{
-							["recipeID"] = 88025--[[Lavascale Minestrone]]
+							["name"] = "Delicious Sagefish Tail",
+							["recipeID"] = 88016
 						},
 						{
-							["recipeID"] = 88031--[[Mushroom Sauce Mudfish]]
+							["name"] = "Fish Fry",
+							["recipeID"] = 88018
 						},
 						{
-							["recipeID"] = 88036--[[Seafood Magnifique Feast]]
+							["name"] = "Fortune Cookie",
+							["recipeID"] = 88019
 						},
 						{
-							["recipeID"] = 88039--[[Severed Sagefish Head]]
+							["name"] = "Grilled Dragon",
+							["recipeID"] = 88020
 						},
 						{
-							["recipeID"] = 88042--[[Skewered Eel]]
+							["name"] = "Hearty Seafood Soup",
+							["recipeID"] = 88021
 						},
 						{
-							["recipeID"] = 88013--[[Chocolate Cookie]]
+							["name"] = "Lavascale Fillet",
+							["recipeID"] = 88024
 						},
 						{
-							["recipeID"] = 88018--[[Fish Fry]]
+							["name"] = "Lavascale Minestrone",
+							["recipeID"] = 88025
 						},
 						{
-							["recipeID"] = 96133--[[Scalding Murglesnout]]
+							["name"] = "Lightly Fried Lurker",
+							["recipeID"] = 88028
 						},
 						{
-							["recipeID"] = 88021--[[Hearty Seafood Soup]]
+							["name"] = "Lurker Lunch",
+							["recipeID"] = 88030
 						},
 						{
-							["recipeID"] = 88033--[[Pickled Guppy]]
+							["name"] = "Mushroom Sauce Mudfish",
+							["recipeID"] = 88031
 						},
 						{
-							["recipeID"] = 88046--[[Tender Baked Turtle]]
+							["name"] = "Pickled Guppy",
+							["recipeID"] = 88033
 						},
 						{
-							["recipeID"] = 88012--[[Broiled Mountain Trout]]
+							["name"] = "Salted Eye",
+							["recipeID"] = 88035
 						},
 						{
-							["recipeID"] = 88024--[[Lavascale Fillet]]
+							["name"] = "Scalding Murglesnout",
+							["recipeID"] = 96133
 						},
 						{
-							["recipeID"] = 88028--[[Lightly Fried Lurker]]
+							["name"] = "Seafood Magnifique Feast",
+							["recipeID"] = 88036
 						},
 						{
-							["recipeID"] = 88030--[[Lurker Lunch]]
+							["name"] = "Seasoned Crab",
+							["recipeID"] = 88037
 						},
 						{
-							["recipeID"] = 88035--[[Salted Eye]]
+							["name"] = "Severed Sagefish Head",
+							["recipeID"] = 88039
 						},
 						{
-							["recipeID"] = 88037--[[Seasoned Crab]]
+							["name"] = "Skewered Eel",
+							["recipeID"] = 88042
 						},
 						{
-							["recipeID"] = 88047--[[Whitecrest Gumbo]]
+							["name"] = "Tender Baked Turtle",
+							["recipeID"] = 88046
 						},
 						{
-							["recipeID"] = 88006--[[Blackened Surprise]]
+							["name"] = "Whitecrest Gumbo",
+							["recipeID"] = 88047
 						}
 					}
 				},
 				{
-					["categoryID"] = 1021--[[Delightful Drinks]],
+					["name"] = "Delightful Drinks",
+					["categoryID"] = 1021,
 					["g"] = {
 						{
-							["recipeID"] = 88044--[[South Island Iced Tea]]
+							["name"] = "Darkbrew Lager",
+							["recipeID"] = 88015
 						},
 						{
-							["recipeID"] = 88045--[[Starfire Espresso]]
+							["name"] = "Highland Spirits",
+							["recipeID"] = 88022
 						},
 						{
-							["recipeID"] = 88022--[[Highland Spirits]]
+							["name"] = "South Island Iced Tea",
+							["recipeID"] = 88044
 						},
 						{
-							["recipeID"] = 88015--[[Darkbrew Lager]]
+							["name"] = "Starfire Espresso",
+							["recipeID"] = 88045
 						}
 					}
 				},
 				{
-					["categoryID"] = 1022--[[Lures]],
+					["name"] = "Lures",
+					["categoryID"] = 1022,
 					["g"] = {
 						{
-							["recipeID"] = 88017--[[Feathered Lure]]
+							["name"] = "Feathered Lure",
+							["recipeID"] = 88017
 						}
 					}
 				}
 			}
 		},
 		{
-			["categoryID"] = 74--[[Recipes of the Cold North]],
+			["name"] = "Recipes of the Cold North",
+			["categoryID"] = 74,
 			["g"] = {
 				{
-					["categoryID"] = 1025--[[Everyday Cooking]],
+					["name"] = "Everyday Cooking",
+					["categoryID"] = 1025,
 					["g"] = {
 						{
-							["recipeID"] = 62350--[[Worg Tartare]]
+							["name"] = "Bad Clams",
+							["recipeID"] = 58523
 						},
 						{
-							["recipeID"] = 57441--[[Blackened Dragonfin]]
+							["name"] = "Baked Manta Ray",
+							["recipeID"] = 45569
 						},
 						{
-							["recipeID"] = 57438--[[Blackened Worg Steak]]
+							["name"] = "Black Jelly",
+							["recipeID"] = 64358
 						},
 						{
-							["recipeID"] = 57435--[[Critter Bites]]
+							["name"] = "Blackened Dragonfin",
+							["recipeID"] = 57441
 						},
 						{
-							["recipeID"] = 57439--[[Cuttlesteak]]
+							["name"] = "Blackened Worg Steak",
+							["recipeID"] = 57438
 						},
 						{
-							["recipeID"] = 57442--[[Dragonfin Filet]]
+							["name"] = "Critter Bites",
+							["recipeID"] = 57435
 						},
 						{
-							["recipeID"] = 45568--[[Firecracker Salmon]]
+							["name"] = "Cuttlesteak",
+							["recipeID"] = 57439
 						},
 						{
-							["recipeID"] = 57423--[[Fish Feast]]
+							["name"] = "Dalaran Clam Chowder",
+							["recipeID"] = 58065
 						},
 						{
-							["recipeID"] = 58527--[[Gigantic Feast]]
+							["name"] = "Dragonfin Filet",
+							["recipeID"] = 57442
 						},
 						{
-							["recipeID"] = 57436--[[Hearty Rhino]]
+							["name"] = "Firecracker Salmon",
+							["recipeID"] = 45568
 						},
 						{
-							["recipeID"] = 45570--[[Imperial Manta Steak]]
+							["name"] = "Fish Feast",
+							["recipeID"] = 57423
 						},
 						{
-							["recipeID"] = 45555--[[Mega Mammoth Meal]]
+							["name"] = "Gigantic Feast",
+							["recipeID"] = 58527
 						},
 						{
-							["recipeID"] = 45559--[[Mighty Rhino Dogs]]
+							["name"] = "Great Feast",
+							["recipeID"] = 45554
 						},
 						{
-							["recipeID"] = 45567--[[Poached Northern Sculpin]]
+							["name"] = "Grilled Bonescale",
+							["recipeID"] = 45561
 						},
 						{
-							["recipeID"] = 57434--[[Rhinolicious Wormsteak]]
+							["name"] = "Grilled Sculpin",
+							["recipeID"] = 45563
 						},
 						{
-							["recipeID"] = 58528--[[Small Feast]]
+							["name"] = "Haunted Herring",
+							["recipeID"] = 58525
 						},
 						{
-							["recipeID"] = 57437--[[Snapper Extreme]]
+							["name"] = "Hearty Rhino",
+							["recipeID"] = 57436
 						},
 						{
-							["recipeID"] = 57440--[[Spiced Mammoth Treats]]
+							["name"] = "Imperial Manta Steak",
+							["recipeID"] = 45570
 						},
 						{
-							["recipeID"] = 45557--[[Spiced Worm Burger]]
+							["name"] = "Kungaloosh",
+							["recipeID"] = 53056
 						},
 						{
-							["recipeID"] = 45571--[[Spicy Blue Nettlefish]]
+							["name"] = "Last Week's Mammoth",
+							["recipeID"] = 58521
 						},
 						{
-							["recipeID"] = 57433--[[Spicy Fried Herring]]
+							["name"] = "Mammoth Meal",
+							["recipeID"] = 45549
 						},
 						{
-							["recipeID"] = 45556--[[Tender Shoveltusk Steak]]
+							["name"] = "Mega Mammoth Meal",
+							["recipeID"] = 45555
 						},
 						{
-							["recipeID"] = 57443--[[Tracker Snacks]]
+							["name"] = "Mighty Rhino Dogs",
+							["recipeID"] = 45559
 						},
 						{
-							["recipeID"] = 45558--[[Very Burnt Worg]]
+							["name"] = "Northern Stew",
+							["recipeID"] = 57421
 						},
 						{
-							["recipeID"] = 64358--[[Black Jelly]]
+							["name"] = "Pickled Fangtooth",
+							["recipeID"] = 45566
 						},
 						{
-							["recipeID"] = 45554--[[Great Feast]]
+							["name"] = "Poached Nettlefish",
+							["recipeID"] = 45565
 						},
 						{
-							["recipeID"] = 45569--[[Baked Manta Ray]]
+							["name"] = "Poached Northern Sculpin",
+							["recipeID"] = 45567
 						},
 						{
-							["recipeID"] = 58065--[[Dalaran Clam Chowder]]
+							["name"] = "Rhino Dogs",
+							["recipeID"] = 45553
 						},
 						{
-							["recipeID"] = 45563--[[Grilled Sculpin]]
+							["name"] = "Rhinolicious Wormsteak",
+							["recipeID"] = 57434
 						},
 						{
-							["recipeID"] = 45549--[[Mammoth Meal]]
+							["name"] = "Roasted Worg",
+							["recipeID"] = 45552
 						},
 						{
-							["recipeID"] = 45566--[[Pickled Fangtooth]]
+							["name"] = "Sauteed Goby",
+							["recipeID"] = 45562
 						},
 						{
-							["recipeID"] = 45565--[[Poached Nettlefish]]
+							["name"] = "Shoveltusk Steak",
+							["recipeID"] = 45550
 						},
 						{
-							["recipeID"] = 45553--[[Rhino Dogs]]
+							["name"] = "Small Feast",
+							["recipeID"] = 58528
 						},
 						{
-							["recipeID"] = 45552--[[Roasted Worg]]
+							["name"] = "Smoked Rockfin",
+							["recipeID"] = 45560
 						},
 						{
-							["recipeID"] = 45550--[[Shoveltusk Steak]]
+							["name"] = "Smoked Salmon",
+							["recipeID"] = 45564
 						},
 						{
-							["recipeID"] = 45564--[[Smoked Salmon]]
+							["name"] = "Snapper Extreme",
+							["recipeID"] = 57437
 						},
 						{
-							["recipeID"] = 45551--[[Worm Delight]]
+							["name"] = "Spiced Mammoth Treats",
+							["recipeID"] = 57440
 						},
 						{
-							["recipeID"] = 53056--[[Kungaloosh]]
+							["name"] = "Spiced Worm Burger",
+							["recipeID"] = 45557
 						},
 						{
-							["recipeID"] = 58523--[[Bad Clams]]
+							["name"] = "Spicy Blue Nettlefish",
+							["recipeID"] = 45571
 						},
 						{
-							["recipeID"] = 58525--[[Haunted Herring]]
+							["name"] = "Spicy Fried Herring",
+							["recipeID"] = 57433
 						},
 						{
-							["recipeID"] = 58521--[[Last Week's Mammoth]]
+							["name"] = "Tasty Cupcake",
+							["recipeID"] = 58512
 						},
 						{
-							["recipeID"] = 58512--[[Tasty Cupcake]]
+							["name"] = "Tender Shoveltusk Steak",
+							["recipeID"] = 45556
 						},
 						{
-							["recipeID"] = 45561--[[Grilled Bonescale]]
+							["name"] = "Tracker Snacks",
+							["recipeID"] = 57443
 						},
 						{
-							["recipeID"] = 57421--[[Northern Stew]]
+							["name"] = "Very Burnt Worg",
+							["recipeID"] = 45558
 						},
 						{
-							["recipeID"] = 45562--[[Sauteed Goby]]
+							["name"] = "Worg Tartare",
+							["recipeID"] = 62350
 						},
 						{
-							["recipeID"] = 45560--[[Smoked Rockfin]]
+							["name"] = "Worm Delight",
+							["recipeID"] = 45551
 						}
 					}
 				}
 			}
 		},
 		{
-			["categoryID"] = 73--[[Outlandish Dishes]],
+			["name"] = "Outlandish Dishes",
+			["categoryID"] = 73,
 			["g"] = {
 				{
-					["categoryID"] = 1024--[[Everyday Cooking]],
+					["name"] = "Everyday Cooking",
+					["categoryID"] = 1024,
 					["g"] = {
 						{
-							["recipeID"] = 42302--[[Fisherman's Feast]]
+							["name"] = "Blackened Basilisk",
+							["recipeID"] = 33286
 						},
 						{
-							["recipeID"] = 42305--[[Hot Buttered Trout]]
+							["name"] = "Blackened Sporefish",
+							["recipeID"] = 33292
 						},
 						{
-							["recipeID"] = 38868--[[Crunchy Serpent]]
+							["name"] = "Blackened Trout",
+							["recipeID"] = 33290
 						},
 						{
-							["recipeID"] = 38867--[[Mok'Nathal Shortribs]]
+							["name"] = "Broiled Bloodfin",
+							["recipeID"] = 43761
 						},
 						{
-							["recipeID"] = 33296--[[Spicy Crawdad]]
+							["name"] = "Buzzard Bites",
+							["recipeID"] = 33279
 						},
 						{
-							["recipeID"] = 33295--[[Golden Fish Sticks]]
+							["name"] = "Clam Bar",
+							["recipeID"] = 36210
 						},
 						{
-							["recipeID"] = 33287--[[Roasted Clefthoof]]
+							["name"] = "Crunchy Serpent",
+							["recipeID"] = 38868
 						},
 						{
-							["recipeID"] = 33289--[[Talbuk Steak]]
+							["name"] = "Feltail Delight",
+							["recipeID"] = 33291
 						},
 						{
-							["recipeID"] = 33288--[[Warp Burger]]
+							["name"] = "Fisherman's Feast",
+							["recipeID"] = 42302
 						},
 						{
-							["recipeID"] = 43772--[[Kibler's Bits]]
+							["name"] = "Golden Fish Sticks",
+							["recipeID"] = 33295
 						},
 						{
-							["recipeID"] = 33293--[[Grilled Mudfish]]
+							["name"] = "Grilled Mudfish",
+							["recipeID"] = 33293
 						},
 						{
-							["recipeID"] = 33294--[[Poached Bluefish]]
+							["name"] = "Hot Buttered Trout",
+							["recipeID"] = 42305
 						},
 						{
-							["recipeID"] = 43707--[[Skullfish Soup]]
+							["name"] = "Kibler's Bits",
+							["recipeID"] = 43772
 						},
 						{
-							["recipeID"] = 43765--[[Spicy Hot Talbuk]]
+							["name"] = "Mok'Nathal Shortribs",
+							["recipeID"] = 38867
 						},
 						{
-							["recipeID"] = 42296--[[Stewed Trout]]
+							["name"] = "Poached Bluefish",
+							["recipeID"] = 33294
 						},
 						{
-							["recipeID"] = 33286--[[Blackened Basilisk]]
+							["name"] = "Ravager Dog",
+							["recipeID"] = 33284
 						},
 						{
-							["recipeID"] = 33292--[[Blackened Sporefish]]
+							["name"] = "Roasted Clefthoof",
+							["recipeID"] = 33287
 						},
 						{
-							["recipeID"] = 33290--[[Blackened Trout]]
+							["name"] = "Skullfish Soup",
+							["recipeID"] = 43707
 						},
 						{
-							["recipeID"] = 43761--[[Broiled Bloodfin]]
+							["name"] = "Spicy Crawdad",
+							["recipeID"] = 33296
 						},
 						{
-							["recipeID"] = 33279--[[Buzzard Bites]]
+							["name"] = "Spicy Hot Talbuk",
+							["recipeID"] = 43765
 						},
 						{
-							["recipeID"] = 36210--[[Clam Bar]]
+							["name"] = "Stewed Trout",
+							["recipeID"] = 42296
 						},
 						{
-							["recipeID"] = 33291--[[Feltail Delight]]
+							["name"] = "Stormchops",
+							["recipeID"] = 43758
 						},
 						{
-							["recipeID"] = 33284--[[Ravager Dog]]
+							["name"] = "Talbuk Steak",
+							["recipeID"] = 33289
 						},
 						{
-							["recipeID"] = 43758--[[Stormchops]]
+							["name"] = "Warp Burger",
+							["recipeID"] = 33288
 						}
 					}
 				}
 			}
 		},
 		{
-			["categoryID"] = 72--[[Old World Recipes]],
+			["name"] = "Old World Recipes",
+			["categoryID"] = 72,
 			["g"] = {
 				{
-					["categoryID"] = 1023--[[Everyday Cooking]],
+					["name"] = "Everyday Cooking",
+					["categoryID"] = 1023,
 					["g"] = {
 						{
-							["recipeID"] = 25659--[[Dirge's Kickin' Chimaerok Chops]]
+							["name"] = "Baked Salmon",
+							["recipeID"] = 18247
 						},
 						{
-							["recipeID"] = 18247--[[Baked Salmon]]
+							["name"] = "Barbecued Buzzard Wing",
+							["recipeID"] = 4094
 						},
 						{
-							["recipeID"] = 18245--[[Lobster Stew]]
+							["name"] = "Bat Bites",
+							["recipeID"] = 33278
 						},
 						{
-							["recipeID"] = 18246--[[Mightfish Steak]]
+							["name"] = "Beer Basted Boar Ribs",
+							["recipeID"] = 2795
 						},
 						{
-							["recipeID"] = 22761--[[Runn Tum Tuber Surprise]]
+							["name"] = "Big Bear Steak",
+							["recipeID"] = 3397
 						},
 						{
-							["recipeID"] = 24801--[[Smoked Desert Dumplings]]
+							["name"] = "Blood Sausage",
+							["recipeID"] = 3371
 						},
 						{
-							["recipeID"] = 64054--[[Clamlette Magnifique]]
+							["name"] = "Boiled Clams",
+							["recipeID"] = 6499
 						},
 						{
-							["recipeID"] = 46684--[[Charred Bear Kabobs]]
+							["name"] = "Brilliant Smallfish",
+							["recipeID"] = 7751
 						},
 						{
-							["recipeID"] = 46688--[[Juicy Bear Burger]]
+							["name"] = "Bristle Whisker Catfish",
+							["recipeID"] = 7755
 						},
 						{
-							["recipeID"] = 18243--[[Nightfin Soup]]
+							["name"] = "Carrion Surprise",
+							["recipeID"] = 15863
 						},
 						{
-							["recipeID"] = 18244--[[Poached Sunscale Salmon]]
+							["name"] = "Charred Bear Kabobs",
+							["recipeID"] = 46684
 						},
 						{
-							["recipeID"] = 18240--[[Grilled Squid]]
+							["name"] = "Charred Wolf Meat",
+							["recipeID"] = 2538
 						},
 						{
-							["recipeID"] = 18242--[[Hot Smoked Bass]]
+							["name"] = "Clam Chowder",
+							["recipeID"] = 6501
 						},
 						{
-							["recipeID"] = 185705--[[Fancy Darkmoon Feast]]
+							["name"] = "Clamlette Magnifique",
+							["recipeID"] = 64054
 						},
 						{
-							["recipeID"] = 15933--[[Monster Omelet]]
+							["name"] = "Cooked Crab Claw",
+							["recipeID"] = 2545
 						},
 						{
-							["recipeID"] = 15915--[[Spiced Chili Crab]]
+							["name"] = "Cooked Glossy Mightfish",
+							["recipeID"] = 18239
 						},
 						{
-							["recipeID"] = 22480--[[Tender Wolf Steak]]
+							["name"] = "Coyote Steak",
+							["recipeID"] = 2541
 						},
 						{
-							["recipeID"] = 18239--[[Cooked Glossy Mightfish]]
+							["name"] = "Crab Cake",
+							["recipeID"] = 2544
 						},
 						{
-							["recipeID"] = 18241--[[Filet of Redgill]]
+							["name"] = "Crispy Bat Wing",
+							["recipeID"] = 15935
 						},
 						{
-							["recipeID"] = 18238--[[Spotted Yellowtail]]
+							["name"] = "Crispy Lizard Tail",
+							["recipeID"] = 6418
 						},
 						{
-							["recipeID"] = 20626--[[Undermine Clam Chowder]]
+							["name"] = "Crocolisk Gumbo",
+							["recipeID"] = 3373
 						},
 						{
-							["recipeID"] = 25954--[[Sagefish Delight]]
+							["name"] = "Crocolisk Steak",
+							["recipeID"] = 3370
 						},
 						{
-							["recipeID"] = 4094--[[Barbecued Buzzard Wing]]
+							["name"] = "Crunchy Spider Surprise",
+							["recipeID"] = 28267
 						},
 						{
-							["recipeID"] = 15863--[[Carrion Surprise]]
+							["name"] = "Curiously Tasty Omelet",
+							["recipeID"] = 3376
 						},
 						{
-							["recipeID"] = 7213--[[Giant Clam Scorcho]]
+							["name"] = "Delicious Chocolate Cake",
+							["recipeID"] = 43779
 						},
 						{
-							["recipeID"] = 15856--[[Hot Wolf Ribs]]
+							["name"] = "Dig Rat Stew",
+							["recipeID"] = 6417
 						},
 						{
-							["recipeID"] = 15861--[[Jungle Stew]]
+							["name"] = "Dirge's Kickin' Chimaerok Chops",
+							["recipeID"] = 25659
 						},
 						{
-							["recipeID"] = 20916--[[Mithril Head Trout]]
+							["name"] = "Dry Pork Ribs",
+							["recipeID"] = 2546
 						},
 						{
-							["recipeID"] = 15865--[[Mystery Stew]]
+							["name"] = "Fancy Darkmoon Feast",
+							["recipeID"] = 185705
 						},
 						{
-							["recipeID"] = 15855--[[Roast Raptor]]
+							["name"] = "Filet of Redgill",
+							["recipeID"] = 18241
 						},
 						{
-							["recipeID"] = 3400--[[Soothing Turtle Bisque]]
+							["name"] = "Fillet of Frenzy",
+							["recipeID"] = 6415
 						},
 						{
-							["recipeID"] = 15910--[[Heavy Kodo Stew]]
+							["name"] = "Giant Clam Scorcho",
+							["recipeID"] = 7213
 						},
 						{
-							["recipeID"] = 21175--[[Spider Sausage]]
+							["name"] = "Goblin Deviled Clams",
+							["recipeID"] = 6500
 						},
 						{
-							["recipeID"] = 7828--[[Rockscale Cod]]
+							["name"] = "Goldthorn Tea",
+							["recipeID"] = 13028
 						},
 						{
-							["recipeID"] = 3399--[[Tasty Lion Steak]]
+							["name"] = "Gooey Spider Cake",
+							["recipeID"] = 3377
 						},
 						{
-							["recipeID"] = 3398--[[Hot Lion Chops]]
+							["name"] = "Goretusk Liver Pie",
+							["recipeID"] = 2542
 						},
 						{
-							["recipeID"] = 3376--[[Curiously Tasty Omelet]]
+							["name"] = "Grilled Squid",
+							["recipeID"] = 18240
 						},
 						{
-							["recipeID"] = 13028--[[Goldthorn Tea]]
+							["name"] = "Heavy Crocolisk Stew",
+							["recipeID"] = 24418
 						},
 						{
-							["recipeID"] = 6500--[[Goblin Deviled Clams]]
+							["name"] = "Heavy Kodo Stew",
+							["recipeID"] = 15910
 						},
 						{
-							["recipeID"] = 15853--[[Lean Wolf Steak]]
+							["name"] = "Herb Baked Egg",
+							["recipeID"] = 8604
 						},
 						{
-							["recipeID"] = 24418--[[Heavy Crocolisk Stew]]
+							["name"] = "Hot Lion Chops",
+							["recipeID"] = 3398
 						},
 						{
-							["recipeID"] = 3373--[[Crocolisk Gumbo]]
+							["name"] = "Hot Smoked Bass",
+							["recipeID"] = 18242
 						},
 						{
-							["recipeID"] = 3397--[[Big Bear Steak]]
+							["name"] = "Hot Wolf Ribs",
+							["recipeID"] = 15856
 						},
 						{
-							["recipeID"] = 3377--[[Gooey Spider Cake]]
+							["name"] = "Juicy Bear Burger",
+							["recipeID"] = 46688
 						},
 						{
-							["recipeID"] = 6419--[[Lean Venison]]
+							["name"] = "Jungle Stew",
+							["recipeID"] = 15861
 						},
 						{
-							["recipeID"] = 7755--[[Bristle Whisker Catfish]]
+							["name"] = "Kaldorei Spider Kabob",
+							["recipeID"] = 6412
 						},
 						{
-							["recipeID"] = 6418--[[Crispy Lizard Tail]]
+							["name"] = "Lean Venison",
+							["recipeID"] = 6419
 						},
 						{
-							["recipeID"] = 2549--[[Seasoned Wolf Kabob]]
+							["name"] = "Lean Wolf Steak",
+							["recipeID"] = 15853
 						},
 						{
-							["recipeID"] = 2547--[[Redridge Goulash]]
+							["name"] = "Lemon Herb Filet",
+							["recipeID"] = 185704
 						},
 						{
-							["recipeID"] = 185708--[[Sugar-Crusted Fish Feast]]
+							["name"] = "Lobster Stew",
+							["recipeID"] = 18245
 						},
 						{
-							["recipeID"] = 6501--[[Clam Chowder]]
+							["name"] = "Loch Frenzy Delight",
+							["recipeID"] = 7754
 						},
 						{
-							["recipeID"] = 6417--[[Dig Rat Stew]]
+							["name"] = "Longjaw Mud Snapper",
+							["recipeID"] = 7753
 						},
 						{
-							["recipeID"] = 3372--[[Murloc Fin Soup]]
+							["name"] = "Lynx Steak",
+							["recipeID"] = 33276
 						},
 						{
-							["recipeID"] = 2548--[[Succulent Pork Ribs]]
+							["name"] = "Mightfish Steak",
+							["recipeID"] = 18246
 						},
 						{
-							["recipeID"] = 2545--[[Cooked Crab Claw]]
+							["name"] = "Mithril Head Trout",
+							["recipeID"] = 20916
 						},
 						{
-							["recipeID"] = 25704--[[Smoked Sagefish]]
+							["name"] = "Monster Omelet",
+							["recipeID"] = 15933
 						},
 						{
-							["recipeID"] = 3370--[[Crocolisk Steak]]
+							["name"] = "Murloc Fin Soup",
+							["recipeID"] = 3372
 						},
 						{
-							["recipeID"] = 2546--[[Dry Pork Ribs]]
+							["name"] = "Mystery Stew",
+							["recipeID"] = 15865
 						},
 						{
-							["recipeID"] = 2543--[[Westfall Stew]]
+							["name"] = "Nightfin Soup",
+							["recipeID"] = 18243
 						},
 						{
-							["recipeID"] = 2544--[[Crab Cake]]
+							["name"] = "Poached Sunscale Salmon",
+							["recipeID"] = 18244
 						},
 						{
-							["recipeID"] = 3371--[[Blood Sausage]]
+							["name"] = "Rainbow Fin Albacore",
+							["recipeID"] = 7827
 						},
 						{
-							["recipeID"] = 28267--[[Crunchy Spider Surprise]]
+							["name"] = "Redridge Goulash",
+							["recipeID"] = 2547
 						},
 						{
-							["recipeID"] = 33278--[[Bat Bites]]
+							["name"] = "Roast Raptor",
+							["recipeID"] = 15855
 						},
 						{
-							["recipeID"] = 6499--[[Boiled Clams]]
+							["name"] = "Roasted Boar Meat",
+							["recipeID"] = 2540
 						},
 						{
-							["recipeID"] = 2541--[[Coyote Steak]]
+							["name"] = "Roasted Kodo Meat",
+							["recipeID"] = 6414
 						},
 						{
-							["recipeID"] = 6415--[[Fillet of Frenzy]]
+							["name"] = "Roasted Moongraze Tenderloin",
+							["recipeID"] = 33277
 						},
 						{
-							["recipeID"] = 2542--[[Goretusk Liver Pie]]
+							["name"] = "Rockscale Cod",
+							["recipeID"] = 7828
 						},
 						{
-							["recipeID"] = 7754--[[Loch Frenzy Delight]]
+							["name"] = "Runn Tum Tuber Surprise",
+							["recipeID"] = 22761
 						},
 						{
-							["recipeID"] = 7753--[[Longjaw Mud Snapper]]
+							["name"] = "Sagefish Delight",
+							["recipeID"] = 25954
 						},
 						{
-							["recipeID"] = 7827--[[Rainbow Fin Albacore]]
+							["name"] = "Scorpid Surprise",
+							["recipeID"] = 6413
 						},
 						{
-							["recipeID"] = 6416--[[Strider Stew]]
+							["name"] = "Seasoned Wolf Kabob",
+							["recipeID"] = 2549
 						},
 						{
-							["recipeID"] = 8607--[[Smoked Bear Meat]]
+							["name"] = "Slitherskin Mackerel",
+							["recipeID"] = 7752
 						},
 						{
-							["recipeID"] = 93741--[[Venison Jerky]]
+							["name"] = "Smoked Bear Meat",
+							["recipeID"] = 8607
 						},
 						{
-							["recipeID"] = 6414--[[Roasted Kodo Meat]]
+							["name"] = "Smoked Desert Dumplings",
+							["recipeID"] = 24801
 						},
 						{
-							["recipeID"] = 2795--[[Beer Basted Boar Ribs]]
+							["name"] = "Smoked Sagefish",
+							["recipeID"] = 25704
 						},
 						{
-							["recipeID"] = 185704--[[Lemon Herb Filet]]
+							["name"] = "Soothing Turtle Bisque",
+							["recipeID"] = 3400
 						},
 						{
-							["recipeID"] = 6413--[[Scorpid Surprise]]
+							["name"] = "Spice Bread",
+							["recipeID"] = 37836
 						},
 						{
-							["recipeID"] = 6412--[[Kaldorei Spider Kabob]]
+							["name"] = "Spiced Chili Crab",
+							["recipeID"] = 15915
 						},
 						{
-							["recipeID"] = 2539--[[Spiced Wolf Meat]]
+							["name"] = "Spiced Wolf Meat",
+							["recipeID"] = 2539
 						},
 						{
-							["recipeID"] = 33276--[[Lynx Steak]]
+							["name"] = "Spider Sausage",
+							["recipeID"] = 21175
 						},
 						{
-							["recipeID"] = 33277--[[Roasted Moongraze Tenderloin]]
+							["name"] = "Spotted Yellowtail",
+							["recipeID"] = 18238
 						},
 						{
-							["recipeID"] = 7751--[[Brilliant Smallfish]]
+							["name"] = "Strider Stew",
+							["recipeID"] = 6416
 						},
 						{
-							["recipeID"] = 2538--[[Charred Wolf Meat]]
+							["name"] = "Succulent Pork Ribs",
+							["recipeID"] = 2548
 						},
 						{
-							["recipeID"] = 15935--[[Crispy Bat Wing]]
+							["name"] = "Sugar-Crusted Fish Feast",
+							["recipeID"] = 185708
 						},
 						{
-							["recipeID"] = 8604--[[Herb Baked Egg]]
+							["name"] = "Tasty Lion Steak",
+							["recipeID"] = 3399
 						},
 						{
-							["recipeID"] = 2540--[[Roasted Boar Meat]]
+							["name"] = "Tender Wolf Steak",
+							["recipeID"] = 22480
 						},
 						{
-							["recipeID"] = 7752--[[Slitherskin Mackerel]]
+							["name"] = "Undermine Clam Chowder",
+							["recipeID"] = 20626
 						},
 						{
-							["recipeID"] = 43779--[[Delicious Chocolate Cake]]
+							["name"] = "Venison Jerky",
+							["recipeID"] = 93741
 						},
 						{
-							["recipeID"] = 37836--[[Spice Bread]]
+							["name"] = "Westfall Stew",
+							["recipeID"] = 2543
 						}
 					}
 				},
 				{
-					["categoryID"] = 58--[[Holiday Cooking]],
+					["name"] = "Holiday Cooking",
+					["categoryID"] = 58,
 					["g"] = {
 						{
-							["recipeID"] = 45022--[[Hot Apple Cider]]
+							["name"] = "Bread of the Dead",
+							["recipeID"] = 65454
 						},
 						{
-							["recipeID"] = 62051--[[Candied Sweet Potato]]
+							["name"] = "Candied Sweet Potato",
+							["recipeID"] = 62051
 						},
 						{
-							["recipeID"] = 62049--[[Cranberry Chutney]]
+							["name"] = "Candied Sweet Potato",
+							["recipeID"] = 66034
 						},
 						{
-							["recipeID"] = 62045--[[Slow-Roasted Turkey]]
+							["name"] = "Cranberry Chutney",
+							["recipeID"] = 62049
 						},
 						{
-							["recipeID"] = 62044--[[Pumpkin Pie]]
+							["name"] = "Cranberry Chutney",
+							["recipeID"] = 66035
 						},
 						{
-							["recipeID"] = 62050--[[Spice Bread Stuffing]]
+							["name"] = "Gingerbread Cookie",
+							["recipeID"] = 21143
 						},
 						{
-							["recipeID"] = 21144--[[Winter Veil Egg Nog]]
+							["name"] = "Hot Apple Cider",
+							["recipeID"] = 45022
 						},
 						{
-							["recipeID"] = 21143--[[Gingerbread Cookie]]
+							["name"] = "Pumpkin Pie",
+							["recipeID"] = 62044
 						},
 						{
-							["recipeID"] = 65454--[[Bread of the Dead]]
+							["name"] = "Pumpkin Pie",
+							["recipeID"] = 66036
 						},
 						{
-							["recipeID"] = 66034--[[Candied Sweet Potato]]
+							["name"] = "Slow-Roasted Turkey",
+							["recipeID"] = 62045
 						},
 						{
-							["recipeID"] = 66035--[[Cranberry Chutney]]
+							["name"] = "Slow-Roasted Turkey",
+							["recipeID"] = 66037
 						},
 						{
-							["recipeID"] = 66037--[[Slow-Roasted Turkey]]
+							["name"] = "Spice Bread Stuffing",
+							["recipeID"] = 62050
 						},
 						{
-							["recipeID"] = 66036--[[Pumpkin Pie]]
+							["name"] = "Spice Bread Stuffing",
+							["recipeID"] = 66038
 						},
 						{
-							["recipeID"] = 66038--[[Spice Bread Stuffing]]
+							["name"] = "Winter Veil Egg Nog",
+							["recipeID"] = 21144
 						}
 					}
 				},
 				{
-					["categoryID"] = 70--[[Unusual Delights]],
+					["name"] = "Unusual Delights",
+					["categoryID"] = 70,
 					["g"] = {
 						{
-							["recipeID"] = 15906--[[Dragonbreath Chili]]
+							["name"] = "Captain Rumsey's Lager",
+							["recipeID"] = 45695
 						},
 						{
-							["recipeID"] = 8238--[[Savory Deviate Delight]]
+							["name"] = "Dragonbreath Chili",
+							["recipeID"] = 15906
 						},
 						{
-							["recipeID"] = 9513--[[Thistle Tea]]
+							["name"] = "Savory Deviate Delight",
+							["recipeID"] = 8238
 						},
 						{
-							["recipeID"] = 45695--[[Captain Rumsey's Lager]]
+							["name"] = "Thistle Tea",
+							["recipeID"] = 9513
 						}
 					}
 				}

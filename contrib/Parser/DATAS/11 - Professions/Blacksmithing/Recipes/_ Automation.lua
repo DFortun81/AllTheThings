@@ -1,3389 +1,4829 @@
 --[[
 DO NOT MODIFY THIS FILE, I WILL CUT YOU.
  With love,
-    - CRIEVE
+    -CRIEVE
 ]]--
 profession(164, {	-- Blacksmithing
-	filter(200, {	-- Recipes
+	filter(200, {
 		{
-			["categoryID"] = 424--[[Training]],
+			["name"] = "Training",
+			["categoryID"] = 424,
 			["g"] = {
 				{
-					["recipeID"] = 184405--[[Brimstone-Covered Armguards]]
+					["name"] = "Brimstone-Covered Armguards",
+					["recipeID"] = 184405
 				},
 				{
-					["recipeID"] = 184407--[[Brimstone-Crusted Armguards]]
+					["name"] = "Brimstone-Crusted Armguards",
+					["recipeID"] = 184407
 				},
 				{
-					["recipeID"] = 184184--[[Dull Hard Leystone Armguards]]
+					["name"] = "Dull Hard Leystone Armguards",
+					["recipeID"] = 184184
 				},
 				{
-					["recipeID"] = 248869--[[Empyrial Back Plate]]
+					["name"] = "Empyrial Back Plate",
+					["recipeID"] = 248869
 				},
 				{
-					["recipeID"] = 248870--[[Empyrial Breastplate]]
+					["name"] = "Empyrial Breastplate",
+					["recipeID"] = 248870
 				},
 				{
-					["recipeID"] = 248867--[[Empyrial Chest Plate]]
+					["name"] = "Empyrial Chest Plate",
+					["recipeID"] = 248867
 				},
 				{
-					["recipeID"] = 248864--[[Empyrial Rivets]]
+					["name"] = "Empyrial Rivets",
+					["recipeID"] = 248864
 				},
 				{
-					["recipeID"] = 184403--[[Engraved Leystone Armguards]]
+					["name"] = "Engraved Leystone Armguards",
+					["recipeID"] = 184403
 				},
 				{
-					["recipeID"] = 183562--[[Handcrafted Leystone Gauntlets]]
+					["name"] = "Handcrafted Leystone Gauntlets",
+					["recipeID"] = 183562
 				},
 				{
-					["recipeID"] = 184344--[[Handmade Leystone Boots]]
+					["name"] = "Handmade Leystone Boots",
+					["recipeID"] = 184344
 				},
 				{
-					["recipeID"] = 184345--[[Handmade Leystone Helm]]
+					["name"] = "Handmade Leystone Helm",
+					["recipeID"] = 184345
 				},
 				{
-					["recipeID"] = 184185--[[Hard Leystone Armguards]]
+					["name"] = "Hard Leystone Armguards",
+					["recipeID"] = 184185
 				},
 				{
-					["recipeID"] = 184182--[[Hard Leystone Bar]]
+					["name"] = "Hard Leystone Bar",
+					["recipeID"] = 184309
 				},
 				{
-					["recipeID"] = 184309--[[Hard Leystone Bar]]
+					["name"] = "Hard Leystone Bar",
+					["recipeID"] = 184182
 				},
 				{
-					["recipeID"] = 184313--[[Hard Leystone Ingots]]
+					["name"] = "Hard Leystone Ingots",
+					["recipeID"] = 184313
 				},
 				{
-					["recipeID"] = 184315--[[Hard Leystone Nail]]
+					["name"] = "Hard Leystone Nail",
+					["recipeID"] = 184315
 				},
 				{
-					["recipeID"] = 184183--[[Heated Hard Leystone Bar]]
+					["name"] = "Heated Hard Leystone Bar",
+					["recipeID"] = 184183
 				},
 				{
-					["recipeID"] = 184314--[[Heated Hard Leystone Ingot]]
+					["name"] = "Heated Hard Leystone Ingot",
+					["recipeID"] = 184314
 				},
 				{
-					["recipeID"] = 183280--[[Heated Leystone Bar]]
+					["name"] = "Heated Leystone Bar",
+					["recipeID"] = 183280
 				},
 				{
-					["recipeID"] = 184216--[[Large Heated Scrap Metal]]
+					["name"] = "Large Heated Scrap Metal",
+					["recipeID"] = 184216
 				},
 				{
-					["recipeID"] = 183279--[[Leystone Bar]]
+					["name"] = "Leystone Bar",
+					["recipeID"] = 183279
 				},
 				{
-					["recipeID"] = 183281--[[Leystone Cuffplate]]
+					["name"] = "Leystone Cuffplate",
+					["recipeID"] = 183281
 				},
 				{
-					["recipeID"] = 184342--[[Leystone Dome]]
+					["name"] = "Leystone Dome",
+					["recipeID"] = 184342
 				},
 				{
-					["recipeID"] = 184341--[[Leystone Faceguard]]
+					["name"] = "Leystone Faceguard",
+					["recipeID"] = 184341
 				},
 				{
-					["recipeID"] = 183283--[[Leystone Fingerguard]]
+					["name"] = "Leystone Fingerguard",
+					["recipeID"] = 183283
 				},
 				{
-					["recipeID"] = 184339--[[Leystone Footguard]]
+					["name"] = "Leystone Footguard",
+					["recipeID"] = 184339
 				},
 				{
-					["recipeID"] = 184338--[[Leystone Heelguard]]
+					["name"] = "Leystone Heelguard",
+					["recipeID"] = 184338
 				},
 				{
-					["recipeID"] = 184343--[[Leystone Neckplate]]
+					["name"] = "Leystone Neckplate",
+					["recipeID"] = 184343
 				},
 				{
-					["recipeID"] = 184310--[[Leystone Shards]]
+					["name"] = "Leystone Shards",
+					["recipeID"] = 184310
 				},
 				{
-					["recipeID"] = 184337--[[Leystone Shinplate]]
+					["name"] = "Leystone Shinplate",
+					["recipeID"] = 184337
 				},
 				{
-					["recipeID"] = 183278--[[Leystone Slag]]
+					["name"] = "Leystone Slag",
+					["recipeID"] = 184181
 				},
 				{
-					["recipeID"] = 184308--[[Leystone Slag]]
+					["name"] = "Leystone Slag",
+					["recipeID"] = 184308
 				},
 				{
-					["recipeID"] = 184181--[[Leystone Slag]]
+					["name"] = "Leystone Slag",
+					["recipeID"] = 183278
 				},
 				{
-					["recipeID"] = 184340--[[Leystone Soleplate]]
+					["name"] = "Leystone Soleplate",
+					["recipeID"] = 184340
 				},
 				{
-					["recipeID"] = 184312--[[Lumps of Leystone Slag]]
+					["name"] = "Lumps of Leystone Slag",
+					["recipeID"] = 184312
 				},
 				{
-					["recipeID"] = 184408--[[Masterwork Leystone Armguards]]
+					["name"] = "Masterwork Leystone Armguards",
+					["recipeID"] = 184408
 				},
 				{
-					["recipeID"] = 184215--[[Medium Heated Scrap Metal]]
+					["name"] = "Medium Heated Scrap Metal",
+					["recipeID"] = 184215
 				},
 				{
-					["recipeID"] = 184404--[[Molten Brimstone]]
+					["name"] = "Molten Brimstone",
+					["recipeID"] = 184404
 				},
 				{
-					["recipeID"] = 184336--[[Red-Hot Leystone Bar]]
+					["name"] = "Red-Hot Leystone Bar",
+					["recipeID"] = 184336
 				},
 				{
-					["recipeID"] = 184220--[[Scrapmetal Cuffplate]]
+					["name"] = "Scrapmetal Cuffplate",
+					["recipeID"] = 184220
 				},
 				{
-					["recipeID"] = 184217--[[Scrapmetal Fingerplates]]
+					["name"] = "Scrapmetal Fingerplates",
+					["recipeID"] = 184217
 				},
 				{
-					["recipeID"] = 184219--[[Scrapmetal Handguard]]
+					["name"] = "Scrapmetal Handguard",
+					["recipeID"] = 184219
 				},
 				{
-					["recipeID"] = 184218--[[Scrapmetal Palmplate]]
+					["name"] = "Scrapmetal Palmplate",
+					["recipeID"] = 184218
 				},
 				{
-					["recipeID"] = 184214--[[Small Heated Scrap Metal]]
+					["name"] = "Small Heated Scrap Metal",
+					["recipeID"] = 184214
 				}
 			}
 		},
 		{
-			["categoryID"] = 542--[[Zandalari Blacksmithing]],
+			["name"] = "Zandalari Plans",
+			["categoryID"] = 542,
 			["g"] = {
 				{
-					["categoryID"] = 547--[[Armor]],
+					["name"] = "Armor",
+					["categoryID"] = 547,
 					["g"] = {
 						{
-							["recipeID"] = 253192--[[Emblazoned Stormsteel Girdle]]
+							["name"] = "Emblazoned Stormsteel Girdle",
+							["recipeID"] = 253192
 						},
 						{
-							["recipeID"] = 253188--[[Emblazoned Stormsteel Legguards]]
+							["name"] = "Emblazoned Stormsteel Legguards",
+							["recipeID"] = 253188
 						},
 						{
-							["recipeID"] = 253191--[[Imbued Stormsteel Girdle]]
+							["name"] = "Enhanced Stormsteel Girdle",
+							["recipeID"] = 285081
 						},
 						{
-							["recipeID"] = 253187--[[Imbued Stormsteel Legguards]]
+							["name"] = "Enhanced Stormsteel Legguards",
+							["recipeID"] = 285082
 						},
 						{
-							["recipeID"] = 253190--[[Stormsteel Girdle]]
+							["name"] = "Fortified Stormsteel Girdle",
+							["recipeID"] = 285089
 						},
 						{
-							["recipeID"] = 253186--[[Stormsteel Legguards]]
+							["name"] = "Fortified Stormsteel Legguards",
+							["recipeID"] = 285090
 						},
 						{
-							["recipeID"] = 269426--[[Honorable Combatant's Plate Boots]]
+							["name"] = "Honorable Combatant's Plate Armguards",
+							["nextRecipeID"] = 269452,
+							["recipeID"] = 269451
 						},
 						{
-							["recipeID"] = 269425--[[Honorable Combatant's Plate Boots]]
+							["name"] = "Honorable Combatant's Plate Armguards",
+							["nextRecipeID"] = 269453,
+							["previousRecipeID"] = 269451,
+							["recipeID"] = 269452
 						},
 						{
-							["recipeID"] = 269424--[[Honorable Combatant's Plate Boots]]
+							["name"] = "Honorable Combatant's Plate Armguards",
+							["previousRecipeID"] = 269452,
+							["recipeID"] = 269453
 						},
 						{
-							["recipeID"] = 269447--[[Honorable Combatant's Plate Greaves]]
+							["name"] = "Honorable Combatant's Plate Boots",
+							["nextRecipeID"] = 269425,
+							["recipeID"] = 269424
 						},
 						{
-							["recipeID"] = 269446--[[Honorable Combatant's Plate Greaves]]
+							["name"] = "Honorable Combatant's Plate Boots",
+							["nextRecipeID"] = 269426,
+							["previousRecipeID"] = 269424,
+							["recipeID"] = 269425
 						},
 						{
-							["recipeID"] = 269444--[[Honorable Combatant's Plate Greaves]]
+							["name"] = "Honorable Combatant's Plate Boots",
+							["previousRecipeID"] = 269425,
+							["recipeID"] = 269426
 						},
 						{
-							["recipeID"] = 269450--[[Honorable Combatant's Plate Waistguard]]
+							["name"] = "Honorable Combatant's Plate Gauntlets",
+							["nextRecipeID"] = 269422,
+							["recipeID"] = 269421
 						},
 						{
-							["recipeID"] = 269449--[[Honorable Combatant's Plate Waistguard]]
+							["name"] = "Honorable Combatant's Plate Gauntlets",
+							["nextRecipeID"] = 269423,
+							["previousRecipeID"] = 269421,
+							["recipeID"] = 269422
 						},
 						{
-							["recipeID"] = 269448--[[Honorable Combatant's Plate Waistguard]]
+							["name"] = "Honorable Combatant's Plate Gauntlets",
+							["previousRecipeID"] = 269422,
+							["recipeID"] = 269423
 						},
 						{
-							["recipeID"] = 269458--[[Honorable Combatant's Shield]]
+							["name"] = "Honorable Combatant's Plate Greaves",
+							["nextRecipeID"] = 269446,
+							["recipeID"] = 269444
 						},
 						{
-							["recipeID"] = 269459--[[Honorable Combatant's Shield]]
+							["name"] = "Honorable Combatant's Plate Greaves",
+							["nextRecipeID"] = 269447,
+							["previousRecipeID"] = 269444,
+							["recipeID"] = 269446
 						},
 						{
-							["recipeID"] = 269460--[[Honorable Combatant's Shield]]
+							["name"] = "Honorable Combatant's Plate Greaves",
+							["previousRecipeID"] = 269446,
+							["recipeID"] = 269447
 						},
 						{
-							["recipeID"] = 253117--[[Stormsteel Shield]]
+							["name"] = "Honorable Combatant's Plate Waistguard",
+							["nextRecipeID"] = 269449,
+							["recipeID"] = 269448
 						},
 						{
-							["recipeID"] = 253116--[[Stormsteel Shield]]
+							["name"] = "Honorable Combatant's Plate Waistguard",
+							["nextRecipeID"] = 269450,
+							["previousRecipeID"] = 269448,
+							["recipeID"] = 269449
 						},
 						{
-							["recipeID"] = 253118--[[Stormsteel Shield]]
+							["name"] = "Honorable Combatant's Plate Waistguard",
+							["previousRecipeID"] = 269449,
+							["recipeID"] = 269450
 						},
 						{
-							["recipeID"] = 269453--[[Honorable Combatant's Plate Armguards]]
+							["name"] = "Honorable Combatant's Shield",
+							["nextRecipeID"] = 269459,
+							["recipeID"] = 269458
 						},
 						{
-							["recipeID"] = 269423--[[Honorable Combatant's Plate Gauntlets]]
+							["name"] = "Honorable Combatant's Shield",
+							["nextRecipeID"] = 269460,
+							["previousRecipeID"] = 269458,
+							["recipeID"] = 269459
 						},
 						{
-							["recipeID"] = 269452--[[Honorable Combatant's Plate Armguards]]
+							["name"] = "Honorable Combatant's Shield",
+							["previousRecipeID"] = 269459,
+							["recipeID"] = 269460
 						},
 						{
-							["recipeID"] = 269422--[[Honorable Combatant's Plate Gauntlets]]
+							["name"] = "Imbued Stormsteel Girdle",
+							["recipeID"] = 253191
 						},
 						{
-							["recipeID"] = 269451--[[Honorable Combatant's Plate Armguards]]
+							["name"] = "Imbued Stormsteel Legguards",
+							["recipeID"] = 253187
 						},
 						{
-							["recipeID"] = 269421--[[Honorable Combatant's Plate Gauntlets]]
+							["name"] = "Monel-Hardened Armguards",
+							["recipeID"] = 253183
 						},
 						{
-							["recipeID"] = 253162--[[Monel-Hardened Breastplate]]
+							["name"] = "Monel-Hardened Boots",
+							["recipeID"] = 253165
 						},
 						{
-							["recipeID"] = 253174--[[Monel-Hardened Greaves]]
+							["name"] = "Monel-Hardened Breastplate",
+							["recipeID"] = 253162
 						},
 						{
-							["recipeID"] = 253177--[[Monel-Hardened Pauldrons]]
+							["name"] = "Monel-Hardened Gauntlets",
+							["recipeID"] = 253168
 						},
 						{
-							["recipeID"] = 253171--[[Monel-Hardened Helm]]
+							["name"] = "Monel-Hardened Greaves",
+							["recipeID"] = 253174
 						},
 						{
-							["recipeID"] = 253113--[[Monel-Hardened Shield]]
+							["name"] = "Monel-Hardened Helm",
+							["recipeID"] = 253171
 						},
 						{
-							["recipeID"] = 253165--[[Monel-Hardened Boots]]
+							["name"] = "Monel-Hardened Pauldrons",
+							["recipeID"] = 253177
 						},
 						{
-							["recipeID"] = 253168--[[Monel-Hardened Gauntlets]]
+							["name"] = "Monel-Hardened Shield",
+							["recipeID"] = 253113
 						},
 						{
-							["recipeID"] = 253180--[[Monel-Hardened Waistguard]]
+							["name"] = "Monel-Hardened Waistguard",
+							["recipeID"] = 253180
 						},
 						{
-							["recipeID"] = 253183--[[Monel-Hardened Armguards]]
+							["name"] = "Sinister Combatant's Plate Armguards",
+							["nextRecipeID"] = 283237,
+							["recipeID"] = 282889
+						},
+						{
+							["name"] = "Sinister Combatant's Plate Armguards",
+							["nextRecipeID"] = 283238,
+							["previousRecipeID"] = 282889,
+							["recipeID"] = 283237
+						},
+						{
+							["name"] = "Sinister Combatant's Plate Armguards",
+							["previousRecipeID"] = 283237,
+							["recipeID"] = 283238
+						},
+						{
+							["name"] = "Sinister Combatant's Plate Boots",
+							["nextRecipeID"] = 283250,
+							["recipeID"] = 283249
+						},
+						{
+							["name"] = "Sinister Combatant's Plate Boots",
+							["nextRecipeID"] = 283251,
+							["previousRecipeID"] = 283249,
+							["recipeID"] = 283250
+						},
+						{
+							["name"] = "Sinister Combatant's Plate Boots",
+							["previousRecipeID"] = 283250,
+							["recipeID"] = 283251
+						},
+						{
+							["name"] = "Sinister Combatant's Plate Gauntlets",
+							["nextRecipeID"] = 283247,
+							["recipeID"] = 283245
+						},
+						{
+							["name"] = "Sinister Combatant's Plate Gauntlets",
+							["nextRecipeID"] = 283248,
+							["previousRecipeID"] = 283245,
+							["recipeID"] = 283247
+						},
+						{
+							["name"] = "Sinister Combatant's Plate Gauntlets",
+							["previousRecipeID"] = 283247,
+							["recipeID"] = 283248
+						},
+						{
+							["name"] = "Sinister Combatant's Plate Greaves",
+							["nextRecipeID"] = 283243,
+							["recipeID"] = 283242
+						},
+						{
+							["name"] = "Sinister Combatant's Plate Greaves",
+							["nextRecipeID"] = 283244,
+							["previousRecipeID"] = 283242,
+							["recipeID"] = 283243
+						},
+						{
+							["name"] = "Sinister Combatant's Plate Greaves",
+							["previousRecipeID"] = 283243,
+							["recipeID"] = 283244
+						},
+						{
+							["name"] = "Sinister Combatant's Plate Waistguard",
+							["nextRecipeID"] = 283240,
+							["recipeID"] = 283239
+						},
+						{
+							["name"] = "Sinister Combatant's Plate Waistguard",
+							["nextRecipeID"] = 283241,
+							["previousRecipeID"] = 283239,
+							["recipeID"] = 283240
+						},
+						{
+							["name"] = "Sinister Combatant's Plate Waistguard",
+							["previousRecipeID"] = 283240,
+							["recipeID"] = 283241
+						},
+						{
+							["name"] = "Sinister Combatant's Shield",
+							["nextRecipeID"] = 282878,
+							["recipeID"] = 282876
+						},
+						{
+							["name"] = "Sinister Combatant's Shield",
+							["nextRecipeID"] = 282879,
+							["previousRecipeID"] = 282876,
+							["recipeID"] = 282878
+						},
+						{
+							["name"] = "Sinister Combatant's Shield",
+							["previousRecipeID"] = 282878,
+							["recipeID"] = 282879
+						},
+						{
+							["name"] = "Stormsteel Girdle",
+							["recipeID"] = 253190
+						},
+						{
+							["name"] = "Stormsteel Legguards",
+							["recipeID"] = 253186
+						},
+						{
+							["name"] = "Stormsteel Shield",
+							["nextRecipeID"] = 253117,
+							["recipeID"] = 253116
+						},
+						{
+							["name"] = "Stormsteel Shield",
+							["nextRecipeID"] = 253118,
+							["previousRecipeID"] = 253116,
+							["recipeID"] = 253117
+						},
+						{
+							["name"] = "Stormsteel Shield",
+							["previousRecipeID"] = 253117,
+							["recipeID"] = 253118
+						},
+						{
+							["name"] = "Tempered Stormsteel Girdle",
+							["recipeID"] = 285097
+						},
+						{
+							["name"] = "Tempered Stormsteel Legguards",
+							["recipeID"] = 285098
 						}
 					}
 				},
 				{
-					["categoryID"] = 548--[[Weapons]],
+					["name"] = "Weapons",
+					["categoryID"] = 548,
 					["g"] = {
 						{
-							["recipeID"] = 269470--[[Honorable Combatant's Deckpounder]]
+							["name"] = "Honorable Combatant's Cutlass",
+							["nextRecipeID"] = 269465,
+							["recipeID"] = 269464
 						},
 						{
-							["recipeID"] = 269471--[[Honorable Combatant's Deckpounder]]
+							["name"] = "Honorable Combatant's Cutlass",
+							["nextRecipeID"] = 269466,
+							["previousRecipeID"] = 269464,
+							["recipeID"] = 269465
 						},
 						{
-							["recipeID"] = 269472--[[Honorable Combatant's Deckpounder]]
+							["name"] = "Honorable Combatant's Cutlass",
+							["previousRecipeID"] = 269465,
+							["recipeID"] = 269466
 						},
 						{
-							["recipeID"] = 269479--[[Honorable Combatant's Polearm]]
+							["name"] = "Honorable Combatant's Deckpounder",
+							["nextRecipeID"] = 269471,
+							["recipeID"] = 269470
 						},
 						{
-							["recipeID"] = 269480--[[Honorable Combatant's Polearm]]
+							["name"] = "Honorable Combatant's Deckpounder",
+							["nextRecipeID"] = 269472,
+							["previousRecipeID"] = 269470,
+							["recipeID"] = 269471
 						},
 						{
-							["recipeID"] = 269481--[[Honorable Combatant's Polearm]]
+							["name"] = "Honorable Combatant's Deckpounder",
+							["previousRecipeID"] = 269471,
+							["recipeID"] = 269472
 						},
 						{
-							["recipeID"] = 253156--[[Stormsteel Dagger]]
+							["name"] = "Honorable Combatant's Polearm",
+							["nextRecipeID"] = 269480,
+							["recipeID"] = 269479
 						},
 						{
-							["recipeID"] = 253157--[[Stormsteel Dagger]]
+							["name"] = "Honorable Combatant's Polearm",
+							["nextRecipeID"] = 269481,
+							["previousRecipeID"] = 269479,
+							["recipeID"] = 269480
 						},
 						{
-							["recipeID"] = 253158--[[Stormsteel Dagger]]
+							["name"] = "Honorable Combatant's Polearm",
+							["previousRecipeID"] = 269480,
+							["recipeID"] = 269481
 						},
 						{
-							["recipeID"] = 278131--[[Stormsteel Saber]]
+							["name"] = "Honorable Combatant's Shanker",
+							["nextRecipeID"] = 269477,
+							["recipeID"] = 269476
 						},
 						{
-							["recipeID"] = 278132--[[Stormsteel Saber]]
+							["name"] = "Honorable Combatant's Shanker",
+							["nextRecipeID"] = 269478,
+							["previousRecipeID"] = 269476,
+							["recipeID"] = 269477
 						},
 						{
-							["recipeID"] = 278133--[[Stormsteel Saber]]
+							["name"] = "Honorable Combatant's Shanker",
+							["previousRecipeID"] = 269477,
+							["recipeID"] = 269478
 						},
 						{
-							["recipeID"] = 253159--[[Stormsteel Spear]]
+							["name"] = "Honorable Combatant's Spellblade",
+							["nextRecipeID"] = 253149,
+							["recipeID"] = 256786
 						},
 						{
-							["recipeID"] = 253160--[[Stormsteel Spear]]
+							["name"] = "Honorable Combatant's Spellblade",
+							["nextRecipeID"] = 253144,
+							["previousRecipeID"] = 256786,
+							["recipeID"] = 253149
 						},
 						{
-							["recipeID"] = 253161--[[Stormsteel Spear]]
+							["name"] = "Honorable Combatant's Spellblade",
+							["previousRecipeID"] = 253149,
+							["recipeID"] = 253144
 						},
 						{
-							["recipeID"] = 269466--[[Honorable Combatant's Cutlass]]
+							["name"] = "Monel-Hardened Claymore",
+							["recipeID"] = 253135
 						},
 						{
-							["recipeID"] = 269478--[[Honorable Combatant's Shanker]]
+							["name"] = "Monel-Hardened Cutlass",
+							["recipeID"] = 253125
 						},
 						{
-							["recipeID"] = 253144--[[Honorable Combatant's Spellblade]]
+							["name"] = "Monel-Hardened Deckpounder",
+							["recipeID"] = 253132
 						},
 						{
-							["recipeID"] = 269465--[[Honorable Combatant's Cutlass]]
+							["name"] = "Monel-Hardened Polearm",
+							["recipeID"] = 253141
 						},
 						{
-							["recipeID"] = 269477--[[Honorable Combatant's Shanker]]
+							["name"] = "Monel-Hardened Shanker",
+							["recipeID"] = 253138
 						},
 						{
-							["recipeID"] = 253149--[[Honorable Combatant's Spellblade]]
+							["name"] = "Sinister Combatant's Cutlass",
+							["nextRecipeID"] = 282872,
+							["recipeID"] = 282871
 						},
 						{
-							["recipeID"] = 269464--[[Honorable Combatant's Cutlass]]
+							["name"] = "Sinister Combatant's Cutlass",
+							["nextRecipeID"] = 282873,
+							["previousRecipeID"] = 282871,
+							["recipeID"] = 282872
 						},
 						{
-							["recipeID"] = 269476--[[Honorable Combatant's Shanker]]
+							["name"] = "Sinister Combatant's Cutlass",
+							["previousRecipeID"] = 282872,
+							["recipeID"] = 282873
 						},
 						{
-							["recipeID"] = 256786--[[Honorable Combatant's Spellblade]]
+							["name"] = "Sinister Combatant's Deckpounder",
+							["nextRecipeID"] = 282869,
+							["recipeID"] = 282868
 						},
 						{
-							["recipeID"] = 253135--[[Monel-Hardened Claymore]]
+							["name"] = "Sinister Combatant's Deckpounder",
+							["nextRecipeID"] = 282870,
+							["previousRecipeID"] = 282868,
+							["recipeID"] = 282869
 						},
 						{
-							["recipeID"] = 253132--[[Monel-Hardened Deckpounder]]
+							["name"] = "Sinister Combatant's Deckpounder",
+							["previousRecipeID"] = 282869,
+							["recipeID"] = 282870
 						},
 						{
-							["recipeID"] = 253141--[[Monel-Hardened Polearm]]
+							["name"] = "Sinister Combatant's Polearm",
+							["nextRecipeID"] = 282860,
+							["recipeID"] = 282859
 						},
 						{
-							["recipeID"] = 253125--[[Monel-Hardened Cutlass]]
+							["name"] = "Sinister Combatant's Polearm",
+							["nextRecipeID"] = 282861,
+							["previousRecipeID"] = 282859,
+							["recipeID"] = 282860
 						},
 						{
-							["recipeID"] = 253138--[[Monel-Hardened Shanker]]
+							["name"] = "Sinister Combatant's Polearm",
+							["previousRecipeID"] = 282860,
+							["recipeID"] = 282861
+						},
+						{
+							["name"] = "Sinister Combatant's Shanker",
+							["nextRecipeID"] = 282863,
+							["recipeID"] = 282862
+						},
+						{
+							["name"] = "Sinister Combatant's Shanker",
+							["nextRecipeID"] = 282864,
+							["previousRecipeID"] = 282862,
+							["recipeID"] = 282863
+						},
+						{
+							["name"] = "Sinister Combatant's Shanker",
+							["previousRecipeID"] = 282863,
+							["recipeID"] = 282864
+						},
+						{
+							["name"] = "Sinister Combatant's Spellblade",
+							["nextRecipeID"] = 282866,
+							["recipeID"] = 282865
+						},
+						{
+							["name"] = "Sinister Combatant's Spellblade",
+							["nextRecipeID"] = 282867,
+							["previousRecipeID"] = 282865,
+							["recipeID"] = 282866
+						},
+						{
+							["name"] = "Sinister Combatant's Spellblade",
+							["previousRecipeID"] = 282866,
+							["recipeID"] = 282867
+						},
+						{
+							["name"] = "Stormsteel Dagger",
+							["nextRecipeID"] = 253157,
+							["recipeID"] = 253156
+						},
+						{
+							["name"] = "Stormsteel Dagger",
+							["nextRecipeID"] = 253158,
+							["previousRecipeID"] = 253156,
+							["recipeID"] = 253157
+						},
+						{
+							["name"] = "Stormsteel Dagger",
+							["previousRecipeID"] = 253157,
+							["recipeID"] = 253158
+						},
+						{
+							["name"] = "Stormsteel Saber",
+							["nextRecipeID"] = 278132,
+							["recipeID"] = 278131
+						},
+						{
+							["name"] = "Stormsteel Saber",
+							["nextRecipeID"] = 278133,
+							["previousRecipeID"] = 278131,
+							["recipeID"] = 278132
+						},
+						{
+							["name"] = "Stormsteel Saber",
+							["previousRecipeID"] = 278132,
+							["recipeID"] = 278133
+						},
+						{
+							["name"] = "Stormsteel Spear",
+							["nextRecipeID"] = 253160,
+							["recipeID"] = 253159
+						},
+						{
+							["name"] = "Stormsteel Spear",
+							["nextRecipeID"] = 253161,
+							["previousRecipeID"] = 253159,
+							["recipeID"] = 253160
+						},
+						{
+							["name"] = "Stormsteel Spear",
+							["previousRecipeID"] = 253160,
+							["recipeID"] = 253161
 						}
 					}
 				},
 				{
-					["categoryID"] = 549--[[Other]],
+					["name"] = "Other",
+					["categoryID"] = 549,
 					["g"] = {
 						{
-							["recipeID"] = 269064--[[Monelite Skeleton Key]]
+							["name"] = "Monel-Hardened Hoofplates",
+							["nextRecipeID"] = 286015,
+							["recipeID"] = 253110
 						},
 						{
-							["recipeID"] = 253110--[[Monel-Hardened Hoofplates]]
+							["name"] = "Monel-Hardened Hoofplates",
+							["nextRecipeID"] = 286016,
+							["previousRecipeID"] = 253110,
+							["recipeID"] = 286015
 						},
 						{
-							["recipeID"] = 253112--[[Monel-Hardened Stirrups]]
+							["name"] = "Monel-Hardened Hoofplates",
+							["previousRecipeID"] = 286015,
+							["recipeID"] = 286016
+						},
+						{
+							["name"] = "Monel-Hardened Stirrups",
+							["recipeID"] = 253112
+						},
+						{
+							["name"] = "Monelite Skeleton Key",
+							["recipeID"] = 269064
 						}
 					}
 				},
 				{
-					["categoryID"] = 1231--[[Follower Equipment]],
+					["name"] = "Conversions",
+					["categoryID"] = 1239,
 					["g"] = {
 						{
-							["recipeID"] = 278416--[[Magnetic Mining Pick]]
+							["name"] = "Aqueous Reconstruction",
+							["recipeID"] = 287235
 						},
 						{
-							["recipeID"] = 278417--[[Platinum Whetstone]]
-						},
-						{
-							["recipeID"] = 278415--[[Storm Silver Spurs]]
-						}
-					}
-				}
-			}
-		},
-		{
-			["categoryID"] = 426--[[Legion Plans]],
-			["g"] = {
-				{
-					["categoryID"] = 429--[[Reagents]],
-					["g"] = {
-						{
-							["recipeID"] = 184442--[[Demonsteel Bar]]
+							["name"] = "Sanguinated Reconstruction",
+							["recipeID"] = 286631
 						}
 					}
 				},
 				{
-					["categoryID"] = 488--[[Relics]],
+					["name"] = "Follower Equipment",
+					["categoryID"] = 1231,
 					["g"] = {
 						{
-							["recipeID"] = 209498--[[Consecrated Spike]]
+							["name"] = "Magnetic Mining Pick",
+							["recipeID"] = 278416
 						},
 						{
-							["recipeID"] = 209499--[[Flamespike]]
+							["name"] = "Platinum Whetstone",
+							["recipeID"] = 278417
 						},
 						{
-							["recipeID"] = 209497--[[Gleaming Iron Spike]]
-						},
-						{
-							["recipeID"] = 209496--[[Terrorspike]]
-						}
-					}
-				},
-				{
-					["categoryID"] = 427--[[Armor]],
-					["g"] = {
-						{
-							["recipeID"] = 239415--[[Rethu's Incessant Courage]]
-						},
-						{
-							["recipeID"] = 247710--[[Empyrial Breastplate]]
-						},
-						{
-							["recipeID"] = 247713--[[Empyrial Breastplate]]
-						},
-						{
-							["recipeID"] = 247714--[[Empyrial Breastplate]]
-						},
-						{
-							["recipeID"] = 182982--[[Demonsteel Armguards]]
-						},
-						{
-							["recipeID"] = 182988--[[Demonsteel Boots]]
-						},
-						{
-							["recipeID"] = 182989--[[Demonsteel Breastplate]]
-						},
-						{
-							["recipeID"] = 182987--[[Demonsteel Gauntlets]]
-						},
-						{
-							["recipeID"] = 182985--[[Demonsteel Greaves]]
-						},
-						{
-							["recipeID"] = 182986--[[Demonsteel Helm]]
-						},
-						{
-							["recipeID"] = 182984--[[Demonsteel Pauldrons]]
-						},
-						{
-							["recipeID"] = 182983--[[Demonsteel Waistguard]]
-						},
-						{
-							["recipeID"] = 182974--[[Demonsteel Armguards]]
-						},
-						{
-							["recipeID"] = 182980--[[Demonsteel Boots]]
-						},
-						{
-							["recipeID"] = 182981--[[Demonsteel Breastplate]]
-						},
-						{
-							["recipeID"] = 182979--[[Demonsteel Gauntlets]]
-						},
-						{
-							["recipeID"] = 182977--[[Demonsteel Greaves]]
-						},
-						{
-							["recipeID"] = 182978--[[Demonsteel Helm]]
-						},
-						{
-							["recipeID"] = 182976--[[Demonsteel Pauldrons]]
-						},
-						{
-							["recipeID"] = 182975--[[Demonsteel Waistguard]]
-						},
-						{
-							["recipeID"] = 182944--[[Demonsteel Armguards]]
-						},
-						{
-							["recipeID"] = 182950--[[Demonsteel Boots]]
-						},
-						{
-							["recipeID"] = 182951--[[Demonsteel Breastplate]]
-						},
-						{
-							["recipeID"] = 182949--[[Demonsteel Gauntlets]]
-						},
-						{
-							["recipeID"] = 182947--[[Demonsteel Greaves]]
-						},
-						{
-							["recipeID"] = 182948--[[Demonsteel Helm]]
-						},
-						{
-							["recipeID"] = 182946--[[Demonsteel Pauldrons]]
-						},
-						{
-							["recipeID"] = 182945--[[Demonsteel Waistguard]]
-						},
-						{
-							["recipeID"] = 191930--[[Leystone Gauntlets]]
-						},
-						{
-							["recipeID"] = 191929--[[Leystone Helm]]
-						},
-						{
-							["recipeID"] = 191928--[[Leystone Boots]]
-						},
-						{
-							["recipeID"] = 191931--[[Leystone Greaves]]
-						},
-						{
-							["recipeID"] = 182973--[[Leystone Breastplate]]
-						},
-						{
-							["recipeID"] = 182972--[[Leystone Pauldrons]]
-						},
-						{
-							["recipeID"] = 182970--[[Leystone Armguards]]
-						},
-						{
-							["recipeID"] = 182971--[[Leystone Waistguard]]
-						},
-						{
-							["recipeID"] = 182967--[[Leystone Gauntlets]]
-						},
-						{
-							["recipeID"] = 182966--[[Leystone Helm]]
-						},
-						{
-							["recipeID"] = 182968--[[Leystone Boots]]
-						},
-						{
-							["recipeID"] = 182965--[[Leystone Greaves]]
-						},
-						{
-							["recipeID"] = 182969--[[Leystone Breastplate]]
-						},
-						{
-							["recipeID"] = 182964--[[Leystone Pauldrons]]
-						},
-						{
-							["recipeID"] = 182962--[[Leystone Armguards]]
-						},
-						{
-							["recipeID"] = 182963--[[Leystone Waistguard]]
-						},
-						{
-							["recipeID"] = 182933--[[Leystone Gauntlets]]
-						},
-						{
-							["recipeID"] = 182932--[[Leystone Helm]]
-						},
-						{
-							["recipeID"] = 182934--[[Leystone Boots]]
-						},
-						{
-							["recipeID"] = 182931--[[Leystone Greaves]]
-						},
-						{
-							["recipeID"] = 182935--[[Leystone Breastplate]]
-						},
-						{
-							["recipeID"] = 182930--[[Leystone Pauldrons]]
-						},
-						{
-							["recipeID"] = 182928--[[Leystone Armguards]]
-						},
-						{
-							["recipeID"] = 182929--[[Leystone Waistguard]]
-						}
-					}
-				},
-				{
-					["categoryID"] = 428--[[Other]],
-					["g"] = {
-						{
-							["recipeID"] = 213916--[[Fel Core Hound Harness]]
-						},
-						{
-							["recipeID"] = 209564--[[Demonsteel Stirrups]]
-						},
-						{
-							["recipeID"] = 247700--[[Felslate Anchor]]
-						},
-						{
-							["recipeID"] = 182999--[[Leystone Hoofplates]]
-						}
-					}
-				}
-			}
-		},
-		{
-			["categoryID"] = 389--[[Draenor Plans]],
-			["g"] = {
-				{
-					["categoryID"] = 390--[[Reagents and Research]],
-					["g"] = {
-						{
-							["recipeID"] = 182116--[[Riddle of Truesteel]]
-						},
-						{
-							["recipeID"] = 176090--[[Secrets of Draenor Blacksmithing]]
-						},
-						{
-							["recipeID"] = 171690--[[Truesteel Ingot]]
-						},
-						{
-							["recipeID"] = 171718--[[Truesteel Ingot]]
-						}
-					}
-				},
-				{
-					["categoryID"] = 391--[[Item Enhancers]],
-					["g"] = {
-						{
-							["recipeID"] = 187515--[[Savage Truesteel Essence]]
-						},
-						{
-							["recipeID"] = 187514--[[Savage Steelforged Essence]]
-						},
-						{
-							["recipeID"] = 187491--[[Mighty Truesteel Essence]]
-						},
-						{
-							["recipeID"] = 187490--[[Mighty Steelforged Essence]]
-						},
-						{
-							["recipeID"] = 171710--[[Steelforged Essence]]
-						},
-						{
-							["recipeID"] = 171708--[[Truesteel Essence]]
-						},
-						{
-							["recipeID"] = 171699--[[Truesteel Grinder]]
-						},
-						{
-							["recipeID"] = 173355--[[Truesteel Reshaper]]
-						}
-					}
-				},
-				{
-					["categoryID"] = 392--[[Armor]],
-					["g"] = {
-						{
-							["recipeID"] = 171705--[[Truesteel Armguards]]
-						},
-						{
-							["recipeID"] = 171706--[[Truesteel Boots]]
-						},
-						{
-							["recipeID"] = 171704--[[Truesteel Breastplate]]
-						},
-						{
-							["recipeID"] = 171703--[[Truesteel Gauntlets]]
-						},
-						{
-							["recipeID"] = 171702--[[Truesteel Greaves]]
-						},
-						{
-							["recipeID"] = 171701--[[Truesteel Helm]]
-						},
-						{
-							["recipeID"] = 171700--[[Truesteel Pauldrons]]
-						},
-						{
-							["recipeID"] = 171707--[[Truesteel Waistguard]]
-						},
-						{
-							["recipeID"] = 171691--[[Smoldering Helm]]
-						},
-						{
-							["recipeID"] = 171692--[[Smoldering Breastplate]]
-						},
-						{
-							["recipeID"] = 171693--[[Smoldering Greaves]]
-						}
-					}
-				},
-				{
-					["categoryID"] = 393--[[Weapons and Shields]],
-					["g"] = {
-						{
-							["recipeID"] = 178245--[[Steelforged Aegis]]
-						},
-						{
-							["recipeID"] = 178243--[[Steelforged Axe]]
-						},
-						{
-							["recipeID"] = 171696--[[Steelforged Dagger]]
-						},
-						{
-							["recipeID"] = 171694--[[Steelforged Greataxe]]
-						},
-						{
-							["recipeID"] = 171697--[[Steelforged Hammer]]
-						},
-						{
-							["recipeID"] = 171695--[[Steelforged Saber]]
-						},
-						{
-							["recipeID"] = 171698--[[Steelforged Shield]]
-						}
-					}
-				},
-				{
-					["categoryID"] = 394--[[Other]],
-					["g"] = {
-						{
-							["recipeID"] = 177169--[[Soul of the Forge]]
-						}
-					}
-				}
-			}
-		},
-		{
-			["categoryID"] = 553--[[Pandaren Plans]],
-			["g"] = {
-				{
-					["categoryID"] = 556--[[Materials]],
-					["g"] = {
-						{
-							["recipeID"] = 146921--[[Accelerated Balanced Trillium Ingot]]
-						},
-						{
-							["recipeID"] = 143255--[[Balanced Trillium Ingot]]
-						},
-						{
-							["recipeID"] = 138646--[[Lightning Steel Ingot]]
-						},
-						{
-							["recipeID"] = 126869--[[Folded Ghost Iron]]
-						}
-					}
-				},
-				{
-					["categoryID"] = 557--[[Equipment Mods]],
-					["g"] = {
-						{
-							["recipeID"] = 131929--[[Living Steel Weapon Chain]]
-						},
-						{
-							["recipeID"] = 122632--[[Living Steel Belt Buckle]]
-						},
-						{
-							["recipeID"] = 131928--[[Ghost Iron Shield Spike]]
-						}
-					}
-				},
-				{
-					["categoryID"] = 554--[[Helms]],
-					["g"] = {
-						{
-							["recipeID"] = 137769--[[Haunted Steel Greathelm]]
-						},
-						{
-							["recipeID"] = 137767--[[Haunted Steel Headcover]]
-						},
-						{
-							["recipeID"] = 137771--[[Haunted Steel Headguard]]
-						},
-						{
-							["recipeID"] = 122616--[[Contender's Revenant Helm]]
-						},
-						{
-							["recipeID"] = 122624--[[Contender's Spirit Helm]]
-						},
-						{
-							["recipeID"] = 140844--[[Crafted Dreadful Gladiator's Dreadplate Helm]]
-						},
-						{
-							["recipeID"] = 137784--[[Crafted Dreadful Gladiator's Ornamented Headcover]]
-						},
-						{
-							["recipeID"] = 137795--[[Crafted Dreadful Gladiator's Plate Helm]]
-						},
-						{
-							["recipeID"] = 137773--[[Crafted Dreadful Gladiator's Scaled Helm]]
-						},
-						{
-							["recipeID"] = 143165--[[Crafted Malevolent Gladiator's Dreadplate Helm]]
-						},
-						{
-							["recipeID"] = 143181--[[Crafted Malevolent Gladiator's Ornamented Headcover]]
-						},
-						{
-							["recipeID"] = 143192--[[Crafted Malevolent Gladiator's Plate Helm]]
-						},
-						{
-							["recipeID"] = 143170--[[Crafted Malevolent Gladiator's Scaled Helm]]
-						},
-						{
-							["recipeID"] = 122608--[[Masterwork Lightsteel Helm]]
-						},
-						{
-							["recipeID"] = 122592--[[Masterwork Spiritguard Helm]]
-						},
-						{
-							["recipeID"] = 122600--[[Masterwork Ghost-Forged Helm]]
-						},
-						{
-							["recipeID"] = 122584--[[Lightsteel Helm]]
-						},
-						{
-							["recipeID"] = 122568--[[Spiritguard Helm]]
-						},
-						{
-							["recipeID"] = 122576--[[Ghost-Forged Helm]]
-						}
-					}
-				},
-				{
-					["categoryID"] = 555--[[Shoulders]],
-					["g"] = {
-						{
-							["recipeID"] = 122617--[[Contender's Revenant Shoulders]]
-						},
-						{
-							["recipeID"] = 122625--[[Contender's Spirit Shoulders]]
-						},
-						{
-							["recipeID"] = 140842--[[Crafted Dreadful Gladiator's Dreadplate Shoulders]]
-						},
-						{
-							["recipeID"] = 137786--[[Crafted Dreadful Gladiator's Ornamented Spaulders]]
-						},
-						{
-							["recipeID"] = 137797--[[Crafted Dreadful Gladiator's Plate Shoulders]]
-						},
-						{
-							["recipeID"] = 137775--[[Crafted Dreadful Gladiator's Scaled Shoulders]]
-						},
-						{
-							["recipeID"] = 143167--[[Crafted Malevolent Gladiator's Dreadplate Shoulders]]
-						},
-						{
-							["recipeID"] = 143183--[[Crafted Malevolent Gladiator's Ornamented Spaulders]]
-						},
-						{
-							["recipeID"] = 143194--[[Crafted Malevolent Gladiator's Plate Shoulders]]
-						},
-						{
-							["recipeID"] = 143172--[[Crafted Malevolent Gladiator's Scaled Shoulders]]
-						},
-						{
-							["recipeID"] = 122609--[[Masterwork Lightsteel Shoulders]]
-						},
-						{
-							["recipeID"] = 122593--[[Masterwork Spiritguard Shoulders]]
-						},
-						{
-							["recipeID"] = 122601--[[Masterwork Ghost-Forged Shoulders]]
-						},
-						{
-							["recipeID"] = 122585--[[Lightsteel Shoulders]]
-						},
-						{
-							["recipeID"] = 122569--[[Spiritguard Shoulders]]
-						},
-						{
-							["recipeID"] = 122577--[[Ghost-Forged Shoulders]]
-						}
-					}
-				},
-				{
-					["categoryID"] = 559--[[Chest]],
-					["g"] = {
-						{
-							["recipeID"] = 122653--[[Breastplate of Ancient Steel]]
-						},
-						{
-							["recipeID"] = 126854--[[Chestplate of Limitless Faith]]
-						},
-						{
-							["recipeID"] = 122618--[[Contender's Revenant Breastplate]]
-						},
-						{
-							["recipeID"] = 122626--[[Contender's Spirit Breastplate]]
-						},
-						{
-							["recipeID"] = 140846--[[Crafted Dreadful Gladiator's Dreadplate Chestpiece]]
-						},
-						{
-							["recipeID"] = 137782--[[Crafted Dreadful Gladiator's Ornamented Chestguard]]
-						},
-						{
-							["recipeID"] = 137793--[[Crafted Dreadful Gladiator's Plate Chestpiece]]
-						},
-						{
-							["recipeID"] = 140841--[[Crafted Dreadful Gladiator's Scaled Chestpiece]]
-						},
-						{
-							["recipeID"] = 143163--[[Crafted Malevolent Gladiator's Dreadplate Chestpiece]]
-						},
-						{
-							["recipeID"] = 143179--[[Crafted Malevolent Gladiator's Ornamented Chestguard]]
-						},
-						{
-							["recipeID"] = 143190--[[Crafted Malevolent Gladiator's Plate Chestpiece]]
-						},
-						{
-							["recipeID"] = 143168--[[Crafted Malevolent Gladiator's Scaled Chestpiece]]
-						},
-						{
-							["recipeID"] = 122649--[[Ghost Reaver's Breastplate]]
-						},
-						{
-							["recipeID"] = 122651--[[Living Steel Breastplate]]
-						},
-						{
-							["recipeID"] = 122610--[[Masterwork Lightsteel Breastplate]]
-						},
-						{
-							["recipeID"] = 122594--[[Masterwork Spiritguard Breastplate]]
-						},
-						{
-							["recipeID"] = 126852--[[Ornate Battleplate of the Master]]
-						},
-						{
-							["recipeID"] = 126850--[[Unyielding Bloodplate]]
-						},
-						{
-							["recipeID"] = 122602--[[Masterwork Ghost-Forged Breastplate]]
-						},
-						{
-							["recipeID"] = 122586--[[Lightsteel Breastplate]]
-						},
-						{
-							["recipeID"] = 122570--[[Spiritguard Breastplate]]
-						},
-						{
-							["recipeID"] = 122578--[[Ghost-Forged Breastplate]]
-						}
-					}
-				},
-				{
-					["categoryID"] = 560--[[Gauntlets]],
-					["g"] = {
-						{
-							["recipeID"] = 126853--[[Bloodforged Warfists]]
-						},
-						{
-							["recipeID"] = 122619--[[Contender's Revenant Gauntlets]]
-						},
-						{
-							["recipeID"] = 122627--[[Contender's Spirit Gauntlets]]
-						},
-						{
-							["recipeID"] = 140845--[[Crafted Dreadful Gladiator's Dreadplate Gauntlets]]
-						},
-						{
-							["recipeID"] = 137783--[[Crafted Dreadful Gladiator's Ornamented Gloves]]
-						},
-						{
-							["recipeID"] = 137794--[[Crafted Dreadful Gladiator's Plate Gauntlets]]
-						},
-						{
-							["recipeID"] = 137772--[[Crafted Dreadful Gladiator's Scaled Gauntlets]]
-						},
-						{
-							["recipeID"] = 143164--[[Crafted Malevolent Gladiator's Dreadplate Gauntlets]]
-						},
-						{
-							["recipeID"] = 143180--[[Crafted Malevolent Gladiator's Ornamented Gloves]]
-						},
-						{
-							["recipeID"] = 143191--[[Crafted Malevolent Gladiator's Plate Gauntlets]]
-						},
-						{
-							["recipeID"] = 143169--[[Crafted Malevolent Gladiator's Scaled Gauntlets]]
-						},
-						{
-							["recipeID"] = 122654--[[Gauntlets of Ancient Steel]]
-						},
-						{
-							["recipeID"] = 126851--[[Gauntlets of Battle Command]]
-						},
-						{
-							["recipeID"] = 126855--[[Gauntlets of Unbound Devotion]]
-						},
-						{
-							["recipeID"] = 122650--[[Ghost Reaver's Gauntlets]]
-						},
-						{
-							["recipeID"] = 122652--[[Living Steel Gauntlets]]
-						},
-						{
-							["recipeID"] = 122611--[[Masterwork Lightsteel Gauntlets]]
-						},
-						{
-							["recipeID"] = 122595--[[Masterwork Spiritguard Gauntlets]]
-						},
-						{
-							["recipeID"] = 122603--[[Masterwork Ghost-Forged Gauntlets]]
-						},
-						{
-							["recipeID"] = 122587--[[Lightsteel Gauntlets]]
-						},
-						{
-							["recipeID"] = 122571--[[Spiritguard Gauntlets]]
-						},
-						{
-							["recipeID"] = 122579--[[Ghost-Forged Gauntlets]]
-						}
-					}
-				},
-				{
-					["categoryID"] = 561--[[Bracers]],
-					["g"] = {
-						{
-							["recipeID"] = 122621--[[Contender's Revenant Bracers]]
-						},
-						{
-							["recipeID"] = 122629--[[Contender's Spirit Bracers]]
-						},
-						{
-							["recipeID"] = 137792--[[Crafted Dreadful Gladiator's Armplates of Alacrity]]
-						},
-						{
-							["recipeID"] = 137791--[[Crafted Dreadful Gladiator's Armplates of Proficiency]]
-						},
-						{
-							["recipeID"] = 137781--[[Crafted Dreadful Gladiator's Bracers of Meditation]]
-						},
-						{
-							["recipeID"] = 137780--[[Crafted Dreadful Gladiator's Bracers of Prowess]]
-						},
-						{
-							["recipeID"] = 143189--[[Crafted Malevolent Gladiator's Armplates of Alacrity]]
-						},
-						{
-							["recipeID"] = 143188--[[Crafted Malevolent Gladiator's Armplates of Proficiency]]
-						},
-						{
-							["recipeID"] = 143178--[[Crafted Malevolent Gladiator's Bracers of Meditation]]
-						},
-						{
-							["recipeID"] = 143177--[[Crafted Malevolent Gladiator's Bracers of Prowess]]
-						},
-						{
-							["recipeID"] = 122613--[[Masterwork Lightsteel Bracers]]
-						},
-						{
-							["recipeID"] = 122597--[[Masterwork Spiritguard Bracers]]
-						},
-						{
-							["recipeID"] = 122605--[[Masterwork Ghost-Forged Bracers]]
-						},
-						{
-							["recipeID"] = 122589--[[Lightsteel Bracers]]
-						},
-						{
-							["recipeID"] = 122573--[[Spiritguard Bracers]]
-						},
-						{
-							["recipeID"] = 122581--[[Ghost-Forged Bracers]]
-						}
-					}
-				},
-				{
-					["categoryID"] = 562--[[Belts]],
-					["g"] = {
-						{
-							["recipeID"] = 142968--[[Avenger's Trillium Waistplate]]
-						},
-						{
-							["recipeID"] = 142963--[[Blessed Trillium Belt]]
-						},
-						{
-							["recipeID"] = 142967--[[Protector's Trillium Waistguard]]
-						},
-						{
-							["recipeID"] = 122623--[[Contender's Revenant Belt]]
-						},
-						{
-							["recipeID"] = 122631--[[Contender's Spirit Belt]]
-						},
-						{
-							["recipeID"] = 137776--[[Crafted Dreadful Gladiator's Clasp of Cruelty]]
-						},
-						{
-							["recipeID"] = 137777--[[Crafted Dreadful Gladiator's Clasp of Meditation]]
-						},
-						{
-							["recipeID"] = 137787--[[Crafted Dreadful Gladiator's Girdle of Accuracy]]
-						},
-						{
-							["recipeID"] = 137788--[[Crafted Dreadful Gladiator's Girdle of Prowess]]
-						},
-						{
-							["recipeID"] = 143173--[[Crafted Malevolent Gladiator's Clasp of Cruelty]]
-						},
-						{
-							["recipeID"] = 143174--[[Crafted Malevolent Gladiator's Clasp of Meditation]]
-						},
-						{
-							["recipeID"] = 143184--[[Crafted Malevolent Gladiator's Girdle of Accuracy]]
-						},
-						{
-							["recipeID"] = 143185--[[Crafted Malevolent Gladiator's Girdle of Prowess]]
-						},
-						{
-							["recipeID"] = 122615--[[Masterwork Lightsteel Belt]]
-						},
-						{
-							["recipeID"] = 122599--[[Masterwork Spiritguard Belt]]
-						},
-						{
-							["recipeID"] = 122607--[[Masterwork Ghost-Forged Belt]]
-						},
-						{
-							["recipeID"] = 122591--[[Lightsteel Belt]]
-						},
-						{
-							["recipeID"] = 122575--[[Spiritguard Belt]]
-						},
-						{
-							["recipeID"] = 122583--[[Ghost-Forged Belt]]
-						}
-					}
-				},
-				{
-					["categoryID"] = 563--[[Legs]],
-					["g"] = {
-						{
-							["recipeID"] = 142959--[[Avenger's Trillium Legplates]]
-						},
-						{
-							["recipeID"] = 142954--[[Blessed Trillium Greaves]]
-						},
-						{
-							["recipeID"] = 142958--[[Protector's Trillium Legguards]]
-						},
-						{
-							["recipeID"] = 122620--[[Contender's Revenant Legplates]]
-						},
-						{
-							["recipeID"] = 122628--[[Contender's Spirit Legplates]]
-						},
-						{
-							["recipeID"] = 140843--[[Crafted Dreadful Gladiator's Dreadplate Legguards]]
-						},
-						{
-							["recipeID"] = 137785--[[Crafted Dreadful Gladiator's Ornamented Legplates]]
-						},
-						{
-							["recipeID"] = 137796--[[Crafted Dreadful Gladiator's Plate Legguards]]
-						},
-						{
-							["recipeID"] = 137774--[[Crafted Dreadful Gladiator's Scaled Legguards]]
-						},
-						{
-							["recipeID"] = 143166--[[Crafted Malevolent Gladiator's Dreadplate Legguards]]
-						},
-						{
-							["recipeID"] = 143182--[[Crafted Malevolent Gladiator's Ornamented Legplates]]
-						},
-						{
-							["recipeID"] = 143193--[[Crafted Malevolent Gladiator's Plate Legguards]]
-						},
-						{
-							["recipeID"] = 143171--[[Crafted Malevolent Gladiator's Scaled Legguards]]
-						},
-						{
-							["recipeID"] = 122612--[[Masterwork Lightsteel Legplates]]
-						},
-						{
-							["recipeID"] = 122596--[[Masterwork Spiritguard Legplates]]
-						},
-						{
-							["recipeID"] = 122604--[[Masterwork Ghost-Forged Legplates]]
-						},
-						{
-							["recipeID"] = 122588--[[Lightsteel Legplates]]
-						},
-						{
-							["recipeID"] = 122572--[[Spiritguard Legplates]]
-						},
-						{
-							["recipeID"] = 122580--[[Ghost-Forged Legplates]]
-						}
-					}
-				},
-				{
-					["categoryID"] = 564--[[Boots]],
-					["g"] = {
-						{
-							["recipeID"] = 137766--[[Haunted Steel Greaves]]
-						},
-						{
-							["recipeID"] = 137768--[[Haunted Steel Treads]]
-						},
-						{
-							["recipeID"] = 137770--[[Haunted Steel Warboots]]
-						},
-						{
-							["recipeID"] = 122622--[[Contender's Revenant Boots]]
-						},
-						{
-							["recipeID"] = 122630--[[Contender's Spirit Boots]]
-						},
-						{
-							["recipeID"] = 137778--[[Crafted Dreadful Gladiator's Greaves of Alacrity]]
-						},
-						{
-							["recipeID"] = 137779--[[Crafted Dreadful Gladiator's Greaves of Meditation]]
-						},
-						{
-							["recipeID"] = 137790--[[Crafted Dreadful Gladiator's Warboots of Alacrity]]
-						},
-						{
-							["recipeID"] = 137789--[[Crafted Dreadful Gladiator's Warboots of Cruelty]]
-						},
-						{
-							["recipeID"] = 143175--[[Crafted Malevolent Gladiator's Greaves of Alacrity]]
-						},
-						{
-							["recipeID"] = 143176--[[Crafted Malevolent Gladiator's Greaves of Meditation]]
-						},
-						{
-							["recipeID"] = 143187--[[Crafted Malevolent Gladiator's Warboots of Alacrity]]
-						},
-						{
-							["recipeID"] = 143186--[[Crafted Malevolent Gladiator's Warboots of Cruelty]]
-						},
-						{
-							["recipeID"] = 122614--[[Masterwork Lightsteel Boots]]
-						},
-						{
-							["recipeID"] = 122598--[[Masterwork Spiritguard Boots]]
-						},
-						{
-							["recipeID"] = 122606--[[Masterwork Ghost-Forged Boots]]
-						},
-						{
-							["recipeID"] = 122590--[[Lightsteel Boots]]
-						},
-						{
-							["recipeID"] = 122574--[[Spiritguard Boots]]
-						},
-						{
-							["recipeID"] = 122582--[[Ghost-Forged Boots]]
-						}
-					}
-				},
-				{
-					["categoryID"] = 565--[[Shields]],
-					["g"] = {
-						{
-							["recipeID"] = 143195--[[Crafted Malevolent Gladiator's Barrier]]
-						},
-						{
-							["recipeID"] = 143196--[[Crafted Malevolent Gladiator's Redoubt]]
-						},
-						{
-							["recipeID"] = 143197--[[Crafted Malevolent Gladiator's Shield Wall]]
-						},
-						{
-							["recipeID"] = 122642--[[Masterwork Lightsteel Shield]]
-						},
-						{
-							["recipeID"] = 122643--[[Masterwork Spiritguard Shield]]
-						},
-						{
-							["recipeID"] = 122635--[[Lightsteel Shield]]
-						},
-						{
-							["recipeID"] = 122636--[[Spiritguard Shield]]
-						}
-					}
-				},
-				{
-					["categoryID"] = 566--[[Weapons]],
-					["g"] = {
-						{
-							["recipeID"] = 138892--[[Blazefury, Reborn]]
-						},
-						{
-							["recipeID"] = 138881--[[Bloodmoon, Reborn]]
-						},
-						{
-							["recipeID"] = 138886--[[Dragonstrike, Reborn]]
-						},
-						{
-							["recipeID"] = 138893--[[Lionheart Executioner, Reborn]]
-						},
-						{
-							["recipeID"] = 138887--[[Stormherald, Reborn]]
-						},
-						{
-							["recipeID"] = 138880--[[Wicked Edge of the Planes, Reborn]]
-						},
-						{
-							["recipeID"] = 138878--[[Black Planar Edge, Reborn]]
-						},
-						{
-							["recipeID"] = 138890--[[Blazeguard, Reborn]]
-						},
-						{
-							["recipeID"] = 138884--[[Deep Thunder, Reborn]]
-						},
-						{
-							["recipeID"] = 138885--[[Dragonmaw, Reborn]]
-						},
-						{
-							["recipeID"] = 138882--[[Drakefist Hammer, Reborn]]
-						},
-						{
-							["recipeID"] = 138888--[[Fireguard, Reborn]]
-						},
-						{
-							["recipeID"] = 138889--[[Lionheart Blade, Reborn]]
-						},
-						{
-							["recipeID"] = 138891--[[Lionheart Champion, Reborn]]
-						},
-						{
-							["recipeID"] = 138877--[[Lunar Crescent, Reborn]]
-						},
-						{
-							["recipeID"] = 122644--[[Masterwork Forgewire Axe]]
-						},
-						{
-							["recipeID"] = 122648--[[Masterwork Ghost Shard]]
-						},
-						{
-							["recipeID"] = 122645--[[Masterwork Ghost-Forged Blade]]
-						},
-						{
-							["recipeID"] = 122646--[[Masterwork Phantasmal Hammer]]
-						},
-						{
-							["recipeID"] = 122647--[[Masterwork Spiritblade Decimator]]
-						},
-						{
-							["recipeID"] = 138879--[[Mooncleaver, Reborn]]
-						},
-						{
-							["recipeID"] = 138876--[[The Planar Edge, Reborn]]
-						},
-						{
-							["recipeID"] = 138883--[[Thunder, Reborn]]
-						},
-						{
-							["recipeID"] = 122637--[[Forgewire Axe]]
-						},
-						{
-							["recipeID"] = 122641--[[Ghost Shard]]
-						},
-						{
-							["recipeID"] = 122638--[[Ghost-Forged Blade]]
-						},
-						{
-							["recipeID"] = 122639--[[Phantasmal Hammer]]
-						},
-						{
-							["recipeID"] = 122640--[[Spiritblade Decimator]]
-						}
-					}
-				},
-				{
-					["categoryID"] = 567--[[Skeleton Keys]],
-					["g"] = {
-						{
-							["recipeID"] = 122633--[[Ghostly Skeleton Key]]
+							["name"] = "Storm Silver Spurs",
+							["recipeID"] = 278415
 						}
 					}
 				}
 			}
 		},
 		{
-			["categoryID"] = 569--[[Cataclysm Plans]],
+			["name"] = "Legion Plans",
+			["categoryID"] = 426,
 			["g"] = {
 				{
-					["categoryID"] = 572--[[Materials]],
+					["name"] = "Reagents",
+					["categoryID"] = 429,
 					["g"] = {
 						{
-							["recipeID"] = 76178--[[Folded Obsidium]]
+							["name"] = "Demonsteel Bar",
+							["recipeID"] = 184442
 						}
 					}
 				},
 				{
-					["categoryID"] = 574--[[Equipment Mods]],
+					["name"] = "Relics",
+					["categoryID"] = 488,
 					["g"] = {
 						{
-							["recipeID"] = 76440--[[Pyrium Shield Spike]]
+							["name"] = "Consecrated Spike",
+							["recipeID"] = 209498
 						},
 						{
-							["recipeID"] = 76439--[[Ebonsteel Belt Buckle]]
+							["name"] = "Flamespike",
+							["recipeID"] = 209499
 						},
 						{
-							["recipeID"] = 76442--[[Pyrium Weapon Chain]]
+							["name"] = "Gleaming Iron Spike",
+							["recipeID"] = 209497
 						},
 						{
-							["recipeID"] = 76441--[[Elementium Shield Spike]]
+							["name"] = "Terrorspike",
+							["recipeID"] = 209496
 						}
 					}
 				},
 				{
-					["categoryID"] = 570--[[Armor]],
+					["name"] = "Armor",
+					["categoryID"] = 427,
 					["g"] = {
 						{
-							["recipeID"] = 76469--[[Vicious Ornate Pyrium Shoulders]]
+							["name"] = "Demonsteel Armguards",
+							["nextRecipeID"] = 182974,
+							["recipeID"] = 182944
 						},
 						{
-							["recipeID"] = 76461--[[Vicious Pyrium Shoulders]]
+							["name"] = "Demonsteel Armguards",
+							["nextRecipeID"] = 182982,
+							["previousRecipeID"] = 182944,
+							["recipeID"] = 182974
 						},
 						{
-							["recipeID"] = 101931--[[Bracers of Destructive Strength]]
+							["name"] = "Demonsteel Armguards",
+							["previousRecipeID"] = 182974,
+							["recipeID"] = 182982
 						},
 						{
-							["recipeID"] = 101928--[[Foundations of Courage]]
+							["name"] = "Demonsteel Boots",
+							["nextRecipeID"] = 182980,
+							["recipeID"] = 182950
 						},
 						{
-							["recipeID"] = 101924--[[Pyrium Legplates of Purified Evil]]
+							["name"] = "Demonsteel Boots",
+							["nextRecipeID"] = 182988,
+							["previousRecipeID"] = 182950,
+							["recipeID"] = 182980
 						},
 						{
-							["recipeID"] = 101929--[[Soul Redeemer Bracers]]
+							["name"] = "Demonsteel Boots",
+							["previousRecipeID"] = 182980,
+							["recipeID"] = 182988
 						},
 						{
-							["recipeID"] = 101932--[[Titanguard Wristplates]]
+							["name"] = "Demonsteel Breastplate",
+							["nextRecipeID"] = 182981,
+							["recipeID"] = 182951
 						},
 						{
-							["recipeID"] = 101925--[[Unstoppable Destroyer's Legplates]]
+							["name"] = "Demonsteel Breastplate",
+							["nextRecipeID"] = 182989,
+							["previousRecipeID"] = 182951,
+							["recipeID"] = 182981
 						},
 						{
-							["recipeID"] = 76445--[[Elementium Deathplate]]
+							["name"] = "Demonsteel Breastplate",
+							["previousRecipeID"] = 182981,
+							["recipeID"] = 182989
 						},
 						{
-							["recipeID"] = 76446--[[Elementium Girdle of Pain]]
+							["name"] = "Demonsteel Gauntlets",
+							["nextRecipeID"] = 182979,
+							["recipeID"] = 182949
 						},
 						{
-							["recipeID"] = 99454--[[Emberforged Elementium Boots]]
+							["name"] = "Demonsteel Gauntlets",
+							["nextRecipeID"] = 182987,
+							["previousRecipeID"] = 182949,
+							["recipeID"] = 182979
 						},
 						{
-							["recipeID"] = 99440--[[Eternal Elementium Handguards]]
+							["name"] = "Demonsteel Gauntlets",
+							["previousRecipeID"] = 182979,
+							["recipeID"] = 182987
 						},
 						{
-							["recipeID"] = 99439--[[Fists of Fury]]
+							["name"] = "Demonsteel Greaves",
+							["nextRecipeID"] = 182977,
+							["recipeID"] = 182947
 						},
 						{
-							["recipeID"] = 76444--[[Hardened Elementium Girdle]]
+							["name"] = "Demonsteel Greaves",
+							["nextRecipeID"] = 182985,
+							["previousRecipeID"] = 182947,
+							["recipeID"] = 182977
 						},
 						{
-							["recipeID"] = 76443--[[Hardened Elementium Hauberk]]
+							["name"] = "Demonsteel Greaves",
+							["previousRecipeID"] = 182977,
+							["recipeID"] = 182985
 						},
 						{
-							["recipeID"] = 99441--[[Holy Flame Gauntlets]]
+							["name"] = "Demonsteel Helm",
+							["nextRecipeID"] = 182978,
+							["recipeID"] = 182948
 						},
 						{
-							["recipeID"] = 76448--[[Light Elementium Belt]]
+							["name"] = "Demonsteel Helm",
+							["nextRecipeID"] = 182986,
+							["previousRecipeID"] = 182948,
+							["recipeID"] = 182978
 						},
 						{
-							["recipeID"] = 76447--[[Light Elementium Chestguard]]
+							["name"] = "Demonsteel Helm",
+							["previousRecipeID"] = 182978,
+							["recipeID"] = 182986
 						},
 						{
-							["recipeID"] = 99453--[[Mirrored Boots]]
+							["name"] = "Demonsteel Pauldrons",
+							["nextRecipeID"] = 182976,
+							["recipeID"] = 182946
 						},
 						{
-							["recipeID"] = 76467--[[Vicious Ornate Pyrium Belt]]
+							["name"] = "Demonsteel Pauldrons",
+							["nextRecipeID"] = 182984,
+							["previousRecipeID"] = 182946,
+							["recipeID"] = 182976
 						},
 						{
-							["recipeID"] = 76468--[[Vicious Ornate Pyrium Boots]]
+							["name"] = "Demonsteel Pauldrons",
+							["previousRecipeID"] = 182976,
+							["recipeID"] = 182984
 						},
 						{
-							["recipeID"] = 76472--[[Vicious Ornate Pyrium Breastplate]]
+							["name"] = "Demonsteel Waistguard",
+							["nextRecipeID"] = 182975,
+							["recipeID"] = 182945
 						},
 						{
-							["recipeID"] = 76471--[[Vicious Ornate Pyrium Helm]]
+							["name"] = "Demonsteel Waistguard",
+							["nextRecipeID"] = 182983,
+							["previousRecipeID"] = 182945,
+							["recipeID"] = 182975
 						},
 						{
-							["recipeID"] = 76470--[[Vicious Ornate Pyrium Legguards]]
+							["name"] = "Demonsteel Waistguard",
+							["previousRecipeID"] = 182975,
+							["recipeID"] = 182983
 						},
 						{
-							["recipeID"] = 76458--[[Vicious Pyrium Belt]]
+							["name"] = "Empyrial Breastplate",
+							["nextRecipeID"] = 247713,
+							["recipeID"] = 247710
 						},
 						{
-							["recipeID"] = 76459--[[Vicious Pyrium Boots]]
+							["name"] = "Empyrial Breastplate",
+							["nextRecipeID"] = 247714,
+							["previousRecipeID"] = 247710,
+							["recipeID"] = 247713
 						},
 						{
-							["recipeID"] = 76464--[[Vicious Pyrium Breastplate]]
+							["name"] = "Empyrial Breastplate",
+							["previousRecipeID"] = 247713,
+							["recipeID"] = 247714
 						},
 						{
-							["recipeID"] = 76463--[[Vicious Pyrium Helm]]
+							["name"] = "Leystone Armguards",
+							["nextRecipeID"] = 182962,
+							["recipeID"] = 182928
 						},
 						{
-							["recipeID"] = 76462--[[Vicious Pyrium Legguards]]
+							["name"] = "Leystone Armguards",
+							["nextRecipeID"] = 182970,
+							["previousRecipeID"] = 182928,
+							["recipeID"] = 182962
 						},
 						{
-							["recipeID"] = 99452--[[Warboots of Mighty Lords]]
+							["name"] = "Leystone Armguards",
+							["previousRecipeID"] = 182962,
+							["recipeID"] = 182970
 						},
 						{
-							["recipeID"] = 76466--[[Vicious Ornate Pyrium Gauntlets]]
+							["name"] = "Leystone Boots",
+							["nextRecipeID"] = 182968,
+							["recipeID"] = 182934
 						},
 						{
-							["recipeID"] = 76457--[[Vicious Pyrium Gauntlets]]
+							["name"] = "Leystone Boots",
+							["nextRecipeID"] = 191928,
+							["previousRecipeID"] = 182934,
+							["recipeID"] = 182968
 						},
 						{
-							["recipeID"] = 76270--[[Redsteel Breastplate]]
+							["name"] = "Leystone Boots",
+							["previousRecipeID"] = 182968,
+							["recipeID"] = 191928
 						},
 						{
-							["recipeID"] = 76269--[[Redsteel Helm]]
+							["name"] = "Leystone Breastplate",
+							["nextRecipeID"] = 182969,
+							["recipeID"] = 182935
 						},
 						{
-							["recipeID"] = 76289--[[Stormforged Breastplate]]
+							["name"] = "Leystone Breastplate",
+							["nextRecipeID"] = 182973,
+							["previousRecipeID"] = 182935,
+							["recipeID"] = 182969
 						},
 						{
-							["recipeID"] = 76465--[[Vicious Ornate Pyrium Bracers]]
+							["name"] = "Leystone Breastplate",
+							["previousRecipeID"] = 182969,
+							["recipeID"] = 182973
 						},
 						{
-							["recipeID"] = 76456--[[Vicious Pyrium Bracers]]
+							["name"] = "Leystone Gauntlets",
+							["nextRecipeID"] = 182967,
+							["recipeID"] = 182933
 						},
 						{
-							["recipeID"] = 76261--[[Hardened Obsidium Breastplate]]
+							["name"] = "Leystone Gauntlets",
+							["nextRecipeID"] = 191930,
+							["previousRecipeID"] = 182933,
+							["recipeID"] = 182967
 						},
 						{
-							["recipeID"] = 76267--[[Redsteel Legguards]]
+							["name"] = "Leystone Gauntlets",
+							["previousRecipeID"] = 182967,
+							["recipeID"] = 191930
 						},
 						{
-							["recipeID"] = 76288--[[Stormforged Helm]]
+							["name"] = "Leystone Greaves",
+							["nextRecipeID"] = 182965,
+							["recipeID"] = 182931
 						},
 						{
-							["recipeID"] = 76260--[[Hardened Obsidium Helm]]
+							["name"] = "Leystone Greaves",
+							["nextRecipeID"] = 191931,
+							["previousRecipeID"] = 182931,
+							["recipeID"] = 182965
 						},
 						{
-							["recipeID"] = 76259--[[Hardened Obsidium Legguards]]
+							["name"] = "Leystone Greaves",
+							["previousRecipeID"] = 182965,
+							["recipeID"] = 191931
 						},
 						{
-							["recipeID"] = 76287--[[Stormforged Legguards]]
+							["name"] = "Leystone Helm",
+							["nextRecipeID"] = 182966,
+							["recipeID"] = 182932
 						},
 						{
-							["recipeID"] = 76286--[[Stormforged Shoulders]]
+							["name"] = "Leystone Helm",
+							["nextRecipeID"] = 191929,
+							["previousRecipeID"] = 182932,
+							["recipeID"] = 182966
 						},
 						{
-							["recipeID"] = 76258--[[Hardened Obsidium Shoulders]]
+							["name"] = "Leystone Helm",
+							["previousRecipeID"] = 182966,
+							["recipeID"] = 191929
 						},
 						{
-							["recipeID"] = 76266--[[Redsteel Shoulders]]
+							["name"] = "Leystone Pauldrons",
+							["nextRecipeID"] = 182964,
+							["recipeID"] = 182930
 						},
 						{
-							["recipeID"] = 76265--[[Redsteel Boots]]
+							["name"] = "Leystone Pauldrons",
+							["nextRecipeID"] = 182972,
+							["previousRecipeID"] = 182930,
+							["recipeID"] = 182964
 						},
 						{
-							["recipeID"] = 76285--[[Stormforged Boots]]
+							["name"] = "Leystone Pauldrons",
+							["previousRecipeID"] = 182964,
+							["recipeID"] = 182972
 						},
 						{
-							["recipeID"] = 76182--[[Hardened Obsidium Boots]]
+							["name"] = "Leystone Waistguard",
+							["nextRecipeID"] = 182963,
+							["recipeID"] = 182929
 						},
 						{
-							["recipeID"] = 76264--[[Redsteel Belt]]
+							["name"] = "Leystone Waistguard",
+							["nextRecipeID"] = 182971,
+							["previousRecipeID"] = 182929,
+							["recipeID"] = 182963
 						},
 						{
-							["recipeID"] = 76283--[[Stormforged Belt]]
+							["name"] = "Leystone Waistguard",
+							["previousRecipeID"] = 182963,
+							["recipeID"] = 182971
 						},
 						{
-							["recipeID"] = 76181--[[Hardened Obsidium Belt]]
-						},
-						{
-							["recipeID"] = 76281--[[Stormforged Gauntlets]]
-						},
-						{
-							["recipeID"] = 76179--[[Hardened Obsidium Bracers]]
-						},
-						{
-							["recipeID"] = 76180--[[Hardened Obsidium Gauntlets]]
-						},
-						{
-							["recipeID"] = 76262--[[Redsteel Bracers]]
-						},
-						{
-							["recipeID"] = 76263--[[Redsteel Gauntlets]]
-						},
-						{
-							["recipeID"] = 76280--[[Stormforged Bracers]]
+							["name"] = "Rethu's Incessant Courage",
+							["recipeID"] = 239415
 						}
 					}
 				},
 				{
-					["categoryID"] = 573--[[Shields]],
+					["name"] = "Other",
+					["categoryID"] = 428,
 					["g"] = {
 						{
-							["recipeID"] = 76454--[[Elementium Earthguard]]
+							["name"] = "Demonsteel Stirrups",
+							["recipeID"] = 209564
 						},
 						{
-							["recipeID"] = 76455--[[Elementium Stormshield]]
+							["name"] = "Fel Core Hound Harness",
+							["recipeID"] = 213916
 						},
 						{
-							["recipeID"] = 76293--[[Stormforged Shield]]
+							["name"] = "Felslate Anchor",
+							["recipeID"] = 247700
 						},
 						{
-							["recipeID"] = 76291--[[Hardened Obsidium Shield]]
-						}
-					}
-				},
-				{
-					["categoryID"] = 571--[[Weapons]],
-					["g"] = {
-						{
-							["recipeID"] = 99652--[[Brainsplinter]]
-						},
-						{
-							["recipeID"] = 76452--[[Elementium Bonesplitter]]
-						},
-						{
-							["recipeID"] = 94718--[[Elementium Gutslicer]]
-						},
-						{
-							["recipeID"] = 76450--[[Elementium Hammer]]
-						},
-						{
-							["recipeID"] = 76451--[[Elementium Poleaxe]]
-						},
-						{
-							["recipeID"] = 76453--[[Elementium Shank]]
-						},
-						{
-							["recipeID"] = 76449--[[Elementium Spellblade]]
-						},
-						{
-							["recipeID"] = 99655--[[Elementium-Edged Scalper]]
-						},
-						{
-							["recipeID"] = 94732--[[Forged Elementium Mindcrusher]]
-						},
-						{
-							["recipeID"] = 99654--[[Lightforged Elementium Hammer]]
-						},
-						{
-							["recipeID"] = 99658--[[Masterwork Elementium Deathblade]]
-						},
-						{
-							["recipeID"] = 99653--[[Masterwork Elementium Spellblade]]
-						},
-						{
-							["recipeID"] = 99656--[[Pyrium Spellward]]
-						},
-						{
-							["recipeID"] = 99657--[[Unbreakable Guardian]]
-						},
-						{
-							["recipeID"] = 99660--[[Witch-Hunter's Harvester]]
-						},
-						{
-							["recipeID"] = 76435--[[Fire-Etched Dagger]]
-						},
-						{
-							["recipeID"] = 76436--[[Lifeforce Hammer]]
-						},
-						{
-							["recipeID"] = 76437--[[Obsidium Executioner]]
-						},
-						{
-							["recipeID"] = 76434--[[Cold-Forged Shank]]
-						},
-						{
-							["recipeID"] = 76474--[[Obsidium Bladespear]]
-						},
-						{
-							["recipeID"] = 76433--[[Decapitator's Razor]]
-						}
-					}
-				},
-				{
-					["categoryID"] = 575--[[Skeleton Keys]],
-					["g"] = {
-						{
-							["recipeID"] = 76438--[[Obsidium Skeleton Key]]
+							["name"] = "Leystone Hoofplates",
+							["recipeID"] = 182999
 						}
 					}
 				}
 			}
 		},
 		{
-			["categoryID"] = 577--[[Northrend Plans]],
+			["name"] = "Draenor Plans",
+			["categoryID"] = 389,
 			["g"] = {
 				{
-					["categoryID"] = 578--[[Equipment Mods]],
+					["name"] = "Reagents and Research",
+					["categoryID"] = 390,
 					["g"] = {
 						{
-							["recipeID"] = 62202--[[Titanium Plating]]
+							["name"] = "Riddle of Truesteel",
+							["recipeID"] = 182116
 						},
 						{
-							["recipeID"] = 56357--[[Titanium Shield Spike]]
+							["name"] = "Secrets of Draenor Blacksmithing",
+							["recipeID"] = 176090
 						},
 						{
-							["recipeID"] = 55839--[[Titanium Weapon Chain]]
+							["name"] = "Truesteel Ingot",
+							["recipeID"] = 171690
 						},
 						{
-							["recipeID"] = 55656--[[Eternal Belt Buckle]]
+							["name"] = "Truesteel Ingot",
+							["recipeID"] = 171718
 						}
 					}
 				},
 				{
-					["categoryID"] = 579--[[Armor]],
+					["name"] = "Item Enhancers",
+					["categoryID"] = 391,
 					["g"] = {
 						{
-							["recipeID"] = 70568--[[Boots of Kingly Upheaval]]
+							["name"] = "Mighty Steelforged Essence",
+							["recipeID"] = 187490
 						},
 						{
-							["recipeID"] = 70566--[[Hellfrozen Bonegrinders]]
+							["name"] = "Mighty Truesteel Essence",
+							["recipeID"] = 187491
 						},
 						{
-							["recipeID"] = 70565--[[Legplates of Painful Death]]
+							["name"] = "Savage Steelforged Essence",
+							["recipeID"] = 187514
 						},
 						{
-							["recipeID"] = 70567--[[Pillars of Might]]
+							["name"] = "Savage Truesteel Essence",
+							["recipeID"] = 187515
 						},
 						{
-							["recipeID"] = 70563--[[Protectors of Life]]
+							["name"] = "Steelforged Essence",
+							["recipeID"] = 171710
 						},
 						{
-							["recipeID"] = 70562--[[Puresteel Legplates]]
+							["name"] = "Truesteel Essence",
+							["recipeID"] = 171708
 						},
 						{
-							["recipeID"] = 55303--[[Daunting Legplates]]
+							["name"] = "Truesteel Grinder",
+							["recipeID"] = 171699
 						},
 						{
-							["recipeID"] = 55302--[[Helm of Command]]
-						},
-						{
-							["recipeID"] = 61008--[[Icebane Chestguard]]
-						},
-						{
-							["recipeID"] = 56555--[[Ornate Saronite Hauberk]]
-						},
-						{
-							["recipeID"] = 56554--[[Ornate Saronite Legplates]]
-						},
-						{
-							["recipeID"] = 56556--[[Ornate Saronite Skullshield]]
-						},
-						{
-							["recipeID"] = 55304--[[Righteous Greaves]]
-						},
-						{
-							["recipeID"] = 55311--[[Savage Saronite Hauberk]]
-						},
-						{
-							["recipeID"] = 55310--[[Savage Saronite Legplates]]
-						},
-						{
-							["recipeID"] = 55312--[[Savage Saronite Skullshield]]
-						},
-						{
-							["recipeID"] = 63188--[[Battlelord's Plate Boots]]
-						},
-						{
-							["recipeID"] = 63187--[[Belt of the Titans]]
-						},
-						{
-							["recipeID"] = 67130--[[Breastplate of the White Knight]]
-						},
-						{
-							["recipeID"] = 55374--[[Brilliant Titansteel Helm]]
-						},
-						{
-							["recipeID"] = 55377--[[Brilliant Titansteel Treads]]
-						},
-						{
-							["recipeID"] = 55301--[[Daunting Handguards]]
-						},
-						{
-							["recipeID"] = 61009--[[Icebane Girdle]]
-						},
-						{
-							["recipeID"] = 61010--[[Icebane Treads]]
-						},
-						{
-							["recipeID"] = 63191--[[Indestructible Plate Girdle]]
-						},
-						{
-							["recipeID"] = 56553--[[Ornate Saronite Gauntlets]]
-						},
-						{
-							["recipeID"] = 56550--[[Ornate Saronite Pauldrons]]
-						},
-						{
-							["recipeID"] = 56551--[[Ornate Saronite Waistguard]]
-						},
-						{
-							["recipeID"] = 56552--[[Ornate Saronite Walkers]]
-						},
-						{
-							["recipeID"] = 63189--[[Plate Girdle of Righteousness]]
-						},
-						{
-							["recipeID"] = 55300--[[Righteous Gauntlets]]
-						},
-						{
-							["recipeID"] = 67131--[[Saronite Swordbreakers]]
-						},
-						{
-							["recipeID"] = 55309--[[Savage Saronite Gauntlets]]
-						},
-						{
-							["recipeID"] = 55306--[[Savage Saronite Pauldrons]]
-						},
-						{
-							["recipeID"] = 55307--[[Savage Saronite Waistguard]]
-						},
-						{
-							["recipeID"] = 55308--[[Savage Saronite Walkers]]
-						},
-						{
-							["recipeID"] = 63192--[[Spiked Deathdealers]]
-						},
-						{
-							["recipeID"] = 55372--[[Spiked Titansteel Helm]]
-						},
-						{
-							["recipeID"] = 55375--[[Spiked Titansteel Treads]]
-						},
-						{
-							["recipeID"] = 67135--[[Sunforged Bracers]]
-						},
-						{
-							["recipeID"] = 67134--[[Sunforged Breastplate]]
-						},
-						{
-							["recipeID"] = 55373--[[Tempered Titansteel Helm]]
-						},
-						{
-							["recipeID"] = 55376--[[Tempered Titansteel Treads]]
-						},
-						{
-							["recipeID"] = 67132--[[Titanium Razorplate]]
-						},
-						{
-							["recipeID"] = 67133--[[Titanium Spikeguards]]
-						},
-						{
-							["recipeID"] = 63190--[[Treads of Destiny]]
-						},
-						{
-							["recipeID"] = 56549--[[Ornate Saronite Bracers]]
-						},
-						{
-							["recipeID"] = 55305--[[Savage Saronite Bracers]]
-						},
-						{
-							["recipeID"] = 55298--[[Vengeance Bindings]]
-						},
-						{
-							["recipeID"] = 55058--[[Brilliant Saronite Breastplate]]
-						},
-						{
-							["recipeID"] = 59441--[[Brilliant Saronite Helm]]
-						},
-						{
-							["recipeID"] = 55186--[[Chestplate of Conquest]]
-						},
-						{
-							["recipeID"] = 55015--[[Tempered Saronite Gauntlets]]
-						},
-						{
-							["recipeID"] = 55187--[[Legplates of Conquest]]
-						},
-						{
-							["recipeID"] = 55017--[[Tempered Saronite Bracers]]
-						},
-						{
-							["recipeID"] = 54981--[[Reinforced Cobalt Chestpiece]]
-						},
-						{
-							["recipeID"] = 55057--[[Brilliant Saronite Boots]]
-						},
-						{
-							["recipeID"] = 59440--[[Brilliant Saronite Pauldrons]]
-						},
-						{
-							["recipeID"] = 54555--[[Tempered Saronite Helm]]
-						},
-						{
-							["recipeID"] = 54556--[[Tempered Saronite Shoulders]]
-						},
-						{
-							["recipeID"] = 54980--[[Reinforced Cobalt Legplates]]
-						},
-						{
-							["recipeID"] = 59438--[[Brilliant Saronite Bracers]]
-						},
-						{
-							["recipeID"] = 55056--[[Brilliant Saronite Gauntlets]]
-						},
-						{
-							["recipeID"] = 54552--[[Tempered Saronite Boots]]
-						},
-						{
-							["recipeID"] = 54553--[[Tempered Saronite Breastplate]]
-						},
-						{
-							["recipeID"] = 54949--[[Horned Cobalt Helm]]
-						},
-						{
-							["recipeID"] = 54979--[[Reinforced Cobalt Helm]]
-						},
-						{
-							["recipeID"] = 54948--[[Spiked Cobalt Bracers]]
-						},
-						{
-							["recipeID"] = 59436--[[Brilliant Saronite Belt]]
-						},
-						{
-							["recipeID"] = 55055--[[Brilliant Saronite Legplates]]
-						},
-						{
-							["recipeID"] = 54551--[[Tempered Saronite Belt]]
-						},
-						{
-							["recipeID"] = 54554--[[Tempered Saronite Legplates]]
-						},
-						{
-							["recipeID"] = 54946--[[Spiked Cobalt Belt]]
-						},
-						{
-							["recipeID"] = 54947--[[Spiked Cobalt Legplates]]
-						},
-						{
-							["recipeID"] = 54978--[[Reinforced Cobalt Shoulders]]
-						},
-						{
-							["recipeID"] = 54945--[[Spiked Cobalt Gauntlets]]
-						},
-						{
-							["recipeID"] = 54944--[[Spiked Cobalt Chestpiece]]
-						},
-						{
-							["recipeID"] = 54941--[[Spiked Cobalt Shoulders]]
-						},
-						{
-							["recipeID"] = 54918--[[Spiked Cobalt Boots]]
-						},
-						{
-							["recipeID"] = 52570--[[Cobalt Chestpiece]]
-						},
-						{
-							["recipeID"] = 55835--[[Cobalt Gauntlets]]
-						},
-						{
-							["recipeID"] = 54917--[[Spiked Cobalt Helm]]
-						},
-						{
-							["recipeID"] = 52571--[[Cobalt Helm]]
-						},
-						{
-							["recipeID"] = 52567--[[Cobalt Legplates]]
-						},
-						{
-							["recipeID"] = 52568--[[Cobalt Belt]]
-						},
-						{
-							["recipeID"] = 52569--[[Cobalt Boots]]
-						},
-						{
-							["recipeID"] = 55834--[[Cobalt Bracers]]
-						},
-						{
-							["recipeID"] = 52572--[[Cobalt Shoulders]]
+							["name"] = "Truesteel Reshaper",
+							["recipeID"] = 173355
 						}
 					}
 				},
 				{
-					["categoryID"] = 580--[[Shields]],
+					["name"] = "Armor",
+					["categoryID"] = 392,
 					["g"] = {
 						{
-							["recipeID"] = 56400--[[Titansteel Shield Wall]]
+							["name"] = "Smoldering Breastplate",
+							["recipeID"] = 171692
 						},
 						{
-							["recipeID"] = 55014--[[Saronite Bulwark]]
+							["name"] = "Smoldering Greaves",
+							["recipeID"] = 171693
 						},
 						{
-							["recipeID"] = 54557--[[Saronite Defender]]
+							["name"] = "Smoldering Helm",
+							["recipeID"] = 171691
 						},
 						{
-							["recipeID"] = 55013--[[Saronite Protector]]
+							["name"] = "Truesteel Armguards",
+							["recipeID"] = 171705
 						},
 						{
-							["recipeID"] = 54550--[[Cobalt Triangle Shield]]
+							["name"] = "Truesteel Boots",
+							["recipeID"] = 171706
+						},
+						{
+							["name"] = "Truesteel Breastplate",
+							["recipeID"] = 171704
+						},
+						{
+							["name"] = "Truesteel Gauntlets",
+							["recipeID"] = 171703
+						},
+						{
+							["name"] = "Truesteel Greaves",
+							["recipeID"] = 171702
+						},
+						{
+							["name"] = "Truesteel Helm",
+							["recipeID"] = 171701
+						},
+						{
+							["name"] = "Truesteel Pauldrons",
+							["recipeID"] = 171700
+						},
+						{
+							["name"] = "Truesteel Waistguard",
+							["recipeID"] = 171707
 						}
 					}
 				},
 				{
-					["categoryID"] = 581--[[Weapons]],
+					["name"] = "Weapons and Shields",
+					["categoryID"] = 393,
 					["g"] = {
 						{
-							["recipeID"] = 55370--[[Titansteel Bonecrusher]]
+							["name"] = "Steelforged Aegis",
+							["recipeID"] = 178245
 						},
 						{
-							["recipeID"] = 55369--[[Titansteel Destroyer]]
+							["name"] = "Steelforged Axe",
+							["recipeID"] = 178243
 						},
 						{
-							["recipeID"] = 55371--[[Titansteel Guardian]]
+							["name"] = "Steelforged Dagger",
+							["recipeID"] = 171696
 						},
 						{
-							["recipeID"] = 56234--[[Titansteel Shanker]]
+							["name"] = "Steelforged Greataxe",
+							["recipeID"] = 171694
 						},
 						{
-							["recipeID"] = 63182--[[Titansteel Spellblade]]
+							["name"] = "Steelforged Hammer",
+							["recipeID"] = 171697
 						},
 						{
-							["recipeID"] = 55183--[[Corroded Saronite Edge]]
+							["name"] = "Steelforged Saber",
+							["recipeID"] = 171695
 						},
 						{
-							["recipeID"] = 55184--[[Corroded Saronite Woundbringer]]
-						},
-						{
-							["recipeID"] = 55185--[[Saronite Mindcrusher]]
-						},
-						{
-							["recipeID"] = 56280--[[Cudgel of Saronite Justice]]
-						},
-						{
-							["recipeID"] = 55182--[[Furious Saronite Beatstick]]
-						},
-						{
-							["recipeID"] = 59442--[[Saronite Spellblade]]
-						},
-						{
-							["recipeID"] = 55206--[[Deadly Saronite Dirk]]
-						},
-						{
-							["recipeID"] = 55181--[[Saronite Shiv]]
-						},
-						{
-							["recipeID"] = 55179--[[Saronite Ambusher]]
-						},
-						{
-							["recipeID"] = 55177--[[Savage Cobalt Slicer]]
-						},
-						{
-							["recipeID"] = 55174--[[Honed Cobalt Cleaver]]
-						},
-						{
-							["recipeID"] = 55204--[[Notched Cobalt War Axe]]
-						},
-						{
-							["recipeID"] = 55203--[[Forged Cobalt Claymore]]
-						},
-						{
-							["recipeID"] = 55201--[[Cobalt Tenderizer]]
-						},
-						{
-							["recipeID"] = 55200--[[Sturdy Cobalt Quickblade]]
+							["name"] = "Steelforged Shield",
+							["recipeID"] = 171698
 						}
 					}
 				},
 				{
-					["categoryID"] = 582--[[Skeleton Keys]],
+					["name"] = "Other",
+					["categoryID"] = 394,
 					["g"] = {
 						{
-							["recipeID"] = 59406--[[Titanium Skeleton Key]]
-						},
-						{
-							["recipeID"] = 59405--[[Cobalt Skeleton Key]]
+							["name"] = "Soul of the Forge",
+							["recipeID"] = 177169
 						}
 					}
 				}
 			}
 		},
 		{
-			["categoryID"] = 584--[[Outland Plans]],
+			["name"] = "Pandaren Plans",
+			["categoryID"] = 553,
 			["g"] = {
 				{
-					["categoryID"] = 585--[[Equipment Mods]],
+					["name"] = "Materials",
+					["categoryID"] = 556,
 					["g"] = {
 						{
-							["recipeID"] = 29657--[[Felsteel Shield Spike]]
+							["name"] = "Accelerated Balanced Trillium Ingot",
+							["recipeID"] = 146921
 						},
 						{
-							["recipeID"] = 29729--[[Greater Ward of Shielding]]
+							["name"] = "Balanced Trillium Ingot",
+							["recipeID"] = 143255
 						},
 						{
-							["recipeID"] = 29656--[[Adamantite Sharpening Stone]]
+							["name"] = "Folded Ghost Iron",
+							["recipeID"] = 126869
 						},
 						{
-							["recipeID"] = 34608--[[Adamantite Weightstone]]
-						},
-						{
-							["recipeID"] = 32285--[[Greater Rune of Warding]]
-						},
-						{
-							["recipeID"] = 42688--[[Adamantite Weapon Chain]]
-						},
-						{
-							["recipeID"] = 29728--[[Lesser Ward of Shielding]]
-						},
-						{
-							["recipeID"] = 32284--[[Lesser Rune of Warding]]
-						},
-						{
-							["recipeID"] = 29654--[[Fel Sharpening Stone]]
-						},
-						{
-							["recipeID"] = 34607--[[Fel Weightstone]]
+							["name"] = "Lightning Steel Ingot",
+							["recipeID"] = 138646
 						}
 					}
 				},
 				{
-					["categoryID"] = 586--[[Armor]],
+					["name"] = "Equipment Mods",
+					["categoryID"] = 557,
 					["g"] = {
 						{
-							["recipeID"] = 46141--[[Hard Khorium Battlefists]]
+							["name"] = "Ghost Iron Shield Spike",
+							["recipeID"] = 131928
 						},
 						{
-							["recipeID"] = 46144--[[Hard Khorium Battleplate]]
+							["name"] = "Living Steel Belt Buckle",
+							["recipeID"] = 122632
 						},
 						{
-							["recipeID"] = 46142--[[Sunblessed Breastplate]]
-						},
-						{
-							["recipeID"] = 46140--[[Sunblessed Gauntlets]]
-						},
-						{
-							["recipeID"] = 36257--[[Bulwark of the Ancient Kings]]
-						},
-						{
-							["recipeID"] = 36256--[[Embrace of the Twisting Nether]]
-						},
-						{
-							["recipeID"] = 41134--[[Dawnsteel Bracers]]
-						},
-						{
-							["recipeID"] = 41135--[[Dawnsteel Shoulders]]
-						},
-						{
-							["recipeID"] = 41132--[[Swiftsteel Bracers]]
-						},
-						{
-							["recipeID"] = 41133--[[Swiftsteel Shoulders]]
-						},
-						{
-							["recipeID"] = 36389--[[Belt of the Guardian]]
-						},
-						{
-							["recipeID"] = 36391--[[Boots of the Protector]]
-						},
-						{
-							["recipeID"] = 34534--[[Bulwark of Kings]]
-						},
-						{
-							["recipeID"] = 29649--[[Earthpeace Breastplate]]
-						},
-						{
-							["recipeID"] = 29613--[[Enchanted Adamantite Leggings]]
-						},
-						{
-							["recipeID"] = 29621--[[Felsteel Helm]]
-						},
-						{
-							["recipeID"] = 29617--[[Flamebane Breastplate]]
-						},
-						{
-							["recipeID"] = 38477--[[Iceguard Breastplate]]
-						},
-						{
-							["recipeID"] = 29630--[[Khorium Boots]]
-						},
-						{
-							["recipeID"] = 29645--[[Ragesteel Breastplate]]
-						},
-						{
-							["recipeID"] = 29642--[[Ragesteel Gloves]]
-						},
-						{
-							["recipeID"] = 29643--[[Ragesteel Helm]]
-						},
-						{
-							["recipeID"] = 42662--[[Ragesteel Shoulders]]
-						},
-						{
-							["recipeID"] = 36390--[[Red Belt of Battle]]
-						},
-						{
-							["recipeID"] = 36392--[[Red Havoc Boots]]
-						},
-						{
-							["recipeID"] = 40034--[[Shadesteel Bracers]]
-						},
-						{
-							["recipeID"] = 40036--[[Shadesteel Girdle]]
-						},
-						{
-							["recipeID"] = 40035--[[Shadesteel Greaves]]
-						},
-						{
-							["recipeID"] = 40033--[[Shadesteel Sabots]]
-						},
-						{
-							["recipeID"] = 29648--[[Swiftsteel Gloves]]
-						},
-						{
-							["recipeID"] = 34530--[[Twisting Nether Chain Shirt]]
-						},
-						{
-							["recipeID"] = 38473--[[Wildguard Breastplate]]
-						},
-						{
-							["recipeID"] = 38476--[[Wildguard Helm]]
-						},
-						{
-							["recipeID"] = 38475--[[Wildguard Leggings]]
-						},
-						{
-							["recipeID"] = 29610--[[Enchanted Adamantite Breastplate]]
-						},
-						{
-							["recipeID"] = 29619--[[Felsteel Gloves]]
-						},
-						{
-							["recipeID"] = 29620--[[Felsteel Leggings]]
-						},
-						{
-							["recipeID"] = 29616--[[Flamebane Gloves]]
-						},
-						{
-							["recipeID"] = 29628--[[Khorium Belt]]
-						},
-						{
-							["recipeID"] = 29629--[[Khorium Pants]]
-						},
-						{
-							["recipeID"] = 29669--[[Black Felsteel Bracers]]
-						},
-						{
-							["recipeID"] = 29672--[[Blessed Bracers]]
-						},
-						{
-							["recipeID"] = 29671--[[Bracers of the Green Fortress]]
-						},
-						{
-							["recipeID"] = 29658--[[Felfury Gauntlets]]
-						},
-						{
-							["recipeID"] = 29622--[[Gauntlets of the Iron Tower]]
-						},
-						{
-							["recipeID"] = 29664--[[Helm of the Stalwart Defender]]
-						},
-						{
-							["recipeID"] = 29668--[[Oathkeeper's Helm]]
-						},
-						{
-							["recipeID"] = 29662--[[Steelgrip Gauntlets]]
-						},
-						{
-							["recipeID"] = 29663--[[Storm Helm]]
-						},
-						{
-							["recipeID"] = 38479--[[Iceguard Helm]]
-						},
-						{
-							["recipeID"] = 38478--[[Iceguard Leggings]]
-						},
-						{
-							["recipeID"] = 29608--[[Enchanted Adamantite Belt]]
-						},
-						{
-							["recipeID"] = 29611--[[Enchanted Adamantite Boots]]
-						},
-						{
-							["recipeID"] = 29615--[[Flamebane Helm]]
-						},
-						{
-							["recipeID"] = 29614--[[Flamebane Bracers]]
-						},
-						{
-							["recipeID"] = 34533--[[Breastplate of Kings]]
-						},
-						{
-							["recipeID"] = 34529--[[Nether Chain Shirt]]
-						},
-						{
-							["recipeID"] = 29606--[[Adamantite Breastplate]]
-						},
-						{
-							["recipeID"] = 29603--[[Adamantite Plate Bracers]]
-						},
-						{
-							["recipeID"] = 29605--[[Adamantite Plate Gloves]]
-						},
-						{
-							["recipeID"] = 36129--[[Heavy Earthforged Breastplate]]
-						},
-						{
-							["recipeID"] = 36130--[[Stormforged Hauberk]]
-						},
-						{
-							["recipeID"] = 29550--[[Fel Iron Breastplate]]
-						},
-						{
-							["recipeID"] = 29556--[[Fel Iron Chain Tunic]]
-						},
-						{
-							["recipeID"] = 29553--[[Fel Iron Chain Bracers]]
-						},
-						{
-							["recipeID"] = 29548--[[Fel Iron Plate Boots]]
-						},
-						{
-							["recipeID"] = 29549--[[Fel Iron Plate Pants]]
-						},
-						{
-							["recipeID"] = 29552--[[Fel Iron Chain Gloves]]
-						},
-						{
-							["recipeID"] = 29547--[[Fel Iron Plate Belt]]
-						},
-						{
-							["recipeID"] = 29551--[[Fel Iron Chain Coif]]
-						},
-						{
-							["recipeID"] = 29545--[[Fel Iron Plate Gloves]]
-						},
-						{
-							["recipeID"] = 36122--[[Earthforged Leggings]]
-						},
-						{
-							["recipeID"] = 36124--[[Windforged Leggings]]
+							["name"] = "Living Steel Weapon Chain",
+							["recipeID"] = 131929
 						}
 					}
 				},
 				{
-					["categoryID"] = 588--[[Weapons]],
+					["name"] = "Helms",
+					["categoryID"] = 554,
 					["g"] = {
 						{
-							["recipeID"] = 34542--[[Black Planar Edge]]
+							["name"] = "Contender's Revenant Helm",
+							["recipeID"] = 122616
 						},
 						{
-							["recipeID"] = 36258--[[Blazefury]]
+							["name"] = "Contender's Spirit Helm",
+							["recipeID"] = 122624
 						},
 						{
-							["recipeID"] = 34537--[[Blazeguard]]
+							["name"] = "Crafted Dreadful Gladiator's Dreadplate Helm",
+							["recipeID"] = 140844
 						},
 						{
-							["recipeID"] = 36261--[[Bloodmoon]]
+							["name"] = "Crafted Dreadful Gladiator's Ornamented Headcover",
+							["recipeID"] = 137784
 						},
 						{
-							["recipeID"] = 34548--[[Deep Thunder]]
+							["name"] = "Crafted Dreadful Gladiator's Plate Helm",
+							["recipeID"] = 137795
 						},
 						{
-							["recipeID"] = 34546--[[Dragonmaw]]
+							["name"] = "Crafted Dreadful Gladiator's Scaled Helm",
+							["recipeID"] = 137773
 						},
 						{
-							["recipeID"] = 36262--[[Dragonstrike]]
+							["name"] = "Crafted Malevolent Gladiator's Dreadplate Helm",
+							["recipeID"] = 143165
 						},
 						{
-							["recipeID"] = 34540--[[Lionheart Champion]]
+							["name"] = "Crafted Malevolent Gladiator's Ornamented Headcover",
+							["recipeID"] = 143181
 						},
 						{
-							["recipeID"] = 36259--[[Lionheart Executioner]]
+							["name"] = "Crafted Malevolent Gladiator's Plate Helm",
+							["recipeID"] = 143192
 						},
 						{
-							["recipeID"] = 34544--[[Mooncleaver]]
+							["name"] = "Crafted Malevolent Gladiator's Scaled Helm",
+							["recipeID"] = 143170
 						},
 						{
-							["recipeID"] = 36263--[[Stormherald]]
+							["name"] = "Ghost-Forged Helm",
+							["recipeID"] = 122576
 						},
 						{
-							["recipeID"] = 36260--[[Wicked Edge of the Planes]]
+							["name"] = "Haunted Steel Greathelm",
+							["recipeID"] = 137769
 						},
 						{
-							["recipeID"] = 29699--[[Dirge]]
+							["name"] = "Haunted Steel Headcover",
+							["recipeID"] = 137767
 						},
 						{
-							["recipeID"] = 29698--[[Eternium Runed Blade]]
+							["name"] = "Haunted Steel Headguard",
+							["recipeID"] = 137771
 						},
 						{
-							["recipeID"] = 29694--[[Fel Edged Battleaxe]]
+							["name"] = "Lightsteel Helm",
+							["recipeID"] = 122584
 						},
 						{
-							["recipeID"] = 29697--[[Fel Hardened Maul]]
+							["name"] = "Masterwork Ghost-Forged Helm",
+							["recipeID"] = 122600
 						},
 						{
-							["recipeID"] = 29692--[[Felsteel Longblade]]
+							["name"] = "Masterwork Lightsteel Helm",
+							["recipeID"] = 122608
 						},
 						{
-							["recipeID"] = 29695--[[Felsteel Reaper]]
+							["name"] = "Masterwork Spiritguard Helm",
+							["recipeID"] = 122592
 						},
 						{
-							["recipeID"] = 43846--[[Hammer of Righteous Might]]
+							["name"] = "Spiritguard Helm",
+							["recipeID"] = 122568
+						}
+					}
+				},
+				{
+					["name"] = "Shoulders",
+					["categoryID"] = 555,
+					["g"] = {
+						{
+							["name"] = "Contender's Revenant Shoulders",
+							["recipeID"] = 122617
 						},
 						{
-							["recipeID"] = 29700--[[Hand of Eternity]]
+							["name"] = "Contender's Spirit Shoulders",
+							["recipeID"] = 122625
 						},
 						{
-							["recipeID"] = 29693--[[Khorium Champion]]
+							["name"] = "Crafted Dreadful Gladiator's Dreadplate Shoulders",
+							["recipeID"] = 140842
 						},
 						{
-							["recipeID"] = 29696--[[Runic Hammer]]
+							["name"] = "Crafted Dreadful Gladiator's Ornamented Spaulders",
+							["recipeID"] = 137786
 						},
 						{
-							["recipeID"] = 34545--[[Drakefist Hammer]]
+							["name"] = "Crafted Dreadful Gladiator's Plate Shoulders",
+							["recipeID"] = 137797
 						},
 						{
-							["recipeID"] = 34535--[[Fireguard]]
+							["name"] = "Crafted Dreadful Gladiator's Scaled Shoulders",
+							["recipeID"] = 137775
 						},
 						{
-							["recipeID"] = 34538--[[Lionheart Blade]]
+							["name"] = "Crafted Malevolent Gladiator's Dreadplate Shoulders",
+							["recipeID"] = 143167
 						},
 						{
-							["recipeID"] = 34543--[[Lunar Crescent]]
+							["name"] = "Crafted Malevolent Gladiator's Ornamented Spaulders",
+							["recipeID"] = 143183
 						},
 						{
-							["recipeID"] = 34541--[[The Planar Edge]]
+							["name"] = "Crafted Malevolent Gladiator's Plate Shoulders",
+							["recipeID"] = 143194
 						},
 						{
-							["recipeID"] = 34547--[[Thunder]]
+							["name"] = "Crafted Malevolent Gladiator's Scaled Shoulders",
+							["recipeID"] = 143172
 						},
 						{
-							["recipeID"] = 29571--[[Adamantite Rapier]]
+							["name"] = "Ghost-Forged Shoulders",
+							["recipeID"] = 122577
 						},
 						{
-							["recipeID"] = 29568--[[Adamantite Cleaver]]
+							["name"] = "Lightsteel Shoulders",
+							["recipeID"] = 122585
 						},
 						{
-							["recipeID"] = 29569--[[Adamantite Dagger]]
+							["name"] = "Masterwork Ghost-Forged Shoulders",
+							["recipeID"] = 122601
 						},
 						{
-							["recipeID"] = 36137--[[Great Earthforged Hammer]]
+							["name"] = "Masterwork Lightsteel Shoulders",
+							["recipeID"] = 122609
 						},
 						{
-							["recipeID"] = 36136--[[Lavaforged Warhammer]]
+							["name"] = "Masterwork Spiritguard Shoulders",
+							["recipeID"] = 122593
 						},
 						{
-							["recipeID"] = 36135--[[Skyforged Great Axe]]
+							["name"] = "Spiritguard Shoulders",
+							["recipeID"] = 122569
+						}
+					}
+				},
+				{
+					["name"] = "Chest",
+					["categoryID"] = 559,
+					["g"] = {
+						{
+							["name"] = "Breastplate of Ancient Steel",
+							["recipeID"] = 122653
 						},
 						{
-							["recipeID"] = 36133--[[Stoneforged Claymore]]
+							["name"] = "Chestplate of Limitless Faith",
+							["recipeID"] = 126854
 						},
 						{
-							["recipeID"] = 36134--[[Stormforged Axe]]
+							["name"] = "Contender's Revenant Breastplate",
+							["recipeID"] = 122618
 						},
 						{
-							["recipeID"] = 36131--[[Windforged Rapier]]
+							["name"] = "Contender's Spirit Breastplate",
+							["recipeID"] = 122626
 						},
 						{
-							["recipeID"] = 29566--[[Adamantite Maul]]
+							["name"] = "Crafted Dreadful Gladiator's Dreadplate Chestpiece",
+							["recipeID"] = 140846
 						},
 						{
-							["recipeID"] = 29565--[[Fel Iron Greatsword]]
+							["name"] = "Crafted Dreadful Gladiator's Ornamented Chestguard",
+							["recipeID"] = 137782
 						},
 						{
-							["recipeID"] = 29558--[[Fel Iron Hammer]]
+							["name"] = "Crafted Dreadful Gladiator's Plate Chestpiece",
+							["recipeID"] = 137793
 						},
 						{
-							["recipeID"] = 29557--[[Fel Iron Hatchet]]
+							["name"] = "Crafted Dreadful Gladiator's Scaled Chestpiece",
+							["recipeID"] = 140841
 						},
 						{
-							["recipeID"] = 36128--[[Light Emberforged Hammer]]
+							["name"] = "Crafted Malevolent Gladiator's Dreadplate Chestpiece",
+							["recipeID"] = 143163
 						},
 						{
-							["recipeID"] = 36126--[[Light Skyforged Axe]]
+							["name"] = "Crafted Malevolent Gladiator's Ornamented Chestguard",
+							["recipeID"] = 143179
+						},
+						{
+							["name"] = "Crafted Malevolent Gladiator's Plate Chestpiece",
+							["recipeID"] = 143190
+						},
+						{
+							["name"] = "Crafted Malevolent Gladiator's Scaled Chestpiece",
+							["recipeID"] = 143168
+						},
+						{
+							["name"] = "Ghost Reaver's Breastplate",
+							["recipeID"] = 122649
+						},
+						{
+							["name"] = "Ghost-Forged Breastplate",
+							["recipeID"] = 122578
+						},
+						{
+							["name"] = "Lightsteel Breastplate",
+							["recipeID"] = 122586
+						},
+						{
+							["name"] = "Living Steel Breastplate",
+							["recipeID"] = 122651
+						},
+						{
+							["name"] = "Masterwork Ghost-Forged Breastplate",
+							["recipeID"] = 122602
+						},
+						{
+							["name"] = "Masterwork Lightsteel Breastplate",
+							["recipeID"] = 122610
+						},
+						{
+							["name"] = "Masterwork Spiritguard Breastplate",
+							["recipeID"] = 122594
+						},
+						{
+							["name"] = "Ornate Battleplate of the Master",
+							["recipeID"] = 126852
+						},
+						{
+							["name"] = "Spiritguard Breastplate",
+							["recipeID"] = 122570
+						},
+						{
+							["name"] = "Unyielding Bloodplate",
+							["recipeID"] = 126850
+						}
+					}
+				},
+				{
+					["name"] = "Gauntlets",
+					["categoryID"] = 560,
+					["g"] = {
+						{
+							["name"] = "Bloodforged Warfists",
+							["recipeID"] = 126853
+						},
+						{
+							["name"] = "Contender's Revenant Gauntlets",
+							["recipeID"] = 122619
+						},
+						{
+							["name"] = "Contender's Spirit Gauntlets",
+							["recipeID"] = 122627
+						},
+						{
+							["name"] = "Crafted Dreadful Gladiator's Dreadplate Gauntlets",
+							["recipeID"] = 140845
+						},
+						{
+							["name"] = "Crafted Dreadful Gladiator's Ornamented Gloves",
+							["recipeID"] = 137783
+						},
+						{
+							["name"] = "Crafted Dreadful Gladiator's Plate Gauntlets",
+							["recipeID"] = 137794
+						},
+						{
+							["name"] = "Crafted Dreadful Gladiator's Scaled Gauntlets",
+							["recipeID"] = 137772
+						},
+						{
+							["name"] = "Crafted Malevolent Gladiator's Dreadplate Gauntlets",
+							["recipeID"] = 143164
+						},
+						{
+							["name"] = "Crafted Malevolent Gladiator's Ornamented Gloves",
+							["recipeID"] = 143180
+						},
+						{
+							["name"] = "Crafted Malevolent Gladiator's Plate Gauntlets",
+							["recipeID"] = 143191
+						},
+						{
+							["name"] = "Crafted Malevolent Gladiator's Scaled Gauntlets",
+							["recipeID"] = 143169
+						},
+						{
+							["name"] = "Gauntlets of Ancient Steel",
+							["recipeID"] = 122654
+						},
+						{
+							["name"] = "Gauntlets of Battle Command",
+							["recipeID"] = 126851
+						},
+						{
+							["name"] = "Gauntlets of Unbound Devotion",
+							["recipeID"] = 126855
+						},
+						{
+							["name"] = "Ghost Reaver's Gauntlets",
+							["recipeID"] = 122650
+						},
+						{
+							["name"] = "Ghost-Forged Gauntlets",
+							["recipeID"] = 122579
+						},
+						{
+							["name"] = "Lightsteel Gauntlets",
+							["recipeID"] = 122587
+						},
+						{
+							["name"] = "Living Steel Gauntlets",
+							["recipeID"] = 122652
+						},
+						{
+							["name"] = "Masterwork Ghost-Forged Gauntlets",
+							["recipeID"] = 122603
+						},
+						{
+							["name"] = "Masterwork Lightsteel Gauntlets",
+							["recipeID"] = 122611
+						},
+						{
+							["name"] = "Masterwork Spiritguard Gauntlets",
+							["recipeID"] = 122595
+						},
+						{
+							["name"] = "Spiritguard Gauntlets",
+							["recipeID"] = 122571
+						}
+					}
+				},
+				{
+					["name"] = "Bracers",
+					["categoryID"] = 561,
+					["g"] = {
+						{
+							["name"] = "Contender's Revenant Bracers",
+							["recipeID"] = 122621
+						},
+						{
+							["name"] = "Contender's Spirit Bracers",
+							["recipeID"] = 122629
+						},
+						{
+							["name"] = "Crafted Dreadful Gladiator's Armplates of Alacrity",
+							["recipeID"] = 137792
+						},
+						{
+							["name"] = "Crafted Dreadful Gladiator's Armplates of Proficiency",
+							["recipeID"] = 137791
+						},
+						{
+							["name"] = "Crafted Dreadful Gladiator's Bracers of Meditation",
+							["recipeID"] = 137781
+						},
+						{
+							["name"] = "Crafted Dreadful Gladiator's Bracers of Prowess",
+							["recipeID"] = 137780
+						},
+						{
+							["name"] = "Crafted Malevolent Gladiator's Armplates of Alacrity",
+							["recipeID"] = 143189
+						},
+						{
+							["name"] = "Crafted Malevolent Gladiator's Armplates of Proficiency",
+							["recipeID"] = 143188
+						},
+						{
+							["name"] = "Crafted Malevolent Gladiator's Bracers of Meditation",
+							["recipeID"] = 143178
+						},
+						{
+							["name"] = "Crafted Malevolent Gladiator's Bracers of Prowess",
+							["recipeID"] = 143177
+						},
+						{
+							["name"] = "Ghost-Forged Bracers",
+							["recipeID"] = 122581
+						},
+						{
+							["name"] = "Lightsteel Bracers",
+							["recipeID"] = 122589
+						},
+						{
+							["name"] = "Masterwork Ghost-Forged Bracers",
+							["recipeID"] = 122605
+						},
+						{
+							["name"] = "Masterwork Lightsteel Bracers",
+							["recipeID"] = 122613
+						},
+						{
+							["name"] = "Masterwork Spiritguard Bracers",
+							["recipeID"] = 122597
+						},
+						{
+							["name"] = "Spiritguard Bracers",
+							["recipeID"] = 122573
+						}
+					}
+				},
+				{
+					["name"] = "Belts",
+					["categoryID"] = 562,
+					["g"] = {
+						{
+							["name"] = "Avenger's Trillium Waistplate",
+							["recipeID"] = 142968
+						},
+						{
+							["name"] = "Blessed Trillium Belt",
+							["recipeID"] = 142963
+						},
+						{
+							["name"] = "Contender's Revenant Belt",
+							["recipeID"] = 122623
+						},
+						{
+							["name"] = "Contender's Spirit Belt",
+							["recipeID"] = 122631
+						},
+						{
+							["name"] = "Crafted Dreadful Gladiator's Clasp of Cruelty",
+							["recipeID"] = 137776
+						},
+						{
+							["name"] = "Crafted Dreadful Gladiator's Clasp of Meditation",
+							["recipeID"] = 137777
+						},
+						{
+							["name"] = "Crafted Dreadful Gladiator's Girdle of Accuracy",
+							["recipeID"] = 137787
+						},
+						{
+							["name"] = "Crafted Dreadful Gladiator's Girdle of Prowess",
+							["recipeID"] = 137788
+						},
+						{
+							["name"] = "Crafted Malevolent Gladiator's Clasp of Cruelty",
+							["recipeID"] = 143173
+						},
+						{
+							["name"] = "Crafted Malevolent Gladiator's Clasp of Meditation",
+							["recipeID"] = 143174
+						},
+						{
+							["name"] = "Crafted Malevolent Gladiator's Girdle of Accuracy",
+							["recipeID"] = 143184
+						},
+						{
+							["name"] = "Crafted Malevolent Gladiator's Girdle of Prowess",
+							["recipeID"] = 143185
+						},
+						{
+							["name"] = "Ghost-Forged Belt",
+							["recipeID"] = 122583
+						},
+						{
+							["name"] = "Lightsteel Belt",
+							["recipeID"] = 122591
+						},
+						{
+							["name"] = "Masterwork Ghost-Forged Belt",
+							["recipeID"] = 122607
+						},
+						{
+							["name"] = "Masterwork Lightsteel Belt",
+							["recipeID"] = 122615
+						},
+						{
+							["name"] = "Masterwork Spiritguard Belt",
+							["recipeID"] = 122599
+						},
+						{
+							["name"] = "Protector's Trillium Waistguard",
+							["recipeID"] = 142967
+						},
+						{
+							["name"] = "Spiritguard Belt",
+							["recipeID"] = 122575
+						}
+					}
+				},
+				{
+					["name"] = "Legs",
+					["categoryID"] = 563,
+					["g"] = {
+						{
+							["name"] = "Avenger's Trillium Legplates",
+							["recipeID"] = 142959
+						},
+						{
+							["name"] = "Blessed Trillium Greaves",
+							["recipeID"] = 142954
+						},
+						{
+							["name"] = "Contender's Revenant Legplates",
+							["recipeID"] = 122620
+						},
+						{
+							["name"] = "Contender's Spirit Legplates",
+							["recipeID"] = 122628
+						},
+						{
+							["name"] = "Crafted Dreadful Gladiator's Dreadplate Legguards",
+							["recipeID"] = 140843
+						},
+						{
+							["name"] = "Crafted Dreadful Gladiator's Ornamented Legplates",
+							["recipeID"] = 137785
+						},
+						{
+							["name"] = "Crafted Dreadful Gladiator's Plate Legguards",
+							["recipeID"] = 137796
+						},
+						{
+							["name"] = "Crafted Dreadful Gladiator's Scaled Legguards",
+							["recipeID"] = 137774
+						},
+						{
+							["name"] = "Crafted Malevolent Gladiator's Dreadplate Legguards",
+							["recipeID"] = 143166
+						},
+						{
+							["name"] = "Crafted Malevolent Gladiator's Ornamented Legplates",
+							["recipeID"] = 143182
+						},
+						{
+							["name"] = "Crafted Malevolent Gladiator's Plate Legguards",
+							["recipeID"] = 143193
+						},
+						{
+							["name"] = "Crafted Malevolent Gladiator's Scaled Legguards",
+							["recipeID"] = 143171
+						},
+						{
+							["name"] = "Ghost-Forged Legplates",
+							["recipeID"] = 122580
+						},
+						{
+							["name"] = "Lightsteel Legplates",
+							["recipeID"] = 122588
+						},
+						{
+							["name"] = "Masterwork Ghost-Forged Legplates",
+							["recipeID"] = 122604
+						},
+						{
+							["name"] = "Masterwork Lightsteel Legplates",
+							["recipeID"] = 122612
+						},
+						{
+							["name"] = "Masterwork Spiritguard Legplates",
+							["recipeID"] = 122596
+						},
+						{
+							["name"] = "Protector's Trillium Legguards",
+							["recipeID"] = 142958
+						},
+						{
+							["name"] = "Spiritguard Legplates",
+							["recipeID"] = 122572
+						}
+					}
+				},
+				{
+					["name"] = "Boots",
+					["categoryID"] = 564,
+					["g"] = {
+						{
+							["name"] = "Contender's Revenant Boots",
+							["recipeID"] = 122622
+						},
+						{
+							["name"] = "Contender's Spirit Boots",
+							["recipeID"] = 122630
+						},
+						{
+							["name"] = "Crafted Dreadful Gladiator's Greaves of Alacrity",
+							["recipeID"] = 137778
+						},
+						{
+							["name"] = "Crafted Dreadful Gladiator's Greaves of Meditation",
+							["recipeID"] = 137779
+						},
+						{
+							["name"] = "Crafted Dreadful Gladiator's Warboots of Alacrity",
+							["recipeID"] = 137790
+						},
+						{
+							["name"] = "Crafted Dreadful Gladiator's Warboots of Cruelty",
+							["recipeID"] = 137789
+						},
+						{
+							["name"] = "Crafted Malevolent Gladiator's Greaves of Alacrity",
+							["recipeID"] = 143175
+						},
+						{
+							["name"] = "Crafted Malevolent Gladiator's Greaves of Meditation",
+							["recipeID"] = 143176
+						},
+						{
+							["name"] = "Crafted Malevolent Gladiator's Warboots of Alacrity",
+							["recipeID"] = 143187
+						},
+						{
+							["name"] = "Crafted Malevolent Gladiator's Warboots of Cruelty",
+							["recipeID"] = 143186
+						},
+						{
+							["name"] = "Ghost-Forged Boots",
+							["recipeID"] = 122582
+						},
+						{
+							["name"] = "Haunted Steel Greaves",
+							["recipeID"] = 137766
+						},
+						{
+							["name"] = "Haunted Steel Treads",
+							["recipeID"] = 137768
+						},
+						{
+							["name"] = "Haunted Steel Warboots",
+							["recipeID"] = 137770
+						},
+						{
+							["name"] = "Lightsteel Boots",
+							["recipeID"] = 122590
+						},
+						{
+							["name"] = "Masterwork Ghost-Forged Boots",
+							["recipeID"] = 122606
+						},
+						{
+							["name"] = "Masterwork Lightsteel Boots",
+							["recipeID"] = 122614
+						},
+						{
+							["name"] = "Masterwork Spiritguard Boots",
+							["recipeID"] = 122598
+						},
+						{
+							["name"] = "Spiritguard Boots",
+							["recipeID"] = 122574
+						}
+					}
+				},
+				{
+					["name"] = "Shields",
+					["categoryID"] = 565,
+					["g"] = {
+						{
+							["name"] = "Crafted Malevolent Gladiator's Barrier",
+							["recipeID"] = 143195
+						},
+						{
+							["name"] = "Crafted Malevolent Gladiator's Redoubt",
+							["recipeID"] = 143196
+						},
+						{
+							["name"] = "Crafted Malevolent Gladiator's Shield Wall",
+							["recipeID"] = 143197
+						},
+						{
+							["name"] = "Lightsteel Shield",
+							["recipeID"] = 122635
+						},
+						{
+							["name"] = "Masterwork Lightsteel Shield",
+							["recipeID"] = 122642
+						},
+						{
+							["name"] = "Masterwork Spiritguard Shield",
+							["recipeID"] = 122643
+						},
+						{
+							["name"] = "Spiritguard Shield",
+							["recipeID"] = 122636
+						}
+					}
+				},
+				{
+					["name"] = "Weapons",
+					["categoryID"] = 566,
+					["g"] = {
+						{
+							["name"] = "Black Planar Edge, Reborn",
+							["recipeID"] = 138878
+						},
+						{
+							["name"] = "Blazefury, Reborn",
+							["recipeID"] = 138892
+						},
+						{
+							["name"] = "Blazeguard, Reborn",
+							["recipeID"] = 138890
+						},
+						{
+							["name"] = "Bloodmoon, Reborn",
+							["recipeID"] = 138881
+						},
+						{
+							["name"] = "Deep Thunder, Reborn",
+							["recipeID"] = 138884
+						},
+						{
+							["name"] = "Dragonmaw, Reborn",
+							["recipeID"] = 138885
+						},
+						{
+							["name"] = "Dragonstrike, Reborn",
+							["recipeID"] = 138886
+						},
+						{
+							["name"] = "Drakefist Hammer, Reborn",
+							["recipeID"] = 138882
+						},
+						{
+							["name"] = "Fireguard, Reborn",
+							["recipeID"] = 138888
+						},
+						{
+							["name"] = "Forgewire Axe",
+							["recipeID"] = 122637
+						},
+						{
+							["name"] = "Ghost Shard",
+							["recipeID"] = 122641
+						},
+						{
+							["name"] = "Ghost-Forged Blade",
+							["recipeID"] = 122638
+						},
+						{
+							["name"] = "Lionheart Blade, Reborn",
+							["recipeID"] = 138889
+						},
+						{
+							["name"] = "Lionheart Champion, Reborn",
+							["recipeID"] = 138891
+						},
+						{
+							["name"] = "Lionheart Executioner, Reborn",
+							["recipeID"] = 138893
+						},
+						{
+							["name"] = "Lunar Crescent, Reborn",
+							["recipeID"] = 138877
+						},
+						{
+							["name"] = "Masterwork Forgewire Axe",
+							["recipeID"] = 122644
+						},
+						{
+							["name"] = "Masterwork Ghost Shard",
+							["recipeID"] = 122648
+						},
+						{
+							["name"] = "Masterwork Ghost-Forged Blade",
+							["recipeID"] = 122645
+						},
+						{
+							["name"] = "Masterwork Phantasmal Hammer",
+							["recipeID"] = 122646
+						},
+						{
+							["name"] = "Masterwork Spiritblade Decimator",
+							["recipeID"] = 122647
+						},
+						{
+							["name"] = "Mooncleaver, Reborn",
+							["recipeID"] = 138879
+						},
+						{
+							["name"] = "Phantasmal Hammer",
+							["recipeID"] = 122639
+						},
+						{
+							["name"] = "Spiritblade Decimator",
+							["recipeID"] = 122640
+						},
+						{
+							["name"] = "Stormherald, Reborn",
+							["recipeID"] = 138887
+						},
+						{
+							["name"] = "The Planar Edge, Reborn",
+							["recipeID"] = 138876
+						},
+						{
+							["name"] = "Thunder, Reborn",
+							["recipeID"] = 138883
+						},
+						{
+							["name"] = "Wicked Edge of the Planes, Reborn",
+							["recipeID"] = 138880
+						}
+					}
+				},
+				{
+					["name"] = "Skeleton Keys",
+					["categoryID"] = 567,
+					["g"] = {
+						{
+							["name"] = "Ghostly Skeleton Key",
+							["recipeID"] = 122633
 						}
 					}
 				}
 			}
 		},
 		{
-			["categoryID"] = 590--[[Blackmithing Plans]],
+			["name"] = "Cataclysm Plans",
+			["categoryID"] = 569,
 			["g"] = {
 				{
-					["categoryID"] = 215--[[Materials]],
+					["name"] = "Materials",
+					["categoryID"] = 572,
 					["g"] = {
 						{
-							["recipeID"] = 16639--[[Dense Grinding Stone]]
-						},
-						{
-							["recipeID"] = 11454--[[Inlaid Mithril Cylinder]]
-						},
-						{
-							["recipeID"] = 9920--[[Solid Grinding Stone]]
-						},
-						{
-							["recipeID"] = 8768--[[Iron Buckle]]
-						},
-						{
-							["recipeID"] = 3337--[[Heavy Grinding Stone]]
-						},
-						{
-							["recipeID"] = 3326--[[Coarse Grinding Stone]]
-						},
-						{
-							["recipeID"] = 3320--[[Rough Grinding Stone]]
+							["name"] = "Folded Obsidium",
+							["recipeID"] = 76178
 						}
 					}
 				},
 				{
-					["categoryID"] = 216--[[Weapon Mods]],
+					["name"] = "Equipment Mods",
+					["categoryID"] = 574,
 					["g"] = {
 						{
-							["recipeID"] = 22757--[[Elemental Sharpening Stone]]
+							["name"] = "Ebonsteel Belt Buckle",
+							["recipeID"] = 76439
 						},
 						{
-							["recipeID"] = 16641--[[Dense Sharpening Stone]]
+							["name"] = "Elementium Shield Spike",
+							["recipeID"] = 76441
 						},
 						{
-							["recipeID"] = 16640--[[Dense Weightstone]]
+							["name"] = "Pyrium Shield Spike",
+							["recipeID"] = 76440
 						},
 						{
-							["recipeID"] = 7224--[[Steel Weapon Chain]]
-						},
-						{
-							["recipeID"] = 7222--[[Iron Counterweight]]
-						},
-						{
-							["recipeID"] = 9918--[[Solid Sharpening Stone]]
-						},
-						{
-							["recipeID"] = 9921--[[Solid Weightstone]]
-						},
-						{
-							["recipeID"] = 2674--[[Heavy Sharpening Stone]]
-						},
-						{
-							["recipeID"] = 3117--[[Heavy Weightstone]]
-						},
-						{
-							["recipeID"] = 2665--[[Coarse Sharpening Stone]]
-						},
-						{
-							["recipeID"] = 3116--[[Coarse Weightstone]]
-						},
-						{
-							["recipeID"] = 2660--[[Rough Sharpening Stone]]
-						},
-						{
-							["recipeID"] = 3115--[[Rough Weightstone]]
+							["name"] = "Pyrium Weapon Chain",
+							["recipeID"] = 76442
 						}
 					}
 				},
 				{
-					["categoryID"] = 217--[[Armor Mods]],
+					["name"] = "Armor",
+					["categoryID"] = 570,
 					["g"] = {
 						{
-							["recipeID"] = 16651--[[Thorium Shield Spike]]
+							["name"] = "Bracers of Destructive Strength",
+							["recipeID"] = 101931
 						},
 						{
-							["recipeID"] = 9964--[[Mithril Spurs]]
+							["name"] = "Elementium Deathplate",
+							["recipeID"] = 76445
 						},
 						{
-							["recipeID"] = 9939--[[Mithril Shield Spike]]
+							["name"] = "Elementium Girdle of Pain",
+							["recipeID"] = 76446
 						},
 						{
-							["recipeID"] = 7221--[[Iron Shield Spike]]
+							["name"] = "Emberforged Elementium Boots",
+							["recipeID"] = 99454
+						},
+						{
+							["name"] = "Eternal Elementium Handguards",
+							["recipeID"] = 99440
+						},
+						{
+							["name"] = "Fists of Fury",
+							["recipeID"] = 99439
+						},
+						{
+							["name"] = "Foundations of Courage",
+							["recipeID"] = 101928
+						},
+						{
+							["name"] = "Hardened Elementium Girdle",
+							["recipeID"] = 76444
+						},
+						{
+							["name"] = "Hardened Elementium Hauberk",
+							["recipeID"] = 76443
+						},
+						{
+							["name"] = "Hardened Obsidium Belt",
+							["recipeID"] = 76181
+						},
+						{
+							["name"] = "Hardened Obsidium Boots",
+							["recipeID"] = 76182
+						},
+						{
+							["name"] = "Hardened Obsidium Bracers",
+							["recipeID"] = 76179
+						},
+						{
+							["name"] = "Hardened Obsidium Breastplate",
+							["recipeID"] = 76261
+						},
+						{
+							["name"] = "Hardened Obsidium Gauntlets",
+							["recipeID"] = 76180
+						},
+						{
+							["name"] = "Hardened Obsidium Helm",
+							["recipeID"] = 76260
+						},
+						{
+							["name"] = "Hardened Obsidium Legguards",
+							["recipeID"] = 76259
+						},
+						{
+							["name"] = "Hardened Obsidium Shoulders",
+							["recipeID"] = 76258
+						},
+						{
+							["name"] = "Holy Flame Gauntlets",
+							["recipeID"] = 99441
+						},
+						{
+							["name"] = "Light Elementium Belt",
+							["recipeID"] = 76448
+						},
+						{
+							["name"] = "Light Elementium Chestguard",
+							["recipeID"] = 76447
+						},
+						{
+							["name"] = "Mirrored Boots",
+							["recipeID"] = 99453
+						},
+						{
+							["name"] = "Pyrium Legplates of Purified Evil",
+							["recipeID"] = 101924
+						},
+						{
+							["name"] = "Redsteel Belt",
+							["recipeID"] = 76264
+						},
+						{
+							["name"] = "Redsteel Boots",
+							["recipeID"] = 76265
+						},
+						{
+							["name"] = "Redsteel Bracers",
+							["recipeID"] = 76262
+						},
+						{
+							["name"] = "Redsteel Breastplate",
+							["recipeID"] = 76270
+						},
+						{
+							["name"] = "Redsteel Gauntlets",
+							["recipeID"] = 76263
+						},
+						{
+							["name"] = "Redsteel Helm",
+							["recipeID"] = 76269
+						},
+						{
+							["name"] = "Redsteel Legguards",
+							["recipeID"] = 76267
+						},
+						{
+							["name"] = "Redsteel Shoulders",
+							["recipeID"] = 76266
+						},
+						{
+							["name"] = "Soul Redeemer Bracers",
+							["recipeID"] = 101929
+						},
+						{
+							["name"] = "Stormforged Belt",
+							["recipeID"] = 76283
+						},
+						{
+							["name"] = "Stormforged Boots",
+							["recipeID"] = 76285
+						},
+						{
+							["name"] = "Stormforged Bracers",
+							["recipeID"] = 76280
+						},
+						{
+							["name"] = "Stormforged Breastplate",
+							["recipeID"] = 76289
+						},
+						{
+							["name"] = "Stormforged Gauntlets",
+							["recipeID"] = 76281
+						},
+						{
+							["name"] = "Stormforged Helm",
+							["recipeID"] = 76288
+						},
+						{
+							["name"] = "Stormforged Legguards",
+							["recipeID"] = 76287
+						},
+						{
+							["name"] = "Stormforged Shoulders",
+							["recipeID"] = 76286
+						},
+						{
+							["name"] = "Titanguard Wristplates",
+							["recipeID"] = 101932
+						},
+						{
+							["name"] = "Unstoppable Destroyer's Legplates",
+							["recipeID"] = 101925
+						},
+						{
+							["name"] = "Vicious Ornate Pyrium Belt",
+							["recipeID"] = 76467
+						},
+						{
+							["name"] = "Vicious Ornate Pyrium Boots",
+							["recipeID"] = 76468
+						},
+						{
+							["name"] = "Vicious Ornate Pyrium Bracers",
+							["recipeID"] = 76465
+						},
+						{
+							["name"] = "Vicious Ornate Pyrium Breastplate",
+							["recipeID"] = 76472
+						},
+						{
+							["name"] = "Vicious Ornate Pyrium Gauntlets",
+							["recipeID"] = 76466
+						},
+						{
+							["name"] = "Vicious Ornate Pyrium Helm",
+							["recipeID"] = 76471
+						},
+						{
+							["name"] = "Vicious Ornate Pyrium Legguards",
+							["recipeID"] = 76470
+						},
+						{
+							["name"] = "Vicious Ornate Pyrium Shoulders",
+							["recipeID"] = 76469
+						},
+						{
+							["name"] = "Vicious Pyrium Belt",
+							["recipeID"] = 76458
+						},
+						{
+							["name"] = "Vicious Pyrium Boots",
+							["recipeID"] = 76459
+						},
+						{
+							["name"] = "Vicious Pyrium Bracers",
+							["recipeID"] = 76456
+						},
+						{
+							["name"] = "Vicious Pyrium Breastplate",
+							["recipeID"] = 76464
+						},
+						{
+							["name"] = "Vicious Pyrium Gauntlets",
+							["recipeID"] = 76457
+						},
+						{
+							["name"] = "Vicious Pyrium Helm",
+							["recipeID"] = 76463
+						},
+						{
+							["name"] = "Vicious Pyrium Legguards",
+							["recipeID"] = 76462
+						},
+						{
+							["name"] = "Vicious Pyrium Shoulders",
+							["recipeID"] = 76461
+						},
+						{
+							["name"] = "Warboots of Mighty Lords",
+							["recipeID"] = 99452
 						}
 					}
 				},
 				{
-					["categoryID"] = 218--[[Helms]],
+					["name"] = "Shields",
+					["categoryID"] = 573,
 					["g"] = {
 						{
-							["recipeID"] = 23636--[[Dark Iron Helm]]
+							["name"] = "Elementium Earthguard",
+							["recipeID"] = 76454
 						},
 						{
-							["recipeID"] = 24913--[[Darkrune Helm]]
+							["name"] = "Elementium Stormshield",
+							["recipeID"] = 76455
 						},
 						{
-							["recipeID"] = 16742--[[Enchanted Thorium Helm]]
+							["name"] = "Hardened Obsidium Shield",
+							["recipeID"] = 76291
 						},
 						{
-							["recipeID"] = 16728--[[Helm of the Great Chief]]
-						},
-						{
-							["recipeID"] = 16658--[[Imperial Plate Helm]]
-						},
-						{
-							["recipeID"] = 16729--[[Lionheart Helm]]
-						},
-						{
-							["recipeID"] = 16659--[[Radiant Circlet]]
-						},
-						{
-							["recipeID"] = 16726--[[Runic Plate Helm]]
-						},
-						{
-							["recipeID"] = 16724--[[Whitesoul Helm]]
-						},
-						{
-							["recipeID"] = 16653--[[Thorium Helm]]
-						},
-						{
-							["recipeID"] = 9980--[[Ornate Mithril Helm]]
-						},
-						{
-							["recipeID"] = 9970--[[Heavy Mithril Helm]]
-						},
-						{
-							["recipeID"] = 9961--[[Mithril Coif]]
-						},
-						{
-							["recipeID"] = 9935--[[Steel Plate Helm]]
-						},
-						{
-							["recipeID"] = 3503--[[Golden Scale Coif]]
-						},
-						{
-							["recipeID"] = 9814--[[Barbaric Iron Helm]]
-						},
-						{
-							["recipeID"] = 3502--[[Green Iron Helm]]
-						},
-						{
-							["recipeID"] = 153646--[[Hardened Draenic Steel Helm]]
-						},
-						{
-							["recipeID"] = 153659--[[Peerless Draenic Steel Helm]]
-						},
-						{
-							["recipeID"] = 153608--[[Draenic Steel Helm]]
+							["name"] = "Stormforged Shield",
+							["recipeID"] = 76293
 						}
 					}
 				},
 				{
-					["categoryID"] = 219--[[Shoulders]],
+					["name"] = "Weapons",
+					["categoryID"] = 571,
 					["g"] = {
 						{
-							["recipeID"] = 24137--[[Bloodsoul Shoulders]]
+							["name"] = "Brainsplinter",
+							["recipeID"] = 99652
 						},
 						{
-							["recipeID"] = 24141--[[Darksoul Shoulders]]
+							["name"] = "Cold-Forged Shank",
+							["recipeID"] = 76434
 						},
 						{
-							["recipeID"] = 20873--[[Fiery Chain Shoulders]]
+							["name"] = "Decapitator's Razor",
+							["recipeID"] = 76433
 						},
 						{
-							["recipeID"] = 16664--[[Runic Plate Shoulders]]
+							["name"] = "Elementium Bonesplitter",
+							["recipeID"] = 76452
 						},
 						{
-							["recipeID"] = 16660--[[Dawnbringer Shoulders]]
+							["name"] = "Elementium Gutslicer",
+							["recipeID"] = 94718
 						},
 						{
-							["recipeID"] = 15295--[[Dark Iron Shoulders]]
+							["name"] = "Elementium Hammer",
+							["recipeID"] = 76450
 						},
 						{
-							["recipeID"] = 16646--[[Imperial Plate Shoulders]]
+							["name"] = "Elementium Poleaxe",
+							["recipeID"] = 76451
 						},
 						{
-							["recipeID"] = 9966--[[Mithril Scale Shoulders]]
+							["name"] = "Elementium Shank",
+							["recipeID"] = 76453
 						},
 						{
-							["recipeID"] = 9952--[[Ornate Mithril Shoulder]]
+							["name"] = "Elementium Spellblade",
+							["recipeID"] = 76449
 						},
 						{
-							["recipeID"] = 9926--[[Heavy Mithril Shoulder]]
+							["name"] = "Elementium-Edged Scalper",
+							["recipeID"] = 99655
 						},
 						{
-							["recipeID"] = 3505--[[Golden Scale Shoulders]]
+							["name"] = "Fire-Etched Dagger",
+							["recipeID"] = 76435
 						},
 						{
-							["recipeID"] = 9811--[[Barbaric Iron Shoulders]]
+							["name"] = "Forged Elementium Mindcrusher",
+							["recipeID"] = 94732
 						},
 						{
-							["recipeID"] = 3504--[[Green Iron Shoulders]]
+							["name"] = "Lifeforce Hammer",
+							["recipeID"] = 76436
 						},
 						{
-							["recipeID"] = 3330--[[Silvered Bronze Shoulders]]
+							["name"] = "Lightforged Elementium Hammer",
+							["recipeID"] = 99654
 						},
 						{
-							["recipeID"] = 3328--[[Rough Bronze Shoulders]]
+							["name"] = "Masterwork Elementium Deathblade",
+							["recipeID"] = 99658
 						},
 						{
-							["recipeID"] = 153648--[[Hardened Draenic Steel Shoulders]]
+							["name"] = "Masterwork Elementium Spellblade",
+							["recipeID"] = 99653
 						},
 						{
-							["recipeID"] = 153661--[[Peerless Draenic Steel Shoulders]]
+							["name"] = "Obsidium Bladespear",
+							["recipeID"] = 76474
 						},
 						{
-							["recipeID"] = 153610--[[Draenic Steel Shoulders]]
+							["name"] = "Obsidium Executioner",
+							["recipeID"] = 76437
+						},
+						{
+							["name"] = "Pyrium Spellward",
+							["recipeID"] = 99656
+						},
+						{
+							["name"] = "Unbreakable Guardian",
+							["recipeID"] = 99657
+						},
+						{
+							["name"] = "Witch-Hunter's Harvester",
+							["recipeID"] = 99660
 						}
 					}
 				},
 				{
-					["categoryID"] = 220--[[Chest]],
+					["name"] = "Skeleton Keys",
+					["categoryID"] = 575,
 					["g"] = {
 						{
-							["recipeID"] = 24136--[[Bloodsoul Breastplate]]
+							["name"] = "Obsidium Skeleton Key",
+							["recipeID"] = 76438
+						}
+					}
+				}
+			}
+		},
+		{
+			["name"] = "Northrend Plans",
+			["categoryID"] = 577,
+			["g"] = {
+				{
+					["name"] = "Equipment Mods",
+					["categoryID"] = 578,
+					["g"] = {
+						{
+							["name"] = "Eternal Belt Buckle",
+							["recipeID"] = 55656
 						},
 						{
-							["recipeID"] = 15296--[[Dark Iron Plate]]
+							["name"] = "Titanium Plating",
+							["recipeID"] = 62202
 						},
 						{
-							["recipeID"] = 24914--[[Darkrune Breastplate]]
+							["name"] = "Titanium Shield Spike",
+							["recipeID"] = 56357
 						},
 						{
-							["recipeID"] = 24139--[[Darksoul Breastplate]]
-						},
-						{
-							["recipeID"] = 16745--[[Enchanted Thorium Breastplate]]
-						},
-						{
-							["recipeID"] = 28242--[[Icebane Breastplate]]
-						},
-						{
-							["recipeID"] = 16663--[[Imperial Plate Chest]]
-						},
-						{
-							["recipeID"] = 16746--[[Invulnerable Mail]]
-						},
-						{
-							["recipeID"] = 28461--[[Ironvine Breastplate]]
-						},
-						{
-							["recipeID"] = 27590--[[Obsidian Mail Tunic]]
-						},
-						{
-							["recipeID"] = 16731--[[Runic Breastplate]]
-						},
-						{
-							["recipeID"] = 27587--[[Thick Obsidian Breastplate]]
-						},
-						{
-							["recipeID"] = 16667--[[Demon Forged Breastplate]]
-						},
-						{
-							["recipeID"] = 15293--[[Dark Iron Mail]]
-						},
-						{
-							["recipeID"] = 16648--[[Radiant Breastplate]]
-						},
-						{
-							["recipeID"] = 16650--[[Wildthorn Mail]]
-						},
-						{
-							["recipeID"] = 16642--[[Thorium Armor]]
-						},
-						{
-							["recipeID"] = 9974--[[Truesilver Breastplate]]
-						},
-						{
-							["recipeID"] = 9972--[[Ornate Mithril Breastplate]]
-						},
-						{
-							["recipeID"] = 9959--[[Heavy Mithril Breastplate]]
-						},
-						{
-							["recipeID"] = 9916--[[Steel Breastplate]]
-						},
-						{
-							["recipeID"] = 3511--[[Golden Scale Cuirass]]
-						},
-						{
-							["recipeID"] = 3508--[[Green Iron Hauberk]]
-						},
-						{
-							["recipeID"] = 9813--[[Barbaric Iron Breastplate]]
-						},
-						{
-							["recipeID"] = 280671--[[Barbaric Iron Hauberk]]
-						},
-						{
-							["recipeID"] = 2675--[[Shining Silver Breastplate]]
-						},
-						{
-							["recipeID"] = 2673--[[Silvered Bronze Breastplate]]
-						},
-						{
-							["recipeID"] = 8367--[[Ironforge Breastplate]]
-						},
-						{
-							["recipeID"] = 2670--[[Rough Bronze Cuirass]]
-						},
-						{
-							["recipeID"] = 2667--[[Runed Copper Breastplate]]
-						},
-						{
-							["recipeID"] = 8366--[[Ironforge Chain]]
-						},
-						{
-							["recipeID"] = 3321--[[Copper Chain Vest]]
-						},
-						{
-							["recipeID"] = 153643--[[Hardened Draenic Steel Chestplate]]
-						},
-						{
-							["recipeID"] = 153656--[[Peerless Draenic Steel Chestplate]]
-						},
-						{
-							["recipeID"] = 153605--[[Draenic Steel Chestplate]]
-						},
-						{
-							["recipeID"] = 12260--[[Rough Copper Vest]]
+							["name"] = "Titanium Weapon Chain",
+							["recipeID"] = 55839
 						}
 					}
 				},
 				{
-					["categoryID"] = 221--[[Gauntlets]],
+					["name"] = "Armor",
+					["categoryID"] = 579,
 					["g"] = {
 						{
-							["recipeID"] = 27589--[[Black Grasp of the Destroyer]]
+							["name"] = "Battlelord's Plate Boots",
+							["recipeID"] = 63188
 						},
 						{
-							["recipeID"] = 24138--[[Bloodsoul Gauntlets]]
+							["name"] = "Belt of the Titans",
+							["recipeID"] = 63187
 						},
 						{
-							["recipeID"] = 23637--[[Dark Iron Gauntlets]]
+							["name"] = "Boots of Kingly Upheaval",
+							["recipeID"] = 70568
 						},
 						{
-							["recipeID"] = 24912--[[Darkrune Gauntlets]]
+							["name"] = "Breastplate of the White Knight",
+							["recipeID"] = 67130
 						},
 						{
-							["recipeID"] = 23633--[[Gloves of the Dawn]]
+							["name"] = "Brilliant Saronite Belt",
+							["recipeID"] = 59436
 						},
 						{
-							["recipeID"] = 28243--[[Icebane Gauntlets]]
+							["name"] = "Brilliant Saronite Boots",
+							["recipeID"] = 55057
 						},
 						{
-							["recipeID"] = 28462--[[Ironvine Gloves]]
+							["name"] = "Brilliant Saronite Bracers",
+							["recipeID"] = 59438
 						},
 						{
-							["recipeID"] = 16661--[[Storm Gauntlets]]
+							["name"] = "Brilliant Saronite Breastplate",
+							["recipeID"] = 55058
 						},
 						{
-							["recipeID"] = 16741--[[Stronghold Gauntlets]]
+							["name"] = "Brilliant Saronite Gauntlets",
+							["recipeID"] = 55056
 						},
 						{
-							["recipeID"] = 16655--[[Fiery Plate Gauntlets]]
+							["name"] = "Brilliant Saronite Helm",
+							["recipeID"] = 59441
 						},
 						{
-							["recipeID"] = 16654--[[Radiant Gloves]]
+							["name"] = "Brilliant Saronite Legplates",
+							["recipeID"] = 55055
 						},
 						{
-							["recipeID"] = 9954--[[Truesilver Gauntlets]]
+							["name"] = "Brilliant Saronite Pauldrons",
+							["recipeID"] = 59440
 						},
 						{
-							["recipeID"] = 9950--[[Ornate Mithril Gloves]]
+							["name"] = "Brilliant Titansteel Helm",
+							["recipeID"] = 55374
 						},
 						{
-							["recipeID"] = 9942--[[Mithril Scale Gloves]]
+							["name"] = "Brilliant Titansteel Treads",
+							["recipeID"] = 55377
 						},
 						{
-							["recipeID"] = 9928--[[Heavy Mithril Gauntlet]]
+							["name"] = "Chestplate of Conquest",
+							["recipeID"] = 55186
 						},
 						{
-							["recipeID"] = 11643--[[Golden Scale Gauntlets]]
+							["name"] = "Cobalt Belt",
+							["recipeID"] = 52568
 						},
 						{
-							["recipeID"] = 9820--[[Barbaric Iron Gloves]]
+							["name"] = "Cobalt Boots",
+							["recipeID"] = 52569
 						},
 						{
-							["recipeID"] = 3336--[[Green Iron Gauntlets]]
+							["name"] = "Cobalt Bracers",
+							["recipeID"] = 55834
 						},
 						{
-							["recipeID"] = 8368--[[Ironforge Gauntlets]]
+							["name"] = "Cobalt Chestpiece",
+							["recipeID"] = 52570
 						},
 						{
-							["recipeID"] = 3333--[[Silvered Bronze Gauntlets]]
+							["name"] = "Cobalt Gauntlets",
+							["recipeID"] = 55835
 						},
 						{
-							["recipeID"] = 3325--[[Gemmed Copper Gauntlets]]
+							["name"] = "Cobalt Helm",
+							["recipeID"] = 52571
 						},
 						{
-							["recipeID"] = 3323--[[Runed Copper Gauntlets]]
+							["name"] = "Cobalt Legplates",
+							["recipeID"] = 52567
 						},
 						{
-							["recipeID"] = 153645--[[Hardened Draenic Steel Gauntlets]]
+							["name"] = "Cobalt Shoulders",
+							["recipeID"] = 52572
 						},
 						{
-							["recipeID"] = 153658--[[Peerless Draenic Steel Gauntlets]]
+							["name"] = "Daunting Handguards",
+							["recipeID"] = 55301
 						},
 						{
-							["recipeID"] = 153607--[[Draenic Steel Gauntlets]]
+							["name"] = "Daunting Legplates",
+							["recipeID"] = 55303
+						},
+						{
+							["name"] = "Hellfrozen Bonegrinders",
+							["recipeID"] = 70566
+						},
+						{
+							["name"] = "Helm of Command",
+							["recipeID"] = 55302
+						},
+						{
+							["name"] = "Horned Cobalt Helm",
+							["recipeID"] = 54949
+						},
+						{
+							["name"] = "Icebane Chestguard",
+							["recipeID"] = 61008
+						},
+						{
+							["name"] = "Icebane Girdle",
+							["recipeID"] = 61009
+						},
+						{
+							["name"] = "Icebane Treads",
+							["recipeID"] = 61010
+						},
+						{
+							["name"] = "Indestructible Plate Girdle",
+							["recipeID"] = 63191
+						},
+						{
+							["name"] = "Legplates of Conquest",
+							["recipeID"] = 55187
+						},
+						{
+							["name"] = "Legplates of Painful Death",
+							["recipeID"] = 70565
+						},
+						{
+							["name"] = "Ornate Saronite Bracers",
+							["recipeID"] = 56549
+						},
+						{
+							["name"] = "Ornate Saronite Gauntlets",
+							["recipeID"] = 56553
+						},
+						{
+							["name"] = "Ornate Saronite Hauberk",
+							["recipeID"] = 56555
+						},
+						{
+							["name"] = "Ornate Saronite Legplates",
+							["recipeID"] = 56554
+						},
+						{
+							["name"] = "Ornate Saronite Pauldrons",
+							["recipeID"] = 56550
+						},
+						{
+							["name"] = "Ornate Saronite Skullshield",
+							["recipeID"] = 56556
+						},
+						{
+							["name"] = "Ornate Saronite Waistguard",
+							["recipeID"] = 56551
+						},
+						{
+							["name"] = "Ornate Saronite Walkers",
+							["recipeID"] = 56552
+						},
+						{
+							["name"] = "Pillars of Might",
+							["recipeID"] = 70567
+						},
+						{
+							["name"] = "Plate Girdle of Righteousness",
+							["recipeID"] = 63189
+						},
+						{
+							["name"] = "Protectors of Life",
+							["recipeID"] = 70563
+						},
+						{
+							["name"] = "Puresteel Legplates",
+							["recipeID"] = 70562
+						},
+						{
+							["name"] = "Reinforced Cobalt Chestpiece",
+							["recipeID"] = 54981
+						},
+						{
+							["name"] = "Reinforced Cobalt Helm",
+							["recipeID"] = 54979
+						},
+						{
+							["name"] = "Reinforced Cobalt Legplates",
+							["recipeID"] = 54980
+						},
+						{
+							["name"] = "Reinforced Cobalt Shoulders",
+							["recipeID"] = 54978
+						},
+						{
+							["name"] = "Righteous Gauntlets",
+							["recipeID"] = 55300
+						},
+						{
+							["name"] = "Righteous Greaves",
+							["recipeID"] = 55304
+						},
+						{
+							["name"] = "Saronite Swordbreakers",
+							["recipeID"] = 67131
+						},
+						{
+							["name"] = "Savage Saronite Bracers",
+							["recipeID"] = 55305
+						},
+						{
+							["name"] = "Savage Saronite Gauntlets",
+							["recipeID"] = 55309
+						},
+						{
+							["name"] = "Savage Saronite Hauberk",
+							["recipeID"] = 55311
+						},
+						{
+							["name"] = "Savage Saronite Legplates",
+							["recipeID"] = 55310
+						},
+						{
+							["name"] = "Savage Saronite Pauldrons",
+							["recipeID"] = 55306
+						},
+						{
+							["name"] = "Savage Saronite Skullshield",
+							["recipeID"] = 55312
+						},
+						{
+							["name"] = "Savage Saronite Waistguard",
+							["recipeID"] = 55307
+						},
+						{
+							["name"] = "Savage Saronite Walkers",
+							["recipeID"] = 55308
+						},
+						{
+							["name"] = "Spiked Cobalt Belt",
+							["recipeID"] = 54946
+						},
+						{
+							["name"] = "Spiked Cobalt Boots",
+							["recipeID"] = 54918
+						},
+						{
+							["name"] = "Spiked Cobalt Bracers",
+							["recipeID"] = 54948
+						},
+						{
+							["name"] = "Spiked Cobalt Chestpiece",
+							["recipeID"] = 54944
+						},
+						{
+							["name"] = "Spiked Cobalt Gauntlets",
+							["recipeID"] = 54945
+						},
+						{
+							["name"] = "Spiked Cobalt Helm",
+							["recipeID"] = 54917
+						},
+						{
+							["name"] = "Spiked Cobalt Legplates",
+							["recipeID"] = 54947
+						},
+						{
+							["name"] = "Spiked Cobalt Shoulders",
+							["recipeID"] = 54941
+						},
+						{
+							["name"] = "Spiked Deathdealers",
+							["recipeID"] = 63192
+						},
+						{
+							["name"] = "Spiked Titansteel Helm",
+							["recipeID"] = 55372
+						},
+						{
+							["name"] = "Spiked Titansteel Treads",
+							["recipeID"] = 55375
+						},
+						{
+							["name"] = "Sunforged Bracers",
+							["recipeID"] = 67135
+						},
+						{
+							["name"] = "Sunforged Breastplate",
+							["recipeID"] = 67134
+						},
+						{
+							["name"] = "Tempered Saronite Belt",
+							["recipeID"] = 54551
+						},
+						{
+							["name"] = "Tempered Saronite Boots",
+							["recipeID"] = 54552
+						},
+						{
+							["name"] = "Tempered Saronite Bracers",
+							["recipeID"] = 55017
+						},
+						{
+							["name"] = "Tempered Saronite Breastplate",
+							["recipeID"] = 54553
+						},
+						{
+							["name"] = "Tempered Saronite Gauntlets",
+							["recipeID"] = 55015
+						},
+						{
+							["name"] = "Tempered Saronite Helm",
+							["recipeID"] = 54555
+						},
+						{
+							["name"] = "Tempered Saronite Legplates",
+							["recipeID"] = 54554
+						},
+						{
+							["name"] = "Tempered Saronite Shoulders",
+							["recipeID"] = 54556
+						},
+						{
+							["name"] = "Tempered Titansteel Helm",
+							["recipeID"] = 55373
+						},
+						{
+							["name"] = "Tempered Titansteel Treads",
+							["recipeID"] = 55376
+						},
+						{
+							["name"] = "Titanium Razorplate",
+							["recipeID"] = 67132
+						},
+						{
+							["name"] = "Titanium Spikeguards",
+							["recipeID"] = 67133
+						},
+						{
+							["name"] = "Treads of Destiny",
+							["recipeID"] = 63190
+						},
+						{
+							["name"] = "Vengeance Bindings",
+							["recipeID"] = 55298
 						}
 					}
 				},
 				{
-					["categoryID"] = 222--[[Bracers]],
+					["name"] = "Shields",
+					["categoryID"] = 580,
 					["g"] = {
 						{
-							["recipeID"] = 20874--[[Dark Iron Bracers]]
+							["name"] = "Cobalt Triangle Shield",
+							["recipeID"] = 54550
 						},
 						{
-							["recipeID"] = 28244--[[Icebane Bracers]]
+							["name"] = "Saronite Bulwark",
+							["recipeID"] = 55014
 						},
 						{
-							["recipeID"] = 16649--[[Imperial Plate Bracers]]
+							["name"] = "Saronite Defender",
+							["recipeID"] = 54557
 						},
 						{
-							["recipeID"] = 16644--[[Thorium Bracers]]
+							["name"] = "Saronite Protector",
+							["recipeID"] = 55013
 						},
 						{
-							["recipeID"] = 9937--[[Mithril Scale Bracers]]
-						},
-						{
-							["recipeID"] = 7223--[[Golden Scale Bracers]]
-						},
-						{
-							["recipeID"] = 3501--[[Green Iron Bracers]]
-						},
-						{
-							["recipeID"] = 2672--[[Patterned Bronze Bracers]]
-						},
-						{
-							["recipeID"] = 2671--[[Rough Bronze Bracers]]
-						},
-						{
-							["recipeID"] = 2664--[[Runed Copper Bracers]]
-						},
-						{
-							["recipeID"] = 153650--[[Hardened Draenic Steel Wristwraps]]
-						},
-						{
-							["recipeID"] = 153612--[[Draenic Steel Wristwraps]]
-						},
-						{
-							["recipeID"] = 2663--[[Copper Bracers]]
+							["name"] = "Titansteel Shield Wall",
+							["recipeID"] = 56400
 						}
 					}
 				},
 				{
-					["categoryID"] = 223--[[Belts]],
+					["name"] = "Weapons",
+					["categoryID"] = 581,
 					["g"] = {
 						{
-							["recipeID"] = 20872--[[Fiery Chain Girdle]]
+							["name"] = "Cobalt Tenderizer",
+							["recipeID"] = 55201
 						},
 						{
-							["recipeID"] = 27585--[[Heavy Obsidian Belt]]
+							["name"] = "Corroded Saronite Edge",
+							["recipeID"] = 55183
 						},
 						{
-							["recipeID"] = 28463--[[Ironvine Belt]]
+							["name"] = "Corroded Saronite Woundbringer",
+							["recipeID"] = 55184
 						},
 						{
-							["recipeID"] = 27588--[[Light Obsidian Belt]]
+							["name"] = "Cudgel of Saronite Justice",
+							["recipeID"] = 56280
 						},
 						{
-							["recipeID"] = 23632--[[Girdle of the Dawn]]
+							["name"] = "Deadly Saronite Dirk",
+							["recipeID"] = 55206
 						},
 						{
-							["recipeID"] = 23628--[[Heavy Timbermaw Belt]]
+							["name"] = "Forged Cobalt Claymore",
+							["recipeID"] = 55203
 						},
 						{
-							["recipeID"] = 16647--[[Imperial Plate Belt]]
+							["name"] = "Furious Saronite Beatstick",
+							["recipeID"] = 55182
 						},
 						{
-							["recipeID"] = 16645--[[Radiant Belt]]
+							["name"] = "Honed Cobalt Cleaver",
+							["recipeID"] = 55174
 						},
 						{
-							["recipeID"] = 16643--[[Thorium Belt]]
+							["name"] = "Notched Cobalt War Axe",
+							["recipeID"] = 55204
 						},
 						{
-							["recipeID"] = 2666--[[Runed Copper Belt]]
+							["name"] = "Saronite Ambusher",
+							["recipeID"] = 55179
 						},
 						{
-							["recipeID"] = 2661--[[Copper Chain Belt]]
+							["name"] = "Saronite Mindcrusher",
+							["recipeID"] = 55185
 						},
 						{
-							["recipeID"] = 153649--[[Hardened Draenic Steel Girdle]]
+							["name"] = "Saronite Shiv",
+							["recipeID"] = 55181
 						},
 						{
-							["recipeID"] = 153663--[[Peerless Draenic Steel Wristwraps]]
+							["name"] = "Saronite Spellblade",
+							["recipeID"] = 59442
 						},
 						{
-							["recipeID"] = 153611--[[Draenic Steel Girdle]]
+							["name"] = "Savage Cobalt Slicer",
+							["recipeID"] = 55177
+						},
+						{
+							["name"] = "Sturdy Cobalt Quickblade",
+							["recipeID"] = 55200
+						},
+						{
+							["name"] = "Titansteel Bonecrusher",
+							["recipeID"] = 55370
+						},
+						{
+							["name"] = "Titansteel Destroyer",
+							["recipeID"] = 55369
+						},
+						{
+							["name"] = "Titansteel Guardian",
+							["recipeID"] = 55371
+						},
+						{
+							["name"] = "Titansteel Shanker",
+							["recipeID"] = 56234
+						},
+						{
+							["name"] = "Titansteel Spellblade",
+							["recipeID"] = 63182
 						}
 					}
 				},
 				{
-					["categoryID"] = 224--[[Legs]],
+					["name"] = "Skeleton Keys",
+					["categoryID"] = 582,
 					["g"] = {
 						{
-							["recipeID"] = 20876--[[Dark Iron Leggings]]
+							["name"] = "Cobalt Skeleton Key",
+							["recipeID"] = 59405
 						},
 						{
-							["recipeID"] = 24140--[[Darksoul Leggings]]
+							["name"] = "Titanium Skeleton Key",
+							["recipeID"] = 59406
+						}
+					}
+				}
+			}
+		},
+		{
+			["name"] = "Outland Plans",
+			["categoryID"] = 584,
+			["g"] = {
+				{
+					["name"] = "Equipment Mods",
+					["categoryID"] = 585,
+					["g"] = {
+						{
+							["name"] = "Adamantite Sharpening Stone",
+							["recipeID"] = 29656
 						},
 						{
-							["recipeID"] = 16744--[[Enchanted Thorium Leggings]]
+							["name"] = "Adamantite Weapon Chain",
+							["recipeID"] = 42688
 						},
 						{
-							["recipeID"] = 16730--[[Imperial Plate Leggings]]
+							["name"] = "Adamantite Weightstone",
+							["recipeID"] = 34608
 						},
 						{
-							["recipeID"] = 16725--[[Radiant Leggings]]
+							["name"] = "Fel Sharpening Stone",
+							["recipeID"] = 29654
 						},
 						{
-							["recipeID"] = 16732--[[Runic Plate Leggings]]
+							["name"] = "Fel Weightstone",
+							["recipeID"] = 34607
 						},
 						{
-							["recipeID"] = 16662--[[Thorium Leggings]]
+							["name"] = "Felsteel Shield Spike",
+							["recipeID"] = 29657
 						},
 						{
-							["recipeID"] = 27829--[[Titanic Leggings]]
+							["name"] = "Greater Rune of Warding",
+							["recipeID"] = 32285
 						},
 						{
-							["recipeID"] = 9957--[[Orcish War Leggings]]
+							["name"] = "Greater Ward of Shielding",
+							["recipeID"] = 29729
 						},
 						{
-							["recipeID"] = 9945--[[Ornate Mithril Pants]]
+							["name"] = "Lesser Rune of Warding",
+							["recipeID"] = 32284
 						},
 						{
-							["recipeID"] = 9933--[[Heavy Mithril Pants]]
-						},
-						{
-							["recipeID"] = 9931--[[Mithril Scale Pants]]
-						},
-						{
-							["recipeID"] = 3507--[[Golden Scale Leggings]]
-						},
-						{
-							["recipeID"] = 3506--[[Green Iron Leggings]]
-						},
-						{
-							["recipeID"] = 12259--[[Silvered Bronze Leggings]]
-						},
-						{
-							["recipeID"] = 2668--[[Rough Bronze Leggings]]
-						},
-						{
-							["recipeID"] = 3324--[[Runed Copper Pants]]
-						},
-						{
-							["recipeID"] = 153647--[[Hardened Draenic Steel Legguards]]
-						},
-						{
-							["recipeID"] = 153660--[[Peerless Draenic Steel Legguards]]
-						},
-						{
-							["recipeID"] = 153609--[[Draenic Steel Legguards]]
-						},
-						{
-							["recipeID"] = 2662--[[Copper Chain Pants]]
+							["name"] = "Lesser Ward of Shielding",
+							["recipeID"] = 29728
 						}
 					}
 				},
 				{
-					["categoryID"] = 225--[[Boots]],
+					["name"] = "Armor",
+					["categoryID"] = 586,
 					["g"] = {
 						{
-							["recipeID"] = 24399--[[Dark Iron Boots]]
+							["name"] = "Adamantite Breastplate",
+							["recipeID"] = 29606
 						},
 						{
-							["recipeID"] = 23629--[[Heavy Timbermaw Boots]]
+							["name"] = "Adamantite Plate Bracers",
+							["recipeID"] = 29603
 						},
 						{
-							["recipeID"] = 16657--[[Imperial Plate Boots]]
+							["name"] = "Adamantite Plate Gloves",
+							["recipeID"] = 29605
 						},
 						{
-							["recipeID"] = 16665--[[Runic Plate Boots]]
+							["name"] = "Belt of the Guardian",
+							["recipeID"] = 36389
 						},
 						{
-							["recipeID"] = 16656--[[Radiant Boots]]
+							["name"] = "Black Felsteel Bracers",
+							["recipeID"] = 29669
 						},
 						{
-							["recipeID"] = 16652--[[Thorium Boots]]
+							["name"] = "Blessed Bracers",
+							["recipeID"] = 29672
 						},
 						{
-							["recipeID"] = 9979--[[Ornate Mithril Boots]]
+							["name"] = "Boots of the Protector",
+							["recipeID"] = 36391
 						},
 						{
-							["recipeID"] = 9968--[[Heavy Mithril Boots]]
+							["name"] = "Bracers of the Green Fortress",
+							["recipeID"] = 29671
 						},
 						{
-							["recipeID"] = 3515--[[Golden Scale Boots]]
+							["name"] = "Breastplate of Kings",
+							["recipeID"] = 34533
 						},
 						{
-							["recipeID"] = 3513--[[Polished Steel Boots]]
+							["name"] = "Bulwark of Kings",
+							["recipeID"] = 34534
 						},
 						{
-							["recipeID"] = 9818--[[Barbaric Iron Boots]]
+							["name"] = "Bulwark of the Ancient Kings",
+							["recipeID"] = 36257
 						},
 						{
-							["recipeID"] = 3334--[[Green Iron Boots]]
+							["name"] = "Dawnsteel Bracers",
+							["recipeID"] = 41134
 						},
 						{
-							["recipeID"] = 3331--[[Silvered Bronze Boots]]
+							["name"] = "Dawnsteel Shoulders",
+							["recipeID"] = 41135
 						},
 						{
-							["recipeID"] = 7817--[[Rough Bronze Boots]]
+							["name"] = "Earthforged Leggings",
+							["recipeID"] = 36122
 						},
 						{
-							["recipeID"] = 153644--[[Hardened Draenic Steel Warboots]]
+							["name"] = "Earthpeace Breastplate",
+							["recipeID"] = 29649
 						},
 						{
-							["recipeID"] = 153657--[[Peerless Draenic Steel Warboots]]
+							["name"] = "Embrace of the Twisting Nether",
+							["recipeID"] = 36256
 						},
 						{
-							["recipeID"] = 153606--[[Draenic Steel Warboots]]
+							["name"] = "Enchanted Adamantite Belt",
+							["recipeID"] = 29608
 						},
 						{
-							["recipeID"] = 3319--[[Copper Chain Boots]]
+							["name"] = "Enchanted Adamantite Boots",
+							["recipeID"] = 29611
+						},
+						{
+							["name"] = "Enchanted Adamantite Breastplate",
+							["recipeID"] = 29610
+						},
+						{
+							["name"] = "Enchanted Adamantite Leggings",
+							["recipeID"] = 29613
+						},
+						{
+							["name"] = "Fel Iron Breastplate",
+							["recipeID"] = 29550
+						},
+						{
+							["name"] = "Fel Iron Chain Bracers",
+							["recipeID"] = 29553
+						},
+						{
+							["name"] = "Fel Iron Chain Coif",
+							["recipeID"] = 29551
+						},
+						{
+							["name"] = "Fel Iron Chain Gloves",
+							["recipeID"] = 29552
+						},
+						{
+							["name"] = "Fel Iron Chain Tunic",
+							["recipeID"] = 29556
+						},
+						{
+							["name"] = "Fel Iron Plate Belt",
+							["recipeID"] = 29547
+						},
+						{
+							["name"] = "Fel Iron Plate Boots",
+							["recipeID"] = 29548
+						},
+						{
+							["name"] = "Fel Iron Plate Gloves",
+							["recipeID"] = 29545
+						},
+						{
+							["name"] = "Fel Iron Plate Pants",
+							["recipeID"] = 29549
+						},
+						{
+							["name"] = "Felfury Gauntlets",
+							["recipeID"] = 29658
+						},
+						{
+							["name"] = "Felsteel Gloves",
+							["recipeID"] = 29619
+						},
+						{
+							["name"] = "Felsteel Helm",
+							["recipeID"] = 29621
+						},
+						{
+							["name"] = "Felsteel Leggings",
+							["recipeID"] = 29620
+						},
+						{
+							["name"] = "Flamebane Bracers",
+							["recipeID"] = 29614
+						},
+						{
+							["name"] = "Flamebane Breastplate",
+							["recipeID"] = 29617
+						},
+						{
+							["name"] = "Flamebane Gloves",
+							["recipeID"] = 29616
+						},
+						{
+							["name"] = "Flamebane Helm",
+							["recipeID"] = 29615
+						},
+						{
+							["name"] = "Gauntlets of the Iron Tower",
+							["recipeID"] = 29622
+						},
+						{
+							["name"] = "Hard Khorium Battlefists",
+							["recipeID"] = 46141
+						},
+						{
+							["name"] = "Hard Khorium Battleplate",
+							["recipeID"] = 46144
+						},
+						{
+							["name"] = "Heavy Earthforged Breastplate",
+							["recipeID"] = 36129
+						},
+						{
+							["name"] = "Helm of the Stalwart Defender",
+							["recipeID"] = 29664
+						},
+						{
+							["name"] = "Iceguard Breastplate",
+							["recipeID"] = 38477
+						},
+						{
+							["name"] = "Iceguard Helm",
+							["recipeID"] = 38479
+						},
+						{
+							["name"] = "Iceguard Leggings",
+							["recipeID"] = 38478
+						},
+						{
+							["name"] = "Khorium Belt",
+							["recipeID"] = 29628
+						},
+						{
+							["name"] = "Khorium Boots",
+							["recipeID"] = 29630
+						},
+						{
+							["name"] = "Khorium Pants",
+							["recipeID"] = 29629
+						},
+						{
+							["name"] = "Nether Chain Shirt",
+							["recipeID"] = 34529
+						},
+						{
+							["name"] = "Oathkeeper's Helm",
+							["recipeID"] = 29668
+						},
+						{
+							["name"] = "Ragesteel Breastplate",
+							["recipeID"] = 29645
+						},
+						{
+							["name"] = "Ragesteel Gloves",
+							["recipeID"] = 29642
+						},
+						{
+							["name"] = "Ragesteel Helm",
+							["recipeID"] = 29643
+						},
+						{
+							["name"] = "Ragesteel Shoulders",
+							["recipeID"] = 42662
+						},
+						{
+							["name"] = "Red Belt of Battle",
+							["recipeID"] = 36390
+						},
+						{
+							["name"] = "Red Havoc Boots",
+							["recipeID"] = 36392
+						},
+						{
+							["name"] = "Shadesteel Bracers",
+							["recipeID"] = 40034
+						},
+						{
+							["name"] = "Shadesteel Girdle",
+							["recipeID"] = 40036
+						},
+						{
+							["name"] = "Shadesteel Greaves",
+							["recipeID"] = 40035
+						},
+						{
+							["name"] = "Shadesteel Sabots",
+							["recipeID"] = 40033
+						},
+						{
+							["name"] = "Steelgrip Gauntlets",
+							["recipeID"] = 29662
+						},
+						{
+							["name"] = "Storm Helm",
+							["recipeID"] = 29663
+						},
+						{
+							["name"] = "Stormforged Hauberk",
+							["recipeID"] = 36130
+						},
+						{
+							["name"] = "Sunblessed Breastplate",
+							["recipeID"] = 46142
+						},
+						{
+							["name"] = "Sunblessed Gauntlets",
+							["recipeID"] = 46140
+						},
+						{
+							["name"] = "Swiftsteel Bracers",
+							["recipeID"] = 41132
+						},
+						{
+							["name"] = "Swiftsteel Gloves",
+							["recipeID"] = 29648
+						},
+						{
+							["name"] = "Swiftsteel Shoulders",
+							["recipeID"] = 41133
+						},
+						{
+							["name"] = "Twisting Nether Chain Shirt",
+							["recipeID"] = 34530
+						},
+						{
+							["name"] = "Wildguard Breastplate",
+							["recipeID"] = 38473
+						},
+						{
+							["name"] = "Wildguard Helm",
+							["recipeID"] = 38476
+						},
+						{
+							["name"] = "Wildguard Leggings",
+							["recipeID"] = 38475
+						},
+						{
+							["name"] = "Windforged Leggings",
+							["recipeID"] = 36124
 						}
 					}
 				},
 				{
-					["categoryID"] = 226--[[Shields]],
+					["name"] = "Weapons",
+					["categoryID"] = 588,
 					["g"] = {
 						{
-							["recipeID"] = 27586--[[Jagged Obsidian Shield]]
+							["name"] = "Adamantite Cleaver",
+							["recipeID"] = 29568
 						},
 						{
-							["recipeID"] = 153655--[[Hardened Draenic Steel Bulwark]]
+							["name"] = "Adamantite Dagger",
+							["recipeID"] = 29569
 						},
 						{
-							["recipeID"] = 153668--[[Peerless Draenic Steel Bulwark]]
+							["name"] = "Adamantite Maul",
+							["recipeID"] = 29566
 						},
 						{
-							["recipeID"] = 153631--[[Draenic Steel Bulwark]]
+							["name"] = "Adamantite Rapier",
+							["recipeID"] = 29571
+						},
+						{
+							["name"] = "Black Planar Edge",
+							["recipeID"] = 34542
+						},
+						{
+							["name"] = "Blazefury",
+							["recipeID"] = 36258
+						},
+						{
+							["name"] = "Blazeguard",
+							["recipeID"] = 34537
+						},
+						{
+							["name"] = "Bloodmoon",
+							["recipeID"] = 36261
+						},
+						{
+							["name"] = "Deep Thunder",
+							["recipeID"] = 34548
+						},
+						{
+							["name"] = "Dirge",
+							["recipeID"] = 29699
+						},
+						{
+							["name"] = "Dragonmaw",
+							["recipeID"] = 34546
+						},
+						{
+							["name"] = "Dragonstrike",
+							["recipeID"] = 36262
+						},
+						{
+							["name"] = "Drakefist Hammer",
+							["recipeID"] = 34545
+						},
+						{
+							["name"] = "Eternium Runed Blade",
+							["recipeID"] = 29698
+						},
+						{
+							["name"] = "Fel Edged Battleaxe",
+							["recipeID"] = 29694
+						},
+						{
+							["name"] = "Fel Hardened Maul",
+							["recipeID"] = 29697
+						},
+						{
+							["name"] = "Fel Iron Greatsword",
+							["recipeID"] = 29565
+						},
+						{
+							["name"] = "Fel Iron Hammer",
+							["recipeID"] = 29558
+						},
+						{
+							["name"] = "Fel Iron Hatchet",
+							["recipeID"] = 29557
+						},
+						{
+							["name"] = "Felsteel Longblade",
+							["recipeID"] = 29692
+						},
+						{
+							["name"] = "Felsteel Reaper",
+							["recipeID"] = 29695
+						},
+						{
+							["name"] = "Fireguard",
+							["recipeID"] = 34535
+						},
+						{
+							["name"] = "Great Earthforged Hammer",
+							["recipeID"] = 36137
+						},
+						{
+							["name"] = "Hammer of Righteous Might",
+							["recipeID"] = 43846
+						},
+						{
+							["name"] = "Hand of Eternity",
+							["recipeID"] = 29700
+						},
+						{
+							["name"] = "Khorium Champion",
+							["recipeID"] = 29693
+						},
+						{
+							["name"] = "Lavaforged Warhammer",
+							["recipeID"] = 36136
+						},
+						{
+							["name"] = "Light Emberforged Hammer",
+							["recipeID"] = 36128
+						},
+						{
+							["name"] = "Light Skyforged Axe",
+							["recipeID"] = 36126
+						},
+						{
+							["name"] = "Lionheart Blade",
+							["recipeID"] = 34538
+						},
+						{
+							["name"] = "Lionheart Champion",
+							["recipeID"] = 34540
+						},
+						{
+							["name"] = "Lionheart Executioner",
+							["recipeID"] = 36259
+						},
+						{
+							["name"] = "Lunar Crescent",
+							["recipeID"] = 34543
+						},
+						{
+							["name"] = "Mooncleaver",
+							["recipeID"] = 34544
+						},
+						{
+							["name"] = "Runic Hammer",
+							["recipeID"] = 29696
+						},
+						{
+							["name"] = "Skyforged Great Axe",
+							["recipeID"] = 36135
+						},
+						{
+							["name"] = "Stoneforged Claymore",
+							["recipeID"] = 36133
+						},
+						{
+							["name"] = "Stormforged Axe",
+							["recipeID"] = 36134
+						},
+						{
+							["name"] = "Stormherald",
+							["recipeID"] = 36263
+						},
+						{
+							["name"] = "The Planar Edge",
+							["recipeID"] = 34541
+						},
+						{
+							["name"] = "Thunder",
+							["recipeID"] = 34547
+						},
+						{
+							["name"] = "Wicked Edge of the Planes",
+							["recipeID"] = 36260
+						},
+						{
+							["name"] = "Windforged Rapier",
+							["recipeID"] = 36131
+						}
+					}
+				}
+			}
+		},
+		{
+			["name"] = "Blackmithing Plans",
+			["categoryID"] = 590,
+			["g"] = {
+				{
+					["name"] = "Materials",
+					["categoryID"] = 215,
+					["g"] = {
+						{
+							["name"] = "Coarse Grinding Stone",
+							["recipeID"] = 3326
+						},
+						{
+							["name"] = "Dense Grinding Stone",
+							["recipeID"] = 16639
+						},
+						{
+							["name"] = "Heavy Grinding Stone",
+							["recipeID"] = 3337
+						},
+						{
+							["name"] = "Inlaid Mithril Cylinder",
+							["recipeID"] = 11454
+						},
+						{
+							["name"] = "Iron Buckle",
+							["recipeID"] = 8768
+						},
+						{
+							["name"] = "Rough Grinding Stone",
+							["recipeID"] = 3320
+						},
+						{
+							["name"] = "Solid Grinding Stone",
+							["recipeID"] = 9920
 						}
 					}
 				},
 				{
-					["categoryID"] = 227--[[Weapons]],
+					["name"] = "Weapon Mods",
+					["categoryID"] = 216,
 					["g"] = {
 						{
-							["recipeID"] = 16991--[[Annihilator]]
+							["name"] = "Coarse Sharpening Stone",
+							["recipeID"] = 2665
 						},
 						{
-							["recipeID"] = 16990--[[Arcanite Champion]]
+							["name"] = "Coarse Weightstone",
+							["recipeID"] = 3116
 						},
 						{
-							["recipeID"] = 16994--[[Arcanite Reaper]]
+							["name"] = "Dense Sharpening Stone",
+							["recipeID"] = 16641
 						},
 						{
-							["recipeID"] = 23638--[[Black Amnesty]]
+							["name"] = "Dense Weightstone",
+							["recipeID"] = 16640
 						},
 						{
-							["recipeID"] = 23639--[[Blackfury]]
+							["name"] = "Elemental Sharpening Stone",
+							["recipeID"] = 22757
 						},
 						{
-							["recipeID"] = 23652--[[Blackguard]]
+							["name"] = "Heavy Sharpening Stone",
+							["recipeID"] = 2674
 						},
 						{
-							["recipeID"] = 16986--[[Blood Talon]]
+							["name"] = "Heavy Weightstone",
+							["recipeID"] = 3117
 						},
 						{
-							["recipeID"] = 20897--[[Dark Iron Destroyer]]
+							["name"] = "Iron Counterweight",
+							["recipeID"] = 7222
 						},
 						{
-							["recipeID"] = 20890--[[Dark Iron Reaver]]
+							["name"] = "Rough Sharpening Stone",
+							["recipeID"] = 2660
 						},
 						{
-							["recipeID"] = 16987--[[Darkspear]]
+							["name"] = "Rough Weightstone",
+							["recipeID"] = 3115
 						},
 						{
-							["recipeID"] = 23650--[[Ebon Hand]]
+							["name"] = "Solid Sharpening Stone",
+							["recipeID"] = 9918
 						},
 						{
-							["recipeID"] = 16992--[[Frostguard]]
+							["name"] = "Solid Weightstone",
+							["recipeID"] = 9921
 						},
 						{
-							["recipeID"] = 16988--[[Hammer of the Titans]]
-						},
-						{
-							["recipeID"] = 16995--[[Heartseeker]]
-						},
-						{
-							["recipeID"] = 16993--[[Masterwork Stormhammer]]
-						},
-						{
-							["recipeID"] = 23653--[[Nightfall]]
-						},
-						{
-							["recipeID"] = 27830--[[Persuader]]
-						},
-						{
-							["recipeID"] = 27832--[[Sageblade]]
-						},
-						{
-							["recipeID"] = 21161--[[Sulfuron Hammer]]
-						},
-						{
-							["recipeID"] = 16985--[[Corruption]]
-						},
-						{
-							["recipeID"] = 15294--[[Dark Iron Sunderer]]
-						},
-						{
-							["recipeID"] = 16980--[[Rune Edge]]
-						},
-						{
-							["recipeID"] = 16983--[[Serenity]]
-						},
-						{
-							["recipeID"] = 16984--[[Volcanic Hammer]]
-						},
-						{
-							["recipeID"] = 16978--[[Blazing Rapier]]
-						},
-						{
-							["recipeID"] = 16973--[[Enchanted Battlehammer]]
-						},
-						{
-							["recipeID"] = 16971--[[Huge Thorium Battleaxe]]
-						},
-						{
-							["recipeID"] = 15292--[[Dark Iron Pulverizer]]
-						},
-						{
-							["recipeID"] = 16970--[[Dawn's Edge]]
-						},
-						{
-							["recipeID"] = 16969--[[Ornate Thorium Handaxe]]
-						},
-						{
-							["recipeID"] = 16965--[[Bleakwood Hew]]
-						},
-						{
-							["recipeID"] = 16967--[[Inlaid Thorium Hammer]]
-						},
-						{
-							["recipeID"] = 36125--[[Light Earthforged Blade]]
-						},
-						{
-							["recipeID"] = 16960--[[Thorium Greatsword]]
-						},
-						{
-							["recipeID"] = 10015--[[Truesilver Champion]]
-						},
-						{
-							["recipeID"] = 10013--[[Ebon Shiv]]
-						},
-						{
-							["recipeID"] = 10011--[[Blight]]
-						},
-						{
-							["recipeID"] = 10007--[[Phantom Blade]]
-						},
-						{
-							["recipeID"] = 10009--[[Runed Mithril Hammer]]
-						},
-						{
-							["recipeID"] = 10005--[[Dazzling Mithril Rapier]]
-						},
-						{
-							["recipeID"] = 10003--[[The Shatterer]]
-						},
-						{
-							["recipeID"] = 10001--[[Big Black Mace]]
-						},
-						{
-							["recipeID"] = 9997--[[Wicked Mithril Blade]]
-						},
-						{
-							["recipeID"] = 9995--[[Blue Glittering Axe]]
-						},
-						{
-							["recipeID"] = 9993--[[Heavy Mithril Axe]]
-						},
-						{
-							["recipeID"] = 3497--[[Frost Tiger Blade]]
-						},
-						{
-							["recipeID"] = 3500--[[Shadow Crescent Axe]]
-						},
-						{
-							["recipeID"] = 15973--[[Searing Golden Blade]]
-						},
-						{
-							["recipeID"] = 21913--[[Edge of Winter]]
-						},
-						{
-							["recipeID"] = 3498--[[Massive Iron Axe]]
-						},
-						{
-							["recipeID"] = 15972--[[Glinting Steel Dagger]]
-						},
-						{
-							["recipeID"] = 3496--[[Moonsteel Broadsword]]
-						},
-						{
-							["recipeID"] = 3493--[[Jade Serpentblade]]
-						},
-						{
-							["recipeID"] = 3495--[[Golden Iron Destroyer]]
-						},
-						{
-							["recipeID"] = 3492--[[Hardened Iron Shortsword]]
-						},
-						{
-							["recipeID"] = 3494--[[Solid Iron Maul]]
-						},
-						{
-							["recipeID"] = 3297--[[Mighty Iron Hammer]]
-						},
-						{
-							["recipeID"] = 6518--[[Iridescent Hammer]]
-						},
-						{
-							["recipeID"] = 9987--[[Bronze Battle Axe]]
-						},
-						{
-							["recipeID"] = 9986--[[Bronze Greatsword]]
-						},
-						{
-							["recipeID"] = 3296--[[Heavy Bronze Mace]]
-						},
-						{
-							["recipeID"] = 9985--[[Bronze Warhammer]]
-						},
-						{
-							["recipeID"] = 3295--[[Deadly Bronze Poniard]]
-						},
-						{
-							["recipeID"] = 2742--[[Bronze Shortsword]]
-						},
-						{
-							["recipeID"] = 2741--[[Bronze Axe]]
-						},
-						{
-							["recipeID"] = 3292--[[Heavy Copper Broadsword]]
-						},
-						{
-							["recipeID"] = 6517--[[Pearl-handled Dagger]]
-						},
-						{
-							["recipeID"] = 2740--[[Bronze Mace]]
-						},
-						{
-							["recipeID"] = 3491--[[Big Bronze Knife]]
-						},
-						{
-							["recipeID"] = 3294--[[Thick War Axe]]
-						},
-						{
-							["recipeID"] = 7408--[[Heavy Copper Maul]]
-						},
-						{
-							["recipeID"] = 3293--[[Copper Battle Axe]]
-						},
-						{
-							["recipeID"] = 43549--[[Heavy Copper Longsword]]
-						},
-						{
-							["recipeID"] = 9983--[[Copper Claymore]]
-						},
-						{
-							["recipeID"] = 8880--[[Copper Dagger]]
-						},
-						{
-							["recipeID"] = 2739--[[Copper Shortsword]]
-						},
-						{
-							["recipeID"] = 153653--[[Hardened Draenic Steel Dagger]]
-						},
-						{
-							["recipeID"] = 153654--[[Hardened Draenic Steel Mace]]
-						},
-						{
-							["recipeID"] = 153652--[[Hardened Draenic Steel Sword]]
-						},
-						{
-							["recipeID"] = 153651--[[Hardened Draenic Steel War Axe]]
-						},
-						{
-							["recipeID"] = 153666--[[Peerless Draenic Steel Dagger]]
-						},
-						{
-							["recipeID"] = 153667--[[Peerless Draenic Steel Mace]]
-						},
-						{
-							["recipeID"] = 153665--[[Peerless Draenic Steel Sword]]
-						},
-						{
-							["recipeID"] = 153664--[[Peerless Draenic Steel War Axe]]
-						},
-						{
-							["recipeID"] = 153629--[[Draenic Steel Dagger]]
-						},
-						{
-							["recipeID"] = 153630--[[Draenic Steel Mace]]
-						},
-						{
-							["recipeID"] = 153628--[[Draenic Steel Sword]]
-						},
-						{
-							["recipeID"] = 153627--[[Draenic Steel War Axe]]
-						},
-						{
-							["recipeID"] = 2738--[[Copper Axe]]
-						},
-						{
-							["recipeID"] = 2737--[[Copper Mace]]
+							["name"] = "Steel Weapon Chain",
+							["recipeID"] = 7224
 						}
 					}
 				},
 				{
-					["categoryID"] = 228--[[Skeleton Keys]],
+					["name"] = "Armor Mods",
+					["categoryID"] = 217,
 					["g"] = {
 						{
-							["recipeID"] = 19669--[[Arcanite Skeleton Key]]
+							["name"] = "Iron Shield Spike",
+							["recipeID"] = 7221
 						},
 						{
-							["recipeID"] = 19668--[[Truesilver Skeleton Key]]
+							["name"] = "Mithril Shield Spike",
+							["recipeID"] = 9939
 						},
 						{
-							["recipeID"] = 19667--[[Golden Skeleton Key]]
+							["name"] = "Mithril Spurs",
+							["recipeID"] = 9964
 						},
 						{
-							["recipeID"] = 19666--[[Silver Skeleton Key]]
+							["name"] = "Thorium Shield Spike",
+							["recipeID"] = 16651
+						}
+					}
+				},
+				{
+					["name"] = "Helms",
+					["categoryID"] = 218,
+					["g"] = {
+						{
+							["name"] = "Barbaric Iron Helm",
+							["recipeID"] = 9814
+						},
+						{
+							["name"] = "Dark Iron Helm",
+							["recipeID"] = 23636
+						},
+						{
+							["name"] = "Darkrune Helm",
+							["recipeID"] = 24913
+						},
+						{
+							["name"] = "Draenic Steel Helm",
+							["recipeID"] = 153608
+						},
+						{
+							["name"] = "Enchanted Thorium Helm",
+							["recipeID"] = 16742
+						},
+						{
+							["name"] = "Golden Scale Coif",
+							["recipeID"] = 3503
+						},
+						{
+							["name"] = "Green Iron Helm",
+							["recipeID"] = 3502
+						},
+						{
+							["name"] = "Hardened Draenic Steel Helm",
+							["recipeID"] = 153646
+						},
+						{
+							["name"] = "Heavy Mithril Helm",
+							["recipeID"] = 9970
+						},
+						{
+							["name"] = "Helm of the Great Chief",
+							["recipeID"] = 16728
+						},
+						{
+							["name"] = "Imperial Plate Helm",
+							["recipeID"] = 16658
+						},
+						{
+							["name"] = "Lionheart Helm",
+							["recipeID"] = 16729
+						},
+						{
+							["name"] = "Mithril Coif",
+							["recipeID"] = 9961
+						},
+						{
+							["name"] = "Ornate Mithril Helm",
+							["recipeID"] = 9980
+						},
+						{
+							["name"] = "Peerless Draenic Steel Helm",
+							["recipeID"] = 153659
+						},
+						{
+							["name"] = "Radiant Circlet",
+							["recipeID"] = 16659
+						},
+						{
+							["name"] = "Runic Plate Helm",
+							["recipeID"] = 16726
+						},
+						{
+							["name"] = "Steel Plate Helm",
+							["recipeID"] = 9935
+						},
+						{
+							["name"] = "Thorium Helm",
+							["recipeID"] = 16653
+						},
+						{
+							["name"] = "Whitesoul Helm",
+							["recipeID"] = 16724
+						}
+					}
+				},
+				{
+					["name"] = "Shoulders",
+					["categoryID"] = 219,
+					["g"] = {
+						{
+							["name"] = "Barbaric Iron Shoulders",
+							["recipeID"] = 9811
+						},
+						{
+							["name"] = "Bloodsoul Shoulders",
+							["recipeID"] = 24137
+						},
+						{
+							["name"] = "Dark Iron Shoulders",
+							["recipeID"] = 15295
+						},
+						{
+							["name"] = "Darksoul Shoulders",
+							["recipeID"] = 24141
+						},
+						{
+							["name"] = "Dawnbringer Shoulders",
+							["recipeID"] = 16660
+						},
+						{
+							["name"] = "Draenic Steel Shoulders",
+							["recipeID"] = 153610
+						},
+						{
+							["name"] = "Fiery Chain Shoulders",
+							["recipeID"] = 20873
+						},
+						{
+							["name"] = "Golden Scale Shoulders",
+							["recipeID"] = 3505
+						},
+						{
+							["name"] = "Green Iron Shoulders",
+							["recipeID"] = 3504
+						},
+						{
+							["name"] = "Hardened Draenic Steel Shoulders",
+							["recipeID"] = 153648
+						},
+						{
+							["name"] = "Heavy Mithril Shoulder",
+							["recipeID"] = 9926
+						},
+						{
+							["name"] = "Imperial Plate Shoulders",
+							["recipeID"] = 16646
+						},
+						{
+							["name"] = "Mithril Scale Shoulders",
+							["recipeID"] = 9966
+						},
+						{
+							["name"] = "Ornate Mithril Shoulder",
+							["recipeID"] = 9952
+						},
+						{
+							["name"] = "Peerless Draenic Steel Shoulders",
+							["recipeID"] = 153661
+						},
+						{
+							["name"] = "Rough Bronze Shoulders",
+							["recipeID"] = 3328
+						},
+						{
+							["name"] = "Runic Plate Shoulders",
+							["recipeID"] = 16664
+						},
+						{
+							["name"] = "Silvered Bronze Shoulders",
+							["recipeID"] = 3330
+						}
+					}
+				},
+				{
+					["name"] = "Chest",
+					["categoryID"] = 220,
+					["g"] = {
+						{
+							["name"] = "Barbaric Iron Breastplate",
+							["recipeID"] = 9813
+						},
+						{
+							["name"] = "Barbaric Iron Hauberk",
+							["recipeID"] = 280671
+						},
+						{
+							["name"] = "Bloodsoul Breastplate",
+							["recipeID"] = 24136
+						},
+						{
+							["name"] = "Copper Chain Vest",
+							["recipeID"] = 3321
+						},
+						{
+							["name"] = "Dark Iron Mail",
+							["recipeID"] = 15293
+						},
+						{
+							["name"] = "Dark Iron Plate",
+							["recipeID"] = 15296
+						},
+						{
+							["name"] = "Darkrune Breastplate",
+							["recipeID"] = 24914
+						},
+						{
+							["name"] = "Darksoul Breastplate",
+							["recipeID"] = 24139
+						},
+						{
+							["name"] = "Demon Forged Breastplate",
+							["recipeID"] = 16667
+						},
+						{
+							["name"] = "Draenic Steel Chestplate",
+							["recipeID"] = 153605
+						},
+						{
+							["name"] = "Enchanted Thorium Breastplate",
+							["recipeID"] = 16745
+						},
+						{
+							["name"] = "Golden Scale Cuirass",
+							["recipeID"] = 3511
+						},
+						{
+							["name"] = "Green Iron Hauberk",
+							["recipeID"] = 3508
+						},
+						{
+							["name"] = "Hardened Draenic Steel Chestplate",
+							["recipeID"] = 153643
+						},
+						{
+							["name"] = "Heavy Mithril Breastplate",
+							["recipeID"] = 9959
+						},
+						{
+							["name"] = "Icebane Breastplate",
+							["recipeID"] = 28242
+						},
+						{
+							["name"] = "Imperial Plate Chest",
+							["recipeID"] = 16663
+						},
+						{
+							["name"] = "Invulnerable Mail",
+							["recipeID"] = 16746
+						},
+						{
+							["name"] = "Ironforge Breastplate",
+							["recipeID"] = 8367
+						},
+						{
+							["name"] = "Ironforge Chain",
+							["recipeID"] = 8366
+						},
+						{
+							["name"] = "Ironvine Breastplate",
+							["recipeID"] = 28461
+						},
+						{
+							["name"] = "Obsidian Mail Tunic",
+							["recipeID"] = 27590
+						},
+						{
+							["name"] = "Ornate Mithril Breastplate",
+							["recipeID"] = 9972
+						},
+						{
+							["name"] = "Peerless Draenic Steel Chestplate",
+							["recipeID"] = 153656
+						},
+						{
+							["name"] = "Radiant Breastplate",
+							["recipeID"] = 16648
+						},
+						{
+							["name"] = "Rough Bronze Cuirass",
+							["recipeID"] = 2670
+						},
+						{
+							["name"] = "Rough Copper Vest",
+							["recipeID"] = 12260
+						},
+						{
+							["name"] = "Runed Copper Breastplate",
+							["recipeID"] = 2667
+						},
+						{
+							["name"] = "Runic Breastplate",
+							["recipeID"] = 16731
+						},
+						{
+							["name"] = "Shining Silver Breastplate",
+							["recipeID"] = 2675
+						},
+						{
+							["name"] = "Silvered Bronze Breastplate",
+							["recipeID"] = 2673
+						},
+						{
+							["name"] = "Steel Breastplate",
+							["recipeID"] = 9916
+						},
+						{
+							["name"] = "Thick Obsidian Breastplate",
+							["recipeID"] = 27587
+						},
+						{
+							["name"] = "Thorium Armor",
+							["recipeID"] = 16642
+						},
+						{
+							["name"] = "Truesilver Breastplate",
+							["recipeID"] = 9974
+						},
+						{
+							["name"] = "Wildthorn Mail",
+							["recipeID"] = 16650
+						}
+					}
+				},
+				{
+					["name"] = "Gauntlets",
+					["categoryID"] = 221,
+					["g"] = {
+						{
+							["name"] = "Barbaric Iron Gloves",
+							["recipeID"] = 9820
+						},
+						{
+							["name"] = "Black Grasp of the Destroyer",
+							["recipeID"] = 27589
+						},
+						{
+							["name"] = "Bloodsoul Gauntlets",
+							["recipeID"] = 24138
+						},
+						{
+							["name"] = "Dark Iron Gauntlets",
+							["recipeID"] = 23637
+						},
+						{
+							["name"] = "Darkrune Gauntlets",
+							["recipeID"] = 24912
+						},
+						{
+							["name"] = "Draenic Steel Gauntlets",
+							["recipeID"] = 153607
+						},
+						{
+							["name"] = "Fiery Plate Gauntlets",
+							["recipeID"] = 16655
+						},
+						{
+							["name"] = "Gemmed Copper Gauntlets",
+							["recipeID"] = 3325
+						},
+						{
+							["name"] = "Gloves of the Dawn",
+							["recipeID"] = 23633
+						},
+						{
+							["name"] = "Golden Scale Gauntlets",
+							["recipeID"] = 11643
+						},
+						{
+							["name"] = "Green Iron Gauntlets",
+							["recipeID"] = 3336
+						},
+						{
+							["name"] = "Hardened Draenic Steel Gauntlets",
+							["recipeID"] = 153645
+						},
+						{
+							["name"] = "Heavy Mithril Gauntlet",
+							["recipeID"] = 9928
+						},
+						{
+							["name"] = "Icebane Gauntlets",
+							["recipeID"] = 28243
+						},
+						{
+							["name"] = "Ironforge Gauntlets",
+							["recipeID"] = 8368
+						},
+						{
+							["name"] = "Ironvine Gloves",
+							["recipeID"] = 28462
+						},
+						{
+							["name"] = "Mithril Scale Gloves",
+							["recipeID"] = 9942
+						},
+						{
+							["name"] = "Ornate Mithril Gloves",
+							["recipeID"] = 9950
+						},
+						{
+							["name"] = "Peerless Draenic Steel Gauntlets",
+							["recipeID"] = 153658
+						},
+						{
+							["name"] = "Radiant Gloves",
+							["recipeID"] = 16654
+						},
+						{
+							["name"] = "Runed Copper Gauntlets",
+							["recipeID"] = 3323
+						},
+						{
+							["name"] = "Silvered Bronze Gauntlets",
+							["recipeID"] = 3333
+						},
+						{
+							["name"] = "Storm Gauntlets",
+							["recipeID"] = 16661
+						},
+						{
+							["name"] = "Stronghold Gauntlets",
+							["recipeID"] = 16741
+						},
+						{
+							["name"] = "Truesilver Gauntlets",
+							["recipeID"] = 9954
+						}
+					}
+				},
+				{
+					["name"] = "Bracers",
+					["categoryID"] = 222,
+					["g"] = {
+						{
+							["name"] = "Copper Bracers",
+							["recipeID"] = 2663
+						},
+						{
+							["name"] = "Dark Iron Bracers",
+							["recipeID"] = 20874
+						},
+						{
+							["name"] = "Draenic Steel Wristwraps",
+							["recipeID"] = 153612
+						},
+						{
+							["name"] = "Golden Scale Bracers",
+							["recipeID"] = 7223
+						},
+						{
+							["name"] = "Green Iron Bracers",
+							["recipeID"] = 3501
+						},
+						{
+							["name"] = "Hardened Draenic Steel Wristwraps",
+							["recipeID"] = 153650
+						},
+						{
+							["name"] = "Icebane Bracers",
+							["recipeID"] = 28244
+						},
+						{
+							["name"] = "Imperial Plate Bracers",
+							["recipeID"] = 16649
+						},
+						{
+							["name"] = "Mithril Scale Bracers",
+							["recipeID"] = 9937
+						},
+						{
+							["name"] = "Patterned Bronze Bracers",
+							["recipeID"] = 2672
+						},
+						{
+							["name"] = "Rough Bronze Bracers",
+							["recipeID"] = 2671
+						},
+						{
+							["name"] = "Runed Copper Bracers",
+							["recipeID"] = 2664
+						},
+						{
+							["name"] = "Thorium Bracers",
+							["recipeID"] = 16644
+						}
+					}
+				},
+				{
+					["name"] = "Belts",
+					["categoryID"] = 223,
+					["g"] = {
+						{
+							["name"] = "Copper Chain Belt",
+							["recipeID"] = 2661
+						},
+						{
+							["name"] = "Draenic Steel Girdle",
+							["recipeID"] = 153611
+						},
+						{
+							["name"] = "Fiery Chain Girdle",
+							["recipeID"] = 20872
+						},
+						{
+							["name"] = "Girdle of the Dawn",
+							["recipeID"] = 23632
+						},
+						{
+							["name"] = "Hardened Draenic Steel Girdle",
+							["recipeID"] = 153649
+						},
+						{
+							["name"] = "Heavy Obsidian Belt",
+							["recipeID"] = 27585
+						},
+						{
+							["name"] = "Heavy Timbermaw Belt",
+							["recipeID"] = 23628
+						},
+						{
+							["name"] = "Imperial Plate Belt",
+							["recipeID"] = 16647
+						},
+						{
+							["name"] = "Ironvine Belt",
+							["recipeID"] = 28463
+						},
+						{
+							["name"] = "Light Obsidian Belt",
+							["recipeID"] = 27588
+						},
+						{
+							["name"] = "Peerless Draenic Steel Wristwraps",
+							["recipeID"] = 153663
+						},
+						{
+							["name"] = "Radiant Belt",
+							["recipeID"] = 16645
+						},
+						{
+							["name"] = "Runed Copper Belt",
+							["recipeID"] = 2666
+						},
+						{
+							["name"] = "Thorium Belt",
+							["recipeID"] = 16643
+						}
+					}
+				},
+				{
+					["name"] = "Legs",
+					["categoryID"] = 224,
+					["g"] = {
+						{
+							["name"] = "Copper Chain Pants",
+							["recipeID"] = 2662
+						},
+						{
+							["name"] = "Dark Iron Leggings",
+							["recipeID"] = 20876
+						},
+						{
+							["name"] = "Darksoul Leggings",
+							["recipeID"] = 24140
+						},
+						{
+							["name"] = "Draenic Steel Legguards",
+							["recipeID"] = 153609
+						},
+						{
+							["name"] = "Enchanted Thorium Leggings",
+							["recipeID"] = 16744
+						},
+						{
+							["name"] = "Golden Scale Leggings",
+							["recipeID"] = 3507
+						},
+						{
+							["name"] = "Green Iron Leggings",
+							["recipeID"] = 3506
+						},
+						{
+							["name"] = "Hardened Draenic Steel Legguards",
+							["recipeID"] = 153647
+						},
+						{
+							["name"] = "Heavy Mithril Pants",
+							["recipeID"] = 9933
+						},
+						{
+							["name"] = "Imperial Plate Leggings",
+							["recipeID"] = 16730
+						},
+						{
+							["name"] = "Mithril Scale Pants",
+							["recipeID"] = 9931
+						},
+						{
+							["name"] = "Orcish War Leggings",
+							["recipeID"] = 9957
+						},
+						{
+							["name"] = "Ornate Mithril Pants",
+							["recipeID"] = 9945
+						},
+						{
+							["name"] = "Peerless Draenic Steel Legguards",
+							["recipeID"] = 153660
+						},
+						{
+							["name"] = "Radiant Leggings",
+							["recipeID"] = 16725
+						},
+						{
+							["name"] = "Rough Bronze Leggings",
+							["recipeID"] = 2668
+						},
+						{
+							["name"] = "Runed Copper Pants",
+							["recipeID"] = 3324
+						},
+						{
+							["name"] = "Runic Plate Leggings",
+							["recipeID"] = 16732
+						},
+						{
+							["name"] = "Silvered Bronze Leggings",
+							["recipeID"] = 12259
+						},
+						{
+							["name"] = "Thorium Leggings",
+							["recipeID"] = 16662
+						},
+						{
+							["name"] = "Titanic Leggings",
+							["recipeID"] = 27829
+						}
+					}
+				},
+				{
+					["name"] = "Boots",
+					["categoryID"] = 225,
+					["g"] = {
+						{
+							["name"] = "Barbaric Iron Boots",
+							["recipeID"] = 9818
+						},
+						{
+							["name"] = "Copper Chain Boots",
+							["recipeID"] = 3319
+						},
+						{
+							["name"] = "Dark Iron Boots",
+							["recipeID"] = 24399
+						},
+						{
+							["name"] = "Draenic Steel Warboots",
+							["recipeID"] = 153606
+						},
+						{
+							["name"] = "Golden Scale Boots",
+							["recipeID"] = 3515
+						},
+						{
+							["name"] = "Green Iron Boots",
+							["recipeID"] = 3334
+						},
+						{
+							["name"] = "Hardened Draenic Steel Warboots",
+							["recipeID"] = 153644
+						},
+						{
+							["name"] = "Heavy Mithril Boots",
+							["recipeID"] = 9968
+						},
+						{
+							["name"] = "Heavy Timbermaw Boots",
+							["recipeID"] = 23629
+						},
+						{
+							["name"] = "Imperial Plate Boots",
+							["recipeID"] = 16657
+						},
+						{
+							["name"] = "Ornate Mithril Boots",
+							["recipeID"] = 9979
+						},
+						{
+							["name"] = "Peerless Draenic Steel Warboots",
+							["recipeID"] = 153657
+						},
+						{
+							["name"] = "Polished Steel Boots",
+							["recipeID"] = 3513
+						},
+						{
+							["name"] = "Radiant Boots",
+							["recipeID"] = 16656
+						},
+						{
+							["name"] = "Rough Bronze Boots",
+							["recipeID"] = 7817
+						},
+						{
+							["name"] = "Runic Plate Boots",
+							["recipeID"] = 16665
+						},
+						{
+							["name"] = "Silvered Bronze Boots",
+							["recipeID"] = 3331
+						},
+						{
+							["name"] = "Thorium Boots",
+							["recipeID"] = 16652
+						}
+					}
+				},
+				{
+					["name"] = "Shields",
+					["categoryID"] = 226,
+					["g"] = {
+						{
+							["name"] = "Draenic Steel Bulwark",
+							["recipeID"] = 153631
+						},
+						{
+							["name"] = "Hardened Draenic Steel Bulwark",
+							["recipeID"] = 153655
+						},
+						{
+							["name"] = "Jagged Obsidian Shield",
+							["recipeID"] = 27586
+						},
+						{
+							["name"] = "Peerless Draenic Steel Bulwark",
+							["recipeID"] = 153668
+						}
+					}
+				},
+				{
+					["name"] = "Weapons",
+					["categoryID"] = 227,
+					["g"] = {
+						{
+							["name"] = "Annihilator",
+							["recipeID"] = 16991
+						},
+						{
+							["name"] = "Arcanite Champion",
+							["recipeID"] = 16990
+						},
+						{
+							["name"] = "Arcanite Reaper",
+							["recipeID"] = 16994
+						},
+						{
+							["name"] = "Big Black Mace",
+							["recipeID"] = 10001
+						},
+						{
+							["name"] = "Big Bronze Knife",
+							["recipeID"] = 3491
+						},
+						{
+							["name"] = "Black Amnesty",
+							["recipeID"] = 23638
+						},
+						{
+							["name"] = "Blackfury",
+							["recipeID"] = 23639
+						},
+						{
+							["name"] = "Blackguard",
+							["recipeID"] = 23652
+						},
+						{
+							["name"] = "Blazing Rapier",
+							["recipeID"] = 16978
+						},
+						{
+							["name"] = "Bleakwood Hew",
+							["recipeID"] = 16965
+						},
+						{
+							["name"] = "Blight",
+							["recipeID"] = 10011
+						},
+						{
+							["name"] = "Blood Talon",
+							["recipeID"] = 16986
+						},
+						{
+							["name"] = "Blue Glittering Axe",
+							["recipeID"] = 9995
+						},
+						{
+							["name"] = "Bronze Axe",
+							["recipeID"] = 2741
+						},
+						{
+							["name"] = "Bronze Battle Axe",
+							["recipeID"] = 9987
+						},
+						{
+							["name"] = "Bronze Greatsword",
+							["recipeID"] = 9986
+						},
+						{
+							["name"] = "Bronze Mace",
+							["recipeID"] = 2740
+						},
+						{
+							["name"] = "Bronze Shortsword",
+							["recipeID"] = 2742
+						},
+						{
+							["name"] = "Bronze Warhammer",
+							["recipeID"] = 9985
+						},
+						{
+							["name"] = "Copper Axe",
+							["recipeID"] = 2738
+						},
+						{
+							["name"] = "Copper Battle Axe",
+							["recipeID"] = 3293
+						},
+						{
+							["name"] = "Copper Claymore",
+							["recipeID"] = 9983
+						},
+						{
+							["name"] = "Copper Dagger",
+							["recipeID"] = 8880
+						},
+						{
+							["name"] = "Copper Mace",
+							["recipeID"] = 2737
+						},
+						{
+							["name"] = "Copper Shortsword",
+							["recipeID"] = 2739
+						},
+						{
+							["name"] = "Corruption",
+							["recipeID"] = 16985
+						},
+						{
+							["name"] = "Dark Iron Destroyer",
+							["recipeID"] = 20897
+						},
+						{
+							["name"] = "Dark Iron Pulverizer",
+							["recipeID"] = 15292
+						},
+						{
+							["name"] = "Dark Iron Reaver",
+							["recipeID"] = 20890
+						},
+						{
+							["name"] = "Dark Iron Sunderer",
+							["recipeID"] = 15294
+						},
+						{
+							["name"] = "Darkspear",
+							["recipeID"] = 16987
+						},
+						{
+							["name"] = "Dawn's Edge",
+							["recipeID"] = 16970
+						},
+						{
+							["name"] = "Dazzling Mithril Rapier",
+							["recipeID"] = 10005
+						},
+						{
+							["name"] = "Deadly Bronze Poniard",
+							["recipeID"] = 3295
+						},
+						{
+							["name"] = "Draenic Steel Dagger",
+							["recipeID"] = 153629
+						},
+						{
+							["name"] = "Draenic Steel Mace",
+							["recipeID"] = 153630
+						},
+						{
+							["name"] = "Draenic Steel Sword",
+							["recipeID"] = 153628
+						},
+						{
+							["name"] = "Draenic Steel War Axe",
+							["recipeID"] = 153627
+						},
+						{
+							["name"] = "Ebon Hand",
+							["recipeID"] = 23650
+						},
+						{
+							["name"] = "Ebon Shiv",
+							["recipeID"] = 10013
+						},
+						{
+							["name"] = "Edge of Winter",
+							["recipeID"] = 21913
+						},
+						{
+							["name"] = "Enchanted Battlehammer",
+							["recipeID"] = 16973
+						},
+						{
+							["name"] = "Frost Tiger Blade",
+							["recipeID"] = 3497
+						},
+						{
+							["name"] = "Frostguard",
+							["recipeID"] = 16992
+						},
+						{
+							["name"] = "Glinting Steel Dagger",
+							["recipeID"] = 15972
+						},
+						{
+							["name"] = "Golden Iron Destroyer",
+							["recipeID"] = 3495
+						},
+						{
+							["name"] = "Hammer of the Titans",
+							["recipeID"] = 16988
+						},
+						{
+							["name"] = "Hardened Draenic Steel Dagger",
+							["recipeID"] = 153653
+						},
+						{
+							["name"] = "Hardened Draenic Steel Mace",
+							["recipeID"] = 153654
+						},
+						{
+							["name"] = "Hardened Draenic Steel Sword",
+							["recipeID"] = 153652
+						},
+						{
+							["name"] = "Hardened Draenic Steel War Axe",
+							["recipeID"] = 153651
+						},
+						{
+							["name"] = "Hardened Iron Shortsword",
+							["recipeID"] = 3492
+						},
+						{
+							["name"] = "Heartseeker",
+							["recipeID"] = 16995
+						},
+						{
+							["name"] = "Heavy Bronze Mace",
+							["recipeID"] = 3296
+						},
+						{
+							["name"] = "Heavy Copper Broadsword",
+							["recipeID"] = 3292
+						},
+						{
+							["name"] = "Heavy Copper Longsword",
+							["recipeID"] = 43549
+						},
+						{
+							["name"] = "Heavy Copper Maul",
+							["recipeID"] = 7408
+						},
+						{
+							["name"] = "Heavy Mithril Axe",
+							["recipeID"] = 9993
+						},
+						{
+							["name"] = "Huge Thorium Battleaxe",
+							["recipeID"] = 16971
+						},
+						{
+							["name"] = "Inlaid Thorium Hammer",
+							["recipeID"] = 16967
+						},
+						{
+							["name"] = "Iridescent Hammer",
+							["recipeID"] = 6518
+						},
+						{
+							["name"] = "Jade Serpentblade",
+							["recipeID"] = 3493
+						},
+						{
+							["name"] = "Light Earthforged Blade",
+							["recipeID"] = 36125
+						},
+						{
+							["name"] = "Massive Iron Axe",
+							["recipeID"] = 3498
+						},
+						{
+							["name"] = "Masterwork Stormhammer",
+							["recipeID"] = 16993
+						},
+						{
+							["name"] = "Mighty Iron Hammer",
+							["recipeID"] = 3297
+						},
+						{
+							["name"] = "Moonsteel Broadsword",
+							["recipeID"] = 3496
+						},
+						{
+							["name"] = "Nightfall",
+							["recipeID"] = 23653
+						},
+						{
+							["name"] = "Ornate Thorium Handaxe",
+							["recipeID"] = 16969
+						},
+						{
+							["name"] = "Pearl-handled Dagger",
+							["recipeID"] = 6517
+						},
+						{
+							["name"] = "Peerless Draenic Steel Dagger",
+							["recipeID"] = 153666
+						},
+						{
+							["name"] = "Peerless Draenic Steel Mace",
+							["recipeID"] = 153667
+						},
+						{
+							["name"] = "Peerless Draenic Steel Sword",
+							["recipeID"] = 153665
+						},
+						{
+							["name"] = "Peerless Draenic Steel War Axe",
+							["recipeID"] = 153664
+						},
+						{
+							["name"] = "Persuader",
+							["recipeID"] = 27830
+						},
+						{
+							["name"] = "Phantom Blade",
+							["recipeID"] = 10007
+						},
+						{
+							["name"] = "Rune Edge",
+							["recipeID"] = 16980
+						},
+						{
+							["name"] = "Runed Mithril Hammer",
+							["recipeID"] = 10009
+						},
+						{
+							["name"] = "Sageblade",
+							["recipeID"] = 27832
+						},
+						{
+							["name"] = "Searing Golden Blade",
+							["recipeID"] = 15973
+						},
+						{
+							["name"] = "Serenity",
+							["recipeID"] = 16983
+						},
+						{
+							["name"] = "Shadow Crescent Axe",
+							["recipeID"] = 3500
+						},
+						{
+							["name"] = "Solid Iron Maul",
+							["recipeID"] = 3494
+						},
+						{
+							["name"] = "Sulfuron Hammer",
+							["recipeID"] = 21161
+						},
+						{
+							["name"] = "The Shatterer",
+							["recipeID"] = 10003
+						},
+						{
+							["name"] = "Thick War Axe",
+							["recipeID"] = 3294
+						},
+						{
+							["name"] = "Thorium Greatsword",
+							["recipeID"] = 16960
+						},
+						{
+							["name"] = "Truesilver Champion",
+							["recipeID"] = 10015
+						},
+						{
+							["name"] = "Volcanic Hammer",
+							["recipeID"] = 16984
+						},
+						{
+							["name"] = "Wicked Mithril Blade",
+							["recipeID"] = 9997
+						}
+					}
+				},
+				{
+					["name"] = "Skeleton Keys",
+					["categoryID"] = 228,
+					["g"] = {
+						{
+							["name"] = "Arcanite Skeleton Key",
+							["recipeID"] = 19669
+						},
+						{
+							["name"] = "Golden Skeleton Key",
+							["recipeID"] = 19667
+						},
+						{
+							["name"] = "Silver Skeleton Key",
+							["recipeID"] = 19666
+						},
+						{
+							["name"] = "Truesilver Skeleton Key",
+							["recipeID"] = 19668
 						}
 					}
 				}

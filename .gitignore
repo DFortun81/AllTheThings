@@ -26,3 +26,5 @@ contrib/Harvesters/Blizzard API Harvester.exe.config
 contrib/Source Code/Parser/obj/
 *.user
 contrib/Source Code/Parser/.vs/
+.vs/
+obj/

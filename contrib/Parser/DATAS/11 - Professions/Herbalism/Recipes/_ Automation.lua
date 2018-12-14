@@ -1,175 +1,257 @@
 --[[
 DO NOT MODIFY THIS FILE, I WILL CUT YOU.
  With love,
-    - CRIEVE
+    -CRIEVE
 ]]--
-profession(182, {	-- Herb Gathering
-	filter(200, {	-- Recipes
+profession(182, {	-- Herbalism
+	filter(200, {
 		{
-			["categoryID"] = 1029--[[Zandalari Herbalism]],
+			["name"] = "Zandalari Herbalism",
+			["categoryID"] = 1029,
 			["g"] = {
 				{
-					["categoryID"] = 1030--[[Gathering Techniques]],
+					["name"] = "Gathering Techniques",
+					["categoryID"] = 1030,
 					["g"] = {
 						{
-							["recipeID"] = 252411--[[Akunda's Bite]]
+							["name"] = "Akunda's Bite",
+							["nextRecipeID"] = 252412,
+							["recipeID"] = 252411
 						},
 						{
-							["recipeID"] = 252412--[[Akunda's Bite]]
+							["name"] = "Akunda's Bite",
+							["nextRecipeID"] = 252413,
+							["previousRecipeID"] = 252411,
+							["recipeID"] = 252412
 						},
 						{
-							["recipeID"] = 252413--[[Akunda's Bite]]
+							["name"] = "Akunda's Bite",
+							["previousRecipeID"] = 252412,
+							["recipeID"] = 252413
 						},
 						{
-							["recipeID"] = 252425--[[Anchor Weed]]
+							["name"] = "Anchor Weed",
+							["nextRecipeID"] = 252425,
+							["recipeID"] = 252424
 						},
 						{
-							["recipeID"] = 252424--[[Anchor Weed]]
+							["name"] = "Anchor Weed",
+							["nextRecipeID"] = 252426,
+							["previousRecipeID"] = 252424,
+							["recipeID"] = 252425
 						},
 						{
-							["recipeID"] = 252426--[[Anchor Weed]]
+							["name"] = "Anchor Weed",
+							["previousRecipeID"] = 252425,
+							["recipeID"] = 252426
 						},
 						{
-							["recipeID"] = 252407--[[Riverbud]]
+							["name"] = "Riverbud",
+							["nextRecipeID"] = 252406,
+							["recipeID"] = 252405
 						},
 						{
-							["recipeID"] = 252406--[[Riverbud]]
+							["name"] = "Riverbud",
+							["nextRecipeID"] = 252407,
+							["previousRecipeID"] = 252405,
+							["recipeID"] = 252406
 						},
 						{
-							["recipeID"] = 252405--[[Riverbud]]
+							["name"] = "Riverbud",
+							["previousRecipeID"] = 252406,
+							["recipeID"] = 252407
 						},
 						{
-							["recipeID"] = 252421--[[Sea Stalk]]
+							["name"] = "Sea Stalk",
+							["nextRecipeID"] = 252422,
+							["recipeID"] = 252421
 						},
 						{
-							["recipeID"] = 252422--[[Sea Stalk]]
+							["name"] = "Sea Stalk",
+							["nextRecipeID"] = 252423,
+							["previousRecipeID"] = 252421,
+							["recipeID"] = 252422
 						},
 						{
-							["recipeID"] = 252423--[[Sea Stalk]]
+							["name"] = "Sea Stalk",
+							["previousRecipeID"] = 252422,
+							["recipeID"] = 252423
 						},
 						{
-							["recipeID"] = 252418--[[Siren's Pollen]]
+							["name"] = "Siren's Pollen",
+							["nextRecipeID"] = 252419,
+							["recipeID"] = 252418
 						},
 						{
-							["recipeID"] = 252419--[[Siren's Pollen]]
+							["name"] = "Siren's Pollen",
+							["nextRecipeID"] = 252420,
+							["previousRecipeID"] = 252418,
+							["recipeID"] = 252419
 						},
 						{
-							["recipeID"] = 252420--[[Siren's Pollen]]
+							["name"] = "Siren's Pollen",
+							["previousRecipeID"] = 252419,
+							["recipeID"] = 252420
 						},
 						{
-							["recipeID"] = 252409--[[Star Moss]]
+							["name"] = "Star Moss",
+							["nextRecipeID"] = 252409,
+							["recipeID"] = 252408
 						},
 						{
-							["recipeID"] = 252410--[[Star Moss]]
+							["name"] = "Star Moss",
+							["nextRecipeID"] = 252410,
+							["previousRecipeID"] = 252408,
+							["recipeID"] = 252409
 						},
 						{
-							["recipeID"] = 252408--[[Star Moss]]
+							["name"] = "Star Moss",
+							["previousRecipeID"] = 252409,
+							["recipeID"] = 252410
 						},
 						{
-							["recipeID"] = 252415--[[Winter's Kiss]]
+							["name"] = "Winter's Kiss",
+							["nextRecipeID"] = 252416,
+							["recipeID"] = 252415
 						},
 						{
-							["recipeID"] = 252417--[[Winter's Kiss]]
+							["name"] = "Winter's Kiss",
+							["nextRecipeID"] = 252417,
+							["previousRecipeID"] = 252415,
+							["recipeID"] = 252416
 						},
 						{
-							["recipeID"] = 252416--[[Winter's Kiss]]
+							["name"] = "Winter's Kiss",
+							["previousRecipeID"] = 252416,
+							["recipeID"] = 252417
 						}
 					}
 				}
 			}
 		},
 		{
-			["categoryID"] = 456--[[Legion Herbalism]],
+			["name"] = "Legion Herbalism",
+			["categoryID"] = 456,
 			["g"] = {
 				{
-					["categoryID"] = 1032--[[Gathering Techniques]],
+					["name"] = "Gathering Techniques",
+					["categoryID"] = 1032,
 					["g"] = {
 						{
-							["recipeID"] = 193294--[[Aethril]]
+							["name"] = "Aethril",
+							["nextRecipeID"] = 193293,
+							["recipeID"] = 193292
 						},
 						{
-							["recipeID"] = 193293--[[Aethril]]
+							["name"] = "Aethril",
+							["nextRecipeID"] = 193294,
+							["previousRecipeID"] = 193292,
+							["recipeID"] = 193293
 						},
 						{
-							["recipeID"] = 193292--[[Aethril]]
+							["name"] = "Aethril",
+							["previousRecipeID"] = 193293,
+							["recipeID"] = 193294
 						},
 						{
-							["recipeID"] = 247812--[[Astral Glory]]
+							["name"] = "Astral Glory",
+							["nextRecipeID"] = 247813,
+							["recipeID"] = 247812
 						},
 						{
-							["recipeID"] = 247813--[[Astral Glory]]
+							["name"] = "Astral Glory",
+							["nextRecipeID"] = 247814,
+							["previousRecipeID"] = 247812,
+							["recipeID"] = 247813
 						},
 						{
-							["recipeID"] = 247814--[[Astral Glory]]
+							["name"] = "Astral Glory",
+							["previousRecipeID"] = 247813,
+							["recipeID"] = 247814
 						},
 						{
-							["recipeID"] = 193295--[[Dreamleaf]]
+							["name"] = "Dreamleaf",
+							["nextRecipeID"] = 193296,
+							["recipeID"] = 193295
 						},
 						{
-							["recipeID"] = 193296--[[Dreamleaf]]
+							["name"] = "Dreamleaf",
+							["nextRecipeID"] = 193297,
+							["previousRecipeID"] = 193295,
+							["recipeID"] = 193296
 						},
 						{
-							["recipeID"] = 193297--[[Dreamleaf]]
+							["name"] = "Dreamleaf",
+							["previousRecipeID"] = 193296,
+							["recipeID"] = 193297
 						},
 						{
-							["recipeID"] = 193307--[[Felwort]]
+							["name"] = "Felwort",
+							["nextRecipeID"] = 193308,
+							["recipeID"] = 193307
 						},
 						{
-							["recipeID"] = 193309--[[Felwort]]
+							["name"] = "Felwort",
+							["nextRecipeID"] = 193309,
+							["previousRecipeID"] = 193307,
+							["recipeID"] = 193308
 						},
 						{
-							["recipeID"] = 193308--[[Felwort]]
+							["name"] = "Felwort",
+							["previousRecipeID"] = 193308,
+							["recipeID"] = 193309
 						},
 						{
-							["recipeID"] = 193301--[[Fjarnskaggl]]
+							["name"] = "Fjarnskaggl",
+							["nextRecipeID"] = 193302,
+							["recipeID"] = 193301
 						},
 						{
-							["recipeID"] = 193302--[[Fjarnskaggl]]
+							["name"] = "Fjarnskaggl",
+							["nextRecipeID"] = 193303,
+							["previousRecipeID"] = 193301,
+							["recipeID"] = 193302
 						},
 						{
-							["recipeID"] = 193303--[[Fjarnskaggl]]
+							["name"] = "Fjarnskaggl",
+							["previousRecipeID"] = 193302,
+							["recipeID"] = 193303
 						},
 						{
-							["recipeID"] = 193298--[[Foxflower]]
+							["name"] = "Foxflower",
+							["nextRecipeID"] = 193299,
+							["recipeID"] = 193298
 						},
 						{
-							["recipeID"] = 193299--[[Foxflower]]
+							["name"] = "Foxflower",
+							["nextRecipeID"] = 193300,
+							["previousRecipeID"] = 193298,
+							["recipeID"] = 193299
 						},
 						{
-							["recipeID"] = 193300--[[Foxflower]]
+							["name"] = "Foxflower",
+							["previousRecipeID"] = 193299,
+							["recipeID"] = 193300
 						},
 						{
-							["recipeID"] = 193306--[[Starlight Rose]]
+							["name"] = "Starlight Rose",
+							["nextRecipeID"] = 193305,
+							["recipeID"] = 193304
 						},
 						{
-							["recipeID"] = 193304--[[Starlight Rose]]
+							["name"] = "Starlight Rose",
+							["nextRecipeID"] = 193306,
+							["previousRecipeID"] = 193304,
+							["recipeID"] = 193305
 						},
 						{
-							["recipeID"] = 193305--[[Starlight Rose]]
+							["name"] = "Starlight Rose",
+							["previousRecipeID"] = 193305,
+							["recipeID"] = 193306
 						}
 					}
 				}
 			}
-		},
-		--[===[
-		{
-			["categoryID"] = 1034--[[Draenor Herbalism]]
-		},
-		{
-			["categoryID"] = 1036--[[Pandaria Herbalism]]
-		},
-		{
-			["categoryID"] = 1038--[[Cataclsym Herbalism]]
-		},
-		{
-			["categoryID"] = 1040--[[Northrend Herbalism]]
-		},
-		{
-			["categoryID"] = 1042--[[Outland Herbalism]]
-		},
-		{
-			["categoryID"] = 1044--[[Herbalism]]
 		}
-		]===]--
 	}),
 });

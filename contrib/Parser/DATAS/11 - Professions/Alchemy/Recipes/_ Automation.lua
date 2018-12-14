@@ -1,1979 +1,2849 @@
 --[[
 DO NOT MODIFY THIS FILE, I WILL CUT YOU.
  With love,
-    - CRIEVE
+    -CRIEVE
 ]]--
 profession(171, {	-- Alchemy
-	filter(200, {	-- Recipes
+	filter(200, {
 		{
-			["categoryID"] = 592--[[Zandalari Alchemy]],
+			["name"] = "Zandalari Alchemy",
+			["categoryID"] = 592,
 			["g"] = {
 				{
-					["categoryID"] = 1228--[[Cauldrons]],
+					["name"] = "Cauldrons",
+					["categoryID"] = 1228,
 					["g"] = {
 						{
-							["recipeID"] = 276975--[[Mystical Cauldron]]
+							["name"] = "Mystical Cauldron",
+							["nextRecipeID"] = 276976,
+							["recipeID"] = 276975
 						},
 						{
-							["recipeID"] = 276976--[[Mystical Cauldron]]
+							["name"] = "Mystical Cauldron",
+							["nextRecipeID"] = 276977,
+							["previousRecipeID"] = 276975,
+							["recipeID"] = 276976
 						},
 						{
-							["recipeID"] = 276977--[[Mystical Cauldron]]
+							["name"] = "Mystical Cauldron",
+							["previousRecipeID"] = 276976,
+							["recipeID"] = 276977
 						}
 					}
 				},
 				{
-					["categoryID"] = 605--[[Combat Potions]],
+					["name"] = "Combat Potions",
+					["categoryID"] = 605,
 					["g"] = {
 						{
-							["recipeID"] = 279161--[[Battle Potion of Agility]]
+							["name"] = "Battle Potion of Agility",
+							["nextRecipeID"] = 279160,
+							["recipeID"] = 279159
 						},
 						{
-							["recipeID"] = 279164--[[Battle Potion of Intellect]]
+							["name"] = "Battle Potion of Agility",
+							["nextRecipeID"] = 279161,
+							["previousRecipeID"] = 279159,
+							["recipeID"] = 279160
 						},
 						{
-							["recipeID"] = 279167--[[Battle Potion of Stamina]]
+							["name"] = "Battle Potion of Agility",
+							["previousRecipeID"] = 279160,
+							["recipeID"] = 279161
 						},
 						{
-							["recipeID"] = 279170--[[Battle Potion of Strength]]
+							["name"] = "Battle Potion of Intellect",
+							["nextRecipeID"] = 279163,
+							["recipeID"] = 279162
 						},
 						{
-							["recipeID"] = 252343--[[Potion of Bursting Blood]]
+							["name"] = "Battle Potion of Intellect",
+							["nextRecipeID"] = 279164,
+							["previousRecipeID"] = 279162,
+							["recipeID"] = 279163
 						},
 						{
-							["recipeID"] = 252340--[[Potion of Replenishment]]
+							["name"] = "Battle Potion of Intellect",
+							["previousRecipeID"] = 279163,
+							["recipeID"] = 279164
 						},
 						{
-							["recipeID"] = 252346--[[Potion of Rising Death]]
+							["name"] = "Battle Potion of Stamina",
+							["nextRecipeID"] = 279166,
+							["recipeID"] = 279165
 						},
 						{
-							["recipeID"] = 252336--[[Steelskin Potion]]
+							["name"] = "Battle Potion of Stamina",
+							["nextRecipeID"] = 279167,
+							["previousRecipeID"] = 279165,
+							["recipeID"] = 279166
 						},
 						{
-							["recipeID"] = 279160--[[Battle Potion of Agility]]
+							["name"] = "Battle Potion of Stamina",
+							["previousRecipeID"] = 279166,
+							["recipeID"] = 279167
 						},
 						{
-							["recipeID"] = 279163--[[Battle Potion of Intellect]]
+							["name"] = "Battle Potion of Strength",
+							["nextRecipeID"] = 279169,
+							["recipeID"] = 279168
 						},
 						{
-							["recipeID"] = 279166--[[Battle Potion of Stamina]]
+							["name"] = "Battle Potion of Strength",
+							["nextRecipeID"] = 279170,
+							["previousRecipeID"] = 279168,
+							["recipeID"] = 279169
 						},
 						{
-							["recipeID"] = 279169--[[Battle Potion of Strength]]
+							["name"] = "Battle Potion of Strength",
+							["previousRecipeID"] = 279169,
+							["recipeID"] = 279170
 						},
 						{
-							["recipeID"] = 279159--[[Battle Potion of Agility]]
+							["name"] = "Coastal Healing Potion",
+							["nextRecipeID"] = 252383,
+							["recipeID"] = 252382
 						},
 						{
-							["recipeID"] = 279162--[[Battle Potion of Intellect]]
+							["name"] = "Coastal Healing Potion",
+							["nextRecipeID"] = 252384,
+							["previousRecipeID"] = 252382,
+							["recipeID"] = 252383
 						},
 						{
-							["recipeID"] = 279165--[[Battle Potion of Stamina]]
+							["name"] = "Coastal Healing Potion",
+							["previousRecipeID"] = 252383,
+							["recipeID"] = 252384
 						},
 						{
-							["recipeID"] = 279168--[[Battle Potion of Strength]]
+							["name"] = "Coastal Mana Potion",
+							["nextRecipeID"] = 252386,
+							["recipeID"] = 252385
 						},
 						{
-							["recipeID"] = 252342--[[Potion of Bursting Blood]]
+							["name"] = "Coastal Mana Potion",
+							["nextRecipeID"] = 252387,
+							["previousRecipeID"] = 252385,
+							["recipeID"] = 252386
 						},
 						{
-							["recipeID"] = 252339--[[Potion of Replenishment]]
+							["name"] = "Coastal Mana Potion",
+							["previousRecipeID"] = 252386,
+							["recipeID"] = 252387
 						},
 						{
-							["recipeID"] = 252345--[[Potion of Rising Death]]
+							["name"] = "Coastal Rejuvenation Potion",
+							["nextRecipeID"] = 252389,
+							["recipeID"] = 252388
 						},
 						{
-							["recipeID"] = 252335--[[Steelskin Potion]]
+							["name"] = "Coastal Rejuvenation Potion",
+							["nextRecipeID"] = 252390,
+							["previousRecipeID"] = 252388,
+							["recipeID"] = 252389
 						},
 						{
-							["recipeID"] = 252387--[[Coastal Mana Potion]]
+							["name"] = "Coastal Rejuvenation Potion",
+							["previousRecipeID"] = 252389,
+							["recipeID"] = 252390
 						},
 						{
-							["recipeID"] = 252384--[[Coastal Healing Potion]]
+							["name"] = "Potion of Bursting Blood",
+							["nextRecipeID"] = 252342,
+							["recipeID"] = 252341
 						},
 						{
-							["recipeID"] = 252390--[[Coastal Rejuvenation Potion]]
+							["name"] = "Potion of Bursting Blood",
+							["nextRecipeID"] = 252343,
+							["previousRecipeID"] = 252341,
+							["recipeID"] = 252342
 						},
 						{
-							["recipeID"] = 252341--[[Potion of Bursting Blood]]
+							["name"] = "Potion of Bursting Blood",
+							["previousRecipeID"] = 252342,
+							["recipeID"] = 252343
 						},
 						{
-							["recipeID"] = 252337--[[Potion of Replenishment]]
+							["name"] = "Potion of Replenishment",
+							["nextRecipeID"] = 252339,
+							["recipeID"] = 252337
 						},
 						{
-							["recipeID"] = 252344--[[Potion of Rising Death]]
+							["name"] = "Potion of Replenishment",
+							["nextRecipeID"] = 252340,
+							["previousRecipeID"] = 252337,
+							["recipeID"] = 252339
 						},
 						{
-							["recipeID"] = 252334--[[Steelskin Potion]]
+							["name"] = "Potion of Replenishment",
+							["previousRecipeID"] = 252339,
+							["recipeID"] = 252340
 						},
 						{
-							["recipeID"] = 252386--[[Coastal Mana Potion]]
+							["name"] = "Potion of Rising Death",
+							["nextRecipeID"] = 252345,
+							["recipeID"] = 252344
 						},
 						{
-							["recipeID"] = 252383--[[Coastal Healing Potion]]
+							["name"] = "Potion of Rising Death",
+							["nextRecipeID"] = 252346,
+							["previousRecipeID"] = 252344,
+							["recipeID"] = 252345
 						},
 						{
-							["recipeID"] = 252389--[[Coastal Rejuvenation Potion]]
+							["name"] = "Potion of Rising Death",
+							["previousRecipeID"] = 252345,
+							["recipeID"] = 252346
 						},
 						{
-							["recipeID"] = 252385--[[Coastal Mana Potion]]
+							["name"] = "Steelskin Potion",
+							["nextRecipeID"] = 252335,
+							["recipeID"] = 252334
 						},
 						{
-							["recipeID"] = 252382--[[Coastal Healing Potion]]
+							["name"] = "Steelskin Potion",
+							["nextRecipeID"] = 252336,
+							["previousRecipeID"] = 252334,
+							["recipeID"] = 252335
 						},
 						{
-							["recipeID"] = 252388--[[Coastal Rejuvenation Potion]]
+							["name"] = "Steelskin Potion",
+							["previousRecipeID"] = 252335,
+							["recipeID"] = 252336
 						}
 					}
 				},
 				{
-					["categoryID"] = 606--[[Utility Potions]],
+					["name"] = "Utility Potions",
+					["categoryID"] = 606,
 					["g"] = {
 						{
-							["recipeID"] = 252393--[[Demitri's Draught of Deception]]
+							["name"] = "Demitri's Draught of Deception",
+							["nextRecipeID"] = 252392,
+							["recipeID"] = 252391
 						},
 						{
-							["recipeID"] = 252396--[[Lightfoot Potion]]
+							["name"] = "Demitri's Draught of Deception",
+							["nextRecipeID"] = 252393,
+							["previousRecipeID"] = 252391,
+							["recipeID"] = 252392
 						},
 						{
-							["recipeID"] = 252402--[[Potion of Concealment]]
+							["name"] = "Demitri's Draught of Deception",
+							["previousRecipeID"] = 252392,
+							["recipeID"] = 252393
 						},
 						{
-							["recipeID"] = 252399--[[Sea Mist Potion]]
+							["name"] = "Lightfoot Potion",
+							["nextRecipeID"] = 252395,
+							["recipeID"] = 252394
 						},
 						{
-							["recipeID"] = 252392--[[Demitri's Draught of Deception]]
+							["name"] = "Lightfoot Potion",
+							["nextRecipeID"] = 252396,
+							["previousRecipeID"] = 252394,
+							["recipeID"] = 252395
 						},
 						{
-							["recipeID"] = 252395--[[Lightfoot Potion]]
+							["name"] = "Lightfoot Potion",
+							["previousRecipeID"] = 252395,
+							["recipeID"] = 252396
 						},
 						{
-							["recipeID"] = 252401--[[Potion of Concealment]]
+							["name"] = "Potion of Concealment",
+							["nextRecipeID"] = 252401,
+							["recipeID"] = 252400
 						},
 						{
-							["recipeID"] = 252398--[[Sea Mist Potion]]
+							["name"] = "Potion of Concealment",
+							["nextRecipeID"] = 252402,
+							["previousRecipeID"] = 252400,
+							["recipeID"] = 252401
 						},
 						{
-							["recipeID"] = 252391--[[Demitri's Draught of Deception]]
+							["name"] = "Potion of Concealment",
+							["previousRecipeID"] = 252401,
+							["recipeID"] = 252402
 						},
 						{
-							["recipeID"] = 252394--[[Lightfoot Potion]]
+							["name"] = "Potion of the Unveiling Eye",
+							["nextRecipeID"] = 287448,
+							["recipeID"] = 287447
 						},
 						{
-							["recipeID"] = 252400--[[Potion of Concealment]]
+							["name"] = "Potion of the Unveiling Eye",
+							["nextRecipeID"] = 287449,
+							["previousRecipeID"] = 287447,
+							["recipeID"] = 287448
 						},
 						{
-							["recipeID"] = 252397--[[Sea Mist Potion]]
+							["name"] = "Potion of the Unveiling Eye",
+							["previousRecipeID"] = 287448,
+							["recipeID"] = 287449
+						},
+						{
+							["name"] = "Sea Mist Potion",
+							["nextRecipeID"] = 252398,
+							["recipeID"] = 252397
+						},
+						{
+							["name"] = "Sea Mist Potion",
+							["nextRecipeID"] = 252399,
+							["previousRecipeID"] = 252397,
+							["recipeID"] = 252398
+						},
+						{
+							["name"] = "Sea Mist Potion",
+							["previousRecipeID"] = 252398,
+							["recipeID"] = 252399
 						}
 					}
 				},
 				{
-					["categoryID"] = 607--[[Flasks]],
+					["name"] = "Flasks",
+					["categoryID"] = 607,
 					["g"] = {
 						{
-							["recipeID"] = 252352--[[Flask of Endless Fathoms]]
+							["name"] = "Flask of Endless Fathoms",
+							["nextRecipeID"] = 252352,
+							["recipeID"] = 252351
 						},
 						{
-							["recipeID"] = 252353--[[Flask of Endless Fathoms]]
+							["name"] = "Flask of Endless Fathoms",
+							["nextRecipeID"] = 252353,
+							["previousRecipeID"] = 252351,
+							["recipeID"] = 252352
 						},
 						{
-							["recipeID"] = 252349--[[Flask of the Currents]]
+							["name"] = "Flask of Endless Fathoms",
+							["previousRecipeID"] = 252352,
+							["recipeID"] = 252353
 						},
 						{
-							["recipeID"] = 252350--[[Flask of the Currents]]
+							["name"] = "Flask of the Currents",
+							["nextRecipeID"] = 252349,
+							["recipeID"] = 252348
 						},
 						{
-							["recipeID"] = 252359--[[Flask of the Undertow]]
+							["name"] = "Flask of the Currents",
+							["nextRecipeID"] = 252350,
+							["previousRecipeID"] = 252348,
+							["recipeID"] = 252349
 						},
 						{
-							["recipeID"] = 252358--[[Flask of the Undertow]]
+							["name"] = "Flask of the Currents",
+							["previousRecipeID"] = 252349,
+							["recipeID"] = 252350
 						},
 						{
-							["recipeID"] = 252356--[[Flask of the Vast Horizon]]
+							["name"] = "Flask of the Undertow",
+							["nextRecipeID"] = 252358,
+							["recipeID"] = 252357
 						},
 						{
-							["recipeID"] = 252355--[[Flask of the Vast Horizon]]
+							["name"] = "Flask of the Undertow",
+							["nextRecipeID"] = 252359,
+							["previousRecipeID"] = 252357,
+							["recipeID"] = 252358
 						},
 						{
-							["recipeID"] = 252351--[[Flask of Endless Fathoms]]
+							["name"] = "Flask of the Undertow",
+							["previousRecipeID"] = 252358,
+							["recipeID"] = 252359
 						},
 						{
-							["recipeID"] = 252348--[[Flask of the Currents]]
+							["name"] = "Flask of the Vast Horizon",
+							["nextRecipeID"] = 252355,
+							["recipeID"] = 252354
 						},
 						{
-							["recipeID"] = 252357--[[Flask of the Undertow]]
+							["name"] = "Flask of the Vast Horizon",
+							["nextRecipeID"] = 252356,
+							["previousRecipeID"] = 252354,
+							["recipeID"] = 252355
 						},
 						{
-							["recipeID"] = 252354--[[Flask of the Vast Horizon]]
+							["name"] = "Flask of the Vast Horizon",
+							["previousRecipeID"] = 252355,
+							["recipeID"] = 252356
 						}
 					}
 				},
 				{
-					["categoryID"] = 608--[[Transmutation]],
+					["name"] = "Transmutation",
+					["categoryID"] = 608,
 					["g"] = {
 						{
-							["recipeID"] = 251832--[[Transmute: Expulsom]]
+							["name"] = "Transmute: Cloth to Skins",
+							["recipeID"] = 251314
 						},
 						{
-							["recipeID"] = 251314--[[Transmute: Cloth to Skins]]
+							["name"] = "Transmute: Expulsom",
+							["recipeID"] = 251832
 						},
 						{
-							["recipeID"] = 251822--[[Transmute: Fish to Gems]]
+							["name"] = "Transmute: Fish to Gems",
+							["recipeID"] = 251822
 						},
 						{
-							["recipeID"] = 251306--[[Transmute: Herbs to Cloth]]
+							["name"] = "Transmute: Herbs to Anchors",
+							["recipeID"] = 286547
 						},
 						{
-							["recipeID"] = 251305--[[Transmute: Herbs to Ore]]
+							["name"] = "Transmute: Herbs to Cloth",
+							["recipeID"] = 251306
 						},
 						{
-							["recipeID"] = 251808--[[Transmute: Meat to Pet]]
+							["name"] = "Transmute: Herbs to Ore",
+							["recipeID"] = 251305
 						},
 						{
-							["recipeID"] = 251310--[[Transmute: Ore to Cloth]]
+							["name"] = "Transmute: Meat to Pet",
+							["recipeID"] = 251808
 						},
 						{
-							["recipeID"] = 251311--[[Transmute: Ore to Gems]]
+							["name"] = "Transmute: Ore to Cloth",
+							["recipeID"] = 251310
 						},
 						{
-							["recipeID"] = 251309--[[Transmute: Ore to Herbs]]
+							["name"] = "Transmute: Ore to Gems",
+							["recipeID"] = 251311
+						},
+						{
+							["name"] = "Transmute: Ore to Herbs",
+							["recipeID"] = 251309
 						}
 					}
 				},
 				{
-					["categoryID"] = 609--[[Trinkets]],
+					["name"] = "Trinkets",
+					["categoryID"] = 609,
 					["g"] = {
 						{
-							["recipeID"] = 252378--[[Endless Tincture of Fractional Power]]
+							["name"] = "Emblazoned Alchemist Stone",
+							["recipeID"] = 291086
 						},
 						{
-							["recipeID"] = 252377--[[Endless Tincture of Fractional Power]]
+							["name"] = "Endless Tincture of Fractional Power",
+							["nextRecipeID"] = 252377,
+							["recipeID"] = 252376
 						},
 						{
-							["recipeID"] = 252380--[[Surging Alchemist Stone]]
+							["name"] = "Endless Tincture of Fractional Power",
+							["nextRecipeID"] = 252378,
+							["previousRecipeID"] = 252376,
+							["recipeID"] = 252377
 						},
 						{
-							["recipeID"] = 252381--[[Surging Alchemist Stone]]
+							["name"] = "Endless Tincture of Fractional Power",
+							["previousRecipeID"] = 252377,
+							["recipeID"] = 252378
 						},
 						{
-							["recipeID"] = 252363--[[Endless Tincture of Renewed Combat]]
+							["name"] = "Endless Tincture of Renewed Combat",
+							["nextRecipeID"] = 252362,
+							["recipeID"] = 252361
 						},
 						{
-							["recipeID"] = 252370--[[Siren's Alchemist Stone]]
+							["name"] = "Endless Tincture of Renewed Combat",
+							["nextRecipeID"] = 252363,
+							["previousRecipeID"] = 252361,
+							["recipeID"] = 252362
 						},
 						{
-							["recipeID"] = 252376--[[Endless Tincture of Fractional Power]]
+							["name"] = "Endless Tincture of Renewed Combat",
+							["previousRecipeID"] = 252362,
+							["recipeID"] = 252363
 						},
 						{
-							["recipeID"] = 252379--[[Surging Alchemist Stone]]
+							["name"] = "Eternal Alchemist Stone",
+							["recipeID"] = 286923
 						},
 						{
-							["recipeID"] = 252362--[[Endless Tincture of Renewed Combat]]
+							["name"] = "Imbued Alchemist Stone",
+							["recipeID"] = 291085
 						},
 						{
-							["recipeID"] = 252369--[[Siren's Alchemist Stone]]
+							["name"] = "Sanguinated Alchemist Stone",
+							["recipeID"] = 291084
 						},
 						{
-							["recipeID"] = 252361--[[Endless Tincture of Renewed Combat]]
+							["name"] = "Siren's Alchemist Stone",
+							["nextRecipeID"] = 252369,
+							["recipeID"] = 252368
 						},
 						{
-							["recipeID"] = 252368--[[Siren's Alchemist Stone]]
+							["name"] = "Siren's Alchemist Stone",
+							["nextRecipeID"] = 252370,
+							["previousRecipeID"] = 252368,
+							["recipeID"] = 252369
+						},
+						{
+							["name"] = "Siren's Alchemist Stone",
+							["previousRecipeID"] = 252369,
+							["recipeID"] = 252370
+						},
+						{
+							["name"] = "Spirited Alchemist Stone",
+							["recipeID"] = 286922
+						},
+						{
+							["name"] = "Surging Alchemist Stone",
+							["nextRecipeID"] = 252380,
+							["recipeID"] = 252379
+						},
+						{
+							["name"] = "Surging Alchemist Stone",
+							["nextRecipeID"] = 252381,
+							["previousRecipeID"] = 252379,
+							["recipeID"] = 252380
+						},
+						{
+							["name"] = "Surging Alchemist Stone",
+							["previousRecipeID"] = 252380,
+							["recipeID"] = 252381
+						},
+						{
+							["name"] = "Tidal Alchemist Stone",
+							["recipeID"] = 286921
 						}
 					}
 				},
 				{
-					["categoryID"] = 1234--[[Follower Equipment]],
+					["name"] = "Conversions",
+					["categoryID"] = 1238,
 					["g"] = {
 						{
-							["recipeID"] = 278420--[[Potion of Herb Tracking]]
+							["name"] = "Aqueous Dilution",
+							["recipeID"] = 287234
+						},
+						{
+							["name"] = "Sanguinated Dilution",
+							["recipeID"] = 286630
+						}
+					}
+				},
+				{
+					["name"] = "Follower Equipment",
+					["categoryID"] = 1234,
+					["g"] = {
+						{
+							["name"] = "Potion of Herb Tracking",
+							["recipeID"] = 278420
+						},
+						{
+							["name"] = "Vial of Obfuscation",
+							["recipeID"] = 287288
 						}
 					}
 				}
 			}
 		},
 		{
-			["categoryID"] = 433--[[Alchemy of the Broken Isles]],
+			["name"] = "Alchemy of the Broken Isles",
+			["categoryID"] = 433,
 			["g"] = {
 				{
-					["categoryID"] = 439--[[Cauldrons]],
+					["name"] = "Cauldrons",
+					["categoryID"] = 439,
 					["g"] = {
 						{
-							["recipeID"] = 188350--[[Spirit Cauldron]]
+							["name"] = "Spirit Cauldron",
+							["nextRecipeID"] = 188350,
+							["recipeID"] = 188349
 						},
 						{
-							["recipeID"] = 188351--[[Spirit Cauldron]]
+							["name"] = "Spirit Cauldron",
+							["nextRecipeID"] = 188351,
+							["previousRecipeID"] = 188349,
+							["recipeID"] = 188350
 						},
 						{
-							["recipeID"] = 188349--[[Spirit Cauldron]]
+							["name"] = "Spirit Cauldron",
+							["previousRecipeID"] = 188350,
+							["recipeID"] = 188351
 						}
 					}
 				},
 				{
-					["categoryID"] = 434--[[Combat Potions]],
+					["name"] = "Combat Potions",
+					["categoryID"] = 434,
 					["g"] = {
 						{
-							["recipeID"] = 251658--[[Astral Healing Potion]]
+							["name"] = "Ancient Healing Potion",
+							["nextRecipeID"] = 188299,
+							["recipeID"] = 188297
 						},
 						{
-							["recipeID"] = 188336--[[Leytorrent Potion]]
+							["name"] = "Ancient Healing Potion",
+							["nextRecipeID"] = 188300,
+							["previousRecipeID"] = 188297,
+							["recipeID"] = 188299
 						},
 						{
-							["recipeID"] = 188327--[[Potion of Deadly Grace]]
+							["name"] = "Ancient Healing Potion",
+							["previousRecipeID"] = 188299,
+							["recipeID"] = 188300
 						},
 						{
-							["recipeID"] = 229220--[[Potion of Prolonged Power]]
+							["name"] = "Ancient Mana Potion",
+							["nextRecipeID"] = 188302,
+							["recipeID"] = 188301
 						},
 						{
-							["recipeID"] = 229218--[[Potion of Prolonged Power]]
+							["name"] = "Ancient Mana Potion",
+							["nextRecipeID"] = 188303,
+							["previousRecipeID"] = 188301,
+							["recipeID"] = 188302
 						},
 						{
-							["recipeID"] = 188330--[[Potion of the Old War]]
+							["name"] = "Ancient Mana Potion",
+							["previousRecipeID"] = 188302,
+							["recipeID"] = 188303
 						},
 						{
-							["recipeID"] = 188333--[[Unbending Potion]]
+							["name"] = "Ancient Rejuvenation Potion",
+							["nextRecipeID"] = 188305,
+							["recipeID"] = 188304
 						},
 						{
-							["recipeID"] = 247619--[[Lightblood Elixir]]
+							["name"] = "Ancient Rejuvenation Potion",
+							["nextRecipeID"] = 188306,
+							["previousRecipeID"] = 188304,
+							["recipeID"] = 188305
 						},
 						{
-							["recipeID"] = 247620--[[Lightblood Elixir]]
+							["name"] = "Ancient Rejuvenation Potion",
+							["previousRecipeID"] = 188305,
+							["recipeID"] = 188306
 						},
 						{
-							["recipeID"] = 247622--[[Lightblood Elixir]]
+							["name"] = "Astral Healing Potion",
+							["nextRecipeID"] = 251651,
+							["recipeID"] = 251646
 						},
 						{
-							["recipeID"] = 188300--[[Ancient Healing Potion]]
+							["name"] = "Astral Healing Potion",
+							["nextRecipeID"] = 251658,
+							["previousRecipeID"] = 251646,
+							["recipeID"] = 251651
 						},
 						{
-							["recipeID"] = 188303--[[Ancient Mana Potion]]
+							["name"] = "Astral Healing Potion",
+							["previousRecipeID"] = 251651,
+							["recipeID"] = 251658
 						},
 						{
-							["recipeID"] = 188306--[[Ancient Rejuvenation Potion]]
+							["name"] = "Leytorrent Potion",
+							["nextRecipeID"] = 188335,
+							["recipeID"] = 188334
 						},
 						{
-							["recipeID"] = 251651--[[Astral Healing Potion]]
+							["name"] = "Leytorrent Potion",
+							["nextRecipeID"] = 188336,
+							["previousRecipeID"] = 188334,
+							["recipeID"] = 188335
 						},
 						{
-							["recipeID"] = 188335--[[Leytorrent Potion]]
+							["name"] = "Leytorrent Potion",
+							["previousRecipeID"] = 188335,
+							["recipeID"] = 188336
 						},
 						{
-							["recipeID"] = 188326--[[Potion of Deadly Grace]]
+							["name"] = "Lightblood Elixir",
+							["nextRecipeID"] = 247620,
+							["recipeID"] = 247619
 						},
 						{
-							["recipeID"] = 229217--[[Potion of Prolonged Power]]
+							["name"] = "Lightblood Elixir",
+							["nextRecipeID"] = 247622,
+							["previousRecipeID"] = 247619,
+							["recipeID"] = 247620
 						},
 						{
-							["recipeID"] = 188329--[[Potion of the Old War]]
+							["name"] = "Lightblood Elixir",
+							["previousRecipeID"] = 247620,
+							["recipeID"] = 247622
 						},
 						{
-							["recipeID"] = 188332--[[Unbending Potion]]
+							["name"] = "Potion of Deadly Grace",
+							["nextRecipeID"] = 188326,
+							["recipeID"] = 188325
 						},
 						{
-							["recipeID"] = 188299--[[Ancient Healing Potion]]
+							["name"] = "Potion of Deadly Grace",
+							["nextRecipeID"] = 188327,
+							["previousRecipeID"] = 188325,
+							["recipeID"] = 188326
 						},
 						{
-							["recipeID"] = 188302--[[Ancient Mana Potion]]
+							["name"] = "Potion of Deadly Grace",
+							["previousRecipeID"] = 188326,
+							["recipeID"] = 188327
 						},
 						{
-							["recipeID"] = 188305--[[Ancient Rejuvenation Potion]]
+							["name"] = "Potion of Prolonged Power",
+							["nextRecipeID"] = 229218,
+							["recipeID"] = 229217
 						},
 						{
-							["recipeID"] = 251646--[[Astral Healing Potion]]
+							["name"] = "Potion of Prolonged Power",
+							["nextRecipeID"] = 229220,
+							["previousRecipeID"] = 229217,
+							["recipeID"] = 229218
 						},
 						{
-							["recipeID"] = 188334--[[Leytorrent Potion]]
+							["name"] = "Potion of Prolonged Power",
+							["previousRecipeID"] = 229218,
+							["recipeID"] = 229220
 						},
 						{
-							["recipeID"] = 188325--[[Potion of Deadly Grace]]
+							["name"] = "Potion of the Old War",
+							["nextRecipeID"] = 188329,
+							["recipeID"] = 188328
 						},
 						{
-							["recipeID"] = 188328--[[Potion of the Old War]]
+							["name"] = "Potion of the Old War",
+							["nextRecipeID"] = 188330,
+							["previousRecipeID"] = 188328,
+							["recipeID"] = 188329
 						},
 						{
-							["recipeID"] = 188331--[[Unbending Potion]]
+							["name"] = "Potion of the Old War",
+							["previousRecipeID"] = 188329,
+							["recipeID"] = 188330
 						},
 						{
-							["recipeID"] = 188297--[[Ancient Healing Potion]]
+							["name"] = "Unbending Potion",
+							["nextRecipeID"] = 188332,
+							["recipeID"] = 188331
 						},
 						{
-							["recipeID"] = 188301--[[Ancient Mana Potion]]
+							["name"] = "Unbending Potion",
+							["nextRecipeID"] = 188333,
+							["previousRecipeID"] = 188331,
+							["recipeID"] = 188332
 						},
 						{
-							["recipeID"] = 188304--[[Ancient Rejuvenation Potion]]
+							["name"] = "Unbending Potion",
+							["previousRecipeID"] = 188332,
+							["recipeID"] = 188333
 						}
 					}
 				},
 				{
-					["categoryID"] = 435--[[Flasks]],
+					["name"] = "Flasks",
+					["categoryID"] = 435,
 					["g"] = {
 						{
-							["recipeID"] = 188348--[[Flask of Ten Thousand Scars]]
+							["name"] = "Flask of Ten Thousand Scars",
+							["nextRecipeID"] = 188347,
+							["recipeID"] = 188346
 						},
 						{
-							["recipeID"] = 188347--[[Flask of Ten Thousand Scars]]
+							["name"] = "Flask of Ten Thousand Scars",
+							["nextRecipeID"] = 188348,
+							["previousRecipeID"] = 188346,
+							["recipeID"] = 188347
 						},
 						{
-							["recipeID"] = 188345--[[Flask of the Countless Armies]]
+							["name"] = "Flask of Ten Thousand Scars",
+							["previousRecipeID"] = 188347,
+							["recipeID"] = 188348
 						},
 						{
-							["recipeID"] = 188344--[[Flask of the Countless Armies]]
+							["name"] = "Flask of the Countless Armies",
+							["nextRecipeID"] = 188344,
+							["recipeID"] = 188343
 						},
 						{
-							["recipeID"] = 188342--[[Flask of the Seventh Demon]]
+							["name"] = "Flask of the Countless Armies",
+							["nextRecipeID"] = 188345,
+							["previousRecipeID"] = 188343,
+							["recipeID"] = 188344
 						},
 						{
-							["recipeID"] = 188341--[[Flask of the Seventh Demon]]
+							["name"] = "Flask of the Countless Armies",
+							["previousRecipeID"] = 188344,
+							["recipeID"] = 188345
 						},
 						{
-							["recipeID"] = 188339--[[Flask of the Whispered Pact]]
+							["name"] = "Flask of the Seventh Demon",
+							["nextRecipeID"] = 188341,
+							["recipeID"] = 188340
 						},
 						{
-							["recipeID"] = 188338--[[Flask of the Whispered Pact]]
+							["name"] = "Flask of the Seventh Demon",
+							["nextRecipeID"] = 188342,
+							["previousRecipeID"] = 188340,
+							["recipeID"] = 188341
 						},
 						{
-							["recipeID"] = 188346--[[Flask of Ten Thousand Scars]]
+							["name"] = "Flask of the Seventh Demon",
+							["previousRecipeID"] = 188341,
+							["recipeID"] = 188342
 						},
 						{
-							["recipeID"] = 188343--[[Flask of the Countless Armies]]
+							["name"] = "Flask of the Whispered Pact",
+							["nextRecipeID"] = 188338,
+							["recipeID"] = 188337
 						},
 						{
-							["recipeID"] = 188340--[[Flask of the Seventh Demon]]
+							["name"] = "Flask of the Whispered Pact",
+							["nextRecipeID"] = 188339,
+							["previousRecipeID"] = 188337,
+							["recipeID"] = 188338
 						},
 						{
-							["recipeID"] = 188337--[[Flask of the Whispered Pact]]
+							["name"] = "Flask of the Whispered Pact",
+							["previousRecipeID"] = 188338,
+							["recipeID"] = 188339
 						}
 					}
 				},
 				{
-					["categoryID"] = 436--[[Transmutation]],
+					["name"] = "Transmutation",
+					["categoryID"] = 436,
 					["g"] = {
 						{
-							["recipeID"] = 213257--[[Transmute: Blood of Sargeras]]
+							["name"] = "Transmute: Blood of Sargeras",
+							["recipeID"] = 213257
 						},
 						{
-							["recipeID"] = 247701--[[Transmute: Primal Sargerite]]
+							["name"] = "Transmute: Cloth to Herbs",
+							["recipeID"] = 213252
 						},
 						{
-							["recipeID"] = 188801--[[Wild Transmutation]]
+							["name"] = "Transmute: Cloth to Skins",
+							["recipeID"] = 213249
 						},
 						{
-							["recipeID"] = 188802--[[Wild Transmutation]]
+							["name"] = "Transmute: Fish to Gems",
+							["recipeID"] = 213254
 						},
 						{
-							["recipeID"] = 188800--[[Wild Transmutation]]
+							["name"] = "Transmute: Meat to Pants",
+							["recipeID"] = 213255
 						},
 						{
-							["recipeID"] = 213252--[[Transmute: Cloth to Herbs]]
+							["name"] = "Transmute: Meat to Pet",
+							["recipeID"] = 213256
 						},
 						{
-							["recipeID"] = 213249--[[Transmute: Cloth to Skins]]
+							["name"] = "Transmute: Ore to Cloth",
+							["recipeID"] = 213248
 						},
 						{
-							["recipeID"] = 213254--[[Transmute: Fish to Gems]]
+							["name"] = "Transmute: Ore to Herbs",
+							["recipeID"] = 213251
 						},
 						{
-							["recipeID"] = 213255--[[Transmute: Meat to Pants]]
+							["name"] = "Transmute: Primal Sargerite",
+							["recipeID"] = 247701
 						},
 						{
-							["recipeID"] = 213256--[[Transmute: Meat to Pet]]
+							["name"] = "Transmute: Skins to Herbs",
+							["recipeID"] = 213253
 						},
 						{
-							["recipeID"] = 213248--[[Transmute: Ore to Cloth]]
+							["name"] = "Transmute: Skins to Ore",
+							["recipeID"] = 213250
 						},
 						{
-							["recipeID"] = 213251--[[Transmute: Ore to Herbs]]
+							["name"] = "Wild Transmutation",
+							["nextRecipeID"] = 188801,
+							["recipeID"] = 188800
 						},
 						{
-							["recipeID"] = 213253--[[Transmute: Skins to Herbs]]
+							["name"] = "Wild Transmutation",
+							["nextRecipeID"] = 188802,
+							["previousRecipeID"] = 188800,
+							["recipeID"] = 188801
 						},
 						{
-							["recipeID"] = 213250--[[Transmute: Skins to Ore]]
+							["name"] = "Wild Transmutation",
+							["previousRecipeID"] = 188801,
+							["recipeID"] = 188802
 						}
 					}
 				},
 				{
-					["categoryID"] = 438--[[Trinkets]],
+					["name"] = "Trinkets",
+					["categoryID"] = 438,
 					["g"] = {
 						{
-							["recipeID"] = 247695--[[Astral Alchemist Stone]]
+							["name"] = "Astral Alchemist Stone",
+							["nextRecipeID"] = 247695,
+							["recipeID"] = 247694
 						},
 						{
-							["recipeID"] = 247696--[[Astral Alchemist Stone]]
+							["name"] = "Astral Alchemist Stone",
+							["nextRecipeID"] = 247696,
+							["previousRecipeID"] = 247694,
+							["recipeID"] = 247695
 						},
 						{
-							["recipeID"] = 247694--[[Astral Alchemist Stone]]
+							["name"] = "Astral Alchemist Stone",
+							["previousRecipeID"] = 247695,
+							["recipeID"] = 247696
 						},
 						{
-							["recipeID"] = 188324--[[Infernal Alchemist Stone]]
+							["name"] = "Infernal Alchemist Stone",
+							["nextRecipeID"] = 188323,
+							["recipeID"] = 188322
 						},
 						{
-							["recipeID"] = 188323--[[Infernal Alchemist Stone]]
+							["name"] = "Infernal Alchemist Stone",
+							["nextRecipeID"] = 188324,
+							["previousRecipeID"] = 188322,
+							["recipeID"] = 188323
 						},
 						{
-							["recipeID"] = 188322--[[Infernal Alchemist Stone]]
+							["name"] = "Infernal Alchemist Stone",
+							["previousRecipeID"] = 188323,
+							["recipeID"] = 188324
 						}
 					}
 				},
 				{
-					["categoryID"] = 437--[[Utility Potions]],
+					["name"] = "Utility Potions",
+					["categoryID"] = 437,
 					["g"] = {
 						{
-							["recipeID"] = 247691--[[Tears of the Naaru]]
+							["name"] = "Avalanche Elixir",
+							["nextRecipeID"] = 188314,
+							["recipeID"] = 188313
 						},
 						{
-							["recipeID"] = 247690--[[Tears of the Naaru]]
+							["name"] = "Avalanche Elixir",
+							["nextRecipeID"] = 188315,
+							["previousRecipeID"] = 188313,
+							["recipeID"] = 188314
 						},
 						{
-							["recipeID"] = 247688--[[Tears of the Naaru]]
+							["name"] = "Avalanche Elixir",
+							["previousRecipeID"] = 188314,
+							["recipeID"] = 188315
 						},
 						{
-							["recipeID"] = 188315--[[Avalanche Elixir]]
+							["name"] = "Draught of Raw Magic",
+							["nextRecipeID"] = 188308,
+							["recipeID"] = 188307
 						},
 						{
-							["recipeID"] = 188309--[[Draught of Raw Magic]]
+							["name"] = "Draught of Raw Magic",
+							["nextRecipeID"] = 188309,
+							["previousRecipeID"] = 188307,
+							["recipeID"] = 188308
 						},
 						{
-							["recipeID"] = 188318--[[Skaggldrynk]]
+							["name"] = "Draught of Raw Magic",
+							["previousRecipeID"] = 188308,
+							["recipeID"] = 188309
 						},
 						{
-							["recipeID"] = 188321--[[Skystep Potion]]
+							["name"] = "Silvery Salve",
+							["recipeID"] = 221690
 						},
 						{
-							["recipeID"] = 188312--[[Sylvan Elixir]]
+							["name"] = "Skaggldrynk",
+							["nextRecipeID"] = 188317,
+							["recipeID"] = 188316
 						},
 						{
-							["recipeID"] = 188314--[[Avalanche Elixir]]
+							["name"] = "Skaggldrynk",
+							["nextRecipeID"] = 188318,
+							["previousRecipeID"] = 188316,
+							["recipeID"] = 188317
 						},
 						{
-							["recipeID"] = 188308--[[Draught of Raw Magic]]
+							["name"] = "Skaggldrynk",
+							["previousRecipeID"] = 188317,
+							["recipeID"] = 188318
 						},
 						{
-							["recipeID"] = 221690--[[Silvery Salve]]
+							["name"] = "Skystep Potion",
+							["nextRecipeID"] = 188320,
+							["recipeID"] = 188319
 						},
 						{
-							["recipeID"] = 188317--[[Skaggldrynk]]
+							["name"] = "Skystep Potion",
+							["nextRecipeID"] = 188321,
+							["previousRecipeID"] = 188319,
+							["recipeID"] = 188320
 						},
 						{
-							["recipeID"] = 188320--[[Skystep Potion]]
+							["name"] = "Skystep Potion",
+							["previousRecipeID"] = 188320,
+							["recipeID"] = 188321
 						},
 						{
-							["recipeID"] = 188311--[[Sylvan Elixir]]
+							["name"] = "Sylvan Elixir",
+							["nextRecipeID"] = 188311,
+							["recipeID"] = 188310
 						},
 						{
-							["recipeID"] = 188313--[[Avalanche Elixir]]
+							["name"] = "Sylvan Elixir",
+							["nextRecipeID"] = 188312,
+							["previousRecipeID"] = 188310,
+							["recipeID"] = 188311
 						},
 						{
-							["recipeID"] = 188307--[[Draught of Raw Magic]]
+							["name"] = "Sylvan Elixir",
+							["previousRecipeID"] = 188311,
+							["recipeID"] = 188312
 						},
 						{
-							["recipeID"] = 188316--[[Skaggldrynk]]
+							["name"] = "Tears of the Naaru",
+							["nextRecipeID"] = 247690,
+							["recipeID"] = 247688
 						},
 						{
-							["recipeID"] = 188319--[[Skystep Potion]]
+							["name"] = "Tears of the Naaru",
+							["nextRecipeID"] = 247691,
+							["previousRecipeID"] = 247688,
+							["recipeID"] = 247690
 						},
 						{
-							["recipeID"] = 188310--[[Sylvan Elixir]]
+							["name"] = "Tears of the Naaru",
+							["previousRecipeID"] = 247690,
+							["recipeID"] = 247691
 						}
 					}
 				}
 			}
 		},
 		{
-			["categoryID"] = 332--[[Alchemy of Draenor]],
+			["name"] = "Alchemy of Draenor",
+			["categoryID"] = 332,
 			["g"] = {
 				{
-					["categoryID"] = 1123--[[Cures & Tonics]],
+					["name"] = "Cures & Tonics",
+					["categoryID"] = 1123,
 					["g"] = {
 						{
-							["recipeID"] = 172541--[[Blackwater Anti-Venom]]
+							["name"] = "Blackwater Anti-Venom",
+							["recipeID"] = 172541
 						},
 						{
-							["recipeID"] = 172542--[[Fire Ammonite Oil]]
+							["name"] = "Fire Ammonite Oil",
+							["recipeID"] = 172542
 						},
 						{
-							["recipeID"] = 172540--[[Healing Tonic]]
+							["name"] = "Healing Tonic",
+							["recipeID"] = 172540
 						}
 					}
 				},
 				{
-					["categoryID"] = 333--[[Reagents and Research]],
+					["name"] = "Reagents and Research",
+					["categoryID"] = 333,
 					["g"] = {
 						{
-							["recipeID"] = 156587--[[Alchemical Catalyst]]
+							["name"] = "Alchemical Catalyst",
+							["recipeID"] = 168042
 						},
 						{
-							["recipeID"] = 168042--[[Alchemical Catalyst]]
+							["name"] = "Alchemical Catalyst",
+							["recipeID"] = 156587
 						},
 						{
-							["recipeID"] = 175880--[[Secrets of Draenor Alchemy]]
+							["name"] = "Alchemical Catalyst - Fireweed",
+							["recipeID"] = 156588
 						},
 						{
-							["recipeID"] = 156585--[[Crescent Oil]]
+							["name"] = "Alchemical Catalyst - Flytrap",
+							["recipeID"] = 156589
 						},
 						{
-							["recipeID"] = 156588--[[Alchemical Catalyst - Fireweed]]
+							["name"] = "Alchemical Catalyst - Lotus",
+							["recipeID"] = 156593
 						},
 						{
-							["recipeID"] = 156589--[[Alchemical Catalyst - Flytrap]]
+							["name"] = "Alchemical Catalyst - Orchid",
+							["recipeID"] = 156592
 						},
 						{
-							["recipeID"] = 156593--[[Alchemical Catalyst - Lotus]]
+							["name"] = "Alchemical Catalyst - Starflower",
+							["recipeID"] = 156590
 						},
 						{
-							["recipeID"] = 156592--[[Alchemical Catalyst - Orchid]]
+							["name"] = "Crescent Oil",
+							["recipeID"] = 156585
 						},
 						{
-							["recipeID"] = 156590--[[Alchemical Catalyst - Starflower]]
+							["name"] = "Primal Alchemy",
+							["recipeID"] = 156591
 						},
 						{
-							["recipeID"] = 156591--[[Primal Alchemy]]
+							["name"] = "Secrets of Draenor Alchemy",
+							["recipeID"] = 175880
 						}
 					}
 				},
 				{
-					["categoryID"] = 334--[[Flasks]],
+					["name"] = "Flasks",
+					["categoryID"] = 334,
 					["g"] = {
 						{
-							["recipeID"] = 156561--[[Draenic Agility Flask]]
+							["name"] = "Draenic Agility Flask",
+							["recipeID"] = 156561
 						},
 						{
-							["recipeID"] = 156563--[[Draenic Intellect Flask]]
+							["name"] = "Draenic Intellect Flask",
+							["recipeID"] = 156563
 						},
 						{
-							["recipeID"] = 156568--[[Draenic Stamina Flask]]
+							["name"] = "Draenic Stamina Flask",
+							["recipeID"] = 156568
 						},
 						{
-							["recipeID"] = 156564--[[Draenic Strength Flask]]
+							["name"] = "Draenic Strength Flask",
+							["recipeID"] = 156564
 						},
 						{
-							["recipeID"] = 156567--[[Draenor Armor Flask]]
+							["name"] = "Draenor Armor Flask",
+							["recipeID"] = 156567
 						},
 						{
-							["recipeID"] = 156569--[[Greater Draenic Agility Flask]]
+							["name"] = "Greater Draenic Agility Flask",
+							["recipeID"] = 156569
 						},
 						{
-							["recipeID"] = 156571--[[Greater Draenic Intellect Flask]]
+							["name"] = "Greater Draenic Intellect Flask",
+							["recipeID"] = 156571
 						},
 						{
-							["recipeID"] = 156576--[[Greater Draenic Stamina Flask]]
+							["name"] = "Greater Draenic Stamina Flask",
+							["recipeID"] = 156576
 						},
 						{
-							["recipeID"] = 156572--[[Greater Draenic Strength Flask]]
+							["name"] = "Greater Draenic Strength Flask",
+							["recipeID"] = 156572
 						}
 					}
 				},
 				{
-					["categoryID"] = 423--[[Transmutation]],
+					["name"] = "Transmutation",
+					["categoryID"] = 423,
 					["g"] = {
 						{
-							["recipeID"] = 181633--[[Transmute: Sorcerous Air to Fire]]
+							["name"] = "Transmute: Savage Blood",
+							["recipeID"] = 181643
 						},
 						{
-							["recipeID"] = 181636--[[Transmute: Sorcerous Air to Water]]
+							["name"] = "Transmute: Sorcerous Air to Earth",
+							["recipeID"] = 181637
 						},
 						{
-							["recipeID"] = 181631--[[Transmute: Sorcerous Earth to Air]]
+							["name"] = "Transmute: Sorcerous Air to Fire",
+							["recipeID"] = 181633
 						},
 						{
-							["recipeID"] = 181632--[[Transmute: Sorcerous Earth to Fire]]
+							["name"] = "Transmute: Sorcerous Air to Water",
+							["recipeID"] = 181636
 						},
 						{
-							["recipeID"] = 181635--[[Transmute: Sorcerous Earth to Water]]
+							["name"] = "Transmute: Sorcerous Earth to Air",
+							["recipeID"] = 181631
 						},
 						{
-							["recipeID"] = 181627--[[Transmute: Sorcerous Fire to Air]]
+							["name"] = "Transmute: Sorcerous Earth to Fire",
+							["recipeID"] = 181632
 						},
 						{
-							["recipeID"] = 181625--[[Transmute: Sorcerous Fire to Earth]]
+							["name"] = "Transmute: Sorcerous Earth to Water",
+							["recipeID"] = 181635
 						},
 						{
-							["recipeID"] = 181628--[[Transmute: Sorcerous Fire to Water]]
+							["name"] = "Transmute: Sorcerous Fire to Air",
+							["recipeID"] = 181627
 						},
 						{
-							["recipeID"] = 181630--[[Transmute: Sorcerous Water to Air]]
+							["name"] = "Transmute: Sorcerous Fire to Earth",
+							["recipeID"] = 181625
 						},
 						{
-							["recipeID"] = 181629--[[Transmute: Sorcerous Water to Earth]]
+							["name"] = "Transmute: Sorcerous Fire to Water",
+							["recipeID"] = 181628
 						},
 						{
-							["recipeID"] = 181634--[[Transmute: Sorcerous Water to Fire]]
+							["name"] = "Transmute: Sorcerous Water to Air",
+							["recipeID"] = 181630
 						},
 						{
-							["recipeID"] = 181643--[[Transmute: Savage Blood]]
+							["name"] = "Transmute: Sorcerous Water to Earth",
+							["recipeID"] = 181629
 						},
 						{
-							["recipeID"] = 181637--[[Transmute: Sorcerous Air to Earth]]
+							["name"] = "Transmute: Sorcerous Water to Fire",
+							["recipeID"] = 181634
 						}
 					}
 				},
 				{
-					["categoryID"] = 335--[[Potions and Elixirs]],
+					["name"] = "Potions and Elixirs",
+					["categoryID"] = 335,
 					["g"] = {
 						{
-							["recipeID"] = 156577--[[Draenic Agility Potion]]
+							["name"] = "Draenic Agility Potion",
+							["recipeID"] = 156577
 						},
 						{
-							["recipeID"] = 156581--[[Draenic Channeled Mana Potion]]
+							["name"] = "Draenic Channeled Mana Potion",
+							["recipeID"] = 156581
 						},
 						{
-							["recipeID"] = 156578--[[Draenic Intellect Potion]]
+							["name"] = "Draenic Intellect Potion",
+							["recipeID"] = 156578
 						},
 						{
-							["recipeID"] = 156582--[[Draenic Mana Potion]]
+							["name"] = "Draenic Invisibility Potion",
+							["recipeID"] = 175865
 						},
 						{
-							["recipeID"] = 156584--[[Draenic Rejuvenation Potion]]
+							["name"] = "Draenic Living Action Potion",
+							["recipeID"] = 175867
 						},
 						{
-							["recipeID"] = 156579--[[Draenic Strength Potion]]
+							["name"] = "Draenic Mana Potion",
+							["recipeID"] = 156582
 						},
 						{
-							["recipeID"] = 156580--[[Draenic Versatility Potion]]
+							["name"] = "Draenic Rejuvenation Potion",
+							["recipeID"] = 156584
 						},
 						{
-							["recipeID"] = 175865--[[Draenic Invisibility Potion]]
+							["name"] = "Draenic Strength Potion",
+							["recipeID"] = 156579
 						},
 						{
-							["recipeID"] = 175867--[[Draenic Living Action Potion]]
+							["name"] = "Draenic Swiftness Potion",
+							["recipeID"] = 175853
 						},
 						{
-							["recipeID"] = 175853--[[Draenic Swiftness Potion]]
+							["name"] = "Draenic Versatility Potion",
+							["recipeID"] = 156580
 						},
 						{
-							["recipeID"] = 175866--[[Draenic Water Breathing Elixir]]
+							["name"] = "Draenic Water Breathing Elixir",
+							["recipeID"] = 175866
 						},
 						{
-							["recipeID"] = 175869--[[Draenic Water Walking Elixir]]
+							["name"] = "Draenic Water Walking Elixir",
+							["recipeID"] = 175869
 						},
 						{
-							["recipeID"] = 175868--[[Pure Rage Potion]]
+							["name"] = "Pure Rage Potion",
+							["recipeID"] = 175868
 						},
 						{
-							["recipeID"] = 162403--[[Transmorphic Tincture]]
+							["name"] = "Transmorphic Tincture",
+							["recipeID"] = 162403
 						}
 					}
 				},
 				{
-					["categoryID"] = 336--[[Trinkets and Trinket Upgrades]],
+					["name"] = "Trinkets and Trinket Upgrades",
+					["categoryID"] = 336,
 					["g"] = {
 						{
-							["recipeID"] = 156560--[[Draenic Philosopher's Stone]]
+							["name"] = "Draenic Philosopher's Stone",
+							["recipeID"] = 156560
 						},
 						{
-							["recipeID"] = 188676--[[Elemental Distillate]]
+							["name"] = "Elemental Distillate",
+							["recipeID"] = 188676
 						},
 						{
-							["recipeID"] = 188674--[[Wildswater]]
+							["name"] = "Stone of Fire",
+							["recipeID"] = 181650
 						},
 						{
-							["recipeID"] = 181650--[[Stone of Fire]]
+							["name"] = "Stone of the Earth",
+							["recipeID"] = 181648
 						},
 						{
-							["recipeID"] = 181648--[[Stone of the Earth]]
+							["name"] = "Stone of the Waters",
+							["recipeID"] = 181649
 						},
 						{
-							["recipeID"] = 181649--[[Stone of the Waters]]
+							["name"] = "Stone of Wind",
+							["recipeID"] = 181647
 						},
 						{
-							["recipeID"] = 181647--[[Stone of Wind]]
+							["name"] = "Wildswater",
+							["recipeID"] = 188674
 						}
 					}
 				}
 			}
 		},
 		{
-			["categoryID"] = 596--[[Alchemy of Pandaria]],
+			["name"] = "Alchemy of Pandaria",
+			["categoryID"] = 596,
 			["g"] = {
 				{
-					["categoryID"] = 611--[[Potions]],
+					["name"] = "Potions",
+					["categoryID"] = 611,
 					["g"] = {
 						{
-							["recipeID"] = 114775--[[Master Mana Potion]]
+							["name"] = "Alchemist's Rejuvenation",
+							["recipeID"] = 114751
 						},
 						{
-							["recipeID"] = 114779--[[Potion of Luck]]
+							["name"] = "Darkwater Potion",
+							["recipeID"] = 114774
 						},
 						{
-							["recipeID"] = 114774--[[Darkwater Potion]]
+							["name"] = "Master Healing Potion",
+							["recipeID"] = 114752
 						},
 						{
-							["recipeID"] = 114782--[[Potion of Focus]]
+							["name"] = "Master Mana Potion",
+							["recipeID"] = 114775
 						},
 						{
-							["recipeID"] = 114760--[[Potion of Mogu Power]]
+							["name"] = "Potion of Focus",
+							["recipeID"] = 114782
 						},
 						{
-							["recipeID"] = 114765--[[Virmen's Bite]]
+							["name"] = "Potion of Luck",
+							["recipeID"] = 114779
 						},
 						{
-							["recipeID"] = 114757--[[Potion of the Jade Serpent]]
+							["name"] = "Potion of Mogu Power",
+							["recipeID"] = 114760
 						},
 						{
-							["recipeID"] = 114753--[[Potion of the Mountains]]
+							["name"] = "Potion of the Jade Serpent",
+							["recipeID"] = 114757
 						},
 						{
-							["recipeID"] = 114751--[[Alchemist's Rejuvenation]]
+							["name"] = "Potion of the Mountains",
+							["recipeID"] = 114753
 						},
 						{
-							["recipeID"] = 114752--[[Master Healing Potion]]
+							["name"] = "Virmen's Bite",
+							["recipeID"] = 114765
 						}
 					}
 				},
 				{
-					["categoryID"] = 612--[[Elixirs]],
+					["name"] = "Elixirs",
+					["categoryID"] = 612,
 					["g"] = {
 						{
-							["recipeID"] = 114763--[[Elixir of Mirrors]]
+							["name"] = "Elixir of Mirrors",
+							["recipeID"] = 114763
 						},
 						{
-							["recipeID"] = 114764--[[Elixir of Peace]]
+							["name"] = "Elixir of Peace",
+							["recipeID"] = 114764
 						},
 						{
-							["recipeID"] = 114762--[[Elixir of Perfection]]
+							["name"] = "Elixir of Perfection",
+							["recipeID"] = 114762
 						},
 						{
-							["recipeID"] = 114759--[[Elixir of the Rapids]]
+							["name"] = "Elixir of the Rapids",
+							["recipeID"] = 114759
 						},
 						{
-							["recipeID"] = 114756--[[Elixir of Weaponry]]
+							["name"] = "Elixir of Weaponry",
+							["recipeID"] = 114756
 						},
 						{
-							["recipeID"] = 114754--[[Mad Hozen Elixir]]
+							["name"] = "Mad Hozen Elixir",
+							["recipeID"] = 114754
 						},
 						{
-							["recipeID"] = 114755--[[Mantid Elixir]]
+							["name"] = "Mantid Elixir",
+							["recipeID"] = 114755
 						},
 						{
-							["recipeID"] = 114758--[[Monk's Elixir]]
+							["name"] = "Monk's Elixir",
+							["recipeID"] = 114758
 						}
 					}
 				},
 				{
-					["categoryID"] = 613--[[Flasks]],
+					["name"] = "Flasks",
+					["categoryID"] = 613,
 					["g"] = {
 						{
-							["recipeID"] = 114772--[[Flask of Falling Leaves]]
+							["name"] = "Flask of Falling Leaves",
+							["recipeID"] = 114772
 						},
 						{
-							["recipeID"] = 114769--[[Flask of Spring Blossoms]]
+							["name"] = "Flask of Spring Blossoms",
+							["recipeID"] = 114769
 						},
 						{
-							["recipeID"] = 114770--[[Flask of the Earth]]
+							["name"] = "Flask of the Earth",
+							["recipeID"] = 114770
 						},
 						{
-							["recipeID"] = 114771--[[Flask of the Warm Sun]]
+							["name"] = "Flask of the Warm Sun",
+							["recipeID"] = 114771
 						},
 						{
-							["recipeID"] = 114773--[[Flask of Winter's Bite]]
+							["name"] = "Flask of Winter's Bite",
+							["recipeID"] = 114773
 						}
 					}
 				},
 				{
-					["categoryID"] = 614--[[Transmutation]],
+					["name"] = "Transmutation",
+					["categoryID"] = 614,
 					["g"] = {
 						{
-							["recipeID"] = 114777--[[Transmute: Imperial Amethyst]]
+							["name"] = "Riddle of Steel",
+							["recipeID"] = 130326
 						},
 						{
-							["recipeID"] = 114781--[[Transmute: Primal Diamond]]
+							["name"] = "Transmute: Imperial Amethyst",
+							["recipeID"] = 114777
 						},
 						{
-							["recipeID"] = 114784--[[Transmute: Primordial Ruby]]
+							["name"] = "Transmute: Living Steel",
+							["recipeID"] = 114780
 						},
 						{
-							["recipeID"] = 114766--[[Transmute: River's Heart]]
+							["name"] = "Transmute: Primal Diamond",
+							["recipeID"] = 114781
 						},
 						{
-							["recipeID"] = 114778--[[Transmute: Sun's Radiance]]
+							["name"] = "Transmute: Primordial Ruby",
+							["recipeID"] = 114784
 						},
 						{
-							["recipeID"] = 114783--[[Transmute: Trillium Bar]]
+							["name"] = "Transmute: River's Heart",
+							["recipeID"] = 114766
 						},
 						{
-							["recipeID"] = 114776--[[Transmute: Vermilion Onyx]]
+							["name"] = "Transmute: Sun's Radiance",
+							["recipeID"] = 114778
 						},
 						{
-							["recipeID"] = 114767--[[Transmute: Wild Jade]]
+							["name"] = "Transmute: Trillium Bar",
+							["recipeID"] = 114783
 						},
 						{
-							["recipeID"] = 130326--[[Riddle of Steel]]
+							["name"] = "Transmute: Vermilion Onyx",
+							["recipeID"] = 114776
 						},
 						{
-							["recipeID"] = 114780--[[Transmute: Living Steel]]
+							["name"] = "Transmute: Wild Jade",
+							["recipeID"] = 114767
 						}
 					}
 				},
 				{
-					["categoryID"] = 615--[[Trinkets]],
+					["name"] = "Trinkets",
+					["categoryID"] = 615,
 					["g"] = {
 						{
-							["recipeID"] = 136197--[[Zen Alchemist Stone]]
+							["name"] = "Zen Alchemist Stone",
+							["recipeID"] = 136197
 						}
 					}
 				},
 				{
-					["categoryID"] = 616--[[Oils]],
+					["name"] = "Oils",
+					["categoryID"] = 616,
 					["g"] = {
 						{
-							["recipeID"] = 114761--[[Desecrated Oil]]
+							["name"] = "Desecrated Oil",
+							["recipeID"] = 114761
 						}
 					}
 				}
 			}
 		},
 		{
-			["categoryID"] = 598--[[Alchemy of the Cataclysm]],
+			["name"] = "Alchemy of the Cataclysm",
+			["categoryID"] = 598,
 			["g"] = {
 				{
-					["categoryID"] = 617--[[Cauldrons]],
+					["name"] = "Cauldrons",
+					["categoryID"] = 617,
 					["g"] = {
 						{
-							["recipeID"] = 92688--[[Big Cauldron of Battle]]
+							["name"] = "Big Cauldron of Battle",
+							["recipeID"] = 92688
 						},
 						{
-							["recipeID"] = 92643--[[Cauldron of Battle]]
+							["name"] = "Cauldron of Battle",
+							["recipeID"] = 92643
 						}
 					}
 				},
 				{
-					["categoryID"] = 618--[[Potions]],
+					["name"] = "Potions",
+					["categoryID"] = 618,
 					["g"] = {
 						{
-							["recipeID"] = 80726--[[Potion of Treasure Finding]]
+							["name"] = "Deathblood Venom",
+							["recipeID"] = 80479
 						},
 						{
-							["recipeID"] = 80725--[[Potion of Deepholm]]
+							["name"] = "Draught of War",
+							["recipeID"] = 93935
 						},
 						{
-							["recipeID"] = 80498--[[Mythical Healing Potion]]
+							["name"] = "Earthen Potion",
+							["recipeID"] = 80478
 						},
 						{
-							["recipeID"] = 80496--[[Golemblood Potion]]
+							["name"] = "Golemblood Potion",
+							["recipeID"] = 80496
 						},
 						{
-							["recipeID"] = 80495--[[Potion of the Tol'vir]]
+							["name"] = "Mighty Rejuvenation Potion",
+							["recipeID"] = 80490
 						},
 						{
-							["recipeID"] = 80494--[[Mythical Mana Potion]]
+							["name"] = "Mysterious Potion",
+							["recipeID"] = 80487
 						},
 						{
-							["recipeID"] = 80490--[[Mighty Rejuvenation Potion]]
+							["name"] = "Mythical Healing Potion",
+							["recipeID"] = 80498
 						},
 						{
-							["recipeID"] = 80487--[[Mysterious Potion]]
+							["name"] = "Mythical Mana Potion",
+							["recipeID"] = 80494
 						},
 						{
-							["recipeID"] = 80482--[[Potion of Concentration]]
+							["name"] = "Potion of Concentration",
+							["recipeID"] = 80482
 						},
 						{
-							["recipeID"] = 80269--[[Potion of Illusion]]
+							["name"] = "Potion of Deepholm",
+							["recipeID"] = 80725
 						},
 						{
-							["recipeID"] = 80481--[[Volcanic Potion]]
+							["name"] = "Potion of Illusion",
+							["recipeID"] = 80269
 						},
 						{
-							["recipeID"] = 80479--[[Deathblood Venom]]
+							["name"] = "Potion of the Tol'vir",
+							["recipeID"] = 80495
 						},
 						{
-							["recipeID"] = 80478--[[Earthen Potion]]
+							["name"] = "Potion of Treasure Finding",
+							["recipeID"] = 80726
 						},
 						{
-							["recipeID"] = 93935--[[Draught of War]]
+							["name"] = "Volcanic Potion",
+							["recipeID"] = 80481
 						}
 					}
 				},
 				{
-					["categoryID"] = 619--[[Elixirs]],
+					["name"] = "Elixirs",
+					["categoryID"] = 619,
 					["g"] = {
 						{
-							["recipeID"] = 80497--[[Elixir of the Master]]
+							["name"] = "Elixir of Deep Earth",
+							["recipeID"] = 80488
 						},
 						{
-							["recipeID"] = 80493--[[Elixir of Mighty Speed]]
+							["name"] = "Elixir of Impossible Accuracy",
+							["recipeID"] = 80491
 						},
 						{
-							["recipeID"] = 80491--[[Elixir of Impossible Accuracy]]
+							["name"] = "Elixir of Mighty Speed",
+							["recipeID"] = 80493
 						},
 						{
-							["recipeID"] = 80492--[[Prismatic Elixir]]
+							["name"] = "Elixir of the Cobra",
+							["recipeID"] = 80484
 						},
 						{
-							["recipeID"] = 80488--[[Elixir of Deep Earth]]
+							["name"] = "Elixir of the Master",
+							["recipeID"] = 80497
 						},
 						{
-							["recipeID"] = 80484--[[Elixir of the Cobra]]
+							["name"] = "Elixir of the Naga",
+							["recipeID"] = 80480
 						},
 						{
-							["recipeID"] = 80480--[[Elixir of the Naga]]
+							["name"] = "Ghost Elixir",
+							["recipeID"] = 80477
 						},
 						{
-							["recipeID"] = 80477--[[Ghost Elixir]]
+							["name"] = "Prismatic Elixir",
+							["recipeID"] = 80492
 						}
 					}
 				},
 				{
-					["categoryID"] = 620--[[Flasks]],
+					["name"] = "Flasks",
+					["categoryID"] = 620,
 					["g"] = {
 						{
-							["recipeID"] = 80721--[[Flask of the Winds]]
+							["name"] = "Flask of Flowing Water",
+							["recipeID"] = 94162
 						},
 						{
-							["recipeID"] = 80723--[[Flask of Titanic Strength]]
+							["name"] = "Flask of Steelskin",
+							["recipeID"] = 80719
 						},
 						{
-							["recipeID"] = 80720--[[Flask of the Draconic Mind]]
+							["name"] = "Flask of the Draconic Mind",
+							["recipeID"] = 80720
 						},
 						{
-							["recipeID"] = 94162--[[Flask of Flowing Water]]
+							["name"] = "Flask of the Winds",
+							["recipeID"] = 80721
 						},
 						{
-							["recipeID"] = 80719--[[Flask of Steelskin]]
+							["name"] = "Flask of Titanic Strength",
+							["recipeID"] = 80723
 						}
 					}
 				},
 				{
-					["categoryID"] = 621--[[Transmutation]],
+					["name"] = "Transmutation",
+					["categoryID"] = 621,
 					["g"] = {
 						{
-							["recipeID"] = 80244--[[Transmute: Pyrium Bar]]
+							["name"] = "Transmute: Amberjewel",
+							["recipeID"] = 80247
 						},
 						{
-							["recipeID"] = 80237--[[Transmute: Shadowspirit Diamond]]
+							["name"] = "Transmute: Demonseye",
+							["recipeID"] = 80248
 						},
 						{
-							["recipeID"] = 80243--[[Transmute: Truegold]]
+							["name"] = "Transmute: Dream Emerald",
+							["recipeID"] = 80251
 						},
 						{
-							["recipeID"] = 80247--[[Transmute: Amberjewel]]
+							["name"] = "Transmute: Ember Topaz",
+							["recipeID"] = 80250
 						},
 						{
-							["recipeID"] = 80248--[[Transmute: Demonseye]]
+							["name"] = "Transmute: Inferno Ruby",
+							["recipeID"] = 80245
 						},
 						{
-							["recipeID"] = 80250--[[Transmute: Ember Topaz]]
+							["name"] = "Transmute: Living Elements",
+							["recipeID"] = 78866
 						},
 						{
-							["recipeID"] = 80245--[[Transmute: Inferno Ruby]]
+							["name"] = "Transmute: Ocean Sapphire",
+							["recipeID"] = 80246
 						},
 						{
-							["recipeID"] = 80246--[[Transmute: Ocean Sapphire]]
+							["name"] = "Transmute: Pyrium Bar",
+							["recipeID"] = 80244
 						},
 						{
-							["recipeID"] = 80251--[[Transmute: Dream Emerald]]
+							["name"] = "Transmute: Shadowspirit Diamond",
+							["recipeID"] = 80237
 						},
 						{
-							["recipeID"] = 78866--[[Transmute: Living Elements]]
+							["name"] = "Transmute: Truegold",
+							["recipeID"] = 80243
 						}
 					}
 				},
 				{
-					["categoryID"] = 622--[[Trinkets]],
+					["name"] = "Trinkets",
+					["categoryID"] = 622,
 					["g"] = {
 						{
-							["recipeID"] = 80508--[[Lifebound Alchemist Stone]]
+							["name"] = "Lifebound Alchemist Stone",
+							["recipeID"] = 80508
 						},
 						{
-							["recipeID"] = 96253--[[Quicksilver Alchemist Stone]]
+							["name"] = "Quicksilver Alchemist Stone",
+							["recipeID"] = 96253
 						},
 						{
-							["recipeID"] = 96254--[[Vibrant Alchemist Stone]]
+							["name"] = "Vibrant Alchemist Stone",
+							["recipeID"] = 96254
 						},
 						{
-							["recipeID"] = 96252--[[Volatile Alchemist Stone]]
+							["name"] = "Volatile Alchemist Stone",
+							["recipeID"] = 96252
 						}
 					}
 				},
 				{
-					["categoryID"] = 623--[[Oils]],
+					["name"] = "Oils",
+					["categoryID"] = 623,
 					["g"] = {
 						{
-							["recipeID"] = 80486--[[Deepstone Oil]]
+							["name"] = "Deepstone Oil",
+							["recipeID"] = 80486
 						}
 					}
 				},
 				{
-					["categoryID"] = 624--[[Mounts]],
+					["name"] = "Mounts",
+					["categoryID"] = 624,
 					["g"] = {
 						{
-							["recipeID"] = 93328--[[Vial of the Sands]]
+							["name"] = "Vial of the Sands",
+							["recipeID"] = 93328
 						}
 					}
 				}
 			}
 		},
 		{
-			["categoryID"] = 600--[[Alchemy of Northrend]],
+			["name"] = "Alchemy of Northrend",
+			["categoryID"] = 600,
 			["g"] = {
 				{
-					["categoryID"] = 625--[[Research]],
+					["name"] = "Research",
+					["categoryID"] = 625,
 					["g"] = {
 						{
-							["recipeID"] = 60893--[[Northrend Alchemy Research]]
+							["name"] = "Northrend Alchemy Research",
+							["recipeID"] = 60893
 						}
 					}
 				},
 				{
-					["categoryID"] = 626--[[Potions]],
+					["name"] = "Potions",
+					["categoryID"] = 626,
 					["g"] = {
 						{
-							["recipeID"] = 53895--[[Crazy Alchemist's Potion]]
+							["name"] = "Crazy Alchemist's Potion",
+							["recipeID"] = 53895
 						},
 						{
-							["recipeID"] = 53905--[[Indestructible Potion]]
+							["name"] = "Endless Healing Potion",
+							["recipeID"] = 58871
 						},
 						{
-							["recipeID"] = 54221--[[Potion of Speed]]
+							["name"] = "Endless Mana Potion",
+							["recipeID"] = 58868
 						},
 						{
-							["recipeID"] = 54222--[[Potion of Wild Magic]]
+							["name"] = "Icy Mana Potion",
+							["recipeID"] = 53839
 						},
 						{
-							["recipeID"] = 53904--[[Powerful Rejuvenation Potion]]
+							["name"] = "Indestructible Potion",
+							["recipeID"] = 53905
 						},
 						{
-							["recipeID"] = 53837--[[Runic Mana Potion]]
+							["name"] = "Mighty Arcane Protection Potion",
+							["recipeID"] = 53936
 						},
 						{
-							["recipeID"] = 53836--[[Runic Healing Potion]]
+							["name"] = "Mighty Fire Protection Potion",
+							["recipeID"] = 53939
 						},
 						{
-							["recipeID"] = 58868--[[Endless Mana Potion]]
+							["name"] = "Mighty Frost Protection Potion",
+							["recipeID"] = 53937
 						},
 						{
-							["recipeID"] = 53936--[[Mighty Arcane Protection Potion]]
+							["name"] = "Mighty Nature Protection Potion",
+							["recipeID"] = 53942
 						},
 						{
-							["recipeID"] = 53939--[[Mighty Fire Protection Potion]]
+							["name"] = "Mighty Shadow Protection Potion",
+							["recipeID"] = 53938
 						},
 						{
-							["recipeID"] = 53937--[[Mighty Frost Protection Potion]]
+							["name"] = "Potion of Nightmares",
+							["recipeID"] = 53900
 						},
 						{
-							["recipeID"] = 53942--[[Mighty Nature Protection Potion]]
+							["name"] = "Potion of Speed",
+							["recipeID"] = 54221
 						},
 						{
-							["recipeID"] = 53938--[[Mighty Shadow Protection Potion]]
+							["name"] = "Potion of Wild Magic",
+							["recipeID"] = 54222
 						},
 						{
-							["recipeID"] = 58871--[[Endless Healing Potion]]
+							["name"] = "Powerful Rejuvenation Potion",
+							["recipeID"] = 53904
 						},
 						{
-							["recipeID"] = 53900--[[Potion of Nightmares]]
+							["name"] = "Resurgent Healing Potion",
+							["recipeID"] = 53838
 						},
 						{
-							["recipeID"] = 53839--[[Icy Mana Potion]]
+							["name"] = "Runic Healing Potion",
+							["recipeID"] = 53836
 						},
 						{
-							["recipeID"] = 53838--[[Resurgent Healing Potion]]
+							["name"] = "Runic Mana Potion",
+							["recipeID"] = 53837
 						}
 					}
 				},
 				{
-					["categoryID"] = 627--[[Elixirs]],
+					["name"] = "Elixirs",
+					["categoryID"] = 627,
 					["g"] = {
 						{
-							["recipeID"] = 60354--[[Elixir of Accuracy]]
+							["name"] = "Elixir of Accuracy",
+							["recipeID"] = 60354
 						},
 						{
-							["recipeID"] = 60365--[[Elixir of Armor Piercing]]
+							["name"] = "Elixir of Armor Piercing",
+							["recipeID"] = 60365
 						},
 						{
-							["recipeID"] = 60355--[[Elixir of Deadly Strikes]]
+							["name"] = "Elixir of Deadly Strikes",
+							["recipeID"] = 60355
 						},
 						{
-							["recipeID"] = 60357--[[Elixir of Expertise]]
+							["name"] = "Elixir of Expertise",
+							["recipeID"] = 60357
 						},
 						{
-							["recipeID"] = 60366--[[Elixir of Lightning Speed]]
+							["name"] = "Elixir of Lightning Speed",
+							["recipeID"] = 60366
 						},
 						{
-							["recipeID"] = 60356--[[Elixir of Mighty Defense]]
+							["name"] = "Elixir of Mighty Agility",
+							["recipeID"] = 53840
 						},
 						{
-							["recipeID"] = 56519--[[Elixir of Mighty Mageblood]]
+							["name"] = "Elixir of Mighty Defense",
+							["recipeID"] = 60356
 						},
 						{
-							["recipeID"] = 54220--[[Elixir of Protection]]
+							["name"] = "Elixir of Mighty Fortitude",
+							["recipeID"] = 53898
 						},
 						{
-							["recipeID"] = 62410--[[Elixir of Water Walking]]
+							["name"] = "Elixir of Mighty Mageblood",
+							["recipeID"] = 56519
 						},
 						{
-							["recipeID"] = 53840--[[Elixir of Mighty Agility]]
+							["name"] = "Elixir of Mighty Strength",
+							["recipeID"] = 54218
 						},
 						{
-							["recipeID"] = 60367--[[Elixir of Mighty Thoughts]]
+							["name"] = "Elixir of Mighty Thoughts",
+							["recipeID"] = 60367
 						},
 						{
-							["recipeID"] = 53898--[[Elixir of Mighty Fortitude]]
+							["name"] = "Elixir of Protection",
+							["recipeID"] = 54220
 						},
 						{
-							["recipeID"] = 54218--[[Elixir of Mighty Strength]]
+							["name"] = "Elixir of Spirit",
+							["recipeID"] = 53847
 						},
 						{
-							["recipeID"] = 53847--[[Elixir of Spirit]]
+							["name"] = "Elixir of Water Walking",
+							["recipeID"] = 62410
 						},
 						{
-							["recipeID"] = 53848--[[Guru's Elixir]]
+							["name"] = "Guru's Elixir",
+							["recipeID"] = 53848
 						},
 						{
-							["recipeID"] = 53842--[[Spellpower Elixir]]
+							["name"] = "Spellpower Elixir",
+							["recipeID"] = 53842
 						},
 						{
-							["recipeID"] = 53841--[[Wrath Elixir]]
+							["name"] = "Wrath Elixir",
+							["recipeID"] = 53841
 						}
 					}
 				},
 				{
-					["categoryID"] = 628--[[Flasks]],
+					["name"] = "Flasks",
+					["categoryID"] = 628,
 					["g"] = {
 						{
-							["recipeID"] = 53903--[[Flask of Endless Rage]]
+							["name"] = "Flask of Endless Rage",
+							["recipeID"] = 53903
 						},
 						{
-							["recipeID"] = 54213--[[Flask of Pure Mojo]]
+							["name"] = "Flask of Pure Mojo",
+							["recipeID"] = 54213
 						},
 						{
-							["recipeID"] = 53902--[[Flask of Stoneblood]]
+							["name"] = "Flask of Stoneblood",
+							["recipeID"] = 53902
 						},
 						{
-							["recipeID"] = 53901--[[Flask of the Frost Wyrm]]
+							["name"] = "Flask of the Frost Wyrm",
+							["recipeID"] = 53901
 						},
 						{
-							["recipeID"] = 53899--[[Lesser Flask of Toughness]]
+							["name"] = "Lesser Flask of Toughness",
+							["recipeID"] = 53899
 						}
 					}
 				},
 				{
-					["categoryID"] = 629--[[Transmutation]],
+					["name"] = "Transmutation",
+					["categoryID"] = 629,
 					["g"] = {
 						{
-							["recipeID"] = 66658--[[Transmute: Ametrine]]
+							["name"] = "Transmute: Ametrine",
+							["recipeID"] = 66658
 						},
 						{
-							["recipeID"] = 66659--[[Transmute: Cardinal Ruby]]
+							["name"] = "Transmute: Cardinal Ruby",
+							["recipeID"] = 66659
 						},
 						{
-							["recipeID"] = 66662--[[Transmute: Dreadstone]]
+							["name"] = "Transmute: Dreadstone",
+							["recipeID"] = 66662
 						},
 						{
-							["recipeID"] = 54020--[[Transmute: Eternal Might]]
+							["name"] = "Transmute: Earthsiege Diamond",
+							["recipeID"] = 57427
 						},
 						{
-							["recipeID"] = 66664--[[Transmute: Eye of Zul]]
+							["name"] = "Transmute: Eternal Air to Earth",
+							["recipeID"] = 53777
 						},
 						{
-							["recipeID"] = 66660--[[Transmute: King's Amber]]
+							["name"] = "Transmute: Eternal Air to Water",
+							["recipeID"] = 53776
 						},
 						{
-							["recipeID"] = 66663--[[Transmute: Majestic Zircon]]
+							["name"] = "Transmute: Eternal Earth to Air",
+							["recipeID"] = 53781
 						},
 						{
-							["recipeID"] = 57425--[[Transmute: Skyflare Diamond]]
+							["name"] = "Transmute: Eternal Earth to Shadow",
+							["recipeID"] = 53782
 						},
 						{
-							["recipeID"] = 57427--[[Transmute: Earthsiege Diamond]]
+							["name"] = "Transmute: Eternal Fire to Life",
+							["recipeID"] = 53775
 						},
 						{
-							["recipeID"] = 60350--[[Transmute: Titanium]]
+							["name"] = "Transmute: Eternal Fire to Water",
+							["recipeID"] = 53774
 						},
 						{
-							["recipeID"] = 53777--[[Transmute: Eternal Air to Earth]]
+							["name"] = "Transmute: Eternal Life to Fire",
+							["recipeID"] = 53773
 						},
 						{
-							["recipeID"] = 53776--[[Transmute: Eternal Air to Water]]
+							["name"] = "Transmute: Eternal Life to Shadow",
+							["recipeID"] = 53771
 						},
 						{
-							["recipeID"] = 53781--[[Transmute: Eternal Earth to Air]]
+							["name"] = "Transmute: Eternal Might",
+							["recipeID"] = 54020
 						},
 						{
-							["recipeID"] = 53782--[[Transmute: Eternal Earth to Shadow]]
+							["name"] = "Transmute: Eternal Shadow to Earth",
+							["recipeID"] = 53779
 						},
 						{
-							["recipeID"] = 53775--[[Transmute: Eternal Fire to Life]]
+							["name"] = "Transmute: Eternal Shadow to Life",
+							["recipeID"] = 53780
 						},
 						{
-							["recipeID"] = 53774--[[Transmute: Eternal Fire to Water]]
+							["name"] = "Transmute: Eternal Water to Air",
+							["recipeID"] = 53783
 						},
 						{
-							["recipeID"] = 53773--[[Transmute: Eternal Life to Fire]]
+							["name"] = "Transmute: Eternal Water to Fire",
+							["recipeID"] = 53784
 						},
 						{
-							["recipeID"] = 53771--[[Transmute: Eternal Life to Shadow]]
+							["name"] = "Transmute: Eye of Zul",
+							["recipeID"] = 66664
 						},
 						{
-							["recipeID"] = 53779--[[Transmute: Eternal Shadow to Earth]]
+							["name"] = "Transmute: King's Amber",
+							["recipeID"] = 66660
 						},
 						{
-							["recipeID"] = 53780--[[Transmute: Eternal Shadow to Life]]
+							["name"] = "Transmute: Majestic Zircon",
+							["recipeID"] = 66663
 						},
 						{
-							["recipeID"] = 53783--[[Transmute: Eternal Water to Air]]
+							["name"] = "Transmute: Skyflare Diamond",
+							["recipeID"] = 57425
 						},
 						{
-							["recipeID"] = 53784--[[Transmute: Eternal Water to Fire]]
+							["name"] = "Transmute: Titanium",
+							["recipeID"] = 60350
 						}
 					}
 				},
 				{
-					["categoryID"] = 630--[[Trinkets]],
+					["name"] = "Trinkets",
+					["categoryID"] = 630,
 					["g"] = {
 						{
-							["recipeID"] = 60403--[[Indestructible Alchemist Stone]]
+							["name"] = "Indestructible Alchemist Stone",
+							["recipeID"] = 60403
 						},
 						{
-							["recipeID"] = 60396--[[Mercurial Alchemist Stone]]
+							["name"] = "Mercurial Alchemist Stone",
+							["recipeID"] = 60396
 						},
 						{
-							["recipeID"] = 60405--[[Mighty Alchemist Stone]]
+							["name"] = "Mighty Alchemist Stone",
+							["recipeID"] = 60405
 						}
 					}
 				},
 				{
-					["categoryID"] = 631--[[Oils]],
+					["name"] = "Oils",
+					["categoryID"] = 631,
 					["g"] = {
 						{
-							["recipeID"] = 62409--[[Ethereal Oil]]
+							["name"] = "Ethereal Oil",
+							["recipeID"] = 62409
 						},
 						{
-							["recipeID"] = 53812--[[Pygmy Oil]]
+							["name"] = "Pygmy Oil",
+							["recipeID"] = 53812
 						}
 					}
 				}
 			}
 		},
 		{
-			["categoryID"] = 602--[[Alchemy of Outland]],
+			["name"] = "Alchemy of Outland",
+			["categoryID"] = 602,
 			["g"] = {
 				{
-					["categoryID"] = 632--[[Cauldrons]],
+					["name"] = "Cauldrons",
+					["categoryID"] = 632,
 					["g"] = {
 						{
-							["recipeID"] = 41458--[[Cauldron of Major Arcane Protection]]
+							["name"] = "Cauldron of Major Arcane Protection",
+							["recipeID"] = 41458
 						},
 						{
-							["recipeID"] = 41500--[[Cauldron of Major Fire Protection]]
+							["name"] = "Cauldron of Major Fire Protection",
+							["recipeID"] = 41500
 						},
 						{
-							["recipeID"] = 41501--[[Cauldron of Major Frost Protection]]
+							["name"] = "Cauldron of Major Frost Protection",
+							["recipeID"] = 41501
 						},
 						{
-							["recipeID"] = 41502--[[Cauldron of Major Nature Protection]]
+							["name"] = "Cauldron of Major Nature Protection",
+							["recipeID"] = 41502
 						},
 						{
-							["recipeID"] = 41503--[[Cauldron of Major Shadow Protection]]
+							["name"] = "Cauldron of Major Shadow Protection",
+							["recipeID"] = 41503
 						}
 					}
 				},
 				{
-					["categoryID"] = 633--[[Potions]],
+					["name"] = "Potions",
+					["categoryID"] = 633,
 					["g"] = {
 						{
-							["recipeID"] = 28586--[[Super Rejuvenation Potion]]
+							["name"] = "Destruction Potion",
+							["recipeID"] = 28565
 						},
 						{
-							["recipeID"] = 28579--[[Ironshield Potion]]
+							["name"] = "Fel Mana Potion",
+							["recipeID"] = 38961
 						},
 						{
-							["recipeID"] = 38961--[[Fel Mana Potion]]
+							["name"] = "Fel Regeneration Potion",
+							["recipeID"] = 38962
 						},
 						{
-							["recipeID"] = 28565--[[Destruction Potion]]
+							["name"] = "Haste Potion",
+							["recipeID"] = 28564
 						},
 						{
-							["recipeID"] = 28564--[[Haste Potion]]
+							["name"] = "Heroic Potion",
+							["recipeID"] = 28563
 						},
 						{
-							["recipeID"] = 28563--[[Heroic Potion]]
+							["name"] = "Insane Strength Potion",
+							["recipeID"] = 28550
 						},
 						{
-							["recipeID"] = 28575--[[Major Arcane Protection Potion]]
+							["name"] = "Ironshield Potion",
+							["recipeID"] = 28579
 						},
 						{
-							["recipeID"] = 28562--[[Major Dreamless Sleep Potion]]
+							["name"] = "Mad Alchemist's Potion",
+							["recipeID"] = 45061
 						},
 						{
-							["recipeID"] = 28571--[[Major Fire Protection Potion]]
+							["name"] = "Major Arcane Protection Potion",
+							["recipeID"] = 28575
 						},
 						{
-							["recipeID"] = 28572--[[Major Frost Protection Potion]]
+							["name"] = "Major Dreamless Sleep Potion",
+							["recipeID"] = 28562
 						},
 						{
-							["recipeID"] = 28577--[[Major Holy Protection Potion]]
+							["name"] = "Major Fire Protection Potion",
+							["recipeID"] = 28571
 						},
 						{
-							["recipeID"] = 28573--[[Major Nature Protection Potion]]
+							["name"] = "Major Frost Protection Potion",
+							["recipeID"] = 28572
 						},
 						{
-							["recipeID"] = 28576--[[Major Shadow Protection Potion]]
+							["name"] = "Major Holy Protection Potion",
+							["recipeID"] = 28577
 						},
 						{
-							["recipeID"] = 38962--[[Fel Regeneration Potion]]
+							["name"] = "Major Nature Protection Potion",
+							["recipeID"] = 28573
 						},
 						{
-							["recipeID"] = 28555--[[Super Mana Potion]]
+							["name"] = "Major Shadow Protection Potion",
+							["recipeID"] = 28576
 						},
 						{
-							["recipeID"] = 28554--[[Shrouding Potion]]
+							["name"] = "Shrouding Potion",
+							["recipeID"] = 28554
 						},
 						{
-							["recipeID"] = 28551--[[Super Healing Potion]]
+							["name"] = "Sneaking Potion",
+							["recipeID"] = 28546
 						},
 						{
-							["recipeID"] = 45061--[[Mad Alchemist's Potion]]
+							["name"] = "Super Healing Potion",
+							["recipeID"] = 28551
 						},
 						{
-							["recipeID"] = 28550--[[Insane Strength Potion]]
+							["name"] = "Super Mana Potion",
+							["recipeID"] = 28555
 						},
 						{
-							["recipeID"] = 28546--[[Sneaking Potion]]
+							["name"] = "Super Rejuvenation Potion",
+							["recipeID"] = 28586
 						},
 						{
-							["recipeID"] = 33733--[[Unstable Mana Potion]]
+							["name"] = "Unstable Mana Potion",
+							["recipeID"] = 33733
 						},
 						{
-							["recipeID"] = 33732--[[Volatile Healing Potion]]
+							["name"] = "Volatile Healing Potion",
+							["recipeID"] = 33732
 						}
 					}
 				},
 				{
-					["categoryID"] = 634--[[Elixirs]],
+					["name"] = "Elixirs",
+					["categoryID"] = 634,
 					["g"] = {
 						{
-							["recipeID"] = 28578--[[Elixir of Empowerment]]
+							["name"] = "Adept's Elixir",
+							["recipeID"] = 33740
 						},
 						{
-							["recipeID"] = 28570--[[Elixir of Major Mageblood]]
+							["name"] = "Earthen Elixir",
+							["recipeID"] = 39637
 						},
 						{
-							["recipeID"] = 28558--[[Elixir of Major Shadow Power]]
+							["name"] = "Elixir of Camouflage",
+							["recipeID"] = 28543
 						},
 						{
-							["recipeID"] = 28557--[[Elixir of Major Defense]]
+							["name"] = "Elixir of Draenic Wisdom",
+							["recipeID"] = 39638
 						},
 						{
-							["recipeID"] = 28556--[[Elixir of Major Firepower]]
+							["name"] = "Elixir of Empowerment",
+							["recipeID"] = 28578
 						},
 						{
-							["recipeID"] = 38960--[[Fel Strength Elixir]]
+							["name"] = "Elixir of Healing Power",
+							["recipeID"] = 28545
 						},
 						{
-							["recipeID"] = 39639--[[Elixir of Ironskin]]
+							["name"] = "Elixir of Ironskin",
+							["recipeID"] = 39639
 						},
 						{
-							["recipeID"] = 28553--[[Elixir of Major Agility]]
+							["name"] = "Elixir of Major Agility",
+							["recipeID"] = 28553
 						},
 						{
-							["recipeID"] = 28552--[[Elixir of the Searching Eye]]
+							["name"] = "Elixir of Major Defense",
+							["recipeID"] = 28557
 						},
 						{
-							["recipeID"] = 39638--[[Elixir of Draenic Wisdom]]
+							["name"] = "Elixir of Major Firepower",
+							["recipeID"] = 28556
 						},
 						{
-							["recipeID"] = 28549--[[Elixir of Major Frost Power]]
+							["name"] = "Elixir of Major Fortitude",
+							["recipeID"] = 39636
 						},
 						{
-							["recipeID"] = 39637--[[Earthen Elixir]]
+							["name"] = "Elixir of Major Frost Power",
+							["recipeID"] = 28549
 						},
 						{
-							["recipeID"] = 33741--[[Elixir of Mastery]]
+							["name"] = "Elixir of Major Mageblood",
+							["recipeID"] = 28570
 						},
 						{
-							["recipeID"] = 28545--[[Elixir of Healing Power]]
+							["name"] = "Elixir of Major Shadow Power",
+							["recipeID"] = 28558
 						},
 						{
-							["recipeID"] = 39636--[[Elixir of Major Fortitude]]
+							["name"] = "Elixir of Major Strength",
+							["recipeID"] = 28544
 						},
 						{
-							["recipeID"] = 28543--[[Elixir of Camouflage]]
+							["name"] = "Elixir of Mastery",
+							["recipeID"] = 33741
 						},
 						{
-							["recipeID"] = 28544--[[Elixir of Major Strength]]
+							["name"] = "Elixir of the Searching Eye",
+							["recipeID"] = 28552
 						},
 						{
-							["recipeID"] = 33740--[[Adept's Elixir]]
+							["name"] = "Fel Strength Elixir",
+							["recipeID"] = 38960
 						},
 						{
-							["recipeID"] = 33738--[[Onslaught Elixir]]
+							["name"] = "Onslaught Elixir",
+							["recipeID"] = 33738
 						}
 					}
 				},
 				{
-					["categoryID"] = 635--[[Flasks]],
+					["name"] = "Flasks",
+					["categoryID"] = 635,
 					["g"] = {
 						{
-							["recipeID"] = 28590--[[Flask of Blinding Light]]
+							["name"] = "Flask of Blinding Light",
+							["recipeID"] = 28590
 						},
 						{
-							["recipeID"] = 28587--[[Flask of Fortification]]
+							["name"] = "Flask of Fortification",
+							["recipeID"] = 28587
 						},
 						{
-							["recipeID"] = 28588--[[Flask of Mighty Versatility]]
+							["name"] = "Flask of Mighty Versatility",
+							["recipeID"] = 28588
 						},
 						{
-							["recipeID"] = 28591--[[Flask of Pure Death]]
+							["name"] = "Flask of Pure Death",
+							["recipeID"] = 28591
 						},
 						{
-							["recipeID"] = 28589--[[Flask of Relentless Assault]]
+							["name"] = "Flask of Relentless Assault",
+							["recipeID"] = 28589
 						}
 					}
 				},
 				{
-					["categoryID"] = 636--[[Transmutation]],
+					["name"] = "Transmutation",
+					["categoryID"] = 636,
 					["g"] = {
 						{
-							["recipeID"] = 32765--[[Transmute: Earthstorm Diamond]]
+							["name"] = "Transmute: Earthstorm Diamond",
+							["recipeID"] = 32765
 						},
 						{
-							["recipeID"] = 32766--[[Transmute: Skyfire Diamond]]
+							["name"] = "Transmute: Primal Air to Fire",
+							["recipeID"] = 28566
 						},
 						{
-							["recipeID"] = 28566--[[Transmute: Primal Air to Fire]]
+							["name"] = "Transmute: Primal Earth to Life",
+							["recipeID"] = 28585
 						},
 						{
-							["recipeID"] = 28585--[[Transmute: Primal Earth to Life]]
+							["name"] = "Transmute: Primal Earth to Water",
+							["recipeID"] = 28567
 						},
 						{
-							["recipeID"] = 28567--[[Transmute: Primal Earth to Water]]
+							["name"] = "Transmute: Primal Fire to Earth",
+							["recipeID"] = 28568
 						},
 						{
-							["recipeID"] = 28568--[[Transmute: Primal Fire to Earth]]
+							["name"] = "Transmute: Primal Fire to Mana",
+							["recipeID"] = 28583
 						},
 						{
-							["recipeID"] = 28583--[[Transmute: Primal Fire to Mana]]
+							["name"] = "Transmute: Primal Life to Earth",
+							["recipeID"] = 28584
 						},
 						{
-							["recipeID"] = 28584--[[Transmute: Primal Life to Earth]]
+							["name"] = "Transmute: Primal Mana to Fire",
+							["recipeID"] = 28582
 						},
 						{
-							["recipeID"] = 28582--[[Transmute: Primal Mana to Fire]]
+							["name"] = "Transmute: Primal Might",
+							["recipeID"] = 29688
 						},
 						{
-							["recipeID"] = 29688--[[Transmute: Primal Might]]
+							["name"] = "Transmute: Primal Shadow to Water",
+							["recipeID"] = 28580
 						},
 						{
-							["recipeID"] = 28580--[[Transmute: Primal Shadow to Water]]
+							["name"] = "Transmute: Primal Water to Air",
+							["recipeID"] = 28569
 						},
 						{
-							["recipeID"] = 28569--[[Transmute: Primal Water to Air]]
+							["name"] = "Transmute: Primal Water to Shadow",
+							["recipeID"] = 28581
 						},
 						{
-							["recipeID"] = 28581--[[Transmute: Primal Water to Shadow]]
+							["name"] = "Transmute: Skyfire Diamond",
+							["recipeID"] = 32766
 						}
 					}
 				},
 				{
-					["categoryID"] = 637--[[Trinkets]],
+					["name"] = "Trinkets",
+					["categoryID"] = 637,
 					["g"] = {
 						{
-							["recipeID"] = 47050--[[Assassin's Alchemist Stone]]
+							["name"] = "Alchemist Stone",
+							["recipeID"] = 17632
 						},
 						{
-							["recipeID"] = 47046--[[Guardian's Alchemist Stone]]
+							["name"] = "Assassin's Alchemist Stone",
+							["recipeID"] = 47050
 						},
 						{
-							["recipeID"] = 47049--[[Redeemer's Alchemist Stone]]
+							["name"] = "Guardian's Alchemist Stone",
+							["recipeID"] = 47046
 						},
 						{
-							["recipeID"] = 47048--[[Sorcerer's Alchemist Stone]]
+							["name"] = "Mercurial Stone",
+							["recipeID"] = 38070
 						},
 						{
-							["recipeID"] = 38070--[[Mercurial Stone]]
+							["name"] = "Redeemer's Alchemist Stone",
+							["recipeID"] = 47049
 						},
 						{
-							["recipeID"] = 17632--[[Alchemist Stone]]
+							["name"] = "Sorcerer's Alchemist Stone",
+							["recipeID"] = 47048
 						}
 					}
 				}
 			}
 		},
 		{
-			["categoryID"] = 604--[[Alchemy]],
+			["name"] = "Alchemy",
+			["categoryID"] = 604,
 			["g"] = {
 				{
-					["categoryID"] = 644--[[Materials]],
+					["name"] = "Materials",
+					["categoryID"] = 644,
 					["g"] = {
 						{
-							["recipeID"] = 11473--[[Ghost Dye]]
+							["name"] = "Ghost Dye",
+							["recipeID"] = 11473
 						},
 						{
-							["recipeID"] = 11456--[[Goblin Rocket Fuel]]
+							["name"] = "Goblin Rocket Fuel",
+							["recipeID"] = 11456
 						}
 					}
 				},
 				{
-					["categoryID"] = 638--[[Potions]],
+					["name"] = "Potions",
+					["categoryID"] = 638,
 					["g"] = {
 						{
-							["recipeID"] = 24366--[[Greater Dreamless Sleep Potion]]
+							["name"] = "Discolored Healing Potion",
+							["recipeID"] = 4508
 						},
 						{
-							["recipeID"] = 22732--[[Major Rejuvenation Potion]]
+							["name"] = "Dreamless Sleep Potion",
+							["recipeID"] = 15833
 						},
 						{
-							["recipeID"] = 17634--[[Potion of Petrification]]
+							["name"] = "Fire Protection Potion",
+							["recipeID"] = 7257
 						},
 						{
-							["recipeID"] = 17580--[[Major Mana Potion]]
+							["name"] = "Free Action Potion",
+							["recipeID"] = 6624
 						},
 						{
-							["recipeID"] = 17577--[[Greater Arcane Protection Potion]]
+							["name"] = "Frost Protection Potion",
+							["recipeID"] = 7258
 						},
 						{
-							["recipeID"] = 17574--[[Greater Fire Protection Potion]]
+							["name"] = "Great Rage Potion",
+							["recipeID"] = 6618
 						},
 						{
-							["recipeID"] = 17575--[[Greater Frost Protection Potion]]
+							["name"] = "Greater Arcane Protection Potion",
+							["recipeID"] = 17577
 						},
 						{
-							["recipeID"] = 17579--[[Greater Holy Protection Potion]]
+							["name"] = "Greater Dreamless Sleep Potion",
+							["recipeID"] = 24366
 						},
 						{
-							["recipeID"] = 17576--[[Greater Nature Protection Potion]]
+							["name"] = "Greater Fire Protection Potion",
+							["recipeID"] = 17574
 						},
 						{
-							["recipeID"] = 17578--[[Greater Shadow Protection Potion]]
+							["name"] = "Greater Frost Protection Potion",
+							["recipeID"] = 17575
 						},
 						{
-							["recipeID"] = 24367--[[Living Action Potion]]
+							["name"] = "Greater Healing Potion",
+							["recipeID"] = 7181
 						},
 						{
-							["recipeID"] = 17572--[[Purification Potion]]
+							["name"] = "Greater Holy Protection Potion",
+							["recipeID"] = 17579
 						},
 						{
-							["recipeID"] = 17570--[[Greater Stoneshield Potion]]
+							["name"] = "Greater Mana Potion",
+							["recipeID"] = 11448
 						},
 						{
-							["recipeID"] = 17556--[[Major Healing Potion]]
+							["name"] = "Greater Nature Protection Potion",
+							["recipeID"] = 17576
 						},
 						{
-							["recipeID"] = 17552--[[Mighty Rage Potion]]
+							["name"] = "Greater Shadow Protection Potion",
+							["recipeID"] = 17578
 						},
 						{
-							["recipeID"] = 17553--[[Superior Mana Potion]]
+							["name"] = "Greater Stoneshield Potion",
+							["recipeID"] = 17570
 						},
 						{
-							["recipeID"] = 3175--[[Limited Invulnerability Potion]]
+							["name"] = "Healing Potion",
+							["recipeID"] = 3447
 						},
 						{
-							["recipeID"] = 11464--[[Invisibility Potion]]
+							["name"] = "Holy Protection Potion",
+							["recipeID"] = 7255
 						},
 						{
-							["recipeID"] = 15833--[[Dreamless Sleep Potion]]
+							["name"] = "Invisibility Potion",
+							["recipeID"] = 11464
 						},
 						{
-							["recipeID"] = 11458--[[Wildvine Potion]]
+							["name"] = "Lesser Healing Potion",
+							["recipeID"] = 2337
 						},
 						{
-							["recipeID"] = 11457--[[Superior Healing Potion]]
+							["name"] = "Lesser Invisibility Potion",
+							["recipeID"] = 3448
 						},
 						{
-							["recipeID"] = 4942--[[Lesser Stoneshield Potion]]
+							["name"] = "Lesser Mana Potion",
+							["recipeID"] = 3173
 						},
 						{
-							["recipeID"] = 11452--[[Restorative Potion]]
+							["name"] = "Lesser Stoneshield Potion",
+							["recipeID"] = 4942
 						},
 						{
-							["recipeID"] = 11448--[[Greater Mana Potion]]
+							["name"] = "Limited Invulnerability Potion",
+							["recipeID"] = 3175
 						},
 						{
-							["recipeID"] = 7259--[[Nature Protection Potion]]
+							["name"] = "Living Action Potion",
+							["recipeID"] = 24367
 						},
 						{
-							["recipeID"] = 7257--[[Fire Protection Potion]]
+							["name"] = "Major Healing Potion",
+							["recipeID"] = 17556
 						},
 						{
-							["recipeID"] = 7258--[[Frost Protection Potion]]
+							["name"] = "Major Mana Potion",
+							["recipeID"] = 17580
 						},
 						{
-							["recipeID"] = 6618--[[Great Rage Potion]]
+							["name"] = "Major Rejuvenation Potion",
+							["recipeID"] = 22732
 						},
 						{
-							["recipeID"] = 3448--[[Lesser Invisibility Potion]]
+							["name"] = "Mana Potion",
+							["recipeID"] = 3452
 						},
 						{
-							["recipeID"] = 3452--[[Mana Potion]]
+							["name"] = "Mighty Rage Potion",
+							["recipeID"] = 17552
 						},
 						{
-							["recipeID"] = 7181--[[Greater Healing Potion]]
+							["name"] = "Minor Healing Potion",
+							["recipeID"] = 2330
 						},
 						{
-							["recipeID"] = 6624--[[Free Action Potion]]
+							["name"] = "Minor Mana Potion",
+							["recipeID"] = 2331
 						},
 						{
-							["recipeID"] = 7256--[[Shadow Protection Potion]]
+							["name"] = "Minor Rejuvenation Potion",
+							["recipeID"] = 2332
 						},
 						{
-							["recipeID"] = 3174--[[Potion of Curing]]
+							["name"] = "Nature Protection Potion",
+							["recipeID"] = 7259
 						},
 						{
-							["recipeID"] = 3173--[[Lesser Mana Potion]]
+							["name"] = "Potion of Curing",
+							["recipeID"] = 3174
 						},
 						{
-							["recipeID"] = 3447--[[Healing Potion]]
+							["name"] = "Potion of Petrification",
+							["recipeID"] = 17634
 						},
 						{
-							["recipeID"] = 7255--[[Holy Protection Potion]]
+							["name"] = "Purification Potion",
+							["recipeID"] = 17572
 						},
 						{
-							["recipeID"] = 7841--[[Swim Speed Potion]]
+							["name"] = "Rage Potion",
+							["recipeID"] = 6617
 						},
 						{
-							["recipeID"] = 2335--[[Swiftness Potion]]
+							["name"] = "Restorative Potion",
+							["recipeID"] = 11452
 						},
 						{
-							["recipeID"] = 6617--[[Rage Potion]]
+							["name"] = "Shadow Protection Potion",
+							["recipeID"] = 7256
 						},
 						{
-							["recipeID"] = 2337--[[Lesser Healing Potion]]
+							["name"] = "Superior Healing Potion",
+							["recipeID"] = 11457
 						},
 						{
-							["recipeID"] = 4508--[[Discolored Healing Potion]]
+							["name"] = "Superior Mana Potion",
+							["recipeID"] = 17553
 						},
 						{
-							["recipeID"] = 2332--[[Minor Rejuvenation Potion]]
+							["name"] = "Swiftness Potion",
+							["recipeID"] = 2335
 						},
 						{
-							["recipeID"] = 2331--[[Minor Mana Potion]]
+							["name"] = "Swim Speed Potion",
+							["recipeID"] = 7841
 						},
 						{
-							["recipeID"] = 2330--[[Minor Healing Potion]]
+							["name"] = "Wildvine Potion",
+							["recipeID"] = 11458
 						}
 					}
 				},
 				{
-					["categoryID"] = 639--[[Elixirs]],
+					["name"] = "Elixirs",
+					["categoryID"] = 639,
 					["g"] = {
 						{
-							["recipeID"] = 24368--[[Mighty Troll's Blood Elixir]]
+							["name"] = "Arcane Elixir",
+							["recipeID"] = 11461
 						},
 						{
-							["recipeID"] = 17573--[[Greater Arcane Elixir]]
+							["name"] = "Catseye Elixir",
+							["recipeID"] = 12609
 						},
 						{
-							["recipeID"] = 17571--[[Elixir of the Mongoose]]
+							["name"] = "Elixir of Agility",
+							["recipeID"] = 11449
 						},
 						{
-							["recipeID"] = 17557--[[Elixir of Brute Force]]
+							["name"] = "Elixir of Brute Force",
+							["recipeID"] = 17557
 						},
 						{
-							["recipeID"] = 17555--[[Elixir of the Sages]]
+							["name"] = "Elixir of Defense",
+							["recipeID"] = 3177
 						},
 						{
-							["recipeID"] = 17554--[[Elixir of Superior Defense]]
+							["name"] = "Elixir of Demonslaying",
+							["recipeID"] = 11477
 						},
 						{
-							["recipeID"] = 11477--[[Elixir of Demonslaying]]
+							["name"] = "Elixir of Detect Demon",
+							["recipeID"] = 11478
 						},
 						{
-							["recipeID"] = 11478--[[Elixir of Detect Demon]]
+							["name"] = "Elixir of Detect Lesser Invisibility",
+							["recipeID"] = 3453
 						},
 						{
-							["recipeID"] = 26277--[[Elixir of Greater Firepower]]
+							["name"] = "Elixir of Detect Undead",
+							["recipeID"] = 11460
 						},
 						{
-							["recipeID"] = 11476--[[Elixir of Shadow Power]]
+							["name"] = "Elixir of Dream Vision",
+							["recipeID"] = 11468
 						},
 						{
-							["recipeID"] = 24365--[[Mageblood Elixir]]
+							["name"] = "Elixir of Firepower",
+							["recipeID"] = 7845
 						},
 						{
-							["recipeID"] = 11472--[[Elixir of Giants]]
+							["name"] = "Elixir of Fortitude",
+							["recipeID"] = 3450
 						},
 						{
-							["recipeID"] = 11468--[[Elixir of Dream Vision]]
+							["name"] = "Elixir of Frost Power",
+							["recipeID"] = 21923
 						},
 						{
-							["recipeID"] = 11467--[[Elixir of Greater Agility]]
+							["name"] = "Elixir of Giant Growth",
+							["recipeID"] = 8240
 						},
 						{
-							["recipeID"] = 11466--[[Gift of Arthas]]
+							["name"] = "Elixir of Giants",
+							["recipeID"] = 11472
 						},
 						{
-							["recipeID"] = 11461--[[Arcane Elixir]]
+							["name"] = "Elixir of Greater Agility",
+							["recipeID"] = 11467
 						},
 						{
-							["recipeID"] = 11465--[[Elixir of Greater Intellect]]
+							["name"] = "Elixir of Greater Defense",
+							["recipeID"] = 11450
 						},
 						{
-							["recipeID"] = 11460--[[Elixir of Detect Undead]]
+							["name"] = "Elixir of Greater Firepower",
+							["recipeID"] = 26277
 						},
 						{
-							["recipeID"] = 22808--[[Elixir of Greater Water Breathing]]
+							["name"] = "Elixir of Greater Intellect",
+							["recipeID"] = 11465
 						},
 						{
-							["recipeID"] = 12609--[[Catseye Elixir]]
+							["name"] = "Elixir of Greater Water Breathing",
+							["recipeID"] = 22808
 						},
 						{
-							["recipeID"] = 3453--[[Elixir of Detect Lesser Invisibility]]
+							["name"] = "Elixir of Lesser Agility",
+							["recipeID"] = 2333
 						},
 						{
-							["recipeID"] = 11450--[[Elixir of Greater Defense]]
+							["name"] = "Elixir of Lion's Strength",
+							["recipeID"] = 2329
 						},
 						{
-							["recipeID"] = 21923--[[Elixir of Frost Power]]
+							["name"] = "Elixir of Minor Accuracy",
+							["recipeID"] = 63732
 						},
 						{
-							["recipeID"] = 11449--[[Elixir of Agility]]
+							["name"] = "Elixir of Minor Agility",
+							["recipeID"] = 3230
 						},
 						{
-							["recipeID"] = 3451--[[Major Troll's Blood Elixir]]
+							["name"] = "Elixir of Minor Defense",
+							["recipeID"] = 7183
 						},
 						{
-							["recipeID"] = 3450--[[Elixir of Fortitude]]
+							["name"] = "Elixir of Minor Fortitude",
+							["recipeID"] = 2334
 						},
 						{
-							["recipeID"] = 3188--[[Elixir of Ogre's Strength]]
+							["name"] = "Elixir of Ogre's Strength",
+							["recipeID"] = 3188
 						},
 						{
-							["recipeID"] = 7845--[[Elixir of Firepower]]
+							["name"] = "Elixir of Shadow Power",
+							["recipeID"] = 11476
 						},
 						{
-							["recipeID"] = 2333--[[Elixir of Lesser Agility]]
+							["name"] = "Elixir of Superior Defense",
+							["recipeID"] = 17554
 						},
 						{
-							["recipeID"] = 63732--[[Elixir of Minor Accuracy]]
+							["name"] = "Elixir of the Mongoose",
+							["recipeID"] = 17571
 						},
 						{
-							["recipeID"] = 3177--[[Elixir of Defense]]
+							["name"] = "Elixir of the Sages",
+							["recipeID"] = 17555
 						},
 						{
-							["recipeID"] = 3176--[[Strong Troll's Blood Elixir]]
+							["name"] = "Elixir of Water Breathing",
+							["recipeID"] = 7179
 						},
 						{
-							["recipeID"] = 3171--[[Elixir of Wisdom]]
+							["name"] = "Elixir of Wisdom",
+							["recipeID"] = 3171
 						},
 						{
-							["recipeID"] = 8240--[[Elixir of Giant Growth]]
+							["name"] = "Gift of Arthas",
+							["recipeID"] = 11466
 						},
 						{
-							["recipeID"] = 7179--[[Elixir of Water Breathing]]
+							["name"] = "Greater Arcane Elixir",
+							["recipeID"] = 17573
 						},
 						{
-							["recipeID"] = 3230--[[Elixir of Minor Agility]]
+							["name"] = "Mageblood Elixir",
+							["recipeID"] = 24365
 						},
 						{
-							["recipeID"] = 2334--[[Elixir of Minor Fortitude]]
+							["name"] = "Major Troll's Blood Elixir",
+							["recipeID"] = 3451
 						},
 						{
-							["recipeID"] = 3170--[[Weak Troll's Blood Elixir]]
+							["name"] = "Mighty Troll's Blood Elixir",
+							["recipeID"] = 24368
 						},
 						{
-							["recipeID"] = 2329--[[Elixir of Lion's Strength]]
+							["name"] = "Strong Troll's Blood Elixir",
+							["recipeID"] = 3176
 						},
 						{
-							["recipeID"] = 7183--[[Elixir of Minor Defense]]
+							["name"] = "Weak Troll's Blood Elixir",
+							["recipeID"] = 3170
 						}
 					}
 				},
 				{
-					["categoryID"] = 640--[[Flasks]],
+					["name"] = "Flasks",
+					["categoryID"] = 640,
 					["g"] = {
 						{
-							["recipeID"] = 17636--[[Flask of Distilled Wisdom]]
+							["name"] = "Alchemist's Flask",
+							["recipeID"] = 114786
 						},
 						{
-							["recipeID"] = 17637--[[Flask of Supreme Power]]
+							["name"] = "Flask of Distilled Wisdom",
+							["recipeID"] = 17636
 						},
 						{
-							["recipeID"] = 17635--[[Flask of the Titans]]
+							["name"] = "Flask of Supreme Power",
+							["recipeID"] = 17637
 						},
 						{
-							["recipeID"] = 114786--[[Alchemist's Flask]]
+							["name"] = "Flask of the Titans",
+							["recipeID"] = 17635
 						}
 					}
 				},
 				{
-					["categoryID"] = 641--[[Transmutation]],
+					["name"] = "Transmutation",
+					["categoryID"] = 641,
 					["g"] = {
 						{
-							["recipeID"] = 25146--[[Transmute: Elemental Fire]]
+							["name"] = "Transmute: Air to Fire",
+							["recipeID"] = 17559
 						},
 						{
-							["recipeID"] = 17559--[[Transmute: Air to Fire]]
+							["name"] = "Transmute: Arcanite",
+							["recipeID"] = 17187
 						},
 						{
-							["recipeID"] = 17187--[[Transmute: Arcanite]]
+							["name"] = "Transmute: Earth to Life",
+							["recipeID"] = 17566
 						},
 						{
-							["recipeID"] = 17566--[[Transmute: Earth to Life]]
+							["name"] = "Transmute: Earth to Water",
+							["recipeID"] = 17561
 						},
 						{
-							["recipeID"] = 17561--[[Transmute: Earth to Water]]
+							["name"] = "Transmute: Elemental Fire",
+							["recipeID"] = 25146
 						},
 						{
-							["recipeID"] = 17560--[[Transmute: Fire to Earth]]
+							["name"] = "Transmute: Fire to Earth",
+							["recipeID"] = 17560
 						},
 						{
-							["recipeID"] = 17565--[[Transmute: Life to Earth]]
+							["name"] = "Transmute: Iron to Gold",
+							["recipeID"] = 11479
 						},
 						{
-							["recipeID"] = 17563--[[Transmute: Undeath to Water]]
+							["name"] = "Transmute: Life to Earth",
+							["recipeID"] = 17565
 						},
 						{
-							["recipeID"] = 17562--[[Transmute: Water to Air]]
+							["name"] = "Transmute: Mithril to Truesilver",
+							["recipeID"] = 11480
 						},
 						{
-							["recipeID"] = 17564--[[Transmute: Water to Undeath]]
+							["name"] = "Transmute: Undeath to Water",
+							["recipeID"] = 17563
 						},
 						{
-							["recipeID"] = 11480--[[Transmute: Mithril to Truesilver]]
+							["name"] = "Transmute: Water to Air",
+							["recipeID"] = 17562
 						},
 						{
-							["recipeID"] = 11479--[[Transmute: Iron to Gold]]
+							["name"] = "Transmute: Water to Undeath",
+							["recipeID"] = 17564
 						}
 					}
 				},
 				{
-					["categoryID"] = 642--[[Trinkets]],
+					["name"] = "Trinkets",
+					["categoryID"] = 642,
 					["g"] = {
 						{
-							["recipeID"] = 11459--[[Philosopher's Stone]]
+							["name"] = "Philosopher's Stone",
+							["recipeID"] = 11459
 						}
 					}
 				},
 				{
-					["categoryID"] = 643--[[Oils]],
+					["name"] = "Oils",
+					["categoryID"] = 643,
 					["g"] = {
 						{
-							["recipeID"] = 17551--[[Stonescale Oil]]
+							["name"] = "Blackmouth Oil",
+							["recipeID"] = 7836
 						},
 						{
-							["recipeID"] = 11451--[[Oil of Immolation]]
+							["name"] = "Fire Oil",
+							["recipeID"] = 7837
 						},
 						{
-							["recipeID"] = 3454--[[Frost Oil]]
+							["name"] = "Frost Oil",
+							["recipeID"] = 3454
 						},
 						{
-							["recipeID"] = 3449--[[Shadow Oil]]
+							["name"] = "Oil of Immolation",
+							["recipeID"] = 11451
 						},
 						{
-							["recipeID"] = 7837--[[Fire Oil]]
+							["name"] = "Shadow Oil",
+							["recipeID"] = 3449
 						},
 						{
-							["recipeID"] = 7836--[[Blackmouth Oil]]
+							["name"] = "Stonescale Oil",
+							["recipeID"] = 17551
 						}
 					}
 				},
 				{
-					["categoryID"] = 645--[[Special]],
+					["name"] = "Special",
+					["categoryID"] = 645,
 					["g"] = {
 						{
-							["recipeID"] = 24266--[[Gurubashi Mojo Madness]]
+							["name"] = "Gurubashi Mojo Madness",
+							["recipeID"] = 24266
 						}
 					}
 				},
 				{
-					["categoryID"] = 1124--[[Anti-Venoms]],
+					["name"] = "Anti-Venoms",
+					["categoryID"] = 1124,
 					["g"] = {
 						{
-							["recipeID"] = 23787--[[Powerful Anti-Venom]]
+							["name"] = "Anti-Venom",
+							["recipeID"] = 7934
 						},
 						{
-							["recipeID"] = 7935--[[Strong Anti-Venom]]
+							["name"] = "Powerful Anti-Venom",
+							["recipeID"] = 23787
 						},
 						{
-							["recipeID"] = 7934--[[Anti-Venom]]
+							["name"] = "Strong Anti-Venom",
+							["recipeID"] = 7935
 						}
 					}
 				}

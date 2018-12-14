@@ -1,1930 +1,2831 @@
 --[[
 DO NOT MODIFY THIS FILE, I WILL CUT YOU.
  With love,
-    - CRIEVE
+    -CRIEVE
 ]]--
 profession(202, {	-- Engineering
-	filter(200, {	-- Recipes
+	filter(200, {
 		{
-			["categoryID"] = 709--[[Kul Tiran Engineering]],
+			["name"] = "Zandalari Engineering",
+			["categoryID"] = 709,
 			["g"] = {
 				{
-					["categoryID"] = 1096--[[Belt Attachments]],
+					["name"] = "Belt Attachments",
+					["categoryID"] = 1096,
 					["g"] = {
 						{
-							["recipeID"] = 255936--[[Belt Enchant: Holographic Horror Projector]]
+							["name"] = "Belt Enchant: Holographic Horror Projector",
+							["recipeID"] = 255936
 						},
 						{
-							["recipeID"] = 269123--[[Belt Enchant: Miniaturized Plasma Shield]]
+							["name"] = "Belt Enchant: Miniaturized Plasma Shield",
+							["recipeID"] = 269123
 						},
 						{
-							["recipeID"] = 255940--[[Belt Enchant: Personal Space Amplifier]]
+							["name"] = "Belt Enchant: Personal Space Amplifier",
+							["recipeID"] = 255940
 						}
 					}
 				},
 				{
-					["categoryID"] = 721--[[Bombs]],
+					["name"] = "Bombs",
+					["categoryID"] = 721,
 					["g"] = {
 						{
-							["recipeID"] = 255394--[[F.R.I.E.D.]]
+							["name"] = "F.R.I.E.D.",
+							["nextRecipeID"] = 255393,
+							["recipeID"] = 255392
 						},
 						{
-							["recipeID"] = 255409--[[Organic Discombobulation Grenade]]
+							["name"] = "F.R.I.E.D.",
+							["nextRecipeID"] = 255394,
+							["previousRecipeID"] = 255392,
+							["recipeID"] = 255393
 						},
 						{
-							["recipeID"] = 255397--[[Thermo-Accelerated Plague Spreader]]
+							["name"] = "F.R.I.E.D.",
+							["previousRecipeID"] = 255393,
+							["recipeID"] = 255394
 						},
 						{
-							["recipeID"] = 255393--[[F.R.I.E.D.]]
+							["name"] = "Organic Discombobulation Grenade",
+							["nextRecipeID"] = 255408,
+							["recipeID"] = 255407
 						},
 						{
-							["recipeID"] = 255408--[[Organic Discombobulation Grenade]]
+							["name"] = "Organic Discombobulation Grenade",
+							["nextRecipeID"] = 255409,
+							["previousRecipeID"] = 255407,
+							["recipeID"] = 255408
 						},
 						{
-							["recipeID"] = 255396--[[Thermo-Accelerated Plague Spreader]]
+							["name"] = "Organic Discombobulation Grenade",
+							["previousRecipeID"] = 255408,
+							["recipeID"] = 255409
 						},
 						{
-							["recipeID"] = 255392--[[F.R.I.E.D.]]
+							["name"] = "Thermo-Accelerated Plague Spreader",
+							["nextRecipeID"] = 255396,
+							["recipeID"] = 255395
 						},
 						{
-							["recipeID"] = 255407--[[Organic Discombobulation Grenade]]
+							["name"] = "Thermo-Accelerated Plague Spreader",
+							["nextRecipeID"] = 255397,
+							["previousRecipeID"] = 255395,
+							["recipeID"] = 255396
 						},
 						{
-							["recipeID"] = 255395--[[Thermo-Accelerated Plague Spreader]]
+							["name"] = "Thermo-Accelerated Plague Spreader",
+							["previousRecipeID"] = 255396,
+							["recipeID"] = 255397
 						}
 					}
 				},
 				{
-					["categoryID"] = 722--[[Devices]],
+					["name"] = "Devices",
+					["categoryID"] = 722,
 					["g"] = {
 						{
-							["recipeID"] = 256156--[[Deployable Attire Rearranger]]
+							["name"] = "Deployable Attire Rearranger",
+							["nextRecipeID"] = 256155,
+							["recipeID"] = 256154
 						},
 						{
-							["recipeID"] = 256072--[[Electroshock Mount Motivator]]
+							["name"] = "Deployable Attire Rearranger",
+							["nextRecipeID"] = 256156,
+							["previousRecipeID"] = 256154,
+							["recipeID"] = 256155
 						},
 						{
-							["recipeID"] = 256084--[[Interdimensional Companion Repository]]
+							["name"] = "Deployable Attire Rearranger",
+							["previousRecipeID"] = 256155,
+							["recipeID"] = 256156
 						},
 						{
-							["recipeID"] = 280734--[[Magical Intrusion Dampener]]
+							["name"] = "Electroshock Mount Motivator",
+							["nextRecipeID"] = 256071,
+							["recipeID"] = 256070
 						},
 						{
-							["recipeID"] = 256075--[[XA-1000 Surface Skimmer]]
+							["name"] = "Electroshock Mount Motivator",
+							["nextRecipeID"] = 256072,
+							["previousRecipeID"] = 256070,
+							["recipeID"] = 256071
 						},
 						{
-							["recipeID"] = 256155--[[Deployable Attire Rearranger]]
+							["name"] = "Electroshock Mount Motivator",
+							["previousRecipeID"] = 256071,
+							["recipeID"] = 256072
 						},
 						{
-							["recipeID"] = 256071--[[Electroshock Mount Motivator]]
+							["name"] = "Interdimensional Companion Repository",
+							["nextRecipeID"] = 256082,
+							["recipeID"] = 256080
 						},
 						{
-							["recipeID"] = 256082--[[Interdimensional Companion Repository]]
+							["name"] = "Interdimensional Companion Repository",
+							["nextRecipeID"] = 256084,
+							["previousRecipeID"] = 256080,
+							["recipeID"] = 256082
 						},
 						{
-							["recipeID"] = 280733--[[Magical Intrusion Dampener]]
+							["name"] = "Interdimensional Companion Repository",
+							["previousRecipeID"] = 256082,
+							["recipeID"] = 256084
 						},
 						{
-							["recipeID"] = 256074--[[XA-1000 Surface Skimmer]]
+							["name"] = "Magical Intrusion Dampener",
+							["nextRecipeID"] = 280733,
+							["recipeID"] = 280732
 						},
 						{
-							["recipeID"] = 256154--[[Deployable Attire Rearranger]]
+							["name"] = "Magical Intrusion Dampener",
+							["nextRecipeID"] = 280734,
+							["previousRecipeID"] = 280732,
+							["recipeID"] = 280733
 						},
 						{
-							["recipeID"] = 256070--[[Electroshock Mount Motivator]]
+							["name"] = "Magical Intrusion Dampener",
+							["previousRecipeID"] = 280733,
+							["recipeID"] = 280734
 						},
 						{
-							["recipeID"] = 256080--[[Interdimensional Companion Repository]]
+							["name"] = "Unstable Temporal Time Shifter",
+							["nextRecipeID"] = 283915,
+							["recipeID"] = 283914
 						},
 						{
-							["recipeID"] = 280732--[[Magical Intrusion Dampener]]
+							["name"] = "Unstable Temporal Time Shifter",
+							["nextRecipeID"] = 283916,
+							["previousRecipeID"] = 283914,
+							["recipeID"] = 283915
 						},
 						{
-							["recipeID"] = 256073--[[XA-1000 Surface Skimmer]]
+							["name"] = "Unstable Temporal Time Shifter",
+							["previousRecipeID"] = 283915,
+							["recipeID"] = 283916
+						},
+						{
+							["name"] = "XA-1000 Surface Skimmer",
+							["nextRecipeID"] = 256074,
+							["recipeID"] = 256073
+						},
+						{
+							["name"] = "XA-1000 Surface Skimmer",
+							["nextRecipeID"] = 256075,
+							["previousRecipeID"] = 256073,
+							["recipeID"] = 256074
+						},
+						{
+							["name"] = "XA-1000 Surface Skimmer",
+							["previousRecipeID"] = 256074,
+							["recipeID"] = 256075
 						}
 					}
 				},
 				{
-					["categoryID"] = 1115--[[Goggles]],
+					["name"] = "Cloth Goggles",
+					["categoryID"] = 1115,
 					["g"] = {
 						{
-							["recipeID"] = 272062--[[AZ3-R1-T3 Bionic Bifocals]]
+							["name"] = "AZ3-R1-T3 Synthetic Specs",
+							["nextRecipeID"] = 272057,
+							["recipeID"] = 272056
 						},
 						{
-							["recipeID"] = 272063--[[AZ3-R1-T3 Bionic Bifocals]]
+							["name"] = "AZ3-R1-T3 Synthetic Specs",
+							["nextRecipeID"] = 272058,
+							["previousRecipeID"] = 272056,
+							["recipeID"] = 272057
 						},
 						{
-							["recipeID"] = 272064--[[AZ3-R1-T3 Bionic Bifocals]]
+							["name"] = "AZ3-R1-T3 Synthetic Specs",
+							["previousRecipeID"] = 272057,
+							["recipeID"] = 272058
 						},
 						{
-							["recipeID"] = 272061--[[AZ3-R1-T3 Gearspun Goggles]]
+							["name"] = "Charged SP1-R1-73D Synthetic Specs",
+							["recipeID"] = 286875
 						},
 						{
-							["recipeID"] = 272060--[[AZ3-R1-T3 Gearspun Goggles]]
+							["name"] = "Emblazoned Synthetic Specs",
+							["recipeID"] = 291090
 						},
 						{
-							["recipeID"] = 272059--[[AZ3-R1-T3 Gearspun Goggles]]
+							["name"] = "Imbued Synthetic Specs",
+							["recipeID"] = 291089
 						},
 						{
-							["recipeID"] = 272065--[[AZ3-R1-T3 Orthogonal Optics]]
+							["name"] = "SP1-R1-73D Synthetic Specs",
+							["recipeID"] = 286874
 						},
 						{
-							["recipeID"] = 272066--[[AZ3-R1-T3 Orthogonal Optics]]
-						},
-						{
-							["recipeID"] = 272067--[[AZ3-R1-T3 Orthogonal Optics]]
-						},
-						{
-							["recipeID"] = 272058--[[AZ3-R1-T3 Synthetic Specs]]
-						},
-						{
-							["recipeID"] = 272057--[[AZ3-R1-T3 Synthetic Specs]]
-						},
-						{
-							["recipeID"] = 272056--[[AZ3-R1-T3 Synthetic Specs]]
+							["name"] = "Surging Synthetic Specs",
+							["recipeID"] = 286873
 						}
 					}
 				},
 				{
-					["categoryID"] = 723--[[Weapons]],
+					["name"] = "Leather Goggles",
+					["categoryID"] = 1246,
 					["g"] = {
 						{
-							["recipeID"] = 255459--[[Finely-Tuned Stormsteel Destroyer]]
+							["name"] = "AZ3-R1-T3 Gearspun Goggles",
+							["nextRecipeID"] = 272060,
+							["recipeID"] = 272059
 						},
 						{
-							["recipeID"] = 255458--[[Finely-Tuned Stormsteel Destroyer]]
+							["name"] = "AZ3-R1-T3 Gearspun Goggles",
+							["nextRecipeID"] = 272061,
+							["previousRecipeID"] = 272059,
+							["recipeID"] = 272060
 						},
 						{
-							["recipeID"] = 255457--[[Finely-Tuned Stormsteel Destroyer]]
+							["name"] = "AZ3-R1-T3 Gearspun Goggles",
+							["previousRecipeID"] = 272060,
+							["recipeID"] = 272061
 						},
 						{
-							["recipeID"] = 269724--[[Honorable Combatant's Discombobulator]]
+							["name"] = "Charged SP1-R1-73D Gearspun Goggles",
+							["recipeID"] = 286869
 						},
 						{
-							["recipeID"] = 269725--[[Honorable Combatant's Discombobulator]]
+							["name"] = "Emblazoned Gearspun Goggles",
+							["recipeID"] = 291092
 						},
 						{
-							["recipeID"] = 269726--[[Honorable Combatant's Discombobulator]]
+							["name"] = "Imbued Gearspun Goggles",
+							["recipeID"] = 291091
 						},
 						{
-							["recipeID"] = 269727--[[Honorable Combatant's Stormsteel Destroyer]]
+							["name"] = "SP1-R1-73D Gearspun Goggles",
+							["recipeID"] = 286868
 						},
 						{
-							["recipeID"] = 269728--[[Honorable Combatant's Stormsteel Destroyer]]
-						},
-						{
-							["recipeID"] = 269729--[[Honorable Combatant's Stormsteel Destroyer]]
-						},
-						{
-							["recipeID"] = 253150--[[Precision Attitude Adjuster]]
-						},
-						{
-							["recipeID"] = 253151--[[Precision Attitude Adjuster]]
-						},
-						{
-							["recipeID"] = 253152--[[Precision Attitude Adjuster]]
-						},
-						{
-							["recipeID"] = 253122--[[Magnetic Discombobulator]]
+							["name"] = "Surging Gearspun Goggles",
+							["recipeID"] = 286867
 						}
 					}
 				},
 				{
-					["categoryID"] = 1027--[[Scopes & Ammo]],
+					["name"] = "Mail Goggles",
+					["categoryID"] = 1247,
 					["g"] = {
 						{
-							["recipeID"] = 264962--[[Crow's Nest Scope]]
+							["name"] = "AZ3-R1-T3 Bionic Bifocals",
+							["nextRecipeID"] = 272063,
+							["recipeID"] = 272062
 						},
 						{
-							["recipeID"] = 265102--[[Frost-Laced Ammunition]]
+							["name"] = "AZ3-R1-T3 Bionic Bifocals",
+							["nextRecipeID"] = 272064,
+							["previousRecipeID"] = 272062,
+							["recipeID"] = 272063
 						},
 						{
-							["recipeID"] = 265099--[[Incendiary Ammunition]]
+							["name"] = "AZ3-R1-T3 Bionic Bifocals",
+							["previousRecipeID"] = 272063,
+							["recipeID"] = 272064
 						},
 						{
-							["recipeID"] = 264967--[[Monelite Scope of Alacrity]]
+							["name"] = "Charged SP1-R1-73D Bionic Bifocals",
+							["recipeID"] = 286866
 						},
 						{
-							["recipeID"] = 264961--[[Crow's Nest Scope]]
+							["name"] = "Emblazoned Bionic Bifocals",
+							["recipeID"] = 291094
 						},
 						{
-							["recipeID"] = 265101--[[Frost-Laced Ammunition]]
+							["name"] = "Imbued Bionic Bifocals",
+							["recipeID"] = 291093
 						},
 						{
-							["recipeID"] = 265098--[[Incendiary Ammunition]]
+							["name"] = "SP1-R1-73D Bionic Bifocals",
+							["recipeID"] = 286865
 						},
 						{
-							["recipeID"] = 264966--[[Monelite Scope of Alacrity]]
-						},
-						{
-							["recipeID"] = 264960--[[Crow's Nest Scope]]
-						},
-						{
-							["recipeID"] = 264964--[[Monelite Scope of Alacrity]]
-						},
-						{
-							["recipeID"] = 265100--[[Frost-Laced Ammunition]]
-						},
-						{
-							["recipeID"] = 265097--[[Incendiary Ammunition]]
+							["name"] = "Surging Bionic Bifocals",
+							["recipeID"] = 286864
 						}
 					}
 				},
 				{
-					["categoryID"] = 724--[[Mounts]],
+					["name"] = "Plate Goggles",
+					["categoryID"] = 1248,
 					["g"] = {
 						{
-							["recipeID"] = 274621--[[Mecha-Mogul Mk2]]
+							["name"] = "AZ3-R1-T3 Orthogonal Optics",
+							["nextRecipeID"] = 272066,
+							["recipeID"] = 272065
+						},
+						{
+							["name"] = "AZ3-R1-T3 Orthogonal Optics",
+							["nextRecipeID"] = 272067,
+							["previousRecipeID"] = 272065,
+							["recipeID"] = 272066
+						},
+						{
+							["name"] = "AZ3-R1-T3 Orthogonal Optics",
+							["previousRecipeID"] = 272066,
+							["recipeID"] = 272067
+						},
+						{
+							["name"] = "Charged SP1-R1-73D Orthogonal Optics",
+							["recipeID"] = 286872
+						},
+						{
+							["name"] = "Emblazoned Orthogonal Optics",
+							["recipeID"] = 291096
+						},
+						{
+							["name"] = "Imbued Orthogonal Optics",
+							["recipeID"] = 291095
+						},
+						{
+							["name"] = "SP1-R1-73D Orthogonal Optics",
+							["recipeID"] = 286871
+						},
+						{
+							["name"] = "Surging Orthogonal Optics",
+							["recipeID"] = 286870
 						}
 					}
 				},
 				{
-					["categoryID"] = 1229--[[Follower Equipment]],
+					["name"] = "Weapons",
+					["categoryID"] = 723,
 					["g"] = {
 						{
-							["recipeID"] = 278411--[[Makeshift Azerite Detector]]
+							["name"] = "Finely-Tuned Stormsteel Destroyer",
+							["nextRecipeID"] = 255458,
+							["recipeID"] = 255457
 						},
 						{
-							["recipeID"] = 278413--[[Monelite Fish Finder]]
+							["name"] = "Finely-Tuned Stormsteel Destroyer",
+							["nextRecipeID"] = 255459,
+							["previousRecipeID"] = 255457,
+							["recipeID"] = 255458
+						},
+						{
+							["name"] = "Finely-Tuned Stormsteel Destroyer",
+							["previousRecipeID"] = 255458,
+							["recipeID"] = 255459
+						},
+						{
+							["name"] = "Honorable Combatant's Discombobulator",
+							["nextRecipeID"] = 269725,
+							["recipeID"] = 269724
+						},
+						{
+							["name"] = "Honorable Combatant's Discombobulator",
+							["nextRecipeID"] = 269726,
+							["previousRecipeID"] = 269724,
+							["recipeID"] = 269725
+						},
+						{
+							["name"] = "Honorable Combatant's Discombobulator",
+							["previousRecipeID"] = 269725,
+							["recipeID"] = 269726
+						},
+						{
+							["name"] = "Honorable Combatant's Stormsteel Destroyer",
+							["nextRecipeID"] = 269728,
+							["recipeID"] = 269727
+						},
+						{
+							["name"] = "Honorable Combatant's Stormsteel Destroyer",
+							["nextRecipeID"] = 269729,
+							["previousRecipeID"] = 269727,
+							["recipeID"] = 269728
+						},
+						{
+							["name"] = "Honorable Combatant's Stormsteel Destroyer",
+							["previousRecipeID"] = 269728,
+							["recipeID"] = 269729
+						},
+						{
+							["name"] = "Magnetic Discombobulator",
+							["recipeID"] = 253122
+						},
+						{
+							["name"] = "Precision Attitude Adjuster",
+							["nextRecipeID"] = 253151,
+							["recipeID"] = 253150
+						},
+						{
+							["name"] = "Precision Attitude Adjuster",
+							["nextRecipeID"] = 253152,
+							["previousRecipeID"] = 253150,
+							["recipeID"] = 253151
+						},
+						{
+							["name"] = "Precision Attitude Adjuster",
+							["previousRecipeID"] = 253151,
+							["recipeID"] = 253152
+						},
+						{
+							["name"] = "Sinister Combatant's Discombobulator",
+							["nextRecipeID"] = 282807,
+							["recipeID"] = 282806
+						},
+						{
+							["name"] = "Sinister Combatant's Discombobulator",
+							["nextRecipeID"] = 282808,
+							["previousRecipeID"] = 282806,
+							["recipeID"] = 282807
+						},
+						{
+							["name"] = "Sinister Combatant's Discombobulator",
+							["previousRecipeID"] = 282807,
+							["recipeID"] = 282808
+						},
+						{
+							["name"] = "Sinister Combatant's Stormsteel Destroyer",
+							["nextRecipeID"] = 282810,
+							["recipeID"] = 282809
+						},
+						{
+							["name"] = "Sinister Combatant's Stormsteel Destroyer",
+							["nextRecipeID"] = 282811,
+							["previousRecipeID"] = 282809,
+							["recipeID"] = 282810
+						},
+						{
+							["name"] = "Sinister Combatant's Stormsteel Destroyer",
+							["previousRecipeID"] = 282810,
+							["recipeID"] = 282811
+						}
+					}
+				},
+				{
+					["name"] = "Scopes & Ammo",
+					["categoryID"] = 1027,
+					["g"] = {
+						{
+							["name"] = "Crow's Nest Scope",
+							["nextRecipeID"] = 264961,
+							["recipeID"] = 264960
+						},
+						{
+							["name"] = "Crow's Nest Scope",
+							["nextRecipeID"] = 264962,
+							["previousRecipeID"] = 264960,
+							["recipeID"] = 264961
+						},
+						{
+							["name"] = "Crow's Nest Scope",
+							["previousRecipeID"] = 264961,
+							["recipeID"] = 264962
+						},
+						{
+							["name"] = "Frost-Laced Ammunition",
+							["nextRecipeID"] = 265101,
+							["recipeID"] = 265100
+						},
+						{
+							["name"] = "Frost-Laced Ammunition",
+							["nextRecipeID"] = 265102,
+							["previousRecipeID"] = 265100,
+							["recipeID"] = 265101
+						},
+						{
+							["name"] = "Frost-Laced Ammunition",
+							["previousRecipeID"] = 265101,
+							["recipeID"] = 265102
+						},
+						{
+							["name"] = "Incendiary Ammunition",
+							["nextRecipeID"] = 265098,
+							["recipeID"] = 265097
+						},
+						{
+							["name"] = "Incendiary Ammunition",
+							["nextRecipeID"] = 265099,
+							["previousRecipeID"] = 265097,
+							["recipeID"] = 265098
+						},
+						{
+							["name"] = "Incendiary Ammunition",
+							["previousRecipeID"] = 265098,
+							["recipeID"] = 265099
+						},
+						{
+							["name"] = "Monelite Scope of Alacrity",
+							["nextRecipeID"] = 264966,
+							["recipeID"] = 264964
+						},
+						{
+							["name"] = "Monelite Scope of Alacrity",
+							["nextRecipeID"] = 264967,
+							["previousRecipeID"] = 264964,
+							["recipeID"] = 264966
+						},
+						{
+							["name"] = "Monelite Scope of Alacrity",
+							["previousRecipeID"] = 264966,
+							["recipeID"] = 264967
+						}
+					}
+				},
+				{
+					["name"] = "Mounts & Pets",
+					["categoryID"] = 724,
+					["g"] = {
+						{
+							["name"] = "Mecha-Mogul Mk2",
+							["recipeID"] = 274621
+						},
+						{
+							["name"] = "Mechantula",
+							["recipeID"] = 286478
+						}
+					}
+				},
+				{
+					["name"] = "Conversions",
+					["categoryID"] = 1241,
+					["g"] = {
+						{
+							["name"] = "Aqueous Thermo-Degradation",
+							["recipeID"] = 287279
+						},
+						{
+							["name"] = "Sanguinated Thermo-Degradation",
+							["recipeID"] = 286647
+						}
+					}
+				},
+				{
+					["name"] = "Follower Equipment",
+					["categoryID"] = 1229,
+					["g"] = {
+						{
+							["name"] = "Makeshift Azerite Detector",
+							["recipeID"] = 278411
+						},
+						{
+							["name"] = "Monelite Fish Finder",
+							["recipeID"] = 278413
 						}
 					}
 				}
 			}
 		},
 		{
-			["categoryID"] = 469--[[Legion Engineering]],
+			["name"] = "Legion Engineering",
+			["categoryID"] = 469,
 			["g"] = {
 				{
-					["categoryID"] = 470--[[Goggles]],
+					["name"] = "Goggles",
+					["categoryID"] = 470,
 					["g"] = {
 						{
-							["recipeID"] = 235755--[[Chain Skullblasters]]
+							["name"] = "Blink-Trigger Headgun",
+							["nextRecipeID"] = 198991,
+							["recipeID"] = 198939
 						},
 						{
-							["recipeID"] = 235756--[[Heavy Skullblasters]]
+							["name"] = "Blink-Trigger Headgun",
+							["nextRecipeID"] = 199005,
+							["previousRecipeID"] = 198939,
+							["recipeID"] = 198991
 						},
 						{
-							["recipeID"] = 235754--[[Rugged Skullblasters]]
+							["name"] = "Blink-Trigger Headgun",
+							["previousRecipeID"] = 198991,
+							["recipeID"] = 199005
 						},
 						{
-							["recipeID"] = 235753--[[Tailored Skullblasters]]
+							["name"] = "Bolt-Action Headgun",
+							["nextRecipeID"] = 198993,
+							["recipeID"] = 198966
 						},
 						{
-							["recipeID"] = 199011--[[Double-Barreled Cranial Cannon]]
+							["name"] = "Bolt-Action Headgun",
+							["nextRecipeID"] = 199007,
+							["previousRecipeID"] = 198966,
+							["recipeID"] = 198993
 						},
 						{
-							["recipeID"] = 198997--[[Double-Barreled Cranial Cannon]]
+							["name"] = "Bolt-Action Headgun",
+							["previousRecipeID"] = 198993,
+							["recipeID"] = 199007
 						},
 						{
-							["recipeID"] = 199012--[[Ironsight Cranial Cannon]]
+							["name"] = "Chain Skullblasters",
+							["recipeID"] = 235755
 						},
 						{
-							["recipeID"] = 198998--[[Ironsight Cranial Cannon]]
+							["name"] = "Double-Barreled Cranial Cannon",
+							["nextRecipeID"] = 198997,
+							["recipeID"] = 198970
 						},
 						{
-							["recipeID"] = 199010--[[Sawed-Off Cranial Cannon]]
+							["name"] = "Double-Barreled Cranial Cannon",
+							["nextRecipeID"] = 199011,
+							["previousRecipeID"] = 198970,
+							["recipeID"] = 198997
 						},
 						{
-							["recipeID"] = 198996--[[Sawed-Off Cranial Cannon]]
+							["name"] = "Double-Barreled Cranial Cannon",
+							["previousRecipeID"] = 198997,
+							["recipeID"] = 199011
 						},
 						{
-							["recipeID"] = 199009--[[Semi-Automagic Cranial Cannon]]
+							["name"] = "Heavy Skullblasters",
+							["recipeID"] = 235756
 						},
 						{
-							["recipeID"] = 198995--[[Semi-Automagic Cranial Cannon]]
+							["name"] = "Ironsight Cranial Cannon",
+							["nextRecipeID"] = 198998,
+							["recipeID"] = 198971
 						},
 						{
-							["recipeID"] = 198970--[[Double-Barreled Cranial Cannon]]
+							["name"] = "Ironsight Cranial Cannon",
+							["nextRecipeID"] = 199012,
+							["previousRecipeID"] = 198971,
+							["recipeID"] = 198998
 						},
 						{
-							["recipeID"] = 198971--[[Ironsight Cranial Cannon]]
+							["name"] = "Ironsight Cranial Cannon",
+							["previousRecipeID"] = 198998,
+							["recipeID"] = 199012
 						},
 						{
-							["recipeID"] = 198969--[[Sawed-Off Cranial Cannon]]
+							["name"] = "Reinforced Headgun",
+							["nextRecipeID"] = 198994,
+							["recipeID"] = 198967
 						},
 						{
-							["recipeID"] = 198968--[[Semi-Automagic Cranial Cannon]]
+							["name"] = "Reinforced Headgun",
+							["nextRecipeID"] = 199008,
+							["previousRecipeID"] = 198967,
+							["recipeID"] = 198994
 						},
 						{
-							["recipeID"] = 199005--[[Blink-Trigger Headgun]]
+							["name"] = "Reinforced Headgun",
+							["previousRecipeID"] = 198994,
+							["recipeID"] = 199008
 						},
 						{
-							["recipeID"] = 199007--[[Bolt-Action Headgun]]
+							["name"] = "Rugged Skullblasters",
+							["recipeID"] = 235754
 						},
 						{
-							["recipeID"] = 199008--[[Reinforced Headgun]]
+							["name"] = "Sawed-Off Cranial Cannon",
+							["nextRecipeID"] = 198996,
+							["recipeID"] = 198969
 						},
 						{
-							["recipeID"] = 199006--[[Tactical Headgun]]
+							["name"] = "Sawed-Off Cranial Cannon",
+							["nextRecipeID"] = 199010,
+							["previousRecipeID"] = 198969,
+							["recipeID"] = 198996
 						},
 						{
-							["recipeID"] = 198991--[[Blink-Trigger Headgun]]
+							["name"] = "Sawed-Off Cranial Cannon",
+							["previousRecipeID"] = 198996,
+							["recipeID"] = 199010
 						},
 						{
-							["recipeID"] = 198993--[[Bolt-Action Headgun]]
+							["name"] = "Semi-Automagic Cranial Cannon",
+							["nextRecipeID"] = 198995,
+							["recipeID"] = 198968
 						},
 						{
-							["recipeID"] = 198994--[[Reinforced Headgun]]
+							["name"] = "Semi-Automagic Cranial Cannon",
+							["nextRecipeID"] = 199009,
+							["previousRecipeID"] = 198968,
+							["recipeID"] = 198995
 						},
 						{
-							["recipeID"] = 198992--[[Tactical Headgun]]
+							["name"] = "Semi-Automagic Cranial Cannon",
+							["previousRecipeID"] = 198995,
+							["recipeID"] = 199009
 						},
 						{
-							["recipeID"] = 198939--[[Blink-Trigger Headgun]]
+							["name"] = "Tactical Headgun",
+							["nextRecipeID"] = 198992,
+							["recipeID"] = 198965
 						},
 						{
-							["recipeID"] = 198966--[[Bolt-Action Headgun]]
+							["name"] = "Tactical Headgun",
+							["nextRecipeID"] = 199006,
+							["previousRecipeID"] = 198965,
+							["recipeID"] = 198992
 						},
 						{
-							["recipeID"] = 198967--[[Reinforced Headgun]]
+							["name"] = "Tactical Headgun",
+							["previousRecipeID"] = 198992,
+							["recipeID"] = 199006
 						},
 						{
-							["recipeID"] = 198965--[[Tactical Headgun]]
+							["name"] = "Tailored Skullblasters",
+							["recipeID"] = 235753
 						}
 					}
 				},
 				{
-					["categoryID"] = 471--[[Combat Tools]],
+					["name"] = "Combat Tools",
+					["categoryID"] = 471,
 					["g"] = {
 						{
-							["recipeID"] = 199015--[[Pump-Action Bandage Gun]]
+							["name"] = "Deployable Bullet Dispenser",
+							["nextRecipeID"] = 198999,
+							["recipeID"] = 198972
 						},
 						{
-							["recipeID"] = 199014--[[Gunpowder Charge]]
+							["name"] = "Deployable Bullet Dispenser",
+							["nextRecipeID"] = 199013,
+							["previousRecipeID"] = 198972,
+							["recipeID"] = 198999
 						},
 						{
-							["recipeID"] = 199013--[[Deployable Bullet Dispenser]]
+							["name"] = "Deployable Bullet Dispenser",
+							["previousRecipeID"] = 198999,
+							["recipeID"] = 199013
 						},
 						{
-							["recipeID"] = 199001--[[Pump-Action Bandage Gun]]
+							["name"] = "Gunpowder Charge",
+							["nextRecipeID"] = 199000,
+							["recipeID"] = 198973
 						},
 						{
-							["recipeID"] = 199000--[[Gunpowder Charge]]
+							["name"] = "Gunpowder Charge",
+							["nextRecipeID"] = 199014,
+							["previousRecipeID"] = 198973,
+							["recipeID"] = 199000
 						},
 						{
-							["recipeID"] = 198999--[[Deployable Bullet Dispenser]]
+							["name"] = "Gunpowder Charge",
+							["previousRecipeID"] = 199000,
+							["recipeID"] = 199014
 						},
 						{
-							["recipeID"] = 198974--[[Pump-Action Bandage Gun]]
+							["name"] = "Pump-Action Bandage Gun",
+							["nextRecipeID"] = 199001,
+							["recipeID"] = 198974
 						},
 						{
-							["recipeID"] = 198973--[[Gunpowder Charge]]
+							["name"] = "Pump-Action Bandage Gun",
+							["nextRecipeID"] = 199015,
+							["previousRecipeID"] = 198974,
+							["recipeID"] = 199001
 						},
 						{
-							["recipeID"] = 198972--[[Deployable Bullet Dispenser]]
+							["name"] = "Pump-Action Bandage Gun",
+							["previousRecipeID"] = 199001,
+							["recipeID"] = 199015
 						}
 					}
 				},
 				{
-					["categoryID"] = 472--[[Devices]],
+					["name"] = "Devices",
+					["categoryID"] = 472,
 					["g"] = {
 						{
-							["recipeID"] = 247744--[[Wormhole Generator: Argus]]
+							["name"] = "Auto-Hammer",
+							["nextRecipeID"] = 199003,
+							["recipeID"] = 198976
 						},
 						{
-							["recipeID"] = 199017--[[Auto-Hammer]]
+							["name"] = "Auto-Hammer",
+							["nextRecipeID"] = 199017,
+							["previousRecipeID"] = 198976,
+							["recipeID"] = 199003
 						},
 						{
-							["recipeID"] = 198980--[[Blingtron's Circuit Design Tutorial]]
+							["name"] = "Auto-Hammer",
+							["previousRecipeID"] = 199003,
+							["recipeID"] = 199017
 						},
 						{
-							["recipeID"] = 199018--[[Failure Detection Pylon]]
+							["name"] = "Blingtron's Circuit Design Tutorial",
+							["recipeID"] = 198980
 						},
 						{
-							["recipeID"] = 199016--[[Gunpack]]
+							["name"] = "Failure Detection Pylon",
+							["nextRecipeID"] = 199004,
+							["recipeID"] = 198977
 						},
 						{
-							["recipeID"] = 198981--[[Trigger]]
+							["name"] = "Failure Detection Pylon",
+							["nextRecipeID"] = 199018,
+							["previousRecipeID"] = 198977,
+							["recipeID"] = 199004
 						},
 						{
-							["recipeID"] = 199003--[[Auto-Hammer]]
+							["name"] = "Failure Detection Pylon",
+							["previousRecipeID"] = 199004,
+							["recipeID"] = 199018
 						},
 						{
-							["recipeID"] = 199004--[[Failure Detection Pylon]]
+							["name"] = "Gravitational Reduction Slippers",
+							["recipeID"] = 247717
 						},
 						{
-							["recipeID"] = 199002--[[Gunpack]]
+							["name"] = "Gunpack",
+							["nextRecipeID"] = 199002,
+							["recipeID"] = 198975
 						},
 						{
-							["recipeID"] = 198976--[[Auto-Hammer]]
+							["name"] = "Gunpack",
+							["nextRecipeID"] = 199016,
+							["previousRecipeID"] = 198975,
+							["recipeID"] = 199002
 						},
 						{
-							["recipeID"] = 198977--[[Failure Detection Pylon]]
+							["name"] = "Gunpack",
+							["previousRecipeID"] = 199002,
+							["recipeID"] = 199016
 						},
 						{
-							["recipeID"] = 198975--[[Gunpack]]
+							["name"] = "Gunshoes",
+							["recipeID"] = 198978
 						},
 						{
-							["recipeID"] = 198978--[[Gunshoes]]
+							["name"] = "Intra-Dalaran Wormhole Generator",
+							["recipeID"] = 198979
 						},
 						{
-							["recipeID"] = 198979--[[Intra-Dalaran Wormhole Generator]]
+							["name"] = "Leystone Buoy",
+							["recipeID"] = 209645
 						},
 						{
-							["recipeID"] = 200466--[[Sonic Environment Enhancer]]
+							["name"] = "Mecha-Bond Imprint Matrix",
+							["recipeID"] = 209646
 						},
 						{
-							["recipeID"] = 247717--[[Gravitational Reduction Slippers]]
+							["name"] = "Sonic Environment Enhancer",
+							["recipeID"] = 200466
 						},
 						{
-							["recipeID"] = 209645--[[Leystone Buoy]]
+							["name"] = "Trigger",
+							["recipeID"] = 198981
 						},
 						{
-							["recipeID"] = 209646--[[Mecha-Bond Imprint Matrix]]
+							["name"] = "Wormhole Generator: Argus",
+							["recipeID"] = 247744
 						}
 					}
 				},
 				{
-					["categoryID"] = 489--[[Relics]],
+					["name"] = "Relics",
+					["categoryID"] = 489,
 					["g"] = {
 						{
-							["recipeID"] = 209501--[["The Felic"]]
+							["name"] = "\"The Felic\"",
+							["recipeID"] = 209501
 						},
 						{
-							["recipeID"] = 209502--[[Shockinator]]
+							["name"] = "Shockinator",
+							["recipeID"] = 209502
 						}
 					}
 				},
 				{
-					["categoryID"] = 474--[[Robotics]],
+					["name"] = "Robotics",
+					["categoryID"] = 474,
 					["g"] = {
 						{
-							["recipeID"] = 235775--[[Rechargeable Reaves Battery]]
+							["name"] = "Reaves Battery",
+							["recipeID"] = 198982
 						},
 						{
-							["recipeID"] = 198989--[[Reaves Module: Bling Mode]]
+							["name"] = "Reaves Module: Bling Mode",
+							["recipeID"] = 198989
 						},
 						{
-							["recipeID"] = 198985--[[Reaves Module: Failure Detection Mode]]
+							["name"] = "Reaves Module: Failure Detection Mode",
+							["recipeID"] = 198985
 						},
 						{
-							["recipeID"] = 198987--[[Reaves Module: Fireworks Display Mode]]
+							["name"] = "Reaves Module: Fireworks Display Mode",
+							["recipeID"] = 198987
 						},
 						{
-							["recipeID"] = 198990--[[Reaves Module: Piloted Combat Mode]]
+							["name"] = "Reaves Module: Piloted Combat Mode",
+							["recipeID"] = 198990
 						},
 						{
-							["recipeID"] = 198984--[[Reaves Module: Repair Mode]]
+							["name"] = "Reaves Module: Repair Mode",
+							["recipeID"] = 198984
 						},
 						{
-							["recipeID"] = 198988--[[Reaves Module: Snack Distribution Mode]]
+							["name"] = "Reaves Module: Snack Distribution Mode",
+							["recipeID"] = 198988
 						},
 						{
-							["recipeID"] = 198983--[[Reaves Module: Wormhole Generator Mode]]
+							["name"] = "Reaves Module: Wormhole Generator Mode",
+							["recipeID"] = 198983
 						},
 						{
-							["recipeID"] = 198982--[[Reaves Battery]]
+							["name"] = "Rechargeable Reaves Battery",
+							["recipeID"] = 235775
 						}
 					}
 				}
 			}
 		},
 		{
-			["categoryID"] = 347--[[Draenor Engineering]],
+			["name"] = "Draenor Engineering",
+			["categoryID"] = 347,
 			["g"] = {
 				{
-					["categoryID"] = 407--[[Reagents and Research]],
+					["name"] = "Reagents and Research",
+					["categoryID"] = 407,
 					["g"] = {
 						{
-							["recipeID"] = 178242--[[Gearspring Parts]]
+							["name"] = "Gearspring Parts",
+							["recipeID"] = 169080
 						},
 						{
-							["recipeID"] = 169080--[[Gearspring Parts]]
+							["name"] = "Gearspring Parts",
+							["recipeID"] = 178242
 						},
 						{
-							["recipeID"] = 182120--[[Primal Welding]]
+							["name"] = "Primal Welding",
+							["recipeID"] = 182120
 						},
 						{
-							["recipeID"] = 177054--[[Secrets of Draenor Engineering]]
+							["name"] = "Secrets of Draenor Engineering",
+							["recipeID"] = 177054
 						}
 					}
 				},
 				{
-					["categoryID"] = 416--[[Goggles]],
+					["name"] = "Goggles",
+					["categoryID"] = 416,
 					["g"] = {
 						{
-							["recipeID"] = 162195--[[Cybergenetic Mechshades]]
+							["name"] = "Cybergenetic Mechshades",
+							["recipeID"] = 162195
 						},
 						{
-							["recipeID"] = 162196--[[Night-Vision Mechshades]]
+							["name"] = "Night-Vision Mechshades",
+							["recipeID"] = 162196
 						},
 						{
-							["recipeID"] = 162197--[[Plasma Mechshades]]
+							["name"] = "Plasma Mechshades",
+							["recipeID"] = 162197
 						},
 						{
-							["recipeID"] = 162198--[[Razorguard Mechshades]]
+							["name"] = "Razorguard Mechshades",
+							["recipeID"] = 162198
 						}
 					}
 				},
 				{
-					["categoryID"] = 418--[[Devices]],
+					["name"] = "Devices",
+					["categoryID"] = 418,
 					["g"] = {
 						{
-							["recipeID"] = 187521--[[Infrablue-Blocker Lenses]]
+							["name"] = "Advanced Muzzlesprocket",
+							["recipeID"] = 187496
 						},
 						{
-							["recipeID"] = 187520--[[Taladite Firing Pin]]
+							["name"] = "Bi-Directional Fizzle Reducer",
+							["recipeID"] = 187497
 						},
 						{
-							["recipeID"] = 187497--[[Bi-Directional Fizzle Reducer]]
+							["name"] = "Didi's Delicate Assembly",
+							["recipeID"] = 169078
 						},
 						{
-							["recipeID"] = 187496--[[Advanced Muzzlesprocket]]
+							["name"] = "Findle's Loot-a-Rang",
+							["recipeID"] = 162205
 						},
 						{
-							["recipeID"] = 169076--[[Linkgrease Locksprocket]]
+							["name"] = "Goblin Glider Kit",
+							["recipeID"] = 162204
 						},
 						{
-							["recipeID"] = 177363--[[True Iron Trigger]]
+							["name"] = "Hemet's Heartseeker",
+							["recipeID"] = 173289
 						},
 						{
-							["recipeID"] = 162199--[[Shrediron's Shredder]]
+							["name"] = "Infrablue-Blocker Lenses",
+							["recipeID"] = 187521
 						},
 						{
-							["recipeID"] = 169078--[[Didi's Delicate Assembly]]
+							["name"] = "Linkgrease Locksprocket",
+							["recipeID"] = 169076
 						},
 						{
-							["recipeID"] = 162205--[[Findle's Loot-a-Rang]]
+							["name"] = "Mecha-Blast Rocket",
+							["recipeID"] = 173308
 						},
 						{
-							["recipeID"] = 173289--[[Hemet's Heartseeker]]
+							["name"] = "Megawatt Filament",
+							["recipeID"] = 162203
 						},
 						{
-							["recipeID"] = 162203--[[Megawatt Filament]]
+							["name"] = "Oglethorpe's Missile Splitter",
+							["recipeID"] = 162202
 						},
 						{
-							["recipeID"] = 162202--[[Oglethorpe's Missile Splitter]]
+							["name"] = "Personal Hologram",
+							["recipeID"] = 162214
 						},
 						{
-							["recipeID"] = 162216--[[Wormhole Centrifuge]]
+							["name"] = "Shieldtronic Shield",
+							["recipeID"] = 173309
 						},
 						{
-							["recipeID"] = 162208--[[Ultimate Gnomish Army Knife]]
+							["name"] = "Shrediron's Shredder",
+							["recipeID"] = 162199
 						},
 						{
-							["recipeID"] = 169140--[[Ultimate Gnomish Army Knife]]
+							["name"] = "Stealthman 54",
+							["recipeID"] = 162207
 						},
 						{
-							["recipeID"] = 162214--[[Personal Hologram]]
+							["name"] = "Swapblaster",
+							["recipeID"] = 162217
 						},
 						{
-							["recipeID"] = 162217--[[Swapblaster]]
+							["name"] = "Taladite Firing Pin",
+							["recipeID"] = 187520
 						},
 						{
-							["recipeID"] = 162206--[[World Shrinker]]
+							["name"] = "True Iron Trigger",
+							["recipeID"] = 177363
 						},
 						{
-							["recipeID"] = 173308--[[Mecha-Blast Rocket]]
+							["name"] = "Ultimate Gnomish Army Knife",
+							["recipeID"] = 162208
 						},
 						{
-							["recipeID"] = 173309--[[Shieldtronic Shield]]
+							["name"] = "Ultimate Gnomish Army Knife",
+							["recipeID"] = 169140
 						},
 						{
-							["recipeID"] = 162207--[[Stealthman 54]]
+							["name"] = "World Shrinker",
+							["recipeID"] = 162206
 						},
 						{
-							["recipeID"] = 162204--[[Goblin Glider Kit]]
+							["name"] = "Wormhole Centrifuge",
+							["recipeID"] = 162216
 						}
 					}
 				},
 				{
-					["categoryID"] = 417--[[Robotics]],
+					["name"] = "Robotics",
+					["categoryID"] = 417,
 					["g"] = {
 						{
-							["recipeID"] = 162218--[[Blingtron 5000]]
+							["name"] = "Blingtron 5000",
+							["recipeID"] = 162218
 						},
 						{
-							["recipeID"] = 162210--[[Lifelike Mechanical Frostboar]]
+							["name"] = "Lifelike Mechanical Frostboar",
+							["recipeID"] = 162210
 						},
 						{
-							["recipeID"] = 162209--[[Mechanical Axebeak]]
+							["name"] = "Mechanical Axebeak",
+							["recipeID"] = 162209
 						},
 						{
-							["recipeID"] = 176732--[[Mechanical Scorpid]]
+							["name"] = "Mechanical Scorpid",
+							["recipeID"] = 176732
 						}
 					}
 				},
 				{
-					["categoryID"] = 725--[[Fireworks]],
+					["name"] = "Fireworks",
+					["categoryID"] = 725,
 					["g"] = {
 						{
-							["recipeID"] = 171072--[[Alliance Firework]]
+							["name"] = "Alliance Firework",
+							["recipeID"] = 171072
 						},
 						{
-							["recipeID"] = 171073--[[Horde Firework]]
+							["name"] = "Horde Firework",
+							["recipeID"] = 171073
 						},
 						{
-							["recipeID"] = 171074--[[Snake Firework]]
+							["name"] = "Snake Firework",
+							["recipeID"] = 171074
 						}
 					}
 				}
 			}
 		},
 		{
-			["categoryID"] = 713--[[Pandaria Engineering]],
+			["name"] = "Pandaria Engineering",
+			["categoryID"] = 713,
 			["g"] = {
 				{
-					["categoryID"] = 726--[[Explosives]],
+					["name"] = "Explosives",
+					["categoryID"] = 726,
 					["g"] = {
 						{
-							["recipeID"] = 127127--[[G91 Landshark]]
+							["name"] = "G91 Landshark",
+							["recipeID"] = 127127
 						},
 						{
-							["recipeID"] = 127128--[[Goblin Dragon Gun, Mark II]]
+							["name"] = "Goblin Dragon Gun, Mark II",
+							["recipeID"] = 127128
 						},
 						{
-							["recipeID"] = 127124--[[Locksmith's Powderkeg]]
+							["name"] = "Locksmith's Powderkeg",
+							["recipeID"] = 127124
 						}
 					}
 				},
 				{
-					["categoryID"] = 727--[[Fireworks]],
+					["name"] = "Fireworks",
+					["categoryID"] = 727,
 					["g"] = {
 						{
-							["recipeID"] = 131256--[[Autumn Flower Firework]]
+							["name"] = "Autumn Flower Firework",
+							["recipeID"] = 131256
 						},
 						{
-							["recipeID"] = 128260--[[Celestial Firework]]
+							["name"] = "Celestial Firework",
+							["recipeID"] = 128260
 						},
 						{
-							["recipeID"] = 128261--[[Grand Celebration Firework]]
+							["name"] = "Grand Celebration Firework",
+							["recipeID"] = 128261
 						},
 						{
-							["recipeID"] = 131258--[[Jade Blossom Firework]]
+							["name"] = "Jade Blossom Firework",
+							["recipeID"] = 131258
 						},
 						{
-							["recipeID"] = 131353--[[Pandaria Fireworks]]
+							["name"] = "Pandaria Fireworks",
+							["recipeID"] = 131353
 						},
 						{
-							["recipeID"] = 128262--[[Serpent's Heart Firework]]
+							["name"] = "Serpent's Heart Firework",
+							["recipeID"] = 128262
 						}
 					}
 				},
 				{
-					["categoryID"] = 728--[[Devices]],
+					["name"] = "Devices",
+					["categoryID"] = 728,
 					["g"] = {
 						{
-							["recipeID"] = 127134--[[Ghost Iron Dragonling]]
+							["name"] = "Advanced Refrigeration Unit",
+							["recipeID"] = 139197
 						},
 						{
-							["recipeID"] = 139197--[[Advanced Refrigeration Unit]]
+							["name"] = "Blingtron 4000",
+							["recipeID"] = 127129
 						},
 						{
-							["recipeID"] = 127129--[[Blingtron 4000]]
+							["name"] = "Ghost Iron Dragonling",
+							["recipeID"] = 127134
 						},
 						{
-							["recipeID"] = 127131--[[Thermal Anvil]]
+							["name"] = "Goblin Glider",
+							["recipeID"] = 126392
 						},
 						{
-							["recipeID"] = 127132--[[Wormhole Generator: Pandaria]]
+							["name"] = "Mechanical Pandaren Dragonling",
+							["recipeID"] = 127135
 						},
 						{
-							["recipeID"] = 127135--[[Mechanical Pandaren Dragonling]]
+							["name"] = "Pierre",
+							["recipeID"] = 139196
 						},
 						{
-							["recipeID"] = 139196--[[Pierre]]
+							["name"] = "Rascal-Bot",
+							["recipeID"] = 143714
 						},
 						{
-							["recipeID"] = 143714--[[Rascal-Bot]]
+							["name"] = "Thermal Anvil",
+							["recipeID"] = 127131
 						},
 						{
-							["recipeID"] = 126392--[[Goblin Glider]]
+							["name"] = "Watergliding Jets",
+							["recipeID"] = 109099
 						},
 						{
-							["recipeID"] = 109099--[[Watergliding Jets]]
+							["name"] = "Wormhole Generator: Pandaria",
+							["recipeID"] = 127132
 						}
 					}
 				},
 				{
-					["categoryID"] = 729--[[Reagents]],
+					["name"] = "Reagents",
+					["categoryID"] = 729,
 					["g"] = {
 						{
-							["recipeID"] = 139176--[[Jard's Peculiar Energy Source]]
+							["name"] = "Ghost Iron Bolts",
+							["recipeID"] = 127113
 						},
 						{
-							["recipeID"] = 131563--[[Tinker's Kit]]
+							["name"] = "High-Explosive Gunpowder",
+							["recipeID"] = 127114
 						},
 						{
-							["recipeID"] = 127113--[[Ghost Iron Bolts]]
+							["name"] = "Jard's Peculiar Energy Source",
+							["recipeID"] = 139176
 						},
 						{
-							["recipeID"] = 127114--[[High-Explosive Gunpowder]]
+							["name"] = "Tinker's Kit",
+							["recipeID"] = 131563
 						}
 					}
 				},
 				{
-					["categoryID"] = 730--[[Goggles]],
+					["name"] = "Goggles",
+					["categoryID"] = 730,
 					["g"] = {
 						{
-							["recipeID"] = 127118--[[Agile Retinal Armor]]
+							["name"] = "Agile Retinal Armor",
+							["recipeID"] = 127118
 						},
 						{
-							["recipeID"] = 127119--[[Camouflage Retinal Armor]]
+							["name"] = "Camouflage Retinal Armor",
+							["recipeID"] = 127119
 						},
 						{
-							["recipeID"] = 127120--[[Deadly Retinal Armor]]
+							["name"] = "Deadly Retinal Armor",
+							["recipeID"] = 127120
 						},
 						{
-							["recipeID"] = 127121--[[Energized Retinal Armor]]
+							["name"] = "Energized Retinal Armor",
+							["recipeID"] = 127121
 						},
 						{
-							["recipeID"] = 127117--[[Lightweight Retinal Armor]]
+							["name"] = "Lightweight Retinal Armor",
+							["recipeID"] = 127117
 						},
 						{
-							["recipeID"] = 127123--[[Reinforced Retinal Armor]]
+							["name"] = "Mist-Piercing Goggles",
+							["recipeID"] = 127130
 						},
 						{
-							["recipeID"] = 127122--[[Specialized Retinal Armor]]
+							["name"] = "Reinforced Retinal Armor",
+							["recipeID"] = 127123
 						},
 						{
-							["recipeID"] = 127130--[[Mist-Piercing Goggles]]
+							["name"] = "Specialized Retinal Armor",
+							["recipeID"] = 127122
 						}
 					}
 				},
 				{
-					["categoryID"] = 731--[[Guns]],
+					["name"] = "Guns",
+					["categoryID"] = 731,
 					["g"] = {
 						{
-							["recipeID"] = 127137--[[Long-Range Trillium Sniper]]
+							["name"] = "Big Game Hunter",
+							["recipeID"] = 127136
 						},
 						{
-							["recipeID"] = 127136--[[Big Game Hunter]]
+							["name"] = "Long-Range Trillium Sniper",
+							["recipeID"] = 127137
 						}
 					}
 				},
 				{
-					["categoryID"] = 732--[[Scopes]],
+					["name"] = "Scopes",
+					["categoryID"] = 732,
 					["g"] = {
 						{
-							["recipeID"] = 127115--[[Lord Blastington's Scope of Doom]]
+							["name"] = "Lord Blastington's Scope of Doom",
+							["recipeID"] = 127115
 						},
 						{
-							["recipeID"] = 127116--[[Mirror Scope]]
+							["name"] = "Mirror Scope",
+							["recipeID"] = 127116
 						}
 					}
 				},
 				{
-					["categoryID"] = 733--[[Mounts]],
+					["name"] = "Mounts",
+					["categoryID"] = 733,
 					["g"] = {
 						{
-							["recipeID"] = 139192--[[Sky Golem]]
+							["name"] = "Depleted-Kyparium Rocket",
+							["recipeID"] = 127138
 						},
 						{
-							["recipeID"] = 127138--[[Depleted-Kyparium Rocket]]
+							["name"] = "Geosynchronous World Spinner",
+							["recipeID"] = 127139
 						},
 						{
-							["recipeID"] = 127139--[[Geosynchronous World Spinner]]
+							["name"] = "Sky Golem",
+							["recipeID"] = 139192
 						}
 					}
 				},
 				{
-					["categoryID"] = 734--[[Cogwheels]],
+					["name"] = "Cogwheels",
+					["categoryID"] = 734,
 					["g"] = {
 						{
-							["recipeID"] = 131211--[[Flashing Tinker's Gear]]
+							["name"] = "Flashing Tinker's Gear",
+							["recipeID"] = 131211
 						},
 						{
-							["recipeID"] = 131212--[[Fractured Tinker's Gear]]
+							["name"] = "Fractured Tinker's Gear",
+							["recipeID"] = 131212
 						},
 						{
-							["recipeID"] = 131213--[[Precise Tinker's Gear]]
+							["name"] = "Precise Tinker's Gear",
+							["recipeID"] = 131213
 						},
 						{
-							["recipeID"] = 131214--[[Quick Tinker's Gear]]
+							["name"] = "Quick Tinker's Gear",
+							["recipeID"] = 131214
 						},
 						{
-							["recipeID"] = 131215--[[Rigid Tinker's Gear]]
+							["name"] = "Rigid Tinker's Gear",
+							["recipeID"] = 131215
 						},
 						{
-							["recipeID"] = 131216--[[Smooth Tinker's Gear]]
+							["name"] = "Smooth Tinker's Gear",
+							["recipeID"] = 131216
 						},
 						{
-							["recipeID"] = 131217--[[Sparkling Tinker's Gear]]
+							["name"] = "Sparkling Tinker's Gear",
+							["recipeID"] = 131217
 						},
 						{
-							["recipeID"] = 131218--[[Subtle Tinker's Gear]]
+							["name"] = "Subtle Tinker's Gear",
+							["recipeID"] = 131218
 						}
 					}
 				}
 			}
 		},
 		{
-			["categoryID"] = 715--[[Cataclysm Engineering]],
+			["name"] = "Cataclysm Engineering",
+			["categoryID"] = 715,
 			["g"] = {
 				{
-					["categoryID"] = 735--[[Tinkers]],
+					["name"] = "Tinkers",
+					["categoryID"] = 735,
 					["g"] = {
 						{
-							["recipeID"] = 84425--[[Cardboard Assassin]]
+							["name"] = "Cardboard Assassin",
+							["recipeID"] = 84425
 						},
 						{
-							["recipeID"] = 84427--[[Grounded Plasma Shield]]
+							["name"] = "Grounded Plasma Shield",
+							["recipeID"] = 84427
 						},
 						{
-							["recipeID"] = 84424--[[Invisibility Field]]
+							["name"] = "Invisibility Field",
+							["recipeID"] = 84424
 						},
 						{
-							["recipeID"] = 82200--[[Spinal Healing Injector]]
+							["name"] = "Spinal Healing Injector",
+							["recipeID"] = 82200
 						}
 					}
 				},
 				{
-					["categoryID"] = 736--[[Reagents]],
+					["name"] = "Reagents",
+					["categoryID"] = 736,
 					["g"] = {
 						{
-							["recipeID"] = 94748--[[Electrified Ether]]
+							["name"] = "Electrified Ether",
+							["recipeID"] = 94748
 						},
 						{
-							["recipeID"] = 84403--[[Handful of Obsidium Bolts]]
+							["name"] = "Handful of Obsidium Bolts",
+							["recipeID"] = 84403
 						}
 					}
 				},
 				{
-					["categoryID"] = 737--[[Explosives]],
+					["name"] = "Explosives",
+					["categoryID"] = 737,
 					["g"] = {
 						{
-							["recipeID"] = 95707--[[Big Daddy]]
+							["name"] = "Big Daddy",
+							["recipeID"] = 95707
 						},
 						{
-							["recipeID"] = 84409--[[Volatile Seaforium Blastpack]]
+							["name"] = "Volatile Seaforium Blastpack",
+							["recipeID"] = 84409
 						}
 					}
 				},
 				{
-					["categoryID"] = 738--[[Goggles]],
+					["name"] = "Goggles",
+					["categoryID"] = 738,
 					["g"] = {
 						{
-							["recipeID"] = 81722--[[Agile Bio-Optic Killshades]]
+							["name"] = "Agile Bio-Optic Killshades",
+							["recipeID"] = 81722
 						},
 						{
-							["recipeID"] = 81724--[[Camouflage Bio-Optic Killshades]]
+							["name"] = "Authentic Jr. Engineer Goggles",
+							["recipeID"] = 84406
 						},
 						{
-							["recipeID"] = 81716--[[Deadly Bio-Optic Killshades]]
+							["name"] = "Camouflage Bio-Optic Killshades",
+							["recipeID"] = 81724
 						},
 						{
-							["recipeID"] = 81720--[[Energized Bio-Optic Killshades]]
+							["name"] = "Deadly Bio-Optic Killshades",
+							["recipeID"] = 81716
 						},
 						{
-							["recipeID"] = 81725--[[Lightweight Bio-Optic Killshades]]
+							["name"] = "Energized Bio-Optic Killshades",
+							["recipeID"] = 81720
 						},
 						{
-							["recipeID"] = 81714--[[Reinforced Bio-Optic Killshades]]
+							["name"] = "Lightweight Bio-Optic Killshades",
+							["recipeID"] = 81725
 						},
 						{
-							["recipeID"] = 81715--[[Specialized Bio-Optic Killshades]]
+							["name"] = "Reinforced Bio-Optic Killshades",
+							["recipeID"] = 81714
 						},
 						{
-							["recipeID"] = 84406--[[Authentic Jr. Engineer Goggles]]
+							["name"] = "Specialized Bio-Optic Killshades",
+							["recipeID"] = 81715
 						}
 					}
 				},
 				{
-					["categoryID"] = 739--[[Devices]],
+					["name"] = "Devices",
+					["categoryID"] = 739,
 					["g"] = {
 						{
-							["recipeID"] = 84418--[[Elementium Dragonling]]
+							["name"] = "De-Weaponized Mechanical Companion",
+							["recipeID"] = 84413
 						},
 						{
-							["recipeID"] = 84416--[[Elementium Toolbox]]
+							["name"] = "Electrostatic Condenser",
+							["recipeID"] = 95703
 						},
 						{
-							["recipeID"] = 95705--[[Gnomish Gravity Well]]
+							["name"] = "Elementium Dragonling",
+							["recipeID"] = 84418
 						},
 						{
-							["recipeID"] = 84421--[[Loot-a-Rang]]
+							["name"] = "Elementium Toolbox",
+							["recipeID"] = 84416
 						},
 						{
-							["recipeID"] = 84429--[[Goblin Barbecue]]
+							["name"] = "Gnomish Gravity Well",
+							["recipeID"] = 95705
 						},
 						{
-							["recipeID"] = 84430--[[Heat-Treated Spinning Lure]]
+							["name"] = "Goblin Barbecue",
+							["recipeID"] = 84429
 						},
 						{
-							["recipeID"] = 84413--[[De-Weaponized Mechanical Companion]]
+							["name"] = "Heat-Treated Spinning Lure",
+							["recipeID"] = 84430
 						},
 						{
-							["recipeID"] = 84412--[[Personal World Destroyer]]
+							["name"] = "Loot-a-Rang",
+							["recipeID"] = 84421
 						},
 						{
-							["recipeID"] = 84415--[[Lure Master Tackle Box]]
+							["name"] = "Lure Master Tackle Box",
+							["recipeID"] = 84415
 						},
 						{
-							["recipeID"] = 95703--[[Electrostatic Condenser]]
+							["name"] = "Personal World Destroyer",
+							["recipeID"] = 84412
 						}
 					}
 				},
 				{
-					["categoryID"] = 740--[[Weapons]],
+					["name"] = "Weapons",
+					["categoryID"] = 740,
 					["g"] = {
 						{
-							["recipeID"] = 100687--[[Extreme-Impact Hole Puncher]]
+							["name"] = "Extreme-Impact Hole Puncher",
+							["recipeID"] = 100687
 						},
 						{
-							["recipeID"] = 84420--[[Finely-Tuned Throat Needler]]
+							["name"] = "Finely-Tuned Throat Needler",
+							["recipeID"] = 84420
 						},
 						{
-							["recipeID"] = 84432--[[Kickback 5000]]
+							["name"] = "High-Powered Bolt Gun",
+							["recipeID"] = 84411
 						},
 						{
-							["recipeID"] = 84431--[[Overpowered Chicken Splitter]]
+							["name"] = "Kickback 5000",
+							["recipeID"] = 84432
 						},
 						{
-							["recipeID"] = 84417--[[Volatile Thunderstick]]
+							["name"] = "Overpowered Chicken Splitter",
+							["recipeID"] = 84431
 						},
 						{
-							["recipeID"] = 84411--[[High-Powered Bolt Gun]]
+							["name"] = "Volatile Thunderstick",
+							["recipeID"] = 84417
 						}
 					}
 				},
 				{
-					["categoryID"] = 741--[[Scopes]],
+					["name"] = "Scopes",
+					["categoryID"] = 741,
 					["g"] = {
 						{
-							["recipeID"] = 100587--[[Flintlocke's Woodchucker]]
+							["name"] = "Flintlocke's Woodchucker",
+							["recipeID"] = 100587
 						},
 						{
-							["recipeID"] = 84428--[[Gnomish X-Ray Scope]]
+							["name"] = "Gnomish X-Ray Scope",
+							["recipeID"] = 84428
 						},
 						{
-							["recipeID"] = 84408--[[R19 Threatfinder]]
+							["name"] = "R19 Threatfinder",
+							["recipeID"] = 84408
 						},
 						{
-							["recipeID"] = 84410--[[Safety Catch Removal Kit]]
+							["name"] = "Safety Catch Removal Kit",
+							["recipeID"] = 84410
 						}
 					}
 				}
 			}
 		},
 		{
-			["categoryID"] = 717--[[Northrend Engineering]],
+			["name"] = "Northrend Engineering",
+			["categoryID"] = 717,
 			["g"] = {
 				{
-					["categoryID"] = 742--[[Tinkers]],
+					["name"] = "Tinkers",
+					["categoryID"] = 742,
 					["g"] = {
 						{
-							["recipeID"] = 67839--[[Mind Amplification Dish]]
+							["name"] = "EMP Generator",
+							["recipeID"] = 54736
 						},
 						{
-							["recipeID"] = 55016--[[Nitro Boosts]]
+							["name"] = "Flexweave Underlay",
+							["recipeID"] = 55002
 						},
 						{
-							["recipeID"] = 54736--[[EMP Generator]]
+							["name"] = "Frag Belt",
+							["recipeID"] = 54793
 						},
 						{
-							["recipeID"] = 55002--[[Flexweave Underlay]]
+							["name"] = "Mind Amplification Dish",
+							["recipeID"] = 67839
 						},
 						{
-							["recipeID"] = 54793--[[Frag Belt]]
+							["name"] = "Nitro Boosts",
+							["recipeID"] = 55016
 						}
 					}
 				},
 				{
-					["categoryID"] = 743--[[Reagents]],
+					["name"] = "Reagents",
+					["categoryID"] = 743,
 					["g"] = {
 						{
-							["recipeID"] = 56471--[[Froststeel Tube]]
+							["name"] = "Froststeel Tube",
+							["recipeID"] = 56471
 						},
 						{
-							["recipeID"] = 56464--[[Overcharged Capacitor]]
+							["name"] = "Handful of Cobalt Bolts",
+							["recipeID"] = 56349
 						},
 						{
-							["recipeID"] = 53281--[[Volatile Blasting Trigger]]
+							["name"] = "Overcharged Capacitor",
+							["recipeID"] = 56464
 						},
 						{
-							["recipeID"] = 56349--[[Handful of Cobalt Bolts]]
+							["name"] = "Volatile Blasting Trigger",
+							["recipeID"] = 53281
 						}
 					}
 				},
 				{
-					["categoryID"] = 744--[[Explosives]],
+					["name"] = "Explosives",
+					["categoryID"] = 744,
 					["g"] = {
 						{
-							["recipeID"] = 56514--[[Global Thermal Sapper Charge]]
+							["name"] = "Box of Bombs",
+							["recipeID"] = 56468
 						},
 						{
-							["recipeID"] = 56468--[[Box of Bombs]]
+							["name"] = "Cobalt Frag Bomb",
+							["recipeID"] = 56460
 						},
 						{
-							["recipeID"] = 56463--[[Explosive Decoy]]
+							["name"] = "Explosive Decoy",
+							["recipeID"] = 56463
 						},
 						{
-							["recipeID"] = 56460--[[Cobalt Frag Bomb]]
+							["name"] = "Global Thermal Sapper Charge",
+							["recipeID"] = 56514
 						}
 					}
 				},
 				{
-					["categoryID"] = 745--[[Goggles]],
+					["name"] = "Goggles",
+					["categoryID"] = 745,
 					["g"] = {
 						{
-							["recipeID"] = 56480--[[Armored Titanium Goggles]]
+							["name"] = "Armored Titanium Goggles",
+							["recipeID"] = 56480
 						},
 						{
-							["recipeID"] = 56483--[[Charged Titanium Specs]]
+							["name"] = "Charged Titanium Specs",
+							["recipeID"] = 56483
 						},
 						{
-							["recipeID"] = 56487--[[Electroflux Sight Enhancers]]
+							["name"] = "Electroflux Sight Enhancers",
+							["recipeID"] = 56487
 						},
 						{
-							["recipeID"] = 56486--[[Greensight Gogs]]
+							["name"] = "Gnomish X-Ray Specs",
+							["recipeID"] = 56473
 						},
 						{
-							["recipeID"] = 56574--[[Truesight Ice Blinders]]
+							["name"] = "Greensight Gogs",
+							["recipeID"] = 56486
 						},
 						{
-							["recipeID"] = 62271--[[Unbreakable Healing Amplifiers]]
+							["name"] = "Mechanized Snow Goggles",
+							["recipeID"] = 56465
 						},
 						{
-							["recipeID"] = 56484--[[Visage Liquification Goggles]]
+							["name"] = "Mechanized Snow Goggles",
+							["recipeID"] = 61481
 						},
 						{
-							["recipeID"] = 56481--[[Weakness Spectralizers]]
+							["name"] = "Mechanized Snow Goggles",
+							["recipeID"] = 61482
 						},
 						{
-							["recipeID"] = 56465--[[Mechanized Snow Goggles]]
+							["name"] = "Mechanized Snow Goggles",
+							["recipeID"] = 61483
 						},
 						{
-							["recipeID"] = 61483--[[Mechanized Snow Goggles]]
+							["name"] = "Truesight Ice Blinders",
+							["recipeID"] = 56574
 						},
 						{
-							["recipeID"] = 61481--[[Mechanized Snow Goggles]]
+							["name"] = "Unbreakable Healing Amplifiers",
+							["recipeID"] = 62271
 						},
 						{
-							["recipeID"] = 61482--[[Mechanized Snow Goggles]]
+							["name"] = "Visage Liquification Goggles",
+							["recipeID"] = 56484
 						},
 						{
-							["recipeID"] = 56473--[[Gnomish X-Ray Specs]]
+							["name"] = "Weakness Spectralizers",
+							["recipeID"] = 56481
 						}
 					}
 				},
 				{
-					["categoryID"] = 746--[[Devices]],
+					["name"] = "Devices",
+					["categoryID"] = 746,
 					["g"] = {
 						{
-							["recipeID"] = 68067--[[Jeeves]]
+							["name"] = "Bladed Pickaxe",
+							["recipeID"] = 56461
 						},
 						{
-							["recipeID"] = 67920--[[Wormhole Generator: Northrend]]
+							["name"] = "Gnomish Army Knife",
+							["recipeID"] = 56462
 						},
 						{
-							["recipeID"] = 56462--[[Gnomish Army Knife]]
+							["name"] = "Gnomish Lightning Generator",
+							["recipeID"] = 56469
 						},
 						{
-							["recipeID"] = 56467--[[Noise Machine]]
+							["name"] = "Goblin Beam Welder",
+							["recipeID"] = 67326
 						},
 						{
-							["recipeID"] = 56466--[[Sonic Booster]]
+							["name"] = "Hammer Pick",
+							["recipeID"] = 56459
 						},
 						{
-							["recipeID"] = 56469--[[Gnomish Lightning Generator]]
+							["name"] = "Healing Injector Kit",
+							["recipeID"] = 56476
 						},
 						{
-							["recipeID"] = 30349--[[Titanium Toolbox]]
+							["name"] = "Jeeves",
+							["recipeID"] = 68067
 						},
 						{
-							["recipeID"] = 56472--[[MOLL-E]]
+							["name"] = "Mana Injector Kit",
+							["recipeID"] = 56477
 						},
 						{
-							["recipeID"] = 56477--[[Mana Injector Kit]]
+							["name"] = "MOLL-E",
+							["recipeID"] = 56472
 						},
 						{
-							["recipeID"] = 67326--[[Goblin Beam Welder]]
+							["name"] = "Noise Machine",
+							["recipeID"] = 56467
 						},
 						{
-							["recipeID"] = 56476--[[Healing Injector Kit]]
+							["name"] = "Scrapbot Construction Kit",
+							["recipeID"] = 55252
 						},
 						{
-							["recipeID"] = 55252--[[Scrapbot Construction Kit]]
+							["name"] = "Sonic Booster",
+							["recipeID"] = 56466
 						},
 						{
-							["recipeID"] = 56459--[[Hammer Pick]]
+							["name"] = "Titanium Toolbox",
+							["recipeID"] = 30349
 						},
 						{
-							["recipeID"] = 56461--[[Bladed Pickaxe]]
+							["name"] = "Wormhole Generator: Northrend",
+							["recipeID"] = 67920
 						}
 					}
 				},
 				{
-					["categoryID"] = 747--[[Weapons]],
+					["name"] = "Weapons",
+					["categoryID"] = 747,
 					["g"] = {
 						{
-							["recipeID"] = 56479--[[Armor Plated Combat Shotgun]]
+							["name"] = "Armor Plated Combat Shotgun",
+							["recipeID"] = 56479
 						},
 						{
-							["recipeID"] = 60874--[[Nesingwary 4000]]
+							["name"] = "Mark \"S\" Boomstick",
+							["recipeID"] = 54353
 						},
 						{
-							["recipeID"] = 54353--[[Mark "S" Boomstick]]
+							["name"] = "Nesingwary 4000",
+							["recipeID"] = 60874
 						}
 					}
 				},
 				{
-					["categoryID"] = 749--[[Mounts]],
+					["name"] = "Mounts",
+					["categoryID"] = 749,
 					["g"] = {
 						{
-							["recipeID"] = 60867--[[Mekgineer's Chopper]]
+							["name"] = "Mechano-Hog",
+							["recipeID"] = 60866
+						},
+						{
+							["name"] = "Mekgineer's Chopper",
+							["recipeID"] = 60867
 						}
 					}
 				},
 				{
-					["categoryID"] = 748--[[Scopes]],
+					["name"] = "Scopes",
+					["categoryID"] = 748,
 					["g"] = {
 						{
-							["recipeID"] = 56478--[[Heartseeker Scope]]
+							["name"] = "Diamond-cut Refractor Scope",
+							["recipeID"] = 61471
 						},
 						{
-							["recipeID"] = 56470--[[Sun Scope]]
+							["name"] = "Heartseeker Scope",
+							["recipeID"] = 56478
 						},
 						{
-							["recipeID"] = 61471--[[Diamond-cut Refractor Scope]]
+							["name"] = "Sun Scope",
+							["recipeID"] = 56470
 						}
 					}
 				}
 			}
 		},
 		{
-			["categoryID"] = 719--[[Outland Engineering]],
+			["name"] = "Outland Engineering",
+			["categoryID"] = 719,
 			["g"] = {
 				{
-					["categoryID"] = 750--[[Reagents]],
+					["name"] = "Reagents",
+					["categoryID"] = 750,
 					["g"] = {
 						{
-							["recipeID"] = 30309--[[Felsteel Stabilizer]]
+							["name"] = "Adamantite Frame",
+							["recipeID"] = 30306
 						},
 						{
-							["recipeID"] = 30307--[[Hardened Adamantite Tube]]
+							["name"] = "Elemental Blasting Powder",
+							["recipeID"] = 30303
 						},
 						{
-							["recipeID"] = 30308--[[Khorium Power Core]]
+							["name"] = "Fel Iron Casing",
+							["recipeID"] = 30304
 						},
 						{
-							["recipeID"] = 39971--[[Icy Blasting Primers]]
+							["name"] = "Felsteel Stabilizer",
+							["recipeID"] = 30309
 						},
 						{
-							["recipeID"] = 30306--[[Adamantite Frame]]
+							["name"] = "Handful of Fel Iron Bolts",
+							["recipeID"] = 30305
 						},
 						{
-							["recipeID"] = 30303--[[Elemental Blasting Powder]]
+							["name"] = "Hardened Adamantite Tube",
+							["recipeID"] = 30307
 						},
 						{
-							["recipeID"] = 30304--[[Fel Iron Casing]]
+							["name"] = "Icy Blasting Primers",
+							["recipeID"] = 39971
 						},
 						{
-							["recipeID"] = 30305--[[Handful of Fel Iron Bolts]]
+							["name"] = "Khorium Power Core",
+							["recipeID"] = 30308
 						}
 					}
 				},
 				{
-					["categoryID"] = 751--[[Explosives]],
+					["name"] = "Explosives",
+					["categoryID"] = 751,
 					["g"] = {
 						{
-							["recipeID"] = 39973--[[Frost Grenade]]
+							["name"] = "Adamantite Grenade",
+							["recipeID"] = 30311
 						},
 						{
-							["recipeID"] = 30547--[[Elemental Seaforium Charge]]
+							["name"] = "Elemental Seaforium Charge",
+							["recipeID"] = 30547
 						},
 						{
-							["recipeID"] = 30560--[[Super Sapper Charge]]
+							["name"] = "Fel Iron Bomb",
+							["recipeID"] = 30310
 						},
 						{
-							["recipeID"] = 30311--[[Adamantite Grenade]]
+							["name"] = "Frost Grenade",
+							["recipeID"] = 39973
 						},
 						{
-							["recipeID"] = 30558--[[The Bigger One]]
+							["name"] = "Super Sapper Charge",
+							["recipeID"] = 30560
 						},
 						{
-							["recipeID"] = 30310--[[Fel Iron Bomb]]
+							["name"] = "The Bigger One",
+							["recipeID"] = 30558
 						}
 					}
 				},
 				{
-					["categoryID"] = 752--[[Goggles]],
+					["name"] = "Goggles",
+					["categoryID"] = 752,
 					["g"] = {
 						{
-							["recipeID"] = 46111--[[Annihilator Holo-Gogs]]
+							["name"] = "Annihilator Holo-Gogs",
+							["recipeID"] = 46111
 						},
 						{
-							["recipeID"] = 46115--[[Hard Khorium Goggles]]
+							["name"] = "Cogspinner Goggles",
+							["recipeID"] = 30316
 						},
 						{
-							["recipeID"] = 46109--[[Hyper-Magnified Moon Specs]]
+							["name"] = "Deathblow X11 Goggles",
+							["recipeID"] = 41317
 						},
 						{
-							["recipeID"] = 46107--[[Justicebringer 3000 Specs]]
+							["name"] = "Destruction Holo-gogs",
+							["recipeID"] = 41320
 						},
 						{
-							["recipeID"] = 46112--[[Lightning Etched Specs]]
+							["name"] = "Furious Gizmatic Goggles",
+							["recipeID"] = 40274
 						},
 						{
-							["recipeID"] = 46114--[[Mayhem Projection Goggles]]
+							["name"] = "Gadgetstorm Goggles",
+							["recipeID"] = 41315
 						},
 						{
-							["recipeID"] = 46108--[[Powerheal 9000 Lens]]
+							["name"] = "Gnomish Battle Goggles",
+							["recipeID"] = 30575
 						},
 						{
-							["recipeID"] = 46110--[[Primal-Attuned Goggles]]
+							["name"] = "Gnomish Power Goggles",
+							["recipeID"] = 30574
 						},
 						{
-							["recipeID"] = 46116--[[Quad Deathblow X44 Goggles]]
+							["name"] = "Hard Khorium Goggles",
+							["recipeID"] = 46115
 						},
 						{
-							["recipeID"] = 46106--[[Wonderheal XT68 Shades]]
+							["name"] = "Hyper-Magnified Moon Specs",
+							["recipeID"] = 46109
 						},
 						{
-							["recipeID"] = 41317--[[Deathblow X11 Goggles]]
+							["name"] = "Hyper-Vision Goggles",
+							["recipeID"] = 30325
 						},
 						{
-							["recipeID"] = 41320--[[Destruction Holo-gogs]]
+							["name"] = "Justicebringer 2000 Specs",
+							["recipeID"] = 41311
 						},
 						{
-							["recipeID"] = 40274--[[Furious Gizmatic Goggles]]
+							["name"] = "Justicebringer 3000 Specs",
+							["recipeID"] = 46107
 						},
 						{
-							["recipeID"] = 41315--[[Gadgetstorm Goggles]]
+							["name"] = "Lightning Etched Specs",
+							["recipeID"] = 46112
 						},
 						{
-							["recipeID"] = 41311--[[Justicebringer 2000 Specs]]
+							["name"] = "Living Replicator Specs",
+							["recipeID"] = 41316
 						},
 						{
-							["recipeID"] = 41316--[[Living Replicator Specs]]
+							["name"] = "Magnified Moon Specs",
+							["recipeID"] = 41319
 						},
 						{
-							["recipeID"] = 41319--[[Magnified Moon Specs]]
+							["name"] = "Mayhem Projection Goggles",
+							["recipeID"] = 46114
 						},
 						{
-							["recipeID"] = 41321--[[Powerheal 4000 Lens]]
+							["name"] = "Power Amplification Goggles",
+							["recipeID"] = 30317
 						},
 						{
-							["recipeID"] = 41314--[[Surestrike Goggles v2.0]]
+							["name"] = "Powerheal 4000 Lens",
+							["recipeID"] = 41321
 						},
 						{
-							["recipeID"] = 41312--[[Tankatronic Goggles]]
+							["name"] = "Powerheal 9000 Lens",
+							["recipeID"] = 46108
 						},
 						{
-							["recipeID"] = 41318--[[Wonderheal XT40 Shades]]
+							["name"] = "Primal-Attuned Goggles",
+							["recipeID"] = 46110
 						},
 						{
-							["recipeID"] = 30325--[[Hyper-Vision Goggles]]
+							["name"] = "Quad Deathblow X44 Goggles",
+							["recipeID"] = 46116
 						},
 						{
-							["recipeID"] = 30575--[[Gnomish Battle Goggles]]
+							["name"] = "Surestrike Goggles v2.0",
+							["recipeID"] = 41314
 						},
 						{
-							["recipeID"] = 30574--[[Gnomish Power Goggles]]
+							["name"] = "Surestrike Goggles v3.0",
+							["recipeID"] = 46113
 						},
 						{
-							["recipeID"] = 30318--[[Ultra-Spectropic Detection Goggles]]
+							["name"] = "Tankatronic Goggles",
+							["recipeID"] = 41312
 						},
 						{
-							["recipeID"] = 30316--[[Cogspinner Goggles]]
+							["name"] = "Ultra-Spectropic Detection Goggles",
+							["recipeID"] = 30318
 						},
 						{
-							["recipeID"] = 30317--[[Power Amplification Goggles]]
+							["name"] = "Wonderheal XT40 Shades",
+							["recipeID"] = 41318
 						},
 						{
-							["recipeID"] = 46113--[[Surestrike Goggles v3.0]]
+							["name"] = "Wonderheal XT68 Shades",
+							["recipeID"] = 46106
 						}
 					}
 				},
 				{
-					["categoryID"] = 753--[[Devices]],
+					["name"] = "Devices",
+					["categoryID"] = 753,
 					["g"] = {
 						{
-							["recipeID"] = 44391--[[Field Repair Bot 110G]]
+							["name"] = "Crashin' Thrashin' Robot",
+							["recipeID"] = 30337
 						},
 						{
-							["recipeID"] = 30565--[[Foreman's Enchanted Helmet]]
+							["name"] = "Dimensional Ripper - Area 52",
+							["recipeID"] = 36954
 						},
 						{
-							["recipeID"] = 30566--[[Foreman's Reinforced Helmet]]
+							["name"] = "Fel Iron Toolbox",
+							["recipeID"] = 30348
 						},
 						{
-							["recipeID"] = 30556--[[Rocket Boots Xtreme]]
+							["name"] = "Field Repair Bot 110G",
+							["recipeID"] = 44391
 						},
 						{
-							["recipeID"] = 46697--[[Rocket Boots Xtreme Lite]]
+							["name"] = "Foreman's Enchanted Helmet",
+							["recipeID"] = 30565
 						},
 						{
-							["recipeID"] = 30570--[[Nigh-Invulnerability Belt]]
+							["name"] = "Foreman's Reinforced Helmet",
+							["recipeID"] = 30566
 						},
 						{
-							["recipeID"] = 36954--[[Dimensional Ripper - Area 52]]
+							["name"] = "Gnomish Flame Turret",
+							["recipeID"] = 30568
 						},
 						{
-							["recipeID"] = 36955--[[Ultrasafe Transporter - Toshley's Station]]
+							["name"] = "Gnomish Poultryizer",
+							["recipeID"] = 30569
 						},
 						{
-							["recipeID"] = 30569--[[Gnomish Poultryizer]]
+							["name"] = "Goblin Rocket Launcher",
+							["recipeID"] = 30563
 						},
 						{
-							["recipeID"] = 30563--[[Goblin Rocket Launcher]]
+							["name"] = "Healing Potion Injector",
+							["recipeID"] = 30551
 						},
 						{
-							["recipeID"] = 30552--[[Mana Potion Injector]]
+							["name"] = "Mana Potion Injector",
+							["recipeID"] = 30552
 						},
 						{
-							["recipeID"] = 30568--[[Gnomish Flame Turret]]
+							["name"] = "Nigh-Invulnerability Belt",
+							["recipeID"] = 30570
 						},
 						{
-							["recipeID"] = 30337--[[Crashin' Thrashin' Robot]]
+							["name"] = "Rocket Boots Xtreme",
+							["recipeID"] = 30556
 						},
 						{
-							["recipeID"] = 30551--[[Healing Potion Injector]]
+							["name"] = "Rocket Boots Xtreme Lite",
+							["recipeID"] = 46697
 						},
 						{
-							["recipeID"] = 30348--[[Fel Iron Toolbox]]
+							["name"] = "Ultrasafe Transporter - Toshley's Station",
+							["recipeID"] = 36955
 						},
 						{
-							["recipeID"] = 30548--[[Zapthrottle Mote Extractor]]
+							["name"] = "Zapthrottle Mote Extractor",
+							["recipeID"] = 30548
 						}
 					}
 				},
 				{
-					["categoryID"] = 754--[[Weapons]],
+					["name"] = "Weapons",
+					["categoryID"] = 754,
 					["g"] = {
 						{
-							["recipeID"] = 30315--[[Ornate Khorium Rifle]]
+							["name"] = "Adamantite Rifle",
+							["recipeID"] = 30313
 						},
 						{
-							["recipeID"] = 30314--[[Felsteel Boomstick]]
+							["name"] = "Fel Iron Musket",
+							["recipeID"] = 30312
 						},
 						{
-							["recipeID"] = 41307--[[Gyro-balanced Khorium Destroyer]]
+							["name"] = "Felsteel Boomstick",
+							["recipeID"] = 30314
 						},
 						{
-							["recipeID"] = 30313--[[Adamantite Rifle]]
+							["name"] = "Gyro-balanced Khorium Destroyer",
+							["recipeID"] = 41307
 						},
 						{
-							["recipeID"] = 30312--[[Fel Iron Musket]]
+							["name"] = "Ornate Khorium Rifle",
+							["recipeID"] = 30315
 						}
 					}
 				},
 				{
-					["categoryID"] = 755--[[Scopes]],
+					["name"] = "Scopes",
+					["categoryID"] = 755,
 					["g"] = {
 						{
-							["recipeID"] = 30334--[[Stabilized Eternium Scope]]
+							["name"] = "Adamantite Scope",
+							["recipeID"] = 30329
 						},
 						{
-							["recipeID"] = 30332--[[Khorium Scope]]
+							["name"] = "Khorium Scope",
+							["recipeID"] = 30332
 						},
 						{
-							["recipeID"] = 30329--[[Adamantite Scope]]
+							["name"] = "Stabilized Eternium Scope",
+							["recipeID"] = 30334
 						}
 					}
 				},
 				{
-					["categoryID"] = 756--[[Mounts]],
+					["name"] = "Mounts",
+					["categoryID"] = 756,
 					["g"] = {
 						{
-							["recipeID"] = 44157--[[Turbo-Charged Flying Machine]]
+							["name"] = "Turbo-Charged Flying Machine",
+							["recipeID"] = 44157
 						}
 					}
 				},
 				{
-					["categoryID"] = 757--[[Fireworks]],
+					["name"] = "Fireworks",
+					["categoryID"] = 757,
 					["g"] = {
 						{
-							["recipeID"] = 30343--[[Blue Smoke Flare]]
+							["name"] = "Blue Smoke Flare",
+							["recipeID"] = 30343
 						},
 						{
-							["recipeID"] = 30344--[[Green Smoke Flare]]
+							["name"] = "Green Smoke Flare",
+							["recipeID"] = 30344
 						},
 						{
-							["recipeID"] = 32814--[[Purple Smoke Flare]]
+							["name"] = "Purple Smoke Flare",
+							["recipeID"] = 32814
 						},
 						{
-							["recipeID"] = 30342--[[Red Smoke Flare]]
+							["name"] = "Red Smoke Flare",
+							["recipeID"] = 30342
 						},
 						{
-							["recipeID"] = 30341--[[White Smoke Flare]]
+							["name"] = "White Smoke Flare",
+							["recipeID"] = 30341
 						}
 					}
 				}
 			}
 		},
 		{
-			["categoryID"] = 419--[[Engineering]],
+			["name"] = "Engineering",
+			["categoryID"] = 419,
 			["g"] = {
 				{
-					["categoryID"] = 183--[[Parts]],
+					["name"] = "Parts",
+					["categoryID"] = 183,
 					["g"] = {
 						{
-							["recipeID"] = 19815--[[Delicate Arcanite Converter]]
+							["name"] = "Bronze Framework",
+							["recipeID"] = 3953
 						},
 						{
-							["recipeID"] = 19791--[[Thorium Widget]]
+							["name"] = "Bronze Tube",
+							["recipeID"] = 3938
 						},
 						{
-							["recipeID"] = 19795--[[Thorium Tube]]
+							["name"] = "Coarse Blasting Powder",
+							["recipeID"] = 3929
 						},
 						{
-							["recipeID"] = 39895--[[Fused Wiring]]
+							["name"] = "Delicate Arcanite Converter",
+							["recipeID"] = 19815
 						},
 						{
-							["recipeID"] = 23071--[[Truesilver Transformer]]
+							["name"] = "Dense Blasting Powder",
+							["recipeID"] = 19788
 						},
 						{
-							["recipeID"] = 19788--[[Dense Blasting Powder]]
+							["name"] = "Fused Wiring",
+							["recipeID"] = 39895
 						},
 						{
-							["recipeID"] = 12599--[[Mithril Casing]]
+							["name"] = "Goblin Rocket Fuel Recipe",
+							["recipeID"] = 12715
 						},
 						{
-							["recipeID"] = 12591--[[Unstable Trigger]]
+							["name"] = "Gold Power Core",
+							["recipeID"] = 12584
 						},
 						{
-							["recipeID"] = 12589--[[Mithril Tube]]
+							["name"] = "Gyrochronatom",
+							["recipeID"] = 3961
 						},
 						{
-							["recipeID"] = 3961--[[Gyrochronatom]]
+							["name"] = "Handful of Copper Bolts",
+							["recipeID"] = 3922
 						},
 						{
-							["recipeID"] = 12715--[[Goblin Rocket Fuel Recipe]]
+							["name"] = "Heavy Blasting Powder",
+							["recipeID"] = 3945
 						},
 						{
-							["recipeID"] = 12895--[[Inlaid Mithril Cylinder Plans]]
+							["name"] = "Inlaid Mithril Cylinder Plans",
+							["recipeID"] = 12895
 						},
 						{
-							["recipeID"] = 12585--[[Solid Blasting Powder]]
+							["name"] = "Iron Strut",
+							["recipeID"] = 3958
 						},
 						{
-							["recipeID"] = 3953--[[Bronze Framework]]
+							["name"] = "Minor Recombobulator",
+							["recipeID"] = 3952
 						},
 						{
-							["recipeID"] = 12584--[[Gold Power Core]]
+							["name"] = "Mithril Casing",
+							["recipeID"] = 12599
 						},
 						{
-							["recipeID"] = 3952--[[Minor Recombobulator]]
+							["name"] = "Mithril Tube",
+							["recipeID"] = 12589
 						},
 						{
-							["recipeID"] = 3958--[[Iron Strut]]
+							["name"] = "Rough Blasting Powder",
+							["recipeID"] = 3918
 						},
 						{
-							["recipeID"] = 3942--[[Whirring Bronze Gizmo]]
+							["name"] = "Silver Contact",
+							["recipeID"] = 3973
 						},
 						{
-							["recipeID"] = 3938--[[Bronze Tube]]
+							["name"] = "Solid Blasting Powder",
+							["recipeID"] = 12585
 						},
 						{
-							["recipeID"] = 3945--[[Heavy Blasting Powder]]
+							["name"] = "Thorium Tube",
+							["recipeID"] = 19795
 						},
 						{
-							["recipeID"] = 3973--[[Silver Contact]]
+							["name"] = "Thorium Widget",
+							["recipeID"] = 19791
 						},
 						{
-							["recipeID"] = 3929--[[Coarse Blasting Powder]]
+							["name"] = "Truesilver Transformer",
+							["recipeID"] = 23071
 						},
 						{
-							["recipeID"] = 3922--[[Handful of Copper Bolts]]
+							["name"] = "Unstable Trigger",
+							["recipeID"] = 12591
 						},
 						{
-							["recipeID"] = 3918--[[Rough Blasting Powder]]
+							["name"] = "Whirring Bronze Gizmo",
+							["recipeID"] = 3942
 						}
 					}
 				},
 				{
-					["categoryID"] = 184--[[Explosives]],
+					["name"] = "Explosives",
+					["categoryID"] = 184,
 					["g"] = {
 						{
-							["recipeID"] = 19831--[[Arcane Bomb]]
+							["name"] = "Arcane Bomb",
+							["recipeID"] = 19831
 						},
 						{
-							["recipeID"] = 19799--[[Dark Iron Bomb]]
+							["name"] = "Big Bronze Bomb",
+							["recipeID"] = 3950
 						},
 						{
-							["recipeID"] = 19790--[[Thorium Grenade]]
+							["name"] = "Big Iron Bomb",
+							["recipeID"] = 3967
 						},
 						{
-							["recipeID"] = 23080--[[Powerful Seaforium Charge]]
+							["name"] = "Coarse Dynamite",
+							["recipeID"] = 3931
 						},
 						{
-							["recipeID"] = 12908--[[Goblin Dragon Gun]]
+							["name"] = "Dark Iron Bomb",
+							["recipeID"] = 19799
 						},
 						{
-							["recipeID"] = 12619--[[Hi-Explosive Bomb]]
+							["name"] = "Dense Dynamite",
+							["recipeID"] = 23070
 						},
 						{
-							["recipeID"] = 12754--[[The Big One]]
+							["name"] = "Explosive Sheep",
+							["recipeID"] = 3955
 						},
 						{
-							["recipeID"] = 12755--[[Goblin Bomb Dispenser]]
+							["name"] = "EZ-Thro Dynamite",
+							["recipeID"] = 8339
 						},
 						{
-							["recipeID"] = 23070--[[Dense Dynamite]]
+							["name"] = "EZ-Thro Dynamite II",
+							["recipeID"] = 23069
 						},
 						{
-							["recipeID"] = 12603--[[Mithril Frag Bomb]]
+							["name"] = "Flash Bomb",
+							["recipeID"] = 8243
 						},
 						{
-							["recipeID"] = 12716--[[Goblin Mortar]]
+							["name"] = "Goblin Bomb Dispenser",
+							["recipeID"] = 12755
 						},
 						{
-							["recipeID"] = 12760--[[Goblin Sapper Charge]]
+							["name"] = "Goblin Dragon Gun",
+							["recipeID"] = 12908
 						},
 						{
-							["recipeID"] = 3972--[[Large Seaforium Charge]]
+							["name"] = "Goblin Land Mine",
+							["recipeID"] = 3968
 						},
 						{
-							["recipeID"] = 3968--[[Goblin Land Mine]]
+							["name"] = "Goblin Mortar",
+							["recipeID"] = 12716
 						},
 						{
-							["recipeID"] = 3967--[[Big Iron Bomb]]
+							["name"] = "Goblin Sapper Charge",
+							["recipeID"] = 12760
 						},
 						{
-							["recipeID"] = 8243--[[Flash Bomb]]
+							["name"] = "Heavy Dynamite",
+							["recipeID"] = 3946
 						},
 						{
-							["recipeID"] = 23069--[[EZ-Thro Dynamite II]]
+							["name"] = "Hi-Explosive Bomb",
+							["recipeID"] = 12619
 						},
 						{
-							["recipeID"] = 3962--[[Iron Grenade]]
+							["name"] = "Iron Grenade",
+							["recipeID"] = 3962
 						},
 						{
-							["recipeID"] = 3960--[[Portable Bronze Mortar]]
+							["name"] = "Large Copper Bomb",
+							["recipeID"] = 3937
 						},
 						{
-							["recipeID"] = 3955--[[Explosive Sheep]]
+							["name"] = "Large Seaforium Charge",
+							["recipeID"] = 3972
 						},
 						{
-							["recipeID"] = 12586--[[Solid Dynamite]]
+							["name"] = "Mithril Frag Bomb",
+							["recipeID"] = 12603
 						},
 						{
-							["recipeID"] = 3950--[[Big Bronze Bomb]]
+							["name"] = "Portable Bronze Mortar",
+							["recipeID"] = 3960
 						},
 						{
-							["recipeID"] = 3941--[[Small Bronze Bomb]]
+							["name"] = "Powerful Seaforium Charge",
+							["recipeID"] = 23080
 						},
 						{
-							["recipeID"] = 3933--[[Small Seaforium Charge]]
+							["name"] = "Rough Copper Bomb",
+							["recipeID"] = 3923
 						},
 						{
-							["recipeID"] = 3937--[[Large Copper Bomb]]
+							["name"] = "Rough Dynamite",
+							["recipeID"] = 3919
 						},
 						{
-							["recipeID"] = 3946--[[Heavy Dynamite]]
+							["name"] = "Small Bronze Bomb",
+							["recipeID"] = 3941
 						},
 						{
-							["recipeID"] = 8339--[[EZ-Thro Dynamite]]
+							["name"] = "Small Seaforium Charge",
+							["recipeID"] = 3933
 						},
 						{
-							["recipeID"] = 3931--[[Coarse Dynamite]]
+							["name"] = "Solid Dynamite",
+							["recipeID"] = 12586
 						},
 						{
-							["recipeID"] = 3923--[[Rough Copper Bomb]]
+							["name"] = "The Big One",
+							["recipeID"] = 12754
 						},
 						{
-							["recipeID"] = 3919--[[Rough Dynamite]]
+							["name"] = "The Mortar: Reloaded",
+							["recipeID"] = 13240
 						},
 						{
-							["recipeID"] = 13240--[[The Mortar: Reloaded]]
+							["name"] = "Thorium Grenade",
+							["recipeID"] = 19790
 						}
 					}
 				},
 				{
-					["categoryID"] = 185--[[Goggles]],
+					["name"] = "Goggles",
+					["categoryID"] = 185,
 					["g"] = {
 						{
-							["recipeID"] = 24356--[[Bloodvine Goggles]]
+							["name"] = "Bloodvine Goggles",
+							["recipeID"] = 24356
 						},
 						{
-							["recipeID"] = 24357--[[Bloodvine Lens]]
+							["name"] = "Bloodvine Lens",
+							["recipeID"] = 24357
 						},
 						{
-							["recipeID"] = 19825--[[Master Engineer's Goggles]]
+							["name"] = "Bright-Eye Goggles",
+							["recipeID"] = 12587
 						},
 						{
-							["recipeID"] = 19794--[[Spellpower Goggles Xtreme Plus]]
+							["name"] = "Catseye Ultra Goggles",
+							["recipeID"] = 12607
 						},
 						{
-							["recipeID"] = 12622--[[Green Lens]]
+							["name"] = "Craftsman's Monocle",
+							["recipeID"] = 3966
 						},
 						{
-							["recipeID"] = 12618--[[Rose Colored Goggles]]
+							["name"] = "Fire Goggles",
+							["recipeID"] = 12594
 						},
 						{
-							["recipeID"] = 12615--[[Spellpower Goggles Xtreme]]
+							["name"] = "Flying Tiger Goggles",
+							["recipeID"] = 3934
 						},
 						{
-							["recipeID"] = 12607--[[Catseye Ultra Goggles]]
+							["name"] = "Gnomish Goggles",
+							["recipeID"] = 12897
 						},
 						{
-							["recipeID"] = 12897--[[Gnomish Goggles]]
+							["name"] = "Green Lens",
+							["recipeID"] = 12622
 						},
 						{
-							["recipeID"] = 12594--[[Fire Goggles]]
+							["name"] = "Green Tinted Goggles",
+							["recipeID"] = 3956
 						},
 						{
-							["recipeID"] = 3966--[[Craftsman's Monocle]]
+							["name"] = "Master Engineer's Goggles",
+							["recipeID"] = 19825
 						},
 						{
-							["recipeID"] = 12587--[[Bright-Eye Goggles]]
+							["name"] = "Rose Colored Goggles",
+							["recipeID"] = 12618
 						},
 						{
-							["recipeID"] = 3956--[[Green Tinted Goggles]]
+							["name"] = "Shadow Goggles",
+							["recipeID"] = 3940
 						},
 						{
-							["recipeID"] = 3940--[[Shadow Goggles]]
+							["name"] = "Spellpower Goggles Xtreme",
+							["recipeID"] = 12615
 						},
 						{
-							["recipeID"] = 3934--[[Flying Tiger Goggles]]
+							["name"] = "Spellpower Goggles Xtreme Plus",
+							["recipeID"] = 19794
 						}
 					}
 				},
 				{
-					["categoryID"] = 188--[[Devices]],
+					["name"] = "Devices",
+					["categoryID"] = 188,
 					["g"] = {
 						{
-							["recipeID"] = 23486--[[Dimensional Ripper - Everlook]]
+							["name"] = "Advanced Target Dummy",
+							["recipeID"] = 3965
 						},
 						{
-							["recipeID"] = 22704--[[Field Repair Bot 74A]]
+							["name"] = "Aquadynamic Fish Attractor",
+							["recipeID"] = 9271
 						},
 						{
-							["recipeID"] = 23489--[[Ultrasafe Transporter - Gadgetzan]]
+							["name"] = "Arcanite Dragonling",
+							["recipeID"] = 19830
 						},
 						{
-							["recipeID"] = 19830--[[Arcanite Dragonling]]
+							["name"] = "Clockwork Box",
+							["recipeID"] = 8334
 						},
 						{
-							["recipeID"] = 22797--[[Force Reactive Disk]]
+							["name"] = "Compact Harvest Reaper Kit",
+							["recipeID"] = 3963
 						},
 						{
-							["recipeID"] = 23082--[[Ultra-Flash Shadow Reflector]]
+							["name"] = "Deepdive Helmet",
+							["recipeID"] = 12617
 						},
 						{
-							["recipeID"] = 23081--[[Hyper-Radiant Flame Reflector]]
+							["name"] = "Dimensional Ripper - Everlook",
+							["recipeID"] = 23486
 						},
 						{
-							["recipeID"] = 19819--[[Voice Amplification Modulator]]
+							["name"] = "Discombobulator Ray",
+							["recipeID"] = 3959
 						},
 						{
-							["recipeID"] = 19814--[[Masterwork Target Dummy]]
+							["name"] = "Field Repair Bot 74A",
+							["recipeID"] = 22704
 						},
 						{
-							["recipeID"] = 23078--[[Goblin Jumper Cables XL]]
+							["name"] = "Flame Deflector",
+							["recipeID"] = 3944
 						},
 						{
-							["recipeID"] = 23077--[[Gyrofreeze Ice Reflector]]
+							["name"] = "Force Reactive Disk",
+							["recipeID"] = 22797
 						},
 						{
-							["recipeID"] = 19793--[[Lifelike Mechanical Toad]]
+							["name"] = "Gnomish Alarm-o-Bot",
+							["recipeID"] = 23096
 						},
 						{
-							["recipeID"] = 26011--[[Tranquil Mechanical Yeti]]
+							["name"] = "Gnomish Battle Chicken",
+							["recipeID"] = 12906
 						},
 						{
-							["recipeID"] = 23079--[[Major Recombobulator]]
+							["name"] = "Gnomish Cloaking Device",
+							["recipeID"] = 3971
 						},
 						{
-							["recipeID"] = 63750--[[High-powered Flashlight]]
+							["name"] = "Gnomish Death Ray",
+							["recipeID"] = 12759
 						},
 						{
-							["recipeID"] = 12624--[[Mithril Mechanical Dragonling]]
+							["name"] = "Gnomish Harm Prevention Belt",
+							["recipeID"] = 12903
 						},
 						{
-							["recipeID"] = 28327--[[Steam Tonk Controller]]
+							["name"] = "Gnomish Mind Control Cap",
+							["recipeID"] = 12907
 						},
 						{
-							["recipeID"] = 23096--[[Gnomish Alarm-o-Bot]]
+							["name"] = "Gnomish Net-o-Matic Projector",
+							["recipeID"] = 12902
 						},
 						{
-							["recipeID"] = 12758--[[Goblin Rocket Helmet]]
+							["name"] = "Gnomish Rocket Boots",
+							["recipeID"] = 12905
 						},
 						{
-							["recipeID"] = 12759--[[Gnomish Death Ray]]
+							["name"] = "Gnomish Shrink Ray",
+							["recipeID"] = 12899
 						},
 						{
-							["recipeID"] = 12907--[[Gnomish Mind Control Cap]]
+							["name"] = "Gnomish Universal Remote",
+							["recipeID"] = 9269
 						},
 						{
-							["recipeID"] = 12617--[[Deepdive Helmet]]
+							["name"] = "Goblin Construction Helmet",
+							["recipeID"] = 12718
 						},
 						{
-							["recipeID"] = 12906--[[Gnomish Battle Chicken]]
+							["name"] = "Goblin Jumper Cables",
+							["recipeID"] = 9273
 						},
 						{
-							["recipeID"] = 23129--[[World Enlarger]]
+							["name"] = "Goblin Jumper Cables XL",
+							["recipeID"] = 23078
 						},
 						{
-							["recipeID"] = 12905--[[Gnomish Rocket Boots]]
+							["name"] = "Goblin Mining Helmet",
+							["recipeID"] = 12717
 						},
 						{
-							["recipeID"] = 8895--[[Goblin Rocket Boots]]
+							["name"] = "Goblin Rocket Boots",
+							["recipeID"] = 8895
 						},
 						{
-							["recipeID"] = 12616--[[Parachute Cloak]]
+							["name"] = "Goblin Rocket Helmet",
+							["recipeID"] = 12758
 						},
 						{
-							["recipeID"] = 12903--[[Gnomish Harm Prevention Belt]]
+							["name"] = "Gyrofreeze Ice Reflector",
+							["recipeID"] = 23077
 						},
 						{
-							["recipeID"] = 12902--[[Gnomish Net-o-Matic Projector]]
+							["name"] = "High-powered Flashlight",
+							["recipeID"] = 63750
 						},
 						{
-							["recipeID"] = 12899--[[Gnomish Shrink Ray]]
+							["name"] = "Hyper-Radiant Flame Reflector",
+							["recipeID"] = 23081
 						},
 						{
-							["recipeID"] = 12718--[[Goblin Construction Helmet]]
+							["name"] = "Ice Deflector",
+							["recipeID"] = 3957
 						},
 						{
-							["recipeID"] = 12717--[[Goblin Mining Helmet]]
+							["name"] = "Lifelike Mechanical Toad",
+							["recipeID"] = 19793
 						},
 						{
-							["recipeID"] = 12900--[[Mobile Alarm]]
+							["name"] = "Lil' Smoky",
+							["recipeID"] = 15633
 						},
 						{
-							["recipeID"] = 3971--[[Gnomish Cloaking Device]]
+							["name"] = "Major Recombobulator",
+							["recipeID"] = 23079
 						},
 						{
-							["recipeID"] = 3969--[[Mechanical Dragonling]]
+							["name"] = "Masterwork Target Dummy",
+							["recipeID"] = 19814
 						},
 						{
-							["recipeID"] = 15255--[[Mechanical Repair Kit]]
+							["name"] = "Mechanical Dragonling",
+							["recipeID"] = 3969
 						},
 						{
-							["recipeID"] = 21940--[[Snowmaster 9000]]
+							["name"] = "Mechanical Repair Kit",
+							["recipeID"] = 15255
 						},
 						{
-							["recipeID"] = 3965--[[Advanced Target Dummy]]
+							["name"] = "Mechanical Squirrel Box",
+							["recipeID"] = 3928
 						},
 						{
-							["recipeID"] = 3963--[[Compact Harvest Reaper Kit]]
+							["name"] = "Mithril Mechanical Dragonling",
+							["recipeID"] = 12624
 						},
 						{
-							["recipeID"] = 15633--[[Lil' Smoky]]
+							["name"] = "Mobile Alarm",
+							["recipeID"] = 12900
 						},
 						{
-							["recipeID"] = 15628--[[Pet Bombling]]
+							["name"] = "Ornate Spyglass",
+							["recipeID"] = 6458
 						},
 						{
-							["recipeID"] = 9273--[[Goblin Jumper Cables]]
+							["name"] = "Parachute Cloak",
+							["recipeID"] = 12616
 						},
 						{
-							["recipeID"] = 3959--[[Discombobulator Ray]]
+							["name"] = "Pet Bombling",
+							["recipeID"] = 15628
 						},
 						{
-							["recipeID"] = 3957--[[Ice Deflector]]
+							["name"] = "Snowmaster 9000",
+							["recipeID"] = 21940
 						},
 						{
-							["recipeID"] = 6458--[[Ornate Spyglass]]
+							["name"] = "Steam Tonk Controller",
+							["recipeID"] = 28327
 						},
 						{
-							["recipeID"] = 3944--[[Flame Deflector]]
+							["name"] = "Target Dummy",
+							["recipeID"] = 3932
 						},
 						{
-							["recipeID"] = 9269--[[Gnomish Universal Remote]]
+							["name"] = "Tranquil Mechanical Yeti",
+							["recipeID"] = 26011
 						},
 						{
-							["recipeID"] = 9271--[[Aquadynamic Fish Attractor]]
+							["name"] = "Ultra-Flash Shadow Reflector",
+							["recipeID"] = 23082
 						},
 						{
-							["recipeID"] = 3932--[[Target Dummy]]
+							["name"] = "Ultrasafe Transporter - Gadgetzan",
+							["recipeID"] = 23489
 						},
 						{
-							["recipeID"] = 3928--[[Mechanical Squirrel Box]]
+							["name"] = "Voice Amplification Modulator",
+							["recipeID"] = 19819
 						},
 						{
-							["recipeID"] = 8334--[[Clockwork Box]]
+							["name"] = "World Enlarger",
+							["recipeID"] = 23129
 						}
 					}
 				},
 				{
-					["categoryID"] = 189--[[Guns & Bows]],
+					["name"] = "Guns & Bows",
+					["categoryID"] = 189,
 					["g"] = {
 						{
-							["recipeID"] = 22795--[[Core Marksman Rifle]]
+							["name"] = "Core Marksman Rifle",
+							["recipeID"] = 22795
 						},
 						{
-							["recipeID"] = 19833--[[Flawless Arcanite Rifle]]
+							["name"] = "Dark Iron Rifle",
+							["recipeID"] = 19796
 						},
 						{
-							["recipeID"] = 19796--[[Dark Iron Rifle]]
+							["name"] = "Deadly Blunderbuss",
+							["recipeID"] = 3936
 						},
 						{
-							["recipeID"] = 19792--[[Thorium Rifle]]
+							["name"] = "Flawless Arcanite Rifle",
+							["recipeID"] = 19833
 						},
 						{
-							["recipeID"] = 12614--[[Mithril Heavy-bore Rifle]]
+							["name"] = "Lovingly Crafted Boomstick",
+							["recipeID"] = 3939
 						},
 						{
-							["recipeID"] = 12595--[[Mithril Blunderbuss]]
+							["name"] = "Mithril Blunderbuss",
+							["recipeID"] = 12595
 						},
 						{
-							["recipeID"] = 3954--[[Moonsight Rifle]]
+							["name"] = "Mithril Heavy-bore Rifle",
+							["recipeID"] = 12614
 						},
 						{
-							["recipeID"] = 3949--[[Silver-plated Shotgun]]
+							["name"] = "Moonsight Rifle",
+							["recipeID"] = 3954
 						},
 						{
-							["recipeID"] = 3939--[[Lovingly Crafted Boomstick]]
+							["name"] = "Rough Boomstick",
+							["recipeID"] = 3925
 						},
 						{
-							["recipeID"] = 3936--[[Deadly Blunderbuss]]
+							["name"] = "Silver-plated Shotgun",
+							["recipeID"] = 3949
 						},
 						{
-							["recipeID"] = 3925--[[Rough Boomstick]]
+							["name"] = "Thorium Rifle",
+							["recipeID"] = 19792
 						}
 					}
 				},
 				{
-					["categoryID"] = 190--[[Scopes]],
+					["name"] = "Scopes",
+					["categoryID"] = 190,
 					["g"] = {
 						{
-							["recipeID"] = 22793--[[Biznicks 247x128 Accurascope]]
+							["name"] = "Accurate Scope",
+							["recipeID"] = 3979
 						},
 						{
-							["recipeID"] = 12620--[[Sniper Scope]]
+							["name"] = "Biznicks 247x128 Accurascope",
+							["recipeID"] = 22793
 						},
 						{
-							["recipeID"] = 12597--[[Deadly Scope]]
+							["name"] = "Crude Scope",
+							["recipeID"] = 3977
 						},
 						{
-							["recipeID"] = 3979--[[Accurate Scope]]
+							["name"] = "Deadly Scope",
+							["recipeID"] = 12597
 						},
 						{
-							["recipeID"] = 3978--[[Standard Scope]]
+							["name"] = "Sniper Scope",
+							["recipeID"] = 12620
 						},
 						{
-							["recipeID"] = 3977--[[Crude Scope]]
+							["name"] = "Standard Scope",
+							["recipeID"] = 3978
 						}
 					}
 				},
 				{
-					["categoryID"] = 194--[[Fireworks]],
+					["name"] = "Fireworks",
+					["categoryID"] = 194,
 					["g"] = {
 						{
-							["recipeID"] = 26443--[[Cluster Launcher]]
+							["name"] = "Blue Firework",
+							["recipeID"] = 23067
 						},
 						{
-							["recipeID"] = 26426--[[Large Blue Rocket Cluster]]
+							["name"] = "Blue Rocket Cluster",
+							["recipeID"] = 26423
 						},
 						{
-							["recipeID"] = 26427--[[Large Green Rocket Cluster]]
+							["name"] = "Cluster Launcher",
+							["recipeID"] = 26443
 						},
 						{
-							["recipeID"] = 26428--[[Large Red Rocket Cluster]]
+							["name"] = "Firework Launcher",
+							["recipeID"] = 26442
 						},
 						{
-							["recipeID"] = 23507--[[Snake Burst Firework]]
+							["name"] = "Green Firework",
+							["recipeID"] = 23068
 						},
 						{
-							["recipeID"] = 26442--[[Firework Launcher]]
+							["name"] = "Green Rocket Cluster",
+							["recipeID"] = 26424
 						},
 						{
-							["recipeID"] = 26423--[[Blue Rocket Cluster]]
+							["name"] = "Large Blue Rocket",
+							["recipeID"] = 26420
 						},
 						{
-							["recipeID"] = 26424--[[Green Rocket Cluster]]
+							["name"] = "Large Blue Rocket Cluster",
+							["recipeID"] = 26426
 						},
 						{
-							["recipeID"] = 26425--[[Red Rocket Cluster]]
+							["name"] = "Large Green Rocket",
+							["recipeID"] = 26421
 						},
 						{
-							["recipeID"] = 26420--[[Large Blue Rocket]]
+							["name"] = "Large Green Rocket Cluster",
+							["recipeID"] = 26427
 						},
 						{
-							["recipeID"] = 26421--[[Large Green Rocket]]
+							["name"] = "Large Red Rocket",
+							["recipeID"] = 26422
 						},
 						{
-							["recipeID"] = 26422--[[Large Red Rocket]]
+							["name"] = "Large Red Rocket Cluster",
+							["recipeID"] = 26428
 						},
 						{
-							["recipeID"] = 23067--[[Blue Firework]]
+							["name"] = "Red Firework",
+							["recipeID"] = 23066
 						},
 						{
-							["recipeID"] = 23068--[[Green Firework]]
+							["name"] = "Red Rocket Cluster",
+							["recipeID"] = 26425
 						},
 						{
-							["recipeID"] = 23066--[[Red Firework]]
+							["name"] = "Small Blue Rocket",
+							["recipeID"] = 26416
 						},
 						{
-							["recipeID"] = 26416--[[Small Blue Rocket]]
+							["name"] = "Small Green Rocket",
+							["recipeID"] = 26417
 						},
 						{
-							["recipeID"] = 26417--[[Small Green Rocket]]
+							["name"] = "Small Red Rocket",
+							["recipeID"] = 26418
 						},
 						{
-							["recipeID"] = 26418--[[Small Red Rocket]]
+							["name"] = "Snake Burst Firework",
+							["recipeID"] = 23507
 						}
 					}
 				},
 				{
-					["categoryID"] = 191--[[Tools]],
+					["name"] = "Tools",
+					["categoryID"] = 191,
 					["g"] = {
 						{
-							["recipeID"] = 12590--[[Gyromatic Micro-Adjustor]]
+							["name"] = "Arclight Spanner",
+							["recipeID"] = 7430
 						},
 						{
-							["recipeID"] = 7430--[[Arclight Spanner]]
+							["name"] = "Gyromatic Micro-Adjustor",
+							["recipeID"] = 12590
 						}
 					}
 				},
 				{
-					["categoryID"] = 192--[[Mounts]],
+					["name"] = "Mounts",
+					["categoryID"] = 192,
 					["g"] = {
 						{
-							["recipeID"] = 44155--[[Flying Machine]]
+							["name"] = "Flying Machine",
+							["recipeID"] = 44155
 						}
 					}
 				}

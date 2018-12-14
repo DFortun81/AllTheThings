@@ -1,305 +1,447 @@
 --[[
 DO NOT MODIFY THIS FILE, I WILL CUT YOU.
  With love,
-    - CRIEVE
+    -CRIEVE
 ]]--
 profession(186, {	-- Mining
-	filter(200, {	-- Recipes
+	filter(200, {
 		{
-			["categoryID"] = 1065--[[Kul Tiran Mining]],
+			["name"] = "Zandalari Mining",
+			["categoryID"] = 1065,
 			["g"] = {
 				{
-					["categoryID"] = 1079--[[Mining Techniques]],
+					["name"] = "Mining Techniques",
+					["categoryID"] = 1079,
 					["g"] = {
 						{
-							["recipeID"] = 253333--[[Monelite Deposit]]
+							["name"] = "Monelite Deposit",
+							["nextRecipeID"] = 253334,
+							["recipeID"] = 253333
 						},
 						{
-							["recipeID"] = 253334--[[Monelite Deposit]]
+							["name"] = "Monelite Deposit",
+							["nextRecipeID"] = 253335,
+							["previousRecipeID"] = 253333,
+							["recipeID"] = 253334
 						},
 						{
-							["recipeID"] = 253335--[[Monelite Deposit]]
+							["name"] = "Monelite Deposit",
+							["previousRecipeID"] = 253334,
+							["recipeID"] = 253335
 						},
 						{
-							["recipeID"] = 253342--[[Monelite Seam]]
+							["name"] = "Monelite Seam",
+							["nextRecipeID"] = 253343,
+							["recipeID"] = 253342
 						},
 						{
-							["recipeID"] = 253343--[[Monelite Seam]]
+							["name"] = "Monelite Seam",
+							["nextRecipeID"] = 253344,
+							["previousRecipeID"] = 253342,
+							["recipeID"] = 253343
 						},
 						{
-							["recipeID"] = 253344--[[Monelite Seam]]
+							["name"] = "Monelite Seam",
+							["previousRecipeID"] = 253343,
+							["recipeID"] = 253344
 						},
 						{
-							["recipeID"] = 253341--[[Platinum Deposit]]
+							["name"] = "Platinum Deposit",
+							["nextRecipeID"] = 253340,
+							["recipeID"] = 253339
 						},
 						{
-							["recipeID"] = 253340--[[Platinum Deposit]]
+							["name"] = "Platinum Deposit",
+							["nextRecipeID"] = 253341,
+							["previousRecipeID"] = 253339,
+							["recipeID"] = 253340
 						},
 						{
-							["recipeID"] = 253339--[[Platinum Deposit]]
+							["name"] = "Platinum Deposit",
+							["previousRecipeID"] = 253340,
+							["recipeID"] = 253341
 						},
 						{
-							["recipeID"] = 253336--[[Storm Silver Deposit]]
+							["name"] = "Storm Silver Deposit",
+							["nextRecipeID"] = 253337,
+							["recipeID"] = 253336
 						},
 						{
-							["recipeID"] = 253337--[[Storm Silver Deposit]]
+							["name"] = "Storm Silver Deposit",
+							["nextRecipeID"] = 253338,
+							["previousRecipeID"] = 253336,
+							["recipeID"] = 253337
 						},
 						{
-							["recipeID"] = 253338--[[Storm Silver Deposit]]
+							["name"] = "Storm Silver Deposit",
+							["previousRecipeID"] = 253337,
+							["recipeID"] = 253338
 						},
 						{
-							["recipeID"] = 253345--[[Storm Silver Seam]]
+							["name"] = "Storm Silver Seam",
+							["nextRecipeID"] = 253346,
+							["recipeID"] = 253345
 						},
 						{
-							["recipeID"] = 253346--[[Storm Silver Seam]]
+							["name"] = "Storm Silver Seam",
+							["nextRecipeID"] = 253347,
+							["previousRecipeID"] = 253345,
+							["recipeID"] = 253346
 						},
 						{
-							["recipeID"] = 253347--[[Storm Silver Seam]]
+							["name"] = "Storm Silver Seam",
+							["previousRecipeID"] = 253346,
+							["recipeID"] = 253347
 						}
 					}
 				}
 			}
 		},
 		{
-			["categoryID"] = 425--[[Legion Mining]],
+			["name"] = "Legion Mining",
+			["categoryID"] = 425,
 			["g"] = {
 				{
-					["categoryID"] = 1080--[[Mining Techniques]],
+					["name"] = "Mining Techniques",
+					["categoryID"] = 1080,
 					["g"] = {
 						{
-							["recipeID"] = 247850--[[Empyrium Deposit]]
+							["name"] = "Empyrium Deposit",
+							["nextRecipeID"] = 247849,
+							["recipeID"] = 247848
 						},
 						{
-							["recipeID"] = 247849--[[Empyrium Deposit]]
+							["name"] = "Empyrium Deposit",
+							["nextRecipeID"] = 247850,
+							["previousRecipeID"] = 247848,
+							["recipeID"] = 247849
 						},
 						{
-							["recipeID"] = 247848--[[Empyrium Deposit]]
+							["name"] = "Empyrium Deposit",
+							["previousRecipeID"] = 247849,
+							["recipeID"] = 247850
 						},
 						{
-							["recipeID"] = 247853--[[Empyrium Seam]]
+							["name"] = "Empyrium Seam",
+							["nextRecipeID"] = 247852,
+							["recipeID"] = 247851
 						},
 						{
-							["recipeID"] = 247852--[[Empyrium Seam]]
+							["name"] = "Empyrium Seam",
+							["nextRecipeID"] = 247853,
+							["previousRecipeID"] = 247851,
+							["recipeID"] = 247852
 						},
 						{
-							["recipeID"] = 247851--[[Empyrium Seam]]
+							["name"] = "Empyrium Seam",
+							["previousRecipeID"] = 247852,
+							["recipeID"] = 247853
 						},
 						{
-							["recipeID"] = 184494--[[Felslate Deposit]]
+							["name"] = "Felslate Deposit",
+							["nextRecipeID"] = 184493,
+							["recipeID"] = 184492
 						},
 						{
-							["recipeID"] = 184493--[[Felslate Deposit]]
+							["name"] = "Felslate Deposit",
+							["nextRecipeID"] = 184494,
+							["previousRecipeID"] = 184492,
+							["recipeID"] = 184493
 						},
 						{
-							["recipeID"] = 184492--[[Felslate Deposit]]
+							["name"] = "Felslate Deposit",
+							["previousRecipeID"] = 184493,
+							["recipeID"] = 184494
 						},
 						{
-							["recipeID"] = 184498--[[Felslate Seam]]
+							["name"] = "Felslate Seam",
+							["nextRecipeID"] = 184497,
+							["recipeID"] = 184496
 						},
 						{
-							["recipeID"] = 184497--[[Felslate Seam]]
+							["name"] = "Felslate Seam",
+							["nextRecipeID"] = 184498,
+							["previousRecipeID"] = 184496,
+							["recipeID"] = 184497
 						},
 						{
-							["recipeID"] = 184496--[[Felslate Seam]]
+							["name"] = "Felslate Seam",
+							["previousRecipeID"] = 184497,
+							["recipeID"] = 184498
 						},
 						{
-							["recipeID"] = 184504--[[Infernal Brimstone]]
+							["name"] = "Infernal Brimstone",
+							["nextRecipeID"] = 184505,
+							["recipeID"] = 184504
 						},
 						{
-							["recipeID"] = 184505--[[Infernal Brimstone]]
+							["name"] = "Infernal Brimstone",
+							["nextRecipeID"] = 191970,
+							["previousRecipeID"] = 184504,
+							["recipeID"] = 184505
 						},
 						{
-							["recipeID"] = 191970--[[Infernal Brimstone]]
+							["name"] = "Infernal Brimstone",
+							["previousRecipeID"] = 184505,
+							["recipeID"] = 191970
 						},
 						{
-							["recipeID"] = 184457--[[Leystone Deposit]]
+							["name"] = "Leystone Deposit",
+							["nextRecipeID"] = 184456,
+							["recipeID"] = 184454
 						},
 						{
-							["recipeID"] = 184456--[[Leystone Deposit]]
+							["name"] = "Leystone Deposit",
+							["nextRecipeID"] = 184457,
+							["previousRecipeID"] = 184454,
+							["recipeID"] = 184456
 						},
 						{
-							["recipeID"] = 184454--[[Leystone Deposit]]
+							["name"] = "Leystone Deposit",
+							["previousRecipeID"] = 184456,
+							["recipeID"] = 184457
 						},
 						{
-							["recipeID"] = 184486--[[Leystone Seam]]
+							["name"] = "Leystone Seam",
+							["nextRecipeID"] = 184485,
+							["recipeID"] = 184484
 						},
 						{
-							["recipeID"] = 184485--[[Leystone Seam]]
+							["name"] = "Leystone Seam",
+							["nextRecipeID"] = 184486,
+							["previousRecipeID"] = 184484,
+							["recipeID"] = 184485
 						},
 						{
-							["recipeID"] = 184484--[[Leystone Seam]]
+							["name"] = "Leystone Seam",
+							["previousRecipeID"] = 184485,
+							["recipeID"] = 184486
 						},
 						{
-							["recipeID"] = 184500--[[Living Felslate]]
+							["name"] = "Living Felslate",
+							["nextRecipeID"] = 184501,
+							["recipeID"] = 184500
 						},
 						{
-							["recipeID"] = 184501--[[Living Felslate]]
+							["name"] = "Living Felslate",
+							["nextRecipeID"] = 184502,
+							["previousRecipeID"] = 184500,
+							["recipeID"] = 184501
 						},
 						{
-							["recipeID"] = 184502--[[Living Felslate]]
+							["name"] = "Living Felslate",
+							["previousRecipeID"] = 184501,
+							["recipeID"] = 184502
 						},
 						{
-							["recipeID"] = 184490--[[Living Leystone]]
+							["name"] = "Living Leystone",
+							["nextRecipeID"] = 184489,
+							["recipeID"] = 184488
 						},
 						{
-							["recipeID"] = 184488--[[Living Leystone]]
+							["name"] = "Living Leystone",
+							["nextRecipeID"] = 184490,
+							["previousRecipeID"] = 184488,
+							["recipeID"] = 184489
 						},
 						{
-							["recipeID"] = 184489--[[Living Leystone]]
+							["name"] = "Living Leystone",
+							["previousRecipeID"] = 184489,
+							["recipeID"] = 184490
 						}
 					}
 				}
 			}
 		},
 		{
-			["categoryID"] = 1068--[[Draenor Mining]]
-		},
-		{
-			["categoryID"] = 1070--[[Pandaria Mining]],
+			["name"] = "Pandaria Mining",
+			["categoryID"] = 1070,
 			["g"] = {
 				{
-					["categoryID"] = 1084--[[Smelting]],
+					["name"] = "Smelting",
+					["categoryID"] = 1084,
 					["g"] = {
 						{
-							["recipeID"] = 102167--[[Smelt Trillium]]
+							["name"] = "Smelt Ghost Iron",
+							["recipeID"] = 102165
 						},
 						{
-							["recipeID"] = 102165--[[Smelt Ghost Iron]]
+							["name"] = "Smelt Trillium",
+							["recipeID"] = 102167
 						}
 					}
 				}
 			}
 		},
 		{
-			["categoryID"] = 1072--[[Cataclysm Mining]],
+			["name"] = "Cataclysm Mining",
+			["categoryID"] = 1072,
 			["g"] = {
 				{
-					["categoryID"] = 1083--[[Smelting]],
+					["name"] = "Smelting",
+					["categoryID"] = 1083,
 					["g"] = {
 						{
-							["recipeID"] = 74529--[[Smelt Pyrite]]
+							["name"] = "Smelt Elementium",
+							["recipeID"] = 74530
 						},
 						{
-							["recipeID"] = 74537--[[Smelt Hardened Elementium]]
+							["name"] = "Smelt Hardened Elementium",
+							["recipeID"] = 74537
 						},
 						{
-							["recipeID"] = 74530--[[Smelt Elementium]]
+							["name"] = "Smelt Obsidium",
+							["recipeID"] = 84038
 						},
 						{
-							["recipeID"] = 84038--[[Smelt Obsidium]]
+							["name"] = "Smelt Pyrite",
+							["recipeID"] = 74529
 						}
 					}
 				}
 			}
 		},
 		{
-			["categoryID"] = 1074--[[Northrend Mining]],
+			["name"] = "Northrend Mining",
+			["categoryID"] = 1074,
 			["g"] = {
 				{
-					["categoryID"] = 1082--[[Smelting]],
+					["name"] = "Smelting",
+					["categoryID"] = 1082,
 					["g"] = {
 						{
-							["recipeID"] = 49258--[[Smelt Saronite]]
+							["name"] = "Smelt Cobalt",
+							["recipeID"] = 49252
 						},
 						{
-							["recipeID"] = 55211--[[Smelt Titanium]]
+							["name"] = "Smelt Saronite",
+							["recipeID"] = 49258
 						},
 						{
-							["recipeID"] = 55208--[[Smelt Titansteel]]
+							["name"] = "Smelt Titanium",
+							["recipeID"] = 55211
 						},
 						{
-							["recipeID"] = 49252--[[Smelt Cobalt]]
+							["name"] = "Smelt Titansteel",
+							["recipeID"] = 55208
 						}
 					}
 				}
 			}
 		},
 		{
-			["categoryID"] = 1076--[[Outland Mining]],
+			["name"] = "Outland Mining",
+			["categoryID"] = 1076,
 			["g"] = {
 				{
-					["categoryID"] = 265--[[Elemental]],
+					["name"] = "Elemental",
+					["categoryID"] = 265,
 					["g"] = {
 						{
-							["recipeID"] = 35750--[[Earth Shatter]]
+							["name"] = "Earth Shatter",
+							["recipeID"] = 35750
 						},
 						{
-							["recipeID"] = 35751--[[Fire Sunder]]
+							["name"] = "Fire Sunder",
+							["recipeID"] = 35751
 						}
 					}
 				},
 				{
-					["categoryID"] = 1081--[[Smelting]],
+					["name"] = "Smelting",
+					["categoryID"] = 1081,
 					["g"] = {
 						{
-							["recipeID"] = 46353--[[Smelt Hardened Khorium]]
+							["name"] = "Smelt Adamantite",
+							["recipeID"] = 29358
 						},
 						{
-							["recipeID"] = 29361--[[Smelt Khorium]]
+							["name"] = "Smelt Eternium",
+							["recipeID"] = 29359
 						},
 						{
-							["recipeID"] = 29686--[[Smelt Hardened Adamantite]]
+							["name"] = "Smelt Fel Iron",
+							["recipeID"] = 29356
 						},
 						{
-							["recipeID"] = 29360--[[Smelt Felsteel]]
+							["name"] = "Smelt Felsteel",
+							["recipeID"] = 29360
 						},
 						{
-							["recipeID"] = 29359--[[Smelt Eternium]]
+							["name"] = "Smelt Hardened Adamantite",
+							["recipeID"] = 29686
 						},
 						{
-							["recipeID"] = 29358--[[Smelt Adamantite]]
+							["name"] = "Smelt Hardened Khorium",
+							["recipeID"] = 46353
 						},
 						{
-							["recipeID"] = 29356--[[Smelt Fel Iron]]
+							["name"] = "Smelt Khorium",
+							["recipeID"] = 29361
 						}
 					}
 				}
 			}
 		},
 		{
-			["categoryID"] = 1078--[[Mining]],
+			["name"] = "Mining",
+			["categoryID"] = 1078,
 			["g"] = {
 				{
-					["categoryID"] = 264--[[Smelting]],
+					["name"] = "Smelting",
+					["categoryID"] = 264,
 					["g"] = {
 						{
-							["recipeID"] = 14891--[[Smelt Dark Iron]]
+							["name"] = "Enchanted Thorium Bar",
+							["recipeID"] = 70524
 						},
 						{
-							["recipeID"] = 22967--[[Smelt Enchanted Elementium]]
+							["name"] = "Smelt Bronze",
+							["recipeID"] = 2659
 						},
 						{
-							["recipeID"] = 70524--[[Enchanted Thorium Bar]]
+							["name"] = "Smelt Copper",
+							["recipeID"] = 2657
 						},
 						{
-							["recipeID"] = 16153--[[Smelt Thorium]]
+							["name"] = "Smelt Dark Iron",
+							["recipeID"] = 14891
 						},
 						{
-							["recipeID"] = 10098--[[Smelt Truesilver]]
+							["name"] = "Smelt Enchanted Elementium",
+							["recipeID"] = 22967
 						},
 						{
-							["recipeID"] = 10097--[[Smelt Mithril]]
+							["name"] = "Smelt Gold",
+							["recipeID"] = 3308
 						},
 						{
-							["recipeID"] = 3308--[[Smelt Gold]]
+							["name"] = "Smelt Iron",
+							["recipeID"] = 3307
 						},
 						{
-							["recipeID"] = 3307--[[Smelt Iron]]
+							["name"] = "Smelt Mithril",
+							["recipeID"] = 10097
 						},
 						{
-							["recipeID"] = 3569--[[Smelt Steel]]
+							["name"] = "Smelt Silver",
+							["recipeID"] = 2658
 						},
 						{
-							["recipeID"] = 2658--[[Smelt Silver]]
+							["name"] = "Smelt Steel",
+							["recipeID"] = 3569
 						},
 						{
-							["recipeID"] = 2659--[[Smelt Bronze]]
+							["name"] = "Smelt Thorium",
+							["recipeID"] = 16153
 						},
 						{
-							["recipeID"] = 3304--[[Smelt Tin]]
+							["name"] = "Smelt Tin",
+							["recipeID"] = 3304
 						},
 						{
-							["recipeID"] = 2657--[[Smelt Copper]]
+							["name"] = "Smelt Truesilver",
+							["recipeID"] = 10098
 						}
 					}
 				}
