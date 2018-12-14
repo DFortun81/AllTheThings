@@ -717,4 +717,5 @@ pet(166453, 2548);	-- Everburning Treant
 pet(166528, 2563);	-- Nightwreathed Watcher
 pet(166451, 2546);	-- Rattling Bones
 pet(166454, 2549);	-- Squishy Purple Goo
+pet(160587, 2184);	-- Whomper
 pet(166455, 2550);	-- Zur'aj the Depleted

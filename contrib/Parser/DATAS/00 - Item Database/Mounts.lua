@@ -151,7 +151,31 @@ i(156879, 262022);	-- Dread Gladiator's Proto-Drake
 ---------------
 
 i(166432, 288495);	-- Ashenvale Chimaera
+i(166465, 288736);	-- Azureshell Krolusk
+i(166428, 288438);	-- Blackpaw
+i(166468, 288720);	-- Bloodgorged Hunter
+i(166469, 288714);	-- Bloodthirsty Dreadwing
+i(166442, 288587);	-- Blue Marsh Hopper
 i(166438, 288438);	-- Caged Bear
 i(166437, 288505);	-- Captured Kaldorei Nightsaber
 i(166434, 288503);	-- Captured Umber Nightsaber
+i(166539, 289101);	-- Dazar'alor Windreaver
+i(166433, 288499);	-- Frightened Kodo
+i(166518, 289083);	-- G.M.O.D.
+i(166705, 289555);	-- Glacial Tidestorm
+i(166467, 288721);	-- Island Thunderscale
+i(166435, 288505);	-- Kaldorei Nightsaber
+i(164571, 281554);	-- Meat Wagon
+i(166463, 288740);	-- Priestess' Moonsaber
+i(166417, 237288);	-- Reins of the Onyx War Hyena
+i(166466, 288722);	-- Risen Mare
+i(166464, 288735);	-- Rubyshell Krolusk
+i(166471, 288711);	-- Saltwater Seahorse
+i(166436, 288506);	-- Sandy Nightsaber
+i(166745, 266925);	-- Siltwing Albatross
+i(166470, 288712);	-- Stonehide Elderhorn
 i(166803, 288503);	-- Umber Nightsaber
+i(165020, 281890);	-- Vicious Black Bonesteed
+i(165019, 281887);	-- Vicious Black Warsaber
+i(166775, 290133);	-- Vulpine Familiar
+i(166443, 288589);	-- Yellow Marsh Hopper

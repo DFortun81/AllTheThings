@@ -1,12 +1,6 @@
 -- Blacksmithing - Skill ID 164 / Spell ID 2018
---[[ Recipe Types Explained
-Drops: The item to learn the recipe drops in the world, from a boss NPC, or trash in a dungeon.
-Recipes: These are direct spells learned from an NPC associated with the profession. (e.g. "Blacksmithing Trainer")
-Quests: These can be items or direct spells that the player receives at quest completion.
-Professions: These are typically items crafted by other professions to use in this profession.
-Vendors: These are items bought from vendors to learn spells of the trade.
-]]--
 profession(164, { -- Blacksmithing
+--[[
 	tier(6, { -- Warlords of Draenor
 		gb(118, { -- The Forge
 			["groups"] = {
@@ -104,7 +98,7 @@ profession(164, { -- Blacksmithing
 		}),
 	}),
 	tier(7, { -- Legion
-		--[[n(-2, { -- Vendors
+		n(-2, { -- Vendors
 			n(106902, { -- Ransa Greyfeather (Highmountain)
 				["groups"] = {
 					i(123948), -- Recipe: Demonsteel Armguards (Rank 3)
@@ -137,19 +131,18 @@ profession(164, { -- Blacksmithing
 					i(136699), -- Recipe: Flamespike
 				},
 			}),
-		}),]]--
+		}),
 		n(-26, { -- Drops
 			i(136709, { -- Recipe: Demonsteel Stirrups
 				["crs"] = {
-          112637, -- Devious Sunrunner
-          91308, -- Equine Sunrunner
-          104815, -- Jojo the Palestrider
-          112636, -- Sinister Leyrunner
-          110350, -- Tormented Shadowrunner
-          109349, -- Veil Shadowrunner
-          109819, -- Wild Dreamrunner
-          
-        },
+					112637, -- Devious Sunrunner
+					91308, -- Equine Sunrunner
+					104815, -- Jojo the Palestrider
+					112636, -- Sinister Leyrunner
+					110350, -- Tormented Shadowrunner
+					109349, -- Veil Shadowrunner
+					109819, -- Wild Dreamrunner
+				},
 			}),
 		}),
 		filter(200, { -- Recipes
@@ -244,4 +237,5 @@ profession(164, { -- Blacksmithing
 			}),
 		}),
 	}),
+	--]]
 });

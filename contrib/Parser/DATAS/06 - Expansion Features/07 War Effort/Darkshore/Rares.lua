@@ -109,7 +109,7 @@ _.ExpansionFeatures =
 							},
 							["g"] = {
 								{	--Caged Bear
-									["itemID"] = 166438,	-- Caged Bear
+									["itemID"] = 166428,	-- Blackpaw
 								},
 							},
 						},

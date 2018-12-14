@@ -75,9 +75,18 @@ _.Achievements =
 						crit(56), 		-- Ashleaf Spriteling
 					}),	
 					ach(9909, { 	-- Heirloom Hoarder (35)
-					--	i(122718, { -- Clinking Present
-						i(120968), 		-- Chauffeured Chopper (Horde, recieve both on completing achieve)
-						i(122703), 		-- Chauffeured Chopper (Alliance, recieve both on completing achieve)
+						{	-- Clinking Present
+							["itemID"] = 122718,	-- Clinking Present
+							["collectible"] = false,
+							["g"] = {
+								{	-- Chauffered Chopper [H]
+									["itemID"] = 120968,	-- Chauffered Chopper [H]
+								},
+								{	-- Chauffered Chopper [A]
+									["itemID"] = 122703,	-- Chauffered Chopper [A]
+								},
+							},
+						},
 						ach(9908), 		-- Ready for Powerleveling (15)
 						ach(9906), 		-- Alt-ernative Lifestyle (5)
 						ach(9911), 		-- Where's the Mailbox? (1)

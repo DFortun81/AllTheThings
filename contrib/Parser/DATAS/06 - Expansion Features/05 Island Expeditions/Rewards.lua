@@ -363,14 +363,13 @@ _.ExpansionFeatures =
 						i(164374),	-- Magic Monkey Banana
 						i(163795),	-- Oomgut Ritual Drum
 						i(163924),	-- Whiskerwax Candle
-						--Note!! The two below items are unconfirmed to drop.  However, due to how Island Expedition loot works there is no way
-						--to accurately verify if they do.  On November 20th, 2018 they tweeted that the mobs for a pet weren't spawning which caused
-						--it to look like they weren't.  Due to the possibility of these mobs not spawning they stay in the addon until Patch 8.1 on
-						--December 11, 2018.  At that point if no confirmed drops have been spotted and still not in Toy Box then they will be
-						--marked with un(1 here in this file.
+						--Note!! The two below items are unconfirmed to drop.
 						--Source: https://twitter.com/WarcraftDevs/status/1065080683058487297
-						i(164372),	-- Jinyu Light Globe
-						i(164377),	-- Regenerating Banana Bunch [Un'gol Ruins] [Not added, maybe they fix them some day]
+						--As of Patch 8.1 now returns "Retrieving Information" meaning they were pulled for some reason.
+						--The next three items will be marked as NYI in the event that they are hotfixed or added in the future
+						--and people can report that they are dropping.
+						un(1, i(164372)),	-- Jinyu Light Globe
+						un(1, i(164377)),	-- Regenerating Banana Bunch [Un'gol Ruins] [Not added, maybe they fix them some day]
 						--Note!! The below item doesn't show up in the files at all.  It returns "Retrieving Information".
 						un(1, i(164371)),	-- Yaungol Oil Stove [Not in files]
 					}),
