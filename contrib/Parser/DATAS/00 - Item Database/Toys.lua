@@ -342,7 +342,6 @@ t(163795);	-- Oomgut Ritual Drum
 t(1973);	-- Orb of Deception
 t(35275);	-- Orb of the Sin'dorei
 t(45014);	-- Orgrimmar Banner (Horde)
-t(163986);	-- Orgrimmar Hero's War Banner
 t(120276);	-- Outrider's Bridle Chain
 t(158149);	-- Overtuned Corgi Goggles
 t(90427);	-- Pandaren Brewpack
@@ -442,7 +441,6 @@ t(122681);	-- Sternfathom's Pet Journal
 t(111476);	-- Stolen Breath
 t(140160);	-- Stormforged Vrykul Horn
 t(45011);	-- Stormwind Banner (Alliance)
-t(163987);	-- Stormwind Champion's War Banner
 t(144339);	-- Sturdy Love Fool
 t(95568);	-- Sunreaver Beacon (Horde)
 t(37254);	-- Super Simian Sphere
@@ -553,8 +551,39 @@ t(116691);	-- Zhevra Lounge Cushion
 -- PATCH 8.1 --
 ---------------
 
+t(166877);	-- Azerite Firework Launcher
+t(166808);	-- Bewitching Tea Set
+t(166743);	-- Blight Bomber
+t(165672);	-- Blue Dragon Body Costume
+t(165671);	-- Blue Dragon Head Costume
+t(165673);	-- Blue Dragon Tail Costume
+t(166704);	-- Bowl of Glowing Pufferfish
+t(166678);	-- Brynja's Beacon
+t(166247);	-- Citizens Brigade Whistle
+t(166662);	-- Cranky Crab
+t(166544);	-- Dark Ranger's Spare Cowl
 t(166785);	-- Detoxified Blight Grenade
+t(166308);	-- For da Blood God!
+t(166744);	-- Glaive Tosser
+t(166461);	-- Gnarlwood Waveboard
+t(166703);	-- Goldtusk Inn Breakfast Buffet
+t(165675);	-- Green Dragon Body Costume
+t(165674);	-- Green Dragon Head Costume
+t(165676);	-- Green Dragon Tail Costume
+t(166663);	-- Hand Anchor
 t(166790);	-- Highborne Memento
+t(166851);	-- Kojo's Master Matching Set
+t(165669);	-- Lunar Elder's Hearthstone
+t(166880);	-- Meerah's Jukebox
 t(166784);	-- Narassin's Soul Gem
+t(163986);	-- Orgrimmar Hero's War Banner
+t(165670);	-- Peddlefeet's Lovely Hearthstone
+t(166702);	-- Proudmoore Music Box
+t(166879);	-- Rallying War Banner
+t(164983);	-- Rhan'ka's Escape Plan
+t(163987);	-- Stormwind Champion's War Banner
 t(166787);	-- Twiddle Twirler: Sentinel's Glaive
 t(166788);	-- Twiddle Twirler: Shredder Blade
+t(166701);	-- Warbeast Kraal Dinner Bell
+t(165021);	-- Words of Akunda
+t(165791);	-- Worn Cloak
