@@ -140,6 +140,72 @@ _.Zones =
 							},
 							["races"] = ALLIANCE_ONLY,
 						}),
+						{	-- Provisioner Stoutforge
+							["npcID"] = 148927,	-- Provisioner Stoutforge
+							["races"] = ALLIANCE_ONLY,
+							["coords"] = {
+								{ 66.89, 25.76, 1161 },
+							},
+							["g"] = {
+								{	-- 7th Legion Service Medals
+									["currencyID"] = 1717,	-- 7th Legion Service Medals
+									["g"] = {
+										{	-- Draught of Ten Lands
+											["itemID"] = 166750,
+											["description"] = "Cost: 5 7th Legion Service Medals",
+										},
+										{	-- Azureshell Krolusk
+											["itemID"] = 166465,	-- Azureshell Krolusk
+											["description"] = "Cost: 200 7th Legion Service Medals",
+										},
+										{	-- Priestss' Moonsaber
+											["itemID"] = 166463,	-- Priestss' Moonsaber
+											["description"] = "Cost: 750 7th Legion Service Medals",
+										},
+										{	-- Trecker's Cage
+											["itemID"] = 166346,	-- Trecker's Cage
+											["description"] = "Cost: 100 7th Legion Service Medals",
+										},
+										{	-- Glaive Tosser
+											["itemID"] = 166744,	-- Glaive Tosser
+											["description"] = "Cost: 125 7th Legion Service Medals",
+										},
+										{	-- Cloak of Hardened Steel
+											["itemID"] = 166770,	-- Cloak of Hardened Steel
+											["description"] = "Cost: 75 7th Legion Service Medals",
+										},
+										{	-- Battle Hymnal
+											["itemID"] = 166768,	-- Battle Hymnal
+											["description"] = "Cost: 75 7th Legion Service Medals",
+										},
+										{	-- Bolstering War Horn
+											["itemID"] = 166769,	-- Bolstering War Horn
+											["description"] = "Cost: 75 7th Legion Service Medals",
+										},
+										{	-- Dusk Powder
+											["itemID"] = 166767,	-- Dusk Powder
+											["description"] = "Cost: 75 7th Legion Service Medals",
+										},
+										{	-- Enchanted Warscroll
+											["itemID"] = 166766,	-- Enchanted Warscroll
+											["description"] = "Cost: 75 7th Legion Service Medals",
+										},
+										{	-- Royal Blue Cloak
+											["itemID"] = 166550,	-- Royal Blue Cloak
+											["description"] = "Cost: 125 7th Legion Service Medals",
+										},
+										{	-- War-Torn Royal Blue Cloak
+											["itemID"] = 166548,	-- War-Torn Royal Blue Cloak
+											["description"] = "Cost: 50 7th Legion Service Medals",
+										},
+										{	-- Captain's Signet of Command
+											["itemID"] = 166560,	-- Captain's Signet of Command
+											["description"] = "Cost: 300 7th Legion Service Medals",
+										},
+									},
+								},											
+							},
+						},
 						n(142691, {	-- Tricky Nick
 							["groups"] = {
 								i(163568), -- Lost Platysaur [So Cute!]
