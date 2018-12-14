@@ -26,6 +26,7 @@ _.InGameShop =
 			},
 		})),
 		un(35, i(69846)),	-- Winged Guardian
+		un(35, i(166775)),	-- Vulpine Familiar
 	}),
 	n(-162, {	-- Pets
 		un(35, i(106240)),	-- Alterac Brew-Pup
@@ -51,6 +52,7 @@ _.InGameShop =
 		un(35, i(151234)),	-- Shadow
 		un(35, i(78916)),	-- Soul of the Aspects
 		un(35, i(147900)),	-- Twilight
+		un(35, i(160587)),	-- Whomper
 		un(2, i(49663, {	-- Wind Rider Cub
 			["groups"] = {
 			},

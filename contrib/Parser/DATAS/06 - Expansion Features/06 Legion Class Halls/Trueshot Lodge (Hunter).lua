@@ -307,7 +307,7 @@ _.ExpansionFeatures =
 							["groups"] = {
 								i(142228), -- Trust of a Dire Wolfhawk
 								i(142226), -- Trust of a Fierce Wolfhawk
-								i(147580), -- Tome of the Hybrid Beast
+							--	i(147580), -- Tome of the Hybrid Beast	-- commented out until the spellID gets added
 							},
 							["classes"] = {3},
 							["description"] = "|c808080FAThese mounts are only available to hunters who have completed|r |cFFFFD700Night of the Wilds|r |c808080FAquest from the class mount campaign.\nOnce completed you have to unlock all 52 traits on each spec to unlock it's related mount.|r\n|cFF008000Trust of a Dire Wolfhawk = Survival|r\n|cFF00FFFFTrust of a Fierce Wolfhawk = Marksman|r "
