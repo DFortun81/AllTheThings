@@ -337,7 +337,7 @@ _.Zones =
 								},
 							},
 						},				
-						n(135447, {	--  Ransa Greyfeather <The Honorbound Emissary>
+						n(135447, {	-- Ransa Greyfeather <The Honorbound Emissary>
 							["coords"] = {
 								{ 58.07, 62.65, 1165 },
 							},

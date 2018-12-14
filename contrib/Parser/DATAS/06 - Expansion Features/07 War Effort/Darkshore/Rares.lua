@@ -203,6 +203,27 @@ _.ExpansionFeatures =
 								},
 							},
 						},
+						{	-- Frightened Kodo
+							["npcID"] = 148790,	-- Frightened Kodo
+							["description"] = "This npc roams around.  Once you spot it, you will then need to click it to obtain the mount.",
+							["coords"] = {
+								{ 37.01, 65.01, 62 },
+								{ 38.01, 66.01, 62 },
+								{ 41.01, 54.01, 62 },
+								{ 41.23, 64.99, 62 },
+								{ 41.31, 65.48, 62 },
+								{ 43.81, 67.51, 62 },
+								{ 44.01, 54,01, 62 },
+								{ 44.04, 67.56, 62 },
+								{ 45.01, 51.31, 62 },
+								{ 45.01, 67.01, 62 },
+							},
+							["g"] = {
+								{	-- Frightened Kodo
+									["itemID"] = 166433,	-- Frightened Kodo
+								},
+							},
+						},
 						{	-- Glimmerspine
 							["allianceQuestID"] = 54884,	-- Glimmerspine [A]
 							["hordeQuestID"] = 54885,		-- Glimmerspine [H]
