@@ -146,56 +146,28 @@ _.Zones =
 								i(161524),	-- Torcali's Grips of the Bounty*
 								i(161517),	-- Waistcord of Pa'ku's Flight*
 								i(160530),	-- Dinomancer's Cloak*
-								i(162764, {	-- Design: Laribole Staff of Alacrity [Rank 3]*
-									["spellID"] = 256257,
-								}),
-								i(162761, {	-- Design: Owlseye Loop [Rank 3]*
-									["spellID"] = 256517,
-								}),
-								i(162765, {	-- Design: Scarlet Diamond Staff of Intuition [Rank 3]*
-									["spellID"] = 256260,
-								}),
-								i(162717, {	-- Formula: Enchant Ring - Pact of Haste [Rank 3]*
-									["spellID"] = 255099,
-								}),
-								i(162722, {	-- Formula: Enchant Weapon - Deadly Navigation [Rank 3]*
-									["spellID"] = 268909,
-								}),
-								i(162721, {	-- Formula: Enchant Weapon - Stalwart Navigation [Rank 3]*
-									["spellID"] = 268915,
-								}),
-								i(163317, {	-- Recipe: Battle Potion of Stamina [Rank 3]*
-									["spellID"] = 279167,
-								}),
-								i(162704, {	-- Recipe: Coastal Healing Potion [Rank 3]*
-									["spellID"] = 252384,
-								}),
-								i(162753, {	-- Recipe: Contract: Zandalari Empire [Rank 2]*
-									["spellID"] = 256285,
-								}),
-								i(162696, {	-- Recipe: Flask of Endless Fathoms [Rank 3]*
-									["spellID"] = 252353,
-								}),
-								i(162692, {	-- Recipe: Potion of Replenishment [Rank 3]*
-									["spellID"] = 252340,
-								}),
-								i(162730, {	-- Schematic: AZ3-R1-T3 Gearspun Goggles [Rank 2]*
-									["spellID"] = 272060,
-								}),
-								i(162731, {	-- Schematic: AZ3-R1-T3 Gearspun Goggles [Rank 3]*
-									["spellID"] = 272061,
-								}),
-								i(162743, {	-- Schematic: Deployable Attire Rearranger [Rank 3]*
-									["spellID"] = 256156,
-								}),
-								i(162742, {	-- Schematic: Interdimensional Companion Repository [Rank 3]*
-									["spellID"] = 256084,
-								}),
-								i(162741, {	-- Schematic: Organic Discombobulation Grenade [Rank 3]*
-									["spellID"] = 255409,
-								}),
+								i(162764),	-- Design: Laribole Staff of Alacrity [Rank 3]*
+								i(162761),	-- Design: Owlseye Loop [Rank 3]*
+								i(162765),	-- Design: Scarlet Diamond Staff of Intuition [Rank 3]*
+								i(162717),	-- Formula: Enchant Ring - Pact of Haste [Rank 3]*
+								i(162722),	-- Formula: Enchant Weapon - Deadly Navigation [Rank 3]*
+								i(162721),	-- Formula: Enchant Weapon - Stalwart Navigation [Rank 3]*
+								i(163317),	-- Recipe: Battle Potion of Stamina [Rank 3]*
+								i(162704),	-- Recipe: Coastal Healing Potion [Rank 3]*
+								i(162753),	-- Recipe: Contract: Zandalari Empire [Rank 2]*
+								i(162696),	-- Recipe: Flask of Endless Fathoms [Rank 3]*
+								i(162692),	-- Recipe: Potion of Replenishment [Rank 3]*
+								i(162730),	-- Schematic: AZ3-R1-T3 Gearspun Goggles [Rank 2]*
+								i(162731),	-- Schematic: AZ3-R1-T3 Gearspun Goggles [Rank 3]*
+								i(162743),	-- Schematic: Deployable Attire Rearranger [Rank 3]*
+								i(162742),	-- Schematic: Interdimensional Companion Repository [Rank 3]*
+								i(162741),	-- Schematic: Organic Discombobulation Grenade [Rank 3]*
+								i(166736),	-- Schematic: Unstable Temporal Time Shifter [Rank 2]
 							},
 							["races"] = HORDE_ONLY,
+							["coords"] = {
+								{ 67.29, 71.71, 1164 },
+							},
 						}),
 						n(142552, {	-- Ozgrom Ragefang <Profession Liason> [NOTE: PvP Craftable Recipes]
 							-- Note: Blizzard considers the Zandalar Arena as part of Zuldazar and not Drazar'alor
