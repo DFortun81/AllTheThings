@@ -15,10 +15,29 @@ _.ExpansionFeatures =
 						i(164367),	-- Plundered Blue Captain's Hat
 						i(164368),	-- Plundered Crimson Captain's hat
 						i(164369),	-- Plundered Pirate Admiral's Bicorne
-						i(164286),	-- Plundered Runeecaster's Mantle
-						i(164285),	-- Plundered Shoveltusk-Hide Shoulders
-						i(164287),	-- Plundered Dragonrider Spaulders
-						i(164288),	-- Plundered Gjalerbron Pauldrons
+						-- These seemed to be removed in 8.1
+						--The next four items will be marked as NYI in the event that they are hotfixed or added in the future
+						--and people can report that they are dropping.
+						{	-- Plundered Runecaster's Mantle
+							["itemID"] = 164286,	-- Plundered Runecaster's Mantle
+							["u"] = 1,
+							["description"] = "This item was removed from the game database in 8.1.\nIf you get this as a drop please report to the ATT discord!.",
+						},
+						{	-- Plundered Shoveltusk-Hide Shoulders
+							["itemID"] = 164285,	-- Plundered Shoveltusk-Hide Shoulders
+							["u"] = 1,
+							["description"] = "This item was removed from the game database in 8.1.\nIf you get this as a drop please report to the ATT discord!.",
+						},
+						{	-- Plundered Dragonrider Spaulders
+							["itemID"] = 164287,	-- Plundered Dragonrider Spaulders
+							["u"] = 1,
+							["description"] = "This item was removed from the game database in 8.1.\nIf you get this as a drop please report to the ATT discord!.",
+						},
+						{	-- Plundered Gjalerbron Pauldrons
+							["itemID"] = 164288,	-- Plundered Gjalerbron Pauldrons
+							["u"] = 1,
+							["description"] = "This item was removed from the game database in 8.1.\nIf you get this as a drop please report to the ATT discord!.",
+						},
 						n(-43, {	-- Cloth
 							n(-3315, {	-- Spider Acolyte
 								["groups"] = {
@@ -318,9 +337,13 @@ _.ExpansionFeatures =
 						},
 					}),
 					n(-160, {	-- Mounts
+						i(166468),	-- Bloodgorged Hunter
 						i(163583),	-- Craghorn Chasm-Leaper
+						i(166467),	-- Island Thudnerscale
 						i(163582),	-- Qinsho's Eternal Hound
+						i(166466),	-- Risen Mare
 						i(163586),	-- Squawks
+						i(166470),	-- Stonehide Elderhorn
 						i(163585),	-- Surf Jelly
 						i(163584),	-- Twilight Avenger
 					}),
@@ -368,10 +391,22 @@ _.ExpansionFeatures =
 						--As of Patch 8.1 now returns "Retrieving Information" meaning they were pulled for some reason.
 						--The next three items will be marked as NYI in the event that they are hotfixed or added in the future
 						--and people can report that they are dropping.
-						un(1, i(164372)),	-- Jinyu Light Globe
-						un(1, i(164377)),	-- Regenerating Banana Bunch [Un'gol Ruins] [Not added, maybe they fix them some day]
+						{	-- Jinyu Light Globe
+							["itemID"] = 164372,	-- Jinyu Light Globe
+							["u"] = 1,
+							["description"] = "This item was removed from the game database in 8.1.\nIf you get this as a drop please report to the ATT discord!.",
+						},
+						{	-- Regenerating Banana Bunch
+							["itemID"] = 164377,	-- Regenerating Banana Bunch
+							["u"] = 1,
+							["description"] = "This item was removed from the game database in 8.1.\nIf you get this as a drop please report to the ATT discord!.",
+						},
 						--Note!! The below item doesn't show up in the files at all.  It returns "Retrieving Information".
-						un(1, i(164371)),	-- Yaungol Oil Stove [Not in files]
+						{	-- Yaungol Oil Stove
+							["itemID"] = 164371,	-- Yaungol Oil Stove
+							["u"] = 1,
+							["description"] = "This item was removed from the game database in 8.0.\nIf you get this as a drop please report to the ATT discord!.",
+						},
 					}),
 					n(-319, {	-- Weapons
 						i(163927),	-- Brinebeard's Shanker
@@ -487,6 +522,7 @@ _.ExpansionFeatures =
 			1035,	-- Molten Cray
 			1032,	-- Skittering Hollow
 			1034,	-- Verdant Wilds
+			1337,	-- Jorundall
 		},
 	}),
 };
