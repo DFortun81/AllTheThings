@@ -8894,6 +8894,7 @@ end):Show();
 		end
 		self.data.progress = 0;
 		self.data.total = 0;
+		self.data.back = 1;
 		UpdateGroups(self.data, self.data.g, 1);
 		UpdateWindow(self, true);
 	end);
