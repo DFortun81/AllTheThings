@@ -1141,7 +1141,7 @@ AllTheThings.Locales.enUS = {
 		[-235] = AUCTION_CATEGORY_RECIPES,										-- Recipes
 		[-237] = GetSpellInfo(290253),											-- Warfront: The Battle for Darkshore [Alliance]
 		[-238] = GetSpellInfo(290228),											-- Warfront: The Battle for Darkshore [Horde]
-		
+		[-239] = GetSpellInfo(208246),											-- Assault [8.1 Assaults]
 		
 -- Other
 		[-294] = "Killed First",
