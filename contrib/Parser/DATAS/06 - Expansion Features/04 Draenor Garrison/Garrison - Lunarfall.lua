@@ -4813,7 +4813,7 @@ _.ExpansionFeatures =
 							i(86596),	-- Nat's Fishing Chair
 						}),	
 					}),						
-					n(-108, { 		-- Gem Boutique
+					n(-108, { 	-- Gem Boutique
 						n(77356, { 		-- Costan Highwall 
 							i(115359, {	-- Draenor Jewelcrafting
 								i(120131, {	-- Recipe: Secrets of Draenor Jewelcrafting **Teaches glowing blackrock band, glowing iron band, glowing iron choker, shifting iron band, shifting iron choker, shifting blackrock band, whispering blackrock band, whispering iron band, whispering iron choker, taladite crystal, secrets of draenor jewelcrafting.
@@ -5067,31 +5067,62 @@ _.ExpansionFeatures =
 							i(114871),
 						}),	
 					}),
+					--]]
 					n(-117, { 		-- The Forge
-						n(77359, { 	-- Auria Irondreamer
-							i(115356),		-- Teaches Smoldering Breastplate, Greaves, Helm, Truesteel Ingot, Secrets of Draenor Blacksmithing
-							i(116729),
-							i(116730),
-							i(116731),
-							i(116732),
-							i(116733),
-							i(116734),
-							i(116735),
-							i(116736),
-							i(116737),
-							i(116738),
-							i(116739),
-							i(116740),
-							i(116741),
-							i(116742),
-							i(116743),
-							i(116745),
-							i(118044),
-							i(119329),
-							i(120260),
-							i(120262),
+						n(77359, { -- Auria Irondreamer
+							i(115356, { -- Draenor Blacksmithing
+								{	-- Recipe: Smoldering Breastplate
+									["itemID"] = 116727,	-- Recipe: Smoldering Breastplate
+								},
+								{	-- Recipe: Smoldering Helm
+									["itemID"] = 116726,	-- Recipe: Smoldering Helm
+								},
+								{	-- Recipe: Smoldering Greaves
+									["itemID"] = 116728,	-- Recipe: Smoldering Greaves
+								},
+								recipe(171690),	-- Truesteel Ingot
+								{	-- Recipe: Secrets of Draenor Blacksmithing
+									["itemID"] = 120129,	-- Recipe: Secrets of Draenor Blacksmithing
+								},
+							}),
+							i(118720, { -- Secret of Draenor Blacksmithing
+								i(119329), -- Recipe: Soul of the Forge
+								i(120262), -- Recipe: Steelforged Aegis
+								i(120260), -- Recipe: Steelforged Axe
+								i(116731), -- Recipe: Steelforged Dagger
+								i(116745), -- Recipe: Steelforged Essence
+								i(116729), -- Recipe: Steelforged Greataxe
+								i(116732), -- Recipe: Steelforged Hammer
+								i(116730), -- Recipe: Steelforged Saber
+								i(116733), -- Recipe: Steelforged Shield
+								i(116740), -- Recipe: Truesteel Armguards
+								i(116741), -- Recipe: Truesteel Boots
+								i(116739), -- Recipe: Truesteel Breastplate
+								i(116743), -- Recipe: Truesteel Essence
+								i(116738), -- Recipe: Truesteel Gauntlets
+								i(116737), -- Recipe: Truesteel Greaves
+								i(116734), -- Recipe: Truesteel Grinder
+								i(116736), -- Recipe: Truesteel Helm
+								i(116735), -- Recipe: Truesteel Pauldrons
+								i(118044), -- Recipe: Truesteel Reshaper
+								i(116742), -- Recipe: Truesteel Waistguard
+								desc(i(116764), "This item contains 1-5 gold. DON'T WASTE YOUR SECRETS!\n\nSide note: This gold counts toward gold-looting achievements. (Got My Mind on My Money, etc.)"), -- Small Pouch of Coins
+							}),
+							{	-- Plans: Blackrock Crucibles and Their Uses
+								["itemID"] = 108421,	-- Plans: Blackrock Crucibles and Their Uses
+								["u"] = 1,
+							},
+							{	-- Recipe: Powerful Steelforged Essence
+								["itemID"] = 122550,	-- Recipe: Powerful Steelforged Essence
+								["u"] = 2,
+							},
+							{	-- Recipe: Powerful Truesteel Essence
+								["itemID"] = 122552,	-- Recipe: Powerful Truesteel Essence
+								["u"] = 2,
+							},
 						}),
 					}),
+					--[[
 					n(-118, { 		-- The Tannery
 						n(77383, { 	-- Anders Longstitch
 							i(115358),		-- Teaches Journeying helm, robes, slacks -- Traveling helm, leggings, tunic, burnished leather, secrets of draenor leatherworking

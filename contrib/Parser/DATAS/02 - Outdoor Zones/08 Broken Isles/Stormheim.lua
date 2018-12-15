@@ -1267,14 +1267,15 @@ _.Zones =
 						}),
 						n(-38, { -- Professions
 							n(-181, { -- Blacksmithing
-								q(41636, { -- Work Order: Leystone Breastplate
-									["groups"] = {
-										i(123939, { -- Recipe: Leystone Breastplate
-											recipe(182973), -- Recipe: Leystone Breastplate
-										}),
-									},
+								{	-- Work Order: Leystone Breastplate
+									["questID"] = 41636,	-- Work Order: Leystone Breastplate
 									["qg"] = 106904, -- Valdemar Stormseeker
-								}),
+									["g"] = {
+										{	-- Recipe: Leystone Breastplate [Rank 3]
+											["itemID"] = 123939,	-- Recipe: Leystone Breastplate [Rank 3]
+										},
+									},
+								},
 							}),
 							n(-185, { -- Inscription
 								["groups"] = {
@@ -1700,30 +1701,10 @@ _.Zones =
 					}),
 					n(106904, {	-- Valdemar Stormseeker <Valarjar Emissary>
 						i(140656), -- Rod of the Ascended - Priest Artifact Appearance item
-						i(136698, { -- Recipe: Consecrated Spike
-							["groups"] = {
-								recipe(209498), -- Recipe: Consecrated Spike
-							},
-							["requireSkill"] = 164, -- Blacksmithing
-						}),
-						i(123954, { -- Recipe: Demonsteel Boots (Rank 3)
-							["groups"] = {
-								recipe(182988), -- Recipe: Demonsteel Boots (Rank 3)
-							},
-							["requireSkill"] = 164, -- Blacksmithing
-						}),
-						i(123951, { -- Recipe: Demonsteel Greaves (Rank 3)
-							["groups"] = {
-								recipe(182985), -- Recipe: Demonsteel Greaves (Rank 3)
-							},
-							["requireSkill"] = 164, -- Blacksmithing
-						}),
-						i(123951, { -- Recipe: Demonsteel Helm (Rank 3)
-							["groups"] = {
-								recipe(182986), -- Recipe: Demonsteel Helm (Rank 3)
-							},
-							["requireSkill"] = 164, -- Blacksmithing
-						}),
+						i(136698), -- Recipe: Consecrated Spike
+						i(123954), -- Recipe: Demonsteel Boots [Rank 3]
+						i(123951), -- Recipe: Demonsteel Greaves [Rank 3]
+						i(123952), -- Recipe: Demonsteel Helm [Rank 3]
 						i(129149), -- Death's Door Charm
 						i(139598), -- Legplates of Forgotten Myth
 						i(136920), -- Sunborn Val'kyr

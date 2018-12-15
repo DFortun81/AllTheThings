@@ -153,8 +153,8 @@ _.NeverImplemented =
 				un(1, i(157637)),	-- Swaggering Cutlass
 			}),
 			un(1, i(54655)),	-- Stormshroud Armor (Leather)
-			un(1, i(25975)),	-- Gloves of Preservation (not added version)
-			un(1, i(25976)),	-- Lurking Shadow Spaulders (only beta)
+			un(1, i(25795)),	-- Gloves of Preservation (not added version)
+			un(1, i(25796)),	-- Lurking Shadow Spaulders (only beta)
 			un(1, i(56701)),	-- Jinxed Vest (never made it to live)
 			un(1, i(26029)),	-- Watchman's Bracers
 		}),
@@ -438,6 +438,7 @@ _.NeverImplemented =
 		}),
 	}),
 	n(-494, { -- Misc
+		un(1, i(130186)),	-- Intern Items - BJI
 		un(1, i(146801)),	-- [BUILDING CONTRIBUTION REWARD ITEM [NYI]]
 		un(1, i(146800)),	-- [BUILDING CONTRIBUTION REWARD ITEM [NYI]]
 		un(1, i(146799)),	-- [BUILDING CONTRIBUTION REWARD ITEM [NYI]]

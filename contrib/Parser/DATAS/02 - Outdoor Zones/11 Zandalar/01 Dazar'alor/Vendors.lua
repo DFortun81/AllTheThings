@@ -321,6 +321,72 @@ _.Zones =
 								i(162669),	-- Recipe: Honorable Combatant's Spellblade	[Rank 3]
 								i(163024),	-- Recipe: Honorable Combatant's Staff of Intuition [Rank 2]
 								i(163025),	-- Recipe: Honorable Combatant's Staff of Intuition [Rank 3]
+								{	-- Sinister Combatant's Plate Armguards [Rank 2]
+									["itemID"] = 165288,	-- Sinister Combatant's Plate Armguards [Rank 2]
+								},
+								{	-- Sinister Combatant's Plate Armguards [Rank 3]
+									["itemID"] = 165289,	-- Sinister Combatant's Plate Armguards [Rank 3]
+								},
+								{	-- Sinister Combatant's Plate Boots [Rank 2]
+									["itemID"] = 165278,	-- Sinister Combatant's Plate Boots [Rank 2]
+								},
+								{	-- Sinister Combatant's Plate Boots [Rank 3]
+									["itemID"] = 165279,	-- Sinister Combatant's Plate Boots [Rank 3]
+								},
+								{	-- Sinister Combatant's Plate Gauntlets [Rank 2]
+									["itemID"] = 165280,	-- Sinister Combatant's Plate Gauntlets [Rank 2]
+								},
+								{	-- Sinister Combatant's Plate Gauntlets [Rank 3]
+									["itemID"] = 165281,	-- Sinister Combatant's Plate Gauntlets [Rank 3]
+								},
+								{	-- Sinister Combatant's Plate Greaves [Rank 2]
+									["itemID"] = 165282,	-- Sinister Combatant's Plate Greaves [Rank 2]
+								},
+								{	-- Sinister Combatant's Plate Greaves [Rank 3]
+									["itemID"] = 165283,	-- Sinister Combatant's Plate Greaves [Rank 3]
+								},
+								{	-- Sinister Combatant's Plate Waistguard [Rank 2]
+									["itemID"] = 165286,	-- Sinister Combatant's Plate Waistguard [Rank 2]
+								},
+								{	-- Sinister Combatant's Plate Waistguard [Rank 3]
+									["itemID"] = 165287,	-- Sinister Combatant's Plate Waistguard [Rank 3]
+								},
+								{	-- Sinister Combatant's Shield [Rank 2]
+									["itemID"] = 165284,	-- Sinister Combatant's Shield [Rank 2]
+								},
+								{	-- Sinister Combatant's Shield [Rank 3]
+									["itemID"] = 165285,	-- Sinister Combatant's Shield [Rank 3]
+								},
+								{	-- Recipe: Sinister Combatant's Cutlass [Rank 2]
+									["itemID"] = 165290,	-- Recipe: Sinister Combatant's Cutlass [Rank 2]
+								},
+								{	-- Recipe: Sinister Combatant's Cutlass [Rank 3]
+									["itemID"] = 165291,	-- Recipe: Sinister Combatant's Cutlass [Rank 3]
+								},
+								{	-- Recipe: Sinister Combatant's Deckpounder [Rank 2]
+									["itemID"] = 165292,	-- Recipe: Sinister Combatant's Deckpounder [Rank 2]
+								},
+								{	-- Recipe: Sinister Combatant's Deckpounder [Rank 3]
+									["itemID"] = 165293,	-- Recipe: Sinister Combatant's Deckpounder [Rank 3]
+								},
+								{	-- Recipe: Sinister Combatant's Polearm [Rank 2]
+									["itemID"] = 165298,	-- Recipe: Sinister Combatant's Polearm [Rank 2]
+								},
+								{	-- Recipe: Sinister Combatant's Polearm [Rank 3]
+									["itemID"] = 165299,	-- Recipe: Sinister Combatant's Polearm [Rank 3]
+								},
+								{	-- Recipe: Sinister Combatant's Shanker [Rank 2]
+									["itemID"] = 165296,	-- Recipe: Sinister Combatant's Shanker [Rank 2]
+								},
+								{	-- Recipe: Sinister Combatant's Shanker [Rank 3]
+									["itemID"] = 165297,	-- Recipe: Sinister Combatant's Shanker [Rank 3]
+								},
+								{	-- Recipe: Sinister Combatant's Spellblade [Rank 2]
+									["itemID"] = 165294,	-- Recipe: Sinister Combatant's Spellblade [Rank 2]
+								},
+								{	-- Recipe: Sinister Combatant's Spellblade [Rank 3]
+									["itemID"] = 165295,	-- Recipe: Sinister Combatant's Spellblade [Rank 3]
+								},
 								i(163020),	-- Schematic: Honorable Combatant's Discombobulator [Rank 2]
 								i(163021),	-- Schematic: Honorable Combatant's Discombobulator [Rank 3]
 								i(163022),	-- Schematic: Honorable Combatant's Stormsteel Destroyer [Rank 2]

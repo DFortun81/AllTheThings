@@ -613,41 +613,52 @@ _.Zones =
 					}),
 					n(-181, { -- Blacksmithing
 						["groups"] = bubbleDown({["requireSkill"] = 164}, { -- Blacksmithing
-							q(38525, { -- Part of the Team
+							{	-- Part of the Team
+								["questID"] = 38525,	-- Part of the Team
 								["qg"] = 92264, -- Felsmith Nal'ryssa
 								["sourceQuest"] = 38524, -- Felsmith Nal'ryssa
-							}),
-							q(38526, { -- Smith Under Fire
-								["groups"] = {
-									recipe(182968), -- Plans: Leystone Boots (Rank 2)
-								},
+							},
+							{	-- Smith Under Fire
+								["questID"] = 38526,	-- Smith Under Fire
 								["qg"] = 92264, -- Felsmith Nal'ryssa
 								["sourceQuest"] = 38525, -- Part of the Team
-							}),
-							q(38527, { -- Nal'ryssa's Technique
+								["g"] = {
+									{	-- Plans: Leystone Boots (Rank 2)
+										["itemID"] = 123934, -- Plans: Leystone Boots (Rank 2)
+									},
+								},
+							},
+							{	-- Nal'ryssa's Technique
+								["questID"] = 38527,	-- Nal'ryssa's Technique
 								["qg"] = 92264, -- Felsmith Nal'ryssa
 								["sourceQuest"] = 38526, -- Smith Under Fire
-							}),
-							q(38528, { -- Leystone's Potential
-								["groups"] = {
-									recipe(182962), -- Plans: Leystone Armguards (Rank 2)
-								},
+							},
+							{	-- Leystone's Potential
+								["questID"] = 38528,	-- Leystone's Potential
 								["qg"] = 92264, -- Felsmith Nal'ryssa
 								["sourceQuest"] = 38527, -- Nal'ryssa's Technique
-							}),
-							q(38530, { -- The Firmament Stone
+								["groups"] = {
+									{	-- Plans: Leystone Armguards (Rank 2)
+										["itemID"] = 123928, -- Plans: Leystone Armguards (Rank 2)
+									},
+								},
+							},
+							{	-- The Firmament Stone
+								["questID"] = 38530,	-- The Firmament Stone
 								["qg"] = 92264, -- Felsmith Nal'ryssa
 								["sourceQuest"] = 38528, -- Leystone's Potential
-							}),
+								["isBreadcrumb"] = true,
+							},
 							n(-34, { -- World Quests
-								q(41637, { -- Work Order: Leystone Pauldrons
-									["groups"] = {
-										i(123938, { -- Recipe: Leystone Pauldrons (Rank 3)
-											recipe(182972), -- Recipe: Leystone Pauldrons (Rank 3)
-										}),
-									},
+								{	-- Work Order: Leystone Pauldrons
+									["questID"] = 41637,	-- Work Order: Leystone Pauldrons
 									["qg"] = 97140, -- First Arcanist Thalyssra
-								}),
+									["groups"] = {
+										{	-- Recipe: Leystone Pauldrons (Rank 3)
+											["itemID"] = 123938,	-- Recipe: Leystone Pauldrons (Rank 3)
+										},
+									},
+								},
 							}),
 						}),
 					}),
@@ -992,7 +1003,6 @@ _.Zones =
 					q(45064),	-- Felborne No More
 					q(45555),	-- Felbound Beasts
 					q(41452),	-- Feline Frantic
-					q(38524),	-- Felsmith Nal'ryssa
 					q(41575),	-- Felsoul Teleporter Online!
 					q(41474),	-- Fertilizing the Future
 					q(43783),	-- Field Rations

@@ -20,8 +20,11 @@ _.Craftables =
 			}),
 		}),
 		n(-181, { 	-- Blacksmithing
-			n(-25, { -- Pet Battles
-				i(119328),	-- Soul of the Forge
+		-- Reviewed and updated as of 12.13.2018 BfA 8.0
+			filter(101, {	-- Pet Battles
+				{	-- Soul of the Forge
+					["itemID"] = 119328,	-- Soul of the Forge
+				},
 			}),
 			filter(8, {		-- Shield
 				{	-- Draenic Steel Bulwark
@@ -48,6 +51,8 @@ _.Craftables =
 					["itemID"] = 108245,	-- Peerless Draenic Steel Bulwark
 					["u"] = 1,	-- Never made it out of Beta
 				},
+				WOD_CRAFTED_ITEM(120261), -- Steelforged Aegis
+				WOD_CRAFTED_ITEM(116647), -- Steelforged Shield
 			}),
 			filter(20, {	-- Daggers
 				{	-- Draenic Steel Dagger
@@ -74,6 +79,10 @@ _.Craftables =
 					["itemID"] = 108237,	-- Peerless Draenic Steel Dagger
 					["u"] = 1,	-- Never made it out of Beta
 				},
+				WOD_CRAFTED_ITEM(116644), -- Steelforged Dagger
+			}),
+			filter(21, {	-- 1H Axes
+				WOD_CRAFTED_ITEM(120259), -- Steelforged Axe
 			}),
 			filter(22, {	-- 2H Axes
 				{	-- Draenic Steel War Axe
@@ -100,6 +109,7 @@ _.Craftables =
 					["itemID"] = 108229,	-- Peerless Draenic Steel War Axe
 					["u"] = 1,	-- Never made it out of Beta
 				},
+				WOD_CRAFTED_ITEM(116453), -- Steelforged Greataxe
 			}),
 			filter(23, {	-- 1H Maces
 				{	-- Draenic Steel Mace
@@ -126,6 +136,10 @@ _.Craftables =
 					["itemID"] = 108241,	-- Peerless Draenic Steel Mace
 					["u"] = 1,	-- Never made it out of Beta
 				},
+				WOD_CRAFTED_ITEM(116646), -- Steelforged Hammer
+			}),
+			filter(25, {	-- 1H Swords
+				WOD_CRAFTED_ITEM(116454), -- Steelforged Saber
 			}),
 			n(-320, {		-- Head
 				{	-- Draenic Steel Helm
@@ -168,6 +182,10 @@ _.Craftables =
 					["itemID"] = 108221,	-- Peerless Draenic Steel Helm
 					["u"] = 1,	-- Never made it out of Beta
 				},
+				{	-- Smoldering Helm
+					["itemID"] = 116426, -- Smoldering Helm
+				},
+				WOD_CRAFTED_ITEM(114230),	-- Truesteel Helm
 			}),
 			n(-321, {		-- Shoulders
 				{	-- Draenic Steel Shoulders
@@ -210,6 +228,7 @@ _.Craftables =
 					["itemID"] = 108223,	-- Peerless Draenic Steel Shoulders
 					["u"] = 1,	-- Never made it out of Beta
 				},
+				WOD_CRAFTED_ITEM(114231),	-- Truesteel Pauldrons
 			}),
 			n(-323, {		-- Chest
 				{	-- Draenic Steel Chestplate
@@ -252,6 +271,10 @@ _.Craftables =
 					["itemID"] = 108218,	-- Peerless Draenic Steel Chestplate
 					["u"] = 1,	-- Never made it out of Beta
 				},
+				{	-- Smoldering Breastplate
+					["itemID"] = 116427, -- Smoldering Breastplate
+				},
+				WOD_CRAFTED_ITEM(114232),	-- Truesteel Breastplate
 			}),
 			n(-327, {		-- Hands
 				{	-- Draenic Steel Guantlets
@@ -294,6 +317,7 @@ _.Craftables =
 					["itemID"] = 108220,	-- Peerless Draenic Steel Guantlets
 					["u"] = 1,	-- Never made it out of Beta
 				},
+				WOD_CRAFTED_ITEM(114237),	-- Truesteel Gauntlets
 			}),
 			n(-326, {		-- Wrist
 				{	-- Draenic Steel Wristwraps
@@ -336,6 +360,7 @@ _.Craftables =
 					["itemID"] = 108225,	-- Peerless Draenic Steel Wristwraps
 					["u"] = 1,	-- Never made it out of Beta
 				},
+				WOD_CRAFTED_ITEM(114236),	-- Truesteel Armguards
 			}),
 			n(-328, {		-- Waist
 				{	-- Draenic Steel Girdle
@@ -378,6 +403,7 @@ _.Craftables =
 					["itemID"] = 108224,	-- Peerless Draenic Steel Girdle
 					["u"] = 1,	-- Never made it out of Beta
 				},
+				WOD_CRAFTED_ITEM(114233),	-- Truesteel Waistguard
 			}),
 			n(-329, {		-- Legs
 				{	-- Draenic Steel Legguards
@@ -420,6 +446,10 @@ _.Craftables =
 					["itemID"] = 108222,	-- Peerless Draenic Steel Legguards
 					["u"] = 1,	-- Never made it out of Beta
 				},
+				{	-- Smoldering Greaves
+					["itemID"] = 116425, -- Smoldering Greaves
+				},
+				WOD_CRAFTED_ITEM(114234),	-- Truesteel Greaves
 			}),
 			n(-330, {		-- Feet
 				{	-- Draenic Steel Warboots
@@ -462,30 +492,7 @@ _.Craftables =
 					["itemID"] = 108219,	-- Peerless Draenic Steel Warboots
 					["u"] = 1,	-- Never made it out of Beta
 				},
-			}),
-						
-			
-			n(-319, { -- Weapons
-				WOD_CRAFTED_ITEM(116647), -- Steelforged Shield
-				WOD_CRAFTED_ITEM(120261), -- Steelforged Aegis
-				WOD_CRAFTED_ITEM(116453), -- Steelforged Greataxe
-				WOD_CRAFTED_ITEM(116454), -- Steelforged Saber
-				WOD_CRAFTED_ITEM(116644), -- Steelforged Dagger
-				WOD_CRAFTED_ITEM(116646), -- Steelforged Hammer
-				WOD_CRAFTED_ITEM(120259), -- Steelforged Axe
-			}),
-			n(-46,{ -- Plate
-				WOD_CRAFTED_ITEM(114230),	-- Truesteel Helm
-				WOD_CRAFTED_ITEM(114231),	-- Truesteel Pauldrons
-				WOD_CRAFTED_ITEM(114232),	-- Truesteel Breastplate
-				WOD_CRAFTED_ITEM(114236),	-- Truesteel Armguards
-				WOD_CRAFTED_ITEM(114237),	-- Truesteel Gauntlets
-				WOD_CRAFTED_ITEM(114233),	-- Truesteel Waistguard
-				WOD_CRAFTED_ITEM(114234),	-- Truesteel Greaves
 				WOD_CRAFTED_ITEM(114235),	-- Truesteel Boots
-				i(116426), -- Smoldering Helm
-				i(116427), -- Smoldering Breastplate
-				i(116425), -- Smoldering Greaves
 			}),
 		}),
 		n(-183, { 	-- Engineering

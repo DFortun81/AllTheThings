@@ -1864,16 +1864,17 @@ _.Zones =
 						}),
 						n(-181, { -- Blacksmithing
 							n(-34, { -- World Quests
-								q(41633, { -- Work Order: Leystone Greaves
-									["groups"] = {
-										i(123931) -- Recipe: Leystone Greaves (Rank 3)
-									},
-									["repeatable"] = true,
-									["isDaily"] = true, 	-- Would like to swap it to WQ below
+								{	-- Work Order: Leystone Greaves
+									["questID"] = 41633,	-- Work Order: Leystone Greaves
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 									["lvl"] = 110,			-- WQ is 110+ only
 									["qg"] = 107376, -- Veridis Fallon
-								}),
+									["g"] = {
+										{	-- Recipe: Leystone Greaves (Rank 3)
+											["itemID"]= 123931, -- Recipe: Leystone Greaves (Rank 3)
+										},
+									},
+								},
 							}),
 						}),
 						n(-182, { -- Enchanting

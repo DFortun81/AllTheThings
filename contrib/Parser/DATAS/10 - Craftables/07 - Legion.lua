@@ -127,27 +127,96 @@ _.Craftables =
 			}),
 		}),
 		n(-181, { -- Blacksmithing
-			n(-160, { -- Mounts
-				i(137686), -- Steelbound Harness
+		-- Reviewed and updated as of 12.14.2018 BfA 8.0
+			filter(100, {	-- Mounts
+				{	-- Steelbound Harness
+					["itemID"] = 137686,	-- Steelbound Harness
+				},
 			}),
-			i(146667),	-- Rethu's Incessant Courage
-			i(123913),	-- Demonsteel Helm
-			i(123915),	-- Demonsteel Pauldrons
-			i(123910),	-- Demonsteel Breastplate
-			i(123917),	-- Demonsteel Armguards
-			i(123912),	-- Demonsteel Gauntlets
-			i(123916),	-- Demonsteel Waistguard
-			i(123914),	-- Demonsteel Greaves
-			i(123911),	-- Demonsteel Boots
-			i(151576),	-- Empyrial Breastplate
-			i(123894),	-- Leystone Helm
-			i(123896),	-- Leystone Pauldrons
-			i(123891),	-- Leystone Breastplate
-			i(123898),	-- Leystone Armguards
-			i(123893),	-- Leystone Gauntlets
-			i(123897),	-- Leystone Waistguard
-			i(123895),	-- Leystone Greaves
-			i(123892),	-- Leystone Boots
+			filter(54, {	-- Relics
+				{	-- Consecrated Spike
+					["itemID"] = 136685,	-- Consecrated Spike
+				},
+				{	-- Flamespike
+					["itemID"] = 136686,	-- Flamespike
+				},
+				{	-- Gleaming Iron Spike
+					["itemID"] = 136684,	-- Gleaming Iron Spike
+				},
+				{	-- Terrorspike
+					["itemID"] = 136683,	-- Terrorspike
+				},
+			}),
+			n(-320, {		-- Head
+				{	-- Demonsteel Helm
+					["itemID"] = 123913,	-- Demonsteel Helm
+				},
+				{	-- Leystone Helm
+					["itemID"] = 123894,	-- Leystone Helm
+				},
+			}),
+			n(-321, {		-- Shoulders
+				{	-- Demonsteel Pauldrons
+					["itemID"] = 123915,
+				},
+				{	-- Leystone Pauldrons
+					["itemID"] = 123896,	-- Leystone Pauldrons
+				},
+			}),
+			n(-323, {		-- Chest
+				{	-- Demonsteel Breastplate
+					["itemID"] = 123910,	-- Demonsteel Breastplate
+				},
+				{	-- Empyrial Breastplate
+					["itemID"] = 151576,	-- Empyrial Breastplate
+				},
+				{	-- Leystone Breastplate
+					["itemID"] = 123891,	-- Leystone Breastplate
+				},
+			}),
+			n(-327, {		-- Hands
+				{	-- Demonsteel Gauntlets
+					["itemID"] = 123912,	-- Demonsteel Gauntlets
+				},
+				{	-- Leystone Gauntlets
+					["itemID"] = 123893,	-- Leystone Gauntlets
+				},
+			}),
+			n(-326, {		-- Wrist
+				{	-- Demonsteel Armguards
+					["itemID"] = 123917,	-- Demonsteel Armguards
+				},
+				{	-- Leystone Armguards
+					["itemID"] = 123898,	-- Leystone Armguards
+				},
+			}),
+			n(-328, {		-- Waist
+				{	-- Demonsteel Waistguard
+					["itemID"] = 123916,	-- Demonsteel Waistguard
+				},
+				{	-- Leystone Waistguard
+					["itemID"] = 123897,	-- Leystone Waistguard
+				},
+				{	-- Rethu's Incessant Courage
+					["itemID"] = 146667,	-- Rethu's Incessant Courage
+				},
+			}),
+			n(-329, {		-- Legs
+				{	-- Demonsteel Greaves
+					["itemID"] = 123914,	-- Demonsteel Greaves
+				},
+				{	-- Leystone Greaves
+					["itemID"] = 123895,	-- Leystone Greaves
+				},
+			}),
+			n(-330, {		-- Feet
+				{	-- Demonsteel Boots
+					["itemID"] = 123911,	-- Demonsteel Boots
+				},
+				{	-- Leystone Boots
+					["itemID"] = 123892,	-- Leystone Boots
+				},
+			}),
 		}),
 		n(-183, { -- Engineering
 			n(-494, { -- Miscellaneous

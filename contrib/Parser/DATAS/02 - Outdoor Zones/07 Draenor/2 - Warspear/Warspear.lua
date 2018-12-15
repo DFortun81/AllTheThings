@@ -1097,6 +1097,49 @@ _.Zones =
 							i(138882),	-- Formula: Tome of Illusions: Draenor
 						}),
 					}),
+					n(87542, {	-- Joshua Alvarez <Alchemy Recipes>
+						i(109558, {		-- A Treatise on the Alchemy of Draenor
+							["collectible"] = false,
+							["spellID"] = 0,
+							["description"] = "This is a quest reward for completing the Alchemy Intro Warlords Quest that can drop from any Draenor mob. Also sold at the Alchemy Lab for 100 gold.",
+							["groups"] = {
+								recipe(156587),	-- Alchemical Catalyst
+								recipe(156585),	-- Crescent Oil
+								recipe(175865),	-- Draenic Invisibility Potion
+								recipe(175867),	-- Draenic Living Action Potion
+								recipe(156582),	-- Draenic Mana Potion
+								recipe(175853),	-- Draenic Swiftness Potion
+								recipe(175866),	-- Draenic Water Breathing Elixir
+								recipe(175869),	-- Draenic Water Walking Elixir
+								recipe(175868),	-- Pure Rage Potion
+							recipe(175880),	-- Secrets of Draenor Alchemy
+							},
+						}),
+						i(112042),	-- Recipe: Draenic Channeled Mana Potion
+						un(1, i(112043)),	-- Recipe: Draenic Mana Potion
+						i(112041),	-- Recipe: Draenic Armor Potion
+						i(112038),	-- Recipe: Draenic Agility Potion
+						i(112039),	-- Recipe: Draenic Intellect Potion
+						i(112040),	-- Recipe: Draenic Strength Potion
+						un(1, i(120132)),	-- Recipe: Secrets of Draenor Alchemy
+						i(118700, {	-- Secret of Draenor Alchemy
+							i(112023),	-- Recipe: Draenic Philosopher's Stone
+							i(112045),	-- Recipe: Draenic Rejuvenation Potion
+							i(112024),	-- Recipe: Draenic Agility Flask
+							i(112026),	-- Recipe: Draenic Intellect Flask
+							i(112030),	-- Recipe: Draenic Stamina Flask
+							i(112027),	-- Recipe: Draenic Strength Flask
+							i(112031),	-- Recipe: Greater Draenic Agility Flask
+							i(112033),	-- Recipe: Greater Draenic Intellect Flask
+							i(112037),	-- Recipe: Greater Draenic Stamina Flask
+							i(112034),	-- Recipe: Greater Draenic Strength Flask
+							i(112047),	-- Recipe: Transmorphic Tincture
+							i(160662),  -- Recipe: Blackwater Anti-Venom
+							i(160663),  -- Recipe: Healing Tonic
+							i(160661),  -- Recipe: Fire Ammonite Oil
+							desc(i(114028), "Contains between 1 and 5 gold. Don't waste your secrets.\n\nSide note: Counts towards Looted Gold Achievements. (Got My Mind on My Money, etc)"),	-- Small Pouch of Coins
+						}),
+					}),
 					n(87548, {	-- Kaevan Highwit <Jewelcrafting Designs>
 						i(115359, {	-- Draenor Jewelcrafting
 							i(120131, {	-- Recipe: Secrets of Draenor Jewelcrafting **Teaches glowing blackrock band, glowing iron band, glowing iron choker, shifting iron band, shifting iron choker, shifting blackrock band, whispering blackrock band, whispering iron band, whispering iron choker, taladite crystal, secrets of draenor jewelcrafting.
@@ -1454,48 +1497,57 @@ _.Zones =
 							i(128327),	-- Small Pouch of Coins
 						}),
 					}),
-					n(87542, {	-- Joshua Alvarez <Alchemy Recipes>
-						i(109558, {		-- A Treatise on the Alchemy of Draenor
-							["collectible"] = false,
-							["spellID"] = 0,
-							["description"] = "This is a quest reward for completing the Alchemy Intro Warlords Quest that can drop from any Draenor mob. Also sold at the Alchemy Lab for 100 gold.",
-							["groups"] = {
-								recipe(156587),	-- Alchemical Catalyst
-								recipe(156585),	-- Crescent Oil
-								recipe(175865),	-- Draenic Invisibility Potion
-								recipe(175867),	-- Draenic Living Action Potion
-								recipe(156582),	-- Draenic Mana Potion
-								recipe(175853),	-- Draenic Swiftness Potion
-								recipe(175866),	-- Draenic Water Breathing Elixir
-								recipe(175869),	-- Draenic Water Walking Elixir
-								recipe(175868),	-- Pure Rage Potion
-							recipe(175880),	-- Secrets of Draenor Alchemy
+					n(87550, { 	-- Nonn Threeratchet <Blacksmithing Plans>
+						i(115356, { -- Draenor Blacksmithing
+							{	-- Recipe: Smoldering Breastplate
+								["itemID"] = 116727,	-- Recipe: Smoldering Breastplate
+							},
+							{	-- Recipe: Smoldering Helm
+								["itemID"] = 116726,	-- Recipe: Smoldering Helm
+							},
+							{	-- Recipe: Smoldering Greaves
+								["itemID"] = 116728,	-- Recipe: Smoldering Greaves
+							},
+							recipe(171690),	-- Truesteel Ingot
+							{	-- Recipe: Secrets of Draenor Blacksmithing
+								["itemID"] = 120129,	-- Recipe: Secrets of Draenor Blacksmithing
 							},
 						}),
-						i(112042),	-- Recipe: Draenic Channeled Mana Potion
-						un(1, i(112043)),	-- Recipe: Draenic Mana Potion
-						i(112041),	-- Recipe: Draenic Armor Potion
-						i(112038),	-- Recipe: Draenic Agility Potion
-						i(112039),	-- Recipe: Draenic Intellect Potion
-						i(112040),	-- Recipe: Draenic Strength Potion
-						un(1, i(120132)),	-- Recipe: Secrets of Draenor Alchemy
-						i(118700, {	-- Secret of Draenor Alchemy
-							i(112023),	-- Recipe: Draenic Philosopher's Stone
-							i(112045),	-- Recipe: Draenic Rejuvenation Potion
-							i(112024),	-- Recipe: Draenic Agility Flask
-							i(112026),	-- Recipe: Draenic Intellect Flask
-							i(112030),	-- Recipe: Draenic Stamina Flask
-							i(112027),	-- Recipe: Draenic Strength Flask
-							i(112031),	-- Recipe: Greater Draenic Agility Flask
-							i(112033),	-- Recipe: Greater Draenic Intellect Flask
-							i(112037),	-- Recipe: Greater Draenic Stamina Flask
-							i(112034),	-- Recipe: Greater Draenic Strength Flask
-							i(112047),	-- Recipe: Transmorphic Tincture
-							i(160662),  -- Recipe: Blackwater Anti-Venom
-							i(160663),  -- Recipe: Healing Tonic
-							i(160661),  -- Recipe: Fire Ammonite Oil
-							desc(i(114028), "Contains between 1 and 5 gold. Don't waste your secrets.\n\nSide note: Counts towards Looted Gold Achievements. (Got My Mind on My Money, etc)"),	-- Small Pouch of Coins
+						i(118720, { -- Secret of Draenor Blacksmithing
+							i(119329), -- Recipe: Soul of the Forge
+							i(120262), -- Recipe: Steelforged Aegis
+							i(120260), -- Recipe: Steelforged Axe
+							i(116731), -- Recipe: Steelforged Dagger
+							i(116745), -- Recipe: Steelforged Essence
+							i(116729), -- Recipe: Steelforged Greataxe
+							i(116732), -- Recipe: Steelforged Hammer
+							i(116730), -- Recipe: Steelforged Saber
+							i(116733), -- Recipe: Steelforged Shield
+							i(116740), -- Recipe: Truesteel Armguards
+							i(116741), -- Recipe: Truesteel Boots
+							i(116739), -- Recipe: Truesteel Breastplate
+							i(116743), -- Recipe: Truesteel Essence
+							i(116738), -- Recipe: Truesteel Gauntlets
+							i(116737), -- Recipe: Truesteel Greaves
+							i(116734), -- Recipe: Truesteel Grinder
+							i(116736), -- Recipe: Truesteel Helm
+							i(116735), -- Recipe: Truesteel Pauldrons
+							i(118044), -- Recipe: Truesteel Reshaper
+							i(116742), -- Recipe: Truesteel Waistguard
+							desc(i(116764), "This item contains 1-5 gold. DON'T WASTE YOUR SECRETS!\n\nSide note: This gold counts toward gold-looting achievements. (Got My Mind on My Money, etc.)"), -- Small Pouch of Coins
 						}),
+						{	-- Plans: Blackrock Crucibles and Their Uses
+							["itemID"] = 108421,	-- Plans: Blackrock Crucibles and Their Uses
+							["u"] = 1,
+						},
+						{	-- Recipe: Powerful Steelforged Essence
+							["itemID"] = 122550,	-- Recipe: Powerful Steelforged Essence
+							["u"] = 2,
+						},
+						{	-- Recipe: Powerful Truesteel Essence
+							["itemID"] = 122552,	-- Recipe: Powerful Truesteel Essence
+							["u"] = 2,
+						},
 					}),
 					n(86037, {	-- Ravenspeaker Skeega <Arakkoa Outcasts Quartermaster>
 						["groups"] = {

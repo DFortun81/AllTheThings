@@ -10,6 +10,19 @@ _.WorldDrops =
 					i(142119),	-- Recipe: Potion of Prolonged Power (Rank 1)
 					i(127925),	-- Recipe: Infernal Alchemist Stone (Rank 2)
 				}),
+				n(-181, {	-- Blacksmithing
+					{	-- Recipe: Demonsteel Stirrups
+						["itemID"] = 136709,	-- Recipe: Demonsteel Stirrups
+						["crs"] = {
+							104815,	-- Jojo the Palestrider
+							109819,	-- Wild Dreamrunner
+							112636,	-- Sinister Leyrunner
+							112637,	-- Devious Sunrunner
+							109349,	-- Veil Shadowrunner
+							110350,	-- Tormented Shadowrunner
+						},
+					},
+				}),
 				n(-190, {	-- Tailoring
 					i(142077),	-- Pattern: Imbued Silkweave Bag (Rank 2)
 					i(138006),	-- Pattern: Imbued Silkweave Cover (Rank 2)

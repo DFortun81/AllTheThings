@@ -712,7 +712,9 @@ _.Zones =
 					}),
 					q(48055, { -- Empyrial Strength
 						["groups"] = {
-							i(151576), -- Empyrial Breastplate
+							{	-- Plans: Empyrial Breastplate [Rank 1]
+								["itemID"] = 151711, -- Plans: Empyrial Breastplate [Rank 1]
+							},
 						},
 						["qg"] = 125341, -- Khamir
 						["requireSkill"] = 164, -- Blacksmithing

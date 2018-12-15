@@ -641,12 +641,7 @@ _.Instances =
 								i(152815), -- Antoran Glooomhound 
 							}),
 							cr(123371, e(1992, { -- Garothi Worldbreaker
-								i(151713, { -- Recipe: Empyrial Breastplate (Rank 3)
-									["groups"] = {
-										recipe(247714), -- Recipe: Empyrial Breastplate (Rank 3)
-									},
-									["requireSkill"] = 164, -- Blacksmithing
-								}),
+								i(151713), -- Recipe: Empyrial Breastplate (Rank 3)
 								i(151943), -- Crown of Relentless Annihilation
 								i(151988), -- Shoulderpads of the Demonic Blitz
 								i(151937), -- Cloak of  the Burning Vanguard
@@ -1043,12 +1038,7 @@ _.Instances =
 								i(152815), -- Antoran Glooomhound 
 							}),
 							cr(123371, e(1992, { -- Garothi Worldbreaker
-								i(151713, { -- Recipe: Empyrial Breastplate (Rank 3)
-									["groups"] = {
-										recipe(247714), -- Recipe: Empyrial Breastplate (Rank 3)
-									},
-									["requireSkill"] = 164, -- Blacksmithing
-								}),
+								i(151713), -- Recipe: Empyrial Breastplate (Rank 3)
 								i(151943), -- Crown of Relentless Annihilation
 								i(151988), -- Shoulderpads of the Demonic Blitz
 								i(151937), -- Cloak of  the Burning Vanguard

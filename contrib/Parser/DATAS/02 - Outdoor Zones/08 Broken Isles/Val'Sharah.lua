@@ -644,32 +644,39 @@ _.Zones =
 					}),
 					n(-181, {	-- Blacksmithing
 						["groups"] = bubbleDown({["requireSkill"] = 164}, { -- Blacksmithing
-							q(39680, { -- Between the Hammer...
-								["groups"] = {
-									recipe(182963), -- Plans: Leystone Waistguard (Rank 2)
-								},
+							{	-- Between the Hammer...
+								["questID"] = 39680,	-- Between the Hammer...
 								["qg"] = 96763, -- Saris Swifthammer
 								["sourceQuest"] = 39702, -- Legend of Black Rook Hold
-							}),
-							q(39726, { -- ...And the Anvil
-								["qg"] = 96763, -- Saris Swifthammer
-								["sourceQuest"] = 39702, -- Legend of Black Rook Hold
-							}),
-							q(39729, { -- The Knowledge of Black Rook
-								["qg"] = 96763, -- Saris Swifthammer
-								["requireSkill"] = 164,
-								["sourceQuests"] = { 39680, 39726 }, -- Between the Hammer..., ...And the Anvil
-							}),
-							n(-34, { -- World Quests
-								q(41634, { -- Work Order: Leystone Armguards
-									["groups"] = {
-										i(123936), -- Recipe: Leystone Armguards (Rank 3)
+								["g"] = {
+									{	-- Plans: Leystone Waistguard (Rank 2)
+										["itemID"] = 123929, -- Plans: Leystone Waistguard (Rank 2)
 									},
+								},
+							},
+							{	-- ...And the Anvil
+								["questID"] = 39726,	-- ...And the Anvil
+								["qg"] = 96763, -- Saris Swifthammer
+								["sourceQuest"] = 39702, -- Legend of Black Rook Hold
+							},
+							{	-- The Knowledge of Black Rook
+								["questID"] = 39729,	-- The Knowledge of Black Rook
+								["qg"] = 96763, -- Saris Swifthammer
+								["sourceQuests"] = { 39680, 39726 }, -- Between the Hammer..., ...And the Anvil
+								["isBreadcrumb"] = true,
+							},
+							n(-34, { -- World Quests
+								{	-- Work Order: Leystone Armguards
+									["questID"] = 41634,	-- Work Order: Leystone Armguards
 									["qg"] = 106901, -- Sylvia Hartshorn
 									["lvl"] = 110,
 									--["isWQ"] = true, -- maybe, someday?
-									["repeatable"] = true,
-								}),
+									["g"] = {
+										{	-- Recipe: Leystone Armguards (Rank 3)
+											["itemID"] = 123936, -- Recipe: Leystone Armguards (Rank 3)
+										},
+									},
+								},
 							}),
 						}),
 					}),

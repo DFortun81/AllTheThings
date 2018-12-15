@@ -983,135 +983,162 @@ _.Zones =
 						n(-38, { -- Professions
 							n(-181, { -- Blacksmithing
 								["groups"] = bubbleDown({["requireSkill"] = 164}, { -- Blacksmithing
-									q(38514, { -- You Are Not Worthy
-										["groups"] = {},
+									{	-- You Are Not Worthy
+										["questID"] = 38514,	-- You Are Not Worthy
 										["qg"] = 92242, -- Barm Stonebreaker
 										["sourceQuest"] = 38513, -- The Highmountain Smiths
-									}),
-									q(39699, { -- Ironhorn Leysmithing
-										["groups"] = {
-											recipe(182967), -- Plans: Leystone Gauntlets (Rank 2)
-										},
+									},
+									{	-- Ironhorn Leysmithing
+										["questID"] = 39699,	-- Ironhorn Leysmithing
 										["qg"] = 92242, -- Barm Stonebreaker
 										["sourceQuest"] = 38514, -- You Are Not Worthy
-									}),
-									q(38519, { -- Grayheft
-										["groups"] = {
-											recipe(182965), -- Plans: Leystone Greaves (Rank 2)
+										["g"] = {
+											{	-- Plans: Leystone Gauntlets (Rank 2)
+												["itemID"] = 123933, -- Plans: Leystone Gauntlets (Rank 2)
+											},
 										},
+									},
+									{	-- Grayheft
+										["questID"] = 38519,	-- Grayheft
 										["qg"] = 92245, -- Thala Steeltotem
 										["sourceQuest"] = 39699, -- Ironhorn Leysmithing
-									}),
-									q(38518, { -- From One Master to Another
-										["groups"] = {},
+										["g"] = {
+											{ -- Plans: Leystone Greaves (Rank 2)
+												["itemID"] = 137680, -- Plans: Leystone Greaves (Rank 2)
+											},
+										},
+									},
+									{	-- From One Master to Another
+										["questID"] = 38518,	-- From One Master to Another
 										["qg"] = 92242, -- Barm Stonebreaker
 										["sourceQuest"] = 38519, -- Grayheft
-									}),
-									q(38531, { -- Leystone Mastery
-										["groups"] = {
-											recipe(182966), -- Plans: Leystone Helm (Rank 2)
-											recipe(182964), -- Plans: Leystone Pauldrons (Rank 2)
+										["isBreadcrumb"] = true,
+									},
+									{	-- Leystone Mastery
+										["questID"] = 38531,	-- Leystone Mastery
+										["qg"] = 92242, -- Barm Stonebreaker
+										["sourceQuest"] = 38530, -- The Firmament Stone
+										["g"] = {
+											{	-- Plans: Leystone Helm (Rank 2)
+												["itemID"] = 123932, -- Plans: Leystone Helm (Rank 2)
+											},
+											{	-- Plans: Leystone Pauldrons (Rank 2)
+												["itemID"] = 123930, -- Plans: Leystone Pauldrons (Rank 2)
+											},
 										},
+									},
+									{	-- Maw of Souls: Hammered By The Storm
+										["questID"] = 38532,	-- Maw of Souls: Hammered By The Storm
 										["qg"] = 92242, -- Barm Stonebreaker
 										["sourceQuest"] = 38530, -- The Firmament Stone
-									}),
-									q(38532, { -- Maw of Souls: Hammered By The Storm
-										["groups"] = {},
-										["qg"] = 92242, -- Barm Stonebreaker
-										["sourceQuest"] = 38530, -- The Firmament Stone
-									}),
-									q(38559, { -- Worthy of the Stone
-										["groups"] = {},
+									},
+									{	-- Worthy of the Stone
+										["questID"] = 38559,	-- Worthy of the Stone
 										["qg"] = 92242, -- Barm Stonebreaker
 										["sourceQuests"] = { 38531, 38532 }, -- Leystone Mastery, Maw of Souls: Hammered By The Storm
-									}),
-									q(38833, { -- The Art of Demonsteel
-										["groups"] = {
-											recipe(184442), -- Plans: Demonsteel Bar
-										},
+									},
+									{	-- The Art of Demonsteel
+										["questID"] = 38833, -- The Art of Demonsteel
 										["qg"] = 92243, -- Muirn Ironhorn
 										["sourceQuest"] = 38559, -- Worthy of the Stone
-									}),
-									q(38533, { -- Tribal Knowledge
-										["groups"] = {
-											recipe(182944), -- Plans: Demonsteel Armguards (Rank 1)
+										["g"] = {
+											{	-- Plans: Demonsteel Bar
+												["itemID"] = 124462, -- Plans: Demonsteel Bar
+											},
 										},
+									},
+									{	-- Tribal Knowledge
+										["questID"] = 38533,	-- Tribal Knowledge
 										["qg"] = 92243, -- Muirn Ironhorn
 										["sourceQuest"] = 38833, -- The Art of Demonsteel
-									}),
-									recipe(182944, { -- Plans: Demonsteel Armguards (Rank 1)
-										q(38534, { -- Demonsteel Armguards
-											["groups"] = {
-												i(123940), -- Recipe: Demonsteel Armguards (Rank 2)
+										["g"] = {
+											{	-- Plans: Demonsteel Armguards (Rank 1)
+												["itemID"] = 123920, -- Plans: Demonsteel Armguards (Rank 1)
 											},
-											["qg"] = 92243, -- Muirn Ironhorn
-										}),
-									}),
-									recipe(182950, { -- Recipe: Demonsteel Boots (Rank 1)
-										i(123946, { -- Recipe: Demonsteel Boots (Rank 2)
-											["groups"] = {
-												recipe(182980), -- Recipe: Demonsteel Boots (Rank 2) 
+										},
+									},
+									{	-- Demonsteel Armguards
+										["questID"] = 38534,	-- Demonsteel Armguards
+										["qg"] = 92243,	-- Muirn Ironhorn <Blacksmithing Trainer>
+										["g"] = {
+											{	-- Recipe: Demonsteel Armguards [Rank 2]
+												["itemID"] = 123940,	-- Recipe: Demonsteel Armguards [Rank 2]
 											},
-											["description"] = "Speak with Muirn once you craft the item to receive this rank 2 recipe.",
-										}),
-									}),
-									recipe(182951, { -- Recipe: Demonsteel Breastplate (Rank 1)
-										i(123947, { -- Recipe: Demonsteel Breastplate (Rank 2)
-											["groups"] = {
-												recipe(182981), -- Recipe: Demonsteel Breastplate (Rank 2) 
+										},
+									},
+									{	-- Demonsteel Boots
+										["questID"] = 38538,	-- Demonsteel Boots
+										["qg"] = 92243,	-- Muirn Ironhorn <Blacksmithing Trainer>
+										["g"] = {
+											{	-- Recipe: Demonsteel Boots [Rank 2]
+												["itemID"] = 123946,	-- Recipe: Demonsteel Boots [Rank 2]
 											},
-											["description"] = "Speak with Muirn once you craft the item to receive this rank 2 recipe.",
-										}),
-									}),
-									recipe(182949, { -- Recipe: Demonsteel Gauntlets (Rank 1)
-										i(123945, { -- Recipe: Demonsteel Gauntlets (Rank 2)
-											["groups"] = {
-												recipe(182979), -- Recipe: Demonsteel Gauntlets (Rank 2) 
+										},
+									},
+									{	-- Demonsteel Breastplate
+										["questID"] = 38542,	-- Demonsteel Breastplate
+										["qg"] = 92243,	-- Muirn Ironhorn <Blacksmithing Trainer>
+										["g"] = {
+											{	-- Recipe: Demonsteel Breastplate [Rank 2]
+												["itemID"] = 123947,	-- Recipe: Demonsteel Breastplate [Rank 2]
 											},
-											["description"] = "Speak with Muirn once you craft the item to receive this rank 2 recipe.",
-										}),
-									}),
-									recipe(182947, { -- Recipe: Demonsteel Greaves (Rank 1)
-										i(123943, { -- Recipe: Demonsteel Greaves (Rank 2)
-											["groups"] = {
-												recipe(182977), -- Recipe: Demonsteel Greaves (Rank 2) 
+										},
+									},
+									{	-- Demonsteel Gauntlets
+										["questID"] = 38539,	-- Demonsteel Gauntlets
+										["qg"] = 92243,	-- Muirn Ironhorn <Blacksmithing Trainer>
+										["g"] = {
+											{	-- Recipe: Demonsteel Gauntlets [Rank 2]
+												["itemID"] = 123945,	-- Recipe: Demonsteel Gauntlets [Rank 2]
 											},
-											["description"] = "Speak with Muirn once you craft the item to receive this rank 2 recipe.",
-										}),
-									}),
-									recipe(182948, { -- Recipe: Demonsteel Helm (Rank 1)
-										i(123944, { -- Recipe: Demonsteel Helm (Rank 2)
-											["groups"] = {
-												recipe(182978), -- Recipe: Demonsteel Helm (Rank 2) 
+										},
+									},
+									{	-- Demonsteel Greaves
+										["questID"] = 38541,	-- Demonsteel Greaves
+										["qg"] = 92243,	-- Muirn Ironhorn <Blacksmithing Trainer>
+										["g"] = {
+											{	-- Recipe: Demonsteel Greaves [Rank 2]
+												["itemID"] = 123943,	-- Recipe: Demonsteel Greaves [Rank 2]
 											},
-											["description"] = "Speak with Muirn once you craft the item to receive this rank 2 recipe.",
-										}),
-									}),
-									recipe(182946, { -- Recipe: Demonsteel Pauldrons (Rank 1)
-										i(123942, { -- Recipe: Demonsteel Pauldrons (Rank 2)
-											["groups"] = {
-												recipe(182976), -- Recipe: Demonsteel Pauldrons (Rank 2) 
+										},
+									},
+									{	-- Demonsteel Helm
+										["questID"] = 38540,	-- Demonsteel Helm
+										["qg"] = 92243,	-- Muirn Ironhorn <Blacksmithing Trainer>
+										["g"] = {
+											{	-- Recipe: Demonsteel Helm [Rank 2]
+												["itemID"] = 123944,	-- Recipe: Demonsteel Helm [Rank 2]
 											},
-											["description"] = "Speak with Muirn once you craft the item to receive this rank 2 recipe.",
-										}),
-									}),
-									recipe(182945, { -- Recipe: Demonsteel Waistguard (Rank 1)
-										i(123941, { -- Recipe: Demonsteel Waistguard (Rank 2)
-											["groups"] = {
-												recipe(182975), -- Recipe: Demonsteel Waistguard (Rank 2) 
+										},
+									},
+									{	-- Demonsteel Pauldrons
+										["questID"] = 38537,	-- Demonsteel Pauldrons
+										["qg"] = 92243,	-- Muirn Ironhorn <Blacksmithing Trainer>
+										["g"] = {
+											{	-- Recipe: Demonsteel Pauldrons [Rank 2]
+												["itemID"] = 123942,	-- Recipe: Demonsteel Pauldrons [Rank 2]
 											},
-											["description"] = "Speak with Muirn once you craft the item to receive this rank 2 recipe.",
-										}),
-									}),
+										},
+									},
+									{	-- Demonsteel Waistguard
+										["questID"] = 38536,	-- Demonsteel Waistguard
+										["qg"] = 92243,	-- Muirn Ironhorn <Blacksmithing Trainer>
+										["g"] = {
+											{	-- Recipe: Demonsteel Waistguard [Rank 2]
+												["itemID"] = 123941,	-- Recipe: Demonsteel Waistguard [Rank 2]
+											},
+										},
+									},
 									n(-34, { -- World Quests
-										q(41635, { -- Work Order: Leystone Boots
-											["groups"] = {
-												i(137605, { -- Recipe: Leystone Boots (Rank 3)
-													recipe(191928), -- Recipe: Leystone Boots (Rank 3)
-												}),
-											},
+										{	-- Work Order: Leystone Boots
+											["questID"] = 41635,	-- Work Order: Leystone Boots
 											["qg"] = 106902, -- Ransa Greyfeather
-										}),
+											["g"] = {
+												{	-- Recipe: Leystone Boots (Rank 3)
+													["itemID"] = 137605, -- Recipe: Leystone Boots (Rank 3)
+												},
+											},
+										},
 									}),
 								}),
 							}),
@@ -1346,15 +1373,7 @@ _.Zones =
 									q(44273),	-- Darkheart Thicket
 									q(42654),	-- Darkheart Thicket: Nightmare Oak
 									q(39274),	-- Defend the Riverlands
-									q(47073),	-- Delivering Lost Knowledge
-									q(38534),	-- Demonsteel Armguards
-									q(38538),	-- Demonsteel Boots
-									q(38542),	-- Demonsteel Breastplate
-									q(38539),	-- Demonsteel Gauntlets
-									q(38541),	-- Demonsteel Greaves
-									q(38540),	-- Demonsteel Helm
-									q(38537),	-- Demonsteel Pauldrons
-									q(38536),	-- Demonsteel Waistguard										
+									q(47073),	-- Delivering Lost Knowledge									
 									q(45173),	-- Desperate Times
 									q(45796),	-- Destroying the Nest
 									q(45560),	-- Destruction: Rumblings Near Feltotem
@@ -1989,38 +2008,18 @@ _.Zones =
 							i(137846),	-- Design: Dawnlight Band (Rank 3)*
 							i(137844),	-- Design: Prophetic Band (Rank 3)*
 							i(137839),	-- Design: Skystone Loop (Rank 3)*
-							i(123948, { -- Recipe: Demonsteel Armguards (Rank 3)*
-								["groups"] = {
-									recipe(182982), -- Recipe: Demonsteel Armguards (Rank 3)
-								},
-								["requireSkill"] = 164, -- Blacksmithing
-							}),
-							i(123955, { -- Recipe: Demonsteel Breastplate (Rank 3)*
-								["groups"] = {
-									recipe(182989), -- Recipe: Demonsteel Breastplate (Rank 3)
-								},
-								["requireSkill"] = 164, -- Blacksmithing
-							}),
-							i(123953, { -- Recipe: Demonsteel Gauntlets (Rank 3)*
-								["groups"] = {
-									recipe(182987), -- Recipe: Demonsteel Gauntlets (Rank 3)
-								},
-								["requireSkill"] = 164, -- Blacksmithing
-							}),
+							i(123948),	-- Recipe: Demonsteel Armguards (Rank 3)*
+							i(123955),	-- Recipe: Demonsteel Breastplate (Rank 3)*
+							i(123953),	-- Recipe: Demonsteel Gauntlets (Rank 3)*
 							i(142408),	-- Recipe: Drums of the Mountain (Rank 2)*
 							i(142409),	-- Recipe: Drums of the Mountain (Rank 3)*
-							i(136697, { -- Recipe: Gleaming Iron Spike*
-								["groups"] = {
-									recipe(209497), -- Recipe: Gleaming Iron Spike
-								},
-								["requireSkill"] = 164, -- Blacksmithing
-							}),
-							i(136919), -- Baby Elderhorn*
-							i(131812), -- Darkshard Fragment*
-							i(131814), -- Whitewater Carp*
-							i(139601), -- Harpy-Hunter's Gloves*
-							i(139597), -- Mountainforged Chain Hauberk*
-							i(140576), -- Tabard of the Hightmountain*
+							i(136697),	-- Recipe: Gleaming Iron Spike*
+							i(136919), 	-- Baby Elderhorn*
+							i(131812), 	-- Darkshard Fragment*
+							i(131814), 	-- Whitewater Carp*
+							i(139601), 	-- Harpy-Hunter's Gloves*
+							i(139597), 	-- Mountainforged Chain Hauberk*
+							i(140576), 	-- Tabard of the Hightmountain*
 							i(140731, {	-- Treasure Map: Highmountain
 								["f"] = 55, -- Consumable
 							}),
