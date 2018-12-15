@@ -832,20 +832,16 @@ local inventorySlotsMap = {	-- Taken directly from CanIMogIt (Thanks!)
     ["INVTYPE_HOLDABLE"] = {17},
     ["INVTYPE_TABARD"] = {19},
 };
-local function BuildSourceText(group, l, flag)
+local function BuildSourceText(group, l)
 	if group.parent then
 		if l < 1 then
 			if group.dr then
-				return BuildSourceText(group.parent, l + 1, flag) .. DESCRIPTION_SEPARATOR .. "|c" .. GetProgressColor(group.dr * 0.01) .. tostring(group.dr) .. "%|r";
+				return BuildSourceText(group.parent, l + 1) .. DESCRIPTION_SEPARATOR .. "|c" .. GetProgressColor(group.dr * 0.01) .. tostring(group.dr) .. "%|r";
 			else
-				return BuildSourceText(group.parent, l + 1, flag);
+				return BuildSourceText(group.parent, l + 1);
 			end
 		else
-			if flag and group.parent.mapID then
-				return group.text or "*";
-			else
-				return BuildSourceText(group.parent, l + 1, flag) .. " -> " .. (group.text or "*");
-			end
+			return BuildSourceText(group.parent, l + 1) .. " -> " .. (group.text or "*");
 		end
 	end
 	return group.text or "*";
@@ -1081,7 +1077,7 @@ local function GetCachedSearchResults(search, method, ...)
 					for i,j in ipairs(group) do
 						if j.parent and not j.parent.hideText and j.parent.parent
 							and (GetDataMember("ShowCompleteSourceLocations") or not app.IsComplete(j)) then
-							local text = BuildSourceText(j, 0, j.qgs);
+							local text = BuildSourceText(j, 0);
 							for source,replacement in pairs(abbrevs) do
 								text = string.gsub(text, source,replacement);
 							end

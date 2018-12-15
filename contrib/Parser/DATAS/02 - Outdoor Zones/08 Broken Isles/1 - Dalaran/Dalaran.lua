@@ -354,14 +354,13 @@ _.Zones =
 						["collectible"] = false,
 					}),
 					n(-176, { 	-- Weekly World Events
-						["description"] = "Only one of the following quests is offered in Dalaran each week.",
 						["qg"] = 111246,	-- Archmage Timear
+						["u"] = 40,
 						["groups"] = {
 							{
 								["questID"] = 44164,	-- A Burning Path Through Time
 								["qg"] = 111246,	-- Quest Giver: Archmage Timear
 								["isWeekly"] = true,	-- This is a Weekly Quest
-								["description"] = "This weekly quest is available during Burning Crusade Timewalking Event Week.",
 								["groups"] = {
 									i(153504),	-- Cache of Antoran Treasures [Normal]
 								},
@@ -370,7 +369,6 @@ _.Zones =
 								["questID"] = 44166,	-- A Frozen Path Through Time
 								["qg"] = 111246,	-- Quest Giver: Archmage Timear
 								["isWeekly"] = true,	-- This is a Weekly Quest
-								["description"] = "This weekly quest is available during Wrath of the Lich King Timewalking Event Week.",
 								["groups"] = {
 									i(153504),	-- Cache of Antoran Treasures [Normal]
 								},
@@ -379,7 +377,6 @@ _.Zones =
 								["questID"] = 44167,	-- A Shattered Path Through Time
 								["qg"] = 111246,	-- Quest Giver: Archmage Timear
 								["isWeekly"] = true,	-- This is a Weekly Quest
-								["description"] = "This weekly quest is available during Cataclysm Timewalking Event Week.",
 								["groups"] = {
 									i(153504),	-- Cache of Antoran Treasures [Normal]
 								},
@@ -388,7 +385,6 @@ _.Zones =
 								["questID"] = 45799,	-- A Shrouded Path Through Time
 								["qg"] = 111246,	-- Quest Giver: Archmage Timear
 								["isWeekly"] = true,	-- This is a Weekly Quest
-								["description"] = "This weekly quest is available during Mists of Pandaria Timewalking Event Week.",
 								["groups"] = {
 									i(153504),	-- Cache of Antoran Treasures [Normal]
 								},
@@ -397,7 +393,6 @@ _.Zones =
 								["questID"] = 45799,	-- A Shrouded Path Through Time
 								["qg"] = 111246,	-- Quest Giver: Archmage Timear
 								["isWeekly"] = true,	-- This is a Weekly Quest
-								["description"] = "This weekly quest is available during Legion Dungeon Event Week.",
 								["groups"] = {
 									i(153504),	-- Cache of Antoran Treasures [Normal]
 								},
@@ -406,7 +401,6 @@ _.Zones =
 								["questID"] = 44171,	-- Emissary of War
 								["qg"] = 111246,	-- Quest Giver: Archmage Timear
 								["isWeekly"] = true,	-- This is a Weekly Quest
-								["description"] = "This weekly quest is available during Legion Dungeon Event Week.",
 								["groups"] = {
 									i(153501),	-- Cache of Antoran Treasures [Heroic]
 								},

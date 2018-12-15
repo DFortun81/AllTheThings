@@ -10,6 +10,7 @@ _.Instances =
 				["groups"] = {
 					n(-1, {	-- Common Boss Drop
 						["crs"] = {
+							111246,	-- Archmage Timear
 							115844,	-- Goroth
 							120996,	-- Demonic Inquisition (Atrigan)
 							116407,	-- Harjatan
@@ -27,49 +28,51 @@ _.Instances =
 						},
 					}),
 					d(17, {		-- LFR
-						
-						["groups"] = {
-							n(-17, { 	-- Quests
-								["crs"] = CLASS_HALL_MISSION_TABLES,
-								["groups"] = {
-									i(147518, {	-- Cache of Fel Treasures [Raid Finder]
-										
-									}),
-									{
-										["itemID"] = 147497,	-- Encrusted Naga Scale [Raid Finder]
-										["questID"] = 47114,	-- Tomb of Sargeras: The Tomb's Mistress [Raid Finder]
-										["repeatable"] = true,
-										["groups"] = {
-											i(147518),	-- Cache of Fel Treasures [Raid Finder]
-										},
-									},
-									{
-										["itemID"] = 147509,	-- Seal of the Deceiver [Raid Finder]
-										["questID"] = 47126,	-- Tomb of Sargeras: The Deceiver [Raid Finder]
-										["repeatable"] = true,
-										["groups"] = {
-											i(147518),	-- Cache of Fel Treasures [Raid Finder]
-										},
-									},
-									{
-										["itemID"] = 147505,	-- Wailing Soul [Raid Finder]
-										["questID"] = 47122,	-- Tomb of Sargeras: The Fallen Avatar [Raid Finder]
-										["repeatable"] = true,
-										["groups"] = {
-											i(147518),	-- Cache of Fel Treasures [Raid Finder]
-										},
-									},
-									{
-										["itemID"] = 147501,	-- Worshipper's Scrawlings [Raid Finder]
-										["questID"] = 47118,	-- Tomb of Sargeras: Free The Tormented [Raid Finder]
-										["repeatable"] = true,
-										["groups"] = {
-											i(147518),	-- Cache of Fel Treasures [Raid Finder]
-										},
+						n(-17, { 	-- Quests
+							["crs"] = CLASS_HALL_MISSION_TABLES,
+							["groups"] = {
+								i(147518, {	-- Cache of Fel Treasures [Raid Finder]
+									
+								}),
+								{
+									["itemID"] = 147497,	-- Encrusted Naga Scale [Raid Finder]
+									["questID"] = 47114,	-- Tomb of Sargeras: The Tomb's Mistress [Raid Finder]
+									["repeatable"] = true,
+									["groups"] = {
+										i(147518),	-- Cache of Fel Treasures [Raid Finder]
 									},
 								},
-							}),
-							n(0, { 		-- Zone Drop
+								{
+									["itemID"] = 147509,	-- Seal of the Deceiver [Raid Finder]
+									["questID"] = 47126,	-- Tomb of Sargeras: The Deceiver [Raid Finder]
+									["repeatable"] = true,
+									["groups"] = {
+										i(147518),	-- Cache of Fel Treasures [Raid Finder]
+									},
+								},
+								{
+									["itemID"] = 147505,	-- Wailing Soul [Raid Finder]
+									["questID"] = 47122,	-- Tomb of Sargeras: The Fallen Avatar [Raid Finder]
+									["repeatable"] = true,
+									["groups"] = {
+										i(147518),	-- Cache of Fel Treasures [Raid Finder]
+									},
+								},
+								{
+									["itemID"] = 147501,	-- Worshipper's Scrawlings [Raid Finder]
+									["questID"] = 47118,	-- Tomb of Sargeras: Free The Tormented [Raid Finder]
+									["repeatable"] = true,
+									["groups"] = {
+										i(147518),	-- Cache of Fel Treasures [Raid Finder]
+									},
+								},
+							},
+						}),
+						n(0, { 		-- Zone Drop
+							["crs"] = {
+								111246,	-- Archmage Timear
+							},
+							["groups"] = {
 								i(147423),
 								i(147422),
 								i(146989),
@@ -82,8 +85,13 @@ _.Instances =
 								i(147429),
 								i(147428),
 								i(147064),
-							}),
-							ach(11787, { 	-- The Gates of Hell	
+							},
+						}),
+						ach(11787, { 	-- The Gates of Hell	
+							["crs"] = {
+								111246,	-- Archmage Timear
+							},
+							["groups"] = {
 								cr(115844, e(1862, {	-- Goroth
 									i(147069),
 									i(146984),
@@ -137,8 +145,13 @@ _.Instances =
 									i(147059),
 									i(143643),
 								})),
-							}),
-							ach(11788, { 	-- Wailing Halls
+							},
+						}),
+						ach(11788, { 	-- Wailing Halls
+							["crs"] = {
+								111246,	-- Archmage Timear
+							},
+							["groups"] = {
 								cr(120996, e(1867, {	-- Demonic Inquisition (Atrigan)
 									i(147124),
 									i(147154),
@@ -189,8 +202,13 @@ _.Instances =
 									i(147047),
 									i(147040)
 								})),
-							}),
-							ach(11789, { 	-- Chamber of the Avatar
+							},
+						}),
+						ach(11789, { 	-- Chamber of the Avatar
+							["crs"] = {
+								111246,	-- Archmage Timear
+							},
+							["groups"] = {
 								cr(118289, e(1897, {	-- Maiden of Vigilance
 									i(151524), -- Hammer of Vigilance
 									i(147050),
@@ -210,11 +228,11 @@ _.Instances =
 									i(147175),
 									i(146993),
 									i(147060)
---[[ Removed Beta
+	--[[ Removed Beta
 				--					i(147058),
 				--					i(147074),
 				--					i(147036),
---]]								
+	--]]								
 								})),
 								cr(120436, e(1873, {	-- Fallen Avatar
 									i(146991),
@@ -237,8 +255,13 @@ _.Instances =
 									i(147052),
 									i(147030)
 								})),
-							}),
-							ach(11790, { 	-- Deceiver's Fall
+							},
+						}),
+						ach(11790, { 	-- Deceiver's Fall
+							["crs"] = {
+								111246,	-- Archmage Timear
+							},
+							["groups"] = {
 								cr(117269, e(1898, {	-- Kil'jaeden
 									i(151539),	-- Technique: Glyph of Ember Shards
 									i(147034),
@@ -248,9 +271,9 @@ _.Instances =
 									i(147347),
 									i(147066),
 									i(147046)
-								}))
-							}),
-						}
+								})),
+							},
+						}),
 					}),
 					d(14, {		-- Normal
 						
