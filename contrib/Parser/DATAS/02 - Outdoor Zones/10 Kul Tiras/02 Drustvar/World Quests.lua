@@ -224,6 +224,7 @@ _.Zones =
 						i(158103),	-- Wintersail Saber
 						i(158088),	-- Wintersail Striker
 						i(158159),	-- Boralus Sailor's Cloak
+						i(166671),	-- Waycrest Guard's Cloak
 						i(158161),	-- Spearfisher's Band
 						n(-43, {	-- Cloth
 							["groups"] = {

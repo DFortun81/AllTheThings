@@ -221,6 +221,7 @@ _.Zones =
 						i(158121),	-- Zocalo Crusher
 						i(158130),	-- Zocalo Pummeler
 						i(158114),	-- Zocalo Stabber
+						i(166672),	-- Bloodhunter's Drape
 						i(158154),	-- Emblem of Zandalar
 						i(158153),	-- Gilded Loa Figurine
 						i(158152),	-- Golden Empire Signet

@@ -210,6 +210,7 @@ _.Zones =
 						i(158121),	-- Zocalo Crusher
 						i(158130),	-- Zocalo Pummeler
 						i(158114),	-- Zocalo Stabber
+						i(166673),	-- Devoted Lookout's Windcloak
 						i(158155),	-- Dinobone Charm
 						i(158151),	-- Zandalari Band
 						n(-43, {	-- Cloth

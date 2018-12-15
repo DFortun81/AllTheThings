@@ -285,6 +285,7 @@ _.Zones =
 						i(158121),	-- Zocalo Crusher
 						i(158130),	-- Zocalo Pummeler
 						i(158114),	-- Zocalo Stabber
+						i(165684),	-- Gurubashi Empire Greatcloak
 						i(158150),	-- Loa-Pledged Drape
 						i(158152),	-- Golden Empire Signet
 						i(158151),	-- Zandalari Band

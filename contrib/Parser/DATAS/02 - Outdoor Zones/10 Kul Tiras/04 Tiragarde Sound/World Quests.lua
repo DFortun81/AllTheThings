@@ -178,6 +178,7 @@ _.Zones =
 						i(158085),	-- Wintersail Dirk
 						i(158103),	-- Wintersail Saber
 						i(158088),	-- Wintersail Striker
+						i(166668),	-- Battalion Veteran's Greatcloak
 						i(158159),	-- Boralus Sailor's Cloak
 						i(158650),	-- Sea-Scourge Greatblade
 						i(158160),	-- Smuggler's Cove Ring
