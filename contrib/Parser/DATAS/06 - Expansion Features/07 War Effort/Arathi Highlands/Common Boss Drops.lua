@@ -25,11 +25,38 @@ _.ExpansionFeatures =
 						i(163888),	-- 7th Legionnaire's Wand
 						i(163893),	-- 7th Legionnaire's Warglaive
 						i(163883),	-- 7th Legionnaire's Warhammer
-						i(163355),	-- 7th Legionnaire's Bloody Drape
-						i(163355),	-- 7th Legionnaire's Bloody Drape
-						i(163351),	-- 7th Legionnaire's Chain Drape
-						i(163347),	-- 7th Legionnaire's Long Cloak
-						i(163246),	-- 7th Legionnaire's Silk Cloak
+						{	-- 7th Legionnaire's Silk Cloak
+							["itemID"] = 163246,	-- 7th Legionnaire's Silk Cloak
+							["classes"] = {
+								5,	-- Priest
+								8,	-- Mage
+								9,	-- Warlock
+							},
+						},
+						{	-- 7th Legionnaire's Long Cloak
+							["itemID"] = 163347,	-- 7th Legionnaire's Long Cloak
+							["classes"] = {
+								11,	-- Druid
+								4,	-- Rogue
+								10,	-- Monk
+								12,	-- Demon Hunter
+							},
+						},
+						{	-- 7th Legionnaire's Chain Drape
+							["itemID"] = 163351,	-- 7th Legionnaire's Chain Drape
+							["classes"] = {
+								3,	-- Hunter
+								7,	-- Shaman
+							},
+						},
+						{	-- 7th Legionnaire's Bloody Drape
+							["itemID"] = 163355,	-- 7th Legionnaire's Bloody Drape
+							["classes"] = {
+								2,	-- Paladin
+								1,	-- Warrior
+								6,	-- Death Knight
+							},
+						},
 						i(163337),	-- 7th Legionnaire's Amice
 						i(163248),	-- 7th Legionnaire's Robes
 						i(163275),	-- 7th Legionnaire's Cuffs
@@ -80,10 +107,38 @@ _.ExpansionFeatures =
 						i(163873),	-- Honorbound Wand
 						i(163872),	-- Honorbound War Staff
 						i(163877),	-- Honorbound Warglaive
-						i(163357),	-- Honorbound Artificer's Cloak
-						i(163368),	-- Honorbound Centurion's Long Cloak
-						i(163360),	-- Honorbound Outrider's Drape
-						i(163366),	-- Honorbound Vanguard's Cloak
+						{	-- Honorbound Artificer's Cloak
+							["itemID"] = 163357,	-- Honorbound Artificer's Cloak
+							["classes"] = {
+								5,	-- Priest
+								8,	-- Mage
+								9,	-- Warlock
+							},
+						},
+						{	-- Honorbound Outrider's Drape
+							["itemID"] = 163360,	-- Honorbound Outrider's Drape
+							["classes"] = {
+								11,	-- Druid
+								4,	-- Rogue
+								10,	-- Monk
+								12,	-- Demon Hunter
+							},
+						},
+						{	-- Honorbound Vanguard's Cloak
+							["itemID"] = 163366,	-- Honorbound Vanguard's Cloak
+							["classes"] = {
+								3,	-- Hunter
+								7,	-- Shaman
+							},
+						},
+						{	-- Honorbound Centurion's Long Cloak
+							["itemID"] = 163368,	-- Honorbound Centurion's Long Cloak
+							["classes"] = {
+								2,	-- Paladin
+								1,	-- Warrior
+								6,	-- Death Knight
+							},
+						},
 						i(163426),	-- Honorbound Artificer's Guise
 						i(163424),	-- Honorbound Artificer's Amice
 						i(163280),	-- Honorbound Artificer's Robes
