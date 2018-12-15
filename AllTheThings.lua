@@ -78,8 +78,6 @@ local function StartCoroutine(name, method)
 			-- Lock out during PVP
 			local inInstance, instanceType = IsInInstance();
 			if inInstance and (instanceType == "pvp" or instanceType == "arena") then
-				--print("PVPing, skipping " .. name);
-				app:GetWindow("CurrentInstance"):Hide();
 				return true;
 			end
 		
@@ -843,7 +841,7 @@ local function BuildSourceText(group, l, flag)
 				return BuildSourceText(group.parent, l + 1, flag);
 			end
 		else
-			if flag and group.parent.mapID and group.parent.mapID == GetTempDataMember("MapID") then
+			if flag and group.parent.mapID then
 				return group.text or "*";
 			else
 				return BuildSourceText(group.parent, l + 1, flag) .. " -> " .. (group.text or "*");
@@ -2136,282 +2134,6 @@ end
 local function OpenMainList()
 	app:OpenWindow("Prime");
 end
-local function OpenMiniList(field, id, label)
-	-- If there is at not at least one window visible after this, hide the app window.
-	local popout = app:GetWindow("CurrentInstance");
-	local results = SearchForField(field, id);
-	if results then
-		-- Simplify the returned groups
-		if #results < 2 then
-			-- Only one object matched.
-			results = setmetatable({ back = 1 }, { __index = results[1] });
-			app.MiniListHeader = nil;
-		else
-			-- A couple of objects matched, let's make a header.
-			local header = { g = {}, back = 1, expanded = true, visible = true, text = app.DisplayName, description = "Auto Mini List for " .. (label or field) .. " #" .. id, total = 0, progress = 0 };
-			app.MiniListHeader = header;
-			table.wipe(app.HolidayHeader.g);
-			app.HolidayHeader.progress = 0;
-			app.HolidayHeader.total = 0;
-			for i, group in ipairs(results) do
-				header.progress = header.progress + (group.progress or 0);
-				header.total = header.total + (group.total or 0);
-				if group.description and group.mapID then header.description = group.description; end
-				if group.isRaid then header.isRaid = group.isRaid; end
-				
-				-- If this is relative to a holiday, let's do something special
-				if GetRelativeField(group, "npcID", -3) then
-					local clone = {};
-					for key,value in pairs(group) do
-						clone[key] = value;
-					end
-					clone["maps"] = nil;
-					setmetatable(clone, getmetatable(group));
-					group = clone;
-					if group.achievementID then
-						if group.criteriaID then
-							if group.parent.achievementID then
-								group = app.CreateAchievement(group.parent.achievementID, 
-									{ g = { group }, total = group.total, progress = group.progress, 
-										u = group.parent.u, races = group.parent.races, c = group.parent.c, nmc = group.parent.nmc, nmr = group.parent.nmr });
-							else
-								group = app.CreateAchievement(group.achievementID,
-									{ g = { group }, total = group.total, progress = group.progress,
-										u = group.u, races = group.races, c = group.c, nmc = group.nmc, nmr = group.nmr });
-							end
-						end
-					elseif group.criteriaID and group.parent.achievementID then
-						group = app.CreateAchievement(group.parent.achievementID, { g = { group }, total = group.total, progress = group.progress, 
-							u = group.parent.u, races = group.parent.races, c = group.parent.c, nmc = group.parent.nmc, nmr = group.parent.nmr });
-					end
-					
-					-- Check to see if this group already exists in the header
-					local found = false;
-					if group.g and #group.g > 0 then
-						for i,g in ipairs(app.HolidayHeader.g) do
-							if g.g and g.achievementID == group.achievementID 
-								and g.u == group.u 
-								and g.races == group.races 
-								and g.c == group.c
-								and g.creatureID == group.creatureID 
-								and g.itemID == group.itemID 
-								and g.questID == group.questID then
-								group = group.g[1];
-								app.HolidayHeader.progress = app.HolidayHeader.progress + (group.progress or 0);
-								app.HolidayHeader.total = app.HolidayHeader.total + (group.total or 0);
-								tinsert(g.g, group);
-								found = true;
-								break;
-							end
-						end
-					end
-					
-					-- Update progress (but only if not found)
-					if not found then
-						app.HolidayHeader.progress = app.HolidayHeader.progress + (group.progress or 0);
-						app.HolidayHeader.total = app.HolidayHeader.total + (group.total or 0);
-						tinsert(app.HolidayHeader.g, group);
-					end
-				elseif group.achievementID then
-					if group.criteriaID then
-						if group.parent.achievementID then
-							group = app.CreateAchievement(group.parent.achievementID, 
-								{ g = { group }, total = group.total, progress = group.progress, u = group.parent.u });
-						else
-							group = app.CreateAchievement(group.achievementID,
-								{ g = { group }, total = group.total, progress = group.progress, u = group.u });
-						end
-						tinsert(header.g, 1, group);
-					else
-						tinsert(header.g, group);
-					end
-				elseif group.criteriaID and group.parent.achievementID then
-					group = app.CreateAchievement(group.parent.achievementID, { g = { group }, total = group.total, progress = group.progress, u = group.parent.u });
-					tinsert(header.g, 1, group);
-				else
-					tinsert(header.g, group);
-				end
-			end
-			
-			if #app.HolidayHeader.g > 0 then
-				app.HolidayHeader.expanded = true;
-				app.HolidayHeader.visible = true;
-				app.HolidayHeader.parent = header;
-				tinsert(header.g, 1, app.HolidayHeader);
-				app.HolidayHeader.progress = 0;
-				app.HolidayHeader.total = 0;
-				app.UpdateGroups(app.HolidayHeader, app.HolidayHeader.g, 1);
-				app.HolidayHeader.visible = app.GroupVisibilityFilter(app.HolidayHeader);
-			else
-				app.HolidayHeader.visible = false;
-			end
-			
-			if field == "mapID" and #results > 1 and not header.mapID then
-				if not header.mapID then header.mapID = id; end
-				local count = #header.g;
-				local ins = {};
-				for i=1,count,1 do
-					local group = header.g[i];
-					if group.mapID then
-						header.text = group.text;
-						header.icon = group.icon;
-						for key,value in pairs(group) do
-							if key ~= "g" and key ~= "total" and key ~= "progress" then
-								header[key] = value;
-							end
-						end
-						break;
-					end
-				end
-				if not header.mapID then
-					for i=count,1,-1 do
-						local group = header.g[i];
-						if group.maps then
-							header.text = group.text;
-							header.icon = group.icon;
-							for key,value in pairs(group) do
-								if key ~= "g" and key ~= "total" and key ~= "progress" then
-									header[key] = value;
-								end
-							end
-						end
-					end
-				end
-				for i=count,1,-1 do
-					local group = header.g[i];
-					if (group.mapID and group.mapID == id) or (group.maps and contains(group.maps, id) and header.text == group.text) then
-						table.remove(header.g, i);
-						if group.g then tinsert(ins, group.g); end
-					end
-				end
-				for i=#ins,1,-1 do
-					for j,subgroup in ipairs(ins[i]) do
-						tinsert(header.g, subgroup);
-					end
-				end
-				header.u = nil;
-				header.visible = true;
-				setmetatable(header,
-					header.classID and app.BaseCharacterClass
-					or header.achievementID and app.BaseAchievement
-					or app.BaseMap);
-				if header.collectible then
-					if header.collected then header.progress = header.progress + 1; end
-					app.MiniListHeader.total = app.MiniListHeader.total + 1;
-					if GetDataMember("AutomateTomTomWaypoints", true) then
-						AddTomTomWaypoint(header, true);
-					end
-				end
-			end
-			
-			-- Swap out the map data for the header.
-			results = header;
-		end
-		
-		-- Check to see if it is empty.
-		local expandible = true;
-		if popout.data and field == "mapID"
-			and SearchForMapRecursively(popout.data, id) then
-			expandible = false;
-		end
-		
-		-- If we have determined that we want to expand this section, then do it
-		if expandible and results.g then
-			if popout.data then
-				ExpandGroupsRecursively(popout.data, false);
-			end
-			
-			-- if enabled minimize rows based on difficulty 
-			if GetDataMember("AutoMinimize",true) then
-				ExpandGroupsRecursively(results, false);
-				
-				local found = false;
-				local difficultyID = select(3, GetInstanceInfo());
-				if difficultyID and difficultyID > 0 and results.g then
-					for _, row in ipairs(results.g) do
-						if (row.difficultyID and row.difficultyID == difficultyID)
-							or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
-							if row.visible then
-								ExpandGroupsRecursively(row, true);
-								found = true;
-							end
-						end
-					end
-				end
-				if not found then
-					difficultyID = GetDungeonDifficultyID();
-					for _, row in ipairs(results.g) do
-						if (row.difficultyID and row.difficultyID == difficultyID)
-							or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
-							if row.visible then
-								ExpandGroupsRecursively(row, true);
-								found = true;
-							end
-						end
-					end
-				end
-				if not found then
-					difficultyID = GetRaidDifficultyID();
-					for _, row in ipairs(results.g) do
-						if (row.difficultyID and row.difficultyID == difficultyID)
-							or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
-							if row.visible then
-								ExpandGroupsRecursively(row, true);
-								found = true;
-							end
-						end
-					end
-				end
-				if not found then
-					difficultyID = GetLegacyRaidDifficultyID();
-					for _, row in ipairs(results.g) do
-						if (row.difficultyID and row.difficultyID == difficultyID)
-							or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
-							if row.visible then
-								ExpandGroupsRecursively(row, true);
-								found = true;
-							end
-						end
-					end
-					
-					-- Expand them all!
-					if not found then
-						ExpandGroupsRecursively(results, true);
-						if results.instanceID and app.GetDataMember("WarnOnClearedDifficulty", false) then
-							AllTheThings.yell("YOU HAVE COLLECTED EVERYTHING FROM THIS DIFFICULTY BASED ON YOUR CURRENT FILTERS.");
-							AllTheThings.print("YOU HAVE COLLECTED EVERYTHING FROM THIS DIFFICULTY BASED ON YOUR CURRENT FILTERS.");
-						end
-					end
-				end
-			else
-				ExpandGroupsRecursively(results, true);
-			end
-		end
-		
-		-- Check to see completion...
-		popout.data = results;
-
-		-- Reset to the first object.
-		popout.ScrollBar:SetValue(1);
-		
-		if results.progress == results.total then
-			if results.g and #results.g > 0 then
-				popout:SetVisible(true);
-				return false;
-			else
-				-- There are no items in this group. Just hide it. Probably not in yet.
-				popout:SetVisible(false);
-				return false;
-			end
-		else
-			popout:SetVisible(true);
-			return false;
-		end
-	else
-		--print("No map found for this location ", app.GetMapName(id), " [", id, "]");
-		--print("Please report this to the ATT Discord! Thanks! Version 1.6.8"); -- Adding version so we can quickly see if it was done and they haven't updated
-	end
-end
 local function OpenMiniListForCurrentProfession(manual, refresh)
 	if app.Categories.Professions then
 		local popout = app:GetWindow("Tradeskills");
@@ -2503,62 +2225,8 @@ local function OpenMiniListForCurrentProfession(manual, refresh)
 		end
 	end
 end
-local function OpenMiniListForCurrentZone()
-	OpenMiniList("mapID", app.GetCurrentMapID(), "Map ID");
-end
 local function ToggleMainList()
 	app:ToggleWindow("Prime");
-end
-local function ToggleMiniListForCurrentZone()
-	local popout = app:GetWindow("CurrentInstance");
-	if popout:IsVisible() then
-		popout:Toggle();
-	else
-		OpenMiniListForCurrentZone();
-	end
-end
-local function RefreshLocationCoroutine()
-	local waitTimer = 30;
-	while waitTimer > 0 do
-		coroutine.yield();
-		waitTimer = waitTimer - 1;
-	end
-	
-	-- While the player is in combat, wait for combat to end.
-	while InCombatLockdown() do coroutine.yield(); end
-	
-	-- Lock out during PVP
-	local inInstance, instanceType = IsInInstance();
-	if inInstance and (instanceType == "pvp" or instanceType == "arena") then
-		app:GetWindow("CurrentInstance"):Hide();
-		while inInstance and (instanceType == "pvp" or instanceType == "arena") do
-			coroutine.yield();
-			inInstance, instanceType = IsInInstance();
-		end
-		--print("No longer PVPing. (RefreshLocation)");
-		app:GetWindow("CurrentInstance"):Show();
-	--else 
-		--print("Definitely not PVPing. (RefreshLocation) " ..  (instanceType or "??"));
-	end
-	
-	-- Cache the map ID.
-	local mapID = app.GetCurrentMapID();
-	while not mapID or mapID < 0 do
-		coroutine.yield();
-		mapID = app.GetCurrentMapID();
-	end
-	
-	-- Cache that we're in the current map ID.
-	if GetTempDataMember("MapID") ~= mapID then
-		SetTempDataMember("MapID", mapID);
-		OpenMiniList("mapID", mapID, "Map ID");
-		wipe(searchCache);
-	end
-end
-local function RefreshLocation()
-	if GetDataMember("AutoMiniList") or app:GetWindow("CurrentInstance"):IsVisible() then
-		StartCoroutine("RefreshLocation", RefreshLocationCoroutine);
-	end
 end
 local function RefreshSavesCoroutine()
 	local waitTimer = 30;
@@ -2866,15 +2534,11 @@ local function ToggleDebugMode()
 	SetDebugMode(not GetDataMember("IgnoreAllFilters"));
 end
 app.RefreshCollections = RefreshCollections;
-app.RefreshLocation = RefreshLocation;
 app.RefreshSaves = RefreshSaves;
 app.OpenMainList = OpenMainList;
-app.OpenMiniList = OpenMiniList;
-app.OpenMiniListForCurrentZone = OpenMiniListForCurrentZone;
 app.OpenMiniListForCurrentProfession = OpenMiniListForCurrentProfession;
 app.SetCompletionistMode = SetCompletionistMode;
 app.SetDebugMode = SetDebugMode;
-app.ToggleMiniListForCurrentZone = ToggleMiniListForCurrentZone;
 app.ToggleCompletionistMode = ToggleCompletionistMode;
 app.ToggleDebugMode = ToggleDebugMode;
 app.ToggleMainList = ToggleMainList;
@@ -5995,9 +5659,6 @@ app.BuildGroups = BuildGroups
 
 local function ProcessGroup(data, object, indent, back)
 	if object.visible then
-		if back < 1 and (object.mapID and object.mapID == GetTempDataMember("MapID")) or (object.maps and contains(object.maps, GetTempDataMember("MapID"))) then
-			back = 1;
-		end
 		object.back = back;
 		object.indent = indent;
 		tinsert(data, object);
@@ -8582,7 +8243,7 @@ end
 -- Create the Primary Collection Window (this allows you to save the size and location)
 app:GetWindow("Prime");
 app:GetWindow("Unsorted");
---[[
+--[[--
 app:GetWindow("Debugger", UIParent, function(self)
 	if not self.initialized then
 		self.initialized = true;
@@ -8605,7 +8266,6 @@ app:GetWindow("Debugger", UIParent, function(self)
 		-- /script AllTheThings:GetWindow("Debugger"):MergeObject(AllTheThings:GetWindow("Debugger").data.g, _G.info);
 		-- /script AllTheThings:GetWindow("Debugger"):MergeObject(AllTheThings:GetWindow("Debugger").rawData, {itemID = 137642});
 		-- /script AllTheThings:GetWindow("Debugger"):Update();
-		self.events = {};
 		self:SetScript("OnEvent", function(self, e, ...)
 			print(e, ...);
 			if e == "PLAYER_LOGIN" then
@@ -8863,7 +8523,385 @@ app:GetWindow("Debugger", UIParent, function(self)
 	UpdateWindow(self, true);
 end):Show();
 --]]--
-app:GetWindow("CurrentInstance");
+(function()
+	app:GetWindow("CurrentInstance", UIParent, function(self)
+		if not self.initialized then
+			self.initialized = true;
+			self.openedOnLogin = false;
+			self.shouldUpdateMiniList = false;
+			self.data = {
+				['text'] = "Mini List",
+				['icon'] = "Interface\\Icons\\INV_Misc_Map06.blp", 
+				["description"] = "This list contains the relevant information for your current zone.",
+				['visible'] = true, 
+				['expanded'] = true,
+				['back'] = 1,
+				['g'] = {
+					{
+						['text'] = "Update World Quests Now",
+						['icon'] = "Interface\\Icons\\INV_Misc_Map_01",
+						['description'] = "Sometimes the World Quest API is slow or fails to return new data. If you wish to forcibly refresh the data without changing zones, click this button now!",
+						['visible'] = true,
+						['f'] = -1,
+						['key'] = "nope",
+						['OnClick'] = function(row, button)
+							Push(self, "Rebuild", self.Rebuild);
+							return true;
+						end,
+						['back'] = 0.5,
+					},
+				},
+			};
+			self.rawData = {};
+			self.Rebuild = function(self)
+				local self = app:GetWindow("CurrentInstance");
+				local results = SearchForField("mapID", self.mapID);
+				if results then
+					-- Simplify the returned groups
+					if #results < 2 then
+						-- Only one object matched.
+						results = setmetatable({ back = 1 }, { __index = results[1] });
+						app.MiniListHeader = nil;
+					else
+						-- A couple of objects matched, let's make a header.
+						local header = { g = {}, back = 1, expanded = true, visible = true, text = app.DisplayName, description = "Auto Mini List for mapID #" .. self.mapID, total = 0, progress = 0 };
+						app.MiniListHeader = header;
+						table.wipe(app.HolidayHeader.g);
+						app.HolidayHeader.progress = 0;
+						app.HolidayHeader.total = 0;
+						for i, group in ipairs(results) do
+							header.progress = header.progress + (group.progress or 0);
+							header.total = header.total + (group.total or 0);
+							if group.description and group.mapID then header.description = group.description; end
+							if group.isRaid then header.isRaid = group.isRaid; end
+							
+							-- If this is relative to a holiday, let's do something special
+							if GetRelativeField(group, "npcID", -3) then
+								local clone = {};
+								for key,value in pairs(group) do
+									clone[key] = value;
+								end
+								clone["maps"] = nil;
+								setmetatable(clone, getmetatable(group));
+								group = clone;
+								if group.achievementID then
+									if group.criteriaID then
+										if group.parent.achievementID then
+											group = app.CreateAchievement(group.parent.achievementID, 
+												{ g = { group }, total = group.total, progress = group.progress, 
+													u = group.parent.u, races = group.parent.races, c = group.parent.c, nmc = group.parent.nmc, nmr = group.parent.nmr });
+										else
+											group = app.CreateAchievement(group.achievementID,
+												{ g = { group }, total = group.total, progress = group.progress,
+													u = group.u, races = group.races, c = group.c, nmc = group.nmc, nmr = group.nmr });
+										end
+									end
+								elseif group.criteriaID and group.parent.achievementID then
+									group = app.CreateAchievement(group.parent.achievementID, { g = { group }, total = group.total, progress = group.progress, 
+										u = group.parent.u, races = group.parent.races, c = group.parent.c, nmc = group.parent.nmc, nmr = group.parent.nmr });
+								end
+								
+								-- Check to see if this group already exists in the header
+								local found = false;
+								if group.g and #group.g > 0 then
+									for i,g in ipairs(app.HolidayHeader.g) do
+										if g.g and g.achievementID == group.achievementID 
+											and g.u == group.u 
+											and g.races == group.races 
+											and g.c == group.c
+											and g.creatureID == group.creatureID 
+											and g.itemID == group.itemID 
+											and g.questID == group.questID then
+											group = group.g[1];
+											app.HolidayHeader.progress = app.HolidayHeader.progress + (group.progress or 0);
+											app.HolidayHeader.total = app.HolidayHeader.total + (group.total or 0);
+											tinsert(g.g, group);
+											found = true;
+											break;
+										end
+									end
+								end
+								
+								-- Update progress (but only if not found)
+								if not found then
+									app.HolidayHeader.progress = app.HolidayHeader.progress + (group.progress or 0);
+									app.HolidayHeader.total = app.HolidayHeader.total + (group.total or 0);
+									tinsert(app.HolidayHeader.g, group);
+								end
+							elseif group.achievementID then
+								if group.criteriaID then
+									if group.parent.achievementID then
+										group = app.CreateAchievement(group.parent.achievementID, 
+											{ g = { group }, total = group.total, progress = group.progress, u = group.parent.u });
+									else
+										group = app.CreateAchievement(group.achievementID,
+											{ g = { group }, total = group.total, progress = group.progress, u = group.u });
+									end
+									tinsert(header.g, 1, group);
+								else
+									tinsert(header.g, group);
+								end
+							elseif group.criteriaID and group.parent.achievementID then
+								group = app.CreateAchievement(group.parent.achievementID, { g = { group }, total = group.total, progress = group.progress, u = group.parent.u });
+								tinsert(header.g, 1, group);
+							else
+								tinsert(header.g, group);
+							end
+						end
+						
+						if #app.HolidayHeader.g > 0 then
+							app.HolidayHeader.expanded = true;
+							app.HolidayHeader.visible = true;
+							app.HolidayHeader.parent = header;
+							tinsert(header.g, 1, app.HolidayHeader);
+							app.HolidayHeader.progress = 0;
+							app.HolidayHeader.total = 0;
+							app.UpdateGroups(app.HolidayHeader, app.HolidayHeader.g, 1);
+							app.HolidayHeader.visible = app.GroupVisibilityFilter(app.HolidayHeader);
+						else
+							app.HolidayHeader.visible = false;
+						end
+						
+						if #results > 1 and not header.mapID then
+							if not header.mapID then header.mapID = self.mapID; end
+							local count = #header.g;
+							local ins = {};
+							for i=1,count,1 do
+								local group = header.g[i];
+								if group.mapID then
+									header.text = group.text;
+									header.icon = group.icon;
+									for key,value in pairs(group) do
+										if key ~= "g" and key ~= "total" and key ~= "progress" then
+											header[key] = value;
+										end
+									end
+									break;
+								end
+							end
+							if not header.mapID then
+								for i=count,1,-1 do
+									local group = header.g[i];
+									if group.maps then
+										header.text = group.text;
+										header.icon = group.icon;
+										for key,value in pairs(group) do
+											if key ~= "g" and key ~= "total" and key ~= "progress" then
+												header[key] = value;
+											end
+										end
+									end
+								end
+							end
+							for i=count,1,-1 do
+								local group = header.g[i];
+								if (group.mapID and group.mapID == self.mapID) or (group.maps and contains(group.maps, self.mapID) and header.text == group.text) then
+									table.remove(header.g, i);
+									if group.g then tinsert(ins, group.g); end
+								end
+							end
+							for i=#ins,1,-1 do
+								for j,subgroup in ipairs(ins[i]) do
+									tinsert(header.g, subgroup);
+								end
+							end
+							header.u = nil;
+							header.visible = true;
+							setmetatable(header,
+								header.classID and app.BaseCharacterClass
+								or header.achievementID and app.BaseAchievement
+								or app.BaseMap);
+							if header.collectible then
+								if header.collected then header.progress = header.progress + 1; end
+								app.MiniListHeader.total = app.MiniListHeader.total + 1;
+								if GetDataMember("AutomateTomTomWaypoints", true) then
+									AddTomTomWaypoint(header, true);
+								end
+							end
+						end
+						
+						-- Swap out the map data for the header.
+						results = header;
+					end
+					
+					-- Check to see if it is empty.
+					local expandible = true;
+					if self.data and SearchForMapRecursively(self.data, self.mapID) then
+						expandible = false;
+					end
+					
+					-- If we have determined that we want to expand this section, then do it
+					if expandible and results.g then
+						if self.data then
+							ExpandGroupsRecursively(self.data, false);
+						end
+						
+						-- if enabled minimize rows based on difficulty 
+						if GetDataMember("AutoMinimize",true) then
+							ExpandGroupsRecursively(results, false);
+							
+							local found = false;
+							local difficultyID = select(3, GetInstanceInfo());
+							if difficultyID and difficultyID > 0 and results.g then
+								for _, row in ipairs(results.g) do
+									if (row.difficultyID and row.difficultyID == difficultyID)
+										or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
+										if row.visible then
+											ExpandGroupsRecursively(row, true);
+											found = true;
+										end
+									end
+								end
+							end
+							if not found then
+								difficultyID = GetDungeonDifficultyID();
+								for _, row in ipairs(results.g) do
+									if (row.difficultyID and row.difficultyID == difficultyID)
+										or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
+										if row.visible then
+											ExpandGroupsRecursively(row, true);
+											found = true;
+										end
+									end
+								end
+							end
+							if not found then
+								difficultyID = GetRaidDifficultyID();
+								for _, row in ipairs(results.g) do
+									if (row.difficultyID and row.difficultyID == difficultyID)
+										or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
+										if row.visible then
+											ExpandGroupsRecursively(row, true);
+											found = true;
+										end
+									end
+								end
+							end
+							if not found then
+								difficultyID = GetLegacyRaidDifficultyID();
+								for _, row in ipairs(results.g) do
+									if (row.difficultyID and row.difficultyID == difficultyID)
+										or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
+										if row.visible then
+											ExpandGroupsRecursively(row, true);
+											found = true;
+										end
+									end
+								end
+								
+								-- Expand them all!
+								if not found then
+									ExpandGroupsRecursively(results, true);
+									if results.instanceID and app.GetDataMember("WarnOnClearedDifficulty", false) then
+										AllTheThings.yell("YOU HAVE COLLECTED EVERYTHING FROM THIS DIFFICULTY BASED ON YOUR CURRENT FILTERS.");
+										AllTheThings.print("YOU HAVE COLLECTED EVERYTHING FROM THIS DIFFICULTY BASED ON YOUR CURRENT FILTERS.");
+									end
+								end
+							end
+						else
+							ExpandGroupsRecursively(results, true);
+						end
+					end
+					
+					-- Check to see completion...
+					self.data = results;
+				end
+				
+				-- If we don't have any map data on this area, report it to the chat window.
+				if not results or not results.g or #results.g < 1 then
+					print("No map found for this location ", app.GetMapName(self.mapID), " [", self.mapID, "]");
+					print("Please report this to the ATT Discord! Thanks! ", GetAddOnMetadata("AllTheThings", "Version"));
+				end
+			end
+			local function OpenMiniList(id, show)
+				-- Cache that we're in the current map ID.
+				local self = app:GetWindow("CurrentInstance");
+				if self.mapID == id then return; end
+				self.mapID = id;
+				
+				-- Determine whether or not to forcibly reshow the mini list.
+				if not self:IsVisible() then
+					if GetDataMember("AutoMiniList") then
+						if not self.openedOnLogin and not show then
+							self.openedOnLogin = true;
+							show = true;
+						end
+					else
+						self.openedOnLogin = false;
+					end
+					if show then
+						self:Show();
+						self:Update();
+					end
+				else
+					self:Update();
+				end
+			end
+			local function OpenMiniListForCurrentZone()
+				OpenMiniList(app.GetCurrentMapID());
+			end
+			local function RefreshLocationCoroutine()
+				-- Wait for a few moments for the map to update.
+				local waitTimer = 30;
+				while waitTimer > 0 do
+					coroutine.yield();
+					waitTimer = waitTimer - 1;
+				end
+				
+				-- While the player is in combat, wait for combat to end.
+				while InCombatLockdown() do coroutine.yield(); end
+				
+				-- Lock out during PVP
+				local inInstance, instanceType = IsInInstance();
+				if inInstance and (instanceType == "pvp" or instanceType == "arena") then
+					app:GetWindow("CurrentInstance"):Hide();
+					return;
+				end
+				
+				-- Acquire the new map ID.
+				local mapID = app.GetCurrentMapID();
+				while not mapID or mapID < 0 do
+					coroutine.yield();
+					mapID = app.GetCurrentMapID();
+				end
+				OpenMiniList(mapID);
+			end
+			local function RefreshLocation()
+				if GetDataMember("AutoMiniList") or app:GetWindow("CurrentInstance"):IsVisible() then
+					StartCoroutine("RefreshLocation", RefreshLocationCoroutine);
+				end
+			end
+			local function ToggleMiniListForCurrentZone()
+				local self = app:GetWindow("CurrentInstance");
+				if self:IsVisible() then
+					self:Hide();
+				else
+					OpenMiniListForCurrentZone();
+				end
+			end
+			app.OpenMiniListForCurrentZone = OpenMiniListForCurrentZone;
+			app.ToggleMiniListForCurrentZone = ToggleMiniListForCurrentZone;
+			app.RefreshLocation = RefreshLocation;
+			self:SetScript("OnEvent", function(self, e, ...)
+				RefreshLocation();
+			end);
+			self:RegisterEvent("PLAYER_LOGIN");
+			self:RegisterEvent("NEW_WMO_CHUNK");
+			self:RegisterEvent("SCENARIO_UPDATE");
+			self:RegisterEvent("ZONE_CHANGED_NEW_AREA");
+		end
+		
+		-- Update the window and all of its row data
+		if self.mapID ~= self.displayedMapID then
+			self.displayedMapID = self.mapID;
+			self:Rebuild();
+		end
+		self.data.progress = 0;
+		self.data.total = 0;
+		UpdateGroups(self.data, self.data.g, 1);
+		UpdateWindow(self, true);
+	end);
+end)();
 app:GetWindow("RaidAssistant", UIParent, function(self)
 	if not self.initialized then
 		self.initialized = true;
@@ -9283,7 +9321,6 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 		self.data = raidassistant;
 		
 		-- Setup Event Handlers and register for events
-		self.events = {};
 		self:SetScript("OnEvent", function(self, e, ...) self:Update(); end);
 		self:RegisterEvent("PLAYER_LOOT_SPEC_UPDATED");
 		self:RegisterEvent("ACTIVE_TALENT_GROUP_CHANGED");
@@ -9588,14 +9625,6 @@ ItemRefShoppingTooltip2:HookScript("OnShow", AttachTooltip);
 ItemRefShoppingTooltip2:HookScript("OnTooltipSetQuest", AttachTooltip);
 ItemRefShoppingTooltip2:HookScript("OnTooltipSetItem", AttachTooltip);
 ItemRefShoppingTooltip2:HookScript("OnTooltipCleared", ClearTooltip);
---ShoppingTooltip1:HookScript("OnShow", AttachTooltip);
---ShoppingTooltip1:HookScript("OnTooltipSetQuest", AttachTooltip);
---ShoppingTooltip1:HookScript("OnTooltipSetItem", AttachTooltip);
---ShoppingTooltip1:HookScript("OnTooltipCleared", ClearTooltip);
---ShoppingTooltip2:HookScript("OnShow", AttachTooltip);
---ShoppingTooltip2:HookScript("OnTooltipSetQuest", AttachTooltip);
---ShoppingTooltip2:HookScript("OnTooltipSetItem", AttachTooltip);
---ShoppingTooltip2:HookScript("OnTooltipCleared", ClearTooltip);
 WorldMapTooltip.ItemTooltip.Tooltip:HookScript("OnTooltipSetQuest", AttachTooltip);
 WorldMapTooltip.ItemTooltip.Tooltip:HookScript("OnTooltipSetItem", AttachTooltip);
 WorldMapTooltip.ItemTooltip.Tooltip:HookScript("OnTooltipSetUnit", AttachTooltip);
@@ -9616,7 +9645,7 @@ SlashCmdList["AllTheThings"] = function(cmd)
 	if not cmd or cmd == "" or cmd == "main" or cmd == "mainlist" then
 		ToggleMainList();
 	elseif cmd == "mini" or cmd == "minilist" then
-		ToggleMiniListForCurrentZone();
+		app:ToggleMiniListForCurrentZone();
 	elseif cmd == "ra" then
 		app:GetWindow("RaidAssistant"):Toggle();
 	elseif cmd == "wq" then
@@ -9675,13 +9704,10 @@ end
 app:RegisterEvent("BOSS_KILL");
 app:RegisterEvent("PLAYER_LOGIN");
 app:RegisterEvent("VARIABLES_LOADED");
-app:RegisterEvent("ZONE_CHANGED_NEW_AREA");
-app:RegisterEvent("NEW_WMO_CHUNK");
 app:RegisterEvent("TOYS_UPDATED");
 app:RegisterEvent("TRADE_SKILL_LIST_UPDATE");
 app:RegisterEvent("TRADE_SKILL_SHOW");
 app:RegisterEvent("TRADE_SKILL_CLOSE");
-app:RegisterEvent("SCENARIO_UPDATE");
 app:RegisterEvent("COMPANION_LEARNED");
 app:RegisterEvent("COMPANION_UNLEARNED");
 app:RegisterEvent("NEW_PET_ADDED");
@@ -9994,7 +10020,6 @@ app.events.PLAYER_LOGIN = function()
 		GetQuestsCompleted(CompletedQuests);
 		wipe(DirtyQuests);
 		app:RegisterEvent("QUEST_LOG_UPDATE");
-		RefreshLocation();
 		RefreshSaves();
 		
 		app.CacheFlightPathData();
@@ -10029,9 +10054,6 @@ app.events.PLAYER_LOGIN = function()
 		app:OpenMainList();
 	end
 end
-app.events.SCENARIO_UPDATE = RefreshLocation;
-app.events.ZONE_CHANGED_NEW_AREA = RefreshLocation;
-app.events.NEW_WMO_CHUNK = RefreshLocation;
 app.events.ACTIVE_TALENT_GROUP_CHANGED = function()
 	app.Spec = GetLootSpecialization();
 	if not app.Spec or app.Spec == 0 then app.Spec = select(1, GetSpecializationInfo(GetSpecialization())); end

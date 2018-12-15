@@ -407,38 +407,38 @@ local function createGeneralFrame(parent)
 	
 	-- Show Loot Specializations Requirements
 	local showSpecReq = createCheckBox("Show Loot Specialization Icons", child, function(self)
-			app.SetDataMember("ShowLootSpecializationRequirements", self:GetChecked());
-			app:UpdateWindows();
-		end, 
-		function(self) 
-			self:SetChecked(app.GetDataMember("ShowLootSpecializationRequirements", true));
-		end,
-		function(self)
-			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
-			GameTooltip:SetText ("Enable this option if you want to see loot specialization icons in the listing indicating which specializations for your class must be used in order to obtain an item when running a dungeon in Personal Loot mode.\n\nNOTE: Rare spawns are generally not Personal Loot required.", nil, nil, nil, nil, true);
-			GameTooltip:Show();
-		end);
+		app.SetDataMember("ShowLootSpecializationRequirements", self:GetChecked());
+		app:UpdateWindows();
+	end, 
+	function(self) 
+		self:SetChecked(app.GetDataMember("ShowLootSpecializationRequirements", true));
+	end,
+	function(self)
+		GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
+		GameTooltip:SetText ("Enable this option if you want to see loot specialization icons in the listing indicating which specializations for your class must be used in order to obtain an item when running a dungeon in Personal Loot mode.\n\nNOTE: Rare spawns are generally not Personal Loot required.", nil, nil, nil, nil, true);
+		GameTooltip:Show();
+	end);
 	showSpecReq:SetPoint("TOPLEFT",showSpec,0,-frameSpacer)
 	addObject(elm,showSpecReq)
 	
 	
 	local showPersonal = createCheckBox("Only Show Personal Loot (VERY SLOW)", child, function(self)
-			app.SetDataMember("RequirePersonalLootFilter", self:GetChecked());
-			if self:GetChecked() then
-				app.PersonalLootFilter = app.FilterItemClass_RequirePersonalLoot;
-			else
-				app.PersonalLootFilter = app.NoFilter;
-			end
-			app:RefreshData(false, true);
-		end, 
-		function(self) 
-			self:SetChecked(app.GetDataMember("RequirePersonalLootFilter", true));
-		end,
-		function(self)
-			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
-			GameTooltip:SetText ("Enable this option if you only want to see items that Blizzard has listed as usable for your current specialization.\n\nWARNING: This will mean that a lot of items you can transmog and/or collect on your current character will be hidden in the listings.\n\nWARNING #2: This feature is EXTREMELY SLOW as it currently uses the Blizzard API. User discretion is advised. We do NOT recommend turning this feature on.", nil, nil, nil, nil, true);
-			GameTooltip:Show();
-		end);
+		app.SetDataMember("RequirePersonalLootFilter", self:GetChecked());
+		if self:GetChecked() then
+			app.PersonalLootFilter = app.FilterItemClass_RequirePersonalLoot;
+		else
+			app.PersonalLootFilter = app.NoFilter;
+		end
+		app:RefreshData(false, true);
+	end, 
+	function(self) 
+		self:SetChecked(app.GetDataMember("RequirePersonalLootFilter", true));
+	end,
+	function(self)
+		GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
+		GameTooltip:SetText ("Enable this option if you only want to see items that Blizzard has listed as usable for your current specialization.\n\nWARNING: This will mean that a lot of items you can transmog and/or collect on your current character will be hidden in the listings.\n\nWARNING #2: This feature is EXTREMELY SLOW as it currently uses the Blizzard API. User discretion is advised. We do NOT recommend turning this feature on.", nil, nil, nil, nil, true);
+		GameTooltip:Show();
+	end);
 	showPersonal:SetPoint("TOPLEFT",showSpecReq,0,-frameSpacer)
 	addObject(elm,showPersonal)	
 	
@@ -456,78 +456,76 @@ local function createGeneralFrame(parent)
 	
 	-- mini map button
 	local minimapButton = createCheckBox("Show the Minimap Button", child, function(self)
-			app.SetDataMember("ShowMinimapButton", self:GetChecked());
-			if self:GetChecked() then
-					if not app.Minimap then app.Minimap = app.CreateMinimapButton(); end
-					app.Minimap:Show();
-				elseif app.Minimap then
-					app.Minimap:Hide();
-				end
-		end, 
-		function(self) 
-			self:SetChecked(app.GetDataMember("ShowMinimapButton", true));
-		end,
-		function(self)
-			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
-			GameTooltip:SetText ("Enable this option if you want to see the minimap button. This button allows you to quickly access the Main List, show your Overall Collection Progress, and access the Settings Menu by right clicking it.\n\nSome people don't like clutter. Alternatively, you can access the Main List by typing '/att' in your chatbox. From there, you can right click the header to get to the Settings Menu.", nil, nil, nil, nil, true);
-			GameTooltip:Show();
-		end);
+		app.SetDataMember("ShowMinimapButton", self:GetChecked());
+		if self:GetChecked() then
+				if not app.Minimap then app.Minimap = app.CreateMinimapButton(); end
+				app.Minimap:Show();
+			elseif app.Minimap then
+				app.Minimap:Hide();
+			end
+	end, 
+	function(self) 
+		self:SetChecked(app.GetDataMember("ShowMinimapButton", true));
+	end,
+	function(self)
+		GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
+		GameTooltip:SetText ("Enable this option if you want to see the minimap button. This button allows you to quickly access the Main List, show your Overall Collection Progress, and access the Settings Menu by right clicking it.\n\nSome people don't like clutter. Alternatively, you can access the Main List by typing '/att' in your chatbox. From there, you can right click the header to get to the Settings Menu.", nil, nil, nil, nil, true);
+		GameTooltip:Show();
+	end);
 	minimapButton:SetPoint("TOPLEFT",other,5,-frameSpacer)
 	addObject(elm,minimapButton)
 	
 	-- show main list auto
 	local autoMainList = createCheckBox("Show the Main List Automatically", child, function(self)
-			app.SetDataMember("AutoMainList", self:GetChecked());
-			if self:GetChecked() then
-				app.OpenMainList();
-			end
-		end, 
-		function(self) 
-			self:SetChecked(app.GetDataMember("AutoMainList", true));
-		end,
-		function(self)
-			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
-			GameTooltip:SetText ("Enable this option if you want to see everything you can collect in the game based on your current filters.\n\nDrag the window and rescale it where you want it to appear.\n\nYou can also bind this setting to a Key.\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Main List", nil, nil, nil, nil, true);
-			GameTooltip:Show();
-		end);
+		app.SetDataMember("AutoMainList", self:GetChecked());
+		if self:GetChecked() then
+			app.OpenMainList();
+		end
+	end, 
+	function(self) 
+		self:SetChecked(app.GetDataMember("AutoMainList", true));
+	end,
+	function(self)
+		GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
+		GameTooltip:SetText ("Enable this option if you want to see everything you can collect in the game based on your current filters.\n\nDrag the window and rescale it where you want it to appear.\n\nYou can also bind this setting to a Key.\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Main List", nil, nil, nil, nil, true);
+		GameTooltip:Show();
+	end);
 	autoMainList:SetPoint("TOPLEFT",minimapButton,0,-frameSpacer)
 	addObject(elm,autoMainList)
 	
 	-- show mini list auto
 	local autoMinilist = createCheckBox("Show the Mini List Automatically", child, function(self)
-			app.SetDataMember("AutoMiniList", self:GetChecked());
-			if self:GetChecked() then
-				app.OpenMiniListForCurrentZone();
-			end
-		end, 
-		function(self) 
-			self:SetChecked(app.GetDataMember("AutoMiniList", true));
-		end,
-		function(self)
-			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
-			GameTooltip:SetText ("Enable this option if you want to see everything you can collect in your current zone. The list will automatically switch when you change zones.\n\nDrag the window and rescale it where you want it to appear.\n\nSome people don't like this feature, but when you are solo farming, this feature is extremely useful.\n\nYou can also bind this setting to a Key.\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Mini List", nil, nil, nil, nil, true);
-			GameTooltip:Show();
-		end);
+		app.SetDataMember("AutoMiniList", self:GetChecked());
+		if self:GetChecked() then app:RefreshLocation(); end
+	end, 
+	function(self) 
+		self:SetChecked(app.GetDataMember("AutoMiniList", true));
+	end,
+	function(self)
+		GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
+		GameTooltip:SetText ("Enable this option if you want to see everything you can collect in your current zone. The list will automatically switch when you change zones.\n\nDrag the window and rescale it where you want it to appear.\n\nSome people don't like this feature, but when you are solo farming, this feature is extremely useful.\n\nYou can also bind this setting to a Key.\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Mini List", nil, nil, nil, nil, true);
+		GameTooltip:Show();
+	end);
 	autoMinilist:SetPoint("TOPLEFT",autoMainList,0,-frameSpacer)
 	addObject(elm,autoMinilist)
 	
 	-- show profession mini list auto
 	local autoProfessionMinilist = createCheckBox("Show the Profession Mini List Automatically", child, function(self)
-			app.SetDataMember("AutoProfessionMiniList", self:GetChecked());
-			if self:GetChecked() then
-				app:OpenMiniListForCurrentProfession(true, true);
-			else
-				app:GetWindow("Tradeskills"):SetVisible(false);
-			end
-		end, 
-		function(self) 
-			self:SetChecked(app.GetDataMember("AutoProfessionMiniList", true));
-		end,
-		function(self)
-			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
-			GameTooltip:SetText ("Enable this option if you want ATT to open and refresh the profession mini list when you open your professions. Due to an API limitation imposed by Blizzard, the only time an addon can interact with your profession data is when it is open. The list will automatically switch when you change to a different profession.\n\nSome people don't like this feature, but when you are working on your professions, this feature is extremely useful. We don't recommend disabling this option as it may prevent recipes from tracking correctly.\n\nYou can also bind this setting to a Key. (only works when a profession is open)\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Profession Mini List", nil, nil, nil, nil, true);
-			GameTooltip:Show();
-		end);
+		app.SetDataMember("AutoProfessionMiniList", self:GetChecked());
+		if self:GetChecked() then
+			app:OpenMiniListForCurrentProfession(true, true);
+		else
+			app:GetWindow("Tradeskills"):SetVisible(false);
+		end
+	end, 
+	function(self) 
+		self:SetChecked(app.GetDataMember("AutoProfessionMiniList", true));
+	end,
+	function(self)
+		GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
+		GameTooltip:SetText ("Enable this option if you want ATT to open and refresh the profession mini list when you open your professions. Due to an API limitation imposed by Blizzard, the only time an addon can interact with your profession data is when it is open. The list will automatically switch when you change to a different profession.\n\nSome people don't like this feature, but when you are working on your professions, this feature is extremely useful. We don't recommend disabling this option as it may prevent recipes from tracking correctly.\n\nYou can also bind this setting to a Key. (only works when a profession is open)\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Profession Mini List", nil, nil, nil, nil, true);
+		GameTooltip:Show();
+	end);
 	autoProfessionMinilist:SetPoint("TOPLEFT",autoMinilist,0,-frameSpacer)
 	autoProfessionMinilist.Label:SetWidth(autoProfessionMinilist.Label:GetWidth() * 1.5);
 	addObject(elm,autoProfessionMinilist)
