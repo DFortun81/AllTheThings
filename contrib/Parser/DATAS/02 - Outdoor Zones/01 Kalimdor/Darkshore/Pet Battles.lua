@@ -35,10 +35,30 @@ _.Zones =
 						},
 						["description"] = "You may only learn this pet once per character from a Battle Pet Trainer.|r"
 					}),
-					desc(qg(63083, q(31582)), "This quest is part of a chain initiated by learning Battle Pet training."),	-- Learning the Ropes
-					qg(63083, q(31583)),	-- On The Mend
-					qg(63083, q(31832)),	-- Level Up!
-					qg(63083, q(31569)), 	-- Got one!
+					{	-- Learning the Ropes
+						["questID"] = 31582,
+						["qg"] = 63083, -- Will Larsons
+						["races"] = ALLIANCE_ONLY,
+						["description"] = "This quest is part of a chain initiated by learning Battle Pet Training.",
+					},
+					{	-- On The Mend
+						["questID"] = 31583,
+						["qg"] = 63083, -- Will Larsons
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 31582, -- Learning the Ropes
+					},
+					{	-- Level Up!
+						["questID"] = 31832,
+						["qg"] = 63083, -- Will Larsons
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 31583, -- On The Mend
+					},
+					{	-- Got one!
+						["questID"] = 31569,
+						["qg"] = 63083, -- Will Larsons
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 31832, -- Level Up!
+					},
 				}),
 			},
 		}),
