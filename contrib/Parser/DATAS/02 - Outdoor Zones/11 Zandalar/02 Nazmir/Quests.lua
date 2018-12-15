@@ -69,11 +69,12 @@ _.Zones =
 									}),
 									q(47493, {	-- A Lonely Spirit	
 										["qg"] = 122688,	-- Bwonsamdi
+										["isBreadcrumb"] = true,
 										["sourceQuests"] = {
 											47247,	-- That Which Haunts the Dead
 											47491,	-- Remnants of the Damned
 											47248, 	-- 'Til Death Do Us Part
-										},	
+										},
 									}),
 									q(47880, {	-- A Tribute for Death	
 										["qg"] = 124513,	-- Hanzabu
@@ -383,6 +384,7 @@ _.Zones =
 									}),	
 									q(47918, {	-- To Serve Krag'wa	
 										["qg"] = 120551,	-- Krag'wa the Huge
+										["isBreadcrumb"] = true,
 										["sourceQuests"] = { 47697 },	-- Krag'wa's Aid
 									}),	
 									q(47540, {	-- Totemic Restoration	
