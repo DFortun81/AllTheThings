@@ -8810,12 +8810,8 @@ end):Show();
 				end
 			end
 			local function OpenMiniList(id, show)
-				-- Cache that we're in the current map ID.
-				local self = app:GetWindow("CurrentInstance");
-				if self.mapID == id then return; end
-				self.mapID = id;
-				
 				-- Determine whether or not to forcibly reshow the mini list.
+				local self = app:GetWindow("CurrentInstance");
 				if not self:IsVisible() then
 					if GetDataMember("AutoMiniList") then
 						if not self.openedOnLogin and not show then
@@ -8825,16 +8821,18 @@ end):Show();
 					else
 						self.openedOnLogin = false;
 					end
-					if show then
-						self:Show();
-						self:Update();
-					end
+					if show then self:Show(); end
 				else
-					self:Update();
+					show = true;
 				end
+				
+				-- Cache that we're in the current map ID.
+				if self.mapID == id then return; end
+				self.mapID = id;
+				if show then self:Update(); end
 			end
 			local function OpenMiniListForCurrentZone()
-				OpenMiniList(app.GetCurrentMapID());
+				OpenMiniList(app.GetCurrentMapID(), true);
 			end
 			local function RefreshLocationCoroutine()
 				-- Wait for a few moments for the map to update.
