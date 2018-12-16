@@ -14,7 +14,7 @@ _.Craftables =
 				i(163858),	-- Slippy
 			}),
 			i(152637),	-- Siren's Alchemist Stone
-			i(152632),	-- Surging Alchemist Stonee
+			i(152632),	-- Surging Alchemist Stone
 		}),
 		n(-181, { -- Blacksmithing
 		-- Reviewed and updated as of 12.15.2018 BfA 8.1
@@ -386,20 +386,30 @@ _.Craftables =
 			}),
 		}),
 		n(-182, { -- Enchanting
-			i(152874),	-- Enchanter's Sorcerous Scepter
-			i(152872),	-- Enchanter's Umbral Wand
-			i(159922),	-- Honorable Combatant's Sorcerous Scepter
+			i(161927),	-- Enchanter's Sorcerous Scepter [A]
+			i(152874),	-- Enchanter's Sorcerous Scepter [H]
+			i(161925),	-- Enchanter's Umbral Wand [A]
+			i(152872),	-- Enchanter's Umbral Wand [H]
+			i(161928),	-- Honorable Combatant's Sorcerous Scepter [A]
+			i(159922),	-- Honorable Combatant's Sorcerous Scepter [H]
+			i(164694),	-- Sinister Combatant's Sorcerous Scepter [A]
+			i(164677),	-- Sinister Combatant's Sorcerous Scepter [H]
 		}),
 		n(-183, { -- Engineering
 			i(160490),	-- AZ3-R1-T3 Bionic Bifocals
 			i(160489),	-- AZ3-R1-T3 Gearspun Goggles
 			i(160491),	-- AZ3-R1-T3 Orthogonal Optics
 			i(160488),	-- AZ3-R1-T3 Synthetic Specs
-			i(153506),	-- Finely-Tuned Stormsteel Destroyer
+			i(161930),	-- Finely-Tuned Stormsteel Destroyer [A]
+			i(153506),	-- Finely-Tuned Stormsteel Destroyer [H]
 			i(159937),	-- Honorable Combatant's Discombobulator
-			i(159936),	-- Honorable Combatant's Stormsteel Destroyer
+			i(161931),	-- Honorable Combatant's Stormsteel Destroyer [A]
+			i(159936),	-- Honorable Combatant's Stormsteel Destroyer [H]
 			i(152830),	-- Magnetic Discombobulator
 			i(152837),	-- Precision Attitude Adjuster
+			i(164680),	-- Sinister Combatant's Discombobulator
+			i(164696),	-- Sinister Combatant's Stormsteel Destroyer [A]
+			i(164679),	-- Sinister Combatant's Stormsteel Destroyer [H]
 		}),
 		n(-185, { -- Inscription
 		-- Reviewed and updated as of 12.15.2018 BfA 8.1
@@ -505,58 +515,116 @@ _.Craftables =
 			}),
 		}),
 		n(-187, { -- Leatherworking
-			i(154145),	-- Coarse Leather Armguards
-			i(154161),	-- Coarse Leather Cestus
-			i(154140),	-- Coarse Leather Gauntlets
-			i(154141),	-- Coarse Leather Helm
-			i(154142),	-- Coarse Leather Leggings
-			i(154143),	-- Coarse Leather Pauldrons
-			i(154139),	-- Coarse Leather Treads
-			i(154138),	-- Coarse Leather Vest
-			i(154144),	-- Coarse Leather Waistguard
-			i(162472),	-- Emblazoned Mistscale Boots
-			i(162481),	-- Emblazoned Mistscale Boots
-			i(162474),	-- Emblazoned Mistscale Leggings
-			i(162482),	-- Emblazoned Mistscale Greaves
-			i(162468),	-- Emblazoned Tempest Boots
-			i(162485),	-- Emblazoned Tempest Boots
-			i(162470),	-- Emblazoned Tempest Leggings
-			i(162486),	-- Emblazoned Tempest Leggings
-			i(161946),	-- Hardened Tempest Boots
-			i(154163),	-- Hardened Tempest Knuckles
-			i(161947),	-- Hardened Tempest Leggings
-			i(159896),	-- Honorable Combatant's Bow
-			i(159888),	-- Honorable Combatant's Leather Armguards
-			i(159885),	-- Honorable Combatant's Leather Gauntlets
-			i(159886),	-- Honorable Combatant's Leather Leggings
-			i(159884),	-- Honorable Combatant's Leather Treads
-			i(159887),	-- Honorable Combatant's Leather Waistguard
-			i(159893),	-- Honorable Combatant's Mail Armguards
-			i(159890),	-- Honorable Combatant's Mail Gauntlets
-			i(159891),	-- Honorable Combatant's Mail Leggings
-			i(159889),	-- Honorable Combatant's Mail Treads
-			i(159892),	-- Honorable Combatant's Mail Waistguard
-			i(162489),	-- Imbued Mistscale Boots
-			i(162471),	-- Imbued Mistscale Boots
-			i(162490),	-- Imbued Mistscale Leggings
-			i(162473),	-- Imbued Mistscale Greeaves
-			i(162493),	-- Imbued Tempest Boots
-			i(162467),	-- Imbued Tempest Boots
-			i(162494),	-- Imbued Tempest Leggings
-			i(162469),	-- Imbued Tempest Leggings
-			i(161961),	-- Mistscale Boots
-			i(154162),	-- Mistscale Knuckles
-			i(161962),	-- Mistscale Leggings
-			i(154159),	-- Recurve Bow of the Strands
-			i(154153),	-- Shimmerscale Armguards
-			i(154148),	-- Shimmerscale Gauntlets
-			i(154149),	-- Shimmerscale Helm
-			i(154150),	-- Shimmerscale Leggings
-			i(154151),	-- Shimmerscale Pauldrons
-			i(154160),	-- Shimmerscale Striker
-			i(154147),	-- Shimmerscale Treads
-			i(154146),	-- Shimmerscale Vest
-			i(154152),	-- Shimmerscale Waistguard
+			i(161945),	-- Coarse Leather Armguards [A]
+			i(154145),	-- Coarse Leather Armguards [H]
+			i(161970),	-- Coarse Leather Cestus [A]
+			i(154161),	-- Coarse Leather Cestus [H]
+			i(161940),	-- Coarse Leather Gauntlets [A]
+			i(154140),	-- Coarse Leather Gauntlets [H]
+			i(161941),	-- Coarse Leather Helm [A]
+			i(154141),	-- Coarse Leather Helm [H]
+			i(161942),	-- Coarse Leather Greaves [A]
+			i(154142),	-- Coarse Leather Leggings [H]
+			i(161943),	-- Coarse Leather Pauldrons [A]
+			i(154143),	-- Coarse Leather Pauldrons [H]
+			i(161939),	-- Coarse Leather Treads [A]
+			i(154139),	-- Coarse Leather Treads [H]
+			i(161938),	-- Coarse Leather Vest [A]
+			i(154138),	-- Coarse Leather Vest [H]
+			i(161944),	-- Coarse Leather Waistguard [A]
+			i(154144),	-- Coarse Leather Waistguard [H]
+			i(162481),	-- Emblazoned Mistscale Boots [A]
+			i(162472),	-- Emblazoned Mistscale Boots [H]
+			i(162482),	-- Emblazoned Mistscale Greaves [A]
+			i(162474),	-- Emblazoned Mistscale Leggings [H]
+			i(162485),	-- Emblazoned Tempest Boots [A]
+			i(162468),	-- Emblazoned Tempest Boots [H]
+			i(162486),	-- Emblazoned Tempest Leggings [A]
+			i(162470),	-- Emblazoned Tempest Leggings [H]
+			i(161946),	-- Hardened Tempest Boots [A]
+			i(154154),	-- Hardened Tempest Boots [H]
+			i(161972),	-- Hardened Tempest Knuckles [A]
+			i(154163),	-- Hardened Tempest Knuckles [H]
+			i(161947),	-- Hardened Tempest Leggings [A]
+			i(154155),	-- Hardened Tempest Leggings [H]
+			i(161975),	-- Honorable Combatant's Bow [A]
+			i(159896),	-- Honorable Combatant's Bow [H]
+			i(161952),	-- Honorable Combatant's Leather Armguards [A]
+			i(159888),	-- Honorable Combatant's Leather Armguards [H]
+			i(161949),	-- Honorable Combatant's Leather Gauntlets [A]
+			i(159885),	-- Honorable Combatant's Leather Gauntlets [H]
+			i(161950),	-- Honorable Combatant's Leather Greaves [A]
+			i(159886),	-- Honorable Combatant's Leather Leggings [H]
+			i(161948),	-- Honorable Combatant's Leather Treads [A]
+			i(159884),	-- Honorable Combatant's Leather Treads [H]
+			i(161951),	-- Honorable Combatant's Leather Waistguard [A]
+			i(159887),	-- Honorable Combatant's Leather Waistguard [H]
+			i(161967),	-- Honorable Combatant's Mail Armguards [A]
+			i(159893),	-- Honorable Combatant's Mail Armguards [H]
+			i(161964),	-- Honorable Combatant's Mail Gauntlets [A]
+			i(159890),	-- Honorable Combatant's Mail Gauntlets [H]
+			i(161965),	-- Honorable Combatant's Mail Greaves [A]
+			i(159891),	-- Honorable Combatant's Mail Leggings [H]
+			i(161963),	-- Honorable Combatant's Mail Treads [A]
+			i(159889),	-- Honorable Combatant's Mail Treads [H]
+			i(161966),	-- Honorable Combatant's Mail Waistguard [A]
+			i(159892),	-- Honorable Combatant's Mail Waistguard [H]
+			i(162489),	-- Imbued Mistscale Boots [A]
+			i(162471),	-- Imbued Mistscale Boots [H]
+			i(162490),	-- Imbued Mistscale Leggings [A]
+			i(162473),	-- Imbued Mistscale Greeaves [H]
+			i(162493),	-- Imbued Tempest Boots [A]
+			i(162467),	-- Imbued Tempest Boots [H]
+			i(162494),	-- Imbued Tempest Leggings [A]
+			i(162469),	-- Imbued Tempest Leggings [H]
+			i(161961),	-- Mistscale Boots [A]
+			i(154156),	-- Mistscale Boots [H]
+			i(161971),	-- Mistscale Knuckles [A]
+			i(154162),	-- Mistscale Knuckles [H]
+			i(161962),	-- Mistscale Leggings [A]
+			i(154157),	-- Mistscale Greaves [H]
+			i(161968),	-- Recurve Bow of the Strands [A]
+			i(154159),	-- Recurve Bow of the Strands [H]
+			i(161960),	-- Shimmerscale Armguards [A]
+			i(154153),	-- Shimmerscale Armguards [H]
+			i(161955),	-- Shimmerscale Gauntlets [A]
+			i(154148),	-- Shimmerscale Gauntlets [H]
+			i(161956),	-- Shimmerscale Helm [A]
+			i(154149),	-- Shimmerscale Helm [H]
+			i(161957),	-- Shimmerscale Greaves [A]
+			i(154150),	-- Shimmerscale Leggings [H]
+			i(161958),	-- Shimmerscale Pauldrons [A]
+			i(154151),	-- Shimmerscale Pauldrons [H]
+			i(161969),	-- Shimmerscale Striker [A]
+			i(154160),	-- Shimmerscale Striker [H]
+			i(161954),	-- Shimmerscale Treads [A]
+			i(154147),	-- Shimmerscale Treads [H]
+			i(161953),	-- Shimmerscale Vest [A]
+			i(154146),	-- Shimmerscale Vest [H]
+			i(161959),	-- Shimmerscale Waistguard [A]
+			i(154152),	-- Shimmerscale Waistguard [H]
+			i(164711),	-- Sinister Combatant's Bow [A]
+			i(164670),	-- Sinister Combatant's Bow [H]
+			i(164703),	-- Sinister Combatant's Leather Armguards [A]
+			i(164662),	-- Sinister Combatant's Leather Armguards [H]
+			i(164700),	-- Sinister Combatant's Leather Gauntlets [A]
+			i(164659),	-- Sinister Combatant's Leather Gauntlets [H]
+			i(164701),	-- Sinister Combatant's Leather Greaves [A]
+			i(164660),	-- Sinister Combatant's Leather Leggings [H]
+			i(164699),	-- Sinister Combatant's Leather Treads [A]
+			i(164658),	-- Sinister Combatant's Leather Treads [H]
+			i(164702),	-- Sinister Combatant's Leather Waistguard [A]
+			i(164661),	-- Sinister Combatant's Leather Waistguard [H]
+			i(164708),	-- Sinister Combatant's Mail Armguards [A]
+			i(164667),	-- Sinister Combatant's Mail Armguards [H]
+			i(164705),	-- Sinister Combatant's Mail Gauntlets [A]
+			i(164664),	-- Sinister Combatant's Mail Gauntlets [H]
+			i(164706),	-- Sinister Combatant's Mail Greaves [A]
+			i(164665),	-- Sinister Combatant's Mail Leggings [H]
+			i(164704),	-- Sinister Combatant's Mail Treads [A]
+			i(164663),	-- Sinister Combatant's Mail Treads [H]
+			i(164707),	-- Sinister Combatant's Mail Waistguard [A]
+			i(164666),	-- Sinister Combatant's Mail Waistguard [H]
 		}),
 		n(-190, { -- Tailoring
 			n(-37, {	-- Discovery
@@ -574,33 +642,75 @@ _.Craftables =
 				}),
 			}),
 			i(154695),	-- Deep Sea Bag
-			i(162478),	-- Emblazoned Deep Sea Breeches
-			i(162480),	-- Emblazoned Deep Sea Breeches
-			i(162476),	-- Emblazoned Deep Sea Gloves
-			i(162479),	-- Emblazoned Deep Sea Gloves
+			i(162480),	-- Emblazoned Deep Sea Breeches [A]
+			i(162478),	-- Emblazoned Deep Sea Breeches [H]
+			i(162479),	-- Emblazoned Deep Sea Gloves [A]
+			i(162476),	-- Emblazoned Deep Sea Gloves [H]
 			i(154696),	-- Embroidered Deep Sea Bag
-			i(161986),	-- Embroidered Deep Sea Breeches
-			i(154700),	-- Embroidered Deep Sea Cloak
-			i(161985),	-- Embroidered Deep Sea Gloves
-			i(159915),	-- Honorable Combatant's Satin Belt
-			i(159912),	-- Honorable Combatant's Satin Boots
-			i(159916),	-- Honorable Combatant's Satin Bracers
-			i(159917),	-- Honorable Combatant's Satin Cloak
-			i(159913),	-- Honorable Combatant's Satin Mittens
-			i(159914),	-- Honorable Combatant's Satin Pants
-			i(162488),	-- Imbued Deep Sea Breeches
-			i(162477),	-- Imbued Deep Sea Breeches
-			i(162487),	-- Imbued Deep Sea Gloves
-			i(162475),	-- Imbued Deep Sea Gloves
-			i(154691),	-- Tidespray Linen Belt
-			i(154692),	-- Tidespray Linen Bracers
-			i(154697),	-- Tidespray Linen Cloak
-			i(154688),	-- Tidespray Linen Hood
-			i(154687),	-- Tidespray Linen Mittens
-			i(154689),	-- Tidespray Linen Pants
-			i(154685),	-- Tidespray Linen Robe
-			i(154686),	-- Tidespray Linen Sandals
-			i(154690),	-- Tidespray Linen Spaulders
+			i(161986),	-- Embroidered Deep Sea Breeches [A]
+			i(154694),	-- Embroidered Deep Sea Breeches [H]
+			i(161990),	-- Embroidered Deep Sea Cloak [A]
+			i(154700),	-- Embroidered Deep Sea Cloak [H]
+			i(161985),	-- Embroidered Deep Sea Gloves [A]
+			i(154693),	-- Embroidered Deep Sea Gloves [H]
+			i(165377),	-- Enhanced Deep Sea Breeches [A]
+			i(165378),	-- Enhanced Deep Sea Breeches [H]
+			i(165402),	-- Enhanced Deep Sea Gloves [A]
+			i(165403),	-- Enhanced Deep Sea Gloves [H]
+			i(165385),	-- Fortified Deep Sea Breeches [A]
+			i(165386),	-- Fortified Deep Sea Breeches [H]
+			i(165410),	-- Fortified Deep Sea Gloves [A]
+			i(165411),	-- Fortified Deep Sea Gloves [H]
+			i(161996),	-- Honorable Combatant's Satin Belt [A]
+			i(159915),	-- Honorable Combatant's Satin Belt [H]
+			i(161993),	-- Honorable Combatant's Satin Boots [A]
+			i(159912),	-- Honorable Combatant's Satin Boots [H]
+			i(161997),	-- Honorable Combatant's Satin Bracers [A]
+			i(159916),	-- Honorable Combatant's Satin Bracers [H]
+			i(161998),	-- Honorable Combatant's Satin Cloak [A]
+			i(159917),	-- Honorable Combatant's Satin Cloak [H]
+			i(161994),	-- Honorable Combatant's Satin Mittens [A]
+			i(159913),	-- Honorable Combatant's Satin Mittens [H]
+			i(161995),	-- Honorable Combatant's Satin Pants [A]
+			i(159914),	-- Honorable Combatant's Satin Pants [H]
+			i(162488),	-- Imbued Deep Sea Breeches [A]
+			i(162477),	-- Imbued Deep Sea Breeches [H]
+			i(162487),	-- Imbued Deep Sea Gloves [A]
+			i(162475),	-- Imbued Deep Sea Gloves [H]
+			i(164715),	-- Sinister Combatant's Satin Belt [A]
+			i(164674),	-- Sinister Combatant's Satin Belt [H]
+			i(164712),	-- Sinister Combatant's Satin Boots [A]
+			i(164671),	-- Sinister Combatant's Satin Boots [H]
+			i(164716),	-- Sinister Combatant's Satin Bracers [A]
+			i(164675),	-- Sinister Combatant's Satin Bracers [H]
+			i(164717),	-- Sinister Combatant's Satin Cloak [A]
+			i(164676),	-- Sinister Combatant's Satin Cloak [H]
+			i(164713),	-- Sinister Combatant's Satin Mittens [A]
+			i(164672),	-- Sinister Combatant's Satin Mittens [H]
+			i(164714),	-- Sinister Combatant's Satin Pants [A]
+			i(164673),	-- Sinister Combatant's Satin Pants [H]
+			i(165393),	-- Imbued Deep Sea Breeches [A]
+			i(165394),	-- Imbued Deep Sea Breeches [H]
+			i(165418),	-- Imbued Deep Sea Gloves [A]
+			i(165419),	-- Imbued Deep Sea Gloves [H]
+			i(161983),	-- Tidespray Linen Belt [A]
+			i(154691),	-- Tidespray Linen Belt [H]
+			i(161984),	-- Tidespray Linen Bracers [A]
+			i(154692),	-- Tidespray Linen Bracers [H]
+			i(161987),	-- Tidespray Linen Cloak [A]
+			i(154697),	-- Tidespray Linen Cloak [H]
+			i(161980),	-- Tidespray Linen Hood [A]
+			i(154688),	-- Tidespray Linen Hood [H]
+			i(161979),	-- Tidespray Linen Mittens [A]
+			i(154687),	-- Tidespray Linen Mittens [H]
+			i(161981),	-- Tidespray Linen Pants [A]
+			i(154689),	-- Tidespray Linen Pants [H]
+			i(161977),	-- Tidespray Linen Robe [A]
+			i(154685),	-- Tidespray Linen Robe [H]
+			i(161978),	-- Tidespray Linen Sandals [A]
+			i(154686),	-- Tidespray Linen Sandals [H]
+			i(161982),	-- Tidespray Linen Spaulders [A]
+			i(154690),	-- Tidespray Linen Spaulders [H]
 		}),
 	}),
 };
