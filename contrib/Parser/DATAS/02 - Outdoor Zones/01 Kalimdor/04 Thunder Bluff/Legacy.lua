@@ -31,6 +31,14 @@ _.Zones =
 								un(2, i(17508)),	-- Forcestone Buckler
 								un(2, i( 7749)),	-- Omega Orb
 							})),
+							un(40, qh(1136, {	-- Frostmaw
+								["g"] = {
+									un(2, i(6720)),	-- Spirit Hunter's Headdress
+								},
+								["qg"] = 3441,	-- Melor Stonehoof
+								["races"] = HORDE_ONLY,
+								["u"] = 40,	-- Legacy Quest
+							})),
 							un(40, qh( 914, {	-- Leaders of the Fang
 								un(2, i(6505)),	-- Crescent Staff
 								un(2, i(6504)),	-- Wingblade
