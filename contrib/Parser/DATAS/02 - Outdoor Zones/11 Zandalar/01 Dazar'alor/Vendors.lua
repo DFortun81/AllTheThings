@@ -534,7 +534,7 @@ _.Zones =
 									["itemID"] = 165314,	-- Recipe: Sinister Combatant's Leather Leggings [Rank 2]
 								},
 								{	-- Recipe: Sinister Combatant's Leather Leggings [Rank 3]
-									["itemID"] = 164315,	-- Recipe: Sinister Combatant's Leather Leggings [Rank 3]
+									["itemID"] = 165315,	-- Recipe: Sinister Combatant's Leather Leggings [Rank 3]
 								},
 								{	-- Recipe: Sinister Combatant's Leather Treads [Rank 2]
 									["itemID"] = 165310,	-- Recipe: Sinister Combatant's Leather Treads [Rank 2]

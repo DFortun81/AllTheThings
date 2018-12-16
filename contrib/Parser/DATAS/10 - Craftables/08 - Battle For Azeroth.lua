@@ -5,16 +5,72 @@ _.Craftables =
 {
 	tier(8, { -- Battle For Azeroth
 		n(-180, { -- Alchemy
-			i(152636),	-- Endless Tincture of Fractional Power
-			i(152634),	-- Endless Tincture of Renewed Combat
-			i(160325, {	-- Quivering Sac
-				i(163859),	-- Baby Crawg
-				i(163861),	-- Bloodfeaster Larva
-				i(163860),	-- Gearspring Hopper
-				i(163858),	-- Slippy
+		-- Reviewed and updated as of 12.15.2018 BfA 8.1
+			filter(200, {	-- Recipes
+				{	-- Recipe: Emblazoned Alchemist Stone
+					["itemID"] = 166978,	-- Recipe: Emblazoned Alchemist Stone
+				},
+				{	-- Recipe: Eternal Alchemist Stone
+					["itemID"] = 165930,	-- Recipe: Eternal Alchemist Stone
+				},
+				{	-- Recipe: Imbued Alchemist Stone
+					["itemID"] = 166977,	-- Recipe: Imbued Alchemist Stone
+				},
+				{	-- Recipe: Spirited Alchemist Stone
+					["itemID"] = 165929,	-- Recipe: Spirited Alchemist Stone
+				},
 			}),
-			i(152637),	-- Siren's Alchemist Stone
-			i(152632),	-- Surging Alchemist Stone
+			filter(101, {	-- Battle Pets
+				{	-- Quivering Sac
+					["itemID"] = 160325,	-- Quivering Sac
+					["g"] = {
+						{	-- Baby Crawg
+							["itemID"] = 163859,	-- Baby Crawg
+						},
+						{	-- Bloodfeaster Larva
+							["itemID"] = 163861,	-- Bloodfeaster Larva
+						},
+						{	-- Gearspring Hopper
+							["itemID"] = 163860,	-- Gearspring Hopper
+						},
+						{	-- Slippy
+							["itemID"] = 163858,	-- Slippy
+						},
+					},
+				},
+			}),
+			filter(53, {	-- Trinkets
+				{	-- Emblazoned Alchemist Stone
+					["itemID"] = 291086,	-- Emblazoned Alchemist Stone
+				},
+				{	-- Endless Tincture of Fractional Power
+					["itemID"] = 152636,	-- Endless Tincture of Fractional Power
+				},
+				{	-- Endless Tincture of Renewed Combat
+					["itemID"] = 152634,	-- Endless Tincture of Renewed Combat
+				},
+				{	-- Eternal Alchemist Stone
+					["itemID"] = 286923,	-- Eternal Alchemist Stone
+				},
+				{	-- Imbued Alchemist Stone
+					["itemID"] = 291085,	-- Imbued Alchemist Stone
+				},
+				{	-- Sanguinated Alchemist Stone
+					["itemID"] = 291084,	-- Sanguinated Alchemist Stone
+				},
+				{	-- Siren's Alchemist Stone
+					["itemID"] = 152637,	-- Siren's Alchemist Stone
+				},
+				{	-- Spirited Alchemist Stone
+					["itemID"] = 286922,	-- Spirited Alchemist Stone
+				},
+				{	-- Surging Alchemist Stone
+					["itemID"] = 152632,	-- Surging Alchemist Stone
+				},
+				{	-- Tidal Alchemist Stone
+					["itemID"] = 286921,	-- Tidal Alchemist Stone
+				},
+			}),
 		}),
 		n(-181, { -- Blacksmithing
 		-- Reviewed and updated as of 12.15.2018 BfA 8.1
