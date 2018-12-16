@@ -12,6 +12,22 @@ _.Zones =
 					{	-- Legacy
 						["npcID"] = -40,	-- Legacy
 						["g"] = {
+							n(-2, {					-- Vendors
+								["g"] = {
+									n(12777, { -- Captain Dirgehammer
+										["g"] = {
+											un(2, i(16422)),	-- Knight-Captain's Dragonhide Leggings
+											un(2, i(16421)),	-- Knight-Captains's Dragonhide Tunic
+											un(2, i(16393)),	-- Knight-Lieutenant's Dragonhide Footwraps
+											un(2, i(16397)),	-- Knight-Lieutenant's Dragonhide Gloves
+											un(2, i(16423)),	-- Lieutenant Commander's Dragonhide Epaulets
+											un(2, i(16424)),	-- Lieutenant Commander's Dragonhide Shroud
+										},
+										["races"] = ALLIANCE_ONLY,
+										["u"] = 40, -- Legacy NPC/Creature
+									}),
+								},
+							}),
 							{	-- Quests
 								["npcID"] = -17,	-- Quests
 								["g"] = {

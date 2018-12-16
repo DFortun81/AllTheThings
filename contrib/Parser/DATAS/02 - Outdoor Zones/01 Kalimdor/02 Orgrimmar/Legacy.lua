@@ -12,7 +12,9 @@ _.Zones =
 							["g"] = {
 								n(34043, {	-- Lady Palanseer
 									["g"] = {
-										un(2, i(16496)), -- Blood Guard's Dragonhide Gauntlets
+										un(2, i(16494)),	-- Blood Guard's Dragonhide Boots
+										un(2, i(16496)),	-- Blood Guard's Dragonhide Gauntlets
+										un(2, i(16499)),	-- Blood Guard's Leather Vices
 									},
 									["u"] = 43, -- Legacy NPC/Creature
 								}),

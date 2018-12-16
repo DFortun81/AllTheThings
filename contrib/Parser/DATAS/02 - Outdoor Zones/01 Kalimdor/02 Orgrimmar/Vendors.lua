@@ -452,6 +452,7 @@ _.Zones =
 						i(22862),  -- Blood Guard's Chain Vices
 						i(22863),  -- Blood Guard's Dragonhide Grips
 						i(22864),  -- Blood Guard's Leather Grips
+						i(22852),	-- Blood Guard's Leather Treads
 						i(22865),  -- Blood Guard's Dreadweave Handwraps
 						i(22867),  -- Blood Guard's Mail Vices
 						i(22868),  -- Blood Guard's Plate Gauntlets
