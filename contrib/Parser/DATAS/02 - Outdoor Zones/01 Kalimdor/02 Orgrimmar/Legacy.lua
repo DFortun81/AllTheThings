@@ -8,6 +8,16 @@ _.Zones =
 			["groups"] = {
 				n(-40, {	-- Legacy
 					["groups"] = {
+						n(-2, {	-- Vendors (Legacy)
+							["g"] = {
+								n(34043, {	-- Lady Palanseer
+									["g"] = {
+										un(2, i(16496)), -- Blood Guard's Dragonhide Gauntlets
+									},
+									["u"] = 43, -- Legacy NPC/Creature
+								}),
+							},
+						}),
 						n(-17, {	-- Quests (Legacy)
 							{	-- Alliance Relations
 								["questID"] = 1436,
