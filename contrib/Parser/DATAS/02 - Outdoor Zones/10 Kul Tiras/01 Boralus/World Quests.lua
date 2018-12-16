@@ -181,16 +181,51 @@ _.Zones =
 										73.21, 11.01
 									},
 								}),
-								q(52389, {	-- Work Order: Contract: Proudmoore Admiralty
+								{	-- Work Order: Contract: Proudmoore Admiralty
+									["questID"] = 52389,	-- Work Order: Contract: Proudmoore Admiralty
 									["groups"] = {
-										i(162360, {	-- Recipe: Contract: Proudmoore Admiralty [Rank 3]
-											["spellID"] = 256277,
-										}),
+										i(162360), 	-- Recipe: Contract: Proudmoore Admiralty [Rank 3]
 									},
-									["requireSkill"] = 773,	-- Inscription
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = ALLIANCE_ONLY,
-								}),
+									["requireSkill"] = 773,	-- Inscription
+								},
+								{	-- Work Order: Crow's Nest Scope
+									["questID"] = 52368,	-- Work Order: Crow's Nest Scope
+									["groups"] = {
+										i(162343), 	-- Schematic: Crow's Nest Scope [Rank 3]
+									},
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
+									["races"] = ALLIANCE_ONLY,
+									["requireSkill"] = 202,	-- Engineering
+								},
+								{	-- Work Order: Enchant Weapon - Coastal Surge
+									["questID"] = 52355,	-- Work Order: Enchant Weapon - Coastal Surge
+									["groups"] = {
+										i(162315), 	-- Formula: Enchant Weapon - Coastal Surge [Rank 3]
+									},
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
+									["races"] = ALLIANCE_ONLY,
+									["requireSkill"] = 333,	-- Enchanting
+								},
+								{	-- Work Order: Enchant Weapon - Torrent of Elements
+									["questID"] = 52356,	-- Work Order: Enchant Weapon - Torrent of Elements
+									["groups"] = {
+										i(162319), 	-- Formula: Enchant Weapon - Torrent of Elements [Rank 3]
+									},
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
+									["races"] = ALLIANCE_ONLY,
+									["requireSkill"] = 333,	-- Enchanting
+								},
+								{	-- Work Order: Incendiary Ammunition
+									["questID"] = 52363,	-- Work Order: Incendiary Ammunition
+									["groups"] = {
+										i(162321), 	-- Schematic: Incendiary Ammunition [Rank 3]
+									},
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
+									["races"] = ALLIANCE_ONLY,
+									["requireSkill"] = 202,	-- Engineering
+								},
 								q(52405, {	-- Work Order: Kubiline
 									["requireSkill"] = 755,	-- Jewelcrafting
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
@@ -200,6 +235,15 @@ _.Zones =
 										67.61, 21.81
 									},
 								}),
+								{	-- Work Order: XA-1000 Surface Skimmer
+									["questID"] = 52366,	-- Work Order: XA-1000 Surface Skimmer
+									["groups"] = {
+										i(162339), 	-- Schematic: XA-1000 Surface Skimmer [Rank 3]
+									},
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
+									["races"] = ALLIANCE_ONLY,
+									["requireSkill"] = 202,	-- Engineering
+								},
 							},
 						}),
 						i(163857, {	-- Azerite Armor Cache [Dungeon Version]

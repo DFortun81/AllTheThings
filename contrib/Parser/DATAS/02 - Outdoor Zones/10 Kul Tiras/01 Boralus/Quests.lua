@@ -287,7 +287,7 @@ _.Zones =
 							["isBreadcrumb"] = true,
 						})),
 						
-						qa(48622, {	-- The Vanishing Lord
+						qa(48622, {		-- The Vanishing Lord
 							["qg"] = 121235,	-- Taelia
 							["coord"] = { 68.0, 22.0 },
 							-- ["sourceQuests"] = {  },	-- slumber is dumb and forgot lol :)
@@ -302,6 +302,14 @@ _.Zones =
 							["sourceQuests"] = { 50790 },	-- Hot Pursuit [Alliance Only]
 							["isBreadcrumb"] = true,
 						})),
+						{	-- Trouble in Gnomeregan
+							["questID"]	= 54184,	-- Trouble in Gnomeregan
+							["qg"] = 147645,	-- Tizzy Gearjolt
+							["coord"] = { 50.19, 46.81},
+							["races"] = ALLIANCE_ONLY,
+							["isBreadcrumb"] = true,
+						},
+						
 					},
 				}),
 			},

@@ -38,6 +38,7 @@ _.PetJournal =
 		p(627),		-- Infected Squirrel
 		p(453),		-- Infested Bear Cub
 		un(10, p(302)),	-- Landro's Lichling
+		p(2532),	-- Leper Rat
 		un(10, p(249)),		-- Lil' K.T.
 		p(458),		-- Lost of Lordaeron
 		p(1351),	-- Macabre Marionette

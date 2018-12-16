@@ -168,6 +168,15 @@ _.Zones =
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = HORDE_ONLY,
 								}),
+								{	-- Work Order: F.R.I.E.D.
+									["questID"] = 52371,	-- Work Order: F.R.I.E.D.
+									["groups"] = {
+										i(162331), 	-- Schematic: F.R.I.E.D. [Rank 3]
+									},
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
+									["races"] = HORDE_ONLY,
+									["requireSkill"] = 202,	-- Engineering
+								},
 								{	-- Work Order: Potion of Concealment
 									["questID"] = 52338,
 									["groups"] = {
@@ -176,6 +185,15 @@ _.Zones =
 									["isWQ"] = 120,
 									["races"] = HORDE_ONLY,
 									["requireSkill"] = 171,	-- Alchemy
+								},
+								{	-- Work Order: Thermo-Accelerated Plague Spreader
+									["questID"] = 52370,	-- Work Order: Thermo-Accelerated Plague Spreader
+									["groups"] = {
+										i(162736), 	-- Schematic: Thermo-Accelerated Plague Spreader [Rank 3]
+									},
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
+									["races"] = HORDE_ONLY,
+									["requireSkill"] = 202,	-- Engineering
 								},
 							},
 						}),

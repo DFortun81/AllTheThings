@@ -216,6 +216,15 @@ _.Zones =
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = HORDE_ONLY,
 								}),
+								{	-- Work Order: Crow's Nest Scope
+									["questID"] = 52374,	-- Work Order: Crow's Nest Scope
+									["groups"] = {
+										i(162343), 	-- Schematic: Crow's Nest Scope [Rank 3]
+									},
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
+									["races"] = ALLIANCE_ONLY,
+									["requireSkill"] = 202,	-- Engineering
+								},
 								q(52373, {	-- Work Order: Electroshock Mount Motivator [H]
 									["groups"] = {
 										i(162340, {	-- Schematic: Electroshock Mount Motivator
@@ -226,6 +235,33 @@ _.Zones =
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = HORDE_ONLY,
 								}),
+								{	-- Work Order: Enchant Ring - Seal of Haste
+									["questID"] = 52358,	-- Work Order: Enchant Ring - Seal of Haste
+									["groups"] = {
+										i(162299), 	-- Formula: Enchant Ring - Seal of Haste [Rank 3]
+									},
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
+									["races"] = HORDE_ONLY,
+									["requireSkill"] = 333,	-- Enchanting
+								},
+								{	-- Work Order: Enchant Ring - Seal of Mastery
+									["questID"] = 52359,	-- Work Order: Enchant Ring - Seal of Mastery
+									["groups"] = {
+										i(162300), 	-- Formula: Enchant Ring - Seal of Mastery [Rank 3]
+									},
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
+									["races"] = HORDE_ONLY,
+									["requireSkill"] = 333,	-- Enchanting
+								},
+								{	-- Work Order: Incendiary Ammunition
+									["questID"] = 52369,	-- Work Order: Incendiary Ammunition
+									["groups"] = {
+										i(162321), 	-- Schematic: Incendiary Ammunition [Rank 3]
+									},
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
+									["races"] = HORDE_ONLY,
+									["requireSkill"] = 202,	-- Engineering
+								},
 							},
 						}),
 						i(163857, {	-- Azerite Armor Cache [Dungeon Version]

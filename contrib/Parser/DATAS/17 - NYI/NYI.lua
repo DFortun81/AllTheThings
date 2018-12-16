@@ -693,6 +693,17 @@ _.NeverImplemented =
 			un(1, i(86553)),	-- Master Cookbook
 			un(1, i(86554)),	-- Grand Master Cookbook
 		}),
+		n(-183, { -- Engineering
+			un(1, i(162333)),	-- Schematic: Catchroot Seed Spreader
+			un(1, i(162737)),	-- Schematic: Catchroot Seed Spreader
+			un(1, i(162334)),	-- Schematic: Charged Refrigeration Projectile
+			un(1, i(162738)),	-- Schematic: Charged Refrigeration Projectile
+			un(1, i(162338)),	-- Schematic: Electro-Induced Slumber Bomb
+			un(1, i(162335)),	-- Schematic: Fro-Grow Grenade
+			un(1, i(162739)),	-- Schematic: Fro-Grow Grenade
+			un(1, i(162336)),	-- Schematic: Neurological Immobilization Bomb
+			un(1, i(162740)),	-- Schematic: Neurological Immobilization Bomb
+		}),
 		n(-185, { -- Inscription
 			un(1, i(87830)),	-- Recipe: Tigersblood Tincture
 			un(1, i(87829)),	-- Recipe: Incarnadine Ink
@@ -727,6 +738,9 @@ _.NeverImplemented =
 			un(1, i(146345)),	-- Vantus Rune Technique: Return to Karazhan (Upper) (likely PTR version)
 			un(1, i(146365)),	-- Vantus Rune Technique: Return to Karazhan (Upper) (likely PTR version)
 			un(1, i(146385)),	-- Vantus Rune Technique: Return to Karazhan (Upper) (likely PTR version)
+			un(1, i(165735)),	-- Vantus Rune Technique: Shrine of Storms Raid (likely PTR version)
+			un(1, i(165736)),	-- Vantus Rune Technique: Shrine of Storms Raid (likely PTR version)
+			un(1, i(165737)),	-- Vantus Rune Technique: Shrine of Storms Raid (likely PTR version)
 			un(1, i(146341)),	-- Vantus Rune Technique: The Arcway (likely PTR version)
 			un(1, i(146361)),	-- Vantus Rune Technique: The Arcway (likely PTR version)
 			un(1, i(146381)),	-- Vantus Rune Technique: The Arcway (likely PTR version)

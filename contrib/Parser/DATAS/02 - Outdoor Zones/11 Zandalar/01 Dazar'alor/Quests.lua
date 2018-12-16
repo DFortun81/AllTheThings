@@ -216,6 +216,11 @@ _.Zones =
 									["qg"] = 127489,	-- Hexlord Raal
 									["sourceQuests"] = { 47440, 47439, },	-- Pa'ku, Master of Winds, Gonk, Lord of the Pack
 								}),
+								{	-- Trouble in Gnomeregan
+									["questID"]	= 54276,	-- Trouble in Gnomeregan
+									["qg"] = 147641,	-- Radek Fuselock
+									["isBreadcrumb"] = true,
+								},
 							},
 							["races"] = HORDE_ONLY,
 						}),

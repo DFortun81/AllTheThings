@@ -5,21 +5,7 @@ _.Craftables =
 {
 	tier(8, { -- Battle For Azeroth
 		n(-180, { -- Alchemy
-		-- Reviewed and updated as of 12.15.2018 BfA 8.1
-			filter(200, {	-- Recipes
-				{	-- Recipe: Emblazoned Alchemist Stone
-					["itemID"] = 166978,	-- Recipe: Emblazoned Alchemist Stone
-				},
-				{	-- Recipe: Eternal Alchemist Stone
-					["itemID"] = 165930,	-- Recipe: Eternal Alchemist Stone
-				},
-				{	-- Recipe: Imbued Alchemist Stone
-					["itemID"] = 166977,	-- Recipe: Imbued Alchemist Stone
-				},
-				{	-- Recipe: Spirited Alchemist Stone
-					["itemID"] = 165929,	-- Recipe: Spirited Alchemist Stone
-				},
-			}),
+		-- Reviewed and updated as of 12.16.2018 BfA 8.1
 			filter(101, {	-- Battle Pets
 				{	-- Quivering Sac
 					["itemID"] = 160325,	-- Quivering Sac
@@ -54,52 +40,46 @@ _.Craftables =
 				},
 				{	-- Imbued Alchemist Stone
 					["itemID"] = 291085,	-- Imbued Alchemist Stone
+					["g"] = {
+						{	-- Recipe: Emblazoned Alchemist Stone
+							["itemID"] = 166978,	-- Recipe: Emblazoned Alchemist Stone
+						},
+					},
 				},
 				{	-- Sanguinated Alchemist Stone
 					["itemID"] = 291084,	-- Sanguinated Alchemist Stone
+					["g"] = {
+						{	-- Recipe: Imbued Alchemist Stone
+							["itemID"] = 166977,	-- Recipe: Imbued Alchemist Stone
+						},
+					},
 				},
 				{	-- Siren's Alchemist Stone
 					["itemID"] = 152637,	-- Siren's Alchemist Stone
 				},
 				{	-- Spirited Alchemist Stone
 					["itemID"] = 286922,	-- Spirited Alchemist Stone
+					["g"] = {
+						{	-- Recipe: Eternal Alchemist Stone
+							["itemID"] = 165930,	-- Recipe: Eternal Alchemist Stone
+						},
+					},
 				},
 				{	-- Surging Alchemist Stone
 					["itemID"] = 152632,	-- Surging Alchemist Stone
 				},
 				{	-- Tidal Alchemist Stone
 					["itemID"] = 286921,	-- Tidal Alchemist Stone
+					["g"] = {
+						{	-- Recipe: Spirited Alchemist Stone
+							["itemID"] = 165929,	-- Recipe: Spirited Alchemist Stone
+						},
+					},
 				},
 			}),
 		}),
 		n(-181, { -- Blacksmithing
-		-- Reviewed and updated as of 12.15.2018 BfA 8.1
-			filter(200, {	-- Recipes
-				{	-- Recipe: Emblazoned Stormsteel Girdle
-					["itemID"] = 162498,	-- Recipe: Emblazoned Stormsteel Girdle
-				},
-				{	-- Recipe: Emblazoned Stormsteel Legguards
-					["itemID"] = 162496,	-- Recipe: Emblazoned Stormsteel Legguards
-				},
-				{	-- Recipe: Fortified Stormsteel Girdle
-					["itemID"] = 165642,	-- Recipe: Fortified Stormsteel Girdle
-				},
-				{	-- Recipe: Fortified Stormsteel Legguards
-					["itemID"] = 165640,	-- Recipe: Fortified Stormsteel Legguards
-				},
-				{	-- Recipe: Imbued Stormsteel Girdle
-					["itemID"] = 162497,	-- Recipe: Imbued Stormsteel Girdle
-				},
-				{	-- Recipe: Imbued Stormsteel Legguards
-					["itemID"] = 162495,	-- Recipe: Imbued Stormsteel Legguards
-				},
-				{	-- Recipe: Tempered Stormsteel Girdle
-					["itemID"] = 165643,	-- Recipe: Tempered Stormsteel Girdle
-				},
-				{	-- Recipe: Tempered Stormsteel Legguards
-					["itemID"] = 165641,	-- Recipe: Tempered Stormsteel Legguards
-				},
-			}),
+		-- Reviewed and updated as of 12.16.2018 BfA 8.1
 			filter(20, {	-- Daggers
 				{	-- Honorable Combatant's Shanker [A]
 					["itemID"] = 161922,	-- Honorable Combatant's Shanker [A]
@@ -317,15 +297,35 @@ _.Craftables =
 				},
 				{	-- Enhanced Stormsteel Girdle [A]
 					["itemID"] = 165406,	-- Enhanced Stormsteel Girdle [A]
+					["g"] = {
+						{	-- Recipe: Fortified Stormsteel Girdle
+							["itemID"] = 165642,	-- Recipe: Fortified Stormsteel Girdle
+						},
+					},
 				},
 				{	-- Enhanced Stormsteel Girdle [H]
 					["itemID"] = 165407,	-- Enhanced Stormsteel Girdle [H]
+					["g"] = {
+						{	-- Recipe: Fortified Stormsteel Girdle
+							["itemID"] = 165642,	-- Recipe: Fortified Stormsteel Girdle
+						},
+					},
 				},
 				{	-- Fortified Stormsteel Girdle [A]
 					["itemID"] = 165414,	-- Fortified Stormsteel Girdle [A]
+					["g"] = {
+						{	-- Recipe: Tempered Stormsteel Girdle
+							["itemID"] = 165643,	-- Recipe: Tempered Stormsteel Girdle
+						},
+					},
 				},
 				{	-- Fortified Stormsteel Girdle [H]
 					["itemID"] = 165415,	-- Fortified Stormsteel Girdle [H]
+					["g"] = {
+						{	-- Recipe: Tempered Stormsteel Girdle
+							["itemID"] = 165643,	-- Recipe: Tempered Stormsteel Girdle
+						},
+					},
 				},
 				{	-- Honorable Combatant's Plate Waistguard [A]
 					["itemID"] = 161896,	-- Honorable Combatant's Plate Waistguard [A]
@@ -335,9 +335,19 @@ _.Craftables =
 				},
 				{	-- Imbued Stormsteel Girdle [A]
 					["itemID"] = 162492,	-- Imbued Stormsteel Girdle [A]
+					["g"] = {
+						{	-- Recipe: Emblazoned Stormsteel Girdle
+							["itemID"] = 162498,	-- Recipe: Emblazoned Stormsteel Girdle
+						},
+					},
 				},
 				{	-- Imbued Stormsteel Girdle [H]
 					["itemID"] = 162465,	-- Imbued Stormsteel Girdle [H]
+					["g"] = {
+						{	-- Recipe: Emblazoned Stormsteel Girdle
+							["itemID"] = 162498,	-- Recipe: Emblazoned Stormsteel Girdle
+						},
+					},
 				},
 				{	-- Monel-Hardened Waistguard [A]
 					["itemID"] = 161886,	-- Monel-Hardened Waistguard [A]
@@ -353,9 +363,19 @@ _.Craftables =
 				},
 				{	-- Stormsteel Girdle [A]
 					["itemID"] = 161889,	-- Stormsteel Girdle [A]
+					["g"] = {
+						{	-- Recipe: Imbued Stormsteel Girdle
+							["itemID"] = 162497,	-- Recipe: Imbued Stormsteel Girdle
+						},
+					},
 				},
 				{	-- Stormsteel Girdle [H]
 					["itemID"] = 152811,	-- Stormsteel Girdle [H]
+					["g"] = {
+						{	-- Recipe: Imbued Stormsteel Girdle
+							["itemID"] = 162497,	-- Recipe: Imbued Stormsteel Girdle
+						},
+					},
 				},
 				{	-- Tempered Stormsteel Girdle [A]
 					["itemID"] = 165422,	-- Tempered Stormsteel Girdle [A]
@@ -373,12 +393,27 @@ _.Craftables =
 				},
 				{	-- Enhanced Stormsteel Legguards [A]
 					["itemID"] = 165379,	-- Enhanced Stormsteel Legguards [A]
+					["g"] = {
+						{	-- Recipe: Fortified Stormsteel Legguards
+							["itemID"] = 165640,	-- Recipe: Fortified Stormsteel Legguards
+						},
+					},
 				},
 				{	-- Enhanced Stormsteel Legguards [H]
 					["itemID"] = 165380,	-- Enhanced Stormsteel Legguards [H]
+					["g"] = {
+						{	-- Recipe: Fortified Stormsteel Legguards
+							["itemID"] = 165640,	-- Recipe: Fortified Stormsteel Legguards
+						},
+					},
 				},
 				{	-- Fortified Stormsteel Legguards [A]
 					["itemID"] = 165389,	-- Fortified Stormsteel Legguards [A]
+					["g"] = {
+						{	-- Recipe: Tempered Stormsteel Legguards
+							["itemID"] = 165641,	-- Recipe: Tempered Stormsteel Legguards
+						},
+					},
 				},
 				{	-- Fortified Stormsteel Legguards [H]
 					["itemID"] = 165390,	-- Fortified Stormsteel Legguards [H]
@@ -391,9 +426,19 @@ _.Craftables =
 				},
 				{	-- Imbued Stormsteel Legguards [A]
 					["itemID"] = 162491,	-- Imbued Stormsteel Legguards [A]
+					["g"] = {
+						{	-- Recipe: Emblazoned Stormsteel Legguards
+							["itemID"] = 162496,	-- Recipe: Emblazoned Stormsteel Legguards
+						},
+					},
 				},
 				{	-- Imbued Stormsteel Legguards [H]
 					["itemID"] = 162463,	-- Imbued Stormsteel Legguards [H]
+					["g"] = {
+						{	-- Recipe: Emblazoned Stormsteel Legguards
+							["itemID"] = 162496,	-- Recipe: Emblazoned Stormsteel Legguards
+						},
+					},
 				},
 				{	-- Monel-Hardened Greaves [A]
 					["itemID"] = 161884,	-- Monel-Hardened Greaves [A]
@@ -409,9 +454,19 @@ _.Craftables =
 				},
 				{	-- Stormsteel Legguards [A]
 					["itemID"] = 161888,	-- Stormsteel Legguards [A]
+					["g"] = {
+						{	-- Recipe: Imbued Stormsteel Legguards
+							["itemID"] = 162495,	-- Recipe: Imbued Stormsteel Legguards
+						},
+					},
 				},
 				{	-- Stormsteel Legguards [H]
 					["itemID"] = 152810,	-- Stormsteel Legguards [H]
+					["g"] = {
+						{	-- Recipe: Imbued Stormsteel Legguards
+							["itemID"] = 162495,	-- Recipe: Imbued Stormsteel Legguards
+						},
+					},
 				},
 				{	-- Tempered Stormsteel Legguards [A]
 					["itemID"] = 165397,	-- Tempered Stormsteel Legguards [A]
@@ -442,33 +497,223 @@ _.Craftables =
 			}),
 		}),
 		n(-182, { -- Enchanting
-			i(161927),	-- Enchanter's Sorcerous Scepter [A]
-			i(152874),	-- Enchanter's Sorcerous Scepter [H]
-			i(161925),	-- Enchanter's Umbral Wand [A]
-			i(152872),	-- Enchanter's Umbral Wand [H]
-			i(161928),	-- Honorable Combatant's Sorcerous Scepter [A]
-			i(159922),	-- Honorable Combatant's Sorcerous Scepter [H]
-			i(164694),	-- Sinister Combatant's Sorcerous Scepter [A]
-			i(164677),	-- Sinister Combatant's Sorcerous Scepter [H]
+			filter(101, {	-- Battle Pets
+				{	-- Enchanted Tiki Mask
+					["itemID"] = 152878,	-- Enchanted Tiki Mask
+				},
+			}),
+			filter(27, {	-- Wands
+				{	-- Enchanter's Sorcerous Scepter [A]
+					["itemID"] = 161927,	-- Enchanter's Sorcerous Scepter [A]
+				},
+				{	-- Enchanter's Sorcerous Scepter [H]
+					["itemID"] = 152874,	-- Enchanter's Sorcerous Scepter [H]
+				},
+				{	-- Enchanter's Umbral Wand [A]
+					["itemID"] = 161925,	-- Enchanter's Umbral Wand [A]
+				},
+				{	-- Enchanter's Umbral Wand [H]
+					["itemID"] = 152872,	-- Enchanter's Umbral Wand [H]
+				},
+				{	-- Honorable Combatant's Sorcerous Scepter [A]
+					["itemID"] = 161928,	-- Honorable Combatant's Sorcerous Scepter [A]
+				},
+				{	-- Honorable Combatant's Sorcerous Scepter [H]
+					["itemID"] = 159922,	-- Honorable Combatant's Sorcerous Scepter [H]
+				},
+				{	-- Sinister Combatant's Sorcerous Scepter [A]
+					["itemID"] = 164694,	-- Sinister Combatant's Sorcerous Scepter [A]
+				},
+				{	-- Sinister Combatant's Sorcerous Scepter [H]
+					["itemID"] = 164677,	-- Sinister Combatant's Sorcerous Scepter [H]
+				},
+			}),
 		}),
 		n(-183, { -- Engineering
-			i(160490),	-- AZ3-R1-T3 Bionic Bifocals
-			i(160489),	-- AZ3-R1-T3 Gearspun Goggles
-			i(160491),	-- AZ3-R1-T3 Orthogonal Optics
-			i(160488),	-- AZ3-R1-T3 Synthetic Specs
-			i(161930),	-- Finely-Tuned Stormsteel Destroyer [A]
-			i(153506),	-- Finely-Tuned Stormsteel Destroyer [H]
-			i(159937),	-- Honorable Combatant's Discombobulator
-			i(161931),	-- Honorable Combatant's Stormsteel Destroyer [A]
-			i(159936),	-- Honorable Combatant's Stormsteel Destroyer [H]
-			i(152830),	-- Magnetic Discombobulator
-			i(152837),	-- Precision Attitude Adjuster
-			i(164680),	-- Sinister Combatant's Discombobulator
-			i(164696),	-- Sinister Combatant's Stormsteel Destroyer [A]
-			i(164679),	-- Sinister Combatant's Stormsteel Destroyer [H]
+			filter(101, {	-- Battle Pets
+				{	-- Mechantula
+					["itemID"] = 165849,	-- Mechantula
+				},
+			}),
+			filter(23, {	-- 1H Maces
+				{	-- Honorable Combatant's Discombobulator
+					["itemID"] = 159937,	-- Honorable Combatant's Discombobulator
+				},
+				{	-- Magnetic Discombobulator
+					["itemID"] = 152830,	-- Magnetic Discombobulator
+				},
+				{	-- Precision Attitude Adjuster
+					["itemID"] = 152837,	-- Precision Attitude Adjuster
+				},
+				{	-- Sinister Combatant's Discombobulator
+					["itemID"] = 164680,	-- Sinister Combatant's Discombobulator
+				},
+			}),
+			filter(31, {	-- Guns
+				{	-- Finely-Tuned Stormsteel Destroyer [A]
+					["itemID"] = 161930,	-- Finely-Tuned Stormsteel Destroyer [A]
+				},
+				{	-- Finely-Tuned Stormsteel Destroyer [H]
+					["itemID"] = 153506,	-- Finely-Tuned Stormsteel Destroyer [H]
+				},
+				{	-- Honorable Combatant's Stormsteel Destroyer [A]
+					["itemID"] = 161931,	-- Honorable Combatant's Stormsteel Destroyer [A]
+				},
+				{	-- Honorable Combatant's Stormsteel Destroyer [H]
+					["itemID"] = 159936,	-- Honorable Combatant's Stormsteel Destroyer [H]
+				},
+				{	-- Sinister Combatant's Stormsteel Destroyer [A]
+					["itemID"] = 164696,	-- Sinister Combatant's Stormsteel Destroyer [A]
+				},
+				{	-- Sinister Combatant's Stormsteel Destroyer [H]
+					["itemID"] = 164679,	-- Sinister Combatant's Stormsteel Destroyer [H]
+				},
+			}),
+			n(-320,	{ 		-- Head
+				filter(4, {	-- Cloth
+					{	-- AZ3-R1-T3 Synthetic Specs
+						["itemID"] = 160488,	-- AZ3-R1-T3 Synthetic Specs
+					},
+					{	-- Charged SP1-R1-73D Synthetic Specs
+						["itemID"] = 165895,	-- Charged SP1-R1-73D Synthetic Specs
+					},
+					{	-- Emblazoned Synthetic Specs
+						["itemID"] = 166980,	-- Emblazoned Synthetic Specs
+					},
+					{	-- Imbued Synthetic Specs
+						["itemID"] = 166979,	-- Imbued Synthetic Specs
+						["g"] = {
+							{	-- Schematic: Emblazoned Synthetic Specs
+								["itemID"] = 166987,	-- Schematic: Emblazoned Synthetic Specs
+							},
+						},
+					},
+					{	-- SP1-R1-73D Synthetic Specs
+						["itemID"] = 165890,	-- SP1-R1-73D Synthetic Specs
+						["g"] = {
+							{	-- Schematic: Charged SP1-R1-73D Synthetic Specs
+								["itemID"] = 165918,	-- Schematic: Charged SP1-R1-73D Synthetic Specs
+							},
+						},
+					},
+					{	-- Surging Synthetic Specs
+						["itemID"] = 165885,	-- Surging Synthetic Specs
+						["g"] = {
+							{	-- Schematic: SP1-R1-73D Synthetic Specs
+								["itemID"] = 165917,	-- Schematic: SP1-R1-73D Synthetic Specs
+							},
+						},
+					},
+				}),
+				filter(5, {	-- Leather
+					{	-- AZ3-R1-T3 Gearspun Goggles
+						["itemID"] = 160489,	-- AZ3-R1-T3 Gearspun Goggles
+					},
+					{	-- Charged SP1-R1-73D Gearspun Goggles
+						["itemID"] = 165896,	-- Charged SP1-R1-73D Gearspun Goggles
+					},
+					{	-- Emblazoned Gearspun Goggles
+						["itemID"] = 166982,	-- Emblazoned Gearspun Goggles
+					},
+					{	-- Imbued Gearspun Goggles
+						["itemID"] = 166981,	-- Imbued Gearspun Goggles
+						["g"] = {
+							{	-- Schematic: Emblazoned Gearspun Goggles
+								["itemID"] = 166988,	-- Schematic: Emblazoned Gearspun Goggles
+							},
+						},
+					},
+					{	-- SP1-R1-73D Gearspun Goggles
+						["itemID"] = 165891,	-- SP1-R1-73D Gearspun Goggles
+						["g"] = {
+							{	-- Schematic: Charged SP1-R1-73D Gearspun Goggles
+								["itemID"] = 165914,	-- Schematic: Charged SP1-R1-73D Gearspun Goggles
+							},
+						},
+					},
+					{	-- Surging Gearspun Goggles
+						["itemID"] = 165886,	-- Surging Gearspun Goggles
+						["g"] = {
+							{	-- Schematic: SP1-R1-73D Gearspun Goggles
+								["itemID"] = 165913,	-- Schematic: SP1-R1-73D Gearspun Goggles
+							},
+						},
+					},
+				}),
+				filter(6, {	-- Mail
+					{	-- AZ3-R1-T3 Bionic Bifocals
+						["itemID"] = 160490,	-- AZ3-R1-T3 Bionic Bifocals
+					},
+					{	-- Charged SP1-R1-73D Bionic Bifocals
+						["itemID"] = 165897,	-- Charged SP1-R1-73D Bionic Bifocals
+					},
+					{	-- Emblazoned Bionic Bifocals
+						["itemID"] = 166984,	-- Emblazoned Bionic Bifocals
+					},
+					{	-- Imbued Bionic Bifocals
+						["itemID"] = 166983,	-- Imbued Bionic Bifocals
+						["g"] = {
+							{	-- Schematic: Emblazoned Bionic Bifocals
+								["itemID"] = 166989,	-- Schematic: Emblazoned Bionic Bifocals
+							},
+						},
+					},
+					{	-- SP1-R1-73D Bionic Bifocals
+						["itemID"] = 165892,	-- SP1-R1-73D Bionic Bifocals
+						["g"] = {
+							{	-- Schematic: Charged SP1-R1-73D Bionic Bifocals
+								["itemID"] = 165912,	-- Schematic: Charged SP1-R1-73D Bionic Bifocals
+							},
+						},
+					},
+					{	-- Surging Bionic Bifocals
+						["itemID"] = 165887,	-- Surging Bionic Bifocals
+						["g"] = {
+							{	-- Schematic: SP1-R1-73D Bionic Bifocals
+								["itemID"] = 165911,	-- Schematic: SP1-R1-73D Bionic Bifocals
+							},
+						},
+					},
+				}),
+				filter(7, {	-- Plate
+					{	-- AZ3-R1-T3 Orthogonal Optics
+						["itemID"] = 160491,	-- AZ3-R1-T3 Orthogonal Optics
+					},
+					{	-- Charged SP1-R1-73D Orthogonal Optics
+						["itemID"] = 165898,	-- Charged SP1-R1-73D Orthogonal Optics
+					},
+					{	-- Emblazoned Orthogonal Optics
+						["itemID"] = 166986,	-- Emblazoned Orthogonal Optics
+					},
+					{	-- Imbued Orthogonal Optics
+						["itemID"] = 166985,	-- Imbued Orthogonal Optics
+						["g"] = {
+							{	-- Schematic: Emblazoned Orthogonal Optics
+								["itemID"] = 166990,	-- Schematic: Emblazoned Orthogonal Optics
+							},
+						},
+					},
+					{	-- SP1-R1-73D Orthogonal Optics
+						["itemID"] = 165893,	-- SP1-R1-73D Orthogonal Optics
+						["g"] = {
+							{	-- Schematic: Charged SP1-R1-73D Orthogonal Optics
+								["itemID"] = 165916,	-- Schematic: Charged SP1-R1-73D Orthogonal Optics
+							},
+						},
+					},
+					{	-- Surging Orthogonal Optics
+						["itemID"] = 165888,	-- Surging Orthogonal Optics
+						["g"] = {
+							{	-- Schematic: SP1-R1-73D Orthogonal Optics
+								["itemID"] = 165915,	-- Schematic: SP1-R1-73D Orthogonal Optics
+							},
+						},
+					},
+				}),
+			}),
 		}),
 		n(-185, { -- Inscription
-		-- Reviewed and updated as of 12.15.2018 BfA 8.1
+		-- Reviewed and updated as of 12.16.2018 BfA 8.1
 			n(-491, { -- Tarot Cards
 				sp(278527, {	-- Darkmoon Card of War
 					sp(267087, {	-- Blockades Deck
@@ -543,9 +788,19 @@ _.Craftables =
 				},
 				{	-- Imbued Kraken's Eye Loop
 					["itemID"] = 166520,	-- Imbued Kraken's Eye Loop
+					["g"] = {
+						{	-- Recipe: Emblazoned Kraken's Eye Loop
+							["itemID"] = 166541,	-- Recipe: Emblazoned Kraken's Eye Loop
+						},
+					},
 				},
 				{	-- Kraken's Eye Loop
 					["itemID"] = 166519,	-- Kraken's Eye Loop
+					["g"] = {
+						{	-- Recipe: Imbued Kraken's Eye Loop
+							["itemID"] = 166540,	-- Recipe: Imbued Kraken's Eye Loop
+						},
+					},
 				},
 				{	-- Kubiline Ring
 					["itemID"] = 153688,	-- Kubiline Ring
@@ -564,9 +819,22 @@ _.Craftables =
 				},
 				{	-- Spirited Kraken's Eye Loop
 					["itemID"] = 166523,	-- Spirited Kraken's Eye Loop
+					["g"] = {
+						{	-- Recipe: Eternal Kraken's Eye Loop
+							["itemID"] = 166543,	-- Recipe: Eternal Kraken's Eye Loop
+						},
+					},
 				},
 				{	-- Tidal Amethyst Loop
 					["itemID"] = 153684,	-- Tidal Amethyst Loop
+				},
+				{	-- Tidal Kraken's Eye Loop
+					["itemID"] = 166522,	-- Tidal Kraken's Eye Loop
+					["g"] = {
+						{	-- Recipe: Spirited Kraken's Eye Loop
+							["itemID"] = 166542,	-- Recipe: Spirited Kraken's Eye Loop
+						},
+					},
 				},
 			}),
 		}),

@@ -159,16 +159,33 @@ _.Zones =
 									["races"] = HORDE_ONLY,
 									["requireSkill"] = 197,	-- Tailoring
 								},
-								q(52396, {	-- Work Order: Contract: Talanji's Expedition
+								{	-- Work Order: Contract: Talanji's Expedition
+									["questID"] = 52396,	-- Work Order: Contract: Talanji's Expedition
 									["groups"] = {
-										i(162368, {	-- Contract: Talanji's Expedition [Rank 3]
-											["spellID"] = 256289,
-										}),
+										i(162368),	-- Contract: Talanji's Expedition [Rank 3]
 									},
 									["requireSkill"] = 773,	-- Inscription
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = HORDE_ONLY,
-								}),
+								},
+								{	-- Work Order: Enchant Weapon - Coastal Surge
+									["questID"] = 52360,
+									["groups"] = {
+										i(162315),	-- Formula: Enchant Weapon - Coastal Surge (Rank 3)
+									},
+									["isWQ"] = 120,
+									["races"] = HORDE_ONLY,
+									["requireSkill"] = 333,	-- Enchanting
+								},
+								{	-- Work Order: Enchant Weapon - Torrent of Elements
+									["questID"] = 52361,
+									["groups"] = {
+										i(162319),	-- Formula: Enchant Weapon - Torrent of Elements (Rank 3)
+									},
+									["isWQ"] = 120,
+									["races"] = HORDE_ONLY,
+									["requireSkill"] = 333,	-- Enchanting
+								},
 								{	-- Work Order: Sea Mist Potion
 									["questID"] = 52337,
 									["groups"] = {
@@ -177,6 +194,15 @@ _.Zones =
 									["isWQ"] = 120,
 									["races"] = HORDE_ONLY,
 									["requireSkill"] = 171,	-- Alchemy
+								},
+								{	-- Work Order: XA-1000 Surface Skimmer
+									["questID"] = 52372,	-- Work Order: XA-1000 Surface Skimmer
+									["groups"] = {
+										i(162339), 	-- Schematic: XA-1000 Surface Skimmer [Rank 3]
+									},
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
+									["races"] = HORDE_ONLY,
+									["requireSkill"] = 202,	-- Engineering
 								},
 								{	-- Xu'ba
 									["questID"] = 50489,	-- Xu'ba

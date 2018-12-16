@@ -161,6 +161,15 @@ _.Zones =
 									},
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
+								{	-- Work Order: Contract: Storm's Wake
+									["questID"] = 52391,	-- Work Order: Contract: Storm's Wake
+									["groups"] = {
+										i(162364), 	-- Recipe: Contract: Storm's Wake [Rank 3]
+									},
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
+									["races"] = ALLIANCE_ONLY,
+									["requireSkill"] = 773,	-- Inscription
+								},
 								q(52347, {	-- Work Order: Honey-Glazed Haunchs [Rank 3]
 									["groups"] = {
 										i(162286, {	-- Recipe: Honey-Glazed Haunchs [Rank 3]
@@ -181,6 +190,24 @@ _.Zones =
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = HORDE_ONLY,
 								}),
+								{	-- Work Order: Enchant Ring - Seal of Haste
+									["questID"] = 32353,	-- Work Order: Enchant Ring - Seal of Haste
+									["groups"] = {
+										i(162299), 	-- Formula: Enchant Ring - Seal of Haste [Rank 3]
+									},
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
+									["races"] = ALLIANCE_ONLY,
+									["requireSkill"] = 333,	-- Enchanting
+								},
+								{	-- Work Order: Enchant Ring - Seal of Mastery
+									["questID"] = 52354,	-- Work Order: Enchant Ring - Seal of Mastery
+									["groups"] = {
+										i(162300), 	-- Formula: Enchant Ring - Seal of Mastery [Rank 3]
+									},
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
+									["races"] = ALLIANCE_ONLY,
+									["requireSkill"] = 333,	-- Enchanting
+								},
 								q(52344, {	-- Work Order: Kul Tiramisu [Rank 3]
 									["groups"] = {
 										i(162285, {	-- Recipe: Kul Tiramisu [Rank 3]

@@ -26,6 +26,7 @@ _.PetJournal =
 		p(1699),	-- Enchanted Cauldron
 		p(267),		-- Enchanted Lantern
 		p(1701),	-- Enchanted Pen
+		p(2201),	-- Enchanted Tiki Mask
 		p(1700),	-- Enchanted Torch
 		p(1764),	-- Energized Manafiend
 		p(1773),	-- Erudite Manafiend

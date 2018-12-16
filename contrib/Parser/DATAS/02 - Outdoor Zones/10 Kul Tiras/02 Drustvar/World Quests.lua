@@ -182,6 +182,15 @@ _.Zones =
 										37.81, 49.01
 									},
 								}),
+								{	-- Work Order: F.R.I.E.D.
+									["questID"] = 52365,	-- Work Order: F.R.I.E.D.
+									["groups"] = {
+										i(162331), 	-- Schematic: F.R.I.E.D. [Rank 3]
+									},
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
+									["races"] = ALLIANCE_ONLY,
+									["requireSkill"] = 202,	-- Engineering
+								},
 								{	-- Work Order: Sea Mist Potion
 									["questID"] = 52334,
 									["groups"] = {
@@ -190,6 +199,15 @@ _.Zones =
 									["isWQ"] = 120,
 									["races"] = ALLIANCE_ONLY,
 									["requireSkill"] = 171,	-- Alchemy
+								},
+								{	-- Work Order: Thermo-Accelerated Plague Spreader
+									["questID"] = 52364,	-- Work Order: Thermo-Accelerated Plague Spreader
+									["groups"] = {
+										i(162332), 	-- Schematic: Thermo-Accelerated Plague Spreader [Rank 3]
+									},
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
+									["races"] = ALLIANCE_ONLY,
+									["requireSkill"] = 202,	-- Engineering
 								},
 							},
 						}),

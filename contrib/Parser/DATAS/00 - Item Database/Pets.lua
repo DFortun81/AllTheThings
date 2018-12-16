@@ -202,6 +202,7 @@ pet(67274, 267); 	-- Enchanted Lantern
 pet(48527, 240);	-- Enchanted Onyx (Onyx Panther)
 pet(128535, 1701); 	-- Enchanted Pen
 pet(49664, 247);	-- Enchanted Purple Jade (Zipao Tiger)
+pet(152878, 2201); 	-- Enchanted Tiki Mask
 pet(128534, 1700); 	-- Enchanted Torch
 pet(118921, 1566); 	-- Everbloom Peachick
 pet(143756, 1998); 	-- Everliving Spore
@@ -341,6 +342,7 @@ pet(127856, 1687); 	-- Left Shark
 pet(110684, 1395);	-- Leftovers (Lil' Leftovers)
 pet(141895, 1939); 	-- Legionnaire Murky
 pet(69648, 308);	-- Legs
+pet(165855, 2532);	-- Leper Rat Tail (Leper Rat)
 pet(122104, 1623); 	-- Leviathan Egg (Leviathan Hatchling)
 pet(136914, 1808);	-- Leyline Broodling
 pet(112057, 1412); 	-- Lifelike Mechanical Frostboar
@@ -377,12 +379,15 @@ pet(93033, 1147); 	-- Mark of Flame (Harbinger of Flame)
 pet(114834, 1446);	-- Meadowstomper Calf
 pet(111402, 1403); 	-- Mechanical Axebeak
 pet(10398, 83); 	-- Mechanical Chicken
+pet(165854, 2531);	-- Mechanical Cockroach
 pet(87526, 844); 	-- Mechanical Pandaren Dragonling
 pet(163496, 2410);	-- Mechanical Prairie Dog
 pet(118741, 1565); 	-- Mechanical Scorpid
 pet(4401, 39); 		-- Mechanical Squirrel Box (Mechanical Squirrel)
 pet(45002, 215); 	-- Mechanopeep
+pet(165849, 2530);	-- Mechantula
 pet(101426, 666); 	-- Micronax Controller (Micronax)
+pet(165894, 2534);	-- Mini Spider Tank
 pet(56806, 258);	-- Mini Thor
 pet(151632, 2064); 	-- Mining Monkey
 pet(31760, 149); 	-- Miniwing
@@ -484,6 +489,7 @@ pet(48122, 237); 	-- Ravasaur Hatchling
 pet(48124, 238); 	-- Razormaw Hatchling
 pet(48126, 239); 	-- Razzashi Hatchling
 pet(153252, 2135);	-- Rebellious Imp
+pet(165857, 2533);	-- Rechargeable Alarm-O-Dog Battery
 pet(85222, 1042); 	-- Red Cricket
 pet(19054, 758);	-- Red Dragon Orb (Tiny Red Dragon)
 pet(29956, 143); 	-- Red Dragonhawk Hatchling

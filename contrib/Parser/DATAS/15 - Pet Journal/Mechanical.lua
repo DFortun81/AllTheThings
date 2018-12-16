@@ -5,6 +5,7 @@ _.PetJournal =
 {
 	pa(244, { 	-- Mechanical
 		p(1805),	-- Alarm-o-Bot
+		p(2533),	-- Alarm-O-Dog
 		p(1531),	-- Ancient Nest Guardian
 		p(1163),	-- Anodized Robo Cub
 		p(1322),	-- Blackfuse Bombling
@@ -36,13 +37,16 @@ _.PetJournal =
 		p(2444),	-- Lil' War Machine
 		p(256),		-- Lil' XT
 		p(83),		-- Mechanical Chicken
+		p(2531),	-- Mechanical Cockroach
 		p(844),		-- Mechanical Pandaren Dragonling
 		p(2410),	-- Mechanical Prairie Dog
 		p(1565),	-- Mechanical Scorpid
 		p(39),		-- Mechanical Squirrel
 		p(215),		-- Mechanopeep
+		p(2530),	-- Mechantula
 		p(1227),	-- Menagerie Custodian
 		p(666),		-- Micronax
+		p(2534),	-- Mini Spider Tank
 		un(6, p(258)),	-- Mini Thor
 		p(261),		-- Personal World Destroyer
 		p(85),		-- Pet Bombling
