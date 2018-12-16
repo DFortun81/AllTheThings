@@ -14,7 +14,12 @@ _.Zones =
 									["g"] = {
 										un(2, i(16494)),	-- Blood Guard's Dragonhide Boots
 										un(2, i(16496)),	-- Blood Guard's Dragonhide Gauntlets
+										un(2, i(16498)),	-- Blood Guard's Leather Treads
 										un(2, i(16499)),	-- Blood Guard's Leather Vices
+										un(2, i(16506)),	-- Champion's Leather Headguard
+										un(2, i(16507)),	-- Champion's Leather Mantle
+										un(2, i(16505)),	-- Legionnaire's Leather Hauberk
+										un(2, i(16508)),	-- Legionnaire's Leather Leggings
 									},
 									["u"] = 43, -- Legacy NPC/Creature
 								}),
