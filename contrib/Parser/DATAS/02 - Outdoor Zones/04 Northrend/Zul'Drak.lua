@@ -383,21 +383,23 @@ _.Zones =
 					}),
 				}),	
 				n(-16, { 	-- Rares
-					n(33776, { -- Gondria
+					{	-- Gondria
+						["npcID"] = 33776,
 						["description"] = "This is a very sought after Hunter Pet. If you see this mob, be a kind soul and announce to General chat instead of killing it.",
-						["coords"] = {
-							
-						},
 						["groups"] = {
 							i(46324),	-- Gondria's Spectral Claw
 							i(44663),	-- Abandoned Adventurer's Satchel
 						},
-					}),
-					{
-						["npcID"] = 32471,		-- Griegen [NPC]
 						["coords"] = {
-							
+							{ 63.0, 43.0 },
+							{ 69.6, 48.2 },
+							{ 61.6, 62.6 },
+							{ 77.6, 70.0 },
+							{ 67.8, 78.8 },
 						},
+					},
+					{	-- Griegen
+						["npcID"] = 32471,
 						["groups"] = {
 							{
 								["achievementID"] = 2257,	-- Frostbitten [Achievement]
@@ -406,11 +408,27 @@ _.Zones =
 							i(44686),	-- Ethereal Terror Handwraps
 							i(44663),	-- Abandoned Adventurer's Satchel
 						},
-					},
-					{
-						["npcID"] = 32475,		-- Terror Spinner [NPC]
 						["coords"] = {
-							
+							{ 14.6, 56.8 },
+							{ 26.8, 55.6 },
+							{ 23.2, 61.6 },
+							{ 22.0, 70.6 },
+							{ 18.0, 70.6 },
+							{ 26.6, 71.2 },
+							{ 24.8, 76.8 },
+							{ 21.2, 79.8 },
+						},
+					},
+					{	-- Terror Spinner
+						["npcID"] = 32475,
+						["coords"] = {
+							{ 53.2, 31.6 },
+							{ 61.2, 36.6 },
+							{ 74.6, 66.0 },
+							{ 77.2, 42.8 },
+							{ 72.0, 28.4 },
+							{ 71.8, 23.8 },
+							{ 82.0, 35.0 },
 						},
 						["groups"] = {
 							{
@@ -421,10 +439,32 @@ _.Zones =
 							i(44663),	-- Abandoned Adventurer's Satchel
 						},
 					},
-					{
-						["npcID"] = 32447,		-- Zul'drak Sentinel [NPC]
+					{	-- Zul'drak Sentinel
+						["npcID"] = 32447,
 						["coords"] = {
-							
+							{ 51.2, 84.4 },
+							{ 48.0, 79.6 },
+							{ 45.8, 75.8 },
+							{ 43.6, 72.8 },
+							{ 42.4, 70.6 },
+							{ 40.4, 64.2 },
+							{ 40.4, 61.4 },
+							{ 40.4, 58.0 },
+							{ 40.4, 55.2 },
+							{ 40.4, 52.4 },
+							{ 43.2, 54.8 },
+							{ 44.6, 56.2 },
+							{ 45.6, 60.2 },
+							{ 47.0, 62.0 },
+							{ 47.2, 63.8 },
+							{ 46.0, 66.0 },
+							{ 45.0, 67.2 },
+							{ 29.0, 72.2 },
+							{ 29.0, 78.2 },
+							{ 29.0, 81.2 },
+							{ 29.0, 82.6 },
+							{ 24.6, 82.6 },
+							{ 21.2, 82.6 },
 						},
 						["groups"] = {
 							{
