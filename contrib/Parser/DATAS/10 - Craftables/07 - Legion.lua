@@ -223,23 +223,23 @@ _.Craftables =
 				n(101527, { -- Blingtron 6000
 					i(132892, { -- Blingtron 6000 Gift Package
 						["groups"] = {
-							dr(0.01, i(87250)), -- Depleted-Kyparium Rocket Mount
-							dr(0.01, i(87251)), -- Geosynchronous World Spinner Mount
-							dr(0.01, i(41508)), -- Mechano-Hog Mount
-							dr(0.01, i(44413)), -- Mekgineer's Chopper Mount
-							dr(0.01, i(136911)), -- Knockoff Blingtron
-							dr(0.5, i(103670)), -- Lil'Bling Pet
-							dr(0.02, i(15996)), -- Lifelike Mechanical Toad Pet
-							dr(0.02, i(11826)), -- Lil' Smoky Pet
-							dr(0.02, i(4401)), -- Mechanical Squirrel Box Pet
-							dr(0.02, i(11825)), -- Pet Bombling
-							dr(0.4, i(115483)), -- Sky-Bo Pet
-							dr(0.02, i(21277)), -- Tranquil Mechanical Yeti Pet
-							dr(0.5, i(123851)), -- Photo B.O.M.B. Toy
-							dr(1.3, i(136631)), -- Surface-to-Infernal Rocket Launcher
-							dr(1.2, i(136630)), -- "Twirling Bottom" Repeaater"
-							dr(1.1, i(136629)), -- Felgibber Shotgun
-							dr(1.0, i(136632)), -- Chaos Blaster
+							i(87250), -- Depleted-Kyparium Rocket Mount
+							i(87251), -- Geosynchronous World Spinner Mount
+							i(41508), -- Mechano-Hog Mount
+							i(44413), -- Mekgineer's Chopper Mount
+							i(136911), -- Knockoff Blingtron
+							i(103670), -- Lil'Bling Pet
+							i(15996), -- Lifelike Mechanical Toad Pet
+							i(11826), -- Lil' Smoky Pet
+							i(4401), -- Mechanical Squirrel Box Pet
+							i(11825), -- Pet Bombling
+							i(115483), -- Sky-Bo Pet
+							i(21277), -- Tranquil Mechanical Yeti Pet
+							i(123851), -- Photo B.O.M.B. Toy
+							i(136631), -- Surface-to-Infernal Rocket Launcher
+							i(136630), -- "Twirling Bottom" Repeaater"
+							i(136629), -- Felgibber Shotgun
+							i(136632), -- Chaos Blaster
 						},
 						["questID"] = 40753,
 					}),
