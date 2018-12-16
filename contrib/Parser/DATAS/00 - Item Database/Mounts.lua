@@ -174,6 +174,7 @@ i(166471, 288711);	-- Saltwater Seahorse
 i(166436, 288506);	-- Sandy Nightsaber
 i(166745, 266925);	-- Siltwing Albatross
 i(166470, 288712);	-- Stonehide Elderhorn
+i(156798, 261395);	-- The Hivemind
 i(166803, 288503);	-- Umber Nightsaber
 i(165020, 281890);	-- Vicious Black Bonesteed
 i(165019, 281887);	-- Vicious Black Warsaber
