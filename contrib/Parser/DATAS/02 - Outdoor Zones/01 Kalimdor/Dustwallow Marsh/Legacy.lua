@@ -14,7 +14,13 @@ _.Zones =
 								i(33268),	-- Bone Dirk NOTE: Item is still available from new version of quest
 								i(33264), 	-- Glowing Tourmaline Ring NOTE: Item is still available from new version of quest
 							})),
-							un(40, q(27419)),	-- Army of the Black Dragon
+							un(40, q(1168, {	-- Army of the Black Dragon
+								["g"] = {
+									un(2, i(9705)),	-- Tharg's Shoelace
+								},
+								["qg"] = 4502,	-- Tharg
+								["races"] = HORDE_ONLY,
+							})),
 							un(40, q(1958, {	-- Celestial Power
 								["groups"] = {
 									un(2, i(7515)),	-- Celestial Orb

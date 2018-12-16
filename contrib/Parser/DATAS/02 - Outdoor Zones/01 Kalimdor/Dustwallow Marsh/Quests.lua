@@ -282,7 +282,7 @@ _.Zones =
 						}),
 						crit(5, {	-- Onyxia's Brood
 							{	-- Army of the Black Dragon
-								["questID"] = 1168,
+								["questID"] = 27419,
 								["groups"] = {
 									i(10702),	-- Enormous Ogre Boots
 									i(9706),	-- Tharg's Disk
