@@ -599,7 +599,7 @@ _.NeverImplemented =
 		un(1, i(129744)),	-- Iron Warhorse
 		un(1, i(137576)),	-- Dim Coldflame Core
 		un(1, i(137615)),	-- Molten Flarecore
-		un(1, i(156798)),	-- The Hivemind
+		
 	}),
 	n(-162, { -- Pets
 		un(1, model(65527, i(129108, {	-- Son of Goredome		 				(Never added in Game)

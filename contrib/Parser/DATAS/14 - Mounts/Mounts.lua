@@ -190,6 +190,7 @@ _.Mounts =
 		i(116773),	-- Swift Breezestrider
 		i(35513),	-- Swift White Hawkstrider
 		i(68824),	-- Swift Zulian Panther
+		i(156798),	-- The Hivemind
 		i(95057),	-- Thundering Cobalt Cloud Serpent
 		i(104269),	-- Thundering Onyx Cloud Serpent
 		i(90655),	-- Thundering Ruby Cloud Serpent
