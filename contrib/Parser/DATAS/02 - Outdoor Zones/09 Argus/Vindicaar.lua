@@ -640,7 +640,9 @@ _.Zones =
 						q(48973, { -- Paragon of Argussian Reach
 							["qg"] = 127151,	-- Toraan the Revered
 							["groups"] = {
-								i(152922),	-- Brittle Krokul Chest
+								i(152922, {	-- Brittle Krokul Chest
+									i(153127),	-- Cube of Discovery
+								}),
 							},
 						}),
 						q(48974, { -- Paragon of the Army of the Light
