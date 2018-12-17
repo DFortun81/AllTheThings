@@ -7,12 +7,7 @@ _.Zones =
 		m(864, {	-- Vol'dun
 			["groups"] = {
 				n(-228, {	-- Flight Paths
---[[				
-					fp(2162, { -- Devoted Sanctuary, Vol'dun [N] [This appears to have been removed since BETA or changed to Scorched Sands for Horde]
-						["coord"] = { 43.8, 76.0 },
-					}),
-]]--
-					fp(2144, { -- Goldtusk Inn, Vol'dun [Have been unable to locate, this might be a holdover from BETA]
+					fp(2144, { -- Goldtusk Inn, Vol'dun
 						["coord"] = { 42.7, 61.1 },
 						["description"] = "Whistlebloom Oasis, Vol'dun. Becomes available after completing \"The Best Kill is Overkill\" during the Goldtusk Inn quest chain.",
 					}),
@@ -27,7 +22,9 @@ _.Zones =
 					}),
 					fp(2143, { -- Scorched Sands Outpost, Vol'dun [H]
 						["description"] = "Scorched Sands Outpost, Vol'dun",
-						["coord"] = { 42.8, 61.0 },
+						["coords"] = {
+							{ 43.91, 75.91, 864 },
+						},
 					}),
 					fp(2110, {	-- Shatterstone Harbor, Vol'dun [A] [This is quest locked behind the War Campaign]
 						["description"] = "Shatterstone Harbor, Vol'dun",
@@ -36,19 +33,27 @@ _.Zones =
 					}),
 					fp(2118, { -- Temple of Akunda, Vol'dun [H]
 						["description"] = "Temple of Akunda, Vol'dun",
-						["coord"] = { 53.6, 89.2 },
+						["coords"] = {
+							{ 53.72, 89.17, 864 },
+						},
 					}),
 					fp(2120, { -- Tortaka Refuge, Vol'dun [N]
 						["description"] = "Tortaka Refuge, Vol'dun",
-						["coord"] = { 61.8, 21.6 },
+						["coords"] = {
+							{ 61.91, 21.66, 864 },
+						},
 					}),
-					fp(2111, { -- Vorrik's Sanctum, Vol'dun [H]
-						["description"] = "Vorrik's Sanctum, Vol'dun",
-						["coord"] = { 47.2, 35.2 },
+					fp(2111, { -- Vorrik's Sanctum [Conqueror's Path], Vol'dun [H]
+						["description"] = "Vorrik's Sanctum [Conqueror's Path], Vol'dun",
+						["coords"] = {
+							{ 47.31, 35.24, 864 },
+						},
 					}),
 					fp(2117, { -- Vulpera Hideaway, Vol'dun [H]
 						["description"] = "Vulpera Hideaway, Vol'dun",
-						["coord"] = { 57.0, 49.2 },
+						["coords"] = {
+							{ 56.96, 49.25, 864 },
+						},
 					}),
 					fp(2112, { -- Vulture's Nest, Vol'dun [A]
 						["description"] = "Vulture's Nest, Vol'dun \n\nRequires completion of Mission Report: Vulture's Nest and related quest line to unlock.",

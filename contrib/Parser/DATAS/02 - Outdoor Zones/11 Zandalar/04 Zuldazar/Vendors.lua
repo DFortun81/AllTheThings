@@ -36,6 +36,9 @@ _.Zones =
 								i(163026),	-- Pattern: Embroidered Deep Sea Bag [Rank 2]
 								i(162298),	-- Formula: Enchant Ring - Seal of Critical Strike [Rank 3]
 								i(162301),	-- Formula: Enchant Ring - Seal of Versatility [Rank 3]
+								{	-- Recipe: Boralus Blood Sausage [Rank 2]
+									["itemID"] = 166806,	-- Recipe: Boralus Blood Sausage [Rank 2]
+								},
 								i(162288),	-- Recipe: Bountiful Captain's Feast [Rank 2]
 								i(162289),	-- Recipe: Bountiful Captain's Feast [Rank 3]
 								i(162358),	-- Recipe: Codex of the Quiet Mind [Rank 3]
@@ -46,12 +49,23 @@ _.Zones =
 								i(162287),	-- Recipe: Galley Banquet [Rank 3]
 								i(162292),	-- Recipe: Grilled Catfish [Rank 3]
 								i(162352),	-- Recipe: Inscribed Vessel of Mysticism [Rank 3]
+								{	-- Recipe: Sanguinated Feast [Rank 2]
+									["itemID"] = 166263,	-- Recipe: Sanguinated Feast [Rank 2]
+								},
 								i(162293),	-- Recipe: Seasoned Loins [Rank 3]
+								{	-- Recipe: Seasoned Steak and Potatoes [Rank 3]
+									["itemID"] = 166368,	-- Recipe: Seasoned Steak and Potatoes [Rank 3]
+								},
 								i(162137),	-- Recipe: Siren's Alchemist Stone [Rank 3]
 								i(162376),	-- Recipe: Tome of the Quiet Mind [Rank 3]
+								{	-- Recipe: Wild Berry Bread [Rank 3]
+									["itemID"] = 166367,	-- Recipe: Wild Berry Bread [Rank 3]
+								},
 								i(162023),	-- Technique: Glyph of the Dolphin [Rank 3]
 							},
-							["coord"] = { 71.4, 30.2 },
+							["coords"] = {
+								{ 71.51, 30.35, 862 },
+							},
 						}),
 						n(136219, {	-- Mona <Butterflies>
 							["groups"] = {
@@ -509,7 +523,7 @@ _.Zones =
 			["achievementID"] = 12559,	-- Explore Zuldazar
 			["lvl"] = 110,
 			--[[
-			["maps"] = { 
+			["maps"] = {
 				1163,	-- Dazar'alor
 				1165,	-- Dazar'alor
 			},

@@ -328,7 +328,7 @@ _.Zones =
 											["description"] = "Cost: 300 Honorbound Service Medals",
 										},
 									},
-								},											
+								},
 							},
 						},
 						{	-- Rakle the Wretched [H]
@@ -348,7 +348,7 @@ _.Zones =
 									},
 								},
 							},
-						},				
+						},
 						n(135447, {	-- Ransa Greyfeather <The Honorbound Emissary>
 							["coords"] = {
 								{ 58.07, 62.65, 1165 },
@@ -421,7 +421,7 @@ _.Zones =
 										}),
 									},
 								},
-								
+
 							},
 							["races"] = HORDE_ONLY,
 						}),

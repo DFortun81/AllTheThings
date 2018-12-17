@@ -632,7 +632,7 @@ _.Zones =
 											["description"] = "Cost: 300 7th Legion Service Medals",
 										},
 									},
-								},											
+								},
 							},
 						},
 						n(142691, {	-- Tricky Nick

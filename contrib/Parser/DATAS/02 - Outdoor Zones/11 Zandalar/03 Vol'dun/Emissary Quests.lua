@@ -7,12 +7,37 @@ _.Zones =
 		m(864, {	-- Vol'dun
 			["groups"] = {
 				n(-169, { 	-- Emissary Quests
+					["races"] = HORDE_ONLY,
 					["groups"] = {
-						q(50603, {	-- Voldunai
+						{	-- Supplies from the Voldunai
+							["questID"] = 54461,	-- Supplies from the Voldunai
+							["qg"] = 135804,		-- Hoarder Jena
+							["repeatable"] = true,
+							["lvl"] = 120,
+							["coords"] = {
+								{ 56.68, 49.74, 864 },
+							},
+							["g"] = {
+								{	-- Goldtusk Inn Breakfast Buffet
+									["itemID"] = 166703,	-- Goldtusk Inn Breakfast Buffet
+								},
+								{	-- Meerah's Jukebox
+									["itemID"] = 166880,	-- Meerah's Jukebox
+								},
+								{	-- Words of Akunda
+									["itemID"] = 165021,	-- Words of Akunda
+								},
+							},
+						},
+						{	-- Voldunai
+							["questID"] = 50603,	-- Voldunai
+							["qg"] = 135804,		-- Hoarder Jena
 							["isDaily"] = true,
 							["lvl"] = 120,
-							["races"] = HORDE_ONLY,
-						}),
+							["coords"] = {
+								{ 56.68, 49.74, 864 },
+							},
+						},
 					},
 				}),
 			},

@@ -9,6 +9,7 @@ _.Zones =
 			-- Note: This expansion we do NOT want to mark this city as Horde Only because both factions will have various World Quests here
 			["groups"] = {
 				n(-169, { 	-- Emissary Quests
+					["races"] = HORDE_ONLY,
 					["groups"] = {
 						q(50606, {	-- Horde War Effort [The Honorbound] [Tier 2]
 							["groups"] = bubbleDown({["modID"] = 5}, {
@@ -87,9 +88,38 @@ _.Zones =
 							},
 							["isDaily"] = true,
 							["lvl"] = 120,
-							["repeatable"] = true,
-							["races"] = HORDE_ONLY,
 						}),
+						{	-- Supplies from the Honorbound
+							["questID"] = 54455,	-- Supplies from the Honorbound
+							["qg"] = 135447,		-- Ransa Greyfeather
+							["coords"] = {
+								{ 58.0, 62.6, 1165 },
+							},
+							["repeatable"] = true,
+							["lvl"] = 120,
+							["g"] = {
+								{	-- Rallying War Banner
+									["itemID"] = 166879,	-- Rallying War Banner
+								},
+								{	-- Recipe: Contract: The Honorbound [Rank 3]
+									["itemID"] = 166311,	-- Recipe: Contract: The Honorbound [Rank 3]
+								},
+							},
+						},
+						{	-- Supplies from the Zandalari Empire
+							["questID"] = 54462,	-- Supplies from the Zandalari Empire
+							["qg"] = 131287,		-- Natal'hakata
+							["coords"] = {
+								{ 67.07, 71.44, 1164 },
+							},
+							["repeatable"] = true,
+							["lvl"] = 120,
+							["g"] = {
+								{	-- Warbeast Kraal Dinner Bell
+									["itemID"] = 166701,	-- Warbeast Kraal Dinner Bell
+								},
+							},
+						},
 						q(50598, {	-- Zandalari Empire
 							["groups"] = {
 								i(163857, {	-- Azerite Armor Cache
@@ -179,8 +209,6 @@ _.Zones =
 							},
 							["isDaily"] = true,
 							["lvl"] = 120,
-							["repeatable"] = true,
-							["races"] = HORDE_ONLY,
 						}),
 					},
 				}),

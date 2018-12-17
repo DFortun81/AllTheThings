@@ -10,10 +10,27 @@ _.Zones =
 				["groups"] = {
 					n(-169, { 	-- Emissary Quests
 						["groups"] = {
-							q(50562, { -- Champions of Azeroth
+							{	-- Champions of Azeroth
+								["questID"] = 50562,	-- Champions of Azeroth
 								["isDaily"] = true,
 								["lvl"] = 120,
-							}),
+								["coords"] = {
+									{ 42.22, 44.27, 81 },
+								},
+							},
+							{	-- Supplies from Magni
+								["questID"] = 54453,	-- Supplies from Magni
+								["repeatable"] = true,
+								["lvl"] = 120,
+								["coords"] = {
+									{ 42.22, 44.27, 81 },
+								},
+								["g"] = {
+									{	-- Azerite Firework Launcher
+										["itemID"] = 166877,	-- Azerite Firework Launcher
+									},
+								},
+							},
 						},
 					}),
 					n(-17, { -- Quests
@@ -63,7 +80,10 @@ _.Zones =
 					}),
 					n(-2, {	-- Vendors
 						["groups"] = {
-							n(130216, { -- Magni Bronzebeard  [NOTE: Attaching him here instead of Silithius file so he stands out and people don't forget about him.  He will be linked via "maps" technique".   This also shoves him at the top for people who are 120+
+							n(130216, { -- Magni Bronzebeard
+								["coords"] = {
+									{ 42.22, 44.27, 81 },
+								},
 								["groups"] = {
 									i(160544), -- Champions of Azeroth Tabard
 									i(163036, {	-- Polished Pet Charm

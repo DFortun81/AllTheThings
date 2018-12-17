@@ -55,7 +55,7 @@ _.Zones =
 									},
 								},
 								{	-- Tales of de Loa: Torga
-									["itemID"] = 163197,	-- Tales of de Loa: 
+									["itemID"] = 163197,	-- Tales of de Loa:
 									["coords"] = {
 										{
 											72.85,
@@ -64,7 +64,7 @@ _.Zones =
 									},
 									["g"] = {
 										{
-											["criteriaID"] = 14,	--  Tales of de Loa: 
+											["criteriaID"] = 14,	--  Tales of de Loa:
 										},
 									},
 								},
@@ -110,7 +110,7 @@ _.Zones =
 									},
 								},
 							},
-						},						
+						},
 						ach(12588, {	-- Eat Your Greens
 							-- Add more coordinates when full object data is available on wowhead.
 							o(291233, {	-- Saurolisk Tail
@@ -191,7 +191,7 @@ _.Zones =
 											["icon"] = "Interface\\Icons\\ability_priest_clarityofpower",
 											["qg"] = 133845,	-- Jani
 											["questID"] = 50440,	-- Item Turn-In
-											["sourceQuests"] = { 
+											["sourceQuests"] = {
 												51145,	-- Curse of Jani [Alliance]
 												47442,	-- Curse of Jani [Horde]
 											},
@@ -224,7 +224,7 @@ _.Zones =
 											["icon"] = "Interface\\Icons\\ability_priest_clarityofpower",
 											["qg"] = 133840,	-- Jani
 											["questID"] = 50436,	-- Item Turn-In
-											["sourceQuests"] = { 
+											["sourceQuests"] = {
 												51145,	-- Curse of Jani [Alliance]
 												47442,	-- Curse of Jani [Horde]
 											},
@@ -240,7 +240,7 @@ _.Zones =
 								{	-- Taking the Loa Road
 									["qg"] = 136608,	-- Jani
 									["questID"] = 50444,	-- Taking the Loa Road
-									["sourceQuests"] = { 
+									["sourceQuests"] = {
 										51145,	-- Curse of Jani [Alliance]
 										47442,	-- Curse of Jani [Horde]
 									},
@@ -254,7 +254,7 @@ _.Zones =
 										},
 									},
 								},
-								
+
 								{	-- Vilescale Pearl
 									["itemID"] = 157797,	-- Vilescale Pearl
 									["qg"] = 133828,	-- Jani
@@ -277,7 +277,7 @@ _.Zones =
 											["icon"] = "Interface\\Icons\\ability_priest_clarityofpower",
 											["qg"] = 133828,	-- Jani
 											["questID"] = 50434,	-- Item Turn-In
-											["sourceQuests"] = { 
+											["sourceQuests"] = {
 												51145,	-- Curse of Jani [Alliance]
 												47442,	-- Curse of Jani [Horde]
 											},
@@ -304,19 +304,19 @@ _.Zones =
 						}),
 						ach(12771, {	-- Treasures of Nazmir
 							["groups"] = {
-								o(279260, {	-- Cleverly Disguised Chest	
+								o(279260, {	-- Cleverly Disguised Chest
 									["questID"] = 49885,
 									["icon"] = "Interface\\Icons\\garrison_bronzechest",
 								}),
-								o(277715, {	-- Cursed Nazmani Chest	
+								o(277715, {	-- Cursed Nazmani Chest
 									["questID"] = 49979,
 									["icon"] = "Interface\\Icons\\garrison_bronzechest",
 						s		}),
-								o(279689, {	-- Lost Nazmani Treasure	
+								o(279689, {	-- Lost Nazmani Treasure
 									["questID"] = 49891,
 									["icon"] = "Interface\\Icons\\garrison_bronzechest",
 								}),
-								o(279253, {	-- Lucky Horace's Lucky Chest	
+								o(279253, {	-- Lucky Horace's Lucky Chest
 									["questID"] = 49867,
 									["icon"] = "Interface\\Icons\\garrison_bronzechest",
 								}),
@@ -340,7 +340,7 @@ _.Zones =
 									["questID"] = 49889,
 									["icon"] = "Interface\\Icons\\garrison_bronzechest",
 								}),
-								o(277885, {	-- Wunja's Trove	
+								o(277885, {	-- Wunja's Trove
 									["questID"] = 49313,
 									["icon"] = "Interface\\Icons\\garrison_bronzechest",
 								}),
@@ -349,10 +349,6 @@ _.Zones =
 					},
 				}),
 			},
-			["achievementID"] = 12561,	-- Explore Nazmir
-			["lvl"] = 110,
-			["description"] = "|cff66ccffNazmir was once a lush forest, but during the Cataclysm Nazmir started to sink into the sea. Now, it is a fetid swamp full of ruined buildings and infested with blood trolls. It harbors ancient titan secrets in a top security facility to study the Old Gods, as well as a tool to destroy all life on the planet. The Horde will have to enlist the help of the loa to combat these threats.\n\nOnce the shining heart of troll civilization, Nazmir is now a bleak swamp riddled with ruined reminders of its former greatness. In the current troll capital of Zuldazar, stories are passed down from generation to generation cautioning children to behave, lest Nazmir's twisted practitioners of blood magic come to snatch them from their beds. And those who dare brave the swamp have a terrible habit of disappearing, never to return. The blood trolls of Nazmir are the monsters that haunt every Zandalari child's nightmares — and for good reason, as they are dedicated to the worship of the Blood God G'huun and to a single-minded purpose: the destruction of the last functioning titan disc within the city of Zuldazar. Should the trolls shatter this seal, G'huun will be freed from its eons-long confinement to rule the world. Upon arriving in Nazmir, you will meet Princess Talanji, who will ask you to escort her as you look for signs of blood troll activity in the area.|r",
 		}),
 	}),
 };
---]]
