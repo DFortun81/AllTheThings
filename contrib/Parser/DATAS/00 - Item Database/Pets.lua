@@ -757,5 +757,5 @@ pet(166346, 2539);	-- Trecker's Cage
 pet(166719, 2569);	-- Violet Abyssal Eel
 pet(160587, 2184);	-- Whomper
 pet(165907, 2535);	-- Wicker Wraith
-pet(166345, 2537);	-- Zandalari Raptor Egg
+pet(166345, 2538);	-- Zandalari Raptor Egg (Dasher)
 pet(166455, 2550);	-- Zur'aj the Depleted

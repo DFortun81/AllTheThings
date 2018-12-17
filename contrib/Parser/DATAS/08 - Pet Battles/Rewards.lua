@@ -4,7 +4,7 @@
 
 _.PetBattles = 
 {
-	i(94207, { -- Fabled Pandaren Pet Supplies
+	i(94207, {	-- Fabled Pandaren Pet Supplies
 		["groups"] = {
 			i(89139),	-- Chain Pet Leash
 			i(37460),	-- Rope Pet Leash
@@ -18,7 +18,7 @@ _.PetBattles =
 			64572, 	-- Sara Finkleswitch
 		},
 	}),
-	i(89125, { -- Sack of Pet Supplies
+	i(89125, {	-- Sack of Pet Supplies
 		["groups"] = {
 			i(89139),	-- Chain Pet Leash
 			i(37460),	-- Rope Pet Leash
