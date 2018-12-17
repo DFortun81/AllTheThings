@@ -396,7 +396,7 @@ _.Instances =
 							cr(11489, e(406, {	-- Tendris Warpwood
 								i(18353),	-- Stoneflower Staff
 								i(18352),	-- Petrified Bark Shield
-								i(18382),	-- Fluctuating Cloak (7.3.5 - Moved from Prince Tortheldrin)
+								un(2, i(18382)),	-- Fluctuating Cloak (7.3.5 - Moved from Prince Tortheldrin, Made Unobtainable by Blizzard Incompetence.)
 								i(18393),	-- Warpwood Bindings
 								i(18390),	-- Tanglemoss Leggings
 							})),
