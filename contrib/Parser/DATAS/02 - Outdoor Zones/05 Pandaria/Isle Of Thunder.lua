@@ -1019,6 +1019,7 @@ _.Zones =
 			},
 			["maps"] = {
 				505,	-- Lightning Vein Mine
+				516,	-- Scenario
 			},
 			["lvl"] = 85,	
 			["achievementID"] = 8099,
