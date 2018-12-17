@@ -7,7 +7,7 @@ _.Zones =
 		m(862, {	-- Zuldazar
 			["groups"] = {
 				n(-16,  {	-- Rares
-					-- Note: While these are all technically Achievement Criteria we don't want to use that in the infomration on whether you have killed it or not.  These is due to once you killing it on one character it would auto-complete your alts. What we want to do is instead place it as a reward.  This way it tracks if you did it for your account while also still telling you if you killed it on that toon. What we want to do is instead place it as a reward.  This way it tracks if you did it for your account while also still telling you if you killed it on that toon.
+					-- Note: While these are all technically Achievement Criteria we don't want to use that in the information on whether you have killed it or not.  These is due to once you killing it on one character it would auto-complete your alts. What we want to do is instead place it as a reward.  This way it tracks if you did it for your account while also still telling you if you killed it on that toon. What we want to do is instead place it as a reward.  This way it tracks if you did it for your account while also still telling you if you killed it on that toon.
 					["groups"] = {
 						n(129961, {	-- Atal'zul Gotaka [CLQS]
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
@@ -171,6 +171,17 @@ _.Zones =
 							["coords"] = {
 								{ 60.72, 66.11 },
 							},
+						}),
+						n(149147, {	-- N'chala the Egg Thief
+							["g"] = {
+								i(166345),	-- Zandalari Raptor Egg (PET!)
+							},
+							["coords"] = {
+								{ 69.2, 35.2 },
+								{ 69.4, 38.6 },
+							},
+							["questID"] = 54770,	-- needs confirmation, but this was the last questID printed after I killed it
+							["description"] = "N'chala pats between the coordinates.",
 						}),
 						n(136413, {	-- Syrawon the Dominus [CLQS]
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
