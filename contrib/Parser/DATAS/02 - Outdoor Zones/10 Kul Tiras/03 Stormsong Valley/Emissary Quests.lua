@@ -7,12 +7,38 @@ _.Zones =
 		m(942, {	-- Stormsong Valley
 			["groups"] = {
 				n(-169, { 	-- Emissary Quests
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						q(50601, {	-- Storm's Wake
+							["qg"] = 135800,	-- Sister Lilyana
 							["isDaily"] = true,
 							["lvl"] = 120,
-							["races"] = ALLIANCE_ONLY,
+							["coords"] = {
+								{ 59.29, 69.33, 942 },
+							},
 						}),
+						{	-- Supplies from Storm's Wake
+							["questID"] = 54457,	-- Supplies from Storm's Wake						
+							["qg"] = 135800,		-- Sister Lilyana
+							["isDaily"] = true,
+							["lvl"] = 120,
+							["coords"] = {
+								{ 59.29, 69.33, 942 },
+							},
+							["g"] = {
+								{	-- Storm's Wake Supplies
+									["itemID"] = 166294,	-- Storm's Wake Supplies
+									["g"] = {
+										{	-- Violet Abyssal Eel
+											["itemID"] = 166719,	-- Violet Abyssal Eel
+										},
+										{	-- Technique: Glyph of Storm's Wake
+											["itemID"] = 166665,	-- Technique: Glyph of Storm's Wake
+										},
+									},
+								},
+							},
+						},
 					},
 				}),
 			},
