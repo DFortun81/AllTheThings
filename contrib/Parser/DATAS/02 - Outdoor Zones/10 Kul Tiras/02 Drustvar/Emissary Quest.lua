@@ -8,12 +8,38 @@ _.Zones =
 		m(896, {	-- Drustvar
 			["groups"] = {
 				n(-169, { 	-- Emissary Quests
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						q(50600, {	-- Order of Embers
+							["qg"] = 135815,	-- Quartermaster Alcorn
 							["isDaily"] = true,
 							["lvl"] = 120,
-							["races"] = ALLIANCE_ONLY,
+							["coords"] = {
+								{ 37.89, 49.01, 896 },
+							},
 						}),
+						{	-- Supplies from the Order of Embers
+							["questID"] = 54456,	-- Supplies from the Order of Embers
+							["qg"] = 135815,	-- Quartermaster Alcorn
+							["repeatable"] = true,
+							["lvl"] = 120,
+							["coords"] = {
+								{ 37.89, 49.01, 896 },
+							},
+							["g"] = {
+								{	-- Order of Embers Supplies
+									["itemID"] = 166297,	-- Order of Embers Supplies
+									["g"] = {
+										{	-- Bewitching Tea Set
+											["itemID"] = 166808,	-- Bewitching Tea Set
+										},
+										{	-- Cobalt Raven Hatchling
+											["itemID"] = 166718,	-- Cobalt Raven Hatchling
+										},
+									},
+								},
+							},
+						},
 					},
 				}),
 			},
