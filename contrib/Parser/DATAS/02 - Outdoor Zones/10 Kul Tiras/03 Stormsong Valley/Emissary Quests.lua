@@ -9,6 +9,29 @@ _.Zones =
 				n(-169, { 	-- Emissary Quests
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						{	-- Baubles from the Seekers
+							["questID"] = 54451,	-- Baubles from the Seekers
+							["qg"] = 135793, 		-- Collector Kojo
+							["repeatable"] = true,
+							["lvl"] = 120,
+							["coords"] = {
+								{ 40.54, 36.41, 942 },
+							},
+							["g"] = {
+								{	-- Bowl of Glowing Pufferfish
+									["itemID"] = 166704,	-- Bowl of Glowing Pufferfish
+								},
+								{	-- Kojo's Master Matching Set
+									["itemID"] = 166851,	-- Kojo's Master Matching Set
+								},
+								{	-- Recipe: Boralus Blood Sausage [Rank 3]
+									["itemID"] = 166807,	-- Recipe: Boralus Blood Sausage [Rank 3]
+								},
+								{	-- Recipe: Sanguiated Feast [Rank 3]
+									["itemID"] = 166264,	-- Recipe: Sanguiated Feast [Rank 3]
+								},
+							},
+						},
 						q(50601, {	-- Storm's Wake
 							["qg"] = 135800,	-- Sister Lilyana
 							["isDaily"] = true,
@@ -39,6 +62,7 @@ _.Zones =
 								},
 							},
 						},
+						
 					},
 				}),
 			},

@@ -7,18 +7,6 @@ _.Zones =
 		m(895, {	-- -- Tiragarde Sound
 			["groups"] = {
 				n(-169, { 	-- Emissary Quests
-					["groups"] = {
-						q(50605, { 	-- Alliance War Effort [7th Legion]
-							["isDaily"] = true,
-							["lvl"] = 120,
-							["races"] = ALLIANCE_ONLY,
-						}),
-						q(50599, {	-- Proudmoore Admiralty
-							["isDaily"] = true,
-							["lvl"] = 120,
-							["races"] = ALLIANCE_ONLY,
-						}),
-					},
 				}),
 			},
 			["achievementID"] = 12556,	-- Explore Tiragarde Sound
