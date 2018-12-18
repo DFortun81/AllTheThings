@@ -386,6 +386,10 @@ _.Zones =
 								i(162746),	-- Schematic: Finely-Tuned Stormsteel Destroyer [Rank 3]
 								i(162744),	-- Schematic: Monelite Scope of Alacrity [Rank 3]
 								i(162745),	-- Schematic: Precision Attitude Adjuster [Rank 3]
+								{	-- Honorbound Scouting Map
+									["itemID"] = 166444,	-- Honorbound Scouting Map
+									["collectible"] = false,
+								},
 								{	-- War Resources
 									["currencyID"] = 1560,	-- War Resources
 									["g"] = {

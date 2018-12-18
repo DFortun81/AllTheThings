@@ -684,6 +684,10 @@ _.Zones =
 								i(162346),	-- Schematic: Finely-Tuned Stormsteel Destroyer
 								i(162344),	-- Schematic: Monelite Scope of Alacrity
 								i(162345),	-- Schematic: Precision Attitude Adjuster
+								{	-- 7th Legion Scouting Map
+									["itemID"] = 166445,	-- 7th Legion Scouting Map
+									["collectible"] = false,
+								},
 								{	-- War Resources
 									["currencyID"] = 1560,	-- War Resources
 									["g"] = {
