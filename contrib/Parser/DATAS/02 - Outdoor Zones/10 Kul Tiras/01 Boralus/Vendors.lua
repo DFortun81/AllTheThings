@@ -61,6 +61,7 @@ _.Zones =
 										},
 										{	-- Lyrics: Song of the Sea
 											["itemID"] = 166749,	-- Lyrics: Song of the Sea
+											["questID"] = 54859,
 											["description"] = "Cost: 25 Seafarer's Dubloons",
 										},
 										{	-- Dented Coin [A]
