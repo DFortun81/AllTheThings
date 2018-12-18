@@ -104,6 +104,7 @@ _.Mounts =
 		i(94292),	-- Black Primal Raptor
 		i(77067),	-- Blazing Drake
 		i(153043),	-- Blessed Felcrusher Mount
+		i(166468),	-- Bloodgorged Hunter
 		i(116659),	-- Bloodhoof Bull
 		i(43953),	-- Blue Drake
 		i(44151),	-- Blue Proto-Drake
@@ -145,6 +146,7 @@ _.Mounts =
 		i(147807),	-- Highmountain Elderhorn
 		i(50818),	-- Invincible
 		i(116660),	-- Ironhoof Destroyer
+		i(166467),	-- Island Thunderscale
 		i(94231),	-- Jade Primordial Direhorn
 		i(104253),	-- Kor'kron Juggernaut
 		i(152844),	-- Lambent Mana Ray
@@ -169,6 +171,7 @@ _.Mounts =
 		i(21321),	-- Red Qiraji Battle Tank
 		i(163575),	-- Reins of a Tamed Bloodfeaster
 		i(147835),	-- Riddler's Mind-Worm
+		i(166466),	-- Risen Mare
 		i(13335),	-- Rivendare's Deathcharger
 		i(116767),	-- Sapphire Riberbeast
 		i(152840),	-- Scintillating Mana Ray Mount
@@ -183,6 +186,7 @@ _.Mounts =
 		i(89783),	-- Son of Galleon
 		i(163586),  -- Squawks
 		i(93666),	-- Spawn of Horridon
+		i(166470),	-- Stonehide Elderhorn
 		i(67151),	-- Subdued Seahorse
 		i(116792),	-- Sunhide Gronnling
 		i(163585),  -- Surf Jelly

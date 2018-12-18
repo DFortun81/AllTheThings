@@ -339,7 +339,7 @@ _.ExpansionFeatures =
 					n(-160, {	-- Mounts
 						i(166468),	-- Bloodgorged Hunter
 						i(163583),	-- Craghorn Chasm-Leaper
-						i(166467),	-- Island Thudnerscale
+						i(166467),	-- Island Thunderscale
 						i(163582),	-- Qinsho's Eternal Hound
 						i(166466),	-- Risen Mare
 						i(163586),	-- Squawks
