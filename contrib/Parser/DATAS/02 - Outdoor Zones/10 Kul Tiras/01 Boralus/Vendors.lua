@@ -567,6 +567,7 @@ _.Zones =
 								i(162130),	-- Recipe: Potion of Bursting Blood [Rank 3]
 								i(162327),	-- Schematic: AZ3-R1-T3 Bionic Bifocals [Rank 2]
 								i(162328),	-- Schematic: AZ3-R1-T3 Bionic Bifocals [Rank 3]
+								i(166277),	-- Schematic: Unstable Temporal Time Shift [Rank 2]
 							},
 							["races"] = ALLIANCE_ONLY,
 							["coords"] = {
