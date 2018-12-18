@@ -321,7 +321,7 @@ _.Zones =
 							},
 							{	-- Jehil the Climber
 								["npcID"] = 79678,	-- Jehil the Climber
-								["questID"] = 34708,
+								--["questID"] = 34708, -- this doesn't appear to be a vignette anymore, but he still drops unique boots
 								["coord"] = { 61.76, 26.6 },
 								["g"] = {	
 									i(112078),	-- Jehil's Climbin' Boots
