@@ -569,6 +569,9 @@ _.Zones =
 								i(162328),	-- Schematic: AZ3-R1-T3 Bionic Bifocals [Rank 3]
 							},
 							["races"] = ALLIANCE_ONLY,
+							["coords"] = {
+								{ 67.52, 21.56, 1161 },
+							},
 						}),
 						{	-- Provisioner Stoutforge
 							["npcID"] = 148927,	-- Provisioner Stoutforge

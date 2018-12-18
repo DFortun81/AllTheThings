@@ -8,6 +8,7 @@ _.Zones =
 		m(1161, {	-- Boralus
 			["groups"] = {
 				n(-169, { 	-- Emissary Quests
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						q(50605, { 	-- Alliance War Effort [7th Legion]
 							["groups"] = bubbleDown({["modID"] = 5}, {
@@ -83,8 +84,9 @@ _.Zones =
 							["qg"] = 135446,	-- Vindicator Jaelaana
 							["isDaily"] = true,
 							["lvl"] = 120,
-							["repeatable"] = true,
-							["races"] = ALLIANCE_ONLY,
+							["coords"] = {
+								{ 69.32, 24.94, 1161 },
+							},
 						}),
 						q(50599, {	-- Proudmoore Admiralty
 							["groups"] = {
@@ -169,11 +171,57 @@ _.Zones =
 									},
 								}),
 							},
+							["qg"] = 135808,	-- Provisioner Fray
 							["isDaily"] = true,
 							["lvl"] = 120,
-							["repeatable"] = true,
-							["races"] = ALLIANCE_ONLY,
+							["coords"] = {
+								{ 67.52, 21.56, 1161 },
+							},
 						}),
+						{	-- Supplies from the 7th Legion
+							["questID"] = 166300,	-- Supplies from the 7th Legion
+							["qg"] = 135446,	-- Vindicator Jaelaana
+							["repeatable"] = true,
+							["lvl"] = 120,
+							["coords"] = {
+								{ 69.32, 24.94, 1161 },
+							},
+							["g"] = {
+								{	-- 7th Legion Supplies
+									["itemID"] = 166300,	-- 7th Legion Supplies
+									["g"] = {
+										{	-- Rallying War Banner
+											["itemID"] = 166879,	-- Rallying War Banner
+										},
+										{	-- Recipe: Contract: 7th Legion
+											["itemID"] = 166279,	-- Recipe: Contract: 7th Legion
+										},
+									},
+								},
+							},
+						},
+						{	-- Supplies from Proudmoore Admiralty
+							["questID"] = 54458,	-- Supplies from Proudmoore Admiralty
+							["qg"] = 135808,	-- Provisioner Fray
+							["repeatable"] = true,
+							["lvl"] = 120,
+							["coords"] = {
+								{ 67.52, 21.56, 1161 },
+							},
+							["g"] = {
+								{	-- Proudmoore Admiralty Supplies
+									["itemID"] = 166295,	-- Proudmoore Admiralty Supplies
+									["g"] = {
+										{	-- Albatross Feather
+											["itemID"] = 166714,	-- Albatross Feather
+										},
+										{	-- Proudmoore Music Box
+											["itemID"] = 166702,	-- Proudmoore Music Box
+										},
+									},
+								},
+							},
+						},
 					},
 				}),
 			},
