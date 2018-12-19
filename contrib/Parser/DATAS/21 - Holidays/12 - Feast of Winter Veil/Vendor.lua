@@ -178,7 +178,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 							i(34262), -- Pattern: Winter Boots
 							-- Tailoring
 							i(34261, { -- Pattern: Green Winter Clothes
-								["groups"] = {},
+								
 								["races"] = HORDE_ONLY,
 							}),
 							-- Other

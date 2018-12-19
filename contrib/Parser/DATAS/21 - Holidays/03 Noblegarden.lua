@@ -9,12 +9,12 @@ _.Holidays = bubbleDown({["u"] = 19},
 				["groups"] = {
 					un(19, title(122)), -- the Noble
 					ach(2676, { -- I Found One!
-						["groups"] = {},
+						
 					}),
 					ach(2417, { -- Chocolate Lover
 						["groups"] = {
 							ach(2418, { -- Chocoholic
-								["groups"] = {},
+								
 							}),
 						},
 					}),
@@ -28,10 +28,10 @@ _.Holidays = bubbleDown({["u"] = 19},
 						},
 					}),
 					ach(2576, { -- Blushing Bride
-						["groups"] = {},
+						
 					}),
 					ach(2416, { -- Hard Boiled
-						["groups"] = {},
+						
 					}),
 					ach(2419, { -- Spring Fling (Alliance)
 						["groups"] = {
@@ -52,11 +52,11 @@ _.Holidays = bubbleDown({["u"] = 19},
 						["races"] = HORDE_ONLY,
 					}),
 					ach(2421, { -- Noble Garden (Alliance)
-						["groups"] = {},
+						
 						["races"] = ALLIANCE_ONLY,
 					}),
 					ach(2420, { -- Noble Garden (Horde)
-						["groups"] = {},
+						
 						["races"] = HORDE_ONLY,
 					}),
 					ach(2422, { -- Shake Your Bunny-Maker
@@ -101,7 +101,7 @@ _.Holidays = bubbleDown({["u"] = 19},
 			-- ALLIANCE QUESTS --
 			["groups"] = bubbleDown({["races"] = ALLIANCE_ONLY}, { -- Alliance-only Quests
 				q(13484, { -- Spring Collectors
-					["groups"] = {},
+					
 					["qgs"] = {
 						18927, -- Human Commoner
 						19148, -- Dwarf Commoner
@@ -126,7 +126,7 @@ _.Holidays = bubbleDown({["u"] = 19},
 					},
 				}),
 				q(13480, { -- The Great Egg Hunt (Alliance)
-					["groups"] = {},
+					
 					["qg"] = 32799, -- Spring Collector
 					["maps"] = {
 						27, -- Dun Morogh
@@ -152,7 +152,7 @@ _.Holidays = bubbleDown({["u"] = 19},
 			-- HORDE QUESTS --
 			["groups"] = bubbleDown({["races"] = HORDE_ONLY}, { -- Horde-only Quests
 				q(13483, { -- Spring Gatherers
-					["groups"] = {},
+					
 					["qgs"] = {
 						19169, -- Blood Elf Commoner
 						19175, -- Orc Commoner
@@ -176,7 +176,7 @@ _.Holidays = bubbleDown({["u"] = 19},
 					},
 				}),
 				q(13479, { -- The Great Egg Hunt (Horde)
-					["groups"] = {},
+					
 					["qg"] = 32798, -- Spring Gatherer
 					["maps"] = {
 						1, -- Durotar

@@ -11,13 +11,13 @@ _.Holidays = bubbleDown({["u"] = 29},
 				["g"] = {
 					-- ALLIANCE QUESTS --
 					q(7022, { -- Greatfather Winter is Here!
-						["groups"] = {},
+						
 						["qg"] = 13433,	-- Wulmort Jinglepocket
 						["maps"] = { 87, },	-- Ironforge
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(7023, { -- Greatfather Winter is Here!
-						["groups"] = {},
+						
 						["qgs"] = {
 							13435,	-- Khole Jinglepocket
 							23010,	-- Wolgren Jinglepocket
@@ -31,7 +31,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(7025, { -- Treats for Greatfather Winter
-						["groups"] = {},
+						
 						["qg"] = 13444,	-- Greatfather Winter
 						["maps"] = { 87, },	-- Ironforge
 						["sourceQuests"] = { 7022, 7023, },	-- Greatfather Winter is Here!
@@ -40,7 +40,6 @@ _.Holidays = bubbleDown({["u"] = 29},
 					q(7043, { -- You're a Mean One... (Alliance)
 						["groups"] = {
 							i(149503, { -- Stolen Gift
-								["groups"] = {},
 								["description"] = "This gift is granted to any player between levels 60-100. This gift doesn't drop any of the rare seasonal items; it's currently not worth it.",
 								["lvl"] = 60,
 							}),
@@ -56,6 +55,8 @@ _.Holidays = bubbleDown({["u"] = 29},
 									})),
 									un(29, p(254)),	-- Blue Clockwork Rocket Bot
 									-- Toys
+									un(29, i(151349)), 	-- Toy Weapon Set [Alliance]
+									un(29, i(151348)), 	-- Toy Weapon Set [Horde]
 									un(29, i(45057)),	-- Wind-Up Train Wrecker
 									un(29, i(54343)),	-- Blue Crashin' Thrashin' Racer Controller
 									un(29, i(90888)),	-- Foot Ball
@@ -131,13 +132,13 @@ _.Holidays = bubbleDown({["u"] = 29},
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(7062, { -- The Reason for the Season (Alliance)
-						["groups"] = {},
+						
 						["qg"] = 1365,	-- Goli Krumn
 						["maps"] = { 87, },	-- Ironforge
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(7063, { -- The Feast of Winter Veil (Alliance)
-						["groups"] = {},
+						
 						["qg"] = 2916,	-- Historian Karnik
 						["maps"] = { 87, },	-- Ironforge
 						["sourceQuests"] = { 7062, },	-- The Reason for the Season (Alliance)
@@ -145,25 +146,25 @@ _.Holidays = bubbleDown({["u"] = 29},
 					}),
 					-- HORDE QUESTS --
 					q(6961, { -- Great-father Winter is Here!
-						["groups"] = {},
+						
 						["qg"] = 13418,	-- Kaymard Copperpinch
 						["maps"] = { 85, },	-- Orgrimmar
 						["races"] = HORDE_ONLY,
 					}),
 					q(7021, { -- Great-father Winter is Here!
-						["groups"] = {},
+						
 						["qg"] = 13431,	-- Whulwert Copperpinch
 						["maps"] = { 88, },	-- Thunder Bluff
 						["races"] = HORDE_ONLY,
 					}),
 					q(7024, { -- Great-father Winter is Here!
-						["groups"] = {},
+						
 						["qg"] = 13429,	-- Nardstrum Copperpinch
 						["maps"] = { 90, },	-- Undercity
 						["races"] = HORDE_ONLY,
 					}),
 					q(6962, { -- Treats for Great-father Winter
-						["groups"] = {},
+						
 						["qg"] = 13445,	-- Great-father Winter
 						["maps"] = { 85, },	-- Orgrimmar
 						["sourceQuests"] = { 6961, 7021, 7024, },	-- Great-father Winter is Here!
@@ -172,7 +173,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 					q(6983, { -- You're a Mean One... (Horde)
 						["groups"] = {
 							i(149503, { -- Stolen Gift
-								["groups"] = {},
+								
 								["description"] = "This gift is granted to any player between levels 60-100. This gift doesn't drop any of the rare seasonal items; it's currently not worth it.",
 								["lvl"] = 60,
 							}),
@@ -261,13 +262,13 @@ _.Holidays = bubbleDown({["u"] = 29},
 						["races"] = HORDE_ONLY,
 					}),
 					q(6964, { -- The Reason for the Season (Horde)
-						["groups"] = {},
+						
 						["qg"] = 9550,	-- Furmund
 						["maps"] = { 85, },	-- Orgrimmar
 						["races"] = HORDE_ONLY,
 					}),
 					q(7061, { -- The Feast of Winter Veil (Horde)
-						["groups"] = {},
+						
 						["qg"] = 13417,	-- Sagorne Creststrider
 						["maps"] = { 85, },	-- Orgrimmar
 						["sourceQuests"] = { 6964, },	-- The Reason for the Season (Horde)

@@ -191,8 +191,8 @@ _.Holidays = bubbleDown({["u"] = 29},
 							}),
 							i(151350, { -- Winter Veil Gift
 								["groups"] = {
-									un(29, a(i(151349))), -- Toy Weapon Set [Alliance]
-									un(29, h(i(151348))), -- Toy Weapon Set [Horde]
+									un(29, i(151349)), -- Toy Weapon Set [Alliance]
+									un(29, i(151348)), -- Toy Weapon Set [Horde]
 								},
 								["description"] = "Gift from 2017. You will receive only one factions Toy Weapon Set.  In order to obtain the opposite factions, you will need to have a character on that side open this gift.",
 								["questID"] = 47751,

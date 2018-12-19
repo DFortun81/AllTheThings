@@ -645,11 +645,11 @@ _.Holidays =  bubbleDown({["u"] = 21},
 							["races"] = ALLIANCE_ONLY,
 						}),
 						ach(263, { -- Ice the Frost Lord
-							["groups"] = {},
+							
 							["races"] = ALLIANCE_ONLY,
 						}),
 						ach(271, { -- Burning Hot Pole Dance
-							["groups"] = {},
+							
 							["description"] = "You need the Mantle of the Fire Festival, Vestment of Summer, and the Sandals of Summer to complete the Midsummer set.",
 							["races"] = ALLIANCE_ONLY,
 						}),
@@ -702,7 +702,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 							["races"] = ALLIANCE_ONLY,
 						}),
 						ach(272, { -- Torch Juggler
-							["groups"] = {},
+							
 							["maps"] = { 125 }, -- Dalaran (Northrend)
 							["races"] = ALLIANCE_ONLY,
 						}),
@@ -844,17 +844,17 @@ _.Holidays =  bubbleDown({["u"] = 21},
 					["races"] = ALLIANCE_ONLY,
 				}),
 				ach(8042, { -- Extinguishing Pandaria
-					["groups"] = {},
+					
 					["maps"] = { 390, }, -- Vale of Eternal Blossoms
 					["races"] = ALLIANCE_ONLY,
 				}),
 				ach(11276, { -- Extinguishing Draenor
-					["groups"] = {},
+					
 					["maps"] = { 525, }, -- Frostfire Ridge
 					["races"] = ALLIANCE_ONLY,
 				}),
 				ach(11278, { -- Extinguishing the Broken Isles
-					["groups"] = {},
+					
 					["maps"] = { 680 }, -- Suramar
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -1489,12 +1489,12 @@ _.Holidays =  bubbleDown({["u"] = 21},
 							},
 						}),
 						ach(271, { -- Burning Hot Pole Dance
-							["groups"] = {},
+							
 							["description"] = "You need the Mantle of the Fire Festival, Vestment of Summer, and the Sandals of Summer to complete the Midsummer set.",
 							["races"] = HORDE_ONLY,
 						}),
 						ach(263, { -- Ice the Frost Lord
-							["groups"] = {},
+							
 							["races"] = HORDE_ONLY,
 						}),
 						ach(1145, { -- King of the Fire Festival
@@ -1547,7 +1547,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 							["races"] = HORDE_ONLY,
 						}),
 						ach(272, { -- Torch Juggler
-							["groups"] = {},
+							
 							["maps"] = { 125, }, -- Dalaran (Northrend)
 							["races"] = HORDE_ONLY,
 						}),
@@ -1689,17 +1689,17 @@ _.Holidays =  bubbleDown({["u"] = 21},
 					["races"] = HORDE_ONLY,
 				}),
 				ach(8043, { -- Extinguishing Pandaria
-					["groups"] = {},
+					
 					["maps"] = { 390, }, -- Vale of Eternal Blossoms
 					["races"] = HORDE_ONLY,
 				}),
 				ach(11277, { -- Extinguishing Draenor
-					["groups"] = {},
+					
 					["maps"] = { 539, }, -- Shadowmoon Valley
 					["races"] = HORDE_ONLY,
 				}),
 				ach(11279, { -- Extinguishing the Broken Isles
-					["groups"] = {},
+					
 					["maps"] = { 680, }, -- Suramar
 					["races"] = HORDE_ONLY,
 				}),
@@ -1865,7 +1865,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 						},
 					},
 					q(11970, { -- The Master of Summer Lore
-						["groups"] = {},
+						
 						["qgs"] = {
 							18927, -- Human Commoner
 							19148, -- Dwarf Commoner
@@ -1890,7 +1890,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 						},
 					}),
 					q(11731, { -- Torch Tossing
-						["groups"] = {},
+						
 						["qg"] = 25975,	-- Master Fire Eater
 						["races"] = ALLIANCE_ONLY,
 						["maps"] = {
@@ -1901,7 +1901,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 						},
 					}),
 					q(11657, { -- Torch Catching
-						["groups"] = {},
+						
 						["qg"] = 25975,	-- Master Fire Eater
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = 11731, -- Torch Tossing
@@ -1913,7 +1913,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 						},
 					}),
 					q(11971, { -- The Spinner of Summer Tales
-						["groups"] = {},
+						
 						["qgs"] = {
 							19169, -- Blood Elf Commoner
 							19175, -- Orc Commoner
@@ -1940,7 +1940,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 						},
 					}),
 					q(11922, {	-- Torch Tossing
-						["groups"] = {},
+						
 						["qg"] = 26113,	-- Master Flame Eater
 						["races"] = HORDE_ONLY,
 						["maps"] = {
@@ -1951,7 +1951,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 						},
 					}),
 					q(11923, {	-- Torch Catching
-						["groups"] = {},
+						
 						["qg"] = 26113,	-- Master Flame Eater
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = 11922, -- Torch Tossing

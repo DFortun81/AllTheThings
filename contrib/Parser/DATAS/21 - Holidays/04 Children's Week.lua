@@ -10,7 +10,7 @@ _.Holidays = bubbleDown({["u"] = 20},
 					un(20, title(104)), -- Matron (Female characters)
 					un(20, title(105)), -- Patron (Male characters)
 					ach(1792, { -- Aw, Isn't It Cute?
-						["groups"] = {},
+						
 					}),
 					ach(1788, { -- Bad Example
 						["groups"] = {
@@ -29,11 +29,11 @@ _.Holidays = bubbleDown({["u"] = 20},
 						},
 					}),
 					ach(1790, { -- Hail To The King, Baby
-						["groups"] = {},
+						
 						["maps"] = { 136, }, -- Utgarde Pinnacle
 					}),
 					ach(1791, { -- Home Alone
-						["groups"] = {},
+						
 					}),
 					ach(1786, { -- School of Hard Knocks
 						["groups"] = {

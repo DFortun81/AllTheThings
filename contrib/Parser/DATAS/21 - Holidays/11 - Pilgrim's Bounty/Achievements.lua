@@ -10,7 +10,7 @@ _.Holidays = bubbleDown({["u"] = 28},
 					un(28, title(133)), -- the Pilgrim
 					un(28, i(44810)), -- Turkey Cage (Pet)
 					ach(3579, { -- "FOOD FIGHT!"
-						["groups"] = {},
+						
 					}),
 					ach(3576, { -- Now We're Cookin' (Alliance)
 						["groups"] = {
@@ -98,10 +98,10 @@ _.Holidays = bubbleDown({["u"] = 28},
 						},
 					}),
 					ach(3582, { -- Terokkar Turkey Time
-						["groups"] = {},
+						
 					}),
 					ach(3578, { -- The Turkinator
-						["groups"] = {},
+						
 					}),
 					ach(3559, { -- Turkey Lurkey
 						["groups"] = {

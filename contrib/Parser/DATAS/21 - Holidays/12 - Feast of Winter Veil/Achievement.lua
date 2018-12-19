@@ -13,35 +13,35 @@ _.Holidays = bubbleDown({["u"] = 29},
 						["groups"] = {
 							un(29, title(102)), -- Merrymaker
 							ach(273, { -- On Metzen!
-								["groups"] = {},
+								
 							}),
 							ach(252, { -- With a Little Helper from My Friends
-								["groups"] = {},
+								
 							}),
 							ach(1255, { -- Scrooge (Alliance)
-								["groups"] = {},
+								
 								["races"] = ALLIANCE_ONLY,
 							}),
 							ach(259, { -- Scrooge (Horde)
-								["groups"] = {},
+								
 								["races"] = HORDE_ONLY,
 							}),
 							ach(1282, { -- Fa-la-la-la-Ogri'la
-								["groups"] = {},
+								
 							}),
 							ach(277, { -- 'Tis the Season
-								["groups"] = {},
+								
 							}),
 							ach(279, { -- Simply Abominable
 								["groups"] = {
 									q(7045, { -- A Smokywood Pastures' Thank You! (Alliance)
-										["groups"] = {},
+										
 										["qg"] = 13433, -- Wulmort Jinglepocket
 										["maps"] = { 87, }, -- Ironforge
 										["races"] = ALLIANCE_ONLY,
 									}),
 									q(6984, { -- A Smokywood Pastures' Thank You! (Horde)
-										["groups"] = {},
+										
 										["qg"] = 13418, -- Kaymard Copperpinch
 										["maps"] = { 85, }, -- Orgrimmar
 										["races"] = HORDE_ONLY,
@@ -91,10 +91,10 @@ _.Holidays = bubbleDown({["u"] = 29},
 								},
 							}),
 							ach(1689, { -- He Knows If You've Been Naughty
-								["groups"] = {},
+								
 							}),
 							ach(1690, { -- A Frosty Shake
-								["groups"] = {},
+								
 							}),
 						},
 					}),
@@ -148,7 +148,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 						},
 					}),
 					ach(8699, { -- The Danger Zone
-						["groups"] = {},
+						
 					}),
 					ach(5853, { -- A-Caroling We Will Go (Alliance)
 						["groups"] = {
@@ -305,8 +305,8 @@ _.Holidays = bubbleDown({["u"] = 29},
 							ach(11913, { -- Don't Play With That In The House (2017)
 								["groups"] = {
 									i(151350, { -- Winter Veil Gift
-										un(29, a(i(151349))), -- Toy Weapon Set [Alliance]
-										un(29, h(i(151348))), -- Toy Weapon Set [Horde]
+										un(29, i(151349)), -- Toy Weapon Set [Alliance]
+										un(29, i(151348)), -- Toy Weapon Set [Horde]
 									}),
 								},
 							}),

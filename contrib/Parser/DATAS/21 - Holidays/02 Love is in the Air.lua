@@ -9,7 +9,7 @@ _.Holidays = bubbleDown({["u"] = 18},
 				["groups"] = {
 					un(18, title(103)),	-- the Love Fool
 					ach(260, { -- Charming
-						["groups"] = {},
+						
 					}),
 					ach(1188, { -- Shafted!
 						["groups"] = {
@@ -31,10 +31,10 @@ _.Holidays = bubbleDown({["u"] = 18},
 						["races"] = HORDE_ONLY,
 					}),
 					ach(1291, { -- Lonely?
-						["groups"] = {},
+						
 					}),
 					ach(1695, { -- Dangerous Love
-						["groups"] = {},
+						
 					}),
 					ach(1696, { -- The Rocket's Pink Glare
 						["groups"] = {
@@ -95,7 +95,7 @@ _.Holidays = bubbleDown({["u"] = 18},
 						},
 					}),
 					ach(1703, { -- My Love is Like a Red, Red Rose
-						["groups"] = {},
+						
 					}),
 					ach(1704, { -- My Love is Like a Red, Red Rose
 						["groups"] = {
@@ -118,7 +118,7 @@ _.Holidays = bubbleDown({["u"] = 18},
 				},
 			}),
 			ach(4624, { -- Tough Love
-				["groups"] = {},
+				
 			}),
 			ach(1700, { -- Perma-Peddle	
 				["groups"] = {
@@ -126,7 +126,7 @@ _.Holidays = bubbleDown({["u"] = 18},
 				},
 			}),
 			ach(9389, { -- It Might Just Save Your Life
-				["groups"] = {},
+				
 			}),
 			ach(9392, { -- Love Magnet
 				["groups"] = {
@@ -160,7 +160,7 @@ _.Holidays = bubbleDown({["u"] = 18},
 						i(50250, { -- Big Love Rocket
 							["groups"] = {
 								ach(4627, { -- Big Love Rocket
-									["groups"] = {},
+									
 								}),
 							},
 						}),
@@ -324,13 +324,13 @@ _.Holidays = bubbleDown({["u"] = 18},
 				i(50320, { -- Faded Lovely Greeting Card
 					["groups"] = {
 						q(24745, { -- Something is in the Air (and it Ain't Love) (Alliance)
-							["groups"] = {},
+							
 							["qg"] = 36296, -- Apothecary Hummel
 							["maps"] = { 310, }, -- Shadowfang Keep
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(14483, { -- Something is in the Air (and it Ain't Love) (Horde)
-							["groups"] = {},
+							
 							["qg"] = 36296, -- Apothecary Hummel
 							["maps"] = { 310, }, -- Shadowfang Keep
 							["races"] = HORDE_ONLY,
@@ -341,31 +341,31 @@ _.Holidays = bubbleDown({["u"] = 18},
 			-- ALLIANCE QUESTS --
 			["groups"] = bubbleDown({["races"] = ALLIANCE_ONLY}, { -- Alliance-only Quests
 				q(24597, { -- A Gift for the King of Stormwind
-					["groups"] = {},
+					
 					["qg"] = 37887, -- Kwee Q. Peddlefeet
 					["maps"] = { 84, }, -- Stormwind City
 					["isDaily"] = true,
 				}),
 				q(24609, { -- A Gift for a Lord of Ironforge
-					["groups"] = {},
+					
 					["qg"] = 37887, -- Kwee Q. Peddlefeet
 					["maps"] = { 87, }, -- Ironforge
 					["isDaily"] = true,
 				}),
 				q(24610, { -- A Gift for the High Priestess of Elune
-					["groups"] = {},
+					
 					["qg"] = 37887, -- Kwee Q. Peddlefeet
 					["maps"] = { 89, }, -- Darnassus
 					["isDaily"] = true,
 				}),
 				q(24611, { -- A Gift for the Prophet
-					["groups"] = {},
+					
 					["qg"] = 37887, -- Kwee Q. Peddlefeet
 					["maps"] = { 103, }, -- The Exodar
 					["isDaily"] = true,
 				}),
 				q(24804, { -- Uncommon Scents (Alliance)
-					["groups"] = {},
+					
 					["qg"] = 38293, -- Junior Inspector
 					["maps"] = {
 						87, -- Ironforge
@@ -374,31 +374,31 @@ _.Holidays = bubbleDown({["u"] = 18},
 					},
 				}),
 				q(24655, { -- Something Stinks (Alliance)
-					["groups"] = {},
+					
 					["qg"] = 38066, -- Inspector Snip Snagglebolt
 					["sourceQuest"] = 24804, -- Uncommon Scents (Alliance)
 					["maps"] = { 84, }, -- Stormwind City
 				}),
 				q(24656, { -- Pilfering Perfume (Alliance)
-					["groups"] = {},
+					
 					["qg"] = 38066, -- Inspector Snip Snagglebolt
 					["sourceQuest"] = 24655, -- Something Stinks (Alliance)
 					["maps"] = { 84, }, -- Stormwind City
 				}),
 				q(24848, { -- Fireworks At The Gilded Rose
-					["groups"] = {},
+					
 					["qg"] = 38066, -- Inspector Snip Snagglebolt
 					["sourceQuest"] = 24656, -- Pilfering Perfume (Alliance)
 					["maps"] = { 84, }, -- Stormwind City
 				}),
 				q(24849, { -- Hot On The Trail (Alliance)
-					["groups"] = {},
+					
 					["qg"] = 38325, -- Marion Sutton
 					["sourceQuest"] = 24848, -- Fireworks At The Gilded Rose
 					["maps"] = { 84, }, -- Stormwind City
 				}),
 				q(24657, { -- A Friendly Chat... (Alliance)
-					["groups"] = {},
+					
 					["qg"] = 38325, -- Marion Sutton
 					["sourceQuest"] = 24849, -- Hot On The Trail (Alliance)
 					["maps"] = { 84, }, -- Stormwind City
@@ -407,31 +407,31 @@ _.Holidays = bubbleDown({["u"] = 18},
 			-- HORDE QUESTS --
 			["groups"] = bubbleDown({["races"] = HORDE_ONLY}, { -- Horde-only Quests
 				q(24612, { -- A Gift for High Overlord Saurfang
-					["groups"] = {},
+					
 					["qg"] = 37887, -- Kwee Q. Peddlefeet
 					["maps"] = { 85, }, -- Orgrimmar
 					["isDaily"] = true,
 				}),
 				q(24613, { -- A Gift for the Banshee Queen
-					["groups"] = {},
+					
 					["qg"] = 37887, -- Kwee Q. Peddlefeet
 					["maps"] = { 90, }, -- Undercity
 					["isDaily"] = true,
 				}),
 				q(24614, { -- A Gift for the High Chieftain
-					["groups"] = {},
+					
 					["qg"] = 37887, -- Kwee Q. Peddlefeet
 					["maps"] = { 88, }, -- Thunder Bluff
 					["isDaily"] = true,
 				}),
 				q(24615, { -- A Gift for the Regent Lord of Quel'Thalas
-					["groups"] = {},
+					
 					["qg"] = 37887, -- Kwee Q. Peddlefeet
 					["maps"] = { 110, }, -- Silvermoon City
 					["isDaily"] = true,
 				}),
 				q(24805, { -- Uncommon Scents (Horde)
-					["groups"] = {},
+					
 					["qg"] = 38295, -- Junior Detective
 					["maps"] = {
 						88, -- Thunder Bluff
@@ -440,31 +440,31 @@ _.Holidays = bubbleDown({["u"] = 18},
 					},
 				}),
 				q(24536, { -- Something Stinks (Horde)
-					["groups"] = {},
+					
 					["qg"] = 37172, -- Detective Snap Snagglebolt
 					["sourceQuest"] = 24805, -- Uncommon Scents (Horde)
 					["maps"] = { 85, }, -- Orgrimmar
 				}),
 				q(24541, { -- Pilfering Perfume (Horde)
-					["groups"] = {},
+					
 					["qg"] = 37172, -- Detective Snap Snagglebolt
 					["sourceQuest"] = 24536, -- Something Stinks (Horde)
 					["maps"] = { 85, }, -- Orgrimmar
 				}),
 				q(24850, { -- Snivel's Sweetheart
-					["groups"] = {},
+					
 					["qg"] = 37172, -- Detective Snap Snagglebolt
 					["sourceQuest"] = 24541, -- Pilfering Perfume (Horde)
 					["maps"] = { 85, }, -- Orgrimmar
 				}),
 				q(24851, { -- Hot On The Trail (Horde)
-					["groups"] = {},
+					
 					["qg"] = 38328, -- Roka
 					["sourceQuest"] = 24850, -- Snivel's Sweetheart
 					["maps"] = { 85, }, -- Orgrimmar
 				}),
 				q(24576, { -- A Friendly Chat... (Horde)
-					["groups"] = {},
+					
 					["qgs"] = {
 						37172, -- Detective Snap Snagglebolt
 						38328, -- Roka
@@ -506,7 +506,7 @@ _.Holidays = bubbleDown({["u"] = 18},
 				n(-17, { -- Quests
 					["groups"] = bubbleDown({["u"] = 40}, { -- Legacy Quest/Quest Item
 						q(24792, { -- Man on the Inside (Alliance)
-							["groups"] = {},
+							
 							["qg"] = 38066, -- Inspector Snip Snagglebolt
 							["sourceQuests"] = {
 								24657, -- A Friendly Chat... (Alliance)
@@ -515,7 +515,7 @@ _.Holidays = bubbleDown({["u"] = 18},
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(24793, { -- Man on the Inside (Horde)
-							["groups"] = {},
+							
 							["qg"] = 38066, -- Inspector Snip Snagglebolt
 							["sourceQuests"] = {
 								24576, -- A Friendly Chat... (Horde)
@@ -524,7 +524,7 @@ _.Holidays = bubbleDown({["u"] = 18},
 							["races"] = HORDE_ONLY,
 						}),
 						q(14488, { -- You've Been Served
-							["groups"] = {},
+							
 							["qg"] = 38208, -- Investigator Fezzen Brasstacks
 							["sourceQuests"] = {
 								24792, -- Man on the Inside (Alliance)

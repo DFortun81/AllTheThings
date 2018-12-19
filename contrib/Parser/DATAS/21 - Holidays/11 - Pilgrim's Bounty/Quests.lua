@@ -8,7 +8,7 @@ _.Holidays = bubbleDown({["u"] = 28},
 			["groups"] = {
 				-- ALLIANCE QUESTS --
 				q(14022, { -- Pilgrim's Bounty (Alliance)
-					["groups"] = {},
+					
 					["qgs"] = {
 						18927, -- Human Commoner
 						19148, -- Dwarf Commoner
@@ -35,47 +35,47 @@ _.Holidays = bubbleDown({["u"] = 28},
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(14064, { -- Sharing a Bountiful Feast (Alliance)
-					["groups"] = {},
+					
 					["qg"] = 34653, -- Bountiful Table Hostess
 					["maps"] = { 37, }, -- Elwynn Forest
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(14023, { -- Spice Bread Stuffing (Alliance)
-					["groups"] = {},
+					
 					["qg"] = 34675, -- Gregory Tabor
 					["maps"] = { 37, }, -- Elwynn Forest
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(14024, { -- Pumpkin Pie (Alliance)
-					["groups"] = {},
+					
 					["qg"] = 34744, -- Jasper Moore
 					["maps"] = { 37, }, -- Elwynn Forest
 					["sourceQuests"] = { 14023, }, -- Spice Bread Stuffing (Alliance)
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(14028, { -- Cranberry Chutney (Alliance)
-					["groups"] = {},
+					
 					["qg"] = 34644, -- Edward Winslow
 					["maps"] = { 27, }, -- Dun Morogh
 					["sourceQuests"] = { 14024, }, -- Pumpkin Pie (Alliance)
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(14030, { -- They're Ravenous In Darnassus (Alliance)
-					["groups"] = {},
+					
 					["qg"] = 34744, -- Jasper Moore
 					["maps"] = { 37, }, -- Elwynn Forest
 					["sourceQuests"] = { 14028, }, -- Cranberry Chutney (Alliance)
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(14033, { -- Candied Sweet Potatoes (Alliance)
-					["groups"] = {},
+					
 					["qg"] = 34676, -- Isaac Allerton
 					["maps"] = { 89, }, -- Darnassus
 					["sourceQuests"] = { 14030, }, -- They're Ravenous In Darnassus (Alliance)
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(14035, { -- Slow-roasted Turkey (Alliance)
-					["groups"] = {},
+					
 					["qg"] = 34675, -- Gregory Tabor
 					["maps"] = { 37, }, -- Elwynn Forest
 					["sourceQuests"] = { 14033, }, -- Candied Sweet Potatoes (Alliance)
@@ -177,7 +177,7 @@ _.Holidays = bubbleDown({["u"] = 28},
 				}),
 				-- HORDE QUESTS --
 				q(14036, { -- Pilgrim's Bounty (Horde)
-						["groups"] = {},
+						
 						["qgs"] = {
 							19169, -- Blood Elf Commoner
 							19175, -- Orc Commoner
@@ -203,7 +203,7 @@ _.Holidays = bubbleDown({["u"] = 28},
 						["races"] = HORDE_ONLY,
 				}),
 				q(14065, { -- Sharing a Bountiful Feast (Horde)
-						["groups"] = {},
+						
 						["qg"] = 34654, -- Bountiful Feast Hostess
 						["maps"] = {
 							1, -- Durotar
@@ -214,41 +214,41 @@ _.Holidays = bubbleDown({["u"] = 28},
 						["races"] = HORDE_ONLY,
 				}),
 				q(14037, { -- Spice Bread Stuffing (Horde)
-						["groups"] = {},
+						
 						["qg"] = 34677, -- Miles Standish
 						["maps"] = { 90, }, -- Undercity
 						["races"] = HORDE_ONLY,
 				}),
 				q(14040, { -- Pumpkin Pie (Horde)
-						["groups"] = {},
+						
 						["qg"] = 34768, -- William Mullins
 						["maps"] = { 90, }, -- Undercity
 						["sourceQuests"] = { 14037, }, -- Spice Bread Stuffing (Horde)
 						["races"] = HORDE_ONLY,
 				}),
 				q(14041, { -- Cranberry Chutney (Horde)
-						["groups"] = {},
+						
 						["qg"] = 34679, -- Francis Eaton
 						["maps"] = { 1, }, -- Durotar
 						["sourceQuests"] = { 14040, }, -- Pumpkin Pie (Horde)
 						["races"] = HORDE_ONLY,
 				}),
 				q(14043, { -- Candied Sweet Potatoes (Horde)
-						["groups"] = {},
+						
 						["qg"] = 34678, -- Dokin Farplain
 						["maps"] = { 88, }, -- Thunder Bluff
 						["sourceQuests"] = { 14041, }, -- Cranberry Chutney (Horde)
 						["races"] = HORDE_ONLY,
 				}),
 				q(14044, { -- Undersupplied in the Undercity (Horde)
-						["groups"] = {},
+						
 						["qg"] = 34679, -- Francis Eaton
 						["maps"] = { 1, }, -- Durotar
 						["sourceQuests"] = { 14043, }, -- Candied Sweet Potatoes (Horde)
 						["races"] = HORDE_ONLY,
 				}),
 				q(14047, { -- Slow-roasted Turkey (Horde)
-						["groups"] = {},
+						
 						["qg"] = 34677, -- Miles Standish
 						["maps"] = { 90, }, -- Undercity
 						["sourceQuests"] = { 14044, }, -- Undersupplied in the Undercity (Horde)
