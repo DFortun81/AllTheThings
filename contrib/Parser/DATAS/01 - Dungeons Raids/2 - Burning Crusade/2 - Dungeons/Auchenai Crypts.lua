@@ -70,21 +70,20 @@ _.Instances =
 							i(27413),	-- Ring of the Exarchs
 							i(27869),	-- Soulpriest's Ring of Resolve
 							i(27416),	-- Fetish of the Fallen
+							--[[ Only drops items in Heroic as normal is trash items.
+							-- Confirmed 8.1 by Lucetia on Dec. 18, 2018
 							n(18478, {		-- Avatar of the Fallen
-								["groups"] = bubbleDown({
-									["description"] = "|CFFFF0000Please let the ATT Discord know if you get this item to drop. Crieve and a number of users have been unable to get this item to drop. Also submit a bug report to Blizzard!|r",
-									["u"] = 2,
-								},
-								{
+								["groups"] = {
 									i(27876),	-- Will of the Fallen Exarch**
 									i(27877),	-- Draenic Wildstaff**
 									i(27878),	-- Auchenai Death Shroud**
 									i(28268),	-- Natural Mender's Wraps**
 									i(27937),	-- Sky Breakeer**
 									i(27797),	-- Wastewalker Shoulderpads**
-								}),
-								["description"] = "This mob will spawn if you slowly dps Exarch to 30%. No recorded loot has dropped from this mob on Normal difficulty despite having its own loot table on Heroic. You will more than likely need to run Heroic for these items and even then, the loot table appears to be broken with 7.3.5. This is listed just in case they ever fix the loot.\n  - Crieve",
+								},
+								["description"] = "This mob will spawn if you slowly dps Exarch to 30%. No recorded loot has dropped from this mob on Normal difficulty despite having its own loot table on Heroic. You will more than likely need to run Heroic for these items and even then.  Loot table fixed in 8.1.  They heard Crieve!",
 							}),
+							--]]
 						}))
 					}),
 					d(2, {	-- Heroic
@@ -121,19 +120,15 @@ _.Instances =
 								i(27869),	-- Soulpriest's Ring of Resolve
 								i(27416),	-- Fetish of the Fallen
 								n(18478, {		-- Avatar of the Fallen
-									["groups"] = bubbleDown({
-										["description"] = "|CFFFF0000Please let the ATT Discord know if you get this item to drop. Crieve and a number of users have been unable to get this item to drop. Also submit a bug report to Blizzard!|r",
-										["u"] = 2,
-									},
-									{
+									["groups"] = {
 										i(27876),	-- Will of the Fallen Exarch**
 										i(27877),	-- Draenic Wildstaff**
 										i(27878),	-- Auchenai Death Shroud**
 										i(28268),	-- Natural Mender's Wraps**
 										i(27937),	-- Sky Breakeer**
 										i(27797),	-- Wastewalker Shoulderpads**
-									}),
-									["description"] = "This mob will spawn if you slowly dps Exarch to 30%. None of the loot as been seen since 7.3.5 and has reportedly become unobtainable. If you fail to get loot from this boss, please submit a bug report!\n  - Crieve",
+									},
+									["description"] = "This mob will spawn if you slowly dps Exarch to 30%. No recorded loot has dropped from this mob on Normal difficulty despite having its own loot table on Heroic. You will more than likely need to run Heroic for these items and even then.  Loot table fixed in 8.1.  They heard Crieve!",
 								}),
 							})),
 						},
