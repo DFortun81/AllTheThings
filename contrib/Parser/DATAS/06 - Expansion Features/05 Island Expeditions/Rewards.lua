@@ -21,22 +21,22 @@ _.ExpansionFeatures =
 						{	-- Plundered Runecaster's Mantle
 							["itemID"] = 164286,	-- Plundered Runecaster's Mantle
 							["u"] = 1,
-							["description"] = "This item was removed from the game database in 8.1.\nIf you get this as a drop please report to the ATT discord!.",
+							["description"] = "This item was removed from the game database in 8.1.\nIf you get this as a drop please report to the ATT Discord!.",
 						},
 						{	-- Plundered Shoveltusk-Hide Shoulders
 							["itemID"] = 164285,	-- Plundered Shoveltusk-Hide Shoulders
 							["u"] = 1,
-							["description"] = "This item was removed from the game database in 8.1.\nIf you get this as a drop please report to the ATT discord!.",
+							["description"] = "This item was removed from the game database in 8.1.\nIf you get this as a drop please report to the ATT Discord!.",
 						},
 						{	-- Plundered Dragonrider Spaulders
 							["itemID"] = 164287,	-- Plundered Dragonrider Spaulders
 							["u"] = 1,
-							["description"] = "This item was removed from the game database in 8.1.\nIf you get this as a drop please report to the ATT discord!.",
+							["description"] = "This item was removed from the game database in 8.1.\nIf you get this as a drop please report to the ATT Discord!.",
 						},
 						{	-- Plundered Gjalerbron Pauldrons
 							["itemID"] = 164288,	-- Plundered Gjalerbron Pauldrons
 							["u"] = 1,
-							["description"] = "This item was removed from the game database in 8.1.\nIf you get this as a drop please report to the ATT discord!.",
+							["description"] = "This item was removed from the game database in 8.1.\nIf you get this as a drop please report to the ATT Discord!.",
 						},
 						n(-43, {	-- Cloth
 							n(-3315, {	-- Spider Acolyte
@@ -394,18 +394,18 @@ _.ExpansionFeatures =
 						{	-- Jinyu Light Globe
 							["itemID"] = 164372,	-- Jinyu Light Globe
 							["u"] = 1,
-							["description"] = "This item was removed from the game database in 8.1.\nIf you get this as a drop please report to the ATT discord!.",
+							["description"] = "This item was removed from the game database in 8.1.\nIf you get this as a drop please report to the ATT Discord!.",
 						},
 						{	-- Regenerating Banana Bunch
 							["itemID"] = 164377,	-- Regenerating Banana Bunch
 							["u"] = 1,
-							["description"] = "This item was removed from the game database in 8.1.\nIf you get this as a drop please report to the ATT discord!.",
+							["description"] = "This item was removed from the game database in 8.1.\nIf you get this as a drop please report to the ATT Discord!.",
 						},
 						--Note!! The below item doesn't show up in the files at all.  It returns "Retrieving Information".
 						{	-- Yaungol Oil Stove
 							["itemID"] = 164371,	-- Yaungol Oil Stove
 							["u"] = 1,
-							["description"] = "This item was removed from the game database in 8.0.\nIf you get this as a drop please report to the ATT discord!.",
+							["description"] = "This item was removed from the game database in 8.0.\nIf you get this as a drop please report to the ATT Discord!.",
 						},
 					}),
 					n(-319, {	-- Weapons
@@ -503,10 +503,10 @@ _.ExpansionFeatures =
 					}),
 				},	
 				["icon"] = "Interface\\Icons\\INV_Misc_Bag_SatchelofCenarius",	
-				["description"] = "|cff66ccffThese are the random rewards you can receive by completing an Island Expedition.  It is estimated that winning will give you a higher chance to receive a reward.\n\nNOTE: These rewards are subject to change and are currently what has been either found through Beta Testing or assumed to be as a reward.\n\nIf you receive something not listed here and you receive it please screenshot and submit to our discord and ping Lucetia with the \"@Lucetia\" command.|r",			
+				["description"] = "|cff66ccffThese are the random rewards you can receive by completing an Island Expedition.  It is estimated that winning will give you a higher chance to receive a reward.\n\nNOTE: These rewards are subject to change and are currently what has been either found through Beta Testing or assumed to be as a reward.\n\nIf you receive something not listed here please screenshot and submit to our Discord and ping Lucetia with the \"@Lucetia\" command.|r",			
 			}),
 		},
-		["description"] = "|cff66ccffIsland expeditions are a 3-player scenario.  Each factiton will sail across the waters where they will harvest and steal any Azerite they can find from these islands.  Goblins and gnomes have been able to use their new technology to find islands which contain possible amounts of Azerite and will be providing maps for each of their respective factions.  Ships and queuing will take places in Dazar'alor for Horde and Boralus for Alliance.  These unlock at level 116 on your first playthrough and should be open at 110 on your alts once you have finished the introduction line. |r",
+		["description"] = "|cff66ccffIsland expeditions are 3-player scenarios.  Each faction will sail across the waters where they will harvest and steal any Azerite they can find from these islands.  Goblins and gnomes have been able to use their new technology to find islands which contain possible amounts of Azerite and will be providing maps for each of their respective factions.  Ships and queuing will take place in Dazar'alor for Horde and Boralus for Alliance.  These unlock at level 116 on your first playthrough and should be open at 110 on your alts once you have finished the introduction line. |r",
 		["achievementID"] = 12595, -- Expert Expeditioner
 		["lvl"] = 110,
 		["crs"] = {
@@ -523,6 +523,7 @@ _.ExpansionFeatures =
 			1032,	-- Skittering Hollow
 			1034,	-- Verdant Wilds
 			1337,	-- Jorundall
+			1336,	-- Havenswood
 		},
 	}),
 };
