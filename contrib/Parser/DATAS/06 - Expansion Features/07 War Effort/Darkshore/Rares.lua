@@ -122,11 +122,16 @@ _.ExpansionFeatures =
 							["races"] = ALLIANCE_ONLY,
 							["npcID"] = 148497,				-- Burninator Mark V
 							["qg"] = 148497,				-- Burninator Mark V
+							["questID"] = 54768,
 							["isWeekly"] = true,
 							["coords"] = {
 								{ 41.5, 76.4, 62 },
 							},
+							["description"] = "Only shows up when Alliance Controlled.",
 							["g"] = {
+								{	-- Darkshore Sentinel
+									["itemID"] = 166449,	-- Darkshore Sentinel
+								},
 								{	--Twiddle Twirler: Shredder Blade
 									["itemID"] = 166788,	-- Twiddle Twirler: Shredder Blade
 								},
