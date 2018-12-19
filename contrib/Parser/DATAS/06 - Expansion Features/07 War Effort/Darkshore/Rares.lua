@@ -21,6 +21,7 @@ _.ExpansionFeatures =
 							["coords"] = {
 								{ 49.5, 25.1, 62 },
 							},
+							["description"] = "Only shows up when Alliance Controlled.",
 							["g"] = {
 								{	--Caged Bear
 									["itemID"] = 166438,	-- Caged Bear
@@ -74,6 +75,7 @@ _.ExpansionFeatures =
 							["coords"] = {
 								{ 40.69, 73.23, 62 },
 							},
+							["description"] = "Only shows up when Horde Controlled.",
 							["g"] = {
 								{	-- Darkshore Sentinel
 									["itemID"] = 166449,	-- Darkshore Sentinel
@@ -107,6 +109,7 @@ _.ExpansionFeatures =
 							["coords"] = {
 								{ 49.68, 24.94, 62 },
 							},
+							["description"] = "Only shows up when Horde Controlled.",
 							["g"] = {
 								{	--Caged Bear
 									["itemID"] = 166428,	-- Blackpaw
@@ -137,6 +140,7 @@ _.ExpansionFeatures =
 							["coords"] = {
 								{ 46.4, 85.9, 62 },
 							},
+							["description"] = "Only shows up when Alliance Controlled.",
 							["g"] = {
 								{	--Highborne Memento
 									["itemID"] = 166790,	-- Highborne Memento
@@ -182,6 +186,7 @@ _.ExpansionFeatures =
 							["coords"] = {
 								{ 50.79, 32.22, 62 },
 							},
+							["description"] = "Only shows up when Alliance Controlled.",
 							["g"] = {
 								{	--Captured Kaldorei Nightsaber
 									["itemID"] = 166437,	-- Captured Kaldorei Nightsaber
@@ -268,6 +273,7 @@ _.ExpansionFeatures =
 							["coords"] = {
 								{ 50.72, 32.32, 62 },
 							},
+							["description"] = "Only shows up when Horde Controlled.",
 							["g"] = {
 								{	-- Nightwreathed Egg
 									["itemID"] = 166525,	-- Nightwreathed Egg
@@ -303,6 +309,7 @@ _.ExpansionFeatures =
 							["coords"] = {
 								{ 44.03, 48.21, 62 },
 							},
+							["description"] = "Only shows up when Alliance Controlled.",
 						},
 						{	-- Moxo The Beheader [A Only]
 							["allianceQuestID"] = 54430,	-- Moxo The Beheader [A]
@@ -313,6 +320,7 @@ _.ExpansionFeatures =
 							["coords"] = {
 								{ 63.5, 20, 62 },
 							},
+							["description"] = "Only shows up when Alliance Controlled.",
 							["g"] = {
 								{	--Captured Umber Nightsaber
 									["itemID"] = 166434,	-- Captured Umber Nightsaber
@@ -338,6 +346,7 @@ _.ExpansionFeatures =
 							["coords"] = {
 								{ 45.17, 74.99, 62 },
 							},
+							["description"] = "Only shows up when Horde Controlled.",
 							["g"] = {
 								{	--Everburning Treant
 									["itemID"] = 166453,	-- Everburning Treant
@@ -353,6 +362,7 @@ _.ExpansionFeatures =
 							["coords"] = {
 								{ 39.79, 32.94, 62 },
 							},
+							["description"] = "Only shows up when Alliance Controlled.",
 							["g"] = {
 								{	-- Nightwreathed Egg
 									["itemID"] = 166525,	-- Nightwreathed Egg
@@ -373,6 +383,7 @@ _.ExpansionFeatures =
 							["coords"] = {
 								{ 32.98, 83.94, 62 },
 							},
+							["description"] = "Only shows up when Horde Controlled.",
 							["g"] = {
 								{	--Twiddle Twirler: Shredder Blade
 									["itemID"] = 166788,	-- Twiddle Twirler: Shredder Blade
@@ -398,6 +409,7 @@ _.ExpansionFeatures =
 							["coords"] = {
 								{ 39.79, 32.94, 62 },
 							},
+							["description"] = "Only shows up when Horde Controlled.",
 							["g"] = {
 								{	--Captured Kaldorei Nightsaber
 									["itemID"] = 166437,	-- Captured Kaldorei Nightsaber
@@ -448,6 +460,7 @@ _.ExpansionFeatures =
 							["coords"] = {
 								{ 62.12, 16.49, 62 },
 							},
+							["description"] = "Only shows up when Horde Controlled.",
 							["g"] = {
 								{	--Highborne Memento
 									["itemID"] = 166790,	-- Highborne Memento
@@ -478,6 +491,7 @@ _.ExpansionFeatures =
 							["coords"] = {
 								{ 62.38, 9.84, 62 },
 							},
+							["description"] = "Only shows up when Alliance Controlled.",
 							["g"] = {
 								{	--Everburning Treant
 									["itemID"] = 166453,	-- Everburning Treant
