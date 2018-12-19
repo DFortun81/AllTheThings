@@ -232,7 +232,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				}),
 			},
 			{	-- Ivus the Forest Lord [Horde Only]
-				["encounterID"] = 2345,	-- Ivus the Forest Lord [Horde Only]
+				["encounterID"] = 2329,	-- Ivus the Forest Lord [Horde Only]
 				["crs"] = {
 					144946,	-- Ivus the Forest Lord
 				},
