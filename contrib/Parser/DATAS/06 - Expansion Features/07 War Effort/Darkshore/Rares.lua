@@ -17,6 +17,7 @@ _.ExpansionFeatures =
 							["races"] = ALLIANCE_ONLY,
 							["npcID"] = 149652,				-- Agathe Wyrmwood
 							["qg"] = 149652,				-- Agathe Wyrmwood
+							["questID"] = 54883,
 							["isWeekly"] = true,
 							["coords"] = {
 								{ 49.5, 25.1, 62 },
@@ -136,9 +137,10 @@ _.ExpansionFeatures =
 							["races"] = ALLIANCE_ONLY,
 							["npcID"] = 147845,				-- Commander Drald
 							["qg"] = 147845,				-- Commander Drald
+							["questID"] = 54309,
 							["isWeekly"] = true,
 							["coords"] = {
-								{ 46.4, 85.9, 62 },
+								{ 46.51, 86.14, 62 },
 							},
 							["description"] = "Only shows up when Alliance Controlled.",
 							["g"] = {
@@ -182,6 +184,7 @@ _.ExpansionFeatures =
 							["races"] = ALLIANCE_ONLY,
 							["npcID"] = 149661,				-- Croz Bloodrage
 							["qg"] = 149661,				-- Croz Bloodrage
+							["questID"] = 54886,
 							["isWeekly"] = true,
 							["coords"] = {
 								{ 50.79, 32.22, 62 },
@@ -316,9 +319,13 @@ _.ExpansionFeatures =
 							["races"] = ALLIANCE_ONLY,
 							["npcID"] = 147701,				-- Moxo The Beheader
 							["qg"] = 147701,				-- Moxo The Beheader
+							["questID"] = 54277,
 							["isWeekly"] = true,
 							["coords"] = {
-								{ 63.5, 20, 62 },
+								{ 63.45, 20.01, 62 },
+								{ 66.68, 19.09, 62 },
+								{ 65.54, 19.98, 62 },
+								{ 64.39, 20.09, 62 },
 							},
 							["description"] = "Only shows up when Alliance Controlled.",
 							["g"] = {
@@ -358,6 +365,7 @@ _.ExpansionFeatures =
 							["races"] = ALLIANCE_ONLY,
 							["npcID"] = 149664,				-- Orwell Stevenson
 							["qg"] = 149664,				-- Orwell Stevenson
+							["questID"] = 54889,
 							["isWeekly"] = true,
 							["coords"] = {
 								{ 39.79, 32.94, 62 },
@@ -487,6 +495,7 @@ _.ExpansionFeatures =
 							["races"] = ALLIANCE_ONLY,
 							["npcID"] = 147664,				-- Zimkaga
 							["qg"] = 147664,				-- Zimkaga
+							["questID"] = 54274,
 							["isWeekly"] = true,
 							["coords"] = {
 								{ 62.38, 9.84, 62 },
