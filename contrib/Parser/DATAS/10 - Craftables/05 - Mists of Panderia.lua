@@ -204,10 +204,11 @@ _.Craftables =
 				},
 				{	-- Ghost-Forged Helm
 					["itemID"] = 82903,	-- Ghost-Forged Helm
-				},
-				{	-- Ghost-Forged Helm
-					["itemID"] = 82927,	-- Ghost-Forged Helm
-					["u"] = 1,
+					["g"] = {
+						{	-- Ghost-Forged Helm
+							["itemID"] = 82927,	-- Ghost-Forged Helm
+						},
+					},
 				},
 				{	-- Haunted Steel Greathelm
 					["itemID"] = 94266,	-- Haunted Steel Greathelm
@@ -267,10 +268,11 @@ _.Craftables =
 				},
 				{	-- Ghost-Forged Shoulders
 					["itemID"] = 82904,	-- Ghost-Forged Shoulders
-				},
-				{	-- Ghost-Forged Shoulders
-					["itemID"] = 82928,	-- Ghost-Forged Shoulders
-					["u"] = 1,
+					["g"] = {
+						{	-- Ghost-Forged Shoulders
+							["itemID"] = 82928,	-- Ghost-Forged Shoulders
+						},
+					},
 				},
 				{	-- Lightsteel Shoulders
 					["itemID"] = 82912,	-- Lightsteel Shoulders
@@ -329,10 +331,11 @@ _.Craftables =
 				},
 				{	-- Ghost-Forged Breastplate
 					["itemID"] = 82905,	-- Ghost-Forged Breastplate
-				},
-				{	-- Ghost-Forged Breastplate
-					["itemID"] = 82929,	-- Ghost-Forged Breastplate
-					["u"] = 1,
+					["g"] = {
+						{	-- Ghost-Forged Breastplate
+							["itemID"] = 82929,	-- Ghost-Forged Breastplate
+						},
+					},
 				},
 				{	-- Lightsteel Breastplate
 					["itemID"] = 82913,	-- Lightsteel Breastplate
@@ -407,10 +410,11 @@ _.Craftables =
 				},
 				{	-- Ghost-Forged Gauntlets
 					["itemID"] = 82906,	-- Ghost-Forged Gauntlets
-				},
-				{	-- Ghost-Forged Gauntlets
-					["itemID"] = 82930,	-- Ghost-Forged Gauntlets
-					["u"] = 1,
+					["g"] = {
+						{	-- Ghost-Forged Gauntlets
+							["itemID"] = 82930,	-- Ghost-Forged Gauntlets
+						},
+					},
 				},
 				{	-- Lightsteel Gauntlets
 					["itemID"] = 82914,	-- Lightsteel Gauntlets
@@ -464,10 +468,11 @@ _.Craftables =
 				},
 				{	-- Ghost-Forged Bracers
 					["itemID"] = 82908,	-- Ghost-Forged Bracers
-				},
-				{	-- Ghost-Forged Bracers
-					["itemID"] = 82932,	-- Ghost-Forged Bracers
-					["u"] = 1,
+					["g"] = {
+						{	-- Ghost-Forged Bracers
+							["itemID"] = 82932,	-- Ghost-Forged Bracers
+						},
+					},
 				},
 				{	-- Lightsteel Bracers
 					["itemID"] = 82916,	-- Lightsteel Bracers
@@ -522,10 +527,11 @@ _.Craftables =
 				},
 				{	-- Ghost-Forged Belt
 					["itemID"] = 82910,	-- Ghost-Forged Belt
-				},
-				{	-- Ghost-Forged Belt
-					["itemID"] = 82934,	-- Ghost-Forged Belt
-					["u"] = 1,
+					["g"] = {
+						{	-- Ghost-Forged Belt
+							["itemID"] = 82934,	-- Ghost-Forged Belt
+						},
+					},
 				},
 				{	-- Lightsteel Belt
 					["itemID"] = 82918,	-- Lightsteel Belt
@@ -585,10 +591,11 @@ _.Craftables =
 				},
 				{	-- Ghost-Forged Legplates
 					["itemID"] = 82907,	-- Ghost-Forged Legplates
-				},
-				{	-- Ghost-Forged Legplates
-					["itemID"] = 82931,	-- Ghost-Forged Legplates
-					["u"] = 1,
+					["g"] = {
+						{	-- Ghost-Forged Legplates
+							["itemID"] = 82931,	-- Ghost-Forged Legplates
+						},
+					},
 				},
 				{	-- Lightsteel Legplates
 					["itemID"] = 82915,	-- Lightsteel Legplates
@@ -642,10 +649,11 @@ _.Craftables =
 				},
 				{	-- Ghost-Forged Boots
 					["itemID"] = 82909,	-- Ghost-Forged Boots
-				},
-				{	-- Ghost-Forged Boots
-					["itemID"] = 82933,	-- Ghost-Forged Boots
-					["u"] = 1,
+					["g"] = {
+						{	-- Ghost-Forged Boots
+							["itemID"] = 82933,	-- Ghost-Forged Boots
+						},
+					},
 				},
 				{	-- Haunted Steel Greaves
 					["itemID"] = 94263,	-- Haunted Steel Greaves

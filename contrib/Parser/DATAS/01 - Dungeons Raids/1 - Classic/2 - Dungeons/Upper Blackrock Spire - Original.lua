@@ -137,9 +137,7 @@ _.Instances =
 								["u"] = 7,
 							},
 							{	-- Plans: Invulnerable Mail
-								["itemID"] = 12728,	-- Plans: Invulnerable Mail
-								["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
-								["u"] = 7,
+								["itemID"] = 12728,	-- Plans: Invulnerable Mail **Still in game as a general world drop now**
 							},
 							un(2, i(12837)),	-- Plans: Masterwork Stormhammer
 							un(2, i(18048)), 	-- Mastersmith's Hammer
