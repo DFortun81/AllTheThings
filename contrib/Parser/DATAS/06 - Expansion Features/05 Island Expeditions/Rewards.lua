@@ -195,9 +195,7 @@ _.ExpansionFeatures =
 									i(164396),	-- Dragonrider's Wristguards
 									i(164397),	-- Dragonrider's Grips
 									i(164395),	-- Dragonrider's Waistguard
-									i(164400, {	-- Dragonrider's Legguards
-										["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
-									}),
+									i(164400),	-- Dragonrider's Legguards
 									i(164398),	-- Dragonrider's Boots
 								},
 							}),
