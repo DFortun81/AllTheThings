@@ -170,11 +170,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					--143597,	-- Doom's Howl Dreadshield
 					--143599,	-- Doom's Howl Warcaster
 				},
-				["maps"] = { -- Lucetia: Unsure which is actual map that will be used
-					906,	-- Arathi Highlands
-					--943,	-- Arathi Highlands
-					1044,	-- Arathi Highlands
-					1158,	-- Arathi Highlands
+				["maps"] = { 
 					14,	-- Arathi Highlands
 				}, 
 				["isRaid"] = true,
@@ -185,6 +181,106 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					35.55, 38.91,
 				},
 			}),
+			{	-- Ivus the Decayed [Alliance Only]
+				["encounterID"] = 2345,	-- Ivus the Decayed [Alliance Only]
+				["crs"] = {
+					148295,	-- Ivus the Decayed
+				},
+				["maps"] = {
+					62,	-- Darkshore
+				},
+				["isRaid"] = true,
+				["races"] = ALLIANCE_ONLY,
+				["questID"] = 54862,
+				["coords"] = {
+					{ 41.47, 35.97, 62 },
+				},
+				["g"] = bubbleDown({["modID"] = 3}, {
+					{	-- Petrified Ironbark Crown
+						["itemID"] = 166695,	-- Petrified Ironbark Crown
+					},
+					{	-- Warring Ancient's Mask
+						["itemID"] = 166687,	-- Warring Ancient's Mask
+					},
+					{	-- Forest Protector's Shoulderguards
+						["itemID"] = 166691,	-- Forest Protector's Shoulderguards
+					},
+					{	-- Garments of the Forest Lord
+						["itemID"] = 166683,	-- Garments of the Forest Lord
+					},
+					{	-- Gnarled Bough Gauntlets
+						["itemID"] = 166694,	-- Gnarled Bough Gauntlets
+					},
+					{	-- Ivus' Tanglemoss Waistcord
+						["itemID"] = 166686,	-- Ivus' Tanglemoss Waistcord
+					},
+					{	-- Protector's Tangleroot Belt
+						["itemID"] = 166690,	-- Protector's Tangleroot Belt
+					},
+					{	-- Stoneroot Stompers
+						["itemID"] = 166698,	-- Stoneroot Stompers
+					},
+					{	-- Ancient Knot of Wisdom
+						["itemID"] = 161417,	-- Ancient Knot of Wisdom
+					},
+					{	-- Forest Lord's Razorleaf
+						["itemID"] = 161415,	-- Forest Lord's Razorleaf
+					},
+					{	-- Knot of Ancient Fury
+						["itemID"] = 161413,	-- Knot of Ancient Fury
+					},
+				}),
+			},
+			{	-- Ivus the Forest Lord [Horde Only]
+				["encounterID"] = 2345,	-- Ivus the Forest Lord [Horde Only]
+				["crs"] = {
+					144946,	-- Ivus the Forest Lord
+				},
+				["maps"] = {
+					62,	-- Darkshore
+				},
+				["isRaid"] = true,
+				["races"] = HORDE_ONLY,
+				["questID"] = 54861,
+				["coords"] = {
+					{ 41.47, 35.97, 62 },
+				},
+				["g"] = bubbleDown({["modID"] = 3}, {
+					{	-- Petrified Ironbark Crown
+						["itemID"] = 166696,	-- Petrified Ironbark Crown
+					},
+					{	-- Warring Ancient's Crown
+						["itemID"] = 166688,	-- Warring Ancient's Crown
+					},
+					{	-- Forest Protector's Shoulderguards
+						["itemID"] = 166692,	-- Forest Protector's Shoulderguards
+					},
+					{	-- Garments of the Forest Lord
+						["itemID"] = 166684,	-- Garments of the Forest Lord
+					},
+					{	-- Gnarled Bough Gauntlets
+						["itemID"] = 166693,	-- Gnarled Bough Gauntlets
+					},
+					{	-- Ivus' Tanglemoss Waistcord
+						["itemID"] = 166685,	-- Ivus' Tanglemoss Waistcord
+					},
+					{	-- Protector's Tangleroot Belt
+						["itemID"] = 166689,	-- Protector's Tangleroot Belt
+					},
+					{	-- Stoneroot Stompers
+						["itemID"] = 166697,	-- Stoneroot Stompers
+					},
+					{	-- Ancient Knot of Wisdom
+						["itemID"] = 166793,	-- Ancient Knot of Wisdom
+					},
+					{	-- Forest Lord's Razorleaf
+						["itemID"] = 166794,	-- Forest Lord's Razorleaf
+					},
+					{	-- Knot of Ancient Fury
+						["itemID"] = 166795,	-- Knot of Ancient Fury
+					},
+				}),
+			},
 			e(2212, {	-- The Lion's Roar [Warfront] [QID]
 				["groups"] = bubbleDown({["modID"] = 3}, {
 					i(163829),	-- Toy War Machine
@@ -206,11 +302,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					--143601,	-- Lion's Shieldbearer
 					--143602,	-- Lion's Warcaster
 				},
-				["maps"] = { -- Lucetia: Unsure which is actual map that will be used
-					--906,	-- Arathi Highlands
-					--943,	-- Arathi Highlands
-					--1044,	-- Arathi Highlands
-					--1158,	-- Arathi Highlands
+				["maps"] = { 
 					14,	-- Arathi Highlands
 				}, 
 				["isRaid"] = true,
@@ -221,6 +313,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					35.55, 38.91,
 				},
 			}),
+		
 		},
 		["isRaid"] = true,
 		["lvl"] = 120,
