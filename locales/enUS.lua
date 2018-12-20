@@ -2649,6 +2649,7 @@ AllTheThings.Locales.enUS = {
 		[239901] = "Voidtalon Egg",
 		[240003] = "Strange Sapphire",
 		[240289] = "Weathered Axe",
+		[240317] = "Iskar's Tome of Shadows",
 		[240577] = "The Blade of Kra'nak",
 		[240580] = "Jewel of Hellfire",
 		[240616] = "Frozen Supplies",
