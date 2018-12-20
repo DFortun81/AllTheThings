@@ -349,6 +349,7 @@ _.ExpansionFeatures =
 					}),
 					n(-162, {	-- Pets
 						["groups"] = {
+							i(166486),	-- Baby Stonehide
 							i(163799),	-- Barnaby
 							i(163818),	-- Bloodstone Tunneler
 							i(163798),	-- Captain Nibs
@@ -356,6 +357,7 @@ _.ExpansionFeatures =
 							i(163805),	-- Craghoof Kid [Verdant Wilds / Molten Clay]
 							i(163809),	-- Deathsting Scorpid [Molten Clay]
 							i(163806),	-- False Knucklebump [Molten Clay]
+							i(166493),	-- Firesting Buzzer
 							i(163811),	-- Giggling Flame
 							i(163802),	-- Inky [Un'gol Ruins]
 							i(163821),	-- Juvenile Brineshell
@@ -363,19 +365,26 @@ _.ExpansionFeatures =
 							i(163822),	-- Kunchong Hatchling
 							i(163812),	-- Laughing Stonekin
 							i(163815),	-- Littlehoof
+							i(166494),	-- Lord Woofington
 							i(163814),	-- Mischievous Zephyr
 							i(163820),	-- Muskflank Calfling
+							i(166489),	-- Needleback Pup
 							i(163801),	-- Octopode Fry [Un'gol Ruins]
 							i(163813),	-- Playful Frostkin
 							i(163800),	-- Poro
+							i(166488),	-- Rotting Ghoul
 							i(163808),	-- Sandshell Chitterer
+							i(166498),	-- Scritches
 							i(163797),	-- Scuttle
+							i(166492),	-- Shadefeather Hatchling
 							i(163816),	-- Snapper
 							i(163819),	-- Snort
 							i(163803),	-- Sparkleshell Sandcrawler
 							i(163817),	-- Sunscale Hatchling [Skittering Hallow]
 							i(163810),	-- Thistlebrush Bud [Molten Clay]
+							i(166499),	-- Thunderscale Whelpling
 							i(163807),	-- Tinder Pup
+							i(166495),	-- Tonguelasher
 							i(163824),	-- Voru'kar Leecher
 						},
 						["achievementID"] = 13128, -- I'm Here for the Pets
