@@ -10,6 +10,17 @@ _.Zones =
 					["groups"] = {
 						n(-17, {	-- Quests [Note: We don't attach qg's or coords since they don't apply to the WQ due to not actually receiving anything; very few exceptions apply]
 							["groups"] = {
+								q(53704, {	-- Not Too Sober Citizens Brigade
+									["g"] = {
+										ach(13285, { -- Upright Citizens
+											["g"] = {
+												i(166247), -- Citizens Brigade Whistle
+											},
+										}),
+									},
+									["isWQ"] = 120,
+									["races"] = ALLIANCE_ONLY,
+								}),
 								q(51893, {	-- Sawtooth
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
