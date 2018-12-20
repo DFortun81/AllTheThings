@@ -11,25 +11,14 @@ _.Zones =
 				["g"] = {
 					n(-17, { 	-- Quests
 	--[[				
-						qh( 39510),	-- A Little Wetwork
-						qa( 39568),	-- A Little Wetwork
 						q(38578),	-- A Message of Terrible Import
 						q(40235),	-- Abrogator Arbitrator
-						qh( 39511),	-- Blood of Fallen Brothers
-						qh( 39509),	-- Bloodied Blades of Zeth'Gol
-						qa( 39567),	-- Bloodied Blades of Zeth'Gol
 						q(38462),	-- Breaching the Barrier
-						qa( 39569),	-- Breaking Their Fel Bonds
 						qa( 39313),	-- Bring the Reinforcements
 						qh( 39315),	-- Bring the Reinforcements
-						qa( 39586),	-- Bringing Down the Iron Horde
 						qh( 38001),	-- Commander in the Field!
 						qa( 38446),	-- Commander in the Field!
 						q(38223),	-- Dark Ascension
-						qa( 39581),	-- Demonslayer of Tanaan
-						qh( 39519),	-- Demonslayer of Tanaan
-						qa( 39571),	-- Disarming Sha'naar
-						qh( 39513),	-- Disarming Sha'naar
 						q(38270),	-- Finding the Killer
 						q(38271),	-- Following the Bloody Path
 						qa( 38267),	-- Friends Above
@@ -42,9 +31,6 @@ _.Zones =
 						qa( 38561),	-- Garrison Campaign: The Warlock
 						qh( 38458),	-- Garrison Campaign: The Warlock
 						q(38213),	-- Get a Clue
-						q(39015),	-- Grumpy -- this quest is incorrectly listed for Tanaan and is actuall in Val'sharah
-						qh( 39514),	-- Harnessing Their Power
-						qa( 39573),	-- Harnessing Their Power
 						qh( 39604),	-- I Sunk Your Battleship
 						qa( 39601),	-- I Sunk Your Battleship
 						q(39129),	-- Ill Tempered
@@ -56,11 +42,7 @@ _.Zones =
 						qh( 37890),	-- Obstacle Course
 						qa( 38436),	-- Obstacle Course
 						q(39395),	-- Oronok's Offer
-						qa( 39574),	-- Pressing the Attack
-						qh( 39526),	-- Pressing the Attack
 						q(39177),	-- Ruined Construct
-						qa( 39570),	-- Secrets of the Shadow Council
-						qh( 39512),	-- Secrets of the Shadow Council
 						qa( 38603),	-- Setting the Signal
 						qh( 39423),	-- Shipyard Report
 						qa( 39422),	-- Shipyard Report
@@ -77,12 +59,25 @@ _.Zones =
 						qa( 38435),	-- The Invasion of Tanaan
 						qh( 37889),	-- The Invasion of Tanaan
 						qh( 35058),	-- The Mysterious Flask
-						qa( 39582),	-- Tooth and Claw
 						q(39432),	-- Unknowable Power
 						q(40237),	-- Work Work Stoppage
 						qh( 38989),	-- Your Orders, General?
 						qa( 38996),	-- Your Orders, General?	
 	--]]
+						{	-- A Little Wetwork
+							["questID"] = 39510,
+							["qg"] = 96014,	-- Shadow Hunter Denjai
+							["coord"] = { 61.6, 45.7 },
+							["races"] = HORDE_ONLY,
+							["isDaily"] = true,
+						},
+						{	-- A Little Wetwork
+							["questID"] = 39568,
+							["qg"] = 90974,	-- Vindicator Krethos
+							["coord"] = { 58.4, 60.4 },
+							["races"] = ALLIANCE_ONLY,
+							["isDaily"] = true,
+						},
 						{	-- Assault on Ironhold Harbor
 							["questID"] = 37940,
 							["groups"] = {
@@ -251,6 +246,34 @@ _.Zones =
 							["races"] = ALLIANCE_ONLY,
 							["isDaily"] = true,
 						},
+						{	-- Blood of Fallen Brothers
+							["questID"] = 39511,
+							["qg"] = 96014,	-- Shadow Hunter Denjai
+							["coord"] = { 61.6, 45.7 },
+							["races"] = HORDE_ONLY,
+							["isDaily"] = true,
+						},
+						{	-- Bloodied Blades of Zeth'Gol
+							["questID"] = 39509,
+							["qg"] = 96014,	-- Shadow Hunter Denjai
+							["coord"] = { 61.6, 45.7 },
+							["races"] = HORDE_ONLY,
+							["isDaily"] = true,
+						},
+						{	-- Bloodied Blades of Zeth'Gol
+							["questID"] = 39567,
+							["qg"] = 90974,	-- Vindicator Krethos
+							["coord"] = { 58.4, 60.4 },
+							["races"] = ALLIANCE_ONLY,
+							["isDaily"] = true,
+						},
+						{	-- Breaking Their Fel Bonds
+							["questID"] = 39569,
+							["qg"] = 90974,	-- Vindicator Krethos
+							["coord"] = { 58.4, 60.4 },
+							["races"] = ALLIANCE_ONLY,
+							["isDaily"] = true,
+						},
 						{	-- Bringing Down the Iron Horde
 							["questID"] = 39532,
 							["qg"] = 93396,	-- Nimi Brightcastle
@@ -258,11 +281,60 @@ _.Zones =
 							["races"] = HORDE_ONLY,
 							["isDaily"] = true,
 						},
+						{	-- Bringing Down the Iron Horde
+							["questID"] = 39586,
+							["qg"] = 96147,	-- Parvink
+							["coord"] = { 57.8, 59.8 },
+							["races"] = ALLIANCE_ONLY,
+							["isDaily"] = true,
+						},
+						{	-- Demonslayer of Tanaan
+							["questID"] = 39519,
+							["qg"] = 93396,	-- Nimi Brightcastle
+							["coord"] = { 59.6, 45.9 },
+							["races"] = HORDE_ONLY,
+							["isDaily"] = true,
+						},
+						{	-- Demonslayer of Tanaan
+							["questID"] = 39581,
+							["qg"] = 96147,	-- Parvink
+							["coord"] = { 57.8, 59.8 },
+							["races"] = ALLIANCE_ONLY,
+							["isDaily"] = true,
+						},
+						{	-- Disarming Sha'naar
+							["questID"] = 39513,
+							["qg"] = 96014,	-- Shadow Hunter Denjai
+							["coord"] = { 61.6, 45.7 },
+							["races"] = HORDE_ONLY,
+							["isDaily"] = true,
+						},
+						{	-- Disarming Sha'naar
+							["questID"] = 39571,
+							["qg"] = 90974,	-- Vindicator Krethos
+							["coord"] = { 58.4, 60.4 },
+							["races"] = ALLIANCE_ONLY,
+							["isDaily"] = true,
+						},
 						{	-- Garrison Campaign: Onslaught at Auchindoun
 							["questID"] = 38415,
 							["qg"] = 90481,	-- Draka
 							["coord"] = { 61.4, 45.7 },
 							["races"] = HORDE_ONLY,
+						},
+						{	-- Harnessing Their Power
+							["questID"] = 39514,
+							["qg"] = 96014,	-- Shadow Hunter Denjai
+							["coord"] = { 61.6, 45.7 },
+							["races"] = HORDE_ONLY,
+							["isDaily"] = true,
+						},
+						{	-- Harnessing Their Power
+							["questID"] = 39573,
+							["qg"] = 90974,	-- Vindicator Krethos
+							["coord"] = { 58.4, 60.4 },
+							["races"] = ALLIANCE_ONLY,
+							["isDaily"] = true,
 						},
 						{	-- Iskar's Tome of Shadows
 							["objectID"] = 240317,
@@ -280,11 +352,39 @@ _.Zones =
 								},
 							},
 						},
+						{	-- Pressing the Attack
+							["questID"] = 39526,
+							["qg"] = 96014,	-- Shadow Hunter Denjai
+							["coord"] = { 61.6, 45.7 },
+							["races"] = HORDE_ONLY,
+							["isDaily"] = true,
+						},
+						{	-- Pressing the Attack
+							["questID"] = 39574,
+							["qg"] = 90974,	-- Vindicator Krethos
+							["coord"] = { 58.4, 60.4 },
+							["races"] = ALLIANCE_ONLY,
+							["isDaily"] = true,
+						},
 						{	-- Rumble in the Jungle
 							["questID"] = 39565,
 							["qg"] = 92805,	-- Z'tenga the Walker
 							["coord"] = { 55.2, 74.7 },
 							["isWeekly"] = true,
+						},
+						{	-- Secrets of the Shadow Council
+							["questID"] = 39512,
+							["qg"] = 96014,	-- Shadow Hunter Denjai
+							["coord"] = { 61.6, 45.7 },
+							["races"] = HORDE_ONLY,
+							["isDaily"] = true,
+						},
+						{	-- Secrets of the Shadow Council
+							["questID"] = 39570,
+							["qg"] = 90974,	-- Vindicator Krethos
+							["coord"] = { 58.4, 60.4 },
+							["races"] = ALLIANCE_ONLY,
+							["isDaily"] = true,
 						},
 						{	-- The Cipher of Damnation
 							["questID"] = 39394,
@@ -331,6 +431,13 @@ _.Zones =
 							["qg"] = 93396,	-- Nimi Brightcastle
 							["coord"] = { 59.6, 45.9 },
 							["races"] = HORDE_ONLY,
+							["isDaily"] = true,
+						},
+						{	-- Tooth and Claw
+							["questID"] = 39582,
+							["qg"] = 96147,	-- Parvink
+							["coord"] = { 57.8, 59.8 },
+							["races"] = ALLIANCE_ONLY,
 							["isDaily"] = true,
 						},
 						{	-- Unseen Influence
