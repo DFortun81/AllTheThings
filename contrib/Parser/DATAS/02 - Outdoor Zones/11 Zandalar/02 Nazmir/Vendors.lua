@@ -18,6 +18,23 @@ _.Zones =
 							},
 							["itemID"] = 163036,	-- Polished Pet Charm
 						}),
+						{	-- Gottum
+							["npcID"] = 148810,	-- Gottum
+							["coords"] = {
+								{ 71.21, 55.57, 863 },
+							},
+							["g"] = {
+								{	-- Blue Marsh Hopper
+									["itemID"] = 166442,	-- Blue Marsh Hopper
+								},
+								{	-- Green Marsh Hopper
+									["itemID"] = 163183,	-- Green Marsh Hopper
+								},
+								{	-- Yellow Marsh Hopper
+									["itemID"] = 166443,	-- Yellow Marsh Hopper
+								},
+							},
+						},
 						n(135459, {	-- Provisioner Lija <Talanji's Expedition Emissary> [H]
 							["groups"] = {
 								i(160547),	-- Talanji's Expedition Tabard*
