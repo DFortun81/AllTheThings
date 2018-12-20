@@ -249,6 +249,19 @@ _.Zones =
 							{ 48.0, 72.4 },
 						},
 					}),
+					n(3808, { 	-- Forsaken Dark Stalker
+						["groups"] = {
+							un(7, i(1351)),	-- Fingerbone Bracers
+						},
+						["u"] = 43,
+						["races"] = ALLIANCE_ONLY,
+					}),
+					n(3792, {	-- Terrowulf Packlord
+						["groups"] = {
+							un(7, i(5753)),	-- Ruffled Chaplet
+						},
+						["u"] = 43,
+					}),
 					n(10559, { 	-- Lady Vespia
 						["groups"] = {
 							i(9782),	-- Bandit Jerkin

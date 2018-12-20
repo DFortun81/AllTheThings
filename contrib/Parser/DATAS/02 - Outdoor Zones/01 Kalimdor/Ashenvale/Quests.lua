@@ -445,6 +445,26 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 13922,	-- In the Hands of the Perverse
 					},
+					{	-- Allegiance to the Old Gods
+						["questID"] = 6565,
+						["groups"] = {
+							un(2, i(17694)),	-- Band of the Fist
+							un(2, i(17695)),	-- Chestnut Mantle
+						},
+						["u"] = 40,
+						["qg"] = 12736,	-- Je'neu Sancrea
+						["races"] = HORDE_ONLY,
+					},
+					{	-- Answered Questions
+						["questID"] = 1044,
+						["groups"] = {
+							un(2, i(5817)),	-- Lunaris Bow
+							un(2, i(5818)),	-- Moonbeam Wand
+						},
+						["u"] = 40,
+						["qg"] = 661,	-- Jonathan Carevin
+						["races"] = ALLIANCE_ONLY,
+					},
 					{	-- Ashenvale Outrunners
 						["questID"] = 6503,
 						["qg"] = 12867,	-- Kuray'bin
@@ -649,6 +669,17 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 26457,	-- Agents of Destruction
 					},
+					{	-- Fallen Sky Lake
+						["questID"] = 1035,
+						["groups"] = {
+							un(2, i(5814)),	-- Snapbrook Armor
+							un(2, i(6722)),	-- Beastial Manacles
+							un(2, i(17047)),	-- Luminescent Amice
+						},
+						["u"] = 40,
+						["qg"] = 3894,	-- Pelturas Whitemoon
+						["races"] = ALLIANCE_ONLY,
+					},
 					{	-- Field Test: Gnomecorder
 						["questID"] = 25621,
 						["qg"] = 40895,	-- Professor Xakxak Gyromate
@@ -816,6 +847,17 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 26477,	-- Search the Bole
 					},
+					{	-- Raene's Cleansing
+						["questID"] = 1046,
+						["groups"] = {
+							un(2, i(5815)),	-- Glacial Stone
+							un(2, i(17046)),	-- Gutterblade
+							un(2, i(1116)),	-- Ring of Pure Silver
+						},
+						["u"] = 40,
+						["qg"] = 3897,	-- Krolg
+						["races"] = ALLIANCE_ONLY,
+					},
 					{	-- Rear Guard Duty (No Prereq)
 						["questID"] = 13632,
 						["qg"] = 11219,	-- Liladris Moonriver
@@ -965,6 +1007,16 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 26468,	-- The Branch of Cenarius
 					},
+					{	-- Supplies to Auberdine
+						["questID"] = 976,
+						["groups"] = {
+							un(2, i(6721)),	-- Chestplate of Kor
+							un(2, i(5323)),	-- Everglow Lantern
+						},
+						["u"] = 40,
+						["qg"] = 4484,	-- Feero Ironhand
+						["races"] = ALLIANCE_ONLY,
+					},
 					{	-- That Which has Risen
 						["questID"] = 13644,
 						["groups"] = {
@@ -1015,6 +1067,15 @@ _.Zones =
 						["qg"] = 34354,	-- Huntress Jalin
 						["races"] = ALLIANCE_ONLY,
 					},
+					{	-- The Hunt Completed
+						["questID"] = 247,
+						["groups"] = {
+							un(2, i(16658)),	-- Wildhunter Cloak
+						},
+						["u"] = 40,
+						["qg"] = 12696,	-- Senani Thunderheart
+						["races"] = HORDE_ONLY,
+					},
 					{	-- The Last Stand
 						["questID"] = 13987,
 						["groups"] = {
@@ -1030,6 +1091,7 @@ _.Zones =
 					{	-- The Lost Chalice
 						["questID"] = 26455,
 						["qg"] = 3848,	-- Kayneth Stillwind
+						["races"] = ALLIANCE_ONLY,
 					},
 					{	-- The Lost Gem
 						["questID"] = 26464,
@@ -1042,6 +1104,16 @@ _.Zones =
 						["qg"] = 3891,	-- Teronis' Corpse
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 26463,	-- Finding Teronis
+					},
+					{	-- The Lost Pages
+						["questID"] = 6504,
+						["groups"] = {
+							un(2, i(16741)),	-- Oilrag Handwraps
+							un(2, i(16740)),	-- Shredder Operating Gloves
+						},
+						["u"] = 40,
+						["qg"] = 12718,	-- Gurda Ragescar
+						["races"] = HORDE_ONLY,
 					},
 					{	-- The Reason Why
 						["questID"] = 13630,
@@ -1197,6 +1269,17 @@ _.Zones =
 							13880,	-- Hot Lava
 							13884,	-- Put Out The Fire
 						},
+					},
+					{	-- Warsong Supplies
+						["questID"] = 6571,
+						["groups"] = {
+							un(2, i(16977)),	-- Warsong Boots
+							un(2, i(16978)),	-- Warsong Gauntlets
+							un(2, i(16975)),	-- Warsong Supplies
+						},
+						["u"] = 40,
+						["qg"] = 11820,	-- Locke Okarr
+						["races"] = HORDE_ONLY,
 					},
 					{	-- We're Here to Do One Thing, Maybe Two...
 						["questID"] = 25945,
