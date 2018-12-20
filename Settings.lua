@@ -315,7 +315,7 @@ local function createGeneralFrame(parent)
 		end,
 		function(self)
 			GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
-			GameTooltip:SetText ("Enable this option if you want to hear a celebratory 'fanfare' sound effect when you obtain a new collectible item.\n\nThis feature can very addicting.\n\nThe default sound effects are from Final Fantasy Tactics. (One of the best games ever.)", nil, nil, nil, nil, true);
+			GameTooltip:SetText ("Enable this option if you want to hear a celebratory 'fanfare' sound effect when you obtain a new collectible item.\n\nThis feature can be very addicting.\n\nThe default sound effects are from Final Fantasy Tactics. (One of the best games ever.)", nil, nil, nil, nil, true);
 			GameTooltip:Show();
 		end);
 	playFanfare:SetPoint("TOPLEFT",notifyMe,0,-frameSpacer)
