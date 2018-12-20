@@ -34,30 +34,39 @@ _.Zones =
 						},
 						["description"] = "You may only learn this pet once per character from a Battle Pet Trainer.|r"
 					}),
-					qa(31556, {	-- Learning the Ropes
+					{	-- Learning the Ropes
+						["questID"] = 31556,
 						["qg"] = 63077,	-- Lehna
+						["races"] = ALLIANCE_ONLY,
 						["description"] = "This quest is part of a chain initiated by learning Battle Pet Training.",
-					}),
-					qa(31568, {	-- On The Mend
+					},
+					{	-- On The Mend
+						["questID"] = 31568,
 						["qg"] = 63077,	-- Lehna
-						["sourceQuests"] = { 31556 },	-- Learning the Ropes
-					}),
-					qa(31825, {	-- Level Up!
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 31556,	-- Learning the Ropes
+					},
+					{	-- Level Up!
+						["questID"] = 31825,
 						["qg"] = 63077,	-- Lehna
-						["sourceQuests"] = { 31568 },	-- On The Mend
-					}),
-					qa(31569, {	-- Got one!
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 31568,	-- On The Mend
+					},
+					{	-- Got one!
+						["questID"] = 31569,
 						["qg"] = 63077,	-- Lehna
-						["sourceQuests"] = { 31825 },	-- Level Up!
-					}),
-					q(3861, { 	-- CLUCK!
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 31825,	-- Level Up!
+					},
+					{	-- CLUCK!
+						["questID"] = 3861,
 						["groups"] = {
 							i(11110) -- Chicken Egg
 						},
 						["qg"] = 620,	-- Chicken
 						["description"] = "Spam the macro '/chicken' at a Chicken for it to grant you this quest. The vendor, William Saldean sells the Special Chicken Feed you need.",
 						["repeatable"] = true,
-					}),
+					},
 				}),
 			},
 		}),
