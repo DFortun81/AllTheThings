@@ -105,6 +105,27 @@ _.ExpansionFeatures =
 									i(164456),	-- Swarmfury Footwraps
 								},
 							}),
+							i(166828),	-- Dark Animator's Cowl
+							i(166825),	-- Dark Animator's Mantle
+							i(166824),	-- Dark Animator's Robe
+							i(166829),	-- Dark Animator's Bracers
+							i(166827),	-- Dark Animator's Gloves
+							i(166822),	-- Dark Animator's Belt
+							i(166826),	-- Dark Animator's Pants
+							i(166823),	-- Dark Animator's Boots
+							i(166844),	-- Duskhaven Top Hat
+							i(166831),	-- Duskhaven Dress
+							i(166833),	-- Duskhaven Jacket
+							i(166834),	-- Duskhaven Breeches
+							i(166832),	-- Duskhaven Boots
+							i(166818),	-- Fallen Runelord's Cowl
+							i(166815),	-- Fallen Runelord's Shoulders
+							i(166816),	-- Fallen Runelord's Robe	
+							i(166820),	-- Fallen Runelord's Bracers
+							i(166817),	-- Fallen Runelord's Gloves
+							i(166821),	-- Fallen Runelord's Belt
+							i(166819),	-- Fallen Runelord's Breeches
+							i(166814),	-- Fallen Runelord's Striders
 						}),
 						n(-44, {	-- Leather
 							n(-3320, {	-- Spiritbough
