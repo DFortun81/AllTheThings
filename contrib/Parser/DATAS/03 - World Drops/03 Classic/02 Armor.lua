@@ -93,6 +93,7 @@ _.WorldDrops =
 					i(12032),	-- Onyx Choker
 					i(21766),	-- Opal Necklace of Impact
 					i(21934),	-- Ornate Tigerseye Necklace
+					un(2, i(4614)),	-- Pendant of Myzrael
 					i(20950),	-- Pendant of the Agate Shield
 					i(12048),	-- Prismatic Pendant
 					i(12026),	-- Quicksilver Pendant

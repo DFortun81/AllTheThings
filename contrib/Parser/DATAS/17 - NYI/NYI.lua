@@ -456,6 +456,11 @@ _.NeverImplemented =
 			un(1, i(20084)), -- Hunting Net
 			un(1, i(20525)), -- Earthen Sigil
 		}),
+		filter(51, {	-- Neck
+			un(1, i(7550)),		-- Warrior's Honor
+			un(1, i(13811)),	-- Necklace of the Dawn
+			un(1, i(18023)),	-- Blood Ruby Pendant
+		}),
 	}),
 	n(-494, { -- Misc
 		un(1, i(130186)),	-- Intern Items - BJI

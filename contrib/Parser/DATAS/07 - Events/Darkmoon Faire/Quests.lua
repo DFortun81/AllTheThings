@@ -7,6 +7,28 @@ _.WorldEvents =
 		["mapID"] = 407,	-- Darkmoon Island
 		["g"] = {
 			n(-17, { -- Quests
+				{	-- 1200 Tickets - Amulet of the Darkmoon
+					["questID"] = 7981,	-- 1200 Tickets - Amulet of the Darkmoon
+					["qg"] = 14828,	-- Gelvas Grimegate <Souvenir & Toy Prizes>
+					["u"] = 40,
+					["g"] = {
+						{	-- Amulet of the Darkmoon
+							["itemID"] = 19491,	-- Amulet of the Darkmoon
+							["u"] = 2,
+						},
+					},
+				},
+				{	-- 1200 Tickets - Orb of the Darkmoon
+					["questID"] = 7940,	-- 1200 Tickets - Orb of the Darkmoon
+					["qg"] = 14828,	-- Gelvas Grimegate <Souvenir & Toy Prizes>
+					["u"] = 40,
+					["g"] = {
+						{	-- Orb of the Darkmoon
+							["itemID"] = 19426,	-- Orb of the Darkmoon
+							["u"] = 2,
+						},
+					},
+				},
 				{	-- Cards
 					["categoryID"] = 773,	-- Cards
 					["f"] = 104,			-- Quest Items

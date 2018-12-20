@@ -206,6 +206,16 @@ _.Zones =
 						["qg"] = 2700,	-- Captain Nials
 						["sourceQuests"] = { 26093 },	-- Northfold Manner
 					}),
+					{	-- Summoning the Princess
+						["questID"]	= 656,	-- Summoning the Princess
+						["u"] = 40,
+						["g"] = {
+							{	-- Pulsating Crystalline Shard
+								["itemID"] = 4743,	-- Pulsating Crystalline Shard
+								["u"] = 2,
+							},
+						},
+					},
 					q( 26051, {	-- Sunken Treasure
 						["groups"] = {
 							i( 59199),	-- Bottom Waders

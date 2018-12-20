@@ -170,6 +170,7 @@ _.Instances =
 								un(2, i(14024)),	-- Frightalon
 								un(2, i(13957)),	-- Gargoyle Slashers
 								un(2, i(13983)),	-- Gravestone War Axe
+								un(2, i(13960)),	-- Heart of the Fiend
 								un(2, i(13969)),	-- Loomoguard Armbraces
 								un(2, i(13955)),	-- Stoneform Shoulders
 								un(2, i(13967)),	-- Windreaver Greaves

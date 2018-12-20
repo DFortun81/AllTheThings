@@ -19,6 +19,11 @@ _.Zones =
 					q(  8287, {	-- A Terrible Purpose (awarded "A Terrible Purpose" criteria)
 						["qg"] = 15194,	-- Hermit Ortell
 						["sourceQuests"] = { 8279 },	-- The Twilight Lexicon
+						["g"] = {
+							{	-- Nature's Whisper [Arrives in the mail after completing the quest]
+								["itemID"] = 20645,	-- Nature's Whisper
+							},
+						},
 					}),
 					{
 						["qgs"] = {
