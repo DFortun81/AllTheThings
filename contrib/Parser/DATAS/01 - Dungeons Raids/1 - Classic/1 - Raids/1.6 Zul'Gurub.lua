@@ -757,10 +757,12 @@ _.Instances = { tier(1, {	-- Classic
 						un(2, i(19884)),	-- Jin'do's Judgement
 						un(2, i(19886)),	-- The Hexxer's Cover
 						un(2, i(19885)),	-- Jin'do's Evil Eye
-						un(2, i(19889)),	-- Overlord's Embrace
+						un(2, i(19888)),	-- Overlord's Embrace
+						un(2, i(19889)),	-- Blooddrenched Leggings
+						un(2, i(19875)),	-- Bloodstained Coif
 						un(2, i(19894)),	-- Bloodsoaked Gauntlets
 						un(2, i(19929)),	-- Bloodtinged Gloves
-						un(2, i(19888)),	-- Bloodstained Legplates
+						un(2, i(19887)),	-- Bloodstained Legplates
 						un(2, i(19892)),	-- Animist's Boots
 						un(2, i(22637)),	-- Primal Hakkari Idol
 					}),

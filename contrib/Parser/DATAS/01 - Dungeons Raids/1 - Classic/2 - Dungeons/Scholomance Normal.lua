@@ -419,7 +419,9 @@ _.Instances =
 								un(2, i(13938)),	-- Bonecreeper Stylus
 								un(2, i(13398)),	-- Boots of the Shrieker
 								un(2, i(16667)),	-- Coif of Elements
+								un(2, i(13950)),	-- Detention Strap
 								un(2, i(16693)),	-- Devout Crown
+								un(2, i(22433)),	-- Don Mauricio's Band of Domination
 								un(2, i(16698)),	-- Dreadmist Mask
 								un(2, i(13937)),	-- Headmaster's Charge
 								un(2, i(16731)),	-- Helm of Valor
@@ -431,7 +433,6 @@ _.Instances =
 								un(2, i(13951)),	-- Vigorsteel Vambraces
 								un(2, i(16720)),	-- Wildheart Cowl
 								un(2, i(13964)),	-- Witchblade
-								un(2, i(22433)),	-- Don Mauricio's Band of Domination
 							}),
 						},
 					}),

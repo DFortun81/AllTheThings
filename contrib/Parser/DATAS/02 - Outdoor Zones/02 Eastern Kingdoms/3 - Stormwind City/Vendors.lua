@@ -437,6 +437,31 @@ _.Zones =
 										["itemID"] = 16409,	-- Knight-Lieutenant's Lamellar Sabatons
 										["u"] = 2,
 									},
+									-- Lieutenant Commander's Pursuit [Hunter]
+									{	-- Lieutenant Commander's Chain Helmet
+										["itemID"] = 16428,	-- Lieutenant Commander's Chain Helmet
+										["u"] = 2,
+									},
+									{	-- Lieutenant Commander's Chain Pauldrons
+										["itemID"] = 16427,	-- Lieutenant Commander's Chain Pauldrons
+										["u"] = 2,
+									},
+									{	-- Knight-Captain's Chain Hauberk
+										["itemID"] = 16425,	-- Knight-Captain's Chain Hauberk
+										["u"] = 2,
+									},
+									{	-- Knight-Lieutenant's Chain Gauntlets
+										["itemID"] = 16403,	-- Knight-Lieutenant's Chain Gauntlets
+										["u"] = 2,
+									},
+									{	-- Knight-Captain's Chain Leggings
+										["itemID"] = 16426,	-- Knight-Captain's Chain Leggings
+										["u"] = 2,
+									},
+									{	-- Knight-Lieutenant's Chain Boots
+										["itemID"] = 16401,	-- Knight-Lieutenant's Chain Boots
+										["u"] = 2,
+									},
 								},
 							},
 							{	-- Captain Lancy Revshon <Stormwind Quartermaster>

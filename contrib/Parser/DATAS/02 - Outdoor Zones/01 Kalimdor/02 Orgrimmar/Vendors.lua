@@ -1551,6 +1551,32 @@ _.Zones =
 								["itemID"] = 16509,	-- Blood Guard's Plate Boots
 								["u"] = 2,
 							},
+							-- Champion's Pursuit [Hunter]
+							{	-- Champion's Chain Headguard
+								["itemID"] = 16526,	-- Champion's Chain Headguard
+								["u"] = 2,
+							},
+							{	-- Champion's Chain Pauldrons
+								["itemID"] = 16528,	-- Champion's Chain Pauldrons
+								["u"] = 2,
+							},
+							{	-- Legionnaire's Chain Breastplate
+								["itemID"] = 16525,	-- Legionnaire's Chain Breastplate
+								["u"] = 2,
+							},
+							{	-- Blood Guard's Chain Gauntlets
+								["itemID"] = 16530,	-- Blood Guard's Chain Gauntlets
+								["u"] = 2,
+							},
+							{	-- Legionnaire's Chain Leggings
+								["itemID"] = 16527,	-- Legionnaire's Chain Leggings
+								["u"] = 2,
+							},
+							{	-- Blood Guard's Chain Boots
+								["itemID"] = 16531,	-- Blood Guard's Chain Boots
+								["u"] = 2,
+							},
+							
 						},
 						["u"] = 43,
 					},

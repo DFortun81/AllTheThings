@@ -1312,6 +1312,7 @@ _.Craftables =
 				i(15087),	-- Wicked Leather Pants (Trainable now, old Pattern id 15757 used to teach this.)
 			}),
 			n(-45, {	-- Mail
+				un(1, i(15141)),	-- Onyxia Scale Breastplate (never made it out of Beta)
 				un(8, i(15048)),	-- Blue Dragonscale Breastplate
 				un(8, i(15049)),	-- Blue Dragonscale Shoulders
 				un(8, i(19157)),	-- Chromatic Gauntlets

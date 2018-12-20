@@ -297,34 +297,37 @@ _.NeverImplemented =
 				-- Possible Unused Level 120/Lv 120 Classtrial
 				un(1, i(150642)),	-- Trailseeker Spaulders
 			}),
-			un(1, i(56507)),	    -- Razorshell Helm
-			un(1, i(56514)),	    -- Windbound Helm
-			un(1, i(12615)),	    -- Savage Mail Tunic (never added to live)
-			un(1, i(12616)),	    -- Savage Boots (never added to live)
-			un(1, i(59789)),	    -- Unknown
-			un(1, i(12617)),	    -- Savage Pauldrons (never added to live)
-			un(1, i(18304)),	    -- Greenroot Mail (never added to live)
-			un(1, i(21584)),	    -- Bracers of Eternal Reckoning (never added to live)
-			un(1, i(21588)),	    -- Wristguards of Elemental Fury (never added to live)
-			un(1, i(21612)),	    -- Wormscale Stompers (never added to live)
-			un(1, i(38387)),	    -- Grizzled Hat
-			un(1, i(25794)),	    -- Bone Studded Girdle (not out of beta)
-			un(1, i(38388)),	    -- Cap of the North
-			un(1, i(107863)),	    -- Unknown
-			un(1, i(107867)),	    -- Unknown
-			un(1, i(107872)),	    -- Unknown
-			un(1, i(107875)),	    -- Unknown
-			un(1, i(107879)),	    -- Unknown
-			un(1, i(107885)),	    -- Unknown
-			un(1, i(107888)),	    -- Unknown
-			un(1, i(107892)),	    -- Unknown
-			un(1, i(38389)),	    -- Comfy Raccoonskin Hat
-			un(1, i(38390)),	    -- The Rugged Marksman
-			un(1, i(80947)),	    -- Peacebreaker's Chain Helm
-			un(1, i(80951)),	    -- Peacebreaker's Ringmail Helm
-			un(1, i(81000)),	    -- Ringmail Armor of Eminent Domain (not added version)
-			un(1, i(80996)),	    -- Chain Armor of Eminent Domain (not added version)
-			un(1, i(37454)),	    -- HF28 Mail Physical Chest4
+			un(1, i(12105)),	-- Pridemail Leggings
+			un(1, i(13090)),	-- Breastplate of the Chosen
+			un(1, i(18320)),	-- Demonheart Spaulders
+			un(1, i(56507)),	-- Razorshell Helm
+			un(1, i(56514)),	-- Windbound Helm
+			un(1, i(12615)),	-- Savage Mail Tunic (never added to live)
+			un(1, i(12616)),	-- Savage Boots (never added to live)
+			un(1, i(59789)),	-- Unknown
+			un(1, i(12617)),	-- Savage Pauldrons (never added to live)
+			un(1, i(18304)),	-- Greenroot Mail (never added to live)
+			un(1, i(21584)),	-- Bracers of Eternal Reckoning (never added to live)
+			un(1, i(21588)),	-- Wristguards of Elemental Fury (never added to live)
+			un(1, i(21612)),	-- Wormscale Stompers (never added to live)
+			un(1, i(38387)),	-- Grizzled Hat
+			un(1, i(25794)),	-- Bone Studded Girdle (not out of beta)
+			un(1, i(38388)),	-- Cap of the North
+			un(1, i(107863)),	-- Unknown
+			un(1, i(107867)),	-- Unknown
+			un(1, i(107872)),	-- Unknown
+			un(1, i(107875)),	-- Unknown
+			un(1, i(107879)),	-- Unknown
+			un(1, i(107885)),	-- Unknown
+			un(1, i(107888)),	-- Unknown
+			un(1, i(107892)),	-- Unknown
+			un(1, i(38389)),	-- Comfy Raccoonskin Hat
+			un(1, i(38390)),	-- The Rugged Marksman
+			un(1, i(80947)),	-- Peacebreaker's Chain Helm
+			un(1, i(80951)),	-- Peacebreaker's Ringmail Helm
+			un(1, i(81000)),	-- Ringmail Armor of Eminent Domain (not added version)
+			un(1, i(80996)),	-- Chain Armor of Eminent Domain (not added version)
+			un(1, i(37454)),	-- HF28 Mail Physical Chest4
 		}),
 		n(-46, { -- Plate
 			cl(6, { -- DK
@@ -693,7 +696,7 @@ _.NeverImplemented =
 	}))),
 	}),
 	n(-38, { -- Professions
-		n(-180, { -- Alchemy
+		n(-180, { 	-- Alchemy
 			un(1, i(2556)),     -- Recipe: Elixir of Tongues
 			un(1, i(5641)),		-- Recipe: Cowardly Flight Potion
 			un(1, i(34481)),	-- Recipe: Mad Alchemist's Potion (Recipe was added to trainers instead of a usable item)
@@ -717,7 +720,7 @@ _.NeverImplemented =
 			un(1, i(152621)),	-- Recipe: Astral Mana Potion (Rank 2)
 			un(1, i(152622)),	-- Recipe: Astral Mana Potion (Rank 3)
 		}),
-		n(-192, { -- Cooking
+		n(-192, { 	-- Cooking
 			un(1, i(86512)),	-- Journeyman Cookbook
 			un(1, i(86550)),	-- Apprentice Cookbook
 			un(1, i(86551)),	-- Expert Cookbook
@@ -725,7 +728,7 @@ _.NeverImplemented =
 			un(1, i(86553)),	-- Master Cookbook
 			un(1, i(86554)),	-- Grand Master Cookbook
 		}),
-		n(-183, { -- Engineering
+		n(-183, { 	-- Engineering
 			un(1, i(162333)),	-- Schematic: Catchroot Seed Spreader
 			un(1, i(162737)),	-- Schematic: Catchroot Seed Spreader
 			un(1, i(162334)),	-- Schematic: Charged Refrigeration Projectile
@@ -736,7 +739,7 @@ _.NeverImplemented =
 			un(1, i(162336)),	-- Schematic: Neurological Immobilization Bomb
 			un(1, i(162740)),	-- Schematic: Neurological Immobilization Bomb
 		}),
-		n(-185, { -- Inscription
+		n(-185, { 	-- Inscription
 			un(1, i(87830)),	-- Recipe: Tigersblood Tincture
 			un(1, i(87829)),	-- Recipe: Incarnadine Ink
 			un(1, i(129139)),	-- Tome of Rapid Pathfinding (WoD PTR only, why Blizz why?)
@@ -785,7 +788,10 @@ _.NeverImplemented =
 			un(1, i(141061)),	-- Technique: Glyph of the Abyssal (Item never made it into the game)
 			un(1, i(141065)),	-- Technique: Glyph of the Terrorguard (Item never made it into the game)
 		}),
-		n(-190, { -- Tailoring
+		n(-187, {	-- Leatherworking
+			un(1, i(15780)),	-- Pattern: Onyxia Scale Breastplate [never made it out of Beta]
+		}),
+		n(-190, { 	-- Tailoring
 			un(1, i(42196)),	-- Pattern: Aurora Slippers (pattern never went live, but it's learned at the trainer)
 			un(1, i(7093)),		-- Pattern: Boots of Darkness
 			un(1, i(6273)),	-- Pattern: Green Woolen Robe
@@ -832,6 +838,7 @@ _.NeverImplemented =
 			un(1, i(42189)),	-- Pattern: Wispcloak (pattern never went live, but it's learned at the trainer)
 			un(1, i(42174)),	-- Pattern: Yellow Lumberjack Shirt (pattern never went live, but it's learned at the trainer)
 		}),
+		un(1, i(5657)),	-- Recipe: Instant Toxin
 	}),
 	n(-161, { -- Toys
 		un(1, i(140779)),	-- Falanaar Echo
