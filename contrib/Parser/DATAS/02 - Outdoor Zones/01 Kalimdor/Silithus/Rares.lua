@@ -249,6 +249,24 @@ _.Zones =
 						dr(	1	, i(	10124	)), --	Ornate Legguards
 						dr(	1	, i(	10110	)), --	Wanderer's Gloves
 					}), 
+					{	-- Lord Skwol <Abyssal High Council>
+						["npcID"] = 15305,	-- Lord Skwol <Abyssal High Council>
+						["u"] = 43,
+						["g"] = {
+							{	-- Abyssal Plate Epaulets
+								["itemID"] = 20683,	-- Abyssal Plate Epaulets
+								["u"] = 2,
+							},
+							{	-- Abyssal Mail Armguards
+								["itemID"] = 20684,	-- Abyssal Mail Armguards
+								["u"] = 2,
+							},
+							{	-- Wavefront Necklace
+								["itemID"] = 20685,	-- Wavefront Necklace
+								["u"] = 2,
+							},
+						},
+					},
 					n(50745, { 		-- Losaj
 						dr(	26	, i(	10277	)), --	Emerald Gauntlets
 						dr(	24	, i(	10216	)), --	Elegant Belt

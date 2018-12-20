@@ -1526,6 +1526,31 @@ _.Zones =
 								["itemID"] = 16494,	-- Blood Guard's Dragonhide Boots
 								["u"] = 2,
 							},
+							-- Champion's Battlegear [Warrior]
+							{	-- Champion's Plate Headguard
+								["itemID"] = 16514,	-- Champion's Plate Headguard
+								["u"] = 2,
+							},
+							{	-- Champion's Plate Pauldrons
+								["itemID"] = 16516,	-- Champion's Plate Pauldrons
+								["u"] = 2,
+							},
+							{	-- Legionnaire's Plate Armor
+								["itemID"] = 16513,	-- Legionnaire's Plate Armor
+								["u"] = 2,
+							},
+							{	-- Blood Guard's Plate Gloves
+								["itemID"] = 16510,	-- Blood Guard's Plate Gloves
+								["u"] = 2,
+							},
+							{	-- Legionnaire's Plate Legguards
+								["itemID"] = 16515,	-- Legionnaire's Plate Legguards
+								["u"] = 2,
+							},
+							{	-- Blood Guard's Plate Boots
+								["itemID"] = 16509,	-- Blood Guard's Plate Boots
+								["u"] = 2,
+							},
 						},
 						["u"] = 43,
 					},

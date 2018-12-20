@@ -387,6 +387,56 @@ _.Zones =
 										["itemID"] = 16392,	-- Knight-Lieutenant's Leather Boots
 										["u"] = 2,
 									},
+									-- Lieutenant Commander's Battlegear [Warrior]
+									{	-- Lieutenant Commander's Plate Helm
+										["itemID"] = 16429,	-- Lieutenant Commander's Plate Helm
+										["u"] = 2,
+									},
+									{	-- Lieutenant Commander's Plate Pauldrons
+										["itemID"] = 16432,	-- Lieutenant Commander's Plate Pauldrons
+										["u"] = 2,
+									},
+									{	-- Knight-Captain's Plate Chestguard
+										["itemID"] = 16430,	-- Knight-Captain's Plate Chestguard
+										["u"] = 2,
+									},
+									{	-- Knight-Lieutenant's Plate Gauntlets
+										["itemID"] = 16406,	-- Knight-Lieutenant's Plate Gauntlets
+										["u"] = 2,
+									},
+									{	-- Knight-Captain's Plate Leggings
+										["itemID"] = 16431,	-- Knight-Captain's Plate Leggings
+										["u"] = 2,
+									},
+									{	-- Knight-Lieutenant's Plate Boots
+										["itemID"] = 16405,	-- Knight-Lieutenant's Plate Boots
+										["u"] = 2,
+									},
+									-- Lieutenant Commander's Aegis [Paladin]
+									{	-- Lieutenant Commander's Lamellar Headguard
+										["itemID"] = 16434,	-- Lieutenant Commander's Lamellar Headguard
+										["u"] = 2,
+									},
+									{	-- Lieutenant Commander's Lamellar Shoulders
+										["itemID"] = 16436,	-- Lieutenant Commander's Lamellar Shoulders
+										["u"] = 2,
+									},
+									{	-- Knight-Captain's Lamellar Breastplate
+										["itemID"] = 16433,	-- Knight-Captain's Lamellar Breastplate
+										["u"] = 2,
+									},
+									{	-- Knight-Lieutenant's Lamellar Gauntlets
+										["itemID"] = 16410,	-- Knight-Lieutenant's Lamellar Gauntlets
+										["u"] = 2,
+									},
+									{	-- Knight-Captain's Lamellar Leggings
+										["itemID"] = 16435,	-- Knight-Captain's Lamellar Leggings
+										["u"] = 2,
+									},
+									{	-- Knight-Lieutenant's Lamellar Sabatons
+										["itemID"] = 16409,	-- Knight-Lieutenant's Lamellar Sabatons
+										["u"] = 2,
+									},
 								},
 							},
 							{	-- Captain Lancy Revshon <Stormwind Quartermaster>

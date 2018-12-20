@@ -13,18 +13,22 @@ _.PVP =
 				}),
 				n(13419, { -- Ivus the Forest Lord
 					["groups"] = {
-						i(19110, { -- Cold Forged Blade
-							["description"] = "This item was removed in Patch 1.6",
+						{	-- Cold Forged Blade
+							["itemID"] = 19110, -- Cold Forged Blade [This item was removed in Patch 1.6]
 							["u"] = 2,
-						}),
+						},
 						{	-- Frost Runed Headdress
 							["itemID"] = 19105,	-- Frost Runed Headdress
 							["u"] = 2,
 						},
-						i(19111, { -- Winteraxe Epaulets
-							["description"] = "This item was removed in Patch 1.6",
+						{	-- Winteraxe Epaulets
+							["itemID"] = 19111,	-- Winteraxe Epaulets [This item was removed in Patch 1.6]
 							["u"] = 2,
-						}),
+						},
+						{	-- Frozen Steel Vambraces
+							["itemID"] = 19112,	-- Frozen Steel Vambraces
+							["u"] = 2,
+						},
 						{	-- Yeti Hide Bracers
 							["itemID"] = 19113,	-- Yeti Hide Bracers
 							["u"] = 2,
@@ -33,18 +37,22 @@ _.PVP =
 				}),
 				n(13256, { -- Lokholar the Ice Lord
 					["groups"] = {
-						i(19110, { -- Cold Forged Blade
-							["description"] = "This item was removed in Patch 1.6",
+						{	-- Cold Forged Blade
+							["itemID"] = 19110, -- Cold Forged Blade [This item was removed in Patch 1.6]
 							["u"] = 2,
-						}),
+						},
 						{	-- Frost Runed Headdress
 							["itemID"] = 19105,	-- Frost Runed Headdress
 							["u"] = 2,
 						},
-						i(19111, { -- Winteraxe Epaulets
-							["description"] = "This item was removed in Patch 1.6",
+						{	-- Winteraxe Epaulets
+							["itemID"] = 19111,	-- Winteraxe Epaulets [This item was removed in Patch 1.6]
 							["u"] = 2,
-						}),
+						},
+						{	-- Frozen Steel Vambraces
+							["itemID"] = 19112,	-- Frozen Steel Vambraces
+							["u"] = 2,
+						},
 						{	-- Yeti Hide Bracers
 							["itemID"] = 19113,	-- Yeti Hide Bracers
 							["u"] = 2,

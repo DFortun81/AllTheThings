@@ -385,7 +385,10 @@ _.NeverImplemented =
 				un(1, i(154044)), -- Oathsworn Defender Idol
 				un(1, i(154047)), -- Oathsworn Defender Stone
 			}),
-			un(1, i(24137)), -- PH Plate Ramparts Reward
+			un(1, i(5822)),		-- Hedgeseed Gauntlets
+			un(1, i(12106)),	-- Boulderskin Breastplate
+			un(1, i(21587)),	-- Wristguards of Castigation (never made it off test)
+			un(1, i(24137)),	-- PH Plate Ramparts Reward
 			un(1, i(27965)),	-- TEST 130 Epic Paladin DPS Chest
 			un(1, i(37468)),	-- HF28 Plate Physical Boots
 			un(1, i(105393, { -- Tusks of Mannoroth [Heroic Warforged]
