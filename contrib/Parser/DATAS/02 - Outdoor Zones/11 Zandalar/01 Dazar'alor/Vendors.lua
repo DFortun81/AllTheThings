@@ -257,6 +257,34 @@ _.Zones =
 								{ 67.29, 71.71, 1164 },
 							},
 						}),
+						{	-- Oily
+							["npcID"] = 148080,	-- Oily
+							["coords"] = {
+								{ 45.51, 86.45, 1165 },
+							},
+							["description"] = "To allow this vendor to sell you items you must win PvP Battles until you get the mission \"A Shady Message\" to spawn.  Next you'll complete the mission and then are able to purchase items.  Yes, this has a chance to spawn and could be 1, 10, 100 or 1000 PvP Battles until it spawns.",
+							["races"] = HORDE_ONLY,
+							["g"] = {
+								{	-- Abyssal Eel
+									["itemID"] = 163489,	-- Abyssal Eel
+								},
+								{	-- Bloody Rabbit Fang
+									["itemID"] = 163493,	-- Bloody Rabbit Fang
+								},
+								{	-- Drustvar Piglet
+									["itemID"] = 163492,	-- Drustvar Piglet
+								},
+								{	-- Greatwing Macaw Feather
+									["itemID"] = 163495,	-- Greatwing Macaw Feather
+								},
+								{	-- Strange Looking Mechanical Squirrel
+									["itemID"] = 163496,	-- Strange Looking Mechanical Squirrel
+								},
+								{	-- Wad of Spider Web
+									["itemID"] = 163494,	-- Wad of Spider Web
+								},
+							},
+						},
 						n(122463, {	-- Plen <Unusual and Remarkable Wares>
 							["coords"] = {
 								{ 47.73, 91.64, 1165 },

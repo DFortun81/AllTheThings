@@ -117,6 +117,37 @@ _.Zones =
 							["coord"] = { 50.8, 46.0 },
 							["races"] = ALLIANCE_ONLY,
 						}),
+						{	-- Dodger
+							["npcID"] = 148024,	-- Dodger
+							["coords"] = {
+								{ 68.96, 17.08, 1161 },
+							},
+							["description"] = "Located underneath. Walk to the ocean and you'll see a path that leads underneath.\nTo allow this vendor to sell you items you must win PvP Battles until you get the mission \"A Shady Message\" to spawn.  Next you'll complete the mission and then are able to purchase items.  Yes, this has a chance to spawn and could be 1, 10, 100 or 1000 PvP Battles until it spawns.",
+							["races"] = ALLIANCE_ONLY,
+							["g"] = {
+								{	-- Accursed Hexxer
+									["itemID"] = 163506,	-- Accursed Hexxer
+								},
+								{	-- Bloodfeaster Larva
+									["itemID"] = 163500,	-- Bloodfeaster Larva
+								},
+								{	-- Child of Jani
+									["itemID"] = 163504,	-- Child of Jani
+								},
+								{	-- Ranishu Runt
+									["itemID"] = 163503,	-- Ranishu Runt
+								},
+								{	-- Raptor Containment Crate
+									["itemID"] = 163499,	-- Raptor Containment Crate
+								},
+								{	-- Tiny Direhorn
+									["itemID"] = 163498,	-- Tiny Direhorn
+								},
+								{	-- Toad in a Box
+									["itemID"] = 163505,	-- Toad in a Box
+								},
+							},
+						},
 						{	-- Leedan Gustaf <Profession Liason> [NOTE: PvP Craftable Recipes]
 							["npcID"] = 142564,	-- Leedan Gustaf <Profession Liason> [NOTE: PvP Craftable Recipes]
 							["coord"] = { 56.30, 26.95, 1161 },

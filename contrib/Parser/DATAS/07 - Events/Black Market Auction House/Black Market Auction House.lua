@@ -555,8 +555,8 @@ _.WorldEvents =
 			626,	-- Dalaran: Rogue Class Hall
 			628,	-- Dalaran: The Underbelly
 			862,	-- Dazar'alor
-			590,	-- Frostwall
-			582,	-- Lunarfall
+			--590,	-- Frostwall
+			--582,	-- Lunarfall
 		},
 		["crs"] = {
 			142062,	-- Madam Gosu [Boralus - Alliance]
@@ -570,7 +570,7 @@ _.WorldEvents =
 			{ 57.91, 46.28, 626 },	-- Madam Gosu, Dalaran: Rogue Class Hall
 			{ 71.37, 17.93, 628 },	-- Madam Goya, Dalaran: The Underbelly
 			{ 63.54, 62.68, 862 },	-- Madam Goya, Dazar'alor
-			{ 44.96, 50.07, 590 },	-- Zhang Yeoh, Frostwall
+			--{ 44.96, 50.07, 590 },	-- Zhang Yeoh, Frostwall
 		},
 		["u"] = 9,
 	}),
