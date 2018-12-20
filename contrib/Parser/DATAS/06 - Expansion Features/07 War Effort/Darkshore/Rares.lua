@@ -346,7 +346,7 @@ _.ExpansionFeatures =
 							["qg"] = 147970,				-- Mrggrmarr
 							["isWeekly"] = true,
 							["coords"] = {
-								{ 35.35, 81.51, 62 },
+								{ 35.85, 81.75, 62 },
 							},
 						},
 						{	-- Onu [H Only]

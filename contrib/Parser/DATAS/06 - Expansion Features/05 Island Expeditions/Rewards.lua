@@ -118,6 +118,7 @@ _.ExpansionFeatures =
 							i(166833),	-- Duskhaven Jacket
 							i(166834),	-- Duskhaven Breeches
 							i(166832),	-- Duskhaven Boots
+							i(166830),	-- Duskhaven Slippers
 							i(166818),	-- Fallen Runelord's Cowl
 							i(166815),	-- Fallen Runelord's Shoulders
 							i(166816),	-- Fallen Runelord's Robe	
