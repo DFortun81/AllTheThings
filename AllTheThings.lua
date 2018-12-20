@@ -6181,7 +6181,7 @@ local function MinimapButtonOnClick(self, button)
 		if IsShiftKeyDown() then
 			RefreshCollections();
 		elseif IsAltKeyDown() or IsControlKeyDown() then
-			app.ToggleMiniListForCurrentZone();
+			ToggleMiniListForCurrentZone();
 		else
 			ToggleMainList();
 		end
