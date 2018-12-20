@@ -158,6 +158,12 @@ _.Zones =
 							q(28057, {	--Kill 'em With Sleep Deprivation
 								["qg"] = 14628,	-- Evonice Sootsmoker
 								["sourceQuests"] = { 28054,28055,28056 }, -- "Slavery Is Bad", "Sweet, Horrible Freedom", "Rise, Obsidion"
+								["g"] = {
+									{	-- Everglowing Robe
+										["itemID"] = 19129,	-- Everglowing Robe
+										["u"] = 2,
+									},
+								},
 							}),
 							o(179832, { -- Pillaclencher's Ornate Pillow
 								i(62933, { -- Chambermaid Pillaclencher's Pillow

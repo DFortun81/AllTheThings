@@ -17,6 +17,10 @@ _.PVP =
 							["description"] = "This item was removed in Patch 1.6",
 							["u"] = 2,
 						}),
+						{	-- Frost Runed Headdress
+							["itemID"] = 19105,	-- Frost Runed Headdress
+							["u"] = 2,
+						},
 						i(19111, { -- Winteraxe Epaulets
 							["description"] = "This item was removed in Patch 1.6",
 							["u"] = 2,
@@ -29,6 +33,10 @@ _.PVP =
 							["description"] = "This item was removed in Patch 1.6",
 							["u"] = 2,
 						}),
+						{	-- Frost Runed Headdress
+							["itemID"] = 19105,	-- Frost Runed Headdress
+							["u"] = 2,
+						},
 						i(19111, { -- Winteraxe Epaulets
 							["description"] = "This item was removed in Patch 1.6",
 							["u"] = 2,

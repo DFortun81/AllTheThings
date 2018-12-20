@@ -61,13 +61,14 @@ _.NeverImplemented =
 				un(1, i(157642)),	-- Demonologist's Staff
 				un(1, i(157641)),	-- Destructive Spellstaff
 			}),
+			un(1, i(6243)),		-- Green Woolen Robe
 			un(1, i(78017)),	-- Replica Magister's Leggings (Cloth)
-			un(1, i(4989)),	-- Mage Dragon Robe (intended to be quest reward, never made it to live?)
-			un(1, i(4990)),	-- Scorched Bands
+			un(1, i(4989)),		-- Mage Dragon Robe (intended to be quest reward, never made it to live?)
+			un(1, i(4990)),		-- Scorched Bands
 			un(1, i(104335)),	-- Titan Rocket Boots
 			un(1, i(90358)),	-- Honorary Combat Engineer's Silk Trousers
 			un(1, i(90359)),	-- Honorary Combat Engineer's Satin Leggings
-			un(1, i(6478)),	-- Rat Stompers
+			un(1, i(6478)),		-- Rat Stompers
 			un(1, i(10010)),	-- Stormcloth Pants
 			un(1, i(10011)),	-- Stormcloth Gloves
 			un(1, i(10020)),	-- Stormcloth Vest
@@ -76,7 +77,7 @@ _.NeverImplemented =
 			un(1, i(10039)),	-- Stormcloth Boots
 			un(1, i(12107)),	-- Whispersilk Leggings
 			un(1, i(13080)),	-- Widow's Clutch
-			un(1, i(1216)),	-- Frost Bracers
+			un(1, i(1216)),		-- Frost Bracers
 			un(1, i(18341)),	-- Quel'dorei Sash
 			un(1, i(23433)),	-- Blood Robes
 			un(1, i(23434)),	-- Robes of the Shard

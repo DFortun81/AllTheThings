@@ -427,6 +427,10 @@ _.Instances =
 							i(11764), 	-- Cinderhide Armsplints
 							i(11765), 	-- Pyremail Wristguards
 							i(11767), 	-- Emberplate Armguards
+							{	-- Incendic Bracers
+								["itemID"] = 11768,	-- Incendic Bracers
+								["u"] = 2,
+							},
 						})),
 						cr( 9056, e(376, {	-- Fineous Darkvire <Chief Architect>
 							i( 11840), 	-- Master Builder's Shirt

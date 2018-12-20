@@ -1392,32 +1392,115 @@ _.Zones =
 							i(41560),	-- Design: Stormy Chalcedony
 							i(41570),	-- Design: Radiant Dark Jade
 							i(41571),	-- Design: Turbid Dark Jade
-							un(2, i(28807)),	    -- High Warlord's Chain Helm
-							un(2, i(31646)),	    -- High Warlord Ringmail Chestguard
-							un(2, i(31647)),	    -- High Warlord Ringmail Gloves
-							un(2, i(31648)),	    -- High Warlord Ringmail Headpiece
-							un(2, i(31649)),	    -- High Warlord Ringmail Legguards
-							un(2, i(31650)),	    -- High Warlord Ringmail Shoulders
-							un(2, i(28846)),	    -- High Warlord Mail Armor
-							un(2, i(28847)),	    -- High Warlord Mail Gauntlets
-							un(2, i(28848)),	    -- High Warlord Mail Helm
-							un(2, i(28849)),	    -- High Warlord Mail Leggings
-							un(2, i(28850)),	    -- High Warlord Mail Spaulders
-							un(2, i(28805)),	    -- High Warlord Chain Armor
-							un(2, i(28806)),	    -- High Warlord Chain Gauntlets
-							un(2, i(28808)),	    -- High Warlord Chain Leggings
-							un(2, i(28809)),	    -- High Warlord Chain Spaulders
-							un(2, i(28841)),	    -- High Warlord Linked Armor
-							un(2, i(28842)),	    -- High Warlord Linked Gauntlets
-							un(2, i(28843)),	    -- High Warlord Linked Helm
-							un(2, i(28844)),	    -- High Warlord Linked Leggings
-							un(2, i(28845)),	    -- High Warlord Linked Spaulders
-							un(2, i(16518)),	    -- Blood Guard's Mail Walker (1.4 till 1.11)
-							un(2, i(16519)),	    -- Blood Guard's Mail Grips(1.4 till 1.11)
-							un(2, i(16521)),	    -- Champion's Mail Helm(1.4 till 1.11)
-							un(2, i(16522)),	    -- Legionnaire's Mail Chestpiece (1.4 till 1.11)
-							un(2, i(16523)),	    -- Legionnaire's Mail Leggings (1.4 till 1.11)
-							un(2, i(16524)),	    -- Champion's Mail Shoulders(1.4 till 1.11)
+							un(2, i(28807)),	-- High Warlord's Chain Helm
+							un(2, i(31646)),	-- High Warlord Ringmail Chestguard
+							un(2, i(31647)),	-- High Warlord Ringmail Gloves
+							un(2, i(31648)),	-- High Warlord Ringmail Headpiece
+							un(2, i(31649)),	-- High Warlord Ringmail Legguards
+							un(2, i(31650)),	-- High Warlord Ringmail Shoulders
+							un(2, i(28846)),	-- High Warlord Mail Armor
+							un(2, i(28847)),	-- High Warlord Mail Gauntlets
+							un(2, i(28848)),	-- High Warlord Mail Helm
+							un(2, i(28849)),	-- High Warlord Mail Leggings
+							un(2, i(28850)),	-- High Warlord Mail Spaulders
+							un(2, i(28805)),	-- High Warlord Chain Armor
+							un(2, i(28806)),	-- High Warlord Chain Gauntlets
+							un(2, i(28808)),	-- High Warlord Chain Leggings
+							un(2, i(28809)),	-- High Warlord Chain Spaulders
+							un(2, i(28841)),	-- High Warlord Linked Armor
+							un(2, i(28842)),	-- High Warlord Linked Gauntlets
+							un(2, i(28843)),	-- High Warlord Linked Helm
+							un(2, i(28844)),	-- High Warlord Linked Leggings
+							un(2, i(28845)),	-- High Warlord Linked Spaulders
+							un(2, i(16518)),	-- Blood Guard's Mail Walker (1.4 till 1.11)
+							un(2, i(16519)),	-- Blood Guard's Mail Grips(1.4 till 1.11)
+							un(2, i(16521)),	-- Champion's Mail Helm(1.4 till 1.11)
+							un(2, i(16522)),	-- Legionnaire's Mail Chestpiece (1.4 till 1.11)
+							un(2, i(16523)),	-- Legionnaire's Mail Leggings (1.4 till 1.11)
+							un(2, i(16524)),	-- Champion's Mail Shoulders(1.4 till 1.11)
+							un(2, i(16494)),	-- Blood Guard's Dragonhide Boots
+							un(2, i(16496)),	-- Blood Guard's Dragonhide Gauntlets
+							un(2, i(16498)),	-- Blood Guard's Leather Treads
+							un(2, i(16499)),	-- Blood Guard's Leather Vices
+							un(2, i(16506)),	-- Champion's Leather Headguard
+							un(2, i(16507)),	-- Champion's Leather Mantle
+							un(2, i(16505)),	-- Legionnaire's Leather Hauberk
+							un(2, i(16508)),	-- Legionnaire's Leather Leggings
+							-- Champion's Regalia [Mage]
+							{	-- Champion's Silk Hood
+								["itemID"] = 16489,	-- Champion's Silk Hood
+								["u"] = 2,
+							},
+							{	-- Champion's Silk Shoulderpads
+								["itemID"] = 16492,	-- Champion's Silk Shoulderpads
+								["u"] = 2,
+							},
+							{	-- Legionnaire's Silk Robes
+								["itemID"] = 16491,	-- Legionnaire's Silk Robes
+								["u"] = 2,
+							},
+							{	-- Blood Guard's Silk Gloves
+								["itemID"] = 16487,	-- Blood Guard's Silk Gloves
+								["u"] = 2,
+							},
+							{	-- Legionnaire's Silk Pants
+								["itemID"] = 16490,	-- Legionnaire's Silk Pants
+								["u"] = 2,
+							},
+							{	-- Blood Guard's Silk Footwraps
+								["itemID"] = 16485,	-- Blood Guard's Silk Footwraps
+								["u"] = 2,
+							},
+							-- Champion's Threads [Warlock]
+							{	-- Champion's Dreadweave Hood
+								["itemID"] = 17570,	-- Champion's Dreadweave Hood
+								["u"] = 2,
+							},
+							{	-- Champion's Dreadweave Shoulders
+								["itemID"] = 17573,	-- Champion's Dreadweave Shoulders
+								["u"] = 2,
+							},
+							{	-- Legionnaire's Dreadweave Robe
+								["itemID"] = 17572,	-- Legionnaire's Dreadweave Robe
+								["u"] = 2,
+							},
+							{	-- Blood Guard's Dreadweave Gloves
+								["itemID"] = 17577,	-- Blood Guard's Dreadweave Gloves
+								["u"] = 2,
+							},
+							{	-- Legionnaire's Dreadweave Leggings
+								["itemID"] = 17571,	-- Legionnaire's Dreadweave Leggings
+								["u"] = 2,
+							},
+							{	-- Blood Guard's Dreadweave Boots
+								["itemID"] = 17576,	-- Blood Guard's Dreadweave Boots
+								["u"] = 2,
+							},
+							-- Champion's Raiment [Priest]
+							{	-- Champion's Satin Cowl
+								["itemID"] = 17610,	-- Champion's Satin Cowl
+								["u"] = 2,
+							},
+							{	-- Champion's Satin Shoulderpads
+								["itemID"] = 17613,	-- Champion's Satin Shoulderpads
+								["u"] = 2,
+							},
+							{	-- Legionnaire's Satin Vestments
+								["itemID"] = 17612,	-- Legionnaire's Satin Vestments
+								["u"] = 2,
+							},
+							{	-- Blood Guard's Satin Gloves
+								["itemID"] = 17617,	-- Blood Guard's Satin Gloves
+								["u"] = 2,
+							},
+							{	-- Legionnaire's Satin Trousers
+								["itemID"] = 17611,	-- Legionnaire's Satin Trousers
+								["u"] = 2,
+							},
+							{	-- Blood Guard's Satin Boots
+								["itemID"] = 17616,	-- Blood Guard's Satin Boots
+								["u"] = 2,
+							},
 						},
 						["u"] = 43,
 					},

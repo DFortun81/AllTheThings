@@ -93,6 +93,7 @@ _.Zones =
 								["u"] = 40,	-- Legacy Quest
 								["groups"] = {
 									un(2, i(20705)),	-- Cenarion Reservist's Pants
+									un(2, i(20706)),	-- Cenarion Reservist's Pants
 									un(2, i(20716)),	-- Sandworm Skin Gloves
 								},
 							},

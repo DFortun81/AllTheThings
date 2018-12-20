@@ -64,6 +64,10 @@ _.Instances =
 							i(88349),	-- Phantasmal Drape
 							i(88347),	-- Ghostwoven Legguards
 							i(88348),	-- Wraithplate Treads
+							{	-- Darkshade Gloves
+								["itemID"] = 14543,	-- Darkshade Gloves
+								["u"] = 2,
+							},
 						})),
 						cr(59153, e(665, { 	-- Rattlegore
 							i(88344),	-- Goresoaked Headreaper

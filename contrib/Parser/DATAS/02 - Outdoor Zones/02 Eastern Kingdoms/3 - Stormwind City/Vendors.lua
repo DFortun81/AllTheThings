@@ -287,6 +287,81 @@ _.Zones =
 									un(2, i(31640)),	-- Grand Marshal's Ringmail Chestguard
 									un(2, i(31641)),	-- Grand Marshal's Ringmail Gloves
 									un(2, i(31643)),	-- Grand Marshal's Ringmail Legguards
+									-- Lieutenant Commander's Regalia [Mage]
+									{	-- Lieutenant Commander's Crown
+										["itemID"] = 16416,	-- Lieutenant Commander's Crown
+										["u"] = 2,
+									},
+									{	-- Lieutenant Commander's Silk Spaulders
+										["itemID"] = 16415,	-- Lieutenant Commander's Silk Spaulders
+										["u"] = 2,
+									},
+									{	-- Knight-Captain's Silk Raiment
+										["itemID"] = 16413,	-- Knight-Captain's Silk Raiment
+										["u"] = 2,
+									},
+									{	-- Knight-Lieutenant's Silk Gloves
+										["itemID"] = 16391,	-- Knight-Lieutenant's Silk Gloves
+										["u"] = 2,
+									},
+									{	-- Knight-Captain's Silk Leggings
+										["itemID"] = 16414,	-- Knight-Captain's Silk Leggings
+										["u"] = 2,
+									},
+									{	-- Knight-Lieutenant's Silk Boots
+										["itemID"] = 16369,	-- Knight-Lieutenant's Silk Boots
+										["u"] = 2,
+									},
+									-- Lieutenant Commander's Threads [Warlock]
+									{	-- Lieutenant Commander's Headguard
+										["itemID"] = 17566,	-- Lieutenant Commander's Headguard
+										["u"] = 2,
+									},
+									{	-- Lieutenant Commander's Dreadweave Mantle
+										["itemID"] = 17569,	-- Lieutenant Commander's Dreadweave Mantle
+										["u"] = 2,
+									},
+									{	-- Knight-Captain's Dreadweave Robe
+										["itemID"] = 17568,	-- Knight-Captain's Dreadweave Robe
+										["u"] = 2,
+									},
+									{	-- Knight-Lieutenant's Dreadweave Gloves
+										["itemID"] = 17564,	-- Knight-Lieutenant's Dreadweave Gloves
+										["u"] = 2,
+									},
+									{	-- Knight-Captain's Dreadweave Leggings
+										["itemID"] = 17567,	-- Knight-Captain's Dreadweave Leggings
+										["u"] = 2,
+									},
+									{	-- Knight-Lieutenant's Dreadweave Boots
+										["itemID"] = 17562,	-- Knight-Lieutenant's Dreadweave Boots
+										["u"] = 2,
+									},
+									-- Lieutenant Commander's Raiment [Priest]
+									{	-- Lieutenant Commander's Diadem
+										["itemID"] = 17598,	-- Lieutenant Commander's Diadem
+										["u"] = 2,
+									},
+									{	-- Lieutenant Commander's Satin Amice
+										["itemID"] = 17601,	-- Lieutenant Commander's Satin Amice
+										["u"] = 2,
+									},
+									{	-- Knight-Captain's Satin Robes
+										["itemID"] = 17600,	-- Knight-Captain's Satin Robes
+										["u"] = 2,
+									},
+									{	-- Knight-Lieutenant's Satin Gloves
+										["itemID"] = 17596,	-- Knight-Lieutenant's Satin Gloves
+										["u"] = 2,
+									},
+									{	-- Knight-Captain's Satin Leggings
+										["itemID"] = 17599,	-- Knight-Captain's Satin Leggings
+										["u"] = 2,
+									},
+									{	-- Knight-Lieutenant's Satin Boots
+										["itemID"] = 17594,	-- Knight-Lieutenant's Satin Boots
+										["u"] = 2,
+									},
 								},
 							},
 							{	-- Captain Lancy Revshon <Stormwind Quartermaster>
