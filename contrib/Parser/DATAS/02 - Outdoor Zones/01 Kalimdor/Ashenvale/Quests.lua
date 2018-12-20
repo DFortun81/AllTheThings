@@ -388,38 +388,53 @@ _.Zones =
 							},
 						}),
 					})),
-					qa(26453, {	-- A Helping Hand
+					{
+						["questID"] = 26453,	-- A Helping Hand
 						["qg"] = 17106,	-- Vindicator Palanaar
+						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
-					}),
-					qa(26481, {	-- A New Adornment
+					},
+					{	-- A New Adornment
+						["questID"] = 26481,
 						["qg"] = 3897,	-- Krolg
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 13989,	-- King of the Foulweald
-					}),
-					qa(13874, {	-- A Not-So-Charmed Life
+					},
+					{	-- A Not-So-Charmed Life
+						["questID"] = 13874,
 						["qg"] = 34239,	-- Hephaestus Pilgrim
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 13872,	-- Worgen Wisdom
-					}),
-					qa(26454, {	-- A Shameful Waste
+					},
+					{	-- A Shameful Waste
+						["questID"] = 26454,
 						["qg"] = 17291,	-- Architect Nemos
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 26453,	-- A Helping Hand
-					}),
-					qa(13624, {	-- A Squad of Your Own
+					},
+					{	-- A Squad of Your Own
+						["questID"] = 13624,
 						["qg"] = 11806,	-- Sentinel Onaeya
-					}),
-					qa(13919, {	-- A Trip to the Moonwell
+						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- A Trip to the Moonwell
+						["questID"] = 13919,
 						["qg"] = 3894,	-- Pelturas Whitemoon
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 26475,	-- Elune's Tear
-					}),
-					qa(26457, {	-- Agents of Destruction  (No Prereq)
+					},
+					{	-- Agents of Destruction  (No Prereq)
+						["questID"] = 26457,
 						["groups"] = {
 							i(56642),	-- Starwhisper Monnions
 							i(56643),	-- Woodguard Vest
 							i(131532),	-- Starwhisper Spaulders
 						},
 						["qg"] = 17287,	-- Sentinel Luciel Starwhisper
-					}),
-					qa(13924, {	-- All's Well
+						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- All's Well
+						["questID"] = 13924,
 						["groups"] = {
 							i(56676),	-- Whitemoon Gloves
 							i(56677),	-- Belt of Healing Charms
@@ -427,21 +442,26 @@ _.Zones =
 							i(131320),	-- Whitemoon Mender Cord
 						},
 						["qg"] = 34358,	-- Avrus the Redeemed
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 13922,	-- In the Hands of the Perverse
-					}),
+					},
 					{	-- Ashenvale Outrunners
 						["questID"] = 6503,
 						["qg"] = 12867,	-- Kuray'bin
 						["coord"] = { 73.5, 60.8 },
 						["races"] = HORDE_ONLY,
 					},
-					qa(13646, {	-- Astranaar Bound
+					{	-- Astranaar Bound
+						["questID"] = 13646,
 						["qg"] = 33445,	-- Sentinel Avana
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 26464,	-- The Lost Gem
-					}),
-					qa(13849, {	-- Astranaar's Burning!
+					},
+					{	-- Astranaar's Burning!
+						["questID"] = 13849,
 						["qg"] = 4079,	-- Sentinel Thenysil
-					}),
+						["races"] = ALLIANCE_ONLY,
+					},
 					{	-- Bad News Bear-er
 						["questID"] = 13848,
 						["qg"] = 33837,	-- Kadrak
@@ -449,13 +469,17 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 13805,	-- Pierce Their Heart!
 					},
-					qa(13642, {	-- Bathed in Light
+					{	-- Bathed in Light
+						["questID"] = 13642,
 						["qg"] = 3847,	-- Orendil Broadleaf
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 13623,	-- Delivery for Orendil
-					}),
-					qa(26473, {	-- Bathran's Hair
+					},
+					{	-- Bathran's Hair
+						["questID"] = 26473,
 						["qg"] = 33204,	-- Evenar Stillwhisper
-					}),
+						["races"] = ALLIANCE_ONLY,
+					},
 					{	-- Befouled Water Globe
 						["itemID"] = 16408,
 						["groups"] = {
@@ -473,50 +497,53 @@ _.Zones =
 						["coord"] = { 37.7, 43.5 },
 						["races"] = HORDE_ONLY,
 					},
-					qh(26894, {	-- Blackfathom Deeps
+					{	-- Blackfathom Deeps
+						["questID"] = 26894,
 						["qg"] = 34122,	-- Commander Grimfang
 						["coord"] = { 12.1, 33.8 },
-					}),
-					qa(26897, {	-- Blackfathom Deeps
+						["races"] = HORDE_ONLY,
+					},
+					{	-- Blackfathom Deeps
+						["questID"] = 26897,
 						["qg"] = 3845,	-- Shindrell Swiftfire
-					}),
-					qa(13965, {	-- Check in on the Edunes
+						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- Check in on the Edunes
+						["questID"] = 13965,
 						["qg"] = 3996,	-- Faldreas Goeth'Shael
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 26478,	-- Playing Possum
 						["isBreadcrumb"] = true,
-					}),
-					qa(13985, {	-- Clear the Shrine
+					},
+					{	-- Clear the Shrine
+						["questID"] = 13985,
 						["qg"] = 34599,	-- Bolyun
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 13982,	-- In a Bind
-					}),
-					qa(13766, {	-- Closure is Only Natural
+					},
+					{	-- Closure is Only Natural
+						["questID"] = 13766,
 						["qg"] = 17310,	-- Gnarl
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 26446,	-- Reclaiming Felfire Hill
-					}),
+					},
 					{	-- Condition Critical!
 						["questID"] = 13958,
 						["qg"] = 34359,	-- Captain Goggath
 						["coord"] = { 38.0, 43.8 },
 						["sourceQuest"] = 13947,	-- Blastranaar!
 					},
-					i(46128, { 	-- Troll Charm
-						qa(13868, {	-- Corrupting Influence?
-							["qgs"] = {
-								3925,	-- Thistlefur Avenger
-								3924,	-- Thistlefur Shaman
-								3926,	-- Thistlefur Pathfinder
-								3921,	-- Thistlefur Ursa
-								3922,	-- Thistlefur Totemic
-							},
-						}),
-					}),
-					qa(13867, {	-- Culling the Furbolg Threat
+					{	-- Culling the Furbolg Threat
+						["questID"] = 13867,
 						["qg"] = 3691,	-- Raene Wolfrunner
-					}),
-					qa(26480, {	-- Dartol's Rod
+						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- Dartol's Rod
+						["questID"] = 26480,
 						["qg"] = 3691,	-- Raene Wolfrunner
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 26479,	-- Return to Raene
-					}),
+					},
 					{	-- Dead Elves Walking
 						["questID"] = 13801,
 						["qg"] = 12724,	-- Pixel
@@ -524,7 +551,8 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 13803,	-- Blood of the Weak
 					},
-					qa(13935, {	-- Defend the Tree!
+					{	-- Defend the Tree!
+						["questID"] = 13935,
 						["groups"] = {
 							i(56670),	-- Raynewood Shield
 							i(56671),	-- Shadumbra's Wrath
@@ -532,12 +560,15 @@ _.Zones =
 							i(131321),	-- Shadumbra's Might
 						},
 						["qg"] = 34377,	-- Halannia
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 13928,	-- Recover the Fallen
-					}),
-					qa(13623, {	-- Delivery for Orendil
+					},
+					{	-- Delivery for Orendil
+						["questID"] = 13623,
 						["qg"] = 33204,	-- Evenar Stillwhisper
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 26473,	-- Bathran's Hair
-					}),
+					},
 					{	-- Demon Duty
 						["questID"] = 13806,
 						["qg"] = 11820,	-- Locke Okarr
@@ -550,9 +581,11 @@ _.Zones =
 						["coord"] = { 73.1, 60.1 },
 						["races"] = HORDE_ONLY,
 					},
-					qa(26444, {	-- Destroy the Legion
+					{	-- Destroy the Legion
+						["questID"] = 26444,
 						["qg"] = 17303,	-- Vindicator Vedaar
-					}),
+						["races"] = ALLIANCE_ONLY,
+					},
 					{	-- Diabolical Plans
 						["itemID"] = 23798,
 						["questID"] = 26447,	-- Diabolical Plans
@@ -563,38 +596,48 @@ _.Zones =
 						},
 						["races"] = HORDE_ONLY,
 					},
-					i(23777, {	-- Diabolical Plans
-						qa(26443, {	-- Diabolical Plans
-							["qgs"] = {
-								11697,	-- Mannoroc Lasher
-								6115,	-- Roaming Felguard
-								6073,	-- Searing Felguard
-							},
-						}),
-					}),
-					qa(25613, {	-- Do Yourself a Favor
+					{	-- Diabolical Plans
+						["itemID"] = 23777,
+						["questID"] = 26443,	-- Diabolical Plans
+						["qgs"] = {
+							11697,	-- Mannoroc Lasher
+							6115,	-- Roaming Felguard
+							6073,	-- Searing Felguard
+						},
+						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- Do Yourself a Favor
+						["questID"] = 25613,
 						["qg"] = 40894,	-- Gnombus the X-Terminator
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
 							13913,	-- They Took Our Gnomes
 							25607,	-- Ze Gnomecorder
 						},
-					}),
-					qa(13594, {	-- Don't Forget the Horde
+					},
+					{	-- Don't Forget the Horde
+						["questID"] = 13594,
 						["qg"] = 33187,	-- Sentinel Shyela
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
 							26408,	-- Ashes in Ashenvale
 							28492,	-- Hero's Call: Ashenvale!
 						},
-					}),
-					qa(26476, {	-- Dryad Delivery
+					},
+					{	-- Dryad Delivery
+						["questID"] = 26476,
 						["qg"] = 3691,	-- Raene Wolfrunner
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 26475,	-- Elune's Tear
-					}),
-					qa(26475, {	-- Elune's Tear
+					},
+					{	-- Elune's Tear
+						["questID"] = 26475,
 						["qg"] = 3894,	-- Pelturas Whitemoon
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 26474,	-- Orendil's Cure
-					}),
-					qa(13698, {	-- Explosives Shredding
+					},
+					{	-- Explosives Shredding
+						["questID"] = 13698,
 						["groups"] = {
 							i(56646),	-- Shredder Blade
 							i(56647),	-- Powder Burn Vest
@@ -603,26 +646,33 @@ _.Zones =
 							i(156957),	-- Shredder Piston
 						},
 						["qg"] = 17287,	-- Sentinel Luciel Starwhisper
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 26457,	-- Agents of Destruction
-					}),
-					qa(25621, {	-- Field Test: Gnomecorder
+					},
+					{	-- Field Test: Gnomecorder
+						["questID"] = 25621,
 						["qg"] = 40895,	-- Professor Xakxak Gyromate
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 25615,	-- Kalen Trueshot
-					}),
-					qa(26463, {	-- Finding Teronis
+					},
+					{	-- Finding Teronis
+						["questID"] = 26463,
 						["qg"] = 3847,	-- Orendil Broadleaf
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 13623,	-- Evenar Stillwhisper
-					}),
+					},
 					{	-- Freedom to Ruul
 						["questID"] = 6482,
 						["qg"] = 12818,	-- Ruul Snowhoof
 						["coord"] = { 41.4, 34.6 },
 						["races"] = HORDE_ONLY,
 					},
-					qa(13877, {	-- Go With The Flow
+					{	-- Go With The Flow
+						["questID"] = 13877,
 						["qg"] = 34239,	-- Hephaestus Pilgrim
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 13874,	-- A Not-So-Charmed Life
-					}),
+					},
 					{	-- Gurtar's Request
 						["questID"] = 13875,
 						["groups"] = {
@@ -636,39 +686,51 @@ _.Zones =
 						["coord"] = { 89.5, 48.6 },
 						["sourceQuest"] = 13873,	-- Sheelah's Last Wish
 					},
-					qa(13921, {	-- He Who Would Be Forgiven
-						["sourceQuest"] = 13919,	-- A Trip to the Moonwell
+					{	-- He Who Would Be Forgiven
+						["questID"] = 13921,
+						["races"] = ALLIANCE_ONLY,
 						["description"] = "This quest is auto given to you once completing A Trip To The Moonwell.",
-					}),
-					qa(14018, {	-- He Who Would Be Forgiven
-						["qg"] = 3894,	-- Pelturas Whitemoon
 						["sourceQuest"] = 13919,	-- A Trip to the Moonwell
+					},
+					{	-- He Who Would Be Forgiven
+						["questID"] = 14018,
+						["qg"] = 3894,	-- Pelturas Whitemoon
+						["races"] = ALLIANCE_ONLY,
 						["description"] = "You can pick this quest up if you abandon the quest by the same name.",
-					}),
-					qa(25616, {	-- Hellscream's Legacy
+						["sourceQuest"] = 13919,	-- A Trip to the Moonwell
+					},
+					{	-- Hellscream's Legacy
+						["questID"] = 25616,
 						["qg"] = 34354,	-- Huntress Jalin
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 25615,	-- Return to Stardust
-					}),
-					qa(13982, {	-- In a Bind
+					},
+					{	-- In a Bind
+						["questID"] = 13982,
 						["qg"] = 3698,	-- Bolyun
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 13976,	-- Three Fiends of the Forest
-					}),
-					qa(13922, {	-- In the Hands of the Perverse
+					},
+					{	-- In the Hands of the Perverse
+						["questID"] = 13922,
 						["qg"] = 34335,	-- Avrus Illwhisper
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
 							13921,	-- He Who Would Be Forgiven
 							14018,	-- He Who Would Be Forgiven
 						},
-					}),
-					qa(26472, {	-- Insane Druids
+					},
+					{	-- Insane Druids
+						["questID"] = 26472,
 						["groups"] = {
 							i(5813),	-- Emil's Brand
 							i(156959),	-- Emil's Staff
 						},
 						["qg"] = 33777,	-- Gaivan Shadewalker
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 13792,	-- The Shadewalker
-					}),
-					{ -- Je'neu of the Earthen Ring
+					},
+					{	-- Je'neu of the Earthen Ring
 						["questID"] = 824,
 						["groups"] = {
 							i(16659),	-- Deftkin Belt
@@ -681,14 +743,16 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 1918, -- Befouled Water Globe
 					},
-					qa(13989, {	-- King of the Foulweald
+					{	-- King of the Foulweald
+						["questID"] = 13989,
 						["groups"] = {
 							i(56706),	-- Greenpaw Belt
 							i(56707),	-- Band of Perserverence
 						},
 						["qg"] = 3897,	-- Krolg
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 26480,	-- Dartol's Rod
-					}),
+					},
 					{ 	-- King of the Foulweald
 						["questID"] = 6621,
 						["groups"] = {
@@ -701,9 +765,11 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 13967,	-- Thinning the... Heard?
 					},
-					qa(13602, {	-- Naga of the Strand
+					{	-- Naga of the Strand
+						["questID"] = 13602,
 						["qg"] = 3845,	-- Shindrell Swiftfire
-					}),
+						["races"] = ALLIANCE_ONLY,
+					},
 					{	-- Never Again!
 						["questID"] = 26449,
 						["groups"] = {
@@ -716,23 +782,30 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 26447,	-- Diabolical Plans
 					},
-					qa(26445, {	-- Never Again!
+					{	-- Never Again!
+						["questID"] = 26445,
 						["groups"] = {
 							i(24119),	-- Band of Argus
 							i(24120),	-- Seal of Argus
 							i(24118),	-- Signet of Argus
 						},
 						["qg"] = 17303,	-- Vindicator Vedaar
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 26443,	-- Diabolical Plans
-					}),
-					qa(13595, {	-- Of Their Own Design
+					},
+					{	-- Of Their Own Design
+						["questID"] = 13595,
 						["qg"] = 33182,	-- Bathran
-					}),
-					qa(26474, {	-- Orendil's Cure
+						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- Orendil's Cure
+						["questID"] = 26474,
 						["qg"] = 3847,	-- Orendil Broadleaf
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 13642,	-- Bathed in Light
-					}),
-					qa(26478, {	-- Playing Possum
+					},
+					{	-- Playing Possum
+						["questID"] = 26478,
 						["groups"] = {
 							i(56664),	-- Shael'dryn's Bracers
 							i(56665),	-- Possumfoot Boots
@@ -740,30 +813,44 @@ _.Zones =
 							i(131534),	-- Possumfoot Treads
 						},
 						["qg"] = 3916,	-- Shael'dryn
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 26477,	-- Search the Bole
-					}),
-					qa(13632, {	-- Rear Guard Duty (No Prereq) 
+					},
+					{	-- Rear Guard Duty (No Prereq)
+						["questID"] = 13632,
 						["qg"] = 11219,	-- Liladris Moonriver
-					}),
-					qa(26838, {	-- Rebels Without a Clue
+						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- Rebels Without a Clue
+						["questID"] = 26838,
 						["qg"] = 3885,	-- Sentinel Velene Starstrike
+						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
-					}),
-					qa(26446, {	-- Reclaiming Felfire Hill
+					},
+					{	-- Reclaiming Felfire Hill
+						["questID"] = 26446,
 						["qg"] = 17310,	-- Gnarl
-					}),
-					qa(13928, {	-- Recover the Fallen
+						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- Recover the Fallen
+						["questID"] = 13928,
 						["qg"] = 3880,	-- Sentinel Melyria Frostshadow
-					}),
-					qa(13869, {	-- Recover the Remains
+						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- Recover the Remains
+						["questID"] = 13869,
 						["qg"] = 17310,	-- Gnarl
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 26454,	-- A Shameful Waste
-					}),
-					qa(26456, {	-- Report from the Northern Front
+					},
+					{	-- Report from the Northern Front
+						["questID"] = 26456,
 						["qg"] = 3880,	-- Sentinel Melyria Frostshadow
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 13935,	-- Defend the Tree!
-					}),
-					qa(13626, {	-- Respect for the Fallen
+					},
+					{	-- Respect for the Fallen
+						["questID"] = 13626,
 						["groups"] = {
 							i(56630),	-- Delgren's Leggings
 							i(56631),	-- Onaeya's Gloves
@@ -771,13 +858,17 @@ _.Zones =
 							i(131296),	-- Feero's Ringmail Grips
 						},
 						["qg"] = 11806,	-- Sentinel Onaeya
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 13624,	-- A Squad of Your Own
-					}),
-					qa(26470, {	-- Retaking Mystral Lake
+					},
+					{	-- Retaking Mystral Lake
+						["questID"] = 26470,
 						["qg"] = 3885,	-- Sentinel Velene Starstrike
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 13964,	-- To the Spire
-					}),
-					qa(13853, {	-- Return Fire
+					},
+					{	-- Return Fire
+						["questID"] = 13853,
 						["groups"] = {
 							i(56673),	-- Fiery Loop
 							i(56674),	-- Thenysil's Vest
@@ -785,19 +876,24 @@ _.Zones =
 							i(131306),	-- Glaivethrower Expert's Chestpiece
 						},
 						["qg"] = 4079,	-- Sentinel Thenysil
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 13849,	-- Astranaar's Burning!
-					}),
-					qa(26479, {	-- Return to Raene
+					},
+					{	-- Return to Raene
+						["questID"] = 26479,
 						["qg"] = 3916,	-- Raene Wolfrunner
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 26478,	-- Playing Possum
-					}),
-					qa(26466, {	-- Ruuzel
+					},
+					{	-- Ruuzel
+						["questID"] = 26466,
 						["groups"] = {
 							i(5812),	-- Robes of Antiquity
 						},
 						["qg"] = 3846,	-- Talen
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 26465,	-- The Ancient Statuettes
-					}),
+					},
 					{	-- Satyr Horns
 						["questID"] = 6441,
 						["qg"] = 12724,	-- Pixel
@@ -805,26 +901,36 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 26449,	-- Never Again!
 					},
-					qa(26469, {	-- Satyr Slaying!
+					{	-- Satyr Slaying!
+						["questID"] = 26469,
 						["qg"] = 3901,	-- Illiyana
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 26468,	-- The Branch of Cenarius
-					}),
-					qa(26477, {	-- Search the Bole
+					},
+					{	-- Search the Bole
+						["questID"] = 26477,
 						["qg"] = 3916,	-- Shael'dryn
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 26476,	-- Dryad Delivery
-					}),
-					qa(7865, {	-- Sentinel Advanced Care Package
+					},
+					{	-- Sentinel Advanced Care Package
+						["questID"] = 7865,
 						["qg"] = 14753,	-- Illiyana Moonblaze
+						["races"] = ALLIANCE_ONLY,
 						["description"] = "Requires Friendly Reputation with Silverwing Sentinels.",
-					}),
-					qa(7863, {	-- Sentinel Basic Care Package
+					},
+					{	-- Sentinel Basic Care Package
+						["questID"] = 7863,
 						["qg"] = 14753,	-- Illiyana Moonblaze
+						["races"] = ALLIANCE_ONLY,
 						["description"] = "Requires Friendly Reputation with Silverwing Sentinels.",
-					}),
-					qa(7864, {	-- Sentinel Standard Care Package
+					},
+					{	-- Sentinel Standard Care Package
+						["questID"] = 7864,
 						["qg"] = 14753,	-- Illiyana Moonblaze
+						["races"] = ALLIANCE_ONLY,
 						["description"] = "Requires Friendly Reputation with Silverwing Sentinels.",
-					}),
+					},
 					{	-- Shadumbra's Head
 						["itemID"] = 16304,
 						["questID"] = 24,	-- Shadumbra's Head
@@ -853,11 +959,14 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 13958,	-- Condition Critical!
 					},
-					qa(13683, {	-- Stopping the Rituals
+					{	-- Stopping the Rituals
+						["questID"] = 13683,
 						["qg"] = 33727,	-- Anchorite Buurq
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 26468,	-- The Branch of Cenarius
-					}),
-					qa(13644, {	-- That Which has Risen
+					},
+					{	-- That Which has Risen
+						["questID"] = 13644,
 						["groups"] = {
 							i(56652),	-- Ablution Slippers
 							i(56653),	-- Somber Treads
@@ -865,20 +974,26 @@ _.Zones =
 							i(131298),	-- Somber Boots
 						},
 						["qg"] = 33443,	-- Keeper Heartwise
-					}),
-					qa(26465, {	-- The Ancient Statuettes
+						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- The Ancient Statuettes
+						["questID"] = 26465,
 						["qg"] = 3846,	-- Talen
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 13617,	-- West to the Strand
-					}),
-					qa(26468, {	-- The Branch of Cenarius
+					},
+					{	-- The Branch of Cenarius
+						["questID"] = 26468,
 						["groups"] = {
 							i(5820),	-- Faerie Mantle
 							i(11229),	-- Brightplate Girdle
 						},
 						["qg"] = 3920,	-- Anilia
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 26467,	-- Vile Satyr! Dryads in Danger!
-					}),
-					qa(13796, {	-- The Forest Heart
+					},
+					{	-- The Forest Heart
+						["questID"] = 13796,
 						["groups"] = {
 							i(56636),	-- Forest Grace Mantle
 							i(56637),	-- Severed Druid's Leggings
@@ -886,9 +1001,11 @@ _.Zones =
 							i(131303),	-- Barkburn Legguards
 						},
 						["qg"] = 33777,	-- Gaivan Shadewalker
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 13792,	-- The Shadewalker
-					}),
-					qa(13979, {	-- The Goblin Braintrust
+					},
+					{	-- The Goblin Braintrust
+						["questID"] = 13979,
 						["groups"] = {
 							i(56703),	-- Jalin's Recompense
 							i(56704),	-- Braintrust Vest
@@ -896,8 +1013,10 @@ _.Zones =
 							i(131326),	-- Bombgineer Blasting Vest
 						},
 						["qg"] = 34354,	-- Huntress Jalin
-					}),
-					qa(13987, {	-- The Last Stand
+						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- The Last Stand
+						["questID"] = 13987,
 						["groups"] = {
 							i(56689),	-- Adansonian Cloak
 							i(56690),	-- Unringed Bands
@@ -905,12 +1024,15 @@ _.Zones =
 							i(131327),	-- Sheltered Aessina Wristguards
 						},
 						["qg"] = 34604,	-- Big Baobob
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 13985,	-- Clear the Shrine
-					}),
-					qa(26455, {	-- The Lost Chalice
+					},
+					{	-- The Lost Chalice
+						["questID"] = 26455,
 						["qg"] = 3848,	-- Kayneth Stillwind
-					}),
-					qa(26464, {	-- The Lost Gem
+					},
+					{	-- The Lost Gem
+						["questID"] = 26464,
 						["groups"] = {
 							i(56624),	-- Falathim-Washed Robes
 							i(56625),	-- Broadleaf Mantle
@@ -918,37 +1040,52 @@ _.Zones =
 							i(131533),	-- Broadleaf Spaulders
 						},
 						["qg"] = 3891,	-- Teronis' Corpse
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 26463,	-- Finding Teronis
-					}),
-					qa(13630, {	-- The Reason Why
+					},
+					{	-- The Reason Why
+						["questID"] = 13630,
 						["qg"] = 33276,	-- Moon Priestess Maestra
-					}),
-					qa(13792, {	-- The Shadewalker
+						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- The Shadewalker
+						["questID"] = 13792,
 						["qg"] = 17310,	-- Gnarl
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 13766,	-- Closure is Only Natural
-					}),
+					},
 					{	-- The Tipping Point
 						["questID"] = 29310,
 						["qg"] = 11801,	-- Rabine Saturna
 						["lvl"] = 85,
 						["sourceQuest"] = 29303,	-- Tragedy and Family
 					},
-					o(195134, {	-- The Bomb
-						qa(13981),	-- They Set Them Up The Bomb!
-					}),
-					qa(13913, {	-- They Took Our Gnomes
+					{	-- The Bomb
+						["objectID"] = 195134,
+						["groups"] = {
+							{	-- They Set Them Up The Bomb!
+								["questID"] = 13981,
+								["races"] = ALLIANCE_ONLY,
+							},
+						},
+					},
+					{	-- They Took Our Gnomes
+						["questID"] = 13913,
 						["qg"] = 34354,	-- Huntress Jalin
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 28539,	-- Hero's Call: Stonetalon Mountains!
-					}),
+					},
 					{	-- Thinning the... Herd?
 						["questID"] = 13967,
 						["qg"] = 12696,	-- Senani Thunderheart
 						["races"] = HORDE_ONLY,
 					},
-					qa(13976, {	-- Three Friends of the Forest
+					{	-- Three Friends of the Forest
+						["questID"] = 13976,
 						["qg"] = 24739,	-- Benjari Edune
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 13965,	-- Check in on the Edunes
-					}),
+					},
 					{	-- To Hellscream's Watch
 						["questID"] = 13923,
 						["qg"] = 34122,	-- Commander Grimfang
@@ -957,10 +1094,12 @@ _.Zones =
 						["isBreadcrumb"] = true,
 						["sourceQuest"] = 13920,	-- Before You Go...
 					},
-					qa(13645, {	-- To Raene Wolfrunner
+					{	-- To Raene Wolfrunner
+						["questID"] = 13645,
 						["qg"] = 3847,	-- Orendil Broadleaf
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 26464,	-- The Lost Gem
-					}),
+					},
 					{	-- To The Ramparts!
 						["questID"] = 13866,
 						["qg"] = 34195,	-- Kulg Gorespatter
@@ -969,19 +1108,23 @@ _.Zones =
 						["sourceQuest"] = 24463,	-- Probing into Ashenvale
 						["isBreadcrumb"] = true,
 					},
-					qa(13964, {	-- To the Spire
+					{	-- To the Spire
+						["questID"] = 13964,
 						["qg"] = 4079,	-- Sentinel Thenysil
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 26478,	-- Playing Possum
 						["isBreadcrumb"] = true,
-					}),
-					qa(13876, {	-- Too Far Gone
+					},
+					{	-- Too Far Gone
+						["questID"] = 13876,
 						["groups"] = {
 							i(56622),	-- Thistle Ring
 							i(56623),	-- Zoram'gar Cloak
 						},
 						["qg"] = 34251,	-- Vear Darksnout
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 13868,	-- Corrupting Influence?
-					}),
+					},
 					{ 	-- Torek's Assault
 						["questID"] = 6544,
 						["groups"] = {
@@ -999,7 +1142,24 @@ _.Zones =
 						["coord"] = { 38.8, 42.3 },
 						["races"] = HORDE_ONLY,
 					},
-					qa(26482, {	-- True Power of the Rod
+					{	-- Troll Charm
+						["itemID"] = 46128,
+						["groups"] = {
+							{
+								["questID"] = 13868,	-- Corrupting Influence?
+								["races"] = ALLIANCE_ONLY,
+							},
+						},
+						["crs"] = {
+							3925,	-- Thistlefur Avenger
+							3924,	-- Thistlefur Shaman
+							3926,	-- Thistlefur Pathfinder
+							3921,	-- Thistlefur Ursa
+							3922,	-- Thistlefur Totemic
+						},
+					},
+					{	-- True Power of the Rod
+						["questID"] = 26482,
 						["groups"] = {
 							i(56694),	-- Silverwind Bracers
 							i(56695),	-- Wolfrunner Boots
@@ -1007,8 +1167,9 @@ _.Zones =
 							i(131535),	-- Wolfrunner Wristbands
 						},
 						["qg"] = 3897,	-- Krolg
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 26481,	-- A New Adornment
-					}),
+					},
 					{	-- Ursangous' Paw
 						["itemID"] = 16303,
 						["questID"] = 23,	-- Ursangous
@@ -1017,10 +1178,13 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["description"] = "Can be found roaming the woods west of Silverwind Refuge.",
 					},
-					qa(26467, {	-- Vile Satyr! Dryads in Danger!
+					{	-- Vile Satyr! Dryads in Danger!
+						["questID"] = 26467,
 						["qg"] = 3901,	-- Illiyana
-					}),
-					qa(13886, {	-- Vortex
+						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- Vortex
+						["questID"] = 13886,
 						["groups"] = {
 							i(56683),	-- Blossom of the Earthen Ring
 							i(56684),	-- Subduer's Gloves
@@ -1028,11 +1192,12 @@ _.Zones =
 							i(131312),	-- Subduer's Gauntlets
 						},
 						["qg"] = 34289,	-- The Vortex
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
 							13880,	-- Hot Lava
 							13884,	-- Put Out The Fire
 						},
-					}),
+					},
 					{	-- We're Here to Do One Thing, Maybe Two...
 						["questID"] = 25945,
 						["qg"] = 41678,	-- Blood Guard Aldo Rockrain
@@ -1046,18 +1211,24 @@ _.Zones =
 						["coord"] = { 49.4, 67.1 },
 						["races"] = HORDE_ONLY,
 					},
-					qa(13617, {	-- West to the Strand
+					{	-- West to the Strand
+						["questID"] = 13617,
 						["qg"] = 33187,	-- Sentinel Shyela
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 13594,	-- Don't Forget the Horde
 						["isBreadcrumb"] = true,
-					}),
-					qa(13872, {	-- Worgen Wisdom
+					},
+					{	-- Worgen Wisdom
+						["questID"] = 13872,
 						["qg"] = 3691,	-- Raene Wolfrunner
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 13868,	-- Corrupting Influence?
-					}),
-					qa(25607, {	-- Ze Gnomecorder
+					},
+					{	-- Ze Gnomecorder
+						["questID"] = 25607,
 						["qg"] = 40895,	-- Professor Xakxak Gyromate
-					}),
+						["races"] = ALLIANCE_ONLY,
+					},
 				}),
 			},
 		}),
