@@ -96,8 +96,9 @@ _.Instances =
 					}),
 					n(  9217, {			-- Spirestone Lord Magus (Rare)
 						["groups"] = {	
-							dr(23, i(13261)),	-- Globe of D'sak
-							dr(23, i(13282)),	-- Ogreseer Tower Boots
+							i(13261),	-- Globe of D'sak
+							i(13282),	-- Ogreseer Tower Boots
+							i(13283),	-- Magus Ring
 						},
 						["description"] = "This is a rare that is not always present.",
 					}),

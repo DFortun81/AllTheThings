@@ -461,6 +461,13 @@ _.NeverImplemented =
 			un(1, i(13811)),	-- Necklace of the Dawn
 			un(1, i(18023)),	-- Blood Ruby Pendant
 		}),
+		filter(52, {	-- Finger
+			un(1, i(4988)),		-- Burning Obsidian Band
+			un(1, i(17000)),	-- Band of the Wraith
+			un(1, i(17108)),	-- Mark of Deflection
+			un(1, i(13812)),	-- Ring of the Dawn
+			un(1, i(19065)),	-- Emerald Circle
+		}),
 	}),
 	n(-494, { -- Misc
 		un(1, i(130186)),	-- Intern Items - BJI

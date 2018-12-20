@@ -9,20 +9,77 @@ _.Instances =
 			inst(233, { 	-- Razorfen Downs
 				["groups"] = {
 					n(-17, {			-- Quests 
-						q(33513, {	-- Blackthorn's Lieutenants
-							["groups"] = {
-							},
+						{	-- Blackthorn's Lieutenants
+							["questID"] = 33513,	-- Blackthorn's Lieutenants
 							["qgs"] = { 74367, 74888 },	-- Koristrasza (same NPC, different IDs)
-						}),
-						q(33514, {	-- The Ritual
-							["groups"] = {
-								i(65996),	-- Belt of Tyrannic Rule
-								i(65975),	-- Chestguard of Redemption
-								i(65926),	-- Coldbringer's Leggings
-								i(65951),	-- Razorfen Spaulders
+						},
+						{	-- Bring the End
+							["questID"] = 3341,	-- Bring the End
+							["qg"] = 2308,	-- Andrew Brownell
+							["races"] = HORDE_ONLY,
+							["u"] = 40,
+							["g"] = {
+								{	-- Vanquisher's Sword
+									["itemID"] = 10823,	-- Vanquisher's Sword
+									["u"] = 2,
+								},
+								{	-- Amberglow Talisman
+									["itemID"] = 10824,	-- Amberglow Talisman
+									["u"] = 2,
+								},
 							},
+						},
+						{	-- Bring the Light
+							["questID"] = 3636,	-- Bring the Light
+							["qg"] = 1284,	-- Archbishop Benedictus
+							["races"] = ALLIANCE_ONLY,
+							["u"] = 40,
+							["g"] = {
+								{	-- Vanquisher's Sword
+									["itemID"] = 10823,	-- Vanquisher's Sword
+									["u"] = 2,
+								},
+								{	-- Amberglow Talisman
+									["itemID"] = 10824,	-- Amberglow Talisman
+									["u"] = 2,
+								},
+							},
+						},
+						{	-- Extinguishing the Idol
+							["questID"] = 27022,	-- Extinguishing the Idol
+							["qg"] = 8516,	-- Belnistrasz
+							["sourceQuests"] = { 27019 },	-- Scourge of the Downs
+							["u"] = 40,
+							["g"] = {
+								{	-- Dragonclaw Ring
+									["itemID"] = 10710,	-- Dragonclaw Ring
+									["u"] = 2,
+								},
+							},
+						},
+						{	-- Scourge of the Downs
+							["questID"] = 27019,	-- Scourge of the Downs
+							["qg"] = 8516,	-- Belnistrasz
+							["u"] = 40,
+						},
+						{	-- The Ritual
+							["questID"] = 33514,	-- The Ritual
 							["qgs"] = { 74367, 74888 },	-- Koristrasza (same NPC, different IDs)							
-						}),
+							["g"] = {
+								{	-- Belt of Tyrannic Rule
+									["itemID"] = 65996,	-- Belt of Tyrannic Rule
+								},
+								{	-- Chestguard of Redemption
+									["itemID"] = 65975,	-- Chestguard of Redemption
+								},
+								{	-- Coldbringer's Leggings
+									["itemID"] = 65926,	-- Coldbringer's Leggings
+								},
+								{	-- Razorfen Spaulders
+									["itemID"] = 65951,	-- Razorfen Spaulders
+								},
+							},
+						},
 					}),
 					n(0, {				-- Zone Drop
 						i(10573, {	-- Boneslasher
@@ -135,33 +192,20 @@ _.Instances =
 						i(10762),	-- Robes of the Lich
 						i(10765),	-- Bonefingers
 					})),
-					n(-40, {	-- Legacy
-						["groups"] = {
-							h({
-								["questID"] = 3341,	-- Bring the End
-								["qg"] = 2308,	-- Andrew Brownell
+					{	-- Lady Falther'ess
+						["npcID"] = 14686,	-- Lady Falther'ess
+						["u"] = 43,
+						["g"] = {
+							{	-- Lady Falther'ess' Finger
+								["itemID"] = 23177,	-- Lady Falther'ess' Finger
 								["u"] = 2,
-								["groups"] = {
-									i(10823),	-- Vanquisher's Sword
-									i(10824),	-- Amberglow Talisman
-								},
-							}),
-							a({
-								["questID"] = 3636,	-- Bring the Light
-								["qg"] = 1284,	-- Archbishop Benedictus
+							},
+							{	-- Mantle of Lady Falther'ess
+								["itemID"] = 23178,	-- Mantle of Lady Falther'ess
 								["u"] = 2,
-								["groups"] = {
-									i(10823),	-- Vanquisher's Sword
-									i(10824),	-- Amberglow Talisman
-								},
-							}),
-							n(14686, {	-- Lady Falther'ess
-								un(2, i(23177)),	-- Lady Falther'ess' Finger
-								un(2, i(23178)),	-- Mantle of Lady Falther'ess
-							}),
+							},
 						},
-						["u"] = 2,
-					}),
+					},
 				},
 				["lvl"] = 35,
 				["mapID"] = 300

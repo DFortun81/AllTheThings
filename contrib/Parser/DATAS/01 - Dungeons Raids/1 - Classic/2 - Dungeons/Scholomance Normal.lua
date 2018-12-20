@@ -208,6 +208,7 @@ _.Instances =
 								un(2, i(18759)),	-- Malicious Axe
 								un(2, i(18761)),	-- Oblivion's Touch
 								un(2, i(18758)),	-- Specter's Blade
+								un(2, i(18760)),	-- Necromantic Band
 							}),
 							n(10433, {	-- Marduk Blackpool
 								un(2, i(18692)),	-- Death Knight Sabatons
@@ -270,6 +271,7 @@ _.Instances =
 								un(2, i(14633)),	-- Necropile Mantle
 								un(2, i(14626)),	-- Necropile Robe
 								un(9, i(14617)),	-- Sawbones Shirt
+								un(2, i(18684)),	-- Dimly Opalescent Ring
 							}),
 							n(10901, {	-- Lorekeeper Polkelt
 								un(2, i(18680)),	-- Ancient Bone Bow
@@ -297,6 +299,7 @@ _.Instances =
 								un(2, i(14632)),	-- Necropile Leggings
 								un(2, i(14633)),	-- Necropile Mantle
 								un(2, i(14626)),	-- Necropile Robe
+								un(2, i(18684)),	-- Dimly Opalescent Ring
 							}),
 							n(10505, {	-- Instructor Malicia
 								un(2, i(18680)),	-- Ancient Bone Bow
@@ -325,6 +328,7 @@ _.Instances =
 								un(2, i(14633)),	-- Necropile Mantle
 								un(2, i(14626)),	-- Necropile Robe
 								un(7, i(16710)),	-- Shadowcraft Bracers
+								un(2, i(18684)),	-- Dimly Opalescent Ring
 							}),
 							n(10502, {	-- Lady Illucia Barov
 								un(2, i(18680)),	-- Ancient Bone Bow
@@ -351,6 +355,7 @@ _.Instances =
 								un(2, i(14632)),	-- Necropile Leggings
 								un(2, i(14633)),	-- Necropile Mantle
 								un(2, i(14626)),	-- Necropile Robe
+								un(2, i(18684)),	-- Dimly Opalescent Ring
 							}),
 							n(10504, {	-- Lord Alexi Barov
 								un(2, i(18680)),	-- Ancient Bone Bow
@@ -378,6 +383,7 @@ _.Instances =
 								un(2, i(14632)),	-- Necropile Leggings
 								un(2, i(14633)),	-- Necropile Mantle
 								un(2, i(14626)),	-- Necropile Robe
+								un(2, i(18684)),	-- Dimly Opalescent Ring
 							}),
 							n(10507, {	-- The Ravenian
 								un(2, i(18680)),	-- Ancient Bone Bow
@@ -405,6 +411,7 @@ _.Instances =
 								un(2, i(14633)),	-- Necropile Mantle
 								un(2, i(14626)),	-- Necropile Robe
 								un(7, i(16716)),	-- Wildheart Belt
+								un(2, i(18684)),	-- Dimly Opalescent Ring
 							}),
 							n(1853, {	-- Darkmaster Gandling
 								un(7, i(14514)),	-- Pattern: Robe of the Void
@@ -424,6 +431,7 @@ _.Instances =
 								un(2, i(13951)),	-- Vigorsteel Vambraces
 								un(2, i(16720)),	-- Wildheart Cowl
 								un(2, i(13964)),	-- Witchblade
+								un(2, i(22433)),	-- Don Mauricio's Band of Domination
 							}),
 						},
 					}),

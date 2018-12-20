@@ -474,9 +474,10 @@ _.Instances =
 									}),
 									o(161495, {	-- Secret Safe
 										["groups"] = {	
-											i(22256), -- Mana Shaping Handwraps
-											i(22205), -- Black Steel Bindings
-											i(22254), -- Wand of Eternal Light
+											i(22256),	-- Mana Shaping Handwraps
+											i(22205), 	-- Black Steel Bindings
+											i(22254), 	-- Wand of Eternal Light
+											i(22255),	-- Magma Forged Band
 										},
 										["description"] = "This lootable chest spawns after defeating Watchman Doomgrip.",
 										["modelID"] = 34286,

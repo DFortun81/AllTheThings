@@ -65,9 +65,17 @@ _.Zones =
 						["isBreadcrumb"] = true,	-- for Triage
 						["requireSkill"] = 129,	-- First Aid
 					}),
-					qg(6826, qa( 2948, {	-- Gnome Improvement
+					{	-- Gnome Improvement
+						["questID"] = 2948,	-- Gnome Improvement
+						["qg"] = 6826,	-- Talvash del Kissel
 						["sourceQuests"] = { 2947 },	-- Return of the Ring
-					})),
+						["races"] = ALLIANCE_ONLY,
+						["g"] = {
+							{	-- Talvash's Gold Ring
+								["itemID"] = 9538,	-- Talvash's Gold Ring
+							},
+						},
+					},
 					qa(26118, { -- Seize the Ambassador
 						["g"] = {
 							i(57583),	-- The Slaghammer

@@ -402,9 +402,17 @@ Legacy				q( 1436),	-- Alliance Relations
 						["requireSkill"] = 755,	-- Jewelcrafting
 					},
 					--qg(43239, q(26556, { ["requireSkill"] = 129 })),	-- No Dumping Allowed
-					qg(3412, q(2950, {	-- Nogg's Ring Redo
+					{	-- Nogg's Ring Redo
+						["questID"] = 2950,	-- Nogg's Ring Redo
+						["qg"] = 3412, -- Nogg
 						["sourceQuests"] = { 2949 },	-- Return of the Ring
-					})),
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							{	-- Nogg's Gold Ring
+								["itemID"] = 9588,	-- Nogg's Gold Ring
+							},
+						},
+					},
 --[[
 					qg(43062, q(26417)),	-- Northern Stranglethorn: The Fallen Empire
 --]]

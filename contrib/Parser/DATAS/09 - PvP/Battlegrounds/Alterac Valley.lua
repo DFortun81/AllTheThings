@@ -33,6 +33,10 @@ _.PVP =
 							["itemID"] = 19113,	-- Yeti Hide Bracers
 							["u"] = 2,
 						},
+						{	-- Deep Rooted Ring
+							["itemID"] = 19109,	-- Deep Rooted Ring
+							["u"] = 2,
+						},
 					},
 				}),
 				n(13256, { -- Lokholar the Ice Lord
@@ -55,6 +59,10 @@ _.PVP =
 						},
 						{	-- Yeti Hide Bracers
 							["itemID"] = 19113,	-- Yeti Hide Bracers
+							["u"] = 2,
+						},
+						{	-- Deep Rooted Ring
+							["itemID"] = 19109,	-- Deep Rooted Ring
 							["u"] = 2,
 						},
 					},

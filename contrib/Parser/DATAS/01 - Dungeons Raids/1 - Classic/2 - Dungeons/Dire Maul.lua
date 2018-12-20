@@ -273,6 +273,7 @@ _.Instances =
 											i(18499),	-- Barrier Shield
 											i(18482),	-- Ogre Toothpick Shooter
 											i(18537),	-- Counterattack Lodestone
+											i(18500),	-- Tarnished Elven Ring
 										},
 										["description"] =  " A full Tribute Run (5 Items) requires no killing of any of bosses besides King Gordok, activating the Frost Trap & fooling Kromcrush with the Ogre Suit, granted by the Goblin near the Trap.",
 									--	["description"] = "You don't need to touch Mol'dar at all. The inner door no longer requires a key. Kreeg and Fengus: just don't kill them. The trap for Slip'kik no longer requires any items at all, just go over and activate it. The goblin requires only the Ogre Tannin from upstairs to give you the suit for fooling Kromcrush. And just don't dps Cho'rush when killing the king. Once you are the king, go and collect your gear from the chest. Don't forget to get the quest off of Kromcrush, which only requires speaking to Mol'dar now. And of course Kreeg's quest for free beer.",

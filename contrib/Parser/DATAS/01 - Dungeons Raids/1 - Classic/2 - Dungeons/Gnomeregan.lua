@@ -15,6 +15,11 @@ _.Instances =
 							["crs"] = {
 								6212,	-- Dark Iron Agent
 							},
+							["g"] = {
+								{	-- Brilliant Gold Ring
+									["itemID"] = 9362,	-- Brilliant Gold Ring
+								},
+							},
 						},
 						{
 							["objectID"] = 142487,	-- The Sparklematic 5200

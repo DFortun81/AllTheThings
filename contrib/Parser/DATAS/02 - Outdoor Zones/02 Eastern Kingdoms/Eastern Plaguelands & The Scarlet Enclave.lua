@@ -702,32 +702,33 @@ _.Zones =
 				}),
 				n(-16, {	-- Rares
 					n(10819, { 	-- Baron Bloodbane
-						dr(39.0, i(9970)),	-- Embossed Plate Leggings
-						dr(02.0, i(7520)),	-- Gossamer Headpiece
-						dr(01.8, i(9933)),	-- Brigade Leggings
-						dr(01.7, i(7468)),	-- Regal Robe
-						dr(01.7, i(9923)),	-- Tracker's Shoulderpads
-						dr(01.6, i(9966)),	-- Embossed Plate Armor
-						dr(01.6, i(7332)),	-- Regal Armor
-						dr(01.4, i(9928)),	-- Brigade Breastplate
-						dr(01.4, i(7522)),	-- Gossamer Boots
-						dr(01.4, i(7525)),	-- Gossamer Bracers
-						dr(01.4, i(7477)),	-- Ranger Tunic
-						dr(01.4, i(9921)),	-- Tracker's Headband
-						dr(01.3, i(7541)),	-- Champion's Gauntlets
-						dr(01.3, i(9912)),	-- Royal Amice
-						dr(01.2, i(7545)),	-- Champion's Bracers
-						dr(01.2, i(9915)),	-- Royal Headband
-						dr(01.2, i(9925)),	-- Tracker's Wristguards
-						dr(01.1, i(7534)),	-- Cabalist Bracers
-						dr(01.1, i(10088)),	-- Gothic Plate Girdle
-						dr(01.1, i(10089)),	-- Gothic Sabatons
-						dr(01.1, i(8120)),	-- Heraldic Cloak
-						dr(01.1, i(9920)),	-- Tracker's Gloves
-						dr(01.1, i(9959)),	-- Warmonger's Cloak
-						dr(01.0, i(9932)),	-- Brigade Circlet
-						dr(01.0, i(7540)),	-- Champion's Helmet
-						dr(01.0, i(9906)),	-- Royal Sash
+						i(9970),	-- Embossed Plate Leggings
+						i(7520),	-- Gossamer Headpiece
+						i(9933),	-- Brigade Leggings
+						i(7468),	-- Regal Robe
+						i(9923),	-- Tracker's Shoulderpads
+						i(9966),	-- Embossed Plate Armor
+						i(7332),	-- Regal Armor
+						i(9928),	-- Brigade Breastplate
+						i(7522),	-- Gossamer Boots
+						i(7525),	-- Gossamer Bracers
+						i(7477),	-- Ranger Tunic
+						i(9921),	-- Tracker's Headband
+						i(7541),	-- Champion's Gauntlets
+						i(9912),	-- Royal Amice
+						i(7545),	-- Champion's Bracers
+						i(9915),	-- Royal Headband
+						i(9925),	-- Tracker's Wristguards
+						i(7534),	-- Cabalist Bracers
+						i(10088),	-- Gothic Plate Girdle
+						i(10089),	-- Gothic Sabatons
+						i(8120),	-- Heraldic Cloak
+						i(9920),	-- Tracker's Gloves
+						i(9959),	-- Warmonger's Cloak
+						i(9932),	-- Brigade Circlet
+						i(7540),	-- Champion's Helmet
+						i(9906),	-- Royal Sash
+						un(7, i(16999)),	-- Royal Seal of Alexis
 					}),
 					n(51042, { 	-- Bleakheart
 						dr(73.0, i(7473)),	-- Regal Mantle
