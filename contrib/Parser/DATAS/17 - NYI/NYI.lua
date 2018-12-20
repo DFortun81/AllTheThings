@@ -404,6 +404,7 @@ _.NeverImplemented =
 		}),
 		n(-322, { -- Cloaks
 			un(1, i(22230)),	-- Frightmaw Hide (Cloak)
+			un(1, i(28045)), -- Cloak of the Demon Stalker
 			un(1, i(157751)), -- Drape of New Beginnings
 			un(1, i(134693)), -- Enveloping Cape
 			un(1, i(134699)), -- Enveloping Drape
