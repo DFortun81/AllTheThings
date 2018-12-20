@@ -166,6 +166,13 @@ _.Zones =
 						["races"] = { 6 },	-- Tauren
 						["classes"] = { 2 },	-- Paladin
 					}),
+					{	-- A Way Out
+						["questID"] = 54100,
+						["qg"] = 146654,	-- Lady Sylvanas Windrunner
+						["coord"] = { 48.3, 71.0 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 54099,	-- The High Overlord
+					},
 					q(25264, {	-- Ak'Zeloth
 						["qg"] = 3216,	-- Arnak Fireblade
 						["coord"] = { 58.5, 53.6 },
@@ -534,6 +541,13 @@ Legacy				q( 1436),	-- Alliance Relations
 						["classes"] = { 3 },	-- Hunter
 					}),
 --					q(43472),	-- The Historians (LEGACY - 2016 anniversary)
+					{	-- The High Overlord
+						["questID"] = 54099,
+						["qg"] = 146654,	-- Lady Sylvanas Windrunner
+						["coord"] = { 48.3, 71.1 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 54097,	-- The Dark Lady Calls
+					},
 					qg(39605, q(31013, {	-- The Horde Way
 						["races"] = { 26 },	-- Pandaren
 					})),

@@ -91,6 +91,13 @@ _.Zones =
 					qg(514, qa( 1097)),	-- Elmore's Task
 					qg(261, qa(   37)),	-- Find the Lost Guards
 --]]					
+					{	-- Eastern Escape
+						["questID"] = 54102,
+						["qg"] = 146791,	-- Dark Ranger
+						["coord"] = { 34.5, 63.3 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 54101,	-- On Track
+					},
 					qg(278, qa(   83, { -- Fine Linen Goods
 						i(983),
 						i(57405),
@@ -128,6 +135,13 @@ _.Zones =
 --					q(42568),	-- Preparation (part of Rogue class campaign, not sure where it starts)
 					qg(244, qa(   88)),	-- Princess Must Die!
 --]]					
+					{	-- On Track
+						["questID"] = 54101,
+						["qg"] = 146010,	-- Dark Ranger Lyana
+						["coord"] = { 30.5, 57.6 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 54100,	-- A Way Out
+					},
 					qg(261, qa(   52, { -- Protect the Frontier
 						i(57523),
 						i(57524),

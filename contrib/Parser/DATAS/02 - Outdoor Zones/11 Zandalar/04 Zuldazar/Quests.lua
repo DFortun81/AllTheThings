@@ -495,6 +495,12 @@ _.Zones =
 							["coord"] = { 70.2, 65.0 },
 							["sourceQuests"] = { 49283 },	-- Who Seeks the Seekers? (Horde) - NEEDS VERIFICATION, per wowhead comment.  Also need to make sure Alliance side has no prereqs.
 						}),
+						{	-- The Dark Lady Calls
+							["questID"] = 54097,
+							["qg"] = 146013,	-- Dark Ranger Alina
+							["coord"] = { 58.4, 62.7 },
+							["races"] = HORDE_ONLY,
+						},
 					},
 				}),
 			},

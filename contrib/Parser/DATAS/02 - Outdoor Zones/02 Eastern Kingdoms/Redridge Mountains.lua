@@ -275,6 +275,41 @@ _.Zones =
 							},
 							["collectible"] = false,
 						}),
+						{	-- Corner Crossing
+							["questID"] = 54103,
+							["qg"] = 146806,	-- Dark Ranger Lyana
+							["coord"] = { 11.3, 66.8 },
+							["races"] = HORDE_ONLY,
+							["sourceQuest"] = 54102,	-- Eastern Escape
+						},
+						{	-- Ever Eastward
+							["questID"] = 54105,
+							["qg"] = 146937,	-- Dark Ranger
+							["coord"] = { 29.0, 68.1 },
+							["races"] = HORDE_ONLY,
+							["sourceQuest"] = 54104,	-- Signs of Saurfang
+						},
+						{	-- Grim Tidings
+							["questID"] = 54107,
+							["qg"] = 146012,	-- Zekhan
+							["coord"] = { 81.4, 52.4 },
+							["races"] = HORDE_ONLY,
+							["sourceQuest"] = 54106,	-- Tracking Tipoff
+						},
+						{	-- Signs of Saurfang
+							["questID"] = 54104,
+							["qg"] = 146937,	-- Dark Ranger
+							["coord"] = { 25.9, 39.8 },
+							["races"] = HORDE_ONLY,
+							["sourceQuest"] = 54103,	-- Corner Crossing
+						},
+						{	-- Tracking Tipoff
+							["questID"] = 54106,
+							["qg"] = 147210,	-- Dark Ranger Lyana
+							["coord"] = { 80.6, 46.9 },
+							["races"] = HORDE_ONLY,
+							["sourceQuest"] = 54105,	-- Ever Eastward
+						},
 					}),
 				}),
 				n(-16, {	-- Rares
@@ -398,6 +433,12 @@ _.Zones =
 						un(7, i(3231)),		-- Cutthroat Pauldrons	
 						un(7, i(2058)),		-- Kazon's Maul			
 					}), 
+					n(147222, {	-- Gnollfeaster
+						["groups"] = {
+							i(165722),	-- Redridge Tarantula Egg
+						},
+						["coord"] = { 24.4, 70.9 },
+					}),
 					n(14271, { 	-- Ribchaser
 						dr(09.0, i(6557)),	-- Bard's Boots
 						dr(09.0, i(6539)),	-- Willow Belt

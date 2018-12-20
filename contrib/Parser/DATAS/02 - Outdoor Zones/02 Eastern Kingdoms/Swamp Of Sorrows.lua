@@ -340,6 +340,20 @@ _.Zones =
 								["sourceQuests"] = { 27840,27860 },
 							}),
 						}),
+						{	-- A Warrior's Death
+							["questID"] = 54108,
+							["qg"] = 147297,	-- Zekhan
+							["coord"] = { 79.7, 74.7 },
+							["races"] = HORDE_ONLY,
+							["sourceQuest"] = 54107,	-- Grim Tidings
+						},
+						{	-- Queen's Favor
+							["questID"] = 54109,
+							["qg"] = 146011,	-- Varok Saurfang
+							["coord"] = { 80.8, 78.7 },
+							["races"] = HORDE_ONLY,
+							["sourceQuest"] = 54108,	-- A Warrior's Death
+						},
 					}),
 				}),
 				n(-16,  {	-- Rares	
