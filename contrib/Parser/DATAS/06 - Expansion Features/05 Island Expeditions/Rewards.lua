@@ -15,6 +15,12 @@ _.ExpansionFeatures =
 						i(164367),	-- Plundered Blue Captain's Hat
 						i(164368),	-- Plundered Crimson Captain's hat
 						i(164369),	-- Plundered Pirate Admiral's Bicorne
+						i(166836),	-- Frosthoof Gloves
+						i(166835),	-- Frosthood Waistcord
+						i(166840),	-- Winterscale Spaulders
+						i(166839),	-- Winterscale Waistguard
+						i(166837),	-- Sleetguard Greatbelt
+						i(166838),	-- Sleetguard Warboots
 						-- These seemed to be removed in 8.1
 						--The next four items will be marked as NYI in the event that they are hotfixed or added in the future
 						--and people can report that they are dropping.
