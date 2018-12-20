@@ -149,15 +149,30 @@ _.NeverImplemented =
 				un(1, i(48806)),	-- Garona's Helmet of Conquest
 				un(1, i(48807)),	-- Garona's Legplates of Conquest
 				un(1, i(48808)),	-- Garona's Pauldrons of Conquest
+				un(1, i(7950)),		-- Armor of Thero-Shan
+				un(1, i(7948)),		-- Girdle of Thero-Shan
+				un(1, i(7952)),		-- Boots of Thero-Shan
+				un(1, i(7951)),		-- Hands of Thero-Shan
+				un(1, i(7953)),		-- Mask of Thero-Shan
+				un(1, i(7949)),		-- Leggings of Thero-Shan
 				-- Possible Unused Level 120/Lv 120 Classtrial
 				un(1, i(150600)),	-- Outlaw's Cutlass
 				un(1, i(157637)),	-- Swaggering Cutlass
 			}),
-			un(1, i(54655)),	-- Stormshroud Armor (Leather)
+			un(1, i(14550)),	-- Bladebane Armguards (Leather)
+			un(1, i(12104)),	-- Brindlethorn Tunic (Leather)
+			un(1, i(5821)),		-- Darkstalker Boots (Leather)
 			un(1, i(25795)),	-- Gloves of Preservation (not added version)
-			un(1, i(25796)),	-- Lurking Shadow Spaulders (only beta)
 			un(1, i(56701)),	-- Jinxed Vest (never made it to live)
+			un(1, i(25796)),	-- Lurking Shadow Spaulders (only beta)
+			un(1, i(22273)),	-- Moonshadow Hood (Leather)
+			un(1, i(19986)),	-- Pirate's Eye Patch (Leather)
+			un(1, i(20524)),	-- Shadowhide Leggings (Leather)
+			un(1, i(54655)),	-- Stormshroud Armor (Leather)
+			un(1, i(7187)),		-- VanCleef's Boots (Leather)
 			un(1, i(26029)),	-- Watchman's Bracers
+			un(1, i(21613)),	-- Wormhide Boots (Leather)
+			un(1, i(21614)),	-- Wormhide Protector (Leather)
 		}),
 		n(-45, { -- Mail
 			cl(7, {	-- Shaman

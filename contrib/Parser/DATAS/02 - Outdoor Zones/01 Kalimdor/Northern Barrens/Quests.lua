@@ -544,6 +544,11 @@ _.Zones =
 							["coord"] = { 67.8, 71.6 },
 							["races"] = HORDE_ONLY,
 							["requireSkill"] = 182, -- Herbalism
+							["g"] = {
+								{	-- Spore-Covered Tunic
+									["itemID"] = 5341,	-- Spore-Covered Tunic
+								},
+							},
 						}),
 						q(887, {	-- Southsea Freebooters
 							["qg"] = 3453,	-- Wharfmaster Dizzywig

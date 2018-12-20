@@ -268,6 +268,24 @@ _.Zones =
 						dr(	1	, i(	10224	)), --	Nightshade Cloak
 						dr(	1	, i(	10119	)), --	Ornate Greaves
 					}), 
+					{	-- Prince Skaldrenox <Abyssal High Council>
+						["npcID"] = 15203,	-- Prince Skaldrenox <Abyssal High Council>
+						["u"] = 43,
+						["g"] = {
+							{	-- Abyssal Mail Pauldrons
+								["itemID"] = 20680,	-- Abyssal Mail Pauldrons
+								["u"] = 2,
+							},
+							{	-- Abyssal Leather Bracers
+								["itemID"] = 20681,	-- Abyssal Leather Bracers
+								["u"] = 2,
+							},
+							{	-- Elemental Focus Band
+								["itemID"] = 20682,	-- Elemental Focus Band
+								["u"] = 2,
+							},
+						},
+					},
 					n(50742, { 		-- Qem
 						dr(	24	, i(	10277	)), --	Emerald Gauntlets
 						dr(	23	, i(	10145	)), --	Mighty Girdle

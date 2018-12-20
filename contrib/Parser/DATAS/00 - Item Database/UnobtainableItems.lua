@@ -551,14 +551,3 @@ u(147641, 14);  -- Cruel Gladiator's Scaled Armor
 u(147642, 14);  -- Cruel Gladiator's Scaled Armor
 u(147643, 14);  -- Cruel Gladiator's Silk Armor
 u(147644, 14);  -- Cruel Gladiator's Silk Armor
-
------------------------------------------------------
---                OTHER GEAR SECTION:              --
---  					CLASSIC 				   --
------------------------------------------------------
-u(7950, 1);		-- Armor of Thero-Shan
-u(7948, 1);		-- Girdle of Thero-Shan
-u(7952, 1);		-- Boots of Thero-Shan
-u(7951, 1);		-- Hands of Thero-Shan
-u(7953, 1);		-- Mask of Thero-Shan
-u(7949, 1);		-- Leggings of Thero-Shan

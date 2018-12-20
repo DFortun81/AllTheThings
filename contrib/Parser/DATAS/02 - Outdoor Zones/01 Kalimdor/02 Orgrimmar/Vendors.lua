@@ -1501,6 +1501,31 @@ _.Zones =
 								["itemID"] = 17616,	-- Blood Guard's Satin Boots
 								["u"] = 2,
 							},
+							-- Champion's Sanctuary [Rogue]
+							{	-- Champion's Dragonhide Helm
+								["itemID"] = 16503,	-- Champion's Dragonhide Helm
+								["u"] = 2,
+							},
+							{	-- Champion's Dragonhide Spaulders
+								["itemID"] = 16501,	-- Champion's Dragonhide Spaulders
+								["u"] = 2,
+							},
+							{	-- Legionnaire's Dragonhide Breastplate
+								["itemID"] = 16504,	-- Legionnaire's Dragonhide Breastplate
+								["u"] = 2,
+							},
+							{	-- Blood Guard's Dragonhide Gauntlets
+								["itemID"] = 16496,	-- Blood Guard's Dragonhide Gauntlets
+								["u"] = 2,
+							},
+							{	-- Legionnaire's Dragonhide Trousers
+								["itemID"] = 16502,	-- Legionnaire's Dragonhide Trousers
+								["u"] = 2,
+							},
+							{	-- Blood Guard's Dragonhide Boots
+								["itemID"] = 16494,	-- Blood Guard's Dragonhide Boots
+								["u"] = 2,
+							},
 						},
 						["u"] = 43,
 					},

@@ -362,6 +362,31 @@ _.Zones =
 										["itemID"] = 17594,	-- Knight-Lieutenant's Satin Boots
 										["u"] = 2,
 									},
+									-- Lieutenant Commander's Vestments [Rogue]
+									{	-- Lieutenant Commander's Leather Veil
+										["itemID"] = 16418,	-- Lieutenant Commander's Leather Veil
+										["u"] = 2,
+									},
+									{	-- Lieutenant Commander's Leather Spaulders
+										["itemID"] = 16420,	-- Lieutenant Commander's Leather Spaulders
+										["u"] = 2,
+									},
+									{	-- Knight-Captain's Leather Armor
+										["itemID"] = 16417,	-- Knight-Captain's Leather Armor
+										["u"] = 2,
+									},
+									{	-- Knight-Lieutenant's Leather Gauntlets
+										["itemID"] = 16396,	-- Knight-Lieutenant's Leather Gauntlets
+										["u"] = 2,
+									},
+									{	-- Knight-Captain's Leather Legguards
+										["itemID"] = 16419,	-- Knight-Captain's Leather Legguards
+										["u"] = 2,
+									},
+									{	-- Knight-Lieutenant's Leather Boots
+										["itemID"] = 16392,	-- Knight-Lieutenant's Leather Boots
+										["u"] = 2,
+									},
 								},
 							},
 							{	-- Captain Lancy Revshon <Stormwind Quartermaster>
