@@ -748,6 +748,15 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 14388,	-- Azsharite Experiment Number Two
 					},
+					{	-- A Hero's Reward
+						["questID"] = 7486,
+						["groups"] = {
+							un(2, i(18399)),	-- Ocean's Breeze
+							un(2, i(18398)),	-- Tidal Loop
+						},
+						["u"] = 40,
+						["qg"] = 13278,	-- Duke Hydraxis
+					},
 					{	-- Airborne Again
 						["questID"] = 24497,
 						["qg"] = 37142,	-- Gurlorn
@@ -816,6 +825,16 @@ _.Zones =
 						["qg"] = 36795,	-- Ruckus
 						["coord"] = { 39.1, 51.7 },
 						["races"] = HORDE_ONLY,
+					},
+					{	-- Fragmented Magic (removed with Cataclysm)
+						["questID"] = 9364,
+						["groups"] = {
+							spell(28272),	-- Polymorph: Pig
+						},
+						["u"] = 40,
+						["qg"] = 8379,	-- Archmage Xylem
+						["classes"] = { 8 },	-- Mage
+						["sourceQuest"] = 9362,	-- Warlord Krellian
 					},
 					{	-- Gunk in the Trunk
 						["questID"] = 14209,
@@ -905,6 +924,16 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 14127,	-- Return of the Highborne?
 					},
+					{	-- Return to Tymor
+						["questID"] = 3461,
+						["groups"] = {
+							un(2, i(10707)),	-- Steelsmith Greaves
+							un(2, i(10708)),	-- Skullspell Orb
+						},
+						["u"] = 40,
+						["qg"] = 8392,	-- Pilot Xiggs Fuselighter
+						["races"] = ALLIANCE_ONLY,
+					},
 					{	-- Scout's Orders
 						["itemID"] = 47039,
 						["questID"] = 14127,	-- Return of the Highborne?
@@ -980,6 +1009,10 @@ _.Zones =
 								["sourceQuest"] = 14428,	-- Amberwind's Journal
 							},
 						},
+					},
+					{	-- Useless quest record
+						["questID"] =14231,
+						["u"] = 1,
 					},
 					{	-- Venison for the Troops
 						["questID"] = 14118,

@@ -45,7 +45,15 @@ _.Zones =
 							i(6536),	-- Willow Vest
 						},
 						["coord"] = { 45.2, 27.2 },
-					}), 
+					}),
+					n(44372, { 	-- Avalanchion
+						["groups"] = {
+							un(7, i(18673)),	-- Avalanchion's Stony Hide
+							un(7, i(18674)),	-- Hardened Stone Band
+						},
+						["u"] = 43,
+						["description"] = "This was only available during the Elemental Invasion.",
+					}),
 					n(6651, {	-- Gatekeeper Rageroar
 						["groups"] = {
 							i(9779),	-- Bandit Cloak
