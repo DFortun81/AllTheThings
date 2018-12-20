@@ -13,7 +13,7 @@ _.ExpansionFeatures =
 				n(-16,	{ -- Rares
 					["g"] = {
 						{	-- Agathe Wyrmwood [A Only]
-							["allianceQuestID"] = 54889,	-- Agathe Wyrmwood [A]
+							["questID"] = 54889,	-- Agathe Wyrmwood [A]
 							["races"] = ALLIANCE_ONLY,
 							["npcID"] = 149652,				-- Agathe Wyrmwood
 							["qg"] = 149652,				-- Agathe Wyrmwood
@@ -118,7 +118,7 @@ _.ExpansionFeatures =
 							},
 						},
 						{	-- Burninator Mark V [A Only]
-							["allianceQuestID"] = 54451,	-- Burninator Mark V [A]
+							["questID"] = 54451,	-- Burninator Mark V [A]
 							["races"] = ALLIANCE_ONLY,
 							["npcID"] = 148497,				-- Burninator Mark V
 							["qg"] = 148497,				-- Burninator Mark V
@@ -138,7 +138,7 @@ _.ExpansionFeatures =
 							},
 						},
 						{	-- Commander Drald [A Only]
-							["allianceQuestID"] = 54251,	-- Commander Drald [A]
+							["questID"] = 54251,	-- Commander Drald [A]
 							["races"] = ALLIANCE_ONLY,
 							["npcID"] = 147845,				-- Commander Drald
 							["qg"] = 147845,				-- Commander Drald
@@ -185,7 +185,7 @@ _.ExpansionFeatures =
 							},
 						},
 						{	-- Croz Bloodrage [A Only]
-							["allianceQuestID"] = 54891,	-- Croz Bloodrage [A]
+							["questID"] = 54891,	-- Croz Bloodrage [A]
 							["races"] = ALLIANCE_ONLY,
 							["npcID"] = 149661,				-- Croz Bloodrage
 							["qg"] = 149661,				-- Croz Bloodrage
@@ -320,7 +320,7 @@ _.ExpansionFeatures =
 							["description"] = "Only shows up when Alliance Controlled.",
 						},
 						{	-- Moxo The Beheader [A Only]
-							["allianceQuestID"] = 54430,	-- Moxo The Beheader [A]
+							["questID"] = 54430,	-- Moxo The Beheader [A]
 							["races"] = ALLIANCE_ONLY,
 							["npcID"] = 147701,				-- Moxo The Beheader
 							["qg"] = 147701,				-- Moxo The Beheader
@@ -366,7 +366,7 @@ _.ExpansionFeatures =
 							},
 						},
 						{	-- Orwell Stevenson [A Only]
-							["allianceQuestID"] = 54890,	-- Orwell Stevenson [A]
+							["questID"] = 54890,	-- Orwell Stevenson [A]
 							["races"] = ALLIANCE_ONLY,
 							["npcID"] = 149664,				-- Orwell Stevenson
 							["qg"] = 149664,				-- Orwell Stevenson
@@ -496,7 +496,7 @@ _.ExpansionFeatures =
 							},
 						},
 						{	-- Zimkaga [A Only]
-							["allianceQuestID"] = 54290,	-- Zimkaga [A]
+							["questID"] = 54290,	-- Zimkaga [A]
 							["races"] = ALLIANCE_ONLY,
 							["npcID"] = 147664,				-- Zimkaga
 							["qg"] = 147664,				-- Zimkaga
