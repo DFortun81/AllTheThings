@@ -38,38 +38,44 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["description"] = "You may only learn this pet once per character from a Battle Pet Trainer."
 					}),
-					q(31571, { -- Learning the Ropes
+					{	-- Learning the Ropes
+						["questID"] = 31571,
 						["qg"] = 63061, -- Narzak
 						["races"] = HORDE_ONLY,
 						["description"] = "This quest is part of a chain initiated by learning Battle Pet Training.",
-					}),
-					q(31572, { -- On The Mend
+					},
+					{	-- On The Mend
+						["questID"] = 31572,
 						["qg"] = 63061, -- Narzak
 						["races"] = HORDE_ONLY,
-						["sourceQuests"] = { 31571 }, -- Learning the Ropes
-					}),
-					q(31830, {	-- Level Up!
+						["sourceQuest"] = 31571, -- Learning the Ropes
+					},
+					{	-- Level Up!
+						["questID"] = 31830,
 						["qg"] = 63061, -- Narzak
 						["races"] = HORDE_ONLY,
-						["sourceQuests"] = { 31572 }, -- On The Mend
-					}),
-					q(31570, { -- Got one!
+						["sourceQuest"] = 31572, -- On The Mend
+					},
+					{	-- Got one!
+						["questID"] = 31570,
 						["qg"] = 63061, -- Narzak
 						["races"] = HORDE_ONLY,
-						["sourceQuests"] = { 31830 }, -- Level Up!
-					}),
-					q(31813, { -- Dagra the Fierce
+						["sourceQuest"] = 31830, -- Level Up!
+					},
+					{	-- Dagra the Fierce
+						["questID"] = 31813,
 						["groups"] = {
 							i(89125), -- Sack of Pet Supplies
 						},
 						["qg"] = 66126, -- Zunta
 						["races"] = HORDE_ONLY,
-					}),
-					q(31818, { -- Zunta
+					},
+					{	-- Zunta
+						["questID"] = 31818,
 						["qg"] = 66126, -- Zunta
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
-					}),
+					},
 				}),
 			},
 		}),

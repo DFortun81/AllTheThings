@@ -24,7 +24,7 @@ _.Zones =
 							["coord"] = { 55.4, 11.2 },
 							["description"] = "Only available with the quest'The Legion Returns'. Permanent available on the Echo Isles.",
 						}),
-						un(43, n(71226, {	-- Ravika <Darkspear Quartermaster> 5.3 Version
+						n(71226, {	-- Ravika <Darkspear Quartermaster> 5.3 Version
 							["groups"] = {
 								i(97901),	-- Griftah's Authentic Troll Shoes
 								i(97919),	-- Whole-Body Shinka' Toy
@@ -43,7 +43,8 @@ _.Zones =
 								un(3, i(98561)),	-- Darkspear Battle Standard
 								un(3, i(98563)),	-- Rainstick
 							},
-						})),
+							["u"] = 43,
+						}),
 						n(5942, { -- Zansoa <Fishing Supplies>
 							["groups"] = {
 								i(6368),	-- Recipe: Rainbow Fin Albacore

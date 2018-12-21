@@ -81,7 +81,6 @@ _.Zones =
 							{ 51.8, 9.6 },
 							{ 53.2, 7.6 },
 						},
-						["description"] = "Inside the Skull Rock cave.",
 					}),
 					n(5826, {	-- Geolord Mottle -- NO TRANSMOGGABLE LOOT!
 						["coords"] = {
