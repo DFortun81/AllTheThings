@@ -1776,8 +1776,8 @@ _.Zones =
 									},
 								},
 							},
-							{	-- Hardened Elementium Bar
-								["itemID"] = 53039,	-- Hardened Elementium Bar
+							{	-- Pyrium Bar
+								["itemID"] = 51950,	-- Pyrium Bar
 								["g"] = {
 									{	-- Plans: Ebonsteel Belt Buckle
 										["itemID"] = 66100,	-- Plans: Ebonsteel Belt Buckle
@@ -1808,8 +1808,8 @@ _.Zones =
 									},
 								},
 							},
-							{	-- Pyrium Bar
-								["itemID"] = 51950,	-- Pyrium Bar
+							{	-- Hardened Elementium Bar
+								["itemID"] = 53039,	-- Hardened Elementium Bar
 								["g"] = {
 									{	-- Plans: Elementium Bonesplitter
 										["itemID"] = 66113,	-- Plans: Elementium Bonesplitter
@@ -2626,8 +2626,8 @@ _.Zones =
 									},
 								},
 							},
-							{	-- Hardened Elementium Bar
-								["itemID"] = 53039,	-- Hardened Elementium Bar
+							{	-- Pyrium Bar
+								["itemID"] = 51950,	-- Pyrium Bar
 								["g"] = {
 									{	-- Plans: Ebonsteel Belt Buckle
 										["itemID"] = 66100,	-- Plans: Ebonsteel Belt Buckle
@@ -2658,8 +2658,8 @@ _.Zones =
 									},
 								},
 							},
-							{	-- Pyrium Bar
-								["itemID"] = 51950,	-- Pyrium Bar
+							{	-- Hardened Elementium Bar
+								["itemID"] = 53039,	-- Hardened Elementium Bar
 								["g"] = {
 									{	-- Plans: Elementium Bonesplitter
 										["itemID"] = 66113,	-- Plans: Elementium Bonesplitter
@@ -2941,8 +2941,8 @@ _.Zones =
 									},
 								},
 							},
-							{	-- Hardened Elementium Bar
-								["itemID"] = 53039,	-- Hardened Elementium Bar
+							{	-- Pyrium Bar
+								["itemID"] = 51950,	-- Pyrium Bar
 								["g"] = {
 									{	-- Plans: Ebonsteel Belt Buckle
 										["itemID"] = 66100,	-- Plans: Ebonsteel Belt Buckle
@@ -2973,8 +2973,8 @@ _.Zones =
 									},
 								},
 							},
-							{	-- Pyrium Bar
-								["itemID"] = 51950,	-- Pyrium Bar
+							{	-- Hardened Elementium Bar
+								["itemID"] = 53039,	-- Hardened Elementium Bar
 								["g"] = {
 									{	-- Plans: Elementium Bonesplitter
 										["itemID"] = 66113,	-- Plans: Elementium Bonesplitter
