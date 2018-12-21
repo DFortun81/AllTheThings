@@ -624,6 +624,16 @@ _.Zones =
 							},
 						}),
 					}),
+					{	-- A Final Blow
+						["questID"] = 5242,
+						["groups"] = {
+							un(2, i(15708)),	-- Blight Leather Gloves
+							un(2, i(15707)),	-- Brantwood Sash
+							un(2, i(15709)),	-- Gearforge Girdle
+						},
+						["u"] = 40,
+						["qg"] = 10922,	-- Greta Mosshoof
+					},
 					{	-- An Arcane Ally
 						["questID"] = 28150,
 						["qg"] = 10923,	-- Tenell Leafrunner
@@ -634,6 +644,16 @@ _.Zones =
 							27995,	-- Dance for Ruumbo!
 							27997,	-- The Corruption of the Jadefire
 						},
+					},
+					{	-- Ancient Spirit
+						["questID"] = 4261,
+						["groups"] = {
+							un(2, i(11874)),	-- Clouddrift Mantle
+							un(2, i(11873)),	-- Ethereal Mist Cape
+						},
+						["u"] = 40,
+						["qg"] = 9598,	-- Arei
+						["races"] = ALLIANCE_ONLY,
 					},
 					{	-- Back to Business
 						["questID"] = 28372,
@@ -646,11 +666,110 @@ _.Zones =
 							28228,	-- Rejoining the Forest
 						},
 					},
+					{	-- Corrupted Night Dragon
+						["objectID"] = 164885,
+						["groups"] = {
+							{	-- Corrupted Night Dragon
+								["questID"] = 4119,
+								["u"] = 40,
+							},
+							{	-- Corrupted Night Dragon
+								["questID"] = 4447,
+								["u"] = 40,
+								["repeatable"] = true,
+							},
+						},
+						["u"] = 43,
+					},
+					{	-- Corrupted Songflower
+						["objectID"] = 164886,
+						["groups"] = {
+							{	-- Corrupted Songflower
+								["questID"] = 2523,
+								["u"] = 40,
+							},
+							{	-- Corrupted Songflower
+								["questID"] = 3363,
+								["u"] = 40,
+								["repeatable"] = true,
+								["sourceQuest"] = 2523,	-- Corrupted Songflower
+							},
+						},
+						["u"] = 43,
+					},
+					{	-- Corrupted Whipper Root
+						["objectID"] = 164888,
+						["groups"] = {
+							{	-- Corrupted Whipper Root
+								["questID"] = 4117,
+								["u"] = 40,
+							},
+							{	-- Corrupted Whipper Root
+								["questID"] = 4443,
+								["u"] = 40,
+								["repeatable"] = true,
+								["sourceQuest"] = 4117,	-- Corrupted Whipper Root
+							},
+						},
+						["u"] = 43,
+					},
+					{	-- Corrupted Windblossom
+						["objectID"] = 164887,
+						["groups"] = {
+							{	-- Corrupted Windblossom
+								["questID"] = 996,
+								["u"] = 40,
+							},
+							{	-- Corrupted Windblossom
+								["questID"] = 998,
+								["u"] = 40,
+								["repeatable"] = true,
+								["sourceQuest"] = 996,	-- Corrupted Windblossom
+							},
+						},
+						["u"] = 43,
+					},
+					{	-- [DEPRECATED]Timbermaw Ally
+						["questID"] = 8460,
+						["groups"] = {
+							un(2, i(21312)),	-- Belt of the Den Watcher
+							un(2, i(21311)),	-- Earth Warder's Vest
+						},
+						["u"] = 40,
+						["qg"] = 11554,	-- Grazle
+					},
+					{	-- Dying Knowledge
+						["questID"] = 29029,
+						["u"] = 40,
+					},
 					{	-- Fight the Power
 						["questID"] = 28102,
 						["qg"] = 9116,	-- Eridan Bluewind
 						["coord"] = { 42.0, 71.7 },
 						["sourceQuest"] = 28044,	-- Touch the Untouchable
+					},
+					{	-- Further Corruption
+						["questID"] = 4906,
+						["groups"] = {
+							un(2, i(11875)),	-- Breezecloud Bracers
+						},
+						["u"] = 40,
+						["qg"] = 9116,	-- Eridan Bluewind
+						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- Guarding Secrets
+						["questID"] = 4883,
+						["groups"] = {
+							un(2, i(15796)),	-- Seaspray Bracers
+							un(2, i(15797)),	-- Shining Armplates
+						},
+						["u"] = 40,
+						["qg"] = 10306,	-- Trull Failbane
+						["races"] = HORDE_ONLY,
+					},
+					{	-- Into Jaedenar
+						["questID"] = 29028,
+						["u"] = 40,
 					},
 					{	-- Jaedenar Awaits
 						["questID"] = 28152,
@@ -658,6 +777,155 @@ _.Zones =
 						["coord"] = { 42.0, 71.7 },
 						["isBreadcrumb"] = true,
 						["sourceQuest"] = 28113,	-- Break the Unbreakable
+					},
+					{	-- Kroshius' Infernal Core
+						["questID"] = 7603,
+						["groups"] = {
+							un(2, i(18762)),	-- Shard of the Green Flame
+						},
+						["u"] = 40,
+						["qg"] = 14470,	-- Impsy
+						["classes"] = { 9 },	-- Warlock
+					},
+					{	-- Salve via Disenchanting
+						["questID"] = 4107,
+						["u"] = 40,
+						["qg"] = 9528,	-- Arathandris Silversky
+						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- Salve via Disenchanting
+						["questID"] = 4112,
+						["u"] = 40,
+						["qg"] = 9528,	-- Arathandris Silversky
+						["races"] = ALLIANCE_ONLY,
+						["repeatable"] = true,
+						["sourceQuest"] = 4107,	-- Salve via Disenchanting
+					},
+					{	-- Salve via Disenchanting
+						["questID"] = 5886,
+						["u"] = 40,
+						["qg"] = 9529,	-- Maybess Riverbreeze
+						["races"] = HORDE_ONLY,
+					},
+					{	-- Salve via Disenchanting
+						["questID"] = 5891,
+						["u"] = 40,
+						["qg"] = 9529,	-- Maybess Riverbreeze
+						["races"] = HORDE_ONLY,
+						["repeatable"] = true,
+						["sourceQuest"] = 5886,	-- Salve via Disenchanting
+					},
+					{	-- Salve via Gathering
+						["questID"] = 4105,
+						["u"] = 40,
+						["qg"] = 9528,	-- Arathandris Silversky
+						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- Salve via Gathering
+						["questID"] = 4110,
+						["u"] = 40,
+						["qg"] = 9528,	-- Arathandris Silversky
+						["races"] = ALLIANCE_ONLY,
+						["repeatable"] = true,
+						["sourceQuest"] = 4105,	-- Salve via Gathering
+					},
+					{	-- Salve via Gathering
+						["questID"] = 5884,
+						["u"] = 40,
+						["qg"] = 9529,	-- Maybess Riverbreeze
+						["races"] = HORDE_ONLY,
+					},
+					{	-- Salve via Gathering
+						["questID"] = 5889,
+						["u"] = 40,
+						["qg"] = 9529,	-- Maybess Riverbreeze
+						["races"] = HORDE_ONLY,
+						["repeatable"] = true,
+						["sourceQuest"] = 5884,	-- Salve via Gathering
+					},
+					{	-- Salve via Hunting
+						["questID"] = 4103,
+						["u"] = 40,
+						["qg"] = 9528,	-- Arathandris Silversky
+						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- Salve via Hunting
+						["questID"] = 4108,
+						["u"] = 40,
+						["qg"] = 9528,	-- Arathandris Silversky
+						["races"] = ALLIANCE_ONLY,
+						["repeatable"] = true,
+						["sourceQuest"] = 4103,	-- Salve via Hunting
+					},
+					{	-- Salve via Hunting
+						["questID"] = 5882,
+						["u"] = 40,
+						["qg"] = 9529,	-- Maybess Riverbreeze
+						["races"] = HORDE_ONLY,
+					},
+					{	-- Salve via Hunting
+						["questID"] = 5887,
+						["u"] = 40,
+						["qg"] = 9529,	-- Maybess Riverbreeze
+						["races"] = HORDE_ONLY,
+						["repeatable"] = true,
+						["sourceQuest"] = 5882,	-- Salve via Hunting
+					},
+					{	-- Salve via Mining
+						["questID"] = 4104,
+						["u"] = 40,
+						["qg"] = 9528,	-- Arathandris Silversky
+						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- Salve via Mining
+						["questID"] = 4109,
+						["u"] = 40,
+						["qg"] = 9528,	-- Arathandris Silversky
+						["races"] = ALLIANCE_ONLY,
+						["repeatable"] = true,
+						["sourceQuest"] = 4104,	-- Salve via Mining
+					},
+					{	-- Salve via Mining
+						["questID"] = 5883,
+						["u"] = 40,
+						["qg"] = 9529,	-- Maybess Riverbreeze
+						["races"] = HORDE_ONLY,
+					},
+					{	-- Salve via Mining
+						["questID"] = 5888,
+						["u"] = 40,
+						["qg"] = 9529,	-- Maybess Riverbreeze
+						["races"] = HORDE_ONLY,
+						["repeatable"] = true,
+						["sourceQuest"] = 5883,	-- Salve via Mining
+					},
+					{	-- Salve via Skinning
+						["questID"] = 4106,
+						["u"] = 40,
+						["qg"] = 9528,	-- Arathandris Silversky
+						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- Salve via Skinning
+						["questID"] = 4111,
+						["u"] = 40,
+						["qg"] = 9528,	-- Arathandris Silversky
+						["races"] = ALLIANCE_ONLY,
+						["repeatable"] = true,
+						["sourceQuest"] = 4106,	-- Salve via Skinning
+					},
+					{	-- Salve via Skinning
+						["questID"] = 5885,
+						["u"] = 40,
+						["qg"] = 9529,	-- Maybess Riverbreeze
+						["races"] = HORDE_ONLY,
+					},
+					{	-- Salve via Skinning
+						["questID"] = 5890,
+						["u"] = 40,
+						["qg"] = 9529,	-- Maybess Riverbreeze
+						["races"] = HORDE_ONLY,
+						["repeatable"] = true,
+						["sourceQuest"] = 5885,	-- Salve via Skinning
 					},
 					{	-- The Fate of Bloodvenom Post
 						["questID"] = 28305,
@@ -670,6 +938,16 @@ _.Zones =
 							28128,	-- The Inner Circle
 						},
 					},
+					{	-- The Remains of Trey Lightforge
+						["questID"] = 5385,
+						["groups"] = {
+							un(2, i(15706)),	-- Hunt Tracker Blade
+							un(2, i(15705)),	-- Tidecrest Blade
+						},
+						["u"] = 40,
+						["qg"] = 11020,	-- Remains of Trey Lightforge
+					},
+
 					{	-- The Ruins of Kel'theril -- breadcrumb?
 						["questID"] = 28479,
 						["qgs"] = 10920,	-- Kelek Skykeeper

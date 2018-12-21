@@ -20,11 +20,12 @@ _.Zones =
 						},
 						["coord"] = { 43.8, 29.8 },
 					}),
-					na(2803, {	-- Malygen <General Goods>
+					n(2803, {	-- Malygen <General Goods>
 						["groups"] = {
 							i(16110),	-- Recipe: Monster Omelet
 						},
 						["coord"] = { 61.2, 26.8 },
+						["races"] = ALLIANCE_ONLY,
 					}),
 				}),
 			},
