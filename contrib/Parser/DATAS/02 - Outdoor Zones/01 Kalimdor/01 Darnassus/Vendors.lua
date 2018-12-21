@@ -109,11 +109,6 @@ _.Zones =
 									{	-- Plans: Elementium Girdle of Pain
 										["itemID"] = 66107,	-- Plans: Elementium Girdle of Pain
 									},
-									{	-- Plans: Elementium Shield Spike
-										["itemID"] = 66102,	-- Plans: Elementium Shield Spike
-										["spellID"] = 0,	-- This is available via the trainer, need to delink the unused plans from the recipe
-										["u"] = 1,
-									},
 									{	-- Plans: Hardened Elementium Girdle
 										["itemID"] = 66105,	-- Plans: Hardened Elementium Girdle
 									},
@@ -140,38 +135,6 @@ _.Zones =
 									},
 									{	-- Plans: Vicious Pyrium Gauntlets
 										["itemID"] = 66118,	-- Plans: Vicious Pyrium Gauntlets
-									},
-								},
-							},
-							{	-- Pyrium Bar
-								["itemID"] = 51950,	-- Pyrium Bar
-								["g"] = {
-									{	-- Plans: Ebonsteel Belt Buckle
-										["itemID"] = 66100,	-- Plans: Ebonsteel Belt Buckle
-									},
-									{	-- Plans: Forged Elementium Mindcrusher
-										["itemID"] = 67606,	-- Plans: Forged Elementium Mindcrusher
-									},
-									{	-- Plans: Pyrium Shield Spike
-										["itemID"] = 66101,	-- Plans: Pyrium Shield Spike
-									},
-									{	-- Plans: Vicious Ornate Pyrium Breastplate
-										["itemID"] = 66132,	-- Plans: Vicious Ornate Pyrium Breastplate
-									},
-									{	-- Plans: Vicious Ornate Pyrium Helm
-										["itemID"] = 66131,	-- Plans: Vicious Ornate Pyrium Helm
-									},
-									{	-- Plans: Vicious Ornate Pyrium Legguards
-										["itemID"] = 66130,	-- Plans: Vicious Ornate Pyrium Legguards
-									},
-									{	-- Plans: Vicious Pyrium Breastplate
-										["itemID"] = 66124,	-- Plans: Vicious Pyrium Breastplate
-									},
-									{	-- Plans: Vicious Pyrium Helm
-										["itemID"] = 66123,	-- Plans: Vicious Pyrium Helm
-									},
-									{	-- Plans: Vicious Pyrium Legguards
-										["itemID"] = 66122,	-- Plans: Vicious Pyrium Legguards
 									},
 								},
 							},
@@ -222,6 +185,38 @@ _.Zones =
 									},
 									{	-- Plans: Vicious Pyrium Shoulders
 										["itemID"] = 66121,	-- Plans: Vicious Pyrium Shoulders
+									},
+								},
+							},
+							{	-- Pyrium Bar
+								["itemID"] = 51950,	-- Pyrium Bar
+								["g"] = {
+									{	-- Plans: Ebonsteel Belt Buckle
+										["itemID"] = 66100,	-- Plans: Ebonsteel Belt Buckle
+									},
+									{	-- Plans: Forged Elementium Mindcrusher
+										["itemID"] = 67606,	-- Plans: Forged Elementium Mindcrusher
+									},
+									{	-- Plans: Pyrium Shield Spike
+										["itemID"] = 66101,	-- Plans: Pyrium Shield Spike
+									},
+									{	-- Plans: Vicious Ornate Pyrium Breastplate
+										["itemID"] = 66132,	-- Plans: Vicious Ornate Pyrium Breastplate
+									},
+									{	-- Plans: Vicious Ornate Pyrium Helm
+										["itemID"] = 66131,	-- Plans: Vicious Ornate Pyrium Helm
+									},
+									{	-- Plans: Vicious Ornate Pyrium Legguards
+										["itemID"] = 66130,	-- Plans: Vicious Ornate Pyrium Legguards
+									},
+									{	-- Plans: Vicious Pyrium Breastplate
+										["itemID"] = 66124,	-- Plans: Vicious Pyrium Breastplate
+									},
+									{	-- Plans: Vicious Pyrium Helm
+										["itemID"] = 66123,	-- Plans: Vicious Pyrium Helm
+									},
+									{	-- Plans: Vicious Pyrium Legguards
+										["itemID"] = 66122,	-- Plans: Vicious Pyrium Legguards
 									},
 								},
 							},
