@@ -216,7 +216,7 @@ _.Zones =
 						["questID"] = 6365,
 						["qg"] = 3881, -- Grimtak
 						["lvl"] = 5,
-						["coord"] = 50.7, 42.8,
+						["coord"] = { 50.7, 42.8 },
 						["races"] = {
 							2,	-- Orc
 							8,	-- Troll
