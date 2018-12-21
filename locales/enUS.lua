@@ -2266,6 +2266,7 @@ AllTheThings.Locales.enUS = {
 		[141979] = "Ancient Treasure",
 		[142195] = "Woodpaw Battle Map",
 		[142487] = "The Sparklematic 5200",
+		[144063] = "Equinex Monolith",
 		[148502] = "Step 1: Page 9",
 		[156561] = "Wanted Poster",
 		[160836] = "Relic Coffer",
