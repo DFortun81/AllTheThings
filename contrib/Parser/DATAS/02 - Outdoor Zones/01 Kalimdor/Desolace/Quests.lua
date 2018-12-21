@@ -423,6 +423,12 @@ _.Zones =
 							},
 						}),
 					}),
+					{	-- Alliance Relations
+						["questID"] = 1432,
+						["u"] = 40,
+						["qg"] = 5640,	-- Keldran
+						["races"] = HORDE_ONLY,
+					},
 					{	-- An Impactful Discovery
 						["questID"] = 14380,
 						["qg"] = 36329,	-- Thargad
@@ -438,6 +444,20 @@ _.Zones =
 							},
 						},
 					},
+					{	-- Befouled by Satyr
+						["questID"] = 1434,
+						["u"] = 40,
+						["qg"] = 5641,	-- Takata Steelblade
+						["races"] = HORDE_ONLY,
+					},
+					{	-- Bodyguard for Hire
+						["questID"] = 5821,
+						["groups"] = {
+							un(2, i(15689)),	-- Trader's Ring
+						},
+						["u"] = 40,
+						["qg"] = 11625,	-- Cork Gizelton
+					},
 					{	-- Bone Collector
 						["questID"] = 5501,
 						["groups"] = {
@@ -445,6 +465,15 @@ _.Zones =
 						},
 						["qg"] = 11438,	-- Bibbly F'utzbuckle
 						["coord"] = { 62.3, 38.9 },
+					},
+					{	-- Book of the Ancients
+						["questID"] = 6027,
+						["groups"] = {
+							un(2, i(16793)),	-- Arcmetal Shoulders
+							un(2, i(16791)),	-- Silkstream Cuffs
+						},
+						["u"] = 40,
+						["qg"] = 11863,	-- Azore Aldamort
 					},
 					{	-- Broken Relic
 						["objectID"] = 196393,
@@ -455,42 +484,6 @@ _.Zones =
 								["sourceQuest"] = 14328,	-- Three Princes
 							},
 						},
-					},
-					{	-- Cleansing Our Crevasse
-						["questID"] = 14381,
-						["groups"] = {
-							i(55918),	-- Leggings of the Windy Ravine
-							i(55919),	-- Craggy Handgrips
-							i(55920),	-- Marshweaver's Wristguards
-							i(131353),	-- Windwhipped Grips
-						},
-						["qg"] = 36034,	-- Karnum Marshweaver
-						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 14380,	-- An Impactful Discovery
-					},
-					{	-- Cup of Elune
-						["objectID"] = 195438,
-						--["coord"] = {  },
-						["groups"] = {
-							{	-- Furien's Footsteps
-								["questID"] = 14191,
-								["races"] = HORDE_ONLY,
-								["sourceQuest"] = 14189,	-- Translation
-							},
-							{	-- Nothing a Couple of Melons Won't Fix
-								["questID"] = 14193,
-								["races"] = ALLIANCE_ONLY,
-							},
-						},
-					},
-					{	-- Early Adoption
-						["questID"] = 14246,
-						["groups"] = {
-							i(55894),	-- Featherlight Leggings
-							i(55895),	-- Collector's Padded Gauntlets
-						},
-						["qg"] = 35661,	-- Cenarion Embassador Thunk
-						["coord"] = { 70.3, 32.9 },
 					},
 					{	-- Burning Blade Ear (Alliance)
 						["itemID"] = 49203,
@@ -525,6 +518,94 @@ _.Zones =
 								["races"] = HORDE_ONLY,
 							},
 						},
+					},
+					{	-- Centaur Bounty
+						["questID"] = 1366,
+						["groups"] = {
+							un(2, i(6784)),	-- Braced Handguards
+							un(2, i(6780)),	-- Lilac Sash
+						},
+						["u"] = 40,
+						["qg"] = 5395,	-- Felgur Twocuts
+						["races"] = HORDE_ONLY
+					},
+					{	-- Centaur Bounty
+						["questID"] = 1387,
+						["groups"] = {
+							un(2, i(6790)),	-- Ring of Calm
+						},
+						["u"] = 40,
+						["qg"] = 5752,	-- Corporal Melkins
+						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- Clam Bait
+						["questID"] = 6142,
+						["groups"] = {
+							un(2, i(15588)),	-- Bracesteel Belt
+							un(2, i(15585)),	-- Pardoc Grips
+							un(2, i(15587)),	-- Ringtail Girdle
+						},
+						["u"] = 40,
+						["qg"] = 12031,	-- Mai'Lahii
+						["races"] = HORDE_ONLY,
+					},
+					{	-- Cleansing Our Crevasse
+						["questID"] = 14381,
+						["groups"] = {
+							i(55918),	-- Leggings of the Windy Ravine
+							i(55919),	-- Craggy Handgrips
+							i(55920),	-- Marshweaver's Wristguards
+							i(131353),	-- Windwhipped Grips
+						},
+						["qg"] = 36034,	-- Karnum Marshweaver
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 14380,	-- An Impactful Discovery
+					},
+					{	-- Corruption of Earth and Seed
+						["questID"] = 7065,
+						["groups"] = {
+							un(2, i(17705)),	-- Thrash Blade
+							un(2, i(17743)),	-- Resurgence Rod
+							un(2, i(17753)),	-- Verdant Keeper's Aim
+						},
+						["u"] = 40,
+						["qg"] = 13698,	-- Keeper Marandis
+						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- Corruption of Earth and Seed
+						["questID"] = 7064,
+						["groups"] = {
+							un(2, i(17705)),	-- Thrash Blade
+							un(2, i(17743)),	-- Resurgence Rod
+							un(2, i(17753)),	-- Verdant Keeper's Aim
+						},
+						["u"] = 40,
+						["qg"] = 13699,	-- Selendra
+						["races"] = HORDE_ONLY,
+					},
+					{	-- Cup of Elune
+						["objectID"] = 195438,
+						--["coord"] = {  },
+						["groups"] = {
+							{	-- Furien's Footsteps
+								["questID"] = 14191,
+								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 14189,	-- Translation
+							},
+							{	-- Nothing a Couple of Melons Won't Fix
+								["questID"] = 14193,
+								["races"] = ALLIANCE_ONLY,
+							},
+						},
+					},
+					{	-- Early Adoption
+						["questID"] = 14246,
+						["groups"] = {
+							i(55894),	-- Featherlight Leggings
+							i(55895),	-- Collector's Padded Gauntlets
+						},
+						["qg"] = 35661,	-- Cenarion Embassador Thunk
+						["coord"] = { 70.3, 32.9 },
 					},
 					{	-- Elune's Brazier
 						["objectID"] = 195497,
@@ -619,6 +700,12 @@ _.Zones =
 						["qg"] = 35757,	-- Bizby
 						["coord"] = { 60.9, 29.0 },
 					},
+					{	-- Gelkis Alliance
+						["questID"] = 1368,
+						["u"] = 40,
+						["qg"] = 5412,	-- Gurda Wildmane
+						["races"] = HORDE_ONLY,
+					},
 					{	-- Get Me Out of Here!
 						["questID"] = 6132,
 						["qg"] = 12277,	-- Melizza Brimbuzzle
@@ -633,20 +720,20 @@ _.Zones =
 						["qg"] = 6019,	-- Hornizz Brimbuzzle
 						["coord"] = { 47.8, 61.8 },
 					},
+					{	-- Gizelton Caravan
+						["questID"] = 5943,
+						["groups"] = {
+							un(2, i(15692)),	-- Kodo Brander
+							un(2, i(15691)),	-- Sidegunner Shottie
+							un(2, i(15695)),	-- Studded Ring Shield
+						},
+						["u"] = 40,
+						["qg"] = 11626,	-- Rigger Gizelton
+					},
 					{	-- Good Gold For Bad Tail
 						["questID"] = 14252,
 						["qg"] = 35757,	-- Bizby
 						["coord"] = { 60.9, 29.0 },
-					},
-					{	-- Smouldering Stone
-						["objectID"] = 195600,
-						["coord"] = { 69.2, 21.3 },
-						["groups"] = {
-							{	-- Heavy Metal
-								["questID"] = 14254,
-								["sourceQuest"] = 14247,	-- Stubborn Lands
-							},
-						},
 					},
 					{	-- Hunting Brendol
 						["questID"] = 14378,
@@ -689,6 +776,39 @@ _.Zones =
 						},
 						["races"] = HORDE_ONLY,
 					},
+					{	-- Karnitol's Chest
+						["objectID"] = 35251,
+						["groups"] = {
+							{	-- The Karnitol Shipwreck
+								["questID"] = 1455,
+								["races"] = ALLIANCE_ONLY,
+								["sourceQuest"] = 1454,	-- The Karnitol Shipwreck
+							},
+						},
+					},
+					{	-- Khan Hratha (Magram Clan Friendly Version)
+						["questID"] = 1381,
+						["groups"] = {
+							un(2, i(6789)),	-- Ceremonial Centaur Blanket
+							un(2, i(6788)),	-- Magram Hunter's Belt
+						},
+						["u"] = 40,
+						["qg"] = 5398,	-- Warug
+					},
+					{	-- Khan Hratha (Gelkis Friendly Version)
+						["questID"] = 1380,
+						["groups"] = {
+							un(2, i(6773)),	-- Gelkis Marauder Chain
+							un(2, i(6774)),	-- Uthek's Finger
+						},
+						["u"] = 40,
+						["qg"] = 5397,	-- Uthek the Wise
+					},
+					{	-- Khan Jehn
+						["questID"] = 1374,
+						["u"] = 40,
+						["qg"] = 5397,	-- Uthek the Wise
+					},
 					{	-- Kodo Roundup
 						["questID"] = 5561,
 						["groups"] = {
@@ -717,6 +837,17 @@ _.Zones =
 						["qg"] = 35757,	-- Bizby
 						["coord"] = { 60.9, 29.0 },
 					},
+					{	-- Ongeku
+						["questID"] = 1373,
+						["u"] = 40,
+						["qg"] = 5397,	-- Uthek the Wise
+					},
+					{	-- Other Fish to Fry
+						["questID"] = 6143,
+						["u"] = 40,
+						["qg"] = 12340,	-- Drulzegar Skraghook
+						["races"] = HORDE_ONLY,
+					},
 					{	-- Peace of Mind
 						["questID"] = 14361,
 						["qg"] = 5396,	-- Captain Pentigast
@@ -744,11 +875,54 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 14363,	-- You'll Know it When You See It
 					},
+					{	-- Rackmore's Log
+						["objectID"] = 177787,
+						["groups"] = {
+							{	-- Claim Rackmore's Treasure!
+								["questID"] = 6161,
+								["groups"] = {
+									un(2, i(16789)),	-- Captain Rackmore's Tiller
+									un(2, i(16788)),	-- Captain Rackmore's Wheel
+								},
+								["u"] = 40,
+							},
+						},
+						["u"] = 43,
+					},
+					{	-- Raid on the Kolkar
+						["questID"] = 1384,
+						["u"] = 40,
+						["qg"] = 5397,	-- Uthek the Wise
+						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- Reagents for Reclaimers Inc.
+						["questID"] = 1467,
+						["groups"] = {
+							un(2, i(6793)),	-- Auric Bracers
+							un(2, i(131232)),	-- Stormfire Gauntlets
+							un(2, i(6794)),	-- Tawny Gloves
+						},
+						["u"] = 40,
+						["qg"] = 5638,	-- Kreldig Ungor
+						["races"] = ALLIANCE_ONLY,
+					},
 					{	-- Rerouted!
 						["questID"] = 14384,
 						["qg"] = 36410,	-- Officer Jankie
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 28531,	-- Hero's Call: Desolace!
+					},
+					{	-- Return to Vahlarriel
+						["questID"] = 1440,
+						["groups"] = {
+							un(2, i(9699)),	-- Garrison Cloak
+							un(2, i(9698)),	-- Gloves of Insight
+							un(2, i(9687)),	-- Grappler's Belt
+							un(2, i(11884)),	-- Moonlit Amice
+						},
+						["u"] = 40,
+						["qg"] = 5644,	-- Dalinda Malem
+						["races"] = ALLIANCE_ONLY,
 					},
 					{	-- Rock Lobstrock!
 						["questID"] = 14379,
@@ -773,6 +947,35 @@ _.Zones =
 						["coord"] = { 55.4, 55.8 },
 						["races"] = HORDE_ONLY,
 					},
+					{	-- Smouldering Stone
+						["objectID"] = 195600,
+						["coord"] = { 69.2, 21.3 },
+						["groups"] = {
+							{	-- Heavy Metal
+								["questID"] = 14254,
+								["sourceQuest"] = 14247,	-- Stubborn Lands
+							},
+						},
+					},
+					{	-- Stealing Supplies
+						["questID"] = 1370,
+						["groups"] = {
+							un(2, i(32378)),	-- Silver Star
+							un(2, i(3463, { -- Broken Silver Star
+								["f"] = 50,    -- Miscellaneous
+							})),
+							un(2, i(3464)),	-- Feathered Arrow
+							un(2, i(3465)),	-- Exploding Shot
+						},
+						["u"] = 40,
+						["qg"] = 5397,	-- Uthek the Wise
+					},
+					{	-- Strange Alliance
+						["questID"] = 1382,
+						["u"] = 40,
+						["qg"] = 5396,	-- Captain Pentigast
+						["races"] = ALLIANCE_ONLY,
+					},
 					{	-- Stubborn Lands
 						["questID"] = 14247,
 						["qg"] = 35661,	-- Cenarion Embassador Thunk
@@ -785,21 +988,31 @@ _.Zones =
 						["isBreadcrumb"] = true,
 						["sourceQuest"] = 14327,	-- My Word is My Bond
 					},
+					{	-- The Corrupter
+						["questID"] = 1488,
+						["groups"] = {
+							un(2, i(6746)),	-- Basalt Buckler
+							un(2, i(6747)),	-- Enforcer Pauldrons
+						},
+						["u"] = 40,
+						["qg"] = 5641,	-- Takata Steelblade
+						["races"] = HORDE_ONLY,
+					},
+					{	-- The Karnitol Shipwreck
+						["questID"] = 1457,
+						["groups"] = {
+							un(2, i(6791)),	-- Hellion Boots
+							un(2, i(6792)),	-- Sanguine Pauldrons
+						},
+						["u"] = 40,
+						["qg"] = 5638,	-- Kreldig Ungor
+						["races"] = ALLIANCE_ONLY,
+					},
 					{	-- The Karnitol Shipwreck
 						["questID"] = 1454,
 						["qg"] = 5638,	-- Kreldig Ungor
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 14354,	-- Elune's Gifts
-					},
-					{	-- Karnitol's Chest
-						["objectID"] = 35251,
-						["groups"] = {
-							{	-- The Karnitol Shipwreck
-								["questID"] = 1455,
-								["races"] = ALLIANCE_ONLY,
-								["sourceQuest"] = 1454,	-- The Karnitol Shipwreck
-							},
-						},
 					},
 					{	-- The Karnitol Shipwreck (awarded "Nijel's Point" criteria)
 						["questID"] = 1456,
@@ -820,6 +1033,18 @@ _.Zones =
 						["coord"] = { 73.3, 73.0 },
 						["isBreadcrumb"] = true,
 						["sourceQuest"] = 14394,	-- Death to Agogridon
+					},
+					{	-- Twisted Evils
+						["questID"] = 7028,
+						["groups"] = {
+							un(2, i(17775)),	-- Acumen Robes
+							un(2, i(17779)),	-- Hulkstone Pauldrons
+							un(2, i(17777)),	-- Relentless Chain
+							un(2, i(17776)),	-- Sprightring Helm
+						},
+						["u"] = 40,
+						["qg"] = 13656,	-- Willow
+						["races"] = HORDE_ONLY,
 					},
 					{	-- You'll Know It When You See It
 						["questID"] = 14363,
