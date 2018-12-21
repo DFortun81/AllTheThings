@@ -10,305 +10,358 @@ _.Zones =
 					n(-17, {	-- Quests
 						["groups"] = {
 							-- Druid Quests --
-							q(24764, { -- The Rise of the Darkspear (Druid)
-								["qg"] = 37951, -- Jin'thala
+							{	-- The Rise of the Darkspear (Druid)
+								["questID"] = 24764,
+								["qg"] = 37951,	-- Jin'thala
 								["coord"] = { 42.8, 53.4 },
-								["classes"] = { 11 }, -- Druid
-							}),
-							q(24765, { -- The Basics: Hitting Things (Druid)
-								["qg"] = 38243, -- Zen'tabra
+								["classes"] = { 11 },	-- Druid
+							},
+							{	-- The Basics: Hitting Things (Druid)
+								["questID"] = 24765,
+								["qg"] = 38243,	-- Zen'tabra
 								["coord"] = { 58.0, 54.0 },
-								["classes"]= { 11 }, -- Druid
-								["sourceQuest"] = 24764, -- The Rise of the Darkspear (Druid)
-							}),
-							q(24767, { -- A Rough Start (Druid)
-								["qg"] = 38243, -- Zen'tabra
+								["classes"]= { 11 },	-- Druid
+								["sourceQuest"] = 24764,	-- The Rise of the Darkspear (Druid)
+							},
+							{	-- A Rough Start (Druid)
+								["questID"] = 24767,
+								["qg"] = 38243,	-- Zen'tabra
 								["coord"] = { 58.0, 54.0 },
-								["classes"] = { 11 }, -- Druid
-								["sourceQuest"] = 24765, -- The Basics: Hitting Things (Druid)
-							}),
-							q(24768, { -- Proving Pit (Druid)
+								["classes"] = { 11 },	-- Druid
+								["sourceQuest"] = 24765,	-- The Basics: Hitting Things (Druid)
+							},
+							{	-- Proving Pit (Druid)
+								["questID"] = 24768,
 								["groups"] = {
-									i(52870), -- Darkspear Druidic Staff
+									i(52870),	-- Darkspear Druidic Staff
 								},
-								["qg"] = 38243, -- Zen'tabra
+								["qg"] = 38243,	-- Zen'tabra
 								["coord"] = { 58.0, 54.0 },
-								["classes"] = { 11 }, -- Druid
-								["sourceQuest"] = 24767, -- A Rough Start (Druid)
-							}),
-							q(24769, { -- More Than Expected (Druid)
-								["qg"] = 38243, -- Zen'tabra
+								["classes"] = { 11 },	-- Druid
+								["sourceQuest"] = 24767,	-- A Rough Start (Druid)
+							},
+							{	-- More Than Expected (Druid)
+								["questID"] = 24769,
+								["qg"] = 38243,	-- Zen'tabra
 								["coord"] = { 58.0, 54.0 },
-								["classes"] = { 11 }, -- Druid
-								["sourceQuest"] = 24768, -- Proving Pit (Druid)
-							}),
+								["classes"] = { 11 },	-- Druid
+								["sourceQuest"] = 24768,	-- Proving Pit (Druid)
+							},
 							-- Hunter Quests --
-							q(24776, { -- The Rise of the Darkspear (Hunter)
-								["qg"] = 37951, -- Jin'thala
+							{	-- The Rise of the Darkspear (Hunter)
+								["questID"] = 24776,
+								["qg"] = 37951,	-- Jin'thala
 								["coord"] = { 42.8, 53.4 },
-								["classes"] = { 3 }, -- Hunter
-							}),
-							q(24777, { -- The Basics: Hitting Things (Hunter)
-								["qg"] = 38247, -- Ortezza
+								["classes"] = { 3 },	-- Hunter
+							},
+							{	-- The Basics: Hitting Things (Hunter)
+								["questID"] = 24777,
+								["qg"] = 38247,	-- Ortezza
 								["coord"] = { 56.4, 50.1 },
-								["classes"] = { 3 }, -- Hunter
-								["sourceQuest"] = 24776, -- The Rise of the Darkspear (Hunter)
-							}),
-							q(24779, { -- A Rough Start (Hunter)
-								["qg"] = 38247, -- Ortezza
+								["classes"] = { 3 },	-- Hunter
+								["sourceQuest"] = 24776,	-- The Rise of the Darkspear (Hunter)
+							},
+							{	-- A Rough Start (Hunter)
+								["questID"] = 24779,
+								["qg"] = 38247,	-- Ortezza
 								["coord"] = { 56.4, 50.1 },
-								["classes"] = { 3 }, -- Hunter
-								["sourceQuest"] = 24777, -- The Basics: Hitting Things (Hunter)
-							}),
-							q(24780, { -- Proving Pit (Hunter)
+								["classes"] = { 3 },	-- Hunter
+								["sourceQuest"] = 24777,	-- The Basics: Hitting Things (Hunter)
+							},
+							{	-- Proving Pit (Hunter)
+								["questID"] = 24780,
 								["groups"] = {
-									i(52872), -- Darkspear Hunter's Bow
+									i(52872),	-- Darkspear Hunter's Bow
 								},
-								["qg"] = 38247, -- Ortezza
+								["qg"] = 38247,	-- Ortezza
 								["coord"] = { 56.4, 50.1 },
-								["classes"] = { 3 }, -- Hunter
-								["sourceQuest"] = 24779, -- A Rough Start (Hunter)
-							}),
-							q(24781, { -- More Than Expected (Hunter)
-								["qg"] = 38247, -- Ortezza
+								["classes"] = { 3 },	-- Hunter
+								["sourceQuest"] = 24779,	-- A Rough Start (Hunter)
+							},
+							{	-- More Than Expected (Hunter)
+								["questID"] = 24781,
+								["qg"] = 38247,	-- Ortezza
 								["coord"] = { 56.4, 50.1 },
-								["classes"] = { 3 }, -- Hunter
-								["sourceQuest"] = 24780, -- Proving Pit (Hunter)
-							}),
+								["classes"] = { 3 },	-- Hunter
+								["sourceQuest"] = 24780,	-- Proving Pit (Hunter)
+							},
 							-- Mage Quests --
-							q(24750, { -- The Rise of the Darkspear (Mage)
-								["qg"] = 37951, -- Jin'thala
+							{	-- The Rise of the Darkspear (Mage)
+								["questID"] = 24750,
+								["qg"] = 37951,	-- Jin'thala
 								["coord"] = { 42.8, 53.4 },
-								["classes"] = { 8 }, -- Mage
-							}),
-							q(24751, { -- The Basics: Hitting Things (Mage)
-								["qg"] = 38246, -- Soratha
+								["classes"] = { 8 },	-- Mage
+							},
+							{	-- The Basics: Hitting Things (Mage)
+								["questID"] = 24751,
+								["qg"] = 38246,	-- Soratha
 								["coord"] = { 59.7, 52.1 },
-								["classes"] = { 8 }, -- Mage
-								["sourceQuest"] = 24750, -- The Rise of the Darkspear (Mage)
-							}),
-							q(24753, { -- A Rough Start (Mage)
-								["qg"] = 38246, -- Soratha
+								["classes"] = { 8 },	-- Mage
+								["sourceQuest"] = 24750,	-- The Rise of the Darkspear (Mage)
+							},
+							{	-- A Rough Start (Mage)
+								["questID"] = 24753,
+								["qg"] = 38246,	-- Soratha
 								["coord"] = { 59.7, 52.1 },
-								["classes"] = { 8 }, -- Mage
-								["sourceQuest"] = 24751, -- The Basics: Hitting Things (Mage)
-							}),
-							q(24754, { -- Proving Pit (Mage)
+								["classes"] = { 8 },	-- Mage
+								["sourceQuest"] = 24751,	-- The Basics: Hitting Things (Mage)
+							},
+							{	-- Proving Pit (Mage)
+								["questID"] = 24754,
 								["groups"] = {
-									i(52873), -- Darkspear Magic Weaver Tunic
+									i(52873),	-- Darkspear Magic Weaver Tunic
 								},
-								["qg"] = 38246, -- Soratha
+								["qg"] = 38246,	-- Soratha
 								["coord"] = { 59.7, 52.1 },
-								["classes"] = { 8 }, -- Mage
-								["sourceQuest"] = 24753, -- A Rough Start (Mage)
-							}),
-							q(24755, { -- More Than Expected (Mage)
-								["qg"] = 38246, -- Soratha
+								["classes"] = { 8 },	-- Mage
+								["sourceQuest"] = 24753,	-- A Rough Start (Mage)
+							},
+							{	-- More Than Expected (Mage)
+								["questID"] = 24755,
+								["qg"] = 38246,	-- Soratha
 								["coord"] = { 59.7, 52.1 },
-								["classes"] = { 8 }, -- Mage
-								["sourceQuest"] = 24754, -- Proving Pit (Mage)
-							}),
+								["classes"] = { 8 },	-- Mage
+								["sourceQuest"] = 24754,	-- Proving Pit (Mage)
+							},
+							{	-- The Arts of a Mage
+								["questID"] = 24752,
+								["u"] = 40,
+								["qg"] = 38246,	-- Soratha
+								["races"] = HORDE_ONLY,
+								["classes"] = { 8 },	-- Mage
+							},
 							-- Monk Quests --
-							q(31159, { -- The Rise of the Darkspear (Monk)
-								["qg"] = 37951, -- Jin'thala
+							{	-- The Rise of the Darkspear (Monk)
+								["questID"] = 31159,
+								["qg"] = 37951,	-- Jin'thala
 								["coord"] = { 42.8, 53.4 },
-								["classes"] = { 10 }, -- Monk
-							}),
-							q(31158, { -- The Basics: Hitting Things (Monk)
-								["qg"] = 63310, -- Zabrax
+								["classes"] = { 10 },	-- Monk
+							},
+							{	-- The Basics: Hitting Things (Monk)
+								["questID"] = 31158,
+								["qg"] = 63310,	-- Zabrax
 								["coord"] = { 52.6, 51.8 },
-								["classes"] = { 10 }, -- Monk
-								["sourceQuest"] = 31159, -- The Rise of the Darkspear (Monk)
-							}),
-							q(31160, { -- A Rough Start (Monk)
-								["qg"] = 63310, -- Zabrax
+								["classes"] = { 10 },	-- Monk
+								["sourceQuest"] = 31159,	-- The Rise of the Darkspear (Monk)
+							},
+							{	-- A Rough Start (Monk)
+								["questID"] = 31160,
+								["qg"] = 63310,	-- Zabrax
 								["coord"] = { 52.6, 51.8 },
-								["classes"] = { 10 }, -- Monk
-								["sourceQuest"] = 31158, -- The Basics: Hitting Things (Monk)
-							}),
-							q(31161, { -- Proving Pit (Monk)
+								["classes"] = { 10 },	-- Monk
+								["sourceQuest"] = 31158,	-- The Basics: Hitting Things (Monk)
+							},
+							{	-- Proving Pit (Monk)
+								["questID"] = 31161,
 								["groups"] = {
-									i(85574), -- Darkspear Monk's Staff
+									i(85574),	-- Darkspear Monk's Staff
 								},
-								["qg"] = 63310, -- Zabrax
+								["qg"] = 63310,	-- Zabrax
 								["coord"] = { 52.6, 51.8 },
-								["classes"] = { 10 }, -- Monk
-								["sourceQuest"] = 31160, -- A Rough Start (Monk)
-							}),
-							q(31163, { -- More Than Expected (Monk)
-								["qg"] = 63310, -- Zabrax
+								["classes"] = { 10 },	-- Monk
+								["sourceQuest"] = 31160,	-- A Rough Start (Monk)
+							},
+							{	-- More Than Expected (Monk)
+								["questID"] = 31163,
+								["qg"] = 63310,	-- Zabrax
 								["coord"] = { 52.6, 51.8 },
-								["classes"] = { 10 }, -- Monk
-								["sourceQuest"] = 31161, -- Proving Pit (Monk)
-							}),
+								["classes"] = { 10 },	-- Monk
+								["sourceQuest"] = 31161,	-- Proving Pit (Monk)
+							},
 							-- Priest Quests --
-							q(24782, { -- The Rise of the Darkspear (Priest)
-								["qg"] = 37951, -- Jin'thala
+							{	-- The Rise of the Darkspear (Priest)
+								["questID"] = 24782,
+								["qg"] = 37951,	-- Jin'thala
 								["coord"] = { 42.8, 53.4 },
-								["classes"] = { 5 }, -- Priest
-							}),
-							q(24783, { -- The Basics: Hitting Things (Priest)
-								["qg"] = 38245, -- Tunari
+								["classes"] = { 5 },	-- Priest
+							},
+							{	-- The Basics: Hitting Things (Priest)
+								["questID"] = 24783,
+								["qg"] = 38245,	-- Tunari
 								["coord"] = { 58.0, 49.3 },
-								["classes"] = { 5 }, -- Priest
-								["sourceQuest"] = 24782, -- The Rise of the Darkspear (Priest)
-							}),
-							q(24785, { -- A Rough Start (Priest)
-								["qg"] = 38245, -- Tunari
+								["classes"] = { 5 },	-- Priest
+								["sourceQuest"] = 24782,	-- The Rise of the Darkspear (Priest)
+							},
+							{	-- A Rough Start (Priest)
+								["questID"] = 24785,
+								["qg"] = 38245,	-- Tunari
 								["coord"] = { 58.0, 49.3 },
-								["classes"] = { 5 }, -- Priest
-								["sourceQuest"] = 24783, -- The Basics: Hitting Things (Priest)
-							}),
-							q(24786, { -- Proving Pit (Priest)
+								["classes"] = { 5 },	-- Priest
+								["sourceQuest"] = 24783,	-- The Basics: Hitting Things (Priest)
+							},
+							{	-- Proving Pit (Priest)
+								["questID"] = 24786,
 								["groups"] = {
-									i(52874), -- Darkspear Soothsayer Robes
+									i(52874),	-- Darkspear Soothsayer Robes
 								},
-								["qg"] = 38245, -- Tunari
+								["qg"] = 38245,	-- Tunari
 								["coord"] = { 58.0, 49.3 },
-								["classes"] = { 5 }, -- Priest
-								["sourceQuest"] = 24785, -- A Rough Start (Priest)
-							}),
-							q(24787, { -- More Than Expected (Priest)
-								["qg"] = 38245, -- Tunari
+								["classes"] = { 5 },	-- Priest
+								["sourceQuest"] = 24785,	-- A Rough Start (Priest)
+							},
+							{	-- More Than Expected (Priest)
+								["questID"] = 24787,
+								["qg"] = 38245,	-- Tunari
 								["coord"] = { 58.0, 49.3 },
-								["classes"] = { 5 }, -- Priest
-								["sourceQuest"] = 24786, -- Proving Pit (Priest)
-							}),
+								["classes"] = { 5 },	-- Priest
+								["sourceQuest"] = 24786,	-- Proving Pit (Priest)
+							},
 							-- Rogue Quests --
-							q(24770, { -- The Rise of the Darkspear (Rogue)
-								["qg"] = 37951, -- Jin'thala
+							{	-- The Rise of the Darkspear (Rogue)
+								["questID"] = 24770,
+								["qg"] = 37951,	-- Jin'thala
 								["coord"] = { 42.8, 53.4 },
-								["classes"] = { 4 }, -- Rogue
-							}),
-							q(24771, { -- The Basics: Hitting Things (Rogue)
-								["qg"] = 38244, -- Legati
+								["classes"] = { 4 },	-- Rogue
+							},
+							{	-- The Basics: Hitting Things (Rogue)
+								["questID"] = 24771,
+								["qg"] = 38244,	-- Legati
 								["coord"] = { 52.9, 49.9 },
-								["classes"] = { 4 }, -- Rogue
-								["sourceQuest"] = 24770, -- The Rise of the Darkspear (Rogue)
-							}),
-							q(24773, { -- A Rough Start (Rogue)
-								["qg"] = 38244, -- Legati
+								["classes"] = { 4 },	-- Rogue
+								["sourceQuest"] = 24770,	-- The Rise of the Darkspear (Rogue)
+							},
+							{	-- A Rough Start (Rogue)
+								["questID"] = 24773,
+								["qg"] = 38244,	-- Legati
 								["coord"] = { 52.9, 49.9 },
-								["classes"] = { 4 }, -- Rogue
-								["sourceQuest"] = 24770, -- The Basics: Hitting Things (Rogue)
-							}),
-							q(24774, { -- Proving Pit (Rogue)
+								["classes"] = { 4 },	-- Rogue
+								["sourceQuest"] = 24770,	-- The Basics: Hitting Things (Rogue)
+							},
+							{	-- Proving Pit (Rogue)
+								["questID"] = 24774,
 								["groups"] = {
-									i(52889), -- Blooded Darkspear Dagger
+									i(52889),	-- Blooded Darkspear Dagger
 								},
-								["qg"] = 38244, -- Legati
+								["qg"] = 38244,	-- Legati
 								["coord"] = { 52.9, 49.9 },
-								["classes"] = { 4 }, -- Rogue
-								["sourceQuest"] = 24773, -- A Rough Start (Rogue)
-							}),
-							q(24775, { -- More Than Expected (Rogue)
-								["qg"] = 38244, -- Legati
+								["classes"] = { 4 },	-- Rogue
+								["sourceQuest"] = 24773,	-- A Rough Start (Rogue)
+							},
+							{	-- More Than Expected (Rogue)
+								["questID"] = 24775,
+								["qg"] = 38244,	-- Legati
 								["coord"] = { 52.9, 49.9 },
-								["classes"] = { 4 }, -- Rogue
-								["sourceQuest"] = 24774, -- Proving Pit (Rogue)
-							}),
+								["classes"] = { 4 },	-- Rogue
+								["sourceQuest"] = 24774,	-- Proving Pit (Rogue)
+							},
 							-- Shaman Quests --
-							q(24758, { -- The Rise of the Darkspear (Shaman)
-								["qg"] = 37951, -- Jin'thala
+							{	-- The Rise of the Darkspear (Shaman)
+								["questID"] = 24758,
+								["qg"] = 37951,	-- Jin'thala
 								["coord"] = { 42.8, 53.4 },
-								["classes"] = { 7 }, -- Shaman
-							}),
-							q(24759, { -- The Basics: Hitting Things (Shaman)
-								["qg"] = 38242, -- Nekali
+								["classes"] = { 7 },	-- Shaman
+							},
+							{	-- The Basics: Hitting Things (Shaman)
+								["questID"] = 24759,
+								["qg"] = 38242,	-- Nekali
 								["coord"] = { 50.1, 52.8 },
-								["classes"] = { 7 }, -- Shaman
-								["sourceQuest"] = 24758, -- The Rise of the Darkspear (Shaman)
-							}),
-							q(24761, { -- A Rough Start (Shaman)
-								["qg"] = 38242, -- Nekali
+								["classes"] = { 7 },	-- Shaman
+								["sourceQuest"] = 24758,	-- The Rise of the Darkspear (Shaman)
+							},
+							{	-- A Rough Start (Shaman)
+								["questID"] = 24761,
+								["qg"] = 38242,	-- Nekali
 								["coord"] = { 50.1, 52.8 },
-								["classes"] = { 7 }, -- Shaman
-								["sourceQuest"] = 24759, -- The Basics: Hitting Things (Shaman)
-							}),
-							q(24762, { -- Proving Pit (Shaman)
+								["classes"] = { 7 },	-- Shaman
+								["sourceQuest"] = 24759,	-- The Basics: Hitting Things (Shaman)
+							},
+							{	-- Proving Pit (Shaman)
+								["questID"] = 24762,
 								["groups"] = {
-									i(52875), -- Darkspear Shamanic Staff
+									i(52875),	-- Darkspear Shamanic Staff
 								},
-								["qg"] = 38242, -- Nekali
+								["qg"] = 38242,	-- Nekali
 								["coord"] = { 50.1, 52.8 },
-								["classes"] = { 7 }, -- Shaman
-								["sourceQuest"] = 24761, -- A Rough Start (Shaman)
-							}),
-							q(24763, { -- More Than Expected (Shaman)
-								["qg"] = 38242, -- Nekali
+								["classes"] = { 7 },	-- Shaman
+								["sourceQuest"] = 24761,	-- A Rough Start (Shaman)
+							},
+							{	-- More Than Expected (Shaman)
+								["questID"] = 24763,
+								["qg"] = 38242,	-- Nekali
 								["coord"] = { 50.1, 52.8 },
-								["classes"] = { 7 }, -- Shaman
-								["sourceQuest"] = 24762, -- Proving Pit (Shaman)
-							}),
+								["classes"] = { 7 },	-- Shaman
+								["sourceQuest"] = 24762,	-- Proving Pit (Shaman)
+							},
 							-- Warlock Quests --
-							q(26272, { -- The Rise of the Darkspear (Warlock)
-								["qg"] = 37951, -- Jin'thala
+							{	-- The Rise of the Darkspear (Warlock)
+								["questID"] = 26272,
+								["qg"] = 37951,	-- Jin'thala
 								["coord"] = { 42.8, 53.4 },
-								["classes"] = { 9 }, -- Warlock
-							}),
-							q(26273, { -- The Basics: Hitting Things (Warlock)
-								["qg"] = 42618, -- Voldreka
+								["classes"] = { 9 },	-- Warlock
+							},
+							{	-- The Basics: Hitting Things (Warlock)
+								["questID"] = 26273,
+								["qg"] = 42618,	-- Voldreka
 								["coord"] = { 50.0, 50.0 },
-								["classes"] = { 9 }, -- Warlock
-								["sourceQuest"] = 26272, -- The Rise of the Darkspear (Warlock)
-							}),
-							q(26275, { -- A Rough Start (Warlock)
-								["qg"] = 42618, -- Voldreka
+								["classes"] = { 9 },	-- Warlock
+								["sourceQuest"] = 26272,	-- The Rise of the Darkspear (Warlock)
+							},
+							{	-- A Rough Start (Warlock)
+								["questID"] = 26275,
+								["qg"] = 42618,	-- Voldreka
 								["coord"] = { 50.0, 50.0 },
-								["classes"] = { 9 }, -- Warlock
-								["sourceQuest"] = 26273, -- The Basics: Hitting Things (Warlock)
-							}),
-							q(26276, { -- Proving Pit (Warlock)
+								["classes"] = { 9 },	-- Warlock
+								["sourceQuest"] = 26273,	-- The Basics: Hitting Things (Warlock)
+							},
+							{	-- Proving Pit (Warlock)
+								["questID"] = 26276,
 								["groups"] = {
-									i(52873), -- Darkspear Magic Weaver Tunic
+									i(52873),	-- Darkspear Magic Weaver Tunic
 								},
-								["qg"] = 42618, -- Voldreka
+								["qg"] = 42618,	-- Voldreka
 								["coord"] = { 50.0, 50.0 },
-								["classes"] = { 9 }, -- Warlock
-								["sourceQuest"] = 26275, -- A Rough Start (Warlock)
-							}),
-							q(26277, { -- More Than Expected (Warlock)
-								["qg"] = 42618, -- Voldreka
+								["classes"] = { 9 },	-- Warlock
+								["sourceQuest"] = 26275,	-- A Rough Start (Warlock)
+							},
+							{	-- More Than Expected (Warlock)
+								["questID"] = 26277,
+								["qg"] = 42618,	-- Voldreka
 								["coord"] = { 50.0, 50.0 },
-								["classes"] = { 9 }, -- Warlock
-								["sourceQuest"] = 26276, -- Proving Pit (Warlock)
-							}),
+								["classes"] = { 9 },	-- Warlock
+								["sourceQuest"] = 26276,	-- Proving Pit (Warlock)
+							},
 							-- Warrior Quests --
-							q(24607, { -- The Rise of the Darkspear (Warrior)
-								["qg"] = 37951, -- Jin'thala
+							{	-- The Rise of the Darkspear (Warrior)
+								["questID"] = 24607,
+								["qg"] = 37951,	-- Jin'thala
 								["coord"] = { 42.8, 53.4 },
-								["classes"] = { 1 }, -- Warrior
-							}),
-							q(24639, { -- The Basics: Hitting Things (Warrior)
-								["qg"] = 38037, -- Nortet
+								["classes"] = { 1 },	-- Warrior
+							},
+							{	-- The Basics: Hitting Things (Warrior)
+								["questID"] = 24639,
+								["qg"] = 38037,	-- Nortet
 								["coord"] = { 52.5, 53.7 },
-								["classes"] = { 1 }, -- Warrior
-								["sourceQuest"] = 24607, -- The Rise of the Darkspear (Warrior)
-							}),
-							q(24641, { -- A Rough Start (Warrior)
-								["qg"] = 38037, -- Nortet
+								["classes"] = { 1 },	-- Warrior
+								["sourceQuest"] = 24607,	-- The Rise of the Darkspear (Warrior)
+							},
+							{	-- A Rough Start (Warrior)
+								["questID"] = 24641,
+								["qg"] = 38037,	-- Nortet
 								["coord"] = { 52.5, 53.7 },
-								["classes"] = { 1 }, -- Warrior
-								["sourceQuest"] = 24639, -- The Basics: Hitting Things (Warrior)
-							}),
-							q(24642, { -- Proving Pit (Warrior)
+								["classes"] = { 1 },	-- Warrior
+								["sourceQuest"] = 24639,	-- The Basics: Hitting Things (Warrior)
+							},
+							{	-- Proving Pit (Warrior)
+								["questID"] = 24642,
 								["groups"] = {
-									i(52876), -- Darkspear Battle Axe
+									i(52876),	-- Darkspear Battle Axe
 								},
-								["qg"] = 38037, -- Nortet
+								["qg"] = 38037,	-- Nortet
 								["coord"] = { 52.5, 53.7 },
-								["classes"] = { 1 }, -- Warrior
-								["sourceQuest"] = 24641, -- A Rough Start (Warrior)
-							}),
-							q(24643, { -- More Than Expected (Warrior)
-								["qg"] = 38037, -- Nortet
+								["classes"] = { 1 },	-- Warrior
+								["sourceQuest"] = 24641,	-- A Rough Start (Warrior)
+							},
+							{	-- More Than Expected (Warrior)
+								["questID"] = 24643,
+								["qg"] = 38037,	-- Nortet
 								["coord"] = { 52.5, 53.7 },
-								["classes"] = { 1 }, -- Warrior
-								["sourceQuest"] = 24642, -- Proving Pit (Warrior)
-							}),
+								["classes"] = { 1 },	-- Warrior
+								["sourceQuest"] = 24642,	-- Proving Pit (Warrior)
+							},
 							-- Other Quests --
-							q(25064, { -- Moraya
-								["qg"] = 38966, -- Vol'jin
+							{	-- Moraya
+								["questID"] = 25064,
+								["qg"] = 38966,	-- Vol'jin
 								["classes"] = {
 									1,	-- Warrior
 									3,	-- Hunter
@@ -321,10 +374,11 @@ _.Zones =
 									11,	-- Druid
 								},
 								["coord"] = { 61.6, 65.9 },
-								["sourceQuests"] = { 24781, 31163, 24787, 24775, 24763, 24755, 26277, 24643, 24769}, -- More Than Expected (All Classes)
-							}),
-							q(24622, { -- A Troll's Truest Companion
-								["qg"] = 38005, -- Moraya
+								["sourceQuests"] = { 24781, 31163, 24787, 24775, 24763, 24755, 26277, 24643, 24769},	-- More Than Expected (All Classes)
+							},
+							{	-- A Troll's Truest Companion
+								["questID"] = 24622,
+								["qg"] = 38005,	-- Moraya
 								["classes"] = {
 									1,	-- Warrior
 									3,	-- Hunter
@@ -337,10 +391,11 @@ _.Zones =
 									11,	-- Druid
 								},
 								["coord"] = { 56.8, 63.7 },
-								["sourceQuest"] = 25064, -- Moraya
-							}),
-							q(25037, { -- Crab Fishin'
-								["qg"] = 39007, -- Tora'jin
+								["sourceQuest"] = 25064,	-- Moraya
+							},
+							{	-- Crab Fishin'
+								["questID"] = 25037,
+								["qg"] = 39007,	-- Tora'jin
 								["classes"] = {
 									1,	-- Warrior
 									3,	-- Hunter
@@ -353,10 +408,11 @@ _.Zones =
 									11,	-- Druid
 								},
 								["coord"] = { 60.5, 62.9 },
-								["sourceQuest"] = 25064, -- Moraya
-							}),
-							q(24625, { -- Consort of the Sea Witch
-								["qg"] = 37987, -- Tegashi
+								["sourceQuest"] = 25064,	-- Moraya
+							},
+							{	-- Consort of the Sea Witch
+								["questID"] = 24625,
+								["qg"] = 37987,	-- Tegashi
 								["classes"] = {
 									1,	-- Warrior
 									3,	-- Hunter
@@ -369,10 +425,11 @@ _.Zones =
 									11,	-- Druid
 								},
 								["coord"] = { 45.7, 85.0 },
-								["sourceQuest"] = 24622, -- A Troll's Truest Companion
-							}),
-							q(24624, { -- Mercy for the Lost
-								["qg"] = 37987, -- Tegashi
+								["sourceQuest"] = 24622,	-- A Troll's Truest Companion
+							},
+							{	-- Mercy for the Lost
+								["questID"] = 24624,
+								["qg"] = 37987,	-- Tegashi
 								["classes"] = {
 									1,	-- Warrior
 									3,	-- Hunter
@@ -385,10 +442,11 @@ _.Zones =
 									11,	-- Druid
 								},
 								["coord"] = { 45.7, 85.0 },
-								["sourceQuest"] = 24622, -- A Troll's Truest Companion
-							}),
-							q(24623, { -- Saving the Young
-								["qg"] = 37969, -- Kijara
+								["sourceQuest"] = 24622,	-- A Troll's Truest Companion
+							},
+							{	-- Saving the Young
+								["questID"] = 24623,
+								["qg"] = 37969,	-- Kijara
 								["classes"] = {
 									1,	-- Warrior
 									3,	-- Hunter
@@ -401,10 +459,11 @@ _.Zones =
 									11,	-- Druid
 								},
 								["coord"] = { 44.6, 85.6 },
-								["sourceQuest"] = 24622, -- A Troll's Truest Companion
-							}),
-							q(24626, { -- Young and Vicious
-								["qg"] = 37969, -- Kijara
+								["sourceQuest"] = 24622,	-- A Troll's Truest Companion
+							},
+							{	-- Young and Vicious
+								["questID"] = 24626,
+								["qg"] = 37969,	-- Kijara
 								["classes"] = {
 									1,	-- Warrior
 									3,	-- Hunter
@@ -422,9 +481,10 @@ _.Zones =
 									24624,	-- Mercy for the Lost
 									24623,	-- Saving the Young
 								},
-							}),
-							q(25035, { -- Breaking the Line
-								["qg"] = 38440, -- Tortunga
+							},
+							{	-- Breaking the Line
+								["questID"] = 25035,
+								["qg"] = 38440,	-- Tortunga
 								["classes"] = {
 									1,	-- Warrior
 									3,	-- Hunter
@@ -437,10 +497,11 @@ _.Zones =
 									11,	-- Druid
 								},
 								["coord"] = { 59.0, 66.8 },
-								["sourceQuest"] = 24626, -- Young and Vicious
-							}),
-							q(24812, { -- No More Mercy
-								["qg"] = 38442, -- Morakki
+								["sourceQuest"] = 24626,	-- Young and Vicious
+							},
+							{	-- No More Mercy
+								["questID"] = 24812,
+								["qg"] = 38442,	-- Morakki
 								["classes"] = {
 									1,	-- Warrior
 									3,	-- Hunter
@@ -453,10 +514,11 @@ _.Zones =
 									11,	-- Druid
 								},
 								["coord"] = { 58.9, 23.1 },
-								["sourceQuest"] = 25035, -- Breaking the Line
-							}),
-							q(24813, { -- Territorial Fetish
-								["qg"] = 38442, -- Morakki
+								["sourceQuest"] = 25035,	-- Breaking the Line
+							},
+							{	-- Territorial Fetish
+								["questID"] = 24813,
+								["qg"] = 38442,	-- Morakki
 								["classes"] = {
 									1,	-- Warrior
 									3,	-- Hunter
@@ -469,10 +531,11 @@ _.Zones =
 									11,	-- Druid
 								},
 								["coord"] = { 58.9, 23.1 },
-								["sourceQuest"] = 25035, -- Breaking the Line
-							}),
-							q(24814, { -- An Ancient Enemy
-								["qg"] = 38442, -- Morakki
+								["sourceQuest"] = 25035,	-- Breaking the Line
+							},
+							{	-- An Ancient Enemy
+								["questID"] = 24814,
+								["qg"] = 38442,	-- Morakki
 								["classes"] = {
 									1,	-- Warrior
 									3,	-- Hunter
@@ -489,9 +552,10 @@ _.Zones =
 									24812,	-- No More Mercy
 									24813,	-- Territorial Fetish
 								}
-							}),
-							q(25073, { -- Sen'jin Village
-								["qg"] = 38966, -- Vol'jin
+							},
+							{	-- Sen'jin Village
+								["questID"] = 25073,
+								["qg"] = 38966,	-- Vol'jin
 								["classes"] = {
 									1,	-- Warrior
 									3,	-- Hunter
@@ -504,36 +568,41 @@ _.Zones =
 									11,	-- Druid
 								},
 								["coord"] = { 61.6, 65.9 },
-								["sourceQuest"] = 24814, -- An Ancient Enemy
+								["sourceQuest"] = 24814,	-- An Ancient Enemy
 								["isBreadcrumb"] = true,
-							}),
+							},
 							-- Pandaren Campaign Quests --
-							q(32320, { -- The Horde Is Family
-								["qg"] = 68025, -- Thrall
+							{	-- The Horde Is Family
+								["questID"] = 32320,
+								["qg"] = 68025,	-- Thrall
 								["lvl"] = 81,
 								["coord"] = { 38.4, 46.6 },
-								["sourceQuest"] = 32319, -- Find Thrall!
-							}),
-							q(32372, { -- De-Subjugation
-								["qg"] = 68025, -- Thrall
+								["sourceQuest"] = 32319,	-- Find Thrall!
+							},
+							{	-- De-Subjugation
+								["questID"] = 32372,
+								["qg"] = 68025,	-- Thrall
 								["lvl"] = 81,
 								["coord"] = { 38.4, 46.6 },
-								["sourceQuest"] = 32320, -- The Horde is Family
-							}),
+								["sourceQuest"] = 32320,	-- The Horde is Family
+							},
 							-- Battle for Azeroth, Spirit of Vol'Jin questline
-							q(51514, {	-- Broken Bargain
+							{	-- Broken Bargain
+								["questID"] = 51514,
 								["qg"] = 137878,	-- Master Gadrin
 								["lvl"] = 120,
 								["coord"] = { 59.5, 51.5 },
 								["sourceQuest"] = 51513,	-- Zalazane Returns
-							}),
-							q(51533, {	-- The Glaive of Vol'jin
+							},
+							{	-- The Glaive of Vol'jin
+								["questID"] = 51533,
 								["qg"] = 120173,	-- Zen'tarba
 								["lvl"] = 120,
 								["coord"] = { 59.2, 52.0 },
 								["sourceQuest"] = 51513,	-- Zalazane Returns
-							}),
-							q(51515, {	-- Vengeance for Vol'jin
+							},
+							{	-- Vengeance for Vol'jin
+								["questID"] = 51515,
 								["qg"] = 137878,	-- Master Gadrin
 								["lvl"] = 120,
 								["coord"] = { 59.5, 51.5 },
@@ -541,13 +610,14 @@ _.Zones =
 									51514,	-- Broken Bargain
 									51533,	-- The Glaive of Vol'jin
 								},
-							}),
-							q(52114, {	-- Honoring a True Leader
+							},
+							{	-- Honoring a True Leader
+								["questID"] = 52114,
 								["qg"] = 137878,	-- Master Gadrin
 								["lvl"] = 120,
 								["coord"] = { 59.5, 51.5 },
 								["sourceQuest"] = 51515,	-- Vengeance for Vol'jin
-							}),
+							},
 						},
 						["races"] = HORDE_ONLY,
 					}),
