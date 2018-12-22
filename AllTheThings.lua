@@ -978,16 +978,15 @@ local CompletedQuests = setmetatable({}, {__newindex = function (t, key, value)
 	rawset(t, key, value);
 	
 	if GetDataMember("DebugCompletedQuests") then
-		if GetDataMember("OnlyReportUnsortedQuests") then
-			local searchResults = app.SearchForQuestID(key);
-			if searchResults and #searchResults > 0 then
+		local searchResults = app.SearchForField("questID", key);
+		if searchResults and #searchResults > 0 then
+			if GetDataMember("OnlyReportUnsortedQuests") then
 				return true;
 			end
-			
-			print("Completed Quest ID #" .. key .. " NOT FOUND IN ATT!");
 		else
-			print("Completed Quest ID #" .. key);
+			key = key .. " (Missing in ATT)";
 		end
+		print("Completed Quest ID #" .. key);
 	end
 end});
 local IsQuestFlaggedCompleted = function(questID)
