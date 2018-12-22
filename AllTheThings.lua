@@ -1173,9 +1173,7 @@ local function CreateObject(t)
 	else
 		if t.isToy then s.isToy = true; end
 		for key,value in pairs(t) do
-			--if key ~= "parent" then
-				s[key] = value;
-			--end
+			s[key] = value;
 		end
 		if t.g then
 			s.g = {};
@@ -1376,6 +1374,49 @@ CacheFields = function(group)
 end
 app.CacheFields = CacheFields;
 end)();
+local function SearchForFieldRecursively(group, field, value)
+	if group.g then
+		-- Go through the sub groups and determine if any of them have a response.
+		local first = nil;
+		for i, subgroup in ipairs(group.g) do
+			local g = SearchForFieldRecursively(subgroup, field, value);
+			if g then
+				if first then
+					-- Merge!
+					for j,data in ipairs(g) do
+						tinsert(first, data);
+					end
+				else
+					-- Cool! (This should be the most common occurance)
+					first = g;
+				end
+			end
+		end
+		if group[field] == value then
+			-- OH BOY, WE FOUND IT!
+			if first then
+				return tinsert(first, group);
+			else
+				return { group };
+			end
+		end
+		return first;
+	elseif group[field] == value then
+		-- OH BOY, WE FOUND IT!
+		return { group };
+	end
+end
+local function SearchForFieldContainer(field)
+	if field then return fieldCache[field]; end
+end
+local function SearchForField(field, id)
+	if field and id then
+		local group = app:GetDataCache();
+		if fieldCache[field] then return fieldCache[field][id]; end
+		return SearchForFieldRecursively(group, field, id);
+	end
+end
+app.SearchForField = SearchForField;
 
 -- Note Lib
 local function SetNote(key, id, note)
@@ -1406,29 +1447,6 @@ end
 app.SetNote = SetNote;
 
 -- Item Information Lib
-local function SortGearSetInformation(a,b)
-	local first = a.uiOrder - b.uiOrder;
-	if first == 0 then return a.setID < b.setID; end
-	return first < 0;
-end
-local function SortGearSetSources(a,b)
-	local first = a.invType - b.invType;
-	if first == 0 then return a.invType < b.invType; end
-	return first < 0;
-end
-local function GetArtifactCache()
-	local cache = GetTempDataMember("ARTIFACT_CACHE");
-	if not cache then
-		cache = {};
-		SetTempDataMember("ARTIFACT_CACHE", cache);
-		for i=1,10000,1 do
-			if C_ArtifactUI_GetAppearanceInfoByID(i) then
-				tinsert(cache, app.CreateArtifact(i));
-			end
-		end
-	end
-	return cache;
-end
 local function GetCollectionIcon(state)
 	return L((state and (state == 2 and "COLLECTED_APPEARANCE_ICON" or "COLLECTED_ICON")) or "NOT_COLLECTED_ICON");
 end
@@ -1441,217 +1459,6 @@ end
 local function GetCompletionText(state)
 	return L(state and "COMPLETE" or "INCOMPLETE");
 end
-local function GetModelCache()
-	local cache = GetTempDataMember("MODEL_CACHE");
-	if not cache then
-		cache = {};
-		SetTempDataMember("MODEL_CACHE", cache);
-		for i=1,78092,1 do
-			tinsert(cache, {["displayID"] = i,["text"] = "Model #" .. i});
-		end
-	end
-	return cache;
-end
-local function GetFactionCache()
-	local cache = GetTempDataMember("FACTION_CACHE");
-	if not cache then
-		cache = {};
-		SetTempDataMember("FACTION_CACHE", cache);
-		for i=1,5000,1 do
-			tinsert(cache, app.CreateFaction(i));
-		end
-	end
-	return cache;
-end
-local function GetIllusionCache()
-	local cache = GetTempDataMember("ILLUSION_CACHE");
-	if not cache then
-		cache = {};
-		SetTempDataMember("ILLUSION_CACHE", cache);
-		for i=1,10000,1 do
-			local visualID = select(1, C_TransmogCollection.GetIllusionSourceInfo(i));
-			if visualID and visualID > 0 then
-				tinsert(cache, app.CreateIllusion(i));
-			end
-		end
-	end
-	return cache;
-end
-local function GetTitleCache()
-	local cache = GetTempDataMember("TITLE_CACHE");
-	if not cache then
-		cache = {};
-		SetTempDataMember("TITLE_CACHE", cache);
-		for i=1,10000,1 do
-			if GetTitleName(i) then
-				tinsert(cache, app.CreateTitle(i));
-			end
-		end
-	end
-	return cache;
-end
-local function GetHolidayCache()
-	local cache = GetTempDataMember("HOLIDAY_CACHE");
-	if not cache then
-		cache = {};
-		SetTempDataMember("HOLIDAY_CACHE", cache);
-		SetDataMember("HOLIDAY_CACHE", cache);
-		local date = C_Calendar.GetDate();
-		C_Calendar.SetAbsMonth(date.month, date.year);
-		for month=1,12,1 do
-			C_Calendar.SetMonth(1);
-			for day=1,31,1 do
-				local numEvents = C_Calendar.GetNumDayEvents(0, day);
-				if numEvents > 0 then
-					for index=1,numEvents,1 do
-						local event = C_Calendar.GetDayEvent(0, day, index)
-						if event and event.calendarType == "HOLIDAY" and event.sequenceType == "START" then
-							if event.iconTexture then
-								local t = cache[event.iconTexture];
-								if not t then
-									t = {
-										["name"] = event.title,
-										["icon"] = event.iconTexture,
-										["times"] = {},
-									};
-									cache[event.iconTexture] = t;
-								elseif event.iconTexture == 235465 then
-									-- Harvest Festival and Pilgrims Bounty use the same icon...
-									t = {
-										["name"] = event.title,
-										["icon"] = event.iconTexture,
-										["times"] = {},
-									};
-									cache[235466] = t;
-								end
-								tinsert(t.times,
-								{
-									["start"] = time({
-										year=event.startTime.year,
-										month=event.startTime.month,
-										day=event.startTime.monthDay,
-										hour=event.startTime.hour,
-										minute=event.startTime.minute,
-									}),
-									["end"] = time({
-										year=event.endTime.year,
-										month=event.endTime.month,
-										day=event.endTime.monthDay,
-										hour=event.endTime.hour,
-										minute=event.endTime.minute,
-									}),
-									["startTime"] = event.startTime,
-									["endTime"] = event.endTime,
-								});
-							end
-						end
-					end
-				end
-			end
-		end
-		C_Calendar.SetAbsMonth(date.month, date.year);
-	end
-	return cache;
-end
-local function GetItemCache()
-	local cache = GetTempDataMember("ITEM_CACHE");
-	if not cache then
-		cache = {};
-		SetTempDataMember("ITEM_CACHE", cache);
-		for i=166000,1,-1 do
-			tinsert(cache, app.CreateItem(i));
-		end
-	end
-	return cache;
-end
-local function GetGearSetCache()
-	--if true then return nil; end
-	local db = GetTempDataMember("GEAR_SET_CACHE", nil);
-	if not db then
-		db = {};
-		db.expanded = false;
-		db.text = L("GEAR_SETS");
-		SetTempDataMember("GEAR_SET_CACHE", db);
-	end
-	
-	-- Rebuild the cache every time.
-	cache = {};
-	db.g = cache;
-	--SetDataMember("GEAR_SET_CACHE", cache);
-	local sets = C_TransmogSets.GetAllSets();
-	if sets then
-		local gearSets = {};
-		for index = 1,#sets do
-			local s = sets[index];
-			if s then
-				local sources = {};
-				tinsert(gearSets, setmetatable({ ["setID"] = s.setID, ["uiOrder"] = s.uiOrder, ["g"] = sources }, app.BaseGearSet));
-				for sourceID, value in pairs(C_TransmogSets.GetSetSources(s.setID)) do
-					local _, appearanceID = C_TransmogCollection_GetAppearanceSourceInfo(sourceID);
-					if appearanceID then
-						for i, otherSourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(appearanceID)) do
-							tinsert(sources, setmetatable({ s = otherSourceID }, app.BaseGearSource));
-						end
-					else
-						tinsert(sources, setmetatable({ s = sourceID }, app.BaseGearSource));
-					end
-				end
-				table.sort(sources, SortGearSetSources);
-			end
-		end
-		table.sort(gearSets, SortGearSetInformation);
-		
-		-- Let's build some headers!
-		local headers = {};
-		local header, subheader, lastHeader, lastSubHeader, lastHeaderText, lastSubHeaderText;
-		for i, gearSet in ipairs(gearSets) do
-			header = gearSet.header;
-			if header then
-				if header ~= lastHeaderText then
-					if headers[header] then
-						lastHeader = headers[header];
-					else
-						lastHeader = setmetatable({ ["setHeaderID"] = gearSet.setID, ["subheaders"] = {}, ["g"] = {} }, app.BaseGearSetHeader);
-						tinsert(cache, lastHeader);
-						lastHeader = lastHeader;
-						headers[header] = lastHeader;
-					end
-					lastHeaderText = header;
-					lastSubHeaderText = nil;
-				end
-			else
-				lastHeader = cache;
-				lastHeaderText = header;
-			end
-			subheader = gearSet.subheader;
-			if subheader then
-				if subheader ~= lastSubHeaderText then
-					if lastHeader and lastHeader.subheaders then
-						if lastHeader.subheaders[subheader] then
-							lastSubHeader = lastHeader.subheaders[subheader];
-						else
-							lastSubHeader = setmetatable({ ["setSubHeaderID"] = gearSet.setID, ["g"] = { } }, app.BaseGearSetSubHeader);
-							tinsert(lastHeader and lastHeader.g or lastHeader, lastSubHeader);
-							lastSubHeader = lastSubHeader;
-							lastHeader.subheaders[subheader] = lastSubHeader;
-						end
-					else
-						lastSubHeader = setmetatable({ ["setSubHeaderID"] = gearSet.setID, ["g"] = { } }, app.BaseGearSetSubHeader);
-						tinsert(lastHeader and lastHeader.g or lastHeader, lastSubHeader);
-						lastSubHeader = lastSubHeader;
-					end
-					lastSubHeaderText = subheader;
-				end
-			else
-				lastSubHeader = lastHeader;
-				lastSubHeaderText = subheader;
-			end
-			gearSet.uiOrder = nil;
-			tinsert(lastSubHeader and lastSubHeader.g or lastSubHeader, gearSet);
-		end
-	end
-	return db;
-end
 local function GetProgressText(data)
 	if data.total and (data.total > 1 or (data.total > 0 and not data.collectible)) then
 		return GetProgressColorText(data.progress or 0, data.total);
@@ -1663,23 +1470,6 @@ local function GetProgressText(data)
 		return "+++";
 	end
 	return "---";
-end
-local function GetRawSourceDataCache()
-	local cache = GetTempDataMember("RAW_DATA_CACHE");
-	if not cache then
-		cache = {};
-		SetTempDataMember("RAW_DATA_CACHE", cache);
-		local sCache = fieldCache["s"];
-		for s=1,100000 do
-			if not sCache[s] then
-				local t = app.CreateGearSource(s);
-				if t.info then
-					tinsert(cache, t);
-				end
-			end
-		end
-	end
-	return cache;
 end
 local function GetRelativeDifficulty(group, difficultyID)
 	if group then
@@ -1733,56 +1523,6 @@ local function GetRelativeValue(group, field)
 		if group.parent then return GetRelativeValue(group.parent, field); end
 	end
 end
-local function GetRelativeInstanceID(group)
-	if group then
-		if group.instanceID then return group.instanceID, group; end
-		if group.parent then return GetRelativeInstanceID(group.parent); end
-	end
-end
-local function SearchForFieldRecursively(group, field, value)
-	if group.g then
-		-- Go through the sub groups and determine if any of them have a response.
-		local first = nil;
-		for i, subgroup in ipairs(group.g) do
-			local g = SearchForFieldRecursively(subgroup, field, value);
-			if g then
-				if first then
-					-- Merge!
-					for j,data in ipairs(g) do
-						tinsert(first, data);
-					end
-				else
-					-- Cool! (This should be the most common occurance)
-					first = g;
-				end
-			end
-		end
-		if group[field] == value then
-			-- OH BOY, WE FOUND IT!
-			if first then
-				return tinsert(first, group);
-			else
-				return { group };
-			end
-		end
-		return first;
-	elseif group[field] == value then
-		-- OH BOY, WE FOUND IT!
-		return { group };
-	end
-end
-local function SearchForFieldContainer(field)
-	if app:GetDataCache() and field then
-		if fieldCache[field] then return fieldCache[field]; end
-	end
-end
-local function SearchForField(field, value)
-	local group = app:GetDataCache();
-	if group and field and value then
-		if fieldCache[field] then return fieldCache[field][value]; end
-		return SearchForFieldRecursively(group, field, value);
-	end
-end
 local function SearchForFieldAndSummarize(field, value)
 	local group = SearchForField(field, value);
 	if group then return {}, group; end
@@ -1795,66 +1535,15 @@ local function SearchForFieldAndSummarizeForCurrentDifficulty(field, value)
 			local subgroup = {};
 			for i,j in ipairs(group) do
 				if GetRelativeDifficulty(j, difficultyID) then
-					tinsert(subgroup, j);
+					MergeObject(subgroup, CreateObject(j));
 				end
 			end
+			app.UpdateGroups({}, subgroup, 1);
 			return {}, subgroup;
 		else
+			app.UpdateGroups({}, group, 1);
 			return {}, group;
 		end
-	end
-end
-local function SearchForItemIDRecursively(group, itemID)
-	if group.itemID == itemID then
-		-- OH BOY, WE FOUND IT!
-		return { group };
-	end
-	if group.g then
-		-- Go through the sub groups and determine if any of them have a response.
-		local first = nil;
-		for i, subgroup in ipairs(group.g) do
-			local g = SearchForItemIDRecursively(subgroup, itemID);
-			if g then
-				if first then
-					-- Merge!
-					tinsert(first, g[1]);
-				else
-					-- Cool! (This should be the most common occurrence)
-					first = g;
-				end
-			end
-		end
-		return first;
-	end
-end
-local function SearchForItemID(itemID)
-	if itemID and itemID > 0 and app:GetDataCache() then
-		return fieldCache["itemID"][itemID];
-	end
-end
-local function SearchForMapRecursively(group, mapID)
-	if group.mapID == mapID or (group.maps and contains(group.maps, mapID)) then
-		-- OH BOY, WE FOUND IT!
-		return true;
-	end
-	
-	if group.g then
-		-- Go through the sub groups and determine if any of them have a response.
-		for i, subgroup in ipairs(group.g) do
-			if SearchForMapRecursively(subgroup, mapID) then
-				return true;
-			end
-		end
-	end
-end
-local function SearchForQuestID(questID)
-	if questID and app:GetDataCache() then
-		return fieldCache["questID"][questID];
-	end
-end
-local function SearchForSourceID(sourceID)
-	if sourceID and sourceID > 0 and app:GetDataCache() then
-		return fieldCache["s"][sourceID];
 	end
 end
 local function SearchForSourceIDQuickly(sourceID)
@@ -1885,7 +1574,7 @@ local function SearchForItemLink(field, link)
 				local sourceID = quality ~= LE_ITEM_QUALITY_ARTIFACT and GetSourceID(link, itemID);
 				if sourceID then
 					important = true;
-					group = SearchForSourceID(sourceID) or SearchForItemID(itemID);
+					group = SearchForField("s", sourceID) or SearchForField("itemID", itemID);
 					if group and #group > 0 then
 						local sourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
 						if sourceInfo then
@@ -1900,7 +1589,7 @@ local function SearchForItemLink(field, link)
 									-- The user doesn't want to see Shared Appearances that don't match the item's requirements.
 									local text;
 									for i, otherSourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
-										local otherATTSource = SearchForSourceID(otherSourceID);
+										local otherATTSource = SearchForField("s", otherSourceID);
 										if otherATTSource then
 											otherATTSource = otherATTSource[1];
 											
@@ -1944,7 +1633,7 @@ local function SearchForItemLink(field, link)
 									-- This is where we need to calculate the requirements differently because Unique Mode users are extremely frustrating.
 									local text;
 									for i, otherSourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
-										local otherATTSource = SearchForSourceID(otherSourceID);
+										local otherATTSource = SearchForField("s", otherSourceID);
 										if otherATTSource then
 											otherATTSource = otherATTSource[1];
 											
@@ -2015,28 +1704,28 @@ local function SearchForItemLink(field, link)
 						end
 					end
 				else
-					group = SearchForItemID(itemID);
+					group = SearchForField("itemID", itemID);
 				end
 				
 				local reagentCache = app.GetDataSubMember("Reagents", itemID);
 				if reagentCache then
 					if not group then group = {}; end
-					-- tinsert(listing, "Reagent for:" .. DESCRIPTION_SEPARATOR .. "Count");
-					--self:AddDoubleLine("Reagent for:", "Count");
 					--[[
 					for recipeID,count in pairs(reagentCache[1]) do
-						local icon = select(3, GetSpellInfo(recipeID));
-						self:AddDoubleLine("  " .. (icon and ("|T" .. icon .. ":0|t") or "  ") .. (select(1, GetSpellLink(recipeID)) or ("Spell #" .. recipeID)), "x" .. count);
-					end
-					--]]
-					for itemID,count in pairs(reagentCache[2]) do
-						-- local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(itemID);
-						local searchResults = SearchForItemID(itemID);
+						local searchResults = SearchForField("spellID", recipeID);
 						if searchResults then
 							for i,o in ipairs(searchResults) do
 								tinsert(group, o);
 							end
-							-- self:AddDoubleLine("  " .. (icon and ("|T" .. icon .. ":0|t") or "  ") .. (link or ("Item #" .. itemID)), "x" .. count);
+						end
+					end
+					]]--
+					for itemID,count in pairs(reagentCache[2]) do
+						local searchResults = SearchForField("itemID", itemID);
+						if searchResults then
+							for i,o in ipairs(searchResults) do
+								tinsert(group, o);
+							end
 						end
 					end
 				end
@@ -2046,6 +1735,7 @@ local function SearchForItemLink(field, link)
 						MergeObject(merged_results, CreateObject(o));
 					end
 					group = merged_results;
+					app.UpdateGroups({}, group, 1);
 					
 					if group[1].u and group[1].u == 7 and numBonusIds and numBonusIds ~= "" and tonumber(numBonusIds) > 0 then
 						tinsert(listing, L("RECENTLY_MADE_OBTAINABLE"));
@@ -2129,12 +1819,7 @@ local function SearchForMissingItemNames(group)
 	end
 	return arr; 
 end
-app.SearchForQuestID = SearchForQuestID;
-app.SearchForItemID = SearchForItemID;
-app.SearchForSourceID = SearchForSourceID;
-app.SearchForItemLink = SearchForItemLink;
-app.SearchForField = SearchForField;
-app.UpdateSearchResults = function(searchResults)
+local function UpdateSearchResults(searchResults)
 	if searchResults and #searchResults > 0 then
 		-- Attempt to cleanly refresh the data.
 		local fresh = false;
@@ -2173,6 +1858,7 @@ app.UpdateSearchResults = function(searchResults)
 		app:RefreshData(fresh, true, true);
 	end
 end
+app.SearchForItemLink = SearchForItemLink;
 
 -- Map Information Lib
 local function AddTomTomWaypoint(group, auto)
@@ -3917,7 +3603,7 @@ end
 					if not GetDataSubMember("FlightPaths", nodeID) then
 						SetDataSubMember("FlightPaths", nodeID, 1);
 						SetPersonalDataSubMember("FlightPaths", nodeID, 1);
-						app.UpdateSearchResults(SearchForField("flightPathID", nodeID));
+						UpdateSearchResults(SearchForField("flightPathID", nodeID));
 					end
 				end
 			else
@@ -3925,7 +3611,7 @@ end
 					if not GetPersonalDataSubMember("FlightPaths", nodeID) then
 						SetDataSubMember("FlightPaths", nodeID, 1);
 						SetPersonalDataSubMember("FlightPaths", nodeID, 1);
-						app.UpdateSearchResults(SearchForField("flightPathID", nodeID));
+						UpdateSearchResults(SearchForField("flightPathID", nodeID));
 					end
 				end
 			end
@@ -4208,6 +3894,70 @@ app.CreateHeirloom = function(id, t)
 end
 
 -- Holiday Lib
+(function()
+local function GetHolidayCache()
+	local cache = GetTempDataMember("HOLIDAY_CACHE");
+	if not cache then
+		cache = {};
+		SetTempDataMember("HOLIDAY_CACHE", cache);
+		SetDataMember("HOLIDAY_CACHE", cache);
+		local date = C_Calendar.GetDate();
+		C_Calendar.SetAbsMonth(date.month, date.year);
+		for month=1,12,1 do
+			C_Calendar.SetMonth(1);
+			for day=1,31,1 do
+				local numEvents = C_Calendar.GetNumDayEvents(0, day);
+				if numEvents > 0 then
+					for index=1,numEvents,1 do
+						local event = C_Calendar.GetDayEvent(0, day, index)
+						if event and event.calendarType == "HOLIDAY" and event.sequenceType == "START" then
+							if event.iconTexture then
+								local t = cache[event.iconTexture];
+								if not t then
+									t = {
+										["name"] = event.title,
+										["icon"] = event.iconTexture,
+										["times"] = {},
+									};
+									cache[event.iconTexture] = t;
+								elseif event.iconTexture == 235465 then
+									-- Harvest Festival and Pilgrims Bounty use the same icon...
+									t = {
+										["name"] = event.title,
+										["icon"] = event.iconTexture,
+										["times"] = {},
+									};
+									cache[235466] = t;
+								end
+								tinsert(t.times,
+								{
+									["start"] = time({
+										year=event.startTime.year,
+										month=event.startTime.month,
+										day=event.startTime.monthDay,
+										hour=event.startTime.hour,
+										minute=event.startTime.minute,
+									}),
+									["end"] = time({
+										year=event.endTime.year,
+										month=event.endTime.month,
+										day=event.endTime.monthDay,
+										hour=event.endTime.hour,
+										minute=event.endTime.minute,
+									}),
+									["startTime"] = event.startTime,
+									["endTime"] = event.endTime,
+								});
+							end
+						end
+					end
+				end
+			end
+		end
+		C_Calendar.SetAbsMonth(date.month, date.year);
+	end
+	return cache;
+end
 app.BaseHoliday = {
 	__index = function(t, key)
 		if key == "key" then
@@ -4236,6 +3986,7 @@ app.BaseHoliday = {
 app.CreateHoliday = function(id, t)
 	return createInstance(constructor(id, t, "holidayID"), app.BaseHoliday);
 end
+end)();
 
 -- Illusion Lib
 app.BaseIllusion = {
@@ -4751,21 +4502,15 @@ local frame = CreateFrame("FRAME", nil, app);
 frame:SetSize(1, 1);
 frame:Hide();
 frame.events = {};
-frame:SetScript("OnEvent", function(self, e, ...) (self.events[e] or tostringall)(...); end);
+frame:SetScript("OnEvent", function(self, e, ...)
+	if IsQuestFlaggedCompleted(38356) or IsQuestFlaggedCompleted(37961) then
+		completed = true;
+		frame:UnregisterAllEvents();
+	end
+end);
 frame:RegisterEvent("PLAYER_LOGIN");
+frame:RegisterEvent("QUEST_COMPLETE");
 frame:RegisterEvent("QUEST_LOG_UPDATE");
-frame.events.PLAYER_LOGIN = function()
-	if IsQuestFlaggedCompleted(38356) or IsQuestFlaggedCompleted(37961) then
-		completed = true;
-		frame:UnregisterEvent("PLAYER_LOGIN");
-	end
-end
-frame.events.QUEST_LOG_UPDATE = function()
-	if IsQuestFlaggedCompleted(38356) or IsQuestFlaggedCompleted(37961) then
-		completed = true;
-		frame:UnregisterEvent("QUEST_LOG_UPDATE");
-	end
-end
 app.BaseMusicRoll = {
 	__index = function(t, key)
 		if key == "key" then
@@ -5933,7 +5678,7 @@ app.UpdateParentProgress = UpdateParentProgress;
 -- The following Helper Methods are used when you obtain a new appearance.
 function app.CompletionistItemCollectionHelper(sourceID, oldState)
 	-- Search ATT for the related sources.
-	local searchResults = SearchForSourceID(sourceID);
+	local searchResults = SearchForField("s", sourceID);
 	if searchResults and #searchResults > 0 then
 		-- Show the collection message.
 		if GetDataMember("ShowNotifications", true) then
@@ -6015,7 +5760,7 @@ function app.UniqueModeItemCollectionHelperBase(sourceID, oldState, filter)
 		if #unlockedSourceIDs > 0 then
 			for i, otherSourceID in ipairs(unlockedSourceIDs) do
 				-- Search ATT for this source ID.
-				searchResults = SearchForSourceID(otherSourceID);
+				searchResults = SearchForField("s", otherSourceID);
 				if searchResults and #searchResults > 0 then
 					for j,result in ipairs(searchResults) do
 						if result.visible and result.parent and result.parent.total then
@@ -6042,7 +5787,7 @@ function app.UniqueModeItemCollectionHelperBase(sourceID, oldState, filter)
 		end
 		
 		-- Search for the item that actually was unlocked.
-		searchResults = SearchForSourceID(sourceID);
+		searchResults = SearchForField("s", sourceID);
 		if searchResults and #searchResults > 0 then
 			if oldState == 0 then
 				for i,result in ipairs(searchResults) do
@@ -6100,7 +5845,7 @@ app.ActiveItemCollectionHelper = app.CompletionistItemCollectionHelper;
 
 function app.CompletionistItemRemovalHelper(sourceID, oldState)
 	-- Search ATT for the related sources.
-	local searchResults = SearchForSourceID(sourceID);
+	local searchResults = SearchForField("s", sourceID);
 	if searchResults and #searchResults > 0 then
 		-- Show the collection message.
 		if GetDataMember("ShowNotifications", true) then
@@ -6175,7 +5920,7 @@ function app.UniqueModeItemRemovalHelperBase(sourceID, oldState, filter)
 		if #unlockedSourceIDs > 0 then
 			for i, otherSourceID in ipairs(unlockedSourceIDs) do
 				-- Search ATT for this source ID.
-				searchResults = SearchForSourceID(otherSourceID);
+				searchResults = SearchForField("s", otherSourceID);
 				if searchResults and #searchResults > 0 then
 					for j,result in ipairs(searchResults) do
 						if result.visible and result.parent and result.parent.total then
@@ -6202,7 +5947,7 @@ function app.UniqueModeItemRemovalHelperBase(sourceID, oldState, filter)
 		end
 		
 		-- Search for the item that actually was unlocked.
-		searchResults = SearchForSourceID(sourceID);
+		searchResults = SearchForField("s", sourceID);
 		if searchResults and #searchResults > 0 then
 			if oldState == 0 then
 				for i,result in ipairs(searchResults) do
@@ -6263,18 +6008,19 @@ function app.GetNumberOfItemsUntilNextPercentage(progress, total)
 		return "|c" .. GetProgressColor(1) .. "YOU DID IT!|r";
 	else
 		local originalPercent = progress / total;
-		local roundedPercent = math.ceil(originalPercent * 100) * 0.01;
+		local nextPercent = math.ceil(originalPercent * 100);
+		local roundedPercent = nextPercent * 0.01;
 		local diff = math.ceil(total * (roundedPercent - originalPercent));
 		if diff < 1 then
 			return "|c" .. GetProgressColor(1) .. (total - progress) .. " THINGS UNTIL 100%|r";
 		else
-			return "|c" .. GetProgressColor(roundedPercent) .. diff .. " THINGS UNTIL " .. math.floor(roundedPercent * 100) .. "%|r";
+			return "|c" .. GetProgressColor(roundedPercent) .. diff .. " THINGS UNTIL " .. nextPercent .. "%|r";
 		end
 	end
 end
 function app.QuestCompletionHelper(questID)
 	-- Search ATT for the related quests.
-	local searchResults = SearchForQuestID(questID);
+	local searchResults = SearchForField("questID", questID);
 	if searchResults and #searchResults > 0 then
 		-- Only increase progress for Quests as Collectible users.
 		if GetDataMember("TreatQuestsAsCollectible") then
@@ -6403,7 +6149,6 @@ local function CreateMinimapButton()
 	button:Show();
 	return button;
 end
-app.CreateMinimapButton = CreateMinimapButton;
 local function CreateMiniListForGroup(group)
 	-- Pop Out Functionality! :O
 	local popout = app:GetWindow((group.parent and group.parent.text or "") .. (group.text or ""));
@@ -6586,6 +6331,7 @@ local function CreateMiniListForGroup(group)
 	--ExportData(popout.data);
 	popout:Toggle(true);
 end
+app.CreateMinimapButton = CreateMinimapButton;
 
 -- Row Helper Functions
 local CreateRow;
@@ -7823,29 +7569,40 @@ function app:GetDataCache()
 			table.insert(g, db);
 		end
 		
-		-- Titles (Dynamic)
-		db = app.CreateAchievement(2188, GetTitleCache());
-		db.expanded = false;
-		db.text = "Titles (Dynamic)";
-		table.insert(g, db);
-		
 		-- Models (Dynamic)
-		db = app.CreateAchievement(9924, GetModelCache());
+		db = app.CreateAchievement(9924, (function()
+			local cache = GetTempDataMember("MODEL_CACHE");
+			if not cache then
+				cache = {};
+				SetTempDataMember("MODEL_CACHE", cache);
+				for i=1,78092,1 do
+					tinsert(cache, {["displayID"] = i,["text"] = "Model #" .. i});
+				end
+			end
+			return cache;
+		end)());
 		db.expanded = false;
 		db.text = "Models (Dynamic)";
-		table.insert(g, db);
-		
-		-- Factions (Dynamic)
-		db = app.CreateAchievement(11177, GetFactionCache());
-		db.expanded = false;
-		db.text = "Factions (Dynamic)";
 		table.insert(g, db);
 		--]]
 		
 		-- Illusions (Dynamic)
 		--[[
 		db = {};
-		db.g = GetIllusionCache();
+		db.g = (function()
+			local cache = GetTempDataMember("ILLUSION_CACHE");
+			if not cache then
+				cache = {};
+				SetTempDataMember("ILLUSION_CACHE", cache);
+				for i=1,10000,1 do
+					local visualID = select(1, C_TransmogCollection.GetIllusionSourceInfo(i));
+					if visualID and visualID > 0 then
+						tinsert(cache, app.CreateIllusion(i));
+					end
+				end
+			end
+			return cache;
+		end)();
 		db.expanded = false;
 		db.text = "Illusions (Dynamic)";
 		table.insert(g, db);
@@ -7853,7 +7610,17 @@ function app:GetDataCache()
 		-- Items (Dynamic)
 		--[[
 		db = {};
-		db.g = GetItemCache();
+		db.g = (function()
+			local cache = GetTempDataMember("ITEM_CACHE");
+			if not cache then
+				cache = {};
+				SetTempDataMember("ITEM_CACHE", cache);
+				for i=166000,1,-1 do
+					tinsert(cache, app.CreateItem(i));
+				end
+			end
+			return cache;
+		end)();
 		db.expanded = false;
 		db.text = "All Items (Dynamic)";
 		table.insert(g, db);
@@ -7871,32 +7638,179 @@ function app:GetDataCache()
 		--[[
 		-- SUPER SECRETTTT!
 		-- Artifacts (Dynamic)
-		db = app.CreateAchievement(11171, GetArtifactCache());
+		db = app.CreateAchievement(11171, (function()
+			local cache = GetTempDataMember("ARTIFACT_CACHE");
+			if not cache then
+				cache = {};
+				SetTempDataMember("ARTIFACT_CACHE", cache);
+				for i=1,10000,1 do
+					if C_ArtifactUI_GetAppearanceInfoByID(i) then
+						tinsert(cache, app.CreateArtifact(i));
+					end
+				end
+			end
+			return cache;
+		end)());
 		db.expanded = false;
 		db.text = "Artifacts (Dynamic)";
 		table.insert(g, db);
 		
 		-- Titles (Dynamic)
-		db = app.CreateAchievement(2188, GetTitleCache());
+		db = app.CreateAchievement(2188, (function()
+			local cache = GetTempDataMember("TITLE_CACHE");
+			if not cache then
+				cache = {};
+				SetTempDataMember("TITLE_CACHE", cache);
+				for i=1,10000,1 do
+					if GetTitleName(i) then
+						tinsert(cache, app.CreateTitle(i));
+					end
+				end
+			end
+			return cache;
+		end)());
 		db.expanded = false;
 		db.text = "Titles (Dynamic)";
 		table.insert(g, db);
 		
 		-- Factions (Dynamic)
-		db = app.CreateAchievement(11177, GetFactionCache());
+		db = app.CreateAchievement(11177, (function()
+			local cache = GetTempDataMember("FACTION_CACHE");
+			if not cache then
+				cache = {};
+				SetTempDataMember("FACTION_CACHE", cache);
+				for i=1,5000,1 do
+					tinsert(cache, app.CreateFaction(i));
+				end
+			end
+			return cache;
+		end)());
 		db.expanded = false;
 		db.text = "Factions (Dynamic)";
 		table.insert(g, db);
 		
 		-- Gear Sets
-		table.insert(g, GetGearSetCache());
+		function SortGearSetInformation(a,b)
+			local first = a.uiOrder - b.uiOrder;
+			if first == 0 then return a.setID < b.setID; end
+			return first < 0;
+		end
+		function SortGearSetSources(a,b)
+			local first = a.invType - b.invType;
+			if first == 0 then return a.invType < b.invType; end
+			return first < 0;
+		end
+		table.insert(g, (function()
+			--if true then return nil; end
+			local db = GetTempDataMember("GEAR_SET_CACHE", nil);
+			if not db then
+				db = {};
+				db.expanded = false;
+				db.text = L("GEAR_SETS");
+				SetTempDataMember("GEAR_SET_CACHE", db);
+			end
+			
+			-- Rebuild the cache every time.
+			cache = {};
+			db.g = cache;
+			--SetDataMember("GEAR_SET_CACHE", cache);
+			local sets = C_TransmogSets.GetAllSets();
+			if sets then
+				local gearSets = {};
+				for index = 1,#sets do
+					local s = sets[index];
+					if s then
+						local sources = {};
+						tinsert(gearSets, setmetatable({ ["setID"] = s.setID, ["uiOrder"] = s.uiOrder, ["g"] = sources }, app.BaseGearSet));
+						for sourceID, value in pairs(C_TransmogSets.GetSetSources(s.setID)) do
+							local _, appearanceID = C_TransmogCollection_GetAppearanceSourceInfo(sourceID);
+							if appearanceID then
+								for i, otherSourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(appearanceID)) do
+									tinsert(sources, setmetatable({ s = otherSourceID }, app.BaseGearSource));
+								end
+							else
+								tinsert(sources, setmetatable({ s = sourceID }, app.BaseGearSource));
+							end
+						end
+						table.sort(sources, SortGearSetSources);
+					end
+				end
+				table.sort(gearSets, SortGearSetInformation);
+				
+				-- Let's build some headers!
+				local headers = {};
+				local header, subheader, lastHeader, lastSubHeader, lastHeaderText, lastSubHeaderText;
+				for i, gearSet in ipairs(gearSets) do
+					header = gearSet.header;
+					if header then
+						if header ~= lastHeaderText then
+							if headers[header] then
+								lastHeader = headers[header];
+							else
+								lastHeader = setmetatable({ ["setHeaderID"] = gearSet.setID, ["subheaders"] = {}, ["g"] = {} }, app.BaseGearSetHeader);
+								tinsert(cache, lastHeader);
+								lastHeader = lastHeader;
+								headers[header] = lastHeader;
+							end
+							lastHeaderText = header;
+							lastSubHeaderText = nil;
+						end
+					else
+						lastHeader = cache;
+						lastHeaderText = header;
+					end
+					subheader = gearSet.subheader;
+					if subheader then
+						if subheader ~= lastSubHeaderText then
+							if lastHeader and lastHeader.subheaders then
+								if lastHeader.subheaders[subheader] then
+									lastSubHeader = lastHeader.subheaders[subheader];
+								else
+									lastSubHeader = setmetatable({ ["setSubHeaderID"] = gearSet.setID, ["g"] = { } }, app.BaseGearSetSubHeader);
+									tinsert(lastHeader and lastHeader.g or lastHeader, lastSubHeader);
+									lastSubHeader = lastSubHeader;
+									lastHeader.subheaders[subheader] = lastSubHeader;
+								end
+							else
+								lastSubHeader = setmetatable({ ["setSubHeaderID"] = gearSet.setID, ["g"] = { } }, app.BaseGearSetSubHeader);
+								tinsert(lastHeader and lastHeader.g or lastHeader, lastSubHeader);
+								lastSubHeader = lastSubHeader;
+							end
+							lastSubHeaderText = subheader;
+						end
+					else
+						lastSubHeader = lastHeader;
+						lastSubHeaderText = subheader;
+					end
+					gearSet.uiOrder = nil;
+					tinsert(lastSubHeader and lastSubHeader.g or lastSubHeader, gearSet);
+				end
+			end
+			return db;
+		end)());
 		--]]
 		
 		-- Raw Source Data (Oh god)
 		--[[
 		db = {};
 		db.expanded = false;
-		db.g = GetRawSourceDataCache();
+		db.g = (function()
+			local cache = GetTempDataMember("RAW_DATA_CACHE");
+			if not cache then
+				cache = {};
+				SetTempDataMember("RAW_DATA_CACHE", cache);
+				local sCache = fieldCache["s"];
+				for s=1,100000 do
+					if not sCache[s] then
+						local t = app.CreateGearSource(s);
+						if t.info then
+							tinsert(cache, t);
+						end
+					end
+				end
+			end
+			return cache;
+		end)();
 		db.text = "Raw Source Data (Dynamic)";
 		table.insert(g, db);
 		--]]
@@ -8740,14 +8654,8 @@ end):Show();
 						results = header;
 					end
 					
-					-- Check to see if it is empty.
-					local expandible = true;
-					if self.data and SearchForMapRecursively(self.data, self.mapID) then
-						expandible = false;
-					end
-					
 					-- If we have determined that we want to expand this section, then do it
-					if expandible and results.g then
+					if results.g then
 						if self.data then
 							ExpandGroupsRecursively(self.data, false);
 						end
@@ -10035,6 +9943,7 @@ app.events.PLAYER_LOGIN = function()
 		GetQuestsCompleted(CompletedQuests);
 		wipe(DirtyQuests);
 		app:RegisterEvent("QUEST_LOG_UPDATE");
+		app:RegisterEvent("QUEST_COMPLETE");
 		RefreshSaves();
 		
 		app.CacheFlightPathData();
@@ -10116,7 +10025,7 @@ app.events.NEW_PET_ADDED = function(petID)
 	local speciesID = select(1, C_PetJournal.GetPetInfoByPetID(petID));
 	--print("NEW_PET_ADDED", petID, speciesID);
 	if speciesID and C_PetJournal.GetNumCollectedInfo(speciesID) == 1 then
-		app.UpdateSearchResults(SearchForField("speciesID", speciesID));
+		UpdateSearchResults(SearchForField("speciesID", speciesID));
 		app:PlayFanfare();
 		wipe(searchCache);
 	end
@@ -10132,13 +10041,14 @@ app.events.COMPANION_UNLEARNED = function(...)
 	--print("COMPANION_UNLEARNED", ...);
 	RefreshMountCollection();
 end
-app.events.QUEST_LOG_UPDATE = function()
+app.events.QUEST_COMPLETE = function()
 	GetQuestsCompleted(CompletedQuests);
 	for questID,completed in pairs(DirtyQuests) do
 		app.QuestCompletionHelper(tonumber(questID));
 	end
 	wipe(DirtyQuests);
 end
+app.events.QUEST_LOG_UPDATE = app.events.QUEST_COMPLETE;
 app.events.TOYS_UPDATED = function(itemID, new)
 	if itemID and not GetDataSubMember("CollectedToys", itemID) then
 		SetDataSubMember("CollectedToys", itemID, true);
