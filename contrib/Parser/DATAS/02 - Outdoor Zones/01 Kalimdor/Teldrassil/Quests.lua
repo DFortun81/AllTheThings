@@ -92,7 +92,6 @@ _.Zones =
 					}),
 --[[
 					qg(2083, qa(  489)),	-- Seek Redemption!
-					qg(49480, qa(28728)),	-- Signs of Things to Come
 					qg(7313, qa( 2518)),	-- Tears of the Moon
 --]]
 					qa(7383, {	-- Teldrassil: The Burden of the Kaldorei
@@ -210,12 +209,6 @@ _.Zones =
 					}),
 --[[					
 					qg(68077, qh(32328)),	-- Victorious Return
-					qg(49480, qa(28727, {	-- Vile Touch
-						["races"] = {4},
-					})),
-					qg(49480, qa(28726, {	-- Webwood Corruption
-						["races"] = {4},
-					})),
 					qg(2150, qa(  488)),	-- Zenn's Bidding					
 --]]
 				}),				
