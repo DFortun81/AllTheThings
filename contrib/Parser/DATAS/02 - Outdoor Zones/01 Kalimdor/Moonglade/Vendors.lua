@@ -8,7 +8,10 @@ _.Zones =
 			["groups"] = {
 				n(-2, {		-- Vendors
 					n(12023, {	-- Kharedon <Light Armor Merchant>
-						i(12254),	-- Well Oiled Cloak
+						["groups"] = {
+							i(12254),	-- Well Oiled Cloak
+						},
+						["coord"] = {  56.6, 29.8 },
 					}),
 					{	-- Lorelae Wintersong <Trade Supplies>
 						["npcID"] = 12022,	-- Lorelae Wintersong <Trade Supplies>
@@ -49,7 +52,10 @@ _.Zones =
 						},
 					},
 					n(12029, {	-- Narianna <Bowyer>
-						i(11308),	-- Sylvan Shortbow
+						["groups"] = {
+							i(11308),	-- Sylvan Shortbow
+						},
+						["coord"] = { 53.2, 42.6 },
 					}),
 				}),
 			},
