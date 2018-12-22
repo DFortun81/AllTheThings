@@ -331,7 +331,7 @@ _.GearSets =
 						}),
 						n(-9945, {	-- Arms / Fury
 							i(129530),	-- Oathsworn Helm
-							i(154118),	-- Oathsworn Pendant
+							i(129539),	-- Oathsworn Pendant
 							i(129538),	-- Oathsworn Cloak of Battle
 							i(129532),	-- Oathsworn Pauldrons
 							i(129527),	-- Oathsworn Breastplate
@@ -347,7 +347,7 @@ _.GearSets =
 						}),
 						n(-9947, {	-- Protection
 							i(129548),	-- Oathsworn Faceguard
-							i(154043),	-- Oathsworn Amulet
+							i(129550),	-- Oathsworn Amulet
 							i(129545),	-- Oathsworn Cloak of Stoicism
 							i(129555),	-- Oathsworn Shoulderguards
 							i(129544),	-- Oathsworn Chestguard
