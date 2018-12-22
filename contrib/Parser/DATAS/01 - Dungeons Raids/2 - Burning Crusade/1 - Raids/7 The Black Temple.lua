@@ -8,17 +8,49 @@ _.Instances =
 		["groups"] = {
 			inst(751, { 	-- The Black Temple
 				["groups"] = {
+					faction(1012, {	-- Ashtongue Deathsworn
+						["qg"] = 23159,	-- Okuno <Ashtongue Deathsworn Quartermaster>
+						["groups"] = {
+							ach(958),	-- Sworn to the Deathsworn
+							i(32429),	-- Pattern: Boots of Shackled Souls
+							i(32430),	-- Pattern: Bracers of Shackled Souls
+							i(32431),	-- Pattern: Greaves of Shackled Souls
+							i(32447),	-- Pattern: Night's End
+							i(32436),	-- Pattern: Redeemed Soul Cinch
+							i(32435),	-- Pattern: Redeemed Soul Legguards
+							i(32433),	-- Pattern: Redeemed Soul Moccasins
+							i(32434),	-- Pattern: Redeemed Soul Wristguards
+							i(32438),	-- Pattern: Soulguard Bracers
+							i(32440),	-- Pattern: Soulguard Girdle
+							i(32439),	-- Pattern: Soulguard Leggings
+							i(32437),	-- Pattern: Soulguard Slippers
+							i(32432),	-- Pattern: Waistguard of Shackled Souls
+							i(32442),	-- Plans: Shadesteel Bracers
+							i(32444),	-- Plans: Shadesteel Girdle
+							i(32443),	-- Plans: Shadesteel Greaves
+							i(32441),	-- Plans: Shadesteel Sabots
+							i(32490),	-- Ashtongue Talisman of Acumen
+							i(32486),	-- Ashtongue Talisman of Equilibrium
+							i(32488),	-- Ashtongue Talisman of Insight
+							i(32492),	-- Ashtongue Talisman of Lethality
+							i(32493),	-- Ashtongue Talisman of Shadows
+							i(32487),	-- Ashtongue Talisman of Swiftness
+							i(32485),	-- Ashtongue Talisman of Valor
+							i(32491),	-- Ashtongue Talisman of Vision
+							i(32489),	-- Ashtongue Talisman of Zeal
+						},
+					}),
 					n( 0,  {	-- Zone Drop
-					 -- i(32609),	-- Boots of the Divine Light (Hyjal only)
-					 -- i(32592),	-- Chestguard of Relentless Storms (Hyjal only)
 						i(32606),	-- Girdle of the Lightbearer
-					 -- i(34009),	-- Hammer of Judgement(looks to only drop from hyjal)
 						i(34011),	-- Illidari Runeshield
-					 -- i(32590),	-- Nethervoid Cloak (Hyjal only)
 						i(32608),	-- Pillager's Gauntlets
 						i(34012),	-- Shroud of the Final Stand
 						i(32943),	-- Swiftsteel Bludgeon
 						i(32593),	-- Treads of the Den Mother
+						-- Rings
+						i(32526),	-- Band of Devastation
+						i(32528),	-- Blessed Band of Karabor
+						i(32527),	-- Ring of Ancient Knowledge
 						-- Recipes
 						i(32754),	-- Pattern: Bracers of Nimble Thought
 						i(32744),	-- Pattern: Bracers of Renewed Life
@@ -53,35 +85,8 @@ _.Instances =
 							["sourceQuests"] = { 10957 },	-- Redemption of the Ashtongue
 						}),
 					}),
-					n(-2,  {	-- Vendors
-						n(23159, {		-- Okuno <Ashtongue Deathsworn Quartermaster>
-							i(32429),	-- Pattern: Boots of Shackled Souls
-							i(32430),	-- Pattern: Bracers of Shackled Souls
-							i(32431),	-- Pattern: Greaves of Shackled Souls
-							i(32447),	-- Pattern: Night's End
-							i(32436),	-- Pattern: Redeemed Soul Cinch
-							i(32435),	-- Pattern: Redeemed Soul Legguards
-							i(32433),	-- Pattern: Redeemed Soul Moccasins
-							i(32434),	-- Pattern: Redeemed Soul Wristguards
-							i(32438),	-- Pattern: Soulguard Bracers
-							i(32440),	-- Pattern: Soulguard Girdle
-							i(32439),	-- Pattern: Soulguard Leggings
-							i(32437),	-- Pattern: Soulguard Slippers
-							i(32432),	-- Pattern: Waistguard of Shackled Souls
-							i(32442),	-- Plans: Shadesteel Bracers
-							i(32444),	-- Plans: Shadesteel Girdle
-							i(32443),	-- Plans: Shadesteel Greaves
-							i(32441),	-- Plans: Shadesteel Sabots
-						}),
-					}),
 					d(14, {	-- Normal	
 						["groups"] = {
-							ach(958),	-- Sworn to the Deathsworn
-							ach(426, {	-- Warglaives of Azzinoth
-								["groups"] = {
-								},
-								["classes"] = { 6, 12, 10, 4, 1 },	-- DK, DH, Monk, Rogue, Warrior
-							}),
 							cr(22887, e(1582, {	-- High Warlord Naj'entus
 								i(122104),	-- Leviathan Egg (PET!)
 								i( 32248),	-- Halberd of Desolation
@@ -273,6 +278,9 @@ _.Instances =
 							})),
 							cr(22917, e(1590, {	-- Illidan Stormrage
 								ach(697),	-- The Black Temple
+								ach(426, {	-- Warglaives of Azzinoth
+									["classes"] = { 6, 12, 10, 4, 1 },	-- DK, DH, Monk, Rogue, Warrior
+								}),
 								i( 31089, {	-- Chestguard of the Forgotten Conqueror
 									i(30990),	-- Lightbringer Breastplate
 									i(30991),	-- Lightbringer Chestguard

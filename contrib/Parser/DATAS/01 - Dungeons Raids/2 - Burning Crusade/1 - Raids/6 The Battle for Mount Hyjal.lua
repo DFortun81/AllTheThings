@@ -268,13 +268,15 @@ _.Instances =
 						},
 					}),
 					n( 0, {	-- Zone Drop
-						i(32590),	-- Nethervoid Cloak
-						i(34010),	-- Pepe's Shroud of Pacification
-						i(32609),	-- Boots of the Divine Light
-						i(32592),	-- Chestguard of Relentless Storms
-						i(34009),	-- Hammer of Judgement 
 						i(32946),	-- Claw of Molten Fury
 						i(32945),	-- Fist of Molten Fury
+						i(34009),	-- Hammer of Judgement 
+						i(32591),	-- Choker of Serrated Blades
+						i(32589),	-- Hellfire-Encased Pendant
+						i(32590),	-- Nethervoid Cloak
+						i(34010),	-- Pepe's Shroud of Pacification
+						i(32592),	-- Chestguard of Relentless Storms
+						i(32609),	-- Boots of the Divine Light
 						-- Recipes
 						i(32748, {		-- Pattern: Bindings of Lightning Reflexes
 							["crs"] = {
