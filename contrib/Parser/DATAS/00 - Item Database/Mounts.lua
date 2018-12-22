@@ -163,6 +163,7 @@ i(166539, 289101);	-- Dazar'alor Windreaver
 i(166433, 288499);	-- Frightened Kodo
 i(166518, 289083);	-- G.M.O.D.
 i(166705, 289555);	-- Glacial Tidestorm
+i(163183, 259740);	-- Green Marsh Hopper
 i(166467, 288721);	-- Island Thunderscale
 i(166435, 288505);	-- Kaldorei Nightsaber
 i(164571, 281554);	-- Meat Wagon
