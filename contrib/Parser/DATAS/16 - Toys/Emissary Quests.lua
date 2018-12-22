@@ -21,6 +21,9 @@ _.Toys =
 			{	-- Goldtusk Inn Breakfast Buffet
 				["itemID"] = 166703,	-- Goldtusk Inn Breakfast Buffet
 			},
+			{	-- Holy Lightsphere Toy
+				["itemID"] = 153182,	-- Holy Lightsphere Toy
+			},
 			{	-- Kojo's Master Matching Set
 				["itemID"] = 166851,	-- Kojo's Master Matching Set
 			},

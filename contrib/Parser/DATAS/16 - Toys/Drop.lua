@@ -75,7 +75,6 @@ _.Toys =
 		i(86584),		-- Hardened Shell
 		i(163742),		-- Heartsbane Grimoire
 		i(86594), 		-- Helpful Wikky's Whistle
-		i(153182),  	-- Holy Lightsphere Toy
 		i(86593),		-- Hozen Beach Ball
 		i(113631),		-- Hypnosis Goggles
 		i(118244),		-- Iron Buccaneer's Hat

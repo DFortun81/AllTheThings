@@ -185,18 +185,64 @@ _.Holidays = bubbleDown({["u"] = 29},
 							i(70923), -- Gaudy Winter Veil Sweater
 						},
 					}),
-					n(96362, { 	-- Izzy Hollyfizzle <Events Coordinator>
-						i(128659, { -- Merry Supplies
-							["groups"] = {
-								i(108635), -- Crashin' Thrashin' Killdozer Controller
-								i(128670, { -- Savage Gift
-									["groups"] = {
-										i(128671), -- Minion of Grumpus
+					{	-- Izzy Hollyfizzle [Garrison]
+						["npcID"] = 96362,	-- Izzy Hollyfizzle
+						["coords"] = {
+							{ 47.33, 38.47 },	-- Horde Garrison
+							{ 44.29, 51.05 },	-- Alliance Garrison
+						},
+						["maps"] = {
+							582,	-- Alliance Garrison
+							590,	-- Horde Garrison
+						},
+						["g"] = {
+							{	-- Spooky Supplies
+								["itemID"] = 128659,	-- Merry Supplies
+								["u"] = 29,				-- Winter's Veil Filter
+								["g"] = {
+										{	-- Ball of Tangled Lights
+											["itemID"] = 128665,	-- Ball of Tangled Lights
+											["questID"] = 39615,
+											["u"] = 29,				-- Winter's Veil Filter
+										},
+										{	-- Crashin' Thrashin' Killdozer Controller
+											["itemID"] = 108635,		-- Crashin' Thrashin' Killdozer Controller
+											["u"] = 29,				-- Winter's Veil Filter
+										},
+										{	-- Festive Outfits
+											["itemID"] = 128668,	-- Festive Outfits
+											["questID"] = 39671,
+											["u"] = 29,				-- Winter's Veil Filter
+										},
+										{	-- Imported Trees
+											["itemID"] = 128666,	-- Imported Trees
+											["questID"] = 39616,
+											["u"] = 29,				-- Winter's Veil Filter
+										},
+										{	-- Little Helpers
+											["itemID"] = 128667,	-- Little Helpers
+											["questID"] = 39767,
+											["u"] = 29,				-- Winter's Veil Filter
+										},
+										{	-- Old Box of Decorations
+											["itemID"] = 128669,	-- Old Box of Decorations
+											["questID"] = 39712,
+											["u"] = 29,				-- Winter's Veil Filter
+										},
+										{	-- Savage Gift
+											["itemID"] = 128670,		-- Savage Gift
+												["g"] = {
+													un(7, i(128312)), -- Elixir of the Rapid Mind
+													i(128314), -- Frozen Arms of a Hero
+													i(128315), -- Medallion of the Legion
+													i(128671), -- Minion of Grumpus
+												},
+											["u"] = 29,				-- Winter's Veil Filter
+										},
 									},
-								}),
+								},
 							},
-						}),
-					}),
+					},
 				},
 			}),
 		},
