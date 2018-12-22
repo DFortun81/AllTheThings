@@ -1925,8 +1925,8 @@ local function SearchForItemLink(field, link)
 				if GetDataMember("ShowItemString") then tinsert(listing, itemString); end
 				if group and #group > 0 then
 					if GetDataMember("ShowLootSpecializations", true) then
-						local specs = group[1].specs;
-						if specs and group[1].s then
+						local specs = GetItemSpecInfo(itemID);
+						if specs then
 							if #specs > 0 then
 								table.sort(specs);
 								local spec_label = "";
