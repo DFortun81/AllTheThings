@@ -1162,6 +1162,129 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		end
 	end
 end
+local function CreateObject(t)
+	local s = {};
+	if t[1] then
+		-- array
+		for i,o in ipairs(t) do
+			table.insert(s, CreateObject(o));
+		end
+		return s;
+	else
+		if t.isToy then s.isToy = true; end
+		for key,value in pairs(t) do
+			if key ~= "parent" then
+				s[key] = value;
+			end
+		end
+		if t.g then
+			s.g = {};
+			for i,o in ipairs(t.g) do
+				table.insert(s.g, CreateObject(o));
+			end
+		end
+		t = s;
+		if t.mapID then
+			t = app.CreateMap(t.mapID, t);
+		elseif t.encounterID then
+			t = app.CreateEncounter(t.encounterID, t);
+		elseif t.currencyID then
+			t = app.CreateCurrencyClass(t.currencyID, t);
+		elseif t.speciesID then
+			t = app.CreateSpecies(t.speciesID, t);
+		elseif t.objectID then
+			t = app.CreateObject(t.objectID, t);
+		elseif t.followerID then
+			t = app.CreateFollower(t.followerID, t);
+		elseif t.professionID then
+			t = app.CreateProfession(t.professionID, t);
+		elseif t.categoryID then
+			t = app.CreateCategory(t.categoryID, t);
+		elseif t.criteriaID then
+			t = app.CreateAchievementCriteria(t.criteriaID, t);
+		elseif t.achID then
+			t = app.CreateAchievement(t.achID, t);
+		elseif t.recipeID then
+			t = app.CreateRecipe(t.recipeID, t);
+		elseif t.spellID then
+			t = app.CreateRecipe(t.spellID, t);
+		elseif t.itemID then
+			if t.isToy then
+				t = app.CreateToy(t.itemID, t);
+			else
+				t = app.CreateItem(t.itemID, t);
+			end
+		elseif t.npcID or t.creatureID then
+			t = app.CreateNPC(t.npcID or t.creatureID, t);
+		elseif t.questID then
+			t = app.CreateQuest(t.questID, t);
+		end
+		t.visible = true;
+		return t;
+	end
+end
+local function MergeObject(g, t, index)
+	local key = t.key;
+	if not key then
+		if t.mapID then
+			key = "mapID";
+		elseif t.currencyID then
+			key = "currencyID";
+		elseif t.objectID then
+			key = "objectID";
+		elseif t.followerID then
+			key = "followerID";
+		elseif t.recipeID then
+			key = "recipeID";
+		elseif t.professionID then
+			key = "professionID";
+		elseif t.spellID then
+			key = "spellID";
+		elseif t.categoryID then
+			key = "categoryID";
+		elseif t.achID then
+			key = "achID";
+		elseif t.toyID then
+			key = "toyID";
+		elseif t.itemID then
+			key = "itemID";
+		elseif t.npcID then
+			key = "npcID";
+		elseif t.creatureID then
+			key = "creatureID";
+		elseif t.questID then
+			key = "questID";
+		end
+	end
+	for i,o in ipairs(g) do
+		if o[key] == t[key] then
+			if t.g then
+				local tg = t.g;
+				t.g = nil;
+				if o.g then
+					for j,k in ipairs(tg) do
+						MergeObject(o.g, k);
+					end
+				else
+					o.g = tg;
+				end
+			end
+			for k,value in pairs(t) do
+				if k ~= "expanded" and k ~= "parent" then
+					o[k] = value;
+				end
+			end
+			return o;
+		end
+	end
+	t.expanded = true;
+	if index then
+		tinsert(g, index, t);
+	else
+		tinsert(g, t);
+	end
+	return t;
+end
 
 -- Lua Constructor Lib
 local fieldCache = {};
@@ -1916,6 +2039,12 @@ local function SearchForItemLink(field, link)
 					end
 				end
 				if group and #group > 0 then
+					local merged_results = {};
+					for i,o in ipairs(group) do
+						MergeObject(merged_results, o);
+					end
+					group = merged_results;
+					
 					if group[1].u and group[1].u == 7 and numBonusIds and numBonusIds ~= "" and tonumber(numBonusIds) > 0 then
 						tinsert(listing, L("RECENTLY_MADE_OBTAINABLE"));
 						tinsert(listing, L("RECENTLY_MADE_OBTAINABLE_PT2"));
@@ -8073,8 +8202,8 @@ function app:GetWindow(suffix, parent, onUpdate)
 				until not mapInfo or not mapID;
 			end
 			
-			self:MergeObject(self.data.g, self:CreateObject(info));
-			self:MergeObject(self.rawData, info);
+			MergeObject(self.data.g, CreateObject(info));
+			MergeObject(self.rawData, info);
 			self:Update();
 		end
 		window.Clear = function(self)
@@ -8082,125 +8211,6 @@ function app:GetWindow(suffix, parent, onUpdate)
 			app.SetDataMember(self.Suffix, self.rawData);
 			wipe(self.data.g);
 			self:Update();
-		end
-		window.CreateObject = function(self, t)
-			local s = {};
-			if t[1] then
-				-- array
-				for i,o in ipairs(t) do
-					table.insert(s, self:CreateObject(o));
-				end
-				return s;
-			else
-				if t.isToy then s.isToy = true; end
-				for key,value in pairs(t) do
-					if key ~= "parent" then
-						s[key] = value;
-					end
-				end
-				if t.g then
-					s.g = {};
-					for i,o in ipairs(t.g) do
-						table.insert(s.g, self:CreateObject(o));
-					end
-				end
-				t = s;
-				if t.mapID then
-					t = app.CreateMap(t.mapID, t);
-				elseif t.encounterID then
-					t = app.CreateEncounter(t.encounterID, t);
-				elseif t.currencyID then
-					t = app.CreateCurrencyClass(t.currencyID, t);
-				elseif t.speciesID then
-					t = app.CreateSpecies(t.speciesID, t);
-				elseif t.objectID then
-					t = app.CreateObject(t.objectID, t);
-				elseif t.followerID then
-					t = app.CreateFollower(t.followerID, t);
-				elseif t.professionID then
-					t = app.CreateProfession(t.professionID, t);
-				elseif t.categoryID then
-					t = app.CreateCategory(t.categoryID, t);
-				elseif t.criteriaID then
-					t = app.CreateAchievementCriteria(t.criteriaID, t);
-				elseif t.achID then
-					t = app.CreateAchievement(t.achID, t);
-				elseif t.recipeID then
-					t = app.CreateRecipe(t.recipeID, t);
-				elseif t.spellID then
-					t = app.CreateRecipe(t.spellID, t);
-				elseif t.itemID then
-					if t.isToy then
-						t = app.CreateToy(t.itemID, t);
-					else
-						t = app.CreateItem(t.itemID, t);
-					end
-				elseif t.npcID or t.creatureID then
-					t = app.CreateNPC(t.npcID or t.creatureID, t);
-				elseif t.questID then
-					t = app.CreateQuest(t.questID, t);
-				end
-				t.visible = true;
-				return t;
-			end
-		end
-		window.MergeObject = function(self, g, t)
-			local key = t.key;
-			if not key then
-				if t.mapID then
-					key = "mapID";
-				elseif t.currencyID then
-					key = "currencyID";
-				elseif t.objectID then
-					key = "objectID";
-				elseif t.followerID then
-					key = "followerID";
-				elseif t.recipeID then
-					key = "recipeID";
-				elseif t.professionID then
-					key = "professionID";
-				elseif t.spellID then
-					key = "spellID";
-				elseif t.categoryID then
-					key = "categoryID";
-				elseif t.achID then
-					key = "achID";
-				elseif t.toyID then
-					key = "toyID";
-				elseif t.itemID then
-					key = "itemID";
-				elseif t.npcID then
-					key = "npcID";
-				elseif t.creatureID then
-					key = "creatureID";
-				elseif t.questID then
-					key = "questID";
-				end
-			end
-			for i,o in ipairs(g) do
-				if o[key] == t[key] then
-					if t.g then
-						local tg = t.g;
-						t.g = nil;
-						if o.g then
-							for j,k in ipairs(tg) do
-								self:MergeObject(o.g, k);
-							end
-						else
-							o.g = tg;
-						end
-					end
-					for k,value in pairs(t) do
-						if k ~= "expanded" then
-							o[k] = value;
-						end
-					end
-					return o;
-				end
-			end
-			t.expanded = true;
-			table.insert(g, t);
-			return t;
 		end
 		
 		-- The Close Button. It's assigned as a local variable so you can change how it behaves.
@@ -8273,7 +8283,7 @@ app:GetWindow("Debugger", UIParent, function(self)
 					app.SetDataMember("Debugger", nil);
 				end
 				self.rawData = AllTheThingsDebugData;
-				self.data.g = self:CreateObject(self.rawData);
+				self.data.g = CreateObject(self.rawData);
 				self:Update();
 			elseif e == "ZONE_CHANGED_NEW_AREA" or e == "NEW_WMO_CHUNK" then
 				-- Bubble Up the Maps
@@ -8288,8 +8298,8 @@ app:GetWindow("Debugger", UIParent, function(self)
 						end
 					until not mapInfo or not mapID;
 					
-					self:MergeObject(self.data.g, self:CreateObject(info));
-					self:MergeObject(self.rawData, info);
+					MergeObject(self.data.g, CreateObject(info));
+					MergeObject(self.rawData, info);
 					self:Update();
 				end
 			elseif e == "MERCHANT_SHOW" or e == "MERCHANT_UPDATE" then
@@ -8325,14 +8335,14 @@ app:GetWindow("Debugger", UIParent, function(self)
 											local m = itemLink:match("currency:(%d+)");
 											if m then
 												-- Parse as a CURRENCY LINK.
-												parent = self:MergeObject(parent, {["currencyID"] = tonumber(m), ["g"] = {}}).g;
+												parent = MergeObject(parent, {["currencyID"] = tonumber(m), ["g"] = {}}).g;
 												cost = itemValue;
 											else
 												-- Parse as an ITEM LINK.
 												m = itemLink:match("item:(%d+)");
 												if m then
 													cost = itemValue;
-													parent = self:MergeObject(parent, {["itemID"] = tonumber(m), ["g"] = {}}).g;
+													parent = MergeObject(parent, {["itemID"] = tonumber(m), ["g"] = {}}).g;
 												end
 											end
 										end
@@ -8448,8 +8458,8 @@ app:GetWindow("Debugger", UIParent, function(self)
 					["name"] = C_TradeSkillUI.GetTradeSkillDisplayName(tradeSkillID),
 					["g"] = rawGroups
 				};
-				self:MergeObject(self.data.g, self:CreateObject(info));
-				self:MergeObject(self.rawData, info);
+				MergeObject(self.data.g, CreateObject(info));
+				MergeObject(self.rawData, info);
 				self:Update();
 			elseif e == "QUEST_DETAIL" then
 				local questStartItemID = ...;
@@ -8625,7 +8635,8 @@ end):Show();
 								if not found then
 									app.HolidayHeader.progress = app.HolidayHeader.progress + (group.progress or 0);
 									app.HolidayHeader.total = app.HolidayHeader.total + (group.total or 0);
-									tinsert(app.HolidayHeader.g, group);
+									MergeObject(app.HolidayHeader.g, group);
+									-- tinsert(app.HolidayHeader.g, group);
 								end
 							elseif group.achievementID then
 								if group.criteriaID then
@@ -8636,15 +8647,19 @@ end):Show();
 										group = app.CreateAchievement(group.achievementID,
 											{ g = { group }, total = group.total, progress = group.progress, u = group.u });
 									end
-									tinsert(header.g, 1, group);
+									--tinsert(header.g, 1, group);
+									MergeObject(header.g, group, 1);
 								else
-									tinsert(header.g, group);
+									MergeObject(header.g, group);
+									--tinsert(header.g, group);
 								end
 							elseif group.criteriaID and group.parent.achievementID then
 								group = app.CreateAchievement(group.parent.achievementID, { g = { group }, total = group.total, progress = group.progress, u = group.parent.u });
-								tinsert(header.g, 1, group);
+								--tinsert(header.g, 1, group);
+								MergeObject(header.g, group, 1);
 							else
-								tinsert(header.g, group);
+								MergeObject(header.g, group);
+								--tinsert(header.g, group);
 							end
 						end
 						
@@ -9429,10 +9444,10 @@ end);
 										end
 									end
 								end
-								self:MergeObject(subMapObject.g, questObject);
-								self:MergeObject(mapObject.g, subMapObject);
+								MergeObject(subMapObject.g, questObject);
+								MergeObject(mapObject.g, subMapObject);
 							else
-								self:MergeObject(mapObject.g, questObject);
+								MergeObject(mapObject.g, questObject);
 							end
 							local tagID, tagName, worldQuestType, rarity, isElite, tradeskillLineIndex = GetQuestTagInfo(questObject.questID);
 							if worldQuestType == LE_QUEST_TAG_TYPE_PVP or worldQuestType == LE_QUEST_TAG_TYPE_BOUNTY then
@@ -9497,12 +9512,12 @@ end);
 														item.OnUpdate = OnUpdateForItem;
 													end
 													for __,subdata in ipairs(data.g) do
-														self:MergeObject(item.g, subdata);
+														MergeObject(item.g, subdata);
 													end
 												end
 											end
 										end
-										self:MergeObject(questObject.g, item);
+										MergeObject(questObject.g, item);
 									end
 								else
 									return true;
@@ -9530,7 +9545,7 @@ end);
 															item.OnUpdate = OnUpdateForItem;
 														end
 														for __,subdata in ipairs(data.g) do
-															self:MergeObject(item.g, subdata);
+															MergeObject(item.g, subdata);
 														end
 													end
 												end
@@ -9541,7 +9556,7 @@ end);
 												item.total = 0;
 												item.OnUpdate = OnUpdateForItem;
 											end
-											self:MergeObject(questObject.g, item);
+											MergeObject(questObject.g, item);
 										else
 											return true;
 										end
@@ -9554,14 +9569,14 @@ end);
 						table.sort(mapObject.g, self.Sort);
 					end
 					if #mapObject.g > 0 then
-						self:MergeObject(temp, mapObject);
+						MergeObject(temp, mapObject);
 					end
 				end
 				for i,o in ipairs(temp) do
-					self:MergeObject(self.rawData, o);
+					MergeObject(self.rawData, o);
 				end
 				for i,o in ipairs(self.rawData) do
-					self:MergeObject(self.data.g, self:CreateObject(o));
+					MergeObject(self.data.g, CreateObject(o));
 				end
 				BuildGroups(self.data, self.data.g);
 				if not no then self:Update(); end
