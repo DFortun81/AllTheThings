@@ -179,7 +179,7 @@ _.Zones =
 							},
 						}),
 						{	-- Supplies from the 7th Legion
-							["questID"] = 166300,	-- Supplies from the 7th Legion
+							["questID"] = 54454,	-- Supplies from the 7th Legion
 							["qg"] = 135446,	-- Vindicator Jaelaana
 							["repeatable"] = true,
 							["lvl"] = 120,

@@ -720,6 +720,13 @@ _.NeverImplemented =
 			un(1, i(152621)),	-- Recipe: Astral Mana Potion (Rank 2)
 			un(1, i(152622)),	-- Recipe: Astral Mana Potion (Rank 3)
 		}),
+		n(-181, {	-- Blacksmithing
+			{    -- Plans: Elementium Shield Spike
+				["itemID"] = 66102,    -- Plans: Elementium Shield Spike
+				["spellID"] = 0,    -- This is available via the trainer, need to delink the unused plans from the recipe
+				["u"] = 1,
+			},
+		}),
 		n(-192, { 	-- Cooking
 			un(1, i(86512)),	-- Journeyman Cookbook
 			un(1, i(86550)),	-- Apprentice Cookbook
@@ -790,6 +797,31 @@ _.NeverImplemented =
 		}),
 		n(-187, {	-- Leatherworking
 			un(1, i(15780)),	-- Pattern: Onyxia Scale Breastplate [never made it out of Beta]
+			{	-- Recipe: Coarse Leather Barding [Rank 2]
+				["itemID"] = 166312,	-- Recipe: Coarse Leather Barding [Rank 2]
+				["spellID"] = 0,	-- This is available via the trainer, need to delink the unused plans from the recipe
+				["u"] = 1,
+			},
+			{	-- Recipe: Hardened Tempest Boots [Rank 3]
+				["itemID"] = 162388,	-- Recipe: Hardened Tempest Boots [Rank 3]
+				["spellID"] = 0,	-- This is a single rank recipe on live, need to delink the unused plans from the recipe
+				["u"] = 1,
+			},
+			{	-- Recipe: Hardened Tempest Leggings [Rank 3]
+				["itemID"] = 162389,	-- Recipe: Hardened Tempest Leggings [Rank 3]
+				["spellID"] = 0,	-- This is a single rank recipe on live, need to delink the unused plans from the recipe
+				["u"] = 1,
+			},
+			{	-- Recipe: Mistscale Boots [Rank 3]
+				["itemID"] = 162400,	-- Recipe: Mistscale Boots [Rank 3]
+				["spellID"] = 0,	-- This is a single rank recipe on live, need to delink the unused plans from the recipe
+				["u"] = 1,
+			},
+			{	-- Recipe: Mistscale Greaves [Rank 3]
+				["itemID"] = 162401,	-- Recipe: Mistscale Greaves [Rank 3]
+				["spellID"] = 0,	-- This is a single rank recipe on live, need to delink the unused plans from the recipe
+				["u"] = 1,
+			},
 		}),
 		n(-190, { 	-- Tailoring
 			un(1, i(42196)),	-- Pattern: Aurora Slippers (pattern never went live, but it's learned at the trainer)
