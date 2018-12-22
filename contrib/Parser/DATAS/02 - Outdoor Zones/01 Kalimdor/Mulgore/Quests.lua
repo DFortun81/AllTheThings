@@ -49,6 +49,16 @@ _.Zones =
 							i(3079),	-- Skorn's Rifle
 						},
 					},
+					{	-- Dwarven Digging
+						["questID"] = 14436,
+						["u"] = 40,
+						["races"] = HORDE_ONLY,
+					},
+					{	-- Journey into Thunder Bluff
+						["questID"] = 14439,
+						["races"] = HORDE_ONLY,
+						["u"] = 40,
+					},
 					{	-- Journey into Thunder Bluff
 						["questID"] = 24550,
 						["qg"] = 37024,	-- Una Wildmane
@@ -68,6 +78,13 @@ _.Zones =
 						["races"] = { 6 },	-- Tauren
 						["description"] = "This quest is available Tauren upon reaching level 20.",
 					},
+					{	-- Learn to Ride
+						["itemID"] = 46884,	-- Riding Training Pamphlet
+						["questID"] = 14087,
+						["u"] = 40,
+						["lvl"] = 20,
+						["races"] = { 6 },	-- Tauren
+					},
 					{	-- Mazzranache
 						["questID"] = 26188,
 						["qg"] = 3055,	-- Maur Raincaller
@@ -79,6 +96,28 @@ _.Zones =
 						["qg"] = 36644,	-- Ahmo Thunderhorn
 						["coord"] = { 47.6, 59.5 },
 						["isBreadcrumb"] = true,
+					},
+					{	-- New Kodo - Green
+						["questID"] = 7663,
+						["u"] = 40,
+						["qg"] = 3685,	-- Harb Clawhoof
+						["coord"] = { 47.6, 58.0 },
+						["groups"] = {
+							i(18794),	-- Great Brown Kodo
+							i(18795),	-- Great Gray Kodo
+							i(18793),	-- Great White Kodo
+						},
+					},
+					{	-- New Kodo - Teal
+						["questID"] = 7662,
+						["u"] = 40,
+						["qg"] = 3685,	-- Harb Clawhoof
+						["coord"] = { 47.6, 58.0 },
+						["groups"] = {
+							i(18794),	-- Great Brown Kodo
+							i(18795),	-- Great Gray Kodo
+							i(18793),	-- Great White Kodo
+						},
 					},
 					{	-- Poison Water
 						["questID"] = 20440,
@@ -142,6 +181,16 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 					},
 					{	-- Supervisor Fizsprocket
+						["questID"] = 765,
+						["u"] = 40,
+						["groups"] = {
+							un(2, i(4974)),	-- Compact Fighting Knife
+							un(2, i(4964)),	-- Goblin Smasher
+						},
+						["qg"] = 2988,	-- Morin Cloudstalker
+						["races"] = HORDE_ONLY,
+					},
+					{	-- Supervisor Fizsprocket
 						["questID"] = 26180,
 						["qg"] = 2988,	-- Morin Cloudstalker
 						["coord"] = { 57.0, 60.4 },
@@ -153,6 +202,17 @@ _.Zones =
 						["qg"] = 2947,	-- Harken Windtotem
 						["coord"] = { 48.7, 58.7 },
 						["races"] = HORDE_ONLY,
+					},
+					{	-- The Hunter's Way
+						["questID"] = 861,
+						["u"] = 40,
+						["qg"] = 3052,	-- Skorn Whitecloud
+						["coord"] = { 49.6, 17.2 },
+						["races"] = {
+							6,
+							8,
+							10,
+						},
 					},
 					{	-- The Ravaged Caravan
 						["questID"] = 749,
@@ -167,6 +227,13 @@ _.Zones =
 						["coord"] = { 47.6, 59.6 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 14438,	-- Sharing the Land
+					},
+					{	-- The Venture Co.
+						["questID"] = 764,
+						["u"] = 40,
+						["qg"] = 2988,	-- Morin Cloudstalker
+						["coord"] = { 57.2, 61.2 },
+						["races"] = HORDE_ONLY,
 					},
 					{	-- The Venture Co.
 						["questID"] = 26179,

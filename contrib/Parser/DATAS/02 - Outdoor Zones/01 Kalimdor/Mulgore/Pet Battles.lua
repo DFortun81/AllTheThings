@@ -37,26 +37,26 @@ _.Zones =
 						},
 						["description"] = "You may only learn this pet once per character from a Battle Pet Trainer.|r"
 					}),
-					{
-						["questID"] = 31573,	-- Learning the Ropes
+					{	-- Learning the Ropes
+						["questID"] = 31573,
 						["qg"] = 63067,	-- Naleen
 						["description"] = "This quest is part of a chain initiated by learning Battle Pet Training.",
 						["races"] = HORDE_ONLY,
 					},
-					{
-						["questID"] = 31574,	-- On The Mend
+					{	-- On The Mend
+						["questID"] = 31574,
 						["qg"] = 63067,	-- Naleen
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 31573,	-- Learning the Ropes
 					},
-					{
-						["questID"] = 31831,	-- Level Up!
+					{	-- Level Up!
+						["questID"] = 31831,
 						["qg"] = 63067,	-- Naleen
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 31574,	-- On The Mend
 					},
-					{
-						["questID"] = 31575,	-- Got One!
+					{	-- Got One!
+						["questID"] = 31575,
 						["qg"] = 63067,	-- Naleen
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 31831,	-- Level Up!

@@ -7,6 +7,13 @@ _.Zones =
 		m(7, {	-- Mulgore
 			["groups"] = {
 				n(-16, {	-- Rares
+					n(3068, {	-- Mazzranache
+						["groups"] = {
+							un(7, i(4861)),	-- Sleek Feathered Tunic
+						},
+						["u"] = 43,
+						["coord"] = { 50.4, 42.6 },
+					}),
 					n(5785, {	-- Sister Hatelash
 						["groups"] = {
 							i(68762),	-- Imbued Cadet Cloak
