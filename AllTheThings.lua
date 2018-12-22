@@ -28,6 +28,7 @@ local C_ToyBox_GetToyInfo = C_ToyBox.GetToyInfo;
 local C_ToyBox_GetToyLink = C_ToyBox.GetToyLink;
 local C_Map_GetMapDisplayInfo = C_Map.GetMapDisplayInfo;
 local C_Map_GetBestMapForUnit = C_Map.GetBestMapForUnit;
+local SetPortraitTexture = _G["SetPortraitTextureFromCreatureDisplayID"];
 local EJ_GetCreatureInfo = _G["EJ_GetCreatureInfo"];
 local EJ_GetEncounterInfo = _G["EJ_GetEncounterInfo"];
 local GetAchievementCriteriaInfo = _G["GetAchievementCriteriaInfo"];
@@ -928,7 +929,7 @@ local function SetPortraitIcon(self, data, x)
 	if GetDataMember("ShowModels") then
 		local displayID = GetDisplayID(data);
 		if displayID then
-			app.SetPortraitTexture(self, displayID);
+			SetPortraitTexture(self, displayID);
 			self:SetWidth(self:GetHeight());
 			self:SetTexCoord(0, 1, 0, 1);
 			return true;
@@ -2069,9 +2070,6 @@ local function OpenMiniListForCurrentProfession(manual, refresh)
 		end
 	end
 end
-local function ToggleMainList()
-	app:ToggleWindow("Prime");
-end
 local function RefreshSavesCoroutine()
 	local waitTimer = 30;
 	while waitTimer > 0 do
@@ -2337,7 +2335,36 @@ local function RefreshMountCollection()
 		collectgarbage();
 	end);
 end
-local function SetCompletionistMode(completionistMode, fromSettings)
+app.GetCurrentMapID = function()
+	local uiMapID = C_Map.GetBestMapForUnit("player");
+	
+	-- Onyxia's Lair fix
+	local text_to_mapID = app.L("ZONE_TEXT_TO_MAP_ID");
+	if text_to_mapID then
+		local otherMapID = (GetRealZoneText() and text_to_mapID[GetRealZoneText()]) or (GetSubZoneText() and text_to_mapID[GetSubZoneText()]);
+		if otherMapID then uiMapID = otherMapID; end
+	end
+	
+	-- print("Current UI Map ID: ", uiMapID);
+	return uiMapID;
+end
+app.GetMapName = function(mapID)
+	if mapID and mapID > 0 then
+		local info = C_Map.GetMapInfo(mapID);
+		return (info and info.name) or ("Map ID #" .. mapID);
+	else
+		return "Map ID #???";
+	end
+end
+app.ToggleMainList = function()
+	app:ToggleWindow("Prime");
+end
+app.RefreshCollections = RefreshCollections;
+app.RefreshSaves = RefreshSaves;
+app.OpenMainList = OpenMainList;
+app.OpenMiniListForCurrentProfession = OpenMiniListForCurrentProfession;
+
+app.SetCompletionistMode = function(completionistMode, fromSettings)
 	if not fromSettings then
 		local setting = _G[app:GetName() .. "-CompletionistMode"];
 		if setting then setting:SetChecked(completionistMode); end
@@ -2362,10 +2389,10 @@ local function SetCompletionistMode(completionistMode, fromSettings)
 	end
 	RefreshCollections();
 end
-local function ToggleCompletionistMode()
-	SetCompletionistMode(not GetDataMember("CompletionistMode"));
+app.ToggleCompletionistMode = function()
+	app.SetCompletionistMode(not GetDataMember("CompletionistMode"));
 end
-local function SetDebugMode(debugMode)
+app.SetDebugMode = function(debugMode)
 	SetDataMember("IgnoreAllFilters", debugMode);
 	if debugMode then
 		app.GroupFilter = app.NoFilter;
@@ -2374,20 +2401,9 @@ local function SetDebugMode(debugMode)
 	end
 	app:RefreshData();
 end
-local function ToggleDebugMode()
-	SetDebugMode(not GetDataMember("IgnoreAllFilters"));
+app.ToggleDebugMode = function()
+	app.SetDebugMode(not GetDataMember("IgnoreAllFilters"));
 end
-app.RefreshCollections = RefreshCollections;
-app.RefreshSaves = RefreshSaves;
-app.OpenMainList = OpenMainList;
-app.OpenMiniListForCurrentProfession = OpenMiniListForCurrentProfession;
-app.SetCompletionistMode = SetCompletionistMode;
-app.SetDebugMode = SetDebugMode;
-app.ToggleCompletionistMode = ToggleCompletionistMode;
-app.ToggleDebugMode = ToggleDebugMode;
-app.ToggleMainList = ToggleMainList;
-app.ToggleMiniListForCurrentZone = ToggleMiniListForCurrentZone;
-
 app.SetHideBOEItems = function(checked)
 	app.SetDataMember("RequireBindingFilter", checked);
 	if checked then
@@ -2400,7 +2416,6 @@ end
 app.ToggleBOEItems = function()
 	app.SetHideBOEItems(not app.GetDataMember("RequireBindingFilter"));
 end
-
 app.SetCompletedThings = function(checked, fromSettings)
 	if not fromSettings then
 		local setting = _G[app:GetName() .. "-Show Completed Groups"];
@@ -2455,56 +2470,8 @@ app.ToggleCollectedThings = function()
 	app.SetCollectedThings(not app.GetDataMember("ShowCollectedItems"));
 end
 
-app.SetPortraitTexture = _G["SetPortraitTextureFromCreatureDisplayID"];
-app.GetCurrentMapID = function()
-	local uiMapID = C_Map.GetBestMapForUnit("player");
-	
-	-- Onyxia's Lair fix
-	local text_to_mapID = app.L("ZONE_TEXT_TO_MAP_ID");
-	if text_to_mapID then
-		local otherMapID = (GetRealZoneText() and text_to_mapID[GetRealZoneText()]) or (GetSubZoneText() and text_to_mapID[GetSubZoneText()]);
-		if otherMapID then uiMapID = otherMapID; end
-	end
-	
-	-- print("Current UI Map ID: ", uiMapID);
-	return uiMapID;
-end
-app.GetMapName = function(mapID)
-	if mapID and mapID > 0 then
-		local info = C_Map.GetMapInfo(mapID);
-		return (info and info.name) or ("Map ID #" .. mapID);
-	else
-		return "Map ID #???";
-	end
-end
 
 -- Tooltip Functions
-local function RecalculateGroupTotals(group)
-	if group.collectible and app.GroupRequirementsFilter(group) and app.GroupFilter(group) then
-		group.total = 1;
-		if group.collected then
-			group.progress = 1;
-		else
-			group.progress = 0;
-		end
-	else
-		group.total = 0;
-		group.progress = 0;
-	end
-	if group.g then
-		for j,s in ipairs(group.g) do
-			if s.total then
-				group.total = group.total + s.total;
-				group.progress = group.progress + s.progress;
-			elseif s.collectible and app.GroupRequirementsFilter(s) and app.GroupFilter(s) then
-				group.total = group.total + 1;
-				if s.collected then
-					group.progress = group.progress + 1;
-				end
-			end
-		end
-	end
-end
 local function MergeSearchResults(group, itemID)
 	if group then
 		-- If the user has Show Collection Progress turned on.
@@ -2603,7 +2570,30 @@ local function AttachTooltipRawSearchResults(self, listing, group, paramA, param
 			
 			local cache = MergeSearchResults(group, itemID);
 			if cache then
-				RecalculateGroupTotals(cache);
+				if cache.collectible and app.GroupRequirementsFilter(cache) and app.GroupFilter(cache) then
+					cache.total = 1;
+					if cache.collected then
+						cache.progress = 1;
+					else
+						cache.progress = 0;
+					end
+				else
+					cache.total = 0;
+					cache.progress = 0;
+				end
+				if cache.g then
+					for j,s in ipairs(cache.g) do
+						if s.total then
+							cache.total = cache.total + s.total;
+							cache.progress = cache.progress + s.progress;
+						elseif s.collectible and app.GroupRequirementsFilter(s) and app.GroupFilter(s) then
+							cache.total = cache.total + 1;
+							if s.collected then
+								cache.progress = cache.progress + 1;
+							end
+						end
+					end
+				end
 				if paramA == "creatureID" and not cache.creatureID and not cache.g then
 					local p = {};
 					p.g = { cache };
@@ -2722,10 +2712,6 @@ local function AttachTooltipSearchResults(self, search, method, paramA, paramB, 
 	local listing, group = GetCachedSearchResults(search, method, paramA, paramB, ...);
 	AttachTooltipRawSearchResults(self, listing, group, paramA, paramB, ...);
 end
-local function AttachTooltipForEncounter(self, encounterID)
-	if GetDataMember("ShowEncounterID") then self:AddDoubleLine(L("ENCOUNTER_ID"), tostring(encounterID)); end
-	AttachTooltipSearchResults(self, "encounterID:" .. encounterID, SearchForFieldAndSummarizeForCurrentDifficulty, "encounterID", tonumber(encounterID));
-end
 local function AttachTooltip(self)
 	if not self.AllTheThingsProcessing then
 		self.AllTheThingsProcessing = true;
@@ -2805,7 +2791,8 @@ local function AttachTooltip(self)
 					
 					local encounterID = owner.encounterID;
 					if encounterID and not owner.itemID then
-						AttachTooltipForEncounter(self, encounterID);
+						if GetDataMember("ShowEncounterID") then self:AddDoubleLine(L("ENCOUNTER_ID"), tostring(encounterID)); end
+						AttachTooltipSearchResults(self, "encounterID:" .. encounterID, SearchForFieldAndSummarizeForCurrentDifficulty, "encounterID", tonumber(encounterID));
 						return;
 					--[[
 					else
@@ -2874,7 +2861,8 @@ local function AttachTooltip(self)
 					
 					local encounterID = self.encounterID;
 					if encounterID and not self.itemID then
-						AttachTooltipForEncounter(self, encounterID);
+						if GetDataMember("ShowEncounterID") then self:AddDoubleLine(L("ENCOUNTER_ID"), tostring(encounterID)); end
+						AttachTooltipSearchResults(self, "encounterID:" .. encounterID, SearchForFieldAndSummarizeForCurrentDifficulty, "encounterID", tonumber(encounterID));
 						return;
 					--[[
 					else
@@ -2903,30 +2891,35 @@ local function AttachTooltip(self)
 		end
 	end
 end
-local function AttachBattlePetTooltip(self, data)
-	-- This is not a GameTooltip so it has no Text columns. Cannot support certain functions such as embedding
-	if data then
-		local speciesID = data.speciesID;
-		if speciesID then
-			--for i, j in pairs(self) do
-			--	print(tostring(i) .. ": " .. tostring(j));
-			--end
-			--GameTooltip:SetOwner(self, "ANCHOR_TOPRIGHT");
-			GameTooltip:ClearLines();
-			AttachTooltipSearchResults(GameTooltip, "speciesID:" .. speciesID, SearchForFieldAndSummarize, "speciesID", speciesID);
-			GameTooltip:Show();
-			
-			local owned = C_PetJournal.GetOwnedBattlePetString(speciesID);
-			self.Owned:SetText(owned);
-			if(owned == nil) then
-				self:SetSize(260,122);
-			else
-				self:SetSize(260,136);
-			end
-
-			self:Show();
+local function AttachBattlePetTooltip(self, data, quantity, detail)
+	if not data or data.att or not data.speciesID then return end
+	data.att = 1;
+	
+	-- GameTooltip_ShowCompareItem
+	local searchResults = SearchForField("speciesID", data.speciesID);
+	local owned = C_PetJournal.GetOwnedBattlePetString(data.speciesID);
+	self.Owned:SetText(owned);
+	if owned == nil then
+		if self.Delimiter then
+			-- if .Delimiter is present it requires special handling (FloatingBattlePetTooltip)
+			self:SetSize(260,150 + h)
+			self.Delimiter:ClearAllPoints()
+			self.Delimiter:SetPoint("TOPLEFT",self.SpeedTexture,"BOTTOMLEFT",-6,-5)
+		else
+			self:SetSize(260,122)
+		end
+	else
+		local h = self.Owned:GetHeight() or 0;
+		if self.Delimiter then
+			self:SetSize(260,150 + h)
+			self.Delimiter:ClearAllPoints()
+			self.Delimiter:SetPoint("TOPLEFT",self.SpeedTexture,"BOTTOMLEFT",-6,-(5 + h))
+		else
+			self:SetSize(260,122 + h)
 		end
 	end
+	self:Show()
+	return true;
 end
 local function ClearTooltip(self)
 	self.AllTheThingsProcessing = nil;
@@ -6070,7 +6063,7 @@ local function MinimapButtonOnClick(self, button)
 		elseif IsAltKeyDown() or IsControlKeyDown() then
 			app.ToggleMiniListForCurrentZone();
 		else
-			ToggleMainList();
+			app.ToggleMainList();
 		end
 	end
 end
@@ -9558,7 +9551,7 @@ WorldMapTooltip:HookScript("OnTooltipCleared", ClearTooltip);
 WorldMapTooltip:HookScript("OnTooltipCleared", ClearTooltip);
 WorldMapTooltip:HookScript("OnShow", AttachTooltip);
 
--- hooksecurefunc("BattlePetTooltipTemplate_SetBattlePet", AttachBattlePetTooltip); -- Not ready yet.
+--hooksecurefunc("BattlePetTooltipTemplate_SetBattlePet", AttachBattlePetTooltip); -- Not ready yet.
 
 -- Slash Command List
 SLASH_AllTheThings1 = "/allthethings";
@@ -9566,7 +9559,7 @@ SLASH_AllTheThings2 = "/things";
 SLASH_AllTheThings3 = "/att";
 SlashCmdList["AllTheThings"] = function(cmd)
 	if not cmd or cmd == "" or cmd == "main" or cmd == "mainlist" then
-		ToggleMainList();
+		app.ToggleMainList();
 	elseif cmd == "mini" or cmd == "minilist" then
 		app:ToggleMiniListForCurrentZone();
 	elseif cmd == "ra" then
