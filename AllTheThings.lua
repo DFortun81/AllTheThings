@@ -1758,11 +1758,6 @@ local function SearchForItemLink(field, link)
 					important = true;
 					group = SearchForSourceID(sourceID) or SearchForItemID(itemID);
 					if group and #group > 0 then
-						if group[1].u and group[1].u == 7 and numBonusIds and numBonusIds ~= "" and tonumber(numBonusIds) > 0 then
-							tinsert(listing, L("RECENTLY_MADE_OBTAINABLE"));
-							tinsert(listing, L("RECENTLY_MADE_OBTAINABLE_PT2"));
-						end
-						
 						local sourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
 						if sourceInfo then
 							--[[
@@ -1892,14 +1887,36 @@ local function SearchForItemLink(field, link)
 					end
 				else
 					group = SearchForItemID(itemID);
-					if group and #group > 0 then
-						if group[1].u and group[1].u == 7 and numBonusIds and numBonusIds ~= "" and tonumber(numBonusIds) > 0 then
-							tinsert(listing, L("RECENTLY_MADE_OBTAINABLE"));
-							tinsert(listing, L("RECENTLY_MADE_OBTAINABLE_PT2"));
+				end
+				
+				local reagentCache = app.GetDataSubMember("Reagents", itemID);
+				if reagentCache then
+					if not group then group = {}; end
+					-- tinsert(listing, "Reagent for:" .. DESCRIPTION_SEPARATOR .. "Count");
+					--self:AddDoubleLine("Reagent for:", "Count");
+					--[[
+					for recipeID,count in pairs(reagentCache[1]) do
+						local icon = select(3, GetSpellInfo(recipeID));
+						self:AddDoubleLine("  " .. (icon and ("|T" .. icon .. ":0|t") or "  ") .. (select(1, GetSpellLink(recipeID)) or ("Spell #" .. recipeID)), "x" .. count);
+					end
+					--]]
+					for itemID,count in pairs(reagentCache[2]) do
+						-- local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(itemID);
+						local searchResults = SearchForItemID(itemID);
+						if searchResults then
+							for i,o in ipairs(searchResults) do
+								tinsert(group, o);
+							end
+							-- self:AddDoubleLine("  " .. (icon and ("|T" .. icon .. ":0|t") or "  ") .. (link or ("Item #" .. itemID)), "x" .. count);
 						end
 					end
 				end
-				
+				if group and #group > 0 then
+					if group[1].u and group[1].u == 7 and numBonusIds and numBonusIds ~= "" and tonumber(numBonusIds) > 0 then
+						tinsert(listing, L("RECENTLY_MADE_OBTAINABLE"));
+						tinsert(listing, L("RECENTLY_MADE_OBTAINABLE_PT2"));
+					end
+				end
 				if GetDataMember("ShowItemID") and itemID > 0 then tinsert(listing, L("ITEM_ID") .. DESCRIPTION_SEPARATOR .. itemID); end
 				if GetDataMember("ShowItemString") then tinsert(listing, itemString); end
 				if group and #group > 0 then
@@ -1944,9 +1961,6 @@ local function SearchForItemLink(field, link)
 		-- return { "Unsupported link: " .. link };
 	end
 end
-local function SearchForCachedItemLink(itemLink)
-	return GetCachedSearchResults(itemLink, SearchForItemLink, "itemID", itemLink);
-end
 local function SearchForMissingItemsRecursively(group, listing)
 	if group.visible then
 		if group.collectible and (not group.b or group.b == 2 or group.b == 3) then
@@ -1984,7 +1998,6 @@ app.SearchForQuestID = SearchForQuestID;
 app.SearchForItemID = SearchForItemID;
 app.SearchForSourceID = SearchForSourceID;
 app.SearchForItemLink = SearchForItemLink;
-app.SearchForCachedItemLink = SearchForCachedItemLink;
 app.SearchForField = SearchForField;
 app.UpdateSearchResults = function(searchResults)
 	if searchResults and #searchResults > 0 then
@@ -2168,6 +2181,7 @@ local function OpenMiniListForCurrentProfession(manual, refresh)
 				
 				-- Cache learned recipes
 				local learned = 0;
+				local reagentCache = app.GetDataMember("Reagents", {});
 				local recipeIDs = C_TradeSkillUI.GetAllRecipeIDs();
 				for i = 1,#recipeIDs do
 					if C_TradeSkillUI.GetRecipeInfo(recipeIDs[i], spellRecipeInfo) then
@@ -2189,6 +2203,19 @@ local function OpenMiniListForCurrentProfession(manual, refresh)
 						if not skillCache[spellRecipeInfo.recipeID] then
 							--app.print("Missing [" .. (spellRecipeInfo.name or "??") .. "] (Spell ID #" .. spellRecipeInfo.recipeID .. ") in ATT Database. Please report it!");
 							skillCache[spellRecipeInfo.recipeID] = { {} };
+						end
+						local craftedItemID = GetItemInfoInstant(C_TradeSkillUI.GetRecipeItemLink(spellRecipeInfo.recipeID));
+						for i=1,C_TradeSkillUI.GetRecipeNumReagents(spellRecipeInfo.recipeID) do
+							local reagentName, reagentTexture, reagentCount, playerCount = C_TradeSkillUI.GetRecipeReagentInfo(spellRecipeInfo.recipeID, i);
+							local itemID = GetItemInfoInstant(C_TradeSkillUI.GetRecipeReagentItemLink(spellRecipeInfo.recipeID, i));
+							--print(spellRecipeInfo.recipeID, itemID, "=>", craftedItemID);
+							
+							-- Make sure a cache table exists for this item.
+							-- Index 1: The Recipe Skill IDs
+							-- Index 2: The Crafted Item IDs
+							if not reagentCache[itemID] then reagentCache[itemID] = { {}, {} }; end
+							reagentCache[itemID][1][spellRecipeInfo.recipeID] = reagentCount;
+							if craftedItemID then reagentCache[itemID][2][craftedItemID] = reagentCount; end
 						end
 					end
 				end
@@ -2877,29 +2904,6 @@ end
 local function AttachTooltipForEncounter(self, encounterID)
 	if GetDataMember("ShowEncounterID") then self:AddDoubleLine(L("ENCOUNTER_ID"), tostring(encounterID)); end
 	AttachTooltipSearchResults(self, "encounterID:" .. encounterID, SearchForFieldAndSummarizeForCurrentDifficulty, "encounterID", tonumber(encounterID));
-end
-local function AttachReagentTooltipInformation(self, link)
-	local itemID = GetItemInfoInstant(link);
-	if itemID then
-		local reagentCache = app.GetDataSubMember("Reagents", itemID);
-		if reagentCache then
-			self:AddDoubleLine("Reagent for:", "Count");
-			--[[
-			for recipeID,count in pairs(reagentCache[1]) do
-				local icon = select(3, GetSpellInfo(recipeID));
-				self:AddDoubleLine("  " .. (icon and ("|T" .. icon .. ":0|t") or "  ") .. (select(1, GetSpellLink(recipeID)) or ("Spell #" .. recipeID)), "x" .. count);
-			end
-			--]]
-			local data = {};
-			for itemID,count in pairs(reagentCache[2]) do
-				local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(itemID);
-				local searchResults = SearchForItemID(itemID);
-				if searchResults then
-					self:AddDoubleLine("  " .. (icon and ("|T" .. icon .. ":0|t") or "  ") .. (link or ("Item #" .. itemID)), "x" .. count);
-				end
-			end
-		end
-	end
 end
 local function AttachTooltip(self)
 	if not self.AllTheThingsProcessing then
@@ -9665,7 +9669,7 @@ SlashCmdList["AllTheThings"] = function(cmd)
 		app.Settings:profileList()
 	else
 		-- Search for the Item Link in the database
-		local listing, group = SearchForCachedItemLink(cmd);
+		local listing, group = GetCachedSearchResults(cmd, SearchForItemLink, "itemID", cmd);
 		if group and #group > 0 then CreateMiniListForGroup(group[1]); end
 	end
 end
