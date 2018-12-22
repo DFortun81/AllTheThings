@@ -514,8 +514,8 @@ _.Holidays = bubbleDown({["u"] = 26},
 					{	-- Izzy Hollyfizzle [Garrison]
 						["npcID"] = 96362,	-- Izzy Hollyfizzle
 						["coords"] = {
-							{ 47.33, 38.47 },	-- Horde Garrison
-							{ 44.29, 51.05 },	-- Alliance Garrison
+							{ 47.33, 38.47, 590 },	-- Horde Garrison
+							{ 44.29, 51.05, 582 },	-- Alliance Garrison
 						},
 						["maps"] = {
 							582,	-- Alliance Garrison
@@ -526,38 +526,38 @@ _.Holidays = bubbleDown({["u"] = 26},
 								["itemID"] = 128658,	-- Spooky Supplies
 								["u"] = 26,				-- Hallow's End Filter
 								["g"] = {
-										{	-- Ghoulish Guises
-											["itemID"] = 128660,	-- Ghoulish Guises
-											["questID"] = 39758,
-											["u"] = 26,				-- Hallow's End Filter
-										},
-										{	-- Hallow's Glow
-											["itemID"] = 128661,	-- Hallow's Glow
-											["questID"] = 39612,
-											["u"] = 26,				-- Hallow's End Filter
-										},
-										{	-- Seer's Invitation
-											["itemID"] = 128662,	-- Seer's Invitation
-											["questID"] = 39613,
-											["u"] = 26,				-- Hallow's End Filter
-										},
-										{	-- Witch's Brew
-											["itemID"] = 128663,	-- Witch's Brew
-											["questID"] = 39611,
-											["u"] = 26,				-- Hallow's End Filter
-										},
-										{	-- Creepy Crawlers
-											["itemID"] = 128664,	-- Creepy Crawlers
-											["questID"] = 39759,
-											["u"] = 26,				-- Hallow's End Filter
-										},
-										{	-- Tricky Treat
-											["itemID"] = 33226,		-- Tricky Treat
-											["u"] = 26,				-- Hallow's End Filter
-										},
+									{	-- Creepy Crawlers
+										["itemID"] = 128664,	-- Creepy Crawlers
+										["questID"] = 39759,
+										["u"] = 26,				-- Hallow's End Filter
+									},
+									{	-- Ghoulish Guises
+										["itemID"] = 128660,	-- Ghoulish Guises
+										["questID"] = 39758,
+										["u"] = 26,				-- Hallow's End Filter
+									},
+									{	-- Hallow's Glow
+										["itemID"] = 128661,	-- Hallow's Glow
+										["questID"] = 39612,
+										["u"] = 26,				-- Hallow's End Filter
+									},
+									{	-- Seer's Invitation
+										["itemID"] = 128662,	-- Seer's Invitation
+										["questID"] = 39613,
+										["u"] = 26,				-- Hallow's End Filter
+									},
+									{	-- Witch's Brew
+										["itemID"] = 128663,	-- Witch's Brew
+										["questID"] = 39611,
+										["u"] = 26,				-- Hallow's End Filter
+									},
+									{	-- Tricky Treat
+										["itemID"] = 33226,		-- Tricky Treat
+										["u"] = 26,				-- Hallow's End Filter
 									},
 								},
 							},
+						},
 					},
 					{	-- Pippi [Pets // A - Elwynn // Woim]
 						["npcID"] = 109685,	-- Pippi
