@@ -13,7 +13,7 @@ _.Zones =
 						a(spell(170108, {	-- Smuggling Run!
 							["groups"] = {
 								na(82459, { -- Honest Jim
-									["groups"] = bubbleDown({["f"] = 50}, {
+									["groups"] = {
 										i(113096), -- Bloodmane Charm
 										i(116915, { -- Inactive Apexis Guardian
 											follower(168),  -- Ziri'ak
@@ -28,7 +28,7 @@ _.Zones =
 										i(113290),	-- Spirevine Fruit
 										i(113094),	-- Gronnskin Bag
 										i(79249),	-- Fel-Charred Tome
-									}),
+									},
 									["description"] = "|cff66ccffMust have chosen Smuggler's Den as your Outpost Building.|r",
 								}),
 							},
@@ -37,7 +37,7 @@ _.Zones =
 						h(spell(170097, {	-- Smuggling Run!
 							["groups"] = {
 								nh(84243, { -- Linny "The Skinny" Leadpockets
-									["groups"] = bubbleDown({["f"] = 50}, {
+									["groups"] = {
 										i(113096), -- Bloodmane Charm
 										i(116915, { -- Inactive Apexis Guardian
 											follower(168),  -- Ziri'ak
@@ -52,7 +52,7 @@ _.Zones =
 										i(113290),	-- Spirevine Fruit
 										i(113094),	-- Gronnskin Bag
 										i(79249),	-- Fel-Charred Tome
-									}),
+									},
 									["description"] = "|cff66ccffMust have chosen Smuggler's Den as your Outpost Building.|r",
 								}),
 							},
