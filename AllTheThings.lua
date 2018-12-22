@@ -1173,9 +1173,9 @@ local function CreateObject(t)
 	else
 		if t.isToy then s.isToy = true; end
 		for key,value in pairs(t) do
-			if key ~= "parent" then
+			--if key ~= "parent" then
 				s[key] = value;
-			end
+			--end
 		end
 		if t.g then
 			s.g = {};
@@ -1186,6 +1186,8 @@ local function CreateObject(t)
 		t = s;
 		if t.mapID then
 			t = app.CreateMap(t.mapID, t);
+		elseif t.s then
+			t = app.CreateItemSource(t.s, t.itemID, t);
 		elseif t.encounterID then
 			t = app.CreateEncounter(t.encounterID, t);
 		elseif t.currencyID then
@@ -2041,7 +2043,7 @@ local function SearchForItemLink(field, link)
 				if group and #group > 0 then
 					local merged_results = {};
 					for i,o in ipairs(group) do
-						MergeObject(merged_results, o);
+						MergeObject(merged_results, CreateObject(o));
 					end
 					group = merged_results;
 					
