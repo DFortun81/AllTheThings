@@ -1057,12 +1057,12 @@ local containsValue = function(dict, value)
 		if value2 == value then return true; end
 	end
 end
-local function GetCachedSearchResults(search, method, ...)
+local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 	if search then
 		local now = time();
 		local cache = searchCache[search];
 		if cache and (now - cache[3]) < cache[4] then return cache[1], cache[2]; end
-		local listing, group, working, important = method(...);
+		local listing, group, working, important = method(paramA, paramB, ...);
 		if listing then
 			-- Cache the result for a while depending on the importance of the item
 			cache = { };
@@ -1131,11 +1131,15 @@ local function GetCachedSearchResults(search, method, ...)
 					end
 				end
 				
-				for i,j in ipairs(group) do
-					if j.itemID and j.u and (not isCreature or not j.crs) then
-						local d = L("UNOBTAINABLE_ITEM_REASONS")[j.u][2];
-						if not contains(listing, d) then
-							tinsert(listing, 1, d);
+				if not isCreature then
+					local itemID = paramB;
+					if type(paramB) == "string" then itemID = GetItemInfoInstant(itemID); end
+					for i,j in ipairs(group) do
+						if j.itemID == itemID and j.u and not j.crs then
+							local d = L("UNOBTAINABLE_ITEM_REASONS")[j.u][2];
+							if not contains(listing, d) then
+								tinsert(listing, 1, d);
+							end
 						end
 					end
 				end
@@ -2897,9 +2901,9 @@ local function AttachTooltipRawSearchResults(self, listing, group, paramA, param
 		end
 	end
 end
-local function AttachTooltipSearchResults(self, search, method, ...)
-	local listing, group = GetCachedSearchResults(search, method, ...);
-	AttachTooltipRawSearchResults(self, listing, group, ...);
+local function AttachTooltipSearchResults(self, search, method, paramA, paramB, ...)
+	local listing, group = GetCachedSearchResults(search, method, paramA, paramB, ...);
+	AttachTooltipRawSearchResults(self, listing, group, paramA, paramB, ...);
 end
 local function AttachTooltipForEncounter(self, encounterID)
 	if GetDataMember("ShowEncounterID") then self:AddDoubleLine(L("ENCOUNTER_ID"), tostring(encounterID)); end
@@ -8261,13 +8265,6 @@ app:GetWindow("Debugger", UIParent, function(self)
 		self.rawData = {};
 		
 		-- Setup Event Handlers and register for events
-		-- /script AllTheThings:GetWindow("Debugger"):Show();
-		-- /script AllTheThings:GetWindow("Debugger"):Clear();
-		
-		-- /script _G.info = AllTheThings:GetWindow("Debugger"):CreateObject({itemID = 137642});
-		-- /script AllTheThings:GetWindow("Debugger"):MergeObject(AllTheThings:GetWindow("Debugger").data.g, _G.info);
-		-- /script AllTheThings:GetWindow("Debugger"):MergeObject(AllTheThings:GetWindow("Debugger").rawData, {itemID = 137642});
-		-- /script AllTheThings:GetWindow("Debugger"):Update();
 		self:SetScript("OnEvent", function(self, e, ...)
 			print(e, ...);
 			if e == "PLAYER_LOGIN" then
