@@ -33,6 +33,9 @@ _.Toys =
 			{	-- Rallying War Banner
 				["itemID"] = 166879,	-- Rallying War Banner
 			},
+			{	-- Sira's Extra Cloak
+				["itemID"] = 147843,	-- Sira's Extra Cloak
+			},
 			{	-- Warbeast Kraal Dinner Bell
 				["itemID"] = 166701,	-- Warbeast Kraal Dinner Bell
 			},

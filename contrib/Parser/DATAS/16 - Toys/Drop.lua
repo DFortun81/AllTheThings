@@ -136,7 +136,6 @@ _.Toys =
 		i(86573),		-- Shard of Archstone
 		i(129055),		-- Shoe Shine Kit
 		i(153293),  	-- Sightless Eye
-		i(147843), 		-- Sira's Extra Cloak
 		i(128328), 		-- Skoller's Bag of Squirrel Treats
 		i(143544, { 	-- Skull of Corruption -- only demon hunter
 			["groups"] = {
