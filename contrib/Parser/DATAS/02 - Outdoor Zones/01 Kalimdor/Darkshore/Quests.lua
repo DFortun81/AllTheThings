@@ -729,6 +729,13 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 13591,	-- Disturbing Connections
 					},
+					{	-- Return to Nessa
+						["questID"] = 26759,
+						["u"] = 40,
+						["qg"] = 4200,	-- Laird
+						["races"] = { 4 },	-- Night Elf
+						["sourceQuest"] = 26758,	-- Flight to Auberdine
+					},
 					{	-- Solace for the Highborne
 						["questID"] = 13561,
 						["qg"] = 33177,	-- Arya Autumnlight

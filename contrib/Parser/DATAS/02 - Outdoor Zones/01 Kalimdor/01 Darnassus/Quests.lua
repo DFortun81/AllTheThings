@@ -74,7 +74,7 @@ _.Zones =
 					{	-- An Unexpected Gift
 						["questID"] = 6342,
 						["qg"] = 7316,	-- Sister Aquinne
-						["coord"] = { 36.2, 53.2 },
+						["coord"] = { 36.0, 53.4 },
 						["races"] = { 4 },	-- Night Elf
 						["sourceQuest"] = 6341,	-- To Darnassus
 					},
@@ -270,6 +270,12 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["requireSkill"] = 165,	-- Leatherworking
 					},
+					{	-- Nessa Shadowsong
+						["questID"] = 26756,
+						["u"] = 40,
+						["qg"] = 4241,	-- Mydrannul
+						["races"] = { 4 },	-- Night Elf
+					},
 					{	-- Remembering the Ancestors
 						["questID"] = 29314,
 						["groups"] = {
@@ -288,7 +294,7 @@ _.Zones =
 					{	-- Return to Nyoma
 						["questID"] = 6343,
 						["qg"] = 40552,	-- Leora
-						["coord"] = { 36.6, 48.0 },
+						["coord"] = { 36.5, 47.8 },
 						["races"] = { 4 },	-- Night Elf
 						["sourceQuest"] = 6342,	-- An Unexpected Gift
 					},

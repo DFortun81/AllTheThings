@@ -16,30 +16,57 @@ _.Zones =
 					n(63070, {	-- Valeena
 						["groups"] = {
 							p(138, {	-- Blue Moth
-								["races"] = {11}	-- Draenei
+								["races"] = { 11 },	-- Draenei
 							}),
 							p(630, {	-- Gilnean Raven
-								["races"] = {22}	-- Worgan
+								["races"] = { 22 },	-- Worgan
 							}),
 							p(68, {		-- Great Horned Owl
-								["races"] = {4}		-- Night Elf
+								["races"] = { 4 },		-- Night Elf
 							}),
 							p(792, {	-- Jade Crane Chick
-								["races"] = {25}	-- Pandaren
+								["races"] = { 25 },	-- Pandaren
 							}),
 							p(43, {		-- Orange Tabby Cat
-								["races"] = {1}		-- Human
+								["races"] = { 1 },		-- Human
 							}),
 							p(72, {      -- Snowshoe Rabbit
-								["races"] = {3,7}	-- Gnome, Dwarf
+								["races"] = {
+									3,	-- Gnome
+									7,	-- Dwarf
+								},
 							}),
 						},
 						["description"] = "You may only learn this pet once per character from a Battle Pet Trainer.|r"
 					}),
-					desc(qg(63070, qa(31552)), "This quest is part of a chain initiated by learning Battle Pet Training."),	-- Learning the Ropes
-					qg(63070, qa(31553)),	-- On The Mend
-					qg(63070, qa(31826)),	-- Level Up!
-					qg(63070, qa(31555)), 	-- Got one!
+					{	-- Learning the Ropes
+						["questID"] = 31552,
+						["qg"] = 63070,	-- Valeena
+						["coord"] = { 55.2, 51.2 },
+						["races"] = ALLIANCE_ONLY,
+						["description"] = "This quest is part of a chain initiated by learning Battle Pet Training."
+					},
+					{	-- On The Mend
+						["questID"] = 31553,
+						["qg"] = 63070,	-- Valeena
+						["coord"] = { 55.2, 51.2 },
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 31552,	-- Learning the Ropes
+					},
+					{	-- Level Up!
+						["questID"] = 31826,
+						["qg"] = 63070,	-- Valeena
+						["coord"] = { 55.2, 51.2 },
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 31553,	-- On The Mend
+					},
+					{	-- Got one!
+						["questID"] = 31555,
+						["qg"] = 63070,	-- Valeena
+						["coord"] = { 55.2, 51.2 },
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 31826,	-- Level Up!
+					},
 				}),
 			},
 		}),
