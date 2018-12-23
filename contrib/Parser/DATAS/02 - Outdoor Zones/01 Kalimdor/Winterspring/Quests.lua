@@ -565,6 +565,12 @@ _.Zones =
 						["coord"] = { 58.0, 52.2 },
 						["repeatable"] = true,
 					},
+					{	-- Meet at the Grave
+						["questID"] = 3912,
+						["u"] = 40,
+						["qg"] = 9298,	-- Donova Snowden
+						["sourceQuest"] = 3909,	-- The Videre Elixir
+					},
 					{	-- Out of Harm's Way
 						["questID"] = 28701,
 						["qg"] = 11079,	-- Wynd Nightchaser
@@ -721,6 +727,12 @@ _.Zones =
 						["qg"] = 11118,	-- Innkeeper Vizzie
 						["coord"] = { 59.8, 51.1 },
 						["isBreadcrumb"] = true,
+					},
+					{	-- The Videre Elixir
+						["questID"] = 3909,
+						["u"] = 40,
+						["qg"] = 9298,	-- Donova Snowden
+						["sourceQuest"] = 3908,	-- It's a Secret to Everybody
 					},
 					{	-- Threat of the Winterfall
 						["questID"] = 28460,

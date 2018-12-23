@@ -655,6 +655,12 @@ _.Zones =
 						["qg"] = 9598,	-- Arei
 						["races"] = ALLIANCE_ONLY,
 					},
+					{	-- Aquementas
+						["questID"] = 4005,
+						["u"] = 40,
+						["qg"] = 9116,	-- Eridan Bluewind
+						["sourceQuest"] = 4084,	-- Silver Heart
+					},
 					{	-- Back to Business
 						["questID"] = 28372,
 						["qg"] = 48469,	-- Fez Hobnob
@@ -937,6 +943,12 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["repeatable"] = true,
 						["sourceQuest"] = 5885,	-- Salve via Skinning
+					},
+					{	-- Silver Heart
+						["questID"] = 4084,
+						["u"] = 40,
+						["qg"] = 9116,	-- Eridan Bluewind
+						["sourceQuest"] = 3942,	-- Linken's Memory
 					},
 					{	-- The Fate of Bloodvenom Post
 						["questID"] = 28305,

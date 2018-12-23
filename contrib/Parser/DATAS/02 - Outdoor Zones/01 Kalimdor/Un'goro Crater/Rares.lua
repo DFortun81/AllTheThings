@@ -7,6 +7,14 @@ _.Zones =
 		m(78, {	-- Un'Goro Crater
 			["groups"] = {
 				n(-16, {	-- Rares	
+					n(14461, { 	-- Baron Charr
+						["groups"] = {
+							un(7, i(18671)), 	-- Baron Charr's Sceptre
+							un(7, i(18672)), 	-- Elemental Ember
+						},
+						["u"] = 43,
+						["description"] = "This rare was only available during the Elemental Invasions.",
+					}),
 					n(6582, {	-- Clutchmother Zavas
 						i(9943),	-- Abjurer's Robe
 						i(9950),	-- Chieftain's Breastplate

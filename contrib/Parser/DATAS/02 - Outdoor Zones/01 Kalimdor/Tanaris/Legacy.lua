@@ -9,6 +9,17 @@ _.Zones =
 				n(-40, {	-- Legacy
 					["groups"] = {
 						n(-17, {	-- Quests
+							{	-- A Conspicuous Gravestone
+								["objectID"] = 148504,
+								["groups"] = {
+									{	-- Linken's Sword
+										["questID"] = 3914,
+										["u"] = 40,
+										["sourceQuest"] = 3913,	-- A Grave Situation
+									},
+								},
+								["u"] = 43,
+							},
 							{	-- A Good Head On Your Shoulders
 								["questID"] = 2771,	-- A Good Head On Your Shoulders
 								["qg"] = 7804,	-- Trenton Lighthammer <The Mithril Order>
@@ -21,6 +32,12 @@ _.Zones =
 										["u"] = 2,
 									},
 								},
+							},
+							{	-- A Grave Situation
+								["questID"] = 3913,
+								["u"] = 40,
+								["qg"] = 9299,	-- Gaeriyan
+								["sourceQuest"] = 3912,	-- Meet at the Grave
 							},
 							un(40, qr(q(8181, {	-- Confront Yeh'kinya
 								un(2, i(20218)),	-- Faded Hakkari Cloak
