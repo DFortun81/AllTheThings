@@ -5,10 +5,10 @@
 _.Zones =
 {
 	m(905, { 	-- Argus
-		m(882, { -- Mac'Aree
+		m(882, {	-- Mac'Aree
 			["groups"] = {
 				n(-4,   {	-- Achievement
-					ach(12074, { -- Shoot First, Loot Later
+					ach(12074, {	-- Shoot First, Loot Later
 						o(277342, {	-- Augari Goods
 							["groups"] = {
 								i(153281), --Augari Wakener's Handwraps
@@ -36,9 +36,9 @@ _.Zones =
 							["model"] = "World\\Expansion06\\Doodads\\Eredar\\7eR_Ancient_RaidChest01.mdx",
 							["modelScale"] = 2.5,
 						}),
-						o(276224, { -- Chest of Ill-Gotten Gains
+						o(276224, {	-- Chest of Ill-Gotten Gains
 							["groups"] = {
-								i(153325), -- Mac'Aree Vigilant's Redoubt
+								i(153325),	-- Mac'Aree Vigilant's Redoubt
 							},
 							["questID"] = 48744,
 							["description"] = "This chest is located at |cFFFFFFFF50.77,38.76|r in Mac'Aree near Jed'hin Champion Vorusk. You will need |cFFFFD700Light's Judgment|r to get into the cave.",
@@ -46,7 +46,7 @@ _.Zones =
 							["model"] = "World\\Expansion06\\Doodads\\Eredar\\7eR_Ancient_RaidChest01.mdx",
 							["modelScale"] = 2.5,
 						}),
-						o(276228, { -- Desperate Eredar's Cache
+						o(276228, {	-- Desperate Eredar's Cache
 							["groups"] = {
 								i(153267), --Enclave Aspirant's Hatchet
 							},
@@ -56,7 +56,7 @@ _.Zones =
 							["model"] = "World\\Expansion06\\Doodads\\Eredar\\7eR_Ancient_RaidChest01.mdx",
 							["modelScale"] = 2.5,
 						}),
-						o(276230, { -- Doomseeker's Treasure
+						o(276230, {	-- Doomseeker's Treasure
 							["groups"] = {
 								i(153313), --Praetor's Ornamental Claymore
 							},
@@ -85,7 +85,7 @@ _.Zones =
 							["model"] = "World\\Expansion06\\Doodads\\Eredar\\7eR_Ancient_RaidChest01.mdx",
 							["modelScale"] = 2.5,
 						}),
-						o(276226, { -- Void-Tinged Chest
+						o(276226, {	-- Void-Tinged Chest
 							["groups"] = {
 								i(153328), --Mystic Wakener's Shiv
 							},
@@ -99,28 +99,28 @@ _.Zones =
 					}),
 				}),
 				n(-228, {	-- Flight Paths
-					fp(2003, { -- City Center, Mac'Aree
+					fp(2003, {	-- City Center, Mac'Aree
 						["coord"] = { 47, 55.4 },
 					}),
-					fp(1978, { -- Conservatory of the Arcane, Mac'Aree
+					fp(1978, {	-- Conservatory of the Arcane, Mac'Aree
 						["coord"] = { 63, 39.6 },
 					}),
-					fp(1991, { -- Prophet's Reflection, Mac'Aree
+					fp(1991, {	-- Prophet's Reflection, Mac'Aree
 						["coord"] = { 43.8, 14.4 },
 					}),
-					fp(1981, { -- Shadowguard Incursion, Mac'Aree
+					fp(1981, {	-- Shadowguard Incursion, Mac'Aree
 						["coord"] = { 30.2, 49.6 },
 					}),
-					fp(1982, { -- Triumvirate's End, Mac'Aree
+					fp(1982, {	-- Triumvirate's End, Mac'Aree
 						["coord"] = { 52.8, 75.4 },
 					}),
-					fp(1977, { -- Vindicaar, Mac'Aree
+					fp(1977, {	-- Vindicaar, Mac'Aree
 						["description"] = "Vindicaar, Krokruun",
 					}),
 				}),
 				n(-25,  {	-- Pet Battle
 					["groups"] = {
-						ach(12088, { -- Anomalous Animals of Argus
+						ach(12088, {	-- Anomalous Animals of Argus
 							["groups"] = {
 								{
 									["achievementID"] = 12088,	-- Anomalous Animals of Argus
@@ -155,12 +155,12 @@ _.Zones =
 							},
 							["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 						}),
-						ach(12100, { -- Family Fighter
+						ach(12100, {	-- Family Fighter
 							["groups"] = {
-								i(153040, { -- Felclaw Marsuul
+								i(153040, {	-- Felclaw Marsuul
 									["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 								}),
-								ach(12089, { -- Aquatic Assault
+								ach(12089, {	-- Aquatic Assault
 									["groups"] = {
 										{
 											["achievementID"] = 12089,	-- Aquatic Assault
@@ -195,7 +195,7 @@ _.Zones =
 									},
 									["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 								}),
-								ach(12091, { -- Beast Blitz
+								ach(12091, {	-- Beast Blitz
 									["groups"] = {
 										{			
 											["achievementID"] = 12091,	-- Beast Blitz	
@@ -230,7 +230,7 @@ _.Zones =
 									},
 									["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 								}),				
-								ach(12092, { -- Critical Critters
+								ach(12092, {	-- Critical Critters
 									["groups"] = {
 										{			
 											["achievementID"] = 12092,	-- Critical Critters	
@@ -265,7 +265,7 @@ _.Zones =
 									},
 									["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 								}),				
-								ach(12093, { -- Draconic Destruction
+								ach(12093, {	-- Draconic Destruction
 									["groups"] = {
 										{			
 											["achievementID"] = 12093,	-- Draconic Destruction	
@@ -300,7 +300,7 @@ _.Zones =
 									},
 									["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 								}),				
-								ach(12094, { -- Elemental Escalation
+								ach(12094, {	-- Elemental Escalation
 									["groups"] = {
 										{			
 											["achievementID"] = 12094,	-- Elemental Escalation	
@@ -335,7 +335,7 @@ _.Zones =
 									},
 									["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 								}),				
-								ach(12095, { -- Fierce Fliers
+								ach(12095, {	-- Fierce Fliers
 									["groups"] = {
 										{			
 											["achievementID"] = 12095,	-- Fierce Fliers	
@@ -370,7 +370,7 @@ _.Zones =
 									},
 									["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 								}),				
-								ach(12096, { -- Humanoid Havoc
+								ach(12096, {	-- Humanoid Havoc
 									["groups"] = {
 										{			
 											["achievementID"] = 12096,	-- Humanoid Havoc	
@@ -405,7 +405,7 @@ _.Zones =
 									},
 									["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 								}),				
-								ach(12097, { -- Magical Mayhem
+								ach(12097, {	-- Magical Mayhem
 									["groups"] = {
 										{			
 											["achievementID"] = 12097,	-- Magical Mayhem	
@@ -440,7 +440,7 @@ _.Zones =
 									},
 									["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 								}),				
-								ach(12098, { -- Mechanical Melee
+								ach(12098, {	-- Mechanical Melee
 									["groups"] = {
 										{			
 											["achievementID"] = 12098,	-- Mechanical Melee	
@@ -475,7 +475,7 @@ _.Zones =
 									},
 									["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 								}),				
-								ach(12099, { -- Unstoppable Undead
+								ach(12099, {	-- Unstoppable Undead
 									["groups"] = {
 										{			
 											["achievementID"] = 12099,	-- Unstoppable Undead	
@@ -578,8 +578,8 @@ _.Zones =
 					{	-- A Colorful Key
 						["questID"] = 48075,	-- A Colorful Key
 						["qg"] = 125343,		-- Vorel
-						["requireSkill"] = 755, -- Jewelcrafting
-						["sourceQuests"] = { 46941 }, -- The Path Forward
+						["requireSkill"] = 755,	-- Jewelcrafting
+						["sourceQuests"] = { 46941 },	-- The Path Forward
 						["g"] = {
 							{	-- Design: Deadly Deep Chemirine
 								["itemID"] = 151736,	-- Design: Deadly Deep Chemirine
@@ -598,7 +598,7 @@ _.Zones =
 					{	-- A Crowning Achievement
 						["questID"] = 48076,	--  A Crowning Achievment
 						["qg"] = 125343,		-- Vorel
-						["requireSkill"] = 755, -- Jewelcrafting
+						["requireSkill"] = 755,	-- Jewelcrafting
 						["sourceQuests"] = {
 							48075,	-- A Colorful Key
 						},
@@ -714,7 +714,7 @@ _.Zones =
 --]]					
 				}),	
 				n(-16,  {	-- Rares
-					n(126887, { -- Ataxon
+					n(126887, {	-- Ataxon
 						["groups"] = {
 							i(153034),	-- Technique: Glyph of the Voidling
 							i(153056),	-- Grasping Manifestation
@@ -723,13 +723,13 @@ _.Zones =
 					}),
 					o(273301, {	-- Ancient Eredar Cache
 						["groups"] = {
-							i(153271), -- Forgotten Conservatory Helm
-							i(153288), -- Forgotten Conservatory Robes
-							i(153272), -- Forgotten Conservatory Gloves
-							i(153275), -- Forgotten Conservatory Slippers
-							i(153331), -- Mac'Aree Lightseeker's Helmet
-							i(153334), -- Mac'Aree Lightseeker's Spaulders
-							i(153332), -- Mac'Aree Lightseeker's Chestpiece
+							i(153271),	-- Forgotten Conservatory Helm
+							i(153288),	-- Forgotten Conservatory Robes
+							i(153272),	-- Forgotten Conservatory Gloves
+							i(153275),	-- Forgotten Conservatory Slippers
+							i(153331),	-- Mac'Aree Lightseeker's Helmet
+							i(153334),	-- Mac'Aree Lightseeker's Spaulders
+							i(153332),	-- Mac'Aree Lightseeker's Chestpiece
 						},
 						["coords"] = {
 							{ 54.9, 57.7 },
@@ -755,7 +755,8 @@ _.Zones =
 					}),
 					o(273407, {	-- Ancient Eredar Cache
 						["groups"] = {
-							i(153275), -- Forgotten Conservatory Slippers
+							i(153276),	-- Forgotten Conservatory Amice*
+							i(153275),	-- Forgotten Conservatory Slippers
 							i(153334),	-- Mac'Aree Lightseeker's Spaulders
 							i(153335),	-- Mac'Aree Lightseeker's Handguards
 							i(153333),	-- Mac'Aree Lightseeker's Waistplate
@@ -784,7 +785,7 @@ _.Zones =
 							i(153272),	-- Forgotten Conservatory Gloves
 							i(153270),	-- Forgotten Conservatory Sash
 							i(153273),	-- Forgotten Conservatory Leggings
-							i(153275), -- Forgotten Conservatory Slippers
+							i(153275),	-- Forgotten Conservatory Slippers
 							i(153332),	-- Mac'Aree Lightseeker's Chestpiece
 							i(153336),	-- Mac'Aree Lightseeker's Armguards
 							i(153333),	-- Mac'Aree Lightseeker's Waistplate
@@ -934,32 +935,32 @@ _.Zones =
 						},
 						["questID"] = 48371,
 					}),
-					n(126862, { -- Baruut the Bloodthirsty
+					n(126862, {	-- Baruut the Bloodthirsty
 						["groups"] = {
-							i(153193), -- Baarut the Brisk Toy
+							i(153193),	-- Baarut the Brisk Toy
 						},
 						["modelScale"] = 0.75,
 						["questID"] =  48700,
 					}),
-					n(126869, { -- Captain Faruq
+					n(126869, {	-- Captain Faruq
 						["groups"] = {
 							-- DROPS CACHE
 						},
 						["questID"] = 48707,
 					}),
-					n(126910, { -- Commander Xethgar
+					n(126910, {	-- Commander Xethgar
 						["groups"] = {
 							-- DROPS CACHE
 						},
 						["questID"] = 48720,
 					}),
-					n(126864, { -- Feasel the Muffin Thief
+					n(126864, {	-- Feasel the Muffin Thief
 						["groups"] = {
-							--i(152998), -- Carefully Hidden Muffin [Doesn't give anything useful....yet]
+							--i(152998),	-- Carefully Hidden Muffin [Doesn't give anything useful....yet]
 						},
 						["questID"] = 48702,
 					}),
-					n(126896, { -- Herald of Chaos
+					n(126896, {	-- Herald of Chaos
 						["groups"] = {
 							-- DROPS CACHE
 						},
@@ -967,32 +968,32 @@ _.Zones =
 					}),
 					n(126900, {	-- Instructor Tarahna
 						["groups"] = {
-							i(153179), -- Blue Conservatory Scroll
-							i(153181), -- Red Conservatory Scroll
-							i(153180), -- Yellow Conservatory Scroll
-							i(153309), -- Unyielding Peacekeeper's Mace
+							i(153179),	-- Blue Conservatory Scroll
+							i(153181),	-- Red Conservatory Scroll
+							i(153180),	-- Yellow Conservatory Scroll
+							i(153309),	-- Unyielding Peacekeeper's Mace
 						},
 						["modelScale"] = 0.85,
 						["questID"] = 48718,
 					}),
-					n(126899, { -- Jed'hin Champion Vorusk
+					n(126899, {	-- Jed'hin Champion Vorusk
 						["groups"] = {
-							i(153302), -- Honed Jed'hin Scimitar
+							i(153302),	-- Honed Jed'hin Scimitar
 						},
 						["questID"] = 48713,
 					}),
-					n(126860, { -- Kaara the Pale
+					n(126860, {	-- Kaara the Pale
 						["groups"] = {
 							--[[
 							-- No longer drops this item.
-							i(153190, { -- Fel-Spotted Egg
-								i(153191, { -- Cracked Fel-Spotted Egg
-									dr(7.25, i(152843)), -- Darkspore Mana Ray Mount
-									dr(7.25, i(152841)), -- Felglow Mana Ray Mount
-									dr(7.25, i(152840)), -- Scintillating Mana Ray Mount
-									dr(7.25, i(152842)), -- Vibrant Mana Ray Mount
-									dr(22, i(153054)), -- Docile Skyfin Pet
-									dr(22, i(153055)), -- Fel-Afflicted Skyfin Pet
+							i(153190, {	-- Fel-Spotted Egg
+								i(153191, {	-- Cracked Fel-Spotted Egg
+									dr(7.25, i(152843)),	-- Darkspore Mana Ray Mount
+									dr(7.25, i(152841)),	-- Felglow Mana Ray Mount
+									dr(7.25, i(152840)),	-- Scintillating Mana Ray Mount
+									dr(7.25, i(152842)),	-- Vibrant Mana Ray Mount
+									dr(22, i(153054)),	-- Docile Skyfin Pet
+									dr(22, i(153055)),	-- Fel-Afflicted Skyfin Pet
 								}),
 							}),
 							]]--
@@ -1000,111 +1001,111 @@ _.Zones =
 						["questID"] = 48697,
 						["modelScale"] = 0.75,
 					}),
-					n(124440, { -- Overseer Y'Beda
+					n(124440, {	-- Overseer Y'Beda
 						["groups"] = {
-							i(153315), -- Praetor's Ornamental Warblade
+							i(153315),	-- Praetor's Ornamental Warblade
 						},
 						["questID"] = 48714,
 					}),
-					n(125498, { -- Overseer Y'Morna
+					n(125498, {	-- Overseer Y'Morna
 						["groups"] = {
-							i(153257), -- Isolon Anchorite's Gavel
+							i(153257),	-- Isolon Anchorite's Gavel
 						},
 						["questID"] = 48717,
 					}),
-					n(125497, { -- Overseer Y'Sorna
+					n(125497, {	-- Overseer Y'Sorna
 						["groups"] = {
-							i(153268), -- Enclave Aspirant's Axe
+							i(153268),	-- Enclave Aspirant's Axe
 						},
 						["questID"] = 48716,
 					}),
-					n(126898, { -- Sabuul
+					n(126898, {	-- Sabuul
 						["groups"] = {
-							i(153190, { -- Fel-Spotted Egg
-								i(153191, { -- Cracked Fel-Spotted Egg
-									dr(7.25, i(152843)), -- Darkspore Mana Ray Mount
-									dr(7.25, i(152841)), -- Felglow Mana Ray Mount
-									dr(7.25, i(152840)), -- Scintillating Mana Ray Mount
-									dr(7.25, i(152842)), -- Vibrant Mana Ray Mount
-									dr(22, i(153054)), -- Docile Skyfin Pet
-									dr(22, i(153055)), -- Fel-Afflicted Skyfin Pet
+							i(153190, {	-- Fel-Spotted Egg
+								i(153191, {	-- Cracked Fel-Spotted Egg
+									dr(7.25, i(152843)),	-- Darkspore Mana Ray Mount
+									dr(7.25, i(152841)),	-- Felglow Mana Ray Mount
+									dr(7.25, i(152840)),	-- Scintillating Mana Ray Mount
+									dr(7.25, i(152842)),	-- Vibrant Mana Ray Mount
+									dr(22, i(153054)),	-- Docile Skyfin Pet
+									dr(22, i(153055)),	-- Fel-Afflicted Skyfin Pet
 								}),
 							}),
 						},
 						["modelScale"] = 0.75,
 						["questID"] = 48712,
 					}),
-					n(122838, { -- Shadowcaster Voruun
+					n(122838, {	-- Shadowcaster Voruun
 						["groups"] = {
-							i(153296), -- Spectral Consul's Cutter
+							i(153296),	-- Spectral Consul's Cutter
 						},
 						["questID"] = 48692,
 					}),
-					n(126912, { -- Skreeg the Devourer
+					n(126912, {	-- Skreeg the Devourer
 						["groups"] = {
-							i(152904), -- Acid Belcher
+							i(152904),	-- Acid Belcher
 						},
 						["modelScale"] = 0.80,
 						["questID"] = 48721,
 					}),
-					n(126913, { -- Slithon the Last
+					n(126913, {	-- Slithon the Last
 						["groups"] = {
-							--i(153203), -- Ancient Fishing Line
+							--i(153203),	-- Ancient Fishing Line
 						},
 						["questID"] = 48935,
 					}),
-					n(126889, { -- Sorolis the Ill-Fated
+					n(126889, {	-- Sorolis the Ill-Fated
 						["groups"] = {
-							i(153292), -- Spectral Censorite's Spire
+							i(153292),	-- Spectral Censorite's Spire
 						},
 						["questID"] = 48710,
 					}),
-					n(126815, { -- Soultwisted Monstrosity
+					n(126815, {	-- Soultwisted Monstrosity
 						["groups"] = {
 							-- DROPS CACHE
 						},
 						["questID"] = 48693,
 					}),
-					n(126868, { -- Turek the Lucid
+					n(126868, {	-- Turek the Lucid
 						["groups"] = {
-							i(153306), -- Oronaar Miner's Piercer
+							i(153306),	-- Oronaar Miner's Piercer
 						},
 						["questID"]  = 48706,
 					}),
-					n(126885, { -- Umbraliss <Voidstalker Matriarch>
+					n(126885, {	-- Umbraliss <Voidstalker Matriarch>
 						["groups"] = {
 							-- DROPS CACHE
 						},
 						["questID"] = 48708,
 					}),
-					n(126867, { -- Venomtail Skyfin
+					n(126867, {	-- Venomtail Skyfin
 						["groups"] = {
-							i(152844), -- Lambent Mana Ray
+							i(152844),	-- Lambent Mana Ray
 						},
 						["questID"] = 48705,
 					}),
-					n(126866, { -- Vigilant Kuro
+					n(126866, {	-- Vigilant Kuro
 						["groups"] = {
-							i(153183), -- Barrier Generator [Note: Drop Argus]
-							i(153323), -- Mac'Aree Vigilant's Crest
+							i(153183),	-- Barrier Generator [Note: Drop Argus]
+							i(153323),	-- Mac'Aree Vigilant's Crest
 						},
 						["questID"] = 48704,
 					}),
-					n(126865, { -- Vigilant Thanos
+					n(126865, {	-- Vigilant Thanos
 						["groups"] = { 
-							i(153183), -- Barrier Generator [Note: Drop Argus]
-							i(153322), -- Mac'Aree Vigilant's Shield
+							i(153183),	-- Barrier Generator [Note: Drop Argus]
+							i(153322),	-- Mac'Aree Vigilant's Shield
 						},
 						["questID"] = 48703,
 					}),
-					n(126852, { -- Wrangler Kravos
+					n(126852, {	-- Wrangler Kravos
 						["groups"] = {
-							i(152814), -- Maddened Chaosrunner
-							i(153269), -- Enclave Aspirant's Waraxe
+							i(152814),	-- Maddened Chaosrunner
+							i(153269),	-- Enclave Aspirant's Waraxe
 						},
 						["questID"] = 48695,
 					}),
-					n(126908, { -- Zul'tan the Numerous
+					n(126908, {	-- Zul'tan the Numerous
 						["groups"] = { 
 							-- DROPS CACHE
 						},
@@ -1113,10 +1114,10 @@ _.Zones =
 				}),
 				n(-34,  {	-- World Quests
 					["groups"] = {
-						n(-322, { -- Cloak
-							i(150988), -- Twisted-Ritualist's Shawl
+						n(-322, {	-- Cloak
+							i(150988),	-- Twisted-Ritualist's Shawl
 						}),
-						n(-43, { -- Cloth
+						n(-43, {	-- Cloth
 							i(150980),	-- Doomsinger Cap
 							i(150987),	-- Doomsinger Amice
 							i(150985),	-- Doomsinger Robes
@@ -1126,7 +1127,7 @@ _.Zones =
 							i(150986),	-- Doomsinger Leggings
 							i(150984),	-- Doomsinger Slippers
 						}),
-						n(-44, { -- Leather
+						n(-44, {	-- Leather
 							i(150969),	-- Stygian Mask
 							i(150970),	-- Stygian Shoulderguards
 							i(150968),	-- Stygian Vest
@@ -1136,7 +1137,7 @@ _.Zones =
 							i(150971),	-- Stygian Trousers
 							i(150967),	-- Stygian Boots
 						}),
-						n(-45, { -- Mail
+						n(-45, {	-- Mail
 							i(150975),	-- Nath'raxxan Coif
 							i(150979),	-- Nath'raxxan Spaulders
 							i(150978),	-- Nath'raxxan Chestguard
@@ -1146,7 +1147,7 @@ _.Zones =
 							i(150974),	-- Nath'raxxan Leggings
 							i(150976),	-- Nath'raxxan Boots
 						}),
-						n(-46, { -- Plate
+						n(-46, {	-- Plate
 							i(150957),	-- Garothi Helmet
 							i(150960),	-- Garothi Pauldrons
 							i(150958),	-- Garothi Breastplate
@@ -1161,109 +1162,109 @@ _.Zones =
 				n(0,    {	-- Zone Drop
 					["groups"] = {
 						
-						n(-318, { -- Armor
-							i(152740, { -- Unsullied Cloak
-								i(152778), -- Conservatory Ward's Drape
+						n(-318, {	-- Armor
+							i(152740, {	-- Unsullied Cloak
+								i(152778),	-- Conservatory Ward's Drape
 							}),
-							i(152738, { -- Unsullied Cloth Cap
-								i(152770), -- Azurelight Sage's Cap
+							i(152738, {	-- Unsullied Cloth Cap
+								i(152770),	-- Azurelight Sage's Cap
 							}),
-							i(152734, { -- Unsullied Cloth Mantle
-								i(152777), -- Azurelight Sage's Mantle
+							i(152734, {	-- Unsullied Cloth Mantle
+								i(152777),	-- Azurelight Sage's Mantle
 							}),
-							i(153135, { -- Unsullied Cloth Robes
-								i(152775), -- Azurelight Sage's Robes
+							i(153135, {	-- Unsullied Cloth Robes
+								i(152775),	-- Azurelight Sage's Robes
 							}),
-							i(152742, { -- Unsullied Cloth Cuffs
-								i(152773), -- Azurelight Sage's Cuffs
+							i(152742, {	-- Unsullied Cloth Cuffs
+								i(152773),	-- Azurelight Sage's Cuffs
 							}),
-							i(153141, { -- Unsullied Cloth Mitts
-								i(152771), -- Azurelight Sage's Mitts
+							i(153141, {	-- Unsullied Cloth Mitts
+								i(152771),	-- Azurelight Sage's Mitts
 							}),
-							i(153156, { -- Unsullied Cloth Sash
-								i(152772), -- Azurelight Sage's Sash
+							i(153156, {	-- Unsullied Cloth Sash
+								i(152772),	-- Azurelight Sage's Sash
 							}),
-							i(153154, { -- Unsullied Cloth Leggings
-								i(152776), -- Azurelight Sage's Leggings
+							i(153154, {	-- Unsullied Cloth Leggings
+								i(152776),	-- Azurelight Sage's Leggings
 							}),
-							i(153144, { -- Unsullied Cloth Slippers
-								i(152774), -- Azurelight Sage's Slippers
+							i(153144, {	-- Unsullied Cloth Slippers
+								i(152774),	-- Azurelight Sage's Slippers
 							}),
 							i(153139,{ --Unsullied Leather Headgear	
-								i(152759), -- Arinor Keeper's Headgear
+								i(152759),	-- Arinor Keeper's Headgear
 							}),	
 							i(153145,{ --Unsullied Leather Spaulders	
-								i(152760), -- Arinor Keeper's Spaulders
+								i(152760),	-- Arinor Keeper's Spaulders
 							}),	
 							i(153151,{ --Unsullied Leather Tunic	
-								i(152758), -- Arinor Keeper's Tunic
+								i(152758),	-- Arinor Keeper's Tunic
 							}),	
 							i(153142,{ --Unsullied Leather Armbands	
-								i(152754), -- Arinor Keeper's Armbands
+								i(152754),	-- Arinor Keeper's Armbands
 							}),	
 							i(152739,{ --Unsullied Leather Grips	
-								i(152755), -- Arinor Keeper's Grips
+								i(152755),	-- Arinor Keeper's Grips
 							}),	
 							i(153148,{ --Unsullied Leather Belt	
-								i(152756), -- Arinor Keeper's Belt
+								i(152756),	-- Arinor Keeper's Belt
 							}),	
 							i(152737,{ --Unsullied Leather Trousers	
-								i(152761), -- Arinor Keeper's Trousers
+								i(152761),	-- Arinor Keeper's Trousers
 							}),	
 							i(153136,{ --Unsullied Leather Treads	
-								i(152757), -- Arinor Keeper's Treads
+								i(152757),	-- Arinor Keeper's Treads
 							}),	
 							i(153147,{ --Unsullied Mail Coif	
-								i(152765), -- Oronaar Disciple's Coif
+								i(152765),	-- Oronaar Disciple's Coif
 							}),	
 							i(153137,{ --Unsullied Mail Spaulders	
-								i(152769), -- Oronaar Disciple's Spaulders
+								i(152769),	-- Oronaar Disciple's Spaulders
 							}),	
 							i(152741,{ --Unsullied Mail Chestguard	
-								i(152768), -- Oronaar Disciple's Chestguard
+								i(152768),	-- Oronaar Disciple's Chestguard
 							}),	
 							i(153158,{ --Unsullied Mail Bracers	
-								i(152762), -- Oronaar Disciple's Bracers
+								i(152762),	-- Oronaar Disciple's Bracers
 							}),	
 							i(153149,{ --Unsullied Mail Gloves	
-								i(152763), -- Oronaar Disciple's Gloves
+								i(152763),	-- Oronaar Disciple's Gloves
 							}),	
 							i(152744,{ --Unsullied Mail Girdle	
-								i(152767), -- Oronaar Disciple's Girdle
+								i(152767),	-- Oronaar Disciple's Girdle
 							}),	
 							i(153138,{ --Unsullied Mail Legguards	
-								i(152764), -- Oronaar Disciple's Legguards
+								i(152764),	-- Oronaar Disciple's Legguards
 							}),	
 							i(153152,{ --Unsullied Mail Boots	
-								i(152766), -- Oronaar Disciple's Boots
+								i(152766),	-- Oronaar Disciple's Boots
 							}),	
 							i(153155,{ --Unsullied Plate Helmet	
-								i(152747), -- Praetorium Guard's Helmet
+								i(152747),	-- Praetorium Guard's Helmet
 							}),	
 							i(153153,{ --Unsullied Plate Pauldrons	
-								i(152750), -- Praetorium Guard's Pauldrons
+								i(152750),	-- Praetorium Guard's Pauldrons
 							}),	
 							i(153143,{ --Unsullied Plate Breasplate	
-								i(152748), -- Praetorium Guard's Breastplate
+								i(152748),	-- Praetorium Guard's Breastplate
 							}),	
 							i(153150,{ --Unsullied Plate Vambraces	
-								i(152752), -- Praetorium Guard's Vambraces
+								i(152752),	-- Praetorium Guard's Vambraces
 							}),	
 							i(153157,{ --Unsullied Plate Gauntlets	
-								i(152751), -- Praetorium Guard's Gauntlets
+								i(152751),	-- Praetorium Guard's Gauntlets
 							}),	
 							i(153140,{ --Unsullied Plate Waistplate	
-								i(152749), -- Praetorium Guard's Waitsplate
+								i(152749),	-- Praetorium Guard's Waitsplate
 							}),	
 							i(153146,{ --Unsullied Plate Greaves	
-								i(152746), -- Praetorium Guard's Greaves
+								i(152746),	-- Praetorium Guard's Greaves
 							}),	
 							i(152743,{ --Unsullied Plate Sabatons	
-								i(152753), -- Praetorium Guard's Sabatons
+								i(152753),	-- Praetorium Guard's Sabatons
 							}),
 						}),
-						prof(356, { -- Fishing
-							i(152912), -- Pond Nettle [Note: Fishing]
+						prof(356, {	-- Fishing
+							i(152912),	-- Pond Nettle [Note: Fishing]
 						}),
 					},
 					
@@ -1271,48 +1272,48 @@ _.Zones =
 				}),
 				n(-74,  {	-- Zone Wide
 					["groups"] = {
-						n(-4, { -- Achievements
-							model(79440, ach(12103, { -- ...And Chew Mana Buns
-								i(153041), -- Bleakhoof Ruinstrider
+						n(-4, {	-- Achievements
+							model(79440, ach(12103, {	-- ...And Chew Mana Buns
+								i(153041),	-- Bleakhoof Ruinstrider
 							})),
-							ach(12078, { -- Commander of Argus
-								i(152396, { -- Arsenal: Weapons of the Lightforged
-									i(152332), -- Brilliant Daybreak Aegis
-									i(152337), -- Brilliant Daybreak Blade
-									i(152334), -- Brilliant Eventide Aegis
-									i(152339), -- Brilliant Eventide Blade
-									i(152333), -- Lustrous Daybreak Aegis
-									i(152336), -- Lustrous Daybreak Blade
-									i(152340), -- Lustrous Daybreak Greatsword
-									i(152342), -- Lustrous Daybreak Staff
-									i(152335), -- Lustrous Eventide Aegis
-									i(152338), -- Lustrous Eventide Blade
-									i(152341), -- Lustrous Eventide Greatsword
-									i(152343), -- Lustrous Eventide Staff
+							ach(12078, {	-- Commander of Argus
+								i(152396, {	-- Arsenal: Weapons of the Lightforged
+									i(152332),	-- Brilliant Daybreak Aegis
+									i(152337),	-- Brilliant Daybreak Blade
+									i(152334),	-- Brilliant Eventide Aegis
+									i(152339),	-- Brilliant Eventide Blade
+									i(152333),	-- Lustrous Daybreak Aegis
+									i(152336),	-- Lustrous Daybreak Blade
+									i(152340),	-- Lustrous Daybreak Greatsword
+									i(152342),	-- Lustrous Daybreak Staff
+									i(152335),	-- Lustrous Eventide Aegis
+									i(152338),	-- Lustrous Eventide Blade
+									i(152341),	-- Lustrous Eventide Greatsword
+									i(152343),	-- Lustrous Eventide Staff
 								}),
 							}),
-							ach(12100, { -- Family Fighter
-								i(153040), -- Felclaw Marsuul
+							ach(12100, {	-- Family Fighter
+								i(153040),	-- Felclaw Marsuul
 							}),
-							ach(12083, { -- Paragon of Argus
-								title(366), -- the Lightbringer
+							ach(12083, {	-- Paragon of Argus
+								title(366),	-- the Lightbringer
 							}),
 						}),
-						prof(182, { -- Herb Gathering
+						prof(182, {	-- Herb Gathering
 							["groups"] = {
-								i(153045), -- Fel Lasher
+								i(153045),	-- Fel Lasher
 							},
 							["description"] = "|cff66ccffThis pet can be found when gathering Argus herbs.|r",
 						}),
-						prof(393, { -- Skinning
-							i(153057), -- Fossorial Bile Larva
+						prof(393, {	-- Skinning
+							i(153057),	-- Fossorial Bile Larva
 						}),
 					},
 					["description"] = "These are activities that are done across all three Argus Zones",
 					["icon"] = "Interface\\Icons\\achievement_dungeon_argusdungeon",
 				}),
 			},
-			["achievementID"] = 12103, -- ...And Chew Mana Buns
+			["achievementID"] = 12103,	-- ...And Chew Mana Buns
 			["lvl"] = 110,
 			["description"] = "Mac'Aree, called the Jewel of Argus, was one of the most illustrious cities of Argus and the most sacred of all cities. Following the destruction that befell Argus, the city of Mac'Aree now floats above the planet, in a relatively pristine state.\n\nMac'Aree's hills were purple, and its rivers glittered even in complete darkness. The city's walkways were lined with precious minerals. Jessera of Mac'Aree cannot remember anymore how long it has been since he last was there. The eredar prior to their corruption by Sargeras seemed to have a great love and reverence for Mac'Aree, as expressed on the inscription at the bottom of |cFFFFD700[The Last Relic of Argus]|r, 'I long for Mac'Aree'.",
 			["icon"] = "Interface\\Icons\\achievement_master_of_argussian_reach",
