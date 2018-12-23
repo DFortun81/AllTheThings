@@ -385,6 +385,14 @@ _.Zones =
 							},
 						}),
 					}),
+					{	-- A Yeti of Your Own
+						["questID"] = 8798,
+						["groups"] = {
+							un(8, recipe(26011)),	-- Tranquil Mechanical Yeti
+						},
+						["u"] = 40,
+						["qg"] = 10305,	-- Umi Rumplesnicker
+					},
 					{	-- Blackrock Depths: Jewel of the Depths
 						["questID"] = 44952,
 						["groups"] = {
@@ -408,6 +416,46 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
 					},
+					{	-- Broodling Essence
+						["questID"] = 4726,
+						["u"] = 40,
+						["qg"] = 10267,	-- Tinkee Steamboil
+					},
+					{	-- Brumeran of the Chillwind
+						["questID"] = 5055,
+						["u"] = 40,
+						["qg"] = 10303,	-- Storm Shadowhoof
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 5054,	-- Ursius of the Shardtooth
+					},
+					{	-- Centuries of Suffering
+						["questID"] = 28516,
+						["u"] = 40,
+					},
+					{	-- Chillwind Horns
+						["questID"] = 4809,
+						["u"] = 40,
+						["qg"] = 10468,
+						["sourceQuest"] = 4808,	-- Felnok Steelspring
+					},
+					{	-- Corruption
+						["questID"] = 5307,
+						["groups"] = {
+							{	-- Plans: Blazing Rapier
+								["itemID"] = 12825,	-- Plans: Blazing Rapier
+								["spellID"] = 0,	-- This is now available via 142358, need to delink the old plans from the recipe
+								["u"] = 2,
+							},
+						},
+						["u"] = 40,
+						["qg"] = 11193,	-- Seril Scourgebane
+					},
+					{	-- [DEPRECATED] Winterfall Runners
+						["questID"] = 5087,
+						["u"] = 40,
+						["qg"] = 9298,	-- Donova Snowden
+						["sourceQuest"] = 5086,	-- Toxic Horrors
+					},
 					{	-- Doin' De E'ko Magic
 						["questID"] = 28540,
 						["groups"] = {
@@ -425,11 +473,73 @@ _.Zones =
 						["coord"] = { 59.3, 49.7 },
 						["sourceQuest"] = 28627,	-- Seril's Boast
 					},
+					{	-- Empty Firewater Flask
+						["itemID"] = 12771,
+						["groups"] = {
+							{	-- Winterfall Firewater
+								["questID"] = 5083,
+								["u"] = 40,
+							},
+						}
+					},
 					{	-- Exterminators at Work
 						["questID"] = 28676,
 						["qg"] = 11079,	-- Wynd Nightchaser
 						["coord"] = { 48.6, 41.0 },
 						["sourceQuest"] = 28674,	-- Starfall Village
+					},
+					{	-- Falling to Corruption
+						["questID"] = 5084,
+						["u"] = 40,
+						["qg"] = 9298,	-- Donovan Snowden
+						["sourceQuest"] = 5083,	-- Winterfall Firewater
+					},
+					{	-- Felnok Steelspring
+						["questID"] = 4808,
+						["u"] = 40,
+						["qg"] = 10267,	-- Tinkee Steamboil
+						["sourceQuest"] = 4726,	-- Broodling Essence
+					},
+					{	-- Fiery Plate Gauntlets
+						["questID"] = 5124,	-- Fiery Plate Gauntlets
+						["groups"] = {
+							{	-- Plans: Fiery Plate Gauntlets
+								["itemID"] = 12699,	-- Plans: Fiery Plate Gauntlets
+								["u"] = 2,
+							},
+							{	-- Fiery Plate Gauntlets
+								["itemID"] = 12631,	-- Fiery Plate Gauntlets
+								["u"] = 8,
+							},
+						},
+						["u"] = 40,
+						["qg"] = 10637,	-- Malyfous Darkhammer
+						["sourceQuest"] = 5103,	-- Hot Fiery Death
+						["requireSkill"] = 164,	-- Blacksmithing
+					},
+					{	-- Frostsaber Provisions
+						["questID"] = 4970,
+						["u"] = 40,
+						["qg"] = 10618,	-- Rivern Frostwind
+						["races"] = ALLIANCE_ONLY,
+						["repeatable"] = true,
+					},
+					{	-- Guardians of the Altar
+						["questID"] = 4901,
+						["u"] = 40,
+						["qg"] = 10300,	-- Ranshalla
+						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- High Chief Winterfall
+						["questID"] = 5121,
+						["groups"] = {
+							un(2, i(15784)),	-- Crystal Breeze Mantle
+							un(2, i(15786)),	-- Fempulse Jerkin
+							un(2, i(15787)),	-- Willow Band Hauberk
+						},
+						["u"] = 40,
+						["qg"] = 9298,	-- Donova Snowden
+						["sourceQuest"] = 5087,	-- Winterfall Runners
 					},
 					{	-- High Chief Winterfall
 						["questID"] = 28470,
@@ -443,6 +553,12 @@ _.Zones =
 						["coord"] = { 25.1, 58.5 },
 						["sourceQuest"] = 28469,	-- Winterfall Runners
 					},
+					{	-- Lorax's Tale
+						["questID"] = 5126,	-- Lorax's Tale
+						["u"] = 40,
+						["qg"] = 10918,	-- Lorax
+						["requireSkill"] = 164,	-- Blacksmithing
+					},
 					{	-- Making Amends
 						["questID"] = 9266,
 						["qg"] = 16416,	-- Bronn Fitzwrench
@@ -455,11 +571,68 @@ _.Zones =
 						["coord"] = { 48.6, 41.0 },
 						["sourceQuest"] = 28674,	-- Starfall Village
 					},
+					{	-- Past Endeavors
+						["questID"] = 5057,
+						["groups"] = {
+							un(2, i(15704)),	-- Hunter's Insignia Medal
+						},
+						["u"] = 40,
+						["qg"] = 10303,	-- Storm Shadowhoof
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 5056,	-- Shy-Rotam
+					},
+					{	-- Rampaging Giants
+						["questID"] = 5981,
+						["u"] = 40,
+						["qg"] = 10618,	-- Rivern Frostwind
+						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+					},
+					{	-- Remorseful Highborne
+						["questID"] = 5252,
+						["u"] = 40,
+						["qg"] = 10684,	-- Remorseful Highborne
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 5248,	-- Tormented By the Past
+					},
+					{	-- Return to Tinkee
+						["questID"] = 4810,
+						["groups"] = {
+							un(2, i(15862)),	-- Blitzcleaver
+							un(2, i(15863)),	-- Grave Scepter
+						},
+						["u"] = 40,
+						["qg"] = 10468,	-- Felnok Steelspring
+						["sourceQuest"] = 4809,	-- Chillwind Horns
+					},
 					{	-- Scalding Signs
 						["questID"] = 28530,
 						["qg"] = 9298,	-- Donova Snowden
 						["coord"] = { 25.1, 58.4 },
 						["sourceQuest"] = 28467,	-- Mystery Goo
+					},
+					{	-- Shy-Rotam
+						["questID"] = 5056,
+						["groups"] = {
+							un(2, i(15783)),	-- Beasthunter Dagger
+							un(2, i(15782)),	-- Beaststalker Blade
+						},
+						["u"] = 40,
+						["qg"] = 10303,	-- Storm Shadowhoof
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 5055,	-- Brumeran of the Chillwind
+					},
+					{	-- Snakestone of the Shadow Huntress
+						["questID"] = 5306,	-- Snakestone of the Shadow Huntress
+						["groups"] = {
+							{	-- Plans: Dawn's Edge
+								["itemID"] = 12821,	-- Plans: Dawn's Edge
+								["spellID"] = 0,	-- This is now available via 142357, need to delink the old plans from the recipe
+								["u"] = 2,
+							},
+						},
+						["u"] = 40,
+						["qg"] = 11192,	-- Kilram
 					},
 					{	-- Starfall Village
 						["questID"] = 28674,
@@ -479,17 +652,75 @@ _.Zones =
 					{	-- Strange Life Forces
 						["questID"] = 28656,
 					},
-					{	-- The Sands of Silithus
-						["questID"] = 28856,
-						["qg"] = 11118,	-- Innkeeper Vizzie
-						["coord"] = { 59.8, 51.1 },
-						["isBreadcrumb"] = true,
+					{	-- Strange Sources
+						["questID"] = 4842,
+						["groups"] = {
+							un(2, i(15789)),	-- Deep River Cloak
+						},
+						["u"] = 40,
+						["qg"] = 9298,	-- Donova Snowden
+						["sourceQuest"] = 980,	-- The New Springs
+					},
+					{	-- Sweet Serenity
+						["questID"] = 5305,	-- Sweet Serenity
+						["groups"] = {
+							{	-- Plans: Enchanted Battlehammer
+								["itemID"] = 12824,	-- Plans: Enchanted Battlehammer
+								["u"] = 2,
+							},
+						},
+						["u"] = 40,
+						["qg"] = 11191,	-- Lilith the Lithe
+						["requireSkill"] = 164,	-- Blacksmithing
 					},
 					{	-- The Arcane Storm Within
 						["questID"] = 28841,
 						["qg"] = 10929,	-- Haleh
 						["coord"] = { 58.0, 63.7 },
 						["sourceQuests"] = 28840,	-- Winterwater
+					},
+					{	-- The Crystal of Zin-Malor
+						["questID"] = 5253,
+						["groups"] = {
+							un(2, i(15795)),	-- Emerald Mist Gauntlets
+							un(2, i(15792)),	-- Plow Wood Spaulders
+							un(2, i(15791)),	-- Turquoise Sash
+						},
+						["u"] = 40,
+						["qg"] = 11079,	-- Wynd Nightchaser
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 5252,	-- Remorseful Highborne
+					},
+					{	-- The Demon Forge
+						["questID"] = 5127,	-- The Demon Forge
+						["groups"] = {
+							{	-- Plans: Demon Forged Breastplate
+								["itemID" ] = 12696,	-- Plans: Demon Forged Breastplate
+								["u"] = 2,
+							},
+							{	-- Demon Kissed Sack
+								["itemID"] = 12849,	-- Demon Kissed Sack
+								["u"] = 2,
+								["groups"] = {
+									{	-- Commander's Pauldrons
+										["itemID"] = 10383,	-- Commander's Pauldrons
+									},
+									{	-- Commander's Vambraces
+										["itemID"] = 10377,	-- Commander's Vambraces
+									},
+								},
+							},
+						},
+						["u"] = 40,
+						["qg"] = 10918,	-- Lorax
+						["sourceQuest"] = 5126,	-- Lorax's Tale
+						["requireSkill"] = 164,	-- Blacksmithing
+					},
+					{	-- The Sands of Silithus
+						["questID"] = 28856,
+						["qg"] = 11118,	-- Innkeeper Vizzie
+						["coord"] = { 59.8, 51.1 },
+						["isBreadcrumb"] = true,
 					},
 					{	-- Threat of the Winterfall
 						["questID"] = 28460,
@@ -508,12 +739,48 @@ _.Zones =
 							28768,	-- Winterspring!
 						},
 					},
+					{	-- Tormented By the Past
+						["questID"] = 5248,
+						["u"] = 40,
+						["qg"] = 10304,	-- Aurora Skycaller
+						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- Toxic Horrors
+						["questID"] = 5086,
+						["u"] = 40,
+						["qg"] = 9298,	-- Donovan Snowden
+						["sourceQuest"] = 5085,	-- Mystery Goo
+					},
+					{	-- Ursius of the Shardtooth
+						["questID"] = 5054,
+						["u"] = 40,
+						["qg"] = 10303,	-- Storm Shadowhoof
+						["races"] = HORDE_ONLY,
+					},
 					{	-- Where There's Smoke, There's Delicious Meat
 						["questID"] = 28718,
 						["qg"] = 49402,	-- Sana Curtainfire
 						["coord"] = { 48.0, 40.6 },
 						["isBreadcrumb"] = true,
 						["sourceQuest"] = 28710,	-- Spray it One More Time
+					},
+					{	-- Wildkin of Elune
+						["questID"] = 4902,
+						["groups"] = {
+							un(2, i(16623)),	-- Opaline Medallion
+							un(2, i(16622)),	-- Thornflinger
+						},
+						["u"] = 40,
+						["qg"] = 7916,	-- Erelas Ambersky
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 4901,	-- Guardians of the Altar
+					},
+					{	-- Winterfall Intrusion
+						["questID"] = 5201,
+						["u"] = 40,
+						["qg"] = 10618,	-- Rivern Frostwind
+						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
 					},
 				}),
 			},

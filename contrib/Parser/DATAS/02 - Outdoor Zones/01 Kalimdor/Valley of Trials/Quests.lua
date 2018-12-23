@@ -42,7 +42,6 @@ _.Zones =
 								["questID"] = 25134,
 								["u"] = 40,
 								["qg"] = 11378,	-- Foreman Thazz'ril
-								["races"] = HORDE_ONLY,
 							},
 							{	-- Lazy Peons
 								["questID"] = 37446,

@@ -729,6 +729,17 @@ _.Zones =
 						},
 						["u"] = 43,
 					},
+					{	-- Deadwood Cauldron
+						["objectID"] = 176091,
+						["groups"] = {
+							{	-- Mystery Goo
+								["questID"] = 5085,
+								["u"] = 40,
+								["sourceQuest"] = 5084,
+							},
+						},
+						["u"] = 43,
+					},
 					{	-- [DEPRECATED]Timbermaw Ally
 						["questID"] = 8460,
 						["groups"] = {

@@ -28,7 +28,7 @@ _.Zones =
 					}),
 					n(52830, {		-- Michelle De Rum <Pet Collector>
 						["groups"] = {
-							i(69239),	-- Winterspring Cub (PET!)
+							i(69239),	-- Winterspring Cub
 						},
 						["coord"] = { 59.8, 51.6 },
 					}),
@@ -44,18 +44,18 @@ _.Zones =
 					}),
 					n(10618, {	-- Rivern Frostwind <Wintersaber Trainer>
 						["groups"] = {
-							i(13086), 	-- Reins of the Winterspring Frostsaber (MOUNT!)
+							i(13086), 	-- Reins of the Winterspring Frostsaber
 						},
 						["coord"] = { 46.6, 17.6 },
 						["races"] = ALLIANCE_ONLY,
-						["description"] = "Vendor only sells this mount to those exalted with the Wintersaber Trainers.|r",
+						["description"] = "Must be exalted with the Wintersaber Trainers.|r",
 					}),
 					n(11184, {		-- Wixxrak <Weaponsmith & Gunsmith>
 						["groups"] = {
 							i(142357),	-- Plans: Dawn's Edge
 						},
 						["coord"] = { 60.2, 50.2 },
-						["description"] = "Vendor only sells the plans to those who have completed the quest 'Blackrock Depths: Jewel of the Depths'|r",
+						["description"] = "Must have completed the quest 'Blackrock Depths: Jewel of the Depths'|r",
 					}),
 				}),
 			},

@@ -52,38 +52,47 @@ _.Zones =
 					},
 					["collectible"] = false,
 				}),
-				a(faction(589, {	-- Wintersaber Trainers
-					qa(29032, {	-- Get Them While They're Young
-						["qg"] = 10618,	-- Rivern Frostwind
-					}),
-					qr(qa(29037, {	-- 'Borrowing' From the Winterfall
-						["qg"] = 51677,	-- Winterspring Cub
-						["sourceQuests"] = { 29034 },	-- They Grow Up So Fast (must be in quest log)
-					})),
-					qr(qa(29035, {	-- A Cub's Cravings
-						["qg"] = 51677,	-- Winterspring Cub
-						["sourceQuests"] = { 29034 },	-- They Grow Up So Fast (must be in quest log)
-					})),
-					qr(qa(29040, {	-- Cub's First Toy
-						["qg"] = 51677,	-- Winterspring Cub
-						["sourceQuests"] = { 29034 },	-- They Grow Up So Fast (must be in quest log)
-					})),
-					qr(qa(29038, {	-- Hunting Practice
-						["qg"] = 51677,	-- Winterspring Cub
-						["sourceQuests"] = { 29034 },	-- They Grow Up So Fast (must be in quest log)
-					})),
-					qa(29034, {	-- They Grow Up So Fast
-						["groups"] = {
-							i(13086),	-- Reins of the Winterspring Frostsaber (MOUNT!)
+				faction(589, {	-- Wintersaber Trainers
+					["groups"] = {
+						{	-- Get Them While They're Young
+							["questID"] = 29032,
+							["qg"] = 10618,	-- Rivern Frostwind
+							["coord"] = { 46.6, 17.6 },
 						},
-						["qg"] = 10618,	-- Rivern Frostwind
-						["sourceQuests"] = { 29032 },	-- Get Them While They're Young
-					}),
-				})),
+						{	-- 'Borrowing' From the Winterfall
+							["questID"] = 29037,
+							["qg"] = 51677,	-- Winterspring Cub
+							["isDaily"] = true,
+						},
+						{	-- A Cub's Cravings
+							["questID"] = 29035,
+							["qg"] = 51677,	-- Winterspring Cub
+							["isDaily"] = true,
+						},
+						{	-- Cub's First Toy
+							["questID"] = 29040,
+							["qg"] = 51677,	-- Winterspring Cub
+							["isDaily"] = true,
+						},
+						{	-- Hunting Practice
+							["questID"] = 29038,
+							["qg"] = 51677,	-- Winterspring Cub
+							["isDaily"] = true,
+						},
+						{	-- They Grow Up So Fast
+							["questID"] = 29034,
+							["groups"] = {
+								i(13086),	-- Reins of the Winterspring Frostsaber
+							},
+							["qg"] = 10618,	-- Rivern Frostwind
+							["coord"] = { 46.6, 17.6 },
+							["description"] = "This quest must remain in your quest log to do the relevant daily quests.",
+							["sourceQuest"] = 29032,	-- Get Them While They're Young
+						},
+					},
+					["races"] = ALLIANCE_ONLY,
+				}),
 			},
-			["achievementID"] = 857,
-			["lvl"] = 40,
-			["description"] = "|cff66ccffWinterspring is a frosty valley in northern Kalimdor. The primary city is Everlook. Quest chains involve helping the furbolgs, learning about the history of elves and magic, and assisting the over-the-top citizens of Everlook.|r",
 		}),
 	}),
 };

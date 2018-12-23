@@ -7,13 +7,13 @@ _.Zones =
 		m(83, {	-- Winterspring
 			["groups"] = {
 				n(-25, {	-- Pet Battle
-					p(487),  	-- Alpine Chipmunk
-					p(441),  	-- Alpine Hare
-					p(1163), 	-- Anodized Robo Cub
+					p(487),	-- Alpine Chipmunk
+					p(441),	-- Alpine Hare
+					p(1163),	-- Anodized Robo Cub
 					desc(p(634), "Can most commonly be found in Frostwhisper Gorge in southern Winterspring."),	-- Crystal Spider
-					p(633),  	-- Mountain Skunk
-					p(472),  	-- Rabid Nut Varmint 5000
-					p(471),  	-- Robo-Chick
+					p(633),	-- Mountain Skunk
+					p(472),	-- Rabid Nut Varmint 5000
+					p(471),	-- Robo-Chick
 					desc(p(69), "Starts spawning December 21st. Stops spawning March 20th"),	-- Snowy Owl
 					{	-- Grand Master Trixxy
 						["questID"] = 31897,
