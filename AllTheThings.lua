@@ -8679,9 +8679,8 @@ end):Show();
 				end
 				
 				-- Cache that we're in the current map ID.
-				if self.mapID == id then return; end
 				self.mapID = id;
-				if show then self:Update(); end
+				self:Update();
 			end
 			local function OpenMiniListForCurrentZone()
 				OpenMiniList(app.GetCurrentMapID(), true);
