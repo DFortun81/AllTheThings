@@ -1638,10 +1638,12 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				group.g = merged;
 			end
 		end
+		group.progress = 0;
+		group.total = 0;
 		app.UpdateGroups(group, group.g);
 		-- print(paramA, paramB, group.text, group.key, group[group.key]);
 		if group.g and #group.g > 0 and GetDataMember("ShowContents") then
-			local items = {};
+			local entries = {};
 			for i,j in ipairs(group.g) do
 				if app.GroupRequirementsFilter(j) and app.GroupFilter(j) then
 					local right = nil;
@@ -1697,22 +1699,22 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 						if text == RETRIEVING_DATA then working = true; end
 						if j.u then text = text .. " |T" .. L("UNOBTAINABLE_ITEM_TEXTURES")[L("UNOBTAINABLE_ITEM_REASONS")[j.u][1]] .. ":0|t"; end
 						if j.icon then prefix = prefix .. "|T" .. j.icon .. ":0|t "; end
-						tinsert(items, { prefix = prefix, left = text, right = right });
+						tinsert(entries, { prefix = prefix, left = text, right = right });
 					end
 				end
 			end
-			if #items > 0 then
+			if #entries > 0 then
 				tinsert(info, { left = "Contains:" });
-				if #items < 25 then
-					for i,item in ipairs(items) do
+				if #entries < 25 then
+					for i,item in ipairs(entries) do
 						tinsert(info, { left = item.prefix .. item.left, right = item.right });
 					end
 				else
-					for i=1,math.min(25, #items) do
-						local item = items[i];
+					for i=1,math.min(25, #entries) do
+						local item = entries[i];
 						tinsert(info, { left = item.prefix .. item.left, right = item.right });
 					end
-					local more = #items - 25;
+					local more = #entries - 25;
 					if more > 0 then tinsert(info, { left = "And " .. more .. " more..." }); end
 				end
 			end
