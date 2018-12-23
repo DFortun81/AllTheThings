@@ -3128,9 +3128,9 @@ app.BaseArtifact = {
 				return true;
 			end
 		elseif key == "text" then
-			return t.parent.itemID and t.variantText or t.appearanceText;
+			return t.parent and t.parent.itemID and t.variantText or t.appearanceText;
 		elseif key == "title" then
-			return t.parent.itemID and t.appearanceText or t.variantText;
+			return t.parent and t.parent.itemID and t.appearanceText or t.variantText;
 		elseif key == "variantText" then
 			return Colorize("Variant " .. t.info[4], RGBToHex(t.info[9] * 255, t.info[10] * 255, t.info[11] * 255));
 		elseif key == "appearanceText" then
@@ -3146,11 +3146,11 @@ app.BaseArtifact = {
 		elseif key == "atlas-color" then
 			return { t.info[9], t.info[10], t.info[11], 1.0 };
 		elseif key == "model" then
-			return GetRelativeValue(t.parent, key);
+			return t.parent and GetRelativeValue(t.parent, key);
 		elseif key == "modelScale" then
-			return GetRelativeValue(t.parent, key) or 0.95;
+			return t.parent and GetRelativeValue(t.parent, key) or 0.95;
 		elseif key == "modelRotation" then
-			return GetRelativeValue(t.parent, key) or 45;
+			return t.parent and GetRelativeValue(t.parent, key) or 45;
 		elseif key == "info" then
 			--[[
 			local setID, appearanceID, appearanceName, displayIndex, appearanceUnlocked, unlockConditionText, 
@@ -3164,7 +3164,7 @@ app.BaseArtifact = {
 			local itemID = artifactItemIDs[t.artifactID];
 			if itemID then
 				return select(2, GetItemInfo(string.format("item:%d::::::::::256:::%d", itemID, t.artifactID))), itemID;
-			elseif t.parent.npcID and (t.parent.npcID <= -5200 and t.parent.npcID >= -5205) then
+			elseif t.parent and t.parent.npcID and (t.parent.npcID <= -5200 and t.parent.npcID >= -5205) then
 				itemID = GetRelativeValue(t.parent, "itemID");
 				artifactItemIDs[t.artifactID] = itemID;
 				return select(2, GetItemInfo(string.format("item:%d::::::::::256:::%d", itemID, t.artifactID))), itemID;
