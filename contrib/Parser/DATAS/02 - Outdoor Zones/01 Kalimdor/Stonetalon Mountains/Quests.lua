@@ -343,32 +343,15 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 25891,	-- Last Ditch Effort
 					},
-					{	-- STAY OUT!
-						["objectID"] = 203186,
-						["coord"] = { 65.0, 49.4, 65 },
+					{	-- Bloodfury Bloodline
+						["questID"] = 6283,
 						["groups"] = {
-							{
-								["questID"] = 25730,	-- BEWARE OF CRAGJAW!
-								["groups"] = {
-									i(57429),	-- Fisherman's Belt
-									i(57430),	-- Irongoat Legguards
-									i(57428),	-- Fish Stunner
-									i(131879),	-- Fisherman's Links
-								},
-								["races"] = ALLIANCE_ONLY,
-								["sourceQuest"] = 25621,	-- Field Test: Gnomecorder (may be available earlier, but definitely has a prereq)
-							},
-							{
-								["questID"] = 26043,	-- BEWARE OF CRAGJAW!
-								["groups"] = {
-									i(57482),	-- Anara's Belt
-									i(57481),	-- Fisherman's Gloves
-									i(131471),	-- Anara's Cord
-								},
-								["races"] = HORDE_ONLY,
-								["sourceQuest"] = 26004,	-- Krom'gar Fortress
-							},
+							un(2, i(16987)),	-- Screecher Belt
+							un(2, i(16990)),	-- Spritekin Cloak
 						},
+						["u"] = 40,
+						["qg"] = 11860,	-- Maggran Earthbinder
+						["races"] = HORDE_ONLY,
 					},
 					{	-- Bombs Away: Mirkfallon Post!
 						["questID"] = 25768,
@@ -463,6 +446,16 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 26004,	-- Krom'gar Fortress
 					},
+					{	-- Earthen Arise
+						["questID"] = 6481,
+						["groups"] = {
+							un(2, i(16981)),	-- Owlbeard Bracers
+							un(2, i(1306)),	-- Wolfmane Wristguards
+						},
+						["u"] = 40,
+						["qg"] = 11861,	-- Mor'rogal
+						["races"] = HORDE_ONLY,
+					},
 					{	-- Enemy of the Horde: Marshal Paltrow
 						["questID"] = 26011,
 						["qg"] = 40903,	-- Spy-Mistress Anara
@@ -497,6 +490,23 @@ _.Zones =
 						["sourceQuest"] = 25652,	-- Commandeer That Balloon!
 						["races"] = ALLIANCE_ONLY,
 						["description"] = "To start this quest, go to the end of the small bridge at 64.5 43.8 and it will auto-prompt.  To reach it, you will have to fly or walk up the mountain path that starts at 67.9 46.4.",
+					},
+					{	-- Gerenzo Wrenchwhistle
+						["questID"] = 1096,
+						["groups"] = {
+							un(2, i(6668)),	-- Draftsman Boots
+							un(2, i(6667)),	-- Engineer's Cloak
+						},
+						["u"] = 40,
+						["qg"] = 4201,	-- Ziz Fizziks
+					},
+					{	-- Gerenzo's Orders
+						["questID"] = 1092,
+						["groups"] = {
+							un(2, i(6666)),	-- Dredge Boots
+						},
+						["u"] = 40,
+						["qg"] = 4276,	-- Piznik
 					},
 					{	-- Gnome on the Inside
 						["questID"] = 25875,
@@ -557,6 +567,16 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 25875,	-- Gnome on the Inside
 					},
+					{	-- Jin'Zil's Forest Magic
+						["questID"] = 1058,
+						["groups"] = {
+							un(2, i(6665)),	-- Hexed Bracers
+							un(2, i(6664)),	-- Voodoo Mantle
+						},
+						["u"] = 40,
+						["qg"] = 3995,	-- Witch Doctor Jin'Zil
+						["races"] = HORDE_ONLY,
+					},
 					{	-- Just Ask Alice
 						["questID"] = 25673,
 						["qg"] = 40908,	-- Alice
@@ -609,6 +629,16 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 25673,	-- Just Ask Alice
 					},
+					{	-- New Life
+						["questID"] = 6381,
+						["groups"] = {
+							un(2, i(16986)),	-- Sandspire Gloves
+							un(2, i(16985)),	-- Windseeker Boots
+						},
+						["u"] = 40,
+						["qg"] = 11864,	-- Tammra Windfield
+						["races"] = HORDE_ONLY,
+					},
 					{	-- Nothing Left for You Here
 						["questID"] = 26134,
 						["qg"] = 42039,	-- High Chieftain Cliffwalker
@@ -659,6 +689,28 @@ _.Zones =
 						["qg"] = 41488,	-- Sentinel Mistress Geleneth
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 25891,	-- Last Ditch Effort
+					},
+					{	-- Reception from Tyrande
+						["questID"] = 1081,
+						["groups"] = {
+							un(2, i(6678)),	-- Band of Elven Grace
+							un(2, i(7334)),	-- Efflorescent Robe
+							un(2, i(7335)),	-- Grizzly Tunic
+							un(2, i(7336)),	-- Wildwood Chain
+						},
+						["u"] = 40,
+						["qg"] = 4079,	-- Sentinel Thenysil
+						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- Reclaiming the Charred Vale
+						["questID"] = 1059,
+						["groups"] = {
+							un(2, i(6676)),	-- Constable Buckler
+							un(2, i(6675)),	-- Tempered Bracers
+						},
+						["u"] = 40,
+						["qg"] = 3994,	-- Keeper Albagorm
+						["races"] = ALLIANCE_ONLY,
 					},
 					{	-- Return to Stardust
 						["questID"] = 25615,
@@ -743,6 +795,33 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 25793,	-- The Deep Reaches
 					},
+					{	-- STAY OUT!
+						["objectID"] = 203186,
+						["coord"] = { 65.0, 49.4, 65 },
+						["groups"] = {
+							{
+								["questID"] = 25730,	-- BEWARE OF CRAGJAW!
+								["groups"] = {
+									i(57429),	-- Fisherman's Belt
+									i(57430),	-- Irongoat Legguards
+									i(57428),	-- Fish Stunner
+									i(131879),	-- Fisherman's Links
+								},
+								["races"] = ALLIANCE_ONLY,
+								["sourceQuest"] = 25621,	-- Field Test: Gnomecorder (may be available earlier, but definitely has a prereq)
+							},
+							{
+								["questID"] = 26043,	-- BEWARE OF CRAGJAW!
+								["groups"] = {
+									i(57482),	-- Anara's Belt
+									i(57481),	-- Fisherman's Gloves
+									i(131471),	-- Anara's Cord
+								},
+								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 26004,	-- Krom'gar Fortress
+							},
+						},
+					},
 					{	-- Tell 'Em Koko Sent You
 						["questID"] = 25765,
 						["qg"] = 40897,	-- Northwatch Captain Kosak
@@ -766,6 +845,17 @@ _.Zones =
 						["qg"] = 41229,	-- Force Commander Valen
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 25765,	-- Tell 'Em Koko Sent You
+					},
+					{	-- The Den
+						["questID"] = 1089,
+						["groups"] = {
+							un(2, i(6671)),	-- Juggernaut Leggings
+							un(2, i(6670)),	-- Panther Armor
+							un(2, i(6669)),	-- Sacred Band
+						},
+						["u"] = 40,
+						["qg"] = 4198,	-- Braelyn Firehand
+						["races"] = HORDE_ONLY,
 					},
 					{	-- The Lumbering Oaf Problem
 						["questID"] = 25879,
@@ -807,6 +897,21 @@ _.Zones =
 						["qg"] = 41277,	-- Lieutenant Paulson
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 25793,	-- The Deep Reaches
+					},
+					{	-- Wanted Poster: Besseleth
+						["objectID"] = 177904,
+						["groups"] = {
+							{	-- Arachnophobia
+								["questID"] = 6284,
+								["groups"] = {
+									un(2, i(16891)),	-- Claystone Shortsword
+									un(2, i(16894)),	-- Clear Crystal Rod
+								},
+								["u"] = 40,
+								["races"] = HORDE_ONLY,
+							},
+						},
+						["u"] = 43,
 					},
 					{	-- Warn Master Thal'darah
 						["questID"] = 25880,
