@@ -1196,6 +1196,8 @@ local function CreateObject(t)
 			t = app.CreateObject(t.objectID, t);
 		elseif t.followerID then
 			t = app.CreateFollower(t.followerID, t);
+		elseif t.illusionID then
+			t = app.CreateIllusion(t.illusionID, t);
 		elseif t.professionID then
 			t = app.CreateProfession(t.professionID, t);
 		elseif t.categoryID then
@@ -1218,6 +1220,8 @@ local function CreateObject(t)
 			t = app.CreateNPC(t.npcID or t.creatureID, t);
 		elseif t.questID then
 			t = app.CreateQuest(t.questID, t);
+		else
+			t = setmetatable({}, { __index = t });
 		end
 		t.visible = true;
 		return t;
@@ -1234,6 +1238,10 @@ local function MergeObject(g, t, index)
 			key = "objectID";
 		elseif t.followerID then
 			key = "followerID";
+		elseif t.illusionID then
+			key = "illusionID";
+		elseif t.speciesID then
+			key = "speciesID";
 		elseif t.recipeID then
 			key = "recipeID";
 		elseif t.professionID then
