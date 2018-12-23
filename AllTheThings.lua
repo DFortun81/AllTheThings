@@ -1301,6 +1301,75 @@ local function MergeObject(g, t, index)
 	end
 	return t;
 end
+local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
+	for i,group in ipairs(groups) do
+		if app.GroupRequirementsFilter(group) and app.GroupFilter(group) then
+			local right = nil;
+			if group.total and (group.total > 1 or (group.total > 0 and not group.collectible)) then
+				if (group.progress / group.total) < 1 or GetDataMember("ShowCompletedGroups") then
+					right = GetProgressColorText(group.progress, group.total);
+					--[[
+					if group.itemID and group.itemID ~= itemID  then
+						if group.total > 1 or not group.collectible then
+							right = GetProgressColorText(group.progress, group.total);
+						end
+					else
+						right = GetProgressColorText(group.progress, group.total);
+					end
+					]]--
+				end
+			else -- if not group.itemID or (group.itemID and group.itemID ~= itemID) then
+				if group.collectible then
+					if group.collected or (group.trackable and group.saved) then
+						if GetDataMember("ShowCollectedItems") then
+							right = L("COLLECTED_ICON");
+						end
+					else
+						right = L("NOT_COLLECTED_ICON");
+					end
+				elseif group.trackable then
+					if group.saved then
+						if GetDataMember("ShowCollectedItems") then
+							right = L("COMPLETE_ICON");
+						end
+					elseif app.ShowIncompleteQuests(group) then
+						right = L("NOT_COLLECTED_ICON");
+					end
+				elseif group.visible then
+					right = "---";
+				end
+			end
+			
+			-- If there's progress to display, then let's summarize a bit better.
+			if right then
+				-- If this group has a droprate, add it to the display.
+				if group.dr then right = "|c" .. GetProgressColor(group.dr * 0.01) .. tostring(group.dr) .. "%|r " .. right; end
+				
+				-- If this group has specialization requirements, let's attempt to show the specialization icons.
+				local specs = GetDataMember("ShowLootSpecializationRequirements") and group.specs;
+				if specs and #specs > 0 then
+					table.sort(specs);
+					for i,spec in ipairs(specs) do
+						local id, name, description, icon, role, class = GetSpecializationInfoByID(spec);
+						if class == app.Class then right = "|T" .. icon .. ":0|t " .. right; end
+					end
+				end
+				
+				-- Insert into the display.
+				local o = { prefix = indent, left = group.text or RETRIEVING_DATA, right = right };
+				if o.left == RETRIEVING_DATA then o.working = true; end
+				if group.u then o.left = o.left .. " |T" .. L("UNOBTAINABLE_ITEM_TEXTURES")[L("UNOBTAINABLE_ITEM_REASONS")[group.u][1]] .. ":0|t"; end
+				if group.icon then o.prefix = o.prefix .. "|T" .. group.icon .. ":0|t "; end
+				tinsert(entries, o);
+				
+				-- Only go down one more level.
+				if group.g and layer < 2 then
+					BuildContainsInfo(group.g, entries, paramA, paramB, indent .. " ", layer + 1);
+				end
+			end
+		end
+	end
+end
 local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 	if search then
 		local now = time();
@@ -1644,75 +1713,19 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		-- print(paramA, paramB, group.text, group.key, group[group.key]);
 		if group.g and #group.g > 0 and GetDataMember("ShowContents") then
 			local entries = {};
-			for i,j in ipairs(group.g) do
-				if app.GroupRequirementsFilter(j) and app.GroupFilter(j) then
-					local right = nil;
-					if j.total and (j.total > 1 or (j.total > 0 and not j.collectible)) then
-						if (j.progress / j.total) < 1 or GetDataMember("ShowCompletedGroups") then
-							if j.itemID and j.itemID ~= itemID  then
-								if j.total > 1 or not j.collectible then
-									right = GetProgressColorText(j.progress, j.total);
-								end
-							else
-								right = GetProgressColorText(j.progress, j.total);
-							end
-						end
-					elseif not j.itemID or (j.itemID and j.itemID ~= itemID) then
-						if j.collectible then
-							if j.collected or (j.trackable and j.saved) then
-								if GetDataMember("ShowCollectedItems") then
-									right = L("COLLECTED_ICON");
-								end
-							else
-								right = L("NOT_COLLECTED_ICON");
-							end
-						elseif j.trackable then
-							if j.saved then
-								if GetDataMember("ShowCollectedItems") then
-									right = L("COMPLETE_ICON");
-								end
-							elseif app.ShowIncompleteQuests(j) then
-								right = L("NOT_COLLECTED_ICON");
-							end
-						elseif j.visible then
-							right = "---";
-						end
-					end
-					
-					-- If there's progress to display, then let's summarize a bit better.
-					if right then
-						-- If this group has a droprate, add it to the display.
-						if j.dr then right = "|c" .. GetProgressColor(j.dr * 0.01) .. tostring(j.dr) .. "%|r " .. right; end
-						
-						-- If this group has specialization requirements, let's attempt to show the specialization icons.
-						local specs = GetDataMember("ShowLootSpecializationRequirements") and j.specs;
-						if specs and #specs > 0 then
-							table.sort(specs);
-							for i,spec in ipairs(specs) do
-								local id, name, description, icon, role, class = GetSpecializationInfoByID(spec);
-								if class == app.Class then right = "|T" .. icon .. ":0|t " .. right; end
-							end
-						end
-						
-						-- Insert into the display.
-						local prefix, text = "  ", j.text or RETRIEVING_DATA;
-						if text == RETRIEVING_DATA then working = true; end
-						if j.u then text = text .. " |T" .. L("UNOBTAINABLE_ITEM_TEXTURES")[L("UNOBTAINABLE_ITEM_REASONS")[j.u][1]] .. ":0|t"; end
-						if j.icon then prefix = prefix .. "|T" .. j.icon .. ":0|t "; end
-						tinsert(entries, { prefix = prefix, left = text, right = right });
-					end
-				end
-			end
+			BuildContainsInfo(group.g, entries, paramA, paramB, "  ", 1);
 			if #entries > 0 then
 				tinsert(info, { left = "Contains:" });
 				if #entries < 25 then
 					for i,item in ipairs(entries) do
 						tinsert(info, { left = item.prefix .. item.left, right = item.right });
+						if item.working then working = true; end
 					end
 				else
 					for i=1,math.min(25, #entries) do
 						local item = entries[i];
 						tinsert(info, { left = item.prefix .. item.left, right = item.right });
+						if item.working then working = true; end
 					end
 					local more = #entries - 25;
 					if more > 0 then tinsert(info, { left = "And " .. more .. " more..." }); end
