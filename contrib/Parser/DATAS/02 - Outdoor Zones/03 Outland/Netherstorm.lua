@@ -2631,6 +2631,7 @@ _.Zones =
 					i(29460, {	-- Ethereum Prison Key (required to summon/"release" mobs)
 						["g"] = {
 							n(20520, {	-- Ethereum Prisoner (multiple named mobs with the same ID once spawned)
+								i(31957),	-- Ethereum Prisoner I.D. Tag
 								dr(01.5, i(31581)),	-- Slatesteel Boots
 								dr(01.4, i(31565)),	-- Skystalker's Boots
 								dr(01.4, i(31557)),	-- Windchanneller's Boots

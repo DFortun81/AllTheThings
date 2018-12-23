@@ -6,6 +6,9 @@ local i = function(itemID, factionID, unlock)
 	return o;
 end
 
+-- Burning Crusade
+i(31957, 933);	-- Ethereum Prisoner I.D. Tag (Consortium)
+
 -- Wrath of the Lich King
 -- Argent Tournament
 a(i(45714, 69));	-- Darnassus Commendation Badge
