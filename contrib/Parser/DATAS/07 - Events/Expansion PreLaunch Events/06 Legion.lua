@@ -811,6 +811,9 @@ _.WorldEvents =
 						--q(43294),	-- Repel
 						--q(43290),	-- Repel
 						--q(42236),	-- Invasion: Northern Barrens
+						-- Tanaris:
+						--q(43293),	-- Defend (possibly LEGACY - Legion pre-patch)
+						--q(43243),	-- Demon Commander (possibly LEGACY - Legion pre-patch)
 					}),
 					n(-2, { -- Vendors
 						n(109912, { -- Captive Wyrmtongue <Reluctant 'Quartermaster'>
