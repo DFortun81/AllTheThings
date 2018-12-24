@@ -1741,7 +1741,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		end
 		
 		-- If the user wants to show the progress of this search result, do so.
-		if GetDataMember("ShowProgress") then
+		if GetDataMember("ShowProgress") and (not group.spellID or #info > 0) then
 			if group.total and (group.total > 1 or (group.total > 0 and not group.collectible)) then
 				group.collectionText = GetProgressColorText(group.progress or 0, group.total);
 			elseif group.collectible then
