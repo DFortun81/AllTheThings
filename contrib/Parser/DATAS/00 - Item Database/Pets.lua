@@ -338,6 +338,7 @@ pet(117528, 1533);	-- Lanticore Spawnling
 pet(69251, 307);	-- Lashtail Hatchling
 pet(163812, 2468);	-- Laughing Stonekin
 pet(48118, 235); 	-- Leaping Hatchling
+pet(166487, 2552);	-- Leatherwing Screecher
 pet(127856, 1687); 	-- Left Shark
 pet(110684, 1395);	-- Leftovers (Lil' Leftovers)
 pet(141895, 1939); 	-- Legionnaire Murky

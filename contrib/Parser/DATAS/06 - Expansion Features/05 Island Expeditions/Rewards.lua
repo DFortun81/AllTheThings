@@ -392,6 +392,7 @@ _.ExpansionFeatures =
 							i(163804),	-- Kindleweb Spiderling
 							i(163822),	-- Kunchong Hatchling
 							i(163812),	-- Laughing Stonekin
+							i(166487),	-- Leatherwing Screecher
 							i(163815),	-- Littlehoof
 							i(166494),	-- Lord Woofington
 							i(163814),	-- Mischievous Zephyr
