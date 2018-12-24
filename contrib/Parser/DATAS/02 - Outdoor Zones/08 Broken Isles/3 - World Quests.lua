@@ -515,6 +515,11 @@ _.Zones =
 						i(140009), -- Felsword Legplates
 						i(140017), -- Boots of the Felsword
 					}),
+					n(-385, { -- Finger
+						["groups"] = {
+							i(134367), -- Legionnaire's Band
+						},
+					}),
 				},
 				["lvl"] = 110,
 			}),

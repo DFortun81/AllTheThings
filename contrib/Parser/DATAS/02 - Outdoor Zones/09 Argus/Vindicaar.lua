@@ -1732,6 +1732,11 @@ _.Zones =
 									i(152766), -- Oronaar Disciple's Boots
 									i(152753), -- Praetorium Guard's Sabatons
 								}),
+								i(153214, { -- Relinquished Ring
+									["groups"] = {
+										i(134367), -- Legionnaire's Band
+									},
+								}),
 								i(153216, { -- Relinquished Trinket
 									["groups"] = {
 										i(136714),	-- Amalgam's Seventh Spine
