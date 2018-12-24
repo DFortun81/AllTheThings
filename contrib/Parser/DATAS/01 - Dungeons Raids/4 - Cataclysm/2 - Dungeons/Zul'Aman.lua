@@ -34,7 +34,57 @@ _.Instances =
 								i(33865, {	-- Amani Hex Stick
 									n(24396, { 	-- Forest Frog
 										["groups"] = {
-											i(33993) -- Mojo (PET!)
+											i(33993), -- Mojo (PET!)
+											ach(5761, {	-- Hex Mix
+												{
+													["criteriaID"] = 1,	-- Rosa saved.
+													["qg"] = 52905,	-- Rosa
+												},
+												{
+													["criteriaID"] = 2,	-- Eulinda saved.
+													["qg"] = 52914,	-- Eulinda
+												},
+												{
+													["criteriaID"] = 3,	-- Lenzo saved.
+													["qg"] = 52917,	-- Lenzo
+												},
+												{
+													["criteriaID"] = 4,	-- Melasong saved.
+													["qg"] = 52916,	-- Melasong
+												},
+												{
+													["criteriaID"] = 5,	-- Harald saved.
+													["qg"] = 52915,	-- Harald
+												},
+												{
+													["criteriaID"] = 6,	-- Relissa saved.
+													["qg"] = 52912,	-- Relissa
+												},
+												{
+													["criteriaID"] = 7,	-- Kaldrick saved.
+													["qg"] = 52918,	-- Kaldrick
+												},
+												{
+													["criteriaID"] = 8,	-- Arinoth saved.
+													["qg"] = 52919,	-- Arinoth
+												},
+												{
+													["criteriaID"] = 9,	-- Micah saved.
+													["qg"] = 52910,	-- Micah
+												},
+												{
+													["criteriaID"] = 10,	-- Tyllan saved.
+													["qg"] = 52909,	-- Tyllan
+												},
+												{
+													["criteriaID"] = 11,	-- Mawago saved.
+													["qg"] = 52920,	-- Mawago
+												},
+												{
+													["criteriaID"] = 12,	-- Melissa saved.
+													["qg"] = 52947,	-- Melissa
+												},
+											}),
 										},
 										["description"] = "Use an Amani Hex Stick on a Forest Frog for a chance to have Mojo spawn and hop into your bags.",
 									}),
@@ -92,6 +142,7 @@ _.Instances =
 								i(69563),	-- Ring of the Numberless Brood
 							})),
 							cr(23577, e(189, {	-- Halazzi
+								ach(5750),	-- Tunnel Vision
 								i(69564),	-- The Savager's Mask
 								i(69565),	-- Breastplate of Primal Fury
 								i(69568),	-- Shadowmender Wristguards
@@ -107,6 +158,8 @@ _.Instances =
 								i(69571),	-- Soul Drain Signet
 							})),
 							cr(23863, e(191, {	-- Daakara
+								ach(5769),	-- Heroic: Zul'Aman
+								ach(5760),	-- Ring Out!
 								i(69581),	-- Amani Scepter of Rites
 								i(69575),	-- Mace of the Sacrificed
 								i(69579),	-- Amani Headdress

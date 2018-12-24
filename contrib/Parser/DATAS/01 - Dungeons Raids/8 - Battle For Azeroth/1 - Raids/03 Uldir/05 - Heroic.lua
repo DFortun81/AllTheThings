@@ -334,7 +334,9 @@ _.Instances =
 									},
 									{	-- Blood-Soaked Tome of Dark Whispers
 										["itemID"] = 166502,	-- Blood-Soaked Tome of Dark Whispers
-										["collectible"] = false,	--Note!! Currently marking is uncollectible until it can be investigated on whether it tracks as completed or not
+										--["collectible"] = false,	--Note!! Currently marking is uncollectible until it can be investigated on whether it tracks as completed or not
+										["spellID"] = 288956,	-- Blood-Soaked Tome of Dark Whispers
+										["questID"] = 54753,	-- 
 									},
 								},
 							},
