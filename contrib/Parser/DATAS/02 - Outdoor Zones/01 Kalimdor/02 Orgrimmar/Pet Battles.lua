@@ -23,8 +23,10 @@ _.Zones =
 							p(142, {	-- Golden Dragonhawk Hatchling
 								["races"] = {10}	-- Blood Elf
 							}),
-							p(792, {	-- Jade Crane Chick
-								["races"] = {26}	-- Pandaren
+							i(88148, { -- Jade Crane Chick
+								p(792, {	-- Jade Crane Chick
+									["races"] = {26}	-- Pandaren
+								}),
 							}),
 							p(629, {	-- Shore Crawler
 								["races"] = {9}		-- Goblin
@@ -46,8 +48,10 @@ _.Zones =
 							p(142, {	-- Golden Dragonhawk Hatchling
 								["races"] = {10}	-- Blood Elf
 							}),
-							p(792, {	-- Jade Crane Chick
-								["races"] = {26}	-- Pandaren
+							i(88148, { -- Jade Crane Chick
+								p(792, {	-- Jade Crane Chick
+									["races"] = {26}	-- Pandaren
+								}),
 							}),
 							p(629, {	-- Shore Crawler
 								["races"] = {9}		-- Goblin
