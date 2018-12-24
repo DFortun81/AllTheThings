@@ -95,6 +95,37 @@ local function StartCoroutine(name, method)
 		end);
 	end
 end
+local constructor = function(id, t, typeID)
+	if not t then
+		return { [typeID] = id };
+	end
+	if not t.g and t[1] then
+		t = { ["g"] = t, [typeID] = id };
+	else
+		t[typeID] = id;
+	end
+	return t;
+end
+local createInstance = function(template, prototype)
+	return setmetatable(template, prototype);
+end
+local contains = function(arr, value)
+	for i,value2 in ipairs(arr) do
+		if value2 == value then return true; end
+	end
+end
+local containsAny = function(arr, otherArr)
+	for i, v in ipairs(arr) do
+		for j, w in ipairs(otherArr) do
+			if v == w then return true; end
+		end
+	end
+end
+local containsValue = function(dict, value)
+	for key,value2 in pairs(dict) do
+		if value2 == value then return true; end
+	end
+end
 
 -- Data Lib
 local AllTheThingsTempData = {}; 	-- For temporary data.
@@ -1128,37 +1159,6 @@ local function SetNoteForGroup(group, note)
 end
 app.SetNote = SetNote;
 app.searchCache = searchCache;
-local constructor = function(id, t, typeID)
-	if not t then
-		return { [typeID] = id };
-	end
-	if not t.g and t[1] then
-		t = { ["g"] = t, [typeID] = id };
-	else
-		t[typeID] = id;
-	end
-	return t;
-end
-local createInstance = function(template, prototype)
-	return setmetatable(template, prototype);
-end
-local contains = function(arr, value)
-	for i,value2 in ipairs(arr) do
-		if value2 == value then return true; end
-	end
-end
-local containsAny = function(arr, otherArr)
-	for i, v in ipairs(arr) do
-		for j, w in ipairs(otherArr) do
-			if v == w then return true; end
-		end
-	end
-end
-local containsValue = function(dict, value)
-	for key,value2 in pairs(dict) do
-		if value2 == value then return true; end
-	end
-end
 local function CreateObject(t)
 	local s = {};
 	if t[1] then
