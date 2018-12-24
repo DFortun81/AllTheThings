@@ -1377,6 +1377,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		if cache and (now - cache[1]) < cache[2] then return cache[3]; end
 		
 		-- Determine if this tooltip needs more work the next time it refreshes.
+		if not paramA then paramA = ""; end
 		local working, info = false, {};
 		cache = { now, 100000000 };
 		searchCache[search] = cache;
@@ -1706,10 +1707,11 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				group = CreateObject({ [paramA] = paramB });
 				group.g = merged;
 			end
+			
+			group.progress = 0;
+			group.total = 0;
+			app.UpdateGroups(group, group.g);
 		end
-		group.progress = 0;
-		group.total = 0;
-		app.UpdateGroups(group, group.g);
 		-- print(paramA, paramB, group.text, group.key, group[group.key]);
 		if group.g and #group.g > 0 and GetDataMember("ShowContents") then
 			local entries = {};
@@ -2677,29 +2679,29 @@ local function AttachTooltip(self)
 					return true;
 				elseif owner.lastNumMountsNeedingFanfare then
 					-- Collections
-					local db = app:GetWindow("Prime").data;
-					AttachTooltipRawSearchResults(self, db);
+					local gf = app:GetWindow("Prime").data;
+					AttachTooltipSearchResults(self, "Collections", (function() return gf; end), gf.key, gf[gf.key]);
 					self:Show();
 				elseif owner.NewAdventureNotice then
 					-- Adventure Guide
-					local dnr = app:GetWindow("Prime").data.g[1];
-					AttachTooltipRawSearchResults(self, dnr);
+					local gf = app:GetWindow("Prime").data.g[1];
+					AttachTooltipSearchResults(self, "Adventure Guide", (function() return gf; end), gf.key, gf[gf.key]);
 					self:Show();
 				elseif owner.tooltipText then
 					if owner.tooltipText == DUNGEONS_BUTTON then
 						-- Group Finder
 						local gf = app:GetWindow("Prime").data.g[4];
-						AttachTooltipRawSearchResults(self, gf);
+						AttachTooltipSearchResults(self, "Group Finder", (function() return gf; end), gf.key, gf[gf.key]);
 						self:Show();
 					elseif owner.tooltipText == BLIZZARD_STORE then
 						-- Shop
 						local gf = app:GetWindow("Prime").data.g[15];
-						AttachTooltipRawSearchResults(self, gf);
+						AttachTooltipSearchResults(self, "Shop", (function() return gf; end), gf.key, gf[gf.key]);
 						self:Show();
 					elseif string.sub(owner.tooltipText, 1, string.len(ACHIEVEMENT_BUTTON)) == ACHIEVEMENT_BUTTON then
 						-- Achievements
 						local gf = app:GetWindow("Prime").data.g[5];
-						AttachTooltipRawSearchResults(self, gf);
+						AttachTooltipSearchResults(self, "Achievements", (function() return gf; end), gf.key, gf[gf.key]);
 						self:Show();
 					end
 				end
