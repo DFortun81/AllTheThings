@@ -332,6 +332,11 @@ _.Instances =
 									{	-- Cincture of Profane Deeds
 										["itemID"] = 160724,	-- Cincture of Profane Deeds
 									},
+									{	-- Blood-Soaked Tome of Dark Whispers
+										["itemID"] = 166502,	-- Blood-Soaked Tome of Dark Whispers
+										["spellID"] = 288956,	-- Blood-Soaked Tome of Dark Whispers
+										["questID"] = 54753,	-- 
+									},
 								},
 							},
 							{	-- Mythrax the Unraveler [7]
