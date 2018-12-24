@@ -11,11 +11,13 @@ _.Toys =
 		i(119093),		-- Aviana's Feather
 		i(141879), 		-- Berglrgl Perrgl Girggrlf
 		i(133997),		-- Black Ice
+		i(166678),		-- Brynja's Beacon
 		i(128310),		-- Burning Blade
 		i(143727), 		-- Champion's Salute
 		i(138878),		-- Copy of Daglop's Contract
 		i(88589),		-- Cremating Torch
 		i(131933),		-- Critter Hand Cannon
+		i(166544),		-- Dark Ranger's Spare Cowl
 		i(142496),		-- Dirty Spoon
 		i(160509),		-- Echoes of Rezan
 		i(118935),		-- Ever-Blooming Frond
@@ -65,9 +67,7 @@ _.Toys =
 		i(88377),		-- Turnip Paint \"Gun\"
 		i(88375), 		-- Turnip Punching Bag
 		i(119003),		-- Void Totem
-		i(134021),		-- X-52 Rocket Helmet
-		i(166678),		-- Brynja's Beacon
-		i(166544),		-- Dark Ranger's Spare Cowl
 		i(165791),		-- Worn Cloak
+		i(134021),		-- X-52 Rocket Helmet
 	}),
 };

@@ -47,6 +47,7 @@ _.Toys =
 		i(127859),		-- Dazzling Rod
 		i(36863),		-- Decahedral Dwarven Dice
 		i(108743),		-- Deceptia's Smoldering Boots
+		i(166785),		-- Detoxified Blight Grenade
 		i(141298),		-- Displacer Meditation Stone
 		i(134019), 		-- Don Carlos' Famous Hat
 		i(134831),		-- Doomsayer's Robes
@@ -75,6 +76,7 @@ _.Toys =
 		i(86584),		-- Hardened Shell
 		i(163742),		-- Heartsbane Grimoire
 		i(86594), 		-- Helpful Wikky's Whistle
+		i(166790),		-- Highborne Memento
 		i(86593),		-- Hozen Beach Ball
 		i(113631),		-- Hypnosis Goggles
 		i(118244),		-- Iron Buccaneer's Hat
@@ -106,6 +108,7 @@ _.Toys =
 		i(163775),		-- Molok Morion
 		i(113670),		-- Mournful Moan of Murmur
 		i(86568), 		-- Mr. Smite's Brass Compass
+		i(166784),		-- Narassin's Soul Gem
 		i(104262),		-- Odd Polished Stone
 		i(118224),		-- Ogre Brewing Kit
 		i(163795), 		-- Oomgut Ritual Drum
@@ -170,6 +173,8 @@ _.Toys =
 		i(130169),		-- Tournament Favor
 		i(163828),		-- Toy Siege Tower
 		i(163829), 		-- Toy War Machine
+		i(166787),		-- Twiddle Twirler: Sentinel's Glaive
+		i(166788),		-- Twiddle Twirler: Shredder Blade
 		i(153004), 		-- Unstable Portal Emitter
 		i(141301),		-- Unstable Powder Box
 		i(141331), 		-- Vial of Green Goo
@@ -188,10 +193,5 @@ _.Toys =
 		i(36862),		-- Worn Troll Dice
 		-- i(164371), 		-- Yaungol Oil Stove
 		i(153180),  	-- Yellow Conservatory Scroll
-		i(166785),		-- Detoxified Blight Grenade
-		i(166790),		-- Highborne Memento
-		i(166784),		-- Narassin's Soul Gem
-		i(166787),		-- Twiddle Twirler: Sentinel's Glaive
-		i(166788),		-- Twiddle Twirler: Shredder Blade
 	}),
 };

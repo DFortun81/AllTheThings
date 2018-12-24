@@ -15,12 +15,14 @@ _.Toys =
 		i(151877, { 	-- Barrel of Eyepatches -- only rogue
 			["classes"] = {},
 		}),
+		i(166743),		-- Blight Bomber
 		i(113096), 		-- Bloodmane Charm
 		i(122298),		-- Bodyguard Miniaturization Device
 		i(97921),		-- Bom'bay's Color-Seein' Sauce
 		i(140336),		-- Brulfist Idol
 		i(103685), 		-- Celestial Defender's Medallion
 		i(89222),		-- Cloud Ring
+		i(166662),		-- Cranky Crab
 		i(153039),  	-- Crystalline Campfire Toy
 		i(163200),		-- Cursed Spyglass
 		i(129057),		-- Dalaran Disc
@@ -40,8 +42,11 @@ _.Toys =
 		i(44719), 		-- Frenzyheart Brew
 		i(128471),		-- Frostwolf Grunt's Battlegear (Horde)
 		i(90175), 		-- Gin-Ji Knife Set
+		i(166744),		-- Glaive Tosser
+		i(166461),		-- Gnarlwood Waveboard
 		i(163201),		-- Gnoll Targetting Barrel
 		i(45019),		-- Gnomeregan Banner (Alliance)
+		i(166663),		-- Hand Anchor
 		i(159749), 		-- Haw'li's Hot & Spicy Chili
 		i(119210), 		-- Hearthstone Board
 		i(140325),		-- Home Made Party Mask
@@ -84,6 +89,7 @@ _.Toys =
 			["classes"] = {7},
 		}),
 		i(44820),		-- Red Ribbon Pet Leash
+		i(164983),		-- Rhan'ka's Escape Plan
 		i(37460),		-- Rope Pet Leash
 		i(122283), 		-- Rukhmar's Sacred Memory
 		i(136927, {		-- Scarlet Confessional Book -- only Priest
@@ -129,11 +135,5 @@ _.Toys =
 		i(119212),		-- Winning Hand
 		i(98552), 		-- Xan'tish's Flute
 		i(156649),		-- Zandalari Effigy Amulet
-		i(166743),		-- Blight Bomber
-		i(166662),		-- Cranky Crab
-		i(166744),		-- Glaive Tosser
-		i(166461),		-- Gnarlwood Waveboard
-		i(166663),		-- Hand Anchor
-		i(164983),		-- Rhan'ka's Escape Plan
 	}),
 };
