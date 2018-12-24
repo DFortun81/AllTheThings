@@ -100,51 +100,11 @@ _.Holidays = bubbleDown({["u"] = 29},
 					}),
 					ach(10353, { -- Iron Armada
 						["groups"] = {
-							crit(1, { -- Crashin' Thrashin' Flamer
-								["groups"] = {
-									i(116762, { -- Stolen Present
-										["groups"] = {
-											un(29, i(108632)), -- Crashin' Thrashin' Flamer Controller
-										},
-									}),
-								},
-							}),
-							crit(2, { -- Crashin' Thrashin' Killdozer
-								["groups"] = {
-									i(128659, { -- Merry Supplies
-										["groups"] = {
-											un(29, i(108635)), -- Crashin' Thrashin' Killdozer Controller
-										},
-									}),
-								},
-							}),
-							crit(3, { -- Crashin' Thrashin' Mortar
-								["groups"] = {
-									n(98285, { -- Smashum Grabb
-										["groups"] = {
-											un(29, i(108634)), -- Crashin' Thrashin' Mortar Controller
-										},
-									}),
-								},
-							}),
-							crit(4, { -- Crashin' Thrashin' Cannon
-								["groups"] = {
-									n(98284, { -- Gondar
-										["groups"] = {
-											un(29, i(108633)), -- Crashin' Thrashin' Cannon Controller
-										},
-									}),
-								},
-							}),
-							crit(5, { -- Crashin' Thrashin' Roller
-								["groups"] = {
-									n(98283, { -- Drakum
-										["groups"] = {
-											un(29, i(108631)), -- Crashin' Thrashin' Roller Controller
-										},
-									}),
-								},
-							}),
+							crit(1), -- Crashin' Thrashin' Flamer
+							crit(2), -- Crashin' Thrashin' Killdozer
+							crit(3), -- Crashin' Thrashin' Mortar
+							crit(4), -- Crashin' Thrashin' Cannon
+							crit(5), -- Crashin' Thrashin' Roller
 						},
 					}),
 					ach(8699, { -- The Danger Zone
