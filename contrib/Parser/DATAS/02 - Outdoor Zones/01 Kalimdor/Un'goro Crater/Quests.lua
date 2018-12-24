@@ -317,8 +317,10 @@ _.Zones =
 						{	-- Crate of Foodstuffs
 							["objectID"] = 161526,
 							["coord"] = { 68.5, 36.5 },
-							{	-- Is This Stuff Still Good?
-								["questID"] = 24865,
+							["groups"] = {
+								{	-- Is This Stuff Still Good?
+									["questID"] = 24865,
+								},
 							},
 						},
 						{	-- Dadanga is Hungry!
