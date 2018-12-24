@@ -1,5 +1,5 @@
 ## Author: Crieve-Sargeras
-## Interface: 81000
+## Interface: 80100
 ## Title: AllTheThings
 ## Name: AllTheThings
 ## SavedVariables: AllTheThingsAD, AllTheThingsDebugData, AllTheThingsHarvestItems
