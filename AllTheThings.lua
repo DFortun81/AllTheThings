@@ -1170,9 +1170,9 @@ local function CreateObject(t)
 	else
 		if t.key == "criteriaID" then s.achievementID = t.achievementID; end
 		for key,value in pairs(t) do
-			if key ~= "parent" then
+			--if key ~= "parent" then
 				s[key] = value;
-			end
+			--end
 		end
 		if t.g then
 			s.g = {};
@@ -1286,7 +1286,7 @@ local function MergeObject(g, t, index)
 				end
 			end
 			for k,value in pairs(t) do
-				if k ~= "expanded" and k ~= "parent" then
+				if k ~= "expanded" then -- and k ~= "parent" then
 					o[k] = value;
 				end
 			end
