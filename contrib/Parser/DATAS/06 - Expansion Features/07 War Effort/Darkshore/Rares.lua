@@ -368,8 +368,8 @@ _.ExpansionFeatures =
 						{	-- Orwell Stevenson [A Only]
 							["questID"] = 54890,	-- Orwell Stevenson [A]
 							["races"] = ALLIANCE_ONLY,
-							["npcID"] = 149664,				-- Orwell Stevenson
-							["qg"] = 149664,				-- Orwell Stevenson
+							["npcID"] = 149659,				-- Orwell Stevenson
+							["qg"] = 149659,				-- Orwell Stevenson
 							["questID"] = 54889,
 							["isWeekly"] = true,
 							["coords"] = {
