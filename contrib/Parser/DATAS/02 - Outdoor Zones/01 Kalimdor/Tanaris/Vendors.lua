@@ -8,49 +8,58 @@ _.Zones =
 			["groups"] = {
 				n(-2,  {	-- Vendors
 					n(5594, {	-- Alchemist Pestlezugg <Alchemy Supplies>
-						i(6057),	-- Recipe: Nature Protection Potion
-						i(9303),	-- Recipe: Philosopher's Stone
-						i(12958),	-- Recipe: Transmute Arcanite
-						i(9304),	-- Recipe: Transmute Iron to Gold
-						i(9305),	-- Recipe: Transmute Mithril to Truesilver
+						["groups"] = {
+							i(6057),	-- Recipe: Nature Protection Potion
+							i(9303),	-- Recipe: Philosopher's Stone
+							i(12958),	-- Recipe: Transmute Arcanite
+							i(9304),	-- Recipe: Transmute Iron to Gold
+							i(9305),	-- Recipe: Transmute Mithril to Truesilver
+						},
+						["coord"] = { 50.8, 28.0 },
 					}),
 					n(98864, {	-- Alchemist Pestlezugg <Alchemy Supplies>
-						i(9303),	-- Recipe: Philosopher's Stone
-						i(12958),	-- Recipe: Transmute Arcanite
-						i(9304),	-- Recipe: Transmute Iron to Gold
-						i(9305),	-- Recipe: Transmute Mithril to Truesilver
+						["groups"] = {
+							i(9303),	-- Recipe: Philosopher's Stone
+							i(12958),	-- Recipe: Transmute Arcanite
+							i(9304),	-- Recipe: Transmute Iron to Gold
+							i(9305),	-- Recipe: Transmute Mithril to Truesilver
+						},
+						["coord"] = { 50.8, 28.0 },
 					}),
 					n(21643, {	-- Alurmi <Keepers of Time Quartermaster>
-						i(29183),	-- Bindings of the Timewalker
-						i(29185),	-- Continuum Blade
-						i(35402),	-- Crusader's Ornamented Chestplate
-						i(35414),	-- Crusader's Scaled Helm
-						i(35356),	-- Dragonhide Gloves
-						i(35328),	-- Dreadweave Gloves
-						i(35346),	-- Evoker's Silk Raiment
-						i(31777),	-- Keepers of Time Tabard
-						i(35363),	-- Kodohide Legguards
-						i(35334),	-- Mooncloth Legguards
-						i(35369),	-- Opportunist's Leather Spaulders
-						i(29182),	-- Riftmaker
-						i(35338),	-- Satin Gloves
-						i(35410),	-- Savage Plate Legguards
-						i(35384),	-- Seer's Linked Leggings
-						i(35390),	-- Seer's Mail Spaulders
-						i(35393),	-- Seer's Ringmail Headpiece
-						i(35376),	-- Stalker's Chain Armor
-						i(29181),	-- Timelapse Shard
-						i(29184),	-- Timewarden's Leggings
-						i(35372),	-- Wyrmhide Helm
-						i(25910),	-- Design: Enigmatic Skyfire Diamond
-						i(33160),	-- Design: Facet of Eternity
-						i(24181),	-- Design: Living Ruby Serpent
-						i(24174),	-- Design: Pendant of Frozen Flame
-						i(33158),	-- Design: Stone of Blades
-						i(28272),	-- Formula: Enchant Gloves - Major Spellpower
-						i(33152),	-- Formula: Enchant Gloves - Superior Agility
-						i(29713),	-- Pattern: Drums of Panic
-						i(31355),	-- Recipe: Flask of Supreme Power
+						["groups"] = {
+							i(29183),	-- Bindings of the Timewalker
+							i(29185),	-- Continuum Blade
+							i(35402),	-- Crusader's Ornamented Chestplate
+							i(35414),	-- Crusader's Scaled Helm
+							i(35356),	-- Dragonhide Gloves
+							i(35328),	-- Dreadweave Gloves
+							i(35346),	-- Evoker's Silk Raiment
+							i(31777),	-- Keepers of Time Tabard
+							i(35363),	-- Kodohide Legguards
+							i(35334),	-- Mooncloth Legguards
+							i(35369),	-- Opportunist's Leather Spaulders
+							i(29182),	-- Riftmaker
+							i(35338),	-- Satin Gloves
+							i(35410),	-- Savage Plate Legguards
+							i(35384),	-- Seer's Linked Leggings
+							i(35390),	-- Seer's Mail Spaulders
+							i(35393),	-- Seer's Ringmail Headpiece
+							i(35376),	-- Stalker's Chain Armor
+							i(29181),	-- Timelapse Shard
+							i(29184),	-- Timewarden's Leggings
+							i(35372),	-- Wyrmhide Helm
+							i(25910),	-- Design: Enigmatic Skyfire Diamond
+							i(33160),	-- Design: Facet of Eternity
+							i(24181),	-- Design: Living Ruby Serpent
+							i(24174),	-- Design: Pendant of Frozen Flame
+							i(33158),	-- Design: Stone of Blades
+							i(28272),	-- Formula: Enchant Gloves - Major Spellpower
+							i(33152),	-- Formula: Enchant Gloves - Superior Agility
+							i(29713),	-- Pattern: Drums of Panic
+							i(31355),	-- Recipe: Flask of Supreme Power
+						},
+						["coord"] = { 63.0, 57.2 },
 					}),
 					n(33915, {  -- Argex Irongut <Veteran Arena Vendor>
 						["groups"] = {
@@ -147,7 +156,7 @@ _.Zones =
 							i(41316),	-- Furious Gladiator's Wyrmhide Robes
 							i(41281),	-- Furious Gladiator's Wyrmhide Spaulders
 						},
-						["u"] = 2, -- Vendor no longer exists
+						["u"] = 43,
 					}),
 					n(34093, {	-- Blazzek the Biter <Veteran Arena Vendor> [Note: Yes, two npc's with same name. One is removed]
 						["groups"] = {
@@ -181,7 +190,7 @@ _.Zones =
 							un(2, i(51448)),	-- Wrathful Gladiator's Swiftblade [Elite Rating]
 							un(2, i(51520)),	-- Wrathful Gladiator's Truncheon [Elite Rating]
 						},
-						["u"] = 2, -- Vendor no longer exists
+						["u"] = 43,
 					}),
 					n(40216, {	-- Blazzek the Biter <Vicious Gladiator>
 						["itemID"] = 137642,  -- Marks of Honor
@@ -251,6 +260,7 @@ _.Zones =
 							i(61343),	-- Vicious Gladiator's Staff
 							i(61350),	-- Vicious Gladiator's Touch of Defeat
 						},
+						["coord"] = { 51.6, 28.0 },
 					}),
 					n(69322, {	-- Capps Carlin <Cataclysmic Gladiator>
 						["itemID"] = 137642,  -- Marks of Honor
@@ -452,9 +462,13 @@ _.Zones =
 							i(73454),	-- Cataclysmic Gladiator's Ripper
 							i(73455),	-- Cataclysmic Gladiator's Shanker
 						},
+						["coord"] = { 51.4, 28.0 },
 					}),
 					n(40589, {	-- Dirge Quikcleave <Butcher>
-						i(18046),	-- Recipe: Tender Wolf Steak
+						["groups"] = {
+							i(18046),	-- Recipe: Tender Wolf Steak
+						},
+						["coord"] = { 52.6, 29.0 },
 					}),
 					n(69979, {	-- Ecton Brasstumbler <Honor Quartermaster>
 						["groups"] = {
@@ -464,21 +478,33 @@ _.Zones =
 							un(2, i(70556)),	-- Vicious Gladiator's Drape o of Mediation
 							un(2, i(70557)),	-- Vicious Gladiator's Drape o of Prowess
 						},
-						["u"] = 2, -- Vendor no longer exists
+						["u"] = 43,
 					}),
 					n(40572, {	-- Haughty Modiste <Fashion Designer>
-						i(37915),	-- Pattern: Dress Shoes
-						i(38327),	-- Pattern: Haliscan Jacket
-						i(38328),	-- Pattern: Haliscan Pantaloons
+						["groups"] = {
+							i(37915),	-- Pattern: Dress Shoes
+							i(38327),	-- Pattern: Haliscan Jacket
+							i(38328),	-- Pattern: Haliscan Pantaloons
+						},
+						["coord"] = { 50.6, 28.6 },
 					}),
 					n(5411, {	-- Krinkle Goodsteel <Blacksmithing Supplies>
-						i(6047),	-- Plans: Golden Scale Coif
+						["groups"] = {
+							i(6047),	-- Plans: Golden Scale Coif
+						},
+						["coord"] = { 51.2, 30.2 },
 					}),
 					n(7733, {	-- Innkeeper Fizzgrimble <Innkeeper>
-						i(18046),	-- Recipe: Tender Wolf Steak
+						["groups"] = {
+							i(18046),	-- Recipe: Tender Wolf Steak
+						},
+						["coord"] = { 52.6, 27.0 },
 					}),
 					n(106940, {	-- Innkeeper Fizzgrimble <Innkeeper>
-						i(18046),	-- Recipe: Tender Wolf Steak
+						["groups"] = {
+							i(18046),	-- Recipe: Tender Wolf Steak
+						},
+						["coord"] = { 52.6, 27.0 },
 					}),
 					n(69323, {	-- Tiny Tayger <Ruthless Gladiator>
 						["itemID"] = 137642,  -- Marks of Honor
@@ -680,6 +706,7 @@ _.Zones =
 							i(70388),	-- Ruthless Gladiator's Drape of Prowess
 							i(70389),	-- Ruthless Gladiator's Drape of Meditation
 						},
+						["coord"] = { 51.6, 28.0 },
 					}),
 					n(20278, {	-- Vixton Pinchwhistle <Bloodthirsty Gladiator>
 						["itemID"] = 137642,  -- Marks of Honor
@@ -817,10 +844,14 @@ _.Zones =
 							i(64877),	-- Bloodthirsty Gladiator's Wyrmhide Robes
 							i(64878),	-- Bloodthirsty Gladiator's Wyrmhide Spaulders
 						},
+						["coord"] = { 51.6, 28.0 },
 					}),
 					n(6568, {	-- Vizzklick <Tailoring Supplies>
-						i(7088), 	-- Pattern: Crimson Silk Robe
-						i(21358),	-- Pattern: Soul Pouch
+						["groups"] = {
+							i(7088), 	-- Pattern: Crimson Silk Robe
+							i(21358),	-- Pattern: Soul Pouch
+						},
+						["coord"] = { 50.6, 28.6 },
 					}),
 				}),
 			},
