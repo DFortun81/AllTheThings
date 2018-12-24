@@ -1645,7 +1645,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			for i,j in ipairs(group.g or group) do
 				if j.parent and not j.parent.hideText and j.parent.parent
 					and (GetDataMember("ShowCompleteSourceLocations") or not app.IsComplete(j)) then
-					local text = BuildSourceText(j, 0);
+					local text = BuildSourceText(paramA ~= "itemID" and j.parent or j, paramA ~= "itemID" and 1 or 0);
 					for source,replacement in pairs(abbrevs) do
 						text = string.gsub(text, source,replacement);
 					end
@@ -6977,7 +6977,7 @@ local function RowOnEnter(self)
 			end
 			GameTooltip:AddDoubleLine("Cost", cost); 
 		end
-		if reference.criteriaID then GameTooltip:AddDoubleLine("Criteria for", GetAchievementLink(reference.achievementID)); end
+		if reference.criteriaID and reference.achievementID then GameTooltip:AddDoubleLine("Criteria for", GetAchievementLink(reference.achievementID)); end
 		
 		-- Show Quest Prereqs
 		if reference.sourceQuests and not reference.saved then
