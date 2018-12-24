@@ -41,19 +41,41 @@ _.Instances =
 								}),
 								i(69797),	-- Charmbinder Grips
 							}),
+							n(-7777, {	-- Timed Events
+								["description"] = "Enter the instance and talk to Harrison Jones to start the event and open the doors. You will now have 20 minutes to defeat the first animal-boss of your choice. Any of the loa spirit bosses will do and there is no required order, but two of them will add extra time to the timer.\n\n    Killing Nalorakk (bear) will add 15 minutes to your timer.\n    Killing Akil'zon (eagle) will add 10 minutes to your timer.\n    Other bosses will not grant additional time.\n\nThe loot from the event is dependent on the number of hostages you rescue.",
+								["groups"] = {
+									n(-7778, {	-- First Chest
+										i(69886),	-- Bag of Coins
+									}),
+									n(-7779, {	-- Second Chest
+										i(69584),	-- Recovered Cloak of Frostheim
+										i(69587),	-- Chestplate of Hubris
+										i(69585),	-- Wristwraps of Madness
+										i(69586),	-- Two-Toed Boots
+										i(69588),	-- Skullcrusher Warboots
+									}),
+									n(-7780, {	-- Third Chest
+										i(69592),	-- Reforged Trollbane
+										i(69591),	-- Voodoo Hexblade
+										i(69593),	-- Battleplate of the Amani Empire
+										i(69590),	-- Mojo-Mender's Gloves
+										i(69589),	-- Leggings of Dancing Blades
+									}),
+									n(-7781, {	-- Final Chest
+										["description"] = "This item could only be found in Ashli's Bag after the fourth animal boss had been defeated within the time limit of the event.\n\nOnly one player could receive this within a given raid lockout.",
+										["groups"] = {
+											ach(5858),	-- Bear-ly Made It
+											i(69747),	-- Amani Battle Bear (mount)
+										},
+									}),
+								},
+							}),
 							cr(23574, e(186, {	-- Akil'zon
 								i(69551),	-- Feathers of Akil'zon
 								i(69552),	-- Bracers of Hidden Purpose
 								i(69549),	-- Wristguards of the Predator
 								i(69550),	-- Leggings of Ancient Magics
 								i(69553),	-- Talonguard Band
-								o(187021, {	-- Bakkalzu's Satchel
-									["groups"] = {
-										i(69584),	-- Recovered Cloak of Frostheim
-										i(69592),	-- Reforged Trollbane
-									},
-									["description"] = "This satchel is received by rescuing Bakkalzu from Akil'zon (eagle boss) within the time limit. The satchel spawns in the left lower alcove as you enter Akil'zon's platform.",
-								}),
 							})),
 							cr(23576, e(187, {	-- Nalorakk
 								i(69558),	-- Spiritshield Mask
@@ -61,16 +83,6 @@ _.Instances =
 								i(69556),	-- Armbands of the Bear Spirit
 								i(69557),	-- Jungle Striders
 								i(69555),	-- Boots of the Ursine
-								o(186648, {	-- Hazlek's Trunk
-									["groups"] = {
-										i(69587),	-- Chestplate of Hubris
-										i(69584),	-- Recovered Cloak of Frostheim
-										i(69588),	-- Skullcrusher Warboots
-										i(69586),	-- Two-Toed Boots
-										i(69585),	-- Wristwraps of Madness
-									},
-									["description"] = "This trunk is received by rescuing Hazlek from Nalorakk (bear boss) within the time limit. The trunk spawns in the right alcove as you enter Nalorakk's platform.",
-								}),
 							})),
 							cr(23578, e(188, {	-- Jan'alai
 								i(69560),	-- Jan'alai's Spaulders
@@ -78,17 +90,6 @@ _.Instances =
 								i(69561),	-- Hawkscale Waistguard
 								i(69562),	-- Boots of Bad Mojo
 								i(69563),	-- Ring of the Numberless Brood
-								o(186667, {	-- Norkani's Package
-									["groups"] = {
-										i(69593),	-- Battleplate of the Amani Empire
-										i(69587),	-- Chestplate of Hubris
-										i(69589),	-- Leggings of Dancing Blades
-										i(69590),	-- Mojo-Mender's Gloves
-										i(69592),	-- Reforged Trollbane
-										i(69591),	-- Voodoo Hexblade
-									},
-									["description"] = "This package is received by rescuing Norkani from Jan'alai (dragonhawk boss) within the time limit. The package spawns on the right of the stairs that lead to Jan'alai's platform.",							
-								}),
 							})),
 							cr(23577, e(189, {	-- Halazzi
 								i(69564),	-- The Savager's Mask
@@ -96,19 +97,6 @@ _.Instances =
 								i(69568),	-- Shadowmender Wristguards
 								i(69567),	-- Wristwraps of Departed Spirits
 								i(69566),	-- Shimmerclaw Band
-								o(186672, {	-- Kasha's Bag
-									["groups"] = {	
-										i(69747),	-- Amani Battle Bear (mount)			
-										i(69593),	-- Battleplate of the Amani Empire
-										i(69587),	-- Chestplate of Hubris
-										i(69592),	-- Reforged Trollbane
-										i(69584),	-- Recovered Cloak of Frostheim
-										i(69588),	-- Skullcrusher Warboots
-										i(69586),	-- Two-Toed Boots	
-										i(69585),	-- Wristwraps of Madness
-									},
-									["description"] = "This bag is received by rescuing Kasha from Halazzi (Lynx boss) within the time limit. The bag spawns in the right lower corner as you enter Halazzi's room.",							
-								}),
 							})),
 							cr(24239, e(190, {	-- Hex Lord Malacrass
 								i(70080),	-- Reforged Heartless
