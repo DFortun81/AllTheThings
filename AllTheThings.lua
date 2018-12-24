@@ -1403,6 +1403,9 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			if group and #group > 0 and not group[1].achievementID then
 				-- Push up one level.
 				local subgroup = {};
+				table.sort(group, function(a, b)
+					return not (a.npcID and a.npcID == -1) and b.npcID and b.npcID == -1;
+				end);
 				for i,j in ipairs(group) do
 					if j.g then
 						for k,l in ipairs(j.g) do
