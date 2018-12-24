@@ -1363,7 +1363,7 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 				tinsert(entries, o);
 				
 				-- Only go down one more level.
-				if group.g and layer < 2 then
+				if group.g and layer < 2 and not group.achievementID then
 					BuildContainsInfo(group.g, entries, paramA, paramB, indent .. " ", layer + 1);
 				end
 			end
@@ -1400,18 +1400,20 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				end
 			end
 			
-			-- Push up one level.
-			local subgroup = {};
-			for i,j in ipairs(group) do
-				if j.g then
-					for k,l in ipairs(j.g) do
-						tinsert(subgroup, l);
+			if group and #group > 0 and not group[1].achievementID then
+				-- Push up one level.
+				local subgroup = {};
+				for i,j in ipairs(group) do
+					if j.g then
+						for k,l in ipairs(j.g) do
+							tinsert(subgroup, l);
+						end
+					else
+						tinsert(subgroup, j);
 					end
-				else
-					tinsert(subgroup, j);
 				end
+				group = subgroup;
 			end
-			group = subgroup;
 		else
 			-- Determine if this is a cache for an item
 			local itemID, sourceID;
