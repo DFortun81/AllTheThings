@@ -496,6 +496,7 @@ _.Zones =
 						["coord"] = { 44.5, 52.6 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 25014,	-- Sandscraper's Treasure
+						["isBreadcrumb"] = true,
 					},
 					{	-- Atiesh, Greatstaff of the Guardian
 						["questID"] = 9269,
