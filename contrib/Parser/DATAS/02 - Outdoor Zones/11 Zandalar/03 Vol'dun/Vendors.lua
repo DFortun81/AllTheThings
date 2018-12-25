@@ -113,6 +113,12 @@ _.Zones =
 							["description"] = "Complete the questline \"A Lost Flute\" to unlock this vendor.",
 							["races"] = HORDE_ONLY,
 						}),
+						n(122723, { -- Rhan'ka
+							["groups"] = {
+								i(164983), -- Rhan'ka's Escape Plan
+							},
+							["description"] = "Complete the quest chain, starting with \"Meet the Goldtusk Gang\", to unlock this vendor.",
+						}),
 					},
 				}),
 			},
