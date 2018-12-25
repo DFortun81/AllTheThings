@@ -306,7 +306,8 @@ _.Zones =
 						["questID"] = 9561,
 						["groups"] = {
 							i(23846, {	-- Nolkai's Box
-								i(23844)	-- Nolkai's Lantern
+								i(23844),	-- Nolkai's Lantern
+								i(23852),	-- Nolkai's Bag
 							}),
 						},
 						["qg"] = 17424,	-- Anchorite Paetheus
