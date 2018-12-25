@@ -23,6 +23,7 @@ _.PetJournal =
 		un(3, p(202)),	-- Baby Blizzard Bear
 		p(2477),	-- Baby Crawg
 		p(1884),	-- Baby Elderhorn
+		p(2551), 	-- Baby Stonehide
 		un(10, p(156)),		-- Bananas
 		p(2047),	-- Ban-Fu, Cub of Ban-Lu
 		p(2123),	-- Bile Larva
@@ -60,6 +61,7 @@ _.PetJournal =
 		p(508),		-- Darkshore Cub
 		p(2157),	-- Dart
 		p(232),		-- Darting Hatchling
+		p(2538),	-- Dasher
 		p(1330),	-- Death Adder Hatchling
 		p(2464),	-- Deathsting Scorpid
 		un(4, p(1449)),	-- Deathwatch Hatchling
@@ -112,6 +114,7 @@ _.PetJournal =
 		p(2196),	-- Lil' Tika
 		p(437),		-- Little Black Ram
 		p(408),		-- Lizard Hatchling
+		p(2558),	-- Lord Woofington
 		p(1661),	-- Lost Netherpup
 		p(1922),	-- Lurking Owl Kitten
 		p(450),		-- Maggot
@@ -147,6 +150,7 @@ _.PetJournal =
 		p(238),		-- Razormaw Hatchling
 		p(239),		-- Razzashi Hatchling
 		p(1176),	-- Red Panda
+		p(2525),	-- Redridge Tarantula
 		p(1756),	-- Ridgeback Piglet
 		p(1453),	-- River Calf
 		p(482),		-- Rock Viper
@@ -157,6 +161,7 @@ _.PetJournal =
 		p(528),		-- Scalded Basilisk Hatchling
 		p(414),		-- Scorpid
 		p(416),		-- Scorpling
+		p(2560),	-- Scritches
 		p(44),		-- Siamese Cat
 		p(511),		-- Sidewinder
 		p(741),		-- Silent Hedgehog
@@ -183,14 +188,17 @@ _.PetJournal =
 		p(679),		-- Summit Kid
 		p(1128),	-- Sumprush Rodent
 		p(1196),	-- Sunfur Panda
+		h(p(2540)),	-- Tanzil
 		p(2198),	-- Taptaf
 		p(567),		-- Temple Snake
 		p(1735),	-- Terror Larva
 		p(1759),	-- Thaumaturgical Piglet
 		p(1456),	-- Thicket Skitterer
 		p(1810),	-- Thornclaw Broodling
+		p(2529),	-- Thunder Lizard Runt
 		p(2412),	-- Tiny Direhorn
 		p(1236),	-- Tito
+		a(p(2539)),	-- Trecker
 		p(405),		-- Tree Python
 		un(35, p(2051)),	-- Twilight
 		p(505),		-- Twilight Iguana

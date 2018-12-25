@@ -5,7 +5,9 @@ _.PetJournal =
 {
 	pa(239, { 	-- Flying
 		p(1708),	-- Albatross Chick
+		a(p(2566)), -- Albatross Hatchling
 		p(1984),	-- Albino Buzzard
+		p(2555), 	-- Albino Duskwatcher
 		a(p(331)),	-- Alliance Balloon (Alliance)
 		p(732),		-- Amber Moth
 		p(1465),	-- Amberbarb Wisp
@@ -33,18 +35,22 @@ _.PetJournal =
 		p(1586),	-- Cerulean Moth
 		p(1303),	-- Chi-Chi, Hatchling of Chi-Ji
 		p(849),		-- Chi-Ji Kite
+		p(2527),	-- Child of Pa'ku
 		p(646),		-- Chicken
 		p(1914),	-- Coastal Sandpiper
+		a(p(2568)), -- Cobalt Raven
 		p(47),		-- Cockatiel
-		p(2405),	-- Corlain Falcon
+		a(p(2405)),	-- Corlain Falcon
 		p(1997),	-- Crackers
 		p(507),		-- Crested Owl
+		p(2567),	-- Crimson Bat Pup
 		p(421),		-- Crimson Moth
 		p(1537),	-- Crimson Spore
 		p(1589),	-- Crimsonwing Moth
 		p(1068),	-- Crow
 		p(336),		-- Darkmoon Balloon
 		p(1062),	-- Darkmoon Glowfly
+		p(2544),	-- Darkshore Sentinel
 		p(1975),	-- Direbeak Hatchling
 		p(2118), 	-- Docile Skyfin
 		un(10, p(169)),		-- Dragon Kite
@@ -59,6 +65,7 @@ _.PetJournal =
 		p(1889),	-- Felbat Pup
 		p(1928),	-- Firebat Pup
 		p(146),		-- Firefly
+		p(2557),	-- Firesting Buzzer
 		p(1545),	-- Firewing
 		p(1325),	-- Flamering Moth
 		p(395),		-- Fledgling Buzzard
@@ -99,6 +106,7 @@ _.PetJournal =
 		p(1469),	-- Junglebeak
 		p(1597),	-- Kaliri Hatchling
 		p(2390),	-- Leafy Flutterwing
+		p(2552),	-- Leatherwing Screecher
 		p(1713),	-- Long-Eared Owl
 		p(718),		-- Luyu Moth
 		p(1403),	-- Mechanical Axebeak
@@ -107,6 +115,7 @@ _.PetJournal =
 		p(1514),	-- Mystical Spring Bouquet
 		p(186),		-- Nether Ray Fry
 		p(1715),	-- Nightwatch Swooper
+		p(2563),	-- Nightwreathed Watcher
 		p(1714),	-- Northern Hawk Owl
 		p(544),		-- Oasis Moth
 		p(2050),	-- Orphaned Felbat
@@ -114,6 +123,7 @@ _.PetJournal =
 		p(403),		-- Parrot
 		p(201),		-- Plump Turkey
 		p(409),		-- Polly
+		un(1, p(2541)),	-- Proper Parrot
 		p(309),		-- Pterrordax Hatchling
 		p(1907),	-- Pygmy Owl
 		p(139),		-- Red Moth
@@ -128,6 +138,7 @@ _.PetJournal =
 		p(2404),	-- Seabreeze Bumblebee
 		p(51),		-- Senegal
 		p(1567),	-- Sentinel's Companion
+		p(2556),	-- Shadefeather Hatchling
 		p(1599),	-- Shadow Sporebat
 		p(1976),	-- Sharptalon Hatchling
 		p(1734),	-- Shimmering Firefly

@@ -16,6 +16,7 @@ _.PetJournal =
 		p(264),		-- Crawling Claw
 		p(321),		-- Creepy Crate
 		p(1521),	-- Cursed Birman
+		p(2546),	-- Detective Ray
 		p(1967),	-- Drudge Ghoul
 		un(10, p(348)),	-- Eye of the Legion
 		un(6, p(346)),	-- Fetish Shaman
@@ -50,6 +51,7 @@ _.PetJournal =
 		p(439),		-- Restless Shadeling
 		p(2394),	-- Returned Hatchling
 		p(1804),	-- Risen Saber Kitten
+		p(2553),	-- Rotting Ghoul
 		p(538),		-- Scourged Whelpling
 		p(2042),	-- Scraps
 		p(218),		-- Sen'jin Fetish

@@ -20,6 +20,7 @@ _.PetJournal =
 		p(1775), 	-- Coralback Fiddler 
 		p(2427),	-- Cou'pa
 		p(2424),	-- Crimson Frog
+		p(2562),	-- Crimson Octopode
 		p(751), 	-- Dancing Water Skimmer 
 		p(335), 	-- Darkmoon Turtle
 		p(2389),	-- Elusive Swimmer
@@ -95,6 +96,7 @@ _.PetJournal =
 		p(713), 	-- Softshell Snapling
 		p(2446),	-- Sparkleshell Sandcrawler
 		p(1201), 	-- Spawn of G'nathus
+		p(2528),	-- Spawn of Krag'wa
 		un(20, p(125)), 	-- Speedy
 		p(1337), 	-- Spineclaw Crab
 		p(723), 	-- Spiny Terrapin
@@ -112,12 +114,14 @@ _.PetJournal =
 		p(1206), 	-- Tiny Red Carp
 		p(1209), 	-- Tiny White Carp
 		p(420), 	-- Toad
+		p(2559),	-- Tonguelasher
 		p(163), 	-- Toothy
 		un(6, p(2143)),	-- Tottle
 		p(2415),	-- Tragg the Curious
 		p(65), 		-- Tree Frog
 		p(536), 	-- Tundra Penguin
 		p(473), 	-- Turquoise Turtle
+		a(p(2569)),	-- Violet Abyssal Eel
 		p(1013), 	-- Wanderer's Festival Hatchling
 		p(64),	 	-- Wood Frog
 		p(752), 	-- Yellow-Bellied Bullfrog

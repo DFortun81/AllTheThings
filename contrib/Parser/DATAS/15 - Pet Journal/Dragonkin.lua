@@ -50,6 +50,7 @@ _.PetJournal =
 		p(1721),	-- Stormborne Whelpling
 		p(382),		-- Sun Darter Hatchling
 		un(9, p(802)),	-- Thundering Serpent Hatchling
+		p(2561),	-- Thunderscale Whelpling
 		p(2450),	-- Tinder Pup
 		un(3, p(757)),	-- Tiny Green Dragon
 		un(3, p(758)),	-- Tiny Red Dragon

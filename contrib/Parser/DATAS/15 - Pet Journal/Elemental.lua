@@ -10,7 +10,9 @@ _.PetJournal =
 		p(212),		-- Ammen Vale Lashling
 		p(1150),	-- Ashstone Core
 		p(1429),	-- Autumnal Sproutling
-		p(2429);	-- Azeriti
+		p(2429),	-- Azeriti
+		p(2545), 	-- Gust of Cyclarus
+		p(2547), 	-- Hydrath Droplet
 		p(2086), 	-- Blazehound
 		p(1517),	-- Blazing Cindercrawler
 		un(35, p(1248)),	-- Blossoming Ancient
@@ -32,6 +34,7 @@ _.PetJournal =
 		p(1179),	-- Electrified Razortooth
 		p(293),		-- Elementium Geode
 		p(837),		-- Emerald Shale Hatchling
+		p(2548),	-- Everburning Treant
 		p(1998),	-- Everliving Spore
 		p(519),		-- Fel Flame
 		p(2117), 	-- Fel Lasher

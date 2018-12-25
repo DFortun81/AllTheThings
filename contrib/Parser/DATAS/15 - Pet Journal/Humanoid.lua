@@ -72,6 +72,7 @@ _.PetJournal =
 		un(6, p(1365)),	-- Treasure Goblin
 		p(2022),	-- Tylarr Gronnden
 		p(2136), 	-- Uuna
+		un(35, p(2184)),	-- Whomper
 		p(120),		-- Winter's Little Helper
 		p(1634),	-- Wretched Servant
 		p(1887),	-- Wyrmy Tunkins

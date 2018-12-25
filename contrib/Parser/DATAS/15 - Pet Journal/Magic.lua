@@ -88,11 +88,14 @@ _.PetJournal =
 		p(1921),	-- Untethered Wyrmling
 		p(1154),	-- Viscidus Globule
 		p(1244),	-- Viscous Horror
+		p(2549),	-- Void Jelly
 		p(2130),	-- Void Shardling
 		p(2434),	-- Voidwiggle
 		un(20, p(157)),		-- Willy
+		p(2535),	-- Wicker Wraith
 		p(1937),	-- Wondrous Wisdomball
 		un(6, p(1255)),	-- Zeradar
 		p(247),		-- Zipao Tiger
+		p(2550),	-- Zur'aj the Depleted
 	}),
 };

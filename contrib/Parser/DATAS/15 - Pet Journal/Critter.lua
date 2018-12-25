@@ -82,6 +82,7 @@ _.PetJournal =
 		un(20, p(126)),		-- Mr. Wiggles
 		p(1776),	-- Mudshell Conch
 		p(210),		-- Mulgore Hatchling
+		p(2554),	-- Needleback Pup
 		p(638),		-- Nether Roach
 		un(6, p(1691)),	-- Nibbles
 		p(1943),	-- Noblegarden Bunny
