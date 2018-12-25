@@ -49,9 +49,10 @@ _.Zones =
 								["races"] = {10}	-- Blood Elf
 							}),
 							i(88148, { -- Jade Crane Chick
-								p(792, {	-- Jade Crane Chick
-									["races"] = {26}	-- Pandaren
-								}),
+								["groups"] = {
+									p(792),	-- Jade Crane Chick
+								},
+								["races"] = { 26, }, -- Pandaren
 							}),
 							p(629, {	-- Shore Crawler
 								["races"] = {9}		-- Goblin

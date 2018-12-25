@@ -26,8 +26,11 @@ _.Zones =
 									p(68, {		-- Great Horned Owl
 										["races"] = {4}		-- Night Elf
 									}),
-									p(792, {	-- Jade Crane Chick
-										["races"] = {25}	-- Pandaren
+									i(88148, { -- Jade Crane Chick
+										["groups"] = {
+											p(792),	-- Jade Crane Chick
+										},
+										["races"] = { 26, }, -- Pandaren
 									}),
 									p(43, {		-- Orange Tabby Cat
 										["races"] = {1}		-- Human
