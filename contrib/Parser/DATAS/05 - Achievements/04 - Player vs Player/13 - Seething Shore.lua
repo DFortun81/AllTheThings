@@ -51,5 +51,9 @@ _.Achievements =
 				},
 			}),
 		},
+		["achievementID"] = 12412,
+		["maps"] = { 
+			907, -- Seething Shore (Trial Map)
+		},
 	}),
 };
