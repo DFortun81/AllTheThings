@@ -40,8 +40,6 @@ _.Instances =
 							["qg"] = 7407,	-- Chief Engineer Bildewhizzle
 						}),
 						q(27076, {	-- Breaking and Entering
-							["groups"] = {
-							},
 							["qg"] = 44929,	-- Tran'rek
 						}),
 						q(27068, {	-- Chief Ukorz Sandscalp
@@ -51,12 +49,9 @@ _.Instances =
 								i(65979),	-- Staff of the Unknown Road
 							},
 							["qg"] = 40712,	-- Mazoga's Spirit
-							["sourceQuests"] = { 25556 },	-- Into Zul'Farrak
-							["isBreadcrumb"] = true,
+							["sourceQuest"] = 25556,	-- Into Zul'Farrak
 						}),
 						q(27071, {	-- Wrath of the Sandfury
-							["groups"] = {
-							},
 							["qg"] = 40712,	-- Mazoga's Spirit
 						}),
 					}),

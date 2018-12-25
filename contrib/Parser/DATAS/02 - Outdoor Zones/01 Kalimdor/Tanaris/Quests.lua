@@ -7,15 +7,437 @@ _.Zones =
 		m(71, {	-- Tanaris
 			["groups"] = {
 				n(-17, {	-- Quests
---[[	Achievement info for Loremaster related zone quests
-					ach(4935, {		-- Tanaris Quests
-						crit(1),		-- Southsea Pirates
-						crit(2),		-- Bug Free
-						crit(3),		-- Advancing Our Interests
-						crit(4),		-- Grudge Match!
-						crit(5),		-- The Titans
+					ach(4935, {	-- Tanaris Quests
+						crit(1, {	-- Southsea Pirates
+							-- alliance
+							{	-- Puddle Stomping
+								["questID"] = 25049,
+								["qg"] = 38535,	-- Kelsey Steelspark
+								["coord"] = { 51.2, 29.9 },
+								["races"] = ALLIANCE_ONLY,
+								["sourceQuest"] = 28507,	-- Hero's Call: Tanaris!
+							},
+							{	-- Seaside Salvage
+								["questID"] = 25048,
+								["qg"] = 38535,	-- Kelsey Steelspark
+								["coord"] = { 51.2, 29.9 },
+								["races"] = ALLIANCE_ONLY,
+							},
+							{	-- Rocket Rescue
+								["questID"] = 25050,
+								["groups"] = {
+									i(56859),	-- Nasmira's Soup Stirrer
+									i(56860),	-- Dud Bomb
+									i(56861),	-- Salvaged Steamwheedle Helm
+									i(56862),	-- Failed Liferocket Prototype
+								},
+								["qg"] = 38535,	-- Kelsey Steelspark
+								["coord"] = { 51.2, 29.9 },
+								["races"] = ALLIANCE_ONLY,
+								["sourceQuests"] = {
+									25049,	-- Puddle Stomping
+									25048,	-- Seaside Salvage
+								},
+							},
+							{	-- Dead Man's Chest
+								["questID"] = 25052,
+								["groups"] = {
+									i(56875),	-- Southsea Hood
+									i(56876),	-- Golly Gosh Leggings
+									i(56877),	-- Nose Thumber Gloves
+									i(56878),	-- Cleaned-Up Pauldrons
+								},
+								["qg"] = 38704,	-- Kelsey Steelspark
+								["races"] = ALLIANCE_ONLY,
+								["sourceQuest"] = 25050,	-- Rocket Rescue
+							},
+							{	-- Lootin' Plunder
+								["questID"] = 25054,
+								["qg"] = 38704,	-- Kelsey Steelspark
+								["races"] = ALLIANCE_ONLY,
+								["sourceQuest"] = 25050,	-- Rocket Rescue
+							},
+							{	-- Filling Our Pockets
+								["questID"] = 26887,
+								["qg"] = 38704,	-- Kelsey Steelspark
+								["races"] = ALLIANCE_ONLY,
+								["sourceQuests"] = {
+									25052,	-- Dead Man's Chest
+									25054,	-- Lootin' Plunder
+								},
+							},
+							{	-- Going Off-Task
+								["questID"] = 26886,
+								["qg"] = 38704,	-- Kelsey Steelspark
+								["races"] = ALLIANCE_ONLY,
+								["sourceQuests"] = {
+									25052,	-- Dead Man's Chest
+									25054,	-- Lootin' Plunder
+								},
+							},
+							{	-- To The Ground!
+								["questID"] = 25053,
+								["qg"] = 38704,	-- Kelsey Steelspark
+								["races"] = ALLIANCE_ONLY,
+								["sourceQuests"] = {
+									25052,	-- Dead Man's Chest
+									25054,	-- Lootin' Plunder
+								},
+							},
+							{	-- Captain Dreadbeard
+								["questID"] = 25166,
+								["groups"] = {
+									i(56867),	-- Pretty Please Robes
+									i(56868),	-- Dreadbeard Strangler Gloves
+									i(56869),	-- Investigator's Belt
+									i(56870),	-- Impatient Boots
+								},
+								["qg"] = 38704,	-- Kelsey Steelspark
+								["races"] = ALLIANCE_ONLY,
+								["sourceQuests"] = {
+									26887,	-- Filling Our Pockets
+									26886,	-- Going Off-Task
+									25053,	-- To The Ground!
+								},
+							},
+							-- horde
+							{	-- Puddle Stomping
+								["questID"] = 24907,
+								["qg"] = 38534,	-- Megs Dreadshredder
+								["coord"] = { 51.2, 29.9 },
+								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 28509,	-- Warchief's Command: Tanaris!
+							},
+							{	-- Seaside Salvage
+								["questID"] = 24906,
+								["qg"] = 38534,	-- Megs Dreadshredder
+								["coord"] = { 51.2, 29.9 },
+								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 27447,	-- Tanaris is Calling
+							},
+							{	-- Rocket Rescue
+								["questID"] = 24910,
+								["groups"] = {
+									i(56863),	-- Nasmira's Soup Stirrer
+									i(56864),	-- Dud Bomb
+									i(56865),	-- Salvaged Steamwheedle Helm
+									i(56866),	-- Failed Liferocket Prototype
+								},
+								["qg"] = 38534,	-- Megs Dreadshredder
+								["coord"] = { 51.2, 29.9 },
+								["races"] = HORDE_ONLY,
+								["sourceQuests"] = {
+									24907,	-- Puddle Stomping
+									24906,	-- Seaside Salvage
+								},
+							},
+							{	-- Booty Duty
+								["questID"] = 24949,
+								["qg"] = 38703,	-- Megs Dreadshredder
+								["coord"] = { 71.8, 45.4 },
+								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 24910,	-- Rocket Rescue
+							},
+							{	-- Dead Man's Chest
+								["questID"] = 24927,
+								["groups"] = {
+									i(56879),	-- Southsea Hood
+									i(56880),	-- Dellot's Leggings
+									i(56881),	-- Branded Gloves
+									i(56882),	-- Cleaned-Up Pauldrons
+								},
+								["qg"] = 38703,	-- Megs Dreadshredder
+								["coord"] = { 71.8, 45.4 },
+								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 24910,	-- Rocket Rescue
+							},
+							{	-- To The Ground!
+								["questID"] = 24928,
+								["qg"] = 38703,	-- Megs Dreadshredder
+								["coord"] = { 71.8, 45.4 },
+								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 24910,	-- Rocket Rescue
+							},
+							{	-- Filling Our Pockets
+								["questID"] = 25541,
+								["qg"] = 38703,	-- Megs Dreadshredder
+								["coord"] = { 71.8, 45.4 },
+								["races"] = HORDE_ONLY,
+								["sourceQuests"] = 24949,	-- Booty Duty -- verify this. is it really "Booty Duty" or is it "To The Ground!"?
+							},
+							{	-- Going Off-Task
+								["questID"] = 25534,
+								["qg"] = 38703,	-- Megs Dreadshredder
+								["coord"] = { 71.8, 45.4 },
+								["races"] = HORDE_ONLY,
+								["sourceQuests"] = 24927,	-- Dead Man's Chest
+							},
+							{	-- Captain Dreadbeard
+								["questID"] = 24950,
+								["groups"] = {
+									i(56871),	-- Flirtation Robes
+									i(56872),	-- Dreadbeard Strangler Gloves
+									i(56873),	-- Investigator's Belt
+									i(56874),	-- Impatient Boots
+								},
+								["qg"] = 38703,	-- Megs Dreadshredder
+								["coord"] = { 71.8, 45.4 },
+								["races"] = HORDE_ONLY,
+								["sourceQuests"] = {
+									25541,	-- Filling Our Pockets
+									25534,	-- Going Off-Task
+									24928,	-- To The Ground!
+								},
+							},
+						}),
+						crit(2, {	-- Bug Free
+							{	-- Bootlegger Outpost
+								["questID"] = 25103,
+								["qg"] = 38703,	-- Megs Dreadshredder
+								["coord"] = { 71.8, 45.4 },
+								["races"] = HORDE_ONLY,
+								["sourceQuests"] = 24950,	-- Captain Dreadbeard (horde)
+							},
+							{	-- Cutting Losses
+								["questID"] = 24932,
+								["qg"] = 38706,	-- Zeke Bootscuff
+								["coord"] = { 55.6, 60.8 },
+								["sourceQuest"] = 25103,	-- Bootlegger Outpost
+							},
+							{	-- Chicken of the Desert
+								["questID"] = 24933,
+								["qg"] = 38706,	-- Zeke Bootscuff
+								["coord"] = { 55.6, 60.8 },
+								["sourceQuest"] = 24932,	-- Cutting Losses
+							},
+							{	-- A Great Idea
+								["questID"] = 24951,
+								["qg"] = 38706,	-- Zeke Bootscuff
+								["coord"] = { 55.6, 60.8 },
+								["sourceQuest"] = 24933,	-- Chicken of the Desert
+							},
+							{	-- Just Trying to Kill Some Bugs
+								["questID"] = 24953,
+								["groups"] = {
+									i(56851),	-- Pendant of the Gaping Chasm
+									i(56852),	-- Mostly-Amazing Gloves
+									i(56853),	-- Bootscuff Boots
+									i(56854),	-- Bootlegger Legplates
+								},
+								["qg"] = 38706,	-- Zeke Bootscuff
+								["coord"] = { 55.6, 60.8 },
+								["sourceQuest"] = 24951,	-- A Great Idea
+							},
+						}),
+						crit(3, {	-- Advancing Our Interests
+							-- alliance
+							{	-- Terrapination
+								["questID"] = 25063,
+								["qg"] = 39059,	-- Kelsey Steelspark
+								["races"] = ALLIANCE_ONLY,
+							},
+							{	-- You Too, Brute?
+								["questID"] = 25065,
+								["groups"] = {
+									i(56883),	-- Meatface Pummeler
+									i(56884),	-- "Smart Bracers"
+									i(56885),	-- Dagger of the Ides
+									i(56886),	-- Gnomeregan Medallion of Merit
+									i(157015),	-- Meatface's Tenderizer 
+								},
+								["qg"] = 39059,	-- Kelsey Steelspark
+								["races"] = ALLIANCE_ONLY,
+								["sourceQuest"] = 25063,	-- Terrapination
+							},
+							-- horde
+							{	-- Un-Chartered
+								["questID"] = 24955,
+								["qg"] = 38849,	-- Megs Dreadshredder
+								["coord"] = { 44.5, 52.6 },
+								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 24905,	-- Returning a Favor
+							},
+							{	-- Get The Centipaarty Started
+								["questID"] = 24957,
+								["qg"] = 38849,	-- Megs Dreadshredder
+								["coord"] = { 44.5, 52.6 },
+								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 24955,	-- Un-Chartered
+							},
+							{	-- Maul 'Em With Kindness
+								["questID"] = 24963,
+								["qg"] = 38849,	-- Megs Dreadshredder
+								["coord"] = { 44.5, 52.6 },
+								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 24957,	-- Get The Centiparty Started
+							},
+							{	-- Sandscraper
+								["questID"] = 25001,
+								["groups"] = {
+									i(56887),	-- Knuckle Down
+									i(56888),	-- Sandscraper Bracers
+									i(56889),	-- Business Finisher
+									i(56890),	-- Bilgewater Brooch
+									i(157014),	-- Dunemaul Skullcracker 
+								},
+								["qg"] = 38849,	-- Megs Dreadshredder
+								["coord"] = { 44.5, 52.6 },
+								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 24963,	-- Maul 'Em With Kindness
+							},
+						}),
+						crit(4, {	-- Grudge Match!
+							{	-- Thunderdrome: The Ginormus!
+								["questID"] = 25067,
+								["qg"] = 39034,	-- Dr. Dealwell
+								["coord"] = { 51.7, 28.0 },
+								["sourceQuests"] = {
+									25001,	-- Sandscraper
+									25065,	-- You Too, Brute?
+									26895,	-- The Thunderdrome!
+									26896,	-- The Thunderdrome!
+								},
+							},
+							{	-- Thunderdrome: Zumonga!
+								["questID"] = 25094,
+								["qg"] = 39034,	-- Dr. Dealwell
+								["coord"] = { 51.7, 28.0 },
+								["sourceQuest"] = 25067,	-- Thunderdrome: The Ginormus!
+							},
+							{	-- Thunderdrome: Sarinexx!
+								["questID"] = 25095,
+								["qg"] = 39034,	-- Dr. Dealwell
+								["coord"] = { 51.7, 28.0 },
+								["sourceQuest"] = 25094,	-- Thunderdrome: Zumonga!
+							},
+							{	-- Thunderdrome: Grudge Match!
+								["questID"] = 25513,
+								["groups"] = {
+									i(56891),	-- Thunderdrome Ring
+									i(56892),	-- Kelsey's Necklace
+									i(56893),	-- Dreadshredder Cloak
+								},
+								["qg"] = 39034,	-- Dr. Dealwell
+								["coord"] = { 51.7, 28.0 },
+								["races"] = ALLIANCE_ONLY,
+								["sourceQuests"] = 25065,	-- You Too, Brute?
+							},
+							{	-- Thunderdrome: Grudge Match!
+								["questID"] = 25591,
+								["groups"] = {
+									i(56894),	-- Thunderdrome Ring
+									i(56895),	-- Kelsey's Necklace
+									i(56896),	-- Dreadshredder Cloak
+								},
+								["qg"] = 39034,	-- Dr. Dealwell
+								["coord"] = { 51.7, 28.0 },
+								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 25095,	-- Thunderdrome: Sarinexx!
+							},
+						}),
+						crit(5, {	-- The Titans
+							-- alliance
+							{	-- Fragments of Language
+								["questID"] = 25565,
+								["qg"] = 40109,	-- Prospector Gunstan
+								["races"] = ALLIANCE_ONLY,
+							},
+							{	-- Laying Claim
+								["questID"] = 25559,
+								["qg"] = 40109,	-- Prospector Gunstan
+								["races"] = ALLIANCE_ONLY,
+							},
+							{	-- Ancient Obstacles
+								["questID"] = 25420,
+								["groups"] = {
+									i(56903),	-- Gatewatcher Belt
+									i(56904),	-- Decomissioner's Monnions
+									i(56905),	-- Sandstone Pauldrons
+								},
+								["qg"] = 40109,	-- Prospector Gunstan
+								["races"] = ALLIANCE_ONLY,
+								["sourceQuests"] = {
+									25565,	-- Fragments of Language
+									25559,	-- Laying Claim
+								},
+							},
+							{	-- The Secrets of Uldum
+								["questID"] = 25566,
+								["qg"] = 40109,	-- Prospector Gunstan
+								["races"] = ALLIANCE_ONLY,
+								["sourceQuest"] = 25420,	-- Ancient Obstacles
+							},
+							-- horde
+							{	-- Fragments of Language
+								["questID"] = 25020,
+								["qg"] = 38922,	-- Examiner Andoren Dawnrise
+								["coord"] = { 33.2, 77.0 },
+								["races"] = HORDE_ONLY,
+							},
+							{	-- Laying Claim
+								["questID"] = 25019,
+								["qg"] = 38922,	-- Examiner Andoren Dawnrise
+								["coord"] = { 33.2, 77.0 },
+								["races"] = HORDE_ONLY,
+							},
+							{	-- Ancient Obstacles
+								["questID"] = 25017,
+								["groups"] = {
+									i(56906),	-- Gatewatcher Belt
+									i(56907),	-- Examiner's Monnions
+									i(56908),	-- Sandstone Pauldrons
+								},
+								["qg"] = 38922,	-- Examiner Andoren Dawnrise
+								["coord"] = { 33.2, 77.0 },
+								["races"] = HORDE_ONLY,
+								["sourceQuests"] = {
+									25020,	-- Fragments of Language
+									25019,	-- Laying Claim
+								},
+							},
+							{	-- The Secrets of Uldum
+								["questID"] = 25069,
+								["qg"] = 38922,	-- Examiner Andoren Dawnrise
+								["coord"] = { 33.2, 77.0 },
+								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 25017,	-- Ancient Obstacles
+							},
+							-- shared
+							{	-- Antediluvean Chest
+								["objectID"] = 202474,
+								["coord"] = { 37.8, 82.4 },	-- object is technically in Uldum but just barely across the zone border, so using closest coords that show in Tanaris instead
+								["groups"] = {
+									{	-- What Lies Within
+										["questID"] = 25070,
+										["sourceQuests"] = {
+											25566,	-- The Secrets of Uldum
+											25069,	-- The Secrets of Uldum
+										},
+									},
+									{	-- The Grand Tablet
+										["questID"] = 25421,
+										["groups"] = {
+											i(56897),	-- Hieroglyphic Helm
+											i(56898),	-- Translation Boots
+											i(56899),	-- Rosy Tablet Belt
+										},
+										["races"] = ALLIANCE_ONLY,
+										["sourceQuest"] = 25070,	-- What Lies Within
+									},
+									{	-- The Grand Tablet
+										["questID"] = 25107,
+										["groups"] = {
+											i(56900),	-- Hieroglyphic Helm
+											i(56901),	-- Translation Boots
+											i(56902),	-- Rosy Tablet Belt
+										},
+										["races"] = HORDE_ONLY,
+										["sourceQuest"] = 25070,	-- What Lies Within
+									},
+								},
+							},
+						}),
 					}),
-]]--				
 					{	-- A Conspicuous Gravestone
 						["objectID"] = 148504,
 						["groups"] = {
@@ -36,6 +458,8 @@ _.Zones =
 							i(56858),	-- Goblin Treat Tin
 						},
 						["qg"] = 38706,	-- Zeke Bootscuff
+						["coord"] = { 55.6, 60.8 },
+						["sourceQuest"] = 25103,	-- Bootlegger Outpost
 					},
 					{	-- A Good Head On Your Shoulders
 						["questID"] = 2771,	-- A Good Head On Your Shoulders
@@ -56,105 +480,46 @@ _.Zones =
 						["qg"] = 9299,	-- Gaeriyan
 						["sourceQuest"] = 3912,	-- Meet at the Grave
 					},
-					{	-- A Great Idea
-						["questID"] = 24951,
-						["qg"] = 38706,	-- Zeke Bootscuff
-						["sourceQuest"] = 24933,	-- Chicken of the Desert
-					},
 					{	-- All Cheered Out
 						["questID"] = 26889,
 						["qg"] = 38704,	-- Kelsey Steelspark
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 25166,	-- Captain Dreadbeard
 					},
-					{	-- Ancient Obstacles
-						["questID"] = 25420,
-						["groups"] = {
-							i(56903),	-- Gatewatcher Belt
-							i(56904),	-- Decomissioner's Monnions
-							i(56905),	-- Sandstone Pauldrons
-						},
-						["qg"] = 40109,	-- Prospector Gunstan
-						["races"] = ALLIANCE_ONLY,
-						["sourceQuests"] = { 28881 },	-- Prospector Gunstan
-					},
-					{	-- Ancient Obstacles
-						["questID"] = 25017,
-						["groups"] = {
-							i(56906),	-- Gatewatcher Belt
-							i(56907),	-- Examiner's Monnions
-							i(56908),	-- Sandstone Pauldrons
-						},
-						["qg"] = 38922,	-- Examiner Andoren Dawnrise
-						["races"] = HORDE_ONLY,
-						["sourceQuests"] = {
-							25019,	-- Laying Claim
-							25020,	-- Fragments of Language
-						},
-					},
 					{	-- Andoren Will Know
 						["questID"] = 25018,
 						["qg"] = 38849,	-- Megs Dreadshredder
+						["coord"] = { 44.5, 52.6 },
 						["races"] = HORDE_ONLY,
-						["sourceQuests"] = { 25014 },	-- Sandscraper's Treasure
-						["isBreadcrumb"] = true,
-					},
-					{	-- Antediluvean Chest
-						["objectID"] = 202474,
-						["groups"] = {
-							{	-- The Grand Tablet (awards "The Titans" achievement criteria)
-								["questID"] = 25421,
-								["groups"] = {
-									i(56897),	-- Hieroglyphic Helm
-									i(56898),	-- Translation Boots
-									i(56899),	-- Rosy Tablet Belt
-								},
-								["races"] = ALLIANCE_ONLY,
-								["sourceQuests"] = { 25070 },	-- What Lies Within
-							},
-							{	-- The Grand Tablet (awards "The Titans" achievement criteria)
-								["questID"] = 25107,
-								["groups"] = {
-									i(56900),	-- Hieroglyphic Helm
-									i(56901),	-- Translation Boots
-									i(56902),	-- Rosy Tablet Belt
-								},
-								["races"] = HORDE_ONLY,
-								["sourceQuests"] = { 25070 },	-- What Lies Within
-							},
-							{	-- What Lies Within
-								["questID"] = 25070,
-								["sourceQuests"] = { 25566 }	-- The Secrets of Uldum
-							},
-						},
+						["sourceQuest"] = 25014,	-- Sandscraper's Treasure
 					},
 					{	-- Atiesh, Greatstaff of the Guardian
 						["questID"] = 9269,
 						["u"] = 40,
 						["qg"] = 15192,	-- Anachronos
 						["classes"] = { 11 },	-- Druid
-						["sourceQuest"] = 9251,
+						["sourceQuest"] = 9251,	-- Atiesh, the Befouled Greatstaff
 					},
 					{	-- Atiesh, Greatstaff of the Guardian
 						["questID"] = 9270,
 						["u"] = 40,
 						["qg"] = 15192,	-- Anachronos
 						["classes"] = { 8 },	-- Mage
-						["sourceQuest"] = 9251,
+						["sourceQuest"] = 9251,	-- Atiesh, the Befouled Greatstaff
 					},
 					{	-- Atiesh, Greatstaff of the Guardian
 						["questID"] = 9271,
 						["u"] = 40,
 						["qg"] = 15192,	-- Anachronos
 						["classes"] = { 9 },	-- Warlock
-						["sourceQuest"] = 9251,
+						["sourceQuest"] = 9251,	-- Atiesh, the Befouled Greatstaff
 					},
 					{	-- Atiesh, Greatstaff of the Guardian
 						["questID"] = 9257,
 						["u"] = 40,
 						["qg"] = 15192,	-- Anachronos
 						["classes"] = { 5 },	-- Priest
-						["sourceQuest"] = 9251,
+						["sourceQuest"] = 9251,	-- Atiesh, the Befouled Greatstaff
 					},
 					{	-- Atiesh, the Befouled Greatstaff
 						["questID"] = 9251,
@@ -164,6 +529,7 @@ _.Zones =
 					},
 					{	-- Blingtron Circuit Design
 						["objectID"] = 246438,
+						["coord"] = { 69.5, 68.4 },
 						["groups"] = {
 							{	-- Oil Rags to Riches
 								["questID"] = 40881,
@@ -174,76 +540,28 @@ _.Zones =
 					{	-- Blisterpaw Butchery
 						["questID"] = 25115,
 						["qg"] = 39178,	-- Driz Plunkbow
-						["sourceQuests"] = { 25111 },	-- Scavengers Scavenged
+						["coord"] = { 52.2, 28.0 },
+						["sourceQuest"] = 25111,	-- Scavengers Scavenged
 					},
 					{	-- Blood to Thrive
 						["questID"] = 25021,
 						["qg"] = 38927,	-- Mazoga
-					},
-					{	-- Bootlegger Outpost
-						["questID"] = 25103,
-						["qg"] = 38703,	-- Megs Dreadshredder
-						["races"] = HORDE_ONLY,
-						["sourceQuests"] = {
-							24950,	-- Captain Dreadbeard (horde)
-							25166,	-- Captain Dreadbeard (alliance)
-						},
-					},
-					{	-- Booty Duty
-						["questID"] = 24949,
-						["qg"] = 38703,	-- Megs Dreadshredder
-						["races"] = HORDE_ONLY,
+						["coord"] = { 42.2, 23.8 },
 					},
 					{	-- Butcherbot
 						["questID"] = 25112,
 						["qg"] = 39178,	-- Driz Plunkbow
-					},
-					{	-- Captain Dreadbeard	-- unlocks criteria "Southsea Pirates"
-						["questID"] = 25166,
-						["groups"] = {
-							i(56867),	-- Pretty Please Robes
-							i(56868),	-- Dreadbeard Strangler Gloves
-							i(56869),	-- Investigator's Belt
-							i(56870),	-- Impatient Boots
-						},
-						["qg"] = 38704,	-- Kelsey Steelspark
-						["races"] = ALLIANCE_ONLY,
-						["sourceQuests"] = {
-							25053,	-- To The Ground!
-							26886,	-- Going Off-Task
-							26887,	-- Filling Our Pockets
-						},
-					},
-					{	-- Captain Dreadbeard	-- unlocks criteria "Southsea Pirates"
-						["questID"] = 24950,
-						["groups"] = {
-							i(56871),	-- Flirtation Robes
-							i(56872),	-- Dreadbeard Strangler Gloves
-							i(56873),	-- Investigator's Belt
-							i(56874),	-- Impatient Boots
-						},
-						["qg"] = 38703,	-- Megs Dreadshredder
-						["races"] = HORDE_ONLY,
-						["sourceQuests"] = {
-							24928,	-- To The Ground!
-							25534,	-- Going Off-Task
-							25541,	-- Filling Our Pockets
-						},
-					},	
-					{	-- Chicken of the Desert
-						["questID"] = 24933,
-						["qg"] = 38706,	-- Zeke Bootscuff
-						["sourceQuests"] = { 24932 },	-- Cutting Losses
+						["coord"] = { 52.2, 28.0 },
 					},
 					{	-- Clamlette Surprise
 						["questID"] = 13825,
 						["groups"] = {
 							recipe(64054),	-- Clamlette Magnifique
 						},
+						["u"] = 40,	
 						["qg"] = 40589,	-- Dirge Quikcleave
 						["description"] = "This quest is only available if you learned Artisan Cooking before 3.1.0",
 						["requireSkill"] = 185,	-- Cooking
-						["u"] = 40,	
 					},
 					{	-- Clamlette Surprise
 						["questID"] = 6610,
@@ -251,6 +569,7 @@ _.Zones =
 							recipe(64054),	-- Clamlette Magnifique
 						},
 						["qg"] = 40589,	-- Dirge Quikcleave
+						["coord"] = { 52.4, 29.0 },
 						["requireSkill"] = 185,	-- Cooking
 					},
 					{	-- Confront Yeh'kinya
@@ -262,36 +581,11 @@ _.Zones =
 						["u"] = 40,
 						["qg"] = 10460,	-- Prospector Ironboot
 					},
-					{	-- Cutting Losses
-						["questID"] = 24932,
-						["qg"] = 38706,	-- Zeke Bootscuff
-					},
 					{	-- Darkest Mojo
 						["questID"] = 25026,
 						["qg"] = 38927,	-- Mazoga
-						["sourceQuests"] = { 25025 },	-- Sang'thraze the Deflector
-					},
-					{	-- Dead Man's Chest
-						["questID"] = 25052,
-						["groups"] = {
-							i(56875),	-- Southsea Hood
-							i(56876),	-- Golly Gosh Leggings
-							i(56877),	-- Nose Thumber Gloves
-							i(56878),	-- Cleaned-Up Pauldrons
-						},
-						["qg"] = 38704,	-- Kelsey Steelspark
-						["races"] = ALLIANCE_ONLY,
-					},
-					{	-- Dead Man's Chest
-						["questID"] = 24927,
-						["groups"] = {
-							i(56879),	-- Southsea Hood
-							i(56880),	-- Dellot's Leggings
-							i(56881),	-- Branded Gloves
-							i(56882),	-- Cleaned-Up Pauldrons
-						},
-						["qg"] = 38703,	-- Megs Dreadshredder
-						["races"] = HORDE_ONLY,
+						["coord"] = { 42.2, 23.8 },
+						["sourceQuest"] = 25025,	-- Sang'thraze the Deflector
 					},
 					{	-- Define "Crazy"
 						["questID"] = 25060,
@@ -317,40 +611,17 @@ _.Zones =
 						},
 						["u"] = 40,
 						["qg"] = 7804,	-- Trenton Lighthammer
-						["sourceQuests"] = { 2771, 2773, 2772 },	-- A Good Head On Your Shoulders, The Mithril Kid, The World At Your Feet
+						["sourceQuests"] = {
+							2771,	-- A Good Head On Your Shoulders
+							2773,	-- The Mithril Kid
+							2772,	-- The World At Your Feet
+						},
 						["requireSkill"] = 164,	-- Blacksmithing
 					},
 					{	-- Easy Money
 						["questID"] = 27003,
 						["qg"] = 44833,	-- Adarrah
-					},
-					{	-- Filling Our Pockets
-						["questID"] = 25541,
-						["qg"] = 38703,	-- Megs Dreadshredder
-						["races"] = HORDE_ONLY,
-						["sourceQuests"] = { 
-							24927,	-- Dead Man's Chest
-							24949,	-- Booty Duty
-						},
-					},
-					{	-- Filling Our Pockets
-						["questID"] = 26887,
-						["qg"] = 38704,	-- Kelsey Steelspark
-						["races"] = ALLIANCE_ONLY,
-						["sourceQuests"] = {
-							25052,	-- Dead Man's Chest
-							25054,	-- Lootin' Plunder
-						},
-					},
-					{	-- Fragments of Language
-						["questID"] = 25020,
-						["qg"] = 38922,	-- Examiner Andoren Dawnrise
-						["races"] = HORDE_ONLY,
-					},
-					{	-- Fragments of Language
-						["questID"] = 25565,
-						["qg"] = 40109,	-- Prospector Gunstan
-						["races"] = ALLIANCE_ONLY,
+						["coord"] = { 30.4, 65.5 },
 					},
 					{	-- Frame of Atiesh
 						["itemID"] = 22727,
@@ -379,38 +650,19 @@ _.Zones =
 							i(56849),	-- Gus' First Aid Kit
 						},
 						["qg"] = 40580,	-- Gus Rustflutter
+						["coord"] = { 42.4, 24.2 },
+						["sourceQuest"] = 25521,	-- I'm With Scorpid
 					},
 					{	-- Gazer Tag
 						["questID"] = 24931,
 						["qg"] = 11811,	-- Narain Soothfancy
-					},
-					{	-- Get The Centipaarty Started
-						["questID"] = 24957,
-						["qg"] = 38849,	-- Megs Dreadshredder
-						["races"] = HORDE_ONLY,
-						["sourceQuests"] = { 24955 },	-- Un-Chartered
-					},
-					{	-- Going Off-Task
-						["questID"] = 25534,
-						["qg"] = 38703,	-- Megs Dreadshredder
-						["races"] = HORDE_ONLY,
-						["sourceQuests"] = {
-							24927,	-- Dead Man's Chest
-							24949,	-- Booty Duty
-						},
-					},
-					{	-- Going Off-Task
-						["questID"] = 26886,
-						["qg"] = 38704,	-- Kelsey Steelspark
-						["races"] = ALLIANCE_ONLY,
-						["sourceQuests"] = {
-							25052,	-- Dead Man's Chest
-							25054,	-- Lootin' Plunder
-						},
+						["coord"] = { 55.2, 60.2 },
+						["sourceQuest"] = 24932,	-- Cutting Losses
 					},
 					{	-- I'm With Scorpid
 						["questID"] = 25521,
 						["qg"] = 40580,	-- Gus Rustflutter
+						["coord"] = { 42.4, 24.2 },
 					},
 					{	-- Imperial Plate Belt
 						["questID"] = 7653,	-- Imperial Plate Belt
@@ -506,63 +758,34 @@ _.Zones =
 					{	-- Into Zul'Farrak
 						["questID"] = 25556,
 						["qg"] = 7804,	-- Trenton Lighthammer
-						["sourceQuests"] = { 25032 },	-- Secrets in the Oasis
+						["coord"] = { 42.4, 24.0 },
+						["sourceQuest"] = 25032,	-- Secrets in the Oasis
 						["isBreadcrumb"] = true,
-					},
-					{	-- Just Trying to Kill Some Bugs	-- awards "Bug Free" achievement criteria
-						["questID"] = 24953,
-						["groups"] = {
-							i(56851),	-- Pendant of the Gaping Chasm
-							i(56852),	-- Mostly-Amazing Gloves
-							i(56853),	-- Bootscuff Boots
-							i(56854),	-- Bootlegger Legplates
-						},
-						["qg"] = 38706,	-- Zeke Bootscuff
-						["sourceQuests"] = { 24951 },	-- A Great Idea
 					},
 					{	-- Land's End
 						["questID"] = 25061,
 						["qg"] = 11811,	-- Narain Soothfancy
 						["races"] = ALLIANCE_ONLY,
 					},
-					{	-- Laying Claim
-						["questID"] = 25019,
-						["qg"] = 38922,	-- Examiner Andoren Dawnrise
-						["races"] = HORDE_ONLY,
-					},
-					{	-- Laying Claim
-						["questID"] = 25559,
-						["qg"] = 40109,	-- Prospector Gunstan
-						["races"] = ALLIANCE_ONLY,
-					},
-					{	-- Lootin' Plunder
-						["questID"] = 25054,
-						["qg"] = 38704,	-- Kelsey Steelspark
-						["races"] = ALLIANCE_ONLY,
-					},
-					{	-- Maul 'Em With Kindness
-						["questID"] = 24963,
-						["qg"] = 38849,	-- Megs Dreadshredder
-						["races"] = HORDE_ONLY,
-						["sourceQuests"] = { 24957 },	-- Get The Centiparty Started
-					},
 					{	-- Momentum
 						["questID"] = 25121,
 						["qg"] = 38535,	-- Kelsey Steelspark
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuests"] = { 25050 },	-- Rocket Rescue
+						["sourceQuest"] = 25050,	-- Rocket Rescue
 						["isBreadcrumb"] = true,
 					},
 					{	-- Momentum
 						["questID"] = 24947,
 						["qg"] = 38534,	-- Megs Dreadshredder
 						["races"] = HORDE_ONLY,
-						["sourceQuests"] = { 24910 },	-- Rocket Rescue
+						["coord"] = { 51.2, 29.9 },
+						["sourceQuest"] = 24910,	-- Rocket Rescue
 						["isBreadcrumb"] = true,
 					},
 					{	-- Nice Hat...
 						["questID"] = 12513,
 						["qg"] = 28126,	-- Don Carlos
+						["coord"] = { 50.7, 27.5 },
 					},
 					{	-- Not Dead Yet! -- never went live
 						["questID"] = 38890,
@@ -571,7 +794,8 @@ _.Zones =
 					{	-- Old Hillsbrad
 						["questID"] = 10282,
 						["qg"] = 20130,	-- Andormu
-						["sourceQuests"] = { 10277 },	-- The Caverns of Time
+						["coord"] = { 41.5, 38.5 },
+						["sourceQuest"] = 10277,	-- The Caverns of Time
 					},
 					{	-- OOX-17/TN Distress Beacon
 						["itemID"] = 8623,
@@ -586,19 +810,7 @@ _.Zones =
 						["questID"] = 28881,
 						["qg"] = 39059,	-- Kelsey steelspark
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuests"] = { 25065 },	-- You Too, Brute?
-					},
-					{	-- Puddle Stomping
-						["questID"] = 24907,
-						["qg"] = 38534,	-- Megs Dreadshredder
-						["races"] = HORDE_ONLY,
-						["sourceQuests"] = { 28509 },	-- Warchief's Command: Tanaris!
-					},
-					{	-- Puddle Stomping
-						["questID"] = 25049,
-						["qg"] = 38535,	-- Kelsey Steelspark
-						["races"] = ALLIANCE_ONLY,
-						["sourceQuests"] = { 28507 },	-- Hero's Call: Tanaris!
+						["sourceQuest"] = 25065,	-- You Too, Brute?
 					},
 					{	-- Rescue OOX-17/TN!
 						["questID"] = 648,
@@ -607,14 +819,15 @@ _.Zones =
 							i(9644),	-- Thermotastic Egg Timer
 						},
 						["qg"] = 7784,	-- Homing Robot OOX-17/TN
-						["sourceQuests"] = { 351 },	-- Find OOX-17/TN!
+						["coord"] = { 59.7, 64.0 },
+						["sourceQuest"] = 351,	-- Find OOX-17/TN!
 					},
 					{	-- Return to Apothecary Zinge
 						["questID"] = 864,
 						["groups"] = {
 							un(2, i(11502)),	-- Loreskin Shoulders
-							un(2, i( 9635)),	-- Master Apothecary Cape
-							un(2, i( 9634)),	-- Skilled Handling Gloves
+							un(2, i(9635)),	-- Master Apothecary Cape
+							un(2, i(9634)),	-- Skilled Handling Gloves
 						},
 						["u"] = 40,
 						["qg"] = 7407,	-- Chief Engineer Bilgewhizzle
@@ -624,29 +837,10 @@ _.Zones =
 					{	-- Returning a Favor
 						["questID"] = 24905,
 						["qg"] = 38706,	-- Zeke Bootscuff
+						["coord"] = { 55.6, 60.8 },
 						["races"] = HORDE_ONLY,
-					},
-					{	-- Rocket Rescue
-						["questID"] = 25050,
-						["groups"] = {
-							i(56859),	-- Nasmira's Soup Stirrer
-							i(56860),	-- Dud Bomb
-							i(56861),	-- Salvaged Steamwheedle Helm
-							i(56862),	-- Failed Liferocket Prototype
-						},
-						["qg"] = 38535,	-- Kelsey Steelspark
-						["races"] = ALLIANCE_ONLY,
-					},
-					{	-- Rocket Rescue
-						["questID"] = 24910,
-						["groups"] = {
-							i(56863),	-- Nasmira's Soup Stirrer
-							i(56864),	-- Dud Bomb
-							i(56865),	-- Salvaged Steamwheedle Helm
-							i(56866),	-- Failed Liferocket Prototype
-						},
-						["qg"] = 38534,	-- Megs Dreadshredder
-						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 24953,	-- Just Trying to Kill Some Bugs
+						["isBreadcrumb"] = true,
 					},
 					{	-- Safety First
 						["questID"] = 1189,
@@ -658,21 +852,9 @@ _.Zones =
 						["qg"] = 4708,	-- Shreev
 						["sourceQuest"] = 1188,	-- Safety First
 					},
-					{	-- Sandscraper (awards "Advancing Our Interests" achievement criteria)
-						["questID"] = 25001,
-						["groups"] = {
-							i(56887),	-- Knuckle Down
-							i(56888),	-- Sandscraper Bracers
-							i(56889),	-- Business Finisher
-							i(56890),	-- Bilgewater Brooch
-							i(157014),	-- Dunemaul Skullcracker 
-						},
-						["qg"] = 38849,	-- Megs Dreadshredder
-						["races"] = HORDE_ONLY,
-						["sourceQuests"] = { 24963 },	-- Maul 'Em With Kindness
-					},
 					{	-- Sandscraper's Chest
 						["objectID"] = 202407,
+						["coord"] = { 41.8, 57.4 },
 						["groups"] = {
 							{	-- Sandscraper's Treasure
 								["questID"] = 25014,
@@ -683,7 +865,8 @@ _.Zones =
 					{	-- Sandsorrow Watch
 						["questID"] = 25091,
 						["qg"] = 39178,	-- Driz Plunkbow
-						["sourceQuests"] = { 25115 },	-- Blisterpaw Butchery
+						["coord"] = { 52.2, 28.0 },
+						["sourceQuest"] = 25115,	-- Blisterpaw Butchery
 					},
 					{	-- Sang'thraze the Deflector
 						["questID"] = 25025,
@@ -694,27 +877,18 @@ _.Zones =
 							i(157024),	-- Sandfury Hatchet 
 						},
 						["qg"] = 38927,	-- Mazoga
-						["sourceQuests"] = { 25021 },	-- Blood to Thrive
+						["coord"] = { 42.2, 23.8 },
+						["sourceQuest"] = 25021,	-- Blood to Thrive
 					},	
 					{	-- Scavengers Scavenged
 						["questID"] = 25111,
 						["qg"] = 39178,	-- Driz Plunkbow
-						["sourceQuests"] = { 25112 },	-- Butcherbot
+						["coord"] = { 52.2, 28.0 },
+						["sourceQuest"] = 25112,	-- Butcherbot
 					},
 					{	-- Scouting Report -- never went live
 						["questID"] = 38892,
 						["u"] = 1,
-					},
-					{	-- Seaside Salvage
-						["questID"] = 24906,
-						["qg"] = 38534,	-- Megs Dreadshredder
-						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 27447,	-- Tanaris is Calling
-					},
-					{	-- Seaside Salvage
-						["questID"] = 25048,
-						["qg"] = 38535,	-- Kelsey Steelspark
-						["races"] = ALLIANCE_ONLY,
 					},
 					{	-- Secrets in the Oasis
 						["questID"] = 25032,
@@ -725,7 +899,8 @@ _.Zones =
 							i(56843),	-- Lighthammer Pauldrons
 						},
 						["qg"] = 38927,	-- Mazoga
-						["sourceQuests"] = { 25026 },	-- Darkest Mojo
+						["coord"] = { 42.2, 23.8 },
+						["sourceQuest"] = 25026,	-- Darkest Mojo
 					},
 					{	-- Southsea Shakedown
 						["questID"] = 8366,
@@ -736,19 +911,16 @@ _.Zones =
 						["u"] = 40,
 						["qg"] = 7882,	-- Security Chief Bilgewhizzle
 					},
-					{	-- Terrapination
-						["questID"] = 25063,
-						["qg"] = 39059,	-- Kelsey Steelspark
-						["races"] = ALLIANCE_ONLY,
-					},
 					{	-- The Black Morass
 						["questID"] = 10296,
 						["qg"] = 20130,	-- Andormu
+						["coord"] = { 41.5, 38.5 },
 					},
 					{	-- The Caverns of Time
 						["questID"] = 10277,
 						["qg"] = 20130,	-- Andormu
-						["sourceQuests"] = { 10279 },	-- To The Master's Lair
+						["coord"] = { 41.5, 38.5 },
+						["sourceQuest"] = 10279,	-- To The Master's Lair
 					},
 					{	-- The Changing of Paths - Conqueror No More
 						["questID"] = 8766,
@@ -783,7 +955,9 @@ _.Zones =
 					{	-- The Crumbling Past
 						["questID"] = 25068,
 						["qg"] = 38922,	-- Examiner Andoren Dawnrise
+						["coord"] = { 33.2, 77.0 },
 						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 25017,	-- Ancient Obstacles
 					},
 					{	-- The Dunemaul Compound
 						["questID"] = 5863,
@@ -801,7 +975,7 @@ _.Zones =
 						},
 						["isBreadcrumb"] = true,	-- Exalted Intellect User Ring. Only 1 out of 3 Quests per reputation level can be done.
 						["qg"] = 15192,	-- Anachronos
-						["sourceQuests"] = { 8760 },	-- The Path of the Invoker
+						["sourceQuest"] = 8760,	-- The Path of the Invoker
 					},
 					{	-- The Mithril Kid
 						["questID"] = 2773,
@@ -826,7 +1000,7 @@ _.Zones =
 						--It still isn't a breadcrumb.  We use those only for actual breadcrumbs that you can no longer go back and get
 						--These types of quests are why Crieve says Quest Tracking isn't always suppose to be on
 						["qg"] = 15192,	-- Anachronos
-						["sourceQuests"] = { 8753 },	-- The Path of the Conquerer
+						["sourceQuest"] = 8753,	-- The Path of the Conquerer
 					},
 					{	-- The Path of the Conqueror
 						["questID"] = 8755,
@@ -838,7 +1012,7 @@ _.Zones =
 						--It still isn't a breadcrumb.  We use those only for actual breadcrumbs that you can no longer go back and get
 						--These types of quests are why Crieve says Quest Tracking isn't always suppose to be on
 						["qg"] = 15192,	-- Anachronos
-						["sourceQuests"] = { 8754 },	-- The Path of the Conquerer
+						["sourceQuest"] = 8754,	-- The Path of the Conquerer
 					},
 					{	-- The Path of the Conqueror
 						["questID"] = 8753,
@@ -850,7 +1024,7 @@ _.Zones =
 						--It still isn't a breadcrumb.  We use those only for actual breadcrumbs that you can no longer go back and get
 						--These types of quests are why Crieve says Quest Tracking isn't always suppose to be on
 						["qg"] = 15192,	-- Anachronos
-						["sourceQuests"] = { 8752 },	-- The Path of the Conquerer
+						["sourceQuest"] = 8752,	-- The Path of the Conquerer
 					},
 					{	-- The Path of the Conqueror
 						["questID"] = 8752,
@@ -873,7 +1047,7 @@ _.Zones =
 						--It still isn't a breadcrumb.  We use those only for actual breadcrumbs that you can no longer go back and get
 						--These types of quests are why Crieve says Quest Tracking isn't always suppose to be on
 						["qg"] = 15192,	-- Anachronos
-						["sourceQuests"] = { 8759 },	-- The Path of the Invoker
+						["sourceQuest"] = 8759,	-- The Path of the Invoker
 					},
 					{	-- The Path of the Invoker
 						["questID"] = 8759,
@@ -885,7 +1059,7 @@ _.Zones =
 						--It still isn't a breadcrumb.  We use those only for actual breadcrumbs that you can no longer go back and get
 						--These types of quests are why Crieve says Quest Tracking isn't always suppose to be on
 						["qg"] = 15192,	-- Anachronos
-						["sourceQuests"] = { 8758 },	-- The Path of the Invoker
+						["sourceQuest"] = 8758,	-- The Path of the Invoker
 					},
 					{	-- The Path of the Invoker
 						["questID"] = 8758,
@@ -897,7 +1071,7 @@ _.Zones =
 						--It still isn't a breadcrumb.  We use those only for actual breadcrumbs that you can no longer go back and get
 						--These types of quests are why Crieve says Quest Tracking isn't always suppose to be on
 						["qg"] = 15192,	-- Anachronos
-						["sourceQuests"] = { 8757 },	-- The Path of the Invoker
+						["sourceQuest"] = 8757,	-- The Path of the Invoker
 					},
 					{	-- The Path of the Invoker
 						["questID"] = 8757,
@@ -931,7 +1105,7 @@ _.Zones =
 						--It still isn't a breadcrumb.  We use those only for actual breadcrumbs that you can no longer go back and get
 						--These types of quests are why Crieve says Quest Tracking isn't always suppose to be on
 						["qg"] = 15192,	-- Anachronos
-						["sourceQuests"] = { 8747 },	-- The Path of the Protector
+						["sourceQuest"] = 8747,	-- The Path of the Protector
 					},
 					{	-- The Path of the Protector
 						["questID"] = 8749,
@@ -943,7 +1117,7 @@ _.Zones =
 						--It still isn't a breadcrumb.  We use those only for actual breadcrumbs that you can no longer go back and get
 						--These types of quests are why Crieve says Quest Tracking isn't always suppose to be on
 						["qg"] = 15192,	-- Anachronos
-						["sourceQuests"] = { 8748 },	-- The Path of the Protector
+						["sourceQuest"] = 8748,	-- The Path of the Protector
 					},
 					{	-- The Path of the Protector
 						["questID"] = 8750,
@@ -955,7 +1129,7 @@ _.Zones =
 						--It still isn't a breadcrumb.  We use those only for actual breadcrumbs that you can no longer go back and get
 						--These types of quests are why Crieve says Quest Tracking isn't always suppose to be on
 						["qg"] = 15192,	-- Anachronos
-						["sourceQuests"] = { 8749 },	-- The Path of the Protector
+						["sourceQuest"] = 8749,	-- The Path of the Protector
 					},
 					{	-- The Protector of Kalimdor
 						["questID"] = 8751,
@@ -967,7 +1141,7 @@ _.Zones =
 						--It still isn't a breadcrumb.  We use those only for actual breadcrumbs that you can no longer go back and get
 						--These types of quests are why Crieve says Quest Tracking isn't always suppose to be on
 						["qg"] = 15192,	-- Anachronos
-						["sourceQuests"] = { 8750 },	-- The Path of the Protector
+						["sourceQuest"] = 8750,	-- The Path of the Protector
 					},
 					{	-- The Qiraji Conqueror
 						["questID"] = 8756,
@@ -976,27 +1150,19 @@ _.Zones =
 						--Note!! Despite this being a choice only quest and only displays if you are obtaining that specific ring
 						--It still isn't a breadcrumb.  We use those only for actual breadcrumbs that you can no longer go back and get
 						--These types of quests are why Crieve says Quest Tracking isn't always suppose to be on
-						["sourceQuests"] = { 8755 },	-- The Path of the Conqueror
-					},
-					{	-- The Secrets of Uldum
-						["questID"] = 25566,
-						["qg"] = 40109,	-- Prospector Gunstan
-						["races"] = ALLIANCE_ONLY,
-					},
-					{	-- The Secrets of Uldum
-						["questID"] = 25069,
-						["qg"] = 38922,	-- Examiner Andoren Dawnrise
-						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 8755,	-- The Path of the Conqueror
 					},
 					{	-- The Thunderdrome!
 						["questID"] = 26896,
 						["qg"] = 44374,	-- Sherm
+						["coord"] = { 33.2, 76.8 },
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
 					},
 					{	-- The Thunderdrome!
 						["questID"] = 26895,
 						["qg"] = 38578,	-- Flinn
+						["coord"] = { 40.3, 77.2 },
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
 					},
@@ -1005,7 +1171,8 @@ _.Zones =
 						["qgs"] = {
 							19935,	-- Soridormi
 							19936,	-- Arazmodu
-						}
+						},
+						["description"] = "Can be found walking around the Caverns of Time.",
 					},
 					{	-- The World At Your Feet
 						["questID"] = 2772,
@@ -1020,61 +1187,11 @@ _.Zones =
 						["sourceQuest"] = 2764,	-- Galvin's Finest Pupil
 						["requireSkill"] = 164,	-- Blacksmithing
 					},
-					{	-- Thunderdrome: Grudge Match!
-						["questID"] = 25513,
-						["groups"] = {
-							i(56891),	-- Thunderdrome Ring
-							i(56892),	-- Kelsey's Necklace
-							i(56893),	-- Dreadshredder Cloak
-						},
-						["qg"] = 39034,	-- Dr. Dealwell
-						["races"] = ALLIANCE_ONLY,
-						["sourceQuests"] = { 25065 },	-- You Too, Brute?
-					},
-					{	-- Thunderdrome: Grudge Match!
-						["questID"] = 25591,
-						["groups"] = {
-							i(56894),	-- Thunderdrome Ring
-							i(56895),	-- Kelsey's Necklace
-							i(56896),	-- Dreadshredder Cloak
-						},
-						["qg"] = 39034,	-- Dr. Dealwell
-						["races"] = HORDE_ONLY,
-						["sourceQuests"] = { 25001 },	-- Sandscraper
-					},
-					{	-- Thunderdrome: Sarinexx!
-						["questID"] = 25095,
-						["qg"] = 39034,	-- Dr. Dealwell
-					},
-					{	-- Thunderdrome: The Ginormus!
-						["questID"] = 25067,
-						["qg"] = 39034,	-- Dr. Dealwell
-					},
-					{	-- Thunderdrome: Zumonga!
-						["questID"] = 25094,
-						["qg"] = 39034,	-- Dr. Dealwell
-					},
-					{	-- To The Ground!
-						["questID"] = 25053,
-						["qg"] = 38704,	-- Kelsey Steelspark
-						["races"] = ALLIANCE_ONLY,
-						["sourceQuests"] = {
-							25052,	-- Dead Man's Chest
-							25054,	-- Lootin' Plunder
-						},
-					},
-					{	-- To The Ground!
-						["questID"] = 24928,
-						["qg"] = 38703,	-- Megs Dreadshredder
-						["races"] = HORDE_ONLY,
-						["sourceQuests"] = {
-							24927,	-- Dead Man's Chest
-							24949,	-- Booty Duty
-						},
-					},
 					{	-- To The Master's Lair
 						["questID"] = 10279,
-						["qg"] = 20142,	-- 
+						["qg"] = 20142,	-- Steward of Time
+						["coord"] = { 55.3, 27.7 },
+						["isBreadcrumb"] = true,
 					},
 					{	-- Tooga's Quest
 						["questID"] = 1560,
@@ -1091,34 +1208,21 @@ _.Zones =
 							38578,	-- Flinn
 							44374,	-- Sherm
 						},
+						["coords"] = {
+							{ 33.2, 76.8 },
+							{ 40.2, 77.0 },
+						},
 						["isBreadcrumb"] = true,
-					},
-					{	-- Un-Chartered
-						["questID"] = 24955,
-						["qg"] = 38849,	-- Megs Dreadshredder
-						["races"] = HORDE_ONLY,
-						["sourceQuests"] = { 24905 },	-- Returning a Favor
 					},
 					{	-- War at Sea
 						["questID"] = 9268,
 						["qg"] = 16417,	-- Rumsen Fizzlebrack
+						["coord"] = { 50.4, 27.2 },
 						["repeatable"] = true,
 						["description"] = "Only available with reputations of Hated or Unfriendly with Gadgetzan",
 					},
 					{	-- What We Came For
 						["questID"] = 25062,
-						["qg"] = 39059,	-- Kelsey Steelspark
-						["races"] = ALLIANCE_ONLY,
-					},
-					{	-- You Too, Brute?
-						["questID"] = 25065,
-						["groups"] = {
-							i(56883),	-- Meatface Pummeler
-							i(56884),	-- "Smart Bracers"
-							i(56885),	-- Dagger of the Ides
-							i(56886),	-- Gnomeregan Medallion of Merit
-							i(157015),	-- Meatface's Tenderizer 
-						},
 						["qg"] = 39059,	-- Kelsey Steelspark
 						["races"] = ALLIANCE_ONLY,
 					},
@@ -1177,7 +1281,7 @@ _.Zones =
 							19935,	-- Soridormi
 							19936,	-- Arazmodu
 						},
-						["sourceQuests"] = { 10470 },	-- Champion's Oath
+						["sourceQuest"] = 10470,	-- Champion's Oath
 					},
 					{	-- Champion's Oath
 						["questID"] = 10470,
@@ -1192,7 +1296,7 @@ _.Zones =
 							19935,	-- Soridormi
 							19936,	-- Arazmodu
 						},
-						["sourceQuests"] = { 10466 },	-- Champion's Vow
+						["sourceQuest"] = 10466,	-- Champion's Vow
 					},
 					{	-- Champion's Pledge
 						["questID"] = 10462,
@@ -1233,7 +1337,7 @@ _.Zones =
 							19935,	-- Soridormi
 							19936,	-- Arazmodu
 						},
-						["sourceQuests"] = { 10471 },	-- Defender's Oath
+						["sourceQuest"] = 10471,	-- Defender's Oath
 					},
 					{	-- Defender's Oath
 						["questID"] = 10471,
@@ -1248,7 +1352,7 @@ _.Zones =
 							19935,	-- Soridormi
 							19936,	-- Arazmodu
 						},
-						["sourceQuests"] = { 10467 },	-- Defender's Vow
+						["sourceQuest"] = 10467,	-- Defender's Vow
 					},
 					{	-- Defender's Pledge
 						["questID"] = 10460,
@@ -1286,7 +1390,7 @@ _.Zones =
 						--It still isn't a breadcrumb.  We use those only for actual breadcrumbs that you can no longer go back and get
 						--These types of quests are why Crieve says Quest Tracking isn't always suppose to be on
 						["qg"] = 19935,	-- Soridormi
-						["sourceQuests"] = { 10469 },	-- Restorer's Oath
+						["sourceQuest"] = 10469,	-- Restorer's Oath
 					},
 					{	-- Restorer's Oath
 						["questID"] = 10469,
@@ -1298,7 +1402,7 @@ _.Zones =
 						--It still isn't a breadcrumb.  We use those only for actual breadcrumbs that you can no longer go back and get
 						--These types of quests are why Crieve says Quest Tracking isn't always suppose to be on
 						["qg"] = 19935,	-- Soridormi
-						["sourceQuests"] = { 10465 },	-- Restorer's Vow
+						["sourceQuest"] = 10465,	-- Restorer's Vow
 					},
 					{	-- Restorer's Pledge
 						["questID"] = 10461,
@@ -1336,7 +1440,7 @@ _.Zones =
 						--It still isn't a breadcrumb.  We use those only for actual breadcrumbs that you can no longer go back and get
 						--These types of quests are why Crieve says Quest Tracking isn't always suppose to be on
 						["qg"] = 19935,	-- Soridormi
-						["sourceQuests"] = { 10468 },	-- Sage's Oath
+						["sourceQuest"] = 10468,	-- Sage's Oath
 					},
 					{	-- Sage's Oath
 						["questID"] = 10468,
@@ -1351,7 +1455,7 @@ _.Zones =
 							19935,	-- Soridormi
 							19936,	-- Arazmodu
 						},
-						["sourceQuests"] = { 10464 },	-- Sage's Vow
+						["sourceQuest"] = 10464,	-- Sage's Vow
 					},
 					{	-- Sage's Pledge
 						["questID"] = 10463,
