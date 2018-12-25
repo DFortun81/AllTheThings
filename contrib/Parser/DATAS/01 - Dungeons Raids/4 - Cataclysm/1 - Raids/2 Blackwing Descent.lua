@@ -397,7 +397,10 @@ _.Instances =
 				["isRaid"] = true,
 				["sharedLockout"] = 1,
 				["lvl"] = 85,
-				["mapID"] = 285
+				["maps"] = {
+					285, -- Blackwing Descent (The Broken Hall)
+					286, -- Blackwing Descent (Vault of the Shadowflame)
+				},
 			}),
 		},					
 		["tierID"] = 4
