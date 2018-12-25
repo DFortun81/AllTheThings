@@ -427,6 +427,7 @@ pet(136903, 1723); 	-- Nightmare Whelpling
 pet(68841, 303);	-- Nightsaber Cub
 pet(118595, 1432);	-- Nightshade Sproutling
 pet(129878, 1715);	-- Nightwatch Swooper
+pet(166528, 2563);	-- Nightwreathed Watcher
 pet(141532, 1943);	-- Noblegarden Bunny
 pet(129826, 1727); 	-- Nursery Spider
 pet(44723, 198);	-- Nurtured Penguin Egg (Pengu)
