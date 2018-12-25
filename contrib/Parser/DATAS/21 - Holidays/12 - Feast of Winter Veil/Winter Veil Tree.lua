@@ -16,21 +16,30 @@ _.Holidays = bubbleDown({["u"] = 29},
 								un(29, dr(5.0, i(116451))),	-- Warm Blue Woolen Socks
 								un(29, dr(5.0, i(116450))),	-- Warm Green Woolen Socks
 								un(29, dr(5.0, i(116448))),	-- Warm Red Woolen Socks
+								un(29, i(128650)),	-- "Merry Munchkin" Costume
+								un(29, i(21254)),	-- Winter Veil Cookie
 							}),
 						},
 						["lvl"] = 1,
 					}),
-					q(8803),	-- A Festive Gift
+					q(8803,	{	-- A Festive Gift
+						["groups"] = {
+							i(21363, {	-- Festive Gift
+								un(29, i(21328)),	-- Wand of Holiday Cheer
+							}),
+						},
+						["lvl"] = 10,
+					}),
 					q(8768, { 	-- A Gaily Wrapped Present
-						i(21310, { -- Gaily Wrapped Present
-							["groups"] = {
+						["groups"] = {
+							i(21310, { -- Gaily Wrapped Present
 								un(29, i(21301)), -- Green Helper Box
 								un(29, i(21308)), -- Jingling Bell
 								un(29, i(21305)), -- Red Helper Box
 								un(29, i(21309)), -- Snowman Kit
-							},
-							["lvl"] = 20,
-						}),
+							}),
+						},
+						["lvl"] = 20,
 					}),
 					q(50420, { 	-- A Gently Shaken Gift
 						["groups"] = {
@@ -40,6 +49,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 									un(29, i(116689)), -- Pineapple Lounge Cushion
 									un(29, i(116690)), -- Safarai Lounge Cushion
 									un(29, i(116691)), -- Zhevra Lounge Cusion
+									un(29, i(128768)), -- Candy Cane
 								},
 								["description"] = "Gift from 2014 and was given to anyone who wasn't a spell caster.",
 								["questID"] = 8767,
@@ -50,6 +60,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 									un(29, i(116689)), -- Pineapple Lounge Cushion
 									un(29, i(116690)), -- Safarai Lounge Cushion
 									un(29, i(116691)), -- Zhevra Lounge Cusion
+									un(29, i(128768)), -- Candy Cane
 								},
 								["description"] = "Gift from 2014 and was given to spell casters.",
 								["questID"] = 8788,
@@ -61,6 +72,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 									un(29, i(128776)), -- Red Wooden Sled
 									un(29, i(116690)), -- Safarai Lounge Cushion
 									un(29, i(116691)), -- Zhevra Lounge Cusion
+									un(29, i(128768)), -- Candy Cane
 								},
 								["description"] = "Gift from 2015.",
 								
@@ -74,6 +86,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 									un(29, i(128776)), -- Red Wooden Sled
 									un(29, i(116690)), -- Safarai Lounge Cushion
 									un(29, i(116691)), -- Zhevra Lounge Cusion
+									un(29, i(128768)), -- Candy Cane
 								},
 								["description"] = "Gift from 2016.",
 								
@@ -83,6 +96,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 								["groups"] = {
 									un(29, h(i(151344))), -- Hearthstation [Horde]
 									un(29, a(i(151343))), -- Hearthstation [Alliance]
+									un(29, i(128768)), -- Candy Cane
 								},
 								["description"] = "Gift from 2017.  You will receive only one factions Hearthstation.  In order to obtain the opposite factions, you will need to have a character on that side open this gift.",
 								["questID"] = 43364,
@@ -96,6 +110,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 									{	-- Greatfather Winter's Hearthstone
 										["itemID"] = 162973,	-- Greatfather Winter's Hearthstone
 									},
+									un(29, i(128768)), -- Candy Cane
 								},
 							},
 						},
@@ -109,6 +124,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 								i(17724), -- Pattern: Green Holiday Shirt
 								i(17706), -- Plans: Edge of Winter
 								i(17720), -- Schematic: Snowmaster 9000
+								i(21325), -- Mechanical Greench
 								i(21213, {	-- Preserved Holly
 									ach(1282),	-- Fa-la-la-la-Ogri'la
 								}),

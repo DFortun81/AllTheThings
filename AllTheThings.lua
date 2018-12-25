@@ -1357,7 +1357,7 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 				
 				-- Insert into the display.
 				local o = { prefix = indent, left = group.text or RETRIEVING_DATA, right = right };
-				if o.left == RETRIEVING_DATA then o.working = true; end
+				if o.left == RETRIEVING_DATA or o.left:find("%[]") then o.working = true; end
 				if group.u then o.left = o.left .. " |T" .. L("UNOBTAINABLE_ITEM_TEXTURES")[L("UNOBTAINABLE_ITEM_REASONS")[group.u][1]] .. ":0|t"; end
 				if group.icon then o.prefix = o.prefix .. "|T" .. group.icon .. ":0|t "; end
 				tinsert(entries, o);
@@ -1764,7 +1764,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		if #info > 0 then group.info = info; end
 		
 		-- Cache the result for a while depending on if there is more work to be done.
-		cache[2] = (working and 0.25) or 100000000;
+		cache[2] = (working and 0.01) or 100000000;
 		cache[3] = group;
 		return group;
 	end
