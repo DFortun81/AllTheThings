@@ -163,7 +163,7 @@ _.Zones =
 								["qg"] = 38703,	-- Megs Dreadshredder
 								["coord"] = { 71.8, 45.4 },
 								["races"] = HORDE_ONLY,
-								["sourceQuests"] = 24949,	-- Booty Duty -- verify this. is it really "Booty Duty" or is it "To The Ground!"?
+								["sourceQuests"] = 24949,	-- Booty Duty
 							},
 							{	-- Going Off-Task
 								["questID"] = 25534,
@@ -196,7 +196,7 @@ _.Zones =
 								["qg"] = 38703,	-- Megs Dreadshredder
 								["coord"] = { 71.8, 45.4 },
 								["races"] = HORDE_ONLY,
-								["sourceQuests"] = 24950,	-- Captain Dreadbeard (horde)
+								["sourceQuests"] = 24950,	-- Captain Dreadbeard
 							},
 							{	-- Cutting Losses
 								["questID"] = 24932,
@@ -292,8 +292,6 @@ _.Zones =
 								["qg"] = 39034,	-- Dr. Dealwell
 								["coord"] = { 51.7, 28.0 },
 								["sourceQuests"] = {
-									25001,	-- Sandscraper
-									25065,	-- You Too, Brute?
 									26895,	-- The Thunderdrome!
 									26896,	-- The Thunderdrome!
 								},
@@ -320,7 +318,10 @@ _.Zones =
 								["qg"] = 39034,	-- Dr. Dealwell
 								["coord"] = { 51.7, 28.0 },
 								["races"] = ALLIANCE_ONLY,
-								["sourceQuests"] = 25065,	-- You Too, Brute?
+								["sourceQuests"] = {
+									25095,	-- Thunderdrome: Sarinexx!
+									25065,	-- You Too, Brute?
+								},
 							},
 							{	-- Thunderdrome: Grudge Match!
 								["questID"] = 25591,
@@ -332,7 +333,10 @@ _.Zones =
 								["qg"] = 39034,	-- Dr. Dealwell
 								["coord"] = { 51.7, 28.0 },
 								["races"] = HORDE_ONLY,
-								["sourceQuest"] = 25095,	-- Thunderdrome: Sarinexx!
+								["sourceQuests"] = {
+									25001,	-- Sandscraper
+									25095,	-- Thunderdrome: Sarinexx!
+								},
 							},
 						}),
 						crit(5, {	-- The Titans
