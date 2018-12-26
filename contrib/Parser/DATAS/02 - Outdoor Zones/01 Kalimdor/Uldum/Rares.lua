@@ -12,7 +12,7 @@ _.Zones =
 						["coords"] = {
 							{ 45.0, 42.5 },
 						},
-						["g"] = {
+						["groups"] = {
 							{	-- Armagedillo's Tail
 								["itemID"] = 67243,	-- Armagedillo's Tail
 							},
@@ -26,12 +26,63 @@ _.Zones =
 							{ 66.6, 68.2 },
 							{ 70.8, 74.2 },
 						},
-						["g"] = {
+						["groups"] = {
 							{	-- Tol'Vir Hereditary Girdle
 								["itemID"] = 67242,	-- Tol'Vir Hereditary Girdle
 							},
 						},
 					},
+					{	-- Madexx - Black
+						["npcID"] = 51403,
+						["coords"] = {
+							{ 47.8, 18.2 },
+							{ 51.0, 20.4 },
+							{ 53.4, 19.0 },
+						},
+					}, 
+					{	-- Madexx - Blue
+						["npcID"] = 51404,
+						["coords"] = {
+							{ 47.6, 18.8 },
+							{ 44.8, 10.0 },
+							{ 44.8, 21.6 },
+							{ 50.6, 23.8 },
+							{ 51.0, 19.6 },
+							{ 53.2, 19.8 },
+						},
+					},
+					{	-- Madexx - Brown
+						["npcID"] = 50154,
+						["coords"] = {
+							{ 44.8, 10.0 },
+							{ 44.8, 22.2 },
+							{ 47.6, 18.6 },
+							{ 50.8, 20.2 },
+							{ 50.0, 23.8 },
+							{ 53.8, 19.4 },
+						},
+					}, 
+					{	-- Madexx - Green
+						["npcID"] = 51402,
+						["coords"] = {
+							{ 44.8, 10.0 },
+							{ 44.8, 22.2 },
+							{ 47.6, 18.6 },
+							{ 50.8, 20.2 },
+							{ 50.0, 23.8 },
+							{ 53.8, 19.4 },
+						},
+					}, 
+					{	-- Madexx - Red
+						["npcID"] = 51401,
+						["coords"] = {
+							{ 44.8, 10.0 },
+							{ 44.8, 22.2 },
+							{ 47.6, 18.6 },
+							{ 50.8, 20.2 },
+							{ 50.0, 23.8 },
+						},
+					}, 
 					{	-- Mysterious Camel Figurine
 						["npcID"] = 50409,	-- Mysterious Camel Figurine
 						["description"] = "If you're lucky enough to find the right Mysterious Camel Figurine, clicking on it will teleport you to the Feralas Steam Pools, where you can defeat Dormus to get the rare Grey Riding Camel.",
@@ -57,7 +108,7 @@ _.Zones =
 							{ 72.02, 43.88 },
 							{ 73.44, 73.61 },
 						},
-						["g"] = {
+						["groups"] = {
 							{	-- Reins of the Grey Riding Camel
 								["itemID"] = 63046,	-- Reins of the Grey Riding Camel
 								["crs"] = {
@@ -66,11 +117,6 @@ _.Zones =
 							},
 						},
 					},
-	--				n(51403, { 		-- Madexx - Black -- tameable			}), 
-	--				n(51404, { 		-- Madexx - Blue -- tameable			}),
-	--				n(50154, { 		-- Madexx - Brown -- tameable			}), 
-	--				n(51402, { 		-- Madexx - Green -- tameable			}), 
-	--				n(51401, { 		-- Madexx - Red -- tameable			}), 
 				}),
 			},
 		}),

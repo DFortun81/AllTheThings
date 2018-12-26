@@ -9,7 +9,7 @@ _.Zones =
 				n(-2,  {	-- Vendors
 					{	-- Blacksmith Abasi <Ramkahen Quartermaster>
 						["npcID"] = 48617,	-- Blacksmith Abasi <Ramkahen Quartermaster>
-						["g"] = {
+						["groups"] = {
 							{	-- Reins of the Brown Riding Camel Mount
 								["itemID"] = 63044,	-- Reins of the Brown Riding Camel Mount
 							},
@@ -56,6 +56,7 @@ _.Zones =
 								["itemID"] = 62447,	-- Gift of Nadun
 							}
 						},
+						["coord"] = { 54.0, 33.2 },
 					},
 				}),
 			},

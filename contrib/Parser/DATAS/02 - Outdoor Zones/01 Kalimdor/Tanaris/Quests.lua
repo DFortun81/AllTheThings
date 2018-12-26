@@ -627,6 +627,12 @@ _.Zones =
 						["questID"] = 27003,
 						["qg"] = 44833,	-- Adarrah
 						["coord"] = { 30.4, 65.5 },
+						["sourceQuests"] = {
+							28558,	-- Hero's Call: Uldum!
+							28295,	-- Meetup with the Caravan
+							28296,	-- Meetup with the Caravan
+							28557,	-- Warchief's COmmand: Uldum!
+						},
 					},
 					{	-- Frame of Atiesh
 						["itemID"] = 22727,
