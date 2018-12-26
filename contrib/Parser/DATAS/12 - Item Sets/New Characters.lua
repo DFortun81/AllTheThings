@@ -130,5 +130,9 @@ _.GearSets =
 			}),
 		},
 		["description"] = "You obtain these sets by creating an allied race with the specific class.  Contains Death Knight and Demon Hunter starting gear as well.",
+		["maps"] = {
+			652,	-- Thunder Totem (Highmountain Taurens)
+			1186,	-- Blackrock Depths (Dark Iron Dwarves)
+		},
 	}),
 };

@@ -2562,9 +2562,6 @@ _.Zones =
 			},
 			["lvl"] = 98,	
 			["achievementID"] = 10667,
-			["maps"] = {
-				652, -- Thunder Totem (Allied Race)
-			},
 			["description"] = "|cff66ccffHighmountain is a zone that dominates the northern horizon of the Broken Isles with its jagged peak. It is one of the last great frontiers of the isles, named in honor of Huln Highmountain for his bravery in the War of the Ancients. Following the War against the Iron Horde, the Burning Legion began to invade Azeroth through the Tomb of Sargeras. The tauren of Highmountain, descended from Huln Highmountain and other tauren who had fought in the War of the Ancients, had been living in peace with the local drogbar for generations, but when the Legion invaded, the drogbar stole the taurens' sacred artifact, the [Hammer of Khaz'goroth]. The Highmountain are now at risk of being taken over by the drogbar and their king Dargrul the Underking, ruling his kin from the former lair of the black aspect Neltharion.|r",			
 		}),	
 	}),

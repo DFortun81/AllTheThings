@@ -798,7 +798,6 @@ _.Instances =
 				["mapID"] = 242,
 				["maps"] = {
 					243,
-					1186, -- Blackrock Depths (Allied Race)
 				},
 			}),
 		},					
