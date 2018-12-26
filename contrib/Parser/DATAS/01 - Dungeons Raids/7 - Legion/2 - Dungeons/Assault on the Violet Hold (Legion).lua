@@ -21,6 +21,7 @@ _.Instances =
 								i(134454),	-- Spaulders of Unstable Experiments
 								i(137434),	-- Split-Vein Bracers
 								i(137439),	-- Tiny Oozeling in a Jar
+								i(137465),	-- Festerface's Rotted Gut
 							})),
 							cr(101951, e(1694, {	-- Shivermaw
 								i(134493),	-- Band of Crystalline Bone
@@ -30,6 +31,8 @@ _.Instances =
 								i(134411),	-- Iceblood Shroud
 								i(137440),	-- Shivermaw's Jawbone
 								i(134476),	-- Wyrmwing Kilt
+								i(137468),	-- Bonecrushing Hail
+								i(137466),	-- Frostwyrm Heart
 							})),
 							cr(102431, e(1702, {	-- Blood-Princess Thal'ena
 								i(137461),	-- Breathless Choker
@@ -39,6 +42,8 @@ _.Instances =
 								i(134422),	-- Satin Throatclutchers
 								i(134404),	-- Stole of Malefic Repose
 								i(134516),	-- Tassets of Ravenous Euphoria
+								i(137471),	-- Drop of True Blood
+								i(137478),	-- Reflection of Sorrow
 							})),
 							cr(101950, e(1686, {	-- Mindflayer Kaahrj
 								i(134498),	-- Chain of a Hundred Maws
@@ -48,6 +53,7 @@ _.Instances =
 								i(137433),	-- Obelisk of the Void
 								i(137432),	-- Ring of Mind-Shielding
 								i(134439),	-- Tunic of the Underworld
+								i(137464),	-- Tendril of Darkness
 							})),
 							cr(101976, e(1688, {	-- Millificent Manastorm
 								i(137442),	-- Compact Trifold Wristbands
@@ -60,6 +66,8 @@ _.Instances =
 								i(137441),	-- Millificent's Turboview Specs
 								i(137443),	-- Mithril Melon Vault
 								i(137444),	-- Plasma-Drilled Steel Toes
+								i(137470),	-- Rocket Chicken Rocket Fuel
+								i(137469),	-- Thorium-Plated Egg
 							})),
 							cr(102246, e(1696, {	-- Anub'esset
 								i(137424),	-- Burrow-Dweller Leggings
@@ -72,6 +80,7 @@ _.Instances =
 								i(134418),	-- Scarab-Caller Grips
 								i(134489),	-- Seal of Malicious Deceit
 								i(137429),	-- Serrated Mandible Grips
+								i(137463),	-- Fealty of Nerub
 							})),
 							cr(102387, e(1697, {	-- Sael'orn
 								ach(10798),	-- Assault on Violet Hold
@@ -96,6 +105,8 @@ _.Instances =
 								i(137448),	-- Toxin-Stitched Footwraps
 								i(137451),	-- Vision of the Spider Queen
 								i(137449),	-- Wicked Broodmother's Chestguard
+								i(137474),	-- Loyalty of the Matriarch
+								i(137473),	-- Phase Spider Mandible
 							})),
 							cr(102446, e(1711, {	-- Fel Lord Betrug
 								ach(10798),	-- Assault on Violet Hold
@@ -120,6 +131,8 @@ _.Instances =
 								i(134407),	-- Rugged Marauder Cape
 								i(137455),	-- Spaulders of Tense Sinew
 								i(134446),	-- Vigilant Bondbreaker Headdress
+								i(137472),	-- Betrug's Vigor
+								i(137476),	-- Brand of Tyranny
 							})),
 						},
 					}),
@@ -137,6 +150,7 @@ _.Instances =
 								i(134454),	-- Spaulders of Unstable Experiments
 								i(137434),	-- Split-Vein Bracers
 								i(137439),	-- Tiny Oozeling in a Jar
+								i(137465),	-- Festerface's Rotted Gut
 							})),
 							cr(101951, e(1694, {	-- Shivermaw
 								i(134493),	-- Band of Crystalline Bone
@@ -146,6 +160,8 @@ _.Instances =
 								i(134411),	-- Iceblood Shroud
 								i(137440),	-- Shivermaw's Jawbone
 								i(134476),	-- Wyrmwing Kilt
+								i(137468),	-- Bonecrushing Hail
+								i(137466),	-- Frostwyrm Heart
 							})),
 							cr(102431, e(1702, {	-- Blood-Princess Thal'ena
 								i(137461),	-- Breathless Choker
@@ -155,6 +171,8 @@ _.Instances =
 								i(134422),	-- Satin Throatclutchers
 								i(134404),	-- Stole of Malefic Repose
 								i(134516),	-- Tassets of Ravenous Euphoria
+								i(137471),	-- Drop of True Blood
+								i(137478),	-- Reflection of Sorrow
 							})),
 							cr(101950, e(1686, {	-- Mindflayer Kaahrj
 								i(134498),	-- Chain of a Hundred Maws
@@ -164,6 +182,7 @@ _.Instances =
 								i(137433),	-- Obelisk of the Void
 								i(137432),	-- Ring of Mind-Shielding
 								i(134439),	-- Tunic of the Underworld
+								i(137464),	-- Tendril of Darkness
 							})),
 							cr(101976, e(1688, {	-- Millificent Manastorm
 								i(137442),	-- Compact Trifold Wristbands
@@ -176,6 +195,8 @@ _.Instances =
 								i(137441),	-- Millificent's Turboview Specs
 								i(137443),	-- Mithril Melon Vault
 								i(137444),	-- Plasma-Drilled Steel Toes
+								i(137470),	-- Rocket Chicken Rocket Fuel
+								i(137469),	-- Thorium-Plated Egg
 							})),
 							cr(102246, e(1696, {	-- Anub'esset
 								i(137424),	-- Burrow-Dweller Leggings
@@ -188,6 +209,7 @@ _.Instances =
 								i(134418),	-- Scarab-Caller Grips
 								i(134489),	-- Seal of Malicious Deceit
 								i(137429),	-- Serrated Mandible Grips
+								i(137463),	-- Fealty of Nerub
 							})),
 							cr(102387, e(1697, {	-- Sael'orn
 								ach(10799),	-- Heroic: Assault on Violet Hold
@@ -212,6 +234,8 @@ _.Instances =
 								i(137448),	-- Toxin-Stitched Footwraps
 								i(137451),	-- Vision of the Spider Queen
 								i(137449),	-- Wicked Broodmother's Chestguard
+								i(137474),	-- Loyalty of the Matriarch
+								i(137473),	-- Phase Spider Mandible
 							})),
 							cr(102446, e(1711, {	-- Fel Lord Betrug
 								ach(10799),	-- Heroic: Assault on Violet Hold
@@ -236,6 +260,8 @@ _.Instances =
 								i(134407),	-- Rugged Marauder Cape
 								i(137455),	-- Spaulders of Tense Sinew
 								i(134446),	-- Vigilant Bondbreaker Headdress
+								i(137472),	-- Betrug's Vigor
+								i(137476),	-- Brand of Tyranny
 							})),
 						},
 					}),
@@ -254,6 +280,7 @@ _.Instances =
 								i(134454),	-- Spaulders of Unstable Experiments
 								i(137434),	-- Split-Vein Bracers
 								i(137439),	-- Tiny Oozeling in a Jar
+								i(137465),	-- Festerface's Rotted Gut
 							})),
 							cr(101951, e(1694, {	-- Shivermaw
 								i(134493),	-- Band of Crystalline Bone
@@ -263,6 +290,8 @@ _.Instances =
 								i(134411),	-- Iceblood Shroud
 								i(137440),	-- Shivermaw's Jawbone
 								i(134476),	-- Wyrmwing Kilt
+								i(137468),	-- Bonecrushing Hail
+								i(137466),	-- Frostwyrm Heart
 							})),
 							cr(102431, e(1702, {	-- Blood-Princess Thal'ena
 								i(137461),	-- Breathless Choker
@@ -272,6 +301,8 @@ _.Instances =
 								i(134422),	-- Satin Throatclutchers
 								i(134404),	-- Stole of Malefic Repose
 								i(134516),	-- Tassets of Ravenous Euphoria
+								i(137471),	-- Drop of True Blood
+								i(137478),	-- Reflection of Sorrow
 							})),
 							cr(101950, e(1686, {	-- Mindflayer Kaahrj
 								i(134498),	-- Chain of a Hundred Maws
@@ -281,6 +312,7 @@ _.Instances =
 								i(137433),	-- Obelisk of the Void
 								i(137432),	-- Ring of Mind-Shielding
 								i(134439),	-- Tunic of the Underworld
+								i(137464),	-- Tendril of Darkness
 							})),
 							cr(101976, e(1688, {	-- Millificent Manastorm
 								ach(10553),	-- You're Just Making It WORSE!
@@ -294,6 +326,8 @@ _.Instances =
 								i(137441),	-- Millificent's Turboview Specs
 								i(137443),	-- Mithril Melon Vault
 								i(137444),	-- Plasma-Drilled Steel Toes
+								i(137470),	-- Rocket Chicken Rocket Fuel
+								i(137469),	-- Thorium-Plated Egg
 							})),
 							cr(102246, e(1696, {	-- Anub'esset
 								i(137424),	-- Burrow-Dweller Leggings
@@ -306,6 +340,7 @@ _.Instances =
 								i(134418),	-- Scarab-Caller Grips
 								i(134489),	-- Seal of Malicious Deceit
 								i(137429),	-- Serrated Mandible Grips
+								i(137463),	-- Fealty of Nerub
 							})),
 							cr(102387, e(1697, {	-- Sael'orn
 								ach(10800),	-- Mythic: Assault on Violet Hold
@@ -330,6 +365,8 @@ _.Instances =
 								i(137448),	-- Toxin-Stitched Footwraps
 								i(137451),	-- Vision of the Spider Queen
 								i(137449),	-- Wicked Broodmother's Chestguard
+								i(137474),	-- Loyalty of the Matriarch
+								i(137473),	-- Phase Spider Mandible
 							})),
 							cr(102446, e(1711, {	-- Fel Lord Betrug
 								ach(10800),	-- Mythic: Assault on Violet Hold
@@ -354,6 +391,8 @@ _.Instances =
 								i(134407),	-- Rugged Marauder Cape
 								i(137455),	-- Spaulders of Tense Sinew
 								i(134446),	-- Vigilant Bondbreaker Headdress
+								i(137472),	-- Betrug's Vigor
+								i(137476),	-- Brand of Tyranny
 							})),
 						},
 					}),
