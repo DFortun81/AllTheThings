@@ -46,7 +46,6 @@ _.Instances =
 							cr(46964, e(100, {	--  Lord Godfrey
 								ig(44731),	-- Bouquet of Ebon Roses
 								ig(22206),	-- Bouquet of Red Roses
-								ig(21525),	-- Green Winter Hat
 								i( 63461),	-- Staff of Isolation
 								i( 63456),	-- Meteor Shard
 								i( 63459),	-- Worgen Hunter's Helm

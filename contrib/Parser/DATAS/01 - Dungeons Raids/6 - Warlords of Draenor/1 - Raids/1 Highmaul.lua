@@ -50,7 +50,6 @@ _.Instances =
 									i(116289),	-- Bloodmaw's Tooth
 								})),
 								cr(77404, e(971, {	-- The Butcher
-									ig(21525), 	-- Green Winter Hat
 									i(116361),	-- Butcher's Cruel Chopper
 									i(116297),	-- Fleshhook Cloak
 									i(116209),	-- Spine-Ripper Bracers
@@ -227,7 +226,6 @@ _.Instances =
 							i(113604),	-- Kargath's Last Link
 						})),
 						cr(77404, e(971, {	-- The Butcher
-							ig(21525), 	-- Green Winter Hat
 							i(113606),	-- Butcher's Bloody Cleaver
 							i(113607),	-- Butcher's Terrible Tenderizer
 							i(113608),	-- Hood of Dispassionate Execution
@@ -413,7 +411,6 @@ _.Instances =
 							i(113604),	-- Kargath's Last Link
 						})),
 						cr(77404, e(971, {	-- The Butcher
-							ig(21525), 	-- Green Winter Hat
 							i(113606),	-- Butcher's Bloody Cleaver
 							i(113607),	-- Butcher's Terrible Tenderizer
 							i(113608),	-- Hood of Dispassionate Execution
@@ -599,7 +596,6 @@ _.Instances =
 							i(113604),	-- Kargath's Last Link
 						})),
 						cr(77404, e(971, {	-- The Butcher
-							ig(21525), 	-- Green Winter Hat
 							i(113606),	-- Butcher's Bloody Cleaver
 							i(113607),	-- Butcher's Terrible Tenderizer
 							i(113608),	-- Hood of Dispassionate Execution
@@ -695,7 +691,7 @@ _.Instances =
 				["isRaid"] = true,
 				["lvl"] = 100,
 				["mapID"] = 612,
-				["maps"] = { 610, 611, 612, 613, 614, 615 },
+				["maps"] = { 610, 611, 613, 614, 615 },
 			}),
 		},					
 		["tierID"] = 6

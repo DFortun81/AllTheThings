@@ -49,13 +49,6 @@ _.Instances =
 									i(128142),	-- Pledge of Iron Loyalty
 								})),
 								cr(90284, e(1425, { -- Iron Reaver
-									n(-61, {    -- Feast of Winter Veil
-										["groups"] = {
-											ig(21524), -- Red Winter Hat
-										},
-										["achievementID"] = 1691, -- Merrymaker
-										["u"] = 29,
-									}),
 									i(128256, {	-- Equipment Blueprint: Gyroscopic Internal Stabilizer
 										["questID"] = 39364, -- Equipment Blueprint: Gyroscopic Internal Stabilizer
 									}),
@@ -190,13 +183,6 @@ _.Instances =
 									i(128145),	-- Howling Soul Gem
 								})),
 								cr(93439, e(1394, { -- Tyrant Velhari
-									n(-61, {    -- Feast of Winter Veil
-										["groups"] = {
-											ig(21525), 	-- Green Winter Hat
-										},
-										["achievementID"] = 1691, -- Merrymaker
-										["u"] = 29,
-									}),								
 									i(128099),	-- Spiked Gnarlroot Greatclub
 									i(128045),	-- Mantle of Unrestrained Contempt
 									i(128181),	-- Thorny Choker of Suffering
@@ -344,13 +330,6 @@ _.Instances =
 							i(124231),	-- Flickering Felspark
 						})),
 						cr(90284, e(1425, { -- Iron Reaver
-							n(-61, {    -- Feast of Winter Veil
-								["groups"] = {
-									ig(21524), -- Red Winter Hat
-								},
-								["achievementID"] = 1691, -- Merrymaker
-								["u"] = 29,
-							}),
 							i(128256, {	-- Equipment Blueprint: Gyroscopic Internal Stabilizer
 								["questID"] = 39364, -- Equipment Blueprint: Gyroscopic Internal Stabilizer
 							}),
@@ -543,13 +522,6 @@ _.Instances =
 							i(124225),	-- Soul Capacitor
 						})),
 						cr(93439, e(1394, { -- Tyrant Velhari
-							n(-61, {    -- Feast of Winter Veil
-								["groups"] = {
-									ig(21525), 	-- Green Winter Hat
-								},
-								["achievementID"] = 1691, -- Merrymaker
-								["u"] = 29,
-							}),						
 							i(124375),	-- Maul of Tyranny
 							i(124376),	-- Warhammer of Arrogance
 							i(124355),	-- Fallen Defender of Argus
@@ -749,13 +721,6 @@ _.Instances =
 							i(124231),	-- Flickering Felspark
 						})),
 						cr(90284, e(1425, { -- Iron Reaver
-							n(-61, {    -- Feast of Winter Veil
-								["groups"] = {
-									ig(21524), -- Red Winter Hat
-								},
-								["achievementID"] = 1691, -- Merrymaker
-								["u"] = 29,
-							}),
 							i(128256, {	-- Equipment Blueprint: Gyroscopic Internal Stabilizer
 								["questID"] = 39364, -- Equipment Blueprint: Gyroscopic Internal Stabilizer
 							}),
@@ -949,13 +914,6 @@ _.Instances =
 							i(124225),	-- Soul Capacitor
 						})),
 						cr(93439, e(1394, { -- Tyrant Velhari
-							n(-61, {    -- Feast of Winter Veil
-								["groups"] = {
-									ig(21525), 	-- Green Winter Hat
-								},
-								["achievementID"] = 1691, -- Merrymaker
-								["u"] = 29,
-							}),								
 							i(124375),	-- Maul of Tyranny
 							i(124376),	-- Warhammer of Arrogance
 							i(124355),	-- Fallen Defender of Argus
@@ -1159,13 +1117,6 @@ _.Instances =
 							i(124231),	-- Flickering Felspark
 						})),
 						cr(90284, e(1425, { -- Iron Reaver
-							n(-61, {    -- Feast of Winter Veil
-								["groups"] = {
-									ig(21524), -- Red Winter Hat
-								},
-								["achievementID"] = 1691, -- Merrymaker
-								["u"] = 29,
-							}),
 							i(128256, {	-- Equipment Blueprint: Gyroscopic Internal Stabilizer
 								["questID"] = 39364, -- Equipment Blueprint: Gyroscopic Internal Stabilizer
 							}),
@@ -1359,13 +1310,6 @@ _.Instances =
 							i(124225),	-- Soul Capacitor
 						})),
 						cr(93439, e(1394, { -- Tyrant Velhari
-							n(-61, {    -- Feast of Winter Veil
-								["groups"] = {
-									ig(21525), 	-- Green Winter Hat
-								},
-								["achievementID"] = 1691, -- Merrymaker
-								["u"] = 29,
-							}),								
 							i(124375),	-- Maul of Tyranny
 							i(124376),	-- Warhammer of Arrogance
 							i(124355),	-- Fallen Defender of Argus

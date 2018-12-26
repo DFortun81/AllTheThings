@@ -68,7 +68,6 @@ _.Instances =
 							i(35611),	-- Gloves of the Blood Prince
 						})),
 						cr(29310, e(582, {	-- Jedoga Shadowseeker
-							ig(21524), 	-- Red Winter Hat
 							i( 43281),	-- Edge of Oblivion
 							i( 44191),	-- Ice-Rimed Chopper
 							i( 43280),	-- Faceguard of the Hammer Clan
@@ -141,7 +140,6 @@ _.Instances =
 								i(43286),	-- Legguards of Swarming Attacks
 							})),
 							cr(29310, e(582, {	-- Jedoga Shadowseeker
-								ig(21524), 	-- Red Winter Hat
 								i( 43281),	-- Edge of Oblivion
 								i( 44191),	-- Ice-Rimed Chopper
 								i( 43280),	-- Faceguard of the Hammer Clan

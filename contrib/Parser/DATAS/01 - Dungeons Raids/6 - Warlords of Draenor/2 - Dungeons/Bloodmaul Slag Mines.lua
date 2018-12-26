@@ -154,7 +154,6 @@ _.Instances =
 								i(110015),	-- Toria's Unseeing Eye
 							})),
 							cr(74790, e(889, {	-- Gug'rokk
-								ig(21524),	-- Red Winter Hat
 								i(110042),	-- Gug'rokk's Smasher
 								i(110044),	-- Ogre Dinner Plate
 								i(110043),	-- Gug'rokk's Grandmother
@@ -369,7 +368,6 @@ _.Instances =
 									},
 									["description"] = "You must talk to Croman after killing Slave Watcher Crushto, then kill Magmolatus. Finish the dungeon with Croman still alive.",
 								}),
-								ig(21524),	-- Red Winter Hat
 								i(110042),	-- Gug'rokk's Smasher
 								i(110044),	-- Ogre Dinner Plate
 								i(110043),	-- Gug'rokk's Grandmother
@@ -578,7 +576,6 @@ _.Instances =
 							})),
 							cr(74790, e(889, {	-- Gug'rokk
 								ach(10076),	-- Mythic: Bloodmaul Slag Mines
-								ig(21524),	-- Red Winter Hat
 								i(110042),	-- Gug'rokk's Smasher
 								i(110044),	-- Ogre Dinner Plate
 								i(110043),	-- Gug'rokk's Grandmother

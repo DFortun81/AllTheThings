@@ -118,7 +118,6 @@ _.Instances =
 								un(3, i(118756)),	-- Finkle's Shanker [Only available during pre WoD level 90 version]
 							})),
 							cr(79912, e(1228, { -- Commander Tharbek
-								ig(21524),	-- Red Winter Hat
 								i(118726),	-- Tharbek's Brutal Possessor
 								i(118725),	-- Tharbek's Unholy Charge
 								i(109898),	-- Blackwater Wrap
@@ -389,7 +388,6 @@ _.Instances =
 								["description"] = "This rare spawns next to the right of Kyrak (2nd boss) Droprate should be about 100% for pet",
 							}),
 							cr(79912, e(1228, {		-- Commander Tharbek
-								ig(21524),	-- Red Winter Hat
 								i(118726),	-- Tharbek's Brutal Possessor
 								i(118725),	-- Tharbek's Unholy Charge
 								i(109898),	-- Blackwater Wrap
@@ -651,7 +649,6 @@ _.Instances =
 								["description"] = "This rare spawns next to the right of Kyrak (2nd boss) Droprate should be about 100% for pet",
 							}),
 							cr(79912, e(1228, {		-- Commander Tharbek
-								ig(21524),	-- Red Winter Hat
 								i(118726),	-- Tharbek's Brutal Possessor
 								i(118725),	-- Tharbek's Unholy Charge
 								i(109898),	-- Blackwater Wrap

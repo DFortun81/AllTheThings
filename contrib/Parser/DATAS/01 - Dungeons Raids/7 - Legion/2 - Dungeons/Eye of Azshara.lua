@@ -73,7 +73,6 @@ _.Instances =
 							cr(91797, e(1491, { -- King Deepbeard
 								i(134539),	-- Braided Silver Ring
 								i(137368),	-- Breastplate of Ten Lashes
-								ig(139300), -- Finely-Tailored Green Holiday Hat
 								i(137369),	-- Giant Ornamental Pearl
 								i(134514),	-- Keelhauler Legplates
 								i(134406),	-- Mainsail Cloak
@@ -144,7 +143,6 @@ _.Instances =
 							cr(91797, e(1491, { -- King Deepbeard
 								i(134539),	-- Braided Silver Ring
 								i(137368),	-- Breastplate of Ten Lashes
-								ig(139300), -- Finely-Tailored Green Holiday Hat
 								i(137369),	-- Giant Ornamental Pearl
 								i(134514),	-- Keelhauler Legplates
 								i(134406),	-- Mainsail Cloak
@@ -217,7 +215,6 @@ _.Instances =
 							cr(91797, e(1491, { -- King Deepbeard
 								i(134539),	-- Braided Silver Ring
 								i(137368),	-- Breastplate of Ten Lashes
-								ig(139300), -- Finely-Tailored Green Holiday Hat
 								i(137369),	-- Giant Ornamental Pearl
 								i(134514),	-- Keelhauler Legplates
 								i(134406),	-- Mainsail Cloak

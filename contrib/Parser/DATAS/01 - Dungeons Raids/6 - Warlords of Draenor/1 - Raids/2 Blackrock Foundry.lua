@@ -113,7 +113,6 @@ _.Instances =
 										["achievementID"] = 8990,	-- Black Forge
 										["criteriaID"] = 2,			-- Flamebender Ka'graz
 									},
-									ig(21524),	-- Red Winter Hat
 									i(116385),	-- Magma Monsoon Mace
 									i(116384),	-- Steelbringer's Polished Shield
 									i(116245),	-- Maw of Charring Breath
@@ -165,7 +164,6 @@ _.Instances =
 										["achievementID"] = 8991,	-- Iron Assembly
 										["criteriaID"] = 1,			-- Beastlord Darmac
 									},
-									ig(21525), 	-- Green Winter Hat
 									i(116306),	-- Dreaded Wing
 									i(116255),	-- Heartsmasher Chestplate
 									i(116016),	-- Robes of Brutal Tantrums
@@ -410,7 +408,6 @@ _.Instances =
 								i(115537),	-- Ogreskull Boneplate Breastplate
 								i(115570),	-- Poisoner's Tunic
 							}),
-							ig(21524),	-- Red Winter Hat
 							i(113913),	-- Ka'graz's Burning Blade
 							i(113920),	-- Dagger of Blazing Radiance
 							i(113918),	-- Molten Edge Eviscerator
@@ -491,7 +488,6 @@ _.Instances =
 								["achievementID"] = 8991,	-- Iron Assembly
 								["criteriaID"] = 1,			-- Beastlord Darmac
 							},
-							ig(21525), 	-- Green Winter Hat
 							i(113939),	-- Tal'rak, Bloody Skull of the Thunderlords
 							i(113946),	-- Heart of the Clefthoof
 							i(113952),	-- Choker of Bestial Force
@@ -963,7 +959,6 @@ _.Instances =
 								i(115537),	-- Ogreskull Boneplate Breastplate
 								i(115570),	-- Poisoner's Tunic
 							}),
-							ig(21524),	-- Red Winter Hat
 							i(113913),	-- Ka'graz's Burning Blade
 							i(113920),	-- Dagger of Blazing Radiance
 							i(113918),	-- Molten Edge Eviscerator
@@ -1044,7 +1039,6 @@ _.Instances =
 								["achievementID"] = 8991,	-- Iron Assembly
 								["criteriaID"] = 1,			-- Beastlord Darmac
 							},
-							ig(21525), 	-- Green Winter Hat
 							i(113939),	-- Tal'rak, Bloody Skull of the Thunderlords
 							i(113946),	-- Heart of the Clefthoof
 							i(113952),	-- Choker of Bestial Force
@@ -1525,7 +1519,6 @@ _.Instances =
 								i(115537),	-- Ogreskull Boneplate Breastplate
 								i(115570),	-- Poisoner's Tunic
 							}),
-							ig(21524),	-- Red Winter Hat
 							i(113913),	-- Ka'graz's Burning Blade
 							i(113920),	-- Dagger of Blazing Radiance
 							i(113918),	-- Molten Edge Eviscerator
@@ -1608,7 +1601,6 @@ _.Instances =
 								["achievementID"] = 8991,	-- Iron Assembly
 								["criteriaID"] = 1,			-- Beastlord Darmac
 							},
-							ig(21525), 	-- Green Winter Hat
 							i(113939),	-- Tal'rak, Bloody Skull of the Thunderlords
 							i(113946),	-- Heart of the Clefthoof
 							i(113952),	-- Choker of Bestial Force

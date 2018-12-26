@@ -100,7 +100,6 @@ _.Instances =
 							i(37263),	-- Legplates of the Oculus Guardian
 						})),
 						cr(27655, e(624, {	-- Mage-Lord Urom
-							ig(21525), 	-- Green Winter Hat
 							i( 36953),	-- Spaulders of Skillful Maneuvers
 							i( 37288),	-- Catalytic Bands
 							i( 36951),	-- Sidestepping Handguards
@@ -192,7 +191,6 @@ _.Instances =
 								i(37263),	-- Legplates of the Oculus Guardian
 							})),
 							cr(27655, e(624, {	-- Mage-Lord Urom
-								ig(21525), 	-- Green Winter Hat
 								i( 36953),	-- Spaulders of Skillful Maneuvers
 								i( 37288),	-- Catalytic Bands
 								i( 36951),	-- Sidestepping Handguards

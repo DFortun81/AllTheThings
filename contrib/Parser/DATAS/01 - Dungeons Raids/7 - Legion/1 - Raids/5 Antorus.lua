@@ -379,7 +379,6 @@ _.Instances =
 									i(152412), -- Depraved Machinist's Footpads
 								})),
 								cr(125075, e(1983, { -- Varimathras
-									ig(139300), -- Finely-Tailored Green Holiday Hat (HOLIDAY - Winter's Veil)
 									i(151995), -- Robes of the Forsaken Dreadlord
 									i(151979), -- Vest of Unfathomable Anguish
 									i(151954), -- Blood-Drenched Bindings
@@ -784,7 +783,6 @@ _.Instances =
 								i(152412), -- Depraved Machinist's Footpads
 							})),
 							cr(125075, e(1983, { -- Varimathras
-								ig(139300), -- Finely-Tailored Green Holiday Hat
 								i(151995), -- Robes of the Forsaken Dreadlord
 								i(151979), -- Vest of Unfathomable Anguish
 								i(151954), -- Blood-Drenched Bindings
@@ -1181,7 +1179,6 @@ _.Instances =
 								i(152412), -- Depraved Machinist's Footpads
 							})),
 							cr(125075, e(1983, { -- Varimathras
-								ig(139300), -- Finely-Tailored Green Holiday Hat
 								i(151995), -- Robes of the Forsaken Dreadlord
 								i(151979), -- Vest of Unfathomable Anguish
 								i(151954), -- Blood-Drenched Bindings
@@ -1582,7 +1579,6 @@ _.Instances =
 								i(152412), -- Depraved Machinist's Footpads
 							})),
 							cr(125075, e(1983, { -- Varimathras
---								ig(139300), -- Finely-Tailored Green Holiday Hat (may not drop in this difficulty)
 								i(151995), -- Robes of the Forsaken Dreadlord
 								i(151979), -- Vest of Unfathomable Anguish
 								i(151954), -- Blood-Drenched Bindings

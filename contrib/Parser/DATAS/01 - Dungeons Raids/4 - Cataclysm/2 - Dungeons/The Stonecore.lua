@@ -112,7 +112,6 @@ _.Instances =
 							ach(4846),	-- The Stonecore
 							ig(44731),	-- Bouquet of Ebon Roses
 							ig(22206),	-- Bouquet of Red Roses
-							ig(21524),	-- Red Winter Hat
 							i( 56343),	-- Darkling Staff
 							i( 56346),	-- Elementium Fang
 							i( 56349),	-- Prophet Scepter
@@ -166,7 +165,6 @@ _.Instances =
 								ach(5287),	-- Rotten to the Core
 								ig(44731),	-- Bouquet of Ebon Roses
 								ig(22206),	-- Bouquet of Red Roses
-								ig(21524),	-- Red Winter Hat
 								i( 56343),	-- Darkling Staff
 								i( 56346),	-- Elementium Fang
 								i( 56349),	-- Prophet Scepter

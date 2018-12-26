@@ -116,7 +116,6 @@ _.Instances =
 								i(110017),	-- Enforcer's Stun Grenade
 							})),
 							cr(79852, e(1237, { -- Oshir
-								ig(21525), 	-- Green Winter Hat
 								i(110057),	-- Mindbreaker Scepter
 								i(109882),	-- Blackwater Wristguards
 								i(109869),	-- Bloodfeather Bracers
@@ -329,7 +328,6 @@ _.Instances =
 								i(110017),	-- Enforcer's Stun Grenade
 							})),
 							cr(79852, e(1237, { -- Oshir
-								ig(21525), 	-- Green Winter Hat
 								i(110057),	-- Mindbreaker Scepter
 								i(109882),	-- Blackwater Wristguards
 								i(109869),	-- Bloodfeather Bracers
@@ -537,7 +535,6 @@ _.Instances =
 								i(110017),	-- Enforcer's Stun Grenade
 							})),
 							cr(79852, e(1237, { -- Oshir
-								ig(21525), 	-- Green Winter Hat
 								i(110057),	-- Mindbreaker Scepter
 								i(109882),	-- Blackwater Wristguards
 								i(109869),	-- Bloodfeather Bracers

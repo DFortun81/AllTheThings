@@ -80,7 +80,6 @@ _.Instances =
 							cr(47626, e(92, { -- Admiral Ripsnarl
 								ig(44731),	-- Bouquet of Ebon Roses
 								ig(22206),	-- Bouquet of Red Roses
-								ig(21524),	-- Red Winter Hat
 								i( 65168),	-- Rockslicer
 								i( 65170),	-- Smite's Reaper
 								i( 65169),	-- Lavishly Jeweled Ring

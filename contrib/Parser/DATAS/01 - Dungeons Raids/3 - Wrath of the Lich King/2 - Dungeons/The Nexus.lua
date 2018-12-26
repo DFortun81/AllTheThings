@@ -63,7 +63,6 @@ _.Instances =
 					}),
 					d(  1, {	-- Normal
 						cr(26731, e(618, { 	-- Grand Magus Telestra
-							ig(21524), 	-- Red Winter Hat
 							i( 35617),	-- Wand of Shimmering Scales
 							i( 37134),	-- Telestra's Journal
 							i( 37135),	-- Arcane-Shielded Helm
@@ -122,7 +121,6 @@ _.Instances =
 								i(37730),	-- Cleric's Linen Shoes
 							}))),
 							cr(26731, e(618, { 	-- Grand Magus Telestra
-								ig(21524), 	-- Red Winter Hat
 								i(35617),	-- Wand of Shimmering Scales
 								i(37134),	-- Telestra's Journal
 								i(37135),	-- Arcane-Shielded Helm

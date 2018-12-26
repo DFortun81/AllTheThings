@@ -28,7 +28,6 @@ _.Instances =
 								i(137488),	-- Cord of Wicked Pyromania
 								i(134374),	-- Felbat Leather Pauldrons
 								i(134460),	-- Fevermelt Legguards
-								ig(139299), -- Finely-Tailored Red Holiday Hat
 								i(137485),	-- Infernal Writ
 								i(134503),	-- Inferno Breastplate
 								i(134385),	-- Mardum Chain Gloves
@@ -84,7 +83,6 @@ _.Instances =
 								i(137488),	-- Cord of Wicked Pyromania
 								i(134374),	-- Felbat Leather Pauldrons
 								i(134460),	-- Fevermelt Legguards
-								ig(139299), -- Finely-Tailored Red Holiday Hat
 								i(137485),	-- Infernal Writ
 								i(134503),	-- Inferno Breastplate
 								i(134385),	-- Mardum Chain Gloves

@@ -143,7 +143,6 @@ _.Instances =
 							})),
 							cr(122316, e(1980, { -- Saprish
 								i(151321),	-- Darkfang Scale Wristguards
-								ig(139299),	-- Finely-Tailored Red Holiday Hat
 								i(151327),	-- Girdle of the Shadowguard
 								i(151318),	-- Gloves of the Dark Shroud
 								i(151323),	-- Pauldrons of the Void Hunter
@@ -205,7 +204,6 @@ _.Instances =
 							cr(122316, e(1980, { -- Saprish
 								ach(12005),	-- Let It All Out
 								i(151321),	-- Darkfang Scale Wristguards
-								ig(139299),	-- Finely-Tailored Red Holiday Hat
 								i(151327),	-- Girdle of the Shadowguard
 								i(151318),	-- Gloves of the Dark Shroud
 								i(151323),	-- Pauldrons of the Void Hunter

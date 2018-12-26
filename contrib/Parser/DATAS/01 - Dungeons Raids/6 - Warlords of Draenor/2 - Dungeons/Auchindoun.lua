@@ -70,7 +70,6 @@ _.Instances =
 								i(109777),	-- Unsullied Signet
 							})),
 							cr(76177, e(1186, { -- Soulbinder Nyami
-								ig(21525),	-- Green Winter Hat
 								i(110046),	-- Hammer of the Soulbinder
 								i(110047),	-- Soulcutter Mageblade
 								i(109957),	-- Alc's Pendant of Fiery Dreams
@@ -283,7 +282,6 @@ _.Instances =
 								i(109777),	-- Unsullied Signet
 							})),
 							cr(76177, e(1186, { -- Soulbinder Nyami
-								ig(21525),	-- Green Winter Hat
 								i(110046),	-- Hammer of the Soulbinder
 								i(110047),	-- Soulcutter Mageblade
 								i(109957),	-- Alc's Pendant of Fiery Dreams
@@ -492,7 +490,6 @@ _.Instances =
 								i(109777),	-- Unsullied Signet
 							})),
 							cr(76177, e(1186, { -- Soulbinder Nyami
-								ig(21525),	-- Green Winter Hat
 								i(110046),	-- Hammer of the Soulbinder
 								i(110047),	-- Soulcutter Mageblade
 								i(109957),	-- Alc's Pendant of Fiery Dreams

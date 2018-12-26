@@ -298,7 +298,6 @@ _.Instances =
 									},
 									i(139648),	-- Vantus Rune Technique: Krosus [Rank 1]
 									i(137760),	-- Vantus Rune Technique: Krosus [Rank 2]
-									ig(139299), -- Finely-Tailored Red Holiday Hat
 									i(140870),	-- Architect's Coif of Despair
 									i(140899),	-- Beleron's Choker of Misery
 									i(138350),	-- Breastplate of the Highlord
@@ -615,7 +614,6 @@ _.Instances =
 							},
 							i(139648),	-- Vantus Rune Technique: Krosus [Rank 1]
 							i(137760),	-- Vantus Rune Technique: Krosus [Rank 2]
-							ig(139299), -- Finely-Tailored Red Holiday Hat
 							i(143562, {	-- Chest of the Foreseen Conqueror [Demon Hunter, Paladin, Priest, Warlock]
 								i(138350),	-- Breastplate of the Highlord
 								i(138320),	-- Finery of Azj'Aqir
@@ -1010,7 +1008,6 @@ _.Instances =
 							},
 							i(139648),	-- Vantus Rune Technique: Krosus [Rank 1]
 							i(137760),	-- Vantus Rune Technique: Krosus [Rank 2]
-							ig(139299), -- Finely-Tailored Red Holiday Hat
 							i(143562, {	-- Chest of the Foreseen Conqueror [Demon Hunter, Paladin, Priest, Warlock]
 								i(138350),	-- Breastplate of the Highlord
 								i(138320),	-- Finery of Azj'Aqir
@@ -1415,7 +1412,6 @@ _.Instances =
 							},
 							i(139648),	-- Vantus Rune Technique: Krosus [Rank 1]
 							i(137760),	-- Vantus Rune Technique: Krosus [Rank 2]
-							ig(139299), -- Finely-Tailored Red Holiday Hat
 							i(143562, {	-- Chest of the Foreseen Conqueror [Demon Hunter, Paladin, Priest, Warlock]
 								i(138350),	-- Breastplate of the Highlord
 								i(138320),	-- Finery of Azj'Aqir

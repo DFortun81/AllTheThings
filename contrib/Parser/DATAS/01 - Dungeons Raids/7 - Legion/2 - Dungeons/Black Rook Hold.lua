@@ -28,7 +28,6 @@ _.Instances =
 							cr(98696, e(1653, { -- Illysanna Ravencrest
 								i(134412),	-- Cloak of Unwavering Loyalty
 								i(136978),	-- Ember of Nullification
-								ig(139300), -- Finely-Tailored Green Holiday Hat
 								i(134519),	-- Ravencrest Bonecrush Gauntlets
 								i(134490),	-- Ring of Contempt
 								i(134419),	-- Slippers of Heedless Sacrifice
@@ -87,7 +86,6 @@ _.Instances =
 							cr(98696, e(1653, { -- Illysanna Ravencrest
 								i(134412),	-- Cloak of Unwavering Loyalty
 								i(136978),	-- Ember of Nullification
-								ig(139300), -- Finely-Tailored Green Holiday Hat
 								i(134519),	-- Ravencrest Bonecrush Gauntlets
 								i(134490),	-- Ring of Contempt
 								i(134419),	-- Slippers of Heedless Sacrifice
@@ -152,7 +150,6 @@ _.Instances =
 								ach(10711),	-- Adds? More Like Bads
 								i(134412),	-- Cloak of Unwavering Loyalty
 								i(136978),	-- Ember of Nullification
-								ig(139300), -- Finely-Tailored Green Holiday Hat
 								i(134519),	-- Ravencrest Bonecrush Gauntlets
 								i(134490),	-- Ring of Contempt
 								i(134419),	-- Slippers of Heedless Sacrifice

@@ -101,13 +101,6 @@ _.Instances =
 								},
 								["achievementID"] = 1693,    -- Fool For Love
 								["u"] = 18,
-							}),							
-							n(-61, {	-- Feast of Winter Veil
-								["groups"] = {
-									ig(21524), 	-- Red Winter Hat
-								},
-								["achievementID"] = 1691, -- Merrymaker
-								["u"] = 29,
 							}),
 							i(56296),	-- Corla's Baton
 							i(56298),	-- Renouncer's Cowl
@@ -189,13 +182,6 @@ _.Instances =
 									},
 									["achievementID"] = 1693,    -- Fool For Love
 									["u"] = 18,
-								}),
-								n(-61, {	-- Feast of Winter Veil
-									["groups"] = {
-										ig(21524), 	-- Red Winter Hat
-									},
-									["achievementID"] = 1691, -- Merrymaker
-									["u"] = 29,
 								}),
 								i(56296),	-- Corla's Baton
 								i(56298),	-- Renouncer's Cowl
