@@ -1318,7 +1318,7 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 					end
 					]]--
 				end
-			else -- if not group.itemID or (group.itemID and group.itemID ~= itemID) then
+			elseif paramA and paramB and (not group[paramA] or (group[paramA] and group[paramA] ~= paramB)) then
 				if group.collectible then
 					if group.collected or (group.trackable and group.saved) then
 						if GetDataMember("ShowCollectedItems") then
@@ -1620,7 +1620,9 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 						local searchResults = SearchForField("spellID", recipeID);
 						if searchResults then
 							for i,o in ipairs(searchResults) do
-								tinsert(group, o);
+								if not contains(group, o) then
+									tinsert(group, o);
+								end
 							end
 						end
 					end
@@ -1629,7 +1631,9 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 						local searchResults = app.SearchForField("itemID", itemID);
 						if searchResults then
 							for i,o in ipairs(searchResults) do
-								tinsert(group, o);
+								if not contains(group, o) then
+									tinsert(group, o);
+								end
 							end
 						end
 					end
@@ -8394,9 +8398,9 @@ end):Show();
 				['back'] = 1,
 				['g'] = {
 					{
-						['text'] = "Update World Quests Now",
+						['text'] = "Update Location Now",
 						['icon'] = "Interface\\Icons\\INV_Misc_Map_01",
-						['description'] = "Sometimes the World Quest API is slow or fails to return new data. If you wish to forcibly refresh the data without changing zones, click this button now!",
+						['description'] = "If you wish to forcibly refresh the data without changing zones, click this button now!",
 						['visible'] = true,
 						['f'] = -1,
 						['key'] = "nope",
