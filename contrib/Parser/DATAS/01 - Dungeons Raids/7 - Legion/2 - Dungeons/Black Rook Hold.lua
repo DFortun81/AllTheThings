@@ -24,6 +24,8 @@ _.Instances =
 								i(139245),	-- Shadow Archer's Spaulders
 								i(136977),	-- Shadowfeather Shawl
 								i(134442),	-- Tooled Rivermoor Boots
+								i(136719),	-- Curdled Soul Essence
+								i(137270),	-- Howling Echoes
 							})),
 							cr(98696, e(1653, { -- Illysanna Ravencrest
 								i(134412),	-- Cloak of Unwavering Loyalty
@@ -33,6 +35,8 @@ _.Instances =
 								i(134419),	-- Slippers of Heedless Sacrifice
 								i(136724),	-- Soul-Torn Fury Cinch
 								i(134440),	-- Soulstarve Hood
+								i(136769),	-- Ravencrest's Wrath
+								i(136720),	-- Snapped Emerald Pendant
 							})),
 							cr(98949, e(1664, {	-- Smashspite the Hateful
 								i(134528),	-- Band of Callous Dominance
@@ -45,6 +49,7 @@ _.Instances =
 								i(134362),	-- Portalguard Wristguard
 								i(136979),	-- Shorn Batbrood Cuffs
 								i(136715),	-- Spiked Counterweight
+								i(136721),	-- Mo'arg Eyepatch
 							})),
 							cr(94923, e(1672, {	-- Lord Kur'talos Ravencrest (Latosius 98970)
 								ach(10804),	-- Black Rook Hold
@@ -65,6 +70,9 @@ _.Instances =
 								i(134477),	-- Ravencrest's Unerring Striders
 								i(139240),	-- Rook Footman's Legplates
 								i(139244),	-- Shadow Archer's Helm
+								i(136717),	-- Absolved Ravencrest Brooch
+								i(137272),	-- Cruelty of Dantalionax
+								i(136718),	-- Mark of Varo'then
 							})),
 						},
 					}),
@@ -82,6 +90,8 @@ _.Instances =
 								i(139245),	-- Shadow Archer's Spaulders
 								i(136977),	-- Shadowfeather Shawl
 								i(134442),	-- Tooled Rivermoor Boots
+								i(136719),	-- Curdled Soul Essence
+								i(137270),	-- Howling Echoes
 							})),
 							cr(98696, e(1653, { -- Illysanna Ravencrest
 								i(134412),	-- Cloak of Unwavering Loyalty
@@ -91,6 +101,8 @@ _.Instances =
 								i(134419),	-- Slippers of Heedless Sacrifice
 								i(136724),	-- Soul-Torn Fury Cinch
 								i(134440),	-- Soulstarve Hood
+								i(136769),	-- Ravencrest's Wrath
+								i(136720),	-- Snapped Emerald Pendant
 							})),
 							cr(98949, e(1664, {	-- Smashspite the Hateful
 								i(134528),	-- Band of Callous Dominance
@@ -103,6 +115,7 @@ _.Instances =
 								i(134362),	-- Portalguard Wristguard
 								i(136979),	-- Shorn Batbrood Cuffs
 								i(136715),	-- Spiked Counterweight
+								i(136721),	-- Mo'arg Eyepatch
 							})),
 							cr(94923, e(1672, {	-- Lord Kur'talos Ravencrest (Latosius 98970)
 								ach(10805),	-- Heroic: Black Rook Hold
@@ -125,6 +138,9 @@ _.Instances =
 								i(134477),	-- Ravencrest's Unerring Striders
 								i(139240),	-- Rook Footman's Legplates
 								i(139244),	-- Shadow Archer's Helm
+								i(136717),	-- Absolved Ravencrest Brooch
+								i(137272),	-- Cruelty of Dantalionax
+								i(136718),	-- Mark of Varo'then
 							}))
 						}
 					}),
@@ -145,6 +161,8 @@ _.Instances =
 								i(139245),	-- Shadow Archer's Spaulders
 								i(136977),	-- Shadowfeather Shawl
 								i(134442),	-- Tooled Rivermoor Boots
+								i(136719),	-- Curdled Soul Essence
+								i(137270),	-- Howling Echoes
 							})),
 							cr(98696, e(1653, { -- Illysanna Ravencrest
 								ach(10711),	-- Adds? More Like Bads
@@ -155,6 +173,8 @@ _.Instances =
 								i(134419),	-- Slippers of Heedless Sacrifice
 								i(136724),	-- Soul-Torn Fury Cinch
 								i(134440),	-- Soulstarve Hood
+								i(136769),	-- Ravencrest's Wrath
+								i(136720),	-- Snapped Emerald Pendant
 							})),
 							cr(98949, e(1664, {	-- Smashspite the Hateful
 								i(134528),	-- Band of Callous Dominance
@@ -167,6 +187,7 @@ _.Instances =
 								i(134362),	-- Portalguard Wristguard
 								i(136979),	-- Shorn Batbrood Cuffs
 								i(136715),	-- Spiked Counterweight
+								i(136721),	-- Mo'arg Eyepatch
 							})),
 							cr(94923, e(1672, {	-- Lord Kur'talos Ravencrest (Latosius 98970)
 								ach(10806),	-- Mythic: Black Rook Hold
@@ -189,6 +210,9 @@ _.Instances =
 								i(134477),	-- Ravencrest's Unerring Striders
 								i(139240),	-- Rook Footman's Legplates
 								i(139244),	-- Shadow Archer's Helm
+								i(136717),	-- Absolved Ravencrest Brooch
+								i(137272),	-- Cruelty of Dantalionax
+								i(136718),	-- Mark of Varo'then
 							}))
 						}
 					})
