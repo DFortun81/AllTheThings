@@ -71,13 +71,13 @@ _.Zones =
 							},
 						},
 						{	-- Carved in Stone, Written in Blood
-							["achievementID"] = 13024,	-- -- Carved in Stone, Written in Blood
+							["achievementID"] = 13024,	-- Carved in Stone, Written in Blood
 							["g"] = {
 								{	-- Ancient Nazmani Tablet
 									["objectID"] = 298921,	-- Ancient Nazmani Tablet
 									["icon"] = "Interface\\Icons\\inv_misc_rune_11",
 									["criteriaID"] = 1,	-- Ancient Nazmani Tablet
-									["coords"] = {
+									["coord"] = {
 										56.31,
 										57.31
 									},
@@ -86,7 +86,7 @@ _.Zones =
 									["objectID"] = 298965,	-- Cracked Tablet
 									["icon"] = "Interface\\Icons\\inv_misc_rune_11",
 									["criteriaID"] = 3,	-- Cracked Tablet
-									["coords"] = {
+									["coord"] = {
 										51.21,
 										85.11
 									},
@@ -95,7 +95,7 @@ _.Zones =
 									["objectID"] = 299073,	-- Fractured Tablet
 									["icon"] = "Interface\\Icons\\inv_misc_rune_11",
 									["criteriaID"] = 4,	-- Fractured Tablet
-									["coords"] = {
+									["coord"] = {
 										42.61,
 										57.11
 									},
@@ -104,7 +104,7 @@ _.Zones =
 									["objectID"] = 298963,	-- Weathered Nazmani Tablet
 									["icon"] = "Interface\\Icons\\inv_misc_rune_11",
 									["criteriaID"] = 2,	-- Weathered Nazmani Tablet
-									["coords"] = {
+									["coord"] = {
 										43.41,
 										48.11
 									},
