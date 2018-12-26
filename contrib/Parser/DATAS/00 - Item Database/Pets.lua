@@ -72,6 +72,7 @@ pet(20371, 107); 	-- Blue Murloc Egg (Murky)
 pet(122532, 1600); 	-- Bone Serpent
 pet(119146, 1458); 	-- Bone Wasp
 pet(104202, 1343); 	-- Bonkers
+pet(166452, 2547);	-- Bottled Essence of Hydrath (Hydrath Droplet)
 pet(152970, 2082);	-- Bound Stream
 pet(66067, 291); 	-- Brazie's Sunflower Seeds (Singing Sunflower)
 pet(128424, 1466);	-- Brightpaw
@@ -158,6 +159,7 @@ pet(80008, 848); 	-- Darkmoon Rabbit
 pet(73903, 338); 	-- Darkmoon Tonk
 pet(73765, 335); 	-- Darkmoon Turtle
 pet(73905, 339); 	-- Darkmoon Zeppelin
+pet(166449, 2544);	-- Darkshore Sentinel
 pet(48112, 232); 	-- Darting Hatchling
 pet(104161, 1330); 	-- Death Adder Hatchling
 pet(163809, 2464);	-- Deathsting Scorpid
@@ -205,6 +207,7 @@ pet(49664, 247);	-- Enchanted Purple Jade (Zipao Tiger)
 pet(152878, 2201); 	-- Enchanted Tiki Mask
 pet(128534, 1700); 	-- Enchanted Torch
 pet(118921, 1566); 	-- Everbloom Peachick
+pet(166453, 2548);	-- Everburning Treant
 pet(143756, 1998); 	-- Everliving Spore
 pet(136899, 1717); 	-- Extinguished Eye
 pet(136901, 1719); 	-- Eye of Inquisition
@@ -286,6 +289,7 @@ pet(65362, 281);	-- Guild Page (Horde)
 pet(104169, 1338); 	-- Gulp Froglet
 pet(48116, 234); 	-- Gundrak Hatchling
 pet(93669, 1174);	-- Gusting Grimoire
+pet(166448, 2545);	-- Gust of Cyclarus
 pet(97961, 1245);	-- Half-Empty Food Container (Filthling)
 pet(104295, 1346);	-- Harmonious Porcupette
 pet(136900, 1718); 	-- Hateful Eye
@@ -487,6 +491,7 @@ pet(163503, 2417);	-- Ranishu Runt
 pet(100905, 1256); 	-- Rascal-Bot
 pet(23015, 127); 	-- Rat Cage (Whiskers the Rat)
 pet(152968, 2080);	-- Rattlejaw
+pet(166451, 2546);	-- Rattling Bones (Detective Ray)
 pet(48122, 237); 	-- Ravasaur Hatchling
 pet(48124, 238); 	-- Razormaw Hatchling
 pet(48126, 239); 	-- Razzashi Hatchling
@@ -588,6 +593,7 @@ pet(163789, 2411);	-- Spooky Bundle of Sticks [Wicker Pup]
 pet(44794, 200); 	-- Spring Rabbit's Foot (Spring Rabbit)
 pet(11474, 87); 	-- Sprite Darter Egg (Sprite Darter Hatchling)
 pet(163712, 2441);	-- Squawkling
+pet(166454, 2549);	-- Squishy Purple Goo (Void Jelly)
 pet(142100, 1969);	-- Stardust
 pet(138810, 1911); 	-- Sting Ray Pup
 pet(116402, 1515); 	-- Stonegrinder
@@ -713,6 +719,7 @@ pet(128423, 1255);	-- Zeradar
 pet(13582, 94); 	-- Zergling Leash (Zergling)
 pet(113554, 1428);	-- Zomstrok
 pet(137298, 1903); 	-- Zoom
+pet(166455, 2550);	-- Zur'aj the Depleted
 
 ---------------
 -- PATCH 8.1 --
