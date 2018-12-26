@@ -120,8 +120,11 @@ _.ExpansionFeatures =
 						{	-- Burninator Mark V [A Only]
 							["questID"] = 54451,	-- Burninator Mark V [A]
 							["races"] = ALLIANCE_ONLY,
-							["npcID"] = 148497,				-- Burninator Mark V
-							["qg"] = 148497,				-- Burninator Mark V
+							["npcID"] = 149141,				-- Burninator Mark V
+							["qg"] = 149141,				-- Burninator Mark V
+							["crs"] = {
+								148497,	-- When he spawns as a WQ
+							},
 							["questID"] = 54768,
 							["isWeekly"] = true,
 							["coords"] = {
