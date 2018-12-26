@@ -56,6 +56,7 @@ _.Mounts =
 			["races"] = {10,9,2,6,8,5,11,3,7,1,4,22},
 		},
 		i(29220),		-- Blue Hawkstrider
+		i(166442),		-- Blue Marsh Hopper
 		i(8595),		-- Blue Mechanostrider
 		i(32319),		-- Blue Riding Nether Ray
 		i(89307),		-- Blue Shado-Pan Riding Tiger
@@ -190,6 +191,7 @@ _.Mounts =
 			["races"] = {10,9,2,6,8,5,11,3,7,1,4,22},
 		},
 		i(13321),		-- Green Mechanostrider
+		i(163183),		-- Green Marsh Hopper
 		i(32314),		-- Green Riding Nether Ray
 		i(89305),		-- Green Shado-Pan Riding Tiger
 		i(13334),		-- Green Skeletal Warhorse
@@ -362,5 +364,6 @@ _.Mounts =
 		i(116655),		-- Witherhide Cliffstomper
 		i(44230),		-- Wooly Mammoth (Alliance)
 		i(44231),		-- Wooly Mammoth (Horde)
+		i(166443),		-- Yellow Marsh Hopper
 	}),
 };
