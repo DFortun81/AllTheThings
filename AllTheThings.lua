@@ -8609,62 +8609,66 @@ end):Show();
 							ExpandGroupsRecursively(results, false);
 							
 							local found = false;
+							local diffs = {};
 							local difficultyID = select(3, GetInstanceInfo());
 							if difficultyID and difficultyID > 0 and results.g then
 								for _, row in ipairs(results.g) do
-									if (row.difficultyID and row.difficultyID == difficultyID)
-										or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
-										if row.visible then
-											ExpandGroupsRecursively(row, true);
-											found = true;
+									if row.difficultyID or row.difficulties then
+										tinsert(diffs, row);
+										if row.difficultyID == difficultyID or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
+											if row.visible then
+												ExpandGroupsRecursively(row, true);
+												found = true;
+											end
 										end
 									end
 								end
 							end
-							if not found then
-								difficultyID = GetDungeonDifficultyID();
-								for _, row in ipairs(results.g) do
-									if (row.difficultyID and row.difficultyID == difficultyID)
-										or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
-										if row.visible then
-											ExpandGroupsRecursively(row, true);
-											found = true;
-										end
-									end
-								end
-							end
-							if not found then
-								difficultyID = GetRaidDifficultyID();
-								for _, row in ipairs(results.g) do
-									if (row.difficultyID and row.difficultyID == difficultyID)
-										or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
-										if row.visible then
-											ExpandGroupsRecursively(row, true);
-											found = true;
-										end
-									end
-								end
-							end
-							if not found then
-								difficultyID = GetLegacyRaidDifficultyID();
-								for _, row in ipairs(results.g) do
-									if (row.difficultyID and row.difficultyID == difficultyID)
-										or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
-										if row.visible then
-											ExpandGroupsRecursively(row, true);
-											found = true;
-										end
-									end
-								end
-								
-								-- Expand them all!
+							if #diffs > 0 then
 								if not found then
-									ExpandGroupsRecursively(results, true);
-									if results.instanceID and app.GetDataMember("WarnOnClearedDifficulty", false) then
-										AllTheThings.yell("YOU HAVE COLLECTED EVERYTHING FROM THIS DIFFICULTY BASED ON YOUR CURRENT FILTERS.");
-										AllTheThings.print("YOU HAVE COLLECTED EVERYTHING FROM THIS DIFFICULTY BASED ON YOUR CURRENT FILTERS.");
+									difficultyID = GetDungeonDifficultyID();
+									for _, row in ipairs(diffs) do
+										if row.difficultyID == difficultyID or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
+											if row.visible then
+												ExpandGroupsRecursively(row, true);
+												found = true;
+											end
+										end
 									end
 								end
+								if not found then
+									difficultyID = GetRaidDifficultyID();
+									for _, row in ipairs(diffs) do
+										if row.difficultyID == difficultyID or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
+											if row.visible then
+												ExpandGroupsRecursively(row, true);
+												found = true;
+											end
+										end
+									end
+								end
+								if not found then
+									difficultyID = GetLegacyRaidDifficultyID();
+									for _, row in ipairs(diffs) do
+										if row.difficultyID == difficultyID or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
+											if row.visible then
+												ExpandGroupsRecursively(row, true);
+												found = true;
+											end
+										end
+									end
+									
+									-- Expand them all!
+									if not found then
+										ExpandGroupsRecursively(results, true);
+										if results.instanceID and app.GetDataMember("WarnOnClearedDifficulty", false) then
+											AllTheThings.yell("YOU HAVE COLLECTED EVERYTHING FROM THIS DIFFICULTY BASED ON YOUR CURRENT FILTERS.");
+											AllTheThings.print("YOU HAVE COLLECTED EVERYTHING FROM THIS DIFFICULTY BASED ON YOUR CURRENT FILTERS.");
+										end
+									end
+								end
+							else
+								ExpandGroupsRecursively(results, true);
 							end
 						else
 							ExpandGroupsRecursively(results, true);
