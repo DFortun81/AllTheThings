@@ -101,7 +101,7 @@ _.Achievements =
 					ach(10334, {	-- Predator
 						title(59),	-- Predator
 					}),
-					ach(13078),	-- Realm First! Battle for Azeroth Keystone Master
+					un(2, ach(13078)),	-- Realm First! Battle for Azeroth Keystone Master
 					un(2, ach(3259, {	-- Realm First! Celestial Defender
 						un(39, title(125)),	-- the Celestial Defender
 					})),
