@@ -8432,11 +8432,18 @@ end):Show();
 						app.MiniListHeader = nil;
 					else
 						-- A couple of objects matched, let's make a header.
-						local header = { g = {}, back = 1, expanded = true, visible = true, text = app.DisplayName, description = "Auto Mini List for mapID #" .. self.mapID, total = 0, progress = 0 };
+						local header = app.CreateMap(self.mapID, { g = {}, back = 1, expanded = true, visible = true, description = "Auto Mini List for mapID #" .. self.mapID, total = 0, progress = 0 });
 						app.MiniListHeader = header;
 						table.wipe(app.HolidayHeader.g);
 						app.HolidayHeader.progress = 0;
 						app.HolidayHeader.total = 0;
+						table.sort(results, function(a, b)
+							if a then
+								if b then
+									return (a.instanceID and not b.instanceID) or (a.mapID and not b.mapID) or (a.isRaid and not b.isRaid) or (a.maps and not b.maps);
+								end
+							end
+						end);
 						for i, group in ipairs(results) do
 							local clone = {};
 							for key,value in pairs(group) do
@@ -8445,11 +8452,6 @@ end):Show();
 							clone["maps"] = nil;
 							setmetatable(clone, getmetatable(group));
 							group = clone;
-							
-							header.progress = header.progress + (group.progress or 0);
-							header.total = header.total + (group.total or 0);
-							if group.description and group.mapID then header.description = group.description; end
-							if group.isRaid then header.isRaid = group.isRaid; end
 							
 							-- If this is relative to a holiday, let's do something special
 							if GetRelativeField(group, "npcID", -3) then
@@ -8469,35 +8471,17 @@ end):Show();
 									group = app.CreateAchievement(group.parent.achievementID, { g = { group }, total = group.total, progress = group.progress, 
 										u = group.parent.u, races = group.parent.races, c = group.parent.c, nmc = group.parent.nmc, nmr = group.parent.nmr });
 								end
-								
-								-- Check to see if this group already exists in the header
-								local found = false;
-								if group.g and #group.g > 0 then
-									for i,g in ipairs(app.HolidayHeader.g) do
-										if g.g and g.achievementID == group.achievementID 
-											and g.u == group.u 
-											and g.races == group.races 
-											and g.c == group.c
-											and g.creatureID == group.creatureID 
-											and g.itemID == group.itemID 
-											and g.questID == group.questID then
-											group = group.g[1];
-											app.HolidayHeader.progress = app.HolidayHeader.progress + (group.progress or 0);
-											app.HolidayHeader.total = app.HolidayHeader.total + (group.total or 0);
-											tinsert(g.g, group);
-											found = true;
-											break;
-										end
-									end
-								end
-								
-								-- Update progress (but only if not found)
-								if not found then
-									app.HolidayHeader.progress = app.HolidayHeader.progress + (group.progress or 0);
-									app.HolidayHeader.total = app.HolidayHeader.total + (group.total or 0);
-									MergeObject(app.HolidayHeader.g, group);
-									-- tinsert(app.HolidayHeader.g, group);
-								end
+								MergeObject(app.HolidayHeader.g, group);
+							elseif group.instanceID then
+								local temp = { header };
+								header.instanceID = group.instanceID;
+								setmetatable(header, app.BaseInstance);
+								MergeObject(temp, group);
+								if #temp > 1 then MergeObject(header.g, group); end
+							elseif group.mapID and not header.instanceID then
+								local temp = { header };
+								MergeObject(temp, group);
+								if #temp > 1 then MergeObject(header.g, group); end
 							elseif group.achievementID then
 								if group.criteriaID then
 									if group.parent.achievementID then
@@ -8507,19 +8491,15 @@ end):Show();
 										group = app.CreateAchievement(group.achievementID,
 											{ g = { group }, total = group.total, progress = group.progress, u = group.u });
 									end
-									--tinsert(header.g, 1, group);
 									MergeObject(header.g, group, 1);
 								else
 									MergeObject(header.g, group);
-									--tinsert(header.g, group);
 								end
 							elseif group.criteriaID and group.parent.achievementID then
 								group = app.CreateAchievement(group.parent.achievementID, { g = { group }, total = group.total, progress = group.progress, u = group.parent.u });
-								--tinsert(header.g, 1, group);
 								MergeObject(header.g, group, 1);
 							else
 								MergeObject(header.g, group);
-								--tinsert(header.g, group);
 							end
 						end
 						
@@ -8537,52 +8517,11 @@ end):Show();
 						end
 						
 						if #results > 1 and not header.mapID then
-							if not header.mapID then header.mapID = self.mapID; end
-							local count = #header.g;
-							local ins = {};
-							for i=1,count,1 do
-								local group = header.g[i];
-								if group.mapID then
-									header.text = group.text;
-									header.icon = group.icon;
-									for key,value in pairs(group) do
-										if key ~= "g" and key ~= "total" and key ~= "progress" then
-											header[key] = value;
-										end
-									end
-									break;
-								end
-							end
-							if not header.mapID then
-								for i=count,1,-1 do
-									local group = header.g[i];
-									if group.maps then
-										header.text = group.text;
-										header.icon = group.icon;
-										for key,value in pairs(group) do
-											if key ~= "g" and key ~= "total" and key ~= "progress" then
-												header[key] = value;
-											end
-										end
-									end
-								end
-							end
-							for i=count,1,-1 do
-								local group = header.g[i];
-								if (group.mapID and group.mapID == self.mapID) or (group.maps and contains(group.maps, self.mapID) and header.text == group.text) then
-									table.remove(header.g, i);
-									if group.g then tinsert(ins, group.g); end
-								end
-							end
-							for i=#ins,1,-1 do
-								for j,subgroup in ipairs(ins[i]) do
-									tinsert(header.g, subgroup);
-								end
-							end
 							header.u = nil;
 							header.visible = true;
 							setmetatable(header,
-								header.classID and app.BaseCharacterClass
+								header.instanceID and app.BaseInstance
+								or header.classID and app.BaseCharacterClass
 								or header.achievementID and app.BaseAchievement
 								or app.BaseMap);
 							if header.collectible then
@@ -8600,6 +8539,23 @@ end):Show();
 					
 					-- If we have determined that we want to expand this section, then do it
 					if results.g then
+						table.sort(results.g, function(a, b)
+							if a and b then
+								if a.difficultyID then
+									if b.difficultyID then
+										return a.difficultyID < b.difficultyID;
+									else
+										return false;
+									end
+								else
+									if b.difficultyID then
+										return true;
+									end
+								end
+								return a.isRaid and not b.isRaid;
+							end
+						end);
+						
 						if self.data then
 							ExpandGroupsRecursively(self.data, false);
 						end
@@ -8616,11 +8572,11 @@ end):Show();
 									if row.difficultyID or row.difficulties then
 										tinsert(diffs, row);
 										if row.difficultyID == difficultyID or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
-											if row.visible then
-												ExpandGroupsRecursively(row, true);
-												found = true;
-											end
+											ExpandGroupsRecursively(row, true);
+											found = true;
 										end
+									else
+										ExpandGroupsRecursively(row, true);
 									end
 								end
 							end
@@ -8629,10 +8585,8 @@ end):Show();
 									difficultyID = GetDungeonDifficultyID();
 									for _, row in ipairs(diffs) do
 										if row.difficultyID == difficultyID or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
-											if row.visible then
-												ExpandGroupsRecursively(row, true);
-												found = true;
-											end
+											ExpandGroupsRecursively(row, true);
+											found = true;
 										end
 									end
 								end
@@ -8640,10 +8594,8 @@ end):Show();
 									difficultyID = GetRaidDifficultyID();
 									for _, row in ipairs(diffs) do
 										if row.difficultyID == difficultyID or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
-											if row.visible then
-												ExpandGroupsRecursively(row, true);
-												found = true;
-											end
+											ExpandGroupsRecursively(row, true);
+											found = true;
 										end
 									end
 								end
@@ -8651,10 +8603,8 @@ end):Show();
 									difficultyID = GetLegacyRaidDifficultyID();
 									for _, row in ipairs(diffs) do
 										if row.difficultyID == difficultyID or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
-											if row.visible then
-												ExpandGroupsRecursively(row, true);
-												found = true;
-											end
+											ExpandGroupsRecursively(row, true);
+											found = true;
 										end
 									end
 									
