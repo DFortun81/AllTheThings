@@ -16,6 +16,32 @@ _.WorldDrops =
 					i(118895),	-- Plume Adorned Headdress
 					i(118896),	-- Helmet of Vile Indignation
 				}),
+				filter(51, {	-- Neck
+					{	-- Ancestral Amulet
+						["itemID"] = 116686,	-- Ancestral Amulet
+					},
+					{	-- Coldsinger Amulet
+						["itemID"] = 116677,	-- Coldsinger Amulet
+					},
+					{	-- Growthshaper Amulet
+						["itemID"] = 116679,	-- Growthshaper Amulet
+					},
+					{	-- Moonwhisper Amulet
+						["itemID"] = 116678,	-- Moonwhisper Amulet
+					},
+					{	-- Shadowsage Amulet
+						["itemID"] = 116684,	-- Shadowsage Amulet
+					},
+					{	-- Soulkeeper Amulet
+						["itemID"] = 116682,	-- Soulkeeper Amulet
+					},
+					{	-- Sunsworn Amulet
+						["itemID"] = 116683,	-- Sunsworn Amulet
+					},
+					{	-- Zangarra Amulet
+						["itemID"] = 116681,	-- Zangarra Amulet
+					},
+				}),
 				n(-321, { -- Shoulder
 					i(118823),	-- Mantle of Moera
 					i(118831),	-- Arentios' Amice of Alacrity
@@ -124,6 +150,32 @@ _.WorldDrops =
 					i(124252),	-- Jungle Assassin's Footpads
 					i(124288),	-- Unhallowed Voidlink Boots
 					i(124323),	-- Cruel Hope Crushers
+				}),
+				filter(52, {	-- Finger
+					{	-- Ancestral Ring
+						["itemID"] = 116722,	-- Ancestral Ring
+					},
+					{	-- Coldsinger Ring
+						["itemID"] = 116695,	-- Coldsinger Ring
+					},
+					{	-- Growthshaper Ring
+						["itemID"] = 116701,	-- Growthshaper Ring
+					},
+					{	-- Moonwhisper Ring
+						["itemID"] = 116698,	-- Moonwhisper Ring
+					},
+					{	-- Shadowsage Ring
+						["itemID"] = 116716,	-- Shadowsage Ring
+					},
+					{	-- Soulkeeper Ring
+						["itemID"] = 116710,	-- Soulkeeper Ring
+					},
+					{	-- Sunsworn Ring
+						["itemID"] = 116713,	-- Sunsworn Ring
+					},
+					{	-- Zangarra Ring
+						["itemID"] = 116707,	-- Zangarra Ring
+					},
 				}),
 			}),
 		},

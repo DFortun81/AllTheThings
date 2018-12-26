@@ -16,6 +16,23 @@ _.WorldDrops =
 					i(87456),	-- Hexu's Amplifying Helm
 					i(90573),	-- Wang's Unshakable Smile
 				}),
+				filter(51, {	-- Neck
+					{	-- Bejeweled Amulet
+						["itemID"] = 82225,	-- Bejeweled Amulet
+					},
+					{	-- Gemmed Amulet
+						["itemID"] = 82060,	-- Gemmed Amulet
+					},
+					{	-- Grummle Amulet
+						["itemID"] = 82170,	-- Grummle Amulet
+					},
+					{	-- Immaculate Amulet
+						["itemID"] = 82280,	-- Immaculate Amulet
+					},
+					{	-- Shamanic Amulet
+						["itemID"] = 82115,	-- Shamanic Amulet
+					},
+				}),
 				n(-321, { -- Shoulder
 					i(87489),	-- Fletcher's Sharpening Shoulders
 					i(87490),	-- Orb-Bound Shoulders
@@ -138,6 +155,23 @@ _.WorldDrops =
 					i(87435),	-- Treads of Exotic Mastery
 					i(87436),	-- Sollerets of Immovability
 					i(87695),	-- Treads of Edward the Odd
+				}),
+				filter(52, {	-- Finger
+					{	-- Bejeweled Ring
+						["itemID"] = 82228,	-- Bejeweled Ring
+					},
+					{	-- Gemmed Ring
+						["itemID"] = 82063,	-- Gemmed Ring
+					},
+					{	-- Grummle Ring
+						["itemID"] = 82173,	-- Grummle Ring
+					},
+					{	-- Immaculate Ring
+						["itemID"] = 82283,	-- Immaculate Ring
+					},
+					{	-- Shamanic Ring
+						["itemID"] = 82118,	-- Shamanic Ring
+					},
 				}),
 				filter(53, {	-- Trinket
 					i(87496),	-- Daelo's Final Words

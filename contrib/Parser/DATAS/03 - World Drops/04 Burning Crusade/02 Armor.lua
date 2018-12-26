@@ -228,6 +228,50 @@ _.WorldDrops =
 					i(31276),	-- Boots of Zealotry
 					i(31288),	-- The Master's Treads
 				}),
+				filter(52, {	-- Finger
+					{	-- Alexandrite Ring
+						["itemID"] = 25055,	-- Alexandrite Ring
+					},
+					{	-- Almandine Ring
+						["itemID"] = 25056,	-- Almandine Ring
+					},
+					{	-- Amber Band
+						["itemID"] = 25057,	-- Amber Band
+					},
+					{	-- Azurite Ring
+						["itemID"] = 25045,	-- Azurite Ring
+					},
+					{	-- Blue Topaz Band
+						["itemID"] = 25051,	-- Blue Topaz Band
+					},
+					{	-- Hauyne Ring
+						["itemID"] = 25052,	-- Hauyne Ring
+					},
+					{	-- Lazuli Ring
+						["itemID"] = 25053,	-- Lazuli Ring
+					},
+					{	-- Moldavite Ring
+						["itemID"] = 25050,	-- Moldavite Ring
+					},
+					{	-- Rubellite Ring
+						["itemID"] = 25044,	-- Rubellite Ring
+					},
+					{	-- Scheelite Ring
+						["itemID"] = 25049,	-- Scheelite Ring
+					},
+					{	-- Smoky Quartz Ring
+						["itemID"] = 25048,	-- Smoky Quartz Ring
+					},
+					{	-- Sodalite Band
+						["itemID"] = 25054,	-- Sodalite Band
+					},
+					{	-- Spined Ring
+						["itemID"] = 25046,	-- Spined Ring
+					},
+					{	-- Tourmaline Loop
+						["itemID"] = 25047,	-- Tourmaline Loop
+					},
+				}),
 			}),
 		},
 		["tierID"] = 2

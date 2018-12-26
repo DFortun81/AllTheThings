@@ -21,6 +21,50 @@ _.WorldDrops =
 					i(45107),	-- Iron Riveted War Helm
 					i(45435),	-- Cowl of the Absolute
 				}),
+				filter(51, {	-- Neck
+					{	-- Embroidered Pendant
+						["itemID"] = 36435,	-- Embroidered Pendant
+					},
+					{	-- Figaro Chain
+						["itemID"] = 36437,	-- Figaro Chain
+					},
+					{	-- Gold Clasped Chain
+						["itemID"] = 36440,	-- Gold Clasped Chain
+					},
+					{	-- Gold Mesh Collar
+						["itemID"] = 36434,	-- Gold Mesh Collar
+					},
+					{	-- Ice Encrusted Amulet
+						["itemID"] = 36444,	-- Ice Encrusted Amulet
+					},
+					{	-- Jasper Bead Necklace
+						["itemID"] = 36436,	-- Jasper Bead Necklace
+					},
+					{	-- Painted Wooden Beads
+						["itemID"] = 36431,	-- Painted Wooden Beads
+					},
+					{	-- Pearl Woven Choker
+						["itemID"] = 36441,	-- Pearl Woven Choker
+					},
+					{	-- Platinum Medallion
+						["itemID"] = 36443,	-- Platinum Medallion
+					},
+					{	-- Serpentine Chain
+						["itemID"] = 36439,	-- Serpentine Chain
+					},
+					{	-- Shark-Toothed Necklace
+						["itemID"] = 36438,	-- Shark-Toothed Necklace
+					},
+					{	-- Silken Cord Amulet
+						["itemID"] = 36442,	-- Silken Cord Amulet
+					},
+					{	-- Silver Rope Chain
+						["itemID"] = 36432,	-- Silver Rope Chain
+					},
+					{	-- Snake Entwined Necklace
+						["itemID"] = 36433,	-- Snake Entwined Necklace
+					},
+				}),
 				n(-321, { -- Shoulder
 					i(35580),	-- Skein Woven Mantle
 					i(35616),	-- Spored Tendrils Spaulders
@@ -215,6 +259,50 @@ _.WorldDrops =
 					i(40270),	-- Boots of Septic Wounds
 					i(40558),	-- Arcanic Tramplers
 					i(44673),	-- Mammoth-Riding Boots
+				}),
+				filter(52, {	-- Finger
+					{	-- Bouquet Ring
+						["itemID"] = 36428,	-- Bouquet Ring
+					},
+					{	-- Cameo Ring
+						["itemID"] = 36424,	-- Cameo Ring
+					},
+					{	-- Devotional Band
+						["itemID"] = 36421,	-- Devotional Band
+					},
+					{	-- Engraved Ring
+						["itemID"] = 36427,	-- Engraved Ring
+					},
+					{	-- Filigree Ring
+						["itemID"] = 36422,	-- Filigree Ring
+					},
+					{	-- Floral Loop
+						["itemID"] = 36418,	-- Floral Loop
+					},
+					{	-- Gemstone Ring
+						["itemID"] = 36420,	-- Gemstone Ring
+					},
+					{	-- Gold Twisted Ring
+						["itemID"] = 36425,	-- Gold Twisted Ring
+					},
+					{	-- Glass Ring
+						["itemID"] = 36419,	-- Glass Ring
+					},
+					{	-- Oval Ring
+						["itemID"] = 36417,	-- Oval Ring
+					},
+					{	-- Posy Ring
+						["itemID"] = 36423,	-- Posy Ring
+					},
+					{	-- Puzzle Ring
+						["itemID"] = 36430,	-- Puzzle Ring
+					},
+					{	-- Spur Ring
+						["itemID"] = 36429,	-- Spur Ring
+					},
+					{	-- Stirrup Ring
+						["itemID"] = 36426,	-- Stirrup Ring
+					},
 				}),
 			}),
 		},

@@ -18,7 +18,24 @@ _.WorldDrops =
 					i(67147),	-- Je'Tze's Sparkling Tiara
 				}),
 				filter(51, {	-- Neck
-					i(66974),	-- Nightrend Choker
+					{	-- Mirkfallon Amulet
+						["itemID"] = 55401,	-- Mirkfallon Amulet
+					},
+					{	-- Moonbrook Amulet
+						["itemID"] = 55398,	-- Moonbrook Amulet
+					},
+					{	-- Nethander Amulet
+						["itemID"] = 55402,	-- Nethander Amulet
+					},
+					{	-- Nightrend Choker
+						["itemID"] = 66974,	-- Nightrend Choker
+					},
+					{	-- Sishir Amulet
+						["itemID"] = 55400,	-- Sishir Amulet
+					},
+					{	-- Swamplight Amulet
+						["itemID"] = 55399,	-- Swamplight Amulet
+					},
 				}),
 				n(-321, { -- Shoulder
 					i(59467),	-- Hide of Chromaggus
@@ -199,10 +216,21 @@ _.WorldDrops =
 					i(77177),	-- Splinterfoot Sandals
 				}),
 				filter(52, {	-- Finger
-					
-				}),
-				filter(53, {	-- Trinket
-					
+					{	-- Mirkfallon Ring
+						["itemID"] = 55419,	-- Mirkfallon Ring
+					},
+					{	-- Moonbrook Ring
+						["itemID"] = 55416,	-- Moonbrook Ring
+					},
+					{	-- Nethander Ring
+						["itemID"] = 55420,	-- Nethander Ring
+					},
+					{	-- Sishir Ring
+						["itemID"] = 55418,	-- Sishir Ring
+					},
+					{	-- Swamplight Ring
+						["itemID"] = 55417,	-- Swamplight Ring
+					},
 				}),
 			}),
 		},
