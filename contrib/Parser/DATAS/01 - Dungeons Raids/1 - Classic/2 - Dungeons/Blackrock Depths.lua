@@ -796,7 +796,10 @@ _.Instances =
 				},
 				["lvl"] = 42,
 				["mapID"] = 242,
-				["maps"] = { 243 },
+				["maps"] = {
+					243,
+					1186, -- Blackrock Depths (Allied Race)
+				},
 			}),
 		},					
 		["tierID"] = 1
