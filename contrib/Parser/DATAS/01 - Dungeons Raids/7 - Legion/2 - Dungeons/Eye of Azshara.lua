@@ -46,6 +46,7 @@ _.Instances =
 								i(134261),	-- Seawitch Gloves
 								i(134441),	-- Shellshock Footguards
 								i(137360),	-- Shoulderpads of Crashing Waves
+								i(137363),	-- Bloodied Spearhead
 							})),
 							cr(91789, e(1490, {	-- Lady Hatecoil
 								i(134238),	-- Brinewashed Leather Pants
@@ -58,6 +59,8 @@ _.Instances =
 								i(134525),	-- Seal of the Nazjatar Empire
 								i(134263),	-- Seawitch Robes
 								i(137367),	-- Stormsinger Fulmination Charge
+								i(137365),	-- Condensed Saltsea Globule
+								i(137366),	-- Gift of the Ocean Empress
 							})),
 							cr(91808, e(1479, {	-- Serpentrix
 								i(134239),	-- Brinewashed Leather Grips
@@ -69,6 +72,8 @@ _.Instances =
 								i(137373),	-- Tempered Egg of Serpentrix
 								i(134438),	-- Tunic of the Pitiless Monstrosity
 								i(137372),	-- Wristbands of the Swirling Deeps
+								i(137375),	-- Blazing Hydra Flame Sac
+								i(137377),	-- Serpentrix's Guile
 							})),
 							cr(91797, e(1491, { -- King Deepbeard
 								i(134539),	-- Braided Silver Ring
@@ -78,6 +83,8 @@ _.Instances =
 								i(134406),	-- Mainsail Cloak
 								i(134428),	-- Rising Ocean Legwraps
 								i(134456),	-- Taut Halyard Waistband
+								i(137370),	-- Heart of the Sea
+								i(137371),	-- Tumultuous Aftershock
 							})),
 							cr(96028, e(1492, {	-- Wrath of Azshara
 								ach(10780),	-- Eye of Azshara
@@ -99,6 +106,9 @@ _.Instances =
 								i(134417),	-- Slippers of Martyrdom
 								i(134497),	-- Stormcharged Choker
 								i(134478),	-- Thundercrush Pauldrons
+								i(137381),	-- Pact of Vengeful Service
+								i(137380),	-- Rage of the Tides
+								i(137379),	-- Tempestbinder's Crystal
 							}))
 						}
 					}),
@@ -116,6 +126,7 @@ _.Instances =
 								i(134261),	-- Seawitch Gloves
 								i(134441),	-- Shellshock Footguards
 								i(137360),	-- Shoulderpads of Crashing Waves
+								i(137363),	-- Bloodied Spearhead
 							})),
 							cr(91789, e(1490, {	-- Lady Hatecoil
 								i(134238),	-- Brinewashed Leather Pants
@@ -128,6 +139,8 @@ _.Instances =
 								i(134525),	-- Seal of the Nazjatar Empire
 								i(134263),	-- Seawitch Robes
 								i(137367),	-- Stormsinger Fulmination Charge
+								i(137365),	-- Condensed Saltsea Globule
+								i(137366),	-- Gift of the Ocean Empress
 							})),
 							cr(91808, e(1479, {	-- Serpentrix
 								i(134239),	-- Brinewashed Leather Grips
@@ -139,6 +152,8 @@ _.Instances =
 								i(137373),	-- Tempered Egg of Serpentrix
 								i(134438),	-- Tunic of the Pitiless Monstrosity
 								i(137372),	-- Wristbands of the Swirling Deeps
+								i(137375),	-- Blazing Hydra Flame Sac
+								i(137377),	-- Serpentrix's Guile
 							})),
 							cr(91797, e(1491, { -- King Deepbeard
 								i(134539),	-- Braided Silver Ring
@@ -148,6 +163,8 @@ _.Instances =
 								i(134406),	-- Mainsail Cloak
 								i(134428),	-- Rising Ocean Legwraps
 								i(134456),	-- Taut Halyard Waistband
+								i(137370),	-- Heart of the Sea
+								i(137371),	-- Tumultuous Aftershock
 							})),
 							cr(96028, e(1492, {	-- Wrath of Azshara
 								ach(10781),	-- Heroic: Eye of Azshara
@@ -169,6 +186,9 @@ _.Instances =
 								i(134417),	-- Slippers of Martyrdom
 								i(134497),	-- Stormcharged Choker
 								i(134478),	-- Thundercrush Pauldrons
+								i(137381),	-- Pact of Vengeful Service
+								i(137380),	-- Rage of the Tides
+								i(137379),	-- Tempestbinder's Crystal
 							}))
 						},
 					}),
@@ -187,6 +207,7 @@ _.Instances =
 								i(134261),	-- Seawitch Gloves
 								i(134441),	-- Shellshock Footguards
 								i(137360),	-- Shoulderpads of Crashing Waves
+								i(137363),	-- Bloodied Spearhead
 							})),
 							cr(91789, e(1490, {	-- Lady Hatecoil
 								ach(10457),	-- Stay Salty
@@ -200,6 +221,8 @@ _.Instances =
 								i(134525),	-- Seal of the Nazjatar Empire
 								i(134263),	-- Seawitch Robes
 								i(137367),	-- Stormsinger Fulmination Charge
+								i(137365),	-- Condensed Saltsea Globule
+								i(137366),	-- Gift of the Ocean Empress
 							})),
 							cr(91808, e(1479, {	-- Serpentrix
 								i(134239),	-- Brinewashed Leather Grips
@@ -211,6 +234,8 @@ _.Instances =
 								i(137373),	-- Tempered Egg of Serpentrix
 								i(134438),	-- Tunic of the Pitiless Monstrosity
 								i(137372),	-- Wristbands of the Swirling Deeps
+								i(137375),	-- Blazing Hydra Flame Sac
+								i(137377),	-- Serpentrix's Guile
 							})),
 							cr(91797, e(1491, { -- King Deepbeard
 								i(134539),	-- Braided Silver Ring
@@ -220,6 +245,8 @@ _.Instances =
 								i(134406),	-- Mainsail Cloak
 								i(134428),	-- Rising Ocean Legwraps
 								i(134456),	-- Taut Halyard Waistband
+								i(137370),	-- Heart of the Sea
+								i(137371),	-- Tumultuous Aftershock
 							})),
 							cr(96028, e(1492, {	-- Wrath of Azshara
 								ach(10782),	-- Mythic: Eye of Azshara
@@ -242,6 +269,9 @@ _.Instances =
 								i(134417),	-- Slippers of Martyrdom
 								i(134497),	-- Stormcharged Choker
 								i(134478),	-- Thundercrush Pauldrons
+								i(137381),	-- Pact of Vengeful Service
+								i(137380),	-- Rage of the Tides
+								i(137379),	-- Tempestbinder's Crystal
 							})),
 						},
 					})

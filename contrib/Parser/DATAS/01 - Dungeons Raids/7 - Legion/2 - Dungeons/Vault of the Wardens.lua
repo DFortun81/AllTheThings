@@ -30,6 +30,7 @@ _.Instances =
 								i(137532),	-- Seal of Saltheril
 								i(137517),	-- Striders of Furious Flight
 								i(137537),	-- Tirathon's Betrayal
+								i(137542),	-- Metamorphosis Spark
 							})),
 							cr(96015, e(1695, { -- Inquisitor Tormentorum
 								i(137503),	-- Amice of Cruel Laughter
@@ -38,6 +39,8 @@ _.Instances =
 								i(137511),	-- Hood of the Blind Executioner
 								i(137518),	-- Leggings of Biting Links
 								i(137538),	-- Orb of Torment
+								i(137544),	-- Prisoner's Wail
+								i(137543),	-- Soulsap Shackles
 							})),
 							cr(95886, e(1468, {	-- Ash'golm
 								i(139468),	-- Bindings of the Windlord (rogue appearance)
@@ -51,6 +54,8 @@ _.Instances =
 								i(137505),	-- Leggings of the Third Degree
 								i(137523),	-- Magmacrusher Girdle
 								i(137520),	-- Permafrost Waistband
+								i(137545),	-- Flashfrozen Ember
+								i(137546),	-- Molten Giant's Eye
 							})),
 							cr(95887, e(1469, {	-- Glazer
 								i(137516),	-- Collar of Blindsight
@@ -60,6 +65,7 @@ _.Instances =
 								i(137536),	-- Pendant of the Watchful Eye
 								i(137527),	-- Polished Jade Chestguard
 								i(137533),	-- Ring of Minute Mirrors
+								i(137547),	-- Pulsing Prism
 							})),
 							cr(95888, e(1470, {	-- Cordana Felsong
 								ach(10801),	-- Vault of the Wardens
@@ -79,6 +85,9 @@ _.Instances =
 								i(137521),	-- Shoulderguards of Shunned Duty
 								i(137507),	-- Waistband of Spiritual Doom
 								i(137515),	-- Warden's Martial Greaves
+								i(137548),	-- Elune's Light
+								i(137550),	-- Moonglaive Dervish
+								i(137549),	-- Shade of the Vault
 							})),
 						},
 					}),
@@ -96,6 +105,7 @@ _.Instances =
 								i(137532),	-- Seal of Saltheril
 								i(137517),	-- Striders of Furious Flight
 								i(137537),	-- Tirathon's Betrayal
+								i(137542),	-- Metamorphosis Spark
 							})),
 							cr(96015, e(1695, { -- Inquisitor Tormentorum
 								i(137503),	-- Amice of Cruel Laughter
@@ -104,6 +114,8 @@ _.Instances =
 								i(137511),	-- Hood of the Blind Executioner
 								i(137518),	-- Leggings of Biting Links
 								i(137538),	-- Orb of Torment
+								i(137544),	-- Prisoner's Wail
+								i(137543),	-- Soulsap Shackles
 							})),
 							cr(95886, e(1468, {	-- Ash'golm
 								i(139468),	-- Bindings of the Windlord (rogue appearance)
@@ -117,6 +129,8 @@ _.Instances =
 								i(137505),	-- Leggings of the Third Degree
 								i(137523),	-- Magmacrusher Girdle
 								i(137520),	-- Permafrost Waistband
+								i(137545),	-- Flashfrozen Ember
+								i(137546),	-- Molten Giant's Eye
 							})),
 							cr(95887, e(1469, {	-- Glazer
 								i(137516),	-- Collar of Blindsight
@@ -126,6 +140,7 @@ _.Instances =
 								i(137536),	-- Pendant of the Watchful Eye
 								i(137527),	-- Polished Jade Chestguard
 								i(137533),	-- Ring of Minute Mirrors
+								i(137547),	-- Pulsing Prism
 							})),
 							cr(95888, e(1470, {	-- Cordana Felsong
 								ach(10802),	-- Heroic: Vault of the Wardens
@@ -147,6 +162,9 @@ _.Instances =
 								i(137521),	-- Shoulderguards of Shunned Duty
 								i(137507),	-- Waistband of Spiritual Doom
 								i(137515),	-- Warden's Martial Greaves
+								i(137548),	-- Elune's Light
+								i(137550),	-- Moonglaive Dervish
+								i(137549),	-- Shade of the Vault
 							})),
 						},
 					}),
@@ -169,6 +187,7 @@ _.Instances =
 								i(137532),	-- Seal of Saltheril
 								i(137517),	-- Striders of Furious Flight
 								i(137537),	-- Tirathon's Betrayal
+								i(137542),	-- Metamorphosis Spark
 							})),
 							cr(96015, e(1695, { -- Inquisitor Tormentorum
 								i(137503),	-- Amice of Cruel Laughter
@@ -177,6 +196,8 @@ _.Instances =
 								i(137511),	-- Hood of the Blind Executioner
 								i(137518),	-- Leggings of Biting Links
 								i(137538),	-- Orb of Torment
+								i(137544),	-- Prisoner's Wail
+								i(137543),	-- Soulsap Shackles
 							})),
 							cr(95886, e(1468, {	-- Ash'golm
 								ach(10679),	-- I Ain't Even Cold
@@ -191,6 +212,8 @@ _.Instances =
 								i(137505),	-- Leggings of the Third Degree
 								i(137523),	-- Magmacrusher Girdle
 								i(137520),	-- Permafrost Waistband
+								i(137545),	-- Flashfrozen Ember
+								i(137546),	-- Molten Giant's Eye
 							})),
 							cr(95887, e(1469, {	-- Glazer
 								i(137516),	-- Collar of Blindsight
@@ -200,6 +223,7 @@ _.Instances =
 								i(137536),	-- Pendant of the Watchful Eye
 								i(137527),	-- Polished Jade Chestguard
 								i(137533),	-- Ring of Minute Mirrors
+								i(137547),	-- Pulsing Prism
 							})),
 							cr(95888, e(1470, {	-- Cordana Felsong
 								ach(10803),	-- Mythic: Vault of the Wardens
@@ -222,6 +246,9 @@ _.Instances =
 								i(137521),	-- Shoulderguards of Shunned Duty
 								i(137507),	-- Waistband of Spiritual Doom
 								i(137515),	-- Warden's Martial Greaves
+								i(137548),	-- Elune's Light
+								i(137550),	-- Moonglaive Dervish
+								i(137549),	-- Shade of the Vault
 							})),
 						},
 					})
