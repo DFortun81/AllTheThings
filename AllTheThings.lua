@@ -1670,22 +1670,20 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				end
 			end
 			if #temp > 0 then
-				local count = 0;
 				local listing = {};
 				local maximum = app.GetDataMember("Locations");
 				table.sort(temp);
 				for i,j in ipairs(temp) do
 					if not contains(listing, j) then
 						tinsert(listing, 1, j);
-						count = count + 1;
-						if count >= maximum then
-							count = #temp - count;
-							if count > 1 then
-								tinsert(listing, 1, "And " .. count .. " other sources...");
-								break;
-							end
-						end
 					end
+				end
+				local count = #listing;
+				if count > maximum + 1 then
+					for i=count,maximum + 1,-1 do
+						table.remove(listing, 1);
+					end
+					tinsert(listing, 1, "And " .. (count - maximum) .. " other sources...");
 				end
 				for i,text in ipairs(listing) do
 					local left, right = strsplit(DESCRIPTION_SEPARATOR, text);
