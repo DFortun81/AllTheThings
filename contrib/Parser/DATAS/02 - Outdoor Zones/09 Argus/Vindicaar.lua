@@ -743,6 +743,12 @@ _.Zones =
 						["requireSkill"] = 197, -- Tailoring
 						["sourceQuests"] = { 46941 }, -- The Path Forward
 					}),
+					q(48912, { -- Supplying the Antoran Campaign
+						["groups"] = {
+							i(152097), -- Lightforged Bulwark
+						},
+						["isWeekly"] = true,
+					}),
 				}),
 				n(127476, { -- Scouting Map
 					["groups"] = {
