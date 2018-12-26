@@ -287,6 +287,7 @@ _.Craftables =
 				},
 				{	-- Spiritguard Shoulders
 					["itemID"] = 82896,	-- Spiritguard Shoulders
+					["u"] = 1,	-- Never Available
 				},
 			}),
 			n(-323, {		-- Chest
