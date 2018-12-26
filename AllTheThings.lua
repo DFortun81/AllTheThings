@@ -1400,6 +1400,16 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				end
 			end
 			
+			if not GetDataMember("IgnoreAllFilters") then
+				local regroup = {};
+				for i,j in ipairs(group) do
+					if app.RecursiveClassAndRaceFilter(j) and app.RecursiveUnobtainableFilter(j) then
+						tinsert(regroup, j);
+					end
+				end
+				group = regroup;
+			end
+			
 			if group and #group > 0 and not group[1].achievementID then
 				-- Push up one level.
 				local subgroup = {};
