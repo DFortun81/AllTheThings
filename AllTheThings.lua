@@ -8438,6 +8438,14 @@ end):Show();
 						app.HolidayHeader.progress = 0;
 						app.HolidayHeader.total = 0;
 						for i, group in ipairs(results) do
+							local clone = {};
+							for key,value in pairs(group) do
+								clone[key] = value;
+							end
+							clone["maps"] = nil;
+							setmetatable(clone, getmetatable(group));
+							group = clone;
+							
 							header.progress = header.progress + (group.progress or 0);
 							header.total = header.total + (group.total or 0);
 							if group.description and group.mapID then header.description = group.description; end
@@ -8445,13 +8453,6 @@ end):Show();
 							
 							-- If this is relative to a holiday, let's do something special
 							if GetRelativeField(group, "npcID", -3) then
-								local clone = {};
-								for key,value in pairs(group) do
-									clone[key] = value;
-								end
-								clone["maps"] = nil;
-								setmetatable(clone, getmetatable(group));
-								group = clone;
 								if group.achievementID then
 									if group.criteriaID then
 										if group.parent.achievementID then
