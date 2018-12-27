@@ -145,6 +145,8 @@ i(157870, 263707);	-- Zandalari Direhorn
 i(161134, 261437);	-- Mecha-Mogul Mk2
 i(153493, 243201);	-- Demonic Gladiator's Storm Dragon
 i(156879, 262022);	-- Dread Gladiator's Proto-Drake
+i(163123, 272481);	-- Vicious War Riverbeast [A]
+i(163124, 270560);	-- Vicious War Clefthoof [H]
 
 ---------------
 -- PATCH 8.1 --
