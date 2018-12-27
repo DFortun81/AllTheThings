@@ -32,6 +32,8 @@ _.Instances =
 								i(134423),	-- Poisonroot Belt
 								i(134520),	-- Thornscar Wristguards
 								i(139071),	-- Tranquil Bough Vest
+								i(137302),	-- Misshapen Abomination Heart
+								i(137303),	-- Touch of Nightfall
 							})),
 							cr(103344, e(1655, {	-- Oakheart
 								i(134531),	-- Band of Twisted Bark
@@ -44,6 +46,8 @@ _.Instances =
 								i(121325),	-- Terrorweave Gloves
 								i(121319),	-- Vilescale Helm
 								i(121280),	-- Wracksoul Legplates
+								i(137308),	-- Clotted Sap of the Grove
+								i(137307),	-- Corrupted Knot
 							})),
 							cr(99200, e(1656, {	-- Dresaron
 								i(139082),	-- Bramblemail Greaves
@@ -56,6 +60,7 @@ _.Instances =
 								i(134461),	-- Thermal Bindings
 								i(139070),	-- Tranquil Bough Hood
 								i(134464),	-- Whelp Handler's Lined Boots
+								i(137313),	-- Roiling Fog
 							})),
 							cr(99192, e(1657, {	-- Shade of Xavius
 								ach(10783),	-- Darkheart Thicket
@@ -76,6 +81,8 @@ _.Instances =
 								i(121276),	-- Wracksoul Chestplate
 								i(137314),	-- Wristbands of Cursed Torment
 								i(137315),	-- Writhing Heart of Darkness
+								i(137316),	-- Torch of Shaladrassil
+								i(137317),	-- Xavius' Mad Whispers
 							})),
 						},
 					}),
@@ -94,6 +101,8 @@ _.Instances =
 								i(134423),	-- Poisonroot Belt
 								i(134520),	-- Thornscar Wristguards
 								i(139071),	-- Tranquil Bough Vest
+								i(137302),	-- Misshapen Abomination Heart
+								i(137303),	-- Touch of Nightfall
 							})),
 							cr(103344, e(1655, {	-- Oakheart
 								i(134531),	-- Band of Twisted Bark
@@ -106,6 +115,8 @@ _.Instances =
 								i(121325),	-- Terrorweave Gloves
 								i(121319),	-- Vilescale Helm
 								i(121280),	-- Wracksoul Legplates
+								i(137308),	-- Clotted Sap of the Grove
+								i(137307),	-- Corrupted Knot
 							})),
 							cr(99200, e(1656, {	-- Dresaron
 								i(139082),	-- Bramblemail Greaves
@@ -118,6 +129,7 @@ _.Instances =
 								i(134461),	-- Thermal Bindings
 								i(139070),	-- Tranquil Bough Hood
 								i(134464),	-- Whelp Handler's Lined Boots
+								i(137313),	-- Roiling Fog
 							})),
 							cr(99192, e(1657, {	-- Shade of Xavius
 								ach(10784),	-- Heroic: Darkheart Thicket
@@ -139,6 +151,8 @@ _.Instances =
 								i(121276),	-- Wracksoul Chestplate
 								i(137314),	-- Wristbands of Cursed Torment
 								i(137315),	-- Writhing Heart of Darkness
+								i(137316),	-- Torch of Shaladrassil
+								i(137317),	-- Xavius' Mad Whispers
 							})),
 						},
 					}),
@@ -157,6 +171,8 @@ _.Instances =
 								i(134423),	-- Poisonroot Belt
 								i(134520),	-- Thornscar Wristguards
 								i(139071),	-- Tranquil Bough Vest
+								i(137302),	-- Misshapen Abomination Heart
+								i(137303),	-- Touch of Nightfall
 							})),
 							cr(103344, e(1655, {	-- Oakheart
 								i(134531),	-- Band of Twisted Bark
@@ -169,6 +185,8 @@ _.Instances =
 								i(121325),	-- Terrorweave Gloves
 								i(121319),	-- Vilescale Helm
 								i(121280),	-- Wracksoul Legplates
+								i(137308),	-- Clotted Sap of the Grove
+								i(137307),	-- Corrupted Knot
 							})),
 							cr(99200, e(1656, {	-- Dresaron
 								ach(10766),	-- Egg-cellent!
@@ -182,6 +200,7 @@ _.Instances =
 								i(134461),	-- Thermal Bindings
 								i(139070),	-- Tranquil Bough Hood
 								i(134464),	-- Whelp Handler's Lined Boots
+								i(137313),	-- Roiling Fog
 							})),
 							cr(99192, e(1657, {	-- Shade of Xavius
 								ach(10769),	-- Burning Down the House
@@ -204,6 +223,8 @@ _.Instances =
 								i(121276),	-- Wracksoul Chestplate
 								i(137314),	-- Wristbands of Cursed Torment
 								i(137315),	-- Writhing Heart of Darkness
+								i(137316),	-- Torch of Shaladrassil
+								i(137317),	-- Xavius' Mad Whispers
 							})),
 						},
 					}),
