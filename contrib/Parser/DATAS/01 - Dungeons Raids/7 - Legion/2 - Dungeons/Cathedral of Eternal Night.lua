@@ -7,6 +7,9 @@ _.Instances =
 	{ -- Legion
 		["groups"] = {
 			inst(900, {	-- Cathedral of Eternal Night
+				["lvl"] = 110,
+				["mapID"] = 845,
+				["maps"] = { 846, 847, 848, 849 },
 				["groups"] = {
 					--[[
 					n(0, { -- Zone Drops
@@ -67,6 +70,8 @@ _.Instances =
 							i(144477),	-- Splinters of Agronox
 							i(144483),	-- Spore-Coated Vest
 							i(144498),	-- Vambraces of Fel Crust
+							i(144458),	-- Agronox's Unsullied Heartwood
+							i(144459),	-- Knot of Fel
 						})),
 						cr(117194, e(1906, {	-- Thrashbite the Scornful
 							i(144492),	-- Chain-Draped Gauntlets
@@ -78,6 +83,9 @@ _.Instances =
 							i(144484),	-- Tattered Scornful Leggings
 							i(144499),	-- Tenderized Breastplate
 							i(144472),	-- Thrashbite's Cummerbund
+							i(144462),	-- Fel-Tempered Link
+							i(144460),	-- Fury of the Scorned
+							i(144461),	-- Thrashbite's Spite
 						})),
 						cr(119542, e(1904, {	-- Domatrax
 							i(144496),	-- Burning Chain Waistguard
@@ -90,6 +98,8 @@ _.Instances =
 							i(144474),	-- Sheer Felwoven Hosiery
 							i(144489),	-- Shoulderguards of Legion Domination
 							i(144500),	-- Two-Toed Trashstompers
+							i(144466),	-- Gore-Flecked Feaster Fang
+							i(144467),	-- Vial of Eternal Moon
 						})),
 						cr(120793, e(1878, {	-- Mephistroth
 							ach(11700),	-- Cathedral of Eternal Night
@@ -104,6 +114,9 @@ _.Instances =
 							i(144473),	-- Nathrezim Acolyte's Robes
 							i(144502),	-- Shadowed Grips of the Nathrezim
 							i(144487),	-- Treads of Creeping Shadows
+							i(144465),	-- Essence of the Legion Tempest
+							i(144464),	-- Mephistroth's Nail
+							i(144463),	-- Shard of Kaldorei Stained Glass
 						})),
 					}),
 					d(23, {	-- Mythic
@@ -135,6 +148,8 @@ _.Instances =
 							i(144477),	-- Splinters of Agronox
 							i(144483),	-- Spore-Coated Vest
 							i(144498),	-- Vambraces of Fel Crust
+							i(144458),	-- Agronox's Unsullied Heartwood
+							i(144459),	-- Knot of Fel
 						})),
 						cr(117194, e(1906, {	-- Thrashbite the Scornful
 							ach(11769),	-- A Steamy Romance Saga
@@ -147,6 +162,9 @@ _.Instances =
 							i(144484),	-- Tattered Scornful Leggings
 							i(144499),	-- Tenderized Breastplate
 							i(144472),	-- Thrashbite's Cummerbund
+							i(144462),	-- Fel-Tempered Link
+							i(144460),	-- Fury of the Scorned
+							i(144461),	-- Thrashbite's Spite
 						})),
 						cr(119542, e(1904, {	-- Domatrax
 							i(144496),	-- Burning Chain Waistguard
@@ -159,6 +177,8 @@ _.Instances =
 							i(144474),	-- Sheer Felwoven Hosiery
 							i(144489),	-- Shoulderguards of Legion Domination
 							i(144500),	-- Two-Toed Trashstompers
+							i(144466),	-- Gore-Flecked Feaster Fang
+							i(144467),	-- Vial of Eternal Moon
 						})),
 						cr(120793, e(1878, {	-- Mephistroth
 							ach(11703),	-- Master of Shadows
@@ -173,12 +193,12 @@ _.Instances =
 							i(144473),	-- Nathrezim Acolyte's Robes
 							i(144502),	-- Shadowed Grips of the Nathrezim
 							i(144487),	-- Treads of Creeping Shadows
+							i(144465),	-- Essence of the Legion Tempest
+							i(144464),	-- Mephistroth's Nail
+							i(144463),	-- Shard of Kaldorei Stained Glass
 						})),
 					}),
 				},
-				["lvl"] = 110,
-				["mapID"] = 845,
-				["maps"] = { 846, 847, 848, 849 },
 			}),
 		},
 		["tierID"] = 7,
