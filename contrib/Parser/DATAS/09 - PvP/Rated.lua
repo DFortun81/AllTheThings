@@ -11,13 +11,18 @@ _.PVP =
 				["npcID"] = -241,	-- Season Rewards
 				["icon"] = "Interface\\Icons\\inv_misc_diachest01",
 				["g"] = {
-					{	-- Vicious War Clefthoof
-						["itemID"] = 163124,	-- Vicious War Clefthoof
-						["races"] = HORDE_ONLY,
-					},
-					{	-- Vicious War Riverbeast
-						["itemID"] = 163123,	-- Vicious War Riverbeast
-						["races"] = ALLIANCE_ONLY,
+					{	-- Player vs. Player (Battle for Azeroth Season 1)
+						["npcID"] = -3158,	-- Player vs. Player (Battle for Azeroth Season 1)
+						["g"] = {
+							{	-- Vicious War Clefthoof
+								["itemID"] = 163124,	-- Vicious War Clefthoof
+								["races"] = HORDE_ONLY,
+							},
+							{	-- Vicious War Riverbeast
+								["itemID"] = 163123,	-- Vicious War Riverbeast
+								["races"] = ALLIANCE_ONLY,
+							},
+						},
 					},
 				},
 			},

@@ -1330,6 +1330,7 @@ AllTheThings.Locales.enUS = {
 		[-1001] = "The Black Vault",
 
 -- Other Sets
+		[-3158] = string.format(PLAYER_V_PLAYER_SEASON, 1),						-- Player vs. Player (Battle for Azeroth Season %d)
 		[-3159] = GARRISON_TIER.." 6.5 "..WARDROBE_SETS,
 		[-3160] = string.format(GARRISON_CURRENT_LEVEL.." "..WARDROBE_SETS, 21),
 		[-3161] = string.format(GARRISON_CURRENT_LEVEL.." "..WARDROBE_SETS, 20),
