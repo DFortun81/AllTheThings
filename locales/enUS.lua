@@ -1266,7 +1266,7 @@ AllTheThings.Locales.enUS = {
 		[-549] = "Korea Only",
 		[-550] = "Starcraft Collector's Edition",
 		[-551] = "Diablo Collector's Edition",
-
+		[-552] = "Warcraft 3 Reforged Preorder",
 		[-553] = "2006 ICoke Promotion",
 		[-554] = "EU Fansite Promotion",
 		[-555] = "Korean Promotional Event",

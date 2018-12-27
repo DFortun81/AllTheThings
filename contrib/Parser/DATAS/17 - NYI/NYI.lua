@@ -640,6 +640,11 @@ _.NeverImplemented =
 		un(1, i(166436)),	-- Sandy Nightsaber (only on ptr)
 		un(1, i(163063)),	-- Reins of the spectral phoenix (old trash 100 rep award)
 		un(1, i(163188)),	-- Surf Jelly (testing version)
+		un(1, i(163879)),	-- Reins of the Proudmoore Sea Scout
+		un(1, i(163908)),	-- Reins of the Dusky Waycrest Gryphon
+		un(1, i(163909)),	-- Reins of the Stormsong Coastwatcher
+		un(1, i(163186)),	-- Tempestuous Skystallion (Old 400 Mounts Reward)
+		
 	}),
 	n(-162, { -- Pets
 		un(1, model(65527, i(129108, {	-- Son of Goredome		 				(Never added in Game)
@@ -1155,6 +1160,8 @@ _.NeverImplemented =
 	un(1, i(161988)),	-- Tidespray Linen Cloak of the Feather
 	un(1, i(161991)),	-- Tidespray Linen Cloak of Resilience
 	un(1, i(165261)),	-- Unknown Cloak
+	un(1, i(163121)),	-- Vicious War Basilisk (Horde, Red, probably will be added in a later patch)
+	un(1, i(163122)),	-- Vicious War Basilisk (Ally, Blue, probably will be added in a later patch)
 
 ------------------------------------------------------------
 --			T E M P O R A R Y			I T E M S		  --

@@ -54,6 +54,9 @@ _.Achievements =
 					}),
 					un(3, ach(11425)),		-- Herald of Flames
 					ach(9926),				-- Hero of the Storm
+					ach(13196, {				-- Meat Marauder
+						i(164571),				-- Meat Wagon
+					}),
 					un(16, ach(6185)),		-- Murkablo
 					un(16, ach(8793)),		-- Murkalot
 					un(16, ach(10322)),		-- Murkidan
