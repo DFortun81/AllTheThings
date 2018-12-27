@@ -25,6 +25,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 					dr(	1.3	, i(	67149	)), --	Heartbound Tome
 					dr(	1.3	, i(	67135	)), --	Morrie's Waywalker Wrap
 					dr(	0.9	, i(	67145	)), --	Blockade's Lost Shield
+					i(67129),	-- Signet of High Arcanist Savor
 				},
 				["maps"] = { 249 }, -- Uldum
 			}), 
@@ -48,6 +49,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 					dr(	1.9, i(67148)), --	Kilt of Trollish Dreams
 					dr(	1.6, i(67135)), --	Morrie's Waywalker Wrap
 					dr(	1.3, i(67132)), --	Grips of the Failed Immortal
+					i(67129),	-- Signet of High Arcanist Savor
 				},
 				["maps"] = { 198 }, -- Mount Hyjal
 			}), 
@@ -71,6 +73,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 					dr(1.1, i(67131)),	-- Ritssyn's Ruminous Drape
 					dr(1.9, i(67146)),	-- Woundsplicer Handwraps
 					dr(4, i(67142)),	-- Zom's Electrostatic Cloak
+					i(67129),	-- Signet of High Arcanist Savor
 				},
 				["maps"] = { 241 }, -- Twilight Highlands
 			}), 
@@ -105,6 +108,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 					dr(1.10, i(67150)),	-- Arrowsinger Legguards
 					dr(1.00, i(67145)),	-- Blockade's Lost Shield
 					dr(0.80, i(67143)),	-- Icebone Hauberk
+					i(67129),	-- Signet of High Arcanist Savor
 				},
 				["maps"] = { 207 }, -- Deepholm
 			}),

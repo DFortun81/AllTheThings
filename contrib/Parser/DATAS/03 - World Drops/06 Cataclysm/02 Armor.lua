@@ -216,6 +216,9 @@ _.WorldDrops =
 					i(77177),	-- Splinterfoot Sandals
 				}),
 				filter(52, {	-- Finger
+					{	-- Band of the Virtuous
+						["itemID"] = 66987,	-- Band of the Virtuous
+					},
 					{	-- Mirkfallon Ring
 						["itemID"] = 55419,	-- Mirkfallon Ring
 					},
@@ -224,6 +227,9 @@ _.WorldDrops =
 					},
 					{	-- Nethander Ring
 						["itemID"] = 55420,	-- Nethander Ring
+					},
+					{	-- Signet of High Arcanist Savor
+						["itemID"] = 67129,	-- Signet of High Arcanist Savor
 					},
 					{	-- Sishir Ring
 						["itemID"] = 55418,	-- Sishir Ring
