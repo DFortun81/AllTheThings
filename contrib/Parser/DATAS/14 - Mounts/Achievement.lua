@@ -67,6 +67,9 @@ _.Mounts =
 		i(102533),	-- Vicious Skeletal Warhorse*
 		i(142234),	-- Vicious War Bear (Alliance)*
 		i(142235),	-- Vicious War Bear (Horde)*
+		{	-- Vicious War Clefthoof
+			["itemID"] = 163124,	-- Vicious War Clefthoof
+		},
 		i(140350),	-- Vicious War Elekk*
 		i(152869),  -- Vicious War Fox (Horde)*
 		i(152870),	-- Vicious War Fox (Alliance)*
@@ -75,6 +78,9 @@ _.Mounts =
 		i(124089),	-- Vicious War Mechanostrider*
 		i(116777),	-- Vicious War Ram*
 		i(116778),	-- Vicious War Raptor*
+		{	-- Vicious War Riverbeast
+			["itemID"] = 163123,	-- Vicious War Riverbeast
+		},
 		i(102514),	-- Vicious Warsaber*
 		i(142437),	-- Vicious War Scorpion*
 		i(70909),	-- Vicious War Steed*
