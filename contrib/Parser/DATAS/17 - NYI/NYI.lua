@@ -634,7 +634,12 @@ _.NeverImplemented =
 		un(1, i(129744)),	-- Iron Warhorse
 		un(1, i(137576)),	-- Dim Coldflame Core
 		un(1, i(137615)),	-- Molten Flarecore
-		
+		un(1, i(161664)),	-- Reins of the Armored Ebony Pterrordax (only on beta)
+		un(1, i(161666)),	-- Reins of the Armored Orange Pterrordax (only on beta)
+		un(1, i(161667)),	-- Reins of the Armored Albino Pterrordax (only on beta)
+		un(1, i(166436)),	-- Sandy Nightsaber (only on ptr)
+		un(1, i(163063)),	-- Reins of the spectral phoenix (old trash 100 rep award)
+		un(1, i(163188)),	-- Surf Jelly (testing version)
 	}),
 	n(-162, { -- Pets
 		un(1, model(65527, i(129108, {	-- Son of Goredome		 				(Never added in Game)
@@ -1145,6 +1150,11 @@ _.NeverImplemented =
 	un(1, i(147036)),	-- Fel-Stippled Legguards 								(removed Beta)
 	un(1, i(147058)), 	-- Chaos-Calming Wristguards 							(removed Beta)
 	un(1, i(147074)),	-- Vambraces of Resoulte Justice 						(removed Beta)
+	
+	-- Those Items are currently not possible to load ingame (BFA Items), but they might be with a new patch
+	un(1, i(161988)),	-- Tidespray Linen Cloak of the Feather
+	un(1, i(161991)),	-- Tidespray Linen Cloak of Resilience
+	un(1, i(165261)),	-- Unknown Cloak
 
 ------------------------------------------------------------
 --			T E M P O R A R Y			I T E M S		  --

@@ -50,6 +50,9 @@ _.Zones =
 						i(150956),	-- Garothi Greaves
 						i(150963),	-- Garothi Sabatons
 					}),
+				--	n(-387, { -- Relic
+				--		
+				--	}),
 				},
 				["lvl"] = 110,
 			}),
