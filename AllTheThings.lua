@@ -7186,24 +7186,8 @@ local function UpdateWindow(self, force, got)
 	if self.data and (force or self:IsVisible()) then
 		self.data.expanded = true;
 		if self.data.baseIndent and self.data.g then
-			-- This is Mini Listed Data
-			local count = 0;
 			for i, data in ipairs(self.data.g) do
-				if data.visible then
-					count = count + 1;
-				end
-			end
-			if count > 1 then
-				--tinsert(self.rowData, 1, self.data);
-				for i, data in ipairs(self.data.g) do
-					ProcessGroup(self.rowData, data, 0, self.data.back or 0);
-				end
-			else
-				for i, data in ipairs(self.data.g) do
-					if data.visible then
-						ProcessGroup(self.rowData, data, 0, self.data.back or 0);
-					end
-				end
+				ProcessGroup(self.rowData, data, 0, self.data.back or 0);
 			end
 		else
 			ProcessGroup(self.rowData, self.data, 0, self.data.back or 0);
@@ -8396,7 +8380,7 @@ app:GetWindow("Debugger", UIParent, function(self)
 end):Show();
 --]]--
 (function()
-	app:GetWindow("CurrentInstance", UIParent, function(self)
+	app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 		if not self.initialized then
 			self.initialized = true;
 			self.openedOnLogin = false;
@@ -8729,7 +8713,7 @@ end):Show();
 		self.data.total = 0;
 		self.data.back = 1;
 		UpdateGroups(self.data, self.data.g);
-		UpdateWindow(self, true);
+		UpdateWindow(self, true, got);
 	end);
 end)();
 app:GetWindow("RaidAssistant", UIParent, function(self)
