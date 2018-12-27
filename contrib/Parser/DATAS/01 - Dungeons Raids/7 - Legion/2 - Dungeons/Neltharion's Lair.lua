@@ -82,6 +82,8 @@ _.Instances =
 								i(139130),	-- Sunfrost Wristwraps
 								i(134491),	-- Understone Gorget
 								i(137336),	-- Vest of Rupturing Diamonds
+								i(137340),	-- Crystalline Energies
+								i(137339),	-- Quivering Blightshard Husk
 							})),
 							cr(91004, e(1665, {	-- Ularogg Cragshaper
 								i(134164),	-- Bitestone Wristwraps
@@ -94,6 +96,8 @@ _.Instances =
 								i(134152),	-- Steelgazer Hide Hood
 								i(137344),	-- Talisman of the Cragshaper
 								i(137354),	-- Tunic of Screaming Earth
+								i(137347),	-- Fragment of Loathing
+								i(137346),	-- Murmuring Idol
 							})),
 							cr(91005, e(1673, {	-- Naraxas
 								i(134524),	-- Band of the Wyrm Matron
@@ -103,6 +107,8 @@ _.Instances =
 								i(134408),	-- Putrid Carapace
 								i(134511),	-- Subterranean Horror Faceguard
 								i(134458),	-- Wristbands of Rousing Violence
+								i(137350),	-- Monstrous Gluttony
+								i(137351),	-- Noxious Entrails
 							})),
 							cr(91007, e(1687, {	-- Dargrul
 								ach(10795),	-- Neltharion's Lair
@@ -123,6 +129,8 @@ _.Instances =
 								i(134154),	-- Steelgazer Hide Mantle
 								i(134517),	-- Tremorguard Pauldrons
 								i(137352),	-- Tunic of Smoldering Ire
+								i(137358),	-- Hate-Sculpted Magma
+								i(137359),	-- Pebble of Ages
 							})),
 						},
 					}),
@@ -140,6 +148,8 @@ _.Instances =
 								i(139130),	-- Sunfrost Wristwraps
 								i(134491),	-- Understone Gorget
 								i(137336),	-- Vest of Rupturing Diamonds
+								i(137340),	-- Crystalline Energies
+								i(137339),	-- Quivering Blightshard Husk
 							})),
 							cr(91004, e(1665, {	-- Ularogg Cragshaper
 								i(134164),	-- Bitestone Wristwraps
@@ -152,6 +162,8 @@ _.Instances =
 								i(134152),	-- Steelgazer Hide Hood
 								i(137344),	-- Talisman of the Cragshaper
 								i(137354),	-- Tunic of Screaming Earth
+								i(137347),	-- Fragment of Loathing
+								i(137346),	-- Murmuring Idol
 							})),
 							cr(91005, e(1673, {	-- Naraxas
 								i(134524),	-- Band of the Wyrm Matron
@@ -161,6 +173,8 @@ _.Instances =
 								i(134408),	-- Putrid Carapace
 								i(134511),	-- Subterranean Horror Faceguard
 								i(134458),	-- Wristbands of Rousing Violence
+								i(137350),	-- Monstrous Gluttony
+								i(137351),	-- Noxious Entrails
 							})),
 							cr(91007, e(1687, {	-- Dargrul
 								ach(10796),	-- Heroic: Neltharion's Lair
@@ -184,6 +198,8 @@ _.Instances =
 								i(134154),	-- Steelgazer Hide Mantle
 								i(134517),	-- Tremorguard Pauldrons
 								i(137352),	-- Tunic of Smoldering Ire
+								i(137358),	-- Hate-Sculpted Magma
+								i(137359),	-- Pebble of Ages
 							})),
 						},
 					}),
@@ -201,6 +217,8 @@ _.Instances =
 								i(139130),	-- Sunfrost Wristwraps
 								i(134491),	-- Understone Gorget
 								i(137336),	-- Vest of Rupturing Diamonds
+								i(137340),	-- Crystalline Energies
+								i(137339),	-- Quivering Blightshard Husk
 							})),
 							cr(91004, e(1665, {	-- Ularogg Cragshaper
 								i(134164),	-- Bitestone Wristwraps
@@ -213,6 +231,8 @@ _.Instances =
 								i(134152),	-- Steelgazer Hide Hood
 								i(137344),	-- Talisman of the Cragshaper
 								i(137354),	-- Tunic of Screaming Earth
+								i(137347),	-- Fragment of Loathing
+								i(137346),	-- Murmuring Idol
 							})),
 							cr(91005, e(1673, {	-- Naraxas
 								ach(10875),	-- Can't Eat Just One
@@ -223,6 +243,8 @@ _.Instances =
 								i(134408),	-- Putrid Carapace
 								i(134511),	-- Subterranean Horror Faceguard
 								i(134458),	-- Wristbands of Rousing Violence
+								i(137350),	-- Monstrous Gluttony
+								i(137351),	-- Noxious Entrails
 							})),
 							cr(91007, e(1687, {	-- Dargrul
 								ach(10797),	-- Mythic: Neltharion's Lair
@@ -247,6 +269,8 @@ _.Instances =
 								i(134154),	-- Steelgazer Hide Mantle
 								i(134517),	-- Tremorguard Pauldrons
 								i(137352),	-- Tunic of Smoldering Ire
+								i(137358),	-- Hate-Sculpted Magma
+								i(137359),	-- Pebble of Ages
 							})),
 						},
 					}),
