@@ -4,8 +4,14 @@
 
 _.Instances = { tier(7, {	-- Legion
 	n(-7, { -- World Bosses
+		["isRaid"] = true,
+		["lvl"] = 110,
+		["modID"] = 3,
 		["groups"] = {
 			cr(109943, e(1790, { -- Ana-Mouz 
+				["questID"] = 43512, -- Change to tracking quest later.
+				["isRaid"] = true,
+				["maps"] = { 680 }, -- Suramar
 				["groups"] = {
 					{
 						["achievementID"] = 11160,	-- Unleashed Monstrosities [Achievement]
@@ -20,11 +26,11 @@ _.Instances = { tier(7, {	-- Legion
 					i(141486),	-- Demonic Birthstone Ring
 					i(141520),	-- Imp-Eye Diamond
 				},
-				["questID"] = 43512, -- Change to tracking quest later.
-				["isRaid"] = true,
-				["maps"] = { 680 }, -- Suramar
 			})),	
 			cr(121124, e(1956, { -- Apocron 
+				["questID"] = 47061, -- Change to tracking quest later
+				["isRaid"] = true,
+				["maps"] = { 646 }, -- The Broken Shore
 				["groups"] = {
 					{
 						["achievementID"] = 11786,	-- Terrors of the Shore [Achievement]
@@ -38,11 +44,11 @@ _.Instances = { tier(7, {	-- Legion
 					i(147760),	-- Apocron's Energy Core
 					i(147759),	-- Charged Felfire Casing
 				},
-				["questID"] = 47061, -- Change to tracking quest later
-				["isRaid"] = true,
-				["maps"] = { 646 }, -- The Broken Shore
 			})),
 			cr(117239, e(1883, { -- Brutallus 
+				["questID"] = 46947, -- Change to tracking quest later.
+				["isRaid"] = true,
+				["maps"] = { 646 }, -- The Broken Shore
 				["groups"] = {
 					{
 						["achievementID"] = 11786,	-- Terrors of the Shore [Achievement]
@@ -58,11 +64,11 @@ _.Instances = { tier(7, {	-- Legion
 					i(147755),	-- Brutallus's Wretched Heart
 					i(147756),	-- Crashing Ember
 				},
-				["questID"] = 46947, -- Change to tracking quest later.
-				["isRaid"] = true,
-				["maps"] = { 646 }, -- The Broken Shore
 			})),
 			cr(109331, e(1774, { -- Calamir 
+				["questID"] = 44502,
+				["isRaid"] = true,
+				["maps"] = { 630 }, -- Azsuna
 				["groups"] = {
 					{
 						["achievementID"] = 11160,	-- Unleashed Monstrosities [Achievement]
@@ -77,11 +83,11 @@ _.Instances = { tier(7, {	-- Legion
 					i(141533),	-- Ring of Frozen Magic
 					i(141522),	-- Calamir's Jaw
 				},
-				["questID"] = 44502,
-				["isRaid"] = true,
-				["maps"] = { 630 }, -- Azsuna
 			})),
 			cr(110378, e(1789, { -- Drugon the Frostblood 
+				["questID"] = 43448, -- Change to tracking quest later.
+				["isRaid"] = true,
+				["maps"] = { 650 }, -- Highmountain
 				["groups"] = {
 					{
 						["achievementID"] = 11160,	-- Unleashed Monstrosities [Achievement]
@@ -96,11 +102,11 @@ _.Instances = { tier(7, {	-- Legion
 					i(141535),	-- Ettin Fingernail
 					i(141517),	-- Drugon's Snowglobe
 				},
-				["questID"] = 43448, -- Change to tracking quest later.
-				["isRaid"] = true,
-				["maps"] = { 650 }, -- Highmountain
 			})),
 			cr(99929, e(1795, {	 -- Flotsam
+				["questID"] = 43985, -- Change to tracking quest later.
+				["isRaid"] = true,
+				["maps"] = { 650 }, -- Highmountain
 				["groups"] = {
 					{
 						["achievementID"] = 11160,	-- Unleashed Monstrosities [Achievement]
@@ -117,11 +123,11 @@ _.Instances = { tier(7, {	-- Legion
 					i(141544),	-- Marshstomper Oracle's Loop
 					i(141516),	-- "Liberated" Un'goro Relic
 				},
-				["questID"] = 43985, -- Change to tracking quest later.
-				["isRaid"] = true,
-				["maps"] = { 650 }, -- Highmountain
 			})),
 			cr(108879, e(1770, { -- Humongris <The Wizard>
+				["questID"] = 42819, -- Change to tracking quest later.
+				["isRaid"] = true,
+				["maps"] = { 641 }, -- Val'sharah
 				["groups"] = {
 					{
 						["achievementID"] = 11160,	-- Unleashed Monstrosities [Achievement]
@@ -143,11 +149,11 @@ _.Instances = { tier(7, {	-- Legion
 					i(141536),	-- Padawsen's Unlucky Charm
 					i(141521),	-- Sea Giant Toothpick Fragment
 				},
-				["questID"] = 42819, -- Change to tracking quest later.
-				["isRaid"] = true,
-				["maps"] = { 641 }, -- Val'sharah
 			})),
 			cr(108829, e(1769, { -- Levantus 
+				["questID"] = 43192, -- Change to tracking quest later.
+				["isRaid"] = true,
+				["maps"] = { 630 }, -- Azsuna
 				["groups"] = {
 					{
 						["achievementID"] = 11160,	-- Unleashed Monstrosities [Achievement]
@@ -165,11 +171,11 @@ _.Instances = { tier(7, {	-- Legion
 					i(141545),	-- Ring of Deep Sea Pearls
 					i(141523),	-- Fel-Scented Bait
 				},
-				["questID"] = 43192, -- Change to tracking quest later.
-				["isRaid"] = true,
-				["maps"] = { 630 }, -- Azsuna
 			})),
-			cr(117303, e(1884, { -- Malificus 
+			cr(117303, e(1884, { -- Malificus
+				["questID"] = 47086,
+				["isRaid"] = true,
+				["maps"] = { 646 }, -- The Broken Shore
 				["groups"] = {
 					{
 						["achievementID"] = 11786,	-- Terrors of the Shore [Achievement]
@@ -186,11 +192,11 @@ _.Instances = { tier(7, {	-- Legion
 					i(147758),	-- Beguiling Revelation
 					i(147754),	-- Gory Dreadlord Horn
 				},
-				["questID"] = 47086,
-				["isRaid"] = true,
-				["maps"] = { 646 }, -- The Broken Shore
 			})),	
 			cr(110321, e(1783, { -- Na'zak the Fiend 
+				["questID"] = 43513, -- Change to tracking quest later.
+				["isRaid"] = true,
+				["maps"] = { 680 }, -- Suramar
 				["groups"] = {
 					{
 						["achievementID"] = 11160,	-- Unleashed Monstrosities [Achievement]
@@ -205,11 +211,15 @@ _.Instances = { tier(7, {	-- Legion
 					i(141488),	-- Mana-Dowsing Ring
 					i(141515),	-- Leystone Nugget
 				},
-				["questID"] = 43513, -- Change to tracking quest later.
-				["isRaid"] = true,
-				["maps"] = { 680 }, -- Suramar
 			})),	
 			e(1749, { -- Nithogg 
+				["questID"] = 42270, -- Change to tracking quest later.
+				["isRaid"] = true,
+				["maps"] = { 634 }, -- Stormheim
+				["crs"] = {
+					107544, 
+					107023,
+				},
 				["groups"] = {
 					{
 						["achievementID"] = 11160,	-- Unleashed Monstrosities [Achievement]
@@ -225,15 +235,11 @@ _.Instances = { tier(7, {	-- Legion
 					i(141546),	-- Cursed Warden's Keepsake
 					i(141519),	-- Pillaged Titan Disc
 				},
-				["questID"] = 42270, -- Change to tracking quest later.
-				["isRaid"] = true,
-				["maps"] = { 634 }, -- Stormheim
-				["crs"] = {
-					107544, 
-					107023,
-				},
 			}),
-			cr(108678, e(1763, { -- Shar'thos 
+			cr(108678, e(1763, { -- Shar'thos
+				["questID"] = 42779, -- Change to tracking quest later.
+				["isRaid"] = true,
+				["maps"] = { 641 }, -- Val'sharah 
 				["groups"] = {
 					{
 						["achievementID"] = 11160,	-- Unleashed Monstrosities [Achievement]
@@ -248,11 +254,11 @@ _.Instances = { tier(7, {	-- Legion
 					i(141495),	-- Robe of Fever Dreams
 					i(141518),	-- Decaying Dragonfang
 				},
-				["questID"] = 42779, -- Change to tracking quest later.
-				["isRaid"] = true,
-				["maps"] = { 641 }, -- Val'sharah
 			})),
 			cr(117470, e(1885, { -- Si'vash 
+				["questID"] = 46945, -- Change to tracking quest later.
+				["isRaid"] = true,
+				["maps"] = { 646 }, -- The Broken Shore
 				["groups"] = {
 					{
 						["achievementID"] = 11786,	-- Terrors of the Shore [Achievement]
@@ -268,11 +274,16 @@ _.Instances = { tier(7, {	-- Legion
 					i(147757),	-- Globule of Submersion
 					i(147761),	-- Sandblasted Conch
 				},
-				["questID"] = 46945, -- Change to tracking quest later.
-				["isRaid"] = true,
-				["maps"] = { 646 }, -- The Broken Shore
 			})),
-			cr(106984, e(1756, { -- The Soultakers (Soultrapper Mevra; Captain Hring 106981, Reaver Jdorn 106982)
+			e(1756, { -- The Soultakers
+				["questID"] = 42269, -- Change to tracking quest later.
+				["isRaid"] = true,
+				["maps"] = { 634 }, -- Stormheim
+				["crs"] = {
+					106981,	-- Captain Hring
+					106982,	-- Reaver Jdorn
+					106984,	-- Soultrapper Mevra
+				},
 				["groups"] = {
 					{
 						["achievementID"] = 11160,	-- Unleashed Monstrosities [Achievement]
@@ -289,11 +300,11 @@ _.Instances = { tier(7, {	-- Legion
 					i(141537),	-- Thrice-Accursed Compass
 					i(141514),	-- Barnacled Mistcaller Orb
 				},
-				["questID"] = 42269, -- Change to tracking quest later.
-				["isRaid"] = true,
-				["maps"] = { 634 }, -- Stormheim
-			})),
+			}),
 			cr(112350, e(1796, { -- Withered J'im 
+				["questID"] = 44287, -- Change to tracking quest later.
+				["isRaid"] = true,
+				["maps"] = { 630 }, -- Azsuna
 				["groups"] = {
 					{
 						["achievementID"] = 11160,	-- Unleashed Monstrosities [Achievement]
@@ -307,13 +318,7 @@ _.Instances = { tier(7, {	-- Legion
 					i(141492),	-- Dingy Suramar Mercantile Signet
 					i(141482),	-- Unstable Arcanocrystal
 				},
-				["questID"] = 44287, -- Change to tracking quest later.
-				["isRaid"] = true,
-				["maps"] = { 630 }, -- Azsuna
 			})),
 		},
-		["isRaid"] = true,
-		["lvl"] = 110,
-		["modID"] = 3,
 	}),
 })};
