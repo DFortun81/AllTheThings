@@ -5,8 +5,11 @@
 _.Instances = 
 {
 	{ -- Legion
+		["tierID"] = 7,
 		["groups"] = {
 			inst(727, { 	-- Maw of Souls
+				["lvl"] = 110,
+				["maps"] = { 706, 707, 708 },
 				["groups"] = {
 					d(1, {		-- Normal
 						cr(96756, e(1502, {	-- Ymiron, the Fallen King
@@ -185,11 +188,7 @@ _.Instances =
 						})),
 					}),
 				},
-				["lvl"] = 110,
-				["mapID"] = 706,
-				["maps"] = { 707, 708 },
 			}),
-		},					
-		["tierID"] = 7
+		},
 	},	
 };

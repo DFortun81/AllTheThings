@@ -5,6 +5,7 @@
 _.Instances = 
 {
 	{
+		["tierID"] = 7,
 		["groups"] = {
 			inst(959, {	-- Invasion Points
 				["isRaid"] = true,
@@ -299,6 +300,5 @@ _.Instances =
 				},
 			}),
 		},
-		["tierID"] = 7,
 	},
 };

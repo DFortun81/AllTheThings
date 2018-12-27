@@ -5,6 +5,7 @@
 _.Instances = 
 {
 	{	-- Legion
+		["tierID"] = 7,
 		["groups"] = {
 			inst(726, {	-- The Arcway
 				["lvl"] = 110,
@@ -173,6 +174,5 @@ _.Instances =
 				},
 			}),
 		},
-		["tierID"] = 7,
 	},
 };

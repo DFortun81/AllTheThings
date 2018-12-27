@@ -5,6 +5,7 @@ dofile("./DATAS/06 - Expansion Features/Common/Raid Caches.lua");
 _.Instances = 
 {
 	{ -- Legion
+		["tierID"] = 7,
 		["groups"] = {
 			inst(875, { 	-- Tomb of Sargeras
 				["isRaid"] = true,
@@ -933,7 +934,6 @@ _.Instances =
 					})
 				},
 			}),
-		},					
-		["tierID"] = 7
+		},
 	},	
 };

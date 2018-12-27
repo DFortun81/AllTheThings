@@ -5,11 +5,11 @@
 _.Instances = 
 {
 	{ -- Legion
+		["tierID"] = 7,
 		["groups"] = {
 			inst(900, {	-- Cathedral of Eternal Night
 				["lvl"] = 110,
-				["mapID"] = 845,
-				["maps"] = { 846, 847, 848, 849 },
+				["maps"] = { 845, 846, 847, 848, 849 },
 				["groups"] = {
 					d(2, {	-- Heroic
 						n(0, { -- Zone Drops
@@ -170,6 +170,5 @@ _.Instances =
 				},
 			}),
 		},
-		["tierID"] = 7,
 	},
 };

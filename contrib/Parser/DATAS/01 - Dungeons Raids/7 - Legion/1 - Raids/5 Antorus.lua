@@ -5,6 +5,7 @@ dofile("./DATAS/06 - Expansion Features/Common/Raid Caches.lua");
 _.Instances = 
 {
 	{
+		["tierID"] = 7,
 		["groups"] = {
 			inst(946, { -- Antorus, the Burning Throne
 				["isRaid"] = true,
@@ -1662,6 +1663,5 @@ _.Instances =
 				},
 			}),
 		},
-		["tierID"] = 7,
 	},
 };

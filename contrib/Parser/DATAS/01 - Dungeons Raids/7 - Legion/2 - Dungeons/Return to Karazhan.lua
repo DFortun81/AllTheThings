@@ -5,8 +5,14 @@
 _.Instances = 
 {
 	{ -- Legion
+		["tierID"] = 7,
 		["groups"] = {
 			inst(860, {	-- Return to Karazhan
+				["lvl"] = 110,
+				["maps"] = {
+					815, 816, 817, 818, 819, 820, 821, 822, -- Upper
+					809, 810, 811, 812, 813, 814, -- Lower
+				},
 				["groups"] = {
 					n(-1, { -- Common Boss Drop
 						["groups"] = {
@@ -395,14 +401,7 @@ _.Instances =
 						})),
 					}),
 				},
-				["lvl"] = 110,
-				["mapID"] = 809,
-				["maps"] = {
-					815, 816, 817, 818, 819, 820, 821, 822, -- Upper
-					811, 812, 813, 814, -- Lower
-				},
 			}),
 		},
-		["tierID"] = 7
 	},
 };

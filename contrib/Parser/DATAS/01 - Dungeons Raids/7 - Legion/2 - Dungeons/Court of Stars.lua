@@ -9,8 +9,7 @@ _.Instances =
 		["groups"] = {
 			inst(800, {	-- Court of Stars
 				["lvl"] = 110,
-				["mapID"] = 761,
-				["maps"] = { 763 },
+				["maps"] = { 761, 762, 763 },
 				["groups"] = {
 					d(2, {	-- Heroic
 						cr(104215, e(1718, {	-- Patrol Captain Gerdo

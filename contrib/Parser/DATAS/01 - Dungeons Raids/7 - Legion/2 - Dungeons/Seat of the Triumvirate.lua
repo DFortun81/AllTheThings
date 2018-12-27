@@ -5,6 +5,7 @@
 _.Instances =
 {
 	{
+		["tierID"] = 7,
 		["groups"] = {
 			inst(945, { -- Seat of the Triumvirate
 				["lvl"] = 110,
@@ -265,6 +266,5 @@ _.Instances =
 				},
 			}),
 		},
-		["tierID"] = 7,
 	},
 };
