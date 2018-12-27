@@ -1142,6 +1142,8 @@ AllTheThings.Locales.enUS = {
 		[-237] = GetSpellInfo(290253),											-- Warfront: The Battle for Darkshore [Alliance]
 		[-238] = GetSpellInfo(290228),											-- Warfront: The Battle for Darkshore [Horde]
 		[-239] = GetSpellInfo(208246),											-- Assault [8.1 Assaults]
+		[-240] = PVP_TAB_CONQUEST,												-- Rated
+		[-241] = PVP_SEASON_REWARD,												-- Season Reward
 		
 -- Other
 		[-294] = "Killed First",
