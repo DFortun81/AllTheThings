@@ -1291,12 +1291,15 @@ _.Zones =
 						i(14634),	-- Recipe: Frost Oil
 					}),
 					h(n(2393, {	-- Christoph Jeffcoat <Tradesman>
-						i(20971, {	-- Design: Heavy Iron Knuckles (Removed in Cata and available through trainer now)
-							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
-							["u"] = 2,
-						}),
-						i(6054), -- Recipe: Shadow Protection Potion
-						i(5788), -- Pattern: Thick Murloc Armor						
+						["groups"] = {
+							i(20971, {	-- Design: Heavy Iron Knuckles (Removed in Cata and available through trainer now)
+								["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
+								["u"] = 2,
+							}),
+							i(6054), -- Recipe: Shadow Protection Potion
+							i(5788), -- Pattern: Thick Murloc Armor
+						},
+						["coord"] = { 57.51, 47.79 },					
 					})),
 					nh(2397, {	-- Derak Nightfall <Cook>
 						i(6330), 	-- Recipe: Bristle Whisker Catfish
