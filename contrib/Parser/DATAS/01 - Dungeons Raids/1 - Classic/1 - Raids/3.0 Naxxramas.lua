@@ -1160,6 +1160,10 @@ _.Instances = { tier(1, {	-- Classic
 						un(2, i(23040)),	-- Glyph of Deflection
 						un(2, i(23041)),	-- Slayer's Crest
 						un(2, i(23046)),	-- The Restrained Essence of Sapphiron
+						un(2, i(23549)),	-- Fortitude of the Scourge
+						un(2, i(23548)),	-- Might of the Scourge
+						un(2, i(23545)),	-- Power of the Scourge
+						un(2, i(23547)),	-- Resilience of the Scourge
 					}),
 					n(15990, {	-- Kel'Thuzad
 						{

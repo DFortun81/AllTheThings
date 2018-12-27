@@ -169,6 +169,7 @@ _.NeverImplemented =
 			un(1, i(19986)),	-- Pirate's Eye Patch (Leather)
 			un(1, i(20524)),	-- Shadowhide Leggings (Leather)
 			un(1, i(54655)),	-- Stormshroud Armor (Leather)
+			un(1, i(28145)),	-- Tranquillien Wraps (Leather)
 			un(1, i(7187)),		-- VanCleef's Boots (Leather)
 			un(1, i(26029)),	-- Watchman's Bracers
 			un(1, i(21613)),	-- Wormhide Boots (Leather)
@@ -388,8 +389,11 @@ _.NeverImplemented =
 				un(1, i(154044)), -- Oathsworn Defender Idol
 				un(1, i(154047)), -- Oathsworn Defender Stone
 			}),
-			un(1, i(5822)),		-- Hedgeseed Gauntlets
+			un(1, i(27718)),	-- Aldor Defender's Legplates
 			un(1, i(12106)),	-- Boulderskin Breastplate
+			un(1, i(25797)),	-- Crushing Grasp
+			un(1, i(5822)),		-- Hedgeseed Gauntlets
+			un(1, i(26041)),	-- Vigilant Vambraces
 			un(1, i(21587)),	-- Wristguards of Castigation (never made it off test)
 			un(1, i(24137)),	-- PH Plate Ramparts Reward
 			un(1, i(27965)),	-- TEST 130 Epic Paladin DPS Chest
