@@ -7,6 +7,9 @@ _.Instances =
 	{ -- Legion
 		["groups"] = {
 			inst(861, { 	-- Trial of Valor
+				["isRaid"] = true,
+				["lvl"] = 110,
+				["maps"] = { 806, 807, 808 },
 				["groups"] = {
 					n(-17, {	-- Quests 			
 						{
@@ -610,10 +613,6 @@ _.Instances =
 						})),
 					}),
 				},
-				["isRaid"] = true,
-				["lvl"] = 110,
-				["mapID"] = 806,
-				["maps"] = { 807, 808 },
 			}),
 		},					
 		["tierID"] = 7

@@ -7,6 +7,23 @@ _.Instances =
 	{ -- Legion
 		["groups"] = {
 			inst(768, { 	-- The Emerald Nightmare
+				["isRaid"] = true,
+				["lvl"] = 110,
+				["maps"] = {
+					777,
+					778,
+					779,
+					780,
+					781,
+					782,
+					783,
+					784,
+					785,
+					786,
+					787,
+					788,
+					789
+				},
 				["groups"] = {
 					n(-68, { -- The Emerald Dream
 						n(-25, { -- Pet Battles
@@ -1246,24 +1263,7 @@ _.Instances =
 							i(139266),	-- Fragment of Eternal Spite
 							i(139268),	-- Nightmarish Elm Branch
 						})),
-					})
-				},
-				["isRaid"] = true,
-				["lvl"] = 110,
-				["mapID"] = 777,
-				["maps"] = {
-					778,
-					779,
-					780,
-					781,
-					782,
-					783,
-					784,
-					785,
-					786,
-					787,
-					788,
-					789
+					}),
 				},
 			}),
 		},					
