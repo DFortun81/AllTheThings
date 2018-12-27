@@ -1170,9 +1170,7 @@ local function CreateObject(t)
 	else
 		if t.key == "criteriaID" then s.achievementID = t.achievementID; end
 		for key,value in pairs(t) do
-			--if key ~= "parent" then
-				s[key] = value;
-			--end
+			s[key] = value;
 		end
 		if t.g then
 			s.g = {};

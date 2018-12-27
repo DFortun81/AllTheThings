@@ -1724,12 +1724,6 @@ local function createMiniListFrame(parent)
 	end
 	
 	local window =  app:GetWindow("settings", child)
-	--local allData = window.data;
-	--local groups = {};
-	--allData.groups = groups;
-	--app.BuildGroups(allData, allData.groups);
-	--window.data = allData;
-	--app.CacheFields(allData);
 	window:SetScript("OnMouseDown", nil);
 	window:SetMovable(false);
 	window:SetResizable(false);
