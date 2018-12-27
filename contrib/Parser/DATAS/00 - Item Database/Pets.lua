@@ -13,6 +13,7 @@ pet(151828, 2072); 	-- Ageless Bronze Drake
 pet(136910, 1805);	-- Alarm-o-Bot
 pet(142448, 1984);	-- Albino Buzzard
 pet(119434, 1385); 	-- Albino Chimaeraling
+pet(166491, 2555);	-- Albino Duskwatcher
 pet(44822, 74); 	-- Albino Snake
 pet(163650, 2433);	-- Aldrusian Sproutling
 pet(72042, 331); 	-- Alliance Balloon
@@ -136,6 +137,7 @@ pet(110721, 1396); 	-- Crazy Carrot
 pet(71076, 321); 	-- Creepy Crate
 pet(163510, 2424);	-- Crimson Frog
 pet(70160, 318); 	-- Crimson Lasher
+pet(166500, 2562);	-- Crimson Octopode
 pet(10392, 78); 	-- Crimson Snake
 pet(118106, 1537);	-- Crimson Spore
 pet(129175, 1752); 	-- Crispin
@@ -653,6 +655,7 @@ pet(126926, 1665); 	-- Translucent Shell (Ghostshell Crab)
 pet(139789, 1920); 	-- Transmutant
 pet(143842, 2004);	-- Trashy
 pet(106256, 1365);	-- Treasure Goblin's Pack (Treasure Goblin)
+pet(166346, 2539);	-- Trecker's Cage (Trecker)
 pet(11026, 65); 	-- Tree Frog Box (Tree Frog)
 pet(150741, 2057); 	-- Tricorne
 pet(132519, 1886); 	-- Trigger
