@@ -401,12 +401,11 @@ _.Zones =
 							qg(, qh(26040)),	-- What? What? In My Gut...?
 --]]
 						}),
-						--[[
 						n(-16, {	-- Rares
-							n(49913, {	-- Lady La-La: Does not drop collectible loot.
+							n(49913, {	-- Lady La-La
+								i(67152),	-- Lady La-La's Singing Shell
 							}),
 						}),
-						]]--
 						n(0, {	-- Zone Drop
 							{	-- Technique: Origami Slime
 								["itemID"] = 65649,	--	-- Technique: Origami Slime
