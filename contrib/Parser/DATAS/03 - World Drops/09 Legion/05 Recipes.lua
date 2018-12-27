@@ -4,6 +4,7 @@
 _.WorldDrops = 
 {
 	{
+		["tierID"] = 7,
 		["groups"] = {	-- Legion
 			filter(200, {	-- Recipes
 				n(-180, {	-- Alchemy
@@ -36,6 +37,5 @@ _.WorldDrops =
 				}),
 			}),
 		},
-		["tierID"] = 7,
 	},	
 };

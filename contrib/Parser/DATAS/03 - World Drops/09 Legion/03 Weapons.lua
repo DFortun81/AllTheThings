@@ -4,6 +4,7 @@
 _.WorldDrops = 
 {
 	{
+		["tierID"] = 7,
 		["groups"] = {
 			n(-319, { -- Weapons
 				n(-337, { -- 2H Maces
@@ -11,6 +12,5 @@ _.WorldDrops =
 				}),
 			}),	
 		},
-		["tierID"] = 7,
 	},
 };
