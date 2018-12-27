@@ -11,37 +11,6 @@ _.Instances =
 				["mapID"] = 845,
 				["maps"] = { 846, 847, 848, 849 },
 				["groups"] = {
-					--[[
-					n(0, { -- Zone Drops
-						["groups"] = {
-							i(147517, { -- Inquisitor's Battle Cowl
-								["bonusID"] = 1812,
-								["modID"] = 0,
-							}),
-							i(147516, { -- Legion Stalker's Hood
-								["bonusID"] = 1812,
-								["modID"] = 0,
-							}),
-							i(147515, { -- Hellblaze Invader's Greaves
-								["bonusID"] = 1812,
-								["modID"] = 0,
-							}),
-							i(147514, { -- Felguard Destroyer's Legplates
-								["bonusID"] = 1812,
-								["modID"] = 0,
-							}),
-						},
-						["crs"] = {
-							118704, -- Dul'zak
-							118723, -- Gazerax
-							118705, -- Nal'asha
-							120713, -- Wa'glur
-							120716, -- Dreadspeaker Serilis
-							120715, -- Raga'yut
-							120717, -- Mistress Dominix
-						},
-					}),
-					]]--
 					d(2, {	-- Heroic
 						n(0, { -- Zone Drops
 							["groups"] = {
