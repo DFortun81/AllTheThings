@@ -80,7 +80,7 @@ _.Achievements =
 						i(163975),	-- Sir Snips
 					}),
 					ach(12917, { 	-- Honor Level 500
-						-- REWARD SOON POSSIBLY --
+						i(164250),	-- Prestigious Bloodforged Courser
 					}),
 				},
 			}),
