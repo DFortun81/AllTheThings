@@ -10,7 +10,50 @@ _.Instances =
 				["groups"] = {
 					n(-4, {
 						ach(10996, {
-							["description"] = "As soon as you jump into the hole at the start of the dungeon, follow the cliff's path near |cFFFFD700Spiritwalker Ebonhorn|r to a hidden grotto and buy a |cFFFFD700Ketchum Tablet|r from the |cFFFFD700Mushroom Merchant|r.\nSnail Locations:\n|cFFFFD700Scaly|r: After killing Rokmora, use a fish while riding a barrel to knock him off a mushroom.\n|cFFFFD700Sparky|r: Swim under the waterfall into a hidden cave.\n|cFFFFD700Slinky|rFollow the long westward path before |cFFFFD700Ularogg Cragshaper|r to a cave. He is usually along the cave's back wall.\n|cFFFFD700Whipsnap, Turbax, or Blaze|r: Racing around a stone pillar after killing |cFFFFD700Ularogg Cragshaper|r.\n|cFFFFD700Sticky|r: On the ceiling of a cave at the back of Scaleback Run. You must damage him slightly to knock him down.",
+							["description"] = "As soon as you jump into the hole at the start of the dungeon, follow the cliff's path near |cFFFFD700Spiritwalker Ebonhorn|r to a hidden grotto and buy a |cFFFFD700Ketchum Tablet|r from the |cFFFFD700Mushroom Merchant|r.",
+							["crs"] = { 111746	},	-- Mushroom Merchant
+							["groups"] = {
+								{
+									["itemID"] = 140212,	-- Ketchum Tablet
+									["groups"] = {
+										{
+											["criteriaID"] = 7,	-- Scaly's Imprint Collected
+											["qg"] = 113204,	-- Scaly
+											["description"] = "After first boss Rokmora, before entering a barrel, use the macro: /tar Scaly and then apply a target icon to him. It sits on a Mushroom on the left river bank and while riding in the barrel, you need to throw the fish at it while riding the barrel to make it fall into the water and come along with you.",
+										},
+										{
+											["criteriaID"] = 1,	-- Sparky's imprint collected
+											["qg"] = 111882,	-- Sparky
+											["description"] = "Dive right where the barrel ride ends and find a pathway to a somewhat hidden cave where the snail is located at.",
+										},
+										{
+											["criteriaID"] = 5,	-- Slinky's imprint collected
+											["qg"] = 111861,	-- Slinky
+											["description"] = "Follow the long westward path before Ularogg Cragshaper to a cave. He is usually along the cave's back wall.",
+										},
+										{
+											["criteriaID"] = 2,	-- Turbax's imprint collected
+											["qg"] = 105742,	-- Turbax
+											["description"] = "Racing around a stone pillar after killing Ularogg Cragshaper.",
+										},
+										{
+											["criteriaID"] = 3,	-- Whipsnap's imprint collected
+											["qg"] = 105743,	-- Whipsnap
+											["description"] = "Racing around a stone pillar after killing Ularogg Cragshaper.",
+										},
+										{
+											["criteriaID"] = 4,	-- Blaze's imprint collected
+											["qg"] = 105744,	-- Blaze
+											["description"] = "Racing around a stone pillar after killing Ularogg Cragshaper.",
+										},
+										{
+											["criteriaID"] = 6,	-- Sticky's imprint collected
+											["qg"] = 111864,	-- Sticky
+											["description"] = "Directly after the previous 3 snails. Go into the water with the basalisks and go along the river to the back where there is a cave and more basalisks. Kill all of them and have some one use an ability on Sticky. He is up on top of the cave just chilling out. Once someone attacks him he falls down and you can smack him and claim your achievement.",
+										},
+									},
+								},
+							},
 						}),
 					}),
 					n(-17, {	-- Quests
