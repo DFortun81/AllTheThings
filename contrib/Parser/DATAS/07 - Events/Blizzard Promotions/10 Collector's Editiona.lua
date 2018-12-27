@@ -42,7 +42,7 @@ _.WorldEvents =
 				}),
 				{	-- Warcraft 3 Reforged Spoils of War Edition
 					["npcID"] = -552,	-- Warcraft 3 Reforged Spoils of War Edition
-					["icons"] = "Interface\\Icons\\Achievement_Leader_ Thrall",
+					["icon"] = "Interface\\Icons\\Achievement_Leader_ Thrall",
 					["g"] = {
 						{	-- Meat Marauder
 							["achievementID"] = 13196,	-- Meat Marauder
