@@ -204,30 +204,36 @@ _.Holidays = bubbleDown({["u"] = 29},
 										["itemID"] = 128665,	-- Ball of Tangled Lights
 										["questID"] = 39615,
 										["u"] = 29,				-- Feast of Winter Veil Filter
+										["collectible"] = true,
 									},
 									{	-- Crashin' Thrashin' Killdozer Controller
 										["itemID"] = 108635,	-- Crashin' Thrashin' Killdozer Controller
 										["u"] = 29,				-- Feast of Winter Veil Filter
+										["collectible"] = true,
 									},
 									{	-- Festive Outfits
 										["itemID"] = 128668,	-- Festive Outfits
 										["questID"] = 39671,
 										["u"] = 29,				-- Feast of Winter Veil Filter
+										["collectible"] = true,
 									},
 									{	-- Imported Trees
 										["itemID"] = 128666,	-- Imported Trees
 										["questID"] = 39616,
 										["u"] = 29,				-- Feast of Winter Veil Filter
+										["collectible"] = true,
 									},
 									{	-- Little Helpers
 										["itemID"] = 128667,	-- Little Helpers
 										["questID"] = 39767,
 										["u"] = 29,				-- Feast of Winter Veil Filter
+										["collectible"] = true,
 									},
 									{	-- Old Box of Decorations
 										["itemID"] = 128669,	-- Old Box of Decorations
 										["questID"] = 39712,
 										["u"] = 29,				-- Feast of Winter Veil Filter
+										["collectible"] = true,
 									},
 									{	-- Savage Gift
 										["itemID"] = 128670,	-- Savage Gift

@@ -40,6 +40,20 @@ _.WorldEvents =
 						})),
 					}),
 				}),
+				{	-- Warcraft 3 Reforged Spoils of War Edition
+					["npcID"] = -552,	-- Warcraft 3 Reforged Spoils of War Edition
+					["icons"] = "Interface\\Icons\\Achievement_Leader_ Thrall",
+					["g"] = {
+						{	-- Meat Marauder
+							["achievementID"] = 13196,	-- Meat Marauder
+							["g"] = {
+								{	-- Meat Wagon
+									["itemID"] = 164571,	-- Meat Wagon
+								},
+							},
+						},
+					},
+				},
 				n(-544, {	-- WoW Collector's Edition
 					tier(1, {	-- Classic
 						un(6, ach(662, {	-- Collector's Edition: Mini-Diablo
