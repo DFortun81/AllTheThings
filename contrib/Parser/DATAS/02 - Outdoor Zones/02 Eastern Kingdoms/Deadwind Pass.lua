@@ -33,10 +33,25 @@ _.Zones =
 						["classes"] = { 4 },	-- Rogue
 						["sourceQuests"] = { 30108 },	-- Our Man in Karazhan
 					})),
+					{
+						["questID"] = 44865,	-- Butler to the Great
+						["sourceQuest"] = 44803,	-- Return to Karazhan: Master of the House
+						["qg"] = 115551,	-- Phantom Valet
+						["groups"] = {
+							follower(733),	-- Moroes
+						},
+					},
 --[[
 					qg(114550, qa(40717)),	-- Calling of the Council
 					qg(114631, qa(44684)),	-- Corruption Runs Deep
-					qg(114631, qa(44764)),	-- Demon in Disguise
+					]]--
+					a({
+						["questID"] = 44764,	-- Demon in Disguise
+						["sourceQuest"] = 44686,	-- Thought Collection
+						["qg"] = 114631,	-- Archmage Karlain <Kirin Tor>
+						["lvl"] = 110,
+					}),
+					--[[
 					qart(qg(100729, q(40604, {	-- Disturbing the Past
 						["classes"] = {9},
 					}))),
@@ -56,7 +71,17 @@ _.Zones =
 					qart(qg(100323, q(40834, {	-- Following the Curse
 						["classes"] = {11},
 					}))),
-					qg(114310, q(44734)),	-- Fragments of the Past
+					]]--
+					{
+						["questID"] = 44734,	-- Fragments of the Past
+						["sourceQuest"] = 44733,	-- The Power of Corruption
+						["qg"] = 114310,	-- Archmage Khadgar
+						["lvl"] = 110,
+						["groups"] = {
+							i(142460),	-- Violet Seal of the Archmage
+						},
+					},
+					--[[
 					qg(101547, q(40755)),	-- Hiding in the Stacks
 					qg(114310, q(44683)),	-- Holding the Lines
 					qg(18255, q(45296, {	-- No Bones About It
@@ -69,22 +94,53 @@ _.Zones =
 					qg(18253, q(11032)),	-- Protector No More
 					qg(114310, q(44685)),	-- Reclaiming the Ramparts
 					qg(18253, q(11034)),	-- Restorer No More
-					qg(18255, q(45291)),	-- Return to Karazhan: Book Wyrms
-					qg(18255, q(45295)),	-- Return to Karazhan: Clearing Out the Cobwebs
-					qg(18255, q(45294)),	-- Return to Karazhan: High Stress Hiatus
-					qg(114310, q(44735)),	-- Return to Karazhan: In the Eye of the Beholder					
-					n(114312, {	-- Moroes
-						["groups"] = {
-							i(142246, {	-- Broken Pocket Watch
-								q(44803, {	-- Return to Karazhan: Master of the House
-									q(44865),	-- Butler to the Great
-								}),
-							}),
+					]]--
+					{
+						["questID"] = 45291,	-- Return to Karazhan: Book Wyrms
+						["sourceQuests"] = {
+							44734,	-- Fragments of the Past
+							44735,	-- Return to Karazhan: In the Eye of the Beholder
 						},
-						["description"] = "This questline rewards Moroes as a Class Champion.|r",
-					}),
-					qg(18255, q(45293)),	-- Return to Karazhan: New Shoes
-					qg(18255, q(45292)),	-- Return to Karazhan: Rebooting the Cleaner
+						["qg"] = 18255,	-- Mage Darius
+						["lvl"] = 110,
+					},
+					{
+						["questID"] = 45295,	-- Return to Karazhan: Clearing Out the Cobwebs
+						["sourceQuest"] = 45294,	-- Return to Karazhan: High Stress Hiatus
+						["qg"] = 18255,	-- Mage Darius
+						["lvl"] = 110,
+					},
+					{
+						["questID"] = 45294,	-- Return to Karazhan: High Stress Hiatus
+						["sourceQuest"] = 45293,	-- Return to Karazhan: New Shoes
+						["qg"] = 18255,	-- Mage Darius
+						["lvl"] = 110,
+						["groups"] = {
+							i(142468),	-- Violet Seal of the Archmage
+						},
+					},
+					{
+						["questID"] = 45293,	-- Return to Karazhan: New Shoes
+						["sourceQuest"] = 45292,	-- Return to Karazhan: Rebooting the Cleaner
+						["qg"] = 18255,	-- Mage Darius
+						["lvl"] = 110,
+					},
+					{
+						["questID"] = 45292,	-- Return to Karazhan: Rebooting the Cleaner
+						["sourceQuest"] = 45291,	-- Return to Karazhan: Book Wyrms
+						["qg"] = 18255,	-- Mage Darius
+						["lvl"] = 110,
+						["groups"] = {
+							i(142461),	-- Violet Seal of the Archmage
+						},
+					},
+					{
+						["questID"] = 44735,	-- Return to Karazhan: In the Eye of the Beholder
+						["sourceQuest"] = 44733,	-- The Power of Corruption
+						["qg"] = 114310,	-- Archmage Khadgar
+						["lvl"] = 110,
+					},
+					--[[
 					qart(qg(101282, q(40900, {	-- The Burden Borne (map blank, not sure if starts in Deadwind Pass, a scenario, or elsewhere)
 						["classes"] = {11},
 					}))),
@@ -116,19 +172,28 @@ _.Zones =
 					qart(qg(100729, q(40611, {	-- The Fate of Deadwind
 						["classes"] = {9},
 					}))),
-					qg(114310, q(44733)),	-- The Power of Corruption
 					o(254007, {	-- Executioner's Altar
 						qart(q(44154, {	-- The Rite of the Executioner
 							["classes"] = {9},
 						})),
 					}),
-					qg(114631, qa(44686)),	-- Thought Collection
 					o(245793, {	-- Battered Journal
 						qart(q(40606, {	-- To Point the Way
 						["classes"] = {9},
 						})),
 					}),
---]]					
+					]]--
+					a({
+						["questID"] = 44686,	-- Thought Collection
+						["qg"] = 114631,	-- Archmage Karlain <Kirin Tor>
+						["lvl"] = 110,
+					}),
+					{
+						["questID"] = 44733,	-- The Power of Corruption
+						["sourceQuest"] = 44764,	-- Demon in Disguise
+						["qg"] = 114310,	-- Archmage Khadgar
+						["lvl"] = 110,
+					},
 					q(40712, {	-- The Power Possessed
 						["qg"] = 101282, -- Revil Kost
 						["classes"] = { 9 },
@@ -156,9 +221,17 @@ _.Zones =
 						["classes"] = { 4 },	-- Rogue
 						["sourceQuests"] = { 30109 },	-- Blood of the Betrayer
 					})),
-					o(258978, 	-- Waterlogged Tome
-						q(44487)	-- Waterlogged Tome
-					),
+					{
+						["objectID"] = 258978,	-- Waterlogged Tome
+						["questID"] = 44487,	-- Waterlogged Tome
+						["lvl"] = 110,
+						["groups"] = {
+							{
+								["achievementID"] = 11240,	-- Harbinger
+								["criteriaID"] = 1,	-- Waterlogged Tome
+							},
+						},
+					},
 				}),
 				n(-77, { 	-- Special
 					n(-79, { 	-- Puzzler's Desire
@@ -176,6 +249,7 @@ _.Zones =
 						i(33165),	-- Formula: Enchant Weapon - Greater Agility
 						i(33124), 	-- Pattern: Cloak of Darkness
 						i(33205), 	-- Pattern: Shadowprowler's Chestguard
+						i(29187),	-- Inscription of Endurance
 					}),
 				}),
 				n(0,   {	-- Zone Drop
