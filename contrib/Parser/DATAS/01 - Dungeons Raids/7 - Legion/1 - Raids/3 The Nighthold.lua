@@ -7,6 +7,9 @@ _.Instances =
 	{ -- Legion
 		["groups"] = {
 			inst(786, { 	-- The Nighthold
+				["isRaid"] = true,
+				["lvl"] = 110,
+				["maps"] = { 764, 765, 766, 767, 768, 769, 770, 771, 772 },
 				["groups"] = {
 					n(-17, { 	-- Quests
 						{
@@ -1610,10 +1613,6 @@ _.Instances =
 						})
 					})
 				},
-				["isRaid"] = true,
-				["lvl"] = 110,
-				["mapID"] = 764,
-				["maps"] = { 765, 766, 767, 768, 769, 770, 771, 772 },
 			}),
 		},					
 		["tierID"] = 7
