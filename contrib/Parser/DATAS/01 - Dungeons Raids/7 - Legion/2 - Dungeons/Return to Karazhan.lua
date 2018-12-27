@@ -22,7 +22,7 @@ _.Instances =
 							114312,	-- Moroes
 							114247,	-- The Curator
 							114350,	-- Shade of Medivh
-							116494, -- Mana Devourer
+							114252, -- Mana Devourer
 							114790, -- Viz'aduum the Watcher
 						},
 					}),
@@ -153,7 +153,7 @@ _.Instances =
 							i(142308),	-- Ageless Winter
 							i(142310),	-- Anthology of Horrors
 						})),
-						cr(116494, e(1818, {	-- Mana Devourer
+						cr(114252, e(1818, {	-- Mana Devourer
 							i(142162),	-- Fluctuating Energy
 							i(142150),	-- Hood of Uncanny Perspectives
 							i(142135),	-- Legguards of Countless Hours
@@ -368,7 +368,7 @@ _.Instances =
 							i(142308),	-- Ageless Winter
 							i(142310),	-- Anthology of Horrors
 						})),
-						cr(116494, e(1818, {	-- Mana Devourer
+						cr(114252, e(1818, {	-- Mana Devourer
 							ach(11431),	-- The Rat Pack
 							i(142162),	-- Fluctuating Energy
 							i(142150),	-- Hood of Uncanny Perspectives
