@@ -8,7 +8,22 @@ _.Zones =
 			["groups"] = {
 				n(-212, {	-- Treasure Chest
 					["groups"] = { -- If we are going to list every treasure chest then let's make it pretty and not show quest ID# on screen.
-						o(9999999, { -- Treasure Chest
+		--[[				o(311903, { -- Loose Parts
+							["objectID"] = 311903,	-- Loose Parts
+							["coord"] = {
+								41.9, 42.3 
+							},
+							["g"] = {
+								i(166734),	-- Banana-Shaped Power Cell
+								i(166732),	-- Bludgeoning-Resistant Chest Reinforcer
+								i(166733),	-- Steel-Plated Primate Exoskeleton
+									["g"] = {
+										i(166715),	-- Rebuilt Gorilla Bot
+									},
+							},
+							["allianceOnly"] = true,
+						}),	
+				--]]	o(9999999, { -- Treasure Chest
 							["questID"] = 50922,
 							["isDaily"] = true,
 							["repeatable"] = true,
