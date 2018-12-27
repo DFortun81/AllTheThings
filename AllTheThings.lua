@@ -1221,6 +1221,8 @@ local function CreateObject(t)
 				else
 					t = app.CreateItem(t.itemID, t);
 				end
+			elseif t.classID then
+				t = app.CreateCharacterClass(t.classID, t);
 			elseif t.npcID or t.creatureID then
 				t = app.CreateNPC(t.npcID or t.creatureID, t);
 			elseif t.questID then
@@ -1264,6 +1266,8 @@ local function MergeObject(g, t, index)
 			key = "itemID";
 		elseif t.professionID then
 			key = "professionID";
+		elseif t.classID then
+			key = "classID";
 		elseif t.npcID then
 			key = "npcID";
 		elseif t.creatureID then
@@ -8432,7 +8436,7 @@ end):Show();
 						app.MiniListHeader = nil;
 					else
 						-- A couple of objects matched, let's make a header.
-						local header = app.CreateMap(self.mapID, { g = {}, back = 1, expanded = true, visible = true, description = "Auto Mini List for mapID #" .. self.mapID, total = 0, progress = 0 });
+						local header = app.CreateMap(self.mapID, { g = {}, back = 1, expanded = true, visible = true, total = 0, progress = 0 });
 						app.MiniListHeader = header;
 						table.wipe(app.HolidayHeader.g);
 						app.HolidayHeader.progress = 0;
@@ -8476,6 +8480,12 @@ end):Show();
 								local temp = { header };
 								header.instanceID = group.instanceID;
 								setmetatable(header, app.BaseInstance);
+								MergeObject(temp, group);
+								if #temp > 1 then MergeObject(header.g, group); end
+							elseif group.classID and not header.instanceID then
+								local temp = { header };
+								header.classID = group.classID;
+								setmetatable(header, app.BaseCharacterClass);
 								MergeObject(temp, group);
 								if #temp > 1 then MergeObject(header.g, group); end
 							elseif group.mapID and not header.instanceID then
