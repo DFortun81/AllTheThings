@@ -320,7 +320,6 @@ _.ExpansionFeatures =
 							["coords"] = {
 								{ 44.03, 48.21, 62 },
 							},
-							["description"] = "Only shows up when Alliance Controlled.",
 						},
 						{	-- Moxo The Beheader [A Only]
 							["questID"] = 54430,	-- Moxo The Beheader [A]
