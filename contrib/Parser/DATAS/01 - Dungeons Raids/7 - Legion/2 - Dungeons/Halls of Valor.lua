@@ -32,6 +32,8 @@ _.Instances =
 								i(134179),	-- Skoldiir Breastplate
 								i(133805),	-- Thundercaller's Chain
 								i(134213),	-- Tideskorn Mantle
+								i(136973),	-- Burden of Vigilance
+								i(133763),	-- Key to the Halls
 							})),
 							cr(95833, e(1486, {	-- Hyrja
 								i(140657),	-- Crest of the Lightborn [Priest Hidden Artifact Appearance]
@@ -45,15 +47,18 @@ _.Instances =
 								i(134209),	-- Tideskorn Gauntlets
 								i(133679),	-- Val'kyr Ascension Signet
 								i(136772),	-- Valkyra Protector Greatboots
+								i(136974),	-- Empowerment of Thunder
+								i(136771),	-- Eyir's Blessing
 							})),
 							cr(95674, e(1487, {	-- Fenryr
+								i(133633),	-- Wolfstride Pendant
 								i(133639),	-- Goldscar Pelt
 								i(136773),	-- Greatbelt of Alpha Dominance
 								i(133615),	-- Hide of Fenryr
 								i(136975),	-- Hunger of the Pack
 								i(133626),	-- Runebands of the Worthy
 								i(133609),	-- Silken Bloodscent Gloves
-								i(133633),	-- Wolfstride Pendant
+								i(133687),	-- Fenryr's Bloodstained Fang
 							})),
 							cr(95675, e(1488, {	-- God-King Skovald
 								i(140660),	-- Haft of the God-King
@@ -67,6 +72,8 @@ _.Instances =
 								i(134182),	-- Skoldiir Helm
 								i(134212),	-- Tideskorn Leggings
 								i(133638),	-- Woe-Bearer's Band
+								i(133764),	-- Ragnarok Ember
+								i(136778),	-- Skovald's Resolve
 							})),
 							cr(95676, e(1489, {	-- Odyn
 								ach(10786),	-- Halls of Valor
@@ -87,6 +94,8 @@ _.Instances =
 								i(134207),	-- Tideskorn Cinch
 								i(139280),	-- Treads of Light
 								i(139283),	-- Wristbands of Magnificent Splender
+								i(133685),	-- Odyn's Boon
+								i(133686),	-- Stormforged Inferno
 							}))
 						}
 					}),
@@ -103,6 +112,8 @@ _.Instances =
 								i(134179),	-- Skoldiir Breastplate
 								i(133805),	-- Thundercaller's Chain
 								i(134213),	-- Tideskorn Mantle
+								i(136973),	-- Burden of Vigilance
+								i(133763),	-- Key to the Halls
 							})),
 							cr(95833, e(1486, {	-- Hyrja
 								i(140657),	-- Crest of the Lightborn [Priest Hidden Artifact Appearance]
@@ -116,15 +127,18 @@ _.Instances =
 								i(134209),	-- Tideskorn Gauntlets
 								i(133679),	-- Val'kyr Ascension Signet
 								i(136772),	-- Valkyra Protector Greatboots
+								i(136974),	-- Empowerment of Thunder
+								i(136771),	-- Eyir's Blessing
 							})),
 							cr(95674, e(1487, {	-- Fenryr
+								i(133633),	-- Wolfstride Pendant
 								i(133639),	-- Goldscar Pelt
 								i(136773),	-- Greatbelt of Alpha Dominance
 								i(133615),	-- Hide of Fenryr
 								i(136975),	-- Hunger of the Pack
 								i(133626),	-- Runebands of the Worthy
 								i(133609),	-- Silken Bloodscent Gloves
-								i(133633),	-- Wolfstride Pendant
+								i(133687),	-- Fenryr's Bloodstained Fang
 							})),
 							cr(95675, e(1488, {	-- God-King Skovald
 								i(140660),	-- Haft of the God-King
@@ -138,6 +152,8 @@ _.Instances =
 								i(134182),	-- Skoldiir Helm
 								i(134212),	-- Tideskorn Leggings
 								i(133638),	-- Woe-Bearer's Band
+								i(133764),	-- Ragnarok Ember
+								i(136778),	-- Skovald's Resolve
 							})),
 							cr(95676, e(1489, {	-- Odyn
 								ach(10788),	-- Heroic: Halls of Valor
@@ -160,6 +176,8 @@ _.Instances =
 								i(134207),	-- Tideskorn Cinch
 								i(139280),	-- Treads of Light
 								i(139283),	-- Wristbands of Magnificent Splender
+								i(133685),	-- Odyn's Boon
+								i(133686),	-- Stormforged Inferno
 							}))
 						}
 					}),
@@ -180,6 +198,8 @@ _.Instances =
 								i(134179),	-- Skoldiir Breastplate
 								i(133805),	-- Thundercaller's Chain
 								i(134213),	-- Tideskorn Mantle
+								i(136973),	-- Burden of Vigilance
+								i(133763),	-- Key to the Halls
 							})),
 							cr(95833, e(1486, {	-- Hyrja
 								i(140657),	-- Crest of the Lightborn [Priest Hidden Artifact Appearance]
@@ -193,15 +213,18 @@ _.Instances =
 								i(134209),	-- Tideskorn Gauntlets
 								i(133679),	-- Val'kyr Ascension Signet
 								i(136772),	-- Valkyra Protector Greatboots
+								i(136974),	-- Empowerment of Thunder
+								i(136771),	-- Eyir's Blessing
 							})),
 							cr(95674, e(1487, {	-- Fenryr
+								i(133633),	-- Wolfstride Pendant
 								i(133639),	-- Goldscar Pelt
 								i(136773),	-- Greatbelt of Alpha Dominance
 								i(133615),	-- Hide of Fenryr
 								i(136975),	-- Hunger of the Pack
 								i(133626),	-- Runebands of the Worthy
 								i(133609),	-- Silken Bloodscent Gloves
-								i(133633),	-- Wolfstride Pendant
+								i(133687),	-- Fenryr's Bloodstained Fang
 							})),
 							cr(95675, e(1488, {	-- God-King Skovald
 								i(140660),	-- Haft of the God-King
@@ -215,6 +238,8 @@ _.Instances =
 								i(134182),	-- Skoldiir Helm
 								i(134212),	-- Tideskorn Leggings
 								i(133638),	-- Woe-Bearer's Band
+								i(133764),	-- Ragnarok Ember
+								i(136778),	-- Skovald's Resolve
 							})),
 							cr(95676, e(1489, {	-- Odyn
 								ach(10789),	-- Mythic: Halls of Valor
@@ -240,6 +265,8 @@ _.Instances =
 								i(134207),	-- Tideskorn Cinch
 								i(139280),	-- Treads of Light
 								i(139283),	-- Wristbands of Magnificent Splender
+								i(133685),	-- Odyn's Boon
+								i(133686),	-- Stormforged Inferno
 							}))
 						}
 					})
