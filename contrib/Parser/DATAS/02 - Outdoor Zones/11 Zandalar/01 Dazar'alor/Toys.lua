@@ -8,7 +8,7 @@ _.Zones =
 		m(1163, {	-- Dazar'alor
 			-- Note: This expansion we do NOT want to mark this city as Horde Only because both factions will have various World Quests here
 			["groups"] = {
-				n(-161, {	-- Quests
+				n(-161, {	-- Toys
 					["groups"] = {
 						i(122293, {	-- Trans-Dimensional Bird Whistle
 							["groups"] = {
