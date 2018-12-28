@@ -6,7 +6,7 @@ _.WorldDrops =
 	{
 		["groups"] = {
 			n(-318, { -- Armor
-				n(-320, { -- Head
+				n(-320, {		-- Head
 					i(60202),	-- Tsanga's Helm
 					i(66931),	-- Mercury-Coated Hood
 					i(66955),	-- Scentsniffer Hood
@@ -18,6 +18,9 @@ _.WorldDrops =
 					i(67147),	-- Je'Tze's Sparkling Tiara
 				}),
 				filter(51, {	-- Neck
+					{	-- Amulet of the Howling Watch
+						["itemID"] = 67040,	-- Amulet of the Howling Watch
+					},
 					{	-- Mirkfallon Amulet
 						["itemID"] = 55401,	-- Mirkfallon Amulet
 					},
@@ -37,7 +40,7 @@ _.WorldDrops =
 						["itemID"] = 55399,	-- Swamplight Amulet
 					},
 				}),
-				n(-321, { -- Shoulder
+				n(-321, {		-- Shoulder
 					i(59467),	-- Hide of Chromaggus
 					i(59901),	-- Heaving Plates of Protection
 					i(66882),	-- Skeletalized Shoulderpads
@@ -49,7 +52,7 @@ _.WorldDrops =
 					i(67144),	-- Pauldrons of Edward the Odd
 					i(71025),	-- Flickering Shoulderpads
 				}),
-				n(-322, { -- Back
+				n(-322, {		-- Back
 					i(55308),	-- Moonbrook Cloak
 					i(55309),	-- Swamplight Cloak
 					i(55310),	-- Sishir Cloak
@@ -75,7 +78,7 @@ _.WorldDrops =
 					i(69800),	-- Spiritguard Drape
 					i(76160),	-- Drapes of the Dragonshrine
 				}),
-				n(-323, { -- Chest
+				n(-323, {		-- Chest
 					{	-- Chestguard of Futility	Added in Legion!!
 						["itemID"] = 157616,	-- Chestguard of Futility
 					},
@@ -90,7 +93,7 @@ _.WorldDrops =
 					i(67143),	-- Icebone Hauberk
 					i(76154),	-- Breastplate of Despair
 				}),
-				n(-326, { -- Wrist
+				n(-326, {		-- Wrist
 					i(60211),	-- Bracers of the Dark Pool
 					i(66954),	-- Knife-Concealing Bracers
 					i(66958),	-- Bracers of Razor Fletching
@@ -124,7 +127,7 @@ _.WorldDrops =
 					i(77323),	-- Bracers of the Black Dream
 					i(77324),	-- Chronoboost Bracers
 				}),
-				n(-327, { -- Hands
+				n(-327, {		-- Hands
 					i(66641),	-- Vonica's Gauntlets
 					i(66970),	-- Safecracker's Gloves
 					i(66989),	-- Endwyn's Flickering Gauntlets
@@ -141,7 +144,7 @@ _.WorldDrops =
 					i(76157),	-- Waterworn Handguards
 					i(76161),	-- Gauntlets of the Twilight Hour
 				}),
-				n(-328, { -- Waist
+				n(-328, {		-- Waist
 					i(59465),	-- Corehammer's Riveted Girdle
 					i(66941),	-- Triple-Loop Belt
 					i(66966),	-- Elekk-Horn Waistguard
@@ -165,7 +168,7 @@ _.WorldDrops =
 					i(78888),	-- Waistguard of Bleeding Bone
 					i(78889),	-- Waistplate of the Desecrated Future
 				}),
-				n(-329, { -- Legs
+				n(-329, {		-- Legs
 					i(55260),	-- Alpheus Legguards
 					i(56218),	-- Curse-Tainted Leggings
 					i(60201),	-- Phase-Twister Leggings
@@ -181,7 +184,7 @@ _.WorldDrops =
 					i(67236),	-- Blazewing's Furious Kilt
 					i(67244),	-- Sunderfury's Sundries
 				}),
-				n(-330, { -- Feet
+				n(-330, {		-- Feet
 					i(55855),	-- Darksky Treads
 					i(58195),	-- Woe Breeder's Boots
 					i(58197),	-- Rock Furrow Boots
@@ -227,6 +230,9 @@ _.WorldDrops =
 					},
 					{	-- Nethander Ring
 						["itemID"] = 55420,	-- Nethander Ring
+					},
+					{	-- Poison Vial Ring
+						["itemID"] = 66957,	-- Poison Vial Ring
 					},
 					{	-- Signet of High Arcanist Savor
 						["itemID"] = 67129,	-- Signet of High Arcanist Savor
