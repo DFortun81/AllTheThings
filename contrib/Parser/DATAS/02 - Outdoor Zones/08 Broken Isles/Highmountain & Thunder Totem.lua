@@ -5,7 +5,11 @@ _.Zones =
 {
 	m(619, { 	-- The Broken Isles
 		m(650, {	-- Highmountain
-			["maps"] = {750},
+			["maps"] = {
+				750,
+				660,	-- Feltotem Caverns
+				653,	-- Cave of the Blood Trial
+			},
 			["groups"] = {
 				n(-10067, {	-- Artifacts
 					n(-159, { -- Daily Event Roll
