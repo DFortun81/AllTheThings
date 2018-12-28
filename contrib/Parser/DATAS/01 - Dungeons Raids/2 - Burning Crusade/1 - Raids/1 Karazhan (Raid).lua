@@ -9,7 +9,6 @@ _.Instances =
 			inst(745, { 	-- Karazhan (Raid)
 				["groups"] = {
 					ach(960),	-- The Violet Eye
-					un(3, ach(2456)),	-- Vampire Hunter
 					n(-2, {	-- Vendors
 						n(16388, { 	-- Koren
 							["groups"] = {	

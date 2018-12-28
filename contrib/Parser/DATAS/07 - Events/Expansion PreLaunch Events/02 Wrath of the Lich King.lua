@@ -14,6 +14,7 @@ _.WorldEvents =
 						["collectible"] = false,
 					})),
 					n(28194, { -- Prince Tenris Mirkblood
+						un(3, ach(2456)),	-- Vampire Hunter
 						un(3, i(38658)), -- Vampiric Batling Pet
 						un(9, i(39769)), -- Arcanite Ripper
 					}),
