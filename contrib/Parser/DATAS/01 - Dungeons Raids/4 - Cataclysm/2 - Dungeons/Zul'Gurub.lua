@@ -123,10 +123,11 @@ _.Instances =
 								qg(53023, q(29172)),	-- The Beasts Within
 							}),
 							n(  0, {	-- Zone Drop
+								i(69803),	-- Gurubashi Punisher
 								i(69800),	-- Spiritguard Drape
 								i(69796),	-- Spiritcaller Cloak
 								i(69798),	-- Knotted Handwraps
-								i(69803),	-- Gurubashi Punisher
+								i(69802),	-- Band of the Gurubashi Berserker
 							}),
 							cr(52155, e(175, {	-- High Priest Venoxis
 								ach(5743),	-- It's Not Easy Being Green
