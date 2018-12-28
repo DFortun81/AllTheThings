@@ -800,6 +800,7 @@ _.Zones =
 							},
 							["maps"] = {
 								692,	-- Falanaar Arcway
+								693,	-- Falanaar Arcway
 							},
 							["groups"] = {
 								n(109556, { -- Treasure Chest
