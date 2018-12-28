@@ -4,13 +4,10 @@
 --               Copyright 2017 Dylan Fortune (Crieve-Sargeras)               --
 --------------------------------------------------------------------------------
 local app = AllTheThings;	-- Create a local (non global) reference
-local backdrop = {
-	bgFile = "Interface/Tooltips/UI-Tooltip-Background", 
-	edgeFile = "Interface/Tooltips/UI-Tooltip-Border", 
-	tile = true, tileSize = 16, edgeSize = 16, 
-	insets = { left = 4, right = 4, top = 4, bottom = 4 }
-};
-
+local function L(name, ...)
+	return name and app.LL and app.LL[name];
+end
+app.L = L;
 
 -- Performance Cache 
 -- While this may seem silly, caching references to commonly used APIs is actually a performance gain...
@@ -46,7 +43,6 @@ local PlayerHasToy = _G["PlayerHasToy"];
 local IsTitleKnown = _G["IsTitleKnown"];
 local InCombatLockdown = _G["InCombatLockdown"];
 local MAX_CREATURES_PER_ENCOUNTER = 9;
-local spellRecipeInfo = {};
 local DESCRIPTION_SEPARATOR = "`";
 
 -- Coroutine Helper Functions
@@ -456,6 +452,13 @@ app.GetTempDataSubMember = GetTempDataSubMember;
 	end
 end)();
 
+local backdrop = {
+	bgFile = "Interface/Tooltips/UI-Tooltip-Background", 
+	edgeFile = "Interface/Tooltips/UI-Tooltip-Border", 
+	tile = true, tileSize = 16, edgeSize = 16, 
+	insets = { left = 4, right = 4, top = 4, bottom = 4 }
+};
+
 -- Game Tooltip Icon
 local GameTooltipIcon = CreateFrame("FRAME", nil, GameTooltip);
 GameTooltipIcon:SetPoint("TOPRIGHT", GameTooltip, "TOPLEFT", 0, 0);
@@ -680,7 +683,6 @@ GameTooltipModel.TrySetModel = function(self, reference)
 end
 GameTooltipModel:Hide();
 
--- Localization Lib
 app.yell = function(msg)
 	UIErrorsFrame:AddMessage(msg or "nil", 1, 0, 0);
 	app:PlayRemoveSound();
@@ -688,10 +690,6 @@ end
 app.print = function(msg, ...)
 	DEFAULT_CHAT_FRAME:AddMessage(app.DisplayName .. ": " .. (msg or "nil"), ...);
 end
-local function L(name, ...)
-	return name and app.LL and app.LL[name];
-end
-app.L = L
 
 local function SetLocale(loc)
 	loc = loc or app.Locale or "enUS";
@@ -2180,6 +2178,7 @@ local function OpenMiniListForCurrentProfession(manual, refresh)
 				local reagentCache = app.GetDataMember("Reagents", {});
 				local recipeIDs = C_TradeSkillUI.GetAllRecipeIDs();
 				for i = 1,#recipeIDs do
+					local spellRecipeInfo = {};
 					if C_TradeSkillUI.GetRecipeInfo(recipeIDs[i], spellRecipeInfo) then
 						currentCategoryID = spellRecipeInfo.categoryID;
 						if not categories[currentCategoryID] then
