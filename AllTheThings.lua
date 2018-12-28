@@ -8425,6 +8425,7 @@ end):Show();
 						table.wipe(app.HolidayHeader.g);
 						app.HolidayHeader.progress = 0;
 						app.HolidayHeader.total = 0;
+						--[[
 						table.sort(results, function(a, b)
 							if a then
 								if b then
@@ -8432,6 +8433,7 @@ end):Show();
 								end
 							end
 						end);
+						]]--
 						for i, group in ipairs(results) do
 							local clone = {};
 							for key,value in pairs(group) do
@@ -8474,6 +8476,7 @@ end):Show();
 								if #temp > 1 then MergeObject(header.g, group); end
 							elseif group.mapID and not header.instanceID then
 								local temp = { header };
+								group.mapID = header.mapID;
 								MergeObject(temp, group);
 								if #temp > 1 then MergeObject(header.g, group); end
 							elseif group.achievementID then
@@ -8533,6 +8536,7 @@ end):Show();
 					
 					-- If we have determined that we want to expand this section, then do it
 					if results.g then
+						--[[
 						table.sort(results.g, function(a, b)
 							if a and b then
 								if a.difficultyID then
@@ -8549,6 +8553,25 @@ end):Show();
 								return a.isRaid and not b.isRaid;
 							end
 						end);
+						]]--
+						local bottom = {};
+						local top = {};
+						for i=#results.g,1,-1 do
+							local o = results.g[i];
+							if o.difficultyID then
+								table.remove(results.g, i);
+								table.insert(bottom, 1, o);
+							elseif o.isRaid then
+								table.remove(results.g, i);
+								table.insert(top, o);
+							end
+						end
+						for i,o in ipairs(top) do
+							table.insert(results.g, 1, o);
+						end
+						for i,o in ipairs(bottom) do
+							table.insert(results.g, o);
+						end
 						
 						if self.data then
 							ExpandGroupsRecursively(self.data, false);
