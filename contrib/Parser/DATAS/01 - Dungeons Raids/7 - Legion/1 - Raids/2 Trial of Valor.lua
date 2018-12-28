@@ -5,6 +5,7 @@
 _.Instances = 
 {
 	{ -- Legion
+		["tierID"] = 7,
 		["groups"] = {
 			inst(861, { 	-- Trial of Valor
 				["isRaid"] = true,
@@ -89,6 +90,7 @@ _.Instances =
 							["crs"] = {
 								114263,	-- Odyn
 								114344,	-- Guarm
+								114323,	-- Guarm
 								114537,	-- Helya
 								111246,	-- Archmage Timear
 							},
@@ -178,7 +180,7 @@ _.Instances =
 									i(142514),	-- Ravens' Sight
 									i(142511),	-- Unforged Titansteel
 								})),
-								cr(114344, e(1830, {	-- Guarm
+								cr(114323, e(1830, {	-- Guarm
 									{
 										["achievementID"] = 11394,	-- Trial of Valor
 										["criteriaID"] = 2,			-- Guarm
@@ -251,28 +253,34 @@ _.Instances =
 							i(142514),	-- Ravens' Sight
 							i(142511),	-- Unforged Titansteel
 						})),
-						cr(114344, e(1830, {	-- Guarm
-							ach(11386),	-- Boneafide Tri Tip
-							{
-								["achievementID"] = 11394,	-- Trial of Valor
-								["criteriaID"] = 2,			-- Guarm
+						e(1830, {	-- Guarm
+							["crs"] = {
+								114344,	-- Guarm
+								114323,	-- Guarm
 							},
-							i(142111),	-- Vantus Rune Technique: Guarm [Rank 1]
-							i(142105),	-- Vantus Rune Technique: Guarm [Rank 2]
-							i(142412),	-- Windwhipped Sailcloth
-							i(142432),	-- Helbeast Skin Tunic
-							i(142423),	-- Bite-Resistant Wristclamps
-							i(142415),	-- Helhound Hair Bracers
-							i(142434),	-- Kvaldir Exult's Grips
-							i(142435),	-- Reinforced Hound-Handler's Gauntlets
-							i(142413),	-- Leggings of the Lower Planes
-							i(142426),	-- Lead-Soled Seabed Striders
-							i(142417),	-- Moccasins of Silent Passage
-							i(142512),	-- Accursed Cuspid
-							i(142515),	-- Chilled Incisor
-							i(142506),	-- Eye of Guarm
-							i(142516),	-- Sizzling Fang
-						})),
+							["groups"] = {
+								ach(11386),	-- Boneafide Tri Tip
+								{
+									["achievementID"] = 11394,	-- Trial of Valor
+									["criteriaID"] = 2,			-- Guarm
+								},
+								i(142111),	-- Vantus Rune Technique: Guarm [Rank 1]
+								i(142105),	-- Vantus Rune Technique: Guarm [Rank 2]
+								i(142412),	-- Windwhipped Sailcloth
+								i(142432),	-- Helbeast Skin Tunic
+								i(142423),	-- Bite-Resistant Wristclamps
+								i(142415),	-- Helhound Hair Bracers
+								i(142434),	-- Kvaldir Exult's Grips
+								i(142435),	-- Reinforced Hound-Handler's Gauntlets
+								i(142413),	-- Leggings of the Lower Planes
+								i(142426),	-- Lead-Soled Seabed Striders
+								i(142417),	-- Moccasins of Silent Passage
+								i(142512),	-- Accursed Cuspid
+								i(142515),	-- Chilled Incisor
+								i(142506),	-- Eye of Guarm
+								i(142516),	-- Sizzling Fang
+							},
+						}),
 						cr(114537, e(1829, {	-- Helya
 							ach(11377),	-- Patient Zero
 							{
@@ -328,32 +336,38 @@ _.Instances =
 							i(142514),	-- Ravens' Sight
 							i(142511),	-- Unforged Titansteel
 						})),
-						cr(114344, e(1830, {	-- Guarm
-							ach(11386),	-- Boneafide Tri Tip
-							{
-								["achievementID"] = 11394,	-- Trial of Valor
-								["criteriaID"] = 2,			-- Guarm
+						e(1830, {	-- Guarm
+							["crs"] = {
+								114344,	-- Guarm
+								114323,	-- Guarm
 							},
-							{
-								["achievementID"] = 11426,	-- Heroic: Trial of Valor
-								["criteriaID"] = 2,			-- Heroic: Guarm
+							["groups"] = {
+								ach(11386),	-- Boneafide Tri Tip
+								{
+									["achievementID"] = 11394,	-- Trial of Valor
+									["criteriaID"] = 2,			-- Guarm
+								},
+								{
+									["achievementID"] = 11426,	-- Heroic: Trial of Valor
+									["criteriaID"] = 2,			-- Heroic: Guarm
+								},
+								i(142111),	-- Vantus Rune Technique: Guarm [Rank 1]
+								i(142105),	-- Vantus Rune Technique: Guarm [Rank 2]
+								i(142412),	-- Windwhipped Sailcloth
+								i(142432),	-- Helbeast Skin Tunic
+								i(142423),	-- Bite-Resistant Wristclamps
+								i(142415),	-- Helhound Hair Bracers
+								i(142434),	-- Kvaldir Exult's Grips
+								i(142435),	-- Reinforced Hound-Handler's Gauntlets
+								i(142413),	-- Leggings of the Lower Planes
+								i(142426),	-- Lead-Soled Seabed Striders
+								i(142417),	-- Moccasins of Silent Passage
+								i(142512),	-- Accursed Cuspid
+								i(142515),	-- Chilled Incisor
+								i(142506),	-- Eye of Guarm
+								i(142516),	-- Sizzling Fang
 							},
-							i(142111),	-- Vantus Rune Technique: Guarm [Rank 1]
-							i(142105),	-- Vantus Rune Technique: Guarm [Rank 2]
-							i(142412),	-- Windwhipped Sailcloth
-							i(142432),	-- Helbeast Skin Tunic
-							i(142423),	-- Bite-Resistant Wristclamps
-							i(142415),	-- Helhound Hair Bracers
-							i(142434),	-- Kvaldir Exult's Grips
-							i(142435),	-- Reinforced Hound-Handler's Gauntlets
-							i(142413),	-- Leggings of the Lower Planes
-							i(142426),	-- Lead-Soled Seabed Striders
-							i(142417),	-- Moccasins of Silent Passage
-							i(142512),	-- Accursed Cuspid
-							i(142515),	-- Chilled Incisor
-							i(142506),	-- Eye of Guarm
-							i(142516),	-- Sizzling Fang
-						})),
+						}),
 						cr(114537, e(1829, {	-- Helya
 							{
 								["achievementID"] = 11581,	-- Ahead of the Curve: Helya
@@ -474,33 +488,39 @@ _.Instances =
 							i(142514),	-- Ravens' Sight
 							i(142511),	-- Unforged Titansteel
 						})),
-						cr(114344, e(1830, {	-- Guarm
-							ach(11386),	-- Boneafide Tri Tip
-							{
-								["achievementID"] = 11394,	-- Trial of Valor
-								["criteriaID"] = 2,			-- Guarm
+						e(1830, {	-- Guarm
+							["crs"] = {
+								114344,	-- Guarm
+								114323,	-- Guarm
 							},
-							{
-								["achievementID"] = 11426,	-- Heroic: Trial of Valor
-								["criteriaID"] = 2,			-- Heroic: Guarm
+							["groups"] = {
+								ach(11386),	-- Boneafide Tri Tip
+								{
+									["achievementID"] = 11394,	-- Trial of Valor
+									["criteriaID"] = 2,			-- Guarm
+								},
+								{
+									["achievementID"] = 11426,	-- Heroic: Trial of Valor
+									["criteriaID"] = 2,			-- Heroic: Guarm
+								},
+								ach(11397),	-- Mythic: Guarm
+								i(142111),	-- Vantus Rune Technique: Guarm [Rank 1]
+								i(142105),	-- Vantus Rune Technique: Guarm [Rank 2]
+								i(142412),	-- Windwhipped Sailcloth
+								i(142432),	-- Helbeast Skin Tunic
+								i(142423),	-- Bite-Resistant Wristclamps
+								i(142415),	-- Helhound Hair Bracers
+								i(142434),	-- Kvaldir Exult's Grips
+								i(142435),	-- Reinforced Hound-Handler's Gauntlets
+								i(142413),	-- Leggings of the Lower Planes
+								i(142426),	-- Lead-Soled Seabed Striders
+								i(142417),	-- Moccasins of Silent Passage
+								i(142512),	-- Accursed Cuspid
+								i(142515),	-- Chilled Incisor
+								i(142506),	-- Eye of Guarm
+								i(142516),	-- Sizzling Fang
 							},
-							ach(11397),	-- Mythic: Guarm
-							i(142111),	-- Vantus Rune Technique: Guarm [Rank 1]
-							i(142105),	-- Vantus Rune Technique: Guarm [Rank 2]
-							i(142412),	-- Windwhipped Sailcloth
-							i(142432),	-- Helbeast Skin Tunic
-							i(142423),	-- Bite-Resistant Wristclamps
-							i(142415),	-- Helhound Hair Bracers
-							i(142434),	-- Kvaldir Exult's Grips
-							i(142435),	-- Reinforced Hound-Handler's Gauntlets
-							i(142413),	-- Leggings of the Lower Planes
-							i(142426),	-- Lead-Soled Seabed Striders
-							i(142417),	-- Moccasins of Silent Passage
-							i(142512),	-- Accursed Cuspid
-							i(142515),	-- Chilled Incisor
-							i(142506),	-- Eye of Guarm
-							i(142516),	-- Sizzling Fang
-						})),
+						}),
 						cr(114537, e(1829, {	-- Helya
 							{
 								["achievementID"] = 11581,	-- Ahead of the Curve: Helya
@@ -614,7 +634,6 @@ _.Instances =
 					}),
 				},
 			}),
-		},					
-		["tierID"] = 7
+		},
 	},	
 };
