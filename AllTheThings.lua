@@ -8510,8 +8510,8 @@ end):Show();
 							app.HolidayHeader.visible = false;
 						end
 						
+						header.u = nil;
 						if #results > 1 and not header.mapID then
-							header.u = nil;
 							header.visible = true;
 							setmetatable(header,
 								header.instanceID and app.BaseInstance
