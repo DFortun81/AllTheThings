@@ -34,7 +34,7 @@ _.Instances =
 								i(33865, {	-- Amani Hex Stick
 									n(24396, { 	-- Forest Frog
 										["groups"] = {
-											i(33993), -- Mojo (PET!)
+											i(33993),	-- Mojo (PET!)
 											ach(5761, {	-- Hex Mix
 												{
 													["criteriaID"] = 1,	-- Rosa saved.

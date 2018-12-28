@@ -4,8 +4,13 @@
 
 _.Instances = { tier(1, {	-- Classic
 	inst(76, { 	-- Zul'Gurub
+		["u"] = 12,
+		["isRaid"] = true,
+		["sharedLockout"] = 1,
+		["lvl"] = 60,
+		["mapID"] = 337,
 		["groups"] = {
-			n(-40, { -- Legacy
+			d(1, {	-- Normal (Legacy)
 				["u"] = 12,
 				["groups"] = {
 					n(-17, { -- Legacy Quests
@@ -787,10 +792,5 @@ _.Instances = { tier(1, {	-- Classic
 				},
 			}),
 		},
-		["u"] = 12,
-		["isRaid"] = true,
-		["sharedLockout"] = 1,
-		["lvl"] = 60,
-		["mapID"] = 337
 	}),
 })};

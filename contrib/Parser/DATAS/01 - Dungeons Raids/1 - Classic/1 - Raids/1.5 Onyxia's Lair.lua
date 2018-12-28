@@ -6,6 +6,7 @@ _.Instances = { tier(1, {	-- Classic
 	inst(760, { 	-- Onyxia's Lair
 		["groups"] = {
 			d(1, {	-- Normal (Legacy)
+				["u"] = 12,
 				["groups"] = {
 					e(1651, {	-- Onyxia (Legacy)
 						["groups"] = {
@@ -109,7 +110,6 @@ _.Instances = { tier(1, {	-- Classic
 						["creatureID"] = 10184
 					}),
 				},
-				["u"] = 12,
 			}),
 			d(3, {	-- 10 Player
 				["groups"] = {

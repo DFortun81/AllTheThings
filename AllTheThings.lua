@@ -1363,7 +1363,7 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 				tinsert(entries, o);
 				
 				-- Only go down one more level.
-				if group.g and layer < 2 and not group.achievementID then
+				if group.g and layer < 2 and (not group.achievementID or paramA == "creatureID") then
 					BuildContainsInfo(group.g, entries, paramA, paramB, indent .. " ", layer + 1);
 				end
 			end
