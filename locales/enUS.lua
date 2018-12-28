@@ -2328,6 +2328,7 @@ AllTheThings.Locales.enUS = {
 		[182032] = "Galaen's Journal",
 		[182115] = "Wanted Poster",
 		[182165] = "Wanted Poster",
+		[182947] = "The Codex of Blood",
 		[183770] = "B'naar Control Console",
 		[183811] = "Wanted Posted",
 		[184300] = "Necromantic Focus",
