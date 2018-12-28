@@ -280,9 +280,9 @@ profession(185, { -- Cooking
 				un(7, i(5482)),	-- Recipe: Kaldorei Spider Kabob
 				un(8, h(recipe(3397))),	-- Big Bear Steak [Removed From Game!]
 				{
-					["itemID"] = 7678,		-- Recipe: Thistle Tea (Removed from Game!)
-					["description"] = "Do not attempt to buy this to learn on your non-Rogue characters, it won't let you. Also, you'd have to spend a couple million gold to get ahold of one.",
-					["u"] = 1,
+					["itemID"] = 7678,	-- Recipe: Thistle Tea (Removed from Game!)
+					["spellID"] = 9513,	-- Thistle Tea
+					["u"] = 7,
 				},
 				un(7, i(5489)),	-- Recipe: Lean Venison
 				un(7, i(12227)), -- Recipe: Lean Wolf Steak
