@@ -18,17 +18,22 @@ _.Zones =
 								{ 71.51, 30.35, 862 },
 							},
 							["g"] = {
-								{	-- Bowl of Glowing Pufferfish
-									["itemID"] = 166704,	-- Bowl of Glowing Pufferfish
-								},
-								{	-- Kojo's Master Matching Set
-									["itemID"] = 166851,	-- Kojo's Master Matching Set
-								},
-								{	-- Recipe: Boralus Blood Sausage [Rank 3]
-									["itemID"] = 166807,	-- Recipe: Boralus Blood Sausage [Rank 3]
-								},
-								{	-- Recipe: Sanguiated Feast [Rank 3]
-									["itemID"] = 166264,	-- Recipe: Sanguiated Feast [Rank 3]
+								{	-- Tortollan Seekers Supplies
+									["itemID"] = 166245,	-- Tortollan Seekers Supplies
+									["g"] = {
+										{	-- Bowl of Glowing Pufferfish
+											["itemID"] = 166704,	-- Bowl of Glowing Pufferfish
+										},
+										{	-- Kojo's Master Matching Set
+											["itemID"] = 166851,	-- Kojo's Master Matching Set
+										},
+										{	-- Recipe: Boralus Blood Sausage [Rank 3]
+											["itemID"] = 166807,	-- Recipe: Boralus Blood Sausage [Rank 3]
+										},
+										{	-- Recipe: Sanguiated Feast [Rank 3]
+											["itemID"] = 166264,	-- Recipe: Sanguiated Feast [Rank 3]
+										},
+									},
 								},
 							},
 						},

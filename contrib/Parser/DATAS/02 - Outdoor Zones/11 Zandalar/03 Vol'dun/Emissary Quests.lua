@@ -18,14 +18,19 @@ _.Zones =
 								{ 56.68, 49.74, 864 },
 							},
 							["g"] = {
-								{	-- Goldtusk Inn Breakfast Buffet
-									["itemID"] = 166703,	-- Goldtusk Inn Breakfast Buffet
-								},
-								{	-- Meerah's Jukebox
-									["itemID"] = 166880,	-- Meerah's Jukebox
-								},
-								{	-- Words of Akunda
-									["itemID"] = 165021,	-- Words of Akunda
+								{	-- Voldunai Supplies
+									["itemID"] = 166290,	-- Voldunai Supplies
+									["g"] = {
+										{	-- Goldtusk Inn Breakfast Buffet
+											["itemID"] = 166703,	-- Goldtusk Inn Breakfast Buffet
+										},
+										{	-- Meerah's Jukebox
+											["itemID"] = 166880,	-- Meerah's Jukebox
+										},
+										{	-- Words of Akunda
+											["itemID"] = 165021,	-- Words of Akunda
+										},
+									},
 								},
 							},
 						},

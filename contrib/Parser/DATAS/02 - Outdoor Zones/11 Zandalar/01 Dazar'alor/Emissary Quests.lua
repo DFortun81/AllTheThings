@@ -98,11 +98,16 @@ _.Zones =
 							["repeatable"] = true,
 							["lvl"] = 120,
 							["g"] = {
-								{	-- Rallying War Banner
-									["itemID"] = 166879,	-- Rallying War Banner
-								},
-								{	-- Recipe: Contract: The Honorbound [Rank 3]
-									["itemID"] = 166311,	-- Recipe: Contract: The Honorbound [Rank 3]
+								{	-- Honorbound Supplies
+									["itemID"] = 166299,	-- Honorbound Supplies
+									["g"] = {
+										{	-- Rallying War Banner
+											["itemID"] = 166879,	-- Rallying War Banner
+										},
+										{	-- Recipe: Contract: The Honorbound [Rank 3]
+											["itemID"] = 166311,	-- Recipe: Contract: The Honorbound [Rank 3]
+										},
+									},
 								},
 							},
 						},
@@ -115,8 +120,13 @@ _.Zones =
 							["repeatable"] = true,
 							["lvl"] = 120,
 							["g"] = {
-								{	-- Warbeast Kraal Dinner Bell
-									["itemID"] = 166701,	-- Warbeast Kraal Dinner Bell
+								{	-- Zandalari Empire Supplies
+									["itemID"] = 166292,	-- Zandalari Empire Supplies
+									["g"] = {
+										{	-- Warbeast Kraal Dinner Bell
+											["itemID"] = 166701,	-- Warbeast Kraal Dinner Bell
+										},
+									},
 								},
 							},
 						},

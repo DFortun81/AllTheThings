@@ -18,11 +18,16 @@ _.Zones =
 								{ 39.11, 79.47, 863 },
 							},
 							["g"] = {
-								{	-- For da Blood God!
-									["itemID"] = 166308,	-- For da Blood God!
-								},
-								{	-- Pair of Tiny Bat Wings
-									["itemID"] = 166716,	-- Pair of Tiny Bat Wings
+								{	-- Talanji's Expedition Supplies
+									["itemID"] = 166282,	-- Talanji's Expedition Supplies
+									["g"] = {
+										{	-- For da Blood God!
+											["itemID"] = 166308,	-- For da Blood God!
+										},
+										{	-- Pair of Tiny Bat Wings
+											["itemID"] = 166716,	-- Pair of Tiny Bat Wings
+										},
+									},
 								},
 							},
 						},
