@@ -1,21 +1,27 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-_.Instances = 
+--Note!!
+--	Alliance // Horde
+--	#2: Jadefire Masters // Grong, the Revenant 
+--	#3: Grong, the Revenant // Jadefire Masters
+_.Instances =
 {
 	{ -- Battle For Azeroth
-		["groups"] = {
-			inst(1176, {	-- Battle of Dazar'alor
-				["groups"] = {
-					d(14, {		-- Normal
-						["groups"] = {
+		["tierID"] = 8,
+		["g"] = {
+			{	-- Battle of Dazar'alor
+				["instanceID"] = 1176,	-- Battle of Dazar'alor
+				["g"] = {
+					{	-- Normal
+						["difficultyID"] = 14,	-- Normal
+						["g"] ={
 							{	-- Zone Drops
 								["npcID"] = 0,	-- Zone Drops
 								["g"] = {
 									
 								},
 							},
-							-- Alliance Version
 							{	-- Champion of the Light
 								["encounterID"] = 2344,
 								["g"] = {
@@ -404,15 +410,9 @@ _.Instances =
 								},
 							},
 						},
-					}),
+					},
 				},
-				["isRaid"] = true,
-				["lvl"] = 120,
-				["maps"] = { 
-					
-				},
-			}),
-		},					
-		["tierID"] = 8,
+			},
+		},		
 	},	
 };

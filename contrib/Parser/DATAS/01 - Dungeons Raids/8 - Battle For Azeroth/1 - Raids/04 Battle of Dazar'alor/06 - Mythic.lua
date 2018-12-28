@@ -2,16 +2,20 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 --Note!!
---	#2: Jadefire Masters / Grong, the Revenant 
---	#3: Grong, the Revenant / Jadefire Masters
-_.Instances = 
+--	Alliance // Horde
+--	#2: Jadefire Masters // Grong, the Revenant 
+--	#3: Grong, the Revenant // Jadefire Masters
+_.Instances =
 {
 	{ -- Battle For Azeroth
-		["groups"] = {
-			inst(1176, {	-- Battle of Dazar'alor
-				["groups"] = {
-					d(16, {		-- Mythic
-						["groups"] = {
+		["tierID"] = 8,
+		["g"] = {
+			{	-- Battle of Dazar'alor
+				["instanceID"] = 1176,	-- Battle of Dazar'alor
+				["g"] = {
+					{	-- Mythic
+						["difficultyID"] = 16,	-- Mythic
+						["g"] ={
 							{	-- Zone Drops
 								["npcID"] = 0,	-- Zone Drops
 								["g"] = {
@@ -412,15 +416,9 @@ _.Instances =
 								},
 							},
 						},
-					}),
+					},
 				},
-				["isRaid"] = true,
-				["lvl"] = 120,
-				["maps"] = { 
-					
-				},
-			}),
-		},					
-		["tierID"] = 8,
+			},
+		},	
 	},	
 };
