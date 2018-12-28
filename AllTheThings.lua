@@ -1308,15 +1308,6 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 			if group.total and (group.total > 1 or (group.total > 0 and not group.collectible)) then
 				if (group.progress / group.total) < 1 or GetDataMember("ShowCompletedGroups") then
 					right = GetProgressColorText(group.progress, group.total);
-					--[[
-					if group.itemID and group.itemID ~= itemID  then
-						if group.total > 1 or not group.collectible then
-							right = GetProgressColorText(group.progress, group.total);
-						end
-					else
-						right = GetProgressColorText(group.progress, group.total);
-					end
-					]]--
 				end
 			elseif paramA and paramB and (not group[paramA] or (group[paramA] and group[paramA] ~= paramB)) then
 				if group.collectible then
@@ -1363,7 +1354,7 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 				tinsert(entries, o);
 				
 				-- Only go down one more level.
-				if group.g and layer < 2 and (not group.achievementID or paramA == "creatureID") then
+				if group.g and layer < 2 and (not group.achievementID or paramA == "creatureID") and not group.parent.difficultyID then
 					BuildContainsInfo(group.g, entries, paramA, paramB, indent .. " ", layer + 1);
 				end
 			end
@@ -1410,7 +1401,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				group = regroup;
 			end
 			
-			if group and #group > 0 and not group[1].achievementID then
+			if group and #group > 0 and not group[1].achievementID and not group[1].parent.difficultyID then
 				-- Push up one level.
 				local subgroup = {};
 				table.sort(group, function(a, b)
@@ -8425,15 +8416,6 @@ end):Show();
 						table.wipe(app.HolidayHeader.g);
 						app.HolidayHeader.progress = 0;
 						app.HolidayHeader.total = 0;
-						--[[
-						table.sort(results, function(a, b)
-							if a then
-								if b then
-									return (a.instanceID and not b.instanceID) or (a.mapID and not b.mapID) or (a.isRaid and not b.isRaid) or (a.maps and not b.maps);
-								end
-							end
-						end);
-						]]--
 						for i, group in ipairs(results) do
 							local clone = {};
 							for key,value in pairs(group) do
@@ -8536,24 +8518,6 @@ end):Show();
 					
 					-- If we have determined that we want to expand this section, then do it
 					if results.g then
-						--[[
-						table.sort(results.g, function(a, b)
-							if a and b then
-								if a.difficultyID then
-									if b.difficultyID then
-										return a.difficultyID < b.difficultyID;
-									else
-										return false;
-									end
-								else
-									if b.difficultyID then
-										return true;
-									end
-								end
-								return a.isRaid and not b.isRaid;
-							end
-						end);
-						]]--
 						local bottom = {};
 						local top = {};
 						for i=#results.g,1,-1 do
