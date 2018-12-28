@@ -179,6 +179,9 @@ _.Achievements =
 						crit(23),		-- Stay Chill
 						crit(24),		-- Four Play
 					}),
+					ach(13315, {		-- Glory of the Dazar'alor Raider
+						i(166539),		-- Dazar'alor Windreaver
+					}),
 					ach(9396, {		-- Glory of the Draenor Hero
 						i(116670),		-- Frostplains Battleboar
 						crit(1),		-- Draenor Dungeon Hero

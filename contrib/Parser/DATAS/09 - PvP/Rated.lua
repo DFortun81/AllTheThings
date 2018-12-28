@@ -27,6 +27,10 @@ _.PVP =
 					{	-- Player vs. Player (Battle for Azeroth Season 2)
 						["npcID"] = -3159,	-- Player vs. Player (Battle for Azeroth Season 2
 						["g"] = {
+							{	-- Reins of the Onyx War Hyena
+								["itemID"] = 166417,	-- Reins of the Onyx War Hyena
+								["u"] = 1,	-- Presumably Random Win from any rated Bracket in Season 2, but unclear for now and marked as unobtainable
+							},
 							{	-- Vicious Black Bonesteed
 								["itemID"] = 165020,	-- Vicious Black Bonesteed
 							},
