@@ -794,34 +794,43 @@ _.Zones =
 						q(44023),	-- WANTED: Siegemaster Aedrin
 --]]					
 						q(43943, { -- Withered Army Training
-							n(109556, { -- Treasure Chest
-								i(136914), -- Leyline Broodling
-							}),
-							n(109564, { -- Glimmering Treasure Chest
-								i(140495, { -- Torn Invitation [Fox Mount Quest]
-									i(137573), -- Reins of the Llothien Prowler
+							["qgs"] = {
+								97140,	-- First Arcanist Thalyssra (Frail)
+								115736,	-- First Arcanist Thalyssra (Kinda Hot)
+							},
+							["maps"] = {
+								692,	-- Falanaar Arcway
+							},
+							["groups"] = {
+								n(109556, { -- Treasure Chest
+									i(136914), -- Leyline Broodling
 								}),
-								i(139565, {	-- Spark of the Fallen Exarch [Protection Paladin Hidden Artifact Appearance]
-									artifact(720), -- Find Hidden Artifact Skin
+								n(109564, { -- Glimmering Treasure Chest
+									i(140495, { -- Torn Invitation [Fox Mount Quest]
+										i(137573), -- Reins of the Llothien Prowler
+									}),
+									i(139565, {	-- Spark of the Fallen Exarch [Protection Paladin Hidden Artifact Appearance]
+										artifact(720), -- Find Hidden Artifact Skin
+									}),
+									i(139563, {	-- The Stormfist [Windwalker Monk Hidden Artifact Appearance]
+										artifact(527), -- Find Hidden Artifact Skin
+									}),
+									i(139546, {	-- Twisting Anima of Souls [Death Knight Hidden Artifact Appearance]
+										artifact(921), -- Find Hidden Artifact Skin
+									}),
+									i(141296),	-- Ancient Mana Basin
+									i(141297),	-- Arcano-Shower
+									i(141298),	-- Displacer Meditation Stone
+									i(140780),	-- Fal'dorei Egg
+									i(141299),	-- Kaldorei Light Globe
+									i(140786),	-- Ley Spider Eggs
+									i(141301),	-- Unstable Powder Box
+									i(141306),	-- Wisp in a Bottle
 								}),
-								i(139563, {	-- The Stormfist [Windwalker Monk Hidden Artifact Appearance]
-									artifact(527), -- Find Hidden Artifact Skin
+								n(109497, {	-- Small Treasure Chest
+									i(137823),	-- Design: Prophetic Band (Rank 2)
 								}),
-								i(139546, {	-- Twisting Anima of Souls [Death Knight Hidden Artifact Appearance]
-									artifact(921), -- Find Hidden Artifact Skin
-								}),
-								i(141296),	-- Ancient Mana Basin
-								i(141297),	-- Arcano-Shower
-								i(141298),	-- Displacer Meditation Stone
-								i(140780),	-- Fal'dorei Egg
-								i(141299),	-- Kaldorei Light Globe
-								i(140786),	-- Ley Spider Eggs
-								i(141301),	-- Unstable Powder Box
-								i(141306),	-- Wisp in a Bottle
-							}),
-							n(109497, {	-- Small Treasure Chest
-								i(137823),	-- Design: Prophetic Band (Rank 2)
-							}),
+							},
 						}),
 --[[						
 						q(43807),	-- Withered Wrangling: Ambervale
