@@ -24,6 +24,17 @@ _.PVP =
 							},
 						},
 					},
+					{	-- Player vs. Player (Battle for Azeroth Season 2)
+						["npcID"] = -3159,	-- Player vs. Player (Battle for Azeroth Season 2
+						["g"] = {
+							{	-- Vicious Black Bonesteed
+								["itemID"] = 165020,	-- Vicious Black Bonesteed
+							},
+							{	-- Vicious Black Warsaber
+								["itemID"] = 165019,	-- Vicious Black Warsaber
+							},
+						},
+					},
 				},
 			},
 		},
