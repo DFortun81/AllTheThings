@@ -17,6 +17,9 @@ _.Instances =
 							["questID"] = 45088,	-- Trial of Valor: The Lost Army
 							["sourceQuest"] = 44729,	-- Trial of Valor: Odyn's Favor
 							["qg"] = 114263,	-- Odyn
+							["crs"] = {
+								116241,	-- Champion of the Chosen Dead
+							},
 							["groups"] = {
 								i(143506, {	-- Ensemble: Vestment of the Chosen Dead
 									["groups"] = {
@@ -107,7 +110,10 @@ _.Instances =
 										i(143350),	-- Pantaloons of the Chosen Dead
 										i(143338),	-- Sandals of the Chosen Dead
 									},
-									["classes"] = { 5, 8, 9 },	-- Priest, Mage, Warock
+									["classes"] = { 5, 8, 9 },	-- Priest, Mage, Warlock
+									["crs"] = {
+										116242,	-- Aspiring Champion of the Chosen Dead
+									},
 								}),		
 								i(143513, {	-- Ensemble: Garb of the Chosen Dead
 									["groups"] = {	
@@ -122,6 +128,9 @@ _.Instances =
 										i(143340),	-- Boots of the Chosen Dead
 									},
 									["classes"] = { 11, 4, 10, 12 },	-- Druid, Rogue, Monk, Demon Hunter
+									["crs"] = {
+										116242,	-- Aspiring Champion of the Chosen Dead
+									},
 								}),		
 								i(143517, {	-- Ensemble: Chains of the Chosen Dead	
 									["groups"] = {
@@ -136,6 +145,9 @@ _.Instances =
 										i(143339),	-- Sabatons of the Chosen Dead
 									},
 									["classes"] = { 3, 7 },	-- Hunter, Shaman
+									["crs"] = {
+										116242,	-- Aspiring Champion of the Chosen Dead
+									},
 								}),		
 								i(143521, {	-- Ensemble: Funerary Plate of the Chosen Dead	
 									["groups"] = {
@@ -150,6 +162,9 @@ _.Instances =
 										i(143337),	-- Treads of the Chosen Dead
 									},
 									["classes"] = { 2, 1, 6 },	-- Paladin, Warrior, Death Knight
+									["crs"] = {
+										116242,	-- Aspiring Champion of the Chosen Dead
+									},
 								}),	
 							},
 						}),
@@ -310,6 +325,76 @@ _.Instances =
 						n(0, {	-- Zone Drop
 							i(142541),	-- Drape of the Forgotten Souls
 						}),
+						n(-1, {	-- Common Boss Drop
+							i(143507, {	-- Ensemble: Vestment of the Chosen Dead
+								["groups"] = {
+									i(143346),	-- Circlet of the Chosen Dead
+									i(143356),	-- Mantle of the Chosen Dead
+									i(143369),	-- Drape of the Chosen Dead
+									i(143353),	-- Robe of the Chosen Dead
+									i(143362),	-- Bracers of the Chosen Dead
+									i(143343),	-- Gloves of the Chosen Dead
+									i(143359),	-- Sash of the Chosen Dead
+									i(143350),	-- Pantaloons of the Chosen Dead
+									i(143338),	-- Sandals of the Chosen Dead
+								},
+								["classes"] = { 5, 8, 9 },	-- Priest, Mage, Warlock
+								["crs"] = {
+									116245,	-- Heroic Champion of the Chosen Dead
+								},
+							}),		
+							i(143511, {	-- Ensemble: Garb of the Chosen Dead
+								["groups"] = {	
+									i(143348),	-- Hood of the Chosen Dead
+									i(143354),	-- Shoulderpads of the Chosen Dead
+									i(143366),	-- Wrap of the Chosen Dead
+									i(143336),	-- Tunic of the Chosen Dead
+									i(143365),	-- Wristguards of the Chosen Dead
+									i(143341),	-- Grips of the Chosen Dead
+									i(143361),	-- Strap of the Chosen Dead
+									i(143352),	-- Leggings of the Chosen Dead
+									i(143340),	-- Boots of the Chosen Dead
+								},
+								["classes"] = { 11, 4, 10, 12 },	-- Druid, Rogue, Monk, Demon Hunter
+								["crs"] = {
+									116245,	-- Heroic Champion of the Chosen Dead
+								},
+							}),		
+							i(143515, {	-- Ensemble: Chains of the Chosen Dead	
+								["groups"] = {
+									i(143347),	-- Coif of the Chosen Dead
+									i(143357),	-- Pauldrons of the Chosen Dead
+									i(143368),	-- Cloak of the Chosen Dead
+									i(143335),	-- Chain Shirt of the Chosen Dead
+									i(143364),	-- Armbands of the Chosen Dead
+									i(143344),	-- Gauntlets of the Chosen Dead
+									i(143360),	-- Girdle of the Chosen Dead
+									i(143351),	-- Chain Leggings of the Chosen Dead
+									i(143339),	-- Sabatons of the Chosen Dead
+								},
+								["classes"] = { 3, 7 },	-- Hunter, Shaman
+								["crs"] = {
+									116245,	-- Heroic Champion of the Chosen Dead
+								},
+							}),		
+							i(143519, {	-- Ensemble: Funerary Plate of the Chosen Dead	
+								["groups"] = {
+									i(143345),	-- Visor of the Chosen Dead
+									i(143355),	-- Shoulderplates of the Chosen Dead
+									i(143367),	-- Greatcloak of the Chosen Dead
+									i(143334),	-- Chestplate of the Chosen Dead
+									i(143363),	-- Wristclamps of the Chosen Dead
+									i(143342),	-- Handguards of the Chosen Dead
+									i(143358),	-- Waistplate of the Chosen Dead
+									i(143349),	-- Legplates of the Chosen Dead
+									i(143337),	-- Treads of the Chosen Dead
+								},
+								["classes"] = { 2, 1, 6 },	-- Paladin, Warrior, Death Knight
+								["crs"] = {
+									116245,	-- Heroic Champion of the Chosen Dead
+								},
+							}),	
+						}),
 						cr(114263, e(1819, {	-- Odyn
 							{
 								["achievementID"] = 11394,	-- Trial of Valor
@@ -384,62 +469,6 @@ _.Instances =
 							},
 							i(142112),	-- Vantus Rune Technique: Helya [Rank 1]
 							i(142106),	-- Vantus Rune Technique: Helya [Rank 2]
-							i(143507, {	-- Ensemble: Vestment of the Chosen Dead
-								["groups"] = {
-									i(143346),	-- Circlet of the Chosen Dead
-									i(143356),	-- Mantle of the Chosen Dead
-									i(143369),	-- Drape of the Chosen Dead
-									i(143353),	-- Robe of the Chosen Dead
-									i(143362),	-- Bracers of the Chosen Dead
-									i(143343),	-- Gloves of the Chosen Dead
-									i(143359),	-- Sash of the Chosen Dead
-									i(143350),	-- Pantaloons of the Chosen Dead
-									i(143338),	-- Sandals of the Chosen Dead
-								},
-								["classes"] = { 5, 8, 9 },	-- Priest, Mage, Warock
-							}),		
-							i(143511, {	-- Ensemble: Garb of the Chosen Dead
-								["groups"] = {	
-									i(143348),	-- Hood of the Chosen Dead
-									i(143354),	-- Shoulderpads of the Chosen Dead
-									i(143366),	-- Wrap of the Chosen Dead
-									i(143336),	-- Tunic of the Chosen Dead
-									i(143365),	-- Wristguards of the Chosen Dead
-									i(143341),	-- Grips of the Chosen Dead
-									i(143361),	-- Strap of the Chosen Dead
-									i(143352),	-- Leggings of the Chosen Dead
-									i(143340),	-- Boots of the Chosen Dead
-								},
-								["classes"] = { 11, 4, 10, 12 },	-- Druid, Rogue, Monk, Demon Hunter
-							}),		
-							i(143515, {	-- Ensemble: Chains of the Chosen Dead	
-								["groups"] = {
-									i(143347),	-- Coif of the Chosen Dead
-									i(143357),	-- Pauldrons of the Chosen Dead
-									i(143368),	-- Cloak of the Chosen Dead
-									i(143335),	-- Chain Shirt of the Chosen Dead
-									i(143364),	-- Armbands of the Chosen Dead
-									i(143344),	-- Gauntlets of the Chosen Dead
-									i(143360),	-- Girdle of the Chosen Dead
-									i(143351),	-- Chain Leggings of the Chosen Dead
-									i(143339),	-- Sabatons of the Chosen Dead
-								},
-								["classes"] = { 3, 7 },	-- Hunter, Shaman
-							}),		
-							i(143519, {	-- Ensemble: Funerary Plate of the Chosen Dead	
-								["groups"] = {
-									i(143345),	-- Visor of the Chosen Dead
-									i(143355),	-- Shoulderplates of the Chosen Dead
-									i(143367),	-- Greatcloak of the Chosen Dead
-									i(143334),	-- Chestplate of the Chosen Dead
-									i(143363),	-- Wristclamps of the Chosen Dead
-									i(143342),	-- Handguards of the Chosen Dead
-									i(143358),	-- Waistplate of the Chosen Dead
-									i(143349),	-- Legplates of the Chosen Dead
-									i(143337),	-- Treads of the Chosen Dead
-								},
-								["classes"] = { 2, 1, 6 },	-- Paladin, Warrior, Death Knight
-							}),		
 							i(142428),	-- Sea Fan Pendant
 							i(142521),	-- Drape of the Unworthy
 							i(142433),	-- Corroded Val'kyr Chainmail
@@ -536,6 +565,10 @@ _.Instances =
 							},
 							ach(11377),	-- Patient Zero
 							ach(11387, { -- The Chosen
+								["u"] = 2,	-- Legacy Achievement
+								["crs"] = {
+									116229,	-- Mythical Champion of the Chosen Dead
+								},
 								["groups"] = {
 									{
 										["titleID"] = 347,	-- The Chosen
@@ -602,7 +635,6 @@ _.Instances =
 										["u"] = 2,	-- Removed From Game
 									}),	
 								},
-								["u"] = 2,	-- Legacy Achievement
 							}),
 							{
 								["achievementID"] = 11394,	-- Trial of Valor
