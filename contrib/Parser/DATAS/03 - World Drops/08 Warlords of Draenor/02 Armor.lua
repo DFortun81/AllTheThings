@@ -177,6 +177,9 @@ _.WorldDrops =
 						["itemID"] = 116707,	-- Zangarra Ring
 					},
 				}),
+				filter(53, {	-- Trinket
+					i(118877),	-- Fizzlebang's Folly
+				}),
 			}),
 		},
 		["tierID"] = 6
