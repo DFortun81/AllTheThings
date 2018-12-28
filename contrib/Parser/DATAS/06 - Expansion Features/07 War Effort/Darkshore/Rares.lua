@@ -200,8 +200,13 @@ _.ExpansionFeatures =
 							["description"] = "Only shows up when Alliance Controlled.",
 							["g"] = {
 								{	--Captured Kaldorei Nightsaber
+									["itemID"] = 166437,	-- Captured Kaldorei Nightsaber
+								},
+								--[[ Possible it's a drop here; will need data
+								{	-- Kaldorei Nightsaber
 									["itemID"] = 166435,	-- Kaldorei Nightsaber
 								},
+								--]]
 							},
 						},
 						{	-- Cyclarus
@@ -426,8 +431,13 @@ _.ExpansionFeatures =
 							},
 							["description"] = "Only shows up when Horde Controlled.",
 							["g"] = {
+								--[[ Possible it's a drop here; will need data
 								{	--Captured Kaldorei Nightsaber
 									["itemID"] = 166437,	-- Captured Kaldorei Nightsaber
+								},
+								--]]
+								{	-- Kaldorei Nightsaber
+									["itemID"] = 166435,	-- Kaldorei Nightsaber
 								},
 							},
 						},
