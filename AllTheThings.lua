@@ -1702,16 +1702,6 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			end
 		end
 		
-		-- Show relevant descriptive text.
-		if GetDataMember("ShowDescriptions") then
-			for i,j in ipairs(group) do
-				if j.description and j[paramA] and j[paramA] == paramB then
-					tinsert(info, { "|cff66ccff" .. j.description .. "|r" });
-					break;
-				end
-			end
-		end
-		
 		-- Create an unlinked version of the object.
 		if not group.g then
 			local merged = {};
@@ -1729,25 +1719,38 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			group.total = 0;
 			app.UpdateGroups(group, group.g);
 		end
-		-- print(paramA, paramB, group.text, group.key, group[group.key]);
-		if group.g and #group.g > 0 and GetDataMember("ShowContents") then
-			local entries = {};
-			BuildContainsInfo(group.g, entries, paramA, paramB, "  ", 1);
-			if #entries > 0 then
-				tinsert(info, { left = "Contains:" });
-				if #entries < 25 then
-					for i,item in ipairs(entries) do
-						tinsert(info, { left = item.prefix .. item.left, right = item.right });
-						if item.working then working = true; end
+		
+		if group.description and GetDataMember("ShowDescriptions") and not group.encounterID then
+			tinsert(info, 1, { left = "|cff66ccff" .. group.description .. "|r", wrap = true });
+		end
+		
+		if group.g and #group.g > 0 then
+			if GetDataMember("ShowDescriptions") and not group.encounterID then
+				for i,j in ipairs(group.g) do
+					if j.description and j[paramA] and j[paramA] == paramB then
+						tinsert(info, 1, { left = "|cff66ccff" .. j.description .. "|r", wrap = true });
 					end
-				else
-					for i=1,math.min(25, #entries) do
-						local item = entries[i];
-						tinsert(info, { left = item.prefix .. item.left, right = item.right });
-						if item.working then working = true; end
+				end
+			end
+			if GetDataMember("ShowContents") then
+				local entries = {};
+				BuildContainsInfo(group.g, entries, paramA, paramB, "  ", 1);
+				if #entries > 0 then
+					tinsert(info, { left = "Contains:" });
+					if #entries < 25 then
+						for i,item in ipairs(entries) do
+							tinsert(info, { left = item.prefix .. item.left, right = item.right });
+							if item.working then working = true; end
+						end
+					else
+						for i=1,math.min(25, #entries) do
+							local item = entries[i];
+							tinsert(info, { left = item.prefix .. item.left, right = item.right });
+							if item.working then working = true; end
+						end
+						local more = #entries - 25;
+						if more > 0 then tinsert(info, { left = "And " .. more .. " more..." }); end
 					end
-					local more = #entries - 25;
-					if more > 0 then tinsert(info, { left = "And " .. more .. " more..." }); end
 				end
 			end
 		end
