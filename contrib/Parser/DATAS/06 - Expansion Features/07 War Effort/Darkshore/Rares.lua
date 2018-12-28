@@ -200,7 +200,7 @@ _.ExpansionFeatures =
 							["description"] = "Only shows up when Alliance Controlled.",
 							["g"] = {
 								{	--Captured Kaldorei Nightsaber
-									["itemID"] = 166437,	-- Captured Kaldorei Nightsaber
+									["itemID"] = 166435,	-- Kaldorei Nightsaber
 								},
 							},
 						},
@@ -426,8 +426,8 @@ _.ExpansionFeatures =
 							},
 							["description"] = "Only shows up when Horde Controlled.",
 							["g"] = {
-								{	--Kaldorei Nightsaber
-									["itemID"] = 166435,	-- Kaldorei Nightsaber
+								{	--Captured Kaldorei Nightsaber
+									["itemID"] = 166437,	-- Captured Kaldorei Nightsaber
 								},
 							},
 						},
