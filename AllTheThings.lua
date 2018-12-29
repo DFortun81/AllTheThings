@@ -1422,23 +1422,20 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 						end
 					end
 				end
-				if not (group[1].achievementID and group[1].parent.difficultyID) then
-					-- Push up one level.
-					local subgroup = {};
-					table.sort(group, function(a, b)
-						return not (a.npcID and a.npcID == -1) and b.npcID and b.npcID == -1;
-					end);
-					for i,j in ipairs(group) do
-						if j.g then
-							for k,l in ipairs(j.g) do
-								tinsert(subgroup, l);
-							end
-						else
-							tinsert(subgroup, j);
+				local subgroup = {};
+				table.sort(group, function(a, b)
+					return not (a.npcID and a.npcID == -1) and b.npcID and b.npcID == -1;
+				end);
+				for i,j in ipairs(group) do
+					if j.g and not (j.achievementID and j.parent.difficultyID) and j.npcID ~= 0 then
+						for k,l in ipairs(j.g) do
+							tinsert(subgroup, l);
 						end
+					else
+						tinsert(subgroup, j);
 					end
-					group = subgroup;
 				end
+				group = subgroup;
 			end
 		else
 			-- Determine if this is a cache for an item
@@ -1662,20 +1659,6 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					end
 				end
 			end
-			
-			if group.description and GetDataMember("ShowDescriptions") and not group.encounterID then
-				tinsert(info, 1, { left = "|cff66ccff" .. group.description .. "|r", wrap = true });
-			end
-			
-			if group.g and #group.g > 0 then
-				if GetDataMember("ShowDescriptions") and not group.encounterID then
-					for i,j in ipairs(group.g) do
-						if j.description and j[paramA] and j[paramA] == paramB then
-							tinsert(info, 1, { left = "|cff66ccff" .. j.description .. "|r", wrap = true });
-						end
-					end
-				end
-			end
 		end
 		
 		-- Create a list of sources
@@ -1747,7 +1730,18 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			app.UpdateGroups(group, group.g);
 		end
 		
+		if group.description and GetDataMember("ShowDescriptions") and not group.encounterID then
+			tinsert(info, 1, { left = "|cff66ccff" .. group.description .. "|r", wrap = true });
+		end
+		
 		if group.g and #group.g > 0 then
+			if GetDataMember("ShowDescriptions") then
+				for i,j in ipairs(group.g) do
+					if j.description and ((j[paramA] and j[paramA] == paramB) or paramA == "itemID") then
+						tinsert(info, 1, { left = "|cff66ccff" .. j.description .. "|r", wrap = true });
+					end
+				end
+			end
 			if GetDataMember("ShowContents") then
 				local entries = {};
 				BuildContainsInfo(group.g, entries, paramA, paramB, "  ", 1);
