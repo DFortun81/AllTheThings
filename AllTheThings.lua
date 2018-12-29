@@ -1401,7 +1401,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				group = regroup;
 			end
 			
-			if group and #group > 0 and not group[1].achievementID and not group[1].parent.difficultyID then
+			if group and #group > 0 and not (group[1].achievementID and group[1].parent.difficultyID) then
 				-- Push up one level.
 				local subgroup = {};
 				table.sort(group, function(a, b)
