@@ -4166,6 +4166,22 @@ _.ExpansionFeatures =
 						}),
 					}),
 					n(-107, { 			-- Fishing Shack
+						{	-- Hightfish Cap
+							["itemID"] = 118380,	-- Hightfish Cap
+							["description"] = "Shift+Click ATT Header to refresh its collection status.",
+							["crs"] = {
+								81171,	-- Frostdeep Cavedweller
+								85715,	-- Lunarfall Cavedweller
+							},
+						},
+						{	-- Tentacled Hat
+							["itemID"] = 118393,	-- Tentacled Hat
+							["description"] = "Shift+Click ATT Header to refresh its collection status.",
+							["crs"] = {
+								81171,	-- Frostdeep Cavedweller
+								85715,	-- Lunarfall Cavedweller
+							},
+						},
 						i(116158, {
 							n(85715, {
 								i(46109), 	-- Mount

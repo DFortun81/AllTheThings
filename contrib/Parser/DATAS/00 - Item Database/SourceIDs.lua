@@ -32,6 +32,8 @@ i(52486, 1, 25730);		-- Jeweler's Sapphire Monocle
 i(52488, 1, 25732);		-- Jeweler's Sapphire Monocle
 i(52485, 1, 25729);		-- Jeweler's Ruby Monocle
 i(52487, 1, 25731);		-- Jeweler's Amber Monocle
+i(118393, 1, 66542);	-- Tentacled Hat
+i(118380, 1, 66540);	-- Hightfish Cap
 
 
 -------------------------------
