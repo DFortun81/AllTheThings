@@ -7,6 +7,9 @@ _.Zones =
 		m(863, {	-- Nazmir
 			["groups"] = {
 				n(0,    {	-- Zone Drop
+					["maps"] = {
+						942,	-- Stormsong Valley [During Assualts]
+					},
 					["groups"] = bubbleDown({["bonusID"] = 4796, ["lvl"] = 110}, {
 						-- Note: Don't sort these. They get listed by Weapons -> Cloth -> Leather -> Mail -> Plate
 						i(163575, {	-- Reins of a Tamed Bloodfeaster

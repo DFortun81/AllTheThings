@@ -7,6 +7,9 @@ _.Zones =
 		m(862, {	-- Zuldazar
 			["groups"] = {
 				n(0, {	-- Zone Drop
+					["maps"] = {
+						895,	-- Tiragarde Sound  [During Assualts]
+					},
 					["groups"] = bubbleDown({["bonusID"] = 4796, ["lvl"] = 110}, {
 						-- Note: Don't sort these. They get listed by Weapons -> Cloth -> Leather -> Mail -> Plate
 						--Note: Commented out items are because they were in at one point, but then removed later on.  Might be patched in on release date

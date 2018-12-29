@@ -7,6 +7,9 @@ _.Zones =
 		m(864, {	-- Vol'dun
 			["groups"] = {
 				n(0,    {	-- Zone Drop
+					["maps"] = {
+						896,	-- Drustvar
+					},
 					["groups"] = bubbleDown({["bonusID"] = 4796, ["lvl"] = 110}, {
 						-- Note: Don't sort these. They get listed by Weapons -> Cloth -> Leather -> Mail -> Plate
 						i(163576, {	-- Captured Dune Scavenger
