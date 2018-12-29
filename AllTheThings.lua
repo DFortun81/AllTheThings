@@ -1737,7 +1737,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		if group.g and #group.g > 0 then
 			if GetDataMember("ShowDescriptions") then
 				for i,j in ipairs(group.g) do
-					if j.description and ((j[paramA] and j[paramA] == paramB) or paramA == "itemID") then
+					if j.description and ((j[paramA] and j[paramA] == paramB) or (paramA == "itemID" and group.key == j.key)) then
 						tinsert(info, 1, { left = "|cff66ccff" .. j.description .. "|r", wrap = true });
 					end
 				end
