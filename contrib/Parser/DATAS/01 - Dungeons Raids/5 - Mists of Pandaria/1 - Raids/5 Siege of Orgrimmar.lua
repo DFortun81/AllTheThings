@@ -71,6 +71,7 @@ _.Instances =
 										i(48124),	-- Razormaw Hatchling
 										i(48126),	-- Razzashi Hatchling
 									},
+									--[[
 									["crs"] = {
 										71543, -- Immerseus
 										71479, -- He Softfoot [The Fallen Protectors]
@@ -79,6 +80,7 @@ _.Instances =
 										72276, -- Amalgam of Corruption
 										71734, -- Sha of Pride
 									},
+									]]--
 									["description"] = "Since the introduction of Legacy Loot this bag is only obtainable if you queue up as a Level 91-100 for the intended raid.  If you are 101+ then you will need to seek out each item based on their original sources.  This change occured in Patch 8.0.1",
 								}),
 								i(105714, {	-- Coalesced Turmoil
@@ -130,6 +132,7 @@ _.Instances =
 										i(48124),	-- Razormaw Hatchling
 										i(48126),	-- Razzashi Hatchling
 									},
+									--[[
 									["crs"] = {
 										72249, -- Galakras
 										71466, -- Iron Juggernaut
@@ -151,6 +154,7 @@ _.Instances =
 										71157, -- Xaril the Poisoned Mind
 										71865, -- Garrosh Hellscream
 									},
+									]]--
 									["description"] = "Since the introduction of Legacy Loot this bag is only obtainable if you queue up as a Level 91-100 for the intended raid.  If you are 101+ then you will need to seek out each item based on their original sources.  This change occured in Patch 8.0.1",
 								}),
 							}),

@@ -80,6 +80,7 @@ _.Instances =
 										["description"] = "Since the introduction of Legacy Loot this bag is only obtainable if you queue up as a Level 91-100 for the intended raid.  If you are 101+ then you will need to seek out each item based on their original sources.  This change occured in Patch 8.0.1",
 									}),
 								},
+								--[[
 								["crs"] = {
 									60047, 	-- Amethyst Guardian
 									60051, 	-- Cobalt Guardian
@@ -95,6 +96,7 @@ _.Instances =
 									60400, 	-- Jan-xi <Emperor's Open Hand>
 									60399,	-- Qin-xi <Emperor's Closed Fist>
 								},
+								]]--
 							}),
 							ach(6458, {	-- Guardians of Mogu'shan
 								["crs"] = {
