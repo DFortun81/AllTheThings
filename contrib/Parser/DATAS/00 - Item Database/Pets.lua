@@ -40,6 +40,7 @@ pet(34535, 57); 	-- Azure Whelpling
 pet(44819, 202); 	-- Baby Blizzard Bear
 pet(163859, 2477);	-- Baby Crawg
 pet(136919, 1884); 	-- Baby Elderhorn
+pet(166486, 2551);	-- Baby Stonehide
 pet(134047, 1828);	-- Baby Winston
 pet(32588, 156); 	-- Banana Charm (Bananas)
 pet(90177, 903);	-- Baneling
@@ -231,6 +232,7 @@ pet(130168, 1802); 	-- Fetid Waveling
 pet(76062, 346);	-- Fetish Shaman's Spear (Fetish Shaman)
 pet(160704, 2187);	-- Filthy Slime
 pet(140316, 1928);	-- Firebat Pup
+pet(166493, 2557);	-- Firesting Buzzer
 pet(118578, 1545); 	-- Firewing
 pet(84105, 847); 	-- Fishy
 pet(136898, 1716); 	-- Fledgling Warden Owl
@@ -368,6 +370,7 @@ pet(54847, 256);	-- Lil' XT
 pet(44841, 203);	-- Little Fawn's Salt Lick (Little Fawn)
 pet(163815, 2471);	-- Littlehoof
 pet(94125, 1177); 	-- Living Sandling
+pet(166494, 2558);	-- Lord Woofington
 pet(127705, 1661); 	-- Lost Netherpup
 pet(163568, 2430);	-- Lost Platysaur [So Cute!]
 pet(116155, 1511); 	-- Lovebird Hatchling
@@ -420,6 +423,7 @@ pet(71726, 329); 	-- Murky's Little Soulstone (Murkablo)
 pet(163820, 2458);	-- Muskflank Calfling
 pet(116258, 1514);	-- Mystical Spring Bouquet
 pet(151269, 2002);	-- Naxxy
+pet(166489, 2554);	-- Needleback Pup
 pet(142085, 1954); 	-- Nerubian Relic (Nerubian Swarmer)
 pet(38628, 186);	-- Nether Ray Fry
 pet(97550, 1228); 	-- Netherspace Portal-Stone (Netherspace Abyssal)
@@ -516,6 +520,7 @@ pet(130166, 1804); 	-- Risen Saber Kitten
 pet(140274, 1453);	-- River Calf
 pet(34492, 168); 	-- Rocket Chicken
 pet(104317, 1349); 	-- Rotten Helper Box (Rotten Little Helper)
+pet(166488, 2553);	-- Rotting Ghoul
 pet(111866, 1411);	-- Royal Peacock
 pet(104159, 1328);	-- Ruby Droplet
 pet(63355, 271);	-- Rustberg Gull (Alliance)
@@ -531,6 +536,7 @@ pet(128477, 1692);	-- Savage Cub
 pet(163684, 2436);	-- Scabby
 pet(34955, 172);	-- Scorched Stone (Searing Scorchling)
 pet(146953, 2042); 	-- Scraps
+pet(166498, 2560);	-- Scritches
 pet(163797, 2445);	-- Scuttle
 pet(114919, 1448); 	-- Sea Calf
 pet(73953, 340);	-- Sea Pony
@@ -541,6 +547,7 @@ pet(118923, 1567); 	-- Sentinel's Companion
 pet(119431, 1601); 	-- Servant of Demidos
 pet(122115, 1634); 	-- Servant's Bell (Wretched Servant)
 pet(136904, 1754);	-- Sewer-Pipe Jelly
+pet(166492, 2556);	-- Shadefeather Hatchling
 pet(151234, 2062);	-- Shadow
 pet(128309, 1690); 	-- Shard of Cyrukh
 pet(122106, 1624); 	-- Shard of Supremus (Abyssius)
@@ -627,6 +634,7 @@ pet(163810, 2469);	-- Thistlebrush Bud
 pet(130167, 1803);	-- Thistleleaf Adventurer
 pet(161214, 2202);	-- Thousand Year Old Mummy Wraps
 pet(85513, 802);	-- Thundering Serpent Hatchling
+pet(166499, 2561);	-- Thunderscale Hatchling
 pet(39896, 194); 	-- Tickbird Hatchling
 pet(118675, 1563);	-- Time-Locked Box (Bronze Whelpling)
 pet(163807, 2450);	-- Tinder Pup
@@ -646,6 +654,7 @@ pet(152966, 2078);	-- Tinytron
 pet(44971, 206); 	-- Tirisfal Batling
 pet(97558, 1236);	-- Tito's Basket (Tito)
 pet(163505, 2419);	-- Toad in a Box [Swamp Toad]
+pet(166495, 2559);	-- Tonguelasher
 pet(33816, 163); 	-- Toothy's Bucket (Toothy)
 pet(153541, 2143);	-- Tottle
 pet(50446, 251); 	-- Toxic Wasteling
