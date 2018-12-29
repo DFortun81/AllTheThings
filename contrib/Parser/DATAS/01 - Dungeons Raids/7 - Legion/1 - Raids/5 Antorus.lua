@@ -274,15 +274,21 @@ _.Instances =
 									i(152009), -- Doomwalker Warboots
 								})),
 								cr(126916, e(1987, { -- Felhounds of Sargeras
-									i(152816), -- Antoran Charhound (MOUNT!)
-									i(152000), -- Shadowfused Chain Coif
-									i(152004), -- Pauldrons of the Soulburner
-									i(151949), -- Soul-Siphon Mantle
-									i(151980), -- Harness of Oppressing Dark									
-									i(151947), -- Vestments of Enflamed Blight
-									i(152012), -- Molten Bite Handguards
-									i(152021), -- Flamelicked Girdle
-									i(151983), -- Vicious Flamepaws
+									["crs"] = {
+										122477,	-- F'Harg
+										122135,	-- Shatug
+									},
+									["groups"] = {
+										i(152816), -- Antoran Charhound (MOUNT!)
+										i(152000), -- Shadowfused Chain Coif
+										i(152004), -- Pauldrons of the Soulburner
+										i(151949), -- Soul-Siphon Mantle
+										i(151980), -- Harness of Oppressing Dark									
+										i(151947), -- Vestments of Enflamed Blight
+										i(152012), -- Molten Bite Handguards
+										i(152021), -- Flamelicked Girdle
+										i(151983), -- Vicious Flamepaws
+									},
 								})),
 								cr(122367, e(1997, { -- Antoran High Command
 									-- Start Tier Cloaks
@@ -396,14 +402,19 @@ _.Instances =
 									i(152412), -- Depraved Machinist's Footpads
 								})),
 								cr(125075, e(1983, { -- Varimathras
-									i(151995), -- Robes of the Forsaken Dreadlord
-									i(151979), -- Vest of Unfathomable Anguish
-									i(151954), -- Blood-Drenched Bindings
-									i(152281), -- Varimathras' Shattered Manacles
-									i(151991), -- Belt of Fractured Sanity									
-									i(151942), -- Cord of Surging Hysteria
-									i(152015), -- Greaves of Mercurial Alliegance									
-									i(151997), -- Nathrezim Shade-Walkers
+									["crs"] = {
+										122366,	-- Varimathras (Crieve)
+									},
+									["groups"] = {
+										i(151995), -- Robes of the Forsaken Dreadlord
+										i(151979), -- Vest of Unfathomable Anguish
+										i(151954), -- Blood-Drenched Bindings
+										i(152281), -- Varimathras' Shattered Manacles
+										i(151991), -- Belt of Fractured Sanity									
+										i(151942), -- Cord of Surging Hysteria
+										i(152015), -- Greaves of Mercurial Alliegance									
+										i(151997), -- Nathrezim Shade-Walkers
+									},
 								})),
 								cr(122468, e(1986, { -- The Coven of Shivarra
 									i(152129), -- Bearmantle Shoulders
