@@ -127,28 +127,32 @@ _.Zones =
 						}),
 						n(-16, { -- Rares
 							n(132591, {	-- Ogmot the Mad
-								["questID"] = 50334,
+								["coords"] = { 28.9, 74.6 },
+								["questID"] = 50334, -- also triggered 50225. First kill questID?
 							}),
 							n(132578, {	-- Qroshekx
-								["groups"] = {
-									i(156851),	-- Silithid Mini-Tank
-								},
+								["coord"] = { 59.3, 11.4 },
 								["questID"] = 50255,
 								["isDaily"] = true,
+								["groups"] = {
+									i(156851),	-- Silithid Mini-Tank
+								},
 							}),
 							n(132580, {	-- Ssinkrix
-								["groups"] = {
-									i(156851),	-- Silithid Mini-Tank
-								},
+								["coord"] = { 54.5, 79.8 },
 								["questID"] = 50223,
 								["isDaily"] = true,
-							}),
-							n(132584, {	-- Xaarshej
 								["groups"] = {
 									i(156851),	-- Silithid Mini-Tank
 								},
+							}),
+							n(132584, {	-- Xaarshej
+								["coord"] = { 29.5, 35.0 },
 								["questID"] = 50224,
 								["isDaily"] = true,
+								["groups"] = {
+									i(156851),	-- Silithid Mini-Tank
+								},
 							}),
 						}),
 					},

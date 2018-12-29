@@ -7,25 +7,109 @@ _.Zones =
 		m(81, {	-- Silithus
 			["groups"] = {
 				n(-17, {	-- Quests
---[[	Achievement info for Loremaster related zone quests
 					ach(4934, {		-- Silithus Quests
-						crit(1),		-- Twilight's Run
-						crit(2),		-- Mistress Natalia Mar'alith
-						crit(3),		-- Unraveling the Mystery
-						crit(4),		-- A Terrible Purpose
-						crit(5),		-- Twilight Lexicon
-					}),
-]]--				
-					q(  8287, {	-- A Terrible Purpose (awarded "A Terrible Purpose" criteria)
-						["qg"] = 15194,	-- Hermit Ortell
-						["sourceQuests"] = { 8279 },	-- The Twilight Lexicon
-						["g"] = {
-							{	-- Nature's Whisper [Arrives in the mail after completing the quest]
-								["itemID"] = 20645,	-- Nature's Whisper
+						crit(1, {	-- Twilight's Run
+							{	-- Twilight Geolords
+								["questID"] = 8320,
+								["qg"] = 15270,	-- Huum Wildmane
+								["coord"] = { 53.2, 35.1 },
 							},
-						},
+							{	-- Vyral the Vile
+								["questID"] = 8321,
+								["qg"] = 15270,	-- Huum Wildmane
+								["coord"] = { 53.2, 35.1 },
+								["sourceQuest"] = 8320,	-- Twilight Geolords
+								["groups"] = {
+									i(20650),	-- Desert Wind Gauntlets
+									i(20649),	-- Sunprism Pendant
+								},
+							},
+						}),
+						crit(2, {	-- Mistress Natalia Mar'alith
+							{	-- Dearest Natalia
+								["questID"] = 8304,
+								["qg"] = 15181,	-- Commander Mar'alith
+								["coord"] = { 53.2, 32.5 },
+								["sourceQuest"] = 8321,	-- Vyral the Vile
+							},
+							{	-- Into The Maw of Madness
+								["questID"] = 8306,
+								["coord"] = { 53.2, 32.5 },
+								["sourceQuest"] = 8304,	-- Dearest Natalia
+								["groups"] = {
+									i(20724),	-- Corrupted Blackwood Staff
+								},
+							},
+						}),
+						crit(3, {	-- Unraveling the Mystery
+							{	-- Breaking the Code
+								["questID"] = 8310,
+								["qg"] = 15171,	-- Frankal Stonebridge
+								["coord"] = { 46.0, 79.4 },
+								["sourceQuest"] = 8304,	-- Dearest Natalia
+							},
+							{	-- Glyph Chasing
+								["questID"] = 8309,
+								["qg"] = 15170,	-- Rutgar Glyphshaper
+								["coord"] = { 46.4, 79.0 },
+								["sourceQuest"] = 8304,	-- Dearest Natalia
+							},
+							{	-- Unraveling the Mystery
+								["questID"] = 8314,
+								["qg"] = 15170,	-- Rutgar Glyphshaper
+								["coord"] = { 46.4, 79.0 },
+								["sourceQuests"] = {
+									8310,	-- Breaking the Code
+									8309,	-- Glyph Chasing
+								},
+							},
+						}),
+						crit(4, {	-- A Terrible Purpose
+							{	-- The Twilight Mystery
+								["questID"] = 8284,
+								["qg"] = 15183,	-- Geologist Larksbane
+								["coord"] = { 53.6, 35.3 },
+								["sourceQuests"] = 8321,	-- Vyral the Vile -- this is wrong. Possibly unlocks after "Dearest Natalia" ?
+							},
+							{	-- The Deserter
+								["questID"] = 8285,
+								["qg"] = 15183,	-- Geologist Larksbane
+								["coord"] = { 53.6, 35.3 },
+								["sourceQuests"] = 8284,	-- The Twilight Mystery
+							},
+							{	-- The Twilight Lexicon
+								["questID"] = 8279,
+								["qg"] = 15194,	-- Hermit Ortell
+								["coord"] = { 68.6, 63.0 },
+								["sourceQuest"] = 8285,	-- The Deserter
+							},
+							{	-- A Terrible Purpose
+								["questID"] = 8287,
+								["qg"] = 15194,	-- Hermit Ortell
+								["coord"] = { 68.6, 63.0 },
+								["sourceQuest"] = 8279,	-- The Twilight Lexicon
+								["groups"] = {
+									{	-- Nature's Whisper [Arrives in the mail after completing the quest]
+										["itemID"] = 20645,	-- Nature's Whisper
+									},
+								},
+							},
+						}),
+						crit(5, {	-- Twilight Lexicon
+							{	-- True Believers
+								["questID"] = 8323,
+								["qg"] = 15194,	-- Hermit Ortell
+								["coord"] = { 68.6, 63.0 },
+								["sourceQuest"] = 8279,	-- The Twilight Lexicon
+							},
+						}),
 					}),
-					{
+					{	-- Brann Bronzebeard's Lost Letter
+						["itemID"] = 20461,
+						["questID"] = 8308,	-- Brann Bronzebeard's Lost Letter
+						["description"] = "This quest is only available during or after 'Dearest Natalia', but before picking up 'Breaking the Code' and 'Glyph Chasing.'",
+						["sourceQuest"] = 8304,	-- Dearest Natalia
+						["isBreadcrumb"] = true,
 						["qgs"] = {
 							13136,	-- Hive'Ashi Drone
 							11732,	-- Hive'Regal Spitfire
@@ -44,127 +128,120 @@ _.Zones =
 						["groups"] = {
 							i(20723),	-- Brann's Trusty Pick
 						},
-						["itemID"] = 20461,	-- Brann Bronzebeard's Lost Letter
-						["questID"] = 8308,	-- Brann Bronzebeard's Lost Letter
-						["description"] = "This quest only appears to be available while on 'Dearest Natalia' or after having turned it in, but before picking up 'Breaking the Code' and 'Glyph Chasing.'  If you see it show up at any other point, please let us know on Discord!",
-						["sourceQuests"] = { 8304 },	-- Dearest Natalia
 					},
-					q(  8310, {	-- Breaking the Code
-						["qg"] = 15171,	-- Frankal Stonebridge
-						["sourceQuests"] = { 8304 },	-- Dearest Natalia
-					}),
-					qh(28865, {	-- Call of the Warmatron (bcrumb for Blasted Lands)
+					{	-- Blessed Blade of the Windseeker
+						["questID"] = 43002,
+						["qg"] = 14347,	-- Highlord Demitrian
+						["coord"] = { 29.6, 10.6 },
+						["classes"]= { 7 },	-- Shaman
+					},
+					{	-- Call of the Warmatron
+						["questID"] = 28865,
 						["qg"] = 50587,	-- Okril'on Mage
+						["coord"] = { 53.2, 33.4 },
+						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
-					}),
-					q(  8277, {	-- Deadly Desert Venom
+					},
+					{	-- Deadly Desert Venom
+						["questID"] = 8277,
 						["qg"] = 15189,	-- Beetix Ficklespragg
-					}),
-					q(  8304, {	-- Dearest Natalia
-						["qg"] = 15181,	-- Commander Mar'alith
-						["sourceQuests"] = { 8321 },	-- Vyral the Vile
-					}),
-					q(  8307, {	-- Desert Recipe
+						["coord"] = { 55.2, 36.3 },
+					},
+					{	-- Desert Recipe
+						["questID"] = 8307,
+						["qg"] = 15174,	-- Calandrath
+						["coord"] = { 55.4, 36.6 },
+						["description"] = "This quest is invisible until you reach Cooking 285.",
+						["requiredSkill"] = 185,	-- Cooking
 						["groups"] = {
 							recipe(24801),	-- Smoked Desert Dumplings
 						},
-						["qg"] = 15174,	-- Calandrath.
-						["description"] = "This quest is invisible until you reach Cooking 285.",
+					},
+					{	-- Encrypted Twilight Texts
+						["questID"] = 8319,
+						["qg"] = 15306,	-- Bor Wildmane
+						["coord"] = { 53.2, 35.1 },
+						["repeatable"] = true,
+						["sourceQuest"] = 8318,	-- Secret Communication
+					},
+					{	-- Kitchen Assistance
+						["questID"] = 8317,
+						["qg"] = 15174,	-- Calandrath
+						["coord"] = { 55.4, 36.6 },
+						["sourceQuest"] = 8313,	-- Sharing the Knowledge
 						["requiredSkill"] = 185,	-- Cooking
-					}),
-					q(  8309, {	-- Glyph Chasing
-						["qg"] = 15170,	-- Rutgar Glyphshaper
-						["sourceQuests"] = { 8304 },	-- Dearest Natalia
-					}),
-					q(  8306, {	-- Into The Maw of Madness (awarded "Mistress Natalia Mar'alith" criteria)
-						["groups"] = {
-							i(20724),	-- Corrupted Blackwood Staff
-						},
-						["sourceQuests"] = { 8304 },	-- Dearest Natalia
-					}),
-					q(  8317, {	-- Kitchen Assistance
-						["qg"] = 15174,	-- Calandrath.
-						["sourceQuests"] = { 8313 },	-- Sharing the Knowledge
-						["requiredSkill"] = 185,	-- Cooking
-					}),
-					qa(28867, {	-- Nethergarde Needs You! (bcrumb for Blasted Lands)
+					},
+					{	-- Nethergarde Needs You!
+						["questID"] = 28867,
 						["qg"] = 50588,	-- Nethergarde Mage
+						["coord"] = { 53.4, 33.4 },
+						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
-					}),
-					q(  8278, {	-- Noggle's Last Hope
+					},
+					{	-- Noggle's Last Hope
+						["questID"] = 8278,
 						["qg"] = 15189,	-- Beetix Ficklespragg
-						["sourceQuests"] = { 8277 },	-- Deadly Desert Venom
-					}),
-					q(  8282, {	-- Noggle's Lost Satchel
+						["coord"] = { 55.3, 36.3 },
+						["sourceQuest"] = 8277,	-- Deadly Desert Venom
+					},
+					{	-- Noggle's Lost Satchel
+						["questID"] = 8282,
 						["qg"] = 15190,	-- Noggle Ficklespragg
-						["sourceQuests"] = { 8278 },	-- Noggle's Last Hope
-					}),
-					qh( 9416, {	-- Report to General Kirika
+						["coord"] = { 55.2, 36.1 },
+						["sourceQuest"] = 8278,	-- Noggle's Last Hope
+					},
+					{	-- Report to General Kirika
+						["questID"] = 9416,
 						["qg"] = 17081,	-- Scout Bloodfist
-					}),
-					qa( 9415, {	-- Report to Marshal Bluewall
+						["coord"] = { 53.0, 34.6 },
+						["races"] = HORDE_ONLY,
+					},
+					{	-- Report to Marshal Bluewall
+						["questID"] = 9415,
 						["qg"] = 17082,	-- Rifleman Torrig
-					}),
-					q(  8318, {	-- Secret Communication
+						["coord"] = { 54.5, 32.9 },
+						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- Secret Communication
+						["questID"] = 8318,
 						["qg"] = 15306,	-- Bor Wildmane
-					}),
-					q(  8280, {	-- Securing the Supply Lines
+						["coord"] = { 53.1, 35.1 },
+					},
+					{	-- Securing the Supply Lines
+						["questID"] = 8280,
 						["qg"] = 15191,	-- Windcaller Proudhorn
-						["sourceQuests"] = { 28528, 28527 },	-- Hero's Call: Silithus! & Warchief's Command: Silithus!
-					}),
-					o(180503, {	-- Sandy Cookbook
-						q(8313, {	-- Sharing the Knowledge
-							["sourceQuests"] = { 8307 },	-- Desert Recipe
-							["requiredSkill"] = 185,	-- Cooking
-						}),
-					}),
-					q(  8281, {	-- Stepping Up Security
-						["qg"] = 15191,	-- Windcaller Proudhorn
-						["sourceQuests"] = { 8280 },	-- Securing the Suppy Lines
-					}),
-					q(  8285, {	-- The Deserter
-						["qg"] = 15183,	-- Geologist Larksbane
-						["sourceQuests"] = { 8284 },	-- The Twilight Mystery
-					}),
-					q(  8279, {	-- The Twilight Lexicon
-						["qg"] = 15194,	-- Hermit Ortell
-						["sourceQuests"] = { 8285 },	-- The Deserter
-					}),
-					q(  8284, {	-- The Twilight Mystery
-						["qg"] = 15183,	-- Geologist Larksbane
-						["sourceQuests"] = { 8321 },	-- Vyral the Vile
-					}),
-					q(  8323, {	-- True Believers (awarded "Twilight Lexicon" criteria & overall "Silithus Quests" achievement)
-						["qg"] = 15194,	-- Hermit Ortell
-						["sourceQuests"] = { 8279 },	-- The Twilight Lexicon
-					}),
-					q(  8320, {	-- Twilight Geolords
-						["qg"] = 15270,	-- Huum Wildmane
-					}),
-					q(  8314, {	-- Unraveling the Mystery (awarded "Unraveling the Mystery" criteria)
-						["qg"] = 15170,	-- Rutgar Glyphshaper
-						["sourceQuests"] = { 8310, 8309 },	-- Breaking the Code & Glyph Chasing
-					}),
-					q(  8321, {	-- Vyral the Vile (awarded "Twilight's Run" criteria)
-						["groups"] = {
-							i(20650),	-- Desert Wind Gauntlets
-							i(20649),	-- Sunprism Pendant
+						["coord"] = { 54.9, 36.0 },
+						["sourceQuests"] = {
+							28528,	-- Hero's Call: Silithus!
+							28859,	-- The Dunes of Silithus
+							28856,	-- The Sands of Silithus
+							28527,	-- Warchief's Command: Silithus!
 						},
-						["qg"] = 15270,	-- Huum Wildmane
-						["sourceQuests"] = { 8320 },	-- Twilight Geolords
-					}),
-					o(180448, {	-- Wanted Poster: Deathclasp
-						q(8283,  {  -- Wanted - Deathclasp, Terror of the Sands
-								i(20646),	-- Sandstrider's Mark
-								i(20647),	-- Black Crystal Dagger
-						}),
-					}),
--- REPEATABLE QUESTS
-					qr(q(8319, {	-- Encrypted Twilight Texts
-						["qg"] = 15306,	-- Bor Wildmane
-						["sourceQuests"] = { 8318 },	-- Secret Communication
-					})),
-					qr(q(  8324, {	-- Still Believing
+					},
+					{	-- Sandy Cookbook
+						["objectID"] = 180503,
+						["coord"] = { 43.6, 42.0 },
+						["groups"] = {
+							{
+								["questID"] = 8313,	-- Sharing the Knowledge
+								["sourceQuests"] = 8307,	-- Desert Recipe
+								["requiredSkill"] = 185,	-- Cooking
+							},
+						},
+					},
+					{	-- Stepping Up Security
+						["questID"] = 8281,
+						["qg"] = 15191,	-- Windcaller Proudhorn
+						["coord"] = { 54.8, 36.0 },
+						["sourceQuests"] = 8280,	-- Securing the Suppy Lines
+					},
+					{	-- Still Believing
+						["questID"] = 8324,
+						["qg"] = 15194,	-- Hermit Ortell
+						["coord"] = { 68.6, 63.0 },
+						["repeatable"] = true,
+						["sourceQuest"] = 8323,	-- True Believers
+						["description"] = "Decoded True Believer Clippings will arrive in your mailbox approximately 12 hours after this quest is turned in.|r", 
 						["groups"] = {
 							i(20469, {	-- Decoded True Believer Clippings
 								i(20547), 	-- Pattern: Runed Stygian Boots
@@ -175,34 +252,44 @@ _.Zones =
 								i(20555), 	-- Plans: Darkrune Helm
 							}),
 						},
-						["qg"] = 15194,	-- Hermit Ortell
-						["sourceQuests"] = { 8323 },	-- True Believers
-						["description"] = "Decoded True Believer Clippings will arrive in your mailbox approximately 12 hours after this quest is turned in and has a chance to contain one or more of the recipes. Quest is repeatable.|r", 
-					})),
--- LEGENDARY QUESTS
-					ql(q(7785, {	-- Examine the Vessel
-						["qg"] = 14347,	-- Highlord Demitrian
-						["classes"] = { 2, 3, 4, 6, 8, 10, 12 },	-- Paladin, Hunter, Rogue, DK, Mage, Monk, DH
---						["sourceQuests"] = {  },	-- 
-					})),
-					i(19018, {	-- Dormant Wind Kissed Blade
-						ql(q(7787, {	-- Rise, Thunderfury!
-							["groups"] = {
-								i(19019),	-- Thunderfury, Blessed Blade of the Windseeker (LEGENDARY!)
+					},
+					{	-- Wanted Poster: Deathclasp
+						["objectID"] = 180448,
+						["coord"] = { 55.0, 35.9 },
+						["groups"] = {
+							{  -- Wanted - Deathclasp, Terror of the Sands
+								["questID"] = 8283,
+								["groups"] = {
+									i(20646),	-- Sandstrider's Mark
+									i(20647),	-- Black Crystal Dagger
+								},
 							},
-							["qg"] = 14435,	-- Prince Thunderaan
-							["classes"] = { 2, 3, 4, 6, 8, 10, 12 },	-- Paladin, Hunter, Rogue, DK, Mage, Monk, DH
-						})),
-					}),
-					ql(q(7786, {	-- Thunderaan the Windseeker
+						},
+					},
+-- LEGENDARY QUESTS
+					ql({	-- Examine the Vessel
+						["questID"] = 7785,
 						["qg"] = 14347,	-- Highlord Demitrian
 						["classes"] = { 2, 3, 4, 6, 8, 10, 12 },	-- Paladin, Hunter, Rogue, DK, Mage, Monk, DH
-						["sourceQuests"] = { 7785 },	-- Examine the Vessel
-					})),
--- CLASS HALL QUESTS
-					q(43002, {	-- Blessed Blade of the Windseeker
+					}),
+					{	-- Dormant Wind Kissed Blade
+						["itemID"] = 19018,
+						["groups"] = {
+							ql({	-- Rise, Thunderfury!
+								["questID"] = 7787,
+								["qg"] = 14435,	-- Prince Thunderaan
+								["classes"] = { 2, 3, 4, 6, 8, 10, 12 },	-- Paladin, Hunter, Rogue, DK, Mage, Monk, DH
+								["groups"] = {
+									i(19019),	-- Thunderfury, Blessed Blade of the Windseeker (LEGENDARY!)
+								},
+							}),
+						},
+					},
+					ql({	-- Thunderaan the Windseeker
+						["questID"] = 7786,
 						["qg"] = 14347,	-- Highlord Demitrian
-						["classes"]= { 7 },	-- Shaman
+						["classes"] = { 2, 3, 4, 6, 8, 10, 12 },	-- Paladin, Hunter, Rogue, DK, Mage, Monk, DH
+						["sourceQuest"] = 7785,	-- Examine the Vessel
 					}),
 --[[ MICRO-HOLIDAY - CALL OF THE SCARAB
 					desc(qwe(qh(45785)), "This quest will appear when you enter Silithus during Call of the Scarab."),	-- Call of the Scarab

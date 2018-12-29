@@ -6,253 +6,313 @@ _.Zones =
 	m(12, {	-- Kalimdor
 		m(81, {	-- Silithus
 			["groups"] = {
-				n(-16, {	-- Rares	
-					n(50737, { 		-- Acroniss
-						dr(	34	, i(	10244	)), --	Heavy Lamellar Leggings
-						dr(	6	, i(	10100	)), --	Councillor's Shoulders
-						dr(	3	, i(	10282	)), --	Emerald Vambraces
-						dr(	3	, i(	10122	)), --	Ornate Girdle
-						dr(	1.4	, i(	10110	)), --	Wanderer's Gloves
-						dr(	1.1	, i(	10179	)), --	Mystical Boots
-						dr(	1.1	, i(	10125	)), --	Ornate Pauldrons
-						dr(	1.1	, i(	10107	)), --	Wanderer's Bracers
+				n(-16, {	-- Rares
+					n(50737, {	-- Acroniss
+						["coord"] = { 73.6, 16.0 },
+						["groups"] = {
+							i(10244),	-- Heavy Lamellar Leggings
+							i(10100),	-- Councillor's Shoulders
+							i(10282),	-- Emerald Vambraces
+							i(10122),	-- Ornate Girdle
+							i(10110),	-- Wanderer's Gloves
+							i(10179),	-- Mystical Boots
+							i(10125),	-- Ornate Pauldrons
+							i(10107),	-- Wanderer's Bracers
+						},
 					}), 
-					n(50746, { 		-- Bornix the Burrower
-						dr(	32	, i(	10147	)), --	Mighty Armsplints
-						dr(	32	, i(	10145	)), --	Mighty Girdle
-						dr(	2	, i(	10259	)), --	Adventurer's Belt
-						dr(	2	, i(	10215	)), --	Elegant Robes
-						dr(	1.3	, i(	10214	)), --	Elegant Gloves
+					n(50746, {	-- Bornix the Burrower
+						["coord"] = { 63.0, 89.0 },
+						["groups"] = {
+							i(10147),	-- Mighty Armsplints
+							i(10145),	-- Mighty Girdle
+							i(10259),	-- Adventurer's Belt
+							i(10215),	-- Elegant Robes
+							i(10214),	-- Elegant Gloves
+						},
 					}), 
-					n(50897, { 		-- Ffexk the Dunestalker
-						dr(	26	, i(	10282	)), --	Emerald Vambraces
-						dr(	26	, i(	10109	)), --	Wanderer's Belt
-						dr(	2	, i(	10126	)), --	Ornate Bracers
-						dr(	1.7	, i(	10181	)), --	Mystical Armor
-						dr(	1.3	, i(	10193	)), --	Crusader's Armor
-						dr(	1.3	, i(	10168	)), --	Templar Crown
-						dr(	1.2	, i(	10221	)), --	Nightshade Girdle
-						dr(	1.2	, i(	10165	)), --	Templar Gauntlets
+					n(50897, {	-- Ffexk the Dunestalker
+						["coord"] = { 32.1, 53.8 },
+						["groups"] = {
+							i(10282),	-- Emerald Vambraces
+							i(10109),	-- Wanderer's Belt
+							i(10126),	-- Ornate Bracers
+							i(10181),	-- Mystical Armor
+							i(10193),	-- Crusader's Armor
+							i(10168),	-- Templar Crown
+							i(10221),	-- Nightshade Girdle
+							i(10165),	-- Templar Gauntlets
+						},
 					}), 
-					n(14472, { 		-- Gretheer
-						dr(	6	, i(	10276	)), --	Emerald Sabatons
-						dr(	5	, i(	10168	)), --	Templar Crown
-						dr(	4	, i(	10282	)), --	Emerald Vambraces
-						dr(	4	, i(	10229	)), --	Engraved Bracers
-						dr(	4	, i(	10125	)), --	Ornate Pauldrons
-						dr(	4	, i(	10106	)), --	Wanderer's Boots
-						dr(	3	, i(	10095	)), --	Councillor's Boots
-						dr(	3	, i(	10177	)), --	Mystical Leggings
-						dr(	3	, i(	10121	)), --	Ornate Gauntlets
-						dr(	3	, i(	10188	)), --	Swashbuckler's Leggings
-						dr(	3	, i(	10170	)), --	Templar Pauldrons
-						dr(	2	, i(	10187	)), --	Swashbuckler's Eyepatch
-						dr(	2	, i(	10110	)), --	Wanderer's Gloves
-						dr(	1.9	, i(	10099	)), --	Councillor's Gloves
-						dr(	1.9	, i(	10057	)), --	Duskwoven Tunic
-						dr(	1.8	, i(	10278	)), --	Emerald Girdle
-						dr(	1.7	, i(	10277	)), --	Emerald Gauntlets
-						dr(	1.7	, i(	10165	)), --	Templar Gauntlets
-						dr(	1.6	, i(	10240	)), --	Heavy Lamellar Chestpiece
-						dr(	1.6	, i(	10111	)), --	Wanderer's Hat
-						dr(	1.4	, i(	10216	)), --	Elegant Belt
-						dr(	1.4	, i(	10231	)), --	Engraved Cape
-						dr(	1.4	, i(	10119	)), --	Ornate Greaves
-						dr(	1.4	, i(	10167	)), --	Templar Boots
-						dr(	1.3	, i(	10097	)), --	Councillor's Circlet
-						dr(	1.3	, i(	10123	)), --	Ornate Circlet
-						dr(	1.3	, i(	10122	)), --	Ornate Girdle
-						dr(	1.3	, i(	10124	)), --	Ornate Legguards
-						dr(	1.3	, i(	10189	)), --	Swashbuckler's Shoulderpads
-						dr(	1.2	, i(	10233	)), --	Engraved Girdle
-						dr(	1.2	, i(	10175	)), --	Mystical Headwrap
-						dr(	1.2	, i(	10224	)), --	Nightshade Cloak
-						dr(	1.2	, i(	10070	)), --	Righteous Armor
-						dr(	1.2	, i(	10113	)), --	Wanderer's Shoulders
-						dr(	1.1	, i(	10193	)), --	Crusader's Armor
-						dr(	1.1	, i(	10169	)), --	Templar Legplates
-						dr(	1	, i(	10100	)), --	Councillor's Shoulders
-						dr(	1	, i(	10182	)), --	Swashbuckler's Breastplate
+					n(14472, {	-- Gretheer
+						["coords"] = {
+							{ 36.2, 39.6 },
+							{ 45.2, 51.4 },
+							{ 52.2, 55.2 },
+							{ 64.2, 58.2 },
+						},
+						["groups"] = {
+							i(10276),	-- Emerald Sabatons
+							i(10168),	-- Templar Crown
+							i(10282),	-- Emerald Vambraces
+							i(10229),	-- Engraved Bracers
+							i(10125),	-- Ornate Pauldrons
+							i(10106),	-- Wanderer's Boots
+							i(10095),	-- Councillor's Boots
+							i(10177),	-- Mystical Leggings
+							i(10121),	-- Ornate Gauntlets
+							i(10188),	-- Swashbuckler's Leggings
+							i(10170),	-- Templar Pauldrons
+							i(10187),	-- Swashbuckler's Eyepatch
+							i(10110),	-- Wanderer's Gloves
+							i(10099),	-- Councillor's Gloves
+							i(10057),	-- Duskwoven Tunic
+							i(10278),	-- Emerald Girdle
+							i(10277),	-- Emerald Gauntlets
+							i(10165),	-- Templar Gauntlets
+							i(10240),	-- Heavy Lamellar Chestpiece
+							i(10111),	-- Wanderer's Hat
+							i(10216),	-- Elegant Belt
+							i(10231),	-- Engraved Cape
+							i(10119),	-- Ornate Greaves
+							i(10167),	-- Templar Boots
+							i(10097),	-- Councillor's Circlet
+							i(10123),	-- Ornate Circlet
+							i(10122),	-- Ornate Girdle
+							i(10124),	-- Ornate Legguards
+							i(10189),	-- Swashbuckler's Shoulderpads
+							i(10233),	-- Engraved Girdle
+							i(10175),	-- Mystical Headwrap
+							i(10224),	-- Nightshade Cloak
+							i(10070),	-- Righteous Armor
+							i(10113),	-- Wanderer's Shoulders
+							i(10193),	-- Crusader's Armor
+							i(10169),	-- Templar Legplates
+							i(10100),	-- Councillor's Shoulders
+							i(10182),	-- Swashbuckler's Breastplate
+						},
 					}), 
-					n(14477, { 		-- Grubthor
-						dr(	8	, i(	20768, { dr(1.5, i(20769)) } )), --	Oozing Bag <Disgusting Oozling>
-						dr(	5	, i(	10125	)), --	Ornate Pauldrons
-						dr(	4	, i(	10282	)), --	Emerald Vambraces
-						dr(	4	, i(	10229	)), --	Engraved Bracers
-						dr(	4	, i(	10121	)), --	Ornate Gauntlets
-						dr(	4	, i(	10188	)), --	Swashbuckler's Leggings
-						dr(	4	, i(	10168	)), --	Templar Crown
-						dr(	4	, i(	10170	)), --	Templar Pauldrons
-						dr(	4	, i(	10106	)), --	Wanderer's Boots
-						dr(	3	, i(	10377	)), --	Commander's Vambraces
-						dr(	3	, i(	10095	)), --	Councillor's Boots
-						dr(	3	, i(	10276	)), --	Emerald Sabatons
-						dr(	3	, i(	10177	)), --	Mystical Leggings
-						dr(	2	, i(	10097	)), --	Councillor's Circlet
-						dr(	1.9	, i(	10172	)), --	Mystical Mantle
-						dr(	1.9	, i(	10110	)), --	Wanderer's Gloves
-						dr(	1.8	, i(	10233	)), --	Engraved Girdle
-						dr(	1.8	, i(	10123	)), --	Ornate Circlet
-						dr(	1.8	, i(	10124	)), --	Ornate Legguards
-						dr(	1.7	, i(	10122	)), --	Ornate Girdle
-						dr(	1.7	, i(	10187	)), --	Swashbuckler's Eyepatch
-						dr(	1.6	, i(	10224	)), --	Nightshade Cloak
-						dr(	1.4	, i(	10057	)), --	Duskwoven Tunic
-						dr(	1.4	, i(	10277	)), --	Emerald Gauntlets
-						dr(	1.4	, i(	10231	)), --	Engraved Cape
-						dr(	1.3	, i(	10070	)), --	Righteous Armor
-						dr(	1.2	, i(	10193	)), --	Crusader's Armor
-						dr(	1.2	, i(	10175	)), --	Mystical Headwrap
-						dr(	1.2	, i(	10119	)), --	Ornate Greaves
-						dr(	1.2	, i(	10167	)), --	Templar Boots
-						dr(	1.2	, i(	10169	)), --	Templar Legplates
-						dr(	1.1	, i(	10278	)), --	Emerald Girdle
-						dr(	1.1	, i(	10165	)), --	Templar Gauntlets
-						dr(	1.1	, i(	10111	)), --	Wanderer's Hat
-						dr(	1	, i(	10100	)), --	Councillor's Shoulders
-						dr(	1	, i(	10234	)), --	Engraved Boots
-						dr(	1	, i(	10240	)), --	Heavy Lamellar Chestpiece
-						dr(	1	, i(	10189	)), --	Swashbuckler's Shoulderpads
+					n(14477, {	-- Grubthor
+						["coords"] = {
+							{ 34.6, 72.8 },
+							{ 49.2, 72.6 },
+							{ 41.2, 64.8 },
+							{ 50.0, 62.8 },
+						},
+						["groups"] = {
+							i(20768, { i(20769) }), --	Oozing Bag <Disgusting Oozling>
+							i(10125),	-- Ornate Pauldrons
+							i(10282),	-- Emerald Vambraces
+							i(10229),	-- Engraved Bracers
+							i(10121),	-- Ornate Gauntlets
+							i(10188),	-- Swashbuckler's Leggings
+							i(10168),	-- Templar Crown
+							i(10170),	-- Templar Pauldrons
+							i(10106),	-- Wanderer's Boots
+							i(10377),	-- Commander's Vambraces
+							i(10095),	-- Councillor's Boots
+							i(10276),	-- Emerald Sabatons
+							i(10177),	-- Mystical Leggings
+							i(10097),	-- Councillor's Circlet
+							i(10172),	-- Mystical Mantle
+							i(10110),	-- Wanderer's Gloves
+							i(10233),	-- Engraved Girdle
+							i(10123),	-- Ornate Circlet
+							i(10124),	-- Ornate Legguards
+							i(10122),	-- Ornate Girdle
+							i(10187),	-- Swashbuckler's Eyepatch
+							i(10224),	-- Nightshade Cloak
+							i(10057),	-- Duskwoven Tunic
+							i(10277),	-- Emerald Gauntlets
+							i(10231),	-- Engraved Cape
+							i(10070),	-- Righteous Armor
+							i(10193),	-- Crusader's Armor
+							i(10175),	-- Mystical Headwrap
+							i(10119),	-- Ornate Greaves
+							i(10167),	-- Templar Boots
+							i(10169),	-- Templar Legplates
+							i(10278),	-- Emerald Girdle
+							i(10165),	-- Templar Gauntlets
+							i(10111),	-- Wanderer's Hat
+							i(10100),	-- Councillor's Shoulders
+							i(10234),	-- Engraved Boots
+							i(10240),	-- Heavy Lamellar Chestpiece
+							i(10189),	-- Swashbuckler's Shoulderpads
+						},
 					}), 
-					n(14478, { 		-- Huricanian
-						dr(	6	, i(	10224	)), --	Nightshade Cloak
-						dr(	5	, i(	10232	)), --	Engraved Gauntlets
-						dr(	3	, i(	10099	)), --	Councillor's Gloves
-						dr(	3	, i(	10193	)), --	Crusader's Armor
-						dr(	3	, i(	10276	)), --	Emerald Sabatons
-						dr(	3	, i(	10240	)), --	Heavy Lamellar Chestpiece
-						dr(	3	, i(	10122	)), --	Ornate Girdle
-						dr(	3	, i(	10187	)), --	Swashbuckler's Eyepatch
-						dr(	3	, i(	10110	)), --	Wanderer's Gloves
-						dr(	2	, i(	10199	)), --	Crusader's Leggings
-						dr(	2	, i(	10057	)), --	Duskwoven Tunic
-						dr(	2	, i(	10213	)), --	Elegant Bracers
-						dr(	2	, i(	10175	)), --	Mystical Headwrap
-						dr(	2	, i(	10172	)), --	Mystical Mantle
-						dr(	2	, i(	10070	)), --	Righteous Armor
-						dr(	2	, i(	10189	)), --	Swashbuckler's Shoulderpads
-						dr(	2	, i(	10167	)), --	Templar Boots
-						dr(	2	, i(	10165	)), --	Templar Gauntlets
-						dr(	2	, i(	10166	)), --	Templar Girdle
-						dr(	1.9	, i(	10096	)), --	Councillor's Cuffs
-						dr(	1.7	, i(	10231	)), --	Engraved Cape
-						dr(	1.7	, i(	10109	)), --	Wanderer's Belt
-						dr(	1.6	, i(	10278	)), --	Emerald Girdle
-						dr(	1.6	, i(	10177	)), --	Mystical Leggings
-						dr(	1.6	, i(	10183	)), --	Swashbuckler's Boots
-						dr(	1.5	, i(	10103	)), --	Councillor's Sash
-						dr(	1.5	, i(	10107	)), --	Wanderer's Bracers
-						dr(	1.4	, i(	10126	)), --	Ornate Bracers
-						dr(	1.4	, i(	10121	)), --	Ornate Gauntlets
-						dr(	1.4	, i(	10171	)), --	Templar Bracers
-						dr(	1.3	, i(	10212	)), --	Elegant Cloak
-						dr(	1.3	, i(	10229	)), --	Engraved Bracers
-						dr(	1.3	, i(	10244	)), --	Heavy Lamellar Leggings
-						dr(	1.3	, i(	10179	)), --	Mystical Boots
-						dr(	1.3	, i(	10168	)), --	Templar Crown
-						dr(	1.2	, i(	10125	)), --	Ornate Pauldrons
-						dr(	1.1	, i(	10176	)), --	Mystical Gloves
-						dr(	1.1	, i(	10119	)), --	Ornate Greaves
-						dr(	1.1	, i(	10124	)), --	Ornate Legguards
-						dr(	1.1	, i(	10128	)), --	Revenant Chestplate
-						dr(	1.1	, i(	10188	)), --	Swashbuckler's Leggings
-						dr(	1.1	, i(	10106	)), --	Wanderer's Boots
-						dr(	1	, i(	10170	)), --	Templar Pauldrons
+					n(14478, {	-- Huricanian
+						["coords"] = {
+							{ 33.8, 14.6 },
+							{ 36.2, 17.8 },
+							{ 36.8, 21.0 },
+							{ 36.8, 23.6 },
+							{ 33.2, 26.4 },
+							{ 30.8, 26.2 },
+							{ 30.2, 24.2 },
+							{ 29.4, 19.2 },
+						},
+						["groups"] = {
+							i(10224),	-- Nightshade Cloak
+							i(10232),	-- Engraved Gauntlets
+							i(10099),	-- Councillor's Gloves
+							i(10193),	-- Crusader's Armor
+							i(10276),	-- Emerald Sabatons
+							i(10240),	-- Heavy Lamellar Chestpiece
+							i(10122),	-- Ornate Girdle
+							i(10187),	-- Swashbuckler's Eyepatch
+							i(10110),	-- Wanderer's Gloves
+							i(10199),	-- Crusader's Leggings
+							i(10057),	-- Duskwoven Tunic
+							i(10213),	-- Elegant Bracers
+							i(10175),	-- Mystical Headwrap
+							i(10172),	-- Mystical Mantle
+							i(10070),	-- Righteous Armor
+							i(10189),	-- Swashbuckler's Shoulderpads
+							i(10167),	-- Templar Boots
+							i(10165),	-- Templar Gauntlets
+							i(10166),	-- Templar Girdle
+							i(10096),	-- Councillor's Cuffs
+							i(10231),	-- Engraved Cape
+							i(10109),	-- Wanderer's Belt
+							i(10278),	-- Emerald Girdle
+							i(10177),	-- Mystical Leggings
+							i(10183),	-- Swashbuckler's Boots
+							i(10103),	-- Councillor's Sash
+							i(10107),	-- Wanderer's Bracers
+							i(10126),	-- Ornate Bracers
+							i(10121),	-- Ornate Gauntlets
+							i(10171),	-- Templar Bracers
+							i(10212),	-- Elegant Cloak
+							i(10229),	-- Engraved Bracers
+							i(10244),	-- Heavy Lamellar Leggings
+							i(10179),	-- Mystical Boots
+							i(10168),	-- Templar Crown
+							i(10125),	-- Ornate Pauldrons
+							i(10176),	-- Mystical Gloves
+							i(10119),	-- Ornate Greaves
+							i(10124),	-- Ornate Legguards
+							i(10128),	-- Revenant Chestplate
+							i(10188),	-- Swashbuckler's Leggings
+							i(10106),	-- Wanderer's Boots
+							i(10170),	-- Templar Pauldrons
+						},
 					}), 
-					n(50370, { 		-- Karapax
-						dr(	22	, i(	10121	)), --	Ornate Gauntlets
-						dr(	21	, i(	10240	)), --	Heavy Lamellar Chestpiece
-						dr(	7	, i(	10182	)), --	Swashbuckler's Breastplate
-						dr(	3	, i(	10229	)), --	Engraved Bracers
-						dr(	2	, i(	10177	)), --	Mystical Leggings
-						dr(	2	, i(	10188	)), --	Swashbuckler's Leggings
-						dr(	1.8	, i(	10187	)), --	Swashbuckler's Eyepatch
-						dr(	1.8	, i(	10106	)), --	Wanderer's Boots
-						dr(	1.7	, i(	10282	)), --	Emerald Vambraces
-						dr(	1.6	, i(	10168	)), --	Templar Crown
-						dr(	1.3	, i(	10148	)), --	Mighty Cloak
-						dr(	1.3	, i(	10170	)), --	Templar Pauldrons
-						dr(	1.1	, i(	10233	)), --	Engraved Girdle
-						dr(	1.1	, i(	10125	)), --	Ornate Pauldrons
+					n(50370, {	-- Karapax
+						["coord"] = { 57.5, 14.8 },
+						["groups"] = {
+							i(10121),	-- Ornate Gauntlets
+							i(10240),	-- Heavy Lamellar Chestpiece
+							i(10182),	-- Swashbuckler's Breastplate
+							i(10229),	-- Engraved Bracers
+							i(10177),	-- Mystical Leggings
+							i(10188),	-- Swashbuckler's Leggings
+							i(10187),	-- Swashbuckler's Eyepatch
+							i(10106),	-- Wanderer's Boots
+							i(10282),	-- Emerald Vambraces
+							i(10168),	-- Templar Crown
+							i(10148),	-- Mighty Cloak
+							i(10170),	-- Templar Pauldrons
+							i(10233),	-- Engraved Girdle
+							i(10125),	-- Ornate Pauldrons
+						},
 					}), 
-					n(14476, { 		-- Krellack
-						dr(	12	, i(	10168	)), --	Templar Crown
-						dr(	4	, i(	10095	)), --	Councillor's Boots
-						dr(	4	, i(	10229	)), --	Engraved Bracers
-						dr(	4	, i(	10188	)), --	Swashbuckler's Leggings
-						dr(	4	, i(	10170	)), --	Templar Pauldrons
-						dr(	3	, i(	10276	)), --	Emerald Sabatons
-						dr(	3	, i(	10282	)), --	Emerald Vambraces
-						dr(	3	, i(	10177	)), --	Mystical Leggings
-						dr(	3	, i(	10121	)), --	Ornate Gauntlets
-						dr(	3	, i(	10125	)), --	Ornate Pauldrons
-						dr(	3	, i(	10106	)), --	Wanderer's Boots
-						dr(	2	, i(	10100	)), --	Councillor's Shoulders
-						dr(	2	, i(	10231	)), --	Engraved Cape
-						dr(	2	, i(	10169	)), --	Templar Legplates
-						dr(	1.9	, i(	10224	)), --	Nightshade Cloak
-						dr(	1.9	, i(	10122	)), --	Ornate Girdle
-						dr(	1.6	, i(	10212	)), --	Elegant Cloak
-						dr(	1.6	, i(	10240	)), --	Heavy Lamellar Chestpiece
-						dr(	1.5	, i(	10167	)), --	Templar Boots
-						dr(	1.4	, i(	10057	)), --	Duskwoven Tunic
-						dr(	1.4	, i(	10278	)), --	Emerald Girdle
-						dr(	1.4	, i(	10222	)), --	Nightshade Boots
-						dr(	1.4	, i(	10189	)), --	Swashbuckler's Shoulderpads
-						dr(	1.4	, i(	10113	)), --	Wanderer's Shoulders
-						dr(	1.3	, i(	10233	)), --	Engraved Girdle
-						dr(	1.3	, i(	10175	)), --	Mystical Headwrap
-						dr(	1.3	, i(	10110	)), --	Wanderer's Gloves
-						dr(	1.1	, i(	10099	)), --	Councillor's Gloves
-						dr(	1.1	, i(	10193	)), --	Crusader's Armor
-						dr(	1.1	, i(	10172	)), --	Mystical Mantle
-						dr(	1.1	, i(	10070	)), --	Righteous Armor
-						dr(	1.1	, i(	10165	)), --	Templar Gauntlets
-						dr(	1	, i(	10097	)), --	Councillor's Circlet
-						dr(	1	, i(	10123	)), --	Ornate Circlet
-						dr(	1	, i(	10187	)), --	Swashbuckler's Eyepatch
+					n(14476, {	-- Krellack
+						["coords"] = {
+							{ 62.4, 18.6 },
+							{ 67.6, 28.8 },
+							{ 69.8, 37.4 },
+							{ 64.8, 39.4 },
+						},
+						["groups"] = {
+							i(10168),	-- Templar Crown
+							i(10095),	-- Councillor's Boots
+							i(10229),	-- Engraved Bracers
+							i(10188),	-- Swashbuckler's Leggings
+							i(10170),	-- Templar Pauldrons
+							i(10276),	-- Emerald Sabatons
+							i(10282),	-- Emerald Vambraces
+							i(10177),	-- Mystical Leggings
+							i(10121),	-- Ornate Gauntlets
+							i(10125),	-- Ornate Pauldrons
+							i(10106),	-- Wanderer's Boots
+							i(10100),	-- Councillor's Shoulders
+							i(10231),	-- Engraved Cape
+							i(10169),	-- Templar Legplates
+							i(10224),	-- Nightshade Cloak
+							i(10122),	-- Ornate Girdle
+							i(10212),	-- Elegant Cloak
+							i(10240),	-- Heavy Lamellar Chestpiece
+							i(10167),	-- Templar Boots
+							i(10057),	-- Duskwoven Tunic
+							i(10278),	-- Emerald Girdle
+							i(10222),	-- Nightshade Boots
+							i(10189),	-- Swashbuckler's Shoulderpads
+							i(10113),	-- Wanderer's Shoulders
+							i(10233),	-- Engraved Girdle
+							i(10175),	-- Mystical Headwrap
+							i(10110),	-- Wanderer's Gloves
+							i(10099),	-- Councillor's Gloves
+							i(10193),	-- Crusader's Armor
+							i(10172),	-- Mystical Mantle
+							i(10070),	-- Righteous Armor
+							i(10165),	-- Templar Gauntlets
+							i(10097),	-- Councillor's Circlet
+							i(10123),	-- Ornate Circlet
+							i(10187),	-- Swashbuckler's Eyepatch
+						},
 					}), 
-					n(14473, { 		-- Lapress
-						dr(	13	, i(	10188	)), --	Swashbuckler's Leggings
-						dr(	9	, i(	10277	)), --	Emerald Gauntlets
-						dr(	8	, i(	15219	)), --	Dimensional Blade
-						dr(	8	, i(	10240	)), --	Heavy Lamellar Chestpiece
-						dr(	4	, i(	10121	)), --	Ornate Gauntlets
-						dr(	3	, i(	10095	)), --	Councillor's Boots
-						dr(	3	, i(	10276	)), --	Emerald Sabatons
-						dr(	3	, i(	10229	)), --	Engraved Bracers
-						dr(	3	, i(	10177	)), --	Mystical Leggings
-						dr(	3	, i(	10168	)), --	Templar Crown
-						dr(	3	, i(	10170	)), --	Templar Pauldrons
-						dr(	3	, i(	10106	)), --	Wanderer's Boots
-						dr(	2	, i(	10057	)), --	Duskwoven Tunic
-						dr(	2	, i(	10282	)), --	Emerald Vambraces
-						dr(	2	, i(	10125	)), --	Ornate Pauldrons
-						dr(	1.8	, i(	10187	)), --	Swashbuckler's Eyepatch
-						dr(	1.6	, i(	10099	)), --	Councillor's Gloves
-						dr(	1.6	, i(	10169	)), --	Templar Legplates
-						dr(	1.4	, i(	10231	)), --	Engraved Cape
-						dr(	1.4	, i(	10233	)), --	Engraved Girdle
-						dr(	1.3	, i(	10281	)), --	Emerald Pauldrons
-						dr(	1.3	, i(	10224	)), --	Nightshade Cloak
-						dr(	1.3	, i(	10119	)), --	Ornate Greaves
-						dr(	1.1	, i(	10097	)), --	Councillor's Circlet
-						dr(	1.1	, i(	10100	)), --	Councillor's Shoulders
-						dr(	1.1	, i(	10223	)), --	Nightshade Armguards
-						dr(	1.1	, i(	10070	)), --	Righteous Armor
-						dr(	1.1	, i(	10189	)), --	Swashbuckler's Shoulderpads
-						dr(	1.1	, i(	10167	)), --	Templar Boots
-						dr(	1.1	, i(	10113	)), --	Wanderer's Shoulders
-						dr(	1	, i(	10172	)), --	Mystical Mantle
-						dr(	1	, i(	10225	)), --	Nightshade Gloves
-						dr(	1	, i(	10123	)), --	Ornate Circlet
-						dr(	1	, i(	10124	)), --	Ornate Legguards
-						dr(	1	, i(	10110	)), --	Wanderer's Gloves
+					n(14473, {	-- Lapress
+						["coords"] = {
+							{ 58.6, 66.8 },
+							{ 55.4, 71.0 },
+							{ 57.6, 76.0 },
+							{ 60.8, 68.8 },
+							{ 61.6, 66.0 },
+							{ 63.0, 73.4 },
+							{ 65.6, 75.2 },
+							{ 63.6, 82.0 },
+						},
+						["groups"] = {
+							i(10188),	-- Swashbuckler's Leggings
+							i(10277),	-- Emerald Gauntlets
+							i(15219),	-- Dimensional Blade
+							i(10240),	-- Heavy Lamellar Chestpiece
+							i(10121),	-- Ornate Gauntlets
+							i(10095),	-- Councillor's Boots
+							i(10276),	-- Emerald Sabatons
+							i(10229),	-- Engraved Bracers
+							i(10177),	-- Mystical Leggings
+							i(10168),	-- Templar Crown
+							i(10170),	-- Templar Pauldrons
+							i(10106),	-- Wanderer's Boots
+							i(10057),	-- Duskwoven Tunic
+							i(10282),	-- Emerald Vambraces
+							i(10125),	-- Ornate Pauldrons
+							i(10187),	-- Swashbuckler's Eyepatch
+							i(10099),	-- Councillor's Gloves
+							i(10169),	-- Templar Legplates
+							i(10231),	-- Engraved Cape
+							i(10233),	-- Engraved Girdle
+							i(10281),	-- Emerald Pauldrons
+							i(10224),	-- Nightshade Cloak
+							i(10119),	-- Ornate Greaves
+							i(10097),	-- Councillor's Circlet
+							i(10100),	-- Councillor's Shoulders
+							i(10223),	-- Nightshade Armguards
+							i(10070),	-- Righteous Armor
+							i(10189),	-- Swashbuckler's Shoulderpads
+							i(10167),	-- Templar Boots
+							i(10113),	-- Wanderer's Shoulders
+							i(10172),	-- Mystical Mantle
+							i(10225),	-- Nightshade Gloves
+							i(10123),	-- Ornate Circlet
+							i(10124),	-- Ornate Legguards
+							i(10110),	-- Wanderer's Gloves
+						},
 					}), 
 					{	-- Lord Skwol <Abyssal High Council>
 						["npcID"] = 15305,	-- Lord Skwol <Abyssal High Council>
 						["u"] = 43,
-						["g"] = {
+						["groups"] = {
 							{	-- Abyssal Plate Epaulets
 								["itemID"] = 20683,	-- Abyssal Plate Epaulets
 								["u"] = 2,
@@ -267,29 +327,35 @@ _.Zones =
 							},
 						},
 					},
-					n(50745, { 		-- Losaj
-						dr(	26	, i(	10277	)), --	Emerald Gauntlets
-						dr(	24	, i(	10216	)), --	Elegant Belt
-						dr(	3	, i(	10111	)), --	Wanderer's Hat
-						dr(	2	, i(	10181	)), --	Mystical Armor
-						dr(	1.3	, i(	10182	)), --	Swashbuckler's Breastplate
-						dr(	1	, i(	10101	)), --	Councillor's Pants
-						dr(	1	, i(	10234	)), --	Engraved Boots
-						dr(	1	, i(	10164	)), --	Templar Chestplate
+					n(50745, {	-- Losaj
+						["coord"] = { 42.6, 56.6 },
+						["groups"] = {
+							i(10277),	-- Emerald Gauntlets
+							i(10216),	-- Elegant Belt
+							i(10111),	-- Wanderer's Hat
+							i(10181),	-- Mystical Armor
+							i(10182),	-- Swashbuckler's Breastplate
+							i(10101),	-- Councillor's Pants
+							i(10234),	-- Engraved Boots
+							i(10164),	-- Templar Chestplate
+						},
 					}), 
-					n(50743, { 		-- Manax
-						dr(	33	, i(	10212	)), --	Elegant Cloak
-						dr(	31	, i(	10234	)), --	Engraved Boots
-						dr(	1.9	, i(	10100	)), --	Councillor's Shoulders
-						dr(	1.4	, i(	10148	)), --	Mighty Cloak
-						dr(	1.3	, i(	10111	)), --	Wanderer's Hat
-						dr(	1	, i(	10224	)), --	Nightshade Cloak
-						dr(	1	, i(	10119	)), --	Ornate Greaves
+					n(50743, {	-- Manax
+						["coord"] = { 67.5, 66.6 },
+						["groups"] = {
+							i(10212),	-- Elegant Cloak
+							i(10234),	-- Engraved Boots
+							i(10100),	-- Councillor's Shoulders
+							i(10148),	-- Mighty Cloak
+							i(10111),	-- Wanderer's Hat
+							i(10224),	-- Nightshade Cloak
+							i(10119),	-- Ornate Greaves
+						},
 					}), 
 					{	-- Prince Skaldrenox <Abyssal High Council>
 						["npcID"] = 15203,	-- Prince Skaldrenox <Abyssal High Council>
 						["u"] = 43,
-						["g"] = {
+						["groups"] = {
 							{	-- Abyssal Mail Pauldrons
 								["itemID"] = 20680,	-- Abyssal Mail Pauldrons
 								["u"] = 2,
@@ -304,175 +370,207 @@ _.Zones =
 							},
 						},
 					},
-					n(50742, { 		-- Qem
-						dr(	24	, i(	10277	)), --	Emerald Gauntlets
-						dr(	23	, i(	10145	)), --	Mighty Girdle
-						dr(	23	, i(	10188	)), --	Swashbuckler's Leggings
-						dr(	3	, i(	10182	)), --	Swashbuckler's Breastplate
-						dr(	1.8	, i(	10164	)), --	Templar Chestplate
-						dr(	1.1	, i(	10124	)), --	Ornate Legguards
-						dr(	1	, i(	10111	)), --	Wanderer's Hat
+					n(50742, {	-- Qem
+						["coord"] = { 44.0, 17.2 },
+						["groups"] = {
+							i(10277),	-- Emerald Gauntlets
+							i(10145),	-- Mighty Girdle
+							i(10188),	-- Swashbuckler's Leggings
+							i(10182),	-- Swashbuckler's Breastplate
+							i(10164),	-- Templar Chestplate
+							i(10124),	-- Ornate Legguards
+							i(10111),	-- Wanderer's Hat
+						},
 					}), 
-					n(50744, { 		-- Qu'rik
-						dr(	18	, i(	10104	)), --	Councillor's Tunic
-						dr(	18	, i(	10156	)), --	Mercurial Bracers
-						dr(	18	, i(	10159	)), --	Mercurial Cloak
-						dr(	3	, i(	10281	)), --	Emerald Pauldrons
-						dr(	3	, i(	10154	)), --	Mercurial Girdle
-						dr(	3	, i(	10221	)), --	Nightshade Girdle
-						dr(	1.4	, i(	10216	)), --	Elegant Belt
-						dr(	1.3	, i(	10112	)), --	Wanderer's Leggings
-						dr(	1.2	, i(	10280	)), --	Emerald Legplates
-						dr(	1.1	, i(	10118	)), --	Ornate Breastplate
+					n(50744, {	-- Qu'rik
+						["coord"] = { 54.6, 26.6 },
+						["groups"] = {
+							i(10104),	-- Councillor's Tunic
+							i(10156),	-- Mercurial Bracers
+							i(10159),	-- Mercurial Cloak
+							i(10281),	-- Emerald Pauldrons
+							i(10154),	-- Mercurial Girdle
+							i(10221),	-- Nightshade Girdle
+							i(10216),	-- Elegant Belt
+							i(10112),	-- Wanderer's Leggings
+							i(10280),	-- Emerald Legplates
+							i(10118),	-- Ornate Breastplate
+						},
 					}), 
-					n(14475, { 		-- Rex Ashil
-						dr(	12	, i(	10282	)), --	Emerald Vambraces
-						dr(	10	, i(	10172	)), --	Mystical Mantle
-						dr(	10	, i(	10187	)), --	Swashbuckler's Eyepatch
-						dr(	3	, i(	10095	)), --	Councillor's Boots
-						dr(	3	, i(	10276	)), --	Emerald Sabatons
-						dr(	3	, i(	10229	)), --	Engraved Bracers
-						dr(	3	, i(	10177	)), --	Mystical Leggings
-						dr(	3	, i(	10121	)), --	Ornate Gauntlets
-						dr(	3	, i(	10125	)), --	Ornate Pauldrons
-						dr(	3	, i(	10188	)), --	Swashbuckler's Leggings
-						dr(	3	, i(	10168	)), --	Templar Crown
-						dr(	3	, i(	10106	)), --	Wanderer's Boots
-						dr(	2	, i(	10193	)), --	Crusader's Armor
-						dr(	2	, i(	10170	)), --	Templar Pauldrons
-						dr(	1.6	, i(	10165	)), --	Templar Gauntlets
-						dr(	1.5	, i(	10175	)), --	Mystical Headwrap
-						dr(	1.2	, i(	10235	)), --	Engraved Helm
-						dr(	1.2	, i(	10110	)), --	Wanderer's Gloves
-						dr(	1.2	, i(	10113	)), --	Wanderer's Shoulders
-						dr(	1.1	, i(	10240	)), --	Heavy Lamellar Chestpiece
-						dr(	1	, i(	10233	)), --	Engraved Girdle
-						dr(	1	, i(	10124	)), --	Ornate Legguards
-						dr(	1	, i(	10189	)), --	Swashbuckler's Shoulderpads
-						dr(	1	, i(	10167	)), --	Templar Boots
+					n(14475, {	-- Rex Ashil
+						["coords"] = {
+							{ 51.0, 23.0 },
+							{ 52.0, 24.8 },
+							{ 51.6, 26.6 },
+						},
+						["groups"] = {
+							i(10282),	-- Emerald Vambraces
+							i(10172),	-- Mystical Mantle
+							i(10187),	-- Swashbuckler's Eyepatch
+							i(10095),	-- Councillor's Boots
+							i(10276),	-- Emerald Sabatons
+							i(10229),	-- Engraved Bracers
+							i(10177),	-- Mystical Leggings
+							i(10121),	-- Ornate Gauntlets
+							i(10125),	-- Ornate Pauldrons
+							i(10188),	-- Swashbuckler's Leggings
+							i(10168),	-- Templar Crown
+							i(10106),	-- Wanderer's Boots
+							i(10193),	-- Crusader's Armor
+							i(10170),	-- Templar Pauldrons
+							i(10165),	-- Templar Gauntlets
+							i(10175),	-- Mystical Headwrap
+							i(10235),	-- Engraved Helm
+							i(10110),	-- Wanderer's Gloves
+							i(10113),	-- Wanderer's Shoulders
+							i(10240),	-- Heavy Lamellar Chestpiece
+							i(10233),	-- Engraved Girdle
+							i(10124),	-- Ornate Legguards
+							i(10189),	-- Swashbuckler's Shoulderpads
+							i(10167),	-- Templar Boots
+						},
 					}),		
-					n(14471, { 		-- Setis
-						dr(	8	, i(	10121	)), --	Ornate Gauntlets
-						dr(	8	, i(	10170	)), --	Templar Pauldrons
-						dr(	5	, i(	10110	)), --	Wanderer's Gloves
-						dr(	4	, i(	10276	)), --	Emerald Sabatons
-						dr(	4	, i(	10125	)), --	Ornate Pauldrons
-						dr(	3	, i(	10095	)), --	Councillor's Boots
-						dr(	3	, i(	10282	)), --	Emerald Vambraces
-						dr(	3	, i(	10229	)), --	Engraved Bracers
-						dr(	3	, i(	10177	)), --	Mystical Leggings
-						dr(	3	, i(	10124	)), --	Ornate Legguards
-						dr(	3	, i(	10188	)), --	Swashbuckler's Leggings
-						dr(	3	, i(	10168	)), --	Templar Crown
-						dr(	3	, i(	10106	)), --	Wanderer's Boots
-						dr(	2	, i(	10175	)), --	Mystical Headwrap
-						dr(	1.7	, i(	10165	)), --	Templar Gauntlets
-						dr(	1.5	, i(	10240	)), --	Heavy Lamellar Chestpiece
-						dr(	1.5	, i(	10172	)), --	Mystical Mantle
-						dr(	1.5	, i(	10070	)), --	Righteous Armor
-						dr(	1.4	, i(	10099	)), --	Councillor's Gloves
-						dr(	1.4	, i(	10189	)), --	Swashbuckler's Shoulderpads
-						dr(	1.4	, i(	10167	)), --	Templar Boots
-						dr(	1.3	, i(	10278	)), --	Emerald Girdle
-						dr(	1.2	, i(	10100	)), --	Councillor's Shoulders
-						dr(	1.2	, i(	10233	)), --	Engraved Girdle
-						dr(	1.2	, i(	10123	)), --	Ornate Circlet
-						dr(	1.1	, i(	10097	)), --	Councillor's Circlet
-						dr(	1.1	, i(	10212	)), --	Elegant Cloak
-						dr(	1.1	, i(	10231	)), --	Engraved Cape
-						dr(	1.1	, i(	10187	)), --	Swashbuckler's Eyepatch
-						dr(	1	, i(	10193	)), --	Crusader's Armor
-						dr(	1	, i(	10148	)), --	Mighty Cloak
-						dr(	1	, i(	10224	)), --	Nightshade Cloak
-						dr(	1	, i(	10122	)), --	Ornate Girdle
+					n(14471, {	-- Setis
+						["coord"] = { 36.0, 82.8 },
+						["groups"] = {
+							i(10121),	-- Ornate Gauntlets
+							i(10170),	-- Templar Pauldrons
+							i(10110),	-- Wanderer's Gloves
+							i(10276),	-- Emerald Sabatons
+							i(10125),	-- Ornate Pauldrons
+							i(10095),	-- Councillor's Boots
+							i(10282),	-- Emerald Vambraces
+							i(10229),	-- Engraved Bracers
+							i(10177),	-- Mystical Leggings
+							i(10124),	-- Ornate Legguards
+							i(10188),	-- Swashbuckler's Leggings
+							i(10168),	-- Templar Crown
+							i(10106),	-- Wanderer's Boots
+							i(10175),	-- Mystical Headwrap
+							i(10165),	-- Templar Gauntlets
+							i(10240),	-- Heavy Lamellar Chestpiece
+							i(10172),	-- Mystical Mantle
+							i(10070),	-- Righteous Armor
+							i(10099),	-- Councillor's Gloves
+							i(10189),	-- Swashbuckler's Shoulderpads
+							i(10167),	-- Templar Boots
+							i(10278),	-- Emerald Girdle
+							i(10100),	-- Councillor's Shoulders
+							i(10233),	-- Engraved Girdle
+							i(10123),	-- Ornate Circlet
+							i(10097),	-- Councillor's Circlet
+							i(10212),	-- Elegant Cloak
+							i(10231),	-- Engraved Cape
+							i(10187),	-- Swashbuckler's Eyepatch
+							i(10193),	-- Crusader's Armor
+							i(10148),	-- Mighty Cloak
+							i(10224),	-- Nightshade Cloak
+							i(10122),	-- Ornate Girdle
+						},
 					}), 
-					n(51004, { 		-- Toxx
-						dr(	19	, i(	10229	)), --	Engraved Bracers
-						dr(	18	, i(	10070	)), --	Righteous Armor
-						dr(	17	, i(	10167	)), --	Templar Boots
-						dr(	6	, i(	10240	)), --	Heavy Lamellar Chestpiece
-						dr(	2	, i(	10165	)), --	Templar Gauntlets
-						dr(	2	, i(	10112	)), --	Wanderer's Leggings
-						dr(	1.8	, i(	10170	)), --	Templar Pauldrons
-						dr(	1.6	, i(	10188	)), --	Swashbuckler's Leggings
-						dr(	1.5	, i(	10106	)), --	Wanderer's Boots
-						dr(	1.3	, i(	10276	)), --	Emerald Sabatons
-						dr(	1.1	, i(	10381	)), --	Commander's Girdle
-						dr(	1.1	, i(	10232	)), --	Engraved Gauntlets
-						dr(	1.1	, i(	10125	)), --	Ornate Pauldrons
-						dr(	1.1	, i(	10168	)), --	Templar Crown
-						dr(	1	, i(	10175	)), --	Mystical Headwrap
+					n(51004, {	-- Toxx
+						["coord"] = { 42.8, 18.2 },
+						["groups"] = {
+							i(10229),	-- Engraved Bracers
+							i(10070),	-- Righteous Armor
+							i(10167),	-- Templar Boots
+							i(10240),	-- Heavy Lamellar Chestpiece
+							i(10165),	-- Templar Gauntlets
+							i(10112),	-- Wanderer's Leggings
+							i(10170),	-- Templar Pauldrons
+							i(10188),	-- Swashbuckler's Leggings
+							i(10106),	-- Wanderer's Boots
+							i(10276),	-- Emerald Sabatons
+							i(10381),	-- Commander's Girdle
+							i(10232),	-- Engraved Gauntlets
+							i(10125),	-- Ornate Pauldrons
+							i(10168),	-- Templar Crown
+							i(10175),	-- Mystical Headwrap
+						},
 					}), 
-					n(14479, { 		-- Twilight Lord Everun
-						dr(	4	, i(	10276	)), --	Emerald Sabatons
-						dr(	4	, i(	10384	)), --	Hyperion Armor
-						dr(	4	, i(	10121	)), --	Ornate Gauntlets
-						dr(	4	, i(	10188	)), --	Swashbuckler's Leggings
-						dr(	4	, i(	10170	)), --	Templar Pauldrons
-						dr(	4	, i(	10106	)), --	Wanderer's Boots
-						dr(	3	, i(	10095	)), --	Councillor's Boots
-						dr(	3	, i(	10282	)), --	Emerald Vambraces
-						dr(	3	, i(	10229	)), --	Engraved Bracers
-						dr(	3	, i(	10177	)), --	Mystical Leggings
-						dr(	3	, i(	10125	)), --	Ornate Pauldrons
-						dr(	3	, i(	10168	)), --	Templar Crown
-						dr(	2	, i(	10240	)), --	Heavy Lamellar Chestpiece
-						dr(	1.8	, i(	10123	)), --	Ornate Circlet
-						dr(	1.6	, i(	10233	)), --	Engraved Girdle
-						dr(	1.6	, i(	10122	)), --	Ornate Girdle
-						dr(	1.5	, i(	10119	)), --	Ornate Greaves
-						dr(	1.5	, i(	10189	)), --	Swashbuckler's Shoulderpads
-						dr(	1.4	, i(	10193	)), --	Crusader's Armor
-						dr(	1.4	, i(	10175	)), --	Mystical Headwrap
-						dr(	1.4	, i(	10167	)), --	Templar Boots
-						dr(	1.3	, i(	10231	)), --	Engraved Cape
-						dr(	1.3	, i(	10187	)), --	Swashbuckler's Eyepatch
-						dr(	1.3	, i(	10111	)), --	Wanderer's Hat
-						dr(	1.2	, i(	10057	)), --	Duskwoven Tunic
-						dr(	1.2	, i(	10277	)), --	Emerald Gauntlets
-						dr(	1.2	, i(	10232	)), --	Engraved Gauntlets
-						dr(	1.2	, i(	10224	)), --	Nightshade Cloak
-						dr(	1.2	, i(	10165	)), --	Templar Gauntlets
-						dr(	1.2	, i(	10113	)), --	Wanderer's Shoulders
-						dr(	1.1	, i(	10097	)), --	Councillor's Circlet
-						dr(	1.1	, i(	10100	)), --	Councillor's Shoulders
-						dr(	1.1	, i(	10212	)), --	Elegant Cloak
-						dr(	1.1	, i(	10278	)), --	Emerald Girdle
-						dr(	1.1	, i(	10172	)), --	Mystical Mantle
-						dr(	1.1	, i(	10124	)), --	Ornate Legguards
-						dr(	1	, i(	10099	)), --	Councillor's Gloves
-						dr(	1	, i(	10070	)), --	Righteous Armor
-						dr(	1	, i(	10169	)), --	Templar Legplates
-						dr(	1	, i(	10110	)), --	Wanderer's Gloves
+					n(14479, {	-- Twilight Lord Everun
+						["coords"] = {
+							{ 44.2, 40.2 },
+							{ 45.2, 42.6 },
+							{ 33.0, 30.0 },
+							{ 35.0, 30.8 },
+						},
+						["groups"] = {
+							i(10276),	-- Emerald Sabatons
+							i(10384),	-- Hyperion Armor
+							i(10121),	-- Ornate Gauntlets
+							i(10188),	-- Swashbuckler's Leggings
+							i(10170),	-- Templar Pauldrons
+							i(10106),	-- Wanderer's Boots
+							i(10095),	-- Councillor's Boots
+							i(10282),	-- Emerald Vambraces
+							i(10229),	-- Engraved Bracers
+							i(10177),	-- Mystical Leggings
+							i(10125),	-- Ornate Pauldrons
+							i(10168),	-- Templar Crown
+							i(10240),	-- Heavy Lamellar Chestpiece
+							i(10123),	-- Ornate Circlet
+							i(10233),	-- Engraved Girdle
+							i(10122),	-- Ornate Girdle
+							i(10119),	-- Ornate Greaves
+							i(10189),	-- Swashbuckler's Shoulderpads
+							i(10193),	-- Crusader's Armor
+							i(10175),	-- Mystical Headwrap
+							i(10167),	-- Templar Boots
+							i(10231),	-- Engraved Cape
+							i(10187),	-- Swashbuckler's Eyepatch
+							i(10111),	-- Wanderer's Hat
+							i(10057),	-- Duskwoven Tunic
+							i(10277),	-- Emerald Gauntlets
+							i(10232),	-- Engraved Gauntlets
+							i(10224),	-- Nightshade Cloak
+							i(10165),	-- Templar Gauntlets
+							i(10113),	-- Wanderer's Shoulders
+							i(10097),	-- Councillor's Circlet
+							i(10100),	-- Councillor's Shoulders
+							i(10212),	-- Elegant Cloak
+							i(10278),	-- Emerald Girdle
+							i(10172),	-- Mystical Mantle
+							i(10124),	-- Ornate Legguards
+							i(10099),	-- Councillor's Gloves
+							i(10070),	-- Righteous Armor
+							i(10169),	-- Templar Legplates
+							i(10110),	-- Wanderer's Gloves
+						},
 					}), 
-					n(14474, { 		-- Zora
-						dr(	19	, i(	10057	)), --	Duskwoven Tunic
-						dr(	17	, i(	10234	)), --	Engraved Boots
-						dr(	3	, i(	10122	)), --	Ornate Girdle
-						dr(	2	, i(	10095	)), --	Councillor's Boots
-						dr(	2	, i(	10193	)), --	Crusader's Armor
-						dr(	2	, i(	10278	)), --	Emerald Girdle
-						dr(	2	, i(	10240	)), --	Heavy Lamellar Chestpiece
-						dr(	2	, i(	10172	)), --	Mystical Mantle
-						dr(	2	, i(	10128	)), --	Revenant Chestplate
-						dr(	1.8	, i(	10167	)), --	Templar Boots
-						dr(	1.6	, i(	10229	)), --	Engraved Bracers
-						dr(	1.4	, i(	10231	)), --	Engraved Cape
-						dr(	1.4	, i(	10121	)), --	Ornate Gauntlets
-						dr(	1.4	, i(	10070	)), --	Righteous Armor
-						dr(	1.4	, i(	10187	)), --	Swashbuckler's Eyepatch
-						dr(	1.4	, i(	10189	)), --	Swashbuckler's Shoulderpads
-						dr(	1.4	, i(	10171	)), --	Templar Bracers
-						dr(	1.4	, i(	10107	)), --	Wanderer's Bracers
-						dr(	1.3	, i(	10099	)), --	Councillor's Gloves
-						dr(	1.3	, i(	10175	)), --	Mystical Headwrap
-						dr(	1.3	, i(	10109	)), --	Wanderer's Belt
-						dr(	1.1	, i(	10224	)), --	Nightshade Cloak
-						dr(	1	, i(	10103	)), --	Councillor's Sash
-						dr(	1	, i(	10199	)), --	Crusader's Leggings
-						dr(	1	, i(	10183	)), --	Swashbuckler's Boots
-					}), 
-	--				n(54533, { 		-- Prince Lakma - no loot			}), 
+					n(14474, {	-- Zora
+						["coords"] = {
+							{ 33.8, 53.4 },
+							{ 32.0, 55.8 },
+						},
+						["groups"] = {
+							i(10057),	-- Duskwoven Tunic
+							i(10234),	-- Engraved Boots
+							i(10122),	-- Ornate Girdle
+							i(10095),	-- Councillor's Boots
+							i(10193),	-- Crusader's Armor
+							i(10278),	-- Emerald Girdle
+							i(10240),	-- Heavy Lamellar Chestpiece
+							i(10172),	-- Mystical Mantle
+							i(10128),	-- Revenant Chestplate
+							i(10167),	-- Templar Boots
+							i(10229),	-- Engraved Bracers
+							i(10231),	-- Engraved Cape
+							i(10121),	-- Ornate Gauntlets
+							i(10070),	-- Righteous Armor
+							i(10187),	-- Swashbuckler's Eyepatch
+							i(10189),	-- Swashbuckler's Shoulderpads
+							i(10171),	-- Templar Bracers
+							i(10107),	-- Wanderer's Bracers
+							i(10099),	-- Councillor's Gloves
+							i(10175),	-- Mystical Headwrap
+							i(10109),	-- Wanderer's Belt
+							i(10224),	-- Nightshade Cloak
+							i(10103),	-- Councillor's Sash
+							i(10199),	-- Crusader's Leggings
+							i(10183),	-- Swashbuckler's Boots
+						},
+					}),
 				}),
 			},
 		}),
