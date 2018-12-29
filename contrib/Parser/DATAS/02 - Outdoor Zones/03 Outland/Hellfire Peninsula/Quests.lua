@@ -569,13 +569,6 @@ _.Zones =
 							qa( 10754),	-- Entry Into the Citadel
 							qa( 10143),	-- Expedition Point
 							qa( 10919),	-- Fei Fei's Treat
-							qa(10482,  {  -- Fel Orc Scavengers
-								i(29919),	-- Adamantine Kite Shield
-								i(29915),	-- Desolation Rod
-								i(29914),	-- Hellfire Skiver
-								i(29916),	-- Ironstar Repeater
-								i(29917),	-- Landslide Buckler
-							}),
 							qa( 10909),	-- Fel Spirits
 							qa( 10254),	-- Force Commander Danath
 							qh( 10390),	-- Forge Camp: Mageddon
