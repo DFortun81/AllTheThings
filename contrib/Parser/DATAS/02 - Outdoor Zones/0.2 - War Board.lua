@@ -17,8 +17,8 @@ _.Zones =
 			un(40, q(36499)),	-- Iron Horde Invasion (LEGACY - pre WoD)
 			un(40, q(4494)),	-- March of the Silithid
 			desc(q(29612), "Players who have completed Vashj'ir will receive this version of The Art of War."),	-- The Art of War
-			desc(q(29611),	"Players who have not completed Vashj'ir will receive this version of The Art of War."),	-- The Art of War
-			desc(q(34398),	"If you want to do the Blasted Lands questline before going to Draenor, use the portal in Cleft of Shadow and speak to Thrall rather than accepting this quest."),	-- The Dark Portal
+			desc(q(29611), "Players who have not completed Vashj'ir will receive this version of The Art of War."),	-- The Art of War
+			desc(q(34398), "If you want to do the Blasted Lands questline before going to Draenor, use the portal in Cleft of Shadow and speak to Thrall rather than accepting this quest."),	-- The Dark Portal
 			q(43926),	-- The Legion Returns
 			q(29157),	-- The Zandalari Menace
 			q(28493),	-- Warchief's Command: Ashenvale!
@@ -88,19 +88,31 @@ _.Zones =
 				},
 				["qg"] = 107574, -- Anduin Wrynn <King of Stormwind> 
 			}),
-			--[[  Might be Horde Version
 			q(49846, { -- Wars on Two Fronts [Cataclysm]
-				["itemID"] = 156477, -- Special Duty Assignments
-			}),
-			--]]
-			q(49864, { -- Wars on Two Fronts [Pandaria]
-				["groups"] = {
-					q(49866, { -- To Pandaria!
+				["g"] = {
+					qa(49865, {	-- Cataclysm First Responder (Alliance)
 						["isBreadcrumb"] = true,
 					}),
-					--q(49852), -- To Pandaria! [Might be Horde Version]
+					qh(49851, {	-- Cataclysm First Responder (Horde)
+						["isBreadcrumb"] = true,
+					}),
 				},
 				["itemID"] = 156477, -- Special Duty Assignments
+				["description"] = "The Special Duty Assignments will automatically pop up when you reach level 80.  You can use them to progress either to Cataclysm or Pandaria.",
+				-- The same item is used to start Cataclysm or Pandaria content (your choice).
+				-- Received 49846 on Alliance Warlock when I hit 80, so it isn't the Horde version item as a previous comment speculated. - slumber
+			}),
+			q(49864, { -- Wars on Two Fronts [Pandaria]
+				["groups"] = {
+					qa(49866, { -- To Pandaria! (Alliance)
+						["isBreadcrumb"] = true,
+					}),
+					qh(49852, { -- To Pandaria! (Horde)
+						["isBreadcrumb"] = true,
+					}),
+				},
+				["itemID"] = 156477, -- Special Duty Assignments
+				["description"] = "The Special Duty Assignments will automatically pop up when you reach level 80.  You can use them to progress either to Cataclysm or Pandaria.",
 			}),
 		},
 		["description"] = "These can be obtained from any city or town.  Once you start questing in a zone then you can no longer pick these up.",

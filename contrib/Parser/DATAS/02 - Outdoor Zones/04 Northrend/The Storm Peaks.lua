@@ -108,7 +108,7 @@ _.Zones =
 						{
 							["questID"] = 13421,	-- Remember Everfrost!
 							["qg"] = 32594,	-- Quest Giver: Calder <Blacksmithing Supplies>
-							["sourceQuest"] = 13420,	-- Source Quest: Everfrost
+							["sourceQuests"] = { 13420 },	-- Source Quest: Everfrost
 							["isDaily"]	= true,
 						},
 						{
@@ -263,12 +263,23 @@ _.Zones =
 					}),
 					
 
-					qa(12867, {	-- Baby Stealers
+					qa(12867, {	-- Baby Stealers (awarded "The Harpy Problem" achievement criteria)
 						["qg"] = 29732,	-- Fjorlin Frostbrow
 						["coord"] = { 29.8, 75.7 },
 						["sourceQuests"] = { 12865 },	-- Loyal Companions
 					}),
 
+					
+					q(13424, {	-- Back to the Pit
+						["g"] = {
+							i(44751),	-- Hyldnir Spoils
+						},
+						["qg"] = 29796,	-- Gretta the Arbiter
+						["coord"] = { 50.8, 65.6 },
+						["isDaily"] = true,
+						["sourceQuests"] = { 13061 },	-- Into the Pit
+					}),
+					
 					
 					q(12832, {	-- Bitter Departure
 						["g"] = {
@@ -296,6 +307,31 @@ _.Zones =
 					}),
 
 
+					q(12856, {	-- Cold Hearted
+						["qg"] = 29592,	-- Brijana
+						["coord"] = { 53.1, 65.7 },
+						["sourceQuests"] = { 12851 },	-- Going Bearback
+					}),
+					
+
+					q(13063, {	-- Deemed Worthy
+						["qg"] = 29592,	-- Brijana
+						["coord"] = { 53.1, 65.7 },
+						["sourceQuests"] = { 12856 },	-- Cold Hearted
+					}),
+
+					
+					q(13423, {	-- Defending Your Title
+						["g"] = {
+							i(44751),	-- Hyldnir Spoils
+						},
+						["qg"] = 29796,	-- Gretta the Arbiter
+						["coord"] = { 50.8, 65.6 },
+						["isDaily"] = true,
+						["sourceQuests"] = { 12971 },	-- Taking on All Challengers
+					}),
+					
+					
 					q(12824, {	-- Demolitionist Extraordinaire
 						["g"] = {
 							i(42790),	-- K3 Surgeon's Gloves
@@ -343,6 +379,20 @@ _.Zones =
 					}),
 					
 
+					q(12851, {	-- Going Bearback
+						["qg"] = 29592,	-- Brijana
+						["coord"] = { 53.1, 65.7 },
+						["sourceQuests"] = { 12972 },	-- You'll Need a Bear
+					}),
+					
+					
+					q(12997, {	-- Into the Pit
+						["qg"] = 29839,	-- Astrid Bjornrittar
+						["coord"] = { 49.7, 71.7 },
+						["sourceQuests"] = { 12996 },	-- The Warm-Up
+					}),
+					
+					
 					q(12969, {	-- Is That Your Goblin?
 						["qg"] = 29975,	-- Lok'lira the Crone
 						["coord"] = { 47.4, 69.0 },
@@ -371,6 +421,13 @@ _.Zones =
 					}),
 
 
+					q(13062, {	-- Lok'lira's Parting Gift
+						["qg"] = 29975,	-- Lok'lira the Crone
+						["coord"] = { 47.4, 69.0 },
+						["sourceQuests"] = { 13061 },	-- Prepare for Glory
+					}),
+					
+					
 					qa(12865, {	-- Loyal Companions
 						["g"] = {
 							i(42789),	-- Boots of the Howling Winds
@@ -384,6 +441,19 @@ _.Zones =
 					}),
 					
 
+					q(12900, {	-- Making a Harness
+						["g"] = {
+							i(42845),	-- Brunnhildar Runed Ring
+							i(42869),	-- Yeti Hide Mantle
+							i(42891),	-- Brunnhildar Snowkickers
+							i(42880),	-- Astrid's Riding Gloves
+						},
+						["qg"] = 29839,	-- Astrid Bjornrittar
+						["coord"] = { 49.7, 71.8 },
+						["sourceQuests"] = { 13063 },	-- Deemed Worthy
+					}),
+					
+					
 					q(12905, {	-- Mildred the Cruel
 						["qg"] = 29481,	-- Lok'lira the Crone
 						["coord"] = { 42.8, 68.8 },
@@ -477,6 +547,13 @@ _.Zones =
 						["sourceQuests"] = { 12855 },	-- Sniffing Out the Perpetrator
 					}),
 
+
+					q(13061, {	-- Prepare for Glory
+						["qg"] = 29839,	-- Astrid Bjornrittar
+						["coord"] = { 49.7, 71.7 },
+						["sourceQuests"] = { 12997 },	-- Into the Pit
+					}),
+
 					
 					q(12827, {	-- Reclaimed Rations
 						["qg"] = 29428,	-- Ricket
@@ -542,6 +619,34 @@ _.Zones =
 						["sourceQuests"] = { 12969 },	-- Is That Your Goblin?
 					}),
 
+
+					q(12983, {	-- The Last of Her Kind
+						["qg"] = 29839,	-- Astrid Bjornrittar
+						["coord"] = { 49.7, 71.7 },
+						["sourceQuests"] = { 12900 },	-- Making a Harness
+					}),
+					
+					
+					q(12989, {	-- The Slithering Darkness
+						["g"] = {
+							i(42846),	-- Jormungar Galoshes
+							i(42870),	-- Hibernal Chestguard
+							i(42895),	-- Scaled Jormungar Protector
+							i(42881),	-- Bjornrittar's Chilled Legguards
+							i(42861),	-- Jormungar Fang
+						},
+						["qg"] = 29839,	-- Astrid Bjornrittar
+						["coord"] = { 49.7, 71.7 },
+						["sourceQuests"] = { 12900 },	-- Making a Harness
+					}),
+
+
+					q(12996, {	-- The Warm-Up
+						["qg"] = 29839,	-- Astrid Bjornrittar
+						["coord"] = { 49.7, 71.7 },
+						["sourceQuests"] = { 12983 },	-- The Last of Her Kind
+					}),
+
 					
 					q(12843, {	-- They Took Our Men!
 						["g"] = {
@@ -557,6 +662,19 @@ _.Zones =
 					}),
 
 
+					o(192072, {	-- Harpoon Crate
+						q(12953, {	-- Valkyrion Must Burn
+							["g"] = {
+								i(42850),	-- Flamebringer's Crown
+								i(42884),	-- Steel-Tipped Snowboots
+								i(42896),	-- Valkyrion Tracker's Chestguard
+								i(42874),	-- Wooly Stompers
+							},
+							["coord"] = { 24.0, 61.7 },
+						}),
+					}),
+					
+					
 					qa(12862, {	-- When All Else Fails
 						["qg"] = 29428,	-- Ricket
 						["coord"] = { 40.9, 85.3 },
@@ -564,6 +682,13 @@ _.Zones =
 					}),
 
 
+					q(12972, {	-- You'll Need a Bear (awarded "Bearly Ready" achievement criteria)
+						["qg"] = 29975,	-- Lok'lira the Crone
+						["coord"] = { 47.4, 69.0 },
+						["sourceQuests"] = { 12971 },	-- Taking on All Challengers
+					}),
+					
+					
 					q(12968, {	-- Yulda's Folly
 						["qg"] = 29997,	-- Iva the Vengeful
 						["coord"] = { 48.3, 72.1 },
@@ -596,7 +721,6 @@ _.Zones =
 					qa(12875),	-- An Experienced Guide
 					qh(12882),	-- Ancient Relics
 					q(12979),	-- Armor of Darkness
-					q(13424),	-- Back to the Pit
 					q(12967),	-- Battling the Elements
 					qh(11446),	-- Brewfest!
 					qa(13448),	-- Candy Bucket
@@ -606,12 +730,9 @@ _.Zones =
 					qh(13548),	-- Candy Bucket
 					qh(12920),	-- Catching up with Brann
 					qh(13055),	-- Cave Medicine
-					q(12856),	-- Cold Hearted
 					qa(11356),	-- Costumed Orphan Matron
 					qh(12927),	-- Data Mining
 					qa(12860),	-- Data Mining
-					q(13063),	-- Deemed Worthy
-					q(13423),	-- Defending Your Title
 					qa( 11580),	-- Desecrate this Fire!
 					qh( 11745),	-- Desecrate this Fire!
 					qh( 11581),	-- Desecrate this Fire!
@@ -631,7 +752,6 @@ _.Zones =
 					qh( 13285),	-- Forging the Keystone
 					qa( 12879),	-- Fury of the Frostborn King
 					qh( 13273),	-- Going After the Core
-					q(12851),	-- Going Bearback
 					q(13028),	-- Graymane the Elder
 					q(12991),	-- Hit Them Where it Hurts
 					q(13559),	-- Hodir's Tribute
@@ -639,12 +759,18 @@ _.Zones =
 					qa( 13490),	-- Honor the Flame
 					q(12890),	-- If Size Mattered...
 					q(12975),	-- In Memoriam
-					q(12997),	-- Into the Pit
 					q(13011),	-- Jormuttar is Soo Fat...
-					q(13062),	-- Lok'lira's Parting Gift
 					q(13035),	-- Loken's Lackeys
 					q(12853),	-- Luxurious Getaway!
-					q(13422),	-- Maintaining Discipline
+					q(13422, {	-- Maintaining Discipline
+						["g"] = {
+							i(44751),	-- Hyldnir Spoils
+						},
+						["qg"] = 29796,	-- Gretta the Arbiter
+						["coord"] = { 50.8, 65.6 },
+						["isDaily"] = true,
+						["sourceQuests"] = {  },
+					}),
 					qh(11357),	-- Masked Orphan Matron
 					qh(13037),	-- Memories of Stormhoof
 					q(12915),	-- Mending Fences
@@ -654,7 +780,6 @@ _.Zones =
 					qa(14022),	-- Pilgrim's Bounty
 					qh(14036),	-- Pilgrim's Bounty
 					qa(11882),	-- Playing with Fire
-					q(13061),	-- Prepare for Glory
 					qa(12869),	-- Pushed Too Far
 					q(13001),	-- Raising Hodir's Spear
 					q(12930),	-- Rare Earth
@@ -669,7 +794,15 @@ _.Zones =
 					qh(13483),	-- Spring Gatherers
 					q(13020),	-- Stonebeard the Elder
 					q(29863),	-- Stormherald Eljrrin
-					q(13425),	-- The Aberrations Must Die
+					q(13425, {	-- The Aberrations Must Die
+						["g"] = {
+							i(44751),	-- Hyldnir Spoils
+						},
+						["qg"] = 29796,	-- Gretta the Arbiter
+						["coord"] = { 50.8, 65.6 },
+						["isDaily"] = true,
+						["sourceQuests"] = {  },
+					}),
 					q(12980),	-- The Armor's Secrets
 					qa(12973),	-- The Brothers Bronzebeard
 					q(13417),	-- The Brothers Bronzebeard
@@ -681,7 +814,6 @@ _.Zones =
 					q(12998),	-- The Heart of the Storm
 					qh( 13049),	-- The Hero's Arms
 					qa( 12878),	-- The Hidden Relic
-					q(12983),	-- The Last of Her Kind
 					qa( 13415),	-- The Library Console
 					qh( 13416),	-- The Library Console
 					qa( 12877),	-- The Lonesome Watcher
@@ -695,7 +827,6 @@ _.Zones =
 					q(13843),	-- The Scrapbot Construction Kit
 					qh( 11971),	-- The Spinner of Summer Tales
 					q(13057),	-- The Terrace of the Makers
-					q(12996),	-- The Warm-Up
 					qh( 13034),	-- The Witness and the Hero
 					qa( 12876),	-- Unwelcome Guests
 					q(13050),	-- Veranus
@@ -703,7 +834,6 @@ _.Zones =
 					qh( 13048),	-- Where Time Went Wrong
 					qh( 13426),	-- Xarantaur, the Witness
 					q(12966),	-- You Can't Miss Him
-					q(12972),	-- You'll Need a Bear
 --]]					
 					qh(13058, {	-- Changing the Wind's Course
 						i(43186),
@@ -736,11 +866,6 @@ _.Zones =
 						i(42806),
 						i(42818),
 						i(42835),
-					}),
-					q(12900, {	-- Making a Harness
-						i(42869),
-						i(42891),
-						i(42880),
 					}),
 					qa(12872, {	-- Norgannon's Shell
 						i(42794),
@@ -792,13 +917,6 @@ _.Zones =
 						i(43212),
 						i(43213),
 					}),
-					q(12989, {	-- The Slithering Darkness
-						i(42846),
-						i(42870),
-						i(42895),
-						i(42881),
-						i(42861),
-					}),
 					qh(13056, {	-- There's Always Time for Revenge
 						i(42789),
 						i(42802),
@@ -811,15 +929,9 @@ _.Zones =
 						i(42821),
 						i(42836),
 					}),
-					q(12953, {	-- Valkyrion Must Burn
-						i(42850),
-						i(42884),
-						i(42896),
-						i(42874),
-					}),
 					i(44751, {	-- Hyldnir Spoils
 						["groups"] = {
-							i(43962),
+							i(43962),	-- Reins of the White Polar Bear
 						},	
 						["description"] = "Reward from one of four random dailies.",	
 					}),
