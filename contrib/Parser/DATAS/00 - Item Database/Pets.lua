@@ -119,6 +119,7 @@ pet(152976, 2087);	-- Cinderweb Recluse
 pet(93025, 1142);	-- Clock'em
 pet(64372, 277); 	-- Clockwork Gnome
 pet(34425, 191); 	-- Clockwork Rocket Bot
+pet(166718, 2568);	-- Cobalt Raven Hatchling (Cobalt Raven)
 pet(39898, 197); 	-- Cobra Hatchling
 pet(163823, 2457);	-- Coldlight Surfrunner
 pet(37298, 180);	-- Competitor's Souvenir (Essence of Competition)
