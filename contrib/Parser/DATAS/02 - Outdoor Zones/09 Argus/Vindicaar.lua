@@ -1932,7 +1932,14 @@ _.Zones =
 				}),
 			},
 			["icon"] = "Interface\\Icons\\inv_lightforgedmechsuit",
-			["maps"] = { 831, 832, 883, 884, 886, 887 }, -- All 3 Vindicaar maps.  Do NOT use 831 for anything, it returns Exodar
+			["maps"] = {
+				831,	-- Upper Deck [The Vindicaar: Krokuun]
+				832,	-- Lower Deck [The Vindicaar: Krokuun]
+				883,	-- Upper Deck [The Vindicaar: Mac'Aree]
+				884,	-- Lower Deck [The Vindicaar: Mac'Aree]
+				886,	-- Upper Deck [The Vindicaar: Antoran Wastes]
+				887,	-- Lower Deck [The Vindicaar: Antoran Wastes]
+			},
 			["lvl"] = 110,
 			["isRaid"] = true,
 		}),
