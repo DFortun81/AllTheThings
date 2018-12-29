@@ -121,15 +121,13 @@ _.Zones =
 							11729,	-- Hive'Zora Hive Sister
 							11726,	-- Hive'Zora Tunneler
 						},
-						["groups"] = {
-							{
-								["questID"] = 8308,	-- Brann Bronzebeard's Lost Letter
-								["description"] = "This quest is only available during or after 'Dearest Natalia', but before picking up 'Breaking the Code' and 'Glyph Chasing.'",
-								["sourceQuest"] = 8304,	-- Dearest Natalia
-								["isBreadcrumb"] = true,
-								["groups"] = {
-									i(20723),	-- Brann's Trusty Pick
-								},
+						["questID"] = 8308,	-- Brann Bronzebeard's Lost Letter
+						["description"] = "This quest is only available during or after 'Dearest Natalia', but before picking up 'Breaking the Code' and 'Glyph Chasing.'",
+						["sourceQuest"] = 8304,	-- Dearest Natalia
+						--["isBreadcrumb"] = true,	--Note!! It's technically not a breadcrumb.  Just a quest with odd restrictions so we still want to display it, especially with a reward.
+						["g"] = {
+							{	-- Brann's Trusty Pick
+								["itemID"] = 20723,	-- Brann's Trusty Pick
 							},
 						},
 					},
