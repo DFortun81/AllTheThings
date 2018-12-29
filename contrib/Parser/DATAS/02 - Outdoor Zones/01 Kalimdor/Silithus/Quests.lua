@@ -106,11 +106,7 @@ _.Zones =
 					}),
 					{	-- Brann Bronzebeard's Lost Letter
 						["itemID"] = 20461,
-						["questID"] = 8308,	-- Brann Bronzebeard's Lost Letter
-						["description"] = "This quest is only available during or after 'Dearest Natalia', but before picking up 'Breaking the Code' and 'Glyph Chasing.'",
-						["sourceQuest"] = 8304,	-- Dearest Natalia
-						["isBreadcrumb"] = true,
-						["qgs"] = {
+						["crs"] = {
 							13136,	-- Hive'Ashi Drone
 							11732,	-- Hive'Regal Spitfire
 							11730,	-- Hive'Regal Ambusher
@@ -126,7 +122,15 @@ _.Zones =
 							11726,	-- Hive'Zora Tunneler
 						},
 						["groups"] = {
-							i(20723),	-- Brann's Trusty Pick
+							{
+								["questID"] = 8308,	-- Brann Bronzebeard's Lost Letter
+								["description"] = "This quest is only available during or after 'Dearest Natalia', but before picking up 'Breaking the Code' and 'Glyph Chasing.'",
+								["sourceQuest"] = 8304,	-- Dearest Natalia
+								["isBreadcrumb"] = true,
+								["groups"] = {
+									i(20723),	-- Brann's Trusty Pick
+								},
+							},
 						},
 					},
 					{	-- Blessed Blade of the Windseeker
