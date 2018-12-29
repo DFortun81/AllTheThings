@@ -1012,6 +1012,9 @@ _.Zones =
 							i(153257),	-- Isolon Anchorite's Gavel
 						},
 						["questID"] = 48717,
+						["coords"] = {
+							{ 60.89, 29.81, 882 },
+						},
 					}),
 					n(125497, {	-- Overseer Y'Sorna
 						["groups"] = {
