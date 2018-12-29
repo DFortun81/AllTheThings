@@ -2,15 +2,7 @@
 --   A C H I E V E M E N T S    M O D U L E    --
 --------------------------------------------------
 
---[[
-8.0 Pre-Patch alignment complete
-To do: 
-1) Review crit items to see if achievements / items / etc can replace them to provide more information when looking at them in the ATT lists
-2) Add [Reward] tag
-3) Source to local files if applicable
-]]--
-
-_.Achievements = 
+_.Achievements =
 {
 	n(-9961, { -- Reputation
 		["groups"] = {
@@ -66,7 +58,7 @@ _.Achievements =
 									faction(1847), 	-- Hand of the Prophet
 									faction(1710), 	-- Sha'tari Defense
 									un(2, faction(1682)), 	-- Wyrnn's Vanguard
-								}), 
+								}),
 								tier(8, { 	-- Battle For Azeroth
 									faction(2159), 	-- 7th Legion
 									faction(2161), 	-- Order of Embers
@@ -85,8 +77,8 @@ _.Achievements =
 									faction(68), 	-- Undercity
 								}),
 								n(-304, { 	-- Battlegrounds
-									faction(729), 	-- Frostwolf Clan	
-									faction(510), 	-- The Defilers	
+									faction(729), 	-- Frostwolf Clan
+									faction(510), 	-- The Defilers
 									faction(889), 	-- Warsong Outriders
 								}),
 								tier(1, { 	-- Classic
@@ -94,9 +86,9 @@ _.Achievements =
 									faction(93), 	-- Magram Kolkar
 								}),
 								tier(2, { 	-- The Burning Crusade
-									faction(941), 	-- The Mag'har	
-									faction(947), 	-- Thrallmar	
-									faction(922), 	-- Tranquillen	
+									faction(941), 	-- The Mag'har
+									faction(947), 	-- Thrallmar
+									faction(922), 	-- Tranquillen
 								}),
 								tier(3, { 	-- Wrath of the Lich King
 									faction(1052), 	-- Horde Expedition
@@ -120,7 +112,7 @@ _.Achievements =
 									faction(1848), 	-- Vol'jin's Headhunters
 									un(2, faction(1681)),	-- Vol'jin's Spear
 								}),
-								tier(8, { 	-- Battle For Azeroth 
+								tier(8, { 	-- Battle For Azeroth
 									faction(2156),	-- Talanji's  Expedition
 									faction(2157), 	-- The Honorbound
 									faction(2158), 	-- Voldunai
@@ -249,7 +241,7 @@ _.Achievements =
 					a(ach(12243)),	-- Allied Races: Lightforged Draenei
 					h(ach(12518)),	-- Allied Races: Mag'har Orc
 					h(ach(12244)),	-- Allied Races: Nightborne
-					a(ach(12242)),	-- Allied Races: Void Elf				
+					a(ach(12242)),	-- Allied Races: Void Elf
 					a(ach(948, {	-- Ambassador of the Alliance
 						title(98),		-- Ambassador
 						faction(69),	-- Darnassus
@@ -298,18 +290,15 @@ _.Achievements =
 							i(161013),	-- Dark Iron Leggings
 						},
 						["races"] = {34},
-					}),						
-					ach(12414, {	-- Heritage of the Lightforged
-						["groups"] = {
-							i(156699),	-- Lightforged Gorget
-							i(156700),	-- Lightforged Pauldrons
-							i(156701),	-- Lightforged Chestguard
-							i(156702),	-- Lightforged Gloves
-							i(156703),	-- Lightforged Girdle
-							i(156704),	-- Lightforged Legplates
-							i(156705),	-- Lightforged Hoofguards
-							i(156706),	-- Lightforged Bracers
+					}),
+					{	-- Heritage of the Lightforged
+						["achievementID"] = 12414,	-- Heritage of the Lightforged
+						["races"] = {
+							30,	-- Lightforged Draenei
 						},
+						--Note!! Removed the items you get since they are now linked to the quest and grants +2 rather than +3
+					},
+					ach(12414, {	-- Heritage of the Lightforged
 						["races"] = {30},
 					}),
 					ach(13077, {	-- Heritage of the Mag'har
@@ -340,7 +329,7 @@ _.Achievements =
 							i(161066),	-- Frostwolf Clan Bracers
 						},
 						["races"] = {36},
-					}),		
+					}),
 					ach(12413, {	-- Heritage of the Nightborne
 						["groups"] = {
 							i(156675),	-- Shal'dorei Crown
