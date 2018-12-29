@@ -4165,8 +4165,8 @@ _.ExpansionFeatures =
 					n(-107, { 	 -- Fishing Shack
 						{	-- Hightfish Cap
 							["itemID"] = 118380,	-- Hightfish Cap
-							["description"] = "Shift+Click ATT Header to refresh its collection status.",
 							["collectible"] = false,
+							["u"] = 15,
 							["crs"] = {
 								81171,	-- Frostdeep Cavedweller
 								85715,	-- Lunarfall Cavedweller
@@ -4176,6 +4176,7 @@ _.ExpansionFeatures =
 							["itemID"] = 118393,	-- Tentacled Hat
 							["description"] = "Shift+Click ATT Header to refresh its collection status.",
 							["collectible"] = false,
+							["u"] = 15,
 							["crs"] = {
 								81171,	-- Frostdeep Cavedweller
 								85715,	-- Lunarfall Cavedweller
