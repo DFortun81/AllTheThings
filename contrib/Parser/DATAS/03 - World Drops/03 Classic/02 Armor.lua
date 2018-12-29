@@ -794,7 +794,7 @@ _.WorldDrops =
 					i(11992),	-- Vermilion Band
 					i(11982),	-- Viridian Band
 					i(12053),	-- Volcanic Rock Ring
-					un(7, i(1996)),	-- Voodoo Band
+					i(1996),	-- Voodoo Band
 					i(5011),	-- Welken Ring
 					i(11967),	-- Zircon Band
 				}),

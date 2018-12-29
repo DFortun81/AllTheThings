@@ -1356,6 +1356,11 @@ _.Zones =
 							676,	-- Venture Co. Surveyor
 						},
 					}),
+					i(1996, {	-- Voodoo Band
+						["crs"] = {
+							660,	-- Bloodscalp Witch Doctor
+						},
+					}),
 				}),
 				n(-2,   {	-- Vendors
 					nh(734, {	-- Corporal Bluth <Camp Trader>
