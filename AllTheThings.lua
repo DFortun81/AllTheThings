@@ -1301,6 +1301,19 @@ local function MergeObject(g, t, index)
 	end
 	return t;
 end
+local function ReapplyExpand(g, g2)
+	for i,o in ipairs(g2) do
+		local key = o.key;
+		local id = o[key];
+		for j,p in ipairs(g) do
+			if p[key] == id then
+				o.expanded = p.expanded;
+				if o.g and p.g then ReapplyExpand(o.g, p.g); end
+				break;
+			end
+		end
+	end
+end
 local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 	for i,group in ipairs(groups) do
 		if app.GroupRequirementsFilter(group) and app.GroupFilter(group) then
@@ -1401,22 +1414,31 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				group = regroup;
 			end
 			
-			if group and #group > 0 and not (group[1].achievementID and group[1].parent.difficultyID) then
-				-- Push up one level.
-				local subgroup = {};
-				table.sort(group, function(a, b)
-					return not (a.npcID and a.npcID == -1) and b.npcID and b.npcID == -1;
-				end);
-				for i,j in ipairs(group) do
-					if j.g then
-						for k,l in ipairs(j.g) do
-							tinsert(subgroup, l);
+			if group and #group > 0 then
+				if GetDataMember("ShowDescriptions") and paramA ~= "encounterID" then
+					for i,j in ipairs(group) do
+						if j.description and j[paramA] and j[paramA] == paramB then
+							tinsert(info, 1, { left = "|cff66ccff" .. j.description .. "|r", wrap = true });
 						end
-					else
-						tinsert(subgroup, j);
 					end
 				end
-				group = subgroup;
+				if not (group[1].achievementID and group[1].parent.difficultyID) then
+					-- Push up one level.
+					local subgroup = {};
+					table.sort(group, function(a, b)
+						return not (a.npcID and a.npcID == -1) and b.npcID and b.npcID == -1;
+					end);
+					for i,j in ipairs(group) do
+						if j.g then
+							for k,l in ipairs(j.g) do
+								tinsert(subgroup, l);
+							end
+						else
+							tinsert(subgroup, j);
+						end
+					end
+					group = subgroup;
+				end
 			end
 		else
 			-- Determine if this is a cache for an item
@@ -1640,6 +1662,20 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					end
 				end
 			end
+			
+			if group.description and GetDataMember("ShowDescriptions") and not group.encounterID then
+				tinsert(info, 1, { left = "|cff66ccff" .. group.description .. "|r", wrap = true });
+			end
+			
+			if group.g and #group.g > 0 then
+				if GetDataMember("ShowDescriptions") and not group.encounterID then
+					for i,j in ipairs(group.g) do
+						if j.description and j[paramA] and j[paramA] == paramB then
+							tinsert(info, 1, { left = "|cff66ccff" .. j.description .. "|r", wrap = true });
+						end
+					end
+				end
+			end
 		end
 		
 		-- Create a list of sources
@@ -1711,18 +1747,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			app.UpdateGroups(group, group.g);
 		end
 		
-		if group.description and GetDataMember("ShowDescriptions") and not group.encounterID then
-			tinsert(info, 1, { left = "|cff66ccff" .. group.description .. "|r", wrap = true });
-		end
-		
 		if group.g and #group.g > 0 then
-			if GetDataMember("ShowDescriptions") and not group.encounterID then
-				for i,j in ipairs(group.g) do
-					if j.description and j[paramA] and j[paramA] == paramB then
-						tinsert(info, 1, { left = "|cff66ccff" .. j.description .. "|r", wrap = true });
-					end
-				end
-			end
 			if GetDataMember("ShowContents") then
 				local entries = {};
 				BuildContainsInfo(group.g, entries, paramA, paramB, "  ", 1);
@@ -8537,72 +8562,26 @@ end):Show();
 							table.insert(results.g, o);
 						end
 						
-						if self.data then
-							ExpandGroupsRecursively(self.data, false);
+						if self.data and self.data.key == results.key and self.data[self.data.key] == results[self.data.key] then
+							ReapplyExpand(self.data.g, results.g);
+						else
+							ExpandGroupsRecursively(results, true);
 						end
 						
 						-- if enabled minimize rows based on difficulty 
 						if GetDataMember("AutoMinimize",true) then
-							ExpandGroupsRecursively(results, false);
-							
-							local found = false;
-							local diffs = {};
 							local difficultyID = select(3, GetInstanceInfo());
 							if difficultyID and difficultyID > 0 and results.g then
 								for _, row in ipairs(results.g) do
 									if row.difficultyID or row.difficulties then
-										tinsert(diffs, row);
 										if row.difficultyID == difficultyID or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
-											ExpandGroupsRecursively(row, true);
-											found = true;
+											if not row.expanded then ExpandGroupsRecursively(row, true); end
+										elseif row.expanded then 
+											ExpandGroupsRecursively(row, false);
 										end
-									else
-										ExpandGroupsRecursively(row, true);
 									end
 								end
 							end
-							if #diffs > 0 then
-								if not found then
-									difficultyID = GetDungeonDifficultyID();
-									for _, row in ipairs(diffs) do
-										if row.difficultyID == difficultyID or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
-											ExpandGroupsRecursively(row, true);
-											found = true;
-										end
-									end
-								end
-								if not found then
-									difficultyID = GetRaidDifficultyID();
-									for _, row in ipairs(diffs) do
-										if row.difficultyID == difficultyID or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
-											ExpandGroupsRecursively(row, true);
-											found = true;
-										end
-									end
-								end
-								if not found then
-									difficultyID = GetLegacyRaidDifficultyID();
-									for _, row in ipairs(diffs) do
-										if row.difficultyID == difficultyID or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
-											ExpandGroupsRecursively(row, true);
-											found = true;
-										end
-									end
-									
-									-- Expand them all!
-									if not found then
-										ExpandGroupsRecursively(results, true);
-										if results.instanceID and app.GetDataMember("WarnOnClearedDifficulty", false) then
-											AllTheThings.yell("YOU HAVE COLLECTED EVERYTHING FROM THIS DIFFICULTY BASED ON YOUR CURRENT FILTERS.");
-											AllTheThings.print("YOU HAVE COLLECTED EVERYTHING FROM THIS DIFFICULTY BASED ON YOUR CURRENT FILTERS.");
-										end
-									end
-								end
-							else
-								ExpandGroupsRecursively(results, true);
-							end
-						else
-							ExpandGroupsRecursively(results, true);
 						end
 					end
 					
