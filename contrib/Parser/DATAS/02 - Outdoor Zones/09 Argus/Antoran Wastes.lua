@@ -548,7 +548,40 @@ _.Zones =
 							},
 						},
 					},
---[[
+					{	-- Arc Circuit
+						["questID"] = 49007,	-- Commander on Deck!
+						["itemID"] = 152940,	-- Arc Circuit
+						["crs"] = {
+							127597,	-- Eredar War-Mind
+							126233,	-- Eredar War-Mind
+							127596,	-- Felsword Myrmidon
+							126168,	-- Felsword Myrmidon
+						},
+						["description"] = "You need to collect the Smashed Portal Generator before this will drop.",
+					},
+					{	-- Conductive Sheath
+						["questID"] = 49007,	-- Commander on Deck!
+						["itemID"] = 152941,	-- Conductive Sheath
+						["crs"] = {
+							127597,	-- Eredar War-Mind
+							126233,	-- Eredar War-Mind
+							127596,	-- Felsword Myrmidon
+							126168,	-- Felsword Myrmidon
+						},
+						["description"] = "You need to collect the Smashed Portal Generator before this will drop.",
+					},
+					{	-- Power Cell
+						["questID"] = 49007,	-- Commander on Deck!
+						["itemID"] = 152891,	-- Power Cell
+						["crs"] = {
+							127597,	-- Eredar War-Mind
+							126233,	-- Eredar War-Mind
+							127596,	-- Felsword Myrmidon
+							126168,	-- Felsword Myrmidon
+						},
+						["description"] = "You need to collect the Smashed Portal Generator before this will drop.",
+					},
+					--[[
 					q(48041),	-- A Larger Cut
 					q(48035),	-- Angling For a Better Strike
 					q(48642),	-- Argussian Reach
@@ -609,6 +642,16 @@ _.Zones =
 					q(48461),	-- Where They Least Expect It
 					q(49200),	-- Yet More Intact Demon Eyes
 --]]					
+					{	-- Smashed Portal Generator
+						["questID"] = 49007,	-- Commander on Deck!
+						["itemID"] = 152890,	-- Smashed Portal Generator
+						["collectible"] = true,
+						["crs"] = {
+							127598,	-- Immortal Netherwalker
+							126244,	-- Immortal Netherwalker
+						},
+						["description"] = "You collect this piece, before you can gather the Arc Circuit, Conductive Sheath and Power Cell.\n\nThis item opens the portal to Squadron Commander Vishax",
+					},
 				}),
 				n(-16, { 	-- Rares
 					n(127090, { -- Admiral Rel'var
