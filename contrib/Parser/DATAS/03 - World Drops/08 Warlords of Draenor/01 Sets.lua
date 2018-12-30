@@ -22,6 +22,22 @@ _.WorldDrops =
 				i(106404),	-- Coldsnout Jerkin
 				i(106405),	-- Coldsnout Shoulders
 				i(106406),	-- Coldsnout Waistband
+				un(7, i(55631)),	-- Frayfeather Belt
+				un(7, i(55568)),	-- Frayfeather Bracers
+				un(7, i(55595)),	-- Frayfeather Gauntlets
+				un(7, i(55586)),	-- Frayfeather Greaves
+				un(7, i(55604)),	-- Frayfeather Helm
+				un(7, i(55613)),	-- Frayfeather Legguards
+				un(7, i(55622)),	-- Frayfeather Spaulders
+				un(7, i(55577)),	-- Frayfeather Vest
+				un(7, i(55775)),	-- Galardell Cord
+				un(7, i(55748)),	-- Galardell Cowl
+				un(7, i(55739)),	-- Galardell Handwraps
+				un(7, i(55757)),	-- Galardell Leggings
+				un(7, i(55721)),	-- Galardell Robe
+				un(7, i(55730)),	-- Galardell Sandals
+				un(7, i(55766)),	-- Galardell Shoulderpads
+				un(7, i(55712)),	-- Galardell Wristwraps
 				i(106407),	-- Lunarglow Cord
 				i(106408),	-- Lunarglow Cowl
 				i(106409),	-- Lunarglow Handwraps
@@ -30,6 +46,22 @@ _.WorldDrops =
 				i(106412),	-- Lunarglow Sandals
 				i(106413),	-- Lunarglow Shoulderpads
 				i(106414),	-- Lunarglow Wristwraps
+				un(7, i(55640)),	-- Nighthaven Bindings
+				un(7, i(55658)),	-- Nighthaven Boots
+				un(7, i(55685)),	-- Nighthaven Britches
+				un(7, i(55667)),	-- Nighthaven Gloves
+				un(7, i(55676)),	-- Nighthaven Hood
+				un(7, i(55649)),	-- Nighthaven Jerkin
+				un(7, i(55694)),	-- Nighthaven Shoulders
+				un(7, i(55703)),	-- Nighthaven Waistband
+				un(7, i(55505)),	-- Steelgrill Breastplate
+				un(7, i(55523)),	-- Steelgrill Gauntlets
+				un(7, i(55559)),	-- Steelgrill Girdle
+				un(7, i(55532)),	-- Steelgrill Helm
+				un(7, i(55541)),	-- Steelgrill Legplates
+				un(7, i(55550)),	-- Steelgrill Pauldrons
+				un(7, i(55514)),	-- Steelgrill Sabatons
+				un(7, i(55496)),	-- Steelgrill Vambraces
 				i(106415),	-- Frostlink Belt
 				i(106416),	-- Frostlink Bracers
 				i(106417),	-- Frostlink Gauntlets

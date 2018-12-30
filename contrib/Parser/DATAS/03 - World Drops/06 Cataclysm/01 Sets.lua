@@ -110,22 +110,6 @@ _.WorldDrops =
 				i(55546),	-- Fargodeep Pauldrons
 				i(55510),	-- Fargodeep Sabatons
 				i(55492),	-- Fargodeep Vambraces
-				i(55631),	-- Frayfeather Belt
-				i(55568),	-- Frayfeather Bracers
-				i(55595),	-- Frayfeather Gauntlets
-				i(55586),	-- Frayfeather Greaves
-				i(55604),	-- Frayfeather Helm
-				i(55613),	-- Frayfeather Legguards
-				i(55622),	-- Frayfeather Spaulders
-				i(55577),	-- Frayfeather Vest
-				i(55775),	-- Galardell Cord
-				i(55748),	-- Galardell Cowl
-				i(55739),	-- Galardell Handwraps
-				i(55757),	-- Galardell Leggings
-				i(55721),	-- Galardell Robe
-				i(55730),	-- Galardell Sandals
-				i(55766),	-- Galardell Shoulderpads
-				i(55712),	-- Galardell Wristwraps
 				i(55638),	-- Haldarr Bindings
 				i(55656),	-- Haldarr Boots
 				i(55683),	-- Haldarr Britches
@@ -190,14 +174,6 @@ _.WorldDrops =
 				i(55605),	-- Nazferiti Legguards
 				i(55614),	-- Nazferiti Spaulders
 				i(55569),	-- Nazferiti Vest
-				i(55640),	-- Nighthaven Bindings
-				i(55658),	-- Nighthaven Boots
-				i(55685),	-- Nighthaven Britches
-				i(55667),	-- Nighthaven Gloves
-				i(55676),	-- Nighthaven Hood
-				i(55649),	-- Nighthaven Jerkin
-				i(55694),	-- Nighthaven Shoulders
-				i(55703),	-- Nighthaven Waistband
 				i(55502),	-- Ravencrest Breastplate
 				i(55520),	-- Ravencrest Gauntlets
 				i(55556),	-- Ravencrest Girdle
@@ -246,14 +222,6 @@ _.WorldDrops =
 				i(55641),	-- Stagalbog Jerkin
 				i(55686),	-- Stagalbog Shoulders
 				i(55695),	-- Stagalbog Waistband
-				i(55505),	-- Steelgrill Breastplate
-				i(55523),	-- Steelgrill Gauntlets
-				i(55559),	-- Steelgrill Girdle
-				i(55532),	-- Steelgrill Helm
-				i(55541),	-- Steelgrill Legplates
-				i(55550),	-- Steelgrill Pauldrons
-				i(55514),	-- Steelgrill Sabatons
-				i(55496),	-- Steelgrill Vambraces
 				i(55503),	-- Stonewrought Breastplate
 				i(55521),	-- Stonewrought Gauntlets
 				i(55557),	-- Stonewrought Girdle

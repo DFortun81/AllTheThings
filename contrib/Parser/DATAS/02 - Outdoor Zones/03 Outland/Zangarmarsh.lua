@@ -28,6 +28,21 @@ _.Zones =
 						["qg"] = 66551,	-- Ras'an
 					})),
 				}),
+				n(-38, {	-- Profession
+					prof(356, { -- Fishing
+						o(182952, {	-- Steam Pump Flotsam
+							["groups"] = {
+								i(27481, {		-- Heavy Supply Crate
+									i(23783),	-- Handful of Fel Iron Bolts
+									i(23424),	-- Fel Iron Ore
+									i(23781),	-- Elemental Blasting Powder
+									i(23768),	-- White Smoke Flare
+									i(34109),	-- Weather-Beaten Journal
+								}),
+							},
+						}),
+					}),
+				}),
 				n(-17, {	-- Quests
 					ach(1190, {	-- Mysteries of the Marsh
 						crit(1, {	-- Draenei Diplomacy (A) / Swamprat Post (H)

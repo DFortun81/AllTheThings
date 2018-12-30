@@ -158,6 +158,7 @@ _.WorldDrops =
 					i(111475),	-- Beater's Beat Stick
 					i(116484),	-- Lunarglow Hammer
 					i(116501),	-- Vinewrapped Hammer
+					un(7, i(36505)),	-- Frosted Steel Mallet
 					i(116518),	-- Creeperclaw Hammer
 					i(116535),	-- Incised Hammer
 					i(116552),	-- Auchenai Hammer
@@ -262,6 +263,7 @@ _.WorldDrops =
 					i(116575),	-- Sunsworn Wand
 					i(116592),	-- Shadowsage Wand
 					i(116609),	-- Ruhkmari Wand
+					un(7, i(36659)),	-- Shivery Wand
 					i(116626),	-- Ancestral Wand
 					i(116643),	-- Oshu'gun Wand
 					i(118793),	-- Kuug'lar's Stylus of Sorcery

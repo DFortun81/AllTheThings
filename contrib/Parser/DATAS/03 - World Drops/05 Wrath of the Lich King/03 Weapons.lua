@@ -204,7 +204,6 @@ _.WorldDrops =
 					i(36502),	-- Ungainly Mace
 					i(36503),	-- Toothless Bludgeon
 					i(36504),	-- Cleft-Edged Hammer
-					i(36505),	-- Frosted Steel Mallet
 					i(36506),	-- Vaulted Mace
 					i(36507),	-- Iron-Molded Fist
 					i(36508),	-- Cumbersome Sledgehammer
@@ -328,7 +327,6 @@ _.WorldDrops =
 					i(36656),	-- Darkened Wand
 					i(36657),	-- Vicious Wand
 					i(36658),	-- Extinguished Spark
-					i(36659),	-- Shivery Wand
 					i(36660),	-- Melted Wand
 					i(36661),	-- Enigmatic Wand
 					i(36662),	-- Voodoo Wand
