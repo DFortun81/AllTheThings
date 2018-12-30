@@ -7376,7 +7376,7 @@ function app:GetDataCache()
 		-- Pet Battles
 		if app.Categories.PetBattles then
 			db = app.CreateAchievement(6559, app.Categories.PetBattles); -- Traveling Pet Mauler
-			db.f = 0;
+			db.f = 101;
 			db.lvl = 5; -- Must be 5 to train
 			db.expanded = false;
 			db.text = SHOW_PET_BATTLES_ON_MAP_TEXT; -- Pet Battles
@@ -7467,7 +7467,7 @@ function app:GetDataCache()
 		-- Pet Journal
 		if app.Categories.PetJournal then
 			db = app.CreateAchievement(12958, app.Categories.PetJournal);
-			db.f = 100;
+			db.f = 101;
 			db.expanded = false;
 			db.text = PET_JOURNAL;
 			db.icon = "Interface\\ICONS\\INV_Pet_BattlePetTraining";
