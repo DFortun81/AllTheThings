@@ -2283,15 +2283,15 @@ _.Instances =
 				["isRaid"] = true,
 				["sharedLockout"] = 1,
 				["lvl"] = 90,
-				["mapID"] = 508,
 				["maps"] = {
-					509,
-					510,
-					511,
-					512,
-					513,
-					514,
-					515,
+					508,	-- Overgrown Statuary
+					509,	-- Royal Amphitheater
+					510,	-- Forgotten Depths
+					511,	-- Roost of Ji-Kun
+					512,	-- Halls of Flesh-Shaping
+					513,	-- Hall of Kings
+					514,	-- Pinnacle of Storms
+					515,	-- Hidden Cell
 				},
 			}),
 		},					
