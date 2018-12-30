@@ -430,6 +430,8 @@ _.NeverImplemented =
 			un(1, i(134605)), -- Vanguard Cloak
 			un(1, i(154698)), -- Tidespray Linen Cloak of the Feather (Doesnt load ingame)
 			un(1, i(154701)), -- Tidespray Linen Cloak of Resilience (Doesnt load ingame)
+			un(1, i(162640)), 	-- Horde Toy Cape (used from Winter Veil 2018 Toy, but its just used to attach the look to you, you actually never get the item)
+			un(1, i(162641)), 	-- Alliance Toy Cape (used from Winter Veil 2018 Toy, but its just used to attach the look to you, you actually never get the item)
 		}),
 		n(-349, { -- Cosmetic
 			un(1, i(134110)), -- Hidden Helm
@@ -440,6 +442,11 @@ _.NeverImplemented =
 			un(1, i(142504)), 	-- Hidden Tabard
 			un(1, i(134112)), 	-- Hidden Shoulder
 			un(1, i(143539)), 	-- Hidden Belt
+			un(1, i(158329)), 	-- Hidden Gloves
+			un(1, i(162638)), 	-- Wooden Toy Helm (used from Winter Veil 2018 Toy, but its just used to attach the look to you, you actually never get the item)
+			un(1, i(162639)), 	-- Wooden Toy Helm (A) (used from Winter Veil 2018 Toy, but its just used to attach the look to you, you actually never get the item)
+			un(1, i(163922)), 	-- Used for a toy, you never can get the actual item
+			un(1, i(163923)), 	-- Used for a toy, you never can get the actual item
 		}),
 		n(-324, { -- Shirts
 			un(1, i(53869)), -- War Paint (Shirt) NOT GOOD FOR THE LADIES (NYI)
@@ -974,6 +981,7 @@ _.NeverImplemented =
 			un(1, i(124079)),	-- Unknown - was under WoD>1Handed Swords
 			un(1, i(124084)),	-- Unknown - was under WoD>1Handed Swords
 			un(1, i(127852)),	-- Unknown - was under WoD>1Handed Swords
+			un(1, i(165273)),	-- Unknown - was under Legion>1Handed Swords
 		}),
 		n(-342, { -- Staves
 			un(1, i(132474)),	-- Unknown - was under Legion>Staves
@@ -1014,6 +1022,9 @@ _.NeverImplemented =
 			un(1, i(159581)),	-- 8.0 PH - Weapon - Staff
 			un(1, i(159582)),	-- 8.0 PH - Weapon - Staff
 			un(1, i(159583)),	-- 8.0 PH - Weapon - Staff
+			un(1, i(136858)),	-- Wierd Testing Stuff for Artefact Weapons
+			un(1, i(139275)),	-- Wierd Testing Stuff for Artefact Weapons
+			un(1, i(139891)),	-- Wierd Testing Stuff for Artefact Weapons
 		}),
 		n(-335, { -- Two Handed Axes
 			un(1, i(134563)),	-- Unknown
@@ -1021,6 +1032,11 @@ _.NeverImplemented =
 			un(1, i(109519)),	-- Unknown
 		}),
 		n(-339, { -- Two Handed Swords
+			un(1, i(140687)),	-- Unholy Runeblade (You only get Heart-Lession Gear, even as Unholy)
+			un(1, i(140714)),	-- Bloodcaked Runeblade (You only get Heart-Lession Gear, even as Unholy)
+			un(1, i(150582)),	-- Unholy Runeblade (You only get Heart-Lession Gear, even as Unholy)
+			un(1, i(150609)),	-- Bloodcaked Runeblade (You only get Heart-Lession Gear, even as Unholy)
+			un(1, i(153717)),	-- Heart-Lession Greatsword (You get the Runeblade)
 			un(1, i(33475)),	-- Artefact Frostmourne
 			un(1, i(137581)),	-- Test Ashbringer 1
 			un(1, i(137582)),	-- Test Ashbringer 2

@@ -8,6 +8,8 @@ _.GearSets =
 			["groups"] = {
 				n(-142, { -- Heart-Lesion 
 					["groups"] = {
+						i(153726),	-- Heart-Lesion Blade
+						i(153747),	-- Heart-Lesion RuneBlade
 						i(153737),	-- Heart-Lesion Faceguard
 						i(153721),	-- Heart-Lesion Helm
 						i(153728),	-- Heart-Lesion Pendant

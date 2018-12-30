@@ -339,6 +339,7 @@ _.Zones =
 							i( 30016),	-- X-52 Technician's Helm
 							i( 30014),	-- X-52 Pilot's Leggings
 							i(134021),	-- X-52 Rocket Helmet (TOY!)
+							un(32, i(134012)),	-- X-52 Rocket Helm (Normal Reward till 7.0.1)
 						},
 						["qg"] = 19832,	-- Doctor Vomisa, Ph.T.
 						["sourceQuests"] = { 10248 },	-- You, Robot
