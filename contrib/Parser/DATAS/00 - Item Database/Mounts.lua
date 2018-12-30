@@ -183,3 +183,4 @@ i(165020, 281890);	-- Vicious Black Bonesteed
 i(165019, 281887);	-- Vicious Black Warsaber
 i(166775, 290133);	-- Vulpine Familiar
 i(166443, 288589);	-- Yellow Marsh Hopper
+i(142233, 238454);	-- Shadowy Reins of the Accursed Wrathsteed

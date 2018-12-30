@@ -49,8 +49,57 @@ local DifficultyDB = {
 	[24] = { icon = "Interface/Worldmap/Skull_64Red", modID = 22, u = 42 },
 	[33] = { icon = "Interface/Worldmap/Skull_64Red", modID = 22, u = 42 },
 };
-ALLIANCE_ONLY = { 1, 3, 4, 7, 11, 22, 25, 29, 30, 32, 34 };
-HORDE_ONLY = { 2, 5, 6, 8, 9, 10, 26, 27, 28,  31, 36 };
+ALLIANCE_ONLY = {
+	1,	-- Human
+	3,	-- Dwarf
+	4,	-- Night Elf
+	7,	-- Gnome
+	11,	-- Draenei
+	22,	-- Worgen
+	25,	-- Pandaren [Alliance]
+	29,	-- Void Elf
+	30,	-- Lightforged
+	32,	-- Kul Tiran
+	34,	-- Dark Iron
+};
+HORDE_ONLY = {
+	2,	-- Orc
+	5,	-- Undead
+	6,	-- Tauren
+	8,	-- Troll
+	9,	-- Goblin
+	10,	-- Blood Elf
+	26,	-- Pandaren [Horde]
+	27,	-- Nightborne
+	28,	-- Highmountain
+	31,	-- Zandalari
+	36,	-- Mag'har
+};
+ALL_RACES = {	-- NOTE: Use this with the exclude function.
+	1,	-- Human
+	2,	-- Orc
+	3,	-- Dwarf
+	4,	-- Night Elf
+	5,	-- Undead
+	6,	-- Tauren
+	7,	-- Gnome
+	8,	-- Troll
+	9,	-- Goblin
+	10,	-- Blood Elf
+	11,	-- Draenei
+	22,	-- Worgen
+	24,	-- Pandaren [Neutral]
+	25,	-- Pandaren [Alliance]
+	26,	-- Pandaren [Horde]
+	27,	-- Nightborne
+	28,	-- Highmountain
+	29,	-- Void Elf
+	30,	-- Lightforged
+	31,	-- Zandalari
+	32,	-- Kul Tiran
+	34,	-- Dark Iron
+	36,	-- Mag'har
+};
 ALL_CLASSES = {	-- NOTE: Use this with the exclude function.
 	1,	-- Warrior
 	2,	-- Paladin

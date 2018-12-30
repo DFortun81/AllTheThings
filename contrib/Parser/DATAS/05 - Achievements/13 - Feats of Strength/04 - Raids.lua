@@ -2,15 +2,7 @@
 --   A C H I E V E M E N T S    M O D U L E    --
 --------------------------------------------------
 
---[[
-8.0 Pre-Patch alignment complete
-To do: 
-1) Review crit items to see if achievements / items / etc can replace them to provide more information when looking at them in the ATT lists
-2) Add [Reward] tag
-3) Source to local files if applicable
-]]--
-
-_.Achievements = 
+_.Achievements =
 {
 	n(-9969, { -- Feats of Strength
 		["groups"] = {
@@ -40,7 +32,7 @@ _.Achievements =
 					un(2, ach(8248)),		-- Ahead of the Curve: Sha of Fear
 					un(2, ach(10044)),		-- Ahead of the Curve: The Black Gate
 					un(2, ach(6954)),		-- Ahead of the Curve: Will of the Emperor
-					un(2, ach(11194)),		-- Ahead of the Curve: Xavius	
+					un(2, ach(11194)),		-- Ahead of the Curve: Xavius
 					un(2, ach(425)),		-- Atiesh, Greatstaff of the Guardian
 					un(2, ach(12111)),		-- Cutting Edge: Argus the Unmaker
 					un(2, ach(9443)),		-- Cutting Edge: Blackhand's Crucible

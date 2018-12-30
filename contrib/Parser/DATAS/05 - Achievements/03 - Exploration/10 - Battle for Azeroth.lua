@@ -2,15 +2,7 @@
 --   A C H I E V E M E N T S    M O D U L E    --
 --------------------------------------------------
 
---[[
-8.0 Pre-Patch alignment complete
-To do: 
-1) Review crit items to see if achievements / items / etc can replace them to provide more information when looking at them in the ATT lists
-2) Add [Reward] tag
-3) Source to local files if applicable
-]]--
-
-_.Achievements = 
+_.Achievements =
 {
 	n(-9957, { -- Exploration
 		["groups"] = {
@@ -563,7 +555,7 @@ _.Achievements =
 									{ 47.61, 47.36, 1161 },	-- Joespeh Stephens
 									{ 26.45, 50.7, 1164 },	-- Lily Whistlebrew
 									{ 21.51, 43.59, 896 },	-- Linda Deepwater
-									{ 77.21, 84.25, 895 },	-- Martha Mae									
+									{ 77.21, 84.25, 895 },	-- Martha Mae
 								},
 							},
 							{	-- Brennadam Apple Brandy

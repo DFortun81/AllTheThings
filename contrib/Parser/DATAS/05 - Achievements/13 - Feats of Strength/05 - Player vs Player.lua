@@ -2,15 +2,7 @@
 --   A C H I E V E M E N T S    M O D U L E    --
 --------------------------------------------------
 
---[[
-8.0 Pre-Patch alignment complete
-To do: 
-1) Review crit items to see if achievements / items / etc can replace them to provide more information when looking at them in the ATT lists
-2) Add [Reward] tag
-3) Source to local files if applicable
-]]--
-
-_.Achievements = 
+_.Achievements =
 {
 	n(-9969, { -- Feats of Strength
 		["groups"] = {
@@ -96,8 +88,8 @@ _.Achievements =
 							},
 						},
 					},
-					ach(12962, {			-- 
-						title(30),				-- 
+					ach(12962, {			--
+						title(30),				--
 					}),
 					un(2, ach(11015)),		-- Duelist: Legion Season 1
 					un(2, ach(11026)),		-- Duelist: Legion Season 2
@@ -244,13 +236,13 @@ _.Achievements =
 					})),
 					un(2, ach(3758)),		-- Relentless Gladiator
 					un(2, a(ach(9256, {	-- Rescue Operation (Alliance)
-							crit(1),			-- Commander Jobby Shortsight 
-							crit(2),			-- Marshal Andrea DeSousa 
+							crit(1),			-- Commander Jobby Shortsight
+							crit(2),			-- Marshal Andrea DeSousa
 							crit(3),			-- Field Marshal Kerwin
 					}))),
 					un(2, h(ach(9257, {	-- Rescue Operation (Horde)
-							crit(1),			-- Warlord Jugan 
-							crit(2),			-- General Lizzie Heartbane 
+							crit(1),			-- Warlord Jugan
+							crit(2),			-- General Lizzie Heartbane
 							crit(3),			-- Marshal Lyrdrea Daybreaker
 					}))),
 					ach(12960, {			-- Rival: Battle for Azeroth Season 1

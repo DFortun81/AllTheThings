@@ -25,7 +25,7 @@ _.PVP =
 						},
 					},
 					{	-- Player vs. Player (Battle for Azeroth Season 2)
-						["npcID"] = -3159,	-- Player vs. Player (Battle for Azeroth Season 2
+						["npcID"] = -3157,	-- Player vs. Player (Battle for Azeroth Season 2
 						["g"] = {
 							{	-- Reins of the Onyx War Hyena
 								["itemID"] = 166417,	-- Reins of the Onyx War Hyena
@@ -40,7 +40,8 @@ _.PVP =
 						},
 					},
 				},
-				["description"] = "These mounts require 2400 points.\n\nAny win above 1400 rating will reward:\n\n10 Points in 2v2 (0.33%)\n\n25 Points in 3v3 (1%)\n\n50 Points in RBG (2%)",
+				--["description"] = "These mounts require 2400 points.\n\nAny win above 1400 rating will reward:\n\n10 Points in 2v2 (0.33%)\n\n25 Points in 3v3 (1%)\n\n50 Points in RBG (2%)",
+				--NOTE!! Do NOT add description.  It's a slight performance drop for no reason when it is added in the same spot in-game and Blizzard relays the same information.
 			},
 		},
 	},
