@@ -51,8 +51,10 @@ _.Craftables =
 					["itemID"] = 108245,	-- Peerless Draenic Steel Bulwark
 					["u"] = 1,	-- Never made it out of Beta
 				},
-				WOD_CRAFTED_ITEM(120261), -- Steelforged Aegis
-				WOD_CRAFTED_ITEM(116647), -- Steelforged Shield
+				i(128016, {	-- Steelforged Essence
+					WOD_CRAFTED_ITEM(120261), -- Steelforged Aegis
+					WOD_CRAFTED_ITEM(116647), -- Steelforged Shield
+				}),
 			}),
 			filter(20, {	-- Daggers
 				{	-- Draenic Steel Dagger
@@ -79,10 +81,14 @@ _.Craftables =
 					["itemID"] = 108237,	-- Peerless Draenic Steel Dagger
 					["u"] = 1,	-- Never made it out of Beta
 				},
-				WOD_CRAFTED_ITEM(116644), -- Steelforged Dagger
+				i(128016, {	-- Steelforged Essence
+					WOD_CRAFTED_ITEM(116644), -- Steelforged Dagger
+				}),
 			}),
 			filter(21, {	-- 1H Axes
-				WOD_CRAFTED_ITEM(120259), -- Steelforged Axe
+				i(128016, {	-- Steelforged Essence
+					WOD_CRAFTED_ITEM(120259), -- Steelforged Axe
+				}),
 			}),
 			filter(22, {	-- 2H Axes
 				{	-- Draenic Steel War Axe
@@ -109,7 +115,9 @@ _.Craftables =
 					["itemID"] = 108229,	-- Peerless Draenic Steel War Axe
 					["u"] = 1,	-- Never made it out of Beta
 				},
-				WOD_CRAFTED_ITEM(116453), -- Steelforged Greataxe
+				i(128016, {	-- Steelforged Essence
+					WOD_CRAFTED_ITEM(116453), -- Steelforged Greataxe
+				}),
 			}),
 			filter(23, {	-- 1H Maces
 				{	-- Draenic Steel Mace
@@ -136,10 +144,14 @@ _.Craftables =
 					["itemID"] = 108241,	-- Peerless Draenic Steel Mace
 					["u"] = 1,	-- Never made it out of Beta
 				},
-				WOD_CRAFTED_ITEM(116646), -- Steelforged Hammer
+				i(128016, {	-- Steelforged Essence
+					WOD_CRAFTED_ITEM(116646), -- Steelforged Hammer
+				}),
 			}),
 			filter(25, {	-- 1H Swords
-				WOD_CRAFTED_ITEM(116454), -- Steelforged Saber
+				i(128016, {	-- Steelforged Essence
+					WOD_CRAFTED_ITEM(116454), -- Steelforged Saber
+				}),
 			}),
 			n(-320, {		-- Head
 				{	-- Draenic Steel Helm
@@ -185,7 +197,9 @@ _.Craftables =
 				{	-- Smoldering Helm
 					["itemID"] = 116426, -- Smoldering Helm
 				},
-				WOD_CRAFTED_ITEM(114230),	-- Truesteel Helm
+				i(128015, {	-- Truesteel Essence
+					WOD_CRAFTED_ITEM(114230),	-- Truesteel Helm
+				}),
 			}),
 			n(-321, {		-- Shoulders
 				{	-- Draenic Steel Shoulders
@@ -228,7 +242,9 @@ _.Craftables =
 					["itemID"] = 108223,	-- Peerless Draenic Steel Shoulders
 					["u"] = 1,	-- Never made it out of Beta
 				},
-				WOD_CRAFTED_ITEM(114231),	-- Truesteel Pauldrons
+				i(128015, {	-- Truesteel Essence
+					WOD_CRAFTED_ITEM(114231),	-- Truesteel Pauldrons
+				}),
 			}),
 			n(-323, {		-- Chest
 				{	-- Draenic Steel Chestplate
@@ -274,7 +290,9 @@ _.Craftables =
 				{	-- Smoldering Breastplate
 					["itemID"] = 116427, -- Smoldering Breastplate
 				},
-				WOD_CRAFTED_ITEM(114232),	-- Truesteel Breastplate
+				i(128015, {	-- Truesteel Essence
+					WOD_CRAFTED_ITEM(114232),	-- Truesteel Breastplate
+				}),
 			}),
 			n(-327, {		-- Hands
 				{	-- Draenic Steel Guantlets
@@ -317,7 +335,9 @@ _.Craftables =
 					["itemID"] = 108220,	-- Peerless Draenic Steel Guantlets
 					["u"] = 1,	-- Never made it out of Beta
 				},
-				WOD_CRAFTED_ITEM(114237),	-- Truesteel Gauntlets
+				i(128015, {	-- Truesteel Essence
+					WOD_CRAFTED_ITEM(114237),	-- Truesteel Gauntlets
+				}),
 			}),
 			n(-326, {		-- Wrist
 				{	-- Draenic Steel Wristwraps
@@ -360,7 +380,9 @@ _.Craftables =
 					["itemID"] = 108225,	-- Peerless Draenic Steel Wristwraps
 					["u"] = 1,	-- Never made it out of Beta
 				},
-				WOD_CRAFTED_ITEM(114236),	-- Truesteel Armguards
+				i(128015, {	-- Truesteel Essence
+					WOD_CRAFTED_ITEM(114236),	-- Truesteel Armguards
+				}),
 			}),
 			n(-328, {		-- Waist
 				{	-- Draenic Steel Girdle
@@ -403,7 +425,9 @@ _.Craftables =
 					["itemID"] = 108224,	-- Peerless Draenic Steel Girdle
 					["u"] = 1,	-- Never made it out of Beta
 				},
-				WOD_CRAFTED_ITEM(114233),	-- Truesteel Waistguard
+				i(128015, {	-- Truesteel Essence
+					WOD_CRAFTED_ITEM(114233),	-- Truesteel Waistguard
+				}),
 			}),
 			n(-329, {		-- Legs
 				{	-- Draenic Steel Legguards
@@ -449,7 +473,9 @@ _.Craftables =
 				{	-- Smoldering Greaves
 					["itemID"] = 116425, -- Smoldering Greaves
 				},
-				WOD_CRAFTED_ITEM(114234),	-- Truesteel Greaves
+				i(128015, {	-- Truesteel Essence
+					WOD_CRAFTED_ITEM(114234),	-- Truesteel Greaves
+				}),
 			}),
 			n(-330, {		-- Feet
 				{	-- Draenic Steel Warboots
@@ -492,7 +518,9 @@ _.Craftables =
 					["itemID"] = 108219,	-- Peerless Draenic Steel Warboots
 					["u"] = 1,	-- Never made it out of Beta
 				},
-				WOD_CRAFTED_ITEM(114235),	-- Truesteel Boots
+				i(128015, {	-- Truesteel Essence
+					WOD_CRAFTED_ITEM(114235),	-- Truesteel Boots
+				}),
 			}),
 		}),
 		n(-183, { 	-- Engineering
@@ -517,11 +545,15 @@ _.Craftables =
 					}),
 				}),
 			}),
-			WOD_CRAFTED_ITEM(109168),	-- Shrediron's Shredder
-			WOD_CRAFTED_ITEM(109173),	-- Cybergenetic Mechshades
-			WOD_CRAFTED_ITEM(109171),	-- Night-Vision Mechshades
-			WOD_CRAFTED_ITEM(109172),	-- Plasma Mechshades
-			WOD_CRAFTED_ITEM(109174),	-- Razorguard Mechshades
+			i(128017, {	-- True Iron Trigger
+				WOD_CRAFTED_ITEM(109168),	-- Shrediron's Shredder
+			}),
+			i(128011, {	-- Linkgrease Locksprocket
+				WOD_CRAFTED_ITEM(109173),	-- Cybergenetic Mechshades
+				WOD_CRAFTED_ITEM(109171),	-- Night-Vision Mechshades
+				WOD_CRAFTED_ITEM(109172),	-- Plasma Mechshades
+				WOD_CRAFTED_ITEM(109174),	-- Razorguard Mechshades
+			}),
 		}),
 		n(-185, { 	-- Inscription
 		-- Reviewed and updated as of 11.21.2018 BfA 8.0
@@ -599,35 +631,41 @@ _.Craftables =
 		}),
 		n(-187, { 	-- Leatherworking
 			n(-322, { 	-- Cloak
-				WOD_CRAFTED_ITEM(116175),	-- Brilliant Burnished Cloak
-				WOD_CRAFTED_ITEM(116174),	-- Nimble Burnished Cloak
-				WOD_CRAFTED_ITEM(116171),	-- Powerful Burnished Cloak
+				i(128014, { -- Burnished Essence
+					WOD_CRAFTED_ITEM(116175),	-- Brilliant Burnished Cloak
+					WOD_CRAFTED_ITEM(116174),	-- Nimble Burnished Cloak
+					WOD_CRAFTED_ITEM(116171),	-- Powerful Burnished Cloak
+				}),
 			}),
 			n(-44, { 	-- Leather
 				i(116164),	-- Journeying Helm
 				i(116165),	-- Journeying Robes
 				i(116166),	-- Journeying Slacks
-				WOD_CRAFTED_ITEM(116182),	-- Supple Boots
-				WOD_CRAFTED_ITEM(116181),	-- Supple Bracers
-				WOD_CRAFTED_ITEM(116179),	-- Supple Gloves
-				WOD_CRAFTED_ITEM(116177),	-- Supple Helm
-				WOD_CRAFTED_ITEM(116178),	-- Supple Leggings
-				WOD_CRAFTED_ITEM(116176),	-- Supple Shoulderguards
-				WOD_CRAFTED_ITEM(116180),	-- Supple Vest
-				WOD_CRAFTED_ITEM(116183),	-- Supple Waistguard
+				i(128014, { -- Burnished Essence
+					WOD_CRAFTED_ITEM(116182),	-- Supple Boots
+					WOD_CRAFTED_ITEM(116181),	-- Supple Bracers
+					WOD_CRAFTED_ITEM(116179),	-- Supple Gloves
+					WOD_CRAFTED_ITEM(116177),	-- Supple Helm
+					WOD_CRAFTED_ITEM(116178),	-- Supple Leggings
+					WOD_CRAFTED_ITEM(116176),	-- Supple Shoulderguards
+					WOD_CRAFTED_ITEM(116180),	-- Supple Vest
+					WOD_CRAFTED_ITEM(116183),	-- Supple Waistguard
+				}),
 			}),
 			n(-45, { 	-- Mail
 				i(116167),	-- Traveling Helm
 				i(116169),	-- Traveling Leggings
 				i(116168),	-- Traveling Tunic
-				WOD_CRAFTED_ITEM(116194),	-- Wayfaring Belt
-				WOD_CRAFTED_ITEM(116193),	-- Wayfaring Boots
-				WOD_CRAFTED_ITEM(116192),	-- Wayfaring Bracers
-				WOD_CRAFTED_ITEM(116190),	-- Wayfaring Gloves
-				WOD_CRAFTED_ITEM(116188),	-- Wayfaring Helm
-				WOD_CRAFTED_ITEM(116189),	-- Wayfaring Leggings
-				WOD_CRAFTED_ITEM(116187),	-- Wayfaring Shoulderguards
-				WOD_CRAFTED_ITEM(116191),	-- Wayfaring Tunic
+				i(128014, { -- Burnished Essence
+					WOD_CRAFTED_ITEM(116194),	-- Wayfaring Belt
+					WOD_CRAFTED_ITEM(116193),	-- Wayfaring Boots
+					WOD_CRAFTED_ITEM(116192),	-- Wayfaring Bracers
+					WOD_CRAFTED_ITEM(116190),	-- Wayfaring Gloves
+					WOD_CRAFTED_ITEM(116188),	-- Wayfaring Helm
+					WOD_CRAFTED_ITEM(116189),	-- Wayfaring Leggings
+					WOD_CRAFTED_ITEM(116187),	-- Wayfaring Shoulderguards
+					WOD_CRAFTED_ITEM(116191),	-- Wayfaring Tunic
+				}),
 			}),
 		}),
 		n(-190, { 	-- Tailoring
