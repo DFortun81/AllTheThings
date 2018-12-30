@@ -336,7 +336,7 @@ _.Instances =
 										["itemID"] = 166502,	-- Blood-Soaked Tome of Dark Whispers
 									--	["spellID"] = 288956,	-- Blood-Soaked Tome of Dark Whispers
 										["questID"] = 54753,	-- 
-									--	["collectible"] = false,
+										["classes"] = { 3 },
 									},
 								},
 							},
