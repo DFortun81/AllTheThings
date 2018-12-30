@@ -28,7 +28,8 @@ _.Zones =
 								["npcID"] = 70001,		-- Backbreaker Uru
 								["questID"] = 32610,	-- Looted from Rare this week
 								["coords"] = {
-									{ 48.01, 25.59, 504 }
+									{ 48.01, 25.59, 504 },
+									{ 42.99, 36.38, 505 },
 								},
 								["g"] = {
 									{	-- Backbreaker Uru
@@ -174,60 +175,136 @@ _.Zones =
 								["itemID"] = 94221,		-- Shan'ze Ritual Stone
 								["description"] = "You will need 3 stones to summon these rares at their specific spawn points",
 								["g"] = {
-									n(69767, { 		-- Ancient Mogu Guardian
-										["groups"] = {
-											dr(19, i(94826)),	-- Mogu Sportsman's Bow
+									{	-- Ancient Mogu Guardian
+										["npcID"] = 69767,	-- Ancient Mogu Guardian
+										["crs"] = {
+											70197,	-- Lightning Ritual Stone
 										},
-										["description"] = "|cff66ccffSummoned using 3 Shan'ze Ritual Stones.|r",
-									}),
-									n(69396, { 		-- Cera
-										["groups"] = {
-											dr(8, i(94706)),	-- Cera's Impalers
+										["coords"] = {
+											{ 53.13, 47.07, 504 },
 										},
-										["description"] = "|cff66ccffSummoned using 3 Shan'ze Ritual Stones.|r",
-									}),
-									n(69341, { 		-- Echo of Kros
-										["groups"] = {
-											dr(7, i(94708)),
+										["g"] = {
+											{	-- Mogu Sportsman's Bow
+												["itemID"] = 94826,	-- Mogu Sportsman's Bow
+											},
 										},
-										["description"] = "|cff66ccffSummoned using 3 Shan'ze Ritual Stones.|r",
-									}),
-									n(69339, { 		-- Electromancer Ju'le
-										["groups"] = {
-											dr(8, i(94825)),	-- Lightning Snare
+									},
+									{	-- Cera
+										["npcID"] = 69396,	-- Cera
+										["crs"] = {
+											70614,	-- Primal Ritual Stone
+											70199,	-- Primal Ritual Stone
 										},
-										["description"] = "|cff66ccffSummoned using 3 Shan'ze Ritual Stones.|r",
-									}),
-									n(69347, { 		-- Incomplete Drakkari Colossus
-										["groups"] = {
-											dr(8, i(94823)),	-- Drakkari Decapitator
+										["coords"] = {
+											{ 33.18, 45.58, 504 },
+											{ 57.84, 79.17, 504 },
 										},
-										["description"] = "|cff66ccffSummoned using 3 Shan'ze Ritual Stones.|r",
-									}),
-									n(69633, { 		-- Kor'dok and Tinzo the Emberkeeper
-										["groups"] = {
-											dr(8, i(94720)),	-- Vengeance of Kor'dok
+										["g"] = {
+											{	-- Cera's Impalers
+												["itemID"] = 94706,	-- Cera's Impalers
+											},
 										},
-										["description"] = "|cff66ccffSummoned using 3 Shan'ze Ritual Stones.|r",
-									}),
-									n(69749, { 		-- Qi'nor
-										["groups"] = {
-											dr(9, i(94824)),	-- Gaze of Qi'nor
+									},
+									{	-- Echo of Kros
+										["npcID"] = 69341,	-- Echo of Kros
+										["crs"] = {
+											70203,	-- Spirit Ritual Stone
 										},
-										["description"] = "|cff66ccffSummoned using 3 Shan'ze Ritual Stones.|r",
-									}),
-									n(69471, { 		-- Spirit of Warlord Teng
-										["groups"] = {
-											dr(8, i(94707)),	-- Teng's Reach
+										["coords"] = {
+											{ 55.18, 87.72, 504 },
 										},
-										["description"] = "|cff66ccffSummoned using 3 Shan'ze Ritual Stones.|r",
-									}),
-									n(70080, { 		-- Windweaver Akil'amon
-										["groups"] = {
-											dr(10, i(94709)),	-- Talonblade of Akil'amon
+										["g"] = {
+											{	-- Saurok Ritualist's Sacrificial Dagger
+												["itemID"] = 94708,	-- Saurok Ritualist's Sacrificial Dagger
+											},
 										},
-										["description"] = "|cff66ccffSummoned using 3 Shan'ze Ritual Stones.|r",
-									}),
+									},
+									{	-- Electromancer Ju'le
+										["npcID"] = 69339,	-- Electromancer Ju'le
+										["crs"] = {
+											69770,	-- Lightning Ritual Stone
+										},
+										["coords"] = {
+											{ 44.47, 61.03, 504 },
+										},
+										["g"] = {
+											{	-- Lightning Snare
+												["itemID"] = 94825,	-- Lightning Snare
+											},
+										},
+									},
+									{	-- Incomplete Drakkari Colossus
+										["npcID"] = 69347,	-- Incomplete Drakkari Colossus
+										["crs"] = {
+											70200,	--- Primal Ritual Stone
+										},
+										["coords"] = {
+											{ 49.94, 20.64, 504 },
+										},
+										["g"] = {
+											{	-- Drakkari Decapitator
+												["itemID"] = 94823,	-- Drakkari Decapitator
+											},
+										},
+									},
+									{	-- Kor'dok and Tinzo the Emberkeeper
+										["npcID"] = 69633,	-- Kor'dok
+										["crs"] = {
+											69644,	-- Tinzo the Emberkeeper
+											70204,	-- Spiritual Ritual Stone
+										},
+										["coords"] = {
+											{ 30.71, 58.56, 504 },
+										},
+										["g"] = {
+											{	-- Vengeance of Kor'dok
+												["itemID"] = 94720,	-- Vengeance of Kor'dok
+											},
+										},
+									},
+									{	-- Qi'nor
+										["npcID"] = 69749,	-- Qi'nor
+										["crs"] = {
+											70196,	-- Lightning Ritual Stone
+										},
+										["coords"] = {
+											{ 48.01, 25.97, 504 },
+										},
+										["g"] = {
+											{	-- Gaze of Qi'nor
+												["itemID"] = 94824,	-- Gaze of Qi'nor
+											},
+										},
+									},
+									{	-- Spirit of Warlord Teng
+										["npcID"] = 69471,	-- Spirit of Warlord Teng
+										["crs"] = {
+											70201,	-- Spiritual Ritual Stone
+										},
+										["coords"] = {
+											{ 35.68, 63.86, 504 },
+										},
+										["description"] = "Located underneath the building",
+										["g"] = {
+											{	-- Teng's Reach
+												["itemID"] = 94707,	-- Teng's Reach
+											},
+										},
+									},
+									{	-- Windweaver Akil'amon
+										["npcID"] = 70080,	-- Windweaver Akil'amon
+										["crs"] = {
+											70198,	-- Primal Ritual Stone
+										},
+										["coords"] = {
+											{ 68.91, 39.28, 504 },
+										},
+										["g"] = {
+											{	-- Talonblade of Akil'amon
+												["itemID"] = 94709,		-- Talonblade of Akil'amon
+											},
+										},
+									},
 								},
 							},
 						},
