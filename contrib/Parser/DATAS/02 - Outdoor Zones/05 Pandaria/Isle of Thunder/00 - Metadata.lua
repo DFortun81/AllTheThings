@@ -7,8 +7,8 @@ _.Zones =
 		["mapID"] = 424,	-- Pandaria
 		["g"] = {
 			{	-- Isle of Thunder
+				["mapID"] = 504,	-- Isle of Thunder
 				["maps"] = {
-					504,	-- Isle of Thunder
 					505,	-- Lightning Vein Mine
 					506,	-- The Swollen Vault
 					516,	-- Scenario [Phase 1]
