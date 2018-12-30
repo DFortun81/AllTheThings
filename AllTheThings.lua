@@ -8673,6 +8673,7 @@ end):Show();
 		self.data.total = 0;
 		self.data.back = 1;
 		UpdateGroups(self.data, self.data.g);
+		self.data.visible = true;
 		UpdateWindow(self, true, got);
 	end);
 end)();

@@ -1793,7 +1793,7 @@ _.Zones =
 					}),
 				}),
 			},
-			["maps"] = {622, 624},	-- We want to show Ashran in both maps.
+			--["maps"] = {622, 624},	-- We want to show Ashran in both maps.
 			["lvl"] = 100,	
 			["achievementID"] = 9102,
 			["u"] = 12,	-- Instance removed in 8.0.1 [BfA Pre-Patch]
