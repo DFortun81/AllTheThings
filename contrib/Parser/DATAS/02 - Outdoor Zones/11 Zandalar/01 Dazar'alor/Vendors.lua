@@ -184,6 +184,10 @@ _.Zones =
 									["itemID"] = 139003,	-- Pocket Pet Portal
 									["questID"] = 43016,
 								},
+								{	-- Interdimensional Pet Portal
+									["itemID"] = 165840,	-- Interdimensional Pet Portal
+								--	["questID"] = 43016, -- Need to find QuestID
+								},
 								{	-- Butterfly in a Jar
 									["itemID"] = 163508,	-- Butterfly in a Jar
 								},
