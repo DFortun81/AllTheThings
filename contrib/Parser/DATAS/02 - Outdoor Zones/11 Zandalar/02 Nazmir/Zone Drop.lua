@@ -43,7 +43,6 @@ _.Zones =
 						i(159606),	-- Bleached Bone Wand
 						i(159492),	-- Golden Fleet Bow
 						i(159811),	-- Golden Fleet Buckler
-						i(159124),	-- Golden Fleet Buckler
 						i(159532),	-- Golden Fleet Dagger
 						i(159516),	-- Golden Fleet Fists
 						i(159485),	-- Golden Fleet Greataxe
