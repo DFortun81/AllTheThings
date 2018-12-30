@@ -9162,7 +9162,7 @@ end);
 					if group[field] and group[field] == value then tinsert(temp, group); end
 				end
 			end
-			local function SelectAllTheThings()
+			function self:SelectAllTheThings()
 				if searchCache["randomatt"] then
 					return searchCache["randomatt"];
 				else
@@ -9174,7 +9174,7 @@ end);
 					return searchResults;
 				end
 			end
-			local function SelectAchievement()
+			function self:SelectAchievement()
 				if searchCache["randomachievement"] then
 					return searchCache["randomachievement"];
 				else
@@ -9189,7 +9189,7 @@ end);
 					return temp;
 				end
 			end
-			local function SelectItem()
+			function self:SelectItem()
 				if searchCache["randomitem"] then
 					return searchCache["randomitem"];
 				else
@@ -9204,7 +9204,7 @@ end);
 					return temp;
 				end
 			end
-			local function SelectInstance()
+			function self:SelectInstance()
 				if searchCache["randominstance"] then
 					return searchCache["randominstance"];
 				else
@@ -9219,7 +9219,37 @@ end);
 					return temp;
 				end
 			end
-			local function SelectMount()
+			function self:SelectDungeon()
+				if searchCache["randomdungeon"] then
+					return searchCache["randomdungeon"];
+				else
+					local searchResults, dict, temp = {}, {} , {};
+					SearchRecursively(app:GetWindow("Prime").data, "instanceID", searchResults);
+					for i,o in pairs(searchResults) do
+						if not (o.saved or o.collected) and not o.isRaid and (((o.total or 0) - (o.progress or 0)) > 0) then
+							tinsert(temp, o);
+						end
+					end
+					searchCache["randomdungeon"] = temp;
+					return temp;
+				end
+			end
+			function self:SelectRaid()
+				if searchCache["randomraid"] then
+					return searchCache["randomraid"];
+				else
+					local searchResults, dict, temp = {}, {} , {};
+					SearchRecursively(app:GetWindow("Prime").data, "instanceID", searchResults);
+					for i,o in pairs(searchResults) do
+						if not (o.saved or o.collected) and o.isRaid and (((o.total or 0) - (o.progress or 0)) > 0) then
+							tinsert(temp, o);
+						end
+					end
+					searchCache["randomraid"] = temp;
+					return temp;
+				end
+			end
+			function self:SelectMount()
 				if searchCache["randommount"] then
 					return searchCache["randommount"];
 				else
@@ -9234,7 +9264,7 @@ end);
 					return temp;
 				end
 			end
-			local function SelectPet()
+			function self:SelectPet()
 				if searchCache["randompet"] then
 					return searchCache["randompet"];
 				else
@@ -9249,7 +9279,7 @@ end);
 					return temp;
 				end
 			end
-			local function SelectToy()
+			function self:SelectToy()
 				if searchCache["randomtoy"] then
 					return searchCache["randomtoy"];
 				else
@@ -9277,7 +9307,7 @@ end);
 				876,	-- Kul'Tiras
 				875,	-- Zandalar
 			};
-			local function SelectZone()
+			function self:SelectZone()
 				if searchCache["randomzone"] then
 					return searchCache["randomzone"];
 				else
@@ -9294,7 +9324,7 @@ end);
 			end
 			local mainHeader, filterHeader;
 			local rerollOption = {
-				['text'] = "Reroll: Instance",
+				['text'] = "Reroll",
 				['icon'] = "Interface\\Icons\\ability_monk_roll",
 				['description'] = "Click this button to reroll using the active filter.",
 				['visible'] = true,
@@ -9320,8 +9350,7 @@ end);
 						['f'] = -1,
 						['key'] = "nope",
 						['OnClick'] = function(row, button)
-							self.method = SelectAllTheThings;
-							rerollOption.text = "Reroll: " .. app.DisplayName .. "!";
+							app.SetDataMember("RandomSearchFilter", "AllTheThings");
 							self.data = mainHeader;
 							self:Reroll();
 							return true;
@@ -9340,8 +9369,7 @@ end);
 						['f'] = -1,
 						['key'] = "nope",
 						['OnClick'] = function(row, button)
-							self.method = SelectAchievement;
-							rerollOption.text = "Reroll: Achievement";
+							app.SetDataMember("RandomSearchFilter", "Achievement");
 							self.data = mainHeader;
 							self:Reroll();
 							return true;
@@ -9356,8 +9384,7 @@ end);
 						['f'] = -1,
 						['key'] = "nope",
 						['OnClick'] = function(row, button)
-							self.method = SelectItem;
-							rerollOption.text = "Reroll: Item";
+							app.SetDataMember("RandomSearchFilter", "Item");
 							self.data = mainHeader;
 							self:Reroll();
 							return true;
@@ -9366,14 +9393,43 @@ end);
 					},
 					{
 						['text'] = "Instance",
-						['icon'] = "Interface\\Icons\\Achievement_Dungeon_GloryoftheRaider",
+						['icon'] = "Interface\\Icons\\Achievement_Dungeon_HEROIC_GloryoftheRaider",
 						['description'] = "Click this button to select a random instance based on what you're missing.",
 						['visible'] = true,
 						['f'] = -1,
 						['key'] = "nope",
 						['OnClick'] = function(row, button)
-							self.method = SelectInstance;
-							rerollOption.text = "Reroll: Instance";
+							app.SetDataMember("RandomSearchFilter", "Instance");
+							self.data = mainHeader;
+							self:Reroll();
+							return true;
+						end,
+						['back'] = 0.5,
+					},
+					{
+						['text'] = "Dungeon",
+						['icon'] = "Interface\\Icons\\Achievement_Dungeon_GloryoftheHERO",
+						['description'] = "Click this button to select a random dungeon based on what you're missing.",
+						['visible'] = true,
+						['f'] = -1,
+						['key'] = "nope",
+						['OnClick'] = function(row, button)
+							app.SetDataMember("RandomSearchFilter", "Dungeon");
+							self.data = mainHeader;
+							self:Reroll();
+							return true;
+						end,
+						['back'] = 0.5,
+					},
+					{
+						['text'] = "Raid",
+						['icon'] = "Interface\\Icons\\Achievement_Dungeon_GloryoftheRaider",
+						['description'] = "Click this button to select a random raid based on what you're missing.",
+						['visible'] = true,
+						['f'] = -1,
+						['key'] = "nope",
+						['OnClick'] = function(row, button)
+							app.SetDataMember("RandomSearchFilter", "Raid");
 							self.data = mainHeader;
 							self:Reroll();
 							return true;
@@ -9388,8 +9444,7 @@ end);
 						['f'] = -1,
 						['key'] = "nope",
 						['OnClick'] = function(row, button)
-							self.method = SelectMount;
-							rerollOption.text = "Reroll: Mount";
+							app.SetDataMember("RandomSearchFilter", "Mount");
 							self.data = mainHeader;
 							self:Reroll();
 							return true;
@@ -9404,8 +9459,7 @@ end);
 						['f'] = -1,
 						['key'] = "nope",
 						['OnClick'] = function(row, button)
-							self.method = SelectPet;
-							rerollOption.text = "Reroll: Pet";
+							app.SetDataMember("RandomSearchFilter", "Pet");
 							self.data = mainHeader;
 							self:Reroll();
 							return true;
@@ -9420,8 +9474,7 @@ end);
 						['f'] = -1,
 						['key'] = "nope",
 						['OnClick'] = function(row, button)
-							self.method = SelectToy;
-							rerollOption.text = "Reroll: Toy";
+							app.SetDataMember("RandomSearchFilter", "Toy");
 							self.data = mainHeader;
 							self:Reroll();
 							return true;
@@ -9436,8 +9489,7 @@ end);
 						['f'] = -1,
 						['key'] = "nope",
 						['OnClick'] = function(row, button)
-							self.method = SelectZone;
-							rerollOption.text = "Reroll: Zone";
+							app.SetDataMember("RandomSearchFilter", "Zone");
 							self.data = mainHeader;
 							self:Reroll();
 							return true;
@@ -9478,29 +9530,36 @@ end);
 				wipe(self.data.g);
 				
 				-- Call to our method and build a list to draw from
-				local temp = self.method and self.method(temp) or {};
-				local totalWeight = 0;
-				for i,o in ipairs(temp) do
-					totalWeight = totalWeight + ((o.total or 1) - (o.progress or 0));
-				end
-				if totalWeight > 0 and #temp > 0 then
-					local weight, selected = math.random(totalWeight), nil;
-					totalWeight = 0;
+				local method = app.GetDataMember("RandomSearchFilter", "Instance");
+				if method then
+					rerollOption.text = "Reroll: " .. method;
+					method = "Select" .. method;
+					local temp = self[method]() or {};
+					local totalWeight = 0;
 					for i,o in ipairs(temp) do
 						totalWeight = totalWeight + ((o.total or 1) - (o.progress or 0));
-						if weight <= totalWeight then
-							selected = o;
-							break;
-						end
 					end
-					if not selected then selected = temp[#temp - 1]; end
-					if selected then
-						MergeObject(self.data.g, selected);
+					if totalWeight > 0 and #temp > 0 then
+						local weight, selected = math.random(totalWeight), nil;
+						totalWeight = 0;
+						for i,o in ipairs(temp) do
+							totalWeight = totalWeight + ((o.total or 1) - (o.progress or 0));
+							if weight <= totalWeight then
+								selected = o;
+								break;
+							end
+						end
+						if not selected then selected = temp[#temp - 1]; end
+						if selected then
+							MergeObject(self.data.g, selected);
+						else
+							app.print("There was nothing to randomly select from.");
+						end
 					else
 						app.print("There was nothing to randomly select from.");
 					end
 				else
-					app.print("There was nothing to randomly select from.");
+					app.print("No search method specified.");
 				end
 				for i=#self.data.options,1,-1 do
 					tinsert(self.data.g, 1, self.data.options[i]);
@@ -9510,10 +9569,13 @@ end);
 			self.Reroll = function(self)
 				Push(self, "Rebuild", self.Rebuild);
 			end
-			self.method = SelectInstance;
 			for i,o in ipairs(self.data.options) do
 				tinsert(self.data.g, o);
 			end
+			self:RegisterEvent("PLAYER_LOGIN");
+			self:SetScript("OnEvent", function(self, e, ...) 
+				rerollOption.text = "Reroll: " .. app.GetDataMember("RandomSearchFilter", "Instance");
+			end);
 		end
 		
 		-- Update the window and all of its row data
@@ -9521,7 +9583,7 @@ end);
 		self.data.total = 0;
 		UpdateGroups(self.data, self.data.g);
 		UpdateWindow(self, true);
-	end);--:SetVisible(true);
+	end);
 end)();
 (function()
 	local worldMapIDs = {
