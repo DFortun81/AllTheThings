@@ -141,7 +141,7 @@ _.Zones =
 								["questID"] = 32610,	-- Looted from Rare this week
 								["coords"] = {
 									{ 50.49, 74.96, 504 },	-- Path Start
-									{ 50.52, 72.14, 504 },	-- Spawn
+									{ 51.31, 71.19, 504 },	-- Spawn
 								},
 								["g"] = {
 									{	-- Progenitus

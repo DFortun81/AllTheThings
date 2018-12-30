@@ -9,12 +9,35 @@ _.Zones =
 			{	-- Isle of Thunder
 				["mapID"] = 504,	-- Isle of Thunder
 				["g"] = {
-					n(-25, { 	-- Pet Battle
-						p(1181), 	-- Elder Python
-						p(1179), 	-- Electrified Razortooth
-						p(1182), 	-- Swamp Croaker
-						p(1175), 	-- Thundertail Flapper
-					}),
+					{	-- Pet Battle
+						["npcID"] = -25,	-- Pet Battle
+						["f"] = 101,		-- Battle Pets
+						["g"] = {
+							{	-- Elder Python
+								["speciesID"] = 1181,	-- Elder Python
+								["crs"] = { 69818 },	-- Elder Python
+							},
+							{	-- Electrified Razortooth
+								["speciesID"] = 1179,	-- Electrified Razortooth
+								["crs"] = { 69794 },	-- Electrified Razortooth
+							},
+							{	-- Filthing
+								["itemID"] = 97961,	-- Half-Empty Food Container
+								["crs"] = {
+									69251,	-- Quivering Filth
+								},
+								["description"] = "This item is obtained by killing Quivering Filth",
+							},
+							{	-- Swamp Croaker
+								["speciesID"] = 1182,	-- Swamp Croaker
+								["crs"] = { 69819 },	-- Swamp Croaker
+							},
+							{	-- Thundertail Flapper
+								["speciesID"] = 1175,	-- Thundertail Flapper
+								["crs"] = { 69648 },	-- Thundertail Flapper
+							},
+						},
+					},
 				},
 			},
 		},

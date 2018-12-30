@@ -10,29 +10,23 @@ _.Zones =
 				["mapID"] = 504,	-- Isle of Thunder
 				["g"] = {
 					n(-0, { 	-- Zone Drops
+						["crs"] = {
+							70000,	-- Al'tabim the All-Seeing
+							70001,	-- Backbreaker Uru
+							69999,	-- God-Hulk Ramuk
+							69998,	-- Goda
+							50358,	-- Haywire Sunreaver Construct
+							69996,	-- Ku'lai the Skyclaw
+							70002,	-- Lu-Ban
+							70003,	-- Molthor
+							69664,	-- Mumta
+							69997,	-- Progenitus
+						},	
 						["g"] = {
-							{	-- Half-Empty Food Container
-								["itemID"] = 97961,	-- Half-Empty Food Container
-								["crs"] = {
-									69251,	-- Quivering Filth
-								},
-							},
 							{	-- Incantation of Deng
 								["itemID"] = 94233,			-- Incantation of Deng
 								["achievementID"] = 8110,	-- These Mogu Have Gotta Go-gu
 								["criteriaID"] = 2,			-- Forgemaster Deng
-								["crs"] = {
-									70000,	-- Al'tabim the All-Seeing
-									70001,	-- Backbreaker Uru
-									69999,	-- God-Hulk Ramuk
-									69998,	-- Goda
-									50358,	-- Haywire Sunreaver Construct
-									69996,	-- Ku'lai the Skyclaw
-									70002,	-- Lu-Ban
-									70003,	-- Molthor
-									69664,	-- Mumta
-									69997,	-- Progenitus
-								},
 								["g"] = {
 									{	-- Forgemaster Deng
 										["criteriaID"] = 2,		-- Forgemaster Deng
@@ -49,18 +43,6 @@ _.Zones =
 								["itemID"] = 94130,			-- Incantation of Haqin
 								["achievementID"] = 8110,	-- These Mogu Have Gotta Go-gu
 								["criteriaID"] = 1,			-- Haqin of the Hundred Spears
-								["crs"] = {
-									70000,	-- Al'tabim the All-Seeing
-									70001,	-- Backbreaker Uru
-									69999,	-- God-Hulk Ramuk
-									69998,	-- Goda
-									50358,	-- Haywire Sunreaver Construct
-									69996,	-- Ku'lai the Skyclaw
-									70002,	-- Lu-Ban
-									70003,	-- Molthor
-									69664,	-- Mumta
-									69997,	-- Progenitus
-								},
 								["g"] = {
 									{	-- Haqin of the Hundred Spears
 										["criteriaID"] = 1,		-- Haqin of the Hundred Spears
@@ -77,18 +59,6 @@ _.Zones =
 								["itemID"] = 95350,			-- Incantation of Vu
 								["achievementID"] = 8110,	-- These Mogu Have Gotta Go-gu
 								["criteriaID"] = 3,			-- Sparkmancer Vu
-								["crs"] = {
-									70000,	-- Al'tabim the All-Seeing
-									70001,	-- Backbreaker Uru
-									69999,	-- God-Hulk Ramuk
-									69998,	-- Goda
-									50358,	-- Haywire Sunreaver Construct
-									69996,	-- Ku'lai the Skyclaw
-									70002,	-- Lu-Ban
-									70003,	-- Molthor
-									69664,	-- Mumta
-									69997,	-- Progenitus
-								},
 								["g"] = {
 									{	-- Sparkmancer Vu
 										["criteriaID"] = 3,		-- Sparkmancer Vu
@@ -107,49 +77,13 @@ _.Zones =
 								["classes"] = {
 									9,	-- Warlock
 								},
-								["crs"] = {
-									70000,	-- Al'tabim the All-Seeing
-									70001,	-- Backbreaker Uru
-									69999,	-- God-Hulk Ramuk
-									69998,	-- Goda
-									50358,	-- Haywire Sunreaver Construct
-									69996,	-- Ku'lai the Skyclaw
-									70002,	-- Lu-Ban
-									70003,	-- Molthor
-									69664,	-- Mumta
-									69997,	-- Progenitus
-								},
 							},
 							{	-- Shan'ze Ritual Stone
 								["itemID"] = 94221,		-- Shan'ze Ritual Stone
-								["crs"] = {
-									70000,	-- Al'tabim the All-Seeing
-									70001,	-- Backbreaker Uru
-									69999,	-- God-Hulk Ramuk
-									69998,	-- Goda
-									50358,	-- Haywire Sunreaver Construct
-									69996,	-- Ku'lai the Skyclaw
-									70002,	-- Lu-Ban
-									70003,	-- Molthor
-									69664,	-- Mumta
-									69997,	-- Progenitus
-								},
 							},
 							{	-- Tome of Valor
 								["itemID"] = 97268,		-- Tome of Valor
 								["u"] = 2,				-- Removed in Patch 5.3
-								["crs"] = {
-									70000,	-- Al'tabim the All-Seeing
-									70001,	-- Backbreaker Uru
-									69999,	-- God-Hulk Ramuk
-									69998,	-- Goda
-									50358,	-- Haywire Sunreaver Construct
-									69996,	-- Ku'lai the Skyclaw
-									70002,	-- Lu-Ban
-									70003,	-- Molthor
-									69664,	-- Mumta
-									69997,	-- Progenitus
-								},
 							},
 						},
 					}),
