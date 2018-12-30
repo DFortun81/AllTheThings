@@ -10,6 +10,7 @@ _.Zones =
 				["maps"] = {
 					504,	-- Isle of Thunder
 					505,	-- Lightning Vein Mine
+					506,	-- The Swollen Vault
 					516,	-- Scenario [Phase 1]
 				},
 				["lvl"] = 85,
