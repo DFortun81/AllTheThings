@@ -1132,6 +1132,7 @@ end })
 local searchCache = {};
 local function SetNote(key, id, note)
 	wipe(searchCache);
+	collectgarbage();
 	SetDataSubSubMember("Notes", key, id, note);
 end
 local function GetNoteForGroup(group)
@@ -1189,6 +1190,8 @@ local function CreateObject(t)
 				t = app.CreateItemSource(t.s, t.itemID, t);
 			elseif t.encounterID then
 				t = app.CreateEncounter(t.encounterID, t);
+			elseif t.instanceID then
+				t = app.CreateInstance(t.instanceID, t);
 			elseif t.currencyID then
 				t = app.CreateCurrencyClass(t.currencyID, t);
 			elseif t.speciesID then
@@ -1244,6 +1247,10 @@ local function MergeObject(g, t, index)
 			key = "objectID";
 		elseif t.followerID then
 			key = "followerID";
+		elseif t.encounterID then
+			key = "encounterID";
+		elseif t.instanceID then
+			key = "instanceID";
 		elseif t.illusionID then
 			key = "illusionID";
 		elseif t.speciesID then
@@ -8000,6 +8007,7 @@ function app:RefreshData(lazy, safely, got)
 			app:UpdateWindows(nil, got);
 		end
 		wipe(searchCache);
+		collectgarbage();
 	end);
 end
 function app:GetWindow(suffix, parent, onUpdate)
@@ -9121,6 +9129,394 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 	UpdateWindow(self, true);
 end);
 (function()
+	app:GetWindow("Random", UIParent, function(self)
+		if not self.initialized then
+			self.initialized = true;
+			local function SearchRecursively(group, field, temp)
+				if group.visible and not group.saved then
+					if group.g then
+						for i, subgroup in ipairs(group.g) do
+							SearchRecursively(subgroup, field, temp);
+						end
+					end
+					if group[field] then tinsert(temp, group); end
+				end
+			end
+			local function SearchRecursivelyForValue(group, field, value, temp)
+				if group.visible and not group.saved then
+					if group.g then
+						for i, subgroup in ipairs(group.g) do
+							SearchRecursivelyForValue(subgroup, field, value, temp);
+						end
+					end
+					if group[field] and group[field] == value then tinsert(temp, group); end
+				end
+			end
+			local function SelectAchievement()
+				if searchCache["randomachievement"] then
+					return searchCache["randomachievement"];
+				else
+					local searchResults, dict, temp = {}, {} , {};
+					SearchRecursively(app:GetWindow("Prime").data, "achievementID", searchResults);
+					for i,o in ipairs(searchResults) do
+						local data = dict[i];
+						o = CreateObject(o);
+						o.collectible = true;
+						if data then
+							MergeObject({ data }, o);
+						else
+							dict[i] = o;
+						end
+					end
+					for i,o in pairs(dict) do
+						if not (o.saved or o.collected) and not o.saved and o.collectible and not o.mapID then
+							tinsert(temp, o);
+						end
+					end
+					searchCache["randomachievement"] = temp;
+					return temp;
+				end
+			end
+			local function SelectItem()
+				if searchCache["randomitem"] then
+					return searchCache["randomitem"];
+				else
+					local searchResults, dict, temp = {}, {} , {};
+					SearchRecursively(app:GetWindow("Prime").data, "itemID", searchResults);
+					for i,o in ipairs(searchResults) do
+						local data = dict[i];
+						o = CreateObject(o);
+						if data then
+							MergeObject({ data }, o);
+						else
+							dict[i] = o;
+						end
+					end
+					for i,o in pairs(dict) do
+						if not (o.saved or o.collected) and o.collectible then
+							tinsert(temp, o);
+						end
+					end
+					searchCache["randomitem"] = temp;
+					return temp;
+				end
+			end
+			local function SelectInstance()
+				if searchCache["randominstance"] then
+					return searchCache["randominstance"];
+				else
+					local searchResults, dict, temp = {}, {} , {};
+					SearchRecursively(app:GetWindow("Prime").data, "instanceID", searchResults);
+					for i,o in ipairs(searchResults) do
+						local data = dict[i];
+						o = CreateObject(o);
+						if data then
+							MergeObject({ data }, o);
+						else
+							dict[i] = o;
+						end
+					end
+					for i,o in pairs(dict) do
+						if not (o.saved or o.collected) and (((o.total or 0) - (o.progress or 0)) > 0) then
+							tinsert(temp, o);
+						end
+					end
+					searchCache["randominstance"] = temp;
+					return temp;
+				end
+			end
+			local function SelectMount()
+				if searchCache["randommount"] then
+					return searchCache["randommount"];
+				else
+					local searchResults, dict, temp = {}, {} , {};
+					SearchRecursivelyForValue(app:GetWindow("Prime").data, "f", 100, searchResults);
+					for i,o in ipairs(searchResults) do
+						local data = dict[i];
+						o = CreateObject(o);
+						if data then
+							MergeObject({ data }, o);
+						else
+							dict[i] = o;
+						end
+					end
+					for i,o in pairs(dict) do
+						if not (o.saved or o.collected) and o.collectible and (not o.achievementID or o.itemID) then
+							tinsert(temp, o);
+						end
+					end
+					searchCache["randommount"] = temp;
+					return temp;
+				end
+			end
+			local function SelectPet()
+				if searchCache["randompet"] then
+					return searchCache["randompet"];
+				else
+					local searchResults, dict, temp = {}, {} , {};
+					SearchRecursively(app:GetWindow("Prime").data, "speciesID", searchResults);
+					for i,o in ipairs(searchResults) do
+						local data = dict[i];
+						o = CreateObject(o);
+						if data then
+							MergeObject({ data }, o);
+						else
+							dict[i] = o;
+						end
+					end
+					for i,o in pairs(dict) do
+						if not (o.saved or o.collected) and o.collectible then
+							tinsert(temp, o);
+						end
+					end
+					searchCache["randompet"] = temp;
+					return temp;
+				end
+			end
+			local function SelectToy()
+				if searchCache["randomtoy"] then
+					return searchCache["randomtoy"];
+				else
+					local searchResults, dict, temp = {}, {} , {};
+					SearchRecursively(app:GetWindow("Prime").data, "isToy", searchResults);
+					for i,o in ipairs(searchResults) do
+						local data = dict[i];
+						o = CreateObject(o);
+						if data then
+							MergeObject({ data }, o);
+						else
+							dict[i] = o;
+						end
+					end
+					for i,o in pairs(dict) do
+						if not (o.saved or o.collected) and o.collectible then
+							tinsert(temp, o);
+						end
+					end
+					searchCache["randomtoy"] = temp;
+					return temp;
+				end
+			end
+			local excludedZones = {
+				12,	-- Kalimdor
+				13, -- Eastern Kingdoms
+				101,	-- Outland
+				113,	-- Northrend
+				424,	-- Pandaria
+				948,	-- The Maelstrom
+				572,	-- Draenor
+				619,	-- The Broken Isles
+				905,	-- Argus
+				876,	-- Kul'Tiras
+				875,	-- Zandalar
+			};
+			local function SelectZone()
+				if searchCache["randomzone"] then
+					return searchCache["randomzone"];
+				else
+					local searchResults, dict, temp = {}, {} , {};
+					SearchRecursively(app:GetWindow("Prime").data, "mapID", searchResults);
+					for i,o in ipairs(searchResults) do
+						local data = dict[i];
+						o = CreateObject(o);
+						if data then
+							MergeObject({ data }, o);
+						else
+							dict[i] = o;
+						end
+					end
+					for i,o in pairs(dict) do
+						if not (o.saved or o.collected) and (((o.total or 0) - (o.progress or 0)) > 0) and not o.instanceID and not contains(excludedZones, o.mapID) then
+							tinsert(temp, o);
+						end
+					end
+					searchCache["randomzone"] = temp;
+					return temp;
+				end
+			end
+			local rerollOption = 
+			{
+				['text'] = "Reroll: Instance",
+				['icon'] = "Interface\\Icons\\ability_monk_roll",
+				['description'] = "Click this button to reroll using the active filter.",
+				['visible'] = true,
+				['f'] = -1,
+				['key'] = "nope",
+				['OnClick'] = function(row, button)
+					self:Reroll();
+					return true;
+				end,
+				['back'] = 0.5,
+			};
+			self.data = {
+				['text'] = "Random - Go Get 'Em!",
+				['icon'] = "Interface\\Icons\\Ability_Rogue_RolltheBones.blp", 
+				["description"] = "This window allows you to randomly select a place or item to get. Go get 'em!",
+				['visible'] = true, 
+				['expanded'] = true,
+				['back'] = 1,
+				['options'] = {
+					{
+						['text'] = "Randomly Select an Achievement",
+						['icon'] = "Interface\\Icons\\Achievement_FeatsOfStrength_Gladiator_10",
+						['description'] = "Click this button to select a random achievement based on what you're missing.",
+						['visible'] = true,
+						['f'] = -1,
+						['key'] = "nope",
+						['OnClick'] = function(row, button)
+							self.method = SelectAchievement;
+							rerollOption.text = "Reroll: Achievement";
+							self:Reroll();
+							return true;
+						end,
+						['back'] = 0.5,
+					},
+					{
+						['text'] = "Randomly Select an Item",
+						['icon'] = "Interface\\Icons\\INV_Box_02",
+						['description'] = "Click this button to select a random item based on what you're missing.",
+						['visible'] = true,
+						['f'] = -1,
+						['key'] = "nope",
+						['OnClick'] = function(row, button)
+							self.method = SelectItem;
+							rerollOption.text = "Reroll: Item";
+							self:Reroll();
+							return true;
+						end,
+						['back'] = 0.5,
+					},
+					{
+						['text'] = "Randomly Select an Instance",
+						['icon'] = "Interface\\Icons\\Achievement_Dungeon_GloryoftheRaider",
+						['description'] = "Click this button to select a random instance based on what you're missing.",
+						['visible'] = true,
+						['f'] = -1,
+						['key'] = "nope",
+						['OnClick'] = function(row, button)
+							self.method = SelectInstance;
+							rerollOption.text = "Reroll: Instance";
+							self:Reroll();
+							return true;
+						end,
+						['back'] = 0.5,
+					},
+					{
+						['text'] = "Randomly Select a Mount",
+						['icon'] = "Interface\\Icons\\Ability_Mount_AlliancePVPMount",
+						['description'] = "Click this button to select a random mount based on what you're missing.",
+						['visible'] = true,
+						['f'] = -1,
+						['key'] = "nope",
+						['OnClick'] = function(row, button)
+							self.method = SelectMount;
+							rerollOption.text = "Reroll: Mount";
+							self:Reroll();
+							return true;
+						end,
+						['back'] = 0.5,
+					},
+					{
+						['text'] = "Randomly Select a Pet",
+						['icon'] = "Interface\\Icons\\INV_Box_02",
+						['description'] = "Click this button to select a random pet based on what you're missing.",
+						['visible'] = true,
+						['f'] = -1,
+						['key'] = "nope",
+						['OnClick'] = function(row, button)
+							self.method = SelectPet;
+							rerollOption.text = "Reroll: Pet";
+							self:Reroll();
+							return true;
+						end,
+						['back'] = 0.5,
+					},
+					{
+						['text'] = "Randomly Select a Toy",
+						['icon'] = "Interface\\Icons\\INV_Misc_Toy_10",
+						['description'] = "Click this button to select a random toy based on what you're missing.",
+						['visible'] = true,
+						['f'] = -1,
+						['key'] = "nope",
+						['OnClick'] = function(row, button)
+							self.method = SelectToy;
+							rerollOption.text = "Reroll: Toy";
+							self:Reroll();
+							return true;
+						end,
+						['back'] = 0.5,
+					},
+					{
+						['text'] = "Randomly Select a Zone",
+						['icon'] = "Interface\\Icons\\INV_Misc_Map_01",
+						['description'] = "Click this button to select a random zone based on what you're missing.",
+						['visible'] = true,
+						['f'] = -1,
+						['key'] = "nope",
+						['OnClick'] = function(row, button)
+							self.method = SelectZone;
+							rerollOption.text = "Reroll: Zone";
+							self:Reroll();
+							return true;
+						end,
+						['back'] = 0.5,
+					},
+					rerollOption,
+				},
+				['g'] = { },
+			};
+			self.Rebuild = function(self, no)
+				-- Rebuild all the datas
+				wipe(self.data.g);
+				for i,o in ipairs(self.data.options) do
+					tinsert(self.data.g, o);
+				end
+				
+				-- Call to our method and build a list to draw from
+				local temp = self.method and self.method(temp) or {};
+				local totalWeight = 0;
+				for i,o in ipairs(temp) do
+					totalWeight = totalWeight + ((o.total or 1) - (o.progress or 0));
+				end
+				if totalWeight > 0 and #temp > 0 then
+					local weight, selected = math.random(totalWeight), nil;
+					totalWeight = 0;
+					for i,o in ipairs(temp) do
+						totalWeight = totalWeight + ((o.total or 1) - (o.progress or 0));
+						if weight <= totalWeight then
+							selected = o;
+							break;
+						end
+					end
+					if not selected then selected = temp[#temp - 1]; end
+					if selected then
+						MergeObject(self.data.g, selected);
+					else
+						app.print("There was nothing to randomly select from.");
+					end
+				else
+					app.print("There was nothing to randomly select from.");
+				end
+				BuildGroups(self.data, self.data.g);
+				if not no then self:Update(); end
+			end
+			self.Reroll = function(self)
+				Push(self, "Rebuild", self.Rebuild);
+			end
+			self.method = SelectInstance;
+			for i,o in ipairs(self.data.options) do
+				tinsert(self.data.g, o);
+			end
+		end
+		
+		-- Update the window and all of its row data
+		self.data.progress = 0;
+		self.data.total = 0;
+		UpdateGroups(self.data, self.data.g);
+		UpdateWindow(self, true);
+	end);--:SetVisible(true);
+end)();
+(function()
 	local worldMapIDs = {
 		14,		-- Arathi Highlands
 		62,		-- Darkshore
@@ -9423,6 +9819,8 @@ SlashCmdList["AllTheThings"] = function(cmd)
 		app:ToggleMiniListForCurrentZone();
 	elseif cmd == "ra" then
 		app:GetWindow("RaidAssistant"):Toggle();
+	elseif cmd == "ran" or cmd == "rand" or cmd == "random" then
+		app:GetWindow("Random"):Toggle();
 	elseif cmd == "wq" then
 		app:GetWindow("WorldQuests"):Toggle();
 	elseif cmd == "unsorted" then
@@ -9468,6 +9866,12 @@ end
 SLASH_AllTheThingsRA1 = "/attra";
 SlashCmdList["AllTheThingsRA"] = function(cmd)
 	app:GetWindow("RaidAssistant"):Toggle();
+end
+
+SLASH_AllTheThingsRAN1 = "/attran";
+SLASH_AllTheThingsRAN2 = "/attrandom";
+SlashCmdList["AllTheThingsRAN"] = function(cmd)
+	app:GetWindow("Random"):Toggle();
 end
 
 SLASH_AllTheThingsWQ1 = "/attwq";
@@ -9527,6 +9931,8 @@ app.events.VARIABLES_LOADED = function()
 	BINDING_NAME_ALLTHETHINGS_OPEN_RAID_ASSISTANT = L("OPEN_RAID_ASSISTANT");
 	BINDING_NAME_ALLTHETHINGS_TOGGLE_RAID_ASSISTANT = L("TOGGLE_RAID_ASSISTANT");
 	BINDING_NAME_ALLTHETHINGS_TOGGLE_WORLD_QUESTS_LIST = L("TOGGLE_WORLD_QUESTS_LIST");
+	BINDING_NAME_ALLTHETHINGS_TOGGLERANDOM = L("TOGGLE_RANDOM");
+	BINDING_NAME_ALLTHETHINGS_REROLL_RANDOM = L("REROLL_RANDOM");
 	
 	-- Cache information about the player.
 	local _, class, classIndex = UnitClass("player");
@@ -9880,6 +10286,7 @@ app.events.NEW_PET_ADDED = function(petID)
 		UpdateSearchResults(SearchForField("speciesID", speciesID));
 		app:PlayFanfare();
 		wipe(searchCache);
+		collectgarbage();
 	end
 end
 app.events.PET_JOURNAL_PET_DELETED = function(petID)
@@ -9907,6 +10314,7 @@ app.events.TOYS_UPDATED = function(itemID, new)
 		app:RefreshData(false, true, true);
 		app:PlayFanfare();
 		wipe(searchCache);
+		collectgarbage();
 		
 		if GetDataMember("ShowNotifications", true) then
 			local name, link = GetItemInfo(itemID);
@@ -9935,6 +10343,7 @@ app.events.TRANSMOG_COLLECTION_SOURCE_ADDED = function(sourceID)
 			app.ActiveItemCollectionHelper(sourceID, oldState);
 			app:PlayFanfare();
 			wipe(searchCache);
+			collectgarbage();
 		end
 	end
 end
@@ -9978,5 +10387,6 @@ app.events.TRANSMOG_COLLECTION_SOURCE_REMOVED = function(sourceID)
 		app:RefreshData(false, true, true);
 		app:PlayRemoveSound();
 		wipe(searchCache);
+		collectgarbage();
 	end
 end

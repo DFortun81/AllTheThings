@@ -41,4 +41,12 @@
 	<Binding name="ALLTHETHINGS_TOGGLE_WORLD_QUESTS_LIST" category="ADDONS">
 		AllTheThings:GetWindow("WorldQuests"):Toggle();
 	</Binding>
+	<Binding name="ALLTHETHINGS_TOGGLERANDOM" category="ADDONS">
+		AllTheThings:GetWindow("Random"):SetVisible(not AllTheThings:GetWindow("Random"):IsVisible());
+	</Binding>
+	<Binding name="ALLTHETHINGS_REROLL_RANDOM" category="ADDONS">
+		local window = AllTheThings:GetWindow("Random");
+		window:SetVisible(true);
+		window:Reroll();
+	</Binding>
 </Bindings>
