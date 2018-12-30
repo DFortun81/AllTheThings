@@ -256,6 +256,7 @@ _.WorldDrops =
 				}),
 				n(-341, { -- Wands
 					i(116490),	-- Moonwhisper Wand
+					un(7, i(25285)),	-- Bloodwood Wand
 					i(116507),	-- Growthshaper Wand
 					i(116524),	-- Evermorn Wand
 					i(116541),	-- Zangarra Wand

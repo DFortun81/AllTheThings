@@ -332,7 +332,6 @@ _.WorldDrops =
 					i(25282),	-- Mahogany Wand
 					i(25283),	-- Crystallized Ebony Wand
 					i(25284),	-- Purpleheart Wand
-					i(25285),	-- Bloodwood Wand
 					i(25286),	-- Yew Wand
 					i(25287),	-- Magician's Wand
 					i(25288),	-- Conjurer's Wand
