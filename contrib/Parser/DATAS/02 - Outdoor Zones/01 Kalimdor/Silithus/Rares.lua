@@ -20,6 +20,24 @@ _.Zones =
 							i(10107),	-- Wanderer's Bracers
 						},
 					}), 
+					n(15211, { 	-- Azure Templar
+						["groups"] = {
+							un(7, i(20652)),	-- Abyssal Cloth Slippers
+							un(7, i(20653)), 	-- Abyssal Plate Gauntlets
+							un(2, i(20654)),	-- Amethyst War Staff
+						},
+						["u"] = 43,
+						["description"] = "The Azure Templar is a level 60 named water elemental summoned in Silithus from a Lesser Wind Stone. The summoning ritual requires a Twilight Trappings set. To guarantee that the specific Abyssal Templar is summoned, an Object of Beckoning can be used.",
+					}),
+					n(15205, {	-- Baron Kazum
+						["groups"] = {
+							un(2, i(20686)),	-- Abyssal Cloth Amice
+							un(2, i(20687)),	-- Abyssal Plate Vambraces
+							un(2, i(20688)),	-- Earthen Guard
+						},
+						["u"] = 43,
+						["description"] = "Summoning Baron Kazum requires a full Twilight Trappings set, a Twilight Cultist Medallion of Station, and a Twilight Cultist Ring of Lordship.",
+					}),
 					n(50746, {	-- Bornix the Burrower
 						["coord"] = { 63.0, 89.0 },
 						["groups"] = {
@@ -30,6 +48,24 @@ _.Zones =
 							i(10214),	-- Elegant Gloves
 						},
 					}), 
+					n(15209, { 	-- Crimson Templar
+						["groups"] = {
+							un(7, i(20655)), 	-- Abyssal Cloth Handwraps
+							un(7, i(20656)), 	-- Abyssal Mail Sabatons
+							un(2, i(20657)), 	-- Crystal Tipped Stiletto
+						},
+						["u"] = 43,
+						["description"] = "The Crimson Templar is a level 60 fire elemental summoned in Silithus from a Lesser Wind Stone. The summoning ritual requires a Twilight Trappings set. To guarantee that the specific Abyssal Templar is summoned, an Object of Beckoning can be used.",
+					}),
+					n(15307, { 	-- Earthen Templar
+						["groups"] = {
+							un(7, i(20661)), 	-- Abyssal Leather Gloves
+							un(7, i(20662)), 	-- Abyssal Plate Greaves
+							un(2, i(20663)), 	-- Deep Strike Bow
+						},
+						["u"] = 43,
+						["description"] = "The Earthen Templar is a level 60 earth elemental summoned in Silithus from a Lesser Wind Stone. The summoning ritual requires a Twilight Trappings set. To guarantee that the specific Abyssal Templar is summoned, an Object of Beckoning can be used. ",
+					}),
 					n(50897, {	-- Ffexk the Dunestalker
 						["coord"] = { 32.1, 53.8 },
 						["groups"] = {
@@ -138,7 +174,25 @@ _.Zones =
 							i(10240),	-- Heavy Lamellar Chestpiece
 							i(10189),	-- Swashbuckler's Shoulderpads
 						},
-					}), 
+					}),
+					n(15204, {	-- High Marshal Whirlaxis
+						["groups"] = {
+							un(2, i(20690)),	-- Abyssal Cloth Wristbands
+							un(2, i(20689)),	-- Abyssal Leather Shoulders
+							un(2, i(20691)),	-- Windshear Cape
+						},
+						["u"] = 43,
+						["description"] = "This was a summonable elite.",
+					}),
+					n(15212, { 	-- Hoary Templar
+						["groups"] = {
+							un(7, i(20658)), 	-- Abyssal Leather Boots
+							un(7, i(20659)), 	-- Abyssal Mail Handguards
+							un(2, i(20660)), 	-- Stonecutting Glaive
+						},
+						["u"] = 43,
+						["description"] = "The Hoary Templar is a level 60 air elemental summoned in Silithus from a Lesser Wind Stone. The summoning ritual requires a Twilight Trappings set. To guarantee that the specific Abyssal Templar is summoned, an Object of Beckoning can be used.",
+					}),
 					n(14478, {	-- Huricanian
 						["coords"] = {
 							{ 33.8, 14.6 },
@@ -467,7 +521,52 @@ _.Zones =
 							i(10224),	-- Nightshade Cloak
 							i(10122),	-- Ornate Girdle
 						},
-					}), 
+					}),
+					n(15206, { 	-- The Duke of Cynders
+						["groups"] = {
+							un(7, i(20664)), 	-- Abyssal Cloth Sash
+							un(7, i(20665)), 	-- Abyssal Leather Leggings
+							un(2, i(20666)), 	-- Hardened Steel Warhammer
+						},
+						["u"] = 43,
+						["description"] = "The Duke of Cynders does not appear normally in the standard plane of existence but must be summoned. There are two ways of summoning the Duke:\n 1. Acquire a set of Twilight Trappings and a  [Twilight Cultist Medallion of Station]. This will make you appear to be a middle-ranked leader of the Twilight's Hammer. Travel to a Wind stone and use it to summon a Duke. You have a 1 in 4 chance of summoning the Duke of Cynders.\n 2. Turn in Encrypted Twilight Texts to Hermit Ortell. He will then mail you a random item. If you get a Scroll: Create Signet of Beckoning (Fire), you can combine that with a  [Dark Rune] and 5  [Firebloom] to create a  [Signet of Beckoning: Fire]. This signet can be used to specifically summon the Duke of Cynders.",
+					}),
+					n(15207, { 	-- The Duke of Fathoms
+						["groups"] = {
+							un(7, i(20667)), 	-- Abyssal Leather Belt
+							un(7, i(20668)), 	-- Abyssal Mail Legguards
+							un(2, i(20669)), 	-- Darkstone Claymore
+						},
+						["u"] = 43,
+						["description"] = "The Duke of Fathoms does not appear normally in the standard plane of existence but must be summoned. There are two ways of summoning the Duke: \n 1. Acquire a set of Twilight Trappings and a Twilight Cultist Medallion of Station. This will make you appear to be a middle-ranked leader of the Twilight's Hammer. Travel to a Wind stone and use it to summon a Duke. You have a 1 in 4 chance of summoning the Duke of Fathoms. \n 2. Turn in Encrypted Twilight Texts to Hermit Ortell. He will then mail you a random item. If you get a Scroll: Create Signet of Beckoning (Water), you can combine that with a Dark Rune and 5 Enchanted Water to create a Signet of Beckoning: Water. This signet can be used to specifically summon the Duke of Fathoms.",
+					}),
+					n(15208, { 	-- The Duke of Shards
+						["groups"] = {
+							un(7, i(20670)), 	-- Abyssal Mail Clutch
+							un(7, i(20671)),	-- Abyssal Plate Legguards
+							un(2, i(20672)), 	-- Sparkling Crystal Wand
+						},
+						["u"] = 43,
+						["description"] = "The Duke of Shards does not appear normally in the standard plane of existence but must be summoned. There are two ways of summoning the Duke: \n1. Acquire a set of Twilight Trappings and a Twilight Cultist Medallion of Station. This will make you appear to be a middle-ranked leader of the Twilight's Hammer. Travel to a Wind stone and use it to summon a Duke. You have a 1 in 4 chance of summoning the Duke of Shards. \n2. Turn in Encrypted Twilight Texts to Hermit Ortell. He will then mail you a random item. If you get a Scroll: Create Signet of Beckoning (Earth), you can combine that with a Dark Rune and 5 Dense Stone to create a Signet of Beckoning: Stone. This signet can be used to specifically summon the Duke of Shards.",
+					}),
+					n(15220, { 	-- The Duke of Zephyrs
+						["groups"] = {
+							un(7, i(20674)),	-- Abyssal Cloth Pants
+							un(7, i(20673)), 	-- Abyssal Plate Girdle
+							un(2, i(20675)), 	-- Soulrender
+						},
+						["u"] = 43,
+						["description"] = "The Duke of Zephyrs does not appear normally in the standard plane of existence but must be summoned. There are two ways of summoning the Duke: \n1. Acquire a set of Twilight Trappings and a Twilight Cultist Medallion of Station. This will make you appear to be a middle-ranked leader of the Twilight's Hammer. Travel to a Wind stone and use it to summon a Duke. You have a 1 in 4 chance of summoning the Duke of Zephyrs. \n2. Turn in Encrypted Twilight Texts to Hermit Ortell. He will then mail you a random item. If you get a Scroll: Create Signet of Beckoning (Thunder), you can combine that with a Dark Rune and 5 Elemental Air to create a Signet of Beckoning: Thunder. This signet can be used to specifically summon the Duke of Zephyrs.",
+					}),
+					n(14454, { 	-- The Windreaver
+						["groups"] = {
+							un(8, i(21548)),	-- Pattern: Stormshroud Gloves
+							un(7, i(18676)), 	-- Sash of the Windreaver
+							un(7, i(18677)), 	-- Zephyr Cloak
+						},
+						["u"] = 43,
+						["description"] = "This rare was only available during the Elemental Invasions.",
+					}),
 					n(51004, {	-- Toxx
 						["coord"] = { 42.8, 18.2 },
 						["groups"] = {

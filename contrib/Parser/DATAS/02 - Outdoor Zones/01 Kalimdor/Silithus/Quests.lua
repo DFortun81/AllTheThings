@@ -104,6 +104,115 @@ _.Zones =
 							},
 						}),
 					}),
+					{	-- A Humble Offering
+						["questID"] = 9248,
+						["groups"] = {
+							un(2, i(22725)),	-- Band of Cenarius
+						},
+						["u"] = 40,
+						["qg"] = 15282,	-- Aurel Goldleaf
+					},
+					{ 	-- Abyssal Contacts
+						["questID"] = 8361,
+						["groups"] = {
+							un(2, i(20603, { 	-- Bag of Spoils
+								un(7, i(20694)), 	-- Glowing Black Orb
+								un(7, i(20693)), 	-- Weighted Cloak
+								un(7, i(20692)),	-- Multicolored Band
+							})),
+						},
+						["u"] = 40,
+						["qg"] = 15306,	-- Bor Wildmane
+					},
+					{	-- Armaments of War (Warrior)
+						["questID"] = 8316,
+						["u"] = 40,	-- Legacy Quest
+						["qg"] = 15183,	-- Geologist Larksbane
+						["classes"] = { 1 },	-- Warrior
+						["sourceQuest"] = 8315,	-- The Calling
+						["groups"] = {
+							un(2, i(20699)),	-- Cenarion Reservist's Legplates
+							un(2, i(20710)),	-- Crystal Encrusted Greaves
+						},
+					},
+					{	-- Armaments of War (Paladin)
+						["questID"] = 8376,
+						["u"] = 40,	-- Legacy Quest
+						["qg"] = 15183,	-- Geologist Larksbane
+						["classes"] = { 2 },	-- Paladin
+						["sourceQuest"] = 8315,	-- The Calling
+						["groups"] = {
+							un(2, i(20700)),	-- Cenarion Reservist's Legplates
+							un(2, i(20711)),	-- Crystal Lined Greaves
+						},
+					},
+					{	-- Armaments of War (Hunter)
+						["questID"] = 8377,
+						["u"] = 40,	-- Legacy Quest
+						["qg"] = 15183,	-- Geologist Larksbane
+						["classes"] = { 3 },	-- Hunter
+						["sourceQuest"] = 8315,	-- The Calling
+						["groups"] = {
+							un(2, i(20702)),	-- Cenarion Reservist's Legguards
+							un(2, i(20713)),	-- Desertstalkers' Gauntlets
+						},
+					},
+					{	-- Armaments of War (Rogue)
+						["questID"] = 8378,
+						["u"] = 40,	-- Legacy Quest
+						["qg"] = 15183,	-- Geologist Larksbane
+						["classes"] = { 4 },	-- Rogue
+						["sourceQuest"] = 8315,	-- The Calling
+						["groups"] = {
+							un(2, i(20703)),	-- Cenarion Reservist's Leggings
+							un(2, i(20715)),	-- Dunestalker's Boots
+						},
+					},
+					{	-- Armaments of War (Priest)
+						["questID"] = 8379,
+						["u"] = 40,	-- Legacy Quest
+						["qg"] = 15183,	-- Geologist Larksbane
+						["classes"] = { 5 },	-- Priest
+						["sourceQuest"] = 8315,	-- The Calling
+						["groups"] = {
+							un(2, i(20707)),	-- Cenarion Reservist's Pants
+							un(2, i(20717)),	-- Desert Bloom Gloves
+						},
+					},
+					{	-- Armaments of War (Shaman)
+						["questID"] = 8380,
+						["u"] = 40,	-- Legacy Quest
+						["qg"] = 15183,	-- Geologist Larksbane
+						["classes"] = { 7 },	-- Shaman
+						["sourceQuest"] = 8315,	-- The Calling
+						["groups"] = {
+							un(2, i(20701)),	-- Cenarion Reservist's Legguards
+							un(2, i(20712)),	-- Wastewalker's Gauntlets
+						},
+					},
+					{	-- Armaments of War (Mage, Warlock)
+						["questID"] = 8381,
+						["u"] = 40,	-- Legacy Quest
+						["qg"] = 15183,	-- Geologist Larksbane
+						["classes"] = { 8, 9 },	-- Mage, Warlock
+						["sourceQuest"] = 8315,	-- The Calling
+						["groups"] = {
+							un(2, i(20705)),	-- Cenarion Reservist's Pants
+							un(2, i(20706)),	-- Cenarion Reservist's Pants
+							un(2, i(20716)),	-- Sandworm Skin Gloves
+						},
+					},
+					{	-- Armaments of War (Druid)
+						["questID"] = 8382,
+						["u"] = 40,	-- Legacy Quest
+						["qg"] = 15183,	-- Geologist Larksbane
+						["classes"] = { 11 },	-- Druid
+						["sourceQuest"] = 8315,	-- The Calling
+						["groups"] = {
+							un(2, i(20704)),	-- Cenarion Reservist's Leggings
+							un(2, i(20714)),	-- Sandstorm Boots
+						},
+					},
 					{	-- Brann Bronzebeard's Lost Letter
 						["itemID"] = 20461,
 						["crs"] = {
@@ -143,6 +252,16 @@ _.Zones =
 						["coord"] = { 53.2, 33.4 },
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
+					},
+					{	-- Champion's Battlegear
+						["questID"] = 8573,
+						["groups"] = {
+							un(2, i(21180)),	-- Earthstrike
+							un(2, i(21188)),	-- Fist of Cenarius
+							un(2, i(21190)),	-- Wrath of Cenarius
+						},
+						["u"] = 40,
+						["qg"] = 15176,	-- Vargus
 					},
 					{	-- Deadly Desert Venom
 						["questID"] = 8277,
@@ -231,6 +350,63 @@ _.Zones =
 							},
 						},
 					},
+					{ 	-- Scepter of the Council
+						["questID"] = 8352,
+						["groups"] = {
+							un(2, i(20602, { 	-- Chest of Spoils
+								un(7, i(20722)), 	-- Crystal Slugthrower
+								un(7, i(20720)), 	-- Dark Whisper Blade
+								un(7, i(20721)),	-- Band of the Cultist
+							})),
+						},
+						["u"] = 40,
+						["qg"] = 15306,	-- Bor Wildmane
+					},
+					{ 	-- Secrets of the Colossus - Ashi - Was only possible during the 10 hours of AQ opening
+						["questID"] = 8857,
+						["groups"] = {
+							un(2, i(21528)), 	-- Colossal Bag of Loot
+						},
+						["u"] = 40,
+						["qg"] = 15798,	-- Colossus Researcher Nestor
+					},
+					{	-- Secrets of the Colossus - Regal - Was only possible during the 10 hours of AQ opening
+						["questID"] = 8858, 
+						["groups"] = {
+							un(2, i(21528)), 	-- Colossal Bag of Loot
+						},
+						["u"] = 40,
+						["qg"] = 15799,	-- Colossus Researcher Eazel
+					},
+					{	-- Secrets of the Colossus - Zora - Was only possible during the 10 hours of AQ opening
+						["questID"] = 8859, 
+						["groups"] = {
+							un(2, i(21528)), 	-- Colossal Bag of Loot
+						},
+						["u"] = 40,
+						["qg"] = 15797,	-- Colossus Researcher Sophia
+					},
+					{	-- Signet of the Dukes
+						["questID"] = 8348,
+						["groups"] = {
+							un(2, i(20601, { 	-- Sack of Spoils
+								un(7, i(20696)), 	-- Crystal Spiked Maul
+							})),
+						},
+						["u"] = 40,
+						["qg"] = 15306,	-- Bor Wildmane
+					},
+					{	-- Stalwart's Battlegear
+						["questID"] = 8574,
+						["groups"] = {
+							un(2, i(21184)),	-- Deeprock Bracers
+							un(2, i(21185)),	-- Earthcalm Orb
+							un(2, i(21189)),	-- Might of Cenarius
+							un(2, i(21186)),	-- Rockfury Bracers
+						},
+						["u"] = 40,
+						["qg"] = 15176,	-- Vargus
+					},
 					{	-- Stepping Up Security
 						["questID"] = 8281,
 						["qg"] = 15191,	-- Windcaller Proudhorn
@@ -254,6 +430,62 @@ _.Zones =
 								i(20555), 	-- Plans: Darkrune Helm
 							}),
 						},
+					},
+					{	-- The Calling
+						["questID"] = 8315,
+						["u"] = 40,	-- Legacy Quest
+						["qg"] = 15183,	-- Geologist Larksbane
+						["sourceQuest"] = 8314,	-- Unraveling the Mystery
+					},
+					{	-- The Hand of the Righteous (until Neutral)
+						["questID"] = 8302,
+						["groups"] = {
+							un(2, i(20403)),	-- 	Proxy of Nozdormu
+						},
+						["u"] = 40,
+						["qg"] = 15180,	-- Baristolth of the Shifting Sands
+						["repeatable"] = true,
+					},
+					{	-- The Path of the Righteous
+						["questID"] = 8301,
+						["groups"] = {
+							un(2, i(20402)),	-- 	Agent of Nozdormu
+						},
+						["u"] = 40,
+						["qg"] = 15180,	-- Baristolth of the Shifting Sands
+					},
+					{	-- The Perfect Poison
+						["questID"] = 9023,
+						["groups"] = {
+							un(2, i(22348)),	-- Doomulus Prime
+							un(2, i(22347)),	-- Fahrad's Reloading Repeater
+							un(2, i(22378)),	-- Ravenholdt Slicer
+							un(2, i(22379)),	-- Shivsprocket's Shiv
+							un(2, i(22380)),	-- Simone's Cultivating Hammer
+							un(2, i(22377)),	-- The Thunderwood Poker
+						},
+						["u"] = 40,
+						["qg"] = 16091,	-- Dirk Thunderwood
+					},
+					{	-- Veteran's Battlegear
+						["questID"] = 8572,
+						["groups"] = {
+							un(2, i(21182)),	-- Band of Earthen Might
+							un(2, i(21183)),	-- Earthpower Vest
+							un(2, i(21181)),	-- Grace of Earth
+						},
+						["u"] = 40,
+						["qg"] = 15176,	-- Vargus
+					},
+					{	-- Volunteer's Battlegear
+						["questID"] = 8548,
+						["groups"] = {
+							un(2, i(21179)),	-- Band of Earthen Wrath
+							un(2, i(21187)),	-- Earthweave Cloak
+							un(2, i(21178)),	-- Gloves of Earthen Power
+						},
+						["u"] = 40,
+						["qg"] = 15176,	-- Vargus
 					},
 					{	-- Wanted Poster: Deathclasp
 						["objectID"] = 180448,
