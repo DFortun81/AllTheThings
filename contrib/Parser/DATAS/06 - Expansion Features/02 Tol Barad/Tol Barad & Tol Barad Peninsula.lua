@@ -188,6 +188,7 @@ _.ExpansionFeatures =
 					i(62459), 	-- Shimmering Morningstar
 					i(62460), 	-- Sky Piercer
 					i(62455), 	-- Spear of Trailing Shadows
+					i(63518),	--	Hellscream's Reach Commendation
 				}),
 				na(47328, {	-- Quartermaster Brazie
 					i(63039),	-- Mount Drake of the West Wind

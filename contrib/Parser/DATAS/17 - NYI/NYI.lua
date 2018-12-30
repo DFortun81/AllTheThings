@@ -481,6 +481,11 @@ _.NeverImplemented =
 			un(1, i(17108)),	-- Mark of Deflection
 			un(1, i(13812)),	-- Ring of the Dawn
 			un(1, i(19065)),	-- Emerald Circle
+			un(1, i(62035)), 	-- Antique Myrmidon's Signet
+			un(1, i(62036)), 	-- Ornate Band of Accuria
+			un(1, i(62037)), 	-- Gleaming seal of the archmagus
+			un(1, i(69891)), 	-- Burnished Dark Iron Ring
+			un(1, i(103825)), 	-- 5.4 Raid - Normal - Siege of Orgrimmar - Wildcard - Int Hit Ring
 		}),
 	}),
 	n(-494, { -- Misc
@@ -534,44 +539,48 @@ _.NeverImplemented =
 		un(1, i(13247)),	-- Quartermaster Zigris' Footlocker
 		un(1, i(19804)),	-- Pale Ghoulfish
 		un(1, i(21135)),	-- Broken Assassin's Throwing Axe
-		i(120370),
-		i(120371),
-		i(23351),
-		i(23470),
-		i(46103),
-		i(49402),
-		i(49405),
-		i(49410),
-		i(49414),
-		i(49418),
-		i(49422),
-		i(54331),
-		i(55047),
-		i(21163),
-		i(84897),	-- Never made to Live. Malevolent Gladiator's Heavy Crossbow
-		i(94899),	-- Never made to Live. Malevolent Gladiator's Baton of Light
-		i(94898),	-- Never made to Live. Malevolent Gladiator's Touch of Death
-		i(85118),	-- Never made to Live. 490 Malevolent Gladiator's Shiv
-		i(84895),	-- Never made to Live. Malevolent Gladiator's Shiv
-		i(54757),	-- Double Link Tunic
-		i(54765),	-- Burnished Leggings
-		i(54766),	-- Burnished Gloves
-		i(54767),	-- Burnished Girdle
-		i(54768),	-- Burnished Boots
-		i(54769),	-- Rough Bronze Bracers
-		i(54778),	-- Burnished Boots (Again)
-		i(54781),	-- Thorbia's Gauntlets
-		i(54783),	-- Silvered Bronze Shoulders
-		i(54789),	-- Art Template Plate Belt - Plate_Common_C_01 - Rust
-		i(47058),   -- Unknown
-		i(59791),   -- Unknown
-		i(60221),   -- Furlbrow Cloak
-		i(60774),   -- Unknown
-		i(60775),   -- Unknown
-		i(60777),   -- Unknown
-		i(60780),   -- Unknown
-		i(60781),   -- Unknown
-		i(50329),   -- Unknown	
+		un(1, i(120370)),
+		un(1, i(120371)),
+		un(1, i(23351)),
+		un(1, i(23470)),
+		un(1, i(46103)),
+		un(1, i(49402)),
+		un(1, i(49405)),
+		un(1, i(49410)),
+		un(1, i(49414)),
+		un(1, i(49418)),
+		un(1, i(49422)),
+		un(1, i(54331)),
+		un(1, i(55047)),
+		un(1, i(21163)),
+		un(1, i(84897)),	-- Never made to Live. Malevolent Gladiator's Heavy Crossbow
+		un(1, i(94899)),	-- Never made to Live. Malevolent Gladiator's Baton of Light
+		un(1, i(94898)),	-- Never made to Live. Malevolent Gladiator's Touch of Death
+		un(1, i(85118)),	-- Never made to Live. 490 Malevolent Gladiator's Shiv
+		un(1, i(84895)),	-- Never made to Live. Malevolent Gladiator's Shiv
+		un(1, i(54757)),	-- Double Link Tunic
+		un(1, i(54765)),	-- Burnished Leggings
+		un(1, i(54766)),	-- Burnished Gloves
+		un(1, i(54767)),	-- Burnished Girdle
+		un(1, i(54768)),	-- Burnished Boots
+		un(1, i(54769)),	-- Rough Bronze Bracers
+		un(1, i(54778)),	-- Burnished Boots (Again)
+		un(1, i(54781)),	-- Thorbia's Gauntlets
+		un(1, i(54783)),	-- Silvered Bronze Shoulders
+		un(1, i(54789)),	-- Art Template Plate Belt - Plate_Common_C_01 - Rust
+		un(1, i(47058)),   -- Unknown
+		un(1, i(59791)),   -- Unknown
+		un(1, i(60221)),   -- Furlbrow Cloak
+		un(1, i(60774)),   -- Unknown
+		un(1, i(60775)),   -- Unknown
+		un(1, i(60777)),   -- Unknown
+		un(1, i(60780)),   -- Unknown
+		un(1, i(60781)),   -- Unknown
+		un(1, i(50329)),   -- Unknown	
+		un(1, i(55216)),	-- Fiery Transform
+		un(1, i(55217)),	-- Aqua Transform
+		un(1, i(55218)),	-- Rocky Transform
+		un(1, i(55219)),	-- Vaporous Transform
 	}),
 	n(-160, { -- Mounts
 		un(1, a(model(9475, i(13325)))),		-- Fluorescent Green Mechanostrider (Never added in Game)
@@ -663,6 +672,11 @@ _.NeverImplemented =
 		p(1751),
 	}))),
 		un(1, i(130145)), -- Unknown
+		un(1, i(162686)), -- Demon Goat (unused Baa'l ID)
+		un(1, i(163553)), -- Digitized Assistant (used to be a pet)
+		un(1, i(163554)), -- Finicky Gauntlet (used to be a pet)
+		un(1, i(164629)), -- Test Pet
+		un(1, i(166791)), -- Pristine Falcon Feather (unsued version)
 		un(1, i(113569)), -- Autumnal Sproutling (unused ver)
 		un(1, i(91031)), -- Darkmoon Glowfly (you get it via pet battles)
 		un(1, i(100870)), -- Murkimus' Tyrannical Spear
@@ -1041,6 +1055,7 @@ _.NeverImplemented =
 			un(1, i(33475)),	-- Artefact Frostmourne
 			un(1, i(137581)),	-- Test Ashbringer 1
 			un(1, i(137582)),	-- Test Ashbringer 2
+			un(1, i(49547)),	-- Unknown
 			un(1, i(131738)),	-- Unknown, tagged as 2Hand Sword
 			un(1, i(131739)),	-- Unknown, tagged as 2Hand Sword
 			un(1, i(131741)),	-- Unknown, tagged as 2Hand Sword

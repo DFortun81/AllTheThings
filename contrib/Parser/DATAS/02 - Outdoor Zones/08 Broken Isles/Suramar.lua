@@ -1463,6 +1463,12 @@ _.Zones =
 						},
 						["questID"] = 41135,		
 					}), 
+					n(99792, {		-- Elfbane
+						["groups"] = {	
+							i(121806),	-- Mountain Rage Shaker
+						},
+						["questID"] = 41319,
+					}),
 					n(101878, {		-- Felsoul Inquisitor
 							i(136901),
 					}),
