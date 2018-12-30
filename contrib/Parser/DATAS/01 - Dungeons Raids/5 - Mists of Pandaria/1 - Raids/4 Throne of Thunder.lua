@@ -143,29 +143,27 @@ _.Instances =
 							i(95222),	-- Spiritbound Boots
 							i(95216),	-- Vaultwalker Sabatons
 							n(-355, {	-- Thunderforged
-								i(95202),	-- Necklace of the Terra-Cotta Archer
-								i(95203),	-- Necklace of the Terra-Cotta Invoker
-								i(95204),	-- Necklace of the Terra-Cotta Mender
-								i(95206),	-- Necklace of the Terra-Cotta Protector
-								i(95205),	-- Necklace of the Terra-Cotta Vanquisher
-								i(95211),	-- Abandoned Zandalari Arrowlinks
-								i(95215),	-- Abandoned Zandalari Bucklebreaker
-								i(95207),	-- Abandoned Zandalari Firecord
-								i(95214),	-- Abandoned Zandalari Goreplate
-								i(95213),	-- Abandoned Zandalari Greatbelt
-								i(95210),	-- Abandoned Zandalari Moonstrap
-								i(95208),	-- Abandoned Zandalari Shadowgirdle
-								i(95209),	-- Abandoned Zandalari Silentbelt
-								i(95212),	-- Abandoned Zandalari Waterchain
-								i(95218),	-- Columnbreaker Stompers
-								i(95221),	-- Deeproot Treads
-								i(95224),	-- Home-Warding Slippers
-								i(95217),	-- Locksmasher Greaves
-								i(95220),	-- Scalehide Spurs
-								i(95223),	-- Silentflame Sandals
-								i(95219),	-- Spiderweb Tabi
-								i(95222),	-- Spiritbound Boots
-								i(95216),	-- Vaultwalker Sabatons
+								i(96330),	-- Necklace of the Terra-Cotta Archer
+								i(96336),	-- Necklace of the Terra-Cotta Invoker
+								i(96341),	-- Necklace of the Terra-Cotta Mender
+								i(96352),	-- Necklace of the Terra-Cotta Protector
+								i(96349),	-- Necklace of the Terra-Cotta Vanquisher
+								i(96333),	-- Abandoned Zandalari Firecord
+								i(96343),	-- Abandoned Zandalari Moonstrap
+								i(96334),	-- Abandoned Zandalari Shadowgirdle
+								i(96342),	-- Abandoned Zandalari Silentbelt
+								i(96345),	-- Abandoned Zandalari Waterchain
+								i(96351),	-- Columnbreaker Stompers
+								i(96338),	-- Deeproot Treads
+								i(96347),	-- Abandoned Zandalari Goreplate
+								i(96346),	-- Abandoned Zandalari Greatbelt
+								i(96337),	-- Home-Warding Slippers
+								i(96350),	-- Locksmasher Greaves
+								i(96332),	-- Scalehide Spurs
+								i(96335),	-- Silentflame Sandals
+								i(96331),	-- Spiderweb Tabi
+								i(96339),	-- Spiritbound Boots
+								i(96340),	-- Vaultwalker Sabatons
 							}),
 						},
 						["crs"] = {
