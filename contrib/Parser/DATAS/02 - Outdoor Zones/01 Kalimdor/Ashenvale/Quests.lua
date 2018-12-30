@@ -551,6 +551,7 @@ _.Zones =
 						["questID"] = 13958,
 						["qg"] = 34359,	-- Captain Goggath
 						["coord"] = { 38.0, 43.8 },
+						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 13947,	-- Blastranaar!
 					},
 					{	-- Culling the Furbolg Threat

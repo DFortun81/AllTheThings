@@ -583,6 +583,7 @@ _.Zones =
 					{
 						["questID"] = 7838,	-- Arena Grandmaster
 						["sourceQuest"] = 7810,	-- Arena Master
+						["repeatable"] = true, 	--
 						["qg"] = 14508,	-- Short John Mithril
 						["groups"] = {
 							i(19024),	-- Arena Grand Master

@@ -427,6 +427,7 @@ _.Zones =
 						["questID"] = 26402,
 						["qg"] = 40032,	-- Telaron Windflight
 						["races"] = ALLIANCE_ONLY,
+						["isBreadcrumb"] = true, 	-- If you picked up or done any quest at Feathermoon Stronghold, this quest stops being available
 						["sourceQuest"] = 25398,	-- Sealing the Dream
 					},
 					{	-- General Skessesh
