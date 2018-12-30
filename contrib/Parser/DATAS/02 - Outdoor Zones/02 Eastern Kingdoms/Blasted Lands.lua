@@ -49,21 +49,55 @@ _.Zones =
 						i(59424),
 						i(59423),
 					})),
+					{	-- Attack of the Iron Horde
+						["questID"] = 35745,
+						["races"] = HORDE_ONLY,
+						["qg"] = 82851,	-- Thrall
+						["coords"] = { 71.8, 47.7 },
+						["groups"] = {
+							i(118761),	-- Invader's Scarlet Seal
+							i(118762),	-- Portal-Breaker's Band
+							i(118763),	-- Blackstone Signet
+							i(118764),	-- Ruby-Eye Seal
+							i(118765),	-- Sapphire Seal
+						},
+					},
+					{	-- Attack of the Iron Horde
+						["questID"] = 35460,
+						["races"] = ALLIANCE_ONLY,
+						["qg"] = 82270,	-- Vindicator Maraad
+						["coords"] = { 66.6, 28.2 },
+						["groups"] = {
+							i(118761),	-- Invader's Scarlet Seal
+							i(118762),	-- Portal-Breaker's Band
+							i(118763),	-- Blackstone Signet
+							i(118764),	-- Ruby-Eye Seal
+							i(118765),	-- Sapphire Seal
+						},
+					},
 --[[
 					qg(9540, qa(25715)),	-- A Closer Look
 					qg(42349, qa(26185)),	-- Advice from the Cenarion Circle
 					qg(41354, q(25703)),	-- Atrocities
-					qg(82851, qh(35745)),	-- Attack of the Iron Horde (secondary QG ID 84928)
-					qg(82270, qa(35460)),	-- Attack of the Iron Horde (secondary QG ID 84929)
-					qg(84928, qh(35751)),	-- Attack on Nethergarde
 					qg(7506, qh(25684)),	-- Attune the Bloodstone
 					qg(42298, qa(26158)),	-- Attune the Bloodstone
---					q(37677),	-- Blasted Land 6.0:JP3 - Invasion - Tracking Quest - See Maraad
---					q(37676),	-- Blasted Land 6.0:JP3 - Invasion - Tracking Quest - See Thrall
 					qg(42298, qa(26160)),	-- Blood Ritual
 					qg(7506, qh(25686)),	-- Blood Ritual
 --					q(35499),	-- Blow up towers (NOT IN GAME?)
 --]]
+					{	-- Attack on Nethergarde
+						["questID"] = 35751,
+						["qg"] = 84928,	-- Thrall
+						["coord"] = { 48.7, 31.7 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 36292,	-- Investigating the Invasion
+					},
+					{	-- Blasted Land 6.0:JP3 - Invasion - Tracking Quest - See Maraad
+						["questID"] = 37677,
+					},
+					{	-- Blasted Land 6.0:JP3 - Invasion - Tracking Quest - See Thrall
+						["questID"] = 37676,
+					},
 					qg(5385, qa(25716, { -- Cultists at our Doorstep
 						i(59378),
 						i(59376),
@@ -76,35 +110,102 @@ _.Zones =
 						i(59370),
 						i(59368),
 					})),
---[[					
-					qg(84928, qh(35762)),	-- Death to the Dreadmaul
-					qg(84929, qa(35488)),	-- Death to the Dreadmaul
+					{	-- Death to the Dreadmaul
+						["questID"] = 35762,
+						["qg"] = 84928,	-- Thrall
+						["coord"] = { 48.7, 31.7 },
+						["races"] = HORDE_ONLY,
+						["sourceQuests"] = {
+							35751,	-- Attack on Nethergarde
+							35750,	-- Lunatic Lieutenants
+							35761,	-- Ransacking Nethergarde
+						},
+					},
+					{	-- Death to the Dreadmaul
+						["questID"] = 35488,
+						["qg"] = 84929,	-- Vindicator Maraad
+						["coord"] = { 52.0, 28.6 },
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuests"] = {
+							35492,	-- For Nethergarde!
+							35486,	-- Lunatic Lieutenants
+							35494,	-- Mementos of the Fallen
+						},
+					},
+--[[
 					qg(42348, qh(25719)),	-- Demoniac Vessel
 					qg(42352, qa(26186)),	-- Demoniac Vessel
---]]					
+--]]
 					qg(5393, qa(25711, { -- Eliminate the Okril'lon
 						i(59373),
 						i(59374),
 						i(59372),
 						i(59375),
 					})),
+					{	-- Ending Executions
+						["questID"] = 35744,
+						["qg"] = 85247,	-- Rokhan
+						["coord"] = { 71.8, 48.9 },
+						["races"] = HORDE_ONLY,
+						["sourceQuests"] = {
+							35745,	-- Attack of the Iron Horde
+							36382,	-- Peeking into the Portal
+							35746,	-- Under Siege
+						},
+					},
+					{	-- Ending Executions
+						["questID"] = 35464,
+						["qg"] = 85213,	-- Bodrick Grey
+						["coord"] = { 66.8, 28.0 },
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuests"] = {
+							35460,	-- Attack of the Iron Horde
+							36379,	-- Peeking into the Portal
+							35462,	-- Under Siege
+						},
+					},
+					{	-- Enohar's Revenge
+						["questID"] = 35496,
+						["qg"] = 76111,
+						["coord"] = { 51.8, 28.6 },
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuests"] = {
+							35492,	-- For Nethergarde!
+							35486,	-- Lunatic Lieutenants
+							35494,	-- Mementos of the Fallen
+						},
+					},
+					{	-- Gar'mak Bladetwist
+						["questID"] = 35500,
+						["qg"] = 84929,	-- Vindicator Maraad
+						["coord"] = { 52.0, 28.6 },
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuests"] = {
+							35488,	-- Death to the Dreadmaul
+							35496,	-- Enohar's Revenge
+							35495,	-- Toothsmash the Annihilator
+						},
+					},
+					{	-- Gar'mak Bladetwist
+						["questID"] = 35763,
+						["qg"] = 84928,	-- Thrall
+						["coord"] = { 48.7, 31.7 },
+						["races"] = HORDE_ONLY,
+						["sourceQuests"] = {
+							35762,	-- Death to the Dreadmaul
+							35764,	-- Okrilla's Revenge
+							35760,	-- Toothsmash the Annihilator
+						},
+					},
 --[[					
-					qg(85247, qh(35744)),	-- Ending Executions
-					qg(85213, qa(35464)),	-- Ending Executions
 					qg(41159, qh(25693)),	-- Enhancing the Stone
 					qg(42299, qa(26166)),	-- Enhancing the Stone
-					qg(76111, qa(35496)),	-- Enohar's Revenge
 					qg(41354, q(25705)),	-- False Idols
-					qg(84929, qa(35492)),	-- For Nethergarde!
 					qg(41124, qh(25674)),	-- Futile Pride
-					qg(84929, qa(35500)),	-- Gar'mak Bladetwist
-					qg(84928, qh(35763)),	-- Gar'mak Bladetwist
 					qg(41124, qh(25676)),	-- Heartstrike
 					qg(41265, q(25702)),	-- Home... Gone... Naga...
 					qg(42344, qh(25718)),	-- How Best to Proceed
 					qg(41333, qh(25679)),	-- Into the Mountain
-					qg(82270, qa(36307)),	-- Investigating the Invasion
-					qg(82851, qh(36292)),	-- Investigating the Invasion
 					qg(41133, qh(25677)),	-- It's All Mine
 					qg(5385, qa(26157)),	-- Kasim Sharim
 					qg(79675, qh(34741)),	-- Keli'dan the Breaker
@@ -112,11 +213,70 @@ _.Zones =
 						qr(q(25772)),	-- Kum'isha's Endeavors
 					}),
 					qg(7506, qh(25700)),	-- Loramus Thalipedes Awaits
-					qg(84929, qa(35486)),	-- Lunatic Lieutenants
-					qg(84928, qh(35750)),	-- Lunatic Lieutenants
-					qg(82447, qa(35494)),	-- Mementos of the Fallen
 					qg(5393, qa(25710)),	-- Minor Distractions
 --]]					
+					{	-- For Nethergarde!
+						["questID"] = 35492,
+						["qg"] = 84929,	-- Vindicator Maraad
+						["coord"] = { 52.0, 28.6 },
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 36307,	-- Investigating the Invasion
+					},
+					{	-- Investigating the Invasion
+						["questID"] = 36307,
+						["qg"] = 82270,	-- Vindicator Maraad
+						["coord"] = { 66.6, 28.2 },
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuests"] = {
+							35464,	-- Ending Executions
+							35463,	-- Subversive Scouts
+						},
+					},
+					{	-- Investigating the Invasion
+						["questID"] = 36292,
+						["qg"] = 82851,	-- Thrall
+						["coord"] = { 71.8, 47.7 },
+						["races"] = HORDE_ONLY,
+						["sourceQuests"] = {
+							35744,	-- Ending Executions
+							35748,	-- Subversive Scouts
+						},
+					},
+					{	-- Lunatic Lieutenants
+						["questID"] = 35486,
+						["qg"] = 84929,	-- Vindicator Maraad
+						["coord"] = { 52.0, 28.6 },
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 36307,	-- Investigating the Invasion
+						["groups"] = {
+							i(118766),	-- Skulltooth Collar
+							i(118767),	-- Necklace of Celerity
+							i(118768),	-- Gnawing Tooth
+							i(118769),	-- Emberfury Choker
+							i(118770),	-- Chain of Evasion
+						},
+					},
+					{	-- Lunatic Lieutenants
+						["questID"] = 35750,
+						["qg"] = 84928,	-- Thrall
+						["coord"] = { 48.7, 31.7 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 36292,	-- Investigating the Invasion
+						["groups"] = {
+							i(118766),	-- Skulltooth Collar
+							i(118767),	-- Necklace of Celerity
+							i(118768),	-- Gnawing Tooth
+							i(118769),	-- Emberfury Choker
+							i(118770),	-- Chain of Evasion
+						},
+					},
+					{	-- Mementos of the Fallen
+						["questID"] = 35494,
+						["qg"] = 82447,	-- Commander Vines
+						["coord"] = { 52.0, 28.6 },
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 36307,	-- Investigating the Invasion
+					},
 					qg(41134, qh(25682, { -- Mission Complete
 						i(59414),
 						i(59416),
@@ -138,15 +298,35 @@ _.Zones =
 						i(59409),
 						i(59406),
 					})),
+					{	-- Okrilla's Revenge
+						["questID"] = 35764,
+						["qg"] = 76609,	-- Okrilla
+						["coord"] = { 48.7, 31.8 },
+						["races"] = HORDE_ONLY,
+						["sourceQuests"] = {
+							35751,	-- Attack on Nethergarde
+							35750,	-- Lunatic Lieutenants
+							35761,	-- Ransacking Nethergarde
+						},
+					},
 --[[					
-					qg(76609, qh(35764)),	-- Okrilla's Revenge
 					i(10593, {	-- Imperfect Draenethyst Fragment
 						qr(q(25771)),	-- One Draenei's Junk...
 					}),
 					qg(9540, qa(25708)),	-- Our Fallen Friends
-					qg(85213, qa(36379)),	-- Peeking into the Portal
-					qg(85247, qh(36382)),	-- Peeking into the Portal
 --]]					
+					{	-- Peeking into the Portal
+						["questID"] = 36379,
+						["qg"] = 85213,	-- Bodrick Grey
+						["coord"] = { 66.8, 28.0 },
+						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- Peeking into the Portal
+						["questID"] = 36382,
+						["qg"] = 85247,	-- Rokhan
+						["coord"] = { 71.8, 48.9 },
+						["races"] = HORDE_ONLY,
+					},
 					qg(41133, qh(25678, { -- Pick Your Fate
 						i(59411),
 						i(59412),
@@ -156,16 +336,53 @@ _.Zones =
 --[[					
 					qg(19254, qh(25694)),	-- Protecting Our Rear
 					qg(16841, qa(26173)),	-- Protecting Our Rear
-					qg(76609, qh(35761)),	-- Ransacking Nethergarde
 					qg(42264, qa(25713)),	-- Remove Their Arms
 --]]					
-					qg(84929, qa(36941, {	-- Report to the King
-						i(111660),	-- Iron Starlette
-					})),
+					{	-- Ransacking Nethergarde
+						["questID"] = 35761,
+						["qg"] = 76609,	-- Okrilla
+						["coord"] = { 48.7, 31.9 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 36292,	-- Investigating the Invasion
+					},
+					{	-- Report to the King
+						["questID"] = 36941,
+						["qg"] = 84929,	-- Vindicator Maraad
+						["coord"] = { 52.0, 28.6 },
+						["races"] = ALLIANCE_ONLY,
+						["groups"] = {
+							i(118776),	-- Talisman of the Invader
+							i(118777),	-- Bloodcaster's Charm
+							i(118778),	-- Ironmender's Totem
+							i(118779),	-- Bladespike Charm
+							i(118780),	-- Bloodburn Protector
+							i(111600),	-- Iron Starlette
+						},
+					},
+					{	-- Subversive Scouts
+						["questID"] = 35748,
+						["qg"] = 82851,	-- Thrall
+						["coord"] = { 71.8, 47.7 },
+						["races"] = HORDE_ONLY,
+						["sourceQuests"] = {
+							35745,	-- Attack of the Iron Horde
+							36382,	-- Peeking into the Portal
+							35746,	-- Under Siege
+						},
+					},
+					{	-- Subversive Scouts
+						["questID"] = 35463,
+						["qg"] = 82270,	-- Vindicator Maraad
+						["coord"] = { 66.6, 28.2 },
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuests"] = {
+							35460,	-- Attack of the Iron Horde
+							36379,	-- Peeking into the Portal
+							35462,	-- Under Siege
+						},
+					},
 --[[					
 					qg(41134, qh(25681)),	-- Some People Just Need Killing
-					qg(82851, qh(35748)),	-- Subversive Scouts
-					qg(82270, qa(35463)),	-- Subversive Scouts
 					qg(16841, qa(26175)),	-- Surwich
 					qg(41134, qh(25680)),	-- That's Not Us
 --]]					
@@ -233,27 +450,68 @@ _.Zones =
 					qg(42298, qa(26163)),	-- Time is Short
 					qg(7783, qh(25689)),	-- Time is Short
 --]]					
-					qg(84929, qa(35495, { -- Toothsmash the Annihilator
-						i(118771),
-						i(118772),
-						i(118773),
-						i(118774),
-						i(118775),
-					})),
-					qg(84928, qh(35760, { -- Toothsmash the Annihilator
-						i(118771),
-						i(118772),
-						i(118773),
-						i(118774),
-						i(118775),
-					})),
---[[					
-					qg(82270, qa(35462)),	-- Under Siege (secondary QG ID 84929)
-					qg(82851, qh(35746)),	-- Under Siege (secondary QG ID 84928)
---]]					
-					qg(84928, qh(36940, {	-- Warning Orgrimmar
-						i(111600),	-- Iron Starlette
-					})),
+					{	-- Toothsmash the Annihilator
+						["questID"] = 35495,
+						["qg"] = 84929,	-- Vindicator Maraad
+						["coord"] = { 52.0, 28.6 },
+						["races"] = ALLIANCE_ONLY,
+						["groups"] = {
+							i(118771),	-- Wildfire Windcloak
+							i(118772),	-- Frostshaper Cape
+							i(118773),	-- Butcher's Wrap
+							i(118774),	-- Armswake Greatcloak
+							i(118775),	-- Night Prowler's Cloak
+						},
+						["sourceQuests"] = {
+							35492,	-- For Nethergarde!
+							35486,	-- Lunatic Lieutenants
+							35494,	-- Mementos of the Fallen
+						},
+					},
+					{	-- Toothsmash the Annihilator
+						["questID"] = 35760,
+						["qg"] = 84928,	-- Thrall
+						["coord"] = { 48.7, 31.7 },
+						["races"] = HORDE_ONLY,
+						["groups"] = {
+							i(118771),	-- Wildfire Windcloak
+							i(118772),	-- Frostshaper Cape
+							i(118773),	-- Butcher's Wrap
+							i(118774),	-- Armswake Greatcloak
+							i(118775),	-- Night Prowler's Cloak
+						},
+						["sourceQuests"] = {
+							35751,	-- Attack on Nethergarde
+							35750,	-- Lunatic Lieutenants
+							35761,	-- Ransacking Nethergarde
+						},
+					},
+					{	-- Under Siege
+						["questID"] = 35462,
+						["races"] = ALLIANCE_ONLY,
+						["qg"] = 82270,	-- Vindicator Maraad
+						["coords"] = { 66.6, 28.2 },
+					},
+					{	-- Under Siege
+						["questID"] = 35746,
+						["races"] = HORDE_ONLY,
+						["qg"] = 82851,	-- Thrall
+						["coords"] = { 71.8, 47.7 },
+					},
+					{	-- Warning Orgrimmar
+						["questID"] = 36940,
+						["qg"] = 84928,	-- Thrall
+						["coord"] = { 48.7, 31.7 },
+						["races"] = HORDE_ONLY,
+						["groups"] = {
+							i(118776),	-- Talisman of the Invader
+							i(118777),	-- Bloodcaster's Charm
+							i(118778),	-- Ironmender's Totem
+							i(118779),	-- Bladespike Charm
+							i(118780),	-- Bloodburn Protector
+							i(111600),	-- Iron Starlette
+						},
+					},
 --					qg(5393, qa(25714)),	-- Watcher Mahar Ba (add'l QG 9540)
 					qg(16841, qa(26174, { -- Watching Our Back
 						i(59394),
@@ -269,8 +527,7 @@ _.Zones =
 					qg(42349, qa(26184)),	-- Wormthorn's Dream
 					qg(7783, qa(26171)),	-- You Are Rakh'likh, Demon
 					qg(7783, qh(25701)),	-- You Are Rakh'likh, Demon
---]]					
-					
+--]]
 				}),
 				n(-16,  {	-- Rares
 					["g"] = {	
