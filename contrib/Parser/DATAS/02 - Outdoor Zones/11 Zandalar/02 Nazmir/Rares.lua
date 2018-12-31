@@ -153,9 +153,13 @@ _.Zones =
 							}),
 							["questID"] = 47827,
 						}),
-						n(128974, {	-- Queen Tzxi'kik
+						{	-- Queen Tzxi'kik
+							["npcID"] = 128974,	-- Queen Tzxi'kik
 							["questID"] = 49312,
-						}),
+							["coords"] = {
+								{ 57.81, 67.52, 863 },
+							},
+						},
 						n(127820, {	-- Scout Skrasniss
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(160951),	-- Evergreen Scout's Bow

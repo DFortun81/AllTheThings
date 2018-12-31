@@ -46,7 +46,8 @@ _.Instances =
 							i(27838),	-- Incanter's Trousers
 							i(27948),	-- Trousers of Oblivion
 							i(27925),	-- Ravenclaw Band
-						 -- i(27936),	-- Greaves of Desolation (7.3.5 - Moved to Anzu on Heroic Mode)
+							i(27936),	-- Greaves of Desolation (7.3.5 - Moved to Anzu on Heroic Mode // Note!! Sanct looted one Dec. 30th 2018 on Normal Mode)
+							
 						}))
 					}),
 					d(2, {	-- Heroic
@@ -67,7 +68,7 @@ _.Instances =
 								i(32781),	-- Talon of Anzu
 								i(32780),	-- The Boomstick
 								i(32769),	-- Belt of the Raven Lord
-								i(27936),	-- Greaves of Desolation  (7.3.5 - Used to be only Normal Mode from Darkweaver Syth)
+								i(27936),	-- Greaves of Desolation  (7.3.5 - Used to be only Normal Mode from Talon King Ikiss)
 								i(32778),	-- Boots of Righteous Fortitude
 								i(32779),	-- Band of Frigid Elements
 							})),
