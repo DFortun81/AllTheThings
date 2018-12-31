@@ -24,7 +24,7 @@ _.Achievements =
 					}),
 					ach(13089, {	-- Allied Races: Dark Iron Dwarf
 						["groups"] = {
-							ach(12510),	-- Ready for War
+							a(ach(12510)),	-- Ready for War
 							faction(2159),	-- 7th Legion
 						},
 						["races"] = ALLIANCE_ONLY,

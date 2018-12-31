@@ -7,7 +7,7 @@ _.ExpansionFeatures =
 {
 	{	-- War Effort
 		["npcID"] = -10057,	-- War Effort
-		["g"] = {
+		["g"] = bubbleDown({["races"] = ALLIANCE_ONLY}, {
 			{	-- Ready for War
 				["achievementID"] = 12510,	-- Ready for War
 				["races"] = ALLIANCE_ONLY,
@@ -719,7 +719,7 @@ _.ExpansionFeatures =
 					},
 				},
 			},
-		},
+		}),
 	},
 };
 --]]

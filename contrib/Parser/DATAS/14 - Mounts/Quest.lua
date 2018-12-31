@@ -92,9 +92,7 @@ _.Mounts =
 			["classes"] = {3},
 		},
 		i(79802),		-- Jade Cloud Serpent
-		i(159146,	{		-- Kua'fon's Harness
-			["description"] = "This Mount is rewarded from a Horde only Quest line but can be used on Alliance.",
-		}),
+		i(159146),		-- Kua'fon's Harness
 		i(137573),		-- Llothien Prowler
 		i(161330, {		-- Mag'har Direwolf [Mag'har Orc Quest Chain]
 			["mountID"] = 267274,
