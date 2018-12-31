@@ -16,7 +16,7 @@ _.Instances =
 			{	-- Onyxia's Lair
 				["instanceID"] = 760,	-- Onyxia's Lair
 				["coords"] = {
-					{ 56.52, 71.41, 12 },	-- Onyxia's Lair, Kalimdor [Dustwallow Marsh]
+					{ 52.15, 75.77, 70 },	-- Onyxia's Lair, Kalimdor [Dustwallow Marsh]
 				},
 			},
 			{	-- Blackwing Lair
