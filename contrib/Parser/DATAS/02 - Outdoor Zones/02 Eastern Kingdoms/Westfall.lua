@@ -539,6 +539,17 @@ _.Zones =
 				n(-40, {	-- Legacy
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)
+							{ 	-- Klaven's Tower (quest)
+								["questID"] = 2359,
+								["groups"] = {
+									i(18160),	-- Recipe: Thistle Tea
+									un(2, i(8046)),	-- Kearnen's Journal
+								},
+								["u"] = 40,
+							--	["qg"] = 6182,	-- Amber Kearnen - Not sure which 1 is the correct
+								["races"] = ALLIANCE_ONLY,
+								["classes"] = { 4 },	-- Rogue
+							},
 							un(40, q(153, {	-- Red Leather Bandanas
 								un(2, i(3511)),	-- Cloak of the People's Militia
 								un(2, i(5944)),	-- Greaves of the People's Militia

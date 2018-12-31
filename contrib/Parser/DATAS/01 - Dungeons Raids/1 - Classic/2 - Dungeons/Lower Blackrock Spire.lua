@@ -68,6 +68,7 @@ _.Instances =
 									["groups"] = {	
 										i(13181),	-- Demonskin Gloves
 										i(13182),	-- Phase Blade
+										un(2, i(9214)),	-- Grimoire of Inferno
 									},
 									["description"] = "This mob is infinitely farmable if you don't kill all of the Scarshield Warlocks.",
 								}),
