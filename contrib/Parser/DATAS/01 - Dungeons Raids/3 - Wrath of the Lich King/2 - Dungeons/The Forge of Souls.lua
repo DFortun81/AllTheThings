@@ -159,6 +159,7 @@ _.Instances =
 									["achievementID"] = 4519,	-- Heroic: The Forge of Souls
 									["criteriaID"] = 1,	-- Brojahm slain
 								},
+								ach(4522),	-- Soul Power
 								i(50316),	-- Papa's Brand New Bag
 								i(50317),	-- Papa's New Bag
 								i(49783),	-- Lucky Old Sun
@@ -174,7 +175,6 @@ _.Instances =
 								i(49784),	-- Minister's Number One Legplates
 							})),
 							cr(36502, e(616, {	-- Devourer of Souls
-								ach(4522),	-- Soul Power
 								{
 									["achievementID"] = 4519,	-- Heroic: The Forge of Souls
 									["criteriaID"] = 2,	-- Devourer of Souls slain
