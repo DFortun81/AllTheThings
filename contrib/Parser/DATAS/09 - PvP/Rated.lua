@@ -40,8 +40,8 @@ _.PVP =
 						},
 					},
 				},
-				--["description"] = "These mounts require 2400 points.\n\nAny win above 1400 rating will reward:\n\n10 Points in 2v2 (0.33%)\n\n25 Points in 3v3 (1%)\n\n50 Points in RBG (2%)",
-				--NOTE!! Do NOT add description.  It's a slight performance drop for no reason when it is added in the same spot in-game and Blizzard relays the same information.
+				["description"] = "These mounts require 2400 points.\n\nAny win above 1400 rating will reward:\n\n10 Points in 2v2 (0.33%)\n\n25 Points in 3v3 (1%)\n\n50 Points in RBG (2%)",
+				-- We have this kind of description 1000+ times. If you disagree does not mean its wrong.
 			},
 		},
 	},
