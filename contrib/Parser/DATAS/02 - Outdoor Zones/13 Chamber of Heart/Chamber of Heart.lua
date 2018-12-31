@@ -26,8 +26,13 @@ _.Zones =
 									{ 42.22, 44.27, 81 },
 								},
 								["g"] = {
-									{	-- Azerite Firework Launcher
-										["itemID"] = 166877,	-- Azerite Firework Launcher
+									{	-- Champions of Azeroth Supplies
+										["itemID"] = 166298,	-- Champions of Azeroth Supplies
+										["g"] = {
+											{	-- Azerite Firework Launcher
+												["itemID"] = 166877,	-- Azerite Firework Launcher
+											},
+										},
 									},
 								},
 							},

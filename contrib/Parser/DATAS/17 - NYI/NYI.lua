@@ -494,6 +494,9 @@ _.NeverImplemented =
 		un(1, i(146800)),	-- [BUILDING CONTRIBUTION REWARD ITEM [NYI]]
 		un(1, i(146799)),	-- [BUILDING CONTRIBUTION REWARD ITEM [NYI]]
 		un(1, i(115371)),	-- [PLACEHOLDER TIER 3 ITEM]
+		un(1, i(164258)),	-- Cache of Uldir Treasures
+		un(1, i(164259)),	-- Cache of Uldir Treasures
+		un(1, i(164260)),	-- Cache of Uldir Treasures
 		un(1, i(100894)),	-- Deathtoll's Reward
 		un(1, i(100897)),	-- Skel'tik the Baleful's Reward
 		un(1, i(100898)),	-- Kull Bloodseeker's Reward
@@ -539,6 +542,8 @@ _.NeverImplemented =
 		un(1, i(13247)),	-- Quartermaster Zigris' Footlocker
 		un(1, i(19804)),	-- Pale Ghoulfish
 		un(1, i(21135)),	-- Broken Assassin's Throwing Axe
+		un(1, i(164763)),	-- Unknown
+		un(1, i(164765)),	-- Unknown
 		un(1, i(120370)),
 		un(1, i(120371)),
 		un(1, i(23351)),
@@ -672,6 +677,9 @@ _.NeverImplemented =
 		p(1751),
 	}))),
 		un(1, i(130145)), -- Unknown
+		un(1, i(152879)), -- Reuuse me
+		un(1, i(152880)), -- Reuuse me
+		un(1, i(154703)), -- Hot Air Baloon
 		un(1, i(162686)), -- Demon Goat (unused Baa'l ID)
 		un(1, i(163553)), -- Digitized Assistant (used to be a pet)
 		un(1, i(163554)), -- Finicky Gauntlet (used to be a pet)
@@ -924,6 +932,7 @@ _.NeverImplemented =
 		un(1, i(100903)),	-- Unknown	
 		un(1, i(108638)),	-- Unknown
 		un(1, i(108639)),	-- Unknown
+		un(1, i(130867)),	-- Tag Toy
 		un(1, i(122220)),	-- Unknown
 		un(1, i(122225)),	-- Unknown
 		un(1, i(122227)),	-- Unknown
@@ -933,7 +942,6 @@ _.NeverImplemented =
 		un(1, i(119179)),	-- Iron Star Roller
 	}),
 	n(-319, { -- Weapons
-		un(1, i(130162)),    -- Val-Sharah Artifact Gem #1
 		n(-347, { -- Bows
 			un(1, i(108783)),    -- Unknown
 			un(1, i(109283)),    -- 6.0 QA Combat Test Hunter Bow
@@ -1040,6 +1048,10 @@ _.NeverImplemented =
 			un(1, i(136858)),	-- Wierd Testing Stuff for Artefact Weapons
 			un(1, i(139275)),	-- Wierd Testing Stuff for Artefact Weapons
 			un(1, i(139891)),	-- Wierd Testing Stuff for Artefact Weapons
+		}),
+		n(-387,	{	-- Relics
+			un(1, i(132252)),	-- Owen Test Relic
+			un(1, i(130162)),    -- Val-Sharah Artifact Gem #1
 		}),
 		n(-335, { -- Two Handed Axes
 			un(1, i(134563)),	-- Unknown

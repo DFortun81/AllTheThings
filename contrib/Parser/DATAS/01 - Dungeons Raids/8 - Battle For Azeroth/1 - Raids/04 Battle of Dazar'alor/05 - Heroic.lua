@@ -322,6 +322,9 @@ _.Instances =
 									{	-- Variable Intensity Gigavolt Oscillating Reactor
 										["itemID"] = 165572,	-- Variable Intensity Gigavolt Oscillating Reactor
 									},
+									{	-- Schematic: Unstable Temporal Time Shifter
+										["itemID"] = 166276,	-- Schematic: Unstable Temporal Time Shifter
+									},
 								},
 							},
 							{	-- Stormwall Blockade

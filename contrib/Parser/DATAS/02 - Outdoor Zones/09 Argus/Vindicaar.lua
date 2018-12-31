@@ -1924,6 +1924,7 @@ _.Zones =
 									
 								}),
 								i(153068, {	-- Relinquished Storm Relic
+									i(156823),	-- Whirlpool Seed
 									
 								}),
 							},
