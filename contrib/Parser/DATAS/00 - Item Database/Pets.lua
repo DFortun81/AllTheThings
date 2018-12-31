@@ -42,6 +42,7 @@ pet(163859, 2477);	-- Baby Crawg
 pet(136919, 1884); 	-- Baby Elderhorn
 pet(166486, 2551);	-- Baby Stonehide
 pet(134047, 1828);	-- Baby Winston
+pet(148517, 2537);	-- Baby Zandalari Raptor
 pet(32588, 156); 	-- Banana Charm (Bananas)
 pet(90177, 903);	-- Baneling
 pet(147542, 2047); 	-- Ban-Fu, Cub of Ban-Lu
@@ -783,5 +784,5 @@ pet(166346, 2539);	-- Trecker's Cage
 pet(166719, 2569);	-- Violet Abyssal Eel
 pet(160587, 2184);	-- Whomper
 pet(165907, 2535);	-- Wicker Wraith
-pet(166345, 2537);	-- Zandalari Raptor Egg
+pet(166345, 2538);	-- Zandalari Raptor Egg (Dasher)
 pet(166455, 2550);	-- Zur'aj the Depleted

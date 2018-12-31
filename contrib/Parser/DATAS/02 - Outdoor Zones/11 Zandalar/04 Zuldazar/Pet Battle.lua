@@ -11,6 +11,10 @@ _.Zones =
 				["g"] = {
 					n(-25,  { 	-- Pet Battle
 						["g"] = {
+							{	-- Baby Zandalari Raptor
+								["speciesID"] = 2537,	-- Baby Zandalari Raptor
+								["crs"] = { 148517 },	-- Baby Zandalari Raptor
+							},
 							{	-- Barrier Hermit
 								["speciesID"] = 2385,	-- Barrier Hermit
 								["crs"] = { 143044 },	-- Barrier Hermit
