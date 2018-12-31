@@ -25,6 +25,26 @@ profession(794, {	-- Archaeology
 				i(136922),	-- Wyrmy Tunkins
 			})),
 		}),
+		sp(196481, { 
+			i(130917),	-- Flayed-Skin Chronicle
+			i(130932),	-- Pristine Flayed-Skin Chronicle
+		}),
+		sp(196484, { 
+			i(130920),	-- Houndstooth Hauberk
+			i(130935),	-- Pristine Houndstooth Hauberk
+		}),
+		sp(196480, { 
+			i(130916),	-- Imp's Cup
+			i(130931),	-- Pristine Imp's Cup
+		}),
+		sp(196482, { 
+			i(130918),	-- Malformed Abyssal
+			i(130933),	-- Pristine Malformed Abyssal
+		}),
+		sp(196483, { 
+			i(130919),	-- Orb of Inner Chaos
+			i(130934),	-- Pristine Orb of Inner Chaos
+		}),	
 	}),
 	currency(398,  {	-- Draenei
 		n(-161, {	-- Toys
@@ -76,6 +96,26 @@ profession(794, {	-- Archaeology
 	}),
 	currency(1172, {	-- Highborne
 		i(137782),	-- Vantus Rune Technique: Grand Magistrix Elisande [Rank 3]
+		sp(196471, { -- Inert Leystone Charm
+			i(130907), -- Inert Leystone Charm
+			i(130922), -- Pristine Inert Leystone Charm
+		}),
+		sp(196474, {	-- Nobleman's Letter Opener
+			i(130910),	-- Nobleman's Letter Opener
+			i(130925), -- Pristine Nobleman's Letter Opener
+		}),	
+		sp(196472, { -- Quietwine Vial
+			i(130908),	-- Quietwine Vial
+			i(130923),	-- Pristine Quietwine Vial
+		}),	
+		sp(196473, { -- Pre-War Highborne Tapestry
+			i(130909),	-- Pre-War Highborne Tapestry
+			i(130924), -- Pristine Pre-War Highborne Tapestry
+		}),
+		sp(196470, { 	-- Violetglass Vessel
+			i(130906),	--  Violetglass Vessel
+			i(130921),	--  Pristine Violetglass Vessel
+		}),
 	}),
 	currency(1173, {	-- Highmountain Tauren
 		n(-17, {	-- Quests
@@ -85,6 +125,26 @@ profession(794, {	-- Archaeology
 			qw( q(41188, {	-- Neltharion's Lair: Misdirected
 				i(131733),	-- Spear of Rethu
 			})),
+		}),
+		sp(196478, { 
+			i(130914),	-- Drogbar Gem-Roller
+			i(130929),	-- Pristine Drogbar Gem-Roller
+		}),	
+		sp(196477, { 
+			i(130913),	-- Hand-Smoothed Pyrestone
+			i(130913),	-- Pristine Hand-Smoothed Pyrestone
+		}),
+		sp(196476, { 
+			i(130912),	-- Moosebone Fish-Hook
+			i(130927),	-- Pristine Moosebone Fish-Hook
+		}),
+		sp(196479, { 
+			i(130915),	-- Stonewood Bow
+			i(130930),	-- Pristine Stonewood Bow
+		}),	
+		sp(196475, { 
+			i(130911),	-- Trailhead Drum
+			i(130926),	-- Pristine Trailhead Drum
 		}),
 	}),
 	currency(754,  {	-- Mantid
