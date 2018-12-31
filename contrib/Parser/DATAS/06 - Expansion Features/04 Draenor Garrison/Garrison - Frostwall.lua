@@ -2537,6 +2537,8 @@ _.ExpansionFeatures =
 						i(119457),
 					}),
 					n(89753, { 	-- High Overlord Saurfang
+						["coord"] = { 40.2, 56.7 },
+						["description"] = "High Overlord Saurfang has a chance to spawn in your garrison daily, or you can find someone with him spawned and join their garrison. He starts a weekly raid quest which all have the Greater Bounty Spoils as a reward.",
 						["groups"] = {
 							i(123975, { -- Greater Bounty Spoils
 								["groups"] = {
@@ -2550,62 +2552,62 @@ _.ExpansionFeatures =
 										i(115341), -- Formidable Spire
 										i(115339), -- Formidable Warmace
 									}),
-									i(114088, { -- Formidable Bracers
+									i(114088, {	-- Formidable Bracers
 										i(114554), -- Aerial Acolyte's Bracers
 										i(114557), -- Crimson Carapace Bracers
 										i(114556), -- Sickened Scale Bracers
 										i(114555), -- Yeti-Hide Bracers
 									}),
-									i(119125, { -- Formidable Cloak
+									i(119125, {	-- Formidable Cloak
 										i(114607), -- Bloodstained Miser's Cloak
 										i(114604), -- Cloak of Blind Focus
 										i(114605), -- Doomwake Drape
 										i(114606), -- Fathom-Ripped Cape
 										i(114608), -- Ultimate Greatcloak
 									}),
-									i(119115, { -- Formidable Gauntlets
+									i(119115, {	-- Formidable Gauntlets
 										i(114566), -- Aerial Acolyte's Gloves
 										i(114569), -- Crimson Carapace Gauntlets
 										i(114568), -- Sickened Scale Gauntlets
 										i(114567), -- Yeti-Hide Gauntlets
 									}),
-									i(119121, { -- Formidable Girdle
+									i(119121, {	-- Formidable Girdle
 										i(114582), -- Aerial Acolyte's Cord
 										i(114585), -- Crimson Carapace Girdle
 										i(114584), -- Sickened Scale Belt
 										i(114583), -- Yeti-Hide Belt
 									}),
-									i(119117, { -- Formidable Hood
+									i(119117, {	-- Formidable Hood
 										i(114570), -- Aerial Acolyte's Hood
 										i(114573), -- Crimson Carapace Greathelm
 										i(114572), -- Sickened Scale Helm
 										i(114571), -- Yeti-Hide Hood
 									}),
-									i(119119, { -- Formidable Leggings
+									i(119119, {	-- Formidable Leggings
 										i(114574), -- Aerial Acolyte's Trousers
 										i(114577), -- Crimson Carapace Legplates
 										i(114576), -- Sickened Scale Legguards
 										i(114575), -- Yeti-Hide Legguards
 									}),
-									i(114089, { -- Formidable Robes
+									i(114089, {	-- Formidable Robes
 										i(114561), -- Aerial Acolyte's Robes
 										i(114560), -- Crimson Carapace Breastplate
 										i(114559), -- Sickened Scale Chestguard
 										i(114558), -- Yeti-Hide Chestguard
 									}),
-									i(114091, { -- Formidable Spaulders
+									i(114091, {	-- Formidable Spaulders
 										i(114578), -- Aerial Acolyte's Mantle
 										i(114581), -- Crimson Carapace Shoulderguard
 										i(114580), -- Sickened Scale Spaulders
 										i(114579), -- Yeti-Hide Spaulders
 									}),
-									i(114090, { -- Formidable Treads
+									i(114090, {	-- Formidable Treads
 										i(114562), -- Aerial Acolyte's Sandals
 										i(114565), -- Crimson Carapace Greaves
 										i(114564), -- Sickened Scale Boots
 										i(114563), -- Yeti-Hide Boots
 									}),											
-									i(114112, { 	-- Grandiose Armament
+									i(114112, {	-- Grandiose Armament
 										i(115327), -- Grandiose Axe
 										i(115330), -- Grandiose Dagger
 										i(115328), -- Grandiose Greataxe
@@ -2615,95 +2617,204 @@ _.ExpansionFeatures =
 										i(115333), -- Grandiose Spire
 										i(115331), -- Grandiose Warmace
 									}),
-									i(114082, { 	-- Grandiose Bracers
+									i(114082, {	-- Grandiose Bracers
 										i(114494), -- Bracers Of Determined Resolve
 										i(114493), -- Bracers of Volatile Ice
 										i(114496), -- Crazed Bomber's Bracers
 										i(114495), -- Undying Bracers
 									}),
-									i(119124, { 	-- Grandiose Cloak
+									i(119124, {	-- Grandiose Cloak
 										i(114544), -- Drape of Surging Stars
 										i(114545), -- Hearthhealer Cloak
 										i(114543), -- Keen-Eye Forestcloak
 										i(114547), -- Reinforced Moonsong Cloak
 										i(114546), -- Warmonger's Bloodcloak
 									}),
-									i(119114, { 	-- Grandiose Gauntlets
+									i(119114, {	-- Grandiose Gauntlets
 										i(114508), -- Crazed Bomber's Gauntlets
 										i(114506), -- Gauntlets of Determined Resolve
 										i(114505), -- Gloves of Volatile Ice
 										i(114507), -- Undying Gauntlets
 									}),
-									i(119120, { 	-- Grandiose Girdle
+									i(119120, {	-- Grandiose Girdle
 										i(114522), -- Belt of Determined Resolve
 										i(114521), -- Cord of Volatile Ice
 										i(114524), -- Crazed Bomber's Girdle
 										i(114523), -- Undying Belt
 									}),
-									i(119116, { 	-- Grandiose Hood
+									i(119116, {	-- Grandiose Hood
 										i(114512), -- Crazed Bomber's Greathelm
 										i(114510), -- Hood of Determined Resolve
 										i(114509), -- Hood of Volatile Ice
 										i(114511), -- Undying Helm
 									}),
-									i(119118, { 	-- Grandiose Leggings
+									i(119118, {	-- Grandiose Leggings
 										i(114516), -- Crazed Bomber's Legplates
 										i(114514), -- Legguards of Determined Resolve
 										i(114513), -- Trousers of Volatile Ice
 										i(114515), -- Undying Legguards
 									}),
-									i(114083, { 	-- Grandiose Robes
+									i(114083, {	-- Grandiose Robes
 										i(114497), -- Chestguard of Determined Resolve
 										i(114499), -- Crazed Bomber's Breastplate
 										i(114500), -- Robes of Volatile Ice
 										i(114498), -- Undying Chestguard
 									}),
-									i(114085, { 	-- Grandiose Spaulders
+									i(114085, {	-- Grandiose Spaulders
 										i(114520), -- Crazed Bomber's Shoulderguard
 										i(114517), -- Mantle of Volatile Ice
 										i(114518), -- Spaulders of Determined Resolve
 										i(114519), -- Undying Spaulders
 									}),
-									i(114084, { 	-- Grandiose Treads
+									i(114084, {	-- Grandiose Treads
 										i(114502), -- Boots of Determined Resolve
 										i(114504), -- Crazed Bomber's Greaves
 										i(114501), -- Sandals of Volatile Ice
 										i(114503), -- Undying Boots
 									}),
 								},
-								["description"] = "This satchel is awarded by High Overlord Saurfang and Muradin Bronzebear on all of the Garrison Raid Quests.",
 							}),
-							qw(q(37757, { 	-- Arcane Sanctum: Ko'ragh
-								i(123975, { -- Greater Bounty Spoils
-								}),
-							})),
-							qw(q(37765, { -- Blackhand's Crucible: Blackhand
-								i(123975, { -- Greater Bounty Spoils
-								}),
-							})),
-							qw(q(37758, { 	-- Imperator's Rise: Imperator Mar'gok
-								i(123975, { -- Greater Bounty Spoils
-								}),
-							})),
-							qw(q(37764, { 	-- Iron Assembly: Admiral Gar'an
-								i(123975, { -- Greater Bounty Spoils
-								}),
-							})),
-							qw(q(37762, { 	-- Slagworks: Heart of the Mountain
-								i(123975, { -- Greater Bounty Spoils
-								}),
-							})),
-							qw(q(37763, { 	-- The Black Forge: Kromog
-								i(123975, { -- Greater Bounty Spoils
-								}),
-							})),
-							qw(q(37756, { 	-- Walled City: Brackenspore
-								i(123975, { -- Greater Bounty Spoils
-								}),
-							})),
---]]							
+							{	-- Arcane Sanctum: Ko'ragh
+								["questID"] = 37757,
+								["isWeekly"] = true,
+								["groups"] = {
+									i(123975), -- Greater Bounty Spoils
+								},
+							},
+							{	-- Auchindoun
+								["questID"] = 37780,
+								["isDaily"] = true,
+								["groups"] = {
+									currency(824),	-- Garrison Resources x175
+								},
+							},
+							{	-- Blackhand's Crucible: Blackhand
+								["questID"] = 37765,
+								["isWeekly"] = true,
+								["groups"] = {
+									i(123975), -- Greater Bounty Spoils
+								},
+							},
+							{	-- Bloodmaul Slag Mines
+								["questID"] = 37781,
+								["isDaily"] = true,
+								["groups"] = {
+									currency(824),	-- Garrison Resources x175
+								},
+							},
+							{	-- Destructor's Rise
+								["questID"] = 39231,
+								["isWeekly"] = true,
+								["groups"] = {
+									currency(823),	-- Apexis Crystal x1000
+								},
+							},
+							{	-- Grimrail Depot
+								["questID"] = 37782,
+								["isDaily"] = true,
+								["groups"] = {
+									currency(824),	-- Garrison Resources x175
+								},
+							},
+							{	-- Imperator's Rise: Imperator Mar'gok
+								["questID"] = 37758,
+								["isWeekly"] = true,
+								["groups"] = {
+									i(123975), -- Greater Bounty Spoils
+								},
+							},
+							{	-- Iron Assembly: Admiral Gar'an
+								["questID"] = 37764,
+								["isWeekly"] = true,
+								["groups"] = {
+									i(123975), -- Greater Bounty Spoils
+								},
+							},
+							{	-- Iron Docks
+								["questID"] = 37783,
+								["isDaily"] = true,
+								["groups"] = {
+									currency(824),	-- Garrison Resources x175
+								},
+							},
+							{	-- Maw of Souls
+								["questID"] = 39225,
+								["isDaily"] = true,
+								["groups"] = {
+									currency(823),	-- Apexis Crystal x1000
+								},
+							},
+							{	-- Pits of Mannoroth
+								["questID"] = 39221,
+								["isDaily"] = true,
+								["groups"] = {
+									currency(823),	-- Apexis Crystal x1000
+								},
+							},
+							{	-- Shadowmoon Burial Grounds
+								["questID"] = 37784,
+								["isDaily"] = true,
+								["groups"] = {
+									currency(824),	-- Garrison Resources x175
+								},
+							},
+							{	-- Skyreach
+								["questID"] = 37785,
+								["isDaily"] = true,
+								["groups"] = {
+									currency(824),	-- Garrison Resources x175
+								},
+							},
+							{	-- Slagworks: Heart of the Mountain
+								["questID"] = 37762,
+								["isWeekly"] = true,
+								["groups"] = {
+									i(123975), -- Greater Bounty Spoils
+								},
+							},
+							{	-- Temple of Tyranny
+								["questID"] = 39228,
+								["isDaily"] = true,
+								["groups"] = {
+									currency(823),	-- Apexis Crystal x1000
+								},
+							},
+							{	-- The Black Forge: Kromog
+								["questID"] = 37763,
+								["isWeekly"] = true,
+								["groups"] = {
+									i(123975), -- Greater Bounty Spoils
+								},
+							},
+							{	-- The Black Gate
+								["questID"] = 39232,
+								["isDaily"] = true,
+								["groups"] = {
+									currency(823),	-- Apexis Crystal x1000
+								},
+							},
+							{	-- The Everbloom
+								["questID"] = 37786,
+								["isDaily"] = true,
+								["groups"] = {
+									currency(824),	-- Garrison Resources x175
+								},
+							},
+							{	-- Upper Blackrock Spire
+								["questID"] = 37787,
+								["isDaily"] = true,
+								["groups"] = {
+									currency(824),	-- Garrison Resources x175
+								},
+							},
+							{	-- Walled City: Brackenspore
+								["questID"] = 37756,
+								["isWeekly"] = true,
+								["groups"] = {
+									i(123975), -- Greater Bounty Spoils
+								},
+							},
 						},
-						["description"] = "High Overlord Saurfang has a chance to spawn in your garrison daily, or you can find someone with him spawned and join their garrison. He starts a weekly raid quest which all have the Greater Bounty Spoils as a reward.",
 					}),
 					n(-107, {	-- Fishing Hut
 						i(112623, {	 -- Pack of Fishing Supplies
@@ -4113,6 +4224,144 @@ _.ExpansionFeatures =
 							i(118372),
 						}),
 					}),
+					{	-- War Planning Map
+						["objectID"] = 236206,
+						["coord"] = { 41.0, 50.8 },
+						["groups"] = {
+							{	-- Assault on Darktide Roost
+								["questID"] = 36692,
+								["isDaily"] = true,
+								["groups"] = {
+									{
+										["achievementID"] = 9562,	-- Securing Draenor
+										["criteriaID"] = 10,
+									},
+									currency(823),	-- Apexis Crystal x800
+								},
+							},
+							{	-- Assault on Magnarok
+								["questID"] = 36697,
+								["isDaily"] = true,
+								["groups"] = {
+									{
+										["achievementID"] = 9562,	-- Securing Draenor
+										["criteriaID"] = 3,
+									},
+									currency(823),	-- Apexis Crystal x800
+								},
+							},
+							{	-- Assault on Mok'gol Watchpost
+								["questID"] = 36693,
+								["isDaily"] = true,
+								["groups"] = {
+									{
+										["achievementID"] = 9562,	-- Securing Draenor
+										["criteriaID"] = 8,
+									},
+									currency(823),	-- Apexis Crystal x800
+								},
+							},
+							{	-- Assault on Pillars of Fate
+								["questID"] = 36689,
+								["isDaily"] = true,
+								["groups"] = {
+									{
+										["achievementID"] = 9562,	-- Securing Draenor
+										["criteriaID"] = 11,
+									},
+									currency(823),	-- Apexis Crystal x800
+								},
+							},
+							{	-- Assault on Shattrath Harbor
+								["questID"] = 36667,
+								["isDaily"] = true,
+								["groups"] = {
+									{
+										["achievementID"] = 9562,	-- Securing Draenor
+										["criteriaID"] = 7,
+									},
+									currency(823),	-- Apexis Crystal x800
+								},
+							},
+							{	-- Assault on Skettis
+								["questID"] = 36688,
+								["isDaily"] = true,
+								["groups"] = {
+									{
+										["achievementID"] = 9562,	-- Securing Draenor
+										["criteriaID"] = 12,
+									},
+									currency(823),	-- Apexis Crystal x800
+								},
+							},
+							{	-- Assault on Socrethar's Rise
+								["questID"] = 36691,
+								["isDaily"] = true,
+								["groups"] = {
+									{
+										["achievementID"] = 9562,	-- Securing Draenor
+										["criteriaID"] = 9,
+									},
+									currency(823),	-- Apexis Crystal x800
+								},
+							},
+							{	-- Assault on Stonefury Cliffs
+								["questID"] = 36669,
+								["isDaily"] = true,
+								["groups"] = {
+									{
+										["achievementID"] = 9562,	-- Securing Draenor
+										["criteriaID"] = 2,
+									},
+									currency(823),	-- Apexis Crystal x800
+								},
+							},
+							{	-- Assault on the Broken Precipice
+								["questID"] = 36694,
+								["isDaily"] = true,
+								["groups"] = {
+									{
+										["achievementID"] = 9562,	-- Securing Draenor
+										["criteriaID"] = 6,
+									},
+									currency(823),	-- Apexis Crystal x800
+								},
+							},
+							{	-- Assault on the Everbloom Wilds
+								["questID"] = 36695,
+								["isDaily"] = true,
+								["groups"] = {
+									{
+										["achievementID"] = 9562,	-- Securing Draenor
+										["criteriaID"] = 5,
+									},
+									currency(823),	-- Apexis Crystal x800
+								},
+							},
+							{	-- Assault on the Iron Siegeworks
+								["questID"] = 36696,
+								["isDaily"] = true,
+								["groups"] = {
+									{
+										["achievementID"] = 9562,	-- Securing Draenor
+										["criteriaID"] = 1,
+									},
+									currency(823),	-- Apexis Crystal x800
+								},
+							},
+							{	-- Assault on the Pit
+								["questID"] = 36701,
+								["isDaily"] = true,
+								["groups"] = {
+									{
+										["achievementID"] = 9562,	-- Securing Draenor
+										["criteriaID"] = 4,
+									},
+									currency(823),	-- Apexis Crystal x1000
+								},
+							},
+						},
+					},
 					garrisonBuilding(144, {	-- Trading Post
 						q(37014, {	-- Auctioning for Parts
 							["description"] = "Completing this quest grants you the ability to access the Auction House from your Garrison.",

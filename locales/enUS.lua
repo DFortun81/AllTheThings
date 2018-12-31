@@ -2670,6 +2670,7 @@ AllTheThings.Locales.enUS = {
 		[236149] = "Sasha's Secret Stash",
 		[236158] = "Sniper's Crossbow",
 		[236178] = "Evermorn Supply Cache",
+		[236206] = "War Planning Map",
 		[236715] = "Odd Skull",
 		[236755] = "Dusty Lockbox",
 		[237511] = "Strange Spore",
