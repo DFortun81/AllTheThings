@@ -169,6 +169,9 @@ _.WorldDrops =
 					{	-- Immaculate Ring
 						["itemID"] = 82283,	-- Immaculate Ring
 					},
+					{	-- Perculia's Peculiar Signet
+						["itemID"] = 90584,	-- Perculia's Peculiar Signet
+					},
 					{	-- Shamanic Ring
 						["itemID"] = 82118,	-- Shamanic Ring
 					},

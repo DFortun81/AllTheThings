@@ -11,6 +11,7 @@ _.GroupFinder =
 				   i(113760),	-- Smoldercloth Bracers*
 				   i(113759),	-- Smoldercloth Cap*
 				   i(113763),	-- Smoldercloth Gloves*
+				   i(113761),	-- Smoldercloth Leggings (unconfirmed but probably drops since other legs drop - running to test)
 				   i(113762),	-- Smoldercloth Robe*
 				   i(113786),	-- Smoldercloth Slippers*
 				   i(113769),	-- Ravaged Leather Boots

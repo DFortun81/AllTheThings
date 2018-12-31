@@ -100,50 +100,72 @@ _.Zones =
 								["b"] = 0,	-- Ignore BoA
 							},
 						}),
-						{
+						q(13011, {	-- Jormuttar is Soo Fat...
+							["qg"] = 30105,	-- King Jokkum
+							["coord"] = { 65.3, 60.1 },
+							["description"] = "Requires Friendly with Sons of Hodir.",
+						}),
+						q(12985, {	-- Forging a Head
+							["qg"] = 30127,	-- Njormeld
+							["coord"] = { 63.2, 63.2 },
+							["description"] = "Requires Friendly with Sons of Hodir.",
+							["sourceQuests"] = { 12967 },	-- Battling the Elements
+						}),
+						{			-- Everfrost
 							["itemID"] = 44725,	-- Everfrost Chip
 							["questID"] = 13420,	-- Everfrost
 							["description"] = "You can obtain these by looting Everfrost Chips in the environment.",
 						},
-						{
+						{			-- Remember Everfrost!
 							["questID"] = 13421,	-- Remember Everfrost!
 							["qg"] = 32594,	-- Quest Giver: Calder <Blacksmithing Supplies>
 							["sourceQuests"] = { 13420 },	-- Source Quest: Everfrost
 							["isDaily"]	= true,
 						},
-						{
+						{			-- Blowing Hodir's Horn
 							["questID"] = 12977,	-- Blowing Hodir's Horn
 							["description"] = "Starts at Hodir's Horn.",
 							["icon"] = "Interface\\Icons\\INV_Misc_Horn_03",
 							["isDaily"]	= true,
 						},
-						{
+						{			-- Feeding Arngrim
 							["questID"] = 13046,	-- Feeding Arngrim
 							["description"] = "Starts at Arngrim the Insatiable. (frozen giant sitting on throne)",
 							["icon"] = "Interface\\Icons\\Achievement_Dungeon_FrozenThrone",
 							["isDaily"]	= true,
 						},
-						{
+						{			-- Hot and Cold
 							["questID"] = 12981,	-- Hot and Cold
-							["description"] = "Starts at Fjorn's Anvil.",
 							["icon"] = "Interface\\Icons\\INV_BLACKSMITH_ANVIL",
+							["sourceQuests"] = { 12967 },	-- Battling the Elements
+							["coord"] = { 63.2, 63.0 },
 							["isDaily"]	= true,
+							-- Unknown reputation requirement.
 						},
-						{
+						{			-- Polishing the Helm
 							["questID"] = 13006,	-- Polishing the Helm
 							["description"] = "Starts at Hodir's Helm.",
 							["icon"] = "Interface\\Icons\\INV_Helmet_110",
 							["isDaily"]	= true,
 						},
-						{
+						{			-- Spy Hunter
 							["questID"] = 12994,	-- Spy Hunter
 							["qg"] = 30294,		-- Quest Giver: Frostworg Denmother
+							["coord"] = { 63.5, 59.7 },
+							["description"] = "Requires Honored with Sons of Hodir.",
 							["isDaily"]	= true,
 						},
-						{
+						q(13001, {	-- Raising Hodir's Spear
+							["qg"] = 30252,	-- Lorekeeper Randvir
+							["coord"] = { 64.8, 59.1 },
+							["description"] = "Requires Honored with Sons of Hodir.",
+						}),
+						{			-- Thrusting Hodir's Spear
 							["questID"] = 13003,	-- Thrusting Hodir's Spear
 							["description"] = "Starts at Hodir's Spear.",
 							["icon"] = "Interface\\Icons\\INV_Spear_04",
+							["sourceQuests"] = { 13001 },	-- Raising Hodir's Spear
+							["description"] = "Requires Honored with Sons of Hodir.",
 							["isDaily"]	= true,
 						},
 					},
@@ -242,6 +264,13 @@ _.Zones =
 						["sourceQuests"] = { 12821 },	-- Opening the Backdoor
 					}),
 					
+
+					qa(12871, {	-- Aid from the Explorers' League
+						["qg"] = 29579,	-- Brann Bronzebeard
+						["description"] = "Use Brann's Communicator to pick this quest up.",
+						["sourceQuests"] = { 12872 },	-- Norgannon's Shell
+					}),
+
 					
 					q(12828, {	-- Ample Inspiration
 						["g"] = {
@@ -263,6 +292,21 @@ _.Zones =
 					}),
 					
 
+					q(13009, {	-- A New Beginning
+						["qg"] = 30127,	-- Njormeld
+						["coord"] = { 63.2, 63.2 },
+						["sourceQuests"] = { 12967 },	-- Battling the Elements
+					}),
+					
+					
+					o(192060, {	-- Fjorn's Anvil
+						q(12956, {	-- A Spark of Hope
+							["coord"] = { 77.1, 62.9 },
+							["sourceQuests"] = { 12922 },	-- The Refiner's Fire
+						}),
+					}),
+					
+					
 					qa(12867, {	-- Baby Stealers (awarded "The Harpy Problem" achievement criteria)
 						["qg"] = 29732,	-- Fjorlin Frostbrow
 						["coord"] = { 29.8, 75.7 },
@@ -280,6 +324,13 @@ _.Zones =
 						["sourceQuests"] = { 13061 },	-- Into the Pit
 					}),
 					
+
+					q(12967, {	-- Battling the Elements
+						["qg"] = 30099,	-- Njormeld
+						["coord"] = { 75.3, 63.5 },
+						["sourceQuests"] = { 12966 },	-- You Can't Miss Him
+					}),
+
 					
 					q(12832, {	-- Bitter Departure
 						["g"] = {
@@ -314,6 +365,13 @@ _.Zones =
 					}),
 					
 
+					qa(12860, {	-- Data Mining
+						["qg"] = 29579,	-- Brann Bronzebeard
+						["description"] = "Use Brann's Communicator to pick this quest up.",
+						["sourceQuests"] = { 12858 },	-- Pieces to the Puzzle
+					}),
+
+					
 					q(13063, {	-- Deemed Worthy
 						["qg"] = 29592,	-- Brijana
 						["coord"] = { 53.1, 65.7 },
@@ -379,6 +437,34 @@ _.Zones =
 					}),
 					
 
+					qa(12874, {	-- Fervor of the Frostborn
+						["g"] = {
+							i(42788),	-- Frosthowl Cinch
+							i(42801),	-- Nomadic Bracers
+							i(42813),	-- Chestplate of the Northern Ranger
+							i(42832),	-- Coldblooded Legplates
+						},
+						["qg"] = 29593,	-- Yorg Stormheart
+						["coord"] = { 30.2, 74.7 },
+						["sourceQuests"] = { 12873 },	-- The Frostborn King
+					}),
+					
+					
+					q(12924, {	-- Forging an Alliance
+						["g"] = {
+							i(42792),	-- Vestments of Dun Niffelem
+							i(42805),	-- Njormeld's Pauldrons
+							i(42817),	-- Reforged Chain Leggings
+							i(42830),	-- Ring of Jokkum
+						},
+						["qg"] = 29445,	-- Thorim
+						["coord"] = { 33.4, 58.0 },
+						["description"] = "To progress through this quest, pick up the quest 'You Can't Miss Him' from King Jokkum.",
+						["sourceQuests"] = { 12956 },	-- A Spark of Hope
+						-- May also require "Mending Fences" -- I turned it in first, so I'm not sure.
+					}),
+					
+					
 					q(12851, {	-- Going Bearback
 						["qg"] = 29592,	-- Brijana
 						["coord"] = { 53.1, 65.7 },
@@ -453,6 +539,13 @@ _.Zones =
 						["sourceQuests"] = { 13063 },	-- Deemed Worthy
 					}),
 					
+
+					q(12915, {	-- Mending Fences
+						["qg"] = 29445,	-- Thorim
+						["coord"] = { 33.4, 58.0 },
+						["sourceQuests"] = { 13064 },	-- Sibling Rivalry
+					}),
+
 					
 					q(12905, {	-- Mildred the Cruel
 						["qg"] = 29481,	-- Lok'lira the Crone
@@ -476,6 +569,21 @@ _.Zones =
 					}),
 
 
+					o(191760, {	-- Inventor's Library Console
+						qa(12872, {	-- Norgannon's Shell (awarded "Norgannon's Shell" criteria)
+							["g"] = {
+								i(42794),	-- Hardened Vine of the Mauler
+								i(42824),	-- Maker's Edge
+								i(42819),	-- Maker's Touch
+								i(42807),	-- Blade of the Inception
+								i(42831),	-- Maiden's Dagger
+							},
+							["coord"] = { 37.4, 46.7 },
+							["sourceQuests"] = { 13415 },	-- The Library Console
+						}),
+					}),
+					
+					
 					qa(12863, {	-- Offering Thanks
 						["qg"] = 29743,	-- Lagnus
 						["coord"] = { 29.4, 73.7 },
@@ -561,6 +669,13 @@ _.Zones =
 					}),
 
 
+					q(13064, {	-- Sibling Rivalry (awarded "Heartbreak" achievement criteria)
+						["qg"] = 29445,	-- Thorim
+						["coord"] = { 33.4, 58.0 },
+						["sourceQuests"] = { 12886 },	-- The Drakkensryd
+					}),
+					
+					
 					qa(12868, {	-- Sirana Iceshriek
 						["g"] = {
 							i(43185),	-- Wand of Chilled Renewal
@@ -611,8 +726,35 @@ _.Zones =
 						["coord"] = { 42.8, 68.8 },
 						["sourceQuests"] = { 12846 },	-- Leave No Goblin Behind
 					}),
+					
+					
+					q(12886, {	-- The Drakkensryd
+						["g"] = {
+							i(42841),	-- Leggings of the Frozen Wastes
+							i(42865),	-- Frost Hardened Bracers
+							i(42887),	-- Pauldrons of the Ascent
+							i(42876),	-- Light-Touched Mantle
+						},
+						["qg"] = 29796,	-- Gretta the Arbiter
+						["coord"] = { 50.8, 65.6 },
+						["sourceQuests"] = { 13062 },	-- Lok'lira's Parting Gift
+					}),
 
 
+					qa(12885, {	-- The Exiles of Ulduar
+						["qg"] = 29579,	-- Brann Bronzebeard
+						["description"] = "Use Brann's Communicator to pick this quest up.",
+						["sourceQuests"] = { 12872 },	-- Norgannon's Shell
+					}),
+					
+
+					qa(12873, {	-- The Frostborn King
+						["qg"] = 29743,	-- Lagnus
+						["coord"] = { 29.4, 73.7 },
+						["sourceQuests"] = { 12871 },	-- Aid From the Explorers' League
+					}),
+
+					
 					q(12970, {	-- The Hyldsmeet
 						["qg"] = 29975,	-- Lok'lira the Crone
 						["coord"] = { 47.4, 69.0 },
@@ -626,6 +768,21 @@ _.Zones =
 						["sourceQuests"] = { 12900 },	-- Making a Harness
 					}),
 					
+
+					qa(13415, {	-- The Library Console
+						["qg"] = 29579,	-- Brann Bronzebeard
+						["description"] = "Use Brann's Communicator to pick this quest up.",
+						["sourceQuests"] = { 12860 },	-- Data Mining
+					}),
+
+
+					{			-- The Refiner's Fire
+						["qg"] = 29375,	-- Stormforged Iron Giant
+						["itemID"] = 41556,	-- Slag Covered Metal
+						["questID"] = 12922,	-- The Refiner's Fire
+						["description"] = "The giants that drop this quest item spawn on and around the ice patch east of Dun Niffelem.",
+					},
+
 					
 					q(12989, {	-- The Slithering Darkness
 						["g"] = {
@@ -682,6 +839,14 @@ _.Zones =
 					}),
 
 
+					q(12966, {	-- You Can't Miss Him
+						["qg"] = 30105,	-- King Jokkum
+						["coord"] = { 65.3, 60.1 },
+						["description"] = "This questline is required to progress on the 'Forging the Alliance' quest.",
+						["sourceQuests"] = { 12924 },	-- Forging an Alliance
+					}),
+					
+					
 					q(12972, {	-- You'll Need a Bear (awarded "Bearly Ready" achievement criteria)
 						["qg"] = 29975,	-- Lok'lira the Crone
 						["coord"] = { 47.4, 69.0 },
@@ -713,15 +878,11 @@ _.Zones =
 					q(44767),	-- A Celestial Invitation
 					q(12993),	-- A Colossal Threat
 					q(12976),	-- A Monument to the Fallen
-					q(13009),	-- A New Beginning
 					qa(29074),	-- A Season for Celebration
 					qh(29400),	-- A Season for Celebration
-					q(12956),	-- A Spark of Hope
-					qa(12871),	-- Aid from the Explorers' League
 					qa(12875),	-- An Experienced Guide
 					qh(12882),	-- Ancient Relics
 					q(12979),	-- Armor of Darkness
-					q(12967),	-- Battling the Elements
 					qh(11446),	-- Brewfest!
 					qa(13448),	-- Candy Bucket
 					qh(13471),	-- Candy Bucket
@@ -732,7 +893,6 @@ _.Zones =
 					qh(13055),	-- Cave Medicine
 					qa(11356),	-- Costumed Orphan Matron
 					qh(12927),	-- Data Mining
-					qa(12860),	-- Data Mining
 					qa( 11580),	-- Desecrate this Fire!
 					qh( 11745),	-- Desecrate this Fire!
 					qh( 11581),	-- Desecrate this Fire!
@@ -748,7 +908,6 @@ _.Zones =
 					q(12978),	-- Facing the Storm
 					q(13015),	-- Fargal the Elder
 					q(12931),	-- Fighting Back
-					q(12985),	-- Forging a Head
 					qh( 13285),	-- Forging the Keystone
 					qa( 12879),	-- Fury of the Frostborn King
 					qh( 13273),	-- Going After the Core
@@ -759,7 +918,6 @@ _.Zones =
 					qa( 13490),	-- Honor the Flame
 					q(12890),	-- If Size Mattered...
 					q(12975),	-- In Memoriam
-					q(13011),	-- Jormuttar is Soo Fat...
 					q(13035),	-- Loken's Lackeys
 					q(12853),	-- Luxurious Getaway!
 					q(13422, {	-- Maintaining Discipline
@@ -773,7 +931,6 @@ _.Zones =
 					}),
 					qh(11357),	-- Masked Orphan Matron
 					qh(13037),	-- Memories of Stormhoof
-					q(12915),	-- Mending Fences
 					q(12987),	-- Mounting Hodir's Helm
 					q(13032),	-- Muraco the Elder
 					qh(12926),	-- Pieces of the Puzzle
@@ -781,11 +938,9 @@ _.Zones =
 					qh(14036),	-- Pilgrim's Bounty
 					qa(11882),	-- Playing with Fire
 					qa(12869),	-- Pushed Too Far
-					q(13001),	-- Raising Hodir's Spear
 					q(12930),	-- Rare Earth
 					q(12937),	-- Relief for the Fallen
 					q(12888),	-- SCRAP-E
-					q(13064),	-- Sibling Rivalry
 					q(12957),	-- Slaves of the Stormforged
 					qh(12910),	-- Sniffing Out the Perpetrator
 					qh(12913),	-- Speak Orcish, Man!
@@ -809,12 +964,9 @@ _.Zones =
 					qh(13274),	-- The Core's Keeper
 					q(12964),	-- The Dark Ore
 					qh(12929),	-- The Earthen of Ulduar
-					qa(12885),	-- The Exiles of Ulduar
-					qa(12873),	-- The Frostborn King
 					q(12998),	-- The Heart of the Storm
 					qh( 13049),	-- The Hero's Arms
 					qa( 12878),	-- The Hidden Relic
-					qa( 13415),	-- The Library Console
 					qh( 13416),	-- The Library Console
 					qa( 12877),	-- The Lonesome Watcher
 					qa( 12880),	-- The Master Explorer
@@ -823,7 +975,6 @@ _.Zones =
 					qh( 13054),	-- The Missing Tracker
 					qh( 12909),	-- The Nose Knows
 					q(12889),	-- The Prototype Console
-					q(12922),	-- The Refiner's Fire
 					q(13843),	-- The Scrapbot Construction Kit
 					qh( 11971),	-- The Spinner of Summer Tales
 					q(13057),	-- The Terrace of the Makers
@@ -833,7 +984,6 @@ _.Zones =
 					qh( 13060),	-- When All Else Fails
 					qh( 13048),	-- Where Time Went Wrong
 					qh( 13426),	-- Xarantaur, the Witness
-					q(12966),	-- You Can't Miss Him
 --]]					
 					qh(13058, {	-- Changing the Wind's Course
 						i(43186),
@@ -850,29 +1000,10 @@ _.Zones =
 						i(42816),
 						i(42834),
 					}),
-					qa(12874, {	-- Fervor of the Frostborn
-						i(42788),
-						i(42801),
-						i(42813),
-						i(42832),
-					}),
-					q(12924, {	-- Forging an Alliance
-						i(42792),
-						i(42805),
-						i(42817),
-						i(42830),
-					}),
 					q(13010, {	-- Krolmir, Hammer of Storms
 						i(42806),
 						i(42818),
 						i(42835),
-					}),
-					qa(12872, {	-- Norgannon's Shell
-						i(42794),
-						i(42824),
-						i(42819),
-						i(42807),
-						i(42831),
 					}),
 					qh(12928, {	-- Norgannon's Shell
 						i(42794),
@@ -887,12 +1018,6 @@ _.Zones =
 						i(42858),
 						i(42860),
 						i(42848),
-					}),
-					q(12886, {	-- The Drakkensryd
-						i(42841),
-						i(42865),
-						i(42887),
-						i(42876),
 					}),
 					q(13005, {	-- The Earthen Oath
 						i(42847),
