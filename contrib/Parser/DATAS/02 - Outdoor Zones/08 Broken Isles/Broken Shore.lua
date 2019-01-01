@@ -1962,6 +1962,9 @@ _.Zones =
 			},
 			["lvl"] = 110,
 			["achievementID"] = 11543,
+			["maps"] = {
+				676,	-- Broken Shore (Opening Warrior OH map)
+			},
 			["description"] = "|cff66ccffBroken Shore is the new max-level zone introduced in Patch 7.2 with World Quests, Armies of Legionfall Reputation, Nethershards, and a new dungeon and raid. |r",
 		}),	
 	}),
