@@ -273,6 +273,17 @@ _.Instances =
 								i(109819),	-- Verdant Plate Legguards
 								i(110000),	-- Crushto's Runic Alarm
 							})),
+							n(75242, {	-- Croman (The Barbarian)
+								["description"] = "Click on this manly dude and have him follow you to Magmolatus and allow him to retrieve his weapon. (He has to hit the boss at least one time.)\n\nAfter he has reclaimed his weapon, bring him to the final boss and allow him to hit that boss as well before killing the boss.",
+								["groups"] = {
+									{
+										["achievementID"] = 9005,	-- Come With Me If You Want to Live
+										["groups"] = {
+											follower(177),	-- Croman
+										},
+									},
+								},
+							}),
 							cr(74475, e(893, {	-- Magmolatus (Forgemaster Gog'duh 74366)
 								ach(8993),	-- A Gift of Earth and Fire
 								i(109898),	-- Blackwater Wrap
@@ -488,6 +499,17 @@ _.Instances =
 								i(109819),	-- Verdant Plate Legguards
 								i(110000),	-- Crushto's Runic Alarm
 							})),
+							n(75242, {	-- Croman (The Barbarian)
+								["description"] = "Click on this manly dude and have him follow you to Magmolatus and allow him to retrieve his weapon. (He has to hit the boss at least one time.)\n\nAfter he has reclaimed his weapon, bring him to the final boss and allow him to hit that boss as well before killing the boss.",
+								["groups"] = {
+									{
+										["achievementID"] = 9005,	-- Come With Me If You Want to Live
+										["groups"] = {
+											follower(177),	-- Croman
+										},
+									},
+								},
+							}),
 							cr(74475, e(893, {	-- Magmolatus (Forgemaster Gog'duh 74366)
 								i(109898),	-- Blackwater Wrap
 								i(109885),	-- Bloodfeather Chestwrap
