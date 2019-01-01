@@ -24,6 +24,76 @@ _.Zones =
 							})),
 							a(ach(9528)),	-- On the Shadow's Trail (Alliance) (Shadowmoon Valley)
 ]]--				
+							a(ach(8845, {
+								crit(1, {	-- Establishing a Foothold
+									{	-- Finding a Foothold
+										["questID"] = 34582,
+										["qg"] = 79206,	-- Prophet Velen
+									},
+									{	-- For the Alliance!
+										["questID"] = 34583,
+										["qg"] = 79470,	-- Vindicator Maraad
+										["sourceQuest"] = 34582,	-- Finding a Foothold
+									},
+									{	-- Looking for Lumber
+										["questID"] = 34584,
+										["qg"] = 79243,	-- Baros Alexston
+										["sourceQuest"] = 34583,	-- For the Alliance!
+									},
+									{	-- Ravenous Ravens
+										["questID"] = 34616,
+										["qg"] = 79243,	-- Baros Alexston
+										["sourceQuest"] = 34583,	-- For the Alliance!
+									},
+									{	-- Quakefist
+										["questID"] = 34585,
+										["qg"] = 79567,	-- Yrel
+										["sourceQuests"] = {
+											34584,	-- Looking for Lumber
+											34616,	-- Ravenous Ravens
+										},
+									},
+									{	-- Establish Your Garrison
+										["questID"] = 34586,
+										["qg"] = 79243,	-- Baros Alexston
+										["sourceQuest"] = 34585,	-- Quakefist
+									},
+									{	-- Pale Moonlight
+										["questID"] = 35174,
+										["qg"] = 79457,	-- Vindicator Maraad
+										["sourceQuest"] = 34586,	-- Establish Your Garrison
+									},
+									{	-- Ship Salvage
+										["questID"] = 35166,
+										["qg"] = 77209,	-- Baros Alexston
+										["sourceQuest"] = 34586,	-- Establish Your Garrison
+									},
+									{	-- Keeping it Together
+										["questID"] = 35176,
+										["qg"] = 77209,	-- Baros Alexston
+										["sourceQuest"] = 34586,	-- Establish Your Garrison
+									},
+									{	-- Build Your Barracks
+										["questID"] = 34587,
+										["qg"] = 77209,	-- Baros Alexston
+										["sourceQuests"] = {
+											35176,	-- Keeping it Together
+											35174,	-- Pale Moonlight
+											35166,	-- Ship Salvage
+										},
+									},
+									{	-- Qiana Moonshadow
+										["questID"] = 34646,
+										["qg"] = 79457,	-- Vindicator Maraad
+										["sourceQuest"] = 34587,	-- Build Your Barracks
+									},
+									{	-- Delegating on Draenor
+										["questID"] = 34692,
+										["qg"] = 79953,	-- Lieutenant Thorn
+										["sourceQuest"] = 34646,	-- Qiana Moonshadow
+									},
+								}),
+							})),
 							qa(33082, {	-- Ancestor's Memory
 								i(106151),	-- Karabor Honor Guard Legguards
 								i(107316),	-- Karabor Sage Leggings
