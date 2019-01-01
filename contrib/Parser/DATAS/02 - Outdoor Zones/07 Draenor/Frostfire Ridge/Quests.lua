@@ -570,7 +570,7 @@ _.Zones =
 								["objectID"] = 229333,
 								["coord"] = { 67.9, 18.9 },
 								["questID"] = 34464,
-							{,
+							},
 							{	-- Oath of Shadow Hunter Rala
 								["questID"] = 34731,
 								["qg"] = 78208,	-- Shadow Hunter Rala
@@ -617,7 +617,7 @@ _.Zones =
 								["coords"] = {
 									{ 82.6, 69.8 },
 									{ 83.2, 62.7 },
-								}
+								},
 								["races"] = HORDE_ONLY,
 								["groups"] = {
 									i(117509),	-- Agurak Chain Bracers
