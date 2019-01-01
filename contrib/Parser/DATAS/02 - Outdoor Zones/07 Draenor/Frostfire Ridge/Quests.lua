@@ -42,7 +42,9 @@ _.Zones =
 							{	-- A Clew of Worms
 								["questID"] = 34228,
 								["qg"] = 72836,	-- Cordana Felsong
+								["coord"] = { 31.8, 11.8 },
 								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 34216,	-- Safe Passage
 							},
 							{	-- A Collection of Coils
 								["questID"] = 34264,
@@ -58,7 +60,9 @@ _.Zones =
 							{	-- All is Revealed
 								["questID"] = 34280,
 								["qg"] = 72874,	-- Archmage Khadgar
+								["coord"] = { 31.7, 11.8 },
 								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 34230,	-- Eye Need That
 							},
 							{	-- At the End of Your Rope
 								["questID"] = 34070,
@@ -169,7 +173,9 @@ _.Zones =
 							{	-- Desecration of the Dead
 								["questID"] = 34278,
 								["qg"] = 72837,	-- Farseer Urquan
+								["coord"] = { 31.7, 11.7 },
 								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 34227,	-- What Must Be Done
 								["groups"] = {
 									i(108972),	-- Blind Fel-Eye Ring
 									i(108975),	-- Fel-Blackened Ring
@@ -188,12 +194,16 @@ _.Zones =
 							{	-- Eliminate the Shadow Council
 								["questID"] = 34292,
 								["qg"] = 72836,	-- Cordana Felsong
+								["coord"] = { 31.8, 11.8 },
 								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 34280,	-- All is Revealed
 							},
 							{	-- Eliminate the Shadow Council
 								["questID"] = 34293,
-								["qg"] = 73480,	-- IMage of Archmage Khadgar
+								["qg"] = 73480,	-- Image of Archmage Khadgar
+								["coord"] = { 21.9, 14.6 },
 								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 34280,	-- All is Revealed
 							},
 							{	-- Enfilade
 								["questID"] = 32994,
@@ -203,7 +213,9 @@ _.Zones =
 							{	-- Eye Need That
 								["questID"] = 34230,
 								["qg"] = 72874,	-- Archmage Khadgar
+								["coord"] = { 31.7, 11.8 },
 								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 34227,	-- What Must Be Done
 							},
 							{	-- Flames of the Earth
 								["questID"] = 34325,
@@ -310,7 +322,9 @@ _.Zones =
 							{	-- Have a Heart
 								["questID"] = 34291,
 								["qg"] = 72874,	-- Archmage Khadgar
+								["coord"] = { 31.7, 11.8 },
 								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 34280,	-- All is Revealed
 							},
 							{	-- Honor Has Its Rewards
 								["questID"] = 33816,
@@ -325,6 +339,13 @@ _.Zones =
 										["races"] = HORDE_ONLY,
 									},
 								},
+							},
+							{	-- Illegible Sootstained Notes
+								["itemID"] = 115593,
+								["questID"] = 36435,
+								["races"] = HORDE_ONLY,
+								["description"] = "Drops from any mob in the zone.",
+								["requireSkill"] = 773,	-- Inscription
 							},
 							{	-- Into the Boneslag
 								["questID"] = 32991,
@@ -471,7 +492,9 @@ _.Zones =
 							{	-- Safe Passage
 								["questID"] = 34216,
 								["qg"] = 72814,	-- Cordana Felsong
+								["coord"] = { 31.4, 16.2 },
 								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 34209,	-- Vouchsafe Our Arrival
 							},
 							{	-- Savage Vengeance
 								["questID"] = 34066,
@@ -519,7 +542,9 @@ _.Zones =
 							{	-- Stop the Flow
 								["questID"] = 34277,
 								["qg"] = 72836,	-- Cordana Felsong
+								["coord"] = { 31.8, 11.8 },
 								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 34227,	-- What Must Be Done
 							},
 							{	-- Tar Get of Opportunity
 								["questID"] = 34072,
@@ -584,7 +609,9 @@ _.Zones =
 							{	-- The Fel Crystals
 								["questID"] = 34294,
 								["qg"] = 73480,	-- Image of Archmage Khadgar
+								["coord"] = { 31.7, 11.8 },
 								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 34291,	-- Have a Heart
 							},
 							{	-- The Frostwolves Stand Ready
 								["questID"] = 37563,
@@ -634,6 +661,7 @@ _.Zones =
 							{	-- The Sleeper Has Awakened
 								["questID"] = 34229,
 								["qg"] = 72837,	-- Farseer Urquan
+								["coord"] = { 31.7, 11.7 },
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 34228,	-- A Clew of Worms
 							},
@@ -679,8 +707,11 @@ _.Zones =
 							{	-- To Capture Gul'dan
 								["questID"] = 34295,
 								["qg"] = 73480,	-- Image of Archmage Khadgar
+								["coord"] = { 19.8, 14.6 },
 								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 34294,	-- The Fel Crystals
 								["groups"] = {
+									ach(9529),	-- On the Shadow's Trail
 									i(113150),	-- Felblood-Starched Cloak
 									i(113149),	-- Flayed Flesh Cloak
 									i(113148),	-- Foulspawn Drape
@@ -737,7 +768,9 @@ _.Zones =
 							{	-- What Must Be Done
 								["questID"] = 34227,
 								["qg"] = 72837,	-- Fareseer Urquan
+								["coord"] = { 31.7, 11.7 },
 								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 34216,	-- Safe Passage
 							},
 							{	-- Where's My Wolf?!
 								["questID"] = 33826,
