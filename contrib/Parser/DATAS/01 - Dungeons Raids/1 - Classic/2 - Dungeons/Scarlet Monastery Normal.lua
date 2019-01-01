@@ -36,6 +36,11 @@ _.Instances =
 								7754,	-- Scarlet Sentry
 							},
 						}),
+						i(2262, {	-- Mark of Kern
+							["crs"] = {
+								60033,	-- Frenzied Spirit
+							},
+						}),
 						i(10329),	-- Scarlet Belt
 						i(10332),	-- Scarlet Boots
 						i(10328),	-- Scarlet Chestpiece
@@ -225,7 +230,7 @@ _.Instances =
 											un(2, i(7724)),	-- Gauntlets of Divinity
 											un(2, i(7723)),	-- Mograine's Might
 											un(2, i(10330)),	-- Scarlet Leggings
-											un(7, i(2262)),	-- Mark of Kern
+											i(2262),	-- Mark of Kern
 										}),
 										n(3977, {	-- High Inquisitor Whitemane
 											un(2, i(7721)),	-- Hand of Righteousness

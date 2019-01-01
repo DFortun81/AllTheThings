@@ -743,7 +743,7 @@ _.WorldDrops =
 					i(11999),	-- Lodestone Hoop
 					i(13001),	-- Maiden's Circle
 					i(12002),	-- Marble Circle
-					un(7, i(2262)),	-- Mark of Kern
+					i(2262),	-- Mark of Kern
 					i(12012),	-- Marsh Ring
 					i(12006),	-- Meadow Ring
 					i(5009),	-- Mindbender Loop
