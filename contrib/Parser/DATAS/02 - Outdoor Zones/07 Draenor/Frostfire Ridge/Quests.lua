@@ -220,31 +220,30 @@ _.Zones =
 											["questID"] = 32989,
 											["qg"] = 70860,	-- Durotan
 											["coord"] = { 43.1, 41.2, 526 },
-											["races"] = HORDE_ONLY,
 											["sourceQuest"] = 33473,	-- Back to Bladespire Citadel
 										},
 										{	-- They Who Held Fast
 											["questID"] = 32990,
 											["qg"] = 72274,	-- Lokra
-											["races"] = HORDE_ONLY,
+											["coord"] = { 38.5, 52.4, 525 },
 											["sourceQuest"] = 32989,	-- Securing the South
 										},
 										{	-- Into the Boneslag
 											["questID"] = 32991,
 											["qg"] = 72274,	-- Lokra
-											["races"] = HORDE_ONLY,
+											["coord"] = { 38.5, 52.4, 525 },
 											["sourceQuest"] = 32990,	-- They Who Held Fast
 										},
 										{	-- Moving Target
 											["questID"] = 32992,
 											["qg"] = 72274,	-- Lokra
-											["races"] = HORDE_ONLY,
+											["coord"] = { 47.5, 45.5, 525 },
 											["sourceQuest"] = 32991,	-- Into the Boneslag
 										},
 										{	-- The Strength of Our Bonds
 											["questID"] = 32993,
 											["qg"] = 72274,	-- Lokra
-											["races"] = HORDE_ONLY,
+											["coord"] = { 55.4, 56.6, 525 },
 											["sourceQuest"] = 32992,	-- Moving Target
 											["groups"] = {
 												i(113255),	-- Asha's Fang
@@ -255,30 +254,19 @@ _.Zones =
 										{	-- Where's My Wolf?!
 											["questID"] = 33826,
 											["qg"] = 73097,	-- Frostwolf Champion
-											["races"] = HORDE_ONLY,
+											["coord"] = { 63.1, 60.0, 525 },
 											["sourceQuest"] = 32993,	-- The Strength of Our Bonds
-										},
-										{	-- Enfilade
-											["questID"] = 32994,
-											["qg"] = 73097,	-- Frostwolf Champion
-											["races"] = HORDE_ONLY,
-											["sourceQuest"] = 33826,	-- Where's My Wolf?!
 										},
 										{	-- The Master Siegesmith
 											["questID"] = 33828,
 											["qg"] = 72940,	-- Frostwolf Champion
-											["sourceQuest"] = 32994,	-- Enfilade
+											["sourceQuest"] = 33826,	-- Where's My Wolf?!
 											["groups"] = {
 												i(113249),	-- Grom'gar Chain Boots
 												i(113251),	-- Grom'gar Plate Stompers
 												i(113252),	-- Grom'gar Wolfpelt Boots
 												i(113250),	-- Grom'gar Wolfskin Slippers
 											},
-										},
-										{	-- Return to the Pack
-											["questID"] = 33493,
-											["qg"] = 72940,	-- Frostwolf Champion
-											["sourceQuest"] = 33828,	-- The Master Siegesmith
 										},
 									}),
 									crit(6, {	-- The Battle of Thunder Pass
@@ -472,6 +460,12 @@ _.Zones =
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 34280,	-- All is Revealed
 							},
+							{	-- Enfilade
+								["questID"] = 32994,
+								["qg"] = 73097,	-- Frostwolf Champion
+								["coord"] = { 60.9, 65.0, 525 },
+								["sourceQuest"] = 33826,	-- Where's My Wolf?!
+							},
 							{	-- Eye Need That
 								["questID"] = 34230,
 								["qg"] = 72874,	-- Archmage Khadgar
@@ -588,11 +582,12 @@ _.Zones =
 									},
 								},
 							},
-							
 							{	-- Karg Unchained
 								["questID"] = 33785,
 								["qg"] = 73097,	-- Frostwolf Champion
+								["coord"] = { 63.1, 60.0, 525 },
 								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 32993,	-- The Strength of Our Bonds
 							},
 							{	-- Lurkers -- aa
 								["questID"] = 34344,
@@ -609,6 +604,7 @@ _.Zones =
 							{	-- Mending A Broken Heart
 								["questID"] = 36238,
 								["qg"] = 84494,	-- Waruk the Frostforger
+								["coord"] = { 46.0, 48.6, 525 },
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 36230,	-- The Restless Spirit
 								["requireSkill"] = 164,	-- Blacksmithing
@@ -638,7 +634,6 @@ _.Zones =
 								["coord"] = { 66.3, 56.5, 528 },
 								["races"] = HORDE_ONLY,
 							},
-							
 							{	-- Mulverick's Offer of Service
 								["questID"] = 34732,
 								["qg"] = 79047,	-- Mulverick
@@ -694,6 +689,14 @@ _.Zones =
 								["qg"] = 78208,	-- Shadow Hunter Rala
 								["coord"] = { 52.6, 40.4, 525 },
 								["races"] = HORDE_ONLY,
+							},
+							{	-- Return to the Pack
+								["questID"] = 33493,
+								["qg"] = 72940,	-- Frostwolf Champion
+								["sourceQuests"] = {
+									32994,	-- Enfilade
+									33828,	-- The Master Siegesmith
+								},
 							},
 							{	-- REUSE - never used
 								["questID"] = 33380,
@@ -852,7 +855,6 @@ _.Zones =
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 34228,	-- A Clew of Worms
 							},
-							
 							{	-- The Warlord's Guard
 								["questID"] = 33450,
 								["qg"] = 74635,	-- Igrimar the Resolute
