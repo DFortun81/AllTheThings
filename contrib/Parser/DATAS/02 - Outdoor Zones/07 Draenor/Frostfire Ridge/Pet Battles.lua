@@ -41,6 +41,15 @@ _.Zones =
 								["crs"] = { 85253 },	-- Twilight Wasp
 								["speciesID"] = 1464,	-- Twilight Wasp
 							},
+							{	-- Gargra
+								["questID"] = 37205,
+								["qg"] = 87122,	-- Gargra
+								["coord"] = { 68.5, 64.7 },
+								["isDaily"] = true,
+								["groups"] = {
+									currency(116415),	-- Shiny Pet Charm x2
+								},
+							},
 						},
 					},
 				},

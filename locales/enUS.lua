@@ -2613,6 +2613,7 @@ AllTheThings.Locales.enUS = {
 		[228026] = "Pure Crystal Dust",
 		[228483] = "Rusted Lockbox",
 		[228570] = "Ketya's Stash",
+		[229333] = "Mysterious Boots",
 		[229354] = "Bright Coin",
 		[229367] = "Frozen Orc Skeleton",
 		[229640] = "Frozen Frostwolf Axe",

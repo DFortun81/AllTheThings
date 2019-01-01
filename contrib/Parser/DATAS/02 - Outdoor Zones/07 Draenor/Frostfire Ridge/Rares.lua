@@ -245,7 +245,7 @@ _.Zones =
 										["itemID"] = 119358,	-- Voidmesh Cloth Wristwraps
 									},
 								},
-							}, 				
+							},
 							{	-- Gorok	**Coords uncofirmed, relied on wowhead**
 								["npcID"] = 50992,	-- Gorok
 								["coords"] = {
@@ -321,7 +321,7 @@ _.Zones =
 							},
 							{	-- Jehil the Climber
 								["npcID"] = 79678,	-- Jehil the Climber
-								--["questID"] = 34708, -- this doesn't appear to be a vignette anymore, but he still drops unique boots
+								["questID"] = 34708,
 								["coord"] = { 61.76, 26.6 },
 								["g"] = {	
 									i(112078),	-- Jehil's Climbin' Boots
@@ -367,12 +367,9 @@ _.Zones =
 									i(119376),	-- Three-Egg Pendant Necklace 
 								},
 							},
-							{	-- Nok-Karosh <Warrior's Death>	**Coords uncofirmed, relied on wowhead**
+							{	-- Nok-Karosh <Warrior's Death>
 								["npcID"] = 81001,	-- Nok-Karosh <Warrior's Death>
-								["coords"] = {
-									{ 13.2, 50.6 },
-									{ 14.6, 52.4 },
-								},
+								["coords"] = { 13.1, 50.4 },
 								["g"] = { 
 									i(116794), 	-- Garn Nighthowl Mount boe
 								},
@@ -504,10 +501,10 @@ _.Zones =
 								["objectID"] = 224623,	-- Wiggling Egg
 								["questID"] = 33505,
 								["coord"] = { 64.37, 65.87 },
-								["g"] = {	
+								["g"] = {
 									i(112107, {	-- Mysterious Egg
 										["description"] = "This egg will hatch after 3 days to give you the Fruit Hunter pet.",
-										["g"] = {	
+										["g"] = {
 											i(117564), -- Fruit Hunter Pet
 										},
 									}),
@@ -517,7 +514,7 @@ _.Zones =
 								["npcID"] = 79145,	-- Yaga the Scarred
 								["questID"] = 34559,
 								["coord"] = { 40.57, 27.58 },
-								["g"] = {	
+								["g"] = {
 									i(111477),	-- Yaga's Trophy Belt
 								},
 							},

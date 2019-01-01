@@ -10,6 +10,7 @@ _.Zones =
 				["mapID"] = 525,	-- Frostfire Ridge
 				["maps"] = {
 					530,	-- Grom'gar
+					533,	-- Snowfall Alcove
 				},
 				["lvl"] = 90,
 				["achievementID"] = 8937,

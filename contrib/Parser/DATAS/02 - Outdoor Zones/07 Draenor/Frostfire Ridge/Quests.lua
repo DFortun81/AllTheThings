@@ -10,13 +10,12 @@ _.Zones =
 				["mapID"] = 525,	-- Frostfire Ridge
 				["g"] = {
 					n(-17, { 	-- Quests
-					--[[
+					--[[ Tracking/Flags
 						33847 - Flag: Seen Ga'nar Rolling Out - triggered going into Chillfang's cave immediately upon getting to Draenor
+						34332 - Touched by Fire Selected - triggers when choosing the Fire shamanstone buff for the first time
+						34330 - Ogrish Fortitude Selected - triggers when choosing the Ogrish Fortitude shamanstone buff for the first time
 					]]--
 						["groups"] = {
-	--[[	Achievement info for Loremaster related zone quests
-							h(ach(9529)),	-- On the Shadow's Trail (Horde) (Frostfire Ridge)
-	]]--					
 							ach(8671, {	-- Frostfire Ridge
 								["groups"] = {
 									crit(1, {	-- Foothold in a Savage Land
@@ -36,6 +35,191 @@ _.Zones =
 											["sourceQuests"] = 33815,	-- A Song of Frost and Fire
 										},
 									}),
+									crit(2, {	-- Siege of Bladespire Citadel
+										{	-- Rally the Frostwolves
+											["questID"] = 34380,
+											["qg"] = 70860,	-- Durotan
+										},
+										{	-- Gormaul Tower
+											["questID"] = 33784,
+											["qg"] = 76557,	-- Durotar
+											["sourceQuest"] = 34380,	-- Rally the Frostwolves
+											["groups"] = {
+												i(106168),	-- Frostwolf Ringmail Boots
+												i(106136),	-- Frostwolf Scout's Boots
+												i(106154),	-- Frostwolf Stalwart Warboots
+												i(106164),	-- Frostwolf Wind-Talker Treads
+											},
+										},
+										{	-- These Colors Don't Run
+											["questID"] = 33526,
+											["qgs"] = {
+												70860,	-- Durotan
+												76240,	-- Durotan
+											},
+											["sourceQuest"] = 33784,	-- Gormaul Tower
+										},
+										{	-- Deeds Left Undone
+											["questID"] = 33546,
+											["qg"] = 74273,	-- Durotan
+											["sourceQuest"] = 33526,	-- These Colors Don't Run
+										},
+										{	-- Great Balls of Fire!
+											["questID"] = 33408,
+											["qg"] = 75177,	-- Durotan
+											["sourceQuest"] = 33546,	-- Deeds Left Undone
+										},
+										{	-- The Butcher of Bladespire
+											["questID"] = 33410,
+											["qg"] = 75186,	-- Thrall
+											["sourceQuest"] = 33408,	-- Great Balls of Fire!
+											["groups"] = {
+												i(106170),	-- Frostwolf Ringmail Gauntlet
+												i(106138),	-- Frostwolf Scout's Gloves
+												i(106148),	-- Frostwolf Stalwart Gauntlets
+												i(106159),	-- Frostwolf Wind-Talker Gloves
+											},
+										},
+										{	-- Armed and Dangerous
+											["questID"] = 33344,
+											["qg"] = 75186,	-- Thrall
+											["sourceQuest"] = 33410,	-- The Butcher of Bladespire
+										},
+										{	-- To the Slaughter
+											["questID"] = 33622,
+											["qg"] = 75186,	-- Thrall
+											["sourceQuest"] = 33410,	-- The Butcher of Bladespire
+										},
+										{	-- Last Steps
+											["questID"] = 33527,
+											["qg"] = 75177,	-- Durotar
+											["sourceQuests"] = {
+												33344,	-- Armed and Dangerous
+												33622,	-- To the Slaughter
+											},
+											["groups"] = {
+												i(107302),	-- Frostwolf Ringmail Belt
+												i(106135),	-- Frostwolf Scout's Belt
+												i(106149),	-- Frostwolf Stalwart Girdle
+												i(106157),	-- Frostwolf Wind-Talker Cord
+											},
+										},
+									}),
+									crit(3, {	-- Defense of Wor'gol
+									}),
+									crit(4, {	-- Ga'nar's Vengeance
+										{	-- Free Our Brothers and Sisters
+											["questID"] = 33807,
+											["qgs"] = {
+												74507,	-- Wor'gol Defender
+												79415,	-- Durotan
+											},
+										},
+										{	-- Save Wolf Home
+											["questID"] = 33468,
+											["qg"] = 70860,	-- Durotan
+										},
+										{	-- The Farseer
+											["questID"] = 33469,
+											["qg"] = 74651,	-- Draka
+											["sourceQuests"] = {
+												33807,	-- Free Our Brothers and Sisters
+												33468,	-- Save Wolf Home
+											},
+										},
+										{	-- Pool of Visions
+											["questID"] = 33470,
+											["qg"] = 74272,	-- Farseer Drek'Thar
+											["sourceQuest"] = 33469,	-- The Farseer
+											["groups"] = {
+												i(106173),	-- Frostwolf Ringmail Pauldrons
+												i(106141),	-- Frostwolf Scout's Spaulders
+												i(106152),	-- Frostwolf Stalwart Shoulders
+												i(106162),	-- Frostwolf Wind-Talker Mantle
+											},
+										},
+										{	-- Back to Bladespire Citadel
+											["questID"] = 33473,
+											["qg"] = 74272,	-- Farseer Drek'Thar
+											["sourceQuest"] = 33470,	-- Pool of Visions
+										},
+										{	-- Ga'nar's Vengeance
+											["questID"] = 32783,
+											["qg"] = 70860,	-- Durotan
+											["sourceQuest"] = 33473,	-- Back to Bladespire Citadel
+										},
+										{	-- Let the Hunt Begin!
+											["questID"] = 32791,
+											["qg"] = 70909,	-- Ga'nar
+											["sourceQuest"] = 32783,	-- Ga'nar's Vengeance
+										},
+										{	-- Leave Nothing Behind!
+											["questID"] = 32792,
+											["qg"] = 74000,	-- Ga'nar
+											["sourceQuest"] = 32791,	-- Let the Hunt Begin!
+											["groups"] = {
+												i(111917),	-- Frostwolf Arrow-Swallower
+												i(117507),	-- Frostwolf Hatchet
+												i(117508),	-- Frostwolf Logsplitter
+												i(117506),	-- Frostwolf Shank
+												i(111918),	-- Frostwolf Spiritguard Shield
+												i(117505),	-- Frostwolf Wind-Talker Rod
+											},
+										},
+										{	-- Wrath of Gronn
+											["questID"] = 32794,
+											["qg"] = 70910,	-- Ga'nar
+											["sourceQuest"] = 32792,	-- Leave Nothing Behind!
+										},
+										{	-- The Eldest
+											["questID"] = 32795,
+											["qg"] = 70941,	-- Ga'nar
+											["sourceQuest"] = 32794,	-- Wrath of Gronn
+											["groups"] = {
+												i(117504),	-- Grimfrost Arcanist Robe
+												i(117502),	-- Grimfrost Frostmail
+												i(117503),	-- Grimfrost Leather Tunic
+												i(117501),	-- Grimfrost Plate Chestguard
+											},
+										},
+										{	-- To the Garrison
+											["questID"] = 32796,
+											["qg"] = 70941,	-- Ga'nar
+											["sourceQuest"] = 32795,	-- The Eldest
+										},
+									}),
+									crit(5, {	-- Thunder's Fall
+										{	-- The Master Siegesmith
+											["questID"] = 33828,
+											["qg"] = 72940,	-- Frostwolf Champion
+											["groups"] = {
+												i(113249),	-- Grom'gar Chain Boots
+												i(113251),	-- Grom'gar Plate Stompers
+												i(113252),	-- Grom'gar Wolfpelt Boots
+												i(113250),	-- Grom'gar Wolfskin Slippers
+											},
+										},
+									}),
+									crit(6, {	-- The Battle of Thunder Pass
+										{	-- To Thunder Pass
+											["questID"] = 34123,
+											["qg"] = 76720,	-- Thrall
+											["coord"] = { 53.3, 56.7, 530 },
+											["sourceQuest"] = 33010,	-- The Iron Wolf
+										},
+										{	-- The Battle of Thunder Pass
+											["questID"] = 34124,
+											["qg"] = 76487,	-- Lokra
+											["coord"] = { 73.4, 58.8 },
+											["sourceQuest"] = 34123,	-- To Thunder Pass
+											["groups"]  = {
+												i(106169),	-- Frostwolf Ringmail Cap	
+												i(106137),	-- Frostwolf Scout's Cap
+												i(106146),	-- Frostwolf Stalwart Cap
+												i(107397),	-- Frostwolf Wind-Talker Cowl
+											},
+										},
+									}),
 								},
 								["races"] = HORDE_ONLY,
 							}),
@@ -52,9 +236,10 @@ _.Zones =
 								["coord"] = { 82.6, 69.8 },
 								["races"] = HORDE_ONLY,
 							},
-							{	-- A Proper Parting
+							{	-- A Proper Parting -- aa
 								["questID"] = 33125,
 								["qg"] = 72976,	-- Outrider Urakag
+								["coord"] = { 66.0, 49.0 },
 								["races"] = HORDE_ONLY,
 							},
 							{	-- All is Revealed
@@ -70,11 +255,6 @@ _.Zones =
 								["coord"] = { 82.6, 69.8 },
 								["races"] = HORDE_ONLY,
 							},
-							{	-- Armed and Dangerous
-								["questID"] = 33344,
-								["qg"] = 75186,	-- Thrall
-								["races"] = HORDE_ONLY,
-							},
 							{	-- Articles of the Fallen
 								["questID"] = 32804,
 								["qg"] = 74223,	-- Kal'gor the Honorable
@@ -88,11 +268,6 @@ _.Zones =
 							{	-- At the End of Your Rope
 								["questID"] = 34070,
 								["qg"] = 77210,	-- Scout Ruk'Gan
-								["races"] = HORDE_ONLY,
-							},
-							{	-- Back to Bladespire Citadel
-								["questID"] = 33473,
-								["qg"] = 74272,	-- Farseer Drek'Thar
 								["races"] = HORDE_ONLY,
 							},
 							{	-- Barbed Thunderlord Spear
@@ -130,8 +305,9 @@ _.Zones =
 									},
 								},
 							},
-							{	-- Broken Chains
+							{	-- Broken Chains -- aa
 								["objectID"] = 224306,
+								["coord"] = { 58.3, 31.0 },
 								["groups"] = {
 									{	-- Thunderlord for a Day
 										["questID"] = 33462,
@@ -164,11 +340,6 @@ _.Zones =
 								["groups"] = { 	
 									i(117566),	-- Heavy Frostwolf Shroud
 								},
-							},
-							{	-- Deeds Left Undone
-								["questID"] = 33546,
-								["qg"] = 74273,	-- Durotan
-								["races"] = HORDE_ONLY,
 							},
 							{	-- Desecration of the Dead
 								["questID"] = 34278,
@@ -245,14 +416,6 @@ _.Zones =
 								["races"] = HORDE_ONLY,
 								["requireSkill"] = 164,	-- Blacksmithing
 							},
-							{	-- Free Out Brothers and Sisters
-								["questID"] = 33807,
-								["qgs"] = {
-									74507,	-- Wor'gol Defender
-									79415,	-- Durotan
-								},
-								["races"] = HORDE_ONLY,
-							},
 							{	-- Frostbite Hollow
 								["questID"] = 34501,
 								["races"] = HORDE_ONLY,
@@ -263,9 +426,10 @@ _.Zones =
 									},
 								},
 							},
-							{	-- Frosted Fury
+							{	-- Frosted Fury -- aa
 								["questID"] = 34346,
 								["qg"] = 78209,	-- Shadow Hunter Mala
+								["coord"] = { 52.5, 40.4 },
 								["races"] = HORDE_ONLY,
 							},
 							{	-- Fury of Frostfire
@@ -277,34 +441,13 @@ _.Zones =
 									i(119145),	-- Firefury Totem
 								},
 							},
-							{	-- Ga'nar's Vengeance
-								["questID"] = 32783,
-								["qg"] = 70860,	-- Durotan
-								["races"] = HORDE_ONLY,
-							},
 							{	-- Getting the Points
 								["questID"] = 34093,
 								["qg"] = 77210,	-- Scout Ruk'Gan
 								["coord"] = { 82.6, 69.8 },
 								["races"] = HORDE_ONLY,
 							},
-							{	-- Gormaul Tower
-								["questID"] = 33784,
-								["qg"] = 76557,	-- Durotar
-								["races"] = HORDE_ONLY,
-								["groups"] = {
-									i(106168),	-- Frostwolf Ringmail Boots
-									i(106136),	-- Frostwolf Scout's Boots
-									i(106154),	-- Frostwolf Stalwart Warboots
-									i(106164),	-- Frostwolf Wind-Talker Treads
-								},
-							},
-							{	-- Great Balls of Fire!
-								["questID"] = 33408,
-								["qg"] = 75177,	-- Durotan
-								["races"] = HORDE_ONLY,
-							},
-							{	-- Grimfrost Hill
+							{	-- Grimfrost Hill -- aa
 								["questID"] = 33145,
 								["races"] = HORDE_ONLY,
 								["groups"] = {
@@ -314,9 +457,10 @@ _.Zones =
 									},
 								},
 							},
-							{	-- Gut Guttra
+							{	-- Gut Guttra -- aa
 								["questID"] = 33132,
 								["qg"] = 72976,	-- Outrider Urukag
+								["coord"] = { 66.0, 49.0 },
 								["races"] = HORDE_ONLY,
 							},
 							{	-- Have a Heart
@@ -326,13 +470,15 @@ _.Zones =
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 34280,	-- All is Revealed
 							},
-							{	-- Honor Has Its Rewards
+							{	-- Honor Has Its Rewards -- aa
 								["questID"] = 33816,
 								["qg"] = 80456,	-- Farseer Drek'Thar
+								["coord"] = { 21.0, 57.9 },
 								["races"] = HORDE_ONLY,
 							},
 							{	-- Icevine
 								["objectID"] = 231100,
+								["coord"] = { 54.2, 67.5 },
 								["groups"] = {
 									{	-- The Land Provides
 										["questID"] = 34960,
@@ -357,38 +503,10 @@ _.Zones =
 								["qg"] = 73097,	-- Frostwolf Champion
 								["races"] = HORDE_ONLY,
 							},
-							{	-- Last Steps
-								["questID"] = 33527,
-								["qg"] = 75177,	-- Durotar
-								["races"] = HORDE_ONLY,
-								["groups"] = {
-									i(107302),	-- Frostwolf Ringmail Belt
-									i(106135),	-- Frostwolf Scout's Belt
-									i(106149),	-- Frostwolf Stalwart Girdle
-									i(106157),	-- Frostwolf Wind-Talker Cord
-								},
-							},
-							{	-- Leave Nothing Behind!
-								["questID"] = 32792,
-								["qg"] = 74000,	-- Ga'nar
-								["races"] = HORDE_ONLY,
-								["groups"] = {
-									i(111917),	-- Frostwolf Arrow-Swallower
-									i(117507),	-- Frostwolf Hatchet
-									i(117508),	-- Frostwolf Logsplitter
-									i(117506),	-- Frostwolf Shank
-									i(111918),	-- Frostwolf Spiritguard Shield
-									i(117505),	-- Frostwolf Wind-Talker Rod
-								},
-							},
-							{	-- Let the Hunt Begin!
-								["questID"] = 32791,
-								["qg"] = 70909,	-- Ga'nar
-								["races"] = HORDE_ONLY,
-							},
-							{	-- Lurkers
+							{	-- Lurkers -- aa
 								["questID"] = 34344,
 								["qg"] = 78208,	-- Shadow Hunter Rala
+								["coord"] = { 52.6, 40.4 },
 								["races"] = HORDE_ONLY,
 								["groups"] = {
 									i(106172),	-- Frostwolf Ringmail Leggings
@@ -448,19 +566,31 @@ _.Zones =
 									i(108954),	-- Wolfsfur Greatcloak
 								},
 							},
+							{	-- Mysterious Boots
+								["objectID"] = 229333,
+								["coord"] = { 67.9, 18.9 },
+								["questID"] = 34464,
+							{,
 							{	-- Oath of Shadow Hunter Rala
 								["questID"] = 34731,
 								["qg"] = 78208,	-- Shadow Hunter Rala
 								["races"] = HORDE_ONLY,
 							},
-							{	-- Of Fire and Thunder
+							{	-- Of Fire and Thunder -- aa
 								["questID"] = 33013,
 								["qg"] = 74358,	-- Wounded Frostwolf Shaman
+								["coord"] = { 41.6, 52.9 },
 								["races"] = HORDE_ONLY,
 							},
-							{	-- Only the Winner
+							{	-- Ogrish Fortitude
+								["questID"] = 33980,
+								["coord"] = { 43.9, 12.3 },
+								["races"] = HORDE_ONLY,
+							},
+							{	-- Only the Winner -- aa
 								["questID"] = 32981,
 								["qg"] = 79229,	-- Gronnstalker Rokash
+								["coord"] = { 59.4, 31.7 },
 								["races"] = HORDE_ONLY,
 								["groups"] = {
 									i(112687),	-- Chain of Biting Winds
@@ -468,25 +598,10 @@ _.Zones =
 									i(112689),	-- Gorget of Flowing Earth
 								},
 							},
-							{	-- Pool of Visions
-								["questID"] = 33470,
-								["qg"] = 74272,	-- Farseer Drek'Thar
-								["races"] = HORDE_ONLY,
-								["groups"] = {
-									i(106173),	-- Frostwolf Ringmail Pauldrons
-									i(106141),	-- Frostwolf Scout's Spaulders
-									i(106152),	-- Frostwolf Stalwart Shoulders
-									i(106162),	-- Frostwolf Wind-Talker Mantle
-								},
-							},
-							{	-- Poulticide
+							{	-- Poulticide -- aa
 								["questID"] = 34345,
 								["qg"] = 78208,	-- Shadow Hunter Rala
-								["races"] = HORDE_ONLY,
-							},
-							{	-- Rally the Frostwolves
-								["questID"] = 34380,
-								["qg"] = 70860,	-- Durotan
+								["coord"] = { 52.6, 40.4 },
 								["races"] = HORDE_ONLY,
 							},
 							{	-- Safe Passage
@@ -496,10 +611,13 @@ _.Zones =
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 34209,	-- Vouchsafe Our Arrival
 							},
-							{	-- Savage Vengeance
+							{	-- Savage Vengeance -- aa
 								["questID"] = 34066,
 								["qg"] = 77210,	-- Scout Ruk'Gan
-								["coord"] = { 82.6, 69.8 },
+								["coords"] = {
+									{ 82.6, 69.8 },
+									{ 83.2, 62.7 },
+								}
 								["races"] = HORDE_ONLY,
 								["groups"] = {
 									i(117509),	-- Agurak Chain Bracers
@@ -507,11 +625,6 @@ _.Zones =
 									i(117511),	-- Agurak Wristplates
 									i(117510),	-- Agurak Wristwraps
 								},
-							},
-							{	-- Save Wolf Home
-								["questID"] = 33468,
-								["qg"] = 70860,	-- Durotan
-								["races"] = HORDE_ONLY,
 							},
 							{	-- Securing the South
 								["questID"] = 32989,
@@ -534,9 +647,10 @@ _.Zones =
 								["qg"] = 76662,	-- Gol'kosh the Axe
 								["races"] = HORDE_ONLY,
 							},
-							{	-- Smeltcraft
+							{	-- Smeltcraft -- aa
 								["questID"] = 33838,
 								["qg"] = 74977,	-- Initiate Na'Shra
+								["coord"] = { 65.0, 39.5 },
 								["races"] = HORDE_ONLY,
 							},
 							{	-- Stop the Flow
@@ -552,44 +666,10 @@ _.Zones =
 								["coord"] = { 82.6, 69.8 },
 								["races"] = HORDE_ONLY,
 							},
-							{	-- The Battle of Thunder Pass
-								["questID"] = 34124,
-								["qg"] = 76487,	-- Lokra
-								["coord"] = { 73.4, 58.8 },
-								["sourceQuest"] = 34123,	-- To Thunder Pass
-								["groups"]  = {
-									i(106169),	-- Frostwolf Ringmail Cap	
-									i(106137),	-- Frostwolf Scout's Cap
-									i(106146),	-- Frostwolf Stalwart Cap
-									i(107397),	-- Frostwolf Wind-Talker Cowl
-								},
-							},
-							{	-- The Butcher of Bladespire
-								["questID"] = 33410,
-								["qg"] = 75186,	-- Thrall
-								["races"] = HORDE_ONLY,
-								["groups"] = {
-									i(106170),	-- Frostwolf Ringmail Gauntlet
-									i(106138),	-- Frostwolf Scout's Gloves
-									i(106148),	-- Frostwolf Stalwart Gauntlets
-									i(106159),	-- Frostwolf Wind-Talker Gloves
-								},
-							},
 							{	-- The Cure
 								["questID"] = 33454,
 								["qg"] = 74635,	-- Igrimar the Resolute
 								["races"] = HORDE_ONLY,
-							},
-							{	-- The Eldest
-								["questID"] = 32795,
-								["qg"] = 70941,	-- Ga'nar
-								["races"] = HORDE_ONLY,
-								["groups"] = {
-									i(117504),	-- Grimfrost Arcanist Robe
-									i(117502),	-- Grimfrost Frostmail
-									i(117503),	-- Grimfrost Leather Tunic
-									i(117501),	-- Grimfrost Plate Chestguard
-								},
 							},
 							{	-- The Fall of the Warlord
 								["questID"] = 33467,
@@ -600,11 +680,6 @@ _.Zones =
 									i(117982),	-- Pit Fighter's Seal
 									i(117984),	-- Pit Skulker's Ring
 								},
-							},
-							{	-- The Farseer
-								["questID"] = 33469,
-								["qg"] = 74651,	-- Draka
-								["races"] = HORDE_ONLY,
 							},
 							{	-- The Fel Crystals
 								["questID"] = 34294,
@@ -625,17 +700,6 @@ _.Zones =
 									follower(186),	-- Greatmother Geyah
 									follower(184),	-- Kal'gor the Honorable
 									follower(185),	-- Lokra
-								},
-							},
-							{	-- The Master Siegesmith
-								["questID"] = 33828,
-								["qg"] = 72940,	-- Frostwolf Champion
-								["races"] = HORDE_ONLY,
-								["groups"] = {
-									i(113249),	-- Grom'gar Chain Boots
-									i(113251),	-- Grom'gar Plate Stompers
-									i(113252),	-- Grom'gar Wolfpelt Boots
-									i(113250),	-- Grom'gar Wolfskin Slippers
 								},
 							},
 							{	-- The Real Prey
@@ -686,14 +750,6 @@ _.Zones =
 									i(106158),	-- Frostwolf Wind-Talker Cuffs
 								},
 							},
-							{	-- These Colors Don't Run
-								["questID"] = 33526,
-								["qgs"] = {
-									70860,	-- Durotan
-									76240,	-- Durotan
-								},
-								["races"] = HORDE_ONLY,
-							},
 							{	-- They Rely on Numbers
 								["questID"] = 32929,
 								["qg"] = 74222,	-- Ligra the Unyielding
@@ -717,21 +773,9 @@ _.Zones =
 									i(113148),	-- Foulspawn Drape
 								},
 							},
-							{	-- To the Garrison
-								["questID"] = 32796,
-								["qg"] = 70941,	-- Ga'nar
-								["races"] = HORDE_ONLY,
-							},
-							{	-- To the Slaughter
-								["questID"] = 33622,
-								["qg"] = 75186,	-- Thrall
-								["races"] = HORDE_ONLY,
-							},
-							{	-- To Thunder Pass
-								["questID"] = 34123,
-								["qg"] = 76720,	-- Thrall
-								["coord"] = { 53.3, 56.7, 530 },
-								["sourceQuest"] = 33010,	-- The Iron Wolf
+							{	-- Touched by Fire
+								["questID"] = 33981,
+								["coord"] = { 36.9, 33.2 },
 							},
 							{	-- Vul'gath's End
 								["questID"] = 34075,
@@ -775,11 +819,6 @@ _.Zones =
 							{	-- Where's My Wolf?!
 								["questID"] = 33826,
 								["qg"] = 73097,	-- Frostwolf Champion
-								["races"] = HORDE_ONLY,
-							},
-							{	-- Wrath of Gronn
-								["questID"] = 32794,
-								["qg"] = 70910,	-- Ga'nar
 								["races"] = HORDE_ONLY,
 							},
 							{	-- Young Hearts
