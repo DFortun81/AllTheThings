@@ -13,7 +13,7 @@ _.Zones =
 						["npcID"] = -16,	-- Rares
 						["g"] = {
 							-- Coords have been confirmed on rares except for Edge of Reality, Iron Siegeworks rares (looks like the daily needs to be active), and some noted rares on longer spawn timers.
-							{	-- Ak'ox the Slaughterer	**Coords uncofirmed, relied on wowhead**
+							{	-- Ak'ox the Slaughterer
 								["npcID"] = 84378,	-- Ak'ox the Slaughterer
 								["questID"] = 37525,
 								["isDaily"] = true,

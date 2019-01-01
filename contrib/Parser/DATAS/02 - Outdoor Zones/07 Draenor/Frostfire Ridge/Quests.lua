@@ -12,8 +12,14 @@ _.Zones =
 					n(-17, { 	-- Quests
 					--[[ Tracking/Flags
 						33847 - Flag: Seen Ga'nar Rolling Out - triggered going into Chillfang's cave immediately upon getting to Draenor
-						34332 - Touched by Fire Selected - triggers when choosing the Fire shamanstone buff for the first time
-						34330 - Ogrish Fortitude Selected - triggers when choosing the Ogrish Fortitude shamanstone buff for the first time
+						34332 - Touched by Fire Selected - triggers when choosing "Touched by Fire" at a shamanstone for the first time
+						34330 - Ogrish Fortitude Selected - triggers when choosing "Ogrish Fortitude" at a  shamanstone for the first time
+						33909 - Flag: Seen Ga'nar Rolling Out to Bladespire - triggers shortly after reaching Wor'gol during "Den of Wolves"
+						33846 - Flag: Seen Thrall Cyclone - triggers during "These Colors Don't Run"
+						33443 - Barrier Destroyed - triggers upon reaching the top of the walkway with rolling fireballs in Bladespire Citadel during "Great Balls of Fire!"
+						34510 - Tracking Event: Catapuls 'n' Clefthoof - triggered after riding the wolf down Bladespire Citadel during "Moving In"
+						34511 - Tracking Event: Ogre Drag - triggered after riding the wolf down Bladespire Citadel during "Moving In"
+						34328 - Blessing of the Wolf Selected - triggered when choosing "Blessing of the Wolf" at a shamanstone for the first time
 					]]--
 						["groups"] = {
 							ach(8671, {	-- Frostfire Ridge
@@ -39,10 +45,13 @@ _.Zones =
 										{	-- Rally the Frostwolves
 											["questID"] = 34380,
 											["qg"] = 70860,	-- Durotan
+											["coord"] = { 20.7, 57.9, 526 },
+											["sourceQuest"] = 34379,	-- Den of Wolves
 										},
 										{	-- Gormaul Tower
 											["questID"] = 33784,
 											["qg"] = 76557,	-- Durotar
+											["coord"] = { 20.9, 57.9, 526 },
 											["sourceQuest"] = 34380,	-- Rally the Frostwolves
 											["groups"] = {
 												i(106168),	-- Frostwolf Ringmail Boots
@@ -57,21 +66,25 @@ _.Zones =
 												70860,	-- Durotan
 												76240,	-- Durotan
 											},
+											["coord"] = { 19.7, 44.7, 526 },
 											["sourceQuest"] = 33784,	-- Gormaul Tower
 										},
 										{	-- Deeds Left Undone
 											["questID"] = 33546,
 											["qg"] = 74273,	-- Durotan
+											["coord"] = { 43.5, 23.2, 526 },
 											["sourceQuest"] = 33526,	-- These Colors Don't Run
 										},
 										{	-- Great Balls of Fire!
 											["questID"] = 33408,
 											["qg"] = 75177,	-- Durotan
+											["coord"] = { 34.2, 72.9, 526 },
 											["sourceQuest"] = 33546,	-- Deeds Left Undone
 										},
 										{	-- The Butcher of Bladespire
 											["questID"] = 33410,
 											["qg"] = 75186,	-- Thrall
+											["coord"] = { 70.7, 78.5, 527 },
 											["sourceQuest"] = 33408,	-- Great Balls of Fire!
 											["groups"] = {
 												i(106170),	-- Frostwolf Ringmail Gauntlet
@@ -83,16 +96,19 @@ _.Zones =
 										{	-- Armed and Dangerous
 											["questID"] = 33344,
 											["qg"] = 75186,	-- Thrall
+											["coord"] = { 70.7, 78.5, 527 },
 											["sourceQuest"] = 33410,	-- The Butcher of Bladespire
 										},
 										{	-- To the Slaughter
 											["questID"] = 33622,
 											["qg"] = 75186,	-- Thrall
+											["coord"] = { 70.7, 78.5, 527 },
 											["sourceQuest"] = 33410,	-- The Butcher of Bladespire
 										},
 										{	-- Last Steps
 											["questID"] = 33527,
 											["qg"] = 75177,	-- Durotar
+											["coord"] = { 50.4, 32.6, 527 },
 											["sourceQuests"] = {
 												33344,	-- Armed and Dangerous
 												33622,	-- To the Slaughter
@@ -106,6 +122,12 @@ _.Zones =
 										},
 									}),
 									crit(3, {	-- Defense of Wor'gol
+										{	-- Save Wolf Home
+											["questID"] = 33468,
+											["qg"] = 70860,	-- Durotan
+											["coord"] = { 43.1, 41.3, 526 },
+											["sourceQuest"] = 33527,	-- Last Steps
+										},
 									}),
 									crit(4, {	-- Ga'nar's Vengeance
 										{	-- Free Our Brothers and Sisters
@@ -114,10 +136,6 @@ _.Zones =
 												74507,	-- Wor'gol Defender
 												79415,	-- Durotan
 											},
-										},
-										{	-- Save Wolf Home
-											["questID"] = 33468,
-											["qg"] = 70860,	-- Durotan
 										},
 										{	-- The Farseer
 											["questID"] = 33469,
@@ -291,12 +309,19 @@ _.Zones =
 									},
 								},
 							},
+							{	-- Blessing of the Wolf
+								["questID"] = 33977,
+								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 33527,	-- Last Steps
+							},
 							{	-- Bounty Board
 								["objectID"] = 226961,
+								["coord"] = { 28.8, 44.7, 526 },
 								["groups"] = {
 									{	-- WANTED: Gutsmash the Destroyer
 										["questID"] = 33919,
 										["races"] = HORDE_ONLY,
+										["sourceQuest"] = 33527,	-- Last Steps
 										["groups"] = {
 											i(110688),	-- Frostfire Augur Signet
 											i(110686),	-- Howling Snowdrift Loop
@@ -321,6 +346,14 @@ _.Zones =
 								["coord"] = { 82.6, 69.8 },
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 34072,	-- Tar Get of Opportunity
+							},
+							{	-- Bypassing Security
+								["questID"] = 36457,
+								["qg"] = 85439,	-- Raleigh Puule
+								["coord"] = { 21.0, 56.0 },
+								["races"] = HORDE_ONLY,
+								["requireSkill"] = 773,	-- Inscription
+								["sourceQuest"] = 36435,	-- Unintelligible Intelligence
 							},
 							{	-- Coil of Sturdy Rope
 								["itemID"] = 109055,
@@ -488,10 +521,14 @@ _.Zones =
 							},
 							{	-- Illegible Sootstained Notes
 								["itemID"] = 115593,
-								["questID"] = 36435,
-								["races"] = HORDE_ONLY,
 								["description"] = "Drops from any mob in the zone.",
 								["requireSkill"] = 773,	-- Inscription
+								["races"] = HORDE_ONLY,
+								["groups"] = {
+									{	-- Unintelligible Intelligence
+										["questID"] = 36435,
+									},
+								},
 							},
 							{	-- Into the Boneslag
 								["questID"] = 32991,
@@ -536,11 +573,14 @@ _.Zones =
 							{	-- Mopping Up
 								["questID"] = 33412,
 								["qg"] = 81678,	-- Snowrunner Rolga
+								["coord"] = { 28.2, 45.7, 526 },
 								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 33527,	-- Last Steps
 							},
-							{	-- Moving In
+							{	-- Moving In (crit(3)?)
 								["questID"] = 33657,
 								["qg"] = 75188,	-- Durotan
+								["coord"] = { 66.3, 56.5, 528 },
 								["races"] = HORDE_ONLY,
 							},
 							{	-- Moving Target
@@ -604,6 +644,14 @@ _.Zones =
 								["coord"] = { 52.6, 40.4 },
 								["races"] = HORDE_ONLY,
 							},
+							{	-- REUSE - never used
+								["questID"] = 33380,
+								["u"] = 1,
+							},
+							{	-- REUSE - never used
+								["questID"] = 33407,
+								["u"] = 1,
+							},
 							{	-- Safe Passage
 								["questID"] = 34216,
 								["qg"] = 72814,	-- Cordana Felsong
@@ -640,12 +688,16 @@ _.Zones =
 							{	-- Slavery and Strife
 								["questID"] = 33119,
 								["qg"] = 7822,	-- Guse
+								["coord"] = { 20.0, 52.8, 526 },
 								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 33527,	-- Last Steps
 							},
 							{	-- Slaying Slavers
 								["questID"] = 33898,
 								["qg"] = 76662,	-- Gol'kosh the Axe
+								["coord"] = { 24.1, 39.3, 525 },
 								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 33527,	-- Last Steps
 							},
 							{	-- Smeltcraft -- aa
 								["questID"] = 33838,
@@ -665,6 +717,10 @@ _.Zones =
 								["qg"] = 77210,	-- Scout Ruk'Gan
 								["coord"] = { 82.6, 69.8 },
 								["races"] = HORDE_ONLY,
+							},
+							{	-- The Bounty of Bladespire	-- never implemented
+								["questID"] = 35251,
+								["u"] = 1,
 							},
 							{	-- The Cure
 								["questID"] = 33454,

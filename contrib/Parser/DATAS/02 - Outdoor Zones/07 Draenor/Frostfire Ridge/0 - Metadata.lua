@@ -9,6 +9,9 @@ _.Zones =
 			{	-- Frostfire Ridge
 				["mapID"] = 525,	-- Frostfire Ridge
 				["maps"] = {
+					526,	-- Turgall's Den (1st floor)
+					527,	-- Turgall's Den (2nd floor)
+					528,	-- Turgall's Den (3rd floor)
 					530,	-- Grom'gar
 					533,	-- Snowfall Alcove
 				},
