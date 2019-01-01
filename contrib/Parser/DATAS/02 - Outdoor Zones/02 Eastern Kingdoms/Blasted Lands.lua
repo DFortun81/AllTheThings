@@ -421,9 +421,17 @@ _.Zones =
 					qg(7783, qh(25698)),	-- The Amulet of Sevine
 					qg(41159, qh(25691)),	-- The Charred Granite of the Dark Portal
 					qg(42299, qa(26164)),	-- The Charred Granite of the Dark Portal
-					qg(78423, q(36881)),	-- The Dark Portal
 					qg(42344, qh(25717)),	-- The Demons and the Druid
 --]]					
+					{	-- The Dark Portal
+						["questID"] = 36881,
+						["qg"] = 78423,	-- Archmage Khadgar
+						["coord"] = { 54.9, 50.4 },
+						["lvl"] = 90,
+					},
+					{	-- The Dark Portal (tracking quest?)
+						["questID"] = 37187,
+					},
 					qg(42349, qa(26187, { -- The Downfall of Marl Wormthorn
 						i(59400),
 						i(59402),
