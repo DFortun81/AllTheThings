@@ -2521,6 +2521,7 @@ _.ExpansionFeatures =
 						["coord"] = { 32.6, 39.8 },
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
+						["sourceQuest"] = 36469,	-- Pets Versus Pests
 					},
 					{	-- Unearthed Magic
 						["questID"] = 38242,
