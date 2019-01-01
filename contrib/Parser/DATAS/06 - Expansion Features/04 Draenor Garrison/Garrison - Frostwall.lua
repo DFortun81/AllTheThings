@@ -2531,6 +2531,108 @@ _.ExpansionFeatures =
 					},
 				}),
 				nh(-17, { 	-- Quests
+					--[[ Tracking/Flags
+						36793 - Founded Garrison - triggers after using the Master Surveyor during "Establish Your Garrison"
+					]]--
+					ach(8671, {
+						["groups"] = {
+							crit(1, {	-- Foothold in a Savage Land
+								{	-- For the Horde!
+									["questID"] = 34364,
+									["groups"] = {
+										i(111540),	-- Frostwolf Augury Staff
+										i(111539),	-- Frostwolf Boot Knife
+										i(111536),	-- Frostwolf Cleaver
+										i(111537),	-- Frostwolf Greataxe
+										i(111535),	-- Frostwolf Hand Axe
+										i(111538),	-- Frostwolf Hunting Crossbow
+										i(111541),	-- Frostwolf Mountaineering Stick
+										i(111542),	-- Frostwolf Wind-Talker Cudgel
+									},
+									["qg"] = 70859,	-- Thrall
+									["coord"] = { 51.2, 43.2 },
+									["sourceQuests"] = 34402,	-- of Wolves and  Warriors
+								},
+								{	-- Back to Work
+									["questID"] = 34375,
+									["qg"] = 78466,	-- Gazlowe
+									["coord"] = { 51.2, 39.6 },
+									["sourceQuests"] = 34364,	-- For the Horde!
+								},
+								{	-- A Gronnling Problem
+									["questID"] = 34592,
+									["qg"] = 78466,	-- Gazlowe
+									["coord"] = { 51.2, 39.6 },
+									["sourceQuests"] = 34364,	-- For the Horde!
+								},
+								{	-- The Den of Skog
+									["questID"] = 34765,
+									["qg"] = 78466,	-- Gazlowe
+									["coord"] = { 51.2, 39.6 },
+									["sourceQuests"] = {
+										34592,	-- A Gronnling Problem
+										34375,	-- Back to Work
+									},
+								},
+								{	-- Establish Your Garrison
+									["questID"] = 34378,
+									["qg"] = 78466,	-- Gazlowe
+									["coord"] = { 51.2, 39.6 },
+									["sourceQuest"] = 34765,	-- The Den of Skog
+								},
+								{	-- The Ogron Live?
+									["questID"] = 34823,
+									["qg"] = 78487,	-- Rokhan
+									["coord"] = { 51.2, 51.4 },
+									["sourceQuest"] = 34378,	-- Establish Your Garrison
+								},
+								{	-- What We Got
+									["questID"] = 34824,
+									["qg"] = 78466,	-- Gazlowe
+									["coord"] = { 52.4, 53.3 },
+									["sourceQuest"] = 34378,	-- Establish Your Garrison
+								},
+								{	-- What We Need
+									["questID"] = 34822,
+									["qg"] = 78466,	-- Gazlowe
+									["coord"] = { 52.4, 53.3 },
+									["sourceQuest"] = 34378,	-- Establish Your Garrison
+								},
+								{	-- Build Your Barracks
+									["questID"] = 34461,
+									["qg"] = 78466,	-- Gazlowe
+									["coord"] = { 52.4, 53.3 },
+									["sourceQuests"] = {
+										34823,	-- The Ogron Live?
+										34824,	-- What We Got
+										34822,	-- What We Need
+									},
+								},
+								{	-- We Need An Army
+									["questID"] = 34861,
+									["qg"] = 78466,	-- Gazlowe
+									["coord"] = { 57.4, 48.3 },
+									["sourceQuest"] = 34461,	-- Build Your Barracks
+								},
+								{	-- Winds of Change
+									["questID"] = 34462,
+									["qg"] = 79740,	-- Warmaster Zog
+									["coord"] = { 53.9, 54.9 },
+									["sourceQuest"] = 34861,	-- We Need An Army
+									["groups"] = {
+										follower(34),	-- Olin Umberhide
+									},
+								},
+								{	-- Mission Probable
+									["questID"] = 34775,
+									["qg"] = 79740,	-- Warmaster Zog
+									["coord"] = { 53.9, 54.9 },
+									["sourceQuest"] = 34462,	-- Winds of Change
+								},
+							}),
+						},
+						["races"] = HORDE_ONLY,
+					}),
 					{	-- A Tiny Scarecrow Costume
 						["itemID"] = 128874,	-- A Tiny Scarecrow Costume
 						["questID"] = 39865,	-- Pepe can be sometimes be summoned with this mask
@@ -2538,6 +2640,20 @@ _.ExpansionFeatures =
 							70.71, 90.21,	-- Pepe Location [Horde]
 						},
 						["description"] = "Halloween Decorations must be up in a Tier 3 garrison",
+					},
+					{	-- Ashran Appearance
+						["questID"] = 36706,
+						["qg"] = 78466,	-- Gazlowe
+						["coord"] = { 52.4, 53.3 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 34775,	-- Mission Probable
+					},
+					{	-- Bigger is Better
+						["questID"] = 36567,
+						["qg"] = 78466,	-- Gazlowe
+						["coord"] = { 52.4, 53.3 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 34775,	-- Mission Probable
 					},
 					{	-- Bringing the Bass
 						["questID"] = 37961,
@@ -2558,7 +2674,14 @@ _.ExpansionFeatures =
 							}),
 						},
 					},
-					un(40, q(35988)),	-- Call of the Archmage					
+					un(40, q(35988)),	-- Call of the Archmage
+					{	-- Den of Wolves
+						["questID"] = 34379,
+						["qg"] = 76411,	-- Farseer Drek'Thar
+						["coord"] = { 49.7, 49.5 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 34775,	-- Mission Probable
+					},
 					qh(34364, {	-- For the Horde
 						i(111535),
 						i(111537),
@@ -2569,24 +2692,15 @@ _.ExpansionFeatures =
 						i(111540),
 						i(111542),
 					}),	
-					q(39175, {	-- Gems of the Apexis
+					{	-- Gems of the Apexis
+						["questID"] = 39175,
+						["qg"] = 78466,	-- Gazlowe
+						["races"] = HORDE_ONLY,
+						["requireSkill"] = 755,	-- Jewelcrafting
 						["groups"] = {
 							recipe(187639),	-- Immaculate Versatility Taladite
 						},
-						["requireSkill"] = 755,	-- Jewelcrafting
-						["qg"] = 78466,	-- Gazlowe
-						["races"] = HORDE_ONLY,
-					}),
-					qh(37434, {	-- Proving Grounds
-						i(119463),
-						i(119458),
-						i(119462),
-						i(119459),
-						i(119461),
-						i(119460),
-						i(119464),
-						i(119457),
-					}),
+					},
 					n(89753, { 	-- High Overlord Saurfang
 						["coord"] = { 40.2, 56.7 },
 						["description"] = "High Overlord Saurfang has a chance to spawn in your garrison daily, or you can find someone with him spawned and join their garrison. He starts a weekly raid quest which all have the Greater Bounty Spoils as a reward.",
@@ -4256,6 +4370,31 @@ _.ExpansionFeatures =
 						["coord"] = { 40.9, 47.8 },
 						["races"] = HORDE_ONLY,
 					},
+					{	-- Pinchwhistle Gearworks
+						["questID"] = 36862,
+						["qg"] = 86614,	-- Pinchwhistle Gearworks
+						["coord"] = { 50.8, 50.7 },	-- lvl 1 garrison
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 34378,	-- Establish Your Garrison
+					},
+					{	-- Proving Grounds
+						["questID"] = 37434,
+						["qg"] = 79740,	-- Warmaster Zog
+						["races"] = HORDE_ONLY,
+						["coords"] = {
+							{ 53.8, 54.9 },	-- lvl 1 garrison
+						},
+						["groups"] = {
+							i(119463),	-- Staff of Trials
+							i(119458),	-- Greataxe of Trials
+							i(119462),	-- Skullcutter of Trials
+							i(119459),	-- Longbow of Trials
+							i(119461),	-- Skullthumper of Trials
+							i(119460),	-- Lockbreaker of Trials
+							i(119464),	-- Cudgel of Trials
+							i(119457),	-- Handaxe of Trials
+						},
+					},
 					n(-99, {	-- Stables
 						qh(37041, {
 							i(116675),	-- Mount
@@ -4341,6 +4480,7 @@ _.ExpansionFeatures =
 						["groups"] = {
 							{	-- Assault on Darktide Roost
 								["questID"] = 36692,
+								["races"] = HORDE_ONLY,
 								["isDaily"] = true,
 								["groups"] = {
 									{
@@ -4352,6 +4492,7 @@ _.ExpansionFeatures =
 							},
 							{	-- Assault on Magnarok
 								["questID"] = 36697,
+								["races"] = HORDE_ONLY,
 								["isDaily"] = true,
 								["groups"] = {
 									{
@@ -4363,6 +4504,7 @@ _.ExpansionFeatures =
 							},
 							{	-- Assault on Mok'gol Watchpost
 								["questID"] = 36693,
+								["races"] = HORDE_ONLY,
 								["isDaily"] = true,
 								["groups"] = {
 									{
@@ -4374,6 +4516,7 @@ _.ExpansionFeatures =
 							},
 							{	-- Assault on Pillars of Fate
 								["questID"] = 36689,
+								["races"] = HORDE_ONLY,
 								["isDaily"] = true,
 								["groups"] = {
 									{
@@ -4385,6 +4528,7 @@ _.ExpansionFeatures =
 							},
 							{	-- Assault on Shattrath Harbor
 								["questID"] = 36667,
+								["races"] = HORDE_ONLY,
 								["isDaily"] = true,
 								["groups"] = {
 									{
@@ -4396,6 +4540,7 @@ _.ExpansionFeatures =
 							},
 							{	-- Assault on Skettis
 								["questID"] = 36688,
+								["races"] = HORDE_ONLY,
 								["isDaily"] = true,
 								["groups"] = {
 									{
@@ -4407,6 +4552,7 @@ _.ExpansionFeatures =
 							},
 							{	-- Assault on Socrethar's Rise
 								["questID"] = 36691,
+								["races"] = HORDE_ONLY,
 								["isDaily"] = true,
 								["groups"] = {
 									{
@@ -4418,6 +4564,7 @@ _.ExpansionFeatures =
 							},
 							{	-- Assault on Stonefury Cliffs
 								["questID"] = 36669,
+								["races"] = HORDE_ONLY,
 								["isDaily"] = true,
 								["groups"] = {
 									{
@@ -4429,6 +4576,7 @@ _.ExpansionFeatures =
 							},
 							{	-- Assault on the Broken Precipice
 								["questID"] = 36694,
+								["races"] = HORDE_ONLY,
 								["isDaily"] = true,
 								["groups"] = {
 									{
@@ -4440,6 +4588,7 @@ _.ExpansionFeatures =
 							},
 							{	-- Assault on the Everbloom Wilds
 								["questID"] = 36695,
+								["races"] = HORDE_ONLY,
 								["isDaily"] = true,
 								["groups"] = {
 									{
@@ -4451,6 +4600,7 @@ _.ExpansionFeatures =
 							},
 							{	-- Assault on the Iron Siegeworks
 								["questID"] = 36696,
+								["races"] = HORDE_ONLY,
 								["isDaily"] = true,
 								["groups"] = {
 									{
@@ -4462,6 +4612,7 @@ _.ExpansionFeatures =
 							},
 							{	-- Assault on the Pit
 								["questID"] = 36701,
+								["races"] = HORDE_ONLY,
 								["isDaily"] = true,
 								["groups"] = {
 									{

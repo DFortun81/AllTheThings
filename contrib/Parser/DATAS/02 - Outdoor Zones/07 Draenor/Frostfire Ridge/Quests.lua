@@ -10,6 +10,9 @@ _.Zones =
 				["mapID"] = 525,	-- Frostfire Ridge
 				["g"] = {
 					n(-17, { 	-- Quests
+					--[[
+						33847 - Flag: Seen Ga'nar Rolling Out - triggered going into Chillfang's cave immediately upon getting to Draenor
+					]]--
 						["groups"] = {
 	--[[	Achievement info for Loremaster related zone quests
 							h(ach(9529)),	-- On the Shadow's Trail (Horde) (Frostfire Ridge)
@@ -23,90 +26,14 @@ _.Zones =
 										{	-- A Song of Frost and Fire
 											["questID"] = 33815,
 											["qg"] = 76411,	-- Farseer Drek'Thar
+											["coord"] = { 40.7, 67.0 },
 											["sourceQuests"] = 33868,	-- The Home of the Frostwolves
-											["isBreadcrumb"] = true,
 										},
 										{	-- of Wolves and  Warriors
 											["questID"] = 34402,
 											["qg"] = 78272,	-- Durotan
+											["coord"] = { 41.8, 69.6 },
 											["sourceQuests"] = 33815,	-- A Song of Frost and Fire
-										},
-										{	-- For the Horde!
-											["questID"] = 34364,
-											["groups"] = {
-												i(111540),	-- Frostwolf Augury Staff
-												i(111539),	-- Frostwolf Boot Knife
-												i(111536),	-- Frostwolf Cleaver
-												i(111537),	-- Frostwolf Greataxe
-												i(111535),	-- Frostwolf Hand Axe
-												i(111538),	-- Frostwolf Hunting Crossbow
-												i(111541),	-- Frostwolf Mountaineering Stick
-												i(111542),	-- Frostwolf Wind-Talker Cudgel
-											},
-											["qg"] = 70859,	-- Thrall
-											["sourceQuests"] = 34402,	-- of Wolves and  Warriors
-										},
-										{	-- Back to Work
-											["questID"] = 34375,
-											["qg"] = 78466,	-- Gazlowe
-											["sourceQuests"] = 34364,	-- For the Horde!
-										},
-										{	-- A Gronnling Problem
-											["questID"] = 34592,
-											["qg"] = 78466,	-- Gazlowe
-											["sourceQuests"] = 34364,	-- For the Horde!
-										},
-										{	-- The Den of Skog
-											["questID"] = 34765,
-											["qg"] = 78466,	-- Gazlowe
-											["sourceQuests"] = {
-												34592,	-- A Gronnling Problem
-												34375,	-- Back to Work
-											},
-										},
-										{	-- Establish Your Garrison
-											["questID"] = 34378,
-											["qg"] = 78466,	-- Gazlowe
-											["sourceQuest"] = 34765,	-- The Den of Skog
-										},
-										{	-- The Ogron Live?
-											["questID"] = 34823,
-											["qg"] = 78487,	-- Rokhan
-											["sourceQuest"] = 34378,	-- Establish Your Garrison
-										},
-										{	-- What We Got
-											["questID"] = 34824,
-											["qg"] = 78466,	-- Gazlowe
-											["sourceQuest"] = 34378,	-- Establish Your Garrison
-										},
-										{	-- What We Need
-											["questID"] = 34822,
-											["qg"] = 78466,	-- Gazlowe
-											["sourceQuest"] = 34378,	-- Establish Your Garrison
-										},
-										{	-- Build Your Barracks
-											["questID"] = 34461,
-											["qg"] = 78466,	-- Gazlowe
-											["sourceQuests"] = {
-												34823,	-- The Ogron Live?
-												34824,	-- What We Got
-												34822,	-- What We Need
-											},
-										},
-										{	-- We Need An Army
-											["questID"] = 34861,
-											["qg"] = 78466,	-- Gazlowe
-											["sourceQuest"] = 34461,	-- Build Your Barracks
-										},
-										{	-- Winds of Change
-											["questID"] = 34462,
-											["qg"] = 79740,	-- Warmaster Zog
-											["sourceQuest"] = 34861,	-- We Need An Army
-										},
-										{	-- Mission Probable
-											["questID"] = 34775,
-											["qg"] = 79740,	-- Warmaster Zog
-											["sourceQuest"] = 34462,	-- Winds of Change
 										},
 									}),
 								},
