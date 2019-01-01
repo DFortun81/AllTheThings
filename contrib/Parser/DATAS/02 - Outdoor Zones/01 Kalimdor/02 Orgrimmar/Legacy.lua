@@ -222,6 +222,7 @@ _.Zones =
 									un(2, i(11120)),	-- Belgrom's Hammer
 									un(2, i(10709)),	-- Pyrestone Orb
 								},
+								["u"] = 40,
 								["qg"] = 8576,	-- Ag'tor Bloodfist
 								["races"] = HORDE_ONLY,
 							},
