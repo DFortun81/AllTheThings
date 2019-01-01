@@ -20,6 +20,10 @@ _.Zones =
 						34510 - Tracking Event: Catapuls 'n' Clefthoof - triggered after riding the wolf down Bladespire Citadel during "Moving In"
 						34511 - Tracking Event: Ogre Drag - triggered after riding the wolf down Bladespire Citadel during "Moving In"
 						34328 - Blessing of the Wolf Selected - triggered when choosing "Blessing of the Wolf" at a shamanstone for the first time
+						33978 - Spirit of the Wolf - triggered near the Shamanstone in Wor'gol during "Honor Has Its Rewards"
+						33456 - Spirit of the Wolf - triggered near the Shamanstone in Wor'gol during "Honor Has Its Rewards"
+						34715 - Tracking Flag: Shamanstone Summons - triggered near the Shamanstone in Wor'gol during "Honor Has Its Rewards"
+						34331 - Spirit of the Wolf Selected - triggers when choosing "Spirit of the Wolf" at a shamanstone for the first time
 					]]--
 						["groups"] = {
 							ach(8671, {	-- Frostfire Ridge
@@ -31,13 +35,13 @@ _.Zones =
 										{	-- A Song of Frost and Fire
 											["questID"] = 33815,
 											["qg"] = 76411,	-- Farseer Drek'Thar
-											["coord"] = { 40.7, 67.0 },
+											["coord"] = { 40.7, 67.0, 525 },
 											["sourceQuests"] = 33868,	-- The Home of the Frostwolves
 										},
 										{	-- of Wolves and  Warriors
 											["questID"] = 34402,
 											["qg"] = 78272,	-- Durotan
-											["coord"] = { 41.8, 69.6 },
+											["coord"] = { 41.8, 69.6, 525 },
 											["sourceQuests"] = 33815,	-- A Song of Frost and Fire
 										},
 									}),
@@ -122,24 +126,24 @@ _.Zones =
 										},
 									}),
 									crit(3, {	-- Defense of Wor'gol
-										{	-- Save Wolf Home
-											["questID"] = 33468,
-											["qg"] = 70860,	-- Durotan
-											["coord"] = { 43.1, 41.3, 526 },
-											["sourceQuest"] = 33527,	-- Last Steps
-										},
-									}),
-									crit(4, {	-- Ga'nar's Vengeance
 										{	-- Free Our Brothers and Sisters
 											["questID"] = 33807,
 											["qgs"] = {
 												74507,	-- Wor'gol Defender
 												79415,	-- Durotan
 											},
+											["coord"] = { 21.7, 56.3, 525 },
+										},
+										{	-- Save Wolf Home
+											["questID"] = 33468,
+											["qg"] = 70860,	-- Durotan
+											["coord"] = { 43.1, 41.3, 526 },
+											["sourceQuest"] = 33527,	-- Last Steps
 										},
 										{	-- The Farseer
 											["questID"] = 33469,
 											["qg"] = 74651,	-- Draka
+											["coord"] = { 20.7, 57.9, 525 },
 											["sourceQuests"] = {
 												33807,	-- Free Our Brothers and Sisters
 												33468,	-- Save Wolf Home
@@ -148,6 +152,7 @@ _.Zones =
 										{	-- Pool of Visions
 											["questID"] = 33470,
 											["qg"] = 74272,	-- Farseer Drek'Thar
+											["coord"] = { 16.7, 57.8, 525 },
 											["sourceQuest"] = 33469,	-- The Farseer
 											["groups"] = {
 												i(106173),	-- Frostwolf Ringmail Pauldrons
@@ -159,11 +164,15 @@ _.Zones =
 										{	-- Back to Bladespire Citadel
 											["questID"] = 33473,
 											["qg"] = 74272,	-- Farseer Drek'Thar
+											["coord"] = { 16.7, 57.8, 525 },
 											["sourceQuest"] = 33470,	-- Pool of Visions
 										},
+									}),
+									crit(4, {	-- Ga'nar's Vengeance
 										{	-- Ga'nar's Vengeance
 											["questID"] = 32783,
 											["qg"] = 70860,	-- Durotan
+											["coord"] = { 43.0, 41.3, 526 },
 											["sourceQuest"] = 33473,	-- Back to Bladespire Citadel
 										},
 										{	-- Let the Hunt Begin!
@@ -207,15 +216,69 @@ _.Zones =
 										},
 									}),
 									crit(5, {	-- Thunder's Fall
+										{	-- Securing the South
+											["questID"] = 32989,
+											["qg"] = 70860,	-- Durotan
+											["coord"] = { 43.1, 41.2, 526 },
+											["races"] = HORDE_ONLY,
+											["sourceQuest"] = 33473,	-- Back to Bladespire Citadel
+										},
+										{	-- They Who Held Fast
+											["questID"] = 32990,
+											["qg"] = 72274,	-- Lokra
+											["races"] = HORDE_ONLY,
+											["sourceQuest"] = 32989,	-- Securing the South
+										},
+										{	-- Into the Boneslag
+											["questID"] = 32991,
+											["qg"] = 72274,	-- Lokra
+											["races"] = HORDE_ONLY,
+											["sourceQuest"] = 32990,	-- They Who Held Fast
+										},
+										{	-- Moving Target
+											["questID"] = 32992,
+											["qg"] = 72274,	-- Lokra
+											["races"] = HORDE_ONLY,
+											["sourceQuest"] = 32991,	-- Into the Boneslag
+										},
+										{	-- The Strength of Our Bonds
+											["questID"] = 32993,
+											["qg"] = 72274,	-- Lokra
+											["races"] = HORDE_ONLY,
+											["sourceQuest"] = 32992,	-- Moving Target
+											["groups"] = {
+												i(113255),	-- Asha's Fang
+												i(113253),	-- Karg's Hunting Horn
+												i(113254),	-- Lokra's Fury
+											},
+										},
+										{	-- Where's My Wolf?!
+											["questID"] = 33826,
+											["qg"] = 73097,	-- Frostwolf Champion
+											["races"] = HORDE_ONLY,
+											["sourceQuest"] = 32993,	-- The Strength of Our Bonds
+										},
+										{	-- Enfilade
+											["questID"] = 32994,
+											["qg"] = 73097,	-- Frostwolf Champion
+											["races"] = HORDE_ONLY,
+											["sourceQuest"] = 33826,	-- Where's My Wolf?!
+										},
 										{	-- The Master Siegesmith
 											["questID"] = 33828,
 											["qg"] = 72940,	-- Frostwolf Champion
+											["sourceQuest"] = 32994,	-- Enfilade
 											["groups"] = {
 												i(113249),	-- Grom'gar Chain Boots
 												i(113251),	-- Grom'gar Plate Stompers
 												i(113252),	-- Grom'gar Wolfpelt Boots
 												i(113250),	-- Grom'gar Wolfskin Slippers
 											},
+										},
+										{	-- Return to the Pack
+											["questID"] = 33493,
+											["qg"] = 72940,	-- Frostwolf Champion
+											["sourceQuest"] = 33828,	-- The Master Siegesmith
 										},
 									}),
 									crit(6, {	-- The Battle of Thunder Pass
@@ -244,33 +307,33 @@ _.Zones =
 							{	-- A Clew of Worms
 								["questID"] = 34228,
 								["qg"] = 72836,	-- Cordana Felsong
-								["coord"] = { 31.8, 11.8 },
+								["coord"] = { 31.8, 11.8, 525 },
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 34216,	-- Safe Passage
 							},
 							{	-- A Collection of Coils
 								["questID"] = 34264,
 								["qg"] = 77210,	-- Scout Ruk'Gan
-								["coord"] = { 82.6, 69.8 },
+								["coord"] = { 82.6, 69.8, 525 },
 								["races"] = HORDE_ONLY,
 							},
 							{	-- A Proper Parting -- aa
 								["questID"] = 33125,
 								["qg"] = 72976,	-- Outrider Urakag
-								["coord"] = { 66.0, 49.0 },
+								["coord"] = { 66.0, 49.0, 525 },
 								["races"] = HORDE_ONLY,
 							},
 							{	-- All is Revealed
 								["questID"] = 34280,
 								["qg"] = 72874,	-- Archmage Khadgar
-								["coord"] = { 31.7, 11.8 },
+								["coord"] = { 31.7, 11.8, 525 },
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 34230,	-- Eye Need That
 							},
 							{	-- At the End of Your Rope
 								["questID"] = 34070,
 								["qg"] = 77210,	-- Scout Ruk'Gan
-								["coord"] = { 82.6, 69.8 },
+								["coord"] = { 82.6, 69.8, 525 },
 								["races"] = HORDE_ONLY,
 							},
 							{	-- Articles of the Fallen
@@ -290,7 +353,7 @@ _.Zones =
 							},
 							{	-- Barbed Thunderlord Spear
 								["objectID"] = 227504,
-								["coord"] = { 84.1, 65.1 },
+								["coord"] = { 84.1, 65.1, 525 },
 								["groups"] = {
 									{	-- Getting the Points
 										["questID"] = 34069,
@@ -300,7 +363,7 @@ _.Zones =
 							},
 							{	-- Battle-Worn Frostwolf Banner
 								["objectID"] = 227806,
-								["coord"] = { 82.6, 69.8 },
+								["coord"] = { 82.6, 69.8, 525 },
 								["groups"] = {
 									{	-- The Mark of Defiance
 										["questID"] = 34102,
@@ -332,7 +395,7 @@ _.Zones =
 							},
 							{	-- Broken Chains -- aa
 								["objectID"] = 224306,
-								["coord"] = { 58.3, 31.0 },
+								["coord"] = { 58.3, 31.0, 525 },
 								["groups"] = {
 									{	-- Thunderlord for a Day
 										["questID"] = 33462,
@@ -343,14 +406,14 @@ _.Zones =
 							{	-- Burn Them Down
 								["questID"] = 34073,
 								["qg"] = 77210,	-- Scout Ruk'Gan
-								["coord"] = { 82.6, 69.8 },
+								["coord"] = { 82.6, 69.8, 525 },
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 34072,	-- Tar Get of Opportunity
 							},
 							{	-- Bypassing Security
 								["questID"] = 36457,
 								["qg"] = 85439,	-- Raleigh Puule
-								["coord"] = { 21.0, 56.0 },
+								["coord"] = { 21.0, 56.0, 525 },
 								["races"] = HORDE_ONLY,
 								["requireSkill"] = 773,	-- Inscription
 								["sourceQuest"] = 36435,	-- Unintelligible Intelligence
@@ -377,7 +440,7 @@ _.Zones =
 							{	-- Desecration of the Dead
 								["questID"] = 34278,
 								["qg"] = 72837,	-- Farseer Urquan
-								["coord"] = { 31.7, 11.7 },
+								["coord"] = { 31.7, 11.7, 525 },
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 34227,	-- What Must Be Done
 								["groups"] = {
@@ -398,26 +461,21 @@ _.Zones =
 							{	-- Eliminate the Shadow Council
 								["questID"] = 34292,
 								["qg"] = 72836,	-- Cordana Felsong
-								["coord"] = { 31.8, 11.8 },
+								["coord"] = { 31.8, 11.8, 525 },
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 34280,	-- All is Revealed
 							},
 							{	-- Eliminate the Shadow Council
 								["questID"] = 34293,
 								["qg"] = 73480,	-- Image of Archmage Khadgar
-								["coord"] = { 21.9, 14.6 },
+								["coord"] = { 21.9, 14.6, 525 },
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 34280,	-- All is Revealed
-							},
-							{	-- Enfilade
-								["questID"] = 32994,
-								["qg"] = 73097,	-- Frostwolf Champion
-								["races"] = HORDE_ONLY,
 							},
 							{	-- Eye Need That
 								["questID"] = 34230,
 								["qg"] = 72874,	-- Archmage Khadgar
-								["coord"] = { 31.7, 11.8 },
+								["coord"] = { 31.7, 11.8, 525 },
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 34227,	-- What Must Be Done
 							},
@@ -462,13 +520,13 @@ _.Zones =
 							{	-- Frosted Fury -- aa
 								["questID"] = 34346,
 								["qg"] = 78209,	-- Shadow Hunter Mala
-								["coord"] = { 52.5, 40.4 },
+								["coord"] = { 52.5, 40.4, 525 },
 								["races"] = HORDE_ONLY,
 							},
 							{	-- Fury of Frostfire
 								["questID"] = 32985,
 								["qg"] = 74330,	-- Farseer Drek'Thar
-								["coord"] = { 70, 38.2 },
+								["coord"] = { 70, 38.2, 525 },
 								["races"] = HORDE_ONLY,
 								["groups"] = {
 									i(119145),	-- Firefury Totem
@@ -477,7 +535,7 @@ _.Zones =
 							{	-- Getting the Points
 								["questID"] = 34093,
 								["qg"] = 77210,	-- Scout Ruk'Gan
-								["coord"] = { 82.6, 69.8 },
+								["coord"] = { 82.6, 69.8, 525 },
 								["races"] = HORDE_ONLY,
 							},
 							{	-- Grimfrost Hill -- aa
@@ -493,25 +551,25 @@ _.Zones =
 							{	-- Gut Guttra -- aa
 								["questID"] = 33132,
 								["qg"] = 72976,	-- Outrider Urukag
-								["coord"] = { 66.0, 49.0 },
+								["coord"] = { 66.0, 49.0, 525 },
 								["races"] = HORDE_ONLY,
 							},
 							{	-- Have a Heart
 								["questID"] = 34291,
 								["qg"] = 72874,	-- Archmage Khadgar
-								["coord"] = { 31.7, 11.8 },
+								["coord"] = { 31.7, 11.8, 525 },
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 34280,	-- All is Revealed
 							},
 							{	-- Honor Has Its Rewards -- aa
 								["questID"] = 33816,
 								["qg"] = 80456,	-- Farseer Drek'Thar
-								["coord"] = { 21.0, 57.9 },
+								["coord"] = { 21.0, 57.9, 525 },
 								["races"] = HORDE_ONLY,
 							},
 							{	-- Icevine
 								["objectID"] = 231100,
-								["coord"] = { 54.2, 67.5 },
+								["coord"] = { 54.2, 67.5, 525 },
 								["groups"] = {
 									{	-- The Land Provides
 										["questID"] = 34960,
@@ -530,11 +588,7 @@ _.Zones =
 									},
 								},
 							},
-							{	-- Into the Boneslag
-								["questID"] = 32991,
-								["qg"] = 72274,	-- Lokra
-								["races"] = HORDE_ONLY,
-							},
+							
 							{	-- Karg Unchained
 								["questID"] = 33785,
 								["qg"] = 73097,	-- Frostwolf Champion
@@ -543,7 +597,7 @@ _.Zones =
 							{	-- Lurkers -- aa
 								["questID"] = 34344,
 								["qg"] = 78208,	-- Shadow Hunter Rala
-								["coord"] = { 52.6, 40.4 },
+								["coord"] = { 52.6, 40.4, 525 },
 								["races"] = HORDE_ONLY,
 								["groups"] = {
 									i(106172),	-- Frostwolf Ringmail Leggings
@@ -565,9 +619,10 @@ _.Zones =
 									i(111813),	-- The Forge, Level 1
 								},
 							},
-							{	-- Missing Pack
+							{	-- Missing Pack -- verify what the sourceQuest is for this
 								["questID"] = 33955,
 								["qg"] = 76941,	-- Kar'lak
+								["coord"] = { 21.6, 55.0, 525 },
 								["races"] = HORDE_ONLY,
 							},
 							{	-- Mopping Up
@@ -577,17 +632,13 @@ _.Zones =
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 33527,	-- Last Steps
 							},
-							{	-- Moving In (crit(3)?)
+							{	-- Moving In
 								["questID"] = 33657,
 								["qg"] = 75188,	-- Durotan
 								["coord"] = { 66.3, 56.5, 528 },
 								["races"] = HORDE_ONLY,
 							},
-							{	-- Moving Target
-								["questID"] = 32992,
-								["qg"] = 72274,	-- Lokra
-								["races"] = HORDE_ONLY,
-							},
+							
 							{	-- Mulverick's Offer of Service
 								["questID"] = 34732,
 								["qg"] = 79047,	-- Mulverick
@@ -608,7 +659,7 @@ _.Zones =
 							},
 							{	-- Mysterious Boots
 								["objectID"] = 229333,
-								["coord"] = { 67.9, 18.9 },
+								["coord"] = { 67.9, 18.9, 525 },
 								["questID"] = 34464,
 							},
 							{	-- Oath of Shadow Hunter Rala
@@ -619,18 +670,18 @@ _.Zones =
 							{	-- Of Fire and Thunder -- aa
 								["questID"] = 33013,
 								["qg"] = 74358,	-- Wounded Frostwolf Shaman
-								["coord"] = { 41.6, 52.9 },
+								["coord"] = { 41.6, 52.9, 525 },
 								["races"] = HORDE_ONLY,
 							},
 							{	-- Ogrish Fortitude
 								["questID"] = 33980,
-								["coord"] = { 43.9, 12.3 },
+								["coord"] = { 43.9, 12.3, 525 },
 								["races"] = HORDE_ONLY,
 							},
 							{	-- Only the Winner -- aa
 								["questID"] = 32981,
 								["qg"] = 79229,	-- Gronnstalker Rokash
-								["coord"] = { 59.4, 31.7 },
+								["coord"] = { 59.4, 31.7, 525 },
 								["races"] = HORDE_ONLY,
 								["groups"] = {
 									i(112687),	-- Chain of Biting Winds
@@ -641,7 +692,7 @@ _.Zones =
 							{	-- Poulticide -- aa
 								["questID"] = 34345,
 								["qg"] = 78208,	-- Shadow Hunter Rala
-								["coord"] = { 52.6, 40.4 },
+								["coord"] = { 52.6, 40.4, 525 },
 								["races"] = HORDE_ONLY,
 							},
 							{	-- REUSE - never used
@@ -655,7 +706,7 @@ _.Zones =
 							{	-- Safe Passage
 								["questID"] = 34216,
 								["qg"] = 72814,	-- Cordana Felsong
-								["coord"] = { 31.4, 16.2 },
+								["coord"] = { 31.4, 16.2, 525 },
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 34209,	-- Vouchsafe Our Arrival
 							},
@@ -663,8 +714,8 @@ _.Zones =
 								["questID"] = 34066,
 								["qg"] = 77210,	-- Scout Ruk'Gan
 								["coords"] = {
-									{ 82.6, 69.8 },
-									{ 83.2, 62.7 },
+									{ 82.6, 69.8, 525 },
+									{ 83.2, 62.7, 525 },
 								},
 								["races"] = HORDE_ONLY,
 								["groups"] = {
@@ -674,14 +725,10 @@ _.Zones =
 									i(117510),	-- Agurak Wristwraps
 								},
 							},
-							{	-- Securing the South
-								["questID"] = 32989,
-								["qg"] = 70860,	-- Durotan
-								["races"] = HORDE_ONLY,
-							},
 							{	-- Shivertail's Den
 								["questID"] = 33929,
 								["qg"] = 76889,	-- Shivertail
+								["coord"] = { 19.5, 50.9, 525 },
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 33955,	-- Missing Pack
 							},
@@ -702,20 +749,40 @@ _.Zones =
 							{	-- Smeltcraft -- aa
 								["questID"] = 33838,
 								["qg"] = 74977,	-- Initiate Na'Shra
-								["coord"] = { 65.0, 39.5 },
+								["coord"] = { 65.0, 39.5, 525 },
 								["races"] = HORDE_ONLY,
+							},
+							{	-- Stealing the Declaration
+								["questID"] = 36475,
+								["qg"] = 85440,	-- Nicholaus Page
+								["coord"] = { 61.2, 71.2, 525 },
+								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 36457,	-- Bypassing Security
+								["requireSkill"] = 773,	-- Inscription
+								["groups"] = {
+									{	-- Draenor Inscription
+										["itemID"] = 111923,
+										["collectible"] = false,
+									},
+									{	-- Scribe's Quarters, Level 1
+										["itemID"] = 111815,
+									},
+									{	-- Prestige Card: The Turn
+										["itemID"] = 116114,
+									},
+								},
 							},
 							{	-- Stop the Flow
 								["questID"] = 34277,
 								["qg"] = 72836,	-- Cordana Felsong
-								["coord"] = { 31.8, 11.8 },
+								["coord"] = { 31.8, 11.8, 525 },
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 34227,	-- What Must Be Done
 							},
 							{	-- Tar Get of Opportunity
 								["questID"] = 34072,
 								["qg"] = 77210,	-- Scout Ruk'Gan
-								["coord"] = { 82.6, 69.8 },
+								["coord"] = { 82.6, 69.8, 525 },
 								["races"] = HORDE_ONLY,
 							},
 							{	-- The Bounty of Bladespire	-- never implemented
@@ -740,7 +807,7 @@ _.Zones =
 							{	-- The Fel Crystals
 								["questID"] = 34294,
 								["qg"] = 73480,	-- Image of Archmage Khadgar
-								["coord"] = { 31.7, 11.8 },
+								["coord"] = { 31.7, 11.8, 525 },
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 34291,	-- Have a Heart
 							},
@@ -781,20 +848,11 @@ _.Zones =
 							{	-- The Sleeper Has Awakened
 								["questID"] = 34229,
 								["qg"] = 72837,	-- Farseer Urquan
-								["coord"] = { 31.7, 11.7 },
+								["coord"] = { 31.7, 11.7, 525 },
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 34228,	-- A Clew of Worms
 							},
-							{	-- The Strength of Our Bonds
-								["questID"] = 32993,
-								["qg"] = 72274,	-- Lokra
-								["races"] = HORDE_ONLY,
-								["groups"] = {
-									i(113255),	-- Asha's Fang
-									i(113253),	-- Karg's Hunting Horn
-									i(113254),	-- Lokra's Fury
-								},
-							},
+							
 							{	-- The Warlord's Guard
 								["questID"] = 33450,
 								["qg"] = 74635,	-- Igrimar the Resolute
@@ -811,15 +869,10 @@ _.Zones =
 								["qg"] = 74222,	-- Ligra the Unyielding
 								["races"] = HORDE_ONLY,
 							},
-							{	-- They Who Held Fast
-								["questID"] = 32990,
-								["qg"] = 72274,	-- Lokra
-								["races"] = HORDE_ONLY,
-							},
 							{	-- To Capture Gul'dan
 								["questID"] = 34295,
 								["qg"] = 73480,	-- Image of Archmage Khadgar
-								["coord"] = { 19.8, 14.6 },
+								["coord"] = { 19.8, 14.6, 525 },
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 34294,	-- The Fel Crystals
 								["groups"] = {
@@ -831,12 +884,12 @@ _.Zones =
 							},
 							{	-- Touched by Fire
 								["questID"] = 33981,
-								["coord"] = { 36.9, 33.2 },
+								["coord"] = { 36.9, 33.2, 525 },
 							},
 							{	-- Vul'gath's End
 								["questID"] = 34075,
 								["qg"] = 77210,	-- Scout Ruk'Gan
-								["coord"] = { 82.8, 76.3 },
+								["coord"] = { 82.8, 76.3, 525 },
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = {
 									34073,	-- Burn Them Down
@@ -868,19 +921,15 @@ _.Zones =
 							{	-- What Must Be Done
 								["questID"] = 34227,
 								["qg"] = 72837,	-- Fareseer Urquan
-								["coord"] = { 31.7, 11.7 },
+								["coord"] = { 31.7, 11.7, 525 },
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 34216,	-- Safe Passage
 							},
-							{	-- Where's My Wolf?!
-								["questID"] = 33826,
-								["qg"] = 73097,	-- Frostwolf Champion
-								["races"] = HORDE_ONLY,
-							},
-							{	-- Young Hearts
+							
+							{	-- Young Hearts -- verify if this has a source
 								["questID"] = 33915,
 								["qg"] = 76862,	-- Gog'rak
-								["coord"] = { 19.2, 59.2 },
+								["coord"] = { 19.2, 59.1, 525 },
 								["races"] = HORDE_ONLY,
 							},
 						},

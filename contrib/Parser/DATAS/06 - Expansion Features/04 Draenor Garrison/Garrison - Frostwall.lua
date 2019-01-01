@@ -2674,6 +2674,14 @@ _.ExpansionFeatures =
 							}),
 						},
 					},
+					{	-- Building For Professions
+						["questID"] = 37669,
+						["qg"] = 78466,	-- Gazlowe
+						["coords"] = {
+							{ 52.4, 53.3 },	-- lvl 1
+						},
+						["races"] = HORDE_ONLY,
+					},
 					un(40, q(35988)),	-- Call of the Archmage
 					{	-- Den of Wolves
 						["questID"] = 34379,
@@ -4622,6 +4630,14 @@ _.ExpansionFeatures =
 									currency(823),	-- Apexis Crystal x1000
 								},
 							},
+						},
+					},
+					{	-- We Be Needin' Supplies
+						["questID"] = 34736,
+						["qg"] = 78487,	-- Rokhan
+						["races"] = HORDE_ONLY,
+						["coords"] = {
+							{ 51.2, 51.3 },	-- lvl 1
 						},
 					},
 					{	-- Vouchsafe Our Arrival
