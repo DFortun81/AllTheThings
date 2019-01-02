@@ -2,21 +2,15 @@
 --   A C H I E V E M E N T S    M O D U L E    --
 --------------------------------------------------
 
---[[
-8.0 Pre-Patch alignment complete
-To do: 
-1) Review crit items to see if achievements / items / etc can replace them to provide more information when looking at them in the ATT lists
-2) Add [Reward] tag
-3) Source to local files if applicable
-]]--
-
 _.Achievements = 
 {
 	n(-9959, { -- Dungeons & Raids
 		["groups"] = {
 			n(-10004, { -- Lich King Dungeon
 				["groups"] = {
-					ach(2153),		-- A Void Dance
+					{	-- A Void Dance
+						["achievementID"] = 2153,	-- A Void Dance
+					},
 					ach(2155),		-- Abuse the Ooze
 					ach(2046),		-- Amber Void
 					ach(3802, {		-- Argent Confessor
@@ -50,8 +44,12 @@ _.Achievements =
 					ach(2154),		-- Brann Spankin' New
 					ach(2037),		-- Chaos Theory
 					ach(2151),		-- Consumption Junction
-					ach(1816),		-- Defenseless
-					ach(2041),		-- Dehydration
+					{	-- Defenseless
+						["achievementID"] = 1816,	-- Defenseless
+					},
+					{	-- Dehydration
+						["achievementID"] = 2041,	-- Dehydration
+					},
 					ach(4524),		-- Doesn't Go to Eleven
 					ach(4525),		-- Don't Look Up
 					ach(2045),		-- Emerald Void
@@ -199,9 +197,14 @@ _.Achievements =
 							crit(3),		-- Scourgelord Tyrannus and Rimefang
 						}),
 					}),
-					ach(494, {		-- Heroic: The Violet Hold
-						ach(483),		-- The Violet Hold
-					}),
+					{	-- Heroic: The Violet Hold
+						["achievementID"] = 494,	-- Heroic: The Violet Hold
+						["g"] = {
+							{	-- The Violet Hold
+								["achievementID"] = 483,	-- The Violet Hold
+							},
+						},
+					},
 					a(ach(4298, {	-- Heroic: Trial of the Champion (Alliance)
 						crit(1),		-- Mokra the Skullcrusher
 						crit(2),		-- Deathstalker Visceri
@@ -271,14 +274,36 @@ _.Achievements =
 					ach(2157),		-- King's Bane
 					ach(2040),		-- Less-rabi
 					ach(1834),		-- Lightning Struck
-					ach(1865, {		-- Lockdown!
-						crit(1),		-- Xevozz
-						crit(2),		-- Lavanthor
-						crit(3),		-- Ichoron
-						crit(4),		-- Zuramat the Obliterator
-						crit(5),		-- Erekem
-						crit(6),		-- Moragg
-					}),
+					{	-- Lockdown!
+						["achievementID"] = 1865,
+						["collectible"] = false,
+						["g"] = {
+							{	-- Erekem
+								["achievementID"] = 1865,	-- Lockdown!
+								["criteriaID"] = 5,	-- Erekem
+							},
+							{	-- Ichoron
+								["achievementID"] = 1865,	-- Lockdown!
+								["criteriaID"] = 3,	-- Ichoron
+							},
+							{	-- Levanthor
+								["achievementID"] = 1865,	-- Lockdown!
+								["criteriaID"] = 2,	-- Levanthor
+							},
+							{	-- Moragg
+								["achievementID"] = 1865,	-- Lockdown!
+								["criteriaID"] = 6,	-- Moragg
+							},
+							{	-- Xevozz
+								["achievementID"] = 1865,	-- Lockdown!
+								["criteriaID"] = 1,	-- Xevozz
+							},
+							{	-- Zuramat the Obliterator
+								["achievementID"] = 1865,	-- Lockdown!
+								["criteriaID"] = 4,	-- Zuramat the Obliterator
+							},
+						},
+					},
 					ach(1873),		-- Lodi Dodi We Loves the Skadi
 					ach(1868),		-- Make It Count
 					ach(2156),		-- My Girl Loves to Skadi All the Time

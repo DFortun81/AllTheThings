@@ -75,6 +75,9 @@ _.Instances =
 							i( 43402),	-- The Obliterator Greaves
 						})),
 						cr(31134, e(632, {	-- Cyanigosa
+							{	-- The Violet Hold
+								["achievementID"] = 483,	-- The Violet Hold
+							},
 							i( 35649),	-- Jailer's Baton
 							i( 37883),	-- Staff of Trickery
 							i( 37875),	-- Spaulders of the Violet Hold
@@ -101,6 +104,16 @@ _.Instances =
 								i(37889),	-- Prison Manifest
 							}),
 							cr(29315, e(626, {	-- Erekem
+								{	-- Lockdown!
+									["achievementID"] = 1865,
+									["collectible"] = false,
+									["g"] = {
+										{	-- Erekem
+											["achievementID"] = 1865,	-- Lockdown!
+											["criteriaID"] = 5,	-- Erekem
+										},
+									},
+								},
 								i( 43407),	-- Stormstrike Mace
 								i(157583), 	-- Protector's Buckler
 								i( 43406),	-- Cloak of the Gushing Wound
@@ -110,6 +123,16 @@ _.Instances =
 								i( 43405),	-- Sabatons of Erekem
 							})),
 							cr(29316, e(627, { 	-- Moragg
+								{	-- Lockdown!
+									["achievementID"] = 1865,
+									["collectible"] = false,
+									["g"] = {
+										{	-- Moragg
+											["achievementID"] = 1865,	-- Lockdown!
+											["criteriaID"] = 6,	-- Moragg
+										},
+									},
+								},
 								i( 43409),	-- Saliva Corroded Pike
 								i( 43387),	-- Shoulderplates of the Beholder
 								i( 43410),	-- Moragg's Chestguard
@@ -118,6 +141,19 @@ _.Instances =
 								i( 43408),	-- Solitaire of Reflecting Doom
 							})),
 							cr(29313, e(628, {	-- Ichoron
+								{	-- Dehydration
+									["achievementID"] = 2041,	-- Dehydration
+								},
+								{	-- Lockdown!
+									["achievementID"] = 1865,
+									["collectible"] = false,
+									["g"] = {
+										{	-- Ichoron
+											["achievementID"] = 1865,	-- Lockdown!
+											["criteriaID"] = 3,	-- Ichoron
+										},
+									},
+								},
 								i( 35643),	-- Spaulders of Ichoron
 								i( 43401),	-- Water-Drenched Robe
 								i( 37862),	-- Gauntlets of the Water Revenant
@@ -126,6 +162,16 @@ _.Instances =
 								i( 37869),	-- Globule Signet
 							})),
 							cr(29266, e(629, { 	-- Xevozz
+								{	-- Lockdown!
+									["achievementID"] = 1865,
+									["collectible"] = false,
+									["g"] = {
+										{	-- Xevozz
+											["achievementID"] = 1865,	-- Lockdown!
+											["criteriaID"] = 1,	-- Xevozz
+										},
+									},
+								},
 								i( 35642),	-- Riot Shield
 								i(157575), 	-- Crystal of Ensnared Power
 								i( 37861),	-- Necklace of Arcane Spheres
@@ -135,6 +181,16 @@ _.Instances =
 								i( 37867),	-- Footwraps of Teleportation
 							})),
 							cr(29312, e(630, { 	-- Levanthor
+								{	-- Lockdown!
+									["achievementID"] = 1865,
+									["collectible"] = false,
+									["g"] = {
+										{	-- Levanthor
+											["achievementID"] = 1865,	-- Lockdown!
+											["criteriaID"] = 2,	-- Levanthor
+										},
+									},
+								},
 								i( 37871),	-- The Key
 								i( 35645),	-- Poison Warden's Shotgun
 								i(157570), 	-- Helm of Cauterization
@@ -144,6 +200,19 @@ _.Instances =
 								i( 37872),	-- Levanthor's Talisman
 							})),
 							cr(29314, e(631, { 	-- Zuramat the Obliterator
+								{	-- A Void Dance
+									["achievementID"] = 2153,	-- A Void Dance
+								},
+								{	-- Lockdown!
+									["achievementID"] = 1865,
+									["collectible"] = false,
+									["g"] = {
+										{	-- Zuramat the Obliterator
+											["achievementID"] = 1865,	-- Lockdown!
+											["criteriaID"] = 4,	-- Zuramat the Obliterator
+										},
+									},
+								},
 								i(157568), 	-- Helm of Dire Vision
 								i( 43403),	-- Shroud of Darkness
 								i( 43358),	-- Pendant of Shadow Beams
@@ -152,9 +221,15 @@ _.Instances =
 								i( 43402),	-- The Obliterator Greaves
 							})),
 							cr(31134, e(632, {	-- Cyanigosa
-								{
+								{	-- Champion of the Frozen Wastes
 									["achievementID"] = 1658,	-- Champion of the Frozen Wastes
 									["criteriaID"] = 14,		-- Cyanigosa slain
+								},
+								{	-- Defenseless
+									["achievementID"] = 1816,	-- Defenseless
+								},
+								{	-- Heroic: The Violet Hold
+									["achievementID"] = 494,	-- Heroic: The Violet Hold
 								},
 								i( 35649),	-- Jailer's Baton
 								i( 37883),	-- Staff of Trickery
