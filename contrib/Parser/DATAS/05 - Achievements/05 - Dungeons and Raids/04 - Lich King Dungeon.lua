@@ -11,7 +11,9 @@ _.Achievements =
 					{	-- A Void Dance
 						["achievementID"] = 2153,	-- A Void Dance
 					},
-					ach(2155),		-- Abuse the Ooze
+					{	-- Abuse the Ooze
+						["achievementID"] = 2155,	-- Abuse the Ooze
+					},
 					ach(2046),		-- Amber Void
 					ach(3802, {		-- Argent Confessor
 						crit(1),		-- Hogger
@@ -41,7 +43,9 @@ _.Achievements =
 						crit(25),		-- Algalon
 					}),
 					ach(2039),		-- Better Off Dred
-					ach(2154),		-- Brann Spankin' New
+					{	-- Brann Spankin' New
+						["achievementID"] = 2154,	-- Brann Spankin' New
+					},
 					ach(2037),		-- Chaos Theory
 					ach(2151),		-- Consumption Junction
 					{	-- Defenseless
@@ -58,7 +62,9 @@ _.Achievements =
 						crit(2),		-- Emerald Drake
 						crit(3),		-- Ruby Drake
 					}),
-					ach(1866),		-- Good Grief
+					{	-- Good Grief
+						["achievementID"] = 1866,	-- Good Grief
+					},
 					ach(1860),		-- Gotta Go!
 					ach(1297),		-- Hadronox Denied
 					ach(492, {		-- Heroic: Ahn'kahet: The Old Kingdom
@@ -121,18 +127,48 @@ _.Achievements =
 							crit(4),		-- Loken
 						}),
 					}),
-					ach(496, {		-- Heroic: Halls of Stone
-						crit(1),		-- Maiden of Grief
-						crit(2),		-- Sjonnir The Ironshaper
-						crit(3),		-- The Tribunal of Ages
-						crit(4),		-- Krystallus
-						ach(485, {		-- Halls of Stone
-							crit(1),		-- Maiden of Grief
-							crit(2),		-- The Tribunal of Ages
-							crit(3),		-- Krystallus
-							crit(4),		-- Sjonnir The Ironshaper
-						}),
-					}),
+					{	-- Heroic: Halls of Stone
+						["achievementID"] = 496,
+						["g"] = {
+							{	-- Krystallus
+								["achievementID"] = 496,	-- Heroic: Halls of Stone
+								["criteriaID"] = 4,	-- Krystallus
+							},
+							{	-- Maiden of Grief
+								["achievementID"] = 496,	-- Heroic: Halls of Stone
+								["criteriaID"] = 1,	-- Maiden of Grief
+							},
+							{	-- Sjonnir The Ironshaper
+								["achievementID"] = 496,	-- Heroic: Halls of Stone
+								["criteriaID"] = 2,	-- Sjonnir The Ironshaper
+							},
+							{	-- Tribunal of Ages
+								["achievementID"] = 496,	-- Heroic: Halls of Stone
+								["criteriaID"] = 3,	-- Tribunal of Ages
+							},
+							{	-- Halls of Stone
+								["achievementID"] = 485,
+								["g"] = {
+									{	-- Krystallus
+										["achievementID"] = 485,	-- Halls of Stone
+										["criteriaID"] = 3,	-- Krystallus
+									},
+									{	-- Maiden of Grief
+										["achievementID"] = 485,	-- Halls of Stone
+										["criteriaID"] = 1,	-- Maiden of Grief
+									},
+									{	-- Sjonnir The Ironshaper
+										["achievementID"] = 485,	-- Halls of Stone
+										["criteriaID"] = 4,	-- Sjonnir The Ironshaper
+									},
+									{	-- Tribunal of Ages
+										["achievementID"] = 496,	-- Halls of Stone
+										["criteriaID"] = 2,	-- Tribunal of Ages
+									},
+								},
+							},
+						},
+					},
 					ach(500, {		-- Heroic: The Culling of Stratholme
 						crit(1),		-- Meathook
 						crit(2),		-- Chrono-Lord Epoch

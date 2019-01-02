@@ -73,6 +73,10 @@ _.Instances =
 							}),
 						}),
 						cr(27977, e(604, {	-- Krystallus
+							{	-- Halls of Stone: Krystallus
+								["achievementID"] = 485,	-- Halls of Stone
+								["criteriaID"] = 3,	-- Krystallus
+							},
 							i(37649),	-- Quarry Chisel
 							i(35670),	-- Brann's Lost Mining Helmet
 							i(35672),	-- Hollow Geode Helm
@@ -82,6 +86,10 @@ _.Instances =
 							i(37651),	-- The Prospector's Prize
 						})),
 						cr(27975, e(605, {	-- Maiden of Grief
+							{	-- Halls of Stone: Maiden of Grief
+								["achievementID"] = 485,	-- Halls of Stone
+								["criteriaID"] = 1,	-- Maiden of Grief
+							},
 							ig(44731),	-- Bouquet of Ebon Roses
 							ig(22206),	-- Bouquet of Red Roses
 							i(38618),	-- Hammer of Grief
@@ -91,6 +99,10 @@ _.Instances =
 							i(38616),	-- Maiden's Girdle
 						})),
 						cr(28234, e(606, {	-- Tribunal of Ages
+							{	-- Halls of Stone: Tribunal of Ages
+								["achievementID"] = 485,	-- Halls of Stone
+								["criteriaID"] = 2,	-- Tribunal of Ages
+							},
 							i(37653),	-- Sword of Justice
 							i(37655),	-- Mantle of the Tribunal
 							i(35677),	-- Cosmos Vestments
@@ -101,6 +113,10 @@ _.Instances =
 							i(37654),	-- Sabaton of the Ages
 						})),
 						cr(27978, e(607, {	-- Sjonnir The Ironshaper
+							{	-- Halls of Stone: Sjonnir The Ironshaper
+								["achievementID"] = 485,	-- Halls of Stone
+								["criteriaID"] = 4,	-- Sjonnir The Ironshaper
+							},
 							i(37667),	-- The Fleshshaper
 							i(35679),	-- Static Cowl
 							i(35680),	-- Amulet of Wills
@@ -154,6 +170,10 @@ _.Instances =
 								}),
 							}),
 							cr(27977, e(604, {	-- Krystallus
+								{	-- Heroic: Halls of Stone: Krystallus
+									["achievementID"] = 496,	-- Heroic: Halls of Stone
+									["criteriaID"] = 4,	-- Krystallus
+								},
 								i(37649),	-- Quarry Chisel
 								i(35670),	-- Brann's Lost Mining Helmet
 								i(35672),	-- Hollow Geode Helm
@@ -163,6 +183,13 @@ _.Instances =
 								i(37651),	-- The Prospector's Prize
 							})),
 							cr(27975, e(605, {	-- Maiden of Grief
+								{	-- Good Grief
+									["achievementID"] = 1866,	-- Good Grief
+								},
+								{	-- Heroic: Halls of Stone: Maiden of Grief
+									["achievementID"] = 496,	-- Heroic: Halls of Stone
+									["criteriaID"] = 1,	-- Maiden of Grief
+								},
 								ig(44731),	-- Bouquet of Ebon Roses
 								ig(22206),	-- Bouquet of Red Roses
 								i(38618),	-- Hammer of Grief
@@ -172,6 +199,13 @@ _.Instances =
 								i(38616),	-- Maiden's Girdle
 							})),
 							cr(28234, e(606, {	-- Tribunal of Ages
+								{	-- Brann Spankin' New
+									["achievementID"] = 2154,	-- Brann Spankin' New
+								},
+								{	-- Heroic: Halls of Stone: Tribunal of Ages
+									["achievementID"] = 496,	-- Heroic: Halls of Stone
+									["criteriaID"] = 3,	-- Tribunal of Ages
+								},
 								i(37653),	-- Sword of Justice
 								i(37655),	-- Mantle of the Tribunal
 								i(35677),	-- Cosmos Vestments
@@ -182,9 +216,16 @@ _.Instances =
 								i(37654),	-- Sabaton of the Ages
 							})),
 							cr(27978, e(607, {	-- Sjonnir The Ironshaper
-								{
+								{	-- Abuse the Ooze
+									["achievementID"] = 2155,	-- Abuse the Ooze
+								},
+								{	-- Champion of the Frozen Wastes
 									["achievementID"] = 1658,	-- Champion of the Frozen Wastes
 									["criteriaID"] = 5,			-- Sjonnir The Ironshaper slain
+								},
+								{	-- Heroic: Halls of Stone: Sjonnir The Ironshaper
+									["achievementID"] = 496,	-- Heroic: Halls of Stone
+									["criteriaID"] = 2,	-- Sjonnir The Ironshaper
 								},
 								i(37667),	-- The Fleshshaper
 								i(35679),	-- Static Cowl

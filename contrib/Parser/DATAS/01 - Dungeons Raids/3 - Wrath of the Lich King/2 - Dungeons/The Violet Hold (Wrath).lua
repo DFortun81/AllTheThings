@@ -104,15 +104,9 @@ _.Instances =
 								i(37889),	-- Prison Manifest
 							}),
 							cr(29315, e(626, {	-- Erekem
-								{	-- Lockdown!
-									["achievementID"] = 1865,
-									["collectible"] = false,
-									["g"] = {
-										{	-- Erekem
-											["achievementID"] = 1865,	-- Lockdown!
-											["criteriaID"] = 5,	-- Erekem
-										},
-									},
+								{	-- Lockdown!: Erekem
+									["achievementID"] = 1865,	-- Lockdown!
+									["criteriaID"] = 5,	-- Erekem
 								},
 								i( 43407),	-- Stormstrike Mace
 								i(157583), 	-- Protector's Buckler
@@ -123,15 +117,9 @@ _.Instances =
 								i( 43405),	-- Sabatons of Erekem
 							})),
 							cr(29316, e(627, { 	-- Moragg
-								{	-- Lockdown!
-									["achievementID"] = 1865,
-									["collectible"] = false,
-									["g"] = {
-										{	-- Moragg
-											["achievementID"] = 1865,	-- Lockdown!
-											["criteriaID"] = 6,	-- Moragg
-										},
-									},
+								{	-- Lockdown!: Moragg
+									["achievementID"] = 1865,	-- Lockdown!
+									["criteriaID"] = 6,	-- Moragg
 								},
 								i( 43409),	-- Saliva Corroded Pike
 								i( 43387),	-- Shoulderplates of the Beholder
@@ -144,15 +132,9 @@ _.Instances =
 								{	-- Dehydration
 									["achievementID"] = 2041,	-- Dehydration
 								},
-								{	-- Lockdown!
-									["achievementID"] = 1865,
-									["collectible"] = false,
-									["g"] = {
-										{	-- Ichoron
-											["achievementID"] = 1865,	-- Lockdown!
-											["criteriaID"] = 3,	-- Ichoron
-										},
-									},
+								{	-- Lockdown!: Ichoron
+									["achievementID"] = 1865,	-- Lockdown!
+									["criteriaID"] = 3,	-- Ichoron
 								},
 								i( 35643),	-- Spaulders of Ichoron
 								i( 43401),	-- Water-Drenched Robe
@@ -162,15 +144,9 @@ _.Instances =
 								i( 37869),	-- Globule Signet
 							})),
 							cr(29266, e(629, { 	-- Xevozz
-								{	-- Lockdown!
-									["achievementID"] = 1865,
-									["collectible"] = false,
-									["g"] = {
-										{	-- Xevozz
-											["achievementID"] = 1865,	-- Lockdown!
-											["criteriaID"] = 1,	-- Xevozz
-										},
-									},
+								{	-- Lockdown!: Xevozz
+									["achievementID"] = 1865,	-- Lockdown!
+									["criteriaID"] = 1,	-- Xevozz
 								},
 								i( 35642),	-- Riot Shield
 								i(157575), 	-- Crystal of Ensnared Power
@@ -181,15 +157,9 @@ _.Instances =
 								i( 37867),	-- Footwraps of Teleportation
 							})),
 							cr(29312, e(630, { 	-- Levanthor
-								{	-- Lockdown!
-									["achievementID"] = 1865,
-									["collectible"] = false,
-									["g"] = {
-										{	-- Levanthor
-											["achievementID"] = 1865,	-- Lockdown!
-											["criteriaID"] = 2,	-- Levanthor
-										},
-									},
+								{	-- Lockdown!: Levanthor
+									["achievementID"] = 1865,	-- Lockdown!
+									["criteriaID"] = 2,	-- Levanthor
 								},
 								i( 37871),	-- The Key
 								i( 35645),	-- Poison Warden's Shotgun
@@ -203,15 +173,9 @@ _.Instances =
 								{	-- A Void Dance
 									["achievementID"] = 2153,	-- A Void Dance
 								},
-								{	-- Lockdown!
-									["achievementID"] = 1865,
-									["collectible"] = false,
-									["g"] = {
-										{	-- Zuramat the Obliterator
-											["achievementID"] = 1865,	-- Lockdown!
-											["criteriaID"] = 4,	-- Zuramat the Obliterator
-										},
-									},
+								{	-- Lockdown!: Zuramat the Obliterator
+									["achievementID"] = 1865,	-- Lockdown!
+									["criteriaID"] = 4,	-- Zuramat the Obliterator
 								},
 								i(157568), 	-- Helm of Dire Vision
 								i( 43403),	-- Shroud of Darkness
