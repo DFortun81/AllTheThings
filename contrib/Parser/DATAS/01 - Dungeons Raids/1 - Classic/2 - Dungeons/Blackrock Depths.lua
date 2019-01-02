@@ -162,6 +162,10 @@ _.Instances =
 								8908,	-- Molten War Golem
 							},
 						}),
+						i(17682),	-- Book: Gift of the Wild Rank 1
+						i(17683, {	-- Book: Gift of the Wild Rank 2
+						--	["description"] = "This can only drop from Elites."	-- Commenting it out for Live, will be relevant for Classic
+						}),
 						i(12549, {	-- Braincage
 							["crs"] = {
 								8892,	-- Anvilrage Footman

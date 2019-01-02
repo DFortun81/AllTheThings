@@ -14,6 +14,9 @@ _.Instances = { tier(1, {	-- Classic
 							12461, -- Death Talon Overseer
 						},
 					}),
+					i(17683, {	-- Book: Gift of the Wild Rank 2
+						--	["description"] = "This can only drop from Elites."	-- Commenting it out for Live, will be relevant for Classic
+					}),
 					i(19437, {	-- Boots of Pure Thought
 						["crs"] = {
 							12467, -- Death Talon Captain

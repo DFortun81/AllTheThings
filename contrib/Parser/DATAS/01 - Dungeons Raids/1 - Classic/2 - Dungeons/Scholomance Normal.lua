@@ -28,6 +28,10 @@ _.Instances =
 								},
 							}),
 							i(14536),	-- Bonebrace Hauberk
+							i(17682),	-- Book: Gift of the Wild Rank 1
+							i(17683, {	-- Book: Gift of the Wild Rank 2
+							--	["description"] = "This can only drop from Elites."	-- Commenting it out for Live, will be relevant for Classic
+							}),
 							i(18697, {	-- Coldstone Slippers
 								["crs"] = {
 									59501,	-- Reanimated Corpse

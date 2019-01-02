@@ -37,7 +37,10 @@ _.Zones =
 									i(23424),	-- Fel Iron Ore
 									i(23781),	-- Elemental Blasting Powder
 									i(23768),	-- White Smoke Flare
-									i(34109),	-- Weather-Beaten Journal
+									i(34109, {	-- Weather-Beaten Journal
+										["spellID"] = 43308,
+										["collectible"] = false,	-- SpellID's are wonky
+									}),
 								}),
 							},
 						}),
