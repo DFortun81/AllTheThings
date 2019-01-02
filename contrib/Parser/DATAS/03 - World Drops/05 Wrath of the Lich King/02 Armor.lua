@@ -64,6 +64,12 @@ _.WorldDrops =
 					{	-- Snake Entwined Necklace
 						["itemID"] = 36433,	-- Snake Entwined Necklace
 					},
+					{	-- Torta's Oversized Choker
+						["itemID"] = 37794,	-- Torta's Oversized Choker
+					},
+					{	-- Twisted Puzzle-Ring
+						["itemID"] = 37822,	-- Twisted Puzzle-Ring
+					},
 				}),
 				n(-321, { -- Shoulder
 					i(35580),	-- Skein Woven Mantle
