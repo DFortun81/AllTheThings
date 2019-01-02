@@ -6,7 +6,16 @@ _.Instances = { tier(1, {	-- Classic
 	inst(743, { 	-- Ruins of Ahn'Qiraj
 		["groups"] = {
 			n(-1, { -- Common Boss Drop
-				["groups"] = {
+				["groups"] = { -- The class items are grey, adding them for classic in summer
+					-- Druid
+					i(21294),	-- Book of Healing Touch Xi
+					i(21295),	-- Book of Starfire Vii
+					i(21296),	-- Book of Rejuvenation Xi
+					-- Priest
+					i(21284),	-- [Codex of Greater Heal V] 
+					i(21285),	-- [Codex of Renew X] 
+					i(21287),	-- [Codex of Prayer of Healing V] 
+					-- Enchants
 					i(20729),	-- Formula: Enchant Gloves - Fire Power
 					i(20728),	-- Formula: Enchant Gloves - Frost Power
 					i(20730),	-- Formula: Enchant Gloves - Healing Power
@@ -14,6 +23,34 @@ _.Instances = { tier(1, {	-- Classic
 					i(20731),	-- Formula: Enchant Gloves - Superior Agility
 					i(20736),	-- Formula: Enchant Cloak - Dodge
 					i(20734),	-- Formula: Encant Cloak - Stealth
+					-- Warlock
+					i(21283),	-- [Grimoire of Corruption VII] 
+					i(21282),	-- [Grimoire of Immolate VIII] 
+					i(21281),	-- [Grimoire of Shadow Bolt X] 
+					-- Hunter
+					i(21304),	-- Guide: Multi-Shot V
+					i(21306),	-- Guide: Serpent Sting iX
+					i(21307),	-- Guide: Aspect of the Hawk Vii
+					-- Rogue
+					i(21300),	-- [Handbook of Backstab IX] 
+					i(21302),	-- [Handbook of Deadly Poison V] 
+					i(21303),	-- [Handbook of Feint V] 
+					-- Paladin
+					i(21289),	-- [Libram: Blessing of Might VII] 
+					i(21288),	-- [Libram: Blessing of Wisdom VI] 
+					i(21290),	-- [Libram: Holy Light IX]
+					-- Warrior
+					i(21298),	-- [Manual of Battle Shout VII] 
+					i(21297),	-- [Manual of Heroic Strike IX]  
+					i(21299),	-- [Manual of Revenge VI] 
+					-- Shaman
+					i(21293),	-- [Tablet of Grace of Air Totem III] 
+					i(21291),	-- [Tablet of Healing Wave X]  
+					i(21292),	-- [Tablet of Strength of Earth Totem V] 
+					-- Mage
+					i(21280),	-- [Tome of Arcane Missiles VIII] 
+					i(21279),	-- [Tome of Fireball XII] 
+					i(21214),	-- [Tome of Frostbolt XI] 
 				},
 				["crs"] = {
 					15348, -- Kurinnaxx

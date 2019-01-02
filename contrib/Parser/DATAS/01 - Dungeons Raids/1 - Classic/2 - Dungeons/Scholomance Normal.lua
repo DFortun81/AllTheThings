@@ -28,6 +28,7 @@ _.Instances =
 								},
 							}),
 							i(14536),	-- Bonebrace Hauberk
+							i(17682),	-- Book: Gift of the Wild Rank 1
 							i(18697, {	-- Coldstone Slippers
 								["crs"] = {
 									59501,	-- Reanimated Corpse

@@ -162,6 +162,7 @@ _.Instances =
 								8908,	-- Molten War Golem
 							},
 						}),
+						i(17682),	-- Book: Gift of the Wild Rank 1
 						i(12549, {	-- Braincage
 							["crs"] = {
 								8892,	-- Anvilrage Footman
