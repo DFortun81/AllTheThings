@@ -77,6 +77,9 @@ _.Instances =
 							},
 						}),
 						i(17682),	-- Book: Gift of the Wild Rank 1
+						i(17683, {	-- Book: Gift of the Wild Rank 2
+						--	["description"] = "This can only drop from Elites."	-- Commenting it out for Live, will be relevant for Classic
+						}),
 						i(10628, {	-- Deathblow
 							["crs"] = {
 								5271,	-- Atal'ai Deathwalker

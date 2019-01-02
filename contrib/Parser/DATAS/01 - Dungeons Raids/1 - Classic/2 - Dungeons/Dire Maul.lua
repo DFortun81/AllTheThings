@@ -28,6 +28,9 @@ _.Instances =
 									["description"] = "Required for the Retribution Paladin Hidden Artifact Appearance.\n\nEastern Wall of Garden\nLedge Above Garden\nBeside Lethtendris\nBeside Alzzin the Wildshaper",
 								}),
 								i(17682),	-- Book: Gift of the Wild Rank 1
+								i(17683, {	-- Book: Gift of the Wild Rank 2
+								--	["description"] = "This can only drop from Elites."	-- Commenting it out for Live, will be relevant for Classic
+								}),
 								i(8384, {	-- Pattern: Comfortable Leather Hat
 									["crs"] = {
 										13197,	-- Fel Lash
@@ -176,6 +179,9 @@ _.Instances =
 									["description"] = "Required for the Retribution Paladin Hidden Artifact Appearance.\n\nSW Corner of Guard Fengus's courtyard\nBeside King Gordok and Cho'Rush the Observer",
 								}),
 								i(17682),	-- Book: Gift of the Wild Rank 1
+								i(17683, {	-- Book: Gift of the Wild Rank 2
+								--	["description"] = "This can only drop from Elites."	-- Commenting it out for Live, will be relevant for Classic
+								}),
 							}),
 							cr(14326, e(411, {	-- Guard Mol'dar
 								i(18498),	-- Hedgecutter
@@ -322,6 +328,9 @@ _.Instances =
 									["description"] = "Required for the Retribution Paladin Hidden Artifact Appearance.\n\nSouthern Generator in Immol'thar's room",
 								}),
 								i(17682),	-- Book: Gift of the Wild Rank 1
+								i(17683, {	-- Book: Gift of the Wild Rank 2
+								--	["description"] = "This can only drop from Elites."	-- Commenting it out for Live, will be relevant for Classic
+								}),
 								i(18339, {	-- Eidolon Cloak
 									["crs"] = {
 										11471,	-- Eldreth Apparition

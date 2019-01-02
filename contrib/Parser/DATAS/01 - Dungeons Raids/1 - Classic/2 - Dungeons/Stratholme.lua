@@ -41,6 +41,9 @@ _.Instances =
 								},
 							}),
 							n(  0, {	-- Zone Drop
+								i(17683, {	-- Book: Gift of the Wild Rank 2
+								--	["description"] = "This can only drop from Elites."	-- Commenting it out for Live, will be relevant for Classic
+								}),
 								i(16248, {	-- Formula: Enchant Weapon - Unholy
 									["crs"] = {
 										10398,	-- Thuzadin Shadowcaster
@@ -281,6 +284,9 @@ _.Instances =
 							}),
 							n(0, {	-- Zone Drop
 								["groups"] = {
+									i(17683, {	-- Book: Gift of the Wild Rank 2
+									--	["description"] = "This can only drop from Elites."	-- Commenting it out for Live, will be relevant for Classic
+									}),
 									i(18743),	-- Gracious Cape
 									i(17061),	-- Juno's Shadow
 									i(18741),	-- Morlune's Bracer

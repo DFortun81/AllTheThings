@@ -95,6 +95,9 @@ _.Instances =
 								n(10161, {	-- Rookery Whelp
 									un(2, i(13371)),	-- Father Flame
 								}),
+								i(17683, {	-- Book: Gift of the Wild Rank 2
+								--	["description"] = "This can only drop from Elites."	-- Commenting it out for Live, will be relevant for Classic
+								}),
 							},
 						}),
 						n(9816, { 	-- Pyroguard Emberseer

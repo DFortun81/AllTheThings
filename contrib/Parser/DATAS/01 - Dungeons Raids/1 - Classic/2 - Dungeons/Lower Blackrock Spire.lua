@@ -36,6 +36,9 @@ _.Instances =
 						}),
 					}),
 					n(  0, {	-- Zone Drop
+						i(17683, {	-- Book: Gift of the Wild Rank 2
+						--	["description"] = "This can only drop from Elites."	-- Commenting it out for Live, will be relevant for Classic
+						}),
 						i(16250, {			-- Formula: Enchant Weapon - Superior Striking
 							["crs"] = {
 								9216,	-- Spirestone Warlord
