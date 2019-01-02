@@ -210,20 +210,32 @@ _.Zones =
 							},
 							["races"] = HORDE_ONLY,
 						}),
-						n(-383, { -- Miscellaneous
-							["groups"] = {
-								q(47432, {	-- The Bargain is Struck; Actually Gonk/Pa'ku triggeeer
-									["qg"] = 127489,	-- Hexlord Raal
-									["sourceQuests"] = { 47440, 47439, },	-- Pa'ku, Master of Winds, Gonk, Lord of the Pack
-								}),
-								{	-- Trouble in Gnomeregan
-									["questID"]	= 54276,	-- Trouble in Gnomeregan
-									["qg"] = 147641,	-- Radek Fuselock
-									["isBreadcrumb"] = true,
+						{	-- Azerite for the Horde
+							["questID"] = 53435, 	-- Azerite for the Horde
+							["qg"] = 133000,	-- Captain Rez'okun
+							["coords"] = {
+								{ 44.60, 95.40 },
+							},
+							["repeatable"] = true,
+							["isWeekly"] = true,
+							["races"] = HORDE_ONLY,
+							["g"] = {
+								{	-- Treasure Map
+									["itemID"] = 166999, 	-- Treasure Map
 								},
 							},
+						},
+						q(47432, {	-- The Bargain is Struck; Actually Gonk/Pa'ku triggeeer
+							["qg"] = 127489,	-- Hexlord Raal
+							["sourceQuests"] = { 47440, 47439, },	-- Pa'ku, Master of Winds, Gonk, Lord of the Pack
 							["races"] = HORDE_ONLY,
 						}),
+						{	-- Trouble in Gnomeregan
+							["questID"]	= 54276,	-- Trouble in Gnomeregan
+							["qg"] = 147641,	-- Radek Fuselock
+							["isBreadcrumb"] = true,
+							["races"] = HORDE_ONLY,
+						},
 					},
 				}),
 			},

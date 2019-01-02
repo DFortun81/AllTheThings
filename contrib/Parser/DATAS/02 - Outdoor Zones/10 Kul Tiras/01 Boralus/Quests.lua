@@ -212,6 +212,21 @@ _.Zones =
 								},
 							},
 						},
+						{	-- Azerite for the Alliance
+							["questID"] = 53436, 	-- Azerite for the Alliance
+							["qg"] = 131290,	-- Flynn
+							["coords"] = {
+								{ 66.60, 35.50 },
+							},
+							["repeatable"] = true,
+							["isWeekly"] = true,
+							["races"] = ALLIANCE_ONLY,
+							["g"] = {
+								{	-- Treasure Map
+									["itemID"] = 166999, 	-- Treasure Map
+								},
+							},
+						},
 						a(q(50789, {	-- Clear the Air [Alliance Only]
 							["qg"] = 135259, -- Taelia
 							["sourceQuests"] = { 50787 },	-- Make Our Case [Alliance Only]
