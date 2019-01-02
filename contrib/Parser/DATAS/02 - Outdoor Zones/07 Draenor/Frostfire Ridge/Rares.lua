@@ -17,7 +17,9 @@ _.Zones =
 								["npcID"] = 84378,	-- Ak'ox the Slaughterer
 								["questID"] = 37525,
 								["isDaily"] = true,
-								["coord"] = { 88.6, 57.2 },
+								["coords"] = { 
+									{ 88.6, 57.2, 525 },
+								},
 								["g"] = {
 									i(119365),	-- Bloodied Tourniquet Belt
 								},
@@ -25,7 +27,9 @@ _.Zones =
 							{	-- Arena Master's War Horn
 								["objectID"] = 226955,	-- Arena Master's War Horn
 								["questID"] = 33916,
-								["coord"] = { 23.17, 24.95 },
+								["coords"] = {
+									{ 23.17, 24.95, 525 },
+								},
 								["g"] = {
 									i(108735), -- Arena Master's War Horn Toy
 								},
@@ -33,7 +37,9 @@ _.Zones =
 							{	-- Borrok the Devourer
 								["npcID"] = 72156,	-- Borrok the Devourer
 								["questID"] = 33511,
-								["coord"] = { 62.6, 42.4 },
+								["coords"] = {
+									{ 62.6, 42.4, 525 },
+								},
 								["description"] = "Need to feed 10 ogres to him, kill an ogre, it will kneel, click on it to throw it over you back (druids must be in human form) then walk into feeding area. Repeat. Loot the Devourer's Gutstone afterwards.",
 								["g"] = {
 									{	-- Devourer's Gutstone
@@ -48,7 +54,9 @@ _.Zones =
 							{	-- Breathless
 								["npcID"] = 78867,	-- Breathless
 								["questID"] = 34497,
-								["coord"] = { 27.73, 50.20 },
+								["coords"] = {
+									{ 27.73, 50.20, 525 },
+								},
 								["g"] = {
 									i(111476), -- Stolen Breath Toy
 								},
@@ -56,7 +64,9 @@ _.Zones =
 							{	-- Broodmother Reeg'ak
 								["npcID"] = 74613,	-- Broodmother Reeg'ak
 								["questID"] = 33843,
-								["coord"] = { 66.65, 31.59 },
+								["coords"] = {
+									{ 66.65, 31.59, 525 },
+								},
 								["g"] = {
 									i(111533), -- Corrosive Tongue of Reeg'ak
 								},
@@ -64,7 +74,9 @@ _.Zones =
 							{	-- Burning Pearl
 								["objectID"] = 230252,	-- Burning Pearl
 								["questID"] = 34520,
-								["coord"] = { 42.16, 19.30 },
+								["coords"] = {
+									{ 42.16, 19.30, 525 },
+								},
 								["g"] = {
 									i(120341),	-- Burning Pearl
 								},
@@ -72,12 +84,16 @@ _.Zones =
 							{	-- Canyon Icemother
 								["npcID"] = 71721,	-- Canyon Icemother
 								["questID"] = 32941,
-								["coord"] = { 33.87, 22.95 },
+								["coords"] = {
+									{ 33.87, 22.95, 525 },
+								},
 							},
 							{	-- Chillfang
 								["npcID"] = 80242,	-- Chillfang
 								["questID"] = 34843,
-								["coord"] = { 41.38, 68.31 },
+								["coords"] = {
+									{ 41.38, 68.31, 525 },
+								},
 								["g"] = {
 									i(111953), -- Bat-Leather Breeches
 								},
@@ -85,7 +101,9 @@ _.Zones =
 							{	-- Cindermaw
 								["npcID"] = 72294,	-- Cindermaw
 								["questID"] = 33014,
-								["coord"] = { 40.56, 47.07 },
+								["coords"] = {
+									{ 40.56, 47.07, 525 },
+								},
 								["g"] = {	
 									i(111490), -- Cindermaw's Blazing Talon
 								},
@@ -93,7 +111,9 @@ _.Zones =
 							{	-- Clumsy Cragmaul Brute
 								["npcID"] = 75120,	-- Clumsy Cragmaul Brute
 								["questID"] = 33531,
-								["coord"] = { 50.14, 18.69 },
+								["coords"] = {
+									{ 50.14, 18.69, 525 },
+								},
 								["g"] = {
 									i(112096),	-- Dented Ogre Skullcap
 								},
@@ -101,7 +121,9 @@ _.Zones =
 							{	-- Coldstomp the Griever
 								["npcID"] = 77513,	-- Coldstomp the Griever
 								["questID"] = 34129,
-								["coord"] = { 26.6, 55.6 },	-- Walks around near this point on the ice
+								["coords"] = {
+									{ 26.6, 55.6, 525 },	-- Walks around near this point on the ice
+								},
 								["g"] = {	
 									i(112066), -- Coldstomp's Sorrow
 								},
@@ -110,8 +132,8 @@ _.Zones =
 								["npcID"] = 76914,	-- Coldtusk
 								["questID"] = 34131,
 								["coords"] = {
-									{ 54.2, 67.6 },
-									{ 55.0, 71.2 },
+									{ 54.2, 67.6, 525 },
+									{ 55.0, 71.2, 525 },
 								},
 								["g"] = {	
 									i(111484), -- Cold Tusk
@@ -120,7 +142,9 @@ _.Zones =
 							{	-- Crag-Leaper's Cache
 								["objectID"] = 226983,	-- Crag-Leaper's Cache
 								["questID"] = 33940,
-								["coord"] = { 42.65, 31.74 },
+								["coords"] = {
+									{ 42.65, 31.74, 525 },
+								},
 								["modelID"] = 65118,
 								["g"] = {	
 									i(112187),	-- Crag-Leaping Boots
@@ -129,7 +153,9 @@ _.Zones =
 							{	-- Cyclonic Fury
 								["npcID"] = 78621,	-- Cyclonic Fury
 								["questID"] = 34477,
-								["coord"] = { 67.20, 78.81 },
+								["coords"] = {
+									{ 67.20, 78.81, 525 },
+								},
 								["g"] = {	
 									i(112086), -- Windburnt Pauldrons
 								},
@@ -137,7 +163,9 @@ _.Zones =
 							{	-- Earthshaker Holar	**Coords uncofirmed, relied on wowhead**
 								["npcID"] = 84376,	-- Earthshaker Holar
 								["questID"] = 37403,
-								["coord"] = { 84.2, 46.6 },
+								["coords"] = {
+									{ 84.2, 46.6, 525 },
+								},
 								["isDaily"] = true,
 								["g"] = {
 									i(119374),	-- Gold Ogron Earring
@@ -156,19 +184,21 @@ _.Zones =
 									},
 								},
 								["coords"] = {
-									{ 51.1, 19.86 },
-									{ 52.4, 18.18 },
-									{ 53.8, 17.46 },
-									{ 47.7, 27.57 },
-									{ 39.0, 26.00 },
-									{ 47.7, 27.57 },
+									{ 51.1, 19.86, 525 },
+									{ 52.4, 18.18, 525 },
+									{ 53.8, 17.46, 525 },
+									{ 47.7, 27.57, 525 },
+									{ 39.0, 26.00, 525 },
+									{ 47.7, 27.57, 525 },
 								},
 								["description"] = "Click on Edge of Reality, get teleported, click on egg for mount.|nIf you are on a realm not of your own when you click on Edge of Reality the mount will be mailed to you as you will not be teleported. |r",
 							},
 							{	-- Firefury Giant
 								["npcID"] = 74971,	-- Firefury Giant
 								["questID"] = 33504,
-								["coord" ] = { 71.54, 46.84 },
+								["coords" ] = {
+									{ 71.54, 46.84, 525 },
+								},
 								["g"] = {
 									i(107661), -- Smoldering Lavacore Orb
 								},
@@ -176,7 +206,9 @@ _.Zones =
 							{	-- Frozen Orc Skeleton
 								["objectID"] = 229367,	-- Frozen Orc Skeleton
 								["questID"] = 34476,
-								["coord"] = { 57.16, 52.12 },
+								["coords"] = {
+									{ 57.16, 52.12, 525 },
+								},
 								["g"] = {
 									i(111554),	-- Rimefrost Fetish
 								},
@@ -186,8 +218,8 @@ _.Zones =
 								["questID"] = 34507,
 								["description"] = "First set of coords is cave entrance, second set it the item.",
 								["coords"] = {
-									{ 25.24, 51.52 },	-- Cave Entrance
-									{ 24.18, 48.60 },	-- Frozen Frostwolf Axe
+									{ 25.24, 51.52, 525 },	-- Cave Entrance
+									{ 24.18, 48.60, 525 },	-- Frozen Frostwolf Axe
 								},
 								["g"] = {
 									i(110689), -- Icebound Frost-Singer Axe
@@ -196,7 +228,9 @@ _.Zones =
 							{	-- Giant-Slayer Kul
 								["npcID"] = 71665,	-- Giant-Slayer Kul
 								["questID"] = 32918,
-								["coord"] = { 54.72, 22.39 },
+								["coords"] = {
+									{ 54.72, 22.39, 525 },
+								},
 								["g"] = {	
 									i(111530),	-- Giantstalker's Guile
 								},
@@ -220,7 +254,9 @@ _.Zones =
 							{	-- Gnawed Bone
 								["objectID"] = 230425,	-- Gnawed Bone
 								["questID"] = 34648,
-								["coord"] = { 25.51, 20.45 },
+								["coords"] = {
+									{ 25.51, 20.45, 525 },
+								},
 								["g"] = {	
 									i(111415),	-- Gnawbone Knife
 								},
@@ -228,7 +264,9 @@ _.Zones =
 							{	-- Gorg'ak the Lava Guzzler	**Coords uncofirmed, relied on wowhead**
 								["npcID"] = 72364,	-- Gorg'ak the Lava Guzzler
 								["questID"] = 33512,
-								["coord"] = { 71.0, 27.4 },
+								["coords"] = {
+									{ 71.0, 27.4, 525 },
+								},
 								["isDaily"] = true,
 								["g"] = {
 									i(111545),	-- Smoldering Fist of Gorg'ak
@@ -237,7 +275,9 @@ _.Zones =
 							{	-- Gorivax <Spawn of the Soulgrinder>	**Coords uncofirmed, relied on wowhead**
 								["npcID"] = 82536,	-- Gorivax <Spawn of the Soulgrinder>
 								["questID"] = 37388,
-								["coord"] = { 38.0, 14.0 },
+								["coords"] = {
+									{ 38.0, 14.0, 525 },
+								},
 								["isDaily"] = true,
 								["description"] = "You need to be on the quest \"Assault on Stonefury Cliffs\".",
 								["g"] = {
@@ -249,8 +289,8 @@ _.Zones =
 							{	-- Gorok	**Coords uncofirmed, relied on wowhead**
 								["npcID"] = 50992,	-- Gorok
 								["coords"] = {
-									{ 64.6, 52.0 },
-									{ 63.4, 79.6 },
+									{ 64.6, 52.0, 525 },
+									{ 63.4, 79.6, 525 },
 								},
 								["g"] = {
 									i(116674), 	-- Great Greytusk Mount
@@ -259,7 +299,9 @@ _.Zones =
 							{	-- Grizzled Frostwolf Veteran
 								["npcID"] = 74585,	-- Grizzled Frostwolf Veteran
 								["questID"] = 33011,
-								["coord"] = { 45.4, 50.3 },
+								["coords"] = {
+									{ 45.4, 50.3, 525 },
+								},
 								["groups"] = {
 									i(106899),	-- Frostwolf Veteran's Keepsake
 								},
@@ -267,7 +309,9 @@ _.Zones =
 							{	-- Grutush the Pillager
 								["npcID"] = 80312,	-- Grutush the Pillager
 								["questID"] = 34865,
-								["coord"] = { 38.72, 62.84 },
+								["coords"] = {
+									{ 38.72, 62.84, 525 },
+								},
 								["g"] = {	
 									i(112077),	-- Grutush's Fur-Padded Pantaloons 
 								},
@@ -275,7 +319,9 @@ _.Zones =
 							{	-- Gruuk
 								["npcID"] = 80190,	-- Gruuk
 								["questID"] = 34825,
-								["coord"] = { 50.4, 52.8 },
+								["coords"] = {
+									{ 50.4, 52.8, 525 },
+								},
 								["g"] = {
 									i(111948),	-- Gruuk's Evil Eye
 								},
@@ -283,7 +329,9 @@ _.Zones =
 							{	-- Gurun
 								["npcID"] = 80235,	-- Gurun
 								["questID"] = 34839,
-								["coord"] = { 47.14, 55.36 },
+								["coords"] = {
+									{ 47.14, 55.36, 525 },
+								},
 								["g"] = {	
 									i(111955), -- Skog's Drape
 								},
@@ -291,7 +339,9 @@ _.Zones =
 							{	-- Hoarfrost <Tempest of Ice>
 								["npcID"] = 87348,	-- Hoarfrost <Tempest of Ice>
 								["questID"] = 37382,
-								["coord"] = { 68.10, 19.88 },
+								["coords"] = {
+									{ 68.10, 19.88, 525 },
+								},
 								["isDaily"] = true,
 								["g"] = {
 									i(119415),	-- Frosted Icequartz Ring
@@ -301,8 +351,8 @@ _.Zones =
 								["npcID"] = 78151,	-- Huntmaster Kuang (Giantstalker Hunting Party)
 								["questID"] = 34130,
 								["coords"] = {
-									{ 58.6, 32.2 },
-									{ 56.4, 38.2 },
+									{ 58.6, 32.2, 525 },
+									{ 56.4, 38.2, 525 },
 								},
 								["crs"] = {
 									78150,	-- Beastcarver Saramor
@@ -315,7 +365,9 @@ _.Zones =
 							{	-- Jabberjaw	**Coords uncofirmed, relied on wowhead**
 								["npcID"] = 82616,	-- Jabberjaw
 								["questID"] = 37386,
-								["coord"] = { 49.0, 24.0 },
+								["coords"] = {
+									{ 49.0, 24.0, 525 },
+								},
 								["isDaily"] = true,
 								["g"] = {	
 									i(119390),	-- Rockworm Carapace Shield 
@@ -324,13 +376,17 @@ _.Zones =
 							{	-- Jaluk the Pacifist	**Coords uncofirmed, relied on wowhead**
 								["npcID"] = 87600,	-- Jaluk the Pacifist
 								["questID"] = 37556,
-								["coord"] = { 85.0, 52.2 },
+								["coords"] = {
+									{ 85.0, 52.2, 525 },
+								},
 								["isDaily"] = true,
 							},
 							{	-- Jehil the Climber
 								["npcID"] = 79678,	-- Jehil the Climber
 								["questID"] = 34708,
-								["coord"] = { 61.76, 26.6 },
+								["coords"] = {
+									{ 61.76, 26.6, 525 },
+								},
 								["g"] = {	
 									i(112078),	-- Jehil's Climbin' Boots
 								},
@@ -338,7 +394,9 @@ _.Zones =
 							{	-- Kaga the Ironbender	**Coords uncofirmed, relied on wowhead**
 								["npcID"] = 84374,	-- Kaga the Ironbender
 								["questID"] = 37404,
-								["coord"] = { 86.8, 46.6 },
+								["coords"] = {
+									{ 86.8, 46.6, 525 },
+								},
 								["isDaily"] = true,
 								["g"] = {	
 									i(119372),	-- Ironstudded Scale Girdle 
@@ -347,7 +405,9 @@ _.Zones =
 							{	-- Lagoon Pool
 								["objectID"] = 226967,	-- Lagoon Pool
 								["questID"] = 33926,
-								["coord"] = { 21.74, 9.61 },
+								["coords"] = {
+									{ 21.74, 9.61, 525 },
+								},
 								["requireSkill"] = 356,	-- Fishing
 								["model"] = "World\\Dungeon\\WellofEternity\\WOE_Fountain_Pool.mdx",
 								["modelScale"] = 10,
@@ -360,7 +420,9 @@ _.Zones =
 							{	-- Moltnoma
 								["npcID"] = 82614,	-- Moltnoma
 								["questID"] = 37387,
-								["coord"] = { 42.45, 21.75 },
+								["coords"] = {
+									{ 42.45, 21.75, 525 },
+								},
 								["isDaily"] = true,
 								["g"] = {	
 									i(119356),	-- Moltnoma's Magma Mantle 
@@ -369,7 +431,9 @@ _.Zones =
 							{	-- Mother of Goren	**Coords uncofirmed, relied on wowhead**
 								["npcID"] = 87351,	-- Mother of Goren
 								["questID"] = 37381,
-								["coord"] = { 72.6, 22.6 },
+								["coords"] = {
+									{ 72.6, 22.6, 525 },
+								},
 								["isDaily"] = true,
 								["g"] = {	
 									i(119376),	-- Three-Egg Pendant Necklace 
@@ -377,7 +441,9 @@ _.Zones =
 							},
 							{	-- Nok-Karosh <Warrior's Death>
 								["npcID"] = 81001,	-- Nok-Karosh <Warrior's Death>
-								["coords"] = { 13.1, 50.4 },
+								["coords"] = {
+									{ 13.1, 50.4, 525 },
+								},
 								["g"] = { 
 									i(116794), 	-- Garn Nighthowl Mount boe
 								},
@@ -387,8 +453,8 @@ _.Zones =
 								["questID"] = 37402,
 								["isDaily"] = true,
 								["coords"] = {
-									{ 84.4, 48.0 },
-									{ 86.6, 48.6 },
+									{ 84.4, 48.0, 525 },
+									{ 86.6, 48.6, 525 },
 								},
 								["g"] = {	
 									i(119366),	-- Ogom's Manacles 
@@ -397,12 +463,16 @@ _.Zones =
 							{	-- Pale Fishmonger
 								["npcID"] = 78606,	-- Pale Fishmonger
 								["questID"] = 34470,
-								["coord"] = { 28.29, 66.63 },
+								["coords"] = {
+									{ 28.29, 66.63, 525 },
+								},
 							},
 							{	-- Primalist Mur'og
 								["npcID"] = 76918,	-- Primalist Mur'og
 								["questID"] = 33938,
-								["coord"] = { 36.96, 33.83 },
+								["coords"] = {
+									{ 36.96, 33.83, 525 },
+								},
 								["g"] = {	
 									i(111576), 	-- Ritual Leggings of Mur'og
 								},
@@ -410,7 +480,9 @@ _.Zones =
 							{	-- Ragore Driftstalker	**Coords uncofirmed, relied on wowhead**
 								["npcID"] = 84392,	-- Ragore Driftstalker
 								["questID"] = 37401,
-								["coord"] = { 86.8, 49.0 },
+								["coords"] = {
+									{ 86.8, 49.0, 525 },
+								},
 								["isDaily"] = true,
 								["g"] = {
 									i(119359),	-- Tunic of the Driftstalker 
@@ -419,7 +491,9 @@ _.Zones =
 							{	-- Scout Goreseeker
 								["npcID"] = 77526,	-- Scout Goreseeker
 								["questID"] = 34132,
-								["coord"] = { 76.57, 63.54 },
+								["coords"] = {
+									{ 76.57, 63.54, 525 },
+								},
 								["g"] = {
 									i(112094), 	-- Goreseeker's Goresplattered Garb
 								},
@@ -427,7 +501,9 @@ _.Zones =
 							{	-- Slogtusk the Corpse-Eater
 								["npcID"] = 82617,	-- Slogtusk the Corpse-Eater
 								["questID"] = 37385,
-								["coord"] = { 44.60, 15.24 },
+								["coords"] = {
+									{ 44.60, 15.24, 525 },
+								},
 								["isDaily"] = true,
 								["g"] = {
 									i(119362),	-- Frostboar Leather Helmet 
@@ -436,7 +512,9 @@ _.Zones =
 							{	-- Son of Goramal	**Coords uncofirmed, relied on wowhead**
 								["npcID"] = 82620,	-- Son of Goramal
 								["questID"] = 37383,
-								["coord"] = { 38.4, 16.4 },
+								["coords"] = {
+									{ 38.4, 16.4, 525 },
+								},
 								["isDaily"] = true,
 								["g"] = {
 									i(119399),	-- Cudgel of the Son of Goramal 
@@ -445,7 +523,9 @@ _.Zones =
 							{	-- The Beater <Champion of the Circle of Blood>
 								["npcID"] = 77527,	-- The Beater <Champion of the Circle of Blood>
 								["questID"] = 34133,
-								["coord"] = { 26.91, 31.90 },
+								["coords"] = {
+									{ 26.91, 31.90, 525 },
+								},
 								["g"] = {
 									i(111475), 	-- Beater's Beat Stick
 								},
@@ -453,7 +533,9 @@ _.Zones =
 							{	-- The Bone Crawler	**Coords uncofirmed, relied on wowhead**
 								["npcID"] = 78265,	-- The Bone Crawler
 								["questID"] = 34361,
-								["coord"] = { 72.2, 33.0 },
+								["coords"] = {
+									{ 72.2, 33.0, 525 },
+								},
 								["isDaily"] = true,
 								["g"] = {	
 									i(111534),	-- The Bone Crawler's Carapace 
@@ -462,7 +544,9 @@ _.Zones =
 							{	-- Thunderlord Cache
 								["objectID"] = 220641,	-- Thunderlord Cache
 								["questID"] = 32803,
-								["coord"] = { 34.20, 23.47 },
+								["coords"] = {
+									{ 34.20, 23.47, 525 },
+								},
 								["modelID"] = 65118,
 								["g"] = {
 									i(107658), -- Thunderlord Longspear
@@ -471,7 +555,9 @@ _.Zones =
 							{	-- Tor'goroth <The Soul-Gorger>
 								["npcID"] = 82618,	-- Tor'goroth <The Soul-Gorger>
 								["questID"] = 37384,
-								["coord"] = { 43.47, 8.89 },
+								["coords"] = {
+									{ 43.47, 8.89, 525 },
+								},
 								["isDaily"] = true,
 								["g"] = {	
 									i(119163),	-- Soul Inhaler Toy
@@ -481,7 +567,9 @@ _.Zones =
 							{	-- Ug'lok the Frozen	**Coords uncofirmed, relied on wowhead**
 								["npcID"] = 79104,	-- Ug'lok the Frozen
 								["questID"] = 34522,
-								["coord"] = { 40.4, 12.6 },
+								["coords"] = {
+									{ 40.4, 12.6, 525 },
+								},
 								["isDaily"] = true,
 								["g"] = {	
 									un(1, i(119409, { -- Icebound Bloodmaul Spire
@@ -494,21 +582,25 @@ _.Zones =
 								["questID"] = 37378,
 								["isDaily"] = true,
 								["coords"] = {
-									{ 68.8, 29.0 },
-									{ 72.0, 24.0 },
-									{ 71.6, 28.6 },
+									{ 68.8, 29.0, 525 },
+									{ 72.0, 24.0, 525 },
+									{ 71.6, 28.6, 525 },
 								},
 							},
 							{	-- Vrok the Ancient	**Coords uncofirmed, relied on wowhead**
 								["npcID"] = 87356,	-- Vrok the Ancient
 								["questID"] = 37379,
 								["isDaily"] = true,
-								["coord"] = { 70.6, 39.0 },
+								["coords"] = {
+									{ 70.6, 39.0, 525 },
+								},
 							},
 							{	-- Wiggling Egg
 								["objectID"] = 224623,	-- Wiggling Egg
 								["questID"] = 33505,
-								["coord"] = { 64.37, 65.87 },
+								["coords"] = {
+									{ 64.37, 65.87, 525 },
+								},
 								["g"] = {
 									i(112107, {	-- Mysterious Egg
 										["description"] = "This egg will hatch after 3 days to give you the Fruit Hunter pet.",
@@ -521,7 +613,9 @@ _.Zones =
 							{	-- Yaga the Scarred
 								["npcID"] = 79145,	-- Yaga the Scarred
 								["questID"] = 34559,
-								["coord"] = { 40.57, 27.58 },
+								["coords"] = {
+									{ 40.57, 27.58, 525 },
+								},
 								["g"] = {
 									i(111477),	-- Yaga's Trophy Belt
 								},
