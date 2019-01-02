@@ -77,6 +77,9 @@ _.WorldDrops =
 						["itemID"] = 23623,	-- Plans: Storm Helm
 					},
 				}),
+				n(-350, {	-- Class Books
+					i(22153),	-- Tome of Arcane Brilliance Rank2 -- Only drops from Elites, irrelevant information for live as its a grey item.
+				}),
 				n(-186, { 	-- Jewelcrafting
 					i(24193),	-- Design: Bold Living Ruby
 					i(24168),	-- Design: Braided Eternium Chain

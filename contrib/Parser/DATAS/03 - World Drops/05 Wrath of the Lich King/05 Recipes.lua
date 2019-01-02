@@ -10,6 +10,9 @@ _.WorldDrops =
 				n(-180, {	-- Alchemy
 					un(1, i(112022)),	-- Recipe: Mighty Shadow Protection Potion
 				}),
+				n(-350, {	-- Class Books
+					i(22153),	-- Tome of Arcane Brilliance Rank 2 -- Only drops from Elites, irrelevant information for live as its a grey item.
+				}),
 				n(-185, { 	-- Inscription
 					i(45912),	-- Book of Glyph Mastery
 				}),
