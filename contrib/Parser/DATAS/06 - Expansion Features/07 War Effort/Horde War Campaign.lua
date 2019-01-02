@@ -12,6 +12,9 @@ _.ExpansionFeatures =
 			{	-- Ready for War
 				["achievementID"] = 12509,	-- Ready for War
 				["races"] = HORDE_ONLY,
+				["maps"] = {
+					1156,	-- The Great Sea
+				},
 				["lvl"] = 110,
 				--["maps"] = {
 				--	1161,	--  Boralus
