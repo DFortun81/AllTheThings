@@ -17,8 +17,8 @@ _.Zones =
 								["npcID"] = 77140,	-- Amaukwa
 								["questID"] = 33061,
 								["coords"] = {
-									{ 29.4, 29.8 },
-									{ 41.4, 32.8 },
+									{ 29.4, 29.8, 539 },
+									{ 41.4, 32.8, 539 },
 								},
 								["description"] = "Flies in a roughly oval pattern between the two coords.",
 								["g"] = {	
@@ -28,7 +28,9 @@ _.Zones =
 							{	-- Ancestral Greataxe
 								["objectID"] = 232596,	-- Ancestral Greataxe
 								["questID"] = 35584,
-								["coord"] = { 52.8, 48.5 },	
+								["coords"] = {
+									{ 52.8, 48.5, 539 },
+								},
 								["g"] = {
 									i(113560),	-- Ancestral Shadowmoon Greataxe
 								},
@@ -37,7 +39,9 @@ _.Zones =
 								["npcID"] = 86212,	-- Aqualir
 								["questID"] = 37356,
 								["isDaily"] = true,
-								["coord"] = { 50.8, 79.0 },
+								["coords"] = {
+									{ 50.8, 79.0, 539 },
+								},
 								["g"] = {
 									i(119387),	-- Loop of Drowned Souls
 								},
@@ -45,7 +49,9 @@ _.Zones =
 							{	-- Armored Elekk Tusk
 								["objectID"] = 226854,	-- Armored Elekk Tusk
 								["questID"] = 33869,
-								["coord"] = { 41.5, 27.9 },
+								["coords"] = {
+									{ 41.5, 27.9, 539 },
+								},
 								["g"] = {
 									i(108902),	-- Armored Elekk Tusk
 								},
@@ -53,7 +59,9 @@ _.Zones =
 							{	-- Astrologer's Box	**Coords uncofirmed, relied on wowhead**
 								["objectID"] = 226831,	-- Astrologer's Box 
 								["questID"] = 33867,
-								["coord"] = { 49.5, 37.5 },	
+								["coords"] = {
+									{ 49.5, 37.5, 539 },
+								},
 								["description"] = "If this is not showing up for you on Alliance, you will need to complete the quests in the area first, then move to a new map area and back in to see the treasure.",
 								["g"] = {	
 									i(109739), -- Star Chart Toy
@@ -61,7 +69,9 @@ _.Zones =
 							},
 							{	-- Avalanche
 								["npcID"] = 85568,	-- Avalanche
-								["coord"] = { 67.2, 84.6 },
+								["coords"] = {
+									{ 67.2, 84.6, 539 },
+								},
 								["g"] = {		
 									i(119400), 	-- Rugged Crystal Cudgel 
 								},
@@ -69,7 +79,9 @@ _.Zones =
 							{	-- Ba'ruun 
 								["npcID"] = 82326,	-- Ba'ruun 
 								["questID"] = 35731,
-								["coord"] = { 52.8, 16.6 },
+								["coords"] = {
+									{ 52.8, 16.6, 539 },
+								},
 								["g"] = {	
 									i(113540), -- Ba'ruun's Bountiful Bloom Toy 
 								},
@@ -77,12 +89,16 @@ _.Zones =
 							{	-- Bahameye	-- drops meat but no gear other than world drops
 								["npcID"] = 81406,
 								["questID"] = 35281,
-								["coord"] = { 29.8, 6.8 },
+								["coords"] = {
+									{ 29.8, 6.8, 539 },
+								},
 							},
 							{	-- Beloved's Offering 
 								["objectID"] = 232591,	-- Beloved's Offering 
 								["questID"] = 33046,
-								["coord"] = { 36.8, 41.5 },
+								["coords"] = {
+									{ 36.8, 41.5, 539 },
+								},
 								["g"] = {	
 									i(113547),	-- Bouquet of Dried Flowers
 								},
@@ -90,7 +106,9 @@ _.Zones =
 							{	-- Brambleking Fili
 								["npcID"] = 81639,	-- Brambleking Fili
 								["questID"] = 33383,
-								["coord"] = { 44.8, 77.2 },
+								["coords"] = {
+									{ 44.8, 77.2, 539 },
+								},
 								["g"] = {	
 									i(117551),	-- Staff of the One True Bramble King 
 								},
@@ -98,7 +116,9 @@ _.Zones =
 							{	-- Bubbling Cauldron
 								["objectID"] = 224228,	-- Bubbling Cauldron
 								["questID"] = 33613,
-								["coord"] = { 37.17, 23.13 },
+								["coords"] = {
+									{ 37.17, 23.13, 539 },
+								},
 								["g"] = {	
 									i(108945), -- Void-Boiled Squirrel
 								},
@@ -106,7 +126,9 @@ _.Zones =
 							{	-- Dark Emanation
 								["npcID"] = 77085,	-- Dark Emanation
 								["questID"] = 33064,
-								["coord"] = { 48.6, 43.6 },
+								["coords"] = {
+									{ 48.6, 43.6, 539 },
+								},
 								["g"] = {	
 									i(109075),	-- Abberant's Paw 
 								},
@@ -115,8 +137,8 @@ _.Zones =
 								["npcID"] = 82268,	-- Darkmaster Go'vid
 								["questID"] = 35448,
 								["coords"]= {
-									{ 39.4, 83.0 },
-									{ 42.2, 83.8 },
+									{ 39.4, 83.0, 539 },
+									{ 42.2, 83.8, 539 },
 								},
 								["g"] = {	
 									i(113548), -- Darktide Summoner Staff 
@@ -125,7 +147,9 @@ _.Zones =
 							{	-- Darktalon
 								["npcID"] = 82411,	-- Darktalon
 								["questID"] = 35555,
-								["coord"] = { 49.6, 42.0 },
+								["coords"] = {
+									{ 49.6, 42.0, 539 },
+								},
 								["g"] = {	
 									i(113541),	-- Darktalon's Drape 
 								},
@@ -148,7 +172,9 @@ _.Zones =
 								["npcID"] = 84911,	-- Demidos <Devourer of Lights>
 								["questID"] = 37351,
 								["isDaily"] = true,
-								["coord"]= { 46.0, 71.8 },
+								["coords"]= {
+									{ 46.0, 71.8, 539 },
+								},
 								["g"] = {
 									i(119431), 	-- Servant of Demidos Pet
 									i(119377),	-- Void-Touched Diamond Necklace
@@ -157,7 +183,9 @@ _.Zones =
 							{	-- Demonic Cache
 								["objectID"] = 224785,	-- Demonic Cache
 								["questID"] = 33575,
-								["coord"] = { 20.3, 30.6 },
+								["coords"] = {
+									{ 20.3, 30.6, 539 },
+								},
 								["g"] = {
 									i(108904),	-- Fingers of the Void
 								},
@@ -168,8 +196,8 @@ _.Zones =
 								["modelID"] = 34286,
 								["description"] = "Go up the path and jump on the standing stones, follow them acros to the second set of coords.",
 								["coords"] = {
-									{ 28, 38.5 },	-- Path up starts
-									{ 29.8, 37.5 },	-- Dusty Lockbox
+									{ 28, 38.5, 539 },	-- Path up starts
+									{ 29.8, 37.5, 539 },	-- Dusty Lockbox
 								},
 								["g"] = {
 									-- Weapons
@@ -237,13 +265,13 @@ _.Zones =
 							{	-- Edge of Reality	**Coords uncofirmed, relied on wowhead**
 								["objectID"] = 239828,	-- Edge of Reality
 								["coords"] = {
-									{ 41.90, 75.70 },
-									{ 43.79, 70.96 },
-									{ 48.95, 70.26 },
-									{ 50.33, 71.53 },
-									{ 49.60, 71.60 },
-									{ 50.90, 72.50 },
-									{ 51.68, 74.85 },
+									{ 41.90, 75.70, 539 },
+									{ 43.79, 70.96, 539 },
+									{ 48.95, 70.26, 539 },
+									{ 50.33, 71.53, 539 },
+									{ 49.60, 71.60, 539 },
+									{ 50.90, 72.50, 539 },
+									{ 51.68, 74.85, 539 },
 								},
 								["description"] = "Click on Edge of Reality, get teleported, click on egg for mount.|nIf you are on a realm not of your own when you click on Edge of Reality the mount will be mailed to you as you will not be teleported. |r",
 								["g"] = {
@@ -260,7 +288,9 @@ _.Zones =
 							{	-- Faebright
 								["npcID"] = 82207,	-- Faebright
 								["questID"] = 35725,
-								["coord"] = { 61.6, 61.8 },
+								["coords"] = {
+									{ 61.6, 61.8, 539 },
+								},
 								["g"] = {	
 									i(113557),	-- Dragonrider's Tinkered Leggings 
 								},
@@ -268,7 +298,9 @@ _.Zones =
 							{	-- Giant Moonwillow Cone
 								["objectID"] = 226862,	-- Giant Moonwillow Cone
 								["questID"] = 33891,
-								["coord"] = { 34.5, 46.2 },	
+								["coords"] = {
+									{ 34.5, 46.2, 539 },
+								},
 								["g"] = {	
 									i(108901),	-- Moonwillow Wand
 								},
@@ -276,7 +308,9 @@ _.Zones =
 							{	-- Gorum
 								["npcID"] = 76380,	-- Gorum
 								["questID"] = 33664,
-								["coord"] = { 33.2, 35.2 },
+								["coords"] = {
+									{ 33.2, 35.2, 539 },
+								},
 								["g"] = {
 									i(113082),	-- Precious Bloodthorn Loop
 								},
@@ -284,7 +318,9 @@ _.Zones =
 							{	-- Greka's Urn
 								["objectID"] = 232588,	-- Greka's Urn
 								["questID"] = 33614,
-								["coord"] = { 38.5, 43.0 },
+								["coords"] = {
+									{ 38.5, 43.0, 539 },
+								},
 								["g"] = {
 									i(113408),	-- Greka's Dentures
 								},
@@ -292,7 +328,9 @@ _.Zones =
 							{	-- Hanging Satchel
 								["objectID"] = 224750,	-- Hanging Satchel
 								["questID"] = 33564,
-								["coord"] = { 47.1, 46.1 },	
+								["coords"] = {
+									{ 47.1, 46.1, 539 },
+								},
 								["g"] = {	
 									i(108900),	-- Cragsman Gloves
 								},
@@ -300,7 +338,9 @@ _.Zones =
 							{	-- Hypnocroak
 								["npcID"] = 79524,	-- Hypnocroak
 								["questID"] = 35558,
-								["coord"] = { 37.6, 49.0 },
+								["coords"] = {
+									{ 37.6, 49.0, 539 },
+								},
 								["g"] = {	
 									i(113631), -- Hypnosis Goggles Toy
 								},
@@ -308,7 +348,9 @@ _.Zones =
 							{	-- Insha'tar
 								["npcID"] = 83553,	-- Insha'tar
 								["questID"] = 35909,
-								["coord"] = { 57.4, 48.6 },
+								["coords"] = {
+									{ 57.4, 48.6, 539 },
+								},
 								["g"] = {	
 									i(113571), -- Boots of the Shadowborn
 								},
@@ -316,7 +358,9 @@ _.Zones =
 							{	-- Iron Horde Tribute	**Coords uncofirmed, relied on wowhead**
 								["objectID"] = 224755,	-- Iron Horde Tribute
 								["questID"] = 33567,
-								["coord"] = { 37.5, 59.3 },
+								["coords"] = {
+									{ 37.5, 59.3, 539 },
+								},
 								["g"] = {
 									i(108903),	--Tiny Iron Star
 								},
@@ -324,7 +368,9 @@ _.Zones =
 							{	-- Killmaw
 								["npcID"] = 74206,	-- Killmaw
 								["questID"] = 33043,
-								["coord"] = { 40.8, 44.4 },
+								["coords"] = {
+									{ 40.8, 44.4, 539 },
+								},
 								["g"] = {	
 									i(109078),	-- Killmaw's Canine 
 								},
@@ -332,7 +378,9 @@ _.Zones =
 							{	-- Ku'targ the Voidseer
 								["npcID"] = 72362,	-- Ku'targ the Voidseer
 								["questID"] = 33039,
-								["coord"] = { 32.2, 35.0 },
+								["coords"] = {
+									{ 32.2, 35.0, 539 },
+								},
 								["g"] = {	
 									i(109061),	-- Ku'targ's Merciless Grips 
 								},
@@ -342,7 +390,9 @@ _.Zones =
 								["questID"] = 37355,
 								["isDaily"] = true,
 								["description"] = "Only appears when Assault on Socrethar's Rise is active.",
-								["coord"] = { 48.0, 77.6 },
+								["coords"] = {
+									{ 48.0, 77.6, 539 },
+								},
 								["g"] = {	
 									i(119360),	-- Temptessa's Knee-High Boots 
 								},
@@ -350,7 +400,9 @@ _.Zones =
 							{	-- Leaf-Reader Kurri
 								["npcID"] = 72537,	-- Leaf-Reader Kurri
 								["questID"] = 33055,
-								["coord"] = { 37.4, 14.4 },
+								["coords"] = {
+									{ 37.4, 14.4, 539 },
+								},
 								["g"] = {
 									i(108907),	-- Mushroom of Destiny
 								},
@@ -358,7 +410,9 @@ _.Zones =
 							{	-- Mad "King" Sporeon
 								["npcID"] = 77310,	-- Mad "King" Sporeon
 								["questID"] = 35906,
-								["coord"] = { 44.8, 20.8 },
+								["coords"] = {
+									{ 44.8, 20.8, 539 },
+								},
 								["g"] = {	
 									i(113561),	-- Staff of the Mad Bramble King 
 								},
@@ -367,7 +421,9 @@ _.Zones =
 								["npcID"] = 85451,	-- Malgosh Shadowkeeper
 								["questID"] = 37357,
 								["isDaily"] = true,
-								["coord"] = { 29.6, 51.0 },
+								["coords"] = {
+									{ 29.6, 51.0, 539 },
+								},
 								["g"] = {	
 									i(119369), -- Malgosh's Coif 
 								},
@@ -377,8 +433,8 @@ _.Zones =
 								["questID"] = 37353,
 								["isDaily"] = true,
 								["coords"] = {
-									{ 51.6, 77.2 },
-									{ 52.0, 79.6 },
+									{ 51.6, 77.2, 539 },
+									{ 52.0, 79.6, 539 },
 								},
 								["g"] = {	
 									i(119368),	-- Milgra's Mighty Mitts 
@@ -387,7 +443,9 @@ _.Zones =
 							{	-- Morva Soultwister
 								["npcID"] = 82362,	-- Morva Soultwister
 								["questID"] = 35523,
-								["coord"] = { 38.6, 70.6 },
+								["coords"] = {
+									{ 38.6, 70.6, 539 },
+								},
 								["g"] = {	
 									i(113559),	-- Void Prophecy Cudgel 
 								},
@@ -395,7 +453,9 @@ _.Zones =
 							{	-- Mother Om'ra
 								["npcID"] = 75071,	-- Mother Om'ra
 								["questID"] = 33642,
-								["coord"] = { 44.0, 57.4 },
+								["coords"] = {
+									{ 44.0, 57.4, 539 },
+								},
 								["g"] = {
 									i(113527),	-- Legacy of Om'ra
 								},
@@ -404,7 +464,9 @@ _.Zones =
 								["npcID"] = 85555,	-- Nagidna
 								["questID"] = 37409,
 								["isDaily"] = true,
-								["coord"] = { 60.7, 89.9 },
+								["coords"] = {
+									{ 60.7, 89.9, 539 },
+								},
 								["g"] = {	
 									i(119364),	-- Hydraskin Shoulderguards
 								},
@@ -412,7 +474,9 @@ _.Zones =
 							{	-- Orc Skeleton
 								["objectID"] = 235860,	-- Orc Skeleton
 								["questID"] = 36507,
-								["coord"] = { 67.0, 33.5 },
+								["coords"] = {
+									{ 67.0, 33.5, 539 },
+								},
 								["g"] = {
 									i(116875),	-- Rusty Iron Band
 								},
@@ -420,12 +484,12 @@ _.Zones =
 							{	-- Pathrunner	**Coords uncofirmed, relied on wowhead**
 								["npcID"] = 50883,	-- Pathrunner
 								["coords"] = {
-									{ 45.8, 68.2 },
-									{ 56.8, 52.2 },
-									{ 54.0, 30.8 },
-									{ 43.0, 31.6 },
-									{ 39.6, 36.8 },
-									{ 44.6, 43.6 },
+									{ 45.8, 68.2, 539 },
+									{ 56.8, 52.2, 539 },
+									{ 54.0, 30.8, 539 },
+									{ 43.0, 31.6, 539 },
+									{ 39.6, 36.8, 539 },
+									{ 44.6, 43.6, 539 },
 								},
 								["g"] = {
 									i(116773), 	-- Swift Breezestrider Mount
@@ -435,7 +499,9 @@ _.Zones =
 								["npcID"] = 84925,	-- Quartermaster Hershak
 								["questID"] = 37352,
 								["isDaily"] = true,
-								["coord"] = { 50.2, 72.6 },
+								["coords"] = {
+									{ 50.2, 72.6, 539 },
+								},
 								["g"] = {	
 									i(119382), 	-- Hershak's Heavy Legguards
 								},
@@ -443,7 +509,9 @@ _.Zones =
 							{	-- Rai'vosh
 								["npcID"] = 82374,	-- Rai'vosh
 								["questID"] = 35553,
-								["coord"] = { 48.8, 22.4 },
+								["coords"] = {
+									{ 48.8, 22.4, 539 },
+								},
 								["g"] = {	
 									i(113542), -- Whispers of Rai'Vosh Toy
 								},
@@ -451,7 +519,9 @@ _.Zones =
 							{	-- Rockhoof
 								["npcID"] = 72606,	-- Rockhoof
 								["questID"] = 34068,
-								["coord"] = { 52.8, 50.8 },
+								["coords"] = {
+									{ 52.8, 50.8, 539 },
+								},
 								["g"] = {	
 									i(109077),	-- Rockhoof's Crest
 								},
@@ -459,7 +529,9 @@ _.Zones =
 							{	-- Ronokk's Belongings
 								["objectID"] = 226861,	-- Ronokk's Belongings
 								["questID"] = 33886,
-								["coord"] = { 31.3, 39.1 },
+								["coords"] = {
+									{ 31.3, 39.1, 539 },
+								},
 								["modelID"] = 34286,
 								["g"] = {
 									i(109081), -- Ronokk's Greatcloak
@@ -468,7 +540,9 @@ _.Zones =
 							{	-- Rovo's Dagger
 								["objectID"] = 232586,	-- Rovo's Dagger
 								["questID"] = 33573,
-								["coord"] = { 36.7, 44.5 },	
+								["coords"] = {
+									{ 36.7, 44.5, 539 },
+								},
 								["g"] = {	
 									i(113378),	-- Rovo's Dagger
 								},
@@ -476,7 +550,9 @@ _.Zones =
 							{	-- Shadowmoon Sacrificial Dagger
 								["objectID"] = 224780,	-- Shadowmoon Sacrificial Dagger
 								["questID"] = 35919,
-								["coord"] = { 30.0, 45.5 },
+								["coords"] = {
+									{ 30.0, 45.5, 539 },
+								},
 								["g"] = {	
 									i(113563), -- Shadowmoon Sacrificial Dagger
 								},
@@ -485,7 +561,9 @@ _.Zones =
 								["npcID"] = 85029,	-- Shadowspeaker Niir
 								["questID"] = 37354,
 								["isDaily"] = true,
-								["coord"] = { 48.2, 80.8 },
+								["coords"] = {
+									{ 48.2, 80.8, 539 },
+								},
 								["g"] = {	
 									i(119396),	-- Shadowspeaker's Shard 
 								},
@@ -502,7 +580,9 @@ _.Zones =
 								["npcID"] = 85837,	-- Slivermaw
 								["questID"] = 37411,
 								["isDaily"] = true,
-								["coord"] = { 61.7, 89.0 },
+								["coords"] = {
+									{ 61.7, 89.0, 539 },
+								},
 								["g"] = {	
 									i(119411),	-- Massive Rockworm Fang
 								},
@@ -510,7 +590,9 @@ _.Zones =
 							{	-- Sneevel
 								["npcID"] = 86689,	-- Sneevel
 								["questID"] = 36880,
-								["coord"] = { 27.6, 43.6 },
+								["coords"] = {
+									{ 27.6, 43.6, 539 },
+								},
 								["g"] = {	
 									i(118734),	-- Sneevel's Loincloth 
 								},
@@ -518,7 +600,9 @@ _.Zones =
 							{	-- Strange Spore 
 								["objectID"] = 232621,	-- Strange Spore 
 								["questID"] = 35600,
-								["coord"] = { 55.8, 19.9 },
+								["coords"] = {
+									{ 55.8, 19.9, 539 },
+								},
 								["g"] = {	
 									i(118104), 	-- Umbrafen Spore Pet
 								},
@@ -526,7 +610,9 @@ _.Zones =
 							{	-- Swamplighter Hive
 								["npcID"] = 82366,	-- Swamplighter Hive
 								["questID"] = 35580,
-								["coord"] = { 55.3, 74.8 },
+								["coords"] = {
+									{ 55.3, 74.8, 539 },
+								},
 								["g"] = {	
 									i(117550), -- Angry Beehive Toy
 								},
@@ -534,7 +620,9 @@ _.Zones =
 							{	-- Uzko's Knickknacks
 								["objectID"] = 232587,	-- Uzko's Knickknacks
 								["questID"] = 33540,
-								["coord"] = { 35.9, 40.9 },
+								["coords"] = {
+									{ 35.9, 40.9, 539 },
+								},
 								["g"] = {	
 									i(113546),	-- Uzko's Dusty Boots
 								},
@@ -542,7 +630,9 @@ _.Zones =
 							{	-- Veloss
 								["npcID"] = 75482,	-- Veloss
 								["questID"] = 33640,
-								["coord"] = { 21.6, 20.8 },
+								["coords"] = {
+									{ 21.6, 20.8, 539 },
+								},
 								["g"] = {
 									i(108906),	-- Sporebat Larval Pod
 								},
@@ -550,7 +640,9 @@ _.Zones =
 							{	-- Venomshade
 								["npcID"] = 75492,	-- Venomshade
 								["questID"] = 33643,
-								["coord"] = { 54.6, 70.2 },
+								["coords"] = {
+									{ 54.6, 70.2, 539 },
+								},
 								["g"] = {	
 									i(108957),	-- Venomshade Skin Boots 
 								},
@@ -558,7 +650,9 @@ _.Zones =
 							{	-- Vindicator's Cache
 								["objectID"] = 224784,	-- Vindicator's Cache 
 								["questID"] = 33574,
-								["coord"] = { 51.1, 79.1 },
+								["coords"] = {
+									{ 51.1, 79.1, 539 },
+								},
 								["g"] = {	
 									i(113375), -- Vindicator's Armor Polish Kit Toy
 								},
@@ -566,7 +660,9 @@ _.Zones =
 							{	-- Voidseer Kalurg
 								["npcID"] = 83385,	-- Voidseer Kalurg
 								["questID"] = 35847,
-								["coord"] = { 32.6, 41.6 },
+								["coords"] = {
+									{ 32.6, 41.6, 539 },
+								},
 								["g"] = {	
 									i(109074),	-- Fine Void-Chain Cinch 
 								},
@@ -574,7 +670,9 @@ _.Zones =
 							{	-- Waterlogged Chest
 								["objectID"] = 224754,	-- Waterlogged Chest
 								["questID"] = 33566,
-								["coord"] = { 39.2, 83.9 },	
+								["coords"] = {
+									{ 39.2, 83.9, 539 },
+								},
 								["g"] = {	
 									i(113372),	-- Darktide Pincer
 								},
@@ -582,7 +680,9 @@ _.Zones =
 							{	-- Embaari Defense Crystal (Windfang Matriarch) (Alliance)
 								["npcID"] = 75434,	-- Embaari Defense Crystal (Windfang Matriarch) (Alliance)
 								["questID"] = 33038,
-								["coord"] = { 42.8, 40.4 },
+								["coords"] = {
+									{ 42.8, 40.4, 539 },
+								},
 								["description"] = "|cff66ccffSpeak with Romuul to start the event that spawns Wildfang Matriarch. |r",
 								["races"] = ALLIANCE_ONLY,
 								["g"] = {
@@ -593,8 +693,8 @@ _.Zones =
 								["npcID"] = 75435,	-- Yggdrel
 								["questID"] = 33389,
 								["coords"] = {
-									{ 48.6, 64.2 },
-									{ 48.6, 66.6 },
+									{ 48.6, 64.2, 539 },
+									{ 48.6, 66.6, 539 },
 								},
 								["g"] = {	
 									i(113570), -- Ancient's Bloom Toy

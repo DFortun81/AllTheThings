@@ -530,11 +530,11 @@ _.Zones =
 									i(111475), 	-- Beater's Beat Stick
 								},
 							},
-							{	-- The Bone Crawler	**Coords uncofirmed, relied on wowhead**
+							{	-- The Bone Crawler	**Coords confirmed by Eckhardt**
 								["npcID"] = 78265,	-- The Bone Crawler
 								["questID"] = 34361,
 								["coords"] = {
-									{ 72.2, 33.0, 525 },
+									{ 72.42, 33.08, 525 },
 								},
 								["isDaily"] = true,
 								["g"] = {	

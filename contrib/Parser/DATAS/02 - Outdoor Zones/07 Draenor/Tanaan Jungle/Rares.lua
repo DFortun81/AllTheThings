@@ -17,7 +17,9 @@ _.Zones =
 								["npcID"] = 91871,	-- Argosh the Destroyer
 								["questID"] = 38430,
 								["isDaily"] = true,	
-								["coord"] = { 52.6, 40.6 },
+								["coords"] = {
+									{ 52.6, 40.6, 534 },
+								},
 								["g"] = {
 									i(127326), -- Fel Destroyer Crossbow 
 								},
@@ -25,7 +27,9 @@ _.Zones =
 							{	-- Axe of the Weeping Wolf
 								["objectID"] = 241692,	-- Axe of the Weeping Wolf
 								["questID"] = 38754,
-								["coord"] = { 14.97, 54.42 },
+								["coords"] = {
+									{ 14.97, 54.42, 534 },
+								},
 								["g"] = {
 									i(127325),	-- Axe of the Weepiong Wolf
 								},
@@ -34,7 +38,9 @@ _.Zones =
 								["npcID"]=  92552,	-- Belgork
 								["questID"] = 38609,
 								["isDaily"] = true,
-								["coord"] = { 35.6, 46.8 },
+								["coords"] = {
+									{ 35.6, 46.8, 534 },
+								},
 								["g"] = {
 									i(127650), 	-- Belgork's Bastion 
 									i(126950, { -- Equipment Blueprint: Bilge Pump
@@ -46,7 +52,9 @@ _.Zones =
 								["npcID"] = 90884,	-- Bilkor the Thrower
 								["questID"] = 38262,
 								["isDaily"] = true,
-								["coord"] = { 23.6, 52.0 },
+								["coords"] = {
+									{ 23.6, 52.0, 534 },
+								},
 								["g"] = {
 									i(127307), 	-- Battle-Scuffed Spaulders 
 								},
@@ -57,8 +65,8 @@ _.Zones =
 								["isDaily"] = true,
 								["description"] = "First set of coords are cave entrance, second set are npc.",
 								["coords"] = {
-									{ 44.6, 77.5 },		-- Cave Entrance
-									{ 50.89, 74.26 },	-- Bleeding Hollow Horror	
+									{ 44.6, 77.5, 534 },		-- Cave Entrance
+									{ 50.89, 74.26, 534 },	-- Bleeding Hollow Horror	
 								},
 								["g"] = {
 									i(127654), -- Burning Agony
@@ -69,8 +77,8 @@ _.Zones =
 								["questID"] = 38809,
 								["description"] = "First set of coords are cave entrance, second set are item.",
 								["coords"] = {
-									{ 44.6, 77.5 },	-- Cave Entrance
-									{ 49.96, 76.78 }, -- Treasure Location
+									{ 44.6, 77.5, 534 },	-- Cave Entrance
+									{ 49.96, 76.78, 534 }, -- Treasure Location
 								},
 								["g"] = {
 									i(128223),	-- Bottomless Stygana Mushroom Brew Toy
@@ -81,8 +89,8 @@ _.Zones =
 								["questID"] = 38266,
 								["isDaily"] = true,
 								["coords"] = {
-									{ 24.6, 50.0 },
-									{ 21.0, 53.0 },
+									{ 24.6, 50.0, 534 },
+									{ 21.0, 53.0, 534 },
 								},
 								["g"] = {
 									i(127303), 	-- Zulk's Sneaky Slippers 
@@ -91,14 +99,18 @@ _.Zones =
 							{	-- Book of Zyzzix
 								["objectID"] = 241742,	-- Book of Zyzzix
 								["questID"] = 38771,
-								["coord"] = { 46.87, 36.65 },
+								["coords"] = {
+									{ 46.87, 36.65, 534 },
+								},
 								["g"] = {
 									i(127347), -- Resonating Tome of Zyzzix
 								},
 							},
 							{	-- Borrowed Enchanted Spyglass	**Coords uncofirmed, relied on wowhead**
 								["objectID"] = 241664,	-- "Borrowed" Enchanted Spyglass
-								["coord"] = { 25.5, 50.2 }, 
+								["coords"] = {
+									{ 25.5, 50.2, 534 },
+								},
 								["g"] = {
 									i(128222),	-- Smokeglass Lens Spyglass
 								},
@@ -108,8 +120,8 @@ _.Zones =
 								["questID"] = 38209,
 								["isDaily"] = true,
 								["coords"] = {
-									{ 41.0, 68.6 },
-									{ 39.2, 68.8 },
+									{ 41.0, 68.6, 534 },
+									{ 39.2, 68.8, 534 },
 								},
 								["g"] = {
 									i(127652), 	-- Felflame Campfire Toy
@@ -119,7 +131,9 @@ _.Zones =
 								["npcID"]= 92429,	-- Broodlord Ixkor
 								["questID"] = 38589,
 								["isDaily"] = true,
-								["coord"] = { 57.6, 67.2 },
+								["coords"] = {
+									{ 57.6, 67.2, 534 },
+								},
 								["g"] = {
 									i(127349), -- Silver Chitin Ring
 								},
@@ -128,7 +142,9 @@ _.Zones =
 								["npcID"] = 93264,	-- Captain Grok'mar
 								["questID"] = 38820,
 								["isDaily"] = true,
-								["coord"] = { 48.6, 57.2 },
+								["coords"] = {
+									{ 48.6, 57.2, 534 },
+								},
 								["g"] = {
 									i(127664),	-- Grokmar's Greaves of Fortification
 								},
@@ -137,7 +153,9 @@ _.Zones =
 								["npcID"] = 93076,	-- Captain Ironbeard <The True Scourge of the Iron Seas>
 								["questID"] = 38756,
 								["isDaily"] = true,
-								["coord"] = { 36.6, 79.8 },
+								["coords"] = {
+									{ 36.6, 79.8, 534 },
+								},
 								["g"] = {
 									i(127659),	-- Ghostly Iron Buccaneer's Hat Toy
 									i(128257, {	-- Equipment Blueprint: Ghostly Spyglass
@@ -148,7 +166,9 @@ _.Zones =
 							{	-- Censer of Torment	**Coords uncofirmed, relied on wowhead**
 								["objectID"] = 241563,	-- Censer of Torment
 								["questID"] = 38682,
-								["coord"] = { 62.6, 20.6 },
+								["coords"] = {
+									{ 62.6, 20.6, 534 },
+								},
 								["g"] = {
 									i(127401),	-- Tormented Skull
 								},
@@ -158,7 +178,9 @@ _.Zones =
 								["questID"] = 38031,
 								["isDaily"] = true,
 								["description"] = "Killing Ceraxis will summon the Abandoned Fel Pup which has the quest to get pet.",
-								["coord"] = { 31.6, 68.0 },
+								["coords"] = {
+									{ 31.6, 68.0, 534 },
+								},
 								["g"] = {
 									q(38428,{	-- A Fel Puppy Of My Own
 										i(129205),	-- A Tiny Infernal Collar (Fel Pup Pet)
@@ -169,7 +191,9 @@ _.Zones =
 								["npcID"] = 90519,	-- Cindral the Wildfire
 								["questID"] = 37990,
 								["isDaily"] = true,
-								["coord"] = { 44.68, 37.64 },
+								["coords"] = {
+									{ 44.68, 37.64, 534 },
+								},
 								["g"] = {
 									i(127660),	-- Contained Flame
 									i(128255, { -- Equipment Blueprint: Ice Cutter
@@ -181,7 +205,9 @@ _.Zones =
 								["npcID"] = 91232,	-- Commander Krag'goth
 								["questID"] = 38746,
 								["isDaily"] = true,
-								["coord"] = { 15.07, 53.96 },
+								["coords"] = {
+									{ 15.07, 53.96, 534 },
+								},
 								["g"] = {
 									i(127319),	-- Krag'goth's Iron Gauntlets
 								},
@@ -191,8 +217,8 @@ _.Zones =
 								["questID"] = 38749,
 								["isDaily"] = true,
 								["coords"] = {
-									{ 51.2, 46.6 },
-									{ 48.0, 44.8 },
+									{ 51.2, 46.6, 534 },
+									{ 48.0, 44.8, 534 },
 								},
 								["g"] = {
 									i(127313),	-- Org'mok's Riding Chaps 
@@ -201,7 +227,9 @@ _.Zones =
 							{	-- Crystalized Essence of Elements
 								["objectID"] = 241605,	-- Crystalized Essence of Elements
 								["questID"] = 38705,
-								["coord"] = { 47.91, 70.40 },
+								["coords"] = {
+									{ 47.91, 70.40, 534 },
+								},
 								["g"] = {
 									i(127329), -- Element-Infused Knuckles
 								},
@@ -209,7 +237,9 @@ _.Zones =
 							{	-- Crystallized Fel Spike
 								["objectID"] = 241450,	-- Crystallized Fel Spike
 								["questID"] = 38602,
-								["coord"] = { 62.0, 70.8 },
+								["coords"] = {
+									{ 62.0, 70.8, 534 },
+								},
 								["g"] = {
 									i(128217),	-- Fel Shard
 								},
@@ -217,7 +247,9 @@ _.Zones =
 							{	-- Dazzling Rod
 								["objectID"] = 241848,	-- Dazzling Rod
 								["questID"] = 38822,
-								["coord"] = { 42.85, 35.38 },
+								["coords"] = {
+									{ 42.85, 35.38, 534 },
+								},
 								["g"] = {
 									i(127859),	-- Dazzling Rod Toy
 								},
@@ -226,7 +258,9 @@ _.Zones =
 								["npcID"] = 95053,	-- Deathtalon
 								["questID"] = 39287,
 								["isDaily"] = true,
-								["coord"] = { 22.8, 40.0 },
+								["coords"] = {
+									{ 22.8, 40.0, 534 },
+								},
 								["g"] = {
 									i(128025, {	-- Rattling Iron Cage
 										i(116669), 	-- Armored Razorback Mount
@@ -239,7 +273,9 @@ _.Zones =
 							{	-- Discarded Helm
 								["objectID"] = 241600, -- Discarded Helm
 								["questID"] = 38702,
-								["coord"] = { 49.90, 81.23 },
+								["coords"] = {
+									{ 49.90, 81.23, 534 },
+								},
 								["g"] = {
 									i(127312),	-- Fallen Adventurer's Helm
 								},
@@ -248,7 +284,9 @@ _.Zones =
 								["npcID"] = 95056,	-- Doomroller
 								["questID"] = 39289,
 								["isDaily"] = true,
-								["coord"] = { 47.0, 52.6 },
+								["coords"] = {
+									{ 47.0, 52.6, 534 },
+								},
 								["g"] = {
 									i(128025, {	-- Rattling Iron Cage
 										i(116669), 	-- Armored Razorback Mount
@@ -262,9 +300,9 @@ _.Zones =
 								["npcID"] = 90887,	-- Dorg the Bloody
 								["questID"] = 38265,
 								["coords"] = {
-									{ 24.8, 46.4 },
-									{ 24.2, 46.4 },
-									{ 22.8, 48.8 },
+									{ 24.8, 46.4, 534 },
+									{ 24.2, 46.4, 534 },
+									{ 22.8, 48.8, 534 },
 								},
 								["isDaily"] = true,
 								["g"] = {
@@ -275,7 +313,9 @@ _.Zones =
 								["npcID"] = 98283,	-- Drakum
 								["questID"] = 40105,
 								["isDaily"] = true,
-								["coord"] = { 83.46, 43.66 },
+								["coords"] = {
+									{ 83.46, 43.66, 534 },
+								},
 								["g"] = {
 									i(108631),	-- Crashin' Thrashin' Roller Controller Toy
 								},
@@ -284,7 +324,9 @@ _.Zones =
 								["npcID"] = 93028,	-- Driss Vile
 								["questID"] = 38736,
 								["isDaily"] = true,
-								["coord"] = { 20.2, 53.4 },
+								["coords"] = {
+									{ 20.2, 53.4, 534 },
+								},
 								["g"] = {
 									i(127331),	-- Double-Scoped Long Rifle
 								},
@@ -293,7 +335,9 @@ _.Zones =
 								["npcID"] = 90888,	-- Drivnul
 								["questID"] = 38264,
 								["isDaily"] = true,
-								["coord"] = { 25.6, 46.2 },
+								["coords"] = {
+									{ 25.6, 46.2, 534 },
+								},
 								["g"] = {
 									i(127298),	-- Blood Infused Leggings 
 								},
@@ -302,7 +346,9 @@ _.Zones =
 								["npcID"] = 91727,	-- Executor Riloth
 								["questID"] = 38411,
 								["isDaily"] = true,
-								["coord"] = { 49.8, 36.2 },
+								["coords"] = {
+									{ 49.8, 36.2, 534 },
+								},
 								["g"] = {
 									i(127323),	-- Bracers of Endless Suffering 
 								},
@@ -310,7 +356,9 @@ _.Zones =
 							{	-- Fel-Drenched Satchel
 								["objectID"] = 241745,	-- Fel-Drenched Satchel
 								["questID"] = 38773,
-								["coord"] = { 46.93, 44.35 },
+								["coords"] = {
+									{ 46.93, 44.35, 534 },
+								},
 								["g"] = {
 									i(128218),	-- Fel-Proof Goggles
 								},
@@ -319,7 +367,9 @@ _.Zones =
 								["npcID"] = 98408,	-- Fel Overseer Mudlump
 								["questID"] = 40107,
 								["isDaily"] = true,
-								["coord"] = { 87.5, 56.1 },
+								["coords"] = {
+									{ 87.5, 56.1, 534 },
+								},
 								["g"] = {
 									i(129295), -- Spike-Toed Booterang
 								},
@@ -328,7 +378,9 @@ _.Zones =
 								["npcID"] = 93168,	-- Felbore
 								["questID"] = 38775,
 								["isDaily"] = true,
-								["coord"] = { 28.8, 51.0 },
+								["coords"] = {
+									{ 28.8, 51.0, 534 },
+								},
 								["g"] = {
 									i(127350), -- Fel Imbued Band
 								},
@@ -337,7 +389,9 @@ _.Zones =
 								["npcID"] = 92647,	-- Felsmith Damorka
 								["questID"] = 38634,
 								["isDaily"] = true,
-								["coord"] = { 45.8, 47.0 },
+								["coords"] = {
+									{ 45.8, 47.0, 534 },
+								},
 								["g"] = {
 									i(127302),	-- Chemical Resistant Apron
 									i(128258, { -- Equipment Blueprint: Felsmoke Launchers
@@ -350,9 +404,9 @@ _.Zones =
 								["questID"] = 38211,
 								["isDaily"] = true,
 								["coords"] = {
-									{ 53.0, 25.6 },
-									{ 53.0, 27.2 },
-									{ 52.2, 27.4 },
+									{ 53.0, 25.6, 534 },
+									{ 53.0, 27.2, 534 },
+									{ 52.2, 27.4, 534 },
 								},
 								["g"] = {
 									i(127656),	-- Fel Singed Wraps 
@@ -361,7 +415,9 @@ _.Zones =
 							{	-- Forgotten Champion's Blade
 								["objectID"] = 241533,	-- Forgotten Champion's Blade
 								["questID"] = 38657,
-								["coord"] = { 41.58, 73.28 },
+								["coords"] = {
+									{ 41.58, 73.28, 534 },
+								},
 								["g"] = {
 									i(127339),	-- Forgotten Champion's Blade
 								},
@@ -370,7 +426,9 @@ _.Zones =
 								["objectID"] = 241671,	-- Forgotten Shard of the Cipher
 								["questID"] = 38740,
 								["description"] = "You need to be on the quest above or have completed it to loot this item.",
-								["coord"] = { 63.3, 28.0 },
+								["coords"] = {
+									{ 63.3, 28.0, 534 },
+								},
 								["g"] = {
 									q(39394,{	-- The Cipher of Damnation 
 										i(128309),  -- Shard of Cyrukh Pet	
@@ -381,7 +439,9 @@ _.Zones =
 								["npcID"] = 92508,	-- Gloomtalon
 								["questID"] = 38604,
 								["isDaily"] = true,
-								["coord"] = { 63.6, 81.2 },
+								["coords"] = {
+									{ 63.6, 81.2, 534 },
+								},
 								["g"] = {
 									i(127306),	-- Gloomtalon's Spare Kilt 
 								},
@@ -390,7 +450,9 @@ _.Zones =
 								["npcID"] = 93125,	-- Glub'glok
 								["questID"] = 38764,
 								["isDaily"] = true,
-								["coord"] = { 34.6, 78.0 },
+								["coords"] = {
+									{ 34.6, 78.0, 534 },
+								},
 								["g"] = {
 									i(127317),	-- Murktide's Coveted Chestplate 
 								},
@@ -399,7 +461,9 @@ _.Zones =
 								["npcID"] = 98284,	-- Gondar
 								["questID"] = 40106,
 								["isDaily"] = true,
-								["coord"] = { 80.6, 56.4 },
+								["coords"] = {
+									{ 80.6, 56.4, 534 },
+								},
 								["g"] = {
 									i(108633),	-- Crashin' Thrashin' Cannon Controller Toy 
 								},
@@ -408,7 +472,9 @@ _.Zones =
 								["npcID"] = 92941,	-- Gorabosh
 								["questID"] = 38709,
 								["isDaily"] = true,
-								["coord"] = { 33.0, 35.8 },
+								["coords"] = {
+									{ 33.0, 35.8, 534 },
+								},
 								["g"] = {
 									i(127304),	-- Cave Keeper Wraps 
 								},
@@ -418,8 +484,8 @@ _.Zones =
 								["questID"] = 38400,
 								["isDaily"] = true,
 								["coords" ] = {
-									{ 47.4, 40.6 },
-									{ 46.2, 42.8 },
+									{ 47.4, 40.6, 534 },
+									{ 46.2, 42.8, 534 },
 								},
 								["g"] = {
 									i(127299),	-- Nehtekurse's Robe of Contempt 
@@ -429,7 +495,9 @@ _.Zones =
 								["npcID"] = 93057,	-- Grannok
 								["questID"] = 38750,
 								["isDaily"] = true,
-								["coord"] = { 16.0, 59.2 },
+								["coords"] = {
+									{ 16.0, 59.2, 534 },
+								},
 								["g"] = {
 									i(127649), -- Trophy-Skull Choker
 								},
@@ -438,7 +506,9 @@ _.Zones =
 								["npcID"] = 90094,	-- Harbormaster Korak
 								["questID"] = 39046,
 								["isDaily"] = true,
-								["coord"] = { 39.6, 32.6 },
+								["coords"] = {
+									{ 39.6, 32.6, 534 },
+								},
 								["g"] = {
 									i(127309),	-- Korak's Reinforced Iron Tunic 
 								},
@@ -448,8 +518,8 @@ _.Zones =
 								["questID"] = 38028,
 								["isDaily"] = true,	
 								["coords"] = {
-									{ 21.0, 37.4 },
-									{ 20.4, 41.6 },
+									{ 21.0, 37.4, 534 },
+									{ 20.4, 41.6, 534 },
 								},
 								["g"] = {
 									i(122117),	-- Cursed Feather of Ikzan Toy 
@@ -460,8 +530,8 @@ _.Zones =
 								["questID"] = 38026,
 								["isDaily"] = true,
 								["coords"] = {
-									{ 31.6, 72.6 },
-									{ 31.0, 71.4 },
+									{ 31.6, 72.6, 534 },
+									{ 31.0, 71.4, 534 },
 								},
 								["g"] = {
 									i(127655),	-- Sassy Imp Toy
@@ -470,7 +540,9 @@ _.Zones =
 							{	-- Jax'zor	**Coords uncofirmed, relied on wowhead**
 								["npcID"] = 90437,	-- Jax'zor
 								["questID"] = 38030,
-								["coord"] = { 26.6, 75.0 },
+								["coords"] = {
+									{ 26.6, 75.0, 534 },
+								},
 								["isDaily"] = true,
 								["g"] = {
 									i(127322),	-- Fel Burnished Waistguard
@@ -479,7 +551,9 @@ _.Zones =
 							{	-- Jewel of Hellfire	**Coords uncofirmed, relied on wowhead**
 								["objectID"] = 240580,	-- Jewel of Hellfire
 								["questID"] = 38334,
-								["coord"] = { 28.7, 23.5 },
+								["coords"] = {
+									{ 28.7, 23.5, 534 },
+								},
 								["g"] = {
 									i(127668),	-- Jewel of Hellfire Toy
 								},
@@ -488,13 +562,17 @@ _.Zones =
 								["npcID"] = 80398,	-- Keravnos
 								["questID"] = 37407,
 								["isDaily"] = true,
-								["coord"] = { 39.8, 82.0 },
+								["coords"] = {
+									{ 39.8, 82.0, 534 },
+								},
 							},
 							{	-- Krell the Serene	**Coords uncofirmed, relied on wowhead**
 								["npcID"] = 92517,	-- Krell the Serene
 								["questID"] = 38605,
 								["isDaily"] = true,
-								["coord"] = { 52.0, 83.6 },
+								["coords"] = {
+									{ 52.0, 83.6, 534 },
+								},
 								["g"] = {
 									i(127418), -- Soothing Incense Brazier
 								},
@@ -505,8 +583,8 @@ _.Zones =
 								["isDaily"] = true,
 								["description"] = "First set of coords are cave entrance, second set are npc.",
 								["coords"] = {
-									{ 42.41, 68.77 },	-- Cave Entrance
-									{ 39.59, 68.14 },	-- Kris'kar the Unredeemed
+									{ 42.41, 68.77, 534 },	-- Cave Entrance
+									{ 39.59, 68.14, 534 },	-- Kris'kar the Unredeemed
 								},
 								["g"] = {
 									i(127653),	-- Wingblade of Reckoning
@@ -516,7 +594,9 @@ _.Zones =
 								["npcID"] = 90438,	-- Lady Oran
 								["questID"] = 38029,
 								["isDaily"] = true,
-								["coord"] = { 25.6, 76.6 },
+								["coords"] = {
+									{ 25.6, 76.6, 534 },
+								},
 								["g"] = {
 									i(127316),	-- Oran's Cuffs of Malice 
 								},
@@ -524,14 +604,18 @@ _.Zones =
 							{	-- Lodged Hunting Spear
 								["objectID"] = 241434,	-- Lodged Hunting Spear
 								["questID"] = 38593,
-								["coord"] = { 54.8, 69.31 },
+								["coords"] = {
+									{ 54.8, 69.31, 534 },
+								},
 								["g"] = {
 									i(127334),	-- Ravager Hunting Spear 
 								},
 							},
 							{	-- Lok'goron Hashslinger
 								["npcID"] = 96240,	-- Lok'goron Hashslinger
-								["coord"] = { 40.45, 45.88 },
+								["coords"] = {
+									{ 40.45, 45.88, 534 },
+								},
 								["g"] = {
 									i(128501),	-- Recipe: Fel Eggs and Ham
 								},
@@ -540,7 +624,9 @@ _.Zones =
 								["objectID"] = 241565,	-- Looted Bleeding Hollow Treasure
 								["questID"] = 38683,
 								["description"] = "You need to be on the quest above or have completed it to loot this item.",
-								["coord"] = { 26.7, 44.3 },
+								["coords"] = {
+									{ 26.7, 44.3, 534 },
+								},
 								["g"] = {
 									q(38560,{	-- Garrison Campaign: The Bane of the Bleeding Hollow
 										i(127709), 	-- Throbbing Blood Orb
@@ -552,8 +638,8 @@ _.Zones =
 								["questID"] = 38814,
 								["description"] = "First set of coords are cave entrance, second set are item.",
 								["coords"] = {
-									{ 44.6, 77.5 },	-- Cave Entrance
-									{ 48.56, 75.20 },	-- Looted Mystical Staff
+									{ 44.6, 77.5, 534 },	-- Cave Entrance
+									{ 48.56, 75.20, 534 },	-- Looted Mystical Staff
 								},
 								["g"] = {
 									i(127337),	-- Emanating Staff of Shadow 
@@ -563,7 +649,9 @@ _.Zones =
 								["npcID"] = 93002,	-- Magwia
 								["questID"] = 38726,
 								["isDaily"] = true,
-								["coord"] = { 52.11, 65.19 },
+								["coords"] = {
+									{ 52.11, 65.19, 534 },
+								},
 								["g"] = {
 									i(127332),	-- Riverbeast Molar Club 
 								},
@@ -572,7 +660,9 @@ _.Zones =
 								["npcID"] = 90442,	-- Mistress Thavra
 								["questID"] = 38032,
 								["isDaily"] = true,	
-								["coord"] = { 26.0, 79.4 },
+								["coords"] = {
+									{ 26.0, 79.4, 534 },
+								},
 								["g"] = {
 									i(127300),	-- Shivan Shoulders of Scorn 
 								},
@@ -580,7 +670,9 @@ _.Zones =
 							{	-- Overgrown Relic
 								["objectID"] = 241656,	-- Overgrown Relic
 								["questID"] = 38731,
-								["coord"] = { 50.85, 64.97 },
+								["coords"] = {
+									{ 50.85, 64.97, 534 },
+								},
 								["g"] = {
 									i(127412),	-- Luminous Relic Ring
 								}
@@ -589,7 +681,9 @@ _.Zones =
 								["npcID"] = 92411,	-- Overlord Ma'gruth
 								["questID"] = 38580,
 								["isDaily"] = true,
-								["coord"] = { 53.0, 19.6 },
+								["coords"] = {
+									{ 53.0, 19.6, 534 },
+								},
 								["g"] = {
 									i(127320),	-- Mo'gruth's Discarded Parade Helm
 								},
@@ -598,7 +692,9 @@ _.Zones =
 								["npcID"] = 92274,	-- Painmistress Selora
 								["questID"] = 38557,
 								["isDaily"] = true,
-								["coord"] = { 53.6, 21.6 },
+								["coords"] = {
+									{ 53.6, 21.6, 534 },
+								},
 								["g"] = {
 									i(127297),	-- Selora's Crown of Thorns 
 								},
@@ -608,8 +704,8 @@ _.Zones =
 								["questID"] = 38282,
 								["isDaily"] = true,	
 								["coords"] = {
-									{ 16.8, 48.4 },
-									{ 16.8, 49.6 },
+									{ 16.8, 48.4, 534 },
+									{ 16.8, 49.6, 534 },
 								},
 								["g"] = {
 									i(127336),	-- Rod of the One True Podlord 
@@ -620,8 +716,8 @@ _.Zones =
 								["questID"] = 38457,
 								["isDaily"] = true,
 								["coords"] = {
-									{ 57.0, 23.0 },
-									{ 57.6, 23.2 },
+									{ 57.0, 23.0, 534 },
+									{ 57.6, 23.2, 534 },
 								},
 								["g"] = {
 									i(127657), -- Encroaching Void
@@ -631,7 +727,9 @@ _.Zones =
 								["npcID"] = 90782,	-- Rasthe
 								["questID"] = 38034,
 								["isDaily"] = true,	
-								["coord"] = { 17.42, 42.75 },
+								["coords"] = {
+									{ 17.42, 42.75, 534 },
+								},
 								["g"] = {
 									i(127661), -- Fang of Rasthe
 								},
@@ -640,7 +738,9 @@ _.Zones =
 								["npcID"] = 92197,	-- Relgor
 								["questID"] = 38496,
 								["isDaily"] = true,
-								["coord"] = { 26.2, 54.4 },
+								["coords"] = {
+									{ 26.2, 54.4, 534 },
+								},
 								["g"] = {
 									i(127335),	-- Relgor's Master Glaive 
 								},
@@ -650,7 +750,9 @@ _.Zones =
 								["questID"] = 39159,
 								["isDaily"] = true,	
 								["description"] = "Drain the Blood Moon to 0% health with Drained Blood Crystals to spawn Remnant of the Blood Moon.",
-								["coord"] = { 22.2, 50.6 },
+								["coords"] = {
+									{ 22.2, 50.6, 534 },
+								},
 								["g"] = {
 									i(127666),	-- Vial of Red Goo Toy
 								},
@@ -661,8 +763,8 @@ _.Zones =
 								["isDaily"] = true,	
 								["description"] = "Summoned by collecting 10x Smelly Musk Gland from the Direwing Predators (Bats) in Zorammarsh. Once you have all 10 glands, use them to combine while in Zorammarsh to make Rendrak spawn. If you leave Zorammarsh the Smelly Musk Glands vanish from your bags.",
 								["coords"] = {
-									{ 37.2, 68.6 },
-									{ 42.4, 77.6 },
+									{ 37.2, 68.6, 534 },
+									{ 42.4, 77.6, 534 },
 								},
 								["g"] = {
 									i(127356),	-- Musky Bat Fur Cloak
@@ -672,7 +774,9 @@ _.Zones =
 								["npcID"] = 90885,	-- Rogond the Tracker
 								["questID"] = 38263,
 								["isDaily"] = true,
-								["coord"] = { 20.6, 50.0 },
+								["coords"] = {
+									{ 20.6, 50.0, 534 },
+								},
 								["g"] = {
 									i(127314),	-- Rogond's Tracking Shoulderguards 
 								},
@@ -680,7 +784,9 @@ _.Zones =
 							{	-- Rune Etched Femur
 								["objectID"] = 241566,	-- Rune Etched Femur
 								["questID"] = 38686,
-								["coord"] = { 51.75, 24.30 },		
+								["coords"] = {
+									{ 51.75, 24.30, 534 },		
+								},
 								["g"] = {
 									i(127341),	-- Rune-Etched Femur
 								},
@@ -688,7 +794,9 @@ _.Zones =
 							{	-- Sacrificial Blade
 								["objectID"] = 241760,	-- Sacrificial Blade
 								["questID"] = 38776,
-								["coord"] = { 46.85, 42.17 },
+								["coords"] = {
+									{ 46.85, 42.17, 534 },
+								},
 								["g"] = {
 									i(127328), -- Feltwisted Sacrificial Blade
 								},
@@ -697,7 +805,9 @@ _.Zones =
 								["npcID"] = 94472,	-- Savage Whale Shark
 								["questID"] = 36153,
 								["isDaily"] = true,
-								["coord"] = { 38, 30 },
+								["coords"] = {
+									{ 38, 30, 534 },
+								},
 								["g"] = {
 									i(128231, { -- Equipment Blueprint: Trained Shark Tank
 										["questID"] = 39355, -- Equipment Blueprint: Trained Shark Tank
@@ -707,7 +817,9 @@ _.Zones =
 							{	-- Scout's Belongings	
 								["objectID"] = 241601,	-- Scout's Belongings
 								["questID"] = 38703,
-								["coord"] = { 49.95, 79.62 },
+								["coords"] = {
+									{ 49.95, 79.62, 534 },
+								},
 								["g"] = {
 									i(127354),	-- Scout's Spy Cloak 
 								},
@@ -717,8 +829,8 @@ _.Zones =
 								["questID"] = 37953,
 								["isDaily"] = true,	
 								["coords"] = {
-									{ 41.6, 37.6 },
-									{ 42.8, 36.6 },
+									{ 41.6, 37.6, 534 },
+									{ 42.8, 36.6, 534 },
 								},
 								["g"] = {
 									i(127318),	-- Iron Cleated Warboots 
@@ -728,7 +840,9 @@ _.Zones =
 								["npcID"] = 93236,	-- Shadowthrash
 								["questID"] = 38812,
 								["isDaily"] = true,
-								["coord"] = { 49.8, 61.6 },
+								["coords"] = {
+									{ 49.8, 61.6, 534 },
+								},
 								["g"] = {
 									i(127665),	-- Warpscaled Wristwraps
 								},
@@ -736,7 +850,9 @@ _.Zones =
 							{	-- Skull of the Mad Chief
 								["objectID"] = 241674,	-- Skull of the Mad Chief
 								["questID"] = 38742,
-								["coord"] = { 34.67, 34.64 },
+								["coords"] = {
+									{ 34.67, 34.64, 534 },
+								},
 								["g"] = {
 									i(127669),	-- Skull of the Mad Chief Toy
 								},
@@ -745,7 +861,9 @@ _.Zones =
 								["npcID"] = 98285,	-- Smashum Grabb
 								["questID"] = 40104,
 								["isDaily"] = true,
-								["coord"] = { 88.2, 55.4 },
+								["coords"] = {
+									{ 88.2, 55.4, 534 },
+								},
 								["g"] = {
 									i(108634),	-- Crashin' Thrashin' Mortar Controller Toy
 								},
@@ -753,7 +871,9 @@ _.Zones =
 							{	-- Snake Charmer's Flute
 								["objectID"] = 241521,	-- Snake Charmer's Flute
 								["questID"] = 38638,
-								["coord"] = { 40.61, 79.80 },
+								["coords"] = {
+									{ 40.61, 79.80, 534 },
+								},
 								["g"] = {					
 									i(127333),	-- Ogra'mal Snake Charming Flute
 								},
@@ -762,7 +882,9 @@ _.Zones =
 								["npcID"] = 92495,	-- Soulslicer
 								["questID"] = 38600,
 								["isDaily"] = true,
-								["coord"] = { 62.6, 72.2 },
+								["coords"] = {
+									{ 62.6, 72.2, 534 },
+								},
 								["g"] = {
 									i(127315),	-- Glowing Felskull Belt 
 								},
@@ -771,7 +893,9 @@ _.Zones =
 								["npcID"] = 92887,	-- Steelsnout
 								["questID"] = 38700,
 								["isDaily"] = true,
-								["coord"] = { 65.64, 36.79 },
+								["coords"] = {
+									{ 65.64, 36.79, 534 },
+								},
 								["g"] = {
 									i(127357),	-- Steelsnout's Steely Hide 
 								},
@@ -780,7 +904,9 @@ _.Zones =
 								["objectID"] = 241599,	-- Strange Fruit
 								["questID"] = 38701,
 								["description"] = "Click on Loose Soil to be thrown into tree to grab the strange fruit.",
-								["coord"] = { 64.71, 42.84 },
+								["coords"] = {
+									{ 64.71, 42.84, 534 },
+								},
 								["g"] = {					
 									i(127396,{ 		-- Strange Green Fruit
 										["g"] = {
@@ -794,7 +920,9 @@ _.Zones =
 							},			
 							{	-- Strange Sapphire	**Coords uncofirmed, relied on wowhead**
 								["objectID"] = 240003,	-- Strange Sapphire
-								["coord"] = { 36.4, 43.5 }, 
+								["coords"] = {
+									{ 36.4, 43.5, 534 }, 
+								},
 								["g"] = {
 									i(127397),	-- Splendid Skettis Sapphire
 								},
@@ -803,7 +931,9 @@ _.Zones =
 								["npcID"] = 92606,	-- Sylissa
 								["questID"] = 38628,
 								["isDaily"] = true,	
-								["coord"] = { 41.07, 78.76 },
+								["coords"] = {
+									{ 41.07, 78.76, 534 },
+								},
 								["g"] = {
 									i(127311),	--  Serpentine Gloves
 								},
@@ -813,7 +943,9 @@ _.Zones =
 								["questID"] = 38752,
 								["isDaily"] = true,	
 								["description"] = "Capture Strongpoint (East) to make him spawn.",
-								["coord"] = { 16.24, 56.37 },
+								["coords"] = {
+									{ 16.24, 56.37, 534 },
+								},
 								["g"] = {
 									i(127296),	-- Twisted Taboo Handwraps 
 								},
@@ -823,8 +955,8 @@ _.Zones =
 								["questID"] = 39288,
 								["isDaily"] = true,
 								["coords"] = {
-									{ 13.8, 60.2 },
-									{ 15.6, 63.4 },
+									{ 13.8, 60.2, 534 },
+									{ 15.6, 63.4, 534 },
 								},
 								["g"] = {
 									i(128025, {	-- Rattling Iron Cage
@@ -839,7 +971,9 @@ _.Zones =
 								["npcID"] = 92465,	-- The Blackfang
 								["questID"] = 38597,
 								["isDaily"] = true,
-								["coord"] = { 49.6, 74.0 },
+								["coords"] = {
+									{ 49.6, 74.0, 534 },
+								},
 								["g"] = {
 									i(127330),	-- The Black Fang 
 								},
@@ -847,7 +981,9 @@ _.Zones =
 							{	-- The Blade of Kra'nak
 								["objectID"] = 240577,	-- The Blade of Kra'nak
 								["questID"] = 38320,
-								["coord"] = { 19.29, 40.95 },
+								["coords"] = {
+									{ 19.29, 40.95, 534 },
+								},
 								["g"] = {					
 									i(127338),	-- Guardian Swiftblade of Kra'nak 
 								},
@@ -855,7 +991,9 @@ _.Zones =
 							{	-- The Commander's Shield
 								["objectID"] = 241847,	-- The Commander's Shield
 								["questID"] = 38821,
-								["coord"] = { 43.18, 38.34 },
+								["coords"] = {
+									{ 43.18, 38.34, 534 },
+								},
 								["g"] = {
 									i(127348),	-- Commander's Citadel Shield
 								},
@@ -863,7 +1001,9 @@ _.Zones =
 							{	-- The Eye of Grannok
 								["objectID"] = 241713,	-- The Eye of Grannok
 								["questID"] = 38757,
-								["coord"] = { 16.00, 59.40 },
+								["coords"] = {
+									{ 16.00, 59.40, 534 },
+								},
 								["g"] = {
 									i(128220),	-- Grannok's Lidless Eye
 								},
@@ -872,7 +1012,9 @@ _.Zones =
 								["npcID"] = 92694,	-- The Goreclaw
 								["questID"] = 38654,
 								["isDaily"] = true,
-								["coord"] = { 34.6, 72.6 },
+								["coords"] = {
+									{ 34.6, 72.6, 534 },
+								},
 								["g"] = {
 									i(127305),	-- Frayed Hunting Cowl 
 								},
@@ -882,7 +1024,9 @@ _.Zones =
 								["questID"] = 38751,
 								["isDaily"] = true,							
 								["description"] = "Capture Strongpoint (West) to make him spawn.",
-								["coord"] = { 13.10, 57.02 },
+								["coords"] = {
+									{ 13.10, 57.02, 534 },
+								},
 								["g"] = {
 									i(127321),	-- Iron Houndmaster's Pauldrons 
 								},
@@ -893,16 +1037,16 @@ _.Zones =
 								["isDaily"] = true,						
 								["description"] = "Gain 10 stacks of Marked by the Night Haunter by either finding The Night Haunter or clicking Mutilated Corpses.",
 								["coords"] = {
-									{ 42.44, 77.57 },	-- Confirmed
-									{ 40.59, 72.96 },	-- Confirmed
-									{ 38.26, 72.11 },	-- Confirmed
-									{ 37.51, 67.59 },	-- Confirmed
-									{ 38.85, 75.16 },	-- Confirmed
-									{ 42.83, 74.60 },	-- Confirmed
-									{ 41.28, 68.96 },	-- Confirmed
-									{ 44.0, 67.6 },
-									{ 38.0, 79.0 },
-									{ 44.0, 78.2 },
+									{ 42.44, 77.57, 534 },	-- Confirmed
+									{ 40.59, 72.96, 534 },	-- Confirmed
+									{ 38.26, 72.11, 534 },	-- Confirmed
+									{ 37.51, 67.59, 534 },	-- Confirmed
+									{ 38.85, 75.16, 534 },	-- Confirmed
+									{ 42.83, 74.60, 534 },	-- Confirmed
+									{ 41.28, 68.96, 534 },	-- Confirmed
+									{ 44.0, 67.6, 534 },
+									{ 38.0, 79.0, 534 },
+									{ 44.0, 78.2, 534 },
 								},
 								["g"] = {
 									i(127355),	-- Haunter's Kurzed Cloak
@@ -911,7 +1055,9 @@ _.Zones =
 							{	-- The Perfect Blossom	**Coords uncofirmed, relied on wowhead**
 								["objectID"] = 241522,	-- The Perfect Blossom
 								["questID"] = 38639,
-								["coord"] = { 40.77, 75.56 },		
+								["coords"] = {
+									{ 40.77, 75.56, 534 },		
+								},
 								["g"] = {				
 									i(127766),	-- The Perfect Blossom Toy
 								},
@@ -920,7 +1066,9 @@ _.Zones =
 								["npcID"] = 91243,	-- Tho'gar Gorefist
 								["questID"] = 38747,
 								["isDaily"] = true,
-								["coord"] = { 13.6, 56.8 },
+								["coords"] = {
+									{ 13.6, 56.8, 534 },
+								},
 								["g"] = {
 									i(127310),	-- Sabatons of Radiating Ire 
 								},
@@ -929,7 +1077,9 @@ _.Zones =
 								["npcID"] = 92574,	-- Thromma the Gutslicer
 								["questID"] = 38620,
 								["isDaily"] = true,	
-								["coord"] = { 34.0, 44.6 },
+								["coords"] = {
+									{ 34.0, 44.6, 534 },
+								},
 								["g"] = {
 									i(127327),	-- Thromma's Gutslicer 
 								},
@@ -937,7 +1087,9 @@ _.Zones =
 							{	-- Tome of Secrets
 								["objectID"] = 240855,	-- Tome of Secrets
 								["questID"] = 38426,
-								["coord"] = { 32.43, 70.40 },
+								["coords"] = {
+									{ 32.43, 70.40, 534 },
+								},
 								["g"] = {
 									i(127670),	-- Accursed Tome of the Sargerei Toy 	
 								},
@@ -946,7 +1098,9 @@ _.Zones =
 								["npcID"] = 92451,	-- Varyx the Damned
 								["questID"] = 37937,
 								["isDaily"] = true,	
-								["coord"] = { 27.65, 32.74 },
+								["coords"] = {
+									{ 27.65, 32.74, 534 },
+								},
 								["g"] = {
 									i(127351), -- Varyx's Dark Oath Band
 								},
@@ -955,7 +1109,9 @@ _.Zones =
 								["npcID"] = 95054,	-- Vengeance
 								["questID"] = 39290,
 								["isDaily"] = true,
-								["coord"] = { 32.6, 74.0 },
+								["coords"] = {
+									{ 32.6, 74.0, 534 },
+								},
 								["g"] = {
 									i(128025, {	-- Rattling Iron Cage
 										i(116669), 	-- Armored Razorback Mount
@@ -968,7 +1124,9 @@ _.Zones =
 							{	-- Weathered Axe
 								["objectID"] = 240289,	-- Weathered Axe
 								["questID"] = 38208,
-								["coord"] = { 15.93, 49.73 },
+								["coords"] = {
+									{ 15.93, 49.73, 534 },
+								},
 								["g"] = {				
 									i(127324),	-- Weathered Memento Axe 
 								},
@@ -977,7 +1135,9 @@ _.Zones =
 								["npcID"] = 92408,	-- Xanzith the Everlasting
 								["questID"] = 38579,
 								["isDaily"] = true,
-								["coord"] = { 60.2, 21.6 },
+								["coords"] = {
+									{ 60.2, 21.6, 534 },
+								},
 								["g"] = {
 									i(127658),	-- Eye of the Beholder 
 									i(128232, { -- Equipment Blueprint: High Intensity Fog Lights
@@ -989,7 +1149,9 @@ _.Zones =
 								["npcID"] = 96235,	-- Xemirkol 	
 								["achievementID"] = 10334, 
 								["description"] = "Can occasionally teleport to him with Master Hunter's Seeking Crystal. Do not get knocked off of his platform.",
-								["coord"] = { 69.6, 38.2 },
+								["coords"] = {
+									{ 69.6, 38.2, 534 },
+								},
 								["g"] = {
 									title(59),	-- Predator
 								},
@@ -998,7 +1160,9 @@ _.Zones =
 								["npcID"] = 91087,	-- Zeter'el
 								["questID"] = 38207,
 								["isDaily"] = true,
-								["coord"] = { 48.4, 28.6 },
+								["coords"] = {
+									{ 48.4, 28.6, 534 },
+								},
 								["g"] = {
 									i(127340),	-- Felfire Lit Greatsword
 								},
@@ -1007,7 +1171,9 @@ _.Zones =
 								["npcID"] = 90122,	-- Zoug the Heavy
 								["questID"] = 39045,
 								["isDaily"] = true,	
-								["coord"] = { 37.0, 32.84 },
+								["coords"] = {
+									{ 37.0, 32.84, 534 },
+								},
 								["g"] = {
 									i(127308),	-- Zoug's Lifting Belt
 									i(128252, { -- Equipment Blueprint: True Iron Rudder

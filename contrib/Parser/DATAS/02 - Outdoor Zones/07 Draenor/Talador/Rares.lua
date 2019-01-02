@@ -16,7 +16,9 @@ _.Zones =
 							{	-- Aarko
 								["npcID"] = 77664,	-- Aarko
 								["questID"] = 34182,
-								["coord"] = { 36.6, 96.0 },
+								["coords"] = {
+									{ 36.6, 96.0, 535 },
+								},
 								["description"] = "Speak to Aarko.\nAssist him in killing 2 waves of enemies, then Surok Darkstorm.\nLoot the Treasure.",						
 								["g"] = {
 									{	-- Aarko's Family Treasure
@@ -30,7 +32,9 @@ _.Zones =
 							{	-- Amethyl Crystal
 								["objectID"] = 227955,	-- Amethyl Crystal
 								["questID"] = 34236,
-								["coord"] = { 62.1, 32.5 },
+								["coords"] = {
+									{ 62.1, 32.5, 535 },
+								},
 								["g"] = {
 									i(116131),	-- Amethyl Crystal
 								},
@@ -40,9 +44,9 @@ _.Zones =
 								["questID"] = 37338,
 								["isDaily"] = true,
 								["coords"] = {
-									{ 44.20, 34.33 },
-									{ 45.60, 32.40 },
-									{ 48.00, 36.00 },
+									{ 44.20, 34.33, 535 },
+									{ 45.60, 32.40, 535 },
+									{ 48.00, 36.00, 535 },
 								},
 								["g"] = {
 									{	-- Avatar of Socrethar
@@ -59,8 +63,8 @@ _.Zones =
 								["questID"] = 37339,
 								["isDaily"] = true,
 								["coords"] = { 
-									{ 43.4, 37.0 },
-									{ 44.6, 40.6 },
+									{ 43.4, 37.0, 535 },
+									{ 44.6, 40.6, 535 },
 								},
 								["g"] = {
 									{	-- Bombardier Gu'gok
@@ -75,7 +79,9 @@ _.Zones =
 							{	-- Bright Coin
 								["objectID"] = 229354,	-- Bright Coin
 								["questID"] = 34471,
-								["coord"] = { 73.5, 51.5 },
+								["coords"] = {
+									{ 73.5, 51.5, 535 },
+								},
 								["g"] = {
 									i(116127),	-- Bright Coin
 								},
@@ -83,7 +89,9 @@ _.Zones =
 							{	-- Charred Sword	
 								["objectID"] = 228012,	-- Charred Sword
 								["questID"] = 34248,
-								["coord"] = { 77.0, 50.0 },
+								["coords"] = {
+									{ 77.0, 50.0, 535 },
+								},
 								["g"] = {
 									i(116116),	-- Blazegrease Greatsword
 								},
@@ -91,7 +99,9 @@ _.Zones =
 							{	-- Cro Fleshrender
 								["npcID"] = 77620,	-- Cro Fleshrender
 								["questID"] = 34165,
-								["coord" ] = { 37.4, 70.6 },
+								["coords" ] = {
+									{ 37.4, 70.6, 535 },
+								},
 								["g"] = {	
 									i(116123),	-- Fleshrender's Painbringer
 								},
@@ -99,7 +109,9 @@ _.Zones =
 							{	-- Curious Deathweb Egg
 								["objectID"] = 227996,	-- Curious Deathweb Egg
 								["questID"] = 34239,
-								["coord"] = { 66.5, 86.9 },
+								["coords"] = {
+									{ 66.5, 86.9, 535 },
+								},
 								["g"] = {
 									i(117569),	-- Giant Deathweb Egg Toy
 								},
@@ -107,7 +119,9 @@ _.Zones =
 							{	-- Deceptia's Smoldering Boots
 								["objectID"] = 226976,	-- Deceptia's Smoldering Boots
 								["questID"] = 33933,
-								["coord"] = { 58.9, 12.0 },
+								["coords"] = {
+									{ 58.9, 12.0, 535 },
+								},
 								["g"] = {
 									i(108743),	-- Deceptia's Smoldering Boots Toy
 								},
@@ -115,7 +129,9 @@ _.Zones =
 							{	-- Echo of Murmur
 								["npcID"] = 77828,	-- Echo of Murmur
 								["questID"] = 34221,
-								["coord"] = { 34.0, 57.2 },
+								["coords"] = {
+									{ 34.0, 57.2, 535 },
+								},
 								["g"] = {	
 									i(113670),	-- Mournful Moan of Murmur Toy
 								},
@@ -133,11 +149,11 @@ _.Zones =
 									},
 								},
 								["coords"] = {
-									{ 39.9, 55.6 },
-									{ 46.3, 52.6 },
-									{ 47.1, 48.8 },
-									{ 52.1, 41.1 },
-									{ 52.3, 25.8 },
+									{ 39.9, 55.6, 535 },
+									{ 46.3, 52.6, 535 },
+									{ 47.1, 48.8, 535 },
+									{ 52.1, 41.1, 535 },
+									{ 52.3, 25.8, 535 },
 								},
 								["description"] = "Click on Edge of Reality, get teleported, click on egg for mount.|nIf you are on a realm not of your own when you click on Edge of Reality the mount will be mailed to you as you will not be teleported. |r",
 							},										
@@ -145,8 +161,8 @@ _.Zones =
 								["npcID"] = 80204,	-- Felbark
 								["questID"] = 35018,
 								["coords"] = {
-									{ 49.8, 83.4 },
-									{ 50.2, 85.4 },
+									{ 49.8, 83.4, 535 },
+									{ 50.2, 85.4, 535 },
 								},
 								["g"] = {	
 									i(112373),	-- Felbark's Shin
@@ -156,7 +172,9 @@ _.Zones =
 								["npcID"] = 82992,	-- Felfire Consort
 								["questID"] = 37341,
 								["isDaily"] = true,
-								["coord"] = { 47.6, 32.9 },
+								["coords"] = {
+									{ 47.6, 32.9, 535 },
+								},
 								["g"] = {
 									{	-- Felfire Consort
 										["achievementID"] = 9633,	-- Cut off the Head (Shattrath City)
@@ -170,7 +188,9 @@ _.Zones =
 							{	-- Foreman's Lunchbox
 								["objectID"] = 227956,	-- Foreman's Lunchbox
 								["questID"] = 34238,
-								["coord"] = { 57.5, 28.6 },
+								["coords"] = {
+									{ 57.5, 28.6, 535 },
+								},
 								["g"] = {
 									i(116120),	-- Tasty Talador Lunch
 								},
@@ -178,7 +198,9 @@ _.Zones =
 							{	-- Frenzied Golem
 								["npcID"] = 77614,	-- Frenzied Golem
 								["questID"] = 34145,
-								["coord"] = { 46.2, 55.0 },
+								["coords"] = {
+									{ 46.2, 55.0, 535 },
+								},
 								["g"] = {	
 									i(113288),	-- Shard of Contempt
 									i(113287),	-- Shard of Scorn
@@ -188,9 +210,9 @@ _.Zones =
 								["npcID"] = 78713,	-- Galzomar
 								["questID"] = 35219,
 								["coords"] = {
-									{ 56.6, 62.6 },
-									{ 56.6, 64.0 },
-									{ 56.4, 65.8 },
+									{ 56.6, 62.6, 535 },
+									{ 56.6, 64.0, 535 },
+									{ 56.4, 65.8, 535 },
 								},
 								["description"] = "Sikthis, Maiden of Slaughter, Kharazos the Triumphant, and Galzomar all share a spawn and drop the toy.",
 								["g"] = {	
@@ -200,7 +222,9 @@ _.Zones =
 							{	-- Gennadian
 								["npcID"] = 80471,	-- Gennadian
 								["questID"] = 34929,
-								["coord"]= { 67.4, 80.6 },
+								["coords"]= {
+									{ 67.4, 80.6, 535 },
+								},
 								["g"] = {
 									i(116075),	-- Scales of Gennadian
 								},
@@ -209,8 +233,8 @@ _.Zones =
 								["npcID"] = 77719,	-- Glimmerwing
 								["questID"] = 34189,
 								["coords"] = {
-									{ 30.4, 64.0 },
-									{ 33.2, 63.8 },
+									{ 30.4, 64.0, 535 },
+									{ 33.2, 63.8, 535 },
 								},
 								["g"] = {
 									i(116113),	-- Breath of Talador
@@ -219,7 +243,9 @@ _.Zones =
 							{	-- Grrbrrgle
 								["npcID"] = 85572,	-- Grrbrrgle
 								["questID"] = 36919,
-								["coord"] = { 22.2, 74.2 },
+								["coords"] = {
+									{ 22.2, 74.2, 535 },
+								},
 								["description"] = "Click on the Restless Crate.",
 								["g"] = {
 									i(120436),	-- Mrglrgirdle
@@ -229,7 +255,9 @@ _.Zones =
 								["npcID"] = 83019,	-- Gug'tol
 								["questID"] = 37340,
 								["isDaily"] = true,
-								["coord"] = { 47.6, 39.0 },
+								["coords"] = {
+									{ 47.6, 39.0, 535 },
+								},
 								["g"] = {
 									{	-- Gug'tol
 										["achievementID"] = 9633,	-- Cut off the Head (Shattrath City)
@@ -244,7 +272,9 @@ _.Zones =
 								["npcID"] = 83008,	-- Haakun the All-Consuming
 								["questID"] = 37312,
 								["isDaily"] = true,
-								["coord"] = { 48.0, 25.4 },
+								["coords"] = {
+									{ 48.0, 25.4, 535 },
+								},
 								["groups"] = {
 									{	-- Haakun the All-Consuming
 										["achievementID"] = 9633,	-- Cut off the Head (Shattrath City)
@@ -259,8 +289,8 @@ _.Zones =
 								["npcID"] = 77715,	-- Hammertooth
 								["questID"] = 34185,
 								["coords"] = {
-									{ 65.2, 43.0 },
-									{ 61.4, 49.2 },
+									{ 65.2, 43.0, 535 },
+									{ 61.4, 49.2, 535 },
 								},
 								["description"] = "Swims all around the area.",
 								["g"] = {	
@@ -271,9 +301,9 @@ _.Zones =
 								["npcID"] = 77626,	-- Hen-Mother Hami
 								["questID"] = 34167,
 								["coords"] = {
-									{ 75.8, 50.4 },
-									{ 77.4, 51.2 },
-									{ 78.4, 50.8 },
+									{ 75.8, 50.4, 535 },
+									{ 77.4, 51.2, 535 },
+									{ 78.4, 50.8, 535 },
 								},
 								["g"] = {	
 									i(112369),	-- Hami-Down Cloak
@@ -282,7 +312,9 @@ _.Zones =
 							{	-- Iron Box
 								["objectID"] = 228015,	-- Iron Box
 								["questID"] = 34251,
-								["coord"] = { 64.6, 79.2 },
+								["coords"] = {
+									{ 64.6, 79.2, 535 },
+								},
 								["g"] = {
 									i(117571),	-- Gordunni Skullthumper
 								},
@@ -291,8 +323,8 @@ _.Zones =
 								["objectID"] = 228570,	-- Ketya's Stash
 								["questID"] = 34290,
 								["coords"] = {
-									{ 53.3, 25.7 },	-- Cave Entrance
-									{ 54.0, 27.6 },	-- Ketya's Stash
+									{ 53.3, 25.7, 535 },	-- Cave Entrance
+									{ 54.0, 27.6, 535 },	-- Ketya's Stash
 								},
 								["description"] = "Enter cave at first set of coords.",
 								["modelScale"] = 1.5,
@@ -305,8 +337,8 @@ _.Zones =
 								["npcID"] = 78710,	-- Kharazos the Triumphant
 								["questID"] = 35219,
 								["coords"] = {
-									{ 56.6, 62.6 },
-									{ 56.6, 66.0 },
+									{ 56.6, 62.6, 535 },
+									{ 56.6, 66.0, 535 },
 								},
 								["description"] = "Sikthis, Maiden of Slaughter, Kharazos the Triumphant, and Galzomar all share a spawn and drop the toy.",
 								["g"] = {	
@@ -316,7 +348,9 @@ _.Zones =
 							{	-- Klikixx
 								["npcID"] = 78872,	-- Klikixx
 								["questID"] = 34498,
-								["coord"] = { 66.8, 85.6 },
+								["coords"] = {
+									{ 66.8, 85.6, 535 },
+								},
 								["g"] = {	
 									i(116125),	-- Klikixx's Webspinnner Toy
 								},
@@ -325,7 +359,9 @@ _.Zones =
 								["npcID"] = 82988,	-- Kurlosh Doomfang
 								["questID"] = 37348,
 								["isDaily"] = true,
-								["coord"] = { 37.4, 37.6 },
+								["coords"] = {
+									{ 37.4, 37.6, 535 },
+								},
 								["g"] = {
 									{	-- Kurlosh Doomfang
 										["achievementID"] = 9638,	-- Heralds of the Legion (Shattrath City)
@@ -340,7 +376,9 @@ _.Zones =
 								["npcID"] = 82942,	-- Lady Demlash
 								["questID"] = 37346,
 								["isDaily"] = true,
-								["coord"] = { 33.6, 37.8 },
+								["coords"] = {
+									{ 33.6, 37.8, 535 },
+								},
 								["g"] = {
 									{	-- Lady Demlash
 										["achievementID"] = 9638,	-- Heralds of the Legion (Shattrath City)
@@ -356,7 +394,9 @@ _.Zones =
 								["questID"] = 37342,
 								["isDaily"] = true,
 								["description"] = "Kill about 10 Council Soulspeaker's, then kill 3 waves of 3 mobs, then Legion Vanguard will spawn. Kill him.",
-								["coord"] = { 37.96, 20.8 },
+								["coords"] = {
+									{ 37.96, 20.8, 535 },
+								},
 								["g"] = {
 									{	-- Legion Vanguard
 										["achievementID"] = 9633,	-- Cut off the Head (Shattrath City)
@@ -370,7 +410,9 @@ _.Zones =
 							{	-- Lo'marg Jawcrusher
 								["npcID"] = 77784,	-- Lo'marg Jawcrusher
 								["questID"] = 34208,
-								["coord"] = { 49.2, 92.3 },
+								["coords"] = {
+									{ 49.2, 92.3, 535 },
+								},
 								["g"] = {
 									i(116070),	-- Tezzakel's Terrible Talisman
 								},
@@ -379,7 +421,9 @@ _.Zones =
 								["npcID"] = 82920,	-- Lord Korinak
 								["questID"] = 37345,
 								["isDaily"] = true,
-								["coord"] = { 31.0, 26.8 },
+								["coords"] = {
+									{ 31.0, 26.8, 535 },
+								},
 								["g"] = {
 									{	-- Lord Korinak
 										["achievementID"] = 9638,	-- Heralds of the Legion (Shattrath City)
@@ -393,7 +437,9 @@ _.Zones =
 							{	-- Luminous Shell
 								["objectID"] = 227954,	-- Luminous Shell
 								["questID"] = 34235,
-								["coord"] = { 52.5, 29.5 },
+								["coords"] = {
+									{ 52.5, 29.5, 535 },
+								},
 								["g"] = {
 									i(116132),	-- Snail Shell Necklace
 								},
@@ -402,7 +448,9 @@ _.Zones =
 								["npcID"] = 82998,	-- Matron of Sin
 								["questID"] = 37349,
 								["isDaily"] = true,
-								["coord"] = { 38.8, 49.8 },
+								["coords"] = {
+									{ 38.8, 49.8, 535 },
+								},
 								["g"] = {
 									{	-- Matron of Sin
 										["achievementID"] = 9638,	-- Heralds of the Legion (Shattrath City)
@@ -417,8 +465,8 @@ _.Zones =
 								["npcID"] = 79334,	-- No'losh
 								["questID"] = 34859,
 								["coords"] = {
-									{ 86.4, 30.8 },
-									{ 86.0, 29.6 },
+									{ 86.4, 30.8, 535 },
+									{ 86.0, 29.6, 535 },
 								},
 								["g"] = {
 									i(116077),	-- Pulsating Brain of No'losh
@@ -429,7 +477,9 @@ _.Zones =
 								["questID"] = 37344,
 								["isDaily"] = true,
 								["description"] = "|cff66ccffRequires 5 players to summon. Stand on runes.|r",
-								["coord"] = { 31.4, 47.6 },
+								["coords"] = {
+									{ 31.4, 47.6, 535 },
+								},
 								["g"] = {
 									{	-- Orumo the Observer
 										["achievementID"] = 9638,	-- Heralds of the Legion (Shattrath City)
@@ -446,7 +496,9 @@ _.Zones =
 							{	-- Pure Crystal Dust
 								["objectID"] = 228026,	-- Pure Crystal Dust
 								["questID"] = 34263,
-								["coord"] = { 78.3, 14.8 },
+								["coords"] = {
+									{ 78.3, 14.8, 535 },
+								},
 								["g"] = {
 									i(117572),	-- Iridium Inlaid Band
 								},
@@ -454,7 +506,9 @@ _.Zones =
 							{	-- Ra'kahn
 								["npcID"] = 77741,	-- Ra'kahn
 								["questID"] = 34196,
-								["coord"] = { 59.48, 59.96 },
+								["coords"] = {
+									{ 59.48, 59.96, 535 },
+								},
 								["g"] = {	
 									i(116112),	-- Ra'kahn's Bite
 								},
@@ -462,7 +516,9 @@ _.Zones =
 							{	-- Rusted Lockbox
 								["objectID"] = 228483,	-- Rusted Lockbox
 								["questID"] = 34276,
-								["coord"] = { 65.9, 85.2 },
+								["coords"] = {
+									{ 65.9, 85.2, 535 },
+								},
 								["modelID"] = 34286,
 								["g"] = {
 									-- Weapons
@@ -587,9 +643,9 @@ _.Zones =
 								["isDaily"] = true,
 								["description"] = "Strategist Ankor, Archmagus Tekar, and Soulbinder Naylana. \n\nPatrols the area in roughly a circle.|r",	
 								["coords"] = {
-									{ 43.8, 26.4 },
-									{ 45.8, 27.8 },
-									{ 46.8, 31.0 },
+									{ 43.8, 26.4, 535 },
+									{ 45.8, 27.8, 535 },
+									{ 46.8, 31.0, 535 },
 								},
 								["g"] = {
 									{	-- Sargerei War Council
@@ -605,7 +661,9 @@ _.Zones =
 								["npcID"] = 82930,	-- Shadowflame Terrorwalker
 								["questID"] = 37347,
 								["isDaily"] = true,
-								["coord"] = { 41.0, 42.0 },
+								["coords"] = {
+									{ 41.0, 42.0, 535 },
+								},
 								["g"] = {
 									{	-- Shadowflame Terrorwalker
 										["achievementID"] = 9638,	-- Heralds of the Legion (Shattrath City)
@@ -620,8 +678,8 @@ _.Zones =
 								["npcID"] = 79543,	-- Shirzir
 								["questID"] = 34671,
 								["coords"] = {
-									{ 41.44, 60.14 },	-- Tomb of Souls Entrance
-									{ 42.8, 54.2 },		-- Shirzir
+									{ 41.44, 60.14, 535 },	-- Tomb of Souls Entrance
+									{ 42.8, 54.2, 535 },		-- Shirzir
 								},
 								["description"] = "Enter cave at first set of coords.",
 								["g"] = {	
@@ -632,9 +690,9 @@ _.Zones =
 								["npcID"] = 78715,	-- Sikthiss, Maiden of Slaughter
 								["questID"] = 35219,
 								["coords"] = {
-									{ 56.2, 65.4 },
-									{ 56.6, 62.6 },
-									{ 56.6, 66.4 },
+									{ 56.2, 65.4, 535 },
+									{ 56.6, 62.6, 535 },
+									{ 56.6, 66.4, 535 },
 								},
 								["description"] = "Sikthiss, Maiden of Slaughter, Kharazos the Triumphant, and Galzomar all share a spawn and drop the toy.",
 								["g"] = {
@@ -644,11 +702,11 @@ _.Zones =
 							{	-- Silthide	**Coords uncofirmed, relied on wowhead**
 								["npcID"] = 51015,	-- Silthide
 								["coords"] = {
-									{ 62.0, 33.2 },
-									{ 62.6, 46.0 },
-									{ 80.4, 56.0 },
-									{ 67.4, 59.8 },
-									{ 54.8, 81.4 },
+									{ 62.0, 33.2, 535 },
+									{ 62.6, 46.0, 535 },
+									{ 80.4, 56.0, 535 },
+									{ 67.4, 59.8, 535 },
+									{ 54.8, 81.4, 535 },
 								},
 								["g"] = {
 									i(116767), -- Sapphire Riverbeast Mount
@@ -658,8 +716,8 @@ _.Zones =
 								["objectID"] = 228018,	-- Soulbinder's Reliquary
 								["questID"] = 34254,
 								["coords"] = {
-									{ 41.44, 60.14 },	-- Tomb of Souls Entrance
-									{ 39.5, 55.2 },	-- Soulbinder's Reliquary
+									{ 41.44, 60.14, 535 },	-- Tomb of Souls Entrance
+									{ 39.5, 55.2, 535 },	-- Soulbinder's Reliquary
 								},
 								["description"] = "Enter cave at first set of coords.",
 								["g"] = {
@@ -685,7 +743,9 @@ _.Zones =
 							{	-- Steeltusk
 								["npcID"] = 86549,	-- Steeltusk
 								["questID"] = 36858,
-								["coord" ] = { 67.7, 35.8 },
+								["coords" ] = {
+									{ 67.7, 35.8, 535 },
+								},
 								["g"] = {	
 									i(117562), -- Steeltusk's Steel Tusk
 								},
@@ -693,7 +753,9 @@ _.Zones =
 							{	-- Taladorantula
 								["npcID"] = 77634,	-- Taladorantula
 								["questID"] = 34171,
-								["coord" ] = { 59.0, 87.4 },
+								["coords" ] = {
+									{ 59.0, 87.4, 535 },
+								},
 								["description"] = "Kill small spiders around the eggsacs until you see warnings. The third warning should spawn the mob.",
 								["g"] = {	
 									i(116126),	-- Taladorantula Terrofang
@@ -702,7 +764,9 @@ _.Zones =
 							{	-- Talonpriest Zorkra
 								["npcID"] = 79485,	-- Talonpriest Zorkra
 								["questID"] = 34668,
-								["coord"] = { 53.83, 91.35 },
+								["coords"] = {
+									{ 53.83, 91.35, 535 },
+								},
 								["g"] = {	
 									i(116110),	-- Zorkra's Hood
 								},
@@ -719,7 +783,9 @@ _.Zones =
 							{	-- Underseer Bloodmane
 								["npcID"] = 80524,	-- Underseer Bloodmane
 								["questID"] = 35491,
-								["coord"] = { 63.6, 20.8 }, 
+								["coords"] = {
+									{ 63.6, 20.8, 535 }, 
+								},
 								["g"] = {
 									i(112475),	-- Prize's Horn-Ring
 								},
@@ -729,9 +795,9 @@ _.Zones =
 								["questID"] = 37350,
 								["isDaily"] = true,
 								["coords"] = {
-									{ 36.8, 40.8 },
-									{ 37.6, 41.0 },
-									{ 37.6, 43.2 },
+									{ 36.8, 40.8, 535 },
+									{ 37.6, 41.0, 535 },
+									{ 37.6, 43.2, 535 },
 								},
 								["g"] = {
 									{	-- Vigilant Paarthos
@@ -746,7 +812,9 @@ _.Zones =
 							{	-- Viperlash
 								["npcID"] = 77564,	-- Viperlash
 								["questID"] = 34148,
-								["coord"] = { 37.6, 74.7 },
+								["coords"] = {
+									{ 37.6, 74.7, 535 },
+								},
 								["description"] = "The spear spawns from the corpse of Viperlash.",
 								["g"] = {
 									o(227654, { 	-- Bonechewer Spear
@@ -757,7 +825,9 @@ _.Zones =
 							{	-- Wandering Vindicator
 								["npcID"] = 77776,	-- Wandering Vindicator
 								["questID"] = 34205,
-								["coord"] = { 69.6, 33.6 },
+								["coords"] = {
+									{ 69.6, 33.6, 535 },
+								},
 								["description"] = "After defeating him he turns friendly and tells you to loot his sword.",
 								["g"] = {
 									{	-- Hope	
@@ -772,7 +842,9 @@ _.Zones =
 								["npcID"] = 82922,	-- Xothear, the Destroyer
 								["questID"] = 37343,
 								["isDaily"] = true,
-								["coord"] = { 37.6, 14.6 },
+								["coords"] = {
+									{ 37.6, 14.6, 535 },
+								},
 								["g"] = {
 									{	-- Xothear, the Destroyer
 										["achievementID"] = 9633,	-- Cut off the Head (Shattrath City)
@@ -786,7 +858,9 @@ _.Zones =
 							{	-- Yazheera the Incinerator
 								["npcID"] = 77529,	-- Yazheera the Incinerator
 								["questID"] = 34135,
-								["coord"] = { 53.8, 25.8},
+								["coords"] = {
+									{ 53.8, 25.8, 535 },
+								},
 								["g"] = {	
 									i(112263),	-- Yazheera's Burning Bracers
 								},
