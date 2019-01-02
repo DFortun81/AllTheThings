@@ -2655,6 +2655,16 @@ _.ExpansionFeatures =
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 34775,	-- Mission Probable
 					},
+					{	-- Blessing of the Wolf
+						["objectID"] = 233263,	-- Blessing of the Wolf // Frostwolf Shamanstone
+						["questID"] = 33977,	-- Blessing of the Wolf
+						["coords"] = {
+							{ 48.91, 52.21, 590 },	-- Tier 1 Garrison
+							{ 48.47, 52.12, 590 },	-- Tier 2 Garrison
+							{ 48.67, 52.21, 590 },	-- Tier 3 Garrison
+						},
+						["races"] = HORDE_ONLY,
+					},
 					{	-- Bringing the Bass
 						["questID"] = 37961,
 						["qg"] = 37961,	-- Drix Bassbolter

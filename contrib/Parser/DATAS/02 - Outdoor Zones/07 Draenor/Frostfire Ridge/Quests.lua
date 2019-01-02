@@ -9,24 +9,18 @@ _.Zones =
 			{	-- Frostfire Ridge
 				["mapID"] = 525,	-- Frostfire Ridge
 				["g"] = {
-					n(-17, { 	-- Quests
-					--[[ Tracking/Flags
-						33847 - Flag: Seen Ga'nar Rolling Out - triggered going into Chillfang's cave immediately upon getting to Draenor
-						34332 - Touched by Fire Selected - triggers when choosing "Touched by Fire" at a shamanstone for the first time
-						34330 - Ogrish Fortitude Selected - triggers when choosing "Ogrish Fortitude" at a  shamanstone for the first time
-						33909 - Flag: Seen Ga'nar Rolling Out to Bladespire - triggers shortly after reaching Wor'gol during "Den of Wolves"
-						33846 - Flag: Seen Thrall Cyclone - triggers during "These Colors Don't Run"
-						33443 - Barrier Destroyed - triggers upon reaching the top of the walkway with rolling fireballs in Bladespire Citadel during "Great Balls of Fire!"
-						34510 - Tracking Event: Catapuls 'n' Clefthoof - triggered after riding the wolf down Bladespire Citadel during "Moving In"
-						34511 - Tracking Event: Ogre Drag - triggered after riding the wolf down Bladespire Citadel during "Moving In"
-						34328 - Blessing of the Wolf Selected - triggered when choosing "Blessing of the Wolf" at a shamanstone for the first time
-						33978 - Spirit of the Wolf - triggered near the Shamanstone in Wor'gol during "Honor Has Its Rewards"
-						33456 - Spirit of the Wolf - triggered near the Shamanstone in Wor'gol during "Honor Has Its Rewards"
-						34715 - Tracking Flag: Shamanstone Summons - triggered near the Shamanstone in Wor'gol during "Honor Has Its Rewards"
-						34331 - Spirit of the Wolf Selected - triggers when choosing "Spirit of the Wolf" at a shamanstone for the first time
-						34654 - Tracking Flag: Dagg Found at Daggermaw Ravine - triggers when you open Dagg's cage at 39.6, 28.1
-					]]--
-						["groups"] = {
+					{	-- Quests
+						["npcID"] = -17,	-- Quests
+						["g"] = {
+							--[[ Tracking/Flags
+								33847 - Flag: Seen Ga'nar Rolling Out - triggered going into Chillfang's cave immediately upon getting to Draenor
+								33909 - Flag: Seen Ga'nar Rolling Out to Bladespire - triggers shortly after reaching Wor'gol during "Den of Wolves"
+								33846 - Flag: Seen Thrall Cyclone - triggers during "These Colors Don't Run"
+								33443 - Barrier Destroyed - triggers upon reaching the top of the walkway with rolling fireballs in Bladespire Citadel during "Great Balls of Fire!"
+								34510 - Tracking Event: Catapuls 'n' Clefthoof - triggered after riding the wolf down Bladespire Citadel during "Moving In"
+								34511 - Tracking Event: Ogre Drag - triggered after riding the wolf down Bladespire Citadel during "Moving In"
+								34654 - Tracking Flag: Dagg Found at Daggermaw Ravine - triggers when you open Dagg's cage at 39.6, 28.1
+							]]--
 							ach(8671, {	-- Frostfire Ridge
 								["groups"] = {
 									crit(1, {	-- Foothold in a Savage Land
@@ -394,6 +388,14 @@ _.Zones =
 									},
 								},
 							},
+							{	-- Buffeting Galefury [H Only]
+								["objectID"] = 226468,	-- Buffeting Galefury // Frostwolf Shamanstone
+								["questID"] = 33979,	-- Buffeting Galefury
+								["coords"] = {
+									{ 65.14, 79.11, 525 },
+								},
+								["races"] = HORDE_ONLY,
+							},
 							{	-- Burn Them Down
 								["questID"] = 34073,
 								["qg"] = 77210,	-- Scout Ruk'Gan
@@ -677,9 +679,12 @@ _.Zones =
 								["coord"] = { 41.6, 52.9, 525 },
 								["races"] = HORDE_ONLY,
 							},
-							{	-- Ogrish Fortitude
-								["questID"] = 33980,
-								["coord"] = { 43.9, 12.3, 525 },
+							{	-- Ogrish Fortitude [H Only]
+								["objectID"] = 239925,	-- Ogrish Fortitude // Frostwolf Shamanstone
+								["questID"] = 33980,	-- Ogrish Fortitude
+								["coords"] = {
+									{ 43.84, 12.32, 525 },
+								},
 								["races"] = HORDE_ONLY,
 							},
 							{	-- Only the Winner -- aa
@@ -762,6 +767,14 @@ _.Zones =
 								["questID"] = 33838,
 								["qg"] = 74977,	-- Initiate Na'Shra
 								["coord"] = { 65.0, 39.5, 525 },
+								["races"] = HORDE_ONLY,
+							},
+							{	-- Spirit of the Wolf [H Only]
+								["objectID"] = 33978,	-- Spirit of the Wolf // Frostwolf Shamanstone
+								["questID"] = 33978,	-- Spirit of the Wolf
+								["coords"] = {
+									{ 17.47, 56.68, 525 },
+								},
 								["races"] = HORDE_ONLY,
 							},
 							{	-- Stealing the Declaration
@@ -906,9 +919,21 @@ _.Zones =
 									i(113148),	-- Foulspawn Drape
 								},
 							},
-							{	-- Touched by Fire
-								["questID"] = 33981,
-								["coord"] = { 36.9, 33.2, 525 },
+							{	-- Touched by Fire [H Only]
+								["objectID"] = 239926,	-- Touched By Fire // Frostwolf Shamanstone
+								["questID"] = 33981,	-- Touched By Fire
+								["coords"] = {
+									{ 36.98, 33.11, 525 },
+								},
+								["races"] = HORDE_ONLY,
+							},
+							{	-- Touched By Ice [H Only]
+								["objectID"] = 230544,	-- Touched By Ice // Frostwolf Shamanstone
+								["questID"] = 33982,	-- Touched By Ice
+								["coords"] = {
+									{ 60.35, 13.65, 525 },
+								},
+								["races"] = HORDE_ONLY,
 							},
 							{	-- Vul'gath's End
 								["questID"] = 34075,
@@ -956,7 +981,7 @@ _.Zones =
 								["races"] = HORDE_ONLY,
 							},
 						},
-					}),
+					},
 				},
 			},
 		},
