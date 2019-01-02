@@ -14,6 +14,7 @@ _.ExpansionFeatures =
 				["races"] = HORDE_ONLY,
 				["maps"] = {
 					1156,	-- The Great Sea
+					1176,	-- Breath of Paku
 				},
 				["lvl"] = 110,
 				--["maps"] = {
