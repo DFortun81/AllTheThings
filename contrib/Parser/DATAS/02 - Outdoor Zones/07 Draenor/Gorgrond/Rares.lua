@@ -18,9 +18,9 @@ _.Zones =
 								["questID"] = 37371,
 								["isDaily"] = true,
 								["coords"] = { 
-									{ 56.2, 40.8 },
-									{ 58.6, 41.2 },
-									{ 71.4, 40.2 },
+									{ 56.2, 40.8, 543 },
+									{ 58.6, 41.2, 543 },
+									{ 71.4, 40.2, 543 },
 								},
 								["g"] = {
 									{	-- Alkali
@@ -35,7 +35,9 @@ _.Zones =
 							{	-- Bashiok
 								["npcID"] = 82085,	-- Bashiok
 								["questID"] = 35335,
-								["coord"] = { 40.0, 79.0 },
+								["coords"] = {
+									{ 40.0, 79.0, 543 },
+								},
 								["g"] = {	
 									i(118222),	-- Spirit of Bashiok Toy
 								},
@@ -43,7 +45,9 @@ _.Zones =
 							{	-- Berthora
 								["npcID"] = 85907,	-- Berthora
 								["questID"] = 36597,
-								["coord"] = { 39.4, 74.6 },
+								["coords"] = {
+									{ 39.4, 74.6, 543 },
+								},
 								["g"] = {	
 									i(118232),	-- Scaled Riverbeast Spaulders
 								},
@@ -53,8 +57,8 @@ _.Zones =
 								["questID"] = 37368,
 								["isDaily"] = true,
 								["coords"] = {
-									{ 46.0, 31.4 },
-									{ 45.8, 33.2 },
+									{ 46.0, 31.4, 543 },
+									{ 45.8, 33.2, 543 },
 								},
 								["g"] = {
 									{	-- Blademaster Ro'gor
@@ -69,7 +73,9 @@ _.Zones =
 							{	-- Brokor's Sack
 								["objectID"] = 235859,	-- Brokor's Sack
 								["questID"] = 36506,
-								["coord"] = { 41.7, 52.9 },
+								["coords"] = {
+									{ 41.7, 52.9, 543 },
+								},
 								["g"] = {
 									i(118702), -- Brokor's Walking Stick
 								},
@@ -77,7 +83,9 @@ _.Zones =
 							{	-- Char the Burning
 								["npcID"]= 82311,	-- Char the Burning
 								["questID"] = 35503,
-								["coord"] = { 53.4, 44.6 },
+								["coords"] = {
+									{ 53.4, 44.6, 543 },
+								},
 								["g"] = {	
 									i(118212), -- Char's Smoldering Fist
 								},
@@ -86,7 +94,9 @@ _.Zones =
 								["npcID"] = 86566,	-- Defector Dazgo
 								["questID"] = 37362,
 								["isDaily"] = true,
-								["coord"] = { 48.25, 20.83 },
+								["coords"] = {
+									{ 48.25, 20.83, 543 },
+								},
 								["g"] = {
 									{	-- Defector Dazgo
 										["achievementID"] = 9655,	-- Fight the Power (The Pit)
@@ -101,7 +111,9 @@ _.Zones =
 								["npcID"] = 82058,	-- Depthroot
 								["questID"] = 37370,
 								["isDaily"] = true,
-								["coord"] = { 72.6, 40.8 },						
+								["coords"] = {
+									{ 72.6, 40.8, 543 },
+								},
 								["g"] = {
 									{	-- Depthroot
 										["achievementID"] = 9678,	-- Ancient No More (Everbloom Wilds)
@@ -115,7 +127,9 @@ _.Zones =
 							{	-- Discarded Pack
 								["objectID"] = 236141,	-- Discarded Pack
 								["questID"] = 36625,
-								["coord"] = { 42.4, 83.5 },
+								["coords"] = {
+									{ 42.4, 83.5, 543 },
+								},
 								["g"] = {
 									-- Weapons
 									i(116508),	-- Creeperclaw Axe
@@ -189,7 +203,9 @@ _.Zones =
 								["npcID"] = 86571,	-- Durp the Hated
 								["questID"] = 37366,
 								["isDaily"] = true,
-								["coord"] = { 49.8, 23.8 },
+								["coords"] = {
+									{ 49.8, 23.8, 543 },
+								},
 								["g"] = {
 									{	-- Durp the Hated
 										["achievementID"] = 9655,	-- Fight the Power (The Pit)
@@ -213,18 +229,20 @@ _.Zones =
 									},
 								},
 								["coords"] = {
-									{ 51.6, 38.8 },
-									{ 54.0, 45.8 },
-									{ 56.0, 40.7 },
-									{ 43.3, 34.2 },
-									{ 46.9, 21.2 },
+									{ 51.6, 38.8, 543 },
+									{ 54.0, 45.8, 543 },
+									{ 56.0, 40.7, 543 },
+									{ 43.3, 34.2, 543 },
+									{ 46.9, 21.2, 543 },
 								},
 								["description"] = "Click on Edge of Reality, get teleported, click on egg for mount.|nIf you are on a realm not of your own when you click on Edge of Reality the mount will be mailed to you as you will not be teleported. |r",
 							},					
 							{	-- Evermorn Supply Cache
 								["objectID"] = 236178,	-- Evermorn Supply Cache
 								["questID"] = 36658,
-								["coord"] = { 41.8, 78.1 },
+								["coords"] = {
+									{ 41.8, 78.1, 543 },
+								},
 								["g"] = {
 									-- Weapons
 									i(116508),	-- Creeperclaw Axe
@@ -300,8 +318,8 @@ _.Zones =
 								["isDaily"] = true,
 								["description"] = "Will spawn in the area that is one fire.",
 								["coords"] = { 
-									{ 57.8, 36.6 },
-									{ 72.8, 35.8 },
+									{ 57.8, 36.6, 543 },
+									{ 72.8, 35.8, 543 },
 								},
 								["g"] = {
 									{	-- Firestarter Grash
@@ -316,7 +334,9 @@ _.Zones =
 							{	-- Fossilwood the Petrified
 								["npcID"] = 85250,	-- Fossilwood the Petrified
 								["questID"] = 36387,
-								["coord"] = { 57.4, 68.6 },
+								["coords"] = {
+									{ 57.4, 68.6, 543 },
+								},
 								["g"] = {	
 									i(118221),	-- Petrification Stone Toy
 								},						
@@ -325,8 +345,8 @@ _.Zones =
 								["npcID"] = 81038,	-- Gelgor of the Blue Flame
 								["questID"] = 36391,
 								["coords"] = { 
-									{ 43.5, 48.1 },	-- Cave Entrance
-									{ 41.8, 45.6 },	-- Gelgor
+									{ 43.5, 48.1, 543 },	-- Cave Entrance
+									{ 41.8, 45.6, 543 },	-- Gelgor
 								},
 								["description"] = "Cave entrance is first set of coords, rare is at second set in the cave.",
 								["g"] = {
@@ -336,8 +356,8 @@ _.Zones =
 							{	-- Glut
 								["npcID"] = 80868,	-- Glut
 								["coords"] = { 
-									{ 44.5, 50.8 },	-- Cave Entrance
-									{ 46.0, 50.8 },	-- Glut
+									{ 44.5, 50.8, 543 },	-- Cave Entrance
+									{ 46.0, 50.8, 543 },	-- Glut
 								},
 								["description"] = "Cave entrance is first set of coords, rare is at second set in the cave.",
 								["g"] = {
@@ -348,7 +368,9 @@ _.Zones =
 								["npcID"] = 78269,	-- Gnarljaw
 								["questID"] = 37413,
 								["isDaily"] = true,
-								["coord"] = { 52.8, 53.6 },
+								["coords"] = {
+									{ 52.8, 53.6, 543 },
+								},
 								["g"] = {	
 									i(119397), -- Gnarled Goren Jaw
 								},						
@@ -357,8 +379,8 @@ _.Zones =
 								["npcID"] = 84431,	-- Greldrok the Cunning
 								["questID"] = 36186,
 								["coords"] = { 
-									{ 46.4, 45.4 },	-- Cave Entrance
-									{ 46.8, 43.2 },	-- Greldrok the Cunning
+									{ 46.4, 45.4, 543 },	-- Cave Entrance
+									{ 46.8, 43.2, 543 },	-- Greldrok the Cunning
 								},
 								["description"] = "Cave entrance is first set of coords, rare is at second set in the cave.",
 								["g"] = {	
@@ -369,7 +391,9 @@ _.Zones =
 								["npcID"] = 88583,	-- Grove Warden Yal
 								["questID"] = 37375,
 								["isDaily"] = true,
-								["coord"] = { 59.6, 43.0 },						
+								["coords"] = {
+									{ 59.6, 43.0, 543 },
+								},
 								["g"] = {
 									{	-- Grove Warden Yal
 										["achievementID"] = 9678,	-- Ancient No More (Everbloom Wilds)
@@ -383,7 +407,9 @@ _.Zones =
 							{	-- Hive Queen Skrikka
 								["npcID"] = 83522,	-- Hive Queen Skrikka
 								["questID"] = 35908,
-								["coord"] = { 52.2, 70.2 },						
+								["coords"] = {
+									{ 52.2, 70.2, 543 },						
+								},
 								["g"] = {	
 									i(118209), -- Skrikka's Mandible
 								},
@@ -393,8 +419,8 @@ _.Zones =
 								["questID"] = 37365,
 								["isDaily"] = true,
 								["coords"] = { 
-									{ 46.0, 28.6 },
-									{ 45.71, 26.53 },
+									{ 46.0, 28.6, 543 },
+									{ 45.71, 26.53, 543 },
 								},
 								["g"] = {
 									{	-- Horgg
@@ -410,7 +436,9 @@ _.Zones =
 								["npcID"] = 88672,	-- Hunter Bal'ra
 								["questID"] = 37377,
 								["isDaily"] = true,
-								["coord"] = { 55.0, 46.2 },						
+								["coords"] = {
+									{ 55.0, 46.2, 543 },
+								},
 								["g"] = {
 									{	-- Hunter Bal'ra
 										["achievementID"] = 9678,	-- Ancient No More (Everbloom Wilds)
@@ -425,7 +453,9 @@ _.Zones =
 								["npcID"] = 86574,	-- Inventor Blammo
 								["questID"] = 37367,
 								["isDaily"] = true,
-								["coord"] = { 47.6, 30.8 },
+								["coords"] = {
+									{ 47.6, 30.8, 543 },
+								},
 								["g"] = {
 									{	-- Inventor Blammo
 										["achievementID"] = 9655,	-- Fight the Power (The Pit)
@@ -440,7 +470,9 @@ _.Zones =
 								["npcID"] = 78260,	-- King Slime
 								["questID"] = 37412,
 								["isDaily"] = true,
-								["coord"] = { 52.2, 55.6 },
+								["coords"] = {
+									{ 52.2, 55.6, 543 },
+								},
 								["g"] = {	
 									i(119351),	-- Slime Coated Kingscloak
 								},
@@ -448,7 +480,9 @@ _.Zones =
 							{	-- Mandrakor
 								["npcID"] = 84406,	-- Mandrakor
 								["questID"] = 36178,
-								["coord"] = { 50.6, 53.2 },
+								["coords"] = {
+									{ 50.6, 53.2, 543 },
+								},
 								["g"] = {		
 									i(118709),	-- Doom Bloom Pet
 								},
@@ -457,7 +491,9 @@ _.Zones =
 								["npcID"] = 86562,	-- Maniacal Madgard
 								["questID"] = 37363,
 								["isDaily"] = true,
-								["coord"] = { 49.17, 33.11 },
+								["coords"] = {
+									{ 49.17, 33.11, 543 },
+								},
 								["g"] = {
 									{	-- Maniacal Madgard
 										["achievementID"] = 9655,	-- Fight the Power (The Pit)
@@ -472,7 +508,9 @@ _.Zones =
 								["npcID"] = 88586,	-- Mogamago
 								["questID"] = 37376,
 								["isDaily"] = true,
-								["coord"] = { 61.6, 39.2 },
+								["coords"] = {
+									{ 61.6, 39.2, 543 },
+								},
 								["g"] = {
 									{	-- Mogamago
 										["achievementID"] = 9678,	-- Ancient No More (Everbloom Wilds)
@@ -488,8 +526,8 @@ _.Zones =
 								["questID"] = 37364,
 								["isDaily"] = true,
 								["coords"] = {
-									{ 46.6, 23.0 },
-									{ 45.8, 24.0 },
+									{ 46.6, 23.0, 543 },
+									{ 45.8, 24.0, 543 },
 								},
 								["g"] = {
 									{	-- Morgo Kain
@@ -505,8 +543,8 @@ _.Zones =
 								["npcID"] = 76473,	-- Mother Araneae
 								["questID"] = 34726,
 								["coords"] = { 
-									{ 52.2, 76.7 },	-- Cave Entrance
-									{ 53.4, 78.2 },	-- Mother Araneae
+									{ 52.2, 76.7, 543 },	-- Cave Entrance
+									{ 53.4, 78.2, 543 },	-- Mother Araneae
 								},
 								["description"] = "Cave entrance is first set of coords, rare is at second set in the cave.",
 								["g"] = {	
@@ -516,7 +554,9 @@ _.Zones =
 							{	-- Odd Skull
 								["objectID"] = 236715,	-- Odd Skull
 								["questID"] = 36509,
-								["coord"] = { 52.5, 66.9 },
+								["coords"] = {
+									{ 52.5, 66.9, 543 },
+								},
 								["g"] = {
 									i(118717),	-- Beastskull Vessel
 								},
@@ -524,7 +564,9 @@ _.Zones =
 							{	-- Pile of Rubble
 								["objectID"] = 233792,	-- Pile of Rubble
 								["questID"] = 36118,
-								["coord"] = { 43.9, 70.6 },
+								["coords"] = {
+									{ 43.9, 70.6, 543 },
+								},
 								["g"] = {
 									-- Weapons
 									i(116508),	-- Creeperclaw Axe
@@ -597,11 +639,11 @@ _.Zones =
 							{	-- Poundfist	**Coords uncofirmed, relied on wowhead**
 								["npcID"] = 50985,	-- Poundfist
 								["coords"] = {
-									{ 42.0, 25.0 },
-									{ 51.4, 43.1 },
-									{ 45.4, 47.5 },
-									{ 47.0, 54.1 },
-									{ 43.2, 55.5 },
+									{ 42.0, 25.0, 543 },
+									{ 51.4, 43.1, 543 },
+									{ 45.4, 47.5, 543 },
+									{ 47.0, 54.1, 543 },
+									{ 43.2, 55.5, 543 },
 								},
 								["g"] = {
 									i(116792),	-- Sunhide Gronnling Mount
@@ -613,7 +655,9 @@ _.Zones =
 								["modelID"]	= 57964,
 								["isDaily"] = true,
 								["description"] = "Kill Basten LAST or you will not be able to loot him.",
-								["coord"] = { 69.2, 44.6 },
+								["coords"] = {
+									{ 69.2, 44.6, 543 },
+								},
 								["g"] = {
 									{	-- Protectors of the Grove
 										["achievementID"] = 9678,	-- Ancient No More (Everbloom Wilds)
@@ -630,7 +674,9 @@ _.Zones =
 							{	-- Riptar
 								["npcID"] = 85970,	-- Riptar
 								["questID"] = 36600,
-								["coord"] = { 37.6, 81.4 },
+								["coords"] = {
+									{ 37.6, 81.4, 543 },
+								},
 								["groups"] = {	
 									i(118231),	-- Riptar's Clever Claw
 								},
@@ -638,7 +684,9 @@ _.Zones =
 							{	-- Rolkor
 								["npcID"] = 85264,	-- Rolkor
 								["questID"] = 36393,
-								["coord"] = { 47.8, 41.6 },
+								["coords"] = {
+									{ 47.8, 41.6, 543 },
+								},
 								["g"] = {
 									i(118211),	-- Rolkor's Rage
 								},
@@ -646,7 +694,7 @@ _.Zones =
 							{	-- Sasha's Secret Stash
 								["objectID"] = 236149,	-- Sasha's Secret Stash
 								["questID"] = 36631,
-								["coord"] = { 39.0, 68.1 },
+								["coords"] = { 39.0, 68.1 },
 								["g"] = {
 									-- Weapons
 									i(116508),	-- Creeperclaw Axe
@@ -719,7 +767,9 @@ _.Zones =
 							{	-- Sniper's Crossbow
 								["objectID"] = 236158,	-- Sniper's Crossbow
 								["questID"] = 36634,
-								["coord"] = { 45.0, 42.6 },
+								["coords"] = {
+									{ 45.0, 42.6, 543 },
+								},
 								["g"] = {
 									i(118713), -- Iron Lookout's Arbalest
 								},
@@ -727,7 +777,9 @@ _.Zones =
 							{	-- Stashed Emergency Rucksack
 								["objectID"] = 236092,	-- Stashed Emergency Rucksack
 								["questID"] = 36604,
-								["coord"] = { 48.1, 93.4 },
+								["coords"] = {
+									{ 48.1, 93.4, 543 },
+								},
 								["g"] = {	
 									-- Weapons
 									i(116508),	-- Creeperclaw Axe
@@ -800,7 +852,9 @@ _.Zones =
 							{	-- Stompalupagus
 								["npcID"] = 86520,	-- Stompalupagus
 								["questID"] = 36837,
-								["coord"] = { 55.0, 71.0 },
+								["coords"] = {
+									{ 55.0, 71.0, 543 },
+								},
 								["g"] = {	
 									i(118228),	-- Smashalupagus
 								},
@@ -808,7 +862,9 @@ _.Zones =
 							{	-- Stomper Kreego
 								["npcID"] = 79629,	-- Stomper Kreego
 								["questID"] = 35910,
-								["coord"] = { 38.2, 66.2 },
+								["coords"] = {
+									{ 38.2, 66.2, 543 },
+								},
 								["g"] = {
 									i(118224),	-- Ogre Brewing Kit
 								},
@@ -816,7 +872,9 @@ _.Zones =
 							{	-- Strange Looking Dagger
 								["objectID"] = 231069,	-- Strange Looking Dagger
 								["questID"] = 34940,
-								["coord"] = { 53.0, 80.0 },
+								["coords"] = {
+									{ 53.0, 80.0, 543 },
+								},
 								["g"] = {
 									i(118718),	-- Pale Bloodthief Dagger
 								},
@@ -824,7 +882,9 @@ _.Zones =
 							{	-- Strange Spore
 								["objectID"] = 237511,	-- Strange Spore
 								["questID"] = 37249,
-								["coord"] = { 57.1, 65.3 },
+								["coords"] = {
+									{ 57.1, 65.3, 543 },
+								},
 								["g"] = {
 									i(118106),	-- Crimson Spore Pet
 								},
@@ -833,8 +893,8 @@ _.Zones =
 								["npcID"] = 80725,	-- Sulfurious
 								["questID"] = 36394,
 								["coords"] = {
-									{ 39.4, 60.6 },
-									{ 41.2, 60.8 },
+									{ 39.4, 60.6, 543 },
+									{ 41.2, 60.8, 543 },
 								},
 								["g"] = {	
 									i(114227),	-- Bubble Wand Toy
@@ -843,7 +903,9 @@ _.Zones =
 							{	-- Sunclaw
 								["npcID"] = 86137,	-- Sunclaw
 								["questID"] = 36656,
-								["coord"] = { 44.6, 92.2 },
+								["coords"] = {
+									{ 44.6, 92.2, 543 },
+								},
 								["g"] = {	
 									i(118223), -- Sunclaw
 								},
@@ -852,7 +914,9 @@ _.Zones =
 								["npcID"] = 88582,	-- Swift Onyx Flayer
 								["questID"] = 37374,
 								["isDaily"] = true,
-								["coord"] = { 59.52, 31.97 },						
+								["coords"] = {
+									{ 59.52, 31.97, 543 },
+								},
 								["g"] = {
 									{	-- Swift Onyx Flayer
 										["achievementID"] = 9678,	-- Ancient No More (Everbloom Wilds)
@@ -867,8 +931,8 @@ _.Zones =
 								["npcID"] = 86410,	-- Sylldross
 								["questID"] = 36794,
 								["coords"] = {
-									{ 63.0, 61.6 },
-									{ 65.4, 60.8 },
+									{ 63.0, 61.6, 543 },
+									{ 65.4, 60.8, 543 },
 								},
 								["g"] = {		
 									i(118213),	-- Slimy Sea Serpent Skin Sabatons
@@ -878,13 +942,17 @@ _.Zones =
 								["npcID"] = 80371,	-- Typhon
 								["questID"] = 37405,
 								["isDaily"] = true,
-								["coord"] = { 75.6, 42.6 },
+								["coords"] = {
+									{ 75.6, 42.6, 543 },
+								},
 							}, 
 							{	-- Venolasix
 								["npcID"] = 86266,	-- Venolasix
 								["questID"] = 37372,
 								["isDaily"] = true,
-								["coord"] = { 63.4, 30.8 },
+								["coords"] = {
+									{ 63.4, 30.8, 543 },
+								},
 								["g"] = {
 									{	-- Venolasix
 										["achievementID"] = 9678,	-- Ancient No More (Everbloom Wilds)
@@ -898,7 +966,9 @@ _.Zones =
 							{	-- Vindicator's Hammer
 								["objectID"] = 236147,	-- Vindicator's Hammer
 								["questID"] = 36628,
-								["coord"] = { 59.5, 63.7 },
+								["coords"] = {
+									{ 59.5, 63.7, 543 },
+								},
 								["g"] = {
 									i(118712), -- Huurand's Huge Hammer
 								},
@@ -906,7 +976,9 @@ _.Zones =
 							{	-- Warm Goren Egg
 								["objectID"] = 234054,	-- Warm Goren Egg
 								["questID"] = 36203,
-								["coord"] = { 48.9, 47.3 },
+								["coords"] = {
+									{ 48.9, 47.3, 543 },
+								},
 								["modelScale"] = 2,
 								["model"] = "World\\Expansion06\\Doodads\\Dungeon\\Doodads\\7du_Nightmare_Egg01.mdx",
 								["g"] = {
