@@ -256,6 +256,14 @@ _.Zones =
 									i(116674), 	-- Great Greytusk Mount
 								},
 							},
+							{	-- Grizzled Frostwolf Veteran
+								["npcID"] = 74585,	-- Grizzled Frostwolf Veteran
+								["questID"] = 33011,
+								["coord"] = { 45.4, 50.3 },
+								["groups"] = {
+									i(106899),	-- Frostwolf Veteran's Keepsake
+								},
+							},
 							{	-- Grutush the Pillager
 								["npcID"] = 80312,	-- Grutush the Pillager
 								["questID"] = 34865,

@@ -24,6 +24,7 @@ _.Zones =
 						33456 - Spirit of the Wolf - triggered near the Shamanstone in Wor'gol during "Honor Has Its Rewards"
 						34715 - Tracking Flag: Shamanstone Summons - triggered near the Shamanstone in Wor'gol during "Honor Has Its Rewards"
 						34331 - Spirit of the Wolf Selected - triggers when choosing "Spirit of the Wolf" at a shamanstone for the first time
+						34654 - Tracking Flag: Dagg Found at Daggermaw Ravine - triggers when you open Dagg's cage at 39.6, 28.1
 					]]--
 						["groups"] = {
 							ach(8671, {	-- Frostfire Ridge
@@ -172,17 +173,19 @@ _.Zones =
 										{	-- Ga'nar's Vengeance
 											["questID"] = 32783,
 											["qg"] = 70860,	-- Durotan
-											["coord"] = { 43.0, 41.3, 526 },
+											["coord"] = { 43.1, 41.3, 526 },
 											["sourceQuest"] = 33473,	-- Back to Bladespire Citadel
 										},
 										{	-- Let the Hunt Begin!
 											["questID"] = 32791,
 											["qg"] = 70909,	-- Ga'nar
+											["coord"] = { 30.8, 25.8, 525 },
 											["sourceQuest"] = 32783,	-- Ga'nar's Vengeance
 										},
 										{	-- Leave Nothing Behind!
 											["questID"] = 32792,
 											["qg"] = 74000,	-- Ga'nar
+											["coord"] = { 35.9, 25.7, 525 },
 											["sourceQuest"] = 32791,	-- Let the Hunt Begin!
 											["groups"] = {
 												i(111917),	-- Frostwolf Arrow-Swallower
@@ -196,11 +199,13 @@ _.Zones =
 										{	-- Wrath of Gronn
 											["questID"] = 32794,
 											["qg"] = 70910,	-- Ga'nar
+											["coord"] = { 46.3, 32.1, 525 },
 											["sourceQuest"] = 32792,	-- Leave Nothing Behind!
 										},
 										{	-- The Eldest
 											["questID"] = 32795,
 											["qg"] = 70941,	-- Ga'nar
+											["coord"] = { 50.5, 54.3, 532 },
 											["sourceQuest"] = 32794,	-- Wrath of Gronn
 											["groups"] = {
 												i(117504),	-- Grimfrost Arcanist Robe
@@ -212,6 +217,7 @@ _.Zones =
 										{	-- To the Garrison
 											["questID"] = 32796,
 											["qg"] = 70941,	-- Ga'nar
+											["coord"] = { 52.6, 66.9, 532 },
 											["sourceQuest"] = 32795,	-- The Eldest
 										},
 									}),
@@ -318,16 +324,12 @@ _.Zones =
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 34230,	-- Eye Need That
 							},
-							{	-- At the End of Your Rope
-								["questID"] = 34070,
-								["qg"] = 77210,	-- Scout Ruk'Gan
-								["coord"] = { 82.6, 69.8, 525 },
-								["races"] = HORDE_ONLY,
-							},
 							{	-- Articles of the Fallen
 								["questID"] = 32804,
 								["qg"] = 74223,	-- Kal'gor the Honorable
+								["coord"] = { 46.3, 32.0, 525 },
 								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 32791,	-- Let the Hunt Begin!
 							},
 							{	-- Ashes of the Past
 								["questID"] = 34321,
@@ -337,6 +339,7 @@ _.Zones =
 							{	-- At the End of Your Rope
 								["questID"] = 34070,
 								["qg"] = 77210,	-- Scout Ruk'Gan
+								["coord"] = { 82.6, 69.8, 525 },
 								["races"] = HORDE_ONLY,
 							},
 							{	-- Barbed Thunderlord Spear
@@ -416,9 +419,10 @@ _.Zones =
 									},
 								},
 							},
-							{	-- Cut 'Em Out!
+							{	-- Cut 'Em Out! -- verify the rewards for this
 								["questID"] = 36516,
 								["qg"] = 85751,	-- Gaoda Hidecleaver
+								["coord"] = { 20.6, 60.2, 525 },
 								["races"] = HORDE_ONLY,
 								["requireSkill"] = 165,	-- Leatherworking
 								["groups"] = { 	
@@ -437,9 +441,10 @@ _.Zones =
 									i(108976),	-- Sanctified Fel-Wrap Ring
 								},
 							},
-							{	-- Diamonds Are Forever
+							{	-- Diamonds Are Forever	-- verify the rewards for this
 								["questID"] = 36380,
 								["qg"] = 85106,	-- Gem Grinder Orolak
+								["coord"] = { 20.0, 56.4, 525 },
 								["races"] = HORDE_ONLY,
 								["requireSkill"] = 755,	-- Jewelcrafting
 								["groups"] = {
@@ -637,7 +642,9 @@ _.Zones =
 							{	-- Mulverick's Offer of Service
 								["questID"] = 34732,
 								["qg"] = 79047,	-- Mulverick
+								["coord"] = { 30.7, 41.4, 525 },
 								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 33483,	-- Mulverick's Plight
 								["groups"] = {
 									follower(182),	-- Mulverick
 								},
@@ -645,7 +652,9 @@ _.Zones =
 							{	-- Mulverick's Plight
 								["questID"] = 33483,
 								["qg"] = 72890,	-- Mulverick
+								["coord"] = { 30.7, 41.5, 525 },
 								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 33119,	-- Slavery and Strife
 								["groups"] = {
 									i(108955),	-- Wolfsfur Cloak
 									i(108953),	-- Wolfsfur Drape
@@ -795,12 +804,19 @@ _.Zones =
 							{	-- The Cure
 								["questID"] = 33454,
 								["qg"] = 74635,	-- Igrimar the Resolute
+								["coord"] = { 24.4, 28.3, 525 },
 								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 33412,	-- Mopping Up
 							},
 							{	-- The Fall of the Warlord
 								["questID"] = 33467,
 								["qg"] = 74635,	-- Igrimar the Resolute
+								["coord"] = { 24.4, 29.0, 525 },
 								["races"] = HORDE_ONLY,
+								["sourceQuests"] = {
+									33454,	-- The Cure
+									33450,	-- The Warlord's Guard
+								},
 								["groups"] = {
 									i(117983),	-- Pit Boss Signet
 									i(117982),	-- Pit Fighter's Seal
@@ -846,7 +862,9 @@ _.Zones =
 							{	-- The Slavemaster's Demise
 								["questID"] = 33484,
 								["qg"] = 79047,	-- Mulverick
+								["coord"] = { 30.7, 41.4, 525 },
 								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 33483,	-- Mulverick's Plight
 							},
 							{	-- The Sleeper Has Awakened
 								["questID"] = 34229,
@@ -858,7 +876,9 @@ _.Zones =
 							{	-- The Warlord's Guard
 								["questID"] = 33450,
 								["qg"] = 74635,	-- Igrimar the Resolute
+								["coord"] = { 24.4, 28.3, 525 },
 								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 33412,	-- Mopping Up
 								["groups"] = {
 									i(106177),	-- Frostwolf Ringmail Wristguards
 									i(106134),	-- Frostwolf Scout's Armwraps
@@ -869,7 +889,9 @@ _.Zones =
 							{	-- They Rely on Numbers
 								["questID"] = 32929,
 								["qg"] = 74222,	-- Ligra the Unyielding
+								["coord"] = { 35.9, 25.7, 525 },
 								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 32791,	-- Let the Hunt Begin!
 							},
 							{	-- To Capture Gul'dan
 								["questID"] = 34295,
@@ -927,7 +949,6 @@ _.Zones =
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 34216,	-- Safe Passage
 							},
-							
 							{	-- Young Hearts -- verify if this has a source
 								["questID"] = 33915,
 								["qg"] = 76862,	-- Gog'rak

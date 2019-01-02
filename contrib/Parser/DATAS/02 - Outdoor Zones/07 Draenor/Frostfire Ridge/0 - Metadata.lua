@@ -12,7 +12,10 @@ _.Zones =
 					526,	-- Turgall's Den (1st floor)
 					527,	-- Turgall's Den (2nd floor)
 					528,	-- Turgall's Den (3rd floor)
+					529,	-- Turgall's Den (Sootstained Mines)
 					530,	-- Grom'gar
+					531,	-- Grulloc's Grotto
+					532,	-- Grulloc's Grotto (bottom floor)
 					533,	-- Snowfall Alcove
 				},
 				["lvl"] = 90,
