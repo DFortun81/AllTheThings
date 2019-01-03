@@ -41,7 +41,7 @@ _.PVP =
 					},
 				},
 				["description"] = "These mounts require 2400 points.\n\nAny win above 1400 rating will reward:\n\n10 Points in 2v2 (0.33%)\n\n25 Points in 3v3 (1%)\n\n50 Points in RBG (2%)",
-				-- We have this kind of description 1000+ times. If you disagree does not mean its wrong.
+				-- We might have to update this once we know the exact source for the War Hyena
 			},
 		},
 	},

@@ -498,6 +498,19 @@ _.Zones =
 						["sourceQuest"] = 25014,	-- Sandscraper's Treasure
 						["isBreadcrumb"] = true,
 					},
+					{	-- Another Power Source?
+						["questID"] = 841,
+						["qg"] = 7407,	-- Chief Engineer Bilgewhizzle <Gadgetzan Water Co.>
+					--	["coord"] = { 44.5, 52.6 }
+						["groups"] = {
+							{	
+								["itemID"] = 8524,	-- Model 4711-FTZ Power Source
+								["u"] = 2,
+							},
+						},
+						["races"] = HORDE_ONLY,
+						["u"] = 40,
+					},
 					{	-- Atiesh, Greatstaff of the Guardian
 						["questID"] = 9269,
 						["u"] = 40,
@@ -912,6 +925,19 @@ _.Zones =
 						["qg"] = 38927,	-- Mazoga
 						["coord"] = { 42.2, 23.8 },
 						["sourceQuest"] = 25026,	-- Darkest Mojo
+					},
+					{	-- Slake That Thirst
+						["questID"] = 379,
+						["qg"] = 7407,	-- Chief Engineer Bilgewhizzle <Gadgetzan Water Co.>
+					--	["coord"] = { 44.5, 52.6 }
+						["groups"] = {
+							{	
+								["itemID"] = 8524,	-- Model 4711-FTZ Power Source
+								["u"] = 2,
+							},
+						},
+						["races"] = HORDE_ONLY,
+						["u"] = 40,
 					},
 					{	-- Southsea Shakedown
 						["questID"] = 8366,

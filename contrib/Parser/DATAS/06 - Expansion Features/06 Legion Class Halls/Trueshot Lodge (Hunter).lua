@@ -313,7 +313,7 @@ _.ExpansionFeatures =
 								},
 							},
 							["classes"] = {3},
-							["description"] = "|c808080FAThese mounts are only available to hunters who have completed|r |cFFFFD700Night of the Wilds|r |c808080FAquest from the class mount campaign.\nOnce completed you have to unlock all 52 traits on each spec to unlock it's related mount.|r\n|cFF008000Trust of a Dire Wolfhawk = Survival|r\n|cFF00FFFFTrust of a Fierce Wolfhawk = Marksman|r "
+							["description"] = "|c808080FAThese mounts are only available to hunters who have completed|r |cFFFFD700Night of the Wilds|r |c808080FAquest from the class mount campaign."
 						}),
 						n(103325, { -- Uthrok
 							i(11304), -- Fine Bow

@@ -2280,6 +2280,7 @@ AllTheThings.Locales.enUS = {
 		[62483] = "A.I.D.A. Communicator",
 		[106780] = "Tidestone of Golganneth",
 		[112948] = "Intrepid's Locked Strongbox",
+		[123329] = "Baelog's Chest",
 		[131474] = "The Discs of Norgannon",
 		[131979] = "Large Darkwood Chest",
 		[138492] = "Shards of Myzrael",

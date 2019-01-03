@@ -318,7 +318,7 @@ _.ExpansionFeatures =
 								i(143637), -- Hellblazing Reins of the Brimstone Wrathsteed
 							},
 							["classes"] = {9},
-							["description"] = "|c808080FAThis mount is only available to warlocks who have completed|r |cFFFFD700The Wrathsteed of Xoroth|r |c808080FAquest from the class mount campaign. Once completed you have to unlock all 52 traits on one spec to unlock it's related mount."
+							["description"] = "|c808080FAThis mount is only available to warlocks who have completed|r |cFFFFD700The Wrathsteed of Xoroth|r |c808080FAquest from the class mount campaign."
 						}),
 						n(112434, { -- Gigi Gigavoid <Black Harvest Quartermaster>
 							i(143727), -- Champion's Salute Toy

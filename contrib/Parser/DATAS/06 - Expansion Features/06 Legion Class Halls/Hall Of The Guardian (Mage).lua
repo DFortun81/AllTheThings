@@ -408,7 +408,7 @@ _.ExpansionFeatures =
 								i(147832), -- Magical Saucer Toy
 							},
 							["classes"] = {8},
-							["description"] = "|c808080FAThis toy is only available to mages who have completed|r |cFFFFD700Dispersion of the Discs|r |c808080FAquest from the class mount campaign.\nOnce completed you have to unlock all 52 traits on any of the three specs."
+							["description"] = "|c808080FAThis toy is only available to mages who have completed|r |cFFFFD700Dispersion of the Discs|r |c808080FAquest from the class mount campaign."
 						}),
 					}),
 				},
