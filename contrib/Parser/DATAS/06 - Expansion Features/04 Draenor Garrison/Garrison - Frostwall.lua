@@ -2533,6 +2533,7 @@ _.ExpansionFeatures =
 				nh(-17, { 	-- Quests
 					--[[ Tracking/Flags
 						36793 - Founded Garrison - triggers after using the Master Surveyor during "Establish Your Garrison"
+						36799 - Garrison Nodes - Tracking Quest - triggered after unlocking the mine
 					]]--
 					ach(8671, {
 						["groups"] = {
@@ -2630,6 +2631,44 @@ _.ExpansionFeatures =
 									["sourceQuest"] = 34462,	-- Winds of Change
 								},
 							}),
+							crit(6, {	-- The Battle of Thunder Pass
+								{	-- Bigger is Better
+									["questID"] = 36567,
+									["qg"] = 78466,	-- Gazlowe
+									["coord"] = { 52.4, 53.3 },	-- lvl 1
+									["races"] = HORDE_ONLY,
+									["sourceQuest"] = 34775,	-- Mission Probable
+								},
+								{	-- Thunderlord Invasion
+									["questID"] = 37291,
+									["races"] = HORDE_ONLY,
+									["sourceQuest"] = 36567,	-- Bigger is Better
+									["qgs"] = {
+										74163,	-- Durotan
+										88228,	-- Sergeant Grimjaw
+									},
+									["coords"] = {
+										{ 50.1, 37.9 },	-- lvl 2 garrison, Durotan
+										{ 43.6, 47.8 },	-- lvl 2 garrison, Sergeant Grimjaw
+									},
+								},
+								{	-- The Iron Wolf
+									["questID"] = 33010,
+									["qg"] = 74163,	-- Durotar
+									["coord"] = { 50.1, 37.9 },
+									["races"] = HORDE_ONLY,
+									["sourceQuest"] = 37291,	-- Thunderlord Invasion
+									["groups"] = {
+										i(111909),	-- Bow of the Iron Wolf
+										i(111916),	-- Thunderlord Herding Cudgel
+										i(111911),	-- Thunderlord Hunting Spear
+										i(111912),	-- Thunderlord Riding Crop
+										i(111914),	-- Thunderlord Skinning Knife
+										i(111915),	-- Thunderlord Skull Crusher
+										i(111913),	-- Thunderlord War Spear
+									},
+								},
+							}),
 						},
 						["races"] = HORDE_ONLY,
 					}),
@@ -2647,23 +2686,6 @@ _.ExpansionFeatures =
 						["coord"] = { 52.4, 53.3 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 34775,	-- Mission Probable
-					},
-					{	-- Bigger is Better
-						["questID"] = 36567,
-						["qg"] = 78466,	-- Gazlowe
-						["coord"] = { 52.4, 53.3 },
-						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 34775,	-- Mission Probable
-					},
-					{	-- Blessing of the Wolf
-						["objectID"] = 233263,	-- Blessing of the Wolf // Frostwolf Shamanstone
-						["questID"] = 33977,	-- Blessing of the Wolf
-						["coords"] = {
-							{ 48.91, 52.21, 590 },	-- Tier 1 Garrison
-							{ 48.47, 52.12, 590 },	-- Tier 2 Garrison
-							{ 48.67, 52.21, 590 },	-- Tier 3 Garrison
-						},
-						["races"] = HORDE_ONLY,
 					},
 					{	-- Bringing the Bass
 						["questID"] = 37961,
@@ -2693,6 +2715,18 @@ _.ExpansionFeatures =
 						["races"] = HORDE_ONLY,
 					},
 					un(40, q(35988)),	-- Call of the Archmage
+					{	-- Clearing the Garden
+						["questID"] = 34193,
+						["qg"] = 81981,	-- Tarnon
+						["coord"] = { 43.4, 83.2 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 36567,	-- Bigger is Better
+						["groups"] = {
+							{	-- Herb Garden lvl 1
+								["buildingID"] = 29,
+							},
+						},
+					},
 					{	-- Den of Wolves
 						["questID"] = 34379,
 						["qg"] = 76411,	-- Farseer Drek'Thar
@@ -4382,6 +4416,13 @@ _.ExpansionFeatures =
 							},
 						},
 					}),
+					{	-- My Very Own Fortress
+						["questID"] = 36614,
+						["qg"] = 78466,	-- Gazlowe
+						["coord"] = { 42.1, 55.5 }, -- Rank 2
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 36567,	-- Bigger is Better
+					},
 					{	-- Mystery Notebook
 						["questID"] = 38306,
 						["qg"] = 91072,	-- Drix Bassbolter
@@ -4391,7 +4432,10 @@ _.ExpansionFeatures =
 					{	-- Pinchwhistle Gearworks
 						["questID"] = 36862,
 						["qg"] = 86614,	-- Pinchwhistle Gearworks
-						["coord"] = { 50.8, 50.7 },	-- lvl 1 garrison
+						["coords"] = {
+							{ 50.8, 50.7 },	-- lvl 1 garrison
+							{ 46.8, 45.8 },	-- lvl 2 garrison
+						},
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 34378,	-- Establish Your Garrison
 					},
@@ -4401,6 +4445,7 @@ _.ExpansionFeatures =
 						["races"] = HORDE_ONLY,
 						["coords"] = {
 							{ 53.8, 54.9 },	-- lvl 1 garrison
+							{ 40.5, 54.8 },	-- lvl 2 garrison
 						},
 						["groups"] = {
 							i(119463),	-- Staff of Trials
@@ -4412,6 +4457,16 @@ _.ExpansionFeatures =
 							i(119464),	-- Cudgel of Trials
 							i(119457),	-- Handaxe of Trials
 						},
+					},
+					{	-- Shamanstone: Blessing of the Wolf
+						["objectID"] = 233263,	-- Blessing of the Wolf // Frostwolf Shamanstone
+						["questID"] = 33977,	-- Blessing of the Wolf
+						["coords"] = {
+							{ 48.91, 52.21, 590 },	-- Tier 1 Garrison
+							{ 48.47, 52.12, 590 },	-- Tier 2 Garrison
+							{ 48.67, 52.21, 590 },	-- Tier 3 Garrison
+						},
+						["races"] = HORDE_ONLY,
 					},
 					n(-99, {	-- Stables
 						qh(37041, {
@@ -4433,19 +4488,16 @@ _.ExpansionFeatures =
 							i(116784),	-- Mount
 						}),
 					}),
-					{	-- The Iron Wolf
-						["questID"] = 33010,
-						["qg"] = 74163,	-- Durotar
-						["coord"] = { 50.1, 37.9 },
+					{	-- Things Are Not Goren Our Way
+						["questID"] = 35154,
+						["qg"] = 81688,	-- Gorsol
+						["coord"] = { 62.0, 73.9 },	-- lvl 2 garrison
 						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 36567,	-- Bigger is Better
 						["groups"] = {
-							i(111909),	-- Bow of the Iron Wolf
-							i(111916),	-- Thunderlord Herding Cudgel
-							i(111911),	-- Thunderlord Hunting Spear
-							i(111912),	-- Thunderlord Riding Crop
-							i(111914),	-- Thunderlord Skinning Knife
-							i(111915),	-- Thunderlord Skull Crusher
-							i(111913),	-- Thunderlord War Spear
+							{	-- Frostwall Mines lvl 1
+								["buildingID"] = 61,
+							},
 						},
 					},
 					garrisonBuilding(144, {	-- Trading Post
@@ -4494,7 +4546,10 @@ _.ExpansionFeatures =
 					}),
 					{	-- War Planning Map
 						["objectID"] = 236206,
-						["coord"] = { 41.0, 50.8 },
+						["coords"] = {
+							{ 41.8, 50.7 },	-- lvl 2 garrison
+							{ 41.0, 50.8 },	-- lvl 3 garrison
+						},
 						["groups"] = {
 							{	-- Assault on Darktide Roost
 								["questID"] = 36692,
@@ -4646,6 +4701,7 @@ _.ExpansionFeatures =
 						["questID"] = 34736,
 						["qg"] = 78487,	-- Rokhan
 						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,
 						["coords"] = {
 							{ 51.2, 51.3 },	-- lvl 1
 						},
@@ -6246,6 +6302,9 @@ _.ExpansionFeatures =
 				}),
 			},
 			["lvl"] = 90,
+			["maps"] = {
+				585,	-- Frostwall Mine (unclaimed)
+			},
 			["isRaid"] = true,
 			["icon"] = "Interface\\Icons\\achievement_garrison_tier01_horde",
 			["description"] = "|cff66ccffFrostwall is the Horde Garrison, located in Frostfire Ridge. A fully-upgraded Frostwall garrison is considered to be a fortress.|r",

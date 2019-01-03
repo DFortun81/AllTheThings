@@ -20,6 +20,9 @@ _.Zones =
 								34510 - Tracking Event: Catapuls 'n' Clefthoof - triggered after riding the wolf down Bladespire Citadel during "Moving In"
 								34511 - Tracking Event: Ogre Drag - triggered after riding the wolf down Bladespire Citadel during "Moving In"
 								34654 - Tracking Flag: Dagg Found at Daggermaw Ravine - triggers when you open Dagg's cage at 39.6, 28.1
+								34312 - The Magma Lord - triggered when Molthron first appears at 43.6, 15.6
+								37544 - Garrison Follower: Greatmother Geyah - triggers if you pick Greatmother Geyah during "The Frostwolves Stand Ready"
+								37545 - Garrison Follower: Kal'gor the Honorable - triggers if you pick Kal'gor during "The Frostwolves Stand Ready"
 							]]--
 							ach(8671, {	-- Frostfire Ridge
 								["groups"] = {
@@ -279,7 +282,7 @@ _.Zones =
 										{	-- The Battle of Thunder Pass
 											["questID"] = 34124,
 											["qg"] = 76487,	-- Lokra
-											["coord"] = { 73.4, 58.8 },
+											["coord"] = { 73.4, 58.8, 525 },
 											["sourceQuest"] = 34123,	-- To Thunder Pass
 											["groups"]  = {
 												i(106169),	-- Frostwolf Ringmail Cap	
@@ -328,6 +331,7 @@ _.Zones =
 							{	-- Ashes of the Past
 								["questID"] = 34321,
 								["qg"] = 77998,	-- Molthron
+								["coord"] = { 43.5, 15.5, 525 },
 								["races"] = HORDE_ONLY,
 							},
 							{	-- At the End of Your Rope
@@ -335,6 +339,12 @@ _.Zones =
 								["qg"] = 77210,	-- Scout Ruk'Gan
 								["coord"] = { 82.6, 69.8, 525 },
 								["races"] = HORDE_ONLY,
+								["sourceQuests"] = {
+									34067,	-- A Collection of Coils
+									34264,	-- A Collection of Coils
+									34069,	-- Getting the Points
+									34093,	-- Getting the Points
+								},
 							},
 							{	-- Barbed Thunderlord Spear
 								["objectID"] = 227504,
@@ -353,14 +363,22 @@ _.Zones =
 									{	-- The Mark of Defiance
 										["questID"] = 34102,
 										["races"] = HORDE_ONLY,
-										["sourceQuest"] = 34072,	-- Tar Get of Opportunity
+										["sourceQuests"] = {
+											34073,	-- Burn Them Down
+											34072,	-- Tar Get of Opportunity
+										},
 									},
 								},
 							},
-							{	-- Blessing of the Wolf
-								["questID"] = 33977,
+							{	-- Blood Oath of Na'Shra
+								["questID"] = 34729,
+								["qg"] = 76452,	-- Weaponsmith Na'Shra
+								["coord"] = { 64.7, 39.8, 525 },
 								["races"] = HORDE_ONLY,
-								["sourceQuest"] = 33527,	-- Last Steps
+								["sourceQuest"] = 33838,	-- Smeltcraft
+								["groups"] = {
+									follower(179),	-- Weaponsmith Na'Shra
+								},
 							},
 							{	-- Bounty Board
 								["objectID"] = 226961,
@@ -378,7 +396,7 @@ _.Zones =
 									},
 								},
 							},
-							{	-- Broken Chains -- aa
+							{	-- Broken Chains
 								["objectID"] = 224306,
 								["coord"] = { 58.3, 31.0, 525 },
 								["groups"] = {
@@ -387,14 +405,6 @@ _.Zones =
 										["races"] = HORDE_ONLY,
 									},
 								},
-							},
-							{	-- Buffeting Galefury [H Only]
-								["objectID"] = 226468,	-- Buffeting Galefury // Frostwolf Shamanstone
-								["questID"] = 33979,	-- Buffeting Galefury
-								["coords"] = {
-									{ 65.14, 79.11, 525 },
-								},
-								["races"] = HORDE_ONLY,
 							},
 							{	-- Burn Them Down
 								["questID"] = 34073,
@@ -429,6 +439,16 @@ _.Zones =
 								["requireSkill"] = 165,	-- Leatherworking
 								["groups"] = { 	
 									i(117566),	-- Heavy Frostwolf Shroud
+								},
+							},
+							{	-- Defection of Gronnstalker Rokash
+								["questID"] = 35341,
+								["qg"] = 79229,	-- Gronnstalker Rokash
+								["coord"] = { 59.5, 31.8 },
+								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 32981,	-- Only the Winner
+								["groups"] = {
+									follower(183),	-- Gronnstalker Rokash
 								},
 							},
 							{	-- Desecration of the Dead
@@ -483,7 +503,9 @@ _.Zones =
 							{	-- Flames of the Earth
 								["questID"] = 34325,
 								["qg"] = 77998,	-- Molthron
+								["coord"] = { 43.5, 15.5, 525 },
 								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 34321,	-- Ashes of the Past
 							},
 							{	-- Forbidden Glacier
 								["questID"] = 34505,
@@ -518,7 +540,7 @@ _.Zones =
 									},
 								},
 							},
-							{	-- Frosted Fury -- aa
+							{	-- Frosted Fury
 								["questID"] = 34346,
 								["qg"] = 78209,	-- Shadow Hunter Mala
 								["coord"] = { 52.5, 40.4, 525 },
@@ -596,11 +618,12 @@ _.Zones =
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 32993,	-- The Strength of Our Bonds
 							},
-							{	-- Lurkers -- aa
+							{	-- Lurkers
 								["questID"] = 34344,
 								["qg"] = 78208,	-- Shadow Hunter Rala
 								["coord"] = { 52.6, 40.4, 525 },
 								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 34736,	-- We Be Needin' Supplies
 								["groups"] = {
 									i(106172),	-- Frostwolf Ringmail Leggings
 									i(106140),	-- Frostwolf Scout's Legguards
@@ -671,23 +694,20 @@ _.Zones =
 							{	-- Oath of Shadow Hunter Rala
 								["questID"] = 34731,
 								["qg"] = 78208,	-- Shadow Hunter Rala
+								["coord"] = { 52.6, 40.4, 525 },
 								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 34348,	-- The Real Prey
+								["groups"] = {
+									follower(180),	-- Shadow Hunter Rala
+								},
 							},
-							{	-- Of Fire and Thunder -- aa
+							{	-- Of Fire and Thunder
 								["questID"] = 33013,
 								["qg"] = 74358,	-- Wounded Frostwolf Shaman
 								["coord"] = { 41.6, 52.9, 525 },
 								["races"] = HORDE_ONLY,
 							},
-							{	-- Ogrish Fortitude [H Only]
-								["objectID"] = 239925,	-- Ogrish Fortitude // Frostwolf Shamanstone
-								["questID"] = 33980,	-- Ogrish Fortitude
-								["coords"] = {
-									{ 43.84, 12.32, 525 },
-								},
-								["races"] = HORDE_ONLY,
-							},
-							{	-- Only the Winner -- aa
+							{	-- Only the Winner
 								["questID"] = 32981,
 								["qg"] = 79229,	-- Gronnstalker Rokash
 								["coord"] = { 59.4, 31.7, 525 },
@@ -698,7 +718,7 @@ _.Zones =
 									i(112689),	-- Gorget of Flowing Earth
 								},
 							},
-							{	-- Poulticide -- aa
+							{	-- Poulticide
 								["questID"] = 34345,
 								["qg"] = 78208,	-- Shadow Hunter Rala
 								["coord"] = { 52.6, 40.4, 525 },
@@ -727,7 +747,7 @@ _.Zones =
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 34209,	-- Vouchsafe Our Arrival
 							},
-							{	-- Savage Vengeance -- aa
+							{	-- Savage Vengeance
 								["questID"] = 34066,
 								["qg"] = 77210,	-- Scout Ruk'Gan
 								["coords"] = {
@@ -741,6 +761,36 @@ _.Zones =
 									i(117511),	-- Agurak Wristplates
 									i(117510),	-- Agurak Wristwraps
 								},
+							},
+							{	-- Shamanstone: Buffeting Galefury
+								["objectID"] = 226468,	-- Buffeting Galefury // Frostwolf Shamanstone
+								["questID"] = 33979,	-- Buffeting Galefury
+								["coord"] = { 65.14, 79.11, 525 },
+								["races"] = HORDE_ONLY,
+							},
+							{	-- Shamanstone: Ogrish Fortitude
+								["objectID"] = 239925,	-- Ogrish Fortitude // Frostwolf Shamanstone
+								["questID"] = 33980,	-- Ogrish Fortitude
+								["coord"] = { 43.84, 12.32, 525 },
+								["races"] = HORDE_ONLY,
+							},
+							{	-- Shamanstone: Spirit of the Wolf
+								["objectID"] = 226469,	-- Spirit of the Wolf // Frostwolf Shamanstone
+								["questID"] = 33978,	-- Spirit of the Wolf
+								["coord"] = { 17.47, 56.68, 525 },
+								["races"] = HORDE_ONLY,
+							},
+							{	-- Shamanstone: Touched by Fire
+								["objectID"] = 239926,	-- Touched By Fire // Frostwolf Shamanstone
+								["questID"] = 33981,	-- Touched By Fire
+								["coord"] = { 36.98, 33.11, 525 },
+								["races"] = HORDE_ONLY,
+							},
+							{	-- Shamanstone: Touched By Ice
+								["objectID"] = 230544,	-- Touched By Ice // Frostwolf Shamanstone
+								["questID"] = 33982,	-- Touched By Ice
+								["coord"] = { 60.35, 13.65, 525 },
+								["races"] = HORDE_ONLY,
 							},
 							{	-- Shivertail's Den
 								["questID"] = 33929,
@@ -763,18 +813,10 @@ _.Zones =
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 33527,	-- Last Steps
 							},
-							{	-- Smeltcraft -- aa
+							{	-- Smeltcraft
 								["questID"] = 33838,
 								["qg"] = 74977,	-- Initiate Na'Shra
 								["coord"] = { 65.0, 39.5, 525 },
-								["races"] = HORDE_ONLY,
-							},
-							{	-- Spirit of the Wolf [H Only]
-								["objectID"] = 226469,	-- Spirit of the Wolf // Frostwolf Shamanstone
-								["questID"] = 33978,	-- Spirit of the Wolf
-								["coords"] = {
-									{ 17.47, 56.68, 525 },
-								},
 								["races"] = HORDE_ONLY,
 							},
 							{	-- Stealing the Declaration
@@ -809,6 +851,12 @@ _.Zones =
 								["qg"] = 77210,	-- Scout Ruk'Gan
 								["coord"] = { 82.6, 69.8, 525 },
 								["races"] = HORDE_ONLY,
+								["sourceQuests"] = {
+									34067,	-- A Collection of Coils
+									34264,	-- A Collection of Coils
+									34069,	-- Getting the Points
+									34093,	-- Getting the Points
+								},
 							},
 							{	-- The Bounty of Bladespire	-- never implemented
 								["questID"] = 35251,
@@ -845,22 +893,33 @@ _.Zones =
 							},
 							{	-- The Frostwolves Stand Ready
 								["questID"] = 37563,
+								["races"] = HORDE_ONLY,
+								["description"] = "You can only pick one of the three available followers. The other two can be purchased in the lvl 3 garrison.",
+								["sourceQuest"] = 34124,	-- The Battle of Thunder Pass
 								["qgs"] = {
 									76730,	-- Makara Stonebinder
 									88147,	-- Makara Stonebinder
 								},
-								["races"] = HORDE_ONLY,
-								["description"] = "You can only pick one of the three available followers.",
 								["groups"] = {
 									follower(186),	-- Greatmother Geyah
 									follower(184),	-- Kal'gor the Honorable
 									follower(185),	-- Lokra
 								},
 							},
+							{	-- The Loyalty of Olin Umberhide -- never implemented
+								["questID"] = 34734,
+								["u"] = 1,
+							},
 							{	-- The Real Prey
 								["questID"] = 34348,
 								["qg"] = 78208,	-- Shadow Hunter Rala
+								["coord"] = { 52.6, 40.4, 525 },
 								["races"] = HORDE_ONLY,
+								["sourceQuests"] = {
+									34346,	-- Frosted Fury
+									34344,	-- Lurkers
+									34345,	-- Poulticide
+								},
 								["groups"] = {
 									currency(824),	-- Garrison Resources x50
 								},
@@ -871,6 +930,14 @@ _.Zones =
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 36207,	-- Waruk the Frostforger
 								["requireSkill"] = 164,	-- Blacksmithing
+							},
+							{	-- The Secrets of Gorgrond
+								["questID"] = 34867,
+								["qg"] = 76484,	-- Durotan
+								["coord"] = { 76.1, 55.1, 525 },
+								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 34124,	-- The Battle of Thunder Pass
+								["isBreadcrumb"] = true,
 							},
 							{	-- The Slavemaster's Demise
 								["questID"] = 33484,
@@ -919,22 +986,6 @@ _.Zones =
 									i(113148),	-- Foulspawn Drape
 								},
 							},
-							{	-- Touched by Fire [H Only]
-								["objectID"] = 239926,	-- Touched By Fire // Frostwolf Shamanstone
-								["questID"] = 33981,	-- Touched By Fire
-								["coords"] = {
-									{ 36.98, 33.11, 525 },
-								},
-								["races"] = HORDE_ONLY,
-							},
-							{	-- Touched By Ice [H Only]
-								["objectID"] = 230544,	-- Touched By Ice // Frostwolf Shamanstone
-								["questID"] = 33982,	-- Touched By Ice
-								["coords"] = {
-									{ 60.35, 13.65, 525 },
-								},
-								["races"] = HORDE_ONLY,
-							},
 							{	-- Vul'gath's End
 								["questID"] = 34075,
 								["qg"] = 77210,	-- Scout Ruk'Gan
@@ -954,6 +1005,7 @@ _.Zones =
 							{	-- WANTED: Grondo's Bounty
 								["questID"] = 33918,
 								["races"] = HORDE_ONLY,
+								["description"] = "Granted automatically when you are near Grondo in The Cracking Plains.",
 								["groups"] = {
 									i(111546),	-- Grondo's Eyepatch
 									i(111547),	-- Grondo's Spare Eye
