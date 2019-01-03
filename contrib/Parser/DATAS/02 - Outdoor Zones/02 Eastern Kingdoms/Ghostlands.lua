@@ -84,6 +84,7 @@ _.Zones =
 					o(181153, {	-- Wanted Poster: Kel'gash the Wicked
 						qh(9215, { -- Bring Me Kel'gash's Head!
 							["groups"] = {
+								i(22979),	-- Slayer's Band
 								i(23409),	-- Well Crafted Long Bow
 								i(23410),	-- Well Crafted Sword
 								i(23411),	-- Well Crafted Staff
@@ -352,6 +353,9 @@ _.Zones =
 					}),
 					o(181147, {	-- Wanted Poster
 						qh(9156, {	-- Wanted: Knucklerot and Luzran
+							["groups"] = {
+								i(28303),	-- Invoker's Signet
+							},
 							["sourceQuests"] = { 9138 }	-- Suncrown Village
 						}),
 					}),

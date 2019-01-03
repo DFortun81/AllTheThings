@@ -269,6 +269,8 @@ _.Zones =
 						un(2, i(18851)),	-- Insignia of the Horde [Priest]
 						un(2, i(18852)),	-- Insignia of the Horde [Warlock]
 						un(2, i(18853)),	-- Insignia of the Horde [Druid]
+						un(2, i(28246)),	-- Band of Triumph
+						un(2, i(28247)),	-- Band of Dominance
 						un(2, i(15200)),	-- Senior Sergeant's Insignia
 						un(2, i(18428)),	-- Senior Sergeant's Insignia
 						un(2, i(16335)),	-- Senior Sergeant's Insignia

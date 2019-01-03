@@ -2495,6 +2495,8 @@ _.Zones =
 									un(2, i(18862)),	-- Insignia of the Alliance [Priest]
 									un(2, i(18858)),	-- Insignia of the Alliance [Warlock]
 									un(2, i(18863)),	-- Insignia of the Alliance [Druid]
+									un(2, i(28246)),	-- Band of Triumph
+									un(2, i(28247)),	-- Band of Dominance
 									un(2, i(18442)),	-- Master Sergeant's Insignia
 									un(2, i(18444)),	-- Master Sergeant's Insignia
 									un(2, i(18443)),	-- Master Sergeant's Insignia

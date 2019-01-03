@@ -486,6 +486,10 @@ _.NeverImplemented =
 			un(1, i(62037)), 	-- Gleaming seal of the archmagus
 			un(1, i(69891)), 	-- Burnished Dark Iron Ring
 			un(1, i(103825)), 	-- 5.4 Raid - Normal - Siege of Orgrimmar - Wildcard - Int Hit Ring
+			un(1, i(25988)),	-- Glowing Alabaster Ring Beta only
+			un(1, i(28044)),	-- Band of the Demon Stalker
+			un(1, i(25991)),	-- Seamless Stone Band
+			un(1, i(25990)),	-- Smooth soapstone band
 		}),
 	}),
 	n(-494, { -- Misc

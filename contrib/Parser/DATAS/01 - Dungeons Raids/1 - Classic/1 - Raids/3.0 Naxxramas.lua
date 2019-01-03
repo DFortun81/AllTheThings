@@ -1013,6 +1013,7 @@ _.Instances = { tier(1, {	-- Classic
 						un(2, i(23663)),	-- Girdle of Elemental Fury
 						un(2, i(23665)),	-- Leggings of Elemental Fury
 						un(2, i(23668)),	-- Leggings of the Grand Crusader
+						un(2, i(23237)),	-- Ring of the Eternal Flame
 					}),
 					n(-368, { 	-- The Arachnid Quarter
 						["groups"] = {
