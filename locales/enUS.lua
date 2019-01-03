@@ -532,6 +532,7 @@ AllTheThings.Locales.enUS = {
 		[-347] = "Interface\\Icons\\inv_weapon_crossbow_01",					-- Crossbows
 		[-348] = "Interface\\Icons\\inv_misc_monsterclaw_02",					-- Fist Weapons
 		[-349] = "Interface\\Icons\\Ability_Mage_IceForm",						-- Cosmetic
+		[-350] = "Interface\\Icons\\inv_misc_book_07",							-- Spell Books
 		[-355] = "Interface\\Icons\\misc_arrowlup",								-- Titanforged
 		[-363] = "Interface\\Icons\\achievement_reputation_argentchampion", 	-- The Argent Tournament
 		[-367] = "Interface\\Icons\\ability_rogue_deviouspoisons",				-- The Construct Quarter
