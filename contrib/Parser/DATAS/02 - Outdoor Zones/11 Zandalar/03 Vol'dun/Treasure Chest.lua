@@ -8,10 +8,10 @@ _.Zones =
 			["groups"] = {
 				n(-212, {	-- Treasure Chest
 					["groups"] = { -- If we are going to list every treasure chest then let's make it pretty and not show quest ID# on screen.
-						o(311903, { -- Loose Parts
+						o(311903, { -- Loose Parts (Alliance Win)
 							["objectID"] = 311903,	-- Loose Parts
 							["coord"] = {
-								41.9, 42.3 
+								41.84, 42.32 
 							},
 							["g"] = {
 								i(166734, {	-- Banana-Shaped Power Cell
@@ -30,9 +30,34 @@ _.Zones =
 									},
 								}),
 							},
-						["description"] = "This Chest only appears during the Vol'Dun Faction Assault after the Spider Roboter beat the Monkey Roboter. You can only loot 1 Item per Assault",
+						["description"] = "This Chest only appears during the Vol'Dun Faction Assault after the Spider Roboter beat the Monkey Roboter. You can only loot 1 Itempart per Assault",
 						["races"] = Alliance_ONLY,
-						}),	
+						}),
+						o(311902, { -- Loose Parts (Horde Win)
+							["objectID"] = 311902,	-- Loose Parts
+							["coord"] = {
+								41.84, 42.32 
+							},
+							["g"] = {
+								i(166737, {	-- Handful of Glass Spider Eyes
+									["g"] = {
+										i(166723),	-- Rebuilt Mechanical Spider
+									},
+								}),
+								i(166738, {	-- Steel-Plated Arachnid Exoskeleton
+									["g"] = {
+										i(166723),	-- Rebuilt Mechanical Spider
+									},
+								}),
+								i(166735, {	-- Mecha-Spinneret
+									["g"] = {
+										i(166723),	-- Rebuilt Mechanical Spider
+									},
+								}),
+							},
+						["description"] = "This Chest only appears during the Vol'Dun Faction Assault after the Monkey Roboter beat the Spider Roboter. You can only loot 1 Itempart per Assault",
+						["races"] = Horde_ONLY,
+						}),						
 						o(9999999, { -- Treasure Chest
 							["questID"] = 50922,
 							["isDaily"] = true,
