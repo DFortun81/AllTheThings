@@ -77,9 +77,6 @@ _.WorldDrops =
 						["itemID"] = 23623,	-- Plans: Storm Helm
 					},
 				}),
-				n(-350, {	-- Class Books
-					i(22153),	-- Tome of Arcane Brilliance Rank2 -- Only drops from Elites, irrelevant information for live as its a grey item.
-				}),
 				n(-186, { 	-- Jewelcrafting
 					i(24193),	-- Design: Bold Living Ruby
 					i(24168),	-- Design: Braided Eternium Chain
@@ -159,6 +156,9 @@ _.WorldDrops =
 					i(32411),	-- Design: Thundering Skyfire Diamond
 					i(24211),	-- Design: Timeless Nightseye
 					i(31878),	-- Design: Veiled Nightseye
+				}),
+				n(-350, {	-- Spell Book
+					i(22153),	-- Tome of Arcane Brilliance Rank 2 -- Only drops from Elites, irrelevant information for live as its a grey item.
 				}),
 				n(-190, {	-- Tailoring
 					i(24298),	-- Pattern: Blackstrike Bracers

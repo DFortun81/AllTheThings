@@ -10,9 +10,6 @@ _.WorldDrops =
 				n(-180, {	-- Alchemy
 					un(1, i(112022)),	-- Recipe: Mighty Shadow Protection Potion
 				}),
-				n(-350, {	-- Class Books
-					i(22153),	-- Tome of Arcane Brilliance Rank 2 -- Only drops from Elites, irrelevant information for live as its a grey item.
-				}),
 				n(-185, { 	-- Inscription
 					i(45912),	-- Book of Glyph Mastery
 				}),
@@ -43,6 +40,9 @@ _.WorldDrops =
 					i(41778),	-- Design: Resolute Monarch Topaz
 					i(41784),	-- Design: Sovereign Twilight Opal
 					i(41787),	-- Design: Thundering Skyflare Diamond
+				}),
+				n(-350, {	-- Spell Book
+					i(22153),	-- Tome of Arcane Brilliance Rank 2 -- Only drops from Elites, irrelevant information for live as its a grey item.
 				}),
 				n(-190, {	-- Tailoring
 					i(43876),	-- A Guide to Northern Cloth Scavenging

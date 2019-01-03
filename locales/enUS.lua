@@ -1192,6 +1192,7 @@ AllTheThings.Locales.enUS = {
 		[-347] = GetItemSubClassInfo(2,18),										-- Crossbows
 		[-348] = GetItemSubClassInfo(2,13),										-- Fist Weapons
 		[-349] = GetItemSubClassInfo(4,5),										-- Cosmetic
+		[-350] = SPELLBOOK,														-- Spell Books
 		[-355] = GetSpellInfo(257215),											-- Titanforged
 		[-356] = "Assault on the Dark Portal",
 		[-357] = GetSpellInfo(171866),											-- Sparring Arena Outpost
