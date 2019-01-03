@@ -115,18 +115,48 @@ _.Achievements =
 							crit(4),		-- Gal'darah
 						}),
 					}),
-					ach(497, {		-- Heroic: Halls of Lightning
-						crit(1),		-- General Bjarngrim
-						crit(2),		-- Ionar
-						crit(3),		-- Volkhan
-						crit(4),		-- Loken
-						ach(486, {		-- Halls of Lightning
-							crit(1),		-- General Bjarngrim
-							crit(2),		-- Ionar
-							crit(3),		-- Volkhan
-							crit(4),		-- Loken
-						}),
-					}),
+					{	-- Heroic: Halls of Lightning
+						["achievementID"] = 497,
+						["g"] = {
+							{	-- General Bjarngrim
+								["achievementID"] = 497,	-- Heroic: Halls of Lightning
+								["criteriaID"] = 1,	-- General Bjarngrim
+							},
+							{	-- Ionar
+								["achievementID"] = 497,	-- Heroic: Halls of Lightning
+								["criteriaID"] = 2,	-- Ionar
+							},
+							{	-- Loken
+								["achievementID"] = 497,	-- Heroic: Halls of Lightning
+								["criteriaID"] = 4,	-- Loken
+							},
+							{	-- Volkhan
+								["achievementID"] = 497,	-- Heroic: Halls of Lightning
+								["criteriaID"] = 3,	-- Volkhan
+							},
+							{	-- Halls of Lightning
+								["achievementID"] = 486,
+								["g"] = {
+									{	-- General Bjarngrim
+										["achievementID"] = 486,	-- Halls of Lightning
+										["criteriaID"] = 1,	-- General Bjarngrim
+									},
+									{	-- Ionar
+										["achievementID"] = 486,	-- Halls of Lightning
+										["criteriaID"] = 2,	-- Ionar
+									},
+									{	-- Loken
+										["achievementID"] = 486,	-- Halls of Lightning
+										["criteriaID"] = 4,	-- Loken
+									},
+									{	-- Volkhan
+										["achievementID"] = 486,	-- Halls of Lightning
+										["criteriaID"] = 3,	-- Volkhan
+									},
+								},
+							},
+						},
+					},
 					{	-- Heroic: Halls of Stone
 						["achievementID"] = 496,
 						["g"] = {
@@ -162,7 +192,7 @@ _.Achievements =
 										["criteriaID"] = 4,	-- Sjonnir The Ironshaper
 									},
 									{	-- Tribunal of Ages
-										["achievementID"] = 496,	-- Halls of Stone
+										["achievementID"] = 485,	-- Halls of Stone
 										["criteriaID"] = 2,	-- Tribunal of Ages
 									},
 								},
@@ -309,7 +339,9 @@ _.Achievements =
 					ach(2036),		-- Intense Cold
 					ach(2157),		-- King's Bane
 					ach(2040),		-- Less-rabi
-					ach(1834),		-- Lightning Struck
+					{	-- Lightning Struck
+						["achievementID"] = 1834,	-- Lightning Struck
+					},
 					{	-- Lockdown!
 						["achievementID"] = 1865,
 						["collectible"] = false,
@@ -348,7 +380,9 @@ _.Achievements =
 					ach(2038),		-- Respect Your Elders
 					ach(2044),		-- Ruby Void
 					ach(2152),		-- Share The Love
-					ach(2042),		-- Shatter Resistant
+					{	-- Shatter Resistant
+						["achievementID"] = 2042,	-- Shatter Resistant
+					},
 					ach(2058),		-- Snakes. Why'd It Have To Be Snakes?
 					ach(4522),		-- Soul Power
 					ach(2150),		-- Split Personality
@@ -356,7 +390,9 @@ _.Achievements =
 					ach(3803),		-- The Faceroller
 					ach(2043),		-- The Incredible Hulk
 					ach(4523),		-- Three Faced
-					ach(1867),		-- Timely Death
+					{	-- Timely Death
+						["achievementID"] = 1867,	-- Timely Death
+					},
 					ach(1862),		-- Volazj's Quick Demise
 					ach(2056),		-- Volunteer Work
 					ach(1296),		-- Watch Him Die
