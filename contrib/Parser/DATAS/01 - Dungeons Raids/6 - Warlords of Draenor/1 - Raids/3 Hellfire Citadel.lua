@@ -5,6 +5,7 @@
 _.Instances = 
 {
 	{ -- Warlords of Draenor
+		["tierID"] = 6,	-- Warlords of Draenor
 		["groups"] = {
 			inst(669, { 	-- Hellfire Citadel
 				["groups"] = {
@@ -1158,6 +1159,7 @@ _.Instances =
 							i(124377),	-- Rune Infused Spear
 							i(124358),	-- Runeaxe of the Breaker
 							i(124363),	-- Runic Magnaron Tooth
+							i(139627),	-- FerroleatherHood
 							i(124341),	-- Fel-Inscribed Shoulderplates
 							i(124304),	-- Rugged Stoneshaped Pauldrons
 							i(124211),	-- Glowing Firestone
@@ -1393,7 +1395,7 @@ _.Instances =
 								i(124246),	-- Oathclaw Vestment (Druid)
 								i(124171),	-- Robe of the Arcanic Conclave (Mage)
 							}),
-							{
+							{	-- Fel Essence
 								["itemID"] = 128421,	-- Fel Essence [Heroic]
 								["questID"] = 39505,	-- The Fel Spire [Heroic]
 							},
@@ -1404,6 +1406,7 @@ _.Instances =
 							i(124215),	-- Locket of Unholy Reconstitution
 							i(124135),	-- Cloak of Tangible Dread
 							i(124317),	-- Demongaze Chestplate (Death Knight)
+							i(139625),	-- Ferroleather Chestguard
 							i(124314),	-- Bracers of Fel Empowerment
 							i(124349),	-- Annihilan's Waistplate
 							i(124266),	-- Empowered Demonskin Kilt
@@ -1455,7 +1458,6 @@ _.Instances =
 				["mapID"] = 661,
 				["maps"] = { 662, 663, 664, 665, 666, 667, 668, 669, 670 },
 			}),
-		},					
-		["tierID"] = 6
+		},		
 	},	
 };

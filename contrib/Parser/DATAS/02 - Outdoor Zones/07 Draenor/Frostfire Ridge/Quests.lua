@@ -770,7 +770,7 @@ _.Zones =
 								["races"] = HORDE_ONLY,
 							},
 							{	-- Spirit of the Wolf [H Only]
-								["objectID"] = 33978,	-- Spirit of the Wolf // Frostwolf Shamanstone
+								["objectID"] = 226469,	-- Spirit of the Wolf // Frostwolf Shamanstone
 								["questID"] = 33978,	-- Spirit of the Wolf
 								["coords"] = {
 									{ 17.47, 56.68, 525 },
