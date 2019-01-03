@@ -299,6 +299,9 @@ _.NeverImplemented =
 				un(1, i(150642)),	-- Trailseeker Spaulders
 			}),
 			un(1, i(12105)),	-- Pridemail Leggings
+			un(1, i(37420)),	-- Sharkproof Boots
+			un(1, i(37433)),	-- Layered Scale Boots
+			un(1, i(37444)),	-- Wavekeeper's Helm
 			un(1, i(13090)),	-- Breastplate of the Chosen
 			un(1, i(18320)),	-- Demonheart Spaulders
 			un(1, i(56507)),	-- Razorshell Helm
@@ -551,6 +554,7 @@ _.NeverImplemented =
 		un(1, i(164763)),	-- Unknown
 		un(1, i(164765)),	-- Unknown
 		un(1, i(120370)),
+		un(1, i(158922)),	-- Zany Zombiefied Raptor (Did not make it)
 		un(1, i(120371)),
 		un(1, i(23351)),
 		un(1, i(23470)),

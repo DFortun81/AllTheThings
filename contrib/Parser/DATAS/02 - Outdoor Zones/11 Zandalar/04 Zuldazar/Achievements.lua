@@ -261,6 +261,9 @@ _.Zones =
 											qh(50401, {	-- Fear of Falling
 												["qg"] = 127377,	-- Pa'ku
 												["coord"] = { 70.9, 50.8 },
+												["groups"] = {
+													i(158885),	-- Shimmerfin Flesh
+												},
 												["sourceQuest"] = 50395,	-- The Call of the Skies
 											}),
 											qh(50412, {	-- Back to the Nest
