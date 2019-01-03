@@ -26,9 +26,13 @@ _.Achievements =
 						["groups"] = {
 							a(ach(12510)),	-- Ready for War
 							faction(2159),	-- 7th Legion
+							q(53566, {	-- Dark Iron Dwarfs
+								i(161331),	-- Dark Iron Core Hound
+							}),
 						},
 						["races"] = ALLIANCE_ONLY,
-						["description"] = "Requires release of Battle for Azeroth, unlock requirements may still change.",
+					--	["description"] = "Requires 7th Legion Exalted",
+						["lvl"] = 120,
 					}),
 					ach(12445, {	-- Allied Races: Highmountain Tauren
 						["groups"] = {
@@ -39,7 +43,7 @@ _.Achievements =
 							}),
 						},
 						["races"] = HORDE_ONLY,
-						["description"] = "Requires Battle for Azeroth to be purchased.",
+					--	["description"] = "Requires Battle for Azeroth to be purchased.",
 						["lvl"] = 110,
 					}),
 					ach(12448, {	-- Allied Races: Lightforged Draenei
@@ -51,16 +55,20 @@ _.Achievements =
 							}),
 						},
 						["races"] = ALLIANCE_ONLY,
-						["description"] = "Requires Battle for Azeroth to be purchased.",
+					--	["description"] = "Requires Battle for Azeroth to be purchased.",
 						["lvl"] = 110,
 					}),
 					ach(13092, {	-- Allied Races: Mag'har Orc
 						["groups"] = {
 							ach(12509),	-- Ready for War
 							faction(2157),	-- The Honorbound
+							q(51479, {	-- The Uncorrupted
+								i(161330),	-- Mag'har Direwolf
+							}),
 						},
 						["races"] = HORDE_ONLY,
-						["description"] = "Requires release of Battle for Azeroth, unlock requirements may still change.",
+					--	["description"] = "Requires Honorbound Exalted",
+						["lvl"] = 120,
 					}),
 					ach(12446, {	-- Allied Races: Nightborne
 						["groups"] = {
@@ -71,7 +79,7 @@ _.Achievements =
 							}),
 						},
 						["races"] = HORDE_ONLY,
-						["description"] = "Requires Battle for Azeroth to be purchased.",
+					--	["description"] = "Requires Battle for Azeroth to be purchased.",
 						["lvl"] = 110,
 					}),
 					ach(12447, {	-- Allied Races: Void Elf
@@ -83,7 +91,7 @@ _.Achievements =
 							}),
 						},
 						["races"] = ALLIANCE_ONLY,
-						["description"] = "Requires Battle for Azeroth to be purchased.",
+						--["description"] = "Requires Battle for Azeroth to be purchased.",
 						["lvl"] = 110,
 					}),
 					un(3, ach(9016, {	-- Breaker of the Black Harvest
@@ -93,7 +101,7 @@ _.Achievements =
 					ach(10334, {	-- Predator
 						title(59),	-- Predator
 					}),
-					ach(13078),	-- Realm First! Battle for Azeroth Keystone Master
+					un(2, ach(13078)),	-- Realm First! Battle for Azeroth Keystone Master
 					un(2, ach(3259, {	-- Realm First! Celestial Defender
 						un(39, title(125)),	-- the Celestial Defender
 					})),

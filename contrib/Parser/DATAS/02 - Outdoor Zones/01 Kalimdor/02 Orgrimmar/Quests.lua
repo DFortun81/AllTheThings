@@ -24,6 +24,13 @@ _.Zones =
 									51485,	-- For the Horde
 								},
 							}),
+							q(51479, {	-- The Uncorrupted
+								["qg"] = 143845,	-- Overlord Geya'rah
+							--	["coord"] = { 39.4, 79.2 },
+								["groups"] = {
+									i(161330),	-- Mag'har Direwolf
+								},
+							}),
 						},
 						["races"] = { 36 },	-- Mag'har Orc
 					}),

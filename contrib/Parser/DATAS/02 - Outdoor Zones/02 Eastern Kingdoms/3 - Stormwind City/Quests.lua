@@ -13,6 +13,11 @@ _.Zones =
 						["npcID"] = -17,	-- Quests
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
+							gsh(1522, { -- Allied Races 	-- This belongs to black rock depths where this quest line takes place, but I at least wanted to get this in first.
+								q(53566, {	-- Dark Iron Dwarfs
+									i(161331),	-- Dark Iron Core Hound
+								}),
+							}),
 							qa(52946, {	-- A Dying World
 								["qg"] = 142930, -- Halford Wyrmbane
 								["sourceQuests"] = { 51795 }, -- The Battle for Lordaeron

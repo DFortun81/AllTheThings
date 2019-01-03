@@ -171,12 +171,16 @@ _.ExpansionFeatures =
 					n(-2, { --  Vendors
 						n(99976, { --  Crusader Lord Dalfors
 							["groups"] = {
+								i(153177),	-- Golden Charger's Birdle
 								i(143503), -- Harsh Reins of the Vengeful Charger
 								i(143505), -- Heraldic Reins of the Valorous Charger
 								i(143504), -- Stoic Reins of the Vigilant Charger
+								i(153174),	-- Valorous Charger's Bridle
+								i(153175),	-- Vengeful Charger's Bridle
+								i(153176),	-- Vigilant Charger's Bridle
 							},
 							["classes"] = {2},
-							["description"] = "|c808080FAThese mounts are only available to paladins who have completed|r |cFFFFD700Stirring in the Shadows|r |c808080FAquest from the class mount campaign. Once completed you have to unlock all 52 traits on each spec to unlock it's related mount.|r\n|cFF87CEFAHeraldic Reins of the Valorous Charger = Holy|r \n|cFF00FFFFHarsh Reins of the Vengeful Charger = Ret|r \n|cFFFFC0CBStoic Reins of the Vigilant Charger = Prot|r"
+							["description"] = "|c808080FAThese mounts are only available to paladins who have completed|r |cFFFFD700Stirring in the Shadows|r |c808080FAquest from the class mount campaign."
 						}),
 						n(100196, { -- Eadric the Pure <Quartermaster>
 							i(143727), -- Champion's Salute Toy

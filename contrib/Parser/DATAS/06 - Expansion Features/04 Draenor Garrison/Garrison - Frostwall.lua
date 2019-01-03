@@ -2016,6 +2016,24 @@ _.ExpansionFeatures =
 								ach(10160, {	-- Naval Treasure Expert
 									ach(10159),		-- Naval Treasure Specialist
 								}),
+								garrisonMission(649, { -- For Hate's Sake
+									["groups"] = {
+										i(128172),	-- Captain Sander's Returned Band
+									},
+									["description"] = "This rare mission has a chance to spawn after you build a level 3 Shipyard & completed the Quest Equipment Blueprint: Ghostly Spyglass, dropped from Captain Ironbeard in Tanaan Jungle."
+								}),
+								garrisonMission(650, { -- The House always wins
+									["groups"] = {
+										i(128173),	-- Admiral Taylor's Loyalty Ring
+									},
+									["description"] = "This rare mission has a chance to spawn after you build a level 3 Shipyard & completed the Quest Equipment Blueprint: Ghostly Spyglass, dropped from Captain Ironbeard in Tanaan Jungle."
+								}),
+								garrisonMission(616, { -- The Wave Mistress
+									["groups"] = {
+										i(128169),	-- Signet of the Third Fleet
+									},
+									["description"] = "This rare mission has a chance to spawn after you build a level 3 Shipyard & completed the Quest Equipment Blueprint: Ghostly Spyglass, dropped from Captain Ironbeard in Tanaan Jungle."
+								}),
 								i(128391, {	-- Iron Fleet Treasure Chest [Raid Finder]
 									["groups"] = {
 										i(128194),	-- Snarlwood Recurve Bow

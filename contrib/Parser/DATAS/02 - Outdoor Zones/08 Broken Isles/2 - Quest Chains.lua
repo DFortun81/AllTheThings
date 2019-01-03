@@ -103,7 +103,7 @@ _.Zones =
 								q(48433, { -- Together We Are the Horde!
 									["groups"] = {
 										ach(12245, { -- Allied Races: Highmountain Tauren
-											i(155662), -- Highmountain Thunderhoof
+											h(i(155662)), -- Highmountain Thunderhoof
 										}),
 									},
 									["qg"] = 126134, -- Baine Bloodhoof <High Chieftain>
