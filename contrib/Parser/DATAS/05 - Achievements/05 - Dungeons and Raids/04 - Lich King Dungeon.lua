@@ -14,39 +14,121 @@ _.Achievements =
 					{	-- Abuse the Ooze
 						["achievementID"] = 2155,	-- Abuse the Ooze
 					},
-					ach(2046),		-- Amber Void
-					ach(3802, {		-- Argent Confessor
-						crit(1),		-- Hogger
-						crit(2),		-- VanCleef
-						crit(3),		-- Mutanus
-						crit(4),		-- Herod
-						crit(5),		-- Lucifron
-						crit(6),		-- Thunderaan
-						crit(7),		-- Chromaggus
-						crit(8),		-- Hakkar
-						crit(9),		-- Vek'nilash
-						crit(10),		-- Kalithresh
-						crit(11),		-- Malchezaar
-						crit(12),		-- Gruul
-						crit(13),		-- Vashj
-						crit(14),		-- Archimonde
-						crit(15),		-- Illidan
-						crit(16),		-- Delrissa
-						crit(17),		-- M'uru
-						crit(18),		-- Ingvar
-						crit(19),		-- Cyanigosa
-						crit(20),		-- Eck
-						crit(21),		-- Onyxia
-						crit(22),		-- Heigan
-						crit(23),		-- Ignis
-						crit(24),		-- Vezax
-						crit(25),		-- Algalon
-					}),
+					{	-- Amber Void
+						["achievementID"] = 2046,	-- Amber Void
+					},
+					{	-- Argent Confessor
+						["achievementID"] = 3802, 	-- Argent Confessor
+						["groups"] = {
+							{	-- Algalon
+								["criteriaID"] = 25,	-- Algalon
+								["creatureID"] = 35052,	-- Memory of Algalon
+							},
+							{	-- Archimonde
+								["criteriaID"] = 14,	-- Archimonde
+								["creatureID"] = 35041,	-- Memory of Archimonde
+							},
+							{	-- Chromaggus
+								["criteriaID"] = 7,	-- Chromaggus
+								["creatureID"] = 35033,	-- Memory of Chromaggus
+							},
+							{	-- Cyanigosa
+								["criteriaID"] = 19,	-- Cyanigosa
+								["creatureID"] = 35046,	-- Memory of Cyanigosa
+							},
+							{	-- Delrissa
+								["criteriaID"] = 16,	-- Delrissa
+								["creatureID"] = 35043,	-- Memory of Delrissa
+							},
+							{	-- Eck
+								["criteriaID"] = 20,	-- Eck
+								["creatureID"] = 35047,	-- Memory of Eck
+							},
+							{	-- Gruul
+								["criteriaID"] = 12,	-- Gruul
+								["creatureID"] = 35039,	-- Memory of Gruul
+							},
+							{	-- Hakkar
+								["criteriaID"] = 8,	-- Hakkar
+								["creatureID"] = 35034,	-- Memory of Hakkar
+							},
+							{	-- Heigan
+								["criteriaID"] = 22,	-- Heigan
+								["creatureID"] = 35049,	-- Memory of Heigan
+							},
+							{	-- Herod
+								["criteriaID"] = 4,	-- Herod
+								["creatureID"] = 35030,	-- Memory of Herod
+							},
+							{	-- Hogger
+								["criteriaID"] = 1,	-- Hogger
+								["creatureID"] = 34942,	-- Memory of Hogger
+							},
+							{	-- Illidan
+								["criteriaID"] = 15,	-- Illidan
+								["creatureID"] = 35042,	-- Memory of Illidan
+							},
+							{	-- Ignis
+								["criteriaID"] = 23,	-- Ignis
+								["creatureID"] = 35050,	-- Memory of Ignis
+							},
+							{	-- Ingvar
+								["criteriaID"] = 18,	-- Ingvar
+								["creatureID"] = 35045,	-- Memory of Ingvar
+							},
+							{	-- Kalithresh
+								["criteriaID"] = 10,	-- Kalithresh
+								["creatureID"] = 35037,	-- Memory of Kalithresh
+							},
+							{	-- Lucifron
+								["criteriaID"] = 5,	-- Lucifron
+								["creatureID"] = 35031,	-- Memory of Lucifron
+							},
+							{	-- M'uru (Entropius)
+								["criteriaID"] = 17,	-- M'uru (Entropius)
+								["creatureID"] = 35044,	-- Memory of Entropius
+							},
+							{	-- Malchezaar
+								["criteriaID"] = 11,	-- Malchezaar
+								["creatureID"] = 35038,	-- Memory of Malchezaar
+							},
+							{	-- Mutanus
+								["criteriaID"] = 3,	-- Mutanus
+								["creatureID"] = 35029,	-- Memory of Mutanus
+							},
+							{	-- Onyxia
+								["criteriaID"] = 21,	-- Onyxia
+								["creatureID"] = 35048,	-- Memory of Onyxia
+							},
+							{	-- Thunderaan
+								["criteriaID"] = 6,	-- Thunderaan
+								["creatureID"] = 35032,	-- Memory of Thunderaan
+							},
+							{	-- VanCleef
+								["criteriaID"] = 2,	-- VanCleef
+								["creatureID"] = 35028,	-- Memory of VanCleef
+							},
+							{	-- Vashj
+								["criteriaID"] = 13,	-- Vashj
+								["creatureID"] = 35040,	-- Memory of Vashj
+							},
+							{	-- Vek'nilash
+								["criteriaID"] = 9,	-- Vek'nilash
+								["creatureID"] = 35036,	-- Memory of Vek'nilash
+							},
+							{	-- Vezax
+								["criteriaID"] = 24,	-- Vezax
+								["creatureID"] = 35051,	-- Memory of Vezax
+							},
+						},
+					},
 					ach(2039),		-- Better Off Dred
 					{	-- Brann Spankin' New
 						["achievementID"] = 2154,	-- Brann Spankin' New
 					},
-					ach(2037),		-- Chaos Theory
+					{	-- Chaos Theory
+						["achievementID"] = 2037,	-- Chaos Theory
+					},
 					ach(2151),		-- Consumption Junction
 					{	-- Defenseless
 						["achievementID"] = 1816,	-- Defenseless
@@ -56,12 +138,26 @@ _.Achievements =
 					},
 					ach(4524),		-- Doesn't Go to Eleven
 					ach(4525),		-- Don't Look Up
-					ach(2045),		-- Emerald Void
-					ach(1871, {		-- Experienced Drake Rider
-						crit(1),		-- Amber Drake
-						crit(2),		-- Emerald Drake
-						crit(3),		-- Ruby Drake
-					}),
+					{	-- Emerald Void
+						["achievementID"] = 2045,	-- Emerald Void
+					},
+					{	-- Experienced Drake Rider
+						["achievementID"] = 1871,	-- Experienced Drake Rider
+						["g"] = {
+							{	-- Amber Drake
+								["achievementID"] = 1871,	-- Experienced Drake Rider
+								["criteriaID"] = 1,	-- Amber Drake
+							},
+							{	-- Emerald Drake
+								["achievementID"] = 1871,	-- Experienced Drake Rider
+								["criteriaID"] = 2,	-- Emerald Drake
+							},
+							{	-- Ruby Drake
+								["achievementID"] = 1871,	-- Experienced Drake Rider
+								["criteriaID"] = 3,	-- Ruby Drake
+							},
+						},
+					},
 					{	-- Good Grief
 						["achievementID"] = 1866,	-- Good Grief
 					},
@@ -229,30 +325,90 @@ _.Achievements =
 							crit(3),		-- Survive the encounter with the Lich King
 						}),
 					}),
-					ach(490, {		-- Heroic: The Nexus
-						crit(1),		-- Grand Magus Telestra
-						crit(2),		-- Anomalus
-						crit(3),		-- Ormorok the Tree-Shaper
-						crit(4),		-- Keristrasza
-						ach(478, {		-- The Nexus
-							crit(1),		-- Grand Magus Telestra
-							crit(2),		-- Anomalus
-							crit(3),		-- Ormorok the Tree-Shaper
-							crit(4),		-- Keristrasza
-						}),
-					}),
-					ach(498, {		-- Heroic: The Oculus
-						crit(1),		-- Drakos the Interrogator
-						crit(2),		-- Mage-Lord Urom
-						crit(3),		-- Varos Cloudstrider
-						crit(4),		-- Ley-Guardian Eregos
-						ach(487, {		-- The Oculus
-							crit(1),		-- Drakos the Interrogator
-							crit(2),		-- Mage-Lord Urom
-							crit(3),		-- Varos Cloudstrider
-							crit(4),		-- Ley-Guardian Eregos
-						}),
-					}),
+					{	-- Heroic: The Nexus
+						["achievementID"] = 490,	-- Heroic: The Nexus
+						["g"] = {
+							{	-- Heroic: The Nexus: Anomalus
+								["achievementID"] = 490,	-- Heroic: The Nexus
+								["criteriaID"] = 2,	-- Anomalus
+							},
+							{	-- Heroic: The Nexus: Grand Magus Telestra
+								["achievementID"] = 490,	-- Heroic: The Nexus
+								["criteriaID"] = 1,	-- Grand Magus Telestra
+							},
+							{	-- Heroic: The Nexus: Keristrasza
+								["achievementID"] = 490,	-- Heroic: The Nexus
+								["criteriaID"] = 4,	-- Keristrasza
+							},
+							{	-- Heroic: The Nexus: Ormorok the Tree-Shaper
+								["achievementID"] = 490,	-- Heroic: The Nexus
+								["criteriaID"] = 3,	-- Ormorok the Tree-Shaper
+							},
+							{	-- The Nexus
+								["achievementID"] = 478,	-- The Nexus
+								["g"] = {
+									{	-- The Nexus: Anomalus
+										["achievementID"] = 478,	-- The Nexus
+										["criteriaID"] = 2,	-- Anomalus
+									},
+									{	-- The Nexus: Grand Magus Telestra
+										["achievementID"] = 478,	-- The Nexus
+										["criteriaID"] = 1,	-- Grand Magus Telestra
+									},
+									{	-- The Nexus: Keristrasza
+										["achievementID"] = 478,	-- The Nexus
+										["criteriaID"] = 4,	-- Keristrasza
+									},
+									{	-- The Nexus: Ormorok the Tree-Shaper
+										["achievementID"] = 478,	-- The Nexus
+										["criteriaID"] = 3,	-- Ormorok the Tree-Shaper
+									},
+								},
+							},
+						},
+					},
+					{	-- Heroic: The Oculus
+						["achievementID"] = 498,	-- Heroic: The Oculus
+						["g"] = {
+							{	-- Heroic: The Oculus: Drakos the Interrogator
+								["achievementID"] = 498,	-- Heroic: The Oculus
+								["criteriaID"] = 1,	-- Drakos the Interrogator
+							},
+							{	-- Heroic: The Oculus: Ley-Guardian Eregos
+								["achievementID"] = 498,	-- Heroic: The Oculus
+								["criteriaID"] = 4,	--Ley-Guardian Eregos
+							},
+							{	-- Heroic: The Oculus: Mage-Lord Urom
+								["achievementID"] = 498,	-- Heroic: The Oculus
+								["criteriaID"] = 2,	-- Mage-Lord Urom
+							},
+							{	-- Heroic: The Oculus: Varos Cloudstrider
+								["achievementID"] = 498,	-- Heroic: The Oculus
+								["criteriaID"] = 3,	-- Varos Cloudstrider
+							},
+							{	-- The Oculus
+								["achievementID"] = 487,	-- The Oculus
+								["g"] = {
+									{	-- The Oculus: Drakos the Interrogator
+										["achievementID"] = 487,	-- The Oculus
+										["criteriaID"] = 1,	-- Drakos the Interrogator
+									},
+									{	-- The Oculus: Ley-Guardian Eregos
+										["achievementID"] = 487,	-- The Oculus
+										["criteriaID"] = 4,	-- Ley-Guardian Eregos
+									},
+									{	-- The Oculus: Mage-Lord Urom
+										["achievementID"] = 487,	-- The Oculus
+										["criteriaID"] = 2,	-- Mage-Lord Urom
+									},
+									{	-- The Oculus: Varos Cloudstrider
+										["achievementID"] = 487,	-- The Oculus
+										["criteriaID"] = 3,	-- Varos Cloudstrider
+									},
+								},
+							},
+						},
+					},
 					ach(4520, {		-- Heroic: The Pit of Saron
 						crit(1),		-- Forgemaster Garfrost
 						crit(2),		-- Ick and Krick
@@ -271,46 +427,158 @@ _.Achievements =
 							},
 						},
 					},
-					a(ach(4298, {	-- Heroic: Trial of the Champion (Alliance)
-						crit(1),		-- Mokra the Skullcrusher
-						crit(2),		-- Deathstalker Visceri
-						crit(3),		-- Runok Wildmane
-						crit(4),		-- Eressea Dawnsinger
-						crit(5),		-- Zul'tore
-						crit(6),		-- Argent Confessor Paletress
-						crit(7),		-- Eadric the Pure
-						crit(8),		-- The Black Knight
-						a(ach(4296, {	-- Trial of the Champion (Alliance)
-							crit(1),		-- Mokra the Skullcrusher
-							crit(2),		-- Deathstalker Visceri
-							crit(3),		-- Runok Wildmane
-							crit(4),		-- Eressea Dawnsinger
-							crit(5),		-- Zul'tore
-							crit(6),		-- Argent Confessor Paletress
-							crit(7),		-- Eadric the Pure
-							crit(8),		-- The Black Knight
-						})),
-					})),
-					h(ach(4297, {	-- Heroic: Trial of the Champion (Horde)
-						crit(1),		-- Marshal Jacob Alerius
-						crit(2),		-- Lana Stouthammer
-						crit(3),		-- Colosos
-						crit(4),		-- Ambrose Boltspark
-						crit(5),		-- Jaelyne Evensong
-						crit(6),		-- Argent Confessor Paletress
-						crit(7),		-- Eadric the Pure
-						crit(8),		-- The Black Knight
-						h(ach(3778, {	-- Trial of the Champion (Horde)
-							crit(1),		-- Marshal Jacob Alerius
-							crit(2),		-- Lana Stouthammer
-							crit(3),		-- Colosos
-							crit(4),		-- Ambrose Boltspark
-							crit(5),		-- Jaelyne Evensong
-							crit(6),		-- Argent Confessor Paletress
-							crit(7),		-- Eadric the Pure
-							crit(8),		-- The Black Knight
-						})),
-					})),
+					{	-- Heroic: Trial of the Champion [A]
+						["achievementID"] = 4298, 	-- Heroic: Trial of the Champion
+						["races"] = ALLIANCE_ONLY,
+						["groups"] = {
+							{	-- Argent Confessor Paletress
+								["criteriaID"] = 6,	-- Argent Confessor Paletress
+								["creatureID"] = 34928,	-- Argent Confessor Paletress
+							},
+							{	-- Deathstalker Visceri
+								["criteriaID"] = 2,	-- Deathstalker Visceri
+								["creatureID"] = 35617,	-- Deathstalker Visceri
+							},
+							{	-- Eadric the Pure
+								["criteriaID"] = 7,	-- Eadric the Pure
+								["creatureID"] = 35119,	-- Eadric the Pure
+							},
+							{	-- Eressea Dawnsinger
+								["criteriaID"] = 4,	-- Eressea Dawnsinger
+								["creatureID"] = 35569,	-- Eressea Dawnsinger
+							},
+							{	-- Mokra the Skullcrusher
+								["criteriaID"] = 1,	-- Mokra the Skullcrusher
+								["creatureID"] = 35572,	-- Mokra the Skullcrusher
+							},
+							{	-- Runok Wildmane
+								["criteriaID"] = 3,	-- Runok Wildmane
+								["creatureID"] = 35571,	-- Runok Wildmane
+							},
+							{	-- The Black Knight
+								["criteriaID"] = 8,	-- The Black Knight
+								["creatureID"] = 35451,	-- The Black Knight
+							},
+							{	-- Zul'tore
+								["criteriaID"] = 5,	-- Zul'tore
+								["creatureID"] = 35570,	-- Zul'tore
+							},
+							{	-- Trial of the Champion [A]
+								["achievementID"] = 4296, 	-- Trial of the Champion
+								["races"] = ALLIANCE_ONLY,
+								["groups"] = {
+									{	-- Argent Confessor Paletress
+										["criteriaID"] = 6,	-- Argent Confessor Paletress
+										["creatureID"] = 34928,	-- Argent Confessor Paletress
+									},
+									{	-- Deathstalker Visceri
+										["criteriaID"] = 2,	-- Deathstalker Visceri
+										["creatureID"] = 35617,	-- Deathstalker Visceri
+									},
+									{	-- Eadric the Pure
+										["criteriaID"] = 7,	-- Eadric the Pure
+										["creatureID"] = 35119,	-- Eadric the Pure
+									},
+									{	-- Eressea Dawnsinger
+										["criteriaID"] = 4,	-- Eressea Dawnsinger
+										["creatureID"] = 35569,	-- Eressea Dawnsinger
+									},
+									{	-- Mokra the Skullcrusher
+										["criteriaID"] = 1,	-- Mokra the Skullcrusher
+										["creatureID"] = 35572,	-- Mokra the Skullcrusher
+									},
+									{	-- Runok Wildmane
+										["criteriaID"] = 3,	-- Runok Wildmane
+										["creatureID"] = 35571,	-- Runok Wildmane
+									},
+									{	-- The Black Knight
+										["criteriaID"] = 8,	-- The Black Knight
+										["creatureID"] = 35451,	-- The Black Knight
+									},
+									{	-- Zul'tore
+										["criteriaID"] = 5,	-- Zul'tore
+										["creatureID"] = 35570,	-- Zul'tore
+									},
+								},
+							},
+						},
+					},
+					{	-- Heroic: Trial of the Champion [H]
+						["achievementID"] = 4297, 	-- Heroic: Trial of the Champion
+						["races"] = HORDE_ONLY,
+						["groups"] = {
+							{	-- Ambrose Boltspark
+								["criteriaID"] = 4,	-- Ambrose Boltspark
+								["creatureID"] = 34702,	-- Ambrose Boltspark
+							},
+							{	-- Argent Confessor Paletress
+								["criteriaID"] = 6,	-- Argent Confessor Paletress
+								["creatureID"] = 34928,	-- Argent Confessor Paletress
+							},
+							{	-- Colosos
+								["criteriaID"] = 3,	-- Colosos
+								["creatureID"] = 34701,	-- Colosos
+							},
+							{	-- Eadric the Pure
+								["criteriaID"] = 7,	-- Eadric the Pure
+								["creatureID"] = 35119,	-- Eadric the Pure
+							},
+							{	-- Jaelyne Evensong
+								["criteriaID"] = 5,	-- Jaelyne Evensong
+								["creatureID"] = 34657,	-- Jaelyne Evensong
+							},
+							{	-- Lana Stouthammer
+								["criteriaID"] = 2,	-- Lana Stouthammer
+								["creatureID"] = 34703,	-- Lana Stouthammer
+							},
+							{	-- Marshal Jacob Alerius
+								["criteriaID"] = 1,	-- Marshal Jacob Alerius
+								["creatureID"] = 34705,	-- Marshal Jacob Alerius
+							},
+							{	-- The Black Knight
+								["criteriaID"] = 8,	-- The Black Knight
+								["creatureID"] = 35451,	-- The Black Knight
+							},
+							{	-- Trial of the Champion [H]
+								["achievementID"] = 3778, 	-- Trial of the Champion
+								["races"] = HORDE_ONLY,
+								["groups"] = {
+									{	-- Ambrose Boltspark
+										["criteriaID"] = 4,	-- Ambrose Boltspark
+										["creatureID"] = 34702,	-- Ambrose Boltspark
+									},
+									{	-- Argent Confessor Paletress
+										["criteriaID"] = 6,	-- Argent Confessor Paletress
+										["creatureID"] = 34928,	-- Argent Confessor Paletress
+									},
+									{	-- Colosos
+										["criteriaID"] = 3,	-- Colosos
+										["creatureID"] = 34701,	-- Colosos
+									},
+									{	-- Eadric the Pure
+										["criteriaID"] = 7,	-- Eadric the Pure
+										["creatureID"] = 35119,	-- Eadric the Pure
+									},
+									{	-- Jaelyne Evensong
+										["criteriaID"] = 5,	-- Jaelyne Evensong
+										["creatureID"] = 34657,	-- Jaelyne Evensong
+									},
+									{	-- Lana Stouthammer
+										["criteriaID"] = 2,	-- Lana Stouthammer
+										["creatureID"] = 34703,	-- Lana Stouthammer
+									},
+									{	-- Marshal Jacob Alerius
+										["criteriaID"] = 1,	-- Marshal Jacob Alerius
+										["creatureID"] = 34705,	-- Marshal Jacob Alerius
+									},
+									{	-- The Black Knight
+										["criteriaID"] = 8,	-- The Black Knight
+										["creatureID"] = 35451,	-- The Black Knight
+									},
+								},
+							},
+						},
+					},
 					ach(489, {		-- Heroic: Utgarde Keep
 						crit(1),		-- Prince Keleseth
 						crit(2),		-- Skarvald the Constructor
@@ -335,8 +603,12 @@ _.Achievements =
 							crit(4),		-- King Ymiron
 						}),
 					}),
-					ach(3804),		-- I've Had Worse
-					ach(2036),		-- Intense Cold
+					{	-- I've Had Worse
+						["achievementID"] = 3804, 	-- I've Had Worse
+					},
+					{	-- Intense Cold
+						["achievementID"] = 2036,	-- Intense Cold
+					},
 					ach(2157),		-- King's Bane
 					ach(2040),		-- Less-rabi
 					{	-- Lightning Struck
@@ -373,21 +645,30 @@ _.Achievements =
 						},
 					},
 					ach(1873),		-- Lodi Dodi We Loves the Skadi
-					ach(1868),		-- Make It Count
+					{	-- Make It Count
+						["achievementID"] = 1868,	-- Make It Count
+					},
 					ach(2156),		-- My Girl Loves to Skadi All the Time
 					ach(2057),		-- Oh Novos!
 					ach(1919),		-- On The Rocks
 					ach(2038),		-- Respect Your Elders
-					ach(2044),		-- Ruby Void
+					{	-- Ruby Void
+						["achievementID"] = 2044,	-- Ruby Void
+					},
 					ach(2152),		-- Share The Love
 					{	-- Shatter Resistant
 						["achievementID"] = 2042,	-- Shatter Resistant
 					},
 					ach(2058),		-- Snakes. Why'd It Have To Be Snakes?
 					ach(4522),		-- Soul Power
-					ach(2150),		-- Split Personality
+					{	-- Split Personality
+						["achievementID"] = 2150,	-- Split Personality
+					},
 					ach(1817),		-- The Culling of Time
-					ach(3803),		-- The Faceroller
+					{	-- The Faceroller
+						["achievementID"] = 3803, 	-- The Faceroller
+						["description"] = "If you're soloing it in Legion, it's VERY easy to do, regardless of class:\n\nKill the adds, and when he gets attackable, don't attack in any way (no pets, no trinkets that activates, etc). In other words, do NO damage to him, you'll likely one-shot him and fail.\n\nJust face away from him until he casts Hammer of Justice. You'll catch the hamer, and your action bar changes. Now face him, and use the hammer. It will one-shot him, and you'll get the achievement.\n\nCredit to Netspook on Wowhead",
+					},
 					ach(2043),		-- The Incredible Hulk
 					ach(4523),		-- Three Faced
 					{	-- Timely Death
