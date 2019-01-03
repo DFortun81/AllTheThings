@@ -2519,6 +2519,11 @@ _.ExpansionFeatures =
 						},
 						["qg"] = 79953, -- Lieutennt Thorn
 					}),
+					{	-- Bigger is Better
+						["questID"] = 36592,
+						["qg"] = 77209,	-- Baros Alexston
+						["races"] = ALLIANCE_ONLY,
+					},
 					q(38356, { 	-- Bringing the Bass
 						i(122613, { -- Stash of Dusty Music Rolls
 							i(122209), -- Music Roll: Curse of the Worgen
@@ -2532,6 +2537,17 @@ _.ExpansionFeatures =
 						}),
 					}),	
 					un(40, q(35988)), -- Call of the Archmage
+					{	-- Clearing the Garden
+						["questID"] = 36404,
+						["qg"] = 85344,	-- Naron Bloomthistle
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 36592,	-- Bigger is Better
+						["groups"] = {
+							{	-- Herb Garden lvl 1
+								["buildingID"] = 29,
+							},
+						},
+					},
 					q(34583, { 	-- For the Alliance
 						i(108908),
 						i(108909),
@@ -2542,7 +2558,6 @@ _.ExpansionFeatures =
 						i(108918),
 						i(108919),
 					}),
-					
 					q(39195, {	-- Gems of the Apexis
 						["groups"] = {
 							recipe(187639),	-- Immaculate Versatility Taladite
@@ -4134,6 +4149,16 @@ _.ExpansionFeatures =
 							i(116784), -- Mount
 						}),
 					}),
+					{	-- Things Are Not Goren Our Way
+						["questID"] = 34192,
+						["qg"] = 77730,	-- Timothy Leens
+						["sourceQuest"] = 36592,	-- Bigger is Better
+						["groups"] = {
+							{
+								["buildingID"] = 61,	-- Frostwall Mines
+							},
+						},
+					},
 					garrisonBuilding(144, {	-- Trading Post
 						q(36948, {	-- Auctioning for Parts
 							["description"] = "Completing this quest grants you the ability to access the Auction House from your Garrison.",
