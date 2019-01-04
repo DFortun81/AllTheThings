@@ -154,7 +154,6 @@ _.Instances =
 								},
 							}),
 							cr(36497, e(615, {	-- Brojahm
-								ach(4523),	-- Three Faced
 								{
 									["achievementID"] = 4519,	-- Heroic: The Forge of Souls
 									["criteriaID"] = 1,	-- Brojahm slain
@@ -178,6 +177,9 @@ _.Instances =
 								{
 									["achievementID"] = 4519,	-- Heroic: The Forge of Souls
 									["criteriaID"] = 2,	-- Devourer of Souls slain
+								},
+								{	-- Three Faced
+									["achievementID"] = 4523,	-- Three Faced
 								},
 								i(49790),	-- Blood Boil Lancet
 								i(49793),	-- Tower of the Mouldering Corpse

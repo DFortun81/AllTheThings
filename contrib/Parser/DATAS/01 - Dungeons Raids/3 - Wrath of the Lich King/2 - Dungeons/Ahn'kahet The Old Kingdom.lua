@@ -50,6 +50,10 @@ _.Instances =
 							}),
 						}),
 						cr(29309, e(580, {	-- Elder Nadox
+							{	-- Elder Nadox
+								["achievementID"] = 481,	-- Ahn'kahet: The Old Kingdom
+								["criteriaID"] = 2,	-- Elder Nadox
+							},
 							i(35606),	-- Blade of Nadox
 							i(37592),	-- Brood Plague Helmet
 							i(37594),	-- Elder Headpiece
@@ -59,6 +63,10 @@ _.Instances =
 							i(37591),	-- Nerubian Shield Ring
 						})),
 						cr(29308, e(581, {	-- Prince Taldaram
+							{	-- Prince Taldaram
+								["achievementID"] = 481,	-- Ahn'kahet: The Old Kingdom
+								["criteriaID"] = 1,	-- Prince Taldaram
+							},
 							i(35609),	-- Talisman of Scourge Command
 							i(37595),	-- Necklace of Taldaram
 							i(35610),	-- Slasher's Amulet
@@ -68,6 +76,10 @@ _.Instances =
 							i(35611),	-- Gloves of the Blood Prince
 						})),
 						cr(29310, e(582, {	-- Jedoga Shadowseeker
+							{	-- Jedoga Shadowseeker
+								["achievementID"] = 481,	-- Ahn'kahet: The Old Kingdom
+								["criteriaID"] = 3,	-- Jedoga Shadowseeker
+							},
 							i( 43281),	-- Edge of Oblivion
 							i( 44191),	-- Ice-Rimed Chopper
 							i( 43280),	-- Faceguard of the Hammer Clan
@@ -78,6 +90,10 @@ _.Instances =
 							i( 43277),	-- Jedoga's Greatring
 						})),
 						cr(29311, e(584, {	-- Herald Volazj
+							{	-- Herald Volazj
+								["achievementID"] = 481,	-- Ahn'kahet: The Old Kingdom
+								["criteriaID"] = 4,	-- Herald Volazj
+							},
 							i(37617),	-- Staff of Sinister Claws
 							i(37615),	-- Titanium Compound Bow
 							i(37619),	-- Wand of Ahn'kahet
@@ -116,6 +132,13 @@ _.Instances =
 								}),
 							}),
 							cr(29309, e(580, {	-- Elder Nadox
+								{	-- Elder Nadox
+									["achievementID"] = 492,	-- Heroic: Ahn'kahet: The Old Kingdom
+									["criteriaID"] = 2,	-- Elder Nadox
+								},
+								{	-- Respect Your Elders
+									["achievementID"] = 2038,	-- Respect Your Elders
+								},
 								i(35606),	-- Blade of Nadox
 								i(37592),	-- Brood Plague Helmet
 								i(37594),	-- Elder Headpiece
@@ -125,6 +148,10 @@ _.Instances =
 								i(37591),	-- Nerubian Shield Ring
 							})),
 							cr(29308, e(581, {	-- Prince Taldaram
+								{	-- Prince Taldaram
+									["achievementID"] = 492,	-- Heroic: Ahn'kahet: The Old Kingdom
+									["criteriaID"] = 1,	-- Prince Taldaram
+								},
 								i(35609),	-- Talisman of Scourge Command
 								i(37595),	-- Necklace of Taldaram
 								i(35610),	-- Slasher's Amulet
@@ -134,12 +161,23 @@ _.Instances =
 								i(35611),	-- Gloves of the Blood Prince
 							})),
 							cr(30258, e(583, {	-- Amanitar
+								{	-- Amanitar
+									["achievementID"] = 492,	-- Heroic: Ahn'kahet: The Old Kingdom
+									["criteriaID"] = 5,	-- Amanitar
+								},
 								i(43284),	-- Amanitar Skullbow
 								i(43285),	-- Amulet of the Spell Flinger
 								i(43287),	-- Silken Bridge Handwraps
 								i(43286),	-- Legguards of Swarming Attacks
 							})),
 							cr(29310, e(582, {	-- Jedoga Shadowseeker
+								{	-- Jedoga Shadowseeker
+									["achievementID"] = 492,	-- Heroic: Ahn'kahet: The Old Kingdom
+									["criteriaID"] = 3,	-- Jedoga Shadowseeker
+								},
+								{	-- Volunteer Work
+									["achievementID"] = 2056,	-- Volunteer Work
+								},
 								i( 43281),	-- Edge of Oblivion
 								i( 44191),	-- Ice-Rimed Chopper
 								i( 43280),	-- Faceguard of the Hammer Clan
@@ -150,6 +188,13 @@ _.Instances =
 								i( 43277),	-- Jedoga's Greatring
 							})),
 							cr(29311, e(584, {	-- Herald Volazj
+								{	-- Herald Volazj
+									["achievementID"] = 492,	-- Heroic: Ahn'kahet: The Old Kingdom
+									["criteriaID"] = 4,	-- Herald Volazj
+								},
+								{	-- Volazj's Quick Demise
+									["achievementID"] = 1862,	-- Volazj's Quick Demise
+								},
 								{	-- Champion of the Frozen Wastes
 									["achievementID"] = 1658,	-- Champion of the Frozen Wastes
 									["criteriaID"] = 7,			-- Herald Volazj slain

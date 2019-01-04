@@ -136,8 +136,12 @@ _.Achievements =
 					{	-- Dehydration
 						["achievementID"] = 2041,	-- Dehydration
 					},
-					ach(4524),		-- Doesn't Go to Eleven
-					ach(4525),		-- Don't Look Up
+					{	-- Doesn't Go to Eleven
+						["achievementID"] = 4524,	-- Doesn't Go to Eleven
+					},
+					{	-- Don't Look Up
+						["achievementID"] = 4525,	-- Don't Look Up
+					},
 					{	-- Emerald Void
 						["achievementID"] = 2045,	-- Emerald Void
 					},
@@ -161,31 +165,92 @@ _.Achievements =
 					{	-- Good Grief
 						["achievementID"] = 1866,	-- Good Grief
 					},
-					ach(1860),		-- Gotta Go!
-					ach(1297),		-- Hadronox Denied
-					ach(492, {		-- Heroic: Ahn'kahet: The Old Kingdom
-						crit(1),		-- Prince Taldaram
-						crit(2),		-- Elder Nadox
-						crit(3),		-- Jedoga Shadowseeker
-						crit(4),		-- Herald Volazj
-						crit(5),		-- Amanitar
-						ach(481, {		-- Ahn'kahet: The Old Kingdom
-							crit(1),		-- Prince Taldaram
-							crit(2),		-- Elder Nadox
-							crit(3),		-- Jedoga Shadowseeker
-							crit(4),		-- Herald Volazj
-						}),
-					}),
-					ach(491, {		-- Heroic: Azjol-Nerub
-						crit(1),		-- Krik'thir the Gatewatcher
-						crit(2),		-- Hadronox
-						crit(3),		-- Anub'arak
-						ach(480, {		-- Azjol-Nerub
-							crit(1),		-- Krik'thir the Gatewatcher
-							crit(2),		-- Hadronox
-							crit(3),		-- Anub'arak
-						}),
-					}),
+					{	-- Gotta Go!
+						["achievementID"] = 1860,	-- Gotta Go!
+					},
+					{	-- Hadronox Denied
+						["achievementID"] = 1297,	-- Hadronox Denied
+					},
+					{	-- Heroic: Ahn'kahet: The Old Kingdom
+						["achievementID"] = 492,
+						["g"] = {
+							{	-- Amanitar
+								["achievementID"] = 492,	-- Heroic: Ahn'kahet: The Old Kingdom
+								["criteriaID"] = 5,	-- Amanitar
+							},
+							{	-- Elder Nadox
+								["achievementID"] = 492,	-- Heroic: Ahn'kahet: The Old Kingdom
+								["criteriaID"] = 2,	-- Elder Nadox
+							},
+							{	-- Herald Volazj
+								["achievementID"] = 492,	-- Heroic: Ahn'kahet: The Old Kingdom
+								["criteriaID"] = 4,	-- Herald Volazj
+							},
+							{	-- Jedoga Shadowseeker
+								["achievementID"] = 492,	-- Heroic: Ahn'kahet: The Old Kingdom
+								["criteriaID"] = 3,	-- Jedoga Shadowseeker
+							},
+							{	-- Prince Taldaram
+								["achievementID"] = 492,	-- Heroic: Ahn'kahet: The Old Kingdom
+								["criteriaID"] = 1,	-- Prince Taldaram
+							},
+							{	-- Ahn'kahet: The Old Kingdom
+								["achievementID"] = 481,
+								["g"] = {
+									{	-- Elder Nadox
+										["achievementID"] = 481,	-- Ahn'kahet: The Old Kingdom
+										["criteriaID"] = 2,	-- Elder Nadox
+									},
+									{	-- Herald Volazj
+										["achievementID"] = 481,	-- Ahn'kahet: The Old Kingdom
+										["criteriaID"] = 4,	-- Herald Volazj
+									},
+									{	-- Jedoga Shadowseeker
+										["achievementID"] = 481,	-- Ahn'kahet: The Old Kingdom
+										["criteriaID"] = 3,	-- Jedoga Shadowseeker
+									},
+									{	-- Prince Taldaram
+										["achievementID"] = 481,	-- Ahn'kahet: The Old Kingdom
+										["criteriaID"] = 1,	-- Prince Taldaram
+									},
+								},
+							},
+						},
+					},
+					{	-- Heroic: Azjol-Nerub
+						["achievementID"] = 491,
+						["g"] = {
+							{	-- Anub'arak
+								["achievementID"] = 491,	-- Heroic: Azjol-Nerub
+								["criteriaID"] = 3,	-- Anub'arak
+							},
+							{	-- Hadronox
+								["achievementID"] = 491,	-- Heroic: Azjol-Nerub
+								["criteriaID"] = 2,	-- Hadronox
+							},
+							{	-- Krik'thir
+								["achievementID"] = 491,	-- Heroic: Azjol-Nerub
+								["criteriaID"] = 1,	-- Krik'thir
+							},
+							{	-- Azjol-Nerub
+								["achievementID"] = 480,
+								["g"] = {
+									{	-- Anub'arak
+										["achievementID"] = 480,	-- Azjol-Nerub
+										["criteriaID"] = 3,	-- Anub'arak
+									},
+									{	-- Hadronox
+										["achievementID"] = 480,	-- Azjol-Nerub
+										["criteriaID"] = 2,	-- Hadronox
+									},
+									{	-- Krik'thir
+										["achievementID"] = 480,	-- Azjol-Nerub
+										["criteriaID"] = 1,	-- Krik'thir
+									},
+								},
+							},
+						},
+					},
 					ach(493, {		-- Heroic: Drak'Tharon Keep
 						crit(1),		-- Trollgore
 						crit(2),		-- Novos the Summoner
@@ -307,24 +372,66 @@ _.Achievements =
 							crit(4),		-- Mal'Ganis
 						}),
 					}),
-					ach(4519, {		-- Heroic: The Forge of Souls
-						crit(1),		-- Bronjahm
-						crit(2),		-- Devourer of Souls
-						ach(4516, {		-- The Forge of Souls
-							crit(1),		-- Bronjahm
-							crit(2),		-- Devourer of Souls
-						}),
-					}),
-					ach(4521, {		-- Heroic: The Halls of Reflection
-						crit(1),		-- Falric
-						crit(2),		-- Marwyn
-						crit(3),		-- Survive the encounter with the Lich King
-						ach(4518, {		-- The Halls of Reflection
-							crit(1),		-- Falric
-							crit(2),		-- Marwyn
-							crit(3),		-- Survive the encounter with the Lich King
-						}),
-					}),
+					{	-- Heroic: The Forge of Souls
+						["achievementID"] = 4519,
+						["g"] = {
+							{	-- Bronjahm
+								["achievementID"] = 4519,	-- Heroic: The Forge of Souls
+								["criteriaID"] = 1,	-- Bronjahm
+							},
+							{	-- Devourer of Souls
+								["achievementID"] = 4519,	-- Heroic: The Forge of Souls
+								["criteriaID"] = 2,	-- Devourer of Souls
+							},
+							{	-- The Forge of Souls
+								["achievementID"] = 4516,
+								["g"] = {
+									{	-- Bronjahm
+										["achievementID"] = 4516,	-- The Forge of Souls
+										["criteriaID"] = 1,	-- Bronjahm
+									},
+									{	-- Devourer of Souls
+										["achievementID"] = 4516,	-- The Forge of Souls
+										["criteriaID"] = 2,	-- Devourer of Souls
+									},
+								},
+							},
+						},
+					},
+					{	-- Heroic: The Halls of Reflection
+						["achievementID"] = 4521,
+						["g"] = {
+							{	-- Falric
+								["achievementID"] = 4521,	-- Heroic: The Halls of Reflection
+								["criteriaID"] = 1,	-- Falric
+							},
+							{	-- Marwyn
+								["achievementID"] = 4521,	-- Heroic: The Halls of Reflection
+								["criteriaID"] = 2,	-- Marwyn
+							},
+							{	-- Survive the encounter with the Lich King
+								["achievementID"] = 4521,	-- Heroic: The Halls of Reflection
+								["criteriaID"] = 3,	-- Survive the encounter with the Lich King
+							},
+							{	-- The Halls of Reflection
+								["achievementID"] = 4518,
+								["g"] = {
+									{	-- Falric
+										["achievementID"] = 4518,	-- The Halls of Reflection
+										["criteriaID"] = 1,	-- Falric
+									},
+									{	-- Marwyn
+										["achievementID"] = 4518,	-- The Halls of Reflection
+										["criteriaID"] = 2,	-- Marwyn
+									},
+									{	-- Survive the encounter with the Lich King
+										["achievementID"] = 4518,	-- The Halls of Reflection
+										["criteriaID"] = 3,	-- Survive the encounter with the Lich King
+									},
+								},
+							},
+						},
+					},
 					{	-- Heroic: The Nexus
 						["achievementID"] = 490,	-- Heroic: The Nexus
 						["g"] = {
@@ -409,16 +516,40 @@ _.Achievements =
 							},
 						},
 					},
-					ach(4520, {		-- Heroic: The Pit of Saron
-						crit(1),		-- Forgemaster Garfrost
-						crit(2),		-- Ick and Krick
-						crit(3),		-- Scourgelord Tyrannus and Rimefang
-						ach(4517, {		-- The Pit of Saron
-							crit(1),		-- Forgemaster Garfrost
-							crit(2),		-- Ick and Krick
-							crit(3),		-- Scourgelord Tyrannus and Rimefang
-						}),
-					}),
+					{	-- Heroic: The Pit of Saron
+						["achievementID"] = 4520,
+						["g"] = {
+							{	-- Forgemaster Garfrost
+								["achievementID"] = 4520,	-- Heroic: The Pit of Saron
+								["criteriaID"] = 1,	-- Forgemaster Garfrost
+							},
+							{	-- Ick and Krick
+								["achievementID"] = 4520,	-- Heroic: The Pit of Saron
+								["criteriaID"] = 2,	-- Ick and Krick
+							},
+							{	-- Scourgelord Tyrannus and Rimefang
+								["achievementID"] = 4520,	-- Heroic: The Pit of Saron
+								["criteriaID"] = 3,	-- Scourgelord Tyrannus and Rimefang
+							},
+							{	-- The Pit of Saron
+								["achievementID"] = 4517,
+								["g"] = {
+									{	-- Forgemaster Garfrost
+										["achievementID"] = 4517,	-- The Pit of Saron
+										["criteriaID"] = 1,	-- Forgemaster Garfrost
+									},
+									{	-- Ick and Krick
+										["achievementID"] = 4517,	-- The Pit of Saron
+										["criteriaID"] = 2,	-- Ick and Krick
+									},
+									{	-- Scourgelord Tyrannus and Rimefang
+										["achievementID"] = 4517,	-- The Pit of Saron
+										["criteriaID"] = 3,	-- Scourgelord Tyrannus and Rimefang
+									},
+								},
+							},
+						},
+					},
 					{	-- Heroic: The Violet Hold
 						["achievementID"] = 494,	-- Heroic: The Violet Hold
 						["g"] = {
@@ -651,7 +782,9 @@ _.Achievements =
 					ach(2156),		-- My Girl Loves to Skadi All the Time
 					ach(2057),		-- Oh Novos!
 					ach(1919),		-- On The Rocks
-					ach(2038),		-- Respect Your Elders
+					{	-- Respect Your Elders
+						["achievementID"] = 2038,	-- Respect Your Elders
+					},
 					{	-- Ruby Void
 						["achievementID"] = 2044,	-- Ruby Void
 					},
@@ -670,14 +803,22 @@ _.Achievements =
 						["description"] = "If you're soloing it in Legion, it's VERY easy to do, regardless of class:\n\nKill the adds, and when he gets attackable, don't attack in any way (no pets, no trinkets that activates, etc). In other words, do NO damage to him, you'll likely one-shot him and fail.\n\nJust face away from him until he casts Hammer of Justice. You'll catch the hamer, and your action bar changes. Now face him, and use the hammer. It will one-shot him, and you'll get the achievement.\n\nCredit to Netspook on Wowhead",
 					},
 					ach(2043),		-- The Incredible Hulk
-					ach(4523),		-- Three Faced
+					{	-- Three Faced
+						["achievementID"] = 4523,	-- Three Faced
+					},
 					{	-- Timely Death
 						["achievementID"] = 1867,	-- Timely Death
 					},
-					ach(1862),		-- Volazj's Quick Demise
-					ach(2056),		-- Volunteer Work
+					{	-- Volazj's Quick Demise
+						["achievementID"] = 1862,	-- Volazj's Quick Demise
+					},
+					{	-- Volunteer Work
+						["achievementID"] = 2056,	-- Volunteer Work
+					},
 					ach(1296),		-- Watch Him Die
-					ach(4526),		-- We're Not Retreating; We're Advancing in a Different Direction.
+					{	-- We're Not Retreating; We're Advancing in a Different Direction.
+						["achievementID"] = 4526,	-- We're Not Retreating; We're Advancing in a Different Direction.
+					},
 					ach(1864),		-- What the Eck?
 					ach(1872),		-- Zombiefest!
 				},
