@@ -20,11 +20,95 @@ _.Zones =
 							["speciesID"] = 2390,	-- Leafy Flutterwing
 							["crs"] = { 143049 },	-- Leafy Flutterwing
 						},
+						{	-- Loose Parts [A Only]
+							["objectID"] = 311903,	-- Loose Parts
+							["questID"] = 54526,	-- Whether you have it collected this assault or not.
+							["icon"] = "Interface\\Icons\\INV_Engineering_ReavesBattery",
+							["races"] = ALLIANCE_ONLY,	-- Only Alliance can collect the parts from this.
+							["g"] ={
+								{	-- Rebuilt Gorilla Bot [A Only]
+									["itemID"] = 166715,	-- Rebuilt Gorilla Bot
+									--Note!! The description we want to use will be on the parts because we don't want it written on the item!  See below.
+									["coords"] = {
+										{ 41.69, 42.54, 864 },	-- Location chest spawns
+									},
+									--Note!! Do not mark as Alliance only as it marks the pet itself (in Pet Journal) as that faction which is incorrect and both factions can collect it via AH / Trade / etc.
+									["g"] = {
+										{	-- Banana-Shaped Power Cell
+											["itemID"] = 166734,	-- Banana-Shaped Power Cell
+											["description"] = "These parts are found during the Vol'dun Assault/Incursion in the \"Loose Parts\" container.  To influence your robot to win you will want to hand in \"Alkalescent Salt\" which are also used for the World Quest \"Battle Bots\".",
+											["coords"] = {
+												{ 41.69, 42.54, 864 },	-- Location chest spawns
+											},
+											["races"] = ALLIANCE_ONLY,
+										},
+										{	-- Bludgeoning-Resistant Chest Reinforcer
+											["itemID"] = 166732,	-- Bludgeoning-Resistant Chest Reinforcer
+											["description"] = "These parts are found during the Vol'dun Assault/Incursion in the \"Loose Parts\" container.  To influence your robot to win you will want to hand in \"Alkalescent Salt\" which are also used for the World Quest \"Battle Bots\".",
+											["coords"] = {
+												{ 41.69, 42.54, 864 },	-- Location chest spawns
+											},
+											["races"] = ALLIANCE_ONLY,
+										},
+										{	-- Steel-Plated Primate Exoskeleton
+											["itemID"] = 166733,	-- Steel-Plated Primate Exoskeleton
+											["description"] = "These parts are found during the Vol'dun Assault/Incursion in the \"Loose Parts\" container.  To influence your robot to win you will want to hand in \"Alkalescent Salt\" which are also used for the World Quest \"Battle Bots\".",
+											["coords"] = {
+												{ 41.69, 42.54, 864 },	-- Location chest spawns
+											},
+											["races"] = ALLIANCE_ONLY,
+										},
+									},
+								},
+							},
+						},
+						{	-- Loose Parts [H Only]
+							["objectID"] = 311902,	-- Loose Parts
+							["questID"] = 54526,	-- Whether you have it collected this assault or not.
+							["icon"] = "Interface\\Icons\\INV_Engineering_ReavesBattery",
+							["races"] = HORDE_ONLY,	-- Only Horde can collect the parts from this.
+							["g"] ={
+								{	-- Rebuilt Mechanical Spider [H Only]
+									["itemID"] = 166723,	-- Rebuilt Mechanical Spider
+									--Note!! The description we want to use will be on the parts because we don't want it written on the item!  See below.
+									["coords"] = {
+										{ 41.69, 42.54, 864 },	-- Location chest spawns
+									},
+									--Note!! Do not mark as Horde only as it marks the pet itself (in Pet Journal) as that faction which is incorrect and both factions can collect it via AH / Trade / etc.
+									["g"] = {
+										{	-- Handful of Glass Spider Eyes
+											["itemID"] = 166737,	-- Handful of Glass Spider Eyes
+											["description"] = "These parts are found during the Vol'dun Assault/Incursion in the \"Loose Parts\" container.  To influence your robot to win you will want to hand in \"Alkalescent Salt\" which are also used for the World Quest \"Battle Bots\".",
+											["coords"] = {
+												{ 41.69, 42.54, 864 },	-- Location chest spawns
+											},
+											["races"] = HORDE_ONLY,
+										},
+										{	-- Mecha-Spinneret
+											["itemID"] = 166735,	-- Mecha-Spinneret
+											["description"] = "These parts are found during the Vol'dun Assault/Incursion in the \"Loose Parts\" container.  To influence your robot to win you will want to hand in \"Alkalescent Salt\" which are also used for the World Quest \"Battle Bots\".",
+											["coords"] = {
+												{ 41.69, 42.54, 864 },	-- Location chest spawns
+											},
+											["races"] = HORDE_ONLY,
+										},
+										{	-- Steel-Plated Arachnid Exoskeleton
+											["itemID"] = 166738,	-- Steel-Plated Arachnid Exoskeleton
+											["description"] = "These parts are found during the Vol'dun Assault/Incursion in the \"Loose Parts\" container.  To influence your robot to win you will want to hand in \"Alkalescent Salt\" which are also used for the World Quest \"Battle Bots\".",
+											["coords"] = {
+												{ 41.69, 42.54, 864 },	-- Location chest spawns
+											},
+											["races"] = HORDE_ONLY,
+										},
+									},
+								},
+							},
+						},
 						{	-- Young Sand Sifter
 							["speciesID"] = 2392,	-- Young Sand Sifter
 							["crs"] = { 143050 },	-- Young Sand Sifter
 						},
-
+						
 					},
 				}),
 			},
