@@ -498,6 +498,8 @@ _.Holidays = bubbleDown({["u"] = 18},
 					un(18, i(22235)),	-- Truesilver Shafted Arrow
 					-- Mounts --
 					un(18, i(72146)),	-- Swift Lovebird
+					-- Useless Items --
+					un(18,	i(134860)),	-- Peddlefeet's Buffing Creme
 				})),
 			}),
 		}),

@@ -387,6 +387,7 @@ _.ExpansionFeatures =
 							i(140316), -- Firebat Pup Pet
 							i(129165), -- Barnacle-Encrusted Gem Toy
 							i(130169), -- Tournament Favor
+							i(139419),	-- Golden Banana
 						},
 						["achievementID"] = 11217,
 						["modelScale"] = 2.5,

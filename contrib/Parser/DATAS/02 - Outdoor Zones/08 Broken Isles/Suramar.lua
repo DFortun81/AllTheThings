@@ -850,7 +850,9 @@ _.Zones =
 --]]						
 					}),						
 					q(44057),	-- A "Noble" Event
-					q(41173),	-- A Beacon of Hope
+					q(41173, {	-- A Beacon of Hope
+						i(131717),	-- Starlight Beacon
+					}),
 					q(41916),	-- A Better Future
 					q(42841),	-- A Big Score
 					q(43485),	-- A Burning Distraction

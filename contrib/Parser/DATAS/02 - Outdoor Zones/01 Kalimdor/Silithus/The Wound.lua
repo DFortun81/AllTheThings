@@ -129,6 +129,9 @@ _.Zones =
 							n(132591, {	-- Ogmot the Mad
 								["coords"] = { 28.9, 74.6 },
 								["questID"] = 50334, -- also triggered 50225. First kill questID?
+								["groups"] = {
+									i(156852),	-- Ogmot's Dream Journal
+								},
 							}),
 							n(132578, {	-- Qroshekx
 								["coord"] = { 59.3, 11.4 },

@@ -9,6 +9,7 @@ _.WorldEvents =
 				["groups"] = {
 					n(116041, {		-- Treasure Goblin
 						["groups"] = {
+							un(3, i(142544)),	-- Horadric Satchel
 							n(116034, {	-- The Cow King
 								un(3, i(143543)),	-- Twelve String Guitar
 								un(3, i(142543, {	-- Scroll of Town Portal
@@ -20,9 +21,9 @@ _.WorldEvents =
 									})),
 								})),
 								un(3, i(143327)),	-- Livestock Lochaber Axe
-							}),	
+							}),
 						},
-						["description"] = "Can be found after killing the last boss in a dungeon or randomly in Legion zones. Kill him and enter his portal to fight The Cow King.",
+						["description"] = "Can be found after killing the last boss in a dungeon or randomly in Legion zones, especially often in the Dalaran Underbelly. Kill him and enter his portal to fight The Cow King.",
 					}),
 				}, 
 				["achievementID"] = 11395, -- Diablo's 20th Anniversary

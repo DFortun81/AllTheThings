@@ -2031,6 +2031,7 @@ _.Zones =
 					}),
 					n(99574, { 	-- Slyhoof the Shameless Shaman <Used Totem Vendor>
 						i(140336), -- Brulfist Idol Toy
+						i(140335),	-- Totem Tote
 					}),
 					n(115887, { -- Trinket
 						i(142369), -- Ivory Hawkstrider Mount

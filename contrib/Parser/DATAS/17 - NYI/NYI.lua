@@ -472,6 +472,7 @@ _.NeverImplemented =
 			un(1, i(18438)), -- Sergeant's Mark
 			un(1, i(20084)), -- Hunting Net
 			un(1, i(20525)), -- Earthen Sigil
+			un(1, i(157761)),	-- Unknown
 		}),
 		filter(51, {	-- Neck
 			un(1, i(7550)),		-- Warrior's Honor
@@ -498,6 +499,16 @@ _.NeverImplemented =
 		}),
 	}),
 	n(-494, { -- Misc
+		-- Bags
+		un(1, i(130943)),	-- Reusable Tote Bag
+		--
+		un(1, i(132118)),	-- Aggramar's Blessing (Didnt make it out of beta)
+		un(1, i(134006)),	-- Dwyer's Spare Caber
+		un(1, i(134008)),	-- Simple Rosary of Light
+		un(1, i(134824)),	-- "Sir Pugsington" Costume
+		un(1, i(137602)),	-- Unknown
+		un(1, i(140787)),	--
+		un(1, i(140921)),	--
 		un(1, i(130186)),	-- Intern Items - BJI
 		un(1, i(146801)),	-- [BUILDING CONTRIBUTION REWARD ITEM [NYI]]
 		un(1, i(146800)),	-- [BUILDING CONTRIBUTION REWARD ITEM [NYI]]
@@ -555,6 +566,8 @@ _.NeverImplemented =
 		un(1, i(164765)),	-- Unknown
 		un(1, i(120370)),
 		un(1, i(158922)),	-- Zany Zombiefied Raptor (Did not make it)
+		un(1, i(165357)),	-- Wolf's Den (162530) is used
+		un(1, i(165018)),	-- Unknown
 		un(1, i(120371)),
 		un(1, i(23351)),
 		un(1, i(23470)),

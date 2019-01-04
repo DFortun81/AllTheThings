@@ -7088,6 +7088,7 @@ _.Zones =
 						i(136923),	-- Celestial Calf Pet
 						i(140309),	-- Prismatic Bauble Toy
 						i(137570),	-- Blood Fang Cocoon
+						i(138300),	-- Madman's Luggage
 					}),
 					n(93526, { 	-- Tiffany Cartier <Jewelcrafting Supplies>
 						["coord"] = { 39.86, 34.77 },

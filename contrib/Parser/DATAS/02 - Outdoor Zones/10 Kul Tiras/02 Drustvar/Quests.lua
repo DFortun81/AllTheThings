@@ -1163,6 +1163,7 @@ _.Zones =
 								i(158628),	-- Banisher Wristwraps
 								i(158629),	-- Crone-Seeker's Shackles
 								i(158630),	-- Waycrest Militia Armplates
+								i(156926),	-- Witchrend (Quest Item)
 							},
 							["qg"] = 131638,	-- Lucille Waycrest
 							["coord"] = { 31.4, 30.2 },
