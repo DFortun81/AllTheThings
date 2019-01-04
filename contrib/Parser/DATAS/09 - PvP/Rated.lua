@@ -44,5 +44,11 @@ _.PVP =
 				-- We might have to update this once we know the exact source for the War Hyena
 			},
 		},
+		["g"] = {
+			{	-- 2v2/3v3/RBG
+				["itemID"] = 165714,	-- Gold STrong Box 2v2/3v3/RBG Win, every s1 pvp epic, presumably different id for horde
+				["itemID"] = 165717,	-- Steel Strong Box 2v2/3v3/RBG Lose
+			},
+		},
 	},
 };
