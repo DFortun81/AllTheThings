@@ -760,7 +760,7 @@ _.Zones =
 							i(84606),	-- Pendant of Orbiss
 							i(84607),	-- Locket of the Sumprushes
 							i(84608),	-- Pendant of Revenge
-							i(64609),	-- Amulet of Longing
+							i(84609),	-- Amulet of Longing
 						},
 						["qg"] = 60857,	-- Orbiss
 						["sourceQuests"] = { 30786 }, -- A Spear Through My Side, A Chain Through My Soul
