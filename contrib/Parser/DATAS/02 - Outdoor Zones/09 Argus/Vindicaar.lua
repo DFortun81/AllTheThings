@@ -753,18 +753,6 @@ _.Zones =
 				n(127476, { -- Scouting Map
 					["achievementID"] = 11217,
 					["modelScale"] = 0.65,
-					["groups"] = {
-						q(48601, { -- Felfire Shattering
-							i(153130), -- Man'ari Training Amulet
-						}),
-						i(140495, { -- Torn Invitation [Fox Mount Quest]
-							i(137573), -- Reins of the Llothien Prowler
-						}),
-						i(140320), -- Corgnelius Pet
-						i(140316), -- Firebat Pup Pet
-						i(129165), -- Barnacle-Encrusted Gem Toy
-						i(130169), -- Tournament Favor
-					},
 				}),
 				n(-2, { -- Vendors
 					n(127120, { -- Vindicator Jaelaana <Army of the Light Emissary>

@@ -9,15 +9,6 @@ _.Zones =
 				n(-10049, { -- Command Center
 					["groups"] =  {
 						n(122719, { -- Scouting Map
-							["groups"] = {
-								i(140495, { -- Torn Invitation [Fox Mount Quest]
-									i(137573), -- Reins of the Llothien Prowler
-								}),
-								i(140320), -- Corgnelius Pet
-								i(140316), -- Firebat Pup Pet
-								i(129165), -- Barnacle-Encrusted Gem Toy
-								i(130169), -- Tournament Favor
-							},
 							["achievementID"] = 11217,
 							["modelScale"] = 2.75,
 							["modelRotation"] = 325,
