@@ -1739,6 +1739,17 @@ _.Zones =
 									i(116814),	-- Tura'aka's Clipped Wing
 								},
 							}, 
+							{	-- Vileclaw
+								["npcID"] = 88951,	-- Vileclaw
+								["coords"] = {
+									{ 37.21, 39.01, 550 },
+								},
+								["g"] = {
+									{	-- Vileclaw's Claw
+										["itemID"] = 120172,	-- Vileclaw's Claw
+									},
+								},
+							},
 							{	-- Void-Infused Crystal	**Coords uncofirmed, relied on wowhead**
 								["objectID"] = 232590,	-- Void-Infused Crystal
 								["questID"] = 35579,	

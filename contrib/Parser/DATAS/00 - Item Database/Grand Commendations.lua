@@ -78,7 +78,6 @@ i(129940, 1090);	-- Commendation of the Kirin Tor
 i(129943, 1119);	-- Commendation of the Sons of Hodir
 i(129944, 1091);	-- Commendation of the Wyrmrest Accord
 
-
 -- Timewalking: Cataclysm
 i(133150, 1172);	-- Commendation of the Dragonmaw Clan
 i(133159, 1135);	-- Commendation of The Earthen Ring
@@ -107,6 +106,25 @@ i(143941, 1272);	-- Commendation of The Tillers
 -- Classic
 i(21229, 910);		-- Qiraji Lord's Insignia [Brood of Nozdormu]
 i(21230, 910);		-- Ancient Qiraji Artifact [Brood of Nozdormu]
+i(19708, 270);		-- Blue Hakkari Bijou [Zandalar Tribe]
+i(19713, 270);		-- Bronze Hakkari Bijou [Zandalar Tribe]
+i(19715, 270);		-- Golden Hakkari Bijou [Zandalar Tribe]
+i(19711, 270);		-- Green Hakkari Bijou [Zandalar Tribe]
+i(19710, 270);		-- Orange Hakkari Bijou [Zandalar Tribe]
+i(19712, 270);		-- Purple Hakkari Bijou [Zandalar Tribe]
+i(19707, 270);		-- Red Hakkari Bijou [Zandalar Tribe]
+i(19714, 270);		-- Silver Hakkari Bijou [Zandalar Tribe]
+i(19709, 270);		-- Yellow Hakkari Bijou [Zandalar Tribe]
+i(19706, 270);		-- Bloodscalp Coin [Zandalar Tribe]
+i(19701, 270);		-- Gurubashi Coin [Zandalar Tribe]
+i(19700, 270);		-- Hakkari Coin [Zandalar Tribe]
+i(19699, 270);		-- Razzashi Coin [Zandalar Tribe]
+i(19704, 270);		-- Sandfury Coin [Zandalar Tribe]
+i(19705, 270);		-- Skullsplitter Coin [Zandalar Tribe]
+i(19702, 270);		-- Vilebranch Coin [Zandalar Tribe]
+i(19703, 270);		-- Witherbark Coin [Zandalar Tribe]
+i(19698, 270);		-- Zulian Coin [Zandalar Tribe]
+
 
 -- Burning Crusade
 i(24291, 970);		-- Bog Lord Tendrils [Sporeggar]
@@ -144,11 +162,62 @@ i(118661, 1711);	-- Xelganak's Stinger [Steamwheedle Preservation]
 i(120172, 1711);	-- Vileclaw's Claw [Steamwheedle Preservation]
 i(117492, 1515);	-- Relic of Rukhmar [Arakkoa Outcasts]
 
-
-
-
-
 -- Legion
+
+i(152959, 2170);	-- Argussian Reach Insignia [Argussian Reach]
+i(152960, 2170);	-- Argussian Reach Insignia [Argussian Reach]
+i(152957, 2165);	-- Army of the Light Insignia [Army of the Light]
+i(152958, 2165);	-- Army of the Light Insignia [Army of the Light]
+i(141340, 1900);	-- Court of Farondis Insignia [Court of Farondis]
+i(139023, 1900);	-- Court of Farondis Insignia [Court of Farondis]
+i(146937, 1900);	-- Court of Farondis Insignia [Court of Farondis]
+i(146943, 1900);	-- Court of Farondis Insignia [Court of Farondis]
+i(141339, 1883);	-- Dreamweaver Insignia [Dreamweavers]
+i(139021, 1883);	-- Dreamweaver Insignia [Dreamweavers]
+i(146942, 1883);	-- Dreamweaver Insignia [Dreamweavers]
+i(146936, 1883);	-- Dreamweaver Insignia [Dreamweavers]
+i(152954, 2170);	-- Greater Argussian Reach Insignia [Argussian Reach]
+i(152961, 2170);	-- Greater Argussian Reach Insignia [Argussian Reach]
+i(152955, 2165);	-- Greater Army of the Light Insignia [Army of the Light]
+i(152956, 2165);	-- Greater Army of the Light Insignia [Army of the Light]
+i(147410, 1900);	-- Greater Court of Farondis Insignia [Court of Farondis]
+i(141989, 1900);	-- Greater Court of Farondis Insignia [Court of Farondis]
+i(150927, 1900);	-- Greater Court of Farondis Insignia [Court of Farondis]
+i(141988, 1883);	-- Greater Dreamweaver Insignia [Dreamweavers]
+i(147411, 1883);	-- Greater Dreamweaver Insignia [Dreamweavers]
+i(150926, 1883);	-- Greater Dreamweaver Insignia [Dreamweavers]
+i(141990, 1828);	-- Greater Highmountain Tribe Insignia [Highmountain Tribe]
+i(147412, 1828);	-- Greater Highmountain Tribe Insignia [Highmountain Tribe]
+i(150928, 1828);	-- Greater Highmountain Tribe Insignia [Highmountain Tribe]
+i(147727, 2045);	-- Greater Legionfall Insignia [Armies of Legionfall]
+i(152464, 2045);	-- Greater Legionfall Insignia [Armies of Legionfall]
+i(141992, 1859);	-- Greater Nightfallen Insignia [The Nightfallen]
+i(147413, 1859);	-- Greater Nightfallen Insignia [The Nightfallen]
+i(150930, 1859);	-- Greater Nightfallen Insignia [The Nightfallen]
+i(141987, 1948);	-- Greater Valarjar Insignia [Valarjar]
+i(147414, 1948);	-- Greater Valarjar Insignia [Valarjar]
+i(150925, 1948);	-- Greater Valarjar Insignia [Valarjar]
+i(141991, 1894);	-- Greater Wardens Insignia [The Wardens]
+i(147415, 1894);	-- Greater Wardens Insignia [The Wardens]
+i(150929, 1894);	-- Greater Wardens Insignia [The Wardens]
+i(141341, 1828);	-- Highmountain Tribe Insignia [Highmountain Tribe]
+i(139024, 1828);	-- Highmountain Tribe Insignia [Highmountain Tribe]
+i(146944, 1828);	-- Highmountain Tribe Insignia [Highmountain Tribe]
+i(146938, 1828);	-- Highmountain Tribe Insignia [Highmountain Tribe]
+i(146949, 2045);	-- Legionfall Insignia [Armies of Legionfall]
+i(146950, 2045);	-- Legionfall Insignia [Armies of Legionfall]
+i(141343, 1859);	-- Nightfallen Insignia [The Nightfallen]
+i(139026, 1859);	-- Nightfallen Insignia [The Nightfallen]
+i(146940, 1859);	-- Nightfallen Insignia [The Nightfallen]
+i(146946, 1859);	-- Nightfallen Insignia [The Nightfallen]
+i(141338, 1948);	-- Valarjar Insignia [Valarjar]
+i(146935, 1948);	-- Valarjar Insignia [Valarjar]
+i(146941, 1948);	-- Valarjar Insignia [Valarjar]
+i(141342, 1894);	-- Wardens Insignia [The Wardens]
+i(139025, 1894);	-- Wardens Insignia [The Wardens]
+i(146945, 1894);	-- Wardens Insignia [The Wardens]
+i(146939, 1894);	-- Wardens Insignia [The Wardens]
+
 
 -- Battle For Azeroth
 i(163217, 2164);	-- Azeroth's Tear [Champions of Azeroth]

@@ -9,16 +9,7 @@ _.ExpansionFeatures =
 				["groups"] =  {
 					n(102589, { -- Command Map
 						["groups"] = {
-							q(48601, { -- Felfire Shattering
-								i(153130), -- Man'ari Training Amulet
-							}),
-							i(140495, { -- Torn Invitation [Fox Mount Quest]
-								i(137573), -- Reins of the Llothien Prowler
-							}),
-							i(140320), -- Corgnelius Pet
-							i(140316), -- Firebat Pup Pet
-							i(129165), -- Barnacle-Encrusted Gem Toy
-							i(130169), -- Tournament Favor
+							-- Blank for Class Only Missions in the future
 						},
 						["achievementID"] = 11217,
 						["modelScale"] = 1.5,
