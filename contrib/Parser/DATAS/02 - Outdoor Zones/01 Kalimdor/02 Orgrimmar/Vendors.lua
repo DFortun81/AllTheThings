@@ -22,43 +22,7 @@ _.Zones =
 						i(69896),	-- Yellow Balloon Toy
 					}),
 					n(69977, {	-- Blood Guard Zar'shi <Ruthless Gladiator>
-						{
-							["groups"] = {
-								i(70242),	-- Ruthless Gladiator's Barrier
-								i(70235),	-- Ruthless Gladiator's Baton of Light
-								i(70226),	-- Ruthless Gladiator's Battle Staff
-								i(70222),	-- Ruthless Gladiator's Bonecracker
-								i(70224),	-- Ruthless Gladiator's Bonegrinder
-								i(70211),	-- Ruthless Gladiator's Cleaver
-								i(70213),	-- Ruthless Gladiator's Decapitator
-								i(70239),	-- Ruthless Gladiator's Endgame
-								i(70227),	-- Ruthless Gladiator's Energy Staff
-								i(70218),	-- Ruthless Gladiator's Fleshslicer
-								i(70223),	-- Ruthless Gladiator's Gavel
-								i(70231),	-- Ruthless Gladiator's Greatsword
-								i(70212),	-- Ruthless Gladiator's Hacker
-								i(70238),	-- Ruthless Gladiator's Heavy Crossbow
-								i(70236),	-- Ruthless Gladiator's Longbow
-								i(70225),	-- Ruthless Gladiator's Pike
-								i(70221),	-- Ruthless Gladiator's Pummeler
-								i(70230),	-- Ruthless Gladiator's Quickblade
-								i(70243),	-- Ruthless Gladiator's Redoubt
-								i(70240),	-- Ruthless Gladiator's Reprieve
-								i(70237),	-- Ruthless Gladiator's Rifle
-								i(70220),	-- Ruthless Gladiator's Right Render
-								i(70217),	-- Ruthless Gladiator's Ripper
-								i(70214),	-- Ruthless Gladiator's Shanker
-								i(70241),	-- Ruthless Gladiator's Shield Wall
-								i(70215),	-- Ruthless Gladiator's Shiv
-								i(70219),	-- Ruthless Gladiator's Slasher
-								i(70229),	-- Ruthless Gladiator's Slicer
-								i(70216),	-- Ruthless Gladiator's Spellblade
-								i(70228),	-- Ruthless Gladiator's Staff
-								i(70234),	-- Ruthless Gladiator's Touch of Defeat
-							},
-							--["description"] = "|cFFAA6E39If you own 16 or more (>16) of these items then you are better off purchasing them individually.  If you have less than 16 (<16) than you will save tokens by buying this arsenal.|r",
-							["itemID"] = 146640 -- Arsenal: Ruthless Gladiator's Weapon
-						},
+						i(146640), -- Arsenal: Ruthless Gladiator's Weapons
 						i(70242),	-- Ruthless Gladiator's Barrier
 						i(70235),	-- Ruthless Gladiator's Baton of Light
 						i(70226),	-- Ruthless Gladiator's Battle Staff
@@ -305,39 +269,7 @@ _.Zones =
 						i(83080),	-- Huojin Tabard
 					}),
 					n(54657, {	-- Doris Volanthius <Vicious Gladiator>
-						i(146641, { --  Arsenal: Vicious Gladiator's Weapons
-							i(61360),	-- Vicious Gladiator's Barrier
-							i(61351),	-- Vicious Gladiator's Baton of Light
-							i(61341),	-- Vicious Gladiator's Battle Staff
-							i(61336),	-- Vicious Gladiator's Bonecracker
-							i(61339),	-- Vicious Gladiator's Bonegrinder
-							i(61324),	-- Vicious Gladiator's Cleaver
-							i(61326),	-- Vicious Gladiator's Decapitator
-							i(61357),	-- Vicious Gladiator's Endgame
-							i(61342),	-- Vicious Gladiator's Energy Staff
-							i(61331),	-- Vicious Gladiator's Fleshslicer
-							i(61338),	-- Vicious Gladiator's Gavel
-							i(61346),	-- Vicious Gladiator's Greatsword
-							i(61325),	-- Vicious Gladiator's Hacker
-							i(61355),	-- Vicious Gladiator's Heavy Crossbow
-							i(61353),	-- Vicious Gladiator's Longbow
-							i(61340),	-- Vicious Gladiator's Pike
-							i(61335),	-- Vicious Gladiator's Pummeler
-							i(61345),	-- Vicious Gladiator's Quickblade
-							i(61361),	-- Vicious Gladiator's Redoubt
-							i(61358),	-- Vicious Gladiator's Reprieve
-							i(61354),	-- Vicious Gladiator's Rifle
-							i(61333),	-- Vicious Gladiator's Right Render
-							i(61330),	-- Vicious Gladiator's Ripper
-							i(61327),	-- Vicious Gladiator's Shanker
-							i(61359),	-- Vicious Gladiator's Shield Wall
-							i(61328),	-- Vicious Gladiator's Shiv
-							i(61332),	-- Vicious Gladiator's Slasher
-							i(61344),	-- Vicious Gladiator's Slicer
-							i(61329),	-- Vicious Gladiator's Spellblade
-							i(61343),	-- Vicious Gladiator's Staff
-							i(61350),	-- Vicious Gladiator's Touch of Defeat
-						}),
+						i(146641), --  Arsenal: Vicious Gladiator's Weapons
 						i(61360),	-- Vicious Gladiator's Barrier
 						i(61351),	-- Vicious Gladiator's Baton of Light
 						i(61341),	-- Vicious Gladiator's Battle Staff
@@ -2274,40 +2206,7 @@ _.Zones =
 						i(57921),	-- Incense Infused Cummerbund					
 					}),
 					n(69978, {	-- Sergeant Thunderhorn <Cataclysmic Gladiator>
-						i(146639, { -- Arsenal: Cataclysmic Gladiator's Weapons [ Horde / Alliance / Tested ]
-							["groups"] = {
-								i(73446),	-- Cataclysmic Gladiator's Shield Wall
-								i(73447),	-- Cataclysmic Gladiator's Slicer
-								i(73448),	-- Cataclysmic Gladiator's Bonecracker
-								i(73449),	-- Cataclysmic Gladiator's Hacker
-								i(73450),	-- Cataclysmic Gladiator's Baton of Light
-								i(73451),	-- Cataclysmic Gladiator's Slasher
-								i(73452),	-- Cataclysmic Gladiator's Right Render
-								i(73453),	-- Cataclysmic Gladiator's Fleshslicer
-								i(73454),	-- Cataclysmic Gladiator's Ripper
-								i(73455),	-- Cataclysmic Gladiator's Shanker
-								i(73457),	-- Cataclysmic Gladiator's Energy Staff
-								i(73458),	-- Cataclysmic Gladiator's Redoubt
-								i(73459),	-- Cataclysmic Gladiator's Gavel
-								i(73460),	-- Cataclysmic Gladiator's Rifle
-								i(73461),	-- Cataclysmic Gladiator's Shiv
-								i(73462),	-- Cataclysmic Gladiator's Staff
-								i(73463),	-- Cataclysmic Gladiator's Heavy Crossbow
-								i(73464),	-- Cataclysmic Gladiator's Touch of Defeat
-								i(73465),	-- Cataclysmic Gladiator's Reprieve
-								i(73466),	-- Cataclysmic Gladiator's Battle Staff
-								i(73467),	-- Cataclysmic Gladiator's Spellblade
-								i(73468),	-- Cataclysmic Gladiator's Barrier
-								i(73469),	-- Cataclysmic Gladiator's Endgame
-								i(73470),	-- Cataclysmic Gladiator's Longbow
-								i(73472),	-- Cataclysmic Gladiator's Quickblade
-								i(73473),	-- Cataclysmic Gladiator's Pummeler
-								i(73474),	-- Cataclysmic Gladiator's Cleaver
-								i(73475),	-- Cataclysmic Gladiator's Greatsword
-								i(73476),	-- Cataclysmic Gladiator's Bonegrinder
-								i(73477),	-- Cataclysmic Gladiator's Decapitator
-							},
-						}),
+						i(146639), -- Arsenal: Cataclysmic Gladiator's Weapons
 						i(73562),	-- Cataclysmic Gladiator's Bracers of Prowess
 						i(73552),	-- Cataclysmic Gladiator's Warboots of Alacrity
 						i(73479),	-- Cataclysmic Gladiator's Plate Legguards

@@ -1985,39 +1985,7 @@ _.Zones =
 								["coord"] = { 75.00, 67.02 },
 								["g"] = {
 									-- Ensembles not added as unable to verify contents, individual armor pieces verified on vendor
-									i(146641, { --  Arsenal: Vicious Gladiator's Weapons
-										i(61360),	-- Vicious Gladiator's Barrier
-										i(61351),	-- Vicious Gladiator's Baton of Light
-										i(61341),	-- Vicious Gladiator's Battle Staff
-										i(61336),	-- Vicious Gladiator's Bonecracker
-										i(61339),	-- Vicious Gladiator's Bonegrinder
-										i(61324),	-- Vicious Gladiator's Cleaver
-										i(61326),	-- Vicious Gladiator's Decapitator
-										i(61357),	-- Vicious Gladiator's Endgame
-										i(61342),	-- Vicious Gladiator's Energy Staff
-										i(61331),	-- Vicious Gladiator's Fleshslicer
-										i(61338),	-- Vicious Gladiator's Gavel
-										i(61346),	-- Vicious Gladiator's Greatsword
-										i(61325),	-- Vicious Gladiator's Hacker
-										i(61355),	-- Vicious Gladiator's Heavy Crossbow
-										i(61353),	-- Vicious Gladiator's Longbow
-										i(61340),	-- Vicious Gladiator's Pike
-										i(61335),	-- Vicious Gladiator's Pummeler
-										i(61345),	-- Vicious Gladiator's Quickblade
-										i(61361),	-- Vicious Gladiator's Redoubt
-										i(61358),	-- Vicious Gladiator's Reprieve
-										i(61354),	-- Vicious Gladiator's Rifle
-										i(61333),	-- Vicious Gladiator's Right Render
-										i(61330),	-- Vicious Gladiator's Ripper
-										i(61327),	-- Vicious Gladiator's Shanker
-										i(61359),	-- Vicious Gladiator's Shield Wall
-										i(61328),	-- Vicious Gladiator's Shiv
-										i(61332),	-- Vicious Gladiator's Slasher
-										i(61344),	-- Vicious Gladiator's Slicer
-										i(61329),	-- Vicious Gladiator's Spellblade
-										i(61343),	-- Vicious Gladiator's Staff
-										i(61350),	-- Vicious Gladiator's Touch of Defeat
-									}),
+									i(146641), --  Arsenal: Vicious Gladiator's Weapons
 									-- Weapons
 									i(61360),	-- Vicious Gladiator's Barrier
 									i(61351),	-- Vicious Gladiator's Baton of Light
