@@ -22,6 +22,7 @@ _.Zones =
 						i(159558),	-- Bleached Bone Skullcracker
 						i(159573),	-- Bleached Bone Staff
 						i(159606),	-- Bleached Bone Wand
+						i(160161),	-- Faithless Skycloak
 						i(159492),	-- Golden Fleet Bow
 						i(159811),	-- Golden Fleet Buckler
 						i(159532),	-- Golden Fleet Dagger

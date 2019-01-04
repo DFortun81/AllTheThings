@@ -42,6 +42,7 @@ _.WorldDrops =
 					i(154832),	-- Bloodhex Cord
 					i(154835),	-- Bloodhex Legwraps
 					i(154837),	-- Bloodhex Anklewraps
+					i(160161),	-- Faithless Skycloak
 					i(154819),	-- Festerroot Helm
 					i(154821),	-- Festerroot Shoulderpads
 					i(154820),	-- Festerroot Jerkin
