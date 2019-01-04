@@ -263,19 +263,52 @@ _.Achievements =
 							crit(4),		-- The Prophet Tharon'ja
 						}),
 					}),
-					ach(495, {		-- Heroic: Gundrak
-						crit(1),		-- Slad'ran
-						crit(2),		-- Moorabi
-						crit(3),		-- Drakkari Colossus
-						crit(4),		-- Gal'darah
-						crit(5),		-- Eck the Ferocious
-						ach(484, {		-- Gundrak
-							crit(1),		-- Slad'ran
-							crit(2),		-- Moorabi
-							crit(3),		-- Drakkari Colossus
-							crit(4),		-- Gal'darah
-						}),
-					}),
+					{	-- Heroic: Gundrak
+						["achievementID"] = 495,
+						["g"] = {
+							{	-- Drakkari Colossus
+								["achievementID"] = 495,	-- Heroic: Gundrak
+								["criteriaID"] = 3,	-- Drakkari Colossus
+							},
+							{	-- Eck the Ferocious
+								["achievementID"] = 495,	-- Heroic: Gundrak
+								["criteriaID"] = 5,	-- Eck the Ferocious
+							},
+							{	-- Gal'darah
+								["achievementID"] = 495,	-- Heroic: Gundrak
+								["criteriaID"] = 4,	-- Gal'darah
+							},
+							{	-- Moorabi
+								["achievementID"] = 495,	-- Heroic: Gundrak
+								["criteriaID"] = 2,	-- Moorabi
+							},
+							{	-- Slad'ran
+								["achievementID"] = 495,	-- Heroic: Gundrak
+								["criteriaID"] = 1,	-- Slad'ran
+							},
+							{	-- Gundrak
+								["achievementID"] = 484,
+								["g"] = {
+									{	-- Drakkari Colossus
+										["achievementID"] = 484,	-- Gundrak
+										["criteriaID"] = 3,	-- Drakkari Colossus
+									},
+									{	-- Gal'darah
+										["achievementID"] = 484,	-- Gundrak
+										["criteriaID"] = 4,	-- Gal'darah
+									},
+									{	-- Moorabi
+										["achievementID"] = 484,	-- Gundrak
+										["criteriaID"] = 2,	-- Moorabi
+									},
+									{	-- Slad'ran
+										["achievementID"] = 484,	-- Gundrak
+										["criteriaID"] = 1,	-- Slad'ran
+									},
+								},
+							},
+						},
+					},
 					{	-- Heroic: Halls of Lightning
 						["achievementID"] = 497,
 						["g"] = {
@@ -741,7 +774,9 @@ _.Achievements =
 						["achievementID"] = 2036,	-- Intense Cold
 					},
 					ach(2157),		-- King's Bane
-					ach(2040),		-- Less-rabi
+					{	-- Less-rabi
+						["achievementID"] = 2040,	-- Less-rabi
+					},
 					{	-- Lightning Struck
 						["achievementID"] = 1834,	-- Lightning Struck
 					},
@@ -788,11 +823,15 @@ _.Achievements =
 					{	-- Ruby Void
 						["achievementID"] = 2044,	-- Ruby Void
 					},
-					ach(2152),		-- Share The Love
+					{	-- Share The Love
+						["achievementID"] = 2152,	-- Share The Love
+					},
 					{	-- Shatter Resistant
 						["achievementID"] = 2042,	-- Shatter Resistant
 					},
-					ach(2058),		-- Snakes. Why'd It Have To Be Snakes?
+					{	-- Snakes. Why'd It Have To Be Snakes?
+						["achievementID"] = 2058,	-- Snakes. Why'd It Have To Be Snakes?
+					},
 					ach(4522),		-- Soul Power
 					{	-- Split Personality
 						["achievementID"] = 2150,	-- Split Personality
@@ -819,7 +858,9 @@ _.Achievements =
 					{	-- We're Not Retreating; We're Advancing in a Different Direction.
 						["achievementID"] = 4526,	-- We're Not Retreating; We're Advancing in a Different Direction.
 					},
-					ach(1864),		-- What the Eck?
+					{	-- What the Eck?
+						["achievementID"] = 1864,	-- What the Eck?
+					},
 					ach(1872),		-- Zombiefest!
 				},
 			}),
