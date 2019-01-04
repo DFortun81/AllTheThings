@@ -12,63 +12,7 @@ _.Zones =
 					n(-2, {		-- Vendors
 						["g"] = {
 							nh(75695, { -- Acon Deathwielder
-								i(144251, { -- Arsenal: Grievous Gladiator's Weapons [ Horde / Tested ]
-									["groups"] = {
-										i(102982),	-- Grievous Gladiator's Barrier
-										i(103167),	-- Grievous Gladiator's Barrier
-										i(102793),	-- Grievous Gladiator's Baton of Light
-										i(103310),	-- Grievous Gladiator's Baton of Light
-										i(102798),	-- Grievous Gladiator's Battle Staff
-										i(103169),	-- Grievous Gladiator's Battle Staff
-										i(102806),	-- Grievous Gladiator's Bonecracker
-										i(103312),	-- Grievous Gladiator's Bonecracker
-										i(102797),	-- Grievous Gladiator's Cleaver
-										i(103142),	-- Grievous Gladiator's Cleaver
-										i(102807),	-- Grievous Gladiator's Decapitator
-										i(103139),	-- Grievous Gladiator's Decapitator
-										i(102983),	-- Grievous Gladiator's Endgame
-										i(103166),	-- Grievous Gladiator's Endgame
-										i(102804),	-- Grievous Gladiator's Energy Staff
-										i(103209),	-- Grievous Gladiator's Energy Staff
-										i(102787),	-- Grievous Gladiator's Gavel
-										i(103207),	-- Grievous Gladiator's Gavel
-										i(102796),	-- Grievous Gladiator's Greatsword
-										i(103141),	-- Grievous Gladiator's Greatsword
-										i(102801),	-- Grievous Gladiator's Hacker
-										i(103311),	-- Grievous Gladiator's Hacker
-										i(102788),	-- Grievous Gladiator's Longbow
-										i(103153),	-- Grievous Gladiator's Longbow
-										i(102795),	-- Grievous Gladiator's Mageblade
-										i(103307),	-- Grievous Gladiator's Mageblade
-										i(102803),	-- Grievous Gladiator's Pike
-										i(103264),	-- Grievous Gladiator's Pike
-										i(102789),	-- Grievous Gladiator's Pummeler
-										i(103143),	-- Grievous Gladiator's Pummeler
-										i(102809),	-- Grievous Gladiator's Quickblade
-										i(103144),	-- Grievous Gladiator's Quickblade
-										i(102979),	-- Grievous Gladiator's Redoubt
-										i(103208),	-- Grievous Gladiator's Redoubt
-										i(102805),	-- Grievous Gladiator's Render
-										i(103306),	-- Grievous Gladiator's Render
-										i(102980),	-- Grievous Gladiator's Reprieve
-										i(103176),	-- Grievous Gladiator's Reprieve
-										i(102794),	-- Grievous Gladiator's Rifle
-										i(103206),	-- Grievous Gladiator's Rifle
-										i(102800),	-- Grievous Gladiator's Ripper
-										i(103305),	-- Grievous Gladiator's Ripper
-										i(102799),	-- Grievous Gladiator's Shanker
-										i(103304),	-- Grievous Gladiator's Shanker
-										i(102981),	-- Grievous Gladiator's Shield Wall
-										i(103322),	-- Grievous Gladiator's Shield Wall
-										i(102802),	-- Grievous Gladiator's Slicer
-										i(103313),	-- Grievous Gladiator's Slicer
-										i(102791),	-- Grievous Gladiator's Spellblade
-										i(103168),	-- Grievous Gladiator's Spellblade
-										i(102790),	-- Grievous Gladiator's Touch of Defeat
-										i(103177),	-- Grievous Gladiator's Touch of Defeat
-									},
-									["races"] = HORDE_ONLY,
-								}),
+								i(144251), -- Arsenal: Grievous Gladiator's Weapons
 								i(102895),	-- Grievous Gladiator's Warboots of Cruelty
 								i(102787),	-- Grievous Gladiator's Gavel
 								i(102789),	-- Grievous Gladiator's Pummeler
@@ -306,83 +250,6 @@ _.Zones =
 									--Don't change the order!!
 									{	-- Arsenal: Malevolent Gladiator's Weapons
 										["itemID"] = 144243,	-- Arsenal: Malevolent Gladiator's Weapons
-										["g"] = {
-											{	-- Malevolent Gladiator's Barrier
-												["itemID"] = 91482,	-- Malevolent Gladiator's Barrier
-											},
-											{	-- Malevolent Gladiator's Battle Staff
-												["itemID"] = 91486,	-- Malevolent Gladiator's Battle Staff
-											},
-											{	-- Malevolent Gladiator's Bonecracker
-												["itemID"] = 91759,	-- Malevolent Gladiator's Bonecracker
-											},
-											{	-- Malevolent Gladiator's Bonegrinder
-												["itemID"] = 91442,	-- Malevolent Gladiator's Bonegrinder
-											},
-											{	-- Malevolent Gladiator's Cleaver
-												["itemID"] = 91446,	-- Malevolent Gladiator's Cleaver
-											},
-											{	-- Malevolent Gladiator's Decapitator
-												["itemID"] = 91440,	-- Malevolent Gladiator's Decapitator
-											},
-											{	-- Malevolent Gladiator's Endgame
-												["itemID"] = 91480,	-- Malevolent Gladiator's Endgame
-											},
-											{	-- Malevolent Gladiator's Energy Staff
-												["itemID"] = 91560,	-- Malevolent Gladiator's Energy Staff
-											},
-											{	-- Malevolent Gladiator's Gavel
-												["itemID"] = 91556,	-- Malevolent Gladiator's Gavel
-											},
-											{	-- Malevolent Gladiator's Greatsword
-												["itemID"] = 91444,	-- Malevolent Gladiator's Greatsword
-											},
-											{	-- Malevolent Gladiator's Hacker
-												["itemID"] = 91757,	-- Malevolent Gladiator's Hacker
-											},
-											{	-- Malevolent Gladiator's Longbow
-												["itemID"] = 91460,	-- Malevolent Gladiator's Longbow
-											},
-											{	-- Malevolent Gladiator's Pike
-												["itemID"] = 91660,	-- Malevolent Gladiator's Pike
-											},
-											{	-- Malevolent Gladiator's Pummeler
-												["itemID"] = 91448,	-- Malevolent Gladiator's Pummeler
-											},
-											{	-- Malevolent Gladiator's Quickblade
-												["itemID"] = 91450,	-- Malevolent Gladiator's Quickblade
-											},
-											{	-- Malevolent Gladiator's Redoubt
-												["itemID"] = 91558,	-- Malevolent Gladiator's Redoubt
-											},
-											{	-- Malevolent Gladiator's Render
-												["itemID"] = 91749,	-- Malevolent Gladiator's Render
-											},
-											{	-- Malevolent Gladiator's Reprieve
-												["itemID"] = 91494,	-- Malevolent Gladiator's Reprieve
-											},
-											{	-- Malevolent Gladiator's Rifle
-												["itemID"] = 91554,	-- Malevolent Gladiator's Rifle
-											},
-											{	-- Malevolent Gladiator's Ripper
-												["itemID"] = 91745,	-- Malevolent Gladiator's Ripper
-											},
-											{	-- Malevolent Gladiator's Shanker
-												["itemID"] = 91743,	-- Malevolent Gladiator's Shanker
-											},
-											{	-- Malevolent Gladiator's Shield Wall
-												["itemID"] = 91771,	-- Malevolent Gladiator's Shield Wall
-											},
-											{	-- Malevolent Gladiator's Slicer
-												["itemID"] = 91761,	-- Malevolent Gladiator's Slicer
-											},
-											{	-- Malevolent Gladiator's Spellblade
-												["itemID"] = 91484,	-- Malevolent Gladiator's Spellblade
-											},
-											{	-- Malevolent Gladiator's Staff
-												["itemID"] = 91535,	-- Malevolent Gladiator's Staff
-											},
-										},
 									},
 									--Note!! These PvP Weapons are listed here because they are still sold by the vendor.
 									--Even though they are in the ensemble we still want to list them here.
@@ -1225,53 +1092,7 @@ _.Zones =
 		--]]
 							}),
 							nh(75688, {	-- Roo Desvin
-								i(144245, { -- Arsenal: Tyrannical Gladiator's Weapons
-									i(99794),	-- Tyrannical Gladiator's Barrier
-									i(100171),	-- Tyrannical Gladiator's Barrier
-									i(99796),	-- Tyrannical Gladiator's Battle Staff
-									i(99974),	-- Tyrannical Gladiator's Battle Staff
-									i(99941),	-- Tyrannical Gladiator's Bonecracker
-									i(99983),	-- Tyrannical Gladiator's Bonecracker
-									i(99769),	-- Tyrannical Gladiator's Cleaver
-									i(99973),	-- Tyrannical Gladiator's Cleaver
-									i(99984),	-- Tyrannical Gladiator's Decapitator
-									i(99793),	-- Tyrannical Gladiator's Endgame
-									i(100172),	-- Tyrannical Gladiator's Endgame
-									i(99837),	-- Tyrannical Gladiator's Energy Staff
-									i(99981),	-- Tyrannical Gladiator's Energy Staff
-									i(99835),	-- Tyrannical Gladiator's Gavel
-									i(99963),	-- Tyrannical Gladiator's Gavel
-									i(99768),	-- Tyrannical Gladiator's Greatsword
-									i(99972),	-- Tyrannical Gladiator's Greatsword
-									i(99940),	-- Tyrannical Gladiator's Hacker
-									i(99978),	-- Tyrannical Gladiator's Hacker
-									i(99805),	-- Tyrannical Gladiator's Heavy Crossbow
-									i(99987),	-- Tyrannical Gladiator's Heavy Crossbow
-									i(99936),	-- Tyrannical Gladiator's Mageblade
-									i(99971),	-- Tyrannical Gladiator's Mageblade
-									i(99770),	-- Tyrannical Gladiator's Pummeler
-									i(99965),	-- Tyrannical Gladiator's Pummeler
-									i(99771),	-- Tyrannical Gladiator's Quickblade
-									i(99986),	-- Tyrannical Gladiator's Quickblade
-									i(99836),	-- Tyrannical Gladiator's Redoubt
-									i(100168),	-- Tyrannical Gladiator's Redoubt
-									i(99935),	-- Tyrannical Gladiator's Render
-									i(99982),	-- Tyrannical Gladiator's Render
-									i(99803),	-- Tyrannical Gladiator's Reprieve
-									i(100169),	-- Tyrannical Gladiator's Reprieve
-									i(99933),	-- Tyrannical Gladiator's Ripper
-									i(99977),	-- Tyrannical Gladiator's Ripper
-									i(99932),	-- Tyrannical Gladiator's Shanker
-									i(99976),	-- Tyrannical Gladiator's Shanker
-									i(99951),	-- Tyrannical Gladiator's Shield Wall
-									i(100170),	-- Tyrannical Gladiator's Shield Wall
-									i(99942),	-- Tyrannical Gladiator's Slicer
-									i(99979),	-- Tyrannical Gladiator's Slicer
-									i(99795),	-- Tyrannical Gladiator's Spellblade
-									i(99967),	-- Tyrannical Gladiator's Spellblade
-									i(99824),	-- Tyrannical Gladiator's Staff
-									i(99968),	-- Tyrannical Gladiator's Staff
-								}),
+								i(144245), -- Arsenal: Tyrannical Gladiator's Weapons
 								i(100171),	-- Tyrannical Gladiator's Barrier
 								i(99974),	-- Tyrannical Gladiator's Battle Staff
 								i(99983),	-- Tyrannical Gladiator's Bonecracker
@@ -1440,63 +1261,7 @@ _.Zones =
 							}),
 							nh(78461, { -- Shonn Su
 								un(14, i(120286)),	-- Enchanter's Illusion - Glorious Tyranny
-								i(144250, { -- Arsenal: Prideful Gladiator's Weapons [ Horde / Tested ]
-									["groups"] = {
-										i(102785),	-- Prideful Gladiator's Barrier
-										i(102596),	-- Prideful Gladiator's Baton of Light
-										i(103507),	-- Prideful Gladiator's Baton of Light
-										i(102601),	-- Prideful Gladiator's Battle Staff
-										i(103366),	-- Prideful Gladiator's Battle Staff
-										i(103366),	-- Prideful Gladiator's Battle Staff
-										i(102609),	-- Prideful Gladiator's Bonecracker
-										i(103509),	-- Prideful Gladiator's Bonecracker
-										i(102600),	-- Prideful Gladiator's Cleaver
-										i(103339),	-- Prideful Gladiator's Cleaver
-										i(102610),	-- Prideful Gladiator's Decapitator
-										i(103336),	-- Prideful Gladiator's Decapitator
-										i(102786),	-- Prideful Gladiator's Endgame
-										i(102607),	-- Prideful Gladiator's Energy Staff
-										i(103406),	-- Prideful Gladiator's Energy Staff
-										i(102590),	-- Prideful Gladiator's Gavel
-										i(103404),	-- Prideful Gladiator's Gavel
-										i(102599),	-- Prideful Gladiator's Greatsword
-										i(103338),	-- Prideful Gladiator's Greatsword
-										i(102604),	-- Prideful Gladiator's Hacker
-										i(103508),	-- Prideful Gladiator's Hacker
-										i(102591),	-- Prideful Gladiator's Longbow
-										i(103350),	-- Prideful Gladiator's Longbow
-										i(102598),	-- Prideful Gladiator's Mageblade
-										i(103504),	-- Prideful Gladiator's Mageblade
-										i(102606),	-- Prideful Gladiator's Pike
-										i(103461),	-- Prideful Gladiator's Pike
-										i(102592),	-- Prideful Gladiator's Pummeler
-										i(103340),	-- Prideful Gladiator's Pummeler
-										i(102612),	-- Prideful Gladiator's Quickblade
-										i(103341),	-- Prideful Gladiator's Quickblade
-										i(102782),	-- Prideful Gladiator's Redoubt
-										i(103405),	-- Prideful Gladiator's Redoubt
-										i(102608),	-- Prideful Gladiator's Render
-										i(103503),	-- Prideful Gladiator's Render
-										i(102783),	-- Prideful Gladiator's Reprieve
-										i(103373),	-- Prideful Gladiator's Reprieve
-										i(102597),	-- Prideful Gladiator's Rifle
-										i(103403),	-- Prideful Gladiator's Rifle
-										i(102603),	-- Prideful Gladiator's Ripper
-										i(103502),	-- Prideful Gladiator's Ripper
-										i(102602),	-- Prideful Gladiator's Shanker
-										i(103501),	-- Prideful Gladiator's Shanker
-										i(102784),	-- Prideful Gladiator's Shield Wall
-										i(103519),	-- Prideful Gladiator's Shield Wall
-										i(102605),	-- Prideful Gladiator's Slicer
-										i(103510),	-- Prideful Gladiator's Slicer
-										i(102594),	-- Prideful Gladiator's Spellblade
-										i(103365),	-- Prideful Gladiator's Spellblade
-										i(103365),	-- Prideful Gladiator's Spellblade
-										i(102593),	-- Prideful Gladiator's Touch of Defeat
-										i(103374),	-- Prideful Gladiator's Touch of Defeat
-									},
-									["races"] = HORDE_ONLY,
-								}),
+								i(144250), -- Arsenal: Prideful Gladiator's Weapons
 								i(103444),	-- Prideful Gladiator's Clasp of Cruelty
 								i(147362),	-- Prideful Gladiator's Cord of Prowess
 								i(103338),	-- Prideful Gladiator's Greatsword
