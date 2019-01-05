@@ -12,6 +12,7 @@ _.Zones =
 					505,	-- Lightning Vein Mine
 					506,	-- The Swollen Vault
 					516,	-- Scenario [Phase 1]
+					517,	-- Lightning Vein Mine
 				},
 				["lvl"] = 85,
 				["achievementID"] = 8099,
