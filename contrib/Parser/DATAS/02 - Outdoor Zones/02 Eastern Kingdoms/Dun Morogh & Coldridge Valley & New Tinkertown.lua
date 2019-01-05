@@ -653,7 +653,10 @@ _.Zones =
 			},
 			["lvl"] = 1,	
 			["achievementID"] = 627,
-			["maps"] = { 31 },
+			["maps"] = {
+				31,		-- Coldridge Valley
+				428,	-- Frostmane Hovel (Coldridge Valley)
+			},
 			["description"] = "|cff66ccffDun Morogh is the snowy starter zone for Dwarf and Gnome in central Eastern Kingdoms. New players learn the basics of questing by fighting leper gnomes from Gnomeregan and lighter topics like safely transporting ale. This zone is reached on foot via a series of elaborate connecting tunnels not found anywhere else in Azeroth.|r",				
 		}),
 	}),
