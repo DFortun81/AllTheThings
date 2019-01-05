@@ -10,6 +10,7 @@ _.NeverImplemented =
 		un(1, i(165261)),	-- Unknown Cloak
 		un(1, i(163121)),	-- Vicious War Basilisk (Horde, Red, probably will be added in a later patch)
 		un(1, i(163122)),	-- Vicious War Basilisk (Ally, Blue, probably will be added in a later patch)
+		un(1, i(157622)),	-- Silverscope Longrifle ( Level 20 Kul Tiran Hunter Start Gear?)
 	}),
 	n(-220, { -- Class
 		cl(12, { -- DH
@@ -520,6 +521,9 @@ _.NeverImplemented =
 			un(1, i(142378)),	-- zzz old vial of ancient mana
 			un(1, i(17347)),	--
 			un(1, i(17409)),	-- Encrusted Crystal Fragment
+			un(1, i(20883)),	-- Unknown
+			un(1, i(20936)),	-- Unknown
+			un(1, i(20937)),	-- Unknown
 		}),
 		un(1, i(21243)),	-- Bloated Mightfish
 		un(1, i(132118)),	-- Aggramar's Blessing (Didnt make it out of beta)
@@ -1003,6 +1007,7 @@ _.NeverImplemented =
 			un(1, i(103375)),    -- Prideful Gladiator's Heavy Crossbow (they ditched those items)
 			un(1, i(102613)),    -- Prideful Gladiator's Heavy Crossbow (they ditched those items)	
 			un(1, i(102810)),    -- Grievous Gladiator's Heavy Crossbow (they ditched those items)
+			un(1, i(158503)),	-- Scalawag's Bolt Thrower
 		}),
 		n(-333, { -- Daggers
 			un(1, i(32179)),    -- Chancellor's Shiv
@@ -1022,10 +1027,17 @@ _.NeverImplemented =
 		n(-345, { -- Guns
 			un(1, i(49455)),	-- Blunderbuss of Deforestation
 			un(1, i(38246)),	-- Skull-Forged Blunderbuss
+			un(1, i(161296)),	-- Autumnvale Hunting Rifle (they added a different version)
+			un(1, i(164933)),	-- Sem'jin Beakblade Longrifle
+			
 		}),
 		n(-331, { -- Held in Offhand
 			un(1, i(23462)),	-- High Warlord's Tome of Destruction
 			un(1, i(23463)),	-- High Warlord's Tome of Mending
+			un(1, i(32191)),	-- Chancellor's Battletome
+			un(1, i(42523)),	-- Savage Gladiator's Endgame
+			un(1, i(42529)),	-- Savage Gladiator's Reprieve
+			un(1, i(42535)),	-- Savage Gladiator's Grimoire
 		}),
 		n(-334, { -- One-Handed Axes
 			un(1, i(49456)),	-- Will of the Earth
@@ -1098,6 +1110,7 @@ _.NeverImplemented =
 			un(1, i(136858)),	-- Wierd Testing Stuff for Artefact Weapons
 			un(1, i(139275)),	-- Wierd Testing Stuff for Artefact Weapons
 			un(1, i(139891)),	-- Wierd Testing Stuff for Artefact Weapons
+			un(1, i(165272)),	--
 		}),
 		n(-387,	{	-- Relics
 			un(1, i(132252)),	-- Owen Test Relic
@@ -1136,10 +1149,6 @@ _.NeverImplemented =
 			un(1, i(151138)), 	-- Warglaive of Azzinoth [This version not implemented; was testing for transmog]
 			un(1, i(129737)), 	-- Verus
 		}),
-	un(1, i(32191)),	-- Chancellor's Battletome
-	un(1, i(42523)),	-- Savage Gladiator's Endgame
-	un(1, i(42529)),	-- Savage Gladiator's Reprieve
-	un(1, i(42535)),	-- Savage Gladiator's Grimoire
 	un(1, i(80980)),	-- Axe of Aborted Deforestation (Never made it to Live, yet into our Appearances Tab)
 	un(1, i(80983)),	-- Extravagant Tree Chopper (Never made it to Live, yet into our Appearances Tab)
 	un(1, i(32178)),	-- Chancellor's Shanker

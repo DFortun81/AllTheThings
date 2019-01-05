@@ -1292,6 +1292,7 @@ _.Zones =
 								i(44974),	-- Elwynn Lamb Pet
 								i(45011),	-- Stormwind Banner Toy
 								i(45130),	-- Blunderbuss of Khaz Modan
+								i(164932),	-- Grapeshotter of Khaz Modan
 								i(45074),	-- Claymore of the Prophet
 								i(45078),	-- Dagger of Lunar Purity
 								i(45077),	-- Dagger of the Rising Moon
@@ -1397,6 +1398,7 @@ _.Zones =
 								i(44970),	-- Dun Morogh Cub Pet
 								i(45018),	-- Ironforge Banner Toy
 								i(45130),	-- Blunderbuss of Khaz Modan
+								i(164932),	-- Grapeshotter of Khaz Modan
 								i(45074),	-- Claymore of the Prophet
 								i(45078),	-- Dagger of Lunar Purity
 								i(45077),	-- Dagger of the Rising Moon
@@ -1573,6 +1575,7 @@ _.Zones =
 								i(44984),	-- Ammen Vale Lashling Pet
 								i(45020),	-- Exodar Banner Toy
 								i(45130),	-- Blunderbuss of Khaz Modan
+								i(164932),	-- Grapeshotter of Khaz Modan
 								i(45074),	-- Claymore of the Prophet
 								i(45078),	-- Dagger of Lunar Purity
 								i(45077),	-- Dagger of the Rising Moon
@@ -1755,6 +1758,7 @@ _.Zones =
 								i(45002),	-- Mechanopeep Pet
 								i(45019),	-- Gnomeregan Banner Toy
 								i(45130),	-- Blunderbuss of Khaz Modan
+								i(164932),	-- Grapeshotter of Khaz Modan
 								i(45074),	-- Claymore of the Prophet
 								i(45078),	-- Dagger of Lunar Purity
 								i(45077),	-- Dagger of the Rising Moon
@@ -1800,6 +1804,7 @@ _.Zones =
 								i(44965),	-- Teldrassil Sproutling Pet
 								i(45021),	-- Darnassus Banner Toy
 								i(45130),	-- Blunderbuss of Khaz Modan
+								i(164932),	-- Grapeshotter of Khaz Modan
 								i(45074),	-- Claymore of the Prophet
 								i(45078),	-- Dagger of Lunar Purity
 								i(45077),	-- Dagger of the Rising Moon
