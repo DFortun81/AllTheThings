@@ -10,6 +10,33 @@ _.Instances =
 				["groups"] = {
 					d(3, {	-- 10-Player
 						cr(28860, e(1616, {	-- Sartharion
+							{	-- Besting the Black Dragonflight (10 player)
+								["achievementID"] = 1876,	-- Besting the Black Dragonflight (10 player)
+							},
+							{	-- Gonna Go When the Volcano Blows (10 player)
+								["achievementID"] = 2047,	-- Gonna Go When the Volcano Blows (10 player)
+							},
+							{	-- Less Is More (10 player)
+								["achievementID"] = 624,	-- Less Is More (10 player)
+								["g"] = {
+									{	-- Less Is More (10 player): Vesperon
+										["achievementID"] = 624,	-- Less Is More (10 player)
+										["criteriaID"] = 1,	-- Vesperon
+									},
+									{	-- Less Is More (10 player): Tenebron
+										["achievementID"] = 624,	-- Less Is More (10 player)
+										["criteriaID"] = 2,	-- Tenebron
+									},
+									{	-- Less Is More (10 player): Shadron
+										["achievementID"] = 624,	-- Less Is More (10 player)
+										["criteriaID"] = 3,	-- Shadron
+									},
+									{	-- Less Is More (10 player): Sartharion
+										["achievementID"] = 624,	-- Less Is More (10 player)
+										["criteriaID"] = 4,	-- Sartharion
+									},
+								},
+							},
 							ach(2049, {	-- Twilight Assist (10 player)
 								i(43992),	-- Volitant Amulet
 								i(43988),	-- Gale-Proof Cloak
@@ -25,9 +52,12 @@ _.Instances =
 								i(43993),	-- Greatring of Collision
 							}),
 							ach(2051, {	-- The Twilight Zone (10 player)
+								{	-- of the Nightfall
+									["titleID"] = 107,	-- of the Nightfall
+								},
 								i(43986)	-- Reins of the Black Drake (MOUNT!)
 							}),
-							{
+							{	-- Champion of the Frozen Wastes: Sartharion
 								["achievementID"] = 1658,	-- Champion of the Frozen Wastes
 								["criteriaID"] = 1,			-- Sartharion (10 or 25 player) slain
 							},
@@ -66,6 +96,33 @@ _.Instances =
 					}),
 					d(4, {	-- 25-Player
 						cr(28860, e(1616, {	-- Sartharion
+							{	-- Besting the Black Dragonflight (25 player)
+								["achievementID"] = 625,	-- Besting the Black Dragonflight (25 player)
+							},
+							{	-- Gonna Go When the Volcano Blows (25 player)
+								["achievementID"] = 2048,	-- Gonna Go When the Volcano Blows (25 player)
+							},
+							{	-- Less Is More (25 player)
+								["achievementID"] = 1877,	-- Less Is More (25 player)
+								["g"] = {
+									{	-- Less Is More (25 player): Vesperon
+										["achievementID"] = 1877,	-- Less Is More (25 player)
+										["criteriaID"] = 1,	-- Vesperon
+									},
+									{	-- Less Is More (25 player): Tenebron
+										["achievementID"] = 1877,	-- Less Is More (25 player)
+										["criteriaID"] = 2,	-- Tenebron
+									},
+									{	-- Less Is More (25 player): Shadron
+										["achievementID"] = 1877,	-- Less Is More (25 player)
+										["criteriaID"] = 3,	-- Shadron
+									},
+									{	-- Less Is More (25 player): Sartharion
+										["achievementID"] = 1877,	-- Less Is More (25 player)
+										["criteriaID"] = 4,	-- Sartharion
+									},
+								},
+							},
 							ach(2052, {	-- Twilight Assist (25 player)
 								i(44003),	-- Upstanding Spaulders
 								i(44000),	-- Dragonstorm Breastplate
@@ -80,9 +137,12 @@ _.Instances =
 								i(44011),	-- Leggings of the Honored
 							}),
 							ach(2054, {	-- The Twilight Zone (25 player)
+								{	-- Twilight Vanquisher
+									["titleID"] = 89,	-- Twilight Vanquisher
+								},
 								i(43954)	-- Reins of the Twilight Drake (MOUNT!)
 							}),
-							{
+							{	-- Champion of the Frozen Wastes: Sartharion
 								["achievementID"] = 1658,	-- Champion of the Frozen Wastes
 								["criteriaID"] = 1,			-- Sartharion (10 or 25 player) slain
 							},
