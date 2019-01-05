@@ -3,6 +3,14 @@
 ---------------------------------------------------------------------------
 _.NeverImplemented = 
 {   
+	n(-10052, { -- BFA - Stuff that might gets added later duo changes/hotfixes/patches and/or similar
+		-- Those Items are currently not possible to load ingame (BFA Items), but they might be with a new patch
+		un(1, i(161988)),	-- Tidespray Linen Cloak of the Feather
+		un(1, i(161991)),	-- Tidespray Linen Cloak of Resilience
+		un(1, i(165261)),	-- Unknown Cloak
+		un(1, i(163121)),	-- Vicious War Basilisk (Horde, Red, probably will be added in a later patch)
+		un(1, i(163122)),	-- Vicious War Basilisk (Ally, Blue, probably will be added in a later patch)
+	}),
 	n(-220, { -- Class
 		cl(12, { -- DH
 			un(1, i(129738)), -- Verus
@@ -458,6 +466,7 @@ _.NeverImplemented =
 			un(1, i(129294)), -- Bonespeaker Tatoos
 			un(1, i(137118)), -- The Crone's Shirt
 			un(1, i(137552)), -- Purple Shirt
+			un(1, i(62061)), 	-- Irradiated Gnome Shirt
 			un(1, i(52548)),	-- Initiate's Tunic
 			un(1, i(53879)), 	-- Rugged Work Shirt
 			un(1, i(53880)), 	-- Super Girly Shirt
@@ -499,16 +508,32 @@ _.NeverImplemented =
 		}),
 	}),
 	n(-494, { -- Misc
-		-- Bags
-		un(1, i(130943)),	-- Reusable Tote Bag
-		--
+		n(-113, { -- Bags
+			un(1, i(130943)),	-- Reusable Tote Bag
+			un(1, i(166699)),	-- Desert Rucksack
+		}),
+		n(-650, {	-- Quest Item
+			un(1, i(142362)),	-- zzz old fel-etched bone
+			un(1, i(142371)),	-- zzz old inferno stone
+			un(1, i(142373)),	-- zzz old locket f eldr thalas
+			un(1, i(142376)),	-- zzz old glowing blood thislte petal
+			un(1, i(142378)),	-- zzz old vial of ancient mana
+			un(1, i(17347)),	--
+			un(1, i(17409)),	-- Encrusted Crystal Fragment
+		}),
 		un(1, i(132118)),	-- Aggramar's Blessing (Didnt make it out of beta)
 		un(1, i(134006)),	-- Dwyer's Spare Caber
 		un(1, i(134008)),	-- Simple Rosary of Light
 		un(1, i(134824)),	-- "Sir Pugsington" Costume
 		un(1, i(137602)),	-- Unknown
+		un(1, i(151060)),	--
 		un(1, i(140787)),	--
 		un(1, i(140921)),	--
+		un(1, i(132107)),	--
+		un(1, i(132250)),	--
+		un(1, i(155010)),	-- REUSE MD DNT
+		un(1, i(155011)),	-- REUSE MD DNT
+		un(1, i(155012)),	-- REUSE MD DNT
 		un(1, i(130186)),	-- Intern Items - BJI
 		un(1, i(146801)),	-- [BUILDING CONTRIBUTION REWARD ITEM [NYI]]
 		un(1, i(146800)),	-- [BUILDING CONTRIBUTION REWARD ITEM [NYI]]
@@ -941,6 +966,7 @@ _.NeverImplemented =
 	}),
 	n(-161, { -- Toys
 		un(1, i(140779)),	-- Falanaar Echo
+		un(1, i(136848)),	-- Worn Doll Test
 		un(1, i(143545)),	-- Fel Focusing Crystal 
 		un(1, i(141300)), 	-- Magi Focusing Crystal	
 		un(1, i(38568)), 	-- Drakkari Charm Bracelet
@@ -1081,6 +1107,10 @@ _.NeverImplemented =
 			un(1, i(108782)),	-- Unknown
 			un(1, i(109519)),	-- Unknown
 		}),
+		n(-337, { -- Two Handed Swords
+			un(1, i(139621)),	-- The Watcher's Hammer. Used for Lost Edicts of the Watcher Paladin Appearance, actual appearance is gained via a different item
+		
+		}),
 		n(-339, { -- Two Handed Swords
 			un(1, i(140687)),	-- Unholy Runeblade (You only get Heart-Lession Gear, even as Unholy)
 			un(1, i(140714)),	-- Bloodcaked Runeblade (You only get Heart-Lession Gear, even as Unholy)
@@ -1207,7 +1237,6 @@ _.NeverImplemented =
 	un(1, i(128824)), 	-- Tome of the Silver Hand	
 	}),
 	un(1, i(151377)), -- Arne Test Heirloom - Bloodied Arcanite Reaper
-	un(1, i(166699)),	-- Desert Rucksack
 	un(1, i(140011)),	-- Duskwatch Adjudicator's Pauldrons
 	un(1, i(33964)), -- Helm of the Stormcaller - Never Added
 	un(3, i(19160)), -- Contest Winner's Tabard   [NOTE: Temporarily here until we get groups working with un/u tag again}
@@ -1217,7 +1246,6 @@ _.NeverImplemented =
 	un(1, i(59795)),	-- Harp Shell Shoulderplates
 	un(1, i(59796)), 	-- Treads of Decapod Death
 	un(1, i(59797)),	-- Abalone-Linked Robes
-	un(1, i(62061)), 	-- Irradiated Gnome Shirt
 	un(1, i(67600)), 	-- Lil' Alexstrasza										(Never added in Game)	
 	un(1, i(136593)), 	-- Doomhammer Offhand Appearance Record (referenced by actual item)	
 	un(1, i(142360)),	-- Blazing Ember Signet
@@ -1226,13 +1254,6 @@ _.NeverImplemented =
 	un(1, i(147036)),	-- Fel-Stippled Legguards 								(removed Beta)
 	un(1, i(147058)), 	-- Chaos-Calming Wristguards 							(removed Beta)
 	un(1, i(147074)),	-- Vambraces of Resoulte Justice 						(removed Beta)
-	
-	-- Those Items are currently not possible to load ingame (BFA Items), but they might be with a new patch
-	un(1, i(161988)),	-- Tidespray Linen Cloak of the Feather
-	un(1, i(161991)),	-- Tidespray Linen Cloak of Resilience
-	un(1, i(165261)),	-- Unknown Cloak
-	un(1, i(163121)),	-- Vicious War Basilisk (Horde, Red, probably will be added in a later patch)
-	un(1, i(163122)),	-- Vicious War Basilisk (Ally, Blue, probably will be added in a later patch)
 
 ------------------------------------------------------------
 --			T E M P O R A R Y			I T E M S		  --

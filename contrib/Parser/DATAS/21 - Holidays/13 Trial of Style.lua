@@ -906,15 +906,15 @@ _.Holidays =
 						}),
 					}),
 				}),
-				n(85961, {	-- Warpweaver Sle'shal <Token Exchange> (Inside Trial of Style)
-				--	["maps"] = { 63 },	-- Need to add mapID from Inside Trial of Style once its active)
+				n(133196, {	-- Warpweaver Sle'shal <Token Exchange> (Inside Trial of Style)
+					["maps"] = { 777 },	-- Need to add mapID from Inside Trial of Style once its active)
 					["g"] = bubbleDown({["u"] = 22}, {
 						i(151134, { -- Trial of Style Token
 						--	i(151116), -- Fashionable Undershirt
 							i(156862),	-- ToS Dance Floor
 							i(156863),	-- ToS Spot Light
 							i(156864),	-- ToS Flames
---[[Just in case I dont spam{ -- Ensemble: Mana-Etched  Regalia
+							{ -- Ensemble: Mana-Etched  Regalia
 								["groups"] = {
 									i(151885), -- Mana-Etched Crown
 									i(151886), -- Mana-Etched Spaulders
@@ -1032,7 +1032,7 @@ _.Holidays =
 								["itemID"] = 157577,
 								["classes"] = { 2, 1, 6 },
 							},
-					--]]}),
+						}),
 					}),
 				}),
 				n(99867, {	-- Warpweaver Tuviss <Transmogrifier> (Neutral / Dalaran)
