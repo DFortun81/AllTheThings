@@ -45,12 +45,40 @@ _.Instances =
 						}),
 						q(29864),	-- Working at the Source, No actual awards.
 					}),
+					n(0, {	-- Zone Drop
+						i(37068),	-- Berserker's Sabatons
+						i(37069),	-- Dragonflayer Seer's Bindings
+						i(37070),	-- Tundra Wolf Boots
+						{	-- Ymirjar Physician's Robe
+							["itemID"] = 37587,	-- Ymirjar Physician's Robe
+							["crs"] = {
+								26672,	-- Bloodthirsty Tundra Wolf
+								26550,	-- Dragonflayer Deathseeker
+								26553,	-- Dragonflayer Fanatic
+								26554,	-- Dragonflayer Seer
+								26555,	-- Scourge Hulk
+								26696,	-- Ymirjar Berserker
+								26694,	-- Ymirjar Dusk Shaman
+								28368,	-- Ymirjar Necromancer
+								26669,	-- Ymirjar Savage
+							},
+						},
+						{	-- Bands of Fading Light
+							["itemID"] = 37590,	-- Bands of Fading Light
+							["crs"] = {
+								26672,	-- Bloodthirsty Tundra Wolf
+								26550,	-- Dragonflayer Deathseeker
+								26553,	-- Dragonflayer Fanatic
+								26554,	-- Dragonflayer Seer
+								26555,	-- Scourge Hulk
+								26696,	-- Ymirjar Berserker
+								26694,	-- Ymirjar Dusk Shaman
+								28368,	-- Ymirjar Necromancer
+								26669,	-- Ymirjar Savage
+							},
+						},
+					}),
 					d(  1, {	-- Normal
-						n(0, {	-- Zone Drop
-							i(37068),	-- Berserker's Sabatons
-							i(37069),	-- Dragonflayer Seer's Bindings
-							i(37070),	-- Tundra Wolf Boots
-						}),
 						cr(26668, e(641, {	-- Svala Sorrowgrave
 							["groups"] = {
 								{	-- Utgarde Pinnacle: Svala Sorrowgrave
@@ -124,36 +152,6 @@ _.Instances =
 					d(  2, {	-- Heroic
 						["lvl"] = 80,
 						["groups"] = {
-							n(0, {	-- Zone Drop
-								{	-- Ymirjar Physician's Robe
-									["itemID"] = 37587,	-- Ymirjar Physician's Robe
-									["crs"] = {
-										26672,	-- Bloodthirsty Tundra Wolf
-										26550,	-- Dragonflayer Deathseeker
-										26553,	-- Dragonflayer Fanatic
-										26554,	-- Dragonflayer Seer
-										26555,	-- Scourge Hulk
-										26696,	-- Ymirjar Berserker
-										26694,	-- Ymirjar Dusk Shaman
-										28368,	-- Ymirjar Necromancer
-										26669,	-- Ymirjar Savage
-									},
-								},
-								{	-- Bands of Fading Light
-									["itemID"] = 37590,	-- Bands of Fading Light
-									["crs"] = {
-										26672,	-- Bloodthirsty Tundra Wolf
-										26550,	-- Dragonflayer Deathseeker
-										26553,	-- Dragonflayer Fanatic
-										26554,	-- Dragonflayer Seer
-										26555,	-- Scourge Hulk
-										26696,	-- Ymirjar Berserker
-										26694,	-- Ymirjar Dusk Shaman
-										28368,	-- Ymirjar Necromancer
-										26669,	-- Ymirjar Savage
-									},
-								},
-							}),
 							cr(26668, e(641, {	-- Svala Sorrowgrave
 								{	-- Heroic: Utgarde Pinnacle: Svala Sorrowgrave
 									["achievementID"] = 499,	-- Heroic: Utgarde Pinnacle
