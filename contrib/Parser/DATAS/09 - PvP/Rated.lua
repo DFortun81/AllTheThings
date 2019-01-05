@@ -14,43 +14,52 @@ _.PVP =
 					{	-- Player vs. Player (Battle for Azeroth Season 1)
 						["npcID"] = -3158,	-- Player vs. Player (Battle for Azeroth Season 1)
 						["g"] = {
-							{	-- Vicious War Clefthoof
-								["itemID"] = 163124,	-- Vicious War Clefthoof
-								["races"] = HORDE_ONLY,
-							},
-							{	-- Vicious War Riverbeast
-								["itemID"] = 163123,	-- Vicious War Riverbeast
-								["races"] = ALLIANCE_ONLY,
+							{	-- Mounts
+								["npcID"] = -100,	-- Mounts
+								["g"] = {
+									{	-- Vicious War Clefthoof
+										["itemID"] = 163124,	-- Vicious War Clefthoof
+										["races"] = HORDE_ONLY,
+									},
+									{	-- Vicious War Riverbeast
+										["itemID"] = 163123,	-- Vicious War Riverbeast
+										["races"] = ALLIANCE_ONLY,
+									},
+								},
+							["description"] = "These mounts require 2400 points.\n\nAny win above 1400 rating will reward:\n\n10 Points in 2v2 (0.33%)\n\n25 Points in 3v3 (1%)\n\n50 Points in RBG (2%)",
 							},
 						},
 					},
 					{	-- Player vs. Player (Battle for Azeroth Season 2)
 						["npcID"] = -3157,	-- Player vs. Player (Battle for Azeroth Season 2
 						["g"] = {
-							{	-- Reins of the Onyx War Hyena
-								["itemID"] = 166417,	-- Reins of the Onyx War Hyena
-								["u"] = 1,	-- Presumably Random Win from any rated Bracket in Season 2, but unclear for now and marked as unobtainable
-							},
-							{	-- Vicious Black Bonesteed
-								["itemID"] = 165020,	-- Vicious Black Bonesteed
-							},
-							{	-- Vicious Black Warsaber
-								["itemID"] = 165019,	-- Vicious Black Warsaber
+							{	-- Mounts
+								["npcID"] = -100,	-- Mounts
+								["g"] = {
+									{	-- Vicious Black Bonesteed
+										["itemID"] = 165020,	-- Vicious Black Bonesteed
+									},
+									{	-- Vicious Black Warsaber
+										["itemID"] = 165019,	-- Vicious Black Warsaber
+									},
+								},
+							["description"] = "These mounts require 2400 points.\n\nAny win above 1400 rating will reward:\n\n10 Points in 2v2 (0.33%)\n\n25 Points in 3v3 (1%)\n\n50 Points in RBG (2%)",
 							},
 						},
 					},
 				},
-				["description"] = "These mounts require 2400 points.\n\nAny win above 1400 rating will reward:\n\n10 Points in 2v2 (0.33%)\n\n25 Points in 3v3 (1%)\n\n50 Points in RBG (2%)",
-				-- We might have to update this once we know the exact source for the War Hyena
 			},
+		{	-- 2v2/3v3/RBG
+			["itemID"] = 165714,	-- Gold Strong Box -- 2v2/3v3/RBG Win. Can contain any S1 PvP Epic, follows personal loot rule. Probably different ID for Horde
 		},
-		["g"] = {
-			{	-- 2v2/3v3/RBG
-				["itemID"] = 165714,	-- Gold STrong Box 2v2/3v3/RBG Win, every s1 pvp epic, presumably different id for horde
-			},
-			{	-- 2v2/3v3/RBG
-				["itemID"] = 165717,	-- Steel Strong Box 2v2/3v3/RBG sometimes on Lose, contains only mats
-			},
+		{	-- Reins of the Onyx War Hyena
+			["itemID"] = 166417,	-- Reins of the Onyx War Hyena
+			["u"] = 1,	-- Presumably Random Win from any rated Bracket in Season 2, but unclear for now and marked as unobtainable
+			-- We might have to update this once we know the exact source for the War Hyena
+		},
+		{	-- 2v2/3v3/RBG
+			["itemID"] = 165717,	-- Steel Strong Box -- 2v2/3v3/RBG sometimes on Lose, contains only BFA Mats
+		},
 		},
 	},
 };

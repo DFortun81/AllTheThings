@@ -907,7 +907,7 @@ _.Holidays =
 					}),
 				}),
 				n(133196, {	-- Warpweaver Sle'shal <Token Exchange> (Inside Trial of Style)
-					["maps"] = { 777 },	-- Need to add mapID from Inside Trial of Style once its active)
+					["maps"] = { 777 },
 					["g"] = bubbleDown({["u"] = 22}, {
 						i(151134, { -- Trial of Style Token
 						--	i(151116), -- Fashionable Undershirt
