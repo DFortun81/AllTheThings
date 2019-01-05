@@ -59,6 +59,198 @@ _.ExpansionFeatures =
 							},
 						},
 					},
+					{	-- Argussian Reach Insignia
+						["itemID"] = 152960,	-- Argussian Reach Insignia
+						["g"] = {
+							{	-- Brittle Krokul Chest
+								["itemID"] = 152922,	-- Brittle Krokul Chest
+							},
+						},
+					},
+					{	-- Army of the Light Insignia
+						["itemID"] = 152957,	-- Army of the Light Insignia
+						["g"] = {
+							{	-- Gleaming Footlocker
+								["itemID"] = 152923,	-- Gleaming Footlocker
+							},
+						},
+					},
+					{	-- Court of Farondis Insignia
+						["itemID"] = 141340,	-- Court of Farondis Insignia
+						["g"] = {
+							{	-- Farondis Chest
+								["itemID"] = 152102,	-- Farondis Chest
+							},
+						},
+					},
+					{	-- Court of Farondis Insignia
+						["itemID"] = 146943,	-- Court of Farondis Insignia
+						["g"] = {
+							{	-- Farondis Chest
+								["itemID"] = 152102,	-- Farondis Chest
+							},
+						},
+					},
+					{	-- Dreamweaver Insignia
+						["itemID"] = 141339,	-- Dreamweaver Insignia
+						["g"] = {
+							{	-- Dreamweaver Cache
+								["itemID"] = 152103,	-- Dreamweaver Cache
+							},
+						},
+					},
+					{	-- Dreamweaver Insignia
+						["itemID"] = 146942,	-- Dreamweaver Insignia
+						["g"] = {
+							{	-- Dreamweaver Cache
+								["itemID"] = 152103,	-- Dreamweaver Cache
+							},
+						},
+					},
+					{	-- Greater Argussian Reach Insignia
+						["itemID"] = 152954,	-- Greater Argussian Reach Insignia
+						["g"] = {
+							{	-- Brittle Krokul Chest
+								["itemID"] = 152922,	-- Brittle Krokul Chest
+							},
+						},
+					},
+					{	-- Greater Army of the Light Insignia
+						["itemID"] = 152955,	-- Greater Army of the Light Insignia
+						["g"] = {
+							{	-- Gleaming Footlocker
+								["itemID"] = 152923,	-- Gleaming Footlocker
+							},
+						},
+					},
+					{	-- Greater Court of Farondis Insignia
+						["itemID"] = 150927,	-- Greater Court of Farondis Insignia
+						["g"] = {
+							{	-- Farondis Chest
+								["itemID"] = 152102,	-- Farondis Chest
+							},
+						},
+					},
+					{	-- Greater Dreamweaver Insignia
+						["itemID"] = 150926,	-- Greater Dreamweaver Insignia
+						["g"] = {
+							{	-- Dreamweaver Cache
+								["itemID"] = 152103,	-- Dreamweaver Cache
+							},
+						},
+					},
+					{	-- Greater Highmountain Tribe Insignia
+						["itemID"] = 150928,	-- Greater Highmountain Tribe Insignia
+						["g"] = {
+							{	-- Highmountain Supplies
+								["itemID"] = 152104,	-- Highmountain Supplies
+							},
+						},
+					},
+					{	-- Greater Legionfall Insignia
+						["itemID"] = 152464,	-- Greater Legionfall Insignia
+						["g"] = {
+							{	-- Legionfall Chest
+								["itemID"] = 152108,	-- Legionfall Chest
+							},
+						},
+					},
+					{	-- Greater Nightfallen Insignia
+						["itemID"] = 150930,	-- Greater Nightfallen Insignia
+						["g"] = {
+							{	-- Nightfallen Cache
+								["itemID"] = 152105,	-- Nightfallen Cache
+							},
+						},
+					},
+					{	-- Greater Valarjar Insignia
+						["itemID"] = 150925,	-- Greater Valarjar Insignia
+						["g"] = {
+							{	-- Valarjar Strongbox
+								["itemID"] = 152106,	-- Valarjar Strongbox
+							},
+						},
+					},
+					{	-- Greater Wardens Insignia
+						["itemID"] = 150929,	-- Greater Wardens Insignia
+						["g"] = {
+							{	-- Warden's Supply Kit
+								["itemID"] = 152107,	-- Warden's Supply Kit
+							},
+						},
+					},
+					{	-- Highmountain Tribe Insignia
+						["itemID"] = 141341,	-- Highmountain Tribe Insignia
+						["g"] = {
+							{	-- Highmountain Supplies
+								["itemID"] = 152104,	-- Highmountain Supplies
+							},
+						},
+					},
+					{	-- Highmountain Tribe Insignia
+						["itemID"] = 146944,	-- Highmountain Tribe Insignia
+						["g"] = {
+							{	-- Highmountain Supplies
+								["itemID"] = 152104,	-- Highmountain Supplies
+							},
+						},
+					},
+					{	-- Legionfall Insignia
+						["itemID"] = 146950,	-- Legionfall Insignia
+						["g"] = {
+							{	-- Legionfall Chest
+								["itemID"] = 152108,	-- Legionfall Chest
+							},
+						},
+					},
+					{	-- Nightfallen Insignia
+						["itemID"] = 141343,	-- Nightfallen Insignia
+						["g"] = {
+							{	-- Nightfallen Cache
+								["itemID"] = 152105,	-- Nightfallen Cache
+							},
+						},
+					},
+					{	-- Nightfallen Insignia
+						["itemID"] = 146946,	-- Nightfallen Insignia
+						["g"] = {
+							{	-- Nightfallen Cache
+								["itemID"] = 152105,	-- Nightfallen Cache
+							},
+						},
+					},
+					{	-- Valarjar Insignia
+						["itemID"] = 141338,	-- Valarjar Insignia
+						["g"] = {
+							{	-- Valarjar Strongbox
+								["itemID"] = 152106,	-- Valarjar Strongbox
+							},
+						},
+					},
+					{	-- Valarjar Insignia
+						["itemID"] = 146941,	-- Valarjar Insignia
+						["g"] = {
+							{	-- Valarjar Strongbox
+								["itemID"] = 152106,	-- Valarjar Strongbox
+							},
+						},
+					},
+					{	-- Wardens Insignia
+						["itemID"] = 141342,	-- Wardens Insignia
+						["g"] = {
+							{	-- Warden's Supply Kit
+								["itemID"] = 152107,	-- Warden's Supply Kit
+							},
+						},
+					},
+					{	-- Wardens Insignia
+						["itemID"] = 146945,	-- Wardens Insignia
+						["g"] = {
+							{	-- Warden's Supply Kit
+								["itemID"] = 152107,	-- Warden's Supply Kit
+							},
+						},
+					},
 				},
 			},
 		},

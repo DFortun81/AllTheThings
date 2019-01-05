@@ -10,6 +10,13 @@ _.Zones =
 			["g"] = {
 				{	-- Mission Command Table
 					["npcID"] = 138706,	-- Mission Command Table
+					["crs"] = {
+						147244,	-- Dazar'alor: The Great Seal Location
+					},
+					["coords"] = {
+						{ 51.59, 99.58, 1165 },	-- The Banshee's Wail Location [Original]
+						{ 58.42, 70.63, 1164 },	-- Dazar'alor: The Great Seal Location
+					},
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						{	-- Azeroth at War: After Lordaron
@@ -234,6 +241,31 @@ _.Zones =
 								{	-- Recruitment Orders
 									["itemID"] = 160983,	-- Recruitment Orders
 									["questID"] = 51771,	-- War of Shadows	NOTE!! Finishing the quest rewards the unlock
+								},
+							},
+						},
+						{	-- Champions of Azeroth
+							["repeatable"] = 1,
+							["currencyID"] = 1579,	-- Champions of Azeroth
+							["modID"] = 1,
+							["q"] = 3,
+							["b"] = 1,
+							["ilvl"] = 120,
+							["factionID"] = 2164,
+							["f"] = 104,			-- Quest
+							["g"] = {
+								{	-- Champions of Azeroth Supplies
+									["itemID"] = 166298,	-- Champions of Azeroth Supplies
+								},
+							},
+						},
+						{	-- Talanji's Expedition
+							["currencyID"] = 1595,	-- Talanji's Expedition
+							["factionID"] = 2156,	-- Talanji's Expedition
+							["repeatable"] = true,
+							["g"] = {
+								{	-- Talanji's Expedition Supplies
+									["itemID"] = 166282,	--  Talanji's Expedition Supplies
 								},
 							},
 						},
