@@ -611,7 +611,7 @@ AllTheThings.Locales.enUS = {
 		[-593] = "Interface\\Icons\\70_inscription_deck_Hellfire",				-- Kill Credit 1
 		[-594] = "Interface\\Icons\\70_inscription_deck_Hellfire_2",			-- Kill Credit 2
 		[-595] = "Interface\\Icons\\70_inscription_deck_Hellfire_3",			-- Kill Credit 3
-		[-650] = "Interface\\Icons\\inv_misc_questionmark",						-- Quest Item
+		[-650] = "Interface\\Icons\\inv_misc_questionmark",						-- Quest Items
 		[-1000] = "Interface\\Icons\\achievement_transmog_collections",			-- Sets
 		[-1001] = "Interface\\Icons\\Racial_Dwarf_FindTreasure",				-- The Black Vault
 		[-3178] = "Interface\\Icons\\achievement_boss_warlord_kalithresh",		-- Tier 3.5
@@ -1331,6 +1331,7 @@ AllTheThings.Locales.enUS = {
 		[-599] = GetSpellInfo(262978),											-- Communing with Jani [Nazwathan Relic]
 		[-600] = GetSpellInfo(262954),											-- Communing with Jani [Vilescale Pearl]
 		[-601] = GetSpellInfo(262971),											-- Communing with Jani [Snapjaw Tail]
+		[-650] = "Quest Items",													-- Quest Items
 		
 		[-1000] = WARDROBE_SETS, 												-- Sets
 		[-1001] = "The Black Vault",
