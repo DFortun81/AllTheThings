@@ -43,7 +43,10 @@ _.Zones =
 								["qg"] = 46872,	-- Prince Nadun
 								["coord"] = { 59.5, 72.0 },
 								["groups"] = {
-									i(64492),	-- Ramkahen Badge of Valor
+									{	-- Ramkahen Badge of Valor
+										["itemID"] = 64492,
+										["collectible"] = false,
+									},
 								},
 								["sourceQuests"] = {
 									27923,	-- Smoke in Their Eyes
