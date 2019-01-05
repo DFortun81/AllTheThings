@@ -228,7 +228,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 			},
 			["maps"] = {
 				1,	-- Durotar
-				24,	-- Dun Morogh
+				27,	-- Dun Morogh
 			},
 		}),
 	}),

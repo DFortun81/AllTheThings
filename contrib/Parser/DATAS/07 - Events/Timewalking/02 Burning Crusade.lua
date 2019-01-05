@@ -66,9 +66,10 @@ _.WorldEvents =
 									i(33820, { -- Weather-Beaten Fishing Hat
 										["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
 									}),
-									i(34109, {	-- Weather Beaten Journal
-										["collectible"] = false,
-									}),
+									{	-- Weather-Beaten Journal
+										["itemID"] = 34109,			-- Weather-Beaten Journal
+										["collectible"] = false,	-- Does not track
+									},
 								}),
 								i(33844, { -- Barrel of Fish
 									i(33869),	-- Recipe: Broiled Bloodfin

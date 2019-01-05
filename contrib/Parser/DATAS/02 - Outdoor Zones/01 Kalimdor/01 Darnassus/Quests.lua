@@ -18,6 +18,10 @@ _.Zones =
 								i(44983),	-- Strand Crawler
 								i(33820),	-- Weather-Beaten Fishing Hat
 								i(34834),	-- Recipe: Captain Rumsey's Lager
+								{	-- Weather-Beaten Journal
+									["itemID"] = 34109,			-- Weather-Beaten Journal
+									["collectible"] = false,	-- Does not track
+								},
 								i(34109),	-- Weather-Beaten Journal
 								i(45991),	-- Bone Fishing Pole
 								i(45992),	-- Jeweled Fishing Pole

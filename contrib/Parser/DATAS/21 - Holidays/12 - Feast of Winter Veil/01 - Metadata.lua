@@ -9,7 +9,8 @@ _.Holidays = bubbleDown({["u"] = 29},
 		["icon"] = "Interface\\Addons\\AllTheThings\\assets\\winter_veil",
 		["maps"] = {
 			87,	-- Ironforge
-			24,	-- Orgrimmar
+			85,	-- Orgrimmar
+			86,	-- Orgrimmar: The Drag
 		},
 	},
 });

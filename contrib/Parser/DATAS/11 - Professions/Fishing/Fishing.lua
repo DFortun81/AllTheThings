@@ -1,9 +1,9 @@
 -- Fishing - Skill ID 356 / Spell ID 7620
 profession(356, { 	-- Fishing
 	n(-26, {	-- Drop
-		{
-			["itemID"] = 34109,	-- Weather Beaten Journal
-			["collectible"] = false,
+		{	-- Weather-Beaten Journal
+			["itemID"] = 34109,			-- Weather-Beaten Journal
+			["collectible"] = false,	-- Does not track
 		},
 		{
 			["itemID"] = 16082,	-- Artisan Fishing - The Way of the Lure
