@@ -777,37 +777,99 @@ _.Achievements =
 							},
 						},
 					},
-					ach(489, {		-- Heroic: Utgarde Keep
-						crit(1),		-- Prince Keleseth
-						crit(2),		-- Skarvald the Constructor
-						crit(3),		-- Dalronn the Controller
-						crit(4),		-- Ingvar the Plunderer
-						ach(477, {		-- Utgarde Keep
-							crit(1),		-- Prince Keleseth
-							crit(2),		-- Skarvald the Constructor
-							crit(3),		-- Dalronn the Controller
-							crit(4),		-- Ingvar the Plunderer
-						}),
-					}),
-					ach(499, {		-- Heroic: Utgarde Pinnacle
-						crit(1),		-- Svala Sorrowgrave
-						crit(2),		-- Gortok Palehoof
-						crit(3),		-- Skadi the Ruthless
-						crit(4),		-- King Ymiron
-						ach(488, {		-- Utgarde Pinnacle
-							crit(1),		-- Skadi the Ruthless
-							crit(2),		-- Svala Sorrowgrave
-							crit(3),		-- Gortok Palehoof
-							crit(4),		-- King Ymiron
-						}),
-					}),
+					{	-- Heroic: Utgarde Keep
+						["achievementID"] = 489,
+						["g"] = {
+							{	-- Dalronn the Controller
+								["achievementID"] = 489,	-- Heroic: Utgarde Keep
+								["criteriaID"] = 3,	-- Dalronn the Controller
+							},
+							{	-- Ingvar the Plunderer
+								["achievementID"] = 489,	-- Heroic: Utgarde Keep
+								["criteriaID"] = 4,	-- Ingvar the Plunderer
+							},
+							{	-- Prince Keleseth
+								["achievementID"] = 489,	-- Heroic: Utgarde Keep
+								["criteriaID"] = 1,	-- Prince Keleseth
+							},
+							{	-- Skarvald the Constructor
+								["achievementID"] = 489,	-- Heroic: Utgarde Keep
+								["criteriaID"] = 2,	-- Skarvald the Constructor
+							},
+							{	-- Utgarde Keep
+								["achievementID"] = 477,
+								["g"] = {
+									{	-- Dalronn the Controller
+										["achievementID"] = 477,	-- Utgarde Keep
+										["criteriaID"] = 3,	-- Dalronn the Controller
+									},
+									{	-- Ingvar the Plunderer
+										["achievementID"] = 477,	-- Utgarde Keep
+										["criteriaID"] = 4,	-- Ingvar the Plunderer
+									},
+									{	-- Prince Keleseth
+										["achievementID"] = 477,	-- Utgarde Keep
+										["criteriaID"] = 1,	-- Prince Keleseth
+									},
+									{	-- Skarvald the Constructor
+										["achievementID"] = 477,	-- Utgarde Keep
+										["criteriaID"] = 2,	-- Skarvald the Constructor
+									},
+								},
+							},
+						},
+					},
+					{	-- Heroic: Utgarde Pinnacle
+						["achievementID"] = 499,
+						["g"] = {
+							{	-- Gortok Palehoof
+								["achievementID"] = 499,	-- Heroic: Utgarde Pinnacle
+								["criteriaID"] = 2,	-- Gortok Palehoof
+							},
+							{	-- King Ymiron
+								["achievementID"] = 499,	-- Heroic: Utgarde Pinnacle
+								["criteriaID"] = 4,	-- King Ymiron
+							},
+							{	-- Skadi the Ruthless
+								["achievementID"] = 499,	-- Heroic: Utgarde Pinnacle
+								["criteriaID"] = 3,	-- Skadi the Ruthless
+							},
+							{	-- Svala Sorrowgrave
+								["achievementID"] = 499,	-- Heroic: Utgarde Pinnacle
+								["criteriaID"] = 1,	-- Svala Sorrowgrave
+							},
+							{	-- Utgarde Pinnacle
+								["achievementID"] = 488,
+								["g"] = {
+									{	-- Gortok Palehoof
+										["achievementID"] = 488,	-- Utgarde Pinnacle
+										["criteriaID"] = 3,	-- Gortok Palehoof
+									},
+									{	-- King Ymiron
+										["achievementID"] = 488,	-- Utgarde Pinnacle
+										["criteriaID"] = 4,	-- King Ymiron
+									},
+									{	-- Skadi the Ruthless
+										["achievementID"] = 488,	-- Utgarde Pinnacle
+										["criteriaID"] = 1,	-- Skadi the Ruthless
+									},
+									{	-- Svala Sorrowgrave
+										["achievementID"] = 488,	-- Utgarde Pinnacle
+										["criteriaID"] = 2,	-- Svala Sorrowgrave
+									},
+								},
+							},
+						},
+					},
 					{	-- I've Had Worse
 						["achievementID"] = 3804, 	-- I've Had Worse
 					},
 					{	-- Intense Cold
 						["achievementID"] = 2036,	-- Intense Cold
 					},
-					ach(2157),		-- King's Bane
+					{	-- King's Bane
+						["achievementID"] = 2157,	-- King's Bane
+					},
 					{	-- Less-rabi
 						["achievementID"] = 2040,	-- Less-rabi
 					},
@@ -844,15 +906,21 @@ _.Achievements =
 							},
 						},
 					},
-					ach(1873),		-- Lodi Dodi We Loves the Skadi
+					{	-- Lodi Dodi We Loves the Skadi
+						["achievementID"] = 1873,	-- Lodi Dodi We Loves the Skadi
+					},
 					{	-- Make It Count
 						["achievementID"] = 1868,	-- Make It Count
 					},
-					ach(2156),		-- My Girl Loves to Skadi All the Time
+					{	-- My Girl Loves to Skadi All the Time
+						["achievementID"] = 2156,	-- My Girl Loves to Skadi All the Time
+					},
 					{	-- Oh Novos!
 						["achievementID"] = 2057,	-- Oh Novos!
 					},
-					ach(1919),		-- On The Rocks
+					{	-- On The Rocks
+						["achievementID"] = 1919,	-- On The Rocks
+					},
 					{	-- Respect Your Elders
 						["achievementID"] = 2038,	-- Respect Your Elders
 					},
@@ -868,7 +936,9 @@ _.Achievements =
 					{	-- Snakes. Why'd It Have To Be Snakes?
 						["achievementID"] = 2058,	-- Snakes. Why'd It Have To Be Snakes?
 					},
-					ach(4522),		-- Soul Power
+					{	-- Soul Power
+						["achievementID"] = 4522,	-- Soul Power
+					},
 					{	-- Split Personality
 						["achievementID"] = 2150,	-- Split Personality
 					},
@@ -877,7 +947,9 @@ _.Achievements =
 						["achievementID"] = 3803, 	-- The Faceroller
 						["description"] = "If you're soloing it in Legion, it's VERY easy to do, regardless of class:\n\nKill the adds, and when he gets attackable, don't attack in any way (no pets, no trinkets that activates, etc). In other words, do NO damage to him, you'll likely one-shot him and fail.\n\nJust face away from him until he casts Hammer of Justice. You'll catch the hamer, and your action bar changes. Now face him, and use the hammer. It will one-shot him, and you'll get the achievement.\n\nCredit to Netspook on Wowhead",
 					},
-					ach(2043),		-- The Incredible Hulk
+					{	-- The Incredible Hulk
+						["achievementID"] = 2043,	-- The Incredible Hulk
+					},
 					{	-- Three Faced
 						["achievementID"] = 4523,	-- Three Faced
 					},

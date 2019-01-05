@@ -99,6 +99,10 @@ _.Instances =
 							i(35579),	-- Vrykul Shackles
 						}),
 						cr(23953, e(638, { -- Prince Keleseth <The San'layn>
+							{	-- Utgarde Keep: Prince Keleseth
+									["achievementID"] = 477,	-- Utgarde Keep
+									["criteriaID"] = 1,	-- Prince Keleseth
+								},
 							ig(44731),	-- Bouquet of Ebon Roses
 							ig(22206),	-- Bouquet of Red Roses
 							i( 37179),	-- Infantry Assault Blade
@@ -110,6 +114,14 @@ _.Instances =
 							i( 37178),	-- Strategist's Belt
 						})),
 						cr(24200, e(639, { -- Skarvald the Constructor and Dalronn the Controller
+							{	-- Utgarde Keep: Dalronn the Controller
+								["achievementID"] = 477,	-- Utgarde Keep
+								["criteriaID"] = 3,	-- Dalronn the Controller
+							},
+							{	-- Utgarde Keep: Skarvald the Constructor
+								["achievementID"] = 477,	-- Utgarde Keep
+								["criteriaID"] = 2,	-- Skarvald the Constructor
+							},
 							i( 35573),	-- Arm Blade of Augelmir
 							i( 37181),	-- Dagger of Betrayal
 							i(157555),	-- Constructor's Worklight
@@ -120,6 +132,10 @@ _.Instances =
 							i( 37183),	-- Bindings of the Tunneler
 						})),
 						cr(23954, e(640, { -- Ingvar the Plunderer
+							{	-- Utgarde Keep: Ingvar the Plunderer
+								["achievementID"] = 477,	-- Utgarde Keep
+								["criteriaID"] = 4,	-- Ingvar the Plunderer
+							},
 							i(37190),	-- Enraged Feral Staff
 							i(35576),	-- Ingvar's Monolithic Cleaver
 							i(37191),	-- Drake-Mounted Crossbow
@@ -137,10 +153,66 @@ _.Instances =
 						["lvl"] = 80,
 						["groups"] = {
 							n(0, {	-- Zone Drop
-								i(37196),	-- Runecaster's Mantle
-								i(37197),	-- Tattered Castle Drape
+								{	-- Dragon Prow Amulet
+									["itemID"] = 37290,	-- Dragon Prow Amulet
+									["crs"]	= {
+										24069,	-- Dragonflayer Bonecrusher
+										24079,	-- Dragonflayer Forge Master
+										24071,	-- Dragonflayer Heartsplitter
+										23961,	-- Dragonflayer Ironhelm
+										24078,	-- Dragonflayer Metalworker
+										24085,	-- Dragonflayer Overseer
+										23960,	-- Dragonflayer Runecaster
+										23956,	-- Dragonflayer Strategist
+										24080,	-- Dragonflayer Weaponsmith
+										24083,	-- Enslaved Proto-Drake
+										24082,	-- Proto-Drake Handler
+										29735,	-- Savage Worg
+									},
+								},
+								{	-- Runecaster's Mantle
+									["itemID"] = 37196,	-- Runecaster's Mantle
+									["crs"]	= {
+										24069,	-- Dragonflayer Bonecrusher
+										24079,	-- Dragonflayer Forge Master
+										24071,	-- Dragonflayer Heartsplitter
+										23961,	-- Dragonflayer Ironhelm
+										24078,	-- Dragonflayer Metalworker
+										24085,	-- Dragonflayer Overseer
+										23960,	-- Dragonflayer Runecaster
+										23956,	-- Dragonflayer Strategist
+										24080,	-- Dragonflayer Weaponsmith
+										24083,	-- Enslaved Proto-Drake
+										24082,	-- Proto-Drake Handler
+										29735,	-- Savage Worg
+									},
+								},
+								{	-- Tattered Castle Drape
+									["itemID"] = 37197,	-- Tattered Castle Drape
+									["crs"]	= {
+										24069,	-- Dragonflayer Bonecrusher
+										24079,	-- Dragonflayer Forge Master
+										24071,	-- Dragonflayer Heartsplitter
+										23961,	-- Dragonflayer Ironhelm
+										24078,	-- Dragonflayer Metalworker
+										24085,	-- Dragonflayer Overseer
+										23960,	-- Dragonflayer Runecaster
+										23956,	-- Dragonflayer Strategist
+										24080,	-- Dragonflayer Weaponsmith
+										24083,	-- Enslaved Proto-Drake
+										24082,	-- Proto-Drake Handler
+										29735,	-- Savage Worg
+									},
+								},
 							}),
 							cr(23953, e(638, { -- Prince Keleseth <The San'layn>
+								{	-- On The Rocks
+									["achievementID"] = 1919,	-- On The Rocks
+								},
+								{	-- Heroic: Utgarde Keep: Prince Keleseth
+									["achievementID"] = 489,	-- Heroic: Utgarde Keep
+									["criteriaID"] = 1,	-- Prince Keleseth
+								},
 								ig(44731),	-- Bouquet of Ebon Roses
 								ig(22206),	-- Bouquet of Red Roses
 								i( 37179),	-- Infantry Assault Blade
@@ -152,6 +224,14 @@ _.Instances =
 								i( 37178),	-- Strategist's Belt
 							})),
 							cr(24200, e(639, { -- Skarvald the Constructor and Dalronn the Controller
+								{	-- Heroic: Utgarde Keep: Dalronn the Controller
+									["achievementID"] = 489,	-- Heroic: Utgarde Keep
+									["criteriaID"] = 3,	-- Dalronn the Controller
+								},
+								{	-- Heroic: Utgarde Keep: Skarvald the Constructor
+									["achievementID"] = 489,	-- Heroic: Utgarde Keep
+									["criteriaID"] = 2,	-- Skarvald the Constructor
+								},
 								i( 35573),	-- Arm Blade of Augelmir
 								i( 37181),	-- Dagger of Betrayal
 								i(157555),	-- Constructor's Worklight
@@ -165,6 +245,10 @@ _.Instances =
 								{	-- Champion of the Frozen Wastes
 									["achievementID"] = 1658,	-- Champion of the Frozen Wastes
 									["criteriaID"] = 10,		-- Ingvar the Plunderer slain
+								},
+								{	-- Heroic: Utgarde Keep: Ingvar the Plunderer
+									["achievementID"] = 489,	-- Heroic: Utgarde Keep
+									["criteriaID"] = 4,	-- Ingvar the Plunderer
 								},
 								i(41793),	-- Design: Fierce Monarch Topaz
 								i(37190),	-- Enraged Feral Staff

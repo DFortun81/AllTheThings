@@ -53,6 +53,10 @@ _.Instances =
 						}),
 						cr(26668, e(641, {	-- Svala Sorrowgrave
 							["groups"] = {
+								{	-- Utgarde Pinnacle: Svala Sorrowgrave
+									["achievementID"] = 488,	-- Utgarde Pinnacle
+									["criteriaID"] = 2,	-- Svala Sorrowgrave
+								},
 								i(37037),	-- Ritualistic Arthame
 								i(37038),	-- Brazier Igniter
 								i(37368),	-- Silent Spectator Shoulderpads
@@ -65,6 +69,10 @@ _.Instances =
 							["crs"] = { 29281 }, -- Svala Sorrowgrave useless form
 						})),
 						cr(26687, e(642, {	-- Gortok Palehoof
+							{	-- Utgarde Pinnacle: Gortok Palehoof
+								["achievementID"] = 488,	-- Utgarde Pinnacle
+								["criteriaID"] = 3,	-- Gortok Palehoof
+							},
 							i(37050),	-- Trophy Gatherer
 							i(37051),	-- Seal of Valgarde
 							i(37376),	-- Ferocious Pauldrons of the Rhino
@@ -75,6 +83,10 @@ _.Instances =
 							i(37371),	-- Ring of the Frenzied Wolvar
 						})),
 						cr(26693, e(643, { 	-- Skadi the Ruthless
+							{	-- Utgarde Pinnacle: Skadi the Ruthless
+								["achievementID"] = 488,	-- Utgarde Pinnacle
+								["criteriaID"] = 1,	-- Skadi the Ruthless
+							},
 							i( 37053),	-- Amulet of Deflected Blows
 							i( 37389),	-- Crenelation Leggings
 							i( 37057),	-- Dark Rider's Tunic
@@ -86,6 +98,10 @@ _.Instances =
 							i( 37384),	-- Staff of Wayward Principles							
 						})),
 						cr(26861, e(644, {	-- King Ymiron
+							{	-- Utgarde Pinnacle: King Ymiron
+								["achievementID"] = 488,	-- Utgarde Pinnacle
+								["criteriaID"] = 4,	-- King Ymiron
+							},
 							i(41797),	-- Design: Austere Earthsiege Diamond
 							i(37060),	-- Jeweled Coronation Sword
 							i(37401),	-- Red Sword of Courage
@@ -109,9 +125,43 @@ _.Instances =
 						["lvl"] = 80,
 						["groups"] = {
 							n(0, {	-- Zone Drop
-								i(37587)	-- Ymirjar Physician's Robe
+								{	-- Ymirjar Physician's Robe
+									["itemID"] = 37587,	-- Ymirjar Physician's Robe
+									["crs"] = {
+										26672,	-- Bloodthirsty Tundra Wolf
+										26550,	-- Dragonflayer Deathseeker
+										26553,	-- Dragonflayer Fanatic
+										26554,	-- Dragonflayer Seer
+										26555,	-- Scourge Hulk
+										26696,	-- Ymirjar Berserker
+										26694,	-- Ymirjar Dusk Shaman
+										28368,	-- Ymirjar Necromancer
+										26669,	-- Ymirjar Savage
+									},
+								},
+								{	-- Bands of Fading Light
+									["itemID"] = 37590,	-- Bands of Fading Light
+									["crs"] = {
+										26672,	-- Bloodthirsty Tundra Wolf
+										26550,	-- Dragonflayer Deathseeker
+										26553,	-- Dragonflayer Fanatic
+										26554,	-- Dragonflayer Seer
+										26555,	-- Scourge Hulk
+										26696,	-- Ymirjar Berserker
+										26694,	-- Ymirjar Dusk Shaman
+										28368,	-- Ymirjar Necromancer
+										26669,	-- Ymirjar Savage
+									},
+								},
 							}),
 							cr(26668, e(641, {	-- Svala Sorrowgrave
+								{	-- Heroic: Utgarde Pinnacle: Svala Sorrowgrave
+									["achievementID"] = 499,	-- Heroic: Utgarde Pinnacle
+									["criteriaID"] = 1,	-- Svala Sorrowgrave
+								},
+								{	-- The Incredible Hulk
+									["achievementID"] = 2043,	-- The Incredible Hulk
+								},
 								i(37037),	-- Ritualistic Arthame
 								i(37038),	-- Brazier Igniter
 								i(37368),	-- Silent Spectator Shoulderpads
@@ -122,6 +172,10 @@ _.Instances =
 								i(37367),	-- Echoing Stompers
 							})),
 							cr(26687, e(642, {	-- Gortok Palehoof
+								{	-- Heroic: Utgarde Pinnacle: Gortok Palehoof
+									["achievementID"] = 499,	-- Heroic: Utgarde Pinnacle
+									["criteriaID"] = 2,	-- Gortok Palehoof
+								},
 								i(37050),	-- Trophy Gatherer
 								i(37051),	-- Seal of Valgarde
 								i(37376),	-- Ferocious Pauldrons of the Rhino
@@ -132,6 +186,16 @@ _.Instances =
 								i(37371),	-- Ring of the Frenzied Wolvar
 							})),
 							cr(26693, e(643, { 	-- Skadi the Ruthless
+								{	-- Lodi Dodi We Loves the Skadi
+									["achievementID"] = 1873,	-- Lodi Dodi We Loves the Skadi
+								},
+								{	-- My Girl Loves to Skadi All the Time
+									["achievementID"] = 2156,	-- My Girl Loves to Skadi All the Time
+								},
+								{	-- Heroic: Utgarde Pinnacle: Skadi the Ruthless
+									["achievementID"] = 499,	-- Heroic: Utgarde Pinnacle
+									["criteriaID"] = 3,	-- Skadi the Ruthless
+								},
 								i( 44151),	-- Reins of the Blue Proto-Drake (MOUNT!)
 								i( 37384),	-- Staff of Wayward Principles
 								i( 37377),	-- Netherbreath Spellblade
@@ -144,9 +208,16 @@ _.Instances =
 								i(157560), 	-- Skadi's Scaled Boots
 							})),
 							cr(26861, e(644, {	-- King Ymiron
+								{	-- King's Bane
+									["achievementID"] = 2157,	-- King's Bane
+								},
 								{	-- Champion of the Frozen Wastes
 									["achievementID"] = 1658,	-- Champion of the Frozen Wastes
 									["criteriaID"] = 11,		-- King Ymiron slain
+								},
+								{	-- Heroic: Utgarde Pinnacle: King Ymiron
+									["achievementID"] = 499,	-- Heroic: Utgarde Pinnacle
+									["criteriaID"] = 4,	-- King Ymiron
 								},
 								i(41797),	-- Design: Austere Earthsiege Diamond
 								i(37060),	-- Jeweled Coronation Sword
