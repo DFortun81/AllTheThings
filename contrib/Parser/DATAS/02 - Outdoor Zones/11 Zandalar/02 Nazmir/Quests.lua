@@ -481,6 +481,12 @@ _.Zones =
 									}),
 								},
 							}),
+							{	-- A Chance Sighting
+								["questID"] = 50934,
+								["qg"] = 131993,	-- Yash
+								["coord"] = { 66.9, 41.9, 863 },
+								["races"] = HORDE_ONLY,
+							},
 							{	-- All Hope is Lost
 								["questID"] = 48857,
 								["qg"] = 127212,	-- Ka'dran
@@ -503,6 +509,13 @@ _.Zones =
 								["coord"] = { 24.1, 53.2, 863 },
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 49778,	-- Don't Go into the Light
+							},
+							{	-- Bad Juju
+								["questID"] = 49380,
+								["qg"] = 129165,	-- Guard Satao
+								["coord"] = { 63.1, 52.6, 863 },
+								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 49366,	-- Aid the Wounded
 							},
 							{	-- Blood Purification
 								["questID"] = 49950,
@@ -595,6 +608,13 @@ _.Zones =
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 49932,	-- Slumber No More
 							},
+							{	-- Crawg Free Zone
+								["questID"] = 49379,
+								["qg"] = 129164,	-- Chronicler Jabari
+								["coord"] = { 62.7, 53.5, 863 },
+								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 49370,	-- Rescue the Chronicler
+							},
 							{	-- Don't Go into the Light
 								["questID"] = 49778,
 								["qg"] = 131231,	-- Jin'Tiki
@@ -605,6 +625,13 @@ _.Zones =
 									49777,	-- On The Run
 									49774,	-- Won't Leaf Him to Die
 								},
+							},
+							{	-- Earn Their Trust
+								["questID"] = 49378,
+								["qg"] = 129164,	-- Chronicler Jabari
+								["coord"] = { 62.7, 53.5, 863 },
+								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 49370,	-- Rescue the Chronicler
 							},
 							{	-- How to Repair a Titan Keeper
 								["questID"] = 49935,
@@ -629,6 +656,20 @@ _.Zones =
 								["coord"] = { 39.5, 43.8, 863 },
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 47250,	-- We'll Meet Again
+							},
+							{	-- It Seems You've Made a Friend
+								["questID"] = 49382,
+								["qg"] = 129164,	-- Chronicler Jabari
+								["coord"] = { 63.1, 52.7, 863 },
+								["races"] = HORDE_ONLY,
+								["groups"] = {
+									i(156566),	-- Dart
+								},
+								["sourceQuests"] = {
+									49380,	-- Bad Juju
+									49377,	-- Off With Her Head
+									-- are 49378 and 49379 also required?
+								},
 							},
 							{	-- Just Say No to Cannibalism
 								["questID"] = 47919,
@@ -681,6 +722,23 @@ _.Zones =
 									49950,	-- Blood Purification
 									49941,	-- Bone Procession
 									49949,	-- Unwelcome Undead
+								},
+							},
+							{	-- Off With Her Head
+								["questID"] = 49377,
+								["qg"] = 129165,	-- Guard Satao
+								["coord"] = { 63.1, 52.6, 863 },
+								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 49366,	-- Aid the Wounded
+								["groups"] = {
+									i(159092),	-- Grim Ritual Mace
+									i(159094),	-- Bloodsinger Wand
+									i(159089),	-- Amaki Scalper
+									i(159091),	-- Bloodrite Sticker
+									i(159093),	-- Marrow Drained Bonestaff
+									i(159090),	-- Crawgmother's Shortbow
+									i(159096),	-- Nagla's Headcracker
+									i(159095),	-- Bloodhunter Greatblade
 								},
 							},
 							{	-- Offer of Power
@@ -757,6 +815,13 @@ _.Zones =
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 49932,	-- Slumber No More
 							},
+							{	-- Rescue the Chronicler
+								["questID"] = 49370,
+								["qg"] = 129165,	-- Guard Satao
+								["coord"] = { 63.1, 52.6, 863 },
+								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 49366,	-- Aid the Wounded
+							},
 							{	-- Respecting the Rites
 								["questID"] = 48473,
 								["qg"] = 130481,	-- Shinga Deathwalker
@@ -815,6 +880,16 @@ _.Zones =
 									49938,	-- Corrupted Earth
 									49935,	-- How to Repair a Titan Keeper
 									49937,	-- Recovering Remnants
+								},
+							},
+							{	-- Vial of Antidote
+								["objectID"] = 278197,
+								["coord"] = { 64.0, 50.3, 863 },
+								["groups"] = {
+									{	-- Aid the Wounded
+										["questID"] = 49366,
+										["sourceQuest"] = 50934,	-- A Chance Sighting
+									},
 								},
 							},
 							{	-- Void is Prohibited
