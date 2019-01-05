@@ -427,18 +427,48 @@ _.Achievements =
 							},
 						},
 					},
-					ach(500, {		-- Heroic: The Culling of Stratholme
-						crit(1),		-- Meathook
-						crit(2),		-- Chrono-Lord Epoch
-						crit(3),		-- Salramm the Fleshcrafter
-						crit(4),		-- Mal'Ganis
-						ach(479, {		-- The Culling of Stratholme
-							crit(1),		-- Meathook
-							crit(2),		-- Chrono-Lord Epoch
-							crit(3),		-- Salramm the Fleshcrafter
-							crit(4),		-- Mal'Ganis
-						}),
-					}),
+					{	-- Heroic: The Culling of Stratholme
+						["achievementID"] = 500,
+						["g"] = {
+							{	-- Chrono-Lord Epoch
+								["achievementID"] = 500,	-- Heroic: The Culling of Stratholme
+								["criteriaID"] = 2,	-- Chrono-Lord Epoch
+							},
+							{	-- Mal'Ganis
+								["achievementID"] = 500,	-- Heroic: The Culling of Stratholme
+								["criteriaID"] = 4,	-- Mal'Ganis
+							},
+							{	-- Meathook
+								["achievementID"] = 500,	-- Heroic: The Culling of Stratholme
+								["criteriaID"] = 1,	-- Meathook
+							},
+							{	-- Salramm the Fleshcrafter
+								["achievementID"] = 500,	-- Heroic: The Culling of Stratholme
+								["criteriaID"] = 3,	-- Salramm the Fleshcrafter
+							},
+							{	-- The Culling of Stratholme
+								["achievementID"] = 479,
+								["g"] = {
+									{	-- Chrono-Lord Epoch
+										["achievementID"] = 479,	-- The Culling of Stratholme
+										["criteriaID"] = 2,	-- Chrono-Lord Epoch
+									},
+									{	-- Mal'Ganis
+										["achievementID"] = 479,	-- The Culling of Stratholme
+										["criteriaID"] = 4,	-- Mal'Ganis
+									},
+									{	-- Meathook
+										["achievementID"] = 479,	-- The Culling of Stratholme
+										["criteriaID"] = 1,	-- Meathook
+									},
+									{	-- Salramm the Fleshcrafter
+										["achievementID"] = 479,	-- The Culling of Stratholme
+										["criteriaID"] = 3,	-- Salramm the Fleshcrafter
+									},
+								},
+							},
+						},
+					},
 					{	-- Heroic: The Forge of Souls
 						["achievementID"] = 4519,
 						["g"] = {
@@ -942,7 +972,9 @@ _.Achievements =
 					{	-- Split Personality
 						["achievementID"] = 2150,	-- Split Personality
 					},
-					ach(1817),		-- The Culling of Time
+					{	-- The Culling of Time
+						["achievementID"] = 1817,	-- The Culling of Time
+					},
 					{	-- The Faceroller
 						["achievementID"] = 3803, 	-- The Faceroller
 						["description"] = "If you're soloing it in Legion, it's VERY easy to do, regardless of class:\n\nKill the adds, and when he gets attackable, don't attack in any way (no pets, no trinkets that activates, etc). In other words, do NO damage to him, you'll likely one-shot him and fail.\n\nJust face away from him until he casts Hammer of Justice. You'll catch the hamer, and your action bar changes. Now face him, and use the hammer. It will one-shot him, and you'll get the achievement.\n\nCredit to Netspook on Wowhead",
@@ -962,14 +994,24 @@ _.Achievements =
 					{	-- Volunteer Work
 						["achievementID"] = 2056,	-- Volunteer Work
 					},
-					ach(1296),		-- Watch Him Die
+					{	-- Watch Him Die
+						["achievementID"] = 1296,	-- Watch Him Die
+						["crs"] = {
+							28730,	-- Watcher Gashra
+							28729,	-- Watcher Narjil
+							28731,	-- Watcher Silthik
+						},
+					},
 					{	-- We're Not Retreating; We're Advancing in a Different Direction.
 						["achievementID"] = 4526,	-- We're Not Retreating; We're Advancing in a Different Direction.
 					},
 					{	-- What the Eck?
 						["achievementID"] = 1864,	-- What the Eck?
 					},
-					ach(1872),		-- Zombiefest!
+					{	-- Zombiefest!
+						["achievementID"] = 1872,	-- Zombiefest!
+						["description"] = "Gather, but do not kill zombies, leading up to Meathook.\n\nKill Meathook and wait for zombies to respawn then gather more and kill zombies.",
+					},
 				},
 			}),
 		},
