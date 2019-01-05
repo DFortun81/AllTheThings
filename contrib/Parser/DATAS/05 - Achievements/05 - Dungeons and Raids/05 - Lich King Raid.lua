@@ -8,8 +8,12 @@ _.Achievements =
 		["groups"] = {
 			n(-10005, { -- Lich King Raid
 				["groups"] = {
-					ach(1869),		-- A Poke in the Eye (10 player)
-					ach(1870),		-- A Poke in the Eye (25 player)
+					{	-- A Poke in the Eye (10 player)
+						["achievementID"] = 1869,	-- A Poke in the Eye (10 player)
+					},
+					{	-- A Poke in the Eye (25 player)
+						["achievementID"] = 1870,	-- A Poke in the Eye (25 player)
+					},
 					ach(12321),		-- A Quick Shave
 					ach(4580),		-- All You Can Eat (10 player)
 					ach(4620),		-- All You Can Eat (25 player)
@@ -74,14 +78,22 @@ _.Achievements =
 					ach(4538),		-- Dances with Oozes (10 player)
 					ach(4614),		-- Dances with Oozes (25 player)
 					ach(12362),		-- Deforestation
-					ach(2148),		-- Denyin' the Scion (10 player)
-					ach(2149),		-- Denyin' the Scion (25 player)
+					{	-- Denyin' the Scion (10 player)
+						["achievementID"] = 2148,	-- Denyin' the Scion (10 player)
+					},
+					{	-- Denyin' the Scion (25 player)
+						["achievementID"] = 2149,	-- Denyin' the Scion (25 player)
+					},
 					ach(12338),		-- Disarmed
 					ach(12348),		-- Don't Stand in the Lightning
 					ach(12395),		-- Drive Me Crazy
 					ach(12312),		-- Dwarfageddon
-					ach(4016),		-- Earth, Wind & Fire (10 player)
-					ach(4017),		-- Earth, Wind & Fire (25 player)
+					{	-- Earth, Wind & Fire (10 player)
+						["achievementID"] = 4016,	-- Earth, Wind & Fire (10 player)
+					},
+					{	-- Earth, Wind & Fire (25 player)
+						["achievementID"] = 4017,	-- Earth, Wind & Fire (25 player)
+					},
 					ach(12369),		-- Firefighter
 					ach(4577),		-- Flu Shot Shortage (10 player)
 					ach(4615),		-- Flu Shot Shortage (25 player)
@@ -631,8 +643,12 @@ _.Achievements =
 						crit(3),		-- Ignis the Furnace Master
 						crit(4),		-- XT-002 Deconstructor
 					}),
-					ach(622),		-- The Spellweaver's Downfall (10 player)
-					ach(623),		-- The Spellweaver's Downfall (25 player)
+					{	-- The Spellweaver's Downfall (10 player)
+						["achievementID"] = 622,	-- The Spellweaver's Downfall (10 player)
+					},
+					{	-- The Spellweaver's Downfall (25 player)
+						["achievementID"] = 623,	-- The Spellweaver's Downfall (25 player)
+					},
 					ach(3800),		-- The Traitor King (10 player)
 					ach(3816),		-- The Traitor King (25 player)
 					{	-- The Twilight Zone (10 player)
@@ -681,8 +697,12 @@ _.Achievements =
 					ach(3813),		-- Upper Back Pain (25 player)
 					ach(12350),		-- Who Needs Bloodlust?
 					ach(12337),		-- With Open Arms
-					ach(1874),		-- You Don't Have an Eternity (10 player)
-					ach(1875),		-- You Don't Have an Eternity (25 player)
+					{	-- You Don't Have an Eternity (10 player)
+						["achievementID"] = 1874,	-- You Don't Have an Eternity (10 player)
+					},
+					{	-- You Don't Have an Eternity (25 player)
+						["achievementID"] = 1875,	-- You Don't Have an Eternity (25 player)
+					},
 				},
 			}),
 		},
