@@ -43,34 +43,106 @@ _.Achievements =
 					ach(4534),		-- Boned (10 player)
 					ach(4610),		-- Boned (25 player)
 					ach(12335),		-- But I'm On Your Side
-					ach(3918, {		-- Call of the Grand Crusade (10 player)
-						crit(1),		-- Defeat the Beasts of Northrend
-						crit(2),		-- Defeat Lord Jaraxxus
-						crit(3),		-- Defeat the Faction Champions
-						crit(4),		-- Defeat the Twin Val'kyr
-						crit(5),		-- Complete the Trial of the Grand Crusader
-						ach(3917, {		-- Call of the Crusade (10 player)
-							crit(1),		-- Defeat the Beasts of Northrend
-							crit(2),		-- Defeat Lord Jaraxxus
-							crit(3),		-- Defeat the Faction Champions
-							crit(4),		-- Defeat the Twin Val'kyr
-							crit(5),		-- Complete the Trial of the Grand Crusader
-						}),
-					}),
-					ach(3812, {		-- Call of the Grand Crusade (25 player)
-						crit(1),		-- Defeat the Beasts of Northrend
-						crit(2),		-- Defeat Lord Jaraxxus
-						crit(3),		-- Defeat the Faction Champions
-						crit(4),		-- Defeat the Twin Val'kyr
-						crit(5),		-- Complete the Trial of the Grand Crusader
-						ach(3916, {		-- Call of the Crusade (25 player)
-							crit(1),		-- Defeat the Beasts of Northrend
-							crit(2),		-- Defeat Lord Jaraxxus
-							crit(3),		-- Defeat the Faction Champions
-							crit(4),		-- Defeat the Twin Val'kyr
-							crit(5),		-- Complete the Trial of the Grand Crusader
-						}),
-					}),
+					{	-- Call of the Grand Crusade (10 player)
+						["achievementID"] = 3918,	-- Call of the Grand Crusade (10 player)
+						["g"] = {
+							{	-- Call of the Grand Crusade (10 player): Defeat the Beasts of Northrend
+								["achievementID"] = 3918,	-- Call of the Grand Crusade (10 player)
+								["criteriaID"] = 1,	-- Defeat the Beasts of Northrend
+							},
+							{	-- Call of the Grand Crusade (10 player): Defeat Lord Jaraxxus
+								["achievementID"] = 3918,	-- Call of the Grand Crusade (10 player)
+								["criteriaID"] = 2,	-- Defeat Lord Jaraxxus
+							},
+							{	-- Call of the Grand Crusade (10 player): Defeat the Faction Champions
+								["achievementID"] = 3918,	-- Call of the Grand Crusade (10 player)
+								["criteriaID"] = 3,	-- Defeat the Faction Champions
+							},
+							{	-- Call of the Grand Crusade (10 player): Defeat the Twin Val'kyr
+								["achievementID"] = 3918,	-- Call of the Grand Crusade (10 player)
+								["criteriaID"] = 4,	-- Defeat the Twin Val'kyr
+							},
+							{	-- Call of the Grand Crusade (10 player): Complete the Trial of the Grand Crusader
+								["achievementID"] = 3918,	-- Call of the Grand Crusade (10 player)
+								["criteriaID"] = 5,	-- Complete the Trial of the Grand Crusader
+							},
+							{	-- Call of the Crusade (10 player)
+								["achievementID"] = 3917,	-- Call of the Crusade (10 player)
+								["g"] = {
+									{	-- Call of the Crusade (10 player): Defeat the Beasts of Northrend
+										["achievementID"] = 3917,	-- Call of the Crusade (10 player)
+										["criteriaID"] = 1,	-- Defeat the Beasts of Northrend
+									},
+									{	-- Call of the Crusade (10 player): Defeat Lord Jaraxxus
+										["achievementID"] = 3917,	-- Call of the Crusade (10 player)
+										["criteriaID"] = 2,	-- Defeat Lord Jaraxxus
+									},
+									{	-- Call of the Crusade (10 player): Defeat the Faction Champions
+										["achievementID"] = 3917,	-- Call of the Crusade (10 player)
+										["criteriaID"] = 3,	-- Defeat the Faction Champions
+									},
+									{	-- Call of the Crusade (10 player): Defeat the Twin Val'kyr
+										["achievementID"] = 3917,	-- Call of the Crusade (10 player)
+										["criteriaID"] = 4,	-- Defeat the Twin Val'kyr
+									},
+									{	-- Call of the Crusade (10 player): Complete the Trial of the Crusader
+										["achievementID"] = 3917,	-- Call of the Crusade (10 player)
+										["criteriaID"] = 5,	-- Complete the Trial of the Crusader
+									},
+								},
+							},
+						},
+					},
+					{	-- Call of the Grand Crusade (25 player)
+						["achievementID"] = 3812,	-- Call of the Grand Crusade (25 player)
+						["g"] = {
+							{	-- Call of the Grand Crusade (25 player): Defeat the Beasts of Northrend
+								["achievementID"] = 3812,	-- Call of the Grand Crusade (25 player)
+								["criteriaID"] = 1,	-- Defeat the Beasts of Northrend
+							},
+							{	-- Call of the Grand Crusade (25 player): Defeat Lord Jaraxxus
+								["achievementID"] = 3812,	-- Call of the Grand Crusade (25 player)
+								["criteriaID"] = 2,	-- Defeat Lord Jaraxxus
+							},
+							{	-- Call of the Grand Crusade (25 player): Defeat the Faction Champions
+								["achievementID"] = 3812,	-- Call of the Grand Crusade (25 player)
+								["criteriaID"] = 3,	-- Defeat the Faction Champions
+							},
+							{	-- Call of the Grand Crusade (25 player): Defeat the Twin Val'kyr
+								["achievementID"] = 3812,	-- Call of the Grand Crusade (25 player)
+								["criteriaID"] = 4,	-- Defeat the Twin Val'kyr
+							},
+							{	-- Call of the Grand Crusade (25 player): Complete the Trial of the Grand Crusader
+								["achievementID"] = 3812,	-- Call of the Grand Crusade (25 player)
+								["criteriaID"] = 5,	-- Complete the Trial of the Grand Crusader
+							},
+							{	-- Call of the Crusade (25 player)
+								["achievementID"] = 3916,	-- Call of the Crusade (25 player)
+								["g"] = {
+									{	-- Call of the Crusade (25 player): Defeat the Beasts of Northrend
+										["achievementID"] = 3916,	-- Call of the Crusade (25 player)
+										["criteriaID"] = 1,	-- Defeat the Beasts of Northrend
+									},
+									{	-- Call of the Crusade (25 player): Defeat Lord Jaraxxus
+										["achievementID"] = 3916,	-- Call of the Crusade (25 player)
+										["criteriaID"] = 2,	-- Defeat Lord Jaraxxus
+									},
+									{	-- Call of the Crusade (25 player): Defeat the Faction Champions
+										["achievementID"] = 3916,	-- Call of the Crusade (25 player)
+										["criteriaID"] = 3,	-- Defeat the Faction Champions
+									},
+									{	-- Call of the Crusade (25 player): Defeat the Twin Val'kyr
+										["achievementID"] = 3916,	-- Call of the Crusade (25 player)
+										["criteriaID"] = 4,	-- Defeat the Twin Val'kyr
+									},
+									{	-- Call of the Crusade (25 player): Complete the Trial of the Crusader
+										["achievementID"] = 3916,	-- Call of the Crusade (25 player)
+										["criteriaID"] = 5,	-- Complete the Trial of the Crusader
+									},
+								},
+							},
+						},
+					},
 					ach(12336),		-- Can't Do That While Stunned
 					ach(12343),		-- Cheese the Freeze
 					ach(12361),		-- Con-speed-atory
@@ -313,12 +385,20 @@ _.Achievements =
 					ach(12360),		-- Lumberjacked
 					ach(1856),		-- Make Quick Werk of Him (10 player)
 					ach(1857),		-- Make Quick Werk of Him (25 player)
-					ach(4403),		-- Many Whelps! Handle It! (10 player)
-					ach(4406),		-- Many Whelps! Handle It! (25 player)
+					{	-- Many Whelps! Handle It! (10 player)
+						["achievementID"] = 4403,	-- Many Whelps! Handle It! (10 player)
+					},
+					{	-- Many Whelps! Handle It! (25 player)
+						["achievementID"] = 4406,	-- Many Whelps! Handle It! (25 player)
+					},
 					ach(1997),		-- Momma Said Knock You Out (10 player)
 					ach(2140),		-- Momma Said Knock You Out (25 player)
-					ach(4402),		-- More Dots! (10 player)
-					ach(4405),		-- More Dots! (25 player)
+					{	-- More Dots! (10 player)
+						["achievementID"] = 4402,	-- More Dots! (10 player)
+					},
+					{	-- More Dots! (25 player)
+						["achievementID"] = 4405,	-- More Dots! (25 player)
+					},
 					ach(12329),		-- Must Deconstruct Faster
 					ach(4578),		-- Nausea, Heartburn, Indigestion... (10 player)
 					ach(4616),		-- Nausea, Heartburn, Indigestion... (25 player)
@@ -328,8 +408,12 @@ _.Achievements =
 					ach(12328),		-- Nerf Gravity Bombs
 					ach(12327),		-- Nerf Scrapbots
 					ach(12342),		-- Nine Lives
-					ach(3936),		-- Not One, But Two Jormungars (10 player)
-					ach(3937),		-- Not One, But Two Jormungars (25 player)
+					{	-- Not One, But Two Jormungars (10 player)
+						["achievementID"] = 3936,	-- Not One, But Two Jormungars (10 player)
+					},
+					{	-- Not One, But Two Jormungars (25 player)
+						["achievementID"] = 3937,	-- Not One, But Two Jormungars (25 player)
+					},
 					ach(12368),		-- Not-So-Friendly Fire
 					ach(12399, {	-- Observed
 						title(129),		-- Starcaller
@@ -343,8 +427,12 @@ _.Achievements =
 						crit(1),		-- Defeat Blood-Queen Lana'thel without becoming a vampire
 						crit(2),		-- Defeat Blood-Queen Lana'thel while a vampire
 					}),
-					ach(4396),		-- Onyxia's Lair (10 player)
-					ach(4397),		-- Onyxia's Lair (25 player)
+					{	-- Onyxia's Lair (10 player)
+						["achievementID"] = 4396,	-- Onyxia's Lair (10 player)
+					},
+					{	-- Onyxia's Lair (25 player)
+						["achievementID"] = 4397,	-- Onyxia's Lair (25 player)
+					},
 					ach(12320, {	-- Orbit-uary
 						ach(12319),		-- Nuked from Orbit
 						ach(12318),		-- Orbital Devastation
@@ -352,10 +440,16 @@ _.Achievements =
 					}),
 					ach(4579),		-- Portal Jockey (10 player)
 					ach(4619),		-- Portal Jockey (25 player)
-					ach(3798),		-- Resilience Will Fix It (10 player)
+					{	-- Resilience Will Fix It (10 player)
+						["achievementID"] = 3798,	-- Resilience Will Fix It (10 player)
+					},
 					ach(12340),		-- Rubble and Roll
-					ach(3799),		-- Salt and Pepper (10 player)
-					ach(3815),		-- Salt and Pepper (25 player)
+					{	-- Salt and Pepper (10 player)
+						["achievementID"] = 3799,	-- Salt and Pepper (10 player)
+					},
+					{	-- Salt and Pepper (25 player)
+						["achievementID"] = 3815,	-- Salt and Pepper (25 player)
+					},
 					ach(572),		-- Sapphiron's Demise (10 player)
 					ach(573),		-- Sapphiron's Demise (25 player)
 					ach(12367, {	-- Set Up Us the Bomb
@@ -365,8 +459,12 @@ _.Achievements =
 					}),
 					ach(12372),		-- Shadowdodger
 					ach(12323),		-- Shattered
-					ach(4404),		-- She Deep Breaths More (10 player)
-					ach(4407),		-- She Deep Breaths More (25 player)
+					{	-- She Deep Breaths More (10 player)
+						["achievementID"] = 4404,	-- She Deep Breaths More (10 player)
+					},
+					{	-- She Deep Breaths More (25 player)
+						["achievementID"] = 4407,	-- She Deep Breaths More (25 player)
+					},
 					ach(2178),		-- Shocking! (10 player)
 					ach(2179),		-- Shocking! (25 player)
 					ach(12316),		-- Shutout
@@ -649,8 +747,12 @@ _.Achievements =
 					{	-- The Spellweaver's Downfall (25 player)
 						["achievementID"] = 623,	-- The Spellweaver's Downfall (25 player)
 					},
-					ach(3800),		-- The Traitor King (10 player)
-					ach(3816),		-- The Traitor King (25 player)
+					{	-- The Traitor King (10 player)
+						["achievementID"] = 3800,	-- The Traitor King (10 player)
+					},
+					{	-- The Traitor King (25 player)
+						["achievementID"] = 3816,	-- The Traitor King (25 player)
+					},
 					{	-- The Twilight Zone (10 player)
 						["achievementID"] = 2051,	-- The Twilight Zone (10 player)
 						["g"] = {
@@ -690,11 +792,19 @@ _.Achievements =
 						crit(2),		-- Salvaged Siege Engine
 						crit(3),		-- Salvaged Demolisher
 					}),
-					ach(3996),		-- Three Sixty Pain Spike (10 player)
-					ach(3997),		-- Three Sixty Pain Spike (25 player)
+					{	-- Three Sixty Pain Spike (10 player)
+						["achievementID"] = 3996,	-- Three Sixty Pain Spike (10 player)
+					},
+					{	-- Three Sixty Pain Spike (25 player)
+						["achievementID"] = 3997,	-- Three Sixty Pain Spike (25 player)
+					},
 					ach(12313),		-- Unbroken
-					ach(3797),		-- Upper Back Pain (10 player)
-					ach(3813),		-- Upper Back Pain (25 player)
+					{	-- Upper Back Pain (10 player)
+						["achievementID"] = 3797,	-- Upper Back Pain (10 player)
+					},
+					{	-- Upper Back Pain (25 player)
+						["achievementID"] = 3813,	-- Upper Back Pain (25 player)
+					},
 					ach(12350),		-- Who Needs Bloodlust?
 					ach(12337),		-- With Open Arms
 					{	-- You Don't Have an Eternity (10 player)
