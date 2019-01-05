@@ -194,8 +194,10 @@ _.Zones =
 									}),
 									q(49081, {	-- To Kill a Loa
 										["groups"] = {
+											i(155326),	-- Ritual Flayer's Mask
+											i(155314),	-- Ritual Flayer's Vest
 											i(155325),	-- Death-Pledged Helm
-											i(155313),	-- Deateh-Pleged Chestguard
+											i(155313),	-- Death-Pleged Chestguard
 										},
 										["qg"] = 128276,	-- Jo'chunga
 										["sourceQuests"] = { 49079 },	-- Hir'eek, the Bat Loa
@@ -507,6 +509,53 @@ _.Zones =
 								["collectible"] = false,
 								["description"] = "You must complete this storyline in order for him to show up at Gloom Hollow.",
 							}),
+							{	-- Bwonsamdi's Deliverance
+								["questID"] = 48468,
+								["qg"] = 130481,	-- Shinga Deathwalker
+								["coord"] = { 39.0, 59.9, 863 },
+							},
+							{	-- Respecting the Rites
+								["questID"] = 48473,
+								["qg"] = 130481,	-- Shinga Deathwalker
+								["coord"] = { 39.0, 59.9, 863 },
+							},
+							{	-- Bones for Protection
+								["questID"] = 48479,
+								["qg"] = 126079,	-- Koj'jun Deathwalker
+								["coord"] = { 38.9, 59.9, 863 },
+								["sourceQuests"] = {
+									48468,	-- Bwonsamdi's Deliverance
+									48473,	-- Respecting the Rites
+								},
+							},
+							{	-- Kel'vax's Home
+								["questID"] = 48478,
+								["qg"] = 126080,	-- Shinga Deathwalker
+								["coord"] = { 39.0, 59.9, 863 },
+								["groups"] = {
+									i(158943),	-- Nazmani Warplate Treads
+									i(158944),	-- Loa Speaker's Footwraps
+									i(158945),	-- Death-Pledged Treads
+									i(158946),	-- Ritual Flayer's Footpads
+									i(155519),	-- Loa Speaker's Cuffs
+									i(155343),	-- Ritual Flayer's Bindings
+									i(155521),	-- Death-Pledged Bracers
+									i(155341),	-- Nazmani Warplate Vambraces
+								},
+								["sourceQuests"] = {
+									48468,	-- Bwonsamdi's Deliverance
+									48473,	-- Respecting the Rites
+								},
+							},
+							{	-- The Fall of Kel'vax
+								["questID"] = 48480,
+								["qg"] = 126080,	-- Shinga Deathwalker
+								["coord"] = { 39.0, 59.9, 863 },
+								["sourceQuests"] = {
+									48479,	-- Bones for Protection
+									48478,	-- Kel'vax's Home
+								},
+							},
 
 							-- Crieve's List
 							{
