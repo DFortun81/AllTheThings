@@ -7,6 +7,11 @@ _.Zones =
 		m(863, {	-- Nazmir
 			["groups"] = {
 				n(-17,  {	-- Quests
+					--[[ Triggers/Flags:
+						53534 - when entering The Necropolis for the first time during "The Necropolis"
+						49695 - immediately after channeling on the drum finishes during "A Tribute For Death"
+						49367 - when returning to Zo'bal Ruins during "We'll Meet Again"
+					]]--
 					h(ach(11868, {	-- The Dark Heart of Nazmir [Note: Quest line starts here and a few quests are in the zone.  So we want to make them stand out amongst the crowd.]
 						["groups"] = {
 							crit(1, {	-- Deep in the Swamp
@@ -474,50 +479,28 @@ _.Zones =
 									}),
 								},
 							}),
-							n(132011, {	-- Shoak
-								["groups"] = {
-									q(47996, {	-- Mawfiend Extermination
-										["icon"] = "Interface\\Icons\\Ability_Warrior_OffensiveStance", -- Let's make the bonus objective icon look pretty
-									}),
-									q(47924, {	-- Profanity Filter
-										["qg"] = 124666,	-- Kajosh
-									}),
-									q(47998, {	-- Killing Cannibals
-										["qg"] = 124933,	-- Kajosh
-										["sourceQuests"] = { 47924 },	-- Profanity Filter
-									}),
-									q(47919, {	-- Just Say No to Cannibalism
-										["qg"] = 125024,	-- Kajosh
-										["sourceQuests"] = { 47924 },	-- Profanity Filter
-									}),
-									q(47925, {	-- Shoak's on the Menu  [Note: Final Quest needed to unlock Shoak]
-										["groups"] = {
-											i(158957),	-- Death-Pledged Greaves
-											i(158966),	-- Death-Pledged Links
-											i(158956),	-- Loa Speaker's Pants
-											i(158965),	-- Loa Speaker's Sash
-											i(158955),	-- Nazmani Warplate Legguards
-											i(158964),	-- Nazmani Warplate Waistplate
-											i(158958),	-- Ritual Flayer's Trousers
-											i(158967),	-- Ritual Flayer's Waistband
-										},
-										["qg"] = 125024,	-- Kajosh
-										["sourceQuests"] = { 47924 },	-- Profanity Filter
-									}),
-
+							{	-- All Hope is Lost
+								["questID"] = 48857,
+								["qg"] = 127212,	-- Ka'dran
+								["coord"] = { 30.9, 52.0, 863 },
+								["races"] = HORDE_ONLY,
+								["sourceQuests"] = {
+									48825,	-- Power Denied
+									48823,	-- Projection Destruction
 								},
-								["collectible"] = false,
-								["description"] = "You must complete this storyline in order for him to show up at Gloom Hollow.",
-							}),
-							{	-- Bwonsamdi's Deliverance
-								["questID"] = 48468,
-								["qg"] = 130481,	-- Shinga Deathwalker
-								["coord"] = { 39.0, 59.9, 863 },
 							},
-							{	-- Respecting the Rites
-								["questID"] = 48473,
-								["qg"] = 130481,	-- Shinga Deathwalker
-								["coord"] = { 39.0, 59.9, 863 },
+							{	-- An Unfortunate Event
+								["questID"] = 50933,
+								["qg"] = 135784,	-- Imperial Guard
+								["coord"] = { 29.2, 52.0, 863 },
+								["races"] = HORDE_ONLY,
+							},
+							{	-- Bad to the Bone
+								["questID"] = 49779,
+								["qg"] = 130930,	-- Zaluto
+								["coord"] = { 24.1, 53.2, 863 },
+								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 49778,	-- Don't Go into the Light
 							},
 							{	-- Bones for Protection
 								["questID"] = 48479,
@@ -527,6 +510,72 @@ _.Zones =
 									48468,	-- Bwonsamdi's Deliverance
 									48473,	-- Respecting the Rites
 								},
+							},
+							{	-- Bwonsamdi's Deliverance
+								["questID"] = 48468,
+								["qg"] = 130481,	-- Shinga Deathwalker
+								["coord"] = { 39.0, 59.9, 863 },
+							},
+							{	-- Catch Me if you Can
+								["questID"] = 49781,
+								["qg"] = 130930,	-- Zaluto
+								["coord"] = { 24.1, 53.2, 863 },
+								["races"] = HORDE_ONLY,
+								["groups"] = {
+									i(155556),	-- Jin'Tiki's Signet
+									i(159046),	-- Loa Speaker's Footpads
+									i(159048),	-- Ritual Flayer's Treads
+									i(159047),	-- Death-Pledged Striders
+									i(159045),	-- Nazmani Warplate Boots
+								},
+								["sourceQuests"] = {
+									49779,	-- Bad To The Bone
+									49780,	-- Recovering Ancient Fire
+								},
+							},
+							{	-- Conduit Interruption
+								["questID"] = 48856,
+								["qg"] = 127215,	-- Shadow Hunter Da'jul
+								["coord"] = { 31.0, 52.0, 863 },
+								["races"] = HORDE_ONLY,
+								["sourceQuests"] = {
+									48825,	-- Power Denied
+									48823,	-- Projection Destruction
+								},
+							},
+							{	-- Don't Go into the Light
+								["questID"] = 49778,
+								["qg"] = 131231,	-- Jin'Tiki
+								["coord"] = { 24.1, 53.1, 863 },
+								["races"] = HORDE_ONLY,
+								["sourceQuests"] = {
+									49776,	-- No Problem Tar Can't Solve
+									49777,	-- On The Run
+									49774,	-- Won't Leaf Him to Die
+								},
+							},
+							{	-- Humbling the Terrors
+								["questID"] = 48855,
+								["qg"] = 127215,	-- Shadow Hunter Da'jul
+								["coord"] = { 31.0, 52.0, 863 },
+								["races"] = HORDE_ONLY,
+								["sourceQuests"] = {
+									48825,	-- Power Denied
+									48823,	-- Projection Destruction
+								},
+							},
+							{	-- Hunting Zardrax
+								["questID"] = 49314,
+								["qg"] = 122795,	-- Witch Doctor Kejabu
+								["coord"] = { 39.5, 43.8, 863 },
+								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 47250,	-- We'll Meet Again
+							},
+							{	-- Just Say No to Cannibalism
+								["questID"] = 47919,
+								["qg"] = 125024,	-- Kajosh
+								["coord"] = { 51.7, 33.2, 863 },
+								["sourceQuest"] = 47924,	-- Profanity Filter
 							},
 							{	-- Kel'vax's Home
 								["questID"] = 48478,
@@ -547,6 +596,105 @@ _.Zones =
 									48473,	-- Respecting the Rites
 								},
 							},
+							{	-- Killing Cannibals
+								["questID"] = 47998,
+								["qg"] = 124933,	-- Kajosh
+								["coord"] = { 51.7, 33.2, 863 },
+								["sourceQuest"] = 47924,	-- Profanity Filter
+							},
+							{	-- Mawfiend Extermination
+								["questID"] = 47996,
+								["icon"] = "Interface\\Icons\\Ability_Warrior_OffensiveStance", -- Let's make the bonus objective icon look pretty
+							},
+							{	-- No Problem Tar Can't Solve
+								["questID"] = 49776,
+								["qg"] = 131231,	-- 
+								["coord"] = { 24.1, 53.1, 863 },
+								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 50933,	-- An Unfortunate Event
+							},
+							{	-- Offer of Power
+								["questID"] = 48854,
+								["qg"] = 127216,	-- Zardrax the Empowerer
+								["coord"] = { 30.9, 52.0, 863 },
+								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 49314,	-- Hunting Zardrax
+							},
+							{	-- On the Run
+								["questID"] = 49777,
+								["qg"] = 130930,	-- Zaluto
+								["coord"] = { 24.1, 53.1, 863 },
+								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 50933,	-- An Unfortunate Event
+							},
+							{	-- Payback's a Lich
+								["questID"] = 48869,
+								["qg"] = 127215,	-- Shadow Hunter Da'jul
+								["coord"] = { 30.9, 52.1, 863 },
+								["races"] = HORDE_ONLY,
+								["groups"] = {
+									i(155378),	-- Zardax's Tattered Drape
+									i(155374),	-- Death Defier's Aegis
+									i(155375),	-- Ghoulish Blood Idol
+								},
+								["sourceQuests"] = {
+									48857,	-- All Hope is Lost
+									48856,	-- Conduit Interruption
+									48855,	-- Humbling the Terrors
+								},
+							},
+							{	-- Power Denied
+								["questID"] = 48825,
+								["qg"] = 127212,	-- Kal'dran
+								["coord"] = { 30.9, 52.0, 863 },
+								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 48854,	-- Offer of Power
+							},
+							{	-- Profanity Filter
+								["questID"] = 47924,
+								["qg"] = 124666,	-- Kajosh
+								["coord"] = { 55.1, 36.7, 863 },
+							},
+							{	-- Projection Destruction
+								["questID"] = 48823,
+								["qg"] = 127215,	-- Shadow Hunter Da'jul
+								["coord"] = { 31.0, 52.0, 863 },
+								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 48854,	-- Offer of Power
+							},
+							{	-- Recovering Ancient Fire
+								["questID"] = 49780,
+								["qg"] = 131231,	-- Jin'Tiki
+								["coord"] = { 24.1, 53.1, 863 },
+								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 49778,	-- Don't Go into the Light
+							},
+							{	-- Respecting the Rites
+								["questID"] = 48473,
+								["qg"] = 130481,	-- Shinga Deathwalker
+								["coord"] = { 39.0, 59.9, 863 },
+							},
+							{	-- Shoak's on the Menu
+								["questID"] = 47925,
+								["qg"] = 125024,	-- Kajosh
+								["coord"] = { 51.7, 33.2, 863 },
+								["description"] = "You must complete this storyline for Shoak to appear in Gloom Hollow.",
+								["sourceQuest"] = 47924,	-- Profanity Filter
+								["groups"] = {
+									i(158957),	-- Death-Pledged Greaves
+									i(158966),	-- Death-Pledged Links
+									i(158956),	-- Loa Speaker's Pants
+									i(158965),	-- Loa Speaker's Sash
+									i(158955),	-- Nazmani Warplate Legguards
+									i(158964),	-- Nazmani Warplate Waistplate
+									i(158958),	-- Ritual Flayer's Trousers
+									i(158967),	-- Ritual Flayer's Waistband
+								},
+							},
+							{	-- Stopping Zardrax
+								["questID"] = 48852,
+								["sourceQuest"] = 48854,	-- Offer of Power
+							},
 							{	-- The Fall of Kel'vax
 								["questID"] = 48480,
 								["qg"] = 126080,	-- Shinga Deathwalker
@@ -556,6 +704,13 @@ _.Zones =
 									48478,	-- Kel'vax's Home
 								},
 							},
+							{	-- Won't Leaf Him to Die
+								["questID"] = 49774,
+								["qg"] = 131231,	-- Jin'Tiki
+								["coord"] = { 24.1, 53.1, 863 },
+								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 50933,	-- An Unfortunate Event
+							},
 
 							-- Crieve's List
 							{
@@ -563,13 +718,6 @@ _.Zones =
 							},
 							{
 								["questID"] = 47530,	-- ???? [The Necropolis] (completed after soulbound, but not known)
-							},
-							{
-								["questID"] = 48869,	-- Payback's a Lich [Burial Mound]
-								["groups"] = {
-									i(155375),	-- Ghoulish Blood Idol
-									i(155378),	-- Zardax's Tattered Drape
-								},
 							},
 							{
 								["questID"] = 49313,	-- Wun'ju's Trove [Terrace of Sorrows]
