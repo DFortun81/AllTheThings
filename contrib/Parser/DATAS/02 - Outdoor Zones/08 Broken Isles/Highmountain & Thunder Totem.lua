@@ -9,6 +9,8 @@ _.Zones =
 				750,
 				660,	-- Feltotem Caverns
 				653,	-- Cave of the Blood Trial
+				869,	-- Highmountain (legion invasion ship 1)
+				870,	-- Highmountain (legion invasion ship 2)
 			},
 			["groups"] = {
 				n(-10067, {	-- Artifacts
