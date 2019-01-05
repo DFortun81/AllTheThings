@@ -13,6 +13,7 @@ _.Zones =
 						49367 - when returning to Zo'bal Ruins during "We'll Meet Again"
 						52294 - triggers with Krag'wa after accepting "The Last Witch Doctor of Krag'wa"
 						47531 - triggered when turning in "Krag'wa the Terrible"
+						50314 - triggered when turning in "Target of Opportunity"
 					]]--
 					h(ach(11868, {	-- The Dark Heart of Nazmir [Note: Quest line starts here and a few quests are in the zone.  So we want to make them stand out amongst the crowd.]
 						["groups"] = {
@@ -410,7 +411,7 @@ _.Zones =
 									}),
 								},
 							}),
-							crit(7, {	-- Bring the Boom
+							crit(6, {	-- Bring the Boom
 								["groups"] = {
 									q(47601, {	-- Field Evaluation
 										["groups"] = {
@@ -481,461 +482,572 @@ _.Zones =
 									}),
 								},
 							}),
-							{	-- A Chance Sighting
-								["questID"] = 50934,
-								["qg"] = 131993,	-- Yash
-								["coord"] = { 66.9, 41.9, 863 },
-								["races"] = HORDE_ONLY,
-							},
-							{	-- All Hope is Lost
-								["questID"] = 48857,
-								["qg"] = 127212,	-- Ka'dran
-								["coord"] = { 30.9, 52.0, 863 },
-								["races"] = HORDE_ONLY,
-								["sourceQuests"] = {
-									48825,	-- Power Denied
-									48823,	-- Projection Destruction
+							crit(7, {	-- Everything Contained
+								{	-- Slumber No More
+									["questID"] = 49932,
+									["qg"] = 131978,	-- Lashk
+									["coord"] = { 67.4, 41.9 , 863 },
+									["races"] = HORDE_ONLY,
+									["sourceQuest"] = 47602,	-- Ready For Action
 								},
-							},
-							{	-- An Unfortunate Event
-								["questID"] = 50933,
-								["qg"] = 135784,	-- Imperial Guard
-								["coord"] = { 29.2, 52.0, 863 },
-								["races"] = HORDE_ONLY,
-							},
-							{	-- Bad to the Bone
-								["questID"] = 49779,
-								["qg"] = 130930,	-- Zaluto
-								["coord"] = { 24.1, 53.2, 863 },
-								["races"] = HORDE_ONLY,
-								["sourceQuest"] = 49778,	-- Don't Go into the Light
-							},
-							{	-- Bad Juju
-								["questID"] = 49380,
-								["qg"] = 129165,	-- Guard Satao
-								["coord"] = { 63.1, 52.6, 863 },
-								["races"] = HORDE_ONLY,
-								["sourceQuest"] = 49366,	-- Aid the Wounded
-							},
-							{	-- Blood Purification
-								["questID"] = 49950,
-								["qg"] = 133941,	-- Minor Corruption
-								["coord"] = { 69.2, 33.7, 863 },
-								["races"] = HORDE_ONLY,
-								["sourceQuests"] = {
-									49938,	-- Corrupted Earth
-									49935,	-- How to Repair a Titan Keeper
-									49937,	-- Recovering Remnants
+								{	-- Corrupted Earth
+									["questID"] = 49938,
+									["qg"] = 131253,	-- Titan Keeper Hezrel
+									["coord"] = { 66.9, 38.8, 863 },
+									["races"] = HORDE_ONLY,
+									["sourceQuest"] = 49932,	-- Slumber No More
 								},
-							},
-							{	-- Bone Procession
-								["questID"] = 49941,
-								["qg"] = 131253,	-- Titan Keeper Hezrel
-								["coord"] = { 68.6, 35.0, 863 },
-								["races"] = HORDE_ONLY,
-								["sourceQuests"] = {
-									49938,	-- Corrupted Earth
-									49935,	-- How to Repair a Titan Keeper
-									49937,	-- Recovering Remnants
+								{	-- How to Repair a Titan Keeper
+									["questID"] = 49935,
+									["qg"] = 131253,	-- Titan Keeper Hezrel
+									["coord"] = { 66.9, 38.8, 863 },
+									["races"] = HORDE_ONLY,
+									["sourceQuest"] = 49932,	-- Slumber No More
 								},
-							},
-							{	-- Bones for Protection
-								["questID"] = 48479,
-								["qg"] = 126079,	-- Koj'jun Deathwalker
-								["coord"] = { 38.9, 59.9, 863 },
-								["sourceQuests"] = {
-									48468,	-- Bwonsamdi's Deliverance
-									48473,	-- Respecting the Rites
+								{	-- Recovering Remnants
+									["questID"] = 49937,
+									["qg"] = 131253,	-- Titan Keeper Hezrel
+									["coord"] = { 66.9, 38.8, 863 },
+									["races"] = HORDE_ONLY,
+									["sourceQuest"] = 49932,	-- Slumber No More
 								},
-							},
-							{	-- Bwonsamdi's Deliverance
-								["questID"] = 48468,
-								["qg"] = 130481,	-- Shinga Deathwalker
-								["coord"] = { 39.0, 59.9, 863 },
-							},
-							{	-- Catch Me if you Can
-								["questID"] = 49781,
-								["qg"] = 130930,	-- Zaluto
-								["coord"] = { 24.1, 53.2, 863 },
-								["races"] = HORDE_ONLY,
-								["groups"] = {
-									i(155556),	-- Jin'Tiki's Signet
-									i(159046),	-- Loa Speaker's Footpads
-									i(159048),	-- Ritual Flayer's Treads
-									i(159047),	-- Death-Pledged Striders
-									i(159045),	-- Nazmani Warplate Boots
-								},
-								["sourceQuests"] = {
-									49779,	-- Bad To The Bone
-									49780,	-- Recovering Ancient Fire
-								},
-							},
-							{	-- Conduit Interruption
-								["questID"] = 48856,
-								["qg"] = 127215,	-- Shadow Hunter Da'jul
-								["coord"] = { 31.0, 52.0, 863 },
-								["races"] = HORDE_ONLY,
-								["sourceQuests"] = {
-									48825,	-- Power Denied
-									48823,	-- Projection Destruction
-								},
-							},
-							{	-- Containment Procedure
-								["questID"] = 49980,
-								["qg"] = 131253,	-- Titan Keeper Hezrel
-								["coord"] = { 72.5, 29.4, 863 },
-								["races"] = HORDE_ONLY,
-								["groups"] = {
-									i(159088),	-- Nazmani Hexblade
-									i(159085),	-- Ancient Loa-Blessed Mace
-									i(159083),	-- Degraded Empire Shortblade
-									i(159084),	-- Handscythe of the First City
-									i(159087),	-- Nazmani Longstaff
-									i(159082),	-- Fallen Nation Recurve
-									i(159081),	-- Fallen Nation Carver
-									i(159086),	-- Corrupted Tribe Headsmasher
-								},
-								["sourceQuests"] = {
-									49955,	-- Not Fit for This Plane
-									49957,	-- Protocol Recovery
-									49956,	-- Void is Prohibited
-								},
-							},
-							{	-- Corrupted Earth
-								["questID"] = 49938,
-								["qg"] = 131253,	-- Titan Keeper Hezrel
-								["coord"] = { 66.9, 38.8, 863 },
-								["races"] = HORDE_ONLY,
-								["sourceQuest"] = 49932,	-- Slumber No More
-							},
-							{	-- Crawg Free Zone
-								["questID"] = 49379,
-								["qg"] = 129164,	-- Chronicler Jabari
-								["coord"] = { 62.7, 53.5, 863 },
-								["races"] = HORDE_ONLY,
-								["sourceQuest"] = 49370,	-- Rescue the Chronicler
-							},
-							{	-- Don't Go into the Light
-								["questID"] = 49778,
-								["qg"] = 131231,	-- Jin'Tiki
-								["coord"] = { 24.1, 53.1, 863 },
-								["races"] = HORDE_ONLY,
-								["sourceQuests"] = {
-									49776,	-- No Problem Tar Can't Solve
-									49777,	-- On The Run
-									49774,	-- Won't Leaf Him to Die
-								},
-							},
-							{	-- Earn Their Trust
-								["questID"] = 49378,
-								["qg"] = 129164,	-- Chronicler Jabari
-								["coord"] = { 62.7, 53.5, 863 },
-								["races"] = HORDE_ONLY,
-								["sourceQuest"] = 49370,	-- Rescue the Chronicler
-							},
-							{	-- How to Repair a Titan Keeper
-								["questID"] = 49935,
-								["qg"] = 131253,	-- Titan Keeper Hezrel
-								["coord"] = { 66.9, 38.8, 863 },
-								["races"] = HORDE_ONLY,
-								["sourceQuest"] = 49932,	-- Slumber No More
-							},
-							{	-- Humbling the Terrors
-								["questID"] = 48855,
-								["qg"] = 127215,	-- Shadow Hunter Da'jul
-								["coord"] = { 31.0, 52.0, 863 },
-								["races"] = HORDE_ONLY,
-								["sourceQuests"] = {
-									48825,	-- Power Denied
-									48823,	-- Projection Destruction
-								},
-							},
-							{	-- Hunting Zardrax
-								["questID"] = 49314,
-								["qg"] = 122795,	-- Witch Doctor Kejabu
-								["coord"] = { 39.5, 43.8, 863 },
-								["races"] = HORDE_ONLY,
-								["sourceQuest"] = 47250,	-- We'll Meet Again
-							},
-							{	-- It Seems You've Made a Friend
-								["questID"] = 49382,
-								["qg"] = 129164,	-- Chronicler Jabari
-								["coord"] = { 63.1, 52.7, 863 },
-								["races"] = HORDE_ONLY,
-								["groups"] = {
-									i(156566),	-- Dart
-								},
-								["sourceQuests"] = {
-									49380,	-- Bad Juju
-									49377,	-- Off With Her Head
-									-- are 49378 and 49379 also required?
-								},
-							},
-							{	-- Just Say No to Cannibalism
-								["questID"] = 47919,
-								["qg"] = 125024,	-- Kajosh
-								["coord"] = { 51.7, 33.2, 863 },
-								["sourceQuest"] = 47924,	-- Profanity Filter
-							},
-							{	-- Kel'vax's Home
-								["questID"] = 48478,
-								["qg"] = 126080,	-- Shinga Deathwalker
-								["coord"] = { 39.0, 59.9, 863 },
-								["groups"] = {
-									i(158943),	-- Nazmani Warplate Treads
-									i(158944),	-- Loa Speaker's Footwraps
-									i(158945),	-- Death-Pledged Treads
-									i(158946),	-- Ritual Flayer's Footpads
-									i(155519),	-- Loa Speaker's Cuffs
-									i(155343),	-- Ritual Flayer's Bindings
-									i(155521),	-- Death-Pledged Bracers
-									i(155341),	-- Nazmani Warplate Vambraces
-								},
-								["sourceQuests"] = {
-									48468,	-- Bwonsamdi's Deliverance
-									48473,	-- Respecting the Rites
-								},
-							},
-							{	-- Killing Cannibals
-								["questID"] = 47998,
-								["qg"] = 124933,	-- Kajosh
-								["coord"] = { 51.7, 33.2, 863 },
-								["sourceQuest"] = 47924,	-- Profanity Filter
-							},
-							{	-- Mawfiend Extermination
-								["questID"] = 47996,
-								["icon"] = "Interface\\Icons\\Ability_Warrior_OffensiveStance", -- Let's make the bonus objective icon look pretty
-							},
-							{	-- No Problem Tar Can't Solve
-								["questID"] = 49776,
-								["qg"] = 131231,	-- 
-								["coord"] = { 24.1, 53.1, 863 },
-								["races"] = HORDE_ONLY,
-								["sourceQuest"] = 50933,	-- An Unfortunate Event
-							},
-							{	-- Not Fit for This Plane
-								["questID"] = 49955,
-								["qg"] = 131253,	-- 
-								["coord"] = { 68.6, 35.0, 863 },
-								["races"] = HORDE_ONLY,
-								["sourceQuests"] = {
-									49950,	-- Blood Purification
-									49941,	-- Bone Procession
-									49949,	-- Unwelcome Undead
-								},
-							},
-							{	-- Off With Her Head
-								["questID"] = 49377,
-								["qg"] = 129165,	-- Guard Satao
-								["coord"] = { 63.1, 52.6, 863 },
-								["races"] = HORDE_ONLY,
-								["sourceQuest"] = 49366,	-- Aid the Wounded
-								["groups"] = {
-									i(159092),	-- Grim Ritual Mace
-									i(159094),	-- Bloodsinger Wand
-									i(159089),	-- Amaki Scalper
-									i(159091),	-- Bloodrite Sticker
-									i(159093),	-- Marrow Drained Bonestaff
-									i(159090),	-- Crawgmother's Shortbow
-									i(159096),	-- Nagla's Headcracker
-									i(159095),	-- Bloodhunter Greatblade
-								},
-							},
-							{	-- Offer of Power
-								["questID"] = 48854,
-								["qg"] = 127216,	-- Zardrax the Empowerer
-								["coord"] = { 30.9, 52.0, 863 },
-								["races"] = HORDE_ONLY,
-								["sourceQuest"] = 49314,	-- Hunting Zardrax
-							},
-							{	-- On the Run
-								["questID"] = 49777,
-								["qg"] = 130930,	-- Zaluto
-								["coord"] = { 24.1, 53.1, 863 },
-								["races"] = HORDE_ONLY,
-								["sourceQuest"] = 50933,	-- An Unfortunate Event
-							},
-							{	-- Payback's a Lich
-								["questID"] = 48869,
-								["qg"] = 127215,	-- Shadow Hunter Da'jul
-								["coord"] = { 30.9, 52.1, 863 },
-								["races"] = HORDE_ONLY,
-								["groups"] = {
-									i(155378),	-- Zardax's Tattered Drape
-									i(155374),	-- Death Defier's Aegis
-									i(155375),	-- Ghoulish Blood Idol
-								},
-								["sourceQuests"] = {
-									48857,	-- All Hope is Lost
-									48856,	-- Conduit Interruption
-									48855,	-- Humbling the Terrors
-								},
-							},
-							{	-- Power Denied
-								["questID"] = 48825,
-								["qg"] = 127212,	-- Kal'dran
-								["coord"] = { 30.9, 52.0, 863 },
-								["races"] = HORDE_ONLY,
-								["sourceQuest"] = 48854,	-- Offer of Power
-							},
-							{	-- Profanity Filter
-								["questID"] = 47924,
-								["qg"] = 124666,	-- Kajosh
-								["coord"] = { 55.1, 36.7, 863 },
-							},
-							{	-- Projection Destruction
-								["questID"] = 48823,
-								["qg"] = 127215,	-- Shadow Hunter Da'jul
-								["coord"] = { 31.0, 52.0, 863 },
-								["races"] = HORDE_ONLY,
-								["sourceQuest"] = 48854,	-- Offer of Power
-							},
-							{	-- Protocol Recovery
-								["questID"] = 49957,
-								["qg"] = 131253,	-- 
-								["coord"] = { 68.6, 35.0, 863 },
-								["races"] = HORDE_ONLY,
-								["sourceQuests"] = {
-									49950,	-- Blood Purification
-									49941,	-- Bone Procession
-									49949,	-- Unwelcome Undead
-								},
-							},
-							{	-- Recovering Ancient Fire
-								["questID"] = 49780,
-								["qg"] = 131231,	-- Jin'Tiki
-								["coord"] = { 24.1, 53.1, 863 },
-								["races"] = HORDE_ONLY,
-								["sourceQuest"] = 49778,	-- Don't Go into the Light
-							},
-							{	-- Recovering Remnants
-								["questID"] = 49937,
-								["qg"] = 131253,	-- Titan Keeper Hezrel
-								["coord"] = { 66.9, 38.8, 863 },
-								["races"] = HORDE_ONLY,
-								["sourceQuest"] = 49932,	-- Slumber No More
-							},
-							{	-- Rescue the Chronicler
-								["questID"] = 49370,
-								["qg"] = 129165,	-- Guard Satao
-								["coord"] = { 63.1, 52.6, 863 },
-								["races"] = HORDE_ONLY,
-								["sourceQuest"] = 49366,	-- Aid the Wounded
-							},
-							{	-- Respecting the Rites
-								["questID"] = 48473,
-								["qg"] = 130481,	-- Shinga Deathwalker
-								["coord"] = { 39.0, 59.9, 863 },
-							},
-							{	-- Return to Gloom Hollow
-								["questID"] = 49985,
-								["qg"] = 131253,	-- Titan Keeper Hezrel
-								["coord"] = { 72.4, 29.3, 863 },
-								["races"] = HORDE_ONLY,
-								["sourceQuest"] = 49980,	-- Return to Gloom Hollow
-							},
-							{	-- Shoak's on the Menu
-								["questID"] = 47925,
-								["qg"] = 125024,	-- Kajosh
-								["coord"] = { 51.7, 33.2, 863 },
-								["description"] = "You must complete this storyline for Shoak to appear in Gloom Hollow.",
-								["sourceQuest"] = 47924,	-- Profanity Filter
-								["groups"] = {
-									i(158957),	-- Death-Pledged Greaves
-									i(158966),	-- Death-Pledged Links
-									i(158956),	-- Loa Speaker's Pants
-									i(158965),	-- Loa Speaker's Sash
-									i(158955),	-- Nazmani Warplate Legguards
-									i(158964),	-- Nazmani Warplate Waistplate
-									i(158958),	-- Ritual Flayer's Trousers
-									i(158967),	-- Ritual Flayer's Waistband
-								},
-							},
-							{	-- Slumber No More
-								["questID"] = 49932,
-								["qg"] = 131978,	-- Lashk
-								["coord"] = { 67.4, 41.9 , 863 },
-								["races"] = HORDE_ONLY,
-								["sourceQuest"] = 47602,	-- Ready For Action
-							},
-							{	-- Stopping Zardrax
-								["questID"] = 48852,
-								["sourceQuest"] = 48854,	-- Offer of Power
-							},
-							{	-- The Fall of Kel'vax
-								["questID"] = 48480,
-								["qg"] = 126080,	-- Shinga Deathwalker
-								["coord"] = { 39.0, 59.9, 863 },
-								["sourceQuests"] = {
-									48479,	-- Bones for Protection
-									48478,	-- Kel'vax's Home
-								},
-							},
-							{	-- Unwelcome Undead
-								["questID"] = 49949,
-								["qg"] = 131253,	-- Titan Keeper Hezrel
-								["coord"] = { 68.6, 35.0, 863 },
-								["races"] = HORDE_ONLY,
-								["sourceQuests"] = {
-									49938,	-- Corrupted Earth
-									49935,	-- How to Repair a Titan Keeper
-									49937,	-- Recovering Remnants
-								},
-							},
-							{	-- Vial of Antidote
-								["objectID"] = 278197,
-								["coord"] = { 64.0, 50.3, 863 },
-								["groups"] = {
-									{	-- Aid the Wounded
-										["questID"] = 49366,
-										["sourceQuest"] = 50934,	-- A Chance Sighting
+								{	-- Blood Purification
+									["questID"] = 49950,
+									["qg"] = 133941,	-- Minor Corruption
+									["coord"] = { 69.2, 33.7, 863 },
+									["races"] = HORDE_ONLY,
+									["sourceQuests"] = {
+										49938,	-- Corrupted Earth
+										49935,	-- How to Repair a Titan Keeper
+										49937,	-- Recovering Remnants
 									},
 								},
-							},
-							{	-- Void is Prohibited
-								["questID"] = 49956,
-								["qg"] = 131253,	-- 
-								["coord"] = { 68.6, 35.0, 863 },
-								["races"] = HORDE_ONLY,
-								["sourceQuests"] = {
-									49950,	-- Blood Purification
-									49941,	-- Bone Procession
-									49949,	-- Unwelcome Undead
+								{	-- Bone Procession
+									["questID"] = 49941,
+									["qg"] = 131253,	-- Titan Keeper Hezrel
+									["coord"] = { 68.6, 35.0, 863 },
+									["races"] = HORDE_ONLY,
+									["sourceQuests"] = {
+										49938,	-- Corrupted Earth
+										49935,	-- How to Repair a Titan Keeper
+										49937,	-- Recovering Remnants
+									},
 								},
-							},
-							{	-- Won't Leaf Him to Die
-								["questID"] = 49774,
-								["qg"] = 131231,	-- Jin'Tiki
-								["coord"] = { 24.1, 53.1, 863 },
-								["races"] = HORDE_ONLY,
-								["sourceQuest"] = 50933,	-- An Unfortunate Event
-							},
-
-							-- Crieve's List
-							{
-								["questID"] = 49484,	-- Offering to Bwonsamdi [The Necropolis]
-							},
-							{
-								["questID"] = 47530,	-- ???? [The Necropolis] (completed after soulbound, but not known)
-							},
-							{
-								["questID"] = 49313,	-- Wun'ju's Trove [Terrace of Sorrows]
-							},
-							{
-								["questID"] = 50888,	-- Urn of Ugussu [Terrace of Sorrows]
-							},
-							{
-								["questID"] = 48578,	-- There's No Eye in Skyterror
-								["groups"] = {
-									i(155377),	-- Drained Bone Band [Ring]
-									i(159074),	-- Jarkadiax's Other Eye [Trinket]
+								{	-- Unwelcome Undead
+									["questID"] = 49949,
+									["qg"] = 131253,	-- Titan Keeper Hezrel
+									["coord"] = { 68.6, 35.0, 863 },
+									["races"] = HORDE_ONLY,
+									["sourceQuests"] = {
+										49938,	-- Corrupted Earth
+										49935,	-- How to Repair a Titan Keeper
+										49937,	-- Recovering Remnants
+									},
 								},
-							},
-							{
-								["questID"] = 48588,	-- Objective [Primal Wetlands]
-							},
+								{	-- Not Fit for This Plane
+									["questID"] = 49955,
+									["qg"] = 131253,	-- 
+									["coord"] = { 68.6, 35.0, 863 },
+									["races"] = HORDE_ONLY,
+									["sourceQuests"] = {
+										49950,	-- Blood Purification
+										49941,	-- Bone Procession
+										49949,	-- Unwelcome Undead
+									},
+								},
+								{	-- Protocol Recovery
+									["questID"] = 49957,
+									["qg"] = 131253,	-- 
+									["coord"] = { 68.6, 35.0, 863 },
+									["races"] = HORDE_ONLY,
+									["sourceQuests"] = {
+										49950,	-- Blood Purification
+										49941,	-- Bone Procession
+										49949,	-- Unwelcome Undead
+									},
+								},
+								{	-- Void is Prohibited
+									["questID"] = 49956,
+									["qg"] = 131253,	-- 
+									["coord"] = { 68.6, 35.0, 863 },
+									["races"] = HORDE_ONLY,
+									["sourceQuests"] = {
+										49950,	-- Blood Purification
+										49941,	-- Bone Procession
+										49949,	-- Unwelcome Undead
+									},
+								},
+								{	-- Containment Procedure
+									["questID"] = 49980,
+									["qg"] = 131253,	-- Titan Keeper Hezrel
+									["coord"] = { 72.5, 29.4, 863 },
+									["races"] = HORDE_ONLY,
+									["groups"] = {
+										i(159088),	-- Nazmani Hexblade
+										i(159085),	-- Ancient Loa-Blessed Mace
+										i(159083),	-- Degraded Empire Shortblade
+										i(159084),	-- Handscythe of the First City
+										i(159087),	-- Nazmani Longstaff
+										i(159082),	-- Fallen Nation Recurve
+										i(159081),	-- Fallen Nation Carver
+										i(159086),	-- Corrupted Tribe Headsmasher
+									},
+									["sourceQuests"] = {
+										49955,	-- Not Fit for This Plane
+										49957,	-- Protocol Recovery
+										49956,	-- Void is Prohibited
+									},
+								},
+								{	-- Return to Gloom Hollow
+									["questID"] = 49985,
+									["qg"] = 131253,	-- Titan Keeper Hezrel
+									["coord"] = { 72.4, 29.3, 863 },
+									["races"] = HORDE_ONLY,
+									["sourceQuest"] = 49980,	-- Containment Procedure
+								},
+							}),
+							crit(8, {	-- Bleeding the Blood Trolls
+								{	-- Down by the Riverside
+									["questID"] = 49569,
+									["qg"] = 126213,	-- Princess Talanji
+									["coord"] = { 67.4, 42.2, 863 },
+									["races"] = HORDE_ONLY,
+									["sourceQuest"] = 47602,	-- Ready For Action
+								},
+								{	-- Rally the Warriors
+									["questID"] = 50076,
+									["qg"] = 121288,	-- Princess Talanji
+									["coord"] = { 39.3, 78.1, 863 },
+									["races"] = HORDE_ONLY,
+									["sourceQuest"] = 49569,	-- Down by the Riverside
+								},
+								{	-- The Battle of Bloodfire Ravine
+									["questID"] = 50138,
+									["qg"] = 121288,	-- Princess Talanji
+									["coord"] = { 39.3, 77.6, 863 },
+									["races"] = HORDE_ONLY,
+									["sourceQuest"] = 50076,	-- Rally the Warriors
+								},
+								{	-- Undying Totems
+									["questID"] = 50078,
+									["qg"] = 132624,	-- Zandalari War Priest
+									["coord"] = { 42.3, 72.5, 863 },
+									["races"] = HORDE_ONLY,
+									["sourceQuest"] = 50076,	-- Rally the Warriors
+								},
+								{	-- Boom goes the Bomb
+									["questID"] = 50079,
+									["qg"] = 132988,	-- Patch
+									["coord"] = { 44.9, 68.3, 863 },
+									["races"] = HORDE_ONLY,
+									["sourceQuests"] = {
+										50138,	-- The Battle of Bloodfire Ravine
+										50078,	-- Undying Totems
+									},
+								},
+								{	-- The Road of Pain
+									["questID"] = 50081,
+									["qg"] = 132333,	-- Princess Talanji
+									["coord"] = { 44.9, 68.6, 863 },
+									["races"] = HORDE_ONLY,
+									["sourceQuests"] = {
+										50138,	-- The Battle of Bloodfire Ravine
+										50078,	-- Undying Totems
+									},
+								},
+								{	-- Target of Opportunity
+									["questID"] = 50082,
+									["qg"] = 133125,	-- Princess Talanji
+									["coord"] = { 44.1, 62.8, 863 },
+									["races"] = HORDE_ONLY,
+									["groups"] = {
+										i(159025),	-- Nazmani Warplate Legplates
+										i(159026),	-- Loa Speaker's Legwraps
+										i(159027),	-- Death-Pledged Breeches
+										i(159028),	-- Ritual Flayer's Pants
+										i(159034),	-- Nazmani Warplate Greatbelt
+										i(159035),	-- Loa Speaker's Cincture
+										i(159036),	-- Death-Pledged Chain
+										i(159037),	-- Ritual Flayer's Girdle
+									},
+									["sourceQuests"] = {
+										50079,	-- Boom goes the Bomb
+										50081,	-- The Road of Pain
+									},
+								},
+								{	-- Petitioning Krag'wa
+									["questID"] = 52073,
+									["qg"] = 133125,	-- Princess Talanji
+									["coord"] = { 45.2, 60.5, 863 },
+									["races"] = HORDE_ONLY,
+									["sourceQuest"] = 50082,	-- Target of Opportunity
+								},
+								{	-- Ateena's Fall
+									["questID"] = 50087,
+									["qg"] = 133476,	-- 
+									["coord"] = { 49.3, 57.1, 863 },
+									["races"] = HORDE_ONLY,
+									["sourceQuest"] = 52073,	-- Petitioning Krag'wa
+									["groups"] = {
+										i(155332),	-- Ritual Flayer's Spaulders
+										i(159012),	-- Ritual Flayer's Jerkin
+									},
+								},
+							}),
 						},
 					})),
+					{	-- A Chance Sighting
+						["questID"] = 50934,
+						["qg"] = 131993,	-- Yash
+						["coord"] = { 66.9, 41.9, 863 },
+						["races"] = HORDE_ONLY,
+					},
+					{	-- All Hope is Lost
+						["questID"] = 48857,
+						["qg"] = 127212,	-- Ka'dran
+						["coord"] = { 30.9, 52.0, 863 },
+						["races"] = HORDE_ONLY,
+						["sourceQuests"] = {
+							48825,	-- Power Denied
+							48823,	-- Projection Destruction
+						},
+					},
+					{	-- An Unfortunate Event
+						["questID"] = 50933,
+						["qg"] = 135784,	-- Imperial Guard
+						["coord"] = { 29.2, 52.0, 863 },
+						["races"] = HORDE_ONLY,
+					},
+					{	-- Bad to the Bone
+						["questID"] = 49779,
+						["qg"] = 130930,	-- Zaluto
+						["coord"] = { 24.1, 53.2, 863 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 49778,	-- Don't Go into the Light
+					},
+					{	-- Bad Juju
+						["questID"] = 49380,
+						["qg"] = 129165,	-- Guard Satao
+						["coord"] = { 63.1, 52.6, 863 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 49366,	-- Aid the Wounded
+					},
+					{	-- Bones for Protection
+						["questID"] = 48479,
+						["qg"] = 126079,	-- Koj'jun Deathwalker
+						["coord"] = { 38.9, 59.9, 863 },
+						["sourceQuests"] = {
+							48468,	-- Bwonsamdi's Deliverance
+							48473,	-- Respecting the Rites
+						},
+					},
+					{	-- Bwonsamdi's Deliverance
+						["questID"] = 48468,
+						["qg"] = 130481,	-- Shinga Deathwalker
+						["coord"] = { 39.0, 59.9, 863 },
+					},
+					{	-- Catch Me if you Can
+						["questID"] = 49781,
+						["qg"] = 130930,	-- Zaluto
+						["coord"] = { 24.1, 53.2, 863 },
+						["races"] = HORDE_ONLY,
+						["groups"] = {
+							i(155556),	-- Jin'Tiki's Signet
+							i(159046),	-- Loa Speaker's Footpads
+							i(159048),	-- Ritual Flayer's Treads
+							i(159047),	-- Death-Pledged Striders
+							i(159045),	-- Nazmani Warplate Boots
+						},
+						["sourceQuests"] = {
+							49779,	-- Bad To The Bone
+							49780,	-- Recovering Ancient Fire
+						},
+					},
+					{	-- Conduit Interruption
+						["questID"] = 48856,
+						["qg"] = 127215,	-- Shadow Hunter Da'jul
+						["coord"] = { 31.0, 52.0, 863 },
+						["races"] = HORDE_ONLY,
+						["sourceQuests"] = {
+							48825,	-- Power Denied
+							48823,	-- Projection Destruction
+						},
+					},
+					{	-- Crawg Free Zone
+						["questID"] = 49379,
+						["qg"] = 129164,	-- Chronicler Jabari
+						["coord"] = { 62.7, 53.5, 863 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 49370,	-- Rescue the Chronicler
+					},
+					{	-- Don't Go into the Light
+						["questID"] = 49778,
+						["qg"] = 131231,	-- Jin'Tiki
+						["coord"] = { 24.1, 53.1, 863 },
+						["races"] = HORDE_ONLY,
+						["sourceQuests"] = {
+							49776,	-- No Problem Tar Can't Solve
+							49777,	-- On The Run
+							49774,	-- Won't Leaf Him to Die
+						},
+					},
+					{	-- Earn Their Trust
+						["questID"] = 49378,
+						["qg"] = 129164,	-- Chronicler Jabari
+						["coord"] = { 62.7, 53.5, 863 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 49370,	-- Rescue the Chronicler
+					},
+					{	-- Halting the Empire's Fall
+						["questID"] = 50808,
+						["qg"] = 137113,	-- Rokhan
+						["coord"] = { 51.8, 65.5, 863 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 51244,	-- What Rots Beneath
+					},
+					{	-- Humbling the Terrors
+						["questID"] = 48855,
+						["qg"] = 127215,	-- Shadow Hunter Da'jul
+						["coord"] = { 31.0, 52.0, 863 },
+						["races"] = HORDE_ONLY,
+						["sourceQuests"] = {
+							48825,	-- Power Denied
+							48823,	-- Projection Destruction
+						},
+					},
+					{	-- Hunting Zardrax
+						["questID"] = 49314,
+						["qg"] = 122795,	-- Witch Doctor Kejabu
+						["coord"] = { 39.5, 43.8, 863 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 47250,	-- We'll Meet Again
+					},
+					{	-- It Seems You've Made a Friend
+						["questID"] = 49382,
+						["qg"] = 129164,	-- Chronicler Jabari
+						["coord"] = { 63.1, 52.7, 863 },
+						["races"] = HORDE_ONLY,
+						["groups"] = {
+							i(156566),	-- Dart
+						},
+						["sourceQuests"] = {
+							49380,	-- Bad Juju
+							49377,	-- Off With Her Head
+							-- are 49378 and 49379 also required?
+						},
+					},
+					{	-- Just Say No to Cannibalism
+						["questID"] = 47919,
+						["qg"] = 125024,	-- Kajosh
+						["coord"] = { 51.7, 33.2, 863 },
+						["sourceQuest"] = 47924,	-- Profanity Filter
+					},
+					{	-- Kel'vax's Home
+						["questID"] = 48478,
+						["qg"] = 126080,	-- Shinga Deathwalker
+						["coord"] = { 39.0, 59.9, 863 },
+						["groups"] = {
+							i(158943),	-- Nazmani Warplate Treads
+							i(158944),	-- Loa Speaker's Footwraps
+							i(158945),	-- Death-Pledged Treads
+							i(158946),	-- Ritual Flayer's Footpads
+							i(155519),	-- Loa Speaker's Cuffs
+							i(155343),	-- Ritual Flayer's Bindings
+							i(155521),	-- Death-Pledged Bracers
+							i(155341),	-- Nazmani Warplate Vambraces
+						},
+						["sourceQuests"] = {
+							48468,	-- Bwonsamdi's Deliverance
+							48473,	-- Respecting the Rites
+						},
+					},
+					{	-- Killing Cannibals
+						["questID"] = 47998,
+						["qg"] = 124933,	-- Kajosh
+						["coord"] = { 51.7, 33.2, 863 },
+						["sourceQuest"] = 47924,	-- Profanity Filter
+					},
+					{	-- Mawfiend Extermination
+						["questID"] = 47996,
+						["icon"] = "Interface\\Icons\\Ability_Warrior_OffensiveStance", -- Let's make the bonus objective icon look pretty
+					},
+					{	-- No Problem Tar Can't Solve
+						["questID"] = 49776,
+						["qg"] = 131231,	-- 
+						["coord"] = { 24.1, 53.1, 863 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 50933,	-- An Unfortunate Event
+					},
+					{	-- Off With Her Head
+						["questID"] = 49377,
+						["qg"] = 129165,	-- Guard Satao
+						["coord"] = { 63.1, 52.6, 863 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 49366,	-- Aid the Wounded
+						["groups"] = {
+							i(159092),	-- Grim Ritual Mace
+							i(159094),	-- Bloodsinger Wand
+							i(159089),	-- Amaki Scalper
+							i(159091),	-- Bloodrite Sticker
+							i(159093),	-- Marrow Drained Bonestaff
+							i(159090),	-- Crawgmother's Shortbow
+							i(159096),	-- Nagla's Headcracker
+							i(159095),	-- Bloodhunter Greatblade
+						},
+					},
+					{	-- Offer of Power
+						["questID"] = 48854,
+						["qg"] = 127216,	-- Zardrax the Empowerer
+						["coord"] = { 30.9, 52.0, 863 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 49314,	-- Hunting Zardrax
+					},
+					{	-- On the Run
+						["questID"] = 49777,
+						["qg"] = 130930,	-- Zaluto
+						["coord"] = { 24.1, 53.1, 863 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 50933,	-- An Unfortunate Event
+					},
+					{	-- Payback's a Lich
+						["questID"] = 48869,
+						["qg"] = 127215,	-- Shadow Hunter Da'jul
+						["coord"] = { 30.9, 52.1, 863 },
+						["races"] = HORDE_ONLY,
+						["groups"] = {
+							i(155378),	-- Zardax's Tattered Drape
+							i(155374),	-- Death Defier's Aegis
+							i(155375),	-- Ghoulish Blood Idol
+						},
+						["sourceQuests"] = {
+							48857,	-- All Hope is Lost
+							48856,	-- Conduit Interruption
+							48855,	-- Humbling the Terrors
+						},
+					},
+					{	-- Power Denied
+						["questID"] = 48825,
+						["qg"] = 127212,	-- Kal'dran
+						["coord"] = { 30.9, 52.0, 863 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 48854,	-- Offer of Power
+					},
+					{	-- Profanity Filter
+						["questID"] = 47924,
+						["qg"] = 124666,	-- Kajosh
+						["coord"] = { 55.1, 36.7, 863 },
+					},
+					{	-- Projection Destruction
+						["questID"] = 48823,
+						["qg"] = 127215,	-- Shadow Hunter Da'jul
+						["coord"] = { 31.0, 52.0, 863 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 48854,	-- Offer of Power
+					},
+					{	-- Recovering Ancient Fire
+						["questID"] = 49780,
+						["qg"] = 131231,	-- Jin'Tiki
+						["coord"] = { 24.1, 53.1, 863 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 49778,	-- Don't Go into the Light
+					},
+					{	-- Rescue the Chronicler
+						["questID"] = 49370,
+						["qg"] = 129165,	-- Guard Satao
+						["coord"] = { 63.1, 52.6, 863 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 49366,	-- Aid the Wounded
+					},
+					{	-- Respecting the Rites
+						["questID"] = 48473,
+						["qg"] = 130481,	-- Shinga Deathwalker
+						["coord"] = { 39.0, 59.9, 863 },
+					},
+					{	-- Shoak's on the Menu
+						["questID"] = 47925,
+						["qg"] = 125024,	-- Kajosh
+						["coord"] = { 51.7, 33.2, 863 },
+						["description"] = "You must complete this storyline for Shoak to appear in Gloom Hollow.",
+						["sourceQuest"] = 47924,	-- Profanity Filter
+						["groups"] = {
+							i(158957),	-- Death-Pledged Greaves
+							i(158966),	-- Death-Pledged Links
+							i(158956),	-- Loa Speaker's Pants
+							i(158965),	-- Loa Speaker's Sash
+							i(158955),	-- Nazmani Warplate Legguards
+							i(158964),	-- Nazmani Warplate Waistplate
+							i(158958),	-- Ritual Flayer's Trousers
+							i(158967),	-- Ritual Flayer's Waistband
+						},
+					},
+					{	-- Stopping Zardrax
+						["questID"] = 48852,
+						["sourceQuest"] = 48854,	-- Offer of Power
+					},
+					{	-- The Fall of Kel'vax
+						["questID"] = 48480,
+						["qg"] = 126080,	-- Shinga Deathwalker
+						["coord"] = { 39.0, 59.9, 863 },
+						["sourceQuests"] = {
+							48479,	-- Bones for Protection
+							48478,	-- Kel'vax's Home
+						},
+					},
+					{	-- The Underrot: Sealing G'huun's Corruption
+						["questID"] = 51302,
+						["qg"] = 137112,	-- Titan Keeper Hezrel
+						["coord"] = { 51.7, 65.7, 863 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 51244,	-- What Rots Beneath
+					},
+					{	-- Vial of Antidote
+						["objectID"] = 278197,
+						["coord"] = { 64.0, 50.3, 863 },
+						["groups"] = {
+							{	-- Aid the Wounded
+								["questID"] = 49366,
+								["sourceQuest"] = 50934,	-- A Chance Sighting
+							},
+						},
+					},
+					{	-- What Rots Beneath
+						["questID"] = 51244,
+						["qg"] = 140656,	-- Rokhan
+						["coord"] = { 50.5, 58.3, 863 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 50087,	-- Ateena's Fall
+					},
+					{	-- Won't Leaf Him to Die
+						["questID"] = 49774,
+						["qg"] = 131231,	-- Jin'Tiki
+						["coord"] = { 24.1, 53.1, 863 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 50933,	-- An Unfortunate Event
+					},
+
+					-- Crieve's List
+					{
+						["questID"] = 49484,	-- Offering to Bwonsamdi [The Necropolis]
+					},
+					{
+						["questID"] = 47530,	-- ???? [The Necropolis] (completed after soulbound, but not known)
+					},
+					{
+						["questID"] = 49313,	-- Wun'ju's Trove [Terrace of Sorrows]
+					},
+					{
+						["questID"] = 50888,	-- Urn of Ugussu [Terrace of Sorrows]
+					},
+					{
+						["questID"] = 48578,	-- There's No Eye in Skyterror
+						["groups"] = {
+							i(155377),	-- Drained Bone Band [Ring]
+							i(159074),	-- Jarkadiax's Other Eye [Trinket]
+						},
+					},
+					{
+						["questID"] = 48588,	-- Objective [Primal Wetlands]
+					},
 				}),
 			},
 		}),
