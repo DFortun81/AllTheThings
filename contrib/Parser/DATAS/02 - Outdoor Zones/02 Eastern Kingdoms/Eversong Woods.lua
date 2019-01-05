@@ -65,6 +65,13 @@ _.Zones =
 						["description"] = "You may only learn this pet once per character from a Battle Pet Trainer.|r"
 					}),
 				}),
+				n(-38, {	-- Profession
+					prof(356, { -- Fishing
+						["groups"] = {
+							i(6643),		-- Bloated Smallfish. He contains a Malachite & a Tiyerseye, but the rate to fish him is 1 to 2000-4000.
+						},
+					}),
+				}),
 				n(-17, {	-- Quests
 					o(181011, {	-- Magister Duskwither's Journal
 						qh(8891),	-- Abandoned Investigations

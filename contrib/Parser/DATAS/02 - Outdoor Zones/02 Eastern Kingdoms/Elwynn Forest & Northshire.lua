@@ -55,6 +55,13 @@ _.Zones =
 						i(89125),	-- Sack of Pet Supplies
 					}))),					
 				}),
+				n(-38, {	-- Profession
+					prof(356, { -- Fishing
+						["groups"] = {
+							i(6643),		-- Bloated Smallfish. He contains a Malachite & a Tiyerseye, but the rate to fish him is 1 to 2000-4000.
+						},
+					}),
+				}),
 				n(-17, {	-- Quests
 --[[				
 					qg(10616, qa( 5545)),	-- A Bundle of Trouble

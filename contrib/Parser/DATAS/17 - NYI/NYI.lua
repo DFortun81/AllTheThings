@@ -521,6 +521,7 @@ _.NeverImplemented =
 			un(1, i(17347)),	--
 			un(1, i(17409)),	-- Encrusted Crystal Fragment
 		}),
+		un(1, i(21243)),	-- Bloated Mightfish
 		un(1, i(132118)),	-- Aggramar's Blessing (Didnt make it out of beta)
 		un(1, i(134006)),	-- Dwyer's Spare Caber
 		un(1, i(134008)),	-- Simple Rosary of Light
