@@ -11,6 +11,8 @@ _.Zones =
 						53534 - when entering The Necropolis for the first time during "The Necropolis"
 						49695 - immediately after channeling on the drum finishes during "A Tribute For Death"
 						49367 - when returning to Zo'bal Ruins during "We'll Meet Again"
+						52294 - triggers with Krag'wa after accepting "The Last Witch Doctor of Krag'wa"
+						47531 - triggered when turning in "Krag'wa the Terrible"
 					]]--
 					h(ach(11868, {	-- The Dark Heart of Nazmir [Note: Quest line starts here and a few quests are in the zone.  So we want to make them stand out amongst the crowd.]
 						["groups"] = {
@@ -502,6 +504,28 @@ _.Zones =
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 49778,	-- Don't Go into the Light
 							},
+							{	-- Blood Purification
+								["questID"] = 49950,
+								["qg"] = 133941,	-- Minor Corruption
+								["coord"] = { 69.2, 33.7, 863 },
+								["races"] = HORDE_ONLY,
+								["sourceQuests"] = {
+									49938,	-- Corrupted Earth
+									49935,	-- How to Repair a Titan Keeper
+									49937,	-- Recovering Remnants
+								},
+							},
+							{	-- Bone Procession
+								["questID"] = 49941,
+								["qg"] = 131253,	-- Titan Keeper Hezrel
+								["coord"] = { 68.6, 35.0, 863 },
+								["races"] = HORDE_ONLY,
+								["sourceQuests"] = {
+									49938,	-- Corrupted Earth
+									49935,	-- How to Repair a Titan Keeper
+									49937,	-- Recovering Remnants
+								},
+							},
 							{	-- Bones for Protection
 								["questID"] = 48479,
 								["qg"] = 126079,	-- Koj'jun Deathwalker
@@ -543,6 +567,34 @@ _.Zones =
 									48823,	-- Projection Destruction
 								},
 							},
+							{	-- Containment Procedure
+								["questID"] = 49980,
+								["qg"] = 131253,	-- Titan Keeper Hezrel
+								["coord"] = { 72.5, 29.4, 863 },
+								["races"] = HORDE_ONLY,
+								["groups"] = {
+									i(159088),	-- Nazmani Hexblade
+									i(159085),	-- Ancient Loa-Blessed Mace
+									i(159083),	-- Degraded Empire Shortblade
+									i(159084),	-- Handscythe of the First City
+									i(159087),	-- Nazmani Longstaff
+									i(159082),	-- Fallen Nation Recurve
+									i(159081),	-- Fallen Nation Carver
+									i(159086),	-- Corrupted Tribe Headsmasher
+								},
+								["sourceQuests"] = {
+									49955,	-- Not Fit for This Plane
+									49957,	-- Protocol Recovery
+									49956,	-- Void is Prohibited
+								},
+							},
+							{	-- Corrupted Earth
+								["questID"] = 49938,
+								["qg"] = 131253,	-- Titan Keeper Hezrel
+								["coord"] = { 66.9, 38.8, 863 },
+								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 49932,	-- Slumber No More
+							},
 							{	-- Don't Go into the Light
 								["questID"] = 49778,
 								["qg"] = 131231,	-- Jin'Tiki
@@ -553,6 +605,13 @@ _.Zones =
 									49777,	-- On The Run
 									49774,	-- Won't Leaf Him to Die
 								},
+							},
+							{	-- How to Repair a Titan Keeper
+								["questID"] = 49935,
+								["qg"] = 131253,	-- Titan Keeper Hezrel
+								["coord"] = { 66.9, 38.8, 863 },
+								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 49932,	-- Slumber No More
 							},
 							{	-- Humbling the Terrors
 								["questID"] = 48855,
@@ -613,6 +672,17 @@ _.Zones =
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 50933,	-- An Unfortunate Event
 							},
+							{	-- Not Fit for This Plane
+								["questID"] = 49955,
+								["qg"] = 131253,	-- 
+								["coord"] = { 68.6, 35.0, 863 },
+								["races"] = HORDE_ONLY,
+								["sourceQuests"] = {
+									49950,	-- Blood Purification
+									49941,	-- Bone Procession
+									49949,	-- Unwelcome Undead
+								},
+							},
 							{	-- Offer of Power
 								["questID"] = 48854,
 								["qg"] = 127216,	-- Zardrax the Empowerer
@@ -662,6 +732,17 @@ _.Zones =
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 48854,	-- Offer of Power
 							},
+							{	-- Protocol Recovery
+								["questID"] = 49957,
+								["qg"] = 131253,	-- 
+								["coord"] = { 68.6, 35.0, 863 },
+								["races"] = HORDE_ONLY,
+								["sourceQuests"] = {
+									49950,	-- Blood Purification
+									49941,	-- Bone Procession
+									49949,	-- Unwelcome Undead
+								},
+							},
 							{	-- Recovering Ancient Fire
 								["questID"] = 49780,
 								["qg"] = 131231,	-- Jin'Tiki
@@ -669,10 +750,24 @@ _.Zones =
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 49778,	-- Don't Go into the Light
 							},
+							{	-- Recovering Remnants
+								["questID"] = 49937,
+								["qg"] = 131253,	-- Titan Keeper Hezrel
+								["coord"] = { 66.9, 38.8, 863 },
+								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 49932,	-- Slumber No More
+							},
 							{	-- Respecting the Rites
 								["questID"] = 48473,
 								["qg"] = 130481,	-- Shinga Deathwalker
 								["coord"] = { 39.0, 59.9, 863 },
+							},
+							{	-- Return to Gloom Hollow
+								["questID"] = 49985,
+								["qg"] = 131253,	-- Titan Keeper Hezrel
+								["coord"] = { 72.4, 29.3, 863 },
+								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 49980,	-- Return to Gloom Hollow
 							},
 							{	-- Shoak's on the Menu
 								["questID"] = 47925,
@@ -691,6 +786,13 @@ _.Zones =
 									i(158967),	-- Ritual Flayer's Waistband
 								},
 							},
+							{	-- Slumber No More
+								["questID"] = 49932,
+								["qg"] = 131978,	-- Lashk
+								["coord"] = { 67.4, 41.9 , 863 },
+								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 47602,	-- Ready For Action
+							},
 							{	-- Stopping Zardrax
 								["questID"] = 48852,
 								["sourceQuest"] = 48854,	-- Offer of Power
@@ -702,6 +804,28 @@ _.Zones =
 								["sourceQuests"] = {
 									48479,	-- Bones for Protection
 									48478,	-- Kel'vax's Home
+								},
+							},
+							{	-- Unwelcome Undead
+								["questID"] = 49949,
+								["qg"] = 131253,	-- Titan Keeper Hezrel
+								["coord"] = { 68.6, 35.0, 863 },
+								["races"] = HORDE_ONLY,
+								["sourceQuests"] = {
+									49938,	-- Corrupted Earth
+									49935,	-- How to Repair a Titan Keeper
+									49937,	-- Recovering Remnants
+								},
+							},
+							{	-- Void is Prohibited
+								["questID"] = 49956,
+								["qg"] = 131253,	-- 
+								["coord"] = { 68.6, 35.0, 863 },
+								["races"] = HORDE_ONLY,
+								["sourceQuests"] = {
+									49950,	-- Blood Purification
+									49941,	-- Bone Procession
+									49949,	-- Unwelcome Undead
 								},
 							},
 							{	-- Won't Leaf Him to Die
