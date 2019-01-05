@@ -122,14 +122,18 @@ _.Achievements =
 							},
 						},
 					},
-					ach(2039),		-- Better Off Dred
+					{	-- Better Off Dred
+						["achievementID"] = 2039,	-- Better Off Dred
+					},
 					{	-- Brann Spankin' New
 						["achievementID"] = 2154,	-- Brann Spankin' New
 					},
 					{	-- Chaos Theory
 						["achievementID"] = 2037,	-- Chaos Theory
 					},
-					ach(2151),		-- Consumption Junction
+					{	-- Consumption Junction
+						["achievementID"] = 2151,	-- Consumption Junction
+					},
 					{	-- Defenseless
 						["achievementID"] = 1816,	-- Defenseless
 					},
@@ -251,18 +255,48 @@ _.Achievements =
 							},
 						},
 					},
-					ach(493, {		-- Heroic: Drak'Tharon Keep
-						crit(1),		-- Trollgore
-						crit(2),		-- Novos the Summoner
-						crit(3),		-- King Dred
-						crit(4),		-- The Prophet Tharon'ja
-						ach(482, {		-- Drak'Tharon Keep
-							crit(1),		-- Trollgore
-							crit(2),		-- Novos the Summoner
-							crit(3),		-- King Dred
-							crit(4),		-- The Prophet Tharon'ja
-						}),
-					}),
+					{	-- Heroic: Drak'Tharon Keep
+						["achievementID"] = 493,
+						["g"] = {
+							{	-- King Dred
+								["achievementID"] = 493,	-- Heroic: Drak'Tharon Keep
+								["criteriaID"] = 3,	-- King Dred
+							},
+							{	-- Novos the Summoner
+								["achievementID"] = 493,	-- Heroic: Drak'Tharon Keep
+								["criteriaID"] = 2,	-- Novos the Summoner
+							},
+							{	-- The Prophet Tharon'ja
+								["achievementID"] = 493,	-- Heroic: Drak'Tharon Keep
+								["criteriaID"] = 4,	-- The Prophet Tharon'ja
+							},
+							{	-- Trollgore
+								["achievementID"] = 493,	-- Heroic: Drak'Tharon Keep
+								["criteriaID"] = 1,	-- Trollgore
+							},
+							{	-- Drak'Tharon Keep
+								["achievementID"] = 482,
+								["g"] = {
+									{	-- King Dred
+										["achievementID"] = 482,	-- Drak'Tharon Keep
+										["criteriaID"] = 3,	-- King Dred
+									},
+									{	-- Novos the Summoner
+										["achievementID"] = 482,	-- Drak'Tharon Keep
+										["criteriaID"] = 2,	-- Novos the Summoner
+									},
+									{	-- The Prophet Tharon'ja
+										["achievementID"] = 482,	-- Drak'Tharon Keep
+										["criteriaID"] = 4,	-- The Prophet Tharon'ja
+									},
+									{	-- Trollgore
+										["achievementID"] = 482,	-- Drak'Tharon Keep
+										["criteriaID"] = 1,	-- Trollgore
+									},
+								},
+							},
+						},
+					},
 					{	-- Heroic: Gundrak
 						["achievementID"] = 495,
 						["g"] = {
@@ -815,7 +849,9 @@ _.Achievements =
 						["achievementID"] = 1868,	-- Make It Count
 					},
 					ach(2156),		-- My Girl Loves to Skadi All the Time
-					ach(2057),		-- Oh Novos!
+					{	-- Oh Novos!
+						["achievementID"] = 2057,	-- Oh Novos!
+					},
 					ach(1919),		-- On The Rocks
 					{	-- Respect Your Elders
 						["achievementID"] = 2038,	-- Respect Your Elders

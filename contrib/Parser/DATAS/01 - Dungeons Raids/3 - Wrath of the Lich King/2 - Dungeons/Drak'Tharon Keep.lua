@@ -137,6 +137,10 @@ _.Instances =
 							}),
 						}),
 						cr(26630, e(588, { 	-- Trollgore
+							{	-- Drak'Tharon Keep: Trollgore
+								["achievementID"] = 482,	-- Drak'Tharon Keep
+								["criteriaID"] = 1,	-- Trollgore
+							},
 							i(35618),	-- Troll Butcherer
 							i(35620),	-- Berserker's Horns
 							i(37715),	-- Cowl of the Dire Troll
@@ -146,6 +150,10 @@ _.Instances =
 							i(37712),	-- Terrace Defence Boots
 						})),
 						cr(26631, e(589, { 	-- Novos the Summoner
+							{	-- Drak'Tharon Keep: Novos the Summoner
+								["achievementID"] = 482,	-- Drak'Tharon Keep
+								["criteriaID"] = 2,	-- Novos the Summoner
+							},
 							i( 37721),	-- Cursed Lich Blade
 							i( 35630),	-- Summoner's Stone Gavel
 							i( 37718),	-- Temple Crystal Fragment
@@ -156,6 +164,10 @@ _.Instances =
 							i( 40490),	-- Necromantic Wristguards
 						})),
 						cr(27483, e(590, { 	-- King Dred
+							{	-- Drak'Tharon Keep: King Dred
+								["achievementID"] = 482,	-- Drak'Tharon Keep
+								["criteriaID"] = 3,	-- King Dred
+							},
 							i( 35633),	-- Staff of the Great Reptile
 							i( 37726),	-- King Dred's Helm
 							i( 35634),	-- Scabarous-Hide Helm
@@ -166,6 +178,10 @@ _.Instances =
 							i( 37723),	-- Incisor Fragment
 						})),
 						cr(26632, e(591, {	-- The Prophet Tharon'ja
+							{	-- Drak'Tharon Keep: The Prophet Tharon'ja
+								["achievementID"] = 482,	-- Drak'Tharon Keep
+								["criteriaID"] = 4,	-- The Prophet Tharon'ja
+							},
 							i(37733),	-- Mojo Masked Crusher
 							i(35636),	-- Tharon'ja's Aegis
 							i(35638),	-- Helmet of Living Flesh
@@ -266,6 +282,13 @@ _.Instances =
 								}),
 							}),
 							cr(26630, e(588, { 	-- Trollgore
+								{	-- Consumption Junction
+									["achievementID"] = 2151,	-- Consumption Junction
+								},
+								{	-- Heroic: Drak'Tharon Keep: Trollgore
+									["achievementID"] = 493,	-- Heroic: Drak'Tharon Keep
+									["criteriaID"] = 1,	-- Trollgore
+								},
 								i(35618),	-- Troll Butcherer
 								i(35620),	-- Berserker's Horns
 								i(37715),	-- Cowl of the Dire Troll
@@ -275,6 +298,13 @@ _.Instances =
 								i(37712),	-- Terrace Defence Boots
 							})),
 							cr(26631, e(589, { 	-- Novos the Summoner
+								{	-- Heroic: Drak'Tharon Keep: Novos the Summoner
+									["achievementID"] = 493,	-- Heroic: Drak'Tharon Keep
+									["criteriaID"] = 2,	-- Novos the Summoner
+								},
+								{	-- Oh Novos!
+									["achievementID"] = 2057,	-- Oh Novos!
+								},
 								i( 37721),	-- Cursed Lich Blade
 								i( 35630),	-- Summoner's Stone Gavel
 								i( 37718),	-- Temple Crystal Fragment
@@ -285,6 +315,13 @@ _.Instances =
 								i( 40490),	-- Necromantic Wristguards
 							})),
 							cr(27483, e(590, { 	-- King Dred
+								{	-- Better Off Dred
+									["achievementID"] = 2039,	-- Better Off Dred
+								},
+								{	-- Heroic: Drak'Tharon Keep: King Dred
+									["achievementID"] = 493,	-- Heroic: Drak'Tharon Keep
+									["criteriaID"] = 3,	-- King Dred
+								},
 								i( 35633),	-- Staff of the Great Reptile
 								i( 37726),	-- King Dred's Helm
 								i( 35634),	-- Scabarous-Hide Helm
@@ -295,9 +332,13 @@ _.Instances =
 								i( 37723),	-- Incisor Fragment
 							})),
 							cr(26632, e(591, {	-- The Prophet Tharon'ja
-								{
+								{	-- Champion of the Frozen Wastes
 									["achievementID"] = 1658,	-- Champion of the Frozen Wastes
 									["criteriaID"] = 13,		-- The Prophet Tharon'ja slain
+								},
+								{	-- Heroic: Drak'Tharon Keep: The Prophet Tharon'ja
+									["achievementID"] = 493,	-- Heroic: Drak'Tharon Keep
+									["criteriaID"] = 4,	-- The Prophet Tharon'ja
 								},
 								i(37733),	-- Mojo Masked Crusher
 								i(35636),	-- Tharon'ja's Aegis
