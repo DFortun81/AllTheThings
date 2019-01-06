@@ -75,13 +75,13 @@ _.Zones =
 							i(124556, {	-- Baleful Spaulders
 								["groups"] = {
 									i(124587),	-- Felcast Mantle
-									--i(128349),	-- Felcast Mantle [Warforged]
+									i(128349),	-- Felcast Mantle [Warforged]
 									i(124588),	-- Bladefang Spaulders
-									--i(128350),	-- Bladefang Spaulders [Warforged]
+									i(128350),	-- Bladefang Spaulders [Warforged]
 									i(124589),	-- Axeclaw Spaulders
-									--i(128351),	-- Axeclaw Spaulders [Warforged]
+									i(128351),	-- Axeclaw Spaulders [Warforged]
 									i(124590),	-- Felbane Shoulderguard
-									--i(128352),	-- Felbane Shoulderguard [Warforged]
+									i(128352),	-- Felbane Shoulderguard [Warforged]
 								},
 								["crs"] = {
 									96130,	-- Ravenspeaker Thelnaas <Order of the Awakened>
@@ -90,13 +90,13 @@ _.Zones =
 							i(128348, {	-- Baleful Spaulders
 								["groups"] = {
 									i(124587),	-- Felcast Mantle
-									--i(128349),	-- Felcast Mantle [Warforged]
+									i(128349),	-- Felcast Mantle [Warforged]
 									i(124588),	-- Bladefang Spaulders
-									--i(128350),	-- Bladefang Spaulders [Warforged]
+									i(128350),	-- Bladefang Spaulders [Warforged]
 									i(124589),	-- Axeclaw Spaulders
-									--i(128351),	-- Axeclaw Spaulders [Warforged]
+									i(128351),	-- Axeclaw Spaulders [Warforged]
 									i(124590),	-- Felbane Shoulderguard
-									--i(128352),	-- Felbane Shoulderguard [Warforged]
+									i(128352),	-- Felbane Shoulderguard [Warforged]
 								},
 								["crs"] = {
 									96130,	-- Ravenspeaker Thelnaas <Order of the Awakened>

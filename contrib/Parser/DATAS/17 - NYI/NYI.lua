@@ -70,7 +70,6 @@ _.NeverImplemented =
 				un(1, i(157642)),	-- Demonologist's Staff
 				un(1, i(157641)),	-- Destructive Spellstaff
 			}),
-			un(1, i(128349)),	-- Felcast Mantle [Warforged]
 			un(1, i(6243)),		-- Green Woolen Robe
 			un(1, i(78017)),	-- Replica Magister's Leggings (Cloth)
 			un(1, i(4989)),		-- Mage Dragon Robe (intended to be quest reward, never made it to live?)
@@ -169,7 +168,6 @@ _.NeverImplemented =
 				un(1, i(150600)),	-- Outlaw's Cutlass
 				un(1, i(157637)),	-- Swaggering Cutlass
 			}),
-			un(1, i(128350)),	-- Bladefang Spaulders [Warforged]
 			un(1, i(14550)),	-- Bladebane Armguards (Leather)
 			un(1, i(12104)),	-- Brindlethorn Tunic (Leather)
 			un(1, i(5821)),		-- Darkstalker Boots (Leather)
@@ -309,7 +307,6 @@ _.NeverImplemented =
 				-- Possible Unused Level 120/Lv 120 Classtrial
 				un(1, i(150642)),	-- Trailseeker Spaulders
 			}),
-			un(1, i(128351)),	-- Axeclaw Spaulders [Warforged]
 			un(1, i(12105)),	-- Pridemail Leggings
 			un(1, i(37420)),	-- Sharkproof Boots
 			un(1, i(37433)),	-- Layered Scale Boots
@@ -404,7 +401,6 @@ _.NeverImplemented =
 				un(1, i(154044)), -- Oathsworn Defender Idol
 				un(1, i(154047)), -- Oathsworn Defender Stone
 			}),
-			un(1, i(128352)),	-- Felbane Shoulderguard [Warforged]
 			un(1, i(27718)),	-- Aldor Defender's Legplates
 			un(1, i(12106)),	-- Boulderskin Breastplate
 			un(1, i(25797)),	-- Crushing Grasp
