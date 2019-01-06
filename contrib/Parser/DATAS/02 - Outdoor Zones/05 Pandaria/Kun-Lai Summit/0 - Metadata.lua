@@ -11,7 +11,12 @@ _.Zones =
 				["lvl"] = 82,
 				["achievementID"] = 6976,
 				["maps"] = {
+					380,	-- Howlingwind Cavern
 					381,	-- Pranksters' Hollow
+					382,	-- Knucklethump Hole
+					383,	-- The Deeper (upper)
+					384,	-- The Deeper (lower)
+					385,	-- Tomb of Conquerors
 					386,	-- Ruins of Korune (Upper Floor)
 					387,	-- Ruins of Korune (Lower Floor)
 					434,	-- The Ancient Passage
