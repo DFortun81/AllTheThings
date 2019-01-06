@@ -146,6 +146,7 @@ _.Zones =
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 									i(161030),	-- Vicious Scorpidsting Sandals
 								}),
+								["coord"] = { 32.8, 65.1 },
 								["questID"] = 51076,
 							}),
 							n(136338, {	-- Sirokar
