@@ -1334,6 +1334,9 @@ AllTheThings.Locales.enUS = {
 		[-601] = GetSpellInfo(262971),											-- Communing with Jani [Snapjaw Tail]
 		[-650] = "Quest Items",													-- Quest Items
 		
+-- Pet Battles
+		[-700] = "Celestial Tournament",										-- Celestial Tournament (Scenario)
+		
 		[-1000] = WARDROBE_SETS, 												-- Sets
 		[-1001] = "The Black Vault",
 
