@@ -3,7 +3,7 @@
 -----------------------------------------------
 _.PVP =
 {
-	n(-6015, { -- Rewards
+	n(-242, { -- Unrated
 		i(135539, {	-- Crate of Battlefield Goods 15-39
 			["groups"] = {
 				i(134643),	-- Auxiliary's Cuffs*
