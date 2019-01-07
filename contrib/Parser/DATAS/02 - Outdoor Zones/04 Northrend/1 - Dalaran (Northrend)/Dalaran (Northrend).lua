@@ -1588,6 +1588,7 @@ _.Zones =
 						["qg"] = 28703,	-- Quest Giver: Linzy Blackbolt <Alchemy Trainer>
 						["coord"] = { 42.4, 32.0 },
 						["description"] = "This quest is currently broken. Ticket a GM and they can autocomplete the quest for you to get you the recipe.\n\nNOTE FOR BLUES: Please fix this so that we stop bugging Customer Support.\n  - Crieve",
+						["requireSkill"] = 171, -- Alchemy
 					},
 					q(12853, {	-- Luxurious Getaway!
 						["qg"] = 30490,	-- Rin Duoctane

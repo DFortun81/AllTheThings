@@ -104,6 +104,15 @@ _.Zones =
 									["questID"] = 51633,	-- Make Loh Go
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								},
+								{	-- Ordnance Orders [A]
+									["questID"] = 52939,	-- Ordnance Orders [A]
+									["groups"] = {	
+										i(166668),	-- Battalion Veteran's Greatcloak
+									},
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
+									["races"] = ALLIANCE_ONLY,
+									--Note!! 10/16 offered Shoalbreach Waistguard
+								},
 								{	-- Pest Remover Mk. II
 									["questID"] = 51806,	-- Pest Remover Mk. II
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
