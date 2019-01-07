@@ -1068,6 +1068,9 @@ _.NeverImplemented =
 			un(1, i(127852)),	-- Unknown - was under WoD>1Handed Swords
 			un(1, i(165273)),	-- Unknown - was under Legion>1Handed Swords
 		}),
+		-- polearm
+			un(1, i(158504)),	-- Whaler's Pike
+			un(1, i(158563)),	-- Tomb-Rustler's Polearm
 		n(-342, { -- Staves
 			un(1, i(132474)),	-- Unknown - was under Legion>Staves
 			un(1, i(132475)),	-- Unknown - was under Legion>Staves
