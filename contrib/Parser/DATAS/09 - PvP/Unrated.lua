@@ -736,7 +736,9 @@ _.PVP =
 		-- S2 Items Aspirant Items
 		-- Horde
 		un(1, i(165196)),	-- Sinister Aspirant's Pike
+		un(1, i(165190)),	-- Sinister Aspirant's Runeaxe
 		-- Alliance
 		un(1, i(165202)),	-- Sinister Aspirant's Pike
+		un(1, i(166476)),	-- Sinister Aspirant's Runeaxe
 	}),
 };

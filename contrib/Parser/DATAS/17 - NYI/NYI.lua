@@ -11,6 +11,10 @@ _.NeverImplemented =
 		un(1, i(163121)),	-- Vicious War Basilisk (Horde, Red, probably will be added in a later patch)
 		un(1, i(163122)),	-- Vicious War Basilisk (Ally, Blue, probably will be added in a later patch)
 		un(1, i(157622)),	-- Silverscope Longrifle ( Level 20 Kul Tiran Hunter Start Gear?)
+		un(1, i(157644)),	-- Greataxe of Fury (Lv20 Kul Tiran Warrior Start Gear?)
+		un(1, i(166680)),	-- Echo of Elune (maybe you will able to get it with a hotfix?)
+		un(1, i(166358)),	-- Proper Parrot/ Proper Parrot was supposed to be added in 8.1, tied to the quest Be More Uniform.A few days after 8.1 went live, it was removed from the pet journal. Nobody obtained it from the quest.
+		un(1, i(165845)),	-- Mechanical Feather. Most likely same as above.
 	}),
 	n(-220, { -- Class
 		cl(12, { -- DH
@@ -532,6 +536,8 @@ _.NeverImplemented =
 		un(1, i(134824)),	-- "Sir Pugsington" Costume
 		un(1, i(137602)),	-- Unknown
 		un(1, i(151060)),	--
+		un(1, i(158782)),	-- Warchief's Prideful
+		un(1, i(158841)),	-- High King's Pride
 		un(1, i(140787)),	--
 		un(1, i(140921)),	--
 		un(1, i(132107)),	--
@@ -730,6 +736,9 @@ _.NeverImplemented =
 		p(1751),
 	}))),
 		un(1, i(130145)), -- Unknown
+		un(1, i(163559)),	-- Queen Cobra. Old Magni Rep Rewards, they added it via a different item
+		un(1, i(163557)),	-- Gigan Tarantula. Old Magni Rep Rewards, they added it via a different item
+		un(1, i(163556)),	-- Mechanized Gulper. Old Magni Rep Rewards, they added it via a different item
 		un(1, i(152879)), -- Reuuse me
 		un(1, i(152880)), -- Reuuse me
 		un(1, i(154703)), -- Hot Air Baloon
@@ -1045,6 +1054,10 @@ _.NeverImplemented =
 			un(1, i(108779)),	-- Unknown
 			un(1, i(108780)),	-- Unknown
 			un(1, i(108781)),	-- Unknown
+			un(1, i(159483)),	--Unknown
+			un(1, i(159484)),	--Unknown
+			un(1, i(164967)),	--Unknown
+			un(1, i(165264)),	--Unknown
 			un(1, i(109319)),	-- 6.0 QA Combat Test Agility 1h Axe 2
 			un(1, i(109502)),	-- 6.0 QA Combat Test Agility 1h Axe
 			un(1, i(109536)),	-- 6.0 QA Combat Test Offhand Agility Axe 2
@@ -1124,6 +1137,7 @@ _.NeverImplemented =
 			un(1, i(134563)),	-- Unknown
 			un(1, i(108782)),	-- Unknown
 			un(1, i(109519)),	-- Unknown
+			un(1, i(165265)),	-- Unknown
 		}),
 		n(-337, { -- Two Handed Swords
 			un(1, i(139621)),	-- The Watcher's Hammer. Used for Lost Edicts of the Watcher Paladin Appearance, actual appearance is gained via a different item
@@ -1147,6 +1161,9 @@ _.NeverImplemented =
 			un(1, i(109373)),	-- 6.0 QA Combat Test Strength 2h Sword
 			un(1, i(122747)),	-- Unknown
 		}),
+		-- wand
+		un(1, i(161924)),	-- Seapriest's Wand (never addedd)
+		un(1, i(161926)),	-- Talanji's Salutary Scepter (never added)
 		n(-340, { -- War Glaives
 			un(1, i(129735)), 	-- Verus
 			un(1, i(129736)), 	-- Verus

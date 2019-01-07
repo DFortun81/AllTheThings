@@ -79,6 +79,20 @@ _.PVP =
 					},
 				},
 			},
+			{	-- Recipes
+				["filter"] = 200,	-- Recipes
+				["g"] = {
+					{	-- Pattern: Imbued Silkweave Epaulets (Rank 3)
+						["itemID"] = 137975,	-- Pattern: Imbued Silkweave Epaulets
+						["description"] = "This has a CHANCE to drop from any rated battleground win.",
+						["requireSkill"] = 197,	-- Tailoring
+					},
+					i(123950, { -- Recipe: Demonsteel Pauldrons (Rank 3)
+						["description"] = "This has a CHANCE to drop from any rated battleground win.",
+						["requireSkill"] = 164, -- Blacksmithing
+					}),
+				},
+			},
 			{	-- Gold Strong Box - Rated Win (A)
 				["itemID"] = 165714,	-- Gold Strong Box - Rated Win (A)
 				["g"] = bubbleDown({["modID"] = 8}, {
@@ -1145,15 +1159,9 @@ _.PVP =
 											},
 										}),
 			},
-			{	-- Pattern: Imbued Silkweave Epaulets (Rank 3)
-				["itemID"] = 137975,	-- Pattern: Imbued Silkweave Epaulets
-				["description"] = "This has a CHANCE to drop from any rated battleground win.",
-				["requireSkill"] = 197,	-- Tailoring
+			{	-- Quartermaster's Coin
+				["itemID"] = 163827,	-- -- Quartermaster's Coin. Given on a failed Bonusroll in Rated PVP
 			},
-			i(123950, { -- Recipe: Demonsteel Pauldrons (Rank 3)
-				["description"] = "This has a CHANCE to drop from any rated battleground win.",
-				["requireSkill"] = 164, -- Blacksmithing
-			}),
 			{	-- Reins of the Onyx War Hyena
 				["itemID"] = 166417,	-- Reins of the Onyx War Hyena
 				["u"] = 1,	-- Presumably Random Win from any rated Bracket in Season 2, but unclear for now and marked as unobtainable
