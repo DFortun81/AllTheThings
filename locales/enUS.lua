@@ -492,6 +492,7 @@ AllTheThings.Locales.enUS = {
 		[-224] = "Interface\\Icons\\ClassIcon_DemonHunter", 					-- Demon Hunter
 		[-225] = "Interface\\Icons\\spell_lightning_lightningbolt01",			-- Elemental Bonds
 		[-226] = "Interface\\ICONS\\INV_Misc_Map02",							-- World Drops
+		[-227] = "Interface\\ICONS\\spell_holy_divinepurpose",					-- Victory
 		[-228] = "Interface\\Minimap\\Tracking\\Flightmaster",					-- Flight Paths
 		[-230] = "Interface\\Icons\\achievement_legionpvp2tier3",				-- Conquest
 		[-231] = "Interface\\Icons\\Spell_Shadow_DeathScream",
