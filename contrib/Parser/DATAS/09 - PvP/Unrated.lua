@@ -740,5 +740,6 @@ _.PVP =
 		-- Alliance
 		un(1, i(165202)),	-- Sinister Aspirant's Pike
 		un(1, i(166476)),	-- Sinister Aspirant's Runeaxe
+		un(1, i(1665208)),	-- Sinister Aspirant's Longbow
 	}),
 };

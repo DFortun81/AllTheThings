@@ -1160,6 +1160,7 @@ _.NeverImplemented =
 			un(1, i(108806)),	-- Unknown, tagged as 2Hand Sword
 			un(1, i(109373)),	-- 6.0 QA Combat Test Strength 2h Sword
 			un(1, i(122747)),	-- Unknown
+			un(1, i(165274)),	-- Unknown
 		}),
 		-- wand
 		un(1, i(161924)),	-- Seapriest's Wand (never addedd)
