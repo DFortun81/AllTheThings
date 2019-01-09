@@ -186,6 +186,7 @@ _.WorldDrops =
 					i(118801),	-- Spire of Autumn
 				}),			
 				n(-332, { -- Shield
+					un(7, i(55433)),	-- Steelgrill Shield
 					i(106430),	-- Rimeplate Shield
 					i(106463),	-- Rockspine Shield
 					i(106496),	-- Shardback Shield
@@ -225,6 +226,7 @@ _.WorldDrops =
 					i(118803),	-- Kihrawr's Scratching Post
 					i(118804),	-- Starrgo's Walking Stick
 					i(118805),	-- Caniki's Cane of Command
+					un(7, i(25173)),	-- Master's Bo Staff
 				}),
 				n(-338, { -- 1H Swords
 					i(116488),	-- Lunarglow Sword
