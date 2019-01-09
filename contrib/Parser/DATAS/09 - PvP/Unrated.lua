@@ -737,8 +737,10 @@ _.PVP =
 		-- Horde
 		un(1, i(165196)),	-- Sinister Aspirant's Pike
 		un(1, i(165190)),	-- Sinister Aspirant's Runeaxe
+		un(1, i(165193)),	-- Sinister Aspirant's Warglaive
 		-- Alliance
 		un(1, i(165202)),	-- Sinister Aspirant's Pike
+		un(1, i(165204)),	-- Sinister Aspirant's Warglaive
 		un(1, i(166476)),	-- Sinister Aspirant's Runeaxe
 		un(1, i(1665208)),	-- Sinister Aspirant's Longbow
 	}),

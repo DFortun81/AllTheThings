@@ -1162,14 +1162,18 @@ _.NeverImplemented =
 			un(1, i(122747)),	-- Unknown
 			un(1, i(165274)),	-- Unknown
 		}),
-		-- wand
-		un(1, i(161924)),	-- Seapriest's Wand (never addedd)
-		un(1, i(161926)),	-- Talanji's Salutary Scepter (never added)
+		n(-341, { -- Wands
+			un(1, i(161924)),	-- Seapriest's Wand (never addedd)
+			un(1, i(161926)),	-- Talanji's Salutary Scepter (never added)
+		}),
 		n(-340, { -- War Glaives
 			un(1, i(129735)), 	-- Verus
 			un(1, i(129736)), 	-- Verus
+			un(1, i(158580)),	-- Loa-Claimer's Wariglaives
 			un(1, i(151138)), 	-- Warglaive of Azzinoth [This version not implemented; was testing for transmog]
 			un(1, i(129737)), 	-- Verus
+			un(1, i(165682)),	-- Unknown
+			un(1, i(164760)),	-- Illidari Warglaives (Lv100 boosted gear)
 		}),
 	un(1, i(80980)),	-- Axe of Aborted Deforestation (Never made it to Live, yet into our Appearances Tab)
 	un(1, i(80983)),	-- Extravagant Tree Chopper (Never made it to Live, yet into our Appearances Tab)

@@ -167,6 +167,9 @@ _.Zones =
 								["questID"] = 50637,
 							}),
 							n(134745, {	-- Skycarver Krakit
+								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+									i(160980),	-- Skycarver Warglaive
+								}),
 								["questID"] = 50686,
 							}),
 							n(136304, {	-- Songstress Nahjeen
