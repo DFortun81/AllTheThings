@@ -2552,6 +2552,18 @@ _.PVP =
 					{	-- Sinister Gladiator's Cloak
 						["itemID"] = 165060,	-- Sinister Gladiator's Cloak
 					},
+					{	-- Warlord's Trophy Dread Challenger
+						["itemID"] = 164584,	-- Warlord's Trophy Dread Challenger
+					},
+					{	-- Warlord's Trophy Dread Rival
+						["itemID"] = 164585,	-- Warlord's Trophy Dread Rival
+					},
+					{	-- Warlord's Trophy Dread Duelist
+						["itemID"] = 164586,	-- Warlord's Trophy Dread Duelist
+					},
+					{	-- Warlord's Trophy Dread Elite
+						["itemID"] = 164587,	-- Warlord's Trophy Dread Elite
+					},
 				}),
 			},
 		},

@@ -257,7 +257,6 @@ _.WorldDrops =
 					i(25170),	-- Rattan Bo Staff
 					i(25171),	-- Straight Hardwood Staff
 					i(25172),	-- Jinbali Warp-Staff
-					i(25173),	-- Master's Bo Staff
 					i(25174),	-- Hanbo Staff
 					i(25175),	-- Demoniac Longstaff
 					i(25176),	-- Taiji Quarterstaff

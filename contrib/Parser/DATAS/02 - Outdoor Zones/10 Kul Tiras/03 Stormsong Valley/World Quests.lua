@@ -104,6 +104,14 @@ _.Zones =
 									["questID"] = 51633,	-- Make Loh Go
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								},
+								{	-- Ordnance Orders [A]
+									["questID"] = 52939,	-- Ordnance Orders [A]
+									--["groups"] = {	
+									--	i(166668),	-- Battalion Veteran's Greatcloak
+									--},	-- Random after all
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
+									["races"] = ALLIANCE_ONLY,
+								},
 								{	-- Pest Remover Mk. II
 									["questID"] = 51806,	-- Pest Remover Mk. II
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
@@ -239,6 +247,7 @@ _.Zones =
 								}),
 							},
 						}),
+						i(166668),	-- Battalion Veteran's Greatcloak
 						i(158092),	-- Colscale Cudgel
 						i(159819),	-- Coldscale Lantern
 						i(158098),	-- Coralshell Halberd

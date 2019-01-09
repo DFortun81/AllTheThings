@@ -15,12 +15,6 @@ _.ExpansionFeatures =
 						i(164367),	-- Plundered Blue Captain's Hat
 						i(164368),	-- Plundered Crimson Captain's hat
 						i(164369),	-- Plundered Pirate Admiral's Bicorne
-						i(166836),	-- Frosthoof Gloves
-						i(166835),	-- Frosthood Waistcord
-						i(166840),	-- Winterscale Spaulders
-						i(166839),	-- Winterscale Waistguard
-						i(166837),	-- Sleetguard Greatbelt
-						i(166838),	-- Sleetguard Warboots
 						-- These seemed to be removed in 8.1
 						--The next four items will be marked as NYI in the event that they are hotfixed or added in the future
 						--and people can report that they are dropping.
@@ -45,28 +39,34 @@ _.ExpansionFeatures =
 							["description"] = "This item was removed from the game database in 8.1.\nIf you get this as a drop please report to the ATT Discord!.",
 						},
 						n(-43, {	-- Cloth
-							n(-3315, {	-- Spider Acolyte
-								["groups"] = {
-									i(164476),	-- Spider Acolyte's Cowl
-									i(164481),	-- Spider Acolyte's Amice
-									i(164479),	-- Spider Acolyte's Robes
-									i(164482),	-- Spider Acolyte's Wristwraps
-									i(164477),	-- Spider Acolyte's Handwraps
-									i(164475),	-- Spider Acolyte's Cord
-									i(164478),	-- Spider Acolyte's Leggings
-									i(164480),	-- Spider Acolyte's Anklewraps
-								},
+							n(-3340, {	-- Dark Animator
+								i(166828),	-- Dark Animator's Cowl
+								i(166825),	-- Dark Animator's Mantle
+								i(166824),	-- Dark Animator's Robe
+								i(166829),	-- Dark Animator's Bracers
+								i(166827),	-- Dark Animator's Gloves
+								i(166822),	-- Dark Animator's Belt
+								i(166826),	-- Dark Animator's Pants
+								i(166823),	-- Dark Animator's Boots
 							}),
-							n(-3316, {	-- Hydraxian
+							n(-3341, {	-- Duskhaven
+								i(166844),	-- Duskhaven Top Hat
+								i(166831),	-- Duskhaven Dress
+								i(166833),	-- Duskhaven Jacket
+								i(166834),	-- Duskhaven Breeches
+								i(166832),	-- Duskhaven Boots
+								i(166830),	-- Duskhaven Slippers
+							}),
+							n(-3318, {	-- Faceless Follower
 								["groups"] = {
-									i(164412),	-- Hydraxian Cover
-									i(164417),	-- Hydraxian Mantle
-									i(164415),	-- Hydraxian Robes
-									i(164418),	-- Hydraxian Armbands
-									i(164413),	-- Hydraxian Handwraps
-									i(164411),	-- Hydraxian Waistcord
-									i(164414),	-- Hydraxian Legwraps
-									i(164416),	-- Hydraxian Slippers
+									i(164484),	-- Faceless Follower's Guise
+									i(164489),	-- Faceless Follower's Mantle
+									i(164487),	-- Faceless Follower's Vestments
+									i(164490),	-- Faceless Follower's Armbands
+									i(164485),	-- Faceless Follower's Gloves
+									i(164483),	-- Faceless Follower's Waistcord
+									i(164486),	-- Faceless Follower's Legwraps
+									i(164488),	-- Faceless Follower's Sandals
 								},
 							}),
 							n(-3317, {	-- Frostwind
@@ -81,16 +81,28 @@ _.ExpansionFeatures =
 									i(164512),	-- Frostwind Anklewraps
 								},
 							}),
-							n(-3318, {	-- Faceless Follower
+							n(-3316, {	-- Hydraxian
 								["groups"] = {
-									i(164484),	-- Faceless Follower's Guise
-									i(164489),	-- Faceless Follower's Mantle
-									i(164487),	-- Faceless Follower's Vestments
-									i(164490),	-- Faceless Follower's Armbands
-									i(164485),	-- Faceless Follower's Gloves
-									i(164483),	-- Faceless Follower's Waistcord
-									i(164486),	-- Faceless Follower's Legwraps
-									i(164488),	-- Faceless Follower's Sandals
+									i(164412),	-- Hydraxian Cover
+									i(164417),	-- Hydraxian Mantle
+									i(164415),	-- Hydraxian Robes
+									i(164418),	-- Hydraxian Armbands
+									i(164413),	-- Hydraxian Handwraps
+									i(164411),	-- Hydraxian Waistcord
+									i(164414),	-- Hydraxian Legwraps
+									i(164416),	-- Hydraxian Slippers
+								},
+							}),
+							n(-3315, {	-- Spider Acolyte
+								["groups"] = {
+									i(164476),	-- Spider Acolyte's Cowl
+									i(164481),	-- Spider Acolyte's Amice
+									i(164479),	-- Spider Acolyte's Robes
+									i(164482),	-- Spider Acolyte's Wristwraps
+									i(164477),	-- Spider Acolyte's Handwraps
+									i(164475),	-- Spider Acolyte's Cord
+									i(164478),	-- Spider Acolyte's Leggings
+									i(164480),	-- Spider Acolyte's Anklewraps
 								},
 							}),
 							n(-3319, {	-- Swarmfury
@@ -105,77 +117,24 @@ _.ExpansionFeatures =
 									i(164456),	-- Swarmfury Footwraps
 								},
 							}),
-							i(166828),	-- Dark Animator's Cowl
-							i(166825),	-- Dark Animator's Mantle
-							i(166824),	-- Dark Animator's Robe
-							i(166829),	-- Dark Animator's Bracers
-							i(166827),	-- Dark Animator's Gloves
-							i(166822),	-- Dark Animator's Belt
-							i(166826),	-- Dark Animator's Pants
-							i(166823),	-- Dark Animator's Boots
-							i(166844),	-- Duskhaven Top Hat
-							i(166831),	-- Duskhaven Dress
-							i(166833),	-- Duskhaven Jacket
-							i(166834),	-- Duskhaven Breeches
-							i(166832),	-- Duskhaven Boots
-							i(166830),	-- Duskhaven Slippers
-							i(166818),	-- Fallen Runelord's Cowl
-							i(166815),	-- Fallen Runelord's Shoulders
-							i(166816),	-- Fallen Runelord's Robe	
-							i(166820),	-- Fallen Runelord's Bracers
-							i(166817),	-- Fallen Runelord's Gloves
-							i(166821),	-- Fallen Runelord's Belt
-							i(166819),	-- Fallen Runelord's Breeches
-							i(166814),	-- Fallen Runelord's Striders
 						}),
 						n(-44, {	-- Leather
-							n(-3320, {	-- Spiritbough
-								["groups"] = {
-									i(164447),	-- Spiritbough Crown
-									i(164449),	-- Spiritbough Mantle
-									i(164448),	-- Spiritbough Chestguard
-									i(164443),	-- Spiritbough Bindings
-									i(164446),	-- Spiritbough Grasps
-									i(164450),	-- Spiritbough Belt
-									i(164445),	-- Spiritbough Breeches
-									i(164444),	-- Spiritbough Striders
+							n(-3343, {	-- Choking Winter (partial set)
+								["g"] = {
+									i(166836),	-- Frosthoof Gloves
+									i(166835),	-- Frosthood Waistcord
 								},
+								["description"] = "These pieces were added to fill out a previously incomplete set called Choking Winter's Garb.  The rest of the set is available from sources outside of Island Expeditions.",
 							}),
-							n(-3321, {	-- Tranquil Path
-								["groups"] = {
-									i(164431),	-- Helm of the Tranquil Path
-									i(164433),	-- Shoulderpads of the Tranquil Path
-									i(164432),	-- Vest of the Tranquil Path
-									i(164427),	-- Bindings of the Tranquil Path
-									i(164430),	-- Gloves of the Tranquil Path
-									i(164434),	-- Waistcord of the Tranquil Path
-									i(164429),	-- Leggings of the Tranquil Path
-									i(164428),	-- Footpads of the Tranquil Path
-								},
-							}),
-							n(-3322, {	-- Miststalker
-								["groups"] = {
-									i(164567),	-- Miststalker's Hood
-									i(164569),	-- Miststalker's Shoulderpads
-									i(164568),	-- Miststalker's Jerkin
-									i(164563),	-- Miststalker's Bindings
-									i(164566),	-- Miststalker's Grasps
-									i(164570),	-- Miststalker's Belt
-									i(164565),	-- Miststalker's Pants
-									i(164564),	-- Miststalker's Waders
-								},
-							}),
-							n(-3323, {	-- Whirling Dervish
-								["groups"] = {
-									i(164551),	-- Whirling Dervish Turban
-									i(164553),	-- Whirling Dervish Shoulders
-									i(164552),	-- Whirling Dervish Vest
-									i(164547),	-- Whirling Dervish Bindings
-									i(164550),	-- Whirling Dervish Gloves
-									i(164554),	-- Whirling Dervish Belt
-									i(164549),	-- Whirling Dervish Breeches
-									i(164548),	-- Whirling Dervish Striders
-								},
+							n(-3342, {	-- Fallen Runelord
+								i(166818),	-- Fallen Runelord's Cowl
+								i(166815),	-- Fallen Runelord's Shoulders
+								i(166816),	-- Fallen Runelord's Robe	
+								i(166820),	-- Fallen Runelord's Bracers
+								i(166817),	-- Fallen Runelord's Gloves
+								i(166821),	-- Fallen Runelord's Belt
+								i(166819),	-- Fallen Runelord's Breeches
+								i(166814),	-- Fallen Runelord's Striders
 							}),
 							n(-3324, {	-- Feralbark
 								["groups"] = {
@@ -201,20 +160,56 @@ _.ExpansionFeatures =
 									i(164556),	-- Firekin Boots
 								},
 							}),
-						}),
-						n(-45, {	-- Mail
-							n(-3326, {	-- Wild Marauder
+							n(-3322, {	-- Miststalker
 								["groups"] = {
-									i(164543),	-- Wild Marauder Helm
-									i(164545),	-- Wild Marauder Pauldrons
-									i(164546),	-- Wild Marauder Chainmail
-									i(164540),	-- Wild Marauder Bracers
-									i(164541),	-- Wild Marauder Glovs
-									i(164539),	-- Wild Marauder Chain
-									i(164544),	-- Wild Marauder Breeches
-									i(164542),	-- Wild Marauder Boots
+									i(164567),	-- Miststalker's Hood
+									i(164569),	-- Miststalker's Shoulderpads
+									i(164568),	-- Miststalker's Jerkin
+									i(164563),	-- Miststalker's Bindings
+									i(164566),	-- Miststalker's Grasps
+									i(164570),	-- Miststalker's Belt
+									i(164565),	-- Miststalker's Pants
+									i(164564),	-- Miststalker's Waders
 								},
 							}),
+							n(-3320, {	-- Spiritbough
+								["groups"] = {
+									i(164447),	-- Spiritbough Crown
+									i(164449),	-- Spiritbough Mantle
+									i(164448),	-- Spiritbough Chestguard
+									i(164443),	-- Spiritbough Bindings
+									i(164446),	-- Spiritbough Grasps
+									i(164450),	-- Spiritbough Belt
+									i(164445),	-- Spiritbough Breeches
+									i(164444),	-- Spiritbough Striders
+								},
+							}),
+							n(-3321, {	-- Tranquil Path
+								["groups"] = {
+									i(164431),	-- Helm of the Tranquil Path
+									i(164433),	-- Shoulderpads of the Tranquil Path
+									i(164432),	-- Vest of the Tranquil Path
+									i(164427),	-- Bindings of the Tranquil Path
+									i(164430),	-- Gloves of the Tranquil Path
+									i(164434),	-- Waistcord of the Tranquil Path
+									i(164429),	-- Leggings of the Tranquil Path
+									i(164428),	-- Footpads of the Tranquil Path
+								},
+							}),
+							n(-3323, {	-- Whirling Dervish
+								["groups"] = {
+									i(164551),	-- Whirling Dervish Turban
+									i(164553),	-- Whirling Dervish Shoulders
+									i(164552),	-- Whirling Dervish Vest
+									i(164547),	-- Whirling Dervish Bindings
+									i(164550),	-- Whirling Dervish Gloves
+									i(164554),	-- Whirling Dervish Belt
+									i(164549),	-- Whirling Dervish Breeches
+									i(164548),	-- Whirling Dervish Striders
+								},
+							}),
+						}),
+						n(-45, {	-- Mail
 							n(-3327, {	-- Dragonrider
 								["groups"] = {
 									i(164399),	-- Dragonrider's Helmet
@@ -227,16 +222,23 @@ _.ExpansionFeatures =
 									i(164398),	-- Dragonrider's Boots
 								},
 							}),
-							n(-3328, {	-- Saurok
+							n(-3344, {	-- Frostsworn Bone Mail  (partial set)
+								["g"] = {
+									i(166840),	-- Winterscale Spaulders
+									i(166839),	-- Winterscale Waistguard
+								},
+								["description"] = "These pieces were added to fill out a previously incomplete recolor of the Frostsworn Bone Mail set.  The rest of the set is available from sources outside of Island Expeditions.",
+							}),
+							n(-3330, {	-- Headshrinker
 								["groups"] = {
-									i(164503),	-- Saurok Scale Headgear
-									i(164505),	-- Saurok Scale Pauldrons
-									i(164506),	-- Saurok Scale Chainmail [Verdant Wilds]
-									i(164500),	-- Saurok Scale Bindings
-									i(164501),	-- Saurok Scale Grips
-									i(164499),	-- Saurok Scale Belt
-									i(164504),	-- Saurok Scale Greaves
-									i(164502),	-- Saurok Scale Boots
+									i(164495),	-- Headshrinker's Cowl
+									i(164497),	-- Headshrinker's Shoulders
+									i(164498),	-- Headshrinker's Vestments
+									i(164492),	-- Headshrinker's Wristguards
+									i(164493),	-- Headshrinker's Grips
+									i(164491),	-- Headshrinker's Waistguard
+									i(164496),	-- Headshrinker's Legguards
+									i(164494),	-- Headshrinker's Boots
 								},
 							}),
 							n(-3329, {	-- Mrrglurggl
@@ -251,16 +253,16 @@ _.ExpansionFeatures =
 									i(164470),	-- Mrrglurggl Boots
 								},
 							}),
-							n(-3330, {	-- Headshrinker
+							n(-3328, {	-- Saurok
 								["groups"] = {
-									i(164495),	-- Headshrinker's Cowl
-									i(164497),	-- Headshrinker's Shoulders
-									i(164498),	-- Headshrinker's Vestments
-									i(164492),	-- Headshrinker's Wristguards
-									i(164493),	-- Headshrinker's Grips
-									i(164491),	-- Headshrinker's Waistguard
-									i(164496),	-- Headshrinker's Legguards
-									i(164494),	-- Headshrinker's Boots
+									i(164503),	-- Saurok Scale Headgear
+									i(164505),	-- Saurok Scale Pauldrons
+									i(164506),	-- Saurok Scale Chainmail [Verdant Wilds]
+									i(164500),	-- Saurok Scale Bindings
+									i(164501),	-- Saurok Scale Grips
+									i(164499),	-- Saurok Scale Belt
+									i(164504),	-- Saurok Scale Greaves
+									i(164502),	-- Saurok Scale Boots
 								},
 							}),
 							n(-3331, {	-- Voodoo Stalker
@@ -275,8 +277,32 @@ _.ExpansionFeatures =
 									i(164518),	-- Voodoo Stalker's Boots
 								},
 							}),
+							n(-3326, {	-- Wild Marauder
+								["groups"] = {
+									i(164543),	-- Wild Marauder Helm
+									i(164545),	-- Wild Marauder Pauldrons
+									i(164546),	-- Wild Marauder Chainmail
+									i(164540),	-- Wild Marauder Bracers
+									i(164541),	-- Wild Marauder Glovs
+									i(164539),	-- Wild Marauder Chain
+									i(164544),	-- Wild Marauder Breeches
+									i(164542),	-- Wild Marauder Boots
+								},
+							}),
 						}),
 						n(-46, {	-- Plate
+							n(-3335, {	-- Bloodwake
+								["groups"] = {
+									i(164534),	-- Bloodwake Helmet
+									i(164536),	-- Bloodwake Spaulders
+									i(164531),	-- Bloodwake Breastplate
+									i(164538),	-- Bloodwake Bracers
+									i(164532),	-- Bloodwake Gauntlets
+									i(164533),	-- Bloodwake Girdle
+									i(164535),	-- Bloodwake Legplates
+									i(164537),	-- Bloodwake Sabatons
+								},
+							}),
 							n(-3332, {	-- Geocrag
 								["groups"] = {
 									i(164422),	-- Geocrag Helm
@@ -287,6 +313,18 @@ _.ExpansionFeatures =
 									i(164421),	-- Geocrag Girdle
 									i(164423),	-- Geocrag Legguards
 									i(164425),	-- Geocrag Stompers
+								},
+							}),
+							n(-3336, {	-- Rattling Bone
+								["groups"] = {
+									i(164526),	-- Rattling Bone Mask
+									i(164528),	-- Rattling Bone Spaulders
+									i(164523),	-- Rattling Bone Hauberk
+									i(164530),	-- Rattling Bone Armplates
+									i(164524),	-- Rattling Bone Crushers
+									i(164525),	-- Rattling Bone Greatbelt
+									i(164527),	-- Rattling Bone Legguards
+									i(164529),	-- Rattling Bone Warboots
 								},
 							}),
 							n(-3333, {	-- Razorfin
@@ -301,6 +339,13 @@ _.ExpansionFeatures =
 									i(164441),	-- Razorfin Warboots
 								},
 							}),
+							n(-3345, {	-- Sanctified Scourgelord's Plate (partial set)
+								["g"] = {
+									i(166837),	-- Sleetguard Greatbelt
+									i(166838),	-- Sleetguard Warboots
+								},
+								["description"] = "These pieces were added to fill out a previously incomplete recolor of the Sanctified Scourgelord's Plate set.  The rest of the set is available from sources outside of Island Expeditions.",
+							}),
 							n(-3334, {	-- Tomb-Keeper
 								["groups"] = {
 									i(164462),	-- Tomb-Keeper's Helm
@@ -311,30 +356,6 @@ _.ExpansionFeatures =
 									i(164461),	-- Tomb-Keeper's Girdle
 									i(164463),	-- Tomb-Keeper's Legguards
 									i(164465),	-- Tomb-Keeper's Sabatons
-								},
-							}),
-							n(-3335, {	-- Bloodwake
-								["groups"] = {
-									i(164534),	-- Bloodwake Helmet
-									i(164536),	-- Bloodwake Spaulders
-									i(164531),	-- Bloodwake Breastplate
-									i(164538),	-- Bloodwake Bracers
-									i(164532),	-- Bloodwake Gauntlets
-									i(164533),	-- Bloodwake Girdle
-									i(164535),	-- Bloodwake Legplates
-									i(164537),	-- Bloodwake Sabatons
-								},
-							}),
-							n(-3336, {	-- Rattling Bone
-								["groups"] = {
-									i(164526),	-- Rattling Bone Mask
-									i(164528),	-- Rattling Bone Spaulders
-									i(164523),	-- Rattling Bone Hauberk
-									i(164530),	-- Rattling Bone Armplates
-									i(164524),	-- Rattling Bone Crushers
-									i(164525),	-- Rattling Bone Greatbelt
-									i(164527),	-- Rattling Bone Legguards
-									i(164529),	-- Rattling Bone Warboots
 								},
 							}),
 							n(-3337, {	-- Twilight Dragon
@@ -382,9 +403,9 @@ _.ExpansionFeatures =
 							i(163818),	-- Bloodstone Tunneler
 							i(163798),	-- Captain Nibs
 							i(163823),	-- Coldlight Surfrunner
-							i(163805),	-- Craghoof Kid [Verdant Wilds / Molten Clay]
-							i(163809),	-- Deathsting Scorpid [Molten Clay]
-							i(163806),	-- False Knucklebump [Molten Clay]
+							i(163805),	-- Craghoof Kid [Verdant Wilds / Molten Cay]
+							i(163809),	-- Deathsting Scorpid [Molten Cay]
+							i(163806),	-- False Knucklebump [Molten Cay]
 							i(166493),	-- Firesting Buzzer
 							i(163811),	-- Giggling Flame
 							i(163802),	-- Inky [Un'gol Ruins]
@@ -410,7 +431,7 @@ _.ExpansionFeatures =
 							i(163819),	-- Snort
 							i(163803),	-- Sparkleshell Sandcrawler
 							i(163817),	-- Sunscale Hatchling [Skittering Hallow]
-							i(163810),	-- Thistlebrush Bud [Molten Clay]
+							i(163810),	-- Thistlebrush Bud [Molten Cay]
 							i(166499),	-- Thunderscale Whelpling
 							i(163807),	-- Tinder Pup
 							i(166495),	-- Tonguelasher
@@ -541,10 +562,10 @@ _.ExpansionFeatures =
 					}),
 				},	
 				["icon"] = "Interface\\Icons\\INV_Misc_Bag_SatchelofCenarius",	
-				["description"] = "|cff66ccffThese are the random rewards you can receive by completing an Island Expedition.  It is estimated that winning will give you a higher chance to receive a reward.\n\nNOTE: These rewards are subject to change and are currently what has been either found through Beta Testing or assumed to be as a reward.\n\nIf you receive something not listed here please screenshot and submit to our Discord and ping Lucetia with the \"@Lucetia\" command.|r",			
+				["description"] = "|cff66ccffThese are the random rewards you can receive by completing an Island Expedition.  It is estimated that winning will give you a higher chance to receive a reward.\n\nIf you receive something not listed here, please screenshot and submit it to our Discord and ping Lucetia with the \"@Lucetia\" command.|r",			
 			}),
 		},
-		["description"] = "|cff66ccffIsland expeditions are 3-player scenarios.  Each faction will sail across the waters where they will harvest and steal any Azerite they can find from these islands.  Goblins and gnomes have been able to use their new technology to find islands which contain possible amounts of Azerite and will be providing maps for each of their respective factions.  Ships and queuing will take place in Dazar'alor for Horde and Boralus for Alliance.  These unlock at level 116 on your first playthrough and should be open at 110 on your alts once you have finished the introduction line. |r",
+		["description"] = "|cff66ccffIsland expeditions are 3-player scenarios.  Each faction will sail across the waters where they will harvest and steal any Azerite they can find from these islands.  Goblins and gnomes have been able to use their new technology to find islands which contain possible amounts of Azerite and will be providing maps for their respective factions.  Ships and queuing will take place in Dazar'alor for Horde and Boralus for Alliance.  These unlock at level 116 on your first playthrough and should be open at 110 on your alts once you have finished the introduction line. |r",
 		["achievementID"] = 12595, -- Expert Expeditioner
 		["lvl"] = 110,
 		["crs"] = {

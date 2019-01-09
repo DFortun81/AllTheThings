@@ -350,6 +350,9 @@ _.Zones =
 					a(q(51314, {	-- Grain Drain
 						["qg"] = 137094,	-- Farmer Max
 						-- ["sourceQuests"] = {  },	--  [Alliance Only] (This didn't have a source Quest that I could tell)
+						["groups"] = {
+							i(161084),	-- Recovered Stormsong Produce
+						},
 						["coord"] = { 54.9, 67.9 },
 					})),
 					a(q(49704, {	-- Haywire Harvesters

@@ -14,9 +14,38 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
 							gsh(1522, { -- Allied Races 	-- This belongs to black rock depths where this quest line takes place, but I at least wanted to get this in first.
-								q(53566, {	-- Dark Iron Dwarfs
-									i(161331),	-- Dark Iron Core Hound
-								}),
+								["groups"] = {
+									qg(126301, qa(50239, {	-- A Choice of Allies
+										na(-244, {	-- Dark Iron Dwarf
+											q(53566, {	-- Dark Iron Dwarfs
+												ach(12515, {	-- Allied Races: Dark Iron Dwarf
+													i(161331),	-- Dark Iron Core Hound
+												}),
+											}),
+										}),
+										na(-207, {	-- Lightforged Draenei
+											qg(126319, qa(49698)),	-- The Lightforged
+											qg(126319, qa(49266)),	-- Captain Fareeya
+											qg(126319, qa(50071, {	-- For the Light!
+												ach(12243, {	-- Allied Races: Lightforged Draenei
+													a(i(155656)),	-- Lightforged Felcrusher
+												}),
+											})),
+										}),
+										na(-208, {	-- Void Elves
+											qg(126321, qa(49787, {	-- The Ghostlands
+											-- qg(126321, qa(48787, {	-- Telogrus Rift. Quest got removed & renamed to 'not used reuse me' & talks about Ranishu's in Voldun.
+												ach(12242, {	-- Allied Races: Void Elf
+													a(i(156486)),	-- Starcursed Voidstrider
+												}),
+											})),
+										}),
+									qa(49929),	-- The Call for Allies
+									un(40, qg(126301, qa(50248))),	-- A Second Ally for the Cause
+									})),
+								},
+								["icon"] = "Interface\\Icons\\FactionChange",
+								--["lvl"] = 110,
 							}),
 							qa(52946, {	-- A Dying World
 								["qg"] = 142930, -- Halford Wyrmbane

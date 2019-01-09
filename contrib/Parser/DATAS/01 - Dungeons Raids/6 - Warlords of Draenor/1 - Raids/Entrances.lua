@@ -7,6 +7,27 @@ _.Instances =
 	{ -- Warlords of Draenor
 		["tierID"] = 6,	-- Warlords of Draenor
 		["g"] = {
+			{	-- World Bosses
+				["npcID"] = -7,	-- World Bosses
+				["g"] = {
+					{	-- Drov the Ruiner
+						["encounterID"] = 1291,	-- Drov the Ruiner
+						["coord"] = { 44.1, 39.9, 543 },
+					},
+					{	-- Rukhmar
+						["encounterID"] = 1262,	-- Rukhmar
+						["coord"] = { 37.0, 39.3, 542 },
+					},
+					{	-- Supreme Lord Kazzak
+						["encounterID"] = 1452,	-- Supreme Lord Kazzak
+						["coord"] = { 47.1, 21.5, 534 },
+					},
+					{	-- Tarlna the Ageless
+						["encounterID"] = 1211,	-- Tarlna the Ageless
+						["coord"] = { 47.0, 85.9, 543 },
+					},
+				},
+			},
 			{	-- Highmaul
 				["instanceID"] = 477,	-- Highmaul
 				["coords"] = {
