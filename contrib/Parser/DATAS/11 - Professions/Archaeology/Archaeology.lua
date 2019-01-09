@@ -66,10 +66,6 @@ profession(794, {	-- Archaeology
 		n(-161, {	-- Toys
 			sp(273852, { i(160751) }),	-- Dance of the Dead
 		}),
-		sp(273851, { -- Soul Coffer (Spell #273851)
-			i(160741),	-- Soul Coffer
-			i(160742),	-- Pristine Soul Coffer
-		}),
 	}),
 	currency(384,  {	-- Dwarf
 		n(-25, {	-- Pet Battles
@@ -239,10 +235,6 @@ profession(794, {	-- Archaeology
 		}),
 		n(-161, {	-- Toys
 			sp(273815, { i(160740) }),	-- Croak Crock
-		}),
-		sp(273812, { -- Blowgun of the Sethra
-			i(160743),	-- Blowgun of the Sethrak
-			i(160744),	-- Pristine Blowgun of the Sethrak
 		}),
 	}),
 });

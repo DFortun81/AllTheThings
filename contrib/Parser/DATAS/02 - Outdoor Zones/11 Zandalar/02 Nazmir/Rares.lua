@@ -155,9 +155,6 @@ _.Zones =
 						}),
 						{	-- Queen Tzxi'kik
 							["npcID"] = 128974,	-- Queen Tzxi'kik
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
-								i(160963),	-- Blood Jungle Stinger
-							}),
 							["questID"] = 49312,
 							["coords"] = {
 								{ 57.81, 67.52, 863 },

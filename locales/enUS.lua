@@ -492,7 +492,6 @@ AllTheThings.Locales.enUS = {
 		[-224] = "Interface\\Icons\\ClassIcon_DemonHunter", 					-- Demon Hunter
 		[-225] = "Interface\\Icons\\spell_lightning_lightningbolt01",			-- Elemental Bonds
 		[-226] = "Interface\\ICONS\\INV_Misc_Map02",							-- World Drops
-		[-227] = "Interface\\ICONS\\spell_holy_divinepurpose",					-- Victory
 		[-228] = "Interface\\Minimap\\Tracking\\Flightmaster",					-- Flight Paths
 		[-230] = "Interface\\Icons\\achievement_legionpvp2tier3",				-- Conquest
 		[-231] = "Interface\\Icons\\Spell_Shadow_DeathScream",
@@ -500,9 +499,6 @@ AllTheThings.Locales.enUS = {
 		[-233] = "Interface\\Icons\\achievement_zone_arathihighlands_01",		-- Warfront: The Battle for Stromgarde
 		[-234] = "Interface\\Icons\\achievement_zone_arathihighlands_01",		-- Warfront: The Battle for Stromgarde
 		[-235] = "Interface\\Icons\\inv_scroll_05",
-		[-243] = "Interface\\Icons\\ability_hunter_markedfordeath",				-- Bounty
-		[-244] = "Interface\\Icons\\ability_racial_fireblood",					-- Dark Iron Dwarf
-		[-245] = "Interface\\Icons\\achievement_alliedrace_magharorc",			-- Mag'har Orc
 		[-297] = "Interface\\Icons\\inv_letter_17", 							-- Mailbox
 		[-299] = "Interface\\Icons\\achievement_garrisonquests_1000", 			-- Missions
 		[-304] = "Interface\\Icons\\INV_BannerPVP_03",							-- Battlegrounds
@@ -1154,10 +1150,7 @@ AllTheThings.Locales.enUS = {
 		[-239] = GetSpellInfo(208246),											-- Assault [8.1 Assaults]
 		[-240] = PVP_TAB_CONQUEST,												-- Rated
 		[-241] = PVP_SEASON_REWARD,												-- Season Reward
-		[-242] = "Unrated",														-- Unrated
-		[-243] = "Bounty",														-- Bounty
-		[-244] = "Dark Iron Dwarf",												-- Dark Iron Dwarf
-		[-245] = "Mag'har Orc",													-- Mag'har Orc
+		
 -- Other
 		[-294] = "Killed First",
 		[-295] = "Killed Second",
@@ -1341,9 +1334,6 @@ AllTheThings.Locales.enUS = {
 		[-601] = GetSpellInfo(262971),											-- Communing with Jani [Snapjaw Tail]
 		[-650] = "Quest Items",													-- Quest Items
 		
--- Pet Battles
-		[-700] = "Celestial Tournament",										-- Celestial Tournament (Scenario)
-		
 		[-1000] = WARDROBE_SETS, 												-- Sets
 		[-1001] = "The Black Vault",
 
@@ -1521,11 +1511,7 @@ AllTheThings.Locales.enUS = {
 		[-3317] = "Frostwind",
 		[-3318] = "Faceless Follower",
 		[-3319] = "Swarmfury",
-		[-3340] = "Dark Animator",
-		[-3341] = "Duskhaven",
-		
-		[-3343] = "Choking Winter",
-		[-3342] = "Fallen Runelord",
+
 		[-3320] = "Spiritbough",
 		[-3321] = "Tranquil Path",
 		[-3322] = "Miststalker",
@@ -1533,7 +1519,6 @@ AllTheThings.Locales.enUS = {
 		[-3324] = "Feralbark",
 		[-3325] = "Firekin",
 
-		[-3344] = "Frostsworn",
 		[-3326] = "Wild Marauder",
 		[-3327] = "Dragonrider",
 		[-3328] = "Saurok",
@@ -1543,7 +1528,6 @@ AllTheThings.Locales.enUS = {
 
 		[-3332] = "Geocrag",
 		[-3333] = "Razorfin",
-		[-3345] = "Sanctified Scourgelord",
 		[-3334] = "Tomb-Keeper",
 		[-3335] = "Bloodwake",
 		[-3336] = "Rattling Bone",
@@ -1783,6 +1767,7 @@ AllTheThings.Locales.enUS = {
 		[-10066] = BATTLE_PET_BREED_QUALITY6,			-- "Legendary";
 		[-10067] = ITEM_QUALITY6_DESC, 				-- Artifact
 		[-10068] = OPTION_TOOLTIP_ANIMATION,			-- PLACE_HOLDER
+		[-10069] = "Mag'har Orc",
 		
 		--90000+ are reserved for town names.  If you use one make sure to attach an icon (either here or in the file).
 		
@@ -1963,8 +1948,6 @@ AllTheThings.Locales.enUS = {
 		[202706] = "Interface\\Icons\\INV_Misc_Cauldron_Shadow",
 		[202712] = "Interface\\Icons\\INV_Misc_Book_05",
 		[202795] = "Interface\\Icons\\Garrison_Building_Storehouse",
-		[202871] = "Interface\\Icons\\INV_Crate_06",
-		[203128] = "INV_ValentineCologneBottle",
 		[203134] = "Interface\\Icons\\Archaeology_5_0_EdictsOfTheThunderKing",
 		[203186] = "Interface\\Icons\\TRADE_ARCHAEOLOGY_VRYKUL_RUNESTICK",
 		[203207] = "Interface\\Icons\\INV_Misc_Book_05",
@@ -2469,9 +2452,7 @@ AllTheThings.Locales.enUS = {
 		[202778] = "Albino Cavefish School",
 		[202779] = "Blackbelly Mudfish School",
 		[202780] = "Fathom Eel Swarm",
-		[202871] = "Sunken Crate",
 		[202975] = "Submerged Outhouse",
-		[203128] = "Broken Bottle",
 		[203134] = "Empty Pedestal",
 		[203186] = "STAY OUT!",
 		[203207] = "Codex of Shadows",

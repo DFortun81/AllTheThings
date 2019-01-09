@@ -4776,7 +4776,7 @@ _.ExpansionFeatures =
 						["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 					}),
 					un(2, i(114120, {	-- Big Crate of Salvage
-					-- Only adding items where Salvage Crates was the only source
+					-- Adding items here which only could drop from Salvage Crates 
 						un(7, i(25285)),	-- Bloodwood Wand
 						un(7, i(55631)),	-- Frayfeather Belt
 						un(7, i(55568)),	-- Frayfeather Bracers
@@ -4795,7 +4795,6 @@ _.ExpansionFeatures =
 						un(7, i(55730)),	-- Galardell Sandals
 						un(7, i(55766)),	-- Galardell Shoulderpads
 						un(7, i(55712)),	-- Galardell Wristwraps
-						un(7, i(25173)),	-- Master's Bo Staff
 						un(7, i(55640)),	-- Nighthaven Bindings
 						un(7, i(55658)),	-- Nighthaven Boots
 						un(7, i(55685)),	-- Nighthaven Britches
@@ -4813,7 +4812,9 @@ _.ExpansionFeatures =
 						un(7, i(55550)),	-- Steelgrill Pauldrons
 						un(7, i(55514)),	-- Steelgrill Sabatons
 						un(7, i(55496)),	-- Steelgrill Vambraces
-						un(7, i(55433)),	-- Steelgrill Shield
+						-- Serrated Maul Needs verification
+						-- Adorned Broadsword Needs verification
+						
 					})),
 					i(140590, {
 						n(-140, { 	-- Communal

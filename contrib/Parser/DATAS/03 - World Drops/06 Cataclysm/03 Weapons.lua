@@ -192,6 +192,7 @@ _.WorldDrops =
 					i(55430),	-- Ravencrest Shield
 					i(55431),	-- Stonewrought Shield
 					i(55432),	-- Crystalvein Shield
+					i(55433),	-- Steelgrill Shield
 					i(66895),	-- Don Gonzales' Shiny Shield
 					i(67061),	-- Bulwark of the Scorned Man
 					i(67124),	-- Zulian Swirling Shield

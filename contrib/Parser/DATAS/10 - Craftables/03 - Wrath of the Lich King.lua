@@ -477,10 +477,6 @@ _.Craftables =
 				i(44210),	-- Faces of Doom
 				i(38322),	-- Iron-Bound Tome
 				i(45854),	-- Rituals of the New Moon
-				i(45850),	-- Rituals of the New Moon
-				i(45851),	-- Rituals of the New Moon
-				i(45852),	-- Rituals of the New Moon
-				i(45853),	-- Rituals of the New Moon
 				i(45849),	-- Twilight Tome
 			}),
 			un(2, i(43361, {	-- Charred Glyph (Original Name unknown, maybe Glyph of Polymorph)

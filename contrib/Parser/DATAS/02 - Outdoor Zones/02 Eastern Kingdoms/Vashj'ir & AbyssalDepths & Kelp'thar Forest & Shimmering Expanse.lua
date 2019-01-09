@@ -46,14 +46,14 @@ _.Zones =
 							}),
 						}),
 						n(-17,  {	-- Quests					
---							qg(, qa(26017)),	-- A Lure
-							qg(41667, qa(25977, {	-- A Standard Day for Azrajar
+--							qg(, qa(26017)),  	-- A Lure
+							qg(41667, qa(25977, {  	-- A Standard Day for Azrajar
 								i(59639),
 							})),
-							qg(41670, qh(25980, {	-- A Standard Day for Azrajar
+							qg(41670, qh(25980, {  	-- A Standard Day for Azrajar
 								i(59636),
 							})),
-							qg(42197, q(26143, {	-- All that Rises
+							qg(42197, q(26143, {  	-- All that Rises
 								i(59609),
 								i(59608),
 								i(59610),
@@ -66,12 +66,12 @@ _.Zones =
 							qa(26105),	-- Claim Korthun's End (Drop-Quest - Hellscream Seadog 42115)
 							qa(26121),	-- Claim Korthun's End (given by questgiver	-- either or shared with quest of same name???)
 -]]
-							qg(41598, qa(26070, {	-- Clearing the Defiled
+							qg(41598, qa(26070, {  	-- Clearing the Defiled
 								i(59624),
 								i(59625),
 								i(59623),
 							})),
-							qg(41636, qh(26071, {	-- Clearing the Defiled
+							qg(41636, qh(26071, {  	-- Clearing the Defiled
 								i(59621),
 								i(59622),
 								i(59620),
@@ -80,16 +80,11 @@ _.Zones =
 							qa(26018),	-- Coldlights Out
 							q(26140),	-- Communing with the Ancient
 --]]
-							qa(26193, {	-- Defending the Rift
-								["g"] = {
-									i(59604),	-- Submariner's Weighted Treads
-									i(59605),	-- Signet of the Lookout
-									i(59606),	-- Drape of the Helmsman
-								},
-								["qg"] = 41600,	-- Erunak Stonespeaker
-								["coord"] = { 42.6, 37.8, 204 },
-							}),
-							qg(41600, qh(26194, {	-- Defending the Rift
+							qg(41600, qa(26193, {  	-- Defending the Rift
+								i(59604),
+								i(59606),
+							})),
+							qg(41600, qh(26194, {  	-- Defending the Rift
 								i(59601),
 								i(59603),
 							})),
@@ -100,11 +95,11 @@ _.Zones =
 							qa(26132),	-- Fiends from the Netherworld
 							qh(26133),	-- Fiends from the Netherworld
 --]]
-							qg(41640, q(26065,  {	-- Free Wil'hai
+							qg(41640, q(26065,  {  	-- Free Wil'hai
 								i(59628),
 								i(59627),
 							})),
-							qg(41666, qa(26106, {	-- Fuel-ology 101
+							qg(41666, qa(26106, {  	-- Fuel-ology 101
 								i(59646),
 								i(59645),
 								i(59644),
@@ -113,7 +108,7 @@ _.Zones =
 							qh(26087),	-- "Glow-Juice"
 							qh(26088),	-- Here Fishie Fishie
 --]]
-							qg(41908, qh(26091, {	-- Here Fishie Fishie 2: Eel-Egg-Trick Boogaloo
+							qg(41908, qh(26091, {  	-- Here Fishie Fishie 2: Eel-Egg-Trick Boogaloo
 								i(59654),
 								i(59653),
 								i(59655),
@@ -122,16 +117,16 @@ _.Zones =
 							qh(26090),	-- I Brought You This Egg
 							q(26072),	-- Into the Totem
 --]]
-							qg(41600, q(26111, {	-- ... It Will Come
+							qg(41600, q(26111, {  	-- ... It Will Come
 								i(59618),
 							})),
-							qg(41910, qa(26080, {	-- One Last Favor
+							qg(41910, qa(26080, {  	-- One Last Favor
 								i(59652),
 								i(59651),
 								i(59650),
 							})),
 --							qh(26086),	-- Orako
-							qg(41908, qh(26092, {	-- Orako's Report
+							qg(41908, qh(26092, {  	-- Orako's Report
 								i(59649),
 								i(59648),
 								i(59647),
@@ -139,14 +134,14 @@ _.Zones =
 --							qa(26015),	-- Phosphora Hunting
 							n(41652, {	-- Twilight Champion
 								i(57102, {	-- Twilight Cage Key
-									qa(26144, {	-- Prisoners
+									qa(26144, {  	-- Prisoners
 										i(59615),
 										i(59616),
 										i(59614),
 									}),
 								}),
 								i(57118, {	-- Twilight Cage Key
-									qh(26149, {	-- Prisoners
+									qh(26149, {  	-- Prisoners
 										i(59612),
 										i(59613),
 										i(59611),
@@ -157,10 +152,10 @@ _.Zones =
 							qa(25983),	-- Promontory Point
 							qh(25984),	-- Promontory Point
 --]]
-							qg(41666, qa(25987, {	-- Put It On
+							qg(41666, qa(25987, {  	-- Put It On
 								i(59632),
 							})),
-							qg(41669, qh(25988, {	-- Put It On
+							qg(41669, qh(25988, {  	-- Put It On
 								i(59629),
 							})),
 --[[
@@ -172,12 +167,12 @@ _.Zones =
 							qh(25974),	-- Sira'Kess Slaying
 							qa(26014),	-- The Brothers Digsong
 --]]
-							qg(41910, qa(26021, {	-- The Brothers Digsong 2: Ell-Egg-Trick Boogaloo
+							qg(41910, qa(26021, {  	-- The Brothers Digsong 2: Ell-Egg-Trick Boogaloo
 								i(59657),
 								i(59656),
 								i(59658),
 							})),
-							qg(41669, qh(26126, {	-- The Perfect Fuel
+							qg(41669, qh(26126, {  	-- The Perfect Fuel
 								i(59643),
 								i(59642),
 								i(59641),
@@ -254,219 +249,107 @@ _.Zones =
 							}),
 						}),
 						n(-17, {	-- Quests
-							q(25732, {	-- A Bone To Pick
-								["qg"] = 46458,	-- Budd
-								["coord"] = { 58.3, 48.6, 201 },
-								["sourceQuests"] = { 25670 },	-- DUN-dun-DUN-dun-DUN-dun
-							}),
-							o(202871, {	-- Sunken Crate
-								q(25388, {	-- A Case of Crabs
-									["coord"] = { 49.6, 40.8, 201 },
-									["sourceQuests"] = { 25587 },	-- Gimme Shelter
-								}),
-							}),
-							o(203128, {	-- Broken Bottle
-								q(25638, {	-- A Desperate Plea
-									["coord"] = { 56.4, 30.0, 201 },
-									["sourceQuests"] = { 25459 },	-- Ophidophobia
-									-- Noticed after turning in Ophidophobia, but had also just turned in Nerve Tonic, so that may be a prereq also.
-								}),
-							}),
-							q(25390, {	-- A Girl's Best Friend
-								["g"] = {
-									i(59793),	-- Hippolyte's Glittering Necklace
-									i(59794),	-- Signet of Galathea
-									i(59792),	-- Petrified Spider Crab
-								},
-								["qg"] = 39883,	-- Adarrah
-								["coord"] = { 57.1, 28.7, 201 },
-								["sourceQuests"] = { 25598 },	-- Ain't Too Proud to Beg
-							}),
-							q(25389, {	-- A Taste For Tail
-								["qg"] = 39883,	-- Adarrah
-								["coord"] = { 57.1, 28.7, 201 },
-								["sourceQuests"] = { 25598 },	-- Ain't Too Proud to Beg
-							}),
-							q(25598, {	-- Ain't Too Proud to Beg
-								["qg"] = 39883,	-- Adarrah
-								["coord"] = { 57.1, 28.8, 201 },
-								["sourceQuests"] = { 25587 },	-- Gimme Shelter
-							}),
-							qa(25558, {	-- All or Nothing
-								["g"] = {
-									i(59804),	-- Cowl of the Lost Cutter
-									i(59803),	-- Bracers of the Sunken Dream
-									i(59802),	-- Wheelman's Shattered Grasp
-								},
-								["qg"] = 40690,	-- Captain Taylor
-								["coord"] = { 45.0, 23.5 },
-								["sourceQuests"] = { 25547 },	-- On Our Own Terms
-							}),
-							{	-- An Opened Can of Whoop Gnash
-								["qg"] = 40987,	-- Gnash
-								["coords"] = {	-- pats up and down
-									{ 51.6, 42.4, 201 },
-									{ 54.0, 49.0, 201 },
-									{ 55.8, 53.0, 201 },
-								},
-								["itemID"] = 62138,	-- Gnash's Head
-								["questID"] = 27687,	-- An Opened Can of Whoop Gnash
-							},
+--[[
+							qg(, q(25732)),	-- A Bone To Pick
+							qg(, q(25388)),	-- A Case of Crabs
+							qg(, q(25638)),	-- A Desperate Plea
+							qg(, q(25390)),	-- A Girl's Best Friend
+							qg(, q(25389)),	-- A Taste For Tail
+							qg(, q(25598)),	-- Ain't Too Proud to Beg
+--]]
+							qg(40690, qa(25558, {  	-- All or Nothing (secondary QG ID 40737)
+								i(59804),
+								i(59803),
+								i(59802),
+							})),
+--[[
+							qg(, q(27687)),	-- An Opened Can of Whoop Gnash
 --							qa(25497),	-- Back in the Saddle (In beta never added to game)
-							q(25477, {	-- Better Late Than Dead
-								["qg"] = 41248,	-- Moanah Stormhoof
-								["coord"] = { 46.0, 46.8, 201 },
-								["sourceQuests"] = { 25558 },	-- All or Nothing
+							qg(, q(25477)),	-- Better Late Than Dead
+--]]
+							n(41183, {	-- Gilblingle
+								i(54639, {	-- Waterlogged Journal
+									q(25503, {  	-- Blackfin's Booty
+										i(59781),
+										i(59780),
+										i(59779),
+									}),
+								}),
 							}),
-							{	-- Blackfin's Booty
-								["g"] = {
-									i(59781),	-- Calanoid Shoulders
-									i(59780),	-- Polychaete Leggings
-									i(59779),	-- Girdle of Calcified Blackfin
-								},
-								["qg"] = 41183,	-- Gilblingle
-								["coord"] = { 51.1, 52.0 },
-								["itemID"] = 54639,	-- Waterlogged Journal
-								["questID"] = 25503,	-- Blackfin's Booty
-							},
-							qg(41750, qh(25949, {	-- Blood and Thunder! (secondary QG IDs 41769 and 41793)
+							qg(41750, qh(25949, {  	-- Blood and Thunder! (secondary QG IDs 41769 and 41793)
 								i(59801),
 								i(59800),
 								i(59799),
 							})),
---							qg(, qh(25948)),	-- Bring It On!
-							qa(25357, {	-- Buy Us Some Time
-								["qg"] = 39887,	-- Captain Taylor
-								["coord"] = { 44.7, 22.5, 201 },
-							}),
---							qg(, qh(25942)),	-- Buy Us Some Time
-							q(25602, {	-- Can't Start a Fire Without a Spark
-								["qg"] = 39884,	-- Captain Samir
-								["coord"] = { 57.3, 28.9, 201 },
-								["sourceQuests"] = { 25598 },	-- Ain't Too Proud to Beg
-							}),
+--[[
+							qg(, qh(25948)),	-- Bring It On!
+							qg(, qa(25357)),	-- Buy Us Some Time
+							qg(, qh(25942)),	-- Buy Us Some Time
+							qg(, q(25602)),	-- Can't Start a Fire Without a Spark
 --							q(25413),	-- Change of Plans (In beta never added to game)
-							q(25884, {	-- Come Hell or High Water
-								["g"] = {
-									i(59778),	-- Medusoid Staff
-									i(59777),	-- Conch-Inlaid Gauntlets
-									i(59776),	-- Pipefish Bracers
-								},
-								["qg"] = 41344,	-- Rendel Firetongue
-								["coord"] = { 64.2, 59.9, 201 },
-								["sourceQuests"] = { 25887 },	-- Wake of Destruction
-							}),
-							q(25657, {	-- Dah, Nunt.. Dah, Nunt...
-								["qg"] = 46338,	-- Budd
-								["coord"] = { 55.2, 38.8, 201 },
-								["sourceQuests"] = { 25651 },	-- Oh, the Insanity!
-							}),
-							qa(25824, {	-- Debriefing
-								["qg"] = 41341,	-- Erunak Stonespeaker
-								["coord"] = { 63.8, 59.9, 201 },
-								["sourceQuests"] = { 25812 },	-- Spelunking
-							}),
---							qg(, qh(26007)),	-- Debriefing
-							q(25743, {	-- Decisions, Decisions
-								["g"] = {
-									i(59787),	-- God-Grinding Grips
-									i(59786),	-- Wristguards of Prophetic Perishing
-									i(59785),	-- Pounded Pewter Links
-								},
-								["qg"] = 46458,	-- Budd
-								["coord"] = { 58.3, 48.6, 201 },
-								["sourceQuests"] = { 25732 },	-- A Bone To Pick
-							}),
-							qa(25888, {	-- Decompression
-								["g"] = {
-									i(59774),	-- Cone-Snail Cinch
-									i(59773),	-- Pteropod Robes
-									i(59775),	-- Breathstone-Infused Longbow
-								},
-								["qg"] = 41347,	-- Moanah Stormhoof
-								["coord"] = { 63.8, 59.3, 201 },
-								["sourceQuests"] = { 25887 },	-- Wake of Destruction
-							}),
-							qg(41347, qh(26008, {	-- Decompression
+--]]
+							qg(41344, q(25884, {  	-- Come Hell or High Water
+								i(59778),
+								i(59777),
+								i(59776),
+							})),
+--[[
+							qg(, q(25657)),	-- Dah, Nunt.. Dah, Nunt...
+							qg(, qa(25824)),	-- Debriefing
+							qg(, qh(26007)),	-- Debriefing
+--]]
+							qg(46458, q(25743, {  	-- Decisions, Decisions
+								i(59787),
+								i(59786),
+								i(59785),
+							})),
+							qg(41347, qa(25888, {  	-- Decompression
+								i(59774),
+								i(59773),
+								i(59775),
+							})),
+							qg(41347, qh(26008, {  	-- Decompression
 								i(59770),
 								i(59769),
 								i(59771),
 							})),
-							q(25670, {	-- DUN-dun-DUN-dun-DUN-dun
-								["qg"] = 46338,	-- Budd
-								["coord"] = { 55.2, 38.8, 201 },
-								["sourceQuests"] = { 27699 },	-- Shark Weak
-							}),
---							qg(, qh(25947)),	-- Finders, Keepers
+--[[
+							qg(, q(25670)),	-- DUN-dun-DUN-dun-DUN-dun
+							qg(, qh(25947)),	-- Finders, Keepers
 --							q(25666),	-- Getting Your Hands Dirty (In beta never added to game)
-							q(25587, {	-- Gimme Shelter
-								["qg"] = 39667,	-- Adarrah
-								["coord"] = { 53.4, 43.0, 201 },
-								["sourceQuests"] = { 27685 },	-- Good Deed Left Undone
-							}),
-							qg(41711, qh(25944, {	-- Girding Our Loins
+							qg(, q(25587)),	-- Gimme Shelter
+--]]
+							qg(41711, qh(25944, {  	-- Girding Our Loins
 								i(59806),
 								i(59805),
 								i(59807),
 							})),
-							q(27685, {	-- Good Deed Left Undone
-								["qg"] = 41252,	-- Rendel Firetongue
-								["coord"] = { 46.6, 46.6, 201 },
-								["isBreadcrumb"] = true,
-							}),
 --[[
+							qg(, q(27685)),	-- Good Deed Left Undone
 							qg(, qh(25946)),	-- Helm's Deep
 							qg(, q(25883)),	-- How Disarming
 --]]
 							n(40276, {	-- Sabreclaw Skitterer
 								i(54345, {	-- Crumpled Treasure Map
-									q(25467, {	-- Kliklak's Craw
+									q(25467, {  	-- Kliklak's Craw
 										i(59798),
 									}),
 								}),
 							}),
 							n(41017, {	-- Gilblin Collector
 								i(55186, {	-- Lady La-La's Necklace
-									q(25419, {	-- Lady La-La's Medallion
+									q(25419, {  	-- Lady La-La's Medallion
 										i(59784),
 										i(59783),
 									}),
 								}),
 							}),
-							q(25358, {	-- Nerve Tonic
-								["qg"] = 40983,	-- Mack Fearsen
-								["coord"] = { 57.3, 29.2, 201 },
-								["sourceQuests"] = { 25602 },	-- Can't Start a Fire Without a Spark
-							}),
-							q(25651, {	-- Oh, the Insanity!
-								["qg"] = 46338,	-- Budd
-								["coord"] = { 55.2, 38.8, 201 },
-								["sourceQuests"] = { 25602 },	-- Can't Start a Fire Without a Spark
-								-- SQ needs confirmation
-							}),
-							q(25547, {	-- On Our Own Terms
-								["qg"] = 39887,	-- Captain Taylor
-								["coord"] = { 44.7, 22.5, 201 },
-								["sourceQuests"] = {
-									25564,	-- Stormwind Elite Aquatic and Land Forces
-									25545,	-- To Arms!
-								},
-							}),
-							q(27729, {	-- Once More, With Eeling
-								["qgs"] = {
-									40855,	-- Slitherfin Eel
-									41002,	-- Slickskin Eel
-								},
-								["description"] = "Killing a Slitherfin or Slickskin Eel will make this quest pop up.",
-								-- Not sure if you can get it from either eel as either faction.
-								-- I picked it up on an Alliance character from a Slitherfin Eel.
-							}),
-							q(25459, {	-- Ophidophobia
-								["qg"] = 39883,	-- Adarrah
-								["coord"] = { 57.1, 28.7, 201 },
-								["sourceQuests"] = { 25602 },	-- Can't Start a Fire Without a Spark
-							}),
 --[[
+							qg(, q(25358)),	-- Nerve Tonic
+							qg(, q(25651)),	-- Oh, the Insanity!
+							qg(, q(25547)),	-- On Our Own Terms
+							qg(, q(27729)),	-- Once More, With Eeling
+							qg(, q(25459)),	-- Ophidophobia
 							qg(, qh(27668)),	-- Pay Attention!
 							qg(, qa(25281)),	-- Pay It Forward
 							qg(, qh(25936)),	-- Pay It Forward
@@ -476,90 +359,47 @@ _.Zones =
 								i(59797),	-- Abalone-Linked Robes      \
 								i(59795),	-- Harp Shell Shoulderpads    > ---- In beta never added to game.
 								i(59796),	-- Tread of Decapod Death    /
-							}),                                         / 
+							}),                                             / 
 --]]
 --[[
 							qg(, qa(25405)),	-- Rest For the Weary
 							qg(, qh(25941)),	-- Rest For the Weary
 							qg(, qa(24432)),	-- Sea Legs
 							qg(, qh(25929)),	-- Sea Legs
---]]
 --							q(35738),	-- Shallow End of the Gene Pool (In beta never added to game.)
 --							q(25498),	-- Shark Bait (In beta never added to game.)
-							q(27699, {	-- Shark Weak
-								["sourceQuests"] = { 25657 },	-- Dah, Nunt.. Dah, Nunt...
-								-- Quest is automatically offered upon completion of SQ
-							}),
-							qa(25812, {	-- Spelunking
-								["qg"] = 40105,	-- Erunak Stonespeaker
-								["coord"] = { 46.3, 46.8, 201 },
-								["sourceQuests"] = { 25794 },	-- Undersea Sanctuary
-							}),
---							qg(, qh(26000)),	-- Spelunking
+							qg(, q(27699)),	-- Shark Weak
+							qg(, qa(25812)),	-- Spelunking
+							qg(, qh(26000)),	-- Spelunking
 --							q(25636),	-- Starve a Fever, Feed a Cold (In beta never added to game.)
-							qa(25564, {	-- Stormwind Elite Aquatic and Land Forces
-								["qg"] = 39887,	-- Captain Taylor
-								["coord"] = { 44.7, 22.5, 201 },
-								["sourceQuests"] = {
-									25357,	-- Buy Us Some Time
-									25546,	-- Traveling on Our Stomachs
-								},
-							}),
+							qg(, qa(25564)),	-- Stormwind Elite Aquatic and Land Forces
 --							q(25737),	-- Tenuous Negotiatons (In beta never added to game.)
-							q(25371, {	-- The Abyssal Ride
-								["g"] = {
-									i(54465),	-- Vashj'ir Seahorse (MOUNT!)
-								},
-								["qg"] = 41248,	-- Moanah Stormhoof
-								["coord"] = { 46.0, 46.8, 201 },
-								["sourceQuests"] = { 25477 },	-- Better Late Than Dead
-							}),
+--]]
+							qg(41248, q(25371, {  	-- The Abyssal Ride
+								i(54465),
+							})),
 							n(39918, {	-- Clacksnap Pincer
 								i(53053, {	--Tattered Treasure Map
-									q(25377, {	-- The Horde's Hoard
+									q(25377, {  	-- The Horde's Hoard
 										i(59788),
 									}),
 								}),
 							}),
-							q(27708, {	-- The Warden's Time
-								["sourceQuests"] = { 25884 },	-- Come Hell or High Water
-								-- Quest automatically offered when 
-							}),
-							qa(25545, {	-- To Arms!
-								["g"] = {
-									i(59809),	-- Leftover Leggings
-									i(59808),	-- Scavenged Stormwind Spaulders
-									i(59810),	-- Captain Taylor's Chopper
-								},
-								["qg"] = 39887,	-- Captain Taylor
-								["coord"] = { 44.7, 22.5, 201 },
-								["sourceQuests"] = {
-									25357,	-- Buy Us Some Time
-									25546,	-- Traveling on Our Stomachs
-								},
-							}),
-							qa(25546, {	-- Traveling on Our Stomachs
-								["qg"] = 39887,	-- Captain Taylor
-								["coord"] = { 44.7, 22.5, 201 },
-							}),
---							qg(, qh(25943)),	-- Traveling on Our Stomachs
-							q(25794, {	-- Undersea Sanctuary
-								["qg"] = 40105,	-- Erunak Stonespeaker
-								["coord"] = { 46.3, 46.8, 201 },
-								["sourceQuests"] = { 25638 },	-- A Desperate Plea
-							}),
-							q(25887, {	-- Wake of Destruction
-								["qg"] = 41341,	-- Erunak Stonespeaker
-								["coord"] = { 63.8, 59.9, 201 },
-								["sourceQuests"] = { 25824 },	-- Debriefing
-							}),
+--							qg(, q(27708)),	-- The Warden's Time
+							qg(39887, qa(25545, {  	-- To Arms!
+								i(59809),
+								i(59808),
+								i(59810),
+							})),
+--[[
+							qg(, qa(25546)),	-- Traveling on Our Stomachs
+							qg(, qh(25943)),	-- Traveling on Our Stomachs
+							qg(, q(25794)),	-- Undersea Sanctuary
+							qg(, q(25887)),	-- Wake of Destruction
 --							q(25742),	-- What? This Old Thing? (In beta never added to game.)
-							qa(25885, {	-- What? What? In My Gut...?
-								["qg"] = 41340,	-- Private Pollard
-								["coord"] = { 63.9, 59.8, 201 },
-								["sourceQuests"] = { 25887 },	-- Wake of Destruction
-							}),
---							qg(, qh(26040)),	-- What? What? In My Gut...?
+							qg(, qa(25585)),	-- What? What? In My Gut...?
+							qg(, qh(26040)),	-- What? What? In My Gut...?
+--]]
 						}),
 						n(-16, {	-- Rares
 							n(49913, {	-- Lady La-La
@@ -627,12 +467,10 @@ _.Zones =
 									}),
 								}),
 							}),
---							qg(, qa(25535)),	-- A Powerful Need To Eat
-							q(25471, {	-- Across the Great Divide
-								["qg"] = 41341,	-- Erunak Stonespeaker
-								["coord"] = { 63.8, 59.9, 201 },
-								["sourceQuests"] = 27708,	-- The Warden's Time
-							}),
+--[[
+							qg(, qa(25535)),	-- A Powerful Need To Eat
+							qg(, q(25471)),	-- Across the Great Divide
+--]]
 							qg(40644, qa(25581,  { 	-- An Occupation of Time
 								i(59716),
 								i(59715),
@@ -676,11 +514,8 @@ _.Zones =
 							qg(, qa(25539)),	-- Clamming Up
 							qg(, qa(25748)),	-- Clear Goals
 							qg(, qh(25959)),	-- Clear Goals
+							qg(, qa(25536)),	-- Cold Welcome
 --]]
-							qa(25536, {	-- Cold Welcome
-								["qg"] = 42411,	-- Captain Taylor
-								["coord"] = { 56.9, 75.8, 205 },
-							}),
 							qg(41770, qh(25970,  { 	-- Come Prepared
 								i(59680),
 								i(59679),
@@ -947,22 +782,17 @@ _.Zones =
 						}),
 						n(-2,   {	-- Vendors
 							n(50324, {	-- Provisioner Arok <Earthen Ring Quartermaster>
-								["g"] = {
-									i(62363),	-- Earthmender's Boots
-									i(62364),	-- Flamebloom Gloves
-									i(62365),	-- World Keeper's Gauntlets
-									i(62357),	-- Cloak of Ancient Wisdom
-									i(62358),	-- Leggings of Clutching Roots
-									i(62359),	-- Peacemaker's Breastplate
-									i(62361),	-- Softwind Cape
-									i(62353),	-- Mantle of Moss
-									i(62355),	-- Stone-Wrapped Greaves
-									i(62356),	-- Helm of Temperance
-									i(65905),	-- Tabard of the Earthen Ring
-									i(62354),	-- Pendant of Elemental Balance
-									i(62362),	-- Signet of the Elder Council
-								},
-								["coord"] = { 49.1, 42.1, 205 },
+								i(62363),	-- Earthmender's Boots
+								i(62364),	-- Flamebloom Gloves
+								i(62365),	-- World Keeper's Gauntlets
+								i(62357),	-- Cloak of Ancient Wisdom
+								i(62358),	-- Leggings of Clutching Roots
+								i(62359),	-- Peacemaker's Breastplate
+								i(62361),	-- Softwind Cape
+								i(62353),	-- Mantle of Moss
+								i(62355),	-- Stone-Wrapped Greaves
+								i(62356),	-- Helm of Temperance
+								i(65905),	-- Tabard of the Earthen Ring
 							}),
 						}),
 						n(0,    {	-- Zone Drop

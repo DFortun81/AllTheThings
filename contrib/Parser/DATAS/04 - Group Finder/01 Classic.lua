@@ -11,7 +11,7 @@ _.GroupFinder =
 					i(51982),	-- Earthbound Boots*
 					un(2, i(51978)),	-- Earthbound Girdle [Probably unobtainable]
 					i(143580),	-- Earthbound Girdle*
-					-- un(2, i(51979)),	-- Earthbound Grips (moved to BC satchel)
+					un(2, i(51979)),	-- Earthbound Grips*
 					i(143581),	-- Earthbound Grips*
 					un(2, i(51980)),	-- Earthbound Handgrips [Probably unobtainable]
 					i(51976),	-- Earthbound Shoulderguards*

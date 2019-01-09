@@ -11,6 +11,121 @@ _.Zones =
 						i(143660), -- Mrgrglhjorn
 					}),
 				}),
+				gsh(1522, { -- Allied Races
+					["groups"] = {
+						qa(49929),	-- The Call for Allies
+						qg(126301, qa(50239, {	-- A Choice of Allies
+							na(-207, {	-- Lightforged Draenei
+								qg(126319, qa(49698)),	-- The Lightforged
+								qg(126319, qa(49266)),	-- Captain Fareeya
+								qg(126319, qa(50071, {	-- For the Light!
+									ach(12243, {	-- Allied Races: Lightforged Draenei
+										a(i(155656)),	-- Lightforged Felcrusher
+									}),
+								})),
+							}),
+							na(-208, {	-- Void Elves
+								qg(126321, qa(49787, {	-- The Ghostlands
+								-- qg(126321, qa(48787, {	-- Telogrus Rift. Quest got removed & renamed to 'not used reuse me' & talks about Ranishu's in Voldun.
+									ach(12242, {	-- Allied Races: Void Elf
+										a(i(156486)),	-- Starcursed Voidstrider
+									}),
+								})),
+							}),
+						})),
+						un(40, qg(126301, qa(50248))),	-- A Second Ally for the Cause
+						qh(49930),	-- The Call for Allies
+						qg(126065, qh(50242, {	-- A Choice for Allies
+							nh(-209, {	-- Highmountain Tauren
+								q(48066, { -- A Feast for Our Kin
+									["qg"] = 125285, -- Baine Bloodhoof <High Chieftain>
+								}),
+								q(48067, { -- Shadow Over Thunder Bluff
+									["qg"] = 129914, -- Baine Bloodhoof <High Chieftain>
+									["sourceQuests"] = { 48066 }, --A Feast for Our Kin
+								}),
+								q(49756, { -- Dark Forces
+									["qg"] = 130773, -- Baine Bloodhoof <High Chieftain>
+									["sourceQuests"] = { 48067 }, -- Shadow Over Thunder Bluff
+								}),
+								q(48079, { -- Return to Highmountain
+									["qg"] = 130773, -- Baine Bloodhoof <High Chieftain>
+									["sourceQuests"] = { 49756 }, -- Dark Forces
+								}),
+								q(41884, { -- Dark Tales
+									["qg"] = 105085, -- Spiritwalker Graysky
+									["sourceQuests"] = { 48079 }, -- Return to Highmountain
+								}),
+								q(41764, { -- Walking in Their Footsteps
+									["qg"] = 125454, -- Spiritwalker Graysky
+									["sourceQuests"] = { 41884 }, -- Dark Tales
+								}),
+								q(48185, { -- Shadow of the Sepulcher
+									["qg"] = 125454, -- Spiritwalker Graysky
+									["sourceQuests"] = { 41764 }, -- Walking in Their Footsteps
+								}),
+								q(41799, { -- Minions of the Darkness
+									["qg"] = 125459, -- Spiritwalker Graysky
+									["sourceQuests"] = { 48185 }, -- Shadows of the Sepulcher
+								}),
+								q(48190, { -- Huln's Mountain
+									["qg"] = 125459, -- Spiritwalker Graysky
+									["sourceQuests"] = { 41799 }, -- Minions of the Darkness
+								}),
+								q(41800, { -- Servants of the Darkness
+									["qg"] = 125466, -- Spiritwalker Graysky
+									["sourceQuests"] = { 48190 }, -- Huln's Mountain
+								}),
+								q(48434, { -- How Fares Ebonhorn?
+									["qg"] = 125466, -- Spiritwalker Graysky
+									["sourceQuests"] = { 41800 }, -- Servants of the Darkness
+								}),
+								q(41815, { -- Curse of the Necrodark
+									["qg"] = 108434, -- Mayla Highmountain
+									["sourceQuests"] = { 48434 }, -- How Fares Ebonhorn?
+								}),
+								q(41840, { -- Ice and Shadow
+									["qg"] = 130423, -- Baine Bloodhoof <High Chieftain>
+									["sourceQuests"] = { 41815 }, -- Curse of the Necrodark
+								}),
+								q(41882, { -- Whispers of the Darnkess
+									["qg"] = 97662, -- Jale Rivermane
+									["sourceQuests"] = { 41815 }, -- Curse of the Necrodark
+								}),
+								q(41841, { -- The Final Ward
+									["qg"] = 105213, -- Spiritwalker Ebonhorn
+									["sourceQuests"] = { 41840, 41882 }, -- Ice and Shadow / Whispers of the Darkness
+								}),
+								q(48403, { -- The Darkness
+									["qg"] = 105213, -- Spiritwalker Ebonhorn
+									["sourceQuests"] = { 41841 }, -- The Final Ward
+								}),
+								q(48433, { -- Together We Are the Horde!
+									["groups"] = {
+										ach(12245, { -- Allied Races: Highmountain Tauren
+											h(i(155662)), -- Highmountain Thunderhoof
+										}),
+									},
+									["qg"] = 126134, -- Baine Bloodhoof <High Chieftain>
+									["sourceQuests"] = { 48403 }, -- The Darkness
+								}),
+							}),
+							nh(-210, {	-- Nightborne
+								qg(126062, qh(49973)),	-- Thalyssra's Estate
+								qg(131478, qh(49613)),	-- Silvermoon City
+								qg(130133, qh(49354)),	-- Remember the Sunwell
+								qg(130133, qh(49614, {	-- The Nightborne
+									ach(12244, {	-- Allied Races: Nightborne
+										h(i(156487)),	-- Nightborne Manasaber
+									}),
+								})),
+							}),
+						})),
+						un(40, qg(126065, qh(50248))),	-- A Second Ally For the Cause
+					},
+					["icon"] = "Interface\\Icons\\FactionChange",
+					["lvl"] = 110,
+				}),
 				n(-170, {	-- Balance of Power
 					["groups"] = {
 						q(43496, { -- The Power Within

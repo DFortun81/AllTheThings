@@ -1112,50 +1112,49 @@ _.Craftables =
 		}),
 		n(-190, { 	-- Tailoring
 			n(-37, {	-- Discovery
-				["groups"] = {
-					spell(143011, {	-- Celestial Cloth
-						recipe(142964),	-- Belt of the Night Sky
-						recipe(142955),	-- Leggings of the Night Sky
-						recipe(142960),	-- White Cloud Belt
-						recipe(142951),	-- White Cloud Leggings
-						recipe(143053),	-- Crafted Malevolent Gladiator's Cape of Cruelty
-						recipe(143054),	-- Crafted Malevolent Gladiator's Cape of Prowess
-						recipe(143082),	-- Crafted Malevolent Gladiator's Cloak of Alacrity
-						recipe(143083),	-- Crafted Malevolent Gladiator's Cloak of Prowess
-						recipe(143056),	-- Crafted Malevolent Gladiator's Cord of Accuracy
-						recipe(143055),	-- Crafted Malevolent Gladiator's Cord of Cruelty
-						recipe(143057),	-- Crafted Malevolent Gladiator's Cord of Meditation
-						recipe(143061),	-- Crafted Malevolent Gladiator's Cuffs of Accuracy
-						recipe(143063),	-- Crafted Malevolent Gladiator's Cuffs of Meditation
-						recipe(143062),	-- Crafted Malevolent Gladiator's Cuffs of Prowess
-						recipe(143064),	-- Crafted Malevolent Gladiator's Drape of Cruelty
-						recipe(143066),	-- Crafted Malevolent Gladiator's Drape of Meditation
-						recipe(143065),	-- Crafted Malevolent Gladiator's Drape of Prowess
-						recipe(143088),	-- Crafted Malevolent Gladiator's Felweave Amice
-						recipe(143085),	-- Crafted Malevolent Gladiator's Felweave Cowl
-						recipe(143084),	-- Crafted Malevolent Gladiator's Felweave Handguards
-						recipe(143087),	-- Crafted Malevolent Gladiator's Felweave Raiment
-						recipe(143086),	-- Crafted Malevolent Gladiator's Felweave Trousers
-						recipe(143072),	-- Crafted Malevolent Gladiator's Mooncloth Gloves
-						recipe(143073),	-- Crafted Malevolent Gladiator's Mooncloth Helm
-						recipe(143074),	-- Crafted Malevolent Gladiator's Mooncloth Leggings
-						recipe(143076),	-- Crafted Malevolent Gladiator's Mooncloth Mantle
-						recipe(143075),	-- Crafted Malevolent Gladiator's Mooncloth Robe
-						recipe(143077),	-- Crafted Malevolent Gladiator's Satin Gloves
-						recipe(143078),	-- Crafted Malevolent Gladiator's Satin Hood
-						recipe(143079),	-- Crafted Malevolent Gladiator's Satin Leggings
-						recipe(143081),	-- Crafted Malevolent Gladiator's Satin Mantle
-						recipe(143080),	-- Crafted Malevolent Gladiator's Satin Robe
-						recipe(143071),	-- Crafted Malevolent Gladiator's Silk Amice
-						recipe(143068),	-- Crafted Malevolent Gladiator's Silk Cowl
-						recipe(143067),	-- Crafted Malevolent Gladiator's Silk Handguards
-						recipe(143070),	-- Crafted Malevolent Gladiator's Silk Robe
-						recipe(143069),	-- Crafted Malevolent Gladiator's Silk Trousers
-						recipe(143059),	-- Crafted Malevolent Gladiator's Treads of Alacrity
-						recipe(143058),	-- Crafted Malevolent Gladiator's Treads of Cruelty
-						recipe(143060),	-- Crafted Malevolent Gladiator's Treads of Meditation
-					}),
-					spell(125557, {	-- Imperial Silk
+				spell(143011, {	-- Celestial Cloth
+					recipe(142964),	-- Belt of the Night Sky
+					recipe(142955),	-- Leggings of the Night Sky
+					recipe(142960),	-- White Cloud Belt
+					recipe(142951),	-- White Cloud Leggings
+					recipe(143053),	-- Crafted Malevolent Gladiator's Cape of Cruelty
+					recipe(143054),	-- Crafted Malevolent Gladiator's Cape of Prowess
+					recipe(143082),	-- Crafted Malevolent Gladiator's Cloak of Alacrity
+					recipe(143083),	-- Crafted Malevolent Gladiator's Cloak of Prowess
+					recipe(143056),	-- Crafted Malevolent Gladiator's Cord of Accuracy
+					recipe(143055),	-- Crafted Malevolent Gladiator's Cord of Cruelty
+					recipe(143057),	-- Crafted Malevolent Gladiator's Cord of Meditation
+					recipe(143061),	-- Crafted Malevolent Gladiator's Cuffs of Accuracy
+					recipe(143063),	-- Crafted Malevolent Gladiator's Cuffs of Meditation
+					recipe(143062),	-- Crafted Malevolent Gladiator's Cuffs of Prowess
+					recipe(143064),	-- Crafted Malevolent Gladiator's Drape of Cruelty
+					recipe(143066),	-- Crafted Malevolent Gladiator's Drape of Meditation
+					recipe(143065),	-- Crafted Malevolent Gladiator's Drape of Prowess
+					recipe(143088),	-- Crafted Malevolent Gladiator's Felweave Amice
+					recipe(143085),	-- Crafted Malevolent Gladiator's Felweave Cowl
+					recipe(143084),	-- Crafted Malevolent Gladiator's Felweave Handguards
+					recipe(143087),	-- Crafted Malevolent Gladiator's Felweave Raiment
+					recipe(143086),	-- Crafted Malevolent Gladiator's Felweave Trousers
+					recipe(143072),	-- Crafted Malevolent Gladiator's Mooncloth Gloves
+					recipe(143073),	-- Crafted Malevolent Gladiator's Mooncloth Helm
+					recipe(143074),	-- Crafted Malevolent Gladiator's Mooncloth Leggings
+					recipe(143076),	-- Crafted Malevolent Gladiator's Mooncloth Mantle
+					recipe(143075),	-- Crafted Malevolent Gladiator's Mooncloth Robe
+					recipe(143077),	-- Crafted Malevolent Gladiator's Satin Gloves
+					recipe(143078),	-- Crafted Malevolent Gladiator's Satin Hood
+					recipe(143079),	-- Crafted Malevolent Gladiator's Satin Leggings
+					recipe(143081),	-- Crafted Malevolent Gladiator's Satin Mantle
+					recipe(143080),	-- Crafted Malevolent Gladiator's Satin Robe
+					recipe(143071),	-- Crafted Malevolent Gladiator's Silk Amice
+					recipe(143068),	-- Crafted Malevolent Gladiator's Silk Cowl
+					recipe(143067),	-- Crafted Malevolent Gladiator's Silk Handguards
+					recipe(143070),	-- Crafted Malevolent Gladiator's Silk Robe
+					recipe(143069),	-- Crafted Malevolent Gladiator's Silk Trousers
+					recipe(143059),	-- Crafted Malevolent Gladiator's Treads of Alacrity
+					recipe(143058),	-- Crafted Malevolent Gladiator's Treads of Cruelty
+					recipe(143060),	-- Crafted Malevolent Gladiator's Treads of Meditation
+				}),
+				spell(125557, {	-- Imperial Silk
 					recipe(138598),	-- Falling Blossom Cowl
 					recipe(138600),	-- Falling Blossom Hood
 					recipe(138599),	-- Falling Blossom Sandals
@@ -1197,8 +1196,6 @@ _.Craftables =
 					recipe(137912),	-- Crafted Dreadful Gladiator's Treads of Cruelty
 					recipe(137914),	-- Crafted Dreadful Gladiator's Treads of Meditation
 				}),
-				},
-				["requireSkill"] = 197,	-- Tailoring
 			}),
 			n(-25, {	-- Pet Battles
 				i(92960, {	-- Silkworm Cocoon

@@ -3,7 +3,7 @@
 -----------------------------------------------
 _.PVP =
 {
-	n(-242, { -- Unrated
+	n(-6015, { -- Rewards
 		i(135539, {	-- Crate of Battlefield Goods 15-39
 			["groups"] = {
 				i(134643),	-- Auxiliary's Cuffs*
@@ -336,6 +336,15 @@ _.PVP =
 				i(141858), -- Soldier's Worth
 			},	
 			["races"] = HORDE_ONLY,	
+		}),
+		{	-- Pattern: Imbued Silkweave Epaulets (Rank 3)
+			["itemID"] = 137975,	-- Pattern: Imbued Silkweave Epaulets
+			["description"] = "This has a CHANCE to drop from any rated battleground win.",
+			["requireSkill"] = 197,	-- Tailoring
+		},
+		i(123950, { -- Recipe: Demonsteel Pauldrons (Rank 3)
+			["description"] = "This has a CHANCE to drop from any rated battleground win.",
+			["requireSkill"] = 164, -- Blacksmithing
 		}),
 		i(1164252, { -- Champion's Strongbox		
 			["races"] = ALLIANCE_ONLY,	
@@ -733,20 +742,5 @@ _.PVP =
 			}),
 			["races"] = ALLIANCE_ONLY,
 		}),
-		-- S2 Items Aspirant Items
-		-- Horde
-		i(165196),	-- Sinister Aspirant's Pike
-		i(165190),	-- Sinister Aspirant's Runeaxe
-		i(165193),	-- Sinister Aspirant's Warglaive
-		i(165189),	-- Sinister Aspirant's Rifle
-		i(165195),	-- Sinister Aspirant's Greatsword
-		i(165197),	-- Sninister Aspirant Staff
-		-- Alliance
-		i(165202),	-- Sinister Aspirant's Pike
-		i(165204),	-- Sinister Aspirant's Warglaive
-		i(166476),	-- Sinister Aspirant's Runeaxe
-		i(165208),	-- Sinister Aspirant's Longbow
-		i(166478),	-- Sinister Aspirant's Greatsword
-		i(165200),	-- Sninister Aspirant Staff
 	}),
 };

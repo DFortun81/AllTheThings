@@ -19,7 +19,7 @@ _.GroupFinder =
 					i(51960),	-- Vigorous Gloves [User confirmed; haven't seen]
 					i(51975),	-- Earthbound Shoulders
 					i(51981),	-- Earthbound Wristguards
-					i(51979),	-- Earthbound Grips [User confirmed; haven't seen]
+					i(51979),	-- Earthbound Grips
 					i(51977),	-- Earthbound Girdle*
 					i(51983),	-- Stalwart Shoulderguards*
 					i(51989),	-- Stalwart Bands*

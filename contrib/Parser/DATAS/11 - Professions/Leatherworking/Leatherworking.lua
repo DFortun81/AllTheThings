@@ -123,16 +123,14 @@ profession(165, { -- Leatherworking
 			})),
 			qa(7497, { -- The Journey Has Just Begun
 				["groups"] = {
-					recipe(19093),		-- Onyxia Scale Cloak
-					un(1, i(15769)), 	-- Pattern: Onyxia Scale Cloak
+					un(1, i(15769)), -- Pattern: Onyxia Scale Cloak
 				},
 				["qg"] = 14394, -- Major Mattingly
 				["sourceQuests"] = {24428}, --A Most Puzzling Circumstance
 			}),
 			qh(7493, { -- The Journey Has Just Begun
 				["groups"] = {
-					recipe(19093),		-- Onyxia Scale Cloak
-					un(1, i(15769)), 	-- Pattern: Onyxia Scale Cloak
+					un(1, i(15769)), -- Pattern: Onyxia Scale Cloak
 				},
 				["qg"] = 14392, -- Overlord Natoj
 				["sourceQuests"] = {24429}, --A Most Puzzling Circumstance
