@@ -724,12 +724,13 @@ _.Zones =
 									i(117570),	-- Auchenai Soulbinder's Signet
 								},
 							},
-							{	-- Sparkling Pool	**No coords found**
+							{	-- Sparkling Pool
 								["objectID"] = 227868,	-- Sparkling Pool
 								["questID"] = 34207,
 								["description"] = "Requires Fishing",
 								["modelScale"] = 10,
 								["model"] = "World\\Dungeon\\WellofEternity\\WOE_Fountain_Pool.mdx",
+								["coord"] = { 39.2, 41.7 },
 								["g"] = {
 									i(112623, { -- Pack of Fishing Supplies
 										i(34834),	-- Recipe: Captain Rumsey's Lager
