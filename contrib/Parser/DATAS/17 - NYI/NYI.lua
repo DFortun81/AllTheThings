@@ -501,6 +501,7 @@ _.NeverImplemented =
 			un(1, i(4988)),		-- Burning Obsidian Band
 			un(1, i(17000)),	-- Band of the Wraith
 			un(1, i(17108)),	-- Mark of Deflection
+			un(1, i(132449)),	-- Phyrix's Embrace
 			un(1, i(13812)),	-- Ring of the Dawn
 			un(1, i(19065)),	-- Emerald Circle
 			un(1, i(62035)), 	-- Antique Myrmidon's Signet
@@ -520,6 +521,8 @@ _.NeverImplemented =
 			un(1, i(20084)), -- Hunting Net
 			un(1, i(20525)), -- Earthen Sigil
 			un(1, i(157761)),	-- Unknown
+			un(1, i(38383)),	-- Unknown
+			un(1, i(38526)),	-- Unknown
 		}),
 	}),
 	n(-494, { -- Misc
@@ -751,6 +754,7 @@ _.NeverImplemented =
 		un(1, i(163556)),	-- Mechanized Gulper. Old Magni Rep Rewards, they added it via a different item
 		un(1, i(152879)), -- Reuuse me
 		un(1, i(152880)), -- Reuuse me
+		un(1, i(131737)),	-- Wyrmy Tunkins
 		un(1, i(154703)), -- Hot Air Baloon
 		un(1, i(162686)), -- Demon Goat (unused Baa'l ID)
 		un(1, i(163553)), -- Digitized Assistant (used to be a pet)
@@ -1030,6 +1034,7 @@ _.NeverImplemented =
 		}),
 		n(-333, { -- Daggers
 			un(1, i(32179)),    -- Chancellor's Shiv
+			un(1, i(147908)),	-- 6.0 Weapon - Knife
 			un(1, i(23458)),    -- High Warlord's Spellblade (23466 was the added version)
 		}),
 		n(-348, { -- Fist Weapons
@@ -1042,6 +1047,7 @@ _.NeverImplemented =
 			un(1, i(109361)),    -- Unknown
 			un(1, i(109535)),    -- Unknown
 			un(1, i(109534)),    -- Unknown
+			un(1, i(165269)),	-- Unknown
 		}),
 		n(-345, { -- Guns
 			un(1, i(49455)),	-- Blunderbuss of Deforestation
