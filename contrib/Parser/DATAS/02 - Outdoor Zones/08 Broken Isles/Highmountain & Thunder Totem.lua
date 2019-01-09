@@ -7,6 +7,7 @@ _.Zones =
 		m(650, {	-- Highmountain
 			["maps"] = {
 				750,
+				659, 	-- Stonedark Grotto
 				660,	-- Feltotem Caverns
 				653,	-- Cave of the Blood Trial
 				869,	-- Highmountain (legion invasion ship 1)
