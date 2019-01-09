@@ -501,6 +501,8 @@ AllTheThings.Locales.enUS = {
 		[-234] = "Interface\\Icons\\achievement_zone_arathihighlands_01",		-- Warfront: The Battle for Stromgarde
 		[-235] = "Interface\\Icons\\inv_scroll_05",
 		[-243] = "Interface\\Icons\\ability_hunter_markedfordeath",				-- Bounty
+		[-244] = "Interface\\Icons\\ability_racial_fireblood",					-- Dark Iron Dwarf
+		[-245] = "Interface\\Icons\\achievement_alliedrace_magharorc",			-- Mag'har Orc
 		[-297] = "Interface\\Icons\\inv_letter_17", 							-- Mailbox
 		[-299] = "Interface\\Icons\\achievement_garrisonquests_1000", 			-- Missions
 		[-304] = "Interface\\Icons\\INV_BannerPVP_03",							-- Battlegrounds
@@ -1154,7 +1156,8 @@ AllTheThings.Locales.enUS = {
 		[-241] = PVP_SEASON_REWARD,												-- Season Reward
 		[-242] = "Unrated",														-- Unrated
 		[-243] = "Bounty",														-- Bounty
-		
+		[-244] = "Dark Iron Dwarf",												-- Dark Iron Dwarf
+		[-245] = "Mag'har Orc",													-- Mag'har Orc
 -- Other
 		[-294] = "Killed First",
 		[-295] = "Killed Second",
@@ -1780,7 +1783,6 @@ AllTheThings.Locales.enUS = {
 		[-10066] = BATTLE_PET_BREED_QUALITY6,			-- "Legendary";
 		[-10067] = ITEM_QUALITY6_DESC, 				-- Artifact
 		[-10068] = OPTION_TOOLTIP_ANIMATION,			-- PLACE_HOLDER
-		[-10069] = "Mag'har Orc",
 		
 		--90000+ are reserved for town names.  If you use one make sure to attach an icon (either here or in the file).
 		

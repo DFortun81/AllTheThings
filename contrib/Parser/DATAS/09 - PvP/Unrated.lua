@@ -735,13 +735,18 @@ _.PVP =
 		}),
 		-- S2 Items Aspirant Items
 		-- Horde
-		un(1, i(165196)),	-- Sinister Aspirant's Pike
-		un(1, i(165190)),	-- Sinister Aspirant's Runeaxe
-		un(1, i(165193)),	-- Sinister Aspirant's Warglaive
+		i(165196),	-- Sinister Aspirant's Pike
+		i(165190),	-- Sinister Aspirant's Runeaxe
+		i(165193),	-- Sinister Aspirant's Warglaive
+		i(165189),	-- Sinister Aspirant's Rifle
+		i(165195),	-- Sinister Aspirant's Greatsword
+		i(165197),	-- Sninister Aspirant Staff
 		-- Alliance
-		un(1, i(165202)),	-- Sinister Aspirant's Pike
-		un(1, i(165204)),	-- Sinister Aspirant's Warglaive
-		un(1, i(166476)),	-- Sinister Aspirant's Runeaxe
-		un(1, i(1665208)),	-- Sinister Aspirant's Longbow
+		i(165202),	-- Sinister Aspirant's Pike
+		i(165204),	-- Sinister Aspirant's Warglaive
+		i(166476),	-- Sinister Aspirant's Runeaxe
+		i(165208),	-- Sinister Aspirant's Longbow
+		i(166478),	-- Sinister Aspirant's Greatsword
+		i(165200),	-- Sninister Aspirant Staff
 	}),
 };

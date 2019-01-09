@@ -4,9 +4,9 @@
 _.PVP =
 {
 	n(-10058, { -- World
-		n(-343,	{	-- Bounty
-			
-		}),
+	--	n(-343,	{	-- Bounty (for later)
+	--		
+	--	}),
 		["groups"] = {
 			a(ach(12605, { -- Conqueror of Azeroth
 				i(163577), -- Conquerer's Scythemaw
