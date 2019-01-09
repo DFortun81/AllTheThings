@@ -500,6 +500,7 @@ AllTheThings.Locales.enUS = {
 		[-233] = "Interface\\Icons\\achievement_zone_arathihighlands_01",		-- Warfront: The Battle for Stromgarde
 		[-234] = "Interface\\Icons\\achievement_zone_arathihighlands_01",		-- Warfront: The Battle for Stromgarde
 		[-235] = "Interface\\Icons\\inv_scroll_05",
+		[-243] = "Interface\\Icons\\ability_hunter_markedfordeath",				-- Bounty
 		[-297] = "Interface\\Icons\\inv_letter_17", 							-- Mailbox
 		[-299] = "Interface\\Icons\\achievement_garrisonquests_1000", 			-- Missions
 		[-304] = "Interface\\Icons\\INV_BannerPVP_03",							-- Battlegrounds
@@ -1152,6 +1153,7 @@ AllTheThings.Locales.enUS = {
 		[-240] = PVP_TAB_CONQUEST,												-- Rated
 		[-241] = PVP_SEASON_REWARD,												-- Season Reward
 		[-242] = "Unrated",														-- Unrated
+		[-243] = "Bounty",														-- Bounty
 		
 -- Other
 		[-294] = "Killed First",

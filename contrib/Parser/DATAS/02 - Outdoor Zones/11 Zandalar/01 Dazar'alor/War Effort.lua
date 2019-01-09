@@ -106,6 +106,7 @@ _.Zones =
 												i(163873),	-- Honorbound Wand
 												i(163872),	-- Honorbound War Staff
 												i(163877),	-- Honorbound Warglaive
+												i(166337),	-- Honorbound Warhammer
 												i(163357),	-- Honorbound Artificer's Cloak
 												i(163368),	-- Honorbound Centurion's Long Cloak
 												i(163360),	-- Honorbound Outrider's Drape

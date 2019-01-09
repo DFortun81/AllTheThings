@@ -15,6 +15,8 @@ _.NeverImplemented =
 		un(1, i(166680)),	-- Echo of Elune (maybe you will able to get it with a hotfix?)
 		un(1, i(166358)),	-- Proper Parrot/ Proper Parrot was supposed to be added in 8.1, tied to the quest Be More Uniform.A few days after 8.1 went live, it was removed from the pet journal. Nobody obtained it from the quest.
 		un(1, i(165845)),	-- Mechanical Feather. Most likely same as above.
+		un(1, i(165792)),	-- Worn Cloak (future WQ?)
+		un(1, i(165925)),	-- Drape of Valiant Defense (future WQ?)
 	}),
 	n(-220, { -- Class
 		cl(12, { -- DH
@@ -446,6 +448,13 @@ _.NeverImplemented =
 			un(1, i(134605)), -- Vanguard Cloak
 			un(1, i(154698)), -- Tidespray Linen Cloak of the Feather (Doesnt load ingame)
 			un(1, i(154701)), -- Tidespray Linen Cloak of Resilience (Doesnt load ingame)
+			un(1, i(163371)),	-- Honorbound Centurions Cloak
+			un(1, i(163356)),	-- Honorbound Artificier Drape (different version used with locked to specific classes)
+			un(1, i(163358)),	-- Honorbound Artificier greatcloak (different version used with locked to specific classes)
+			un(1, i(163361)),	-- Honorbound outrider greatcloak (different version used with locked to specific classes)
+			un(1, i(163362)),	-- Honorbound outrider cloak  (different version used with locked to specific classes)
+			un(1, i(163365)),	-- Honorbound vanguard greatcloak (different version used with locked to specific classes)
+			un(1, i(163367)),	-- Honorbound vanguard long cloak (different version used with locked to specific classes)
 			un(1, i(162640)), 	-- Horde Toy Cape (used from Winter Veil 2018 Toy, but its just used to attach the look to you, you actually never get the item)
 			un(1, i(162641)), 	-- Alliance Toy Cape (used from Winter Veil 2018 Toy, but its just used to attach the look to you, you actually never get the item)
 		}),
@@ -1038,6 +1047,8 @@ _.NeverImplemented =
 			un(1, i(38246)),	-- Skull-Forged Blunderbuss
 			un(1, i(161296)),	-- Autumnvale Hunting Rifle (they added a different version)
 			un(1, i(164933)),	-- Sem'jin Beakblade Longrifle
+			un(1, i(165270)),	-- Unknown
+			un(1, i(165266)),	-- Unknown
 			
 		}),
 		n(-331, { -- Held in Offhand
