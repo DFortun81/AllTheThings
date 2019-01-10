@@ -35,10 +35,7 @@ _.Instances = { tier(1, {	-- Classic
 										["requireSkill"] = 165,	-- Leatherworking
 										["groups"] = {
 											{
-												["spellID"] = 19093,	-- Onyxia Scale Cloak (Recipe)
-												["groups"] = {
-													i(15138),	-- Onyxia Scale Cloak
-												},
+												["recipeID"] = 19093,	-- Onyxia Scale Cloak (Recipe)
 											},
 										},
 									},
@@ -68,10 +65,7 @@ _.Instances = { tier(1, {	-- Classic
 										["requireSkill"] = 165,	-- Leatherworking
 										["groups"] = {
 											{
-												["spellID"] = 19093,	-- Onyxia Scale Cloak (Recipe)
-												["groups"] = {
-													i(15138),	-- Onyxia Scale Cloak
-												},
+												["recipeID"] = 19093,	-- Onyxia Scale Cloak (Recipe)
 											},
 										},
 									},
@@ -133,11 +127,8 @@ _.Instances = { tier(1, {	-- Classic
 										["requireSkill"] = 165,	-- Leatherworking
 										["u"] = 2,				-- Unobtainable
 										["groups"] = {
-											{
-												["spellID"] = 19093,	-- Onyxia Scale Cloak (Recipe)
-												["groups"] = {
-													i(15138),	-- Onyxia Scale Cloak
-												},
+											{	-- Onyxia Scale Cloak (Recipe)
+												["recipeID"] = 19093,	-- Onyxia Scale Cloak (Recipe)
 											},
 										},
 									},
@@ -157,10 +148,7 @@ _.Instances = { tier(1, {	-- Classic
 										["requireSkill"] = 165,	-- Leatherworking
 										["groups"] = {
 											{
-												["spellID"] = 19093,	-- Onyxia Scale Cloak (Recipe)
-												["groups"] = {
-													i(15138),	-- Onyxia Scale Cloak
-												},
+												["recipeID"] = 19093,	-- Onyxia Scale Cloak (Recipe)
 											},
 										},
 									},
@@ -234,11 +222,8 @@ _.Instances = { tier(1, {	-- Classic
 										["requireSkill"] = 165,	-- Leatherworking
 										["u"] = 2,				-- Unobtainable
 										["groups"] = {
-											{
-												["spellID"] = 19093,	-- Onyxia Scale Cloak (Recipe)
-												["groups"] = {
-													i(15138),	-- Onyxia Scale Cloak
-												},
+											{	-- Onyxia Scale Cloak (Recipe
+												["recipeID"] = 19093,	-- Onyxia Scale Cloak (Recipe)
 											},
 										},
 									},
@@ -258,10 +243,7 @@ _.Instances = { tier(1, {	-- Classic
 										["requireSkill"] = 165,	-- Leatherworking
 										["groups"] = {
 											{
-												["spellID"] = 19093,	-- Onyxia Scale Cloak (Recipe)
-												["groups"] = {
-													i(15138),	-- Onyxia Scale Cloak
-												},
+												["recipeID"] = 19093,	-- Onyxia Scale Cloak (Recipe)
 											},
 										},
 									},

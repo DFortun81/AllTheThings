@@ -259,6 +259,7 @@ AllTheThings.Locales.enUS = {
 		[56] = GetItemClassInfo(5),								-- Reagents (Crafting, etc)
 		[57] = GetItemSubClassInfo(2,20),						-- Fishing Poles
 		[58] = AUCTION_CATEGORY_CONTAINERS,						-- Containers (Tier Tokens, Timeless Isle BoA gear tokens, Bags of loot, etc)
+		[59] = "Class Books",									-- Class Books (Classic Spells, Ashran Books, etc)
 
 		-- "Non-Equipment Types"
 		[100] = GetItemSubClassInfo(15,5),						-- Mounts

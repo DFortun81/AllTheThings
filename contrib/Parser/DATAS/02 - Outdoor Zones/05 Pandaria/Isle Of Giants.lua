@@ -60,7 +60,6 @@ _.Zones =
 							i(95423),	-- Zandalari Footlsasher
 							i(94126),	-- Zandalari Kneebiter
 							i(94232, {	-- Ancient Tome of Dinomancy
-								["collectible"] = false,
 								["classes"] = { 3 }, -- Hunter
 							}),
 						}),
