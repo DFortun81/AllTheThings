@@ -694,7 +694,7 @@ _.Zones =
 							{	-- Sasha's Secret Stash
 								["objectID"] = 236149,	-- Sasha's Secret Stash
 								["questID"] = 36631,
-								["coords"] = { 39.0, 68.1 },
+								["coord"] = { 39.0, 68.1 },
 								["g"] = {
 									-- Weapons
 									i(116508),	-- Creeperclaw Axe

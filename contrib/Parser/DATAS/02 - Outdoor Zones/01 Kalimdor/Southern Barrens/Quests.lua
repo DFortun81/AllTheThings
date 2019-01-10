@@ -566,7 +566,7 @@ _.Zones =
 							i(53263),	-- Bael Modan Monnion
 							i(53271),	-- Feegly's Shroud
 							i(53280),	-- Misery's End
-							i(131602),	-- Bael Modan Amice
+							i(131402),	-- Bael Modan Amice
 						},
 						["qg"] = 39155,	-- Marley Twinbraid
 						["races"] = ALLIANCE_ONLY,

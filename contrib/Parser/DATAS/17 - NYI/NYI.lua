@@ -11,6 +11,13 @@ _.NeverImplemented =
 		un(1, i(163121)),	-- Vicious War Basilisk (Horde, Red, probably will be added in a later patch)
 		un(1, i(163122)),	-- Vicious War Basilisk (Ally, Blue, probably will be added in a later patch)
 		un(1, i(157622)),	-- Silverscope Longrifle ( Level 20 Kul Tiran Hunter Start Gear?)
+		un(1, i(157644)),	-- Greataxe of Fury (Lv20 Kul Tiran Warrior Start Gear?
+		un(1, i(157621)),	-- Staff of Regrowth (Lv20 Start Gear?)
+		un(1, i(166680)),	-- Echo of Elune (maybe you will able to get it with a hotfix?)
+		un(1, i(166358)),	-- Proper Parrot/ Proper Parrot was supposed to be added in 8.1, tied to the quest Be More Uniform.A few days after 8.1 went live, it was removed from the pet journal. Nobody obtained it from the quest.
+		un(1, i(165845)),	-- Mechanical Feather. Most likely same as above.
+		un(1, i(165792)),	-- Worn Cloak (future WQ?)
+		un(1, i(165925)),	-- Drape of Valiant Defense (future WQ?)
 	}),
 	n(-220, { -- Class
 		cl(12, { -- DH
@@ -309,6 +316,7 @@ _.NeverImplemented =
 			}),
 			un(1, i(12105)),	-- Pridemail Leggings
 			un(1, i(37420)),	-- Sharkproof Boots
+			un(1, i(68844)),	-- Unknown
 			un(1, i(37433)),	-- Layered Scale Boots
 			un(1, i(37444)),	-- Wavekeeper's Helm
 			un(1, i(13090)),	-- Breastplate of the Chosen
@@ -442,6 +450,13 @@ _.NeverImplemented =
 			un(1, i(134605)), -- Vanguard Cloak
 			un(1, i(154698)), -- Tidespray Linen Cloak of the Feather (Doesnt load ingame)
 			un(1, i(154701)), -- Tidespray Linen Cloak of Resilience (Doesnt load ingame)
+			un(1, i(163371)),	-- Honorbound Centurions Cloak
+			un(1, i(163356)),	-- Honorbound Artificier Drape (different version used with locked to specific classes)
+			un(1, i(163358)),	-- Honorbound Artificier greatcloak (different version used with locked to specific classes)
+			un(1, i(163361)),	-- Honorbound outrider greatcloak (different version used with locked to specific classes)
+			un(1, i(163362)),	-- Honorbound outrider cloak  (different version used with locked to specific classes)
+			un(1, i(163365)),	-- Honorbound vanguard greatcloak (different version used with locked to specific classes)
+			un(1, i(163367)),	-- Honorbound vanguard long cloak (different version used with locked to specific classes)
 			un(1, i(162640)), 	-- Horde Toy Cape (used from Winter Veil 2018 Toy, but its just used to attach the look to you, you actually never get the item)
 			un(1, i(162641)), 	-- Alliance Toy Cape (used from Winter Veil 2018 Toy, but its just used to attach the look to you, you actually never get the item)
 		}),
@@ -487,6 +502,7 @@ _.NeverImplemented =
 			un(1, i(4988)),		-- Burning Obsidian Band
 			un(1, i(17000)),	-- Band of the Wraith
 			un(1, i(17108)),	-- Mark of Deflection
+			un(1, i(132449)),	-- Phyrix's Embrace
 			un(1, i(13812)),	-- Ring of the Dawn
 			un(1, i(19065)),	-- Emerald Circle
 			un(1, i(62035)), 	-- Antique Myrmidon's Signet
@@ -506,6 +522,8 @@ _.NeverImplemented =
 			un(1, i(20084)), -- Hunting Net
 			un(1, i(20525)), -- Earthen Sigil
 			un(1, i(157761)),	-- Unknown
+			un(1, i(38383)),	-- Unknown
+			un(1, i(38526)),	-- Unknown
 		}),
 	}),
 	n(-494, { -- Misc
@@ -532,6 +550,8 @@ _.NeverImplemented =
 		un(1, i(134824)),	-- "Sir Pugsington" Costume
 		un(1, i(137602)),	-- Unknown
 		un(1, i(151060)),	--
+		un(1, i(158782)),	-- Warchief's Prideful
+		un(1, i(158841)),	-- High King's Pride
 		un(1, i(140787)),	--
 		un(1, i(140921)),	--
 		un(1, i(132107)),	--
@@ -730,8 +750,12 @@ _.NeverImplemented =
 		p(1751),
 	}))),
 		un(1, i(130145)), -- Unknown
+		un(1, i(163559)),	-- Queen Cobra. Old Magni Rep Rewards, they added it via a different item
+		un(1, i(163557)),	-- Gigan Tarantula. Old Magni Rep Rewards, they added it via a different item
+		un(1, i(163556)),	-- Mechanized Gulper. Old Magni Rep Rewards, they added it via a different item
 		un(1, i(152879)), -- Reuuse me
 		un(1, i(152880)), -- Reuuse me
+		un(1, i(131737)),	-- Wyrmy Tunkins
 		un(1, i(154703)), -- Hot Air Baloon
 		un(1, i(162686)), -- Demon Goat (unused Baa'l ID)
 		un(1, i(163553)), -- Digitized Assistant (used to be a pet)
@@ -1011,6 +1035,7 @@ _.NeverImplemented =
 		}),
 		n(-333, { -- Daggers
 			un(1, i(32179)),    -- Chancellor's Shiv
+			un(1, i(147908)),	-- 6.0 Weapon - Knife
 			un(1, i(23458)),    -- High Warlord's Spellblade (23466 was the added version)
 		}),
 		n(-348, { -- Fist Weapons
@@ -1023,12 +1048,15 @@ _.NeverImplemented =
 			un(1, i(109361)),    -- Unknown
 			un(1, i(109535)),    -- Unknown
 			un(1, i(109534)),    -- Unknown
+			un(1, i(165269)),	-- Unknown
 		}),
 		n(-345, { -- Guns
 			un(1, i(49455)),	-- Blunderbuss of Deforestation
 			un(1, i(38246)),	-- Skull-Forged Blunderbuss
 			un(1, i(161296)),	-- Autumnvale Hunting Rifle (they added a different version)
 			un(1, i(164933)),	-- Sem'jin Beakblade Longrifle
+			un(1, i(165270)),	-- Unknown
+			un(1, i(165266)),	-- Unknown
 			
 		}),
 		n(-331, { -- Held in Offhand
@@ -1045,6 +1073,10 @@ _.NeverImplemented =
 			un(1, i(108779)),	-- Unknown
 			un(1, i(108780)),	-- Unknown
 			un(1, i(108781)),	-- Unknown
+			un(1, i(159483)),	--Unknown
+			un(1, i(159484)),	--Unknown
+			un(1, i(164967)),	--Unknown
+			un(1, i(165264)),	--Unknown
 			un(1, i(109319)),	-- 6.0 QA Combat Test Agility 1h Axe 2
 			un(1, i(109502)),	-- 6.0 QA Combat Test Agility 1h Axe
 			un(1, i(109536)),	-- 6.0 QA Combat Test Offhand Agility Axe 2
@@ -1067,6 +1099,10 @@ _.NeverImplemented =
 			un(1, i(124084)),	-- Unknown - was under WoD>1Handed Swords
 			un(1, i(127852)),	-- Unknown - was under WoD>1Handed Swords
 			un(1, i(165273)),	-- Unknown - was under Legion>1Handed Swords
+		}),
+		n(-343,	{ -- Polearms
+			un(1, i(158504)),	-- Whaler's Pike
+			un(1, i(158563)),	-- Tomb-Rustler's Polearm
 		}),
 		n(-342, { -- Staves
 			un(1, i(132474)),	-- Unknown - was under Legion>Staves
@@ -1092,6 +1128,7 @@ _.NeverImplemented =
 			un(1, i(109531)),	-- Unknown - was under Legion>Staves
 			un(1, i(109532)),	-- Unknown - was under Legion>Staves
 			un(1, i(32185)),    -- Chancellor's War Staff
+			un(1, i(166887)),	-- Unknown
 			un(1, i(118180)),	-- Aluneth
 			un(1, i(129752)),	-- Aluneth
 			un(1, i(129753)),	-- Aluneth
@@ -1120,6 +1157,7 @@ _.NeverImplemented =
 			un(1, i(134563)),	-- Unknown
 			un(1, i(108782)),	-- Unknown
 			un(1, i(109519)),	-- Unknown
+			un(1, i(165265)),	-- Unknown
 		}),
 		n(-337, { -- Two Handed Swords
 			un(1, i(139621)),	-- The Watcher's Hammer. Used for Lost Edicts of the Watcher Paladin Appearance, actual appearance is gained via a different item
@@ -1142,12 +1180,20 @@ _.NeverImplemented =
 			un(1, i(108806)),	-- Unknown, tagged as 2Hand Sword
 			un(1, i(109373)),	-- 6.0 QA Combat Test Strength 2h Sword
 			un(1, i(122747)),	-- Unknown
+			un(1, i(165274)),	-- Unknown
+		}),
+		n(-341, { -- Wands
+			un(1, i(161924)),	-- Seapriest's Wand (never addedd)
+			un(1, i(161926)),	-- Talanji's Salutary Scepter (never added)
 		}),
 		n(-340, { -- War Glaives
 			un(1, i(129735)), 	-- Verus
 			un(1, i(129736)), 	-- Verus
+			un(1, i(158580)),	-- Loa-Claimer's Wariglaives
 			un(1, i(151138)), 	-- Warglaive of Azzinoth [This version not implemented; was testing for transmog]
 			un(1, i(129737)), 	-- Verus
+			un(1, i(165682)),	-- Unknown
+			un(1, i(164760)),	-- Illidari Warglaives (Lv100 boosted gear)
 		}),
 	un(1, i(80980)),	-- Axe of Aborted Deforestation (Never made it to Live, yet into our Appearances Tab)
 	un(1, i(80983)),	-- Extravagant Tree Chopper (Never made it to Live, yet into our Appearances Tab)

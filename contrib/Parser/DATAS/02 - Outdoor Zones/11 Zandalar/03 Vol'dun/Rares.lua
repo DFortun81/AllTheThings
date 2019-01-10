@@ -13,6 +13,7 @@ _.Zones =
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 									i(161021),	-- Soaring Slateclaw Gloves
 								}),
+								["coord"] = { 50.3, 81.6 },
 								["questID"] = 51058,
 							}),
 							n(130439, {	-- Ashmane
@@ -28,6 +29,7 @@ _.Zones =
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 									i(162622),	-- Groggy Brawler's Chestplate
 								}),
+								["coord"] = { 31.0, 81.0 },
 								["questID"] = 49251,
 							}),	
 							n(129476, {	-- Bloated Krolusk		
@@ -94,6 +96,7 @@ _.Zones =
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 									i(161107),	-- Brineshell Footguards [Low Droprate]
 								}),
+								["coord"] = { 37.3, 84.8 },	-- sort of mills around in this general area, 1 coord should suffice
 								["questID"] = 49392,
 							}),	
 							n(136341, {	-- Jungleweb Hunter		
@@ -134,18 +137,21 @@ _.Zones =
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 									i(160956),	-- Hazaak's Windshorn Claws
 								}),
+								["coord"] = { 49.0, 72.0 },
 								["questID"] = 51126,	
 							}),	
 							n(127776, {	-- Scaleclaw Broodmother
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 									i(161039),	-- Sandclaw Handguards
 								}),
+								["coord"] = { 44.4, 80.1 },
 								["questID"] = 48960,
 							}),
 							n(136336, {	-- Scorpox
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 									i(161030),	-- Vicious Scorpidsting Sandals
 								}),
+								["coord"] = { 32.8, 65.1 },
 								["questID"] = 51076,
 							}),
 							n(136338, {	-- Sirokar
@@ -161,6 +167,9 @@ _.Zones =
 								["questID"] = 50637,
 							}),
 							n(134745, {	-- Skycarver Krakit
+								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+									i(160980),	-- Skycarver Warglaive
+								}),
 								["questID"] = 50686,
 							}),
 							n(136304, {	-- Songstress Nahjeen
