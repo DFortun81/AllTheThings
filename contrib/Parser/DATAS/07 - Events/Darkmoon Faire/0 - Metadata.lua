@@ -7,7 +7,7 @@ _.WorldEvents =
 		["mapID"] = 407,	-- Darkmoon Island
 		["icon"] = "Interface\\Addons\\AllTheThings\\assets\\dmf",
 		["maps"] = {
-			408
+			408,	-- Cauldron of Rock
 		},
 		["achievementID"] = 6019, -- Come One, Come All!
 	},	

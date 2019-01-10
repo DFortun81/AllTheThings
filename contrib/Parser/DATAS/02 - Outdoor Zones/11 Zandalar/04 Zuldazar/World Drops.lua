@@ -72,7 +72,6 @@ _.Zones =
 							i(159807),	-- Zem'lan Buckler
 							i(159479),	-- Zem'lan Chopper
 							i(159488),	-- Zem'lan Cleaver
-							i(155456),	-- Zem'lan Crewman's Cloak
 							i(159528),	-- Zem'lan Dagger
 							i(159557),	-- Zem'lan Headsmasher
 							i(159601),	-- Zem'lan Longsword
