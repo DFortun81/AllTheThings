@@ -13,6 +13,10 @@ _.NeverImplemented =
 		un(1, i(157622)),	-- Silverscope Longrifle ( Level 20 Kul Tiran Hunter Start Gear?)
 		un(1, i(157644)),	-- Greataxe of Fury (Lv20 Kul Tiran Warrior Start Gear?
 		un(1, i(157621)),	-- Staff of Regrowth (Lv20 Start Gear?)
+		un(1, i(157623)),	-- Frostcore Staff (Lv20 Start Gear?)
+		un(1, i(157624)),	--  Staff of Inner Flame (Lv20 Start Gear?)
+		un(1, i(157625)),	-- Mash Tun Mixer (Lv20 Start Gear?)
+		un(1, i(157626)),	-- Staff of Sining mists (Lv20 Start Gear?)
 		un(1, i(166680)),	-- Echo of Elune (maybe you will able to get it with a hotfix?)
 		un(1, i(166358)),	-- Proper Parrot/ Proper Parrot was supposed to be added in 8.1, tied to the quest Be More Uniform.A few days after 8.1 went live, it was removed from the pet journal. Nobody obtained it from the quest.
 		un(1, i(165845)),	-- Mechanical Feather. Most likely same as above.
@@ -1130,6 +1134,8 @@ _.NeverImplemented =
 			un(1, i(32185)),    -- Chancellor's War Staff
 			un(1, i(166887)),	-- Unknown
 			un(1, i(118180)),	-- Aluneth
+			un(1, i(158509)),	-- Tideshaper Staff
+			un(1, i(158568)),	-- Mojo-Drainer Staff
 			un(1, i(129752)),	-- Aluneth
 			un(1, i(129753)),	-- Aluneth
 			un(1, i(129754)),	-- Aluneth

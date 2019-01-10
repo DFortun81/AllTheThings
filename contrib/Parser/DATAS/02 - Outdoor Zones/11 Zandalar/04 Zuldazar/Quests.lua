@@ -480,7 +480,21 @@ _.Zones =
 								["sourceQuests"] = { 52305 },	-- Nature Versus Nurture
 								["isDaily"] = true,
 							}),	
-					--]]	qh(52113, {	-- Vol'jin, Son of Sen'jin
+						--]]qh(47587, {	-- Headhunter Jo
+								["g"] = {
+									i(159114),	-- Rootway Safari Greatbow
+									i(159115),	-- K'tal Fang Blade
+									i(159116),	-- Wildtusk Ivory
+									i(159117),	-- Great Hunter Skullcracker
+									i(159118),	-- Rootway Safari Greatbow
+									i(159119),	-- Headhunter Jo's Machecte
+									i(159120),	-- Great Hunt Warglaive
+									i(159121),	-- Headhunter Jo's Longstaff
+									i(159122),	-- Wildtusk Ivory Headcracker
+								},
+								["qg"] = 138669	-- Hemet Nesingwary
+							}),
+							qh(52113, {	-- Vol'jin, Son of Sen'jin
 								["qg"] = 137878,	-- Master Gadrin
 								["coord"] = { 45.5, 35.8 },
 								["sourceQuests"] = { 52114 },	-- Honoring a True Leader
