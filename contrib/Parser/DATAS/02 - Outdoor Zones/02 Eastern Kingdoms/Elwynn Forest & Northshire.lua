@@ -316,6 +316,22 @@ _.Zones =
 --					n(50752, { 	-- Tarantis }), 
 --					n(51014, { 	-- Terrapis	}), 
 				}),
+				n(-212, {	-- Treasure Chest
+					["groups"] = {
+						{	--	Waterlogged Chest
+							["objectID"] = 310709,	-- Waterlogged Chest
+							--["questID"] = 34236,
+							["coords"] = {
+								{ 32.3, 63.6 },
+							},
+							["g"] = {
+								i(3678),	-- Recipe: Crocolisk Steak
+								i(7997),	-- Red Defias Mask
+								i(2057),	-- Pitted Defias Shortsword
+							},
+						},
+					},
+				}),
 				n( -2, {	-- Vendors
 					a(n(844, {	-- Antonio Perelli <Traveling Salesman>
 						["groups"] = {

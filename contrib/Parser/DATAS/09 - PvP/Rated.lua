@@ -1158,8 +1158,8 @@ _.PVP =
 			},
 			{	-- Reins of the Onyx War Hyena
 				["itemID"] = 166417,	-- Reins of the Onyx War Hyena
-				["u"] = 1,	-- Presumably Random Win from any rated Bracket in Season 2, but unclear for now and marked as unobtainable
-				-- We might have to update this once we know the exact source for the War Hyena
+				--["u"] = 1,	-- Presumably Random Win from any rated Bracket starting with Season 2, but unclear for now
+				
 			},
 			{	-- 2v2/3v3/RBG
 				["itemID"] = 165717,	-- Steel Strong Box -- 2v2/3v3/RBG sometimes on Lose, contains only BFA Mats - Ally
