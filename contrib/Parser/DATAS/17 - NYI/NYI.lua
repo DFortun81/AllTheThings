@@ -1040,6 +1040,8 @@ _.NeverImplemented =
 		n(-333, { -- Daggers
 			un(1, i(32179)),    -- Chancellor's Shiv
 			un(1, i(147908)),	-- 6.0 Weapon - Knife
+			un(1, i(159534)),	-- Unknown
+			un(1, i(165268)),	-- Unknown
 			un(1, i(23458)),    -- High Warlord's Spellblade (23466 was the added version)
 		}),
 		n(-348, { -- Fist Weapons
@@ -1070,6 +1072,10 @@ _.NeverImplemented =
 			un(1, i(42523)),	-- Savage Gladiator's Endgame
 			un(1, i(42529)),	-- Savage Gladiator's Reprieve
 			un(1, i(42535)),	-- Savage Gladiator's Grimoire
+			un(1, i(159941)),	-- Unknown
+			un(1, i(161933)),	-- Unknown
+			un(1, i(161937)),	-- Unknown
+			un(1, i(165277)),	-- Unknown
 		}),
 		n(-334, { -- One-Handed Axes
 			un(1, i(49456)),	-- Will of the Earth
