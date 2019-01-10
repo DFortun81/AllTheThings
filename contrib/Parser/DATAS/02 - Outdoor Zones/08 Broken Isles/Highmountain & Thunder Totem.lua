@@ -10,6 +10,7 @@ _.Zones =
 				659, 	-- Stonedark Grotto
 				660,	-- Feltotem Caverns
 				653,	-- Cave of the Blood Trial
+				655,	-- Lifespring Cavern
 				869,	-- Highmountain (legion invasion ship 1)
 				870,	-- Highmountain (legion invasion ship 2)
 			},
