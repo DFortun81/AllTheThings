@@ -426,9 +426,40 @@ _.Zones =
 									["currencyID"] = 1560,	-- War Resources
 									["g"] = {
 										i(165719),	-- Monelite Whetstone
-										i(165728, {	-- Outpost Upgrade: The Great Seal
-											["f"] = 55, -- Consumable; Might change to Misc later
-										}),
+										{	-- Outpost Upgrade: The Great Seal
+											["itemID"] = 165728,	-- Outpost Upgrade: The Great Seal
+											["f"] = 55,				-- Consumable
+											["questID"] = 54226,	-- Mission Start Trigger
+											["g"] = {
+												{	-- Upgrade: The Great Seal
+													["missionID"] = 2106,	-- Upgrade: The Great Seal
+													["questID"] = 54294,	-- Triggers when completed
+													["sourceQuests"] = {
+														54226,	-- Outpost Upgrade Mission Trigger
+													},
+												},
+												{	-- Mission Report: The Great Seal
+													["questID"] = 54225,	-- Mission Report: The Great Seal
+													["qg"] = 138706,		-- Mission Command Table
+													["coords"] = {
+														{ 51.59, 99.58, 1165 },	-- The Banshee's Wail Location [Original]
+													},
+													["sourceQuests"] = {
+														54294,	-- Upgrade: The Great Seal Mission Complete
+													},
+												},
+												{	-- Outpost Upgrade: The Great Seal
+													["questID"] = 54231,	-- Outpost Upgrade: The Great Seal
+													["qg"] = 135691,		-- Nathanos Blightcaller
+													["coords"] = {
+														{ 58.44, 62.67, 862 },
+													},
+													["sourceQuests"] = {
+														54225,	-- Mission Report: The Great Seal
+													},
+												},
+											},
+										},
 										i(165804, {	-- Outpost Upgrade: Vulpera Hideaway
 											["f"] = 55, -- Consumable; Might change to Misc later
 										}),
