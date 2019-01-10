@@ -14,12 +14,12 @@ _.Instances =
 						["isRaid"] = true,
 						["lvl"] = 85,
 						["maps"] = {
-							71,	-- Tanaris
-							74, -- Tanaris: Caverns of Time Entrance
-							75, -- Tanaris: Caverns of Time
-							84,	-- Stormwind City
-							85,	-- Orgrimmar
-							86,	-- Orgrimmar: The Drag
+							71,		-- Tanaris
+							74, 	-- Tanaris: Caverns of Time Entrance
+							75, 	-- Tanaris: Caverns of Time
+							84,		-- Stormwind City
+							85,		-- Orgrimmar
+							86,		-- Orgrimmar: The Drag
 							129,	-- The Nexus
 							198,	-- Mount Hyjal
 							114,	-- Borean Tundra
@@ -212,6 +212,19 @@ _.Instances =
 							},
 						},
 					}),
+					{	-- S.E.L.F.I.E. Camera
+						["itemID"] = 122674,		-- S.E.L.F.I.E. Camera
+						["collectible"] = false,	-- We don't want the toy collectible here, only want the header.
+						["g"] = {
+							{	-- Firelands Filter
+								["npcID"] = -246,		-- Firelands Filter
+								["questID"] = 49761,	-- Completed
+								["f"] = 60,				-- S.E.L.F.I.E. Camera Filter
+								["icon"] = "Interface\\Icons\\achievement_zone_firelands",
+								["collectible"] = true,
+							},
+						},
+					},
 					n( -2, {	-- Vendors
 						n(54401, { -- Naresir Stormfury
 							i(70930),

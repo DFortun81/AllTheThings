@@ -1160,6 +1160,14 @@ AllTheThings.Locales.enUS = {
 		[-243] = "Bounty",														-- Bounty
 		[-244] = "Dark Iron Dwarf",												-- Dark Iron Dwarf
 		[-245] = "Mag'har Orc",													-- Mag'har Orc
+		
+		-- S.E.L.F.I.E. Camera Filters
+		[-246] = GetSpellInfo(258749),											-- Firelands Filter
+		[-247] = GetSpellInfo(258750),											-- Frostmourne Filter
+		[-248] = GetSpellInfo(258751),											-- Sha Filter
+		[-249] = GetSpellInfo(258752),											-- Twilight Filter
+		[-250] = GetSpellInfo(258803),											-- Argus Filter
+	
 -- Other
 		[-294] = "Killed First",
 		[-295] = "Killed Second",
