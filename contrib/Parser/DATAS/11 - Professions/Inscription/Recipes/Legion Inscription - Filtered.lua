@@ -119,7 +119,10 @@ profession(773, {	-- Inscription
 						{	-- Glyph of Flickering
 							-- Shaman Only
 							["recipeID"] = 225551--[[Glyph of Flickering]],
-							["classes"] = { 7 },	-- Shaman
+							["classes"] = {
+								7,	-- Shaman
+							},
+							["description"] = "Currently this Technique can only be learned by Shaman's.   We suggest submitting a bug report to Blizzard to have it usuable by all scribes like the other techniques."
 						},
 						{	-- Glyph of Floating Shards
 							["recipeID"] = 246984--[[Glyph of Floating Shards]]

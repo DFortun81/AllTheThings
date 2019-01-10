@@ -525,6 +525,10 @@ _.Zones =
 						["g"] = {
 							{	-- Technique: Glyph of Flickering
 								["itemID"] = 141059,	-- Technique: Glyph of Flickering
+								["classes"] = {
+									7,	-- Shaman
+								},
+								["description"] = "Currently this Technique can only be learned by Shaman's.  We suggest submitting a bug report to Blizzard to have it usuable by all scribes like the other techniques."
 							},
 							{	-- Raging Elemental Stone
 								["itemID"] = 136934,	-- Raging Elemental Stone - Shaman only - Toy
