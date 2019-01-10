@@ -207,8 +207,15 @@ _.Zones =
 						["qg"] = 80521,	-- Thaelin Darkanvil
 						["coord"] = { 40.1, 48.4 },
 						["sourceQuest"] = 34445,	-- A Taste of Iron
-						["groups"] = {
-							ach(8922),	-- Welcome to Draenor
+						["g"] = {
+							{	-- Welcome to Draenor [A]
+								["achievementID"] = 8921,	-- Welcome to Draenor
+								["races"] = ALLIANCE_ONLY,
+							},
+							{	-- Welcome to Draenor [H]
+								["achievementID"] = 8922,	-- Welcome to Draenor
+								["races"] = HORDE_ONLY,
+							},
 						},
 					},
 					{	-- The Kargathar Proving Grounds
