@@ -1757,6 +1757,17 @@ _.Zones =
 							-- Bows
 							un(2, i(125637)),	-- Wild Gladiator's Longbow
 							un(2, i(126751)),	-- Warmongering Gladiator's Longbow
+							-- Polearm
+							un(2, i(125724)),	-- Wild Gladi Pike
+							un(2, i(126838)),	-- Warmongering Gladi Pike
+							-- Guns
+							un(2, i(125676)),	-- Wild Gladi Rifle
+							un(2, i(126790)),	-- Warmongering Gladi Rifle
+							-- Daggers
+							un(2, i(125646)),	-- Wild Gladi Spellblade
+							un(2, i(125761)),	-- Wild Gladi Shanker
+							un(2, i(126760)),	-- Warmongering Gladi Spellblade
+							un(2, i(126875)),	-- Warmongering Gladi SHanker
 						},
 						["u"] = 2, -- Vendor doesn't sell anything in 7.0+
 					}),
@@ -1788,6 +1799,17 @@ _.Zones =
 							-- Bows
 							un(2, i(125637)),	-- Wild Gladiator's Longbow
 							un(2, i(126751)),	-- Warmongering Gladiator's Longbow
+							-- Polearm
+							un(2, i(125724)),	-- Wild Gladi Pike
+							un(2, i(126838)),	-- Warmongering Gladi Pike
+							-- Guns
+							un(2, i(125676)),	-- Wild Gladi Rifle
+							un(2, i(126790)),	-- Warmongering Gladi Rifle
+							-- Daggers
+							un(2, i(125646)),	-- Wild Gladi Spellblade
+							un(2, i(125761)),	-- Wild Gladi Shanker
+							un(2, i(126760)),	-- Warmongering Gladi Spellblade
+							un(2, i(126875)),	-- Warmongering Gladi SHanker
 						},
 						["u"] = 2, -- Vendor doesn't sell anything in 7.0+
 					}),

@@ -446,6 +446,7 @@ _.NeverImplemented =
 			un(1, i(134579)), -- Vanguard Cape
 			un(1, i(108814)), -- 6.0 PH Cloak Agi
 			un(1, i(108822)), -- 6.0 PH Cloak STR
+			un(1, i(155384)),	-- Singed Skycaller Drape (NEver added)
 			un(1, i(108823)), -- 6.0 PH Cloak Int
 			un(1, i(109282)), -- 7.0 QA Combat Test Cloak 1
 			un(1, i(109453)), -- 7.0 QA Combat Test Cloak 2
@@ -467,6 +468,7 @@ _.NeverImplemented =
 		n(-349, { -- Cosmetic
 			un(1, i(134110)), -- Hidden Helm
 			un(1, i(134111)), -- Hidden Cloak
+			un(1, i(133996)),	-- Was testing version, they added i(134022))	-- Burgy Blackheart's Handsome Hat
 			un(1, i(142503)), 	-- Hidden Shirt
 			un(1, i(146305)), 	-- Green Winter Hat										{STUCK ON RETRIEVING DATA)
 			un(1, i(146306)), 	-- Green Winter Clothes 								(STUCK ON RETRIEVING DATA)
@@ -1038,6 +1040,13 @@ _.NeverImplemented =
 			un(1, i(158503)),	-- Scalawag's Bolt Thrower
 		}),
 		n(-333, { -- Daggers
+			un(1, i(108785)),	-- Unknown
+			un(1, i(108786)),	-- Unknown
+			un(1, i(109269)),	-- Unknown
+			un(1, i(109292)),	-- Unknown
+			un(1, i(109309)),	-- Unknown
+			un(1, i(109387)),	-- Unknown
+			un(1, i(109482)),	-- Unknown
 			un(1, i(32179)),    -- Chancellor's Shiv
 			un(1, i(147908)),	-- 6.0 Weapon - Knife
 			un(1, i(159534)),	-- Unknown
@@ -1090,6 +1099,7 @@ _.NeverImplemented =
 			un(1, i(109319)),	-- 6.0 QA Combat Test Agility 1h Axe 2
 			un(1, i(109502)),	-- 6.0 QA Combat Test Agility 1h Axe
 			un(1, i(109536)),	-- 6.0 QA Combat Test Offhand Agility Axe 2
+			un(1, i(147379)),	-- Wooden Toy Axe (H) used to apply the mog
 		}),
 		n(-338, { -- One-Handed Swords
 			un(1, i(108803)),	-- Unknown - was under Legion>1Handed Swords
@@ -1164,6 +1174,8 @@ _.NeverImplemented =
 		n(-387,	{	-- Relics
 			un(1, i(132252)),	-- Owen Test Relic
 			un(1, i(130162)),    -- Val-Sharah Artifact Gem #1
+			-- shield
+			un(1, i(165617)),	-- Unknown
 		}),
 		n(-335, { -- Two Handed Axes
 			un(1, i(134563)),	-- Unknown

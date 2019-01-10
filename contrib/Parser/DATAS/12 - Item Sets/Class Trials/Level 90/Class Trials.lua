@@ -552,7 +552,47 @@ _.GearSets =
 							}),
 						},
 						["classes"] = { 7 }
-					}),	
+					}),
+					n(-142, { -- Heart-Lesion 
+						["groups"] = {
+							i(117019),	-- Heart-Lesion Greatsword
+							i(117049),	-- Heart-Lesion Runeblade
+		--[[					n(-9949, {	-- Frost / Unholy
+								i(100985),	-- Heart-Lesion Blade
+								i(100980),	-- Heart-Lesion Helm
+								i(100987),	-- Heart-Lesion Pendant
+								i(100986),	-- Heart-Lesion Cloak of Battle
+								i(100982),	-- Heart-Lesion Pauldrons
+								i(100977),	-- Heart-Lesion Breastplate
+								i(100984),	-- Heart-Lesion Vambraces
+								i(100979),	-- Heart-Lesion Gauntlets
+								i(100983),	-- Heart-Lesion Girdle
+								i(100981),	-- Heart-Lesion Legplates
+								i(100978),	-- Heart-Lesion Sabatons
+								i(100989),	-- Heart-Lesion Band of Might
+								i(100988),	-- Heart-Lesion Ring of Might
+								i(100991),	-- Heart-Lesion Idol of Battle
+								i(100990),	-- Heart-Lesion Stone of Battle
+							}),
+							n(-9948, {	-- Blood DK
+								i(100996),	-- Heart-Lesion Faceguard
+								i(100998),	-- Heart-Lesion Amulet
+								i(100993),	-- Heart-Lesion of Stoicism
+								i(101003),	-- Heart-Lesion Shoulderguards
+								i(100992),	-- Heart-Lesion Chestguard
+								i(101005),	-- Heart-Lesion Armguards
+								i(100995),	-- Heart-Lesion Handguards
+								i(101004),	-- Heart-Lesion Waistband
+								i(100997),	-- Heart-Lesion Legguards
+								i(100994),	-- Heart-Lesion Greaves
+								i(101001),	-- Heart-Lesion Band of Stoicism
+								i(101000),	-- Heart-Lesion Ring of Stoicism
+								i(100999),	-- Heart-Lesion Defender Idol
+								i(101002),	-- Heart-Lesion Defender Stone
+							}),
+				--]]	},
+						["classes"] = { 6 }
+					}),					
 				}),
 			}),
 		}),

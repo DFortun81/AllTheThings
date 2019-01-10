@@ -153,6 +153,7 @@ _.Zones =
 						i(158650),	-- Sea-Scourge Greatblade
 						i(158160),	-- Smuggler's Cove Ring
 						i(158161),	-- Spearfisheer's Ban
+						i(158163),	-- First Mate's Spyglass
 						i(158164),	-- Plunderbeard's Flask
 						n(-43, {	-- Cloth
 							["groups"] = {
