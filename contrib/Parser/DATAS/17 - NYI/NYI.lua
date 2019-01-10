@@ -549,6 +549,11 @@ _.NeverImplemented =
 			un(1, i(20936)),	-- Unknown
 			un(1, i(20937)),	-- Unknown
 		}),
+		un(1, spell(5169)),	-- defias disguise
+		un(1, spell(5264)),	-- dsouth sea defias disguise
+		un(1, spell(5268)),	-- dark iron dwarf disguise
+		un(1, spell(5267)),	-- dalaran wizard disguise
+		un(1, i(9023)),		-- Codex of Shadow Proctection Rank3 (Never added)
 		un(1, i(21243)),	-- Bloated Mightfish
 		un(1, i(132118)),	-- Aggramar's Blessing (Didnt make it out of beta)
 		un(1, i(134006)),	-- Dwyer's Spare Caber
@@ -1086,6 +1091,7 @@ _.NeverImplemented =
 			un(1, i(161937)),	-- Unknown
 			un(1, i(165277)),	-- Unknown
 		}),
+		-- maces
 		n(-334, { -- One-Handed Axes
 			un(1, i(49456)),	-- Will of the Earth
 			un(1, i(50251)),	-- Unknown
@@ -1105,6 +1111,7 @@ _.NeverImplemented =
 			un(1, i(108803)),	-- Unknown - was under Legion>1Handed Swords
 			un(1, i(108804)),	-- Unknown - was under Legion>1Handed Swords
 			un(1, i(134562)),	-- Odyns Fury
+			un(1, i(134067)),	-- Unknown
 			un(1, i(140705)),	-- Outlaw Cutlass
 			un(1, i(137225)),	-- Thunderfury, Blessed Blade of the Windseeker (mog testing)
 			un(1, i(47846)),	-- Cruel Barb (Glow, Purple - Low)
@@ -1123,6 +1130,13 @@ _.NeverImplemented =
 		n(-343,	{ -- Polearms
 			un(1, i(158504)),	-- Whaler's Pike
 			un(1, i(158563)),	-- Tomb-Rustler's Polearm
+		}),
+		n(-387,	{	-- Relics
+			un(1, i(132252)),	-- Owen Test Relic
+			un(1, i(130162)),    -- Val-Sharah Artifact Gem #1
+			-- shield
+			un(1, i(165617)),	-- Unknown
+			un(1, i(139439)),	-- Highkeepers' Ward
 		}),
 		n(-342, { -- Staves
 			un(1, i(132474)),	-- Unknown - was under Legion>Staves
@@ -1170,12 +1184,6 @@ _.NeverImplemented =
 			un(1, i(139275)),	-- Wierd Testing Stuff for Artefact Weapons
 			un(1, i(139891)),	-- Wierd Testing Stuff for Artefact Weapons
 			un(1, i(165272)),	--
-		}),
-		n(-387,	{	-- Relics
-			un(1, i(132252)),	-- Owen Test Relic
-			un(1, i(130162)),    -- Val-Sharah Artifact Gem #1
-			-- shield
-			un(1, i(165617)),	-- Unknown
 		}),
 		n(-335, { -- Two Handed Axes
 			un(1, i(134563)),	-- Unknown
