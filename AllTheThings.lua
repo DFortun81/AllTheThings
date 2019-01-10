@@ -2993,6 +2993,91 @@ end
 	]]--
 end)();
 
+-- Paragon Hook
+hooksecurefunc("ReputationParagonFrame_SetupParagonTooltip",function(frame)
+	-- Source: //Interface//FrameXML//ReputationFrame.lua Line 360
+	-- Using hooksecurefunc because of how Blizzard coded the frame.  Couldn't get GameTooltip to work like the above ones.
+	-- //Interface//FrameXML//ReputationFrame.lua Segment code
+	--[[
+		function ReputationParagonFrame_SetupParagonTooltip(frame)
+			EmbeddedItemTooltip.owner = frame;
+			EmbeddedItemTooltip.factionID = frame.factionID;
+
+			local factionName, _, standingID = GetFactionInfoByID(frame.factionID);
+			local gender = UnitSex("player");
+			local factionStandingtext = GetText("FACTION_STANDING_LABEL"..standingID, gender);
+			local currentValue, threshold, rewardQuestID, hasRewardPending, tooLowLevelForParagon = C_Reputation.GetFactionParagonInfo(frame.factionID);
+
+			if ( tooLowLevelForParagon ) then
+				EmbeddedItemTooltip:SetText(PARAGON_REPUTATION_TOOLTIP_TEXT_LOW_LEVEL);
+			else
+				EmbeddedItemTooltip:SetText(factionStandingtext);
+				local description = PARAGON_REPUTATION_TOOLTIP_TEXT:format(factionName);
+				if ( hasRewardPending ) then
+					local questIndex = GetQuestLogIndexByID(rewardQuestID);
+					local text = GetQuestLogCompletionText(questIndex);
+					if ( text and text ~= "" ) then
+						description = text;
+					end
+				end
+				EmbeddedItemTooltip:AddLine(description, HIGHLIGHT_FONT_COLOR.r, HIGHLIGHT_FONT_COLOR.g, HIGHLIGHT_FONT_COLOR.b, 1);
+				if ( not hasRewardPending ) then
+					local value = mod(currentValue, threshold);
+					-- show overflow if reward is pending
+					if ( hasRewardPending ) then
+						value = value + threshold;
+					end
+					GameTooltip_ShowProgressBar(EmbeddedItemTooltip, 0, threshold, value, REPUTATION_PROGRESS_FORMAT:format(value, threshold));
+				end
+				GameTooltip_AddQuestRewardsToTooltip(EmbeddedItemTooltip, rewardQuestID);
+			end
+			EmbeddedItemTooltip:Show();
+		end
+	--]]
+	local currentValue, threshold, paragonQuestID, hasRewardPending, tooLowLevelForParagon = C_Reputation.GetFactionParagonInfo(frame.factionID)
+	-- Let's make sure the user isn't in combat and if they are do they have In Combat turned on.  Finally check to see if Tootltips are turned on.
+	if (not InCombatLockdown() or GetDataMember("DisplayTooltipsInCombat")) and GetDataMember("EnableTooltipInformation") then
+		
+		local paragonCacheID = {
+			-- Paragon Cache Rewards
+			-- [QuestID] = [ItemCacheID"]	-- Faction // Quest Title
+			[54454] = 166300,	-- 7th Legion // Supplies from the 7th Legion
+			[48976] = 152922,	-- Argussian Reach // Paragon of the Argussian Reach
+			[46777] = 152108,	-- Armies of Legionfall // The Bounties of Legionfall
+			[48977] = 152923,	-- Army of the Light // Paragon of the Army of the Light
+			[54453] = 166298,	-- Champions of Azeroth // Supplies from Magni
+			[46745] = 152102,	-- Court of Farondis // Supplies from the Court
+			[46747] = 152103,	-- Dreamweavers // Supplies from the Dreamweavers
+			[46743] = 152104,	-- Highmountain Tribes // Supplies from Highmountain
+			[54455] = 166299,	-- Honorbound // Supplies from the Honorbound
+			[54456] = 166297,	-- Order of Embers // Supplies from the Order of Embers
+			[54458] = 166295,	-- Proudmoore Admiralty // Supplies from the Proudmoore Admiralty
+			[54457] = 166294,	-- Storm's Wake // Supplies from Storm's Wake
+			[54460] = 166282,	-- Talanji's Expedition // Supplies from Talanji's Expedition
+			[46748] = 152105,	-- The Nightfallen // Supplies from the Nightfallen
+			[46749] = 152107,	-- The Wardens // Supplies from the Wardens
+			[54451] = 166245,	-- Tortollan Seekers // Baubles from the Seekers
+			[46746] = 152106,	-- Valarjar // Supplies from the Valarjar
+			[54461] = 166290,	-- Voldunai // Supplies from the Voldunai
+			[54462] = 166292,	-- Zandalari Empire // Supplies from the Zandalari Empire
+		};
+		
+		-- Grab Item Link Info
+		local iName, sLink, iRarity, iLevel, iMinLevel, sType, sSubType, iStackCount = GetItemInfo(paragonCacheID[paragonQuestID])
+			if sLink ~= nil then
+				-- Attach tooltip to the Paragon Frame
+				GameTooltip:SetOwner(EmbeddedItemTooltip, "ANCHOR_NONE")
+				GameTooltip:SetPoint("TOPLEFT", EmbeddedItemTooltip, "BOTTOMLEFT")
+				-- Populate Tooltip with the Paragon Cache Rewards
+				GameTooltip:SetHyperlink(sLink)
+				--Can't get it to clear when leaving the tooltip for some reason.  See below of hating API
+				--GameTooltip:HookScript("OnShow", AttachTooltip);
+				--GameTooltip:HookScript("OnTooltipCleared", ClearTooltip); -- ARGH Why you no work; I hate the API
+			end
+		end
+	end
+);
+
 -- Achievement Lib
 app.BaseAchievement = {
 	__index = function(t, key)
