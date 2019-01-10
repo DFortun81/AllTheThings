@@ -446,6 +446,20 @@ _.Instances =
 							},
 						},
 					}),
+					{	-- S.E.L.F.I.E. Camera
+						["itemID"] = 122674,		-- S.E.L.F.I.E. Camera
+						["collectible"] = false,	-- We don't want the toy collectible here, only want the header.
+						["g"] = {
+							{	-- Frostmourne Filter
+								["npcID"] = -247,		-- Frostmourne Filter
+								["questID"] = 49760,	-- Completed
+								["f"] = 60,				-- S.E.L.F.I.E. Camera Filter
+								["description"] = "Needs to be taken while in combat.",
+								["icon"] = "Interface\\Icons\\spell_shadow_haunting",
+								["collectible"] = true,
+							},
+						},
+					},
 					{	-- Zafod Boombox
 						-- Note!! Putting him here rather than 4 times for an unlearnable shirt
 						["npcID"] = 37184,	-- Zafod Boombox

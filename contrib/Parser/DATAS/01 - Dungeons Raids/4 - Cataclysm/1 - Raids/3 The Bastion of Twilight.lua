@@ -9,6 +9,19 @@ _.Instances =
 			inst(72, { 	-- The Bastion of Twilight
 				["groups"] = {
 					ach(4850),	-- The Bastion of Twilight
+					{	-- S.E.L.F.I.E. Camera
+						["itemID"] = 122674,		-- S.E.L.F.I.E. Camera
+						["collectible"] = false,	-- We don't want the toy collectible here, only want the header.
+						["g"] = {
+							{	-- Twilight Filter
+								["npcID"] = -249,		-- Twilight Filter
+								["questID"] = 49764,	-- Completed
+								["f"] = 60,				-- S.E.L.F.I.E. Camera Filter
+								["icon"] = "Interface\\Icons\\spell_shadow_twilight",
+								["collectible"] = true,
+							},
+						},
+					},
 					n(0, {	-- Zone Drop
 						i(60211),	-- Bracers of the Dark Pool
 						i(60202),	-- Tsanga's Helm

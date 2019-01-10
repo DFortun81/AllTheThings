@@ -7,6 +7,19 @@ _.Instances =
 		["groups"] = {
 			inst(320, {	-- Terrace of Endless Spring
 				["groups"] = {
+					{	-- S.E.L.F.I.E. Camera
+						["itemID"] = 122674,		-- S.E.L.F.I.E. Camera
+						["collectible"] = false,	-- We don't want the toy collectible here, only want the header.
+						["g"] = {
+							{	-- Sha Filter
+								["npcID"] = -248,		-- Sha Filter
+								["questID"] = 49763,	-- Completed
+								["f"] = 60,				-- S.E.L.F.I.E. Camera Filter
+								["icon"] = "Interface\\Icons\\sha_ability_rogue_envelopingshadows_nightborne",
+								["collectible"] = true,
+							},
+						},
+					},
 					d(7, {	-- LFR
 						["ignoreBonus"] = true,
 						["groups"] = {
