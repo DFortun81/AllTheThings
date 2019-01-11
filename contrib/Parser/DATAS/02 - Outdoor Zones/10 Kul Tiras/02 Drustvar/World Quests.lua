@@ -117,10 +117,14 @@ _.Zones =
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									--Note!! Bleakweald Handguards offered 10/16
 								},
-								q(51683, {	-- Slash and Burn Tactics
+								{	-- Slash and Burn Tactics
+									["questID"] = 51683,	-- Slash and Burn Tactics
+									["coords"] = {
+										{ 71.14, 59.33, 896 },
+									},
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = ALLIANCE_ONLY,
-								}),
+								},
 								q(51434, {	-- Stone Golem
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
@@ -214,7 +218,7 @@ _.Zones =
 						i(158159),	-- Boralus Sailor's Cloak
 						i(166671),	-- Waycrest Guard's Cloak
 						i(158161),	-- Spearfisher's Band
-						i(158162),	-- Perarl DIver's Compass
+						i(158162),	-- Pearl Diver's Compass
 						n(-43, {	-- Cloth
 							["groups"] = {
 								i(158001),	-- Bloodbough Cowl

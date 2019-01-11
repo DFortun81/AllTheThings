@@ -1078,9 +1078,14 @@ _.Zones =
 						}),
 						q(46749, { -- Supplies From the Wardens
 							["groups"] = {
-								i(152107, { -- Warden's Supply Kit
-									dr(3, i(147843)), -- Sira's Extra Cloak
-								}),
+								{	-- Warden's Supply Kit
+									["itemID"] = 152107,	-- Warden's Supply Kit
+									["g"] = {
+										{	-- Sira's Extra Cloak
+											["itemID"] = 147843,	-- Sira's Extra Cloak
+										},
+									},
+								},
 								un(2, i(146902, { -- Warden's Supply Kit
 									dr(3, i(147843)), -- Sira's Extra Cloak
 								})),
