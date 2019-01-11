@@ -403,6 +403,11 @@ _.PVP =
 				i(165195),	-- Sinister Aspirant's Greatsword
 				i(165197),	-- Sninister Aspirant Staff
 				i(165194),	-- Sinister Aspirant Shanker
+				i(165209),	-- Sinister Aspirant Shawl
+				i(165210),	-- Sinister Aspirant Greatcloak
+				i(165211),	-- Sinister Aspirant Drape
+				i(165212),	-- Sinister Aspirant Cape)
+				
 			},
 			["races"] = HORDE_ONLY,
 		}),
@@ -415,8 +420,22 @@ _.PVP =
 				i(166478),	-- Sinister Aspirant's Greatsword
 				i(165200),	-- Sninister Aspirant Staff
 				i(165203),	-- Sinister Aspirant Shanker
+				i(165213),	-- Sinister Aspirant Shawl
+				i(165214),	-- Sinister Aspirant Greatcloak
+				i(165215),	-- Sinister Aspirant Drape
+				i(165216),	-- Sinister Aspirant Cape)
 			},
 			["races"] = ALLIANCE_ONLY,
+		}),
+		n(-3157, {	-- Player vs. Player (Battle for Azeroth Season 2)
+			["g"] = {
+				i(165217),	-- Sinister Aspirant Ring
+				i(165219),	-- Sinister Aspirant Band
+				i(165220),	-- Sinister Aspirant's Medallion
+				i(165221),	-- Sinister Aspirant's Emblem
+				i(165222),	-- Sinister Aspirant's Insignia
+				i(165223),	-- Sinister Aspirant's Badge
+			},
 		}),
 		i(135539, {	-- Crate of Battlefield Goods 15-39
 			["groups"] = {

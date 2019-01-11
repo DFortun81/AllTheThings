@@ -38,6 +38,18 @@ _.Zones =
 					i(158121),	-- Zocalo Crusher
 					i(158130),	-- Zocalo Pummeler
 					i(158114),	-- Zocalo Stabber
+					i(165785, {	-- Tortollan Trader's Stock
+						i(165679),	-- Ornat Elundris Ring
+						i(165678),	-- Stonemason Guild Ba
+						i(165683),	-- Seal of Dath remar
+						i(165680),	-- Igneaous WInterskorn Loop
+						i(165662),	-- Kezan Stamped Bijou
+						i(165661),	-- Ancient Tuskarr Sea Charm
+						i(165660),	-- Chargestone of the thunder kings court
+						i(165665),	-- Ritual Feather of Uung Ak
+						i(165666),	-- Moonstone of Zin AZshari
+						i(165664),	-- Sea Giant Tidestone
+					}),
 				},
 			}),
 		},

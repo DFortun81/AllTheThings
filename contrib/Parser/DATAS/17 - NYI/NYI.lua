@@ -544,6 +544,11 @@ _.NeverImplemented =
 			un(1, i(157761)),	-- Unknown
 			un(1, i(38383)),	-- Unknown
 			un(1, i(38526)),	-- Unknown
+			un(1, i(157763)),	-- ENgine of Eradication
+			un(1, i(157764)),	-- Claw of the crystaline scropid
+			un(1, i(157765)),	-- draught of souls
+			un(1, i(157766)),	-- vial of nightmare fog
+			
 		}),
 	}),
 	n(-494, { -- Misc
@@ -1053,6 +1058,8 @@ _.NeverImplemented =
 			un(1, i(32187)),    -- Chancellor's Heavy Crossbow
 			un(1, i(108784)),    -- Unknown
 			un(1, i(111073)),	-- Unknown
+			un(1, i(165267)),	-- Unknown
+			un(1, i(165271)),	-- Unknown
 			un(1, i(115600)),	-- Unknown
 			un(1, i(103003)),    -- Prideful Gladiator's Heavy Crossbow (they ditched those items)
 			un(1, i(103375)),    -- Prideful Gladiator's Heavy Crossbow (they ditched those items)
@@ -1231,6 +1238,8 @@ _.NeverImplemented =
 			un(1, i(137581)),	-- Test Ashbringer 1
 			un(1, i(137582)),	-- Test Ashbringer 2
 			un(1, i(49547)),	-- Unknown
+			un(1, i(158506)),	-- Scalawags Claymore
+			un(1, i(161293)),	-- Thrasneck Greatblade
 			un(1, i(131738)),	-- Unknown, tagged as 2Hand Sword
 			un(1, i(131739)),	-- Unknown, tagged as 2Hand Sword
 			un(1, i(131741)),	-- Unknown, tagged as 2Hand Sword
@@ -1243,6 +1252,9 @@ _.NeverImplemented =
 		n(-341, { -- Wands
 			un(1, i(161924)),	-- Seapriest's Wand (never addedd)
 			un(1, i(161926)),	-- Talanji's Salutary Scepter (never added)
+			un(1, i(159923)),	-- Unknown
+			un(1, i(161929)),	-- Unknown
+			un(1, i(165275)),	-- Unknown
 		}),
 		n(-340, { -- War Glaives
 			un(1, i(129735)), 	-- Verus
