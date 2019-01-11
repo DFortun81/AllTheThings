@@ -1356,21 +1356,6 @@ _.NeverImplemented =
 --			T E M P O R A R Y			I T E M S		  --
 ------------------------------------------------------------
 
---  Hiding this information here so it's not spammy in the addon, but provides additional information to the user in Zul'Gurub "Cache of Madness"
-n(52446, { -- Ancient Dwarven Artifact
-	["description"] = "This artifact is used in summoning the boss.",
-}),
-n(52450, { -- Ancient Elven Artifact
-	["description"] = "This artifact is used in summoning the boss.",
-}),
-n(52454, { -- Ancient Fossil
-	["description"] = "This artifact is used in summoning the boss.",
-}),
-n(52452, { -- Ancient Troll Artifact
-	["description"] = "This artifact is used in summoning the boss.",
-}),
-
-
 -- Here I am going to call upon maps that don't really have any data and wouldn't make since to display a mini list in
 m(465), -- Le Glas
 m(516), -- Isle of Thunder (One of last initial scenaraio)
