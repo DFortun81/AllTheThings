@@ -339,7 +339,6 @@ _.Zones =
 							--["bonusID"] = 4785,
 						}),
 						i(158159),	-- Boralus Sailor's Cloak
-						i(158162),	-- Perarl DIver's Compass
 						--[[
 						n(-43, {	-- Cloth
 							["groups"] = {

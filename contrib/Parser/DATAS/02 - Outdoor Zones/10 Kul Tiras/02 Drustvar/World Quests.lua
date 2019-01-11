@@ -214,6 +214,7 @@ _.Zones =
 						i(158159),	-- Boralus Sailor's Cloak
 						i(166671),	-- Waycrest Guard's Cloak
 						i(158161),	-- Spearfisher's Band
+						i(158162),	-- Perarl DIver's Compass
 						n(-43, {	-- Cloth
 							["groups"] = {
 								i(158001),	-- Bloodbough Cowl
