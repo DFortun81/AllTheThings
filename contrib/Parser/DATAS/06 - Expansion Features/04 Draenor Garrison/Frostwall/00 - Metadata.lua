@@ -15,6 +15,7 @@ _.ExpansionFeatures =
 				["isRaid"] = true,
 				["icon"] = "Interface\\Icons\\achievement_garrison_tier01_horde",
 				["description"] = "|cff66ccffFrostwall is the Horde Garrison, located in Frostfire Ridge. A fully-upgraded Frostwall garrison is considered to be a fortress.|r",
+				["races"] = HORDE_ONLY,
 			},
 		},
 	},
