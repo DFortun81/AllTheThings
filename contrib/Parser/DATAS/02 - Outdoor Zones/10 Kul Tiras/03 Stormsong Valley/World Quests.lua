@@ -246,6 +246,7 @@ _.Zones =
 							},
 						}),
 						i(158159),	-- Boralus Sailor's Cloak
+						i(166668),	-- Battalion Veteran Greatcloak
 						i(165685),	-- House of Nobles Cape
 						i(158160),	-- Smuggler's Cove Ring
 						i(158163),	-- First Mate's Spyglass
