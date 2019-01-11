@@ -146,40 +146,128 @@ _.Instances =
 								i(69606),	-- Hakkari Loa Drape
 								i(69608),	-- Deathcharged Wristguards
 							})),
-							n(   -41, {			-- "Cache of Madness (Requires 225 Archeology)",
-								cr(52258, e(177, {	-- Gri'lek
-									i(69631),	-- Zulian Voodoo Stick
-									i(69632),	-- Lost Bag of Whammies
-									i(69635),	-- Amulet of Protection
-									i(69630),	-- Handguards of the Tormented
-									i(69633),	-- Plunderer's Gauntlets
-									i(69634),	-- Fasc's Preserved Boots
-								})),
-								cr(52271, e(178, {	-- Hazzarah
-									i(69636),	-- Thekal's Claws
-									i(69637),	-- Gurubashi Destroyer
-									i(69631),	-- Zulian Voodoo Stick
-									i(69632),	-- Lost Bag of Whammies
-									i(69630),	-- Handguards of the Tormented
-									i(69633),	-- Plunderer's Gauntlets
-								})),
-								cr(52269, e(179, {	-- Renataki
-									i(69638),	-- Arlokk's Claws
-									i(69639),	-- Renataki's Soul Slicer
-									i(69631),	-- Zulian Voodoo Stick
-									i(69632),	-- Lost Bag of Whammies
-									i(69630),	-- Handguards of the Tormented
-									i(69633),	-- Plunderer's Gauntlets
-								})),
-								cr(52286, e(180, {	-- Wushoolay
-									i(69631),	-- Zulian Voodoo Stick
-									i(69632),	-- Lost Bag of Whammies
-									i(69641),	-- Troll Skull Chestplate
-									i(69630),	-- Handguards of the Tormented
-									i(69633),	-- Plunderer's Gauntlets
-									i(69640),	-- Kilt of Forgotten Rites
-								})),
-							}),
+							{	-- "Cache of Madness (Requires 225 Archeology)",
+								["npcID"] = -41,	-- "Cache of Madness (Requires 225 Archeology)",
+								["description"] = "Requires 225 Archaeology to spawn.",
+								["g"] = {
+									{	-- Ancient Dwarven Artifact
+										["npcID"] = 52446,	-- Ancient Dwarven Artifact
+										["description"] = "This artifact is used in summoning the boss.",
+									},
+									{	-- Ancient Dwarven Artifact
+										["npcID"] = 52449,	-- Ancient Dwarven Artifact
+										["description"] = "Ignore!",
+									},
+									{	-- Ancient Elven Artifact
+										["npcID"] = 52450,	-- Ancient Elven Artifact
+										["description"] = "This artifact is used in summoning the boss.",
+									},
+									{	-- Ancient Elven Artifact
+										["npcID"] = 52451,	-- Ancient Elven Artifact
+										["description"] = "Ignore!",
+									},
+									{	-- Ancient Fossil
+										["npcID"] = 52454,	-- Ancient Fossil
+										["description"] = "This artifact is used in summoning the boss.",
+									},
+									{	-- Ancient Fossil
+										["npcID"] = 52455,	-- Ancient Fossil
+										["description"] = "Ignore!",
+									},
+									{	-- Ancient Troll Artifact
+										["npcID"] = 52452,	-- Ancient Troll Artifact
+										["description"] = "This artifact is used in summoning the boss.",
+									},
+									{	-- Ancient Troll Artifact
+										["npcID"] = 54453,	-- Ancient Troll Artifact
+										["description"] = "Ignore!",
+									},
+									{	-- Arlokk's Claws
+										["itemID"] = 69638,	-- Arlokk's Claws
+										["crs"] = {
+											52269,	-- Renataki
+										},
+									},
+									{	-- Renataki's Soul Slicer
+										["itemID"] = 69639,	-- Renataki's Soul Slicer
+										["crs"] = {
+											52269,	-- Renataki
+										},
+									},
+									{	-- Thekal's Claws
+										["itemID"] = 69636,	-- Thekal's Claws
+										["crs"] = {
+											52271,	-- Hazzarah
+										},
+									},
+									{	-- Gurubashi Destroyer
+										["itemID"] = 69637,
+										["crs"] = {
+											52271,	-- Hazzarah
+										},
+									},
+									{	-- Zulian Voodoo Stick
+										["itemID"] = 69631,	-- Zulian Voodoo Stick
+										["crs"] = {
+											52258,	-- Gri'lek
+											52271,	-- Hazzarah
+											52269,	-- Renataki
+											52286,	-- Wushoolay
+										},
+									},
+									{	-- Lost Bag of Whammies
+										["itemID"] = 69632,	-- Lost Bag of Whammies
+										["crs"] = {
+											52258,	-- Gri'lek
+											52271,	-- Hazzarah
+											52269,	-- Renataki
+											52286,	-- Wushoolay
+										},
+									},
+									{	-- Amulet of Protection
+										["itemID"] = 69635,	-- Amulet of Protection
+										["crs"] = {
+											52258,	-- Gri'lek
+										},
+									},
+									{	-- Troll Skull Chestplate
+										["itemID"] = 69641,	-- Troll Skull Chestplate
+										["crs"] = {
+											52286,	-- Wushoolay
+										},
+									},
+									{	-- Handguards of the Tormented
+										["itemID"] = 69630,	-- Handguards of the Tormented
+										["crs"] = {
+											52258,	-- Gri'lek
+											52271,	-- Hazzarah
+											52269,	-- Renataki
+											52286,	-- Wushoolay
+										},
+									},
+									{	-- Plunderer's Gauntlets
+										["itemID"] = 69633,	-- Plunderer's Gauntlets
+										["crs"] = {
+											52258,	-- Gri'lek
+											52271,	-- Hazzarah
+											52269,	-- Renataki
+											52286,	-- Wushoolay
+										},
+									},
+									{	-- Kilt of Forgotten Rites
+										["itemID"] = 69640,	-- Kilt of Forgotten Rites
+										["crs"] = {
+											52286,	-- Wushoolay
+										},
+									},
+									{	-- Fasc's Preserved Boots
+										["itemID"] = 69634,	-- Fasc's Preserved Boots
+										["crs"] = {
+											52258,	-- Gri'lek
+										},
+									},
+								},
+							},
 							cr(52059, e(181, {	-- High Priestess Kilnara
 								i(68824),	-- Swift Zulian Panther (MOUNT!)
 								i(69614),	-- Roaring Mask of Bethekk
