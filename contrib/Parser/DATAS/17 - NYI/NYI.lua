@@ -321,6 +321,20 @@ _.NeverImplemented =
 			un(1, i(12105)),	-- Pridemail Leggings
 			un(1, i(37420)),	-- Sharkproof Boots
 			un(1, i(68844)),	-- Unknown
+			un(1, i(109265)),	-- Unknown
+			un(1, i(109270)),	-- Unknown
+			un(1, i(109280)),	-- Unknown
+			un(1, i(109313)),	-- Unknown
+			un(1, i(109314)),	-- Unknown
+			un(1, i(109315)),	-- Unknown
+			un(1, i(109316)),	-- Unknown
+			un(1, i(109317)),	-- Unknown
+			un(1, i(109318)),	-- Unknown
+			un(1, i(109350)),	-- Unknown
+			un(1, i(109351)),	-- Unknown
+			un(1, i(109352)),	-- Unknown
+			un(1, i(109353)),	-- Unknown
+			un(1, i(109354)),	-- Unknown
 			un(1, i(37433)),	-- Layered Scale Boots
 			un(1, i(37444)),	-- Wavekeeper's Helm
 			un(1, i(13090)),	-- Breastplate of the Chosen
@@ -1038,6 +1052,8 @@ _.NeverImplemented =
 		n(-346, { -- Crossbows
 			un(1, i(32187)),    -- Chancellor's Heavy Crossbow
 			un(1, i(108784)),    -- Unknown
+			un(1, i(111073)),	-- Unknown
+			un(1, i(115600)),	-- Unknown
 			un(1, i(103003)),    -- Prideful Gladiator's Heavy Crossbow (they ditched those items)
 			un(1, i(103375)),    -- Prideful Gladiator's Heavy Crossbow (they ditched those items)
 			un(1, i(102613)),    -- Prideful Gladiator's Heavy Crossbow (they ditched those items)	

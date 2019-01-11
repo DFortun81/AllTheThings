@@ -224,6 +224,7 @@ _.Zones =
 							["g"] = {
 								{	-- Treasure Map
 									["itemID"] = 166999, 	-- Treasure Map
+									["itemID"] = 166883, 	-- Treasure Map, Displayed Version, you get the first
 								},
 							},
 						},
