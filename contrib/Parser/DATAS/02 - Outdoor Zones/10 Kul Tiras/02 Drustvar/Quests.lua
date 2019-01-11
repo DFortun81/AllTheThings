@@ -16,6 +16,23 @@ _.Zones =
 							-- May have additional/different source quest(s); needs confirmation.
 							-- Not required for "Drust Do It."
 						}),
+						{	-- A Drust Cause [Incursion Quest]
+							["questID"] = 53701,	-- A Drust Cause
+							["qg"] = 135815,		-- Quartermaster Alcorn
+							["coords"] = {
+								{ 37.03, 51.35, 896 },	-- Waycrest Gryphon Start
+								{ 37.91, 48.99, 896 },	-- Turn-In
+							},
+							["crs"] = {
+								144984,	-- Waycrest Gryphon
+							},
+							["races"] = ALLIANCE_ONLY,
+							["g"] = {
+								{	-- Honorbound Equipment Cache
+									["itemID"] = 163857,	-- Azerite Armor Cache
+								},
+							},
+						},
 						qa(49443, {	-- A Lesson in Witch Hunting
 							["qg"] = 129642,	-- Lucille Waycrest
 							["coord"] = { 36.8, 50.1 },

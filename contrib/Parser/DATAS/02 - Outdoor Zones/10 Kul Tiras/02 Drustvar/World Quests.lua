@@ -60,6 +60,14 @@ _.Zones =
 								q(51469, {	-- Betsy
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
+								{	-- Bird's-Eye View [A-Incursion WQ]
+									["questID"] = 54143,	-- Bird's-Eye 
+									["coords"] = {
+										{ 37.32, 51.83, 896 },	-- Rocket Pack Start
+									},
+									["isWQ"] = 120,
+									["races"] = ALLIANCE_ONLY,
+								},
 								q(51468, {	-- Bonesquall
 									["groups"] = {
 										i(154376, {	-- Bonecurse Gauntlets
@@ -76,6 +84,17 @@ _.Zones =
 									},
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
+								{	-- Duchess Fallensong [A-Incursion WQ]
+									["questID"] = 54665,	-- Duchess Fallensong
+									["coords"] = {
+										{ 40.21, 50.91, 896 },
+									},
+									["crs"] = {
+										148563,	-- Duchess Fallensong
+									},
+									["isWQ"] = 120,
+									["races"] = ALLIANCE_ONLY,
+								},
 								q(51747, {	-- Early Warning
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = HORDE_ONLY,
@@ -94,6 +113,14 @@ _.Zones =
 								{	-- Fly the Coop! [A]
 									["questID"] = 51658, 	-- Fly the Coop!
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
+									["races"] = ALLIANCE_ONLY,
+								},
+								{	-- Fungal Infestation [A-Incursion WQ]
+									["questID"] = 54507,	-- Fungal Infestation
+									["coords"] = {
+										{ 30.04, 40.55, 896 },
+									},
+									["isWQ"] = 120,
 									["races"] = ALLIANCE_ONLY,
 								},
 								{	-- Fungal Infestation [H-Incursion WQ]
@@ -119,6 +146,17 @@ _.Zones =
 									["questID"] = 53308,	-- Luminous Monelite
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["requireSkill"] = 186, -- Mining
+								},
+								{	-- Omgar Doombow [A-Incursion WQ]
+									["questID"] = 54089,	-- Fungal Infestation
+									["coords"] = {
+										{ 31.78, 33.06, 896 },
+									},
+									["crs"] = {
+										146607,	-- Omgar Doombow
+									},
+									["isWQ"] = 120,
+									["races"] = ALLIANCE_ONLY,
 								},
 								{	-- Once More Into Battle [A]
 									["questID"] = 51454,	-- Once More Into Battle
@@ -173,6 +211,14 @@ _.Zones =
 								{	-- Talon [AH]
 									["questID"] = 51529,	-- Talon
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
+								},
+								{	-- Tend the Wounded [A-Incursion WQ]
+									["questID"] = 54471,	-- Tend the Wounded
+									["coords"] = {
+										{ 33.89, 46.98, 896 },
+									},
+									["isWQ"] = 120,
+									["races"] = ALLIANCE_ONLY,
 								},
 								q(51767, {	-- Trapline [H]
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
