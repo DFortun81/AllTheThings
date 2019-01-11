@@ -933,7 +933,7 @@ AllTheThings.Locales.enUS = {
 		[-38] = TRADE_SKILLS,													-- Professions
 		[-39] = LFG_LIST_LEGACY.." "..TRACKER_HEADER_QUESTS,					-- Legacy Quest
 		[-40] = LFG_LIST_LEGACY, 												-- Legacy
-		[-41] = "Cache of Madness (Requires 225 Archaeology)",
+		[-41] = "Cache of Madness",
 		[-42] = ORDER_HALL_MISSIONS,  											-- Class Hall Missions
 -- Armor Types
 		[-43] = GetItemSubClassInfo(4,1).." "..RESISTANCE0_NAME,				-- Cloth

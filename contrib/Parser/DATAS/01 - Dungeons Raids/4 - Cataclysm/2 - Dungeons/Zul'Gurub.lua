@@ -152,35 +152,35 @@ _.Instances =
 								["g"] = {
 									{	-- Ancient Dwarven Artifact
 										["npcID"] = 52446,	-- Ancient Dwarven Artifact
-										["description"] = "This artifact is used in summoning the boss.",
+										["description"] = "|CFFFF0000This artifact is used in summoning the boss.|r",
 									},
 									{	-- Ancient Dwarven Artifact
 										["npcID"] = 52449,	-- Ancient Dwarven Artifact
-										["description"] = "Ignore!",
+										["description"] = "|CFFFF0000IGNORE!|r",
 									},
 									{	-- Ancient Elven Artifact
 										["npcID"] = 52450,	-- Ancient Elven Artifact
-										["description"] = "This artifact is used in summoning the boss.",
+										["description"] = "|CFFFF0000This artifact is used in summoning the boss.|r",
 									},
 									{	-- Ancient Elven Artifact
 										["npcID"] = 52451,	-- Ancient Elven Artifact
-										["description"] = "Ignore!",
+										["description"] = "|CFFFF0000IGNORE!|r",
 									},
 									{	-- Ancient Fossil
 										["npcID"] = 52454,	-- Ancient Fossil
-										["description"] = "This artifact is used in summoning the boss.",
+										["description"] = "|CFFFF0000This artifact is used in summoning the boss.|r",
 									},
 									{	-- Ancient Fossil
 										["npcID"] = 52455,	-- Ancient Fossil
-										["description"] = "Ignore!",
+										["description"] = "|CFFFF0000IGNORE!|r",
 									},
 									{	-- Ancient Troll Artifact
 										["npcID"] = 52452,	-- Ancient Troll Artifact
-										["description"] = "This artifact is used in summoning the boss.",
+										["description"] = "|CFFFF0000This artifact is used in summoning the boss.|r",
 									},
 									{	-- Ancient Troll Artifact
-										["npcID"] = 54453,	-- Ancient Troll Artifact
-										["description"] = "Ignore!",
+										["npcID"] = 52453,	-- Ancient Troll Artifact
+										["description"] = "|CFFFF0000IGNORE!|r",
 									},
 									{	-- Arlokk's Claws
 										["itemID"] = 69638,	-- Arlokk's Claws
