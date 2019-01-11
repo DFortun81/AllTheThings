@@ -457,6 +457,10 @@ _.Instances =
 								["description"] = "Needs to be taken while in combat.",
 								["icon"] = "Interface\\Icons\\spell_shadow_haunting",
 								["collectible"] = true,
+								["description"] = "In order to collect this you will need to take a picture with The Lich King while in COMBAT.  To do this you will want to start the RP then activate the camera and wait until the fight starts..  Once you have done this it should check off.  If it doesn't hit \"M\", \"L\" or relog.  These are PER character and not account wide.",
+								["crs"] = {
+									36597,	-- The Lich King
+								},
 							},
 						},
 					},
