@@ -3038,46 +3038,46 @@ hooksecurefunc("ReputationParagonFrame_SetupParagonTooltip",function(frame)
 	-- Let's make sure the user isn't in combat and if they are do they have In Combat turned on.  Finally check to see if Tootltips are turned on.
 	if (not InCombatLockdown() or GetDataMember("DisplayTooltipsInCombat")) and GetDataMember("EnableTooltipInformation") then
 		
-		local paragonCacheID = {
-			-- Paragon Cache Rewards
-			-- [QuestID] = [ItemCacheID"]	-- Faction // Quest Title
-			[54454] = 166300,	-- 7th Legion // Supplies from the 7th Legion
-			[48976] = 152922,	-- Argussian Reach // Paragon of the Argussian Reach
-			[46777] = 152108,	-- Armies of Legionfall // The Bounties of Legionfall
-			[48977] = 152923,	-- Army of the Light // Paragon of the Army of the Light
-			[54453] = 166298,	-- Champions of Azeroth // Supplies from Magni
-			[46745] = 152102,	-- Court of Farondis // Supplies from the Court
-			[46747] = 152103,	-- Dreamweavers // Supplies from the Dreamweavers
-			[46743] = 152104,	-- Highmountain Tribes // Supplies from Highmountain
-			[54455] = 166299,	-- Honorbound // Supplies from the Honorbound
-			[54456] = 166297,	-- Order of Embers // Supplies from the Order of Embers
-			[54458] = 166295,	-- Proudmoore Admiralty // Supplies from the Proudmoore Admiralty
-			[54457] = 166294,	-- Storm's Wake // Supplies from Storm's Wake
-			[54460] = 166282,	-- Talanji's Expedition // Supplies from Talanji's Expedition
-			[46748] = 152105,	-- The Nightfallen // Supplies from the Nightfallen
-			[46749] = 152107,	-- The Wardens // Supplies from the Wardens
-			[54451] = 166245,	-- Tortollan Seekers // Baubles from the Seekers
-			[46746] = 152106,	-- Valarjar // Supplies from the Valarjar
-			[54461] = 166290,	-- Voldunai // Supplies from the Voldunai
-			[54462] = 166292,	-- Zandalari Empire // Supplies from the Zandalari Empire
-		};
-		
-		-- Grab Item Link Info
-		local iName, sLink, iRarity, iLevel, iMinLevel, sType, sSubType, iStackCount = GetItemInfo(paragonCacheID[paragonQuestID])
-			if sLink ~= nil then
-				-- Attach tooltip to the Paragon Frame
-				GameTooltip:SetOwner(EmbeddedItemTooltip, "ANCHOR_NONE")
-				-- Using TOPRIGHT for now so that it hooks slightly better into other addon's that take up a lot of the vertical distance.  As well as when you scroll towards the bottom of the frame it doesn't cause potential cutoffs.	
-				GameTooltip:SetPoint("TOPLEFT", EmbeddedItemTooltip, "TOPRIGHT")
-				-- TOP/BOTTOM + LEFT/RIGHT attaches it to that particular spot of the corresponding paragon tooltip
-				-- Populate Tooltip with the Paragon Cache Rewards
-				GameTooltip:SetHyperlink(sLink)
-				--Can't get it to clear when leaving the tooltip for some reason.  See below of hating API
-				--GameTooltip:HookScript("OnShow", AttachTooltip);
-				--GameTooltip:HookScript("OnTooltipCleared", ClearTooltip); -- ARGH Why you no work; I hate the API
-			end
+	local paragonCacheID = {
+		-- Paragon Cache Rewards
+		-- [QuestID] = [ItemCacheID"]	-- Faction // Quest Title
+		[54454] = 166300,	-- 7th Legion // Supplies from the 7th Legion
+		[48976] = 152922,	-- Argussian Reach // Paragon of the Argussian Reach
+		[46777] = 152108,	-- Armies of Legionfall // The Bounties of Legionfall
+		[48977] = 152923,	-- Army of the Light // Paragon of the Army of the Light
+		[54453] = 166298,	-- Champions of Azeroth // Supplies from Magni
+		[46745] = 152102,	-- Court of Farondis // Supplies from the Court
+		[46747] = 152103,	-- Dreamweavers // Supplies from the Dreamweavers
+		[46743] = 152104,	-- Highmountain Tribes // Supplies from Highmountain
+		[54455] = 166299,	-- Honorbound // Supplies from the Honorbound
+		[54456] = 166297,	-- Order of Embers // Supplies from the Order of Embers
+		[54458] = 166295,	-- Proudmoore Admiralty // Supplies from the Proudmoore Admiralty
+		[54457] = 166294,	-- Storm's Wake // Supplies from Storm's Wake
+		[54460] = 166282,	-- Talanji's Expedition // Supplies from Talanji's Expedition
+		[46748] = 152105,	-- The Nightfallen // Supplies from the Nightfallen
+		[46749] = 152107,	-- The Wardens // Supplies from the Wardens
+		[54451] = 166245,	-- Tortollan Seekers // Baubles from the Seekers
+		[46746] = 152106,	-- Valarjar // Supplies from the Valarjar
+		[54461] = 166290,	-- Voldunai // Supplies from the Voldunai
+		[54462] = 166292,	-- Zandalari Empire // Supplies from the Zandalari Empire
+	};
+	
+	-- Grab Item Link Info
+	local iName, sLink, iRarity, iLevel, iMinLevel, sType, sSubType, iStackCount = GetItemInfo(paragonCacheID[paragonQuestID])
+		if sLink ~= nil then
+			-- Attach tooltip to the Paragon Frame
+			GameTooltip:SetOwner(EmbeddedItemTooltip, "ANCHOR_NONE")
+			-- Using TOPRIGHT for now so that it hooks slightly better into other addon's that take up a lot of the vertical distance.  As well as when you scroll towards the bottom of the frame it doesn't cause potential cutoffs.	
+			GameTooltip:SetPoint("TOPLEFT", EmbeddedItemTooltip, "TOPRIGHT")
+			-- TOP/BOTTOM + LEFT/RIGHT attaches it to that particular spot of the corresponding paragon tooltip
+			-- Populate Tooltip with the Paragon Cache Rewards
+			GameTooltip:SetHyperlink(sLink)
+			--Can't get it to clear when leaving the tooltip for some reason.  See below of hating API
+			--GameTooltip:HookScript("OnShow", AttachTooltip);
+			--GameTooltip:HookScript("OnTooltipCleared", ClearTooltip); -- ARGH Why you no work; I hate the API
 		end
 	end
+end
 );
 
 -- Achievement Lib
@@ -8211,7 +8211,6 @@ end
 -- Create the Primary Collection Window (this allows you to save the size and location)
 app:GetWindow("Prime");
 app:GetWindow("Unsorted");
---[[--
 app:GetWindow("Debugger", UIParent, function(self)
 	if not self.initialized then
 		self.initialized = true;
