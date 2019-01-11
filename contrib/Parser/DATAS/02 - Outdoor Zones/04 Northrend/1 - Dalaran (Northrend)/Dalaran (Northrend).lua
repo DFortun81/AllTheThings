@@ -4837,13 +4837,43 @@ _.Zones =
 						}),
 						n(54651, {	-- Zom Bocom (Same name, different npc)
 							["groups"] = {
-								un(2, i(70542)),	-- Vicious Gladiator's Cloak of Alacrity
-								un(2, i(70543)),	-- Vicious Gladiator's Cloak of Prowess
-								un(2, i(70555)),	-- Vicious Gladiator's Drape of Diffusion
-								un(2, i(70556)),	-- Vicious Gladiator's Drape o of Mediation
-								un(2, i(70557)),	-- Vicious Gladiator's Drape o of Prowess
+								un(2, i(70185)),	-- Ruthless Gladiator's Gavel
+									un(2, i(70201)),	-- Ruthless Gladiator's Bonecracker
+									un(2, i(70202)),	-- Ruthless Gladiator's Pummeler
+									un(2, i(70188)),	-- Ruthless Gladiator's Spellblade
+									un(2, i(70191)),	-- Ruthless Gladiator's Shiv
+									un(2, i(70203)),	-- Ruthless Gladiator's Shanker
+									un(2, i(70204)),	-- Ruthless Gladiator's Hacker
+									un(2, i(70205)),	-- Ruthless Gladiator's Cleaver
+									un(2, i(70199)),	-- Ruthless Gladiator's Quickblade
+									un(2, i(70200)),	-- Ruthless Gladiator's Slicer
+									un(2, i(70194)),	-- Ruthless Gladiator's Rifle
+									un(2, i(70192)),	-- Ruthless Gladiator's Longbow
+									un(2, i(70193)),	-- Ruthless Gladiator's Heavy Crossbow
+									un(2, i(70184)),	-- Ruthless Gladiator's Decapitator
+									un(2, i(70183)),	-- Ruthless Gladiator's Bonegrinder
+									un(2, i(70178)),	-- Ruthless Gladiator's Greatsword)
+									un(2, i(70182)),	-- Ruthless Gladiator's Pike
+									un(2, i(70179)),	-- Ruthless Gladiator's Staff
+									un(2, i(70180)),	-- Ruthless Gladiator's Energy Staff
+									un(2, i(70181)),	-- Ruthless Gladiator's Battle Staff
+									un(2, i(70186)),	-- Ruthless Gladiator's Right Render
+									un(2, i(70187)),	-- Ruthless Gladiator's Ripper
+									un(2, i(70189)),	-- Ruthless Gladiator's Slasher
+									un(2, i(70190)),	-- Ruthless Gladiator's Fleshslicer
+									un(2, i(70206)),	-- Ruthless Gladiator's Redoubt
+									un(2, i(70207)),	-- Ruthless Gladiator's Barrier
+									un(2, i(70208)),	-- Ruthless Gladiator's Shield Wall
+									un(2, i(70195)),	-- Ruthless Gladiator's Baton of Light
+									un(2, i(70196)),	-- Ruthless Gladiator's Touch of Defeat
+									un(2, i(70210)),	-- Ruthless Gladiator's Endgame)
+									un(2, i(70542)),	-- Vicious Gladiator's Cloak of Alacrity. Added in S10, displayed as Vicious but is S10
+									un(2, i(70543)),	-- Vicious Gladiator's Cloak of Prowess. Added in S10, displayed as Vicious but is S10
+									un(2, i(70555)),	-- Vicious Gladiator's Drape of Diffusion. Added in S10, displayed as Vicious but is S10
+									un(2, i(70556)),	-- Vicious Gladiator's Drape o of Mediation. Added in S10, displayed as Vicious but is S10
+									un(2, i(70557)),	-- Vicious Gladiator's Drape o of Prowess. Added in S10, displayed as Vicious but is S10
 							},
-							["u"] = 2, -- Vendor no longer exists
+							["u"] = 43, -- Vendor no longer exists
 						}),
 					}),
 				}),

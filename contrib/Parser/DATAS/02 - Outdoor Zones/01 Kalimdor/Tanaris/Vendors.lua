@@ -435,6 +435,7 @@ _.Zones =
 						["coord"] = { 52.6, 29.0 },
 					}),
 					n(69979, {	-- Ecton Brasstumbler <Honor Quartermaster>
+					--[[ Only sold Honor Items
 						["groups"] = {
 							un(2, i(70542)),	-- Vicious Gladiator's Cloak of Alacrity
 							un(2, i(70543)),	-- Vicious Gladiator's Cloak of Prowess
@@ -443,7 +444,7 @@ _.Zones =
 							un(2, i(70557)),	-- Vicious Gladiator's Drape o of Prowess
 						},
 						["u"] = 43,
-					}),
+				--]]}),
 					n(40572, {	-- Haughty Modiste <Fashion Designer>
 						["groups"] = {
 							i(37915),	-- Pattern: Dress Shoes

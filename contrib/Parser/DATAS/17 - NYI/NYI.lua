@@ -1098,6 +1098,7 @@ _.NeverImplemented =
 		}),
 		-- maces
 		n(-334, { -- One-Handed Axes
+			un(1, i(68050)),	-- Shatterscale Mightfish
 			un(1, i(49456)),	-- Will of the Earth
 			un(1, i(50251)),	-- Unknown
 			un(1, i(108779)),	-- Unknown
