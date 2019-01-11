@@ -244,12 +244,6 @@ _.Zones =
 									un(2, i(70501)),	-- Ruthless Gladi Sabatons of Alacrity
 									un(2, i(70508)),	-- Ruthless Gladi Sabatons of Alacrity
 									un(2, i(70509)),	-- Ruthless Gladi Sabatons of Meditation
-									
-									un(2, i(70542)),	-- Vicious Gladiator's Cloak of Alacrity. Added in S10, displayed as Vicious but is S10
-									un(2, i(70543)),	-- Vicious Gladiator's Cloak of Prowess. Added in S10, displayed as Vicious but is S10
-									un(2, i(70555)),	-- Vicious Gladiator's Drape of Diffusion. Added in S10, displayed as Vicious but is S10
-									un(2, i(70556)),	-- Vicious Gladiator's Drape o of Mediation. Added in S10, displayed as Vicious but is S10
-									un(2, i(70557)),	-- Vicious Gladiator's Drape o of Prowess. Added in S10, displayed as Vicious but is S10
 							},
 						["u"] = 43, -- Vendor no longer exists
 					}),
@@ -379,6 +373,32 @@ _.Zones =
 									un(2, i(65543)),	-- Vicious Gladiator's Chain Helm
 									un(2, i(65544)),	-- Vicious Gladiator's Chain Gauntlets
 									un(2, i(65579)),	-- Vicious Gladiator's Chain Armor
+									un(2, i(70542)),	-- Vicious Gladiator's Cloak of Alacrity. S10 Version
+									un(2, i(70543)),	-- Vicious Gladiator's Cloak of Prowess. S10 Version
+									un(2, i(70555)),	-- Vicious Gladiator's Drape of Diffusion. S10 Version
+									un(2, i(70556)),	-- Vicious Gladiator's Drape of of Mediation. S10 Version
+									un(2, i(70557)),	-- Vicious Gladiator's Drape of of Prowess. .S10 Version Version
+									un(2, i(70511)),	-- Vicious Gladiator's Armsband of Mediation .S10 Version Version
+									un(2, i(70512)),	-- Vicious Gladiator's Armsband of Prowess .S10 Version Version
+									un(2, i(70590)),	-- Vicious Gladiator's Linked Armor .S10 Version Version
+									un(2, i(70591)),	-- Vicious Gladiator's Linked Gauntlets .S10 Version Version
+									un(2, i(70592)),	-- Vicious Gladiator's Linked Helm .S10 Version Version
+									un(2, i(70593)),	-- Vicious Gladiator's Linked Legs .S10 Version Version
+									un(2, i(70594)),	-- Vicious Gladiator's Linked Spaulders .S10 Version Version
+									un(2, i(70597)),	-- Vicious Gladiator's Mail Armor .S10 Version Version
+									un(2, i(70598)),	-- Vicious Gladiator's Mail Gauntlets .S10 Version Version
+									un(2, i(70599)),	-- Vicious Gladiator's Mail Helm .S10 Version Version
+									un(2, i(70600)),	-- Vicious Gladiator's Mail Legs .S10 Version Version
+									un(2, i(70601)),	-- Vicious Gladiator's Mail Spaulders .S10 Version Version
+									un(2, i(70632)),	-- Vicious Gladiator's RingMail Armor .S10 Version Version
+									un(2, i(70633)),	-- Vicious Gladiator's RingMail Gauntlets .S10 Version Version
+									un(2, i(70634)),	-- Vicious Gladiator's RingMail Helm .S10 Version Version
+									un(2, i(70635)),	-- Vicious Gladiator's RingMail Legs .S10 Version Version
+									un(2, i(70636)),	-- Vicious Gladiator's RingMail Spaulders .S10 Version Version
+									un(2, i(70640)),	-- Vicious Gladiator's Sabatons of Alacrity .S10 Version Version
+									un(2, i(70642)),	-- Vicious Gladiator's Sabatons of Medi .S10 Version Version
+									un(2, i(70665)),	-- Vicious Gladiator's Waistguard of Cruelty .S10 Version Version
+									un(2, i(70666)),	-- Vicious Gladiator's Waistguard of Medi .S10 Version Version
 								},
 						["u"] = 2,
 					}),
