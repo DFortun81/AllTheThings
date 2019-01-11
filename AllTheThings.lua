@@ -3067,7 +3067,9 @@ hooksecurefunc("ReputationParagonFrame_SetupParagonTooltip",function(frame)
 			if sLink ~= nil then
 				-- Attach tooltip to the Paragon Frame
 				GameTooltip:SetOwner(EmbeddedItemTooltip, "ANCHOR_NONE")
-				GameTooltip:SetPoint("TOPLEFT", EmbeddedItemTooltip, "BOTTOMLEFT")
+				-- Using TOPRIGHT for now so that it hooks slightly better into other addon's that take up a lot of the vertical distance.  As well as when you scroll towards the bottom of the frame it doesn't cause potential cutoffs.	
+				GameTooltip:SetPoint("TOPLEFT", EmbeddedItemTooltip, "TOPRIGHT")
+				-- TOP/BOTTOM + LEFT/RIGHT attaches it to that particular spot of the corresponding paragon tooltip
 				-- Populate Tooltip with the Paragon Cache Rewards
 				GameTooltip:SetHyperlink(sLink)
 				--Can't get it to clear when leaving the tooltip for some reason.  See below of hating API
