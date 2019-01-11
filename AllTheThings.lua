@@ -3072,11 +3072,14 @@ hooksecurefunc("ReputationParagonFrame_SetupParagonTooltip",function(frame)
 			-- TOP/BOTTOM + LEFT/RIGHT attaches it to that particular spot of the corresponding paragon tooltip
 			-- Populate Tooltip with the Paragon Cache Rewards
 			GameTooltip:SetHyperlink(sLink)
-			--Can't get it to clear when leaving the tooltip for some reason.  See below of hating API
-			--GameTooltip:HookScript("OnShow", AttachTooltip);
-			--GameTooltip:HookScript("OnTooltipCleared", ClearTooltip); -- ARGH Why you no work; I hate the API
 		end
 	end
+end
+);
+
+-- Hide Paragon Tooltip when cleared
+hooksecurefunc("ReputationParagonFrame_OnLeave",function(self)
+	GameTooltip:Hide();
 end
 );
 
