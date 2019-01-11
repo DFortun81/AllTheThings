@@ -4247,37 +4247,61 @@ _.Zones =
 							["u"] = 2, -- Vendor no longer exists
 						}),
 						n(40211, { -- Nargle Lashcord>S9< Elite <Vicious Gladiator>
-							["groups"] = {
-								un(2, i(67454)),	-- Vicious Gladiator's Gavel
-								un(2, i(67470)),	-- Vicious Gladiator's Bonebracker
-								un(2, i(67471)),	-- Vicious Gladiator's Pummeler
-								un(2, i(67457)),	-- Vicious Gladiator's Spellblade
-								un(2, i(67460)),	-- Vicious Gladiator's 
-								un(2, i(67472)),	-- Vicious Gladiator's Shanker
-								un(2, i(67473)),	-- Vicious Gladiator's Hacker
-								un(2, i(67474)),	-- Vicious Gladiator's Cleaver
-								un(2, i(67468)),	-- Vicious Gladiator's Quickblade
-								un(2, i(67469)),	-- Vicious Gladiator's Slicer
-								un(2, i(67463)),	-- Vicious Gladiator's Rifle
-								un(2, i(67462)),	-- Vicious Gladiator's Heavy Crossbow
-								un(2, i(67453)),	-- Vicious Gladiator's Decapitator
-								un(2, i(67452)),	-- Vicious Gladiator's Bonegrinder
-								un(2, i(67447)),	-- Vicious Gladiator's Greatsword
-								un(2, i(67448)),	-- Vicious Gladiator's Staff
-								un(2, i(67449)),	-- Vicious Gladiator's Engery Staff
-								un(2, i(67450)),	-- Vicious Gladiator's Battle  Staff
-								un(2, i(67455)),	-- Vicious Gladiator's Right Render
-								un(2, i(67456)),	-- Vicious Gladiator's Ripper
-								un(2, i(67458)),	-- Vicious Gladiator's Slasher
-								un(2, i(67459)),	-- Vicious Gladiator's Fleshslicer
-								un(2, i(67475)),	-- Vicious Gladiator's Redoubt
-								un(2, i(67476)),	-- Vicious Gladiator's Barrier
-								un(2, i(67477)),	-- Vicious Gladiator's Shield Wall
-								un(2, i(67464)),	-- Vicious Gladiator's Baton of Light
-								un(2, i(67465)),	-- Vicious Gladiator's Touch of Defeat
-								un(2, i(67478)),	-- Vicious Gladiator's Reprieve
-								un(2, i(67479)),	-- Vicious Gladiator's Endgame
-							},
+							["g"] = {
+									un(2, i(67454)),	-- Vicious Gladiator's Gavel
+									un(2, i(67470)),	-- Vicious Gladiator's Bonebracker
+									un(2, i(67471)),	-- Vicious Gladiator's Pummeler
+									un(2, i(67457)),	-- Vicious Gladiator's Spellblade
+									un(2, i(67460)),	-- Vicious Gladiator's 
+									un(2, i(67472)),	-- Vicious Gladiator's Shanker
+									un(2, i(67473)),	-- Vicious Gladiator's Hacker
+									un(2, i(67474)),	-- Vicious Gladiator's Cleaver
+									un(2, i(67468)),	-- Vicious Gladiator's Quickblade
+									un(2, i(67469)),	-- Vicious Gladiator's Slicer
+									un(2, i(67463)),	-- Vicious Gladiator's Rifle
+									un(2, i(67462)),	-- Vicious Gladiator's Heavy Crossbow
+									un(2, i(67453)),	-- Vicious Gladiator's Decapitator
+									un(2, i(67452)),	-- Vicious Gladiator's Bonegrinder
+									un(2, i(67447)),	-- Vicious Gladiator's Greatsword
+									un(2, i(67448)),	-- Vicious Gladiator's Staff
+									un(2, i(67449)),	-- Vicious Gladiator's Engery Staff
+									un(2, i(67450)),	-- Vicious Gladiator's Battle  Staff
+									un(2, i(67455)),	-- Vicious Gladiator's Right Render
+									un(2, i(67456)),	-- Vicious Gladiator's Ripper
+									un(2, i(67458)),	-- Vicious Gladiator's Slasher
+									un(2, i(67459)),	-- Vicious Gladiator's Fleshslicer
+									un(2, i(67475)),	-- Vicious Gladiator's Redoubt
+									un(2, i(67476)),	-- Vicious Gladiator's Barrier
+									un(2, i(67477)),	-- Vicious Gladiator's Shield Wall
+									un(2, i(67464)),	-- Vicious Gladiator's Baton of Light
+									un(2, i(67465)),	-- Vicious Gladiator's Touch of Defeat
+									un(2, i(67478)),	-- Vicious Gladiator's Reprieve
+									un(2, i(67479)),	-- Vicious Gladiator's Endgame
+									un(2, i(65523)),	-- Vicious Gladiator's Mail Spaulders
+									un(2, i(65524)),	-- Vicious Gladiator's Mail Legs
+									un(2, i(65525)),	-- Vicious Gladiator's Mail Helm
+									un(2, i(65526)),	-- Vicious Gladiator's Mail Gauntlets
+									un(2, i(65527)),	-- Vicious Gladiator's Mail Armor
+									un(2, i(65559)),	-- Vicious Gladiator's Linked  Spaulders
+									un(2, i(65560)),	-- Vicious Gladiator's Linked Legs
+									un(2, i(65561)),	-- Vicious Gladiator's Linked Helm
+									un(2, i(65562)),	-- Vicious Gladiator's Linked Gauntlets
+									un(2, i(65563)),	-- Vicious Gladiator's Linked Armor
+									un(2, i(65612)),	-- Vicious Gladiator's Sabatons of Meditation
+									un(2, i(65611)),	-- Vicious Gladiator's Sabatons Alacrity
+									un(2, i(65603)),	-- Vicious Gladiator's Sabatons of Cruelty
+									un(2, i(65604)),	-- Vicious Gladiator's Sabatons of Alacrity again
+									un(2, i(65536)),	-- Vicious Gladiator's Ringmail Armor
+									un(2, i(65567)),	-- Vicious Gladiator's Ringmail Spaulders
+									un(2, i(65568)),	-- Vicious Gladiator's Ringmail Legs
+									un(2, i(65569)),	-- Vicious Gladiator's Ringmail Helm
+									un(2, i(65570)),	-- Vicious Gladiator's Ringmail Gauntlets)
+									un(2, i(65537)),	-- Vicious Gladiator's Chain Spaulders
+									un(2, i(65538)),	-- Vicious Gladiator's Chain Leggings
+									un(2, i(65543)),	-- Vicious Gladiator's Chain Helm
+									un(2, i(65544)),	-- Vicious Gladiator's Chain Gauntlets
+									un(2, i(65579)),	-- Vicious Gladiator's Chain Armor
+								},
 							["u"] = 2,
 						}),
 						n(34092, {	-- Trapjaw Rix Season >7< Elite Version [Note: Yes, two npc's with same name. One is removed]
@@ -4867,6 +4891,32 @@ _.Zones =
 									un(2, i(70195)),	-- Ruthless Gladiator's Baton of Light
 									un(2, i(70196)),	-- Ruthless Gladiator's Touch of Defeat
 									un(2, i(70210)),	-- Ruthless Gladiator's Endgame)
+									
+									un(2, i(70420)),	-- Ruthless Gladiator's Mail Spaulders
+									un(2, i(70421)),	-- Ruthless Gladiator's Mail Legs
+									un(2, i(70422)),	-- Ruthless Gladiator's Mail Helm
+									un(2, i(70423)),	-- Ruthless Gladiator's Mail Gauntlets
+									un(2, i(70424)),	-- Ruthless Gladiator's Mail Armor
+									un(2, i(70433)),	-- Ruthless Gladi Ringmail Armor
+									un(2, i(70464)),	-- Ruthless Gladi Ringmail Spaulders
+									un(2, i(70465)),	-- Ruthless Gladi Ringmail Legs
+									un(2, i(70466)),	-- Ruthless Gladi Ringmail Helm
+									un(2, i(70467)),	-- Ruthless Gladi Ringmail Gauntlets
+									un(2, i(70434)),	-- Ruthless Gladi Chain Spaulders
+									un(2, i(70435)),	-- Ruthless Gladi Chain Legs
+									un(2, i(70440)),	-- Ruthless Gladi Chain Helm
+									un(2, i(70441)),	-- Ruthless Gladi Chain Gauntlets
+									un(2, i(70476)),	-- Ruthless Gladi Chain Armor
+									un(2, i(70456)),	-- Ruthless Gladi Linked Spaulders
+									un(2, i(70457)),	-- Ruthless Gladi Linked Legs
+									un(2, i(70458)),	-- Ruthless Gladi Linked Helm
+									un(2, i(70459)),	-- Ruthless Gladi Linked Gauntlets
+									un(2, i(70460)),	-- Ruthless Gladi Linked Armor
+									un(2, i(70500)),	-- Ruthless Gladi Sabatons of Cruelty
+									un(2, i(70501)),	-- Ruthless Gladi Sabatons of Alacrity
+									un(2, i(70508)),	-- Ruthless Gladi Sabatons of Alacrity
+									un(2, i(70509)),	-- Ruthless Gladi Sabatons of Meditation
+									
 									un(2, i(70542)),	-- Vicious Gladiator's Cloak of Alacrity. Added in S10, displayed as Vicious but is S10
 									un(2, i(70543)),	-- Vicious Gladiator's Cloak of Prowess. Added in S10, displayed as Vicious but is S10
 									un(2, i(70555)),	-- Vicious Gladiator's Drape of Diffusion. Added in S10, displayed as Vicious but is S10

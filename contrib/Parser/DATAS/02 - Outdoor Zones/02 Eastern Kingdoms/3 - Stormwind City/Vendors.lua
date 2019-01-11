@@ -1745,12 +1745,39 @@ _.Zones =
 									un(2, i(70195)),	-- Ruthless Gladiator's Baton of Light
 									un(2, i(70196)),	-- Ruthless Gladiator's Touch of Defeat
 									un(2, i(70210)),	-- Ruthless Gladiator's Endgame)
+									
+									un(2, i(70420)),	-- Ruthless Gladiator's Mail Spaulders
+									un(2, i(70421)),	-- Ruthless Gladiator's Mail Legs
+									un(2, i(70422)),	-- Ruthless Gladiator's Mail Helm
+									un(2, i(70423)),	-- Ruthless Gladiator's Mail Gauntlets
+									un(2, i(70424)),	-- Ruthless Gladiator's Mail Armor
+									un(2, i(70433)),	-- Ruthless Gladi Ringmail Armor
+									un(2, i(70464)),	-- Ruthless Gladi Ringmail Spaulders
+									un(2, i(70465)),	-- Ruthless Gladi Ringmail Legs
+									un(2, i(70466)),	-- Ruthless Gladi Ringmail Helm
+									un(2, i(70467)),	-- Ruthless Gladi Ringmail Gauntlets
+									un(2, i(70434)),	-- Ruthless Gladi Chain Spaulders
+									un(2, i(70435)),	-- Ruthless Gladi Chain Legs
+									un(2, i(70440)),	-- Ruthless Gladi Chain Helm
+									un(2, i(70441)),	-- Ruthless Gladi Chain Gauntlets
+									un(2, i(70476)),	-- Ruthless Gladi Chain Armor
+									un(2, i(70456)),	-- Ruthless Gladi Linked Spaulders
+									un(2, i(70457)),	-- Ruthless Gladi Linked Legs
+									un(2, i(70458)),	-- Ruthless Gladi Linked Helm
+									un(2, i(70459)),	-- Ruthless Gladi Linked Gauntlets
+									un(2, i(70460)),	-- Ruthless Gladi Linked Armor
+									un(2, i(70500)),	-- Ruthless Gladi Sabatons of Cruelty
+									un(2, i(70501)),	-- Ruthless Gladi Sabatons of Alacrity
+									un(2, i(70508)),	-- Ruthless Gladi Sabatons of Alacrity
+									un(2, i(70509)),	-- Ruthless Gladi Sabatons of Meditation
+									
 									un(2, i(70542)),	-- Vicious Gladiator's Cloak of Alacrity. Added in S10, displayed as Vicious but is S10
 									un(2, i(70543)),	-- Vicious Gladiator's Cloak of Prowess. Added in S10, displayed as Vicious but is S10
 									un(2, i(70555)),	-- Vicious Gladiator's Drape of Diffusion. Added in S10, displayed as Vicious but is S10
 									un(2, i(70556)),	-- Vicious Gladiator's Drape o of Mediation. Added in S10, displayed as Vicious but is S10
 									un(2, i(70557)),	-- Vicious Gladiator's Drape o of Prowess. Added in S10, displayed as Vicious but is S10
 								},
+								["u"] = 43, -- Vendor no longer exists
 							},
 							{	-- Knight-Lieutenant T'Maire Sydes <Ruthless Gladiator>
 								["npcID"] = 69974,	-- Knight-Lieutenant T'Maire Sydes <Ruthless Gladiator>
@@ -2047,6 +2074,30 @@ _.Zones =
 									un(2, i(67465)),	-- Vicious Gladiator's Touch of Defeat
 									un(2, i(67478)),	-- Vicious Gladiator's Reprieve
 									un(2, i(67479)),	-- Vicious Gladiator's Endgame
+									un(2, i(65523)),	-- Vicious Gladiator's Mail Spaulders
+									un(2, i(65524)),	-- Vicious Gladiator's Mail Legs
+									un(2, i(65525)),	-- Vicious Gladiator's Mail Helm
+									un(2, i(65526)),	-- Vicious Gladiator's Mail Gauntlets
+									un(2, i(65527)),	-- Vicious Gladiator's Mail Armor
+									un(2, i(65559)),	-- Vicious Gladiator's Linked  Spaulders
+									un(2, i(65560)),	-- Vicious Gladiator's Linked Legs
+									un(2, i(65561)),	-- Vicious Gladiator's Linked Helm
+									un(2, i(65562)),	-- Vicious Gladiator's Linked Gauntlets
+									un(2, i(65563)),	-- Vicious Gladiator's Linked Armor
+									un(2, i(65612)),	-- Vicious Gladiator's Sabatons of Meditation
+									un(2, i(65611)),	-- Vicious Gladiator's Sabatons Alacrity
+									un(2, i(65603)),	-- Vicious Gladiator's Sabatons of Cruelty
+									un(2, i(65604)),	-- Vicious Gladiator's Sabatons of Alacrity again
+									un(2, i(65536)),	-- Vicious Gladiator's Ringmail Armor
+									un(2, i(65567)),	-- Vicious Gladiator's Ringmail Spaulders
+									un(2, i(65568)),	-- Vicious Gladiator's Ringmail Legs
+									un(2, i(65569)),	-- Vicious Gladiator's Ringmail Helm
+									un(2, i(65570)),	-- Vicious Gladiator's Ringmail Gauntlets)
+									un(2, i(65537)),	-- Vicious Gladiator's Chain Spaulders
+									un(2, i(65538)),	-- Vicious Gladiator's Chain Leggings
+									un(2, i(65543)),	-- Vicious Gladiator's Chain Helm
+									un(2, i(65544)),	-- Vicious Gladiator's Chain Gauntlets
+									un(2, i(65579)),	-- Vicious Gladiator's Chain Armor
 								},
 								["u"] = 2,
 							},
