@@ -4246,6 +4246,40 @@ _.Zones =
 							},
 							["u"] = 2, -- Vendor no longer exists
 						}),
+						n(40211, { -- Nargle Lashcord>S9< Elite <Vicious Gladiator>
+							["groups"] = {
+								un(2, i(67454)),	-- Vicious Gladiator's Gavel
+								un(2, i(67470)),	-- Vicious Gladiator's Bonebracker
+								un(2, i(67471)),	-- Vicious Gladiator's Pummeler
+								un(2, i(67457)),	-- Vicious Gladiator's Spellblade
+								un(2, i(67460)),	-- Vicious Gladiator's 
+								un(2, i(67472)),	-- Vicious Gladiator's Shanker
+								un(2, i(67473)),	-- Vicious Gladiator's Hacker
+								un(2, i(67474)),	-- Vicious Gladiator's Cleaver
+								un(2, i(67468)),	-- Vicious Gladiator's Quickblade
+								un(2, i(67469)),	-- Vicious Gladiator's Slicer
+								un(2, i(67463)),	-- Vicious Gladiator's Rifle
+								un(2, i(67462)),	-- Vicious Gladiator's Heavy Crossbow
+								un(2, i(67453)),	-- Vicious Gladiator's Decapitator
+								un(2, i(67452)),	-- Vicious Gladiator's Bonegrinder
+								un(2, i(67447)),	-- Vicious Gladiator's Greatsword
+								un(2, i(67448)),	-- Vicious Gladiator's Staff
+								un(2, i(67449)),	-- Vicious Gladiator's Engery Staff
+								un(2, i(67450)),	-- Vicious Gladiator's Battle  Staff
+								un(2, i(67455)),	-- Vicious Gladiator's Right Render
+								un(2, i(67456)),	-- Vicious Gladiator's Ripper
+								un(2, i(67458)),	-- Vicious Gladiator's Slasher
+								un(2, i(67459)),	-- Vicious Gladiator's Fleshslicer
+								un(2, i(67475)),	-- Vicious Gladiator's Redoubt
+								un(2, i(67476)),	-- Vicious Gladiator's Barrier
+								un(2, i(67477)),	-- Vicious Gladiator's Shield Wall
+								un(2, i(67464)),	-- Vicious Gladiator's Baton of Light
+								un(2, i(67465)),	-- Vicious Gladiator's Touch of Defeat
+								un(2, i(67478)),	-- Vicious Gladiator's Reprieve
+								un(2, i(67479)),	-- Vicious Gladiator's Endgame
+							},
+							["u"] = 2,
+						}),
 						n(34092, {	-- Trapjaw Rix Season >7< Elite Version [Note: Yes, two npc's with same name. One is removed]
 							["groups"] = {
 								un(2, i(49086)), -- Relentless Gladiator's Tabard [Elite Rating]
