@@ -1188,6 +1188,31 @@ _.Zones =
 						i(29902),	-- Red Moth Egg Pet
 						i(29958),	-- Blue Dragonhawk Hatchling Pet
 					}),
+					n(34091, {	-- Grex Brainboiler Season >7< Elite Version [Note: Yes, two npc's with same name. One is removed]
+						["groups"] = {
+							un(2, i(49086)), -- Relentless Gladiator's Tabard [Elite Rating]
+							un(2, i(48435)),	-- Relentless Gladiator's Punisher
+							un(2, i(48511)),	-- Relentless Gladiator's Truncheon
+							un(2, i(48519)),	-- Relentless Gladiator's Salvation
+							un(2, i(48426)),	-- Relentless Gladiator's Dicer
+							un(2, i(48438)),	-- Relentless Gladiator's Swiftblade
+							un(2, i(48513)),	-- Relentless Gladiator's Longblade
+							un(2, i(48517)),	-- Relentless Gladiator's Halberd
+							un(2, i(48410)),	-- Relentless Gladiator's Skirmish Staff
+							un(2, i(48414)),	-- Relentless Gladiator's Combat Staff
+							un(2, i(48521)),	-- Relentless Gladiator's Light Staff
+							un(2, i(48523)),	-- Relentless Gladiator's Greatstaff
+							un(2, i(48408)),	-- Relentless Gladiator's Mageblade
+							un(2, i(48428)),	-- Relentless Gladiator's Dirk
+							un(2, i(49191)),	-- Relentless Gladiator's Blade of Celerity
+							un(2, i(48424)),	-- Relentless Gladiator's Shotgun
+							un(2, i(48420)),	-- Relentless Gladiator's Recurve
+							un(2, i(48422)),	-- Relentless Gladiator's Repeater
+							un(2, i(48402)),	-- Relentless Gladiator's Sunderer
+							un(2, i(48406)),	-- Relentless Gladiator's Claymore)
+						},
+						["u"] = 2, -- Vendor no longer exists
+					}),
 					n(40209, {	-- Grex Brainboiler <Classic Alliance Cloth & Leather>
 						["groups"] = {
 							i(77670),	-- Replica Field Marshal's Dragonhide Breastplate

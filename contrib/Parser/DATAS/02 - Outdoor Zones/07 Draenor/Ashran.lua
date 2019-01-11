@@ -1754,6 +1754,7 @@ _.Zones =
 							un(2, i(129936)),	-- Wild Gladiator's Runeaxe
 							un(2, i(126748)),	-- Warmongering Gladiator's Cleaver
 							un(2, i(126880)),	-- Warmongering Gladiator's Hacker
+							un(2, i(133584)),	-- Warmongering Gladi Runeaxe
 							-- Bows
 							un(2, i(125637)),	-- Wild Gladiator's Longbow
 							un(2, i(126751)),	-- Warmongering Gladiator's Longbow
@@ -1768,6 +1769,18 @@ _.Zones =
 							un(2, i(125761)),	-- Wild Gladi Shanker
 							un(2, i(126760)),	-- Warmongering Gladi Spellblade
 							un(2, i(126875)),	-- Warmongering Gladi SHanker
+							-- Offhand
+							un(2, i(125644)),	-- Wild Gladi Endgame
+							un(2, i(125648)),	-- Wild Gladi Reprieve
+							un(2, i(126762)),	-- Warmongering Gladi Endgame
+							un(2, i(126762)),	-- Warmonger Gladi Reprieve
+							-- 1 Hand Sword
+							un(2, i(125636)),	-- Wild Gladi Quickblade
+							un(2, i(125764)),	-- Wild Gladi Mageblade
+							un(2, i(125768)),	-- Wild Gladi Slicer
+							un(2, i(126750)),	-- Warmongering Gladi Quickblade
+							un(2, i(126878)),	-- Warmongering Gladi mageblade
+							un(2, i(126882)),	-- Warmongering Gladi Slicer
 						},
 						["u"] = 2, -- Vendor doesn't sell anything in 7.0+
 					}),
@@ -1796,6 +1809,7 @@ _.Zones =
 							un(2, i(129936)),	-- Wild Gladiator's Runeaxe
 							un(2, i(126748)),	-- Warmongering Gladiator's Cleaver
 							un(2, i(126880)),	-- Warmongering Gladiator's Hacker
+							un(2, i(133584)),	-- Warmongering Gladi Runeaxe
 							-- Bows
 							un(2, i(125637)),	-- Wild Gladiator's Longbow
 							un(2, i(126751)),	-- Warmongering Gladiator's Longbow
@@ -1810,6 +1824,18 @@ _.Zones =
 							un(2, i(125761)),	-- Wild Gladi Shanker
 							un(2, i(126760)),	-- Warmongering Gladi Spellblade
 							un(2, i(126875)),	-- Warmongering Gladi SHanker
+							-- Offhand
+							un(2, i(125644)),	-- Wild Gladi Endgame
+							un(2, i(125648)),	-- Wild Gladi Reprieve
+							un(2, i(126762)),	-- Warmongering Gladi Endgame
+							un(2, i(126762)),	-- Warmonger Gladi Reprieve
+							-- 1 Hand Sword
+							un(2, i(125636)),	-- Wild Gladi Quickblade
+							un(2, i(125764)),	-- Wild Gladi Mageblade
+							un(2, i(125768)),	-- Wild Gladi Slicer
+							un(2, i(126750)),	-- Warmongering Gladi Quickblade
+							un(2, i(126878)),	-- Warmongering Gladi mageblade
+							un(2, i(126882)),	-- Warmongering Gladi Slicer
 						},
 						["u"] = 2, -- Vendor doesn't sell anything in 7.0+
 					}),

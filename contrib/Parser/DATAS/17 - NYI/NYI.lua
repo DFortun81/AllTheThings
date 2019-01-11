@@ -1090,6 +1090,11 @@ _.NeverImplemented =
 			un(1, i(161933)),	-- Unknown
 			un(1, i(161937)),	-- Unknown
 			un(1, i(165277)),	-- Unknown
+			un(1, i(108810)),	-- Unknown
+			un(1, i(109273)),	-- Unknown
+			un(1, i(109301)),	-- Unknown
+			un(1, i(109311)),	-- Unknown
+			un(1, i(109380)),	-- Unknown
 		}),
 		-- maces
 		n(-334, { -- One-Handed Axes
@@ -1130,6 +1135,10 @@ _.NeverImplemented =
 		n(-343,	{ -- Polearms
 			un(1, i(158504)),	-- Whaler's Pike
 			un(1, i(158563)),	-- Tomb-Rustler's Polearm
+			un(1, i(108797)),	-- Unknown
+			un(1, i(108798)),	-- Unknown
+			un(1, i(108799)),	-- Unknown
+			un(1, i(109456)),	-- Unknown
 		}),
 		n(-387,	{	-- Relics
 			un(1, i(132252)),	-- Owen Test Relic
