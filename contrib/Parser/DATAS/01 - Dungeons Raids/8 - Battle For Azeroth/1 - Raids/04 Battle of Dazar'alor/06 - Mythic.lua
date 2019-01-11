@@ -284,6 +284,9 @@ _.Instances =
 									{	-- Mirror of Entwined Fate
 										["itemID"] = 165578,	-- Mirror of Entwined Fate
 									},
+									{	-- Formula: Enchanted Tiki Mask
+										["itemID"] = 165696,	-- Formula: Enchanted Tiki Mask
+									},
 								},
 							},
 							{	-- High Tinker Mekkatorque

@@ -402,6 +402,7 @@ _.PVP =
 				i(165189),	-- Sinister Aspirant's Rifle
 				i(165195),	-- Sinister Aspirant's Greatsword
 				i(165197),	-- Sninister Aspirant Staff
+				i(165194),	-- Sinister Aspirant Shanker
 			},
 			["races"] = HORDE_ONLY,
 		}),
@@ -413,6 +414,7 @@ _.PVP =
 				i(165208),	-- Sinister Aspirant's Longbow
 				i(166478),	-- Sinister Aspirant's Greatsword
 				i(165200),	-- Sninister Aspirant Staff
+				i(165203),	-- Sinister Aspirant Shanker
 			},
 			["races"] = ALLIANCE_ONLY,
 		}),
