@@ -10,6 +10,17 @@ _.Zones =
 					["groups"] = {
 						n(-17, {	-- Quests [Note: We don't attach qg's or coords since they don't apply to the WQ due to not actually receiving anything; very few exceptions apply]
 							["groups"] = {
+								{	-- Azerite Caravan [H-Incursion WQ]
+									["questID"] = 54681,	-- Azerite Caravan
+									["coords"] = {
+										{ 32.13, 46.54, 896 },
+									},
+									["crs"] = {
+										148676,	-- Caravan Commander Veronica
+									},
+									["isWQ"] = 120,
+									["races"] = HORDE_ONLY,
+								},
 								q(52862, {	-- Azerite Empowerment*
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
@@ -85,6 +96,14 @@ _.Zones =
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = ALLIANCE_ONLY,
 								},
+								{	-- Fungal Infestation [H-Incursion WQ]
+									["questID"] = 54506,	-- Fungal Infestation
+									["coords"] = {
+										{ 30.04, 40.55, 896 },
+									},
+									["isWQ"] = 120,
+									["races"] = HORDE_ONLY,
+								},
 								q(51604, {	-- Hunters Hunted [A]
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = ALLIANCE_ONLY,
@@ -106,12 +125,31 @@ _.Zones =
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = ALLIANCE_ONLY,
 								},
+								{	-- Plowing the Field [H-Incursion WQ]
+									["questID"] = 54472,	-- Plowing the Field
+									["coords"] = {
+										{ 33.89, 46.98, 896 },
+									},
+									["isWQ"] = 120,
+									["races"] = HORDE_ONLY,
+								},
 								q(52278, {	-- Rogue Azerite [Pet Battle]
 									["groups"] = {
 										i(163036),	-- Polished Pet Charm
 									},
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
+								{	-- Sister Hilga [AH]
+									["questID"] = 51612, 	-- Sister Hilga
+									["coords"] = {
+										{ 39.75, 37.84, 896 },
+									},
+									["crs"] = {
+										138295,	-- Sister Hilga
+									},
+									["isWQ"] = 120,			-- Enables WQ filter for Level 120
+									--Note!! Bleakweald Handguards offered 10/16
+								},
 								{	-- Sister Martha [AH]
 									["questID"] = 51906, 	-- Sister Martha
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
@@ -153,6 +191,21 @@ _.Zones =
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = ALLIANCE_ONLY,
 								}),
+								{	-- Wet Work: Arom's Stand [H-Incursion WQ]
+									["questID"] = 54011,	-- Wet Work: Arom's Stand
+									["coords"] = {
+										{ 36.19, 50.88, 896 },	-- Field Marshal Yosk
+										{ 37.84, 53.69, 896 },	-- Shadow Hunter Scout Start
+										{ 39.71, 53.83, 896 },	-- Shadow Hunter Scout Start
+										{ 39.72, 47.53, 896 },	-- Shadow Hunter Scout Start
+										{ 41.39, 48.81, 896 },	-- Shadow Hunter Scout Start
+									},
+									["crs"] = { 
+										146943,	-- Field Marshal Yosk
+									},
+									["isWQ"] = 120,
+									["races"] = HORDE_ONLY,
+								},
 								{	-- Work Order: Battle Flag: Rallying Swiftness
 									["questID"] = 52424,
 									["groups"] = {
@@ -212,6 +265,18 @@ _.Zones =
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = ALLIANCE_ONLY,
 									["requireSkill"] = 202,	-- Engineering
+								},
+								{	-- Zillie Wunderwrench and Grizzwald [H-Incursion WQ]
+									["questID"] = 54711,	-- Zillie Wunderwrench and Grizzwald
+									["coords"] = {
+										{ 39.69, 40.63, 896 },
+									},
+									["crs"] = {
+										148862,	-- Zillie Wunderwrench
+										148860, -- Grizzwald
+									},
+									["isWQ"] = 120,
+									["races"] = HORDE_ONLY,
 								},
 							},
 						}),

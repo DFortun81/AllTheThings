@@ -1228,6 +1228,23 @@ _.Zones =
 							},
 							["icon"] = "Interface\\Icons\\inv_drustvar",
 						}),
+						{	-- In Every Dark Corner [Incursion Quest]
+							["questID"] = 54137,	-- In Every Dark Corner
+							["qg"] = 148142,		-- Rokhan
+							["coords"] = {
+								{ 36.91, 26.47, 896 },	-- Rokhan [Complete Rokhan's Ritual]
+								{ 40.08, 48.93, 896 },	-- Vindicator Caeduum
+							},
+							["crs"] = {
+								148380,	-- Vindicator Caeduum
+							},
+							["races"] = HORDE_ONLY,
+							["g"] = {
+								{	-- Honorbound Equipment Cache
+									["itemID"] = 165871,	-- Honorbound Equipment Cache
+								},
+							},
+						},
 					},
 				}),
 			},

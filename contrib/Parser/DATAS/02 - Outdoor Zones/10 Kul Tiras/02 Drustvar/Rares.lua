@@ -12,6 +12,9 @@ _.Zones =
 					["groups"] = {
 						o(277333, {	-- Ancient Sarcophagus
 							["questID"] = 49137,
+							["coords"] = {
+								{ 41.94, 36.49, 896 },
+							},
 							["icon"] = "Interface\\Icons\\inv_misc_treasurechest01c",
 							["model"] = "World\\SkillActivated\\Containers\\TreasureChest06.mdx",
 							["modelScale"] = 2,
@@ -286,18 +289,18 @@ _.Zones =
 							["npcID"] = 129950,	-- Talon
 							["questID"] = 49528,
 							["coords"] = {
-								{ 31.81, 41.01 },
-								{ 32.21, 40.01 },
+								{ 31.96, 40.67, 896 },
+								{ 32.21, 40.01, 896 },
 							},
 							["g"] = {
 								{	-- Talon
 									["achievementID"] = 12941,	-- Adventurer of Drustvar
-									["criteriaID"] = 16,	-- Talon
+									["criteriaID"] = 16,		-- Talon
 								},
 								{	-- Frosted Talonfeather Mantle
 									["itemID"] = 161444,	-- Frosted Talonfeather Mantle
-									["modID"] = 17,	-- Azerite Armor!! ["bonusID"] = 4775,	-- Azerite Armor!!
-									["lvl"] = 110,	-- Will show 120 otherwise!!
+									["modID"] = 17,			-- Azerite Armor!! ["bonusID"] = 4775,	-- Azerite Armor!!
+									["lvl"] = 110,			-- Will show 120 otherwise!!
 								},
 							},
 						},
