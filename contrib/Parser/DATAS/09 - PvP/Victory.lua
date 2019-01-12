@@ -57,25 +57,13 @@ _.PVP =
 							["itemID"] = 161694,	-- Dread Gladiator's Warglaive
 						},
 						{	-- Dread Gladiator's Cape
-							["itemID"] = 161907,	-- Dread Gladiator's Cape
-						},
-						{	-- Dread Gladiator's Cape
 							["itemID"] = 163732,	-- Dread Gladiator's Cape
-						},
-						{	-- Dread Gladiator's Drape
-							["itemID"] = 161906,	-- Dread Gladiator's Drape
 						},
 						{	-- Dread Gladiator's Drape
 							["itemID"] = 163731,	-- Dread Gladiator's Drape
 						},
 						{	-- Dread Gladiator's Greatcloak
-							["itemID"] = 161669,	-- Dread Gladiator's Greatcloak
-						},
-						{	-- Dread Gladiator's Greatcloak
 							["itemID"] = 163730,	-- Dread Gladiator's Greatcloak
-						},
-						{	-- Dread Gladiator's Shawl
-							["itemID"] = 161668,	-- Dread Gladiator's Shawl
 						},
 						{	-- Dread Gladiator's Shawl
 							["itemID"] = 163729,	-- Dread Gladiator's Shawl
@@ -544,26 +532,14 @@ _.PVP =
 					{	-- Dread Gladiator's Cape
 						["itemID"] = 161907,	-- Dread Gladiator's Cape
 					},
-					{	-- Dread Gladiator's Cape
-						["itemID"] = 163732,	-- Dread Gladiator's Cape
-					},
 					{	-- Dread Gladiator's Drape
 						["itemID"] = 161906,	-- Dread Gladiator's Drape
-					},
-					{	-- Dread Gladiator's Drape
-						["itemID"] = 163731,	-- Dread Gladiator's Drape
 					},
 					{	-- Dread Gladiator's Greatcloak
 						["itemID"] = 161669,	-- Dread Gladiator's Greatcloak
 					},
-					{	-- Dread Gladiator's Greatcloak
-						["itemID"] = 163730,	-- Dread Gladiator's Greatcloak
-					},
 					{	-- Dread Gladiator's Shawl
 						["itemID"] = 161668,	-- Dread Gladiator's Shawl
-					},
-					{	-- Dread Gladiator's Shawl
-						["itemID"] = 163729,	-- Dread Gladiator's Shawl
 					},
 					{	-- Dread Gladiator's Silk Amice
 						["itemID"] = 161731,	-- Dread Gladiator's Silk Amice
