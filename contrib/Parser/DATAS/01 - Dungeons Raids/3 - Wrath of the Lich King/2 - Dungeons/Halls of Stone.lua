@@ -97,6 +97,8 @@ _.Instances =
 							i(38614),	-- Embrace of Sorrow
 							i(38615),	-- Lightning-Charged Gloves
 							i(38616),	-- Maiden's Girdle
+							i(38611),	-- Ringlet of Repose
+							i(38617),	-- Woeful Band
 						})),
 						cr(28234, e(606, {	-- Tribunal of Ages
 							{	-- Halls of Stone: Tribunal of Ages
@@ -197,6 +199,8 @@ _.Instances =
 								i(38614),	-- Embrace of Sorrow
 								i(38615),	-- Lightning-Charged Gloves
 								i(38616),	-- Maiden's Girdle
+								i(38611),	-- Ringlet of Repose
+								i(38617),	-- Woeful Band
 							})),
 							cr(28234, e(606, {	-- Tribunal of Ages
 								{	-- Brann Spankin' New
