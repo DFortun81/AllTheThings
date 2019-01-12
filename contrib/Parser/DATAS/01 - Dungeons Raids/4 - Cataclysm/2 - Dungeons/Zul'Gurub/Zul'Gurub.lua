@@ -12,7 +12,7 @@ _.Instances =
 				["g"] = {
 					{	-- Heroic
 						["difficultyID"] = 2,	-- Heroic
-						["g"] = {
+						["g"] = bubbleDown({["modID"] = 2}, {
 							{	-- Hive Queen
 								["npcID"] = 52442,		-- Hive Queen
 								["questID"] = 53809,	-- KillID
@@ -391,7 +391,7 @@ _.Instances =
 								i(69623),	-- Vestments of the Soulflayer
 								h(i(122215)),	-- Music Roll: Zul'Gurub Voodoo
 							})),
-						},
+						}),
 					},
 				},
 			},

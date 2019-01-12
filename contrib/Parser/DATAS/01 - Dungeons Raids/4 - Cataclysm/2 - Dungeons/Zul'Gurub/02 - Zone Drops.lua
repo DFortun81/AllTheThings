@@ -15,7 +15,7 @@ _.Instances =
 						["g"] = {
 							{	-- Zone Drops
 								["npcID"] = 0,	-- Zone Drop
-								["g"] = {
+								["g"] = bubbleDown({["modID"] = 2}, {
 									{	-- Gurubashi Punisher
 										["itemID"] = 69803,	-- Gurubashi Punisher
 										["crs"] = {
@@ -207,7 +207,7 @@ _.Instances =
 											52413,	-- Zulian Gnasher
 										},
 									},
-								},
+								}),
 							},
 						},
 					},

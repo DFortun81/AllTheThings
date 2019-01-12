@@ -15,7 +15,7 @@ _.Instances =
 				["g"] = {
 					{	-- Heroic
 						["difficultyID"] = 15,	-- Heroic
-						["g"] ={
+						["g"] = bubbleDown({["modID"] = 5}, {
 							{	-- Zone Drops
 								["npcID"] = 0,	-- Zone Drops
 								["g"] = {
@@ -415,7 +415,7 @@ _.Instances =
 									},
 								},
 							},
-						},
+						}),
 					},
 				},
 			},

@@ -15,7 +15,7 @@ _.Instances =
 				["g"] = {
 					{	-- LFR
 						["difficultyID"] = 17,	-- LFR
-						["g"] ={
+						["g"] = bubbleDown({["modID"] = 4}, {
 							{	-- Zone Drops
 								["npcID"] = 0,	-- Zone Drops
 								["g"] = {
@@ -410,7 +410,7 @@ _.Instances =
 									},
 								},
 							},
-						},
+						}),
 					},
 				},
 			},
