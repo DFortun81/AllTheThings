@@ -327,6 +327,7 @@ _.NeverImplemented =
 			un(1, i(109313)),	-- Unknown
 			un(1, i(109314)),	-- Unknown
 			un(1, i(109315)),	-- Unknown
+			un(1, i(71570)),	-- Bracers of forked lightning
 			un(1, i(109316)),	-- Unknown
 			un(1, i(109317)),	-- Unknown
 			un(1, i(109318)),	-- Unknown
@@ -1268,7 +1269,6 @@ _.NeverImplemented =
 	un(1, i(80980)),	-- Axe of Aborted Deforestation (Never made it to Live, yet into our Appearances Tab)
 	un(1, i(80983)),	-- Extravagant Tree Chopper (Never made it to Live, yet into our Appearances Tab)
 	un(1, i(32178)),	-- Chancellor's Shanker
-	un(1, i(141611)), -- Fel Barbed Spear [This version wasn't added]
 	un(1, i(129899)), -- The Eagle Spear
 	un(1, i(119408)), -- Foereaver Polearm [This version wasn't added]
 	un(1, i(115297)), -- Spectral Polearm
