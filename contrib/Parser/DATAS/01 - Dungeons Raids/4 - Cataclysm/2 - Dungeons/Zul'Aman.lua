@@ -92,6 +92,7 @@ _.Instances =
 								i(69797),	-- Charmbinder Grips
 								i(69802),	-- Band of the Gurubashi Berserker
 								i(69799),	-- Quickfinger Ring
+								i(69798),	-- Knotted Handwraps
 							}),
 							n(-7777, {	-- Timed Events
 								["description"] = "Enter the instance and talk to Harrison Jones to start the event and open the doors. You will now have 20 minutes to defeat the first animal-boss of your choice. Any of the loa spirit bosses will do and there is no required order, but two of them will add extra time to the timer.\n\n    Killing Nalorakk (bear) will add 15 minutes to your timer.\n    Killing Akil'zon (eagle) will add 10 minutes to your timer.\n    Other bosses will not grant additional time.\n\nThe loot from the event is dependent on the number of hostages you rescue.",
