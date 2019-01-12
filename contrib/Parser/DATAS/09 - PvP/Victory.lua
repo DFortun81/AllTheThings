@@ -119,290 +119,146 @@ _.PVP =
 					{	-- Dread Gladiator's Leather Armwraps
 						["itemID"] = 161740,	-- Dread Gladiator's Leather Armwraps
 					},
-					{	-- Dread Gladiator's Leather Armwraps
-						["itemID"] = 161772,	-- Dread Gladiator's Leather Armwraps
-					},
 					{	-- Dread Gladiator's Leather Belt
 						["itemID"] = 161627,	-- Dread Gladiator's Leather Belt
-					},
-					{	-- Dread Gladiator's Leather Belt
-						["itemID"] = 161659,	-- Dread Gladiator's Leather Belt
 					},
 					{	-- Dread Gladiator's Leather Bindings
 						["itemID"] = 161631,	-- Dread Gladiator's Leather Bindings
 					},
-					{	-- Dread Gladiator's Leather Bindings
-						["itemID"] = 161663,	-- Dread Gladiator's Leather Bindings
-					},
 					{	-- Dread Gladiator's Leather Boots
 						["itemID"] = 161608,	-- Dread Gladiator's Leather Boots
-					},
-					{	-- Dread Gladiator's Leather Boots
-						["itemID"] = 161640,	-- Dread Gladiator's Leather Boots
 					},
 					{	-- Dread Gladiator's Leather Footguards
 						["itemID"] = 161717,	-- Dread Gladiator's Leather Footguards
 					},
-					{	-- Dread Gladiator's Leather Footguards
-						["itemID"] = 161749,	-- Dread Gladiator's Leather Footguards
-					},
 					{	-- Dread Gladiator's Leather Gloves
 						["itemID"] = 161609,	-- Dread Gladiator's Leather Gloves
-					},
-					{	-- Dread Gladiator's Leather Gloves
-						["itemID"] = 161641,	-- Dread Gladiator's Leather Gloves
 					},
 					{	-- Dread Gladiator's Leather Handguards
 						["itemID"] = 161718,	-- Dread Gladiator's Leather Handguards
 					},
-					{	-- Dread Gladiator's Leather Handguards
-						["itemID"] = 161750,	-- Dread Gladiator's Leather Handguards
-					},
 					{	-- Dread Gladiator's Leather Helm
 						["itemID"] = 161615,	-- Dread Gladiator's Leather Helm
-					},
-					{	-- Dread Gladiator's Leather Helm
-						["itemID"] = 161647,	-- Dread Gladiator's Leather Helm
 					},
 					{	-- Dread Gladiator's Leather Hood
 						["itemID"] = 161724,	-- Dread Gladiator's Leather Hood
 					},
-					{	-- Dread Gladiator's Leather Hood
-						["itemID"] = 161756,	-- Dread Gladiator's Leather Hood
-					},
 					{	-- Dread Gladiator's Leather Legguards
 						["itemID"] = 161619,	-- Dread Gladiator's Leather Legguards
-					},
-					{	-- Dread Gladiator's Leather Legguards
-						["itemID"] = 161651,	-- Dread Gladiator's Leather Legguards
 					},
 					{	-- Dread Gladiator's Leather Mantle
 						["itemID"] = 161729,	-- Dread Gladiator's Leather Mantle
 					},
-					{	-- Dread Gladiator's Leather Mantle
-						["itemID"] = 161761,	-- Dread Gladiator's Leather Mantle
-					},
 					{	-- Dread Gladiator's Leather Pants
 						["itemID"] = 161728,	-- Dread Gladiator's Leather Pants
-					},
-					{	-- Dread Gladiator's Leather Pants
-						["itemID"] = 161760,	-- Dread Gladiator's Leather Pants
 					},
 					{	-- Dread Gladiator's Leather Spaulders
 						["itemID"] = 161620,	-- Dread Gladiator's Leather Spaulders
 					},
-					{	-- Dread Gladiator's Leather Spaulders
-						["itemID"] = 161652,	-- Dread Gladiator's Leather Spaulders
-					},
 					{	-- Dread Gladiator's Leather Tunic
 						["itemID"] = 161604,	-- Dread Gladiator's Leather Tunic
-					},
-					{	-- Dread Gladiator's Leather Tunic
-						["itemID"] = 161636,	-- Dread Gladiator's Leather Tunic
 					},
 					{	-- Dread Gladiator's Leather Vest
 						["itemID"] = 161713,	-- Dread Gladiator's Leather Vest
 					},
-					{	-- Dread Gladiator's Leather Vest
-						["itemID"] = 161745,	-- Dread Gladiator's Leather Vest
-					},
 					{	-- Dread Gladiator's Leather Waistband
 						["itemID"] = 161736,	-- Dread Gladiator's Leather Waistband
-					},
-					{	-- Dread Gladiator's Leather Waistband
-						["itemID"] = 161768,	-- Dread Gladiator's Leather Waistband
 					},
 					{	-- Dread Gladiator's Chain Armbands
 						["itemID"] = 161630,	-- Dread Gladiator's Chain Armbands
 					},
-					{	-- Dread Gladiator's Chain Armbands
-						["itemID"] = 161662,	-- Dread Gladiator's Chain Armbands
-					},
 					{	-- Dread Gladiator's Chain Armor
 						["itemID"] = 161603,	-- Dread Gladiator's Chain Armor
-					},
-					{	-- Dread Gladiator's Chain Armor
-						["itemID"] = 161635,	-- Dread Gladiator's Chain Armor
 					},
 					{	-- Dread Gladiator's Chain Chestguard
 						["itemID"] = 161712,	-- Dread Gladiator's Chain Chestguard
 					},
-					{	-- Dread Gladiator's Chain Chestguard
-						["itemID"] = 161744,	-- Dread Gladiator's Chain Chestguard
-					},
 					{	-- Dread Gladiator's Chain Clasp
 						["itemID"] = 161735,	-- Dread Gladiator's Chain Clasp
-					},
-					{	-- Dread Gladiator's Chain Clasp
-						["itemID"] = 161767,	-- Dread Gladiator's Chain Clasp
 					},
 					{	-- Dread Gladiator's Chain Footguards
 						["itemID"] = 161716,	-- Dread Gladiator's Chain Footguards
 					},
-					{	-- Dread Gladiator's Chain Footguards
-						["itemID"] = 161748,	-- Dread Gladiator's Chain Footguards
-					},
 					{	-- Dread Gladiator's Chain Gauntlets
 						["itemID"] = 161612,	-- Dread Gladiator's Chain Gauntlets
-					},
-					{	-- Dread Gladiator's Chain Gauntlets
-						["itemID"] = 161644,	-- Dread Gladiator's Chain Gauntlets
 					},
 					{	-- Dread Gladiator's Chain Handguards
 						["itemID"] = 161721,	-- Dread Gladiator's Chain Handguards
 					},
-					{	-- Dread Gladiator's Chain Handguards
-						["itemID"] = 161753,	-- Dread Gladiator's Chain Handguards
-					},
 					{	-- Dread Gladiator's Chain Headpiece
 						["itemID"] = 161723,	-- Dread Gladiator's Chain Headpiece
-					},
-					{	-- Dread Gladiator's Chain Headpiece
-						["itemID"] = 161755,	-- Dread Gladiator's Chain Headpiece
 					},
 					{	-- Dread Gladiator's Chain Helm
 						["itemID"] = 161614,	-- Dread Gladiator's Chain Helm
 					},
-					{	-- Dread Gladiator's Chain Helm
-						["itemID"] = 161646,	-- Dread Gladiator's Chain Helm
-					},
 					{	-- Dread Gladiator's Chain Leggings
 						["itemID"] = 161618,	-- Dread Gladiator's Chain Leggings
-					},
-					{	-- Dread Gladiator's Chain Leggings
-						["itemID"] = 161650,	-- Dread Gladiator's Chain Leggings
 					},
 					{	-- Dread Gladiator's Chain Legguards
 						["itemID"] = 161727,	-- Dread Gladiator's Chain Legguards
 					},
-					{	-- Dread Gladiator's Chain Legguards
-						["itemID"] = 161759,	-- Dread Gladiator's Chain Legguards
-					},
 					{	-- Dread Gladiator's Chain Sabatons
 						["itemID"] = 161607,	-- Dread Gladiator's Chain Sabatons
-					},
-					{	-- Dread Gladiator's Chain Sabatons
-						["itemID"] = 161639,	-- Dread Gladiator's Chain Sabatons
 					},
 					{	-- Dread Gladiator's Chain Shoulderguards
 						["itemID"] = 161732,	-- Dread Gladiator's Chain Shoulderguards
 					},
-					{	-- Dread Gladiator's Chain Shoulderguards
-						["itemID"] = 161764,	-- Dread Gladiator's Chain Shoulderguards
-					},
 					{	-- Dread Gladiator's Chain Spaulders
 						["itemID"] = 161623,	-- Dread Gladiator's Chain Spaulders
-					},
-					{	-- Dread Gladiator's Chain Spaulders
-						["itemID"] = 161655,	-- Dread Gladiator's Chain Spaulders
 					},
 					{	-- Dread Gladiator's Chain Waistguard
 						["itemID"] = 161626,	-- Dread Gladiator's Chain Waistguard
 					},
-					{	-- Dread Gladiator's Chain Waistguard
-						["itemID"] = 161658,	-- Dread Gladiator's Chain Waistguard
-					},
 					{	-- Dread Gladiator's Chain Wristguards
 						["itemID"] = 161739,	-- Dread Gladiator's Chain Wristguards
-					},
-					{	-- Dread Gladiator's Chain Wristguards
-						["itemID"] = 161771,	-- Dread Gladiator's Chain Wristguards
 					},
 					{	-- Dread Gladiator's Plate Armguards
 						["itemID"] = 161629,	-- Dread Gladiator's Plate Armguards
 					},
-					{	-- Dread Gladiator's Plate Armguards
-						["itemID"] = 161661,	-- Dread Gladiator's Plate Armguards
-					},
 					{	-- Dread Gladiator's Plate Chestguard
 						["itemID"] = 161711,	-- Dread Gladiator's Plate Chestguard
-					},
-					{	-- Dread Gladiator's Plate Chestguard
-						["itemID"] = 161743,	-- Dread Gladiator's Plate Chestguard
 					},
 					{	-- Dread Gladiator's Plate Chestpiece
 						["itemID"] = 161602,	-- Dread Gladiator's Plate Chestpiece
 					},
-					{	-- Dread Gladiator's Plate Chestpiece
-						["itemID"] = 161634,	-- Dread Gladiator's Plate Chestpiece
-					},
 					{	-- Dread Gladiator's Plate Clasp
 						["itemID"] = 161733,	-- Dread Gladiator's Plate Clasp
-					},
-					{	-- Dread Gladiator's Plate Clasp
-						["itemID"] = 161765,	-- Dread Gladiator's Plate Clasp
 					},
 					{	-- Dread Gladiator's Plate Gauntlets
 						["itemID"] = 161610,	-- Dread Gladiator's Plate Gauntlets
 					},
-					{	-- Dread Gladiator's Plate Gauntlets
-						["itemID"] = 161642,	-- Dread Gladiator's Plate Gauntlets
-					},
 					{	-- Dread Gladiator's Plate Girdle
 						["itemID"] = 161624,	-- Dread Gladiator's Plate Girdle
-					},
-					{	-- Dread Gladiator's Plate Girdle
-						["itemID"] = 161656,	-- Dread Gladiator's Plate Girdle
 					},
 					{	-- Dread Gladiator's Plate Gloves
 						["itemID"] = 161719,	-- Dread Gladiator's Plate Gloves
 					},
-					{	-- Dread Gladiator's Plate Gloves
-						["itemID"] = 161751,	-- Dread Gladiator's Plate Gloves
-					},
 					{	-- Dread Gladiator's Plate Greaves
 						["itemID"] = 161714,	-- Dread Gladiator's Plate Greaves
-					},
-					{	-- Dread Gladiator's Plate Greaves
-						["itemID"] = 161746,	-- Dread Gladiator's Plate Greaves
 					},
 					{	-- Dread Gladiator's Plate Headcover
 						["itemID"] = 161709,	-- Dread Gladiator's Plate Headcover
 					},
-					{	-- Dread Gladiator's Plate Headcover
-						["itemID"] = 161741,	-- Dread Gladiator's Plate Headcover
-					},
 					{	-- Dread Gladiator's Plate Helm
 						["itemID"] = 161600,	-- Dread Gladiator's Plate Helm
-					},
-					{	-- Dread Gladiator's Plate Helm
-						["itemID"] = 161632,	-- Dread Gladiator's Plate Helm
 					},
 					{	-- Dread Gladiator's Plate Leg Armor
 						["itemID"] = 161725,	-- Dread Gladiator's Plate Leg Armor
 					},
-					{	-- Dread Gladiator's Plate Leg Armor
-						["itemID"] = 161757,	-- Dread Gladiator's Plate Leg Armor
-					},
 					{	-- Dread Gladiator's Plate Legguards
 						["itemID"] = 161616,	-- Dread Gladiator's Plate Legguards
-					},
-					{	-- Dread Gladiator's Plate Legguards
-						["itemID"] = 161648,	-- Dread Gladiator's Plate Legguards
 					},
 					{	-- Dread Gladiator's Plate Pauldrons
 						["itemID"] = 161621,	-- Dread Gladiator's Plate Pauldrons
 					},
-					{	-- Dread Gladiator's Plate Pauldrons
-						["itemID"] = 161653,	-- Dread Gladiator's Plate Pauldrons
-					},
 					{	-- Dread Gladiator's Plate Shoulders
 						["itemID"] = 161730,	-- Dread Gladiator's Plate Shoulders
-					},
-					{	-- Dread Gladiator's Plate Shoulders
-						["itemID"] = 161762,	-- Dread Gladiator's Plate Shoulders
 					},
 					{	-- Dread Gladiator's Plate Vambraces
 						["itemID"] = 161738,	-- Dread Gladiator's Plate Vambraces
 					},
-					{	-- Dread Gladiator's Plate Vambraces
-						["itemID"] = 161770,	-- Dread Gladiator's Plate Vambraces
-					},
 					{	-- Dread Gladiator's Plate Warboots
 						["itemID"] = 161605,	-- Dread Gladiator's Plate Warboots
-					},
-					{	-- Dread Gladiator's Plate Warboots
-						["itemID"] = 161637,	-- Dread Gladiator's Plate Warboots
 					},
 					{	-- Dread Gladiator's Band
 						["itemID"] = 161672,	-- Dread Gladiator's Band
@@ -542,289 +398,145 @@ _.PVP =
 						["itemID"] = 161758,	-- Dread Gladiator's Silk Trousers
 					},
 					{	-- Dread Gladiator's Leather Armwraps
-						["itemID"] = 161740,	-- Dread Gladiator's Leather Armwraps
-					},
-					{	-- Dread Gladiator's Leather Armwraps
 						["itemID"] = 161772,	-- Dread Gladiator's Leather Armwraps
-					},
-					{	-- Dread Gladiator's Leather Belt
-						["itemID"] = 161627,	-- Dread Gladiator's Leather Belt
 					},
 					{	-- Dread Gladiator's Leather Belt
 						["itemID"] = 161659,	-- Dread Gladiator's Leather Belt
 					},
 					{	-- Dread Gladiator's Leather Bindings
-						["itemID"] = 161631,	-- Dread Gladiator's Leather Bindings
-					},
-					{	-- Dread Gladiator's Leather Bindings
 						["itemID"] = 161663,	-- Dread Gladiator's Leather Bindings
-					},
-					{	-- Dread Gladiator's Leather Boots
-						["itemID"] = 161608,	-- Dread Gladiator's Leather Boots
 					},
 					{	-- Dread Gladiator's Leather Boots
 						["itemID"] = 161640,	-- Dread Gladiator's Leather Boots
 					},
 					{	-- Dread Gladiator's Leather Footguards
-						["itemID"] = 161717,	-- Dread Gladiator's Leather Footguards
-					},
-					{	-- Dread Gladiator's Leather Footguards
 						["itemID"] = 161749,	-- Dread Gladiator's Leather Footguards
-					},
-					{	-- Dread Gladiator's Leather Gloves
-						["itemID"] = 161609,	-- Dread Gladiator's Leather Gloves
 					},
 					{	-- Dread Gladiator's Leather Gloves
 						["itemID"] = 161641,	-- Dread Gladiator's Leather Gloves
 					},
 					{	-- Dread Gladiator's Leather Handguards
-						["itemID"] = 161718,	-- Dread Gladiator's Leather Handguards
-					},
-					{	-- Dread Gladiator's Leather Handguards
 						["itemID"] = 161750,	-- Dread Gladiator's Leather Handguards
-					},
-					{	-- Dread Gladiator's Leather Helm
-						["itemID"] = 161615,	-- Dread Gladiator's Leather Helm
 					},
 					{	-- Dread Gladiator's Leather Helm
 						["itemID"] = 161647,	-- Dread Gladiator's Leather Helm
 					},
 					{	-- Dread Gladiator's Leather Hood
-						["itemID"] = 161724,	-- Dread Gladiator's Leather Hood
-					},
-					{	-- Dread Gladiator's Leather Hood
 						["itemID"] = 161756,	-- Dread Gladiator's Leather Hood
-					},
-					{	-- Dread Gladiator's Leather Legguards
-						["itemID"] = 161619,	-- Dread Gladiator's Leather Legguards
 					},
 					{	-- Dread Gladiator's Leather Legguards
 						["itemID"] = 161651,	-- Dread Gladiator's Leather Legguards
 					},
 					{	-- Dread Gladiator's Leather Mantle
-						["itemID"] = 161729,	-- Dread Gladiator's Leather Mantle
-					},
-					{	-- Dread Gladiator's Leather Mantle
 						["itemID"] = 161761,	-- Dread Gladiator's Leather Mantle
-					},
-					{	-- Dread Gladiator's Leather Pants
-						["itemID"] = 161728,	-- Dread Gladiator's Leather Pants
 					},
 					{	-- Dread Gladiator's Leather Pants
 						["itemID"] = 161760,	-- Dread Gladiator's Leather Pants
 					},
 					{	-- Dread Gladiator's Leather Spaulders
-						["itemID"] = 161620,	-- Dread Gladiator's Leather Spaulders
-					},
-					{	-- Dread Gladiator's Leather Spaulders
 						["itemID"] = 161652,	-- Dread Gladiator's Leather Spaulders
-					},
-					{	-- Dread Gladiator's Leather Tunic
-						["itemID"] = 161604,	-- Dread Gladiator's Leather Tunic
 					},
 					{	-- Dread Gladiator's Leather Tunic
 						["itemID"] = 161636,	-- Dread Gladiator's Leather Tunic
 					},
 					{	-- Dread Gladiator's Leather Vest
-						["itemID"] = 161713,	-- Dread Gladiator's Leather Vest
-					},
-					{	-- Dread Gladiator's Leather Vest
 						["itemID"] = 161745,	-- Dread Gladiator's Leather Vest
-					},
-					{	-- Dread Gladiator's Leather Waistband
-						["itemID"] = 161736,	-- Dread Gladiator's Leather Waistband
 					},
 					{	-- Dread Gladiator's Leather Waistband
 						["itemID"] = 161768,	-- Dread Gladiator's Leather Waistband
 					},
 					{	-- Dread Gladiator's Chain Armbands
-						["itemID"] = 161630,	-- Dread Gladiator's Chain Armbands
-					},
-					{	-- Dread Gladiator's Chain Armbands
 						["itemID"] = 161662,	-- Dread Gladiator's Chain Armbands
-					},
-					{	-- Dread Gladiator's Chain Armor
-						["itemID"] = 161603,	-- Dread Gladiator's Chain Armor
 					},
 					{	-- Dread Gladiator's Chain Armor
 						["itemID"] = 161635,	-- Dread Gladiator's Chain Armor
 					},
 					{	-- Dread Gladiator's Chain Chestguard
-						["itemID"] = 161712,	-- Dread Gladiator's Chain Chestguard
-					},
-					{	-- Dread Gladiator's Chain Chestguard
 						["itemID"] = 161744,	-- Dread Gladiator's Chain Chestguard
-					},
-					{	-- Dread Gladiator's Chain Clasp
-						["itemID"] = 161735,	-- Dread Gladiator's Chain Clasp
 					},
 					{	-- Dread Gladiator's Chain Clasp
 						["itemID"] = 161767,	-- Dread Gladiator's Chain Clasp
 					},
 					{	-- Dread Gladiator's Chain Footguards
-						["itemID"] = 161716,	-- Dread Gladiator's Chain Footguards
-					},
-					{	-- Dread Gladiator's Chain Footguards
 						["itemID"] = 161748,	-- Dread Gladiator's Chain Footguards
-					},
-					{	-- Dread Gladiator's Chain Gauntlets
-						["itemID"] = 161612,	-- Dread Gladiator's Chain Gauntlets
 					},
 					{	-- Dread Gladiator's Chain Gauntlets
 						["itemID"] = 161644,	-- Dread Gladiator's Chain Gauntlets
 					},
 					{	-- Dread Gladiator's Chain Handguards
-						["itemID"] = 161721,	-- Dread Gladiator's Chain Handguards
-					},
-					{	-- Dread Gladiator's Chain Handguards
 						["itemID"] = 161753,	-- Dread Gladiator's Chain Handguards
-					},
-					{	-- Dread Gladiator's Chain Headpiece
-						["itemID"] = 161723,	-- Dread Gladiator's Chain Headpiece
 					},
 					{	-- Dread Gladiator's Chain Headpiece
 						["itemID"] = 161755,	-- Dread Gladiator's Chain Headpiece
 					},
 					{	-- Dread Gladiator's Chain Helm
-						["itemID"] = 161614,	-- Dread Gladiator's Chain Helm
-					},
-					{	-- Dread Gladiator's Chain Helm
 						["itemID"] = 161646,	-- Dread Gladiator's Chain Helm
-					},
-					{	-- Dread Gladiator's Chain Leggings
-						["itemID"] = 161618,	-- Dread Gladiator's Chain Leggings
 					},
 					{	-- Dread Gladiator's Chain Leggings
 						["itemID"] = 161650,	-- Dread Gladiator's Chain Leggings
 					},
 					{	-- Dread Gladiator's Chain Legguards
-						["itemID"] = 161727,	-- Dread Gladiator's Chain Legguards
-					},
-					{	-- Dread Gladiator's Chain Legguards
 						["itemID"] = 161759,	-- Dread Gladiator's Chain Legguards
-					},
-					{	-- Dread Gladiator's Chain Sabatons
-						["itemID"] = 161607,	-- Dread Gladiator's Chain Sabatons
 					},
 					{	-- Dread Gladiator's Chain Sabatons
 						["itemID"] = 161639,	-- Dread Gladiator's Chain Sabatons
 					},
 					{	-- Dread Gladiator's Chain Shoulderguards
-						["itemID"] = 161732,	-- Dread Gladiator's Chain Shoulderguards
-					},
-					{	-- Dread Gladiator's Chain Shoulderguards
 						["itemID"] = 161764,	-- Dread Gladiator's Chain Shoulderguards
-					},
-					{	-- Dread Gladiator's Chain Spaulders
-						["itemID"] = 161623,	-- Dread Gladiator's Chain Spaulders
 					},
 					{	-- Dread Gladiator's Chain Spaulders
 						["itemID"] = 161655,	-- Dread Gladiator's Chain Spaulders
 					},
 					{	-- Dread Gladiator's Chain Waistguard
-						["itemID"] = 161626,	-- Dread Gladiator's Chain Waistguard
-					},
-					{	-- Dread Gladiator's Chain Waistguard
 						["itemID"] = 161658,	-- Dread Gladiator's Chain Waistguard
-					},
-					{	-- Dread Gladiator's Chain Wristguards
-						["itemID"] = 161739,	-- Dread Gladiator's Chain Wristguards
 					},
 					{	-- Dread Gladiator's Chain Wristguards
 						["itemID"] = 161771,	-- Dread Gladiator's Chain Wristguards
 					},
 					{	-- Dread Gladiator's Plate Armguards
-						["itemID"] = 161629,	-- Dread Gladiator's Plate Armguards
-					},
-					{	-- Dread Gladiator's Plate Armguards
 						["itemID"] = 161661,	-- Dread Gladiator's Plate Armguards
-					},
-					{	-- Dread Gladiator's Plate Chestguard
-						["itemID"] = 161711,	-- Dread Gladiator's Plate Chestguard
 					},
 					{	-- Dread Gladiator's Plate Chestguard
 						["itemID"] = 161743,	-- Dread Gladiator's Plate Chestguard
 					},
 					{	-- Dread Gladiator's Plate Chestpiece
-						["itemID"] = 161602,	-- Dread Gladiator's Plate Chestpiece
-					},
-					{	-- Dread Gladiator's Plate Chestpiece
 						["itemID"] = 161634,	-- Dread Gladiator's Plate Chestpiece
-					},
-					{	-- Dread Gladiator's Plate Clasp
-						["itemID"] = 161733,	-- Dread Gladiator's Plate Clasp
 					},
 					{	-- Dread Gladiator's Plate Clasp
 						["itemID"] = 161765,	-- Dread Gladiator's Plate Clasp
 					},
 					{	-- Dread Gladiator's Plate Gauntlets
-						["itemID"] = 161610,	-- Dread Gladiator's Plate Gauntlets
-					},
-					{	-- Dread Gladiator's Plate Gauntlets
 						["itemID"] = 161642,	-- Dread Gladiator's Plate Gauntlets
-					},
-					{	-- Dread Gladiator's Plate Girdle
-						["itemID"] = 161624,	-- Dread Gladiator's Plate Girdle
 					},
 					{	-- Dread Gladiator's Plate Girdle
 						["itemID"] = 161656,	-- Dread Gladiator's Plate Girdle
 					},
 					{	-- Dread Gladiator's Plate Gloves
-						["itemID"] = 161719,	-- Dread Gladiator's Plate Gloves
-					},
-					{	-- Dread Gladiator's Plate Gloves
 						["itemID"] = 161751,	-- Dread Gladiator's Plate Gloves
-					},
-					{	-- Dread Gladiator's Plate Greaves
-						["itemID"] = 161714,	-- Dread Gladiator's Plate Greaves
 					},
 					{	-- Dread Gladiator's Plate Greaves
 						["itemID"] = 161746,	-- Dread Gladiator's Plate Greaves
 					},
 					{	-- Dread Gladiator's Plate Headcover
-						["itemID"] = 161709,	-- Dread Gladiator's Plate Headcover
-					},
-					{	-- Dread Gladiator's Plate Headcover
 						["itemID"] = 161741,	-- Dread Gladiator's Plate Headcover
-					},
-					{	-- Dread Gladiator's Plate Helm
-						["itemID"] = 161600,	-- Dread Gladiator's Plate Helm
 					},
 					{	-- Dread Gladiator's Plate Helm
 						["itemID"] = 161632,	-- Dread Gladiator's Plate Helm
 					},
 					{	-- Dread Gladiator's Plate Leg Armor
-						["itemID"] = 161725,	-- Dread Gladiator's Plate Leg Armor
-					},
-					{	-- Dread Gladiator's Plate Leg Armor
 						["itemID"] = 161757,	-- Dread Gladiator's Plate Leg Armor
-					},
-					{	-- Dread Gladiator's Plate Legguards
-						["itemID"] = 161616,	-- Dread Gladiator's Plate Legguards
 					},
 					{	-- Dread Gladiator's Plate Legguards
 						["itemID"] = 161648,	-- Dread Gladiator's Plate Legguards
 					},
 					{	-- Dread Gladiator's Plate Pauldrons
-						["itemID"] = 161621,	-- Dread Gladiator's Plate Pauldrons
-					},
-					{	-- Dread Gladiator's Plate Pauldrons
 						["itemID"] = 161653,	-- Dread Gladiator's Plate Pauldrons
-					},
-					{	-- Dread Gladiator's Plate Shoulders
-						["itemID"] = 161730,	-- Dread Gladiator's Plate Shoulders
 					},
 					{	-- Dread Gladiator's Plate Shoulders
 						["itemID"] = 161762,	-- Dread Gladiator's Plate Shoulders
 					},
 					{	-- Dread Gladiator's Plate Vambraces
-						["itemID"] = 161738,	-- Dread Gladiator's Plate Vambraces
-					},
-					{	-- Dread Gladiator's Plate Vambraces
 						["itemID"] = 161770,	-- Dread Gladiator's Plate Vambraces
-					},
-					{	-- Dread Gladiator's Plate Warboots
-						["itemID"] = 161605,	-- Dread Gladiator's Plate Warboots
 					},
 					{	-- Dread Gladiator's Plate Warboots
 						["itemID"] = 161637,	-- Dread Gladiator's Plate Warboots
