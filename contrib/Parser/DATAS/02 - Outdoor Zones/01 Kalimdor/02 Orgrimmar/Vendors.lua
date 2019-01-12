@@ -244,9 +244,65 @@ _.Zones =
 									un(2, i(70501)),	-- Ruthless Gladi Sabatons of Alacrity
 									un(2, i(70508)),	-- Ruthless Gladi Sabatons of Alacrity
 									un(2, i(70509)),	-- Ruthless Gladi Sabatons of Meditation
+									un(2, i(70415)),	-- Ruthless Gladi Ornamented Spaulders
+									un(2, i(70416)),	-- Ruthless Gladi Ornamented Legs
+									un(2, i(70417)),	-- Ruthless Gladi Ornamented Head
+									un(2, i(70418)),	-- Ruthless Gladi Ornamented Gloves
+									un(2, i(70419)),	-- Ruthless Gladi Ornamented Chest
+									un(2, i(70477)),	-- Ruthless Gladi Plate Shoulders
+									un(2, i(70478)),	-- Ruthless Gladi Plate Legs
+									un(2, i(70479)),	-- Ruthless Gladi Plate Helm
+									un(2, i(70480)),	-- Ruthless Gladi Plate Gloves
+									un(2, i(70481)),	-- Ruthless Gladi Plate Chest
+									un(2, i(70482)),	-- Ruthless Gladi Scaled shoulders
+									un(2, i(70483)),	-- Ruthless Gladi Scaled legs
+									un(2, i(70487)),	-- Ruthless Gladi Scaled helm
+									un(2, i(70488)),	-- Ruthless Gladi Scaled gloves
+									un(2, i(70489)),	-- Ruthless Gladi Scaled chest
+									un(2, i(70490)),	-- Ruthless Gladi Dreadplate Shoulders
+									un(2, i(70491)),	-- Ruthless Gladi Dreadplate Legs
+									un(2, i(70492)),	-- Ruthless Gladi Dreadplate Helm
+									un(2, i(70493)),	-- Ruthless Gladi Dreadplate Gloves
+									un(2, i(70494)),	-- Ruthless Gladi Dreadplate Chest
+									un(2, i(70502)),	-- Ruthless Gladi Dreadplate Greaves of alacrity
+									un(2, i(70503)),	-- Ruthless Gladi Dreadplate greaves of meditation
+									un(2, i(70504)),	-- Ruthless Gladi Dreadplate warboots of cruelty
+									un(2, i(70505)),	-- Ruthless Gladi Dreadplate warboots of alacrity
 									un(2, i(72322)),	-- Ruthless Gladi Drape of Prowess. S11 Version
 									un(2, i(72323)),	-- Ruthless Gladi Drape of Diffusion. S11 Version
 									un(2, i(72324)),	-- Ruthless Gladi Drape of Meditation. S11 Version
+									un(2, i(72362)),	-- Ruthless Gladi Links of Cruelty. S11 Version
+									un(2, i(72363)),	-- Ruthless Gladi Links of Accuracy. S11 Version
+									un(2, i(72364)),	-- Ruthless Gladi Sabatons of Cruelty. S11 Version
+									un(2, i(72365)),	-- Ruthless Gladi sabatons of alacrity. S11 Version
+									un(2, i(72366)),	-- Ruthless Gladi Wristguard of Alacrity. S11 Version
+									un(2, i(72367)),	-- Ruthless Gladi Wristguard of Accuracy. S11 Version
+									un(2, i(72368)),	-- Ruthless Gladi Chain Armor. S11 Version
+									un(2, i(72369)),	-- Ruthless Gladi Chain gauntlets. S11 Version
+									un(2, i(72370)),	-- Ruthless Gladi helm. S11 Version
+									un(2, i(72371)),	-- Ruthless Gladi legs. S11 Version
+									un(2, i(72372)),	-- Ruthless Gladi spaulders. S11 Version
+									un(2, i(72427)),	-- Ruthless Gladi waistguard of meditation. S11 Version
+									un(2, i(72428)),	-- Ruthless Gladi sabatons of alacrity. S11 Version
+									un(2, i(72429)),	-- Ruthless Gladi sabatons of meditation. S11 Version
+									un(2, i(72430)),	-- Ruthless Gladi armsband of prower. S11 Version
+									un(2, i(72431)),	-- Ruthless Gladi armbands of meditation. S11 Version
+									un(2, i(72432)),	-- Ruthless Gladi ringmail armor. S11 Version
+									un(2, i(72433)),	-- Ruthless Gladi ringmail gauntlets. S11 Version
+									un(2, i(72434)),	-- Ruthless Gladi ringmail helm. S11 Version
+									un(2, i(72435)),	-- Ruthless Gladi ringmail legs. S11 Version
+									un(2, i(72436)),	-- Ruthless Gladi ringmail spaulders. S11 Version
+									un(2, i(72437)),	-- Ruthless Gladi linked armor. S11 Version
+									un(2, i(72437)),	-- Ruthless Gladi linked gauntlets. S11 Version
+									un(2, i(72437)),	-- Ruthless Gladi linked helm. S11 Version
+									un(2, i(72437)),	-- Ruthless Gladi linked legs. S11 Version
+									un(2, i(72437)),	-- Ruthless Gladi linked spaulders. S11 Version
+									un(2, i(72437)),	-- Ruthless Gladi waistguard of cruelty. S11 Version
+									un(2, i(72437)),	-- Ruthless Gladi mail armor. S11 Version
+									un(2, i(72437)),	-- Ruthless Gladi mail gauntlets. S11 Version
+									un(2, i(72437)),	-- Ruthless Gladi mail helm. S11 Version
+									un(2, i(72437)),	-- Ruthless Gladi mail legs. S11 Version
+									un(2, i(72437)),	-- Ruthless Gladi mail spaulders. S11 Version
 							},
 						["u"] = 43, -- Vendor no longer exists
 					}),
@@ -323,90 +379,209 @@ _.Zones =
 					}),
 					n(46593, { -- Doris Volanthius >S9< Elite <Vicious Gladiator>
 						["g"] = {
-									un(2, i(67454)),	-- Vicious Gladiator's Gavel
-									un(2, i(67470)),	-- Vicious Gladiator's Bonebracker
-									un(2, i(67471)),	-- Vicious Gladiator's Pummeler
-									un(2, i(67457)),	-- Vicious Gladiator's Spellblade
-									un(2, i(67460)),	-- Vicious Gladiator's 
-									un(2, i(67472)),	-- Vicious Gladiator's Shanker
-									un(2, i(67473)),	-- Vicious Gladiator's Hacker
-									un(2, i(67474)),	-- Vicious Gladiator's Cleaver
-									un(2, i(67468)),	-- Vicious Gladiator's Quickblade
-									un(2, i(67469)),	-- Vicious Gladiator's Slicer
-									un(2, i(67463)),	-- Vicious Gladiator's Rifle
-									un(2, i(67462)),	-- Vicious Gladiator's Heavy Crossbow
-									un(2, i(67453)),	-- Vicious Gladiator's Decapitator
-									un(2, i(67452)),	-- Vicious Gladiator's Bonegrinder
-									un(2, i(67447)),	-- Vicious Gladiator's Greatsword
-									un(2, i(67448)),	-- Vicious Gladiator's Staff
-									un(2, i(67449)),	-- Vicious Gladiator's Engery Staff
-									un(2, i(67450)),	-- Vicious Gladiator's Battle  Staff
-									un(2, i(67455)),	-- Vicious Gladiator's Right Render
-									un(2, i(67456)),	-- Vicious Gladiator's Ripper
-									un(2, i(67458)),	-- Vicious Gladiator's Slasher
-									un(2, i(67459)),	-- Vicious Gladiator's Fleshslicer
-									un(2, i(67475)),	-- Vicious Gladiator's Redoubt
-									un(2, i(67476)),	-- Vicious Gladiator's Barrier
-									un(2, i(67477)),	-- Vicious Gladiator's Shield Wall
-									un(2, i(67464)),	-- Vicious Gladiator's Baton of Light
-									un(2, i(67465)),	-- Vicious Gladiator's Touch of Defeat
-									un(2, i(67478)),	-- Vicious Gladiator's Reprieve
-									un(2, i(67479)),	-- Vicious Gladiator's Endgame
-									un(2, i(65523)),	-- Vicious Gladiator's Mail Spaulders
-									un(2, i(65524)),	-- Vicious Gladiator's Mail Legs
-									un(2, i(65525)),	-- Vicious Gladiator's Mail Helm
-									un(2, i(65526)),	-- Vicious Gladiator's Mail Gauntlets
-									un(2, i(65527)),	-- Vicious Gladiator's Mail Armor
-									un(2, i(65559)),	-- Vicious Gladiator's Linked  Spaulders
-									un(2, i(65560)),	-- Vicious Gladiator's Linked Legs
-									un(2, i(65561)),	-- Vicious Gladiator's Linked Helm
-									un(2, i(65562)),	-- Vicious Gladiator's Linked Gauntlets
-									un(2, i(65563)),	-- Vicious Gladiator's Linked Armor
-									un(2, i(65612)),	-- Vicious Gladiator's Sabatons of Meditation
-									un(2, i(65611)),	-- Vicious Gladiator's Sabatons Alacrity
-									un(2, i(65603)),	-- Vicious Gladiator's Sabatons of Cruelty
-									un(2, i(65604)),	-- Vicious Gladiator's Sabatons of Alacrity again
-									un(2, i(65536)),	-- Vicious Gladiator's Ringmail Armor
-									un(2, i(65567)),	-- Vicious Gladiator's Ringmail Spaulders
-									un(2, i(65568)),	-- Vicious Gladiator's Ringmail Legs
-									un(2, i(65569)),	-- Vicious Gladiator's Ringmail Helm
-									un(2, i(65570)),	-- Vicious Gladiator's Ringmail Gauntlets)
-									un(2, i(65537)),	-- Vicious Gladiator's Chain Spaulders
-									un(2, i(65538)),	-- Vicious Gladiator's Chain Leggings
-									un(2, i(65543)),	-- Vicious Gladiator's Chain Helm
-									un(2, i(65544)),	-- Vicious Gladiator's Chain Gauntlets
-									un(2, i(65579)),	-- Vicious Gladiator's Chain Armor
-									un(2, i(70542)),	-- Vicious Gladiator's Cloak of Alacrity. S10 Version
-									un(2, i(70543)),	-- Vicious Gladiator's Cloak of Prowess. S10 Version
-									un(2, i(70555)),	-- Vicious Gladiator's Drape of Diffusion. S10 Version
-									un(2, i(70556)),	-- Vicious Gladiator's Drape of of Mediation. S10 Version
-									un(2, i(70557)),	-- Vicious Gladiator's Drape of of Prowess.. S10 Version
-									un(2, i(70511)),	-- Vicious Gladiator's Armsband of Mediation. S10 Version
-									un(2, i(70512)),	-- Vicious Gladiator's Armsband of Prowess. S10 Version
-									un(2, i(70590)),	-- Vicious Gladiator's Linked Armor. S10 Version
-									un(2, i(70591)),	-- Vicious Gladiator's Linked Gauntlets. S10 Version
-									un(2, i(70592)),	-- Vicious Gladiator's Linked Helm. S10 Version
-									un(2, i(70593)),	-- Vicious Gladiator's Linked Legs. S10 Version
-									un(2, i(70594)),	-- Vicious Gladiator's Linked Spaulders. S10 Version
-									un(2, i(70597)),	-- Vicious Gladiator's Mail Armor. S10 Version
-									un(2, i(70598)),	-- Vicious Gladiator's Mail Gauntlets. S10 Version
-									un(2, i(70599)),	-- Vicious Gladiator's Mail Helm. S10 Version
-									un(2, i(70600)),	-- Vicious Gladiator's Mail Legs. S10 Version
-									un(2, i(70601)),	-- Vicious Gladiator's Mail Spaulders. S10 Version
-									un(2, i(70632)),	-- Vicious Gladiator's RingMail Armor. S10 Version
-									un(2, i(70633)),	-- Vicious Gladiator's RingMail Gauntlets. S10 Version
-									un(2, i(70634)),	-- Vicious Gladiator's RingMail Helm. S10 Version
-									un(2, i(70635)),	-- Vicious Gladiator's RingMail Legs. S10 Version
-									un(2, i(70636)),	-- Vicious Gladiator's RingMail Spaulders. S10 Version
-									un(2, i(70640)),	-- Vicious Gladiator's Sabatons of Alacrity. S10 Version
-									un(2, i(70642)),	-- Vicious Gladiator's Sabatons of Medi. S10 Version
-									un(2, i(70665)),	-- Vicious Gladiator's Waistguard of Cruelty. S10 Version
-									un(2, i(70666)),	-- Vicious Gladiator's Waistguard of Medi. S10 Version
-								},
-						["u"] = 2,
+							un(2, i(67454)),	-- Vicious Gladiator's Gavel
+							un(2, i(67470)),	-- Vicious Gladiator's Bonebracker
+							un(2, i(67461)),	-- Vicious Gladiator's Longbow
+							un(2, i(67471)),	-- Vicious Gladiator's Pummeler
+							un(2, i(67457)),	-- Vicious Gladiator's Spellblade
+							un(2, i(67460)),	-- Vicious Gladiator's 
+							un(2, i(67472)),	-- Vicious Gladiator's Shanker
+							un(2, i(67473)),	-- Vicious Gladiator's Hacker
+							un(2, i(67474)),	-- Vicious Gladiator's Cleaver
+							un(2, i(67468)),	-- Vicious Gladiator's Quickblade
+							un(2, i(67469)),	-- Vicious Gladiator's Slicer
+							un(2, i(67463)),	-- Vicious Gladiator's Rifle
+							un(2, i(67462)),	-- Vicious Gladiator's Heavy Crossbow
+							un(2, i(67453)),	-- Vicious Gladiator's Decapitator
+							un(2, i(67452)),	-- Vicious Gladiator's Bonegrinder
+							un(2, i(67447)),	-- Vicious Gladiator's Greatsword
+							un(2, i(67448)),	-- Vicious Gladiator's Staff
+							un(2, i(67449)),	-- Vicious Gladiator's Engery Staff
+							un(2, i(67450)),	-- Vicious Gladiator's Battle  Staff
+							un(2, i(67455)),	-- Vicious Gladiator's Right Render
+							un(2, i(67456)),	-- Vicious Gladiator's Ripper
+							un(2, i(67458)),	-- Vicious Gladiator's Slasher
+							un(2, i(67459)),	-- Vicious Gladiator's Fleshslicer
+							un(2, i(67475)),	-- Vicious Gladiator's Redoubt
+							un(2, i(67476)),	-- Vicious Gladiator's Barrier
+							un(2, i(67477)),	-- Vicious Gladiator's Shield Wall
+							un(2, i(67464)),	-- Vicious Gladiator's Baton of Light
+							un(2, i(67465)),	-- Vicious Gladiator's Touch of Defeat
+							un(2, i(67478)),	-- Vicious Gladiator's Reprieve
+							un(2, i(67479)),	-- Vicious Gladiator's Endgame
+							un(2, i(65523)),	-- Vicious Gladiator's Mail Spaulders
+							un(2, i(65524)),	-- Vicious Gladiator's Mail Legs
+							un(2, i(65525)),	-- Vicious Gladiator's Mail Helm
+							un(2, i(65526)),	-- Vicious Gladiator's Mail Gauntlets
+							un(2, i(65527)),	-- Vicious Gladiator's Mail Armor
+							un(2, i(65559)),	-- Vicious Gladiator's Linked  Spaulders
+							un(2, i(65560)),	-- Vicious Gladiator's Linked Legs
+							un(2, i(65561)),	-- Vicious Gladiator's Linked Helm
+							un(2, i(65562)),	-- Vicious Gladiator's Linked Gauntlets
+							un(2, i(65563)),	-- Vicious Gladiator's Linked Armor
+							un(2, i(65612)),	-- Vicious Gladiator's Sabatons of Meditation
+							un(2, i(65611)),	-- Vicious Gladiator's Sabatons Alacrity
+							un(2, i(65603)),	-- Vicious Gladiator's Sabatons of Cruelty
+							un(2, i(65604)),	-- Vicious Gladiator's Sabatons of Alacrity again
+							un(2, i(65536)),	-- Vicious Gladiator's Ringmail Armor
+							un(2, i(65567)),	-- Vicious Gladiator's Ringmail Spaulders
+							un(2, i(65568)),	-- Vicious Gladiator's Ringmail Legs
+							un(2, i(65569)),	-- Vicious Gladiator's Ringmail Helm
+							un(2, i(65570)),	-- Vicious Gladiator's Ringmail Gauntlets)
+							un(2, i(65537)),	-- Vicious Gladiator's Chain Spaulders
+							un(2, i(65538)),	-- Vicious Gladiator's Chain Leggings
+							un(2, i(65543)),	-- Vicious Gladiator's Chain Helm
+							un(2, i(65544)),	-- Vicious Gladiator's Chain Gauntlets
+							un(2, i(65579)),	-- Vicious Gladiator's Chain Armor
+							un(2, i(65531)),	-- Vicious Gladiator's Wyrmhide Helm
+							un(2, i(65532)),	-- Vicious Gladiator's Wyrmhide Gloves
+							un(2, i(65533)),	-- Vicious Gladiator's Kodohide Spaulders
+							un(2, i(65534)),	-- Vicious Gladiator's Kodohide Robes
+							un(2, i(65535)),	-- Vicious Gladiator's Kodohide Legs
+							un(2, i(65539)),	-- Vicious Gladiator's Kodohide Helm
+							un(2, i(65540)),	-- Vicious Gladiator's Kodohide Gloves
+							un(2, i(65541)),	-- Vicious Gladiator's Dragonhide Spaulders
+							un(2, i(65542)),	-- Vicious Gladiator's Dragonhide Robes
+							un(2, i(65545)),	-- Vicious Gladiator's Leather Spaulders
+							un(2, i(65546)),	-- Vicious Gladiator's Leather Legs
+							un(2, i(65547)),	-- Vicious Gladiator's Leather Helm
+							un(2, i(65548)),	-- Vicious Gladiator's Leather Gloves
+							un(2, i(65549)),	-- Vicious Gladiator's Leather Tunic
+							un(2, i(65550)),	-- Vicious Gladiator's Wyrmhide Spaulders
+							un(2, i(65551)),	-- Vicious Gladiator's Wyrmhide Robes
+							un(2, i(65552)),	-- Vicious Gladiator's Wyrmhide Legs
+							un(2, i(65587)),	-- Vicious Gladiator's Dragonhide Legs
+							un(2, i(65588)),	-- Vicious Gladiator's Dragonhide Helm
+							un(2, i(65589)),	-- Vicious Gladiator's Dragonhide Gloves
+							un(2, i(65601)),	-- Vicious Gladiator's Footguard of Medi
+							un(2, i(65602)),	-- Vicious Gladiator's Footguard of Alacrity
+							un(2, i(65609)),	-- Vicious Gladiator's Boots of Cruelty
+							un(2, i(65610)),	-- Vicious Gladiator's Boots of Alacrity
+							un(2, i(65528)),	-- Vicious Gladiator's Felweave Amice
+							un(2, i(65529)),	-- Vicious Gladiator's Felweave Rainment
+							un(2, i(65530)),	-- Vicious Gladiator's Felweave Trousers
+							un(2, i(65553)),	-- Vicious Gladiator's Mooncloth Robe
+							un(2, i(65554)),	-- Vicious Gladiator's Mooncloth Legs
+							un(2, i(65555)),	-- Vicious Gladiator's Mooncloth Helm
+							un(2, i(65556)),	-- Vicious Gladiator's Mooncloth Gloves
+							un(2, i(65557)),	-- Vicious Gladiator's Silk Amice
+							un(2, i(65558)),	-- Vicious Gladiator's Silk Robe
+							un(2, i(65564)),	-- Vicious Gladiator's Silk Legs
+							un(2, i(65565)),	-- Vicious Gladiator's Silk cowl
+							un(2, i(65566)),	-- Vicious Gladiator's Silk gloves
+							un(2, i(65571)),	-- Vicious Gladiator's felweave cowl
+							un(2, i(65572)),	-- Vicious Gladiator's felweave handguards
+							un(2, i(65573)),	-- Vicious Gladiator's Satin mantle
+							un(2, i(65574)),	-- Vicious Gladiator's Satin robe
+							un(2, i(65575)),	-- Vicious Gladiator's Satin legs
+							un(2, i(65576)),	-- Vicious Gladiator's Satin hood
+							un(2, i(65577)),	-- Vicious Gladiator's Satin gloves
+							un(2, i(65578)),	-- Vicious Gladiator's mooncloth mantle
+							un(2, i(65598)),	-- Vicious Gladiator's treads of cruelty
+							un(2, i(65599)),	-- Vicious Gladiator's treads of alacrity
+							un(2, i(65600)),	-- Vicious Gladiator's treads of mediation 
+							un(2, i(65518)),	-- Vicious Gladiator's Ornamented Spaulders
+							un(2, i(65519)),	-- Vicious Gladiator's Ornamented Legs
+							un(2, i(65520)),	-- Vicious Gladiator's Ornamented Head
+							un(2, i(65521)),	-- Vicious Gladiator's Ornamented Gloves
+							un(2, i(65522)),	-- Vicious Gladiator's Ornamented Chest
+							un(2, i(65580)),	-- Vicious Gladiator's Plate Shoulders
+							un(2, i(65581)),	-- Vicious Gladiator's Plate Legs
+							un(2, i(65582)),	-- Vicious Gladiator's Plate helm
+							un(2, i(65583)),	-- Vicious Gladiator's Plate gloves
+							un(2, i(65584)),	-- Vicious Gladiator's Plate chest
+							un(2, i(65585)),	-- Vicious Gladiator's scaled shoulders
+							un(2, i(65586)),	-- Vicious Gladiator's scaled legs
+							un(2, i(65590)),	-- Vicious Gladiator's scaled helm
+							un(2, i(65591)),	-- Vicious Gladiator's scaled gloves
+							un(2, i(65592)),	-- Vicious Gladiator's scaled chest
+							un(2, i(65593)),	-- Vicious Gladiator's dreadplate shoulders
+							un(2, i(65594)),	-- Vicious Gladiator's dreadplate legs
+							un(2, i(65595)),	-- Vicious Gladiator's dreadplate helm
+							un(2, i(65596)),	-- Vicious Gladiator's dreadplate gloves
+							un(2, i(65597)),	-- Vicious Gladiator's dreadplate chest
+							un(2, i(65605)),	-- Vicious Gladiator's greaves of alacrity
+							un(2, i(65606)),	-- Vicious Gladiator's greaves of meditation
+							un(2, i(65607)),	-- Vicious Gladiator's warboots of cruelty
+							un(2, i(65608)),	-- Vicious Gladiator's warboots of alacrity
+							un(2, i(70542)),	-- Vicious Gladiator's Cloak of Alacrity. S10 Version
+							un(2, i(70543)),	-- Vicious Gladiator's Cloak of Prowess. S10 Version
+							un(2, i(70555)),	-- Vicious Gladiator's Drape of Diffusion. S10 Version
+							un(2, i(70556)),	-- Vicious Gladiator's Drape of of Mediation. S10 Version
+							un(2, i(70557)),	-- Vicious Gladiator's Drape of of Prowess.. S10 Version
+							un(2, i(70531)),	-- Vicious Gladiator's Cape of Cruelty. S10 Version
+							un(2, i(70532)),	-- Vicious Gladiator's Cape of Prowess. S10 Version
+							un(2, i(70511)),	-- Vicious Gladiator's Armsband of Mediation. S10 Version
+							un(2, i(70512)),	-- Vicious Gladiator's Armsband of Prowess. S10 Version
+							un(2, i(70590)),	-- Vicious Gladiator's Linked Armor. S10 Version
+							un(2, i(70591)),	-- Vicious Gladiator's Linked Gauntlets. S10 Version
+							un(2, i(70592)),	-- Vicious Gladiator's Linked Helm. S10 Version
+							un(2, i(70593)),	-- Vicious Gladiator's Linked Legs. S10 Version
+							un(2, i(70594)),	-- Vicious Gladiator's Linked Spaulders. S10 Version
+							un(2, i(70597)),	-- Vicious Gladiator's Mail Armor. S10 Version
+							un(2, i(70598)),	-- Vicious Gladiator's Mail Gauntlets. S10 Version
+							un(2, i(70599)),	-- Vicious Gladiator's Mail Helm. S10 Version
+							un(2, i(70600)),	-- Vicious Gladiator's Mail Legs. S10 Version
+							un(2, i(70601)),	-- Vicious Gladiator's Mail Spaulders. S10 Version
+							un(2, i(70632)),	-- Vicious Gladiator's RingMail Armor. S10 Version
+							un(2, i(70633)),	-- Vicious Gladiator's RingMail Gauntlets. S10 Version
+							un(2, i(70634)),	-- Vicious Gladiator's RingMail Helm. S10 Version
+							un(2, i(70635)),	-- Vicious Gladiator's RingMail Legs. S10 Version
+							un(2, i(70636)),	-- Vicious Gladiator's RingMail Spaulders. S10 Version
+							un(2, i(70640)),	-- Vicious Gladiator's Sabatons of Alacrity. S10 Version
+							un(2, i(70642)),	-- Vicious Gladiator's Sabatons of Medi. S10 Version
+							un(2, i(70665)),	-- Vicious Gladiator's Waistguard of Cruelty. S10 Version
+							un(2, i(70666)),	-- Vicious Gladiator's Waistguard of Medi. S10 Version
+							un(2, i(70513)),	-- Vicious Gladiator's armplates of alacrity. S10 Version 
+							un(2, i(70514)),	-- Vicious Gladiator's armplates of proficiency. S10 Version
+							un(2, i(70529)),	-- Vicious Gladiator's bracers of meditation. S10 Version
+							un(2, i(70530)),	-- Vicious Gladiator's bracers of prowess. S10 Version
+							un(2, i(70540)),	-- Vicious Gladiator's clasp of cruelty. S10 Version
+							un(2, i(70541)),	-- Vicious Gladiator's clasp of meditation. S10 Version
+							un(2, i(70558)),	-- Vicious Gladiator's Dreadplate chest. S10 Version
+							un(2, i(70559)),	-- Vicious Gladiator's Dreadplate gloves. S10 Version
+							un(2, i(70560)),	-- Vicious Gladiator's Dreadplate helm. S10 Version
+							un(2, i(70561)),	-- Vicious Gladiator's Dreadplate legs. S10 Version
+							un(2, i(70562)),	-- Vicious Gladiator's Dreadplate shoulders. S10 Version
+							un(2, i(70573)),	-- Vicious Gladiator's girdle of cruelty. S10 Version
+							un(2, i(70574)),	-- Vicious Gladiator's girdle of prowess. S10 Version
+							un(2, i(70575)),	-- Vicious Gladiator's greaves of alacrity. S10 Version
+							un(2, i(70576)),	-- Vicious Gladiator's greaves of meditation. S10 Version
+							un(2, i(70615)),	-- Vicious Gladiator's Ornamented chest. S10 Version
+							un(2, i(70616)),	-- Vicious Gladiator's Ornamented gloves. S10 Version
+							un(2, i(70617)),	-- Vicious Gladiator's Ornamented head. S10 Version
+							un(2, i(70618)),	-- Vicious Gladiator's Ornamented legs. S10 Version
+							un(2, i(70619)),	-- Vicious Gladiator's Ornamented shoulders. S10 Version
+							un(2, i(70623)),	-- Vicious Gladiator's Plate chest. S10 Version
+							un(2, i(70624)),	-- Vicious Gladiator's Plate gloves. S10 Version
+							un(2, i(70625)),	-- Vicious Gladiator's Plate helm. S10 Version
+							un(2, i(70626)),	-- Vicious Gladiator's Plate legs. S10 Version
+							un(2, i(70627)),	-- Vicious Gladiator's Plate shoulders. S10 Version
+							un(2, i(70648)),	-- Vicious Gladiator's Scaled chest. S10 Version
+							un(2, i(70649)),	-- Vicious Gladiator's Scaled gloves. S10 Version
+							un(2, i(70650)),	-- Vicious Gladiator's Scaled helm. S10 Version
+							un(2, i(70651)),	-- Vicious Gladiator's Scaled legs. S10 Version
+							un(2, i(70652)),	-- Vicious Gladiator's Scaled shoulders. S10 Version
+							un(2, i(70667)),	-- Vicious Gladiator's Warboots of alacrity. S10 Version
+							un(2, i(70668)),	-- Vicious Gladiator's warboots of cruelty. S10 Version
+							un(2, i(70533)),	-- Vicious Gladiator's Chain armor. S10 Version
+							un(2, i(70534)),	-- Vicious Gladiator's Chain gloves. S10 Version
+							un(2, i(70535)),	-- Vicious Gladiator's Chain helm. S10 Version
+							un(2, i(70536)),	-- Vicious Gladiator's Chain leggs. S10 Version
+							un(2, i(70537)),	-- Vicious Gladiator's Chain spaulders. S10 Version
+							un(2, i(70595)),	-- Vicious Gladiator's links of accuracy. S10 Version
+							un(2, i(70596)),	-- Vicious Gladiator's links of cruelty. S10 Version
+							un(2, i(70639)),	-- Vicious Gladiator's sabatons of alacrity. S10 Version
+							un(2, i(70641)),	-- Vicious Gladiator's sabatons of cruelty. S10 Version
+							un(2, i(70669)),	-- Vicious Gladiator's wristguards of accuracy. S10 Version
+							un(2, i(70670)),	-- Vicious Gladiator's wristguards of alacrity. S10 Version
+							},
+						["u"] = 43,
 					}),
 					n(54657, {	-- Doris Volanthius <Vicious Gladiator>
+					-- The NPC ID got reused, she was also >S11< Elite Vendor
 						i(146641), --  Arsenal: Vicious Gladiator's Weapons
+						-- Weapons
 						i(61360),	-- Vicious Gladiator's Barrier
 						i(61351),	-- Vicious Gladiator's Baton of Light
 						i(61341),	-- Vicious Gladiator's Battle Staff
@@ -438,6 +613,274 @@ _.Zones =
 						i(61329),	-- Vicious Gladiator's Spellblade
 						i(61343),	-- Vicious Gladiator's Staff
 						i(61350),	-- Vicious Gladiator's Touch of Defeat
+						-- Head
+						i(60425),	-- Vicious Gladiator's Chain Helm
+						i(60444),	-- Vicious Gladiator's Dragonhide Helm
+						i(60410),	-- Vicious Gladiator's Dreadplate Helm
+						i(60479),	-- Vicious Gladiator's Felweave Cowl
+						i(60449),	-- Vicious Gladiator's Kodohide Helm
+						i(60460),	-- Vicious Gladiator's Leather Helm
+						i(60435),	-- Vicious Gladiator's Linked Helm
+						i(60440),	-- Vicious Gladiator's Mail Helm
+						i(60469),	-- Vicious Gladiator's Mooncloth Helm
+						i(60603),	-- Vicious Gladiator's Ornamented Headcover
+						i(60420),	-- Vicious Gladiator's Plate Helm
+						i(60430),	-- Vicious Gladiator's Ringmail Helm
+						i(60474),	-- Vicious Gladiator's Satin Hood
+						i(60415),	-- Vicious Gladiator's Scaled Helm
+						i(60464),	-- Vicious Gladiator's Silk Cowl
+						i(60454),	-- Vicious Gladiator's Wyrmhide Helm
+						-- Shoulders
+						i(60427),	-- Vicious Gladiator's Chain Spaulders
+						i(60447),	-- Vicious Gladiator's Dragonhide Spaulders
+						i(60412),	-- Vicious Gladiator's Dreadplate Shoulders
+						i(60482),	-- Vicious Gladiator's Felweave Amice
+						i(60452),	-- Vicious Gladiator's Kodohide Spaulders
+						i(60462),	-- Vicious Gladiator's Leather Spaulders
+						i(60437),	-- Vicious Gladiator's Linked Spaulders
+						i(60442),	-- Vicious Gladiator's Mail Spaulders
+						i(60472),	-- Vicious Gladiator's Mooncloth Mantle
+						i(60605),	-- Vicious Gladiator's Ornamented Spaulders
+						i(60422),	-- Vicious Gladiator's Plate Shoulders
+						i(60432),	-- Vicious Gladiator's Ringmail Spaulders
+						i(60477),	-- Vicious Gladiator's Satin Mantle
+						i(60417),	-- Vicious Gladiator's Scaled Shoulders
+						i(60467),	-- Vicious Gladiator's Silk Amice
+						i(60457),	-- Vicious Gladiator's Wyrmhide Spaulders
+						-- Back
+						i(60783),	-- Vicious Gladiator's Cape of Cruelty
+						i(60779),	-- Vicious Gladiator's Cape of Prowess
+						i(60776),	-- Vicious Gladiator's Cloak of Alacrity
+						i(60778),	-- Vicious Gladiator's Cloak of Prowess
+						i(60786),	-- Vicious Gladiator's Drape of Diffusion
+						i(60788),	-- Vicious Gladiator's Drape of Meditation
+						i(60787),	-- Vicious Gladiator's Drape of Prowess
+						-- Chest
+						i(60423),	-- Vicious Gladiator's Chain Armor
+						i(60446),	-- Vicious Gladiator's Dragonhide Robes
+						i(60408),	-- Vicious Gladiator's Dreadplate Chestpiece
+						i(60481),	-- Vicious Gladiator's Felweave Raiment
+						i(60451),	-- Vicious Gladiator's Kodohide Robes
+						i(60458),	-- Vicious Gladiator's Leather Tunic
+						i(60433),	-- Vicious Gladiator's Linked Armor
+						i(60438),	-- Vicious Gladiator's Mail Armor
+						i(60471),	-- Vicious Gladiator's Mooncloth Robe
+						i(60601),	-- Vicious Gladiator's Ornamented Chestguard
+						i(60418),	-- Vicious Gladiator's Plate Chestpiece
+						i(60428),	-- Vicious Gladiator's Ringmail Armor
+						i(60476),	-- Vicious Gladiator's Satin Robe
+						i(60413),	-- Vicious Gladiator's Scaled Chestpiece
+						i(60466),	-- Vicious Gladiator's Silk Robe
+						i(60456),	-- Vicious Gladiator's Wyrmhide Robes
+						-- Wrist
+						i(60535),	-- Vicious Gladiator's Armbands of Meditation
+						i(60569),	-- Vicious Gladiator's Armbands of Prowess
+						i(60512),	-- Vicious Gladiator's Armplates of Alacrity
+						i(60523),	-- Vicious Gladiator's Armplates of Proficiency
+						i(60591),	-- Vicious Gladiator's Armwraps of Accuracy
+						i(60594),	-- Vicious Gladiator's Armwraps of Alacrity
+						i(60582),	-- Vicious Gladiator's Bindings of Meditation
+						i(60611),	-- Vicious Gladiator's Bindings of Prowess
+						i(60541),	-- Vicious Gladiator's Bracers of Meditation
+						i(60520),	-- Vicious Gladiator's Bracers of Prowess
+						i(60628),	-- Vicious Gladiator's Cuffs of Accuracy
+						i(60635),	-- Vicious Gladiator's Cuffs of Meditation
+						i(60634),	-- Vicious Gladiator's Cuffs of Prowess
+						i(60565),	-- Vicious Gladiator's Wristguards of Accuracy
+						i(60559),	-- Vicious Gladiator's Wristguards of Alacrity
+						-- Hands
+						i(60424),	-- Vicious Gladiator's Chain Gauntlets
+						i(60443),	-- Vicious Gladiator's Dragonhide Gloves
+						i(60409),	-- Vicious Gladiator's Dreadplate Gauntlets
+						i(60478),	-- Vicious Gladiator's Felweave Handguards
+						i(60448),	-- Vicious Gladiator's Kodohide Gloves
+						i(60459),	-- Vicious Gladiator's Leather Gloves
+						i(60434),	-- Vicious Gladiator's Linked Gauntlets
+						i(60439),	-- Vicious Gladiator's Mail Gauntlets
+						i(60468),	-- Vicious Gladiator's Mooncloth Gloves
+						i(60602),	-- Vicious Gladiator's Ornamented Gloves
+						i(60419),	-- Vicious Gladiator's Plate Gauntlets
+						i(60429),	-- Vicious Gladiator's Ringmail Gauntlets
+						i(60473),	-- Vicious Gladiator's Satin Gloves
+						i(60414),	-- Vicious Gladiator's Scaled Gauntlets
+						i(60463),	-- Vicious Gladiator's Silk Handguards
+						i(60453),	-- Vicious Gladiator's Wyrmhide Gloves
+						-- Waist
+						i(60583),	-- Vicious Gladiator's Belt of Cruelty
+						i(60580),	-- Vicious Gladiator's Belt of Meditation
+						i(60505),	-- Vicious Gladiator's Clasp of Cruelty
+						i(60539),	-- Vicious Gladiator's Clasp of Meditation
+						i(60626),	-- Vicious Gladiator's Cord of Accuracy
+						i(60612),	-- Vicious Gladiator's Cord of Cruelty
+						i(60637),	-- Vicious Gladiator's Cord of Meditation
+						i(60508),	-- Vicious Gladiator's Girdle of Cruelty
+						i(60521),	-- Vicious Gladiator's Girdle of Prowess
+						i(60564),	-- Vicious Gladiator's Links of Accuracy
+						i(60555),	-- Vicious Gladiator's Links of Cruelty
+						i(60589),	-- Vicious Gladiator's Waistband of Accuracy
+						i(60586),	-- Vicious Gladiator's Waistband of Cruelty
+						i(60536),	-- Vicious Gladiator's Waistguard of Cruelty
+						i(60533),	-- Vicious Gladiator's Waistguard of Meditation
+						-- Legs
+						i(60426),	-- Vicious Gladiator's Chain Leggings
+						i(60445),	-- Vicious Gladiator's Dragonhide Legguards
+						i(60411),	-- Vicious Gladiator's Dreadplate Legguards
+						i(60480),	-- Vicious Gladiator's Felweave Trousers
+						i(60450),	-- Vicious Gladiator's Kodohide Legguards
+						i(60461),	-- Vicious Gladiator's Leather Legguards
+						i(60436),	-- Vicious Gladiator's Linked Leggings
+						i(60441),	-- Vicious Gladiator's Mail Leggings
+						i(60470),	-- Vicious Gladiator's Mooncloth Leggings
+						i(60604),	-- Vicious Gladiator's Ornamented Legplates
+						i(60421),	-- Vicious Gladiator's Plate Legguards
+						i(60431),	-- Vicious Gladiator's Ringmail Leggings
+						i(60475),	-- Vicious Gladiator's Satin Leggings
+						i(60416),	-- Vicious Gladiator's Scaled Legguards
+						i(60465),	--Vicious Gladiator's Silk Trousers
+						i(60455),	-- Vicious Gladiator's Wyrmhide Legguards
+						-- Feet
+						i(60593),	-- Vicious Gladiator's Boots of Alacrity
+						i(60587),	-- Vicious Gladiator's Boots of Cruelty
+						i(60607),	-- Vicious Gladiator's Footguards of Alacrity
+						i(60581),	-- Vicious Gladiator's Footguards of Meditation
+						i(60516),	-- Vicious Gladiator's Greaves of Alacrity
+						i(60540),	-- Vicious Gladiator's Greaves of Meditation
+						i(60557),	-- Vicious Gladiator's Sabatons of Alacrity
+						i(60567),	-- Vicious Gladiator's Sabatons of Alacrity
+						i(60554),	-- Vicious Gladiator's Sabatons of Cruelty
+						i(60534),	-- Vicious Gladiator's Sabatons of Meditation
+						i(60630),	-- Vicious Gladiator's Treads of Alacrity
+						i(60613),	-- Vicious Gladiator's Treads of Cruelty
+						i(60636),	-- Vicious Gladiator's Treads of Meditation
+						i(60513),	-- Vicious Gladiator's Warboots of Alacrity
+						i(60509),	-- Vicious Gladiator's Warboots of Cruelty
+						-- Elite
+						un(2, i(73413)),	-- Cataclysmic Gladitor's Shield Wall
+						un(2, i(73425)),	-- Cataclysmic Gladitor's Redoubt
+						un(2, i(73435)),	-- Cataclysmic Gladitor's Barrier
+						un(2, i(73414)),	-- Cataclysmic Gladitor's Slicer
+						un(2, i(73439)),	-- Cataclysmic Gladitor's Quickblade
+						un(2, i(73415)),	-- Cataclysmic Gladitor's Bonebracker
+						un(2, i(73426)),	-- Cataclysmic Gladitor's Gavel
+						un(2, i(73440)),	-- Cataclysmic Gladitor's Pummeler
+						un(2, i(73416)),	-- Cataclysmic Gladitor's Hacker
+						un(2, i(73441)),	-- Cataclysmic Gladitor's Cleaver
+						un(2, i(73417)),	-- Cataclysmic Gladitor's Baton of light
+						un(2, i(73431)),	-- Cataclysmic Gladitor's Touch of Defeat
+						un(2, i(73418)),	-- Cataclysmic Gladitor's Slasher
+						un(2, i(73419)),	-- Cataclysmic Gladitor's Right render
+						un(2, i(73420)),	-- Cataclysmic Gladitor's flesh slicer
+						un(2, i(73421)),	-- Cataclysmic Gladitor's ripper
+						un(2, i(73422)),	-- Cataclysmic Gladitor's Shanker
+						un(2, i(73428)),	-- Cataclysmic Gladitor's Shiv
+						un(2, i(73434)),	-- Cataclysmic Gladitor's Spellblade)
+						un(2, i(73423)),	-- Cataclysmic Gladitor's Pike
+						un(2, i(73424)),	-- Cataclysmic Gladitor's Engery Staff
+						un(2, i(73429)),	-- Cataclysmic Gladitor's Staff
+						un(2, i(73433)),	-- Cataclysmic Gladitor's Battle Staff
+						un(2, i(73427)),	-- Cataclysmic Gladitor's Rifle
+						un(2, i(73430)),	-- Cataclysmic Gladitor's Heavy Crossbow
+						un(2, i(73432)),	-- Cataclysmic Gladitor's Reprieve
+						un(2, i(73436)),	-- Cataclysmic Gladitor's Endgame)
+						un(2, i(73437)),	-- Cataclysmic Gladitor's Longbow
+						un(2, i(73442)),	-- Cataclysmic Gladitor's Greatsword)
+						un(2, i(73443)),	-- Cataclysmic Gladitor's Bonegrinder
+						un(2, i(73444)),	-- Cataclysmic Gladitor's Decapitator)
+						un(2, i(73661)),	-- Cataclysmic Gladitor's Mail Spaulders
+						un(2, i(73662)),	-- Cataclysmic Gladitor's Mail Legs
+						un(2, i(73663)),	-- Cataclysmic Gladitor's Mail Helm
+						un(2, i(73664)),	-- Cataclysmic Gladitor's Mail Gauntlets
+						un(2, i(73665)),	-- Cataclysmic Gladitor's Mail Armor
+						un(2, i(73666)),	-- Cataclysmic Gladitor's Linked Spaulders
+						un(2, i(73667)),	-- Cataclysmic Gladitor's Linked Legs
+						un(2, i(73668)),	-- Cataclysmic Gladitor's Linked Helm
+						un(2, i(73669)),	-- Cataclysmic Gladitor's Linked Gauntlets
+						un(2, i(73670)),	-- Cataclysmic Gladitor's Linked Armor
+						un(2, i(73671)),	-- Cataclysmic Gladitor's Ringmail Spaulders
+						un(2, i(73672)),	-- Cataclysmic Gladitor's Ringmail Legs
+						un(2, i(73673)),	-- Cataclysmic Gladitor's Ringmail Helm
+						un(2, i(73674)),	-- Cataclysmic Gladitor's Ringmail Gauntlets
+						un(2, i(73675)),	-- Cataclysmic Gladitor's Ringmail Armor
+						un(2, i(73676)),	-- Cataclysmic Gladitor's Sabatons of Meditation
+						un(2, i(73677)),	-- Cataclysmic Gladitor's Sabatons of Alacrity
+						un(2, i(73714)),	-- Cataclysmic Gladitor's Chain Spaulders
+						un(2, i(73715)),	-- Cataclysmic Gladitor's Chain Legs
+						un(2, i(73716)),	-- Cataclysmic Gladitor's Chain Helm
+						un(2, i(73717)),	-- Cataclysmic Gladitor's Chain Gauntlets
+						un(2, i(73718)),	-- Cataclysmic Gladitor's Chain Armor
+						un(2, i(73719)),	-- Cataclysmic Gladitor's Sabatons of Alacrity
+						un(2, i(73720)),	-- Cataclysmic Gladitor's Sabatons of Cruelty
+						un(2, i(73678)),	-- Cataclysmic Gladiator's Leather Spaulders
+						un(2, i(73679)),	-- Cataclysmic Gladiator's Leather Legs
+						un(2, i(73680)),	-- Cataclysmic Gladiator's Leather Helm
+						un(2, i(73681)),	-- Cataclysmic Gladiator's Leather Gloves
+						un(2, i(73682)),	-- Cataclysmic Gladiator's Leather Tunic
+						un(2, i(73683)),	-- Cataclysmic Gladiator's Boots of Alacrity
+						un(2, i(73684)),	-- Cataclysmic Gladiator's Leather Boots of Cruelty
+						un(2, i(73721)),	-- Cataclysmic Gladiator's Wyrmhide Spaulders
+						un(2, i(73722)),	-- Cataclysmic Gladiator's Wyrmhide Robe
+						un(2, i(73723)),	-- Cataclysmic Gladiator's Wyrmhide legs
+						un(2, i(73724)),	-- Cataclysmic Gladiator's Wyrmhide helm
+						un(2, i(73725)),	-- Cataclysmic Gladiator's Wyrmhide gloves
+						un(2, i(73726)),	-- Cataclysmic Gladiator's Wyrmhide Footguards of Alacrity
+						un(2, i(73727)),	-- Cataclysmic Gladiator's Kodohide Spaulders
+						un(2, i(73728)),	-- Cataclysmic Gladiator's Kodohide Robe
+						un(2, i(73729)),	-- Cataclysmic Gladiator's Kodohide Legs
+						un(2, i(73730)),	-- Cataclysmic Gladiator's Kodohide Helm
+						un(2, i(73731)),	-- Cataclysmic Gladiator's Kodohide Gloves
+						un(2, i(73732)),	-- Cataclysmic Gladiator's Kodohide Footguards of Meditation
+						un(2, i(73733)),	-- Cataclysmic Gladiator's Dragonhide Spaulders
+						un(2, i(73734)),	-- Cataclysmic Gladiator's DragonhideRobe
+						un(2, i(73735)),	-- Cataclysmic Gladiator's Dragonhide Legs
+						un(2, i(73736)),	-- Cataclysmic Gladiator's DragonhideHelm
+						un(2, i(73737)),	-- Cataclysmic Gladiator's DragonhideGloves
+						un(2, i(73656)),	-- Cataclysmic Gladiator's Felweave Amice
+						un(2, i(73657)),	-- Cataclysmic Gladiator's Felweave Rainment
+						un(2, i(73658)),	-- Cataclysmic Gladiator's Felweave Trousers
+						un(2, i(73659)),	-- Cataclysmic Gladiator's Felweave Cowl
+						un(2, i(73660)),	-- Cataclysmic Gladiator's Felweave Gloves
+						un(2, i(73685)),	-- Cataclysmic Gladiator's Satin Mantle
+						un(2, i(73686)),	-- Cataclysmic Gladiator's Satin Robe
+						un(2, i(73687)),	-- Cataclysmic Gladiator's Satin Legs
+						un(2, i(73688)),	-- Cataclysmic Gladiator's Satin Hood
+						un(2, i(73689)),	-- Cataclysmic Gladiator's Satin Gloves
+						un(2, i(73690)),	-- Cataclysmic Gladiator's Mooncloth Mantle
+						un(2, i(73691)),	-- Cataclysmic Gladiator's Mooncloth Robe
+						un(2, i(73692)),	-- Cataclysmic Gladiator's Mooncloth Legs
+						un(2, i(73693)),	-- Cataclysmic Gladiator's Mooncloth Helm
+						un(2, i(73694)),	-- Cataclysmic Gladiator's Mooncloth Gloves
+						un(2, i(73709)),	-- Cataclysmic Gladiator's Silk Amice
+						un(2, i(73710)),	-- Cataclysmic Gladiator's Silk Robe
+						un(2, i(73711)),	-- Cataclysmic Gladiator's Silk Trousers
+						un(2, i(73712)),	-- Cataclysmic Gladiator's Silk Cowl
+						un(2, i(73713)),	-- Cataclysmic Gladiator's Silk Handguards
+						un(2, i(73743)),	-- Cataclysmic Gladiator's Treads of Medi
+						un(2, i(73744)),	-- Cataclysmic Gladiator's Treads of Alacrity
+						un(2, i(73745)),	-- Cataclysmic Gladiator's Treads of Cruelty 
+						un(2, i(73651)),	-- Cataclysmic Gladiator's Plate Soulders
+						un(2, i(73652)),	-- Cataclysmic Gladiator's Plate Legs
+						un(2, i(73653)),	-- Cataclysmic Gladiator's Plate Helm
+						un(2, i(73654)),	-- Cataclysmic Gladiator's Plate Gloves
+						un(2, i(73655)),	-- Cataclysmic Gladiator's Plate Chest
+						un(2, i(73695)),	-- Cataclysmic Gladiator's warboots of alacrity
+						un(2, i(73696)),	-- Cataclysmic Gladiator's warboots of cruelty
+						un(2, i(73697)),	-- Cataclysmic Gladiator's Ornnamented Spaulders
+						un(2, i(73698)),	-- Cataclysmic Gladiator's Ornnamented legs
+						un(2, i(73699)),	-- Cataclysmic Gladiator's Ornnamented head
+						un(2, i(73700)),	-- Cataclysmic Gladiator's Ornnamented gloves
+						un(2, i(73701)),	-- Cataclysmic Gladiator's Ornnamented chest
+						un(2, i(73702)),	-- Cataclysmic Gladiator's greaves of mediation
+						un(2, i(73703)),	-- Cataclysmic Gladiator's greaves of alacrity
+						un(2, i(73704)),	-- Cataclysmic Gladiator's scaled shoulders
+						un(2, i(73705)),	-- Cataclysmic Gladiator's scaled legs
+						un(2, i(73706)),	-- Cataclysmic Gladiator's scaled helm
+						un(2, i(73707)),	-- Cataclysmic Gladiator's scaled gloves
+						un(2, i(73708)),	-- Cataclysmic Gladiator's scaled chest
+						un(2, i(73738)),	-- Cataclysmic Gladiator's dreadplate shoulders
+						un(2, i(73739)),	-- Cataclysmic Gladiator's dreadplate legs
+						un(2, i(73740)),	-- Cataclysmic Gladiator's dreadplate helm
+						un(2, i(73741)),	-- Cataclysmic Gladiator's dreadplate gauntlets
+						un(2, i(73742)),	-- Cataclysmic Gladiator's dreadplate chestpiece
 					}),
 					n(44918, {	-- Drakma <Wind Rider Keeper>
 						i(25477),	-- Swift Red Wind Rider Mount

@@ -224,6 +224,7 @@ _.Zones =
 						["itemID"] = 137642,  -- Marks of Honor
 						["groups"] = {
 							i(146641), --  Arsenal: Vicious Gladiator's Weapons
+							-- Weapons
 							i(61360),	-- Vicious Gladiator's Barrier
 							i(61351),	-- Vicious Gladiator's Baton of Light
 							i(61341),	-- Vicious Gladiator's Battle Staff
@@ -255,6 +256,147 @@ _.Zones =
 							i(61329),	-- Vicious Gladiator's Spellblade
 							i(61343),	-- Vicious Gladiator's Staff
 							i(61350),	-- Vicious Gladiator's Touch of Defeat
+							-- Head
+							i(60425),	-- Vicious Gladiator's Chain Helm
+							i(60444),	-- Vicious Gladiator's Dragonhide Helm
+							i(60410),	-- Vicious Gladiator's Dreadplate Helm
+							i(60479),	-- Vicious Gladiator's Felweave Cowl
+							i(60449),	-- Vicious Gladiator's Kodohide Helm
+							i(60460),	-- Vicious Gladiator's Leather Helm
+							i(60435),	-- Vicious Gladiator's Linked Helm
+							i(60440),	-- Vicious Gladiator's Mail Helm
+							i(60469),	-- Vicious Gladiator's Mooncloth Helm
+							i(60603),	-- Vicious Gladiator's Ornamented Headcover
+							i(60420),	-- Vicious Gladiator's Plate Helm
+							i(60430),	-- Vicious Gladiator's Ringmail Helm
+							i(60474),	-- Vicious Gladiator's Satin Hood
+							i(60415),	-- Vicious Gladiator's Scaled Helm
+							i(60464),	-- Vicious Gladiator's Silk Cowl
+							i(60454),	-- Vicious Gladiator's Wyrmhide Helm
+							-- Shoulders
+							i(60427),	-- Vicious Gladiator's Chain Spaulders
+							i(60447),	-- Vicious Gladiator's Dragonhide Spaulders
+							i(60412),	-- Vicious Gladiator's Dreadplate Shoulders
+							i(60482),	-- Vicious Gladiator's Felweave Amice
+							i(60452),	-- Vicious Gladiator's Kodohide Spaulders
+							i(60462),	-- Vicious Gladiator's Leather Spaulders
+							i(60437),	-- Vicious Gladiator's Linked Spaulders
+							i(60442),	-- Vicious Gladiator's Mail Spaulders
+							i(60472),	-- Vicious Gladiator's Mooncloth Mantle
+							i(60605),	-- Vicious Gladiator's Ornamented Spaulders
+							i(60422),	-- Vicious Gladiator's Plate Shoulders
+							i(60432),	-- Vicious Gladiator's Ringmail Spaulders
+							i(60477),	-- Vicious Gladiator's Satin Mantle
+							i(60417),	-- Vicious Gladiator's Scaled Shoulders
+							i(60467),	-- Vicious Gladiator's Silk Amice
+							i(60457),	-- Vicious Gladiator's Wyrmhide Spaulders
+							-- Back
+							i(60783),	-- Vicious Gladiator's Cape of Cruelty
+							i(60779),	-- Vicious Gladiator's Cape of Prowess
+							i(60776),	-- Vicious Gladiator's Cloak of Alacrity
+							i(60778),	-- Vicious Gladiator's Cloak of Prowess
+							i(60786),	-- Vicious Gladiator's Drape of Diffusion
+							i(60788),	-- Vicious Gladiator's Drape of Meditation
+							i(60787),	-- Vicious Gladiator's Drape of Prowess
+							-- Chest
+							i(60423),	-- Vicious Gladiator's Chain Armor
+							i(60446),	-- Vicious Gladiator's Dragonhide Robes
+							i(60408),	-- Vicious Gladiator's Dreadplate Chestpiece
+							i(60481),	-- Vicious Gladiator's Felweave Raiment
+							i(60451),	-- Vicious Gladiator's Kodohide Robes
+							i(60458),	-- Vicious Gladiator's Leather Tunic
+							i(60433),	-- Vicious Gladiator's Linked Armor
+							i(60438),	-- Vicious Gladiator's Mail Armor
+							i(60471),	-- Vicious Gladiator's Mooncloth Robe
+							i(60601),	-- Vicious Gladiator's Ornamented Chestguard
+							i(60418),	-- Vicious Gladiator's Plate Chestpiece
+							i(60428),	-- Vicious Gladiator's Ringmail Armor
+							i(60476),	-- Vicious Gladiator's Satin Robe
+							i(60413),	-- Vicious Gladiator's Scaled Chestpiece
+							i(60466),	-- Vicious Gladiator's Silk Robe
+							i(60456),	-- Vicious Gladiator's Wyrmhide Robes
+							-- Wrist
+							i(60535),	-- Vicious Gladiator's Armbands of Meditation
+							i(60569),	-- Vicious Gladiator's Armbands of Prowess
+							i(60512),	-- Vicious Gladiator's Armplates of Alacrity
+							i(60523),	-- Vicious Gladiator's Armplates of Proficiency
+							i(60591),	-- Vicious Gladiator's Armwraps of Accuracy
+							i(60594),	-- Vicious Gladiator's Armwraps of Alacrity
+							i(60582),	-- Vicious Gladiator's Bindings of Meditation
+							i(60611),	-- Vicious Gladiator's Bindings of Prowess
+							i(60541),	-- Vicious Gladiator's Bracers of Meditation
+							i(60520),	-- Vicious Gladiator's Bracers of Prowess
+							i(60628),	-- Vicious Gladiator's Cuffs of Accuracy
+							i(60635),	-- Vicious Gladiator's Cuffs of Meditation
+							i(60634),	-- Vicious Gladiator's Cuffs of Prowess
+							i(60565),	-- Vicious Gladiator's Wristguards of Accuracy
+							i(60559),	-- Vicious Gladiator's Wristguards of Alacrity
+							-- Hands
+							i(60424),	-- Vicious Gladiator's Chain Gauntlets
+							i(60443),	-- Vicious Gladiator's Dragonhide Gloves
+							i(60409),	-- Vicious Gladiator's Dreadplate Gauntlets
+							i(60478),	-- Vicious Gladiator's Felweave Handguards
+							i(60448),	-- Vicious Gladiator's Kodohide Gloves
+							i(60459),	-- Vicious Gladiator's Leather Gloves
+							i(60434),	-- Vicious Gladiator's Linked Gauntlets
+							i(60439),	-- Vicious Gladiator's Mail Gauntlets
+							i(60468),	-- Vicious Gladiator's Mooncloth Gloves
+							i(60602),	-- Vicious Gladiator's Ornamented Gloves
+							i(60419),	-- Vicious Gladiator's Plate Gauntlets
+							i(60429),	-- Vicious Gladiator's Ringmail Gauntlets
+							i(60473),	-- Vicious Gladiator's Satin Gloves
+							i(60414),	-- Vicious Gladiator's Scaled Gauntlets
+							i(60463),	-- Vicious Gladiator's Silk Handguards
+							i(60453),	-- Vicious Gladiator's Wyrmhide Gloves
+							-- Waist
+							i(60583),	-- Vicious Gladiator's Belt of Cruelty
+							i(60580),	-- Vicious Gladiator's Belt of Meditation
+							i(60505),	-- Vicious Gladiator's Clasp of Cruelty
+							i(60539),	-- Vicious Gladiator's Clasp of Meditation
+							i(60626),	-- Vicious Gladiator's Cord of Accuracy
+							i(60612),	-- Vicious Gladiator's Cord of Cruelty
+							i(60637),	-- Vicious Gladiator's Cord of Meditation
+							i(60508),	-- Vicious Gladiator's Girdle of Cruelty
+							i(60521),	-- Vicious Gladiator's Girdle of Prowess
+							i(60564),	-- Vicious Gladiator's Links of Accuracy
+							i(60555),	-- Vicious Gladiator's Links of Cruelty
+							i(60589),	-- Vicious Gladiator's Waistband of Accuracy
+							i(60586),	-- Vicious Gladiator's Waistband of Cruelty
+							i(60536),	-- Vicious Gladiator's Waistguard of Cruelty
+							i(60533),	-- Vicious Gladiator's Waistguard of Meditation
+							-- Legs
+							i(60426),	-- Vicious Gladiator's Chain Leggings
+							i(60445),	-- Vicious Gladiator's Dragonhide Legguards
+							i(60411),	-- Vicious Gladiator's Dreadplate Legguards
+							i(60480),	-- Vicious Gladiator's Felweave Trousers
+							i(60450),	-- Vicious Gladiator's Kodohide Legguards
+							i(60461),	-- Vicious Gladiator's Leather Legguards
+							i(60436),	-- Vicious Gladiator's Linked Leggings
+							i(60441),	-- Vicious Gladiator's Mail Leggings
+							i(60470),	-- Vicious Gladiator's Mooncloth Leggings
+							i(60604),	-- Vicious Gladiator's Ornamented Legplates
+							i(60421),	-- Vicious Gladiator's Plate Legguards
+							i(60431),	-- Vicious Gladiator's Ringmail Leggings
+							i(60475),	-- Vicious Gladiator's Satin Leggings
+							i(60416),	-- Vicious Gladiator's Scaled Legguards
+							i(60465),	--Vicious Gladiator's Silk Trousers
+							i(60455),	-- Vicious Gladiator's Wyrmhide Legguards
+							-- Feet
+							i(60593),	-- Vicious Gladiator's Boots of Alacrity
+							i(60587),	-- Vicious Gladiator's Boots of Cruelty
+							i(60607),	-- Vicious Gladiator's Footguards of Alacrity
+							i(60581),	-- Vicious Gladiator's Footguards of Meditation
+							i(60516),	-- Vicious Gladiator's Greaves of Alacrity
+							i(60540),	-- Vicious Gladiator's Greaves of Meditation
+							i(60557),	-- Vicious Gladiator's Sabatons of Alacrity
+							i(60567),	-- Vicious Gladiator's Sabatons of Alacrity
+							i(60554),	-- Vicious Gladiator's Sabatons of Cruelty
+							i(60534),	-- Vicious Gladiator's Sabatons of Meditation
+							i(60630),	-- Vicious Gladiator's Treads of Alacrity
+							i(60613),	-- Vicious Gladiator's Treads of Cruelty
+							i(60636),	-- Vicious Gladiator's Treads of Meditation
+							i(60513),	-- Vicious Gladiator's Warboots of Alacrity
+							i(60509),	-- Vicious Gladiator's Warboots of Cruelty
 						},
 					}),
 					n(69322, {	-- Capps Carlin <Cataclysmic Gladiator>
