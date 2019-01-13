@@ -8174,7 +8174,11 @@ function app:GetWindow(suffix, parent, onUpdate)
 			self:Update();
 		end
 		window.Clear = function(self)
-			self.rawData = {};
+			if self.rawData then
+				wipe(self.rawData);
+			else
+				self.rawData = {};
+			end
 			app.SetDataMember(self.Suffix, self.rawData);
 			wipe(self.data.g);
 			self:Update();
@@ -8231,12 +8235,60 @@ app:GetWindow("Debugger", UIParent, function(self)
 	if not self.initialized then
 		self.initialized = true;
 		self.data = {
-			['text'] = "Debugger",
+			['text'] = "Session History",
 			['icon'] = "Interface\\Icons\\Achievement_Dungeon_GloryoftheRaider.blp", 
-			["description"] = "This builds a list of all of the quests you have encountered recently.",
+			["description"] = "This keeps a visual record of all of the quests, maps, loot, and vendors that you have come into contact with since the session was started.",
 			['visible'] = true, 
 			['expanded'] = true,
 			['back'] = 1,
+			['options'] = {
+				{
+					['text'] = "Clear History",
+					['icon'] = "Interface\\Icons\\Ability_Rogue_FeignDeath.blp", 
+					["description"] = "Click this to fully clear this window.\n\nNOTE: If you click this by accident, use the dynamic Restore Buttons that this generates to reapply the data that was cleared.\n\nWARNING: If you reload the UI, the data stored in the Reload Button will be lost forever!",
+					['visible'] = true,
+					['f'] = -1,
+					['key'] = "nope",
+					['count'] = 0,
+					['OnClick'] = function(row, button)
+						local copy = {};
+						for i,o in ipairs(self.rawData) do
+							tinsert(copy, o);
+						end
+						if #copy < 1 then
+							app.print("There is nothing to clear.");
+							return true;
+						end
+						row.ref.count = row.ref.count + 1;
+						tinsert(self.data.options, {
+							['text'] = "Restore Button " .. row.ref.count,
+							['icon'] = "Interface\\Icons\\ability_monk_roll.blp", 
+							["description"] = "Click this to restore your cleared data.\n\nNOTE: Each Restore Button houses different data.\n\nWARNING: This data will be lost forever when you reload your UI!",
+							['visible'] = true,
+							['f'] = -1,
+							['key'] = "nope",
+							['data'] = copy,
+							['OnClick'] = function(row, button)
+								for i,info in ipairs(row.ref.data) do
+									MergeObject(self.data.g, CreateObject(info));
+									MergeObject(self.rawData, info);
+								end
+								self:Update();
+								return true;
+							end,
+							['back'] = 0.5,
+						});
+						wipe(self.rawData);
+						wipe(self.data.g);
+						for i=#self.data.options,1,-1 do
+							tinsert(self.data.g, 1, self.data.options[i]);
+						end
+						self:Update();
+						return true;
+					end,
+					['back'] = 0.5,
+				},
+			},
 			['g'] = {},
 		};
 		self.rawData = {};
@@ -8251,6 +8303,9 @@ app:GetWindow("Debugger", UIParent, function(self)
 				end
 				self.rawData = AllTheThingsDebugData;
 				self.data.g = CreateObject(self.rawData);
+				for i=#self.data.options,1,-1 do
+					tinsert(self.data.g, 1, self.data.options[i]);
+				end
 				self:Update();
 			elseif e == "ZONE_CHANGED_NEW_AREA" or e == "NEW_WMO_CHUNK" then
 				-- Bubble Up the Maps
@@ -8478,7 +8533,6 @@ app:GetWindow("Debugger", UIParent, function(self)
 				end
 				self:AddObject(info);
 			end
-			
 		end);
 		self:RegisterEvent("PLAYER_LOGIN");
 		self:RegisterEvent("QUEST_DETAIL");
