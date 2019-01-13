@@ -2652,6 +2652,7 @@ AllTheThings.Locales.enUS = {
 		[227954] = "Luminous Shell",
 		[227956] = "Foreman's Lunchbox",
 		[227996] = "Curious Deathweb Egg",
+		[227998] = "Ockbar's Pack",
 		[228012] = "Charred Sword",
 		[228015] = "Iron Box",
 		[228018] = "Soulbinder's Reliquary",
