@@ -166,7 +166,7 @@ _.Instances =
 								["groups"] = {
 									p(1930),	-- Lagan
 								},
-								["description"] = "Absorb the soul at the beginning of Blackrook Hold, clear the dungeon, then clear Maw of Souls. You must not die at all through both dungeons.",
+								["description"] = "Absorb the soul at the beginning of Blackrook Hold, clear the dungeon, then clear Maw of Souls. You must not die at all through both dungeons.\n\nWARNING: You must do this with a group of 5 players for the buffs to upgrade after each boss kill.",
 							}),
 							i(137848),	-- Design: Blessed Dawnlight Medallion (Rank 3)
 							i(127932),	-- Recipe: Flask of the Countless Armies (Rank 2)
