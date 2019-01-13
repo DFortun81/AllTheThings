@@ -552,6 +552,468 @@ _.Zones =
 					}),
 				}),
 				n(-2, {	-- Vendors
+					{	-- Common Vendor Items
+						["npcID"] = -15,
+						["g"] = {
+							{	-- Champion's Seal
+								["currencyID"] = 241,	-- Champion's Seal
+								["g"] = {
+									{	-- Argent Hippogryph
+										["itemID"] = 45725,	-- Argent Hippogryph
+										["crs"] = {
+											33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
+											33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
+											33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+											33555, 	-- Eliza Killian <Undercity Quartermaster>
+											33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+											33657, 	-- Irisee <Exodar Quartermaster>
+											33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+											33653,	-- Rook Hawkfist <Darnassus Quartermaster>
+											33554, 	-- Samamba <Sen'jin Quartermaster>
+											33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+										},
+									},
+									{	-- Music Roll: The Argent Tournament
+										["itemID"] = 122232,	-- Music Roll: The Argent Tournament
+										["crs"] = {
+											33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
+											33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
+											33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+											33555, 	-- Eliza Killian <Undercity Quartermaster>
+											33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+											33657, 	-- Irisee <Exodar Quartermaster>
+											33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+											33653,	-- Rook Hawkfist <Darnassus Quartermaster>
+											33554, 	-- Samamba <Sen'jin Quartermaster>
+											33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+										},
+									},
+									-- Alliance Only Items
+									{	-- Blunderbuss of Khaz Modan
+										["itemID"] = 45130,	-- Blunderbuss of Khaz Modan
+										["crs"] = {
+											33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
+											33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
+											33657, 	-- Irisee <Exodar Quartermaster>
+											33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+											33653,	-- Rook Hawkfist <Darnassus Quartermaster>
+										},
+									},
+									{	-- Grapeshotter of Khaz Modan
+										["itemID"] = 164932,	-- Grapeshotter of Khaz Modan
+										["crs"] = {
+											33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
+											33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
+											33657, 	-- Irisee <Exodar Quartermaster>
+											33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+											33653,	-- Rook Hawkfist <Darnassus Quartermaster>
+										},
+									},
+									{	-- Claymore of the Prophet
+										["itemID"] = 45074,	-- Claymore of the Prophet
+										["crs"] = {
+											33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
+											33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
+											33657, 	-- Irisee <Exodar Quartermaster>
+											33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+											33653,	-- Rook Hawkfist <Darnassus Quartermaster>
+										},
+									},
+									{	-- Dagger of Lunar Purity
+										["itemID"] = 45078,	-- Dagger of Lunar Purity
+										["crs"] = {
+											33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
+											33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
+											33657, 	-- Irisee <Exodar Quartermaster>
+											33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+											33653,	-- Rook Hawkfist <Darnassus Quartermaster>
+										},
+									},
+									{	-- Dagger of the Rising Moon
+										["itemID"] = 45077,	-- Dagger of the Rising Moon
+										["crs"] = {
+											33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
+											33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
+											33657, 	-- Irisee <Exodar Quartermaster>
+											33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+											33653,	-- Rook Hawkfist <Darnassus Quartermaster>
+										},
+									},
+									{	-- Gnomeragan Bonechopper
+										["itemID"] = 45129,	-- Gnomeragan Bonechopper
+										["crs"] = {
+											33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
+											33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
+											33657, 	-- Irisee <Exodar Quartermaster>
+											33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+											33653,	-- Rook Hawkfist <Darnassus Quartermaster>
+										},
+									},
+									{	-- Ironforge Smasher
+										["itemID"] = 45075,	-- Ironforge Smasher
+										["crs"] = {
+											33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
+											33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
+											33657, 	-- Irisee <Exodar Quartermaster>
+											33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+											33653,	-- Rook Hawkfist <Darnassus Quartermaster>
+										},
+									},
+									{	-- Silvery Sylvan Stave
+										["itemID"] = 45128,	-- Silvery Sylvan Stave
+										["crs"] = {
+											33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
+											33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
+											33657, 	-- Irisee <Exodar Quartermaster>
+											33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+											33653,	-- Rook Hawkfist <Darnassus Quartermaster>
+										},
+									},
+									{	-- Teldrassil Protector
+										["itemID"] = 45076,	-- Teldrassil Protector
+										["crs"] = {
+											33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
+											33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
+											33657, 	-- Irisee <Exodar Quartermaster>
+											33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+											33653,	-- Rook Hawkfist <Darnassus Quartermaster>
+										},
+									},
+									{	-- Choker of Spiral Focus
+										["itemID"] = 45155,	-- Choker of Spiral Focus
+										["crs"] = {
+											33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
+											33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
+											33657, 	-- Irisee <Exodar Quartermaster>
+											33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+											33653,	-- Rook Hawkfist <Darnassus Quartermaster>
+										},
+									},
+									{	-- Necklace of Valiant Blood
+										["itemID"] = 45154,	-- Necklace of Valiant Blood
+										["crs"] = {
+											33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
+											33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
+											33657, 	-- Irisee <Exodar Quartermaster>
+											33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+											33653,	-- Rook Hawkfist <Darnassus Quartermaster>
+										},
+									},
+									{	-- Pendant of Azure Dreams
+										["itemID"] = 45152,	-- Pendant of Azure Dreams
+										["crs"] = {
+											33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
+											33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
+											33657, 	-- Irisee <Exodar Quartermaster>
+											33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+											33653,	-- Rook Hawkfist <Darnassus Quartermaster>
+										},
+									},
+									{	-- Susurrating Shell Necklace
+										["itemID"] = 45153,	-- Susurrating Shell Necklace
+										["crs"] = {
+											33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
+											33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
+											33657, 	-- Irisee <Exodar Quartermaster>
+											33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+											33653,	-- Rook Hawkfist <Darnassus Quartermaster>
+										},
+									},
+									{	-- Gauntlets of Shattered Pride
+										["itemID"] = 45182,	-- Gauntlets of Shattered Pride
+										["crs"] = {
+											33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
+											33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
+											33657, 	-- Irisee <Exodar Quartermaster>
+											33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+											33653,	-- Rook Hawkfist <Darnassus Quartermaster>
+										},
+									},
+									{	-- Cinch of Bonded Servitude
+										["itemID"] = 45184,	-- Cinch of Bonded Servitude
+										["crs"] = {
+											33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
+											33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
+											33657, 	-- Irisee <Exodar Quartermaster>
+											33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+											33653,	-- Rook Hawkfist <Darnassus Quartermaster>
+										},
+									},
+									{	-- Girdle of Valorous Defeat
+										["itemID"] = 45160,	-- Girdle of Valorous Defeat
+										["crs"] = {
+											33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
+											33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
+											33657, 	-- Irisee <Exodar Quartermaster>
+											33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+											33653,	-- Rook Hawkfist <Darnassus Quartermaster>
+										},
+									},
+									{	-- Sash of Shattering Hearts
+										["itemID"] = 45156,	-- Sash of Shattering Hearts
+										["crs"] = {
+											33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
+											33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
+											33657, 	-- Irisee <Exodar Quartermaster>
+											33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+											33653,	-- Rook Hawkfist <Darnassus Quartermaster>
+										},
+									},
+									{	-- Wrap of the Everliving Tree
+										["itemID"] = 45181,	-- Wrap of the Everliving Tree
+										["crs"] = {
+											33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
+											33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
+											33657, 	-- Irisee <Exodar Quartermaster>
+											33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+											33653,	-- Rook Hawkfist <Darnassus Quartermaster>
+										},
+									},
+									{	-- Stanchions of Unseatable Furor
+										["itemID"] = 45163,	-- Stanchions of Unseatable Furor
+										["crs"] = {
+											33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
+											33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
+											33657, 	-- Irisee <Exodar Quartermaster>
+											33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+											33653,	-- Rook Hawkfist <Darnassus Quartermaster>
+										},
+									},
+									{	-- Treads of Nimble Evasion
+										["itemID"] = 45159,	-- Treads of Nimble Evasion
+										["crs"] = {
+											33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
+											33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
+											33657, 	-- Irisee <Exodar Quartermaster>
+											33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+											33653,	-- Rook Hawkfist <Darnassus Quartermaster>
+										},
+									},
+									{	-- Treads of the Glorious Spirit
+										["itemID"] = 45183,	-- Treads of the Glorious Spirit
+										["crs"] = {
+											33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
+											33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
+											33657, 	-- Irisee <Exodar Quartermaster>
+											33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+											33653,	-- Rook Hawkfist <Darnassus Quartermaster>
+										},
+									},
+									{	-- Jouster's Fury
+										["itemID"] = 45131,	-- Jouster's Fury
+										["crs"] = {
+											33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
+											33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
+											33657, 	-- Irisee <Exodar Quartermaster>
+											33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+											33653,	-- Rook Hawkfist <Darnassus Quartermaster>
+										},
+									},
+									-- Horde Only Items
+									{	-- Axe of the Sen'jin Protector
+										["itemID"] = 45204,	-- Axe of the Sen'jin Protector
+										["crs"] = {
+											33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+											33555, 	-- Eliza Killian <Undercity Quartermaster>
+											33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+											33554, 	-- Samamba <Sen'jin Quartermaster>
+											33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+										},
+									},
+									{	-- Blade of the Keening Banshee
+										["itemID"] = 45208,	-- Blade of the Keening Banshee
+										["crs"] = {
+											33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+											33555, 	-- Eliza Killian <Undercity Quartermaster>
+											33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+											33554, 	-- Samamba <Sen'jin Quartermaster>
+											33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+										},
+									},
+									{	-- Greatsword of the Sin'dorei
+										["itemID"] = 45205,	-- Greatsword of the Sin'dorei
+										["crs"] = {
+											33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+											33555, 	-- Eliza Killian <Undercity Quartermaster>
+											33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+											33554, 	-- Samamba <Sen'jin Quartermaster>
+											33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+										},
+									},
+									{	-- Grimhorn Crusher
+										["itemID"] = 45203,	-- Grimhorn Crusher
+										["crs"] = {
+											33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+											33555, 	-- Eliza Killian <Undercity Quartermaster>
+											33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+											33554, 	-- Samamba <Sen'jin Quartermaster>
+											33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+										},
+									},
+									{	-- Scalpel of the Royal Apothecary
+										["itemID"] = 45214,	-- Scalpel of the Royal Apothecary
+										["crs"] = {
+											33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+											33555, 	-- Eliza Killian <Undercity Quartermaster>
+											33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+											33554, 	-- Samamba <Sen'jin Quartermaster>
+											33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+										},
+									},
+									{	-- Sen'jin Beakblade Longrifle
+										["itemID"] = 45210,	-- Sen'jin Beakblade Longrifle
+										["crs"] = {
+											33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+											33555, 	-- Eliza Killian <Undercity Quartermaster>
+											33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+											33554, 	-- Samamba <Sen'jin Quartermaster>
+											33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+										},
+									},
+									{	-- Spinal Destroyer
+										["itemID"] = 45222,	-- Spinal Destroyer
+										["crs"] = {
+											33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+											33555, 	-- Eliza Killian <Undercity Quartermaster>
+											33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+											33554, 	-- Samamba <Sen'jin Quartermaster>
+											33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+										},
+									},
+									{	-- Staff of Feral Furies
+										["itemID"] = 45212,	-- Staff of Feral Furies
+										["crs"] = {
+											33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+											33555, 	-- Eliza Killian <Undercity Quartermaster>
+											33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+											33554, 	-- Samamba <Sen'jin Quartermaster>
+											33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+										},
+									},
+									{	-- Choker of Feral Fury
+										["itemID"] = 45206,	-- Choker of Feral Fury
+										["crs"] = {
+											33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+											33555, 	-- Eliza Killian <Undercity Quartermaster>
+											33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+											33554, 	-- Samamba <Sen'jin Quartermaster>
+											33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+										},
+									},
+									{	-- Necklace of Stolen Skulls
+										["itemID"] = 45207,	-- Necklace of Stolen Skulls
+										["crs"] = {
+											33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+											33555, 	-- Eliza Killian <Undercity Quartermaster>
+											33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+											33554, 	-- Samamba <Sen'jin Quartermaster>
+											33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+										},
+									},
+									{	-- Pendant of Emerald Crusader
+										["itemID"] = 45213,	-- Pendant of Emerald Crusader
+										["crs"] = {
+											33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+											33555, 	-- Eliza Killian <Undercity Quartermaster>
+											33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+											33554, 	-- Samamba <Sen'jin Quartermaster>
+											33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+										},
+									},
+									{	-- Razor's Edge Pendant
+										["itemID"] = 45223,	-- Razor's Edge Pendant
+										["crs"] = {
+											33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+											33555, 	-- Eliza Killian <Undercity Quartermaster>
+											33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+											33554, 	-- Samamba <Sen'jin Quartermaster>
+											33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+										},
+									},
+									{	-- Gauntlets of Mending Touch
+										["itemID"] = 45216,	-- Gauntlets of Mending Touch
+										["crs"] = {
+											33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+											33555, 	-- Eliza Killian <Undercity Quartermaster>
+											33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+											33554, 	-- Samamba <Sen'jin Quartermaster>
+											33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+										},
+									},
+									{	-- Clinch of Savage Fury
+										["itemID"] = 45217,	-- Clinch of Savage Fury
+										["crs"] = {
+											33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+											33555, 	-- Eliza Killian <Undercity Quartermaster>
+											33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+											33554, 	-- Samamba <Sen'jin Quartermaster>
+											33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+										},
+									},
+									{	-- Links of Unquenched Savagery
+										["itemID"] = 45215,	-- Links of Unquenched Savagery
+										["crs"] = {
+											33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+											33555, 	-- Eliza Killian <Undercity Quartermaster>
+											33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+											33554, 	-- Samamba <Sen'jin Quartermaster>
+											33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+										},
+									},
+									{	-- Sash of Trumpeted Pride
+										["itemID"] = 45209,	-- Sash of Trumpeted Pride
+										["crs"] = {
+											33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+											33555, 	-- Eliza Killian <Undercity Quartermaster>
+											33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+											33554, 	-- Samamba <Sen'jin Quartermaster>
+											33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+										},
+									},
+									{	-- Waistguard of Equine Fury
+										["itemID"] = 45211,	-- Waistguard of Equine Fury
+										["crs"] = {
+											33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+											33555, 	-- Eliza Killian <Undercity Quartermaster>
+											33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+											33554, 	-- Samamba <Sen'jin Quartermaster>
+											33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+										},
+									},
+									{	-- Blood-Caked Stompers
+										["itemID"] = 45218,	-- Blood-Caked Stompers
+										["crs"] = {
+											33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+											33555, 	-- Eliza Killian <Undercity Quartermaster>
+											33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+											33554, 	-- Samamba <Sen'jin Quartermaster>
+											33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+										},
+									},
+									{	-- Treads of the Earnest Squire
+										["itemID"] = 45220,	-- Treads of the Earnest Squire
+										["crs"] = {
+											33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+											33555, 	-- Eliza Killian <Undercity Quartermaster>
+											33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+											33554, 	-- Samamba <Sen'jin Quartermaster>
+											33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+										},
+									},
+									{	-- Treads of Whispering Dreams
+										["itemID"] = 45221,	-- Treads of Whispering Dreams
+										["crs"] = {
+											33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+											33555, 	-- Eliza Killian <Undercity Quartermaster>
+											33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+											33554, 	-- Samamba <Sen'jin Quartermaster>
+											33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+										},
+									},
+								}
+							},
+						},
+					},
 					n(33602, {	-- Anuur <Jewelcrafting Supplies>
 						["coord"] = { 71.4, 20.8 },
 						["groups"] = {
@@ -1278,41 +1740,24 @@ _.Zones =
 						["groups"] = {
 							i(45574),	-- Stormwind Tabard
 							currency(241, {	-- Champion's Seal
-								i(45725),	-- Argent Hippogryph
 								i(45125),	-- Stormwind Steed
-								{
+								{	-- Swift Gray Steed [Human Only]
 									["itemID"] = 46752,	-- Swift Gray Steed
-									["races"] = { 1 },
+									["races"] = {
+										1,	-- Human
+									},
 								},
-								{
-									["itemID"] = 46758,	-- Swift Gray Steed
-									["races"] = { 3, 4, 7, 11, 22, 25, 29, 30, 32, 34 },
+								{	-- Swift Gray Steed [A - Except Human]
+									["itemID"] = 46758,	-- Swift Grey Steed
+									["races"] = exclude(
+										{ -- Exclude these races
+											1,	-- Human
+										},
+										ALLIANCE_ONLY
+									),
 								},
-								i(122232),	-- Music Roll: The Argent Tournament
 								i(44974),	-- Elwynn Lamb Pet
 								i(45011),	-- Stormwind Banner Toy
-								i(45130),	-- Blunderbuss of Khaz Modan
-								i(164932),	-- Grapeshotter of Khaz Modan
-								i(45074),	-- Claymore of the Prophet
-								i(45078),	-- Dagger of Lunar Purity
-								i(45077),	-- Dagger of the Rising Moon
-								i(45129),	-- Gnomeragan Bonechopper
-								i(45075),	-- Ironforge Smasher
-								i(45128),	-- Silvery Sylvan Stave
-								i(45076),	-- Teldrassil Protector
-								i(45155),	-- Choker of Spiral Focus
-								i(45154),	-- Necklace of Valiant Blood
-								i(45152),	-- Pendant of Azure Dreams
-								i(45153),	-- Susurrating Shell Necklace
-								i(45182),	-- Gauntlets of Shattered Pride
-								i(45184),	-- Cinch of Bonded Servitude
-								i(45160),	-- Girdle of Valorous Defeat
-								i(45156),	-- Sash of Shattering Hearts
-								i(45181),	-- Wrap of the Everliving Tree
-								i(45163),	-- Stanchions of Unseatable Furor
-								i(45159),	-- Treads of Nimble Evasion
-								i(45183),	-- Treads of the Glorious Spirit
-								i(45131),	-- Jouster's Fury
 							}),
 							i(46114, {	-- Champion's Writ
 								i(45718),	-- Stormwind Commendation Badge
@@ -1384,41 +1829,24 @@ _.Zones =
 						["groups"] = {
 							i(45577),	-- Ironforge Tabard
 							currency(241, {	-- Champion's Seal
-								i(45725),	-- Argent Hippogryph Mount
 								i(45586),	-- Ironforge Ram Mount
-								{
+								{	-- Swift Violet Ram
 									["itemID"] = 46748,	-- Swift Violet Ram
-									["races"] = { 3 },
+									["races"] = {
+										3,	-- Dwarf
+									},
 								},
-								{
+								{	-- Swift Violet Ram
 									["itemID"] = 46762,	-- Swift Violet Ram
-									["races"] = { 1, 4, 7, 11, 22, 25, 29, 30, 32, 34 },
+									["races"] = exclude(
+										{ -- Exclude these races
+											3,	-- Dwarf
+										},
+										ALLIANCE_ONLY
+									),
 								},
-								i(122232),	-- Music Roll: The Argent Tournament
 								i(44970),	-- Dun Morogh Cub Pet
 								i(45018),	-- Ironforge Banner Toy
-								i(45130),	-- Blunderbuss of Khaz Modan
-								i(164932),	-- Grapeshotter of Khaz Modan
-								i(45074),	-- Claymore of the Prophet
-								i(45078),	-- Dagger of Lunar Purity
-								i(45077),	-- Dagger of the Rising Moon
-								i(45129),	-- Gnomeragan Bonechopper
-								i(45075),	-- Ironforge Smasher
-								i(45128),	-- Silvery Sylvan Stave
-								i(45076),	-- Teldrassil Protector
-								i(45155),	-- Choker of Spiral Focus
-								i(45154),	-- Necklace of Valiant Blood
-								i(45152),	-- Pendant of Azure Dreams
-								i(45153),	-- Susurrating Shell Necklace
-								i(45182),	-- Gauntlets of Shattered Pride
-								i(45184),	-- Cinch of Bonded Servitude
-								i(45160),	-- Girdle of Valorous Defeat
-								i(45156),	-- Sash of Shattering Hearts
-								i(45181),	-- Wrap of the Everliving Tree
-								i(45163),	-- Stanchions of Unseatable Furor
-								i(45159),	-- Treads of Nimble Evasion
-								i(45183),	-- Treads of the Glorious Spirit
-								i(45131),	-- Jouster's Fury
 							}),
 							i(46114, {	-- Champion's Writ
 								i(45717),	-- Ironforge Commendation Badge
@@ -1430,33 +1858,10 @@ _.Zones =
 						["groups"] = {
 							i(45584),	-- Thunder Bluff Tabard
 							currency(241, {	-- Champion's Seal
-								i(45725),	-- Argent Hippogryph Mount 
 								i(46755),	-- Great Golden Kodo
 								i(45592),	-- Thunder Bluff Mount
-								i(122232),	-- Music Roll: The Argent Tournament
 								i(44980),	-- Mulgore Hatchling Pet
 								i(45013),	-- Thunder Bluff Banner Toy
-								i(45204),	-- Axe of the Sen'jin Protector
-								i(45208),	-- Blade of the Keening Banshee
-								i(45205),	-- Greatsword of the Sin'dorei
-								i(45203),	-- Grimhorn Crusher
-								i(45214),	-- Scalpel of the Royal Apothecary
-								i(45210),	-- Sen'jin Beakblade Longrifle
-								i(45222),	-- Spinal Destroyer
-								i(45212),	-- Staff of Feral Furies
-								i(45206),	-- Choker of Feral Fury
-								i(45207),	-- Necklace of Stolen Skulls
-								i(45213),	-- Pendant of Emerald Crusader
-								i(45223),	-- Razor's Edge Pendant
-								i(45216),	-- Gauntlets of Mending Touch
-								i(45217),	-- Clinch of Savage Fury
-								i(45215),	-- Links of Unquenched Savagery
-								i(45209),	-- Sash of Trumpeted Pride
-								i(45211),	-- Waistguard of Equine Fury
-								i(45218),	-- Blood-Caked Stompers
-								i(45220),	-- Treads of the Earnest Squire
-								i(45221),	-- Treads of Whispering Dreams
-								i(45219),	-- Jouster's Fury
 							}),
 							i(46114, {	-- Champion's Writ
 								i(45722),	-- Thunder Bluff Commendation Badge
@@ -1468,33 +1873,10 @@ _.Zones =
 						["groups"] = {
 							i(45583),	-- Undercity Tabard
 							currency(241, {	-- Champion's Seal
-								i(45725),	-- Argent Hippogryph Mount
 								i(45597),	-- Forsaken Mount
 								i(46764),	-- White Skeletal Warhorse Mount
-								i(122232),	-- Music Roll: The Argent Tournament
 								i(44971),	-- Tirisfal Batling Pet
 								i(45016),	-- Undercity Banner Toy
-								i(45204),	-- Axe of the Sen'jin Protector
-								i(45208),	-- Blade of the Keening Banshee
-								i(45205),	-- Greatsword of the Sin'dorei
-								i(45203),	-- Grimhorn Crusher
-								i(45214),	-- Scalpel of the Royal Apothecary
-								i(45210),	-- Sen'jin Beakblade Longrifle
-								i(45222),	-- Spinal Destroyer
-								i(45212),	-- Staff of Feral Furies
-								i(45206),	-- Choker of Feral Fury
-								i(45207),	-- Necklace of Stolen Skulls
-								i(45213),	-- Pendant of Emerald Crusader
-								i(45223),	-- Razor's Edge Pendant
-								i(45216),	-- Gauntlets of Mending Touch
-								i(45217),	-- Clinch of Savage Fury
-								i(45215),	-- Links of Unquenched Savagery
-								i(45209),	-- Sash of Trumpeted Pride
-								i(45211),	-- Waistguard of Equine Fury
-								i(45218),	-- Blood-Caked Stompers
-								i(45220),	-- Treads of the Earnest Squire
-								i(45221),	-- Treads of Whispering Dreams
-								i(45219),	-- Jouster's Fury
 							}),
 							i(46114, {	-- Champion's Writ
 								i(45723),	-- Undercity Commendation Badge
@@ -1512,33 +1894,10 @@ _.Zones =
 						["groups"] = {
 							i(45581),	-- Orgrimmar Tabard
 							currency(241, {	-- Champion's Seal
-								i(45725),	-- Argent Hippogryph Mount 
 								i(45595),	-- Orgrimmar Wolf Mount
 								i(46757),	-- Swift Burgundy Wolf
-								i(122232),	-- Music Roll: The Argent Tournament
 								i(44973),	-- Durotar Scorpion Pet
 								i(45014),	-- Orgrimmar Banner Toy
-								i(45204),	-- Axe of the Sen'jin Protector
-								i(45208),	-- Blade of the Keening Banshee
-								i(45205),	-- Greatsword of the Sin'dorei
-								i(45203),	-- Grimhorn Crusher
-								i(45214),	-- Scalpel of the Royal Apothecary
-								i(45210),	-- Sen'jin Beakblade Longrifle
-								i(45222),	-- Spinal Destroyer
-								i(45212),	-- Staff of Feral Furies
-								i(45206),	-- Choker of Feral Fury
-								i(45207),	-- Necklace of Stolen Skulls
-								i(45213),	-- Pendant of Emerald Crusader
-								i(45223),	-- Razor's Edge Pendant
-								i(45216),	-- Gauntlets of Mending Touch
-								i(45217),	-- Clinch of Savage Fury
-								i(45215),	-- Links of Unquenched Savagery
-								i(45209),	-- Sash of Trumpeted Pride
-								i(45211),	-- Waistguard of Equine Fury
-								i(45218),	-- Blood-Caked Stompers
-								i(45220),	-- Treads of the Earnest Squire
-								i(45221),	-- Treads of Whispering Dreams
-								i(45219),	-- Jouster's Fury
 							}),
 							i(46114, {	-- Champion's Writ
 								i(45719),	-- Orgrimmar Commendation Badge
@@ -1561,41 +1920,24 @@ _.Zones =
 						["groups"] = {
 							i(45580),	-- Exodar Tabard
 							currency(241, {	-- Champion's Seal
-								i(45725),	-- Argent Hippogryph Mount
 								i(45590),	-- Exodar Elekk Mount
-								{
+								{	-- Great Red Elekk
 									["itemID"] = 46745,	-- Great Red Elekk
-									["races"] = { 11 },
+									["races"] = {
+										11,	-- Draenei
+									},
 								},
-								{
+								{	-- Great Red Elekk
 									["itemID"] = 46756,	-- Great Red Elekk
-									["races"] = { 1, 3, 4, 7, 22, 25, 29, 30, 32, 34 },
+									["races"] = exclude(
+										{ -- Exclude these races
+											11,	-- Draenei
+										},
+										ALLIANCE_ONLY
+									),
 								},
-								i(122232),	-- Music Roll: The Argent Tournament
 								i(44984),	-- Ammen Vale Lashling Pet
 								i(45020),	-- Exodar Banner Toy
-								i(45130),	-- Blunderbuss of Khaz Modan
-								i(164932),	-- Grapeshotter of Khaz Modan
-								i(45074),	-- Claymore of the Prophet
-								i(45078),	-- Dagger of Lunar Purity
-								i(45077),	-- Dagger of the Rising Moon
-								i(45129),	-- Gnomeragan Bonechopper
-								i(45075),	-- Ironforge Smasher
-								i(45128),	-- Silvery Sylvan Stave
-								i(45076),	-- Teldrassil Protector
-								i(45155),	-- Choker of Spiral Focus
-								i(45154),	-- Necklace of Valiant Blood
-								i(45152),	-- Pendant of Azure Dreams
-								i(45153),	-- Susurrating Shell Necklace
-								i(45182),	-- Gauntlets of Shattered Pride
-								i(45184),	-- Cinch of Bonded Servitude
-								i(45160),	-- Girdle of Valorous Defeat
-								i(45156),	-- Sash of Shattering Hearts
-								i(45181),	-- Wrap of the Everliving Tree
-								i(45163),	-- Stanchions of Unseatable Furor
-								i(45159),	-- Treads of Nimble Evasion
-								i(45183),	-- Treads of the Glorious Spirit
-								i(45131),	-- Jouster's Fury
 							}),
 							i(46114, {	-- Champion's Writ
 								i(45715),	-- Exodar Commendation Badge
@@ -1744,41 +2086,24 @@ _.Zones =
 						["groups"] = {
 							i(45578),	-- Gnomeragan Tabard
 							currency(241, {	-- Champion's Seal
-								i(45725),	-- Argent Hippogryph Mount
 								i(45589),	-- Gnomeregan Mechanostrider Mount
-								{
+								{	-- Turbostrider
 									["itemID"] = 46747,	-- Turbostrider
-									["races"] = { 7 },
+									["races"] = {
+										7,	-- Gnomes
+									},
 								},
-								{
+								{	-- Turbostrider
 									["itemID"] = 46763,	-- Turbostrider
-									["races"] = { 1, 3, 4, 11, 22, 25, 29, 30, 32, 34 },
+									["races"] = exclude(
+										{ -- Exclude these races
+											7,	-- Gnomes
+										},
+										ALLIANCE_ONLY
+									),
 								},
-								i(122232),	-- Music Roll: The Argent Tournament
 								i(45002),	-- Mechanopeep Pet
 								i(45019),	-- Gnomeregan Banner Toy
-								i(45130),	-- Blunderbuss of Khaz Modan
-								i(164932),	-- Grapeshotter of Khaz Modan
-								i(45074),	-- Claymore of the Prophet
-								i(45078),	-- Dagger of Lunar Purity
-								i(45077),	-- Dagger of the Rising Moon
-								i(45129),	-- Gnomeragan Bonechopper
-								i(45075),	-- Ironforge Smasher
-								i(45128),	-- Silvery Sylvan Stave
-								i(45076),	-- Teldrassil Protector
-								i(45155),	-- Choker of Spiral Focus
-								i(45154),	-- Necklace of Valiant Blood
-								i(45152),	-- Pendant of Azure Dreams
-								i(45153),	-- Susurrating Shell Necklace
-								i(45182),	-- Gauntlets of Shattered Pride
-								i(45184),	-- Cinch of Bonded Servitude
-								i(45160),	-- Girdle of Valorous Defeat
-								i(45156),	-- Sash of Shattering Hearts
-								i(45181),	-- Wrap of the Everliving Tree
-								i(45163),	-- Stanchions of Unseatable Furor
-								i(45159),	-- Treads of Nimble Evasion
-								i(45183),	-- Treads of the Glorious Spirit
-								i(45131),	-- Jouster's Fury
 							}),
 							i(46114, {	-- Champion's Writ
 								i(45716),	-- Gnomeregan Commendation Badge
@@ -1790,41 +2115,24 @@ _.Zones =
 						["groups"] = {
 							i(45579),	-- Darnassus Tabard
 							currency(241, {	-- Champion's Seal
-								i(45725),	-- Argent Hippogryph Mount
 								i(45591),	-- Darnassian Mount
-								{
+								{	-- Swift Moonsaber
 									["itemID"] = 46744,	-- Swift Moonsaber
-									["races"] = { 4 },
+									["races"] = {
+										4,	-- Night Elves
+									},
 								},
-								{
+								{	-- Swift Moonsaber
 									["itemID"] = 46759,	-- Swift Moonsaber
-									["races"] = { 1, 3, 7, 11, 22, 25, 29, 30, 32, 34 },
+									["races"] = exclude(
+										{ -- Exclude these races
+											4,	-- Night Elves
+										},
+										ALLIANCE_ONLY
+									),
 								},
-								i(122232),	-- Music Roll: The Argent Tournament
 								i(44965),	-- Teldrassil Sproutling Pet
 								i(45021),	-- Darnassus Banner Toy
-								i(45130),	-- Blunderbuss of Khaz Modan
-								i(164932),	-- Grapeshotter of Khaz Modan
-								i(45074),	-- Claymore of the Prophet
-								i(45078),	-- Dagger of Lunar Purity
-								i(45077),	-- Dagger of the Rising Moon
-								i(45129),	-- Gnomeragan Bonechopper
-								i(45075),	-- Ironforge Smasher
-								i(45128),	-- Silvery Sylvan Stave
-								i(45076),	-- Teldrassil Protector
-								i(45155),	-- Choker of Spiral Focus
-								i(45154),	-- Necklace of Valiant Blood
-								i(45152),	-- Pendant of Azure Dreams
-								i(45153),	-- Susurrating Shell Necklace
-								i(45182),	-- Gauntlets of Shattered Pride
-								i(45184),	-- Cinch of Bonded Servitude
-								i(45160),	-- Girdle of Valorous Defeat
-								i(45156),	-- Sash of Shattering Hearts
-								i(45181),	-- Wrap of the Everliving Tree
-								i(45163),	-- Stanchions of Unseatable Furor
-								i(45159),	-- Treads of Nimble Evasion
-								i(45183),	-- Treads of the Glorious Spirit
-								i(45131),	-- Jouster's Fury
 							}),
 							i(46114, {	-- Champion's Writ
 								i(45714),	-- Darnassus Commendation Badge
@@ -1836,33 +2144,10 @@ _.Zones =
 						["groups"] = {
 							i(45582),	-- Darkspear Tabard
 							currency(241, {	-- Champion's Seal
-								i(45725),	-- Argent Hippogryph Mount 
 								i(45593),	-- Darkspear Raptor Mount
 								i(46760),	-- Swift Purple Raptor
-								i(122232),	-- Music Roll: The Argent Tournament
 								i(45606),	-- Sen'jin Fetish Pet
 								i(45015),	-- Sen'jin Banner Toy
-								i(45204),	-- Axe of the Sen'jin Protector
-								i(45208),	-- Blade of the Keening Banshee
-								i(45205),	-- Greatsword of the Sin'dorei
-								i(45203),	-- Grimhorn Crusher
-								i(45214),	-- Scalpel of the Royal Apothecary
-								i(45210),	-- Sen'jin Beakblade Longrifle
-								i(45222),	-- Spinal Destroyer
-								i(45212),	-- Staff of Feral Furies
-								i(45206),	-- Choker of Feral Fury
-								i(45207),	-- Necklace of Stolen Skulls
-								i(45213),	-- Pendant of Emerald Crusader
-								i(45223),	-- Razor's Edge Pendant
-								i(45216),	-- Gauntlets of Mending Touch
-								i(45217),	-- Clinch of Savage Fury
-								i(45215),	-- Links of Unquenched Savagery
-								i(45209),	-- Sash of Trumpeted Pride
-								i(45211),	-- Waistguard of Equine Fury
-								i(45218),	-- Blood-Caked Stompers
-								i(45220),	-- Treads of the Earnest Squire
-								i(45221),	-- Treads of Whispering Dreams
-								i(45219),	-- Jouster's Fury
 							}),
 							i(46114, {	-- Champion's Writ
 								i(45720),	-- Sen'jin Commendation Badge
@@ -1874,40 +2159,24 @@ _.Zones =
 						["groups"] = {
 							i(45585),	-- Silvermoon Tabard
 							currency(241, {	-- Champion's Seal
-								i(45725),	-- Argent Hippogryph Mount 
 								i(45596),	-- Silvermoon Mount
-								{
+								{	-- Swift Red Hawkstrider
 									["itemID"] = 46751,	-- Swift Red Hawkstrider
-									["races"] = { 10 },
+									["races"] = {
+										10,	-- Blood Elves
+									},
 								},
-								{
+								{	-- Swift Red Hawkstrider
 									["itemID"] = 46761,	-- Swift Red Hawkstrider
-									["races"] = { 2, 5, 6, 8, 9, 26, 27, 28,  31, 36 },
+									["races"] = exclude(
+										{ -- Exclude these races
+											10,	-- Blood Elves
+										},
+										HORDE_ONLY
+									),
 								},
-								i(122232),	-- Music Roll: The Argent Tournament
 								i(44982),	-- Enchanted Broom Pet
 								i(45017),	-- Silvermoon Banner Toy
-								i(45204),	-- Axe of the Sen'jin Protector
-								i(45208),	-- Blade of the Keening Banshee
-								i(45205),	-- Greatsword of the Sin'dorei
-								i(45203),	-- Grimhorn Crusher
-								i(45214),	-- Scalpel of the Royal Apothecary
-								i(45210),	-- Sen'jin Beakblade Longrifle
-								i(45222),	-- Spinal Destroyer
-								i(45212),	-- Staff of Feral Furies
-								i(45206),	-- Choker of Feral Fury
-								i(45207),	-- Necklace of Stolen Skulls
-								i(45213),	-- Pendant of Emerald Crusader
-								i(45223),	-- Razor's Edge Pendant
-								i(45216),	-- Gauntlets of Mending Touch
-								i(45217),	-- Clinch of Savage Fury
-								i(45215),	-- Links of Unquenched Savagery
-								i(45209),	-- Sash of Trumpeted Pride
-								i(45211),	-- Waistguard of Equine Fury
-								i(45218),	-- Blood-Caked Stompers
-								i(45220),	-- Treads of the Earnest Squire
-								i(45221),	-- Treads of Whispering Dreams
-								i(45219),	-- Jouster's Fury
 							}),
 							i(46114, {	-- Champion's Writ
 								i(45721),	-- Silvermoon Commendation Badge

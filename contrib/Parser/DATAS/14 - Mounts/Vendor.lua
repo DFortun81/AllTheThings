@@ -68,9 +68,9 @@ _.Mounts =
 				["itemID"] = 87795,	-- Black Dragon Turtle
 				["races"] = exclude(
 					{ -- Exclude these races
-						24,			-- Pandaren [Neutral]
-						25, 		-- Pandaren [Alliance]
-						26,			-- Pandaren [Horde]
+						24,	-- Pandaren [Neutral]
+						25,	-- Pandaren [Alliance]
+						26,	-- Pandaren [Horde]
 					},
 					ALL_RACES	-- Includes all other races
 				),
@@ -134,9 +134,9 @@ _.Mounts =
 				["itemID"] = 87796,	-- Blue Dragon Turtle
 				["races"] = exclude(
 					{ -- Exclude these races
-						24,			-- Pandaren [Neutral]
-						25, 		-- Pandaren [Alliance]
-						26,			-- Pandaren [Horde]
+						24,	-- Pandaren [Neutral]
+						25,	-- Pandaren [Alliance]
+						26,	-- Pandaren [Horde]
 					},
 					ALL_RACES	-- Includes all other races
 				),
@@ -183,9 +183,9 @@ _.Mounts =
 				["itemID"] = 87797,	-- Brown Dragon Turtle
 				["races"] = exclude(
 					{ -- Exclude these races
-						24,			-- Pandaren [Neutral]
-						25, 		-- Pandaren [Alliance]
-						26,			-- Pandaren [Horde]
+						24,	-- Pandaren [Neutral]
+						25,	-- Pandaren [Alliance]
+						26,	-- Pandaren [Horde]
 					},
 					ALL_RACES	-- Includes all other races
 				),
@@ -360,9 +360,9 @@ _.Mounts =
 				["itemID"] = 87802,	-- Great Black Dragon Turtle
 				["races"] = exclude(
 					{ -- Exclude these races
-						24,			-- Pandaren [Neutral]
-						25, 		-- Pandaren [Alliance]
-						26,			-- Pandaren [Horde]
+						24,	-- Pandaren [Neutral]
+						25,	-- Pandaren [Alliance]
+						26,	-- Pandaren [Horde]
 					},
 					ALL_RACES	-- Includes all other races
 				),
@@ -378,9 +378,9 @@ _.Mounts =
 				["itemID"] = 87803,	-- Great Blue Dragon Turtle
 				["races"] = exclude(
 					{ -- Exclude these races
-						24,			-- Pandaren [Neutral]
-						25, 		-- Pandaren [Alliance]
-						26,			-- Pandaren [Horde]
+						24,	-- Pandaren [Neutral]
+						25,	-- Pandaren [Alliance]
+						26,	-- Pandaren [Horde]
 					},
 					ALL_RACES	-- Includes all other races
 				),			
@@ -399,9 +399,9 @@ _.Mounts =
 				["itemID"] = 87804,	-- Great Brown Dragon Turtle
 				["races"] = exclude(
 					{ -- Exclude these races
-						24,			-- Pandaren [Neutral]
-						25, 		-- Pandaren [Alliance]
-						26,			-- Pandaren [Horde]
+						24,	-- Pandaren [Neutral]
+						25,	-- Pandaren [Alliance]
+						26,	-- Pandaren [Horde]
 					},
 					ALL_RACES	-- Includes all other races
 				),
@@ -426,9 +426,9 @@ _.Mounts =
 				["itemID"] = 87801,	-- Great Green Dragon Turtle
 				["races"] = exclude(
 					{ -- Exclude these races
-						24,			-- Pandaren [Neutral]
-						25, 		-- Pandaren [Alliance]
-						26,			-- Pandaren [Horde]
+						24,	-- Pandaren [Neutral]
+						25,	-- Pandaren [Alliance]
+						26,	-- Pandaren [Horde]
 					},
 					ALL_RACES	-- Includes all other races
 				),
@@ -447,9 +447,9 @@ _.Mounts =
 				["itemID"] = 87805,	-- Great Purple Dragon Turtle
 				["races"] = exclude(
 					{ -- Exclude these races
-						24,			-- Pandaren [Neutral]
-						25, 		-- Pandaren [Alliance]
-						26,			-- Pandaren [Horde]
+						24,	-- Pandaren [Neutral]
+						25,	-- Pandaren [Alliance]
+						26,	-- Pandaren [Horde]
 					},
 					ALL_RACES	-- Includes all other races
 				),
@@ -468,15 +468,27 @@ _.Mounts =
 				["itemID"] = 82811,	-- Great Red Dragon Turtle
 				["races"] = exclude(
 					{ -- Exclude these races
-						24,			-- Pandaren [Neutral]
-						25, 		-- Pandaren [Alliance]
-						26,			-- Pandaren [Horde]
+						24,	-- Pandaren [Neutral]
+						25,	-- Pandaren [Alliance]
+						26,	-- Pandaren [Horde]
 					},
 					ALL_RACES	-- Includes all other races
 				),
 			},
 			{	-- Great Red Elekk
 				["itemID"] = 46745,	-- Great Red Elekk
+				["races"] = {
+					11,	-- Draenei
+				},
+			},
+			{	-- Great Red Elekk
+				["itemID"] = 46756,	-- Great Red Elekk
+				["races"] = exclude(
+					{ -- Exclude these races
+						11,	-- Draenei
+					},
+					ALLIANCE_ONLY
+				),
 			},
 			{	-- Great White Kodo
 				["itemID"] = 18793,	-- Great White Kodo
@@ -492,9 +504,9 @@ _.Mounts =
 				["itemID"] = 82765,	-- Green Dragon Turtle
 				["races"] = exclude(
 					{ -- Exclude these races
-						24,			-- Pandaren [Neutral]
-						25, 		-- Pandaren [Alliance]
-						26,			-- Pandaren [Horde]
+						24,	-- Pandaren [Neutral]
+						25,	-- Pandaren [Alliance]
+						26,	-- Pandaren [Horde]
 					},
 					ALL_RACES	-- Includes all other races
 				),
@@ -596,9 +608,9 @@ _.Mounts =
 				["itemID"] = 87799,	-- Purple Dragon Turtle
 				["races"] = exclude(
 					{ -- Exclude these races
-						24,			-- Pandaren [Neutral]
-						25, 		-- Pandaren [Alliance]
-						26,			-- Pandaren [Horde]
+						24,	-- Pandaren [Neutral]
+						25,	-- Pandaren [Alliance]
+						26,	-- Pandaren [Horde]
 					},
 					ALL_RACES	-- Includes all other races
 				),
@@ -629,9 +641,9 @@ _.Mounts =
 				["itemID"] = 87800,	-- Red Dragon Turtle
 				["races"] = exclude(
 					{ -- Exclude these races
-						24,			-- Pandaren [Neutral]
-						25, 		-- Pandaren [Alliance]
-						26,			-- Pandaren [Horde]
+						24,	-- Pandaren [Neutral]
+						25,	-- Pandaren [Alliance]
+						26,	-- Pandaren [Horde]
 					},
 					ALL_RACES	-- Includes all other races
 				),
@@ -789,8 +801,20 @@ _.Mounts =
 			{	-- Swift Gray Ram
 				["itemID"] = 18787,	-- Swift Gray Ram
 			},
-			{	-- Swift Gray Steed
+			{	-- Swift Gray Steed [Human Only]
 				["itemID"] = 46752,	-- Swift Gray Steed
+				["races"] = {
+					1,	-- Human
+				},
+			},
+			{	-- Swift Gray Steed [A - Except Human]
+				["itemID"] = 46758,	-- Swift Grey Steed
+				["races"] = exclude(
+					{ -- Exclude these races
+						1,	-- Human
+					},
+					ALLIANCE_ONLY
+				),
 			},
 			{	-- Swift Gray Wolf
 				["itemID"] = 18798,	-- Swift Gray Wolf
@@ -812,6 +836,18 @@ _.Mounts =
 			},
 			{	-- Swift Moonsaber
 				["itemID"] = 46744,	-- Swift Moonsaber
+				["races"] = {
+					4,	-- Night Elves
+				},
+			},
+			{	-- Swift Moonsaber
+				["itemID"] = 46759,	-- Swift Moonsaber
+				["races"] = exclude(
+					{ -- Exclude these races
+						4,	-- Night Elves
+					},
+					ALLIANCE_ONLY
+				),
 			},
 			{	-- Swift Mountain Horse
 				["itemID"] = 73839,	-- Swift Mountain Horse
@@ -845,6 +881,18 @@ _.Mounts =
 			},
 			{	-- Swift Red Hawkstrider
 				["itemID"] = 46751,	-- Swift Red Hawkstrider
+				["races"] = {
+					10,	-- Blood Elves
+				},
+			},
+			{	-- Swift Red Hawkstrider
+				["itemID"] = 46761,	-- Swift Red Hawkstrider
+				["races"] = exclude(
+					{ -- Exclude these races
+						10,	-- Blood Elves
+					},
+					HORDE_ONLY
+				),
 			},
 			{	-- Swift Red Wind Rider
 				["itemID"] = 25477,	-- Swift Red Wind Rider
@@ -857,6 +905,18 @@ _.Mounts =
 			},
 			{	-- Swift Violet Ram
 				["itemID"] = 46748,	-- Swift Violet Ram
+				["races"] = {
+					3,	-- Dwarf
+				},
+			},
+			{	-- Swift Violet Ram
+				["itemID"] = 46762,	-- Swift Violet Ram
+				["races"] = exclude(
+					{ -- Exclude these races
+						3,	-- Dwarf
+					},
+					ALLIANCE_ONLY
+				),
 			},
 			{	-- Swift Warstrider
 				["itemID"] = 34129,	-- Swift Warstrider
@@ -914,6 +974,18 @@ _.Mounts =
 			},
 			{	-- Turbostrider
 				["itemID"] = 46747,	-- Turbostrider
+				["races"] = {
+					7,	-- Gnomes
+				},
+			},
+			{	-- Turbostrider
+				["itemID"] = 46763,	-- Turbostrider
+				["races"] = exclude(
+					{ -- Exclude these races
+						7,	-- Gnomes
+					},
+					ALLIANCE_ONLY
+				),
 			},
 			{	-- Turquoise Raptor
 				["itemID"] = 8591,	-- Turquoise Raptor
