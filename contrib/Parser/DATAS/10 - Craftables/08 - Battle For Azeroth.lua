@@ -5,6 +5,7 @@ _.Craftables =
 {
 	tier(8, { -- Battle For Azeroth
 		n(-180, { -- Alchemy
+		-- Reviewed and updated as of 12.16.2018 BfA 8.1
 			filter(101, {	-- Battle Pets
 				{	-- Quivering Sac
 					["itemID"] = 160325,	-- Quivering Sac
@@ -39,21 +40,41 @@ _.Craftables =
 				},
 				{	-- Imbued Alchemist Stone
 					["itemID"] = 291085,	-- Imbued Alchemist Stone
+					["g"] = {
+						{	-- Recipe: Emblazoned Alchemist Stone
+							["itemID"] = 166978,	-- Recipe: Emblazoned Alchemist Stone
+						},
+					},
 				},
 				{	-- Sanguinated Alchemist Stone
 					["itemID"] = 291084,	-- Sanguinated Alchemist Stone
+					["g"] = {
+						{	-- Recipe: Imbued Alchemist Stone
+							["itemID"] = 166977,	-- Recipe: Imbued Alchemist Stone
+						},
+					},
 				},
 				{	-- Siren's Alchemist Stone
 					["itemID"] = 152637,	-- Siren's Alchemist Stone
 				},
 				{	-- Spirited Alchemist Stone
 					["itemID"] = 286922,	-- Spirited Alchemist Stone
+					["g"] = {
+						{	-- Recipe: Eternal Alchemist Stone
+							["itemID"] = 165930,	-- Recipe: Eternal Alchemist Stone
+						},
+					},
 				},
 				{	-- Surging Alchemist Stone
 					["itemID"] = 152632,	-- Surging Alchemist Stone
 				},
 				{	-- Tidal Alchemist Stone
 					["itemID"] = 286921,	-- Tidal Alchemist Stone
+					["g"] = {
+						{	-- Recipe: Spirited Alchemist Stone
+							["itemID"] = 165929,	-- Recipe: Spirited Alchemist Stone
+						},
+					},
 				},
 			}),
 		}),
@@ -275,16 +296,36 @@ _.Craftables =
 					["itemID"] = 162466,	-- Emblazoned Stormsteel Girdle [H]
 				},
 				{	-- Enhanced Stormsteel Girdle [A]
-					["itemID"] = 165406,	-- Enhanced Stormsteel Girdle [A]},
+					["itemID"] = 165406,	-- Enhanced Stormsteel Girdle [A]
+					["g"] = {
+						{	-- Recipe: Fortified Stormsteel Girdle
+							["itemID"] = 165642,	-- Recipe: Fortified Stormsteel Girdle
+						},
+					},
 				},
 				{	-- Enhanced Stormsteel Girdle [H]
 					["itemID"] = 165407,	-- Enhanced Stormsteel Girdle [H]
+					["g"] = {
+						{	-- Recipe: Fortified Stormsteel Girdle
+							["itemID"] = 165642,	-- Recipe: Fortified Stormsteel Girdle
+						},
+					},
 				},
 				{	-- Fortified Stormsteel Girdle [A]
 					["itemID"] = 165414,	-- Fortified Stormsteel Girdle [A]
+					["g"] = {
+						{	-- Recipe: Tempered Stormsteel Girdle
+							["itemID"] = 165643,	-- Recipe: Tempered Stormsteel Girdle
+						},
+					},
 				},
 				{	-- Fortified Stormsteel Girdle [H]
 					["itemID"] = 165415,	-- Fortified Stormsteel Girdle [H]
+					["g"] = {
+						{	-- Recipe: Tempered Stormsteel Girdle
+							["itemID"] = 165643,	-- Recipe: Tempered Stormsteel Girdle
+						},
+					},
 				},
 				{	-- Honorable Combatant's Plate Waistguard [A]
 					["itemID"] = 161896,	-- Honorable Combatant's Plate Waistguard [A]
@@ -294,9 +335,19 @@ _.Craftables =
 				},
 				{	-- Imbued Stormsteel Girdle [A]
 					["itemID"] = 162492,	-- Imbued Stormsteel Girdle [A]
+					["g"] = {
+						{	-- Recipe: Emblazoned Stormsteel Girdle
+							["itemID"] = 162498,	-- Recipe: Emblazoned Stormsteel Girdle
+						},
+					},
 				},
 				{	-- Imbued Stormsteel Girdle [H]
 					["itemID"] = 162465,	-- Imbued Stormsteel Girdle [H]
+					["g"] = {
+						{	-- Recipe: Emblazoned Stormsteel Girdle
+							["itemID"] = 162498,	-- Recipe: Emblazoned Stormsteel Girdle
+						},
+					},
 				},
 				{	-- Monel-Hardened Waistguard [A]
 					["itemID"] = 161886,	-- Monel-Hardened Waistguard [A]
@@ -312,9 +363,19 @@ _.Craftables =
 				},
 				{	-- Stormsteel Girdle [A]
 					["itemID"] = 161889,	-- Stormsteel Girdle [A]
+					["g"] = {
+						{	-- Recipe: Imbued Stormsteel Girdle
+							["itemID"] = 162497,	-- Recipe: Imbued Stormsteel Girdle
+						},
+					},
 				},
 				{	-- Stormsteel Girdle [H]
 					["itemID"] = 152811,	-- Stormsteel Girdle [H]
+					["g"] = {
+						{	-- Recipe: Imbued Stormsteel Girdle
+							["itemID"] = 162497,	-- Recipe: Imbued Stormsteel Girdle
+						},
+					},
 				},
 				{	-- Tempered Stormsteel Girdle [A]
 					["itemID"] = 165422,	-- Tempered Stormsteel Girdle [A]
@@ -332,12 +393,27 @@ _.Craftables =
 				},
 				{	-- Enhanced Stormsteel Legguards [A]
 					["itemID"] = 165379,	-- Enhanced Stormsteel Legguards [A]
+					["g"] = {
+						{	-- Recipe: Fortified Stormsteel Legguards
+							["itemID"] = 165640,	-- Recipe: Fortified Stormsteel Legguards
+						},
+					},
 				},
 				{	-- Enhanced Stormsteel Legguards [H]
 					["itemID"] = 165380,	-- Enhanced Stormsteel Legguards [H]
+					["g"] = {
+						{	-- Recipe: Fortified Stormsteel Legguards
+							["itemID"] = 165640,	-- Recipe: Fortified Stormsteel Legguards
+						},
+					},
 				},
 				{	-- Fortified Stormsteel Legguards [A]
 					["itemID"] = 165389,	-- Fortified Stormsteel Legguards [A]
+					["g"] = {
+						{	-- Recipe: Tempered Stormsteel Legguards
+							["itemID"] = 165641,	-- Recipe: Tempered Stormsteel Legguards
+						},
+					},
 				},
 				{	-- Fortified Stormsteel Legguards [H]
 					["itemID"] = 165390,	-- Fortified Stormsteel Legguards [H]
@@ -350,9 +426,19 @@ _.Craftables =
 				},
 				{	-- Imbued Stormsteel Legguards [A]
 					["itemID"] = 162491,	-- Imbued Stormsteel Legguards [A]
+					["g"] = {
+						{	-- Recipe: Emblazoned Stormsteel Legguards
+							["itemID"] = 162496,	-- Recipe: Emblazoned Stormsteel Legguards
+						},
+					},
 				},
 				{	-- Imbued Stormsteel Legguards [H]
 					["itemID"] = 162463,	-- Imbued Stormsteel Legguards [H]
+					["g"] = {
+						{	-- Recipe: Emblazoned Stormsteel Legguards
+							["itemID"] = 162496,	-- Recipe: Emblazoned Stormsteel Legguards
+						},
+					},
 				},
 				{	-- Monel-Hardened Greaves [A]
 					["itemID"] = 161884,	-- Monel-Hardened Greaves [A]
@@ -368,9 +454,19 @@ _.Craftables =
 				},
 				{	-- Stormsteel Legguards [A]
 					["itemID"] = 161888,	-- Stormsteel Legguards [A]
+					["g"] = {
+						{	-- Recipe: Imbued Stormsteel Legguards
+							["itemID"] = 162495,	-- Recipe: Imbued Stormsteel Legguards
+						},
+					},
 				},
 				{	-- Stormsteel Legguards [H]
 					["itemID"] = 152810,	-- Stormsteel Legguards [H]
+					["g"] = {
+						{	-- Recipe: Imbued Stormsteel Legguards
+							["itemID"] = 162495,	-- Recipe: Imbued Stormsteel Legguards
+						},
+					},
 				},
 				{	-- Tempered Stormsteel Legguards [A]
 					["itemID"] = 165397,	-- Tempered Stormsteel Legguards [A]
@@ -486,12 +582,27 @@ _.Craftables =
 					},
 					{	-- Imbued Synthetic Specs
 						["itemID"] = 166979,	-- Imbued Synthetic Specs
+						["g"] = {
+							{	-- Schematic: Emblazoned Synthetic Specs
+								["itemID"] = 166987,	-- Schematic: Emblazoned Synthetic Specs
+							},
+						},
 					},
 					{	-- SP1-R1-73D Synthetic Specs
 						["itemID"] = 165890,	-- SP1-R1-73D Synthetic Specs
+						["g"] = {
+							{	-- Schematic: Charged SP1-R1-73D Synthetic Specs
+								["itemID"] = 165918,	-- Schematic: Charged SP1-R1-73D Synthetic Specs
+							},
+						},
 					},
 					{	-- Surging Synthetic Specs
 						["itemID"] = 165885,	-- Surging Synthetic Specs
+						["g"] = {
+							{	-- Schematic: SP1-R1-73D Synthetic Specs
+								["itemID"] = 165917,	-- Schematic: SP1-R1-73D Synthetic Specs
+							},
+						},
 					},
 				}),
 				filter(5, {	-- Leather
@@ -506,12 +617,27 @@ _.Craftables =
 					},
 					{	-- Imbued Gearspun Goggles
 						["itemID"] = 166981,	-- Imbued Gearspun Goggles
+						["g"] = {
+							{	-- Schematic: Emblazoned Gearspun Goggles
+								["itemID"] = 166988,	-- Schematic: Emblazoned Gearspun Goggles
+							},
+						},
 					},
 					{	-- SP1-R1-73D Gearspun Goggles
 						["itemID"] = 165891,	-- SP1-R1-73D Gearspun Goggles
+						["g"] = {
+							{	-- Schematic: Charged SP1-R1-73D Gearspun Goggles
+								["itemID"] = 165914,	-- Schematic: Charged SP1-R1-73D Gearspun Goggles
+							},
+						},
 					},
 					{	-- Surging Gearspun Goggles
 						["itemID"] = 165886,	-- Surging Gearspun Goggles
+						["g"] = {
+							{	-- Schematic: SP1-R1-73D Gearspun Goggles
+								["itemID"] = 165913,	-- Schematic: SP1-R1-73D Gearspun Goggles
+							},
+						},
 					},
 				}),
 				filter(6, {	-- Mail
@@ -526,12 +652,27 @@ _.Craftables =
 					},
 					{	-- Imbued Bionic Bifocals
 						["itemID"] = 166983,	-- Imbued Bionic Bifocals
+						["g"] = {
+							{	-- Schematic: Emblazoned Bionic Bifocals
+								["itemID"] = 166989,	-- Schematic: Emblazoned Bionic Bifocals
+							},
+						},
 					},
 					{	-- SP1-R1-73D Bionic Bifocals
 						["itemID"] = 165892,	-- SP1-R1-73D Bionic Bifocals
+						["g"] = {
+							{	-- Schematic: Charged SP1-R1-73D Bionic Bifocals
+								["itemID"] = 165912,	-- Schematic: Charged SP1-R1-73D Bionic Bifocals
+							},
+						},
 					},
 					{	-- Surging Bionic Bifocals
 						["itemID"] = 165887,	-- Surging Bionic Bifocals
+						["g"] = {
+							{	-- Schematic: SP1-R1-73D Bionic Bifocals
+								["itemID"] = 165911,	-- Schematic: SP1-R1-73D Bionic Bifocals
+							},
+						},
 					},
 				}),
 				filter(7, {	-- Plate
@@ -546,17 +687,33 @@ _.Craftables =
 					},
 					{	-- Imbued Orthogonal Optics
 						["itemID"] = 166985,	-- Imbued Orthogonal Optics
+						["g"] = {
+							{	-- Schematic: Emblazoned Orthogonal Optics
+								["itemID"] = 166990,	-- Schematic: Emblazoned Orthogonal Optics
+							},
+						},
 					},
 					{	-- SP1-R1-73D Orthogonal Optics
 						["itemID"] = 165893,	-- SP1-R1-73D Orthogonal Optics
+						["g"] = {
+							{	-- Schematic: Charged SP1-R1-73D Orthogonal Optics
+								["itemID"] = 165916,	-- Schematic: Charged SP1-R1-73D Orthogonal Optics
+							},
+						},
 					},
 					{	-- Surging Orthogonal Optics
 						["itemID"] = 165888,	-- Surging Orthogonal Optics
+						["g"] = {
+							{	-- Schematic: SP1-R1-73D Orthogonal Optics
+								["itemID"] = 165915,	-- Schematic: SP1-R1-73D Orthogonal Optics
+							},
+						},
 					},
 				}),
 			}),
 		}),
 		n(-185, { -- Inscription
+		-- Reviewed and updated as of 12.16.2018 BfA 8.1
 			n(-491, { -- Tarot Cards
 				sp(278527, {	-- Darkmoon Card of War
 					sp(267087, {	-- Blockades Deck
@@ -595,6 +752,7 @@ _.Craftables =
 			}),
 		}),
 		n(-186, { -- Jewelcrafting
+		-- Reviewed and updated as of 12.15.2018 BfA 8.1
 			filter(28, {	-- Staves
 				{	-- Honorable Combatant's Staff of Intuition
 					["itemID"] = 159939,	-- Honorable Combatant's Staff of Intuition
@@ -630,9 +788,19 @@ _.Craftables =
 				},
 				{	-- Imbued Kraken's Eye Loop
 					["itemID"] = 166520,	-- Imbued Kraken's Eye Loop
+					["g"] = {
+						{	-- Recipe: Emblazoned Kraken's Eye Loop
+							["itemID"] = 166541,	-- Recipe: Emblazoned Kraken's Eye Loop
+						},
+					},
 				},
 				{	-- Kraken's Eye Loop
 					["itemID"] = 166519,	-- Kraken's Eye Loop
+					["g"] = {
+						{	-- Recipe: Imbued Kraken's Eye Loop
+							["itemID"] = 166540,	-- Recipe: Imbued Kraken's Eye Loop
+						},
+					},
 				},
 				{	-- Kubiline Ring
 					["itemID"] = 153688,	-- Kubiline Ring
@@ -651,12 +819,22 @@ _.Craftables =
 				},
 				{	-- Spirited Kraken's Eye Loop
 					["itemID"] = 166523,	-- Spirited Kraken's Eye Loop
+					["g"] = {
+						{	-- Recipe: Eternal Kraken's Eye Loop
+							["itemID"] = 166543,	-- Recipe: Eternal Kraken's Eye Loop
+						},
+					},
 				},
 				{	-- Tidal Amethyst Loop
 					["itemID"] = 153684,	-- Tidal Amethyst Loop
 				},
 				{	-- Tidal Kraken's Eye Loop
 					["itemID"] = 166522,	-- Tidal Kraken's Eye Loop
+					["g"] = {
+						{	-- Recipe: Spirited Kraken's Eye Loop
+							["itemID"] = 166542,	-- Recipe: Spirited Kraken's Eye Loop
+						},
+					},
 				},
 			}),
 		}),
@@ -741,57 +919,147 @@ _.Craftables =
 			},
 			{	-- Enhanced Mistscale Boots [A]
 				["itemID"] = 165404,	-- Enhanced Mistscale Boots [A]
+				["g"] = {
+					{	-- Recipe: Fortified Mistscale Boots
+						["itemID"] = 165648,	-- Recipe: Fortified Mistscale Boots
+					},
+				},
 			},
 			{	-- Enhanced Mistscale Boots [H]
 				["itemID"] = 165405,	-- Enhanced Mistscale Boots [H]
+				["g"] = {
+					{	-- Recipe: Fortified Mistscale Boots
+						["itemID"] = 165648,	-- Recipe: Fortified Mistscale Boots
+					},
+				},
 			},
 			{	-- Enhanced Mistscale Greaves [A]
 				["itemID"] = 165382,	-- Enhanced Mistscale Greaves [A]
+				["g"] = {
+					{	-- Recipe: Fortified Mistscale Greaves
+						["itemID"] = 165650,	-- Recipe: Fortified Mistscale Greaves
+					},
+				},
 			},
 			{	-- Enhanced Mistscale Greaves [H]
 				["itemID"] = 165381,	-- Enhanced Mistscale Greaves [H]
+				["g"] = {
+					{	-- Recipe: Fortified Mistscale Greaves
+						["itemID"] = 165650,	-- Recipe: Fortified Mistscale Greaves
+					},
+				},
 			},
 			{	-- Fortified Mistscale Boots [A]
 				["itemID"] = 165412,	-- Fortified Mistscale Boots [A]
+				["g"] = {
+					{	-- Recipe: Tempered Mistscale Boots
+						["itemID"] = 165649,	-- Recipe: Tempered Mistscale Boots
+					},
+				},
 			},
 			{	-- Fortified Mistscale Boots [H]
 				["itemID"] = 165413,	-- Fortified Mistscale Boots [H]
+				["g"] = {
+					{	-- Recipe: Tempered Mistscale Boots
+						["itemID"] = 165649,	-- Recipe: Tempered Mistscale Boots
+					},
+				},
 			},
 			{	-- Fortified Mistscale Greaves [A]
 				["itemID"] = 165388,	-- Fortified Mistscale Greaves [A]
+				["g"] = {
+					{	-- Recipe: Tempered Mistscale Greaves
+						["itemID"] = 165651,	-- Recipe: Tempered Mistscale Greaves
+					},
+				},
 			},
 			{	-- Fortified Mistscale Greaves [H]
 				["itemID"] = 165387,	-- Fortified Mistscale Greaves [H]
+				["g"] = {
+					{	-- Recipe: Tempered Mistscale Greaves
+						["itemID"] = 165651,	-- Recipe: Tempered Mistscale Greaves
+					},
+				},
 			},
 			{	-- Enhanced Tempest Boots [A]
 				["itemID"] = 165408,	-- Enhanced Tempest Boots [A]
+				["g"] = {
+					{	-- Recipe: Fortified Tempest Boots
+						["itemID"] = 165644,	-- Recipe: Fortified Tempest Boots
+					},
+				},
 			},
 			{	-- Enhanced Tempest Boots [H]
 				["itemID"] = 165409,	-- Enhanced Tempest Boots [H]
+				["g"] = {
+					{	-- Recipe: Fortified Tempest Boots
+						["itemID"] = 165644,	-- Recipe: Fortified Tempest Boots
+					},
+				},
 			},
 			{	-- Enhanced Tempest Leggings [A]
 				["itemID"] = 165383,	-- Enhanced Tempest Leggings [A]
+				["g"] = {
+					{	-- Recipe: Fortified Tempest Leggings
+						["itemID"] = 165646,	-- Recipe: Fortified Tempest Leggings
+					},
+				},
 			},
 			{	-- Enhanced Tempest Leggings [H]
 				["itemID"] = 165384,	-- Enhanced Tempest Leggings [H]
+				["g"] = {
+					{	-- Recipe: Fortified Tempest Leggings
+						["itemID"] = 165646,	-- Recipe: Fortified Tempest Leggings
+					},
+				},
 			},
 			{	-- Fortified Tempest Boots [A]
 				["itemID"] = 165416,	-- Fortified Tempest Boots [A]
+				["g"] = {
+					{	-- Recipe: Tempered Tempest Boots
+						["itemID"] = 165645,	-- Recipe: Tempered Tempest Boots
+					},
+				},
 			},
 			{	-- Fortified Tempest Boots [H]
 				["itemID"] = 165417,	-- Fortified Tempest Boots [H]
+				["g"] = {
+					{	-- Recipe: Tempered Tempest Boots
+						["itemID"] = 165645,	-- Recipe: Tempered Tempest Boots
+					},
+				},
 			},
 			{	-- Fortified Tempest Leggings [A]
 				["itemID"] = 165391,	-- Fortified Tempest Leggings [A]
+				["g"] = {
+					{	-- Recipe: Tempered Tempest Leggings
+						["itemID"] = 165647,	-- Recipe: Tempered Tempest Leggings
+					},
+				},
 			},
 			{	-- Fortified Tempest Leggings [H]
 				["itemID"] = 165392,	-- Fortified Tempest Leggings [H]
+				["g"] = {
+					{	-- Recipe: Tempered Tempest Leggings
+						["itemID"] = 165647,	-- Recipe: Tempered Tempest Leggings
+					},
+				},
 			},
 			{	-- Hardened Tempest Boots [A]
 				["itemID"] = 161946,	-- Hardened Tempest Boots [A]
+				["g"] = {
+					{	-- Recipe: Imbued Tempest Boots
+						["itemID"] = 162499,	-- Recipe: Imbued Tempest Boots
+					},
+				},
 			},
 			{	-- Hardened Tempest Boots [H]
 				["itemID"] = 154154,	-- Hardened Tempest Boots [H]
+				["g"] = {
+					{	-- Recipe: Imbued Tempest Boots
+						["itemID"] = 162499,	-- Recipe: Imbued Tempest Boots
+					},
+				},
 			},
 			{	-- Hardened Tempest Knuckles [A]
 				["itemID"] = 161972,	-- Hardened Tempest Knuckles [A]
@@ -801,9 +1069,19 @@ _.Craftables =
 			},
 			{	-- Hardened Tempest Leggings [A]
 				["itemID"] = 161947,	-- Hardened Tempest Leggings [A]
+				["g"] = {
+					{	-- Recipe: Imbued Tempest Leggings
+						["itemID"] = 162501,	-- Recipe: Imbued Tempest Leggings
+					},
+				},
 			},
 			{	-- Hardened Tempest Leggings [H]
 				["itemID"] = 154155,	-- Hardened Tempest Leggings [H]
+				["g"] = {
+					{	-- Recipe: Imbued Tempest Leggings
+						["itemID"] = 162501,	-- Recipe: Imbued Tempest Leggings
+					},
+				},
 			},
 			{	-- Honorable Combatant's Bow [A]
 				["itemID"] = 161975,	-- Honorable Combatant's Bow [A]
@@ -873,33 +1151,83 @@ _.Craftables =
 			},
 			{	-- Imbued Mistscale Boots [A]
 				["itemID"] = 162489,	-- Imbued Mistscale Boots [A]
+				["g"] = {
+					{	-- Recipe: Emblazoned Mistscale Boots
+						["itemID"] = 162504,	-- Recipe: Emblazoned Mistscale Boots
+					},
+				},
 			},
 			{	-- Imbued Mistscale Boots [H]
 				["itemID"] = 162471,	-- Imbued Mistscale Boots [H]
+				["g"] = {
+					{	-- Recipe: Emblazoned Mistscale Boots
+						["itemID"] = 162504,	-- Recipe: Emblazoned Mistscale Boots
+					},
+				},
 			},
 			{	-- Imbued Mistscale Leggings [A]
 				["itemID"] = 162490,	-- Imbued Mistscale Leggings [A]
+				["g"] = {
+					{	-- Recipe: Emblazoned Mistscale Leggings
+						["itemID"] = 162506,	-- Recipe: Emblazoned Mistscale Leggings
+					},
+				},
 			},
 			{	-- Imbued Mistscale Greeaves [H]
 				["itemID"] = 162473,	-- Imbued Mistscale Greeaves [H]
+				["g"] = {
+					{	-- Recipe: Emblazoned Mistscale Leggings
+						["itemID"] = 162506,	-- Recipe: Emblazoned Mistscale Leggings
+					},
+				},
 			},
 			{	-- Imbued Tempest Boots [A]
 				["itemID"] = 162493,	-- Imbued Tempest Boots [A]
+				["g"] = {
+					{	-- Recipe: Emblazoned Tempest Boots
+						["itemID"] = 162500,	-- Recipe: Emblazoned Tempest Boots
+					},
+				},
 			},
 			{	-- Imbued Tempest Boots [H]
 				["itemID"] = 162467,	-- Imbued Tempest Boots [H]
+				["g"] = {
+					{	-- Recipe: Emblazoned Tempest Boots
+						["itemID"] = 162500,	-- Recipe: Emblazoned Tempest Boots
+					},
+				},
 			},
 			{	-- Imbued Tempest Leggings [A]
 				["itemID"] = 162494,	-- Imbued Tempest Leggings [A]
+				["g"] = {
+					{	-- Recipe: Emblazoned Tempest Leggings
+						["itemID"] = 162502,	-- Recipe: Emblazoned Tempest Leggings
+					},
+				},
 			},
 			{	-- Imbued Tempest Leggings [H]
 				["itemID"] = 162469,	-- Imbued Tempest Leggings [H]
+				["g"] = {
+					{	-- Recipe: Emblazoned Tempest Leggings
+						["itemID"] = 162502,	-- Recipe: Emblazoned Tempest Leggings
+					},
+				},
 			},
 			{	-- Mistscale Boots [A]
 				["itemID"] = 161961,	-- Mistscale Boots [A]
+				["g"] = {
+					{	-- Recipe: Imbued Mistscale Boots
+						["itemID"] = 162503,	-- Recipe: Imbued Mistscale Boots
+					},
+				},
 			},
 			{	-- Mistscale Boots [H]
 				["itemID"] = 154156,	-- Mistscale Boots [H]
+				["g"] = {
+					{	-- Recipe: Imbued Mistscale Boots
+						["itemID"] = 162503,	-- Recipe: Imbued Mistscale Boots
+					},
+				},
 			},
 			{	-- Mistscale Knuckles [A]
 				["itemID"] = 161971,	-- Mistscale Knuckles [A]
@@ -909,9 +1237,19 @@ _.Craftables =
 			},
 			{	-- Mistscale Leggings [A]
 				["itemID"] = 161962,	-- Mistscale Leggings [A]
+				["g"] = {
+					{	-- Recipe: Imbued Mistscale Leggings
+						["itemID"] = 162505,	-- Recipe: Imbued Mistscale Leggings
+					},
+				},
 			},
 			{	-- Mistscale Greaves [H]
 				["itemID"] = 154157,	-- Mistscale Greaves [H]
+				["g"] = {
+					{	-- Recipe: Imbued Mistscale Leggings
+						["itemID"] = 162505,	-- Recipe: Imbued Mistscale Leggings
+					},
+				},
 			},
 			{	-- Recurve Bow of the Strands [A]
 				["itemID"] = 161968,	-- Recurve Bow of the Strands [A]
@@ -1065,6 +1403,20 @@ _.Craftables =
 			},
 		}),
 		n(-190, { -- Tailoring
+			n(-37, {	-- Discovery
+				sp(257122, {	-- Embroidered Deep Sea Breeches
+					i(162509),	-- Pattern: Imbued Deep Sea Breeches
+				}),
+				sp(257118, {	-- Embroidered Deep Sea Gloves
+					i(162507),	-- Pattern: Imbued Deep Sea Gloves
+				}),
+				sp(257123, {	-- Imbued Deep Sea Breeches
+					i(162510),	-- Pattern: Emblazoned Deep Sea Breeches
+				}),
+				sp(257120, {	-- Imbued Deep Sea Gloves
+					i(162508),	-- Pattern: Emblazoned Deep Sea Gloves
+				}),
+			}),
 			i(154695),	-- Deep Sea Bag
 			i(162480),	-- Emblazoned Deep Sea Breeches [A]
 			i(162478),	-- Emblazoned Deep Sea Breeches [H]
@@ -1077,14 +1429,30 @@ _.Craftables =
 			i(154700),	-- Embroidered Deep Sea Cloak [H]
 			i(161985),	-- Embroidered Deep Sea Gloves [A]
 			i(154693),	-- Embroidered Deep Sea Gloves [H]
-			i(165377),	-- Enhanced Deep Sea Breeches [A]
-			i(165378),	-- Enhanced Deep Sea Breeches [H]
-			i(165402),	-- Enhanced Deep Sea Gloves [A]
-			i(165403),	-- Enhanced Deep Sea Gloves [H]
-			i(165385),	-- Fortified Deep Sea Breeches [A]
-			i(165386),	-- Fortified Deep Sea Breeches [H]
-			i(165410),	-- Fortified Deep Sea Gloves [A]
-			i(165411),	-- Fortified Deep Sea Gloves [H]
+			i(165377, {	-- Enhanced Deep Sea Breeches [A]
+				i(165655),	-- Pattern: Fortified Deep Sea Breeches
+			}),
+			i(165378, {	-- Enhanced Deep Sea Breeches [H]
+				i(165655),	-- Pattern: Fortified Deep Sea Breeches
+			}),
+			i(165402, {	-- Enhanced Deep Sea Gloves [A]
+				i(165652),	-- Pattern: Fortified Deep Sea Gloves
+			}),
+			i(165403, {	-- Enhanced Deep Sea Gloves [H]
+				i(165652),	-- Pattern: Fortified Deep Sea Gloves
+			}),
+			i(165385, {	-- Fortified Deep Sea Breeches [A]
+				i(165654),	-- Pattern: Tempered Deep Sea Breeches
+			}),
+			i(165386, {	-- Fortified Deep Sea Breeches [H]
+				i(165654),	-- Pattern: Tempered Deep Sea Breeches
+			}),
+			i(165410, {	-- Fortified Deep Sea Gloves [A]
+				i(165653),	-- Pattern: Tempered Deep Sea Gloves
+			}),
+			i(165411, {	-- Fortified Deep Sea Gloves [H]
+				i(165653),	-- Pattern: Tempered Deep Sea Gloves
+			}),
 			i(161996),	-- Honorable Combatant's Satin Belt [A]
 			i(159915),	-- Honorable Combatant's Satin Belt [H]
 			i(161993),	-- Honorable Combatant's Satin Boots [A]

@@ -731,6 +731,7 @@ _.Craftables =
 			{	-- Plans: Inlaid Mithril Cylinder
 				["itemID"] = 10713,	-- Plans: Inlaid Mithril Cylinder
 			},
+			i(10644),	-- Recipe: Goblin Rocket Fuel (Engineers make the recipe for alchemists)
 			i(18282),	-- Core Marksman Rifle
 			i(16004),	-- Dark Iron Rifle
 			i(4369),	-- Deadly Blunderbuss

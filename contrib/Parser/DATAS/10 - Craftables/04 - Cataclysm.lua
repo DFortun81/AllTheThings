@@ -331,11 +331,21 @@ _.Craftables =
 		n(-185, { 	-- Inscription
 		-- Reviewed and updated as of 11.21.2018 BfA 8.0
 			n(-491, { -- Tarot Cards
-				i(62048),	-- Darkmoon Card: Earthquake
-				i(62049),	-- Darkmoon Card: Hurricane
-				i(62051),	-- Darkmoon Card: Hurricane
-				i(62050),	-- Darkmoon Card: Tsunami
-				i(62047),	-- Darkmoon Card: Volcano
+				sp(86615, {	-- Darkmoon Card of Destruction
+					i(62046, {	-- Earthquake Deck
+						i(62048),	-- Darkmoon Card: Earthquake
+					}),
+					i(62045, {	-- Hurricane Deck
+						i(62049),	-- Darkmoon Card: Hurricane
+						i(62051),	-- Darkmoon Card: Hurricane
+					}),
+					i(62044, {	-- Tsunami Deck
+						i(62050),	-- Darkmoon Card: Tsunami
+					}),
+					i(62021, {	-- Volcanic Deck
+						i(62047),	-- Darkmoon Card: Volcano
+					}),
+				}),
 			}),
 			filter(1, {	-- Off-hand
 				i(62236),	-- Battle Tome

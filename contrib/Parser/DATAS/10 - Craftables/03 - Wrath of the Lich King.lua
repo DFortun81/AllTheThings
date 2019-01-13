@@ -5,6 +5,43 @@ _.Craftables =
 {
 	tier(3, { -- Wrath of the Lich King
 		n(-180, {	-- Alchemy
+--[[	20.Nov.2018 - automation should handle discovery. Leaving this here incase we change our mind later
+			recipe(60893, {	-- Northrend Alchemy Research
+				["description"] = "These recipes can be discovered by using this skill.",
+				["groups"] = {
+					recipe(53895),	-- Crazy Alchemist's Potion
+					recipe(60354),	-- Elixir of Accuracy
+					recipe(60365),	-- Elixir of Armor Piercing
+					recipe(60355),	-- Elixir of Deadly Strikes
+					recipe(60357),	-- Elixir of Expertise
+					recipe(60366),	-- Elixir of Lightning Speed
+					recipe(60356),	-- Elixir of Mighty Defense
+					recipe(56519),	-- Elixir of Mighty Mageblood
+					recipe(54220),	-- Elixir of Protection
+					recipe(62410),	-- Elixir of Water Walking
+					recipe(54221),	-- Potion of Speed
+					recipe(54222),	-- Potion of Wild Magic
+					recipe(53904),	-- Powerful Rejuvenation Potion
+				},
+			}),
+			n(-37, {	-- Discovery
+				["description"] = "These recipes can be discovered randomly by transmuting things. To be safe, you may want to reserve the cooldown for Wrath+ transmutations.",
+				["groups"] = {
+					recipe(53777),	-- Transmute: Eternal Air to Earth
+					recipe(53776),	-- Transmute: Eternal Air to Water
+					recipe(53781),	-- Transmute: Eternal Earth to Air
+					recipe(53782),	-- Transmute: Eternal Earth to Shadow
+					recipe(53775),	-- Transmute: Eternal Fire to Life
+					recipe(53774),	-- Transmute: Eternal Fire to Water
+					recipe(53773),	-- Transmute: Eternal Life to Fire
+					recipe(53771),	-- Transmute: Eternal Life to Shadow
+					recipe(53779),	-- Transmute: Eternal Shadow to Earth
+					recipe(53780),	-- Transmute: Eternal Shadow to Life
+					recipe(53783),	-- Transmute: Eternal Water to Air
+					recipe(53784),	-- Transmute: Eternal Water to Fire
+				},
+			}),
+]]--
 			filter(53, {	-- Trinkets
 				i(44323),	-- Indestructible Alchemist Stone
 				i(44322),	-- Mercurial Alchemist Stone
@@ -421,10 +458,20 @@ _.Craftables =
 		n(-185, { 	-- Inscription
 		-- Reviewed and updated as of 11.21.2018 BfA 8.0
 			n(-491, { -- Tarot Cards
-				i(42989),	-- Darkmoon Card: Berserker!
-				i(42987),	-- Darkmoon Card: Greatness
-				i(42988),	-- Darkmoon Card: Illusion
-				i(42990),	-- Darkmoon Card: Death
+				sp(59504, {	-- Darkmoon Card of the North
+					i(44276, {	-- Chaos Deck
+						i(42989),	-- Darkmoon Card: Berserker!
+					}),
+					i(44326, {	-- Nobles Deck
+						i(42987),	-- Darkmoon Card: Greatness
+					}),
+					i(44259, {	-- Prisms Deck
+						i(42988),	-- Darkmoon Card: Illusion
+					}),
+					i(44294, {	-- Undeath Deck
+						i(42990),	-- Darkmoon Card: Death
+					}),
+				}),
 			}),
 			filter(1, {	-- Off-hand
 				i(44210),	-- Faces of Doom
@@ -436,6 +483,9 @@ _.Craftables =
 				i(45853),	-- Rituals of the New Moon
 				i(45849),	-- Twilight Tome
 			}),
+			un(2, i(43361, {	-- Charred Glyph (Original Name unknown, maybe Glyph of Polymorph)
+				un(2, i(120139)),	-- Tome of Polymorph: Penguin
+			})),
 		}),
 		n(-186, { 	-- Jewelcrafting
 		-- Reviewed and updated as of 11.27.2018 BfA 8.0
