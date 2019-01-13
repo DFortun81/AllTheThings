@@ -5,64 +5,12 @@ _.Craftables =
 {
 	tier(2, { -- The Burning Crusade
 		n(-180, {	-- Alchemy
---[[	20.Nov.2018 - automation should handle discovery. Leaving this here incase we change our mind later
-			n(-37, {	-- Discovery
-				["description"] = "These recipes can be discovered by Transmuting Primals, Crafting Flasks or Elixirs and Potions. Although not confirmed, the type of discovery generally has a better chance to proc if you craft something of a similar type. (Primals for Primal Transmutes, Flasks for any of the missing flasks, etc)",
-				["groups"] = {
-					recipe(28590),	-- Flask of Blinding Light
-					recipe(28587),	-- Flask of Fortification
-					recipe(28588),	-- Flask of Mighty Versatility
-					recipe(28591),	-- Flask of Pure Death
-					recipe(28589),	-- Flask of Relentless Assault
-					recipe(28586),	-- Super Rejuvenation Potion
-					recipe(28585),	-- Transmute: Primal Earth to Life
-					recipe(28583),	-- Transmute: Primal Fire to Mana
-					recipe(28584),	-- Transmute: Primal Life to Earth
-					recipe(28582),	-- Transmute: Primal Mana to Fire
-					recipe(28580),	-- Transmute: Primal Shadow to Water
-					recipe(28581),	-- Transmute: Primal Water to Shadow
-				},
-			}),
-			recipe(28575, {	-- Major Arcane Protection Potion
-				["description"] = "Craft for a chance to Discover the Cauldron Recipe.",
-				["groups"] = {
-					recipe(41458),	-- Cauldron of Major Arcane Protection
-				},
-			}),
-			recipe(28562),	-- Major Dreamless Sleep Potion
-			recipe(28571, {	-- Major Fire Protection Potion
-				["description"] = "Craft for a chance to Discover the Cauldron Recipe.",
-				["groups"] = {
-					recipe(41500),	-- Cauldron of Major Fire Protection
-				},
-			}),
-			recipe(28572, {	-- Major Frost Protection Potion
-				["description"] = "Craft for a chance to Discover the Cauldron Recipe.",
-				["groups"] = {
-					recipe(41501),	-- Cauldron of Major Frost Protection
-				},
-			}),
-			recipe(28577),	-- Major Holy Protection Potion
-			recipe(28573, {	-- Major Nature Protection Potion
-				["description"] = "Craft for a chance to Discover the Cauldron Recipe.",
-				["groups"] = {
-					recipe(41502),	-- Cauldron of Major Nature Protection
-				},
-			}),
-			recipe(28576, {	-- Major Shadow Protection Potion
-				["description"] = "Craft for a chance to Discover the Cauldron Recipe.",
-				["groups"] = {
-					recipe(41503),	-- Cauldron of Major Shadow Protection
-				},
-			}),
-]]--
 			filter(53, {	-- Trinkets
-				i(13503, {	-- Alchemist Stone
-					i(35751),	-- Assassin's Alchemist Stone
-					i(35748),	-- Guardian's Alchemist Stone
-					i(35750),	-- Redeemer's Alchemist Stone
-					i(35749),	-- Sorcerer's Alchemist Stone
-				}),
+				i(13503),	-- Alchemist Stone
+				i(35751),	-- Assassin's Alchemist Stone
+				i(35748),	-- Guardian's Alchemist Stone
+				i(35750),	-- Redeemer's Alchemist Stone
+				i(35749),	-- Sorcerer's Alchemist Stone
 				i(31080),	-- Mercurial Stone
 			}),
 		}),

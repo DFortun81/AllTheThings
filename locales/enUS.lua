@@ -351,6 +351,7 @@ AllTheThings.Locales.enUS = {
 		[-33] = "Interface\\Icons\\trade_fishing", 								-- Fishing
 		[-34] = "Interface\\Icons\\Achievement_Reputation_06", 					-- World Quests
 		[-36] = "Interface\\Icons\\WoW_Token01", 								-- In-Game Shop
+		[-37] = "Interface\\Icons\\Garrison_Building_MageTower",				-- Discovery
 		[-38] = "Interface\\Icons\\achievement_general_workingasateam",			-- Professions
 		[-39] = "Interface\\Icons\\Inv_misc_book_17", 							-- Legacy Quest
 		[-40] = "Interface\\Icons\\Inv_misc_book_17", 							-- Legacy
