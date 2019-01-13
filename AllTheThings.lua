@@ -616,7 +616,7 @@ GameTooltipModel.TrySetModel = function(self, reference)
 			self.Model:Show();
 			self:Show();
 			return true;
-		elseif reference.unit then
+		elseif reference.unit and not reference.icon then
 			self.Model:SetFacing(reference.modelRotation and ((reference.modelRotation * math.pi) / 180) or MODELFRAME_DEFAULT_ROTATION);
 			self.Model:SetCamDistanceScale(reference.modelScale or 1);
 			self.Model:SetUnit(reference.unit);
@@ -969,7 +969,7 @@ local function SetPortraitIcon(self, data, x)
 			self:SetWidth(self:GetHeight());
 			self:SetTexCoord(0, 1, 0, 1);
 			return true;
-		elseif data.unit then
+		elseif data.unit and not data.icon then
 			SetPortraitTexture(self, data.unit);
 			self:SetWidth(self:GetHeight());
 			self:SetTexCoord(0, 1, 0, 1);
@@ -1238,6 +1238,8 @@ local function CreateObject(t)
 				t = app.CreateNPC(t.npcID or t.creatureID, t);
 			elseif t.questID then
 				t = app.CreateQuest(t.questID, t);
+			elseif t.unit then
+				t = app.CreateUnit(t.unit, t);
 			else
 				t = setmetatable({}, { __index = t });
 			end
@@ -1289,6 +1291,8 @@ local function MergeObject(g, t, index)
 			key = "creatureID";
 		elseif t.questID then
 			key = "questID";
+		elseif t.unit then
+			key = "unit";
 		end
 	end
 	for i,o in ipairs(g) do
@@ -3356,6 +3360,10 @@ end
 
 -- Character Class Lib
 (function()
+local class_id_cache = {};
+for i=1,GetNumClasses() do
+	class_id_cache[select(2, GetClassInfo(i))] = i;
+end
 local classIcons = {
 	[1] = "Interface\\Icons\\ClassIcon_Warrior",
 	[2] = "Interface\\Icons\\ClassIcon_Paladin",
@@ -3395,10 +3403,45 @@ app.BaseCharacterClass = {
 		end
 	end
 };
-end)();
 app.CreateCharacterClass = function(id, t)
 	return createInstance(constructor(id, t, "classID"), app.BaseCharacterClass);
 end
+app.BaseUnit = {
+	__index = function(t, key)
+		if key == "key" then
+			return "unit";
+		elseif key == "text" then
+			if t.isGUID then return nil; end
+			return UnitName(t.unit) or t.unit;
+		elseif key == "icon" then
+			if t.classID then return classIcons[t.classID]; end
+		elseif key == "isGUID" then
+			local a, b, c, d = strsplit("-", t.unit);
+			if a == "Player" then
+				local className, classId, raceName, raceId, gender, name, realm = GetPlayerInfoByGUID(t.unit);
+				if name then
+					if classId then t.classID = class_id_cache[classId]; end
+					if realm and realm ~= "" then name = name .. "-" .. realm; end
+					if t.classID then name = "|c" .. t.classColors.colorStr .. name .. "|r"; end
+					rawset(t, "text", name);
+				end
+				rawset(t, "isGUID", true);
+				return true;
+			else
+				rawset(t, "isGUID", false);
+			end
+		elseif key == "classColors" then
+			return RAID_CLASS_COLORS[select(2, GetClassInfo(t.classID))];
+		else
+			-- Something that isn't dynamic.
+			return table[key];
+		end
+	end
+};
+app.CreateUnit = function(unit, t)
+	return createInstance(constructor(unit, t, "unit"), app.BaseUnit);
+end
+end)();
 
 -- Currency Lib
 app.BaseCurrencyClass = {
