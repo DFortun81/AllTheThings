@@ -7,6 +7,7 @@ _.ExpansionFeatures =
 		m(582, {	-- Lunarfall
 			["groups"] = {	
 				n(-25, { 	-- Pet Battle
+					p(560),	-- Sea Gull
 					ach(9264),	-- Draenor Pet Brawler
 					qd(q(38299, { 	-- Critters of Draenor
 						i(122535, {	-- Traveler's Pet Supplies

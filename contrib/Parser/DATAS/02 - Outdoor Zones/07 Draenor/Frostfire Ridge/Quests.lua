@@ -321,6 +321,19 @@ _.Zones =
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 34230,	-- Eye Need That
 							},
+							{	-- Anglin' In Our Garrison
+								["questID"] = 36132,
+								["qg"] = 79896,	-- Mokugg Lagerpounder
+								["coord"] = { 55.7, 75.3, 525 },
+								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 36131,	-- Proving Your Worth
+								["requireSkill"] = 356,	-- Fishing
+								["groups"] = {
+									{
+										["buildingID"] = 64,	-- Fishing Shack
+									},
+								},
+							},
 							{	-- Articles of the Fallen
 								["questID"] = 32804,
 								["qg"] = 74223,	-- Kal'gor the Honorable
@@ -590,6 +603,14 @@ _.Zones =
 								["coord"] = { 21.0, 57.9, 525 },
 								["races"] = HORDE_ONLY,
 							},
+							{	-- Icespine Stingers
+								["questID"] = 36141,
+								["qg"] = 79896,	-- Mokugg Lagerpounder
+								["coord"] = { 55.7, 75.3, 525 },
+								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 34758,	-- Looking For Help
+								["requireSkill"] = 356,	-- Fishing
+							},
 							{	-- Icevine
 								["objectID"] = 231100,
 								["coord"] = { 54.2, 67.5, 525 },
@@ -723,6 +744,14 @@ _.Zones =
 								["qg"] = 78208,	-- Shadow Hunter Rala
 								["coord"] = { 52.6, 40.4, 525 },
 								["races"] = HORDE_ONLY,
+							},
+							{	-- Proving Your Worth
+								["questID"] = 36131,
+								["qg"] = 79896,	-- Mokugg Lagerpounder
+								["coord"] = { 55.7, 75.3, 525 },
+								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 36141,	-- Icespine Stingers
+								["requireSkill"] = 356,	-- Fishing
 							},
 							{	-- Return to the Pack
 								["questID"] = 33493,

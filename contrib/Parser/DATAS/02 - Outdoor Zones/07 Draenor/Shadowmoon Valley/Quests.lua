@@ -99,7 +99,19 @@ _.Zones =
 								i(107316),	-- Karabor Sage Leggings
 								i(107306),	-- Karabor Skirmisher Legguards
 								i(107301),	-- Rangari Initiate Leggings
-							}),			
+							}),
+							{	-- Anglin' In Our Garrison
+								["questID"] = 36202,
+								["qg"] = 84372,	-- Madari
+								["races"] = ALLIANCE_ONLY,
+								["sourceQuest"] = 36201,	-- Proving Your Worth
+								["requireSkill"] = 356,	-- Fishing
+								["groups"] = {
+									{
+										["buildingID"] = 64,	-- Fishing Shack
+									},
+								},
+							},
 							qa(34779, {	-- Circle the Wagon
 								i(117499),	-- Lunarlight Plate Stompers
 								i(117500),	-- Lunartanned Boots
@@ -157,11 +169,25 @@ _.Zones =
 								i(107861),	-- Karabor Sage Gloves
 								i(107305),	-- Karabor Skirmisher Gloves
 							}),
+							{	-- Moonshell Claws
+								["questID"] = 36199,
+								["qg"] = 84372,	-- Madari
+								["races"] = ALLIANCE_ONLY,
+								["sourceQuest"] = 34194,	-- Looking For Help
+								["requireSkill"] = 356,	-- Fishing
+							},
 							qa(33112, {	-- Ominous Portents
 								i(108972),	-- Blind Fel-Eye Ring
 								i(108975),	-- Fel-Blackened Ring
 								i(108976),	-- Sanctified Fel-Wrap Ring
 							}),
+							{	-- Proving Your Worth
+								["questID"] = 36201,
+								["qg"] = 84372,	-- Madari
+								["races"] = ALLIANCE_ONLY,
+								["sourceQuest"] = 36199,	-- Moonshell Claws
+								["requireSkill"] = 356,	-- Fishing
+							},
 							qa(34996, { -- Rotting Riverbeasts
 								i(113239),	-- Blademoon Chain Leggings
 								i(113237),	-- Blademoon Leggings

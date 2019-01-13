@@ -86,6 +86,12 @@ _.ExpansionFeatures =
 						["qg"] = 77209,	-- Baros Alexston
 						["races"] = ALLIANCE_ONLY,
 					}),
+					{	-- Looking For Help
+						["questID"] = 34758,
+						["qg"] = 77733,	-- Ron Ashton
+						["races"] = ALLIANCE_ONLY,
+						["requireSkill"] = 356,	-- Fishing
+					},
 					q(37433, { 	-- Proving Grounds
 						i(119463),
 						i(119458),
@@ -269,14 +275,73 @@ _.ExpansionFeatures =
 							i(118365),
 						}),
 					}),
-					n(-107, { 	-- Fishing Hut
-						i(112623, {			-- Pack of Fishing Supplies
-							dr(1.2, i(34834)),	-- Recipe: Captain Rumsey's Lager
-							dr(1.2, i(33820)),	-- Weather-Beaten Fishing Hat
-							dr(0.8, i(44983)),	-- Strand Crawler Pet
-							dr(0.7, i(45991)),	-- Bone Fishing Pole
-							dr(0.7, i(45992)),	-- Jeweled Fishing Pole
-						}),
+					n(-107, {	-- Fishing Hut
+						{	-- Abyssal Gulper Eel
+							["questID"] = 35075,
+							["qg"] = 77733,	-- Ron Ashton
+							["isDaily"] = true,
+							["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
+							["requireSkill"] = 356,	-- Fishing
+							["groups"] = {
+								i(112623, {	-- Pack of Fishing Supplies
+									i(34834),	-- Recipe: Captain Rumsey's Lager
+									i(33820),	-- Weather-Beaten Fishing Hat
+									i(44983),	-- Strand Crawler Pet
+									i(45991),	-- Bone Fishing Pole
+									i(45992),	-- Jeweled Fishing Pole
+								}),
+							},
+						},
+						{	-- Blackwater Whiptail
+							["questID"] = 35074,
+							["qg"] = 77733,	-- Ron Ashton
+							["isDaily"] = true,
+							["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
+							["requireSkill"] = 356,	-- Fishing
+							["groups"] = {
+								i(112623),	-- Pack of Fishing Supplies
+							},
+						},
+						{	-- Blind Lake Sturgeon
+							["questID"] = 35073,
+							["qg"] = 77733,	-- Ron Ashton
+							["isDaily"] = true,
+							["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
+							["requireSkill"] = 356,	-- Fishing
+							["groups"] = {
+								i(112623),	-- Pack of Fishing Supplies
+							},
+						},
+						{	-- Fat Sleeper
+							["questID"] = 35072,
+							["qg"] = 77733,	-- Ron Ashton
+							["isDaily"] = true,
+							["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
+							["requireSkill"] = 356,	-- Fishing
+							["groups"] = {
+								i(112623),	-- Pack of Fishing Supplies
+							},
+						},
+						{	-- Fire Ammonite
+							["questID"] = 35066,
+							["qg"] = 77733,	-- Ron Ashton
+							["isDaily"] = true,
+							["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
+							["requireSkill"] = 356,	-- Fishing
+							["groups"] = {
+								i(112623),	-- Pack of Fishing Supplies
+							},
+						},
+						{	-- Jawless Skulker
+							["questID"] = 35071,
+							["qg"] = 77733,	-- Ron Ashton
+							["isDaily"] = true,
+							["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
+							["requireSkill"] = 356,	-- Fishing
+							["groups"] = {
+								i(112623),	-- Pack of Fishing Supplies
+							},
+						},
 					}),
 					n(-152, { 	-- Garrison Campaign
 						q(35195, {
