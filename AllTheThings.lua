@@ -10480,9 +10480,13 @@ app.events.PLAYER_LOGIN = function()
 	local reagentCache = app.GetDataMember("Reagents");
 	if reagentCache then
 		local craftedItem = { {}, {[31890] = 1} };	-- Blessings Deck
-		for i,itemID in ipairs({ 31882, 31889, 31885, 31885, 31884, 31887, 31886, 31883 }) do
-			reagentCache[itemID] = craftedItem;
-		end
+		for i,itemID in ipairs({ 31882, 31889, 31888, 31885, 31884, 31887, 31886, 31883 }) do reagentCache[itemID] = craftedItem; end
+		craftedItem = { {}, {[31907] = 1} };	-- Furies Deck
+		for i,itemID in ipairs({ 31901, 31909, 31908, 31904, 31903, 31906, 31905, 31902 }) do reagentCache[itemID] = craftedItem; end
+		craftedItem = { {}, {[31914] = 1} };	-- Lunacy Deck
+		for i,itemID in ipairs({ 31910, 31918, 31917, 31913, 31912, 31916, 31915, 31911 }) do reagentCache[itemID] = craftedItem; end
+		craftedItem = { {}, {[31891] = 1} };	-- Storms Deck
+		for i,itemID in ipairs({ 31892, 31900, 31899, 31895, 31894, 31898, 31896, 31893 }) do reagentCache[itemID] = craftedItem; end
 	end
 	app:GetDataCache();
 	Push(app, "WaitOnMountData", function()

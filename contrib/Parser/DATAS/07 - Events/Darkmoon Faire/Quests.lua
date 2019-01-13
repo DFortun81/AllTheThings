@@ -49,17 +49,22 @@ _.WorldEvents =
 								},
 							},
 						},
-						{	-- Darkmoon Blessings Deck
-							["questID"] = 10938,	-- Darkmoon Blessings Deck
-							["qg"] = 14847,			-- Professor Thaddeus
-							["coords"] = {
-								{ 51.91, 60.93, 407 },
-							},
-							["repeatable"] = true,
-							["lvl"] = 70,
+						{
+							["itemID"] = 31890,	-- Blessings Deck
 							["g"] = {
-								{	-- Darkmoon Card: Crusade
-									["itemID"] = 31856,	-- Darkmoon Card: Crusade
+								{	-- Darkmoon Blessings Deck
+									["questID"] = 10938,	-- Darkmoon Blessings Deck
+									["qg"] = 14847,			-- Professor Thaddeus
+									["coords"] = {
+										{ 51.91, 60.93, 407 },
+									},
+									["repeatable"] = true,
+									["lvl"] = 70,
+									["g"] = {
+										{	-- Darkmoon Card: Crusade
+											["itemID"] = 31856,	-- Darkmoon Card: Crusade
+										},
+									},
 								},
 							},
 						},
@@ -119,17 +124,22 @@ _.WorldEvents =
 								},
 							},
 						},
-						{	-- Darkmoon Furies Deck
-							["questID"] = 10940,	-- Darkmoon Furies Deck
-							["qg"] = 14847,			-- Professor Thaddeus
-							["coords"] = {
-								{ 51.91, 60.93, 407 },
-							},
-							["repeatable"] = true,
-							["lvl"] = 70,
+						{	-- Furies Deck
+							["itemID"] = 31907,	-- Furies Deck
 							["g"] = {
-								{	-- Darkmoon Card: Vengeance
-									["itemID"] = 31858,	-- Darkmoon Card: Vengeance
+								{	-- Darkmoon Furies Deck
+									["questID"] = 10940,	-- Darkmoon Furies Deck
+									["qg"] = 14847,			-- Professor Thaddeus
+									["coords"] = {
+										{ 51.91, 60.93, 407 },
+									},
+									["repeatable"] = true,
+									["lvl"] = 70,
+									["g"] = {
+										{	-- Darkmoon Card: Vengeance
+											["itemID"] = 31858,	-- Darkmoon Card: Vengeance
+										},
+									},
 								},
 							},
 						},
@@ -150,17 +160,22 @@ _.WorldEvents =
 								},
 							},
 						},
-						{	-- Darkmoon Lunacy Deck
-							["questID"] = 10941,	-- Darkmoon Lunacy Deck
-							["qg"] = 14847,			-- Professor Thaddeus
-							["coords"] = {
-								{ 51.91, 60.93, 407 },
-							},
-							["repeatable"] = true,
-							["lvl"] = 70,
+						{	-- Lunacy Deck
+							["itemID"] = 31914,	-- Lunacy Deck
 							["g"] = {
-								{	-- Darkmoon Card: Madness
-									["itemID"] = 31859,	-- Darkmoon Card: Madness
+								{	-- Darkmoon Lunacy Deck
+									["questID"] = 10941,	-- Darkmoon Lunacy Deck
+									["qg"] = 14847,			-- Professor Thaddeus
+									["coords"] = {
+										{ 51.91, 60.93, 407 },
+									},
+									["repeatable"] = true,
+									["lvl"] = 70,
+									["g"] = {
+										{	-- Darkmoon Card: Madness
+											["itemID"] = 31859,	-- Darkmoon Card: Madness
+										},
+									},
 								},
 							},
 						},
@@ -243,17 +258,22 @@ _.WorldEvents =
 								},
 							},
 						},
-						{	-- Darkmoon Storms Deck
-							["questID"] = 10939,	-- Darkmoon Storms Deck
-							["qg"] = 14847,			-- Professor Thaddeus
-							["coords"] = {
-								{ 51.91, 60.93, 407 },
-							},
-							["repeatable"] = true,
-							["lvl"] = 70,
+						{	-- Storms Deck
+							["itemID"] = 31891,	-- Storms Deck
 							["g"] = {
-								{	-- Darkmoon Card: Wrath
-									["itemID"] = 31857,	-- Darkmoon Card: Wrath
+								{	-- Darkmoon Storms Deck
+									["questID"] = 10939,	-- Darkmoon Storms Deck
+									["qg"] = 14847,			-- Professor Thaddeus
+									["coords"] = {
+										{ 51.91, 60.93, 407 },
+									},
+									["repeatable"] = true,
+									["lvl"] = 70,
+									["g"] = {
+										{	-- Darkmoon Card: Wrath
+											["itemID"] = 31857,	-- Darkmoon Card: Wrath
+										},
+									},
 								},
 							},
 						},
