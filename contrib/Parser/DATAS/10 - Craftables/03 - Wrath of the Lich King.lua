@@ -5,43 +5,6 @@ _.Craftables =
 {
 	tier(3, { -- Wrath of the Lich King
 		n(-180, {	-- Alchemy
---[[	20.Nov.2018 - automation should handle discovery. Leaving this here incase we change our mind later
-			recipe(60893, {	-- Northrend Alchemy Research
-				["description"] = "These recipes can be discovered by using this skill.",
-				["groups"] = {
-					recipe(53895),	-- Crazy Alchemist's Potion
-					recipe(60354),	-- Elixir of Accuracy
-					recipe(60365),	-- Elixir of Armor Piercing
-					recipe(60355),	-- Elixir of Deadly Strikes
-					recipe(60357),	-- Elixir of Expertise
-					recipe(60366),	-- Elixir of Lightning Speed
-					recipe(60356),	-- Elixir of Mighty Defense
-					recipe(56519),	-- Elixir of Mighty Mageblood
-					recipe(54220),	-- Elixir of Protection
-					recipe(62410),	-- Elixir of Water Walking
-					recipe(54221),	-- Potion of Speed
-					recipe(54222),	-- Potion of Wild Magic
-					recipe(53904),	-- Powerful Rejuvenation Potion
-				},
-			}),
-			n(-37, {	-- Discovery
-				["description"] = "These recipes can be discovered randomly by transmuting things. To be safe, you may want to reserve the cooldown for Wrath+ transmutations.",
-				["groups"] = {
-					recipe(53777),	-- Transmute: Eternal Air to Earth
-					recipe(53776),	-- Transmute: Eternal Air to Water
-					recipe(53781),	-- Transmute: Eternal Earth to Air
-					recipe(53782),	-- Transmute: Eternal Earth to Shadow
-					recipe(53775),	-- Transmute: Eternal Fire to Life
-					recipe(53774),	-- Transmute: Eternal Fire to Water
-					recipe(53773),	-- Transmute: Eternal Life to Fire
-					recipe(53771),	-- Transmute: Eternal Life to Shadow
-					recipe(53779),	-- Transmute: Eternal Shadow to Earth
-					recipe(53780),	-- Transmute: Eternal Shadow to Life
-					recipe(53783),	-- Transmute: Eternal Water to Air
-					recipe(53784),	-- Transmute: Eternal Water to Fire
-				},
-			}),
-]]--
 			filter(53, {	-- Trinkets
 				i(44323),	-- Indestructible Alchemist Stone
 				i(44322),	-- Mercurial Alchemist Stone
