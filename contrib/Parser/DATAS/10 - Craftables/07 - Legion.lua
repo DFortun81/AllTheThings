@@ -5,96 +5,6 @@ _.Craftables =
 {
 	tier(7, { -- Legion
 		n(-180, {	-- Alchemy
-			n(-37, {	-- Discovery
-				["groups"] = {
-					spell(188299, {	-- Ancient Healing Potion (Rank 2)
-						i(127935),	-- Recipe: Ancient Healing Potion (Rank 3)
-					}),
-					spell(188301, {	-- Ancient Mana Potion
-						i(127918),	-- Recipe: Ancient Mana Potion (Rank 2)
-						i(127936),	-- Recipe: Ancient Mana Potion (Rank 3)
-					}),
-					spell(188304, {	-- Ancient Rejuvenation Potion
-						i(127919),	-- Recipe: Ancient Rejuvenation Potion (Rank 2)
-						i(127937),	-- Recipe: Ancient Rejuvenation Potion (Rank 3)
-					}),
-					spell(251646, {	-- Astral Healing Potion
-						i(152617),	-- Recipe: Astral Healing Potion (Rank 2)
-					}),
-					spell(188313, {	-- Avalanche Elixir
-						i(127922),	-- Recipe: Avalanche Elixir (Rank 2)
-						i(127940),	-- Recipe: Avalanche Elixir (Rank 3)
-					}),
-					spell(188307, {	-- Draught of Raw Magic
-						i(127920),	-- Recipe: Draught of Raw Magic (Rank 2)
-						i(127938),	-- Recipe: Draught of Raw Magic (Rank 3)
-					}),
-					spell(188347, {	-- Flask of Ten Thousand Scars
-						i(127951),	-- Recipe: Flask of Ten Thousand Scars (Rank 3)
-					}),
-					spell(188344, {	-- Flask of the Countless Armies (Rank 2)
-						i(127950),	-- Recipe: Flask of the Countless Armies (Rank 3)
-					}),
-					spell(188341, {	-- Flask of the Seventh Demon (Rank 2)
-						i(127949),	-- Recipe: Flask of the Seventh Demon (Rank 3)
-					}),
-					spell(188338, {	-- Flask of the Whispered Pact (Rank 2)
-						i(127948),	-- Recipe: Flask of the Whispered Pact (Rank 3)
-					}),
-					spell(188323, {	-- Infernal Alchemist Stone
-						i(127943),	-- Recipe: Infernal Alchemist Stone (Rank 3)
-					}),
-					spell(188335, {	-- Leytorrent Potion (Rank 2)
-						i(127947),	-- Recipe: Leytorrent Potion (Rank 3)
-					}),
-					spell(247620, {	-- Lightblood Elixir (Rank 2)
-						i(151659),	-- Recipe: Lightblood Elixir (Rank 3)
-					}),
-					spell(188326, {	-- Potion of Deadly Grace (Rank 2)
-						i(127944),	-- Recipe: Potion of Deadly Grace (Rank 3)
-					}),
-					spell(188329, {	-- Potion of the Old War (Rank 2)
-						i(127945),	-- Recipe: Potion of Old War (Rank 3)
-					}),
-					spell(188316, {	-- Skaggldrynk
-						i(127923),	-- Recipe: Skaggldrynk (Rank 2)
-						i(127941),	-- Recipe: Skaggldrynk (Rank 3)
-					}),
-					spell(188319, {	-- Skystep Potion
-						i(127924),	-- Recipe: Skystep Potion (Rank 2)
-						i(127942),	-- Recipe: Skystep Potion (Rank 3)
-					}),
-					spell(188350, {	-- Spirit Cauldron (Rank 2)
-						i(127952),	-- Recipe: Spirit Cauldron (Rank 3)
-					}),
-					spell(188310, {	-- Sylvan Elixir
-						i(127921),	-- Recipe: Sylvan Elixir (Rank 2)
-						i(127939),	-- Recipe: Sylvan Elixir (Rank 3)
-					}),
-					spell(247690, {	-- Tears of the Naaru (Rank 2)
-						i(151705),	-- Recipe: Tears of the Naaru (Rank 3)
-					}),
-					spell(188332, {	-- Unbending Potion (Rank 2)
-						i(127946),	-- Recipe: Unbending Potion (Rank 3)
-					}),
-					spell(188800, {	-- Wild Transformation
-						["groups"] = {
-							i(128210),	-- Recipe: Wild Transmutation (Rank 2)
-							i(128211),	-- Recipe: Wild Transmutation (Rank 3)
-							recipe(213257),	-- Transmute: Blood of Sargeras
-							recipe(213252),	-- Transmute: Cloth to Herbs
-							recipe(213249),	-- Transmute: Cloth to Skins
-							recipe(213254),	-- Transmute: Fish to Gems
-							recipe(213255),	-- Transmute: Meat to Pants
-							recipe(213256),	-- Transmute: Meat to Pet
-							recipe(213248),	-- Transmute: Ore to Cloth
-							recipe(213251),	-- Transmute: Ore to Herbs
-							recipe(213253),	-- Transmute: Skins to Herbs
-						},
-					}),
-				},
-				["requireSkill"] = 171,	-- Alchemy
-			}),
 			n(-25, { -- Pet Battles
 				i(137599, { -- Pulsating Sac
 					i(137608, { -- Growling Sac
@@ -264,20 +174,10 @@ _.Craftables =
 		n(-185, { -- Inscription
 		-- Reviewed and updated as of 11.21.2018 BfA 8.0
 			n(-491, { -- Tarot Cards
-				sp(191659, {	-- Darkmoon Card of the Legion
-					sp(191654, {	-- Dominion Deck
-						i(128705),	-- Darkmoon Deck: Dominion
-					}),
-					sp(191655, {	-- Hellfire Deck
-						i(128709),	-- Darkmoon Deck: Hellfire
-					}),
-					sp(191657, {	-- Immortality Deck
-						i(128711),	-- Darkmoon Deck: Immortality
-					}),
-					sp(191656, {	-- Promises Deck
-						i(128710),	-- Darkmoon Deck: Promises
-					}),
-				}),
+				i(128705),	-- Darkmoon Deck: Dominion
+				i(128709),	-- Darkmoon Deck: Hellfire
+				i(128711),	-- Darkmoon Deck: Immortality
+				i(128710),	-- Darkmoon Deck: Promises
 			}),
 			filter(102, {	-- Toy
 				i(129211),	-- Steamy Romance Novel Kit
@@ -470,8 +370,6 @@ _.Craftables =
 			}),
 		}),
 		n(-190, { -- Tailoring
-			--n(-37, {	-- Discovery
-			--}),
 			i(126998),	-- Imbued Silkweave Hood
 			i(126990),	-- Silkweave Hood
 			i(146666),	-- Celumbra, the Night's Dichotomy

@@ -246,8 +246,11 @@ _.Instances =
 					}),
 				},
 				["lvl"] = 83,
-				["mapID"] = 297,
-				["maps"] = { 298, 299 },
+				["maps"] = {
+					297,	-- The Vault of Lights
+					298,	-- Tomb of the Earthrager
+					299,	-- The Four Seats
+				},
 			}),	
 		},					
 		["tierID"] = 4
