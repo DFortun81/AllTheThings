@@ -159,6 +159,10 @@ _.Instances =
 						cr(96759, e(1663, {	-- Helya
 							ach(10809),	-- Mythic: Maw of Souls
 							ach(10412, {	-- Poor Unfortunate Souls
+								["maps"] = { 751, 752, 753, 754, 755, 756 },	-- Black Rook Hold
+								["crs"] = {
+									98806,	-- Soul Essence
+								},
 								["groups"] = {
 									p(1930),	-- Lagan
 								},
