@@ -156,6 +156,12 @@ _.ExpansionFeatures =
 						},
 						["description"] = "Halloween Decorations must be up in a Tier 3 garrison",
 					},
+					{	-- All Hands on Deck
+						["questID"] = 38574,
+						["qg"] = 92400,	-- Vol'jin
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 38573,	-- Nothing Remains
+					},
 					{	-- Ashran Appearance
 						["questID"] = 36706,
 						["qg"] = 78466,	-- Gazlowe
@@ -203,12 +209,28 @@ _.ExpansionFeatures =
 							},
 						},
 					},
+					{	-- Command Board
+						["objectID"] = 232416,	-- 233291 and 237022 also valid depending on garrison level
+						["races"] = HORDE_ONLY,
+						["groups"] = {
+							{	-- The Secrets of Gorgrond
+								["questID"] = 35557,
+								["races"] = HORDE_ONLY,
+								["isBreadcrumb"] = true,
+							},
+						},
+					},
 					{	-- Den of Wolves
 						["questID"] = 34379,
 						["qg"] = 76411,	-- Farseer Drek'Thar
 						["coord"] = { 49.7, 49.5 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 34775,	-- Mission Probable
+					},
+					{	-- Feeding An Army
+						["questID"] = 36344,
+						["qg"] = 85048,	-- Farmer Lok'lub
+						["races"] = HORDE_ONLY,
 					},
 					qh(34364, {	-- For the Horde
 						i(111535),
@@ -220,6 +242,11 @@ _.ExpansionFeatures =
 						i(111540),
 						i(111542),
 					}),	
+					{	-- Garrison Campaign: Awakening
+						["questID"] = 36136,
+						["qg"] = 78487,	-- Rokhan
+						["races"] = HORDE_ONLY,
+					},
 					{	-- Gems of the Apexis
 						["questID"] = 39175,
 						["qg"] = 78466,	-- Gazlowe
@@ -1945,6 +1972,25 @@ _.ExpansionFeatures =
 						["races"] = HORDE_ONLY,
 					},
 					n(-99, {	-- Stables
+						{	-- Besting a Boar
+							["questID"] = 36944,
+							["races"] = HORDE_ONLY,
+						},
+						{	-- Boar Training: Riplash
+							["questID"] = 37032,
+							["qg"] = 86979,	-- Tormak the Scarred
+							["races"] = HORDE_ONLY,
+						},
+						{	-- Clefthoof Training: Riplash
+							["questID"] = 37050,
+							["qg"] = 86979,	-- Tormak the Scarred
+							["races"] = HORDE_ONLY,
+						},
+						{	-- Talbuk Training: Riplash
+							["questID"] = 37095,
+							["qg"] = 87242,	-- Sage Paluna
+							["races"] = HORDE_ONLY,
+						},
 						qh(37041, {
 							i(116675),	-- Mount
 						}),
@@ -1964,6 +2010,10 @@ _.ExpansionFeatures =
 							i(116784),	-- Mount
 						}),
 					}),
+					{	-- The Mysterious Flask
+						["questID"] = 35058,
+						["races"] = HORDE_ONLY,
+					},
 					{	-- Things Are Not Goren Our Way
 						["questID"] = 35154,
 						["qg"] = 81688,	-- Gorsol
@@ -2015,6 +2065,14 @@ _.ExpansionFeatures =
 							})),
 						}),
 					}),
+					{	-- Treasure Contract: The Infected Orc
+						["questID"] = 37941,
+						["qgs"] = {
+							89793,	-- Harrison Jones
+							92223,	-- Surveyor Daltry
+						},
+						["isDaily"] = true,
+					},
 					n(-125, {	-- War Mill
 						qh(37043, {
 							i(118372),
@@ -2180,6 +2238,15 @@ _.ExpansionFeatures =
 						["isBreadcrumb"] = true,
 						["coords"] = {
 							{ 51.2, 51.3 },	-- lvl 1
+						},
+					},
+					{	-- We Need a Shipwright
+						["questID"] = 38568,
+						["qg"] = 92400,	-- Vol'jin
+						["races"] = HORDE_ONLY,
+						["sourceQuests"] = {
+							38567,	-- Garrison Campaign: War Council
+							40417,	-- To Tanaan!
 						},
 					},
 					{	-- Vouchsafe Our Arrival

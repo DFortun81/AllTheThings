@@ -10,6 +10,9 @@ _.Zones =
 				["mapID"] = 535,	-- Talador
 				["g"] = {
 					n(-17, { 	-- Quests
+					--[[
+						36426 - Dueling Orbs - triggered when completing "Mysterious Ring" (34463)
+					]]--
 						i(122293, {	-- Trans-Dimensional Bird Whistle
 							["groups"] = {
 								{

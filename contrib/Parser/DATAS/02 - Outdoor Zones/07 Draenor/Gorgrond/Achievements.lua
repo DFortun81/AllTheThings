@@ -12,8 +12,35 @@ _.Zones =
 					{	-- Achievements
 						["npcID"] = -4,	-- Achievements
 						["g"] = {
+							{	-- Ancient No More
+								["achievementID"] = 9678,
+								["g"] = {
+									crit(1),	-- Swift Onyx Flayer
+									crit(2),	-- Mogarnago
+									crit(3),	-- Protectors of the Grove
+									crit(4),	-- Venolasix
+									crit(5),	-- Alkali
+									crit(6),	-- Depthroot
+									crit(7),	-- Firestarter Grash
+									crit(8),	-- Grove Warden Yal
+									crit(9),	-- Hunter Bal'ra
+								},
+							},
 							{	-- Burn It to the Ground (Everbloom Wilds)
 								["achievementID"] = 9667,	-- Burn It to the Ground (Everbloom Wilds)
+							},
+							{	-- Gorgrond Monster Hunter
+								["achievementID"] = 9400,
+								["g"] = {
+									crit(1),	-- Biolante
+									crit(2),	-- Roardan the Sky Terror
+									crit(3),	-- Crater Lord Igneous
+									crit(4),	-- Dessicus of the Dead Pools
+									crit(5),	-- Khargax the Devourer
+									crit(6),	-- Erosian the Violent
+									crit(7),	-- Charl Doomwing
+									crit(8),	-- Fungal Praetorian
+								},
 							},
 							{	-- In Plain Sight (The Pit)
 								["achievementID"] = 9656,	-- In Plain Sight (The Pit)

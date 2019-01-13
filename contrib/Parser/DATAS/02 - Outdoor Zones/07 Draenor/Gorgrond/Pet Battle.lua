@@ -25,6 +25,15 @@ _.Zones =
 							p(1464), 	-- Twilight Wasp
 							p(410), 	-- Wharf Rat
 							p(1463), 	-- Wood Wasp
+							{	-- Cymre Brightblade
+								["questID"] = 37201,
+								["qg"] = 83837,	-- Cymre Brightblade
+								["coord"] = { 51.1, 70.6, 543 },
+								["isDaily"] = true,
+								["groups"] = {
+									i(116415),	-- Shiny Pet Charm x2
+								},
+							},
 						},
 					},
 				},

@@ -9,7 +9,12 @@ _.Zones =
 			{	-- Gorgrond
 				["mapID"] = 543,	-- Gorgrond
 				["maps"] = {
+					544,	-- Moira's Reach
+					545,	-- Moira's Reach
+					546,	-- Fissure of Fury
+					547,	-- Fissure of Fury
 					548,    -- Cragplume Cauldron
+					549,	-- Cragplume Cauldron
 				},
 				["lvl"] = 92,	
 				["achievementID"] = 8939,

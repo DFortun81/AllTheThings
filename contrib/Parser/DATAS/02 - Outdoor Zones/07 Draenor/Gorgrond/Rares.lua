@@ -41,7 +41,29 @@ _.Zones =
 								["g"] = {	
 									i(118222),	-- Spirit of Bashiok Toy
 								},
-							}, 
+							},
+							{	-- Basten
+								["npcID"] = 86257,	-- Protectors of the Grove (Basten, Nultra, Valstil)
+								["questID"] = 37369,
+								["modelID"]	= 57964,
+								["isDaily"] = true,
+								["description"] = "Kill Basten LAST or you will not be able to loot him.",
+								["coords"] = {
+									{ 69.2, 44.6, 543 },
+								},
+								["g"] = {
+									{	-- Protectors of the Grove
+										["achievementID"] = 9678,	-- Ancient No More (Everbloom Wilds)
+										["criteriaID"] = 3,			-- Protectors of the Grove
+									},
+									{	-- Botani Camouflage Toy
+										["itemID"] = 119432,	-- Botani Camouflage Toy
+									},
+									{	-- Grovetender's Cummerbund
+										["itemID"] = 119357,	-- Grovetender's Cummerbund
+									},
+								},
+							},
 							{	-- Berthora
 								["npcID"] = 85907,	-- Berthora
 								["questID"] = 36597,
@@ -69,17 +91,7 @@ _.Zones =
 										["itemID"] = 119228,	-- Ro'gor's Slippers of Silence
 									},
 								},
-							},
-							{	-- Brokor's Sack
-								["objectID"] = 235859,	-- Brokor's Sack
-								["questID"] = 36506,
-								["coords"] = {
-									{ 41.7, 52.9, 543 },
-								},
-								["g"] = {
-									i(118702), -- Brokor's Walking Stick
-								},
-							},							
+							},						
 							{	-- Char the Burning
 								["npcID"]= 82311,	-- Char the Burning
 								["questID"] = 35503,
@@ -124,81 +136,6 @@ _.Zones =
 									},
 								},
 							}, 
-							{	-- Discarded Pack
-								["objectID"] = 236141,	-- Discarded Pack
-								["questID"] = 36625,
-								["coords"] = {
-									{ 42.4, 83.5, 543 },
-								},
-								["g"] = {
-									-- Weapons
-									i(116508),	-- Creeperclaw Axe
-									i(116510),	-- Creeperclaw Bow
-									i(116509),	-- Creeperclaw Broadaxe
-									i(116511),	-- Creeperclaw Crossbow
-									i(116512),	-- Creeperclaw Dagger
-									i(116523),	-- Creeperclaw Greatsword
-									i(116515),	-- Creeperclaw Gun
-									i(116518),	-- Creeperclaw Hammer
-									i(116514),	-- Creeperclaw Knuckles
-									i(116516),	-- Creeperclaw Mace
-									i(116519),	-- Creeperclaw Spear
-									i(116521),	-- Creeperclaw Staff
-									i(116520),	-- Creeperclaw Staff
-									i(116522),	-- Creeperclaw Sword
-									i(116517),	-- Evermorn Scepter
-									i(116513),	-- Evermorn Spellblade
-									i(116703),	-- Evermorn Twig
-									i(116524),	-- Evermorn Wand
-									i(106496),	-- Shardback Shield
-									-- Head
-									i(106518),	-- Highland Helm
-									i(106507),	-- Mandragoran Cowl
-									i(106492),	-- Shardback Helm
-									i(106502),	-- Steamscar Hood
-									-- Neck
-									i(116680),	-- Evermorn Amulet
-									-- Shoulders
-									i(106520),	-- Highland Spaulders
-									i(106512),	-- Mandragoran Shoulderpads
-									i(106494),	-- Shardback Pauldrons
-									i(106504),	-- Steamscar Shoulders
-									-- Bacj
-									i(116702),	-- Evermorn Cloak
-									-- Chest
-									i(106521),	-- Highland Vest
-									i(106510),	-- Mandragoran Robe
-									i(106489),	-- Shardback Breastplate
-									i(106503),	-- Steamscar Jerkin
-									-- Wrist
-									i(106515),	-- Highland Bracers
-									i(106513),	-- Mandragoran Wristwraps
-									i(106497),	-- Shardback Vambraces
-									i(106498),	-- Steamscar Bindings
-									-- Hands
-									i(106516),	-- Highland Gauntlets
-									i(106508),	-- Mandragoran Handwraps						
-									i(106490),	-- Shardback Gauntlets
-									i(106501),	-- Steamscar Gloves
-									-- Waist
-									i(106514),	-- Highland Belt
-									i(106506),	-- Mandragoran Cord
-									i(106491),	-- Shardback Girdle
-									i(106505),	-- Steamscar Waistband
-									-- Legs
-									i(106519),	-- Highland Legguards
-									i(106509),	-- Mandragoran Leggings
-									i(106493),	-- Shardback Legplates
-									i(106500),	-- Steamscar Britches
-									-- Feet
-									i(106517),	-- Highland Greaves
-									i(106511),	-- Mandragoran Sandals
-									i(106495),	-- Shardback Sabatons
-									i(106499),	-- Steamscar Boots
-									-- Finger
-									i(116704),	-- Evermorn Ring
-								},
-							},
 							{	-- Durp the Hated	**Coords uncofirmed, relied on wowhead**
 								["npcID"] = 86571,	-- Durp the Hated
 								["questID"] = 37366,
@@ -236,81 +173,6 @@ _.Zones =
 									{ 46.9, 21.2, 543 },
 								},
 								["description"] = "Click on Edge of Reality, get teleported, click on egg for mount.|nIf you are on a realm not of your own when you click on Edge of Reality the mount will be mailed to you as you will not be teleported. |r",
-							},					
-							{	-- Evermorn Supply Cache
-								["objectID"] = 236178,	-- Evermorn Supply Cache
-								["questID"] = 36658,
-								["coords"] = {
-									{ 41.8, 78.1, 543 },
-								},
-								["g"] = {
-									-- Weapons
-									i(116508),	-- Creeperclaw Axe
-									i(116510),	-- Creeperclaw Bow
-									i(116509),	-- Creeperclaw Broadaxe
-									i(116511),	-- Creeperclaw Crossbow
-									i(116512),	-- Creeperclaw Dagger
-									i(116523),	-- Creeperclaw Greatsword
-									i(116515),	-- Creeperclaw Gun
-									i(116518),	-- Creeperclaw Hammer
-									i(116514),	-- Creeperclaw Knuckles
-									i(116516),	-- Creeperclaw Mace
-									i(116519),	-- Creeperclaw Spear
-									i(116521),	-- Creeperclaw Staff
-									i(116520),	-- Creeperclaw Staff
-									i(116522),	-- Creeperclaw Sword
-									i(116517),	-- Evermorn Scepter
-									i(116513),	-- Evermorn Spellblade
-									i(116703),	-- Evermorn Twig
-									i(116524),	-- Evermorn Wand
-									i(106496),	-- Shardback Shield
-									-- Head
-									i(106518),	-- Highland Helm
-									i(106507),	-- Mandragoran Cowl
-									i(106492),	-- Shardback Helm
-									i(106502),	-- Steamscar Hood
-									-- Neck
-									i(116680),	-- Evermorn Amulet
-									-- Shoulders
-									i(106520),	-- Highland Spaulders
-									i(106512),	-- Mandragoran Shoulderpads
-									i(106494),	-- Shardback Pauldrons
-									i(106504),	-- Steamscar Shoulders
-									-- Bacj
-									i(116702),	-- Evermorn Cloak
-									-- Chest
-									i(106521),	-- Highland Vest
-									i(106510),	-- Mandragoran Robe
-									i(106489),	-- Shardback Breastplate
-									i(106503),	-- Steamscar Jerkin
-									-- Wrist
-									i(106515),	-- Highland Bracers
-									i(106513),	-- Mandragoran Wristwraps
-									i(106497),	-- Shardback Vambraces
-									i(106498),	-- Steamscar Bindings
-									-- Hands
-									i(106516),	-- Highland Gauntlets
-									i(106508),	-- Mandragoran Handwraps						
-									i(106490),	-- Shardback Gauntlets
-									i(106501),	-- Steamscar Gloves
-									-- Waist
-									i(106514),	-- Highland Belt
-									i(106506),	-- Mandragoran Cord
-									i(106491),	-- Shardback Girdle
-									i(106505),	-- Steamscar Waistband
-									-- Legs
-									i(106519),	-- Highland Legguards
-									i(106509),	-- Mandragoran Leggings
-									i(106493),	-- Shardback Legplates
-									i(106500),	-- Steamscar Britches
-									-- Feet
-									i(106517),	-- Highland Greaves
-									i(106511),	-- Mandragoran Sandals
-									i(106495),	-- Shardback Sabatons
-									i(106499),	-- Steamscar Boots
-									-- Finger
-									i(116704),	-- Evermorn Ring
-								},
 							},
 							{	-- Firestarter Grash
 								["npcID"] = 88580,	-- Firestarter Grash
@@ -346,20 +208,20 @@ _.Zones =
 								["questID"] = 36391,
 								["coords"] = { 
 									{ 43.5, 48.1, 543 },	-- Cave Entrance
-									{ 41.8, 45.6, 543 },	-- Gelgor
+									{ 32.6, 38.2, 546 },	-- Gelgor
 								},
-								["description"] = "Cave entrance is first set of coords, rare is at second set in the cave.",
+								["description"] = "Located in the cave",
 								["g"] = {
 									i(118230),	-- Smoldering Cerulean Stone
 								},
 							},
 							{	-- Glut
 								["npcID"] = 80868,	-- Glut
+								["questID"] = 36204,
 								["coords"] = { 
 									{ 44.5, 50.8, 543 },	-- Cave Entrance
 									{ 46.0, 50.8, 543 },	-- Glut
 								},
-								["description"] = "Cave entrance is first set of coords, rare is at second set in the cave.",
 								["g"] = {
 									i(118229),	-- Resonant Hidecrystal of the Gorger
 								},
@@ -368,8 +230,10 @@ _.Zones =
 								["npcID"] = 78269,	-- Gnarljaw
 								["questID"] = 37413,
 								["isDaily"] = true,
+								["description"] = "At the bottom of the cave.",
 								["coords"] = {
-									{ 52.8, 53.6, 543 },
+									{ 53.9, 55.7, 543 },	-- Cave Entrance
+									{ 54.8, 35.6, 549 },
 								},
 								["g"] = {	
 									i(119397), -- Gnarled Goren Jaw
@@ -382,7 +246,6 @@ _.Zones =
 									{ 46.4, 45.4, 543 },	-- Cave Entrance
 									{ 46.8, 43.2, 543 },	-- Greldrok the Cunning
 								},
-								["description"] = "Cave entrance is first set of coords, rare is at second set in the cave.",
 								["g"] = {	
 									i(118210),	-- Greldrok's Facesmasher
 								},						
@@ -470,8 +333,10 @@ _.Zones =
 								["npcID"] = 78260,	-- King Slime
 								["questID"] = 37412,
 								["isDaily"] = true,
+								["description"] = "At the bottom of the cave.",
 								["coords"] = {
-									{ 52.2, 55.6, 543 },
+									{ 53.9, 55.7, 543 },	-- Cave Entrance
+									{ 41.6, 75.7, 549 },
 								},
 								["g"] = {	
 									i(119351),	-- Slime Coated Kingscloak
@@ -521,13 +386,13 @@ _.Zones =
 									},
 								},
 							}, 
-							{	-- Morgo Kain	**Coords uncofirmed, relied on wowhead**
+							{	-- Morgo Kain
 								["npcID"] = 86582,	-- Morgo Kain
 								["questID"] = 37364,
 								["isDaily"] = true,
 								["coords"] = {
-									{ 46.6, 23.0, 543 },
-									{ 45.8, 24.0, 543 },
+									{ 46.6, 23.2, 543 },
+									{ 45.8, 24.2, 543 },
 								},
 								["g"] = {
 									{	-- Morgo Kain
@@ -551,91 +416,6 @@ _.Zones =
 									i(118208), -- Broodmother's Kiss
 								},						
 							}, 
-							{	-- Odd Skull
-								["objectID"] = 236715,	-- Odd Skull
-								["questID"] = 36509,
-								["coords"] = {
-									{ 52.5, 66.9, 543 },
-								},
-								["g"] = {
-									i(118717),	-- Beastskull Vessel
-								},
-							},		
-							{	-- Pile of Rubble
-								["objectID"] = 233792,	-- Pile of Rubble
-								["questID"] = 36118,
-								["coords"] = {
-									{ 43.9, 70.6, 543 },
-								},
-								["g"] = {
-									-- Weapons
-									i(116508),	-- Creeperclaw Axe
-									i(116510),	-- Creeperclaw Bow
-									i(116509),	-- Creeperclaw Broadaxe
-									i(116511),	-- Creeperclaw Crossbow
-									i(116512),	-- Creeperclaw Dagger
-									i(116523),	-- Creeperclaw Greatsword
-									i(116515),	-- Creeperclaw Gun
-									i(116518),	-- Creeperclaw Hammer
-									i(116514),	-- Creeperclaw Knuckles
-									i(116516),	-- Creeperclaw Mace
-									i(116519),	-- Creeperclaw Spear
-									i(116521),	-- Creeperclaw Staff
-									i(116520),	-- Creeperclaw Staff
-									i(116522),	-- Creeperclaw Sword
-									i(116517),	-- Evermorn Scepter
-									i(116513),	-- Evermorn Spellblade
-									i(116703),	-- Evermorn Twig
-									i(116524),	-- Evermorn Wand
-									i(106496),	-- Shardback Shield
-									-- Head
-									i(106518),	-- Highland Helm
-									i(106507),	-- Mandragoran Cowl
-									i(106492),	-- Shardback Helm
-									i(106502),	-- Steamscar Hood
-									-- Neck
-									i(116680),	-- Evermorn Amulet
-									-- Shoulders
-									i(106520),	-- Highland Spaulders
-									i(106512),	-- Mandragoran Shoulderpads
-									i(106494),	-- Shardback Pauldrons
-									i(106504),	-- Steamscar Shoulders
-									-- Bacj
-									i(116702),	-- Evermorn Cloak
-									-- Chest
-									i(106521),	-- Highland Vest
-									i(106510),	-- Mandragoran Robe
-									i(106489),	-- Shardback Breastplate
-									i(106503),	-- Steamscar Jerkin
-									-- Wrist
-									i(106515),	-- Highland Bracers
-									i(106513),	-- Mandragoran Wristwraps
-									i(106497),	-- Shardback Vambraces
-									i(106498),	-- Steamscar Bindings
-									-- Hands
-									i(106516),	-- Highland Gauntlets
-									i(106508),	-- Mandragoran Handwraps						
-									i(106490),	-- Shardback Gauntlets
-									i(106501),	-- Steamscar Gloves
-									-- Waist
-									i(106514),	-- Highland Belt
-									i(106506),	-- Mandragoran Cord
-									i(106491),	-- Shardback Girdle
-									i(106505),	-- Steamscar Waistband
-									-- Legs
-									i(106519),	-- Highland Legguards
-									i(106509),	-- Mandragoran Leggings
-									i(106493),	-- Shardback Legplates
-									i(106500),	-- Steamscar Britches
-									-- Feet
-									i(106517),	-- Highland Greaves
-									i(106511),	-- Mandragoran Sandals
-									i(106495),	-- Shardback Sabatons
-									i(106499),	-- Steamscar Boots
-									-- Finger
-									i(116704),	-- Evermorn Ring
-								},
-							},
 							{	-- Poundfist	**Coords uncofirmed, relied on wowhead**
 								["npcID"] = 50985,	-- Poundfist
 								["coords"] = {
@@ -647,28 +427,6 @@ _.Zones =
 								},
 								["g"] = {
 									i(116792),	-- Sunhide Gronnling Mount
-								},
-							}, 
-							{	-- Protectors of the Grove (Basten, Nultra, Valstil)
-								["npcID"] = 86257,	-- Protectors of the Grove (Basten, Nultra, Valstil)
-								["questID"] = 37369,
-								["modelID"]	= 57964,
-								["isDaily"] = true,
-								["description"] = "Kill Basten LAST or you will not be able to loot him.",
-								["coords"] = {
-									{ 69.2, 44.6, 543 },
-								},
-								["g"] = {
-									{	-- Protectors of the Grove
-										["achievementID"] = 9678,	-- Ancient No More (Everbloom Wilds)
-										["criteriaID"] = 3,			-- Protectors of the Grove
-									},
-									{	-- Botani Camouflage Toy
-										["itemID"] = 119432,	-- Botani Camouflage Toy
-									},
-									{	-- Grovetender's Cummerbund
-										["itemID"] = 119357,	-- Grovetender's Cummerbund
-									},
 								},
 							}, 
 							{	-- Riptar
@@ -691,169 +449,13 @@ _.Zones =
 									i(118211),	-- Rolkor's Rage
 								},
 							},
-							{	-- Sasha's Secret Stash
-								["objectID"] = 236149,	-- Sasha's Secret Stash
-								["questID"] = 36631,
-								["coord"] = { 39.0, 68.1 },
-								["g"] = {
-									-- Weapons
-									i(116508),	-- Creeperclaw Axe
-									i(116510),	-- Creeperclaw Bow
-									i(116509),	-- Creeperclaw Broadaxe
-									i(116511),	-- Creeperclaw Crossbow
-									i(116512),	-- Creeperclaw Dagger
-									i(116523),	-- Creeperclaw Greatsword
-									i(116515),	-- Creeperclaw Gun
-									i(116518),	-- Creeperclaw Hammer
-									i(116514),	-- Creeperclaw Knuckles
-									i(116516),	-- Creeperclaw Mace
-									i(116519),	-- Creeperclaw Spear
-									i(116521),	-- Creeperclaw Staff
-									i(116520),	-- Creeperclaw Staff
-									i(116522),	-- Creeperclaw Sword
-									i(116517),	-- Evermorn Scepter
-									i(116513),	-- Evermorn Spellblade
-									i(116703),	-- Evermorn Twig
-									i(116524),	-- Evermorn Wand
-									i(106496),	-- Shardback Shield
-									-- Head
-									i(106518),	-- Highland Helm
-									i(106507),	-- Mandragoran Cowl
-									i(106492),	-- Shardback Helm
-									i(106502),	-- Steamscar Hood
-									-- Neck
-									i(116680),	-- Evermorn Amulet
-									-- Shoulders
-									i(106520),	-- Highland Spaulders
-									i(106512),	-- Mandragoran Shoulderpads
-									i(106494),	-- Shardback Pauldrons
-									i(106504),	-- Steamscar Shoulders
-									-- Bacj
-									i(116702),	-- Evermorn Cloak
-									-- Chest
-									i(106521),	-- Highland Vest
-									i(106510),	-- Mandragoran Robe
-									i(106489),	-- Shardback Breastplate
-									i(106503),	-- Steamscar Jerkin
-									-- Wrist
-									i(106515),	-- Highland Bracers
-									i(106513),	-- Mandragoran Wristwraps
-									i(106497),	-- Shardback Vambraces
-									i(106498),	-- Steamscar Bindings
-									-- Hands
-									i(106516),	-- Highland Gauntlets
-									i(106508),	-- Mandragoran Handwraps						
-									i(106490),	-- Shardback Gauntlets
-									i(106501),	-- Steamscar Gloves
-									-- Waist
-									i(106514),	-- Highland Belt
-									i(106506),	-- Mandragoran Cord
-									i(106491),	-- Shardback Girdle
-									i(106505),	-- Steamscar Waistband
-									-- Legs
-									i(106519),	-- Highland Legguards
-									i(106509),	-- Mandragoran Leggings
-									i(106493),	-- Shardback Legplates
-									i(106500),	-- Steamscar Britches
-									-- Feet
-									i(106517),	-- Highland Greaves
-									i(106511),	-- Mandragoran Sandals
-									i(106495),	-- Shardback Sabatons
-									i(106499),	-- Steamscar Boots
-									-- Finger
-									i(116704),	-- Evermorn Ring			
-								},
-							},	
-							{	-- Sniper's Crossbow
-								["objectID"] = 236158,	-- Sniper's Crossbow
-								["questID"] = 36634,
-								["coords"] = {
-									{ 45.0, 42.6, 543 },
-								},
-								["g"] = {
-									i(118713), -- Iron Lookout's Arbalest
-								},
-							},
-							{	-- Stashed Emergency Rucksack
-								["objectID"] = 236092,	-- Stashed Emergency Rucksack
-								["questID"] = 36604,
-								["coords"] = {
-									{ 48.1, 93.4, 543 },
-								},
-								["g"] = {	
-									-- Weapons
-									i(116508),	-- Creeperclaw Axe
-									i(116510),	-- Creeperclaw Bow
-									i(116509),	-- Creeperclaw Broadaxe
-									i(116511),	-- Creeperclaw Crossbow
-									i(116512),	-- Creeperclaw Dagger
-									i(116523),	-- Creeperclaw Greatsword
-									i(116515),	-- Creeperclaw Gun
-									i(116518),	-- Creeperclaw Hammer
-									i(116514),	-- Creeperclaw Knuckles
-									i(116516),	-- Creeperclaw Mace
-									i(116519),	-- Creeperclaw Spear
-									i(116521),	-- Creeperclaw Staff
-									i(116520),	-- Creeperclaw Staff
-									i(116522),	-- Creeperclaw Sword
-									i(116517),	-- Evermorn Scepter
-									i(116513),	-- Evermorn Spellblade
-									i(116703),	-- Evermorn Twig
-									i(116524),	-- Evermorn Wand
-									i(106496),	-- Shardback Shield
-									-- Head
-									i(106518),	-- Highland Helm
-									i(106507),	-- Mandragoran Cowl
-									i(106492),	-- Shardback Helm
-									i(106502),	-- Steamscar Hood
-									-- Neck
-									i(116680),	-- Evermorn Amulet
-									-- Shoulders
-									i(106520),	-- Highland Spaulders
-									i(106512),	-- Mandragoran Shoulderpads
-									i(106494),	-- Shardback Pauldrons
-									i(106504),	-- Steamscar Shoulders
-									-- Bacj
-									i(116702),	-- Evermorn Cloak
-									-- Chest
-									i(106521),	-- Highland Vest
-									i(106510),	-- Mandragoran Robe
-									i(106489),	-- Shardback Breastplate
-									i(106503),	-- Steamscar Jerkin
-									-- Wrist
-									i(106515),	-- Highland Bracers
-									i(106513),	-- Mandragoran Wristwraps
-									i(106497),	-- Shardback Vambraces
-									i(106498),	-- Steamscar Bindings
-									-- Hands
-									i(106516),	-- Highland Gauntlets
-									i(106508),	-- Mandragoran Handwraps						
-									i(106490),	-- Shardback Gauntlets
-									i(106501),	-- Steamscar Gloves
-									-- Waist
-									i(106514),	-- Highland Belt
-									i(106506),	-- Mandragoran Cord
-									i(106491),	-- Shardback Girdle
-									i(106505),	-- Steamscar Waistband
-									-- Legs
-									i(106519),	-- Highland Legguards
-									i(106509),	-- Mandragoran Leggings
-									i(106493),	-- Shardback Legplates
-									i(106500),	-- Steamscar Britches
-									-- Feet
-									i(106517),	-- Highland Greaves
-									i(106511),	-- Mandragoran Sandals
-									i(106495),	-- Shardback Sabatons
-									i(106499),	-- Steamscar Boots
-									-- Finger
-									i(116704),	-- Evermorn Ring			
-								},
-							},
 							{	-- Stompalupagus
 								["npcID"] = 86520,	-- Stompalupagus
 								["questID"] = 36837,
 								["coords"] = {
 									{ 55.0, 71.0, 543 },
+									{ 54.3, 72.0, 543 },
+									{ 53.9, 73.4, 543 },
 								},
 								["g"] = {	
 									i(118228),	-- Smashalupagus
@@ -869,26 +471,6 @@ _.Zones =
 									i(118224),	-- Ogre Brewing Kit
 								},
 							},
-							{	-- Strange Looking Dagger
-								["objectID"] = 231069,	-- Strange Looking Dagger
-								["questID"] = 34940,
-								["coords"] = {
-									{ 53.0, 80.0, 543 },
-								},
-								["g"] = {
-									i(118718),	-- Pale Bloodthief Dagger
-								},
-							},	
-							{	-- Strange Spore
-								["objectID"] = 237511,	-- Strange Spore
-								["questID"] = 37249,
-								["coords"] = {
-									{ 57.1, 65.3, 543 },
-								},
-								["g"] = {
-									i(118106),	-- Crimson Spore Pet
-								},
-							},							
 							{	-- Sulfurious
 								["npcID"] = 80725,	-- Sulfurious
 								["questID"] = 36394,
@@ -932,6 +514,7 @@ _.Zones =
 								["questID"] = 36794,
 								["coords"] = {
 									{ 63.0, 61.6, 543 },
+									{ 63.9, 61.8, 543 },
 									{ 65.4, 60.8, 543 },
 								},
 								["g"] = {		
@@ -961,33 +544,6 @@ _.Zones =
 									{	-- Hydratooth Dagger
 										["itemID"] = 119395,	-- Hydratooth Dagger
 									},
-								},
-							},
-							{	-- Vindicator's Hammer
-								["objectID"] = 236147,	-- Vindicator's Hammer
-								["questID"] = 36628,
-								["coords"] = {
-									{ 59.5, 63.7, 543 },
-								},
-								["g"] = {
-									i(118712), -- Huurand's Huge Hammer
-								},
-							},	
-							{	-- Warm Goren Egg
-								["objectID"] = 234054,	-- Warm Goren Egg
-								["questID"] = 36203,
-								["coords"] = {
-									{ 48.9, 47.3, 543 },
-								},
-								["modelScale"] = 2,
-								["model"] = "World\\Expansion06\\Doodads\\Dungeon\\Doodads\\7du_Nightmare_Egg01.mdx",
-								["g"] = {
-									i(118705, {	-- Warm Goren Egg
-										["g"] = {	
-											i(118716),	-- Goren Garb Toy
-										},
-										["description"] = "Egg hatches into a toy after 7 days.",	
-									}),
 								},
 							},
 						},

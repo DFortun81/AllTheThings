@@ -15,9 +15,12 @@ _.ExpansionFeatures =
 						},
 						["description"] = "Halloween Decorations must be up in a Tier 3 garrison",
 					},
+					{	-- All Hands on Deck
+						["questID"] = 38259,
+						["qg"] = 92219,	-- King Varian Wrynn
+						["races"] = ALLIANCE_ONLY,
+					},
 					q(36624, { 	-- Ashran Appearance
-						["groups"] = {
-						},
 						["qg"] = 79953, -- Lieutennt Thorn
 					}),
 					{	-- Bigger is Better
@@ -49,6 +52,11 @@ _.ExpansionFeatures =
 							},
 						},
 					},
+					{	-- Feeding An Army
+						["questID"] = 36272,
+						["qg"] = 84524,	-- Homer Stonefield
+						["races"] = ALLIANCE_ONLY,
+					},
 					q(34583, { 	-- For the Alliance
 						i(108908),
 						i(108909),
@@ -59,6 +67,16 @@ _.ExpansionFeatures =
 						i(108918),
 						i(108919),
 					}),
+					{	-- Garrison Campaign: Awakening
+						["questID"] = 36134,
+						["qg"] = 81492,	-- Bodrick Grey
+						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- Garrison Campaign: Crows In The Field
+						["questID"] = 34409,
+						["qg"] = 88112,	-- Morthis Whisperwing
+						["races"] = ALLIANCE_ONLY,
+					},
 					q(39195, {	-- Gems of the Apexis
 						["groups"] = {
 							recipe(187639),	-- Immaculate Versatility Taladite
@@ -1631,6 +1649,25 @@ _.ExpansionFeatures =
 						}),
 					}),
 					n(-99, { 	-- Stables
+						{	-- Besting a Boar
+							["questID"] = 36913,
+							["races"] = ALLIANCE_ONLY,
+						},
+						{	-- Boar Training: Riplash
+							["questID"] = 36995,
+							["qg"] = 86973,	-- Keegan Firebeard
+							["races"] = ALLIANCE_ONLY,
+						},
+						{	-- Clefthoof Training: Riplash
+							["questID"] = 36985,
+							["qg"] = 86973,	-- Keegan Firebeard
+							["races"] = ALLIANCE_ONLY,
+						},
+						{	-- Talbuk Training: Riplash
+							["questID"] = 36973,
+							["qg"] = 86974,	-- Fanny Firebeard
+							["races"] = ALLIANCE_ONLY,
+						},
 						q(37004, {
 							i(116675), -- Mount
 						}),
@@ -1650,6 +1687,15 @@ _.ExpansionFeatures =
 							i(116784), -- Mount
 						}),
 					}),
+					{	-- The Secrets of Gorgrond
+						["questID"] = 35556,
+						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- These Look Familiar...
+						["questID"] = 34028,
+						["qg"] = 77217,	-- Jr. Surveyor Dorn
+						["races"] = ALLIANCE_ONLY,
+					},
 					{	-- Things Are Not Goren Our Way
 						["questID"] = 34192,
 						["qg"] = 77730,	-- Timothy Leens
@@ -1699,6 +1745,23 @@ _.ExpansionFeatures =
 							})),
 						}),
 					}),
+					{	-- Treasure Contract: The Infected Orc
+						["questID"] = 37941,
+						["qgs"] = {
+							89793,	-- Harrison Jones
+							92223,	-- Surveyor Daltry
+						},
+						["isDaily"] = true,
+					},
+					{	-- We Need a Shipwright
+						["questID"] = 38257,
+						["qg"] = 92219,	-- King Varian Wrynn
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuests"] = {
+							38253,	-- Garrison Campaign: War Council
+							40418,	-- To Tanaan!
+						},
+					},
 				}),
 			},
 		}),

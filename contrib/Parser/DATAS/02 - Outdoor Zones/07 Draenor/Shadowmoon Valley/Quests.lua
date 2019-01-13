@@ -222,6 +222,11 @@ _.Zones =
 								["races"] = ALLIANCE_ONLY,
 								["requireSkill"] = 164, -- Blacksmithing
 							}),
+							{	-- The Secrets of Gorgrond
+								["questID"] = 33533,
+								["qg"] = 73395,	-- Yrel
+								["races"] = ALLIANCE_ONLY,
+							},
 							qa(34792, { -- The Traitor's True Name
 								i(113234),	-- Karabor Honor Guard Wristwraps
 								i(113233),	-- Karabor Sage Wristwraps
