@@ -7,26 +7,66 @@ _.GearSets =
 		n(-154, {	-- Level 110
 			["groups"] = {
 				n(-143, { -- Lightdrinker 
+					["classes"] = { 4 },
 					["groups"] = {
-						i(153959),	-- Lightdrinker Dagger
-						i(153960),	-- Lightdrinker Shiv
-						i(153961),	-- Lightdrinker Sword (in crate)
-						i(153954),	-- Lightdrinker Hood
-						i(153946),	-- Lightdrinker Choker
-						i(153956),	-- Lightdrinker Shoulders
-						i(153945),	-- Lightdrinker Cloak of Rage
-						i(153951),	-- Lightdrinker Jerkin
-						i(153958),	-- Lightdrinker Bindings
-						i(153953),	-- Lightdrinker Gloves
-						i(153957),	-- Lightdrinker Waistband
-						i(153955),	-- Lightdrinker Britches
-						i(153952),	-- Lightdrinker Boots
-						i(153948),	-- Lightdrinker Band of Onslaught
-						i(153949),	-- Lightdrinker Ring of Onslaught
-						i(153947),	-- Lightdrinker Idol of Rage
-						i(153950),	-- Lightdrinker Stone of Rage
-					},
-					["classes"] = { 4 }
+						{	-- Adventurer's Footlocker
+							["itemID"] = 160439,	-- Adventurer's Footlocker
+							["g"] = {
+								{	-- Lightdrinker Sword
+									["itemID"] = 153961,	-- Lightdrinker Sword
+								},
+							},
+						},
+						{	-- Lightdrinker Dagger
+							["itemID"] = 153959,	-- Lightdrinker Dagger
+						},
+						{	-- Lightdrinker Shiv
+							["itemID"] = 153960,	-- Lightdrinker Shiv
+						},
+						
+						{	-- Lightdrinker Hood
+							["itemID"] = 153954,	-- Lightdrinker Hood
+						},
+						{	-- Lightdrinker Choker
+							["itemID"] = 153946,	-- Lightdrinker Choker
+						},
+						{	-- Lightdrinker Shoulders
+							["itemID"] = 153956,	-- Lightdrinker Shoulders
+						},
+						{	-- Lightdrinker Cloak of Rage
+							["itemID"] = 153945,	-- Lightdrinker Cloak of Rage
+						},
+						{	-- Lightdrinker Jerkin
+							["itemID"] = 153951,	-- Lightdrinker Jerkin
+						},
+						{	-- Lightdrinker Bindings
+							["itemID"] = 153958,	-- Lightdrinker Bindings
+						},
+						{	-- Lightdrinker Gloves
+							["itemID"] = 153953,	-- Lightdrinker Gloves
+						},
+						{	-- Lightdrinker Waistband
+							["itemID"] = 153957,	-- Lightdrinker Waistband
+						},
+						{	-- Lightdrinker Britches
+							["itemID"] = 153955,	-- Lightdrinker Britches
+						},
+						{	-- Lightdrinker Boots
+							["itemID"] = 153952,	-- Lightdrinker Boots
+						},
+						{	-- Lightdrinker Band of Onslaught
+							["itemID"] = 153948,	-- Lightdrinker Band of Onslaught
+						},
+						{	-- Lightdrinker Ring of Onslaught
+							["itemID"] = 153949,	-- Lightdrinker Ring of Onslaught
+						},
+						{	-- Lightdrinker Idol of Rage
+							["itemID"] = 153947,	-- Lightdrinker Idol of Rage
+						},
+						{	-- Lightdrinker Stone of Rage
+							["itemID"] = 153950,	-- Lightdrinker Stone of Rage
+						},
+					},					
 				}),
 			},
 		}),
