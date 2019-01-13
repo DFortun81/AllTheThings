@@ -25,7 +25,8 @@ local C_ToyBox_GetToyInfo = C_ToyBox.GetToyInfo;
 local C_ToyBox_GetToyLink = C_ToyBox.GetToyLink;
 local C_Map_GetMapDisplayInfo = C_Map.GetMapDisplayInfo;
 local C_Map_GetBestMapForUnit = C_Map.GetBestMapForUnit;
-local SetPortraitTexture = _G["SetPortraitTextureFromCreatureDisplayID"];
+local SetPortraitTexture = _G["SetPortraitTexture"];
+local SetPortraitTextureFromDisplayID = _G["SetPortraitTextureFromCreatureDisplayID"];
 local EJ_GetCreatureInfo = _G["EJ_GetCreatureInfo"];
 local EJ_GetEncounterInfo = _G["EJ_GetEncounterInfo"];
 local GetAchievementCriteriaInfo = _G["GetAchievementCriteriaInfo"];
@@ -615,6 +616,12 @@ GameTooltipModel.TrySetModel = function(self, reference)
 			self.Model:Show();
 			self:Show();
 			return true;
+		elseif reference.unit then
+			self.Model:SetFacing(reference.modelRotation and ((reference.modelRotation * math.pi) / 180) or MODELFRAME_DEFAULT_ROTATION);
+			self.Model:SetCamDistanceScale(reference.modelScale or 1);
+			self.Model:SetUnit(reference.unit);
+			self.Model:Show();
+			self:Show();
 		end
 		
 		local s = reference.s;
@@ -958,7 +965,12 @@ local function SetPortraitIcon(self, data, x)
 	if GetDataMember("ShowModels") then
 		local displayID = GetDisplayID(data);
 		if displayID then
-			SetPortraitTexture(self, displayID);
+			SetPortraitTextureFromDisplayID(self, displayID);
+			self:SetWidth(self:GetHeight());
+			self:SetTexCoord(0, 1, 0, 1);
+			return true;
+		elseif data.unit then
+			SetPortraitTexture(self, data.unit);
 			self:SetWidth(self:GetHeight());
 			self:SetTexCoord(0, 1, 0, 1);
 			return true;
