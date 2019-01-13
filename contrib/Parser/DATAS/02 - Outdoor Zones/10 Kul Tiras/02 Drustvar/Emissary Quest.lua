@@ -17,6 +17,9 @@ _.Zones =
 							["coords"] = {
 								{ 37.89, 49.01, 896 },
 							},
+							["g"] = {
+								i(163857),	-- Azerite Armor Cache
+							},
 						}),
 						{	-- Supplies from the Order of Embers
 							["questID"] = 54456,	-- Supplies from the Order of Embers

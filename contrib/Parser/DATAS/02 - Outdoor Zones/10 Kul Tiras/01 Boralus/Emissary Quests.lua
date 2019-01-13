@@ -12,22 +12,7 @@ _.Zones =
 					["groups"] = {
 						q(50605, { 	-- Alliance War Effort [7th Legion]
 							["groups"] = bubbleDown({["modID"] = 5}, {
-								i(163857, {	-- Azerite Armor Cache
-									["groups"] = {
-										i(163339),	-- 7th Legionnaire's Hood
-										i(163337),	-- 7th Legionnaire's Amice
-										i(163248),	-- 7th Legionnaire's Robes
-										i(163380),	-- 7th Legionnaire's Visage
-										i(163377),	-- 7th Legionnaire's Leather Mantle
-										i(163251),	-- 7th Legionnaire's Vest
-										i(163394),	-- 7th Legionnaire's Helm
-										i(163389),	-- 7th Legionnaire's Monnion
-										i(163398),	-- 7th Legionnaire's Chainmail
-										i(163410),	-- 7th Legionnaire's Headpiece
-										i(163405),	-- 7th Legionnaire's Shoulderplates
-										i(163418),	-- 7th Legionnaire's Chestguard
-									},
-								}),
+								i(163857),	-- Azerite Armor Cache
 								i(163891),	-- 7th Legionnaire's Aegis
 								i(163884),	-- 7th Legionnaire's Battle Hammer
 								i(163892),	-- 7th Legionnaire's Censer
@@ -91,86 +76,7 @@ _.Zones =
 						}),
 						q(50599, {	-- Proudmoore Admiralty
 							["groups"] = {
-								i(163857, {	-- Azerite Armor Cache
-									["groups"] = {
-										--      C L O T H     A R M O R      --
-										i(158001),	-- Bloodbough Cowl*
-										i(158003),	-- Bloodbough Mantle*
-										i(158026),	-- Bloodbough Garmets*
-										i(157873),	-- Fen Spirit Headdress*
-										i(157875),	-- Fen Spirit Mantle*
-										i(157898),	-- Fen Spirit Wraps*
-										i(157937),	-- Sandspinner Headdress
-										i(157939),	-- Sandspinner Mantle
-										i(157962),	-- Sandspinner Vestments
-										i(157905),	-- Shadra Silk Headband
-										i(157907),	-- Shadra Silk Mantle
-										i(157930),	-- Shadra Silk Robes
-										i(157969),	-- Siresong Headdress
-										i(157971),	-- Siresong Amice
-										i(157994),	-- Siresong Garmets
-										i(158033),	-- Squallshaper Hood
-										i(158035),	-- Squallshaper Mantle
-										i(158058),	-- Squallshaper Vestments
-										--    L E A T H E R     A R M O R    --
-										i(157881),	-- Blood Bog Headcover
-										i(157883),	-- Blood Bog Shoulderguards
-										i(157878),	-- Blood Bog Wraps
-										i(157945),	-- Deathsnap Hood
-										i(157947),	-- Deathsnap Shoulderguards
-										i(157942),	-- Deathsnap Jerkin
-										i(158041),	-- Fairweather Helm
-										i(158043),	-- Fairweather Shoulderpads
-										i(158038),	-- Fairweather Tunic
-										i(157913),	-- Gonk Outrunner Mask
-										i(157915),	-- Gonk Outrunner Shoulderguards
-										i(157910),	-- Gonk Outrunner Vest
-										i(158009),	-- Gravethorn Hood
-										i(158011),	-- Gravethorn Shoulderguards
-										i(158006),	-- Gravethron Jerkin
-										i(157977),	-- Seafarer Headcover
-										i(157979),	-- Seafarer Shoulderguards
-										i(157974),	-- Seafarer Vest
-										--      M A I L      A R M O R      --
-										i(158017),	-- Ashenwood Helm
-										i(158019),	-- Ashenwood Spaulders
-										i(158014),	-- Ashenwood Hauberk
-										i(157953),	-- Bilewing Helmet
-										i(157955),	-- Bilewing Mantle
-										i(157950),	-- Bilewing Jerkin
-										i(157985),	-- Crosswind Helmet
-										i(157987),	-- Crosswind Shoulderguards
-										i(157982),	-- Crosswind Chainmail
-										i(158049),	-- Deaadwash Headguard
-										i(158051),	-- Deadwash Mantle
-										i(158046),	-- Deadwash Hauberk
-										i(157889),	-- Dreadmire Helm
-										i(157891),	-- Dreadmire Shoulderguards
-										i(157886),	-- Dreadmire Vest
-										i(157921),	-- Pa'ku Windrider Helm
-										i(157923),	-- Pa'ku Windrider Shoulderguards
-										i(157918),	-- Pa'ku Windrider Jerkin
-										--      P L A T E     A R M O R      --
-										i(158025),	-- Bleakweald Greathelm*
-										i(158028),	-- Bleakweald Pauldrons*
-										i(158022),	-- Bleakweald Chestguard*
-										i(157897),	-- Bone-Fetished Faceguard*
-										i(157900),	-- Bone-Fetished Shoulderplates*
-										i(157894),	-- Bone-Fetished Chestplate*
-										i(157961),	-- Dunecrawler Faceguard
-										i(157964),	-- Dunecrawler Spaulders
-										i(157958),	-- Dunecrawler Chestplate
-										i(157993),	-- Harbormaster Faceguard*
-										i(157996),	-- Harbormaster Pauldrons*
-										i(157990),	-- Harbormaster Cuirass*
-										i(157929),	-- Greathelm of Rezan's Bodyguard
-										i(157932),	-- Pauldrons of Rezan's Bodyguard
-										i(157926),	-- Breastplate of Rezan's Bodyguard
-										i(158057),	-- Shoalbreach Helm
-										i(158060),	-- Shoalbreach Pauldrons
-										i(158054),	-- Shoalbreach Breastplate
-									},
-								}),
+								i(163857),	-- Azerite Armor Cache
 							},
 							["qg"] = 135808,	-- Provisioner Fray
 							["isDaily"] = true,

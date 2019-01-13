@@ -44,6 +44,9 @@ _.Zones =
 							["coords"] = {
 								{ 59.29, 69.33, 942 },
 							},
+							["g"] = {
+								i(163857),	-- Azerite Armor Cache
+							},
 						}),
 						{	-- Supplies from Storm's Wake
 							["questID"] = 54457,	-- Supplies from Storm's Wake						
