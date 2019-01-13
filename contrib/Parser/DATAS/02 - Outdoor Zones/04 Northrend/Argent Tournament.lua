@@ -598,6 +598,7 @@ _.Zones =
 											33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
 											33653,	-- Rook Hawkfist <Darnassus Quartermaster>
 										},
+										["races"] = ALLIANCE_ONLY,
 									},
 									{	-- Grapeshotter of Khaz Modan
 										["itemID"] = 164932,	-- Grapeshotter of Khaz Modan
@@ -608,6 +609,7 @@ _.Zones =
 											33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
 											33653,	-- Rook Hawkfist <Darnassus Quartermaster>
 										},
+										["races"] = ALLIANCE_ONLY,
 									},
 									{	-- Claymore of the Prophet
 										["itemID"] = 45074,	-- Claymore of the Prophet
@@ -618,6 +620,7 @@ _.Zones =
 											33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
 											33653,	-- Rook Hawkfist <Darnassus Quartermaster>
 										},
+										["races"] = ALLIANCE_ONLY,
 									},
 									{	-- Dagger of Lunar Purity
 										["itemID"] = 45078,	-- Dagger of Lunar Purity
@@ -628,6 +631,7 @@ _.Zones =
 											33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
 											33653,	-- Rook Hawkfist <Darnassus Quartermaster>
 										},
+										["races"] = ALLIANCE_ONLY,
 									},
 									{	-- Dagger of the Rising Moon
 										["itemID"] = 45077,	-- Dagger of the Rising Moon
@@ -638,6 +642,7 @@ _.Zones =
 											33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
 											33653,	-- Rook Hawkfist <Darnassus Quartermaster>
 										},
+										["races"] = ALLIANCE_ONLY,
 									},
 									{	-- Gnomeragan Bonechopper
 										["itemID"] = 45129,	-- Gnomeragan Bonechopper
@@ -648,6 +653,7 @@ _.Zones =
 											33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
 											33653,	-- Rook Hawkfist <Darnassus Quartermaster>
 										},
+										["races"] = ALLIANCE_ONLY,
 									},
 									{	-- Ironforge Smasher
 										["itemID"] = 45075,	-- Ironforge Smasher
@@ -658,6 +664,7 @@ _.Zones =
 											33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
 											33653,	-- Rook Hawkfist <Darnassus Quartermaster>
 										},
+										["races"] = ALLIANCE_ONLY,
 									},
 									{	-- Silvery Sylvan Stave
 										["itemID"] = 45128,	-- Silvery Sylvan Stave
@@ -668,6 +675,7 @@ _.Zones =
 											33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
 											33653,	-- Rook Hawkfist <Darnassus Quartermaster>
 										},
+										["races"] = ALLIANCE_ONLY,
 									},
 									{	-- Teldrassil Protector
 										["itemID"] = 45076,	-- Teldrassil Protector
@@ -678,6 +686,7 @@ _.Zones =
 											33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
 											33653,	-- Rook Hawkfist <Darnassus Quartermaster>
 										},
+										["races"] = ALLIANCE_ONLY,
 									},
 									{	-- Choker of Spiral Focus
 										["itemID"] = 45155,	-- Choker of Spiral Focus
@@ -688,6 +697,7 @@ _.Zones =
 											33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
 											33653,	-- Rook Hawkfist <Darnassus Quartermaster>
 										},
+										["races"] = ALLIANCE_ONLY,
 									},
 									{	-- Necklace of Valiant Blood
 										["itemID"] = 45154,	-- Necklace of Valiant Blood
@@ -698,6 +708,7 @@ _.Zones =
 											33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
 											33653,	-- Rook Hawkfist <Darnassus Quartermaster>
 										},
+										["races"] = ALLIANCE_ONLY,
 									},
 									{	-- Pendant of Azure Dreams
 										["itemID"] = 45152,	-- Pendant of Azure Dreams
@@ -708,6 +719,7 @@ _.Zones =
 											33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
 											33653,	-- Rook Hawkfist <Darnassus Quartermaster>
 										},
+										["races"] = ALLIANCE_ONLY,
 									},
 									{	-- Susurrating Shell Necklace
 										["itemID"] = 45153,	-- Susurrating Shell Necklace
@@ -718,6 +730,7 @@ _.Zones =
 											33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
 											33653,	-- Rook Hawkfist <Darnassus Quartermaster>
 										},
+										["races"] = ALLIANCE_ONLY,
 									},
 									{	-- Gauntlets of Shattered Pride
 										["itemID"] = 45182,	-- Gauntlets of Shattered Pride
@@ -728,6 +741,7 @@ _.Zones =
 											33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
 											33653,	-- Rook Hawkfist <Darnassus Quartermaster>
 										},
+										["races"] = ALLIANCE_ONLY,
 									},
 									{	-- Cinch of Bonded Servitude
 										["itemID"] = 45184,	-- Cinch of Bonded Servitude
@@ -738,6 +752,7 @@ _.Zones =
 											33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
 											33653,	-- Rook Hawkfist <Darnassus Quartermaster>
 										},
+										["races"] = ALLIANCE_ONLY,
 									},
 									{	-- Girdle of Valorous Defeat
 										["itemID"] = 45160,	-- Girdle of Valorous Defeat
@@ -748,6 +763,7 @@ _.Zones =
 											33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
 											33653,	-- Rook Hawkfist <Darnassus Quartermaster>
 										},
+										["races"] = ALLIANCE_ONLY,
 									},
 									{	-- Sash of Shattering Hearts
 										["itemID"] = 45156,	-- Sash of Shattering Hearts
@@ -758,6 +774,7 @@ _.Zones =
 											33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
 											33653,	-- Rook Hawkfist <Darnassus Quartermaster>
 										},
+										["races"] = ALLIANCE_ONLY,
 									},
 									{	-- Wrap of the Everliving Tree
 										["itemID"] = 45181,	-- Wrap of the Everliving Tree
@@ -768,6 +785,7 @@ _.Zones =
 											33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
 											33653,	-- Rook Hawkfist <Darnassus Quartermaster>
 										},
+										["races"] = ALLIANCE_ONLY,
 									},
 									{	-- Stanchions of Unseatable Furor
 										["itemID"] = 45163,	-- Stanchions of Unseatable Furor
@@ -778,6 +796,7 @@ _.Zones =
 											33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
 											33653,	-- Rook Hawkfist <Darnassus Quartermaster>
 										},
+										["races"] = ALLIANCE_ONLY,
 									},
 									{	-- Treads of Nimble Evasion
 										["itemID"] = 45159,	-- Treads of Nimble Evasion
@@ -788,6 +807,7 @@ _.Zones =
 											33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
 											33653,	-- Rook Hawkfist <Darnassus Quartermaster>
 										},
+										["races"] = ALLIANCE_ONLY,
 									},
 									{	-- Treads of the Glorious Spirit
 										["itemID"] = 45183,	-- Treads of the Glorious Spirit
@@ -798,6 +818,7 @@ _.Zones =
 											33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
 											33653,	-- Rook Hawkfist <Darnassus Quartermaster>
 										},
+										["races"] = ALLIANCE_ONLY,
 									},
 									{	-- Jouster's Fury
 										["itemID"] = 45131,	-- Jouster's Fury
@@ -819,6 +840,7 @@ _.Zones =
 											33554, 	-- Samamba <Sen'jin Quartermaster>
 											33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
 										},
+										["races"] = HORDE_ONLY,
 									},
 									{	-- Blade of the Keening Banshee
 										["itemID"] = 45208,	-- Blade of the Keening Banshee
@@ -829,6 +851,7 @@ _.Zones =
 											33554, 	-- Samamba <Sen'jin Quartermaster>
 											33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
 										},
+										["races"] = HORDE_ONLY,
 									},
 									{	-- Greatsword of the Sin'dorei
 										["itemID"] = 45205,	-- Greatsword of the Sin'dorei
@@ -839,6 +862,7 @@ _.Zones =
 											33554, 	-- Samamba <Sen'jin Quartermaster>
 											33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
 										},
+										["races"] = HORDE_ONLY,
 									},
 									{	-- Grimhorn Crusher
 										["itemID"] = 45203,	-- Grimhorn Crusher
@@ -849,6 +873,7 @@ _.Zones =
 											33554, 	-- Samamba <Sen'jin Quartermaster>
 											33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
 										},
+										["races"] = HORDE_ONLY,
 									},
 									{	-- Scalpel of the Royal Apothecary
 										["itemID"] = 45214,	-- Scalpel of the Royal Apothecary
@@ -859,6 +884,7 @@ _.Zones =
 											33554, 	-- Samamba <Sen'jin Quartermaster>
 											33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
 										},
+										["races"] = HORDE_ONLY,
 									},
 									{	-- Sen'jin Beakblade Longrifle
 										["itemID"] = 45210,	-- Sen'jin Beakblade Longrifle
@@ -869,6 +895,7 @@ _.Zones =
 											33554, 	-- Samamba <Sen'jin Quartermaster>
 											33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
 										},
+										["races"] = HORDE_ONLY,
 									},
 									{	-- Spinal Destroyer
 										["itemID"] = 45222,	-- Spinal Destroyer
@@ -879,6 +906,7 @@ _.Zones =
 											33554, 	-- Samamba <Sen'jin Quartermaster>
 											33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
 										},
+										["races"] = HORDE_ONLY,
 									},
 									{	-- Staff of Feral Furies
 										["itemID"] = 45212,	-- Staff of Feral Furies
@@ -889,6 +917,7 @@ _.Zones =
 											33554, 	-- Samamba <Sen'jin Quartermaster>
 											33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
 										},
+										["races"] = HORDE_ONLY,
 									},
 									{	-- Choker of Feral Fury
 										["itemID"] = 45206,	-- Choker of Feral Fury
@@ -899,6 +928,7 @@ _.Zones =
 											33554, 	-- Samamba <Sen'jin Quartermaster>
 											33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
 										},
+										["races"] = HORDE_ONLY,
 									},
 									{	-- Necklace of Stolen Skulls
 										["itemID"] = 45207,	-- Necklace of Stolen Skulls
@@ -909,6 +939,7 @@ _.Zones =
 											33554, 	-- Samamba <Sen'jin Quartermaster>
 											33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
 										},
+										["races"] = HORDE_ONLY,
 									},
 									{	-- Pendant of Emerald Crusader
 										["itemID"] = 45213,	-- Pendant of Emerald Crusader
@@ -919,6 +950,7 @@ _.Zones =
 											33554, 	-- Samamba <Sen'jin Quartermaster>
 											33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
 										},
+										["races"] = HORDE_ONLY,
 									},
 									{	-- Razor's Edge Pendant
 										["itemID"] = 45223,	-- Razor's Edge Pendant
@@ -929,6 +961,7 @@ _.Zones =
 											33554, 	-- Samamba <Sen'jin Quartermaster>
 											33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
 										},
+										["races"] = HORDE_ONLY,
 									},
 									{	-- Gauntlets of Mending Touch
 										["itemID"] = 45216,	-- Gauntlets of Mending Touch
@@ -939,6 +972,7 @@ _.Zones =
 											33554, 	-- Samamba <Sen'jin Quartermaster>
 											33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
 										},
+										["races"] = HORDE_ONLY,
 									},
 									{	-- Clinch of Savage Fury
 										["itemID"] = 45217,	-- Clinch of Savage Fury
@@ -949,6 +983,7 @@ _.Zones =
 											33554, 	-- Samamba <Sen'jin Quartermaster>
 											33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
 										},
+										["races"] = HORDE_ONLY,
 									},
 									{	-- Links of Unquenched Savagery
 										["itemID"] = 45215,	-- Links of Unquenched Savagery
@@ -959,6 +994,7 @@ _.Zones =
 											33554, 	-- Samamba <Sen'jin Quartermaster>
 											33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
 										},
+										["races"] = HORDE_ONLY,
 									},
 									{	-- Sash of Trumpeted Pride
 										["itemID"] = 45209,	-- Sash of Trumpeted Pride
@@ -969,6 +1005,7 @@ _.Zones =
 											33554, 	-- Samamba <Sen'jin Quartermaster>
 											33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
 										},
+										["races"] = HORDE_ONLY,
 									},
 									{	-- Waistguard of Equine Fury
 										["itemID"] = 45211,	-- Waistguard of Equine Fury
@@ -979,6 +1016,7 @@ _.Zones =
 											33554, 	-- Samamba <Sen'jin Quartermaster>
 											33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
 										},
+										["races"] = HORDE_ONLY,
 									},
 									{	-- Blood-Caked Stompers
 										["itemID"] = 45218,	-- Blood-Caked Stompers
@@ -989,6 +1027,7 @@ _.Zones =
 											33554, 	-- Samamba <Sen'jin Quartermaster>
 											33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
 										},
+										["races"] = HORDE_ONLY,
 									},
 									{	-- Treads of the Earnest Squire
 										["itemID"] = 45220,	-- Treads of the Earnest Squire
@@ -999,6 +1038,7 @@ _.Zones =
 											33554, 	-- Samamba <Sen'jin Quartermaster>
 											33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
 										},
+										["races"] = HORDE_ONLY,
 									},
 									{	-- Treads of Whispering Dreams
 										["itemID"] = 45221,	-- Treads of Whispering Dreams
@@ -1009,6 +1049,7 @@ _.Zones =
 											33554, 	-- Samamba <Sen'jin Quartermaster>
 											33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
 										},
+										["races"] = HORDE_ONLY,
 									},
 								}
 							},
