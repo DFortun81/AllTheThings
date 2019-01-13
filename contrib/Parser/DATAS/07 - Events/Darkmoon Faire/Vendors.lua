@@ -8,6 +8,9 @@ _.WorldEvents =
 		["g"] = {
 			n(-2, {  -- Vendors
 				n(55072, { -- Barum
+					["coords"] = {
+						{ 47.52, 66.34, 407 },
+					},
 					["groups"] = { 
 						gs(359, { -- Devout Set
 							i(78205),  -- Helm
@@ -103,6 +106,9 @@ _.WorldEvents =
 					["currencyID"] = 515,	-- Darkmoon Prize Ticket
 				}),
 				n(57983, { -- Baruma
+					["coords"] = {
+						{ 47.61, 66.05, 407 },
+					},
 					["groups"] = {
 						gs(360, { -- Vestments of the Virtuous
 							i(78216), -- Virtuous Set Helm
@@ -201,7 +207,7 @@ _.WorldEvents =
 					["npcID"] = 55278,		-- Boomie Sparks
 					["currencyID"] = 515,	-- Darkmoon Prize Ticket
 					["coords"] = {
-						{ 48.29, 71.93 },
+						{ 48.29, 71.93, 407 },
 					},
 					["g"] = {
 						{	-- Sparklepony XL
@@ -213,7 +219,7 @@ _.WorldEvents =
 					["npcID"] = 55305,	--- Carl Goodup
 					["currencyID"] = 515,	-- Darkmoon Prize Ticket
 					["coords"] = {
-						{ 49.38, 78.47 },
+						{ 49.38, 78.47, 407 },
 					},
 					["g"] = {
 						{	-- Darkmoon Balloon
@@ -225,6 +231,9 @@ _.WorldEvents =
 					},
 				},
 				n(85484, { -- Chester
+					["coords"] = {
+						{ 51.47, 75.09, 407 },
+					},
 					["groups"] = {
 						i(116138, {	-- Last Deck of Nemelex Xobeh
 							["f"] = 50,
@@ -240,6 +249,9 @@ _.WorldEvents =
 					["currencyID"] = 515,	-- Darkmoon Prize Ticket
 				}),
 				n(56335, { -- Daenrand Dawncrest <Heirloom Prizes>
+					["coords"] = {
+						{ 47.67, 66.71, 407 },
+					},
 					["groups"] = {
 						i(122350), -- Balanced Heartseeker
 						i(122349), -- Bloodied Arcanite Reaper
@@ -272,6 +284,9 @@ _.WorldEvents =
 					["currencyID"] = 515,	-- Darkmoon Prize Ticket
 				}),
 				n(14860, { -- Flik
+					["coords"] = {
+						{ 55.41, 70.13, 407 },
+					},
 					["groups"] = {
 						i(11026), -- Tree Frog Box
 						i(11027), -- Wood Frog Box
@@ -291,10 +306,13 @@ _.WorldEvents =
 					},
 					["itemID"] = 124669,	--  Darkmoon Daggermaw
 					["coords"] = {
-						{ 52.51, 88.79 },
+						{ 52.51, 88.79, 407 },
 					},
 				}),
 				n(14828, { -- Gelvas Grimegate <Souvenir & Toy Prizes>
+					["coords"] = {
+						{ 47.76, 64.77, 407 },
+					},
 					["groups"] = {
 						i(73762), -- Darkmoon Balloon
 						i(90899), -- Darkmoon Whistle
@@ -306,6 +324,9 @@ _.WorldEvents =
 					["currencyID"] = 515,	-- Darkmoon Prize Ticket
 				}),
 				n(14846, { -- Lhara
+					["coords"] = {
+						{ 48.09, 69.55, 407 },
+					},
 					["groups"] = {
 						i(73766), -- Darkmoon Dancing Bear Mount
 						i(153485), -- Darkmoon Dirigible Mount
@@ -325,7 +346,7 @@ _.WorldEvents =
 				{	-- Professor Thaddeus Paleo
 					["npcID"] = 14847,	-- Professor Thaddeus
 					["coords"] = {
-						{ 51.91, 60.93 },
+						{ 51.91, 60.93, 407 },
 					},
 					["g"] = {
 						{	-- Darkmoon Prize Ticket
@@ -435,6 +456,10 @@ _.WorldEvents =
 					},
 				},
 				n(108785, { -- Scarlet Quartermaster
+					["coords"] = {
+						{ 58.21, 80.66, 407 },
+					},
+					["itemID"] = 23192,	-- Tabard of the Scarlet Crusade [Note: Required to purchase these]
 					["groups"] = {
 						i(138429), -- Tabard
 						{ -- Ensemble: Chain of the Scarlet Crusade
@@ -467,7 +492,7 @@ _.WorldEvents =
 				{	-- Stamp Thunderhorn
 					["npcID"] = 14845,		-- Stamp Thunderhorn
 					["coords"] = {
-						{ 52.89, 67.92 },
+						{ 52.89, 67.92, 407 },
 					},
 					["currencyID"] = 515,	-- Darkmoon Prize Ticket
 					["g"] = {
@@ -479,7 +504,7 @@ _.WorldEvents =
 				{	-- Tatia Brine
 					["npcID"] = 56069,	-- Tatia Brine
 					["coords"] = {
-						{ 52.37, 88.76 },
+						{ 52.37, 88.76, 407 },
 					},
 					["g"] = {
 						{	-- Recipe: Brilliant Smallfish
