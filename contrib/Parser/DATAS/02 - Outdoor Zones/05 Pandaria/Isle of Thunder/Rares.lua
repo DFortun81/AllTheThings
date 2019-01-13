@@ -14,6 +14,7 @@ _.Zones =
 							{	-- Al'tabim the All-Seeing
 								["npcID"] = 70000,		-- Al'tabim the All-Seeing
 								["questID"] = 32610,	-- Looted from Rare this week
+								["repeatable"] = true,
 								["coords"] = {
 									{ 44.72, 29.82, 504 },
 								},
@@ -27,6 +28,7 @@ _.Zones =
 							{	-- Backbreaker Uru
 								["npcID"] = 70001,		-- Backbreaker Uru
 								["questID"] = 32610,	-- Looted from Rare this week
+								["repeatable"] = true,
 								["coords"] = {
 									{ 48.01, 25.59, 504 },
 									{ 42.99, 36.38, 505 },
@@ -41,6 +43,7 @@ _.Zones =
 							{	-- God-Hulk Ramuk
 								["npcID"] = 69999,		-- God-Hulk Ramuk
 								["questID"] = 32610,	-- Looted from Rare this week
+								["repeatable"] = true,
 								["coords"] = {
 									{ 61.48, 49.56, 504 },
 								},
@@ -54,6 +57,7 @@ _.Zones =
 							{	-- Goda
 								["npcID"] = 69998,		-- Goda
 								["questID"] = 32610,	-- Looted from Rare this week
+								["repeatable"] = true,
 								["coords"] = {
 									{ 53.76, 53.17, 504 },
 								},
@@ -67,6 +71,7 @@ _.Zones =
 							{	-- Haywire Sunreaver Construct
 								["npcID"] = 50358,		-- Haywire Sunreaver Construct
 								["questID"] = 32610,	-- Looted from Rare this week
+								["repeatable"] = true,
 								["coords"] = {
 									{ 48.02, 87.79, 504 },
 									{ 48.88, 86.73, 504 },
@@ -86,6 +91,7 @@ _.Zones =
 							{	-- Ku'lai the Skyclaw
 								["npcID"] = 69996,		-- Ku'lai the Skyclaw
 								["questID"] = 32610,	-- Looted from Rare this week
+								["repeatable"] = true,
 								["coords"] = {
 									{ 37.49, 82.64, 504 },
 								},
@@ -99,6 +105,7 @@ _.Zones =
 							{	-- Lu-Ban
 								["npcID"] = 70002,		-- Lu-Ban
 								["questID"] = 32610,	-- Looted from Rare this week
+								["repeatable"] = true,
 								["coords"] = {
 									{ 54.33, 35.48, 504 },
 								},
@@ -112,6 +119,7 @@ _.Zones =
 							{	-- Molthor
 								["npcID"] = 70003,		-- Molthor
 								["questID"] = 32610,	-- Looted from Rare this week
+								["repeatable"] = true,
 								["coords"] = {
 									{ 63.53, 49.29, 504 },
 									{ 39.04, 37.22, 506 },
@@ -126,6 +134,7 @@ _.Zones =
 							{	-- Mumta
 								["npcID"] = 69664,		-- Mumta
 								["questID"] = 32610,	-- Looted from Rare this week
+								["repeatable"] = true,
 								["coords"] = {
 									{ 35.10, 62.45, 504 },
 								},
@@ -139,6 +148,7 @@ _.Zones =
 							{	-- Progenitus
 								["npcID"] = 69997,		-- Progenitus
 								["questID"] = 32610,	-- Looted from Rare this week
+								["repeatable"] = true,
 								["coords"] = {
 									{ 50.49, 74.96, 504 },	-- Path Start
 									{ 51.31, 71.19, 504 },	-- Spawn
