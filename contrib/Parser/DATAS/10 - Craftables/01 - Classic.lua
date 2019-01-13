@@ -730,8 +730,12 @@ _.Craftables =
 		n(-183, { 	-- Engineering
 			{	-- Plans: Inlaid Mithril Cylinder
 				["itemID"] = 10713,	-- Plans: Inlaid Mithril Cylinder
+				["description"] = "This recipe is crafted by Engineers and given to Blacksmiths to learn so that the Blacksmith can craft the item needed by the Engineer.\n\nIf you are missing this recipe, ask an Engineer to craft it for you.",
 			},
-			i(10644),	-- Recipe: Goblin Rocket Fuel (Engineers make the recipe for alchemists)
+			{	-- Recipe: Goblin Rocket Fuel
+				["itemID"] = 10644,	-- Recipe: Goblin Rocket Fuel (Engineers make the recipe for alchemists)
+				["description"] = "This recipe is crafted by Engineers and given to Alchemists to learn so that the Alchemist can craft the item needed by the Engineer.\n\nIf you are missing this recipe, ask an Engineer to craft it for you.",
+			},
 			i(18282),	-- Core Marksman Rifle
 			i(16004),	-- Dark Iron Rifle
 			i(4369),	-- Deadly Blunderbuss
