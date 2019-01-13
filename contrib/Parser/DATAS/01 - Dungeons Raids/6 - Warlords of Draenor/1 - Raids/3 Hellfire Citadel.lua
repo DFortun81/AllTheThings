@@ -19,7 +19,7 @@ _.Instances =
 									92146,	-- Hellfire High Council
 									90378,	-- Kilrogg
 									91809,	-- Gorefiend
-									95067,	-- Shadow-Lord Iskar
+									90316,	-- Shadow-Lord Iskar
 									90296,	-- Socrethar
 									93439,	-- Tyrant Velhari
 									89890,	-- Fel Lord Zakuun
@@ -145,7 +145,7 @@ _.Instances =
 								94870,	-- Seer Kazal <Shadowmoon Exile>
 							},
 							["groups"] = {
-								cr(95067, e(1433, {	-- Shadow-Lord Iskar
+								cr(90316, e(1433, {	-- Shadow-Lord Iskar
 									i(127771, {	-- Gemcutter Module: Critical Strike
 										["spellID"] = 187634,
 										["requireSkill"] = 755,	-- Jewelcrafting
@@ -299,7 +299,7 @@ _.Instances =
 									92146,	-- Hellfire High Council
 									90378,	-- Kilrogg
 									91809,	-- Gorefiend
-									95067,	-- Shadow-Lord Iskar
+									90316,	-- Shadow-Lord Iskar
 									90296,	-- Socrethar
 									93439,	-- Tyrant Velhari
 									89890,	-- Fel Lord Zakuun
@@ -460,7 +460,7 @@ _.Instances =
 							i(124188),	-- Serrated Demontooth Ring
 							i(124236),	-- Unending Hunger
 						})),
-						cr(95067, e(1433, {	-- Shadow-Lord Iskar
+						cr(90316, e(1433, {	-- Shadow-Lord Iskar
 							i(127771, {	-- Gemcutter Module: Critical Strike
 								["spellID"] = 187634,
 								["requireSkill"] = 755,	-- Jewelcrafting
@@ -690,7 +690,7 @@ _.Instances =
 									92146,	-- Hellfire High Council
 									90378,	-- Kilrogg
 									91809,	-- Gorefiend
-									95067,	-- Shadow-Lord Iskar
+									90316,	-- Shadow-Lord Iskar
 									90296,	-- Socrethar
 									93439,	-- Tyrant Velhari
 									89890,	-- Fel Lord Zakuun
@@ -852,7 +852,7 @@ _.Instances =
 							i(124188),	-- Serrated Demontooth Ring
 							i(124236),	-- Unending Hunger
 						})),
-						cr(95067, e(1433, {	-- Shadow-Lord Iskar
+						cr(90316, e(1433, {	-- Shadow-Lord Iskar
 							i(127771, {	-- Gemcutter Module: Critical Strike
 								["spellID"] = 187634,
 								["requireSkill"] = 755,	-- Jewelcrafting
@@ -1086,7 +1086,7 @@ _.Instances =
 									92146,	-- Hellfire High Council
 									90378,	-- Kilrogg
 									91809,	-- Gorefiend
-									95067,	-- Shadow-Lord Iskar
+									90316,	-- Shadow-Lord Iskar
 									90296,	-- Socrethar
 									93439,	-- Tyrant Velhari
 									89890,	-- Fel Lord Zakuun
@@ -1249,7 +1249,7 @@ _.Instances =
 							i(124188),	-- Serrated Demontooth Ring
 							i(124236),	-- Unending Hunger
 						})),
-						cr(95067, e(1433, {	-- Shadow-Lord Iskar
+						cr(90316, e(1433, {	-- Shadow-Lord Iskar
 							i(127771, {	-- Gemcutter Module: Critical Strike
 								["spellID"] = 187634,
 								["requireSkill"] = 755,	-- Jewelcrafting
