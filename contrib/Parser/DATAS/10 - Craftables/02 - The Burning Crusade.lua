@@ -468,40 +468,43 @@ _.Craftables =
 		n(-185, { 	-- Inscription
 		-- Reviewed and updated as of 11.21.2018 BfA 8.0
 			n(-491, { -- Tarot Cards
-				{	-- Greater Darkmoon Card
-					["spellID"] = 59503,	-- Greater Darkmoon Card
+				i(31882),	-- Ace of Blessings
+				i(31889),	-- Two of Blessings
+				i(31888),	-- Three of Blessings
+				i(31885),	-- Four of Blessings
+				i(31884),	-- Five of Blessings
+				i(31887),	-- Six of Blessings
+				i(31886),	-- Seven of Blessings
+				i(31883),	-- Eight of Blessings
+				{	-- Blessings Deck
+					["itemID"] = 31890,	-- Blessings Deck
 					["g"] = {
-						{	-- Blessings Deck
-							["itemID"] = 31890,	-- Blessings Deck
-							["g"] = {
-								{	-- Darkmoon Card: Crusade
-									["itemID"] = 31856,	-- Darkmoon Card: Crusade
-								},
-							},
+						{	-- Darkmoon Card: Crusade
+							["itemID"] = 31856,	-- Darkmoon Card: Crusade
 						},
-						{	-- Furies Deck
-							["itemID"] = 31907,	-- Furies Deck
-							["g"] = {
-								{	-- Darkmoon Card: Vengeance
-									["itemID"] = 31858,	-- Darkmoon Card: Vengeance
-								},
-							},
+					},
+				},
+				{	-- Furies Deck
+					["itemID"] = 31907,	-- Furies Deck
+					["g"] = {
+						{	-- Darkmoon Card: Vengeance
+							["itemID"] = 31858,	-- Darkmoon Card: Vengeance
 						},
-						{	-- Lunacy Deck
-							["itemID"] = 31914,	-- Lunacy Deck
-							["g"] = {
-								{	-- Darkmoon Card: Madness
-									["itemID"] = 31859,	-- Darkmoon Card: Madness
-								},
-							},
+					},
+				},
+				{	-- Lunacy Deck
+					["itemID"] = 31914,	-- Lunacy Deck
+					["g"] = {
+						{	-- Darkmoon Card: Madness
+							["itemID"] = 31859,	-- Darkmoon Card: Madness
 						},
-						{	-- Storms Deck
-							["itemID"] = 31891,	-- Storms Deck
-							["g"] = {
-								{	-- Darkmoon Card: Wrath
-									["itemID" ] = 31857,	-- Darkmoon Card: Wrath
-								},
-							},
+					},
+				},
+				{	-- Storms Deck
+					["itemID"] = 31891,	-- Storms Deck
+					["g"] = {
+						{	-- Darkmoon Card: Wrath
+							["itemID" ] = 31857,	-- Darkmoon Card: Wrath
 						},
 					},
 				},

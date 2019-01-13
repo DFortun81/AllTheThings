@@ -10477,6 +10477,13 @@ app.events.PLAYER_LOGIN = function()
 	app:UnregisterEvent("PLAYER_LOGIN");
 	app.Spec = GetLootSpecialization();
 	if not app.Spec or app.Spec == 0 then app.Spec = select(1, GetSpecializationInfo(GetSpecialization())); end
+	local reagentCache = app.GetDataMember("Reagents");
+	if reagentCache then
+		local craftedItem = { {}, {[31890] = 1} };	-- Blessings Deck
+		for i,itemID in ipairs({ 31882, 31889, 31885, 31885, 31884, 31887, 31886, 31883 }) do
+			reagentCache[itemID] = craftedItem;
+		end
+	end
 	app:GetDataCache();
 	Push(app, "WaitOnMountData", function()
 		-- Detect how many pets there are. If 0, Blizzard isn't ready yet.
