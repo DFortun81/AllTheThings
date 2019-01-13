@@ -770,6 +770,12 @@ local CS = CreateFrame("ColorSelect", nil, app);
 local function Colorize(str, color)
 	return "|c" .. color .. str .. "|r";
 end
+local function HexToARGB(hex)
+	return tonumber("0x"..hex:sub(1,2)), tonumber("0x"..hex:sub(3,4)), tonumber("0x"..hex:sub(5,6)), tonumber("0x"..hex:sub(7,8));
+end
+local function HexToRGB(hex)
+	return tonumber("0x"..hex:sub(1,2)), tonumber("0x"..hex:sub(3,4)), tonumber("0x"..hex:sub(5,6));
+end
 local function RGBToHex(r, g, b)
 	return string.format("ff%02x%02x%02x", 
 		r <= 255 and r >= 0 and r or 0, 
@@ -1441,7 +1447,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				if GetDataMember("ShowDescriptions") and paramA ~= "encounterID" then
 					for i,j in ipairs(group) do
 						if j.description and j[paramA] and j[paramA] == paramB then
-							tinsert(info, 1, { left = "|cff66ccff" .. j.description .. "|r", wrap = true });
+							tinsert(info, 1, { left = j.description, wrap = true, color = "ff66ccff" });
 						end
 					end
 				end
@@ -1754,14 +1760,14 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		end
 		
 		if group.description and GetDataMember("ShowDescriptions") and not group.encounterID then
-			tinsert(info, 1, { left = "|cff66ccff" .. group.description .. "|r", wrap = true });
+			tinsert(info, 1, { left = group.description, wrap = true, color = "ff66ccff" });
 		end
 		
 		if group.g and #group.g > 0 then
 			if GetDataMember("ShowDescriptions") then
 				for i,j in ipairs(group.g) do
 					if j.description and ((j[paramA] and j[paramA] == paramB) or (paramA == "itemID" and group.key == j.key)) then
-						tinsert(info, 1, { left = "|cff66ccff" .. j.description .. "|r", wrap = true });
+						tinsert(info, 1, { left = j.description, wrap = true, color = "ff66ccff" });
 					end
 				end
 			end
@@ -1796,7 +1802,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				group.collectionText = GetCollectionText(group.collected);
 			elseif group.trackable then
 				group.collectionText = GetCompletionText(group.saved);
-			elseif group.info and #group.info > 0 then
+			elseif #info > 0 then
 				group.collectionText = "---";
 			end
 		end
@@ -1809,7 +1815,12 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		end
 		
 		-- If there was any informational text generated, then attach that info.
-		if #info > 0 then group.info = info; end
+		if #info > 0 then
+			group.info = info;
+			for i,item in ipairs(info) do
+				if item.color then item.a, item.r, item.g, item.b = HexToARGB(item.color); end
+			end
+		end
 		
 		-- Cache the result for a while depending on if there is more work to be done.
 		cache[2] = (working and 0.01) or 100000000;
@@ -2688,10 +2699,18 @@ local function AttachTooltipRawSearchResults(self, group)
 			for i,entry in ipairs(group.info) do
 				if entry.right then
 					self:AddDoubleLine(entry.left or " ", entry.right);
-				elseif entry.wrap then
-					self:AddLine(entry.left, nil, nil, nil, 1);
+				elseif entry.r then
+					if entry.wrap then
+						self:AddLine(entry.left, entry.r / 255, entry.g / 255, entry.b / 255, 1);
+					else
+						self:AddLine(entry.left, entry.r / 255, entry.g / 255, entry.b / 255);
+					end
 				else
-					self:AddLine(entry.left);
+					if entry.wrap then
+						self:AddLine(entry.left, nil, nil, nil, 1);
+					else
+						self:AddLine(entry.left);
+					end
 				end
 			end
 		end
@@ -7017,7 +7036,16 @@ local function RowOnEnter(self)
 		if reference.setID then GameTooltip:AddDoubleLine(L("SET_ID"), tostring(reference.setID)); end
 		if reference.setHeaderID then GameTooltip:AddDoubleLine(L("SET_ID"), tostring(reference.setHeaderID)); end
 		if reference.setSubHeaderID then GameTooltip:AddDoubleLine(L("SET_ID"), tostring(reference.setSubHeaderID)); end
-		if reference.description and GetDataMember("ShowDescriptions") and not reference.itemID and not reference.speciesID then GameTooltip:AddLine(reference.description, 0.4, 0.8, 1, 1); end
+		if reference.description and GetDataMember("ShowDescriptions") then
+			local found = false;
+			for i=1,GameTooltip:NumLines() do
+				if _G["GameTooltipTextLeft"..i]:GetText() == reference.description then
+					found = true;
+					break;
+				end
+			end
+			if not found then GameTooltip:AddLine(reference.description, 0.4, 0.8, 1, 1); end
+		end
 		if reference.mapID and GetDataMember("ShowMapID") then GameTooltip:AddDoubleLine(L("MAP_ID"), tostring(reference.mapID)); end
 		if reference.coords and app.GetDataMember("ShowCoordinatesInTooltip") then
 			local j = 0;
