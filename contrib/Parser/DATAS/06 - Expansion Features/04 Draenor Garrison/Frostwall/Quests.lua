@@ -151,9 +151,8 @@ _.ExpansionFeatures =
 					{	-- A Tiny Scarecrow Costume
 						["itemID"] = 128874,	-- A Tiny Scarecrow Costume
 						["questID"] = 39865,	-- Pepe can be sometimes be summoned with this mask
-						["coords"] = {
-							70.71, 90.21,	-- Pepe Location [Horde]
-						},
+						["coord"] = { 70.71, 90.21, 590 },	-- Pepe Location
+						["races"] = HORDE_ONLY,
 						["description"] = "Halloween Decorations must be up in a Tier 3 garrison",
 					},
 					{	-- All Hands on Deck
@@ -165,14 +164,14 @@ _.ExpansionFeatures =
 					{	-- Ashran Appearance
 						["questID"] = 36706,
 						["qg"] = 78466,	-- Gazlowe
-						["coord"] = { 52.4, 53.3 },
+						["coord"] = { 52.4, 53.3, 590 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 34775,	-- Mission Probable
 					},
 					{	-- Bringing the Bass
 						["questID"] = 37961,
 						["qg"] = 37961,	-- Drix Bassbolter
-						["coord"] = { 40.9, 47.8 },
+						["coord"] = { 40.9, 47.8, 590 },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							spell(181715),	-- Unlock Garrison Jukebox
@@ -192,15 +191,20 @@ _.ExpansionFeatures =
 						["questID"] = 37669,
 						["qg"] = 78466,	-- Gazlowe
 						["coords"] = {
-							{ 52.4, 53.3 },	-- lvl 1
+							{ 52.4, 53.3, 590 },	-- lvl 1
+							{ 37.6, 50.3, 590 },	-- lvl 3
 						},
 						["races"] = HORDE_ONLY,
 					},
-					un(40, q(35988)),	-- Call of the Archmage
+					{	-- Call of the Archmage
+						["questID"] = 35988,
+						["qg"] = 83858,	-- Khadgar's Servant
+						["u"] = 40,
+					},
 					{	-- Clearing the Garden
 						["questID"] = 34193,
 						["qg"] = 81981,	-- Tarnon
-						["coord"] = { 43.4, 83.2 },
+						["coord"] = { 43.4, 83.2, 590 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 36567,	-- Bigger is Better
 						["groups"] = {
@@ -223,7 +227,7 @@ _.ExpansionFeatures =
 					{	-- Den of Wolves
 						["questID"] = 34379,
 						["qg"] = 76411,	-- Farseer Drek'Thar
-						["coord"] = { 49.7, 49.5 },
+						["coord"] = { 49.7, 49.5, 590 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 34775,	-- Mission Probable
 					},
@@ -257,7 +261,7 @@ _.ExpansionFeatures =
 						},
 					},
 					n(89753, { 	-- High Overlord Saurfang
-						["coord"] = { 40.2, 56.7 },
+						["coord"] = { 40.2, 56.7, 590 },
 						["description"] = "High Overlord Saurfang has a chance to spawn in your garrison daily, or you can find someone with him spawned and join their garrison. He starts a weekly raid quest which all have the Greater Bounty Spoils as a reward.",
 						["groups"] = {
 							i(123975, {	-- Greater Bounty Spoils
@@ -536,7 +540,7 @@ _.ExpansionFeatures =
 							},
 						},
 					}),
-					n(-107, {	-- Fishing Hut
+					garrisonBuilding(135, {	-- Fishing Shack (rank 1: 64, rank 2: 134, rank 3: 135)
 						{	-- Abyssal Gulper Eel
 							["questID"] = 35075,
 							["qg"] = 79892,	-- Mak'jin
@@ -618,7 +622,11 @@ _.ExpansionFeatures =
 							i(119145),	-- Toy
 						}),
 					}),
-					n(-121, {	-- Frostwall Tavern
+					{	-- Garrison Campaign: War Council
+						["questID"] = 38567,
+						["description"] = "Automatically granted upon upgrading your garrison to Rank 3.",
+					},
+					n(-121, {	-- Frostwall Tavern - temporarily using npc header [Pr3vention]
 						desc(i(119036, {	-- Box of Storied Treasures [4]
 							i(109957),	-- Alc's Pendant of Fiery Dreams
 							i(109779),	-- Ancient Draenic Loop
@@ -1916,12 +1924,12 @@ _.ExpansionFeatures =
 							["repeatable"] = true,
 						}),
 					}),
-					n(-108, {	-- Gem Boutique
+					garrisonBuilding(132, {	-- Gem Boutique (rank 1: 96, rank 2: 131, rank 3: 132)
 						q(36380, {
 							i(115503),	-- Toy
 						}),
 					}),
-					n(-109, {	-- Gladiator's Sanctum
+					garrisonBuilding(161, {	-- Gladiator's Sanctum (rank 1: 159, rank 2: 160, rank 3: 161)
 						q(37083, {
 							i(120142, {
 								i(119218),
@@ -1936,49 +1944,49 @@ _.ExpansionFeatures =
 						["races"] = HORDE_ONLY,
 						["requireSkill"] = 356,	-- Fishing
 					},
-					garrisonBuilding(138, {	-- Lumber Mill
-						{
-							["questID"] = 36137,	-- Easing into Lumberjacking
+					garrisonBuilding(138, {	-- Lumber Mill (rank 1: 40, rank 2: 41, rank 3: 138)
+						{	-- Easing into Lumberjacking
+							["questID"] = 36137,
 							["qg"] = 84247,	-- Lumber Lord Oktron <Work Orders>
 						},
-						{
-							["questID"] = 36138,	-- Turning Timber into Profit
+						{	-- Turning Timber into Profit
+							["questID"] = 36138,
 							["sourceQuest"] = 36137,	-- Easing into Lumberjacking
 							["qg"] = 84247,	-- Lumber Lord Oktron <Work Orders>
 						},
-						{
-							["questID"] = 36449,	-- Reduction in Force
+						{	-- Reduction in Force
+							["questID"] = 36449,
 							["qg"] = 85414,	-- Alexi Barov <Barov Industries>
 							["groups"] = {
 								i(116154),	-- Barov Lumberjack Caller
 							},
 						},
-						{
-							["questID"] = 36142,	-- Sharper Blades, Bigger Timber
+						{	-- Sharper Blades, Bigger Timber
+							["questID"] = 36142,
 							["qg"] = 84247,	-- Lumber Lord Oktron <Work Orders>
 						},
-						{
-							["questID"] = 36813,	-- Subversive Infestation
+						{	-- Subversive Infestation
+							["questID"] = 36813,
 							["qg"] = 84889,	-- Phylarch the Evergreen
 							["description"] = "This Quest requires a Level 3 Lumber Mill as well as the Follower Phylarch the Green either active or attached to the Lumber Mill.",
 							["groups"] = {
 								i(117398),	-- Everbloom Seed Pouch
 							},
 						},
-						{
-							["questID"] = 36427,	-- The Rise and Fall of Barov Industries: Alexi Barov
+						{	-- The Rise and Fall of Barov Industries: Alexi Barov
+							["questID"] = 36427,
 							["qg"] = 85379,	-- Alexi Barov <Barov Industries>
 							["description"] = "Alexi Barov is found at 51.30, 61.98 in Gorgrond. He is stuck under a log and it seems you need lumber mill to be able to get him out of there.",
 							["groups"] = {
 								follower(195),	-- Weldon Barov / Alexi Barov
 							},
 						},
-						{
-							["questID"] = 36182,	-- Tree-i-cide
+						{	-- Tree-i-cide
+							["questID"] = 36182,
 							["qg"] = 84247,	-- Lumber Lord Oktron <Work Orders>
 						},
-						{
-							["npcID"] = 85199,	-- Petrified Ancient
+						{	-- Petrified Ancient
+							["npcID"] = 85199,
 							["description"] = "These will appear as nodes on your mini-map as trees do after you have built your Level 2 Lumber Mill.",
 							["groups"] = {
 								{
@@ -1994,22 +2002,29 @@ _.ExpansionFeatures =
 					{	-- My Very Own Fortress
 						["questID"] = 36614,
 						["qg"] = 78466,	-- Gazlowe
-						["coord"] = { 42.1, 55.5 }, -- Rank 2
+						["coord"] = { 42.1, 55.5, 590 },	-- Rank 2
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 36567,	-- Bigger is Better
 					},
 					{	-- Mystery Notebook
 						["questID"] = 38306,
 						["qg"] = 91072,	-- Drix Bassbolter
-						["coord"] = { 40.9, 47.8 },
+						["coord"] = { 40.9, 47.8, 590 },
 						["races"] = HORDE_ONLY,
+					},
+					{	-- New Goods
+						["questID"] = 79740,
+						["qg"] = 79740,	-- Warmaster Zog
+						["coord"] = { 39.2, 55.3, 590 },
+						["races"] = HORDE_ONLY,
+						["description"] = "Requires Garrison Rank 3.",
 					},
 					{	-- Pinchwhistle Gearworks
 						["questID"] = 36862,
 						["qg"] = 86614,	-- Pinchwhistle Gearworks
 						["coords"] = {
-							{ 50.8, 50.7 },	-- lvl 1 garrison
-							{ 46.8, 45.8 },	-- lvl 2 garrison
+							{ 50.8, 50.7, 590 },	-- lvl 1 garrison
+							{ 46.8, 45.8, 590 },	-- lvl 2 garrison
 						},
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 34378,	-- Establish Your Garrison
@@ -2019,8 +2034,8 @@ _.ExpansionFeatures =
 						["qg"] = 79740,	-- Warmaster Zog
 						["races"] = HORDE_ONLY,
 						["coords"] = {
-							{ 53.8, 54.9 },	-- lvl 1 garrison
-							{ 40.5, 54.8 },	-- lvl 2 garrison
+							{ 53.8, 54.9, 590 },	-- lvl 1 garrison
+							{ 40.5, 54.8, 590 },	-- lvl 2 garrison
 						},
 						["groups"] = {
 							i(119463),	-- Staff of Trials
@@ -2033,17 +2048,64 @@ _.ExpansionFeatures =
 							i(119457),	-- Handaxe of Trials
 						},
 					},
+					garrisonBuilding(130, {	-- Scribe's quarters (rank 1: 95, rank 2: 129, rank 3: 130)
+						{	-- Your First Inscription Work Order
+							["questID"] = 37572,
+							["qg"] = 79829,	-- Urgra
+						},
+					}),
+					n(89806, {	-- Shadow Hunter Ty'jin
+						["coord"] = { 40.2, 56.7, 590 },
+						["races"] = HORDE_ONLY,
+						["groups"] = {
+							{	-- Death to Amethon!
+								["questID"] = 37813,
+								["qg"] = 89806,	-- Shadow Hunter Ty'jin
+								["isDaily"] = true,
+							},
+							{	-- Death to Gor'thul!
+								["questID"] = 37814,
+								["qg"] = 89806,	-- Shadow Hunter Ty'jin
+								["isDaily"] = true,
+							},
+							{	-- Death to Hivelord Ik'rix!
+								["questID"] = 37818,
+								["qg"] = 89806,	-- Shadow Hunter Ty'jin
+								["isDaily"] = true,
+							},
+							{	-- Death to Nullifier Darkoor!
+								["questID"] = 37815,
+								["qg"] = 89806,	-- Shadow Hunter Ty'jin
+								["isDaily"] = true,
+							},
+							{	-- Death to Nullifier Darkoor!
+								["questID"] = 37949,
+								["qg"] = 89806,	-- Shadow Hunter Ty'jin
+								["isDaily"] = true,
+							},
+							{	-- Death to Tremor!
+								["questID"] = 37817,
+								["qg"] = 89806,	-- Shadow Hunter Ty'jin
+								["isDaily"] = true,
+							},
+							{	-- Death to Undertow!
+								["questID"] = 37816,
+								["qg"] = 89806,	-- Shadow Hunter Ty'jin
+								["isDaily"] = true,
+							},
+						},
+					}),
 					{	-- Shamanstone: Blessing of the Wolf
 						["objectID"] = 233263,	-- Blessing of the Wolf // Frostwolf Shamanstone
 						["questID"] = 33977,	-- Blessing of the Wolf
+						["races"] = HORDE_ONLY,
 						["coords"] = {
 							{ 48.91, 52.21, 590 },	-- Tier 1 Garrison
 							{ 48.47, 52.12, 590 },	-- Tier 2 Garrison
 							{ 48.67, 52.21, 590 },	-- Tier 3 Garrison
 						},
-						["races"] = HORDE_ONLY,
 					},
-					n(-99, {	-- Stables
+					garrisonBuilding(67, {	-- Stables (rank 1: 65, rank 2: 66, rank 3: 67)
 						{	-- Besting a Boar
 							["questID"] = 36944,
 							["races"] = HORDE_ONLY,
@@ -2053,43 +2115,80 @@ _.ExpansionFeatures =
 							["qg"] = 86979,	-- Tormak the Scarred
 							["races"] = HORDE_ONLY,
 						},
+						{	-- Boar Training: The Garn
+							["questID"] = 37041,
+							["qg"] = 86979,	-- Tormak the Scarred
+							["races"] = HORDE_ONLY,
+							["groups"] = {
+								i(116675),	-- Trained Rocktusk
+							},
+						},
 						{	-- Clefthoof Training: Riplash
 							["questID"] = 37050,
 							["qg"] = 86979,	-- Tormak the Scarred
 							["races"] = HORDE_ONLY,
+						},
+						{	-- Clefthoof Training: The Garn
+							["questID"] = 37059,
+							["qg"] = 86979,	-- Tormak the Scarred
+							["races"] = HORDE_ONLY,
+							["groups"] = {
+								i(116656),	-- Trained Icehoof
+							},
+						},
+						{	-- Elekk Training: The Garn
+							["questID"] = 37069,
+							["qg"] = 86979,	-- Tormak the Scarred
+							["races"] = HORDE_ONLY,
+							["groups"] = {
+								i(116662),	-- Trained Meadowstomper
+							},
+						},
+						{	-- Riverbeast Training: The Garn
+							["questID"] = 37079,
+							["qg"] = 87242,	-- Sage Paluna
+							["races"] = HORDE_ONLY,
+							["groups"] = {
+								i(116676),	-- Trained Riverwallow
+							},
 						},
 						{	-- Talbuk Training: Riplash
 							["questID"] = 37095,
 							["qg"] = 87242,	-- Sage Paluna
 							["races"] = HORDE_ONLY,
 						},
-						qh(37041, {
-							i(116675),	-- Mount
-						}),
-						qh(37059, {
-							i(116656),	-- Mount
-						}),
-						qh(37069, {
-							i(116662),	-- Mount
-						}),
-						qh(37079, {
-							i(116676),	-- Mount
-						}),
-						qh(37104, {
-							i(116774),	-- Mount
-						}),
-						qh(37111, {
-							i(116784),	-- Mount
-						}),
+						{	-- Talbuk Training: The Garn
+							["questID"] = 37104,
+							["qg"] = 87242,	-- Sage Paluna
+							["races"] = HORDE_ONLY,
+							["groups"] = {
+								i(116774),	-- Trained Silverpelt
+							},
+						},
+						{	-- Wolf Training: The Garn
+							["questID"] = 37111,
+							["qg"] = 87242,	-- Sage Paluna
+							["races"] = HORDE_ONLY,
+							["groups"] = {
+								i(116784),	-- Trained Snarler
+							},
+						},
 					}),
-					{	-- The Mysterious Flask
+					garrisonBuilding(143, {	-- Storehouse (rank 1: 51, rank 2: 142, rank 3: 143)
+						{	-- Lost In Transition
+							["questID"] = 37060,
+							["qg"] = 79862,	-- Yorn Longhoof
+							["races"] = HORDE_ONLY,
+						},
+					}),
+					{	-- The Mysterious Flask	-- depends on alchemy lab and/or alchemy profession?
 						["questID"] = 35058,
 						["races"] = HORDE_ONLY,
 					},
 					{	-- Things Are Not Goren Our Way
 						["questID"] = 35154,
 						["qg"] = 81688,	-- Gorsol
-						["coord"] = { 62.0, 73.9 },	-- lvl 2 garrison
+						["coord"] = { 62.0, 73.9, 590 },	-- lvl 2 garrison
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 36567,	-- Bigger is Better
 						["groups"] = {
@@ -2098,7 +2197,7 @@ _.ExpansionFeatures =
 							},
 						},
 					},
-					garrisonBuilding(144, {	-- Trading Post
+					garrisonBuilding(145, {	-- Trading Post (rank 1: 111, rank 2: 144, rank 3: 145)
 						q(37014, {	-- Auctioning for Parts
 							["description"] = "Completing this quest grants you the ability to access the Auction House from your Garrison.",
 							["qg"] = 86806,	-- Ancient Trading Mechanism
@@ -2139,22 +2238,33 @@ _.ExpansionFeatures =
 					}),
 					{	-- Treasure Contract: The Infected Orc
 						["questID"] = 37941,
+						["isDaily"] = true,
 						["qgs"] = {
 							89793,	-- Harrison Jones
 							92223,	-- Surveyor Daltry
 						},
-						["isDaily"] = true,
 					},
-					n(-125, {	-- War Mill
-						qh(37043, {
-							i(118372),
-						}),
+					{	-- Upgrades in Ashran
+						["questID"] = 37290,
+						["qg"] = 78466,	-- Gazlowe
+						["coord"] = { 37.5, 50.3, 590 },	-- lvl 3
+						["races"] = HORDE_ONLY,
+					},
+					n(-125, {	-- War Mill (rank 1: 8, rank 2: 9, rank 3: 10) - temporarily using npc header [Pr3vention]
+						{	-- Scraps of Iron
+							["questID"] = 37043,
+							["qg"] = 79815,	-- Gun'lek
+							["races"] = HORDE_ONLY,
+							["groups"] = {
+								i(118372),	-- Orgrimmar Tabard
+							},
+						},
 					}),
 					{	-- War Planning Map
 						["objectID"] = 236206,
 						["coords"] = {
-							{ 41.8, 50.7 },	-- lvl 2 garrison
-							{ 41.0, 50.8 },	-- lvl 3 garrison
+							{ 41.8, 50.7, 590 },	-- lvl 2 garrison
+							{ 41.0, 50.8, 590 },	-- lvl 3 garrison
 						},
 						["groups"] = {
 							{	-- Assault on Darktide Roost
@@ -2309,7 +2419,7 @@ _.ExpansionFeatures =
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
 						["coords"] = {
-							{ 51.2, 51.3 },	-- lvl 1
+							{ 51.2, 51.3, 590 },	-- lvl 1
 						},
 					},
 					{	-- We Need a Shipwright
@@ -2324,7 +2434,7 @@ _.ExpansionFeatures =
 					{	-- Vouchsafe Our Arrival
 						["questID"] = 34209,
 						["qg"] = 79252,	-- Cordana Felsong
-						["coord"] = { 49.4, 36.5 },
+						["coord"] = { 49.4, 36.5, 590 },
 						["races"] = HORDE_ONLY,
 					},
 				}),			

@@ -27,6 +27,22 @@ _.ExpansionFeatures =
 							i(113558), 	-- Weebomination
 						}),
 					})),
+					{	-- Pets Versus Pests
+						["questID"] = 36423,
+						["qg"] = 85418,	-- Lio the Lioness
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 38241,	-- Unearthed Magic
+						["groups"] = {
+							{	-- Menagerie
+								["buildingID"] = 42,
+							},
+						},
+					},
+					{	-- Unearthed Magic
+						["questID"] = 38241,
+						["qg"] = 85418,	-- Lio the Lioness
+						["races"] = ALLIANCE_ONLY,
+					},
 				}),
 			},
 		}),

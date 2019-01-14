@@ -39,8 +39,21 @@ _.ExpansionFeatures =
 							i(122219), -- Music Roll: Way of the Monk
 							i(122207), -- Tinkertown
 						}),
-					}),	
-					un(40, q(35988)), -- Call of the Archmage
+					}),
+					{	-- Building For Professions - alternate version that was never used
+						["questID"] = 37667,
+						["u"] = 1,
+					},
+					{	-- Building For Professions
+						["questID"] = 36100,
+						["qg"] = 77209,	-- Baros Alexston
+						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- Call of the Archmage
+						["questID"] = 35988,
+						["qg"] = 83858,	-- Khadgar's Servant
+						["u"] = 40,
+					},
 					{	-- Clearing the Garden
 						["questID"] = 36404,
 						["qg"] = 85344,	-- Naron Bloomthistle
@@ -270,6 +283,11 @@ _.ExpansionFeatures =
 						},
 						["description"] = "Muradin Bronzebeard has a chance to spawn in your garrison daily, or you can find someone with him spawned and join their garrison. He starts a weekly raid quest which all have the Greater Bounty Spoils as a reward.",
 					}),
+					{	-- Mystery Notebook
+						["questID"] = 38306,
+						["qg"] = 91589,	-- Fix "Smallie" Biggswrench
+						["races"] = ALLIANCE_ONLY,
+					},
 					n(-125, {	-- Dwarven Bunker
 						q(37092, {
 							i(118365),
@@ -1712,6 +1730,12 @@ _.ExpansionFeatures =
 							["modID"] = 2,
 							["repeatable"] = true,
 						}),
+					}),
+					garrisonBuilding(95, {	-- Scribe's quarters (rank 2: 129, rank 3: 130)
+						{	-- Your First Inscription Work Order
+							["questID"] = 36647,
+							["qg"] = 77372,	-- Eric Broadoak
+						},
 					}),
 					n(-99, { 	-- Stables
 						{	-- Besting a Boar

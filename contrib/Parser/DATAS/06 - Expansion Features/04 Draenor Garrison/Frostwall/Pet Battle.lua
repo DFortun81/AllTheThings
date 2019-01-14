@@ -12,12 +12,13 @@ _.ExpansionFeatures =
 					{	-- Battle Pet Tamers: Warlords
 						["questID"] = 40329,
 						["qg"] = 79858,	-- Serr'ah
-						["coord"] = { 32.6, 39.8 },
+						["coord"] = { 32.6, 39.8, 590 },
 						["races"] = HORDE_ONLY,
 						["isWeekly"] = true,
 					},
 					{	-- Critters of Draenor
 						["questID"] = 38300,
+						["coord"] = { 32.6, 39.8, 590 },
 						["qgs"] = {
 							91026,	-- Kura Thunderhoof (Spores, Dusty and Salad)
 							91361,	-- Kura Thunderhoof (Moon, Mouthy and Carl)
@@ -25,7 +26,6 @@ _.ExpansionFeatures =
 							91363,	-- Kura Thunderhoof (Sprouts, Prince Charming and Runts)
 							91364,	-- Kura Thunderhoof (Nicodemus, Brisby and Jenner)
 						},
-						["coord"] = { 32.6, 39.8 },
 						["groups"] = {
 							i(122535, {	-- Traveler's Pet Supplies
 								i(122532),	-- Bone Serpent
@@ -37,7 +37,7 @@ _.ExpansionFeatures =
 					{	-- Mastering the Menagerie
 						["questID"] = 37645,
 						["qg"] = 79858,	-- Serr'ah
-						["coord"] = { 32.6, 39.8 },
+						["coord"] = { 32.6, 39.8, 590 },
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 						["groups"] = {
@@ -55,12 +55,19 @@ _.ExpansionFeatures =
 					{	-- Pets Versus Pests
 						["questID"] = 36469,
 						["qg"] = 79858,	-- Serr'ah
-						["coord"] = { 32.6, 39.8 },
+						["coord"] = { 32.6, 39.8, 590 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 38242,	-- Unearthed Magic
+						["groups"] = {
+							{	-- Menagerie
+								["buildingID"] = 42,
+							},
+						},
 					},
 					{	-- Scrappin'
 						["questID"] = 36662,
 						["qg"] = 79858,	-- Serr'ah
-						["coord"] = { 32.6, 39.8 },
+						["coord"] = { 32.6, 39.8, 590 },
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 						["sourceQuest"] = 36469,	-- Pets Versus Pests
@@ -68,7 +75,7 @@ _.ExpansionFeatures =
 					{	-- Unearthed Magic
 						["questID"] = 38242,
 						["qg"] = 79858,	-- Serr'ah
-						["coord"] = { 32.6, 39.8 },
+						["coord"] = { 32.6, 39.8, 590 },
 						["races"] = HORDE_ONLY,
 					},
 				}),
