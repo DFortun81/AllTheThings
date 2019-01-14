@@ -23,8 +23,12 @@ _.Achievements =
 					{	-- Crushing Bones and Cracking Skulls
 						["achievementID"] = 5281,	-- Crushing Bones and Cracking Skulls
 					},
-					ach(5298),	-- Don't Need to Break Eggs to Make an Omelet
-					ach(6132),	-- Eclipse
+					{	-- Don't Need to Break Eggs to Make an Omelet
+						["achievementID"] = 5298,	-- Don't Need to Break Eggs to Make an Omelet
+					},
+					{	-- Eclipse
+						["achievementID"] = 6132,	-- Eclipse
+					},
 					ach(5289),	-- Extra Credit Bonus Stage
 					ach(5296),	-- Faster Than the Speed of Light
 					ach(5744, {	-- Gurubashi Headhunter
@@ -53,14 +57,23 @@ _.Achievements =
 					{	-- Heroic: Deadmines
 						["achievementID"] = 5083,	-- Heroic: Deadmines
 					},
-					ach(6117),	-- Heroic: End Time
-					ach(5062, {	-- Heroic: Grim Batol
-						ach(4840),	-- Grim Batol
-					}),
+					{	-- Heroic: End Time
+						["achievementID"] = 6117,	-- Heroic: End Time
+					},
+					{	-- Heroic: Grim Batol
+						["achievementID"] = 5062,	-- Heroic: Grim Batol
+						["g"] = {
+							{	-- Grim Batol
+								["achievementID"] = 4840,	-- Grim Batol
+							},
+						},
+					},
 					ach(5065, {	-- Heroic: Halls of Origination
 						ach(4841),	-- Halls of Origination
 					}),
-					ach(6119),	-- Heroic: Hour of Twilight
+					{	-- Heroic: Hour of Twilight
+						["achievementID"] = 6119,	-- Heroic: Hour of Twilight
+					},
 					ach(5066, {	-- Heroic: Lost City of the Tol'vir
 						ach(4848),	-- Lost City of the Tol'vir
 					}),
@@ -74,7 +87,9 @@ _.Achievements =
 					ach(5061, {	-- Heroic: Throne of the Tides
 						ach(4839),	-- Throne of the Tides
 					}),
-					ach(6118),	-- Heroic: Well of Eternity
+					{	-- Heroic: Well of Eternity
+						["achievementID"] = 6118,	-- Heroic: Well of Eternity
+					},
 					ach(5769),	-- Heroic: Zul'Aman
 					ach(5768),	-- Heroic: Zul'Gurub
 					ach(5761, {	-- Hex Mix
@@ -100,8 +115,12 @@ _.Achievements =
 					},
 					ach(5743),	-- It's Not Easy Being Green
 					ach(5290),	-- Kill It With Fire!
-					ach(6127),	-- Lazy Eye
-					ach(5995),	-- Moon Guard
+					{	-- Lazy Eye
+						["achievementID"] = 6127,	-- Lazy Eye
+					},
+					{	-- Moon Guard
+						["achievementID"] = 5995,	-- Moon Guard
+					},
 					ach(5288),	-- No Static at All
 					ach(5762),	-- Ohganot So Fast!
 					ach(5285),	-- Old Faithful
@@ -118,17 +137,23 @@ _.Achievements =
 					},
 					ach(5760),	-- Ring Out!
 					ach(5287),	-- Rotten to the Core
-					ach(6130),	-- Severed Ties
+					{	-- Severed Ties
+						["achievementID"] = 6130,	-- Severed Ties
+					},
 					ach(5759),	-- Spirit Twister
 					ach(5294),	-- Straw That Broke the Camel's Back
 					ach(5295),	-- Sun of a....
-					ach(6070),	-- That's Not Canon!
+					{	-- That's Not Canon!
+						["achievementID"] = 6070,	-- That's Not Canon!
+					},
 					ach(5504),	-- To the Ground!
 					{	-- Too Hot to Handle
 						["achievementID"] = 5283,	-- Too Hot to Handle
 					},
 					ach(5750),	-- Tunnel Vision
-					ach(5297),	-- Umbrage for Umbriss
+					{	-- Umbrage for Umbriss
+						["achievementID"] = 5297,	-- Umbrage for Umbriss
+					},
 					{	-- Vigorous VanCleef Vindicator
 						["achievementID"] = 5371,	-- Vigorous VanCleef Vindicator
 					},

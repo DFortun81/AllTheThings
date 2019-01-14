@@ -69,6 +69,9 @@ _.Instances =
 							un(2, i(56123)),	-- Red Scale Boots [Replaced with 56451]		
 						})),
 						cr(40484, e(134, { -- Erudax
+							{	-- Grim Batol
+								["achievementID"] = 4840,	-- Grim Batol
+							},
 							i( 56461),	-- Staff of Siphoned Essences
 							i( 56456),	-- Wild Hammer
 							i( 56459),	-- Mace of Transformed Bone
@@ -97,6 +100,9 @@ _.Instances =
 						["ignoreBonus"] = true,
 						["groups"] = {
 							cr(39625, e(131, { -- General Umbriss
+								{	-- Umbrage for Umbriss
+									["achievementID"] = 5297,	-- Umbrage for Umbriss
+								},
 								i( 56441),	-- Modgug's Blade
 								i(157612), 	-- Dragonkin Ward (Added 7.3.5)
 								i( 56443),	-- Wildhammer Riding Helm
@@ -132,6 +138,12 @@ _.Instances =
 								i( 56451),	-- Red Scale Boots
 							})),
 							cr(40484, e(134, { -- Erudax
+								{	-- Don't Need to Break Eggs to Make an Omelet
+									["achievementID"] = 5298,	-- Don't Need to Break Eggs to Make an Omelet
+								},
+								{	-- Heroic: Grim Batol
+									["achievementID"] = 5062,	-- Heroic: Grim Batol
+								},
 								i( 56461),	-- Staff of Siphoned Essences
 								i( 56456),	-- Wild Hammer
 								i( 56459),	-- Mace of Transformed Bone

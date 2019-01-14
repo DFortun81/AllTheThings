@@ -244,6 +244,26 @@ _.WorldDrops =
 						["itemID"] = 55417,	-- Swamplight Ring
 					},
 				}),
+				filter(53, {	-- Trinket
+					{	-- Binding Promise
+						["itemID"] = 67037,	-- Binding Promise
+					},
+					{	-- Bottled Lightning
+						["itemID"] = 66879,	-- Bottled Lightning
+					},
+					{	-- Electrospark Heartstarter
+						["itemID"] = 67118,	-- Electrospark Heartstarter
+					},
+					{	-- Heart of the Vile
+						["itemID"] = 66969,	-- Heart of the Vile
+					},
+					{	-- Soul's Anguish
+						["itemID"] = 66994,	-- Soul's Anguish
+					},
+					{	-- Unquenchable Flame
+						["itemID"] = 67101,	-- Unquenchable Flame
+					},
+				}),
 			}),
 		},
 		["tierID"] = 4
