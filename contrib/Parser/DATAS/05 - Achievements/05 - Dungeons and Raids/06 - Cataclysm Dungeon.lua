@@ -2,14 +2,6 @@
 --   A C H I E V E M E N T S    M O D U L E    --
 --------------------------------------------------
 
---[[
-8.0 Pre-Patch alignment complete
-To do: 
-1) Review crit items to see if achievements / items / etc can replace them to provide more information when looking at them in the ATT lists
-2) Add [Reward] tag
-3) Source to local files if applicable
-]]--
-
 _.Achievements = 
 {
 	n(-9959, { -- Dungeons & Raids
@@ -17,14 +9,20 @@ _.Achievements =
 			n(-10006, { -- Cataclysm Dungeon
 				["groups"] = {
 					ach(5291),	-- Acrocalypse Now
-					ach(5282),	-- Arrested Development
-					ach(5284),	-- Ascendant Descending
+					{	-- Arrested Development
+						["achievementID"] = 5282,	-- Arrested Development
+					},
+					{	-- Ascendant Descending
+						["achievementID"] = 5284,	-- Ascendant Descending
+					},
 					ach(5858),	-- Bear-ly Made It
 					ach(5505, {	-- Bullet Time
 						crit(1),	-- Defeat Lord Godfrey
 						crit(2),	-- Bloodthirsty Ghouls killed by Pistol Barrage
 					}),
-					ach(5281),	-- Crushing Bones and Cracking Skulls
+					{	-- Crushing Bones and Cracking Skulls
+						["achievementID"] = 5281,	-- Crushing Bones and Cracking Skulls
+					},
 					ach(5298),	-- Don't Need to Break Eggs to Make an Omelet
 					ach(6132),	-- Eclipse
 					ach(5289),	-- Extra Credit Bonus Stage
@@ -44,10 +42,17 @@ _.Achievements =
 						crit(1),	-- 4 cats fed
 						crit(2),	-- Defeat High Priestess Kilnara
 					}),
-					ach(5060, {	-- Heroic: Blackrock Caverns
-						ach(4833),	-- Blackrock Caverns
-					}),
-					ach(5083),	-- Heroic: Deadmines
+					{	-- Heroic: Blackrock Caverns
+						["achievementID"] = 5060,	-- Heroic: Blackrock Caverns
+						["g"] = {
+							{	-- Blackrock Caverns
+								["achievementID"] = 4833,	-- Blackrock Caverns
+							},
+						},
+					},
+					{	-- Heroic: Deadmines
+						["achievementID"] = 5083,	-- Heroic: Deadmines
+					},
 					ach(6117),	-- Heroic: End Time
 					ach(5062, {	-- Heroic: Grim Batol
 						ach(4840),	-- Grim Batol
@@ -87,8 +92,12 @@ _.Achievements =
 						crit(12),	-- Melissa saved.
 					}),
 					ach(5293),	-- I Hate That Song
-					ach(5370),	-- I'm on a Diet
-					ach(5369),	-- It's Frost Damage
+					{	-- I'm on a Diet
+						["achievementID"] = 5370,	-- I'm on a Diet
+					},
+					{	-- It's Frost Damage
+						["achievementID"] = 5369,	-- It's Frost Damage
+					},
 					ach(5743),	-- It's Not Easy Being Green
 					ach(5290),	-- Kill It With Fire!
 					ach(6127),	-- Lazy Eye
@@ -98,9 +107,15 @@ _.Achievements =
 					ach(5285),	-- Old Faithful
 					ach(5503),	-- Pardon Denied
 					ach(5286),	-- Prince of Tides
-					ach(5368),	-- Prototype Prodigy
-					ach(5367),	-- Rat Pack
-					ach(5366),	-- Ready for Raiding
+					{	-- Prototype Prodigy
+						["achievementID"] = 5368,	-- Prototype Prodigy
+					},
+					{	-- Rat Pack
+						["achievementID"] = 5367,	-- Rat Pack
+					},
+					{	-- Ready for Raiding
+						["achievementID"] = 5366,	-- Ready for Raiding
+					},
 					ach(5760),	-- Ring Out!
 					ach(5287),	-- Rotten to the Core
 					ach(6130),	-- Severed Ties
@@ -109,10 +124,14 @@ _.Achievements =
 					ach(5295),	-- Sun of a....
 					ach(6070),	-- That's Not Canon!
 					ach(5504),	-- To the Ground!
-					ach(5283),	-- Too Hot to Handle
+					{	-- Too Hot to Handle
+						["achievementID"] = 5283,	-- Too Hot to Handle
+					},
 					ach(5750),	-- Tunnel Vision
 					ach(5297),	-- Umbrage for Umbriss
-					ach(5371),	-- Vigorous VanCleef Vindicator
+					{	-- Vigorous VanCleef Vindicator
+						["achievementID"] = 5371,	-- Vigorous VanCleef Vindicator
+					},
 				},
 			}),
 		},

@@ -142,6 +142,9 @@ _.Instances =
 							}),								
 						})),
 						cr(39705, e(109, { -- Ascendent Lord Obsidius
+							{	-- Blackrock Caverns
+								["achievementID"] = 4833,	-- Blackrock Caverns
+							},
 							i(56317), 	-- Amber Messenger
 							i(56322), 	-- Crepuscular Shield
 							i(56321), 	-- Willowy Crown
@@ -167,6 +170,9 @@ _.Instances =
 						["ignoreBonus"] = true,
 						["groups"] = {
 							cr(39665, e(105, { -- Rom'ogg Boncrusher
+								{	-- Crushing Bones and Cracking Skulls
+									["achievementID"] = 5281,	-- Crushing Bones and Cracking Skulls
+								},
 								i( 56312),	-- Torturer's Mercy
 								i( 56314),	-- Shield of the Iron Maiden
 								i( 56311),	-- Inquisition Robes
@@ -183,6 +189,9 @@ _.Instances =
 									["achievementID"] = 1693,    -- Fool For Love
 									["u"] = 18,
 								}),
+								{	-- Arrested Development
+									["achievementID"] = 5282,	-- Arrested Development
+								},
 								i(56296),	-- Corla's Baton
 								i(56298),	-- Renouncer's Cowl
 								i(56297),	-- Armbands of Change
@@ -190,6 +199,9 @@ _.Instances =
 								i(56295),	-- Grace of the Herald
 							})),
 							cr(39698, e(107, { -- Karsh Steelbender
+								{	-- Too Hot to Handle
+									["achievementID"] = 5283,	-- Too Hot to Handle
+								},
 								i( 56302), 	-- Steelbender's Masterpiece
 								i( 56300),	-- Quicksilver Amulet
 								i( 56304), 	-- Burned Gatherings
@@ -206,6 +218,12 @@ _.Instances =
 								i( 56307),	-- Kibble
 							})),
 							cr(39705, e(109, { -- Ascendent Lord Obsidius
+								{	-- Ascendant Descending
+									["achievementID"] = 5284,	-- Ascendant Descending
+								},
+								{	-- Heroic: Blackrock Caverns
+									["achievementID"] = 5060,	-- Heroic: Blackrock Caverns
+								},
 								i(56317), 	-- Amber Messenger
 								i(56322), 	-- Crepuscular Shield
 								i(56321), 	-- Willowy Crown

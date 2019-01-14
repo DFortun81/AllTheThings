@@ -54,6 +54,9 @@ _.Instances =
 								},
 							}),
 							cr(47162, e(89, { -- Glubtok
+								{	-- Ready for Raiding
+									["achievementID"] = 5366,	-- Ready for Raiding
+								},
 								i( 65163),	-- Buzzer Blade
 								i( 63470),	-- Missing Diplomat's Pauldrons
 								i( 63467),	-- Shadow of the Past
@@ -62,6 +65,9 @@ _.Instances =
 								i(157628),	-- Gold-Flecked Gloves
 							})),
 							cr(47296, e(90, { -- Helix Gearbreaker
+								{	-- Rat Pack
+									["achievementID"] = 5367,	-- Rat Pack
+								},
 								i( 65164),	-- Cruel Barb
 								i( 63473),	-- Cloak of Thredd
 								i(157752),	-- Armbands of Exiled Architects
@@ -70,6 +76,9 @@ _.Instances =
 								i( 63475),	-- Old Friend's Gloves
 							})),
 							cr(43778, e(91, { -- Foe Reaper 5000
+								{	-- Prototype Prodigy
+									["achievementID"] = 5368,	-- Prototype Prodigy
+								},
 								i( 65167),	-- Emberstone Staff
 								i( 65165),	-- Foe Reaper
 								i( 65166),	-- Buzz Saw
@@ -78,6 +87,9 @@ _.Instances =
 								i(157754),	-- Old Friend's Gloves
 							})),
 							cr(47626, e(92, { -- Admiral Ripsnarl
+								{	-- It's Frost Damage
+									["achievementID"] = 5369,	-- It's Frost Damage
+								},
 								ig(44731),	-- Bouquet of Ebon Roses
 								ig(22206),	-- Bouquet of Red Roses
 								i( 65168),	-- Rockslicer
@@ -85,6 +97,9 @@ _.Instances =
 								i( 65169),	-- Lavishly Jeweled Ring
 							})),
 							cr(47739, e(93, { -- "Captain" Cookie
+								{	-- I'm on a Diet
+									["achievementID"] = 5370,	-- I'm on a Diet
+								},
 								i(65171),	-- Cookie's Tendurizer
 								i(65173),	-- Thief's Blade
 								i(65172),	-- Cookie's Stirring Rod
@@ -92,6 +107,12 @@ _.Instances =
 								i(65174),	-- Corsair's Overshirt
 							})),
 							cr(49541, e(95, { -- Vanessa VanCleef
+								{	-- Heroic: Deadmines
+									["achievementID"] = 5083,	-- Heroic: Deadmines
+								},
+								{	-- Vigorous VanCleef Vindicator
+									["achievementID"] = 5371,	-- Vigorous VanCleef Vindicator
+								},
 								i(63485),	-- Cowl of Rebellion
 								i(63478),	-- Stonemason's Helm
 								i(63484),	-- Armbands of Exiled Architects

@@ -30,8 +30,10 @@ _.Instances =
 										["g"] = {
 											{	-- Black Ice
 												["itemID"] = 133997,		-- Black Ice
+												["collectible"] = false,	-- Yay, Blizzard gave these sourceID's
 											},
 											{	-- Golden Necklace			-- Golden Necklace
+												["itemID"] = 69863,			-- Golden Necklace
 												["collectible"] = false,	-- Yay, Blizzard gave these sourceID's
 											},
 										},
