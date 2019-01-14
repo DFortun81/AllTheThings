@@ -22,9 +22,7 @@ _.GearSets =
 					["classes"] = { 5, 8, 9, 11, 7 }
 				}),
 				i(77949, { -- Golad, Twilight of Aspects
-					i(77950, { -- Tiriosh, Nightmare of Ages
-						["classes"] = { 4 }
-					}),
+					["classes"] = { 4 }
 				}),
 				i(49623, { -- Shadowmourne
 					["classes"] = { 1, 2, 6 }
@@ -37,6 +35,9 @@ _.GearSets =
 				}),
 				i(34334, { -- Thori'dal, the Stars' Fury
 					["classes"] = { 1, 3, 4, }
+				}),
+				i(77950, { -- Tiriosh, Nightmare of Ages
+					["classes"] = { 4 }
 				}),
 				i(46017, { -- Val'anyr, Hammer of Ancient Kings (Priest, Druid, Monk, Shaman, Paladin)
 					["classes"] = { 5, 11, 10, 7, 2 }
