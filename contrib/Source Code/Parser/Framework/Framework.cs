@@ -1391,15 +1391,19 @@ namespace Parser_V2
             bool hasG = false;
             VALUE g = default(VALUE);    // Look for the G Field.
             var data2 = new Dictionary<object, object>();
-            foreach (var pair in data)
+            var keys = data.Keys.ToList();
+            for(int i = 0,count=keys.Count;i < count; ++i)
             {
-                if (pair.Key.ToString() == "g")
+                if (keys[i].ToString() == "g")
                 {
-                    g = pair.Value;
+                    g = data[keys[i]];
+                    keys.RemoveAt(i);
                     hasG = true;
+                    break;
                 }
-                else data2[pair.Key] = pair.Value;
             }
+            keys.Sort();
+            foreach (var key in keys) data2[key] = data[key];
             string mostSignificantType = Objects.CalculateMostSignificantFieldType(data2);
 
             // Export Fields
