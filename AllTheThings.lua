@@ -8603,6 +8603,15 @@ app:GetWindow("Debugger", UIParent, function(self)
 					info.faction = UnitFactionGroup(npc);
 				end
 				self:AddObject(info);
+			elseif e == "CHAT_MSG_LOOT" then
+				local msg, player, a, b, c, d, e, f, g, h, i, j, k, l = ...;
+				local itemString = string.match(msg, "item[%-?%d:]+");
+				if itemString then
+					local rawGroups = {};
+					local itemID = GetItemInfoInstant(itemString);
+					table.insert(rawGroups, { ["itemID"] = itemID, ["s"] = app.GetSourceID(itemString, itemID) });
+					self:AddObject({ ["unit"] = j, ["g"] = rawGroups });
+				end
 			end
 		end);
 		self:RegisterEvent("PLAYER_LOGIN");
@@ -8613,6 +8622,7 @@ app:GetWindow("Debugger", UIParent, function(self)
 		self:RegisterEvent("NEW_WMO_CHUNK");
 		self:RegisterEvent("MERCHANT_SHOW");
 		self:RegisterEvent("MERCHANT_UPDATE");
+		self:RegisterEvent("CHAT_MSG_LOOT");
 		--self:RegisterAllEvents();
 	end
 	
