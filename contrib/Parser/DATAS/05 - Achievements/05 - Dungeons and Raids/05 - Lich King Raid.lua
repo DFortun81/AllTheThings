@@ -37,10 +37,18 @@ _.Achievements =
 							},
 						},
 					},
-					ach(2176),		-- And They Would All Go Down Together (10 player)
-					ach(2177),		-- And They Would All Go Down Together (25 player)
-					ach(1858),		-- Arachnophobia (10 player)
-					ach(1859),		-- Arachnophobia (25 player)
+					{	-- And They Would All Go Down Together (10 player)
+						["achievementID"] = 2176,	-- And They Would All Go Down Together (10 player)
+					},
+					{	-- And They Would All Go Down Together (25 player)
+						["achievementID"] = 2177,	-- And They Would All Go Down Together (25 player)
+					},
+					{	-- Arachnophobia (10 player)
+						["achievementID"] = 1858,	-- Arachnophobia (10 player)
+					},
+					{	-- Arachnophobia (25 player)
+						["achievementID"] = 1859,	-- Arachnophobia (25 player)
+					},
 					{	-- Bane of the Fallen King
 						["achievementID"] = 4583,	-- Bane of the Fallen King
 						["g"] = {
@@ -699,10 +707,18 @@ _.Achievements =
 					{	-- Iron Dwarf, Medium Rare
 						["achievementID"] = 12322,	-- Iron Dwarf, Medium Rare
 					},
-					ach(2184),		-- Just Can't Get Enough (10 player)
-					ach(2185),		-- Just Can't Get Enough (25 player)
-					ach(574),		-- Kel'Thuzad's Defeat (10 player)
-					ach(575),		-- Kel'Thuzad's Defeat (25 player)
+					{	-- Just Can't Get Enough (10 player)
+						["achievementID"] = 2184,	-- Just Can't Get Enough (10 player)
+					},
+					{	-- Just Can't Get Enough (25 player)
+						["achievementID"] = 2185,	-- Just Can't Get Enough (25 player)
+					},
+					{	-- Kel'Thuzad's Defeat (10 player)
+						["achievementID"] = 574,	-- Kel'Thuzad's Defeat (10 player)
+					},
+					{	-- Kel'Thuzad's Defeat (25 player)
+						["achievementID"] = 575,	-- Kel'Thuzad's Defeat (25 player)
+					},
 					{	-- Kiss and Make Up
 						["achievementID"] = 12384,	-- Kiss and Make Up
 						["description"] = "During phase 2 Sara is flying above Yogg-Saron, /kiss her while she's angry.",
@@ -760,12 +776,6 @@ _.Achievements =
 							},
 						},
 					},
-					ach(1877, {		-- Less Is More (25 player)
-						crit(1),		-- Vesperon
-						crit(2),		-- Tenebron
-						crit(3),		-- Shadron
-						crit(4),		-- Sartharion
-					}),
 					{	-- Lose Your Illusion
 						["achievementID"] = 12352,	-- Lose Your Illusion
 					},
@@ -773,16 +783,24 @@ _.Achievements =
 						["achievementID"] = 12360,	-- Lumberjacked
 						["description"] = "Must be killed before killing Freya or they will despawn.",
 					},
-					ach(1856),		-- Make Quick Werk of Him (10 player)
-					ach(1857),		-- Make Quick Werk of Him (25 player)
+					{	-- Make Quick Werk of Him (10 player)
+						["achievementID"] = 1856,	-- Make Quick Werk of Him (10 player)
+					},
+					{	-- Make Quick Werk of Him (25 player)
+						["achievementID"] = 1857,	-- Make Quick Werk of Him (25 player)
+					},
 					{	-- Many Whelps! Handle It! (10 player)
 						["achievementID"] = 4403,	-- Many Whelps! Handle It! (10 player)
 					},
 					{	-- Many Whelps! Handle It! (25 player)
 						["achievementID"] = 4406,	-- Many Whelps! Handle It! (25 player)
 					},
-					ach(1997),		-- Momma Said Knock You Out (10 player)
-					ach(2140),		-- Momma Said Knock You Out (25 player)
+					{	-- Momma Said Knock You Out (10 player)
+						["achievementID"] = 1997,	-- Momma Said Knock You Out (10 player)
+					},
+					{	-- Momma Said Knock You Out (25 player)
+						["achievementID"] = 2140,	-- Momma Said Knock You Out (25 player)
+					},
 					{	-- More Dots! (10 player)
 						["achievementID"] = 4402,	-- More Dots! (10 player)
 					},
@@ -900,8 +918,12 @@ _.Achievements =
 					{	-- Salt and Pepper (25 player)
 						["achievementID"] = 3815,	-- Salt and Pepper (25 player)
 					},
-					ach(572),		-- Sapphiron's Demise (10 player)
-					ach(573),		-- Sapphiron's Demise (25 player)
+					{	-- Sapphiron's Demise (10 player)
+						["achievementID"] = 572,	-- Sapphiron's Demise (10 player)
+					},
+					{	-- Sapphiron's Demise (25 player)
+						["achievementID"] = 573,	-- Sapphiron's Demise (25 player)
+					},
 					{	-- Set Up Us the Bomb
 						["achievementID"] = 12367,	-- Set Up Us the Bomb
 						["g"] = {
@@ -931,24 +953,36 @@ _.Achievements =
 					{	-- She Deep Breaths More (25 player)
 						["achievementID"] = 4407,	-- She Deep Breaths More (25 player)
 					},
-					ach(2178),		-- Shocking! (10 player)
-					ach(2179),		-- Shocking! (25 player)
+					{	-- Shocking! (10 player)
+						["achievementID"] = 2178,	-- Shocking! (10 player)
+					},
+					{	-- Shocking! (25 player)
+						["achievementID"] = 2179,	-- Shocking! (25 player)
+					},
 					{	-- Shutout
 						["achievementID"] = 12316,	-- Shutout
 					},
 					{	-- Siffed
 						["achievementID"] = 12351,	-- Siffed
 					},
-					ach(2182),		-- Spore Loser (10 player)
-					ach(2183),		-- Spore Loser (25 player)
+					{	-- Spore Loser (10 player)
+						["achievementID"] = 2182,	-- Spore Loser (10 player)
+					},
+					{	-- Spore Loser (25 player)
+						["achievementID"] = 2183,	-- Spore Loser (25 player)
+					},
 					{	-- Staying Buffed All Winter
 						["achievementID"] = 12346,	-- Staying Buffed All Winter
 					},
 					{	-- Stokin' the Furnace
 						["achievementID"] = 12325,	-- Stokin' the Furnace
 					},
-					ach(2180),		-- Subtraction (10 player)
-					ach(2181),		-- Subtraction (25 player)
+					{	-- Subtraction (10 player)
+						["achievementID"] = 2180,	-- Subtraction (10 player)
+					},
+					{	-- Subtraction (25 player)
+						["achievementID"] = 2181,	-- Subtraction (25 player)
+					},
 					{	-- Supermassive
 						["achievementID"] = 12400,	-- Supermassive
 						["g"] = {
@@ -982,28 +1016,82 @@ _.Achievements =
 							},
 						},
 					},
-					ach(562, {		-- The Arachnid Quarter (10 player)
-						crit(1),		-- Anub'Rekhan
-						crit(2),		-- Grand Widow Faerlina
-						crit(3),		-- Maexxna
-					}),
-					ach(563, {		-- The Arachnid Quarter (25 player)
-						crit(1),		-- Anub'Rekhan
-						crit(2),		-- Grand Widow Faerlina
-						crit(3),		-- Maexxna
-					}),
-					ach(564, {		-- The Construct Quarter (10 player)
-						crit(1),		-- Patchwerk
-						crit(2),		-- Grobbulus
-						crit(3),		-- Gluth
-						crit(4),		-- Thaddius
-					}),
-					ach(565, {		-- The Construct Quarter (25 player)
-						crit(1),		-- Patchwerk
-						crit(2),		-- Grobbulus
-						crit(3),		-- Gluth
-						crit(4),		-- Thaddius
-					}),
+					{	-- The Arachnid Quarter (10 player)
+						["achievementID"] = 562,	-- The Arachnid Quarter (10 player)
+						["g"] = {
+							{	-- Anub'Rekhan
+								["achievementID"] = 562,	-- The Arachnid Quarter (10 player)
+								["criteriaID"] = 1,	-- Anub'Rekhan
+							},
+							{	-- Grand Widow Faerlina
+								["achievementID"] = 562,	-- The Arachnid Quarter (10 player)
+								["criteriaID"] = 2,	-- Grand Widow Faerlina
+							},
+							{	-- Maexxna
+								["achievementID"] = 562,	-- The Arachnid Quarter (10 player)
+								["criteriaID"] = 3,	-- Maexxna
+							},
+						},
+					},
+					{	-- The Arachnid Quarter (25 player)
+						["achievementID"] = 563,	-- The Arachnid Quarter (25 player)
+						["g"] = {
+							{	-- Anub'Rekhan
+								["achievementID"] = 563,	-- The Arachnid Quarter (25 player)
+								["criteriaID"] = 1,	-- Anub'Rekhan
+							},
+							{	-- Grand Widow Faerlina
+								["achievementID"] = 563,	-- The Arachnid Quarter (25 player)
+								["criteriaID"] = 2,	-- Grand Widow Faerlina
+							},
+							{	-- Maexxna
+								["achievementID"] = 563,	-- The Arachnid Quarter (25 player)
+								["criteriaID"] = 3,	-- Maexxna
+							},
+						},
+					},
+					{	-- The Construct Quarter (10 player)
+						["achievementID"] = 564,	-- The Construct Quarter (10 player)
+						["g"] = {
+							{	-- Patchwerk
+								["achievementID"] = 564,	-- The Construct Quarter (10 player)
+								["criteriaID"] = 1,	-- Patchwerk
+							},
+							{	-- Grobbulus
+								["achievementID"] = 564,	-- The Construct Quarter (10 player)
+								["criteriaID"] = 2,	-- Grobbulus
+							},
+							{	-- Gluth
+								["achievementID"] = 564,	-- The Construct Quarter (10 player)
+								["criteriaID"] = 3,	-- Gluth
+							},
+							{	-- Thaddius
+								["achievementID"] = 564,	-- The Construct Quarter (10 player)
+								["criteriaID"] = 4,	-- Thaddius
+							},
+						},
+					},
+					{	-- The Construct Quarter (25 player)
+						["achievementID"] = 565,	-- The Construct Quarter (25 player)
+						["g"] = {
+							{	-- Patchwerk
+								["achievementID"] = 565,	-- The Construct Quarter (25 player)
+								["criteriaID"] = 1,	-- Patchwerk
+							},
+							{	-- Grobbulus
+								["achievementID"] = 565,	-- The Construct Quarter (25 player)
+								["criteriaID"] = 2,	-- Grobbulus
+							},
+							{	-- Gluth
+								["achievementID"] = 565,	-- The Construct Quarter (25 player)
+								["criteriaID"] = 3,	-- Gluth
+							},
+							{	-- Thaddius
+								["achievementID"] = 565,	-- The Construct Quarter (25 player)
+								["criteriaID"] = 4,	-- Thaddius
+							},
+						},
+					},
 					{	-- The Dedicated Few (10 player): Kel'Thuzad
 						["achievementID"] = 578,	-- The Dedicated Few (10 player)
 						["g"] = {
@@ -1197,8 +1285,12 @@ _.Achievements =
 							},
 						},
 					},
-					ach(2146),		-- The Hundred Club (10 player)
-					ach(2147),		-- The Hundred Club (25 player)
+					{	-- The Hundred Club (10 player)
+						["achievementID"] = 2146,	-- The Hundred Club (10 player)
+					},
+					{	-- The Hundred Club (25 player)
+						["achievementID"] = 2147,	-- The Hundred Club (25 player)
+					},
 					{	-- The Keepers of Ulduar
 						["achievementID"] = 12309,	-- The Keepers of Ulduar
 						["g"] = {
@@ -1236,40 +1328,107 @@ _.Achievements =
 							},
 						},
 					},
-					ach(568, {		-- The Military Quarter (10 player)
-						crit(1),		-- Instructor Razuvious
-						crit(2),		-- Gothik the Harvester
-						crit(3),		-- The Four Horsemen
-					}),
-					ach(569, {		-- The Military Quarter (25 player)
-						crit(1),		-- Instructor Razuvious
-						crit(2),		-- Gothik the Harvester
-						crit(3),		-- The Four Horsemen
-					}),
+					{	-- The Military Quarter (10 player)
+						["achievementID"] = 568,	-- The Military Quarter (10 player)
+						["g"] = {
+							{	-- Instructor Razuvious
+								["achievementID"] = 568,	-- The Military Quarter (10 player)
+								["criteriaID"] = 1,	-- Instructor Razuvious
+							},
+							{	-- Gothik the Harvester
+								["achievementID"] = 568,	-- The Military Quarter (10 player)
+								["criteriaID"] = 2,	-- Gothik the Harvester
+							},
+							{	-- The Four Horsemen
+								["achievementID"] = 568,	-- The Military Quarter (10 player)
+								["criteriaID"] = 3,	-- The Four Horsemen
+							},
+						},
+					},
+					{	-- The Military Quarter (25 player)
+						["achievementID"] = 569,	-- The Military Quarter (25 player)
+						["g"] = {
+							{	-- Instructor Razuvious
+								["achievementID"] = 569,	-- The Military Quarter (25 player)
+								["criteriaID"] = 1,	-- Instructor Razuvious
+							},
+							{	-- Gothik the Harvester
+								["achievementID"] = 569,	-- The Military Quarter (25 player)
+								["criteriaID"] = 2,	-- Gothik the Harvester
+							},
+							{	-- The Four Horsemen
+								["achievementID"] = 569,	-- The Military Quarter (25 player)
+								["criteriaID"] = 3,	-- The Four Horsemen
+							},
+						},
+					},
 					{	-- The Orb Whisperer (10 player)
 						["achievementID"] = 4582,	-- The Orb Whisperer (10 player)
 					},
 					{	-- The Orb Whisperer (25 player)
 						["achievementID"] = 4617,	-- The Orb Whisperer (25 player)
 					},
-					ach(566, {		-- The Plague Quarter (10 player)
-						crit(1),		-- Noth the Plaguebringer
-						crit(2),		-- Heigan the Unclean
-						crit(3),		-- Loatheb
-					}),
-					ach(567, {		-- The Plague Quarter (25 player)
-						crit(1),		-- Noth the Plaguebringer
-						crit(2),		-- Heigan the Unclean
-						crit(3),		-- Loatheb
-					}),
-					ach(1996),		-- The Safety Dance (10 player)
-					ach(2139),		-- The Safety Dance (25 player)
-					ach(12311, {	-- The Secrets of Ulduar
-						crit(1),		-- The Siege of Ulduar
-						crit(2),		-- The Antechamber of Ulduar
-						crit(3),		-- The Keepers of Ulduar
-						crit(4),		-- The Descent into Madness
-					}),
+					{	-- The Plague Quarter (10 player)
+						["achievementID"] = 566,	-- The Plague Quarter (10 player)
+						["g"] = {
+							{	-- Noth the Plaguebringer
+								["achievementID"] = 566,	-- The Plague Quarter (10 player)
+								["criteriaID"] = 1,	-- Noth the Plaguebringer
+							},
+							{	-- Heigan the Unclean
+								["achievementID"] = 566,	-- The Plague Quarter (10 player)
+								["criteriaID"] = 2,	-- Heigan the Unclean
+							},
+							{	-- Loatheb
+								["achievementID"] = 566,	-- The Plague Quarter (10 player)
+								["criteriaID"] = 3,	-- Loatheb
+							},
+						},
+					},
+					{	-- The Plague Quarter (25 player)
+						["achievementID"] = 567,	-- The Plague Quarter (25 player)
+						["g"] = {
+							{	-- Noth the Plaguebringer
+								["achievementID"] = 567,	-- The Plague Quarter (25 player)
+								["criteriaID"] = 1,	-- Noth the Plaguebringer
+							},
+							{	-- Heigan the Unclean
+								["achievementID"] = 567,	-- The Plague Quarter (25 player)
+								["criteriaID"] = 2,	-- Heigan the Unclean
+							},
+							{	-- Loatheb
+								["achievementID"] = 567,	-- The Plague Quarter (25 player)
+								["criteriaID"] = 3,	-- Loatheb
+							},
+						},
+					},
+					{	-- The Safety Dance (10 player)
+						["achievementID"] = 1996,	-- The Safety Dance (10 player)
+					},
+					{	-- The Safety Dance (25 player)
+						["achievementID"] = 2139,	-- The Safety Dance (25 player)
+					},
+					{	-- The Secrets of Ulduar
+						["achievementID"] = 12311,	-- The Secrets of Ulduar
+						["g"] = {
+							{	-- The Siege of Ulduar
+								["achievementID"] = 12311,	-- The Secrets of Ulduar
+								["criteriaID"] = 1,	-- The Siege of Ulduar
+							},
+							{	-- The Antechamber of Ulduar
+								["achievementID"] = 12311,	-- The Secrets of Ulduar
+								["criteriaID"] = 2,	-- The Antechamber of Ulduar
+							},
+							{	-- The Keepers of Ulduar
+								["achievementID"] = 12311,	-- The Secrets of Ulduar
+								["criteriaID"] = 3,	-- The Keepers of Ulduar
+							},
+							{	-- The Descent into Madness
+								["achievementID"] = 12311,	-- The Secrets of Ulduar
+								["criteriaID"] = 4,	-- The Descent into Madness
+							},
+						},
+					},
 					{	-- The Siege of Ulduar
 						["achievementID"] = 12297,	-- The Siege of Ulduar
 						["g"] = {
@@ -1331,11 +1490,6 @@ _.Achievements =
 							},
 						},
 					},
-					ach(2054, {		-- The Twilight Zone (25 player)
-						title(89),		-- Twilight Vanquisher
-						ach(2053),		-- Twilight Duo (25 player)
-						ach(2052),		-- Twilight Assist (25 player)
-					}),
 					{	-- They're Coming Out of the Walls
 						["achievementID"] = 12397,	-- They're Coming Out of the Walls
 					},
