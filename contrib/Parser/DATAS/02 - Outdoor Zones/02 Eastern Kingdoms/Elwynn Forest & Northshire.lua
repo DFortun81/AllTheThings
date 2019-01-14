@@ -326,7 +326,9 @@ _.Zones =
 							},
 							["g"] = {
 								i(3678),	-- Recipe: Crocolisk Steak
-								i(7997),	-- Red Defias Mask
+								i(7997, {	-- Red Defias Mask
+									["collectible"] = false,
+								}),
 								i(2057,	{ -- Pitted Defias Shortsword
 									["collectible"] = false,
 								}),
