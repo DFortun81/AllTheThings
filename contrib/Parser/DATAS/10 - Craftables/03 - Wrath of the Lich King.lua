@@ -446,9 +446,6 @@ _.Craftables =
 				i(45853),	-- Rituals of the New Moon
 				i(45849),	-- Twilight Tome
 			}),
-			un(2, i(43361, {	-- Charred Glyph (Original Name unknown, maybe Glyph of Polymorph)
-				un(2, i(120139)),	-- Tome of Polymorph: Penguin
-			})),
 		}),
 		n(-186, { 	-- Jewelcrafting
 		-- Reviewed and updated as of 11.27.2018 BfA 8.0

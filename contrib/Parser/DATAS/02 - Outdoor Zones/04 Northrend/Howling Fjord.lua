@@ -1428,6 +1428,7 @@ _.Zones =
 								["achievementID"] = 2257,	-- Frostbitten [Achievement]
 								["criteriaID"] = 9,	-- King Ping [Criteria]
 							},
+							un(2, i(120139)),    -- Tome of Polymorph: Penguin
 							i(44668),	-- Egg-Warming Blanket
 							i(44663),	-- Abandoned Adventurer's Satchel
 						},
