@@ -58,7 +58,6 @@ _.Mounts =
 		i(143864),	-- Prestigious War Wolf
 		{	-- Reins of the Onyx War Hyena
 			["itemID"] = 166417,	-- Reins of the Onyx War Hyena
-			["u"] = 1,	-- Presumably Random Win from any rated Bracket in Season 2, but unclear for now and marked as unobtainable
 		},
 		i(138387),	-- Ratstallion
 		i(44842),	-- Red Dragonhawk
