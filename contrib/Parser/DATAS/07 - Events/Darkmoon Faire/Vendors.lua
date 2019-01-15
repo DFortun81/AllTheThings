@@ -228,6 +228,12 @@ _.WorldEvents =
 						{	-- Flimsy Yellow Balloon
 							["itemID"] = 75042,	-- Flimsy Yellow Balloon
 						},
+						{	-- Flimsy Darkmoon Balloon
+							["itemID"] = 75040,	-- Flimsy Darkmoon Balloon
+						},
+						{	-- Flimsy Green Balloon
+							["itemID"] = 75041,	-- Flimsy Green Balloon
+						},
 					},
 				},
 				n(85484, { -- Chester

@@ -483,6 +483,7 @@ _.NeverImplemented =
 		n(-349, { -- Cosmetic
 			un(1, i(134110)), -- Hidden Helm
 			un(1, i(134111)), -- Hidden Cloak
+			un(1, i(52488)),	-- Jeweler's Sapphire Monocle (other version got added)
 			un(1, i(133996)),	-- Was testing version, they added i(134022))	-- Burgy Blackheart's Handsome Hat
 			un(1, i(142503)), 	-- Hidden Shirt
 			un(1, i(146305)), 	-- Green Winter Hat										{STUCK ON RETRIEVING DATA)
@@ -782,6 +783,7 @@ _.NeverImplemented =
 		p(1751),
 	}))),
 		un(1, i(130145)), -- Unknown
+		un(1, i(67417)),	-- DND lil dw placeholder
 		un(1, i(163559)),	-- Queen Cobra. Old Magni Rep Rewards, they added it via a different item
 		un(1, i(163557)),	-- Gigan Tarantula. Old Magni Rep Rewards, they added it via a different item
 		un(1, i(163556)),	-- Mechanized Gulper. Old Magni Rep Rewards, they added it via a different item
@@ -1170,10 +1172,13 @@ _.NeverImplemented =
 		n(-387,	{	-- Relics
 			un(1, i(132252)),	-- Owen Test Relic
 			un(1, i(130162)),    -- Val-Sharah Artifact Gem #1
-			-- shield
+		}),
+		n(-332, { -- Shields
 			un(1, i(165617)),	-- Unknown
 			un(1, i(139439)),	-- Highkeepers' Ward
 			un(1, i(34415)),	-- Crystaline Shard Shield
+			un(1, i(54554)),	-- Bejeweled Ship's Wheel
+			un(1, i(60220)),	-- Unknown
 		}),
 		n(-342, { -- Staves
 			un(1, i(132474)),	-- Unknown - was under Legion>Staves
@@ -1225,10 +1230,12 @@ _.NeverImplemented =
 		n(-335, { -- Two Handed Axes
 			un(1, i(134563)),	-- Unknown
 			un(1, i(108782)),	-- Unknown
+			un(1, i(69916)),	-- Trollbane (Test)
 			un(1, i(109519)),	-- Unknown
 			un(1, i(165265)),	-- Unknown
 		}),
 		n(-337, { -- Two Handed Swords
+		--	un(1, i(84717),		-- Dreadful Gladiator's Greatsword (did not make it :( )
 			un(1, i(139621)),	-- The Watcher's Hammer. Used for Lost Edicts of the Watcher Paladin Appearance, actual appearance is gained via a different item
 		
 		}),
