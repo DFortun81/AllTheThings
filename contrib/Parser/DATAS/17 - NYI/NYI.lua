@@ -568,6 +568,7 @@ _.NeverImplemented =
 			un(1, i(20883)),	-- Unknown
 			un(1, i(20936)),	-- Unknown
 			un(1, i(20937)),	-- Unknown
+			un(1, i(156927)),	-- Great Hall Recall)
 		}),
 		un(1, spell(5169)),	-- defias disguise
 		un(1, spell(5264)),	-- dsouth sea defias disguise

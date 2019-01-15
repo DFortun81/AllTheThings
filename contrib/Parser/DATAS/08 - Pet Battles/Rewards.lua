@@ -18,6 +18,15 @@ _.PetBattles =
 			64572, 	-- Sara Finkleswitch
 		},
 	}),
+	-- Both Items wont show up until I found the Quest ID
+	i(165944, {	-- A Shady Message (Ally)
+		["description"] = "Rewarded from winning PvP Pet Battles",
+		["collectible"] = false,
+	}),
+	i(166242, {	-- A Shady Message (Horde)
+		["description"] = "Rewarded from winning PvP Pet Battles",
+		["collectible"] = false,
+	}),
 	i(89125, {	-- Sack of Pet Supplies
 		["groups"] = {
 			i(89139),	-- Chain Pet Leash
