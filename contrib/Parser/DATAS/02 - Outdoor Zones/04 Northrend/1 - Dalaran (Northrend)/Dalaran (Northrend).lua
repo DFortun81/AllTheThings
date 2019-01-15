@@ -4841,7 +4841,7 @@ _.Zones =
 							},
 							["itemID"] = 137642,  -- Marks of Honor
 						}),
-						n(69971, {  -- Xazi Smolderpipe >Season 6< Elite
+						n(31864, {  -- Xazi Smolderpipe >Season 6< Elite
 							["groups"] = {
 								un(2, i(45952)),	-- Furious Gladiator's Greatstaff
 								un(2, i(45948)),	-- Furious Gladiator's Sunderer
@@ -4852,10 +4852,28 @@ _.Zones =
 								un(2, i(45957)),	-- Furious Gladiator's Handaxe
 								un(2, i(45961)),	-- Furious Gladiator's Dicer
 								un(2, i(45966)),	-- Furious Gladiator's Splitter)
+								un(2, i(45959)),	-- Furious Gladiator's Truncheon
+								un(2, i(45964)),	-- Furious Gladiator's Punisher
+								un(2, i(45971)),	-- Furious Gladiator's Salvation)
+								un(2, i(45960)),	-- Furious Gladiator's Longblade
+								un(2, i(45965)),	-- Furious Gladiator's Swiftblade
+								un(2, i(45937)),	-- Furious Gladiator's Shotgun
+								un(2, i(45938)),	-- Furious Gladiator's Recurve
+								un(2, i(45939)),	-- Furious Gladiator's Repeater
+								un(2, i(45949)),	-- Furious Gladiator's Crusher
+								un(2, i(45950)),	-- Furious Gladiator's Claymore
+								un(2, i(45951)),	-- Furious Gladiator's Halberd
+								un(2, i(45953)),	-- Furious Gladiator's Combat Staff
+								un(2, i(45954)),	-- Furious Gladiator's Acute Staff
+								un(2, i(45955)),	-- Furious Gladiator's Skirmish Staff
+								un(2, i(45956)),	-- Furious Gladiator's Light Staff
+								un(2, i(45963)),	-- Furious Gladiator's Fleshslicer
+								un(2, i(45968)),	-- Furious Gladiator's Claw
+								un(2, i(45969)),	-- Furious Gladiator's Grasp)
 							},
 							["u"] = 43,
 						}),
-						n(31864, {  -- Xazi Smolderpipe <Wrathful Gladiator>
+						n(69971, {  -- Xazi Smolderpipe <Wrathful Gladiator>
 							["groups"] = {
 								i(146642), -- Arsenal: Wrathful Gladiator's Weapons
 								i(51452),	-- Wrathful Gladiator's Barrier	
