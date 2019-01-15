@@ -236,7 +236,7 @@ _.ExpansionFeatures =
 							["requireSkill"] = 356,	-- Fishing
 						},
 					}),
-					n(-121, {	-- Frostwall Tavern - temporarily using npc header [Pr3vention]
+					garrisonBuilding(36, {	-- Frostwall Tavern (rank 1: 34, rank 2: 35, rank 3: 36)
 						desc(i(119036, {	-- Box of Storied Treasures [4]
 							i(109957),	-- Alc's Pendant of Fiery Dreams
 							i(109779),	-- Ancient Draenic Loop
@@ -1999,7 +1999,7 @@ _.ExpansionFeatures =
 							})),
 						}),
 					}),
-					n(-125, {	-- War Mill (rank 1: 8, rank 2: 9, rank 3: 10) - temporarily using npc header [Pr3vention]
+					garrisonBuilding(10, {	-- War Mill (rank 1: 8, rank 2: 9, rank 3: 10)
 						{	-- Scraps of Iron
 							["questID"] = 37043,
 							["qg"] = 79815,	-- Gun'lek

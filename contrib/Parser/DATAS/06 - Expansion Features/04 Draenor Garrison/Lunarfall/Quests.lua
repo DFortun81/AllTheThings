@@ -7,293 +7,16 @@ _.ExpansionFeatures =
 		m(582, {	-- Lunarfall
 			["groups"] = {	
 				na(-17, { 	-- Quests
-					{	-- A Tiny Scarecrow Costume
-						["itemID"] = 128874,	-- A Tiny Scarecrow Costume
-						["questID"] = 39865,	-- Pepe can be sometimes be summoned with this mask
-						["coords"] = {
-							40.12, 70.06	-- Pepe Location [Alliance]
-						},
-						["description"] = "Halloween Decorations must be up in a Tier 3 garrison",
-					},
-					{	-- All Hands on Deck
-						["questID"] = 38259,
-						["qg"] = 92219,	-- King Varian Wrynn
-						["races"] = ALLIANCE_ONLY,
-					},
-					q(36624, { 	-- Ashran Appearance
-						["qg"] = 79953, -- Lieutennt Thorn
-					}),
-					{	-- Bigger is Better
-						["questID"] = 36592,
-						["qg"] = 77209,	-- Baros Alexston
-						["races"] = ALLIANCE_ONLY,
-					},
-					q(38356, { 	-- Bringing the Bass
-						i(122613, { -- Stash of Dusty Music Rolls
-							i(122209), -- Music Roll: Curse of the Worgen
-							i(122208), -- Music Roll: Exodar
-							i(122206), -- Music Roll: Gnomeregan
-							i(122203), -- Music Roll: Ironforge
-							i(122205), -- Music Roll: Night Song
-							i(122201), -- Music Roll: Stormwind
-							i(122219), -- Music Roll: Way of the Monk
-							i(122207), -- Tinkertown
-						}),
-					}),
-					{	-- Building For Professions - alternate version that was never used
-						["questID"] = 37667,
-						["u"] = 1,
-					},
-					{	-- Building For Professions
-						["questID"] = 36100,
-						["qg"] = 77209,	-- Baros Alexston
-						["races"] = ALLIANCE_ONLY,
-					},
-					{	-- Call of the Archmage
-						["questID"] = 35988,
-						["qg"] = 83858,	-- Khadgar's Servant
-						["u"] = 40,
-					},
-					{	-- Clearing the Garden
-						["questID"] = 36404,
-						["qg"] = 85344,	-- Naron Bloomthistle
-						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 36592,	-- Bigger is Better
-						["groups"] = {
-							{	-- Herb Garden lvl 1
-								["buildingID"] = 29,
+					garrisonBuilding(10, {	-- Dwarven Bunker (rank 1: 8, rank 2: 9, rank 3: 10)
+						{	-- Scraps of Iron
+							["questID"] = 37092,
+							["qg"] = 77377,	-- Kristen Stoneforge
+							["groups"] = {
+								i(118365),	-- Stormwind Tabard
 							},
 						},
-					},
-					{	-- Feeding An Army
-						["questID"] = 36272,
-						["qg"] = 84524,	-- Homer Stonefield
-						["races"] = ALLIANCE_ONLY,
-					},
-					q(34583, { 	-- For the Alliance
-						i(108908),
-						i(108909),
-						i(108910),
-						i(108912),
-						i(108913),
-						i(108914),
-						i(108918),
-						i(108919),
 					}),
-					{	-- Garrison Campaign: Awakening
-						["questID"] = 36134,
-						["qg"] = 81492,	-- Bodrick Grey
-						["races"] = ALLIANCE_ONLY,
-					},
-					{	-- Garrison Campaign: Crows In The Field
-						["questID"] = 34409,
-						["qg"] = 88112,	-- Morthis Whisperwing
-						["races"] = ALLIANCE_ONLY,
-					},
-					q(39195, {	-- Gems of the Apexis
-						["groups"] = {
-							recipe(187639),	-- Immaculate Versatility Taladite
-						},
-						["requireSkill"] = 755, -- Jewelcrafting
-						["isBreadcrumb"] = true,
-						["qg"] = 77209,	-- Baros Alexston
-						["races"] = ALLIANCE_ONLY,
-					}),
-					{	-- Looking For Help
-						["questID"] = 34758,
-						["qg"] = 77733,	-- Ron Ashton
-						["races"] = ALLIANCE_ONLY,
-						["requireSkill"] = 356,	-- Fishing
-					},
-					q(37433, { 	-- Proving Grounds
-						i(119463),
-						i(119458),
-						i(119462),
-						i(119459),
-						i(119461),
-						i(119460),
-						i(119464),
-						i(119457),
-					}),
-					n(89763, { 	-- Muradin Bronzebeard
-						["groups"] = {
-							i(123975, { -- Greater Bounty Spoils
-								["groups"] = {
-									i(114111, { -- Formidable Armament
-										i(115335), -- Formidable Axe
-										i(115338), -- Formidable Dagger
-										i(115336), -- Formidable Greataxe
-										i(115337), -- Formidable Longbow
-										i(115340), -- Formidable Polearm
-										i(115342), -- Formidable Scepter
-										i(115341), -- Formidable Spire
-										i(115339), -- Formidable Warmace
-									}),
-									i(114088, { -- Formidable Bracers
-										i(114554), -- Aerial Acolyte's Bracers
-										i(114557), -- Crimson Carapace Bracers
-										i(114556), -- Sickened Scale Bracers
-										i(114555), -- Yeti-Hide Bracers
-									}),
-									i(119125, { -- Formidable Cloak
-										i(114607), -- Bloodstained Miser's Cloak
-										i(114604), -- Cloak of Blind Focus
-										i(114605), -- Doomwake Drape
-										i(114606), -- Fathom-Ripped Cape
-										i(114608), -- Ultimate Greatcloak
-									}),
-									i(119115, { -- Formidable Gauntlets
-										i(114566), -- Aerial Acolyte's Gloves
-										i(114569), -- Crimson Carapace Gauntlets
-										i(114568), -- Sickened Scale Gauntlets
-										i(114567), -- Yeti-Hide Gauntlets
-									}),
-									i(119121, { -- Formidable Girdle
-										i(114582), -- Aerial Acolyte's Cord
-										i(114585), -- Crimson Carapace Girdle
-										i(114584), -- Sickened Scale Belt
-										i(114583), -- Yeti-Hide Belt
-									}),
-									i(119117, { -- Formidable Hood
-										i(114570), -- Aerial Acolyte's Hood
-										i(114573), -- Crimson Carapace Greathelm
-										i(114572), -- Sickened Scale Helm
-										i(114571), -- Yeti-Hide Hood
-									}),
-									i(119119, { -- Formidable Leggings
-										i(114574), -- Aerial Acolyte's Trousers
-										i(114577), -- Crimson Carapace Legplates
-										i(114576), -- Sickened Scale Legguards
-										i(114575), -- Yeti-Hide Legguards
-									}),
-									i(114089, { -- Formidable Robes
-										i(114561), -- Aerial Acolyte's Robes
-										i(114560), -- Crimson Carapace Breastplate
-										i(114559), -- Sickened Scale Chestguard
-										i(114558), -- Yeti-Hide Chestguard
-									}),
-									i(114091, { -- Formidable Spaulders
-										i(114578), -- Aerial Acolyte's Mantle
-										i(114581), -- Crimson Carapace Shoulderguard
-										i(114580), -- Sickened Scale Spaulders
-										i(114579), -- Yeti-Hide Spaulders
-									}),
-									i(114090, { -- Formidable Treads
-										i(114562), -- Aerial Acolyte's Sandals
-										i(114565), -- Crimson Carapace Greaves
-										i(114564), -- Sickened Scale Boots
-										i(114563), -- Yeti-Hide Boots
-									}),											
-									i(114112, { 	-- Grandiose Armament
-										i(115327), -- Grandiose Axe
-										i(115330), -- Grandiose Dagger
-										i(115328), -- Grandiose Greataxe
-										i(115329), -- Grandiose Longbow
-										i(115332), -- Grandiose Polearm
-										i(115334), -- Grandiose Scepter
-										i(115333), -- Grandiose Spire
-										i(115331), -- Grandiose Warmace
-									}),
-									i(114082, { 	-- Grandiose Bracers
-										i(114494), -- Bracers Of Determined Resolve
-										i(114493), -- Bracers of Volatile Ice
-										i(114496), -- Crazed Bomber's Bracers
-										i(114495), -- Undying Bracers
-									}),
-									i(119124, { 	-- Grandiose Cloak
-										i(114544), -- Drape of Surging Stars
-										i(114545), -- Hearthhealer Cloak
-										i(114543), -- Keen-Eye Forestcloak
-										i(114547), -- Reinforced Moonsong Cloak
-										i(114546), -- Warmonger's Bloodcloak
-									}),
-									i(119114, { 	-- Grandiose Gauntlets
-										i(114508), -- Crazed Bomber's Gauntlets
-										i(114506), -- Gauntlets of Determined Resolve
-										i(114505), -- Gloves of Volatile Ice
-										i(114507), -- Undying Gauntlets
-									}),
-									i(119120, { 	-- Grandiose Girdle
-										i(114522), -- Belt of Determined Resolve
-										i(114521), -- Cord of Volatile Ice
-										i(114524), -- Crazed Bomber's Girdle
-										i(114523), -- Undying Belt
-									}),
-									i(119116, { 	-- Grandiose Hood
-										i(114512), -- Crazed Bomber's Greathelm
-										i(114510), -- Hood of Determined Resolve
-										i(114509), -- Hood of Volatile Ice
-										i(114511), -- Undying Helm
-									}),
-									i(119118, { 	-- Grandiose Leggings
-										i(114516), -- Crazed Bomber's Legplates
-										i(114514), -- Legguards of Determined Resolve
-										i(114513), -- Trousers of Volatile Ice
-										i(114515), -- Undying Legguards
-									}),
-									i(114083, { 	-- Grandiose Robes
-										i(114497), -- Chestguard of Determined Resolve
-										i(114499), -- Crazed Bomber's Breastplate
-										i(114500), -- Robes of Volatile Ice
-										i(114498), -- Undying Chestguard
-									}),
-									i(114085, { 	-- Grandiose Spaulders
-										i(114520), -- Crazed Bomber's Shoulderguard
-										i(114517), -- Mantle of Volatile Ice
-										i(114518), -- Spaulders of Determined Resolve
-										i(114519), -- Undying Spaulders
-									}),
-									i(114084, { 	-- Grandiose Treads
-										i(114502), -- Boots of Determined Resolve
-										i(114504), -- Crazed Bomber's Greaves
-										i(114501), -- Sandals of Volatile Ice
-										i(114503), -- Undying Boots
-									}),
-								},
-								["description"] = "This satchel is awarded by High Overlord Saurfang and Muradin Bronzebear on all of the Garrison Raid Quests.",
-							}),
-							qw(q(37767, { 	-- Arcane Sanctum: Ko'ragh
-								i(123975, { -- Greater Bounty Spoils
-								}),
-							})),
-							qw(q(37772, { 	-- Blackhand's Crucible: Blackhand
-								i(123975, { -- Greater Bounty Spoils
-								}),
-							})),
-							qw(q(37768, { 	-- Imperator's Rise: Imperator Mar'gok
-								i(123975, { -- Greater Bounty Spoils
-								}),
-							})),
-							qw(q(37771, { 	-- Iron Assembly: Admiral Gar'an
-								i(123975, { -- Greater Bounty Spoils
-								}),
-							})),
-							qw(q(37769, { 	-- Slagworks: Heart of the Mountain
-								i(123975, { -- Greater Bounty Spoils
-								}),
-							})),
-							qw(q(37770, { 	-- The Black Forge: Kromog
-								i(123975, { -- Greater Bounty Spoils
-								}),
-							})),
-							qw(q(37766, { 	-- Walled City: Brackenspore
-								i(123975, { -- Greater Bounty Spoils
-								}),
-							})),
-						},
-						["description"] = "Muradin Bronzebeard has a chance to spawn in your garrison daily, or you can find someone with him spawned and join their garrison. He starts a weekly raid quest which all have the Greater Bounty Spoils as a reward.",
-					}),
-					{	-- Mystery Notebook
-						["questID"] = 38306,
-						["qg"] = 91589,	-- Fix "Smallie" Biggswrench
-						["races"] = ALLIANCE_ONLY,
-					},
-					n(-125, {	-- Dwarven Bunker
-						q(37092, {
-							i(118365),
-						}),
-					}),
-					n(-107, {	-- Fishing Hut
+					garrisonBuilding(135, {	-- Fishing Shack (rank 1: 64, rank 2: 134, rank 3: 135)
 						{	-- Abyssal Gulper Eel
 							["questID"] = 35075,
 							["qg"] = 77733,	-- Ron Ashton
@@ -361,15 +84,7 @@ _.ExpansionFeatures =
 							},
 						},
 					}),
-					n(-152, { 	-- Garrison Campaign
-						q(35195, {
-							i(119134),	-- Toy
-						}),
-						q(36169, {
-							i(119144), -- Toy
-						}),
-					}),
-					n(-109, { 	-- Gladiator's Sanctum
+					garrisonBuilding(161, {	-- Gladiator's Sanctum (rank 1: 159, rank 2: 160, rank 3: 161)
 						q(37083, {
 							i(120142, {
 								i(119217),
@@ -378,49 +93,49 @@ _.ExpansionFeatures =
 						}),
 					}),
 					garrisonBuilding(138, { 	 -- Lumber Mill
-						{
-							["questID"] = 36189,	-- Easing into Lumberjacking
+						{	-- Easing into Lumberjacking
+							["questID"] = 36189,
 							["qg"] = 84248,	-- Justin Timberlord <Work Orders>
 						},
-						{
-							["questID"] = 36192,	-- Turning Timber into Profit
+						{	-- Turning Timber into Profit
+							["questID"] = 36192,
 							["sourceQuest"] = 36189,	-- Easing into Lumberjacking
 							["qg"] = 84248,	-- Justin Timberlord <Work Orders>
 						},
-						{
-							["questID"] = 36448,	-- Reduction in Force
+						{	-- Reduction in Force
+							["questID"] = 36448,
 							["sourceQuest"] = 36429,	-- The Rise and Fall of Barov Industries: Weldon Barov
 							["qg"] = 85413,	-- Weldon Barov <Barov Industries>
 							["groups"] = {
 								i(116154),	-- Barov Lumberjack Caller
 							},
 						},
-						{
-							["questID"] = 36194,	-- Sharper Blades, Bigger Timber
+						{	-- Sharper Blades, Bigger Timber
+							["questID"] = 36194,
 							["qg"] = 84248,	-- Justin Timberlord <Work Orders>
 						},
-						{
-							["questID"] = 36813, -- Subversive Infestation
+						{	-- Subversive Infestation
+							["questID"] = 36813,
 							["qg"] = 84889, -- Phylarch the Evergreen
 							["description"] = "This Quest requires a Level 3 Lumber Mill as well as the Follower Phylarch the Green either active or attached to the Lumber Mill.",
 							["groups"] = {
 								i(117398), -- Everbloom Seed Pouch
 							},
 						},
-						{
-							["questID"] = 36429,	-- The Rise and Fall of Barov Industries: Weldon Barov
+						{	-- The Rise and Fall of Barov Industries: Weldon Barov
+							["questID"] = 36429,
 							["qg"] = 85378,	-- Weldon Barov <Barov Industries>
 							["description"] = "Weldon Barov is found at 73.7, 64.0 in Talador. He is stuck under a log and it seems you need lumber mill to be able to get him out of there.",
 							["groups"] = {
 								follower(195),	-- Weldon Barov / Alexi Barov
 							},
 						},
-						{
-							["questID"] = 36195,	-- Tree-i-cide
+						{	-- Tree-i-cide
+							["questID"] = 36195,
 							["qg"] = 84248,	-- Justin Timberlord <Work Orders>
 						},
-						{
-							["npcID"] = 85199,	-- Petrified Ancient
+						{	-- Petrified Ancient
+							["npcID"] = 85199,
 							["description"] = "These will appear as nodes on your mini-map as trees do after you have built your Level 2 Lumber Mill.",
 							["groups"] = {
 								{
@@ -433,7 +148,7 @@ _.ExpansionFeatures =
 							},
 						},
 					}),
-					n(-128, { 	-- Lunarfall Inn
+					garrisonBuilding(36, {	-- Frostwall Tavern (rank 1: 34, rank 2: 35, rank 3: 36)
 						desc(i(119036, { -- Box of Storied Treasures [4]
 							i(109957),	-- Alc's Pendant of Fiery Dreams
 							i(109779),	-- Ancient Draenic Loop
@@ -2082,25 +1797,6 @@ _.ExpansionFeatures =
 							["races"] = ALLIANCE_ONLY,
 						},
 					}),
-					{	-- The Secrets of Gorgrond
-						["questID"] = 35556,
-						["races"] = ALLIANCE_ONLY,
-					},
-					{	-- These Look Familiar...
-						["questID"] = 34028,
-						["qg"] = 77217,	-- Jr. Surveyor Dorn
-						["races"] = ALLIANCE_ONLY,
-					},
-					{	-- Things Are Not Goren Our Way
-						["questID"] = 34192,
-						["qg"] = 77730,	-- Timothy Leens
-						["sourceQuest"] = 36592,	-- Bigger is Better
-						["groups"] = {
-							{
-								["buildingID"] = 61,	-- Frostwall Mines
-							},
-						},
-					},
 					garrisonBuilding(144, {	-- Trading Post
 						q(36948, {	-- Auctioning for Parts
 							["description"] = "Completing this quest grants you the ability to access the Auction House from your Garrison.",
@@ -2140,6 +1836,328 @@ _.ExpansionFeatures =
 							})),
 						}),
 					}),
+					{	-- A Tiny Scarecrow Costume
+						["itemID"] = 128874,	-- A Tiny Scarecrow Costume
+						["questID"] = 39865,	-- Pepe can be sometimes be summoned with this mask
+						["coords"] = {
+							40.12, 70.06	-- Pepe Location [Alliance]
+						},
+						["description"] = "Halloween Decorations must be up in a Tier 3 garrison",
+					},
+					{	-- All Hands on Deck
+						["questID"] = 38259,
+						["qg"] = 92219,	-- King Varian Wrynn
+						["races"] = ALLIANCE_ONLY,
+					},
+					{ 	-- Ashran Appearance
+						["questID"] = 36624,
+						["qg"] = 79953, -- Lieutennt Thorn
+					},
+					{	-- Bigger is Better
+						["questID"] = 36592,
+						["qg"] = 77209,	-- Baros Alexston
+						["races"] = ALLIANCE_ONLY,
+					},
+					{ 	-- Bringing the Bass
+						["questID"] = 38356,
+						["qg"] = 91589,	-- Fix "Smallie" Biggswrench
+						["groups"] = {
+							i(122613, { -- Stash of Dusty Music Rolls
+								i(122209), -- Music Roll: Curse of the Worgen
+								i(122208), -- Music Roll: Exodar
+								i(122206), -- Music Roll: Gnomeregan
+								i(122203), -- Music Roll: Ironforge
+								i(122205), -- Music Roll: Night Song
+								i(122201), -- Music Roll: Stormwind
+								i(122219), -- Music Roll: Way of the Monk
+								i(122207), -- Music Roll: Tinkertown
+							}),
+						}
+					},
+					{	-- Building For Professions - alternate version that was never used
+						["questID"] = 37667,
+						["u"] = 1,
+					},
+					{	-- Building For Professions
+						["questID"] = 36100,
+						["qg"] = 77209,	-- Baros Alexston
+						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- Call of the Archmage
+						["questID"] = 35988,
+						["qg"] = 83858,	-- Khadgar's Servant
+						["u"] = 40,
+					},
+					{	-- Clearing the Garden
+						["questID"] = 36404,
+						["qg"] = 85344,	-- Naron Bloomthistle
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 36592,	-- Bigger is Better
+						["groups"] = {
+							{	-- Herb Garden lvl 1
+								["buildingID"] = 29,
+							},
+						},
+					},
+					{	-- Feeding An Army
+						["questID"] = 36272,
+						["qg"] = 84524,	-- Homer Stonefield
+						["races"] = ALLIANCE_ONLY,
+					},
+					{ 	-- For the Alliance
+						["questID"] = 34583,
+						["qg"] = 79470,	-- Vindicator Maraad
+						["groups"] = {
+							i(108908),	-- Rangari Initiate Crossbow
+							i(108909),	-- Karabor Footman's Pike
+							i(108910),	-- Rangari Initiate Dagger
+							i(108912),	-- Karabor Greatsword
+							i(108913),	-- Rangari Initiate Armblade
+							i(108914),	-- Karabor Footman Sword
+							i(108918),	-- Karabor Arcanist Rod
+							i(108919),	-- Karabor Augury mace
+						},
+					},
+					{	-- Garrison Campaign: Awakening
+						["questID"] = 36134,
+						["qg"] = 81492,	-- Bodrick Grey
+						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- Garrison Campaign: Crows In The Field
+						["questID"] = 34409,
+						["qg"] = 88112,	-- Morthis Whisperwing
+						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- Gems of the Apexis
+						["questID"] = 39195,
+						["qg"] = 77209,	-- Baros Alexston
+						["races"] = ALLIANCE_ONLY,
+						["isBreadcrumb"] = true,
+						["requireSkill"] = 755, -- Jewelcrafting
+						["groups"] = {
+							recipe(187639),	-- Immaculate Versatility Taladite
+						},
+					},
+					{	-- Looking For Help
+						["questID"] = 34758,
+						["qg"] = 77733,	-- Ron Ashton
+						["races"] = ALLIANCE_ONLY,
+						["requireSkill"] = 356,	-- Fishing
+					},
+					{ 	-- Proving Grounds
+						["questID"] = 37433,
+						["qg"] = 79953,	-- Lieutenant Thorn
+						["groups"] = {
+							i(119463),	-- Staff of Trials
+							i(119458),	-- Greataxe of Trials
+							i(119462),	-- Skullcutter of Trials
+							i(119459),	-- Longbow of Trials
+							i(119461),	-- Skullthumper of Trials
+							i(119460),	-- Lockbreaker of Trials
+							i(119464),	-- Cudgel of Trials
+							i(119457),	-- Handaxe of Trials
+						},
+					},
+					n(89763, { 	-- Muradin Bronzebeard
+						["groups"] = {
+							i(123975, { -- Greater Bounty Spoils
+								["groups"] = {
+									i(114111, { -- Formidable Armament
+										i(115335), -- Formidable Axe
+										i(115338), -- Formidable Dagger
+										i(115336), -- Formidable Greataxe
+										i(115337), -- Formidable Longbow
+										i(115340), -- Formidable Polearm
+										i(115342), -- Formidable Scepter
+										i(115341), -- Formidable Spire
+										i(115339), -- Formidable Warmace
+									}),
+									i(114088, { -- Formidable Bracers
+										i(114554), -- Aerial Acolyte's Bracers
+										i(114557), -- Crimson Carapace Bracers
+										i(114556), -- Sickened Scale Bracers
+										i(114555), -- Yeti-Hide Bracers
+									}),
+									i(119125, { -- Formidable Cloak
+										i(114607), -- Bloodstained Miser's Cloak
+										i(114604), -- Cloak of Blind Focus
+										i(114605), -- Doomwake Drape
+										i(114606), -- Fathom-Ripped Cape
+										i(114608), -- Ultimate Greatcloak
+									}),
+									i(119115, { -- Formidable Gauntlets
+										i(114566), -- Aerial Acolyte's Gloves
+										i(114569), -- Crimson Carapace Gauntlets
+										i(114568), -- Sickened Scale Gauntlets
+										i(114567), -- Yeti-Hide Gauntlets
+									}),
+									i(119121, { -- Formidable Girdle
+										i(114582), -- Aerial Acolyte's Cord
+										i(114585), -- Crimson Carapace Girdle
+										i(114584), -- Sickened Scale Belt
+										i(114583), -- Yeti-Hide Belt
+									}),
+									i(119117, { -- Formidable Hood
+										i(114570), -- Aerial Acolyte's Hood
+										i(114573), -- Crimson Carapace Greathelm
+										i(114572), -- Sickened Scale Helm
+										i(114571), -- Yeti-Hide Hood
+									}),
+									i(119119, { -- Formidable Leggings
+										i(114574), -- Aerial Acolyte's Trousers
+										i(114577), -- Crimson Carapace Legplates
+										i(114576), -- Sickened Scale Legguards
+										i(114575), -- Yeti-Hide Legguards
+									}),
+									i(114089, { -- Formidable Robes
+										i(114561), -- Aerial Acolyte's Robes
+										i(114560), -- Crimson Carapace Breastplate
+										i(114559), -- Sickened Scale Chestguard
+										i(114558), -- Yeti-Hide Chestguard
+									}),
+									i(114091, { -- Formidable Spaulders
+										i(114578), -- Aerial Acolyte's Mantle
+										i(114581), -- Crimson Carapace Shoulderguard
+										i(114580), -- Sickened Scale Spaulders
+										i(114579), -- Yeti-Hide Spaulders
+									}),
+									i(114090, { -- Formidable Treads
+										i(114562), -- Aerial Acolyte's Sandals
+										i(114565), -- Crimson Carapace Greaves
+										i(114564), -- Sickened Scale Boots
+										i(114563), -- Yeti-Hide Boots
+									}),											
+									i(114112, { 	-- Grandiose Armament
+										i(115327), -- Grandiose Axe
+										i(115330), -- Grandiose Dagger
+										i(115328), -- Grandiose Greataxe
+										i(115329), -- Grandiose Longbow
+										i(115332), -- Grandiose Polearm
+										i(115334), -- Grandiose Scepter
+										i(115333), -- Grandiose Spire
+										i(115331), -- Grandiose Warmace
+									}),
+									i(114082, { 	-- Grandiose Bracers
+										i(114494), -- Bracers Of Determined Resolve
+										i(114493), -- Bracers of Volatile Ice
+										i(114496), -- Crazed Bomber's Bracers
+										i(114495), -- Undying Bracers
+									}),
+									i(119124, { 	-- Grandiose Cloak
+										i(114544), -- Drape of Surging Stars
+										i(114545), -- Hearthhealer Cloak
+										i(114543), -- Keen-Eye Forestcloak
+										i(114547), -- Reinforced Moonsong Cloak
+										i(114546), -- Warmonger's Bloodcloak
+									}),
+									i(119114, { 	-- Grandiose Gauntlets
+										i(114508), -- Crazed Bomber's Gauntlets
+										i(114506), -- Gauntlets of Determined Resolve
+										i(114505), -- Gloves of Volatile Ice
+										i(114507), -- Undying Gauntlets
+									}),
+									i(119120, { 	-- Grandiose Girdle
+										i(114522), -- Belt of Determined Resolve
+										i(114521), -- Cord of Volatile Ice
+										i(114524), -- Crazed Bomber's Girdle
+										i(114523), -- Undying Belt
+									}),
+									i(119116, { 	-- Grandiose Hood
+										i(114512), -- Crazed Bomber's Greathelm
+										i(114510), -- Hood of Determined Resolve
+										i(114509), -- Hood of Volatile Ice
+										i(114511), -- Undying Helm
+									}),
+									i(119118, { 	-- Grandiose Leggings
+										i(114516), -- Crazed Bomber's Legplates
+										i(114514), -- Legguards of Determined Resolve
+										i(114513), -- Trousers of Volatile Ice
+										i(114515), -- Undying Legguards
+									}),
+									i(114083, { 	-- Grandiose Robes
+										i(114497), -- Chestguard of Determined Resolve
+										i(114499), -- Crazed Bomber's Breastplate
+										i(114500), -- Robes of Volatile Ice
+										i(114498), -- Undying Chestguard
+									}),
+									i(114085, { 	-- Grandiose Spaulders
+										i(114520), -- Crazed Bomber's Shoulderguard
+										i(114517), -- Mantle of Volatile Ice
+										i(114518), -- Spaulders of Determined Resolve
+										i(114519), -- Undying Spaulders
+									}),
+									i(114084, { 	-- Grandiose Treads
+										i(114502), -- Boots of Determined Resolve
+										i(114504), -- Crazed Bomber's Greaves
+										i(114501), -- Sandals of Volatile Ice
+										i(114503), -- Undying Boots
+									}),
+								},
+								["description"] = "This satchel is awarded by High Overlord Saurfang and Muradin Bronzebear on all of the Garrison Raid Quests.",
+							}),
+							qw(q(37767, { 	-- Arcane Sanctum: Ko'ragh
+								i(123975, { -- Greater Bounty Spoils
+								}),
+							})),
+							qw(q(37772, { 	-- Blackhand's Crucible: Blackhand
+								i(123975, { -- Greater Bounty Spoils
+								}),
+							})),
+							qw(q(37768, { 	-- Imperator's Rise: Imperator Mar'gok
+								i(123975, { -- Greater Bounty Spoils
+								}),
+							})),
+							qw(q(37771, { 	-- Iron Assembly: Admiral Gar'an
+								i(123975, { -- Greater Bounty Spoils
+								}),
+							})),
+							qw(q(37769, { 	-- Slagworks: Heart of the Mountain
+								i(123975, { -- Greater Bounty Spoils
+								}),
+							})),
+							qw(q(37770, { 	-- The Black Forge: Kromog
+								i(123975, { -- Greater Bounty Spoils
+								}),
+							})),
+							qw(q(37766, { 	-- Walled City: Brackenspore
+								i(123975, { -- Greater Bounty Spoils
+								}),
+							})),
+						},
+						["description"] = "Muradin Bronzebeard has a chance to spawn in your garrison daily, or you can find someone with him spawned and join their garrison. He starts a weekly raid quest which all have the Greater Bounty Spoils as a reward.",
+					}),
+					{	-- Mystery Notebook
+						["questID"] = 38306,
+						["qg"] = 91589,	-- Fix "Smallie" Biggswrench
+						["races"] = ALLIANCE_ONLY,
+					},
+					n(-152, { 	-- Garrison Campaign
+						q(35195, {
+							i(119134),	-- Toy
+						}),
+						q(36169, {
+							i(119144), -- Toy
+						}),
+					}),
+					{	-- The Secrets of Gorgrond
+						["questID"] = 35556,
+						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- These Look Familiar...
+						["questID"] = 34028,
+						["qg"] = 77217,	-- Jr. Surveyor Dorn
+						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- Things Are Not Goren Our Way
+						["questID"] = 34192,
+						["qg"] = 77730,	-- Timothy Leens
+						["sourceQuest"] = 36592,	-- Bigger is Better
+						["groups"] = {
+							{
+								["buildingID"] = 61,	-- Frostwall Mines
+							},
+						},
+					},
 					{	-- Treasure Contract: The Infected Orc
 						["questID"] = 37941,
 						["qgs"] = {
