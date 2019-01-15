@@ -960,6 +960,10 @@ _.Zones =
 						i(4778),	-- Heavy Spiked Mace
 						i(4777),	-- Ironwood Maul
 					}),
+					n(17249, {	-- Landro Longshot
+						un(2, i(23714)),	-- Perpetual Purple Fireworks (before they changed it to not be a trinket)
+						un(2, i(23716)),	-- Carved Ogre Idol (before they changed it to not be a trinket)
+					}),
 					n(54232, {	-- Mrs. Gant <Cooking Trainer & Supplies>
 						i(21219),	-- Recipe: Sagefish Delight
 						i(21099),	-- Recipe: Smoked Sagefish

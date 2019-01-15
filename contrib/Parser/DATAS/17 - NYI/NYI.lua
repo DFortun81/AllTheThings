@@ -1173,6 +1173,7 @@ _.NeverImplemented =
 			-- shield
 			un(1, i(165617)),	-- Unknown
 			un(1, i(139439)),	-- Highkeepers' Ward
+			un(1, i(34415)),	-- Crystaline Shard Shield
 		}),
 		n(-342, { -- Staves
 			un(1, i(132474)),	-- Unknown - was under Legion>Staves

@@ -77,6 +77,7 @@ _.Instances =
 								26669,	-- Ymirjar Savage
 							},
 						},
+						i(37372),	-- Harpoon
 					}),
 					d(  1, {	-- Normal
 						cr(26668, e(641, {	-- Svala Sorrowgrave
