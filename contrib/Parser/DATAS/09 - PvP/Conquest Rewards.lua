@@ -537,6 +537,12 @@ _.PVP =
 					{	-- Dread Gladiator's Medallion
 						["itemID"] = 161674,	-- Dread Gladiator's Medallion
 					},
+				}),
+			},
+			{	-- Sinister Gladiator: Battle for Azeroth  Season 2
+				["npcID"] = -499,	-- Sinister Gladiator: Battle for Azeroth  Season 2
+				["icon"] = "Interface\\Icons\\achievement_legionpvp2tier3",
+				["g"] = bubbleDown({["modID"] = 8}, {
 					{	-- Sinister Gladiator's Bonecracker
 						["itemID"] = 165041,	-- Sinister Gladiator's Bonecracker
 					},

@@ -1141,6 +1141,7 @@ _.NeverImplemented =
 			un(1, i(108803)),	-- Unknown - was under Legion>1Handed Swords
 			un(1, i(108804)),	-- Unknown - was under Legion>1Handed Swords
 			un(1, i(134562)),	-- Odyns Fury
+			un(1, i(166889)),	-- Unknown
 			un(1, i(134067)),	-- Unknown
 			un(1, i(140705)),	-- Outlaw Cutlass
 			un(1, i(137225)),	-- Thunderfury, Blessed Blade of the Windseeker (mog testing)
