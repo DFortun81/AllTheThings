@@ -938,6 +938,20 @@ _.Zones =
 						i(20758),    -- Formula: Minor Wizard Oil
 						i(22307),    -- Pattern: Enchanted Mageweave Pouch
 					}),
+					n(26352, {  -- Big Zokk Torquewrench >Season 6< Elite
+						["groups"] = {
+								un(2, i(45952)),	-- Furious Gladiator's Greatstaff
+								un(2, i(45948)),	-- Furious Gladiator's Sunderer
+								un(2, i(45958)),	-- Furious Gladiator's Spike
+								un(2, i(45962)),	-- Furious Gladiator's Dirk
+								un(2, i(45967)),	-- Furious Gladiator's Eviscerator
+								un(2, i(45970)),	-- Furious Gladiator's Mageblade
+								un(2, i(45957)),	-- Furious Gladiator's Handaxe
+								un(2, i(45961)),	-- Furious Gladiator's Dicer
+								un(2, i(45966)),	-- Furious Gladiator's Splitter)
+							},
+						["u"] = 43,
+					}),
 					n(54649, {	-- Big Zokk Torquewrench <Classic Weapons>
 						["groups"] = {
 							un(4, a(i(77549))),	-- Replica Grand Marshal's Demolisher

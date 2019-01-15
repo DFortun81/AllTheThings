@@ -19,6 +19,7 @@ _.Zones =
 					}),
 					n(98864, {	-- Alchemist Pestlezugg <Alchemy Supplies>
 						["groups"] = {
+							i(6057),	-- Recipe: Nature Protection Potion
 							i(9303),	-- Recipe: Philosopher's Stone
 							i(12958),	-- Recipe: Transmute Arcanite
 							i(9304),	-- Recipe: Transmute Iron to Gold
@@ -587,6 +588,20 @@ _.Zones =
 						},
 						["u"] = 43,
 				--]]}),
+					n(32362, {  -- Evee Copperspring <Arena Vendor> >Season 6< Elite
+						["groups"] = {
+							un(2, i(45952)),	-- Furious Gladiator's Greatstaff
+							un(2, i(45948)),	-- Furious Gladiator's Sunderer
+							un(2, i(45958)),	-- Furious Gladiator's Spike
+							un(2, i(45962)),	-- Furious Gladiator's Dirk
+							un(2, i(45967)),	-- Furious Gladiator's Eviscerator
+							un(2, i(45970)),	-- Furious Gladiator's Mageblade
+							un(2, i(45957)),	-- Furious Gladiator's Handaxe
+							un(2, i(45961)),	-- Furious Gladiator's Dicer
+							un(2, i(45966)),	-- Furious Gladiator's Splitter)
+						},
+						["u"] = 43,
+					}),
 					n(40572, {	-- Haughty Modiste <Fashion Designer>
 						["groups"] = {
 							i(37915),	-- Pattern: Dress Shoes

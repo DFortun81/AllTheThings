@@ -4841,7 +4841,21 @@ _.Zones =
 							},
 							["itemID"] = 137642,  -- Marks of Honor
 						}),
-						n(69971, {  -- Xazi Smolderpipe <Wrathful Gladiator>
+						n(69971, {  -- Xazi Smolderpipe >Season 6< Elite
+							["groups"] = {
+								un(2, i(45952)),	-- Furious Gladiator's Greatstaff
+								un(2, i(45948)),	-- Furious Gladiator's Sunderer
+								un(2, i(45958)),	-- Furious Gladiator's Spike
+								un(2, i(45962)),	-- Furious Gladiator's Dirk
+								un(2, i(45967)),	-- Furious Gladiator's Eviscerator
+								un(2, i(45970)),	-- Furious Gladiator's Mageblade
+								un(2, i(45957)),	-- Furious Gladiator's Handaxe
+								un(2, i(45961)),	-- Furious Gladiator's Dicer
+								un(2, i(45966)),	-- Furious Gladiator's Splitter)
+							},
+							["u"] = 43,
+						}),
+						n(31864, {  -- Xazi Smolderpipe <Wrathful Gladiator>
 							["groups"] = {
 								i(146642), -- Arsenal: Wrathful Gladiator's Weapons
 								i(51452),	-- Wrathful Gladiator's Barrier	
