@@ -11,7 +11,7 @@ _.GroupFinder =
 				   i(113788),	-- Blossoming Belt*
 				   i(113764),	-- Blossoming Cap*
 				   i(113766),	-- Blossoming Gloves*
-				   i(113767),	-- Blossoming Mantle
+				   i(113767),	-- Blossoming Mantle*
 				   i(113765),	-- Blossoming Robe*
 				   i(113787),	-- Blossoming Slippers*
 				   i(113772),	-- Firecracker Belt

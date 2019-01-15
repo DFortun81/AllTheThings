@@ -114,23 +114,27 @@ _.Zones =
 						{			-- Everfrost
 							["itemID"] = 44725,	-- Everfrost Chip
 							["questID"] = 13420,	-- Everfrost
-							["description"] = "You can obtain these by looting Everfrost Chips in the environment.",
+							["description"] = "You can obtain these by looting Everfrost Chips in the environment.  Requires Friendly with Sons of Hodir.",
 						},
 						{			-- Remember Everfrost!
 							["questID"] = 13421,	-- Remember Everfrost!
+							["coord"] = { 67.0, 60.8 }, -- needs verification, taken from wowhead.  there's some contention as to whether this quest is offered by an NPC or if the "qg" is just the turn-in NPC
 							["qg"] = 32594,	-- Quest Giver: Calder <Blacksmithing Supplies>
 							["sourceQuests"] = { 13420 },	-- Source Quest: Everfrost
-							["isDaily"]	= true,
+							["repeatable"]	= true,
 						},
 						{			-- Blowing Hodir's Horn
 							["questID"] = 12977,	-- Blowing Hodir's Horn
-							["description"] = "Starts at Hodir's Horn.",
+							-- unsure of reputation requirement
+							["coord"] = { 64.1, 64.7 },
+							["sourceQuests"] = { 12976 },	-- A Monument to the Fallen
 							["icon"] = "Interface\\Icons\\INV_Misc_Horn_03",
 							["isDaily"]	= true,
 						},
 						{			-- Feeding Arngrim
+							["coord"] = { 67.5, 60.0 },
 							["questID"] = 13046,	-- Feeding Arngrim
-							["description"] = "Starts at Arngrim the Insatiable. (frozen giant sitting on throne)",
+							["description"] = "Requires Revered with Sons of Hodir.",
 							["icon"] = "Interface\\Icons\\Achievement_Dungeon_FrozenThrone",
 							["isDaily"]	= true,
 						},
@@ -144,6 +148,9 @@ _.Zones =
 						},
 						{			-- Polishing the Helm
 							["questID"] = 13006,	-- Polishing the Helm
+							["coord"] = { 64.2, 59.6 },
+							["sourceQuests"] = { 12987 },	-- Mounting Hodir's Helm
+							-- Unknown reputation requirement
 							["description"] = "Starts at Hodir's Helm.",
 							["icon"] = "Interface\\Icons\\INV_Helmet_110",
 							["isDaily"]	= true,
@@ -471,6 +478,14 @@ _.Zones =
 						["sourceQuests"] = { 12972 },	-- You'll Need a Bear
 					}),
 					
+
+					q(12975, {	-- In Memoriam
+						["qg"] = 30105,	-- King Jokkum
+						["coord"] = { 65.4, 60.1 },
+						["sourceQuests"] = { 12924 },	-- Forging an Alliance
+						-- SQ needs verification
+					}),
+
 					
 					q(12997, {	-- Into the Pit
 						["qg"] = 29839,	-- Astrid Bjornrittar
@@ -917,7 +932,6 @@ _.Zones =
 					qh( 13498),	-- Honor the Flame
 					qa( 13490),	-- Honor the Flame
 					q(12890),	-- If Size Mattered...
-					q(12975),	-- In Memoriam
 					q(13035),	-- Loken's Lackeys
 					q(12853),	-- Luxurious Getaway!
 					q(13422, {	-- Maintaining Discipline
