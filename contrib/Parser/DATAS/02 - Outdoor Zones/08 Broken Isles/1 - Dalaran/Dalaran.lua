@@ -1664,6 +1664,13 @@ _.Zones =
 						},
 						["requireSkill"] = 356,
 					}),
+					o(247797, {	-- Lost Mail
+						["groups"] = {
+							i(133859, {	-- Lost Mail
+								q(41368),	-- Lost Mail
+							}),
+						},
+					}),
 					qart(q(41541, {	-- A Beastly Expedition 
 						["qgs"] = { 102478, 107317, 107973 },	-- Emmarel Shadewarden (3 different versions)
 						["classes"] = { 3 },
@@ -2429,6 +2436,7 @@ _.Zones =
 							42128,	-- Ritual Reagents
 						},
 					}),
+	--[[			Attached Lost Mail to the Object. One is looted from the Object, the other one is looted from completion of the quest
 					i(134859, { -- Lost Mail
 						["groups"] = {
 							q(41368),	-- Lost Mail
@@ -2439,7 +2447,7 @@ _.Zones =
 							q(41411),	-- Lost Mail
 						},
 					}),
-					q(47606, {	-- Loyalty Is Its Own Reward
+		--]]		q(47606, {	-- Loyalty Is Its Own Reward
 						["qg"] = 123087,	-- Al'Abas
 						["classes"] = { 4 },
 					}),
@@ -2973,6 +2981,12 @@ _.Zones =
 					q(42479, {	-- The Mage Hunter
 						["qgs"] = { 102700, 109222 },	-- Meryl Felstorm
 						["classes"] = { 8 },
+					}),
+					q(50247, {	-- The Mail must flow
+						i(156836, {	-- Bulging Package
+							i(156833),	-- Katy's Stampwhistle
+							i(135479),	-- Lost Mail
+						}),
 					}),
 					qa(46200, {	-- The Matter Resolved... For Now...
 						["qg"] = 118954,	-- Night Elf Warrior
