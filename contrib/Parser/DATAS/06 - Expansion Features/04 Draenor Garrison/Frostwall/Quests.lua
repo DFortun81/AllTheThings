@@ -148,396 +148,11 @@ _.ExpansionFeatures =
 						},
 						["races"] = HORDE_ONLY,
 					}),
-					{	-- A Tiny Scarecrow Costume
-						["itemID"] = 128874,	-- A Tiny Scarecrow Costume
-						["questID"] = 39865,	-- Pepe can be sometimes be summoned with this mask
-						["coord"] = { 70.71, 90.21, 590 },	-- Pepe Location
-						["races"] = HORDE_ONLY,
-						["description"] = "Halloween Decorations must be up in a Tier 3 garrison",
-					},
-					{	-- All Hands on Deck
-						["questID"] = 38574,
-						["qg"] = 92400,	-- Vol'jin
-						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 38573,	-- Nothing Remains
-					},
-					{	-- Ashran Appearance
-						["questID"] = 36706,
-						["qg"] = 78466,	-- Gazlowe
-						["coord"] = { 52.4, 53.3, 590 },
-						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 34775,	-- Mission Probable
-					},
-					{	-- Bringing the Bass
-						["questID"] = 37961,
-						["qg"] = 37961,	-- Drix Bassbolter
-						["coord"] = { 40.9, 47.8, 590 },
-						["races"] = HORDE_ONLY,
-						["groups"] = {
-							spell(181715),	-- Unlock Garrison Jukebox
-							i(122613, {	-- Stash of Dusty Music Rolls
-								i(122210),	-- Music Roll: Orgrimmar
-								i(122218),	-- Music Roll: Rescue the Warchief
-								i(122217),	-- Music Roll: Silvermoon
-								i(122216),	-- Music Roll: The Zandalari
-								i(122213),	-- Music Roll: Thunder Bluff
-								i(122212),	-- Music Roll: Undercity
-								i(122219),	-- Music Roll: Way of the Monk
-								i(122215),	-- Music Roll: Zul'Gurub Voodoo
-							}),
-						},
-					},
-					{	-- Building For Professions
-						["questID"] = 37669,
-						["qg"] = 78466,	-- Gazlowe
-						["coords"] = {
-							{ 52.4, 53.3, 590 },	-- lvl 1
-							{ 37.6, 50.3, 590 },	-- lvl 3
-						},
-						["races"] = HORDE_ONLY,
-					},
-					{	-- Call of the Archmage
-						["questID"] = 35988,
-						["qg"] = 83858,	-- Khadgar's Servant
-						["u"] = 40,
-					},
-					{	-- Clearing the Garden
-						["questID"] = 34193,
-						["qg"] = 81981,	-- Tarnon
-						["coord"] = { 43.4, 83.2, 590 },
-						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 36567,	-- Bigger is Better
-						["groups"] = {
-							{	-- Herb Garden lvl 1
-								["buildingID"] = 29,
-							},
-						},
-					},
-					{	-- Command Board
-						["objectID"] = 232416,	-- 233291 and 237022 also valid depending on garrison level
-						["races"] = HORDE_ONLY,
-						["groups"] = {
-							{	-- The Secrets of Gorgrond
-								["questID"] = 35557,
-								["races"] = HORDE_ONLY,
-								["isBreadcrumb"] = true,
-							},
-						},
-					},
-					{	-- Den of Wolves
-						["questID"] = 34379,
-						["qg"] = 76411,	-- Farseer Drek'Thar
-						["coord"] = { 49.7, 49.5, 590 },
-						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 34775,	-- Mission Probable
-					},
-					{	-- Feeding An Army
-						["questID"] = 36344,
-						["qg"] = 85048,	-- Farmer Lok'lub
-						["races"] = HORDE_ONLY,
-					},
-					qh(34364, {	-- For the Horde
-						i(111535),
-						i(111537),
-						i(111539),
-						i(111541),
-						i(111536),
-						i(111538),
-						i(111540),
-						i(111542),
-					}),	
-					{	-- Garrison Campaign: Awakening
-						["questID"] = 36136,
-						["qg"] = 78487,	-- Rokhan
-						["races"] = HORDE_ONLY,
-					},
-					{	-- Gems of the Apexis
-						["questID"] = 39175,
-						["qg"] = 78466,	-- Gazlowe
-						["races"] = HORDE_ONLY,
-						["requireSkill"] = 755,	-- Jewelcrafting
-						["groups"] = {
-							recipe(187639),	-- Immaculate Versatility Taladite
-						},
-					},
-					n(89753, { 	-- High Overlord Saurfang
-						["coord"] = { 40.2, 56.7, 590 },
-						["description"] = "High Overlord Saurfang has a chance to spawn in your garrison daily, or you can find someone with him spawned and join their garrison. He starts a weekly raid quest which all have the Greater Bounty Spoils as a reward.",
-						["groups"] = {
-							i(123975, {	-- Greater Bounty Spoils
-								["groups"] = {
-									i(114111, {	-- Formidable Armament
-										i(115335),	-- Formidable Axe
-										i(115338),	-- Formidable Dagger
-										i(115336),	-- Formidable Greataxe
-										i(115337),	-- Formidable Longbow
-										i(115340),	-- Formidable Polearm
-										i(115342),	-- Formidable Scepter
-										i(115341),	-- Formidable Spire
-										i(115339),	-- Formidable Warmace
-									}),
-									i(114088, {	-- Formidable Bracers
-										i(114554),	-- Aerial Acolyte's Bracers
-										i(114557),	-- Crimson Carapace Bracers
-										i(114556),	-- Sickened Scale Bracers
-										i(114555),	-- Yeti-Hide Bracers
-									}),
-									i(119125, {	-- Formidable Cloak
-										i(114607),	-- Bloodstained Miser's Cloak
-										i(114604),	-- Cloak of Blind Focus
-										i(114605),	-- Doomwake Drape
-										i(114606),	-- Fathom-Ripped Cape
-										i(114608),	-- Ultimate Greatcloak
-									}),
-									i(119115, {	-- Formidable Gauntlets
-										i(114566),	-- Aerial Acolyte's Gloves
-										i(114569),	-- Crimson Carapace Gauntlets
-										i(114568),	-- Sickened Scale Gauntlets
-										i(114567),	-- Yeti-Hide Gauntlets
-									}),
-									i(119121, {	-- Formidable Girdle
-										i(114582),	-- Aerial Acolyte's Cord
-										i(114585),	-- Crimson Carapace Girdle
-										i(114584),	-- Sickened Scale Belt
-										i(114583),	-- Yeti-Hide Belt
-									}),
-									i(119117, {	-- Formidable Hood
-										i(114570),	-- Aerial Acolyte's Hood
-										i(114573),	-- Crimson Carapace Greathelm
-										i(114572),	-- Sickened Scale Helm
-										i(114571),	-- Yeti-Hide Hood
-									}),
-									i(119119, {	-- Formidable Leggings
-										i(114574),	-- Aerial Acolyte's Trousers
-										i(114577),	-- Crimson Carapace Legplates
-										i(114576),	-- Sickened Scale Legguards
-										i(114575),	-- Yeti-Hide Legguards
-									}),
-									i(114089, {	-- Formidable Robes
-										i(114561),	-- Aerial Acolyte's Robes
-										i(114560),	-- Crimson Carapace Breastplate
-										i(114559),	-- Sickened Scale Chestguard
-										i(114558),	-- Yeti-Hide Chestguard
-									}),
-									i(114091, {	-- Formidable Spaulders
-										i(114578),	-- Aerial Acolyte's Mantle
-										i(114581),	-- Crimson Carapace Shoulderguard
-										i(114580),	-- Sickened Scale Spaulders
-										i(114579),	-- Yeti-Hide Spaulders
-									}),
-									i(114090, {	-- Formidable Treads
-										i(114562),	-- Aerial Acolyte's Sandals
-										i(114565),	-- Crimson Carapace Greaves
-										i(114564),	-- Sickened Scale Boots
-										i(114563),	-- Yeti-Hide Boots
-									}),											
-									i(114112, {	-- Grandiose Armament
-										i(115327),	-- Grandiose Axe
-										i(115330),	-- Grandiose Dagger
-										i(115328),	-- Grandiose Greataxe
-										i(115329),	-- Grandiose Longbow
-										i(115332),	-- Grandiose Polearm
-										i(115334),	-- Grandiose Scepter
-										i(115333),	-- Grandiose Spire
-										i(115331),	-- Grandiose Warmace
-									}),
-									i(114082, {	-- Grandiose Bracers
-										i(114494),	-- Bracers Of Determined Resolve
-										i(114493),	-- Bracers of Volatile Ice
-										i(114496),	-- Crazed Bomber's Bracers
-										i(114495),	-- Undying Bracers
-									}),
-									i(119124, {	-- Grandiose Cloak
-										i(114544),	-- Drape of Surging Stars
-										i(114545),	-- Hearthhealer Cloak
-										i(114543),	-- Keen-Eye Forestcloak
-										i(114547),	-- Reinforced Moonsong Cloak
-										i(114546),	-- Warmonger's Bloodcloak
-									}),
-									i(119114, {	-- Grandiose Gauntlets
-										i(114508),	-- Crazed Bomber's Gauntlets
-										i(114506),	-- Gauntlets of Determined Resolve
-										i(114505),	-- Gloves of Volatile Ice
-										i(114507),	-- Undying Gauntlets
-									}),
-									i(119120, {	-- Grandiose Girdle
-										i(114522),	-- Belt of Determined Resolve
-										i(114521),	-- Cord of Volatile Ice
-										i(114524),	-- Crazed Bomber's Girdle
-										i(114523),	-- Undying Belt
-									}),
-									i(119116, {	-- Grandiose Hood
-										i(114512),	-- Crazed Bomber's Greathelm
-										i(114510),	-- Hood of Determined Resolve
-										i(114509),	-- Hood of Volatile Ice
-										i(114511),	-- Undying Helm
-									}),
-									i(119118, {	-- Grandiose Leggings
-										i(114516),	-- Crazed Bomber's Legplates
-										i(114514),	-- Legguards of Determined Resolve
-										i(114513),	-- Trousers of Volatile Ice
-										i(114515),	-- Undying Legguards
-									}),
-									i(114083, {	-- Grandiose Robes
-										i(114497),	-- Chestguard of Determined Resolve
-										i(114499),	-- Crazed Bomber's Breastplate
-										i(114500),	-- Robes of Volatile Ice
-										i(114498),	-- Undying Chestguard
-									}),
-									i(114085, {	-- Grandiose Spaulders
-										i(114520),	-- Crazed Bomber's Shoulderguard
-										i(114517),	-- Mantle of Volatile Ice
-										i(114518),	-- Spaulders of Determined Resolve
-										i(114519),	-- Undying Spaulders
-									}),
-									i(114084, {	-- Grandiose Treads
-										i(114502),	-- Boots of Determined Resolve
-										i(114504),	-- Crazed Bomber's Greaves
-										i(114501),	-- Sandals of Volatile Ice
-										i(114503),	-- Undying Boots
-									}),
-								},
-							}),
-							{	-- Arcane Sanctum: Ko'ragh
-								["questID"] = 37757,
-								["isWeekly"] = true,
-								["groups"] = {
-									i(123975),	-- Greater Bounty Spoils
-								},
-							},
-							{	-- Auchindoun
-								["questID"] = 37780,
-								["isDaily"] = true,
-								["groups"] = {
-									currency(824),	-- Garrison Resources x175
-								},
-							},
-							{	-- Blackhand's Crucible: Blackhand
-								["questID"] = 37765,
-								["isWeekly"] = true,
-								["groups"] = {
-									i(123975),	-- Greater Bounty Spoils
-								},
-							},
-							{	-- Bloodmaul Slag Mines
-								["questID"] = 37781,
-								["isDaily"] = true,
-								["groups"] = {
-									currency(824),	-- Garrison Resources x175
-								},
-							},
-							{	-- Destructor's Rise
-								["questID"] = 39231,
-								["isWeekly"] = true,
-								["groups"] = {
-									currency(823),	-- Apexis Crystal x1000
-								},
-							},
-							{	-- Grimrail Depot
-								["questID"] = 37782,
-								["isDaily"] = true,
-								["groups"] = {
-									currency(824),	-- Garrison Resources x175
-								},
-							},
-							{	-- Imperator's Rise: Imperator Mar'gok
-								["questID"] = 37758,
-								["isWeekly"] = true,
-								["groups"] = {
-									i(123975),	-- Greater Bounty Spoils
-								},
-							},
-							{	-- Iron Assembly: Admiral Gar'an
-								["questID"] = 37764,
-								["isWeekly"] = true,
-								["groups"] = {
-									i(123975),	-- Greater Bounty Spoils
-								},
-							},
-							{	-- Iron Docks
-								["questID"] = 37783,
-								["isDaily"] = true,
-								["groups"] = {
-									currency(824),	-- Garrison Resources x175
-								},
-							},
-							{	-- Maw of Souls
-								["questID"] = 39225,
-								["isDaily"] = true,
-								["groups"] = {
-									currency(823),	-- Apexis Crystal x1000
-								},
-							},
-							{	-- Pits of Mannoroth
-								["questID"] = 39221,
-								["isDaily"] = true,
-								["groups"] = {
-									currency(823),	-- Apexis Crystal x1000
-								},
-							},
-							{	-- Shadowmoon Burial Grounds
-								["questID"] = 37784,
-								["isDaily"] = true,
-								["groups"] = {
-									currency(824),	-- Garrison Resources x175
-								},
-							},
-							{	-- Skyreach
-								["questID"] = 37785,
-								["isDaily"] = true,
-								["groups"] = {
-									currency(824),	-- Garrison Resources x175
-								},
-							},
-							{	-- Slagworks: Heart of the Mountain
-								["questID"] = 37762,
-								["isWeekly"] = true,
-								["groups"] = {
-									i(123975),	-- Greater Bounty Spoils
-								},
-							},
-							{	-- Temple of Tyranny
-								["questID"] = 39228,
-								["isDaily"] = true,
-								["groups"] = {
-									currency(823),	-- Apexis Crystal x1000
-								},
-							},
-							{	-- The Black Forge: Kromog
-								["questID"] = 37763,
-								["isWeekly"] = true,
-								["groups"] = {
-									i(123975),	-- Greater Bounty Spoils
-								},
-							},
-							{	-- The Black Gate
-								["questID"] = 39232,
-								["isDaily"] = true,
-								["groups"] = {
-									currency(823),	-- Apexis Crystal x1000
-								},
-							},
-							{	-- The Everbloom
-								["questID"] = 37786,
-								["isDaily"] = true,
-								["groups"] = {
-									currency(824),	-- Garrison Resources x175
-								},
-							},
-							{	-- Upper Blackrock Spire
-								["questID"] = 37787,
-								["isDaily"] = true,
-								["groups"] = {
-									currency(824),	-- Garrison Resources x175
-								},
-							},
-							{	-- Walled City: Brackenspore
-								["questID"] = 37756,
-								["isWeekly"] = true,
-								["groups"] = {
-									i(123975),	-- Greater Bounty Spoils
-								},
-							},
+					garrisonBuilding(133, {	-- Barn (rank 1: 24, rank 2: 25, rank 3: 133)
+						{	-- Feeding An Army
+							["questID"] = 36344,
+							["qg"] = 85048,	-- Farmer Lok'lub
+							["races"] = HORDE_ONLY,
 						},
 					}),
 					garrisonBuilding(135, {	-- Fishing Shack (rank 1: 64, rank 2: 134, rank 3: 135)
@@ -613,19 +228,14 @@ _.ExpansionFeatures =
 								i(112623),	-- Pack of Fishing Supplies
 							},
 						},
+						{	-- Looking For Help
+							["questID"] = 34758,
+							["qg"] = 79892,	-- Mak'jin
+							["coord"] = { 38.1, 72.2, 590 },
+							["races"] = HORDE_ONLY,
+							["requireSkill"] = 356,	-- Fishing
+						},
 					}),
-					n(-152, {	-- Garrison Campaign
-						q(35195, {
-							i(119134),	-- Toy
-						}),
-						q(32985, {
-							i(119145),	-- Toy
-						}),
-					}),
-					{	-- Garrison Campaign: War Council
-						["questID"] = 38567,
-						["description"] = "Automatically granted upon upgrading your garrison to Rank 3.",
-					},
 					n(-121, {	-- Frostwall Tavern - temporarily using npc header [Pr3vention]
 						desc(i(119036, {	-- Box of Storied Treasures [4]
 							i(109957),	-- Alc's Pendant of Fiery Dreams
@@ -1937,13 +1547,6 @@ _.ExpansionFeatures =
 							}),
 						}),
 					}),
-					{	-- Looking For Help
-						["questID"] = 34758,
-						["qg"] = 79892,	-- Mak'jin
-						["coord"] = { 38.1, 72.2, 590 },
-						["races"] = HORDE_ONLY,
-						["requireSkill"] = 356,	-- Fishing
-					},
 					garrisonBuilding(138, {	-- Lumber Mill (rank 1: 40, rank 2: 41, rank 3: 138)
 						{	-- Easing into Lumberjacking
 							["questID"] = 36137,
@@ -1999,6 +1602,802 @@ _.ExpansionFeatures =
 							},
 						},
 					}),
+					garrisonBuilding(130, {	-- Scribe's quarters (rank 1: 95, rank 2: 129, rank 3: 130)
+						{	-- Your First Inscription Work Order
+							["questID"] = 37572,
+							["qg"] = 79829,	-- Urgra
+						},
+					}),
+					garrisonBuilding(67, {	-- Stables (rank 1: 65, rank 2: 66, rank 3: 67)
+						{	-- Besting a Boar
+							["questID"] = 36944,
+							["qg"] = 86979,	-- Tormak the Scarred
+							["races"] = HORDE_ONLY,
+						},
+						{	-- Boar Training: Bulbapore
+							["questID"] = 37034,
+							["qg"] = 86979,	-- Tormak the Scarred
+							["races"] = HORDE_ONLY,
+						},
+						{	-- Boar Training: Cruel Ogres
+							["questID"] = 37035,
+							["qg"] = 86979,	-- Tormak the Scarred
+							["races"] = HORDE_ONLY,
+						},
+						{	-- Boar Training: Darkwing Roc
+							["questID"] = 37036,
+							["qg"] = 86979,	-- Tormak the Scarred
+							["races"] = HORDE_ONLY,
+						},
+						{	-- Boar Training: Gezz'ran
+							["questID"] = 37033,
+							["qg"] = 86979,	-- Tormak the Scarred
+							["races"] = HORDE_ONLY,
+						},
+						{	-- Boar Training: Ironbore
+							["questID"] = 37039,
+							["qg"] = 86979,	-- Tormak the Scarred
+							["races"] = HORDE_ONLY,
+						},
+						{	-- Boar Training: Moth of Wrath
+							["questID"] = 37037,
+							["qg"] = 86979,	-- Tormak the Scarred
+							["races"] = HORDE_ONLY,
+						},
+						{	-- Boar Training: Orc Hunters
+							["questID"] = 37040,
+							["qg"] = 86979,	-- Tormak the Scarred
+							["races"] = HORDE_ONLY,
+						},
+						{	-- Boar Training: Riplash
+							["questID"] = 37032,
+							["qg"] = 86979,	-- Tormak the Scarred
+							["races"] = HORDE_ONLY,
+						},
+						{	-- Boar Training: The Garn
+							["questID"] = 37041,
+							["qg"] = 86979,	-- Tormak the Scarred
+							["races"] = HORDE_ONLY,
+							["groups"] = {
+								i(116675),	-- Trained Rocktusk
+							},
+						},
+						{	-- Boar Training: Thundercall
+							["questID"] = 37038,
+							["qg"] = 86979,	-- Tormak the Scarred
+							["races"] = HORDE_ONLY,
+						},
+						{	-- Capturing a Clefthoof
+							["questID"] = 36912,
+							["qg"] = 86979,	-- Tormak the Scarred
+							["races"] = HORDE_ONLY,
+						},
+						{	-- Clefthoof Training: Bulbapore
+							["questID"] = 37052,
+							["qg"] = 86979,	-- Tormak the Scarred
+							["races"] = HORDE_ONLY,
+						},
+						{	-- Clefthoof Training: Cruel Ogres
+							["questID"] = 37053,
+							["qg"] = 86979,	-- Tormak the Scarred
+							["races"] = HORDE_ONLY,
+						},
+						{	-- Clefthoof Training: Darkwing Roc
+							["questID"] = 37054,
+							["qg"] = 86979,	-- Tormak the Scarred
+							["races"] = HORDE_ONLY,
+						},
+						{	-- Clefthoof Training: Gezz'ran
+							["questID"] = 37051,
+							["qg"] = 86979,	-- Tormak the Scarred
+							["races"] = HORDE_ONLY,
+						},
+						{	-- Clefthoof Training: Great-Tusk
+							["questID"] = 37048,
+							["qg"] = 86979,	-- Tormak the Scarred
+							["races"] = HORDE_ONLY,
+						},
+						{	-- Clefthoof Training: Ironbore
+							["questID"] = 37057,
+							["qg"] = 86979,	-- Tormak the Scarred
+							["races"] = HORDE_ONLY,
+						},
+						{	-- Clefthoof Training: Moth of Wrath
+							["questID"] = 37055,
+							["qg"] = 86979,	-- Tormak the Scarred
+							["races"] = HORDE_ONLY,
+						},
+						{	-- Clefthoof Training: Orc Hunters
+							["questID"] = 37058,
+							["qg"] = 86979,	-- Tormak the Scarred
+							["races"] = HORDE_ONLY,
+						},
+						{	-- Clefthoof Training: Rakkiri
+							["questID"] = 37049,
+							["qg"] = 86979,	-- Tormak the Scarred
+							["races"] = HORDE_ONLY,
+						},
+						{	-- Clefthoof Training: Riplash
+							["questID"] = 37050,
+							["qg"] = 86979,	-- Tormak the Scarred
+							["races"] = HORDE_ONLY,
+						},
+						{	-- Clefthoof Training: The Garn
+							["questID"] = 37059,
+							["qg"] = 86979,	-- Tormak the Scarred
+							["races"] = HORDE_ONLY,
+							["groups"] = {
+								i(116656),	-- Trained Icehoof
+							},
+						},
+						{	-- Clefthoof Training: Thundercall
+							["questID"] = 37056,
+							["qg"] = 86979,	-- Tormak the Scarred
+							["races"] = HORDE_ONLY,
+						},
+						{	-- Elekk Training: Cruel Ogres
+							["questID"] = 37063,
+							["qg"] = 86979,	-- Tormak the Scarred
+							["races"] = HORDE_ONLY,
+						},
+						{	-- Elekk Training: Darkwing Roc
+							["questID"] = 37064,
+							["qg"] = 86979,	-- Tormak the Scarred
+							["races"] = HORDE_ONLY,
+						},
+						{	-- Elekk Training: Ironbore
+							["questID"] = 37067,
+							["qg"] = 86979,	-- Tormak the Scarred
+							["races"] = HORDE_ONLY,
+						},
+						{	-- Elekk Training: Moth of Wrath
+							["questID"] = 37065,
+							["qg"] = 86979,	-- Tormak the Scarred
+							["races"] = HORDE_ONLY,
+						},
+						{	-- Elekk Training: Orc Hunters
+							["questID"] = 37068,
+							["qg"] = 86979,	-- Tormak the Scarred
+							["races"] = HORDE_ONLY,
+						},
+						{	-- Elekk Training: The Garn
+							["questID"] = 37069,
+							["qg"] = 86979,	-- Tormak the Scarred
+							["races"] = HORDE_ONLY,
+							["groups"] = {
+								i(116662),	-- Trained Meadowstomper
+							},
+						},
+						{	-- Elekk Training: Thundercall
+							["questID"] = 37066,
+							["qg"] = 86979,	-- Tormak the Scarred
+							["races"] = HORDE_ONLY,
+						},
+						{	-- Entangling an Elekk
+							["questID"] = 36946,
+							["qg"] = 86979,	-- Tormak the Scarred
+							["races"] = HORDE_ONLY,
+						},
+						{	-- Requisition a Riverbeast
+							["questID"] = 36945,
+							["qg"] = 87242,	-- Sage Paluna
+							["races"] = HORDE_ONLY,
+						},
+						{	-- Riverbeast Training: Bulbapore
+							["questID"] = 37072,
+							["qg"] = 87242,	-- Sage Paluna
+							["races"] = HORDE_ONLY,
+						},
+						{	-- Riverbeast Training: Cruel Ogres
+							["questID"] = 37073,
+							["qg"] = 87242,	-- Sage Paluna
+							["races"] = HORDE_ONLY,
+						},
+						{	-- Riverbeast Training: Darkwing Roc
+							["questID"] = 37074,
+							["qg"] = 87242,	-- Sage Paluna
+							["races"] = HORDE_ONLY,
+						},
+						{	-- Riverbeast Training: Gezz'ran
+							["questID"] = 37071,
+							["qg"] = 87242,	-- Sage Paluna
+							["races"] = HORDE_ONLY,
+						},
+						{	-- Riverbeast Training: Ironbore
+							["questID"] = 37077,
+							["qg"] = 87242,	-- Sage Paluna
+							["races"] = HORDE_ONLY,
+						},
+						{	-- Riverbeast Training: Moth of Wrath
+							["questID"] = 37075,
+							["qg"] = 87242,	-- Sage Paluna
+							["races"] = HORDE_ONLY,
+						},
+						{	-- Riverbeast Training: Orc Hunters
+							["questID"] = 37078,
+							["qg"] = 87242,	-- Sage Paluna
+							["races"] = HORDE_ONLY,
+						},
+						{	-- Riverbeast Training: The Garn
+							["questID"] = 37079,
+							["qg"] = 87242,	-- Sage Paluna
+							["races"] = HORDE_ONLY,
+							["groups"] = {
+								i(116676),	-- Trained Riverwallow
+							},
+						},
+						{	-- Riverbeast Training: Thundercall
+							["questID"] = 37076,
+							["qg"] = 87242,	-- Sage Paluna
+							["races"] = HORDE_ONLY,
+						},
+						{	-- Talbuk Training: Bulbapore
+							["questID"] = 37097,
+							["qg"] = 87242,	-- Sage Paluna
+							["races"] = HORDE_ONLY,
+						},
+						{	-- Talbuk Training: Cruel Ogres
+							["questID"] = 37098,
+							["qg"] = 87242,	-- Sage Paluna
+							["races"] = HORDE_ONLY,
+						},
+						{	-- Talbuk Training: Darkwing Roc
+							["questID"] = 37099,
+							["qg"] = 87242,	-- Sage Paluna
+							["races"] = HORDE_ONLY,
+						},
+						{	-- Talbuk Training: Gezz'ran
+							["questID"] = 37096,
+							["qg"] = 87242,	-- Sage Paluna
+							["races"] = HORDE_ONLY,
+						},
+						{	-- Talbuk Training: Great-Tusk
+							["questID"] = 37093,
+							["qg"] = 87242,	-- Sage Paluna
+							["races"] = HORDE_ONLY,
+						},
+						{	-- Talbuk Training: Ironbore
+							["questID"] = 37102,
+							["qg"] = 87242,	-- Sage Paluna
+							["races"] = HORDE_ONLY,
+						},
+						{	-- Talbuk Training: Moth of Wrath
+							["questID"] = 37100,
+							["qg"] = 87242,	-- Sage Paluna
+							["races"] = HORDE_ONLY,
+						},
+						{	-- Talbuk Training: Orc Hunters
+							["questID"] = 37103,
+							["qg"] = 87242,	-- Sage Paluna
+							["races"] = HORDE_ONLY,
+						},
+						{	-- Talbuk Training: Rakkiri
+							["questID"] = 37094,
+							["qg"] = 87242,	-- Sage Paluna
+							["races"] = HORDE_ONLY,
+						},
+						{	-- Talbuk Training: Riplash
+							["questID"] = 37095,
+							["qg"] = 87242,	-- Sage Paluna
+							["races"] = HORDE_ONLY,
+						},
+						{	-- Talbuk Training: The Garn
+							["questID"] = 37104,
+							["qg"] = 87242,	-- Sage Paluna
+							["races"] = HORDE_ONLY,
+							["groups"] = {
+								i(116774),	-- Trained Silverpelt
+							},
+						},
+						{	-- Talbuk Training: Thundercall
+							["questID"] = 37101,
+							["qg"] = 87242,	-- Sage Paluna
+							["races"] = HORDE_ONLY,
+						},
+						{	-- Taming a Talbuk
+							["questID"] = 36917,
+							["qg"] = 87242,	-- Sage Paluna
+							["races"] = HORDE_ONLY,
+						},
+						{	-- Teeth of a Predator
+							["questID"] = 37124,
+							["qg"] = 87242,	-- Sage Paluna
+							["races"] = HORDE_ONLY,
+						},
+						{	-- The Black Claw
+							["questID"] = 37123,
+							["qg"] = 87242,	-- Sage Paluna
+							["races"] = HORDE_ONLY,
+						},
+						{	-- Wolf Training: Cruel Ogres
+							["questID"] = 37105,
+							["qg"] = 87242,	-- Sage Paluna
+							["races"] = HORDE_ONLY,
+						},
+						{	-- Wolf Training: Darkwing Roc
+							["questID"] = 37106,
+							["qg"] = 87242,	-- Sage Paluna
+							["races"] = HORDE_ONLY,
+						},
+						{	-- Wolf Training: Ironbore
+							["questID"] = 37109,
+							["qg"] = 87242,	-- Sage Paluna
+							["races"] = HORDE_ONLY,
+						},
+						{	-- Wolf Training: Moth of Wrath
+							["questID"] = 37107,
+							["qg"] = 87242,	-- Sage Paluna
+							["races"] = HORDE_ONLY,
+						},
+						{	-- Wolf Training: Orc Hunters
+							["questID"] = 37110,
+							["qg"] = 87242,	-- Sage Paluna
+							["races"] = HORDE_ONLY,
+						},
+						{	-- Wolf Training: The Garn
+							["questID"] = 37111,
+							["qg"] = 87242,	-- Sage Paluna
+							["races"] = HORDE_ONLY,
+							["groups"] = {
+								i(116784),	-- Trained Snarler
+							},
+						},
+						{	-- Wolf Training: Thundercall
+							["questID"] = 37108,
+							["qg"] = 87242,	-- Sage Paluna
+							["races"] = HORDE_ONLY,
+						},
+						{	-- Wrangling a Wolf
+							["questID"] = 36950,
+							["qg"] = 87242,	-- Sage Paluna
+							["races"] = HORDE_ONLY,
+						},
+					}),
+					garrisonBuilding(143, {	-- Storehouse (rank 1: 51, rank 2: 142, rank 3: 143)
+						{	-- Lost In Transition
+							["questID"] = 37060,
+							["qg"] = 79862,	-- Yorn Longhoof
+							["races"] = HORDE_ONLY,
+						},
+					}),
+					garrisonBuilding(145, {	-- Trading Post (rank 1: 111, rank 2: 144, rank 3: 145)
+						q(37014, {	-- Auctioning for Parts
+							["description"] = "Completing this quest grants you the ability to access the Auction House from your Garrison.",
+							["qg"] = 86806,	-- Ancient Trading Mechanism
+							["groups"] = addObject(
+								bubbleDown({["u"] = 7, ["description"] = "This item is no longer required to complete the Auctioning for Parts garrison quest."}, {
+									i(118377, {	-- Universal Language Module
+										i(118333),	-- Universal Language Compensator [Part 1 of 3]
+										i(118334),	-- Universal Language Filter [Part 2 of 3]
+										i(118335),	-- Universal Language Repository [Part 3 of 3]
+									}),
+								})[1],
+								bubbleDown({["questID"] = 37014}, {	-- Auctioning for Parts
+								i(118375, {	-- Arcane Crystal Module
+									i(118344),	-- Arcane Crystal Casing [Part 1 of 4]
+									i(118345),	-- Arcane Crystal Conduit [Part 2 of 4]
+									i(118346),	-- Arcane Crystal Amplifier [Part 3 of 4]
+									i(118347),	-- Arcane Crystal Lens [Part 4 of 4]
+								}),
+								i(118376, {	-- Auction Control Module
+									i(118197),	-- Auction Memory Socket [Part 1 of 3]
+									i(118331),	-- Auction Connecting Valve [Part 2 of 3]
+									i(118332),	-- Auction A.D.D.O.N.S Installer [Part 3 of 3]
+								}),
+								i(118379, {	-- Cyclical Power Module
+									i(118340),	-- Cyclical Power Converter [Part 1 of 4]
+									i(118341),	-- Cyclical Power Housing [Part 2 of 4]
+									i(118342),	-- Cyclical Power Framing [Part 3 of 4]
+									i(118343),	-- Cyclical Power Sequencer [Part 4 of 4]
+								}),
+								i(118378, {	-- Super Cooling Module
+									i(118336),	-- Super Cooling Regulator [Part 1 of 4]
+									i(118337),	-- Super Cooling Tubing [Part 2 of 4]
+									i(118338),	-- Super Cooling Coolant [Part 3 of 4]
+									i(118339),	-- Super Cooling Pump [Part 4 of 4]
+								}),
+							})),
+						}),
+					}),
+					n(-125, {	-- War Mill (rank 1: 8, rank 2: 9, rank 3: 10) - temporarily using npc header [Pr3vention]
+						{	-- Scraps of Iron
+							["questID"] = 37043,
+							["qg"] = 79815,	-- Gun'lek
+							["races"] = HORDE_ONLY,
+							["groups"] = {
+								i(118372),	-- Orgrimmar Tabard
+							},
+						},
+					}),
+					{	-- A Tiny Scarecrow Costume
+						["itemID"] = 128874,	-- A Tiny Scarecrow Costume
+						["questID"] = 39865,	-- Pepe can be sometimes be summoned with this mask
+						["coord"] = { 70.71, 90.21, 590 },	-- Pepe Location
+						["races"] = HORDE_ONLY,
+						["description"] = "Halloween Decorations must be up in a Tier 3 garrison",
+					},
+					{	-- All Hands on Deck
+						["questID"] = 38574,
+						["qg"] = 92400,	-- Vol'jin
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 38573,	-- Nothing Remains
+					},
+					{	-- Ashran Appearance
+						["questID"] = 36706,
+						["qg"] = 78466,	-- Gazlowe
+						["coord"] = { 52.4, 53.3, 590 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 34775,	-- Mission Probable
+					},
+					{	-- Bringing the Bass
+						["questID"] = 37961,
+						["qg"] = 37961,	-- Drix Bassbolter
+						["coord"] = { 40.9, 47.8, 590 },
+						["races"] = HORDE_ONLY,
+						["groups"] = {
+							spell(181715),	-- Unlock Garrison Jukebox
+							i(122613, {	-- Stash of Dusty Music Rolls
+								i(122210),	-- Music Roll: Orgrimmar
+								i(122218),	-- Music Roll: Rescue the Warchief
+								i(122217),	-- Music Roll: Silvermoon
+								i(122216),	-- Music Roll: The Zandalari
+								i(122213),	-- Music Roll: Thunder Bluff
+								i(122212),	-- Music Roll: Undercity
+								i(122219),	-- Music Roll: Way of the Monk
+								i(122215),	-- Music Roll: Zul'Gurub Voodoo
+							}),
+						},
+					},
+					{	-- Building For Professions
+						["questID"] = 37669,
+						["qg"] = 78466,	-- Gazlowe
+						["coords"] = {
+							{ 52.4, 53.3, 590 },	-- lvl 1
+							{ 37.6, 50.3, 590 },	-- lvl 3
+						},
+						["races"] = HORDE_ONLY,
+					},
+					{	-- Call of the Archmage
+						["questID"] = 35988,
+						["qg"] = 83858,	-- Khadgar's Servant
+						["u"] = 40,
+					},
+					{	-- Clearing the Garden
+						["questID"] = 34193,
+						["qg"] = 81981,	-- Tarnon
+						["coord"] = { 43.4, 83.2, 590 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 36567,	-- Bigger is Better
+						["groups"] = {
+							{	-- Herb Garden lvl 1
+								["buildingID"] = 29,
+							},
+						},
+					},
+					{	-- Command Board
+						["objectID"] = 232416,	-- 233291 and 237022 also valid depending on garrison level
+						["races"] = HORDE_ONLY,
+						["groups"] = {
+							{	-- The Secrets of Gorgrond
+								["questID"] = 35557,
+								["races"] = HORDE_ONLY,
+								["isBreadcrumb"] = true,
+							},
+						},
+					},
+					{	-- Den of Wolves
+						["questID"] = 34379,
+						["qg"] = 76411,	-- Farseer Drek'Thar
+						["coord"] = { 49.7, 49.5, 590 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 34775,	-- Mission Probable
+					},
+					{	-- Garrison Campaign: Awakening
+						["questID"] = 36136,
+						["qg"] = 78487,	-- Rokhan
+						["races"] = HORDE_ONLY,
+					},
+					{	-- Gems of the Apexis
+						["questID"] = 39175,
+						["qg"] = 78466,	-- Gazlowe
+						["races"] = HORDE_ONLY,
+						["requireSkill"] = 755,	-- Jewelcrafting
+						["groups"] = {
+							recipe(187639),	-- Immaculate Versatility Taladite
+						},
+					},
+					n(89753, { 	-- High Overlord Saurfang
+						["coord"] = { 40.2, 56.7, 590 },
+						["description"] = "High Overlord Saurfang has a chance to spawn in your garrison daily, or you can find someone with him spawned and join their garrison. He starts a weekly raid quest which all have the Greater Bounty Spoils as a reward.",
+						["groups"] = {
+							i(123975, {	-- Greater Bounty Spoils
+								["groups"] = {
+									i(114111, {	-- Formidable Armament
+										i(115335),	-- Formidable Axe
+										i(115338),	-- Formidable Dagger
+										i(115336),	-- Formidable Greataxe
+										i(115337),	-- Formidable Longbow
+										i(115340),	-- Formidable Polearm
+										i(115342),	-- Formidable Scepter
+										i(115341),	-- Formidable Spire
+										i(115339),	-- Formidable Warmace
+									}),
+									i(114088, {	-- Formidable Bracers
+										i(114554),	-- Aerial Acolyte's Bracers
+										i(114557),	-- Crimson Carapace Bracers
+										i(114556),	-- Sickened Scale Bracers
+										i(114555),	-- Yeti-Hide Bracers
+									}),
+									i(119125, {	-- Formidable Cloak
+										i(114607),	-- Bloodstained Miser's Cloak
+										i(114604),	-- Cloak of Blind Focus
+										i(114605),	-- Doomwake Drape
+										i(114606),	-- Fathom-Ripped Cape
+										i(114608),	-- Ultimate Greatcloak
+									}),
+									i(119115, {	-- Formidable Gauntlets
+										i(114566),	-- Aerial Acolyte's Gloves
+										i(114569),	-- Crimson Carapace Gauntlets
+										i(114568),	-- Sickened Scale Gauntlets
+										i(114567),	-- Yeti-Hide Gauntlets
+									}),
+									i(119121, {	-- Formidable Girdle
+										i(114582),	-- Aerial Acolyte's Cord
+										i(114585),	-- Crimson Carapace Girdle
+										i(114584),	-- Sickened Scale Belt
+										i(114583),	-- Yeti-Hide Belt
+									}),
+									i(119117, {	-- Formidable Hood
+										i(114570),	-- Aerial Acolyte's Hood
+										i(114573),	-- Crimson Carapace Greathelm
+										i(114572),	-- Sickened Scale Helm
+										i(114571),	-- Yeti-Hide Hood
+									}),
+									i(119119, {	-- Formidable Leggings
+										i(114574),	-- Aerial Acolyte's Trousers
+										i(114577),	-- Crimson Carapace Legplates
+										i(114576),	-- Sickened Scale Legguards
+										i(114575),	-- Yeti-Hide Legguards
+									}),
+									i(114089, {	-- Formidable Robes
+										i(114561),	-- Aerial Acolyte's Robes
+										i(114560),	-- Crimson Carapace Breastplate
+										i(114559),	-- Sickened Scale Chestguard
+										i(114558),	-- Yeti-Hide Chestguard
+									}),
+									i(114091, {	-- Formidable Spaulders
+										i(114578),	-- Aerial Acolyte's Mantle
+										i(114581),	-- Crimson Carapace Shoulderguard
+										i(114580),	-- Sickened Scale Spaulders
+										i(114579),	-- Yeti-Hide Spaulders
+									}),
+									i(114090, {	-- Formidable Treads
+										i(114562),	-- Aerial Acolyte's Sandals
+										i(114565),	-- Crimson Carapace Greaves
+										i(114564),	-- Sickened Scale Boots
+										i(114563),	-- Yeti-Hide Boots
+									}),											
+									i(114112, {	-- Grandiose Armament
+										i(115327),	-- Grandiose Axe
+										i(115330),	-- Grandiose Dagger
+										i(115328),	-- Grandiose Greataxe
+										i(115329),	-- Grandiose Longbow
+										i(115332),	-- Grandiose Polearm
+										i(115334),	-- Grandiose Scepter
+										i(115333),	-- Grandiose Spire
+										i(115331),	-- Grandiose Warmace
+									}),
+									i(114082, {	-- Grandiose Bracers
+										i(114494),	-- Bracers Of Determined Resolve
+										i(114493),	-- Bracers of Volatile Ice
+										i(114496),	-- Crazed Bomber's Bracers
+										i(114495),	-- Undying Bracers
+									}),
+									i(119124, {	-- Grandiose Cloak
+										i(114544),	-- Drape of Surging Stars
+										i(114545),	-- Hearthhealer Cloak
+										i(114543),	-- Keen-Eye Forestcloak
+										i(114547),	-- Reinforced Moonsong Cloak
+										i(114546),	-- Warmonger's Bloodcloak
+									}),
+									i(119114, {	-- Grandiose Gauntlets
+										i(114508),	-- Crazed Bomber's Gauntlets
+										i(114506),	-- Gauntlets of Determined Resolve
+										i(114505),	-- Gloves of Volatile Ice
+										i(114507),	-- Undying Gauntlets
+									}),
+									i(119120, {	-- Grandiose Girdle
+										i(114522),	-- Belt of Determined Resolve
+										i(114521),	-- Cord of Volatile Ice
+										i(114524),	-- Crazed Bomber's Girdle
+										i(114523),	-- Undying Belt
+									}),
+									i(119116, {	-- Grandiose Hood
+										i(114512),	-- Crazed Bomber's Greathelm
+										i(114510),	-- Hood of Determined Resolve
+										i(114509),	-- Hood of Volatile Ice
+										i(114511),	-- Undying Helm
+									}),
+									i(119118, {	-- Grandiose Leggings
+										i(114516),	-- Crazed Bomber's Legplates
+										i(114514),	-- Legguards of Determined Resolve
+										i(114513),	-- Trousers of Volatile Ice
+										i(114515),	-- Undying Legguards
+									}),
+									i(114083, {	-- Grandiose Robes
+										i(114497),	-- Chestguard of Determined Resolve
+										i(114499),	-- Crazed Bomber's Breastplate
+										i(114500),	-- Robes of Volatile Ice
+										i(114498),	-- Undying Chestguard
+									}),
+									i(114085, {	-- Grandiose Spaulders
+										i(114520),	-- Crazed Bomber's Shoulderguard
+										i(114517),	-- Mantle of Volatile Ice
+										i(114518),	-- Spaulders of Determined Resolve
+										i(114519),	-- Undying Spaulders
+									}),
+									i(114084, {	-- Grandiose Treads
+										i(114502),	-- Boots of Determined Resolve
+										i(114504),	-- Crazed Bomber's Greaves
+										i(114501),	-- Sandals of Volatile Ice
+										i(114503),	-- Undying Boots
+									}),
+								},
+							}),
+							{	-- Arcane Sanctum: Ko'ragh
+								["questID"] = 37757,
+								["isWeekly"] = true,
+								["groups"] = {
+									i(123975),	-- Greater Bounty Spoils
+								},
+							},
+							{	-- Auchindoun
+								["questID"] = 37780,
+								["isDaily"] = true,
+								["groups"] = {
+									currency(824),	-- Garrison Resources x175
+								},
+							},
+							{	-- Blackhand's Crucible: Blackhand
+								["questID"] = 37765,
+								["isWeekly"] = true,
+								["groups"] = {
+									i(123975),	-- Greater Bounty Spoils
+								},
+							},
+							{	-- Bloodmaul Slag Mines
+								["questID"] = 37781,
+								["isDaily"] = true,
+								["groups"] = {
+									currency(824),	-- Garrison Resources x175
+								},
+							},
+							{	-- Destructor's Rise
+								["questID"] = 39231,
+								["isWeekly"] = true,
+								["groups"] = {
+									currency(823),	-- Apexis Crystal x1000
+								},
+							},
+							{	-- Grimrail Depot
+								["questID"] = 37782,
+								["isDaily"] = true,
+								["groups"] = {
+									currency(824),	-- Garrison Resources x175
+								},
+							},
+							{	-- Imperator's Rise: Imperator Mar'gok
+								["questID"] = 37758,
+								["isWeekly"] = true,
+								["groups"] = {
+									i(123975),	-- Greater Bounty Spoils
+								},
+							},
+							{	-- Iron Assembly: Admiral Gar'an
+								["questID"] = 37764,
+								["isWeekly"] = true,
+								["groups"] = {
+									i(123975),	-- Greater Bounty Spoils
+								},
+							},
+							{	-- Iron Docks
+								["questID"] = 37783,
+								["isDaily"] = true,
+								["groups"] = {
+									currency(824),	-- Garrison Resources x175
+								},
+							},
+							{	-- Maw of Souls
+								["questID"] = 39225,
+								["isDaily"] = true,
+								["groups"] = {
+									currency(823),	-- Apexis Crystal x1000
+								},
+							},
+							{	-- Pits of Mannoroth
+								["questID"] = 39221,
+								["isDaily"] = true,
+								["groups"] = {
+									currency(823),	-- Apexis Crystal x1000
+								},
+							},
+							{	-- Shadowmoon Burial Grounds
+								["questID"] = 37784,
+								["isDaily"] = true,
+								["groups"] = {
+									currency(824),	-- Garrison Resources x175
+								},
+							},
+							{	-- Skyreach
+								["questID"] = 37785,
+								["isDaily"] = true,
+								["groups"] = {
+									currency(824),	-- Garrison Resources x175
+								},
+							},
+							{	-- Slagworks: Heart of the Mountain
+								["questID"] = 37762,
+								["isWeekly"] = true,
+								["groups"] = {
+									i(123975),	-- Greater Bounty Spoils
+								},
+							},
+							{	-- Temple of Tyranny
+								["questID"] = 39228,
+								["isDaily"] = true,
+								["groups"] = {
+									currency(823),	-- Apexis Crystal x1000
+								},
+							},
+							{	-- The Black Forge: Kromog
+								["questID"] = 37763,
+								["isWeekly"] = true,
+								["groups"] = {
+									i(123975),	-- Greater Bounty Spoils
+								},
+							},
+							{	-- The Black Gate
+								["questID"] = 39232,
+								["isDaily"] = true,
+								["groups"] = {
+									currency(823),	-- Apexis Crystal x1000
+								},
+							},
+							{	-- The Everbloom
+								["questID"] = 37786,
+								["isDaily"] = true,
+								["groups"] = {
+									currency(824),	-- Garrison Resources x175
+								},
+							},
+							{	-- Upper Blackrock Spire
+								["questID"] = 37787,
+								["isDaily"] = true,
+								["groups"] = {
+									currency(824),	-- Garrison Resources x175
+								},
+							},
+							{	-- Walled City: Brackenspore
+								["questID"] = 37756,
+								["isWeekly"] = true,
+								["groups"] = {
+									i(123975),	-- Greater Bounty Spoils
+								},
+							},
+						},
+					}),
+					n(-152, {	-- Garrison Campaign
+						q(35195, {
+							i(119134),	-- Toy
+						}),
+						q(32985, {
+							i(119145),	-- Toy
+						}),
+					}),
+					{	-- Garrison Campaign: War Council
+						["questID"] = 38567,
+						["description"] = "Automatically granted upon upgrading your garrison to Rank 3.",
+					},
 					{	-- My Very Own Fortress
 						["questID"] = 36614,
 						["qg"] = 78466,	-- Gazlowe
@@ -2013,7 +2412,7 @@ _.ExpansionFeatures =
 						["races"] = HORDE_ONLY,
 					},
 					{	-- New Goods
-						["questID"] = 79740,
+						["questID"] = 38427,
 						["qg"] = 79740,	-- Warmaster Zog
 						["coord"] = { 39.2, 55.3, 590 },
 						["races"] = HORDE_ONLY,
@@ -2048,12 +2447,6 @@ _.ExpansionFeatures =
 							i(119457),	-- Handaxe of Trials
 						},
 					},
-					garrisonBuilding(130, {	-- Scribe's quarters (rank 1: 95, rank 2: 129, rank 3: 130)
-						{	-- Your First Inscription Work Order
-							["questID"] = 37572,
-							["qg"] = 79829,	-- Urgra
-						},
-					}),
 					n(89806, {	-- Shadow Hunter Ty'jin
 						["coord"] = { 40.2, 56.7, 590 },
 						["races"] = HORDE_ONLY,
@@ -2105,82 +2498,6 @@ _.ExpansionFeatures =
 							{ 48.67, 52.21, 590 },	-- Tier 3 Garrison
 						},
 					},
-					garrisonBuilding(67, {	-- Stables (rank 1: 65, rank 2: 66, rank 3: 67)
-						{	-- Besting a Boar
-							["questID"] = 36944,
-							["races"] = HORDE_ONLY,
-						},
-						{	-- Boar Training: Riplash
-							["questID"] = 37032,
-							["qg"] = 86979,	-- Tormak the Scarred
-							["races"] = HORDE_ONLY,
-						},
-						{	-- Boar Training: The Garn
-							["questID"] = 37041,
-							["qg"] = 86979,	-- Tormak the Scarred
-							["races"] = HORDE_ONLY,
-							["groups"] = {
-								i(116675),	-- Trained Rocktusk
-							},
-						},
-						{	-- Clefthoof Training: Riplash
-							["questID"] = 37050,
-							["qg"] = 86979,	-- Tormak the Scarred
-							["races"] = HORDE_ONLY,
-						},
-						{	-- Clefthoof Training: The Garn
-							["questID"] = 37059,
-							["qg"] = 86979,	-- Tormak the Scarred
-							["races"] = HORDE_ONLY,
-							["groups"] = {
-								i(116656),	-- Trained Icehoof
-							},
-						},
-						{	-- Elekk Training: The Garn
-							["questID"] = 37069,
-							["qg"] = 86979,	-- Tormak the Scarred
-							["races"] = HORDE_ONLY,
-							["groups"] = {
-								i(116662),	-- Trained Meadowstomper
-							},
-						},
-						{	-- Riverbeast Training: The Garn
-							["questID"] = 37079,
-							["qg"] = 87242,	-- Sage Paluna
-							["races"] = HORDE_ONLY,
-							["groups"] = {
-								i(116676),	-- Trained Riverwallow
-							},
-						},
-						{	-- Talbuk Training: Riplash
-							["questID"] = 37095,
-							["qg"] = 87242,	-- Sage Paluna
-							["races"] = HORDE_ONLY,
-						},
-						{	-- Talbuk Training: The Garn
-							["questID"] = 37104,
-							["qg"] = 87242,	-- Sage Paluna
-							["races"] = HORDE_ONLY,
-							["groups"] = {
-								i(116774),	-- Trained Silverpelt
-							},
-						},
-						{	-- Wolf Training: The Garn
-							["questID"] = 37111,
-							["qg"] = 87242,	-- Sage Paluna
-							["races"] = HORDE_ONLY,
-							["groups"] = {
-								i(116784),	-- Trained Snarler
-							},
-						},
-					}),
-					garrisonBuilding(143, {	-- Storehouse (rank 1: 51, rank 2: 142, rank 3: 143)
-						{	-- Lost In Transition
-							["questID"] = 37060,
-							["qg"] = 79862,	-- Yorn Longhoof
-							["races"] = HORDE_ONLY,
-						},
-					}),
 					{	-- The Mysterious Flask	-- depends on alchemy lab and/or alchemy profession?
 						["questID"] = 35058,
 						["races"] = HORDE_ONLY,
@@ -2197,45 +2514,6 @@ _.ExpansionFeatures =
 							},
 						},
 					},
-					garrisonBuilding(145, {	-- Trading Post (rank 1: 111, rank 2: 144, rank 3: 145)
-						q(37014, {	-- Auctioning for Parts
-							["description"] = "Completing this quest grants you the ability to access the Auction House from your Garrison.",
-							["qg"] = 86806,	-- Ancient Trading Mechanism
-							["groups"] = addObject(
-								bubbleDown({["u"] = 7, ["description"] = "This item is no longer required to complete the Auctioning for Parts garrison quest."}, {
-									i(118377, {	-- Universal Language Module
-										i(118333),	-- Universal Language Compensator [Part 1 of 3]
-										i(118334),	-- Universal Language Filter [Part 2 of 3]
-										i(118335),	-- Universal Language Repository [Part 3 of 3]
-									}),
-								})[1],
-								bubbleDown({["questID"] = 37014}, {	-- Auctioning for Parts
-								i(118375, {	-- Arcane Crystal Module
-									i(118344),	-- Arcane Crystal Casing [Part 1 of 4]
-									i(118345),	-- Arcane Crystal Conduit [Part 2 of 4]
-									i(118346),	-- Arcane Crystal Amplifier [Part 3 of 4]
-									i(118347),	-- Arcane Crystal Lens [Part 4 of 4]
-								}),
-								i(118376, {	-- Auction Control Module
-									i(118197),	-- Auction Memory Socket [Part 1 of 3]
-									i(118331),	-- Auction Connecting Valve [Part 2 of 3]
-									i(118332),	-- Auction A.D.D.O.N.S Installer [Part 3 of 3]
-								}),
-								i(118379, {	-- Cyclical Power Module
-									i(118340),	-- Cyclical Power Converter [Part 1 of 4]
-									i(118341),	-- Cyclical Power Housing [Part 2 of 4]
-									i(118342),	-- Cyclical Power Framing [Part 3 of 4]
-									i(118343),	-- Cyclical Power Sequencer [Part 4 of 4]
-								}),
-								i(118378, {	-- Super Cooling Module
-									i(118336),	-- Super Cooling Regulator [Part 1 of 4]
-									i(118337),	-- Super Cooling Tubing [Part 2 of 4]
-									i(118338),	-- Super Cooling Coolant [Part 3 of 4]
-									i(118339),	-- Super Cooling Pump [Part 4 of 4]
-								}),
-							})),
-						}),
-					}),
 					{	-- Treasure Contract: The Infected Orc
 						["questID"] = 37941,
 						["isDaily"] = true,
@@ -2250,16 +2528,6 @@ _.ExpansionFeatures =
 						["coord"] = { 37.5, 50.3, 590 },	-- lvl 3
 						["races"] = HORDE_ONLY,
 					},
-					n(-125, {	-- War Mill (rank 1: 8, rank 2: 9, rank 3: 10) - temporarily using npc header [Pr3vention]
-						{	-- Scraps of Iron
-							["questID"] = 37043,
-							["qg"] = 79815,	-- Gun'lek
-							["races"] = HORDE_ONLY,
-							["groups"] = {
-								i(118372),	-- Orgrimmar Tabard
-							},
-						},
-					}),
 					{	-- War Planning Map
 						["objectID"] = 236206,
 						["coords"] = {

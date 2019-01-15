@@ -1737,13 +1737,112 @@ _.ExpansionFeatures =
 							["qg"] = 77372,	-- Eric Broadoak
 						},
 					}),
-					n(-99, { 	-- Stables
+					garrisonBuilding(67, {	-- Stables (rank 1: 65, rank 2: 66, rank 3: 67)
 						{	-- Besting a Boar
 							["questID"] = 36913,
+							["qg"] = 86973,	-- Keegan Firebeard
+							["races"] = ALLIANCE_ONLY,
+						},
+						{	-- Boar Training: Bulbapore
+							["questID"] = 36997,
+							["qg"] = 86973,	-- Keegan Firebeard
+							["races"] = ALLIANCE_ONLY,
+						},
+						{	-- Boar Training: Cruel Ogres
+							["questID"] = 36998,
+							["qg"] = 86973,	-- Keegan Firebeard
+							["races"] = ALLIANCE_ONLY,
+						},
+						{	-- Boar Training: Darkwing Roc
+							["questID"] = 36999,
+							["qg"] = 86973,	-- Keegan Firebeard
+							["races"] = ALLIANCE_ONLY,
+						},
+						{	-- Boar Training: Gezz'ran
+							["questID"] = 36996,
+							["qg"] = 86973,	-- Keegan Firebeard
+							["races"] = ALLIANCE_ONLY,
+						},
+						{	-- Boar Training: Ironbore
+							["questID"] = 37002,
+							["qg"] = 86973,	-- Keegan Firebeard
+							["races"] = ALLIANCE_ONLY,
+						},
+						{	-- Boar Training: Moth of Wrath
+							["questID"] = 37000,
+							["qg"] = 86973,	-- Keegan Firebeard
+							["races"] = ALLIANCE_ONLY,
+						},
+						{	-- Boar Training: Orc Hunters
+							["questID"] = 37003,
+							["qg"] = 86973,	-- Keegan Firebeard
 							["races"] = ALLIANCE_ONLY,
 						},
 						{	-- Boar Training: Riplash
 							["questID"] = 36995,
+							["qg"] = 86973,	-- Keegan Firebeard
+							["races"] = ALLIANCE_ONLY,
+						},
+						{	-- Boar Training: The Garn
+							["questID"] = 37004,
+							["qg"] = 86973,	-- Keegan Firebeard
+							["races"] = ALLIANCE_ONLY,
+							["groups"] = {
+								i(116675),	-- Trained Rocktusk
+							},
+						},
+						{	-- Boar Training: Thundercall
+							["questID"] = 37001,
+							["qg"] = 86973,	-- Keegan Firebeard
+							["races"] = ALLIANCE_ONLY,
+						},
+						{	-- Capturing a Clefthoof
+							["questID"] = 36916,
+							["qg"] = 86973,	-- Keegan Firebeard
+							["races"] = ALLIANCE_ONLY,
+						},
+						{	-- Clefthoof Training: Bulbapore
+							["questID"] = 36987,
+							["qg"] = 86973,	-- Keegan Firebeard
+							["races"] = ALLIANCE_ONLY,
+						},
+						{	-- Clefthoof Training: Cruel Ogres
+							["questID"] = 36988,
+							["qg"] = 86973,	-- Keegan Firebeard
+							["races"] = ALLIANCE_ONLY,
+						},
+						{	-- Clefthoof Training: Darkwing Roc
+							["questID"] = 36989,
+							["qg"] = 86973,	-- Keegan Firebeard
+							["races"] = ALLIANCE_ONLY,
+						},
+						{	-- Clefthoof Training: Gezz'ran
+							["questID"] = 36986,
+							["qg"] = 86973,	-- Keegan Firebeard
+							["races"] = ALLIANCE_ONLY,
+						},
+						{	-- Clefthoof Training: Great-Tusk
+							["questID"] = 36983,
+							["qg"] = 86973,	-- Keegan Firebeard
+							["races"] = ALLIANCE_ONLY,
+						},
+						{	-- Clefthoof Training: Ironbore
+							["questID"] = 36992,
+							["qg"] = 86973,	-- Keegan Firebeard
+							["races"] = ALLIANCE_ONLY,
+						},
+						{	-- Clefthoof Training: Moth of Wrath
+							["questID"] = 36990,
+							["qg"] = 86973,	-- Keegan Firebeard
+							["races"] = ALLIANCE_ONLY,
+						},
+						{	-- Clefthoof Training: Orc Hunters
+							["questID"] = 36993,
+							["qg"] = 86973,	-- Keegan Firebeard
+							["races"] = ALLIANCE_ONLY,
+						},
+						{	-- Clefthoof Training: Rakkiri
+							["questID"] = 36984,
 							["qg"] = 86973,	-- Keegan Firebeard
 							["races"] = ALLIANCE_ONLY,
 						},
@@ -1752,29 +1851,236 @@ _.ExpansionFeatures =
 							["qg"] = 86973,	-- Keegan Firebeard
 							["races"] = ALLIANCE_ONLY,
 						},
+						{	-- Clefthoof Training: The Garn
+							["questID"] = 36994,
+							["qg"] = 86973,	-- Keegan Firebeard
+							["races"] = ALLIANCE_ONLY,
+							["groups"] = {
+								i(116656),	-- Trained Icehoof
+							},
+						},
+						{	-- Clefthoof Training: Thundercall
+							["questID"] = 36991,
+							["qg"] = 86973,	-- Keegan Firebeard
+							["races"] = ALLIANCE_ONLY,
+						},
+						{	-- Elekk Training: Cruel Ogres
+							["questID"] = 37015,
+							["qg"] = 86973,	-- Keegan Firebeard
+							["races"] = ALLIANCE_ONLY,
+						},
+						{	-- Elekk Training: Darkwing Roc
+							["questID"] = 37016,
+							["qg"] = 86973,	-- Keegan Firebeard
+							["races"] = ALLIANCE_ONLY,
+						},
+						{	-- Elekk Training: Ironbore
+							["questID"] = 37019,
+							["qg"] = 86973,	-- Keegan Firebeard
+							["races"] = ALLIANCE_ONLY,
+						},
+						{	-- Elekk Training: Moth of Wrath
+							["questID"] = 37017,
+							["qg"] = 86973,	-- Keegan Firebeard
+							["races"] = ALLIANCE_ONLY,
+						},
+						{	-- Elekk Training: Orc Hunters
+							["questID"] = 37020,
+							["qg"] = 86973,	-- Keegan Firebeard
+							["races"] = ALLIANCE_ONLY,
+						},
+						{	-- Elekk Training: The Garn
+							["questID"] = 37021,
+							["qg"] = 86973,	-- Keegan Firebeard
+							["races"] = ALLIANCE_ONLY,
+							["groups"] = {
+								i(116662),	-- Trained Meadowstomper
+							},
+						},
+						{	-- Elekk Training: Thundercall
+							["questID"] = 37018,
+							["qg"] = 86973,	-- Keegan Firebeard
+							["races"] = ALLIANCE_ONLY,
+						},
+						{	-- Entangling an Elekk
+							["questID"] = 36915,
+							["qg"] = 86973,	-- Keegan Firebeard
+							["races"] = ALLIANCE_ONLY,
+						},
+						{	-- Requisition a Riverbeast
+							["questID"] = 36918,
+							["qg"] = 86974,	-- Fanny Firebeard
+							["races"] = ALLIANCE_ONLY,
+						},
+						{	-- Riverbeast Training: Bulbapore
+							["questID"] = 37006,
+							["qg"] = 86974,	-- Fanny Firebeard
+							["races"] = ALLIANCE_ONLY,
+						},
+						{	-- Riverbeast Training: Cruel Ogres
+							["questID"] = 37007,
+							["qg"] = 86974,	-- Fanny Firebeard
+							["races"] = ALLIANCE_ONLY,
+						},
+						{	-- Riverbeast Training: Darkwing Roc
+							["questID"] = 37008,
+							["qg"] = 86974,	-- Fanny Firebeard
+							["races"] = ALLIANCE_ONLY,
+						},
+						{	-- Riverbeast Training: Gezz'ran
+							["questID"] = 37005,
+							["qg"] = 86974,	-- Fanny Firebeard
+							["races"] = ALLIANCE_ONLY,
+						},
+						{	-- Riverbeast Training: Ironbore
+							["questID"] = 37011,
+							["qg"] = 86974,	-- Fanny Firebeard
+							["races"] = ALLIANCE_ONLY,
+						},
+						{	-- Riverbeast Training: Moth of Wrath
+							["questID"] = 37009,
+							["qg"] = 86974,	-- Fanny Firebeard
+							["races"] = ALLIANCE_ONLY,
+						},
+						{	-- Riverbeast Training: Orc Hunters
+							["questID"] = 37012,
+							["qg"] = 86974,	-- Fanny Firebeard
+							["races"] = ALLIANCE_ONLY,
+						},
+						{	-- Riverbeast Training: The Garn
+							["questID"] = 37013,
+							["qg"] = 86974,	-- Fanny Firebeard
+							["races"] = ALLIANCE_ONLY,
+							["groups"] = {
+								i(116676),	-- Trained Riverwallow
+							},
+						},
+						{	-- Riverbeast Training: Thundercall
+							["questID"] = 37010,
+							["qg"] = 86974,	-- Fanny Firebeard
+							["races"] = ALLIANCE_ONLY,
+						},
+						{	-- Talbuk Training: Bulbapore
+							["questID"] = 36975,
+							["qg"] = 86974,	-- Fanny Firebeard
+							["races"] = ALLIANCE_ONLY,
+						},
+						{	-- Talbuk Training: Cruel Ogres
+							["questID"] = 36976,
+							["qg"] = 86974,	-- Fanny Firebeard
+							["races"] = ALLIANCE_ONLY,
+						},
+						{	-- Talbuk Training: Darkwing Roc
+							["questID"] = 36977,
+							["qg"] = 86974,	-- Fanny Firebeard
+							["races"] = ALLIANCE_ONLY,
+						},
+						{	-- Talbuk Training: Gezz'ran
+							["questID"] = 36974,
+							["qg"] = 86974,	-- Fanny Firebeard
+							["races"] = ALLIANCE_ONLY,
+						},
+						{	-- Talbuk Training: Great-Tusk
+							["questID"] = 36971,
+							["qg"] = 86974,	-- Fanny Firebeard
+							["races"] = ALLIANCE_ONLY,
+						},
+						{	-- Talbuk Training: Ironbore
+							["questID"] = 36980,
+							["qg"] = 86974,	-- Fanny Firebeard
+							["races"] = ALLIANCE_ONLY,
+						},
+						{	-- Talbuk Training: Moth of Wrath
+							["questID"] = 36978,
+							["qg"] = 86974,	-- Fanny Firebeard
+							["races"] = ALLIANCE_ONLY,
+						},
+						{	-- Talbuk Training: Orc Hunters
+							["questID"] = 36981,
+							["qg"] = 86974,	-- Fanny Firebeard
+							["races"] = ALLIANCE_ONLY,
+						},
+						{	-- Talbuk Training: Rakkiri
+							["questID"] = 36972,
+							["qg"] = 86974,	-- Fanny Firebeard
+							["races"] = ALLIANCE_ONLY,
+						},
 						{	-- Talbuk Training: Riplash
 							["questID"] = 36973,
 							["qg"] = 86974,	-- Fanny Firebeard
 							["races"] = ALLIANCE_ONLY,
 						},
-						q(37004, {
-							i(116675), -- Mount
-						}),
-						q(36994, {
-							i(116656), -- Mount
-						}),
-						q(37021, {
-							i(116662), -- Mount
-						}),
-						q(37013, { 
-							i(116676), -- Mount
-						}),
-						q(36982, {
-							i(116774), -- Mount
-						}),
-						q(37028, {
-							i(116784), -- Mount
-						}),
+						{	-- Talbuk Training: The Garn
+							["questID"] = 36982,
+							["qg"] = 86974,	-- Fanny Firebeard
+							["races"] = ALLIANCE_ONLY,
+							["groups"] = {
+								i(116774),	-- Trained Silverpelt
+							},
+						},
+						{	-- Talbuk Training: Thundercall
+							["questID"] = 36979,
+							["qg"] = 86974,	-- Fanny Firebeard
+							["races"] = ALLIANCE_ONLY,
+						},
+						{	-- Taming a Talbuk
+							["questID"] = 36911,
+							["qg"] = 86974,	-- Fanny Firebeard
+							["races"] = ALLIANCE_ONLY,
+						},
+						{	-- Teeth of a Predator
+							["questID"] = 37122,
+							["qg"] = 86974,	-- Fanny Firebeard
+							["races"] = ALLIANCE_ONLY,
+						},
+						{	-- The Black Claw
+							["questID"] = 37121,
+							["qg"] = 86974,	-- Fanny Firebeard
+							["races"] = ALLIANCE_ONLY,
+						},
+						{	-- Wolf Training: Cruel Ogres
+							["questID"] = 37022,
+							["qg"] = 86974,	-- Fanny Firebeard
+							["races"] = ALLIANCE_ONLY,
+						},
+						{	-- Wolf Training: Darkwing Roc
+							["questID"] = 37023,
+							["qg"] = 86974,	-- Fanny Firebeard
+							["races"] = ALLIANCE_ONLY,
+						},
+						{	-- Wolf Training: Ironbore
+							["questID"] = 37026,
+							["qg"] = 86974,	-- Fanny Firebeard
+							["races"] = ALLIANCE_ONLY,
+						},
+						{	-- Wolf Training: Moth of Wrath
+							["questID"] = 37024,
+							["qg"] = 86974,	-- Fanny Firebeard
+							["races"] = ALLIANCE_ONLY,
+						},
+						{	-- Wolf Training: Orc Hunters
+							["questID"] = 37027,
+							["qg"] = 86974,	-- Fanny Firebeard
+							["races"] = ALLIANCE_ONLY,
+						},
+						{	-- Wolf Training: The Garn
+							["questID"] = 37028,
+							["qg"] = 86974,	-- Fanny Firebeard
+							["races"] = ALLIANCE_ONLY,
+							["groups"] = {
+								i(116784),	-- Trained Snarler
+							},
+						},
+						{	-- Wolf Training: Thundercall
+							["questID"] = 37025,
+							["qg"] = 86974,	-- Fanny Firebeard
+							["races"] = ALLIANCE_ONLY,
+						},
+						{	-- Wrangling a Wolf
+							["questID"] = 36914,
+							["qg"] = 86974,	-- Fanny Firebeard
+							["races"] = ALLIANCE_ONLY,
+						},
 					}),
 					{	-- The Secrets of Gorgrond
 						["questID"] = 35556,
