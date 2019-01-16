@@ -4,22 +4,22 @@
 _.InGameShop = 
 {
 	n(-163, {	-- Armor
-		un(35, i(95475)),	-- Crown of Eternal Winter
-		un(35, i(97213)),	-- Hood of Hungering Darkness
-		un(35, i(95474)),	-- Jewel of the Firelord
+		un(2, i(95475)),	-- Crown of Eternal Winter
+		un(2, i(97213)),	-- Hood of Hungering Darkness
+		un(2, i(95474)),	-- Jewel of the Firelord
 	}),
 	n(-160, {	-- Mounts
-		un(35, i(95341)),	-- Armored Bloodwing
+		un(2, i(95341)),	-- Armored Bloodwing
 		un(35, i(54811)),	-- Celestial Steed
 		un(35, i(160589)),	-- The Dreadwake
 		un(35, i(97989)),	-- Enchanted Fey Dragon
-		un(35, i(112327)),	-- Grinning Reaver
+		un(2, i(112327)),	-- Grinning Reaver
 		un(35, i(78924)),	-- Heart of the Aspects
 		un(35, i(107951)),	-- Iron Skyreaver
 		un(35, i(147901)),	-- Luminous Starseeker
 		un(35, i(122469)),	-- Mystic Runesaber
 		un(35, i(156564)),	-- Shu-zen, the Divine Sentinel
-		un(35, i(92724)),	-- Swift Windsteed
+		un(2, i(92724)),	-- Swift Windsteed
 		un(35, i(112326, {	-- Warforged Nightmare
 			["groups"] = {
 				un(35, i(112324)),	-- Nightmarish Hitching Post
@@ -34,8 +34,9 @@ _.InGameShop =
 		un(35, i(98550)),	-- Blossoming Ancient
 		un(35, i(128424)),	-- Brightpaw
 		un(35, i(160588)),	-- Cap'n Crackers
-		un(35, i(70099)),	-- Cenarion Hatchling
+		un(2, i(70099)),	-- Cenarion Hatchling
 		un(35, i(92707)),	-- Cinder Kitten
+		un(2, i(69847)),	-- Guardian Cub (Original Version which was bound for 24h)
 		un(7, i(72068)),	-- Guardian Cub
 		un(2, i(49662, {	-- Gryphon Hatchling
 			["groups"] = {
@@ -44,10 +45,11 @@ _.InGameShop =
 		})),
 		un(35, i(49693)),	-- Lil' K.T.
 		un(35, i(68385)),	-- Lil' Ragnaros
-		un(35, i(54847)),	-- Lil' XT
+		un(2, i(54847)),	-- Lil' XT
 		un(35, i(141893)),	-- Mischief
-		un(35, a(i(68618))),	-- Moonkin Hatchling
-		un(35, h(i(68619))),	-- Moonkin Hatchling
+		un(2, i(68384)),	-- Moonkin egg (You had to open the Egg on both faction sides before 6.0.1 to receive your Moonkin Pet). You get both now automaticly
+		un(2, a(i(68618))),	-- Moonkin Hatchling
+		un(2, h(i(68619))),	-- Moonkin Hatchling
 		un(35, i(49665)),	-- Pandaren Monk
 		un(35, i(151234)),	-- Shadow
 		un(35, i(78916)),	-- Soul of the Aspects
