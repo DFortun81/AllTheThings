@@ -475,12 +475,17 @@ _.Zones =
 								},
 								["races"] = HORDE_ONLY,
 							})),
-						--[[	qh(50841, {	-- SKREEEEE!
-								["qg"] = 135502,	-- Kua'fon
-								["sourceQuests"] = { 52305 },	-- Nature Versus Nurture
-								["isDaily"] = true,
-							}),	
-						--]]qh(47587, {	-- Headhunter Jo
+							q(49289, {	-- A Special Stone
+								["g"] = {
+									i(159151),	-- Tidemistress Greatcloak
+									i(158440),	-- Rastari Waistplate
+									i(158441),	-- Zanchuli Cord
+									i(158442),	-- Torcalin Belt
+									i(158443),	-- Jambani Belt
+									i(157530),	-- Scroll of Storm Control
+								},
+							}),
+							qh(47587, {	-- Headhunter Jo
 								["g"] = {
 									i(159114),	-- Rootway Safari Greatbow
 									i(159115),	-- K'tal Fang Blade

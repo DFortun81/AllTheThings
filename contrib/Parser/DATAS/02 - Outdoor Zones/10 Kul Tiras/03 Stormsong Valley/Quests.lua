@@ -393,6 +393,11 @@ _.Zones =
 						["qg"] = 130576,	-- Brother Pike
 						["sourceQuests"] = { 49725 },	-- A Risky Ploy [Alliance Only]
 					})),
+					q(50385, {	-- Indefatigable Purpose
+						["groups"] = {
+							i(157771),	-- Holy Water
+						},
+					}),
 					a(q(50803, {	-- I Want It All Now
 						["qg"] = 135330,	-- Nedly Grinner
 						["sourceQuests"] = { 50793 },	-- Cave Commotion [Alliance Only]

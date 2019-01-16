@@ -362,7 +362,7 @@ _.Zones =
 							{	-- Lieutenants of Darkness
 								["questID"] = 28480,
 								["groups"] = {
-									i(65816),	-- Scarab-Inlaid Crossbow
+									i(65813),	-- Scarab-Inlaid Crossbow
 									i(65814),	-- Sekhemet's Seal
 								},
 								["qg"] = 48564,	-- King Phaoris

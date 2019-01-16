@@ -322,6 +322,10 @@ _.NeverImplemented =
 			un(1, i(37420)),	-- Sharkproof Boots
 			un(1, i(68844)),	-- Unknown
 			un(1, i(109265)),	-- Unknown
+			un(1, i(46273)),	-- Scourgestalker Handguards
+			un(1, i(46275)),	-- Scourgestalker legguards
+			un(1, i(46276)),	-- Scourgestalker spaulders
+			un(1, i(46277)),	-- Scourgestalker tunic
 			un(1, i(109270)),	-- Unknown
 			un(1, i(109280)),	-- Unknown
 			un(1, i(109313)),	-- Unknown
@@ -461,6 +465,7 @@ _.NeverImplemented =
 			un(1, i(134579)), -- Vanguard Cape
 			un(1, i(108814)), -- 6.0 PH Cloak Agi
 			un(1, i(108822)), -- 6.0 PH Cloak STR
+			un(1, i(39828)),	-- Punisher's Cloak
 			un(1, i(155384)),	-- Singed Skycaller Drape (NEver added)
 			un(1, i(108823)), -- 6.0 PH Cloak Int
 			un(1, i(109282)), -- 7.0 QA Combat Test Cloak 1
@@ -491,6 +496,7 @@ _.NeverImplemented =
 			un(1, i(142504)), 	-- Hidden Tabard
 			un(1, i(134112)), 	-- Hidden Shoulder
 			un(1, i(143539)), 	-- Hidden Belt
+			un(1, i(48945)),	-- Gnomish THinking Cap (Mind Amplification Disk was added for it)
 			un(1, i(158329)), 	-- Hidden Gloves
 			un(1, i(162638)), 	-- Wooden Toy Helm (used from Winter Veil 2018 Toy, but its just used to attach the look to you, you actually never get the item)
 			un(1, i(162639)), 	-- Wooden Toy Helm (A) (used from Winter Veil 2018 Toy, but its just used to attach the look to you, you actually never get the item)
@@ -1057,6 +1063,7 @@ _.NeverImplemented =
 		n(-347, { -- Bows
 			un(1, i(108783)),    -- Unknown
 			un(1, i(109283)),    -- 6.0 QA Combat Test Hunter Bow
+			un(1, i(64783)),	-- Bloodthirsty Gladiator's Longbow(Epic BG item never made it out of beta)))
 		}),
 		n(-346, { -- Crossbows
 			un(1, i(32187)),    -- Chancellor's Heavy Crossbow
@@ -1065,6 +1072,7 @@ _.NeverImplemented =
 			un(1, i(165267)),	-- Unknown
 			un(1, i(165271)),	-- Unknown
 			un(1, i(115600)),	-- Unknown
+			un(1, i(64760)),	-- Bloodthirsty Gladiator's Heavy Crossbow (Epic BG item never made it out of beta)
 			un(1, i(103003)),    -- Prideful Gladiator's Heavy Crossbow (they ditched those items)
 			un(1, i(103375)),    -- Prideful Gladiator's Heavy Crossbow (they ditched those items)
 			un(1, i(102613)),    -- Prideful Gladiator's Heavy Crossbow (they ditched those items)	
@@ -1076,6 +1084,9 @@ _.NeverImplemented =
 			un(1, i(108786)),	-- Unknown
 			un(1, i(109269)),	-- Unknown
 			un(1, i(109292)),	-- Unknown
+			un(1, i(38247)),	-- Entrail Render
+			un(1, i(52969)),	-- Heartache Dagger -- 52965 got added
+			un(1, i(62329)),	-- Dire Slasher (never added)
 			un(1, i(109309)),	-- Unknown
 			un(1, i(109387)),	-- Unknown
 			un(1, i(109482)),	-- Unknown
@@ -1096,6 +1107,10 @@ _.NeverImplemented =
 			un(1, i(109535)),    -- Unknown
 			un(1, i(109534)),    -- Unknown
 			un(1, i(165269)),	-- Unknown
+			un(1, i(64774)),	-- Bloodthirsty Gladiator's Slasher(Epic BG item never made it out of beta))
+			un(1, i(64775)),	-- Bloodthirsty Gladiator's Fleshslicer (Epic BG item never made it out of beta))
+			un(1, i(64825)),	-- Bloodthirsty Gladiator's Right Render (Epic BG item never made it out of beta))
+			un(1, i(64926)),	-- Bloodthirsty Gladiator's Ripper (Epic BG item never made it out of beta)))
 		}),
 		n(-345, { -- Guns
 			un(1, i(49455)),	-- Blunderbuss of Deforestation
@@ -1104,6 +1119,7 @@ _.NeverImplemented =
 			un(1, i(164933)),	-- Sem'jin Beakblade Longrifle
 			un(1, i(165270)),	-- Unknown
 			un(1, i(165266)),	-- Unknown
+			un(1, i(64824)),	-- Bloodthirsty Gladiator's Rifle (Epic BG item never made it out of beta))
 			
 		}),
 		n(-331, { -- Held in Offhand
@@ -1166,6 +1182,7 @@ _.NeverImplemented =
 			un(1, i(158563)),	-- Tomb-Rustler's Polearm
 			un(1, i(108797)),	-- Unknown
 			un(1, i(108798)),	-- Unknown
+			un(1, i(64810)),	-- Bloodthirsty Gladiator's Pike (Epic BG item never made it out of beta)))
 			un(1, i(108799)),	-- Unknown
 			un(1, i(109456)),	-- Unknown
 		}),
@@ -1233,9 +1250,11 @@ _.NeverImplemented =
 			un(1, i(69916)),	-- Trollbane (Test)
 			un(1, i(109519)),	-- Unknown
 			un(1, i(165265)),	-- Unknown
+			un(1, i(64726)),	-- Bloodthirsty Gladiator's Decapitator (Epic BG item never made it out of beta))
 		}),
 		n(-337, { -- Two Handed Swords
 		--	un(1, i(84717),		-- Dreadful Gladiator's Greatsword (did not make it :( )
+			un(1, i(64755)),	-- Bloodthirsty Gladiator's Greatsword (Epic BG item never made it out of beta))
 			un(1, i(139621)),	-- The Watcher's Hammer. Used for Lost Edicts of the Watcher Paladin Appearance, actual appearance is gained via a different item
 		
 		}),
