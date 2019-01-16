@@ -19,7 +19,7 @@ _.PetBattles =
 		},
 	}),
 	-- Both Items wont show up until I found the Quest ID
-	i(165944, {	-- A Shady Message (Ally)
+	i(165944, {	-- A Shady Message (Ally). ItemID confirmed 16.01.2019 -Gold
 		["description"] = "Rewarded from winning PvP Pet Battles",
 		["collectible"] = false,
 	}),

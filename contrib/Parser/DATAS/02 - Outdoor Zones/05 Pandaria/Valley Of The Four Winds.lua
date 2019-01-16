@@ -2571,226 +2571,230 @@ _.Zones =
 						i(91477),	-- Malevolent Gladiator's Drape of Cruelty
 						i(91478),	-- Malevolent Gladiator's Drape of Prowess
 						i(91479),	-- Malevolent Gladiator's Drape of Meditation
-						un(14, i(85127)),	-- Elite Malevolent Gladiator's Spellblade  -- Daggers
-						un(14, i(85133)),	-- Elite Malevolent Gladiator's Shanker
+						un(2, i(85127)),	-- Elite Malevolent Gladiator's Spellblade  -- Daggers
+						un(2, i(85133)),	-- Elite Malevolent Gladiator's Shanker
 						i(91484),	-- Malevolent Gladiator's Spellblade
 						i(91743),	-- Malevolent Gladiator's Shanker
-						un(14, i(85109)),	-- Elite Malevolent Gladiator's Battle Staff  -- Staffs
-						un(14, i(85111)),	-- Elite Malevolent Gladiator's Staff
-						un(14, i(85110)),	-- Elite Malevolent Gladiator's Energy Staff
+						un(2, i(85109)),	-- Elite Malevolent Gladiator's Battle Staff  -- Staffs
+						un(2, i(85111)),	-- Elite Malevolent Gladiator's Staff
+						un(2, i(85110)),	-- Elite Malevolent Gladiator's Energy Staff
 						i(91486),	-- Malevolent Gladiator's Battle Staff
 						i(91560),	-- Malevolent Gladiator's Energy Staff
 						i(91535),	-- Malevolent Gladiator's Staff
-						un(14, i(85108)),	-- Elite Malevolent Gladiator's Pike  -- Polearms
+						un(2, i(85108)),	-- Elite Malevolent Gladiator's Pike  -- Polearms
 						i(91660),	-- Malevolent Gladiator's Pike
-						un(14, i(85135)),	-- Elite Malevolent Gladiator's Quickblade  -- Swords
-						un(14, i(85134)),	-- Elite Malevolent Gladiator's Slicer
-						un(14, i(85112)),	-- Elite Malevolent Gladiator's Greatsword
+						un(2, i(85135)),	-- Elite Malevolent Gladiator's Quickblade  -- Swords
+						un(2, i(85134)),	-- Elite Malevolent Gladiator's Slicer
+						un(2, i(85112)),	-- Elite Malevolent Gladiator's Greatsword
 						i(91450),	-- Malevolent Gladiator's Quickblade
 						i(91761),	-- Malevolent Gladiator's Slicer
 						i(91444),	-- Malevolent Gladiator's Greatsword
-						un(14, i(85129)),	-- Elite Malevolent Gladiator's Render  -- Fist Weapons
-						un(14, i(85128)),	-- Elite Malevolent Gladiator's Ripper
-						un(14, i(85117)),	-- Elite Malevolent Gladiator's Slasher
-						un(14, i(85116)),	-- Elite Malevolent Gladiator's Fleshslicer
+						un(2, i(85129)),	-- Elite Malevolent Gladiator's Render  -- Fist Weapons
+						un(2, i(85128)),	-- Elite Malevolent Gladiator's Ripper
+						un(2, i(85117)),	-- Elite Malevolent Gladiator's Slasher
+						un(2, i(85116)),	-- Elite Malevolent Gladiator's Fleshslicer
 						i(91745),	-- Malevolent Gladiator's Ripper
 						i(91749),	-- Malevolent Gladiator's Render
-						un(14, i(85113)),	-- Elite Malevolent Gladiator's Decapitator  -- Axes
-						un(14, i(85132)),	-- Elite Malevolent Gladiator's Hacker
-						un(14, i(85131)),	-- Elite Malevolent Gladiator's Cleaver
+						un(2, i(85113)),	-- Elite Malevolent Gladiator's Decapitator  -- Axes
+						un(2, i(85132)),	-- Elite Malevolent Gladiator's Hacker
+						un(2, i(85131)),	-- Elite Malevolent Gladiator's Cleaver
 						i(91446),	-- Malevolent Gladiator's Cleaver
 						i(91757),	-- Malevolent Gladiator's Hacker
 						i(91440),	-- Malevolent Gladiator's Decapitator
-						un(14, i(85119)),	-- Elite Malevolent Gladiator's Longbow  -- Ranged Weapons
-						un(14, i(85123)),	-- Elite Malevolent Gladiator's Rifle
-						un(14, i(85120)),	-- Elite Malevolent Gladiator's Crossbow
-						un(14, i(85122)),	-- Elite Malevolent Gladiator's Baton of Light
-						un(14, i(85120)),	-- Elite Malevolent Gladiator's Touch of Defeat
+						un(2, i(85119)),	-- Elite Malevolent Gladiator's Longbow  -- Ranged Weapons
+						un(2, i(85123)),	-- Elite Malevolent Gladiator's Rifle
+						un(2, i(85120)),	-- Elite Malevolent Gladiator's Crossbow
+						un(2, i(85122)),	-- Elite Malevolent Gladiator's Baton of Light
+						un(2, i(85120)),	-- Elite Malevolent Gladiator's Touch of Defeat
 						i(91460),	-- Malevolent Gladiator's Longbow
 						i(91554),	-- Malevolent Gladiator's Rifle
-						un(14, i(85136)),	-- Elite Malevolent Gladiator's Bonecracker  -- Maces
-						un(14, i(85130)),	-- Elite Malevolent Gladiator's Pummeler
-						un(14, i(85137)),	-- Elite Malevolent Gladiator's Gavel
-						un(14, i(85107)),	-- Elite Malevolent Gladiator's Bonegrinder
+						un(2, i(85136)),	-- Elite Malevolent Gladiator's Bonecracker  -- Maces
+						un(2, i(85130)),	-- Elite Malevolent Gladiator's Pummeler
+						un(2, i(85137)),	-- Elite Malevolent Gladiator's Gavel
+						un(2, i(85107)),	-- Elite Malevolent Gladiator's Bonegrinder
 						i(91759),	-- Malevolent Gladiator's Bonecracker
 						i(91442),	-- Malevolent Gladiator's Bonegrinder
 						i(91448),	-- Malevolent Gladiator's Pummeler
 						i(91556),	-- Malevolent Gladiator's Gavel
-						un(14, i(84993)), -- Elite Malevolent Gladiator's Dreadplate Chestpiece  -- DK
-						un(14, i(85028)), -- Elite Malevolent Gladiator's Dreadplate Gauntlets
-						un(14, i(85046)), -- Elite Malevolent Gladiator's Dreadplate Helm
-						un(14, i(85059)), -- Elite Malevolent Gladiator's Dreadplate Legguards
-						un(14, i(85086)), -- Elite Malevolent Gladiator's Dreadplate Shoulders
+						un(2, i(84993)), -- Elite Malevolent Gladiator's Dreadplate Chestpiece  -- DK
+						un(2, i(85028)), -- Elite Malevolent Gladiator's Dreadplate Gauntlets
+						un(2, i(85046)), -- Elite Malevolent Gladiator's Dreadplate Helm
+						un(2, i(85059)), -- Elite Malevolent Gladiator's Dreadplate Legguards
+						un(2, i(85086)), -- Elite Malevolent Gladiator's Dreadplate Shoulders
 						i(91500),	-- Malevolent Gladiator's Dreadplate Chestpiece
 						i(91502),	-- Malevolent Gladiator's Dreadplate Gauntlets
 						i(91504),	-- Malevolent Gladiator's Dreadplate Helm
 						i(91506),	-- Malevolent Gladiator's Dreadplate Legguards
 						i(91508),	-- Malevolent Gladiator's Dreadplate Shoulders
-						un(14, i(85025)), -- Elite Malevolent Gladiator's Dragonhide Gloves  -- Druid Dragonhide
-						un(14, i(85045)), -- Elite Malevolent Gladiator's Dragonhide Helm
-						un(14, i(85058)), -- Elite Malevolent Gladiator's Dragonhide Legguards
-						un(14, i(85065)), -- Elite Malevolent Gladiator's Dragonhide Robes
-						un(14, i(85084)), -- Elite Malevolent Gladiator's Dragonhide Spaulders
+						un(2, i(85025)), -- Elite Malevolent Gladiator's Dragonhide Gloves  -- Druid Dragonhide
+						un(2, i(85045)), -- Elite Malevolent Gladiator's Dragonhide Helm
+						un(2, i(85058)), -- Elite Malevolent Gladiator's Dragonhide Legguards
+						un(2, i(85065)), -- Elite Malevolent Gladiator's Dragonhide Robes
+						un(2, i(85084)), -- Elite Malevolent Gladiator's Dragonhide Spaulders
 						i(91510),	-- Malevolent Gladiator's Dragonhide Gloves
 						i(91512),	-- Malevolent Gladiator's Dragonhide Helm
 						i(91514),	-- Malevolent Gladiator's Dragonhide Legguards
 						i(91516),	-- Malevolent Gladiator's Dragonhide Robes
 						i(91518),	-- Malevolent Gladiator's Dragonhide Spaulders
-						un(14, i(85026)), -- Elite Malevolent Gladiator's Kodohide Gloves  -- Druid Kodohide
-						un(14, i(85043)), -- Elite Malevolent Gladiator's Kodohide Helm
-						un(14, i(85051)), -- Elite Malevolent Gladiator's Kodohide Legguards
-						un(14, i(85071)), -- Elite Malevolent Gladiator's Kodohide Robes
-						un(14, i(85082)), -- Elite Malevolent Gladiator's Kodohide Spaulders
+						un(2, i(85026)), -- Elite Malevolent Gladiator's Kodohide Gloves  -- Druid Kodohide
+						un(2, i(85043)), -- Elite Malevolent Gladiator's Kodohide Helm
+						un(2, i(85051)), -- Elite Malevolent Gladiator's Kodohide Legguards
+						un(2, i(85071)), -- Elite Malevolent Gladiator's Kodohide Robes
+						un(2, i(85082)), -- Elite Malevolent Gladiator's Kodohide Spaulders
 						i(91525),	-- Malevolent Gladiator's Kodohide Gloves
 						i(91527),	-- Malevolent Gladiator's Kodohide Helm
 						i(91529),	-- Malevolent Gladiator's Kodohide Legguards
 						i(91531),	-- Malevolent Gladiator's Kodohide Robes
 						i(91533),	-- Malevolent Gladiator's Kodohide Spaulders
-						un(14, i(85022)), -- Elite Malevolent Gladiator's Wyrmhide Gloves  -- Druid Wyrmhide
-						un(14, i(85037)), -- Elite Malevolent Gladiator's Wyrmhide Helm
-						un(14, i(85049)), -- Elite Malevolent Gladiator's Wyrmhide Legguards
-						un(14, i(85070)), -- Elite Malevolent Gladiator's Wyrmhide Robes
-						un(14, i(85080)), -- Elite Malevolent Gladiator's Wyrmhide Spaulders
+						un(2, i(85022)), -- Elite Malevolent Gladiator's Wyrmhide Gloves  -- Druid Wyrmhide
+						un(2, i(85037)), -- Elite Malevolent Gladiator's Wyrmhide Helm
+						un(2, i(85049)), -- Elite Malevolent Gladiator's Wyrmhide Legguards
+						un(2, i(85070)), -- Elite Malevolent Gladiator's Wyrmhide Robes
+						un(2, i(85080)), -- Elite Malevolent Gladiator's Wyrmhide Spaulders
 						i(91542),	-- Malevolent Gladiator's Wyrmhide Gloves
 						i(91544),	-- Malevolent Gladiator's Wyrmhide Helm
 						i(91546),	-- Malevolent Gladiator's Wyrmhide Legguards
 						i(91548),	-- Malevolent Gladiator's Wyrmhide Robes
 						i(91550),	-- Malevolent Gladiator's Wyrmhide Spaulders
-						un(14, i(84994)), -- Elite Malevolent Gladiator's Chain Armor  -- Hunter
-						un(14, i(85020)), -- Elite Malevolent Gladiator's Chain Gauntlets
-						un(14, i(85034)), -- Elite Malevolent Gladiator's Chain Helm
-						un(14, i(85061)), -- Elite Malevolent Gladiator's Chain Leggings
-						un(14, i(85076)), -- Elite Malevolent Gladiator's Chain Spaulders
+						un(2, i(84994)), -- Elite Malevolent Gladiator's Chain Armor  -- Hunter
+						un(2, i(85020)), -- Elite Malevolent Gladiator's Chain Gauntlets
+						un(2, i(85034)), -- Elite Malevolent Gladiator's Chain Helm
+						un(2, i(85061)), -- Elite Malevolent Gladiator's Chain Leggings
+						un(2, i(85076)), -- Elite Malevolent Gladiator's Chain Spaulders
 						i(91575),	-- Malevolent Gladiator's Chain Armor
 						i(91577),	-- Malevolent Gladiator's Chain Gauntlets
 						i(91579),	-- Malevolent Gladiator's Chain Helm
 						i(91581),	-- Malevolent Gladiator's Chain Leggings
 						i(91583),	-- Malevolent Gladiator's Chain Spaulders
-						un(14, i(85016)), -- Elite Malevolent Gladiator's Silk Handguards  -- Mage
-						un(14, i(85031)), -- Elite Malevolent Gladiator's Silk Cowl
-						un(14, i(85062)), -- Elite Malevolent Gladiator's Silk Trousers
-						un(14, i(85068)), -- Elite Malevolent Gladiator's Silk Robe
-						un(14, i(85085)), -- Elite Malevolent Gladiator's Silk Amice
+						un(2, i(85016)), -- Elite Malevolent Gladiator's Silk Handguards  -- Mage
+						un(2, i(85031)), -- Elite Malevolent Gladiator's Silk Cowl
+						un(2, i(85062)), -- Elite Malevolent Gladiator's Silk Trousers
+						un(2, i(85068)), -- Elite Malevolent Gladiator's Silk Robe
+						un(2, i(85085)), -- Elite Malevolent Gladiator's Silk Amice
 						i(91585),	-- Malevolent Gladiator's Silk Handguards
 						i(91587),	-- Malevolent Gladiator's Silk Cowl
 						i(91589),	-- Malevolent Gladiator's Silk Trousers
 						i(91591),	-- Malevolent Gladiator's Silk Robe
 						i(91593),	-- Malevolent Gladiator's Silk Amice
-						un(14, i(85018)), -- Elite Malevolent Gladiator's Ironskin Gloves  -- Monk Ironskin
-						un(14, i(85033)), -- Elite Malevolent Gladiator's Ironskin Helm
-						un(14, i(85064)), -- Elite Malevolent Gladiator's Ironskin Legguards
-						un(14, i(85066)), -- Elite Malevolent Gladiator's Ironskin Tunic
-						un(14, i(85087)), -- Elite Malevolent Gladiator's Ironskin Spaulders
+						un(2, i(85018)), -- Elite Malevolent Gladiator's Ironskin Gloves  -- Monk Ironskin
+						un(2, i(85033)), -- Elite Malevolent Gladiator's Ironskin Helm
+						un(2, i(85064)), -- Elite Malevolent Gladiator's Ironskin Legguards
+						un(2, i(85066)), -- Elite Malevolent Gladiator's Ironskin Tunic
+						un(2, i(85087)), -- Elite Malevolent Gladiator's Ironskin Spaulders
 						i(91600),	-- Malevolent Gladiator's Ironskin Gloves
 						i(91602),	-- Malevolent Gladiator's Ironskin Helm
 						i(91604),	-- Malevolent Gladiator's Ironskin Legguards
 						i(91606),	-- Malevolent Gladiator's Ironskin Spaulders
 						i(91608),	-- Malevolent Gladiator's Ironskin Tunic
-						un(14, i(85015)), -- Elite Malevolent Gladiator's Copperskin Gloves  -- Monk Copperskin 
-						un(14, i(85030)), -- Elite Malevolent Gladiator's Copperskin Helm
-						un(14, i(85060)), -- Elite Malevolent Gladiator's Copperskin Legguards
-						un(14, i(85067)), -- Elite Malevolent Gladiator's Copperskin Tunic
-						un(14, i(85088)), -- Elite Malevolent Gladiator's Copperskin Spaulders
+						un(2, i(85015)), -- Elite Malevolent Gladiator's Copperskin Gloves  -- Monk Copperskin 
+						un(2, i(85030)), -- Elite Malevolent Gladiator's Copperskin Helm
+						un(2, i(85060)), -- Elite Malevolent Gladiator's Copperskin Legguards
+						un(2, i(85067)), -- Elite Malevolent Gladiator's Copperskin Tunic
+						un(2, i(85088)), -- Elite Malevolent Gladiator's Copperskin Spaulders
 						i(91610),	-- Malevolent Gladiator's Copperskin Gloves
 						i(91612),	-- Malevolent Gladiator's Copperskin Helm
 						i(91614),	-- Malevolent Gladiator's Copperskin Legguards
 						i(91618),	-- Malevolent Gladiator's Copperskin Tunic
 						i(91616),	-- Malevolent Gladiator's Copperskin Spaulders
-						un(14, i(84992)), -- Elite Malevolent Gladiator's Scaled Chestpiece  -- Paladin Scaled
-						un(14, i(85027)), -- Elite Malevolent Gladiator's Scaled Gauntlet
-						un(14, i(85044)), -- Elite Malevolent Gladiator's Scaled Helm
-						un(14, i(85057)), -- Elite Malevolent Gladiator's Scaled Legguards
-						un(14, i(85091)), -- Elite Malevolent Gladiator's Scaled Shoulders
+						un(2, i(84992)), -- Elite Malevolent Gladiator's Scaled Chestpiece  -- Paladin Scaled
+						un(2, i(85027)), -- Elite Malevolent Gladiator's Scaled Gauntlet
+						un(2, i(85044)), -- Elite Malevolent Gladiator's Scaled Helm
+						un(2, i(85057)), -- Elite Malevolent Gladiator's Scaled Legguards
+						un(2, i(85091)), -- Elite Malevolent Gladiator's Scaled Shoulders
 						i(91620),	-- Malevolent Gladiator's Scaled Chestpiece
 						i(91622),	-- Malevolent Gladiator's Scaled Gauntlets
 						i(91624),	-- Malevolent Gladiator's Scaled Helm
 						i(91626),	-- Malevolent Gladiator's Scaled Legguards
 						i(91628),	-- Malevolent Gladiator's Scaled Shoulders -- Paladin Ornamented 
-						un(14, i(84991)), -- Elite Malevolent Gladiator's Ornamented Chestguard
-						un(14, i(85024)), -- Elite Malevolent Gladiator's Ornamented Gloves
-						un(14, i(85042)), -- Elite Malevolent Gladiator's Ornamented Headcover
-						un(14, i(85056)), -- Elite Malevolent Gladiator's Ornamented Legplates
-						un(14, i(85090)), -- Elite Malevolent Gladiator's Ornamented Spaulders
+						un(2, i(84991)), -- Elite Malevolent Gladiator's Ornamented Chestguard
+						un(2, i(85024)), -- Elite Malevolent Gladiator's Ornamented Gloves
+						un(2, i(85042)), -- Elite Malevolent Gladiator's Ornamented Headcover
+						un(2, i(85056)), -- Elite Malevolent Gladiator's Ornamented Legplates
+						un(2, i(85090)), -- Elite Malevolent Gladiator's Ornamented Spaulders
 						i(91640),	-- Malevolent Gladiator's Ornamented Chestguard
 						i(91642),	-- Malevolent Gladiator's Ornamented Gloves
 						i(91644),	-- Malevolent Gladiator's Ornamented Headcover
 						i(91646),	-- Malevolent Gladiator's Ornamented Legplates
 						i(91648),	-- Malevolent Gladiator's Ornamented Spaulders
-						un(14, i(85013)), -- Elite Malevolent Gladiator's Mooncloth Gloves  -- Priest Mooncloth
-						un(14, i(85039)), -- Elite Malevolent Gladiator's Mooncloth Helm
-						un(14, i(85052)), -- Elite Malevolent Gladiator's Mooncloth Leggings
-						un(14, i(85072)), -- Elite Malevolent Gladiator's Mooncloth Robe
-						un(14, i(85083)), -- Elite Malevolent Gladiator's Mooncloth Mantle
+						un(2, i(85013)), -- Elite Malevolent Gladiator's Mooncloth Gloves  -- Priest Mooncloth
+						un(2, i(85039)), -- Elite Malevolent Gladiator's Mooncloth Helm
+						un(2, i(85052)), -- Elite Malevolent Gladiator's Mooncloth Leggings
+						un(2, i(85072)), -- Elite Malevolent Gladiator's Mooncloth Robe
+						un(2, i(85083)), -- Elite Malevolent Gladiator's Mooncloth Mantle
 						i(91662),	-- Malevolent Gladiator's Mooncloth Gloves
 						i(91664),	-- Malevolent Gladiator's Mooncloth Helm
 						i(91666),	-- Malevolent Gladiator's Mooncloth Leggings
 						i(91668),	-- Malevolent Gladiator's Mooncloth Robe
 						i(91670),	-- Malevolent Gladiator's Mooncloth Mantle
-						un(14, i(85017)), -- Elite Malevolent Gladiator's Satin Gloves  -- Priest Satin
-						un(14, i(85040)), -- Elite Malevolent Gladiator's Satin Hood
-						un(14, i(85053)), -- Elite Malevolent Gladiator's Satin Leggings
-						un(14, i(85073)), -- Elite Malevolent Gladiator's Satin Robe
-						un(14, i(85074)), -- Elite Malevolent Gladiator's Satin Mantle
+						un(2, i(85017)), -- Elite Malevolent Gladiator's Satin Gloves  -- Priest Satin
+						un(2, i(85040)), -- Elite Malevolent Gladiator's Satin Hood
+						un(2, i(85053)), -- Elite Malevolent Gladiator's Satin Leggings
+						un(2, i(85073)), -- Elite Malevolent Gladiator's Satin Robe
+						un(2, i(85074)), -- Elite Malevolent Gladiator's Satin Mantle
 						i(91672),	-- Malevolent Gladiator's Satin Gloves
 						i(91674),	-- Malevolent Gladiator's Satin Hood
 						i(91676),	-- Malevolent Gladiator's Satin Leggings
 						i(91678),	-- Malevolent Gladiator's Satin Robe
 						i(91680),	-- Malevolent Gladiator's Satin Mantle
-						un(14, i(84994)), -- Elite Malevolent Gladiator's Leather Tunic  -- Rogue Leather
-						un(14, i(85023)), -- Elite Malevolent Gladiator's Leather Gloves
-						un(14, i(85041)), -- Elite Malevolent Gladiator's Leather Helm
-						un(14, i(85055)), -- Elite Malevolent Gladiator's Leather Legguards
-						un(14, i(85089)), -- Elite Malevolent Gladiator's Leather Spaulders
+						un(2, i(84994)), -- Elite Malevolent Gladiator's Leather Tunic  -- Rogue Leather
+						un(2, i(85023)), -- Elite Malevolent Gladiator's Leather Gloves
+						un(2, i(85041)), -- Elite Malevolent Gladiator's Leather Helm
+						un(2, i(85055)), -- Elite Malevolent Gladiator's Leather Legguards
+						un(2, i(85089)), -- Elite Malevolent Gladiator's Leather Spaulders
 						i(91693),	-- Malevolent Gladiator's Leather Tunic
 						i(91695),	-- Malevolent Gladiator's Leather Gloves
 						i(91697),	-- Malevolent Gladiator's Leather Helm
 						i(91699),	-- Malevolent Gladiator's Leather Legguards
 						i(91701),	-- Malevolent Gladiator's Leather Spaulders
-						un(14, i(84990)), -- Elite Malevolent Gladiator's Ringmail Armor  -- Shaman RingMail
-						un(14, i(85014)), -- Elite Malevolent Gladiator's Ringmail Gauntlets
-						un(14, i(85029)), -- Elite Malevolent Gladiator's Ringmail Helm
-						un(14, i(85054)), -- Elite Malevolent Gladiator's Ringmail Leggings
-						un(14, i(85075)), -- Elite Malevolent Gladiator's Ringmail Spaulders
+						un(2, i(84990)), -- Elite Malevolent Gladiator's Ringmail Armor  -- Shaman RingMail
+						un(2, i(85014)), -- Elite Malevolent Gladiator's Ringmail Gauntlets
+						un(2, i(85029)), -- Elite Malevolent Gladiator's Ringmail Helm
+						un(2, i(85054)), -- Elite Malevolent Gladiator's Ringmail Leggings
+						un(2, i(85075)), -- Elite Malevolent Gladiator's Ringmail Spaulders
 						i(91711),	-- Malevolent Gladiator's Ringmail Armor
 						i(91713),	-- Malevolent Gladiator's Ringmail Gauntlets
 						i(91715),	-- Malevolent Gladiator's Ringmail Helm
 						i(91717),	-- Malevolent Gladiator's Ringmail Leggings
 						i(91719),	-- Malevolent Gladiator's Ringmail Spaulders
-						un(14, i(84988)), -- Elite Malevolent Gladiator's Mail Armor  -- Shaman Mail
-						un(14, i(85012)), -- Elite Malevolent Gladiator's Mail Gauntlets
-						un(14, i(85036)), -- Elite Malevolent Gladiator's Mail Helm
-						un(14, i(85048)), -- Elite Malevolent Gladiator's Mail Leggings
-						un(14, i(85079)), -- Elite Malevolent Gladiator's Mail Spaulders
+						un(2, i(84988)), -- Elite Malevolent Gladiator's Mail Armor  -- Shaman Mail
+						un(2, i(85012)), -- Elite Malevolent Gladiator's Mail Gauntlets
+						un(2, i(85036)), -- Elite Malevolent Gladiator's Mail Helm
+						un(2, i(85048)), -- Elite Malevolent Gladiator's Mail Leggings
+						un(2, i(85079)), -- Elite Malevolent Gladiator's Mail Spaulders
 						i(91733),	-- Malevolent Gladiator's Mail Armor
 						i(91735),	-- Malevolent Gladiator's Mail Gauntlets
 						i(91737),	-- Malevolent Gladiator's Mail Helm
 						i(91739),	-- Malevolent Gladiator's Mail Leggings
 						i(91741),	-- Malevolent Gladiator's Mail Spaulders
-						un(14, i(84989)), -- Elite Malevolent Gladiator's Linked Armor  -- Shaman Linked
-						un(14, i(85011)), -- Elite Malevolent Gladiator's Linked Gauntlets
-						un(14, i(85038)), -- Elite Malevolent Gladiator's Linked Helm
-						un(14, i(85050)), -- Elite Malevolent Gladiator's Linked Leggings
-						un(14, i(85081)), -- Elite Malevolent Gladiator's Linked Spaulders
+						un(2, i(84989)), -- Elite Malevolent Gladiator's Linked Armor  -- Shaman Linked
+						un(2, i(85011)), -- Elite Malevolent Gladiator's Linked Gauntlets
+						un(2, i(85038)), -- Elite Malevolent Gladiator's Linked Helm
+						un(2, i(85050)), -- Elite Malevolent Gladiator's Linked Leggings
+						un(2, i(85081)), -- Elite Malevolent Gladiator's Linked Spaulders
 						i(91721),	-- Malevolent Gladiator's Linked Armor
 						i(91723),	-- Malevolent Gladiator's Linked Gauntlets
 						i(91725),	-- Malevolent Gladiator's Linked Helm
 						i(91727),	-- Malevolent Gladiator's Linked Leggings
 						i(91729),	-- Malevolent Gladiator's Linked Spaulders
-						un(14, i(85021)), -- Elite Malevolent Gladiator's Felweave Armor  -- Warlock
-						un(14, i(85035)), -- Elite Malevolent Gladiator's Felweave Cowl
-						un(14, i(85047)), -- Elite Malevolent Gladiator's Felweave Trousers
-						un(14, i(85069)), -- Elite Malevolent Gladiator's Felweave Rainment
-						un(14, i(85078)), -- Elite Malevolent Gladiator's Felweave Amice
+						un(2, i(85021)), -- Elite Malevolent Gladiator's Felweave Armor  -- Warlock
+						un(2, i(85035)), -- Elite Malevolent Gladiator's Felweave Cowl
+						un(2, i(85047)), -- Elite Malevolent Gladiator's Felweave Trousers
+						un(2, i(85069)), -- Elite Malevolent Gladiator's Felweave Rainment
+						un(2, i(85078)), -- Elite Malevolent Gladiator's Felweave Amice
 						i(91773),	-- Malevolent Gladiator's Felweave Handguards
 						i(91775),	-- Malevolent Gladiator's Felweave Cowl
 						i(91777),	-- Malevolent Gladiator's Felweave Trousers
 						i(91779),	-- Malevolent Gladiator's Felweave Raiment
 						i(91781),	-- Malevolent Gladiator's Felweave Amice
-						un(14, i(84987)), -- Elite Malevolent Gladiator's Plate Chestpiece  -- Warrior
-						un(14, i(85019)), -- Elite Malevolent Gladiator's Plate Gauntlets
-						un(14, i(85032)), -- Elite Malevolent Gladiator's Plate Helm
-						un(14, i(85063)), -- Elite Malevolent Gladiator's Plate Legguards
-						un(14, i(85077)), -- Elite Malevolent Gladiator's Plate Shoulders
+						un(2, i(84987)), -- Elite Malevolent Gladiator's Plate Chestpiece  -- Warrior
+						un(2, i(85019)), -- Elite Malevolent Gladiator's Plate Gauntlets
+						un(2, i(85032)), -- Elite Malevolent Gladiator's Plate Helm
+						un(2, i(85063)), -- Elite Malevolent Gladiator's Plate Legguards
+						un(2, i(85077)), -- Elite Malevolent Gladiator's Plate Shoulders
+						un(2, i(84997)),			-- Malevolent Gladiator's Footguards of Alacrity
+						un(2, i(84998)),			-- Malevolent Gladiator's Footguards of Medittation
+						un(2, i(85097)),			-- Malevolent Gladiator's Waistguard of Cruelty
+						un(2, i(85099)),			-- Malevolent Gladiator's Waistguard of Meditation
 						i(91783),	-- Malevolent Gladiator's Plate Chestpiece
 						i(91785),	-- Malevolent Gladiator's Plate Gauntlets
 						i(91787),	-- Malevolent Gladiator's Plate Helm

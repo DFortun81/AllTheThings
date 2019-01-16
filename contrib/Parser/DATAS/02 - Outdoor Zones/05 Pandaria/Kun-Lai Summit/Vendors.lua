@@ -554,7 +554,7 @@ _.Zones =
 									{	-- Elite Gear
 										["setSubHeaderID"] = 392,							-- Elite
 										["icon"] = "Interface\\Worldmap\\GlowSkull_64Red",	-- Red
-										["u"] = 14,											-- Elite PvP Gear Filter
+										["u"] = 2,											-- BoP Removed Filter
 										--Note!! This will allow us to filter the header so we don't see it straggling along
 										["g"] = {
 											{	-- Tyrannical Gladiator's Tabard
@@ -571,363 +571,367 @@ _.Zones =
 											},
 											{	-- Malevolent Gladiator's Mooncloth Gloves
 												["itemID"] = 85013,	-- Malevolent Gladiator's Mooncloth Gloves
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Mooncloth Helm
 												["itemID"] = 85039,	-- Malevolent Gladiator's Mooncloth Helm
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Mooncloth Leggings
 												["itemID"] = 85052,	-- Malevolent Gladiator's Mooncloth Leggings
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Mooncloth Robe
 												["itemID"] = 85072,	-- Malevolent Gladiator's Mooncloth Robe
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Mooncloth Mantle
 												["itemID"] = 85083,	-- Malevolent Gladiator's Mooncloth Mantle
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Satin Gloves
 												["itemID"] = 85017,	-- Malevolent Gladiator's Satin Gloves
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Satin Hood
 												["itemID"] = 85040,	-- Malevolent Gladiator's Satin Hood
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Satin Leggings
 												["itemID"] = 85053,	-- Malevolent Gladiator's Satin Leggings
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Satin Robe
 												["itemID"] = 85073,	-- Malevolent Gladiator's Satin Robe
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Satin Mantle
 												["itemID"] = 85074,	-- Malevolent Gladiator's Satin Mantle
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Silk Handguards
 												["itemID"] = 85016,	-- Malevolent Gladiator's Silk Handguards
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Silk Cowl
 												["itemID"] = 85031,	-- Malevolent Gladiator's Silk Cowl
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Silk Trousers
 												["itemID"] = 85062,	-- Malevolent Gladiator's Silk Trousers
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Silk Robe
 												["itemID"] = 85068,	-- Malevolent Gladiator's Silk Robe
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Silk Amice
 												["itemID"] = 85085,	-- Malevolent Gladiator's Silk Amice
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Felweave Armor
 												["itemID"] = 85021,	-- Malevolent Gladiator's Felweave Armor
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Felweave Cowl
 												["itemID"] = 85035,	-- Malevolent Gladiator's Felweave Cowl
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Felweave Trousers
 												["itemID"] = 85047,	-- Malevolent Gladiator's Felweave Trousers
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Felweave Rainment
 												["itemID"] = 85069,	-- Malevolent Gladiator's Felweave Rainment
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Felweave Amice
 												["itemID"] = 85078,	-- Malevolent Gladiator's Felweave Amice
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Dragonhide Gloves
 												["itemID"] = 85025,	-- Malevolent Gladiator's Dragonhide Gloves
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Dragonhide Helm
 												["itemID"] = 85045,	-- Malevolent Gladiator's Dragonhide Helm
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Dragonhide Legguards
 												["itemID"] = 85058,	-- Malevolent Gladiator's Dragonhide Legguards
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Dragonhide Robes
 												["itemID"] = 85065,	-- Malevolent Gladiator's Dragonhide Robes
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Dragonhide Spaulders
 												["itemID"] = 85084,	-- Malevolent Gladiator's Dragonhide Spaulders
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Kodohide Gloves
 												["itemID"] = 85026,	-- Malevolent Gladiator's Kodohide Gloves
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Kodohide Helm
 												["itemID"] = 85043,	-- Malevolent Gladiator's Kodohide Helm
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Kodohide Legguards
 												["itemID"] = 85051,	-- Malevolent Gladiator's Kodohide Legguards
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Kodohide Robes
 												["itemID"] = 85071,	-- Malevolent Gladiator's Kodohide Robes
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Kodohide Spaulders
 												["itemID"] = 85082,	-- Malevolent Gladiator's Kodohide Spaulders
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Wyrmhide Gloves
 												["itemID"] = 85022,	-- Malevolent Gladiator's Wyrmhide Gloves
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Wyrmhide Helm
 												["itemID"] = 85037,	-- Malevolent Gladiator's Wyrmhide Helm
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Wyrmhide Legguards
 												["itemID"] = 85049,	-- Malevolent Gladiator's Wyrmhide Legguards
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Wyrmhide Robes
 												["itemID"] = 85070,	-- Malevolent Gladiator's Wyrmhide Robes
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Wyrmhide Spaulders
 												["itemID"] = 85080,	-- Malevolent Gladiator's Wyrmhide Spaulders
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Ironskin Gloves
 												["itemID"] = 85018,	-- Malevolent Gladiator's Ironskin Gloves
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Ironskin Helm
 												["itemID"] = 85033,	-- Malevolent Gladiator's Ironskin Helm
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Ironskin Legguards
 												["itemID"] = 85064,	-- Malevolent Gladiator's Ironskin Legguards
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Ironskin Tunic
 												["itemID"] = 85066,	-- Malevolent Gladiator's Ironskin Tunic
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Ironskin Spaulders
 												["itemID"] = 85087,	-- Malevolent Gladiator's Ironskin Spaulders
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Copperskin Gloves
 												["itemID"] = 85015,	-- Malevolent Gladiator's Copperskin Gloves
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Copperskin Helm
 												["itemID"] = 85030,	-- Malevolent Gladiator's Copperskin Helm
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Copperskin Legguards
 												["itemID"] = 85060,	-- Malevolent Gladiator's Copperskin Legguards
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Copperskin Tunic
 												["itemID"] = 85067,	-- Malevolent Gladiator's Copperskin Tunic
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Copperskin Spaulders
 												["itemID"] = 85088,	-- Malevolent Gladiator's Copperskin Spaulders
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Leather Tunic
 												["itemID"] = 84994,	-- Malevolent Gladiator's Leather Tunic
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Leather Gloves
 												["itemID"] = 85023,	-- Malevolent Gladiator's Leather Gloves
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Leather Helm
 												["itemID"] = 85041,	-- Malevolent Gladiator's Leather Helm
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Leather Legguards
 												["itemID"] = 85055,	-- Malevolent Gladiator's Leather Legguards
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Leather Spaulders
 												["itemID"] = 85089,	-- Malevolent Gladiator's Leather Spaulders
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Linked Armor
 												["itemID"] = 84989,	-- Malevolent Gladiator's Linked Armor
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Linked Gauntlets
 												["itemID"] = 85011,	-- Malevolent Gladiator's Linked Gauntlets
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Linked Helm
 												["itemID"] = 85038,	-- Malevolent Gladiator's Linked Helm
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Linked Leggings
 												["itemID"] = 85050,	-- Malevolent Gladiator's Linked Leggings
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Linked Spaulders
 												["itemID"] = 85081,	-- Malevolent Gladiator's Linked Spaulders
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Ringmail Armor
 												["itemID"] = 84990,	-- Malevolent Gladiator's Ringmail Armor
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Ringmail Gauntlets
 												["itemID"] = 85014,	-- Malevolent Gladiator's Ringmail Gauntlets
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Ringmail Helm
 												["itemID"] = 85029,	-- Malevolent Gladiator's Ringmail Helm
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Ringmail Leggings
 												["itemID"] = 85054,	-- Malevolent Gladiator's Ringmail Leggings
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Ringmail Spaulders
 												["itemID"] = 85075,	-- Malevolent Gladiator's Ringmail Spaulders
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Mail Armor
 												["itemID"] = 84988,	-- Malevolent Gladiator's Mail Armor
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Mail Gauntlets
 												["itemID"] = 85012,	-- Malevolent Gladiator's Mail Gauntlets
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Mail Helm
 												["itemID"] = 85036,	-- Malevolent Gladiator's Mail Helm
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Mail Leggings
 												["itemID"] = 85048,	-- Malevolent Gladiator's Mail Leggings
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Mail Spaulders
 												["itemID"] = 85079,	-- Malevolent Gladiator's Mail Spaulders
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Chain Armor
 												["itemID"] = 84994,	-- Malevolent Gladiator's Chain Armor
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Chain Gauntlets
 												["itemID"] = 85020,	-- Malevolent Gladiator's Chain Gauntlets
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Chain Helm
 												["itemID"] = 85034,	-- Malevolent Gladiator's Chain Helm
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Chain Leggings
 												["itemID"] = 85061,	-- Malevolent Gladiator's Chain Leggings
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Chain Spaulders
 												["itemID"] = 85076,	-- Malevolent Gladiator's Chain Spaulders
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
+											un(2, i(84997)),			-- Malevolent Gladiator's Footguards of Alacrity
+											un(2, i(84998)),			-- Malevolent Gladiator's Footguards of Medittation
+											un(2, i(85097)),			-- Malevolent Gladiator's Waistguard of Cruelty
+											un(2, i(85099)),			-- Malevolent Gladiator's Waistguard of Meditation
 											{	-- Malevolent Gladiator's Scaled Chestpiece
 												["itemID"] = 84992,	-- Malevolent Gladiator's Scaled Chestpiece
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Scaled Gauntlet
 												["itemID"] = 85027,	-- Malevolent Gladiator's Scaled Gauntlet
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Scaled Helm
 												["itemID"] = 85044,	-- Malevolent Gladiator's Scaled Helm
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Scaled Legguards
 												["itemID"] = 85057,	-- Malevolent Gladiator's Scaled Legguards
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Scaled Shoulders
 												["itemID"] = 85091,	-- Malevolent Gladiator's Scaled Shoulders
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Ornamented Chestguard
 												["itemID"] = 84991,	-- Malevolent Gladiator's Ornamented Chestguard
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Ornamented Gloves
 												["itemID"] = 85024,	-- Malevolent Gladiator's Ornamented Gloves
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Ornamented Headcover
 												["itemID"] = 85042,	-- Malevolent Gladiator's Ornamented Headcover
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Ornamented Legplates
 												["itemID"] = 85056,	-- Malevolent Gladiator's Ornamented Legplates
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Ornamented Spaulders
 												["itemID"] = 85090,	-- Malevolent Gladiator's Ornamented Spaulders
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Plate Chestpiece
 												["itemID"] = 84987,	-- Malevolent Gladiator's Plate Chestpiece
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Plate Gauntlets
 												["itemID"] = 85019,	-- Malevolent Gladiator's Plate Gauntlets
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Plate Helm
 												["itemID"] = 85032,	-- Malevolent Gladiator's Plate Helm
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Plate Legguards
 												["itemID"] = 85063,	-- Malevolent Gladiator's Plate Legguards
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Plate Shoulders
 												["itemID"] = 85077,	-- Malevolent Gladiator's Plate Shoulders
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Dreadplate Chestpiec
 												["itemID"] = 84993,	-- Malevolent Gladiator's Dreadplate Chestpiec
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Dreadplate Gauntlets
 												["itemID"] = 85028,	-- Malevolent Gladiator's Dreadplate Gauntlets
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Dreadplate Helm
 												["itemID"] = 85046,	-- Malevolent Gladiator's Dreadplate Helm
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Dreadplate Legguards
 												["itemID"] = 85059,	-- Malevolent Gladiator's Dreadplate Legguards
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 											{	-- Malevolent Gladiator's Dreadplate Shoulders
 												["itemID"] = 85086,	-- Malevolent Gladiator's Dreadplate Shoulders
-												["u"] = 14,			-- Elite PvP Gear Filter
+												["u"] = 2,			-- BoP Removed Filter
 											},
 										},
 										
