@@ -139,6 +139,7 @@ _.GearSets =
 								i(35101),	-- Brutal Gladiator's Slicer
 								i(35102),	-- Brutal Gladiator's Spellblade
 								i(35103),	-- Brutal Gladiator's Staff
+								i(37740),	-- Brutal Gladiator's Swift Judgment
 								i(35107),	-- Brutal Gladiator's Touch of Defeat
 								i(35109),	-- Brutal Gladiator's War Staff
 								i(35110),	-- Brutal Gladiator's Waraxe

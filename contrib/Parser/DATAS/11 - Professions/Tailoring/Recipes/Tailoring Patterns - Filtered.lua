@@ -145,6 +145,10 @@ profession(197, {	-- Tailoring
 							["recipeID"] = 24093,--[[Bloodvine Boots]]
 							["u"] = 2,
 						},
+						{
+							["recipeID"] = 8778,	-- Boots of Darkness
+							["u"] = 1,
+						},
 					}
 				},
 				{
