@@ -251,6 +251,7 @@ _.Instances =
 							{
 								["questID"] = 37029,	-- Sigil of the Black Hand
 								["qg"] = 87225,	-- Goraluk Anvilcrack
+								["isBreadcrumb"] = true, -- Breadcrumb for Heroic. If you complete the Quest on Heroic, you'll be able to click on the normal one as well & normal will not be offered anymore.
 								["description"] = "The quest giver is hidden behind a load of boxes and crates to the right of the Iron Maidens.\n\nFinishing this quest will grant you immediate access to Blackhand on Normal Difficulty each week.",
 							},
 						}),
@@ -802,6 +803,7 @@ _.Instances =
 							{
 								["questID"] = 37030,	-- Sigil of the Black Hand (Heroic)
 								["qg"] = 87225,	-- Goraluk Anvilcrack
+								["isBreadcrumb"] = true, -- Breadcrumb for Mythic. If you complete the Quest on Mythic, you'll be able to click on the normal&heroic one as well as normal/heroic will not be offered anymore.
 								["description"] = "The quest giver is hidden behind a load of boxes and crates to the right of the Iron Maidens.\n\nFinishing this quest will grant you immediate access to Blackhand on Heroic Difficulty each week.",
 							},
 						}),
