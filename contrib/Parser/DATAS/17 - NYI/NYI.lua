@@ -227,6 +227,22 @@ _.NeverImplemented =
 				un(1, i(65149)),	    -- Gladiator's Ringmail Helm
 				un(1, i(65148)),	    -- Gladiator's Ringmail Leggings
 				un(1, i(65147)),	    -- Gladiator's Ringmail Spaulders
+				-- MoP Version
+				un(1, i(88212)),	    -- Gladiator's Linked Gauntlets
+				un(1, i(88213)),	    -- Gladiator's Linked Helm
+				un(1, i(88214)),	    -- Gladiator's Linked Leggings
+				un(1, i(88215)),	    -- Gladiator's Linked Spaulders
+				un(1, i(88211)),		-- Gladiator's Linked Armor
+				un(1, i(88216)),	    -- Gladiator's Mail Armor
+				un(1, i(88217)),	    -- Gladiator's Mail Gauntlets
+				un(1, i(88218)),	    -- Gladiator's Mail Helm
+				un(1, i(88219)),	    -- Gladiator's Mail Leggings
+				un(1, i(88220)),	    -- Gladiator's Mail Sppaulders
+				un(1, i(88236)),	    -- Gladiator's Ringmail Armor
+				un(1, i(88237)),	    -- Gladiator's Ringmail Gauntlets
+				un(1, i(88238)),	    -- Gladiator's Ringmail Helm
+				un(1, i(88239)),	    -- Gladiator's Ringmail Leggings
+				un(1, i(88240)),	    -- Gladiator's Ringmail Spaulders
 				un(1, i(46293)),	    -- Worldbreaker Chestguard
 				un(1, i(46294)),	    -- Worldbreaker Faceguard
 				un(1, i(46295)),	    -- Worldbreaker Gloves
@@ -1082,6 +1098,8 @@ _.NeverImplemented =
 		n(-333, { -- Daggers
 			un(1, i(108785)),	-- Unknown
 			un(1, i(108786)),	-- Unknown
+			un(1, i(64848)),	-- Bloodthirsty Gladiator's Shanker(Epic BG Item, never made it out of beta)
+			un(1, i(64859)),	-- Bloodthirsty Gladiator's Spellblade (Epic BG Item, never made it out of beta))
 			un(1, i(109269)),	-- Unknown
 			un(1, i(109292)),	-- Unknown
 			un(1, i(38247)),	-- Entrail Render
@@ -1101,6 +1119,7 @@ _.NeverImplemented =
 			un(1, i(32189)),    -- Chancellor's Ripper
 			un(1, i(38243)),    -- Ravaging Steelfist
 			un(1, i(108787)),    -- Unknown
+			un(1, i(64826)),	-- Bloodthirsty Gladiator's Ripper (Epic BG Item, never made it out of beta))
 			un(1, i(108788)),    -- Unknown
 			un(1, i(108789)),    -- Unknown
 			un(1, i(109361)),    -- Unknown
@@ -1139,11 +1158,17 @@ _.NeverImplemented =
 			un(1, i(109311)),	-- Unknown
 			un(1, i(109380)),	-- Unknown
 		}),
-		-- maces
+		n(-336, { 	-- One-Handed Maces
+			un(1, i(64700)),	-- Bloodthirsty Gladiator's Bonecracker (Epic BG Item, never made it out of beta)
+			un(1, i(64752)),	-- Bloodthirsty Gladiator's Gravel (Epic BG Item, never made it out of beta)
+			un(1, i(64816)),	-- Bloodthirsty Gladiator's Pummeler (Epic BG Item, never made it out of beta))
+		}),
 		n(-334, { -- One-Handed Axes
 			un(1, i(68050)),	-- Shatterscale Mightfish
 			un(1, i(49456)),	-- Will of the Earth
 			un(1, i(50251)),	-- Unknown
+			un(1, i(64717)),	-- Bloodthirsty Gladiator's Cleaver (Epic BG Item, never made it out of beta)
+			un(1, i(64758)),	-- Bloodthirsty Gladiator's Hacker (Epic BG Item, never made it out of beta))
 			un(1, i(108779)),	-- Unknown
 			un(1, i(108780)),	-- Unknown
 			un(1, i(108781)),	-- Unknown
@@ -1162,6 +1187,8 @@ _.NeverImplemented =
 			un(1, i(134562)),	-- Odyns Fury
 			un(1, i(166889)),	-- Unknown
 			un(1, i(134067)),	-- Unknown
+			un(1, i(64817)),	-- Bloodthirsty Gladiator's Quickblade (Epic BG Item, never made it out of beta)
+			un(1, i(64858)),	-- Bloodthirsty Gladiator's Slicer (Epic BG Item, never made it out of beta))
 			un(1, i(140705)),	-- Outlaw Cutlass
 			un(1, i(137225)),	-- Thunderfury, Blessed Blade of the Windseeker (mog testing)
 			un(1, i(47846)),	-- Cruel Barb (Glow, Purple - Low)
@@ -1182,6 +1209,7 @@ _.NeverImplemented =
 			un(1, i(158563)),	-- Tomb-Rustler's Polearm
 			un(1, i(108797)),	-- Unknown
 			un(1, i(108798)),	-- Unknown
+			un(1, i(54965)),	-- Unknown
 			un(1, i(64810)),	-- Bloodthirsty Gladiator's Pike (Epic BG item never made it out of beta)))
 			un(1, i(108799)),	-- Unknown
 			un(1, i(109456)),	-- Unknown
@@ -1201,6 +1229,10 @@ _.NeverImplemented =
 			un(1, i(132474)),	-- Unknown - was under Legion>Staves
 			un(1, i(132475)),	-- Unknown - was under Legion>Staves
 			un(1, i(132476)),	-- Unknown - was under Legion>Staves
+			un(1, i(49458)),	-- Unknown
+			un(1, i(64695)),	-- Bloodthirsty Gladiator's Battle Staff (Epic BG Item, never made it out of beta)
+			un(1, i(64744)),	-- Bloodthirsty Gladiator's Energy Staff (Epic BG Item, never made it out of beta)
+			un(1, i(64860)),	-- Bloodthirsty Gladiator's Staff (Epic BG Item, never made it out of beta))
 			un(1, i(132477)),	-- Unknown - was under Legion>Staves
 			un(1, i(132478)),	-- Unknown - was under Legion>Staves
 			un(1, i(132479)),	-- Unknown - was under Legion>Staves
@@ -1250,10 +1282,12 @@ _.NeverImplemented =
 			un(1, i(69916)),	-- Trollbane (Test)
 			un(1, i(109519)),	-- Unknown
 			un(1, i(165265)),	-- Unknown
+			un(1, i(64701)),	-- Bloodthirsty Gladiator's Bonegrinder (Epic BG Item, never made it out of beta))
 			un(1, i(64726)),	-- Bloodthirsty Gladiator's Decapitator (Epic BG item never made it out of beta))
 		}),
 		n(-337, { -- Two Handed Swords
 		--	un(1, i(84717),		-- Dreadful Gladiator's Greatsword (did not make it :( )
+			un(1, i(49457)),	-- Unknown
 			un(1, i(64755)),	-- Bloodthirsty Gladiator's Greatsword (Epic BG item never made it out of beta))
 			un(1, i(139621)),	-- The Watcher's Hammer. Used for Lost Edicts of the Watcher Paladin Appearance, actual appearance is gained via a different item
 		

@@ -128,6 +128,10 @@ _.GearSets =
 				i(34648), -- Archerus Knight's Greaves
 				i(38145), -- Deathweave Bag
 			}),
+			-- Male Goblin
+			un(2, i(52940, {	-- Candy's Cloak
+				["races"] = { 9 }	-- Used to be given to as start cloak to male goblins until Legion Prepatch
+			})),
 		},
 		["description"] = "You obtain these sets by creating an allied race with the specific class.  Contains Death Knight and Demon Hunter starting gear as well.",
 		["maps"] = {
