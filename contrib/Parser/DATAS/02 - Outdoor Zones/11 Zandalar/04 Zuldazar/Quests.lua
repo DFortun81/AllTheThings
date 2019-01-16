@@ -482,7 +482,7 @@ _.Zones =
 									i(158441),	-- Zanchuli Cord
 									i(158442),	-- Torcalin Belt
 									i(158443),	-- Jambani Belt
-									i(157530),	-- Scroll of Storm Control
+									i(157539),	-- Scroll of Storm Control
 								},
 							}),
 							qh(47587, {	-- Headhunter Jo

@@ -422,15 +422,47 @@ _.Craftables =
 		-- Reviewed and updated as of 11.21.2018 BfA 8.0
 			n(-491, { -- Tarot Cards
 				sp(59504, {	-- Darkmoon Card of the North
-					i(44276, {	-- Chaos Deck
-						i(42989),	-- Darkmoon Card: Berserker!
-					}),
-					i(44326, {	-- Nobles Deck
-						i(42987),	-- Darkmoon Card: Greatness
-					}),
+					i(44260, {["f"] = 55}),    -- Ace of Prisms
+					i(44261, {["f"] = 55}),    -- 2 of Prisms
+					i(44262, {["f"] = 55}),    -- 3 of Prisms
+					i(44263, {["f"] = 55}),    -- 4 of Prisms
+					i(44264, {["f"] = 55}),    -- 5 of Prisms
+					i(44265, {["f"] = 55}),    -- 6 of Prisms
+					i(44266, {["f"] = 55}),    -- 7 of Prisms
+					i(44267, {["f"] = 55}),    -- 8 of Prisms
 					i(44259, {	-- Prisms Deck
 						i(42988),	-- Darkmoon Card: Illusion
 					}),
+					i(44268, {["f"] = 55}),    -- Ace of Nobles
+					i(44269, {["f"] = 55}),    -- 2 of Nobles
+					i(44270, {["f"] = 55}),    -- 3 of Nobles
+					i(44271, {["f"] = 55}),    -- 4 of Nobles
+					i(44272, {["f"] = 55}),    -- 5 of Nobles
+					i(44273, {["f"] = 55}),    -- 6 of Nobles
+					i(44274, {["f"] = 55}),    -- 7 of Nobles
+					i(44275, {["f"] = 55}),    -- 8 of Nobles
+					i(44326, {	-- Nobles Deck
+						i(42987),	-- Darkmoon Card: Greatness
+					}),
+					i(44277, {["f"] = 55}),    -- Ace of Chaos
+					i(44278, {["f"] = 55}),    -- 2 of Chaos
+					i(44279, {["f"] = 55}),    -- 3 of Chaos
+					i(44280, {["f"] = 55}),    -- 4 of Chaos
+					i(44281, {["f"] = 55}),    -- 5 of Chaos
+					i(44282, {["f"] = 55}),    -- 6 of Chaos
+					i(44284, {["f"] = 55}),    -- 7 of Chaos
+					i(44285, {["f"] = 55}),    -- 8 of Chaos
+					i(44276, {	-- Chaos Deck
+						i(42989),	-- Darkmoon Card: Berserker!
+					}),
+					i(44286, {["f"] = 55}),    -- Ace of Undeath
+					i(44287, {["f"] = 55}),    -- 2 of Undeath
+					i(44288, {["f"] = 55}),    -- 3 of Undeath
+					i(44289, {["f"] = 55}),    -- 4 of Undeath
+					i(44290, {["f"] = 55}),    -- 5 of Undeath
+					i(44291, {["f"] = 55}),    -- 6 of Undeath
+					i(44292, {["f"] = 55}),    -- 7 of Undeath
+					i(44293, {["f"] = 55}),    -- 8 of Undeath
 					i(44294, {	-- Undeath Deck
 						i(42990),	-- Darkmoon Card: Death
 					}),

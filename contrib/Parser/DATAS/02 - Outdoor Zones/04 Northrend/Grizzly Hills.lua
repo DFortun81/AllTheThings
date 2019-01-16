@@ -556,6 +556,9 @@ _.Zones =
 								["races"] = ALLIANCE_ONLY,
 							}),
 							q(12446, {	--  Always Seeking Solvent
+								["groups"] = {
+									i(37664),	-- Element 115
+								},
 								["qg"] = 27495,	-- Barblefink
 								["repeatable"] = true,
 								["sourceQuests"] = {12443},
@@ -779,8 +782,8 @@ _.Zones =
 						-- qh( 12429),	-- The Conquest Pit: Blood and Metal
 						-- qh( 12430),	-- The Conquest Pit: Death Is Likely
 						-- qh( 12432),	-- Riding the Red Rocket
-						-- qh( 12433),	-- Seeking Solvent
-						-- qh( 12434),	--  Always Seeking Solvent
+						-- qh( 12433),	-- Seeking Solvent -- i(37664),	-- Element 115
+						-- qh( 12434),	--  Always Seeking Solvent -- i(37664),	-- Element 115
 						-- qh( 12436),	-- Supplemental Income
 						-- qh( 12451),	-- Onward to Camp Oneqwah
 						qh(12453,  {	-- Eyes Above

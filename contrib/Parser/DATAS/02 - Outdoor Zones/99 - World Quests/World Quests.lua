@@ -651,6 +651,7 @@ _.Zones =
 					},
 				},
 			},
+			i(163601),	-- Overgrown Anchor Weed. You get it for a split second after completing a Achor Weed WQ
 		},
 	}),
 };

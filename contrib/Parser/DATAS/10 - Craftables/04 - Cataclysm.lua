@@ -347,7 +347,56 @@ _.Craftables =
 					}),
 				}),
 			}),
-			filter(1, {	-- Off-hand
+		--[[	n(-491, { -- Tarot Cards
+				sp(111830, {	-- Darkmoon Card of Mists
+					i(79299, {["f"] = 55}),    -- Ace of Crane
+					i(79300, {["f"] = 55}),    -- 2 of Crane
+					i(79301, {["f"] = 55}),    -- 3 of Crane
+					i(79302, {["f"] = 55}),    -- 4 of Crane
+					i(79303, {["f"] = 55}),    -- 5 of Crane
+					i(79304, {["f"] = 55}),    -- 6 of Crane
+					i(79305, {["f"] = 55}),    -- 7 of Crane
+					i(79306, {["f"] = 55}),    -- 8 of Crane
+					i(79325, {	-- Crane Deck
+						i(79330),	-- Relic of Chi-Ji
+					}),
+					i(79291, {["f"] = 55}),    -- Ace of Oxen
+					i(79292, {["f"] = 55}),    -- 2 of Oxen
+					i(79293, {["f"] = 55}),    -- 3 of Oxen
+					i(79294, {["f"] = 55}),    -- 4 of Oxen
+					i(79295, {["f"] = 55}),    -- 5 of Oxen
+					i(79296, {["f"] = 55}),    -- 6 of Oxen
+					i(79297, {["f"] = 55}),    -- 7 of Oxen
+					i(79298, {["f"] = 55}),    -- 8 of Oxen
+					i(79324, {	-- Ox Deck
+						i(79329),	-- Relic of Niuzao
+					}),
+					i(79307, {["f"] = 55}),    -- Ace of Serpent
+					i(79308, {["f"] = 55}),    -- 2 of Serpent
+					i(79309, {["f"] = 55}),    -- 3 of Serpent
+					i(79310, {["f"] = 55}),    -- 4 of Serpent
+					i(79311, {["f"] = 55}),    -- 5 of Serpent
+					i(79312, {["f"] = 55}),    -- 6 of Serpent
+					i(79313, {["f"] = 55}),    -- 7 of Serpent
+					i(79314, {["f"] = 55}),    -- 8 of Serpent
+					i(79326, {	-- Serpent Deck
+						i(79331),	-- Relic of Yu'lon
+					}),
+					i(79283, {["f"] = 55}),    -- Ace of Tigers
+					i(79284, {["f"] = 55}),    -- 2 of Tigers
+					i(79285, {["f"] = 55}),    -- 3 of Tigers
+					i(79286, {["f"] = 55}),    -- 4 of Tigers
+					i(79287, {["f"] = 55}),    -- 5 of Tigers
+					i(79288, {["f"] = 55}),    -- 6 of Tigers
+					i(79289, {["f"] = 55}),    -- 7 of Tigers
+					i(79290, {["f"] = 55}),    -- 8 of Tigers
+					i(79323, {	-- Tiger Deck
+						i(79327),	-- Relic of Xuen
+						i(79328),	-- Relic of Xuen
+					}),
+				}),
+			}),
+		--]]filter(1, {	-- Off-hand
 				i(62236),	-- Battle Tome
 				i(62231),	-- Book of Blood
 				i(62235),	-- Divine Companion

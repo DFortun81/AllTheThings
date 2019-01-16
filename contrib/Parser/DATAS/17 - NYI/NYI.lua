@@ -404,6 +404,12 @@ _.NeverImplemented =
 				-- Possible Unused Level 120/Lv 120 Classtrial
 				un(1, i(157618)),	-- Unholy Runeblade
 				un(1, i(157646)),	-- Bloodcaked Runeblade
+				un(1, i(157658)),	-- Heart-Lesion Breastplate
+				un(1, i(157659)),	-- Heart-Lesion Sabatons
+				un(1, i(157660)),	-- Heart-Lesion Gauntlets
+				un(1, i(157662)),	-- Heart-Lesion Legplates
+				un(1, i(157664)),	-- Heart-Lesion Girdle
+				un(1, i(157665)),	-- Heart-Lesion Vambraces)
 			}),
 			cl(2, { -- Paladin
 				un(1, i(48905)),	-- Liadrin's Tunic of Conquest
@@ -605,6 +611,15 @@ _.NeverImplemented =
 		un(1, i(134824)),	-- "Sir Pugsington" Costume
 		un(1, i(137602)),	-- Unknown
 		un(1, i(151060)),	--
+		un(1, i(42975)),	-- Ace of Lords
+		un(1, i(42977)),	-- Two of Lords
+		un(1, i(42978)),	-- Three of Lords
+		un(1, i(42979)),	-- Four of Lords
+		un(1, i(42980)),	-- Five of Lords
+		un(1, i(42981)),	-- Six of Lords
+		un(1, i(42982)),	-- seven of Lords
+		un(1, i(42983)),	-- eight of Lords
+		un(1, i(42976)),	-- Lords Deck
 		un(1, i(158782)),	-- Warchief's Prideful
 		un(1, i(158841)),	-- High King's Pride
 		un(1, i(140787)),	--
