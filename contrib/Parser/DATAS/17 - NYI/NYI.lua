@@ -498,6 +498,16 @@ _.NeverImplemented =
 			un(1, i(32170)),	    -- Chancellor's Scaled Helm
 			un(1, i(32171)),	    -- Chancellor's Scaled shoulders
 			un(1, i(32172)),	    -- Chancellor's Scaled Spaulders
+			un(1, i(46213)),	-- Aegis Battleplate
+			un(1, i(46214)),	-- Aegis breastplate
+			un(1, i(46215)),	-- Aegis faceguard
+			un(1, i(46216)),	-- Aegis gauntlets
+			un(1, i(46217)),	-- Aegis gloves
+			un(1, i(46218)),	-- Aegis greaves
+			un(1, i(46219)),	-- Aegis handguards
+			un(1, i(46220)),	-- Aegis headpiece
+			un(1, i(46221)),	-- Aegis helm
+			un(1, i(46222)),	-- Aegis legguards
 			un(1, i(5822)),		-- Hedgeseed Gauntlets
 			un(1, i(26041)),	-- Vigilant Vambraces
 			un(1, i(21587)),	-- Wristguards of Castigation (never made it off test)

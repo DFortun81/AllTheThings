@@ -1097,6 +1097,30 @@ _.Zones =
 							}),
 							nh(70108, {	-- Roo Desvin >S13< Elite
 								["groups"] = {
+									un(2, i(91393)),	-- Tyrannical Gladiator's Ripper
+									un(2, i(91397)),	-- Tyrannical Gladiator's Render
+									un(2, i(91130)),	-- Tyrannical Gladiator's Barrier
+									un(2, i(91206)),	-- Tyrannical Gladiator's Redoubt
+									un(2, i(91419)),	-- Tyrannical Gladiator's Shield Wall
+									un(2, i(91088)),	-- Tyrannical Gladiator's Decapitator
+									un(2, i(91092)),	-- Tyrannical Gladiator's Greatsword
+									un(2, i(91096)),	-- Tyrannical Gladiator's Pummeler
+									un(2, i(91204)),	-- Tyrannical Gladiator's Gavel
+									un(2, i(91407)),	-- Tyrannical Gladiator's Bonecracker
+									un(2, i(91202)),	-- Tyrannical Gladiator's Rifle
+									un(2, i(91098)),	-- Tyrannical Gladiator's Quickblade
+									un(2, i(91399)),	-- Tyrannical Gladiator's Mageblade
+									un(2, i(91409)),	-- Tyrannical Gladiator's Slicer
+									un(2, i(91128)),	-- Tyrannical Gladiator's Endgame
+									un(2, i(91142)),	-- Tyrannical Gladiator's Reprieve
+									un(2, i(91090)),	-- Tyrannical Gladiator's Bonebrinder
+									un(2, i(91134)),	-- Tyrannical Gladiator's Battle Staff
+									un(2, i(91183)),	-- Tyrannical Gladiator's Staff
+									un(2, i(91208)),	-- Tyrannical Gladiator's Engery Staff
+									un(2, i(91308)),	-- Tyrannical Gladiator's Pike
+									un(2, i(91132)),	-- Tyrannical Gladiator's Spellblade
+									un(2, i(91391)),	-- Tyrannical Gladiator's Shanker
+									un(2, i(91146)),	-- Tyrannical Gladiator's Heavy Crossbow
 									un(2, i(91213)),	-- Tyrannical Gladiator's Links of Cruelty
 									un(2, i(91215)),	-- Tyrannical Gladiator's Links of Accuracy
 									un(2, i(91217)),	-- Tyrannical Gladiator's Sabatons of Cruelty
@@ -1141,6 +1165,9 @@ _.Zones =
 									un(2, i(91314)),	-- Tyrannical Gladiator's Mooncloth Legs
 									un(2, i(91316)),	-- Tyrannical Gladiator's Mooncloth Robe
 									un(2, i(91318)),	-- Tyrannical Gladiator's Mooncloth Mantle
+									un(2, i(91351)),	-- Tyrannical Gladiator's Waistguard of Meditation
+									un(2, i(91353)),	-- Tyrannical Gladiator's Footguards of alacrity
+									un(2, i(91355)),	-- Tyrannical Gladiator's footguards of meditation
 								},
 								["u"] = 43,
 							}),
