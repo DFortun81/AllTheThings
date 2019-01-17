@@ -9,19 +9,28 @@ _.Instances =
 			inst(275, { 	-- Halls of Lightning
 				["groups"] = {
 					n(-17, {	-- Quests
-						q(29862),	-- Clearing the Way
+						q(29862, {	-- Clearing the Way
+							["qg"] = 56027,	-- Stormherald Eljrrin
+						}),
 						q(29860, {	-- Diametrically Opposed
-							i(43193),	-- Lightning Infused Mantle
-							i(43194),	-- Charred Leather Shoulderguards
-							i(43195),	-- Stormforged Shoulders
-							i(43197),	-- Pauldrons of Extinguished Hatred
-							i(43198),	-- Mantle of Volkhan
+							["g"] = {
+								i(43193),	-- Lightning Infused Mantle
+								i(43194),	-- Charred Leather Shoulderguards
+								i(43195),	-- Stormforged Shoulders
+								i(43197),	-- Pauldrons of Extinguished Hatred
+								i(43198),	-- Mantle of Volkhan
+							},
+							["qg"] = 56027,	-- Stormherald Eljrrin
 						}),
 						q(29861, {	-- Whatever it Takes!
-							i(42844),	-- Robes of Lightning
-							i(43207),	-- Hardened Tongue Tunic
-							i(43208),	-- Lightningbringer's Hauberk
-							i(43209),	-- Breastplate of Jagged Stone
+							["g"] = {
+								i(42844),	-- Robes of Lightning
+								i(43207),	-- Hardened Tongue Tunic
+								i(43208),	-- Lightningbringer's Hauberk
+								i(43209),	-- Breastplate of Jagged Stone
+							},
+							["qg"] = 56027,	-- Stormherald Eljrrin
+							["sourceQuests"] = { 29863 },	-- Stormherald Eljrrin
 						}),
 					}),
 					d(1,   {	-- Normal
