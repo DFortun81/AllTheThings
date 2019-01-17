@@ -1125,6 +1125,22 @@ _.Zones =
 									un(2, i(91387)),	-- Tyrannical Gladiator's mail Legs
 									un(2, i(91389)),	-- Tyrannical Gladiator's mail Spaulders
 									un(2, i(91379)),	-- Tyrannical Gladiator's Waistguard of Cruelty
+									un(2, i(91110)),	-- Tyrannical Gladiator's Cord of Cruelty
+									un(2, i(91112)),	-- Tyrannical Gladiator's Cord of Accuracy
+									un(2, i(91114)),	-- Tyrannical Gladiator's Cord of Meditation
+									un(2, i(91116)),	-- Tyrannical Gladiator's Treads of Cruelty
+									un(2, i(91118)),	-- Tyrannical Gladiator's Treads of Alacrity
+									un(2, i(91120)),	-- Tyrannical Gladiator's Treads of Meditation
+									un(2, i(91233)),	-- Tyrannical Gladiator's Silk Handguards
+									un(2, i(91235)),	-- Tyrannical Gladiator's Silk Cowl)
+									un(2, i(91237)),	-- Tyrannical Gladiator's Silk Legs
+									un(2, i(91239)),	-- Tyrannical Gladiator's Silk Robe
+									un(2, i(91241)),	-- Tyrannical Gladiator's Silk Amice
+									un(2, i(91310)),	-- Tyrannical Gladiator's Mooncloth Gloves
+									un(2, i(91312)),	-- Tyrannical Gladiator's Mooncloth Helm)
+									un(2, i(91314)),	-- Tyrannical Gladiator's Mooncloth Legs
+									un(2, i(91316)),	-- Tyrannical Gladiator's Mooncloth Robe
+									un(2, i(91318)),	-- Tyrannical Gladiator's Mooncloth Mantle
 								},
 								["u"] = 43,
 							}),
