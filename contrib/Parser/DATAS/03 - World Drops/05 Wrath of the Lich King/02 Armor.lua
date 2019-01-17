@@ -70,6 +70,7 @@ _.WorldDrops =
 					{	-- Twisted Puzzle-Ring
 						["itemID"] = 37822,	-- Twisted Puzzle-Ring
 					},
+					i(37748),	-- Winterfall's Frozen Necklace
 				}),
 				n(-321, { -- Shoulder
 					i(35580),	-- Skein Woven Mantle
@@ -309,6 +310,10 @@ _.WorldDrops =
 					{	-- Stirrup Ring
 						["itemID"] = 36426,	-- Stirrup Ring
 					},
+					i(37751),	-- Tooga's Lost Toennail
+				}),
+				filter(53, {	-- Trinket
+					i(37835),	-- Je'Tze's Bell
 				}),
 			}),
 		},

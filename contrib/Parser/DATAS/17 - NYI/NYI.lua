@@ -346,6 +346,11 @@ _.NeverImplemented =
 				un(1, i(32135)),	    -- Chancellor's Chain Helm
 				un(1, i(32136)),	    -- Chancellor's Chain Leggings
 				un(1, i(32137)),	    -- Chancellor's Chain Spaulders
+				un(1, i(48819)),	    -- Windrunner's Handguards
+				un(1, i(48820)),	    -- Windrunner's Headpiece
+				un(1, i(48821)),	    -- Windrunner's Legguards
+				un(1, i(48822)),	    -- Windrunner's Spaulders
+				un(1, i(48823)),	    -- Windrunner's Tunic
 				un(1, i(46274)),	    -- Scourgestalker Headpiece
 				un(1, i(48814)),	-- Windrunner's Handguards of Conquest
 				un(1, i(48815)),	-- Windrunner's Headpiece of Conquest
@@ -488,6 +493,7 @@ _.NeverImplemented =
 			un(1, i(27718)),	-- Aldor Defender's Legplates
 			un(1, i(12106)),	-- Boulderskin Breastplate
 			un(1, i(25797)),	-- Crushing Grasp
+			un(1, i(38524)),	-- Carapace of the Scarlet Commander
 			un(1, i(32163)),	    -- Chancellor's PlateChestpiece
 			un(1, i(32164)),	    -- Chancellor's Plate Handguards
 			un(1, i(32165)),	    -- Chancellor's Plate Helm
@@ -643,7 +649,7 @@ _.NeverImplemented =
 			un(1, i(142373)),	-- zzz old locket f eldr thalas
 			un(1, i(142376)),	-- zzz old glowing blood thislte petal
 			un(1, i(142378)),	-- zzz old vial of ancient mana
-			un(1, i(17347)),	--
+			un(1, i(17347)),	-- unknown
 			un(1, i(17409)),	-- Encrusted Crystal Fragment
 			un(1, i(20883)),	-- Unknown
 			un(1, i(20936)),	-- Unknown
@@ -651,6 +657,8 @@ _.NeverImplemented =
 			un(1, i(156927)),	-- Great Hall Recall)
 		}),
 		un(1, spell(5169)),	-- defias disguise
+		un(1, i(45818)),	-- Unknown
+		un(1, i(46056)),	-- Unknown
 		un(1, spell(5264)),	-- dsouth sea defias disguise
 		un(1, spell(5268)),	-- dark iron dwarf disguise
 		un(1, spell(5267)),	-- dalaran wizard disguise

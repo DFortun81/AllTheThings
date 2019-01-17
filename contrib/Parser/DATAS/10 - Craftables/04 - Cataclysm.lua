@@ -332,71 +332,54 @@ _.Craftables =
 		-- Reviewed and updated as of 11.21.2018 BfA 8.0
 			n(-491, { -- Tarot Cards
 				sp(86615, {	-- Darkmoon Card of Destruction
+					i(61988, {["f"] = 55}),    -- Ace of embers
+					i(61989, {["f"] = 55}),    -- 2 of embers
+					i(61990, {["f"] = 55}),    -- 3 of embers
+					i(61991, {["f"] = 55}),    -- 4 of embers
+					i(61992, {["f"] = 55}),    -- 5 of embers
+					i(61993, {["f"] = 55}),    -- 6 of embers
+					i(61994, {["f"] = 55}),    -- 7 of embers
+					i(61995, {["f"] = 55}),    -- 8 of embers
+					i(62021, {	-- Volcanic Deck
+						i(62047),	-- Darkmoon Card: Volcano
+					}),
+					i(61996, {["f"] = 55}),    -- Ace of stones
+					i(61997, {["f"] = 55}),    -- 2 of stones
+					i(61998, {["f"] = 55}),    -- 3 of stones
+					i(61999, {["f"] = 55}),    -- 4 of stones
+					i(62000, {["f"] = 55}),    -- 5 of stones
+					i(62001, {["f"] = 55}),    -- 6 of stones
+					i(62002, {["f"] = 55}),    -- 7 of stones
+					i(62003, {["f"] = 55}),    -- 8 of stones
 					i(62046, {	-- Earthquake Deck
 						i(62048),	-- Darkmoon Card: Earthquake
 					}),
+					i(62004, {["f"] = 55}),    -- Ace of winds
+					i(62005, {["f"] = 55}),    -- 2 of winds
+					i(62006, {["f"] = 55}),    -- 3 of winds
+					i(62007, {["f"] = 55}),    -- 4 of winds
+					i(62008, {["f"] = 55}),    -- 5 of winds
+					i(62009, {["f"] = 55}),    -- 6 of winds
+					i(62010, {["f"] = 55}),    -- 7 of winds
+					i(62011, {["f"] = 55}),    -- 8 of winds
 					i(62045, {	-- Hurricane Deck
 						i(62049),	-- Darkmoon Card: Hurricane
 						i(62051),	-- Darkmoon Card: Hurricane
 					}),
+					i(62012, {["f"] = 55}),    -- Ace of waves
+					i(62013, {["f"] = 55}),    -- 2 of waves
+					i(62014, {["f"] = 55}),    -- 3 of waves
+					i(62015, {["f"] = 55}),    -- 4 of waves
+					i(62016, {["f"] = 55}),    -- 5 of waves
+					i(62017, {["f"] = 55}),    -- 6 of waves
+					i(62018, {["f"] = 55}),    -- 7 of waves
+					i(62019, {["f"] = 55}),    -- 8 of waves
 					i(62044, {	-- Tsunami Deck
 						i(62050),	-- Darkmoon Card: Tsunami
 					}),
-					i(62021, {	-- Volcanic Deck
-						i(62047),	-- Darkmoon Card: Volcano
-					}),
 				}),
 			}),
-		--[[	n(-491, { -- Tarot Cards
-				sp(111830, {	-- Darkmoon Card of Mists
-					i(79299, {["f"] = 55}),    -- Ace of Crane
-					i(79300, {["f"] = 55}),    -- 2 of Crane
-					i(79301, {["f"] = 55}),    -- 3 of Crane
-					i(79302, {["f"] = 55}),    -- 4 of Crane
-					i(79303, {["f"] = 55}),    -- 5 of Crane
-					i(79304, {["f"] = 55}),    -- 6 of Crane
-					i(79305, {["f"] = 55}),    -- 7 of Crane
-					i(79306, {["f"] = 55}),    -- 8 of Crane
-					i(79325, {	-- Crane Deck
-						i(79330),	-- Relic of Chi-Ji
-					}),
-					i(79291, {["f"] = 55}),    -- Ace of Oxen
-					i(79292, {["f"] = 55}),    -- 2 of Oxen
-					i(79293, {["f"] = 55}),    -- 3 of Oxen
-					i(79294, {["f"] = 55}),    -- 4 of Oxen
-					i(79295, {["f"] = 55}),    -- 5 of Oxen
-					i(79296, {["f"] = 55}),    -- 6 of Oxen
-					i(79297, {["f"] = 55}),    -- 7 of Oxen
-					i(79298, {["f"] = 55}),    -- 8 of Oxen
-					i(79324, {	-- Ox Deck
-						i(79329),	-- Relic of Niuzao
-					}),
-					i(79307, {["f"] = 55}),    -- Ace of Serpent
-					i(79308, {["f"] = 55}),    -- 2 of Serpent
-					i(79309, {["f"] = 55}),    -- 3 of Serpent
-					i(79310, {["f"] = 55}),    -- 4 of Serpent
-					i(79311, {["f"] = 55}),    -- 5 of Serpent
-					i(79312, {["f"] = 55}),    -- 6 of Serpent
-					i(79313, {["f"] = 55}),    -- 7 of Serpent
-					i(79314, {["f"] = 55}),    -- 8 of Serpent
-					i(79326, {	-- Serpent Deck
-						i(79331),	-- Relic of Yu'lon
-					}),
-					i(79283, {["f"] = 55}),    -- Ace of Tigers
-					i(79284, {["f"] = 55}),    -- 2 of Tigers
-					i(79285, {["f"] = 55}),    -- 3 of Tigers
-					i(79286, {["f"] = 55}),    -- 4 of Tigers
-					i(79287, {["f"] = 55}),    -- 5 of Tigers
-					i(79288, {["f"] = 55}),    -- 6 of Tigers
-					i(79289, {["f"] = 55}),    -- 7 of Tigers
-					i(79290, {["f"] = 55}),    -- 8 of Tigers
-					i(79323, {	-- Tiger Deck
-						i(79327),	-- Relic of Xuen
-						i(79328),	-- Relic of Xuen
-					}),
-				}),
-			}),
-		--]]filter(1, {	-- Off-hand
+			filter(1, {	-- Off-hand
 				i(62236),	-- Battle Tome
 				i(62231),	-- Book of Blood
 				i(62235),	-- Divine Companion
