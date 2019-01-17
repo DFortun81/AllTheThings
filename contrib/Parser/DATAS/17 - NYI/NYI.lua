@@ -1185,6 +1185,7 @@ _.NeverImplemented =
 			un(1, i(32189)),    -- Chancellor's Ripper
 			un(1, i(38243)),    -- Ravaging Steelfist
 			un(1, i(108787)),    -- Unknown
+			un(1, i(115797)),	-- test fist weapon
 			un(1, i(64826)),	-- Bloodthirsty Gladiator's Ripper (Epic BG Item, never made it out of beta))
 			un(1, i(108788)),    -- Unknown
 			un(1, i(108789)),    -- Unknown

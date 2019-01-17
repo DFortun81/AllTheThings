@@ -1729,7 +1729,7 @@ _.Zones =
 						}),
 						i(115518),	-- Vol'jin's Spear Tabard
 					}),
-					na(82876, { -- Grand Marshal Tremblade
+					na(82876, { -- Grand Marshal Tremblade Elite S1-S2-S3
 						["groups"] = {
 							un(14, i(120286)),	-- Enchanter's Illusion - Glorious Tyranny
 							un(14, i(120287)),	-- Enchanter's Illusion - Primal Victory
@@ -1739,103 +1739,231 @@ _.Zones =
 							un(2, i(127369)),	-- Warmongering Gladiator's Tabard
 							un(2, i(127375)),	-- Wild Gladiator's Greatcloak
 							un(2, i(127366)),	-- Wild Gladiator's Tabard
+							-- Fist Weapons
+							un(2, i(115948)),	-- Primal Gladiator's Ripper
+							un(2, i(115949)),	-- Primal  Gladiator's Render
+							un(2, i(125762)),	-- Wild Gladiator's Ripper
+							un(2, i(125763)),	-- Wild Gladiator's Render
+							un(2, i(126876)),	-- Warmongering Gladiator's Ripper
+							un(2, i(126877)),	-- Warmongering Gladiator's Render
+							-- 2 Hand Mace
+							un(2, i(115818)),	-- Primal  Gladiator's Bonegrinder
+							un(2, i(125632)),	-- Wild Gladiator's Bonegrinder
+							un(2, i(126746)),	-- Warmongering  Gladiator's Bonegrinder
 							-- Crossbow
+							un(2, i(115836)),	-- Primal Gladiator's Heavy Crossbow
 							un(2, i(125650)),	-- Wild Gladiator's  Heavy Crossbow
 							un(2, i(126764)),	-- Warmongering Gladiator's  Heavy Crossbow
 							-- 2 Hand Axes
+							un(2, i(115817)),	-- Primal Gladiator's Decapitator
 							un(2, i(125631)),	-- Wild Gladiator's  Decapi
 							un(2, i(126745)),	-- Warmongering Gladiator's  Decapi
 							-- 2 Hand Swords
+							un(2, i(115819)),	-- Primal Gladiator's  Greatsword
 							un(2, i(125633)),	-- Wild Gladiator's  Greatsword
 							un(2, i(126747)),	-- Warmongering Gladiator's  Greatsword
 							-- 1 Hand Axes
+							un(2, i(115820)),	-- Primal Gladiator's Cleaver
+							un(2, i(115952)),	-- Primal Gladiator's Hacker
 							un(2, i(125634)),	-- Wild Gladiator's Cleaver
 							un(2, i(125766)),	-- Wild Gladiator's Hacker
 							un(2, i(129936)),	-- Wild Gladiator's Runeaxe
 							un(2, i(126748)),	-- Warmongering Gladiator's Cleaver
 							un(2, i(126880)),	-- Warmongering Gladiator's Hacker
-							un(2, i(133584)),	-- Warmongering Gladi Runeaxe
+							un(2, i(133584)),	-- Warmongering Gladiator's Runeaxe
 							-- Bows
+							un(2, i(115823)),	-- Primal Gladiator's Longbow
 							un(2, i(125637)),	-- Wild Gladiator's Longbow
 							un(2, i(126751)),	-- Warmongering Gladiator's Longbow
 							-- Polearm
-							un(2, i(125724)),	-- Wild Gladi Pike
-							un(2, i(126838)),	-- Warmongering Gladi Pike
+							un(2, i(115910)),	-- Primal Gladiator's Pike
+							un(2, i(125724)),	-- Wild Gladiator's Pike
+							un(2, i(126838)),	-- Warmongering Gladiator's Pike
 							-- Guns
-							un(2, i(125676)),	-- Wild Gladi Rifle
-							un(2, i(126790)),	-- Warmongering Gladi Rifle
+							un(2, i(115862)),	-- Primal Gladiator's Rifle
+							un(2, i(125676)),	-- Wild Gladiator's Rifle
+							un(2, i(126790)),	-- Warmongering Gladiator's Rifle
 							-- Daggers
-							un(2, i(125646)),	-- Wild Gladi Spellblade
-							un(2, i(125761)),	-- Wild Gladi Shanker
-							un(2, i(126760)),	-- Warmongering Gladi Spellblade
-							un(2, i(126875)),	-- Warmongering Gladi SHanker
+							un(2, i(115832)),	-- Primal Gladiator's Spellblade
+							un(2, i(115947)),	-- Primal Gladiator's Shanker
+							un(2, i(125646)),	-- Wild Gladiator's Spellblade
+							un(2, i(125761)),	-- Wild Gladiator's Shanker
+							un(2, i(126760)),	-- Warmongering Gladiator's Spellblade
+							un(2, i(126875)),	-- Warmongering Gladiator's SHanker
 							-- Offhand
-							un(2, i(125644)),	-- Wild Gladi Endgame
-							un(2, i(125648)),	-- Wild Gladi Reprieve
-							un(2, i(126762)),	-- Warmongering Gladi Endgame
-							un(2, i(126762)),	-- Warmonger Gladi Reprieve
+							un(2, i(115830)),	-- Primal Gladiator's Endgame
+							un(2, i(115834)),	-- Primal Gladiator's Reprieve
+							un(2, i(125644)),	-- Wild Gladiator's Endgame
+							un(2, i(125648)),	-- Wild Gladiator's Reprieve
+							un(2, i(126758)),	-- Warmongering Gladiator's Endgame
+							un(2, i(126762)),	-- Warmonger Gladiator's Reprieve
 							-- 1 Hand Sword
-							un(2, i(125636)),	-- Wild Gladi Quickblade
-							un(2, i(125764)),	-- Wild Gladi Mageblade
-							un(2, i(125768)),	-- Wild Gladi Slicer
-							un(2, i(126750)),	-- Warmongering Gladi Quickblade
-							un(2, i(126878)),	-- Warmongering Gladi mageblade
-							un(2, i(126882)),	-- Warmongering Gladi Slicer
+							un(2, i(115822)),	-- Primal Gladiator's Quickblade
+							un(2, i(115950)),	-- Primal Gladiator's Mageblade
+							un(2, i(115954)),	-- Primal Gladiator's Slicer
+							un(2, i(125636)),	-- Wild Gladiator's Quickblade
+							un(2, i(125764)),	-- Wild Gladiator's Mageblade
+							un(2, i(125768)),	-- Wild Gladiator's Slicer
+							un(2, i(126750)),	-- Warmongering Gladiator's Quickblade
+							un(2, i(126878)),	-- Warmongering Gladiator's mageblade
+							un(2, i(126882)),	-- Warmongering Gladiator's Slicer
+							-- Staff
+							un(2, i(115603)),	-- Primal Gladiator's Staff (A), none elite
+							un(2, i(115833)),	-- Primal Gladiator's Battle Staff
+							un(2, i(115854)),	-- Primal Gladiator's Staff
+							un(2, i(115865)),	-- Primal Gladiator's Energy Staff
+							un(2, i(125647)),	-- Wild Gladiator's Battle Staff
+							un(2, i(125668)),	-- Wild Gladiator's Staff
+							un(2, i(125679)),	-- Wild Gladiator's Energy Staff
+							un(2, i(126761)),	-- Warmongering Gladiator's Battle Staff
+							un(2, i(126782)),	-- Warmongering Gladiator's Staff
+							un(2, i(126793)),	-- Warmongering Gladiator's Energy Staff
+							-- 1 Hand Mace
+							un(2, i(115821)),	-- Primal Gladiator's Pummeler
+							un(2, i(115863)),	-- Primal Gladiator's Gavel
+							un(2, i(115953)),	-- Primal Gladiator's Bonecracker
+							un(2, i(125635)),	-- Wild Gladiator's Pummeler
+							un(2, i(125677)),	-- Wild Gladiator's Gavel
+							un(2, i(125767)),	-- Wild Gladiator's Bonecracker
+							un(2, i(126749)),	-- Warmongering Gladiator's Pummeler
+							un(2, i(126791)),	-- Warmongering Gladiator's Gavel
+							un(2, i(126881)),	-- Warmongering Gladiator's Bonecracker
+							-- Shield
+							un(2, i(115831)),	-- Primal Gladiator's Barrier
+							un(2, i(115864)),	-- Primal Gladiator's Redoubt
+							un(2, i(115955)),	-- Primal Gladiator's Shield Wall
+							un(2, i(125645)),	-- Wild Gladiator's Barrier
+							un(2, i(125678)),	-- Wild Gladiator's Redoubt
+							un(2, i(125769)),	-- Wild Gladiator's Shield Wall
+							un(2, i(126759)),	-- Warmongering Gladiator's Barrier
+							un(2, i(126792)),	-- Warmongering Gladiator's Redoubt
+							un(2, i(126883)),	-- Warmongering Gladiator's Shield Wall
+							-- Wands
+							un(2, i(115835)),	-- Primal Gladiator's Touch of defeat
+							un(2, i(115951)),	-- Primal Gladiator's Baton of Light
+							un(2, i(125649)),	-- Wild Gladiator's Touch of defeat
+							un(2, i(125765)),	-- Wild Gladiator's Baton of Light
+							un(2, i(126763)),	-- Warmongering Gladiator's Touch of defeat
+							un(2, i(126879)),	-- Warmongering Gladiator's Baton of Light
 						},
 						["u"] = 2, -- Vendor doesn't sell anything in 7.0+
 					}),
-					nh(82877, { -- High Warlord Volrath
+					nh(82877, { -- High Warlord Volrath Elite -S1 -S2 -S3
 						["groups"] = {
 							un(14, i(120286)),	-- Enchanter's Illusion - Glorious Tyranny
 							un(14, i(120287)),	-- Enchanter's Illusion - Primal Victory
 							un(2, i(115979)),	-- Primal Gladiator's Greatcloak
 							un(2, i(115972)),	-- Primal Gladiator's Tabard
-							un(2, i(127376)),	-- Warmongering Gladiator's Greatcloak
+							un(2, i(127377)),	-- Warmongering Gladiator's Greatcloak
 							un(2, i(127371)),	-- Warmongering Gladiator's Tabard
-							un(2, i(127374)),	-- Wild Gladiator's Greatcloak
+							un(2, i(127375)),	-- Wild Gladiator's Greatcloak
 							un(2, i(127365)),	-- Wild Gladiator's Tabard
+							-- Fist Weapons
+							un(2, i(115948)),	-- Primal Gladiator's Ripper
+							un(2, i(115949)),	-- Primal  Gladiator's Render
+							un(2, i(125762)),	-- Wild Gladiator's Ripper
+							un(2, i(125763)),	-- Wild Gladiator's Render
+							un(2, i(126876)),	-- Warmongering Gladiator's Ripper
+							un(2, i(126877)),	-- Warmongering Gladiator's Render
+							-- 2 Hand Mace
+							un(2, i(115818)),	-- Primal  Gladiator's Bonegrinder
+							un(2, i(125632)),	-- Wild Gladiator's Bonegrinder
+							un(2, i(126746)),	-- Warmongering  Gladiator's Bonegrinder
 							-- Crossbow
+							un(2, i(115836)),	-- Primal Gladiator's Heavy Crossbow
 							un(2, i(125650)),	-- Wild Gladiator's  Heavy Crossbow
 							un(2, i(126764)),	-- Warmongering Gladiator's  Heavy Crossbow
 							-- 2 Hand Axes
+							un(2, i(115817)),	-- Primal Gladiator's Decapitator
 							un(2, i(125631)),	-- Wild Gladiator's  Decapi
 							un(2, i(126745)),	-- Warmongering Gladiator's  Decapi
 							-- 2 Hand Swords
+							un(2, i(115819)),	-- Primal Gladiator's  Greatsword
 							un(2, i(125633)),	-- Wild Gladiator's  Greatsword
 							un(2, i(126747)),	-- Warmongering Gladiator's  Greatsword
 							-- 1 Hand Axes
+							un(2, i(115820)),	-- Primal Gladiator's Cleaver
+							un(2, i(115952)),	-- Primal Gladiator's Hacker
 							un(2, i(125634)),	-- Wild Gladiator's Cleaver
 							un(2, i(125766)),	-- Wild Gladiator's Hacker
 							un(2, i(129936)),	-- Wild Gladiator's Runeaxe
 							un(2, i(126748)),	-- Warmongering Gladiator's Cleaver
 							un(2, i(126880)),	-- Warmongering Gladiator's Hacker
-							un(2, i(133584)),	-- Warmongering Gladi Runeaxe
+							un(2, i(133584)),	-- Warmongering Gladiator's Runeaxe
 							-- Bows
+							un(2, i(115823)),	-- Primal Gladiator's Longbow
 							un(2, i(125637)),	-- Wild Gladiator's Longbow
 							un(2, i(126751)),	-- Warmongering Gladiator's Longbow
 							-- Polearm
-							un(2, i(125724)),	-- Wild Gladi Pike
-							un(2, i(126838)),	-- Warmongering Gladi Pike
+							un(2, i(115910)),	-- Primal Gladiator's Pike
+							un(2, i(125724)),	-- Wild Gladiator's Pike
+							un(2, i(126838)),	-- Warmongering Gladiator's Pike
 							-- Guns
-							un(2, i(125676)),	-- Wild Gladi Rifle
-							un(2, i(126790)),	-- Warmongering Gladi Rifle
+							un(2, i(115862)),	-- Primal Gladiator's Rifle
+							un(2, i(125676)),	-- Wild Gladiator's Rifle
+							un(2, i(126790)),	-- Warmongering Gladiator's Rifle
 							-- Daggers
-							un(2, i(125646)),	-- Wild Gladi Spellblade
-							un(2, i(125761)),	-- Wild Gladi Shanker
-							un(2, i(126760)),	-- Warmongering Gladi Spellblade
-							un(2, i(126875)),	-- Warmongering Gladi SHanker
+							un(2, i(115832)),	-- Primal Gladiator's Spellblade
+							un(2, i(115947)),	-- Primal Gladiator's Shanker
+							un(2, i(125646)),	-- Wild Gladiator's Spellblade
+							un(2, i(125761)),	-- Wild Gladiator's Shanker
+							un(2, i(126760)),	-- Warmongering Gladiator's Spellblade
+							un(2, i(126875)),	-- Warmongering Gladiator's SHanker
 							-- Offhand
-							un(2, i(125644)),	-- Wild Gladi Endgame
-							un(2, i(125648)),	-- Wild Gladi Reprieve
-							un(2, i(126762)),	-- Warmongering Gladi Endgame
-							un(2, i(126762)),	-- Warmonger Gladi Reprieve
+							un(2, i(115830)),	-- Primal Gladiator's Endgame
+							un(2, i(115834)),	-- Primal Gladiator's Reprieve
+							un(2, i(125644)),	-- Wild Gladiator's Endgame
+							un(2, i(125648)),	-- Wild Gladiator's Reprieve
+							un(2, i(126758)),	-- Warmongering Gladiator's Endgame
+							un(2, i(126762)),	-- Warmonger Gladiator's Reprieve
 							-- 1 Hand Sword
-							un(2, i(125636)),	-- Wild Gladi Quickblade
-							un(2, i(125764)),	-- Wild Gladi Mageblade
-							un(2, i(125768)),	-- Wild Gladi Slicer
-							un(2, i(126750)),	-- Warmongering Gladi Quickblade
-							un(2, i(126878)),	-- Warmongering Gladi mageblade
-							un(2, i(126882)),	-- Warmongering Gladi Slicer
+							un(2, i(115822)),	-- Primal Gladiator's Quickblade
+							un(2, i(115950)),	-- Primal Gladiator's Mageblade
+							un(2, i(115954)),	-- Primal Gladiator's Slicer
+							un(2, i(125636)),	-- Wild Gladiator's Quickblade
+							un(2, i(125764)),	-- Wild Gladiator's Mageblade
+							un(2, i(125768)),	-- Wild Gladiator's Slicer
+							un(2, i(126750)),	-- Warmongering Gladiator's Quickblade
+							un(2, i(126878)),	-- Warmongering Gladiator's mageblade
+							un(2, i(126882)),	-- Warmongering Gladiator's Slicer
+							-- Staff
+							un(2, i(111076)),	-- Primal Gladiator's Staff (H), none elite
+							un(2, i(115833)),	-- Primal Gladiator's Battle Staff
+							un(2, i(115854)),	-- Primal Gladiator's Staff
+							un(2, i(115865)),	-- Primal Gladiator's Energy Staff
+							un(2, i(125647)),	-- Wild Gladiator's Battle Staff
+							un(2, i(125668)),	-- Wild Gladiator's Staff
+							un(2, i(125679)),	-- Wild Gladiator's Energy Staff
+							un(2, i(126761)),	-- Warmongering Gladiator's Battle Staff
+							un(2, i(126782)),	-- Warmongering Gladiator's Staff
+							un(2, i(126793)),	-- Warmongering Gladiator's Energy Staff
+							-- 1 Hand Mace
+							un(2, i(115821)),	-- Primal Gladiator's Pummeler
+							un(2, i(115863)),	-- Primal Gladiator's Gavel
+							un(2, i(115953)),	-- Primal Gladiator's Bonecracker
+							un(2, i(125635)),	-- Wild Gladiator's Pummeler
+							un(2, i(125677)),	-- Wild Gladiator's Gavel
+							un(2, i(125767)),	-- Wild Gladiator's Bonecracker
+							un(2, i(126749)),	-- Warmongering Gladiator's Pummeler
+							un(2, i(126791)),	-- Warmongering Gladiator's Gavel
+							un(2, i(126881)),	-- Warmongering Gladiator's Bonecracker
+							-- Shield
+							un(2, i(115831)),	-- Primal Gladiator's Barrier
+							un(2, i(115864)),	-- Primal Gladiator's Redoubt
+							un(2, i(115955)),	-- Primal Gladiator's Shield Wall
+							un(2, i(125645)),	-- Wild Gladiator's Barrier
+							un(2, i(125678)),	-- Wild Gladiator's Redoubt
+							un(2, i(125769)),	-- Wild Gladiator's Shield Wall
+							un(2, i(126759)),	-- Warmongering Gladiator's Barrier
+							un(2, i(126792)),	-- Warmongering Gladiator's Redoubt
+							un(2, i(126883)),	-- Warmongering Gladiator's Shield Wall
+							-- Wands
+							un(2, i(115835)),	-- Primal Gladiator's Touch of defeat
+							un(2, i(115951)),	-- Primal Gladiator's Baton of Light
+							un(2, i(125649)),	-- Wild Gladiator's Touch of defeat
+							un(2, i(125765)),	-- Wild Gladiator's Baton of Light
+							un(2, i(126763)),	-- Warmongering Gladiator's Touch of defeat
+							un(2, i(126879)),	-- Warmongering Gladiator's Baton of Light
 						},
 						["u"] = 2, -- Vendor doesn't sell anything in 7.0+
 					}),
