@@ -77,6 +77,26 @@ _.NeverImplemented =
 				un(1, i(48737)),	-- Gul'dan's Leggings of Conquest
 				un(1, i(48738)),	-- Gul'dan's Robe of Conquest
 				un(1, i(48739)),	-- Gul'dan's Shoulderpads of Conquest
+				un(1, i(32093)),	-- Chancellor's Dreadweave Gloves
+				un(1, i(32094)),	-- Chancellor's Dreadweave Hood
+				un(1, i(32095)),	-- Chancellor's Dreadweave Legs
+				un(1, i(32096)),	-- Chancellor's Dreadweave Manthle
+				un(1, i(32097)),	-- Chancellor's Dreadweave Robe
+				un(1, i(32098)),	-- Chancellor's Mooncloth Cowl
+				un(1, i(32099)),	-- Chancellor's Mooncloth Legs
+				un(1, i(32100)),	-- Chancellor's Mooncloth Mitts
+				un(1, i(32101)),	-- Chancellor's Mooncloth Shoulderpads
+				un(1, i(32102)),	-- Chancellor's Mooncloth Vestments
+				un(1, i(32103)),	-- Chancellor's Satin Gloves
+				un(1, i(32104)),	-- Chancellor's Satin Hood
+				un(1, i(32105)),	-- Chancellor's Satin Legs
+				un(1, i(32106)),	-- Chancellor's Satin Manthle
+				un(1, i(32107)),	-- Chancellor's Satin Robe
+				un(1, i(32108)),	-- Chancellor's Silk Amice
+				un(1, i(32109)),	-- Chancellor's Silk Cowl
+				un(1, i(32110)),	-- Chancellor's Silk Handguards
+				un(1, i(32111)),	-- Chancellor's Silk Rainment
+				un(1, i(32112)),	-- Chancellor's Silk Legs
 				-- Possible Unused Level 120/Lv 120 Classtrial
 				un(1, i(157642)),	-- Demonologist's Staff
 				un(1, i(157641)),	-- Destructive Spellstaff
@@ -92,6 +112,7 @@ _.NeverImplemented =
 			un(1, i(10010)),	-- Stormcloth Pants
 			un(1, i(10011)),	-- Stormcloth Gloves
 			un(1, i(10020)),	-- Stormcloth Vest
+			un(1, i(47102)),	-- Unknown
 			un(1, i(10032)),	-- Stormcloth Headband
 			un(1, i(10038)),	-- Stormcloth Shoulders (comment on wowhead says they have the pattern, but I'm pretty sure that's fake - no history of the pattern or item on UMJ)
 			un(1, i(10039)),	-- Stormcloth Boots

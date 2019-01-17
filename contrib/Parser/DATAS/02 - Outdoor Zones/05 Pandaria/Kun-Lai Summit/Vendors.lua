@@ -1095,6 +1095,39 @@ _.Zones =
 								i(138724),	-- Ensemble: Dreadful Gladiator's Felweave Armor
 		--]]
 							}),
+							nh(70108, {	-- Roo Desvin >S13< Elite
+								["groups"] = {
+									un(2, i(91213)),	-- Tyrannical Gladiator's Links of Cruelty
+									un(2, i(91215)),	-- Tyrannical Gladiator's Links of Accuracy
+									un(2, i(91217)),	-- Tyrannical Gladiator's Sabatons of Cruelty
+									un(2, i(91219)),	-- Tyrannical Gladiator's Sabatons of Alacrity
+									un(2, i(91223)),	-- Tyrannical Gladiator's Chain Armor
+									un(2, i(91225)),	-- Tyrannical Gladiator's Chain Gauntlets
+									un(2, i(91227)),	-- Tyrannical Gladiator's Chain Helm
+									un(2, i(91229)),	-- Tyrannical Gladiator's Chain Legs
+									un(2, i(91231)),	-- Tyrannical Gladiator's Chain Spaulders
+									un(2, i(91251)),	-- Tyrannical Gladiator's Waistguard of Meditation
+									un(2, i(91253)),	-- Tyrannical Gladiator's Footguards of Alacrity
+									un(2, i(91255)),	-- Tyrannical Gladiator's Footguards of Meditation
+									un(2, i(91359)),	-- Tyrannical Gladiator's ringmail Armor
+									un(2, i(91361)),	-- Tyrannical Gladiator's ringmail Gauntlets
+									un(2, i(91363)),	-- Tyrannical Gladiator's ringmail Helm
+									un(2, i(91365)),	-- Tyrannical Gladiator's ringmail Legs
+									un(2, i(91367)),	-- Tyrannical Gladiator's ringmail Spaulders
+									un(2, i(91369)),	-- Tyrannical Gladiator's linked Armor
+									un(2, i(91371)),	-- Tyrannical Gladiator's linked Gauntlets
+									un(2, i(91373)),	-- Tyrannical Gladiator's linked Helm
+									un(2, i(91375)),	-- Tyrannical Gladiator's linked Legs
+									un(2, i(91377)),	-- Tyrannical Gladiator's linked Spaulders
+									un(2, i(91381)),	-- Tyrannical Gladiator's mail Armor
+									un(2, i(91383)),	-- Tyrannical Gladiator's mail Gauntlets
+									un(2, i(91385)),	-- Tyrannical Gladiator's mail Helm
+									un(2, i(91387)),	-- Tyrannical Gladiator's mail Legs
+									un(2, i(91389)),	-- Tyrannical Gladiator's mail Spaulders
+									un(2, i(91379)),	-- Tyrannical Gladiator's Waistguard of Cruelty
+								},
+								["u"] = 43,
+							}),
 							nh(75688, {	-- Roo Desvin
 								i(144245), -- Arsenal: Tyrannical Gladiator's Weapons
 								i(100171),	-- Tyrannical Gladiator's Barrier

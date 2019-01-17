@@ -2959,7 +2959,7 @@ _.Zones =
 						un(2, i(28919)),		-- High Warlord's Maul
 						un(2, i(28924)),		-- High Warlord's Bonecracker
 						un(2, i(28925)),		-- High Warlord's Pummeler
-						un(2, i(28939)),		--- High Warlord's Barricade
+						un(2, i(28939)),		-- High Warlord's Barricade
 						un(2, i(28931)),	    -- High Warlord's Spellblade
 						un(2, i(28293)),	    -- High Warlord's Claymore
 						un(2, i(28918)),	    -- High Warlord's Decapitator
