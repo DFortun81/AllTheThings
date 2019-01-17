@@ -82,21 +82,6 @@ _.NeverImplemented =
 				un(1, i(32095)),	-- Chancellor's Dreadweave Legs
 				un(1, i(32096)),	-- Chancellor's Dreadweave Manthle
 				un(1, i(32097)),	-- Chancellor's Dreadweave Robe
-				un(1, i(32098)),	-- Chancellor's Mooncloth Cowl
-				un(1, i(32099)),	-- Chancellor's Mooncloth Legs
-				un(1, i(32100)),	-- Chancellor's Mooncloth Mitts
-				un(1, i(32101)),	-- Chancellor's Mooncloth Shoulderpads
-				un(1, i(32102)),	-- Chancellor's Mooncloth Vestments
-				un(1, i(32103)),	-- Chancellor's Satin Gloves
-				un(1, i(32104)),	-- Chancellor's Satin Hood
-				un(1, i(32105)),	-- Chancellor's Satin Legs
-				un(1, i(32106)),	-- Chancellor's Satin Manthle
-				un(1, i(32107)),	-- Chancellor's Satin Robe
-				un(1, i(32108)),	-- Chancellor's Silk Amice
-				un(1, i(32109)),	-- Chancellor's Silk Cowl
-				un(1, i(32110)),	-- Chancellor's Silk Handguards
-				un(1, i(32111)),	-- Chancellor's Silk Rainment
-				un(1, i(32112)),	-- Chancellor's Silk Legs
 				-- Possible Unused Level 120/Lv 120 Classtrial
 				un(1, i(157642)),	-- Demonologist's Staff
 				un(1, i(157641)),	-- Destructive Spellstaff
@@ -105,6 +90,21 @@ _.NeverImplemented =
 			un(1, i(78017)),	-- Replica Magister's Leggings (Cloth)
 			un(1, i(4989)),		-- Mage Dragon Robe (intended to be quest reward, never made it to live?)
 			un(1, i(4990)),		-- Scorched Bands
+			un(1, i(32098)),	-- Chancellor's Mooncloth Cowl
+			un(1, i(32099)),	-- Chancellor's Mooncloth Legs
+			un(1, i(32100)),	-- Chancellor's Mooncloth Mitts
+			un(1, i(32101)),	-- Chancellor's Mooncloth Shoulderpads
+			un(1, i(32102)),	-- Chancellor's Mooncloth Vestments
+			un(1, i(32103)),	-- Chancellor's Satin Gloves
+			un(1, i(32104)),	-- Chancellor's Satin Hood
+			un(1, i(32105)),	-- Chancellor's Satin Legs
+			un(1, i(32106)),	-- Chancellor's Satin Manthle
+			un(1, i(32107)),	-- Chancellor's Satin Robe
+			un(1, i(32108)),	-- Chancellor's Silk Amice
+			un(1, i(32109)),	-- Chancellor's Silk Cowl
+			un(1, i(32110)),	-- Chancellor's Silk Handguards
+			un(1, i(32111)),	-- Chancellor's Silk Rainment
+			un(1, i(32112)),	-- Chancellor's Silk Legs
 			un(1, i(104335)),	-- Titan Rocket Boots
 			un(1, i(90358)),	-- Honorary Combat Engineer's Silk Trousers
 			un(1, i(90359)),	-- Honorary Combat Engineer's Satin Leggings
@@ -448,6 +448,16 @@ _.NeverImplemented =
 				un(1, i(48924)),	-- Liadrin's Handguards of Conquest
 				un(1, i(48925)),	-- Liadrin's Legguards of Conquest
 				un(1, i(48926)),	-- Liadrin's Shoulderguards of Conquest
+				un(1, i(32153)),	    -- Chancellor's Lamellar Chestpiece
+				un(1, i(32154)),	    -- Chancellor's Lamellar  Handguards
+				un(1, i(32155)),	    -- Chancellor's Lamellar  Headpiece
+				un(1, i(32156)),	    -- Chancellor's Lamellar  Legguards
+				un(1, i(32157)),	    -- Chancellor's Lamellar  Spaulders
+				un(1, i(32158)),	    -- Chancellor's OrnamentedChestplate
+				un(1, i(32159)),	    -- Chancellor's Ornamented Handguards
+				un(1, i(32160)),	    -- Chancellor's Ornamented Headguard
+				un(1, i(32161)),	    -- Chancellor's Ornamented Leggings
+				un(1, i(32162)),	    -- Chancellor's Ornamented Spaulders
 			}),
 			cl(1, { -- Warrior
 				un(1, i(48860)),	-- Hellscream's Battleplate of Conquest
@@ -478,6 +488,16 @@ _.NeverImplemented =
 			un(1, i(27718)),	-- Aldor Defender's Legplates
 			un(1, i(12106)),	-- Boulderskin Breastplate
 			un(1, i(25797)),	-- Crushing Grasp
+			un(1, i(32163)),	    -- Chancellor's PlateChestpiece
+			un(1, i(32164)),	    -- Chancellor's Plate Handguards
+			un(1, i(32165)),	    -- Chancellor's Plate Helm
+			un(1, i(32166)),	    -- Chancellor's Plate Legguards
+			un(1, i(32167)),	    -- Chancellor's Plate Shoulders
+			un(1, i(32168)),	    -- Chancellor's ScaledChestpiece
+			un(1, i(32169)),	    -- Chancellor's Scaled Handguards
+			un(1, i(32170)),	    -- Chancellor's Scaled Helm
+			un(1, i(32171)),	    -- Chancellor's Scaled shoulders
+			un(1, i(32172)),	    -- Chancellor's Scaled Spaulders
 			un(1, i(5822)),		-- Hedgeseed Gauntlets
 			un(1, i(26041)),	-- Vigilant Vambraces
 			un(1, i(21587)),	-- Wristguards of Castigation (never made it off test)
