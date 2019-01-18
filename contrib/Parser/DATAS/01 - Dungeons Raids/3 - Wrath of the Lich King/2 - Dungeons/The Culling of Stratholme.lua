@@ -9,7 +9,11 @@ _.Instances =
 			inst(279, {	-- The Culling of Stratholme
 				["groups"] = {
 					n(-17, {	-- Quests
-						qg(26527, q(13149)),	-- Dispelling Illusions
+						qg(26527, q(13149, {	-- Dispelling Illusions
+							["groups"] = {
+								i(37888),	-- Arcane Disruptor
+							},
+						})),
 						qg(26527, q(13151, {	-- A Royal Escort
 							["groups"] = {
 								i(44396),	-- Gloves of the Time Guardian

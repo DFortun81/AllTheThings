@@ -1845,6 +1845,28 @@ _.Zones =
 							un(2, i(125765)),	-- Wild Gladiator's Baton of Light
 							un(2, i(126763)),	-- Warmongering Gladiator's Touch of defeat
 							un(2, i(126879)),	-- Warmongering Gladiator's Baton of Light
+							un(2, i(115866)),	-- Primal Gladiator's chain links
+							un(2, i(115867)),	-- Primal Gladiator's linked waistband
+							un(2, i(115868)),	-- Primal Gladiator's chain sabatons
+							un(2, i(115869)),	-- Primal Gladiator's linked sabatons
+							un(2, i(115870)),	-- Primal Gladiator's chain armor
+							un(2, i(115871)),	-- Primal Gladiator's chain gauntlets
+							un(2, i(115872)),	-- Primal Gladiator's chain helm
+							un(2, i(115873)),	-- Primal Gladiator's chain leggings
+							un(2, i(115874)),	-- Primal Gladiator's chain spaulders
+							un(2, i(115928)),	-- Primal Gladiator's ringmail waistguard
+							un(2, i(115929)),	-- Primal Gladiator's ringmail foodguards
+							un(2, i(115930)),	-- Primal Gladiator's mail footguards
+							un(2, i(115931)),	-- Primal Gladiator's ringmail armor
+							un(2, i(115932)),	-- Primal Gladiator's ringmail gauntlets
+							un(2, i(115933)),	-- Primal Gladiator's ringmail helm
+							un(2, i(115934)),	-- Primal Gladiator's ringmail leggings
+							un(2, i(115935)),	-- Primal Gladiator's ringmail spaulders
+							un(2, i(115936)),	-- Primal Gladiator's linked armor
+							un(2, i(115937)),	-- Primal Gladiator's linked gauntlets
+							un(2, i(115938)),	-- Primal Gladiator's linked helm
+							un(2, i(115939)),	-- Primal Gladiator's linked leggings
+							un(2, i(115940)),	-- Primal Gladiator's linked spaulders
 						},
 						["u"] = 2, -- Vendor doesn't sell anything in 7.0+
 					}),
@@ -1964,6 +1986,28 @@ _.Zones =
 							un(2, i(125765)),	-- Wild Gladiator's Baton of Light
 							un(2, i(126763)),	-- Warmongering Gladiator's Touch of defeat
 							un(2, i(126879)),	-- Warmongering Gladiator's Baton of Light
+							un(2, i(115866)),	-- Primal Gladiator's chain links
+							un(2, i(115867)),	-- Primal Gladiator's linked waistband
+							un(2, i(115868)),	-- Primal Gladiator's chain sabatons
+							un(2, i(115869)),	-- Primal Gladiator's linked sabatons
+							un(2, i(115870)),	-- Primal Gladiator's chain armor
+							un(2, i(115871)),	-- Primal Gladiator's chain gauntlets
+							un(2, i(115872)),	-- Primal Gladiator's chain helm
+							un(2, i(115873)),	-- Primal Gladiator's chain leggings
+							un(2, i(115874)),	-- Primal Gladiator's chain spaulders
+							un(2, i(115928)),	-- Primal Gladiator's ringmail waistguard
+							un(2, i(115929)),	-- Primal Gladiator's ringmail foodguards
+							un(2, i(115930)),	-- Primal Gladiator's mail footguards
+							un(2, i(115931)),	-- Primal Gladiator's ringmail armor
+							un(2, i(115932)),	-- Primal Gladiator's ringmail gauntlets
+							un(2, i(115933)),	-- Primal Gladiator's ringmail helm
+							un(2, i(115934)),	-- Primal Gladiator's ringmail leggings
+							un(2, i(115935)),	-- Primal Gladiator's ringmail spaulders
+							un(2, i(115936)),	-- Primal Gladiator's linked armor
+							un(2, i(115937)),	-- Primal Gladiator's linked gauntlets
+							un(2, i(115938)),	-- Primal Gladiator's linked helm
+							un(2, i(115939)),	-- Primal Gladiator's linked leggings
+							un(2, i(115940)),	-- Primal Gladiator's linked spaulders
 						},
 						["u"] = 2, -- Vendor doesn't sell anything in 7.0+
 					}),
