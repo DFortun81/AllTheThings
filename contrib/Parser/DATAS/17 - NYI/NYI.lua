@@ -1005,6 +1005,8 @@ _.NeverImplemented =
 			un(1, i(162739)),	-- Schematic: Fro-Grow Grenade
 			un(1, i(162336)),	-- Schematic: Neurological Immobilization Bomb
 			un(1, i(162740)),	-- Schematic: Neurological Immobilization Bomb
+			un(1, i(23813)),	-- Schematic: Blue Smoke Flare [Removed TBC Beta]
+			un(1, i(23812)),	-- Schematic: Red Smoke Flare [Removed TBC Beta]
 		}),
 		n(-185, { 	-- Inscription
 			un(1, i(87830)),	-- Recipe: Tigersblood Tincture

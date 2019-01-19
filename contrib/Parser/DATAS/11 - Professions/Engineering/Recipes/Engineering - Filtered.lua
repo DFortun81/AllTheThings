@@ -492,7 +492,8 @@ profession(202, {	-- Engineering
 						},
 						{
 							["name"] = "Tranquil Mechanical Yeti",
-							["recipeID"] = 26011
+							["recipeID"] = 26011,
+							["u"] = 2,	-- Cataclysm Rework. >:(
 						},
 						{
 							["name"] = "Ultra-Flash Shadow Reflector",

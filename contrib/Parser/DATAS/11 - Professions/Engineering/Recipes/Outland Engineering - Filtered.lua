@@ -320,7 +320,8 @@ profession(202, {	-- Engineering
 					["g"] = {
 						{
 							["name"] = "Blue Smoke Flare",
-							["recipeID"] = 30343
+							["recipeID"] = 30343,
+							["u"] = 1,
 						},
 						{
 							["name"] = "Green Smoke Flare",
@@ -332,7 +333,8 @@ profession(202, {	-- Engineering
 						},
 						{
 							["name"] = "Red Smoke Flare",
-							["recipeID"] = 30342
+							["recipeID"] = 30342,
+							["u"] = 1,
 						},
 						{
 							["name"] = "White Smoke Flare",
