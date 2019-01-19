@@ -202,7 +202,7 @@ _.Instances =
 								i(133241),	-- Skyshard Ring
 							})),
 							cr(43875, e(116, { -- Asaad, Caliph of Zephyrs
-								i(133242),	-- Lightningflash
+								un(2, i(133242)),	-- Lightningflash	--Note!! Possible removal in 8.0 need confirmed reports
 								i(133249),	-- Lunar Halo
 								i(133245),	-- Billowing Cape
 								i(133247),	-- Shadow of Perfect Bliss
