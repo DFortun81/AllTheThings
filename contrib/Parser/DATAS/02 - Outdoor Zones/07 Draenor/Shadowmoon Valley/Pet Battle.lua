@@ -20,6 +20,15 @@ _.Zones =
 							p(412), 	-- Spider
 							p(1593), 	-- Waterfly
 							p(1582), 	-- Zangar Crawler
+							{	-- Ashlei
+								["questID"] = 37203,
+								["qg"] = 87124,	-- Ashlei
+								["coord"] = { 50.0, 31.2, 539 },
+								["isDaily"] = true,
+								["g"] = {
+									i(116415),	-- Shiny Pet Charm
+								},
+							},
 						},
 					},
 				},

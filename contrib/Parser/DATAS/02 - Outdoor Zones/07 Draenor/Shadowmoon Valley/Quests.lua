@@ -118,9 +118,11 @@ _.Zones =
 								i(117497),	-- Moonchain Boots
 								i(117498),	-- Moonsole Slippers
 							}),
-							q(44488, {	-- Cursed Tome
-								["qg"] = 258980, -- Cursed Tome
-							}),
+							{	-- Cursed Tome
+								["objectID"] = 258980,
+								["questID"] = 44488,
+								["coord"] = { 37.6, 59.3, 539 },
+							},
 							qa(33765, {	-- Dark Enemies
 								i(113145),	-- Karabor Guardian Gorget
 								i(113146),	-- Karabor Sage Pendant
