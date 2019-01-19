@@ -24,16 +24,6 @@ _.Zones =
 									i(119365),	-- Bloodied Tourniquet Belt
 								},
 							},
-							{	-- Arena Master's War Horn
-								["objectID"] = 226955,	-- Arena Master's War Horn
-								["questID"] = 33916,
-								["coords"] = {
-									{ 23.17, 24.95, 525 },
-								},
-								["g"] = {
-									i(108735), -- Arena Master's War Horn Toy
-								},
-							},
 							{	-- Borrok the Devourer
 								["npcID"] = 72156,	-- Borrok the Devourer
 								["questID"] = 33511,
@@ -69,16 +59,6 @@ _.Zones =
 								},
 								["g"] = {
 									i(111533), -- Corrosive Tongue of Reeg'ak
-								},
-							},
-							{	-- Burning Pearl
-								["objectID"] = 230252,	-- Burning Pearl
-								["questID"] = 34520,
-								["coords"] = {
-									{ 42.16, 19.30, 525 },
-								},
-								["g"] = {
-									i(120341),	-- Burning Pearl
 								},
 							},
 							{	-- Canyon Icemother
@@ -139,17 +119,6 @@ _.Zones =
 									i(111484), -- Cold Tusk
 								},
 							},
-							{	-- Crag-Leaper's Cache
-								["objectID"] = 226983,	-- Crag-Leaper's Cache
-								["questID"] = 33940,
-								["coords"] = {
-									{ 42.65, 31.74, 525 },
-								},
-								["modelID"] = 65118,
-								["g"] = {	
-									i(112187),	-- Crag-Leaping Boots
-								},
-							},
 							{	-- Cyclonic Fury
 								["npcID"] = 78621,	-- Cyclonic Fury
 								["questID"] = 34477,
@@ -203,28 +172,6 @@ _.Zones =
 									i(107661), -- Smoldering Lavacore Orb
 								},
 							},
-							{	-- Frozen Orc Skeleton
-								["objectID"] = 229367,	-- Frozen Orc Skeleton
-								["questID"] = 34476,
-								["coords"] = {
-									{ 57.16, 52.12, 525 },
-								},
-								["g"] = {
-									i(111554),	-- Rimefrost Fetish
-								},
-							},
-							{	-- Frozen Frostwolf Axe
-								["objectID"] = 229640,	-- Frozen Frostwolf Axe
-								["questID"] = 34507,
-								["description"] = "First set of coords is cave entrance, second set it the item.",
-								["coords"] = {
-									{ 25.24, 51.52, 525 },	-- Cave Entrance
-									{ 24.18, 48.60, 525 },	-- Frozen Frostwolf Axe
-								},
-								["g"] = {
-									i(110689), -- Icebound Frost-Singer Axe
-								},
-							},
 							{	-- Giant-Slayer Kul
 								["npcID"] = 71665,	-- Giant-Slayer Kul
 								["questID"] = 32918,
@@ -249,16 +196,6 @@ _.Zones =
 									{	-- Goren "Log" Roller
 										["itemID"] = 119180,	-- Goren "Log" Roller
 									},
-								},
-							},
-							{	-- Gnawed Bone
-								["objectID"] = 230425,	-- Gnawed Bone
-								["questID"] = 34648,
-								["coords"] = {
-									{ 25.51, 20.45, 525 },
-								},
-								["g"] = {	
-									i(111415),	-- Gnawbone Knife
 								},
 							},
 							{	-- Gorg'ak the Lava Guzzler	**Coords uncofirmed, relied on wowhead**
@@ -402,21 +339,6 @@ _.Zones =
 									i(119372),	-- Ironstudded Scale Girdle 
 								},
 							},
-							{	-- Lagoon Pool
-								["objectID"] = 226967,	-- Lagoon Pool
-								["questID"] = 33926,
-								["coords"] = {
-									{ 21.74, 9.61, 525 },
-								},
-								["requireSkill"] = 356,	-- Fishing
-								["model"] = "World\\Dungeon\\WellofEternity\\WOE_Fountain_Pool.mdx",
-								["modelScale"] = 10,
-								["g"] = {	
-									i(108738, {	-- Giant Draenor Clam
-										i(108739), -- Pretty Draenor Pearl Toy
-									}),
-								},
-							},
 							{	-- Moltnoma
 								["npcID"] = 82614,	-- Moltnoma
 								["questID"] = 37387,
@@ -541,17 +463,6 @@ _.Zones =
 									i(111534),	-- The Bone Crawler's Carapace 
 								},
 							},
-							{	-- Thunderlord Cache
-								["objectID"] = 220641,	-- Thunderlord Cache
-								["questID"] = 32803,
-								["coords"] = {
-									{ 34.20, 23.47, 525 },
-								},
-								["modelID"] = 65118,
-								["g"] = {
-									i(107658), -- Thunderlord Longspear
-								},
-							},
 							{	-- Tor'goroth <The Soul-Gorger>
 								["npcID"] = 82618,	-- Tor'goroth <The Soul-Gorger>
 								["questID"] = 37384,
@@ -593,21 +504,6 @@ _.Zones =
 								["isDaily"] = true,
 								["coords"] = {
 									{ 70.6, 39.0, 525 },
-								},
-							},
-							{	-- Wiggling Egg
-								["objectID"] = 224623,	-- Wiggling Egg
-								["questID"] = 33505,
-								["coords"] = {
-									{ 64.37, 65.87, 525 },
-								},
-								["g"] = {
-									i(112107, {	-- Mysterious Egg
-										["description"] = "This egg will hatch after 3 days to give you the Fruit Hunter pet.",
-										["g"] = {
-											i(117564), -- Fruit Hunter Pet
-										},
-									}),
 								},
 							},
 							{	-- Yaga the Scarred
