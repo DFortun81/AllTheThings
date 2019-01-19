@@ -12,6 +12,7 @@ _.Zones =
 						49695 - immediately after channeling on the drum finishes during "A Tribute For Death"
 						49367 - when returning to Zo'bal Ruins during "We'll Meet Again"
 						52294 - triggers with Krag'wa after accepting "The Last Witch Doctor of Krag'wa"
+						47530,	-- ???? [The Necropolis] (completed after soulbound, but not known)
 						47531 - triggered when turning in "Krag'wa the Terrible"
 						50314 - triggered when turning in "Target of Opportunity"
 					]]--
@@ -701,6 +702,7 @@ _.Zones =
 						["qg"] = 131993,	-- Yash
 						["coord"] = { 66.9, 41.9, 863 },
 						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,
 					},
 					{	-- All Hope is Lost
 						["questID"] = 48857,
@@ -821,6 +823,7 @@ _.Zones =
 						["coord"] = { 39.5, 43.8, 863 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 47250,	-- We'll Meet Again
+						["isBreadcrumb"] = true,
 					},
 					{	-- It Seems You've Made a Friend
 						["questID"] = 49382,
@@ -1028,9 +1031,6 @@ _.Zones =
 					-- Crieve's List
 					{
 						["questID"] = 49484,	-- Offering to Bwonsamdi [The Necropolis]
-					},
-					{
-						["questID"] = 47530,	-- ???? [The Necropolis] (completed after soulbound, but not known)
 					},
 					{
 						["questID"] = 49313,	-- Wun'ju's Trove [Terrace of Sorrows]
