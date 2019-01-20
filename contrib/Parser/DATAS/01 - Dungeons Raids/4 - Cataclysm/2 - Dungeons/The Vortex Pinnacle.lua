@@ -164,7 +164,7 @@ _.Instances =
 								ach(5288),	-- No Static at All
 								i(56366),	-- Lightningflash
 								i(56374),	-- Lunar Halo
-								i(56376),	-- Thundercall
+								un(2, i(56376)),	-- Thundercall
 								i(56369),	-- Billowing Cape
 								i(56371),	-- Shadow of Perfect Bliss
 								i(56368),	-- Gloves of Haze
@@ -192,7 +192,7 @@ _.Instances =
 								i(63040),	-- Reins of the Drake of the North Wind (MOUNT!)
 								i(133371),	-- Thundercleaver Axe
 								i(133240),	-- Axe of the Eclipse
-								un(2, i(133251)),	-- Thundercall
+								i(133251),	-- Thundercall
 								i(133238),	-- Amulet of Tender Breath
 								i(133237),	-- Mantle of Bestilled Winds
 								i(133362),	-- Billowing Skydrape
