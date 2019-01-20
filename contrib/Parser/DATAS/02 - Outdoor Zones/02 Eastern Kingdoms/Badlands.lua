@@ -866,6 +866,12 @@ _.Zones =
 --					n(2754, { 	-- Anathemus	}), 					
 				}),
 				n(-2,   {	-- Vendors
+					n(49918, {	-- Buckslappy <Engineering Supply Specialist>
+						i(18649),	-- Schematic: Blue Firework
+						i(18650),	-- Schematic: EZ-Thro Dynamite II
+						i(18648),	-- Schematic: Green Firework
+						i(18647),	-- Schematic: Red Firework
+					}),
 					n(48060, {	-- "Chef" Overheat <Cooking Supplies>
 						["g"] = {
 							i(21219),	-- Recipe: Sagefish Delight

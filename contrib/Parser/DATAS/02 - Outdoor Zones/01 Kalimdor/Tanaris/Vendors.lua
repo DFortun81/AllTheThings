@@ -400,6 +400,9 @@ _.Zones =
 							i(60509),	-- Vicious Gladiator's Warboots of Cruelty
 						},
 					}),
+					n(8131,	{	-- Blizrik Buckshot <Gunsmith>
+						i(18650),	-- Schematic: EZ-Thro Dynamite II
+					}),
 					n(69322, {	-- Capps Carlin <Cataclysmic Gladiator>
 						["coords"] = {
 							{ 51.51, 28.04, 71 },

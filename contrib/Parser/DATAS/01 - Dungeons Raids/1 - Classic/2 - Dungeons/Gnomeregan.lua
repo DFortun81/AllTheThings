@@ -293,14 +293,24 @@ _.Instances =
 					}),
 					cr( 7800, e(422, {	-- Mekgineer Thermaplugg
 						ach(634),	-- Gnomeregan
-						i( 9459),	-- Thermaplugg's Left Arm
-						i( 9458),	-- Thermaplugg's Central Core
-						i( 9492),	-- Electromagnetic Gigaflux Reactivator
-						i( 9461),	-- Charged Gear
-						i( 4415), 	-- Schematic: Craftsman's Monocle
-						i(11828), 	-- Schematic: Pet Bombling
+						i(9459),	-- Thermaplugg's Left Arm
+						i(9458),	-- Thermaplugg's Central Core
+						i(9492),	-- Electromagnetic Gigaflux Reactivator
+						i(9461),	-- Charged Gear
+						i(4415), 	-- Schematic: Craftsman's Monocle
+						i(6716),	-- Schematic: EZ-Thro Dynamite
 						i(4411), 	-- Schematic: Flame Deflector
 						i(6672),    -- Schematic: Flash Bomb
+						i(7742),	-- Schematic: Gnomish Cloaking Device
+						i(7560),	-- Schematic: Gnomish Universal Remote
+						i(4416),	-- Schematic: Goblin Land Mine
+						i(4417),	-- Schematic: Large Seaforium Charge
+						i(4408),	-- Schematic: Mechanical Squirrel Box
+						i(4412),	-- Schematic: Moonsight Rifle
+						i(11828), 	-- Schematic: Pet Bombling
+						i(4414),	-- Schematic: Portable Bronze Mortar
+						i(4410),	-- Schematic: Shadow Goggles
+						i(4409),	-- Schematic: Small Seaforium Charge
 					})),
 					n(113621, {			-- Endgineer Omegaplugg
 						["description"] = "|cff3399ffSTEP 1:|r|cff66ccff Head to the last boss in Gnomeregan, and kill him.|r\n|cff3399ffSTEP 2:|r|cff66ccff Go to the back of the pillar on the left side of the entrance as you enter the room, and press the small button.|r\n|cff3399ffSTEP 3:|r|cff66ccff Endgineer Omegaplugg will spawn, and his health is based on your level (110: 1.8M, 120: 8.65M).|r\n|cff3399ffSTEP 4:|r|cff66ccff To stop the bombs from spawning, you must disable the conduits in the room by pressing all the large red buttons in an anticlockwise format. (This is the first conduit on the right as you enter the room.)|r\n|cff3399ffSTEP 5:|r|cff66ccff Kill the boss, and all players can loot the toy. Good luck, have fun!",

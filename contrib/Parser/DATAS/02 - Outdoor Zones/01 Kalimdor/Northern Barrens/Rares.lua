@@ -428,6 +428,7 @@ _.Zones =
 							i(9785),	-- Raider's Bracers
 							i(6554),	-- Bard's Gloves
 							un(7, i(1355)), 	-- Buckskin Cape
+							i(6716),	-- Schematic: EZ-Thro Dynamite
 						},
 						["coords"] = {
 							{ 32.4, 53.0 },

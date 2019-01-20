@@ -917,6 +917,9 @@ _.Zones =
 					n(2672, {	-- Cowardly Crosby <Tailoring Supplies>
 						i(10318), 	-- Pattern: Admiral's Hat
 					}),
+					n(2838, {	-- Crazk Sparks <Fireworks Merchant>
+						i(18648),	-- Schematic: Green Firework
+					}),
 					n(2845, {	-- Fargon Mortalak <Superior Armorer>
 						i(12257),	-- Heavy Notched Belt
 					}),

@@ -1370,6 +1370,12 @@ _.Zones =
 						i(4818),	-- Executioner's Sword
 						i(4817),	-- Blessed Claymore
 					})),
+					n(2684, {	-- Rizz Loosebolt <Engineering Supplies>
+						["u"] = 33,
+						["groups"] = {
+							un(7, i(13308)),	-- Schematic: Ice Deflector
+						},
+					}),
 					n(6779, {	-- Smudge Thunderwood <Poison Supplies>
 						["classes"] = {4},	-- Rogue Only
 						["groups"] = {
@@ -1409,6 +1415,9 @@ _.Zones =
 							13216,	-- Gaelden Hammersmith <Stormpike Supply Officer>
 						},
 					})),
+					n(6777, {	-- Zan Shivsproket <Speciality Engineer>
+						i(7742),	-- Schematic: Gnomish Cloaking Device
+					}),
 					n(3537, {	-- Zixil <Merchant Supreme>
 						i(6377),	-- Formula: Enchant Boots - Minor Agility
 						i(7362), 	-- Pattern: Earthen Leather Shoulders

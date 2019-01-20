@@ -7,6 +7,10 @@ _.Zones =
 		m(10, {	-- Northern Barrens
 			["groups"] = {
 				n(-2,  {	-- Vendors
+					n(3495,	{	-- Gagsprocket <Engineering Supplies>
+						i(18648),	-- Schematic: Green Firework
+						i(14639),	-- Schematic: Minor Recombobulator
+					}),
 					n(3493, {	-- Grazlix <Armorer & Shieldcrafter>
 						["groups"] = {
 							i(4797),	-- Fiery Cloak

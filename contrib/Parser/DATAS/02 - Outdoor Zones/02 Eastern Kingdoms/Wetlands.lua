@@ -642,6 +642,9 @@ _.Zones =
 						i(4817),	-- Blessed Claymore
 						i(4818),	-- Executioner's Sword
 					})),
+					na(41435, {	-- Fradd Swiftgear <Engineering Supplies>
+						i(14639),	-- Schematic: Minor Recombobulator
+					}),
 					a(n(1454, {	-- Jennabink Powerseam <Tailoring Supplies & Specialty Goods>
 						i(6275),	-- Pattern: Greater Adept's Robe
 						i(5772),	-- Pattern: Red Woolen Bag

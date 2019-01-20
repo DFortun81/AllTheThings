@@ -248,6 +248,16 @@ _.WorldDrops =
 						["itemID"] = 12691,	-- Plans: Wildthorn Mail
 					},
 				}),
+				prof(202, {	-- Engineering
+					i(6716),	-- Schematic: EZ-Thro Dynamite
+					i(4416),	-- Schematic: Goblin Land Mine
+					i(4417),	-- Schematic: Large Seaforium Charge
+					i(4408),	-- Schematic: Mechanical Squirrel Box
+					i(4412),	-- Schematic: Moonsight Rifle
+					i(4414),	-- Schematic: Portable Bronze Mortar
+					i(4410),	-- Schematic: Shadow Goggles
+					i(4409),	-- Schematic: Small Seaforium Charge
+				}),
 				n(-186, { 	-- Jewelcrafting
 					i(20976),	-- Design: Citrine Pendant of Golden Healing
 					i(21953),	-- Design: Emerald Owl

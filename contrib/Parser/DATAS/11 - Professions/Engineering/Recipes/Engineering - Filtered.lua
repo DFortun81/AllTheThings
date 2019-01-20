@@ -464,7 +464,8 @@ profession(202, {	-- Engineering
 						},
 						{
 							["name"] = "Mobile Alarm",
-							["recipeID"] = 12900
+							["recipeID"] = 12900,
+							["u"] = 1,
 						},
 						{
 							["name"] = "Ornate Spyglass",

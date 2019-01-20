@@ -3308,6 +3308,10 @@ _.Zones =
 							}),
 						},
 					},
+					n(133127, {	-- Thaluriel <Engineering Supplies>
+						i(18647),	-- Schematic: Red Firework
+						i(22729),	-- Schematic: Steam Tonk Controller
+					}),
 					n(3315, {	-- Tor'phan <Cloth & Leather Armor Merchant>
 						i(12255),	-- Pale Leggings
 					}),
@@ -3361,6 +3365,10 @@ _.Zones =
 						}),			
 						i(87800),	-- Red Dragon Turtle
 						un(1, i(91016)),	-- Reins of the Great Red Dragon Turtle (Never Implemented?)
+					}),
+					n(45546, {	-- Vizna Bangwrench <Engineering Supplies>
+						i(18647),	-- Schematic: Red Firework
+						i(22729),	-- Schematic: Steam Tonk Controller
 					}),
 					n(8404, {	-- Xan'tish <Snake Vendor>
 						i(10360),	-- Black Kingsnake

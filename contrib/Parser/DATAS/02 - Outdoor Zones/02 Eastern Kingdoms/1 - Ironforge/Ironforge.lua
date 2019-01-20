@@ -312,6 +312,11 @@ _.Zones =
 						i(21219),	-- Recipe: Sagefish Delight
 						i(21099),	-- Recipe: Smoked Sagefish
 					}),
+					n(5175, {	-- Gearcutter Cogspinner <Engineering Supplies>
+						i(18649),	-- Schematic: Blue Firework
+						i(7560),	-- Schematic: Gnomish Universal Remote
+						i(22729),	-- Schematic: Steam Tonk Controller
+					}),
 					n(5161, {	-- Grimnur Stonebrand <Fishing Trainer>
 						ach(5847, {	-- Fish or Cut Bait: Ironforge
 							i(67414, {	-- Bag of Shiny Things
