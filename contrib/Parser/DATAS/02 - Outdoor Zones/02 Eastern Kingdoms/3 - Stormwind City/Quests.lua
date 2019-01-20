@@ -530,9 +530,17 @@ _.Zones =
 								["classes"] = { 5 },	-- Priest
 		--						["sourceQuests"] = {  },	-- 
 							}),
-		--[[
-							qg(, qa(28238)),	-- Twilight Shores
-							qg(, qa(28832)),	-- Twilight Shores
+							qa(28238, {	-- Twilight Shores
+								["qg"] = 107574,	-- Anduin Wrynn
+								["sourceQuests"] = { 28716 },	-- Hero's Call: Twilight Highlands!
+								["coord"] = { 85.6, 31.8, 84 },
+							}),
+							qa(28832, {	-- Twilight Shores
+								["qg"] = 44806,	-- Fargo Flintlocke
+								["sourceQuests"] = { 28238 },	-- Twilight Shores
+								["coord"] = { 26.2, 47.2, 84 },
+							}),
+--[[
 							qg(, qa(47222)),	-- Two If By Sea
 							qg(, qa(24804)),	-- Uncommon Scents
 							qg(, q(37494)),	-- Under Cover of Darkness
