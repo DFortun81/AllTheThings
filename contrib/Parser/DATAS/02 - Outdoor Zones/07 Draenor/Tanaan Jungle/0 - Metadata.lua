@@ -7,8 +7,8 @@ _.Zones =
 		["mapID"] = 572,	-- Draenor
 		["g"] = {
 			{	-- Tanaan Jungle
+				["mapID"] = 534,	-- Tanaan Jungle
 				["maps"] = {
-					534,	-- Tanaan Jungle
 					578,	-- Umbral Halls
 				},
 				["lvl"] = 100,
