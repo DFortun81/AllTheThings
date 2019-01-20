@@ -1227,6 +1227,7 @@ _.Zones =
 						dr(78.0, i(9925)),	-- Tracker's Wristguards
 						dr(01.9, i(9883)),	-- Sorcerer Pants
 						dr(01.2, i(9887)),	-- Huntsman's Armor
+						i(10606),	-- Schematic: Parachute Cloak
 					}),
 					n(0, { 		-- Zone Drop
 						["groups"] = {

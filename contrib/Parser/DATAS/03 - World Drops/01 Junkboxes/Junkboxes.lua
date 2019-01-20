@@ -38,40 +38,9 @@ _.WorldDrops =
 				i(5756), -- Silverblade
 				dr(0.007, i(11967)), -- Zircon Band
 			}),
-			i(16884, { 	-- Sturdy Junkbox
-				dr(0.04, i(11974)), -- Aquamarine Ring
-				dr(0.01, i(12043)), -- Desert Choker
-				dr(0.04, i(21947)), -- Design: Gem Studded Band
-				dr(0.04, i(21945)), -- Design: The Aquamarine Ward
-				dr(0.01, i(21944)), -- Design: Truesilver Boar
-				dr(0.04, i(7552)), -- Falcon's Hook
-				dr(0.02, i(12011)), -- Forest Loop
-				dr(0.05, i(11225)), -- Formula: Enchant Bracer - Greater Stamina
-				dr(0.07, i(11204)), -- Formula: Enchant Bracer - Greater Versatility
-				dr(0.02, i(2164)), -- Gut Ripper
-				dr(0.02, i(11973)), -- Hematite Link
-				dr(0.01, i(11987)), -- Iridium Circle
-				dr(0.01, i(11999)), -- Lodestone  Hoop
-				dr(0.01, i(12031)), -- Lodestone Necklace
-				dr(0.05, i(12042)), -- Marsh Chain
-				dr(0.02, i(12012)), -- Marsh Ring
-				dr(0.2, i(12001)), -- Onyx Ring
-				dr(0.09, i(8387)), -- Pattern: Big Voodoo Mask
-				dr(0.02, i(8389)), -- Pattern: Big Voodoo Pants
-				dr(0.05, i(8386)), -- Pattern: Big Voodoo Robe
-				dr(0.02, i(10320)), -- Pattern: Red Mageweave Headband
-				dr(0.01, i(8385)), -- Pattern: Turtle Scale Gloves
-				dr(0.01, i(10301)), -- Pattern: White Bandit Mask
-				dr(0.01, i(7990)), -- Plans: Heavy Mithril Helm
-				dr(0.07, i(8029)), -- Plans: Wicked Mithril Blade
-				dr(0.01, i(9298)), -- Recipe: Elixir of Giants
-				dr(0.04, i(9295)), -- Recipe: Invisibility Potion
-				dr(0.01, i(3395)), -- Recipe: Limited Invulnerability Potion
-				dr(0.02, i(10603)), -- Schematic: Catseye Ultra Goggles
-				dr(0.02, i(10606)), -- Schematic: Parachute Cloak
-				dr(0.02, i(11988)), -- Tellurium Band
-				dr(0.02, i(11975)), -- Topaz  Ring
-				dr(0.05, i(12024)), -- Vanadium Talisman
+			i(63349, { 	-- Flame-Scarred Junkbox
+				i(68163),	-- The Twilight Blade
+				i(68161),	-- Krol Decapitator
 			}),
 			i(16885, { 	-- Heavy Junkbox 
 				i(1728),			-- Teebu's Blazing Longsword [Discord Confirmation - Luce]
@@ -113,8 +82,106 @@ _.WorldDrops =
 				dr(0.04, i(12015)), -- Swamp Ring      
 				dr(0.02, i(11989)), -- Vanadium Loop      
 			}),
+			i(16884, { 	-- Sturdy Junkbox
+				dr(0.04, i(11974)), -- Aquamarine Ring
+				dr(0.01, i(12043)), -- Desert Choker
+				dr(0.04, i(21947)), -- Design: Gem Studded Band
+				dr(0.04, i(21945)), -- Design: The Aquamarine Ward
+				dr(0.01, i(21944)), -- Design: Truesilver Boar
+				dr(0.04, i(7552)), -- Falcon's Hook
+				dr(0.02, i(12011)), -- Forest Loop
+				dr(0.05, i(11225)), -- Formula: Enchant Bracer - Greater Stamina
+				dr(0.07, i(11204)), -- Formula: Enchant Bracer - Greater Versatility
+				dr(0.02, i(2164)), -- Gut Ripper
+				dr(0.02, i(11973)), -- Hematite Link
+				dr(0.01, i(11987)), -- Iridium Circle
+				dr(0.01, i(11999)), -- Lodestone  Hoop
+				dr(0.01, i(12031)), -- Lodestone Necklace
+				dr(0.05, i(12042)), -- Marsh Chain
+				dr(0.02, i(12012)), -- Marsh Ring
+				dr(0.2, i(12001)), -- Onyx Ring
+				dr(0.09, i(8387)), -- Pattern: Big Voodoo Mask
+				dr(0.02, i(8389)), -- Pattern: Big Voodoo Pants
+				dr(0.05, i(8386)), -- Pattern: Big Voodoo Robe
+				dr(0.02, i(10320)), -- Pattern: Red Mageweave Headband
+				dr(0.01, i(8385)), -- Pattern: Turtle Scale Gloves
+				dr(0.01, i(10301)), -- Pattern: White Bandit Mask
+				dr(0.01, i(7990)), -- Plans: Heavy Mithril Helm
+				dr(0.07, i(8029)), -- Plans: Wicked Mithril Blade
+				dr(0.01, i(9298)), -- Recipe: Elixir of Giants
+				dr(0.04, i(9295)), -- Recipe: Invisibility Potion
+				dr(0.01, i(3395)), -- Recipe: Limited Invulnerability Potion
+				dr(0.02, i(10603)), -- Schematic: Catseye Ultra Goggles
+				dr(0.02, i(10606)), -- Schematic: Parachute Cloak
+				dr(0.02, i(11988)), -- Tellurium Band
+				dr(0.02, i(11975)), -- Topaz  Ring
+				dr(0.05, i(12024)), -- Vanadium Talisman
+			}),
+			i(4634,	{	-- Iron Lockbox
+				i(13063),	-- Starfaller
+				i(11164),	-- Formula: Enchant Weapon - Lesser Beastslayer
+				i(7449),	-- Pattern: Dusky Leather Leggings
+				i(5774),	-- Pattern: Green Silk Pack
+				i(7450),	-- Pattern: Green Whelp Armor
+				i(4299),	-- Pattern: Guardian Armor
+				i(3867),	-- Plans: Golden Iron Destroyer
+				i(3872),	-- Plans: Golden Scale Leggings
+				i(3611),	-- Plans: Green Iron Boots
+				i(3870),	-- Plans: Green Iron Shoulders
+				i(6045),	-- Plans: Iron Counterweight
+				i(3830),	-- Recipe: Elixir of Fortitude
+				i(10601),	-- Schematic: Bright-Eye Goggles
+				i(4416),	-- Schematic: Goblin Land Mine
+				i(4414),	-- Schematic: Portable Bronze Mortar
+			}),
+			i(43575, { 	-- Reinforced Junkbox
+				i(43613),	-- The Dusk Blade
+				i(43611),	-- Krol Cleaver
+			}),
+			i(4638, {	-- Reinforced Steel Lockbox
+				
+			}),
+			i(4637, {	-- Steel Lockbox
+				i(11204),	-- Formula: Enchant Bracer - Greater Versatility
+				i(11202),	-- Formula: Enchant Shield - Stamina
+				i(8387),	-- Pattern: Big Voodoo Mask
+				i(8386),	-- Pattern: Big Voodoo Robe
+				i(10312),	-- Pattern: Red Mageweave Gloves
+				i(10300),	-- Pattern: Red Mageweave Vest
+				i(8385),	-- Pattern: Turtle Scale Gloves
+				i(10301),	-- Pattern: White Bandit Mask
+				i(7992),	-- Plans: Blue Glittering Axe
+				i(7975),	-- Plans: Heavy Mithril Pants
+				i(7976),	-- Plans: Mithril Shield Spike
+				i(3874),	-- Plans: Polished Steel Boots
+				i(8029),	-- Plans: Wicked Mithril Blade
+				i(9295),	-- Recipe: Invisibility Potion
+				i(10603),	-- Schematic: Catseye Ultra Goggles
+				i(10606),	-- Schematic: Parachute Cloak
+			}),
+			i(4636, {	-- Strong Iron Lockbox
+				i(11167),	-- Formula: Enchant Boots - Lesser Versatility
+				i(11165),	-- Formula: Enchant Weapon - Lesser Elemental Slayer
+				i(7085),	-- Pattern: Azure Shoulders
+				i(7086),	-- Pattern: Earthen Silk Belt
+				i(5974),	-- Pattern: Guardian Cloak
+				i(4300),	-- Pattern: Guardian Leather Bracers
+				i(10300),	-- Pattern: Red Mageweave Vest
+				i(4353),	-- Pattern: Spider Belt
+				i(8385),	-- Pattern: Turtle Scale Gloves
+				i(10301),	-- Pattern: White Bandit Mask
+				i(3874),	-- Plans: Polished Steel Boots
+				i(3869),	-- Plans: Shadow Crescent Axe
+				i(3830),	-- Recipe: Elixir of Fortitude
+				i(3831),	-- Recipe: Major Troll's Blood Elixir
+				i(10601),	-- Schematic: Bright-Eye Goggles
+				i(4416),	-- Schematic: Goblin Land Mine
+				i(4417),	-- Schematic: Large Seaforium Charge
+				i(10606),	-- Schematic: Parachute Cloak
+				i(4414),	-- Schematic: Portable Bronze Mortar
+			}),
 			i(29569, { 	-- Strong Junkbox
-				i(4354), -- Pattern: Rich Purple Silk Shirt [Discord Confirmation - Luce]
+				i(4354), 	-- Pattern: Rich Purple Silk Shirt [Discord Confirmation - Luce]
 				dr(0.2, i(12002)), -- Formula: Enchant Bracer Superior Stamina   
 				dr(0.3, i(15746)), -- Plans: Radiant Leggings     
 				dr(0.01, i(2163)), -- The Night Blade 
@@ -130,14 +197,6 @@ _.WorldDrops =
 				dr(0.06, i(12689)), -- Ring Of The Heavens    
 				dr(0.01, i(12695)), -- Swamp Pendant      
 				dr(0.01, i(12683)), -- Vermilion Necklace      
-			}),
-			i(43575, { 	-- Reinforced Junkbox
-				i(43613),	-- The Dusk Blade
-				i(43611),	-- Krol Cleaver
-			}),
-			i(63349, { 	-- Flame-Scarred Junkbox
-				i(68163),	-- The Twilight Blade
-				i(68161),	-- Krol Decapitator
 			}),
 			i(88165, { 	-- Vine-Cracked Junkbox
 				i(88149),	-- The Gloaming Blade

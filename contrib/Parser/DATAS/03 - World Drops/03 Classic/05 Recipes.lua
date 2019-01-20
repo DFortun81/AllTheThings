@@ -81,9 +81,6 @@ _.WorldDrops =
 					{	-- Plans: Golden Scale Shoulders
 						["itemID"] = 3871,	-- Plans: Golden Scale Shoulders
 					},
-					{	-- Plans: Searing Golden Blade
-						["itemID"] = 12261,	-- Plans: Searing Golden Blade
-					},
 					{	-- Plans: Green Iron Boots
 						["itemID"] = 3611,	-- Plans: Green Iron Boots
 					},
@@ -189,6 +186,9 @@ _.WorldDrops =
 					{	-- Plans: Sageblade
 						["itemID"] = 22389,	-- Plans: Sageblade
 					},
+					{	-- Plans: Searing Golden Blade
+						["itemID"] = 12261,	-- Plans: Searing Golden Blade
+					},
 					{	-- Plans: Shadow Crescent Axe
 						["itemID"] = 3869,	-- Plans: Shadow Crescent Axe
 					},
@@ -248,12 +248,22 @@ _.WorldDrops =
 						["itemID"] = 12691,	-- Plans: Wildthorn Mail
 					},
 				}),
+				prof(333, {	-- Enchanting
+					i(11167),	-- Formula: Enchant Boots - Lesser Versatility
+					i(11204),	-- Formula: Enchant Bracer - Greater Versatility
+					i(11202),	-- Formula: Enchant Shield - Stamina
+					i(11164),	-- Formula: Enchant Weapon - Lesser Beastslayer
+					i(11165),	-- Formula: Enchant Weapon - Lesser Elemental Slayer
+				}),
 				prof(202, {	-- Engineering
+					i(10601),	-- Schematic: Bright-Eye Goggles
+					i(10603),	-- Schematic: Catseye Ultra Goggles
 					i(6716),	-- Schematic: EZ-Thro Dynamite
 					i(4416),	-- Schematic: Goblin Land Mine
 					i(4417),	-- Schematic: Large Seaforium Charge
 					i(4408),	-- Schematic: Mechanical Squirrel Box
 					i(4412),	-- Schematic: Moonsight Rifle
+					i(10606),	-- Schematic: Parachute Cloak
 					i(4414),	-- Schematic: Portable Bronze Mortar
 					i(4410),	-- Schematic: Shadow Goggles
 					i(4409),	-- Schematic: Small Seaforium Charge
@@ -267,6 +277,15 @@ _.WorldDrops =
 					i(21949),	-- Design: Ruby Serpent
 					i(21945),	-- Design: The Aquamarine Ward
 					i(21944),	-- Design: Truesilver Boar
+				}),
+				prof(165, {	-- Leatherworking
+					i(8387),	-- Pattern: Big Voodoo Mask
+					i(8386),	-- Pattern: Big Voodoo Robe
+					i(7449),	-- Pattern: Dusky Leather Leggings
+					i(7450),	-- Pattern: Green Whelp Armor
+					i(4299),	-- Pattern: Guardian Armor
+					i(4300),	-- Pattern: Guardian Leather Bracers
+					i(8385),	-- Pattern: Turtle Scale Gloves
 				}),
 				n(-190, {	-- Tailoring
 					i(7085),	-- Pattern: Azure Shoulders
