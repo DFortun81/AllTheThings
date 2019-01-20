@@ -249,9 +249,13 @@ _.WorldDrops =
 					},
 				}),
 				prof(333, {	-- Enchanting
+					i(16215),	-- Formula: Enchant Boots - Greater Stamina
 					i(11167),	-- Formula: Enchant Boots - Lesser Versatility
+					i(11225),	-- Formula: Enchant Bracer - Greater Stamina
 					i(11204),	-- Formula: Enchant Bracer - Greater Versatility
+					i(16218),	-- Formula: Enchant Bracer - Superior Versatility
 					i(11202),	-- Formula: Enchant Shield - Stamina
+					i(11208),	-- Formula: Enchant Weapon - Demonslaying
 					i(11164),	-- Formula: Enchant Weapon - Lesser Beastslayer
 					i(11165),	-- Formula: Enchant Weapon - Lesser Elemental Slayer
 				}),
@@ -279,7 +283,9 @@ _.WorldDrops =
 					i(21944),	-- Design: Truesilver Boar
 				}),
 				prof(165, {	-- Leatherworking
+					i(8390),	-- Pattern: Big Voodoo Cloak
 					i(8387),	-- Pattern: Big Voodoo Mask
+					i(8389),	-- Pattern: Big Voodoo Pants
 					i(8386),	-- Pattern: Big Voodoo Robe
 					i(7449),	-- Pattern: Dusky Leather Leggings
 					i(7450),	-- Pattern: Green Whelp Armor

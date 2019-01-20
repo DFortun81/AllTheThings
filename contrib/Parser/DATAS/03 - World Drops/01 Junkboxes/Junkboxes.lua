@@ -139,7 +139,25 @@ _.WorldDrops =
 				i(43611),	-- Krol Cleaver
 			}),
 			i(4638, {	-- Reinforced Steel Lockbox
-				
+				i(21947),	-- Design: Gem Studded Band
+				i(21945),	-- Design: The Aquamarine Ward
+				i(16215),	-- Formula: Enchant Boots - Greater Stamina
+				i(11225),	-- Formula: Enchant Bracer - Greater Stamina
+				i(16218),	-- Formula: Enchant Bracer - Superior Versatility
+				i(11208),	-- Formula: Enchant Weapon - Demonslaying
+				i(8390),	-- Pattern: Big Voodoo Cloak
+				i(8387),	-- Pattern: Big Voodoo Mask
+				i(8389),	-- Pattern: Big Voodoo Pants
+				i(14467),	-- Pattern: Frostweave Robe
+				i(10320),	-- Pattern: Red Mageweave Headband
+				i(10302),	-- Pattern: Red Mageweave Pants
+				i(10315),	-- Pattern: Red Mageweave Shoulders
+				i(7993),	-- Plans: Dazzling Mithril Rapier
+				i(7990),	-- Plans: Heavy Mithril Helm
+				i(7989),	-- Plans: Mithril Spurs
+				i(12683),	-- Plans: Thorium Belt
+				i(9295),	-- Recipe: Invisibility Potion
+				i(3395),	-- Recipe: Limited Invulnerability Potion
 			}),
 			i(4637, {	-- Steel Lockbox
 				i(11204),	-- Formula: Enchant Bracer - Greater Versatility
