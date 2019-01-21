@@ -644,7 +644,7 @@ _.PVP =
 		}),
 		i(135545, {	-- Savage Crate of Battlefield Goods 90-99
 			["groups"] = {
-				i(134787),	-- Entrenched Cowl
+				i(134787),	-- Entrenched Cowl*
 				i(134786),	-- Entrenched Handwraps
 				i(134784),	-- Entrenched Raiment
 				i(134785),	-- Entrenched Treads
@@ -671,6 +671,7 @@ _.PVP =
 				i(134803),	-- Seasoned Redoubt
 				i(134790),	-- Seasoned Staff
 				i(134776),	-- Seasoned Decapitator
+				i(134788),	-- Seasoned Distinction*
 			},
 			["description"] = "|cff66ccffRewarded for winning a random battleground in the level 90-99 range.|r",
 			["lvl"] = 90,
