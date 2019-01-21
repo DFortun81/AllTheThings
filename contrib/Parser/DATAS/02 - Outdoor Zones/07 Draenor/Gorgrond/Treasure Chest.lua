@@ -7,10 +7,10 @@ _.Zones =
 		["mapID"] = 572,	-- Draenor
 		["g"] = {
 			{	-- Gorgrond
-				["mapID"] = 543,	-- Gorgrond
+				["mapID"] = 543,
 				["groups"] = {
 					{	-- Treasure Chest
-						["npcID"] = -212,	-- Treasure Chest
+						["npcID"] = -212,
 						["g"] = {
 							n(-357, {	-- Sparring Arena
 								{	-- Aged Stone Container

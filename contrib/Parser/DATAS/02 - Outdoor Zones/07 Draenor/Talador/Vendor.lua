@@ -4,10 +4,10 @@
 _.Zones =
 {
 	{	-- Draenor
-		["mapID"] = 572,	-- Draenor
+		["mapID"] = 572,
 		["g"] = {
 			{	-- Talador
-				["mapID"] = 535,	-- Talador
+				["mapID"] = 535,
 				["g"] = {
 					n(-2, { 	-- Vendors
 						n(84212, {	-- Kazbala

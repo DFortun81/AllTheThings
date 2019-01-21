@@ -383,14 +383,6 @@ _.Zones =
 									i(113570), -- Ancient's Bloom Toy
 								},
 							},
-							{	-- Zomstrok
-								["itemID"] = 113554,
-								["description"] = "Can be found on the islands southwest of Socrethar's Rise.",
-								["crs"] = {
-									82261,	-- Darktide Boneshell
-									82262,	-- Darktide Husk
-								},
-							},
 						},
 					},
 				},
