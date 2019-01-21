@@ -157,6 +157,9 @@ _.WorldDrops =
 					i(87695),	-- Treads of Edward the Odd
 				}),
 				filter(52, {	-- Finger
+					{	-- Anaxo's Multi-Layered Seal
+						["itemID"] = 87437,	-- Anaxo's Multi-Layered Seal
+					},
 					{	-- Bejeweled Ring
 						["itemID"] = 82228,	-- Bejeweled Ring
 					},

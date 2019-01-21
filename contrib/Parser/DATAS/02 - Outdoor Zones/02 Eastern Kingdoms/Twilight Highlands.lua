@@ -124,6 +124,13 @@ _.Zones =
 						crit(7),		-- Send Them Packing
 					})),
 ]]--				
+					qa(28001, {	-- A Coward's Due
+						["qg"] = 46804,	-- Keegan Firebeard
+						["coord"] = { 60.1, 57.8, 241 },
+						["sourceQuests"] = { 27817 },	-- Dropping the Hammer
+					}),
+
+
 					qa(28598, {	-- Aiming High
 						["g"] = {
 							i(68014),	-- Flintlocke's Chuckshooter
@@ -145,6 +152,47 @@ _.Zones =
 						["sourceQuests"] = { 27516 },	-- Wings Over Highbank
 					}),
 					
+
+					qa(27647, {	-- Anything But Water
+						["g"] = {
+							i(63849),	-- Aledrinker Shoulderpads
+							i(63848),	-- Brewtaster Bracers
+							i(63847),	-- Keg-Sized Chestplate
+						},
+						["qg"] = 46175,	-- Eoin Dunwald
+						["coord"] = { 52.8, 74.3, 241 },
+						["sourceQuests"] = { 27644 },	-- Eoin Dunwald
+					}),
+					
+					
+					qa(27814, {	-- Anything We Can Get
+						["qg"] = 46806,	-- Brom Forgehammer
+						["coord"] = { 62.6, 48.6, 241 },
+						["sourceQuests"] = { 27809 },	-- Firebeard Bellows
+					}),
+
+					
+					qa(27649, {	-- A Steady Supply
+						["g"] = {
+							i(63837),	-- Bubble-Brew Hood
+							i(63836),	-- Barrel-Belly Gauntlets
+							i(63835),	-- Dunwald's Finest Bindings
+						},
+						["qg"] = 46583,	-- Eoin Dunwald
+						["coord"] = { 52.4, 70.3, 241 },
+						["sourceQuests"] = { 27647 },	-- Anything But Water
+					}),
+					
+
+					qa(28241, {	-- A Vision of Twilight
+						["qg"] = 48010,	-- Low Shaman Blundy
+						["coord"] = { 49.7, 29.1, 241 },
+						["sourceQuests"] = {
+							27752,	-- Fight Like a Wildhammer
+							27753,	-- Never Leave a Dinner Behind
+						},
+					}),
+
 					
 					qa(27514, {	-- Bird Down! Bird Down!
 						["qg"] = 45169,	-- Lieutenant Emry
@@ -163,6 +211,13 @@ _.Zones =
 					}),
 
 
+					qa(27645, {	-- Cayden Dunwald
+						["qg"] = 46177,	-- Keely Dunwald
+						["coord"] = { 45.9, 65.4, 241 },
+						["sourceQuests"] = { 27640 },	-- Dunwalds Don't Die
+					}),
+					
+					
 					qa(27807, {	-- Clan Mullan
 						["qg"] = 46805,	-- Iain Firebeard
 						["coord"] = { 57.4, 58.1, 241 },
@@ -170,6 +225,108 @@ _.Zones =
 					}),
 					
 
+					qa(27813, {	-- Death Worthy of a Dragonmaw
+						["qg"] = 46850,	-- Mackay Firebeard
+						["coord"] = { 62.5, 48.2, 241 },
+						["sourceQuests"] = { 27809 },	-- Firebeard Bellows
+					}),
+					
+
+					qa(27651, {	-- Doing It Like a Dunwald
+						["g"] = {
+							i(63833),	-- Dunwald Winged Helm
+							i(63832),	-- Gryphon-Grip Leggings
+							i(63831),	-- Flynn's Favorite Chestplate
+							i(63834),	-- Skyflight Beacon
+						},
+						["qg"] = 46177,	-- Keely Dunwald
+						["coord"] = { 45.9, 65.4, 241 },
+						["sourceQuests"] = { 27650 },	-- Home Again
+					}),
+					
+					
+					qa(27643, {	-- Donnelly Dunwald
+						["qg"] = 46177,	-- Keely Dunwald
+						["coord"] = { 45.9, 65.4, 241 },
+						["sourceQuests"] = { 27640 },	-- Dunwalds Don't Die
+					}),
+
+
+					qa(27754, {	-- Dragonmaw Takedown
+						["g"] = {
+							i(63826),	-- Trophy-Taker Bracers
+							i(63825),	-- Belt of Bloody Dreams
+							i(63824),	-- Orc-Shock Spaulders
+						},
+						["qg"] = 46591,	-- Colin Thundermar
+						["coord"] = { 49.0, 29.7, 241 },
+						-- ["sourceQuests"] = {  },	-- 
+						-- Unsure if this has prereqs.
+					}),
+
+					
+					qa(27817, {	-- Dropping the Hammer
+						["g"] = {
+							i(63861),	-- Keegan's Windswept Chestguard
+							i(63860),	-- Hammerhead Helm
+							i(63859),	-- Stormhammer Gauntlets
+						},
+						["qg"] = 46804,	-- Keegan Firebeard
+						["coord"] = { 60.1, 57.8, 241 },
+						["sourceQuests"] = { 27816 },	-- Personal Request
+					}),
+					
+
+					qa(27640, {	-- Dunwalds Don't Die
+						["qg"] = 46804,	-- Keegan Firebeard
+						["coord"] = { 60.1, 57.8, 241 },
+						["sourceQuests"] = { 27817 },	-- Dropping the Hammer
+					}),
+
+
+					qa(27644, {	-- Eoin Dunwald
+						["qg"] = 46177,	-- Keely Dunwald
+						["coord"] = { 45.9, 65.4, 241 },
+						["sourceQuests"] = { 27640 },	-- Dunwalds Don't Die
+					}),
+
+
+					qa(28244, {	-- Eye Spy (awarded "The Eye of Twilight" criteria)
+						["g"] = {
+							i(63797),	-- Eye of Despair
+							i(63796),	-- Dark-Eye Ring
+						},
+						["qg"] = 48175,	-- Low Shaman Blundy
+						["coord"] = { 49.7, 29.1, 241 },
+						["sourceQuests"] = { 28243 },	-- The Eyes Have It
+					}),
+
+					
+					qa(27752, {	-- Fight Like a Wildhammer
+						["g"] = {
+							i(63819),	-- Keg-Stealer Bracers
+							i(63818),	-- Blundy's Breastplate
+							i(63820),	-- Barrel Opener
+						},
+						["qg"] = 48010,	-- Low Shaman Blundy
+						["coord"] = { 49.7, 29.1, 241 },
+						-- ["sourceQuests"] = {  },	-- 
+						-- Unsure if this has prereqs.
+					}),
+					
+					
+					qa(27646, {	-- Finding Beak
+						["g"] = {
+							i(63855),	-- Beak's Torn Feedbag
+							i(63854),	-- Friendfinder Treads
+							i(63853),	-- Gryphon-Seeker Waistplate
+						},
+						["qg"] = 46176,	-- Donnelly Dunwald
+						["coord"] = { 46.5, 59.1, 241 },
+						["sourceQuests"] = { 27643 },	-- Donnelly Dunwald
+					}),
+					
+					
 					qa(27809, {	-- Firebeard Bellows
 						["qg"] = 46805,	-- Iain Firebeard
 						["coord"] = { 57.4, 58.1, 241 },
@@ -184,6 +341,13 @@ _.Zones =
 					}),
 					
 
+					qa(27650, {	-- Home Again
+						["qg"] = 27650,	-- Donnelly Dunwald
+						["coord"] = { 46.2, 58.7, 241 },
+						["sourceQuests"] = { 27646 },	-- Finding Beak
+					}),
+					
+					
 					qa(27806, {	-- Honorable Bearing
 						["qg"] = 46804,	-- Keegan Firebeard
 						["coord"] = { 60.1, 57.9, 241 },
@@ -191,6 +355,14 @@ _.Zones =
 							27804,	-- The Only Homes We Have
 							27803,	-- Welcome Relief
 						},
+					}),
+
+
+					qa(28212, {	-- Hot Stuff
+						["qg"] = 48014,	-- Nivvet Channelock
+						["coord"] = { 49.1, 29.3, 241 },
+						["sourceQuests"] = { 27753 },	-- Never Leave a Dinner Behind
+						-- May have additional SQs.
 					}),
 
 					
@@ -211,6 +383,37 @@ _.Zones =
 						["sourceQuests"] = { 27338 },	-- Our Boys on the Shore
 					}),
 					
+
+					qa(28281, {	-- Last Stand at Thundermar
+						["qg"] = 48173,	-- Colin Thundermar
+						["coord"] = { 49.0, 29.7, 241 },
+						["sourceQuests"] = { 28280 },	-- Tear Them From the Sky
+					}),
+					
+					
+					qa(28216, {	-- Magmalord Falthazar
+						["g"] = {
+							i(63814),	-- Corruption Resistant Gloves
+							i(63813),	-- Flameproof Treads
+							i(63812),	-- Lepglates of Cooled Magma
+						},
+						["qg"] = 46591,	-- Colin Thundermar
+						["coord"] = { 49.0, 29.7, 241 },
+						["sourceQuests"] = {
+							27754,	-- Dragonmaw Takedown
+							27753,	-- Never Leave a Dinner Behind (didn't show up until I turned this in)
+						},
+					}),
+					
+					
+					qa(28369, {	-- My Sister, Fanny
+						["qg"] = 46591,	-- Colin Thundermar
+						["coord"] = { 49.0, 29.7, 241 },
+						-- ["sourceQuests"] = {  },
+						-- Unsure if this has prereqs.
+						["isBreadcrumb"] = true,	-- for "Never Leave a Dinner Behind"
+					}),
+
 					
 					qa(27178, {	-- Naga Reinforcements
 						["g"] = {
@@ -223,6 +426,39 @@ _.Zones =
 						["sourceQuests"] = { 28599 },	-- Kurdran's Waitin'
 					}),
 					
+
+					qa(28282, {	-- Narkrall, The Drake-Tamer
+						["g"] = {
+							i(63807),	-- Narkrall's Leggings
+							i(63806),	-- Ale Soaked Grips
+							i(63805),	-- Furybound Waistplate
+							i(63808),	-- Staff of Draconic Pacification
+							i(63804),	-- Dragonscorn Mace
+						},
+						["qg"] = 48173,	-- Colin Thundermar
+						["coord"] = { 49.0, 29.7, 241 },
+						["sourceQuests"] = { 28281 },	-- Last Stand at Thundermar
+					}),
+					
+					
+					qa(27753, {	-- Never Leave a Dinner Behind
+						["qg"] = 48013,	-- Fanny Thundermar
+						["coord"] = { 49.7, 29.2, 241 },
+						["sourceQuests"] = { 28369 },	-- My Sister, Fanny
+					}),
+					
+					
+					qa(27648, {	-- Once More Into The Fire
+						["g"] = {
+							i(63843),	-- Blood-Soaked Ale Mug
+							i(63842),	-- World-Queller Focus
+							i(63841),	-- Tank-Commander Insignia
+						},
+						["qg"] = 46174,	-- Cayden Dunwald
+						["coord"] = { 45.7, 71.7, 241 },
+						["sourceQuests"] = { 27645 },	-- Cayden Dunwald
+					}),
+
 					
 					qa(27338, {	-- Our Boys on the Shore
 						["qg"] = 45167,	-- Kurdran Wildhammer
@@ -231,6 +467,21 @@ _.Zones =
 					}),
 
 
+					qa(27816, {	-- Personal Request
+						["qg"] = 46805,	-- Iain Firebeard
+						["coord"] = { 57.4, 58.1, 241 },
+						["sourceQuests"] = { 27815 },	-- Somethin' For the Boys
+					}),
+					
+
+					qa(28215, {	-- Potential Energy
+						["qg"] = 48014,	-- Nivvet Channelock
+						["coord"] = { 49.1, 29.3, 241 },
+						["sourceQuests"] = { 27753 },	-- Never Leave a Dinner Behind
+						-- May have additional SQs.
+					}),
+
+					
 					qa(27515, {	-- Roots'll Do 'Er
 						["qg"] = 45172,	-- Thordun Hammerblow
 						["coord"] = { 67.6, 65.9, 241 },
@@ -270,6 +521,13 @@ _.Zones =
 						["sourceQuests"] = { 27433 },	-- Shredderectomy
 					}),
 					
+
+					qa(27642, {	-- Sifting Through The Wreckage
+						["qg"] = 46143,	-- Flynn Dunwald
+						["coord"] = { 45.9, 65.4, 241 },
+						["sourceQuests"] = { 27640 },	-- Dunwalds Don't Die
+					}),
+
 					
 					qa(27200, {	-- Siren's Song
 						["g"] = {
@@ -298,6 +556,21 @@ _.Zones =
 					}),
 					
 					
+					qa(27815, {	-- Somethin' for the Boys
+						["g"] = {
+							i(63867),	-- Forge-Hold Gloves
+							i(63866),	-- Camp-Cleaner Chestguard
+							i(63865),	-- Weapon-Bearer Bracers
+						},
+						["qg"] = 46850,	-- Mackay Firebeard
+						["coord"] = { 62.5, 48.3, 241 },
+						["sourceQuests"] = {
+							27814,	-- Anything We Can Get (definitely required)
+							27813,	-- Death Worthy of a Dragonmaw (probably required)
+						},
+					}),
+					
+					
 					qa(27808, {	-- Stubborn as a Doyle
 						["qg"] = 46805,	-- Iain Firebeard
 						["coord"] = { 57.4, 58.1, 241 },
@@ -305,10 +578,90 @@ _.Zones =
 					}),
 					
 
+					qa(28280, {	-- Tear Them From the Sky!
+						["qg"] = 48174,	-- Nivvet Channelock
+						["coord"] = { 49.1, 29.3, 241 },
+						["sourceQuests"] = { 28215 },	-- Potential Energy
+					}),
+					
+					
+					qa(28211, {	-- Tempered in Elemental Flame
+						["qg"] = 48014,	-- Nivvet Channelock
+						["coord"] = { 49.1, 29.3, 241 },
+						["sourceQuests"] = { 27753 },	-- Never Leave a Dinner Behind
+						-- May have additional SQs.
+					}),
+					
+					
+					q(27863, {	-- The Crucible of Carnage: The Bloodeye Bruiser!
+						["qg"] = 46935,	-- Gurgthock
+						["coord"] = { 50.7, 58.2, 241 },
+						-- ["sourceQuests"] = {  },	-- 
+						-- Unsure if this has any prerequisites
+					}),
+					
+
+					qa(27864, {	-- The Crucible of Carnage: The Deadly Dragonmaw!
+						["qg"] = 46935,	-- Gurgthock
+						["coord"] = { 50.7, 58.2, 241 },
+						["sourceQuests"] = { 27863 },	-- The Crucible of Carnage: The Bloodeye Bruiser!
+					}),
+
+					
+					o(206569, {	-- Eye of Twilight
+						qa(28243, {	-- The Eyes Have It
+							["coord"] = { 57.9, 33.5, 241 },
+							["sourceQuests"] = { 28242 },	-- We All Must Sacrifice
+						}),
+						qa(28242, {	-- We All Must Sacrifice
+							["coord"] = { 57.9, 33.5, 241 },
+							["sourceQuests"] = { 28241 },	-- A Vision of Twilight
+						}),
+					}),
+					
+					
 					qa(27999, {	-- The Fate of the Doyles
 						["qg"] = 47317,	-- Keeland Doyle
 						["coord"] = { 61.4, 67.4, 241 },
 						["sourceQuests"] = { 27808 },	-- Stubborn as a Doyle
+					}),
+					
+
+					qa(27810, {	-- The Fighting Spirit
+						["qg"] = 46811,	-- Duglas Mullan
+						["coord"] = { 50.7, 60.2, 241 },
+						["sourceQuests"] = { 27807 },	-- Clan Mullan
+					}),
+
+
+					qa(28294, {	-- The Kirthaven Summit
+						["qg"] = 48173,	-- Colin Thundermar
+						["coord"] = { 49.0, 29.7, 241 },
+						["sourceQuests"] = { 28282 },	-- Narkrall, the Drake-Tamer
+					}),
+					
+					
+					qa(28233, {	-- The Lost Brother
+						["qg"] = 48046,	-- Ella Forgehammer
+						["coord"] = { 62.5, 48.5, 241 },
+						["sourceQuests"] = { 27809 },	-- Firebeard Bellows
+					}),
+
+					
+					qa(27812, {	-- The Loyalty of Clan Mullan
+						["g"] = {
+							i(63873),	-- Clan-Heart Shoulders
+							i(63872),	-- Loyalty-Seeker Bracers
+							i(63871),	-- Stoutwaist Girdle
+						},
+						["qg"] = 46811,	-- Duglas Mullan
+						["coord"] = { 50.7, 60.2, 241 },
+						["sourceQuests"] = { 
+							27810,	-- The Fighting Spirit
+									-- "The Fighting Spirit" is probably required.  It's listed on WH as a prereq.
+									-- This quest did not show up until I turned in "The Scent of Battle," though.
+							27811	-- The Scent of Battle
+						},
 					}),
 					
 					
@@ -326,12 +679,26 @@ _.Zones =
 					}),
 
 
+					qa(27811, {	-- The Scent of Battle
+						["qg"] = 46812,	-- Edana Mullan
+						["coord"] = { 50.8, 60.2, 241 },
+						["sourceQuests"] = { 27807 },	-- Clan Mullan
+					}),
+					
+					
 					qa(27545, {	-- The Way is Open (awarded "Good News, For Once" criteria)
 						["qg"] = 45173,	-- Talaa
 						["coord"] = { 79.4, 77.6, 241 },
 						["sourceQuests"] = { 27537 },	-- Any Portal in a Storm
 					}),
 
+
+					qa(28234, {	-- They Took Me Pants!
+						["qg"] = 48053,	-- Bahrum Forgehammer
+						["coord"] = { 63.1, 47.6, 241 },
+						["sourceQuests"] = { 28233 },	-- The Lost Brother
+					}),
+					
 
 					qa(27803, {	-- Welcome Relief
 						["qg"] = 46804,	-- Keegan Firebeard
@@ -347,6 +714,13 @@ _.Zones =
 					}),
 
 
+					qa(27641, {	-- While Meeting The Family
+						["qg"] = 46143,	-- Flynn Dunwald
+						["coord"] = { 45.9, 65.4, 241 },
+						["sourceQuests"] = { 27640 },	-- Dunwalds Don't Die
+					}),
+					
+					
 					qa(27516, {	-- Wings Over Highbank
 						["qg"] = 45172,	-- Thordun Hammerblow
 						["coord"] = { 67.6, 65.9, 241 },
@@ -367,7 +741,6 @@ _.Zones =
 
 
 
---					qa(28001)),	-- A Coward's Due
 					qg(46513, q(27745, {	-- A Fiery Reunion
 						i(63711),
 						i(63710),
@@ -381,27 +754,13 @@ _.Zones =
 						i(63713),
 						i(63712),
 					})),
-					qg(46583, qa(27649, {	-- A Steady Supply
-						i(63837),
-						i(63836),
-						i(63835),
-					})),
 --[[						
-					qh(27947)),	-- A Vision of Twilight
-					qa(28241)),	-- A Vision of Twilight
-					q(28171)),	-- And the Sky Streaked Red
-					qh(28873)),	-- Another Maw to Feed
---]]
-					qg(46175, qa(27647, {	-- Anything But Water
-						i(63849),
-						i(63848),
-						i(63847),
-					})),
---[[					
-					qa(27814)),	-- Anything We Can Get
-					qa(27711)),	-- Back to the Elementium Depths
-					qh(27712)),	-- Back to the Elementium Depths
-					qh(28041)),	-- Bait and Throttle
+					qh(27947),	-- A Vision of Twilight
+					q(28171),	-- And the Sky Streaked Red
+					qh(28873),	-- Another Maw to Feed
+					qa(27711),	-- Back to the Elementium Depths
+					qh(27712),	-- Back to the Elementium Depths
+					qh(28041),	-- Bait and Throttle
 --]]
 					qg(49810, q(28758, {	-- Battle of Life and Death
 						i(63760),
@@ -444,8 +803,7 @@ _.Zones =
 						i(63748),
 					})),
 --[[					
-					qa(27645)),	-- Cayden Dunwald
-					qh(26788)),	-- Cementing Our Victory
+					qh(26788),	-- Cementing Our Victory
 --]]					
 					qg(45796, qa(27702, {	-- Coup de Grace
 						i(63725),
@@ -484,18 +842,7 @@ _.Zones =
 						i(63882),
 					})),
 --[[					
-					qa(27813)),	-- Death Worthy of a Dragonmaw
-					qa(11786),	-- Desecrate this Fire!
-					qa(11580),	-- Desecrate this Fire!
-					qh(11581),	-- Desecrate this Fire!
-					qh(11745),	-- Desecrate this Fire!
-					qh(11749),	-- Desecrate this Fire!
-					qa(11766),	-- Desecrate this Fire!
-					qa(11732),	-- Desecrate this Fire!
-					qa(11755),	-- Desecrate this Fire!
-					qh(28943),	-- Desecrate this Fire!
-					qa(28944),	-- Desecrate this Fire!
-					q(27377)),	-- Devoured
+					q(27377),	-- Devoured
 --]]					
 					qg(45675, qh(27689, {	-- Distract Them for Me
 						i(63729),
@@ -507,13 +854,6 @@ _.Zones =
 						i(63731),
 						i(63730),
 					})),
-					qg(46177, qa(27651, {	-- Doing It Like a Dunwald
-						i(63833),
-						i(63832),
-						i(63831),
-						i(63834),
-					})),
---					qa(27643)),	-- Donnelly Dunwald
 					qg(45522, q(27505, {	-- Draconic Mending
 						i(63777),
 						i(63779),
@@ -524,30 +864,18 @@ _.Zones =
 					qa(27700)),	-- Dragon, Unchained
 					qh(27701)),	-- Dragon, Unchained
 --]]
-					qg(46591, qa(27754, {	-- Dragonmaw Takedown
-						i(63826),
-						i(63825),
-						i(63824),
-					})),
 					qg(47723, qh(28151, {	-- Dressed to Kill
 						i(63846),
 						i(63845),
 						i(63844),
 					})),
-					qg(46804, qa(27817, {	-- Dropping the Hammer
-						i(63861),
-						i(63860),
-						i(63859),
-					})),
 --[[
-					qa(27640)),	-- Dunwalds Don't Die
-					qh(28091)),	-- Easy Pickings
-					qa(28103)),	-- Easy Pickings
-					qh(26538)),	-- Emergency Aid
-					q(27507)),	-- Encroaching Twilight
-					q(28712)),	-- Enter the Dragon Queen
-					qa(27644)),	-- Eoin Dunwald
-					q(27504)),	-- Even Dragons Bleed
+					qh(28091),	-- Easy Pickings
+					qa(28103),	-- Easy Pickings
+					qh(26538),	-- Emergency Aid
+					q(27507),	-- Encroaching Twilight
+					q(28712),	-- Enter the Dragon Queen
+					q(27504),	-- Even Dragons Bleed
 --]]					
 					qg(48993, qh(28589, {	-- Everything But the Kitchen Sink
 						i(63864),
@@ -555,28 +883,13 @@ _.Zones =
 						i(63862),
 					})),
 --[[
-					qa(28244)),	-- Eye Spy
-					qh(27955)),	-- Eye Spy
-					q(27508)),	-- Far from the Nest
---]]
-					qg(48010, qa(27752, {	-- Fight Like a Wildhammer
-						i(63819),
-						i(63818),
-						i(63820),
-					})),
---[[
-					qa(28861)),	-- Fight Like a Wildhammer
-					qa(28378)),	-- Find Fanny
---]]
-					qg(46176, qa(27646, {	-- Finding Beak
-						i(63855),
-						i(63854),
-						i(63853),
-					})),
---[[
-					q(27661)),	-- Fire the Cannon
-					q(29737)),	-- Firebeard the Elder
-					q(28176)),	-- Following the Young Home
+					qh(27955),	-- Eye Spy
+					q(27508),	-- Far from the Nest
+					qa(28861),	-- Fight Like a Wildhammer
+					qa(28378),	-- Find Fanny
+					q(27661),	-- Fire the Cannon
+					q(29737),	-- Firebeard the Elder
+					q(28176),	-- Following the Young Home
 --]]
 					qg(45669, qa(27608, {	-- Four Heads are Better than None
 						i(63747),
@@ -594,19 +907,17 @@ _.Zones =
 						i(63799),
 					})),
 --[[					
-					qh(27783)),	-- Garona Needs You
-					qa(27657)),	-- Help from the Earthcaller
-					qh(27658)),	-- Help from the Earthcaller
-					qh(28594)),	-- Highbank, Crybank
-					qa(27650)),	-- Home Again
-					qa(28945)),	-- Honor the Flame
-					qh(28946)),	-- Honor the Flame
-					qh(28874)),	-- Hook 'em High
-					qa(28212)),	-- Hot Stuff
-					qh(28043)),	-- How to Maim Your Dragon
-					qh(28092)),	-- If The Key Fits
-					qa(28108)),	-- If The Key Fits
-					q(27564)),	-- In Defense of the Redoubt
+					qh(27783),	-- Garona Needs You
+					qa(27657),	-- Help from the Earthcaller
+					qh(27658),	-- Help from the Earthcaller
+					qh(28594),	-- Highbank, Crybank
+					qa(28945),	-- Honor the Flame
+					qh(28946),	-- Honor the Flame
+					qh(28874),	-- Hook 'em High
+					qh(28043),	-- How to Maim Your Dragon
+					qh(28092),	-- If The Key Fits
+					qa(28108),	-- If The Key Fits
+					q(27564),	-- In Defense of the Redoubt
 --]]
 					qg(43581, qh(26621, {	-- Insurrection
 						["sourceQuest"] = 26619,	-- You Say You Want a Revolution
@@ -616,10 +927,10 @@ _.Zones =
 						},
 					})),
 --[[
-					qh(27638)),	-- Just You and Garona
-					qa(27636)),	-- Just You and Mathias
-					qa(28860)),	-- Keeping the Dragonmaw at Bay
-					qh(27491)),	-- Kor'kron Drop
+					qh(27638),	-- Just You and Garona
+					qa(27636),	-- Just You and Mathias
+					qa(28860),	-- Keeping the Dragonmaw at Bay
+					qh(27491),	-- Kor'kron Drop
 --]]
 					qg(49000, qg(49000, qh(28595, {	-- Krazz Works! 
 						i(63829),
@@ -628,7 +939,7 @@ _.Zones =
 						i(63830),
 					}))),
 --[[
-					qh(28583)),	-- Krazzworks
+					qh(28583),	-- Krazzworks
 --]]
 					qg(47905, q(28247, {	-- Last of Her Kind
 						i(63756),
@@ -636,18 +947,10 @@ _.Zones =
 						i(63754),
 					})),
 --[[
-					qa(28281)),	-- Last Stand at Thundermar
-					q(27506)),	-- Life from Death
-					qh(26549)),	-- Madness
---]]
-					qg(46591, qa(28216, {	-- Magmalord Falthazar
-						i(63814),
-						i(63813),
-						i(63812),
-					})),
---[[
-					qa(27782)),	-- Mathias Needs You
-					qa(28101)),	-- Mathias' Command
+					q(27506),	-- Life from Death
+					qh(26549),	-- Madness
+					qa(27782),	-- Mathias Needs You
+					qa(28101),	-- Mathias' Command
 --]]
 					qg(45362, q(27303, {	-- Mercy for the Bound
 						i(63786),
@@ -660,38 +963,26 @@ _.Zones =
 						i(63900),
 					})),
 --[[
-					qa(27494)),	-- Move the Mountain
-					qh(27495)),	-- Move the Mountain
-					qa(27720)),	-- Mr. Goldmine's Wild Ride
-					qh(28885)),	-- Mr. Goldmine's Wild Ride
-					qh(26784)),	-- Muddied Waters
-					qa(28369)),	-- My Sister, Fanny
---]]
-					qg(48173, qa(28282, {	-- Narkrall, The Drake-Tamer
-						i(63807),
-						i(63806),
-						i(63805),
-						i(63808),
-						i(63804),
-					})),
---[[
-					qh(27690)),	-- Narkrall, the Drake-Tamer
-					qh(26608)),	-- Negotiations Terminated
-					qa(28862)),	-- Never Leave a Dinner Behind
-					qa(27753)),	-- Never Leave a Dinner Behind
-					qh(28170)),	-- Night Terrors
+					qa(27494),	-- Move the Mountain
+					qh(27495),	-- Move the Mountain
+					qa(27720),	-- Mr. Goldmine's Wild Ride
+					qh(28885),	-- Mr. Goldmine's Wild Ride
+					qh(26784),	-- Muddied Waters
+					qh(27690),	-- Narkrall, the Drake-Tamer
+					qh(26608),	-- Negotiations Terminated
+					qa(28862),	-- Never Leave a Dinner Behind
+					qh(28170),	-- Night Terrors
 --]]
 					qg(48059, q(27380, {	-- Nightmare
 						i(63783),
 						i(63782),
 					})),
 --[[					
-					qh(28593)),	-- Of Utmost Importance
-					qh(28591)),	-- Off The Wall
-					qa(28379)),	-- Ogre Bashin'
-					qh(27493)),	-- Ogres & Ettins
-					qa(27492)),	-- Ogres & Ettins
-					qa(27648)),	-- Once More Into The Fire
+					qh(28593),	-- Of Utmost Importance
+					qh(28591),	-- Off The Wall
+					qa(28379),	-- Ogre Bashin'
+					qh(27493),	-- Ogres & Ettins
+					qa(27492),	-- Ogres & Ettins
 --]]
 					qg(46324, qh(27945, {	-- Paint it Black
 						i(63811),
@@ -704,19 +995,17 @@ _.Zones =
 						i(63850),
 					})),
 --[[
-					qh(27576)),	-- Patchwork Command
-					qh(28094)),	-- Paving the Way
-					qa(28107)),	-- Paving the Way
-					qa(27816)),	-- Personal Request
-					qa(11882)),	-- Playing with Fire
-					qh(28586)),	-- Pool Pony Rescue
+					qh(27576),	-- Patchwork Command
+					qh(28094),	-- Paving the Way
+					qa(28107),	-- Paving the Way
+					qa(11882),	-- Playing with Fire
+					qh(28586),	-- Pool Pony Rescue
 --]]
 					qg(46242, q(27659, {	-- Portal Overlord
 						i(63734),
 						i(63733),
 						i(63735),
 					})),
---					qa(28215)),	-- Potential Energy
 					qg(47592, qa(28104, {	-- Precious Goods
 						i(63774),
 						i(63773),
@@ -745,21 +1034,20 @@ _.Zones =
 						i(63856),
 					})),
 --[[
-					qh(28590)),	-- Reprisal
-					qa(28377)),	-- Rescue at Glopgut's Hollow
-					qh(26840)),	-- Return to the Highlands
-					q(27744)),	-- Rune Ruination
-					qh(26798)),	-- Saurfang Will be Pleased
-					qh(27610)),	-- Scouting the Shore
-					qh(26786)),	-- Securing the Beach Head
-					qh(27586)),	-- Shells on the Sea Shore
-					q(28175)),	-- Shining Through the Dark
-					qa(27490)),	-- SI:7 Drop
-					qa(27642)),	-- Sifting Through The Wreckage
-					q(27499)),	-- Signal the Attack
-					qa(27588)),	-- Signal the Attack
-					qh(27590)),	-- Signal the Attack
-					q(27302)),	-- Simple Solutions
+					qh(28590),	-- Reprisal
+					qa(28377),	-- Rescue at Glopgut's Hollow
+					qh(26840),	-- Return to the Highlands
+					q(27744),	-- Rune Ruination
+					qh(26798),	-- Saurfang Will be Pleased
+					qh(27610),	-- Scouting the Shore
+					qh(26786),	-- Securing the Beach Head
+					qh(27586),	-- Shells on the Sea Shore
+					q(28175),	-- Shining Through the Dark
+					qa(27490),	-- SI:7 Drop
+					q(27499),	-- Signal the Attack
+					qa(27588),	-- Signal the Attack
+					qh(27590),	-- Signal the Attack
+					q(27302),	-- Simple Solutions
 --]]
 					qg(46717, qh(27788, {	-- Skullcrusher the Mountain
 						i(63704),
@@ -773,29 +1061,20 @@ _.Zones =
 						i(63706),
 						i(63705),
 					})),
-					qg(46850, qa(27815, {	-- Somethin' for the Boys
-						i(63867),
-						i(63866),
-						i(63865),
-					})),
 --[[					
-					qa(28408)),	-- Something Bold
-					qa(28409)),	-- Something Brewed
-					qa(28411)),	-- Something Stewed
-					qa(28410)),	-- Something Stolen					
-					q(27660)),	-- Spirit of the Loch
-					qh(26539)),	-- Stalled Negotiations
-					qa(28280)),	-- Tear Them From the Sky!
-					qa(28211)),	-- Tempered in Elemental Flame
-					qa(28346)),	-- The Bachelor
-					qa(28407)),	-- The Bachelorette
-					q(27866)),	-- The Crucible of Carnage: Calder's Creation!
-					q(31206)),	-- The Crucible of Carnage: The Bloodeye Bruiser!
-					q(27862)),	-- The Crucible of Carnage: The Bloodeye Bruiser!
-					q(27861)),	-- The Crucible of Carnage: The Bloodeye Bruiser!
-					q(27863)),	-- The Crucible of Carnage: The Bloodeye Bruiser!
-					qa(27864)),	-- The Crucible of Carnage: The Deadly Dragonmaw!
-					q(27867)),	-- The Crucible of Carnage: The Earl of Evisceration!
+					qa(28408),	-- Something Bold
+					qa(28409),	-- Something Brewed
+					qa(28411),	-- Something Stewed
+					qa(28410),	-- Something Stolen					
+					q(27660),	-- Spirit of the Loch
+					qh(26539),	-- Stalled Negotiations
+					qa(28346),	-- The Bachelor
+					qa(28407),	-- The Bachelorette
+					q(27866),	-- The Crucible of Carnage: Calder's Creation!
+--					q(31206),	-- The Crucible of Carnage: The Bloodeye Bruiser! (NYI/removed?  no information about where to pick this version up)
+--					q(27862),	-- The Crucible of Carnage: The Bloodeye Bruiser! (NYI/removed?  no information about where to pick this version up)
+--					q(27861),	-- The Crucible of Carnage: The Bloodeye Bruiser! (NYI/removed?  no information about where to pick this version up)
+					q(27867),	-- The Crucible of Carnage: The Earl of Evisceration!
 --]]
 					qg(46935, q(27868, {	-- The Crucible of Carnage: The Twilight Terror!
 						i(63790),
@@ -806,42 +1085,29 @@ _.Zones =
 						i(63791),
 					})),
 --[[
-					qh(27865)),	-- The Crucible of Carnage: The Wayward Wildhammer!
-					qh(28123)),	-- The Demon Chain
-					qh(27696)),	-- The Elementium Axe
-					qa(27695)),	-- The Elementium Axe
-					qa(28243)),	-- The Eyes Have It
-					qh(27954)),	-- The Eyes Have It
-					qa(27810)),	-- The Fighting Spirit
-					qh(28097)),	-- The Gates of Grim Batol
-					qh(27786)),	-- The Hammer of Twilight
-					qa(27784)),	-- The Hammer of Twilight
-					qa(28294)),	-- The Kirthaven Summit
-					qa(28233)),	-- The Lost Brother
---]]
-					qg(46811, qa(27812, {	-- The Loyalty of Clan Mullan
-						i(63873),
-						i(63872),
-						i(63871),
-					})),
---[[
-					q(27376)),	-- The Maw of Iso'rath
-					qa(27374)),	-- The Maw of Madness
-					qh(27583)),	-- The Northern Flank
-					qa(27811)),	-- The Scent of Battle
-					qh(27607)),	-- The Southern Flank
-					q(27379)),	-- The Terrors of Iso'rath
-					qh(27375)),	-- The Weeping Wound
-					q(27378)),	-- The Worldbreaker
-					qa(28234)),	-- They Took Me Pants!
-					qh(28166)),	-- Thog's Nightlight
+					qh(27865),	-- The Crucible of Carnage: The Wayward Wildhammer!
+					qh(28123),	-- The Demon Chain
+					qh(27696),	-- The Elementium Axe
+					qa(27695),	-- The Elementium Axe
+					qh(27954),	-- The Eyes Have It
+					qh(28097),	-- The Gates of Grim Batol
+					qh(27786),	-- The Hammer of Twilight
+					qa(27784),	-- The Hammer of Twilight
+					q(27376),	-- The Maw of Iso'rath
+					qa(27374),	-- The Maw of Madness
+					qh(27583),	-- The Northern Flank
+					qh(27607),	-- The Southern Flank
+					q(27379),	-- The Terrors of Iso'rath
+					qh(27375),	-- The Weeping Wound
+					q(27378),	-- The Worldbreaker
+					qh(28166),	-- Thog's Nightlight
 --]]
 					ql(q(29934, {	-- To Ravenholdt
 						["qg"] = 55488,	-- Corastrasza
 						["classes"] = { 4 },	-- Rogue
 						["sourceQuests"] = { 29802 },	-- A Hidden Message
 					})),
---					q(27299)),	-- Torn Ground
+--					q(27299),	-- Torn Ground
 					qg(46318, qh(27747, {	-- Total War
 						i(63816),
 						i(63815),
@@ -877,15 +1143,13 @@ _.Zones =
 						i(63717),
 					})),
 --[[
-					qh(27951)),	-- We All Must Sacrifice
-					qa(28242)),	-- We All Must Sacrifice
-					qa(27641)),	-- While Meeting The Family
-					q(27743)),	-- While We're Here
-					qh(28149)),	-- Whispers in the Wind
-					qa(28655)),	-- Wild, Wild, Wildhammer Wedding
-					qh(28588)),	-- Wildhammer Infestation
-					qa(28413)),	-- Words and Music By...
-					qh(26619)),	-- You Say You Want a Revolution
+					qh(27951),	-- We All Must Sacrifice
+					q(27743),	-- While We're Here
+					qh(28149),	-- Whispers in the Wind
+					qa(28655),	-- Wild, Wild, Wildhammer Wedding
+					qh(28588),	-- Wildhammer Infestation
+					qa(28413),	-- Words and Music By...
+					qh(26619),	-- You Say You Want a Revolution
 --]]
 				}),
 				n(-16,  {	-- Rares
