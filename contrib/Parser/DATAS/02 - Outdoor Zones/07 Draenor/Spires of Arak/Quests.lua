@@ -9,6 +9,9 @@ _.Zones =
 			{	-- Spires of Arak
 				["mapID"] = 542,	-- Spires of Arak
 				["g"] = {
+					--[[ triggers/flags
+						34946 - Morkurk Greeting - triggers upon entering the zone from Talador
+					]]
 					n(-17, { 	-- Quests
 						i(122293, {	-- Trans-Dimensional Bird Whistle
 							["groups"] = {
