@@ -1034,7 +1034,7 @@ local function createAccountFrame(parent)
 			x = 0;
 			y = frameSpacer;
 			count = count + 1;
-			if count == 8 then
+			if count == 9 then
 				x = seasonalSubFrame:GetWidth()/2
 				y = 5
 				last = seasonalSubFrame
