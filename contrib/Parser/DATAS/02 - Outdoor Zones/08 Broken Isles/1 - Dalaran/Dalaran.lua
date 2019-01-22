@@ -1666,7 +1666,7 @@ _.Zones =
 					}),
 					o(247797, {	-- Lost Mail
 						["groups"] = {
-							i(133859, {	-- Lost Mail
+							i(134859, {	-- Lost Mail
 								q(41368),	-- Lost Mail
 							}),
 						},
