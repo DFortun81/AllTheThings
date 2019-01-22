@@ -69,6 +69,7 @@ _.Instances =
 						i(28779),	-- Girdle of the Endless Pit
 						i(28778),	-- Terror Pit Girdle
 						i(28789),	-- Eye of Magtheridon
+						i(34846),	-- Black Sack of Gems // Maybe add contents later?
 					})),
 				},
 				["isRaid"] = true,
