@@ -221,6 +221,8 @@ _.Instances = { tier(1, {	-- Classic
 		["isRaid"] = true,
 		["sharedLockout"] = 1,
 		["lvl"] = 50,
-		["mapID"] = 247
+		["maps"] = {
+			247,	-- Ruins of Ahn'Qiraj
+		},
 	}),
 })};

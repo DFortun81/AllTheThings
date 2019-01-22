@@ -1436,7 +1436,10 @@ _.Instances = { tier(1, {	-- Classic
 		["isRaid"] = true,
 		["sharedLockout"] = 1,
 		["lvl"] = 50,
-		["mapID"] = 319,
-		["maps"] = { 320, 321 },
+		["maps"] = {
+			319,	-- The Hive Undergrounds
+			320,	-- The Temple Gates
+			321,	-- Vault of C'Thun
+		},
 	}),
 })};

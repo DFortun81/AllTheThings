@@ -147,6 +147,8 @@ i(153493, 243201);	-- Demonic Gladiator's Storm Dragon
 i(156879, 262022);	-- Dread Gladiator's Proto-Drake
 i(163123, 272481);	-- Vicious War Riverbeast [A]
 i(163124, 270560);	-- Vicious War Clefthoof [H]
+i(151625, 239767);	-- Red Qiraji War Tank
+i(151626, 239766);	-- Sapphire Qiraji Resonating Crystal
 
 ---------------
 -- PATCH 8.1 --
