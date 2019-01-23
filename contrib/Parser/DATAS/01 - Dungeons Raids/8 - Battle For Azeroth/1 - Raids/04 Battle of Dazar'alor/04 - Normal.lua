@@ -19,7 +19,30 @@ _.Instances =
 							{	-- Zone Drops
 								["npcID"] = 0,	-- Zone Drops
 								["g"] = {
-									
+									{	-- Cord of Zandalari Resolve
+										["itemID"] = 165765,	-- Cord of Zandalari Resolve
+									},
+									{	-- Warbeast Hide Cinch
+										["itemID"] = 165518,	-- Warbeast Hide Cinch
+									},
+									{	-- Waistguard of Elemental Resistance
+										["itemID"] = 165545,	-- Waistguard of Elemental Resistance
+									},
+									{	-- Last Stand Greatbelt
+										["itemID"] = 165564,	-- Last Stand Greatbelt
+									},
+									{	-- Slippers of Encroaching Tide
+										["itemID"] = 165509,	-- Slippers of Encroaching Tide
+									},
+									{	-- Silent Pillager's Footpads
+										["itemID"] = 165520,	-- Silent Pillager's Footpads
+									},
+									{	-- City Crusher Sabatons
+										["itemID"] = 165547,	-- City Crusher Sabatons
+									},
+									{	-- Boots of the Dark Iron Raider
+										["itemID"] = 165563,	-- Boots of the Dark Iron Raider
+									},
 								},
 							},
 							{	-- Champion of the Light
