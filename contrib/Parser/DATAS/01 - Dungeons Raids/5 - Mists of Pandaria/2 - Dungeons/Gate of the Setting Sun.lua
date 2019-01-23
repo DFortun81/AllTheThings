@@ -152,7 +152,6 @@ _.Instances =
 						},
 					}),
 					d(24, {	-- Timewalking
-						
 						["lvl"] = 85,
 						["groups"] = {
 							cr(56906, e(655, {	-- Saboteur Kip'tilak
