@@ -20,6 +20,9 @@ _.WorldDrops =
 					{	-- Bejeweled Amulet
 						["itemID"] = 82225,	-- Bejeweled Amulet
 					},
+					{	-- Don Guerrero's Glorious Choker
+						["itemID"] = 90583,	-- Don Guerrero's Glorious Choker
+					},
 					{	-- Gemmed Amulet
 						["itemID"] = 82060,	-- Gemmed Amulet
 					},

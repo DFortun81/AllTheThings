@@ -4,7 +4,7 @@
 _.Zones =
 {
 	m(13, { 	-- Eastern Kingdoms
-		m(241, {	-- Twilight Highlands
+		{	-- Twilight Highlands
 			["groups"] = {
 				n(-4,   {	-- Achievements
 					ach(5451),	-- Consumed by Nightmare
@@ -232,6 +232,13 @@ _.Zones =
 					}),
 					
 
+					q(27377, {	-- Devoured
+						["qg"] = 47991,	-- Earthcaller Yevaa
+						["coord"] = { 48.4, 14.5, 241 },
+						["sourceQuests"] = { 27376 },	-- The Maw of Iso'rath
+					}),
+					
+					
 					qa(27651, {	-- Doing It Like a Dunwald
 						["g"] = {
 							i(63833),	-- Dunwald Winged Helm
@@ -291,6 +298,13 @@ _.Zones =
 					}),
 
 
+					q(27504, {	-- Even Dragons Bleed
+						["qg"] = 45528,	-- Calen
+						["coord"] = { 29.3, 25.9, 241 },
+						["sourceQuests"] = { 27485 },	-- Warm Welcome
+					}),
+					
+					
 					qa(28244, {	-- Eye Spy (awarded "The Eye of Twilight" criteria)
 						["g"] = {
 							i(63797),	-- Eye of Despair
@@ -314,6 +328,13 @@ _.Zones =
 						-- Unsure if this has prereqs.
 					}),
 					
+
+					qa(28378, {	-- Find Fanny
+						["qg"] = 48472,	-- Colin Thundermar
+						["coord"] = { 38.1, 34.4, 241 },
+						["sourceQuests"] = { 28377 },	-- Rescue at Glopgut's Hollow
+					}),
+
 					
 					qa(27646, {	-- Finding Beak
 						["g"] = {
@@ -405,6 +426,18 @@ _.Zones =
 						},
 					}),
 					
+
+					q(27303, {	-- Mercy for the Bound
+						["g"] = {
+							i(63786),	-- Fleshburned Robes
+							i(63785),	-- Smoking Stride Treads
+							i(63784),	-- Heartsmoke Legplates
+						},
+						["qg"] = 45362,	-- Earthcaller Yevaa
+						["coord"] = { 44.2, 18.1, 241 },
+						["sourceQuests"] = { 27301 },	-- Unbroken
+					}),
+
 					
 					qa(28369, {	-- My Sister, Fanny
 						["qg"] = 46591,	-- Colin Thundermar
@@ -447,6 +480,25 @@ _.Zones =
 						["sourceQuests"] = { 28369 },	-- My Sister, Fanny
 					}),
 					
+
+					q(27380, {	-- Nightmare (awarded "Consumed by Nightmare" criteria)
+						["g"] = {
+							i(63783),	-- Woundseal Leggings
+							i(63782),	-- Weeping Scar Cover
+							i(63781),	-- Nightmare Choker
+						},
+						["qg"] = 48059,	-- Earthcaller Yevaa
+						["coord"] = { 48.7, 16.6, 241 },
+						["sourceQuests"] = { 27379 },	-- The Terrors of Iso'rath
+					}),
+					
+					
+					qa(28379, {	-- Ogre Bashin'
+						["qg"] = 48472,	-- Colin Thundermar
+						["coord"] = { 38.1, 34.4, 241 },
+						["sourceQuests"] = { 28377 },	-- Rescue at Glopgut's Hollow
+					}),
+
 					
 					qa(27648, {	-- Once More Into The Fire
 						["g"] = {
@@ -479,6 +531,20 @@ _.Zones =
 						["coord"] = { 49.1, 29.3, 241 },
 						["sourceQuests"] = { 27753 },	-- Never Leave a Dinner Behind
 						-- May have additional SQs.
+					}),
+
+
+					q(27300, {	-- Pushing Back
+						["qg"] = 45332,	-- Earthcaller Torunscar
+						["coord"] = { 44.0, 10.5, 241 },
+						["sourceQuests"] = { 27299 },	-- Torn Ground
+					}),
+					
+					
+					qa(28377, {	-- Rescue at Glopgut's Hollow
+						["qg"] = 48364,	-- Keegan Firebeard
+						["coord"] = { 54.4, 16.7, 241 },
+						["sourceQuests"] = { 28346 },	-- The Bachelor
 					}),
 
 					
@@ -528,6 +594,13 @@ _.Zones =
 						["sourceQuests"] = { 27640 },	-- Dunwalds Don't Die
 					}),
 
+
+					q(27302, {	-- Simple Solutions
+						["qg"] = 45432,	-- Initiate Goldmine
+						["coord"] = { 44.4, 11.5, 241 },
+						["sourceQuests"] = { 27299 },	-- Torn Ground
+					}),
+
 					
 					qa(27200, {	-- Siren's Song
 						["g"] = {
@@ -571,6 +644,34 @@ _.Zones =
 					}),
 					
 					
+					qa(28408, {	-- Something Bold
+						["qg"] = 48367,	-- Lachlan MacGraff
+						["coord"] = { 54.3, 16.7, 241 },
+						["sourceQuests"] = { 28407 },	-- The Bachelorette
+					}),
+
+
+					qa(28409, {	-- Something Brewed
+						["qg"] = 48367,	-- Lachlan MacGraff
+						["coord"] = { 54.3, 16.7, 241 },
+						["sourceQuests"] = { 28407 },	-- The Bachelorette
+					}),
+
+
+					qa(28411, {	-- Something Stewed
+						["qg"] = 48367,	-- Lachlan MacGraff
+						["coord"] = { 54.3, 16.7, 241 },
+						["sourceQuests"] = { 28407 },	-- The Bachelorette
+					}),
+
+
+					qa(28410, {	-- Something Stolen
+					["qg"] = 48367,	-- Lachlan MacGraff
+						["coord"] = { 54.3, 16.7, 241 },
+						["sourceQuests"] = { 28407 },	-- The Bachelorette
+					}),
+					
+					
 					qa(27808, {	-- Stubborn as a Doyle
 						["qg"] = 46805,	-- Iain Firebeard
 						["coord"] = { 57.4, 58.1, 241 },
@@ -592,6 +693,23 @@ _.Zones =
 						-- May have additional SQs.
 					}),
 					
+
+					qa(28346, {	-- The Bachelor
+						["qg"] = 48365,	-- Kurdran Wildhammer
+						["coord"] = { 54.8, 17.2, 241 },
+						["sourceQuests"] = { 28294 },	-- The Kirthaven Summit
+					}),
+
+
+					qa(28407, {	-- The Bachelorette
+						["qg"] = 48472,	-- Colin Thundermar
+						["coord"] = { 38.1, 34.4, 241 },
+						["sourceQuests"] = {
+							28378,	-- Find Fanny
+							28379,	-- Ogre Bashin'
+						},
+					}),
+
 					
 					q(27863, {	-- The Crucible of Carnage: The Bloodeye Bruiser!
 						["qg"] = 46935,	-- Gurgthock
@@ -664,6 +782,24 @@ _.Zones =
 						},
 					}),
 					
+
+					q(27376, {	-- The Maw of Iso'rath
+						["qg"] = 45332,	-- Earthcaller Torunscar
+						["coord"] = { 44.0, 10.5, 241 },
+						["sourceQuests"] = {
+							27300,	-- Pushing Back
+							27302,	-- Simple Solutions
+							27303,	-- Mercy for the Bound
+						},
+					}),
+					
+					
+					qa(27374, {	-- The Maw of Madness
+						["qg"] = 49374,	-- Lachlan MacGraff
+						["coord"] = { 55.2, 17.3, 241 },
+						["sourceQuests"] = { 28655 },	-- Wild, Wild, Wildhammer Wedding
+					}),
+
 					
 					qa(27804, {	-- The Only Homes We Have
 						["qg"] = 46804,	-- Keegan Firebeard
@@ -685,6 +821,13 @@ _.Zones =
 						["sourceQuests"] = { 27807 },	-- Clan Mullan
 					}),
 					
+
+					q(27379, {	-- The Terrors of Iso'rath
+						["qg"] = 48059,	-- Earthcaller Yevaa
+						["coord"] = { 48.7, 16.6, 241 },
+						["sourceQuests"] = { 27378 },	-- The Worldbreaker
+					}),
+
 					
 					qa(27545, {	-- The Way is Open (awarded "Good News, For Once" criteria)
 						["qg"] = 45173,	-- Talaa
@@ -693,6 +836,13 @@ _.Zones =
 					}),
 
 
+					q(27378, {	-- The Worldbreaker
+						["qg"] = 48051,	-- Thrall
+						["coord"] = { 33.3, 50.3, 276 },	-- in The Maelstrom
+						["sourceQuests"] = { 27377 },	-- Devoured
+					}),
+					
+					
 					qa(28234, {	-- They Took Me Pants!
 						["qg"] = 48053,	-- Bahrum Forgehammer
 						["coord"] = { 63.1, 47.6, 241 },
@@ -700,6 +850,27 @@ _.Zones =
 					}),
 					
 
+					q(27299, {	-- Torn Ground
+						["qg"] = 45332,	-- Earthcaller Torunscar
+						["coord"] = { 44.0, 10.5, 241 },
+						["sourceQuests"] = { 27374 },	-- The Maw of Madness
+					}),
+					
+
+					q(27301, {	-- Unbroken
+						["qg"] = 45391,	-- Earthmender Duarn
+						["coord"] = { 43.9, 11.2, 241 },
+						["sourceQuests"] = { 27299 },	-- Torn Ground
+					}),
+
+
+					qa(27485, {	-- Warm Welcome
+						["qg"] = 48265,	-- Lauriel Trueblade
+						["coord"] = { 44.0, 10.5, 241 },
+						["sourceQuests"] = { 27380 },	-- Nightmare
+					}),
+
+					
 					qa(27803, {	-- Welcome Relief
 						["qg"] = 46804,	-- Keegan Firebeard
 						["coord"] = { 60.1, 57.9, 241 },
@@ -720,6 +891,19 @@ _.Zones =
 						["sourceQuests"] = { 27640 },	-- Dunwalds Don't Die
 					}),
 					
+
+					qa(28655, {	-- Wild, Wild, Wildhammer Wedding (awarded "Wild, Wild, Wildhammer Wedding" criteria)
+						["qg"] = 48368,	-- Grundy MacGraff
+						["coord"] = { 54.2, 16.7, 241 },
+						["sourceQuests"] = {
+							28408,	-- Something Bold
+							28409,	-- Something Brewed
+							28411,	-- Something Stewed
+							28410,	-- Something Stolen
+							-- May also require "Words and Music By..."
+						},
+					}),
+
 					
 					qa(27516, {	-- Wings Over Highbank
 						["qg"] = 45172,	-- Thordun Hammerblow
@@ -727,6 +911,12 @@ _.Zones =
 						["sourceQuests"] = { 27515 },	-- Roots'll Do 'Er
 					}),
 
+
+					qa(28413, {	-- Words and Music By...
+						["qg"] = 48366,	-- Russell Brower
+						["coord"] = { 54.6, 17.5, 241 },
+						["sourceQuests"] = { 28407 },	-- The Bachelorette
+					}),
 
 
 
@@ -747,8 +937,8 @@ _.Zones =
 						i(63709),
 					})),
 --[[					
-					q(28191)),	-- A Fitting End
-					q(29802)),	-- A Hidden Message
+					q(28191),	-- A Fitting End
+					q(29802),	-- A Hidden Message
 --]]
 					qg(46513, q(27742, {	-- A Little on the Side
 						i(63713),
@@ -766,7 +956,7 @@ _.Zones =
 						i(63760),
 					})),
 --[[
-					qa(28864)),	-- Beer Run
+					qa(28864),	-- Beer Run
 --]]
 					qg(47902, q(28173, {	-- Blackout
 						i(63759),
@@ -779,18 +969,18 @@ _.Zones =
 						i(63906),
 					})),
 --[[
-					qh(28038)),	-- Blood in the Highlands
-					qh(27584)),	-- Blood in the Surf
-					qh(27611)),	-- Blood on the Sand
+					qh(28038),	-- Blood in the Highlands
+					qh(27584),	-- Blood in the Surf
+					qh(27611),	-- Blood on the Sand
 --]]
 					qg(45528, q(27509, {	-- Breach in the Defenses
 						i(63780),
 						i(63775),
 					})),
 --[[
-					qh(28875)),	-- Bring Down the High Shaman
-					qa(27654)),	-- Bring the Hammer Down
-					qh(27655)),	-- Bring the Hammer Down
+					qh(28875),	-- Bring Down the High Shaman
+					qa(27654),	-- Bring the Hammer Down
+					qh(27655),	-- Bring the Hammer Down
 --]]
 					qg(45669, qa(27496, {	-- Call in the Artillery
 						i(63753),
@@ -813,13 +1003,13 @@ _.Zones =
 						i(63722),
 						i(63721),
 					})),
---					qh(28249)),	-- Crushblow
+--					qh(28249),	-- Crushblow
 					qg(46313, qh(27751, {	-- Crushing the Wildhammer
 						i(63823),
 						i(63822),
 						i(63821),
 					})),
---					qh(28871)),	-- Crushing the Wildhammer
+--					qh(28871),	-- Crushing the Wildhammer
 					qg(43191, qh(26540, {	-- Dangerous Compassion
 						i(63896),
 						i(63895),
@@ -835,15 +1025,12 @@ _.Zones =
 						i(63740),
 						i(63739),
 					})),
---					q(29736)),	-- Darkfeather the Elder
+--					q(29736),	-- Darkfeather the Elder
 					qg(43581, qh(26622, {	-- Death to Mor'ghor
 						i(63884),
 						i(63883),
 						i(63882),
 					})),
---[[					
-					q(27377),	-- Devoured
---]]					
 					qg(45675, qh(27689, {	-- Distract Them for Me
 						i(63729),
 						i(63728),
@@ -860,9 +1047,9 @@ _.Zones =
 						i(63778),
 					})),
 --[[
-					qh(27929)),	-- Drag 'em Down
-					qa(27700)),	-- Dragon, Unchained
-					qh(27701)),	-- Dragon, Unchained
+					qh(27929),	-- Drag 'em Down
+					qa(27700),	-- Dragon, Unchained
+					qh(27701),	-- Dragon, Unchained
 --]]
 					qg(47723, qh(28151, {	-- Dressed to Kill
 						i(63846),
@@ -875,7 +1062,6 @@ _.Zones =
 					qh(26538),	-- Emergency Aid
 					q(27507),	-- Encroaching Twilight
 					q(28712),	-- Enter the Dragon Queen
-					q(27504),	-- Even Dragons Bleed
 --]]					
 					qg(48993, qh(28589, {	-- Everything But the Kitchen Sink
 						i(63864),
@@ -886,7 +1072,6 @@ _.Zones =
 					qh(27955),	-- Eye Spy
 					q(27508),	-- Far from the Nest
 					qa(28861),	-- Fight Like a Wildhammer
-					qa(28378),	-- Find Fanny
 					q(27661),	-- Fire the Cannon
 					q(29737),	-- Firebeard the Elder
 					q(28176),	-- Following the Young Home
@@ -952,11 +1137,6 @@ _.Zones =
 					qa(27782),	-- Mathias Needs You
 					qa(28101),	-- Mathias' Command
 --]]
-					qg(45362, q(27303, {	-- Mercy for the Bound
-						i(63786),
-						i(63785),
-						i(63784),
-					})),
 					qg(46090, qh(27622, {	-- Mo' Better Shredder
 						i(63902),
 						i(63901),
@@ -972,15 +1152,8 @@ _.Zones =
 					qh(26608),	-- Negotiations Terminated
 					qa(28862),	-- Never Leave a Dinner Behind
 					qh(28170),	-- Night Terrors
---]]
-					qg(48059, q(27380, {	-- Nightmare
-						i(63783),
-						i(63782),
-					})),
---[[					
 					qh(28593),	-- Of Utmost Importance
 					qh(28591),	-- Off The Wall
-					qa(28379),	-- Ogre Bashin'
 					qh(27493),	-- Ogres & Ettins
 					qa(27492),	-- Ogres & Ettins
 --]]
@@ -1024,10 +1197,7 @@ _.Zones =
 						i(63766),
 						i(63768),
 					})),
---[[					
-					qh(28147)),	-- Purple is Your Color
-					q(27300)),	-- Pushing Back
---]]
+--					qh(28147),	-- Purple is Your Color
 					qg(49439, qh(28584, {	-- Quality Construction
 						i(63858),
 						i(63857),
@@ -1035,7 +1205,6 @@ _.Zones =
 					})),
 --[[
 					qh(28590),	-- Reprisal
-					qa(28377),	-- Rescue at Glopgut's Hollow
 					qh(26840),	-- Return to the Highlands
 					q(27744),	-- Rune Ruination
 					qh(26798),	-- Saurfang Will be Pleased
@@ -1047,7 +1216,6 @@ _.Zones =
 					q(27499),	-- Signal the Attack
 					qa(27588),	-- Signal the Attack
 					qh(27590),	-- Signal the Attack
-					q(27302),	-- Simple Solutions
 --]]
 					qg(46717, qh(27788, {	-- Skullcrusher the Mountain
 						i(63704),
@@ -1062,14 +1230,8 @@ _.Zones =
 						i(63705),
 					})),
 --[[					
-					qa(28408),	-- Something Bold
-					qa(28409),	-- Something Brewed
-					qa(28411),	-- Something Stewed
-					qa(28410),	-- Something Stolen					
 					q(27660),	-- Spirit of the Loch
 					qh(26539),	-- Stalled Negotiations
-					qa(28346),	-- The Bachelor
-					qa(28407),	-- The Bachelorette
 					q(27866),	-- The Crucible of Carnage: Calder's Creation!
 --					q(31206),	-- The Crucible of Carnage: The Bloodeye Bruiser! (NYI/removed?  no information about where to pick this version up)
 --					q(27862),	-- The Crucible of Carnage: The Bloodeye Bruiser! (NYI/removed?  no information about where to pick this version up)
@@ -1093,13 +1255,9 @@ _.Zones =
 					qh(28097),	-- The Gates of Grim Batol
 					qh(27786),	-- The Hammer of Twilight
 					qa(27784),	-- The Hammer of Twilight
-					q(27376),	-- The Maw of Iso'rath
-					qa(27374),	-- The Maw of Madness
 					qh(27583),	-- The Northern Flank
 					qh(27607),	-- The Southern Flank
-					q(27379),	-- The Terrors of Iso'rath
 					qh(27375),	-- The Weeping Wound
-					q(27378),	-- The Worldbreaker
 					qh(28166),	-- Thog's Nightlight
 --]]
 					ql(q(29934, {	-- To Ravenholdt
@@ -1107,7 +1265,6 @@ _.Zones =
 						["classes"] = { 4 },	-- Rogue
 						["sourceQuests"] = { 29802 },	-- A Hidden Message
 					})),
---					q(27299),	-- Torn Ground
 					qg(46318, qh(27747, {	-- Total War
 						i(63816),
 						i(63815),
@@ -1122,15 +1279,13 @@ _.Zones =
 						i(63868),
 					})),
 --[[					
-					q(27662)),	-- Unbinding
-					q(27301)),	-- Unbroken
-					qh(27503)),	-- Up to the Citadel
-					qa(27502)),	-- Up to the Citadel
-					qa(28248)),	-- Victors' Point
-					qh(27750)),	-- War Forage
-					qa(28863)),	-- Warlord Halthar is Back
-					qa(27485)),	-- Warm Welcome
-					qh(27486)),	-- Warm Welcome
+					q(27662),	-- Unbinding
+					qh(27503),	-- Up to the Citadel
+					qa(27502),	-- Up to the Citadel
+					qa(28248),	-- Victors' Point
+					qh(27750),	-- War Forage
+					qa(28863),	-- Warlord Halthar is Back
+					qh(27486),	-- Warm Welcome
 --]]
 					qg(46413, qa(27719, {	-- Water of Life
 						i(63719),
@@ -1146,9 +1301,7 @@ _.Zones =
 					qh(27951),	-- We All Must Sacrifice
 					q(27743),	-- While We're Here
 					qh(28149),	-- Whispers in the Wind
-					qa(28655),	-- Wild, Wild, Wildhammer Wedding
 					qh(28588),	-- Wildhammer Infestation
-					qa(28413),	-- Words and Music By...
 					qh(26619),	-- You Say You Want a Revolution
 --]]
 				}),
@@ -1621,8 +1774,12 @@ _.Zones =
 				}),
 			},
 			["lvl"] = 84,	
+			["mapID"] = 241,
+			["maps"] = { 
+				276,	-- The Maelstrom (not sure if this is a special instanced version only for a TH quest, or seen elsewhere in the game)
+			},
 			["achievementID"] = 4866,
 			["description"] = "|cff66ccffTwilight Highlands is a new zone in Cataclysm. It is currently home of the Wildhammer dwarves and the Dragonmaw Orcs, both whom inhabited Grim Batol in the recent past. Twilight Cultists have also inhabited the area, sensing the presence of the Old Gods nearby, which is explored in the questline related to Consumed by Nightmare. There's also a Ring of Blood-style quest series that rewards a good weapon: Round Three. Fight!.|r",				
-		}),
+		},
 	}),
 };

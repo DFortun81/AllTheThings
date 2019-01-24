@@ -25,7 +25,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					},
 					["isRaid"] = true,
 					["maps"] = { 895 },	-- Tiragarde Sound
-					["questID"] = 52997,
+					["questID"] = 52163,	-- The Matriarch (WQ)
 					-- Note!! Kill ID: 52997
 					-- Note!! WQ ID: 52163
 				}),
@@ -58,7 +58,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					},
 					["isRaid"] = true,
 					["maps"] = { 864 },	-- Vol'dun
-					["questID"] = 52196,	-- Sandswept Bones
+					["questID"] = 52196,	-- Sandswept Bones (WQ)
 					-- Note!! Kill ID: 
 				}),
 				e(2197, {	-- Hailstone Construct [QID]
@@ -81,8 +81,8 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					},
 					["isRaid"] = true,
 					["maps"] = { 896 },	-- Drustvar
-					["questID"] = 52157,
-					-- Note!! WQ ID: 52157,	-- A Chilling Ecnounter
+					["questID"] = 52157,	-- A Chilling Encounter (WQ)
+					-- Note!! WQ ID: 52157,	-- A Chilling Encounter
 					-- Note!! Kill ID: 52999
 				}),
 				e(2141, {	-- Ji'arak [QID]
@@ -104,7 +104,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					},
 					["isRaid"] = true,
 					["maps"] = { 862 },	-- Zuldazar
-					["questID"] = 52169,
+					["questID"] = 52169,	-- The Matriarch (WQ)
 					-- Note!! Kill ID: 52998
 					-- Note!! WQ ID: 52169,	-- The Matriarch
 				}),
@@ -128,7 +128,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					},
 					["isRaid"] = true,
 					["maps"] = { 863 },	-- Nazmir
-					["questID"] = 52181,
+					["questID"] = 52181,	-- Smoke and Shadow (WQ)
 					-- Note!! Kill ID: 52996
 					-- Note!! WQ ID: 52181,	-- Smoke and Shadow
 				}),
@@ -149,9 +149,9 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					},
 					["isRaid"] = true,
 					["maps"] = { 942 },	-- Stormsong Valley
-					["questID"] = 52166,
+					["questID"] = 52166,	-- The Faceless Herald (WQ)
 					-- Note!! Kill ID: 52995
-					-- Note!! WQ ID: 52166, -- The Faceless Herald
+					-- Note!! WQ ID: 52166,	-- The Faceless Herald
 				}),
 			}),
 			e(2213, {	-- Doom's Howl [Warfront] [QID]
@@ -181,7 +181,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				}, 
 				["isRaid"] = true,
 				["races"] = ALLIANCE_ONLY,
-				["questID"] = 52847,
+				["questID"] = 52847,	-- Doom's Howl (WQ)
 					-- Note!! Kill ID: 53002
 				-- Note!! WQ ID: 52847,	-- Doom's Howl
 				["coord"] = {
@@ -198,7 +198,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				},
 				["isRaid"] = true,
 				["races"] = ALLIANCE_ONLY,
-				["questID"] = 54895,
+				["questID"] = 54895,	-- Ivus the Decayed (WQ)
 				-- Note!! Kill ID: 54862
 				["coords"] = {
 					{ 41.47, 35.97, 62 },
@@ -249,7 +249,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				},
 				["isRaid"] = true,
 				["races"] = HORDE_ONLY,
-				["questID"] = 54896,
+				["questID"] = 54896,	-- Ivus the Forest Lord (WQ)
 				-- Note!! Kill ID: 54861
 				["coords"] = {
 					{ 41.47, 35.97, 62 },
@@ -316,7 +316,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				}, 
 				["isRaid"] = true,
 				["races"] = HORDE_ONLY,
-				["questID"] = 52848,
+				["questID"] = 52848,	-- The Lion's Roar (WQ)
 				-- Note!! Kill ID: 53001
 				-- Note!! WQ ID: 52848,	-- The Lion's Roar
 				["coord"] = {

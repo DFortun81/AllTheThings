@@ -29,25 +29,31 @@ _.Zones =
 									{	-- Finding a Foothold
 										["questID"] = 34582,
 										["qg"] = 79206,	-- Prophet Velen
+										["coord"] = { 26.9, 8.00, 539 },
+										["sourceQuests"] = { 34575 },	-- Step Three: Prophet!
 									},
 									{	-- For the Alliance!
 										["questID"] = 34583,
 										["qg"] = 79470,	-- Vindicator Maraad
+										["coord"] = { 30.0, 34.3, 582 },
 										["sourceQuest"] = 34582,	-- Finding a Foothold
 									},
 									{	-- Looking for Lumber
 										["questID"] = 34584,
 										["qg"] = 79243,	-- Baros Alexston
+										["coord"] = { 32.5, 34.2, 582 },
 										["sourceQuest"] = 34583,	-- For the Alliance!
 									},
 									{	-- Ravenous Ravens
 										["questID"] = 34616,
 										["qg"] = 79243,	-- Baros Alexston
+										["coord"] = { 32.5, 34.2, 582 },
 										["sourceQuest"] = 34583,	-- For the Alliance!
 									},
 									{	-- Quakefist
 										["questID"] = 34585,
 										["qg"] = 79567,	-- Yrel
+										["coord"] = { 31.4, 35.8, 582 },
 										["sourceQuests"] = {
 											34584,	-- Looking for Lumber
 											34616,	-- Ravenous Ravens
@@ -56,26 +62,31 @@ _.Zones =
 									{	-- Establish Your Garrison
 										["questID"] = 34586,
 										["qg"] = 79243,	-- Baros Alexston
+										["coord"] = { 32.7, 34.0, 582 },
 										["sourceQuest"] = 34585,	-- Quakefist
 									},
-									{	-- Pale Moonlight
-										["questID"] = 35174,
-										["qg"] = 79457,	-- Vindicator Maraad
+									{	-- Keeping it Together
+										["questID"] = 35176,
+										["qg"] = 77209,	-- Baros Alexston
+										["coord"] = { 41.1, 49.4, 582 },
 										["sourceQuest"] = 34586,	-- Establish Your Garrison
 									},
 									{	-- Ship Salvage
 										["questID"] = 35166,
 										["qg"] = 77209,	-- Baros Alexston
+										["coord"] = { 41.1, 49.4, 582 },
 										["sourceQuest"] = 34586,	-- Establish Your Garrison
 									},
-									{	-- Keeping it Together
-										["questID"] = 35176,
-										["qg"] = 77209,	-- Baros Alexston
+									{	-- Pale Moonlight
+										["questID"] = 35174,
+										["qg"] = 79457,	-- Vindicator Maraad
+										["coord"] = { 44.0, 53.3, 582 },
 										["sourceQuest"] = 34586,	-- Establish Your Garrison
 									},
 									{	-- Build Your Barracks
 										["questID"] = 34587,
 										["qg"] = 77209,	-- Baros Alexston
+										["coord"] = { 41.1, 49.4, 582 },
 										["sourceQuests"] = {
 											35176,	-- Keeping it Together
 											35174,	-- Pale Moonlight
@@ -85,11 +96,13 @@ _.Zones =
 									{	-- Qiana Moonshadow
 										["questID"] = 34646,
 										["qg"] = 79457,	-- Vindicator Maraad
+										["coord"] = { 44.1, 53.3, 582 },
 										["sourceQuest"] = 34587,	-- Build Your Barracks
 									},
 									{	-- Delegating on Draenor
 										["questID"] = 34692,
 										["qg"] = 79953,	-- Lieutenant Thorn
+										["coord"] = { 40.2, 43.6, 582 },
 										["sourceQuest"] = 34646,	-- Qiana Moonshadow
 									},
 								}),
@@ -112,6 +125,14 @@ _.Zones =
 									},
 								},
 							},
+							qa(33062, {	-- Catching His Eye
+								["qg"] = 77184,	-- Archmage Khadgar
+								["coord"] = { 29.2, 25.7, 539 },
+								["sourceQuests"] = {
+									34587,	-- Build Your Barracks
+									33359,	-- Meet Us at Starfall Post
+								},
+							}),
 							qa(34779, {	-- Circle the Wagon
 								i(117499),	-- Lunarlight Plate Stompers
 								i(117500),	-- Lunartanned Boots
@@ -195,6 +216,14 @@ _.Zones =
 								i(113237),	-- Blademoon Leggings
 								i(113240),	-- Blademoon Plate Legguards
 								i(113238),	-- Blademoon Trousers
+							}),
+							qa(33113, {	-- Shadowmoonwell
+								["qg"] = 72623,	-- Delas Moonfang
+								["coord"] = { 29.4, 24.5, 539 },
+								["sourceQuests"] = {
+									34587,	-- Build Your Barracks
+									33359,	-- Meet Us at Starfall Post
+								},
 							}),
 							qa(34019, { -- Shadows Awaken
 								i(107313),	-- Karabor Honor Guard Girdle

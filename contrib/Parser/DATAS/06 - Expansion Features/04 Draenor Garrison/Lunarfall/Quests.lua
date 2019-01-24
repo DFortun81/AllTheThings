@@ -92,7 +92,7 @@ _.ExpansionFeatures =
 							}),
 						}),
 					}),
-					garrisonBuilding(138, { 	 -- Lumber Mill
+					garrisonBuilding(138, {	-- Lumber Mill
 						{	-- Easing into Lumberjacking
 							["questID"] = 36189,
 							["qg"] = 84248,	-- Justin Timberlord <Work Orders>
@@ -1836,6 +1836,11 @@ _.ExpansionFeatures =
 							})),
 						}),
 					}),
+					qa(33075, {	-- A Hero's Welcome
+						["qg"] = 80568,	-- Yrel
+						["coord"] = { 46.9, 50.8, 582 },
+						["sourceQuests"] = { 34692 },	-- Delegating on Draenor
+					}),
 					{	-- A Tiny Scarecrow Costume
 						["itemID"] = 128874,	-- A Tiny Scarecrow Costume
 						["questID"] = 39865,	-- Pepe can be sometimes be summoned with this mask
@@ -1944,6 +1949,16 @@ _.ExpansionFeatures =
 						["races"] = ALLIANCE_ONLY,
 						["requireSkill"] = 356,	-- Fishing
 					},
+					qa(33359, {	-- Meet Us at Starfall Post
+						["qg"] = 80645,	-- Cordana Felsong
+						["coord"] = { 43.8, 44.4, 582 },
+						["sourceQuests"] = { 34586 },	-- Establish Your Garrison
+					}),
+					qa(34778, {	-- Migrant Workers
+						["qg"] = 79457,	-- Vindicator Maraad
+						["coord"] = { 44.1, 53.2, 582 },
+						["sourceQuests"] = { 34692 },	-- Delegating on Draenor
+					}),
 					{ 	-- Proving Grounds
 						["questID"] = 37433,
 						["qg"] = 79953,	-- Lieutenant Thorn
