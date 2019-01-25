@@ -10,9 +10,9 @@ _.Achievements =
 				["groups"] = {
 					un(2, ach(420)),		-- Brutal Gladiator
 					un(2, ach(6938)),		-- Cataclysmic Gladiator
-					ach(12959, {			-- Challenger: Battle for Azeroth Season 1
+					un(2, ach(12959, {			-- Challenger: Battle for Azeroth Season 1
 						title(32),				-- Challenger
-					}),
+					})),
 					un(2, ach(11017)),		-- Challenger: Legion Season 1
 					un(2, ach(11028)),		-- Challenger: Legion Season 2
 					un(2, ach(11039)),		-- Challenger: Legion Season 3
@@ -62,13 +62,12 @@ _.Achievements =
 					})),
 					a(ach(13137)),			-- Dread Combatant (Alliance)
 					h(ach(13136)),			-- Dread Combatant (Horde)
-					ach(12945, {			-- Dread Gladiator: Battle for Azeroth Season 1
+					un(2, ach(12945, {			-- Dread Gladiator: Battle for Azeroth Season 1
 						--title(XX),			-- Dread Gladiator (title not in as of Pre-Patch)
-					}),
+					})),
 					{	-- Duelist: Battle for Azeroth Season 1
 						["achievementID"] = 12962,	-- Duelist: Battle for Azeroth Season 1
-						--["u"] = 2,					-- Unobtainable Achievement
-						--Note!! Uncomment this out when Battle For Azeroth Season 2 hits!
+						["u"] = 2,					-- Unobtainable Achievement
 						--Note!! We do not need a description stating it's not account-bound.  It's well known and ATT tracks it accordingly.
 						["g"] = {
 							{	-- Duelist Title
@@ -124,8 +123,7 @@ _.Achievements =
 					un(2, ach(3436)),		-- Furious Gladiator
 					{	-- Gladiator: Battle for Azeroth Season 1
 						["achievementID"] = 12961,	-- Gladiator: Battle for Azeroth Season 1
-						--["u"] = 2,					-- Unobtainable Achievement
-						--Note!! Uncomment this out when Battle For Azeroth Season 2 hits!
+						["u"] = 2,					-- Unobtainable Achievement
 						--Note!! We do not need a description stating it's not account-bound.  It's well known and ATT tracks it accordingly.
 						["g"] = {
 							{	-- Gladiator Title
