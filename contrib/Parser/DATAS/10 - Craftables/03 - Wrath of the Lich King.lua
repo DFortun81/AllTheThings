@@ -266,6 +266,9 @@ _.Craftables =
 				{	-- Sunforged Bracers [H]
 					["itemID"] = 47575,	-- Sunforged Bracers
 				},
+				{	-- Tempered Saronite Bracers
+					["itemID"] = 41116,	-- Tempered Saronite Bracers
+				},
 				{	-- Titanium Spikeguards [A]
 					["itemID"] = 47572,	-- Titanium Spikeguards
 				},
