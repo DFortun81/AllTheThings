@@ -64,7 +64,7 @@ _.Zones =
 						},
 						{	-- Loose Parts [H Only]
 							["objectID"] = 311902,	-- Loose Parts
-							["questID"] = 54526,	-- Whether you have it collected this assault or not.
+							["questID"] = 54525,	-- Whether you have it collected this assault or not.
 							["icon"] = "Interface\\Icons\\INV_Engineering_ReavesBattery",
 							["races"] = HORDE_ONLY,	-- Only Horde can collect the parts from this.
 							["g"] ={
