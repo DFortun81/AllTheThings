@@ -377,6 +377,7 @@ _.PVP =
 						["u"] = 2, 
 					},
 				}),
+				["races"] = ALLIANCE_ONLY,
 			},
 			{	-- Gold Strong Box - Rated Win (H)
 				["itemID"] = 165711,	-- Gold Strong Box - Win (H)
@@ -750,6 +751,7 @@ _.PVP =
 						["u"] = 2, 
 					},
 				}),
+				["races"] = HORDE_ONLY,
 			},
 		},
 	}),

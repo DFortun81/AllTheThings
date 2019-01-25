@@ -713,6 +713,10 @@ _.PVP =
 						["itemID"] = 161674,	-- Dread Gladiator's Medallion
 						["u"] = 2,	
 					},
+					{	-- Warlord's Trophy Dread Elite
+						["itemID"] = 164587,	-- Warlord's Trophy Dread Elite
+						["u"] = 2,	-- Was available as cap item 2-4 weeks before season end.
+					},
 				}),
 			},
 			{	-- Sinister Gladiator: Battle for Azeroth  Season 2
@@ -2172,6 +2176,22 @@ _.PVP =
 						["itemID"] = 161674,	-- Dread Gladiator's Medallion
 						["u"] = 2,	
 					},
+					{	-- Warlord's Trophy Dread Challenger
+						["itemID"] = 164584,	-- Warlord's Trophy Dread Challenger
+						["u"] = 2,	
+					},
+					{	-- Warlord's Trophy Dread Rival
+						["itemID"] = 164585,	-- Warlord's Trophy Dread Rival
+						["u"] = 2,	
+					},
+					{	-- Warlord's Trophy Dread Duelist
+						["itemID"] = 164586,	-- Warlord's Trophy Dread Duelist
+						["u"] = 2,	
+					},
+					{	-- Warlord's Trophy Dread Elite
+						["itemID"] = 164587,	-- Warlord's Trophy Dread Elite
+						["u"] = 2,	
+					},
 					{	-- Sinister Gladiator's Bonecracker
 						["itemID"] = 165041,	-- Sinister Gladiator's Bonecracker
 					},
@@ -2909,18 +2929,6 @@ _.PVP =
 					},
 					{	-- Sinister Gladiator's Cloak
 						["itemID"] = 165060,	-- Sinister Gladiator's Cloak
-					},
-					{	-- Warlord's Trophy Dread Challenger
-						["itemID"] = 164584,	-- Warlord's Trophy Dread Challenger
-					},
-					{	-- Warlord's Trophy Dread Rival
-						["itemID"] = 164585,	-- Warlord's Trophy Dread Rival
-					},
-					{	-- Warlord's Trophy Dread Duelist
-						["itemID"] = 164586,	-- Warlord's Trophy Dread Duelist
-					},
-					{	-- Warlord's Trophy Dread Elite
-						["itemID"] = 164587,	-- Warlord's Trophy Dread Elite
 					},
 				}),
 			},
