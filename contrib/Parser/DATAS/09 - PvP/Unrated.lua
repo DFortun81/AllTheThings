@@ -529,6 +529,7 @@ _.PVP =
 				i(165192),	-- Sinister Aspirant Slicer
 				i(165194),	-- Sinister Aspirant Shanker
 				i(166812),	-- Sinister Aspirant Mageblade
+				i(165198),	-- Sinister Aspirant Shield Wall
 				i(165209),	-- Sinister Aspirant Shawl
 				i(165210),	-- Sinister Aspirant Greatcloak
 				i(165211),	-- Sinister Aspirant Drape
@@ -546,6 +547,7 @@ _.PVP =
 				i(166478),	-- Sinister Aspirant's Greatsword
 				i(165200),	-- Sninister Aspirant Staff
 				i(165207),	-- Sinister Aspirant Mageblade
+				i(165199),	-- Sinister Aspirant Shield Wall
 				i(166903),	-- Sinister Aspirant Slicer
 				i(165203),	-- Sinister Aspirant Shanker
 				i(165213),	-- Sinister Aspirant Shawl

@@ -21,7 +21,6 @@ _.NeverImplemented =
 		un(1, i(166358)),	-- Proper Parrot/ Proper Parrot was supposed to be added in 8.1, tied to the quest Be More Uniform.A few days after 8.1 went live, it was removed from the pet journal. Nobody obtained it from the quest.
 		un(1, i(165845)),	-- Mechanical Feather. Most likely same as above.
 		un(1, i(165792)),	-- Worn Cloak (future WQ?)
-		un(1, i(165925)),	-- Drape of Valiant Defense (future WQ?)
 	}),
 	n(-220, { -- Class
 		cl(12, { -- DH
@@ -548,6 +547,7 @@ _.NeverImplemented =
 			un(1, i(134699)), -- Enveloping Drape
 			un(1, i(134609)), -- Scorching Cape
 			un(1, i(134617)), -- Scorching Drape
+			un(1, i(163245)),	-- 7th legionaire's satin cloak
 			un(1, i(150489)), -- Shroud of Forgiveness
 			un(1, i(150714)), -- Travel-Worn Shawl
 			un(1, i(134579)), -- Vanguard Cape
@@ -1211,7 +1211,11 @@ _.NeverImplemented =
 			un(1, i(109361)),    -- Unknown
 			un(1, i(109535)),    -- Unknown
 			un(1, i(109534)),    -- Unknown
-			un(1, i(165269)),	-- Unknown
+			un(1, i(165269)),	-- unknown
+			un(1, i(159894)),	-- honorable combatant's strikter
+			un(1, i(159895)),	-- honorable combatant's cestus
+			un(1, i(161973)),	-- honorable combatant's striker
+			un(1, i(161974)),	-- honorable combatant's cestus
 			un(1, i(64774)),	-- Bloodthirsty Gladiator's Slasher(Epic BG item never made it out of beta))
 			un(1, i(64775)),	-- Bloodthirsty Gladiator's Fleshslicer (Epic BG item never made it out of beta))
 			un(1, i(64825)),	-- Bloodthirsty Gladiator's Right Render (Epic BG item never made it out of beta))
@@ -1311,6 +1315,9 @@ _.NeverImplemented =
 			un(1, i(34415)),	-- Crystaline Shard Shield
 			un(1, i(54554)),	-- Bejeweled Ship's Wheel
 			un(1, i(60220)),	-- Unknown
+			un(1, i(159814)),	-- Unknown
+			un(1, i(159815)),	-- Unknown
+			un(1, i(165276)),	-- Unknown
 		}),
 		n(-342, { -- Staves
 			un(1, i(132474)),	-- Unknown - was under Legion>Staves

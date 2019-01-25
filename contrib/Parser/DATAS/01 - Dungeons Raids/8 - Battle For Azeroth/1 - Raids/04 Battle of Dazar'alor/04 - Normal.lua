@@ -43,6 +43,7 @@ _.Instances =
 									{	-- Boots of the Dark Iron Raider
 										["itemID"] = 165563,	-- Boots of the Dark Iron Raider
 									},
+									i(165925),	-- Drape of Valiant Defense
 								},
 							},
 							{	-- Champion of the Light
