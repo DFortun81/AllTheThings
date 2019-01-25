@@ -439,7 +439,7 @@ _.GearSets =
 					n(-140, { -- Communal
 						["groups"] = {
 							n(-9915, {	-- Disc / Holy
-							--	i(129394),	-- Communal Staff
+								i(117230),	-- Communal Staff
 								i(117219),	-- Communal Hood
 							--	i(101178),	-- Communal Necklace
 							--	i(101173),	-- Communal Cloak of Wisdom
@@ -456,6 +456,7 @@ _.GearSets =
 								i(117226),	-- Communal Stone of Wisdom
 							}),
 							n(-9917, {	-- Shadow
+								i(117240),	-- Communal Stave
 							--	i(129379),	-- Communal Wand
 								i(117234),	-- Communal Cowl
 							--	i(101167),	-- Communal Medallion
@@ -475,6 +476,173 @@ _.GearSets =
 						},
 						["classes"] = { 5 }
 					}),
+					n(-145, { -- Mountainsage
+						["groups"] = {
+							i(117126),	-- Mountainsage Staff
+							--	i(101081),	-- Mountainsage Wand
+							--	i(101075),	-- Mountainsage Hood
+							--	i(101068),	-- Mountainsage Medallion
+							--	i(101082),	-- Mountainsage Cloak of Destruction
+							--	i(101078),	-- Mountainsage Shoulderpads
+							--	i(101077),	-- Mountainsage Robe
+							--	i(101080),	-- Mountainsage Wristwraps
+							--	i(101074),	-- Mountainsage Handwraps
+							--	i(101079),	-- Mountainsage Cord
+							--	i(101076),	-- Mountainsage Leggings
+							--	i(101073),	-- Mountainsage Sandals
+							--	i(101070),	-- Mountainsage Band of Destruction
+							--	i(101071),	-- Mountainsage Ring of Destruction
+							--	i(101069),	-- Mountainsage Idol of Destruction
+							--	i(101072),	-- Mountainsage Stone of Destruction
+						},
+						["classes"] = { 8 }
+					}),
+					n(-141, { -- Felsoul 
+						["groups"] = {
+							i(117320),	-- Felsoul Staff
+							--	i(101275),	-- Felsoul Wand
+							--	i(101269),	-- Felsoul Cowl
+							--	i(101262),	-- Felsoul Medallion
+							--	i(101276),	-- Felsoul Cloak of Destruction
+							--	i(101272),	-- Felsoul Shoulderpads
+							--	i(101271),	-- Felsoul Robe
+							--	i(101274),	-- Felsoul Wristwraps
+							--	i(101268),	-- Felsoul Handwraps
+							--	i(101273),	-- Felsoul Cord
+							--	i(101270),	-- Felsoul Leggings
+							--	i(101267),	-- Felsoul Sandals
+							--	i(101264),	-- Felsoul Band of Destruction
+							--	i(101265),	-- Felsoul Ring of Destruction
+							--	i(101263),	-- Felsoul Idol of Destruction
+							--	i(101266),	-- Felsoul Stone of Destruction
+						},
+						["classes"] = { 9 }
+					}),
+					n(-147, { -- Springrain
+						["groups"] = {
+							i(117062),	-- Springrain Stave
+							i(117094),	-- Springrain StaFF
+							n(-9926, { -- Balance
+								--	i(101016),	-- Springrain Headpiece
+								--	i(101037),	-- Springrain Necklace
+								--	i(101042),	-- Springrain Cloak of Destruction
+								--	i(101018),	-- Springrain Spaulders
+								--	i(101013),	-- Springrain Tunic
+								--	i(101021),	-- Springrain Bracers
+								--	i(101015),	-- Springrain Grips
+								--	i(101020),	-- Springrain Belt
+								--	i(101017),	-- Springrain Leggings
+								--	i(101014),	-- Springrain Treads
+								--	i(101024),	-- Springrain Band of Destruction
+								--	i(101025),	-- Springrain Ring of Destruction
+								--	i(101023),	-- Springrain Idol of Destruction
+								--	i(101026),	-- Springrain Stone of Destruction
+							}),
+							n(-9925, { -- Feral
+								i(117075),	-- Springrain Spear
+								--	i(101030),	-- Springrain Helm
+								--	i(101008),	-- Springrain Choker
+								--	i(101007),	-- Springrain Cloak of Rage
+								--	i(101033),	-- Springrain Pauldrons
+								--	i(101027),	-- Springrain Vest
+								--	i(101035),	-- Springrain Cuffs
+								--	i(101029),	-- Springrain Handguards
+								--	i(101034),	-- Springrain Cord
+								--	i(101031),	-- Springrain Legguards
+								--	i(101028),	-- Springrain Footpads
+								--	i(101010),	-- Springrain Ring of Onslaught
+								--	i(101011),	-- Springrain Band of Onslaught
+								--	i(101009),	-- Springrain Idol of Rage
+								--	i(101012),	-- Springrain Stone of Rage
+							}),
+							n(-9927, { -- Restoration
+								--	i(101046),	-- Springrain Hood
+								--	i(101022),	-- Springrain Medallion
+								--	i(101036),	-- Springrain Cloak of Wisdom
+								--	i(101048),	-- Springrain Shoulders
+								--	i(101043),	-- Springrain Jerkin
+								--	i(101050),	-- Springrain Bindings
+								--	i(101045),	-- Springrain Gloves
+								--	i(101049),	-- Springrain Waistband
+								--	i(101047),	-- Springrain Britches
+								--	i(101044),	-- Springrain Boots
+								--	i(101039),	-- Springrain Band of Wisdom
+								--	i(101040),	-- Springrain Ring of Wisom
+								--	i(101038),	-- Springrain Idol of Wisdom
+								--	i(101041),	-- Springrain Stone of Wisom
+							}),
+						},
+						["classes"] = { 11 }
+					}),
+					n(-143, { -- Lightdrinker 
+						["groups"] = {
+							i(117255),	-- Lightdrinker Dagger
+							--	i(101214),	-- Lightdrinker Sword
+							i(117256),	-- Lightdrinker Shiv
+							--	i(101207),	-- Lightdrinker Hood
+							--	i(101199),	-- Lightdrinker Choker
+							--	i(101198),	-- Lightdrinker Cloak of Rage
+							--	i(101209),	-- Lightdrinker Shoulders
+							--	i(101204),	-- Lightdrinker Jerkin
+							--	i(101211),	-- Lightdrinker Bindings
+							--	i(101206),	-- Lightdrinker Gloves
+							--	i(101210),	-- Lightdrinker Waistband
+							--	i(101208),	-- Lightdrinker Britches
+							--	i(101205),	-- Lightdrinker Boots
+							--	i(101201),	-- Lightdrinker Band of Onslaught
+							--	i(101202),	-- Lightdrinker Ring of Onslaught
+							--	i(101200),	-- Lightdrinker Idol of Rage
+							--	i(101203),	-- Lightdrinker Stone of Rage
+						},
+						["classes"] = { 4 }
+					}),
+					n(-144, { -- Mistdancer 
+						["groups"] = {
+							i(117152),	-- Mistdancer Staff
+							--	i(101112),	-- Mistdancer Sword
+							n(-9931, {	-- Brewmaster
+								i(117131),	-- Mistdancer Spire
+								--	i(101084),	-- Mistdancer Amulet
+								--	i(101085),	-- Mistdancer Band of Stoicism
+								--	i(101086),	-- Mistdancer Ring of Stoicism
+								--	i(101089),	-- Mistdancer Defender Idol
+								--	i(101087),	-- Mistdancer Defender Stone
+							}),
+							n(-9933, {	-- Mistweaver
+								--	i(101100),	-- Mistdancer Hood
+								--	i(101104),	-- Mistdancer Necklace
+								--	i(101101),	-- Mistdancer Cloak of Wisdom
+								--	i(101108),	-- Mistdancer Shoulders
+								--	i(101119),	-- Mistdancer Jerkin
+								--	i(101111),	-- Mistdancer Bindings
+								--	i(101099),	-- Mistdancer Gloves
+								--	i(101110),	-- Mistdancer Waistband
+								--	i(101103),	-- Mistdancer Britches
+								--	i(101098),	-- Mistdancer Boots
+								--	i(101106),	-- Mistdancer Band of Wisdom
+								--	i(101105),	-- Mistdancer Ring of Wisdom
+								--	i(101102),	-- Mistdancer Idol of Wisdom
+								--	i(101107),	-- Mistdancer Stone of Wisdom
+							}),
+							n(-9932, {	-- Windwalker
+								--	i(101093),	-- Mistdancer Helm
+								--	i(101114),	-- Mistdancer Choker
+								--	i(101118),	-- Mistdancer Cloak of Rage
+								--	i(101095),	-- Mistdancer Pauldrons [Hidden Shoulders]
+								--	i(101090),	-- Mistdancer Vest
+								--	i(101097),	-- Mistdancer Cuffs
+								--	i(101092),	-- Mistdancer Handguards
+								--	i(101096),	-- Mistdancer Cord
+								--	i(101094),	-- Mistdancer Legguards
+								--	i(101091),	-- Mistdancer Footpads
+								--	i(101115),	-- Mistdancer Band of Onslaught
+								--	i(101116),	-- Mistdancer Ring of Onslaught
+								--	i(101113),	-- Mistdancer Idol of Rage
+								--	i(101117),	-- Mistdancer Stone of Rage
+							}),
+						},
+						["classes"] = { 10 }
+					}),
 					n(-150, { -- Trailseeker
 						["groups"] = {
 							i(117109),	-- Trailseeker Shotgun
@@ -488,8 +656,8 @@ _.GearSets =
 							i(117107),	-- Trailseeker Belt
 							i(117105),	-- Trailseeker Legguards
 							i(117102),	-- Trailseeker Greaves
-						--	i(101055),	-- Trailseeker Band of Onslaught
-						--	i(101056),	-- Trailseeker Ring of Onslaught
+							i(117098),	-- Trailseeker Band of Onslaught
+							i(117099),	-- Trailseeker Ring of Onslaught
 							i(117097),	-- Trailseeker Idol of Rage
 							i(117100),	-- Trailseeker Stone of Rage
 						},
@@ -558,38 +726,38 @@ _.GearSets =
 							i(117019),	-- Heart-Lesion Greatsword
 							i(117049),	-- Heart-Lesion Runeblade
 							n(-9949, {	-- Frost / Unholy
-				--[[			i(100985),	-- Heart-Lesion Blade
-								i(100980),	-- Heart-Lesion Helm
-								i(100987),	-- Heart-Lesion Pendant
-					--]]		i(117029),	-- Heart-Lesion Cloak of Battle
-				--[[			i(100982),	-- Heart-Lesion Pauldrons
-								i(100977),	-- Heart-Lesion Breastplate
-								i(100984),	-- Heart-Lesion Vambraces
-								i(100979),	-- Heart-Lesion Gauntlets
-								i(100983),	-- Heart-Lesion Girdle
-								i(100981),	-- Heart-Lesion Legplates
-								i(100978),	-- Heart-Lesion Sabatons
-								i(100989),	-- Heart-Lesion Band of Might
-								i(100988),	-- Heart-Lesion Ring of Might
-								i(100991),	-- Heart-Lesion Idol of Battle
-								i(100990),	-- Heart-Lesion Stone of Battle
-				--]]		}),
+								--	i(100985),	-- Heart-Lesion Blade
+								--	i(100980),	-- Heart-Lesion Helm
+								--	i(100987),	-- Heart-Lesion Pendant
+								i(117029),	-- Heart-Lesion Cloak of Battle
+								--	i(100982),	-- Heart-Lesion Pauldrons
+								--	i(100977),	-- Heart-Lesion Breastplate
+								--	i(100984),	-- Heart-Lesion Vambraces
+								--	i(100979),	-- Heart-Lesion Gauntlets
+								--	i(100983),	-- Heart-Lesion Girdle
+								--	i(100981),	-- Heart-Lesion Legplates
+								--	i(100978),	-- Heart-Lesion Sabatons
+								i(117032),	-- Heart-Lesion Band of Might
+								i(117031),	-- Heart-Lesion Ring of Might
+								--	i(100991),	-- Heart-Lesion Idol of Battle
+								--	i(100990),	-- Heart-Lesion Stone of Battle
+							}),
 							n(-9948, {	-- Blood DK
-				--[[			i(100996),	-- Heart-Lesion Faceguard
-								i(100998),	-- Heart-Lesion Amulet
-					--]]		i(117036),	-- Heart-Lesion of Stoicism
-					--[[		i(101003),	-- Heart-Lesion Shoulderguards
-								i(100992),	-- Heart-Lesion Chestguard
-								i(101005),	-- Heart-Lesion Armguards
-								i(100995),	-- Heart-Lesion Handguards
-								i(101004),	-- Heart-Lesion Waistband
-								i(100997),	-- Heart-Lesion Legguards
-								i(100994),	-- Heart-Lesion Greaves
-								i(101001),	-- Heart-Lesion Band of Stoicism
-								i(101000),	-- Heart-Lesion Ring of Stoicism
-								i(100999),	-- Heart-Lesion Defender Idol
-								i(101002),	-- Heart-Lesion Defender Stone
-				--]]		}),
+								--	i(100996),	-- Heart-Lesion Faceguard
+								--	i(100998),	-- Heart-Lesion Amulet
+								i(117036),	-- Heart-Lesion of Stoicism
+								--	i(101003),	-- Heart-Lesion Shoulderguards
+								--	i(100992),	-- Heart-Lesion Chestguard
+								--	i(101005),	-- Heart-Lesion Armguards
+								--	i(100995),	-- Heart-Lesion Handguards
+								--	i(101004),	-- Heart-Lesion Waistband
+								--	i(100997),	-- Heart-Lesion Legguards
+								--	i(100994),	-- Heart-Lesion Greaves
+									i(117044),	-- Heart-Lesion Band of Stoicism
+									i(117043),	-- Heart-Lesion Ring of Stoicism
+								--	i(100999),	-- Heart-Lesion Defender Idol
+								--	i(101002),	-- Heart-Lesion Defender Stone
+							}),
 						},
 						["classes"] = { 6 }
 					}),					

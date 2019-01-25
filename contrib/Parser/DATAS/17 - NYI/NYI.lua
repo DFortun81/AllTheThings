@@ -1379,12 +1379,8 @@ _.NeverImplemented =
 			un(1, i(64701)),	-- Bloodthirsty Gladiator's Bonegrinder (Epic BG Item, never made it out of beta))
 			un(1, i(64726)),	-- Bloodthirsty Gladiator's Decapitator (Epic BG item never made it out of beta))
 		}),
-		n(-337, { -- Two Handed Swords
-		--	un(1, i(84717),		-- Dreadful Gladiator's Greatsword (did not make it :( )
-			un(1, i(49457)),	-- Unknown
-			un(1, i(64755)),	-- Bloodthirsty Gladiator's Greatsword (Epic BG item never made it out of beta))
-			un(1, i(139621)),	-- The Watcher's Hammer. Used for Lost Edicts of the Watcher Paladin Appearance, actual appearance is gained via a different item
-		
+		n(-337, { -- Two Handed Maces
+			un(1, i(23457)),	-- High Warlord's Destroyer
 		}),
 		n(-339, { -- Two Handed Swords
 			un(1, i(140687)),	-- Unholy Runeblade (You only get Heart-Lession Gear, even as Unholy)
@@ -1394,6 +1390,10 @@ _.NeverImplemented =
 			un(1, i(153717)),	-- Heart-Lession Greatsword (You get the Runeblade)
 			un(1, i(33475)),	-- Artefact Frostmourne
 			un(1, i(137581)),	-- Test Ashbringer 1
+		--	un(1, i(84717),		-- Dreadful Gladiator's Greatsword (did not make it :( )
+			un(1, i(49457)),	-- Unknown
+			un(1, i(64755)),	-- Bloodthirsty Gladiator's Greatsword (Epic BG item never made it out of beta))
+			un(1, i(139621)),	-- The Watcher's Hammer. Used for Lost Edicts of the Watcher Paladin Appearance, actual appearance is gained via a different item
 			un(1, i(137582)),	-- Test Ashbringer 2
 			un(1, i(49547)),	-- Unknown
 			un(1, i(158506)),	-- Scalawags Claymore
