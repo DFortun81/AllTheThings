@@ -490,8 +490,8 @@ _.GearSets =
 							--	i(101079),	-- Mountainsage Cord
 							--	i(101076),	-- Mountainsage Leggings
 							--	i(101073),	-- Mountainsage Sandals
-							--	i(101070),	-- Mountainsage Band of Destruction
-							--	i(101071),	-- Mountainsage Ring of Destruction
+							i(117113),	-- Mountainsage Band of Destruction
+							i(117114),	-- Mountainsage Ring of Destruction
 							--	i(101069),	-- Mountainsage Idol of Destruction
 							--	i(101072),	-- Mountainsage Stone of Destruction
 						},
@@ -533,8 +533,8 @@ _.GearSets =
 								--	i(101020),	-- Springrain Belt
 								--	i(101017),	-- Springrain Leggings
 								--	i(101014),	-- Springrain Treads
-								--	i(101024),	-- Springrain Band of Destruction
-								--	i(101025),	-- Springrain Ring of Destruction
+								i(117067),	-- Springrain Band of Destruction
+								i(117068),	-- Springrain Ring of Destruction
 								--	i(101023),	-- Springrain Idol of Destruction
 								--	i(101026),	-- Springrain Stone of Destruction
 							}),
@@ -550,8 +550,8 @@ _.GearSets =
 								--	i(101034),	-- Springrain Cord
 								--	i(101031),	-- Springrain Legguards
 								--	i(101028),	-- Springrain Footpads
-								--	i(101010),	-- Springrain Ring of Onslaught
-								--	i(101011),	-- Springrain Band of Onslaught
+								i(117053),	-- Springrain Ring of Onslaught
+								i(117054),	-- Springrain Band of Onslaught
 								--	i(101009),	-- Springrain Idol of Rage
 								--	i(101012),	-- Springrain Stone of Rage
 							}),
@@ -566,8 +566,8 @@ _.GearSets =
 								--	i(101049),	-- Springrain Waistband
 								--	i(101047),	-- Springrain Britches
 								--	i(101044),	-- Springrain Boots
-								--	i(101039),	-- Springrain Band of Wisdom
-								--	i(101040),	-- Springrain Ring of Wisom
+								i(117082),	-- Springrain Band of Wisdom
+								i(117083),	-- Springrain Ring of Wisom
 								--	i(101038),	-- Springrain Idol of Wisdom
 								--	i(101041),	-- Springrain Stone of Wisom
 							}),
@@ -721,40 +721,142 @@ _.GearSets =
 						},
 						["classes"] = { 7 }
 					}),
+					n(-149, { -- Sunsoul 
+						["groups"] = {
+							--	i(101143),	-- Sunsoul Shield
+							--	i(101145),	-- Sunsoul FBulwark
+							n(-9942, {	-- Holy
+								--	i(101142),	-- Sunsoul Scepter
+								--	i(101132),	-- Sunsoul Headpiece
+								--	i(101134),	-- Sunsoul Necklace
+								--	i(101129),	-- Sunsoul Cloak of Wisdom
+								--	i(101139),	-- Sunsoul Spaulders
+								--	i(101128),	-- Sunsoul Breastplate
+								--	i(101141),	-- Sunsoul Armplates
+								--	i(101131),	-- Sunsoul Gloves
+								--	i(101140),	-- Sunsoul Belt
+								--	i(101133),	-- Sunsoul Leggings
+								--	i(101130),	-- Sunsoul Boots
+								--	i(101137),	-- Sunsoul Band of Wisdom
+								--	i(101136),	-- Sunsoul Ring of Wisdom
+								--	i(101135),	-- Sunsoul Idol of Wisome
+								--	i(101138),	-- Sunsoul Stone of Wisdom
+							}),
+							n(-9943, {	-- Protection
+								--	i(101144),	-- Sunsoul Sword
+								--	i(101157),	-- Sunsoul Faceguard
+								--	i(101159),	-- Sunsoul Amulet
+								--	i(101154),	-- Sunsoul Cloak of Stoicism
+								--	i(101164),	-- Sunsoul Shoulderguards
+								--	i(101153),	-- Sunsoul Chestguard
+								--	i(101166),	-- Sunsoul Armguards
+								--	i(101156),	-- Sunsoul Handguards
+								--	i(101165),	-- Sunsoul Waistband
+								--	i(101158),	-- Sunsoul Legguards
+								--	i(101155),	-- Sunsoul Greaves
+								--	i(101162),	-- Sunsoul Band of Stoicism
+								--	i(101161),	-- Sunsoul Ring of Stoicism
+								--	i(101160),	-- Oathsworn Defender Idol
+								--	i(101163),	-- Oathsworn Defender Stone
+							}),
+							n(-9944, {	-- Retributon
+								--	i(101146),	-- Sunsoul Greatsword
+								i(117189),	-- Sunsoul Warmaul
+								--	i(101123),	-- Sunsoul Helm
+								--	i(101148),	-- Sunsoul Pendant
+								--	i(101147),	-- Sunsoul Cloak of Battle
+								--	i(101125),	-- Sunsoul Pauldrons
+								--	i(101120),	-- Sunsoul Battleplate
+								--	i(101127),	-- Sunsoul Vambraces
+								--	i(101122),	-- Sunsoul Gauntlets
+								--	i(101126),	-- Sunsoul Girdle
+								--	i(101124),	-- Sunsoul Legplates
+								--	i(101121),	-- Sunsoul Sabatons
+								--	i(101150),	-- Sunsoul Band of Might
+								--	i(101149),	-- Sunsoul Ring of Might
+								--	i(101151),	-- Sunsoul Stone of Battle
+								--	i(101152),	-- Sunsoul Idol of Battle
+							}),
+						},
+						["classes"] = { 2 }
+					}),
+					n(-146, { -- Oathsworn 
+						["groups"] = {
+							--	i(101287),	-- Oathsworn Maul
+							--	i(101289),	-- Oathsworn Bulwark
+							n(-9945, {	-- Arms / Fury
+								--	i(101278),	-- Oathsworn Greatsword
+								i(117330),	-- Oathsworn Headchopper
+								i(117321),	-- Oathsworn Greataxe
+								--	i(101282),	-- Oathsworn Helm
+								--	i(101291),	-- Oathsworn Pendant
+								--	i(101290),	-- Oathsworn Cloak of Battle
+								--	i(101284),	-- Oathsworn Pauldrons
+								--	i(101279),	-- Oathsworn Breastplate
+								--	i(101286),	-- Oathsworn Vambraces
+								--	i(101281),	-- Oathsworn Gauntlets
+								--	i(101285),	-- Oathsworn Girdle
+								--	i(101283),	-- Oathsworn Legplates
+								--	i(101280),	-- Oathsworn Sabatons
+								--	i(101292),	-- Oathsworn Band of Might
+								--	i(101293),	-- Oathsworn Ring of Might
+								--	i(101295),	-- Oathsworn Idol of Battle
+								--	i(101294),	-- Oathsworn Stone of Battle
+							}),
+							n(-9947, {	-- Protection
+								--	i(101288),	-- Oathsworn Sword
+								--	i(101300),	-- Oathsworn Faceguard
+								--	i(101302),	-- Oathsworn Amulet
+								--	i(101297),	-- Oathsworn Cloak of Stoicism
+								--	i(101307),	-- Oathsworn Shoulderguards
+								--	i(101296),	-- Oathsworn Chestguard
+								--	i(101309),	-- Oathsworn Armguards
+								--	i(101299),	-- Oathsworn Handguards
+								--	i(101308),	-- Oathsworn Waistband
+								--	i(101301),	-- Oathsworn Legguards
+								--	i(101298),	-- Oathsworn Greaves
+								--	i(101304),	-- Oathsworn Band of Stoicism
+								--	i(101305),	-- Oathsworn Ring of Stoicism
+								--	i(101303),	-- Oathsworn Defender Idol
+								--	i(101306),	-- Oathsworn Defender Stone
+							}),
+						},
+						["classes"] = { 1 }
+					}),	
 					n(-142, { -- Heart-Lesion 
 						["groups"] = {
 							i(117019),	-- Heart-Lesion Greatsword
 							i(117049),	-- Heart-Lesion Runeblade
 							n(-9949, {	-- Frost / Unholy
 								--	i(100985),	-- Heart-Lesion Blade
-								--	i(100980),	-- Heart-Lesion Helm
+								i(117023),	-- Heart-Lesion Helm
 								--	i(100987),	-- Heart-Lesion Pendant
 								i(117029),	-- Heart-Lesion Cloak of Battle
-								--	i(100982),	-- Heart-Lesion Pauldrons
-								--	i(100977),	-- Heart-Lesion Breastplate
-								--	i(100984),	-- Heart-Lesion Vambraces
-								--	i(100979),	-- Heart-Lesion Gauntlets
-								--	i(100983),	-- Heart-Lesion Girdle
-								--	i(100981),	-- Heart-Lesion Legplates
-								--	i(100978),	-- Heart-Lesion Sabatons
+								i(117025),	-- Heart-Lesion Pauldrons
+								i(117020),	-- Heart-Lesion Breastplate
+								i(117027),	-- Heart-Lesion Vambraces
+								i(117022),	-- Heart-Lesion Gauntlets
+								i(117026),	-- Heart-Lesion Girdle
+								i(117024),	-- Heart-Lesion Legplates
+								i(117021),	-- Heart-Lesion Sabatons
 								i(117032),	-- Heart-Lesion Band of Might
 								i(117031),	-- Heart-Lesion Ring of Might
 								--	i(100991),	-- Heart-Lesion Idol of Battle
 								--	i(100990),	-- Heart-Lesion Stone of Battle
 							}),
 							n(-9948, {	-- Blood DK
-								--	i(100996),	-- Heart-Lesion Faceguard
+								i(117039),	-- Heart-Lesion Faceguard
 								--	i(100998),	-- Heart-Lesion Amulet
 								i(117036),	-- Heart-Lesion of Stoicism
-								--	i(101003),	-- Heart-Lesion Shoulderguards
-								--	i(100992),	-- Heart-Lesion Chestguard
-								--	i(101005),	-- Heart-Lesion Armguards
-								--	i(100995),	-- Heart-Lesion Handguards
-								--	i(101004),	-- Heart-Lesion Waistband
-								--	i(100997),	-- Heart-Lesion Legguards
-								--	i(100994),	-- Heart-Lesion Greaves
-									i(117044),	-- Heart-Lesion Band of Stoicism
-									i(117043),	-- Heart-Lesion Ring of Stoicism
+								i(117046),	-- Heart-Lesion Shoulderguards
+								i(117035),	-- Heart-Lesion Chestguard
+								i(117048),	-- Heart-Lesion Armguards
+								i(117038),	-- Heart-Lesion Handguards
+								i(117047),	-- Heart-Lesion Waistband
+								i(117040),	-- Heart-Lesion Legguards
+								i(117037),	-- Heart-Lesion Greaves
+								i(117044),	-- Heart-Lesion Band of Stoicism
+								i(117043),	-- Heart-Lesion Ring of Stoicism
 								--	i(100999),	-- Heart-Lesion Defender Idol
 								--	i(101002),	-- Heart-Lesion Defender Stone
 							}),

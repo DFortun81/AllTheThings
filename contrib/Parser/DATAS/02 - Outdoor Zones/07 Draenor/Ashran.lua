@@ -1845,6 +1845,7 @@ _.Zones =
 							un(2, i(125765)),	-- Wild Gladiator's Baton of Light
 							un(2, i(126763)),	-- Warmongering Gladiator's Touch of defeat
 							un(2, i(126879)),	-- Warmongering Gladiator's Baton of Light
+							-- Season 1 Mail
 							un(2, i(115866)),	-- Primal Gladiator's chain links
 							un(2, i(115867)),	-- Primal Gladiator's linked waistband
 							un(2, i(115868)),	-- Primal Gladiator's chain sabatons
@@ -1867,6 +1868,29 @@ _.Zones =
 							un(2, i(115938)),	-- Primal Gladiator's linked helm
 							un(2, i(115939)),	-- Primal Gladiator's linked leggings
 							un(2, i(115940)),	-- Primal Gladiator's linked spaulders
+							-- Season 2 Mail
+							un(2, i(125680)),	-- Wild Gladiator's Chain Links
+							un(2, i(125681)),	-- Wild Gladiator's linked waistband
+							un(2, i(125682)),	-- Wild Gladiator's Chain sabatons
+							un(2, i(125683)),	-- Wild Gladiator's linked sabatons
+							un(2, i(125684)),	-- Wild Gladiator's chain armor
+							un(2, i(125685)),	-- Wild Gladiator's chain gauntlets
+							un(2, i(125686)),	-- Wild Gladiator's chain helm
+							un(2, i(125687)),	-- Wild Gladiator's chain leggings
+							un(2, i(125688)),	-- Wild Gladiator's chain spaulders
+							un(2, i(125742)),	-- Wild Gladiator's ringmail waistguard
+							un(2, i(125743)),	-- Wild Gladiator's ringmail footguards
+							un(2, i(125744)),	-- Wild Gladiator's mail footguards
+							un(2, i(125745)),	-- Wild Gladiator's ringmail armor
+							un(2, i(125746)),	-- Wild Gladiator's ringmail gauntlets
+							un(2, i(125747)),	-- Wild Gladiator's ringmail helm
+							un(2, i(125748)),	-- Wild Gladiator's ringmail leggings
+							un(2, i(125749)),	-- Wild Gladiator's ringmail spaulders
+							un(2, i(125750)),	-- Wild Gladiator's linked armor
+							un(2, i(125751)),	-- Wild Gladiator's linked gauntlets
+							un(2, i(125752)),	-- Wild Gladiator's linked helm
+							un(2, i(125753)),	-- Wild Gladiator's linked leggings
+							un(2, i(125754)),	-- Wild Gladiator's linked spaulders
 						},
 						["u"] = 2, -- Vendor doesn't sell anything in 7.0+
 					}),
@@ -1986,6 +2010,7 @@ _.Zones =
 							un(2, i(125765)),	-- Wild Gladiator's Baton of Light
 							un(2, i(126763)),	-- Warmongering Gladiator's Touch of defeat
 							un(2, i(126879)),	-- Warmongering Gladiator's Baton of Light
+							-- Season 1 Mail
 							un(2, i(115866)),	-- Primal Gladiator's chain links
 							un(2, i(115867)),	-- Primal Gladiator's linked waistband
 							un(2, i(115868)),	-- Primal Gladiator's chain sabatons
@@ -2008,6 +2033,29 @@ _.Zones =
 							un(2, i(115938)),	-- Primal Gladiator's linked helm
 							un(2, i(115939)),	-- Primal Gladiator's linked leggings
 							un(2, i(115940)),	-- Primal Gladiator's linked spaulders
+							-- Season 2 Mail
+							un(2, i(125680)),	-- Wild Gladiator's Chain Links
+							un(2, i(125681)),	-- Wild Gladiator's linked waistband
+							un(2, i(125682)),	-- Wild Gladiator's Chain sabatons
+							un(2, i(125683)),	-- Wild Gladiator's linked sabatons
+							un(2, i(125684)),	-- Wild Gladiator's chain armor
+							un(2, i(125685)),	-- Wild Gladiator's chain gauntlets
+							un(2, i(125686)),	-- Wild Gladiator's chain helm
+							un(2, i(125687)),	-- Wild Gladiator's chain leggings
+							un(2, i(125688)),	-- Wild Gladiator's chain spaulders
+							un(2, i(125742)),	-- Wild Gladiator's ringmail waistguard
+							un(2, i(125743)),	-- Wild Gladiator's ringmail footguards
+							un(2, i(125744)),	-- Wild Gladiator's mail footguards
+							un(2, i(125745)),	-- Wild Gladiator's ringmail armor
+							un(2, i(125746)),	-- Wild Gladiator's ringmail gauntlets
+							un(2, i(125747)),	-- Wild Gladiator's ringmail helm
+							un(2, i(125748)),	-- Wild Gladiator's ringmail leggings
+							un(2, i(125749)),	-- Wild Gladiator's ringmail spaulders
+							un(2, i(125750)),	-- Wild Gladiator's linked armor
+							un(2, i(125751)),	-- Wild Gladiator's linked gauntlets
+							un(2, i(125752)),	-- Wild Gladiator's linked helm
+							un(2, i(125753)),	-- Wild Gladiator's linked leggings
+							un(2, i(125754)),	-- Wild Gladiator's linked spaulders
 						},
 						["u"] = 2, -- Vendor doesn't sell anything in 7.0+
 					}),

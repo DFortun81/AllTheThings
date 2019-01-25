@@ -888,6 +888,8 @@ _.NeverImplemented =
 		p(1751),
 	}))),
 		un(1, i(130145)), -- Unknown
+		un(1, i(109602)),	-- Echo of Murmur (temp item)
+		un(1, i(115469)),	-- Pet template
 		un(1, i(67417)),	-- DND lil dw placeholder
 		un(1, i(163559)),	-- Queen Cobra. Old Magni Rep Rewards, they added it via a different item
 		un(1, i(163557)),	-- Gigan Tarantula. Old Magni Rep Rewards, they added it via a different item
@@ -1376,6 +1378,7 @@ _.NeverImplemented =
 			un(1, i(69916)),	-- Trollbane (Test)
 			un(1, i(109519)),	-- Unknown
 			un(1, i(165265)),	-- Unknown
+			un(1, i(117994)),	-- Rename karabor honor guard axe
 			un(1, i(64701)),	-- Bloodthirsty Gladiator's Bonegrinder (Epic BG Item, never made it out of beta))
 			un(1, i(64726)),	-- Bloodthirsty Gladiator's Decapitator (Epic BG item never made it out of beta))
 		}),
