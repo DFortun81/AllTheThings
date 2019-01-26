@@ -372,6 +372,7 @@ _.NeverImplemented =
 			un(1, i(41758)),	-- Blood-Bond Helm
 			un(1, i(42886)),	-- Gloves of the Howling Peaks
 			un(1, i(109265)),	-- Unknown
+			un(1, i(43460)),	-- Giantmaim girdle
 			un(1, i(46273)),	-- Scourgestalker Handguards
 			un(1, i(46275)),	-- Scourgestalker legguards
 			un(1, i(46276)),	-- Scourgestalker spaulders
@@ -390,6 +391,14 @@ _.NeverImplemented =
 			un(1, i(109352)),	-- Unknown
 			un(1, i(109353)),	-- Unknown
 			un(1, i(109354)),	-- Unknown
+			un(1, i(114249)),	-- Leafscale bracers
+			un(1, i(114252)),	-- Leafscale chestguard
+			un(1, i(114257)),	-- Leafscale boots
+			un(1, i(114261)),	-- Leafscale gauntlets
+			un(1, i(114265)),	-- Leafscale helm
+			un(1, i(114269)),	-- Leafscale legguards
+			un(1, i(114273)),	-- Leafscale spaulders
+			un(1, i(114277)),	-- Leafscale belt
 			un(1, i(37433)),	-- Layered Scale Boots
 			un(1, i(37444)),	-- Wavekeeper's Helm
 			un(1, i(13090)),	-- Breastplate of the Chosen
@@ -637,6 +646,7 @@ _.NeverImplemented =
 			un(1, i(18438)), -- Sergeant's Mark
 			un(1, i(20084)), -- Hunting Net
 			un(1, i(20525)), -- Earthen Sigil
+			un(1, i(38572)),	-- Bounty Procurement enhancer
 			un(1, i(157761)),	-- Unknown
 			un(1, i(38383)),	-- Unknown
 			un(1, i(38526)),	-- Unknown
@@ -1259,6 +1269,7 @@ _.NeverImplemented =
 			un(1, i(68050)),	-- Shatterscale Mightfish
 			un(1, i(49456)),	-- Will of the Earth
 			un(1, i(50251)),	-- Unknown
+			un(1, i(42214)),	-- Savage Gladiator's Waraxe
 			un(1, i(64717)),	-- Bloodthirsty Gladiator's Cleaver (Epic BG Item, never made it out of beta)
 			un(1, i(64758)),	-- Bloodthirsty Gladiator's Hacker (Epic BG Item, never made it out of beta))
 			un(1, i(108779)),	-- Unknown

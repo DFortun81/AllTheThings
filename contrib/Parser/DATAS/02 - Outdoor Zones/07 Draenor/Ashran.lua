@@ -1961,6 +1961,35 @@ _.Zones =
 							un(2, i(125758)),	-- Wild Gladiator's mail helm
 							un(2, i(125759)),	-- Wild Gladiator's mail leggings
 							un(2, i(125760)),	-- Wild Gladiator's mail spaulders
+							-- Season 3 Cloth
+							un(2, i(126752)),	-- warmongering Gladiator's silk cord
+							un(2, i(126753)),	-- warmongering Gladiator's felweave cord
+							un(2, i(126754)),	-- warmongering Gladiator's mooncloth cord
+							un(2, i(126755)),	-- warmongering Gladiator's silk treads
+							un(2, i(126756)),	-- warmongering Gladiator's felweave treads
+							un(2, i(126757)),	-- warmongering Gladiator's mooncloth trads
+							un(2, i(126803)),	-- warmongering Gladiator's silk handguards
+							un(2, i(126804)),	-- warmongering Gladiator's silk cowl
+							un(2, i(126805)),	-- warmongering Gladiator's silk trousers
+							un(2, i(126806)),	-- warmongering Gladiator's silk robe
+							un(2, i(126807)),	-- warmongering Gladiator's silk amice
+							un(2, i(126839)),	-- warmongering Gladiator's mooncloth gloves
+							un(2, i(126840)),	-- warmongering Gladiator's mooncloth hood
+							un(2, i(126841)),	-- warmongering Gladiator's mooncloth leggings
+							un(2, i(126842)),	-- warmongering Gladiator's mooncloth robe
+							un(2, i(126843)),	-- warmongering Gladiator's mooncloth manthle
+							un(2, i(126844)),	-- warmongering Gladiator's satin gloves
+							un(2, i(126845)),	-- warmongering Gladiator's satin hood
+							un(2, i(126846)),	-- warmongering Gladiator's satin leggings
+							un(2, i(126847)),	-- warmongering Gladiator's satin robe
+							un(2, i(126848)),	-- warmongering Gladiator's satin mantle
+							un(2, i(126884)),	-- warmongering Gladiator's felweave handguards
+							un(2, i(126885)),	-- warmongering Gladiator's felweave cowl
+							un(2, i(126886)),	-- warmongering Gladiator's felweave trousers
+							un(2, i(126887)),	-- warmongering Gladiator's felweave rainment
+							un(2, i(126888)),	-- warmongering Gladiator's felweave amice
+							un(2, i(126896)),	-- warmongering Gladiator's satin treads
+							un(2, i(126897)),	-- warmongering Gladiator's satin cord
 							-- Season 3 Mail
 							un(2, i(126794)),	-- warmongering Gladiator's Chain Links
 							un(2, i(126795)),	-- warmongering Gladiator's linked waistband
@@ -1993,7 +2022,7 @@ _.Zones =
 						},
 						["u"] = 2, -- Vendor doesn't sell anything in 7.0+
 					}),
-					nh(82877, { -- High Warlord Volrath Elite -S1 -S2 -S3
+					nh(82877, { -- High Warlord Volrath Elite Season 1/S1 - Season 2/S2 - Season 3/S3 -
 						["groups"] = {
 							un(14, i(120286)),	-- Enchanter's Illusion - Glorious Tyranny
 							un(14, i(120287)),	-- Enchanter's Illusion - Primal Victory
@@ -2225,6 +2254,35 @@ _.Zones =
 							un(2, i(125758)),	-- Wild Gladiator's mail helm
 							un(2, i(125759)),	-- Wild Gladiator's mail leggings
 							un(2, i(125760)),	-- Wild Gladiator's mail spaulders
+							-- Season 3 Cloth
+							un(2, i(126752)),	-- warmongering Gladiator's silk cord
+							un(2, i(126753)),	-- warmongering Gladiator's felweave cord
+							un(2, i(126754)),	-- warmongering Gladiator's mooncloth cord
+							un(2, i(126755)),	-- warmongering Gladiator's silk treads
+							un(2, i(126756)),	-- warmongering Gladiator's felweave treads
+							un(2, i(126757)),	-- warmongering Gladiator's mooncloth trads
+							un(2, i(126803)),	-- warmongering Gladiator's silk handguards
+							un(2, i(126804)),	-- warmongering Gladiator's silk cowl
+							un(2, i(126805)),	-- warmongering Gladiator's silk trousers
+							un(2, i(126806)),	-- warmongering Gladiator's silk robe
+							un(2, i(126807)),	-- warmongering Gladiator's silk amice
+							un(2, i(126839)),	-- warmongering Gladiator's mooncloth gloves
+							un(2, i(126840)),	-- warmongering Gladiator's mooncloth hood
+							un(2, i(126841)),	-- warmongering Gladiator's mooncloth leggings
+							un(2, i(126842)),	-- warmongering Gladiator's mooncloth robe
+							un(2, i(126843)),	-- warmongering Gladiator's mooncloth manthle
+							un(2, i(126844)),	-- warmongering Gladiator's satin gloves
+							un(2, i(126845)),	-- warmongering Gladiator's satin hood
+							un(2, i(126846)),	-- warmongering Gladiator's satin leggings
+							un(2, i(126847)),	-- warmongering Gladiator's satin robe
+							un(2, i(126848)),	-- warmongering Gladiator's satin mantle
+							un(2, i(126884)),	-- warmongering Gladiator's felweave handguards
+							un(2, i(126885)),	-- warmongering Gladiator's felweave cowl
+							un(2, i(126886)),	-- warmongering Gladiator's felweave trousers
+							un(2, i(126887)),	-- warmongering Gladiator's felweave rainment
+							un(2, i(126888)),	-- warmongering Gladiator's felweave amice
+							un(2, i(126896)),	-- warmongering Gladiator's satin treads
+							un(2, i(126897)),	-- warmongering Gladiator's satin cord
 							-- Season 3 Mail
 							un(2, i(126794)),	-- warmongering Gladiator's Chain Links
 							un(2, i(126795)),	-- warmongering Gladiator's linked waistband
