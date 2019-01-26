@@ -15,13 +15,13 @@ _.Instances =
 								["crs"] = {
 									95068,	-- Hellfire Assault
 									90284,	-- Iron Reaver
-									90776,	-- Kormrok
+									90435,	-- Kormrok
 									92146,	-- Hellfire High Council
 									90378,	-- Kilrogg
 									91809,	-- Gorefiend
 									90316,	-- Shadow-Lord Iskar
-									90296,	-- Socrethar
-									93439,	-- Tyrant Velhari
+									92330,	-- Socrethar
+									90269,	-- Tyrant Velhari
 									89890,	-- Fel Lord Zakuun
 									93068,	-- Xhul
 									91349,	-- Manno
@@ -67,7 +67,7 @@ _.Instances =
 									i(128168),	-- Shrapnel-Studded Boots
 									i(128141),	-- Crackling Fel-Spark Plug
 								})),
-								cr(90776, e(1392, {	-- Kormrok
+								cr(90435, e(1392, {	-- Kormrok
 									i(128134),	-- Demonbreaker Helm
 									i(128132),	-- Rancorbite Hood
 									i(128128),	-- Felfume Hood
@@ -168,7 +168,7 @@ _.Instances =
 									i(128179),	-- Talon-Link Loop
 									i(128146),	-- Ensnared Orb of the Sky
 								})),
-								cr(90296, e(1427, {	-- Socrethar the Eternal
+								cr(92330, e(1427, {	-- Socrethar the Eternal
 									i(128197),	-- Felgore Double Blade
 									i(128195),	-- Toxin-Tipped Bolt Launcher
 									i(128119),	-- Decaying Draenic Shield
@@ -183,7 +183,7 @@ _.Instances =
 									i(128088),	-- Girdle of Bound Agony
 									i(128145),	-- Howling Soul Gem
 								})),
-								cr(93439, e(1394, { -- Tyrant Velhari
+								cr(90269, e(1394, { -- Tyrant Velhari
 									i(128099),	-- Spiked Gnarlroot Greatclub
 									i(128045),	-- Mantle of Unrestrained Contempt
 									i(128181),	-- Thorny Choker of Suffering
@@ -295,13 +295,13 @@ _.Instances =
 								["crs"] = {
 									95068,	-- Hellfire Assault
 									90284,	-- Iron Reaver
-									90776,	-- Kormrok
+									90435,	-- Kormrok
 									92146,	-- Hellfire High Council
 									90378,	-- Kilrogg
 									91809,	-- Gorefiend
 									90316,	-- Shadow-Lord Iskar
-									90296,	-- Socrethar
-									93439,	-- Tyrant Velhari
+									92330,	-- Socrethar
+									90269,	-- Tyrant Velhari
 									89890,	-- Fel Lord Zakuun
 									93068,	-- Xhul
 									91349,	-- Manno
@@ -350,7 +350,7 @@ _.Instances =
 							i(124223),	-- Fel-Spring Coil
 							i(124227),	-- Iron Reaver Piston
 						})),
-						cr(90776, e(1392, {	-- Kormrok
+						cr(90435, e(1392, {	-- Kormrok
 							i(127956, {	-- Helm of Hellfire's Conqueror
 								i(124162),	-- Deathrattle Mask (Warlock)
 								i(124333),	-- Helm of the Ceaseless Vigil (Paladin)
@@ -489,7 +489,7 @@ _.Instances =
 							i(124241),	-- Anzu's Cursed Plume
 							i(124229),	-- Unblinking Gaze of Sethe
 						})),
-						cr(90296, e(1427, {	-- Socrethar the Eternal
+						cr(92330, e(1427, {	-- Socrethar the Eternal
 							i(127954, {	-- Gauntlets of Hellfire's Conqueror
 								i(124156),	-- Deathrattle Gloves (Warlock)
 								i(124328),	-- Gauntlets of the Ceaseless Vigil (Paladin)
@@ -522,7 +522,7 @@ _.Instances =
 							i(124233),	-- Demonic Phylactery
 							i(124225),	-- Soul Capacitor
 						})),
-						cr(93439, e(1394, { -- Tyrant Velhari
+						cr(90269, e(1394, { -- Tyrant Velhari
 							i(124375),	-- Maul of Tyranny
 							i(124376),	-- Warhammer of Arrogance
 							i(124355),	-- Fallen Defender of Argus
@@ -686,13 +686,13 @@ _.Instances =
 								["crs"] = {
 									95068,	-- Hellfire Assault
 									90284,	-- Iron Reaver
-									90776,	-- Kormrok
+									90435,	-- Kormrok
 									92146,	-- Hellfire High Council
 									90378,	-- Kilrogg
 									91809,	-- Gorefiend
 									90316,	-- Shadow-Lord Iskar
-									90296,	-- Socrethar
-									93439,	-- Tyrant Velhari
+									92330,	-- Socrethar
+									90269,	-- Tyrant Velhari
 									89890,	-- Fel Lord Zakuun
 									93068,	-- Xhul
 									91349,	-- Manno
@@ -741,7 +741,7 @@ _.Instances =
 							i(124223),	-- Fel-Spring Coil
 							i(124227),	-- Iron Reaver Piston
 						})),
-						cr(90776, e(1392, {	-- Kormrok
+						cr(90435, e(1392, {	-- Kormrok
 							i(127956, {	-- Helm of Hellfire's Conqueror
 								i(124162),	-- Deathrattle Mask (Warlock)
 								i(124333),	-- Helm of the Ceaseless Vigil (Paladin)
@@ -881,7 +881,7 @@ _.Instances =
 							i(124241),	-- Anzu's Cursed Plume
 							i(124229),	-- Unblinking Gaze of Sethe
 						})),
-						cr(90296, e(1427, {	-- Socrethar the Eternal
+						cr(92330, e(1427, {	-- Socrethar the Eternal
 							i(127954, {	-- Gauntlets of Hellfire's Conqueror
 								i(124156),	-- Deathrattle Gloves (Warlock)
 								i(124328),	-- Gauntlets of the Ceaseless Vigil (Paladin)
@@ -914,7 +914,7 @@ _.Instances =
 							i(124233),	-- Demonic Phylactery
 							i(124225),	-- Soul Capacitor
 						})),
-						cr(93439, e(1394, { -- Tyrant Velhari
+						cr(90269, e(1394, { -- Tyrant Velhari
 							i(124375),	-- Maul of Tyranny
 							i(124376),	-- Warhammer of Arrogance
 							i(124355),	-- Fallen Defender of Argus
@@ -1082,13 +1082,13 @@ _.Instances =
 								["crs"] = {
 									95068,	-- Hellfire Assault
 									90284,	-- Iron Reaver
-									90776,	-- Kormrok
+									90435,	-- Kormrok
 									92146,	-- Hellfire High Council
 									90378,	-- Kilrogg
 									91809,	-- Gorefiend
 									90316,	-- Shadow-Lord Iskar
-									90296,	-- Socrethar
-									93439,	-- Tyrant Velhari
+									92330,	-- Socrethar
+									90269,	-- Tyrant Velhari
 									89890,	-- Fel Lord Zakuun
 									93068,	-- Xhul
 									91349,	-- Manno
@@ -1137,7 +1137,7 @@ _.Instances =
 							i(124223),	-- Fel-Spring Coil
 							i(124227),	-- Iron Reaver Piston
 						})),
-						cr(90776, e(1392, {	-- Kormrok
+						cr(90435, e(1392, {	-- Kormrok
 							i(127956, {	-- Helm of Hellfire's Conqueror
 								i(124162),	-- Deathrattle Mask (Warlock)
 								i(124333),	-- Helm of the Ceaseless Vigil (Paladin)
@@ -1278,7 +1278,7 @@ _.Instances =
 							i(124241),	-- Anzu's Cursed Plume
 							i(124229),	-- Unblinking Gaze of Sethe
 						})),
-						cr(90296, e(1427, {	-- Socrethar the Eternal
+						cr(92330, e(1427, {	-- Socrethar the Eternal
 							i(127954, {	-- Gauntlets of Hellfire's Conqueror
 								i(124156),	-- Deathrattle Gloves (Warlock)
 								i(124328),	-- Gauntlets of the Ceaseless Vigil (Paladin)
@@ -1311,7 +1311,7 @@ _.Instances =
 							i(124233),	-- Demonic Phylactery
 							i(124225),	-- Soul Capacitor
 						})),
-						cr(93439, e(1394, { -- Tyrant Velhari
+						cr(90269, e(1394, { -- Tyrant Velhari
 							i(124375),	-- Maul of Tyranny
 							i(124376),	-- Warhammer of Arrogance
 							i(124355),	-- Fallen Defender of Argus
