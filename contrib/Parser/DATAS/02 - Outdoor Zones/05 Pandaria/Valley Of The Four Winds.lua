@@ -2368,7 +2368,7 @@ _.Zones =
 						i(103331),	-- Grievous Gladiator's Plate Legguards
 						i(103332),	-- Grievous Gladiator's Plate Shoulders
 					}),
-					nh(73147, { -- Ethan Natice (5.4.7 Elite and removed Version) -- Link for all the Items https://www.wowhead.com/npc=73145/acon-deathwielder#comments
+					nh(73147, { -- Ethan Natice Season 15 Elite(5.4.7 Elite and removed Version) -- Link for all the Items https://www.wowhead.com/npc=73145/acon-deathwielder#comments
 						["groups"] = {
 							un(2, i(102984)),	-- Elite Prideful Gladiator's Decapitator
 							un(2, i(103032)),	-- Elite Prideful Gladiator's Energy Staff

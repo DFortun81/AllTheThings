@@ -41,8 +41,8 @@ _.Instances =
 								}),
 								["crs"] = {
 									133384,	-- Merektha
-									134390,	-- Sand-crusted Striker
-									135562,	-- Venomous Ophidian
+								--	134390,	-- Sand-crusted Striker. Same ID as Trash, causes bugs
+								--	135562,	-- Venomous Ophidian. Same ID as Trash, causes bugs
 								},
 							}),
 							e(2144, { -- Galvazzt
@@ -114,8 +114,8 @@ _.Instances =
 								},
 								["crs"] = {
 									133384,	-- Merektha
-									134390,	-- Sand-crusted Striker
-									135562,	-- Venomous Ophidian
+								--	134390,	-- Sand-crusted Striker. Same ID as Trash, causes bugs
+								--	135562,	-- Venomous Ophidian. Same ID as Trash, causes bugs
 								},
 							}),
 							e(2144, { -- Galvazzt
@@ -195,8 +195,8 @@ _.Instances =
 								},
 								["crs"] = {
 									133384,	-- Merektha
-									134390,	-- Sand-crusted Striker
-									135562,	-- Venomous Ophidian
+								--	134390,	-- Sand-crusted Striker. Same ID as Trash, causes bugs
+								--	135562,	-- Venomous Ophidian. Same ID as Trash, causes bugs
 								},
 							}),
 							e(2144, { -- Galvazzt

@@ -20,6 +20,7 @@ _.Instances =
 									un(2, i(100952)),	-- Hood of Viridian Residue (7.1 - Removed from Game!)
 									un(2, i(100953)),	-- Girdle of Soothing Detonation (7.1 - Removed from Game!)
 									un(2, i(100954)),	-- Sap-Encrusted Legplates (7.1 - Removed from Game!)
+									un(2, i(100951)),	-- Flashfrozen Resin Globule (7.1 - Removed from Game!)
 								}),
 							})),
 							cr(61634, e(738, {	-- Commander Vo'jak
@@ -47,6 +48,7 @@ _.Instances =
 									un(2, i(100961)),	-- Aerial Bombardment Cloak (7.1 - Removed from Game!)
 									un(2, i(100964)),	-- Siegeworn Bracers (7.1 - Removed from Game!)
 									un(2, i(100962)),	-- Breezebinder Handwraps (7.1 - Removed from Game!)
+									un(2, i(100963)),	-- Vial of Ichorous Blood (7.1 - Removed from Game!)
 								}),
 							})),
 							cr(62205, e(727, {	-- Wing Leader Ner'onok

@@ -1845,6 +1845,35 @@ _.Zones =
 							un(2, i(125765)),	-- Wild Gladiator's Baton of Light
 							un(2, i(126763)),	-- Warmongering Gladiator's Touch of defeat
 							un(2, i(126879)),	-- Warmongering Gladiator's Baton of Light
+							-- Season 1 Cloth
+							un(2, i(115824)),	-- Primal Gladiator's silk cord
+							un(2, i(115825)),	-- Primal Gladiator's felweave cord
+							un(2, i(115826)),	-- Primal Gladiator's mooncloth cord
+							un(2, i(115827)),	-- Primal Gladiator's silk treads
+							un(2, i(115828)),	-- Primal Gladiator's felweave treads
+							un(2, i(115829)),	-- Primal Gladiator's mooncloth trads
+							un(2, i(115875)),	-- Primal Gladiator's silk handguards
+							un(2, i(115876)),	-- Primal Gladiator's silk cowl
+							un(2, i(115877)),	-- Primal Gladiator's silk trousers
+							un(2, i(115878)),	-- Primal Gladiator's silk robe
+							un(2, i(115879)),	-- Primal Gladiator's silk amice
+							un(2, i(115911)),	-- Primal Gladiator's mooncloth gloves
+							un(2, i(115912)),	-- Primal Gladiator's mooncloth hood
+							un(2, i(115913)),	-- Primal Gladiator's mooncloth leggings
+							un(2, i(115914)),	-- Primal Gladiator's mooncloth robe
+							un(2, i(115915)),	-- Primal Gladiator's mooncloth manthle
+							un(2, i(115916)),	-- Primal Gladiator's satin gloves
+							un(2, i(115917)),	-- Primal Gladiator's satin hood
+							un(2, i(115918)),	-- Primal Gladiator's satin leggings
+							un(2, i(115919)),	-- Primal Gladiator's satin robe
+							un(2, i(115920)),	-- Primal Gladiator's satin mantle
+							un(2, i(115956)),	-- Primal Gladiator's felweave handguards
+							un(2, i(115957)),	-- Primal Gladiator's felweave cowl
+							un(2, i(115958)),	-- Primal Gladiator's felweave trousers
+							un(2, i(115959)),	-- Primal Gladiator's felweave rainment
+							un(2, i(115960)),	-- Primal Gladiator's felweave amice
+							un(2, i(115968)),	-- Primal Gladiator's satin treads
+							un(2, i(115969)),	-- Primal Gladiator's satin cord
 							-- Season 1 Mail
 							un(2, i(115866)),	-- Primal Gladiator's chain links
 							un(2, i(115867)),	-- Primal Gladiator's linked waistband
@@ -1874,6 +1903,35 @@ _.Zones =
 							un(2, i(115944)),	-- Primal Gladiator's mail helm
 							un(2, i(115945)),	-- Primal Gladiator's mail leggings
 							un(2, i(115946)),	-- Primal Gladiator's mail spaulders
+							-- Season 2 Cloth
+							un(2, i(125638)),	-- wild Gladiator's silk cord
+							un(2, i(125639)),	-- wild Gladiator's felweave cord
+							un(2, i(125640)),	-- wild Gladiator's mooncloth cord
+							un(2, i(125641)),	-- wild Gladiator's silk treads
+							un(2, i(125642)),	-- wild Gladiator's felweave treads
+							un(2, i(125643)),	-- wild Gladiator's mooncloth trads
+							un(2, i(125689)),	-- wild Gladiator's silk handguards
+							un(2, i(125690)),	-- wild Gladiator's silk cowl
+							un(2, i(125691)),	-- wild Gladiator's silk trousers
+							un(2, i(125692)),	-- wild Gladiator's silk robe
+							un(2, i(125693)),	-- wild Gladiator's silk amice
+							un(2, i(125725)),	-- wild Gladiator's mooncloth gloves
+							un(2, i(125726)),	-- wild Gladiator's mooncloth hood
+							un(2, i(125727)),	-- wild Gladiator's mooncloth leggings
+							un(2, i(125728)),	-- wild Gladiator's mooncloth robe
+							un(2, i(125729)),	-- wild Gladiator's mooncloth manthle
+							un(2, i(125730)),	-- wild Gladiator's satin gloves
+							un(2, i(125731)),	-- wild Gladiator's satin hood
+							un(2, i(125732)),	-- wild Gladiator's satin leggings
+							un(2, i(125733)),	-- wild Gladiator's satin robe
+							un(2, i(125734)),	-- wild Gladiator's satin mantle
+							un(2, i(125770)),	-- wild Gladiator's felweave handguards
+							un(2, i(125771)),	-- wild Gladiator's felweave cowl
+							un(2, i(125772)),	-- wild Gladiator's felweave trousers
+							un(2, i(125773)),	-- wild Gladiator's felweave rainment
+							un(2, i(125774)),	-- wild Gladiator's felweave amice
+							un(2, i(125782)),	-- wild Gladiator's satin treads
+							un(2, i(125783)),	-- wild Gladiator's satin cord
 							-- Season 2 Mail
 							un(2, i(125680)),	-- Wild Gladiator's Chain Links
 							un(2, i(125681)),	-- Wild Gladiator's linked waistband
@@ -2051,6 +2109,35 @@ _.Zones =
 							un(2, i(125765)),	-- Wild Gladiator's Baton of Light
 							un(2, i(126763)),	-- Warmongering Gladiator's Touch of defeat
 							un(2, i(126879)),	-- Warmongering Gladiator's Baton of Light
+							-- Season 1 Cloth
+							un(2, i(115824)),	-- Primal Gladiator's silk cord
+							un(2, i(115825)),	-- Primal Gladiator's felweave cord
+							un(2, i(115826)),	-- Primal Gladiator's mooncloth cord
+							un(2, i(115827)),	-- Primal Gladiator's silk treads
+							un(2, i(115828)),	-- Primal Gladiator's felweave treads
+							un(2, i(115829)),	-- Primal Gladiator's mooncloth trads
+							un(2, i(115875)),	-- Primal Gladiator's silk handguards
+							un(2, i(115876)),	-- Primal Gladiator's silk cowl
+							un(2, i(115877)),	-- Primal Gladiator's silk trousers
+							un(2, i(115878)),	-- Primal Gladiator's silk robe
+							un(2, i(115879)),	-- Primal Gladiator's silk amice
+							un(2, i(115911)),	-- Primal Gladiator's mooncloth gloves
+							un(2, i(115912)),	-- Primal Gladiator's mooncloth hood
+							un(2, i(115913)),	-- Primal Gladiator's mooncloth leggings
+							un(2, i(115914)),	-- Primal Gladiator's mooncloth robe
+							un(2, i(115915)),	-- Primal Gladiator's mooncloth manthle
+							un(2, i(115916)),	-- Primal Gladiator's satin gloves
+							un(2, i(115917)),	-- Primal Gladiator's satin hood
+							un(2, i(115918)),	-- Primal Gladiator's satin leggings
+							un(2, i(115919)),	-- Primal Gladiator's satin robe
+							un(2, i(115920)),	-- Primal Gladiator's satin mantle
+							un(2, i(115956)),	-- Primal Gladiator's felweave handguards
+							un(2, i(115957)),	-- Primal Gladiator's felweave cowl
+							un(2, i(115958)),	-- Primal Gladiator's felweave trousers
+							un(2, i(115959)),	-- Primal Gladiator's felweave rainment
+							un(2, i(115960)),	-- Primal Gladiator's felweave amice
+							un(2, i(115968)),	-- Primal Gladiator's satin treads
+							un(2, i(115969)),	-- Primal Gladiator's satin cord
 							-- Season 1 Mail
 							un(2, i(115866)),	-- Primal Gladiator's chain links
 							un(2, i(115867)),	-- Primal Gladiator's linked waistband
@@ -2080,6 +2167,35 @@ _.Zones =
 							un(2, i(115944)),	-- Primal Gladiator's mail helm
 							un(2, i(115945)),	-- Primal Gladiator's mail leggings
 							un(2, i(115946)),	-- Primal Gladiator's mail spaulders
+							-- Season 2 Cloth
+							un(2, i(125638)),	-- wild Gladiator's silk cord
+							un(2, i(125639)),	-- wild Gladiator's felweave cord
+							un(2, i(125640)),	-- wild Gladiator's mooncloth cord
+							un(2, i(125641)),	-- wild Gladiator's silk treads
+							un(2, i(125642)),	-- wild Gladiator's felweave treads
+							un(2, i(125643)),	-- wild Gladiator's mooncloth trads
+							un(2, i(125689)),	-- wild Gladiator's silk handguards
+							un(2, i(125690)),	-- wild Gladiator's silk cowl
+							un(2, i(125691)),	-- wild Gladiator's silk trousers
+							un(2, i(125692)),	-- wild Gladiator's silk robe
+							un(2, i(125693)),	-- wild Gladiator's silk amice
+							un(2, i(125725)),	-- wild Gladiator's mooncloth gloves
+							un(2, i(125726)),	-- wild Gladiator's mooncloth hood
+							un(2, i(125727)),	-- wild Gladiator's mooncloth leggings
+							un(2, i(125728)),	-- wild Gladiator's mooncloth robe
+							un(2, i(125729)),	-- wild Gladiator's mooncloth manthle
+							un(2, i(125730)),	-- wild Gladiator's satin gloves
+							un(2, i(125731)),	-- wild Gladiator's satin hood
+							un(2, i(125732)),	-- wild Gladiator's satin leggings
+							un(2, i(125733)),	-- wild Gladiator's satin robe
+							un(2, i(125734)),	-- wild Gladiator's satin mantle
+							un(2, i(125770)),	-- wild Gladiator's felweave handguards
+							un(2, i(125771)),	-- wild Gladiator's felweave cowl
+							un(2, i(125772)),	-- wild Gladiator's felweave trousers
+							un(2, i(125773)),	-- wild Gladiator's felweave rainment
+							un(2, i(125774)),	-- wild Gladiator's felweave amice
+							un(2, i(125782)),	-- wild Gladiator's satin treads
+							un(2, i(125783)),	-- wild Gladiator's satin cord
 							-- Season 2 Mail
 							un(2, i(125680)),	-- Wild Gladiator's Chain Links
 							un(2, i(125681)),	-- Wild Gladiator's linked waistband
