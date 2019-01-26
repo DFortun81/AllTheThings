@@ -300,7 +300,7 @@ _.Zones =
 											["coords"] = { 
 												{ 46.59, 88.00 },
 											},
-											["description"] = "Hop into the cart here to arrive at the end for the chest",
+											["description"] = "Hop into the cart here to arrive at the end for the chest.",
 										}),
 									},
 									["questID"] = 50237,

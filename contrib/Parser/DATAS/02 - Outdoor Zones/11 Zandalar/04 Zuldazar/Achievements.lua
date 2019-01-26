@@ -176,43 +176,50 @@ _.Zones =
 							}),
 							ach(12851, {	-- Treasures of Zuldazar
 								["groups"] = {
-									o(288596, {	-- Cache of Secrets	
-										["questID"] = 51338,
-										["icon"] = "Interface\\Icons\\garrison_bronzechest",
-									}),
-									o(281898, {	-- Dazar's Forgotten Chest	
-										["questID"] = 50707,
-										["icon"] = "Interface\\Icons\\garrison_bronzechest",
-									}),
-									o(281655, {	-- Gift of the Brokenhearted	
-										["questID"] = 50582,	-- 50950 for using the Incense prior to opening the chest itself.
-										["icon"] = "Interface\\Icons\\garrison_bronzechest",
-									}),
-									o(276735, {	-- Offerings of the Chosen	
-										["questID"] = 48938,
-										["icon"] = "Interface\\Icons\\garrison_bronzechest",
-									}),
-									o(290725, {	-- Riches of Tor'nowa	
-										["questID"] = 51624,
+									o(281092, {	-- Witch Doctor's Hoard	
+										["criteriaID"] = 2,
+										["questID"] = 50259,
+										["coord"] = { 64.7, 21.7, 862 },
 										["icon"] = "Interface\\Icons\\garrison_bronzechest",
 									}),
 									o(279609, {	-- Spoils of Pandaria	
+										["criteriaID"] = 3,
 										["questID"] = 49936,
+--										["coord"] = { , , 862 },	-- need to go on an alt to get map/coordinate info
 										["icon"] = "Interface\\Icons\\garrison_bronzechest",
 									}),
-									o(284455, {	-- The Exile's Lament	
-										["questID"] = 50949,
+									o(281655, {	-- Gift of the Brokenhearted	
+										["criteriaID"] = 4,
+										["questID"] = 50582,	-- 50950 for using the Incense prior to opening the chest itself.
+										["coord"] = { 51.5, 26.7, 862 },
 										["icon"] = "Interface\\Icons\\garrison_bronzechest",
 									}),
 									o(277561, {	-- Warlord's Cache
+										["criteriaID"] = 5,
 										["questID"] = 49257,
+										["coord"] = { 49.5, 65.3, 862 },
 										["icon"] = "Interface\\Icons\\garrison_bronzechest",
 									}),
-									o(281092, {	-- Witch Doctor's Hoard	
-										["questID"] = 50259,
+									o(281898, {	-- Dazar's Forgotten Chest	
+										["criteriaID"] = 6,
+										["questID"] = 50707,
+										["coord"] = { 38.8, 34.4, 862 },
+										["icon"] = "Interface\\Icons\\garrison_bronzechest",
+									}),
+									o(284455, {	-- The Exile's Lament	
+										["criteriaID"] = 8,
+										["questID"] = 50949,
+										["coord"] = { 71.8, 16.7, 862 },
+										["icon"] = "Interface\\Icons\\garrison_bronzechest",
+									}),
+									o(290725, {	-- Riches of Tor'nowa	
+										["criteriaID"] = 10,
+										["questID"] = 51624,
+										["coord"] = { 52.9, 47.2, 862 },
 										["icon"] = "Interface\\Icons\\garrison_bronzechest",
 									}),
 								},
+								["collectible"] = false,
 							}),
 							--[[ NOTE: DISABLING FOR NOW WANT MORE INFORMATION FIRST
 							h(ach(13039, {	-- Paku'ai

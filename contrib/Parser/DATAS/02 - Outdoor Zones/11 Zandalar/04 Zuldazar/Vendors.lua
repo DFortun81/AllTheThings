@@ -107,6 +107,7 @@ _.Zones =
 							}),
 							{	-- Ozgrom Ragefang <Profession Liason> [NOTE: PvP Craftable Recipes]
 								["npcID"] = 142552,	-- Ozgrom Ragefang <Profession Liason> [NOTE: PvP Craftable Recipes]
+								["races"] = HORDE_ONLY,
 								["coords"] = {
 									{ 52.64, 58.21, 862 },
 								},
