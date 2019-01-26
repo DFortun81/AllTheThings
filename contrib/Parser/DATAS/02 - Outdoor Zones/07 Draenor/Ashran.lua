@@ -1868,6 +1868,12 @@ _.Zones =
 							un(2, i(115938)),	-- Primal Gladiator's linked helm
 							un(2, i(115939)),	-- Primal Gladiator's linked leggings
 							un(2, i(115940)),	-- Primal Gladiator's linked spaulders
+							un(2, i(115941)),	-- Primal Gladiator's mail waistguard
+							un(2, i(115942)),	-- Primal Gladiator's mail armor
+							un(2, i(115943)),	-- Primal Gladiator's mail gauntlets
+							un(2, i(115944)),	-- Primal Gladiator's mail helm
+							un(2, i(115945)),	-- Primal Gladiator's mail leggings
+							un(2, i(115946)),	-- Primal Gladiator's mail spaulders
 							-- Season 2 Mail
 							un(2, i(125680)),	-- Wild Gladiator's Chain Links
 							un(2, i(125681)),	-- Wild Gladiator's linked waistband
@@ -1891,6 +1897,41 @@ _.Zones =
 							un(2, i(125752)),	-- Wild Gladiator's linked helm
 							un(2, i(125753)),	-- Wild Gladiator's linked leggings
 							un(2, i(125754)),	-- Wild Gladiator's linked spaulders
+							un(2, i(125755)),	-- Wild Gladiator's mail waistguard
+							un(2, i(125756)),	-- Wild Gladiator's mail armor
+							un(2, i(125757)),	-- Wild Gladiator's mail gauntlets
+							un(2, i(125758)),	-- Wild Gladiator's mail helm
+							un(2, i(125759)),	-- Wild Gladiator's mail leggings
+							un(2, i(125760)),	-- Wild Gladiator's mail spaulders
+							-- Season 3 Mail
+							un(2, i(126794)),	-- warmongering Gladiator's Chain Links
+							un(2, i(126795)),	-- warmongering Gladiator's linked waistband
+							un(2, i(126796)),	-- warmongering Gladiator's Chain sabatons
+							un(2, i(126797)),	-- warmongering Gladiator's linked sabatons
+							un(2, i(126798)),	-- warmongering Gladiator's chain armor
+							un(2, i(126799)),	-- warmongering Gladiator's chain gauntlets
+							un(2, i(126800)),	-- warmongering Gladiator's chain helm
+							un(2, i(126801)),	-- warmongering Gladiator's chain leggings
+							un(2, i(126802)),	-- warmongering Gladiator's chain spaulders
+							un(2, i(126856)),	-- warmongering Gladiator's ringmail waistguard
+							un(2, i(126857)),	-- warmongering Gladiator's ringmail footguards
+							un(2, i(126858)),	-- warmongering Gladiator's mail footguards
+							un(2, i(126859)),	-- warmongering Gladiator's ringmail armor
+							un(2, i(126860)),	-- warmongering Gladiator's ringmail gauntlets
+							un(2, i(126861)),	-- warmongering Gladiator's ringmail helm
+							un(2, i(126862)),	-- warmongering Gladiator's ringmail leggings
+							un(2, i(126863)),	-- warmongering Gladiator's ringmail spaulders
+							un(2, i(126864)),	-- warmongering Gladiator's linked armor
+							un(2, i(126865)),	-- warmongering Gladiator's linked gauntlets
+							un(2, i(126866)),	-- warmongering Gladiator's linked helm
+							un(2, i(126867)),	-- warmongering Gladiator's linked leggings
+							un(2, i(126868)),	-- warmongering Gladiator's linked spaulders
+							un(2, i(126869)),	-- warmongering Gladiator's mail waistguard
+							un(2, i(126870)),	-- warmongering Gladiator's mail armor
+							un(2, i(126871)),	-- warmongering Gladiator's mail gauntlets
+							un(2, i(126872)),	-- warmongering Gladiator's mail helm
+							un(2, i(126873)),	-- warmongering Gladiator's mail leggings
+							un(2, i(126874)),	-- warmongering Gladiator's mail spaulders
 						},
 						["u"] = 2, -- Vendor doesn't sell anything in 7.0+
 					}),
@@ -2033,6 +2074,12 @@ _.Zones =
 							un(2, i(115938)),	-- Primal Gladiator's linked helm
 							un(2, i(115939)),	-- Primal Gladiator's linked leggings
 							un(2, i(115940)),	-- Primal Gladiator's linked spaulders
+							un(2, i(115941)),	-- Primal Gladiator's mail waistguard
+							un(2, i(115942)),	-- Primal Gladiator's mail armor
+							un(2, i(115943)),	-- Primal Gladiator's mail gauntlets
+							un(2, i(115944)),	-- Primal Gladiator's mail helm
+							un(2, i(115945)),	-- Primal Gladiator's mail leggings
+							un(2, i(115946)),	-- Primal Gladiator's mail spaulders
 							-- Season 2 Mail
 							un(2, i(125680)),	-- Wild Gladiator's Chain Links
 							un(2, i(125681)),	-- Wild Gladiator's linked waistband
@@ -2056,6 +2103,41 @@ _.Zones =
 							un(2, i(125752)),	-- Wild Gladiator's linked helm
 							un(2, i(125753)),	-- Wild Gladiator's linked leggings
 							un(2, i(125754)),	-- Wild Gladiator's linked spaulders
+							un(2, i(125755)),	-- Wild Gladiator's mail waistguard
+							un(2, i(125756)),	-- Wild Gladiator's mail armor
+							un(2, i(125757)),	-- Wild Gladiator's mail gauntlets
+							un(2, i(125758)),	-- Wild Gladiator's mail helm
+							un(2, i(125759)),	-- Wild Gladiator's mail leggings
+							un(2, i(125760)),	-- Wild Gladiator's mail spaulders
+							-- Season 3 Mail
+							un(2, i(126794)),	-- warmongering Gladiator's Chain Links
+							un(2, i(126795)),	-- warmongering Gladiator's linked waistband
+							un(2, i(126796)),	-- warmongering Gladiator's Chain sabatons
+							un(2, i(126797)),	-- warmongering Gladiator's linked sabatons
+							un(2, i(126798)),	-- warmongering Gladiator's chain armor
+							un(2, i(126799)),	-- warmongering Gladiator's chain gauntlets
+							un(2, i(126800)),	-- warmongering Gladiator's chain helm
+							un(2, i(126801)),	-- warmongering Gladiator's chain leggings
+							un(2, i(126802)),	-- warmongering Gladiator's chain spaulders
+							un(2, i(126856)),	-- warmongering Gladiator's ringmail waistguard
+							un(2, i(126857)),	-- warmongering Gladiator's ringmail footguards
+							un(2, i(126858)),	-- warmongering Gladiator's mail footguards
+							un(2, i(126859)),	-- warmongering Gladiator's ringmail armor
+							un(2, i(126860)),	-- warmongering Gladiator's ringmail gauntlets
+							un(2, i(126861)),	-- warmongering Gladiator's ringmail helm
+							un(2, i(126862)),	-- warmongering Gladiator's ringmail leggings
+							un(2, i(126863)),	-- warmongering Gladiator's ringmail spaulders
+							un(2, i(126864)),	-- warmongering Gladiator's linked armor
+							un(2, i(126865)),	-- warmongering Gladiator's linked gauntlets
+							un(2, i(126866)),	-- warmongering Gladiator's linked helm
+							un(2, i(126867)),	-- warmongering Gladiator's linked leggings
+							un(2, i(126868)),	-- warmongering Gladiator's linked spaulders
+							un(2, i(126869)),	-- warmongering Gladiator's mail waistguard
+							un(2, i(126870)),	-- warmongering Gladiator's mail armor
+							un(2, i(126871)),	-- warmongering Gladiator's mail gauntlets
+							un(2, i(126872)),	-- warmongering Gladiator's mail helm
+							un(2, i(126873)),	-- warmongering Gladiator's mail leggings
+							un(2, i(126874)),	-- warmongering Gladiator's mail spaulders
 						},
 						["u"] = 2, -- Vendor doesn't sell anything in 7.0+
 					}),
