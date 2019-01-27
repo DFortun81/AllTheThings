@@ -99,6 +99,21 @@ _.Zones =
 									},
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
+								{	-- Swab This!
+									["g"] = {
+										{	-- Bless the Rains Down in Freehold
+											["achievementID"] = 13050,	-- Bless the Rains Down in Freehold
+											["g"] = {
+												{ ["criteriaID"] = 1, },	-- Banana Hoard
+												{ ["criteriaID"] = 2, },	-- Sweete's Feast
+												{ ["criteriaID"] = 3, },	-- Cart o' Cutlasses
+												{ ["criteriaID"] = 4, },	-- Blacktooth Brew
+											},
+										},
+									},
+									["isWQ"] = 120,
+									["questID"] = 53196,	-- Swab This!
+								},
 								q(52471, {	-- That's a Big Carcass [Pet Battle]
 									["groups"] = {
 										i(163036),	-- Polished Pet Charm
@@ -113,6 +128,16 @@ _.Zones =
 								q(53078, {	-- Treasure in the Ttides
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
+								{	-- Trogg Tromping
+									["g"] = {
+										{	-- Drag Race
+											["achievementID"] = 13059,	-- Drag Race
+										},
+									},
+									["isWQ"] = 120,
+									["races"] = ALLIANCE_ONLY,
+									["questID"] = 53346,	-- Trogg Tromping
+								},
 								q(52455, {	-- Unbreakable [Pet Battle]
 									["groups"] = {
 										i(163036),	-- Polished Pet Charm

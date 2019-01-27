@@ -65,6 +65,16 @@ _.Zones =
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									--Note!! Emblem of Zandalar offered on 10/17
 								},
+								{	-- Get on the Payload
+									["g"] = {
+										{	-- Pushing the Payload
+											["achievementID"] = 13441,	-- Pushing the Payload
+										},
+									},
+									["isWQ"] = 120,
+									["races"] = HORDE_ONLY,
+									["questID"] = 54505,	-- Get on the Payload
+								},
 								{	-- G'Naat
 									["npcID"] = 133155,		-- G'Naat	Note!! Done so we can use his name for the quest rather than Quest #123456
 									["questID"] = 50870,	-- G'Naat
@@ -153,6 +163,16 @@ _.Zones =
 											["criteriaID"] = 24,	-- Small Beginnings
 										},
 									},
+								},
+								{	-- Stack on the Tank
+									["g"] = {
+										{	-- Pushing the Payload
+											["achievementID"] = 13440,	-- Pushing the Payload
+										},
+									},
+									["isWQ"] = 120,
+									["races"] = ALLIANCE_ONLY,
+									["questID"] = 54498,	-- Stack on the Tank
 								},
 								{	-- Subterranean Evacuation
 									["questID"] = 50756,	-- Subterranean Evacuation

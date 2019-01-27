@@ -16,7 +16,6 @@ _.Zones =
 									["coords"] = {
 										{ 32.98, 26.80 }
 									},
-									--
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["g"] = {
 										{	-- Fused-Slag Girdle
@@ -25,58 +24,79 @@ _.Zones =
 									},
 								},
 								q(51415, {	-- Azerite Madness
-									--
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
 								q(52884, {	-- Azerite Wounds
-									--
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
 								{	-- Beachhead
 									["questID"] = 51640,	-- Beachhead
-									--
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								},
 								q(50735, {	-- Burial Detail
-									--
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = HORDE_ONLY,
 								}),
 								{	-- Cargo Reclamation
 									["questID"] =  50962,	-- Cargo Reclamation
-									--
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								},
 								q(52779, {	-- Crawg in the Bog [Pet Battle]
 									["groups"] = {
 										i(163036),	-- Polished Pet Charm
 									},
-									--
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
-								q(50717, {	-- Don't Stalk Me, Troll
-									--
-									["isWQ"] = 120,		-- Enables WQ filter for Level 120
-									["races"] = HORDE_ONLY,
-								}),
-								q(50899, {	-- Don't Stalk Me, Troll
-									--
-									["isWQ"] = 120,		-- Enables WQ filter for Level 120
+								{	-- Don't Stalk Me, Troll (A)
+									["g"] = {
+										{	-- 7th Legion Spycatcher
+											["achievementID"] = 13026,	-- 7th Legion Spycatcher
+										},
+									},
+									["isWQ"] = 120,
 									["races"] = ALLIANCE_ONLY,
-								}),
+									["questID"] = 50899,	-- Don't Stalk Me, Troll (A)
+								},
+								{	-- Don't Stalk Me, Troll (H)
+									["g"] = {
+										{	-- Zandalari Spycatcher
+											["achievementID"] = 13025,	-- Zandalari Spycatcher
+										},
+									},
+									["isWQ"] = 120,
+									["races"] = HORDE_ONLY,
+									["questID"] = 50717,	-- Don't Stalk Me, Troll (H)
+								},
 								q(51172, {	-- Forked Lightning
-									--
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = ALLIANCE_ONLY,
 								}),
 								q(50545, {	-- Forked Lightning
-									--
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = HORDE_ONLY,
 								}),
+								{	-- Getting Out of Hand (A)
+									["g"] = {
+										{	-- It's Really Getting Out of Hand
+											["achievementID"] = 13023,	-- It's Really Getting Out of Hand
+										},
+									},
+									["isWQ"] = 120,
+									["races"] = ALLIANCE_ONLY,
+									["questID"] = 51127,	-- Getting Out of Hand (A)
+								},
+								{	-- Getting Out of Hand (H)
+									["g"] = {
+										{	-- It's Really Getting Out of Hand
+											["achievementID"] = 13023,	-- It's Really Getting Out of Hand
+										},
+									},
+									["isWQ"] = 120,
+									["races"] = HORDE_ONLY,
+									["questID"] = 50559,	-- Getting Out of Hand (H)
+								},
 								{	-- It's the Pits
 									["questID"] = 51546,	-- It's the Pits
-									--
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = ALLIANCE_ONLY,
 								},
@@ -88,50 +108,40 @@ _.Zones =
 											},
 										}),
 									},
-									--
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
 								{	-- King Kooba
 									["questID"] = 50506,	--  King Kooba
-									--
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								},
 								q(50497, {	-- Krag'wa's Favor
-									--
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
 								{	-- Luminous Monelite
 									["questID"] = 53321,	-- Luminous Monelite
-									--
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["requireSkill"] = 186,	-- Mining
 								},
 								{	-- Past Due
 									["questID"] = 50667,	-- Past Due
-									--
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								},
 								q(52006, {	-- Preemptive Assault
-									--
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = HORDE_ONLY,
 								}),
 								{	-- Scorched Earth
 									["questID"] = 50521,	-- Scorched Earth
-									--
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								},
 								q(51628, {	-- Shell Game
-									--
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
 								q(50650, {	-- Smashing Zalamar
-									--
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = HORDE_ONLY,
 								}),
 								q(52785, {	-- Smashing Zalamar
-									--
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = ALLIANCE_ONLY,
 								}),
@@ -139,15 +149,12 @@ _.Zones =
 									["groups"] = {
 										i(162621),	-- Naazmani Golem's Greathelm
 									},
-									--
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
 								q(50514, {	-- Totem Maker Jash'ga
-									--
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
 								q(50515, {	-- Venomjaw
-									--
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
 								{	-- Work Order: Battle Flag: Phalanx Defense
@@ -206,12 +213,10 @@ _.Zones =
 								},
 								{	-- Xu'ba
 									["questID"] = 50489,	-- Xu'ba
-									--
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								},
 								{	-- Zujothgul
 									["questID"] = 50461,	-- Zujothgul
-									--
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								},
 							},

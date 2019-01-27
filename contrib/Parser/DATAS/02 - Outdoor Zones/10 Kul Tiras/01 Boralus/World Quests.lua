@@ -10,17 +10,31 @@ _.Zones =
 					["groups"] = {
 						n(-17, {	-- Quests [Note: We don't attach qg's or coords since they don't apply to the WQ due to not actually receiving anything; very few exceptions apply]
 							["groups"] = {
-								q(53704, {	-- Not Too Sober Citizens Brigade
+								{	-- Not Too Sober Citizens Brigade
 									["g"] = {
-										ach(13285, { -- Upright Citizens
+										{	-- Upright Citizens
+											["achievementID"] = 13285,	-- Upright Citizens
 											["g"] = {
+												{	-- Russel the Bard recruited
+													-- ["coord"] = {  },	-- coords unavailable, NPC not yet seen
+													["criteriaID"] = 1,	-- Russel the Bard recruited
+												},
+												{	-- Flynn Fairwind recruited
+													["coord"] = { 72.0, 61.6, 1161 },
+													["criteriaID"] = 2,	-- Flynn Fairwind recruited
+												},
+												{	-- Leeroy Jenkins recruited
+													["coord"] = { 66.8, 64.0, 1161 },
+													["criteriaID"] = 3,	-- Leeroy Jenkins recruited
+												},
 												i(166247), -- Citizens Brigade Whistle
 											},
-										}),
+										},
 									},
 									["isWQ"] = 120,
 									["races"] = ALLIANCE_ONLY,
-								}),
+									["questID"] = 53704,	-- Not Too Sober Citizens Brigade
+								},
 								q(51893, {	-- Sawtooth
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
