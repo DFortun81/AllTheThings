@@ -19,6 +19,18 @@ _.Instances =
 							{	-- Zone Drops
 								["npcID"] = 0,	-- Zone Drops
 								["g"] = {
+									{	-- Drape of Valiant Defense
+										["itemID"] = 165925,	-- Drape of Valiant Defense
+									},
+									{	-- High Tinker's Cape
+										["itemID"] = 165924,	-- High Tinker's Cape
+									},
+									{	-- Loa Exultant's Shroud
+										["itemID"] = 165512,	-- Loa Exultant's Shroud
+									},
+									{	-- Silverback Cloak
+										["itemID"] = 165513,	-- Silverback Cloak
+									},
 									{	-- Cord of Zandalari Resolve
 										["itemID"] = 165765,	-- Cord of Zandalari Resolve
 									},
