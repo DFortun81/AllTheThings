@@ -143,9 +143,17 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["criteriaID"] = 2,	-- Elder Bellowrage in Blasted Lands
 				["description"] = "In order to view this Elder, visit Zidormi at 48.1, 7.3 to see Blasted Lands before the invasion.",
 			},
-			q(8715, {	-- Bladeleaf the Elder
-				-- i(21100), -- Coin of Ancestry
-			}),
+			{	-- Bladeleaf the Elder
+				["u"] = 17,	-- Lunar Festival
+				-- ["g"] = { i(21100), }, -- Coin of Ancestry
+				["qg"] = 15595,	-- Elder Bladeleaf
+				["maps"] = { 57 },	-- Teldrassil
+				["coord"] = { 56.8, 53.1, 57 },
+				["questID"] = 8715,	-- Bladeleaf the Elder
+				["description"] = "In order to view this Elder, visit Zidormi at 48.8, 24.4 in Darkshore to be able to visit the past version of Teldrassil.  The Elder is on the left side of the Cenarion Enclave.",
+				["achievementID"] = 911,	-- Elders of Kalimdor
+				["criteriaID"] = 6,	-- Elder Bladeleaf in Dolanaar
+			},
 			{	-- Bladesing the Elder
 				["u"] = 17,	-- Lunar Festival
 				-- ["g"] = { i(21100), }, -- Coin of Ancestry
@@ -157,9 +165,17 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["achievementID"] = 911,	-- Elders of Kalimdor
 				["criteriaID"] = 21,	-- Elder Bladesing in Cenarion Hold
 			},
-			q(8718, {	-- Bladeswift the Elder
-				-- i(21100), -- Coin of Ancestry
-			}),
+			{	-- Bladeswift the Elder
+				["u"] = 17,	-- Lunar Festival
+				-- ["g"] = { i(21100), }, -- Coin of Ancestry
+				["qg"] = 15598,	-- Elder Bladeswift
+				["maps"] = { 89 },	-- Darnassus
+				["coord"] = { 39.3, 31.8, 89 },
+				["questID"] = 8718,	-- Bladeswift the Elder
+				["description"] = "In order to view this Elder, visit Zidormi at 48.8, 24.4 in Darkshore to be able to visit the past version of Darnassus.  The Elder is on the left side of the Cenarion Enclave.",
+				["achievementID"] = 915,	-- Elders of the Alliance
+				["criteriaID"] = 1,	-- Elder Bladeswift in Darnassus
+			},
 			{	-- Bloodhoof the Elder
 				["u"] = 17,	-- Lunar Festival
 				-- ["g"] = { i(21100), }, -- Coin of Ancestry
@@ -173,9 +189,16 @@ _.Holidays = bubbleDown({["u"] = 17},
 			q(13026, {	-- Bluewolf the Elder
 				-- i(21100), -- Coin of Ancestry
 			}),
-			q(8726, {	-- Brightspear the Elder
-				-- i(21100), -- Coin of Ancestry
-			}),
+			{	-- Brightspear the Elder
+				["u"] = 17,	-- Lunar Festival
+				-- ["g"] = { i(21100), }, -- Coin of Ancestry
+				["qg"] = 15606,	-- Elder Brightspear
+				["maps"] = { 83 },	-- Winterspring
+				["coord"] = { 53.2, 56.7, 83 },
+				["questID"] = 8726,	-- Brightspear the Elder
+				["achievementID"] = 911,	-- Elders of Kalimdor
+				["criteriaID"] = 18,	-- Elder Brightspear in Winterspring
+			},
 			{	-- Bronzebeard the Elder
 				["u"] = 17,	-- Lunar Festival
 				-- ["g"] = { i(21100), }, -- Coin of Ancestry
@@ -245,9 +268,16 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["achievementID"] = 911,	-- Elders of Kalimdor
 				["criteriaID"] = 16,	-- Dreamseer in Gadgetzan
 			},
-			q(29740, {	-- Evershade the Elder
-				-- i(21100), -- Coin of Ancestry
-			}),
+			{	-- Evershade the Elder
+				["u"] = 17,	-- Lunar Festival
+				-- ["g"] = { i(21100), }, -- Coin of Ancestry
+				["qg"] = 55227,	-- Elder Evershade
+				["maps"] = { 198 },	-- Mount Hyjal
+				["coord"] = { 62.5, 22.8, 198 },
+				["questID"] = 29740,	-- Evershade the Elder
+				["achievementID"] = 6006,	-- Elders of Cataclysm
+				["criteriaID"] = 7,	-- Elder Evershade in Nordrassil
+			},
 			q(13015, {	-- Fargal the Elder
 				-- i(21100), -- Coin of Ancestry
 			}),
@@ -444,9 +474,16 @@ _.Holidays = bubbleDown({["u"] = 17},
 			q(13032, {	-- Muraco the Elder
 				-- i(21100), -- Coin of Ancestry
 			}),
-			q(8723, {	-- Nightwind the Elder
-				-- i(21100), -- Coin of Ancestry
-			}),
+			{	-- Nightwind the Elder
+				["u"] = 17,	-- Lunar Festival
+				-- ["g"] = { i(21100), }, -- Coin of Ancestry
+				["qg"] = 15603,	-- Elder Nightwind
+				["maps"] = { 77 },	-- Felwood
+				["coord"] = { 38.4, 52.8, 77 },
+				["questID"] = 8723,	-- Nightwind the Elder
+				["achievementID"] = 911,	-- Elders of Kalimdor
+				["criteriaID"] = 12,	-- Elder Nightwind in Felwood
+			},
 			q(13016, {	-- Northal the Elder
 				-- i(21100), -- Coin of Ancestry
 			}),
@@ -490,9 +527,16 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["achievementID"] = 911,	-- Elders of Kalimdor
 				["criteriaID"] = 15,	-- Elder Ragetotem in Tanaris
 			},
-			q(8725, {	-- Riversong the Elder
-				-- i(21100), -- Coin of Ancestry
-			}),
+			{	-- Riversong the Elder
+				["u"] = 17,	-- Lunar Festival
+				-- ["g"] = { i(21100), }, -- Coin of Ancestry
+				["qg"] = 15605,	-- Elder Riversong
+				["maps"] = { 63 },	-- Ashenvale
+				["coord"] = { 35.5, 48.9, 63 },
+				["questID"] = 8725,	-- Riversong the Elder
+				["achievementID"] = 911,	-- Elders of Kalimdor
+				["criteriaID"] = 9,	-- Elder Riversong in Astranaar
+			},
 			{	-- Rumblerock the Elder
 				["u"] = 17,	-- Lunar Festival
 				-- ["g"] = { i(21100), }, -- Coin of Ancestry
@@ -549,9 +593,16 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["achievementID"] = 912,	-- Elders of Eastern Kingdoms
 				["criteriaID"] = 8,	-- Elder Skychaser in Sentinel Hill
 			},
-			q(8720, {	-- Skygleam the Elder
-				-- i(21100), -- Coin of Ancestry
-			}),
+			{	-- Skygleam the Elder
+				["u"] = 17,	-- Lunar Festival
+				-- ["g"] = { i(21100), }, -- Coin of Ancestry
+				["qg"] = 15600,	-- Elder Skygleam
+				["maps"] = { 76 },	-- Azshara
+				["coord"] = { 64.7, 79.3, 76 },
+				["questID"] = 8720,	-- Skygleam the Elder
+				["achievementID"] = 911,	-- Elders of Kalimdor
+				["criteriaID"] = 2,	-- Elder Skygleam in Azshara
+			},
 			{	-- Skyseer the Elder
 				["u"] = 17,	-- Lunar Festival
 				-- ["g"] = { i(21100), }, -- Coin of Ancestry
@@ -613,9 +664,17 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["achievementID"] = 910,	-- Elders of the Dungeons
 				["criteriaID"] = 2,	-- Elder Starsong in Sunken Temple
 			},
-			q(8721, {	-- Starweave the Elder
-				-- i(21100), -- Coin of Ancestry
-			}),
+			{	-- Starweave the Elder
+				["u"] = 17,	-- Lunar Festival
+				-- ["g"] = { i(21100), }, -- Coin of Ancestry
+				["qg"] = 15601,	-- Elder Starweave
+				["maps"] = { 62 },	-- Darkshore
+				["coord"] = { 49.5, 18.9, 62 },
+				["questID"] = 8721,	-- Starweave the Elder
+				["description"] = "In order to view this Elder, visit Zidormi at 48.8, 24.4 to see Darkshore before the battle.",
+				["achievementID"] = 911,	-- Elders of Kalimdor
+				["criteriaID"] = 7,	-- Elder Starweave in Lor'danel
+			},
 			q(13020, {	-- Stonebeard the Elder
 				-- i(21100), -- Coin of Ancestry
 			}),
@@ -636,9 +695,16 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["achievementID"] = 910,	-- Elders of the Dungeons
 				["criteriaID"] = 4,	-- Elder Stonefort in Blackrock Spire
 			},
-			q(8672, {	-- Stonespire the Elder
-				-- i(21100), -- Coin of Ancestry
-			}),
+			{	-- Stonespire the Elder
+				["u"] = 17,	-- Lunar Festival
+				-- ["g"] = { i(21100), }, -- Coin of Ancestry
+				["qg"] = 15574,	-- Elder Stonespire
+				["maps"] = { 83 },	-- Winterspring
+				["coord"] = { 59.9, 49.9, 83 },
+				["questID"] = 8672,	-- Stonespire the Elder
+				["achievementID"] = 911,	-- Elders of Kalimdor
+				["criteriaID"] = 19,	-- Elder Stonespire in Everlook
+			},
 			{	-- Stormbrow the Elder
 				["u"] = 17,	-- Lunar Festival
 				-- ["g"] = { i(21100), }, -- Coin of Ancestry
@@ -706,9 +772,16 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["achievementID"] = 912,	-- Elders of Eastern Kingdoms
 				["criteriaID"] = 15,	-- Elder Windrun in Eastern Plaguelands
 			},
-			q(29739, {	-- Windsong the Elder
-				-- i(21100), -- Coin of Ancestry
-			}),
+			{	-- Windsong the Elder
+				["u"] = 17,	-- Lunar Festival
+				-- ["g"] = { i(21100), }, -- Coin of Ancestry
+				["qg"] = 55224,	-- Elder Windsong
+				["maps"] = { 198 },	-- Mount Hyjal
+				["coord"] = { 26.7, 62.0, 198 },
+				["questID"] = 29739,	-- Windsong the Elder
+				["achievementID"] = 6006,	-- Elders of Cataclysm
+				["criteriaID"] = 6,	-- Elder Windsong in Hyjal
+			},
 			{	-- Windtotem the Elder
 				["u"] = 17,	-- Lunar Festival
 				-- ["g"] = { i(21100), }, -- Coin of Ancestry
