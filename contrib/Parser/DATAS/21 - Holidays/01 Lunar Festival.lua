@@ -126,12 +126,26 @@ _.Holidays = bubbleDown({["u"] = 17},
 			q(8868, { -- Elune's Blessing
 				un(17, i(21540)), -- Elune's Lantern
 			}),
-			q(13033, {	-- Arp the Elder
-				-- i(21100), -- Coin of Ancestry
-			}),
-			q(13013, {	-- Beldak the Elder
-				-- i(21100), -- Coin of Ancestry
-			}),
+			{	-- Arp the Elder
+				["u"] = 17,	-- Lunar Festival
+				-- ["g"] = { i(21100), }, -- Coin of Ancestry
+				["qg"] = 30364,	-- Elder Arp
+				["maps"] = { 114 },	-- Borean Tundra
+				["coord"] = { 57.3, 43.7, 114 },
+				["questID"] = 13033,	-- Arp the Elder
+				["achievementID"] = 1396,	-- Elders of Northrend
+				["criteriaID"] = 5,	-- Elder Arp in D.E.H.T.A
+			},
+			{	-- Beldak the Elder
+				["u"] = 17,	-- Lunar Festival
+				-- ["g"] = { i(21100), }, -- Coin of Ancestry
+				["qg"] = 30357,	-- Elder Beldak
+				["maps"] = { 116 },	-- Grizzly Hills
+				["coord"] = { 60.5, 27.7, 116 },
+				["questID"] = 13013,	-- Beldak the Elder
+				["achievementID"] = 1396,	-- Elders of Northrend
+				["criteriaID"] = 2,	-- Elder Beldak in Westfall Brigade
+			},
 			{	-- Bellowrage the Elder
 				["u"] = 17,	-- Lunar Festival
 				-- ["g"] = { i(21100), }, -- Coin of Ancestry
@@ -186,9 +200,16 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["achievementID"] = 911,	-- Elders of Kalimdor
 				["criteriaID"] = 8,	-- Elder Bloodhoof in Bloodhoof Village
 			},
-			q(13026, {	-- Bluewolf the Elder
-				-- i(21100), -- Coin of Ancestry
-			}),
+			{	-- Bluewolf the Elder
+				["u"] = 17,	-- Lunar Festival
+				-- ["g"] = { i(21100), }, -- Coin of Ancestry
+				["qg"] = 30368,	-- Elder Bluewolf
+				["maps"] = { 123 },	-- Wintergrasp
+				["coord"] = { 49.0, 14.0, 123 },
+				["questID"] = 13026,	-- Bluewolf the Elder
+				["achievementID"] = 1396,	-- Elders of Northrend
+				["criteriaID"] = 10,	-- Elder Bluewolf in Wintergrasp
+			},
 			{	-- Brightspear the Elder
 				["u"] = 17,	-- Lunar Festival
 				-- ["g"] = { i(21100), }, -- Coin of Ancestry
@@ -210,9 +231,20 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["achievementID"] = 915,	-- Elders of the Alliance
 				["criteriaID"] = 2,	-- Elder Bronzebeard in Ironforge
 			},
-			q(13067, {	-- Chogan'gada the Elder
-				-- i(21100), -- Coin of Ancestry
-			}),
+			{	-- Chogan'gada the Elder
+				["u"] = 17,	-- Lunar Festival
+				-- ["g"] = { i(21100), }, -- Coin of Ancestry
+				["qg"] = 30538,	-- Elder Chogan'gada
+				["maps"] = {
+					117,	-- Howling Fjord
+					136,	-- Utgarde Pinnacle
+				},
+				["coord"] = { 57.2, 46.6, 117 },	-- Utgarde Pinnacle entrance
+				["questID"] = 13067,	-- Chogan'gada the Elder
+				["description"] = "After defeating Skadi, the Elder is underneath the staircase before you enter the Ruined Court.",
+				["achievementID"] = 910,	-- Elders of the Dungeons
+				["criteriaID"] = 13,	-- Elder Chogan'gada in Utgarde Pinnacle
+			},
 			{	-- Darkcore the Elder
 				["u"] = 17,	-- Lunar Festival
 				-- ["g"] = { i(21100), }, -- Coin of Ancestry
@@ -255,9 +287,16 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["achievementID"] = 912,	-- Elders of Eastern Kingdoms
 				["criteriaID"] = 10,	-- Elder Dawnstrider in Flame Crest
 			},
-			q(29734, {	-- Deepforge the Elder
-				-- i(21100), -- Coin of Ancestry
-			}),
+			{	-- Deepforge the Elder
+				["u"] = 17,	-- Lunar Festival
+				-- ["g"] = { i(21100), }, -- Coin of Ancestry
+				["qg"] = 55216,	-- Elder Deepforge
+				["maps"] = { 207 },	-- Deepholm
+				["coord"] = { 27.7, 69.1, 207 },
+				["questID"] = 29734,	-- Deepforge the Elder
+				["achievementID"] = 6006,	-- Elders of Cataclysm
+				["criteriaID"] = 9,	-- Elder Deepforge in Deepholm
+			},
 			{	-- Dreamseer the Elder
 				["u"] = 17,	-- Lunar Festival
 				-- ["g"] = { i(21100), }, -- Coin of Ancestry
@@ -278,9 +317,16 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["achievementID"] = 6006,	-- Elders of Cataclysm
 				["criteriaID"] = 7,	-- Elder Evershade in Nordrassil
 			},
-			q(13015, {	-- Fargal the Elder
-				-- i(21100), -- Coin of Ancestry
-			}),
+			{	-- Fargal the Elder
+				["u"] = 17,	-- Lunar Festival
+				-- ["g"] = { i(21100), }, -- Coin of Ancestry
+				["qg"] = 30359,	-- Elder Fargal
+				["maps"] = { 120 },	-- The Storm Peaks
+				["coord"] = { 28.9, 73.7, 120 },
+				["questID"] = 13015,	-- Fargal the Elder
+				["achievementID"] = 1396,	-- Elders of Northrend
+				["criteriaID"] = 4,	-- Elder Fargal in Frosthold
+			},
 			{	-- Farwhisper the Elder
 				["u"] = 17,	-- Lunar Festival
 				-- ["g"] = { i(21100), }, -- Coin of Ancestry
@@ -326,9 +372,16 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["achievementID"] = 912,	-- Elders of Eastern Kingdoms
 				["criteriaID"] = 13,	-- Elder Graveborn in Brill
 			},
-			q(13028, {	-- Graymane the Elder
-				-- i(21100), -- Coin of Ancestry
-			}),
+			{	-- Graymane the Elder
+				["u"] = 17,	-- Lunar Festival
+				-- ["g"] = { i(21100), }, -- Coin of Ancestry
+				["qg"] = 30370,	-- Elder Graymane
+				["maps"] = { 120 },	-- The Storm Peaks
+				["coord"] = { 41.1, 84.7, 120 },
+				["questID"] = 13028,	-- Graymane the Elder
+				["achievementID"] = 1396,	-- Elders of Northrend
+				["criteriaID"] = 13,	-- Elder Graymane in K3
+			},
 			{	-- Grimtotem the Elder
 				["u"] = 17,	-- Lunar Festival
 				-- ["g"] = { i(21100), }, -- Coin of Ancestry
@@ -369,9 +422,20 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["achievementID"] = 912,	-- Elders of Eastern Kingdoms
 				["criteriaID"] = 11,	-- Elder Highpeak in The Hinterlands
 			},
-			q(13021, {	-- Igasho the Elder
-				-- i(21100), -- Coin of Ancestry
-			}),
+			{	-- Igasho the Elder
+				["u"] = 17,	-- Lunar Festival
+				-- ["g"] = { i(21100), }, -- Coin of Ancestry
+				["qg"] = 30536,	-- Elder Igasho
+				["maps"] = {
+					114,	-- Borean Tundra
+					129,	-- The Nexus
+				},
+				["coord"] = { 27.5, 26.0, 114 },	-- The Nexus entrance
+				["questID"] = 13021,	-- Igasho the Elder
+				["description"] = "When you enter the Nexus, turn right and loop around the Singing Grove.  The Elder is just before you reach Ormorok's platform.",
+				["achievementID"] = 910,	-- Elders of the Dungeons
+				["criteriaID"] = 8,	-- Elder Igasho in The Nexus
+			},
 			{	-- Ironband the Elder
 				["u"] = 17,	-- Lunar Festival
 				-- ["g"] = { i(21100), }, -- Coin of Ancestry
@@ -382,15 +446,44 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["achievementID"] = 912,	-- Elders of Eastern Kingdoms
 				["criteriaID"] = 12,	-- Elder Ironband in Searing Gorge
 			},
-			q(13017, {	-- Jarten the Elder
-				-- i(21100), -- Coin of Ancestry
-			}),
-			q(13023, {	-- Kilias the Elder
-				-- i(21100), -- Coin of Ancestry
-			}),
-			q(13025, {	-- Lunaro the Elder
-				-- i(21100), -- Coin of Ancestry
-			}),
+			{	-- Jarten the Elder
+				["u"] = 17,	-- Lunar Festival
+				-- ["g"] = { i(21100), }, -- Coin of Ancestry
+				["qg"] = 30531,	-- Elder Jarten
+				["maps"] = {
+					117,	-- Howling Fjord
+					133,	-- Utgarde Keep
+				},
+				["coord"] = { 57.9, 50.0, 117 },	-- Utgarde Keep entrance path
+				["questID"] = 13017,	-- Jarten the Elder
+				["achievementID"] = 910,	-- Elders of the Dungeons
+				["description"] = "After defeating Keleseth, continue through the mining tunnel.  Before heading up the stairs to the next boss, turn left to find the Elder.",
+				["criteriaID"] = 7,	-- Elder Jarten in Utgarde Keep
+			},
+			{	-- Kilias the Elder
+				["u"] = 17,	-- Lunar Festival
+				-- ["g"] = { i(21100), }, -- Coin of Ancestry
+				["qg"] = 30534,	-- Elder Kilias
+				["maps"] = {
+					121,	-- Zul'Drak
+					160,	-- Drak'Tharon Keep
+				},
+				["coord"] = { 28.5, 86.9, 121 },	-- Drak'Tharon Keep entrance
+				["questID"] = 13023,	-- Kilias the Elder
+				["description"] = "The Elder is just inside the Raptor Pens, near King Dred.",
+				["achievementID"] = 910,	-- Elders of the Dungeons
+				["criteriaID"] = 10,	-- Elder Kilias in Drak'Tharon Keep
+			},
+			{	-- Lunaro the Elder
+				["u"] = 17,	-- Lunar Festival
+				-- ["g"] = { i(21100), }, -- Coin of Ancestry
+				["qg"] = 30367,	-- Elder Lunaro
+				["maps"] = { 116 },	-- Grizzly Hills
+				["coord"] = { 80.4, 37.1, 116 },
+				["questID"] = 13025,	-- Lunaro the Elder
+				["achievementID"] = 1396,	-- Elders of Northrend
+				["criteriaID"] = 9,	-- Elder Lunaro in Ruins of Tethys
+			},
 			{	-- Meadowrun the Elder
 				["u"] = 17,	-- Lunar Festival
 				-- ["g"] = { i(21100), }, -- Coin of Ancestry
@@ -468,12 +561,26 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["achievementID"] = 911,	-- Elders of Kalimdor
 				["criteriaID"] = 14,	-- Elder Morningdew in Fizzle and Pozzik's Speedbarge
 			},
-			q(13014, {	-- Morthie the Elder
-				-- i(21100), -- Coin of Ancestry
-			}),
-			q(13032, {	-- Muraco the Elder
-				-- i(21100), -- Coin of Ancestry
-			}),
+			{	-- Morthie the Elder
+				["u"] = 17,	-- Lunar Festival
+				-- ["g"] = { i(21100), }, -- Coin of Ancestry
+				["qg"] = 30358,	-- Elder Morthie
+				["maps"] = { 115 },	-- Dragonblight
+				["coord"] = { 29.7, 55.9, 115 },
+				["questID"] = 13014,	-- Morthie the Elder
+				["achievementID"] = 1396,	-- Elders of Northrend
+				["criteriaID"] = 3,	-- Elder Morthie in Star's Rest
+			},
+			{	-- Muraco the Elder
+				["u"] = 17,	-- Lunar Festival
+				-- ["g"] = { i(21100), }, -- Coin of Ancestry
+				["qg"] = 30374,	-- Elder Muraco
+				["maps"] = { 120 },	-- The Storm Peaks
+				["coord"] = { 64.6, 51.3, 120 },
+				["questID"] = 13032,	-- Muraco the Elder
+				["achievementID"] = 1396,	-- Elders of Northrend
+				["criteriaID"] = 18,	-- Elder Muraco in Camp Tunka'lo
+			},
 			{	-- Nightwind the Elder
 				["u"] = 17,	-- Lunar Festival
 				-- ["g"] = { i(21100), }, -- Coin of Ancestry
@@ -484,12 +591,30 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["achievementID"] = 911,	-- Elders of Kalimdor
 				["criteriaID"] = 12,	-- Elder Nightwind in Felwood
 			},
-			q(13016, {	-- Northal the Elder
-				-- i(21100), -- Coin of Ancestry
-			}),
-			q(13022, {	-- Nurgen the Elder
-				-- i(21100), -- Coin of Ancestry
-			}),
+			{	-- Northal the Elder
+				["u"] = 17,	-- Lunar Festival
+				-- ["g"] = { i(21100), }, -- Coin of Ancestry
+				["qg"] = 30360,	-- Elder Northal
+				["maps"] = { 114 },	-- Borean Tundra
+				["coord"] = { 33.7, 34.3, 114 },
+				["questID"] = 13016,	-- Northal the Elder
+				["achievementID"] = 1396,	-- Elders of Northrend
+				["criteriaID"] = 6,	-- Elder Northal in Transitus Shield
+			},
+			{	-- Nurgen the Elder
+				["u"] = 17,	-- Lunar Festival
+				-- ["g"] = { i(21100), }, -- Coin of Ancestry
+				["qg"] = 30533,	-- Elder Nurgen
+				["maps"] = {
+					115,	-- Dragonblight
+					157,	-- Azjol-Nerub
+				},
+				["coord"] = { 26.0, 50.7, 115 },	-- Azjol-Nerub entrance
+				["questID"] = 13022,	-- Nurgen the Elder
+				["description"] = "After defeating Hadronox, jump to the lower level of the dungeon.  The Elder is on the north side of the room where you land.",
+				["achievementID"] = 910,	-- Elders of the Dungeons
+				["criteriaID"] = 9,	-- Elder Nurgen in Azjol-Nerub
+			},
 			{	-- Obsidian the Elder
 				["u"] = 17,	-- Lunar Festival
 				-- ["g"] = { i(21100), }, -- Coin of Ancestry
@@ -500,12 +625,30 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["achievementID"] = 912,	-- Elders of Eastern Kingdoms
 				["criteriaID"] = 14,	-- Elder Obsidian in The Sepulcher
 			},
-			q(13065, {	-- Ohanzee the Elder
-				-- i(21100), -- Coin of Ancestry
-			}),
-			q(13029, {	-- Pamuya the Elder
-				-- i(21100), -- Coin of Ancestry
-			}),
+			{	-- Ohanzee the Elder
+				["u"] = 17,	-- Lunar Festival
+				-- ["g"] = { i(21100), }, -- Coin of Ancestry
+				["qg"] = 30537,	-- Elder Ohanzee
+				["maps"] = {
+					121,	-- Zul'Drak
+					153,	-- Gundrak
+				},
+				["coord"] = { 76.2, 21.1, 121 },	-- Gundrak entrance
+				["questID"] = 13065,	-- Ohanzee the Elder
+				["description"] = "The Elder is on the platform behind the second boss in the dungeon, Drakkari Colossus.",
+				["achievementID"] = 910,	-- Elders of the Dungeons
+				["criteriaID"] = 11,	-- Elder Ohanzee in Gundrak
+			},
+			{	-- Pamuya the Elder
+				["u"] = 17,	-- Lunar Festival
+				-- ["g"] = { i(21100), }, -- Coin of Ancestry
+				["qg"] = 30371,	-- Elder Pamuya
+				["maps"] = { 114 },	-- Borean Tundra
+				["coord"] = { 42.9, 49.5, 114 },
+				["questID"] = 13029,	-- Pamuya the Elder
+				["achievementID"] = 1396,	-- Elders of Northrend
+				["criteriaID"] = 15,	-- Elder Pamuya in Warsong Hold
+			},
 			{	-- Primestone the Elder
 				["u"] = 17,	-- Lunar Festival
 				-- ["g"] = { i(21100), }, -- Coin of Ancestry
@@ -557,12 +700,26 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["achievementID"] = 911,	-- Elders of Kalimdor
 				["criteriaID"] = 1,	-- Elder Runetotem in Razor Hill
 			},
-			q(13018, {	-- Sandrene the Elder
-				-- i(21100), -- Coin of Ancestry
-			}),
-			q(13012, {	-- Sardis the Elder
-				-- i(21100), -- Coin of Ancestry
-			}),
+			{	-- Sandrene the Elder
+				["u"] = 17,	-- Lunar Festival
+				-- ["g"] = { i(21100), }, -- Coin of Ancestry
+				["qg"] = 30362,	-- Elder Sandrene
+				["maps"] = { 119 },	-- Sholazar Basin
+				["coord"] = { 49.7, 63.5, 119 },
+				["questID"] = 13018,	-- Sandrene the Elder
+				["achievementID"] = 1396,	-- Elders of Northrend
+				["criteriaID"] = 7,	-- Elder Sandrene in Lakeside Landing
+			},
+			{	-- Sardis the Elder
+				["u"] = 17,	-- Lunar Festival
+				-- ["g"] = { i(21100), }, -- Coin of Ancestry
+				["qg"] = 30348,	-- Elder Sardis
+				["maps"] = { 114 },	-- Borean Tundra
+				["coord"] = { 59.0, 65.5, 114 },
+				["questID"] = 13012,	-- Sardis the Elder
+				["achievementID"] = 1396,	-- Elders of Northrend
+				["criteriaID"] = 1,	-- Elder Sardis in Valiance Keep
+			},
 			{	-- Sekhemi the Elder
 				["u"] = 17,	-- Lunar Festival
 				-- ["g"] = { i(21100), }, -- Coin of Ancestry
@@ -613,9 +770,16 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["achievementID"] = 911,	-- Elders of Kalimdor
 				["criteriaID"] = 13,	-- Elder Skyseer in Freewind Post
 			},
-			q(13031, {	-- Skywarden the Elder
-				-- i(21100), -- Coin of Ancestry
-			}),
+			{	-- Skywarden the Elder
+				["u"] = 17,	-- Lunar Festival
+				-- ["g"] = { i(21100), }, -- Coin of Ancestry
+				["qg"] = 30373,	-- Elder Skywarden
+				["maps"] = { 115 },	-- Dragonblight
+				["coord"] = { 35.1, 48.3, 115 },
+				["questID"] = 13031,	-- Skywarden the Elder
+				["achievementID"] = 1396,	-- Elders of Northrend
+				["criteriaID"] = 17,	-- Elder Skywarden in Agmar's Hammer
+			},
 			{	-- Snowcrown the Elder
 				["u"] = 17,	-- Lunar Festival
 				-- ["g"] = { i(21100), }, -- Coin of Ancestry
@@ -675,12 +839,26 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["achievementID"] = 911,	-- Elders of Kalimdor
 				["criteriaID"] = 7,	-- Elder Starweave in Lor'danel
 			},
-			q(13020, {	-- Stonebeard the Elder
-				-- i(21100), -- Coin of Ancestry
-			}),
-			q(29735, {	-- Stonebrand the Elder
-				-- i(21100), -- Coin of Ancestry
-			}),
+			{	-- Stonebeard the Elder
+				["u"] = 17,	-- Lunar Festival
+				-- ["g"] = { i(21100), }, -- Coin of Ancestry
+				["qg"] = 30375,	-- Elder Stonebeard
+				["maps"] = { 120 },	-- The Storm Peaks
+				["coord"] = { 31.2, 37.6, 120 },
+				["questID"] = 13020,	-- Stonebeard the Elder
+				["achievementID"] = 1396,	-- Elders of Northrend
+				["criteriaID"] = 14,	-- Elder Stonebeard in Bouldercrag's Refuge
+			},
+			{	-- Stonebrand the Elder
+				["u"] = 17,	-- Lunar Festival
+				-- ["g"] = { i(21100), }, -- Coin of Ancestry
+				["qg"] = 55217,	-- Elder Stonebrand
+				["maps"] = { 207 },	-- Deepholm
+				["coord"] = { 49.7, 54.8, 207 },
+				["questID"] = 29735,	-- Stonebrand the Elder
+				["achievementID"] = 6006,	-- Elders of Cataclysm
+				["criteriaID"] = 1,	-- Elder Stonebrand in the Temple of the Earth
+			},
 			{	-- Stonefort the Elder
 				["u"] = 17,	-- Lunar Festival
 				-- ["g"] = { i(21100), }, -- Coin of Ancestry
@@ -715,12 +893,26 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["achievementID"] = 912,	-- Elders of Eastern Kingdom
 				["criteriaID"] = 3,	-- Elder Stormbrow in Goldshire
 			},
-			q(13027, {	-- Tauros the Elder
-				-- i(21100), -- Coin of Ancestry
-			}),
-			q(13019, {	-- Thoim the Elder
-				-- i(21100), -- Coin of Ancestry
-			}),
+			{	-- Tauros the Elder
+				["u"] = 17,	-- Lunar Festival
+				-- ["g"] = { i(21100), }, -- Coin of Ancestry
+				["qg"] = 30369,	-- Elder Tauros
+				["maps"] = { 121 },	-- Zul'Drak
+				["coord"] = { 58.9, 56.0, 121 },
+				["questID"] = 13027,	-- Tauros the Elder
+				["achievementID"] = 1396,	-- Elders of Northrend
+				["criteriaID"] = 11,	-- Elder Tauros in Zim'Torga
+			},
+			{	-- Thoim the Elder
+				["u"] = 17,	-- Lunar Festival
+				-- ["g"] = { i(21100), }, -- Coin of Ancestry
+				["qg"] = 30363,	-- Elder Thoim
+				["maps"] = { 115 },	-- Dragonblight
+				["coord"] = { 48.7, 78.1, 115 },
+				["questID"] = 13019,	-- Thoim the Elder
+				["achievementID"] = 1396,	-- Elders of Northrend
+				["criteriaID"] = 12,	-- Elder Thoim in Moa'ki Harbor
+			},
 			{	-- Thunderhorn the Elder
 				["u"] = 17,	-- Lunar Festival
 				-- ["g"] = { i(21100), }, -- Coin of Ancestry
@@ -731,9 +923,16 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["achievementID"] = 911,	-- Elders of Kalimdor
 				["criteriaID"] = 17,	-- Elder Thunderhorn in Un'Goro
 			},
-			q(13024, {	-- Wanikaya the Elder
-				-- i(21100), -- Coin of Ancestry
-			}),
+			{	-- Wanikaya the Elder
+				["u"] = 17,	-- Lunar Festival
+				-- ["g"] = { i(21100), }, -- Coin of Ancestry
+				["qg"] = 30365,	-- Elder Wanikaya
+				["maps"] = { 119 },	-- Sholazar Basin
+				["coord"] = { 63.8, 49.0, 119 },
+				["questID"] = 13024,	-- Wanikaya the Elder
+				["achievementID"] = 1396,	-- Elders of Northrend
+				["criteriaID"] = 8,	-- Elder Wanikaya in Rainspeaker Rapids
+			},
 			{	-- Wheathoof the Elder
 				["u"] = 17,	-- Lunar Festival
 				-- ["g"] = { i(21100), }, -- Coin of Ancestry
@@ -745,9 +944,16 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["achievementID"] = 914,	-- Elders of the Horde
 				["criteriaID"] = 2,	-- Elder Wheathoof in Thunder Bluff
 			},
-			q(13030, {	-- Whurain the Elder
-				-- i(21100), -- Coin of Ancestry
-			}),
+			{	-- Whurain the Elder
+				["u"] = 17,	-- Lunar Festival
+				-- ["g"] = { i(21100), }, -- Coin of Ancestry
+				["qg"] = 30372,	-- Elder Whurain
+				["maps"] = { 116 },	-- Grizzly Hills
+				["coord"] = { 64.2, 47.0, 116 },
+				["questID"] = 13030,	-- Whurain the Elder
+				["achievementID"] = 1396,	-- Elders of Northrend
+				["criteriaID"] = 16,	-- Elder Whurain in Camp Oneqwah
+			},
 			{	-- Wildmane the Elder
 				["u"] = 17,	-- Lunar Festival
 				-- ["g"] = { i(21100), }, -- Coin of Ancestry
@@ -802,9 +1008,20 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["achievementID"] = 912,	-- Elders of Eastern Kingdoms
 				["criteriaID"] = 6,	-- Elder Winterhoof in Booty Bay
 			},
-			q(13066, {	-- Yurauk the Elder
-				-- i(21100), -- Coin of Ancestry
-			}),
+			{	-- Yurauk the Elder
+				["u"] = 17,	-- Lunar Festival
+				-- ["g"] = { i(21100), }, -- Coin of Ancestry
+				["qg"] = 30535,	-- Elder Yurauk
+				["maps"] = {
+					120,	-- The Storm Peaks
+					140,	-- Halls of Stone
+				},
+				["coord"] = { 39.6, 26.9, 120 },	-- Halls of Stone entrance
+				["questID"] = 13066,	-- Yurauk the Elder
+				["description"] = "The Elder is on the western side of the Crystalline Quarry inside Halls of Stone.",
+				["achievementID"] = 910,	-- Elders of the Dungeons
+				["criteriaID"] = 12,	-- Elder Yurauk in the Halls of Stone
+			},
 		}),
 		n(-2, { -- Vendors
 			n(15909, { -- Fariel Starsong <Coin of Ancestry Collector>
