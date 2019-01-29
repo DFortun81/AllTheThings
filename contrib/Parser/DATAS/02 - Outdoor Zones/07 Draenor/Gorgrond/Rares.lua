@@ -178,7 +178,7 @@ _.Zones =
 								["npcID"] = 88580,	-- Firestarter Grash
 								["questID"] = 37373,
 								["isDaily"] = true,
-								["description"] = "Will spawn in the area that is one fire.",
+								["description"] = "Will spawn in the area that is on fire.",
 								["coords"] = { 
 									{ 57.8, 36.6, 543 },
 									{ 72.8, 35.8, 543 },
