@@ -104,7 +104,7 @@ _.NeverImplemented =
 			un(1, i(32110)),	-- Chancellor's Silk Handguards
 			un(1, i(32111)),	-- Chancellor's Silk Rainment
 			un(1, i(32112)),	-- Chancellor's Silk Legs
-			un(1, i(104355)),	-- Titan Rocket Boots
+			un(1, i(104355)),	-- Titan Rocket Boots-
 			un(1, i(90358)),	-- Honorary Combat Engineer's Silk Trousers
 			un(1, i(90359)),	-- Honorary Combat Engineer's Satin Leggings
 			un(1, i(6478)),		-- Rat Stompers
