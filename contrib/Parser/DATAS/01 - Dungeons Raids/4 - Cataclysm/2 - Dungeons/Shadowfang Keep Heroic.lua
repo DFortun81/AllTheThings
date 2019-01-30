@@ -19,9 +19,6 @@ _.Instances =
 								i(63436),	-- Traitor's Grips
 								i(63435),	-- Boots of the Predator
 							})),
-							n(  3864, {			-- Fel Steed
-								i(67125),	-- Bone-Inlaid Sarcophagus Key
-							}),
 							cr( 3887, e( 97, {	-- Baron Silverlaine
 								i(63438),	-- Baroness Silverlaine's Locket
 								i(63441),	-- Pendant of the Keep
