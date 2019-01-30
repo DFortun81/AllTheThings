@@ -253,7 +253,7 @@ _.Zones =
 								["coord"] = { 56.2, 31 },
 							}),
 						}),
-						n(-17, {	-- Quests
+						n(-17,  {	-- Quests
 							q(25732, {	-- A Bone To Pick
 								["qg"] = 46458,	-- Budd
 								["coord"] = { 58.3, 48.6, 201 },
@@ -264,6 +264,11 @@ _.Zones =
 									["coord"] = { 49.6, 40.8, 201 },
 									["sourceQuests"] = { 25587 },	-- Gimme Shelter
 								}),
+							}),
+							q(25471, {	-- Across the Great Divide
+								["qg"] = 41341,	-- Erunak Stonespeaker
+								["coord"] = { 63.8, 59.9, 201 },
+								["sourceQuests"] = 27708,	-- The Warden's Time
 							}),
 							o(203128, {	-- Broken Bottle
 								q(25638, {	-- A Desperate Plea
@@ -467,9 +472,9 @@ _.Zones =
 								["sourceQuests"] = { 25602 },	-- Can't Start a Fire Without a Spark
 							}),
 --[[
-							qg(, qh(27668)),	-- Pay Attention!
-							qg(, qa(25281)),	-- Pay It Forward
-							qg(, qh(25936)),	-- Pay It Forward
+							qh(27668),	-- Pay Attention!
+							qa(25281),	-- Pay It Forward
+							qh(25936),	-- Pay It Forward
 --]]							
 --[[
 							q(25384, {	-- Raw Materials				\
@@ -479,10 +484,10 @@ _.Zones =
 							}),                                         / 
 --]]
 --[[
-							qg(, qa(25405)),	-- Rest For the Weary
-							qg(, qh(25941)),	-- Rest For the Weary
-							qg(, qa(24432)),	-- Sea Legs
-							qg(, qh(25929)),	-- Sea Legs
+							qa(25405),	-- Rest For the Weary
+							qh(25941),	-- Rest For the Weary
+							qa(24432),	-- Sea Legs
+							qh(25929),	-- Sea Legs
 --]]
 --							q(35738),	-- Shallow End of the Gene Pool (In beta never added to game.)
 --							q(25498),	-- Shark Bait (In beta never added to game.)
@@ -495,7 +500,7 @@ _.Zones =
 								["coord"] = { 46.3, 46.8, 201 },
 								["sourceQuests"] = { 25794 },	-- Undersea Sanctuary
 							}),
---							qg(, qh(26000)),	-- Spelunking
+--							qh(26000),	-- Spelunking
 --							q(25636),	-- Starve a Fever, Feed a Cold (In beta never added to game.)
 							qa(25564, {	-- Stormwind Elite Aquatic and Land Forces
 								["qg"] = 39887,	-- Captain Taylor
@@ -542,7 +547,7 @@ _.Zones =
 								["qg"] = 39887,	-- Captain Taylor
 								["coord"] = { 44.7, 22.5, 201 },
 							}),
---							qg(, qh(25943)),	-- Traveling on Our Stomachs
+--							qh(25943),	-- Traveling on Our Stomachs
 							q(25794, {	-- Undersea Sanctuary
 								["qg"] = 40105,	-- Erunak Stonespeaker
 								["coord"] = { 46.3, 46.8, 201 },
@@ -559,14 +564,14 @@ _.Zones =
 								["coord"] = { 63.9, 59.8, 201 },
 								["sourceQuests"] = { 25887 },	-- Wake of Destruction
 							}),
---							qg(, qh(26040)),	-- What? What? In My Gut...?
+--							qh(26040),	-- What? What? In My Gut...?
 						}),
-						n(-16, {	-- Rares
+						n(-16,  {	-- Rares
 							n(49913, {	-- Lady La-La
 								i(67152),	-- Lady La-La's Singing Shell
 							}),
 						}),
-						n(0, {	-- Zone Drop
+						n(0,    {	-- Zone Drop
 							{	-- Technique: Origami Slime
 								["itemID"] = 65649,	--	-- Technique: Origami Slime
 							},
@@ -607,20 +612,98 @@ _.Zones =
 							}),
 						}),
 						n(-17,  {	-- Quests
+							q(25215, {	-- A Distracting Scent
+								["g"] = {
+									i(59764),	-- Cowl of the Leptochelae
+									i(59763), 	-- Aquasear Waistguard
+									i(59762), 	-- Wentletrap Legplates
+								},
+								["qg"] = 39876,	-- Felora Firewreath
+								["coord"] = { 49.3, 42.7, 205 },
+								["sourceQuests"] = { 25222 },	-- Silver Tide Hollow
+							}),
+							q(25164, {	-- Backed Into a Corner
+								["g"] = {
+									i(59767),	-- Ostracod Sandals
+									i(59766),	-- Shoulderguards of Caridean Might
+									i(59765),	-- Damplight Chestplate
+								},
+								["qg"] = 39226,	-- Farseer Gadra
+								["coord"] = { 55.9, 13.6, 205 },
+								["sourceQuests"] = { 25334 },	-- The Looming Threat
+							}),
+							q(25456, {	-- Back in One Piece (awarded "Silver Tide Hollow" criteria)
+								["qg"] = 39882,	-- The Great Sambino
+								["coord"] = { 41.3, 34.2, 205 },
+								["sourceQuests"] = { 25217 },	-- Totem Modification
+							}),
+							q(25219, {	-- Don't be Shellfish
+								["qg"] = 39875,	-- Earthmender Duarn
+								["coord"] = { 49.2, 42.5, 205 },
+								["sourceQuests"] = { 25222 },	-- Silver Tide Hollow
+							}),
+							q(25221, {	-- Rundown
+								["qg"] = 39877,	-- Toshe Chaosrender
+								["coord"] = { 55.5, 12.5, 205 },
+								["sourceQuests"] = { 25164 },	-- Backed Into a Corner
+							}),
+							q(25222, {	-- Silver Tide Hollow
+								["qg"] = 39877,	-- Toshe Chaosrender
+								["coord"] = { 53.2, 33.1, 205 },
+								["sourceQuests"] = { 25221 },	-- Rundown
+							}),
+							q(25220, {	-- Slippery Threat
+								["qg"] = 39878,	-- Caretaker Movra
+								["coord"] = { 49.1, 41.9, 205 },
+								["sourceQuests"] = { 25222 },	-- Silver Tide Hollow
+							}),
+							q(25216, {	-- The Great Sambino
+								["qg"] = 39876,	-- Felora Firewreath
+								["coord"] = { 49.3, 42.7, 205 },
+								["sourceQuests"] = { 25222 },	-- Silver Tide Hollow
+							}),
+							q(25334, {	-- The Looming Threat
+								["qg"] = 39226,	-- Farseer Gadra
+								["coord"] = { 55.9, 13.6, 205 },
+								["sourceQuests"] = { 25471 },	-- Across the Great Divide
+							}),
+							q(25217, {	-- Totem Modification
+								["g"] = {
+									i(59756),	-- Drill-Guide Belt
+									i(59758),	-- Rockbite Slicer
+									i(59757),	-- Sambino's Old Hammer
+								},
+								["qg"] = 39882,	-- The Great Sambino
+								["coord"] = { 41.3, 34.2, 205 },
+								["sourceQuests"] = { 25218 },	-- Undersea Inflation
+							}),
+							q(25218, {	-- Undersea Inflation
+								["qg"] = 39882,	-- The Great Sambino
+								["coord"] = { 41.3, 34.2, 205 },
+								["sourceQuests"] = { 25216 },	-- The Great Sambino
+							}),
+							
+							
+							
+							
+--[[
+								["qg"] = ,	-- 
+								["coord"] = { , , 205 },
+								["sourceQuests"] = {  },	-- 
+							}),
+--]]
+							
+							
 --[[						
 							qg(, qa(25582)),	-- A Better Vantage
 							qg(, qh(25955)),	-- A Better Vantage
 							qg(, qa(26005)),	-- A Breath of Fresh Air
 							qg(, qh(26006)),	-- A Breath of Fresh Air
 --]]
-							qg(39876, q(25215,  { 	-- A Distracting Scent
-								i(59764),
-								i(59763),
-								i(59762),
-							})),
+							
 							n(40510, {	-- Fathom-Lord Zin'jatar
 								i(54614, {	-- Luminescent Pearl
-									q(25442,  { 	-- A Pearl of Wisdom
+									q(25442, {	-- A Pearl of Wisdom
 										i(59752),
 										i(59751),
 										i(59750),
@@ -628,32 +711,21 @@ _.Zones =
 								}),
 							}),
 --							qg(, qa(25535)),	-- A Powerful Need To Eat
-							q(25471, {	-- Across the Great Divide
-								["qg"] = 41341,	-- Erunak Stonespeaker
-								["coord"] = { 63.8, 59.9, 201 },
-								["sourceQuests"] = 27708,	-- The Warden's Time
-							}),
-							qg(40644, qa(25581,  { 	-- An Occupation of Time
+							qg(40644, qa(25581, {	-- An Occupation of Time
 								i(59716),
 								i(59715),
 								i(59714),
 							})),
-							qg(40920, qh(25954,  { 	-- An Occupation of Time
+							qg(40920, qh(25954, {	-- An Occupation of Time
 								i(59713),
 								i(59712),
 								i(59711),
 							})),
 --[[
-							qg(, qa(25537)),	-- Art of Attraction
-							qg(, q(25860)),	-- At All Costs
-							qg(, q(25456)),	-- Back in One Piece
+							qa(25537),	-- Art of Attraction
+							q(25860),	-- At All Costs
 --]]
-							qg(39226, q(25164,  { 	-- Backed Into a Corner
-								i(59767),
-								i(59766),
-								i(59765),
-							})),
-							qg(40641, qa(25540,  { 	-- Bellies Await
+							qg(40641, qa(25540, {	-- Bellies Await
 								i(59727),
 								i(59726),
 								i(59728),
@@ -681,22 +753,22 @@ _.Zones =
 								["qg"] = 42411,	-- Captain Taylor
 								["coord"] = { 56.9, 75.8, 205 },
 							}),
-							qg(41770, qh(25970,  { 	-- Come Prepared
+							qg(41770, qh(25970, {	-- Come Prepared
 								i(59680),
 								i(59679),
 								i(59681),
 							})),
-							qg(41535, qa(25895,  { 	-- Come Prepared
+							qg(41535, qa(25895, {	-- Come Prepared
 								i(59683),
 								i(59682),
 								i(59684),
 							})),
-							qg(40227, q(25360,  { 	-- Crabby Patrons
+							qg(40227, q(25360, {	-- Crabby Patrons
 								i(59761),
 								i(59760),
 								i(59759),
 							})),
-							qg(40918, qh(25594,  { 	-- Crafty Crabs
+							qg(40918, qh(25594, {	-- Crafty Crabs
 								i(59731),
 								i(59730),
 								i(59729),
@@ -706,11 +778,10 @@ _.Zones =
 							qg(, qa(25893)),	-- Desperate Plan
 							qg(, qh(25968)),	-- Desperate Plan
 							qg(, q(25896)),	-- Devout Assembly
-							qg(, q(25219)),	-- Don't be Shellfish
 							qg(, qh(25964)),	-- Fallen But Not Forgotten
 							qg(, qa(25753)),	-- Fallen But Not Forgotten
 --]]
-							qg(40221, q(25440,  { 	-- Fathom-Lord Zin'jatar
+							qg(40221, q(25440, {	-- Fathom-Lord Zin'jatar
 								i(59755),
 								i(59754),
 								i(59753),
@@ -727,11 +798,11 @@ _.Zones =
 							qg(, q(29030)),	-- Honor the Flame
 							qg(, q(29031)),	-- Honor the Flame
 --]]
-							qg(41541, qa(25918,  { 	-- Hopelessly Gearless
+							qg(41541, qa(25918, {	-- Hopelessly Gearless
 								i(59746),
 								i(59744),
 							})),
-							qg(41811, qh(25992,  { 	-- Hopelessly Gearless
+							qg(41811, qh(25992, {	-- Hopelessly Gearless
 								i(59743),
 								i(59741),
 							})),
@@ -747,42 +818,42 @@ _.Zones =
 							qg(, q(25890)),	-- Nespirah
 							qg(, q(25859)),	-- No Trespass Forgiven
 --]]
-							qg(40642, qa(25749,  { 	-- Not Entirely Unprepared
+							qg(40642, qa(25749, {	-- Not Entirely Unprepared
 								i(59704),
 								i(59703),
 								i(59702),
 							})),
-							qg(40917, qh(25960,  { 	-- Not Entirely Unprepared
+							qg(40917, qh(25960, {	-- Not Entirely Unprepared
 								i(59701),
 								i(59700),
 								i(59699),
 							})),
 --							qg(, q(25659),	-- Not Soon Forgotten
-							qg(40639, qa(25538,  { 	-- Odor Coater
+							qg(40639, qa(25538, {	-- Odor Coater
 								i(59734),
 								i(59733),
 								i(59732),
 							})),
-							qg(41540, qa(25921,  { 	-- Overseer Idra'kess
+							qg(41540, qa(25921, {	-- Overseer Idra'kess
 								i(59740),
 								i(59739),
 								i(59738),
 							})),
-							qg(41810, qh(25995,  { 	-- Overseer Idra'kess
+							qg(41810, qh(25995, {	-- Overseer Idra'kess
 								i(59737),
 								i(59736),
 								i(59735),
 							})),
 							n(39638, {	-- Azsh'ir Patroller
 								i(62281, {	-- Ancient Elven Etching (Alliance)
-									qa(27716,  { 	-- Piece of the Past
+									qa(27716, {	-- Piece of the Past
 										i(59697),
 										i(59696),
 										i(59698),
 									}),
 								}),
 								i(62282, {	-- Ancient Elven Etching (Horde)
-									qh(27717,  { 	-- Piece of the Past
+									qh(27717, {	-- Piece of the Past
 										i(59694),
 										i(59693),
 										i(59695),
@@ -791,14 +862,14 @@ _.Zones =
 							}),
 							n(41227, {	-- Azsh'ir Infantry
 								i(62281, {	-- Ancient Elven Etching (Alliance)
-									qa(27716,  { 	-- Piece of the Past
+									qa(27716, {	-- Piece of the Past
 										i(59697),
 										i(59696),
 										i(59698),
 									}),
 								}),
 								i(62282, {	-- Ancient Elven Etching (Horde)
-									qh(27717,  { 	-- Piece of the Past
+									qh(27717, {	-- Piece of the Past
 										i(59694),
 										i(59693),
 										i(59695),
@@ -809,19 +880,16 @@ _.Zones =
 							qg(, qh(25962)),	-- Properly Inspired
 							qg(, qa(25751)),	-- Properly Inspired
 							qg(, q(25619)),	-- Reoccupation
-							qg(, q(25221)),	-- Rundown
 							qg(, q(25861)),	-- Setting An Example
 							qg(, qh(25593)),	-- Shelled Salvation
-							qg(, q(25222)),	-- Silver Tide Hollow
 							qg(, q(25907)),	-- Slave Labor
-							qg(, q(25220)),	-- Slippery Threat
 --]]
-							qg(40919, qh(25595,  { 	-- Something Edible
+							qg(40919, qh(25595, {	-- Something Edible
 								i(59724),
 								i(59723),
 								i(59725),
 							})),
-							qg(41531, q(25908,  { 	-- Stick it to Them
+							qg(41531, q(25908, {	-- Stick it to Them
 								i(59748),
 								i(59747),
 								i(59749),
@@ -831,19 +899,19 @@ _.Zones =
 							qg(, qa(25920)),	-- Still Valuable
 							qg(, q(25862)),	-- Stolen Property
 --]]
-							qg(40643, qa(25752,  { 	-- Swift Action
+							qg(40643, qa(25752, {	-- Swift Action
 								i(59663),
 								i(59662),
 							})),
-							qg(40916, qh(25963,  { 	-- Swift Action
+							qg(40916, qh(25963, {	-- Swift Action
 								i(59660),
 								i(59659),
 							})),
-							qg(40917, qh(25953,  { 	-- Swift Approach
+							qg(40917, qh(25953, {	-- Swift Approach
 								i(59718),
 								i(59717),
 							})),
-							qg(40642, qa(25580,  { 	-- Swift Approach
+							qg(40642, qa(25580, {	-- Swift Approach
 								i(59721),
 								i(59720),
 							})),
@@ -851,48 +919,38 @@ _.Zones =
 							qg(, qh(27394)),	-- The Call of the Blade
 							qg(, qa(27393)),	-- The Call of the Blade
 							qg(, q(26191)),	-- The Culmination of Our Efforts
-							qg(, q(25216)),	-- The Great Sambino
-							qg(, q(25334)),	-- The Looming Threat
 							qg(, q(25620)),	-- The Revered Lady							
 							qg(, q(43644)),	-- To the Deeps
 							qg(, q(25637)),	-- To the Fathom-Lord's Call
 							qg(, q(25359)),	-- Toshe's Vengeance
---]]
-							qg(39882, q(25217,  { 	-- Totem Modification
-								i(59756),
-								i(59758),
-								i(59757),
-							})),
---[[
-							qg(, q(25218)),	-- Undersea Inflation
 							qg(, qh(25971)),	-- Unfurling Plan
 							qg(, qa(25897)),	-- Unfurling Plan
 							qg(, qa(25583)),	-- Upon the Scene of Battle
 							qg(, qh(25956)),	-- Upon the Scene of Battle
 							qg(, q(25439)),	-- Vengeful Heart
 --]]
-							qg(40919, qh(26135,  { 	-- Visions of the Past: Rise from the Deep
+							qg(40919, qh(26135, {	-- Visions of the Past: Rise from the Deep
 								i(59667),
 								i(59666),
 							})),
-							qg(39881, qa(25626,  { 	-- Visions of the Past: Rise from the Deep
+							qg(39881, qa(25626, {	-- Visions of the Past: Rise from the Deep
 								i(59671),
 								i(59670),
 							})),
-							qg(39881, qa(25760,  { 	-- Visions of the Past: Invasion of Vashj'ir
+							qg(39881, qa(25760, {	-- Visions of the Past: Invasion of Vashj'ir
 								i(59709),
 								i(59708),
 							})),
-							qg(40919, qh(25957,  { 	-- Visions of the Past: Invasion of Vashj'ir
+							qg(40919, qh(25957, {	-- Visions of the Past: Invasion of Vashj'ir
 								i(59706),
 								i(59705),
 							})),
-							qg(39881, qa(25755,  { 	-- Visions of the Past: The Slaughter of Biel'aran Ridge
+							qg(39881, qa(25755, {	-- Visions of the Past: The Slaughter of Biel'aran Ridge
 								i(59691),
 								i(59690),
 								i(59692),
 							})),
-							qg(40919, qh(25966,  { 	-- Visions of the Past: The Slaughter of Biel'aran Ridge
+							qg(40919, qh(25966, {	-- Visions of the Past: The Slaughter of Biel'aran Ridge
 								i(59687),
 								i(59686),
 								i(59688),
@@ -905,12 +963,12 @@ _.Zones =
 							qg(, qa(25917)),	-- We Are Not Alone
 							qg(, qh(25991)),	-- We Are Not Alone
 --]]
-							qg(40645, qa(25911,  { 	-- Welcome News
+							qg(40645, qa(25911, {	-- Welcome News
 								i(59678),
 								i(59677),
 								i(59676),
 							})),
-							qg(40921, qh(25973,  { 	-- Welcome News
+							qg(40921, qh(25973, {	-- Welcome News
 								i(59675),
 								i(59674),
 								i(59673),

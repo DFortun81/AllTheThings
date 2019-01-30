@@ -514,9 +514,16 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["achievementID"] = 911,	-- Elders of Kalimdor
 				["criteriaID"] = 11,	-- Elder Mistwalker in Dire Maul
 			},
-			q(29738, {	-- Moonlance the Elder
-				-- i(21100), -- Coin of Ancestry
-			}),
+			{	-- Moonlance the Elder
+				["u"] = 17,	-- Lunar Festival
+				-- ["g"] = { i(21100), }, -- Coin of Ancestry
+				["qg"] = 55228,	-- Elder Moonlance
+				["maps"] = { 205 },	-- 
+				["coord"] = { 57.2, 86.1, 205 },
+				["questID"] = 29738,	-- Moonlance the Elder
+				["achievementID"] = 6006,	-- Elders of Cataclysm
+				["criteriaID"] = 8,	-- Elder Moonlance in Vashj'ir
+			},
 			{	-- Moonstrike the Elder
 				["u"] = 17,	-- Lunar Festival
 				-- ["g"] = { i(21100), }, -- Coin of Ancestry
