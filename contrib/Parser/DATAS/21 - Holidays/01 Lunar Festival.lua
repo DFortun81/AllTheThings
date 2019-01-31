@@ -1032,58 +1032,74 @@ _.Holidays = bubbleDown({["u"] = 17},
 		}),
 		n(-2, { -- Vendors
 			n(15909, { -- Fariel Starsong <Coin of Ancestry Collector>
-				un(17, i(21100, { -- Coin of Ancestry
-					un(17, i(116142)),  -- Schematic: Alliance Firework
-					un(17, i(116144)),  -- Schematic: Horde Firework
-					un(17, i(116146)),  -- Schematic: Snake Firework
-					un(17, i(44918)),  -- Schematic: Cluster Launcher
-					un(17, i(44919)),  -- Schematic: Firework Launcher
-					un(17, i(21740, {  -- Small Rocket Recipes
-						un(17, i(21726)),  -- Schematic: Small Red Rocket
-						un(17, i(21724)),  -- Schematic: Small Blue Rocket
-						un(17, i(21725)),  -- Schematic: Small Green Rocket
+				["g"] = {
+					un(17, i(21100, { -- Coin of Ancestry
+						un(7, i(21722)),	-- Pattern: Festival Dress (old version)
+						un(17, i(44916)),	-- Pattern: Festival Dress
+						un(7, i(21723)),	-- Pattern: Festival Suit (old version)
+						un(17, i(44917)),	-- Pattern: Festival Suit
+						un(17, i(21740, {  -- Small Rocket Recipes
+							un(17, i(21726)),  -- Schematic: Small Red Rocket
+							un(17, i(21724)),  -- Schematic: Small Blue Rocket
+							un(17, i(21725)),  -- Schematic: Small Green Rocket
+						})),
+						un(17, i(21742, {  -- Large Rocket Recipes
+							un(17, i(21729)),  -- Schematic: Large Red Rocket
+							un(17, i(21728)),  -- Schematic: Large Green Rocket
+							un(17, i(21727)),  -- Schematic: Large Blue Rocket
+						})),
+						un(17, i(21741, {  -- Cluster Rocket Recipes
+							un(17, i(21732)),  -- Schematic: Red Rocket Cluster
+							un(17, i(21730)),  -- Schematic: Blue Rocket Cluster
+							un(17, i(21731)),  -- Schematic: Green Rocket Cluster
+						})),
+						un(17, i(21743, {  -- Large Cluster Rocket Recipes
+							un(17, i(21735)),  -- Schematic: Large Red Rocket Cluster
+							un(17, i(21733)),  -- Schematic: Large Blue Rocket Cluster
+							un(17, i(21734)),  -- Schematic: Large Green Rocket Cluster
+						})),
+						un(17, i(44919)),  -- Schematic: Firework Launcher
+						un(17, i(44918)),  -- Schematic: Cluster Launcher
+						un(17, i(116146)),  -- Schematic: Snake Firework
+						un(17, i(116144)),  -- Schematic: Horde Firework
+						un(17, i(116142)),  -- Schematic: Alliance Firework
+						un(17, i(90000)),	-- Everlasting Horde Firework
+						un(17, i(89999)),	-- Everlasting Alliance Firework
+						un(17, i(143827)),	-- Red Dragon Head Costume
+						un(17, i(165674)),	-- Green Dragon Head Costume
+						un(17, i(165671)),	-- Blue Dragon Head Costume
+						un(17, i(143828)),	-- Red Dragon Body Costume
+						un(17, i(165675)),	-- Green Dragon Body Costume
+						un(17, i(165672)),	-- Blue Dragon Body Costume
+						un(17, i(143829)),	-- Red Dragon Tail Costume
+						un(17, i(165676)),	-- Green Dragon Tail Costume
+						un(17, i(165673)),	-- Blue Dragon Tail Costume
+						un(17, i(165669)),	-- Lunar Elder's Hearthstone
 					})),
-					un(17, i(21741, {  -- Cluster Rocket Recipes
-						un(17, i(21732)),  -- Schematic: Red Rocket Cluster
-						un(17, i(21730)),  -- Schematic: Blue Rocket Cluster
-						un(17, i(21731)),  -- Schematic: Green Rocket Cluster
-					})),
-					un(17, i(21742, {  -- Large Rocket Recipes
-						un(17, i(21729)),  -- Schematic: Large Red Rocket
-						un(17, i(21728)),  -- Schematic: Large Green Rocket
-						un(17, i(21727)),  -- Schematic: Large Blue Rocket
-					})),
-					un(17, i(21743, {  -- Large Cluster Rocket Recipes
-						un(17, i(21735)),  -- Schematic: Large Red Rocket Cluster
-						un(17, i(21733)),  -- Schematic: Large Blue Rocket Cluster
-						un(17, i(21734)),  -- Schematic: Large Green Rocket Cluster
-					})),
-					un(17, i(143827)), -- Dragon Head Costume
-					un(17, i(143828)), -- Dragon Body Costume
-					un(17, i(143829)), -- Dragon Tail Costume
-					un(17, i(89999)),	-- Everlasting Alliance Firework
-					un(17, i(90000)),	-- Everlasting Horde Firework
-					un(7, i(21722)),	-- Pattern: Festival Dress (old version)
-					un(17, i(44916)),	-- Pattern: Festival Dress
-					un(7, i(21723)),	-- Pattern: Festival Suit (old version)
-					un(17, i(44917)),	-- Pattern: Festival Suit
-				})),
+				},
+				["maps"] = { 80 },	-- Moonglade
+				["coord"] = { 53.7, 35.4, 80 },
 			}),
 			n(15864, { -- Valadar Starsong <Coin of Ancestry Collector>
-				un(17, i(21100, { -- Coin of Ancestry
-					un(17, i(74611)),	-- Festival Lantern
-					un(17, i(74610)),	-- Lunar Lantern
-					un(17, i(151355)), -- Crown of Courage
-					un(17, i(151353)), -- Crown of Dark Blossoms
-					un(17, i(151352)), -- Crown of Good Fortune
-					un(17, i(151354)), -- Crown of Prosperity
-					un(17, i(21541)),	-- Festive Black Pant Suit
-					un(17, i(21544)),	-- Festive Blue Pant Suit
-					un(17, i(21157)),	-- Festive Green Dress
-					un(17, i(21538)),	-- Festive Pink Dress
-					un(17, i(21539)),	-- Festive Purple Dress
-					un(17, i(21543)),	-- Festive Teal Pant Suit
-				})),
+				["g"] = {
+					un(17, i(21100, { -- Coin of Ancestry
+						un(17, i(74611)),	-- Festival Lantern
+						un(17, i(74610)),	-- Lunar Lantern
+						un(17, i(21157)),	-- Festive Green Dress
+						un(17, i(21538)),	-- Festive Pink Dress
+						un(17, i(21539)),	-- Festive Purple Dress
+						un(17, i(21541)),	-- Festive Black Pant Suit
+						un(17, i(21544)),	-- Festive Blue Pant Suit
+						un(17, i(21543)),	-- Festive Teal Pant Suit
+						un(17, i(151355)), -- Crown of Courage
+						un(17, i(151354)), -- Crown of Prosperity
+						un(17, i(151353)), -- Crown of Dark Blossoms
+						un(17, i(151352)), -- Crown of Good Fortune
+						
+					})),
+				},
+				["maps"] = { 80 },	-- Moonglade
+				["coord"] = { 53.6, 35.4, 80 },
 			}),
 		}),
 	}),

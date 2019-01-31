@@ -622,6 +622,11 @@ _.Zones =
 								["coord"] = { 49.3, 42.7, 205 },
 								["sourceQuests"] = { 25222 },	-- Silver Tide Hollow
 							}),
+							qa(25537, {	-- Art of Attraction
+								["qg"] = 40639,	-- Engineer Hexascrub
+								["coord"] = { 48.9, 49.2, 205 },
+								["sourceQuests"] = { 25535 },	-- A Powerful Need to Eat
+							}),
 							q(25164, {	-- Backed Into a Corner
 								["g"] = {
 									i(59767),	-- Ostracod Sandals
@@ -637,11 +642,64 @@ _.Zones =
 								["coord"] = { 41.3, 34.2, 205 },
 								["sourceQuests"] = { 25217 },	-- Totem Modification
 							}),
+							qa(25540, {	-- Bellies Await
+								["g"] = {
+									i(59727),	-- Queen Conch Chestguard
+									i(59726),	-- Sea Star Wristwraps
+									i(59728),	-- Clam Shucker
+								},
+								["qg"] = 40641,	-- Divemaster Birmingham
+								["coord"] = { 48.9, 49.1, 205 },
+								["sourceQuests"] = { 25538 },	-- Odor Coater
+							}),
+							qa(25539, {	-- Clamming Up
+								["qg"] = 40641,	-- Divemaster Birmingham
+								["coord"] = { 48.9, 49.1, 205 },
+								["sourceQuests"] = { 25535 },	-- A Powerful Need to Eat
+							}),
 							q(25219, {	-- Don't be Shellfish
 								["qg"] = 39875,	-- Earthmender Duarn
 								["coord"] = { 49.2, 42.5, 205 },
 								["sourceQuests"] = { 25222 },	-- Silver Tide Hollow
 							}),
+							qa(25538, {	-- Odor Coater
+								["g"] = {
+									i(59734),	-- Gloves of Piscine Attraction
+									i(59733),	-- Chestplate of Fragrant Desire
+									i(59732),	-- Prototype Chemical Applicator
+								},
+								["qg"] = 40639,	-- Engineer Hexascrub
+								["coord"] = { 48.9, 49.2, 205 },
+								["sourceQuests"] = { 25537 },	-- Art of Attraction
+							}),
+							{	-- Piece of the Past (A)
+								["g"] = {
+									i(59697),	-- Keenstone Helm
+									i(59696),	-- Gloves of Transcription
+									i(59698),	-- Scribe's Quill
+								},
+								["qgs"] = {
+									41227,	-- Azsh'ir Infantry
+									39638,	-- Azsh'ir Patroller
+								},
+								["races"] = ALLIANCE_ONLY,
+								["questID"] = 27716,	-- Piece of the Past (A)
+								-- SQs unknown, if any
+							},
+							{	-- Piece of the Past (H)
+								["g"] = {
+									i(59694),	-- Keenstone Helm
+									i(59693),	-- Gloves of Transcription
+									i(59695),	-- Scribe's Quill
+								},
+								["qgs"] = {
+									41227,	-- Azsh'ir Infantry
+									39638,	-- Azsh'ir Patroller
+								},
+								["races"] = HORDE_ONLY,
+								["questID"] = 27717,	-- Piece of the Past (H)
+								-- SQs unknown, if any
+							},
 							q(25221, {	-- Rundown
 								["qg"] = 39877,	-- Toshe Chaosrender
 								["coord"] = { 55.5, 12.5, 205 },
@@ -722,15 +780,7 @@ _.Zones =
 								i(59711),
 							})),
 --[[
-							qa(25537),	-- Art of Attraction
 							q(25860),	-- At All Costs
---]]
-							qg(40641, qa(25540, {	-- Bellies Await
-								i(59727),
-								i(59726),
-								i(59728),
-							})),
---[[
 							qg(, qh(25993)),	-- Body Blows
 							qg(, qa(25919)),	-- Body Blows
 							qg(, qh(25990)),	-- Breaking Through
@@ -745,7 +795,6 @@ _.Zones =
 							qg(, qa(25579)),	-- Caught Off-Guard
 							qg(, qh(25952)),	-- Caught Off-Guard
 							qg(, q(25863)),	-- Chosen Burden
-							qg(, qa(25539)),	-- Clamming Up
 							qg(, qa(25748)),	-- Clear Goals
 							qg(, qh(25959)),	-- Clear Goals
 --]]
@@ -829,11 +878,6 @@ _.Zones =
 								i(59699),
 							})),
 --							qg(, q(25659),	-- Not Soon Forgotten
-							qg(40639, qa(25538, {	-- Odor Coater
-								i(59734),
-								i(59733),
-								i(59732),
-							})),
 							qg(41540, qa(25921, {	-- Overseer Idra'kess
 								i(59740),
 								i(59739),
@@ -844,38 +888,6 @@ _.Zones =
 								i(59736),
 								i(59735),
 							})),
-							n(39638, {	-- Azsh'ir Patroller
-								i(62281, {	-- Ancient Elven Etching (Alliance)
-									qa(27716, {	-- Piece of the Past
-										i(59697),
-										i(59696),
-										i(59698),
-									}),
-								}),
-								i(62282, {	-- Ancient Elven Etching (Horde)
-									qh(27717, {	-- Piece of the Past
-										i(59694),
-										i(59693),
-										i(59695),
-									}),
-								}),
-							}),
-							n(41227, {	-- Azsh'ir Infantry
-								i(62281, {	-- Ancient Elven Etching (Alliance)
-									qa(27716, {	-- Piece of the Past
-										i(59697),
-										i(59696),
-										i(59698),
-									}),
-								}),
-								i(62282, {	-- Ancient Elven Etching (Horde)
-									qh(27717, {	-- Piece of the Past
-										i(59694),
-										i(59693),
-										i(59695),
-									}),
-								}),
-							}),
 --[[
 							qg(, qh(25962)),	-- Properly Inspired
 							qg(, qa(25751)),	-- Properly Inspired
