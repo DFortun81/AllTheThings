@@ -7,7 +7,8 @@ _.PVP =
 		["g"] = {
 			{	-- Gold Strong Box - Rated Win (A)
 				["itemID"] = 165714,	-- Gold Strong Box - Win (A)
-				["g"] = bubbleDown({["modID"] = 8}, {
+		-- 31.01: Opened like 100 boxes since season 2 start and did not have gear once. Probably was wrong.
+		--[[		["g"] = bubbleDown({["modID"] = 8}, {
 					{	-- Dread Gladiator's Barrier
 						["itemID"] = 161698,	-- Dread Gladiator's Barrier
 						["u"] = 2,
@@ -376,12 +377,13 @@ _.PVP =
 						["itemID"] = 161674,	-- Dread Gladiator's Medallion
 						["u"] = 2, 
 					},
-				}),
+				}), --]]
 				["races"] = ALLIANCE_ONLY,
-			},
+			}, 
 			{	-- Gold Strong Box - Rated Win (H)
 				["itemID"] = 165711,	-- Gold Strong Box - Win (H)
-				["g"] = bubbleDown({["modID"] = 8}, {
+		-- 31.01: Opened like 100 boxes since season 2 start and did not have gear once. Probably was wrong.
+		--[[		["g"] = bubbleDown({["modID"] = 8}, {
 					{	-- Dread Gladiator's Barrier
 						["itemID"] = 161677,	-- Dread Gladiator's Barrier
 						["u"] = 2, 
@@ -750,9 +752,9 @@ _.PVP =
 						["itemID"] = 161674,	-- Dread Gladiator's Medallion
 						["u"] = 2, 
 					},
-				}),
+				}), --]]
 				["races"] = HORDE_ONLY,
-			},
+			}, 
 		},
 	}),
 };
