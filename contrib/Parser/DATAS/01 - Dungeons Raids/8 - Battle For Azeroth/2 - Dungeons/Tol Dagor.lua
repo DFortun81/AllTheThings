@@ -11,11 +11,6 @@ _.Instances =
 					n(-34, {	-- World Quests
 						["groups"] = {
 							q(51297, {	-- Tol Dagor: Shorefront Property
-								["groups"] = bubbleDown({["modID"] = 23}, {
-									i(159460),	-- Overseer's Lost Seal
-									i(159293),	-- Turncoat's Cape
-									i(159332),	-- Wristguards of the Sandswimmer
-								}),
 								["repeatable"] = true,
 								["isDaily"] = true, 	-- Would like to swap it to WQ below
 								--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
