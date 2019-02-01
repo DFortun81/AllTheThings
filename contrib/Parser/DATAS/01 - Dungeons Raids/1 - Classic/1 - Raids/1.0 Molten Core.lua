@@ -630,6 +630,14 @@ _.Instances = { tier(1, {	-- Classic
 				ach(686),	-- Molten Core
 				i(138018),	-- Clothes Chest Pattern: Molten Core
 				i(17204, {	-- Eye of Sulfuras
+					["classes"] = {
+						6,	-- Death Knight
+						11,	-- Druid
+						2,	-- Paladin
+						7,	-- Shaman
+						1,	-- Warrior
+					},
+					["f"] = 24,	-- To match Sulfuras, Hand of Ragnaros and cause it to display even if Quest Items are filtered
 					["groups"] = {
 						i(17182, { 	-- Sulfuras, Hand of Ragnaros
 							ach(429, {	-- Sulfuras, Hand of Ragnaros
@@ -639,7 +647,6 @@ _.Instances = { tier(1, {	-- Classic
 							}),
 						}),
 					},
-					["classes"] = { 6, 11, 2, 7, 1 }, -- Death Knight / Druid / Paladin / Shaman / Warrior
 				}),
 				i(138833),	-- Illusion: Flametongue (Shaman)
 				i(17076),	-- Bonereaver's Edge
