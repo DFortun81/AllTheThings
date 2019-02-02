@@ -366,7 +366,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				-- ["g"] = { i(21100), }, -- Coin of Ancestry
 				["qg"] = 15568,	-- Elder Graveborn
 				["maps"] = { 18 },	-- Tirisfal Glades
-				["coord"] = { 69.4, 62.7, 18 },
+				["coord"] = { 61.8, 53.9, 18 },
 				["questID"] = 8652,	-- Graveborn the Elder
 				["description"] = "In order to view this Elder, visit Zidormi at 69.4, 62.7 to see Tirisfal Glades before the Battle for Lordaeron.",
 				["achievementID"] = 912,	-- Elders of Eastern Kingdoms
