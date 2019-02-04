@@ -717,7 +717,7 @@ _.Zones =
 								}),
 							}),
 						},
-						["description"] = "Kill Searing Flamewraith's until you get Lava Oil. Do not use it yet. Go to the metal bridge before the Quarry Gate. The Time Lost Chest is in the lava below in the alcove. Use the Fire Oil, jump down open the chest, then hearth.",
+						["description"] = "To get the Blacksmithing plans for Blazing Rapier, kill Searing Flamewraiths until you get Lava Oil. Do not use it yet. Go to the metal bridge before the Quarry Gate. The Time Lost Chest is in the lava below in the alcove. Use the Fire Oil, jump down, open the chest, and hearth.",
 					}),
 					i(14476,       {	-- Pattern: Cindercloth Gloves
 						["crs"] = {
