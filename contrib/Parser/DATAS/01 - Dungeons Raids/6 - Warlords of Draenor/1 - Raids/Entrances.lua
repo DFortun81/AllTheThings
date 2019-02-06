@@ -24,7 +24,7 @@ _.Instances =
 					},
 					{	-- Tarlna the Ageless
 						["encounterID"] = 1211,	-- Tarlna the Ageless
-						["coord"] = { 47.0, 85.9, 543 },
+						["coord"] = { 47.0, 86.7, 543 },
 					},
 				},
 			},
