@@ -21,6 +21,7 @@ _.NeverImplemented =
 		un(1, i(166358)),	-- Proper Parrot/ Proper Parrot was supposed to be added in 8.1, tied to the quest Be More Uniform.A few days after 8.1 went live, it was removed from the pet journal. Nobody obtained it from the quest.
 		un(1, i(165845)),	-- Mechanical Feather. Most likely same as above.
 		un(1, i(165792)),	-- Worn Cloak (future WQ?)
+		un(1, p(2341)),	-- Feathers (possibly tied to a quest?)
 	}),
 	n(-220, { -- Class
 		cl(12, { -- DH
