@@ -50,6 +50,7 @@ _.PetJournal =
 		p(856),		-- Jade Tentacle
 		p(1348),	-- Jadefire Spirit
 		p(1333),	-- Jademist Dancer
+		p(2447),	-- Kindleweb Spiderling
 		p(199),		-- Kirin Tor Familiar
 		p(423),		-- Lava Crab
 		un(35, p(297)),		-- Lil' Ragnaros
@@ -68,7 +69,6 @@ _.PetJournal =
 		p(2018),	-- Paradox Spirit
 		p(265),		-- Pebble
 		p(175),		-- Phoenix Hatchling
-		p(2452),	-- Poro
 		p(1328),	-- Ruby Droplet
 		p(460),		-- Ruby Sapling
 		p(172),		-- Searing Scorchling
@@ -88,6 +88,7 @@ _.PetJournal =
 		p(204),		-- Teldrassil Sproutling
 		p(650),		-- Terrible Turnip
 		p(1175),	-- Thundertail Flapper
+		p(2450),	-- Tinder Pup
 		p(509),		-- Tiny Bog Beast
 		p(279),		-- Tiny Shale Spider
 		p(117),		-- Tiny Snowman
@@ -95,7 +96,6 @@ _.PetJournal =
 		p(480),		-- Topaz Shale Hatchling
 		p(2092), 	-- Unstable Tendril
 		p(855),		-- Venus
-		p(2460),	-- Voru'kar Leecher
 		p(535),		-- Water Waveling
 		p(1959),	-- Winter Rageling
 		p(220),		-- Withers

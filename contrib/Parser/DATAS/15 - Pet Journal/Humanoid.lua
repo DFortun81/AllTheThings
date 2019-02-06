@@ -45,8 +45,8 @@ _.PetJournal =
 		p(1226),	-- Lil' Bad Wolf
 		un(6, p(111)),	-- Lurky
 		un(4, p(189)),	-- Mini Tyrael
-		a(p(296)),	-- Moonkin Hatchling (Alliance)
-		h(p(298)),	-- Moonking Hatchling (Horde)
+		un(35, a(p(296))),	-- Moonkin Hatchling (Alliance)
+		un(35, h(p(298))),	-- Moonking Hatchling (Horde)
 		un(4, p(329)),	-- Murkablo
 		un(4, p(1364)),	-- Murkalot
 		un(3, p(1168)),	-- Murki

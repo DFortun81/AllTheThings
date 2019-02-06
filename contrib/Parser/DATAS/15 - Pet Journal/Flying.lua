@@ -123,6 +123,7 @@ _.PetJournal =
 		p(403),		-- Parrot
 		p(201),		-- Plump Turkey
 		p(409),		-- Polly
+		p(2452),	-- Poro
 		un(1, p(2541)),	-- Proper Parrot
 		p(309),		-- Pterrordax Hatchling
 		p(1907),	-- Pygmy Owl
@@ -172,6 +173,7 @@ _.PetJournal =
 		p(2376),	-- Valley Chicken
 		p(1596),	-- Veilwatcher Hatchling
 		p(1591),	-- Violet Firefly
+		p(2460),	-- Voru'kar Leecher
 		p(1593),	-- Waterfly
 		p(84),		-- Westfall Chicken
 		p(141),		-- White Moth

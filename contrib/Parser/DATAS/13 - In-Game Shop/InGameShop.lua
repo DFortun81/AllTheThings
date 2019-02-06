@@ -41,7 +41,7 @@ _.InGameShop =
 		un(2, i(49662, {	-- Gryphon Hatchling
 			["groups"] = {
 			},
-			["description"] = "This item is available only if you purchase the Plush Toy and redeem the code",
+			["description"] = "This item is available only if you purchase the Plush Toy and redeem the code.",
 		})),
 		un(35, i(49693)),	-- Lil' K.T.
 		un(35, i(68385)),	-- Lil' Ragnaros
@@ -58,7 +58,7 @@ _.InGameShop =
 		un(2, i(49663, {	-- Wind Rider Cub
 			["groups"] = {
 			},
-			["description"] = "This item is available only if you purchase the Plush Toy and redeem the code",
+			["description"] = "This item is available only if you purchase the Plush Toy and redeem the code.",
 		})),
 	}),
 };

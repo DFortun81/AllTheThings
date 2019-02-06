@@ -741,7 +741,7 @@ pet(166455, 2550);	-- Zur'aj the Depleted
 
 pet(165846, 2527);	-- Enchanted Talon of Pa'ku
 pet(165848, 2528);	-- Spawn of Krag'wa
-pet(165847, 2529);	-- Thudnering Scale of Akudna
+pet(165847, 2529);	-- Thundering Scale of Akudna
 
 pet(166714, 2566);	-- Albatross Feather
 pet(166491, 2555);	-- Albino Duskwatcher

@@ -26,7 +26,6 @@ _.PetJournal =
 		p(2017),	-- Infinite Hatchling
 		p(1161),	-- Infinite Whelpling
 		p(1956),	-- Ironbound Proto-Whelp
-		p(2447),	-- Kindleweb Spiderling
 		p(1533),	-- Lanticore Spawnling
 		p(2468),	-- Laughing Stonekin
 		un(6, p(268)),	-- Lil' Deathwing
@@ -51,7 +50,6 @@ _.PetJournal =
 		p(382),		-- Sun Darter Hatchling
 		un(9, p(802)),	-- Thundering Serpent Hatchling
 		p(2561),	-- Thunderscale Whelpling
-		p(2450),	-- Tinder Pup
 		un(3, p(757)),	-- Tiny Green Dragon
 		un(3, p(758)),	-- Tiny Red Dragon
 		p(2081), 	-- Twilight Clutch-Sister
