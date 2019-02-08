@@ -217,7 +217,7 @@ _.Zones =
 						["qg"] = 3515,	-- Corithras Moonrage
 						["coord"] = { 55.8, 53.9 },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuests"] = 918,	-- Timberling Seeds
+						["sourceQuests"] = { 918 },	-- Timberling Seeds
 					},
 					{	-- Teldrassil: The Coming Dawn
 						["questID"] = 933,
