@@ -2274,6 +2274,22 @@ local function createDebugFrame(parent)
 	showRaceRequirements:SetPoint("TOPLEFT",showClassRequirements,0,-frameSpacer)
 	addObject(elm,showRaceRequirements)
 	
+	-- This creates the "Show Known By" checkBox 
+	local showKnownBy = createCheckBox("Show Known By", child, function(self)
+		app.SetDataMember("ShowKnownBy", self:GetChecked());
+		wipe(app.searchCache);
+	end, 
+	function(self) 
+		self:SetChecked(app.GetDataMember("ShowKnownBy", false));
+	end,
+	function(self)
+		GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
+		GameTooltip:SetText ("Enable this option if you want to see the full list of characters on all servers that know this recipe in the tooltip.", nil, nil, nil, nil, true);
+		GameTooltip:Show();
+	end);
+	showKnownBy:SetPoint("TOPLEFT",showRaceRequirements,0,-frameSpacer)
+	addObject(elm,showKnownBy)
+	
 	-- This creates the "Report Completed Quests" checkBox 
 	local reportCompletedQuests = createCheckBox("Report Completed Quests", child, function(self)
 			app.SetDataMember("DebugCompletedQuests", self:GetChecked());
@@ -2286,7 +2302,7 @@ local function createDebugFrame(parent)
 			GameTooltip:SetText ("Enable this option if you want to see the Quest ID for any quest you complete immediately after it happens. (For reporting bugs, trackings purposes, etc)", nil, nil, nil, nil, true);
 			GameTooltip:Show();
 		end);
-	reportCompletedQuests:SetPoint("TOPLEFT",showRaceRequirements,0,-frameSpacer)
+	reportCompletedQuests:SetPoint("TOPLEFT",showKnownBy,0,-frameSpacer)
 	addObject(elm,reportCompletedQuests)
 	
 	-- This creates the "Only Report Unsorted Quests" checkBox 

@@ -1794,6 +1794,25 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			end
 		end
 		
+		-- If the item is a recipe, then show which characters know this recipe.
+		if group.f == 200 and group.collectible and group.spellID and GetDataMember("ShowKnownBy") then
+			local recipes, knownBy = GetDataMember("CollectedSpellsPerCharacter"), {};
+			for key,value in pairs(recipes) do
+				if value[group.spellID] then
+					table.insert(knownBy, key);
+				end
+			end
+			if #knownBy > 0 then
+				table.sort(knownBy);
+				local desc = "Known by ";
+				for i,key in ipairs(knownBy) do
+					if i > 1 then desc = desc .. ", "; end
+					desc = desc .. key;
+				end
+				tinsert(info, { left = desc, wrap = true, color = "ff66ccff" });
+			end
+		end
+		
 		-- If the user wants to show the progress of this search result, do so.
 		if GetDataMember("ShowProgress") and (not group.spellID or #info > 0) then
 			if group.total and (group.total > 1 or (group.total > 0 and not group.collectible)) then
@@ -10510,8 +10529,6 @@ app.events.PLAYER_LOGIN = function()
 		if #mountIDs < 1 then return true; end
 		
 		-- Harvest the Spell IDs for Conversion.
-		local collectedSpells = GetDataMember("CollectedSpells", {});
-		local collectedSpellsPerCharacter = GetTempDataMember("CollectedSpells", {});
 		app:UnregisterEvent("PET_JOURNAL_LIST_UPDATE");
 		
 		-- Mark all previously completed quests.
