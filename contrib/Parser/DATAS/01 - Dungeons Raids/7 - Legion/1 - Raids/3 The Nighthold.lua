@@ -39,7 +39,7 @@ _.Instances =
 								{
 									["itemID"] = 140148,	-- Cache of Nightborne Treasures [Raid Finder]
 									["u"] = 2,
-									["sym"] = {{"select", "instanceID", 786}, {"pop"}, {"where", "difficultyID", 17 }, {"pop"}, {"pop"}, {"is","encounterID"}, {"pop"}, {"is", "s" }},
+									["sym"] = {{"select", "instanceID", 786}, {"pop"}, {"where", "difficultyID", 17 }, {"pop"}, {"pop"}, {"is","encounterID"}, {"pop"}, {"is", "s" }, {"isnt", "c"}},
 								},
 								{
 									["itemID"] = 140172,	-- Ancient Nightborne Tome [Raid Finder]

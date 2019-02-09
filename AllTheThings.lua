@@ -8104,10 +8104,17 @@ function app:GetDataCache()
 							end
 						elseif cmd == "is" then
 							-- Instruction to include only search results where a key exists
-							local key, value = sym[2], sym[3];
+							local key = sym[2];
 							for k=#searchResults,1,-1 do
 								local s = searchResults[k];
 								if not s[key] then table.remove(searchResults, k); end
+							end
+						elseif cmd == "isnt" then
+							-- Instruction to include only search results where a key doesn't exist
+							local key = sym[2];
+							for k=#searchResults,1,-1 do
+								local s = searchResults[k];
+								if s[key] then table.remove(searchResults, k); end
 							end
 						elseif cmd == "contains" then
 							-- Instruction to include only search results where a key value contains a value.

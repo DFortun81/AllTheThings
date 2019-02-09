@@ -43,9 +43,10 @@ _.Instances =
 						n(-17, { 	-- Quests
 							["crs"] = CLASS_HALL_MISSION_TABLES,
 							["groups"] = {
-								i(147518, {	-- Cache of Fel Treasures [Raid Finder]
-									
-								}),
+								{
+									["itemID"] = 147518,	-- Cache of Fel Treasures [Raid Finder]
+									["sym"] = {{"select", "instanceID", 875}, {"pop"}, {"where", "difficultyID", 17 }, {"pop"}, {"pop"}, {"is","encounterID"}, {"pop"}, {"is", "s" }, {"isnt", "c"}},
+								},
 								{
 									["itemID"] = 147497,	-- Encrusted Naga Scale [Raid Finder]
 									["questID"] = 47114,	-- Tomb of Sargeras: The Tomb's Mistress [Raid Finder]
@@ -291,9 +292,10 @@ _.Instances =
 						n(-17, { 	-- Quests
 							["crs"] = CLASS_HALL_MISSION_TABLES,
 							["groups"] = {
-								i(147519, {	-- Cache of Fel Treasures [Normal]
-									
-								}),
+								{
+									["itemID"] = 147519,	-- Cache of Fel Treasures [Normal]
+									["sym"] = {{"select", "instanceID", 875}, {"pop"}, {"where", "difficultyID", 14 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"is", "s" }, {"isnt", "c"}},
+								},
 								{
 									["itemID"] = 147498,	-- Encrusted Naga Scale [Normal]
 									["questID"] = 47115,	-- Tomb of Sargeras: The Tomb's Mistress [Normal]
@@ -506,9 +508,10 @@ _.Instances =
 						n(-17, { 	-- Quests
 							["crs"] = CLASS_HALL_MISSION_TABLES,
 							["groups"] = {
-								i(147520, {	-- Cache of Fel Treasures [Heroic]
-									
-								}),
+								{
+									["itemID"] = 147520,	-- Cache of Fel Treasures [Heroic]
+									["sym"] = {{"select", "instanceID", 875}, {"pop"}, {"where", "difficultyID", 15 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"is", "s" }, {"isnt", "c"}},
+								},
 								{
 									["itemID"] = 147499,	-- Encrusted Naga Scale [Heroic]
 									["questID"] = 47116,	-- Tomb of Sargeras: The Tomb's Mistress [Heroic]
@@ -721,9 +724,10 @@ _.Instances =
 						n(-17, { 	-- Quests
 							["crs"] = CLASS_HALL_MISSION_TABLES,
 							["groups"] = {
-								i(147521, {	-- Cache of Fel Treasures [Mythic]
-									
-								}),
+								{
+									["itemID"] = 147521,	-- Cache of Fel Treasures [Mythic]
+									["sym"] = {{"select", "instanceID", 875}, {"pop"}, {"where", "difficultyID", 16 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"is", "s" }, {"isnt", "c"}},
+								},
 								{
 									["itemID"] = 147500,	-- Encrusted Naga Scale [Mythic]
 									["questID"] = 47117,	-- Tomb of Sargeras: The Tomb's Mistress [Mythic]
