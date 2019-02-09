@@ -336,6 +336,7 @@ _.Instances =
 							}),
 							i(124373),	-- Iron Skullcrusher
 							i(124354),	-- Felforged Aegis
+							i(124213),	-- Voltage Regulation Diode
 							i(124174),	-- Pilot's Pauldrons
 							i(124145),	-- Ironthread Greatcloak
 							i(124315),	-- Stumped Felsteel Chestplate
@@ -519,6 +520,7 @@ _.Instances =
 							i(124313),	-- Chain Wristguards of the Stricken
 							i(124185),	-- Pristine Man'ari Cuffs
 							i(139626),	-- Ferroleather Gloves (Demon Hunter)
+							i(124191),	-- Seal of the Traitorous Councilor
 							i(124233),	-- Demonic Phylactery
 							i(124225),	-- Soul Capacitor
 						})),
@@ -727,6 +729,7 @@ _.Instances =
 							}),
 							i(124373),	-- Iron Skullcrusher
 							i(124354),	-- Felforged Aegis
+							i(124213),	-- Voltage Regulation Diode
 							i(124174),	-- Pilot's Pauldrons
 							i(124145),	-- Ironthread Greatcloak
 							i(124315),	-- Stamped Felsteel Chestplate
@@ -848,7 +851,6 @@ _.Instances =
 							i(124290),	-- Mitts of Eternal Famishment
 							i(124348),	-- Ravenous Girdle
 							i(139628),	-- Ferroleather Leggings (Demon Hunter)
-							i(124166),	-- Pious Leggings (Priest)
 							i(124188),	-- Serrated Demontooth Ring
 							i(124236),	-- Unending Hunger
 						})),
@@ -911,6 +913,7 @@ _.Instances =
 							i(124313),	-- Chain Wristguards of the Stricken
 							i(124185),	-- Pristine Man'ari Cuffs
 							i(139626),	-- Ferroleather Gloves (Demon Hunter)
+							i(124191),	-- Seal of the Traitorous Councilor
 							i(124233),	-- Demonic Phylactery
 							i(124225),	-- Soul Capacitor
 						})),
@@ -1123,6 +1126,7 @@ _.Instances =
 							}),
 							i(124373),	-- Iron Skullcrusher
 							i(124354),	-- Felforged Aegis
+							i(124213),	-- Voltage Regulation Diode
 							i(124174),	-- Pilot's Pauldrons
 							i(124145),	-- Ironthread Greatcloak
 							i(124315),	-- Stamped Felsteel Chestplate
@@ -1245,7 +1249,6 @@ _.Instances =
 							i(124290),	-- Mitts of Eternal Famishment
 							i(124348),	-- Ravenous Girdle
 							i(139628),	-- Ferroleather Leggings (Demon Hunter)
-							i(124166),	-- Pious Leggings (Priest)
 							i(124188),	-- Serrated Demontooth Ring
 							i(124236),	-- Unending Hunger
 						})),
@@ -1308,6 +1311,7 @@ _.Instances =
 							i(124313),	-- Chain Wristguards of the Stricken
 							i(124185),	-- Pristine Man'ari Cuffs
 							i(139626),	-- Ferroleather Gloves (Demon Hunter)
+							i(124191),	-- Seal of the Traitorous Councilor
 							i(124233),	-- Demonic Phylactery
 							i(124225),	-- Soul Capacitor
 						})),
