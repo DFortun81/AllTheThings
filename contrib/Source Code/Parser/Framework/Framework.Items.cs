@@ -603,7 +603,6 @@ namespace Parser_V2
                     case "lvl":
                     case "q":
                     case "c":
-                    case "sym":
                     case "races":
                     case "specs":
                     case "sourceQuests":

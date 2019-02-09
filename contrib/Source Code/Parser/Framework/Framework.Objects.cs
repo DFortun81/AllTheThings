@@ -1478,32 +1478,35 @@ namespace Parser_V2
                             foreach (var pair in newDict) oldDict[Convert.ToInt32(pair.Key)] = Convert.ToInt32(pair.Value);
                             break;
                         }
-                        
-                    // Dictionary Data Type Fields (stored as Dictionary<string, object> for usability reasons)
+
+                    // List O' List O' Objects Data Type Fields (stored as List<List<object>> for usability reasons)
                     case "sym":
                         {
-                            item[field] = value;
-                            /*
                             // Convert the data to a list of generic objects.
-                            var newDict = value as Dictionary<object, object>;
-                            if (newDict == null) return;
-
-                            // Attempt to get the old list data.
-                            Dictionary<string, object> oldDict;
-                            if (item.TryGetValue(field, out object oldData))
+                            var newListOfLists = value as List<List<object>>;
+                            if (newListOfLists == null)
                             {
-                                // Convert the old data to a dictionary of strings.
-                                oldDict = oldData as Dictionary<string, object>;
+                                var newList = value as List<object>;
+                                if (newList == null)
+                                {
+                                    var dict = value as Dictionary<object, object>;
+                                    if (dict == null) return;
+                                    else newList = dict.Values.ToList();
+                                }
+                                newListOfLists = new List<List<object>>();
+                                foreach (var o in newList)
+                                {
+                                    var list = o as List<object>;
+                                    if (list == null)
+                                    {
+                                        var dict = o as Dictionary<object, object>;
+                                        if (dict == null) return;
+                                        else list = dict.Values.ToList();
+                                    }
+                                    newListOfLists.Add(list);
+                                }
                             }
-                            else
-                            {
-                                // Create a new data dictionary of strings.
-                                item[field] = oldDict = new Dictionary<string, object>();
-                            }
-
-                            // Merge the new list of data into the old data and ensure there are no duplicate values.
-                            foreach (var pair in newDict) oldDict[Convert.ToString(pair.Key)] = pair.Value;
-                            */
+                            item[field] = newListOfLists;
                             break;
                         }
 
