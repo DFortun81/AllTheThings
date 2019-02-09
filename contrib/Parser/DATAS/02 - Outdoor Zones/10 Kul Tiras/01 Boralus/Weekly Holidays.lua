@@ -959,7 +959,7 @@ _.Zones =
 							},
 							["g"] = {
 								{	-- Steel Strongbox
-									["itemID"] = 164262,	-- Steel Strongbox
+									["itemID"] = 164261,	-- Steel Strongbox
 								},
 							},
 						},
