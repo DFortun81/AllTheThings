@@ -2197,6 +2197,11 @@ _.Zones =
 						i(81663),	-- Faded Forest Medal
 						i(81661),	-- Faded Forest Medallion
 					}),
+					na(69968, { -- Ethan Natice Season 14 Elite-- Link for all the Items
+						["groups"] = {
+						},
+						["u"] = 2, -- Vendor no longer exists
+					}),
 					na(75692, {	-- Ethan Natice <Grievous Gladiator>
 						i(144252), -- Arsenal: Grievous Gladiator's Weapons
 						i(103139),	-- Grievous Gladiator's Decapitator
@@ -2439,6 +2444,12 @@ _.Zones =
 						i(90895),	-- Straw Hat - Mail
 						i(90896),	-- Straw Hat - Plate
 						i(89784),	-- Tillers Tabard
+					}),
+					na(73143, {	-- Hayden Christophen <Honor Quartermaster> Old Grievous Vendor (neck, etc)
+						["groups"] = {
+						--	un(2, i(102841)),	-- 
+						},
+						["u"] = 2, -- Vendor no longer exists
 					}),
 					na(75691, {	-- Hayden Christophen <Dreadful Gladiator>
 						i(84345),	-- Dreadful Gladiator's Cape of Cruelty

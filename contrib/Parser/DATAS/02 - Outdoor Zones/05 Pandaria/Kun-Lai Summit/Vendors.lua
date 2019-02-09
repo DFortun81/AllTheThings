@@ -938,6 +938,12 @@ _.Zones =
 									},
 								},
 							},
+							nh(69982, {	-- Lok'nor Bloodfist  <Honor Quartermaster> Old Grievous Vendor (neck, etc)
+								["groups"] = {
+								--	un(2, i(102841)),	-- 
+								},
+								["u"] = 2, -- Vendor no longer exists
+							}),
 							nh(75690, { -- Lok'nor Bloodfist
 								i(84438),	-- Dreadful Gladiator's Armplates of Proficiency
 								i(84345),	-- Dreadful Gladiator's Cape of Cruelty
