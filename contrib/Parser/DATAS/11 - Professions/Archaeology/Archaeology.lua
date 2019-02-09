@@ -240,6 +240,9 @@ profession(794, {	-- Archaeology
 		n(-161, {	-- Toys
 			sp(273815, { i(160740) }),	-- Croak Crock
 		}),
+		n(-494, {	-- Misc
+			sp(273819, { i(160753) }),	-- Sanguinating Totem (Trinket)
+		}),
 		sp(273812, { -- Blowgun of the Sethra
 			i(160743),	-- Blowgun of the Sethrak
 			i(160744),	-- Pristine Blowgun of the Sethrak
