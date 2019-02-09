@@ -1773,74 +1773,82 @@ _.Instances =
 									}),
 								})),							
 							}),
-							i(120284, { -- Essence of the Iron Protector
-								qr( qa(37562, { -- Essence of the Iron Protector
-									i(120255, { -- Helm of the Iron Protector
-										i(115584),
-										i(115556),
-										i(115545),
-										i(115579),
+							{
+								["itemID"] = 120284,	-- Essence of the Iron Protector
+								["ignoreBonus"] = true,
+								["groups"] = {
+									a({
+										["questID"] = 37562,	-- Essence of the Iron Protector
+										["repeatable"] = true,
+										["ignoreBonus"] = true,
+										["groups"] = {
+											{
+												["itemID"] = 120255,	-- Helm of the Iron Protector
+												["ignoreBonus"] = true,
+												["sym"] = {{"select", "itemID", 119321}, {"where", "modID", 6 },{"pop"}},
+											},
+											{
+												["itemID"] = 120256,	-- Shoulders of the Iron Protector
+												["ignoreBonus"] = true,
+												["sym"] = {{"select", "itemID", 119322}, {"where", "modID", 6 },{"pop"}},
+											},
+											{
+												["itemID"] = 120252,	-- Chest of the Iron Protector
+												["ignoreBonus"] = true,
+												["sym"] = {{"select", "itemID", 119318}, {"where", "modID", 6 },{"pop"}},
+											},
+											{
+												["itemID"] = 120253,	-- Gauntlets of the Iron Protector
+												["ignoreBonus"] = true,
+												["sym"] = {{"select", "itemID", 119319}, {"where", "modID", 6 },{"pop"}},
+											},
+											{
+												["itemID"] = 120254,	-- Leggings of the Iron Protector
+												["ignoreBonus"] = true,
+												["sym"] = {{"select", "itemID", 119320}, {"where", "modID", 6 },{"pop"}},
+											},
+										},
 									}),
-									i(120256, { -- Shoulders of the Iron Protector
-										i(115581),
-										i(115559),
-										i(115547),
-										i(115576),			
+								},
+							},
+							{
+								["itemID"] = 120210,	-- Essence of the Iron Protector
+								["ignoreBonus"] = true,
+								["groups"] = {
+									h({
+										["questID"] = 37548,	-- Essence of the Iron Protector
+										["repeatable"] = true,
+										["ignoreBonus"] = true,
+										["groups"] = {
+											{
+												["itemID"] = 120255,	-- Helm of the Iron Protector
+												["ignoreBonus"] = true,
+												["sym"] = {{"select", "itemID", 119321}, {"where", "modID", 6 },{"pop"}},
+											},
+											{
+												["itemID"] = 120256,	-- Shoulders of the Iron Protector
+												["ignoreBonus"] = true,
+												["sym"] = {{"select", "itemID", 119322}, {"where", "modID", 6 },{"pop"}},
+											},
+											{
+												["itemID"] = 120252,	-- Chest of the Iron Protector
+												["ignoreBonus"] = true,
+												["sym"] = {{"select", "itemID", 119318}, {"where", "modID", 6 },{"pop"}},
+											},
+											{
+												["itemID"] = 120253,	-- Gauntlets of the Iron Protector
+												["ignoreBonus"] = true,
+												["sym"] = {{"select", "itemID", 119319}, {"where", "modID", 6 },{"pop"}},
+											},
+											{
+												["itemID"] = 120254,	-- Leggings of the Iron Protector
+												["ignoreBonus"] = true,
+												["sym"] = {{"select", "itemID", 119320}, {"where", "modID", 6 },{"pop"}},
+											},
+										},
 									}),
-									i(120252, { -- Chest of the Iron Protector								
-										i(115582),
-										i(115548),
-										i(115558),
-										i(115577),
-									}),
-									i(120253, { -- Gauntlets of the Iron Protector
-										i(115583),
-										i(115555),
-										i(115549),
-										i(115578),			
-									}),
-									i(120254, { -- Leggings of the Iron Protector
-										i(115580),
-										i(115557),
-										i(115546),
-										i(115575),			
-									}),
-								})),							
-							}),
-							i(120210, { -- Essence of the Iron Protector
-								qr( qh(37548, { -- Essence of the Iron Protector
-									i(120255, { -- Helm of the Iron Protector
-										i(115584),
-										i(115556),
-										i(115545),
-										i(115579),
-									}),
-									i(120256, { -- Shoulders of the Iron Protector
-										i(115581),
-										i(115559),
-										i(115547),
-										i(115576),			
-									}),
-									i(120252, { -- Chest of the Iron Protector								
-										i(115582),
-										i(115548),
-										i(115558),
-										i(115577),
-									}),
-									i(120253, { -- Gauntlets of the Iron Protector
-										i(115583),
-										i(115555),
-										i(115549),
-										i(115578),			
-									}),
-									i(120254, { -- Leggings of the Iron Protector
-										i(115580),
-										i(115557),
-										i(115546),
-										i(115575),			
-									}),
-								})),								
-							}),
+								},
+							},
 							i(120285, { -- Essence of the Iron Vanquisher
 								qr( qa(37561, { -- Essence of the Iron Vanquisher
 									i(120248, { -- Helm of the Iron Vanquisher
