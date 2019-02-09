@@ -20,8 +20,11 @@ _.Zones =
 								{ 74.11, 14.19 },
 							},
 							["g"] = {
-								{	-- Cache of Uldir Treasures [Normal Quality]
-									["itemID"] = 164579,	-- Cache of Uldir Treasures
+								{
+									["itemID"] = 164579,	-- Cache of Uldir Treasures [Normal Quality]
+									["u"] = 2,
+									["sym"] = {{"select", "instanceID", 1031}, {"pop"}, {"where", "difficultyID", 14 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
+									--[[
 									["g"] = bubbleDown({["modID"] = 3}, {
 										{	-- Khor, Hammer of the Corrupted
 											["itemID"] = 160679,	-- Khor, Hammer of the Corrupted
@@ -285,6 +288,11 @@ _.Zones =
 											["itemID"] = 160654,	-- Vanquisheed Tendril of G'huun
 										},
 									}),
+									]]--
+								},
+								{
+									["itemID"] = 165724,	-- Cache of Dazar'alor Treasures [Normal Quality]
+									["sym"] = {{"select", "instanceID", 1176}, {"pop"}, {"where", "difficultyID", 14 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
 								},
 							},
 						},
@@ -297,8 +305,11 @@ _.Zones =
 								{ 74.11, 14.19 },
 							},
 							["g"] = {
-								{	-- Cache of Uldir Treasures [Heroic Quality]
-									["itemID"] = 164257,	-- Cache of Uldir Treasures
+								{
+									["itemID"] = 164257,	-- Cache of Uldir Treasures [Heroic Quality]
+									["u"] = 2,
+									["sym"] = {{"select", "instanceID", 1031}, {"pop"}, {"where", "difficultyID", 15 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
+									--[[
 									["g"] = bubbleDown({["modID"] = 5}, {
 										{	-- Khor, Hammer of the Corrupted
 											["itemID"] = 160679,	-- Khor, Hammer of the Corrupted
@@ -562,6 +573,11 @@ _.Zones =
 											["itemID"] = 160654,	-- Vanquisheed Tendril of G'huun
 										},
 									}),
+									--]]
+								},
+								{
+									["itemID"] = 165729,	-- Cache of Dazar'alor Treasures [Heroic Quality]
+									["sym"] = {{"select", "instanceID", 1176}, {"pop"}, {"where", "difficultyID", 15 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
 								},
 							},
 						},
