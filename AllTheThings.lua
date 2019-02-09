@@ -7060,16 +7060,7 @@ local function RowOnEnter(self)
 		if reference.setID then GameTooltip:AddDoubleLine(L("SET_ID"), tostring(reference.setID)); end
 		if reference.setHeaderID then GameTooltip:AddDoubleLine(L("SET_ID"), tostring(reference.setHeaderID)); end
 		if reference.setSubHeaderID then GameTooltip:AddDoubleLine(L("SET_ID"), tostring(reference.setSubHeaderID)); end
-		if reference.description and GetDataMember("ShowDescriptions") then
-			local found = false;
-			for i=1,GameTooltip:NumLines() do
-				if _G["GameTooltipTextLeft"..i]:GetText() == reference.description then
-					found = true;
-					break;
-				end
-			end
-			if not found then GameTooltip:AddLine(reference.description, 0.4, 0.8, 1, 1); end
-		end
+		
 		if reference.mapID and GetDataMember("ShowMapID") then GameTooltip:AddDoubleLine(L("MAP_ID"), tostring(reference.mapID)); end
 		if reference.coords and app.GetDataMember("ShowCoordinatesInTooltip") then
 			local j = 0;
@@ -7101,8 +7092,20 @@ local function RowOnEnter(self)
 		if not reference.itemID then
 			if reference.speciesID then
 				AttachTooltipSearchResults(GameTooltip, "speciesID:" .. reference.speciesID, SearchForField, "speciesID", reference.speciesID);
-			elseif reference.u then
-				GameTooltip:AddLine(L("UNOBTAINABLE_ITEM_REASONS")[reference.u][2], 1, 1, 1, 1, true);
+			else
+				if reference.description and GetDataMember("ShowDescriptions") then
+					local found = false;
+					for i=1,GameTooltip:NumLines() do
+						if _G["GameTooltipTextLeft"..i]:GetText() == reference.description then
+							found = true;
+							break;
+						end
+					end
+					if not found then GameTooltip:AddLine(reference.description, 0.4, 0.8, 1, 1); end
+				end
+				if reference.u then
+					GameTooltip:AddLine(L("UNOBTAINABLE_ITEM_REASONS")[reference.u][2], 1, 1, 1, 1, true);
+				end
 			end
 		end
 		if reference.speciesID then
