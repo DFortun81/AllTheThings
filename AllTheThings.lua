@@ -8131,10 +8131,10 @@ function app:GetDataCache()
 					end
 					
 					if #searchResults > 0 then
-						print("Symbolic Link for ", o.key, " ", o[o.key], " contains ", #searchResults, " values after filtering.");
+						-- print("Symbolic Link for ", o.key, " ", o[o.key], " contains ", #searchResults, " values after filtering.");
 						o.g = searchResults;
 					else
-						print("Symbolic Link for ", o.key, " ", o[o.key], " contained no values after filtering.");
+						-- print("Symbolic Link for ", o.key, " ", o[o.key], " contained no values after filtering.");
 					end
 					o.sym = nil;
 				end
