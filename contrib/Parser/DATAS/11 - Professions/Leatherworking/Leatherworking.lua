@@ -255,8 +255,6 @@ profession(165, { -- Leatherworking
 			i(30307), -- Pattern: Boots of the Crimson Hawk
 			i(30306), -- Pattern: Boots of Utter Darkness
 			i(32744), -- Pattern: Bracers of Renewed Life
-			i(47635), -- Pattern: Bracers of Swift Death(Horde only)
-			i(47647), -- Pattern: Bracers of Swift Death(Alliance only)
 			i(35218), -- Pattern: Carapace of Sun and Shadow
 			i(29724), -- Pattern: Cobrascale Gloves
 			i(35302), -- Pattern: Cobrascale Gloves			
@@ -377,6 +375,8 @@ profession(165, { -- Leatherworking
 			i(45096), -- Pattern: Blue Belt of Chaos
 			i(45095), -- Pattern: Boots of Living Scale
 			i(45101), -- Pattern: Boots of Wintry Endurance
+			i(47635), -- Pattern: Bracers of Swift Death(Horde only)
+			i(47647), -- Pattern: Bracers of Swift Death(Alliance only)
 			i(47631), -- Pattern: Crusader's Dragonscale Bracers(Alliance only)
 			i(47648), -- Pattern: Crusader's Dragonscale Bracers(Horde only)
 			i(47630), -- Pattern: Crusader's Dragonscale Breastplate(Alliance only)
