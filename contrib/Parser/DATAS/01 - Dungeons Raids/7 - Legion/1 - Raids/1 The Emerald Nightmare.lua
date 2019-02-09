@@ -36,62 +36,11 @@ _.Instances =
 						n(-17, { 	-- Quests
 							["crs"] = CLASS_HALL_MISSION_TABLES,
 							["groups"] = {
-								un(2,i(139484, { -- Cache of Nightmarish Treasures [Raid Finder]
-									i(139191),	-- Ancient Dreamwoven Mantle
-									i(139219),	-- Black Venom Sabatons
-									i(139199),	-- Boots of Endless Betrayal
-									i(139188),	-- Celestially Aligned Hood
-									i(139187),	-- Clasp of Cosmic Insignificance
-									i(139205),	-- Cowl of Fright
-									i(139194),	-- Cozy Dryad Hoof-Socks
-									i(139212),	-- Creeping String of Larva
-									i(139195),	-- Crimson Wool-Lined Slippers
-									i(139231),	-- Crown  of Steely Brambles
-									i(139216),	-- Disjointed Linkage Leggings
-									i(138218),	-- Dragonbone Wristclamps
-									i(138219),	-- Dragonspur Wristguards
-									i(138215),	-- Dreamscale Inlaid Vestments
-									i(139202),	-- Dreamsculptor's Gloves
-									i(139228),	-- Eon-Tempered Waistplate
-									i(139248),	-- Evergreen Vinewrap Drape
-									i(139225),	-- Fitted Ironbark Gauntlets
-									i(139198),	-- Forest-Lord's Waistwrap
-									i(139213),	-- Gauntlets of Malevolent Intent
-									i(138214),	-- Gauntlets of the Demented Mind
-									i(138221),	-- Gossamer-Spun Greatcloak
-									i(139214),	-- Greyed Dragonscale Coif
-									i(139207),	-- Grove Keeper's Robe
-									i(138212),	-- Handwraps of Delusional Power
-									i(139189),	-- Hood of Darkened Visions
-									i(138216),	-- Horror Inscribed Chestguard
-									i(139224),	-- Insect-Etched Chestplate
-									i(139211),	-- Laughing Sister's Pouch-Chain
-									i(139197),	-- Lifeless Buckled Girdle
-									i(139193),	-- Maddening Robe of Secrets
-									i(138211),	-- Malignant Sabatons
-									i(139222),	-- Manacles of the Nightmare Colossus
-									i(139192),	-- Mantle of Perpetual Bloom
-									i(139204),	-- Mask of Multitudinous Eyes
-									i(139217),	-- Matted Fur Pauldrons
-									i(139232),	-- Midnight Herald's Pauldrons
-									i(139206),	-- Otherworldy Leather Mantle
-									i(139221),	-- Patient Ambusher's Hauberk
-									i(139233),	-- Pauldrons of Shifting Runes
-									i(138217),	-- Pliable Spider Silk Cinch
-									i(139226),	-- Primal Gauntlets of Rage
-									i(139196),	-- Ragged Fur Wristwraps
-									i(139190),	-- Ragged Horrorweave Leggings
-									i(139203),	-- Repulsive Leathery Pants
-									i(139208),	-- Scarred Ragefang Chestpiece
-									i(139220),	-- Scored Ironclaw Sabatons
-									i(139215),	-- Singular Chain Leggings
-									i(139201),	-- Splotched Bloodfur Leggings
-									i(139200),	-- Stained Maggot Squishers
-									i(139230),	-- Storm-Battered Legplates
-									i(139218),	-- Thorny Bramblemail Pauldrons
-									i(139227),	-- Waistplate of Nameless Horror
-									i(139235),	-- Wristclamps of Mad Dreams
-								})),
+								{
+									["itemID"] = 139484,	-- Cache of Nightmarish Treasures [Raid Finder]
+									["u"] = 2,
+									["sym"] = {{"select", "instanceID", 768}, {"pop"}, {"where", "difficultyID", 17 }, {"pop"}, {"pop"}, {"is","encounterID"}, {"pop"}, {"is", "s" }},
+								},
 								{
 									["itemID"] = 139480,	-- Corrupted Egg Fragment [Raid Finder]
 									["questID"] = 43546,	-- The Emerald Nightmare: Il'gynoth [Raid Finder]
@@ -336,62 +285,11 @@ _.Instances =
 						n(-17, { 	-- Quests
 							["crs"] = CLASS_HALL_MISSION_TABLES,
 							["groups"] = {
-								un(2,i(139486, { -- Cache of Nightmarish Treasures [Normal]
-									i(139191),	-- Ancient Dreamwoven Mantle
-									i(139219),	-- Black Venom Sabatons
-									i(139199),	-- Boots of Endless Betrayal
-									i(139188),	-- Celestially Aligned Hood
-									i(139187),	-- Clasp of Cosmic Insignificance
-									i(139205),	-- Cowl of Fright
-									i(139194),	-- Cozy Dryad Hoof-Socks
-									i(139212),	-- Creeping String of Larva
-									i(139195),	-- Crimson Wool-Lined Slippers
-									i(139231),	-- Crown  of Steely Brambles
-									i(139216),	-- Disjointed Linkage Leggings
-									i(138218),	-- Dragonbone Wristclamps
-									i(138219),	-- Dragonspur Wristguards
-									i(138215),	-- Dreamscale Inlaid Vestments
-									i(139202),	-- Dreamsculptor's Gloves
-									i(139228),	-- Eon-Tempered Waistplate
-									i(139248),	-- Evergreen Vinewrap Drape
-									i(139225),	-- Fitted Ironbark Gauntlets
-									i(139198),	-- Forest-Lord's Waistwrap
-									i(139213),	-- Gauntlets of Malevolent Intent
-									i(138214),	-- Gauntlets of the Demented Mind
-									i(138221),	-- Gossamer-Spun Greatcloak
-									i(139214),	-- Greyed Dragonscale Coif
-									i(139207),	-- Grove Keeper's Robe
-									i(138212),	-- Handwraps of Delusional Power
-									i(139189),	-- Hood of Darkened Visions
-									i(138216),	-- Horror Inscribed Chestguard
-									i(139224),	-- Insect-Etched Chestplate
-									i(139211),	-- Laughing Sister's Pouch-Chain
-									i(139197),	-- Lifeless Buckled Girdle
-									i(139193),	-- Maddening Robe of Secrets
-									i(138211),	-- Malignant Sabatons
-									i(139222),	-- Manacles of the Nightmare Colossus
-									i(139192),	-- Mantle of Perpetual Bloom
-									i(139204),	-- Mask of Multitudinous Eyes
-									i(139217),	-- Matted Fur Pauldrons
-									i(139232),	-- Midnight Herald's Pauldrons
-									i(139206),	-- Otherworldy Leather Mantle
-									i(139221),	-- Patient Ambusher's Hauberk
-									i(139233),	-- Pauldrons of Shifting Runes
-									i(138217),	-- Pliable Spider Silk Cinch
-									i(139226),	-- Primal Gauntlets of Rage
-									i(139196),	-- Ragged Fur Wristwraps
-									i(139190),	-- Ragged Horrorweave Leggings
-									i(139203),	-- Repulsive Leathery Pants
-									i(139208),	-- Scarred Ragefang Chestpiece
-									i(139220),	-- Scored Ironclaw Sabatons
-									i(139215),	-- Singular Chain Leggings
-									i(139201),	-- Splotched Bloodfur Leggings
-									i(139200),	-- Stained Maggot Squishers
-									i(139230),	-- Storm-Battered Legplates
-									i(139218),	-- Thorny Bramblemail Pauldrons
-									i(139227),	-- Waistplate of Nameless Horror
-									i(139235),	-- Wristclamps of Mad Dreams
-								})),
+								{
+									["itemID"] = 139486,	-- Cache of Nightmarish Treasures [Normal]
+									["u"] = 2,
+									["sym"] = {{"select", "instanceID", 768}, {"pop"}, {"where", "difficultyID", 14 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"is", "s" }},
+								},
 								{
 									["itemID"] = 139481,	-- Corrupted Egg Fragment [Normal]
 									["questID"] = 43547,	-- The Emerald Nightmare: Il'gynoth [Normal]
@@ -638,62 +536,11 @@ _.Instances =
 						n(-17, { 	-- Quests
 							["crs"] = CLASS_HALL_MISSION_TABLES,
 							["groups"] = {
-								un(2, i(139487, { -- Cache of Nightmarish Treasures [Heroic]
-									i(139191),	-- Ancient Dreamwoven Mantle
-									i(139219),	-- Black Venom Sabatons
-									i(139199),	-- Boots of Endless Betrayal
-									i(139188),	-- Celestially Aligned Hood
-									i(139187),	-- Clasp of Cosmic Insignificance
-									i(139205),	-- Cowl of Fright
-									i(139194),	-- Cozy Dryad Hoof-Socks
-									i(139212),	-- Creeping String of Larva
-									i(139195),	-- Crimson Wool-Lined Slippers
-									i(139231),	-- Crown  of Steely Brambles
-									i(139216),	-- Disjointed Linkage Leggings
-									i(138218),	-- Dragonbone Wristclamps
-									i(138219),	-- Dragonspur Wristguards
-									i(138215),	-- Dreamscale Inlaid Vestments
-									i(139202),	-- Dreamsculptor's Gloves
-									i(139228),	-- Eon-Tempered Waistplate
-									i(139248),	-- Evergreen Vinewrap Drape
-									i(139225),	-- Fitted Ironbark Gauntlets
-									i(139198),	-- Forest-Lord's Waistwrap
-									i(139213),	-- Gauntlets of Malevolent Intent
-									i(138214),	-- Gauntlets of the Demented Mind
-									i(138221),	-- Gossamer-Spun Greatcloak
-									i(139214),	-- Greyed Dragonscale Coif
-									i(139207),	-- Grove Keeper's Robe
-									i(138212),	-- Handwraps of Delusional Power
-									i(139189),	-- Hood of Darkened Visions
-									i(138216),	-- Horror Inscribed Chestguard
-									i(139224),	-- Insect-Etched Chestplate
-									i(139211),	-- Laughing Sister's Pouch-Chain
-									i(139197),	-- Lifeless Buckled Girdle
-									i(139193),	-- Maddening Robe of Secrets
-									i(138211),	-- Malignant Sabatons
-									i(139222),	-- Manacles of the Nightmare Colossus
-									i(139192),	-- Mantle of Perpetual Bloom
-									i(139204),	-- Mask of Multitudinous Eyes
-									i(139217),	-- Matted Fur Pauldrons
-									i(139232),	-- Midnight Herald's Pauldrons
-									i(139206),	-- Otherworldy Leather Mantle
-									i(139221),	-- Patient Ambusher's Hauberk
-									i(139233),	-- Pauldrons of Shifting Runes
-									i(138217),	-- Pliable Spider Silk Cinch
-									i(139226),	-- Primal Gauntlets of Rage
-									i(139196),	-- Ragged Fur Wristwraps
-									i(139190),	-- Ragged Horrorweave Leggings
-									i(139203),	-- Repulsive Leathery Pants
-									i(139208),	-- Scarred Ragefang Chestpiece
-									i(139220),	-- Scored Ironclaw Sabatons
-									i(139215),	-- Singular Chain Leggings
-									i(139201),	-- Splotched Bloodfur Leggings
-									i(139200),	-- Stained Maggot Squishers
-									i(139230),	-- Storm-Battered Legplates
-									i(139218),	-- Thorny Bramblemail Pauldrons
-									i(139227),	-- Waistplate of Nameless Horror
-									i(139235),	-- Wristclamps of Mad Dreams
-								})),
+								{
+									["itemID"] = 139487,	-- Cache of Nightmarish Treasures [Heroic]
+									["u"] = 2,
+									["sym"] = {{"select", "instanceID", 768}, {"pop"}, {"where", "difficultyID", 15 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"is", "s" }},
+								},
 								{
 									["itemID"] = 139482,	-- Corrupted Egg Fragment [Heroic]
 									["questID"] = 43548,	-- The Emerald Nightmare: Il'gynoth [Heroic]
@@ -945,62 +792,11 @@ _.Instances =
 						n(-17, { 	-- Quests
 							["crs"] = CLASS_HALL_MISSION_TABLES,
 							["groups"] = {
-								un(2, i(139488, { -- Cache of Nightmarish Treasures [Mythic]
-									i(139191),	-- Ancient Dreamwoven Mantle
-									i(139219),	-- Black Venom Sabatons
-									i(139199),	-- Boots of Endless Betrayal
-									i(139188),	-- Celestially Aligned Hood
-									i(139187),	-- Clasp of Cosmic Insignificance
-									i(139205),	-- Cowl of Fright
-									i(139194),	-- Cozy Dryad Hoof-Socks
-									i(139212),	-- Creeping String of Larva
-									i(139195),	-- Crimson Wool-Lined Slippers
-									i(139231),	-- Crown  of Steely Brambles
-									i(139216),	-- Disjointed Linkage Leggings
-									i(138218),	-- Dragonbone Wristclamps
-									i(138219),	-- Dragonspur Wristguards
-									i(138215),	-- Dreamscale Inlaid Vestments
-									i(139202),	-- Dreamsculptor's Gloves
-									i(139228),	-- Eon-Tempered Waistplate
-									i(139248),	-- Evergreen Vinewrap Drape
-									i(139225),	-- Fitted Ironbark Gauntlets
-									i(139198),	-- Forest-Lord's Waistwrap
-									i(139213),	-- Gauntlets of Malevolent Intent
-									i(138214),	-- Gauntlets of the Demented Mind
-									i(138221),	-- Gossamer-Spun Greatcloak
-									i(139214),	-- Greyed Dragonscale Coif
-									i(139207),	-- Grove Keeper's Robe
-									i(138212),	-- Handwraps of Delusional Power
-									i(139189),	-- Hood of Darkened Visions
-									i(138216),	-- Horror Inscribed Chestguard
-									i(139224),	-- Insect-Etched Chestplate
-									i(139211),	-- Laughing Sister's Pouch-Chain
-									i(139197),	-- Lifeless Buckled Girdle
-									i(139193),	-- Maddening Robe of Secrets
-									i(138211),	-- Malignant Sabatons
-									i(139222),	-- Manacles of the Nightmare Colossus
-									i(139192),	-- Mantle of Perpetual Bloom
-									i(139204),	-- Mask of Multitudinous Eyes
-									i(139217),	-- Matted Fur Pauldrons
-									i(139232),	-- Midnight Herald's Pauldrons
-									i(139206),	-- Otherworldy Leather Mantle
-									i(139221),	-- Patient Ambusher's Hauberk
-									i(139233),	-- Pauldrons of Shifting Runes
-									i(138217),	-- Pliable Spider Silk Cinch
-									i(139226),	-- Primal Gauntlets of Rage
-									i(139196),	-- Ragged Fur Wristwraps
-									i(139190),	-- Ragged Horrorweave Leggings
-									i(139203),	-- Repulsive Leathery Pants
-									i(139208),	-- Scarred Ragefang Chestpiece
-									i(139220),	-- Scored Ironclaw Sabatons
-									i(139215),	-- Singular Chain Leggings
-									i(139201),	-- Splotched Bloodfur Leggings
-									i(139200),	-- Stained Maggot Squishers
-									i(139230),	-- Storm-Battered Legplates
-									i(139218),	-- Thorny Bramblemail Pauldrons
-									i(139227),	-- Waistplate of Nameless Horror
-									i(139235),	-- Wristclamps of Mad Dreams
-								})),
+								{
+									["itemID"] = 139488,	-- Cache of Nightmarish Treasures [Mythic]
+									["u"] = 2,
+									["sym"] = {{"select", "instanceID", 768}, {"pop"}, {"where", "difficultyID", 16 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"is", "s" }},
+								},
 								{
 									["itemID"] = 139483,	-- Corrupted Egg Fragment [Mythic]
 									["questID"] = 43549,	-- The Emerald Nightmare: Il'gynoth [Mythic]
