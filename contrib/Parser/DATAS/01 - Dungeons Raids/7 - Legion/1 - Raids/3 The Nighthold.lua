@@ -36,7 +36,11 @@ _.Instances =
 						n(-17, { 	-- Quests
 							["crs"] = CLASS_HALL_MISSION_TABLES,
 							["groups"] = {
-								un(2, i(140148)), -- Cache of Nightborne Treasures [Raid Finder]
+								{
+									["itemID"] = 140148,	-- Cache of Nightborne Treasures [Raid Finder]
+									["u"] = 2,
+									["sym"] = {{"select", "instanceID", 786}, {"pop"}, {"where", "difficultyID", 17 }, {"pop"}, {"pop"}, {"is","encounterID"}, {"pop"}, {"is", "s" }},
+								},
 								{
 									["itemID"] = 140172,	-- Ancient Nightborne Tome [Raid Finder]
 									["questID"] = 43911,	-- The Nighthold: Elisande [Raid Finder]
@@ -399,7 +403,11 @@ _.Instances =
 						n(-17, { 	-- Quests
 							["crs"] = CLASS_HALL_MISSION_TABLES,
 							["groups"] = {
-								un(2, i(140150)), -- Cache of Nightborne Treasures [Normal]
+								{
+									["itemID"] = 140150,	-- Cache of Nightborne Treasures [Normal]
+									["u"] = 2,
+									["sym"] = {{"select", "instanceID", 786}, {"pop"}, {"where", "difficultyID", 14 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"is", "s" }},
+								},
 								{
 									["itemID"] = 140175,	-- Ancient Nightborne Tome [Normal]
 									["questID"] = 43914,	-- The Nighthold: Elisande [Normal]
@@ -793,7 +801,11 @@ _.Instances =
 						n(-17, { 	-- Quests
 							["crs"] = CLASS_HALL_MISSION_TABLES,
 							["groups"] = {
-								un(2, i(140152)), -- Cache of Nightborne Treasures [Heroic]
+								{
+									["itemID"] = 140152,	-- Cache of Nightborne Treasures [Heroic]
+									["u"] = 2,
+									["sym"] = {{"select", "instanceID", 786}, {"pop"}, {"where", "difficultyID", 15 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"is", "s" }},
+								},
 								{
 									["itemID"] = 140472,	-- Ancient Nightborne Tome [Heroic]
 									["questID"] = 43917,	-- The Nighthold: Elisande [Heroic]
@@ -1191,7 +1203,11 @@ _.Instances =
 						n(-17, { 	-- Quests
 							["crs"] = CLASS_HALL_MISSION_TABLES,
 							["groups"] = {
-								un(2, i(140154)), -- Cache of Nightborne Treasures [Mythic]
+								{
+									["itemID"] = 140154,	-- Cache of Nightborne Treasures [Mythic]
+									["u"] = 2,
+									["sym"] = {{"select", "instanceID", 786}, {"pop"}, {"where", "difficultyID", 16 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"is", "s" }},
+								},
 								{
 									["itemID"] = 140182,	-- Ancient Nightborne Tome [Mythic]
 									["questID"] = 43920,	-- The Nighthold: Elisande [Mythic]
