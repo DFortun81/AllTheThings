@@ -6363,7 +6363,7 @@ local function CreateMiniListForGroup(group)
 						for i=1,#sourceQuest,1 do
 							-- Only care about the first search result.
 							local sq = sourceQuest[i];
-							if sq and app.GroupFilter(sq) then
+							if sq and app.GroupFilter(sq) and not sq.isBreadcrumb then
 								if sq.altQuestID then
 									-- Alt Quest IDs are always Horde.
 									if app.Faction == "Horde" then
@@ -6383,7 +6383,7 @@ local function CreateMiniListForGroup(group)
 						end
 						if found then
 							sourceQuest = setmetatable({ ['collectible'] = true, ['visible'] = true, ['hideText'] = true }, { __index = found });
-							if found.sourceQuests and #found.sourceQuests > 0 and (not found.saved or app.CollectedItemVisibilityFilter(sourceQuest)) and not found.isBreadcrumb then
+							if found.sourceQuests and #found.sourceQuests > 0 and (not found.saved or app.CollectedItemVisibilityFilter(sourceQuest)) then
 								-- Mark the sub source quest IDs as marked (as the same sub quest might point to 1 source quest ID)
 								for j, subsourceQuests in ipairs(found.sourceQuests) do
 									subSourceQuests[subsourceQuests] = true;
@@ -7205,10 +7205,32 @@ local function RowOnEnter(self)
 		
 		-- Show Quest Prereqs
 		if reference.sourceQuests and not reference.saved then
+			local prereqs, bc = {}, {};
 			for i,sourceQuestID in ipairs(reference.sourceQuests) do
-				if not IsQuestFlaggedCompleted(sourceQuestID) then
-					GameTooltip:AddLine("This quest has an incomplete prerequisite quest that you need to complete first.");
-					break;
+				if sourceQuestID > 0 and not IsQuestFlaggedCompleted(sourceQuestID) then
+					local sqs = SearchForField("questID", sourceQuestID);
+					if sqs and #sqs > 0 then
+						local sq = sqs[1];
+						if sq and sq.isBreadcrumb then
+							table.insert(bc, sqs[1]);
+						else
+							table.insert(prereqs, sqs[1]);
+						end
+					else
+						table.insert(prereqs, {questID = sourceQuestID});
+					end
+				end
+			end
+			if prereqs and #prereqs > 0 then
+				GameTooltip:AddLine("This quest has an incomplete prerequisite quest that you need to complete first.");
+				for i,prereq in ipairs(prereqs) do
+					GameTooltip:AddLine("   " .. prereq.questID .. ": " .. (prereq.text or RETRIEVING_DATA));
+				end
+			end
+			if bc and #bc > 0 then
+				GameTooltip:AddLine("This quest has a breadcrumb quest that you may be unable to complete after completing this one.");
+				for i,prereq in ipairs(bc) do
+					GameTooltip:AddLine("   " .. prereq.questID .. ": " .. (prereq.text or RETRIEVING_DATA));
 				end
 			end
 		end
