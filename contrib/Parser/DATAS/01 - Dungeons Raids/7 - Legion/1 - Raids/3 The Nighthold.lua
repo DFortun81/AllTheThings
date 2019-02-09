@@ -39,7 +39,7 @@ _.Instances =
 								{
 									["itemID"] = 140148,	-- Cache of Nightborne Treasures [Raid Finder]
 									["u"] = 2,
-									["sym"] = {{"select", "instanceID", 786}, {"pop"}, {"where", "difficultyID", 17 }, {"pop"}, {"pop"}, {"is","encounterID"}, {"pop"}, {"is", "s" }, {"isnt", "c"}},
+									["sym"] = {{"select", "instanceID", 786}, {"pop"}, {"where", "difficultyID", 17 }, {"pop"}, {"pop"}, {"is","encounterID"}, {"pop"}, {"isnt", "c"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
 								},
 								{
 									["itemID"] = 140172,	-- Ancient Nightborne Tome [Raid Finder]
@@ -406,7 +406,7 @@ _.Instances =
 								{
 									["itemID"] = 140150,	-- Cache of Nightborne Treasures [Normal]
 									["u"] = 2,
-									["sym"] = {{"select", "instanceID", 786}, {"pop"}, {"where", "difficultyID", 14 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"is", "s" }},
+									["sym"] = {{"select", "instanceID", 786}, {"pop"}, {"where", "difficultyID", 14 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
 								},
 								{
 									["itemID"] = 140175,	-- Ancient Nightborne Tome [Normal]
@@ -804,7 +804,7 @@ _.Instances =
 								{
 									["itemID"] = 140152,	-- Cache of Nightborne Treasures [Heroic]
 									["u"] = 2,
-									["sym"] = {{"select", "instanceID", 786}, {"pop"}, {"where", "difficultyID", 15 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"is", "s" }},
+									["sym"] = {{"select", "instanceID", 786}, {"pop"}, {"where", "difficultyID", 15 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
 								},
 								{
 									["itemID"] = 140472,	-- Ancient Nightborne Tome [Heroic]
@@ -1206,7 +1206,7 @@ _.Instances =
 								{
 									["itemID"] = 140154,	-- Cache of Nightborne Treasures [Mythic]
 									["u"] = 2,
-									["sym"] = {{"select", "instanceID", 786}, {"pop"}, {"where", "difficultyID", 16 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"is", "s" }},
+									["sym"] = {{"select", "instanceID", 786}, {"pop"}, {"where", "difficultyID", 16 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
 								},
 								{
 									["itemID"] = 140182,	-- Ancient Nightborne Tome [Mythic]

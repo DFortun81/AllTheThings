@@ -45,7 +45,7 @@ _.Instances =
 							["groups"] = {
 								{
 									["itemID"] = 147518,	-- Cache of Fel Treasures [Raid Finder]
-									["sym"] = {{"select", "instanceID", 875}, {"pop"}, {"where", "difficultyID", 17 }, {"pop"}, {"pop"}, {"is","encounterID"}, {"pop"}, {"is", "s" }, {"isnt", "c"}},
+									["sym"] = {{"select", "instanceID", 875}, {"pop"}, {"where", "difficultyID", 17 }, {"pop"}, {"pop"}, {"is","encounterID"}, {"pop"}, {"isnt", "c"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
 								},
 								{
 									["itemID"] = 147497,	-- Encrusted Naga Scale [Raid Finder]
@@ -294,7 +294,7 @@ _.Instances =
 							["groups"] = {
 								{
 									["itemID"] = 147519,	-- Cache of Fel Treasures [Normal]
-									["sym"] = {{"select", "instanceID", 875}, {"pop"}, {"where", "difficultyID", 14 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"is", "s" }, {"isnt", "c"}},
+									["sym"] = {{"select", "instanceID", 875}, {"pop"}, {"where", "difficultyID", 14 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"isnt", "c"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
 								},
 								{
 									["itemID"] = 147498,	-- Encrusted Naga Scale [Normal]
@@ -510,7 +510,7 @@ _.Instances =
 							["groups"] = {
 								{
 									["itemID"] = 147520,	-- Cache of Fel Treasures [Heroic]
-									["sym"] = {{"select", "instanceID", 875}, {"pop"}, {"where", "difficultyID", 15 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"is", "s" }, {"isnt", "c"}},
+									["sym"] = {{"select", "instanceID", 875}, {"pop"}, {"where", "difficultyID", 15 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"isnt", "c"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
 								},
 								{
 									["itemID"] = 147499,	-- Encrusted Naga Scale [Heroic]
@@ -726,7 +726,7 @@ _.Instances =
 							["groups"] = {
 								{
 									["itemID"] = 147521,	-- Cache of Fel Treasures [Mythic]
-									["sym"] = {{"select", "instanceID", 875}, {"pop"}, {"where", "difficultyID", 16 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"is", "s" }, {"isnt", "c"}},
+									["sym"] = {{"select", "instanceID", 875}, {"pop"}, {"where", "difficultyID", 16 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"isnt", "c"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
 								},
 								{
 									["itemID"] = 147500,	-- Encrusted Naga Scale [Mythic]

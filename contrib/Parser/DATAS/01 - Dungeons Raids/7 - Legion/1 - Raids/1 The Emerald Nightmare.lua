@@ -39,7 +39,7 @@ _.Instances =
 								{
 									["itemID"] = 139484,	-- Cache of Nightmarish Treasures [Raid Finder]
 									["u"] = 2,
-									["sym"] = {{"select", "instanceID", 768}, {"pop"}, {"where", "difficultyID", 17 }, {"pop"}, {"pop"}, {"is","encounterID"}, {"pop"}, {"is", "s" }},
+									["sym"] = {{"select", "instanceID", 768}, {"pop"}, {"where", "difficultyID", 17 }, {"pop"}, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
 								},
 								{
 									["itemID"] = 139480,	-- Corrupted Egg Fragment [Raid Finder]
@@ -288,7 +288,7 @@ _.Instances =
 								{
 									["itemID"] = 139486,	-- Cache of Nightmarish Treasures [Normal]
 									["u"] = 2,
-									["sym"] = {{"select", "instanceID", 768}, {"pop"}, {"where", "difficultyID", 14 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"is", "s" }},
+									["sym"] = {{"select", "instanceID", 768}, {"pop"}, {"where", "difficultyID", 14 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
 								},
 								{
 									["itemID"] = 139481,	-- Corrupted Egg Fragment [Normal]
@@ -539,7 +539,7 @@ _.Instances =
 								{
 									["itemID"] = 139487,	-- Cache of Nightmarish Treasures [Heroic]
 									["u"] = 2,
-									["sym"] = {{"select", "instanceID", 768}, {"pop"}, {"where", "difficultyID", 15 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"is", "s" }},
+									["sym"] = {{"select", "instanceID", 768}, {"pop"}, {"where", "difficultyID", 15 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
 								},
 								{
 									["itemID"] = 139482,	-- Corrupted Egg Fragment [Heroic]
@@ -795,7 +795,7 @@ _.Instances =
 								{
 									["itemID"] = 139488,	-- Cache of Nightmarish Treasures [Mythic]
 									["u"] = 2,
-									["sym"] = {{"select", "instanceID", 768}, {"pop"}, {"where", "difficultyID", 16 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"is", "s" }},
+									["sym"] = {{"select", "instanceID", 768}, {"pop"}, {"where", "difficultyID", 16 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
 								},
 								{
 									["itemID"] = 139483,	-- Corrupted Egg Fragment [Mythic]
