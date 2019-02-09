@@ -6329,7 +6329,6 @@ local function CreateMiniListForGroup(group)
 				end
 			end
 		end
-		CacheFields(mainItem);
 		popout.data = {
 			["text"] = "Shared Appearances",
 			["description"] = "The items in this list are shared appearances for the following item. In Unique Appearance Mode, this list can help you understand why or why not a specific item would be marked Collected.",
@@ -6453,14 +6452,12 @@ local function CreateMiniListForGroup(group)
 		};
 		BuildGroups(popout.data, popout.data.g);
 		UpdateGroups(popout.data, popout.data.g);
-		CacheFields(popout.data);
 	elseif group.g then
 		-- This is already a container with accurate numbers.
 		popout.data = setmetatable({ ['visible'] = true }, { __index = group });
 	else
 		-- This is a standalone item
 		local newItem = setmetatable({ ['visible'] = true, ['hideText'] = true }, { __index = group });
-		CacheFields(newItem);
 		popout.data = {
 			["text"] = "Standalone Item",
 			["icon"] = "Interface\\Icons\\Achievement_Garrison_blueprint_medium.blp",
