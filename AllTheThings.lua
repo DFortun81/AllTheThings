@@ -6382,10 +6382,10 @@ local function CreateMiniListForGroup(group)
 							end
 						end
 						if found then
-							sourceQuest = setmetatable({ --[[['collectible'] = true,]] ['visible'] = true, ['hideText'] = true }, { __index = found });
-							if sourceQuest.sourceQuests and #sourceQuest.sourceQuests > 0 and (not sourceQuest.saved or app.CollectedItemVisibilityFilter(sourceQuest)) then
+							sourceQuest = setmetatable({ ['collectible'] = true, ['visible'] = true, ['hideText'] = true }, { __index = found });
+							if found.sourceQuests and #found.sourceQuests > 0 and (not found.saved or app.CollectedItemVisibilityFilter(sourceQuest)) and not found.isBreadcrumb then
 								-- Mark the sub source quest IDs as marked (as the same sub quest might point to 1 source quest ID)
-								for j, subsourceQuests in ipairs(sourceQuest.sourceQuests) do
+								for j, subsourceQuests in ipairs(found.sourceQuests) do
 									subSourceQuests[subsourceQuests] = true;
 								end
 							end
