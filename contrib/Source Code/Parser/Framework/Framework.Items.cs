@@ -233,6 +233,9 @@ namespace Parser_V2
                     case "coords":
                     case "criteriaID":
                     case "heirloomID":
+                    case "recipeID":
+                    case "previousRecipeID":
+                    case "nextRecipeID":
                         {
                             return;
                         }
@@ -368,6 +371,31 @@ namespace Parser_V2
 
                             // Merge the new list of data into the old data and ensure there are no duplicate values.
                             foreach (var pair in newDict) oldDict[Convert.ToInt32(pair.Key)] = Convert.ToInt32(pair.Value);
+                            break;
+                        }
+
+                    // Dictionary Data Type Fields (stored as Dictionary<string, object> for usability reasons)
+                    case "sym":
+                        {
+                            // Convert the data to a list of generic objects.
+                            var newDict = value as Dictionary<object, object>;
+                            if (newDict == null) return;
+
+                            // Attempt to get the old list data.
+                            Dictionary<string, object> oldDict;
+                            if (item.TryGetValue(field, out object oldData))
+                            {
+                                // Convert the old data to a dictionary of strings.
+                                oldDict = oldData as Dictionary<string, object>;
+                            }
+                            else
+                            {
+                                // Create a new data dictionary of strings.
+                                item[field] = oldDict = new Dictionary<string, object>();
+                            }
+
+                            // Merge the new list of data into the old data and ensure there are no duplicate values.
+                            foreach (var pair in newDict) oldDict[Convert.ToString(pair.Key)] = pair.Value;
                             break;
                         }
 
@@ -569,6 +597,7 @@ namespace Parser_V2
                     case "lvl":
                     case "q":
                     case "c":
+                    case "sym":
                     case "races":
                     case "specs":
                     case "sourceQuests":

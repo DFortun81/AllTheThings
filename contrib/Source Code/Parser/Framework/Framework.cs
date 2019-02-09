@@ -1167,7 +1167,8 @@ namespace Parser_V2
                         builder.Append(field).Append('=');
 
                         // Append the undetermined object's format to the builder.
-                        Export(builder, data[field]);
+                        if(field == "sym") ExportClean(builder, data[field]);
+                        else Export(builder, data[field]);
                     }
 
                     // Close Bracket for the end of the Dictionary.
@@ -1333,6 +1334,173 @@ namespace Parser_V2
                 // Export various debug information to the output folder.
                 Objects.Export(outputFolder.FullName);
             }
+        }
+        #endregion
+        #region Export (Clean)
+        /// <summary>
+        /// Export the data to the builder in a clean, longhand format.
+        /// Standardized formatting without newlines applies here.
+        /// </summary>
+        /// <param name="builder">The builder.</param>
+        /// <param name="data">The undetermined object data.</param>
+        /// <param name="indent">The string to prefix before each line. (indenting)</param>
+        public static void ExportClean(StringBuilder builder, object data)
+        {
+            // Firstly, we need to know the type of object we're working with.
+            if (data is bool b) builder.Append(b ? "1" : "false");  // NOTE: 0 in lua is evaluated as true, not false. So we can't shorten it. (rip)
+            else if (data is List<object> list) ExportClean(builder, list);
+            else if (data is Dictionary<string, object> dict) ExportClean(builder, dict);
+            else if (data is string str) builder.Append('"').Append(str.Replace("\"", "\\\"")).Append('"');
+            else if (data is Dictionary<object, object> objdict) ExportClean(builder, objdict);
+            else if (data is Dictionary<int, object> intdict) ExportClean(builder, intdict);
+            else if (data is Dictionary<long, object> longdict) ExportClean(builder, longdict);
+            else if (data is Dictionary<int, int> intintdict) ExportClean(builder, intintdict);
+            else if (data is Dictionary<long, int> longintdict) ExportClean(builder, longintdict);
+            else if (data is Dictionary<string, List<object>> listdict) ExportClean(builder, listdict);
+            else
+            {
+                // Default: Write it as a String. Best of luck.
+                builder.Append(Framework.ToString(data));
+            }
+        }
+
+        /// <summary>
+        /// Export the contents of the dictionary to the builder in a clean, longhand format.
+        /// Every field will be written. Standardized formatting without newlines applies here.
+        /// </summary>
+        /// <typeparam name="KEY">The key value type of the dictionary.</typeparam>
+        /// <typeparam name="VALUE">The value type of the dictionary.</typeparam>
+        /// <param name="builder">The builder.</param>
+        /// <param name="data">The data dictionary.</param>
+        public static void ExportClean<KEY, VALUE>(StringBuilder builder, Dictionary<KEY, VALUE> data)
+        {
+            // If the dictionary doesn't have any content, then return immediately.
+            if (data.Count == 0)
+            {
+                builder.Append("{}");
+                return;
+            }
+
+            // Open Bracket for beginning of the Dictionary.
+            builder.Append('{');
+
+            // Clone this and calculate most significant.
+            bool hasG = false;
+            VALUE g = default(VALUE);    // Look for the G Field.
+            var data2 = new Dictionary<object, object>();
+            var keys = data.Keys.ToList();
+            for (int i = 0, count = keys.Count; i < count; ++i)
+            {
+                if (keys[i].ToString() == "g")
+                {
+                    g = data[keys[i]];
+                    keys.RemoveAt(i);
+                    hasG = true;
+                    break;
+                }
+            }
+            keys.Sort();
+            foreach (var key in keys) data2[key] = data[key];
+
+            // Export Fields
+            int fieldCount = 0;
+            foreach (var pair in data2)
+            {
+                // If this is NOT the first field, append a comma.
+                if (fieldCount++ > 0) builder.Append(',');
+
+                // Append the Field and its Value
+                builder.Append(pair.Key).Append('=');
+                ExportClean(builder, pair.Value);
+            }
+
+            // We wanted to move this to the bottom of the hierarchy.
+            if (hasG)
+            {
+                // If this is NOT the first field, append a comma.
+                if (fieldCount++ > 0) builder.Append(',');
+
+                // Append the Field and its Value
+                builder.Append("g=");
+                ExportClean(builder, g);
+            }
+
+            // Close Bracket for the end of the Dictionary.
+            builder.Append('}');
+        }
+
+        /// <summary>
+        /// Export the contents of the list to the builder in a clean, longhand format.
+        /// Every element will be written. Standardized formatting without newlines applies here.
+        /// </summary>
+        /// <param name="builder">The builder.</param>
+        /// <param name="list">The list of data.</param>
+        public static void ExportClean<VALUE>(StringBuilder builder, List<VALUE> list)
+        {
+            // If the list doesn't have any content, then return immediately.
+            var count = list.Count;
+            if (count == 0)
+            {
+                builder.Append("{}");
+                return;
+            }
+
+            // Open Bracket for beginning of the List.
+            builder.Append('{');
+
+            // Export Fields
+            for (int i = 0; i < count; ++i)
+            {
+                // If this is NOT the first field, append a comma.
+                if (i > 0) builder.Append(',');
+
+                // Append the undetermined object's format to the builder.
+                ExportClean(builder, list[i]);
+            }
+
+            // Close Bracket for the end of the List.
+            builder.Append('}');
+        }
+
+        /// <summary>
+        /// Export the data to the builder in a clean, longhand format.
+        /// Standardized formatting without newlines applies here.
+        /// </summary>
+        /// <param name="data">The undetermined object data.</param>
+        /// <returns>A built string containing the information.</returns>
+        public static StringBuilder ExportClean(object data)
+        {
+            var builder = new StringBuilder();
+            ExportClean(builder, data);
+            return builder;
+        }
+
+        /// <summary>
+        /// Export the contents of the dictionary to the builder in a clean, longhand format.
+        /// Every field will be written. Standardized formatting without newlines applies here.
+        /// </summary>
+        /// <typeparam name="KEY">The key value type of the dictionary.</typeparam>
+        /// <typeparam name="VALUE">The value type of the dictionary.</typeparam>
+        /// <param name="data">The data dictionary.</param>
+        /// <returns>A built string containing the information.</returns>
+        public static StringBuilder ExportClean<KEY, VALUE>(Dictionary<KEY, VALUE> data)
+        {
+            var builder = new StringBuilder();
+            ExportClean(builder, data);
+            return builder;
+        }
+
+        /// <summary>
+        /// Export the contents of the list to the builder in a clean, longhand format.
+        /// Every element will be written. Standardized formatting without newlines applies here.
+        /// </summary>
+        /// <param name="list">The list of data.</param>
+        /// <returns>A built string containing the information.</returns>
+        public static StringBuilder ExportClean<T>(List<T> list)
+        {
+            var builder = new StringBuilder();
+            ExportClean(builder, list);
+            return builder;
         }
         #endregion
         #region Export (Raw)
