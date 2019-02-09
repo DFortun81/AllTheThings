@@ -6389,6 +6389,12 @@ local function CreateMiniListForGroup(group)
 									subSourceQuests[subsourceQuests] = true;
 								end
 							end
+							if found.g then
+								sourceQuest.g = {};
+								for i,subgroup in ipairs(found.g) do
+									table.insert(sourceQuest.g, setmetatable({ ['hideText'] = true }, { __index = subgroup }));
+								end
+							end
 						else
 							sourceQuest = nil;
 						end
