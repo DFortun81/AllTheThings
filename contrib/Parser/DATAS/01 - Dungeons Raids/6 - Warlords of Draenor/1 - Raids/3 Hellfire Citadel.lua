@@ -325,7 +325,7 @@ _.Instances =
 							i(124289),	-- Hand Loader Gauntlets
 							i(124335),	-- Blastproof Legguards
 							i(124298),	-- Iron Dragoon's Pantaloons
-							i(124320),	-- Shell Resistant Stompers
+							i(124320),	-- Shell-Resistant Stompers
 							i(124201),	-- Mar'tak's Rugged Seal
 							i(124190),	-- Sootstained Felsworn Signet
 							i(124231),	-- Flickering Felspark
@@ -339,7 +339,7 @@ _.Instances =
 							i(124213),	-- Voltage Regulation Diode
 							i(124174),	-- Pilot's Pauldrons
 							i(124145),	-- Ironthread Greatcloak
-							i(124315),	-- Stumped Felsteel Chestplate
+							i(124315),	-- Stamped Felsteel Chestplate
 							i(124351),	-- Hot-Rolled Iron Bracers
 							i(124253),	-- Insulated Wirer's Gloves
 							i(124309),	-- Torch-Brazed Waistguard
@@ -661,7 +661,7 @@ _.Instances =
 								i(124516),	-- Tome of Shifting Words
 							}),
 							un(2, i(127785)),	-- Crystallized Fel
-						}))
+						})),
 					}),
 					d(15, {		-- Heroic
 						n(-17, {	-- Quests
@@ -760,12 +760,12 @@ _.Instances =
 								i(124160),	-- Cowl of the Arcanic Conclave (Mage)
 								i(124332),	-- Demongaze Helm (Death Knight)
 								i(124263),	-- Felblade Hood (Rogue)
-								i(139627),	-- Ferroleather Hood (Demon Hunter)
 								i(124261),	-- Oathclaw Helm (Druid)
 							}),
 							i(124377),	-- Rune Infused Spear
 							i(124358),	-- Runeaxe of the Breaker
 							i(124363),	-- Runic Magnaron Tooth
+							i(139627),	-- Ferroleather Hood (Demon Hunter)
 							i(124341),	-- Fel-Inscribed Shoulderplates
 							i(124304),	-- Rugged Stoneshaped Pauldrons
 							i(124211),	-- Glowing Firestone
@@ -776,14 +776,14 @@ _.Instances =
 							i(124180),	-- Sludge-Soaked Waistband
 							i(124187),	-- Pit-Extracted Stone Signet
 							i(124239),	-- Imbued Stone Sigil
-							i(124235),	-- Rumbling Pebble													
+							i(124235),	-- Rumbling Pebble
 						})),
 						cr(92146, e(1432, {	-- Hellfire High Council (Gurtogg Bloodboil)
 							i(124388),	-- Fel-Burning Blade
 							i(124385),	-- Blazing Demonhilt Sword
 							i(124383),	-- Mindbender's Flameblade
 							i(124258),	-- Gurtogg's Discarded Hood
-							i(124271),	-- Blood-Tanned Pauldrons 
+							i(124271),	-- Blood-Tanned Pauldrons
 							i(124220),	-- Spiked Bloodstone Pendant
 							i(124142),	-- Rugged Bloodcaked Drape
 							i(124133),	-- Windswept Wanderer's Drape
@@ -1081,6 +1081,7 @@ _.Instances =
 							i(124350),	-- Girdle of Demonic Wrath
 							i(124252),	-- Jungle Assassin's Footpads
 							i(124288),	-- Unhallowed Voidlink Boots
+							i(118840),	-- Firecrystal Chain
 							un(40, i(127115, {	-- Tome of Chaos
 								["crs"] = {
 									95068,	-- Hellfire Assault
@@ -1157,13 +1158,12 @@ _.Instances =
 								i(124160),	-- Cowl of the Arcanic Conclave (Mage)
 								i(124332),	-- Demongaze Helm (Death Knight)
 								i(124263),	-- Felblade Hood (Rogue)
-								i(139627),	-- Ferroleather Hood (Demon Hunter)
 								i(124261),	-- Oathclaw Helm (Druid)
 							}),
 							i(124377),	-- Rune Infused Spear
 							i(124358),	-- Runeaxe of the Breaker
 							i(124363),	-- Runic Magnaron Tooth
-							i(139627),	-- FerroleatherHood
+							i(139627),	-- Ferroleather Hood (Demon Hunter)
 							i(124341),	-- Fel-Inscribed Shoulderplates
 							i(124304),	-- Rugged Stoneshaped Pauldrons
 							i(124211),	-- Glowing Firestone
@@ -1181,7 +1181,7 @@ _.Instances =
 							i(124385),	-- Blazing Demonhilt Sword
 							i(124383),	-- Mindbender's Flameblade
 							i(124258),	-- Gurtogg's Discarded Hood
-							i(124271),	-- Blood-Tanned Pauldrons 
+							i(124271),	-- Blood-Tanned Pauldrons
 							i(124220),	-- Spiked Bloodstone Pendant
 							i(124142),	-- Rugged Bloodcaked Drape
 							i(124133),	-- Windswept Wanderer's Drape
@@ -1400,8 +1400,8 @@ _.Instances =
 								i(124171),	-- Robe of the Arcanic Conclave (Mage)
 							}),
 							{	-- Fel Essence
-								["itemID"] = 128421,	-- Fel Essence [Heroic]
-								["questID"] = 39505,	-- The Fel Spire [Heroic]
+								["itemID"] = 128421,	-- Fel Essence [Mythic]
+								["questID"] = 39505,	-- The Fel Spire [Mythic]
 							},
 							i(124378),	-- Xu'tenash, Glaive of Ruin
 							i(124367),	-- Fang of the Pit
@@ -1409,8 +1409,7 @@ _.Instances =
 							i(124206),	-- Thumping Demonheart Fetish
 							i(124215),	-- Locket of Unholy Reconstitution
 							i(124135),	-- Cloak of Tangible Dread
-							i(124317),	-- Demongaze Chestplate (Death Knight)
-							i(139625),	-- Ferroleather Chestguard
+							i(139625),	-- Ferroleather Chestguard (Demon Hunter)
 							i(124314),	-- Bracers of Fel Empowerment
 							i(124349),	-- Annihilan's Waistplate
 							i(124266),	-- Empowered Demonskin Kilt
@@ -1455,7 +1454,7 @@ _.Instances =
 							}),
 							un(2, i(127785)),	-- Crystallized Fel
 						})),
-					})
+					}),
 				},
 				["isRaid"] = true,
 				["lvl"] = 100,
