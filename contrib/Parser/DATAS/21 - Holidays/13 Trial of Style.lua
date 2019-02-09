@@ -139,63 +139,22 @@ _.Holidays =
 						["classes"] = { 2, 1, 6 },
 					},
 				},
-				--[[n(54473, {	-- Warpweaver Dushar <Transmogrifier> (Horde / Orgrimmar)
-					["races"] = HORDE_ONLY,
-					["maps"] = { 85 },	-- Orgrimmar
-					["coord"] = { 58.0, 65.4 },
-					}),
-				}),
-				n(85289, {	-- Warpweaver Farshlah <Transmogrifier> (Horde / Frostwall)
-					["races"] = HORDE_ONLY,
-					["maps"] = { 590 },	-- Frostwall Garrison
-					["coords"] = {
-						{ 47.8, 31.6 },
-						{ 54.8, 36.6 },
-						{ 53.6, 42.6 },
-					},
-				}),
-				n(54442, {	-- Warpweaver Hashom <Transmogrifier> (Alliance / Stormwind)
-					["races"] = ALLIANCE_ONLY,
-					["maps"] = { 84 },	-- Stormwind City
-					["coord"] = { 50.72, 60.80 },
-					}),
-				}),
-				n(86395, {	-- Warpweaver Jasor <Transmogrifier> (Horde / Warspear)
-					["races"] = HORDE_ONLY,
-					["maps"] = { 624 },	-- Warspear
-					["coord"] = { 58.8, 52.6 },
-				}),
-				n(64573, {	-- Warpweaver Ramahesh <Transmogrifier> (Alliance / Shrine of Seven Stars)
-					["races"] = ALLIANCE_ONLY,
-					["maps"] = { 393 },	-- Shrine of Seven Stars
-					["coord"] = { 55.8, 84.4 },
-				}),
-				n(67014, {	-- Warpweaver Shafiee <Transmogrifier> (Horde / Shrine of Two Moons)
-					["races"] = HORDE_ONLY,
-					["maps"] = { 391 },	-- Shrine of Two Moons
-					["coord"] = { 59.8, 18.4 },
-				}),
-				n(85961, {	-- Warpweaver Shal <Transmogrifier> (Alliance / Stormshield)
-					["races"] = ALLIANCE_ONLY,
-					["maps"] = { 622 },	-- Stormshield
-					["coord"] = { 62.8, 35.6 },
-				}),
-				n(133196, {	-- Warpweaver Sle'shal <Token Exchange> (Inside Trial of Style)
-					["maps"] = { 777 },
-				}),
-				n(99867, {	-- Warpweaver Tuviss <Transmogrifier> (Neutral / Dalaran)
-					["maps"] = { 627 },	-- Dalaran
-					["coord"] = { 39.0, 41.2 },
-				}),
-				n(85291, {	-- Warpweaver Tuviss <Transmogrifier> (Alliance / Lunarfall)
-					["races"] = ALLIANCE_ONLY,
-					["maps"] = { 582 },	-- Lunarfall Garrison
-					["coords"] = {
-						{ 46.8, 59.4 },
-						{ 50.6, 57.4 },
-						{ 51.6, 63.2 },
-					},
-				}),]]--
+				["coords"] = {
+					{ 58.0, 65.4, 85 },		-- Warpweaver Dushar <Transmogrifier> (Horde / Orgrimmar)
+					{ 47.8, 31.6, 590 },	-- Warpweaver Farshlah <Transmogrifier> (Horde / Frostwall)
+					{ 54.8, 36.6, 590 },
+					{ 53.6, 42.6, 590 },
+					{ 50.72, 60.80, 84 },	-- Warpweaver Hashom <Transmogrifier> (Alliance / Stormwind)
+					{ 58.8, 52.6, 624 },	-- Warpweaver Jasor <Transmogrifier> (Horde / Warspear)
+					{ 55.8, 84.4, 393 },	-- Warpweaver Ramahesh <Transmogrifier> (Alliance / Shrine of Seven Stars)
+					{ 59.8, 18.4, 391 },	-- Warpweaver Shafiee <Transmogrifier> (Horde / Shrine of Two Moons)
+					{ 62.8, 35.6, 622 },	-- Warpweaver Shal <Transmogrifier> (Alliance / Stormshield)
+					{ 39.0, 41.2, 627 },	-- Warpweaver Tuviss <Transmogrifier> (Neutral / Dalaran)
+					{ 46.8, 59.4, 582 },	-- Warpweaver Tuviss <Transmogrifier> (Alliance / Lunarfall)
+					{ 50.6, 57.4, 582 },
+					{ 51.6, 63.2, 582 },
+					{ 0, 0, 777 },			-- Warpweaver Sle'shal <Token Exchange> (Inside Trial of Style)
+				},
 			}),
 		}),
 		["mapID"] = -777,
