@@ -1,7 +1,7 @@
 -- Archaeology - Skill ID 794 / Spell ID 158762
 profession(794, {	-- Archaeology
 	currency(829,  {	-- Arakkoa
-		n(-25, {	-- Pet Battles
+		n(-162, {	-- Pets
 			sp(172460, { i(117354) }),	-- Ancient Nest Guardian
 		}),
 		n(-319, {	-- Weapons
@@ -55,12 +55,12 @@ profession(794, {	-- Archaeology
 		n(-318, {	-- Armor
 			sp(172459, { i(116985) }),	-- Headdress of the First Shaman
 		}),
-		n(-25, {	-- Pet Battles
+		n(-162, {	-- Pets
 			sp(172466, { i(117380) }),	-- Frostwolf Ghostpup
 		}),
 	}),
 	currency(1535, {	-- Drust
-		n(-25, {	-- Pet Battles
+		n(-162, {	-- Pets
 			sp(273854, { i(161089) }),	-- Restored Revenant
 		}),
 		n(-161, {	-- Toys
@@ -72,7 +72,7 @@ profession(794, {	-- Archaeology
 		}),
 	}),
 	currency(384,  {	-- Dwarf
-		n(-25, {	-- Pet Battles
+		n(-162, {	-- Pets
 			sp(90521, { i(64372) }),	-- Clockwork Gnome
 		}),
 		n(-161, {	-- Toys
@@ -90,7 +90,7 @@ profession(794, {	-- Archaeology
 		n(-160, {	-- Mounts
 			sp(90619, { i(60954) }),	-- Fossilized Raptor
 		}),
-		n(-25, {	-- Pet Battles
+		n(-162, {	-- Pets
 			sp(89693, { i(60955) }),	-- Fossilized Hatchling
 			sp(98582, { i(69821) }),	-- Pterrordax Hatchling
 		}),
@@ -200,7 +200,7 @@ profession(794, {	-- Archaeology
 		n(-160, {	-- Mounts
 			sp(92148, { i(64883) }),	-- Scepter of Azj'Aqir
 		}),
-		n(-25, {	-- Pet Battles
+		n(-162, {	-- Pets
 			sp(92137, { i(60847) }),	-- Crawling Claw
 		}),
 		n(-161, {	-- Toys
@@ -212,7 +212,7 @@ profession(794, {	-- Archaeology
 		}),
 	}),
 	currency(385,  {	-- Troll
-		n(-25, {	-- Pet Battles
+		n(-162, {	-- Pets
 			sp(98588, { i(69824) }),	-- Voodoo Figurine
 		}),
 		n(-161, {	-- Toys
@@ -221,8 +221,8 @@ profession(794, {	-- Archaeology
 		n(-319, {	-- Weapons
 			sp(90608, { i(64377) }),	-- Zin'rokh, Destroyer of Worlds
 		}),
-		n(-494, {	-- Misc
-			sp(88262, { i(63115) }),	-- Zandalari Voodoo Doll
+		sp(88262, { 
+			i(63115),	-- Zandalari Voodoo Doll
 		}),
 	}),
 	currency(399,  {	-- Vrykul
@@ -234,13 +234,13 @@ profession(794, {	-- Archaeology
 		}),
 	}),
 	currency(1534, {	-- Zandalari
-		n(-25, {	-- Pet Battles
+		n(-162, {	-- Pets
 			sp(273817, { i(161080) }),	-- Intact Direhorn Egg
 		}),
 		n(-161, {	-- Toys
 			sp(273815, { i(160740) }),	-- Croak Crock
 		}),
-		n(-494, {	-- Misc
+		n(-386, {	-- Trinket
 			sp(273819, { i(160753) }),	-- Sanguinating Totem (Trinket)
 		}),
 		sp(273812, { -- Blowgun of the Sethra
