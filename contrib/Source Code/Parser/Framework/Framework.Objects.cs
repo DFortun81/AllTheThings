@@ -1482,6 +1482,8 @@ namespace Parser_V2
                     // Dictionary Data Type Fields (stored as Dictionary<string, object> for usability reasons)
                     case "sym":
                         {
+                            item[field] = value;
+                            /*
                             // Convert the data to a list of generic objects.
                             var newDict = value as Dictionary<object, object>;
                             if (newDict == null) return;
@@ -1501,6 +1503,7 @@ namespace Parser_V2
 
                             // Merge the new list of data into the old data and ensure there are no duplicate values.
                             foreach (var pair in newDict) oldDict[Convert.ToString(pair.Key)] = pair.Value;
+                            */
                             break;
                         }
 

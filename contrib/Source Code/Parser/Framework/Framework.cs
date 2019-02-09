@@ -210,12 +210,14 @@ namespace Parser_V2
                 // For Rings, Necklaces, and Trinkets - Ignore BoE filters
                 switch (filter)
                 {
+                    /*
                     case Objects.Filters.Ring:
                     case Objects.Filters.Trinket:
                     case Objects.Filters.Neck:
                     case Objects.Filters.Relic:
                         data.Remove("b");
                         break;
+                        */
                     case Objects.Filters.Consumable:
                         data.Remove("heirloomID");
                         break;
@@ -1028,6 +1030,7 @@ namespace Parser_V2
             else if (data is Dictionary<int, int> intintdict) Export(builder, intintdict);
             else if (data is Dictionary<long, int> longintdict) Export(builder, longintdict);
             else if (data is Dictionary<string, List<object>> listdict) Export(builder, listdict);
+            else if (data is List<List<object>> listObjects) Export(builder, listObjects);
             else
             {
                 // Default: Write it as a String. Best of luck.
@@ -1357,6 +1360,7 @@ namespace Parser_V2
             else if (data is Dictionary<int, int> intintdict) ExportClean(builder, intintdict);
             else if (data is Dictionary<long, int> longintdict) ExportClean(builder, longintdict);
             else if (data is Dictionary<string, List<object>> listdict) ExportClean(builder, listdict);
+            else if (data is List<List<object>> listOLists) ExportClean(builder, listOLists);
             else
             {
                 // Default: Write it as a String. Best of luck.
@@ -1524,6 +1528,7 @@ namespace Parser_V2
             else if (data is Dictionary<int, int> intintdict) ExportRaw(builder, intintdict, indent);
             else if (data is Dictionary<long, int> longintdict) ExportRaw(builder, longintdict, indent);
             else if (data is Dictionary<string, List<object>> listdict) ExportRaw(builder, listdict, indent);
+            else if (data is List<List<object>> listOLists) ExportRaw(builder, listOLists);
             else
             {
                 // Default: Write it as a String. Best of luck.
