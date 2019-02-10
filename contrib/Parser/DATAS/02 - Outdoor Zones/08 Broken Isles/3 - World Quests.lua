@@ -517,7 +517,8 @@ _.Zones =
 					}),
 					n(-385, { -- Finger
 						["groups"] = {
-							i(134367), -- Legionnaire's Band
+							i(134367),	-- Legionnaire's Band
+							i(134279),	-- Nightborne Signet Ring
 						},
 					}),
 					i(135511),	-- Thick Slab of Bacon. You get it for a split second after completing a bacon wq

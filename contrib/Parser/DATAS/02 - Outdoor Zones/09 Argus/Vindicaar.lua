@@ -1710,7 +1710,8 @@ _.Zones =
 									i(152753), -- Praetorium Guard's Sabatons
 								}),
 								i(153214, { -- Relinquished Ring
-									i(134367), -- Legionnaire's Band
+									i(134367),	-- Legionnaire's Band
+									i(134279),	-- Nightborne Signet Ring
 								}),
 								i(153216, { -- Relinquished Trinket
 									i(136714),	-- Amalgam's Seventh Spine
