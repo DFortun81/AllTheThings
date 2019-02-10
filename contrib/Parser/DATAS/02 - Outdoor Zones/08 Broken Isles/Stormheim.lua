@@ -1593,26 +1593,38 @@ _.Zones =
 						
 					}), 
 					n(94413, { 		-- Isel the Hammer
+						["coord"] = { 62.0, 60.6, 634 },
+						["questID"] = 39120,
 						["groups"] = {
-							i(129133),
+							{
+								["achievementID"] = 11263,	-- Adventurer of Stormheim
+								["criteriaID"] = 16,	-- Isel the Hammer
+							},
+							i(129133),	-- The Hammer's Head
 						},
-						["questID"] = 39120,	
-						
 					}), 
 					n(98421, { 		-- Kottr Vondyr
-						["groups"] = {	
-							i(138419),
+						["coord"] = { 73.6, 47.6, 634 },
+						["questID"] = 40109,
+						["groups"] = {
+							{
+								["achievementID"] = 11263,	-- Adventurer of Stormheim
+								["criteriaID"] = 20,	-- Kottr Vondyr
+							},
+							i(138419),	-- The Binder's Bonds
 						},
-						["questID"] = 40109,	
-							
 					}), 
 					n(93371, { 		-- Mordvigbjorn
-						["groups"] = {	
+						["coord"] = { 72.8, 49.6, 634 },
+						["questID"] = 38837,
+						["groups"] = {
+							{
+								["achievementID"] = 11263,	-- Adventurer of Stormheim
+								["criteriaID"] = 14,	-- Mordvigbjorn
+							},
 							i(133827),	-- Recipe: Bear Tartare [Rank 1]
 							i(129035),	-- Indomitable Bearskin Cloak
 						},
-						["questID"] = 38837,	
-							
 					}), 
 					n(110363, { 		-- Roteye
 						["groups"] = {	
@@ -1635,21 +1647,45 @@ _.Zones =
 						},
 						["questID"] = 38423,	
 							
-					}), 
+					}),
+					n(98268, { 		-- Tarben <Jarl of Tideskorn Harbor>
+						["coord"] = { 61.6, 43.4, 634 },
+						["questID"] = 40081,
+						["groups"] = {
+							{
+								["achievementID"] = 11263,	-- Adventurer of Stormheim
+								["criteriaID"] = 19,	-- Tarben
+							},
+							i(129199),	-- Tideskorn Jarl's Pendant
+						},
+					}),
 					n(91892, { 		-- Thane Irglov the Merciless
+						["questID"] = 38424,
 						["groups"] = {
 							i(129113)	-- Faintly Glowing Flagon of Mead
 						},
-						["questID"] = 38424,	
-						
 					}), 
 					n(92763, { 		-- The Nameless King
-						["groups"] = {	
-							i(129041),
+						["description"] = "Click on the offering shrine that spawns in front of the sign to summon The Nameless King.",
+						["coord"] = { 67.2, 39.8, 634 },
+						["questID"] = 38685,
+						["groups"] = {
+							{
+								["achievementID"] = 11263,	-- Adventurer of Stormheim
+								["criteriaID"] = 12,	-- The Nameless King
+							},
+							i(129041),	-- Aurora of the Nameless King
 						},
-						["questID"] = 38685,	
-						
-						["description"] = "|cff66ccffClick on the offering shrine that spawns in front of the sign to summon The Nameless King.|r",
+					}),
+					n(93166, { 		-- Tiptog the Lost
+						["coord"] = { 47.0, 49.4, 634 },
+						["groups"] = {
+							{
+								["achievementID"] = 11263,	-- Adventurer of Stormheim
+								["criteriaID"] = 13,	-- Lost Ettin
+							},
+							i(129163),	-- Lost Etin's Strength
+						},
 					}), 
 					n(93401, { 		-- Urgev the Flayer
 						["groups"] = {
@@ -1682,8 +1718,6 @@ _.Zones =
 				--	n(109318, { 	-- Runeseer Sigvid	}), 
 				--	n(109195, { 	-- Soulbinder Halldora	}), 
 				--	n(109994, { 	-- Stormtalon	}), 
-				--	n(98268, { 		-- Tarben	}), 
-				--	n(93166, { 		-- Tiptog the Lost	}), 
 				--	n(100223, { 	-- Vrykul Earthshaper Spirit	}), 
 				--	n(100224, { 	-- Vrykul Earthmaiden Spirit	}), 
 --]]

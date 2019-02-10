@@ -2472,6 +2472,7 @@ local function RefreshCollections()
 	StartCoroutine("RefreshingCollections", function()
 		while InCombatLockdown() do coroutine.yield(); end
 		app.print("Refreshing " .. app.DisplayName .. " collection status...");
+		app.events.QUEST_COMPLETE();
 		
 		-- Harvest Illusion Collections
 		local collectedIllusions = GetDataMember("CollectedIllusions", {});
