@@ -960,7 +960,12 @@ _.Zones =
 								i(129305),
 							}),
 						}),
-						q(39775),	-- Stormforged Grapple Launcher
+						{
+							["questID"] = 39775,	-- Stormforged Grapple Launcher
+							["itemID"] = 138111,	-- Stormforged Grapple Launcher
+							["creatureID"] = 107840,-- Stormforged Grapple Launcher
+							["description"] = "This item can be safely deleted and you'll still be able to interact with the hooks.",
+						},
 						crit(3, { -- The Trial of Might
 							qa( 38210),	-- The Ancient Trials
 							qh( 38459),	-- The Ancient Trials
