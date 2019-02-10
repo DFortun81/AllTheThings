@@ -512,6 +512,7 @@ _.Zones =
 						i(39412),
 						i(39444),
 						i(39464),
+						i(39481),	-- Signet of the Avenging Heart
 					}),
 					q(12556,  {  -- Rhino Mastery: The Kill
 						i(39333),

@@ -123,9 +123,13 @@ _.Holidays = bubbleDown({["u"] = 17},
 			}),
 		}),
 		n(-17, { -- Quests
-			q(8868, { -- Elune's Blessing
-				un(17, i(21540)), -- Elune's Lantern
-			}),
+			{
+				["qiestID"] = 8868,	-- Elune's Blessing
+				["qg"] = 15864,	-- Valadar Starsong <Coin of Ancestry Collector>
+				["groups"] = {
+					un(17, i(21540)), -- Elune's Lantern
+				},
+			},
 			{	-- Arp the Elder
 				["u"] = 17,	-- Lunar Festival
 				-- ["g"] = { i(21100), }, -- Coin of Ancestry
