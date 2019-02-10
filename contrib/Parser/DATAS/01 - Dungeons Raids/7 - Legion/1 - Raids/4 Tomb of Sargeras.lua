@@ -353,7 +353,8 @@ _.Instances =
 							i(147057),
 							i(147055),
 							i(146992),
-							i(146986)
+							i(146986),
+							i(147022),	-- Feverish Carapace
 						})),
 						cr(120996, e(1867, {	-- Demonic Inquisition (Atrigan)
 							i(147124),
@@ -396,7 +397,8 @@ _.Instances =
 							i(147189),
 							i(147141),
 							i(147153),
-							i(147045)
+							i(147045),
+							i(147100),	-- Calcified Barnacle
 						})),
 						cr(118523, e(1903, {	-- Sisters of the Moon (Huntress Kasparian)
 							i(147068),
@@ -465,7 +467,8 @@ _.Instances =
 							i(147187),
 							i(147139),
 							i(147151),
-							i(146993)
+							i(146993),
+							i(147194),	-- Band of Rescinded Truths
 --[[ Removed Beta
 		--					i(147074), 
 		--					i(147036),
@@ -569,7 +572,8 @@ _.Instances =
 							i(147057),
 							i(147055),
 							i(146992),
-							i(146986)
+							i(146986),
+							i(147022),	-- Feverish Carapace
 						})),
 						cr(120996, e(1867, {	-- Demonic Inquisition (Atrigan)
 							i(147124),
@@ -612,7 +616,8 @@ _.Instances =
 							i(147189),
 							i(147141),
 							i(147153),
-							i(147045)
+							i(147045),
+							i(147100),	-- Calcified Barnacle
 						})),
 						cr(118523, e(1903, {	-- Sisters of the Moon (Huntress Kasparian)
 							i(147068),
@@ -681,7 +686,8 @@ _.Instances =
 							i(147187),
 							i(147139),
 							i(147151),
-							i(146993)
+							i(146993),
+							i(147194),	-- Band of Rescinded Truths
 --[[Removed Beta
 		--					i(147074),
 		--					i(147036),
@@ -777,7 +783,7 @@ _.Instances =
 							i(147064),
 						}),
 						cr(115844, e(1862, {	-- Goroth
-							i(147069),
+							i(147069),	-- Shoulderplates of Crackling Flame
 							i(146984),
 							i(147065),
 							i(147027),
@@ -785,7 +791,8 @@ _.Instances =
 							i(147057),
 							i(147055),
 							i(146992),
-							i(146986)
+							i(146986),
+							i(147022),	-- Feverish Carapace
 						})),
 						cr(120996, e(1867, {	-- Demonic Inquisition (Atrigan)
 							i(147124),
@@ -828,7 +835,8 @@ _.Instances =
 							i(147189),
 							i(147141),
 							i(147153),
-							i(147045)
+							i(147045),
+							i(147100),	-- Calcified Barnacle
 						})),
 						cr(118523, e(1903, {	-- Sisters of the Moon (Huntress Kasparian)
 							i(147068),
@@ -897,7 +905,8 @@ _.Instances =
 							i(147187),
 							i(147139),
 							i(147151),
-							i(146993)
+							i(146993),
+							i(147194),	-- Band of Rescinded Truths
 --[[Removed Beta
 		--					i(147074),
 		--					i(147036),
