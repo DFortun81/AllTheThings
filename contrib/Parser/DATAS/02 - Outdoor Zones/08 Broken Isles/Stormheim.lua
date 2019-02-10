@@ -1471,18 +1471,26 @@ _.Zones =
 				}),
 				n(-16, { 	-- Rares
 					n(91874, { 		-- Bladesquall
+						["questID"] = 38431,
 						["groups"] = {	
 							i(129048),
 						},
-						["questID"] = 38431,	
-							
+					}), 
+					n(92599, { 		-- Bloodstalker Alpha
+						["coord"] = { 38.8, 38.8, 634 },
+						["groups"] = {
+							{
+								["achievementID"] = 11263,	-- Adventurer of Stormheim
+								["criteriaID"] = 8,	-- Worg Pack
+							},
+							i(129101),	-- Alpha's Paw
+						},
 					}), 
 					n(92685, { 		-- Captain Brvet
+						["questID"] = 38642,
 						["groups"] = {
 							i(129123),
 						},
-						["questID"] = 38642,	
-						
 					}), 
 					nh(92343, { 	-- Captain Tomas (Mother Clacker)
 						["groups"] = {
@@ -1659,7 +1667,6 @@ _.Zones =
 					}),
 --[[
 				--	n(108885, { 	-- Aegir Wavecrusher	}), 
-				--	n(92599, { 		-- Bloodstalker Alpha }), 
 				--	n(109113, { 	-- Boulderfall, the Eroded	}), 
 				--	n(111463, { 	-- Bulvinkel	}),
 				--	n(108790, { 	-- Den Mother Ylva	}), 

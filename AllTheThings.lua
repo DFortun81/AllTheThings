@@ -10671,6 +10671,7 @@ app.events.PLAYER_LOGIN = function()
 		wipe(DirtyQuests);
 		app:RegisterEvent("QUEST_LOG_UPDATE");
 		app:RegisterEvent("QUEST_COMPLETE");
+		app:RegisterEvent("QUEST_TURNED_IN");
 		RefreshSaves();
 		
 		app.CacheFlightPathData();
@@ -10776,7 +10777,11 @@ app.events.QUEST_COMPLETE = function()
 	end
 	wipe(DirtyQuests);
 end
-app.events.QUEST_LOG_UPDATE = app.events.QUEST_COMPLETE;
+app.events.QUEST_TURNED_IN = app.events.QUEST_COMPLETE;
+app.events.QUEST_LOG_UPDATE = function()
+	app.events.QUEST_COMPLETE();
+	app:UnregisterEvent("QUEST_LOG_UPDATE");
+end
 app.events.TOYS_UPDATED = function(itemID, new)
 	if itemID and not GetDataSubMember("CollectedToys", itemID) then
 		SetDataSubMember("CollectedToys", itemID, true);
