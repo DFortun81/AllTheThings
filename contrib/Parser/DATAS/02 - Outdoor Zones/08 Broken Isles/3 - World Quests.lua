@@ -519,6 +519,7 @@ _.Zones =
 						["groups"] = {
 							i(134367),	-- Legionnaire's Band
 							i(134279),	-- Nightborne Signet Ring
+							i(121799),	-- Tel'anor Magister's Ring
 						},
 					}),
 					i(135511),	-- Thick Slab of Bacon. You get it for a split second after completing a bacon wq
