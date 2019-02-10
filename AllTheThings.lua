@@ -2472,7 +2472,7 @@ local function RefreshCollections()
 	StartCoroutine("RefreshingCollections", function()
 		while InCombatLockdown() do coroutine.yield(); end
 		app.print("Refreshing " .. app.DisplayName .. " collection status...");
-		app.events.QUEST_COMPLETE();
+		app.events.QUEST_LOG_UPDATE();
 		
 		-- Harvest Illusion Collections
 		local collectedIllusions = GetDataMember("CollectedIllusions", {});
@@ -4661,7 +4661,7 @@ frame:SetScript("OnEvent", function(self, e, ...)
 	end
 end);
 frame:RegisterEvent("PLAYER_LOGIN");
-frame:RegisterEvent("QUEST_COMPLETE");
+frame:RegisterEvent("QUEST_TURNED_IN");
 frame:RegisterEvent("QUEST_LOG_UPDATE");
 app.BaseMusicRoll = {
 	__index = function(t, key)
@@ -10671,7 +10671,6 @@ app.events.PLAYER_LOGIN = function()
 		GetQuestsCompleted(CompletedQuests);
 		wipe(DirtyQuests);
 		app:RegisterEvent("QUEST_LOG_UPDATE");
-		app:RegisterEvent("QUEST_COMPLETE");
 		app:RegisterEvent("QUEST_TURNED_IN");
 		RefreshSaves();
 		
@@ -10771,13 +10770,6 @@ app.events.COMPANION_UNLEARNED = function(...)
 	--print("COMPANION_UNLEARNED", ...);
 	RefreshMountCollection();
 end
-app.events.QUEST_COMPLETE = function()
-	GetQuestsCompleted(CompletedQuests);
-	for questID,completed in pairs(DirtyQuests) do
-		app.QuestCompletionHelper(tonumber(questID));
-	end
-	wipe(DirtyQuests);
-end
 app.events.QUEST_TURNED_IN = function(questID)
 	GetQuestsCompleted(CompletedQuests);
 	CompletedQuests[questID] = true;
@@ -10787,7 +10779,11 @@ app.events.QUEST_TURNED_IN = function(questID)
 	wipe(DirtyQuests);
 end
 app.events.QUEST_LOG_UPDATE = function()
-	app.events.QUEST_COMPLETE();
+	GetQuestsCompleted(CompletedQuests);
+	for questID,completed in pairs(DirtyQuests) do
+		app.QuestCompletionHelper(tonumber(questID));
+	end
+	wipe(DirtyQuests);
 	app:UnregisterEvent("QUEST_LOG_UPDATE");
 end
 app.events.TOYS_UPDATED = function(itemID, new)
