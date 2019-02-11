@@ -174,37 +174,47 @@ _.ExpansionFeatures =
 --]]				
 			n(-2, { 	-- Vendor
 				nh(48531, {	-- Pogg
-					i(65356), 	-- Mount Drake of the West Wind
-					i(64999), 	-- Mount Spectral Wolf
-					i(90898),	-- Pet Fox Kit
-					i(64996), 	-- Pet Rustberg Gull
-					i(64997), 	-- Toy Tol Barad Searchlight
-					i(62454), 	-- Blade of the Fearless
-					i(62456), 	-- Dagger of Restless Nights
-					i(68740),	-- Darkheart Hacker
-					i(63378), 	-- Hellscream's Reach Tabard
-					i(62458), 	-- Insidious Staff
-					i(62457), 	-- Ravening Slicer
-					i(62459), 	-- Shimmering Morningstar
-					i(62460), 	-- Sky Piercer
-					i(62455), 	-- Spear of Trailing Shadows
-					i(63518),	--	Hellscream's Reach Commendation
+					{	-- Tol Barad Commendation
+						["currencyID"] = 391,	-- Tol Barad Commendation
+						["g"] = {
+							i(65356), 	-- Drake of the West Wind (MOUNT!)
+							i(64999), 	-- Spectral Wolf (MOUNT!)
+							i(90898),	-- Fox Kit (PET!)
+							i(64996), 	-- Rustberg Gull (PET!)
+							i(64997), 	-- Tol Barad Searchlight (TOY!)
+							i(62454), 	-- Blade of the Fearless
+							i(62456), 	-- Dagger of Restless Nights
+							i(68740),	-- Darkheart Hacker
+							i(63378), 	-- Hellscream's Reach Tabard
+							i(62458), 	-- Insidious Staff
+							i(62457), 	-- Ravening Slicer
+							i(62459), 	-- Shimmering Morningstar
+							i(62460), 	-- Sky Piercer
+							i(62455), 	-- Spear of Trailing Shadows
+							i(63518),	-- Hellscream's Reach Commendation
+						},
+					},
 				}),
 				na(47328, {	-- Quartermaster Brazie
-					i(63039),	-- Mount Drake of the West Wind
-					i(64998),	-- Mount Spectral Steed
-					i(90897),	-- Pet Fox Kit
-					i(63355),	-- Pet Rustberg Gull
-					i(63141),	-- Toy Tol Barad Searchlight
-					i(63379),	-- Baradin"s Warden's Tabard
-					i(62473),	-- Blade of the Fearless
-					i(62475),	-- Dagger of Restless Nights
-					i(68739),	-- Darkheart Hacker
-					i(62477),	-- Insidious Staff
-					i(62476),	-- Ravening Slicer
-					i(62478),	-- Shimmering Morningstar
-					i(62479),	-- Sky Piercer
-					i(62474),	-- Spear of Trailing Shadows
+					{	-- Tol Barad Commendation
+						["currencyID"] = 391,	-- Tol Barad Commendation
+						["g"] = {
+							i(63039),	-- Drake of the West Wind (MOUNT!)
+							i(64998),	-- Spectral Steed (MOUNT!)
+							i(90897),	-- Fox Kit (PET!)
+							i(63355),	-- Rustberg Gull (PET!)
+							i(63141),	-- Tol Barad Searchlight (TOY!)
+							i(63379),	-- Baradin's Warden's Tabard
+							i(62473),	-- Blade of the Fearless
+							i(62475),	-- Dagger of Restless Nights
+							i(68739),	-- Darkheart Hacker
+							i(62477),	-- Insidious Staff
+							i(62476),	-- Ravening Slicer
+							i(62478),	-- Shimmering Morningstar
+							i(62479),	-- Sky Piercer
+							i(62474),	-- Spear of Trailing Shadows
+						},
+					},
 				}),
 			}),
 			m(244, { 	-- Tol Barad 
