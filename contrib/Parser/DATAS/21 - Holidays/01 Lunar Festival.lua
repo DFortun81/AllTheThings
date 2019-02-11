@@ -1553,6 +1553,10 @@ _.Holidays = bubbleDown({["u"] = 17},
 					},
 				}),
 			}),
+			un(17, i(21746, {	-- Lucky Red Envelope
+				un(17, i(21745)),	-- Elder's Moonstone
+				un(17, i(21744)),	-- Lucky Rocket Cluster
+			})),
 		},
 	}),
 });
