@@ -1489,22 +1489,22 @@ _.Holidays = bubbleDown({["u"] = 17},
 							un(17, i(44916)),	-- Pattern: Festival Dress
 							un(7, i(21723)),	-- Pattern: Festival Suit (old version)
 							un(17, i(44917)),	-- Pattern: Festival Suit
-							un(17, i(21740, {  -- Small Rocket Recipes
+							un(17, i(21740, {	-- Small Rocket Recipes
 								un(17, i(21726)),  -- Schematic: Small Red Rocket
 								un(17, i(21724)),  -- Schematic: Small Blue Rocket
 								un(17, i(21725)),  -- Schematic: Small Green Rocket
 							})),
-							un(17, i(21742, {  -- Large Rocket Recipes
+							un(17, i(21742, {	-- Large Rocket Recipes
 								un(17, i(21729)),  -- Schematic: Large Red Rocket
 								un(17, i(21728)),  -- Schematic: Large Green Rocket
 								un(17, i(21727)),  -- Schematic: Large Blue Rocket
 							})),
-							un(17, i(21741, {  -- Cluster Rocket Recipes
+							un(17, i(21741, {	-- Cluster Rocket Recipes
 								un(17, i(21732)),  -- Schematic: Red Rocket Cluster
 								un(17, i(21730)),  -- Schematic: Blue Rocket Cluster
 								un(17, i(21731)),  -- Schematic: Green Rocket Cluster
 							})),
-							un(17, i(21743, {  -- Large Cluster Rocket Recipes
+							un(17, i(21743, {	-- Large Cluster Rocket Recipes
 								un(17, i(21735)),  -- Schematic: Large Red Rocket Cluster
 								un(17, i(21733)),  -- Schematic: Large Blue Rocket Cluster
 								un(17, i(21734)),  -- Schematic: Large Green Rocket Cluster
@@ -1541,12 +1541,15 @@ _.Holidays = bubbleDown({["u"] = 17},
 							un(17, i(21541)),	-- Festive Black Pant Suit
 							un(17, i(21544)),	-- Festive Blue Pant Suit
 							un(17, i(21543)),	-- Festive Teal Pant Suit
-							un(17, i(151355)), -- Crown of Courage
-							un(17, i(151354)), -- Crown of Prosperity
-							un(17, i(151353)), -- Crown of Dark Blossoms
-							un(17, i(151352)), -- Crown of Good Fortune
-							
+							un(17, i(151355)),	-- Crown of Courage
+							un(17, i(151354)),	-- Crown of Prosperity
+							un(17, i(151353)),	-- Crown of Dark Blossoms
+							un(17, i(151352)),	-- Crown of Good Fortune
+							un(17, i(21537)),	-- Festival Dumplings
+							un(17, i(21640)),	-- Lunar Festival Fireworks Pack
+							un(17, i(116172)),	-- Perky Blaster
 						})),
+						un(17, i(21713)),	-- Elune's Candle
 					},
 				}),
 			}),
