@@ -7,7 +7,7 @@ _.GearSets =
 		n(-4190, {
 			["description"] = "These items were available during Burning Crusade as Level 70 Pre-Season 1 rewards in Netherstorm. They cannot be transmogged, not even if you were a High Warlord or Grand Marshall. Replica items were introduced in their place.",
 			["u"] = 2,	-- Removed from Game
-			["groups"] = bubbleDown({["u"] = 2, ["ignoreSource"] = 1}, {
+			["groups"] = bubbleDown({["u"] = 2 }, {
 				n(-319, {	-- Weapons
 					i(28940),	-- Grand Marshal's Barricade
 					i(28941),	-- Grand Marshal's Battletome
