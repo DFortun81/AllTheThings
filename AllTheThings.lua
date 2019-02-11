@@ -6364,39 +6364,39 @@ local function CreateMiniListForGroup(group)
 		local sourceSets = GetDataMember("SourceSets", {});
 		local GetVariantSets = C_TransmogSets.GetVariantSets;
 		local GetAllSourceIDs = C_TransmogSets.GetAllSourceIDs;
-		for i,set in ipairs(C_TransmogSets.GetAllSets()) do
-			local sources = GetAllSourceIDs(set.setID);
-			allSets[set.setID] = sources;
+		for i,data in ipairs(C_TransmogSets.GetAllSets()) do
+			local sources = GetAllSourceIDs(data.setID);
+			if #sources > 0 then allSets[data.setID] = sources; end
 			for j,sourceID in ipairs(sources) do
 				local s = sourceSets[sourceID];
 				if not s then
 					s = {};
 					sourceSets[sourceID] = s;
 				end
-				s[set.setID] = 1;
+				s[data.setID] = 1;
 			end
-			local variants = GetVariantSets(set.setID);
+			local variants = GetVariantSets(data.setID);
 			if type(variants) == "table" then
-				for j,variantSet in ipairs(variants) do
-					local sources = GetAllSourceIDs(variantSet.setID);
-					allSets[variantSet.setID] = sources;
+				for j,data in ipairs(variants) do
+					local sources = GetAllSourceIDs(data.setID);
+					if #sources > 0 then allSets[data.setID] = sources; end
 					for k, sourceID in ipairs(sources) do
 						local s = sourceSets[sourceID];
 						if not s then
 							s = {};
 							sourceSets[sourceID] = s;
 						end
-						s[variantSet.setID] = 1;
+						s[data.setID] = 1;
 					end
 				end
 			end
 		end
-		local sets = sourceSets[group.s];
-		if sets then
-			for setID,value in pairs(sets) do
+		local data = sourceSets[group.s];
+		if data then
+			for setID,value in pairs(data) do
 				local g = {};
 				setID = tonumber(setID);
-				for j,sourceID in ipairs(allSets[setID]) do
+				for i,sourceID in ipairs(allSets[setID]) do
 					local attSearch = SearchForSourceIDQuickly(sourceID);
 					if attSearch then
 						tinsert(g, setmetatable({ ["collectible"] = true, ['hideText'] = true }, { __index = attSearch })); 
