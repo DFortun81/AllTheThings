@@ -26,7 +26,7 @@ _.PVP =
 				h(faction(510, {
 					["groups"] = {
 						ach(710), 	-- The Defiler
-						nh(15126, {	-- Rutherford Twing
+						n(15126, {	-- Rutherford Twing
 							["itemID"] = 137642,	-- Mark of Honor
 							["groups"] = {
 								i(20176),	-- Defiler's Epaulets
@@ -108,7 +108,7 @@ _.PVP =
 				a(faction(509, {
 					["groups"] = {
 						ach(711), 	-- Knight of Arathor
-						na(15127, {	-- Samual Hawke
+						n(15127, {	-- Samual Hawke
 							["itemID"] = 137642,	-- Mark of Honor
 							["groups"] = {
 								i(20061),	-- Highlander's Epaulets
