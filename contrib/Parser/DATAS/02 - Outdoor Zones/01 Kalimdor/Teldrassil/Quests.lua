@@ -72,6 +72,7 @@ _.Zones =
 						["questID"] = 14039,
 						["qg"] = 3515,	-- Corithras Moonrage
 						["coord"] = { 41.0, 45.5 },
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 935,	-- The Waters of Teldrassil
 					},
 					{	-- Jaina's Resolution

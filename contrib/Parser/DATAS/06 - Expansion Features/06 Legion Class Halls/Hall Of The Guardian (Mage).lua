@@ -39,30 +39,24 @@ _.ExpansionFeatures =
 								["description"] = "If this quest has a checkmark next to it, then that means that you have polymorphed this npc already and can move on to the next one!\n\nTake the Val'Sharah Teleportation Nexus.",
 								["questID"] = 43790,
 							}),
+							n(-159, { -- Daily Event Roll
+								["isDaily"] = true,
+								["qg"] = 111704,	-- Cote "Shepherd" Metcalf
+								["questID"] = 43828,	-- "Sheep Summon Daily Roll" on WoWHead
+								["description"] = "If the event roll was successful, you'll see an emote from Cote \"Shepherd\" Metcalf saying \"Success!\".\n\nYou should find a Volatile Sheep on the stairs at the entrance to the class hall. Spam click it.\n\nIf this quest has a checkmark next to it and you didn't see Cote's dialogue emote, then that means that you should come back tomorrow.",
+								["icon"] = "Interface\\Icons\\INV_Staff_2h_SheepStick_D_01",
+								["sourceQuests"] = {
+									43787,	-- Cliffwing Hippogryph [Azsuna]
+									43791,	-- Heartwood Doe [Suramar]
+									43788,	-- Highpeak Goat [Highmountain]
+									43789,	-- Plains Runehorn Calf [Stormheim]
+									43790,	-- Wild Dreamrunner [Val'Sharah]
+								},
+							}),
 							n(111107, {	-- Volatile Sheep
 								["description"] = "The next step is pure RNG - when you teleport to your class order hall you have (once a day) chance to trigger a spawn of Volatile Sheep. If it does spawn for you, you will see Cote's dialogue box saying 'Success!' - the sheep will be standing just next to Dalaran portal, all you have to do is to right-click it couple times to make it explode. After you do you'll get another speech box, this time Extemely Volatile Stormheim Sheep bleating '...' - for some reason you can see someone else's sheep dialogue box, so if you see that one in Hall of the guardian without doing previous mob sheeping, means someone just made their sheep explode in the class hall :) As I said this step is pure luck, so it may take some time until you get your sheep to spawn (for me it was around 3 weeks).",
 								["questID"] = 43799,	-- Extremely Volatile Stormheim Sheep: "..." [Volatile Sheep]
 								["sourceQuests"] = { 43828 },	-- Sheep Summon Daily Roll
-								["groups"] = {
-									n(-159, { -- Daily Event Roll
-										["isDaily"] = true,
-										["questID"] = 43828,	-- "Sheep Summon Daily Roll" on WoWHead
-										["description"] = "If this quest has a checkmark next to it and you didn't see Cote's dialogue emote, then that means that you should come back tomorrow.",
-										["icon"] = "Interface\\Icons\\INV_Staff_2h_SheepStick_D_01",
-										["sourceQuests"] = {
-											43787,	-- Cliffwing Hippogryph [Azsuna]
-											43791,	-- Heartwood Doe [Suramar]
-											43788,	-- Highpeak Goat [Highmountain]
-											43789,	-- Plains Runehorn Calf [Stormheim]
-											43790,	-- Wild Dreamrunner [Val'Sharah]
-										},
-									}),
-									n(111704, {	-- Cote "Shepherd" Metcalf
-										["description"] = "If the event roll was successful, you'll see an emote from Cote \"Shepherd\" Metcalf saying \"Success!\".\n\nYou should find a Volatile Sheep on the stairs at the entrance to the class hall. Spam click it.",
-										["questID"] = 43828,	-- Cote "Shepherd" Metcalf says: Success!
-										["sourceQuests"] = { 43828 },	-- Sheep Summon Daily Roll
-									}),
-								},
 							}),
 							n(111691, {	-- Extremely Volatile Stormheim Sheep
 								["description"] = "After that you just need to go to Stormheim in search of Extremely Volatile Stormheim Sheep. This is usually spawning somewhere around Runewood - the best way to find it would be to make /target macro, go to Valdisdall and just run around Runewood spamming macro - it didn't take me even 2 minutes until I got my sheep. Just as the previous one, click it couple times to make it explode, which should result in getting an angry bleat '...' from Enraged Volatile Elwynn Sheep.",
