@@ -6314,7 +6314,7 @@ local function CreateMiniListForGroup(group)
 	-- Pop Out Functionality! :O
 	local popout = app:GetWindow((group.parent and group.parent.text or "") .. (group.text or ""));
 	if group.s then
-		popout.data = setmetatable({ ["g"] = {}, ["visible"] = true, ['hideText'] = true }, { __index = group });
+		popout.data = setmetatable({ ["g"] = {}, ["progress"] = 0, ["total"] = 0, ['hideText'] = true }, { __index = group });
 		
 		-- Attempt to get information about the source ID.
 		local sourceInfo = C_TransmogCollection_GetSourceInfo(group.s);
@@ -6328,7 +6328,7 @@ local function CreateMiniListForGroup(group)
 				if otherSourceID ~= group.s then
 					local attSearch = SearchForSourceIDQuickly(otherSourceID);
 					if attSearch then
-						tinsert(g, setmetatable({ ["visible"] = true, ["collectible"] = true, ["nmc"] = false, ["nmr"] = false, ['hideText'] = true }, { __index = attSearch })); 
+						tinsert(g, setmetatable({ ["collectible"] = true, ['hideText'] = true }, { __index = attSearch })); 
 					else
 						local otherSourceInfo = C_TransmogCollection_GetSourceInfo(otherSourceID);
 						if otherSourceInfo then
@@ -6337,7 +6337,6 @@ local function CreateMiniListForGroup(group)
 								SetDataSubMember("CollectedSources", otherSourceID, 1);
 								newItem.collected = true;
 							end
-							newItem.description = "|CFFFF0000This sourceID was not found in the ATT database. It might be invalid.|r";
 							tinsert(g, newItem);
 						end
 					end
@@ -6348,8 +6347,6 @@ local function CreateMiniListForGroup(group)
 					["text"] = "Shared Appearances",
 					["description"] = "The items in this list are shared appearances for the above item. In Unique Appearance Mode, this list can help you understand why or why not a specific item would be marked Collected.",
 					["icon"] = "Interface\\Icons\\Achievement_GarrisonFollower_ItemLevel650.blp",
-					["visible"] = true,
-					["expanded"] = true,
 					["g"] = g
 				});
 			else
@@ -6357,7 +6354,6 @@ local function CreateMiniListForGroup(group)
 					["text"] = "Unique Appearance",
 					["description"] = "This item has a Unique Appearance. You must collect this item specifically to earn the appearance.",
 					["icon"] = "Interface\\Icons\\ACHIEVEMENT_GUILDPERK_EVERYONES A HERO.blp",
-					["visible"] = true,
 					["collectible"] = true,
 				}, { __index = group }));
 			end
@@ -6403,7 +6399,7 @@ local function CreateMiniListForGroup(group)
 				for j,sourceID in ipairs(allSets[setID]) do
 					local attSearch = SearchForSourceIDQuickly(sourceID);
 					if attSearch then
-						tinsert(g, setmetatable({ ["visible"] = true, ["collectible"] = true, ["nmc"] = false, ["nmr"] = false, ['hideText'] = true }, { __index = attSearch })); 
+						tinsert(g, setmetatable({ ["collectible"] = true, ['hideText'] = true }, { __index = attSearch })); 
 					else
 						local otherSourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
 						if otherSourceInfo then
@@ -6412,20 +6408,33 @@ local function CreateMiniListForGroup(group)
 								SetDataSubMember("CollectedSources", sourceID, 1);
 								newItem.collected = true;
 							end
-							newItem.description = "|CFFFF0000This sourceID was not found in the ATT database. It might be invalid.|r";
 							tinsert(g, newItem);
 						end
 					end
 				end
-				table.insert(popout.data.g, app.CreateGearSet(setID, {
-					["visible"] = true,
-					["g"] = g,
-				}));
+				table.insert(popout.data.g, app.CreateGearSet(setID, { ["visible"] = true, ["g"] = g }));
 			end
 		end
 		
 		BuildGroups(popout.data, popout.data.g);
 		UpdateGroups(popout.data, popout.data.g);
+		local oldUpdate = popout.Update;
+		popout.Update = function(self)
+			-- Turn off all filters momentarily.
+			local GroupFilter = app.GroupFilter;
+			local GroupVisibilityFilter = app.GroupVisibilityFilter;
+			local CollectedItemVisibilityFilter = app.CollectedItemVisibilityFilter;
+			local CollectedItemVisibilityFilter = app.CollectedItemVisibilityFilter;
+			app.GroupFilter = app.NoFilter;
+			app.GroupVisibilityFilter = app.NoFilter;
+			app.CollectedItemVisibilityFilter = app.NoFilter;
+			app.CollectedItemVisibilityFilter = app.NoFilter;
+			oldUpdate(self);
+			app.GroupFilter = GroupFilter;
+			app.GroupVisibilityFilter = GroupVisibilityFilter;
+			app.CollectedItemVisibilityFilter = CollectedItemVisibilityFilter;
+			app.CollectedItemVisibilityFilter = CollectedItemVisibilityFilter;
+		end;
 	elseif group.questID or group.sourceQuests then
 		-- This is a quest object. Let's show prereqs and breadcrumbs.
 		local mainQuest = setmetatable({ ['collectible'] = true, ['hideText'] = true }, { __index = group });
