@@ -4206,16 +4206,23 @@ app.BaseGearSet = {
 			local info = t.info;
 			if info then return info.requiredFaction; end
 		elseif key == "icon" then
-			local sources = C_TransmogSets.GetSetSources(t.setID);
-			for sourceID, value in pairs(sources) do
-				local sourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
-				if sourceInfo and sourceInfo.invType == 2 then
-					local icon = select(5, GetItemInfoInstant(sourceInfo.itemID));
-					if icon then rawset(t, "icon", icon); end
-					return icon;
+			if t.sources then
+				for sourceID, value in pairs(t.sources) do
+					local sourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
+					if sourceInfo and sourceInfo.invType == 2 then
+						local icon = select(5, GetItemInfoInstant(sourceInfo.itemID));
+						if icon then rawset(t, "icon", icon); end
+						return icon;
+					end
 				end
 			end
 			return QUESTION_MARK_ICON;
+		elseif key == "sources" then
+			local sources = C_TransmogSets.GetSetSources(t.setID);
+			if sources then
+				rawset(t, "sources", sources);
+				return sources;
+			end
 		elseif key == "header" then
 			local info = t.info;
 			if info then return info.label; end
@@ -6307,43 +6314,118 @@ local function CreateMiniListForGroup(group)
 	-- Pop Out Functionality! :O
 	local popout = app:GetWindow((group.parent and group.parent.text or "") .. (group.text or ""));
 	if group.s then
-		-- This is an item that has an appearance
-		local mainItem = setmetatable({ ["g"] = {}, ['hideText'] = true }, { __index = group });
+		popout.data = setmetatable({ ["g"] = {}, ["visible"] = true, ['hideText'] = true }, { __index = group });
+		
+		-- Attempt to get information about the source ID.
 		local sourceInfo = C_TransmogCollection_GetSourceInfo(group.s);
 		if sourceInfo then
+			-- Show a list of all of the Shared Appearances.
+			local g = {};
+			
 			-- Go through all of the shared appearances and see if we're "unlocked" any of them.
 			for i, otherSourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
 				-- If this isn't the source we already did work on and we haven't already completed it
 				if otherSourceID ~= group.s then
 					local attSearch = SearchForSourceIDQuickly(otherSourceID);
 					if attSearch then
-						tinsert(mainItem.g, setmetatable({ ['hideText'] = true }, { __index = attSearch })); 
+						tinsert(g, setmetatable({ ["visible"] = true, ["collectible"] = true, ["nmc"] = false, ["nmr"] = false, ['hideText'] = true }, { __index = attSearch })); 
 					else
 						local otherSourceInfo = C_TransmogCollection_GetSourceInfo(otherSourceID);
 						if otherSourceInfo then
-							local newItem = app.CreateItem(otherSourceInfo.itemID);
+							local newItem = app.CreateItemSource(otherSourceID, otherSourceInfo.itemID);
 							if otherSourceInfo.isCollected then
 								SetDataSubMember("CollectedSources", otherSourceID, 1);
 								newItem.collected = true;
 							end
-							newItem.s = otherSource;
 							newItem.description = "|CFFFF0000This sourceID was not found in the ATT database. It might be invalid.|r";
-							tinsert(mainItem.g, newItem);
+							tinsert(g, newItem);
 						end
 					end
 				end
 			end
+			if #g > 0 then
+				table.insert(popout.data.g, {
+					["text"] = "Shared Appearances",
+					["description"] = "The items in this list are shared appearances for the above item. In Unique Appearance Mode, this list can help you understand why or why not a specific item would be marked Collected.",
+					["icon"] = "Interface\\Icons\\Achievement_GarrisonFollower_ItemLevel650.blp",
+					["visible"] = true,
+					["expanded"] = true,
+					["g"] = g
+				});
+			else
+				table.insert(popout.data.g, setmetatable({
+					["text"] = "Unique Appearance",
+					["description"] = "This item has a Unique Appearance. You must collect this item specifically to earn the appearance.",
+					["icon"] = "Interface\\Icons\\ACHIEVEMENT_GUILDPERK_EVERYONES A HERO.blp",
+					["visible"] = true,
+					["collectible"] = true,
+				}, { __index = group }));
+			end
 		end
-		popout.data = {
-			["text"] = "Shared Appearances",
-			["description"] = "The items in this list are shared appearances for the following item. In Unique Appearance Mode, this list can help you understand why or why not a specific item would be marked Collected.",
-			["icon"] = "Interface\\Icons\\Achievement_GarrisonFollower_ItemLevel650.blp",
-			["visible"] = true,
-			["g"] = { mainItem }
-		};
+		
+		-- Determine if this source is part of a set or two.
+		local allSets = GetDataMember("Sets", {});
+		local sourceSets = GetDataMember("SourceSets", {});
+		local GetVariantSets = C_TransmogSets.GetVariantSets;
+		local GetAllSourceIDs = C_TransmogSets.GetAllSourceIDs;
+		for i,set in ipairs(C_TransmogSets.GetAllSets()) do
+			local sources = GetAllSourceIDs(set.setID);
+			allSets[set.setID] = sources;
+			for j,sourceID in ipairs(sources) do
+				local s = sourceSets[sourceID];
+				if not s then
+					s = {};
+					sourceSets[sourceID] = s;
+				end
+				s[set.setID] = 1;
+			end
+			local variants = GetVariantSets(set.setID);
+			if type(variants) == "table" then
+				for j,variantSet in ipairs(variants) do
+					local sources = GetAllSourceIDs(variantSet.setID);
+					allSets[variantSet.setID] = sources;
+					for k, sourceID in ipairs(sources) do
+						local s = sourceSets[sourceID];
+						if not s then
+							s = {};
+							sourceSets[sourceID] = s;
+						end
+						s[variantSet.setID] = 1;
+					end
+				end
+			end
+		end
+		local sets = sourceSets[group.s];
+		if sets then
+			for setID,value in pairs(sets) do
+				local g = {};
+				setID = tonumber(setID);
+				for j,sourceID in ipairs(allSets[setID]) do
+					local attSearch = SearchForSourceIDQuickly(sourceID);
+					if attSearch then
+						tinsert(g, setmetatable({ ["visible"] = true, ["collectible"] = true, ["nmc"] = false, ["nmr"] = false, ['hideText'] = true }, { __index = attSearch })); 
+					else
+						local otherSourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
+						if otherSourceInfo then
+							local newItem = app.CreateItemSource(sourceID, otherSourceInfo.itemID);
+							if otherSourceInfo.isCollected then
+								SetDataSubMember("CollectedSources", sourceID, 1);
+								newItem.collected = true;
+							end
+							newItem.description = "|CFFFF0000This sourceID was not found in the ATT database. It might be invalid.|r";
+							tinsert(g, newItem);
+						end
+					end
+				end
+				table.insert(popout.data.g, app.CreateGearSet(setID, {
+					["visible"] = true,
+					["g"] = g,
+				}));
+			end
+		end
+		
 		BuildGroups(popout.data, popout.data.g);
 		UpdateGroups(popout.data, popout.data.g);
-		mainItem.visible = true;
 	elseif group.questID or group.sourceQuests then
 		-- This is a quest object. Let's show prereqs and breadcrumbs.
 		local mainQuest = setmetatable({ ['collectible'] = true, ['hideText'] = true }, { __index = group });
@@ -6468,18 +6550,17 @@ local function CreateMiniListForGroup(group)
 		popout.data = setmetatable({ ['visible'] = true }, { __index = group });
 	else
 		-- This is a standalone item
-		local newItem = setmetatable({ ['visible'] = true, ['hideText'] = true }, { __index = group });
 		popout.data = {
 			["text"] = "Standalone Item",
 			["icon"] = "Interface\\Icons\\Achievement_Garrison_blueprint_medium.blp",
-			["g"] = { newItem },
+			["g"] = { setmetatable({ ['visible'] = true, ['hideText'] = true }, { __index = group }); },
 			["visible"] = true,
 			["progress"] = 0,
 			["total"] = 0,
 		};
 		BuildGroups(popout.data, popout.data.g);
 		UpdateGroups(popout.data, popout.data.g);
-		newItem.visible = true;
+		popout.data.visible = true;
 	end
 	AddTomTomWaypoint(popout.data, false);
 	if not popout.data.expanded then
