@@ -175,6 +175,9 @@ _.WorldDrops =
 					{	-- Immaculate Ring
 						["itemID"] = 82283,	-- Immaculate Ring
 					},
+					{	-- Jan-Ho's Unwavering Seal
+						["itemID"] = 90581,	-- Jan-Ho's Unwavering Seal
+					},
 					{	-- Perculia's Peculiar Signet
 						["itemID"] = 90584,	-- Perculia's Peculiar Signet
 					},
