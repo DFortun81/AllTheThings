@@ -1563,9 +1563,6 @@ m(516), -- Isle of Thunder (One of last initial scenaraio)
 m(892), -- Azuremyst Isle (Argus Opening)
 m(893), -- Azuremyst Isle (Argus Opening)
 
--- This map is used during the quest "Fel Annihilation" (43483) and is never revisited. Temporarily putting it here
-m(776),	-- Azuremyst Isle
-
 -- These maps are used in the Siege of Lordaeron
 m(998),	-- Undercity
 m(908),	-- Ruins of Lordaeron

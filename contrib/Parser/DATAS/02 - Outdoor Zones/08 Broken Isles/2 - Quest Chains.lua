@@ -199,7 +199,7 @@ _.Zones =
 								44257,	-- A Falling Star (paladin)
 							},
 							["description"] = "This quest sends you to a scenario involving The Exodar and Prophet Velen. Before you kill the final boss, make sure to do everything contained within!",
-							["maps"] = { 775 },	-- Scenario: In Defense of the Exodar
+							["maps"] = { 775, 776 },	-- Scenario: In Defense of the Exodar
 							["groups"] = {
 								{
 									["npcID"] = 110486,	-- Huk'roth the Huntmaster
@@ -221,6 +221,10 @@ _.Zones =
 										i(140603),	-- Nobundo's Earthshaper Kilt
 										i(140609),	-- Slippers of the Earthen Healer
 									}
+								},
+								{
+									["questID"] = 43483,	-- Fel Annihilation
+									["description"] = "This quest can only be completed during the \"In Defense of the Exodar\" scenario. This is an objective quest without a quest giver.",
 								},
 								i(140614),	-- Amice of Steadfast Allies
 								i(140616),	-- Annihilator's Mantle
