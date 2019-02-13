@@ -285,8 +285,9 @@ _.Zones =
 								},
 							},
 							{	-- Shan'ze Ritual Stone
+								["f"] = 999,	-- Event Item (so it doesn't filter out with Miscellaneous)
 								["itemID"] = 94221,		-- Shan'ze Ritual Stone
-								["description"] = "You will need 3 stones to summon these rares at their specific spawn points",
+								["description"] = "You will need 3 stones to summon these rares at their specific spawn points.",
 								["crs"] = {
 									70000,	-- Al'tabim the All-Seeing
 									70001,	-- Backbreaker Uru
