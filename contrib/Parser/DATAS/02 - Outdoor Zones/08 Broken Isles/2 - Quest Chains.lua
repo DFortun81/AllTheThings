@@ -223,6 +223,10 @@ _.Zones =
 									}
 								},
 								{
+									["questID"] = 43480,	-- Huk'roth the Houndmaster
+									["description"] = "This quest can only be completed during the \"In Defense of the Exodar\" scenario. This is an objective quest without a quest giver.",
+								},
+								{
 									["questID"] = 43483,	-- Fel Annihilation
 									["description"] = "This quest can only be completed during the \"In Defense of the Exodar\" scenario. This is an objective quest without a quest giver.",
 								},
