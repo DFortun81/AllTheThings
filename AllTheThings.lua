@@ -6841,7 +6841,7 @@ local function RowOnClick(self, button)
 						local missingItems = SearchForMissingItemNames(reference);					
 						if #missingItems > 0 then
 							Atr_SelectPane(3);
-							Atr_SearchAH(app.DisplayName, missingItems);
+							Atr_SearchAH(app.DisplayName, missingItems, LE_ITEM_CLASS_ARMOR);
 							return true;
 						end
 						app.print("No cached items found in search. Expand the group and view the items to cache the names and try again. Only Bind on Equip items will be found using this search.");
