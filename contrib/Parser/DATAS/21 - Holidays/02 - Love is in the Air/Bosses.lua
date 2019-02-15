@@ -168,6 +168,22 @@ _.Holidays = bubbleDown({["u"] = 18},
 						},
 					}),
 				}),
+				n(-9981, {	-- Warlords of Draenor
+					inst(537, {	-- Shadowmoon Burial Grounds
+						["g"] = {
+							d(1, {	-- Normal
+								cr(75509, e(1139, {	-- Sadana Bloodfury
+									un(18, i(44731)),	-- Bouquet of Ebon Roses
+								})),
+							}),
+							--[[d(23, {	-- Mythic
+								cr(75509, e(1139, {	-- Sadana Bloodfury
+									un(18, i(44731)),	-- Bouquet of Ebon Roses
+								})),
+							}),]]--
+						},
+					}),
+				}),
 			}),
 		},
 	},

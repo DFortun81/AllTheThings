@@ -110,8 +110,6 @@ _.Instances =
 						})),
 						cr(42333, e(113, { -- High Priestess Azil
 							ach(4846),	-- The Stonecore
-							ig(44731),	-- Bouquet of Ebon Roses
-							ig(22206),	-- Bouquet of Red Roses
 							i( 56343),	-- Darkling Staff
 							i( 56346),	-- Elementium Fang
 							i( 56349),	-- Prophet Scepter
@@ -163,8 +161,6 @@ _.Instances =
 							cr(42333, e(113, { -- High Priestess Azil
 								ach(5063),	-- Heroic: The Stonecore
 								ach(5287),	-- Rotten to the Core
-								ig(44731),	-- Bouquet of Ebon Roses
-								ig(22206),	-- Bouquet of Red Roses
 								i( 56343),	-- Darkling Staff
 								i( 56346),	-- Elementium Fang
 								i( 56349),	-- Prophet Scepter

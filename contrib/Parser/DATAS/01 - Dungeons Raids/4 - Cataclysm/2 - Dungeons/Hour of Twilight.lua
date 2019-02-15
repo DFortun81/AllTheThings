@@ -40,8 +40,6 @@ _.Instances =
 						i(72849),	-- Wayfinder Boots
 					})),
 					cr(54968, e(342, { 	-- Asira Dawnslayer
-						i( 44731),	-- Bouquet of Ebon Roses
-						i( 22206),	-- Bouquet of Red Roses
 						i( 72860),	-- Mandible of the Old Ones
 						i( 72855),	-- Corrupted Carapace
 						i( 72859),	-- Dawnslayer Helm

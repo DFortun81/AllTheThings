@@ -103,8 +103,6 @@ _.Instances =
 									["achievementID"] = 477,	-- Utgarde Keep
 									["criteriaID"] = 1,	-- Prince Keleseth
 								},
-							ig(44731),	-- Bouquet of Ebon Roses
-							ig(22206),	-- Bouquet of Red Roses
 							i( 37179),	-- Infantry Assault Blade
 							i( 35570),	-- Keleseth's Blade of Evocation
 							i( 37177),	-- Wand of the San'layn
@@ -213,8 +211,6 @@ _.Instances =
 									["achievementID"] = 489,	-- Heroic: Utgarde Keep
 									["criteriaID"] = 1,	-- Prince Keleseth
 								},
-								ig(44731),	-- Bouquet of Ebon Roses
-								ig(22206),	-- Bouquet of Red Roses
 								i( 37179),	-- Infantry Assault Blade
 								i( 35570),	-- Keleseth's Blade of Evocation
 								i( 37177),	-- Wand of the San'layn

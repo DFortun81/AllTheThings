@@ -90,8 +90,6 @@ _.Instances =
 								{	-- It's Frost Damage
 									["achievementID"] = 5369,	-- It's Frost Damage
 								},
-								ig(44731),	-- Bouquet of Ebon Roses
-								ig(22206),	-- Bouquet of Red Roses
 								i( 65168),	-- Rockslicer
 								i( 65170),	-- Smite's Reaper
 								i( 65169),	-- Lavishly Jeweled Ring

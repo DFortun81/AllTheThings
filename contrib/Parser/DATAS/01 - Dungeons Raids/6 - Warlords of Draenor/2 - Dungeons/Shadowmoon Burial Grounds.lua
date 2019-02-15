@@ -21,7 +21,6 @@ _.Instances =
 					}),
 					d(1, {	-- Normal
 						cr(75509, e(1139, {	-- Sadana Bloodfury
-							ig(44731),	-- Bouquet of Ebon Roses
 							i(110035),	-- Sadana's Grisly Visage
 							i(109957),	-- Alc's Pendant of Fiery Dreams
 							i(109962),	-- Bloodmist Pendant
@@ -233,7 +232,6 @@ _.Instances =
 							}),
 						}),	
 						cr(75509, e(1139, {	-- Sadana Bloodfury
---							ig(44731),	-- Bouquet of Ebon Roses (unconfirmed to drop in this difficulty)
 							i(110035),	-- Sadana's Grisly Visage
 							i(109957),	-- Alc's Pendant of Fiery Dreams
 							i(109962),	-- Bloodmist Pendant
@@ -437,7 +435,6 @@ _.Instances =
 					}),
 					d(23, {	-- Mythic
 						cr(75509, e(1139, {	-- Sadana Bloodfury
-							ig(44731),	-- Bouquet of Ebon Roses
 							i(110035),	-- Sadana's Grisly Visage
 							i(109957),	-- Alc's Pendant of Fiery Dreams
 							i(109962),	-- Bloodmist Pendant

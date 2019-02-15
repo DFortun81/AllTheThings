@@ -95,26 +95,10 @@ _.Instances =
 							i( 72815),	-- Bloodhoof Legguards
 						})),
 						cr(54445, e(285, { 	-- Echo of Jaina
-							n(-50, {    -- Love is in the Air
-								["groups"] = {
-									i(44731),	-- Bouquet of Ebon Roses
-									i(22206),	-- Bouquet of Red Roses	
-								},
-								["achievementID"] = 1693,    -- Fool For Love
-								["u"] = 18,
-							}),
 							i( 72808),	-- Jaina's Staff
 							i( 72809),	-- Ward of Incantations
 						})),
 						cr(54123, e(323, { 	-- Echo of Sylvannas
-							n(-50, {    -- Love is in the Air
-								["groups"] = {
-									i(44731),	-- Bouquet of Ebon Roses
-									i(22206),	-- Bouquet of Red Roses	
-								},
-								["achievementID"] = 1693,    -- Fool For Love
-								["u"] = 18,
-							}),
 							ach(6130),	-- Severed Ties
 							i( 72810),	-- Windrunner's Bow
 							i( 72811),	-- Cloak of the Banshee Queen

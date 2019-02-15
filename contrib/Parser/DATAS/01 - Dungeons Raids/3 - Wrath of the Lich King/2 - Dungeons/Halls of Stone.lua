@@ -90,8 +90,6 @@ _.Instances =
 								["achievementID"] = 485,	-- Halls of Stone
 								["criteriaID"] = 1,	-- Maiden of Grief
 							},
-							ig(44731),	-- Bouquet of Ebon Roses
-							ig(22206),	-- Bouquet of Red Roses
 							i(38618),	-- Hammer of Grief
 							i(38613),	-- Chain of Fiery Orbs
 							i(38614),	-- Embrace of Sorrow
@@ -192,8 +190,6 @@ _.Instances =
 									["achievementID"] = 496,	-- Heroic: Halls of Stone
 									["criteriaID"] = 1,	-- Maiden of Grief
 								},
-								ig(44731),	-- Bouquet of Ebon Roses
-								ig(22206),	-- Bouquet of Red Roses
 								i(38618),	-- Hammer of Grief
 								i(38613),	-- Chain of Fiery Orbs
 								i(38614),	-- Embrace of Sorrow

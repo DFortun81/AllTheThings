@@ -94,14 +94,6 @@ _.Instances =
 							}),								
 						})),
 						cr(39679, e(106, { -- Corla, Herald of Twilight
-							n(-50, {    		-- Love is in the Air
-								["groups"] = {
-									ig(44731),	-- Bouquet of Ebon Roses
-									ig(22206),	-- Bouquet of Red Roses
-								},
-								["achievementID"] = 1693,    -- Fool For Love
-								["u"] = 18,
-							}),
 							i(56296),	-- Corla's Baton
 							i(56298),	-- Renouncer's Cowl
 							i(56297),	-- Armbands of Change
@@ -181,14 +173,6 @@ _.Instances =
 								i( 56310),	-- Skullcracker Ring
 							})),
 							cr(39679, e(106, { -- Corla, Herald of Twilight
-								n(-50, {	-- Love is in the Air
-									["groups"] = {
-										ig(44731),	-- Bouquet of Ebon Roses
-										ig(22206),	-- Bouquet of Red Roses
-									},
-									["achievementID"] = 1693,    -- Fool For Love
-									["u"] = 18,
-								}),
 								{	-- Arrested Development
 									["achievementID"] = 5282,	-- Arrested Development
 								},
