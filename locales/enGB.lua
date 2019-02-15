@@ -3,4 +3,3 @@ if GetLocale() ~= "enGB" then return; end
 local L = AllTheThings.L;
 
 -- TODO
-print("enGB localization loaded!");
