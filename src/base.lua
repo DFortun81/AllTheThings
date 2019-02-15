@@ -1,18 +1,16 @@
 --------------------------------------------------------------------------------
 --                        A L L   T H E   T H I N G S                         --
 --------------------------------------------------------------------------------
---            Copyright 2017-2018 Dylan Fortune (Crieve-Sargeras)             --
+--            Copyright 2017-2019 Dylan Fortune (Crieve-Sargeras)             --
 --------------------------------------------------------------------------------
 -- This is a hidden frame that intercepts all of the event notifications that we have registered for.
 local app = CreateFrame("FRAME", "AllTheThings", UIParent);
-app:SetScript("OnEvent", function(self, e, ...) (self.events[e] or tostringall)(...); end);
+app:SetScript("OnEvent", function(self, e, ...) (self.events[e] or print)(...); end);
 app:SetPoint("BOTTOMLEFT", UIParent, "TOPLEFT", 0, 0);
-app.DisplayName = "AllTheThings";
 app.refreshDataForce = true;
 app.events = {};
 app:SetSize(1, 1);
 app:Show();
-app.Locales = {};
 
 -- ReloadUI slash command (for ease of use)
 SLASH_RELOADUI1 = "/reloadui";

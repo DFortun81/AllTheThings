@@ -9,9 +9,9 @@
 --------------------------------------------------------------------------------
 --				This script is called directly after the Core.lua file. 	  --
 --------------------------------------------------------------------------------
-AllTheThings.Locales.enUS = {
+AllTheThings.L = {
 	-- General Text
-	["TITLE"] = "ALL THE THINGS";
+	["TITLE"] = "|cffb4b4ffALL THE THINGS|r";
 	["DESCRIPTION"] = "\"Foolishly you have sought your own demise. Brazenly you have disregarded powers beyond your understanding. You have fought hard to invade the realm of the Collector. Now there is only one way out - To walk the lonely path... of the damned.\"";
 	--["DESCRIPTION"] = "\"Foolishly you have sought your own demise. Brazenly you have disregarded powers beyond your understanding. You have fought hard to invade the realm of the Collector. Now there is only one way out - To walk the lonely path... of the damned.\"\n\n|CFFFF0000Collection Mode Styles:\n\nUnique + Main Only = LFR Mode\nUnique = Normal Mode\nCompletitonist = Heroic Mode\nDebug + Completionist = Mythic Mode\n";
 	["LOADING"] = "v%s loaded successfully.";
@@ -3334,6 +3334,3 @@ AllTheThings.Locales.enUS = {
 	["RECENTLY_MADE_OBTAINABLE_PT2"] = "|CFFFF0000The more information, the better.  Thanks!|r";
 	["I_ONLY_CARE_ABOUT_MY_MAIN"] = "|cff3399ffI only care about my main.|r";
 };
-
--- Set the fallback file for all translation IDs.
-AllTheThings.Locales.Base = { __index = AllTheThings.Locales.enUS };
