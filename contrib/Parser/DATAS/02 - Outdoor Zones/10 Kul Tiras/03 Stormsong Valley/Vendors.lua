@@ -51,14 +51,13 @@ _.Zones =
 								},
 								i(162023),	-- Technique: Glyph of the Dolphin [Rank 3]
 							},
+							["coord"] = { 40.4, 36.4, 942 },
 						}),
 						{	-- Hobbs [Alliance]
 							["npcID"] = 130786,	-- Hobbs
 							["races"] = ALLIANCE_ONLY,
 							["itemID"] = 155838,	-- Briarback Quills
-							["coords"] = {
-								58.38, 70.36
-							},
+							["coord"] = { 58.38, 70.36, 942	},
 							["g"] = {
 								{	-- Pig Nose
 									["itemID"] = 162000,	-- Pig Nose
@@ -102,14 +101,13 @@ _.Zones =
 								}),
 							},
 							["races"] = ALLIANCE_ONLY,
+							["coord"] = { 31.6, 67.2, 942 },
 						}),
 						{	-- Sanya Wraithschilde <Innkeeper> [Horde]
 							["npcID"] = 138096,	-- Sanya Wraithschilde <Innkeeper> [Horde]
 							["races"] = HORDE_ONLY,
 							["itemID"] = 155838,	-- Briarback Quills
-							["coords"] = {
-								50.81, 33.61
-							},
+							["coord"] = { 50.81, 33.61, 942 },
 							["g"] = {
 								{	-- Pig Nose
 									["itemID"] = 162000,	-- Pig Nose
@@ -152,9 +150,7 @@ _.Zones =
 								i(162337),	-- Schematic: Organic Discombobulation Grenade [Rank 3]
 							},
 							["races"] = ALLIANCE_ONLY,
-							["coords"] = {
-								{ 59.29, 69.33, 942 },
-							},
+							["coord"] = { 59.29, 69.33, 942 },
 						}),
 					},
 				}),
