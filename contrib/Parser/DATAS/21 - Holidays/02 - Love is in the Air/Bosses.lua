@@ -62,6 +62,13 @@ _.Holidays = bubbleDown({["u"] = 18},
 					un(2, i(93392)),	-- Winking Eye of Love [Level 90]
 					un(2, i(117367)),	-- Winking Eye of Love [Level 100]
 					i(143905),	-- Winking Eye of Love [Level 110]
+					
+					-- Other Items
+					un(18, i(21813)),	-- Bag of Heart Candies
+					un(18, i(49909)),	-- Box of Chocolates
+					un(18, i(34258,	{ 	-- Love Rocket
+						["f"] = 50, -- Miscellaneous
+					})),
 				}),
 				n(-9978, {	-- Northrend
 					inst(277, {	-- Halls of Stone

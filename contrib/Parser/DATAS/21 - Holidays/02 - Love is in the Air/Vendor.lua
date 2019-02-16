@@ -38,52 +38,81 @@ _.Holidays = bubbleDown({["u"] = 18},
 								-- Achievement-related Items
 								un(18, i(49909, {	-- Box of Chocolates
 									["g"] = {
-										un(18, i(22236,	{	-- Buttermilk Delight
-											["f"] = 50,	-- Miscellaneous
-										})),
-										un(18, i(22237,	{	-- Dark Desire
-											["f"] = 50,	-- Miscellaneous
-										})),
-										un(18, i(22239, {	-- Sweet Surprise
-											["f"] = 50,	-- Miscellaneous
-										})),
-										un(18, i(22238,	{	-- Very Berry Cream
-											["f"] = 50,	-- Miscellaneous
-										})),
+										{
+											["achievementID"] = 1702,	-- Sweet Tooth
+											["criteriaID"] = 1,			-- Buttermilk Delight Criteria
+											["itemID"] = 22236,			-- Buttermilk Delight
+										},
+										{
+											["achievementID"] = 1702,	-- Sweet Tooth
+											["criteriaID"] = 2,			-- Dark Desire Criteria
+											["itemID"] = 22237,			-- Dark Desire
+										},
+										{
+											["achievementID"] = 1702,	-- Sweet Tooth
+											["criteriaID"] = 3,			-- Sweet Surprise Criteria
+											["itemID"] = 22239,			-- Sweet Surprise
+										},
+										{
+											["achievementID"] = 1702,	-- Sweet Tooth
+											["criteriaID"] = 4,			-- Very Berry Cream Criteria
+											["itemID"] = 22238,			-- Very Berry Cream
+										},
+										{
+											["achievementID"] = 1291,	-- Lonely?
+											["criteriaID"] = 5,			-- Buttermilk Delight Criteria
+											["itemID"] = 22236,			-- Buttermilk Delight
+										},
 									},
 								})),
 								un(18, i(21813, {	-- Bag of Heart Candies
 									["g"] = {
-										un(18, i(21816,	{	-- Heart Candy (Be Mine!)
-											["f"] = 50,	-- Miscellaneous
-										})),
-										un(18, i(21817,	{	-- Heart Candy (I LOVE YOU)
-											["f"] = 50,	-- Miscellaneous
-										})),
-										un(18, i(21818,	{	-- Heart Candy (I'll follow you all around Azeroth.)
-											["f"] = 50,	-- Miscellaneous
-										})),
-										un(18, i(21819,	{	-- Heart Candy (All yours.)
-											["f"] = 50,	-- Miscellaneous
-										})),
-										un(18, i(21820,	{	-- Heart Candy (You're the best!)
-											["f"] = 50,	-- Miscellaneous
-										})),
-										un(18, i(21821,	{	-- Heart Candy (I'm all yours!)
-											["f"] = 50,	-- Miscellaneous
-										})),
-										un(18, i(21822,	{	-- Heart Candy (You're mine!)
-											["f"] = 50,	-- Miscellaneous
-										})),
-										un(18, i(21823,	{	-- Heart Candy (Hot lips!)
-											["f"] = 50,	-- Miscellaneous
-										})),
+										{
+											["achievementID"] = 1701,	-- Be Mine!
+											["criteriaID"] = 1,			-- Heart Candy (Be Mine!) Criteria
+											["itemID"] = 21816,			-- Heart Candy (Be Mine!)
+										},
+										{
+											["achievementID"] = 1701,	-- Be Mine!
+											["criteriaID"] = 2,			-- Heart Candy (I LOVE YOU) Criteria
+											["itemID"] = 21817,			-- Heart Candy (I LOVE YOU)
+										},
+										{
+											["achievementID"] = 1701,	-- Be Mine!
+											["criteriaID"] = 3,			-- Heart Candy (I'll follow you all around Azeroth.) Criteria
+											["itemID"] = 21818,			-- Heart Candy (I'll follow you all around Azeroth.)
+										},
+										{
+											["achievementID"] = 1701,	-- Be Mine!
+											["criteriaID"] = 4,			-- Heart Candy (All yours.) Criteria
+											["itemID"] = 21819,			-- Heart Candy (All yours.)
+										},
+										{
+											["achievementID"] = 1701,	-- Be Mine!
+											["criteriaID"] = 5,			-- Heart Candy (You're the best!) Criteria
+											["itemID"] = 21820,			-- Heart Candy (You're the best!)
+										},
+										{
+											["achievementID"] = 1701,	-- Be Mine!
+											["criteriaID"] = 6,			-- Heart Candy (I'm all yours!) Criteria
+											["itemID"] = 21821,			-- Heart Candy (I'm all yours!)
+										},
+										{
+											["achievementID"] = 1701,	-- Be Mine!
+											["criteriaID"] = 7,			-- Heart Candy (You're mine!) Criteria
+											["itemID"] = 21822,			-- Heart Candy (You're mine!)
+										},
+										{
+											["achievementID"] = 1701,	-- Be Mine!
+											["criteriaID"] = 8,			-- Heart Candy (Hot lips!) Criteria
+											["itemID"] = 21823,			-- Heart Candy (Hot lips!)
+										},
 									},
 								})),
 								{
 									["achievementID"] = 1699,	-- Fistful of Love
 									["criteriaID"] = 1,			-- Criteria
-									["itemID"] = 22218,			-- Love Rocket
+									["itemID"] = 22218,			-- Handful of Rose Petals
 								},
 								{
 									["achievementID"] = 1696,	-- The Rocket's Pink Glare
