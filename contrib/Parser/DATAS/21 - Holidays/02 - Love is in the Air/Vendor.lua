@@ -36,17 +36,67 @@ _.Holidays = bubbleDown({["u"] = 18},
 								-- Mounts --
 								un(18, i(72146)),	-- Swift Lovebird
 								-- Achievement-related Items
+								un(18, i(49909, {	-- Box of Chocolates
+									["g"] = {
+										un(18, i(22236,	{	-- Buttermilk Delight
+											["f"] = 50,	-- Miscellaneous
+										})),
+										un(18, i(22237,	{	-- Dark Desire
+											["f"] = 50,	-- Miscellaneous
+										})),
+										un(18, i(22239, {	-- Sweet Surprise
+											["f"] = 50,	-- Miscellaneous
+										})),
+										un(18, i(22238,	{	-- Very Berry Cream
+											["f"] = 50,	-- Miscellaneous
+										})),
+									},
+								})),
+								un(18, i(21813, {	-- Bag of Heart Candies
+									["g"] = {
+										un(18, i(21816,	{	-- Heart Candy (Be Mine!)
+											["f"] = 50,	-- Miscellaneous
+										})),
+										un(18, i(21817,	{	-- Heart Candy (I LOVE YOU)
+											["f"] = 50,	-- Miscellaneous
+										})),
+										un(18, i(21818,	{	-- Heart Candy (I'll follow you all around Azeroth.)
+											["f"] = 50,	-- Miscellaneous
+										})),
+										un(18, i(21819,	{	-- Heart Candy (All yours.)
+											["f"] = 50,	-- Miscellaneous
+										})),
+										un(18, i(21820,	{	-- Heart Candy (You're the best!)
+											["f"] = 50,	-- Miscellaneous
+										})),
+										un(18, i(21821,	{	-- Heart Candy (I'm all yours!)
+											["f"] = 50,	-- Miscellaneous
+										})),
+										un(18, i(21822,	{	-- Heart Candy (You're mine!)
+											["f"] = 50,	-- Miscellaneous
+										})),
+										un(18, i(21823,	{	-- Heart Candy (Hot lips!)
+											["f"] = 50,	-- Miscellaneous
+										})),
+									},
+								})),
+								{
+									["achievementID"] = 1699,	-- Fistful of Love
+									["criteriaID"] = 1,			-- Criteria
+									["itemID"] = 22218,			-- Love Rocket
+								},
 								{
 									["achievementID"] = 1696,	-- The Rocket's Pink Glare
 									["criteriaID"] = 1,			-- Criteria
 									["itemID"] = 34258,			-- Love Rocket
-									["description"] = "You need ten (10) of these - they come in stacks of 5.",
+								},
+								{
+									["achievementID"] = 1188,	-- Shafted!
+									["criteriaID"] = 1,			-- Criteria
+									["itemID"] = 22200,			-- Silver Shafted Arrow
 								},
 								-- Useless Items --
 								un(18, i(134860, {	-- Peddlefeet's Buffing Creme
-									["f"] = 50,	-- Miscellaneous
-								})),
-								un(18, i(22200, {	-- Silver Shafted Arrow
 									["f"] = 50,	-- Miscellaneous
 								})),
 							},
