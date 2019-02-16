@@ -2247,6 +2247,7 @@ _.Zones =
 			},
 			["lvl"] = 98,
 			["maps"] = {
+				636,	-- Stormscale Cavern
 				639,	-- Aggramar's Vault
 			},
 			["achievementID"] = 10668,
