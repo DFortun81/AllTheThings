@@ -10773,7 +10773,7 @@ app.events.PLAYER_LOGIN = function()
 	end);
 	LibStub:GetLibrary("LibDataBroker-1.1"):NewDataObject(L["TITLE"], {
 		type = "launcher",
-		icon = L["LOGO_SMALL"],
+		icon = "Interface\\Addons\\AllTheThings\\assets\\logo_32x32",
 		OnClick = MinimapButtonOnClick,
 		OnEnter = MinimapButtonOnEnter,
 		OnLeave = MinimapButtonOnLeave,
