@@ -141,16 +141,6 @@ _.Holidays = bubbleDown({["u"] = 18},
 						{ 43.6, 53.6, 88 },		-- Thunder Bluff
 						{ 66.0, 38.6, 90 },		-- Undercity
 					},
-					["maps"] = {
-						89,		-- Darnassus
-						87,		-- Ironforge
-						85,		-- Orgrimmar
-						110,	-- Silvermoon City
-						84,		-- Stormwind
-						103,	-- The Exodar
-						88,		-- Thunder Bluff
-						90,		-- Undercity
-					},
 				}),
 			}),
 		},

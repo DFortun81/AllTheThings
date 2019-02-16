@@ -32,66 +32,52 @@ _.Holidays = bubbleDown({["u"] = 18},
 					q(24597, {	-- A Gift for the King of Stormwind
 						
 						["qg"] = 37887,	-- Kwee Q. Peddlefeet
-						["maps"] = { 84, },	-- Stormwind City
 						["isDaily"] = true,
 					}),
 					q(24609, {	-- A Gift for a Lord of Ironforge
 						
 						["qg"] = 37887,	-- Kwee Q. Peddlefeet
-						["maps"] = { 87, },	-- Ironforge
 						["isDaily"] = true,
 					}),
 					q(24610, {	-- A Gift for the High Priestess of Elune
 						
 						["qg"] = 37887,	-- Kwee Q. Peddlefeet
-						["maps"] = { 89, },	-- Darnassus
 						["isDaily"] = true,
 					}),
 					q(24611, {	-- A Gift for the Prophet
 						
 						["qg"] = 37887,	-- Kwee Q. Peddlefeet
-						["maps"] = { 103, },	-- The Exodar
 						["isDaily"] = true,
 					}),
 					q(24804, {	-- Uncommon Scents (Alliance)
 						
 						["qg"] = 38293,	-- Junior Inspector
-						["maps"] = {
-							87,	-- Ironforge
-							89,	-- Darnassus
-							103,	-- The Exodar
-						},
 						["isBreadcrumb"] = true,
 					}),
 					q(24655, {	-- Something Stinks (Alliance)
 						
 						["qg"] = 38066,	-- Inspector Snip Snagglebolt
 						["sourceQuest"] = 24804,	-- Uncommon Scents (Alliance)
-						["maps"] = { 84, },	-- Stormwind City
 					}),
 					q(24656, {	-- Pilfering Perfume (Alliance)
 						
 						["qg"] = 38066,	-- Inspector Snip Snagglebolt
 						["sourceQuest"] = 24655,	-- Something Stinks (Alliance)
-						["maps"] = { 84, },	-- Stormwind City
 					}),
 					q(24848, {	-- Fireworks At The Gilded Rose
 						
 						["qg"] = 38066,	-- Inspector Snip Snagglebolt
 						["sourceQuest"] = 24656,	-- Pilfering Perfume (Alliance)
-						["maps"] = { 84, },	-- Stormwind City
 					}),
 					q(24849, {	-- Hot On The Trail (Alliance)
 						
 						["qg"] = 38325,	-- Marion Sutton
 						["sourceQuest"] = 24848,	-- Fireworks At The Gilded Rose
-						["maps"] = { 84, },	-- Stormwind City
 					}),
 					q(24657, {	-- A Friendly Chat... (Alliance)
 						
 						["qg"] = 38325,	-- Marion Sutton
 						["sourceQuest"] = 24849,	-- Hot On The Trail (Alliance)
-						["maps"] = { 84, },	-- Stormwind City
 					}),
 				}),
 				-- HORDE QUESTS --
@@ -99,19 +85,16 @@ _.Holidays = bubbleDown({["u"] = 18},
 					q(24612, {	-- A Gift for High Overlord Saurfang
 						
 						["qg"] = 37887,	-- Kwee Q. Peddlefeet
-						["maps"] = { 85, },	-- Orgrimmar
 						["isDaily"] = true,
 					}),
 					q(24613, {	-- A Gift for the Banshee Queen
 						
 						["qg"] = 37887,	-- Kwee Q. Peddlefeet
-						["maps"] = { 90, },	-- Undercity
 						["isDaily"] = true,
 					}),
 					q(24614, {	-- A Gift for the High Chieftain
 						
 						["qg"] = 37887,	-- Kwee Q. Peddlefeet
-						["maps"] = { 88, },	-- Thunder Bluff
 						["isDaily"] = true,
 					}),
 					q(24615, {	-- A Gift for the Regent Lord of Quel'Thalas
@@ -123,36 +106,27 @@ _.Holidays = bubbleDown({["u"] = 18},
 					q(24805, {	-- Uncommon Scents (Horde)
 						
 						["qg"] = 38295,	-- Junior Detective
-						["maps"] = {
-							88,	-- Thunder Bluff
-							90,	-- Undercity
-							110,	-- Silvermoon City
-						},
 						["isBreadcrumb"] = true,
 					}),
 					q(24536, {	-- Something Stinks (Horde)
 						
 						["qg"] = 37172,	-- Detective Snap Snagglebolt
 						["sourceQuest"] = 24805,	-- Uncommon Scents (Horde)
-						["maps"] = { 85, },	-- Orgrimmar
 					}),
 					q(24541, {	-- Pilfering Perfume (Horde)
 						
 						["qg"] = 37172,	-- Detective Snap Snagglebolt
 						["sourceQuest"] = 24536,	-- Something Stinks (Horde)
-						["maps"] = { 85, },	-- Orgrimmar
 					}),
 					q(24850, {	-- Snivel's Sweetheart
 						
 						["qg"] = 37172,	-- Detective Snap Snagglebolt
 						["sourceQuest"] = 24541,	-- Pilfering Perfume (Horde)
-						["maps"] = { 85, },	-- Orgrimmar
 					}),
 					q(24851, {	-- Hot On The Trail (Horde)
 						
 						["qg"] = 38328,	-- Roka
 						["sourceQuest"] = 24850,	-- Snivel's Sweetheart
-						["maps"] = { 85, },	-- Orgrimmar
 					}),
 					q(24576, {	-- A Friendly Chat... (Horde)
 						
@@ -161,7 +135,6 @@ _.Holidays = bubbleDown({["u"] = 18},
 							38328,	-- Roka
 						},
 						["sourceQuest"] = 24851,	-- Hot On The Trail (Horde)
-						["maps"] = { 85, },	-- Orgrimmar
 					}),
 				}),
 			}),
