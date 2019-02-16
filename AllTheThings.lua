@@ -6739,7 +6739,7 @@ local function UpdateVisibleRowData(self)
 		end
 		
 		-- Hide the extra rows if any exist
-		for i=rowCount + 1,#container.rows do
+		for i=math.max(2, rowCount + 1),#container.rows do
 			ClearRowData(container.rows[i]);
 			container.rows[i]:Hide();
 		end
