@@ -35,6 +35,13 @@ _.Holidays = bubbleDown({["u"] = 18},
 								un(18, i(22235)),	-- Truesilver Shafted Arrow
 								-- Mounts --
 								un(18, i(72146)),	-- Swift Lovebird
+								-- Achievement-related Items
+								{
+									["achievementID"] = 1696,	-- The Rocket's Pink Glare
+									["criteriaID"] = 1,			-- Criteria
+									["itemID"] = 34258,			-- Love Rocket
+									["description"] = "You need ten (10) of these - they come in stacks of 5.",
+								},
 								-- Useless Items --
 								un(18, i(134860, {	-- Peddlefeet's Buffing Creme
 									["f"] = 50,	-- Miscellaneous
