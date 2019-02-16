@@ -340,16 +340,7 @@ _.Instances =
 							},
 							{	-- Orbit-uary
 								["achievementID"] = 12320,	-- Orbit-uary
-								["g"] = {
-									{	-- Nuked from Orbit
-										["achievementID"] = 12319,	-- Nuked from Orbit
-									},
-									{	-- Orbital Devastation
-										["achievementID"] = 12318,	-- Orbital Devastation
-									},
-									{	-- Orbital Bombardment
-										["achievementID"] = 12317,	-- Orbital Bombardment
-									},
+								["g"] = bubbleDown({["u"] = 45}, {	-- Hard Mode Loot is now Unobtainable
 									{	-- Golden Saronite Dragon
 										["itemID"] = 45132,	-- Golden Saronite Dragon
 									},
@@ -377,7 +368,16 @@ _.Instances =
 									{	-- Shimmering Seal
 										["itemID"] = 45297,	-- Shimmering Seal
 									},
-								},
+								}),
+							},
+							{	-- Nuked from Orbit
+								["achievementID"] = 12319,	-- Nuked from Orbit
+							},
+							{	-- Orbital Devastation
+								["achievementID"] = 12318,	-- Orbital Devastation
+							},
+							{	-- Orbital Bombardment
+								["achievementID"] = 12317,	-- Orbital Bombardment
 							},
 							{	-- Shutout
 								["achievementID"] = 12316,	-- Shutout
@@ -512,7 +512,7 @@ _.Instances =
 						cr(33293, e(1640, {	-- XT-002 Deconstructor
 							{	-- Heartbreaker
 								["achievementID"] = 12330,	-- Heartbreaker
-								["g"] = {
+								["g"] = bubbleDown({["u"] = 45}, {	-- Hard Mode Loot is now Unobtainable
 									{	-- Aesir's Edge
 										["itemID"] = 45868,	-- Aesir's Edge
 									},
@@ -543,7 +543,7 @@ _.Instances =
 									{	-- Seal of Ulduar
 										["itemID"] = 45871,	-- Seal of Ulduar
 									},
-								},
+								}),
 							},
 							{	-- Must Deconstruct Faster
 								["achievementID"] = 12329,	-- Must Deconstruct Faster
@@ -853,7 +853,7 @@ _.Instances =
 							},
 							{	-- I Could Say That This Cache Was Rare
 								["achievementID"] = 12347,	-- I Could Say That This Cache Was Rare
-								["g"] = {
+								["g"] = bubbleDown({["u"] = 45}, {	-- Hard Mode Loot is now Unobtainable
 									{	-- Icecore Staff
 										["itemID"] = 45886,	-- Icecore Staff
 									},
@@ -887,7 +887,7 @@ _.Instances =
 									{	-- Gloves of the Frozen Glade
 										["itemID"] = 45462,	-- Gloves of the Frozen Glade
 									},
-								},
+								}),
 							},
 							{	-- I Have the Coolest Friends
 								["achievementID"] = 12344,	-- I Have the Coolest Friends
@@ -1344,7 +1344,7 @@ _.Instances =
 							},
 							{	-- I Love the Smell of Saronite in the Morning
 								["achievementID"] = 12373,	-- I Love the Smell of Saronite in the Morning
-								["g"] = {
+								["g"] = bubbleDown({["u"] = 45}, {	-- Hard Mode Loot is now Unobtainable
 									{	-- Tortured Earth
 										["itemID"] = 46033,	-- Tortured Earth
 									},
@@ -1375,7 +1375,7 @@ _.Instances =
 									{	-- Flare of the Heavens
 										["itemID"] = 45518,	-- Flare of the Heavens
 									},
-								},
+								}),
 							},
 							{	-- Shadowdodger
 								["achievementID"] = 12372,	-- Shadowdodger
@@ -1447,7 +1447,7 @@ _.Instances =
 							},
 							{	-- One Light in the Darkness
 								["achievementID"] = 12387,	-- One Light in the Darkness
-								["g"] = {
+								["g"] = bubbleDown({["u"] = 45}, {	-- Hard Mode Loot is now Unobtainable
 									{	-- Dark Edge of Depravity
 										["itemID"] = 45533,	-- Dark Edge of Depravity
 									},
@@ -1478,7 +1478,7 @@ _.Instances =
 									{	-- Show of Faith
 										["itemID"] = 45535,	-- Show of Faith
 									},
-								},
+								}),
 							},
 							{	-- Two Lights in the Darkness
 								["achievementID"] = 12386,	-- Two Lights in the Darkness

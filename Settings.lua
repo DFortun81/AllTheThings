@@ -1110,7 +1110,7 @@ local function createAccountFrame(parent)
 	addObject(elm,noChance)
 	
 	local noChanceFrame = CreateFrame("Frame", name .. "-" .. tabName .. "-noChanceFrame", child, "ThinBorderTemplate");
-	noChanceFrame:SetSize(unobtainableFrame:GetWidth()-20,100)
+	noChanceFrame:SetSize(unobtainableFrame:GetWidth()-20,120)
 	noChanceFrame:SetPoint("TOPLEFT",noChance,0,-frameSpacer);
 	addObject(elm,noChanceFrame)
 	
