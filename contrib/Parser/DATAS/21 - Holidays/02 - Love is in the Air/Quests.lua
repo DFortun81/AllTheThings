@@ -61,6 +61,7 @@ _.Holidays = bubbleDown({["u"] = 18},
 							89,	-- Darnassus
 							103,	-- The Exodar
 						},
+						["isBreadcrumb"] = true,
 					}),
 					q(24655, {	-- Something Stinks (Alliance)
 						
@@ -127,6 +128,7 @@ _.Holidays = bubbleDown({["u"] = 18},
 							90,	-- Undercity
 							110,	-- Silvermoon City
 						},
+						["isBreadcrumb"] = true,
 					}),
 					q(24536, {	-- Something Stinks (Horde)
 						
