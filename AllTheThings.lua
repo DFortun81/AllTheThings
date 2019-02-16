@@ -6231,10 +6231,16 @@ local function MinimapButtonOnEnter(self)
 	GameTooltip:AddLine(L["DESCRIPTION"], 0.4, 0.8, 1, 1);
 	GameTooltip:AddLine(L["MINIMAP_MOUSEOVER_TEXT"], 1, 1, 1);
 	GameTooltip:Show();
-	
 	GameTooltipIcon:SetSize(72,72);
-	GameTooltipIcon.icon:SetTexture(L["LOGO_LARGE"]);
-	GameTooltipIcon.icon:SetTexCoord(0, 1, 0, 1);
+	GameTooltipIcon:ClearAllPoints();
+	GameTooltipIcon:SetPoint("TOPRIGHT", GameTooltip, "TOPLEFT", 0, 0);
+	GameTooltipIcon.icon:SetTexture(reference.preview or reference.icon);
+	local texcoord = reference.previewtexcoord or reference.texcoord;
+	if texcoord then
+		GameTooltipIcon.icon:SetTexCoord(texcoord[1], texcoord[2], texcoord[3], texcoord[4]);
+	else
+		GameTooltipIcon.icon:SetTexCoord(0, 1, 0, 1);
+	end
 	GameTooltipIcon:Show();
 end
 local function MinimapButtonOnLeave()
@@ -6247,31 +6253,27 @@ end
 local function CreateMinimapButton()
 	-- Create the Button for the Minimap frame. Create a local and non-local copy.
 	local button = CreateFrame("BUTTON", app:GetName() .. "-Minimap", Minimap);
-	button:SetHighlightTexture("Interface\\Minimap\\UI-Minimap-ZoomButton-Highlight", "ADD");
+	button:SetPoint("CENTER", 0, 0);
 	button:SetFrameStrata("HIGH");
 	button:SetMovable(true);
 	button:EnableMouse(true);
-	button:SetSize(33, 33);
-	button:SetPoint("CENTER", 0, 0, "CENTER", 0, 0);
+	button:SetSize(36, 36);
 	button:RegisterForDrag("LeftButton", "RightButton");
 	button:RegisterForClicks("LeftButtonUp", "RightButtonUp");
 	
 	-- Create the Button Texture
 	local texture = button:CreateTexture(nil, "BACKGROUND");
-	texture:SetTexture(L["LOGO_SMALL"]);
-	texture:SetSize(21, 21);
-	texture:SetTexCoord(0,1,0,1);
-	texture:SetPoint("TOPLEFT", 6, -6);
-	
-	-- Create the Button Tracking Border
-	local border = button:CreateTexture(nil, "BORDER");
-	border:SetTexture("Interface\\Minimap\\MiniMap-TrackingBorder");
-	border:SetSize(56, 56);
-	border:SetPoint("TOPLEFT");
+	texture:SetPoint("CENTER", 0, 0);
+	texture:SetTexture("Interface\\Addons\\AllTheThings\\assets\\content_20190216_1");
+	texture:SetTexCoord(429 / 512, (429 + 36) / 512, 141 / 256, (141 + 36) / 256);
+	texture:SetAllPoints();
+	button:SetHighlightTexture("Interface\\Addons\\AllTheThings\\assets\\content_20190216_1");
+	button:GetHighlightTexture():SetTexCoord(429 / 512, (429 + 36) / 512, 179 / 256, (179 + 36) / 256);
+	button:GetHighlightTexture():SetAlpha(0.2);
 	
 	-- Button Configuration
 	button.update = function(self)
-		local position = GetDataMember("Position", -19.9380328877568);
+		local position = GetDataMember("Position", -10.31);
 		self:SetPoint("CENTER", "Minimap", "CENTER", -78 * cos(position), 78 * sin(position));
 	end
 	local update = function(self)
@@ -7587,8 +7589,9 @@ function app:GetDataCache()
 			end
 		});
 		allData.expanded = true;
-		allData.icon = L["LOGO_TINY"];
-		allData.preview = L["LOGO_LARGE"];
+		allData.icon = "Interface\\Addons\\AllTheThings\\assets\\content_20190216_1";
+		allData.texcoord = {429 / 512, (429 + 36) / 512, 141 / 256, (141 + 36) / 256};
+		allData.previewtexcoord = {1 / 512, (1 + 72) / 512, 75 / 256, (75 + 72) / 256};
 		allData.text = L["TITLE"];
 		allData.description = L["DESCRIPTION"];
 		allData.visible = true;
@@ -8536,7 +8539,7 @@ function app:GetWindow(suffix, parent, onUpdate)
 end
 
 -- Create the Primary Collection Window (this allows you to save the size and location)
-app:GetWindow("Prime");
+app:GetWindow("Prime"):SetSize(425, 305);
 app:GetWindow("Unsorted");
 --[[
 app:GetWindow("Debugger", UIParent, function(self)
