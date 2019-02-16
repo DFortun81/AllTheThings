@@ -1905,10 +1905,7 @@ _.Zones =
 									["qg"] = 102196,	-- Fargo Flintlocke
 								}),
 								q(40859, {	-- The Latest Fashion: Headguns!
-									["sourceQuests"] = {
-										40856,	-- It'll Cost You
-										40858,	-- The Missing Pieces
-									},
+									["sourceQuest"] = 40856,	-- It'll Cost You
 									["qg"] = 102195, -- Fargo Flintlocke
 									["requireSkill"] = 202,
 									["groups"] = {
