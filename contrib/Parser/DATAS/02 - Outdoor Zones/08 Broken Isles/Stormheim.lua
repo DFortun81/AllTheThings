@@ -967,68 +967,256 @@ _.Zones =
 							["description"] = "This item can be safely deleted and you'll still be able to interact with the hooks.",
 						},
 						crit(3, { -- The Trial of Might
-							qa( 38210),	-- The Ancient Trials
-							qh( 38459),	-- The Ancient Trials
-							q(38331),	-- Havi's Test
-							q(39590),	-- Ahead of the Game
-							q(39595),	-- Blood and Gold
-							q(39591),	-- A Trial of Valor
-							q(39592),	-- A Trial of Will
-							q(39593),	-- The Shattered Watcher
-							q(39594),	-- A Trial of Might
-							q(39597),	-- The Blessing of the Watchers
+							a({
+								["questID"] = 38210,	-- The Ancient Trials
+								["qg"] = 97306,	-- Muninn
+							}),
+							h({
+								["questID"] = 38459,	-- The Ancient Trials
+								["qg"] = 97305,	-- Huginn
+							}),
+							{
+								["questID"] = 38331,	-- Havi's Test
+								["sourceQuests"] = {
+									38210,	-- The Ancient Trials
+									38459,	-- The Ancient Trials
+								},
+								["qg"] = 96254,	-- Havi
+							},
+							{
+								["questID"] = 39590,	-- Ahead of the Game
+								["sourceQuest"] = 38331,	-- Havi's Test
+								["qg"] = 96254,	-- Havi
+							},
+							{
+								["questID"] = 39595,	-- Blood and Gold
+								["sourceQuest"] = 38331,	-- Havi's Test
+								["qg"] = 96254,	-- Havi
+							},
+							{
+								["questID"] = 39591,	-- A Trial of Valor
+								["sourceQuests"] = {
+									39590,	-- Ahead of the Game
+									9595,	-- Blood and Gold
+								},
+								-- ["qg"] = ,	-- Yotnar's Head
+							},
+							{
+								["questID"] = 39592,	-- A Trial of Will
+								["sourceQuests"] = {
+									39590,	-- Ahead of the Game
+									9595,	-- Blood and Gold
+								},
+								-- ["qg"] = ,	-- Yotnar's Head
+							},
+							{
+								["questID"] = 39593,	-- The Shattered Watcher
+								["sourceQuests"] = {
+									39590,	-- Ahead of the Game
+									9595,	-- Blood and Gold
+								},
+								-- ["qg"] = ,	-- Yotnar's Head
+								["groups"] = {
+									i(129316),	-- Watcher's Pendant of Courage
+									i(121560),	-- Signet of the Watcher's Guile
+								},
+							},
+							{
+								["questID"] = 39594,	-- A Trial of Might
+								["sourceQuests"] = {
+									39593,	-- The Shattered Watcher
+									39592,	-- A Trial of Will
+								},
+								["qg"] = 96257,	-- Yotnar
+							},
+							{
+								["questID"] = 39597,	-- The Blessing of the Watchers
+								["sourceQuest"] = 39594,	-- A Trial of Might
+								["qg"] = 96258,	-- Yotnar
+								["groups"] = {
+									i(132781),	-- Archived Record of Might
+									i(132786),	-- Archived Record of Valor
+									i(132791),	-- Archived Record of Will
+									i(132775),	-- Blessing of the Watchers
+									i(132796),	-- Breath of the Vault
+									i(132783),	-- Echo of Aggramar
+									i(132780),	-- Grasp of the God-King
+									i(132777),	-- Offering of Spilled Blood
+									i(132779),	-- Pillaged Honor
+									i(132790),	-- Rumblehoof's Flameheart
+									i(132794),	-- Runetwister Talisman
+									i(132778),	-- Skovald's Betrayal
+									i(132793),	-- Spark of Will
+									i(132792),	-- Tideskorn War Brand
+									i(132789),	-- Twisted Tideskorn Rune
+									i(132787),	-- Vault Guardian Core
+									i(132785),	-- Whispers of the Thorignir
+									i(132782),	-- Yotnar's Gratitude
+									i(132776),	-- Yotnar's Pride
+									i(132788),	-- Yotnar's Turmoil
+								},
+							},
 						}),
 						crit(4, { -- The Trial of Will
-							qa( 38473),	-- Will of the Thorignir
-							qa( 38312),	-- A Grapple a Day
-							qa(38405,  {  -- To Weather the Storm
-								i(121567),
-							}),	
-							qa( 38318),	-- No Wings Required
-							qa(38337,  {  -- Built to Scale
-								i(121520),
-								i(121522),
-								i(121521),
-								i(121519),
-								i(129320),
-								i(129321),
-								i(129322),
-								i(129323),
+							a({
+								["questID"] = 38473,	-- Will of the Thorignir
+								["sourceQuest"] = 39597,	-- The Blessing of the Watchers
+								["qg"] = 96254,	-- Havi
 							}),
-							qa( 38410),	-- Impalement Insurance
-							qa( 38342),	-- Another Way
-							qa( 38412),	-- Above the Winter Moonlight						
-							qh( 38611),	-- Will of the Thorignir
-							qh( 38612),	-- A Grapple a Day
-							qh(38614,  {  -- To Weather the Storm
-								i(121567),
+							h({
+								["questID"] = 38611,	-- Will of the Thorignir
+								["sourceQuest"] = 39597,	-- The Blessing of the Watchers
+								["qg"] = 96254,	-- Havi
 							}),
-							qh( 38613),	-- No Wings Required
-							qh(38616,  {  -- Built to Scale
-								i(121520),
-								i(121522),
-								i(121521),
-								i(121519),
-								i(129320),
-								i(129321),
-								i(129322),
-								i(129323),
+							a({
+								["questID"] = 38312,	-- A Grapple a Day
+								["sourceQuest"] = 38473,	-- Will of the Thorignir
+								["qg"] = 91222,	-- Commander Lorna Crowley <Gilneas Brigade>
 							}),
-							qh( 38615),	-- Impalement Insurance
-							qh( 38617),	-- Another Way
-							qh( 38618),	-- Above the Winter Moonlight
-							q(38413,  {  -- Wings of Liberty
-								i(121517),
-								i(121515),
-								i(121518),
-								i(121516),
-								i(129324),
-								i(129325),
-								i(129326),
-								i(129327),
+							h({
+								["questID"] = 38612,	-- A Grapple a Day
+								["sourceQuest"] = 38611,	-- Will of the Thorignir
+								["qg"] = 92561,	-- Dread-Rider Cullen
 							}),
-							q(38414),	-- Heart of a Dragon
-							q(40568),	-- Fury of the Storm
+							a({
+								["itemID"] = 122610,	-- Storm Drake Scale
+								["questID"] = 38337,	-- Built to Scale
+								["groups"] = {
+									i(129320),	-- Charged Stormwing Robes
+									i(129321),	-- Electrified Stormwing Vest
+									i(129322),	-- Humming Stormwing Chest
+									i(129323),	-- Stormwing Plate Chestguard
+									i(121521),	-- Charged Stormwing Belt
+									i(121520),	-- Electrified Stormwing Cord
+									i(121522),	-- Humming Stormwing Wrap
+									i(121519),	-- Reinforced Stormwing Waistguard
+								},
+							}),
+							h({
+								["itemID"] = 124037,	-- Storm Drake Scale
+								["questID"] = 38616,	-- Built to Scale
+								["groups"] = {
+									i(129320),	-- Charged Stormwing Robes
+									i(129321),	-- Electrified Stormwing Vest
+									i(129322),	-- Humming Stormwing Chest
+									i(129323),	-- Stormwing Plate Chestguard
+									i(121521),	-- Charged Stormwing Belt
+									i(121520),	-- Electrified Stormwing Cord
+									i(121522),	-- Humming Stormwing Wrap
+									i(121519),	-- Reinforced Stormwing Waistguard
+								},
+							}),
+							a({
+								["questID"] = 38318,	-- No Wings Required
+								["sourceQuest"] = 38312,	-- A Grapple a Day
+								["qg"] = 91481,	-- Commander Lorna Crowley <Gilneas Brigade>
+							}),
+							h({
+								["questID"] = 38613,	-- No Wings Required
+								["sourceQuest"] = 38612,	-- A Grapple a Day
+								["qg"] = 92566,	-- Dread-Rider Cullen
+							}),
+							a({
+								["questID"] = 38405,	-- To Weather the Storm
+								["sourceQuest"] = 38312,	-- A Grapple a Day
+								["qg"] = 91481,	-- Commander Lorna Crowley <Gilneas Brigade>
+								["groups"] = {
+									i(121567),	-- Galeborn's Oiled Cloak
+									i(129318),	-- Lodestone of the Galeborn
+									i(129317),	-- Lodestone of the Mystic
+									i(129319),	-- Lodestone of the Stormbreaker
+								},
+							}),
+							h({
+								["questID"] = 38614,	-- To Weather the Storm
+								["sourceQuest"] = 38612,	-- A Grapple a Day
+								["qg"] = 92566,	-- Dread-Rider Cullen
+								["groups"] = {
+									i(121567),	-- Galeborn's Oiled Cloak
+									i(129318),	-- Lodestone of the Galeborn
+									i(129317),	-- Lodestone of the Mystic
+									i(129319),	-- Lodestone of the Stormbreaker
+								},
+							}),
+							a({
+								["questID"] = 38410,	-- Impalement Insurance
+								["sourceQuests"] = {
+									38318,	-- No Wings Required
+									38405,	-- To Weather the Storm
+								},
+								["qg"] = 91519,	-- Commander Lorna Crowley <Gilneas Brigade>
+							}),
+							h({
+								["questID"] = 38615,	-- Impalement Insurance
+								["sourceQuests"] = {
+									38613,	-- No Wings Required
+									38614,	-- To Weather the Storm
+								},
+								["qg"] = 92567,	-- Dread-Rider Cullen
+							}),
+							a({
+								["questID"] = 38342,	-- Another Way
+								["sourceQuest"] = 38410,	-- Impalement Insurance
+								["qg"] = 91553,	-- Commander Lorna Crowley <Gilneas Brigade>
+							}),
+							h({
+								["questID"] = 38617,	-- Another Way
+								["sourceQuest"] = 38410,	-- Impalement Insurance
+								["qg"] = 92573,	-- Dread-Rider Cullen
+							}),
+							a({
+								["questID"] = 38412,	-- Above the Winter Moonlight
+								["sourceQuest"] = 38342,	-- Another Way
+								["qg"] = 91558,	-- Commander Lorna Crowley <Gilneas Brigade>
+							}),
+							h({
+								["questID"] = 38618,	-- Above the Winter Moonlight
+								["sourceQuest"] = 38617,	-- Another Way
+								["qg"] = 92569,	-- Dread-Rider Cullen
+							}),
+							{
+								["questID"] = 38413,	-- Wings of Liberty
+								["sourceQuests"] = {
+									38412,	-- Above the Winter Moonlight
+									38618,	-- Above the Winter Moonlight
+								},
+								["qgs"] = {
+									91249,	-- Vethir
+									96465,	-- Vethir
+								},
+								["groups"] = {
+									i(121517),	-- 
+									i(121515),	-- 
+									i(121518),	-- 
+									i(121516),	-- 
+									i(129324),	-- 
+									i(129325),	-- 
+									i(129326),	-- 
+									i(129327),	-- 
+								},
+							},
+							{
+								["questID"] = 38414,	-- Heart of a Dragon
+								["sourceQuests"] = {
+									38412,	-- Above the Winter Moonlight
+									38618,	-- Above the Winter Moonlight
+								},
+								["qgs"] = {
+									91249,	-- Vethir
+									96465,	-- Vethir
+								},
+							},
+							{
+								["questID"] = 40568,	-- Fury of the Storm
+								["sourceQuests"] = {
+									38412,	-- Above the Winter Moonlight
+									38618,	-- Above the Winter Moonlight
+								},
+								["qgs"] = {
+									91249,	-- Vethir
+									96465,	-- Vethir
+								},
+							},
 							q(39652),	-- Where Dragons Rule
 							q(38624),	-- Cry Thunder!
 						}),
