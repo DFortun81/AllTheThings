@@ -460,7 +460,7 @@ local backdrop = {
 -- Game Tooltip Icon
 local GameTooltipIcon = CreateFrame("FRAME", nil, GameTooltip);
 GameTooltipIcon:SetPoint("TOPRIGHT", GameTooltip, "TOPLEFT", 0, 0);
-GameTooltipIcon:SetSize(96, 96);
+GameTooltipIcon:SetSize(72, 72);
 GameTooltipIcon.icon = GameTooltipIcon:CreateTexture(nil, "ARTWORK");
 GameTooltipIcon.icon:SetAllPoints(GameTooltipIcon);
 GameTooltipIcon.icon:Show();
@@ -6232,8 +6232,9 @@ local function MinimapButtonOnEnter(self)
 	GameTooltip:AddLine(L["MINIMAP_MOUSEOVER_TEXT"], 1, 1, 1);
 	GameTooltip:Show();
 	
-	GameTooltipIcon:SetSize(96,96);
+	GameTooltipIcon:SetSize(72,72);
 	GameTooltipIcon.icon:SetTexture(L["LOGO_LARGE"]);
+	GameTooltipIcon.icon:SetTexCoord(0, 1, 0, 1);
 	GameTooltipIcon:Show();
 end
 local function MinimapButtonOnLeave()
@@ -6680,6 +6681,14 @@ local function SetRowData(self, row, data)
 			row.Label:SetPoint("RIGHT");
 		end
 		row.Label:SetText(text);
+		if data.font then
+			row.Label:SetFontObject(data.font);
+			row.Summary:SetFontObject(data.font);
+		else
+			row.Label:SetFontObject("GameFontNormal");
+			row.Summary:SetFontObject("GameFontNormal");
+		end
+		row:SetHeight(select(2, row.Label:GetFont()) + 4);
 		row.Label:Show();
 		row:Show();
 	else
@@ -6710,32 +6719,31 @@ local function UpdateVisibleRowData(self)
 	if self:GetHeight() > 64 then self.ScrollBar:Show(); else self.ScrollBar:Hide(); end
 	
 	-- Make it so that if you scroll all the way down, you have the ability to see all of the text every time.
-	local container = self.Container;
-	local totalRowCount = #self.rowData + 2;
-	local rowCount = math.floor(container:GetHeight() / container.rowHeight);
-	local current = math.max(1, math.min(self.ScrollBar.CurrentValue, totalRowCount - rowCount));
-	self.ScrollBar:SetMinMaxValues(1, math.max(1, totalRowCount - rowCount));
-	
-	-- Create up to the maximum number of rows required to fill the container.
-	for i=#container.rows,rowCount do CreateRow(container); end
-	
-	-- Set the data for the first row to ALWAYS display the topmost data (essentially becoming a Title Bar)
-	local firstRow = self.rowData[1];
-	if firstRow then
-		SetRowData(self, container.rows[1], firstRow);
-		current = current + 1;
-		
+	local totalRowCount = #self.rowData;
+	if totalRowCount > 0 then
 		-- Fill the remaining rows up to the (visible) row count.
-		for i=2,rowCount do
-			SetRowData(self, container.rows[i], self.rowData[current]);
-			current = current + 1;
+		local container, rowCount, totalHeight = self.Container, 0, 0;
+		local current = math.max(1, math.min(self.ScrollBar.CurrentValue, totalRowCount));
+		for i=1,totalRowCount do
+			local row = container.rows[i] or CreateRow(container);
+			SetRowData(self, row, self.rowData[current]);
+			totalHeight = totalHeight + row:GetHeight();
+			if totalHeight > container:GetHeight() then
+				break;
+			else
+				current = current + 1;
+				rowCount = rowCount + 1;
+			end
 		end
 		
-		-- Hide the extra rows if any exist (these are created when you make the window larger and then shrink, the leftover frames are still alive)
+		-- Hide the extra rows if any exist
 		for i=rowCount + 1,#container.rows do
 			ClearRowData(container.rows[i]);
 			container.rows[i]:Hide();
 		end
+		
+		totalRowCount = totalRowCount + 2;
+		self.ScrollBar:SetMinMaxValues(1, math.max(1, totalRowCount - rowCount));
 		
 		-- If the rows need to be processed again, do so next update.
 		if self.processingLinks then
@@ -7263,13 +7271,9 @@ local function RowOnEnter(self)
 		if reference.isDaily then GameTooltip:AddLine("This can be completed daily."); end
 		if reference.isWeekly then GameTooltip:AddLine("This can be completed weekly."); end
 		if not GameTooltipModel:TrySetModel(reference) and reference.icon then
-			if reference.g then
-				GameTooltipIcon:SetSize(96,96);
-			else
-				GameTooltipIcon:SetSize(64,64);
-			end
+			GameTooltipIcon:SetSize(72,72);
 			GameTooltipIcon.icon:SetTexture(reference.preview or reference.icon);
-			local texcoord = reference.texcoord;
+			local texcoord = reference.previewtexcoord or reference.texcoord;
 			if texcoord then
 				GameTooltipIcon.icon:SetTexCoord(texcoord[1], texcoord[2], texcoord[3], texcoord[4]);
 			else
@@ -7391,7 +7395,6 @@ local function RowOnLeave(self)
 end
 CreateRow = function(self)
 	local row = CreateFrame("Button", nil, self);
-	row:SetHeight(self.rowHeight);
 	row.index = #self.rows;
 	if row.index == 0 then
 		-- This means relative to the parent.
@@ -7411,6 +7414,20 @@ CreateRow = function(self)
 	row:SetScript("OnEnter", RowOnEnter);
 	row:SetScript("OnLeave", RowOnLeave);
 	row:EnableMouse(true);
+	
+	-- Label is the text information you read.
+	row.Label = row:CreateFontString(nil, "ARTWORK", "GameFontNormal");
+	row.Label:SetJustifyH("LEFT");
+	row.Label:SetPoint("BOTTOM");
+	row.Label:SetPoint("TOP");
+	row:SetHeight(select(2, row.Label:GetFont()) + 4);
+	
+	-- Summary is the completion summary information. (percentage text)
+	row.Summary = row:CreateFontString(nil, "ARTWORK", "GameFontNormal");
+	row.Summary:SetJustifyH("CENTER");
+	row.Summary:SetPoint("BOTTOM");
+	row.Summary:SetPoint("RIGHT");
+	row.Summary:SetPoint("TOP");
 	
 	-- Background is used by the Map Highlight functionality.
 	row.Background = row:CreateTexture(nil, "BACKGROUND");
@@ -7440,21 +7457,9 @@ CreateRow = function(self)
 	row.Texture.Border:SetPoint("TOP");
 	row.Texture.Border:SetWidth(row:GetHeight());
 	
-	-- Label is the text information you read.
-	row.Label = row:CreateFontString(nil, "ARTWORK", "GameFontNormal");
-	row.Label:SetJustifyH("LEFT");
-	row.Label:SetPoint("BOTTOM");
-	row.Label:SetPoint("TOP");
-	
-	-- Summary is the completion summary information. (percentage text)
-	row.Summary = row:CreateFontString(nil, "ARTWORK", "GameFontNormal");
-	row.Summary:SetJustifyH("CENTER");
-	row.Summary:SetPoint("BOTTOM");
-	row.Summary:SetPoint("RIGHT");
-	row.Summary:SetPoint("TOP");
-	
 	-- Clear the Row Data Initially
 	ClearRowData(row);
+	return row;
 end
 
 -- Collection Window Creation
@@ -7587,6 +7592,7 @@ function app:GetDataCache()
 		allData.text = L["TITLE"];
 		allData.description = L["DESCRIPTION"];
 		allData.visible = true;
+		allData.font = "GameFontNormalLarge";
 		allData.progress = 0;
 		allData.total = 0;
 		local g, db = {};
@@ -8520,7 +8526,6 @@ function app:GetWindow(suffix, parent, onUpdate)
 		container:SetPoint("TOPLEFT", window, "TOPLEFT", 0, -6);
 		container:SetPoint("RIGHT", scrollbar, "LEFT", 0, 0);
 		container:SetPoint("BOTTOM", window, "BOTTOM", 0, 6);
-		container.rowHeight = select(2, GameFontNormal:GetFont()) + 4;
 		window.Container = container;
 		container.rows = {};
 		scrollbar:SetValue(1);
