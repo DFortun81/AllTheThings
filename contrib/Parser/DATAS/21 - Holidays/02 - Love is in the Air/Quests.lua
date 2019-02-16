@@ -100,7 +100,6 @@ _.Holidays = bubbleDown({["u"] = 18},
 					q(24615, {	-- A Gift for the Regent Lord of Quel'Thalas
 						
 						["qg"] = 37887,	-- Kwee Q. Peddlefeet
-						["maps"] = { 110, },	-- Silvermoon City
 						["isDaily"] = true,
 					}),
 					q(24805, {	-- Uncommon Scents (Horde)
