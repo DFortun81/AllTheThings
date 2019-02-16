@@ -1894,12 +1894,39 @@ _.Zones =
 							["requireSkill"] = 333,
 						}),
 						n(-183, { -- Engineering
+							["requireSkill"] = 202,
 							["groups"] = {
+								q(40856, {	-- It'll Cost You
+									["sourceQuest"] = 40855,	-- Our Man in Azsuna
+									["qg"] = 102195, -- Fargo Flintlocke
+									["requireSkill"] = 202,
+								}),
 								q(40876, {	-- 'Locke, Stock and Barrel
 									["qg"] = 102196,	-- Fargo Flintlocke
 								}),
+								q(40859, {	-- The Latest Fashion: Headguns!
+									["sourceQuests"] = {
+										40856,	-- It'll Cost You
+										40858,	-- The Missing Pieces
+									},
+									["qg"] = 102195, -- Fargo Flintlocke
+									["requireSkill"] = 202,
+									["groups"] = {
+										recipe(198939),	-- Schematic: Blink-Trigger Headgun
+										recipe(198965),	-- Schematic: Tactical Headgun
+										recipe(198966),	-- Schematic: Bolt-Action Headgun
+										recipe(198967),	-- Schematic: Reinforced Headgun
+									},
+								}),
+								q(40858, {	-- The Missing Pieces
+									["sourceQuest"] = 40855,	-- Our Man in Azsuna
+									["qg"] = 102195, -- Fargo Flintlocke
+									["requireSkill"] = 202,
+									["groups"] = {
+										recipe(198976),	-- Schematic: Auto-Hammer [Rank 1]
+									},
+								}),
 							},
-							["requireSkill"] = 202,
 						}),
 						n(-184, { -- Herbalism
 							["groups"] = {
@@ -1910,11 +1937,11 @@ _.Zones =
 									q(40015), -- Ragged Strips of Silk
 								}),
 								q(40017, { -- A Slip of the Hand
-									sp(193417),	-- Herbalism Technique: Aethril (Rank 3)
+									recipe(193417),	-- Herbalism Technique: Aethril (Rank 3)
 								}),
 								i(129122, {	-- Felwort Sample
 									q(40040, { --Felwort Sample
-										sp(193430), -- Herbalism Technique: Felwort (Rank 1)
+										recipe(193430), -- Herbalism Technique: Felwort (Rank 1)
 									}),
 								}),
 							},
@@ -2010,8 +2037,20 @@ _.Zones =
 							q(42372), -- Felblaze Ingress
 							q(42375), -- Eye See You
 							q(42369), -- They're Doing it Wrong
-							q(42367), -- Arkethrax
-							q(42368), -- Quantity over Quality
+							{
+								["questID"] = 42367,	-- Arkethrax
+								["sourceQuest"] = 42375,	-- Eye See You
+								["qg"] = 107245,	-- Marius Felbane
+								["groups"] = {
+									i(121480),	-- Felblaze Chain
+									i(129171),	-- Band of Ingression
+								},
+							},
+							{
+								["questID"] = 42367,	-- Quantity over Quality
+								["sourceQuest"] = 42368,	-- Eye See You
+								["qg"] = 107245,	-- Marius Felbane
+							},
 						}),
 						sz(10665,5, { -- Llothien Highlands
 							q(42238), -- Missing Demon
@@ -2116,7 +2155,7 @@ _.Zones =
 					q(37908),	-- Inquisitor Ernstenbok
 					q(39936),	-- Inscription of the Body
 					q(39389),	-- It Hungers for Blood
-					q(40856),	-- It'll Cost You
+					
 					q(40556),	-- Jabrul Needs You
 					q(38443),	-- Journey to the Repose
 					q(40873),	-- Keep Yer Powder Dry
@@ -2203,7 +2242,6 @@ _.Zones =
 					q(41802),	-- The Gates of Valor
 					q(45174),	-- The Hunt for Illidan Stormrage
 					q(41185),	-- The Keys to Success
-					q(40859),	-- The Latest Fashion: Headguns!
 ]]--
 					q(43378, {	-- Eye of Azshara: Looking Through the Lens
 						["qg"] = 110687, -- Yalia Sagewhisper
@@ -2232,14 +2270,6 @@ _.Zones =
 						i(133814),	-- Recipe: Faronaar Fizz [Rank 1]
 					})),
 					sq(37727, qg(89341, q(37728))),	-- Presentation is Everything
-					q(40858, {	-- The Missing Pieces
-						["groups"] = {
-							sp(201584),	-- Schematic: Auto-Hammer
-						},
-						["qg"] = 102195, -- Fargo Flintlocke
-						["sourceQuests"] = { 40856 }, -- It'll Cost You
-						["requireSkill"] = 202,
-					}),
 					q(40210, {	-- Time Well Spent
 						["qg"] = 98964, -- Celea
 						["sourceQuests"] = {
