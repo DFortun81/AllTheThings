@@ -178,7 +178,7 @@ _.Instances =
 							i(13218),	-- Fang of the Crystal Spider
 						},
 						["coords"] = {
-							{ 61.0, 76.0, 250 }, -- Skitterweb Tunnels
+							{ 55.0, 75.0, 251 }, -- Skitterweb Tunnels
 						},
 						["description"] = "This is a rare that is not always present.",
 					}),
