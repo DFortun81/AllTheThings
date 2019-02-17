@@ -73,6 +73,9 @@ _.Instances =
 							}),	
 						})),
 						cr(44566, e(104, {	-- Ozumat
+							{	-- Throne of the Tides
+								["achievementID"] = 4839,	-- Throne of the Tides
+							},
 							i( 56284),	-- Whitefin Axe
 							i( 56289),	-- Bioluminescent Lamp
 							i( 56288),	-- Pipefish Cord
@@ -99,6 +102,9 @@ _.Instances =
 						["ignoreBonus"] = true,
 						["groups"] = {
 							cr(40586, e(101, {	-- Lady Naz'jar
+								{	-- Old Faithful
+									["achievementID"] = 5285,	-- Old Faithful
+								},
 								i( 56266),	-- Lightning Whelk Axe
 								i( 56269),	-- Aurelian Mitre
 								i(157587),	-- Old One Eye's Cowl
@@ -122,6 +128,12 @@ _.Instances =
 								i( 56280),	-- Porcelain Crab
 							})),
 							cr(44566, e(104, {	-- Ozumat
+								{	-- Heroic: Throne of the Tides
+									["achievementID"] = 5061,	-- Heroic: Throne of the Tides
+								},
+								{	-- Prince of Tides
+									["achievementID"] = 5286,	-- Prince of Tides
+								},
 								i( 56284),	-- Whitefin Axe
 								i( 56289),	-- Bioluminescent Lamp
 								i( 56288),	-- Pipefish Cord

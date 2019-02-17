@@ -94,6 +94,9 @@ _.Instances =
 							}),
 						})),
 						cr(43875, e(116, {	-- Asaad, Caliph of Zephyrs
+							{    -- The Vortex Pinnacle
+                                ["achievementID"] = 4847,    -- The Vortex Pinnacle
+                            },
 							i(56366),	-- Lightningflash
 							i(56374),	-- Lunar Halo
 							i(56369),	-- Billowing Cape
