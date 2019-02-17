@@ -90,7 +90,7 @@ _.Instances =
 							i(13285),	-- The Blackrock Slicers
 						},
 						["coords"] = {
-							{ 39.0, 64.0, 252 },
+							{ 39.0, 64.0, 252 }, -- Mok'Doom
 						},
 						["description"] = "This is a rare that is not always present.",
 					}),
@@ -100,7 +100,7 @@ _.Instances =
 							i(13286),	-- Rivenspike 
 						},
 						["coords"] = {
-							{ 54.0, 58.0, 252 },
+							{ 54.0, 58.0, 252 }, -- Hordemar City (Upper)
 						},
 						["description"] = "This is a rare that is not always present.",
 					}),
@@ -111,7 +111,7 @@ _.Instances =
 							i(13283),	-- Magus Ring
 						},
 						["coords"] = {
-							{ 39.0, 64.0, 252 },
+							{ 39.0, 64.0, 252 }, -- Mok'Doom
 						},
 						["description"] = "This is a rare that is not always present.",
 					}),
@@ -167,7 +167,7 @@ _.Instances =
 							i(12838),	-- Plans: Arcanite Reaper
 						},
 						["coords"] = {
-							{ 53.0, 67.0, 250 },
+							{ 53.0, 67.0, 250 }, -- Hordemar City (Lower)
 						},
 						["description"] = "This is a rare that is not always present.",
 					}),
@@ -178,7 +178,7 @@ _.Instances =
 							i(13218),	-- Fang of the Crystal Spider
 						},
 						["coords"] = {
-							{ 61.0, 76.0, 250 },
+							{ 61.0, 76.0, 250 }, -- Skitterweb Tunnels
 						},
 						["description"] = "This is a rare that is not always present.",
 					}),
@@ -237,8 +237,8 @@ _.Instances =
 							i(13198),	-- Hurd Smasher
 						},
 						["coords"] = {
-							{ 36.0, 72.0, 254 },
-							{ 36.0, 60.0, 254 },
+							{ 36.0, 72.0, 254 }, -- Hordemar City (Upper)
+							{ 36.0, 60.0, 254 }, -- Hordemar City (Upper)
 						},
 						["description"] = "This is a rare that is not always present.",
 					}),
