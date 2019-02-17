@@ -84,29 +84,38 @@ _.Instances =
 							},
 						}),
 					}),
-					n(  9218, {			-- Spirestone Battle Lord (Rare)
+					n(9218, { -- Spirestone Battle Lord (Rare)
 						["groups"] = {	
-							dr(51, i(13284)),	-- Swiftdart Battleboots
-							dr(36, i(13285)),	-- The Blackrock Slicers
+							i(13284),	-- Swiftdart Battleboots
+							i(13285),	-- The Blackrock Slicers
+						},
+						["coords"] = {
+							{ 39.0, 64.0, 252 },
 						},
 						["description"] = "This is a rare that is not always present.",
 					}),
-					n(  9219, {			-- Spirestone Butcher (Rare)
+					n(9219, { -- Spirestone Butcher (Rare)
 						["groups"] = {	
-							dr(54, i(12608)),	-- Butcher's Apron
-							dr(41, i(13286)),	-- Rivenspike 
+							i(12608),	-- Butcher's Apron
+							i(13286),	-- Rivenspike 
+						},
+						["coords"] = {
+							{ 54.0, 58.0, 252 },
 						},
 						["description"] = "This is a rare that is not always present.",
 					}),
-					n(  9217, {			-- Spirestone Lord Magus (Rare)
+					n(9217, { -- Spirestone Lord Magus (Rare)
 						["groups"] = {	
 							i(13261),	-- Globe of D'sak
 							i(13282),	-- Ogreseer Tower Boots
 							i(13283),	-- Magus Ring
 						},
+						["coords"] = {
+							{ 39.0, 64.0, 252 },
+						},
 						["description"] = "This is a rare that is not always present.",
 					}),
-					cr( 9196, e(388, {	-- Highlord Omokk
+					cr(9196, e(388, { -- Highlord Omokk
 						un(2, i(16670)),	-- Boots of Elements
 						i(13167),	-- Fist of Omokk
 						i(151412),	-- Ogre Highlord's Casque
@@ -118,7 +127,7 @@ _.Instances =
 							un(40, q(4742)),	-- Seal of Ascension
 						}),
 					})),
-					cr( 9236, e(389, {	-- Shadow Hunter Vosh'gajin
+					cr(9236, e(389, { -- Shadow Hunter Vosh'gajin
 						i( 12651),	-- Blackcrow
 						i( 12653),	-- Riphook
 						i( 13257),	-- Demonic Runed Spaulders
@@ -127,7 +136,7 @@ _.Instances =
 						i(151413),	-- Smolderthorn Greatbelt
 						un(7, i(16712)), 	-- Shadowcraft Gloves																				
 					})),
-					n( 16080, {			-- Mor Grayhoof Summonable Read Description
+					n(16080, { -- Mor Grayhoof Summonable Read Description
 						["groups"] = {
 							i(22057, {	
 								un(11, i(22325)), -- Belt of the Trickster
@@ -150,20 +159,26 @@ _.Instances =
 							un(40, q(4742)),	-- Seal of Ascension
 						}),
 					})),
-					n(  9596, {			-- Bannok Grimaxe
+					n(9596, { -- Bannok Grimaxe (Rare)
 						["groups"] = {	
-							dr(33, i(12634)),	-- Chiselbrand Girdle
-							dr(31, i(12621)),	-- Demonfork
-							dr(25, i(12637)),	-- Backusarian Gauntlets
-							dr(8, i(12838)),	-- Plans: Arcanite Reaper
+							i(12634),	-- Chiselbrand Girdle
+							i(12621),	-- Demonfork
+							i(12637),	-- Backusarian Gauntlets
+							i(12838),	-- Plans: Arcanite Reaper
+						},
+						["coords"] = {
+							{ 53.0, 67.0, 250 },
 						},
 						["description"] = "This is a rare that is not always present.",
 					}),
-					n( 10376, {			-- Crystal Fang
+					n(10376, {	-- Crystal Fang (Rare)
 						["groups"] = {	
-							dr(45, i(13185)),	-- Sunderseer Mantle
-							dr(25, i(13184)),	-- Fallbrush Handgrips
-							dr(13, i(13218)),	-- Fang of the Crystal Spider
+							i(13185),	-- Sunderseer Mantle
+							i(13184),	-- Fallbrush Handgrips
+							i(13218),	-- Fang of the Crystal Spider
+						},
+						["coords"] = {
+							{ 61.0, 76.0, 250 },
 						},
 						["description"] = "This is a rare that is not always present.",
 					}),
@@ -215,11 +230,15 @@ _.Instances =
 						i( 13206),	-- Wolfshear Leggings
 						un(2, i(16718)),	-- Wildheart Spaulders
 					})),
-					n(  9718, {			-- Ghok Bashguud
+					n(9718, { -- Ghok Bashguud (Rare)
 						["groups"] = {	
-							dr(55, i(13203)),	-- Armswake Cloak
-							dr(21, i(13204)),	-- Bashguuder
-							dr(16, i(13198)),	-- Hurd Smasher
+							i(13203),	-- Armswake Cloak
+							i(13204),	-- Bashguuder
+							i(13198),	-- Hurd Smasher
+						},
+						["coords"] = {
+							{ 36.0, 72.0, 254 },
+							{ 36.0, 60.0, 254 },
 						},
 						["description"] = "This is a rare that is not always present.",
 					}),
