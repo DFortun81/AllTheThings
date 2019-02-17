@@ -1217,11 +1217,45 @@ _.Zones =
 									96465,	-- Vethir
 								},
 							},
-							q(39652),	-- Where Dragons Rule
-							q(38624),	-- Cry Thunder!
+							{
+								["questID"] = 39652,	-- Where Dragons Rule
+								["sourceQuests"] = {
+									38413,	-- Wings of Liberty
+									38414,	-- Heart of a Dragon
+									40568,	-- Fury of the Storm
+								},
+								["qg"] = 96465,	-- Vethir
+								["groups"] = {
+									i(132806),	-- Azariah's Last Moments
+									i(132808),	-- Breath of Vethir
+									i(132811),	-- Crystallized Tideskorn Cruelty
+									i(132814),	-- Drekirjar Jarl's Disdain
+									i(132800),	-- Drekirjar Lifeblood
+									i(132810),	-- Erratic Stormforce
+									i(132802),	-- Hrydshal Forgeflame
+									i(132816),	-- Hrydshal Weald
+									i(132804),	-- Sigil of Hrydshal
+									i(132817),	-- Shade of Thorim's Peak
+									i(132815),	-- Storm-Charged Lodestone
+									i(132805),	-- Stormborn Courage
+									i(132819),	-- Thorignir Slipstream
+									i(132803),	-- Thorim's Peak Snowcap
+									i(132813),	-- Thrymjaris' Fury
+									i(132799),	-- Thrymjaris' Grace
+								},
+							},
+							{
+								["questID"] = 38624,	-- Cry Thunder!
+								["sourceQuest"] = 39652,	-- Where Dragons Rule
+								["qg"] = 92218,	-- Thymjaris
+							},
 						}),
 						crit(5, { -- The Trial of Valor
-							q(39803),	-- The Trials Continue
+							{
+								["questID"] = 39803,	-- The Trials Continue
+								["sourceQuest"] = 38624,	-- Cry Thunder!
+								["qg"] = 97074,	-- Huginn
+							},
 							q(39804),	-- Speaking of Bones
 							q(39796),	-- To Haustvald
 							q(38778),	-- Turn the Keys
@@ -2441,6 +2475,7 @@ _.Zones =
 			["lvl"] = 98,
 			["maps"] = {
 				636,	-- Stormscale Cavern
+				637,	-- Thorignir Refuge
 				639,	-- Aggramar's Vault
 			},
 			["achievementID"] = 10668,
