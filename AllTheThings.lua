@@ -6304,7 +6304,7 @@ local function CreateMiniListForGroup(group)
 	-- Pop Out Functionality! :O
 	local popout = app:GetWindow((group.parent and group.parent.text or "") .. (group.text or ""));
 	if group.s then
-		popout.data = setmetatable({ ["g"] = {}, ["progress"] = 0, ["total"] = 0, ['hideText'] = true }, { __index = group });
+		popout.data = setmetatable({ ["g"] = {}, ["progress"] = 0, ["total"] = 0, ['hideText'] = true, ["visible"] = true, }, { __index = group });
 		
 		-- Attempt to get information about the source ID.
 		local sourceInfo = C_TransmogCollection_GetSourceInfo(group.s);
