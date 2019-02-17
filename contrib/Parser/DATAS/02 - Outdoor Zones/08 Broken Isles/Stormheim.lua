@@ -1734,11 +1734,17 @@ _.Zones =
 							
 					}), 
 					n(98188, { 		-- Egyl the Enduring
+						["questID"] = 40068,
 						["groups"] = {	
 							i(132898),
 						},
-						["questID"] = 40068,	
-							
+					}), 
+					n(91803, { 		-- Fathnyr
+						-- ["questID"] = ,	-- 
+						["coord"] = { 46.64, 84.7, 634},
+						["groups"] = {
+							i(129206),	-- Andvari's Gift
+						},
 					}), 
 					n(91529, { 		-- Glimar Ironfist
 						["groups"] = {
@@ -1898,8 +1904,7 @@ _.Zones =
 				--	n(108885, { 	-- Aegir Wavecrusher	}), 
 				--	n(109113, { 	-- Boulderfall, the Eroded	}), 
 				--	n(111463, { 	-- Bulvinkel	}),
-				--	n(108790, { 	-- Den Mother Ylva	}), 
-				--	n(91803, { 		-- Fathnyr	}), 
+				--	n(108790, { 	-- Den Mother Ylva	}),
 				--	n(108827, { 	-- Fjorlag, the Grave's Chill	}), 
 				--	n(108823, { 	-- Halfdan	}), 
 				--	n(92682, { 		-- Helmouth Raider	}), 
