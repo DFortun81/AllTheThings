@@ -38,11 +38,17 @@ _.Holidays = bubbleDown({["u"] = 18},
 								-- Achievement-related Items
 								un(18, i(49909, {	-- Box of Chocolates
 									["g"] = {
-										{
-											["achievementID"] = 1702,	-- Sweet Tooth
-											["criteriaID"] = 1,			-- Buttermilk Delight Criteria
-											["itemID"] = 22236,			-- Buttermilk Delight
-										},
+										i(22236, {	-- Buttermilk Delight
+											["g"] = {
+												{
+													["achievementID"] = 1291,	-- Lonely?
+												},
+												{
+													["achievementID"] = 1702,	-- Sweet Tooth
+													["criteriaID"] = 1,			-- Buttermilk Delight Criteria
+												},
+											},
+										}),
 										{
 											["achievementID"] = 1702,	-- Sweet Tooth
 											["criteriaID"] = 2,			-- Dark Desire Criteria
@@ -57,11 +63,6 @@ _.Holidays = bubbleDown({["u"] = 18},
 											["achievementID"] = 1702,	-- Sweet Tooth
 											["criteriaID"] = 4,			-- Very Berry Cream Criteria
 											["itemID"] = 22238,			-- Very Berry Cream
-										},
-										{
-											["achievementID"] = 1291,	-- Lonely?
-											["criteriaID"] = 5,			-- Buttermilk Delight Criteria
-											["itemID"] = 22236,			-- Buttermilk Delight
 										},
 									},
 								})),
