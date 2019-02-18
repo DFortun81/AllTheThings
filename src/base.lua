@@ -12,6 +12,21 @@ app.events = {};
 app:SetSize(1, 1);
 app:Show();
 
+local texture = app:CreateTexture(nil, "ARTWORK");
+getmetatable(texture).__index.SetATTSprite = function(self, name, x, y, w, h, sourceW, sourceH)
+	self:SetTexture("Interface\\Addons\\AllTheThings\\assets\\content_20190216_1");
+	self:SetTexCoord(x / sourceW, (x + w) / sourceW, y / sourceH, (y + h) / sourceH);
+end
+texture:Hide();
+local button = CreateFrame("BUTTON", app:GetName() .. "BUTTON", app);
+getmetatable(button).__index.SetATTHighlightSprite = function(self, name, x, y, w, h, sourceW, sourceH)
+	self:SetHighlightTexture("Interface\\Addons\\AllTheThings\\assets\\content_20190216_1");
+	local hl = self:GetHighlightTexture();
+	hl:SetATTSprite(name, x, y, w, h, sourceW, sourceH);
+	return hl;
+end
+button:Hide();
+
 -- ReloadUI slash command (for ease of use)
 SLASH_RELOADUI1 = "/reloadui";
 SLASH_RELOADUI2 = "/rl";

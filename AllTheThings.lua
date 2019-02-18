@@ -6262,14 +6262,11 @@ local function CreateMinimapButton()
 	button:RegisterForClicks("LeftButtonUp", "RightButtonUp");
 	
 	-- Create the Button Texture
+	button:SetATTHighlightSprite("epic_36x36", 429, 179, 36, 36, 512, 256):SetAlpha(0.2);
 	local texture = button:CreateTexture(nil, "BACKGROUND");
+	texture:SetATTSprite("base_36x36", 429, 141, 36, 36, 512, 256);
 	texture:SetPoint("CENTER", 0, 0);
-	texture:SetTexture("Interface\\Addons\\AllTheThings\\assets\\content_20190216_1");
-	texture:SetTexCoord(429 / 512, (429 + 36) / 512, 141 / 256, (141 + 36) / 256);
 	texture:SetAllPoints();
-	button:SetHighlightTexture("Interface\\Addons\\AllTheThings\\assets\\content_20190216_1");
-	button:GetHighlightTexture():SetTexCoord(429 / 512, (429 + 36) / 512, 179 / 256, (179 + 36) / 256);
-	button:GetHighlightTexture():SetAlpha(0.2);
 	
 	-- Button Configuration
 	button.update = function(self)
