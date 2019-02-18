@@ -558,7 +558,13 @@ _.Instances =
 									57280,	-- Twilight Siege Captain
 								},
 							}),
+							{	-- Siege of Wyrmrest Temple
+								["achievementID"] = 6106,	-- Siege of Wyrmrest Temple
+							},
 							cr(55265, e(311, {	-- Morchok
+								{	-- Don't Stand So Close to Me
+									["achievementID"] = 6174,	-- Don't Stand So Close to Me
+								},
 								i(77212),	-- Hand of Morchok
 								i(77214),	-- Vagaries of Time
 								i(77262),	-- Petrified Fungal Heart
@@ -573,6 +579,9 @@ _.Instances =
 								i(77265),	-- Pillarfoot Greaves
 							})),
 							cr(55308, e(324, {	-- Warlord Zon'ozz
+								{	-- Ping Pong Champion
+									["achievementID"] = 6128,	-- Ping Pong Champion
+								},
 								i(78183, {	-- Gauntlets of the Corrupted Conqueror
 									i(76875),	-- Gauntlets of Radiant Glory
 									i(76766),	-- Gloves of Radiant Glory
@@ -608,6 +617,27 @@ _.Instances =
 								i(77204),	-- Seal of the Seven Signs
 							})),
 							cr(55312, e(325, {	-- Yor'sahj the Unsleeping
+								{	-- Taste the Rainbow!
+									["achievementID"] = 6129,	-- Taste the Rainbow!
+									["g"] = {
+										{	-- Taste the Rainbow!: Black and Blue
+											["achievementID"] = 6129,	-- Taste the Rainbow!
+											["criteriaID"] = 3,	-- Black and Blue
+										},
+										{	-- Taste the Rainbow!: Black and Yellow
+											["achievementID"] = 6129,	-- Taste the Rainbow!
+											["criteriaID"] = 1,	-- Black and Yellow
+										},
+										{	-- Taste the Rainbow!: Purple and Yellow
+											["achievementID"] = 6129,	-- Taste the Rainbow!
+											["criteriaID"] = 4,	-- Purple and Yellow
+										},
+										{	-- Taste the Rainbow!: Red and Green
+											["achievementID"] = 6129,	-- Taste the Rainbow!
+											["criteriaID"] = 2,	-- Red and Green
+										},
+									},
+								},
 								i(78181, {	-- Leggings of the Corrupted Conqueror
 									i(76768),	-- Greaves of Radiant Glory
 									i(77006),	-- Legguards of Radiant Glory
@@ -644,6 +674,9 @@ _.Instances =
 								i(77206),	-- Soulshifter Vortex
 							})),
 							cr(55689, e(317, {	-- Hagara the Stormbinder
+								{	-- Holding Hands
+									["achievementID"] = 6175,	-- Holding Hands
+								},
 								i(78180, {	-- Shoulders of the Corrupted Conqueror
 									i(76769),	-- Mantle of Radiant Glory
 									i(76878),	-- Pauldrons of Radiant Glory
@@ -679,6 +712,13 @@ _.Instances =
 								i(78011),	-- Signet of Grasping Mouths
 							})),
 							cr(55294, e(331, {	-- Ultraxion
+								{	-- Fall of Deathwing: Ultraxion
+									["achievementID"] = 6107,	-- Fall of Deathwing
+									["criteriaID"] = 1,	-- Ultraxion
+								},
+								{	-- Minutes to Midnight
+									["achievementID"] = 6084,	-- Minutes to Midnight
+								},
 								i(78184, {	-- Chest of the Corrupted Conqueror
 									i(76874),	-- Battleplate of Radiant Glory
 									i(76765),	-- Breastplate of Radiant Glory
@@ -716,6 +756,13 @@ _.Instances =
 								i(77205),	-- Creche of the Final Dragon
 							})),
 							cr(56427, e(332, {	-- Warmaster Blackthorn
+								{	-- Deck Defender
+									["achievementID"] = 6105,	-- Deck Defender
+								},
+								{	-- Fall of Deathwing: Warmaster Blackhorn
+									["achievementID"] = 6107,	-- Fall of Deathwing
+									["criteriaID"] = 2,	-- Warmaster Blackhorn
+								},
 								i(78182, {	-- Crown of the Corrupted Conqueror
 									i(77005),	-- Faceguard of Radiant Glory
 									i(76767),	-- Headguard of Radiant Glory
@@ -752,6 +799,13 @@ _.Instances =
 								i(77202),	-- Starcatcher Compass
 							})),
 							cr(53879, e(318, {	-- Spine of Deathwing
+								{	-- Fall of Deathwing: Spine of Deathwing
+									["achievementID"] = 6107,	-- Fall of Deathwing
+									["criteriaID"] = 3,	-- Spine of Deathwing
+								},
+								{	-- Maybe He'll Get Dizzy...
+									["achievementID"] = 6133,	-- Maybe He'll Get Dizzy...
+								},
 								i(152980),	-- Elementium Back Plate (PET!)
 								i(77236),	-- Backbreaker Spaulders
 								i(77235),	-- Gauntlets of the Golden Thorn
@@ -765,6 +819,39 @@ _.Instances =
 								i(77197),	-- Wrath of Unchaining
 							})),
 							cr(56173, e(333, {	-- Madness of Deathwing
+								{	-- Chromatic Champion
+									["achievementID"] = 6180,	-- Chromatic Champion
+									["g"] = {
+										{	-- Alexstrasza Assaulted First
+											["achievementID"] = 6180,	-- Chromatic Champion
+											["criteriaID"] = 1,	-- Alexstrasza Assaulted First
+										},
+										{	-- Kalecgos Assaulted First
+											["achievementID"] = 6180,	-- Chromatic Champion
+											["criteriaID"] = 2,	-- Kalecgos Assaulted First
+										},
+										{	-- Nozdormu Assaulted First
+											["achievementID"] = 6180,	-- Chromatic Champion
+											["criteriaID"] = 3,	-- Nozdormu Assaulted First
+										},
+										{	-- Ysera Assaulted First
+											["achievementID"] = 6180,	-- Chromatic Champion
+											["criteriaID"] = 4,	-- Ysera Assaulted First
+										},
+									},
+								},
+								{	-- Destroyer's End
+									["achievementID"] = 6177,	-- Destroyer's End
+									["g"] = {
+										{	-- ,Destroyer's End
+											["titleID"] = 196,	-- ,Destroyer's End
+										},
+									},
+								},
+								{	-- Fall of Deathwing: Madness of Deathwing
+									["achievementID"] = 6107,	-- Fall of Deathwing
+									["criteriaID"] = 4,	-- Madness of Deathwing
+								},
 								i(77067),	-- Reins of the Blazing Drake (MOUNT!)
 								i(152981),	-- Severed Tentacle (PET)!
 								i(77191),	-- Gurthalak, Voice of the Deeps
@@ -1000,7 +1087,16 @@ _.Instances =
 									57280,	-- Twilight Siege Captain
 								},
 							}),						
+							{	-- Siege of Wyrmrest Temple
+								["achievementID"] = 6106,	-- Siege of Wyrmrest Temple
+							},
 							cr(55265, e(311, {	-- Morchok
+								{	-- Don't Stand So Close to Me
+									["achievementID"] = 6174,	-- Don't Stand So Close to Me
+								},
+								{	-- Heroic: Morchok
+									["achievementID"] = 6109,	-- Heroic: Morchok
+								},
 								i(78371),	-- Hand of Morchok
 								i(78363),	-- Vagaries of Time
 								i(78364),	-- Petrified Fungal Heart
@@ -1013,10 +1109,14 @@ _.Instances =
 								i(78362),	-- Sporebeard Gauntlets
 								i(78370),	-- Girdle of Shattered Stone
 								i(78361),	-- Pillarfoot Greaves
-								
-								
 							})),
 							cr(55308, e(324, {	-- Warlord Zon'ozz
+								{	-- Heroic: Warlord Zon'ozz
+									["achievementID"] = 6110,	-- Heroic: Warlord Zon'ozz
+								},
+								{	-- Ping Pong Champion
+									["achievementID"] = 6128,	-- Ping Pong Champion
+								},
 								i(78853, {	-- Gauntlets of the Corrupted Conqueror
 									i(78675),	-- Gauntlets of Radiant Glory
 									i(78673),	-- Gloves of Radiant Glory
@@ -1052,6 +1152,30 @@ _.Instances =
 								i(77989),	-- Seal of the Seven Signs
 							})),
 							cr(55312, e(325, {	-- Yor'sahj the Unsleeping
+								{	-- Heroic: Yor'sahj the Unsleeping
+									["achievementID"] = 6111,	-- Heroic: Yor'sahj the Unsleeping
+								},
+								{	-- Taste the Rainbow!
+									["achievementID"] = 6129,	-- Taste the Rainbow!
+									["g"] = {
+										{	-- Taste the Rainbow!: Black and Blue
+											["achievementID"] = 6129,	-- Taste the Rainbow!
+											["criteriaID"] = 3,	-- Black and Blue
+										},
+										{	-- Taste the Rainbow!: Black and Yellow
+											["achievementID"] = 6129,	-- Taste the Rainbow!
+											["criteriaID"] = 1,	-- Black and Yellow
+										},
+										{	-- Taste the Rainbow!: Purple and Yellow
+											["achievementID"] = 6129,	-- Taste the Rainbow!
+											["criteriaID"] = 4,	-- Purple and Yellow
+										},
+										{	-- Taste the Rainbow!: Red and Green
+											["achievementID"] = 6129,	-- Taste the Rainbow!
+											["criteriaID"] = 2,	-- Red and Green
+										},
+									},
+								},
 								i(78856, {	-- Leggings of the Corrupted Conqueror
 									i(78717),	-- Greaves of Radiant Glory
 									i(78715),	-- Legguards of Radiant Glory
@@ -1088,6 +1212,12 @@ _.Instances =
 								i(77990),	-- Soulshifter Vortex
 							})),
 							cr(55689, e(317, {	-- Hagara the Stormbinder
+								{	-- Heroic: Hagara the Stormbinder
+									["achievementID"] = 6112,	-- Heroic: Hagara the Stormbinder
+								},
+								{	-- Holding Hands
+									["achievementID"] = 6175,	-- Holding Hands
+								},
 								i(78859, {	-- Shoulders of the Corrupted Conqueror
 									i(78746),	-- Mantle of Radiant Glory
 									i(78742),	-- Pauldrons of Radiant Glory
@@ -1123,6 +1253,16 @@ _.Instances =
 								i(78413),	-- Signet of Grasping Mouths
 							})),
 							cr(55294, e(331, {	-- Ultraxion
+								{	-- Fall of Deathwing: Ultraxion
+									["achievementID"] = 6107,	-- Fall of Deathwing
+									["criteriaID"] = 1,	-- Ultraxion
+								},
+								{	-- Heroic: Ultraxion
+									["achievementID"] = 6113,	-- Heroic: Ultraxion
+								},
+								{	-- Minutes to Midnight
+									["achievementID"] = 6084,	-- Minutes to Midnight
+								},
 								i(78847, {	-- Chest of the Corrupted Conqueror
 									i(78727),	-- Battleplate of Radiant Glory
 									i(78726),	-- Breastplate of Radiant Glory
@@ -1160,6 +1300,16 @@ _.Instances =
 								i(77992),	-- Creche of the Final Dragon
 							})),
 							cr(56427, e(332, {	-- Warmaster Blackthorn
+								{	-- Deck Defender
+									["achievementID"] = 6105,	-- Deck Defender
+								},
+								{	-- Fall of Deathwing: Warmaster Blackhorn
+									["achievementID"] = 6107,	-- Fall of Deathwing
+									["criteriaID"] = 2,	-- Warmaster Blackhorn
+								},
+								{	-- Heroic: Warmaster Blackhorn
+									["achievementID"] = 6114,	-- Heroic: Warmaster Blackhorn
+								},
 								i(78850, {	-- Crown of the Corrupted Conqueror
 									i(78695),	-- Faceguard of Radiant Glory
 									i(78692),	-- Headguard of Radiant Glory
@@ -1196,6 +1346,16 @@ _.Instances =
 								i(77993),	-- Starcatcher Compass
 							})),
 							cr(53879, e(318, {	-- Spine of Deathwing
+								{	-- Fall of Deathwing: Spine of Deathwing
+									["achievementID"] = 6107,	-- Fall of Deathwing
+									["criteriaID"] = 3,	-- Spine of Deathwing
+								},
+								{	-- Heroic: Spine of Deathwing
+									["achievementID"] = 6115,	-- Heroic: Spine of Deathwing
+								},
+								{	-- Maybe He'll Get Dizzy...
+									["achievementID"] = 6133,	-- Maybe He'll Get Dizzy...
+								},
 								i(152980),	-- Elementium Back Plate (PET!)
 								i(78465),	-- Backbreaker Spaulders
 								i(78464),	-- Gauntlets of the Golden Thorn
@@ -1209,6 +1369,47 @@ _.Instances =
 								i(77994),	-- Wrath of Unchaining
 							})),
 							cr(56173, e(333, {	-- Madness of Deathwing
+								{	-- Chromatic Champion
+									["achievementID"] = 6180,	-- Chromatic Champion
+									["g"] = {
+										{	-- Alexstrasza Assaulted First
+											["achievementID"] = 6180,	-- Chromatic Champion
+											["criteriaID"] = 1,	-- Alexstrasza Assaulted First
+										},
+										{	-- Kalecgos Assaulted First
+											["achievementID"] = 6180,	-- Chromatic Champion
+											["criteriaID"] = 2,	-- Kalecgos Assaulted First
+										},
+										{	-- Nozdormu Assaulted First
+											["achievementID"] = 6180,	-- Chromatic Champion
+											["criteriaID"] = 3,	-- Nozdormu Assaulted First
+										},
+										{	-- Ysera Assaulted First
+											["achievementID"] = 6180,	-- Chromatic Champion
+											["criteriaID"] = 4,	-- Ysera Assaulted First
+										},
+									},
+								},
+								{	-- Destroyer's End
+									["achievementID"] = 6177,	-- Destroyer's End
+									["g"] = {
+										{	-- ,Destroyer's End
+											["titleID"] = 196,	-- ,Destroyer's End
+										},
+									},
+								},
+								{	-- Fall of Deathwing: Madness of Deathwing
+									["achievementID"] = 6107,	-- Fall of Deathwing
+									["criteriaID"] = 4,	-- Madness of Deathwing
+								},
+								{	-- Heroic: Madness of Deathwing
+									["achievementID"] = 6116,	-- Heroic: Madness of Deathwing
+									["g"] = {
+										{	-- ,Savior of Azeroth
+											["titleID"] = 194,	-- ,Savior of Azeroth
+										},
+									},
+								},
 								i(77069),	-- Life-Binder's Handmaiden (MOUNT!)
 								i(77067),	-- Reins of the Blazing Drake (MOUNT!)
 								i(152981),	-- Severed Tentacle (PET!)

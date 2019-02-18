@@ -7,6 +7,9 @@ _.Instances =
 		["groups"] = {
 			inst(78, { 	-- Firelands
 				["groups"] = {
+					{	-- Firelands
+						["achievementID"] = 5802,	-- Firelands
+					},
 					n(-10066, {	-- Legendary Questline
 						["classes"] = { 5, 7, 8, 9, 11 },    -- Priest, Shaman, Mage, Warlock, Druid
 						["title"] = "Dragonwrath, Tarecgosa's Rest",
@@ -335,6 +338,9 @@ _.Instances =
 							}),
 							e(192, {	-- Beth'tilac		
 								["groups"] = {		
+									{	-- Death from Above
+										["achievementID"] = 5821,	-- Death from Above
+									},
 									i(152976),	-- Cinderweb Egg (PET!)
 									i(71039),	-- Funeral Pyre
 									i(70922),	-- Mandible of Beth'tilac
@@ -355,6 +361,9 @@ _.Instances =
 							}),			
 							e(193, {	-- Lord Rhyolith		
 								["groups"] = {
+									{	-- Not an Ambi-Turner
+										["achievementID"] = 5810,	-- Not an Ambi-Turner
+									},
 									i(71006),	-- Volcanospike
 									i(70991),	-- Arbalest of Erupting Fury
 									i(71011),	-- Flickering Cowl
@@ -372,7 +381,28 @@ _.Instances =
 								["creatureID"] = 52558,		
 							}),			
 							e(194, {	-- Alysrazor		
-								["groups"] = {		
+								["groups"] = {
+									{	-- Do a Barrel Roll!
+										["achievementID"] = 5813,	-- Do a Barrel Roll!
+										["g"] = {
+											{	-- Brushfire
+												["achievementID"] = 5813,	-- Do a Barrel Roll!
+												["criteriaID"] = 1,	-- Brushfire
+											},
+											{	-- Fiery Tornado
+												["achievementID"] = 5813,	-- Do a Barrel Roll!
+												["criteriaID"] = 4,	-- Fiery Tornado
+											},
+											{	-- Incendiary Cloud
+												["achievementID"] = 5813,	-- Do a Barrel Roll!
+												["criteriaID"] = 3,	-- Incendiary Cloud
+											},
+											{	-- Lava Spew
+												["achievementID"] = 5813,	-- Do a Barrel Roll!
+												["criteriaID"] = 2,	-- Lava Spew
+											},
+										},
+									},
 									i(71665),	-- Flametalon of Alysrazor (MOUNT!)
 									i(70733),	-- Alysra's Razor
 									i(70734),	-- Greathelm of the Voracious Maw
@@ -393,6 +423,31 @@ _.Instances =
 							}),			
 							e(195, {	-- Shannox		
 								["groups"] = {
+									{	-- Bucket List
+										["achievementID"] = 5829,	-- Bucket List
+										["g"] = {
+											{	-- Beth'tilac's Lair
+												["achievementID"] = 5829,	-- Bucket List
+												["criteriaID"] = 1,	-- Beth'tilac's Lair
+											},
+											{	-- Flamebreach
+												["achievementID"] = 5829,	-- Bucket List
+												["criteriaID"] = 2,	-- Flamebreach
+											},
+											{	-- Path of Corruption
+												["achievementID"] = 5829,	-- Bucket List
+												["criteriaID"] = 3,	-- Path of Corruption
+											},
+											{	-- Shatterstone
+												["achievementID"] = 5829,	-- Bucket List
+												["criteriaID"] = 5,	-- Shatterstone
+											},
+											{	-- The Ridge of Ancient Flame
+												["achievementID"] = 5829,	-- Bucket List
+												["criteriaID"] = 4,	-- The Ridge of Ancient Flame
+											},
+										},
+									},
 									i(152975),	-- Smoldering Treat (PET!)
 									i(71014),	-- Skullstealer Greataxe
 									i(71013),	-- Feeding Frenzy
@@ -413,6 +468,9 @@ _.Instances =
 							}),			
 							e(196, {	-- Baleroc, the Gatekeeper		
 								["groups"] = {
+									{	-- Share the Pain
+										["achievementID"] = 5830,	-- Share the Pain
+									},
 									i(152977),	-- Vibrating Stone (PET!)
 									i(71312),	-- Gatecrasher
 									i(70915),	-- Shard of Torment
@@ -431,7 +489,11 @@ _.Instances =
 								["creatureID"] = 53494,		
 							}),			
 							e(197, {	-- Majordomo Staghelm		
-								["groups"] = {		
+								["groups"] = {
+									{	-- Only the Penitent...
+										["achievementID"] = 5799,	-- Only the Penitent...
+										["description"] = "Group of 6 needed."
+									},
 									i(152978),	-- Fandral's Pet Carrier (PET!)
 									i(122304),	-- Fandral's Seed Pouch (TOY!)
 									i(71681, {	-- Mantle of the Fiery Conqueror		
@@ -476,6 +538,9 @@ _.Instances =
 							}),			
 							e(198, {	-- Ragnaros		
 								["groups"] = {
+									{	-- Ragnar-O's
+										["achievementID"] = 5855,	-- Ragnar-O's
+									},
 									i(71675, {	-- Helm of the Fiery Conqueror	
 										i(71272),	-- Cowl of the Cleansing Flame
 										i(71277),	-- Hood of the Cleansing Flame
@@ -605,6 +670,12 @@ _.Instances =
 							}),
 							e(192, {	-- Beth'tilac		
 								["groups"] = {		
+									{	-- Death from Above
+										["achievementID"] = 5821,	-- Death from Above
+									},
+									{	-- Heroic: Beth'tilac
+										["achievementID"] = 5807,	-- Heroic: Beth'tilac
+									},
 									i(152976),	-- Cinderweb Egg (PET!)
 									i(71409),	-- Funeral Pyre
 									i(71406),	-- Mandible of Beth'tilac
@@ -625,6 +696,12 @@ _.Instances =
 							}),			
 							e(193, {	-- Lord Rhyolith		
 								["groups"] = {
+									{	-- Heroic: Lord Rhyolith
+										["achievementID"] = 5808,	-- Heroic: Lord Rhyolith
+									},
+									{	-- Not an Ambi-Turner
+										["achievementID"] = 5810,	-- Not an Ambi-Turner
+									},
 									i(71422),	-- Volcanospike
 									i(71414),	-- Arbalest of Erupting Fury
 									i(71421),	-- Flickering Cowl
@@ -643,6 +720,30 @@ _.Instances =
 							}),			
 							e(194, {	-- Alysrazor		
 								["groups"] = {
+									{	-- Heroic: Alysrazor
+										["achievementID"] = 5809,	-- Heroic: Alysrazor
+									},
+									{	-- Do a Barrel Roll!
+										["achievementID"] = 5813,	-- Do a Barrel Roll!
+										["g"] = {
+											{	-- Brushfire
+												["achievementID"] = 5813,	-- Do a Barrel Roll!
+												["criteriaID"] = 1,	-- Brushfire
+											},
+											{	-- Fiery Tornado
+												["achievementID"] = 5813,	-- Do a Barrel Roll!
+												["criteriaID"] = 4,	-- Fiery Tornado
+											},
+											{	-- Incendiary Cloud
+												["achievementID"] = 5813,	-- Do a Barrel Roll!
+												["criteriaID"] = 3,	-- Incendiary Cloud
+											},
+											{	-- Lava Spew
+												["achievementID"] = 5813,	-- Do a Barrel Roll!
+												["criteriaID"] = 2,	-- Lava Spew
+											},
+										},
+									},
 									i(71679, {	-- Chest of the Fiery Conqueror	
 										i(71530),	-- Robes of the Cleansing Flame
 										i(71535),	-- Vestment of the Cleansing Flame
@@ -688,6 +789,34 @@ _.Instances =
 							}),			
 							e(195, {	-- Shannox		
 								["groups"] = {
+									{	-- Bucket List
+										["achievementID"] = 5829,	-- Bucket List
+										["g"] = {
+											{	-- Beth'tilac's Lair
+												["achievementID"] = 5829,	-- Bucket List
+												["criteriaID"] = 1,	-- Beth'tilac's Lair
+											},
+											{	-- Flamebreach
+												["achievementID"] = 5829,	-- Bucket List
+												["criteriaID"] = 2,	-- Flamebreach
+											},
+											{	-- Path of Corruption
+												["achievementID"] = 5829,	-- Bucket List
+												["criteriaID"] = 3,	-- Path of Corruption
+											},
+											{	-- Shatterstone
+												["achievementID"] = 5829,	-- Bucket List
+												["criteriaID"] = 5,	-- Shatterstone
+											},
+											{	-- The Ridge of Ancient Flame
+												["achievementID"] = 5829,	-- Bucket List
+												["criteriaID"] = 4,	-- The Ridge of Ancient Flame
+											},
+										},
+									},
+									{	-- Heroic: Shannox
+										["achievementID"] = 5806,	-- Heroic: Shannox
+									},
 									i(71678, {	-- Leggings of the Fiery Conqueror	
 										i(71529),	-- Legwraps of the Cleansing Flame
 										i(71534),	-- Leggings of the Cleansing Flame
@@ -733,6 +862,12 @@ _.Instances =
 							}),			
 							e(196, {	-- Baleroc, the Gatekeeper		
 								["groups"] = {
+									{	-- Heroic: Baleroc
+										["achievementID"] = 5805,	-- Heroic: Baleroc
+									},
+									{	-- Share the Pain
+										["achievementID"] = 5830,	-- Share the Pain
+									},
 									i(71676, {	-- Gauntlets of the Fiery Conqueror	
 										i(71527),	-- Handwraps of the Cleansing Flame
 										i(71532),	-- Gloves of the Cleansing Flame
@@ -777,6 +912,13 @@ _.Instances =
 							}),			
 							e(197, {	-- Majordomo Staghelm		
 								["groups"] = {
+									{	-- Heroic: Majordomo Fandral Staghelm
+										["achievementID"] = 5804,	-- Heroic: Majordomo Fandral Staghelm
+									},
+									{	-- Only the Penitent...
+										["achievementID"] = 5799,	-- Only the Penitent...
+										["description"] = "Group of 6 needed."
+									},
 									i(152978),	-- Fandral's Pet Carrier (PET!)
 									i(122304),	-- Fandral's Seed Pouch (TOY!)
 									i(71680, {	-- Shoulders of the Fiery Conqueror	
@@ -820,7 +962,18 @@ _.Instances =
 								["creatureID"] = 52571,		
 							}),			
 							e(198, {	-- Ragnaros		
-								["groups"] = {		
+								["groups"] = {
+									{	-- Heroic: Ragnaros
+										["achievementID"] = 5803,	-- Heroic: Ragnaros
+										["g"] = {
+											{	-- Firelord
+												["titleID"] = 190,	-- Firelord
+											},
+										},
+									},
+									{	-- Ragnar-O's
+										["achievementID"] = 5855,	-- Ragnar-O's
+									},
 									i(71677, {	-- Crown of the Fiery Conqueror	
 										i(71528),	-- Cowl of the Cleansing Flame
 										i(71533),	-- Hood of the Cleansing Flame
