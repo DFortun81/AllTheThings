@@ -6723,11 +6723,16 @@ local function UpdateVisibleRowData(self)
 		-- Fill the remaining rows up to the (visible) row count.
 		local container, rowCount, totalHeight = self.Container, 0, 0;
 		local current = math.max(1, math.min(self.ScrollBar.CurrentValue, totalRowCount));
+		
+		-- Ensure that the first row doesn't move out of position.
+		local row = container.rows[i] or CreateRow(container);
 		SetRowData(self, container.rows[1] or CreateRow(container), self.rowData[1]);
+		totalHeight = totalHeight + row:GetHeight();
 		current = current + 1;
 		rowCount = rowCount + 1;
+		
 		for i=2,totalRowCount do
-			local row = container.rows[i] or CreateRow(container);
+			row = container.rows[i] or CreateRow(container);
 			SetRowData(self, row, self.rowData[current]);
 			totalHeight = totalHeight + row:GetHeight();
 			if totalHeight > container:GetHeight() then
