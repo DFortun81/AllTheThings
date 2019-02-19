@@ -207,14 +207,16 @@ _.Zones =
 						["races"] = { 10 }, -- Blood Elf
 						["sourceQuests"] = { 9175 },	-- The Lady's Necklace
 					}),
-					qr(qh( 9217, {	-- More Rotting Hearts
+					qh(9217, {	-- More Rotting Hearts
 						["qg"] = 16205,	-- Magistrix Aminel
 						["sourceQuests"] = { 9216 },	-- Rotting Hearts
-					})),
-					qr(qh( 9219, {	-- More Spinal Dust
+						["repeatable"] = true,
+					}),
+					qh(9219, {	-- More Spinal Dust
 						["qg"] = 16205,	-- Magistrix Aminel
 						["sourceQuests"] = { 9218 },	-- Spinal Dust
-					})),
+						["repeatable"] = true,
+					}),
 					qh( 9146, {	-- Report to Captain Helios
 						["groups"] = {
 							i(23405),	-- Farstrider's Tunic
@@ -270,6 +272,7 @@ _.Zones =
 					qh( 9282, {	-- The Farstrider Enclave
 						["qg"] = 16239,	-- Magister Kaendris
 						["sourceQuests"] = { 9151 },	-- The Sanctum of the Sun
+						["isBreadcrumb"] = true,
 					}),
 					q(  9327, {	-- The Forsaken
 						["qg"] = 16197,	-- Arcanist Vandril
@@ -317,6 +320,7 @@ _.Zones =
 					qh( 9161, {	-- The Traitor's Shadow
 						["qg"] = 16203,	-- Ranger Vynna
 						["sourceQuests"] = { 9282 },	-- The Farstrider Enclave
+						["isBreadcrumb"] = true,
 					}),
 					qh( 9176, {	-- The Twin Ziggurats
 						["groups"] = {
