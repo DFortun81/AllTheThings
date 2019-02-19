@@ -3442,11 +3442,21 @@ app.BaseUnit = {
 			return "unit";
 		elseif key == "text" then
 			if t.isGUID then return nil; end
-			return UnitName(t.unit) or t.unit;
+			local name, realm = UnitName(t.unit);
+			if name then
+				if realm and realm ~= "" then name = name .. "-" .. realm; end
+				t.classID = select(3, UnitClass(t.unit));
+				if t.classID then
+					name = "|c" .. t.classColors.colorStr .. name .. "|r";
+				end
+				rawset(t, "text", name);
+				return name;
+			end
+			return t.unit;
 		elseif key == "icon" then
 			if t.classID then return classIcons[t.classID]; end
 		elseif key == "isGUID" then
-			local a, b, c, d = strsplit("-", t.unit);
+			local a = strsplit("-", t.unit);
 			if a == "Player" then
 				local className, classId, raceName, raceId, gender, name, realm = GetPlayerInfoByGUID(t.unit);
 				if name then
