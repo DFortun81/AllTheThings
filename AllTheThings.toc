@@ -2,8 +2,8 @@
 ## Interface: 80100
 ## Title: AllTheThings
 ## Name: AllTheThings
-## SavedVariables: AllTheThingsAD, AllTheThingsDebugData, AllTheThingsHarvestItems
-## SavedVariablesPerCharacter: AllTheThingsPCD
+## SavedVariables: AllTheThingsSettings, AllTheThingsAD, AllTheThingsDebugData, AllTheThingsHarvestItems
+## SavedVariablesPerCharacter: AllTheThingsSettingsPerCharacter, AllTheThingsPCD
 ## Notes: Addon for Tracking Collections & Account Completion
 ## Version: 1.8.4
 lib\LibStub\LibStub.lua
