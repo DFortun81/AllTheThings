@@ -3445,9 +3445,9 @@ app.BaseUnit = {
 			local name, realm = UnitName(t.unit);
 			if name then
 				if realm and realm ~= "" then name = name .. "-" .. realm; end
-				t.classID = select(3, UnitClass(t.unit));
-				if t.classID then
-					name = "|c" .. t.classColors.colorStr .. name .. "|r";
+				local classID = select(3, UnitClass(t.unit));
+				if classID then
+					name = "|c" .. RAID_CLASS_COLORS[select(2, GetClassInfo(classID))].colorStr .. name .. "|r";
 				end
 				rawset(t, "text", name);
 				return name;
@@ -3458,11 +3458,13 @@ app.BaseUnit = {
 		elseif key == "isGUID" then
 			local a = strsplit("-", t.unit);
 			if a == "Player" then
-				local className, classId, raceName, raceId, gender, name, realm = GetPlayerInfoByGUID(t.unit);
+				local className, classID, raceName, raceId, gender, name, realm = GetPlayerInfoByGUID(t.unit);
 				if name then
-					if classId then t.classID = class_id_cache[classId]; end
 					if realm and realm ~= "" then name = name .. "-" .. realm; end
-					if t.classID then name = "|c" .. t.classColors.colorStr .. name .. "|r"; end
+					if classID then
+						name = "|c" .. RAID_CLASS_COLORS[classID].colorStr .. name .. "|r";
+						t.classID = class_id_cache[classID];
+					end
 					rawset(t, "text", name);
 				end
 				rawset(t, "isGUID", true);
@@ -3470,8 +3472,6 @@ app.BaseUnit = {
 			else
 				rawset(t, "isGUID", false);
 			end
-		elseif key == "classColors" then
-			return RAID_CLASS_COLORS[select(2, GetClassInfo(t.classID))];
 		else
 			-- Something that isn't dynamic.
 			return table[key];
