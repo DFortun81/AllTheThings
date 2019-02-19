@@ -117,6 +117,9 @@ _.Zones =
 								q(52889, {	-- Sandscour
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
+								q(52316, {	-- Sea Creatures Are Weird
+									["isWQ"] = 120,		-- Enables WQ filter for Level 120
+								}),
 								{	-- Severus the Outcast [AH]
 									["questID"] = 52315,	-- Severus the Outcast
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120

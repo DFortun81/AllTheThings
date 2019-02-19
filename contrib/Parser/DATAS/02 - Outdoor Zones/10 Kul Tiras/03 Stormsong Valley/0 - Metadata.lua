@@ -8,6 +8,7 @@ _.Zones =
 			["achievementID"] = 12558,	-- Stormsong Valley
 			["lvl"] = 110,
 			["maps"] = {
+				1179,	-- Abyssal Melody
 				1182,	-- Saltstone Mine
 				1183,	-- Thornheart
 			},

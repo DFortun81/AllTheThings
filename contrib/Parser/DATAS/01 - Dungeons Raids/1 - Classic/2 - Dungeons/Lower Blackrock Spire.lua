@@ -168,6 +168,7 @@ _.Instances =
 						},
 						["coords"] = {
 							{ 53.0, 67.0, 250 }, -- Hordemar City (Lower)
+							{ 49.0, 55.0, 250 }, -- Hordemar City (Lower)
 						},
 						["description"] = "This is a rare that is not always present.",
 					}),
