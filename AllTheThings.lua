@@ -3781,7 +3781,7 @@ end
 				return GetPersonalDataSubMember("FlightPaths", t.flightPathID);
 			elseif key == "text" then
 				local info = t.info;
-				return info and info.text;
+				return info and info.text or "Visit the Flight Master to cache.";
 			elseif key == "nmr" then
 				local info = t.info;
 				if info and info.faction then
