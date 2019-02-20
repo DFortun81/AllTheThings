@@ -42,12 +42,12 @@ _.Instances =
 								["qg"] = 45820, -- Razal'blade
 								["sourceQuests"] = { 27582 }, -- Infiltrating Shadowforge City [Horde]
 							}),
-							q( 27596, { -- The Heart of the Mountain
+							q(27596, { -- The Heart of the Mountain
 								["groups"] = {
 								},
 								["qg"] = 45850, -- Maxwort Uberglint
 							}),
-							q( 27603, { -- The Sealed Gate
+							q(27603, { -- The Sealed Gate
 								["groups"] = {
 								},
 								["qg"] = 45849, -- Tinkee Steamboil
@@ -116,7 +116,7 @@ _.Instances =
 							}),
 						}),
 					}),
-					n(  0, {	-- Zone Drop
+					n(0, {	-- Zone Drop
 						i(12546, {	-- Aristocratic Cuffs
 							["crs"] = {
 								8903,	-- Anvilrage Captain
@@ -332,13 +332,13 @@ _.Instances =
 						}),
 					}),
 					n(-75, {	-- Detention Block
-						cr( 9018, e(369, {	-- High Interrogator Gerstahn
+						cr(9018, e(369, {	-- High Interrogator Gerstahn
 							i(11625), 	-- Enthralled Sphere
 							i(11626), 	-- Blackveil Cape
 							i(11624), 	-- Kentic Amice
 							i(22240), 	-- Greaves of Withering Despaire
 						})),
-						cr( 9025, e(370, {	-- Lord Roccor
+						cr(9025, e(370, {	-- Lord Roccor
 							i(45050),	-- Formula: Smoking Heart of the Mountain [BOP]
 							i(11631), 	-- Stoneshell Guard
 							i(22234), 	-- Mantle of Lost Hope
@@ -346,7 +346,7 @@ _.Instances =
 							i(11679), 	-- Rubicund Armguards
 							i(11632), 	-- Earthslag Shoulders
 						})),
-						cr( 9319, e(371, {	-- Houndmaster Grebmar
+						cr(9319, e(371, {	-- Houndmaster Grebmar
 							i(11629), 	-- Houndmaster's Rifle
 							i(11628), 	-- Houndmaster's Bow
 							i(11627), 	-- Fleetfoot Greaves
@@ -419,14 +419,14 @@ _.Instances =
 								["description"] = "This is one of the possible bosses for this event.",
 							}),
 						})),
-						cr( 9016, e(377, {	-- Bael'gar
+						cr(9016, e(377, {	-- Bael'gar
 							i(11803), 	-- Force of Magma
 							i(11805), 	-- Rubidium Hammer
 							i(11807), 	-- Sash of the Burning Heart
 							i(11802), 	-- Lavacrest Leggings
 							i(22257),	-- Bloodclot Band
 						})),
-						cr( 9017, e(374, {	-- Lord Incendius
+						cr(9017, e(374, {	-- Lord Incendius
 							i(11766), 	-- Flameweave Cyffs
 							i(11764), 	-- Cinderhide Armsplints
 							i(11765), 	-- Pyremail Wristguards
@@ -436,17 +436,17 @@ _.Instances =
 								["u"] = 2,
 							},
 						})),
-						cr( 9056, e(376, {	-- Fineous Darkvire <Chief Architect>
-							i( 11840), 	-- Master Builder's Shirt
-							i( 11839), 	-- Chief Architect's Monocle
-							i( 11841), 	-- Senior Designer's Pantaloons
+						cr(9056, e(376, {	-- Fineous Darkvire <Chief Architect>
+							i(11840), 	-- Master Builder's Shirt
+							i(11839), 	-- Chief Architect's Monocle
+							i(11841), 	-- Senior Designer's Pantaloons
 							i(151406), 	-- Belt  of the Eminent Mason 
-							i( 11842), 	-- Land Surveyor's Mantle
-							i( 22223), 	-- Foreman's Head Protector
+							i(11842), 	-- Land Surveyor's Mantle
+							i(22223), 	-- Foreman's Head Protector
 						})),
 					}),
 					n(-76, { -- Shadowforge City
-						cr(9024, e( 373, {	-- Pyromancer Loregrain
+						cr(9024, e(373, {	-- Pyromancer Loregrain
 							i(11207),	-- Formula: Enchant Weapon - Fiery Weapon
 							i(11750), 	-- Kindling Stave
 							i(11748), 	-- Pyric Caduceus
@@ -456,17 +456,17 @@ _.Instances =
 						})),
 						n(-1001, { -- The Black Vault
 							cr(9041, e(375, { -- Warder Stilgiss
-								i( 11784), -- Arbiter's Blade
-								i( 22241), -- Dark Warder's Pauldrons
-								i( 11782), -- Boreal Mantle
-								i( 11783), -- Chillsteel Girdle
+								i(11784), -- Arbiter's Blade
+								i(22241), -- Dark Warder's Pauldrons
+								i(11782), -- Boreal Mantle
+								i(11783), -- Chillsteel Girdle
 								i(151405), -- Cold-Forged Chestplate
-								n(  9042, { -- Verek
+								n(9042, { -- Verek
 									i(11755),	-- Verek's Collar
 									i(22242),	-- Verek's Leash
 								}),
 							})),
-							n( 9476, {	-- Watchman Doomgrip
+							n(9476, {	-- Watchman Doomgrip
 								["groups"] = {
 									o(160836, {	-- Relic Coffer
 										["groups"] = {	
@@ -492,75 +492,75 @@ _.Instances =
 							o(164820, {	-- Dark Keeper Nameplate
 								["groups"] = {
 									i(11197, {	-- Dark Keeper Key
-										dr(4.0, i(10276)), 	-- Emerald Sabatons
-										dr(3.0, i(15264)), 	-- Backbreaker
-										dr(1.4, i(15324)), 	-- Burnside Rifle
-										dr(1.4, i(10221)), 	-- Nightshade Girdle
-										dr(1.4, i(10182)), 	-- Swashbuckler's Breastplate
-										dr(1.1, i(15271)), 	-- Colossal Great Axe
-										dr(1.1, i(15282)), 	-- Dragon Finger
-										dr(1.1, i( 8308)), 	-- Hero's Band
-										dr(1.1, i(12713)),	-- Plans: Radiant Leggings
-										dr(1.1, i(10105)), 	-- Wanderer's Armor
-										dr(1.0, i(15219)), 	-- Dimensional Blade
-										dr(1.0, i(10219)), 	-- Elegant Circlet
-										dr(0.9, i(10136)), 	-- High Councillor's Bracers
-										dr(0.9, i(10391)), 	-- Hyperion Vambraces
-										dr(0.9, i(15272)), 	-- Razor Axe
-										dr(0.8, i(10258)), 	-- Adventurer's Cape
-										dr(0.8, i( 8285)), 	-- Arcane Bands
-										dr(0.8, i(10097)), 	-- Councillor's Circlet
-										dr(0.8, i(15218)), 	-- Crystal Sword
-										dr(0.8, i(10144)), 	-- High Councillor's Sash
-										dr(0.8, i(10225)), 	-- Nightshade Gloves
-										dr(0.8, i(12704)), 	-- Plans: Thorium Leggings
-										dr(0.8, i(15325)), 	-- Sharpshooter Harquebus
-										dr(0.7, i( 8318)), 	-- Alabaster Plate Leggings
-										dr(0.7, i( 8291)), 	-- Arcane Sash
-										dr(0.7, i(15255)), 	-- Gallant Flamberge
-										dr(0.7, i(15276)), 	-- Magus Long Staff
-										dr(0.7, i(10228)), 	-- Nightshade Spaulders
-										dr(0.7, i(15265)), 	-- Painbringer
-										dr(0.7, i(10112)), 	-- Wanderer's Leggings
-										dr(0.7, i(15238)), 	-- Warlord's Axe
-										dr(0.6, i( 8287)), 	-- Arcane Gloves
-										dr(0.6, i(10210)), 	-- Elegant Mantle
-										dr(0.6, i(15281)), 	-- Glowstar Rod
-										dr(0.6, i( 8310)), 	-- Hero's Pauldrons
-										dr(0.6, i(15256)), 	-- Massacre Sword
-										dr(0.6, i(10156)), 	-- Mercurial Bracers
-										dr(0.6, i(10224)), 	-- Nightshade Cloak
-										dr(0.6, i(15278)), 	-- Solstice Staff
-										dr(0.6, i( 8295)), 	-- Traveler's Bracers
-										dr(0.6, i( 8298)), 	-- Traveler's Gloves
-										dr(0.5, i( 8292)), 	-- Arcane Cover
-										dr(0.5, i( 8289)), 	-- Arcane Leggings
-										dr(0.5, i( 8288)), 	-- Arcane Pads
-										dr(0.5, i(10095)), 	-- Councillor's Boots
-										dr(0.5, i(10101)), 	-- Councillor's Pants
-										dr(0.5, i(10100)), 	-- Councillor's Shoulders
-										dr(0.5, i( 8265)), 	-- Ebonhold Armor
-										dr(0.5, i( 8271)), 	-- Ebonhold Leggings
-										dr(0.5, i(10211)), 	-- Elegant Boots
-										dr(0.5, i(10213)), 	-- Elegant Bracers
-										dr(0.5, i(10212)), 	-- Elegant Cloak
-										dr(0.5, i(10280)), 	-- Emerald Legplates
-										dr(0.5, i(10365)), 	-- Emerald Shield
-										dr(0.5, i(10235)), 	-- Engraved Helm
-										dr(0.5, i( 8307)), 	-- Hero's Boots
-										dr(0.5, i( 8304)), 	-- Hero's Cape
-										dr(0.5, i(10223)), 	-- Nightshade Armguards
-										dr(0.5, i(10118)), 	-- Ornate Breastplate
-										dr(0.5, i(10121)), 	-- Ornate Gauntlets
-										dr(0.5, i(12697)), 	-- Plans: Radiant Boots
-										dr(0.5, i(8299)), 	-- Traveler's Helm
-										dr(0.5, i( 8301)), 	-- Traveler's Spaulders
+										i(10276), 	-- Emerald Sabatons
+										i(15264), 	-- Backbreaker
+										i(15324), 	-- Burnside Rifle
+										i(10221), 	-- Nightshade Girdle
+										i(10182), 	-- Swashbuckler's Breastplate
+										i(15271), 	-- Colossal Great Axe
+										i(15282), 	-- Dragon Finger
+										i(8308), 	-- Hero's Band
+										i(12713),	-- Plans: Radiant Leggings
+										i(10105), 	-- Wanderer's Armor
+										i(15219), 	-- Dimensional Blade
+										i(10219), 	-- Elegant Circlet
+										i(10136), 	-- High Councillor's Bracers
+										i(10391), 	-- Hyperion Vambraces
+										i(15272), 	-- Razor Axe
+										i(10258), 	-- Adventurer's Cape
+										i(8285), 	-- Arcane Bands
+										i(10097), 	-- Councillor's Circlet
+										i(15218), 	-- Crystal Sword
+										i(10144), 	-- High Councillor's Sash
+										i(10225), 	-- Nightshade Gloves
+										i(12704), 	-- Plans: Thorium Leggings
+										i(15325), 	-- Sharpshooter Harquebus
+										i(8318), 	-- Alabaster Plate Leggings
+										i(8291), 	-- Arcane Sash
+										i(15255), 	-- Gallant Flamberge
+										i(15276), 	-- Magus Long Staff
+										i(10228), 	-- Nightshade Spaulders
+										i(15265), 	-- Painbringer
+										i(10112), 	-- Wanderer's Leggings
+										i(15238), 	-- Warlord's Axe
+										i(8287), 	-- Arcane Gloves
+										i(10210), 	-- Elegant Mantle
+										i(15281), 	-- Glowstar Rod
+										i(8310), 	-- Hero's Pauldrons
+										i(15256), 	-- Massacre Sword
+										i(10156), 	-- Mercurial Bracers
+										i(10224), 	-- Nightshade Cloak
+										i(15278), 	-- Solstice Staff
+										i(8295), 	-- Traveler's Bracers
+										i(8298), 	-- Traveler's Gloves
+										i(8292), 	-- Arcane Cover
+										i(8289), 	-- Arcane Leggings
+										i(8288), 	-- Arcane Pads
+										i(10095), 	-- Councillor's Boots
+										i(10101), 	-- Councillor's Pants
+										i(10100), 	-- Councillor's Shoulders
+										i(8265), 	-- Ebonhold Armor
+										i(8271), 	-- Ebonhold Leggings
+										i(10211), 	-- Elegant Boots
+										i(10213), 	-- Elegant Bracers
+										i(10212), 	-- Elegant Cloak
+										i(10280), 	-- Emerald Legplates
+										i(10365), 	-- Emerald Shield
+										i(10235), 	-- Engraved Helm
+										i(8307), 	-- Hero's Boots
+										i(8304), 	-- Hero's Cape
+										i(10223), 	-- Nightshade Armguards
+										i(10118), 	-- Ornate Breastplate
+										i(10121), 	-- Ornate Gauntlets
+										i(12697), 	-- Plans: Radiant Boots
+										i(8299), 	-- Traveler's Helm
+										i(8301), 	-- Traveler's Spaulders
 									}),
 								},
 								["description"] = "Inspect the portrait in front of the coffer room. Opening it will tell you the name of the Dark Keeper you need and where he is located. Only one will spawn each reset.\n\n|cff3399ffDark Keepers:|r\n\n|cFFFFD700Dark Keeper Bethek|r: spawns inside the vault room as soon as you open the portrait\n\n|cFFFFD700Dark Keeper Ofgut|r: Located in |cFFFFD700General Angerforge's|r room.  When you come down the stairs and are looking straight at |cFFFFD700General Angerforge|r you will then see him located directly to the left near the crystal.\n\n|cFFFFD700Dark Keeper Pelver|r: Located in |cFFFFD700The Domicile|r.  For quicker access you can take any of the mole machines and click |cFFFFD700Into the Domicile|r and he will be on top of it.\n\n|cFFFFD700Dark Keeper Uggel|r: quite a close walk; walk outside the vault room and go right to the last room. He is near the entrance where all the golems are.\n\n|cFFFFD700Dark Keeper Vorfalk|r: Located at the |cFFFFD700Grim Guzzler|r.  When you first enter the room after coming from the bridge he will be located on your right side in the corner (in front of the band's playing spot).\n\n|cFFFFD700Dark Keeper Zimrel|r: Located on the second floor of the |cFFFFD700Ring of Law|r.  When entering this floor from the |cFFFFD700East Garrison|r (room with the Shadowforge Lock) you will go around to your right where he will be sitting in the middle of the seats.\n"
 							})
 						}),
-						cr(9033, e( 378, {	-- General Angerforge
+						cr(9033, e(378, {	-- General Angerforge
 							i(11816), 	-- Angerforge's Battle Axe
 							i(11932), 	-- Guiding Stave of Wisdom
 							i(11817), 	-- Lord General's Sword
@@ -569,22 +569,22 @@ _.Instances =
 							i(11821), 	-- Warstrife Leggings
 							i(11810),	-- Force of Will
 						})),
-						cr(8983, e( 379, {	-- Golem Lord Argelmach
+						cr(8983, e(379, {	-- Golem Lord Argelmach
 							i(11823), 	-- Luminary Kilt
 							i(11822), 	-- Omnicast Boots
 							i(11669),	-- Naglering
 							i(11819),	-- Second Wind
 							i(21956),   -- Design: Dark Iron Scorpid
 						})),
-						cr(9537, e( 380, {	-- Hurley Blackbreath
+						cr(9537, e(380, {	-- Hurley Blackbreath
 							["groups"] = {
-								i( 11922), 		-- Blood-Etched Blade
-								i( 18044), 		-- Hurley's Tankard
-								i( 11735), 		-- Ragefury Eyepatch
+								i(11922), 		-- Blood-Etched Blade
+								i(18044), 		-- Hurley's Tankard
+								i(11735), 		-- Ragefury Eyepatch
 								i(151408), 		-- Dark Iron Dredger's Pauldrons
 								i(151407),		-- Blackened Pit Trousers
-								i( 18043), 		-- Coal Miner Boots
-								i( 22275), 		-- Firemoss Boots
+								i(18043), 		-- Coal Miner Boots
+								i(22275), 		-- Firemoss Boots
 							},
 							["description"]	= "Break the 3 Thunderbrew Lager Kegs to start the event.",
 						})),
@@ -597,22 +597,22 @@ _.Instances =
 							},
 							["description"]	= "Speak to him to start the event.",
 						})),
-						cr(9499, e( 383, {	-- Plugger Spazzring
+						cr(9499, e(383, {	-- Plugger Spazzring
 							n(-2, { 	-- Vendors
 								i(15759),	-- Pattern:	Black Dragonscale Breastplate
 								i(13483),	-- Recipe: Transmute Fire to Earth
 							}),
-							i( 12791), 	-- Barman Shanker
-							i( 12793), 	-- Mixologist's Tunic
+							i(12791), 	-- Barman Shanker
+							i(12793), 	-- Mixologist's Tunic
 							i(151410),	-- Bottle-Popper Ring
 							i(18653),  -- Schematic: Goblin Jumper Cables XL
 						})),
-						cr(9502, e( 381, {	-- Phalanx
+						cr(9502, e(381, {	-- Phalanx
 							["groups"] = {		
-								i( 11744), 		-- Bloodfist
-								i( 22212), 		-- Golem Fitted Pauldrons
-								i( 22204), 		-- Wristguards of Renown
-								i( 11745), 		-- Fists of Phalanx
+								i(11744), 		-- Bloodfist
+								i(22212), 		-- Golem Fitted Pauldrons
+								i(22204), 		-- Wristguards of Renown
+								i(11745), 		-- Fists of Phalanx
 								i(151409), 		-- Ferrous Cord
 								un(2, i(11743)),	-- Rockfist
 							},
@@ -660,23 +660,23 @@ _.Instances =
 							},
 							["description"] = "With a Sulfuron Ingot in your bags, speak with Lokhtos and click on the new chat option to obtain a Thorium Brotherhood Contract.",									
 						}),	
-						cr(9156, e( 384, {	-- Ambassador Flamelash
+						cr(9156, e(384, {	-- Ambassador Flamelash
 							i(11809), 	-- Flame Wrath
 							i(11808), 	-- Circle of Flame
 							i(11812), 	-- Cape of the Fire Salamander
 							i(11814), 	-- Molten Fists
 							i(11832),	-- Burst of Knowledge
 						})),
-						n( 8923, { 			-- Panzor the Invincible
+						n(8923, { 			-- Panzor the Invincible
 							["groups"] = {	
-								dr(23, i(22245)),	-- Soot Encrusted Footwear
-								dr(22, i(11787)),	-- Shalehusk Boots
-								dr(22, i(11786)),	-- Stone of the Earth
-								dr(21, i(11785)),	-- Rock Golem Bulwark	
+								i(22245),	-- Soot Encrusted Footwear
+								i(11787),	-- Shalehusk Boots
+								i(11786),	-- Stone of the Earth
+								i(11785),	-- Rock Golem Bulwark	
 							},
 							["description"] = "This is a rare that is not always present.",
 						}),
-						n( 9037, {			-- Gloom'rel
+						n(9037, {			-- Gloom'rel
 							["description"] = "If you are a miner, speak with Gloom'rel so he will summon the Spectral Chalice to learn to smelt Dark Iron Ore.\nThe quest requires 2x Star Ruby, 20x Gold Bar, and 10x Truesilver Bar to complete.",
 							["requireSkill"] = 186,	-- Mining
 							["groups"] = {
@@ -690,7 +690,7 @@ _.Instances =
 								},
 							},
 						}),
-						cr(9039, e( 385, {	-- The Seven
+						cr(9039, e(385, {	-- The Seven
 							o(169243, {	-- Chest of The Seven
 								["groups"] = {
 									i(11921), 	-- Impervious Giant
@@ -706,14 +706,14 @@ _.Instances =
 								["icon"] = "Interface\\Icons\\INV_Plate_BlackrockClan_B_01Chest",			
 							}),
 						})),
-						cr(9938, e( 386, {	-- Magmus
-							i( 22208), 	-- Lavastone Hammer
-							i( 11935), 	-- Magmus Stone
-							i( 11746), 	-- Golem Skull Helm
+						cr(9938, e(386, {	-- Magmus
+							i(22208), 	-- Lavastone Hammer
+							i(11935), 	-- Magmus Stone
+							i(11746), 	-- Golem Skull Helm
 							i(151411), 	-- Molten-Warden Leggings 
-							i( 22275), 	-- Firemoss Boots
+							i(22275), 	-- Firemoss Boots
 						})),
-						cr(9019, e( 387, {	-- Emperor Dagran Thaurissan
+						cr(9019, e(387, {	-- Emperor Dagran Thaurissan
 							ach(642),	-- Blackrock Depths
 							i(11931), 	-- Dreadforge Retaliatior
 							i(11684), 	-- Ironfoe
@@ -731,7 +731,7 @@ _.Instances =
 					}),
 					n(-40, {	-- Legacy
 						n(-17, {	-- Quests (Legacy)
-							un(40, q( 4024, {		-- A Taste of Flame
+							un(40, q(4024, {		-- A Taste of Flame
 								un(2, i(12066)),	-- Shaleskin Cape
 								un(2, i(12083)),	-- Valconian Sash
 								un(2, i(12082)),	-- Wyrmhide Spaulders
@@ -769,7 +769,7 @@ _.Instances =
 							un(40, qh(4132, {	-- Operation: Death to Angerforge
 								un(2, i(12059)),	-- Conqueror's Medallion
 							})),
-							un(40, q( 4136, {		-- Ribbly Screwspigot
+							un(40, q(4136, {		-- Ribbly Screwspigot
 								un(2, i(11963)),	-- Penance Spaulders 
 								un(2, i(11865)),	-- Rancor Boots
 								un(2, i(12049)),	-- Splintsteel Armor
@@ -777,7 +777,7 @@ _.Instances =
 							un(40, qh(7201, {	-- The Last Element
 								un(2, i(12038)),	-- Lagrave's Seal
 							})),
-							un(40, q( 4201, {		-- The Love Potion
+							un(40, q(4201, {		-- The Love Potion
 								un(2, i(11962)),	-- Manacle Cuffs
 								un(2, i(11866)),	-- Nagmara's Whipping Belt
 							})),

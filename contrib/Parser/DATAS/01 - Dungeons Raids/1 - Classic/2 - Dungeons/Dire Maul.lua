@@ -12,18 +12,18 @@ _.Instances =
 					n(-12, {	-- Warpwood Quarter [East - Demon]
 						["groups"] = {
 							n(-17, {	-- Quests
-								qg(44969, q( 27104, {	-- Alzzin the Wildshaper
+								qg(44969, q(27104, {	-- Alzzin the Wildshaper
 									i(65948),	-- Warpwood Bark Vest
 									i(65972),	-- Warpwood Bow
 									i(65922),	-- Warpwood Leaf Mantle
 									i(65993),	-- Warpwood Shield
 								})),
-								qg(44969, q( 27105)),	-- An Unwelcome Guest
-								qg(44971, q( 27108)),	-- Lethtendris's Web
-								qg(44971, q( 27107)),	-- Pusillin The Thief
-								qg(44969, q( 27103)),	-- Shards of the Felvine
+								qg(44969, q(27105)),	-- An Unwelcome Guest
+								qg(44971, q(27108)),	-- Lethtendris's Web
+								qg(44971, q(27107)),	-- Pusillin The Thief
+								qg(44969, q(27103)),	-- Shards of the Felvine
 							}),
-							n(  0, {	-- Zone Drop
+							n( 0, {	-- Zone Drop
 								i(18365, {	-- A Thoroughly Read Copy of "Nat Pagle's Guide to Extreme Anglin'."
 									["description"] = "Required for the Retribution Paladin Hidden Artifact Appearance.\n\nEastern Wall of Garden\nLedge Above Garden\nBeside Lethtendris\nBeside Alzzin the Wildshaper",
 								}),
@@ -78,11 +78,11 @@ _.Instances =
 									},
 								}),
 							}),
-							n( 14354, {			-- Pusillin
+							n(14354, {			-- Pusillin
 								i(18267),	-- Recipe: Runn Tum Tuber Surprise
-								dr(6, i(12662)),	-- Demonic Rune
+								i(12662),	-- Demonic Rune
 							}),
-							n( 14349, {			-- Pimgib
+							n(14349, {			-- Pimgib
 								i(18354),	-- Pimgib's Collar
 							}),
 							cr(14327, e(404, {	-- Lethtendris
@@ -106,7 +106,7 @@ _.Instances =
 								i(18306),	-- Gloves of Shadowy Mist
 								i(18315),	-- Ring of Demonic Potency
 							})),
-							n( 16097, {			-- Isalien Summonable
+							n(16097, {			-- Isalien Summonable
 								["groups"] = { 
 									i(22057, {	-- Brazier of Invocation
 										un(11, i(22472)), 	-- Boots of Ferocity
@@ -145,7 +145,7 @@ _.Instances =
 								o(179485, {	-- A Broken Trap
 									qr(q(27118)),	-- A Broken Trap
 								}),
-								qg( 3936, qa(27133)),	-- Eyes in the Sky
+								qg(3936, qa(27133)),	-- Eyes in the Sky
 								qg(45040, qa(27125, {	-- King of the Gordok
 									i(65976),	-- Pauldrons of Tribute
 									i(65927),	-- Slippers of Tribute
@@ -174,7 +174,7 @@ _.Instances =
 									i(18369),	-- Gordok's Handwraps
 								})),
 							}),
-							n(  0, {	-- Zone Drop
+							n(0, {	-- Zone Drop
 								i(18365, {	-- A Thoroughly Read Copy of "Nat Pagle's Guide to Extreme Anglin'."
 									["description"] = "Required for the Retribution Paladin Hidden Artifact Appearance.\n\nSW Corner of Guard Fengus's courtyard\nBeside King Gordok and Cho'Rush the Observer",
 								}),
@@ -258,7 +258,7 @@ _.Instances =
 								i(18521),	-- Grimy Metal Boots
 								i(18522),	-- Band of the Ogre King
 							})),
-							n( 14353, {			-- Mizzle the Crafty
+							n(14353, {			-- Mizzle the Crafty
 								["groups"] = {
 									o(179564, { -- Gordok Tribute Chest (No Localization)
 										["groups"] = {
@@ -309,7 +309,7 @@ _.Instances =
 								q(27113, { -- The Shen'dralar Ancient
 									["qg"] = 44991,
 								}),
-								q( 27111, {	-- The Treasure of Shen'dralar
+								q(27111, {	-- The Treasure of Shen'dralar
 									["groups"] = {
 										i(65949),	-- Dire Maul
 										i(65973),	-- Fras Siabi's Cigar Cutter
@@ -323,7 +323,7 @@ _.Instances =
 									["qg"] = 44999,
 								}),
 							}),
-							n(  0, {	-- Zone Drop
+							n( 0, {	-- Zone Drop
 								i(18365, {	-- A Thoroughly Read Copy of "Nat Pagle's Guide to Extreme Anglin'."
 									["description"] = "Required for the Retribution Paladin Hidden Artifact Appearance.\n\nSouthern Generator in Immol'thar's room",
 								}),
@@ -384,18 +384,18 @@ _.Instances =
 								}),
 							}),
 							cr(11487, e(408, {	-- Magister Kalendris
-								dr(22, i(22309)),	-- Pattern: Big Bag of Enchantment
+								i(22309),	-- Pattern: Big Bag of Enchantment
 								i(18397),	-- Elder Magus Pendant
 								i(18374),	-- Flamescarred Shoulders
 								i(18350),	-- Amplifying Cloak
 								i(18351),	-- Magically Sealed Bracers
 								i(18371),	-- Mindtap Talisman
 							})),
-							n( 11467, {			-- Tsu'zee
+							n(11467, {			-- Tsu'zee
 								["groups"] = {
-									dr(31, i(18387)),	-- Brightspark Gloves
-									dr(31, i(18346)),	-- Threadbane Trousers
-									dr(31, i(18345)),	-- Murmuring Ring
+									i(18387),	-- Brightspark Gloves
+									i(18346),	-- Threadbane Trousers
+									i(18345),	-- Murmuring Ring
 								},
 								["description"] = "This is a rare that is not always present.",
 							}),
@@ -429,7 +429,7 @@ _.Instances =
 								i(18379),	-- Odious Greaves
 								i(18370),	-- Vigilance Charm
 							})),
-							n( 14506, {			-- Lord Hel'nurath
+							n(14506, {			-- Lord Hel'nurath
 								["groups"] = {
 									un(11, i(18757)), 	-- Diabolic Mantle
 									un(11, i(18755)), 	-- Xorothian Firestick
@@ -461,7 +461,7 @@ _.Instances =
 									},
 								}),
 							})),
-							n(  -2, {	-- Vendors
+							n( -2, {	-- Vendors
 								n(14371, { -- Shen'dralar Provisioner
 									i(18487), -- Pattern: Mooncloth Robe
 								}),
@@ -659,7 +659,7 @@ _.Instances =
 										un(2, i(18424)),	-- Sedge Boots 
 									})),
 								}),
-								n(  0, {	-- Zone Drop (Legacy)
+								n( 0, {	-- Zone Drop (Legacy)
 									un(43, n(14690, {	-- Revanchion
 										["groups"] = {
 											un(2, i(23129)),	-- Bracers of Mending

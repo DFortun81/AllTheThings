@@ -115,7 +115,7 @@ _.Instances = { tier(1, {	-- Classic
 				["creatureID"] = 15341,
 			}),
 			n(15335, {	-- Flesh Hunter
-				dr(22, i(20768, { dr(1.5, i(20769)) } )), --	Oozing Bag <Disgusting Oozling>
+				i(20768, { 1.5, i(20769) } ), -- Oozing Bag <Disgusting Oozling>
 			}),
 			e(1540, { 	-- Buru the Gorger
 				["groups"] = {
@@ -131,28 +131,28 @@ _.Instances = { tier(1, {	-- Classic
 			}),
 			n(15333, {	-- Silicate Feeder
 				["groups"] = {
-					dr(0.3, i(14304)),	-- Bonecaster's Belt
-					dr(0.3, i(15295)),	-- Quillfire Bow
-					dr(0.2, i(14311)),	-- Celestial Bindings
-					dr(0.2, i(15218)),	-- Crystal Sword
-					dr(0.19, i(14295)),	-- Arachnidian Legguards
-					dr(0.19, i(14802)),	-- Bloodlust Gauntlets
-					dr(0.19, i(15237)),	-- Corpse Harvester
-					dr(0.19, i(14671)),	-- Pridelord Boots
-					dr(0.17, i(14321)),	-- Resplendent Cloak
-					dr(0.16, i(15229)),	-- Blesswind Hammer
-					dr(0.16, i(14674)),	-- Pridelord Girdle
-					dr(0.15, i(14299)),	-- Bonecaster's Boots
-					dr(0.14, i(15254)),	-- Dark Espadon
-					dr(0.14, i(14855)),	-- Vanguard Gauntlets
-					dr(0.13, i(21800)),	-- Silithid Husked Launcher
-					dr(0.13, i(14314)),	-- Celestial Handwraps
-					dr(0.13, i(15391)),	-- Jadefire Cap
-					dr(0.13, i(15181)),	-- Praetorian Boots
-					dr(0.12, i(15663)),	-- Impenetrable Belt
-					dr(0.12, i(15217)),	-- Widow Blade
-					dr(0.11, i(21803)),	-- Helm of the Holy Avenger
-					dr(0.11, i(14813)),	-- Warstrike Cape
+					i(14304),	-- Bonecaster's Belt
+					i(15295),	-- Quillfire Bow
+					i(14311),	-- Celestial Bindings
+					i(15218),	-- Crystal Sword
+					i(14295),	-- Arachnidian Legguards
+					i(14802),	-- Bloodlust Gauntlets
+					i(15237),	-- Corpse Harvester
+					i(14671),	-- Pridelord Boots
+					i(14321),	-- Resplendent Cloak
+					i(15229),	-- Blesswind Hammer
+					i(14674),	-- Pridelord Girdle
+					i(14299),	-- Bonecaster's Boots
+					i(15254),	-- Dark Espadon
+					i(14855),	-- Vanguard Gauntlets
+					i(21800),	-- Silithid Husked Launcher
+					i(14314),	-- Celestial Handwraps
+					i(15391),	-- Jadefire Cap
+					i(15181),	-- Praetorian Boots
+					i(15663),	-- Impenetrable Belt
+					i(15217),	-- Widow Blade
+					i(21803),	-- Helm of the Holy Avenger
+					i(14813),	-- Warstrike Cape
 				},
 				["description"] = "These bugs are like loot pinatas. Their loot tables for random greens is insanely long and despite the individual % for each piece being low, they have an overall common drop rate for rare world drops. If you're going for 100%, we advise that you kill these guys whenever you see them."
 			}),

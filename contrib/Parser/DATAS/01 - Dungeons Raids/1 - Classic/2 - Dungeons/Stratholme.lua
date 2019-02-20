@@ -40,7 +40,7 @@ _.Instances =
 									["qg"] = 45323,	-- Packmaster Stonebruiser
 								},
 							}),
-							n(  0, {	-- Zone Drop
+							n(0, {	-- Zone Drop
 								i(17683, {	-- Book: Gift of the Wild Rank 2
 								--	["description"] = "This can only drop from Elites."	-- Commenting it out for Live, will be relevant for Classic
 								}),
@@ -87,11 +87,11 @@ _.Instances =
 									},
 								}),
 							}),
-							n( 10393, {			-- Skul
+							n(10393, {			-- Skul
 								["groups"] = {
-									dr(31, i(13395)),	-- Skul's Fingerbone Claws
-									dr(28, i(13394)),	-- Skul's Cold Embrace
-									dr(25, i(13396)),	-- Skul's Ghastly Touch
+									i(13395),	-- Skul's Fingerbone Claws
+									i(13394),	-- Skul's Cold Embrace
+									i(13396),	-- Skul's Ghastly Touch
 								},
 								["description"] = "This is a rare that is not always present.",
 							}),
@@ -104,31 +104,31 @@ _.Instances =
 								un(2, i(16682)),	-- Magister's Boots
 							})),
 							cr(10516, e(450, { 	-- The Unforgiven
-								i( 22406),	-- Redemption
-								i( 13408),	-- Soul Breaker
-								i( 13404),	-- Mask of the Unforgiven
-								i( 13405),	-- Wailing Nightbane Pauldrons
-								i( 13409),	-- Tearfall Bracers
+								i(22406),	-- Redemption
+								i(13408),	-- Soul Breaker
+								i(13404),	-- Mask of the Unforgiven
+								i(13405),	-- Wailing Nightbane Pauldrons
+								i(13409),	-- Tearfall Bracers
 								i(151404),	-- Gauntlets of Purged Sanity
 								un(7, i(16717)),	-- Wildheart Gloves
 							})),
-							n( 11143, {			-- Postmaster Malown
+							n(11143, {			-- Postmaster Malown
 								["groups"] = {
-									dr(14, i(13393)),	-- Malown's Slam
-									dr(13, i(13390)),	-- The Postmaster's Band
-									dr(19, i(13388)),	-- The Postmaster's Tunic
-									dr(21, i(13389)),	-- The Postmaster's Trousers
-									dr(13, i(13391)),	-- The Postmaster's Treads
-									dr(13, i(13392)),	-- The Postmaster's Seal
+									i(13393),	-- Malown's Slam
+									i(13390),	-- The Postmaster's Band
+									i(13388),	-- The Postmaster's Tunic
+									i(13389),	-- The Postmaster's Trousers
+									i(13391),	-- The Postmaster's Treads
+									i(13392),	-- The Postmaster's Seal
 								},
 								["description"] = "Click any 3 mailboxes in the instance to get Postmaster Malown to spawn.",
 							}),
 							cr(10808, e(445, { 	-- Timmy the Cruel
-								i( 13401),	-- The Cruel Hand of Timmy
-								i( 13400),	-- Vambraces of the Sadist
+								i(13401),	-- The Cruel Hand of Timmy
+								i(13400),	-- Vambraces of the Sadist
 								i(151403),	-- Fetid Stranglers
-								i( 13403),	-- Grimgore Noose
-								i( 13402),	-- Timmy's Galoshes
+								i(13403),	-- Grimgore Noose
+								i(13402),	-- Timmy's Galoshes
 								un(7, i(16724)),	-- Lightforge Gauntlets
 							})),
 							cr(10997, e(446, { 	-- Willey Hopebreaker
@@ -182,7 +182,7 @@ _.Instances =
 											un(2, i(13315)),	-- Testament of Hope
 										})),
 									}),
-									n(  0, {	-- Zone Drop (Legacy)
+									n(0, {	-- Zone Drop (Legacy)
 										un(43, n(14684, { 	-- Balzaphon
 											["groups"] = {
 												un(2, i(23125)),	-- Chains of the Lich
@@ -296,7 +296,7 @@ _.Instances =
 									i(18742),	-- Stratholme Militia Shoulderguard
 									i(142337),	-- Plans: Blight
 									n(10422, {	-- Risen Sorcerer
-										dr(6, i(16249)),	-- Formula: Enchant 2H Weapon - Major Intellect
+										i(16249),	-- Formula: Enchant 2H Weapon - Major Intellect
 									}),
 									i(74274, {	-- Plans: Phantom Blade
 										["crs"] = {
@@ -329,11 +329,11 @@ _.Instances =
 									}),
 								},
 							}),
-							n( 10809, {			-- Stonespine
+							n(10809, {			-- Stonespine
 								["groups"] = {
-									dr(32, i(13397)),	-- Stoneskin Gargoyle Cape
-									dr(32, i(13954)),	-- Verdant Footpads
-									dr(28, i(13399)),	-- Gargoyle Shredder Talons
+									i(13397),	-- Stoneskin Gargoyle Cape
+									i(13954),	-- Verdant Footpads
+									i(13399),	-- Gargoyle Shredder Talons
 								},
 								["description"] = "This is a rare that is not always present.",
 							}),
@@ -427,7 +427,7 @@ _.Instances =
 											["races"] = {10},
 										})),
 									}),
-									n(  0, {	-- Zone Drop (Legacy)
+									n(0, {	-- Zone Drop (Legacy)
 										un(7, i(16681, {	-- Beaststalker's Bindings
 											["crs"] = {
 												10407, 	-- Fleshflayer Ghoul

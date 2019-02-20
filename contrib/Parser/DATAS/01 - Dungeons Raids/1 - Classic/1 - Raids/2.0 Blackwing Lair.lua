@@ -306,72 +306,72 @@ _.Instances = { tier(1, {	-- Classic
 					i(19379),	-- Neltharion's Tear
 				 -- BLUES (NOT IN DUNGEON JOURNAL/WOWHEAD)
 					i(1203),	-- Aegis of Stormwind
-					dr(2.0, i(13036)),	-- Assassination Blade
+					i(13036),	-- Assassination Blade
 					i(13096),	-- Band of the Hierophant
 					i(13030),	-- Basilisk Bone
-					dr(4.0, i(13126)),	-- Battlecaller Gauntlets
+					i(13126),	-- Battlecaller Gauntlets
 					i(13046),	-- Blanchard's Stout
 					i(13009),	-- Cow King's Hide
-					dr(8.0, i(13008)),	-- Dalewind Trousers
-					dr(4.0, i(13120)),	-- Deepfury Bracers
-					dr(3.0, i(13075)),	-- Direwing Legguards
-					dr(4.0, i(13053)),	-- Doombringer
+					i(13008),	-- Dalewind Trousers
+					i(13120),	-- Deepfury Bracers
+					i(13075),	-- Direwing Legguards
+					i(13053),	-- Doombringer
 					i(13133),	-- Drakesfire Epaulets
 					i(13123),	-- Dreamwalker Armor
 					i(9402),	-- Earthborn Kilt
-					dr(7.0, i(13013)),	-- Elder Wizard's Mantle
-					dr(6.0, i(13125)),	-- Elven Chain Boots
-					dr(3.0, i( 2564)),	-- Elven Spirit Claws
+					i(13013),	-- Elder Wizard's Mantle
+					i(13125),	-- Elven Chain Boots
+					i(2564),	-- Elven Spirit Claws
 					i(5266),	-- Eye of Adaegus
-					dr(4.0, i(13113)),	-- Feathermoon Headdress
+					i(13113),	-- Feathermoon Headdress
 					i(13083),	-- Garrett Family Crest
-					dr(4.0, i(13077)),	-- Girdle of Uther
+					i(13077),	-- Girdle of Uther
 					i(13139),	-- Guttbuster
-					dr(2.0, i(13040)),	-- Heartseeking Crossbow
+					i(13040),	-- Heartseeking Crossbow
 					i(13085),	-- Horizon Choker
 					i(13067),	-- Hydralick Armor
 					i(13002),	-- Lady Alizabeth's Pendant
-					dr(1.0, i( 4696)),	-- Lapidis Tankard of Tidesippe
-					dr(2.0, i(13003)),	-- Lord Alexander's Battle Axe
+					i(4696),	-- Lapidis Tankard of Tidesippe
+					i(13003),	-- Lord Alexander's Battle Axe
 					i(13135),	-- Lordly Armguards
-					dr(8.0, i(13007)),	-- Mageflame Cloak
-					dr(8.0, i(13107)),	-- Magiskull Cuffs
-					dr(1.3, i(13001)),	-- Maiden's Circle
+					i(13007),	-- Mageflame Cloak
+					i(13107),	-- Magiskull Cuffs
+					i(13001),	-- Maiden's Circle
 					i(13006),	-- Mass of McGowan
 					i(13091),	-- Medallion of Grand Marshal Morris
-					dr(4.0, i(13073)),	-- Mugthol's Helm
+					i(13073),	-- Mugthol's Helm
 					i(1973),	-- Orb of Deception
-					dr(4.0, i(13111)),	-- Sandals of the Insurgent
+					i(13111),	-- Sandals of the Insurgent
 					i(13070),	-- Sapphiron's Scale Boots
-					dr(3.0, i( 5267)),	-- Scarlet Kris
+					i(5267),	-- Scarlet Kris
 					i(13015),	-- Serathil
-					dr(7.0, i(13144)),	-- Serenity Belt
+					i(13144),	-- Serenity Belt
 					i(13118),	-- Serpentine Sash
-					dr(3.0, i(13146)),	-- Shell Launcher Shotgun
+					i(13146),	-- Shell Launcher Shotgun
 					i(7734),	-- Six Demon Bag
 					i(13116),	-- Spaulders of the Unseen
 					i(13000),	-- Staff of Hale Magefire
-					dr(3.0, i(13072)),	-- Stonegrip Gauntlets
-					dr(3.0, i( 6622)),	-- Sword of Zeal
-					dr(3.0, i(13060)),	-- The Needler
+					i(13072),	-- Stonegrip Gauntlets
+					i(6622),	-- Sword of Zeal
+					i(13060),	-- The Needler
 					i(13004),	-- Torch of Austen
-					dr(2.0, i(13047)),	-- Twig of the World Tree
+					i(13047),	-- Twig of the World Tree
 					i(11302),	-- Uther's Strength
 					i(13065),	-- Wand of Allistarj
-					dr(5.0, i(13130)),	-- Windrunner Legguards
+					i(13130),	-- Windrunner Legguards
 					i(13066),	-- Wyrmslayer 
 				 -- PROFESSIONS
-					dr(0.2, i(14511)),	-- Pattern: Gloves of Spell Mastery
-					dr(0.7, i(14509)),	-- Pattern: Mooncloth Circlet
-					dr(0.4, i(14497)),	-- Pattern: Mooncloth Leggings
-					dr(0.6, i(14507)),	-- Pattern: Mooncloth Shoulders
-					dr(0.4, i(14501)),	-- Pattern: Mooncloth Vest
-					dr(1.1, i( 8028)),	-- Plans: Runed Mithril Hammer
-					dr(0.5, i(13518)),	-- Recipe: Potion of Petrification
-					dr(0.5, i(13488)),	-- Recipe: Transmute Life to Earth
-					dr(0.4, i(13489)),	-- Recipe: Transmute Earth to Life
-					dr(0.5, i(13486)),	-- Recipe: Transmute Undeath to Water
-					dr(0.5, i(13487)),	-- Recipe: Transmute Water to Undeath
+					i(14511),	-- Pattern: Gloves of Spell Mastery
+					i(14509),	-- Pattern: Mooncloth Circlet
+					i(14497),	-- Pattern: Mooncloth Leggings
+					i(14507),	-- Pattern: Mooncloth Shoulders
+					i(14501),	-- Pattern: Mooncloth Vest
+					i(8028),	-- Plans: Runed Mithril Hammer
+					i(13518),	-- Recipe: Potion of Petrification
+					i(13488),	-- Recipe: Transmute Life to Earth
+					i(13489),	-- Recipe: Transmute Earth to Life
+					i(13486),	-- Recipe: Transmute Undeath to Water
+					i(13487),	-- Recipe: Transmute Water to Undeath
 				},
 				["creatureID"] = 11583,
 			})

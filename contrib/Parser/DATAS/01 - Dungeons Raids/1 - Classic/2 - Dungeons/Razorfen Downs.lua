@@ -158,30 +158,30 @@ _.Instances =
 					})),
 					n(75813, {			-- Sah'rhee
 						["groups"] = {
-							dr(22, i(10766)),	-- Plaguerot Sprig 
-							dr(21, i(10768)),	-- Boar Champion's Belt
-							dr(20, i(10767)),	-- Savage Boar's Guard
-							dr(20, i(10758)),	-- X'caliboar
-							dr(17, i(10760)),	-- Swine Fists
+							i(10766),	-- Plaguerot Sprig 
+							i(10768),	-- Boar Champion's Belt
+							i(10767),	-- Savage Boar's Guard
+							i(10758),	-- X'caliboar
+							i(10760),	-- Swine Fists
 						},
 						["description"] = "Sah'rhee doesn't spawn in every instance run. Whenever he spawns, he's trackable as a green dot on the mini-map, and you click the body to start this optional boss."
 					}),
-					cr(74347, e( 433, {	-- Mordresh Fire Eye
+					cr(74347, e(433, {	-- Mordresh Fire Eye
 						i(10770),	-- Mordresh's Lifeless Skull
 						i(10769),	-- Glowing Eye of Mordresh
 						i(10771),	-- Deathmage Sash
 					})),
 					cr(74435, e(1143, {	-- Mushlump
-						i( 10772),	-- Glutton's Cleaver
-						i( 10774),	-- Fleshhide Shoulders
+						i(10772),	-- Glutton's Cleaver
+						i(10774),	-- Fleshhide Shoulders
 						i(151453),	-- Grungy Necromantic Ring
 					})),
 					cr(74875, e(1146, {	-- Death Speaker Blackthorn
-						i( 10758),	-- X'caliboar
-						i( 10766),	-- Plaguerot Sprig
-						i( 10767),	-- Savage Boar's Guard
-						i( 10760),	-- Swine Fists
-						i( 10768),	-- Boar Champion's Belt
+						i(10758),	-- X'caliboar
+						i(10766),	-- Plaguerot Sprig
+						i(10767),	-- Savage Boar's Guard
+						i(10760),	-- Swine Fists
+						i(10768),	-- Boar Champion's Belt
 						i(151454),	-- Splinterbone Sabatons
 					})),
 					cr(74434, e(1141, {	-- Amnennar the Coldbringer

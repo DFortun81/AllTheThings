@@ -120,17 +120,17 @@ _.Instances =
 							["qg"] = 44561, -- Murd Doc
 							["sourceQuests"] = { 26941, 50337 },	-- The G-Team
 							["groups"] = {
-								i( 65987),	-- G-Team Belt
-								i( 66004),	-- Barechus' Greaves
-								i( 65963),	-- Temple's Vest
-								i( 65939),	-- Murd Doc's Leggings
-								i( 65913),	-- Hann Ibal's Epaulettes
+								i(65987),	-- G-Team Belt
+								i(66004),	-- Barechus' Greaves
+								i(65963),	-- Temple's Vest
+								i(65939),	-- Murd Doc's Leggings
+								i(65913),	-- Hann Ibal's Epaulettes
 								i(131624),	-- Barechus' Chainmail
 								i(131625),	-- Hann Ibal's Chain Dungarees
 							},
 						},
 					}),
-					n(  0, {	-- Zone Drop
+					n( 0, {	-- Zone Drop
 						{    -- Red Punch Card
 							["itemID"] = 9281,        -- Red Punch Card
 							["requireSkill"] = 202,    -- Engineering
@@ -267,41 +267,41 @@ _.Instances =
 							},
 						}),
 					}),
-					cr( 7361, e(419, {	-- Grubbis
+					cr(7361, e(419, {	-- Grubbis
 						i(151080),	-- Grubbis' Protective Pail
-						i(  9445),	-- Grubbis Paws
+						i( 9445),	-- Grubbis Paws
 						i(151079),	-- Chomper-Hide Belt
 						i(151078),	-- Shabby Trogg Britches
 					})),
-					cr( 7079, e(420, {	-- Viscous Fallout
-						i(  9452),	-- Hydrocane
-						i(  9453),	-- Toxic Revenger
+					cr(7079, e(420, {	-- Viscous Fallout
+						i( 9452),	-- Hydrocane
+						i( 9453),	-- Toxic Revenger
 						i(151081),	-- Gnomish Rebreather
 						i(151082),	-- Lead Apron
-						i(  9454),	-- Acidic Walkers
+						i( 9454),	-- Acidic Walkers
 						i(151083),	-- Hazmat Galoshes
 					})),
-					cr( 6235, e(421, {	-- Electrocutioner 6000
+					cr(6235, e(421, {	-- Electrocutioner 6000
 						i(9446),	-- Electrocutioner Leg
 						i(9448),	-- Spidertank Oilrag
 						i(9447),	-- Electrocutioner Lagnut
 					})),
-					cr( 6229, e(418, {	-- Crowd Pummeler 9-60
-						i(  9449),	-- Manual Crowd Pummeler
+					cr(6229, e(418, {	-- Crowd Pummeler 9-60
+						i( 9449),	-- Manual Crowd Pummeler
 						i(151085),	-- Glitchbot Helm
 						i(151084),	-- Grease-Smudged Sash
 						i(132558),	-- Bot Operator's Treads
-						i(  9450),	-- Gnomebot Operating Boots
+						i( 9450),	-- Gnomebot Operating Boots
 					})),
-					n(  6228, {			-- Dark Iron Ambassador
+					n( 6228, {			-- Dark Iron Ambassador
 						["groups"] = {
-							dr(38, i(9456)),	-- Glass Shooter
-							dr(28, i(9457)),	-- Royal Diplomatic Scepter
-							dr(26, i(9455)),	-- Emissary Cuffs
+							i(9456),	-- Glass Shooter
+							i(9457),	-- Royal Diplomatic Scepter
+							i(9455),	-- Emissary Cuffs
 						},
 						["description"] = "This is a rare that is not always present.",
 					}),
-					cr( 7800, e(422, {	-- Mekgineer Thermaplugg
+					cr(7800, e(422, {	-- Mekgineer Thermaplugg
 						ach(634),	-- Gnomeregan
 						i(9459),	-- Thermaplugg's Left Arm
 						i(9458),	-- Thermaplugg's Central Core
@@ -334,7 +334,7 @@ _.Instances =
 					n(-40, {	-- Legacy
 						["groups"] = {
 							n(-17, {	-- Quests (Legacy)
-								un(40, q( 2904, {	-- A Fine Mess
+								un(40, q(2904, {	-- A Fine Mess
 									un(2, i(9536)),	-- Fairywing Mantle
 									un(2, i(9535)),	-- Fire-welded Bracers
 								})),
