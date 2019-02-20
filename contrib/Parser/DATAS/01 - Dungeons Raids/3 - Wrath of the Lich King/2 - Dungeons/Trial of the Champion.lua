@@ -125,7 +125,7 @@ _.Instances =
 								},
 							}),
 							cr(35119, e(635, {	-- Eadric the Pure
-								--i(47508), -- Aledar's Battlestar (Heroic only?)
+								i(47508), -- Aledar's Battlestar
 								i(47509), -- Mariel's Sorrow
 								i(47500), -- Peacekeeper Blade
 								i(47497), -- Helm of the Crestfallen Challenger
