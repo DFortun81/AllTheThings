@@ -22,6 +22,7 @@ _.Instances =
 						i(30306),	-- Pattern: Boots of Utter Darkness
 						i(30308),	-- Pattern: Hurricane Boots
 						i(30304),	-- Pattern: Monsoon Belt
+						i(30022),	-- Pendant of the Perilous
 						i(30321),	-- Plans: Belt of the Guardian
 						i(30323),	-- Plans: Boots of the Protector
 						i(30322),	-- Plans: Red Belt of Battle

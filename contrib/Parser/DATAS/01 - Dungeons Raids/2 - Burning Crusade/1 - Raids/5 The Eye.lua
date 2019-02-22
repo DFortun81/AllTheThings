@@ -30,6 +30,7 @@ _.Instances =
 						i(30323),	-- Plans: Boots of the Protector
 						i(30322),	-- Plans: Red Belt of Battle
 						i(30324),	-- Plans: Red Havoc Boots
+						i(30028),	-- Seventh Ring of the Tirisfalen
 					}),
 					cr(19514, e(1573, { -- Al'ar
 						i(97557),	-- Brilliant Phoenix Hawk Feather (PET!)
