@@ -115,7 +115,9 @@ _.Instances = { tier(1, {	-- Classic
 				["creatureID"] = 15341,
 			}),
 			n(15335, {	-- Flesh Hunter
-				i(20768, { 1.5, i(20769) } ), -- Oozing Bag <Disgusting Oozling>
+				i(20768, {	-- Oozing Bag <Disgusting Oozling>
+					i(20769),
+				}),
 			}),
 			e(1540, { 	-- Buru the Gorger
 				["groups"] = {

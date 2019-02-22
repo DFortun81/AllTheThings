@@ -306,6 +306,7 @@ pet(23713, 130); 	-- Hippogryph Hatchling
 pet(123862, 1384); 	-- Hogs' Studded Collar (Hogs)
 pet(86563, 836);	-- Hollow Reed (Aqua Strider)
 pet(122116, 1635);	-- Holy Chime (K'ute)
+pet(86562, 835);	-- Hopling
 pet(72045, 332); 	-- Horde Balloon
 pet(139776, 1919); 	-- Horde Fanatic
 pet(140261, 1926); 	-- Hungering Claw
