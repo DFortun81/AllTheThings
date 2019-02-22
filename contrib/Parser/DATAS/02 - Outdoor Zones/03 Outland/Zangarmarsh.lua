@@ -20,7 +20,7 @@ _.Zones =
 						["coord"] = { 33, 51 },
 					}),
 				}),
-				n(-25, {	-- Pet Battle
+				n(-25,  {	-- Pet Battle
 					p(419), 	-- Small Frog 
 					p(387), 	-- Snake
 					p(515), 	-- Sporeling Sprout
@@ -28,7 +28,7 @@ _.Zones =
 						["qg"] = 66551,	-- Ras'an
 					})),
 				}),
-				n(-38, {	-- Profession
+				n(-38,  {	-- Profession
 					prof(356, { -- Fishing
 						o(182952, {	-- Steam Pump Flotsam
 							["groups"] = {
@@ -46,7 +46,7 @@ _.Zones =
 						}),
 					}),
 				}),
-				n(-17, {	-- Quests
+				n(-17,  {	-- Quests
 					ach(1190, {	-- Mysteries of the Marsh
 						crit(1, {	-- Draenei Diplomacy (A) / Swamprat Post (H)
 							-- Alliance quests start
@@ -618,7 +618,7 @@ _.Zones =
 						["collectible"] = false,
 					}),
 				}),
-				n(-16, {	-- Rares
+				n(-16,  {	-- Rares
 					n(18682, {	-- Bog Lurker
 						i(31248),	-- Bog Epaulets
 						i(31250),	-- Bog Mantle
@@ -635,134 +635,171 @@ _.Zones =
 						i(31254),	-- Striderhide Cloak
 					}), 
 				}),
-				n( -2, {	-- Vendors
+				n(-2,   {	-- Vendors
 					na(18581, {		-- Alliance Field Scout
-						i(24579, {	-- Mark of Honor Hold
-							i(27931),	-- Splintermark
-							i(27942),	-- Incendic Rod
-							i(27921),	-- Mark of Conquest
-							i(27922),	-- Mark of Defiance
-							i(27927),	-- Mark of Vindication
-						})
+						["g"] = {
+							i(24579, {	-- Mark of Honor Hold
+								i(27931),	-- Splintermark
+								i(27942),	-- Incendic Rod
+								i(27921),	-- Mark of Conquest
+								i(27922),	-- Mark of Defiance
+								i(27927),	-- Mark of Vindication
+							}),
+						},
+						["coord"] = { 64.6, 46.4, 102 },
 					}),
 					nh(19383, {		-- Captured Gnome
-						i(23805),	-- Schematic: Ultra-Spectroscopic Detection Goggles
+						["g"] = {
+							i(23805),	-- Schematic: Ultra-Spectroscopic Detection Goggles
+						},
+						["coord"] = { 32.4, 48.0, 102 },
 					}),
 					na(20028, {		-- Doba <Cooking Supplies>
-						i(27694),	-- Recipe: Blackened Trout
-						i(27695),	-- Recipe: Feltail Delight
+						["g"] = {
+							i(27694),	-- Recipe: Blackened Trout
+							i(27695),	-- Recipe: Feltail Delight
+						},
+						["coord"] = { 42.2, 27.8, 102 },
 					}),
-					n(17904, {		-- Fedryen Swiftspear <Cenarion Expedition Quartermaster>
-						i(31804),	-- Cenarion Expedition Tabard
-						i(33999),	-- Cenarion War Hippogryph Mount
-						i(35403),	-- Crusader's Ornamented Gloves
-						i(35415),	-- Crusader's Scaled Legguards
-						i(24183),	-- Design: Nightseye Panther						
-						i(31402),	-- Design: The Natural Ward
-						i(35358),	-- Dragonhide Legguards
-						i(35329),	-- Dreadweave Hood
-						i(29171),	-- Earthwarden
-						i(35347),	-- Evoker's Silk Trousers
-						i(25835),	-- Explorer's Walking Stick						
-						i(33149),	-- Formula: Enchant Cloak - Stealth
-						i(28271),	-- Formula: Enchant Gloves - Precise Strikes
-						i(35365),	-- Kodohide Robe
-						i(35336),	-- Mooncloth Shoulderpads
-						i(35367),	-- Opportunist's Leather Helm						
-						i(29720),	-- Pattern: Clefthide Leg Armor
-						i(25737),	-- Pattern: Heavy Clefthoof Boots
-						i(25736),	-- Pattern: Heavy Clefthoof Leggings
-						i(25735),	-- Pattern: Heavy Clefthoof Vest
-						un(1, i(24315)),	-- Pattern: Heavy Netherweave Net
-						i(29721),	-- Pattern: Nethercleft Leg Armor						
-						i(23618),	-- Plans: Adamantite Sharpening Stone
-						i(28632),	-- Plans: Adamantite Weightstone
-						i(25526),	-- Plans: Greater Rune of Warding						
-						i(31390),	-- Plans: Wildguard Breastplate
-						i(31392),	-- Plans: Wildguard Helm
-						i(31391),	-- Plans: Wildguard Leggings
-						i(25836),	-- Preserver's Cudgel						
-						i(32070),	-- Recipe: Earthen Elixir
-						i(31356),	-- Recipe: Flask of Distilled Wisdom
-						i(22922),	-- Recipe: Major Nature Protection Potion
-						i(25869),	-- Recipe: Transmute Earthstorm Diamond
-						i(22918),	-- Recipe: Transmute Primal Water to Air
-						i(35342),	-- Satin Robe
-						i(35408),	-- Savage Plate Gauntlets
-						i(23814),	-- Schematic: Green Smoke Flare
-						i(35385),	-- Seer's Linked Spaulders
-						i(35387),	-- Seer's Mail Gauntlets
-						i(35394),	-- Seer's Ringmail Legguards
-						i(35379),	-- Stalker's Chain Leggings
-						i(25838),	-- Warden's Hauberk
-						i(29174),	-- Watcher's Cowl
-						i(29170),	-- Windcaller's Orb
-						i(35374),	-- Wyrmhide Spaulders
-						i(29173),	-- Strength of the Untamed
-						i(29172),	-- Ashyen's Gift
+					n(17904,  {		-- Fedryen Swiftspear <Cenarion Expedition Quartermaster>
+						["g"] = {
+							i(31804),	-- Cenarion Expedition Tabard
+							i(33999),	-- Cenarion War Hippogryph Mount
+							i(35403),	-- Crusader's Ornamented Gloves
+							i(35415),	-- Crusader's Scaled Legguards
+							i(24183),	-- Design: Nightseye Panther						
+							i(31402),	-- Design: The Natural Ward
+							i(35358),	-- Dragonhide Legguards
+							i(35329),	-- Dreadweave Hood
+							i(29171),	-- Earthwarden
+							i(35347),	-- Evoker's Silk Trousers
+							i(25835),	-- Explorer's Walking Stick						
+							i(33149),	-- Formula: Enchant Cloak - Stealth
+							i(28271),	-- Formula: Enchant Gloves - Precise Strikes
+							i(35365),	-- Kodohide Robe
+							i(35336),	-- Mooncloth Shoulderpads
+							i(35367),	-- Opportunist's Leather Helm						
+							i(29720),	-- Pattern: Clefthide Leg Armor
+							i(25737),	-- Pattern: Heavy Clefthoof Boots
+							i(25736),	-- Pattern: Heavy Clefthoof Leggings
+							i(25735),	-- Pattern: Heavy Clefthoof Vest
+							un(1, i(24315)),	-- Pattern: Heavy Netherweave Net
+							i(29721),	-- Pattern: Nethercleft Leg Armor						
+							i(23618),	-- Plans: Adamantite Sharpening Stone
+							i(28632),	-- Plans: Adamantite Weightstone
+							i(25526),	-- Plans: Greater Rune of Warding						
+							i(31390),	-- Plans: Wildguard Breastplate
+							i(31392),	-- Plans: Wildguard Helm
+							i(31391),	-- Plans: Wildguard Leggings
+							i(25836),	-- Preserver's Cudgel						
+							i(32070),	-- Recipe: Earthen Elixir
+							i(31356),	-- Recipe: Flask of Distilled Wisdom
+							i(22922),	-- Recipe: Major Nature Protection Potion
+							i(25869),	-- Recipe: Transmute Earthstorm Diamond
+							i(22918),	-- Recipe: Transmute Primal Water to Air
+							i(35342),	-- Satin Robe
+							i(35408),	-- Savage Plate Gauntlets
+							i(23814),	-- Schematic: Green Smoke Flare
+							i(35385),	-- Seer's Linked Spaulders
+							i(35387),	-- Seer's Mail Gauntlets
+							i(35394),	-- Seer's Ringmail Legguards
+							i(35379),	-- Stalker's Chain Leggings
+							i(25838),	-- Warden's Hauberk
+							i(29174),	-- Watcher's Cowl
+							i(29170),	-- Windcaller's Orb
+							i(35374),	-- Wyrmhide Spaulders
+							i(29173),	-- Strength of the Untamed
+							i(29172),	-- Ashyen's Gift
+						},
+						["coord"] = { 79.2, 63.7, 102 },
 					}),
 					nh(18015, {		-- Gambarinka <Tradesman>
-						i(27694),	-- Recipe: Blackened Trout
+						["g"] = {
+							i(27694),	-- Recipe: Blackened Trout
+						},
+						["coord"] = { 31.6, 49.2, 102 },
 					}),
 					na(18005, {		-- Haalrun <Alchemy Supplies>
-						i(22909),	-- Recipe: Elixir of Major Defense
-						i(22911),	-- Recipe: Major Dreamless Sleep Potion
-						i(22907),	-- Recipe: Super Mana Potion
+						["g"] = {
+							i(22909),	-- Recipe: Elixir of Major Defense
+							i(22911),	-- Recipe: Major Dreamless Sleep Potion
+							i(22907),	-- Recipe: Super Mana Potion
+						},
+						["coord"] = { 67.8, 48.0, 102 },
 					}),
 					nh(18564, {		-- Horde Field Scout
-						i(24581, {	-- Mark of Thrallmar
-							i(27930),	-- Splintermark
-							i(27939),	-- Incendic Rod
-							i(27921),	-- Mark of Conquest
-							i(27922),	-- Mark of Defiance
-							i(27927),	-- Mark of Vindication
-						})
+						["g"] = {
+							i(24581, {	-- Mark of Thrallmar
+								i(27930),	-- Splintermark
+								i(27939),	-- Incendic Rod
+								i(27921),	-- Mark of Conquest
+								i(27922),	-- Mark of Defiance
+								i(27927),	-- Mark of Vindication
+							}),
+						},
+						["coord"] = { 33.0, 49.0, 102 },
 					}),
-					n(18911, {		-- Juno Dufrain <Fishing Trainer>
-						i(27696),	-- Recipe: Blackened Sporefish
+					n(18911,  {		-- Juno Dufrain <Fishing Trainer>
+						["g"] = {
+							i(27696),	-- Recipe: Blackened Sporefish
+						},
+						["coord"] = { 78.0, 66.0, 102 },
 					}),
-					n(19694, {		-- Loolruna <Armorer>
-						["groups"] = {
+					n(19694,  {		-- Loolruna <Armorer>
+						["g"] = {
 							i(23596), -- Plans: Adamantite Breastplate
 							i(23594), -- Plans: Adamantite Plate Bracers
 							i(23595), -- Plans: Adamantite Plate Gloves
 						},
+						["coord"] = { 68.6, 50.2, 102 },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					na(19722, {		-- Muheru the Weaver <Tailoring Supplies>
-						i(21899), 	-- Pattern: Imbued Netherweave Boots
-						i(21898), 	-- Pattern: Imbued Netherweave Pants
+						["g"] = {
+							i(21899), 	-- Pattern: Imbued Netherweave Boots
+							i(21898), 	-- Pattern: Imbued Netherweave Pants
+						},
+						["coord"] = { 40.4, 28.2, 102 },
 					}),
-					n(18382, {		-- Mycah <Sporeggar Quartermaster>
-						i(24245, {	-- Glowcap
-							i(38229),	-- Pattern: Mycah's Botanical Bag
-							i(30156),	-- Recipe: Clam Bar
-							i(22906),	-- Recipe: Shrouding Potion
-							i(22916),	-- Recipe: Transmute Primal Earth to Water
-							i(34478),	-- Tiny Sporebat Pet
-							i(29150),	-- Hardened Stone Shard
-							i(25828),	-- Petrified Lichen Guard
-							i(29149),	-- Sporeling's Firestick
-							i(25827),	-- Muck-Covered Drape
-							i(31775),	-- Sporeggar Tabard
-						}),
+					n(18382,  {		-- Mycah <Sporeggar Quartermaster>
+						["g"] = {
+							i(24245, {	-- Glowcap
+								i(38229),	-- Pattern: Mycah's Botanical Bag
+								i(30156),	-- Recipe: Clam Bar
+								i(22906),	-- Recipe: Shrouding Potion
+								i(22916),	-- Recipe: Transmute Primal Earth to Water
+								i(34478),	-- Tiny Sporebat Pet
+								i(29150),	-- Hardened Stone Shard
+								i(25828),	-- Petrified Lichen Guard
+								i(29149),	-- Sporeling's Firestick
+								i(25827),	-- Muck-Covered Drape
+								i(31775),	-- Sporeggar Tabard
+							}),
+						},
+						["coord"] = { 17.8, 51.2, 102 },
 					}),
 					nh(18017, {		-- Seer Janidi <Reagents>
-						i(22902),	-- Recipe: Elixir of Major Frost Power
-						i(22901),	-- Recipe: Sneaking Potion
+						["g"] = {
+							i(22902),	-- Recipe: Elixir of Major Frost Power
+							i(22901),	-- Recipe: Sneaking Potion
+						},
+						["coord"] = { 32.4, 51.8, 102 },
 					}),
 					nh(18011, {		-- Zurai <Merchant>
-						i(21899),	-- Pattern: Imbued Netherweave Boots
-						i(21898),	-- Pattern: Imbued Netherweave Pants
-						i(27695),	-- Recipe: Feltail Delight
+						["g"] = {
+							i(21899),	-- Pattern: Imbued Netherweave Boots
+							i(21898),	-- Pattern: Imbued Netherweave Pants
+							i(27695),	-- Recipe: Feltail Delight
+						},
+						["coord"] = { 85.2, 54.6, 102 },
 					}),
 				}),
-				n(  0, {	-- Zone Drop
+				n(0,    {	-- Zone Drop
 					n(20197, {	-- Bogflare Needler
 						dr(0.07, i(29960)),	-- Captured Firefly (PET!)
 					}),
 				}),
-				n(-40, {	-- Legacy
+				n(-40,  {	-- Legacy
 					["groups"] = {
 						n(-17, {	-- Quests
 							un(40, q(9763, {	-- The Warlord's Hideout

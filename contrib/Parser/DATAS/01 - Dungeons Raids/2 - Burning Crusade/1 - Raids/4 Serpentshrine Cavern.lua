@@ -51,6 +51,7 @@ _.Instances =
 					e(1568, {	-- The Lurker Below
 						["groups"] = {
 							ach(144),	-- The Lurker Above
+							i(138834),	-- Illusion: Frostbrand
 							i(30058),	-- Mallet of the Tides
 							i(30059),	-- Choker of Animalistic Fury
 							i(30065),	-- Glowing Breastplate of Truth

@@ -131,6 +131,13 @@ _.Zones =
 					}),
 
 
+					q(28191, {	-- A Fitting End
+						["qg"] = 47902,	-- Lirastrasza
+						["coord"] = { 59.0, 69.8, 241 },
+						["sourceQuests"] = { 28171 },	-- And the Sky Streaked Red
+					}),
+					
+					
 					qa(28598, {	-- Aiming High
 						["g"] = {
 							i(68014),	-- Flintlocke's Chuckshooter
@@ -141,6 +148,13 @@ _.Zones =
 					}),
 					
 
+					q(28171, {	-- And the Sky Streaked Red
+						["qg"] = 47605,	-- Calen
+						["coord"] = { 22.0, 56.5, 241 },
+						["sourceQuests"] = { 28758 },	-- Battle of Life and Death
+					}),
+					
+					
 					qa(27537, {	-- Any Portal in a Storm
 						["g"] = {
 							i(63899),	-- Water-Drill Treads
@@ -193,6 +207,18 @@ _.Zones =
 						},
 					}),
 
+
+					q(28758, {	-- Battle of Life and Death
+						["g"] = {
+							i(63761),	-- Red Dragonheart Ring
+							i(63762),	-- Pendant of Victorious Fury
+							i(63760),	-- Cloak of the Red Flight
+						},
+						["qg"] = 49810,	-- Calen
+						["coord"] = { 14.1, 15.5, 241 },
+						["sourceQuests"] = { 28712 },	-- Enter the Dragon Queen
+					}),
+
 					
 					qa(27514, {	-- Bird Down! Bird Down!
 						["qg"] = 45169,	-- Lieutenant Emry
@@ -203,6 +229,36 @@ _.Zones =
 						},
 					}),
 
+
+					q(28173, {	-- Blackout
+						["g"] = {
+							i(63759),	-- Dragonwing Leggings
+							i(63758),	-- Nightscale Girdle
+							i(63757),	-- Wyrmhunter Spaulders
+						},
+						["qg"] = 47902,	-- Lirastrasza
+						["coord"] = { 59.0, 69.8, 241 },
+						["sourceQuests"] = { 28171 },	-- And the Sky Streaked Red
+					}),
+					
+					
+					q(27509, {	-- Breach in the Defenses
+						["g"] = {
+							i(63780),	-- Dragonmender Waistguard
+							i(63775),	-- Helm of Verdant Explosion
+						},
+						["qg"] = 45528,	-- Calen
+						["coord"] = { 29.3, 26.0, 241 },
+						["sourceQuests"] = { 27564 },	-- In Defense of the Redoubt
+					}),
+
+
+					qa(27654, {	-- Bring the Hammer Down
+						["qg"] = 45796,	-- Master Mathias Shaw
+						["coord"] = { 36.3, 66.0, 241 },
+						["sourceQuests"] = { 27636 },	-- Just You and Mathias
+					}),
+
 					
 					qa(28597, {	-- Burnin' at Both Ends
 						["qg"] = 49252,	-- Fargo Flintlocke
@@ -211,6 +267,18 @@ _.Zones =
 					}),
 
 
+					qa(27496, {	-- Call in the Artillery
+						["g"] = {
+							i(63753),	-- Flarefire Bracers
+							i(63752),	-- Marker's Hauberk
+							i(63751),	-- Signal Smoke Shoulderpads
+						},
+						["qg"] = 45669,	-- Cassius the White
+						["coord"] = { 43.4, 57.3, 241 },
+						["sourceQuests"] = { 28248 },	-- Victors' Point
+					}),
+					
+					
 					qa(27645, {	-- Cayden Dunwald
 						["qg"] = 46177,	-- Keely Dunwald
 						["coord"] = { 45.9, 65.4, 241 },
@@ -225,6 +293,18 @@ _.Zones =
 					}),
 					
 
+					qa(27652, {	-- Dark Assassins
+						["g"] = {
+							i(63741),	-- Fencer's Nimblefingers
+							i(63740),	-- Muffled Bracers
+							i(63739),	-- Silenced Blunderbuss
+						},
+						["qg"] = 45796,	-- Master Mathias Shaw
+						["coord"] = { 36.3, 66.0, 241 },
+						["sourceQuests"] = { 27636 },	-- Just You and Mathias
+					}),
+					
+					
 					qa(27813, {	-- Death Worthy of a Dragonmaw
 						["qg"] = 46850,	-- Mackay Firebeard
 						["coord"] = { 62.5, 48.2, 241 },
@@ -238,6 +318,21 @@ _.Zones =
 						["sourceQuests"] = { 27376 },	-- The Maw of Iso'rath
 					}),
 					
+
+					qa(27688, {	-- Distract Them for Me
+						["g"] = {
+							i(63732),	-- Rose-Scented Hood
+							i(63731),	-- Dame's Scaled Greaves
+							i(63730),	-- Klem's Rusted Gauntlets
+						},
+						["qg"] = 45796,	-- Master Mathias Shaw
+						["coord"] = { 36.3, 66.0, 241 },
+						["sourceQuests"] = {
+							27654,	-- Bring the Hammer Down
+							27652,	-- Dark Assassins
+						},
+					}),
+
 					
 					qa(27651, {	-- Doing It Like a Dunwald
 						["g"] = {
@@ -259,6 +354,18 @@ _.Zones =
 					}),
 
 
+					q(27505, {	-- Draconic Mending
+						["g"] = {
+							i(63777),	-- Flashseal Sandals
+							i(63779),	-- Vermillion Belt
+							i(63778),	-- Safeguard Spaulders
+						},
+						["qg"] = 45522,	-- Velastrasza
+						["coord"] = { 29.8, 31.2, 241 },
+						["sourceQuests"] = { 27504 },	-- Even Dragons Bleed
+					}),
+					
+					
 					qa(27754, {	-- Dragonmaw Takedown
 						["g"] = {
 							i(63826),	-- Trophy-Taker Bracers
@@ -291,6 +398,28 @@ _.Zones =
 					}),
 
 
+					qa(28103, {	-- Easy Pickings
+						["qg"] = 47592,	-- Master Mathias Shaw
+						["coord"] = { 26.0, 38.8, 241 },
+						["sourceQuests"] = { 28101 },	-- Mathias' Command
+					}),
+					
+					
+					q(27507, {	-- Encroaching Twilight
+						["qg"] = 45528,	-- Calen
+						["coord"] = { 29.3, 26.0, 241 },
+						["sourceQuests"] = { 27564 },	-- In Defense of the Redoubt
+					}),
+					
+
+					q(28712, {	-- Enter the Dragon Queen
+						["qg"] = 47603,	-- Alextrasza the Life-Binder
+						["coord"] = { 21.8, 57.0, 241 },
+						["sourceQuests"] = { 28109 },	-- Pressing Forward
+						-- May also require "Paving the Way"
+					}),
+
+					
 					qa(27644, {	-- Eoin Dunwald
 						["qg"] = 46177,	-- Keely Dunwald
 						["coord"] = { 45.9, 65.4, 241 },
@@ -313,6 +442,13 @@ _.Zones =
 						["qg"] = 48175,	-- Low Shaman Blundy
 						["coord"] = { 49.7, 29.1, 241 },
 						["sourceQuests"] = { 28243 },	-- The Eyes Have It
+					}),
+
+
+					q(27508, {	-- Far from the Nest
+						["qg"] = 45518,	-- Lirastrasza
+						["coord"] = { 29.3, 26.0, 241 },
+						["sourceQuests"] = { 27564 },	-- In Defense of the Redoubt
 					}),
 
 					
@@ -362,6 +498,41 @@ _.Zones =
 					}),
 					
 
+					q(27661, {	-- Fire the Cannon
+						["qg"] = 46413,	-- Countess Verrall
+						["coord"] = { 27.7, 63.8, 241 },
+						["sourceQuests"] = { 27660 },	-- Spirit of the Loch
+					}),
+					
+					
+					q(28176, {	-- Following the Young Home
+						["qg"] = 47902,	-- Lirastrasza
+						["coord"] = { 59.0, 69.8, 241 },
+						["sourceQuests"] = {
+							28191,	-- A Fitting End
+							28173,	-- Blackout
+							28175,	-- Shining Through the Dark
+						},
+					}),
+					
+					
+					qa(27500, {	-- Four Heads are Better Than None
+						["g"] = {
+							i(63747),	-- Spaulders of Gruesome Accomplishment
+							i(63745),	-- Za'brox's Lucky Tooth
+							i(63746),	-- Skull Carrier
+						},
+						["sourceQuests"] = { 27498 },	-- Signal the Attack
+					}),
+					
+
+					qa(27657, {	-- Help from the Earthcaller
+						["qg"] = 45796,	-- Master Mathias Shaw
+						["coord"] = { 36.3, 66.0, 241 },
+						["sourceQuests"] = { 27636 },	-- Just You and Mathias
+					}),
+
+					
 					qa(27650, {	-- Home Again
 						["qg"] = 27650,	-- Donnelly Dunwald
 						["coord"] = { 46.2, 58.7, 241 },
@@ -386,6 +557,31 @@ _.Zones =
 						-- May have additional SQs.
 					}),
 
+
+					qa(28108, {	-- If The Key Fits
+						["qg"] = 47592,	-- Master Mathias Shaw
+						["coord"] = { 26.0, 38.8, 241 },
+						["sourceQuests"] = {
+							28104,	-- Precious Goods (definitely required)
+							28103,	-- Easy Pickings (probably required)
+						},
+					}),
+					
+					
+					q(27564, {	-- In Defense of the Redoubt
+						["qg"] = 45522,	-- Velastrasza
+						["coord"] = { 29.8, 31.2, 241 },
+						["sourceQuests"] = {
+							27505,	-- Draconic Mending (definitely required)
+							27506,	-- Life From Death (probably required)
+						},
+					}),
+
+
+					qa(27636, {	-- Just You and Mathias
+						["sourceQuests"] = { 27502 },	-- Up to the Citadel
+					}),
+
 					
 					qa(28599, {	-- Kurdran's Waitin'
 						["qg"] = 49020,	-- Fargo Flintlocke
@@ -405,12 +601,31 @@ _.Zones =
 					}),
 					
 
+					q(28247, {	-- Last of Her Kind
+						["g"] = {
+							i(63756),	-- Bracers of Final Memories
+							i(63755),	-- Hood of Lost Solitude
+							i(63754),	-- Waistguard of Twilight Finality
+						},
+						["qg"] = 47905,	-- Baleflame
+						["coord"] = { 45.0, 90.8, 241 },
+						["sourceQuests"] = { 28176 },	-- Following the Young Home
+					}),
+					
+					
 					qa(28281, {	-- Last Stand at Thundermar
 						["qg"] = 48173,	-- Colin Thundermar
 						["coord"] = { 49.0, 29.7, 241 },
 						["sourceQuests"] = { 28280 },	-- Tear Them From the Sky
 					}),
 					
+
+					q(27506, {	-- Life from Death
+						["qg"] = 45562,	-- Baleflame
+						["coord"] = { 29.7, 31.3, 241 },
+						["sourceQuests"] = { 27504 },	-- Even Dragons Bleed
+					}),
+
 					
 					qa(28216, {	-- Magmalord Falthazar
 						["g"] = {
@@ -427,6 +642,17 @@ _.Zones =
 					}),
 					
 
+					qa(28101, {	-- Mathias' Command
+						["qg"] = 45528,	-- Calen
+						["coord"] = { 29.3, 26.0, 241 },
+						["sourceQuests"] = {
+							27507,	-- Encroaching Twilight (definitely required)
+							27508,	-- Far From the Nest (probably required)
+							27509,	-- Breach in the Defenses (probably required)
+						},
+					}),
+					
+					
 					q(27303, {	-- Mercy for the Bound
 						["g"] = {
 							i(63786),	-- Fleshburned Robes
@@ -436,6 +662,17 @@ _.Zones =
 						["qg"] = 45362,	-- Earthcaller Yevaa
 						["coord"] = { 44.2, 18.1, 241 },
 						["sourceQuests"] = { 27301 },	-- Unbroken
+					}),
+
+
+					qa(27494, {	-- Move the Mountain
+						["qg"] = 45668,	-- Kurdran Wildhammer
+						["coord"] = { 43.4, 57.3, 241 },
+						["sourceQuests"] = {
+							27496,	-- Call in the Artillery
+							27492,	-- Ogres & Ettins
+							27490,	-- SI:7 Drop
+						},
 					}),
 
 					
@@ -499,6 +736,13 @@ _.Zones =
 						["sourceQuests"] = { 28377 },	-- Rescue at Glopgut's Hollow
 					}),
 
+
+					qa(27492, {	-- Ogres & Ettins
+						["qg"] = 45668,	-- Kurdran Wildhammer
+						["coord"] = { 43.4, 57.3, 241 },
+						["sourceQuests"] = { 28248 },	-- Victors' Point
+					}),
+
 					
 					qa(27648, {	-- Once More Into The Fire
 						["g"] = {
@@ -519,6 +763,14 @@ _.Zones =
 					}),
 
 
+					qa(28107, {	-- Paving the Way
+						["qg"] = 47611,	-- Highbank Lieutenant
+						["coord"] = { 26.0, 38.9, 241 },
+						["description"] = "You don't have to complete 'If the Key Fits' to get this quest, but the questgiver won't appear until you pick 'If the Key Fits' up.",
+						["sourceQuests"] = { 28108 },	-- If the Key Fits
+					}),
+					
+					
 					qa(27816, {	-- Personal Request
 						["qg"] = 46805,	-- Iain Firebeard
 						["coord"] = { 57.4, 58.1, 241 },
@@ -526,6 +778,18 @@ _.Zones =
 					}),
 					
 
+					q(27659, {	-- Portal Overlord
+						["g"] = {
+							i(63734),	-- Portal-Sealer's Breastplate
+							i(63733),	-- Deepdigger Helm
+							i(63735),	-- Darklight Torch
+						},
+						["qg"] = 46242,	-- Earthcaller Yevaa
+						["coord"] = { 37.5, 88.6, 241 },
+						["sourceQuests"] = { 27657 },	-- Help From the Earthcaller
+					}),
+					
+					
 					qa(28215, {	-- Potential Energy
 						["qg"] = 48014,	-- Nivvet Channelock
 						["coord"] = { 49.1, 29.3, 241 },
@@ -534,6 +798,29 @@ _.Zones =
 					}),
 
 
+					qa(28104, {	-- Precious Goods
+						["g"] = {
+							i(63774),	-- Spear-Impaled Leggings
+							i(63773),	-- Gatekeeper's Helm
+						},
+						["qg"] = 47592,	-- Master Mathias Shaw
+						["coord"] = { 26.0, 38.8, 241 },
+						["sourceQuests"] = { 28101 },	-- Mathias' Command
+					}),
+					
+					
+					qa(28109, {	-- Pressing Forward
+						["g"] = {
+							i(63767),	-- Gatesmashing Gauntlets
+							i(63766),	-- Commander's Stompers
+							i(63768),	-- Cloak of Grand Leadership
+						},
+						["qg"] = 47611,	-- Highbank Lieutenant
+						["coord"] = { 29.6, 51.3, 241 },
+						["sourceQuests"] = { 28108 },	-- If the Key Fits
+					}),
+					
+					
 					q(27300, {	-- Pushing Back
 						["qg"] = 45332,	-- Earthcaller Torunscar
 						["coord"] = { 44.0, 10.5, 241 },
@@ -569,10 +856,24 @@ _.Zones =
 					}),
 
 
+					q(28175, {	-- Shining Through the Dark
+						["qg"] = 47904,	-- Velastrasza
+						["coord"] = { 59.0, 69.8, 241 },
+						["sourceQuests"] = { 28171 },	-- And the Sky Streaked Red
+					}),
+					
+					
 					qa(27433, {	-- Shredderectomy
 						["qg"] = 45168,	-- Fargo Flintlocke
 						["coord"] = { 77.0, 69.8, 241 },
 						["sourceQuests"] = { 27338 },	-- Our Boys on the Shore
+					}),
+
+
+					qa(27490, {	-- SI:7 Drop
+						["qg"] = 45669,	-- Cassius the White
+						["coord"] = { 43.4, 57.3, 241 },
+						["sourceQuests"] = { 28248 },	-- Victors' Point
 					}),
 
 					
@@ -595,6 +896,11 @@ _.Zones =
 					}),
 
 
+					qa(27498, {	-- Signal the Attack
+						["sourceQuests"] = { 27494 },	-- Move the Mountain
+					}),
+					
+					
 					q(27302, {	-- Simple Solutions
 						["qg"] = 45432,	-- Initiate Goldmine
 						["coord"] = { 44.4, 11.5, 241 },
@@ -671,6 +977,13 @@ _.Zones =
 						["sourceQuests"] = { 28407 },	-- The Bachelorette
 					}),
 					
+
+					q(27660, {	-- Spirit of the Loch
+						["qg"] = 46242,	-- Earthcaller Yevaa
+						["coord"] = { 37.5, 88.6, 241 },
+						["sourceQuests"] = { 27657 },	-- Help From the Earthcaller
+					}),
+
 					
 					qa(27808, {	-- Stubborn as a Doyle
 						["qg"] = 46805,	-- Iain Firebeard
@@ -723,6 +1036,16 @@ _.Zones =
 						["qg"] = 46935,	-- Gurgthock
 						["coord"] = { 50.7, 58.2, 241 },
 						["sourceQuests"] = { 27863 },	-- The Crucible of Carnage: The Bloodeye Bruiser!
+					}),
+
+
+					qa(27695, {	-- The Elementium Axe
+						["qg"] = 45796,	-- Master Mathias Shaw
+						["coord"] = { 36.3, 66.0, 241 },
+						["sourceQuests"] = {
+							27654,	-- Bring the Hammer Down
+							27652,	-- Dark Assassins
+						},
 					}),
 
 					
@@ -857,6 +1180,13 @@ _.Zones =
 					}),
 					
 
+					q(27662, {	-- Unbinding
+						["qg"] = 46243,	-- Initiate Goldmine
+						["coord"] = { 37.5, 88.6, 241 },
+						["sourceQuests"] = { 27657 },	-- Help From the Earthcaller
+					}),
+					
+					
 					q(27301, {	-- Unbroken
 						["qg"] = 45391,	-- Earthmender Duarn
 						["coord"] = { 43.9, 11.2, 241 },
@@ -864,10 +1194,36 @@ _.Zones =
 					}),
 
 
+					qa(27502, {	-- Up to the Citadel
+						["qg"] = 45669,	-- Cassius the White
+						["coord"] = { 43.4, 57.3, 241 },
+						["sourceQuests"] = { 27500 },	-- Four Heads are Better Than None
+					}),
+					
+					
+					qa(28248, {	-- Victors' Point
+						["qg"] = 47902,	-- Lirastrasza
+						["coord"] = { 59.0, 69.8, 241 },
+						["sourceQuests"] = { 28247 },	-- Last of Her Kind
+					}),
+					
+					
 					qa(27485, {	-- Warm Welcome
 						["qg"] = 48265,	-- Lauriel Trueblade
 						["coord"] = { 44.0, 10.5, 241 },
 						["sourceQuests"] = { 27380 },	-- Nightmare
+					}),
+
+
+					qa(27719, {	-- Water of Life
+						["g"] = {
+							i(63719),	-- Soulgrowth Spaulders
+							i(63718),	-- Grips of the Damned Mind
+							i(63720),	-- Mindsear Shanker
+						},
+						["qg"] = 46413,	-- Countess Verrall
+						["coord"] = { 27.7, 63.8, 241 },
+						["sourceQuests"] = { 27661 },	-- Fire the Cannon
 					}),
 
 					
@@ -937,7 +1293,6 @@ _.Zones =
 						i(63709),
 					})),
 --[[					
-					q(28191),	-- A Fitting End
 					q(29802),	-- A Hidden Message
 --]]
 					qg(46513, q(27742, {	-- A Little on the Side
@@ -946,23 +1301,12 @@ _.Zones =
 					})),
 --[[						
 					qh(27947),	-- A Vision of Twilight
-					q(28171),	-- And the Sky Streaked Red
 					qh(28873),	-- Another Maw to Feed
 					qa(27711),	-- Back to the Elementium Depths
 					qh(27712),	-- Back to the Elementium Depths
 					qh(28041),	-- Bait and Throttle
---]]
-					qg(49810, q(28758, {	-- Battle of Life and Death
-						i(63760),
-					})),
---[[
 					qa(28864),	-- Beer Run
 --]]
-					qg(47902, q(28173, {	-- Blackout
-						i(63759),
-						i(63758),
-						i(63757),
-					})),
 					qg(45983, qh(27606, {	-- Blast Him!
 						i(63908),
 						i(63907),
@@ -972,21 +1316,9 @@ _.Zones =
 					qh(28038),	-- Blood in the Highlands
 					qh(27584),	-- Blood in the Surf
 					qh(27611),	-- Blood on the Sand
---]]
-					qg(45528, q(27509, {	-- Breach in the Defenses
-						i(63780),
-						i(63775),
-					})),
---[[
 					qh(28875),	-- Bring Down the High Shaman
-					qa(27654),	-- Bring the Hammer Down
 					qh(27655),	-- Bring the Hammer Down
 --]]
-					qg(45669, qa(27496, {	-- Call in the Artillery
-						i(63753),
-						i(63752),
-						i(63751),
-					})),
 					qg(45665, qh(27497, {	-- Call in the Artillery
 						i(63750),
 						i(63749),
@@ -1020,11 +1352,6 @@ _.Zones =
 						i(63737),
 						i(63736),
 					})),
-					qg(45796, qa(27652, {	-- Dark Assassins
-						i(63741),
-						i(63740),
-						i(63739),
-					})),
 --					q(29736),	-- Darkfeather the Elder
 					qg(43581, qh(26622, {	-- Death to Mor'ghor
 						i(63884),
@@ -1035,16 +1362,6 @@ _.Zones =
 						i(63729),
 						i(63728),
 						i(63727),
-					})),
-					qg(45796, qa(27688, {	-- Distract Them for Me
-						i(63732),
-						i(63731),
-						i(63730),
-					})),
-					qg(45522, q(27505, {	-- Draconic Mending
-						i(63777),
-						i(63779),
-						i(63778),
 					})),
 --[[
 					qh(27929),	-- Drag 'em Down
@@ -1058,10 +1375,7 @@ _.Zones =
 					})),
 --[[
 					qh(28091),	-- Easy Pickings
-					qa(28103),	-- Easy Pickings
 					qh(26538),	-- Emergency Aid
-					q(27507),	-- Encroaching Twilight
-					q(28712),	-- Enter the Dragon Queen
 --]]					
 					qg(48993, qh(28589, {	-- Everything But the Kitchen Sink
 						i(63864),
@@ -1070,16 +1384,16 @@ _.Zones =
 					})),
 --[[
 					qh(27955),	-- Eye Spy
-					q(27508),	-- Far from the Nest
 					qa(28861),	-- Fight Like a Wildhammer
-					q(27661),	-- Fire the Cannon
 					q(29737),	-- Firebeard the Elder
-					q(28176),	-- Following the Young Home
 --]]
+--[[
 					qg(45669, qa(27608, {	-- Four Heads are Better than None
+					-- (this quest is either inactive or is a separate questline.  i picked up the other version.)
 						i(63747),
 						i(63746),
 					})),
+--]]
 					qg(45665, qh(27609, {	-- Four Heads are Better than None
 						i(63744),
 						i(63743),
@@ -1093,7 +1407,6 @@ _.Zones =
 					})),
 --[[					
 					qh(27783),	-- Garona Needs You
-					qa(27657),	-- Help from the Earthcaller
 					qh(27658),	-- Help from the Earthcaller
 					qh(28594),	-- Highbank, Crybank
 					qa(28945),	-- Honor the Flame
@@ -1101,11 +1414,9 @@ _.Zones =
 					qh(28874),	-- Hook 'em High
 					qh(28043),	-- How to Maim Your Dragon
 					qh(28092),	-- If The Key Fits
-					qa(28108),	-- If The Key Fits
-					q(27564),	-- In Defense of the Redoubt
 --]]
 					qg(43581, qh(26621, {	-- Insurrection
-						["sourceQuest"] = 26619,	-- You Say You Want a Revolution
+						["sourceQuests"] = { 26619 },	-- You Say You Want a Revolution
 						["groups"] = {
 							i(63889),	-- Shackle-Shatter Wand
 							i(63890),	-- Ring of Rebellion
@@ -1113,7 +1424,6 @@ _.Zones =
 					})),
 --[[
 					qh(27638),	-- Just You and Garona
-					qa(27636),	-- Just You and Mathias
 					qa(28860),	-- Keeping the Dragonmaw at Bay
 					qh(27491),	-- Kor'kron Drop
 --]]
@@ -1125,17 +1435,8 @@ _.Zones =
 					}))),
 --[[
 					qh(28583),	-- Krazzworks
---]]
-					qg(47905, q(28247, {	-- Last of Her Kind
-						i(63756),
-						i(63755),
-						i(63754),
-					})),
---[[
-					q(27506),	-- Life from Death
 					qh(26549),	-- Madness
 					qa(27782),	-- Mathias Needs You
-					qa(28101),	-- Mathias' Command
 --]]
 					qg(46090, qh(27622, {	-- Mo' Better Shredder
 						i(63902),
@@ -1143,7 +1444,6 @@ _.Zones =
 						i(63900),
 					})),
 --[[
-					qa(27494),	-- Move the Mountain
 					qh(27495),	-- Move the Mountain
 					qa(27720),	-- Mr. Goldmine's Wild Ride
 					qh(28885),	-- Mr. Goldmine's Wild Ride
@@ -1155,7 +1455,6 @@ _.Zones =
 					qh(28593),	-- Of Utmost Importance
 					qh(28591),	-- Off The Wall
 					qh(27493),	-- Ogres & Ettins
-					qa(27492),	-- Ogres & Ettins
 --]]
 					qg(46324, qh(27945, {	-- Paint it Black
 						i(63811),
@@ -1170,19 +1469,9 @@ _.Zones =
 --[[
 					qh(27576),	-- Patchwork Command
 					qh(28094),	-- Paving the Way
-					qa(28107),	-- Paving the Way
 					qa(11882),	-- Playing with Fire
 					qh(28586),	-- Pool Pony Rescue
 --]]
-					qg(46242, q(27659, {	-- Portal Overlord
-						i(63734),
-						i(63733),
-						i(63735),
-					})),
-					qg(47592, qa(28104, {	-- Precious Goods
-						i(63774),
-						i(63773),
-					})),
 					qg(47492, qh(28090, {	-- Precious Goods
 						i(63771),
 						i(63770),
@@ -1191,11 +1480,6 @@ _.Zones =
 						i(63764),
 						i(63763),
 						i(63765),
-					})),
-					qg(47611, qa(28109, {	-- Pressing Forward
-						i(63767),
-						i(63766),
-						i(63768),
 					})),
 --					qh(28147),	-- Purple is Your Color
 					qg(49439, qh(28584, {	-- Quality Construction
@@ -1211,8 +1495,6 @@ _.Zones =
 					qh(27610),	-- Scouting the Shore
 					qh(26786),	-- Securing the Beach Head
 					qh(27586),	-- Shells on the Sea Shore
-					q(28175),	-- Shining Through the Dark
-					qa(27490),	-- SI:7 Drop
 					q(27499),	-- Signal the Attack
 					qa(27588),	-- Signal the Attack
 					qh(27590),	-- Signal the Attack
@@ -1230,7 +1512,6 @@ _.Zones =
 						i(63705),
 					})),
 --[[					
-					q(27660),	-- Spirit of the Loch
 					qh(26539),	-- Stalled Negotiations
 					q(27866),	-- The Crucible of Carnage: Calder's Creation!
 --					q(31206),	-- The Crucible of Carnage: The Bloodeye Bruiser! (NYI/removed?  no information about where to pick this version up)
@@ -1250,7 +1531,6 @@ _.Zones =
 					qh(27865),	-- The Crucible of Carnage: The Wayward Wildhammer!
 					qh(28123),	-- The Demon Chain
 					qh(27696),	-- The Elementium Axe
-					qa(27695),	-- The Elementium Axe
 					qh(27954),	-- The Eyes Have It
 					qh(28097),	-- The Gates of Grim Batol
 					qh(27786),	-- The Hammer of Twilight
@@ -1279,19 +1559,11 @@ _.Zones =
 						i(63868),
 					})),
 --[[					
-					q(27662),	-- Unbinding
 					qh(27503),	-- Up to the Citadel
-					qa(27502),	-- Up to the Citadel
-					qa(28248),	-- Victors' Point
 					qh(27750),	-- War Forage
 					qa(28863),	-- Warlord Halthar is Back
 					qh(27486),	-- Warm Welcome
 --]]
-					qg(46413, qa(27719, {	-- Water of Life
-						i(63719),
-						i(63718),
-						i(63720),
-					})),
 					qg(46413, qh(27798, {	-- Water of Life
 						i(63716),
 						i(63715),
