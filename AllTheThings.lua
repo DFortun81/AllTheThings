@@ -10473,17 +10473,6 @@ app.events.VARIABLES_LOADED = function()
 	end
 	
 	-- Register for Dynamic Events and Assign Filters
-	if GetDataMember("IgnoreFiltersOnNonBindingItems", false) then
-		app.ItemBindFilter = app.FilterItemBind;
-	else
-		app.ItemBindFilter = app.Filter;
-	end
-	if GetDataMember("FilterGroupsByLevel", false) then
-		app:RegisterEvent("PLAYER_LEVEL_UP");
-		app.GroupRequirementsFilter = app.FilterGroupsByLevel;
-	else
-		app.GroupRequirementsFilter = app.NoFilter;
-	end
 	if GetDataMember("ShowMinimapButton", true) then
 		app.Minimap = app.CreateMinimapButton(); -- NOTE: Create this if they turn it on.
 		app.Minimap:Show();
@@ -10498,13 +10487,6 @@ app.events.VARIABLES_LOADED = function()
 		app.TomTomIgnoreCompletedObjects = app.Filter
 	else
 		app.TomTomIgnoreCompletedObjects = app.NoFilter
-	end
-	
-	
-	if GetDataMember("ShowIncompleteQuests", false) then
-		app.ShowIncompleteQuests = app.FilterItemTrackable;
-	else
-		app.ShowIncompleteQuests = app.Filter;
 	end
 	
 	-- Tooltip Settings

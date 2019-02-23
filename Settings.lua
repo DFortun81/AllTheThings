@@ -346,10 +346,12 @@ settings.UpdateMode = function(self)
 		app.ItemTypeFilter = app.NoFilter;
 		app.ClassRequirementFilter = app.NoFilter;
 		app.RaceRequirementFilter = app.NoFilter;
+		app.RequiredSkillFilter = app.NoFilter;
 	else
 		app.ItemTypeFilter = app.FilterItemClass_RequireItemFilter;
 		app.ClassRequirementFilter = app.FilterItemClass_RequireClasses;
 		app.RaceRequirementFilter = app.FilterItemClass_RequireRaces;
+		app.RequiredSkillFilter = app.FilterItemClass_RequiredSkill;
 	end
 	if self:Get("Show:CompletedGroups") or self:Get("DebugMode") then
 		app.GroupVisibilityFilter = app.NoFilter;
@@ -372,18 +374,27 @@ settings.UpdateMode = function(self)
 		app.RecipeChecker = app.GetTempDataSubMember;
 	end
 	
-	
+	if GetDataMember("IgnoreFiltersOnNonBindingItems", false) then
+		app.ItemBindFilter = app.FilterItemBind;
+	else
+		app.ItemBindFilter = app.Filter;
+	end
+	if GetDataMember("FilterGroupsByLevel", false) then
+		app:RegisterEvent("PLAYER_LEVEL_UP");
+		app.GroupRequirementsFilter = app.FilterGroupsByLevel;
+	else
+		app.GroupRequirementsFilter = app.NoFilter;
+	end
 	if app.GetDataMember("RequireBindingFilter", false) then
 		app.RequireBindingFilter = app.FilterItemClass_RequireBinding;
 	else
 		app.RequireBindingFilter = app.NoFilter;
 	end
-	if app.GetDataMember("RequiredSkillFilter", true) then
-		app.RequiredSkillFilter = app.FilterItemClass_RequiredSkill;
+	if GetDataMember("ShowIncompleteQuests", false) then
+		app.ShowIncompleteQuests = app.FilterItemTrackable;
 	else
-		app.RequiredSkillFilter = app.NoFilter;
+		app.ShowIncompleteQuests = app.Filter;
 	end
-	
 end
 
 -- The ALL THE THINGS Epic Logo!
