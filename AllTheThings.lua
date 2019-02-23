@@ -5356,7 +5356,6 @@ function app.FilterItemClass(item)
 			and app.ClassRequirementFilter(item)
 			and app.RaceRequirementFilter(item)
 			and app.UnobtainableItemFilter(item.u)
-			and app.PersonalLootFilter(item)
 			and app.RequiredSkillFilter(item.requireSkill);
 end
 function app.FilterItemClass_RequireClasses(item)
@@ -5584,7 +5583,6 @@ app.ItemSourceFilter = app.FilterItemSource;
 app.ItemTypeFilter = app.NoFilter;
 app.CollectedItemVisibilityFilter = app.NoFilter;
 app.MissingItemVisibilityFilter = app.NoFilter;
-app.PersonalLootFilter = app.NoFilter;
 app.ClassRequirementFilter = app.NoFilter;
 app.RaceRequirementFilter = app.NoFilter;
 app.RequireBindingFilter = app.NoFilter;
@@ -10631,9 +10629,6 @@ end
 app.events.ACTIVE_TALENT_GROUP_CHANGED = function()
 	app.Spec = GetLootSpecialization();
 	if not app.Spec or app.Spec == 0 then app.Spec = select(1, GetSpecializationInfo(GetSpecialization())); end
-	if GetDataMember("RequirePersonalLootFilter") then
-		app:RefreshData(false, true);
-	end
 end
 app.events.PLAYER_LOOT_SPEC_UPDATED = function()
 	app.Spec = GetLootSpecialization();

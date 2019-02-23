@@ -342,13 +342,11 @@ settings.UpdateMode = function(self)
 		app.GroupFilter = app.FilterItemClass;
 		app.UnobtainableItemFilter = app.FilterItemClass_UnobtainableItem;
 	end
-	
 	if self:Get("AccountMode") then
 		app.ItemTypeFilter = app.NoFilter;
 	else
 		app.ItemTypeFilter = app.FilterItemClass_RequireItemFilter;
 	end
-	
 	if app.GetDataMember("FilterItemsByClass", true) and not self:Get("AccountMode") then
 		app.ClassRequirementFilter = app.FilterItemClass_RequireClasses;
 	else
@@ -385,11 +383,6 @@ settings.UpdateMode = function(self)
 		app.RequireBindingFilter = app.FilterItemClass_RequireBinding;
 	else
 		app.RequireBindingFilter = app.NoFilter;
-	end
-	if app.GetDataMember("RequirePersonalLootFilter", false) then
-		app.PersonalLootFilter = app.FilterItemClass_RequirePersonalLoot;
-	else
-		app.PersonalLootFilter = app.NoFilter;
 	end
 	if app.GetDataMember("RequiredSkillFilter", true) then
 		app.RequiredSkillFilter = app.FilterItemClass_RequiredSkill;
