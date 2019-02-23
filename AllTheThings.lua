@@ -5582,7 +5582,6 @@ app.ItemBindFilter = app.FilterItemBind;
 app.ItemSourceFilter = app.FilterItemSource;
 app.ItemTypeFilter = app.NoFilter;
 app.CollectedItemVisibilityFilter = app.NoFilter;
-app.MissingItemVisibilityFilter = app.NoFilter;
 app.ClassRequirementFilter = app.NoFilter;
 app.RaceRequirementFilter = app.NoFilter;
 app.RequireBindingFilter = app.NoFilter;
@@ -5675,8 +5674,7 @@ UpdateGroup = function(parent, group)
 						group.visible = app.CollectedItemVisibilityFilter(group);
 						parent.progress = (parent.progress or 0) + 1;
 					else
-						-- Otherwise, use the "Show Missing Items" filter.
-						group.visible = app.MissingItemVisibilityFilter(group);
+						group.visible = true;
 					end
 				elseif group.trackable then
 					-- If this group is trackable, then we should show it.
@@ -10485,13 +10483,6 @@ app.events.VARIABLES_LOADED = function()
 		app.GroupRequirementsFilter = app.FilterGroupsByLevel;
 	else
 		app.GroupRequirementsFilter = app.NoFilter;
-	end
-	
-	
-	if GetDataMember("ShowUncollectedThings", true) then
-		app.MissingItemVisibilityFilter = app.NoFilter;
-	else
-		app.MissingItemVisibilityFilter = app.Filter;
 	end
 	if GetDataMember("ShowMinimapButton", true) then
 		app.Minimap = app.CreateMinimapButton(); -- NOTE: Create this if they turn it on.
