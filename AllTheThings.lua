@@ -9086,7 +9086,21 @@ end):Show();
 				
 				-- If we don't have any map data on this area, report it to the chat window.
 				if not results or not results.g or #results.g < 1 then
+					local mapID = self.mapID;
+					local mapInfo = C_Map.GetMapInfo(mapID);
+					local mapPath = mapInfo.name or ("Map ID #" .. mapID);
+					mapID = mapInfo.parentMapID;
+					while mapID do
+						mapInfo = C_Map.GetMapInfo(mapID);
+						if mapInfo then
+							mapPath = (mapInfo.name or ("Map ID #" .. mapID)) .. " -> " .. mapPath;
+							mapID = mapInfo.parentMapID;
+						else
+							break;
+						end
+					end
 					print("No map found for this location ", app.GetMapName(self.mapID), " [", self.mapID, "]");
+					print("Path: ", mapPath);
 					print("Please report this to the ATT Discord! Thanks! ", GetAddOnMetadata("AllTheThings", "Version"));
 				end
 			end
