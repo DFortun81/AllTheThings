@@ -691,8 +691,8 @@ app.yell = function(msg)
 	UIErrorsFrame:AddMessage(msg or "nil", 1, 0, 0);
 	app:PlayRemoveSound();
 end
-app.print = function(msg, ...)
-	DEFAULT_CHAT_FRAME:AddMessage(L["TITLE"] .. ": " .. (msg or "nil"), ...);
+app.print = function(...)
+	print(L["TITLE"], ...);
 end
 
 local function ShowInterfaceOptions()
@@ -709,7 +709,7 @@ local lastPlayedFanfare;
 function app:PlayCompleteSound()
 	if GetDataMember("PlayCompleteSound", true) then
 		-- Play a random complete sound
-		local t = L["AUDIO_COMPLETE_TABLE"];
+		local t = app.Settings.AUDIO_COMPLETE_TABLE;
 		if t and type(t) == "table" then
 			local id = math.random(1, #t);
 			if t[id] then PlaySoundFile(t[id], "master"); end
@@ -1335,13 +1335,13 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 		if app.GroupRequirementsFilter(group) and app.GroupFilter(group) then
 			local right = nil;
 			if group.total and (group.total > 1 or (group.total > 0 and not group.collectible)) then
-				if (group.progress / group.total) < 1 or GetDataMember("ShowCompletedGroups") then
+				if (group.progress / group.total) < 1 or app.Settings:Get("Show:CompletedGroups") then
 					right = GetProgressColorText(group.progress, group.total);
 				end
 			elseif paramA and paramB and (not group[paramA] or (group[paramA] and group[paramA] ~= paramB)) then
 				if group.collectible then
 					if group.collected or (group.trackable and group.saved) then
-						if GetDataMember("ShowCollectedItems") then
+						if app.Settings:Get("Show:CollectedThings") then
 							right = L["COLLECTED_ICON"];
 						end
 					else
@@ -1349,7 +1349,7 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 					end
 				elseif group.trackable then
 					if group.saved then
-						if GetDataMember("ShowCollectedItems") then
+						if app.Settings:Get("Show:CollectedThings") then
 							right = L["COMPLETE_ICON"];
 						end
 					elseif app.ShowIncompleteQuests(group) then
@@ -1420,7 +1420,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				end
 			end
 			
-			if not GetDataMember("IgnoreAllFilters") then
+			if not app.Settings:Get("AccountMode") and not app.Settings:Get("DebugMode") then
 				local regroup = {};
 				for i,j in ipairs(group) do
 					if app.RecursiveClassAndRaceFilter(j) and app.RecursiveUnobtainableFilter(j) then
@@ -1700,7 +1700,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					end
 				end
 			end
-			if (#temp < 1 and not (paramA == "creatureID" or paramA == "encounterID")) or (not GetDataMember("OnlyShowRelevantDatabaseLocations") or GetDataMember("IgnoreAllFilters")) then
+			if (#temp < 1 and not (paramA == "creatureID" or paramA == "encounterID")) or (not GetDataMember("OnlyShowRelevantDatabaseLocations") or (app.Settings:Get("AccountMode") or app.Settings:Get("DebugMode"))) then
 				for i,j in ipairs(unfiltered) do
 					tinsert(temp, j);
 				end
@@ -2500,7 +2500,7 @@ local function RefreshCollections()
 		
 		-- Refresh Sources from Cache
 		local collectedSources = GetDataMember("CollectedSources");
-		if GetDataMember("CompletionistMode") then
+		if app.Settings:Get("Completionist") then
 			-- Completionist Mode can simply use the *fast* blizzard API.
 			for id,group in pairs(fieldCache["s"]) do
 				if not collectedSources[id] then
@@ -2595,46 +2595,6 @@ app.RefreshSaves = RefreshSaves;
 app.OpenMainList = OpenMainList;
 app.OpenMiniListForCurrentProfession = OpenMiniListForCurrentProfession;
 
-app.SetCompletionistMode = function(completionistMode, fromSettings)
-	if not fromSettings then
-		local setting = _G[app:GetName() .. "-CompletionistMode"];
-		if setting then setting:SetChecked(completionistMode); end
-	end
-	app.print(completionistMode and "Entering Completionist Mode..." or GetDataMember("MainOnly") and "Entering Unique Appearances Mode (Main Only)..." or "Entering Unique Appearances Mode...");
-	SetDataMember("CompletionistMode", completionistMode);
-	wipe(GetDataMember("CollectedSources"));	-- This option causes a caching issue, so we have to purge the Source ID data cache.
-	if completionistMode then
-		app.ItemSourceFilter = app.FilterItemSource;
-		app.ActiveItemCollectionHelper = app.CompletionistItemCollectionHelper;
-		app.ActiveItemRemovalHelper = app.CompletionistItemRemovalHelper;
-	else
-		if GetDataMember("MainOnly") then
-			app.ItemSourceFilter = app.FilterItemSourceUniqueOnlyMain;
-			app.ActiveItemCollectionHelper = app.UniqueModeItemCollectionHelperOnlyMain;
-			app.ActiveItemRemovalHelper = app.UniqueModeItemRemovalHelperOnlyMain;
-		else
-			app.ItemSourceFilter = app.FilterItemSourceUnique;
-			app.ActiveItemCollectionHelper = app.UniqueModeItemCollectionHelper;
-			app.ActiveItemRemovalHelper = app.UniqueModeItemRemovalHelper;
-		end
-	end
-	RefreshCollections();
-end
-app.ToggleCompletionistMode = function()
-	app.SetCompletionistMode(not GetDataMember("CompletionistMode"));
-end
-app.SetDebugMode = function(debugMode)
-	SetDataMember("IgnoreAllFilters", debugMode);
-	if debugMode then
-		app.GroupFilter = app.NoFilter;
-	else
-		app.GroupFilter = app.FilterItemClass;
-	end
-	app:RefreshData();
-end
-app.ToggleDebugMode = function()
-	app.SetDebugMode(not GetDataMember("IgnoreAllFilters"));
-end
 app.SetHideBOEItems = function(checked)
 	app.SetDataMember("RequireBindingFilter", checked);
 	if checked then
@@ -2646,59 +2606,6 @@ app.SetHideBOEItems = function(checked)
 end
 app.ToggleBOEItems = function()
 	app.SetHideBOEItems(not app.GetDataMember("RequireBindingFilter"));
-end
-app.SetCompletedThings = function(checked, fromSettings)
-	if not fromSettings then
-		local setting = _G[app:GetName() .. "-Show Completed Groups"];
-		if setting then setting:SetChecked(checked); end
-		setting = _G[app:GetName() .. "-Show Collected Things"];
-		if setting then setting:SetChecked(checked); end
-	end
-	app.SetDataMember("ShowCompletedGroups", checked);
-	app.SetDataMember("ShowCollectedItems", checked);
-	if checked then
-		app.GroupVisibilityFilter = app.NoFilter;
-		app.CollectedItemVisibilityFilter = app.NoFilter;
-	else
-		app.GroupVisibilityFilter = app.FilterGroupsByCompletion;
-		app.CollectedItemVisibilityFilter = app.Filter;
-	end
-	app:RefreshData();
-end
-app.ToggleCompletedThings = function()
-	app.SetCompletedThings(not app.GetDataMember("ShowCompletedGroups"));
-end
-app.SetCompletedGroups = function(checked, fromSettings)
-	if not fromSettings then
-		local setting = _G[app:GetName() .. "-Show Completed Groups"];
-		if setting then setting:SetChecked(checked); end
-	end
-	app.SetDataMember("ShowCompletedGroups", checked);
-	if checked then
-		app.GroupVisibilityFilter = app.NoFilter;
-	else
-		app.GroupVisibilityFilter = app.FilterGroupsByCompletion;
-	end
-	app:RefreshData();
-end
-app.ToggleCompletedGroups = function()
-	app.SetCompletedGroups(not app.GetDataMember("ShowCompletedGroups"));
-end
-app.SetCollectedThings = function(checked, fromSettings)
-	if not fromSettings then
-		local setting = _G[app:GetName() .. "-Show Collected Things"];
-		if setting then setting:SetChecked(checked); end
-	end
-	app.SetDataMember("ShowCollectedItems", checked);
-	if checked then
-		app.CollectedItemVisibilityFilter = app.NoFilter;
-	else
-		app.CollectedItemVisibilityFilter = app.Filter;
-	end
-	app:RefreshData();
-end
-app.ToggleCollectedThings = function()
-	app.SetCollectedThings(not app.GetDataMember("ShowCollectedItems"));
 end
 
 
@@ -2819,15 +2726,6 @@ local function AttachTooltip(self)
 					if GetDataMember("ShowEncounterID") then self:AddDoubleLine(L["ENCOUNTER_ID"], tostring(encounterID)); end
 					AttachTooltipSearchResults(self, "encounterID:" .. encounterID, SearchForField, "encounterID", tonumber(encounterID));
 					return;
-				--[[
-				else
-					local questID = self.questID;
-					if questID then
-						print("QUEST", questID);
-						if GetDataMember("ShowQuestID") then self:AddDoubleLine(L["QUEST_ID"], tostring(questID)); end
-						AttachTooltipSearchResults(self, "questID:" .. questID, SearchForField, "questID", tonumber(questID));
-					end
-				]]--
 				end
 				
 				local itemID = owner.itemID;
@@ -3575,7 +3473,7 @@ app.BaseDifficulty = {
 			end
 		elseif key == "description" then
 			if t.difficultyID == 24 or t.difficultyID == 33 then
-				return "Timewalking difficulties needlessly create new Source IDs for items despite having the exact same name, appearance, and display in the Collections Tab.\n\nA plea to the Blizzard Devs: Please clean up the Source ID database and have your Timewalking / Titanforged item variants use the same Source ID as their base assuming the appearances and names are exactly the same. Not only will this make your database much cleaner, but it will also make Completionists excited for rather than dreading the introduction of more Timewalking content.\n\n - Crieve, the Very Bitter Debug Completionist that had 99% Ulduar completion and now only has 59% because your team duplicated the Source IDs rather than reuse the existing one.";
+				return "Timewalking difficulties needlessly create new Source IDs for items despite having the exact same name, appearance, and display in the Collections Tab.\n\nA plea to the Blizzard Devs: Please clean up the Source ID database and have your Timewalking / Titanforged item variants use the same Source ID as their base assuming the appearances and names are exactly the same. Not only will this make your database much cleaner, but it will also make Completionists excited for rather than dreading the introduction of more Timewalking content.\n\n - Crieve, the Very Bitter Full Account Completionist that had 99% Ulduar completion and now only has 59% because your team duplicated the Source IDs rather than reuse the existing one.";
 			end
 		else
 			-- Something that isn't dynamic.
@@ -5740,7 +5638,7 @@ UpdateGroup = function(parent, group)
 				parent.progress = (parent.progress or 0) + group.progress;
 				
 				-- If this group is trackable, then we should show it.
-				if app.GroupVisibilityFilter(group) or GetDataMember("ShowCompletedGroups") then
+				if app.GroupVisibilityFilter(group) or app.Settings:Get("Show:CompletedGroups") then
 					group.visible = true;
 				elseif app.ShowIncompleteQuests(group) then
 					group.visible = not group.saved;
@@ -5769,7 +5667,7 @@ UpdateGroup = function(parent, group)
 				elseif group.trackable then
 					-- If this group is trackable, then we should show it.
 					if app.ShowIncompleteQuests(group) then
-						group.visible = not group.saved or GetDataMember("ShowCompletedGroups");
+						group.visible = not group.saved or app.Settings:Get("Show:CompletedGroups");
 					else
 						-- Hide this group. We aren't filtering for it.
 						group.visible = false;
@@ -5821,7 +5719,7 @@ local function UpdateParentProgress(group)
 			
 			-- If this group is trackable, then we should show it.
 			if app.ShowIncompleteQuests(group) then
-				group.visible = not group.saved or app.GroupVisibilityFilter(group) or GetDataMember("ShowCompletedGroups");
+				group.visible = not group.saved or app.GroupVisibilityFilter(group) or app.Settings:Get("Show:CompletedGroups");
 			else
 				group.visible = app.GroupVisibilityFilter(group);
 			end
@@ -6238,7 +6136,7 @@ local function MinimapButtonOnEnter(self)
 	GameTooltip:SetOwner(self, "ANCHOR_LEFT");
 	GameTooltip:ClearLines();
 	GameTooltip:AddDoubleLine(L["TITLE"], GetProgressColorText(reference.progress, reference.total));
-	GameTooltip:AddDoubleLine(GetDataMember("CompletionistMode") and "Completionist Mode" or "Unique Appearance Mode", app.GetNumberOfItemsUntilNextPercentage(reference.progress, reference.total), 1, 1, 1);
+	GameTooltip:AddDoubleLine(app.Settings:GetModeString(), app.GetNumberOfItemsUntilNextPercentage(reference.progress, reference.total), 1, 1, 1);
 	GameTooltip:AddLine(L["DESCRIPTION"], 0.4, 0.8, 1, 1);
 	GameTooltip:AddLine(L["MINIMAP_MOUSEOVER_TEXT"], 1, 1, 1);
 	GameTooltip:Show();
@@ -7134,10 +7032,7 @@ local function RowOnEnter(self)
 		local lvl = reference.lvl or 0;
 		if lvl > 1 then GameTooltip:AddDoubleLine(L["REQUIRES_LEVEL"], tostring(lvl)); end
 		if reference.b then GameTooltip:AddDoubleLine("Binding", tostring(reference.b)); end
-		if reference.requireSkill then
-			GameTooltip:AddDoubleLine(L["REQUIRES"], tostring(GetSpellInfo(SkillIDToSpellID[reference.requireSkill] or 0)));
-			-- GameTooltip:AddDoubleLine(L["REQUIRE_SKILL_ID"], tostring(reference.requireSkill));
-		end
+		if reference.requireSkill then GameTooltip:AddDoubleLine(L["REQUIRES"], tostring(GetSpellInfo(SkillIDToSpellID[reference.requireSkill] or 0))); end
 		if reference.f and reference.f > 0 and GetDataMember("ShowFilterID") then GameTooltip:AddDoubleLine(L["FILTER_ID"], tostring(L["FILTER_ID_TYPES"][reference.f])); end
 		if reference.achievementID and GetDataMember("ShowAchievementID") then GameTooltip:AddDoubleLine(L["ACHIEVEMENT_ID"], tostring(reference.achievementID)); end
 		if reference.artifactID and GetDataMember("ShowArtifactID") then GameTooltip:AddDoubleLine(L["ARTIFACT_ID"], tostring(reference.artifactID)); end
@@ -7231,42 +7126,24 @@ local function RowOnEnter(self)
 			end
 		end
 		if reference.qgs and GetDataMember("ShowQuestGivers") then
-			if #reference.qgs > 1 then
-				if GetDataMember("ShowCreatureID") then 
-					for i,qg in ipairs(reference.qgs) do
-						GameTooltip:AddDoubleLine(i == 1 and L["QUEST_GIVERS"] or " ", tostring(qg > 0 and NPCNameFromID[qg] or "NPC") .. " (" .. qg .. ")");
-					end
-				else
-					for i,qg in ipairs(reference.qgs) do
-						GameTooltip:AddDoubleLine(i == 1 and L["QUEST_GIVERS"] or " ", tostring(qg > 0 and NPCNameFromID[qg] or ("NPC (" .. qg .. ")")));
-					end
+			if GetDataMember("ShowCreatureID") then 
+				for i,qg in ipairs(reference.qgs) do
+					GameTooltip:AddDoubleLine(i == 1 and L["QUEST_GIVER"] or " ", tostring(qg > 0 and NPCNameFromID[qg] or "") .. " (" .. qg .. ")");
 				end
 			else
-				local qg = reference.qgs[1];
-				if GetDataMember("ShowCreatureID") then 
-					GameTooltip:AddDoubleLine(L["QUEST_GIVER"], tostring(qg > 0 and NPCNameFromID[qg] or "NPC") .. " (" .. qg .. ")");
-				else
-					GameTooltip:AddDoubleLine(L["QUEST_GIVER"], tostring(qg > 0 and NPCNameFromID[qg] or ("NPC (" .. qg .. ")")));
+				for i,qg in ipairs(reference.qgs) do
+					GameTooltip:AddDoubleLine(i == 1 and L["QUEST_GIVER"] or " ", tostring(qg > 0 and NPCNameFromID[qg] or qg));
 				end
 			end
 		end
 		if reference.crs and GetDataMember("ShowCreatures") then
-			if #reference.crs > 1 then
-				if GetDataMember("ShowCreatureID") then 
-					for i,cr in ipairs(reference.crs) do
-						GameTooltip:AddDoubleLine(i == 1 and L["CREATURES"] or " ", tostring(cr > 0 and NPCNameFromID[cr] or "NPC") .. " (" .. cr .. ")");
-					end
-				else
-					for i,cr in ipairs(reference.crs) do
-						GameTooltip:AddDoubleLine(i == 1 and L["CREATURES"] or " ", tostring(cr > 0 and NPCNameFromID[cr] or ("NPC (" .. cr .. ")")));
-					end
+			if GetDataMember("ShowCreatureID") then 
+				for i,cr in ipairs(reference.crs) do
+					GameTooltip:AddDoubleLine(i == 1 and CREATURE or " ", tostring(cr > 0 and NPCNameFromID[cr] or "") .. " (" .. cr .. ")");
 				end
 			else
-				local cr = reference.crs[1];
-				if GetDataMember("ShowCreatureID") then 
-					GameTooltip:AddDoubleLine(L["CREATURE_ID"], tostring(cr > 0 and NPCNameFromID[cr] or "NPC") .. " (" .. cr .. ")");
-				else
-					GameTooltip:AddDoubleLine(L["CREATURE_ID"], tostring(cr > 0 and NPCNameFromID[cr] or ("NPC (" .. cr .. ")")));
+				for i,cr in ipairs(reference.crs) do
+					GameTooltip:AddDoubleLine(i == 1 and CREATURE or " ", tostring(cr > 0 and NPCNameFromID[cr] or cr));
 				end
 			end
 		end
@@ -7550,9 +7427,7 @@ local function UpdateWindow(self, force, got)
 				end
 				tinsert(self.rowData, {
 					["text"] = "No entries matching your filters were found.",
-					["description"] = GetDataMember("ShowCompletedGroups") and 
-						"If you believe this was in error, try activating 'Debug Mode'. One of your filters may be restricting the visibility of the group."
-						or "Toggle 'Show Completed Groups' in the options menu to review your accomplishments.\n\nIf you believe this was in error, try activating 'Debug Mode'. One of your filters may be restricting the visibility of the group.",
+					["description"] = "If you believe this was in error, try activating 'Debug Mode'. One of your filters may be restricting the visibility of the group.",
 					["indent"] = 1,
 					["collectible"] = 1,
 					["collected"] = 1,
@@ -7597,7 +7472,7 @@ function app:GetDataCache()
 		allData = setmetatable({}, {
 			__index = function(t, key)
 				if key == "title" then
-					return (GetDataMember("CompletionistMode") and "Completionist Mode" or GetDataMember("MainOnly") and "Unique Appearance Mode (Main Only)" or "Unique Appearance Mode") .. DESCRIPTION_SEPARATOR .. app.GetNumberOfItemsUntilNextPercentage(t.progress, t.total);
+					return app.Settings:GetModeString() .. DESCRIPTION_SEPARATOR .. app.GetNumberOfItemsUntilNextPercentage(t.progress, t.total);
 				else
 					-- Something that isn't dynamic.
 					return table[key];
@@ -7620,8 +7495,8 @@ function app:GetDataCache()
 		-- Dungeons & Raids
 		db = {};
 		db.expanded = false;
-		db.text = GROUP_FINDER; -- L["DUNGEONS&RAIDS"];
-		db.icon = "Interface\\LFGFRAME\\LFGIcon-ReturntoKarazhan"; -- LFGICON-DUNGEON";
+		db.text = GROUP_FINDER;
+		db.icon = "Interface\\LFGFRAME\\LFGIcon-ReturntoKarazhan";
 		db.g = app.Categories.Instances;
 		table.insert(g, db);
 		
@@ -7630,7 +7505,7 @@ function app:GetDataCache()
 			db = app.CreateAchievement(46, app.Categories.Zones);
 			db.f = 0;
 			db.expanded = false;
-			db.text = BUG_CATEGORY2; -- L["ZONES"];
+			db.text = BUG_CATEGORY2;
 			db.icon = "Interface\\ICONS\\Achievement_Zone_Outland_01"
 			db.collectible = false;
 			table.insert(g, db);
@@ -7640,7 +7515,7 @@ function app:GetDataCache()
 		if app.Categories.WorldDrops then
 			db = {};
 			db.expanded = false;
-			db.text = TRANSMOG_SOURCE_4; -- L["WORLD_DROPS"];
+			db.text = TRANSMOG_SOURCE_4;
 			db.icon = "Interface\\ICONS\\INV_Misc_Map02";
 			db.g = app.Categories.WorldDrops;
 			table.insert(g, db);
@@ -7683,7 +7558,7 @@ function app:GetDataCache()
 			db = app.CreateAchievement(12827, app.Categories.WorldEvents);
 			db.f = 0;
 			db.expanded = false;
-			db.text = EVENTS_LABEL; -- L["EVENTS"];
+			db.text = EVENTS_LABEL;
 			db.collectible = false;
 			table.insert(g, db);
 		end
@@ -7693,7 +7568,7 @@ function app:GetDataCache()
 			db = app.CreateAchievement(12827, app.Categories.Anniversary);
 			db.f = 0;
 			db.expanded = false;
-			db.text = "WoW Anniversary"; -- L["EVENTS"];
+			db.text = "WoW Anniversary";
 			db.collectible = false;
 			table.insert(g, db);
 		end
@@ -7703,7 +7578,7 @@ function app:GetDataCache()
 			db = app.CreateAchievement(2144, app.Categories.Holidays);
 			db.f = 0;
 			db.expanded = false;
-			db.text = GetItemSubClassInfo(15,3); -- L["Holidays"];
+			db.text = GetItemSubClassInfo(15,3);
 			db.npcID = -3;
 			db.collectible = false;
 			table.insert(g, db);
@@ -7736,7 +7611,7 @@ function app:GetDataCache()
 		if app.Categories.Craftables then
 			db = app.CreateAchievement(5035, {});
 			db.expanded = false;
-			db.text = LOOT_JOURNAL_LEGENDARIES_SOURCE_CRAFTED_ITEM; -- L["Crafted Items"];
+			db.text = LOOT_JOURNAL_LEGENDARIES_SOURCE_CRAFTED_ITEM;
 			db.icon = "Interface\\ICONS\\ability_repair";
 			db.g = app.Categories.Craftables;
 			db.collectible = false;
@@ -7747,7 +7622,7 @@ function app:GetDataCache()
 		if app.Categories.Professions then
 			db = app.CreateAchievement(10583, {});
 			db.expanded = false;
-			db.text = TRADE_SKILLS; -- L["PROFESSIONS"];
+			db.text = TRADE_SKILLS;
 			db.icon = "Interface\\ICONS\\INV_Scroll_04";
 			db.g = app.Categories.Professions;
 			db.collectible = false;
@@ -7759,7 +7634,7 @@ function app:GetDataCache()
 			db = app.CreateAchievement(11761, app.Categories.GearSets);
 			db.f = 0;
 			db.expanded = false;
-			db.text = LOOT_JOURNAL_ITEM_SETS; -- L["GEAR_SETS"];
+			db.text = LOOT_JOURNAL_ITEM_SETS;
 			db.icon = "Interface\\ICONS\\Achievement_Transmog_Collections";
 			table.insert(g, db);
 		end
@@ -7796,7 +7671,7 @@ function app:GetDataCache()
 			db = app.CreateAchievement(app.Faction == "Horde" and 12934 or 12933, app.Categories.Mounts);
 			db.f = 100;
 			db.expanded = false;
-			db.text = MOUNTS; -- L["MOUNTS"];
+			db.text = MOUNTS;
 			table.insert(g, db);
 		end
 		
@@ -7826,6 +7701,30 @@ function app:GetDataCache()
 			db.text = TOY_BOX; -- Toy Box
 			table.insert(g, db);
 		end
+		
+		-- Yourself.
+		table.insert(g, app.CreateUnit("player", {
+			["collected"] = 1,
+			["description"] = "Awarded for logging in.\n\nGood job! YOU DID IT!\n\nOnly visible while in Debug Mode.",
+			['OnUpdate'] = function(data)
+				if app.Settings:Get("DebugMode") then
+					data.visible = true;
+					data.collectible = true;
+					
+					-- Increment the parent group's totals.
+					data.parent.total = (data.parent.total or 0) + 1;
+					data.parent.progress = (data.parent.progress or 0) + 1;
+				else
+					data.visible = false;
+					if data.collectible then
+						data.collectible = false;
+						-- Decrement the parent group's totals.
+						data.parent.total = (data.parent.total or 0) - 1;
+						data.parent.progress = (data.parent.progress or 0) - 1;
+					end
+				end
+			end,
+		}));
 		
 		--[[
 		-- Never Implemented
@@ -7983,7 +7882,7 @@ function app:GetDataCache()
 			if not db then
 				db = {};
 				db.expanded = false;
-				db.text = L["GEAR_SETS"];
+				db.text = "Item Sets";
 				SetTempDataMember("GEAR_SET_CACHE", db);
 			end
 			
@@ -8111,8 +8010,10 @@ function app:GetDataCache()
 		-- Now build the hidden "Unsorted" Window's Data
 		allData = {};
 		allData.expanded = true;
-		allData.icon = L["LOGO_TINY"];
-		allData.preview = L["LOGO_LARGE"];
+		allData.icon = "Interface\\Addons\\AllTheThings\\assets\\content_20190216_1";
+		allData.texcoord = {429 / 512, (429 + 36) / 512, 141 / 256, (141 + 36) / 256};
+		allData.previewtexcoord = {1 / 512, (1 + 72) / 512, 75 / 256, (75 + 72) / 256};
+		allData.font = "GameFontNormalLarge";
 		allData.text = L["TITLE"];
 		allData.title = "Unsorted";
 		allData.description = "This data hasn't been implemented yet.";
@@ -10488,25 +10389,6 @@ app.events.VARIABLES_LOADED = function()
 	
 	app:UpdateWindowColors();
 	
-	-- Bindings
-	BINDING_HEADER_ALLTHETHINGS = L["TITLE"];
-	BINDING_NAME_ALLTHETHINGS_OPENMAINLIST = L["OPEN_MAINLIST"];
-	BINDING_NAME_ALLTHETHINGS_OPENMINILIST = L["OPEN_MINILIST"];
-	BINDING_NAME_ALLTHETHINGS_OPENPROFESSIONMINILIST = L["OPEN_PROFESSIONMINILIST"];
-	BINDING_NAME_ALLTHETHINGS_TOGGLEMAINLIST = L["TOGGLE_MAINLIST"];
-	BINDING_NAME_ALLTHETHINGS_TOGGLEMINILIST = L["TOGGLE_MINILIST"];
-	BINDING_NAME_ALLTHETHINGS_TOGGLEBOEITEMS = L["TOGGLE_BOEITEMS"];
-	BINDING_NAME_ALLTHETHINGS_TOGGLECOMPLETEDTHINGS = L["TOGGLE_COMPLETEDTHINGS"];
-	BINDING_NAME_ALLTHETHINGS_TOGGLECOMPLETEDGROUPS = L["TOGGLE_COMPLETEDGROUPS"];
-	BINDING_NAME_ALLTHETHINGS_TOGGLECOLLECTEDTHINGS = L["TOGGLE_COLLECTEDTHINGS"];
-	BINDING_NAME_ALLTHETHINGS_TOGGLECOMPLETIONISTMODE = L["TOGGLE_COMPLETIONIST_MODE"];
-	BINDING_NAME_ALLTHETHINGS_TOGGLEDEBUGMODE = L["TOGGLE_DEBUG_MODE"];
-	BINDING_NAME_ALLTHETHINGS_OPEN_RAID_ASSISTANT = L["OPEN_RAID_ASSISTANT"];
-	BINDING_NAME_ALLTHETHINGS_TOGGLE_RAID_ASSISTANT = L["TOGGLE_RAID_ASSISTANT"];
-	BINDING_NAME_ALLTHETHINGS_TOGGLE_WORLD_QUESTS_LIST = L["TOGGLE_WORLD_QUESTS_LIST"];
-	BINDING_NAME_ALLTHETHINGS_TOGGLERANDOM = L["TOGGLE_RANDOM"];
-	BINDING_NAME_ALLTHETHINGS_REROLL_RANDOM = L["REROLL_RANDOM"];
-	
 	-- Cache information about the player.
 	local _, class, classIndex = UnitClass("player");
 	local raceName, race = UnitRace("player");
@@ -10596,11 +10478,6 @@ app.events.VARIABLES_LOADED = function()
 	end
 	
 	-- Register for Dynamic Events and Assign Filters
-	if GetDataMember("IgnoreAllFilters", false) then
-		app.GroupFilter = app.NoFilter;
-	else
-		app.GroupFilter = app.FilterItemClass;
-	end
 	if GetDataMember("IgnoreFiltersOnNonBindingItems", false) then
 		app.ItemBindFilter = app.FilterItemBind;
 	else
@@ -10612,16 +10489,8 @@ app.events.VARIABLES_LOADED = function()
 	else
 		app.GroupRequirementsFilter = app.NoFilter;
 	end
-	if GetDataMember("ShowCompletedGroups", false) then
-		app.GroupVisibilityFilter = app.NoFilter;
-	else
-		app.GroupVisibilityFilter = app.FilterGroupsByCompletion;
-	end
-	if GetDataMember("ShowCollectedItems", false) then
-		app.CollectedItemVisibilityFilter = app.NoFilter;
-	else
-		app.CollectedItemVisibilityFilter = app.Filter;
-	end
+	
+	
 	if GetDataMember("ShowUncollectedThings", true) then
 		app.MissingItemVisibilityFilter = app.NoFilter;
 	else
@@ -10630,21 +10499,6 @@ app.events.VARIABLES_LOADED = function()
 	if GetDataMember("ShowMinimapButton", true) then
 		app.Minimap = app.CreateMinimapButton(); -- NOTE: Create this if they turn it on.
 		app.Minimap:Show();
-	end
-	if GetDataMember("CompletionistMode", true) then
-		app.ItemSourceFilter = app.FilterItemSource;
-		app.ActiveItemCollectionHelper = app.CompletionistItemCollectionHelper;
-		app.ActiveItemRemovalHelper = app.CompletionistItemRemovalHelper;
-	else
-		if GetDataMember("MainOnly") then
-			app.ItemSourceFilter = app.FilterItemSourceUniqueOnlyMain;
-			app.ActiveItemCollectionHelper = app.UniqueModeItemCollectionHelperOnlyMain;
-			app.ActiveItemRemovalHelper = app.UniqueModeItemRemovalHelperOnlyMain;
-		else
-			app.ItemSourceFilter = app.FilterItemSourceUnique;
-			app.ActiveItemCollectionHelper = app.UniqueModeItemCollectionHelper;
-			app.ActiveItemRemovalHelper = app.UniqueModeItemRemovalHelperOnlyMain;
-		end
 	end
 	if GetDataMember("FilterItemsByClass", true) then
 		app.ClassRequirementFilter = app.FilterItemClass_RequireClasses;
@@ -10748,7 +10602,7 @@ app.events.VARIABLES_LOADED = function()
 	GetDataMember("ShowTierID", false);
 	GetDataMember("ShowTitleID", false);
 	GetDataMember("ShowVisualID", false);
-	app.Settings:init();
+	app.Settings:Initialize();
 end
 app.events.PLAYER_LOGIN = function()
 	app:UnregisterEvent("PLAYER_LOGIN");
@@ -10779,7 +10633,6 @@ app.events.PLAYER_LOGIN = function()
 		
 		-- Mark all previously completed quests.
 		local version = GetAddOnMetadata("AllTheThings", "Version");
-		app.print(format(L["LOADING"], version));
 		GetQuestsCompleted(CompletedQuests);
 		wipe(DirtyQuests);
 		app:RegisterEvent("QUEST_LOG_UPDATE");
@@ -10943,7 +10796,7 @@ app.events.TRANSMOG_COLLECTION_SOURCE_REMOVED = function(sourceID)
 		SetDataSubMember("CollectedSources", sourceID, nil);
 		
 		-- If the user is a Completionist
-		if GetDataMember("CompletionistMode") then
+		if app.Settings:Get("Completionist") then
 			if GetDataMember("ShowNotifications", true) then
 				-- Oh shucks, that was nice of you to give this item to your friend.
 				-- WAIT, WHAT? A VENDOR?! OH GOD NO! TODO: Warn a user when they vendor an appearance?

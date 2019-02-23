@@ -1,39 +1,33 @@
 <Bindings>
-	<Binding name="ALLTHETHINGS_OPENMAINLIST" header="ALLTHETHINGS" category="ADDONS">
-		AllTheThings.OpenMainList();
+	<Binding name="ALLTHETHINGS_TOGGLEACCOUNTMODE" header="ALLTHETHINGS" category="ADDONS">
+		AllTheThings.Settings:ToggleAccountMode();
 	</Binding>
-	<Binding name="ALLTHETHINGS_OPENMINILIST" category="ADDONS">
-		AllTheThings.OpenMiniListForCurrentZone();
+	<Binding name="ALLTHETHINGS_TOGGLECOMPLETIONISTMODE" category="ADDONS">
+		AllTheThings.Settings:ToggleCompletionistMode();
 	</Binding>
-	<Binding name="ALLTHETHINGS_OPENPROFESSIONMINILIST" category="ADDONS">
-		AllTheThings.OpenMiniListForCurrentProfession();
+	<Binding name="ALLTHETHINGS_TOGGLEDEBUGMODE" category="ADDONS">
+		AllTheThings.Settings:ToggleDebugMode();
 	</Binding>
-	<Binding name="ALLTHETHINGS_OPEN_RAID_ASSISTANT" category="ADDONS">
-		AllTheThings:GetWindow("RaidAssistant"):Show();
+	<Binding name="ALLTHETHINGS_TOGGLECOMPLETEDTHINGS" header="ALLTHETHINGS_PREFERENCES" category="ADDONS">
+		AllTheThings.Settings:ToggleCompletedThings();
 	</Binding>
-	<Binding name="ALLTHETHINGS_TOGGLEMAINLIST" category="ADDONS">
+	<Binding name="ALLTHETHINGS_TOGGLECOMPLETEDGROUPS" category="ADDONS">
+		AllTheThings.Settings:ToggleCompletedGroups();
+	</Binding>
+	<Binding name="ALLTHETHINGS_TOGGLECOLLECTEDTHINGS" category="ADDONS">
+		AllTheThings.Settings:ToggleCollectedThings();
+	</Binding>
+	<Binding name="ALLTHETHINGS_TOGGLEBOEITEMS" category="ADDONS">
+		AllTheThings.ToggleBOEItems();
+	</Binding>
+	<Binding name="ALLTHETHINGS_TOGGLEMAINLIST" header="ALLTHETHINGS_MODULES" category="ADDONS">
 		AllTheThings.ToggleMainList();
 	</Binding>
 	<Binding name="ALLTHETHINGS_TOGGLEMINILIST" category="ADDONS">
 		AllTheThings.ToggleMiniListForCurrentZone();
 	</Binding>
-	<Binding name="ALLTHETHINGS_TOGGLEBOEITEMS" category="ADDONS">
-		AllTheThings.ToggleBOEItems();
-	</Binding>
-	<Binding name="ALLTHETHINGS_TOGGLECOMPLETEDTHINGS" category="ADDONS">
-		AllTheThings.ToggleCompletedThings();
-	</Binding>
-	<Binding name="ALLTHETHINGS_TOGGLECOMPLETEDGROUPS" category="ADDONS">
-		AllTheThings.ToggleCompletedGroups();
-	</Binding>
-	<Binding name="ALLTHETHINGS_TOGGLECOLLECTEDTHINGS" category="ADDONS">
-		AllTheThings.ToggleCollectedThings();
-	</Binding>
-	<Binding name="ALLTHETHINGS_TOGGLECOMPLETIONISTMODE" category="ADDONS">
-		AllTheThings.ToggleCompletionistMode();
-	</Binding>
-	<Binding name="ALLTHETHINGS_TOGGLEDEBUGMODE" category="ADDONS">
-		AllTheThings.ToggleDebugMode();
+	<Binding name="ALLTHETHINGS_TOGGLE_PROFESSION_LIST" category="ADDONS">
+		AllTheThings:GetWindow("Professions"):Toggle();
 	</Binding>
 	<Binding name="ALLTHETHINGS_TOGGLE_RAID_ASSISTANT" category="ADDONS">
 		AllTheThings:GetWindow("RaidAssistant"):Toggle();
@@ -42,7 +36,7 @@
 		AllTheThings:GetWindow("WorldQuests"):Toggle();
 	</Binding>
 	<Binding name="ALLTHETHINGS_TOGGLERANDOM" category="ADDONS">
-		AllTheThings:GetWindow("Random"):SetVisible(not AllTheThings:GetWindow("Random"):IsVisible());
+		AllTheThings:GetWindow("Random"):Toggle();
 	</Binding>
 	<Binding name="ALLTHETHINGS_REROLL_RANDOM" category="ADDONS">
 		local window = AllTheThings:GetWindow("Random");
