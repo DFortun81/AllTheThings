@@ -344,18 +344,12 @@ settings.UpdateMode = function(self)
 	end
 	if self:Get("AccountMode") then
 		app.ItemTypeFilter = app.NoFilter;
+		app.ClassRequirementFilter = app.NoFilter;
+		app.RaceRequirementFilter = app.NoFilter;
 	else
 		app.ItemTypeFilter = app.FilterItemClass_RequireItemFilter;
-	end
-	if app.GetDataMember("FilterItemsByClass", true) and not self:Get("AccountMode") then
 		app.ClassRequirementFilter = app.FilterItemClass_RequireClasses;
-	else
-		app.ClassRequirementFilter = app.NoFilter;
-	end
-	if app.GetDataMember("FilterItemsByRace", true) and not self:Get("AccountMode") then
 		app.RaceRequirementFilter = app.FilterItemClass_RequireRaces;
-	else
-		app.RaceRequirementFilter = app.NoFilter;
 	end
 	if self:Get("Show:CompletedGroups") or self:Get("DebugMode") then
 		app.GroupVisibilityFilter = app.NoFilter;
