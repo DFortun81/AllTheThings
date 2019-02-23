@@ -336,7 +336,9 @@ settings.UpdateMode = function(self)
 	if self:Get("DebugMode") then
 		app.GroupFilter = app.NoFilter;
 		app.UnobtainableItemFilter = app.NoFilter;
+		app.VisibilityFilter = app.NoFilter;
 	else
+		app.VisibilityFilter = app.ObjectVisibilityFilter;
 		app.GroupFilter = app.FilterItemClass;
 		app.UnobtainableItemFilter = app.FilterItemClass_UnobtainableItem;
 	end

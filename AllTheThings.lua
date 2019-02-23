@@ -949,7 +949,7 @@ local function BuildSourceTextForTSM(group, l)
 	return L["TITLE"];
 end
 local function ProcessGroup(data, object, indent, back)
-	if object.visible then
+	if app.VisibilityFilter(object) then
 		object.back = back;
 		object.indent = indent;
 		tinsert(data, object);
@@ -5560,8 +5560,12 @@ end
 function app.FilterItemTrackable(group)
 	return group.trackable;
 end
+function app.ObjectVisibilityFilter(group)
+	return group.visible;
+end
 
 -- Default Filter Settings (changed in VARIABLES_LOADED and in the Options Menu)
+app.VisibilityFilter = app.ObjectVisibilityFilter;
 app.GroupFilter = app.FilterItemClass;
 app.GroupRequirementsFilter = app.NoFilter;
 app.GroupVisibilityFilter = app.NoFilter;
@@ -5640,7 +5644,7 @@ UpdateGroup = function(parent, group)
 				parent.progress = (parent.progress or 0) + group.progress;
 				
 				-- If this group is trackable, then we should show it.
-				if app.GroupVisibilityFilter(group) or app.Settings:Get("Show:CompletedGroups") then
+				if group.total > 0 and app.GroupVisibilityFilter(group) then
 					group.visible = true;
 				elseif app.ShowIncompleteQuests(group) then
 					group.visible = not group.saved;
@@ -5675,21 +5679,8 @@ UpdateGroup = function(parent, group)
 						group.visible = false;
 					end
 				else
-					-- We only want to filter out Consumables, Reagents, and Miscellaneous items if they can't be used to collect something
-					if group.f then
-						if group.f == 58 then
-							group.visible = app.CollectedItemVisibilityFilter(group);
-						else
-							if GetPersonalDataSubMember("ItemFilters", group.f, true) then
-								group.visible = true;
-							else
-								group.visible = false;
-							end
-						end
-					else
-						-- Hide this group.
-						group.visible = false;
-					end
+					-- Hide this group.
+					group.visible = false;
 				end
 			else
 				-- Hide this group. We aren't filtering for it.
@@ -5721,7 +5712,7 @@ local function UpdateParentProgress(group)
 			
 			-- If this group is trackable, then we should show it.
 			if app.ShowIncompleteQuests(group) then
-				group.visible = not group.saved or app.GroupVisibilityFilter(group) or app.Settings:Get("Show:CompletedGroups");
+				group.visible = not group.saved or app.GroupVisibilityFilter(group);
 			else
 				group.visible = app.GroupVisibilityFilter(group);
 			end
@@ -8306,7 +8297,7 @@ function app:RefreshData(lazy, safely, got)
 			app.HolidayHeader.progress = 0;
 			app.HolidayHeader.total = 0;
 			UpdateGroups(app.HolidayHeader, app.HolidayHeader.g);
-			app.HolidayHeader.visible = app.GroupVisibilityFilter(app.HolidayHeader);
+			app.HolidayHeader.visible = app.HolidayHeader.total > 0 and app.GroupVisibilityFilter(app.HolidayHeader);
 			
 			-- If we're dealing with a mini list, we need to handle it differently.
 			if app.MiniListHeader then
@@ -8899,7 +8890,7 @@ end):Show();
 							app.HolidayHeader.progress = 0;
 							app.HolidayHeader.total = 0;
 							app.UpdateGroups(app.HolidayHeader, app.HolidayHeader.g);
-							app.HolidayHeader.visible = app.GroupVisibilityFilter(app.HolidayHeader);
+							app.HolidayHeader.visible = app.HolidayHeader.total > 0 and app.GroupVisibilityFilter(app.HolidayHeader);
 						else
 							app.HolidayHeader.visible = false;
 						end
