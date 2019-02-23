@@ -68,10 +68,6 @@ _.Instances =
 							i(88349),	-- Phantasmal Drape
 							i(88347),	-- Ghostwoven Legguards
 							i(88348),	-- Wraithplate Treads
-							{	-- Darkshade Gloves
-								["itemID"] = 14543,	-- Darkshade Gloves
-								["u"] = 2,
-							},
 						})),
 						cr(59153, e(665, { 	-- Rattlegore
 							i(88344),	-- Goresoaked Headreaper
@@ -192,12 +188,13 @@ _.Instances =
 									},
 								})),
 								un(2, i(14541)),	-- Barovian Family Sword
-								un(2, i(16701)),	-- Dreadmist Mantle
-								un(2, i(14545)),	-- Ghostloom Leggings
-								un(2, i(18689)),	-- Phantasmal Cloak
-								un(2, i(14548)),	-- Royal  Cap Spaulders
 								un(2, i(22394)),	-- Staff of Metanoia
-								un(2, i(18690)),	-- Wraithplate  Leggings
+								un(2, i(16701)),	-- Dreadmist Mantle
+								un(2, i(14548)),	-- Royal Cap Spaulders
+								un(2, i(18689)),	-- Phantasmal Cloak
+								un(2, i(14543)),	-- Darkshade Gloves
+								un(2, i(14545)),	-- Ghostloom Leggings
+								un(2, i(18690)),	-- Wraithplate Leggings
 							}),
 							n(11622, {	-- Rattlegore
 								un(2, i(18686)),	-- Bone Golem Shoulders
