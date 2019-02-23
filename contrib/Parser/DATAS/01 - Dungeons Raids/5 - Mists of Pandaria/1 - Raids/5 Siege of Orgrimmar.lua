@@ -164,6 +164,10 @@ _.Instances =
 								},
 								["groups"] = {
 									cr(71543, e(852, {	-- Immerseus
+										{	-- Vale of Eternal Sorrows: Immerseus
+											["achievementID"] = 8458,	-- Vale of Eternal Sorrows
+											["criteriaID"] = 1,	-- Immerseus
+										},
 										i(110784),	-- Trident of Corrupted Waters
 										i(110785),	-- Encapsulated Essence of Immerseus
 										i(112382),	-- Hood of Blackened Tears
@@ -188,6 +192,10 @@ _.Instances =
 										i(112426),	-- Purified Bindings of Immerseus
 									})),
 									cr(71475, e(849, {	-- The Fallen Protectors (Rook Stonetoe)
+										{	-- Vale of Eternal Sorrows: Fallen Protectors
+											["achievementID"] = 8458,	-- Vale of Eternal Sorrows
+											["criteriaID"] = 2,	-- Fallen Protectors
+										},
 										i(112477),	-- Softfoot's Last Resort
 										i(112478),	-- Death Lotus Crossbow
 										i(112491),	-- Purehearted Cricket Cage
@@ -212,6 +220,10 @@ _.Instances =
 									})),
 									cr(72276, e(866, {	-- Norushen (Amalgam of Corruption)
 										["groups"] = {
+											{	-- Vale of Eternal Sorrows: Norushen
+												["achievementID"] = 8458,	-- Vale of Eternal Sorrows
+												["criteriaID"] = 3,	-- Norushen
+											},
 											i(112547),	-- Norushen's Shortblade
 											i(112546),	-- Xifeng, Longblade of the Titanic Guardian
 											i(112560),	-- Norushen's Enigmatic Barrier
@@ -238,6 +250,10 @@ _.Instances =
 										["creatureID"] = 72276,
 									})),
 									cr(71734, e(867, {	-- Sha of Pride
+										{	-- Vale of Eternal Sorrows: Sha of Pride
+											["achievementID"] = 8458,	-- Vale of Eternal Sorrows
+											["criteriaID"] = 4,	-- Sha of Pride
+										},
 										i( 99678, {	-- Chest of the Cursed Conqueror
 											i(99052),	-- Battleplate of Winged Triumph
 											i(99003),	-- Breastplate of Winged Triumph
@@ -289,6 +305,10 @@ _.Instances =
 								},
 								["groups"] = {
 									cr(72249, e(881, {	-- Galakras
+										{	-- Gates of Retribution: Galakras
+											["achievementID"] = 8459,	-- Gates of Retribution
+											["criteriaID"] = 1,	-- Galakras
+										},
 										i(112723),	-- Drakebinder Greatstaff
 										i(112710),	-- Dagryn's Discarded Longbow
 										i(112717),	-- Flameslinger's Fiery Cowl
@@ -313,6 +333,10 @@ _.Instances =
 										i(112703),	-- Evil Eye of Galakras
 									})),
 									cr(71466, e(864, {	-- Iron Juggernaut
+										{	-- Gates of Retribution: Iron Juggernaut
+											["achievementID"] = 8459,	-- Gates of Retribution
+											["criteriaID"] = 2,	-- Iron Juggernaut
+										},
 										i(112736),	-- Seismic Bore
 										i(112748),	-- Juggernaut's Power Core
 										i(112742),	-- Juggernaut's Ignition Keys
@@ -337,6 +361,10 @@ _.Instances =
 										i(112729),	-- Juggernaut's Focusing Crystal
 									})),
 									cr(71859, e(856, {	-- Kor'kron Dark Shaman (Earthbreaker Haromm)
+										{	-- Gates of Retribution: Kor'kron Dark Shaman
+											["achievementID"] = 8459,	-- Gates of Retribution
+											["criteriaID"] = 3,	-- Kor'kron Dark Shaman
+										},
 										i(112759),	-- Haromm's Frozen Crescent
 										i(112769),	-- Kardris' Scepter
 										i(112770),	-- Darkfang Mask
@@ -360,6 +388,10 @@ _.Instances =
 										i(112768),	-- Kardris' Toxic Totem
 									})),
 									cr(71515, e(850, {	-- General Nazgrim
+										{	-- Gates of Retribution: General Nazgrim
+											["achievementID"] = 8459,	-- Gates of Retribution
+											["criteriaID"] = 4,	-- General Nazgrim
+										},
 										i(99681, {	-- Gauntlets of the Cursed Conqueror
 											i(99002),	-- Gauntlets of Winged Triumph
 											i(98982),	-- Gloves of Winged Triumph
@@ -410,6 +442,10 @@ _.Instances =
 								},
 								["groups"] = {
 									cr(71454, e(846, {	-- Malkorok
+										{	-- The Underhold: Malkorok
+											["achievementID"] = 8461,	-- The Underhold
+											["criteriaID"] = 1,	-- Malkorok
+										},
 										i(112805),	-- Halberd of Inner Shadows
 										i(112804),	-- Malkorok's Skullcleaver
 										i(112806),	-- Kor'kron Hand Cannon
@@ -434,6 +470,10 @@ _.Instances =
 										i(112792),	-- Vial of Living Corruption
 									})),
 									cr(71889, e(870, {	-- Spoils of Pandaria (Secured Stockpile of Pandaren Spoils)
+										{	-- The Underhold: Spoils of Pandaria
+											["achievementID"] = 8461,	-- The Underhold
+											["criteriaID"] = 2,	-- Spoils of Pandaria
+										},
 										i(112835),	-- Enchanted Shao-Tien Saber
 										i(112841),	-- Immaculately Preserved Wand
 										i(112829),	-- Ancient Mogu Tower Shield
@@ -457,6 +497,10 @@ _.Instances =
 										i(112825),	-- Sigil of Rampage
 									})),
 									cr(71529, e(851, {	-- Thok the Bloodthirsty
+										{	-- The Underhold: Thok the Bloodthirsty
+											["achievementID"] = 8461,	-- The Underhold
+											["criteriaID"] = 3,	-- Thok the Bloodthirsty
+										},
 										i(99672, {	-- Helm of the Cursed Conqueror
 											i(99029),	-- Faceguard of Winged Triumph
 											i(98979),	-- Headguard of Winged Triumph
@@ -507,6 +551,10 @@ _.Instances =
 								},
 								["groups"] = {
 									cr(71504, e(865, {	-- Siegecrafter Blackfuse
+										{	-- Downfall: Siegecrafter Blackfuse
+											["achievementID"] = 8462,	-- Downfall
+											["criteriaID"] = 1,	-- Siegecrafter Blackfuse
+										},
 										i(104158),	-- Blackfuse Bombling (PET!)
 										i(99669, {	-- Shoulders of the Cursed Conqueror
 											i(99076),	-- Mantle of Winged Triumph
@@ -551,6 +599,10 @@ _.Instances =
 									})),
 									cr(71161, e(853, {	-- Paragons of the Klaxxi (Kil'ruk the Wind Reaver)
 										["groups"] = {
+											{	-- Downfall: Paragons of the Klaxxi
+												["achievementID"] = 8462,	-- Downfall
+												["criteriaID"] = 2,	-- Paragons of the Klaxxi
+											},
 											i(104165),	-- Kovok (PET!)
 											i( 99675, {	-- Leggings of the Cursed Conqueror
 												i(98980),	-- Greaves of Winged Triumph
@@ -595,6 +647,10 @@ _.Instances =
 										},
 									})),
 									cr(71865, e(869, {	-- Garrosh Hellscream
+										{	-- Downfall: Garrosh Hellscream
+											["achievementID"] = 8462,	-- Downfall
+											["criteriaID"] = 3,	-- Garrosh Hellscream
+										},
 										i(105861),	-- Essence of the Cursed Conqueror
 										i(105860),	-- Essence of the Cursed Protector
 										i(105862),	-- Essence of the Cursed Vanquisher
@@ -1272,6 +1328,13 @@ _.Instances =
 								},
 							}),
 							cr(71543, e(852, {	-- Immerseus
+								{	-- No More Tears
+									["achievementID"] = 8536,	-- No More Tears
+								},
+								{	-- Vale of Eternal Sorrows: Immerseus
+									["achievementID"] = 8458,	-- Vale of Eternal Sorrows
+									["criteriaID"] = 1,	-- Immerseus
+								},
 								i(110784),	-- Trident of Corrupted Waters
 								i(110785),	-- Encapsulated Essence of Immerseus
 								i(112382),	-- Hood of Blackened Tears
@@ -1296,6 +1359,13 @@ _.Instances =
 								i(112426),	-- Purified Bindings of Immerseus
 							})),
 							cr(71475, e(849, {	-- The Fallen Protectors (Rook Stonetoe)
+								{	-- Go Long
+									["achievementID"] = 8528,	-- Go Long
+								},
+								{	-- Vale of Eternal Sorrows: Fallen Protectors
+									["achievementID"] = 8458,	-- Vale of Eternal Sorrows
+									["criteriaID"] = 2,	-- Fallen Protectors
+								},
 								i(112477),	-- Softfoot's Last Resort
 								i(112478),	-- Death Lotus Crossbow
 								i(112491),	-- Purehearted Cricket Cage
@@ -1320,6 +1390,13 @@ _.Instances =
 							})),
 							cr(72276, e(866, {	-- Norushen (Amalgam of Corruption)
 								["groups"] = {
+									{	-- None Shall Pass
+										["achievementID"] = 8532,	-- None Shall Pass
+									},
+									{	-- Vale of Eternal Sorrows: Norushen
+										["achievementID"] = 8458,	-- Vale of Eternal Sorrows
+										["criteriaID"] = 3,	-- Norushen
+									},
 									i(112547),	-- Norushen's Shortblade
 									i(112546),	-- Xifeng, Longblade of the Titanic Guardian
 									i(112560),	-- Norushen's Enigmatic Barrier
@@ -1346,6 +1423,13 @@ _.Instances =
 								["creatureID"] = 72276,
 							})),
 							cr(71734, e(867, {	-- Sha of Pride
+								{	-- Swallow Your Pride
+									["achievementID"] = 8521,	-- Swallow Your Pride
+								},
+								{	-- Vale of Eternal Sorrows: Sha of Pride
+									["achievementID"] = 8458,	-- Vale of Eternal Sorrows
+									["criteriaID"] = 4,	-- Sha of Pride
+								},
 								i( 99743, {	-- Chest of the Cursed Conqueror
 									i(99566),	-- Battleplate of Winged Triumph
 									i(99626),	-- Breastplate of Winged Triumph
@@ -1389,6 +1473,13 @@ _.Instances =
 								i(112948),	-- Prismatic Prison of Pride
 							})),
 							cr(72249, e(881, {	-- Galakras
+								{	-- Gates of Retribution: Galakras
+									["achievementID"] = 8459,	-- Gates of Retribution
+									["criteriaID"] = 1,	-- Galakras
+								},
+								{	-- The Immortal Vanguard
+									["achievementID"] = 8530,	-- The Immortal Vanguard
+								},
 								i(112723),	-- Drakebinder Greatstaff
 								i(112710),	-- Dagryn's Discarded Longbow
 								i(112717),	-- Flameslinger's Fiery Cowl
@@ -1413,6 +1504,13 @@ _.Instances =
 								i(112703),	-- Evil Eye of Galakras
 							})),
 							cr(71466, e(864, {	-- Iron Juggernaut
+								{	-- Fire in the Hole!
+									["achievementID"] = 8520,	-- Fire in the Hole!
+								},
+								{	-- Gates of Retribution: Iron Juggernaut
+									["achievementID"] = 8459,	-- Gates of Retribution
+									["criteriaID"] = 2,	-- Iron Juggernaut
+								},
 								i(112736),	-- Seismic Bore
 								i(112748),	-- Juggernaut's Power Core
 								i(112742),	-- Juggernaut's Ignition Keys
@@ -1438,6 +1536,13 @@ _.Instances =
 							})),
 							cr(71859, e(856, {	-- Kor'kron Dark Shaman (Earthbreaker Haromm)
 								["groups"] = {
+									{	-- Gates of Retribution: Kor'kron Dark Shaman
+										["achievementID"] = 8459,	-- Gates of Retribution
+										["criteriaID"] = 3,	-- Kor'kron Dark Shaman
+									},
+									{	-- Rescue Raiders
+										["achievementID"] = 8453,	-- Rescue Raiders
+									},
 									i(105751, {	-- Kor'kron Shaman's Treasure (Shaman Only)
 										i(105745),	-- Kor'kron Dark Shaman Cowl
 										i(105747),	-- Kor'kron Dark Shaman Shoulder
@@ -1476,6 +1581,13 @@ _.Instances =
 								},
 							})),
 							cr(71515, e(850, {	-- General Nazgrim
+								{	-- Gamon Will Save Us!
+									["achievementID"] = 8448,	-- Gamon Will Save Us!
+								},
+								{	-- Gates of Retribution: General Nazgrim
+									["achievementID"] = 8459,	-- Gates of Retribution
+									["criteriaID"] = 4,	-- General Nazgrim
+								},
 								i( 99746, {	-- Gauntlets of the Cursed Conqueror
 									i(99625),	-- Gauntlets of Winged Triumph
 									i(99648),	-- Gloves of Winged Triumph
@@ -1518,6 +1630,13 @@ _.Instances =
 								i(112778),	-- Nazgrim's Burnished Insignia
 							})),
 							cr(71454, e(846, {	-- Malkorok
+								{	-- The Underhold: Malkorok
+									["achievementID"] = 8461,	-- The Underhold
+									["criteriaID"] = 1,	-- Malkorok
+								},
+								{	-- Unlimited Potential
+									["achievementID"] = 8538,	-- Unlimited Potential
+								},
 								i(112805),	-- Halberd of Inner Shadows
 								i(112804),	-- Malkorok's Skullcleaver
 								i(112806),	-- Kor'kron Hand Cannon
@@ -1542,6 +1661,13 @@ _.Instances =
 								i(112792),	-- Vial of Living Corruption
 							})),
 							cr(71889, e(870, {	-- Spoils of Pandaria (Secured Stockpile of Pandaren Spoils)
+								{	-- Criss Cross
+									["achievementID"] = 8529,	-- Criss Cross
+								},
+								{	-- The Underhold: Spoils of Pandaria
+									["achievementID"] = 8461,	-- The Underhold
+									["criteriaID"] = 2,	-- Spoils of Pandaria
+								},
 								i(112835),	-- Enchanted Shao-Tien Saber
 								i(112841),	-- Immaculately Preserved Wand
 								i(112829),	-- Ancient Mogu Tower Shield
@@ -1565,6 +1691,13 @@ _.Instances =
 								i(112825),	-- Sigil of Rampage
 							})),
 							cr(71529, e(851, {	-- Thok the Bloodthirsty
+								{	-- Giant Dinosaur vs. Mega Snail
+									["achievementID"] = 8527,	-- Giant Dinosaur vs. Mega Snail
+								},
+								{	-- The Underhold: Thok the Bloodthirsty
+									["achievementID"] = 8461,	-- The Underhold
+									["criteriaID"] = 3,	-- Thok the Bloodthirsty
+								},
 								i( 99749, {	-- Helm of the Cursed Conqueror
 									i(99596),	-- Faceguard of Winged Triumph
 									i(99665),	-- Headguard of Winged Triumph
@@ -1607,6 +1740,31 @@ _.Instances =
 								i(112850),	-- Thok's Tail Tip
 							})),
 							cr(71504, e(865, {	-- Siegecrafter Blackfuse
+								{	-- Downfall: Siegecrafter Blackfuse
+									["achievementID"] = 8462,	-- Downfall
+									["criteriaID"] = 1,	-- Siegecrafter Blackfuse
+								},
+								{	-- Lasers and Magnets and Drills! Oh My!
+									["achievementID"] = 8543,	-- Lasers and Magnets and Drills! Oh My!
+									["g"] = {
+										{	-- Deactivated Electromagnet
+											["achievementID"] = 8543,	-- Lasers and Magnets and Drills! Oh My!
+											["criteriaID"] = 2,	-- Deactivated Electromagnet
+										},
+										{	-- Deactivated Laser Turret
+											["achievementID"] = 8543,	-- Lasers and Magnets and Drills! Oh My!
+											["criteriaID"] = 1,	-- Deactivated Laser Turret
+										},
+										{	-- Deactivated Missile Turret
+											["achievementID"] = 8543,	-- Lasers and Magnets and Drills! Oh My!
+											["criteriaID"] = 3,	-- Deactivated Missile Turret
+										},
+										{	-- Disassembled Crawler Mines
+											["achievementID"] = 8543,	-- Lasers and Magnets and Drills! Oh My!
+											["criteriaID"] = 4,	-- Disassembled Crawler Mines
+										},
+									},
+								},
 								i(104158),	-- Blackfuse Bombling (PET!)
 								i(99755, {	-- Shoulders of the Cursed Conqueror
 									i(99656),	-- Mantle of Winged Triumph
@@ -1650,6 +1808,51 @@ _.Instances =
 								i(112879),	-- Ticking Ebon Detonator
 							})),
 							cr(71161, e(853, {	-- Paragons of the Klaxxi (Kil'ruk the Wind Reaver)
+								{	-- Downfall: Paragons of the Klaxxi
+									["achievementID"] = 8462,	-- Downfall
+									["criteriaID"] = 2,	-- Paragons of the Klaxxi
+								},
+								{	-- Now We are the Paragon
+									["achievementID"] = 8531,	-- Now We are the Paragon
+									["g"] = {
+										{	-- Become the Bloodseeker
+											["achievementID"] = 8531,	-- Now We are the Paragon
+											["criteriaID"] = 2,	-- Become the Bloodseeker
+										},
+										{	-- Become the Dissector
+											["achievementID"] = 8531,	-- Now We are the Paragon
+											["criteriaID"] = 5,	-- Become the Dissector
+										},
+										{	-- Become the Locust
+											["achievementID"] = 8531,	-- Now We are the Paragon
+											["criteriaID"] = 9,	-- Become the Locust
+										},
+										{	-- Become the Lucid
+											["achievementID"] = 8531,	-- Now We are the Paragon
+											["criteriaID"] = 7,	-- Become the Lucid
+										},
+										{	-- Become the Manipulator
+											["achievementID"] = 8531,	-- Now We are the Paragon
+											["criteriaID"] = 6,	-- Become the Manipulator
+										},
+										{	-- Become the Poisoned Mind
+											["achievementID"] = 8531,	-- Now We are the Paragon
+											["criteriaID"] = 8,	-- Become the Poisoned Mind
+										},
+										{	-- Become the Prime
+											["achievementID"] = 8531,	-- Now We are the Paragon
+											["criteriaID"] = 3,	-- Become the Prime
+										},
+										{	-- Become the Swarmkeeper
+											["achievementID"] = 8531,	-- Now We are the Paragon
+											["criteriaID"] = 4,	-- Become the Swarmkeeper
+										},
+										{	-- Become the Wind-Reaver
+											["achievementID"] = 8531,	-- Now We are the Paragon
+											["criteriaID"] = 1,	-- Become the Wind-Reaver
+										},
+									},
+								},
 								i(104165),	-- Kovok (PET!)
 								i( 99752, {	-- Leggings of the Cursed Conqueror
 									i(99666),	-- Greaves of Winged Triumph
@@ -1693,6 +1896,13 @@ _.Instances =
 								i(112913),	-- Skeer's Bloodsoaked Talisman
 							})),
 							cr(71865, e(869, {	-- Garrosh Hellscream
+								{	-- Downfall: Garrosh Hellscream
+									["achievementID"] = 8462,	-- Downfall
+									["criteriaID"] = 3,	-- Garrosh Hellscream
+								},
+								{	-- Strike!	
+									["achievementID"] = 8537,	-- Strike!
+								},
 								i(105864),	-- Essence of the Cursed Conqueror
 								i(105863),	-- Essence of the Cursed Protector
 								i(105865),	-- Essence of the Cursed Vanquisher
@@ -2354,6 +2564,13 @@ _.Instances =
 								},
 							}),
 							cr(71543, e(852, {	-- Immerseus
+								{	-- No More Tears
+									["achievementID"] = 8536,	-- No More Tears
+								},
+								{	-- Vale of Eternal Sorrows: Immerseus
+									["achievementID"] = 8458,	-- Vale of Eternal Sorrows
+									["criteriaID"] = 1,	-- Immerseus
+								},
 								i(110784),	-- Trident of Corrupted Waters
 								i(110785),	-- Encapsulated Essence of Immerseus
 								i(112382),	-- Hood of Blackened Tears
@@ -2378,6 +2595,13 @@ _.Instances =
 								i(112426),	-- Purified Bindings of Immerseus
 							})),
 							cr(71475, e(849, {	-- The Fallen Protectors (Rook Stonetoe)
+								{	-- Go Long
+									["achievementID"] = 8528,	-- Go Long
+								},
+								{	-- Vale of Eternal Sorrows: Fallen Protectors
+									["achievementID"] = 8458,	-- Vale of Eternal Sorrows
+									["criteriaID"] = 2,	-- Fallen Protectors
+								},
 								i(112477),	-- Softfoot's Last Resort
 								i(112478),	-- Death Lotus Crossbow
 								i(112491),	-- Purehearted Cricket Cage
@@ -2402,6 +2626,13 @@ _.Instances =
 							})),
 							cr(72276, e(866, {	-- Norushen (Amalgam of Corruption)
 								["groups"] = {
+									{	-- None Shall Pass
+										["achievementID"] = 8532,	-- None Shall Pass
+									},
+									{	-- Vale of Eternal Sorrows: Norushen
+										["achievementID"] = 8458,	-- Vale of Eternal Sorrows
+										["criteriaID"] = 3,	-- Norushen
+									},
 									i(112547),	-- Norushen's Shortblade
 									i(112546),	-- Xifeng, Longblade of the Titanic Guardian
 									i(112560),	-- Norushen's Enigmatic Barrier
@@ -2428,6 +2659,13 @@ _.Instances =
 								["creatureID"] = 72276,
 							})),
 							cr(71734, e(867, {	-- Sha of Pride
+								{	-- Swallow Your Pride
+									["achievementID"] = 8521,	-- Swallow Your Pride
+								},
+								{	-- Vale of Eternal Sorrows: Sha of Pride
+									["achievementID"] = 8458,	-- Vale of Eternal Sorrows
+									["criteriaID"] = 4,	-- Sha of Pride
+								},
 								i( 99686, {	-- Chest of the Cursed Conqueror
 									i(99136),	-- Battleplate of Winged Triumph
 									i(99133),	-- Breastplate of Winged Triumph
@@ -2471,6 +2709,13 @@ _.Instances =
 								i(112948),	-- Prismatic Prison of Pride
 							})),
 							cr(72249, e(881, {	-- Galakras
+								{	-- Gates of Retribution: Galakras
+									["achievementID"] = 8459,	-- Gates of Retribution
+									["criteriaID"] = 1,	-- Galakras
+								},
+								{	-- The Immortal Vanguard
+									["achievementID"] = 8530,	-- The Immortal Vanguard
+								},
 								i(112723),	-- Drakebinder Greatstaff
 								i(112710),	-- Dagryn's Discarded Longbow
 								i(112717),	-- Flameslinger's Fiery Cowl
@@ -2495,6 +2740,13 @@ _.Instances =
 								i(112703),	-- Evil Eye of Galakras
 							})),
 							cr(71466, e(864, {	-- Iron Juggernaut
+								{	-- Fire in the Hole!
+									["achievementID"] = 8520,	-- Fire in the Hole!
+								},
+								{	-- Gates of Retribution: Iron Juggernaut
+									["achievementID"] = 8459,	-- Gates of Retribution
+									["criteriaID"] = 2,	-- Iron Juggernaut
+								},
 								i(112736),	-- Seismic Bore
 								i(112748),	-- Juggernaut's Power Core
 								i(112742),	-- Juggernaut's Ignition Keys
@@ -2520,6 +2772,13 @@ _.Instances =
 							})),
 							cr(71859, e(856, {	-- Kor'kron Dark Shaman (Earthbreaker Haromm)
 								["groups"] = {
+									{	-- Gates of Retribution: Kor'kron Dark Shaman
+										["achievementID"] = 8459,	-- Gates of Retribution
+										["criteriaID"] = 3,	-- Kor'kron Dark Shaman
+									},
+									{	-- Rescue Raiders
+										["achievementID"] = 8453,	-- Rescue Raiders
+									},
 									i(105751, {	-- Kor'kron Shaman's Treasure (Shaman Only)
 										i(105745),	-- Kor'kron Dark Shaman Cowl
 										i(105747),	-- Kor'kron Dark Shaman Shoulder
@@ -2558,6 +2817,13 @@ _.Instances =
 								},
 							})),
 							cr(71515, e(850, {	-- General Nazgrim
+								{	-- Gamon Will Save Us!
+									["achievementID"] = 8448,	-- Gamon Will Save Us!
+								},
+								{	-- Gates of Retribution: General Nazgrim
+									["achievementID"] = 8459,	-- Gates of Retribution
+									["criteriaID"] = 4,	-- General Nazgrim
+								},
 								i( 99687, {	-- Gauntlets of the Cursed Conqueror
 									i(99137),	-- Gauntlets of Winged Triumph
 									i(99134),	-- Gloves of Winged Triumph
@@ -2600,6 +2866,13 @@ _.Instances =
 								i(112778),	-- Nazgrim's Burnished Insignia
 							})),
 							cr(71454, e(846, {	-- Malkorok
+								{	-- The Underhold: Malkorok
+									["achievementID"] = 8461,	-- The Underhold
+									["criteriaID"] = 1,	-- Malkorok
+								},
+								{	-- Unlimited Potential
+									["achievementID"] = 8538,	-- Unlimited Potential
+								},
 								i(112805),	-- Halberd of Inner Shadows
 								i(112804),	-- Malkorok's Skullcleaver
 								i(112806),	-- Kor'kron Hand Cannon
@@ -2624,6 +2897,13 @@ _.Instances =
 								i(112792),	-- Vial of Living Corruption
 							})),
 							cr(71889, e(870, {	-- Spoils of Pandaria (Secured Stockpile of Pandaren Spoils)
+								{	-- Criss Cross
+									["achievementID"] = 8529,	-- Criss Cross
+								},
+								{	-- The Underhold: Spoils of Pandaria
+									["achievementID"] = 8461,	-- The Underhold
+									["criteriaID"] = 2,	-- Spoils of Pandaria
+								},
 								i(112835),	-- Enchanted Shao-Tien Saber
 								i(112841),	-- Immaculately Preserved Wand
 								i(112829),	-- Ancient Mogu Tower Shield
@@ -2647,6 +2927,13 @@ _.Instances =
 								i(112825),	-- Sigil of Rampage
 							})),
 							cr(71529, e(851, {	-- Thok the Bloodthirsty
+								{	-- Giant Dinosaur vs. Mega Snail
+									["achievementID"] = 8527,	-- Giant Dinosaur vs. Mega Snail
+								},
+								{	-- The Underhold: Thok the Bloodthirsty
+									["achievementID"] = 8461,	-- The Underhold
+									["criteriaID"] = 3,	-- Thok the Bloodthirsty
+								},
 								i( 99689, {	-- Helm of the Cursed Conqueror
 									i(99128),	-- Faceguard of Winged Triumph
 									i(99135),	-- Headguard of Winged Triumph
@@ -2689,6 +2976,31 @@ _.Instances =
 								i(112850),	-- Thok's Tail Tip
 							})),
 							cr(71504, e(865, {	-- Siegecrafter Blackfuse
+								{	-- Downfall: Siegecrafter Blackfuse
+									["achievementID"] = 8462,	-- Downfall
+									["criteriaID"] = 1,	-- Siegecrafter Blackfuse
+								},
+								{	-- Lasers and Magnets and Drills! Oh My!
+									["achievementID"] = 8543,	-- Lasers and Magnets and Drills! Oh My!
+									["g"] = {
+										{	-- Deactivated Electromagnet
+											["achievementID"] = 8543,	-- Lasers and Magnets and Drills! Oh My!
+											["criteriaID"] = 2,	-- Deactivated Electromagnet
+										},
+										{	-- Deactivated Laser Turret
+											["achievementID"] = 8543,	-- Lasers and Magnets and Drills! Oh My!
+											["criteriaID"] = 1,	-- Deactivated Laser Turret
+										},
+										{	-- Deactivated Missile Turret
+											["achievementID"] = 8543,	-- Lasers and Magnets and Drills! Oh My!
+											["criteriaID"] = 3,	-- Deactivated Missile Turret
+										},
+										{	-- Disassembled Crawler Mines
+											["achievementID"] = 8543,	-- Lasers and Magnets and Drills! Oh My!
+											["criteriaID"] = 4,	-- Disassembled Crawler Mines
+										},
+									},
+								},
 								i(104158),	-- Blackfuse Bombling (PET!)
 								i( 99690, {	-- Shoulders of the Cursed Conqueror
 									i(99125),	-- Mantle of Winged Triumph
@@ -2732,6 +3044,51 @@ _.Instances =
 								i(112879),	-- Ticking Ebon Detonator
 							})),
 							cr(71161, e(853, {	-- Paragons of the Klaxxi (Kil'ruk the Wind Reaver)
+								{	-- Downfall: Paragons of the Klaxxi
+									["achievementID"] = 8462,	-- Downfall
+									["criteriaID"] = 2,	-- Paragons of the Klaxxi
+								},
+								{	-- Now We are the Paragon
+									["achievementID"] = 8531,	-- Now We are the Paragon
+									["g"] = {
+										{	-- Become the Bloodseeker
+											["achievementID"] = 8531,	-- Now We are the Paragon
+											["criteriaID"] = 2,	-- Become the Bloodseeker
+										},
+										{	-- Become the Dissector
+											["achievementID"] = 8531,	-- Now We are the Paragon
+											["criteriaID"] = 5,	-- Become the Dissector
+										},
+										{	-- Become the Locust
+											["achievementID"] = 8531,	-- Now We are the Paragon
+											["criteriaID"] = 9,	-- Become the Locust
+										},
+										{	-- Become the Lucid
+											["achievementID"] = 8531,	-- Now We are the Paragon
+											["criteriaID"] = 7,	-- Become the Lucid
+										},
+										{	-- Become the Manipulator
+											["achievementID"] = 8531,	-- Now We are the Paragon
+											["criteriaID"] = 6,	-- Become the Manipulator
+										},
+										{	-- Become the Poisoned Mind
+											["achievementID"] = 8531,	-- Now We are the Paragon
+											["criteriaID"] = 8,	-- Become the Poisoned Mind
+										},
+										{	-- Become the Prime
+											["achievementID"] = 8531,	-- Now We are the Paragon
+											["criteriaID"] = 3,	-- Become the Prime
+										},
+										{	-- Become the Swarmkeeper
+											["achievementID"] = 8531,	-- Now We are the Paragon
+											["criteriaID"] = 4,	-- Become the Swarmkeeper
+										},
+										{	-- Become the Wind-Reaver
+											["achievementID"] = 8531,	-- Now We are the Paragon
+											["criteriaID"] = 1,	-- Become the Wind-Reaver
+										},
+									},
+								},
 								i(104165),	-- Kovok (PET!)
 								i(99688, {	-- Leggings of the Cursed Conqueror
 									i(99124),	-- Greaves 	of Winged Triumph
@@ -2775,6 +3132,33 @@ _.Instances =
 								i(112913),	-- Skeer's Bloodsoaked Talisman
 							})),
 							cr(71865, e(869, {	-- Garrosh Hellscream
+								{	-- Conqueror of Orgrimmar
+									["achievementID"] = 8679,	-- Conqueror of Orgrimmar
+									["races"] = ALLIANCE_ONLY,
+									["g"] = {
+										{	-- ,Conqueror of Orgrimmar
+											["titleID"] = 211,	-- ,Conqueror of Orgrimmar
+											["races"] = ALLIANCE_ONLY,
+										},
+									},
+								},
+								{	-- Downfall: Garrosh Hellscream
+									["achievementID"] = 8462,	-- Downfall
+									["criteriaID"] = 3,	-- Garrosh Hellscream
+								},
+								{	-- Liberator of Orgrimmar
+									["achievementID"] = 8680,	-- Liberator of Orgrimmar
+									["races"] = HORDE_ONLY,
+									["g"] = {
+										{	-- ,Liberator of Orgrimmar
+											["titleID"] = 212,	-- ,Liberator of Orgrimmar
+											["races"] = HORDE_ONLY,
+										},
+									},
+								},
+								{	-- Strike!	
+									["achievementID"] = 8537,	-- Strike!
+								},
 								i(105858),	-- Essence of the Cursed Conqueror
 								i(105857),	-- Essence of the Cursed Protector
 								i(105859),	-- Essence of the Cursed Vanquisher
@@ -3439,6 +3823,16 @@ _.Instances =
 								},
 							}),
 							cr(71543, e(852, {	-- Immerseus
+								{	-- Mythic: Immerseus
+									["achievementID"] = 8463,	-- Mythic: Immerseus
+								},
+								{	-- No More Tears
+									["achievementID"] = 8536,	-- No More Tears
+								},
+								{	-- Vale of Eternal Sorrows: Immerseus
+									["achievementID"] = 8458,	-- Vale of Eternal Sorrows
+									["criteriaID"] = 1,	-- Immerseus
+								},
 								i(110784),	-- Trident of Corrupted Waters
 								i(110785),	-- Encapsulated Essence of Immerseus
 								i(112382),	-- Hood of Blackened Tears
@@ -3463,6 +3857,16 @@ _.Instances =
 								i(112426),	-- Purified Bindings of Immerseus
 							})),
 							cr(71475, e(849, {	-- The Fallen Protectors (Rook Stonetoe)
+								{	-- Go Long
+									["achievementID"] = 8528,	-- Go Long
+								},
+								{	-- Mythic: Fallen Protectors
+									["achievementID"] = 8465,	-- Mythic: Fallen Protectors
+								},
+								{	-- Vale of Eternal Sorrows: Fallen Protectors
+									["achievementID"] = 8458,	-- Vale of Eternal Sorrows
+									["criteriaID"] = 2,	-- Fallen Protectors
+								},
 								i(112477),	-- Softfoot's Last Resort
 								i(112478),	-- Death Lotus Crossbow
 								i(112491),	-- Purehearted Cricket Cage
@@ -3487,6 +3891,16 @@ _.Instances =
 							})),
 							cr(72276, e(866, {	-- Norushen (Amalgam of Corruption)
 								["groups"] = {
+									{	-- Mythic: Norushen
+										["achievementID"] = 8466,	-- Mythic: Norushen
+									},
+									{	-- None Shall Pass
+										["achievementID"] = 8532,	-- None Shall Pass
+									},
+									{	-- Vale of Eternal Sorrows: Norushen
+										["achievementID"] = 8458,	-- Vale of Eternal Sorrows
+										["criteriaID"] = 3,	-- Norushen
+									},
 									i(112547),	-- Norushen's Shortblade
 									i(112546),	-- Xifeng, Longblade of the Titanic Guardian
 									i(112560),	-- Norushen's Enigmatic Barrier
@@ -3513,6 +3927,16 @@ _.Instances =
 								["creatureID"] = 72276,
 							})),
 							cr(71734, e(867, {	-- Sha of Pride
+								{	-- Mythic: Sha of Pride
+									["achievementID"] = 8467,	-- Mythic: Sha of Pride
+								},
+								{	-- Swallow Your Pride
+									["achievementID"] = 8521,	-- Swallow Your Pride
+								},
+								{	-- Vale of Eternal Sorrows: Sha of Pride
+									["achievementID"] = 8458,	-- Vale of Eternal Sorrows
+									["criteriaID"] = 4,	-- Sha of Pride
+								},
 								i( 99715, {	-- Chest of the Cursed Conqueror
 									i(99387),	-- Battleplate of Winged Triumph
 									i(99374),	-- Breastplate of Winged Triumph
@@ -3556,6 +3980,16 @@ _.Instances =
 								i(112948),	-- Prismatic Prison of Pride
 							})),
 							cr(72249, e(881, {	-- Galakras
+								{	-- Gates of Retribution: Galakras
+									["achievementID"] = 8459,	-- Gates of Retribution
+									["criteriaID"] = 1,	-- Galakras
+								},
+								{	-- Mythic: Galakras
+									["achievementID"] = 8468,	-- Mythic: Galakras
+								},
+								{	-- The Immortal Vanguard
+									["achievementID"] = 8530,	-- The Immortal Vanguard
+								},
 								i(112723),	-- Drakebinder Greatstaff
 								i(112710),	-- Dagryn's Discarded Longbow
 								i(112717),	-- Flameslinger's Fiery Cowl
@@ -3580,6 +4014,16 @@ _.Instances =
 								i(112703),	-- Evil Eye of Galakras
 							})),
 							cr(71466, e(864, {	-- Iron Juggernaut
+								{	-- Fire in the Hole!
+									["achievementID"] = 8520,	-- Fire in the Hole!
+								},
+								{	-- Gates of Retribution: Iron Juggernaut
+									["achievementID"] = 8459,	-- Gates of Retribution
+									["criteriaID"] = 2,	-- Iron Juggernaut
+								},
+								{	-- Mythic: Iron Juggernaut
+									["achievementID"] = 8469,	-- Mythic: Iron Juggernaut
+								},
 								i(112736),	-- Seismic Bore
 								i(112748),	-- Juggernaut's Power Core
 								i(112742),	-- Juggernaut's Ignition Keys
@@ -3605,6 +4049,16 @@ _.Instances =
 							})),
 							cr(71859, e(856, {	-- Kor'kron Dark Shaman (Earthbreaker Haromm)
 								["groups"] = {
+									{	-- Gates of Retribution: Kor'kron Dark Shaman
+										["achievementID"] = 8459,	-- Gates of Retribution
+										["criteriaID"] = 3,	-- Kor'kron Dark Shaman
+									},
+									{	-- Mythic: Kor'kron Dark Shaman
+										["achievementID"] = 8470,	-- Mythic: Kor'kron Dark Shaman
+									},
+									{	-- Rescue Raiders
+										["achievementID"] = 8453,	-- Rescue Raiders
+									},
 									i(105751, {	-- Kor'kron Shaman's Treasure (Shaman Only)
 										i(105745),	-- Kor'kron Dark Shaman Cowl
 										i(105747),	-- Kor'kron Dark Shaman Shoulder
@@ -3643,6 +4097,16 @@ _.Instances =
 								},
 							})),
 							cr(71515, e(850, {	-- General Nazgrim
+								{	-- Gamon Will Save Us!
+									["achievementID"] = 8448,	-- Gamon Will Save Us!
+								},
+								{	-- Gates of Retribution: General Nazgrim
+									["achievementID"] = 8459,	-- Gates of Retribution
+									["criteriaID"] = 4,	-- General Nazgrim
+								},
+								{	-- Mythic: General Nazgrim
+									["achievementID"] = 8471,	-- Mythic: General Nazgrim
+								},
 								i(99721, {	-- Gauntlets of the Cursed Conqueror
 									i(99380),	-- Gauntlets of Winged Triumph
 									i(99375),	-- Gloves of Winged Triumph
@@ -3685,6 +4149,16 @@ _.Instances =
 								i(112778),	-- Nazgrim's Burnished Insignia
 							})),
 							cr(71454, e(846, {	-- Malkorok
+								{	-- Mythic: Malkorok
+									["achievementID"] = 8472,	-- Mythic: Malkorok
+								},
+								{	-- The Underhold: Malkorok
+									["achievementID"] = 8461,	-- The Underhold
+									["criteriaID"] = 1,	-- Malkorok
+								},
+								{	-- Unlimited Potential
+									["achievementID"] = 8538,	-- Unlimited Potential
+								},
 								i(112805),	-- Halberd of Inner Shadows
 								i(112804),	-- Malkorok's Skullcleaver
 								i(112806),	-- Kor'kron Hand Cannon
@@ -3709,6 +4183,16 @@ _.Instances =
 								i(112792),	-- Vial of Living Corruption
 							})),
 							cr(71889, e(870, {	-- Spoils of Pandaria (Secured Stockpile of Pandaren Spoils)
+								{	-- Criss Cross
+									["achievementID"] = 8529,	-- Criss Cross
+								},
+								{	-- Mythic: Spoils of Pandaria
+									["achievementID"] = 8478,	-- Mythic: Spoils of Pandaria
+								},
+								{	-- The Underhold: Spoils of Pandaria
+									["achievementID"] = 8461,	-- The Underhold
+									["criteriaID"] = 2,	-- Spoils of Pandaria
+								},
 								i(112835),	-- Enchanted Shao-Tien Saber
 								i(112841),	-- Immaculately Preserved Wand
 								i(112829),	-- Ancient Mogu Tower Shield
@@ -3732,6 +4216,16 @@ _.Instances =
 								i(112825),	-- Sigil of Rampage
 							})),
 							cr(71529, e(851, {	-- Thok the Bloodthirsty
+								{	-- Giant Dinosaur vs. Mega Snail
+									["achievementID"] = 8527,	-- Giant Dinosaur vs. Mega Snail
+								},
+								{	-- Mythic: Thok the Bloodthirsty
+									["achievementID"] = 8479,	-- Mythic: Thok the Bloodthirsty
+								},
+								{	-- The Underhold: Thok the Bloodthirsty
+									["achievementID"] = 8461,	-- The Underhold
+									["criteriaID"] = 3,	-- Thok the Bloodthirsty
+								},
 								i(99724, {	-- Helm of the Cursed Conqueror
 									i(99370),	-- Faceguard of Winged Triumph
 									i(99376),	-- Headguard of Winged Triumph
@@ -3774,6 +4268,34 @@ _.Instances =
 								i(112850),	-- Thok's Tail Tip
 							})),
 							cr(71504, e(865, {	-- Siegecrafter Blackfuse
+								{	-- Downfall: Siegecrafter Blackfuse
+									["achievementID"] = 8462,	-- Downfall
+									["criteriaID"] = 1,	-- Siegecrafter Blackfuse
+								},
+								{	-- Lasers and Magnets and Drills! Oh My!
+									["achievementID"] = 8543,	-- Lasers and Magnets and Drills! Oh My!
+									["g"] = {
+										{	-- Deactivated Electromagnet
+											["achievementID"] = 8543,	-- Lasers and Magnets and Drills! Oh My!
+											["criteriaID"] = 2,	-- Deactivated Electromagnet
+										},
+										{	-- Deactivated Laser Turret
+											["achievementID"] = 8543,	-- Lasers and Magnets and Drills! Oh My!
+											["criteriaID"] = 1,	-- Deactivated Laser Turret
+										},
+										{	-- Deactivated Missile Turret
+											["achievementID"] = 8543,	-- Lasers and Magnets and Drills! Oh My!
+											["criteriaID"] = 3,	-- Deactivated Missile Turret
+										},
+										{	-- Disassembled Crawler Mines
+											["achievementID"] = 8543,	-- Lasers and Magnets and Drills! Oh My!
+											["criteriaID"] = 4,	-- Disassembled Crawler Mines
+										},
+									},
+								},
+								{	-- Mythic: Siegecrafter Blackfuse
+									["achievementID"] = 8480,	-- Mythic: Siegecrafter Blackfuse
+								},
 								i(104158),	-- Blackfuse Bombling (PET!)
 								i( 99718, {	-- Shoulders of the Cursed Conqueror
 									i(99378),	-- Mantle of Winged Triumph
@@ -3817,6 +4339,54 @@ _.Instances =
 								i(112879),	-- Ticking Ebon Detonator
 							})),
 							cr(71161, e(853, {	-- Paragons of the Klaxxi (Kil'ruk the Wind Reaver)
+								{	-- Downfall: Paragons of the Klaxxi
+									["achievementID"] = 8462,	-- Downfall
+									["criteriaID"] = 2,	-- Paragons of the Klaxxi
+								},
+								{	-- Mythic: Paragons of the Klaxxi
+									["achievementID"] = 8481,	-- Mythic: Paragons of the Klaxxi
+								},
+								{	-- Now We are the Paragon
+									["achievementID"] = 8531,	-- Now We are the Paragon
+									["g"] = {
+										{	-- Become the Bloodseeker
+											["achievementID"] = 8531,	-- Now We are the Paragon
+											["criteriaID"] = 2,	-- Become the Bloodseeker
+										},
+										{	-- Become the Dissector
+											["achievementID"] = 8531,	-- Now We are the Paragon
+											["criteriaID"] = 5,	-- Become the Dissector
+										},
+										{	-- Become the Locust
+											["achievementID"] = 8531,	-- Now We are the Paragon
+											["criteriaID"] = 9,	-- Become the Locust
+										},
+										{	-- Become the Lucid
+											["achievementID"] = 8531,	-- Now We are the Paragon
+											["criteriaID"] = 7,	-- Become the Lucid
+										},
+										{	-- Become the Manipulator
+											["achievementID"] = 8531,	-- Now We are the Paragon
+											["criteriaID"] = 6,	-- Become the Manipulator
+										},
+										{	-- Become the Poisoned Mind
+											["achievementID"] = 8531,	-- Now We are the Paragon
+											["criteriaID"] = 8,	-- Become the Poisoned Mind
+										},
+										{	-- Become the Prime
+											["achievementID"] = 8531,	-- Now We are the Paragon
+											["criteriaID"] = 3,	-- Become the Prime
+										},
+										{	-- Become the Swarmkeeper
+											["achievementID"] = 8531,	-- Now We are the Paragon
+											["criteriaID"] = 4,	-- Become the Swarmkeeper
+										},
+										{	-- Become the Wind-Reaver
+											["achievementID"] = 8531,	-- Now We are the Paragon
+											["criteriaID"] = 1,	-- Become the Wind-Reaver
+										},
+									},
+								},
 								i(104165),	-- Kovok (PET!)
 								i(99712, {	-- Leggings of the Cursed Conqueror
 									i(99377),	-- Greaves of Winged Triumph
@@ -3860,6 +4430,41 @@ _.Instances =
 								i(112913),	-- Skeer's Bloodsoaked Talisman
 							})),
 							cr(71865, e(869, {	-- Garrosh Hellscream
+								{	-- Conqueror of Orgrimmar
+									["achievementID"] = 8679,	-- Conqueror of Orgrimmar
+									["races"] = ALLIANCE_ONLY,
+									["g"] = {
+										{	-- ,Conqueror of Orgrimmar
+											["titleID"] = 211,	-- ,Conqueror of Orgrimmar
+											["races"] = ALLIANCE_ONLY,
+										},
+									},
+								},
+								{	-- Downfall: Garrosh Hellscream
+									["achievementID"] = 8462,	-- Downfall
+									["criteriaID"] = 3,	-- Garrosh Hellscream
+								},
+								{	-- Liberator of Orgrimmar
+									["achievementID"] = 8680,	-- Liberator of Orgrimmar
+									["races"] = HORDE_ONLY,
+									["g"] = {
+										{	-- ,Liberator of Orgrimmar
+											["titleID"] = 212,	-- ,Liberator of Orgrimmar
+											["races"] = HORDE_ONLY,
+										},
+									},
+								},
+								{	-- Mythic: Garrosh Hellscream
+									["achievementID"] = 8482,	-- Mythic: Garrosh Hellscream
+									["g"] = {
+										{	-- ,Hellscream's Downfall
+											["titleID"] = 214,	-- ,Hellscream's Downfall
+										},
+									},
+								},
+								{	-- Strike!	
+									["achievementID"] = 8537,	-- Strike!
+								},
 								i(105867),	-- Essence of the Cursed Conqueror
 								i(105866),	-- Essence of the Cursed Protector
 								i(105868),	-- Essence of the Cursed Vanquisher

@@ -2,14 +2,6 @@
 --   A C H I E V E M E N T S    M O D U L E    --
 --------------------------------------------------
 
---[[
-8.0 Pre-Patch alignment complete
-To do: 
-1) Review crit items to see if achievements / items / etc can replace them to provide more information when looking at them in the ATT lists
-2) Add [Reward] tag
-3) Source to local files if applicable
-]]--
-
 _.Achievements = 
 {
 	n(-9959, { -- Dungeons & Raids
@@ -45,36 +37,80 @@ _.Achievements =
 						crit(3),		-- Xuen
 						crit(4),		-- Yu'lon
 					}),
-					a(ach(8679, {	-- Conqueror of Orgrimmar
-						a(title(211)),	-- ,Conqueror of Orgrimmar
-					})),
+					{	-- Conqueror of Orgrimmar
+						["achievementID"] = 8679,	-- Conqueror of Orgrimmar
+						["races"] = ALLIANCE_ONLY,
+						["g"] = {
+							{	-- ,Conqueror of Orgrimmar
+								["titleID"] = 211,	-- ,Conqueror of Orgrimmar
+								["races"] = ALLIANCE_ONLY,
+							},
+						},
+					},
 					ach(8038),		-- Cretaceous Collector
-					ach(8529),		-- Criss Cross
-					ach(8462, {		-- Downfall
-						crit(1),		-- Siegecrafter Blackfuse
-						crit(2),		-- Paragons of the Klaxxi
-						crit(3),		-- Garrosh Hellscream
-					}),
+					{	-- Criss Cross
+						["achievementID"] = 8529,	-- Criss Cross
+					},
+					{	-- Downfall
+						["achievementID"] = 8462,	-- Downfall
+						["g"] = {
+							{	-- Downfall: Garrosh Hellscream
+								["achievementID"] = 8462,	-- Downfall
+								["criteriaID"] = 3,	-- Garrosh Hellscream
+							},
+							{	-- Downfall: Paragons of the Klaxxi
+								["achievementID"] = 8462,	-- Downfall
+								["criteriaID"] = 2,	-- Paragons of the Klaxxi
+							},
+							{	-- Downfall: Siegecrafter Blackfuse
+								["achievementID"] = 8462,	-- Downfall
+								["criteriaID"] = 1,	-- Siegecrafter Blackfuse
+							},
+						},
+					},
 					ach(6517),		-- Extinction Event
 					ach(6824),		-- Face Clutchers
-					ach(8520),		-- Fire in the Hole!
+					{	-- Fire in the Hole!
+						["achievementID"] = 8520,	-- Fire in the Hole!
+					},
 					ach(8070, {		-- Forgotten Depths
 						crit(1),		-- Tortos
 						crit(2),		-- Megaera
 						crit(3),		-- Ji-Kun
 					}),
 					ach(8086),		-- From Dusk 'til Dawn
-					ach(8448),		-- Gamon Will Save Us!
-					ach(8459, {		-- Gates of Retribution
-						crit(1),		-- Galakras
-						crit(2),		-- Iron Juggernaut
-						crit(3),		-- Kor'kron Dark Shaman
-						crit(4),		-- General Nazgrim
-					}),
+					{	-- Gamon Will Save Us!
+						["achievementID"] = 8448,	-- Gamon Will Save Us!
+					},
+					{	-- Gates of Retribution
+						["achievementID"] = 8459,	-- Gates of Retribution
+						["g"] = {
+							{	-- Gates of Retribution: Galakras
+								["achievementID"] = 8459,	-- Gates of Retribution
+								["criteriaID"] = 1,	-- Galakras
+							},
+							{	-- Gates of Retribution: General Nazgrim
+								["achievementID"] = 8459,	-- Gates of Retribution
+								["criteriaID"] = 4,	-- General Nazgrim
+							},
+							{	-- Gates of Retribution: Iron Juggernaut
+								["achievementID"] = 8459,	-- Gates of Retribution
+								["criteriaID"] = 2,	-- Iron Juggernaut
+							},
+							{	-- Gates of Retribution: Kor'kron Dark Shaman
+								["achievementID"] = 8459,	-- Gates of Retribution
+								["criteriaID"] = 3,	-- Kor'kron Dark Shaman
+							},
+						},
+					},
 					ach(8037),		-- Genetically Unmodified Organism
 					ach(6687),		-- Getting Hot In Here
-					ach(8527),		-- Giant Dinosaur vs. Mega Snail
-					ach(8528),		-- Go Long
+					{	-- Giant Dinosaur vs. Mega Snail
+						["achievementID"] = 8527,	-- Giant Dinosaur vs. Mega Snail
+					},
+					{	-- Go Long
+						["achievementID"] = 8528,	-- Go Long
+					},
 					ach(6458, {		-- Guardians of Mogu'shan
 						crit(1),		-- Stone Guard
 						crit(2),		-- Feng the Accursed
@@ -126,59 +162,146 @@ _.Achievements =
 					}),
 					ach(6728),		-- Heroic: Wind Lord Mel'jarak
 					ach(6518),		-- I Heard You Like Amber...
-					ach(8543, {		-- Lasers and Magnets and Drills! Oh My!
-						crit(1),		-- Deactivated Laser Turret
-						crit(2),		-- Deactivated Electromagnet
-						crit(3),		-- Deactivated Missile Turret
-						crit(4),		-- Disassembled Crawler Mines
-					}),
+					{	-- Lasers and Magnets and Drills! Oh My!
+						["achievementID"] = 8543,	-- Lasers and Magnets and Drills! Oh My!
+						["g"] = {
+							{	-- Deactivated Electromagnet
+								["achievementID"] = 8543,	-- Lasers and Magnets and Drills! Oh My!
+								["criteriaID"] = 2,	-- Deactivated Electromagnet
+							},
+							{	-- Deactivated Laser Turret
+								["achievementID"] = 8543,	-- Lasers and Magnets and Drills! Oh My!
+								["criteriaID"] = 1,	-- Deactivated Laser Turret
+							},
+							{	-- Deactivated Missile Turret
+								["achievementID"] = 8543,	-- Lasers and Magnets and Drills! Oh My!
+								["criteriaID"] = 3,	-- Deactivated Missile Turret
+							},
+							{	-- Disassembled Crawler Mines
+								["achievementID"] = 8543,	-- Lasers and Magnets and Drills! Oh My!
+								["criteriaID"] = 4,	-- Disassembled Crawler Mines
+							},
+						},
+					},
 					ach(8069, {		-- Last Stand of the Zandalari
 						crit(1),		-- Jin'rokh the Breaker
 						crit(2),		-- Horridon
 						crit(3),		-- Council of Elders
 					}),
 					ach(6683),		-- Less Than Three
-					h(ach(8680, {	-- Liberator of Orgrimmar
-						h(title(212)),	-- ,Liberator of Orgrimmar
-					})),
+					{	-- Liberator of Orgrimmar
+						["achievementID"] = 8680,	-- Liberator of Orgrimmar
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							{	-- ,Liberator of Orgrimmar
+								["titleID"] = 212,	-- ,Liberator of Orgrimmar
+								["races"] = HORDE_ONLY,
+							},
+						},
+					},
 					ach(8094),		-- Lightning Overload
 					ach(6553),		-- Like an Arrow to the Face
 					ach(8123),		-- Millions of Years of Evolution vs. My Fist
 					ach(6823),		-- Must Love Dogs
-					ach(8465),		-- Mythic: Fallen Protectors
-					ach(8468),		-- Mythic: Galakras
-					ach(8482, {		-- Mythic: Garrosh Hellscream
-						title(214),		-- ,Hellscream's Downfall
-					}),
-					ach(8471),		-- Mythic: General Nazgrim
-					ach(8463),		-- Mythic: Immerseus
-					ach(8469),		-- Mythic: Iron Juggernaut
-					ach(8470),		-- Mythic: Kor'kron Dark Shaman
-					ach(8472),		-- Mythic: Malkorok
-					ach(8466),		-- Mythic: Norushen
-					ach(8481),		-- Mythic: Paragons of the Klaxxi
-					ach(8467),		-- Mythic: Sha of Pride
-					ach(8480),		-- Mythic: Siegecrafter Blackfuse
-					ach(8478),		-- Mythic: Spoils of Pandaria
-					ach(8479),		-- Mythic: Thok the Bloodthirsty
+					{	-- Mythic: Fallen Protectors
+						["achievementID"] = 8465,	-- Mythic: Fallen Protectors
+					},
+					{	-- Mythic: Galakras
+						["achievementID"] = 8468,	-- Mythic: Galakras
+					},
+					{	-- Mythic: Garrosh Hellscream
+						["achievementID"] = 8482,	-- Mythic: Garrosh Hellscream
+						["g"] = {
+							{	-- ,Hellscream's Downfall
+								["titleID"] = 214,	-- ,Hellscream's Downfall
+							},
+						},
+					},
+					{	-- Mythic: General Nazgrim
+						["achievementID"] = 8471,	-- Mythic: General Nazgrim
+					},
+					{	-- Mythic: Immerseus
+						["achievementID"] = 8463,	-- Mythic: Immerseus
+					},
+					{	-- Mythic: Iron Juggernaut
+						["achievementID"] = 8469,	-- Mythic: Iron Juggernaut
+					},
+					{	-- Mythic: Kor'kron Dark Shaman
+						["achievementID"] = 8470,	-- Mythic: Kor'kron Dark Shaman
+					},
+					{	-- Mythic: Malkorok
+						["achievementID"] = 8472,	-- Mythic: Malkorok
+					},
+					{	-- Mythic: Norushen
+						["achievementID"] = 8466,	-- Mythic: Norushen
+					},
+					{	-- Mythic: Paragons of the Klaxxi
+						["achievementID"] = 8481,	-- Mythic: Paragons of the Klaxxi
+					},
+					{	-- Mythic: Sha of Pride
+						["achievementID"] = 8467,	-- Mythic: Sha of Pride
+					},
+					{	-- Mythic: Siegecrafter Blackfuse
+						["achievementID"] = 8480,	-- Mythic: Siegecrafter Blackfuse
+					},
+					{	-- Mythic: Spoils of Pandaria
+						["achievementID"] = 8478,	-- Mythic: Spoils of Pandaria
+					},
+					{	-- Mythic: Thok the Bloodthirsty
+						["achievementID"] = 8479,	-- Mythic: Thok the Bloodthirsty
+					},
 					ach(6845, {		-- Nightmare of Shek'zeer
 						crit(1),		-- Wind Lord Mel'jarak
 						crit(2),		-- Amber-Shaper Un'sok
 						crit(3),		-- Grand Empress Shek'zeer 
 					}),
-					ach(8536),		-- No More Tears
-					ach(8532),		-- None Shall Pass
-					ach(8531, {		-- Now We are the Paragon
-						crit(1),		-- Become the Wind-Reaver
-						crit(2),		-- Become the Bloodseeker
-						crit(3),		-- Become the Prime
-						crit(4),		-- Become the Swarmkeeper
-						crit(5),		-- Become the Dissector
-						crit(6),		-- Become the Manipulator
-						crit(7),		-- Become the Lucid
-						crit(8),		-- Become the Poisoned Mind
-						crit(9),		-- Become the Locust
-					}),
+					{	-- No More Tears
+						["achievementID"] = 8536,	-- No More Tears
+					},
+					{	-- None Shall Pass
+						["achievementID"] = 8532,	-- None Shall Pass
+					},
+					{	-- Now We are the Paragon
+						["achievementID"] = 8531,	-- Now We are the Paragon
+						["g"] = {
+							{	-- Become the Bloodseeker
+								["achievementID"] = 8531,	-- Now We are the Paragon
+								["criteriaID"] = 2,	-- Become the Bloodseeker
+							},
+							{	-- Become the Dissector
+								["achievementID"] = 8531,	-- Now We are the Paragon
+								["criteriaID"] = 5,	-- Become the Dissector
+							},
+							{	-- Become the Locust
+								["achievementID"] = 8531,	-- Now We are the Paragon
+								["criteriaID"] = 9,	-- Become the Locust
+							},
+							{	-- Become the Lucid
+								["achievementID"] = 8531,	-- Now We are the Paragon
+								["criteriaID"] = 7,	-- Become the Lucid
+							},
+							{	-- Become the Manipulator
+								["achievementID"] = 8531,	-- Now We are the Paragon
+								["criteriaID"] = 6,	-- Become the Manipulator
+							},
+							{	-- Become the Poisoned Mind
+								["achievementID"] = 8531,	-- Now We are the Paragon
+								["criteriaID"] = 8,	-- Become the Poisoned Mind
+							},
+							{	-- Become the Prime
+								["achievementID"] = 8531,	-- Now We are the Paragon
+								["criteriaID"] = 3,	-- Become the Prime
+							},
+							{	-- Become the Swarmkeeper
+								["achievementID"] = 8531,	-- Now We are the Paragon
+								["criteriaID"] = 4,	-- Become the Swarmkeeper
+							},
+							{	-- Become the Wind-Reaver
+								["achievementID"] = 8531,	-- Now We are the Paragon
+								["criteriaID"] = 1,	-- Become the Wind-Reaver
+							},
+						},
+					},
 					ach(8077),		-- One-Up
 					ach(6937),		-- Overzealous
 					ach(8072, {		-- Pinnacle of Storms
@@ -192,7 +315,9 @@ _.Achievements =
 						crit(3),		-- Elder Asani defeated last
 					}),
 					ach(8028),		-- Praise the Sun!
-					ach(8453),		-- Rescue Raiders
+					{	-- Rescue Raiders
+						["achievementID"] = 8453,	-- Rescue Raiders
+					},
 					ach(8081, {		-- Ritualist Who?
 						crit(1),		-- Aridian
 						crit(2),		-- Auton
@@ -224,8 +349,12 @@ _.Achievements =
 					ach(8097),		-- Soft Hands
 					ach(7056),		-- Sorry, Were You Looking for This?
 					ach(6686),		-- Straight Six
-					ach(8537),		-- Strike!
-					ach(8521),		-- Swallow Your Pride
+					{	-- Strike!	
+						["achievementID"] = 8537,	-- Strike!
+					},
+					{	-- Swallow Your Pride
+						["achievementID"] = 8521,	-- Swallow Your Pride
+					},
 					ach(6689, {		-- Terrace of Endless Spring
 						crit(1),		-- Protectors of the Endless
 						crit(2),		-- Tsulong
@@ -237,13 +366,27 @@ _.Achievements =
 						crit(2),		-- Blade Lord Ta'yak
 						crit(3),		-- Garalon
 					}),
-					ach(8530),		-- The Immortal Vanguard
+					{	-- The Immortal Vanguard
+						["achievementID"] = 8530,	-- The Immortal Vanguard
+					},
 					ach(6825),		-- The Mind-Killer
-					ach(8461, {		-- The Underhold
-						crit(1),		-- Malkorok
-						crit(2),		-- Spoils of Pandaria
-						crit(3),		-- Thok the Bloodthirsty
-					}),
+					{	-- The Underhold
+						["achievementID"] = 8461,	-- The Underhold
+						["g"] = {
+							{	-- The Underhold: Malkorok
+								["achievementID"] = 8461,	-- The Underhold
+								["criteriaID"] = 1,	-- Malkorok
+							},
+							{	-- The Underhold: Spoils of Pandaria
+								["achievementID"] = 8461,	-- The Underhold
+								["criteriaID"] = 2,	-- Spoils of Pandaria
+							},
+							{	-- The Underhold: Thok the Bloodthirsty
+								["achievementID"] = 8461,	-- The Underhold
+								["criteriaID"] = 3,	-- Thok the Bloodthirsty
+							},
+						},
+					},
 					ach(6844, {		-- The Vault of Mysteries
 						crit(1),		-- Four Kings
 						crit(2),		-- Elegon
@@ -253,13 +396,30 @@ _.Achievements =
 						crit(1),		-- Defeat 2 Kor'thik Reavers within 10 seconds of each other
 						crit(2),		-- Defeat Grand Empress Shek'zeer
 					}),
-					ach(8538),		-- Unlimited Potential
-					ach(8458, {		-- Vale of Eternal Sorrows
-						crit(1),		-- Immerseus
-						crit(2),		-- Fallen Protectors
-						crit(3),		-- Norushen
-						crit(4),		-- Sha of Pride
-					}),
+					{	-- Unlimited Potential
+						["achievementID"] = 8538,	-- Unlimited Potential
+					},
+					{	-- Vale of Eternal Sorrows
+						["achievementID"] = 8458,	-- Vale of Eternal Sorrows
+						["g"] = {
+							{	-- Vale of Eternal Sorrows: Fallen Protectors
+								["achievementID"] = 8458,	-- Vale of Eternal Sorrows
+								["criteriaID"] = 2,	-- Fallen Protectors
+							},
+							{	-- Vale of Eternal Sorrows: Immerseus
+								["achievementID"] = 8458,	-- Vale of Eternal Sorrows
+								["criteriaID"] = 1,	-- Immerseus
+							},
+							{	-- Vale of Eternal Sorrows: Norushen
+								["achievementID"] = 8458,	-- Vale of Eternal Sorrows
+								["criteriaID"] = 3,	-- Norushen
+							},
+							{	-- Vale of Eternal Sorrows: Sha of Pride
+								["achievementID"] = 8458,	-- Vale of Eternal Sorrows
+								["criteriaID"] = 4,	-- Sha of Pride
+							},
+						},
+					},
 					ach(6933),		-- Who's Got Two Green Thumbs?
 					ach(8098),		-- You Said Crossing the Streams Was Bad
 				},
