@@ -374,12 +374,12 @@ settings.UpdateMode = function(self)
 		app.RecipeChecker = app.GetTempDataSubMember;
 	end
 	
-	if GetDataMember("IgnoreFiltersOnNonBindingItems", false) then
+	if app.GetDataMember("IgnoreFiltersOnNonBindingItems", false) then
 		app.ItemBindFilter = app.FilterItemBind;
 	else
 		app.ItemBindFilter = app.Filter;
 	end
-	if GetDataMember("FilterGroupsByLevel", false) then
+	if app.GetDataMember("FilterGroupsByLevel", false) then
 		app:RegisterEvent("PLAYER_LEVEL_UP");
 		app.GroupRequirementsFilter = app.FilterGroupsByLevel;
 	else
@@ -390,7 +390,7 @@ settings.UpdateMode = function(self)
 	else
 		app.RequireBindingFilter = app.NoFilter;
 	end
-	if GetDataMember("ShowIncompleteQuests", false) then
+	if app.GetDataMember("ShowIncompleteQuests", false) then
 		app.ShowIncompleteQuests = app.FilterItemTrackable;
 	else
 		app.ShowIncompleteQuests = app.Filter;
