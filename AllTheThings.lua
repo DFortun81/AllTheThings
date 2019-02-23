@@ -3543,7 +3543,7 @@ app.BaseDifficulty = {
 		if key == "key" then
 			return "difficultyID";
 		elseif key == "text" then
-			return GetDifficultyInfo(t.difficultyID);
+			return GetDifficultyInfo(t.difficultyID) or "Unknown Difficulty";
 		elseif key == "name" then
 			return GetDifficultyInfo(t.difficultyID);
 		elseif key == "icon" then
@@ -6735,8 +6735,8 @@ local function UpdateVisibleRowData(self)
 		local current = math.max(1, math.min(self.ScrollBar.CurrentValue, totalRowCount));
 		
 		-- Ensure that the first row doesn't move out of position.
-		local row = container.rows[i] or CreateRow(container);
-		SetRowData(self, container.rows[1] or CreateRow(container), self.rowData[1]);
+		local row = container.rows[1] or CreateRow(container);
+		SetRowData(self, row, self.rowData[1]);
 		totalHeight = totalHeight + row:GetHeight();
 		current = current + 1;
 		rowCount = rowCount + 1;
