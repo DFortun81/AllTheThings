@@ -832,6 +832,41 @@ local function GetProgressColorText(progress, total)
 	end
 	return "---";
 end
+local function GetCollectionIcon(state)
+	return L[(state and (state == 2 and "COLLECTED_APPEARANCE_ICON" or "COLLECTED_ICON")) or "NOT_COLLECTED_ICON"];
+end
+local function GetCollectionText(state)
+	return L[(state and (state == 2 and "COLLECTED_APPEARANCE" or "COLLECTED")) or "NOT_COLLECTED"];
+end
+local function GetCompletionIcon(state)
+	return L[state and "COMPLETE_ICON" or "NOT_COLLECTED_ICON"];
+end
+local function GetCompletionText(state)
+	return L[state and "COMPLETE" or "INCOMPLETE"];
+end
+local function GetProgressTextForRow(data)
+	if data.total and (data.total > 1 or (data.total > 0 and not data.collectible)) then
+		return GetProgressColorText(data.progress or 0, data.total);
+	elseif data.collectible then
+		return GetCollectionIcon(data.collected);
+	elseif data.trackable then
+		return GetCompletionIcon(data.saved);
+	elseif data.g and not data.expanded then
+		return "+++";
+	end
+	return "---";
+end
+local function GetProgressTextForTooltip(data)
+	if data.total and (data.total > 1 or (data.total > 0 and not data.collectible)) then
+		return GetProgressColorText(data.progress or 0, data.total);
+	elseif data.collectible then
+		return GetCollectionText(data.collected);
+	elseif data.trackable then
+		return GetCompletionText(data.saved);
+	else
+		return "---";
+	end
+end
 CS:Hide();
 
 -- Source ID Harvesting Lib
@@ -1003,30 +1038,6 @@ local function SetPortraitIcon(self, data, x)
 		end
 		return true;
 	end
-end
-local function GetCollectionIcon(state)
-	return L[(state and (state == 2 and "COLLECTED_APPEARANCE_ICON" or "COLLECTED_ICON")) or "NOT_COLLECTED_ICON"];
-end
-local function GetCollectionText(state)
-	return L[(state and (state == 2 and "COLLECTED_APPEARANCE" or "COLLECTED")) or "NOT_COLLECTED"];
-end
-local function GetCompletionIcon(state)
-	return L[state and "COMPLETE_ICON" or "NOT_COLLECTED_ICON"];
-end
-local function GetCompletionText(state)
-	return L[state and "COMPLETE" or "INCOMPLETE"];
-end
-local function GetProgressText(data)
-	if data.total and (data.total > 1 or (data.total > 0 and not data.collectible)) then
-		return GetProgressColorText(data.progress or 0, data.total);
-	elseif data.trackable then
-		return GetCompletionIcon(data.saved);
-	elseif data.collectible then
-		return GetCollectionIcon(data.collected);
-	elseif data.g and not data.expanded then
-		return "+++";
-	end
-	return "---";
 end
 local function GetRelativeDifficulty(group, difficultyID)
 	if group then
@@ -1801,16 +1812,8 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		end
 		
 		-- If the user wants to show the progress of this search result, do so.
-		if GetDataMember("ShowProgress") and (not group.spellID or #info > 0) then
-			if group.total and (group.total > 1 or (group.total > 0 and not group.collectible)) then
-				group.collectionText = GetProgressColorText(group.progress or 0, group.total);
-			elseif group.collectible then
-				group.collectionText = GetCollectionText(group.collected);
-			elseif group.trackable then
-				group.collectionText = GetCompletionText(group.saved);
-			elseif #info > 0 then
-				group.collectionText = "---";
-			end
+		if app.Settings:GetTooltipSetting("Progress") and (not group.spellID or #info > 0) then
+			group.collectionText = (app.Settings:GetTooltipSetting("ShowIconOnly") and GetProgressTextForRow or GetProgressTextForTooltip)(group);
 		end
 		
 		-- If there is a note for this group, show it.
@@ -2458,7 +2461,7 @@ end
 local function RefreshCollections()
 	StartCoroutine("RefreshingCollections", function()
 		while InCombatLockdown() do coroutine.yield(); end
-		app.print("Refreshing " .. L["TITLE"] .. " collection status...");
+		app.print("Refreshing collection...");
 		app.events.QUEST_LOG_UPDATE();
 		
 		-- Harvest Illusion Collections
@@ -2524,7 +2527,7 @@ local function RefreshCollections()
 		collectgarbage();
 		
 		-- Report success.
-		app.print("Done refreshing collections.");
+		app.print("Done refreshing collection.");
 	end);
 end
 local function RefreshMountCollection()
@@ -2649,7 +2652,7 @@ end
 local function AttachTooltip(self)
 	if not self.AllTheThingsProcessing then
 		self.AllTheThingsProcessing = true;
-		if (not InCombatLockdown() or GetDataMember("DisplayTooltipsInCombat")) and GetDataMember("EnableTooltipInformation") then
+		if (not InCombatLockdown() or app.Settings:GetTooltipSetting("DisplayInCombat")) and app.Settings:GetTooltipSetting("Enabled") then
 			--[[
 			for i,j in pairs(self) do
 				self:AddDoubleLine(tostring(i), tostring(j));
@@ -2859,7 +2862,7 @@ end
 		-- Make sure to call to base functionality
 		GameTooltip_SetCurrencyByID(self, currencyID, count);
 		
-		if (not InCombatLockdown() or GetDataMember("DisplayTooltipsInCombat")) and GetDataMember("EnableTooltipInformation") then
+		if (not InCombatLockdown() or app.Settings:GetTooltipSetting("DisplayInCombat")) and app.Settings:GetTooltipSetting("Enabled") then
 			AttachTooltipSearchResults(self, "currencyID:" .. currencyID, SearchForField, "currencyID", currencyID);
 			if GetDataMember("ShowCurrencyID") then self:AddDoubleLine(L["CURRENCY_ID"], tostring(currencyID)); end
 			self:Show();
@@ -2870,7 +2873,7 @@ end
 		-- Make sure to call to base functionality
 		GameTooltip_SetCurrencyToken(self, tokenID);
 		
-		if (not InCombatLockdown() or GetDataMember("DisplayTooltipsInCombat")) and GetDataMember("EnableTooltipInformation") then
+		if (not InCombatLockdown() or app.Settings:GetTooltipSetting("DisplayInCombat")) and app.Settings:GetTooltipSetting("Enabled") then
 			-- Determine what kind of list data this is. (Blizzard is whack and using this API call for headers too...)
 			local name, isHeader = GetCurrencyListInfo(tokenID);
 			if not isHeader then
@@ -2895,7 +2898,7 @@ end
 	GameTooltip.SetLFGDungeonReward = function(self, dungeonID, rewardID)
 		-- Only call to the base functionality if it is unknown.
 		GameTooltip_SetLFGDungeonReward(self, dungeonID, rewardID);
-		if (not InCombatLockdown() or GetDataMember("DisplayTooltipsInCombat")) and GetDataMember("EnableTooltipInformation") then
+		if (not InCombatLockdown() or app.Settings:GetTooltipSetting("DisplayInCombat")) and app.Settings:GetTooltipSetting("Enabled") then
 			local name, texturePath, quantity, isBonusReward, spec, itemID = GetLFGDungeonRewardInfo(dungeonID, rewardID);
 			if itemID then
 				if spec == "item" then
@@ -2912,7 +2915,7 @@ end
 	GameTooltip.SetLFGDungeonShortageReward = function(self, dungeonID, shortageSeverity, lootIndex)
 		-- Only call to the base functionality if it is unknown.
 		GameTooltip_SetLFGDungeonShortageReward(self, dungeonID, shortageSeverity, lootIndex);
-		if (not InCombatLockdown() or GetDataMember("DisplayTooltipsInCombat")) and GetDataMember("EnableTooltipInformation") then
+		if (not InCombatLockdown() or app.Settings:GetTooltipSetting("DisplayInCombat")) and app.Settings:GetTooltipSetting("Enabled") then
 			local name, texturePath, quantity, isBonusReward, spec, itemID = GetLFGDungeonShortageRewardInfo(dungeonID, shortageSeverity, lootIndex);
 			if itemID then
 				if spec == "item" then
@@ -2929,7 +2932,7 @@ end
 	local GameTooltip_SetToyByItemID = GameTooltip.SetToyByItemID;
 	GameTooltip.SetToyByItemID = function(self, itemID)
 		GameTooltip_SetToyByItemID(self, itemID);
-		if (not InCombatLockdown() or GetDataMember("DisplayTooltipsInCombat")) and GetDataMember("EnableTooltipInformation") then
+		if (not InCombatLockdown() or app.Settings:GetTooltipSetting("DisplayInCombat")) and app.Settings:GetTooltipSetting("Enabled") then
 			AttachTooltipSearchResults(self, "itemID:" .. itemID, SearchForField, "itemID", itemID);
 			self:Show();
 		end
@@ -2980,7 +2983,7 @@ hooksecurefunc("ReputationParagonFrame_SetupParagonTooltip",function(frame)
 	--]]
 	local currentValue, threshold, paragonQuestID, hasRewardPending, tooLowLevelForParagon = C_Reputation.GetFactionParagonInfo(frame.factionID)
 	-- Let's make sure the user isn't in combat and if they are do they have In Combat turned on.  Finally check to see if Tootltips are turned on.
-	if (not InCombatLockdown() or GetDataMember("DisplayTooltipsInCombat")) and GetDataMember("EnableTooltipInformation") then
+	if (not InCombatLockdown() or app.Settings:GetTooltipSetting("DisplayInCombat")) and app.Settings:GetTooltipSetting("Enabled") then
 		
 	local paragonCacheID = {
 		-- Paragon Cache Rewards
@@ -6571,7 +6574,7 @@ local function SetRowData(self, row, data)
 			relative = "RIGHT";
 			x = 4;
 		end
-		local summary = GetProgressText(data);
+		local summary = GetProgressTextForRow(data);
 		local specs = GetDataMember("ShowLootSpecializationRequirements") and data.specs;
 		if specs and #specs > 0 then
 			table.sort(specs);
@@ -6978,32 +6981,18 @@ local function RowOnEnter(self)
 		end
 		
 		-- Miscellaneous fields
-		if GetDataMember("ShowProgress") then
-			local style = GameTooltip:NumLines() < 1;
-			if style then
-				if reference.total and (reference.total > 1 or (reference.total > 0 and not reference.collectible)) then
-					GameTooltip:AddDoubleLine(self.Label:GetText(), GetProgressColorText(reference.progress, reference.total));
-				elseif reference.collectible then
-					GameTooltip:AddDoubleLine(self.Label:GetText(), GetCollectionText(reference.collected));
-				elseif reference.trackable then
-					GameTooltip:AddDoubleLine(self.Label:GetText(), GetCompletionText(reference.saved));
-				else
-					GameTooltip:AddDoubleLine(self.Label:GetText(), "---");
-				end
-				if reference.trackable then
-					GameTooltip:AddDoubleLine("Quest Progress", GetCompletionText(reference.saved));
-				end
+		if app.Settings:GetTooltipSetting("Progress") then
+			local right = (app.Settings:GetTooltipSetting("ShowIconOnly") and GetProgressTextForRow or GetProgressTextForTooltip)(reference);
+			if GameTooltip:NumLines() < 1 then
+				GameTooltip:AddDoubleLine(self.Label:GetText(), right);
 			else
-				if reference.total and (reference.total > 1 or (reference.total > 0 and not reference.collectible)) then
-					GameTooltipTextRight1:SetText(GetProgressColorText(reference.progress, reference.total));
-				elseif reference.collectible then
-					GameTooltipTextRight1:SetText(GetCollectionText(reference.collected));
-				elseif reference.trackable then
-					GameTooltipTextRight1:SetText(GetCompletionText(reference.saved));
-				elseif string.len(GameTooltipTextRight1:GetText() or "") < 1 then
-					GameTooltipTextRight1:SetText("---");
+				if right ~= "---" or string.len(GameTooltipTextRight1:GetText() or "") < 1 then
+					GameTooltipTextRight1:SetText(right);
 				end
 				GameTooltipTextRight1:Show();
+			end
+			if reference.trackable and reference.total and reference.total >= 2 then
+				GameTooltip:AddDoubleLine("Tracking Progress", GetCompletionText(reference.saved));
 			end
 		else
 			if GameTooltip:NumLines() < 1 then GameTooltip:AddLine(self.Label:GetText()); end
@@ -10563,12 +10552,9 @@ app.events.VARIABLES_LOADED = function()
 	GetDataMember("TreatAchievementsAsCollectible", true);
 	GetDataMember("TreatQuestsAsCollectible", false);
 	GetDataMember("ShowCompleteSourceLocations", true);
-	GetDataMember("EnableTooltipInformation", true);
-	GetDataMember("DisplayTooltipsInCombat", true);
 	GetDataMember("ShowSharedAppearances", true);
 	GetDataMember("ShowSources", true);
 	GetDataMember("ShowContents", true);
-	GetDataMember("ShowProgress", true);
 	GetDataMember("ShowDescriptions", true);
 	GetDataMember("ShowModels", true);
 	GetDataMember("AutoMainList", false);

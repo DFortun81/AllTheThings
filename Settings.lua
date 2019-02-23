@@ -62,7 +62,7 @@ settings.AUDIO_REMOVE_TABLE = {
 };
 
 -- Settings Class
-local SettingsBase = {
+local GeneralSettingsBase = {
 	__index = {
 		["AccountMode"] = false,
 		["Completionist"] = true,
@@ -101,6 +101,19 @@ local SettingsBase = {
 		["Show:CollectedThings"] = false,
 	},
 };
+local FilterSettingsBase = {
+	__index = {
+		
+	},
+};
+local TooltipSettingsBase = {
+	__index = {
+		["DisplayInCombat"] = true,
+		["Enabled"] = true,
+		["Progress"] = true,
+		["ShowIconOnly"] = false,
+	},
+};
 local OnClickForTab = function(self)
 	local id = self:GetID();
 	local parent = self:GetParent();
@@ -120,13 +133,19 @@ local OnClickForTab = function(self)
 end;
 settings.Initialize = function(self)
 	if not AllTheThingsSettings then AllTheThingsSettings = {}; end
+	if not AllTheThingsSettings.General then AllTheThingsSettings.General = {}; end
+	if not AllTheThingsSettings.Filters then AllTheThingsSettings.Filters = {}; end
+	if not AllTheThingsSettings.Tooltips then AllTheThingsSettings.Tooltips = {}; end
 	if not AllTheThingsSettingsPerCharacter then AllTheThingsSettingsPerCharacter = {}; end
-	setmetatable(AllTheThingsSettings, SettingsBase);
+	setmetatable(AllTheThingsSettings.General, GeneralSettingsBase);
+	setmetatable(AllTheThingsSettings.Filters, FilterSettingsBase);
+	setmetatable(AllTheThingsSettings.Tooltips, TooltipSettingsBase);
 	OnClickForTab(self.Tabs[1]);
-	self:UpdateFilters();
+	self:Refresh();
+	self:UpdateMode();
 end
 settings.Get = function(self, setting)
-	return AllTheThingsSettings[setting];
+	return AllTheThingsSettings.General[setting];
 end
 settings.GetModeString = function(self)
 	local mode = "Mode";
@@ -139,7 +158,7 @@ settings.GetModeString = function(self)
 	else
 		local things = {};
 		local thingCount = 0;
-		for key,_ in pairs(SettingsBase.__index) do
+		for key,_ in pairs(GeneralSettingsBase.__index) do
 			if string.sub(key, 1, 6) == "Thing:" then
 				if settings:Get(key) then
 					thingCount = thingCount + 1;
@@ -176,15 +195,23 @@ end
 settings.GetPersonal = function(self, setting)
 	return AllTheThingsSettingsPerCharacter[setting];
 end
+settings.GetTooltipSetting = function(self, setting)
+	return AllTheThingsSettings.Tooltips[setting];
+end
 settings.Set = function(self, setting, value)
-	AllTheThingsSettings[setting] = value;
-	print(setting, value);
+	AllTheThingsSettings.General[setting] = value;
+	self:Refresh();
+end
+settings.SetTooltipSetting = function(self, setting, value)
+	AllTheThingsSettings.Tooltips[setting] = value;
+	wipe(app.searchCache);
+	self:Refresh();
 end
 settings.SetPersonal = function(self, setting, value)
 	AllTheThingsSettingsPerCharacter[setting] = value;
+	self:Refresh();
 end
 settings.Refresh = function(self)
-	print("Refresh Settings");
 	for i,tab in ipairs(self.Tabs) do
 		if tab.OnRefresh then tab:OnRefresh(); end
 		for j,o in ipairs(tab.objects) do
@@ -268,7 +295,7 @@ end
 settings.SetCompletedThings = function(self, checked)
 	self:Set("Show:CompletedGroups", checked);
 	self:Set("Show:CollectedThings", checked);
-	self:UpdateFilters();
+	self:UpdateMode();
 	app:RefreshData();
 end
 settings.ToggleCompletedThings = function(self)
@@ -276,7 +303,7 @@ settings.ToggleCompletedThings = function(self)
 end
 settings.SetCompletedGroups = function(self, checked)
 	self:Set("Show:CompletedGroups", checked);
-	self:UpdateFilters();
+	self:UpdateMode();
 	app:RefreshData();
 end
 settings.ToggleCompletedGroups = function(self)
@@ -284,13 +311,13 @@ settings.ToggleCompletedGroups = function(self)
 end
 settings.SetCollectedThings = function(self, checked)
 	self:Set("Show:CollectedThings", checked);
-	self:UpdateFilters();
+	self:UpdateMode();
 	app:RefreshData();
 end
 settings.ToggleCollectedThings = function(self)
 	settings:SetCollectedThings(not self:Get("Show:CollectedThings", checked));
 end
-settings.UpdateFilters = function(self)
+settings.UpdateMode = function(self)
 	if self:Get("Completionist") then
 		app.ItemSourceFilter = app.FilterItemSource;
 		app.ActiveItemCollectionHelper = app.CompletionistItemCollectionHelper;
@@ -326,11 +353,6 @@ settings.UpdateFilters = function(self)
 	else
 		app.AchievementFilter = 13;
 	end
-	self:Refresh();
-end
-settings.UpdateMode = function(self)
-	app.print("Entering " .. self:GetModeString() .. "...");
-	self:UpdateFilters();
 end
 
 -- The ALL THE THINGS Epic Logo!
@@ -504,7 +526,7 @@ function(self)
 end,
 function(self)
 	settings:Set("Thing:Achievements", self:GetChecked());
-	settings:UpdateFilters();
+	settings:UpdateMode();
 	app:RefreshData();
 end);
 AchievementsCheckBox:SetATTTooltip("Enable this option to track achievements.");
@@ -523,7 +545,7 @@ function(self)
 end,
 function(self)
 	settings:Set("AccountWide:Achievements", self:GetChecked());
-	settings:UpdateFilters();
+	settings:UpdateMode();
 	app:RefreshData();
 end);
 AchievementsAccountWideCheckBox:SetATTTooltip("Achievement tracking is usually account wide, but there are a number of achievements exclusive to specific classes and races that you can't get on your main.");
@@ -542,7 +564,7 @@ function(self)
 end,
 function(self)
 	settings:SetCompletedGroups(self:GetChecked());
-	settings:UpdateFilters();
+	settings:UpdateMode();
 	app:RefreshData();
 end);
 ShowCompletedGroupsCheckBox:SetATTTooltip("Enable this option if you want to see completed groups as a header with a completion percentage. If a group has nothing relevant for your class, this setting will also make those groups appear in the listing.\n\nWe recommend you turn this setting off as it will conserve the space in the mini list and allow you to quickly see what you are missing from the zone.");
@@ -595,7 +617,7 @@ function(self)
 end,
 function(self)
 	settings:SetCollectedThings(self:GetChecked());
-	settings:UpdateFilters();
+	settings:UpdateMode();
 	app:RefreshData();
 end);
 ShowCollectedThingsCheckBox:SetATTTooltip("Enable this option if you want to see completed groups as a header with a completion percentage. If a group has nothing relevant for your class, this setting will also make those groups appear in the listing.\n\nWe recommend you turn this setting off as it will conserve the space in the mini list and allow you to quickly see what you are missing from the zone.");
@@ -614,7 +636,7 @@ function(self)
 end,
 function(self)
 	settings:Set("Thing:BattlePets", self:GetChecked());
-	settings:UpdateFilters();
+	settings:UpdateMode();
 	app:RefreshData();
 end);
 BattlePetsCheckBox:SetATTTooltip("Enable this option to track battle pets and companions. These can be found in the open world or via boss drops in various Dungeons and Raids as well as from Vendors and Reputation.\n\nTrack Account Wide by Default.");
@@ -644,7 +666,7 @@ function(self)
 end,
 function(self)
 	settings:Set("Thing:FlightPaths", self:GetChecked());
-	settings:UpdateFilters();
+	settings:UpdateMode();
 	app:RefreshData();
 end);
 FlightPathsCheckBox:SetATTTooltip("Enable this option to track flight paths and ferry stations.\n\nTo collect these, open the dialog with the flight / ferry master in each continent.\n\NOTE: Due to phasing technology, you may have to phase to the other versions of a zone to get credit for those points of interest.");
@@ -663,7 +685,7 @@ function(self)
 end,
 function(self)
 	settings:Set("AccountWide:FlightPaths", self:GetChecked());
-	settings:UpdateFilters();
+	settings:UpdateMode();
 	app:RefreshData();
 end);
 FlightPathsAccountWideCheckBox:SetATTTooltip("Flight Paths tracking is only really useful per character, but do you really want to collect them all on all 50 of your characters?");
@@ -682,7 +704,7 @@ function(self)
 end,
 function(self)
 	settings:Set("Thing:Followers", self:GetChecked());
-	settings:UpdateFilters();
+	settings:UpdateMode();
 	app:RefreshData();
 end);
 FollowersCheckBox:SetATTTooltip("Enable this option to track followers and champions.\n\nIE: Garrison Followers, Legion Class Hall Champions, and BFA Campaign Minions.");
@@ -701,7 +723,7 @@ function(self)
 end,
 function(self)
 	settings:Set("AccountWide:Followers", self:GetChecked());
-	settings:UpdateFilters();
+	settings:UpdateMode();
 	app:RefreshData();
 end);
 FollowersAccountWideCheckBox:SetATTTooltip("Followers are typically per character, but do you really want to have to collect 243 Garrison Inn Followers on one character at a rate of 1 per week?\n\nI think not, good sir.");
@@ -720,7 +742,7 @@ function(self)
 end,
 function(self)
 	settings:Set("Thing:Illusions", self:GetChecked());
-	settings:UpdateFilters();
+	settings:UpdateMode();
 	app:RefreshData();
 end);
 IllusionsCheckBox:SetATTTooltip("Enable this option to track illusions.\n\nThese are really cool looking transmog effects you can apply to your weapons!\n\nNOTE: You are not an Illusion despite what all the Nightborn think.");
@@ -739,7 +761,7 @@ function(self)
 end,
 function(self)
 	settings:Set("AccountWide:Illusions", self:GetChecked());
-	settings:UpdateFilters();
+	settings:UpdateMode();
 	app:RefreshData();
 end);
 IllusionsAccountWideCheckBox:SetATTTooltip("Class and Race-locked Illusions are not normally tracked account wide in Blizzard's database, but we can do that.");
@@ -758,7 +780,7 @@ function(self)
 end,
 function(self)
 	settings:Set("Thing:Mounts", self:GetChecked());
-	settings:UpdateFilters();
+	settings:UpdateMode();
 	app:RefreshData();
 end);
 MountsCheckBox:SetATTTooltip("Enable this option to track mounts.\n\nYou can ride these to go places faster than when running. Who knew!");
@@ -777,7 +799,7 @@ function(self)
 end,
 function(self)
 	settings:Set("AccountWide:Mounts", self:GetChecked());
-	settings:UpdateFilters();
+	settings:UpdateMode();
 	app:RefreshData();
 end);
 MountsAccountWideCheckBox:SetATTTooltip("Class and Race-locked Mounts are not normally tracked account wide in Blizzard's database, but we can do that.");
@@ -796,7 +818,7 @@ function(self)
 end,
 function(self)
 	settings:Set("Thing:MusicRolls", self:GetChecked());
-	settings:UpdateFilters();
+	settings:UpdateMode();
 	app:RefreshData();
 end);
 MusicRollsCheckBox:SetATTTooltip("Enable this option to track music rolls.\n\nYou can use your Jukebox Toy to play in-game music!");
@@ -815,7 +837,7 @@ function(self)
 end,
 function(self)
 	settings:Set("AccountWide:MusicRolls", self:GetChecked());
-	settings:UpdateFilters();
+	settings:UpdateMode();
 	app:RefreshData();
 end);
 MusicRollsAccountWideCheckBox:SetATTTooltip("Music Rolls are not normally tracked account wide in Blizzard's database, but we can do that.\n\nNOTE: You can only play Music Rolls using the Jukebox Toy that you have collected on your current character.");
@@ -834,7 +856,7 @@ function(self)
 end,
 function(self)
 	settings:Set("Thing:Quests", self:GetChecked());
-	settings:UpdateFilters();
+	settings:UpdateMode();
 	app:RefreshData();
 end);
 QuestsCheckBox:SetATTTooltip("Enable this option to track quests.\n\nYou can right click any quest in the lists to pop out their full quest chain to show your progress and any prerequisite or breadcrumb quests.\n\nNOTE: Quests are not permanently tracked due to the nature of how Daily, Weekly, Yearly, and World Quests are tracked in the Blizzard Database.");
@@ -848,7 +870,7 @@ function(self)
 end,
 function(self)
 	settings:Set("AccountWide:Quests", self:GetChecked());
-	settings:UpdateFilters();
+	settings:UpdateMode();
 	app:RefreshData();
 end);
 QuestsAccountWideCheckBox:SetPoint("TOPLEFT", QuestsCheckBox, "TOPLEFT", 220, 0);
@@ -866,7 +888,7 @@ function(self)
 end,
 function(self)
 	settings:Set("Thing:Recipes", self:GetChecked());
-	settings:UpdateFilters();
+	settings:UpdateMode();
 	app:RefreshData();
 end);
 RecipesCheckBox:SetATTTooltip("Enable this option to track recipes for your professions.\n\nNOTE: You must open your professions list in order to cache these.");
@@ -885,7 +907,7 @@ function(self)
 end,
 function(self)
 	settings:Set("AccountWide:Recipes", self:GetChecked());
-	settings:UpdateFilters();
+	settings:UpdateMode();
 	app:RefreshData();
 end);
 RecipesAccountWideCheckBox:SetATTTooltip("Recipes are not normally tracked account wide in Blizzard's database, but we can do that.\n\nIt is impossible to collect them all on one character, so with this, you can give your alts and their professions meaning.");
@@ -904,7 +926,7 @@ function(self)
 end,
 function(self)
 	settings:Set("Thing:Reputations", self:GetChecked());
-	settings:UpdateFilters();
+	settings:UpdateMode();
 	app:RefreshData();
 end);
 ReputationsCheckBox:SetATTTooltip("Enable this option to track reputations.\n\nOnce you reach Exalted or Best Friend with a reputation, it will be marked Collected.\n\nYou may have to do a manual refresh for this to update correctly.");
@@ -923,7 +945,7 @@ function(self)
 end,
 function(self)
 	settings:Set("AccountWide:Reputations", self:GetChecked());
-	settings:UpdateFilters();
+	settings:UpdateMode();
 	app:RefreshData();
 end);
 ReputationsAccountWideCheckBox:SetATTTooltip("Reputations are now tracked account wide in Blizzard's database for achievements, so turning this on may be a good idea.");
@@ -942,7 +964,7 @@ function(self)
 end,
 function(self)
 	settings:Set("Thing:SelfieFilters", self:GetChecked());
-	settings:UpdateFilters();
+	settings:UpdateMode();
 	app:RefreshData();
 end);
 SelfieFiltersCheckBox:SetATTTooltip("Enable this option to track selfie filters for S.E.L.F.I.E Camera Toy.\n\nOh joy! Selfies! Okay duuude.");
@@ -961,7 +983,7 @@ function(self)
 end,
 function(self)
 	settings:Set("AccountWide:SelfieFilters", self:GetChecked());
-	settings:UpdateFilters();
+	settings:UpdateMode();
 	app:RefreshData();
 end);
 SelfieFiltersAccountWideCheckBox:SetATTTooltip("Selfie Filters are not normally tracked account wide in Blizzard's database, but we can do that.\n\nNOTE: You have to snap a selfie with your S.E.L.F.I.E Camera Toy!");
@@ -980,7 +1002,7 @@ function(self)
 end,
 function(self)
 	settings:Set("Thing:Titles", self:GetChecked());
-	settings:UpdateFilters();
+	settings:UpdateMode();
 	app:RefreshData();
 end);
 TitlesCheckBox:SetATTTooltip("Enable this option to track titles.\n\nThese can make your character stand out and look like you've played for awhile. Typically only new players do not have a title active.");
@@ -999,7 +1021,7 @@ function(self)
 end,
 function(self)
 	settings:Set("AccountWide:Titles", self:GetChecked());
-	settings:UpdateFilters();
+	settings:UpdateMode();
 	app:RefreshData();
 end);
 TitlesAccountWideCheckBox:SetATTTooltip("Most titles are tracked account wide, but some prestigious titles in WoW are locked to the character that earned them.\n\nToggle this if you don't care about that and want to see those titles marked Collected for your alts.");
@@ -1018,7 +1040,7 @@ function(self)
 end,
 function(self)
 	settings:Set("Thing:Toys", self:GetChecked());
-	settings:UpdateFilters();
+	settings:UpdateMode();
 	app:RefreshData();
 end);
 ToysCheckBox:SetATTTooltip("Enable this option to track Toys.\n\nMost of these toys have a fun thing that they do. Others, like the Hearthstone Toys, can be used in place of your actual Hearthstone and can save you a bag slot! They also have interesting effects... Nice!\n\nTracked Account Wide by Default.");
@@ -1032,7 +1054,7 @@ function(self)
 end,
 function(self)
 	settings:Set("AccountWide:Toys", self:GetChecked());
-	settings:UpdateFilters();
+	settings:UpdateMode();
 	app:RefreshData();
 end);
 ToysAccountWideCheckBox:SetPoint("TOPLEFT", ToysCheckBox, "TOPLEFT", 220, 0);
@@ -1064,10 +1086,66 @@ end)();
 ------------------------------------------
 (function()
 local tab = settings:CreateTab("Tooltips");
-local tooltip = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-tooltip:SetPoint("TOPLEFT", line, "BOTTOMLEFT", 8, -8);
-tooltip:SetText("Show Tooltip");
-table.insert(settings.MostRecentTab.objects, tooltip);
+local TitlesCheckBox = settings:CreateCheckBox("|CFFADD8E6Enable Tooltip Information|r",
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("Enabled"));
+end,
+function(self)
+	settings:SetTooltipSetting("Enabled", self:GetChecked());
+end);
+TitlesCheckBox:SetATTTooltip("Enable this option if you want to see the information provided by ATT in external tooltips. This includes item links sent by other players, in the auction house, in the dungeon journal, in your bags, in the world, on NPCs, etc.\n\nIf you turn this feature off, you are seriously reducing your ability to quickly determine if you need to kill a mob or learn an appearance.\n\nWe recommend you keep this setting on.");
+TitlesCheckBox:SetPoint("TOPLEFT", line, "BOTTOMLEFT", 8, -8);
+
+local DisplayInCombatCheckBox = settings:CreateCheckBox("Display In Combat",
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("DisplayInCombat"));
+	if not settings:GetTooltipSetting("Enabled") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:SetTooltipSetting("DisplayInCombat", self:GetChecked());
+end);
+DisplayInCombatCheckBox:SetATTTooltip("Enable this option if you want to render tooltip information while you are in combat.\n\nIf you are raiding with your Mythic/Mythic+ Guild, you should probably turn this setting off to save as much performance as you can.\n\nIt can be useful while you are soloing old content to immediately know what you need from a boss.");
+DisplayInCombatCheckBox:SetPoint("TOPLEFT", TitlesCheckBox, "BOTTOMLEFT", 4, 4);
+
+local ShowCollectionProgressCheckBox = settings:CreateCheckBox("Show Collection Progress",
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("Progress"));
+	if not settings:GetTooltipSetting("Enabled") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:SetTooltipSetting("Progress", self:GetChecked());
+end);
+ShowCollectionProgressCheckBox:SetATTTooltip("Enable this option if you want to see your progress towards collecting a Thing or completing a group of Things at the Top Right of its tooltip.\n\nWe recommend that you keep this setting turned on.");
+ShowCollectionProgressCheckBox:SetPoint("TOPLEFT", DisplayInCombatCheckBox, "BOTTOMLEFT", -4, 6);
+
+local ShortenProgressCheckBox = settings:CreateCheckBox("Show Icon Only",
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("ShowIconOnly"));
+	if not settings:GetTooltipSetting("Enabled") or not settings:GetTooltipSetting("Progress") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:SetTooltipSetting("ShowIconOnly", self:GetChecked());
+end);
+ShortenProgressCheckBox:SetATTTooltip("Enable this option if you only want to see the icon in the topright corner instead of the icon and the collected/not collected text.\n\nSome people like smaller tooltips...");
+ShortenProgressCheckBox:SetPoint("TOPLEFT", ShowCollectionProgressCheckBox, "BOTTOMLEFT", 4, 4);
 end)();
 
 ------------------------------------------
