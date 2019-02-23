@@ -897,6 +897,18 @@ local inventorySlotsMap = {	-- Taken directly from CanIMogIt (Thanks!)
     ["INVTYPE_HOLDABLE"] = {17},
     ["INVTYPE_TABARD"] = {19},
 };
+local function BuildGroups(parent, g)
+	if g then
+		-- Iterate through the groups
+		for key, group in ipairs(g) do
+			-- Set the group's parent
+			group.parent = parent;
+			
+			-- Build the groups
+			BuildGroups(group, group.g);
+		end
+	end
+end
 local function BuildSourceText(group, l)
 	if group.parent then
 		if l < 1 then
@@ -935,6 +947,20 @@ local function BuildSourceTextForTSM(group, l)
 		end
 	end
 	return L["TITLE"];
+end
+local function ProcessGroup(data, object, indent, back)
+	if object.visible then
+		object.back = back;
+		object.indent = indent;
+		tinsert(data, object);
+		if object.g and object.expanded then
+			indent = indent + 1;
+			back = back * 0.5;
+			for j, group in ipairs(object.g) do
+				ProcessGroup(data, group, indent, back);
+			end
+		end
+	end
 end
 local function GetSourceID(itemLink, itemID)
     if IsDressableItem(itemLink) then
@@ -1431,13 +1457,22 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				end
 			end
 			
-			if not app.Settings:Get("AccountMode") and not app.Settings:Get("DebugMode") then
+			if not app.Settings:Get("DebugMode") then
 				local regroup = {};
-				for i,j in ipairs(group) do
-					if app.RecursiveClassAndRaceFilter(j) and app.RecursiveUnobtainableFilter(j) then
-						tinsert(regroup, j);
+				if app.Settings:Get("AccountMode") then
+					for i,j in ipairs(group) do
+						if app.RecursiveUnobtainableFilter(j) then
+							tinsert(regroup, j);
+						end
+					end
+				else
+					for i,j in ipairs(group) do
+						if app.RecursiveClassAndRaceFilter(j) and app.RecursiveUnobtainableFilter(j) then
+							tinsert(regroup, j);
+						end
 					end
 				end
+				
 				group = regroup;
 			end
 			
@@ -1711,7 +1746,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					end
 				end
 			end
-			if (#temp < 1 and not (paramA == "creatureID" or paramA == "encounterID")) or (not GetDataMember("OnlyShowRelevantDatabaseLocations") or (app.Settings:Get("AccountMode") or app.Settings:Get("DebugMode"))) then
+			if (#temp < 1 and not (paramA == "creatureID" or paramA == "encounterID")) or (not GetDataMember("OnlyShowRelevantDatabaseLocations") or app.Settings:Get("DebugMode")) then
 				for i,j in ipairs(unfiltered) do
 					tinsert(temp, j);
 				end
@@ -2282,7 +2317,7 @@ local function OpenMiniListForCurrentProfession(manual, refresh)
 					for i,group in ipairs(app.Categories.Professions) do
 						if group.requireSkill == tradeSkillID then
 							popout.data = setmetatable({ ['visible'] = true, total = 0, progress = 0 }, { __index = group });
-							app.BuildGroups(popout.data, popout.data.g);
+							BuildGroups(popout.data, popout.data.g);
 							app.UpdateGroups(popout.data, popout.data.g);
 							if not popout.data.expanded then
 								popout.data.expanded = true;
@@ -5306,12 +5341,11 @@ end
 function app.FilterItemClass(item)
 	-- If the item is Bind on Equip, return Visible.
 	if app.ItemBindFilter(item) then return true; end
-	return app.FilterItemClass_RequireItemFilter(item.f)
+	return app.ItemTypeFilter(item.f)
 			and app.RequireBindingFilter(item)
 			and app.ClassRequirementFilter(item)
 			and app.RaceRequirementFilter(item)
 			and app.UnobtainableItemFilter(item.u)
-		        and app.SeasonalFilter(item.u)
 			and app.PersonalLootFilter(item)
 			and app.RequiredSkillFilter(item.requireSkill);
 end
@@ -5341,18 +5375,11 @@ function app.FilterItemClass_RequireRaces(item)
 	return not item.nmr;
 end
 function app.FilterItemClass_UnobtainableItem(u)
-	if u and L["UNOBTAINABLE_ITEM_REASONS"][u][1] < 5 then
+	if u then
 	   return GetDataSubMember("UnobtainableItemFilters", u);
 	else
 		return true;
 	end
-end
-function app.FilterItemClass_SeasonalItem(u)
-   if u and L["UNOBTAINABLE_ITEM_REASONS"][u][1] > 4 then
-      return GetDataSubMember("SeasonalFilters", u);
-   else
-      return true
-   end
 end
 function app.FilterItemClass_RequireBinding(item)
 	if item.b and item.b == 2 then
@@ -5540,6 +5567,7 @@ app.GroupRequirementsFilter = app.NoFilter;
 app.GroupVisibilityFilter = app.NoFilter;
 app.ItemBindFilter = app.FilterItemBind;
 app.ItemSourceFilter = app.FilterItemSource;
+app.ItemTypeFilter = app.NoFilter;
 app.CollectedItemVisibilityFilter = app.NoFilter;
 app.MissingItemVisibilityFilter = app.NoFilter;
 app.PersonalLootFilter = app.NoFilter;
@@ -5547,7 +5575,6 @@ app.ClassRequirementFilter = app.NoFilter;
 app.RaceRequirementFilter = app.NoFilter;
 app.RequireBindingFilter = app.NoFilter;
 app.UnobtainableItemFilter = app.NoFilter;
-app.SeasonalFilter = app.NoFilter;
 app.RequiredSkillFilter = app.NoFilter;
 app.ShowIncompleteQuests = app.Filter;
 app.AutomateTomTomWaypoints = app.NoFilter;
@@ -5562,7 +5589,7 @@ app.RecursiveClassAndRaceFilter = function(group)
 	return false;
 end
 app.RecursiveUnobtainableFilter = function(group)
-	if app.UnobtainableItemFilter(group.u) and app.SeasonalFilter(group.u) then
+	if app.UnobtainableItemFilter(group.u) then
 		if group.parent then return app.RecursiveUnobtainableFilter(group.parent); end
 		return true;
 	end
@@ -5583,34 +5610,6 @@ end
 
 -- Processing Functions (Coroutines)
 local UpdateGroup, UpdateGroups;
-local function BuildGroups(parent, g)
-	if g then
-		-- Iterate through the groups
-		for key, group in ipairs(g) do
-			-- Set the group's parent
-			group.parent = parent;
-			
-			-- Build the groups
-			BuildGroups(group, group.g);
-		end
-	end
-end
-app.BuildGroups = BuildGroups
-
-local function ProcessGroup(data, object, indent, back)
-	if object.visible then
-		object.back = back;
-		object.indent = indent;
-		tinsert(data, object);
-		if object.g and object.expanded then
-			indent = indent + 1;
-			back = back * 0.5;
-			for j, group in ipairs(object.g) do
-				ProcessGroup(data, group, indent, back);
-			end
-		end
-	end
-end
 UpdateGroup = function(parent, group)
 	-- Determine if this user can enter the instance or acquire the item.
 	if app.GroupRequirementsFilter(group) then
@@ -10489,26 +10488,7 @@ app.events.VARIABLES_LOADED = function()
 		app.Minimap = app.CreateMinimapButton(); -- NOTE: Create this if they turn it on.
 		app.Minimap:Show();
 	end
-	if GetDataMember("FilterItemsByClass", true) then
-		app.ClassRequirementFilter = app.FilterItemClass_RequireClasses;
-	else
-		app.ClassRequirementFilter = app.NoFilter;
-	end
-	if GetDataMember("FilterItemsByRace", true) then
-		app.RaceRequirementFilter = app.FilterItemClass_RequireRaces;
-	else
-		app.RaceRequirementFilter = app.NoFilter;
-	end
-	if GetDataMember("FilterUnobtainableItems", true) then
-		app.UnobtainableItemFilter = app.FilterItemClass_UnobtainableItem;
-	else
-		app.UnobtainableItemFilter = app.NoFilter;
-	end
-	if GetDataMember("FilterSeasonal", true) then
-	   app.SeasonalFilter = app.FilterItemClass_SeasonalItem
-	else
-	   app.SeasonalFilter = app.NoFilter
-	end
+	
 	if GetDataMember("AutomateTomTomWaypoints", false) then
 		app.AutomateTomTomWaypoints = app.NoFilter
 	else
@@ -10519,21 +10499,7 @@ app.events.VARIABLES_LOADED = function()
 	else
 		app.TomTomIgnoreCompletedObjects = app.NoFilter
 	end
-	if GetDataMember("RequireBindingFilter", false) then
-		app.RequireBindingFilter = app.FilterItemClass_RequireBinding;
-	else
-		app.RequireBindingFilter = app.NoFilter;
-	end
-	if GetDataMember("RequirePersonalLootFilter", false) then
-		app.PersonalLootFilter = app.FilterItemClass_RequirePersonalLoot;
-	else
-		app.PersonalLootFilter = app.NoFilter;
-	end
-	if GetDataMember("RequiredSkillFilter", true) then
-		app.RequiredSkillFilter = app.FilterItemClass_RequiredSkill;
-	else
-		app.RequiredSkillFilter = app.NoFilter;
-	end
+	
 	if GetDataMember("TrackRecipesAccountWide", true) then
 		app.RecipeChecker = GetDataSubMember;
 	else

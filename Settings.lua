@@ -333,10 +333,29 @@ settings.UpdateMode = function(self)
 			app.ActiveItemRemovalHelper = app.UniqueModeItemRemovalHelper;
 		end
 	end
-	if self:Get("AccountMode") or self:Get("DebugMode") then
+	if self:Get("DebugMode") then
 		app.GroupFilter = app.NoFilter;
+		app.UnobtainableItemFilter = app.NoFilter;
 	else
 		app.GroupFilter = app.FilterItemClass;
+		app.UnobtainableItemFilter = app.FilterItemClass_UnobtainableItem;
+	end
+	
+	if self:Get("AccountMode") then
+		app.ItemTypeFilter = app.NoFilter;
+	else
+		app.ItemTypeFilter = app.FilterItemClass_RequireItemFilter;
+	end
+	
+	if app.GetDataMember("FilterItemsByClass", true) and not self:Get("AccountMode") then
+		app.ClassRequirementFilter = app.FilterItemClass_RequireClasses;
+	else
+		app.ClassRequirementFilter = app.NoFilter;
+	end
+	if app.GetDataMember("FilterItemsByRace", true) and not self:Get("AccountMode") then
+		app.RaceRequirementFilter = app.FilterItemClass_RequireRaces;
+	else
+		app.RaceRequirementFilter = app.NoFilter;
 	end
 	if self:Get("Show:CompletedGroups") or self:Get("DebugMode") then
 		app.GroupVisibilityFilter = app.NoFilter;
@@ -353,6 +372,25 @@ settings.UpdateMode = function(self)
 	else
 		app.AchievementFilter = 13;
 	end
+	
+	
+	
+	if app.GetDataMember("RequireBindingFilter", false) then
+		app.RequireBindingFilter = app.FilterItemClass_RequireBinding;
+	else
+		app.RequireBindingFilter = app.NoFilter;
+	end
+	if app.GetDataMember("RequirePersonalLootFilter", false) then
+		app.PersonalLootFilter = app.FilterItemClass_RequirePersonalLoot;
+	else
+		app.PersonalLootFilter = app.NoFilter;
+	end
+	if app.GetDataMember("RequiredSkillFilter", true) then
+		app.RequiredSkillFilter = app.FilterItemClass_RequiredSkill;
+	else
+		app.RequiredSkillFilter = app.NoFilter;
+	end
+	
 end
 
 -- The ALL THE THINGS Epic Logo!
