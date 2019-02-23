@@ -84,11 +84,9 @@ _.Zones =
 								i(128475),	-- Empowered Augment Rune
 								i(128251, {	-- Equipment Blueprint: Tuskarr Fishing Net
 									["questID"] = 39359, -- Equipment Blueprint: Tuskarr Fishing Net
-									-- ["collectible"] = true,
 								}),
 								i(128489, { -- Equipment Blueprint: Unsinkable
 									["questID"] = 39358, -- Equipment Blueprint: Unsinkable
-									-- ["collectible"] = true,
 								}),
 								i(128471),	-- Frostwolf Grint's Battlegear
 								i(127269, { -- Ship Blueprint: Battleship
@@ -124,11 +122,9 @@ _.Zones =
 								i(128482),	-- Empowered Augment Rune
 								i(128491, {	-- Equipment Blueprint: Tuskarr Fishing Net
 									["questID"] = 39359, -- Equipment Blueprint: Tuskarr Fishing Net
-									-- ["collectible"] = true,
 								}),
 								i(128250, { -- Equipment Blueprint: Unsinkable
 									["questID"] = 39358, -- Equipment Blueprint: Unsinkable
-									-- ["collectible"] = true,
 								}),
 								i(128462),	-- Karabor Councilor's Attire
 								i(128473, {	-- Packaged Ceremonial Karabor Finery

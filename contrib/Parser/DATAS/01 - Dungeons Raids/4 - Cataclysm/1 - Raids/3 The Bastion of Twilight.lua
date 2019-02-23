@@ -18,7 +18,6 @@ _.Instances =
 								["questID"] = 49764,	-- Completed
 								["f"] = 60,				-- S.E.L.F.I.E. Camera Filter
 								["icon"] = "Interface\\Icons\\spell_shadow_twilight",
-								["collectible"] = true,
 								["description"] = "In order to collect this you will need to take a picture with Cho'gall.  Once you have done this it should check off.  If it doesn't hit \"M\", \"L\" or relog.  These are PER character and not account wide.",
 								["crs"] = {
 									43324,	-- Cho'gall

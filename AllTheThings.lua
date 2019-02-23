@@ -3084,13 +3084,8 @@ app.BaseAchievement = {
 			return GetAchievementLink(t.achievementID);
 		elseif key == "icon" then
 			return select(10, GetAchievementInfo(t.achievementID));
-		-- NOTE: Might want to keep this commented out as the main headers for containers will have checkmarks.
-		--elseif key == "trackable" then
-		--	return true;
-		--elseif key == "saved" then
-		--	return select(4, GetAchievementInfo(t.achievementID));
 		elseif key == "collectible" then
-			return GetDataMember("TreatAchievementsAsCollectible");
+			return app.Settings:Get("Thing:Achievements");
 		elseif key == "collected" then
 			return select(app.AchievementFilter, GetAchievementInfo(t.achievementID));
 		else
@@ -3173,7 +3168,7 @@ app.BaseAchievementCriteria = {
 		elseif key == "trackable" then
 			return true;
 		elseif key == "collectible" then
-			return GetDataMember("TreatAchievementsAsCollectible");
+			return app.Settings:Get("Thing:Achievements");
 		elseif key == "saved" or key == "collected" then
 			if select(app.AchievementFilter, GetAchievementInfo(t.achievementID)) then
 				return true;
@@ -3233,7 +3228,7 @@ app.BaseArtifact = {
 		if key == "key" then
 			return "artifactID";
 		elseif key == "collectible" then
-			return true;
+			return app.Settings:Get("Thing:Transmog");
 		elseif key == "collected" then
 			if GetDataSubMember("CollectedArtifacts", t.artifactID) then return true; end
 			if not GetRelativeField(t, "nmc", true) and select(5, C_ArtifactUI_GetAppearanceInfoByID(t.artifactID)) then
@@ -3587,7 +3582,7 @@ app.BaseFaction = {
 		elseif key == "f" then
 			return 112;
 		elseif key == "trackable" or key == "collectible" then
-			return app.GetDataMember("FactionsCollectible");
+			return app.Settings:Get("Thing:Reputations");
 		elseif key == "saved" or key == "collected" then
 			if app.GetDataMember("TrackFactionsAccountWide") then
 				if GetDataSubMember("CollectedFactions", t.factionID) then return 1; end
@@ -3710,7 +3705,7 @@ end
 			if key == "key" then
 				return "flightPathID";
 			elseif key == "collectible" then
-				return GetDataMember("FlightPathsCollectible");
+				return app.Settings:Get("Thing:FlightPaths")
 			elseif key == "collected" then
 				if GetDataMember("FlightPathsAccountWide")then
 					return GetDataSubMember("FlightPaths", t.flightPathID);
@@ -3776,7 +3771,7 @@ app.BaseFollower = {
 		if key == "key" then
 			return "followerID";
 		elseif key == "collectible" then
-			return app.GetDataMember("FollowersCollectible");
+			return app.Settings:Get("Thing:Followers");
 		elseif key == "collected" then
 			if app.GetDataMember("TrackFollowersAccountWide") then
 				if GetDataSubMember("CollectedFollowers", t.followerID) then return 1; end
@@ -3846,7 +3841,7 @@ app.BaseGarrisonBuilding = {
 		elseif key == "description" then
 			return select(5, C_Garrison.GetBuildingInfo(t.buildingID));
 		elseif key == "collectible" then
-			return t.itemID and app.GetDataMember("BuildingsCollectible");
+			return t.itemID and app.Settings:Get("Thing:Recipes");
 		elseif key == "collected" then
 			if app.GetDataMember("TrackBuildingsAccountWide") then
 				if GetDataSubMember("CollectedBuildings", t.buildingID) then return 1; end
@@ -3927,8 +3922,8 @@ app.BaseHeirloom = {
 		if key == "key" then
 			return "itemID";
 		elseif key == "collectible" then
-			if t.factionID then return app.GetDataMember("FactionsCollectible"); end
-			return true;
+			if t.factionID then return app.Settings:Get("Thing:Reputations"); end
+			return app.Settings:Get("Thing:Transmog");
 		elseif key == "collected" then
 			if C_Heirloom.PlayerHasHeirloom(t.itemID) or (t.s and t.s > 0 and GetDataSubMember("CollectedSources", t.s)) then return 1; end
 			if t.factionID then
@@ -4080,7 +4075,7 @@ app.BaseIllusion = {
 		if key == "key" then
 			return "illusionID";
 		elseif key == "collectible" then
-			return true;
+			return app.Settings:Get("Thing:Illusions");
 		elseif key == "collected" then
 			return GetDataSubMember("CollectedIllusions", t.illusionID);
 		elseif key == "f" then
@@ -4300,7 +4295,7 @@ app.BaseItem = {
 		if key == "key" then
 			return "itemID";
 		elseif key == "collectible" then
-			return t.s or (t.questID and not t.repeatable and not t.isBreadcrumb and GetDataMember("TreatQuestsAsCollectible")) or t.factionID;
+			return (t.s and app.Settings:Get("Thing:Transmog")) or (t.questID and not t.repeatable and not t.isBreadcrumb and app.Settings:Get("Thing:Quests")) or (t.factionID and app.Settings:Get("Thing:Reputations"));
 		elseif key == "collected" then
 			if t.s and t.s ~= 0 and GetDataSubMember("CollectedSources", t.s) then
 				return 1;
@@ -4414,7 +4409,7 @@ app.BaseItemSource = {
 		if key == "key" then
 			return "s";
 		elseif key == "collectible" then
-			return true;
+			return app.Settings:Get("Thing:Transmog");
 		elseif key == "collected" then
 			return GetDataSubMember("CollectedSources", t.s);
 		elseif key == "text" then
@@ -4524,7 +4519,7 @@ app.BaseMount = {
 		if key == "key" then
 			return "spellID";
 		elseif key == "collectible" then
-			return true;
+			return app.Settings:Get("Thing:Mounts");
 		elseif key == "collected" then
 			if app.RecipeChecker("CollectedSpells", t.spellID) then return 1; end
 			if IsSpellKnown(t.spellID) or (t.questID and IsQuestFlaggedCompleted(t.questID) or IsQuestFlaggedCompleted(t.altQuestID)) then
@@ -4609,7 +4604,7 @@ app.BaseMusicRoll = {
 		if key == "key" then
 			return "questID";
 		elseif key == "collectible" or key == "trackable" then
-			return completed;
+			return completed and app.Settings:Get("Thing:MusicRoll");
 		elseif key == "collected" or key == "saved" then
 			if app.GetDataMember("TrackMusicRollsAccountWide") then
 				if GetDataSubMember("CollectedMusicRolls", t.questID) then
@@ -4689,7 +4684,7 @@ app.BaseNPC = {
 		elseif key == "trackable" then
 			return t.questID;
 		elseif key == "collectible" then
-			return t.questID and not t.repeatable and not t.isBreadcrumb and GetDataMember("TreatQuestsAsCollectible");
+			return (t.questID and not t.repeatable and not t.isBreadcrumb and app.Settings:Get("Thing:Quests")) or (t.f == 60 and app.Settings:Get("Thing:SelfieFilters"));
 		elseif key == "saved" then
 			return IsQuestFlaggedCompleted(t.questID) or IsQuestFlaggedCompleted(t.altQuestID);
 		elseif key == "collected" then
@@ -4720,7 +4715,7 @@ app.BaseObject = {
 		elseif key == "icon" then
 			return L["OBJECT_ID_ICONS"][t.objectID] or "Interface\\Icons\\INV_Misc_Bag_10";
 		elseif key == "collectible" then
-			return t.questID and not t.repeatable and not t.isBreadcrumb and GetDataMember("TreatQuestsAsCollectible");
+			return (t.questID and not t.repeatable and not t.isBreadcrumb and app.Settings:Get("Thing:Quests")) or (t.f == 60 and app.Settings:Get("Thing:SelfieFilters"));
 		elseif key == "collected" then
 			return t.saved;
 		elseif key == "trackable" then
@@ -4863,7 +4858,7 @@ app.BaseQuest = {
 		elseif key == "trackable" then
 			return true;
 		elseif key == "collectible" then
-			return not t.repeatable and not t.isBreadcrumb and GetDataMember("TreatQuestsAsCollectible");
+			return (not t.repeatable and not t.isBreadcrumb and app.Settings:Get("Thing:Quests")) or (t.f == 60 and app.Settings:Get("Thing:SelfieFilters"));
 		elseif key == "collected" then
 			return t.saved;
 		elseif key == "repeatable" then
@@ -4910,7 +4905,7 @@ app.BaseRecipe = {
 			end
 			return select(1, GetSpellLink(t.spellID));
 		elseif key == "collectible" then
-			return true;
+			return app.Settings:Get("Thing:Recipes");
 		elseif key == "collected" then
 			if app.RecipeChecker("CollectedSpells", t.spellID) then
 				return 1;
@@ -4994,7 +4989,7 @@ app.BaseSpecies = {
 		if key == "key" then
 			return "speciesID";
 		elseif key == "collectible" then
-			return true;
+			return app.Settings:Get("Thing:BattlePets");
 		elseif key == "collected" then
 			if select(1, C_PetJournal.GetNumCollectedInfo(t.speciesID)) > 0 then
 				return 1;
@@ -5156,7 +5151,7 @@ app.BaseTitle = {
 			
 			return 1;	-- Player Name First
 		elseif key == "collectible" then
-			return true;
+			return app.Settings:Get("Thing:Titles");
 		elseif key == "trackable" then
 			return true;
 		elseif key == "saved" or key == "collected" then
@@ -5181,7 +5176,7 @@ app.BaseToy = {
 		if key == "key" then
 			return "itemID";
 		elseif key == "collectible" then
-			return true;
+			return app.Settings:Get("Thing:Toys");
 		elseif key == "collected" then
 			return GetDataSubMember("CollectedToys", t.itemID);
 		elseif key == "f" then
@@ -5303,7 +5298,7 @@ app.BaseVignette = {
 		elseif key == "icon" then
 			return "Interface\\Icons\\INV_Misc_Head_Dragon_Black";
 		elseif key == "collectible" then
-			return not t.repeatable and GetDataMember("TreatQuestsAsCollectible");
+			return not t.repeatable and app.Settings:Get("Thing:Quests");
 		elseif key == "collected" then
 			return t.collectible and t.saved;
 		elseif key == "repeatable" then
@@ -6073,7 +6068,7 @@ function app.QuestCompletionHelper(questID)
 	local searchResults = SearchForField("questID", questID);
 	if searchResults and #searchResults > 0 then
 		-- Only increase progress for Quests as Collectible users.
-		if GetDataMember("TreatQuestsAsCollectible") then
+		if app.Settings:Get("Thing:Quests") then
 			-- Attempt to cleanly refresh the data.
 			for i,result in ipairs(searchResults) do
 				if result.visible and result.parent and result.parent.total then
@@ -10506,8 +10501,6 @@ app.events.VARIABLES_LOADED = function()
 	GetDataMember("OnlyShowRelevantDatabaseLocations", true);
 	GetDataMember("OnlyShowRelevantSharedAppearances", false);
 	GetDataMember("ShowLootSpecializationRequirements", true);
-	GetDataMember("TreatAchievementsAsCollectible", true);
-	GetDataMember("TreatQuestsAsCollectible", false);
 	GetDataMember("ShowCompleteSourceLocations", true);
 	GetDataMember("ShowSharedAppearances", true);
 	GetDataMember("ShowSources", true);

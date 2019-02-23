@@ -519,7 +519,7 @@ end,
 function(self)
 	settings:SetAccountMode(self:GetChecked());
 end);
-AccountModeCheckBox:SetATTTooltip("Turn this setting on if you want all of the appearances for all of your characters regardless of class and race filters.\n\nUnobtainable filters still apply.");
+AccountModeCheckBox:SetATTTooltip("Turn this setting on if you want to track all of the Things for all of your characters regardless of class and race filters.\n\nUnobtainable filters still apply.");
 AccountModeCheckBox:SetPoint("TOPLEFT", MainOnlyModeCheckBox, "BOTTOMLEFT", -5, 4);
 
 local InsaneModeCheckBox = settings:CreateCheckBox("|CFFAAA8E6Insane Mode|r (All Things)",
@@ -575,7 +575,7 @@ AchievementsCheckBox:SetPoint("TOPLEFT", ThingsLabel, "BOTTOMLEFT", 0, -8);
 local AchievementsAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
 function(self)
 	self:SetChecked(settings:Get("AccountWide:Achievements"));
-	if settings:Get("InsaneMode") or settings:Get("DebugMode") then
+	if settings:Get("InsaneMode") or settings:Get("DebugMode") or not settings:Get("Thing:Achievements") then
 		self:Disable();
 		self:SetAlpha(0.2);
 	else
@@ -715,7 +715,7 @@ FlightPathsCheckBox:SetPoint("TOPLEFT", BattlePetsCheckBox, "BOTTOMLEFT", 0, 4);
 local FlightPathsAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
 function(self)
 	self:SetChecked(settings:Get("AccountWide:FlightPaths"));
-	if settings:Get("InsaneMode") or settings:Get("DebugMode") then
+	if settings:Get("InsaneMode") or settings:Get("DebugMode") or not settings:Get("Thing:FlightPaths") then
 		self:Disable();
 		self:SetAlpha(0.2);
 	else
@@ -753,7 +753,7 @@ FollowersCheckBox:SetPoint("TOPLEFT", FlightPathsCheckBox, "BOTTOMLEFT", 0, 4);
 local FollowersAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
 function(self)
 	self:SetChecked(settings:Get("AccountWide:Followers"));
-	if settings:Get("InsaneMode") or settings:Get("DebugMode") then
+	if settings:Get("InsaneMode") or settings:Get("DebugMode") or not settings:Get("Thing:Followers") then
 		self:Disable();
 		self:SetAlpha(0.2);
 	else
@@ -791,7 +791,7 @@ IllusionsCheckBox:SetPoint("TOPLEFT", FollowersCheckBox, "BOTTOMLEFT", 0, 4);
 local IllusionsAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
 function(self)
 	self:SetChecked(settings:Get("AccountWide:Illusions"));
-	if settings:Get("InsaneMode") or settings:Get("DebugMode") then
+	if settings:Get("InsaneMode") or settings:Get("DebugMode") or not settings:Get("Thing:Illusions") then
 		self:Disable();
 		self:SetAlpha(0.2);
 	else
@@ -829,7 +829,7 @@ MountsCheckBox:SetPoint("TOPLEFT", IllusionsCheckBox, "BOTTOMLEFT", 0, 4);
 local MountsAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
 function(self)
 	self:SetChecked(settings:Get("AccountWide:Mounts"));
-	if settings:Get("InsaneMode") or settings:Get("DebugMode") then
+	if settings:Get("InsaneMode") or settings:Get("DebugMode") or not settings:Get("Thing:Mounts") then
 		self:Disable();
 		self:SetAlpha(0.2);
 	else
@@ -867,7 +867,7 @@ MusicRollsCheckBox:SetPoint("TOPLEFT", MountsCheckBox, "BOTTOMLEFT", 0, 4);
 local MusicRollsAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
 function(self)
 	self:SetChecked(settings:Get("AccountWide:MusicRolls"));
-	if settings:Get("InsaneMode") or settings:Get("DebugMode") then
+	if settings:Get("InsaneMode") or settings:Get("DebugMode") or not settings:Get("Thing:MusicRolls") then
 		self:Disable();
 		self:SetAlpha(0.2);
 	else
@@ -937,7 +937,7 @@ RecipesCheckBox:SetPoint("TOPLEFT", QuestsCheckBox, "BOTTOMLEFT", 0, 4);
 local RecipesAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
 function(self)
 	self:SetChecked(settings:Get("AccountWide:Recipes"));
-	if settings:Get("InsaneMode") or settings:Get("DebugMode") then
+	if settings:Get("InsaneMode") or settings:Get("DebugMode") or not settings:Get("Thing:Recipes") then
 		self:Disable();
 		self:SetAlpha(0.2);
 	else
@@ -975,7 +975,7 @@ ReputationsCheckBox:SetPoint("TOPLEFT", RecipesCheckBox, "BOTTOMLEFT", 0, 4);
 local ReputationsAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
 function(self)
 	self:SetChecked(settings:Get("AccountWide:Reputations"));
-	if settings:Get("InsaneMode") or settings:Get("DebugMode") then
+	if settings:Get("InsaneMode") or settings:Get("DebugMode") or not settings:Get("Thing:Reputations") then
 		self:Disable();
 		self:SetAlpha(0.2);
 	else
@@ -1013,7 +1013,7 @@ SelfieFiltersCheckBox:SetPoint("TOPLEFT", ReputationsCheckBox, "BOTTOMLEFT", 0, 
 local SelfieFiltersAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
 function(self)
 	self:SetChecked(settings:Get("AccountWide:SelfieFilters"));
-	if settings:Get("InsaneMode") or settings:Get("DebugMode") then
+	if settings:Get("InsaneMode") or settings:Get("DebugMode") or not settings:Get("Thing:SelfieFilters") then
 		self:Disable();
 		self:SetAlpha(0.2);
 	else
@@ -1051,7 +1051,7 @@ TitlesCheckBox:SetPoint("TOPLEFT", SelfieFiltersCheckBox, "BOTTOMLEFT", 0, 4);
 local TitlesAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
 function(self)
 	self:SetChecked(settings:Get("AccountWide:Titles"));
-	if settings:Get("InsaneMode") or settings:Get("DebugMode") then
+	if settings:Get("InsaneMode") or settings:Get("DebugMode") or not settings:Get("Thing:Titles") then
 		self:Disable();
 		self:SetAlpha(0.2);
 	else

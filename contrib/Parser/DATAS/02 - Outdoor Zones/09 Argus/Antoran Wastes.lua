@@ -645,7 +645,6 @@ _.Zones =
 					{	-- Smashed Portal Generator
 						["questID"] = 49007,	-- Commander on Deck!
 						["itemID"] = 152890,	-- Smashed Portal Generator
-						["collectible"] = true,
 						["crs"] = {
 							127598,	-- Immortal Netherwalker
 							126244,	-- Immortal Netherwalker
