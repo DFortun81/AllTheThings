@@ -14,6 +14,7 @@ _.Instances =
 					{ 38.81, 02.53, 1165 },
 				},
 				["maps"] = {
+					1348,	-- Zandalari Treasury
 					1352,	-- Port of Zandalar			//
 					1357,	-- The Zocalo
 					1353,	-- Halls of Opulence

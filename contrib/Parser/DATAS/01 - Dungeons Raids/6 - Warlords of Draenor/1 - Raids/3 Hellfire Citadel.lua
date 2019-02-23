@@ -9,6 +9,97 @@ _.Instances =
 		["groups"] = {
 			inst(669, { 	-- Hellfire Citadel
 				["groups"] = {
+					n(-4, {		-- Achievements
+						ach(10149, { -- Glory of the Hellfire Raider
+							["g"] = {
+								i(127140), -- Infernal Direwolf
+								{	-- Nearly Indestructible
+									["achievementID"] = 10026,
+									["crs"] = {
+										95068,	-- Hellfire Assault
+									},
+								},
+								{	-- Turning the Tide
+									["achievementID"] = 10057,
+									["crs"] = {
+										90284,	-- Iron Reaver
+									},
+								},
+								{	-- Waves Came Crashing Down All Around
+									["achievementID"] = 10013,
+									["crs"] = {
+										90435,	-- Kormrok
+									},
+								},
+								{	-- Don't Fear the Reaper
+									["achievementID"] = 10054,
+									["crs"] = {
+										-- Hellfire High Council
+										92142,	-- Blademaster Jubei'thos
+										92144,	-- Dia Darkwhisper
+										92146,	-- Gurtogg Bloodboil
+									},
+								},
+								{	-- A Race Against Slime
+									["g"] = {
+										follower(474), -- Ariok
+									},
+									["achievementID"] = 9972,
+									["crs"] = {
+										90378,	-- Kilrogg
+									},
+								},
+								{	-- Get In My Belly!
+									["achievementID"] = 9979,
+									["crs"] = {
+										91809,	-- Gorefiend
+									},
+								},
+								{	-- Pro Toss
+									["achievementID"] = 9988,
+									["crs"] = {
+										90316,	-- Shadow-Lord Iskar
+									},
+								},
+								{	-- I'm a Soul Man
+									["achievementID"] = 10086,
+									["crs"] = {
+										92330,	-- Socrethar
+									},
+								},
+								{	-- This Land Was Green and Good Until...
+									["achievementID"] = 10012,
+									["crs"] = {
+										89890,	-- Fel Lord Zakuun
+									},
+								},
+								{	-- You Gotta Keep 'em Separated
+									["achievementID"] = 10087,
+									["crs"] = {
+										93068,	-- Xhul'horac
+									},
+								},
+								{	-- Non-Lethal Enforcer
+									["achievementID"] = 9989,
+									["crs"] = {
+										90269,	-- Tyrant Velhari
+									},
+								},
+								{	-- Bad Manner(oth)
+									["achievementID"] = 10030,
+									["crs"] = {
+										91349,	-- Mannoroth
+									},
+								},
+								{	-- Echoes of Doomfire
+									["achievementID"] = 10073,
+									["crs"] = {
+										91331,	-- Archimonde
+									},
+								},
+							},
+						}),
+					}),
 					d(17, {		-- LFR
 						n(0, {	-- Zone Drop
 							un(40, i(127115, {	-- Tome of Chaos
