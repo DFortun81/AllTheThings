@@ -340,12 +340,12 @@ _.GearSets =
 			un(4, i(124637)),	-- Sanctus, Sigil of the Unbroken
 			un(4, i(124638)),	-- Etheralus, the Eternal Reward
 			-- Mists of Pandaria
-			un(4, i(102248)), -- Fen-Yu, Fury of Xuen
-			un(4, i(102249)), -- Gon-Lu, Strength of Xuen
-			un(4, i(102247)), -- Jina-Kang, Kindness of Chi-Ji
-			un(4, i(102245)), -- Qian-Le, Courage of Niuzao
-			un(4, i(102250)), -- Qian-Ying, Fortitude of Niuzao
-			un(4, i(102246)), -- Xing-Ho, Breath of Yu'lon
+			un(38, i(102248)), -- Fen-Yu, Fury of Xuen
+			un(38, i(102249)), -- Gon-Lu, Strength of Xuen
+			un(38, i(102247)), -- Jina-Kang, Kindness of Chi-Ji
+			un(38, i(102245)), -- Qian-Le, Courage of Niuzao
+			un(38, i(102250)), -- Qian-Ying, Fortitude of Niuzao
+			un(38, i(102246)), -- Xing-Ho, Breath of Yu'lon
 			}),
 		},
 		["achievementID"] = 5010, -- The Ultimate Collection
