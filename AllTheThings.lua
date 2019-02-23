@@ -2506,7 +2506,7 @@ local function RefreshCollections()
 		end
 		
 		-- Harvest Title Collections
-		local collectedTitles = GetDataMember("CollectedTitles", {});
+		local collectedTitles = GetTempDataMember("CollectedTitles", {});
 		for i=1,GetNumTitles(),1 do
 			if IsTitleKnown(i) then collectedTitles[i] = 1; end
 		end
@@ -3584,7 +3584,7 @@ app.BaseFaction = {
 		elseif key == "trackable" or key == "collectible" then
 			return app.Settings:Get("Thing:Reputations");
 		elseif key == "saved" or key == "collected" then
-			if app.GetDataMember("TrackFactionsAccountWide") then
+			if app.Settings:Get("AccountWide:Reputations") then
 				if GetDataSubMember("CollectedFactions", t.factionID) then return 1; end
 			else
 				if GetTempDataSubMember("CollectedFactions", t.factionID) then return 1; end
@@ -3679,7 +3679,7 @@ end
 				end
 			end
 			
-			if GetDataMember("FlightPathsAccountWide") then
+			if app.Settings:Get("AccountWide:FlightPaths") then
 				for i,nodeID in ipairs(knownNodeIDs) do
 					if not GetDataSubMember("FlightPaths", nodeID) then
 						SetDataSubMember("FlightPaths", nodeID, 1);
@@ -3707,7 +3707,7 @@ end
 			elseif key == "collectible" then
 				return app.Settings:Get("Thing:FlightPaths")
 			elseif key == "collected" then
-				if GetDataMember("FlightPathsAccountWide")then
+				if app.Settings:Get("AccountWide:FlightPaths") then
 					return GetDataSubMember("FlightPaths", t.flightPathID);
 				end
 				return GetPersonalDataSubMember("FlightPaths", t.flightPathID);
@@ -3773,7 +3773,7 @@ app.BaseFollower = {
 		elseif key == "collectible" then
 			return app.Settings:Get("Thing:Followers");
 		elseif key == "collected" then
-			if app.GetDataMember("TrackFollowersAccountWide") then
+			if app.Settings:Get("AccountWide:Followers") then
 				if GetDataSubMember("CollectedFollowers", t.followerID) then return 1; end
 			else
 				if GetTempDataSubMember("CollectedFollowers", t.followerID) then return 1; end
@@ -3843,7 +3843,7 @@ app.BaseGarrisonBuilding = {
 		elseif key == "collectible" then
 			return t.itemID and app.Settings:Get("Thing:Recipes");
 		elseif key == "collected" then
-			if app.GetDataMember("TrackBuildingsAccountWide") then
+			if app.Settings:Get("AccountWide:Recipes") then
 				if GetDataSubMember("CollectedBuildings", t.buildingID) then return 1; end
 			else
 				if GetTempDataSubMember("CollectedBuildings", t.buildingID) then return 1; end
@@ -3929,7 +3929,7 @@ app.BaseHeirloom = {
 			if t.factionID then
 				if t.repeatable then
 					-- This is used by reputation tokens.
-					if app.GetDataMember("TrackFactionsAccountWide") then
+					if app.Settings:Get("AccountWide:Reputations") then
 						if GetDataSubMember("CollectedFactions", t.factionID) then
 							return 1;
 						end
@@ -4303,7 +4303,7 @@ app.BaseItem = {
 			if t.factionID then
 				if t.repeatable then
 					-- This is used by reputation tokens.
-					if app.GetDataMember("TrackFactionsAccountWide") then
+					if app.Settings:Get("AccountWide:Reputations") then
 						if GetDataSubMember("CollectedFactions", t.factionID) then
 							return 1;
 						end
@@ -4606,7 +4606,7 @@ app.BaseMusicRoll = {
 		elseif key == "collectible" or key == "trackable" then
 			return completed and app.Settings:Get("Thing:MusicRoll");
 		elseif key == "collected" or key == "saved" then
-			if app.GetDataMember("TrackMusicRollsAccountWide") then
+			if app.Settings:Get("AccountWide:MusicRolls") then
 				if GetDataSubMember("CollectedMusicRolls", t.questID) then
 					return 1;
 				end
@@ -5155,8 +5155,17 @@ app.BaseTitle = {
 		elseif key == "trackable" then
 			return true;
 		elseif key == "saved" or key == "collected" then
-			if GetDataSubMember("CollectedTitles", t.titleID) == 1 then return 1; end
+			if app.Settings:Get("AccountWide:Titles") then
+				if GetDataSubMember("CollectedTitles", t.titleID) then
+					return 1;
+				end
+			else
+				if GetTempDataSubMember("CollectedTitles", t.titleID) then
+					return 1;
+				end
+			end
 			if IsTitleKnown(t.titleID) then
+				SetTempDataSubMember("CollectedTitles", t.titleID, 1);
 				SetDataSubMember("CollectedTitles", t.titleID, 1);
 				return 1;
 			end
@@ -10401,6 +10410,7 @@ app.events.VARIABLES_LOADED = function()
 	GetDataMember("CollectedFactions", {});
 	GetDataMember("CollectedFollowers", {});
 	GetDataMember("CollectedMusicRolls", {});
+	GetDataMember("CollectedTitles", {});
 	GetDataMember("CollectedSpells", {});
 	GetDataMember("SeasonalFilters", {});
 	GetDataMember("UnobtainableItemFilters", {});
@@ -10451,6 +10461,15 @@ app.events.VARIABLES_LOADED = function()
 		SetTempDataMember("CollectedMusicRolls", myMusicRolls);
 	end
 	
+	-- Cache your character's title data.
+	local titles = GetDataMember("CollectedTitlesPerCharacter", {});
+	local myTitles = GetTempDataMember("CollectedTitles", titles[app.Me]);
+	if not myTitles then
+		myTitles = {};
+		musicRolls[app.Me] = myTitles;
+		SetTempDataMember("CollectedTitles", myTitles);
+	end
+	
 	-- Register for Dynamic Events and Assign Filters
 	if GetDataMember("IgnoreFiltersOnNonBindingItems", false) then
 		app.ItemBindFilter = app.FilterItemBind;
@@ -10486,11 +10505,7 @@ app.events.VARIABLES_LOADED = function()
 		app.TomTomIgnoreCompletedObjects = app.NoFilter
 	end
 	
-	if GetDataMember("TrackRecipesAccountWide", true) then
-		app.RecipeChecker = GetDataSubMember;
-	else
-		app.RecipeChecker = GetTempDataSubMember;
-	end
+	
 	if GetDataMember("ShowIncompleteQuests", false) then
 		app.ShowIncompleteQuests = app.FilterItemTrackable;
 	else

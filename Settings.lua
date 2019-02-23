@@ -374,7 +374,11 @@ settings.UpdateMode = function(self)
 	else
 		app.AchievementFilter = 13;
 	end
-	
+	if self:Get("AccountWide:Recipes") then
+		app.RecipeChecker = app.GetDataSubMember;
+	else
+		app.RecipeChecker = app.GetTempDataSubMember;
+	end
 	
 	
 	if app.GetDataMember("RequireBindingFilter", false) then
