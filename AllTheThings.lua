@@ -695,15 +695,6 @@ app.print = function(...)
 	print(L["TITLE"], ...);
 end
 
-local function ShowInterfaceOptions()
-	if InterfaceOptionsFrame:IsVisible() then
-		InterfaceOptionsFrame_Show();
-	else
-		InterfaceOptionsFrame_OpenToCategory(app:GetName());
-		InterfaceOptionsFrame_OpenToCategory(app:GetName());
-	end
-end
-
 -- audio lib
 local lastPlayedFanfare;
 function app:PlayCompleteSound()
@@ -6156,11 +6147,16 @@ end
 local function MinimapButtonOnClick(self, button)
 	if button == "RightButton" then
 		-- Right Button opens the Options menu.
-		ShowInterfaceOptions();
+		if InterfaceOptionsFrame:IsVisible() then
+			InterfaceOptionsFrame_Show();
+		else
+			InterfaceOptionsFrame_OpenToCategory(app:GetName());
+			InterfaceOptionsFrame_OpenToCategory(app:GetName());
+		end
 	else
 		-- Left Button
 		if IsShiftKeyDown() then
-			RefreshCollections();
+			app.RefreshCollections();
 		elseif IsAltKeyDown() or IsControlKeyDown() then
 			app.ToggleMiniListForCurrentZone();
 		else
@@ -6198,21 +6194,53 @@ local function MinimapButtonOnLeave()
 end
 local function CreateMinimapButton()
 	-- Create the Button for the Minimap frame. Create a local and non-local copy.
+	local size = app.Settings:GetTooltipSetting("MinimapSize");
 	local button = CreateFrame("BUTTON", app:GetName() .. "-Minimap", Minimap);
 	button:SetPoint("CENTER", 0, 0);
 	button:SetFrameStrata("HIGH");
 	button:SetMovable(true);
 	button:EnableMouse(true);
-	button:SetSize(36, 36);
 	button:RegisterForDrag("LeftButton", "RightButton");
 	button:RegisterForClicks("LeftButtonUp", "RightButtonUp");
+	button:SetSize(size, size);
 	
 	-- Create the Button Texture
-	button:SetATTHighlightSprite("epic_36x36", 429, 179, 36, 36, 512, 256):SetAlpha(0.2);
 	local texture = button:CreateTexture(nil, "BACKGROUND");
 	texture:SetATTSprite("base_36x36", 429, 141, 36, 36, 512, 256);
 	texture:SetPoint("CENTER", 0, 0);
 	texture:SetAllPoints();
+	button.texture = texture;
+	
+	-- Create the Button Texture
+	local oldtexture = button:CreateTexture(nil, "BACKGROUND");
+	oldtexture:SetPoint("CENTER", 0, 0);
+	oldtexture:SetTexture(L["LOGO_SMALL"]);
+	oldtexture:SetSize(21, 21);
+	oldtexture:SetTexCoord(0,1,0,1);
+	button.oldtexture = oldtexture;
+	
+	-- Create the Button Tracking Border
+	local border = button:CreateTexture(nil, "BORDER");
+	border:SetTexture("Interface\\Minimap\\MiniMap-TrackingBorder");
+	border:SetPoint("CENTER", 12, -12);
+	border:SetSize(56, 56);
+	button.border = border;
+	button.UpdateStyle = function(self)
+		if app.Settings:GetTooltipSetting("MinimapStyle") then
+			self:SetHighlightTexture("Interface\\Minimap\\UI-Minimap-ZoomButton-Highlight", "ADD");
+			self:GetHighlightTexture():SetTexCoord(0,1,0,1);
+			self:GetHighlightTexture():SetAlpha(1);
+			self.texture:Hide();
+			self.oldtexture:Show();
+			self.border:Show();
+		else
+			self:SetATTHighlightSprite("epic_36x36", 429, 179, 36, 36, 512, 256):SetAlpha(0.2);
+			self.texture:Show();
+			self.oldtexture:Hide();
+			self.border:Hide();
+		end
+	end
+	button:UpdateStyle();
 	
 	-- Button Configuration
 	button.update = function(self)
@@ -6243,6 +6271,10 @@ local function CreateMinimapButton()
 	button:Show();
 	return button;
 end
+app.CreateMinimapButton = CreateMinimapButton;
+
+-- Row Helper Functions
+local CreateRow;
 local function CreateMiniListForGroup(group)
 	-- Pop Out Functionality! :O
 	local popout = app:GetWindow((group.parent and group.parent.text or "") .. (group.text or ""));
@@ -6511,10 +6543,6 @@ local function CreateMiniListForGroup(group)
 	--ExportData(popout.data);
 	popout:Toggle(true);
 end
-app.CreateMinimapButton = CreateMinimapButton;
-
--- Row Helper Functions
-local CreateRow;
 local function ClearRowData(self)
 	self.ref = nil;
 	self.Background:Hide();
@@ -6942,7 +6970,12 @@ local function RowOnClick(self, button)
 				CreateMiniListForGroup(self.ref);
 			else
 				-- Open the Settings Menu
-				ShowInterfaceOptions();
+				if InterfaceOptionsFrame:IsVisible() then
+					InterfaceOptionsFrame_Show();
+				else
+					InterfaceOptionsFrame_OpenToCategory(app:GetName());
+					InterfaceOptionsFrame_OpenToCategory(app:GetName());
+				end
 			end
 		elseif self.index > 0 then
 			reference.expanded = not reference.expanded;
@@ -10622,7 +10655,7 @@ app.events.PLAYER_LOGIN = function()
 		OnClick = MinimapButtonOnClick,
 		OnEnter = MinimapButtonOnEnter,
 		OnLeave = MinimapButtonOnLeave,
-	})
+	});
 	if GetDataMember("AutoRaidAssistant", false) then
 		app:GetWindow("RaidAssistant"):Show();
 	end

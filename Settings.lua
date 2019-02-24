@@ -148,11 +148,7 @@ settings.Initialize = function(self)
 	self.PrecisionSlider:SetValue(self:GetTooltipSetting("Precision"));
 	self.MinimapButtonSizeSlider:SetValue(self:GetTooltipSetting("MinimapSize"));
 	if self:GetTooltipSetting("MinimapButton") then
-		if not app.Minimap then
-			local size = self:GetTooltipSetting("MinimapSize");
-			app.Minimap = app.CreateMinimapButton();
-			app.Minimap:SetSize(size, size);
-		end
+		if not app.Minimap then app.Minimap = app.CreateMinimapButton(); end
 		app.Minimap:Show();
 	elseif app.Minimap then
 		app.Minimap:Hide();
@@ -628,11 +624,7 @@ end,
 function(self)
 	settings:SetTooltipSetting("MinimapButton", self:GetChecked());
 	if self:GetChecked() then
-		if not app.Minimap then
-			local size = self:GetTooltipSetting("MinimapSize");
-			app.Minimap = app.CreateMinimapButton();
-			app.Minimap:SetSize(size, size);
-		end
+		if not app.Minimap then app.Minimap = app.CreateMinimapButton(); end
 		app.Minimap:Show();
 	elseif app.Minimap then
 		app.Minimap:Hide();
@@ -648,7 +640,7 @@ function(self)
 end,
 function(self)
 	settings:SetTooltipSetting("MinimapStyle", self:GetChecked());
-	settings:UpdateMode();
+	if app.Minimap then app.Minimap:UpdateStyle(); end
 end);
 MinimapButtonStyleCheckBox:SetATTTooltip("Some people don't like the new minimap button...\n\nThose people are wrong!\n\nIf you don't like it, here's an option to go back to the old style.");
 MinimapButtonStyleCheckBox:SetPoint("TOP", ShowMinimapButtonCheckBox, "BOTTOM", 0, 4);
