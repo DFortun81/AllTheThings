@@ -9754,7 +9754,7 @@ end);
 							data.visible = true;
 						end,
 					}, { __index = function(t, key)
-						if key == "text" or key == "icon" or key == "preview" then
+						if key == "text" or key == "icon" or key == "preview" or key == "texcoord" or key == "previewtexcoord" then
 							return app:GetWindow("Prime").data[key];
 						end
 					end}),
