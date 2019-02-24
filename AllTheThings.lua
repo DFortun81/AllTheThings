@@ -1377,7 +1377,9 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 					end
 				elseif group.trackable then
 					if group.saved then
-						right = L["COMPLETE_ICON"];
+						if app.Settings:Get("Show:CollectedThings") then
+							right = L["COMPLETE_ICON"];
+						end
 					else
 						right = L["NOT_COLLECTED_ICON"];
 					end
