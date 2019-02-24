@@ -190,6 +190,9 @@ settings.GetModeString = function(self)
 			mode = "Insane " .. mode;
 		end
 	end
+	if self:Get("Filter:ByLevel") then
+		mode = "Level " .. app.Level .. " " .. mode;
+	end
 	return mode;
 end
 settings.GetPersonal = function(self, setting)
@@ -379,7 +382,9 @@ settings.UpdateMode = function(self)
 	else
 		app.ItemBindFilter = app.Filter;
 	end
-	if app.GetDataMember("FilterGroupsByLevel", false) then
+	
+	app:UnregisterEvent("PLAYER_LEVEL_UP");
+	if self:Get("Filter:ByLevel") then
 		app:RegisterEvent("PLAYER_LEVEL_UP");
 		app.GroupRequirementsFilter = app.FilterGroupsByLevel;
 	else
@@ -694,6 +699,18 @@ function(self)
 	print("Battle pets are only tracked account wide.");
 end);
 BattlePetsAccountWideCheckBox:SetPoint("TOPLEFT", BattlePetsCheckBox, "TOPLEFT", 220, 0);
+
+local FilterThingsByLevelCheckBox = settings:CreateCheckBox("Filter Things By Level",
+function(self)
+	self:SetChecked(settings:Get("Filter:ByLevel"));
+end,
+function(self)
+	settings:Set("Filter:ByLevel", self:GetChecked());
+	settings:UpdateMode();
+	app:RefreshData();
+end);
+FilterThingsByLevelCheckBox:SetATTTooltip("Enable this setting if you only want to see content available to your current level character.\n\nNOTE: This is especially useful on Starter Accounts.");
+FilterThingsByLevelCheckBox:SetPoint("TOPLEFT", BattlePetsAccountWideCheckBox, "TOPLEFT", 160, 0);
 
 local FlightPathsCheckBox = settings:CreateCheckBox("Flight Paths / Ferry Stations",
 function(self)
