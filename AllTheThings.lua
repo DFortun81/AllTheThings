@@ -4673,7 +4673,46 @@ app.BaseNPC = {
 		elseif key == "collectible" then
 			return (t.questID and not t.repeatable and not t.isBreadcrumb and app.Settings:Get("Thing:Quests")) or (t.f == 60 and app.Settings:Get("Thing:SelfieFilters"));
 		elseif key == "saved" then
-			return IsQuestFlaggedCompleted(t.questID) or IsQuestFlaggedCompleted(t.altQuestID);
+			if t.questID then
+				if t.f == 60 then
+					if app.Settings:Get("AccountWide:SelfieFilters") then
+						if GetDataSubMember("CollectedSelfieFilters", t.questID) then
+							return 1;
+						end
+					else
+						if GetTempDataSubMember("CollectedSelfieFilters", t.questID) then
+							return 1;
+						end
+					end
+					if IsQuestFlaggedCompleted(t.questID) then
+						SetTempDataSubMember("CollectedSelfieFilters", t.questID, 1);
+						SetDataSubMember("CollectedSelfieFilters", t.questID, 1);
+						return 1;
+					end
+				elseif IsQuestFlaggedCompleted(t.questID) then
+					return 1;
+				end
+			end
+			if t.altQuestID then
+				if t.f == 60 then
+					if app.Settings:Get("AccountWide:SelfieFilters") then
+						if GetDataSubMember("CollectedSelfieFilters", t.altQuestID) then
+							return 1;
+						end
+					else
+						if GetTempDataSubMember("CollectedSelfieFilters", t.altQuestID) then
+							return 1;
+						end
+					end
+					if IsQuestFlaggedCompleted(t.altQuestID) then
+						SetTempDataSubMember("CollectedSelfieFilters", t.altQuestID, 1);
+						SetDataSubMember("CollectedSelfieFilters", t.altQuestID, 1);
+						return 1;
+					end
+				else
+					return IsQuestFlaggedCompleted(t.altQuestID);
+				end
+			end
 		elseif key == "collected" then
 			return t.saved;
 		elseif key == "repeatable" then
@@ -4702,7 +4741,7 @@ app.BaseObject = {
 		elseif key == "icon" then
 			return L["OBJECT_ID_ICONS"][t.objectID] or "Interface\\Icons\\INV_Misc_Bag_10";
 		elseif key == "collectible" then
-			return (t.questID and not t.repeatable and not t.isBreadcrumb and app.Settings:Get("Thing:Quests")) or (t.f == 60 and app.Settings:Get("Thing:SelfieFilters"));
+			return (t.questID and not t.repeatable and not t.isBreadcrumb and app.Settings:Get("Thing:Quests"));
 		elseif key == "collected" then
 			return t.saved;
 		elseif key == "trackable" then
@@ -4889,7 +4928,6 @@ app.BaseQuest = {
 					return IsQuestFlaggedCompleted(t.altQuestID);
 				end
 			end
-			
 		else
 			-- Something that isn't dynamic.
 			return table[key];
