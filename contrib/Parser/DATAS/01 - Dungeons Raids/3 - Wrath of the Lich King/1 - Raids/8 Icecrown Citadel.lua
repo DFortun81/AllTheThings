@@ -14,42 +14,24 @@ _.Instances =
 							title(141),		-- Of the Ashen Verdict
 							n(37687, { 	-- Alchemist Finklestein
 								i(49908, {	-- Primordial Saronite
-									["groups"] = "This drops from any of the bosses on 10 man Heroic difficulty or higher. Alternatively, you can buy Primordial Saronite from Goodman the Closer.",
-									["crs"] = {
-										36612,	-- Lord Marrowgar
-										36855,	-- Lady Deathwhisper
-										36939,	-- High Overlord Saurfang
-										36948,	-- Muradin Bronzebeard
-										37813,	-- Deathbringer Saurfang
-										36626,	-- Festergut
-										36627,	-- Rotface
-										36678,	-- Professor Putricide
-										37970,	-- Blood Prince Council
-										37955,	-- Blood-Queen Lana'thel
-										36789,	-- Valithria Dreamwalker
-										36853,	-- Sindragosa
-										36597,	-- The Lich King
-									},
-									["groups"] = {
-										i(49959),	-- Pattern: Bladeborn Leggings
-										i(49958),	-- Pattern: Blessed Cenarion Boots
-										i(49954),	-- Pattern: Deathfrost Boots
-										i(49965),	-- Pattern: Draconic Bonesplinter Legguards
-										i(49963),	-- Pattern: Earthsoul Boots
-										i(49961),	-- Pattern: Footpads of Impending Death
-										i(49953),	-- Pattern: Leggings of Woven Death
-										i(49957),	-- Pattern: Legwraps of Unleashed Nature
-										i(49962),	-- Pattern: Lightning-Infused Leggings
-										i(49955),	-- Pattern: Lightweave Leggings
-										i(49966),	-- Pattern: Rock-Steady Treads
-										i(49956),	-- Pattern: Sandals of Consecration
-										i(49974),	-- Plans: Boots of Kingly Upheaval
-										i(49972),	-- Plans: Hellfrozen Bonegrinders
-										i(49971),	-- Plans: Legplates of Painful Death
-										i(49973),	-- Plans: Pillars of Might
-										i(49970),	-- Plans: Protectors of Life
-										i(49969),	-- Plans: Puresteel Legplates
-									},
+									i(49959),	-- Pattern: Bladeborn Leggings
+									i(49958),	-- Pattern: Blessed Cenarion Boots
+									i(49954),	-- Pattern: Deathfrost Boots
+									i(49965),	-- Pattern: Draconic Bonesplinter Legguards
+									i(49963),	-- Pattern: Earthsoul Boots
+									i(49961),	-- Pattern: Footpads of Impending Death
+									i(49953),	-- Pattern: Leggings of Woven Death
+									i(49957),	-- Pattern: Legwraps of Unleashed Nature
+									i(49962),	-- Pattern: Lightning-Infused Leggings
+									i(49955),	-- Pattern: Lightweave Leggings
+									i(49966),	-- Pattern: Rock-Steady Treads
+									i(49956),	-- Pattern: Sandals of Consecration
+									i(49974),	-- Plans: Boots of Kingly Upheaval
+									i(49972),	-- Plans: Hellfrozen Bonegrinders
+									i(49971),	-- Plans: Legplates of Painful Death
+									i(49973),	-- Plans: Pillars of Might
+									i(49970),	-- Plans: Protectors of Life
+									i(49969),	-- Plans: Puresteel Legplates
 								}),
 							}),
 							{
@@ -1760,6 +1742,23 @@ _.Instances =
 					d(  5, {	-- 10-Player (Heroic)
 						n(-1, { -- Common Boss Drop
 							["groups"] = {
+								i(49908, {	-- Primordial Saronite
+									["crs"] = {
+										36612,	-- Lord Marrowgar
+										36855,	-- Lady Deathwhisper
+										36939,	-- High Overlord Saurfang
+										36948,	-- Muradin Bronzebeard
+										37813,	-- Deathbringer Saurfang
+										36626,	-- Festergut
+										36627,	-- Rotface
+										36678,	-- Professor Putricide
+										37970,	-- Blood Prince Council
+										37955,	-- Blood-Queen Lana'thel
+										36789,	-- Valithria Dreamwalker
+										36853,	-- Sindragosa
+										36597,	-- The Lich King
+									},
+								}),
 								i( 52027, {	-- Conqueror's Mark of Sanctification (Normal)
 									i(51184),	-- Sanctified Crimson Acolyte Cowl
 									i(51178),	-- Sanctified Crimson Acolyte Hood
@@ -2154,6 +2153,23 @@ _.Instances =
 					d(  4, {	-- 25-Player (Normal)
 						n(-1, { -- Common Boss Drop
 							["groups"] = {
+								i(49908, {	-- Primordial Saronite
+									["crs"] = {
+										36612,	-- Lord Marrowgar
+										36855,	-- Lady Deathwhisper
+										36939,	-- High Overlord Saurfang
+										36948,	-- Muradin Bronzebeard
+										37813,	-- Deathbringer Saurfang
+										36626,	-- Festergut
+										36627,	-- Rotface
+										36678,	-- Professor Putricide
+										37970,	-- Blood Prince Council
+										37955,	-- Blood-Queen Lana'thel
+										36789,	-- Valithria Dreamwalker
+										36853,	-- Sindragosa
+										36597,	-- The Lich King
+									},
+								}),
 								i( 52027, {	-- Conqueror's Mark of Sanctification (Normal)
 									i(51184),	-- Sanctified Crimson Acolyte Cowl
 									i(51178),	-- Sanctified Crimson Acolyte Hood
@@ -2595,6 +2611,23 @@ _.Instances =
 					d(  6, {	-- 25-Player (Heroic)
 						n(-1, { -- Common Boss Drop
 							["groups"] = {
+								i(49908, {	-- Primordial Saronite
+									["crs"] = {
+										36612,	-- Lord Marrowgar
+										36855,	-- Lady Deathwhisper
+										36939,	-- High Overlord Saurfang
+										36948,	-- Muradin Bronzebeard
+										37813,	-- Deathbringer Saurfang
+										36626,	-- Festergut
+										36627,	-- Rotface
+										36678,	-- Professor Putricide
+										37970,	-- Blood Prince Council
+										37955,	-- Blood-Queen Lana'thel
+										36789,	-- Valithria Dreamwalker
+										36853,	-- Sindragosa
+										36597,	-- The Lich King
+									},
+								}),
 								i( 52027, {	-- Conqueror's Mark of Sanctification (Normal)
 									i(51184),	-- Sanctified Crimson Acolyte Cowl
 									i(51178),	-- Sanctified Crimson Acolyte Hood
