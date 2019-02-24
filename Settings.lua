@@ -592,11 +592,11 @@ PrecisionSlider.Label = PrecisionSlider:CreateFontString(nil, "ARTWORK", "GameFo
 PrecisionSlider.Label:SetPoint("TOP", PrecisionSlider, "BOTTOM", 0, 0);
 PrecisionSlider.Label:SetText(PrecisionSlider:GetValue());
 PrecisionSlider:SetScript("OnValueChanged", function(self, newValue)
-	if newValue == app.GetDataMember("Precision") then
+	self.Label:SetText(newValue);
+	if newValue == settings:GetTooltipSetting("Precision") then
 		return 1;
 	end
-	app.SetDataMember("Precision", newValue)
-	self.Label:SetText(newValue);
+	settings:SetTooltipSetting("Precision", newValue)
 	app:UpdateWindows();
 end);
 
@@ -620,11 +620,11 @@ MinimapButtonSizeSlider.Label = MinimapButtonSizeSlider:CreateFontString(nil, "A
 MinimapButtonSizeSlider.Label:SetPoint("TOP", MinimapButtonSizeSlider, "BOTTOM", 0, 0);
 MinimapButtonSizeSlider.Label:SetText(MinimapButtonSizeSlider:GetValue());
 MinimapButtonSizeSlider:SetScript("OnValueChanged", function(self, newValue)
+	self.Label:SetText(newValue);
 	if newValue == settings:GetTooltipSetting("MinimapSize") then
 		return 1;
 	end
 	settings:SetTooltipSetting("MinimapSize", newValue)
-	self.Label:SetText(newValue);
 	if app.Minimap then app.Minimap:SetSize(newValue, newValue); end
 end);
 

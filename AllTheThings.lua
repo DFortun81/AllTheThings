@@ -819,7 +819,7 @@ end
 local function GetProgressColorText(progress, total)
 	if total and total > 0 then
 		local percent = progress / total;
-		return "|c" .. GetProgressColor(percent) .. tostring(progress) .. " / " .. tostring(total) .. " (" .. GetNumberWithZeros(percent * 100, app.GetDataMember("Precision", 0)) .. "%) |r";
+		return "|c" .. GetProgressColor(percent) .. tostring(progress) .. " / " .. tostring(total) .. " (" .. GetNumberWithZeros(percent * 100, app.Settings:GetTooltipSetting("Precision")) .. "%) |r";
 	end
 	return "---";
 end
@@ -842,7 +842,7 @@ local function GetProgressTextForRow(data)
 		return GetCollectionIcon(data.collected);
 	elseif data.trackable then
 		return GetCompletionIcon(data.saved);
-	elseif data.g and not data.expanded then
+	elseif data.g and not data.expanded and #data.g > 0 then
 		return "+++";
 	end
 	return "---";
