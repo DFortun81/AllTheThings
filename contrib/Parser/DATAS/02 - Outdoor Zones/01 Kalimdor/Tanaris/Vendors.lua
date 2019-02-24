@@ -17,16 +17,6 @@ _.Zones =
 						},
 						["coord"] = { 50.8, 28.0 },
 					}),
-					n(98864, {	-- Alchemist Pestlezugg <Alchemy Supplies>
-						["groups"] = {
-							i(6057),	-- Recipe: Nature Protection Potion
-							i(9303),	-- Recipe: Philosopher's Stone
-							i(12958),	-- Recipe: Transmute Arcanite
-							i(9304),	-- Recipe: Transmute Iron to Gold
-							i(9305),	-- Recipe: Transmute Mithril to Truesilver
-						},
-						["coord"] = { 50.8, 28.0 },
-					}),
 					n(21643, {	-- Alurmi <Keepers of Time Quartermaster>
 						["groups"] = {
 							i(29183),	-- Bindings of the Timewalker
