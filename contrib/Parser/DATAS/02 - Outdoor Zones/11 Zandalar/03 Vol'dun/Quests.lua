@@ -9,550 +9,895 @@ _.Zones =
 				n(-17,  {	-- Quests
 					["groups"] = {
 						h(ach(12478, {	-- Secrets in the Sands
-							crit(1, {	-- Dangers in the Desert
-								["groups"] = {
-									q(51574, {	-- Freshly Squeezed
-										["qg"] = 122583,	-- Meerah
-										["coord"] = { 56.7, 50.5 },
-										["sourceQuests"] = { 51364 },	-- An Explosive Exit
-									}),
-									q(47319, {	-- Restorative Venom
-										["qg"] = 123586,	-- Kiro
-										["coord"] = { 56.7, 50.5 },
-										["sourceQuests"] = { 51364 },	-- An Explosive Exit
-									}),
-									q(47320, {	-- A Balm to Calm
-										["qg"] = 123586,	-- Kiro
-										["coord"] = { 56.7, 50.4 },
-										["sourceQuests"] = {
-											47319,	-- Restorative Venom
-											51574,	-- Freshly Squeezed
-										},
-									}),
-									q(47321, {	-- Knickknack Takeback
-										["qg"] = 123586,	-- Kiro
-										["coord"] = { 56.7, 50.5 },
-										["sourceQuests"] = { 47320 },	-- A Balm to Calm
-									}),
-									q(47317, {	-- Searching for Survivors
-										["qg"] = 130341,	-- Bladeguard Kaja
-										["coord"] = { 56.8, 50.5 },
-										["sourceQuests"] = { 47320 },	-- A Balm to Calm
-									}),
-									q(47316, {	-- Secrets in the Sand
-										["qg"] = 122583,	-- Meerah
-										["coord"] = { 56.7, 50.5 },
-										["sourceQuests"] = { 47320 },	-- A Balm to Calm
-									}),
-									q(47959, {	-- The Warguard's Trail
-										["qg"] = 130341,	-- Bladeguard Kaja
-										["coord"] = { 56.8, 50.4 },
-										["sourceQuests"] = {
-											47321,	-- Knickknack Takeback
-											47317,	-- Searching for Survivors
-											47316,	-- Secrets in the Sand
-										},
-									}),
-									q(48549, {	-- Grozztok the Blackheart
-										["qg"] = 126696,	-- Jorak
-										["coord"] = { 52.9, 66.5 },
-										["sourceQuests"] = { 47959 },	-- The Warguard's Trail
-									}),
-									q(48550, {	-- Stolen Satchels
-										["groups"] = {
-											i(155400),	-- Exiled Veteran's Wargreaves
-											i(155401),	-- Lastwind Trousers
-											i(155402),	-- Resilient Outcast's Greaves
-											i(155403),	-- Scorching Sands Breeches
-											i(161269),	-- Lastwind Wristguards
-											i(161271),	-- Scorching Sands Bindings
-											i(161273),	-- Resilient Outcast's Wristguards
-											i(161275),	-- Exiled Veteran's Armbands
-										},
-										["qg"] = 126696,	-- Jorak
-										["coord"] = { 52.9, 66.5 },
-										["sourceQuests"] = { 47959 },	-- The Warguard's Trail
-									}),
-								},
-							}),
-							crit(2, {	-- The Warguard's Fate
-								["groups"] = {
-									q(48684, {	-- On the Move
-										["qg"] = 122289,	-- Bladeguard Kaja
-										["coord"] = { 53.1, 66.0 },
-										["sourceQuests"] = {
-											48550,	-- Stolen Satchels
-											48549,	-- Grozztok the Blackheart
-										},
-									}),
-									q(48895, {	-- The Perfect Offering
-										["qg"] = 127691,	-- Jorak
-										["coord"] = { 52.8, 89.2 },
-										["sourceQuests"] = { 48684 },	-- On the Move
-									}),
-									q(48993, {	-- Powerful Conductors
-										["groups"] = {
-											i(159979),	-- Rorgog's Antenna
-											i(155451),	-- Akunda Adherent's Cloak
-										},
-										["qg"] = 127992,	-- Akunda the Exalted
-										["coord"] = { 53.1, 90.3 },
-										["sourceQuests"] = { 48895 },	-- The Perfect Offering
-									}),
-									q(48992, {	-- Sacred Remains
-										["qg"] = 127992,	-- Akunda the Exalted
-										["coord"] = { 53.1, 90.3 },
-										["sourceQuests"] = { 48895 },	-- The Perfect Offering
-									}),
-									q(48991, {	-- Vile Infestation
-										["qg"] = 127992,	-- Akunda the Exalted
-										["coord"] = { 53.1, 90.3 },
-										["sourceQuests"] = { 48895 },	-- The Perfect Offering
-									}),
-									q(48887, {	-- Cleanse the Mind
-										["qg"] = 127992,	-- Akunda the Exalted
-										["coord"] = { 53.1, 90.3 },
-										["sourceQuests"] = {
-											48993,	-- Powerful Conductors
-											48992,	-- Sacred Remains
-											48991,	-- Vile Infestation
-										},
-									}),
-									q(48888, {	-- It Springs Eternal
-										["qg"] = 127992,	-- Akunda the Exalted
-										["coord"] = { 53.1, 90.3 },
-										["sourceQuests"] = {
-											48993,	-- Powerful Conductors
-											48992,	-- Sacred Remains
-											48991,	-- Vile Infestation
-										},
-									}),
-									q(48894, {	-- Trial of Truth
-										["qg"] = 127992,	-- Akunda the Exalted
-										["coord"] = { 53.1, 90.3 },
-										["sourceQuests"] = {
-											48887,	-- Cleanse the Mind
-											48888,	-- It Springs Eternal
-										},
-									}),
-									q(48715, {	-- Akunda Awaits
-										["qg"] = 127570,	-- Bladeguard Kaja
-										["coord"] = { 53.1, 90.1 },
-										["sourceQuests"] = { 48894 },	-- Trial of Truth
-									}),
-									q(48987, {	-- Valley of Sorrows
-										["qg"] = 127980,	-- Akunda the Sensible
-										["coord"] = { 53.5, 91.3 },
-										["sourceQuests"] = { 48715 },	-- Akunda Awaits
-									}),
-									q(48988, {	-- Memory Breach
-										["qg"] = 127989,	-- Meijani
-										["coord"] = { 53.0, 78.7 },
-										["sourceQuests"] = { 48987 },	-- Valley of Sorrows
-									}),
-									q(49005, {	-- Shattered and Broken
-										["groups"] = {
-											i(155455),	-- Ring of Akunda's Chosen
-											i(161268),	-- Lastwind Bracers
-											i(161270),	-- Scorching Sands Wristguards
-											i(161272),	-- Resilient Outcast's Bands
-											i(161274),	-- Exiled Veteran's Bindings
-										},
-										["qg"] = 127989,	-- Meijani
-										["coord"] = { 53.0, 78.7 },
-										["sourceQuests"] = { 48987 },	-- Valley of Sorrows
-									}),
-									q(48889, {	-- Repairing the Past
-										["qg"] = 127989,	-- Meijani
-										["coord"] = { 53.0, 78.7 },
-										["sourceQuests"] = {
-											48988,	-- Memory Breach
-											49005,	-- Shattered and Broken
-										},
-									}),
-									q(48996, {	-- Ending the Madness
-										["groups"] = {	-- TODO:: Find and add remaining azerite gear IDs
-											i(155386),	-- Resilient Outcast's Hauberk
-											i(155408),	-- Resilient Outcasat's Shoulderguards
-										},
-										["qg"] = 138382,	-- Akunda
-										["coord"] = { 52.2, 79.8 },
-										["sourceQuests"] = { 48889 },	-- Repairing the Past
-									}),
-									q(50913, {	-- Akunda's Blessing
-										["qg"] = 128152,	-- Akunda
-										["coord"] = { 53.1, 91.6 },
-										["sourceQuests"] = { 48996 },	-- Ending the Madness
-									}),
-									q(47874, {	-- Clearing the Fog
-										["qg"] = 130660,	-- Warguard Rakera
-										["coord"] = { 53.6, 91.6 },
-										["sourceQuests"] = { 50913 },	-- Akunda's Blessing
-									}),
-								},
-							}),
-							crit(3, {	-- A City of Secrets
-								["groups"] = {
-									q(48896, {	-- Knowledge of the Past
-										["qg"] = 130667,	-- Warguard Rakera
-										["coord"] = { 52.8, 89.2 },
-										["sourceQuests"] = { 47874 },	-- Clearing the Fog
-									}),
-									q(47716, {	-- Searching the Ruins
-										["qg"] = 129514,	-- Zandalari Warguard
-										["coord"] = { 47.8, 82.3 },
-										["sourceQuests"] = { 48896 },	-- Knowledge of the Past
-									}),
-									q(48314, {	-- Creeping Death
-										["qg"] = 135154,	-- Kiro
-										["coord"] = { 47.0, 75.5 },
-										["sourceQuests"] = { 47716 },	-- Searching the Ruins
-									}),
-									q(48313, {	-- Nature's Remedy
-										["qg"] = 135154,	-- Kiro
-										["coord"] = { 47.0, 75.5 },
-										["sourceQuests"] = { 47716 },	-- Searching the Ruins
-									}),
-									q(50770, {	-- Effective Antivenom
-										["qg"] = 135154,	-- Kiro
-										["coord"] = { 47.0, 75.5 },
-										["sourceQuests"] = {
-											48314,	-- Creeping Death
-											48313,	-- Nature's Remedy
-										},
-									}),
-									q(50539, {	-- The Secrets of Zul'Ahjin
-										["qg"] = 134533,	-- Serrik
-										["coord"] = { 47.0, 75.6 },
-										["sourceQuests"] = { 50770 },	-- Effective Antivenom
-									}),
-									o(281639, {	-- Crumbling Statue
-										["groups"] = {
-											q(48315, {	-- Hollow, Empty Eyes
-												["sourceQuests"] = { 50539 },	-- The Secrets of Zul'Ahjin
-											}),
-										},
-										["coord"] = { 48.8, 74.4 },
-									}),
-									o(281583, {	-- Ancient Reliquary
-										["groups"] = {
-											q(50561, {	-- Sulthis' Stone
-												["groups"] = {
-													i(159984),	-- Exiled Veteran's Girdle
-													i(159985),	-- Lastwind Sash
-													i(159986),	-- Scorching Sands Girdle
-													i(159987),	-- Resilient Outcast's Clasp
-													i(159988),	-- Exiled Veteran's Stompers
-													i(159989),	-- Lastwind Slippers
-													i(159990),	-- Resilient Outcast's Sabatons
-													i(159991),	-- Scorching Sands Boots
-												},
-												["sourceQuests"] = { 48315 },	-- Hollow, Empty Eyes
-											}),
-										},
-										["coord"] = { 48.8, 74.2 },
-									}),
-								},
-							}),
-							crit(4, {	-- The Three Keepers
-								["groups"] = {
-									q(47324, {	-- Unlikely Allies
-										["qg"] = 134533,	-- Serrik
-										["coord"] = { 47.0, 75.7 },
-										["sourceQuests"] = { 50561 },	-- Sulthis' Stone
-									}),
-									q(49334, {	-- A Powerful Prisoner
-										["groups"] = {
-											i(155457),	-- Devoted Defender's Cloak
-											i(155454),	-- 
-										},
-										["qg"] = 128687,	-- Serrik
-										["coord"] = { 27.2, 53.8 },
-										["sourceQuests"] = { 47324 },	-- Unlikely Allies
-									}),
-									q(50641, {	-- Break Their Ranks
-										["qg"] = 128696,	-- Zissiah
-										["coord"] = { 27.2, 53.8 },
-										["sourceQuests"] = { 47324 },	-- Unlikely Allies
-									}),
-									q(49327, {	-- Push Them Back!
-										["qg"] = 128696,	-- Zissiah
-										["coord"] = { 27.2, 53.8 },
-										["sourceQuests"] = { 47324 },	-- Unlikely Allies
-									}),
-									q(49340, {	-- The Keepers' Keys
-										["qg"] = 129519,	-- Vorrik
-										["coord"] = { 27.5, 52.5 },
-										["sourceQuests"] = {
-											49334,	-- A Powerful Prisoner
-											50641,	-- Break Their Ranks
-											49327,	-- Push Them Back!
-										},
-									}),
-								},
-							}),
-							crit(5, {	-- Storming the Spire
-								["groups"] = {
-									q(49662, {	-- The Missing Key
-										["qg"] = 128694,	-- Vorrik
-										["coord"] = { 27.1, 52.5 },
-										["sourceQuests"] = { 49340 },	-- The Keepers' Key
-									}),
-									q(50745, {	-- Infiltrating the Empire
-										["qg"] = 137970,	-- Vorrik
-										["coord"] = { 42.9, 35.7 },
-										["sourceQuests"] = { 49662 },	-- The Missing Key
-									}),
-									q(49664, {	-- Allies in Anarchy
-										["qg"] = 135172,	-- Vorrik
-										["coord"] = { 47.9, 36.4 },
-										["sourceQuests"] = { 50745 },	-- Infiltrating the Empire
-									}),
-									q(49667, {	-- The Little Ones
-										["groups"] = {
-											i(160017),	-- Resilient Outcast's Handguards
-											i(160018),	-- Lastwind Gloves
-											i(160019),	-- Exiled Veteran's Gauntlets
-											i(160020),	-- Scorching Sands Gloves
-											i(159992),	-- Exiled Veteran's Legguards
-											i(159993),	-- Lastwind Legwraps
-											i(159994),	-- Resilient Outcast's Breeches
-											i(159995),	-- Scorching Sands Pants
-										},
-										["qg"] = 135355,	-- Meerah
-										["coord"] = { 47.9, 36.4 },
-										["sourceQuests"] = { 50745 },	-- Infiltrating the Empire
-									}),
-									q(49666, {	-- Make Them Fear Us
-										["qg"] = 135090,	-- Nisha
-										["coord"] = { 46.1, 33.2 },
-										["sourceQuests"] = { 49664 },	-- Allies in Anarchy
-									}),
-									q(49665, {	-- Ready to Riot
-										["qg"] = 135090,	-- Nisha
-										["coord"] = { 46.1, 33.2 },
-										["sourceQuests"] = { 49664 },	-- Allies in Anarchy
-									}),
-									q(50746, {	-- Crater Conquered
-										["qg"] = 135090,	-- Nisha
-										["coord"] = { 46.1, 33.2 },
-										["sourceQuests"] = {
-											49666,	-- Make Them Fear Us
-											49665,	-- Ready to Riot
-										},
-									}),
-									q(49141, {	-- Diplomacy and Dominance
-										["qg"] = 135172,	-- Vorrik
-										["coord"] = { 48.0, 36.3 },
-										["sourceQuests"] = { 50746 },	-- Crater Conquered
-									}),
-									q(50748, {	-- Don't Drop It... Yet
-										["qg"] = 135172,	-- Vorrik
-										["coord"] = { 48.0, 36.3 },
-										["sourceQuests"] = { 50746 },	-- Crater Conquered
-									}),
-									o(278447, {	-- Faithless Trapper's Spear
-										["groups"] = {
-											q(49002, {	-- Forced Grounding
-												["groups"] = {
-													i(161166),	-- Faithless Skyrider's Focus
-													i(161167),	-- Faithless Skyrider's Shield
-												},
-											}),
-										},
-										["coord"] = { 47.0, 38.7 }
-									}),
-									q(49003, {	-- Vengeance From Above
-										["qg"] = 135110,	-- Vorrik
-										["coord"] = { 47.1, 39.1 },
-										["sourceQuests"] = {
-											49141,	-- Diplomacy and Dominance
-											50748,	-- Don't Drop It... Yes
-											49002,	-- Forced Grounding
-										},
-									}),
-									q(50750, {	-- Infuriating the Emperor
-										["qg"] = 135111,	-- Vorrik
-										["coord"] = { 51.9, 28.7 },
-										["sourceQuests"] = { 49003 },	-- Vengeance From Above
-									}),
-									q(50752, {	-- Relics of Sethraliss
-										["qg"] = 135111,	-- Vorrik
-										["coord"] = { 51.9, 28.7 },
-										["sourceQuests"] = { 49003 },	-- Vengeance From Above
-									}),
-									q(50550, {	-- The Fall of Emperor Korthek
-										["groups"] = {
-											i(155440),	-- Korthek's Greatstaff
-											i(155434),	-- Skycaller's Ceremonial Mace
-											i(160033),	-- Sethraliss-Blessed Shortblade
-											i(160034),	-- Spireguard's Greatbow
-											i(160032),	-- Korthek's Staff
-											i(155417),	-- Keeper's Crescent
-											i(155418),	-- Spireguard's Waraxe
-											i(155444),	-- Sethraliss-Blessed Greatblade
-										},
-										["qg"] = 138411,	-- Vorrik
-										["coord"] = { 51.9, 28.7 },
-										["sourceQuests"] = {
-											50750,	-- Infuriating the Emperor
-											50752,	-- Relics of Sethraliss
-										},
-									}),
-								},
-							}),
-							crit(6, {	-- Atul'Aman
-								["groups"] = {
-									q(50751, {	-- Sanctuary Under Siege -- after storming the spire
-										["qg"] = 138519,	-- Vorrik
-										["coord"] = { 52.0, 27.7 },
-										["sourceQuests"] = { 50550 },	-- The Fall of Emperor Korthek
-									}),
-									q(50617, {	-- Atul'Aman
-										["qg"] = 129588,	-- Vorrik
-										["coord"] = { 27.0, 52.5 },
-										["sourceQuests"] = { 50751 },	-- Sanctuary Under Siege
-									}),
-									q(50904, {	-- The Abandoned Passage
-										["qg"] = 135625,	-- Vorrik
-										["coord"] = { 43.0, 68.2 },
-										["sourceQuests"] = { 50617 },	-- Atul'Aman
-									}),
-									q(50702, {	-- Defeat Jakra'zet
-										["groups"] = {	-- TODO:: Add other azerite armor types
-											i(155398),	-- Resilient Outcast's Coif
-											i(161159),	-- Resilient Outcast's Spaudlers
-										},
-										["qg"] = 134803,	-- Warguard Rakera
-										["coord"] = { 55.7, 36.6 },
-										["sourceQuests"] = { 50904 },	-- The Abandoned Passage
-									}),
-								},
-							}),
-							crit(7, {	-- Unlikely Allies
-								["groups"] = {
-									q(47327, {	-- Answering Their Attacks
-										["qg"] = 130474,	-- Nisha
-										["coord"] = { 65.9, 36.6 },
-										["sourceQuests"] = { 51357 },	-- Armed and Ready
-									}),
-									q(51357, {	-- Armed and Ready
-										["qg"] = 130455,	-- Nisha
-										["coord"] = { 65.9, 36.6 },
-										["sourceQuests"] = { 47315 },	-- Into the Dunes
-									}),
-									q(49676, {	-- Dressed for Battle
-										["groups"] = {
-											i(155413),	-- Lastwind Bands
-											i(155414),	-- Exiled Veteran's Armguards
-											i(155415),	-- Resilient Outcast's Vambraces
-											i(155416),	-- Scorching Sands Wristwraps
-											i(159980),	-- Resilient Outcast's Guantlets
-											i(159981),	-- Lastwind Handwraps
-											i(159982),	-- Exiled Veteran's Crushers
-											i(159983),	-- Scorching Sands Handwraps
-										},
-										["qg"] = 130474,	-- Nisha
-										["coord"] = { 65.9, 36.6 },
-										["sourceQuests"] = { 51357 },	-- Armed and Ready
-									}),
-									q(49677, {	-- Plans for Attack
-										["qg"] = 130474,	-- Nisha
-										["sourceQuests"] = {
-											47327,	-- Answering Their Attacks
-											49676,	-- Dressed for Battle
-										},
-									}),
-									q(51364, {	-- An Explosive Exit
-										["groups"] = {
-											i(161188),	-- Fangcaller's Staff
-											i(155443),	-- Sandcaster's Conductive Scimitar
-											i(161189),	-- Sethrak Warden's Staff
-											i(161190),	-- Sandscout's Kris
-											i(161191),	-- Sethrak Sandscout's Bow
-											i(161192),	-- Sethrak Warbringer's Scimitar
-											i(161193),	-- Sethrak Ravager's Claws
-											i(161194),	-- Sethrak Aggressor's Scimitar
-											i(161195),	-- Sethrak Warden's Scimitar
-										},
-										["qg"] = 130474,	-- Nisha
-										["sourceQuests"] = { 49677 },	-- Plans for Attack
-									}),
-								},
-							}),
-						})),
-						--
-						q(50755, {	-- A Meal for Birds -- seen while doing Secrets in the Sand, Searching for Survivors and Knickknack Takeback
-							["qg"] = 137629,	-- Mekaru
-							["coord"] = { 54.7, 42.3 },
-							--["sourceQuests"] = { },	-- need to confirm
-						}),
-						q(47322, {	-- Aided Escape -- seen while doing Secrets in the Sand, Searching for Survivors and Knickknack Takeback
 							["groups"] = {
-								i(155388),	-- Exiled Veteran's Treads
-								i(155389),	-- Lastwind Sandals
-								i(155390),	-- Resilient Outcast's Boots
-								i(155391),	-- Scorching Sands Footpads
-								i(155409),	-- Exiled Veteran's Greatbelt
-								i(155410),	-- Lastwind Cord
-								i(155411),	-- Resilient Outcast's Chain
-								i(155412),	-- Scorching Sands Belt
-							},
-							["qg"] = 137631,	-- Neri
-							["coord"] = { 54.6, 42.4 },
-							--["sourceQuests"] = { },	-- need to confirm
-						}),
-						--
-						q(50739, {	-- Missing Business -- vulpera hideaway, possibly available any time? First seen upon entering the subzone
-							["groups"] = {
-								i(158464),	-- Poda
-							},
-							["qg"] = 135012,	-- Vivi
-							["coord"] = { 55.1, 48.4 },
-							--["sourceQuests"] = { },	-- need to confirm if this quest has sources or not
-						}),
-						-- the next 5 are all related to Ranah, which are optional quests
-						o(291143, {	-- Ranah's Wrench -- not available if any of Ranah's quests are in your log or have been completed
-							["groups"] = {
-								q(51829, {	-- Ranah's Wrench
-									["isBreadcrumb"] = true,
+								crit(1, {	-- Unlikely Allies
+									["groups"] = {
+										q(47513, { -- Vol'dun
+											["qg"] = 135775, -- Scouting Map (Dazar'alor)
+											["coord"] = { 41.8, 69.0, 1164 }, -- The Great Seal (Dazar'alor)
+											["sourceQuests"] = { 52131, }, -- We Need Each Other
+											["crs"] = {
+												135775, -- Scouting Map (Dazar'alor)
+											},
+										}),
+										q(47313, { -- Discreet Discussions
+											["qg"] = 133050, -- Princess Talanji
+											["coord"] = { 41.1, 66.5, 1164 }, -- The Great Seal (Dazar'alor)
+											["sourceQuests"] = { 47513, }, -- Vol'dun
+											["crs"] = {
+												133050, -- Princess Talanji
+											},
+										}),
+										q(47314, { -- Rumors of Exile
+											["qg"] = 122817, -- Bladeguard Kaja
+											["coord"] = { 51.5, 31.8, 1165 }, -- Dazar'alor
+											["sourceQuests"] = { 47313, }, -- Discreet Discussions
+											["crs"] = {
+												122817, -- Bladeguard Kaja
+											},
+										}),
+										q(47315, { -- Into the Dunes
+											["qg"] = 122320, -- Bladeguard Kaja
+											["coord"] = { 49.8, 31.7, 1165 }, -- Dazar'alor
+											["sourceQuests"] = { 47314, }, -- Rumors of Exile
+											["crs"] = {
+												122320, -- Bladeguard Kaja
+											},
+										}),
+										q(51357, { -- Armed and Ready
+											["qg"] = 130455, -- Nisha
+											["coord"] = { 65.9, 36.6, 864 }, -- Shrouded Hollow (Vol'dun)
+											["sourceQuests"] = { 47315, }, -- Into the Dunes
+											["crs"] = {
+												130455, -- Nisha
+											},
+										}),
+										q(47327, { -- Answering Their Attacks
+											["qg"] = 130455, -- Nisha
+											["coord"] = { 65.9, 36.6, 864 }, -- Shrouded Hollow (Vol'dun)
+											["sourceQuests"] = { 51357, }, -- Armed and Ready
+											["crs"] = {
+												130455, -- Nisha
+											},
+										}),
+										q(49676, { -- Dressed for Battle
+											["groups"] = {
+												i(155413),	-- Lastwind Bands
+												i(155414),	-- Exiled Veteran's Armguards
+												i(155415),	-- Resilient Outcast's Vambraces
+												i(155416),	-- Scorching Sands Wristwraps
+												i(159980),	-- Resilient Outcast's Guantlets
+												i(159981),	-- Lastwind Handwraps
+												i(159982),	-- Exiled Veteran's Crushers
+												i(159983),	-- Scorching Sands Handwraps
+											},
+											["qg"] = 130455, -- Nisha
+											["coord"] = { 65.9, 36.6, 864 }, -- Shrouded Hollow (Vol'dun)
+											["sourceQuests"] = { 51357, }, -- Armed and Ready
+											["crs"] = {
+												130455, -- Nisha
+											},
+										}),
+										q(49677, { -- Plans for Attack
+											["qg"] = 130474, -- Reckless Vulpera (Nisha)
+											["sourceQuests"] = { 
+												47327,	-- Answering Their Attacks
+												49676,	-- Dressed for Battle
+											},
+											["crs"] = {
+												130474, -- Reckless Vulpera (Nisha)
+											},
+										}),
+										q(51364, { -- An Explosive Exit
+											["groups"] = {
+												i(161188),	-- Fangcaller's Staff
+												i(155443),	-- Sandcaster's Conductive Scimitar
+												i(161189),	-- Sethrak Warden's Staff
+												i(161190),	-- Sandscout's Kris
+												i(161191),	-- Sethrak Sandscout's Bow
+												i(161192),	-- Sethrak Warbringer's Scimitar
+												i(161193),	-- Sethrak Ravager's Claws
+												i(161194),	-- Sethrak Aggressor's Scimitar
+												i(161195),	-- Sethrak Warden's Scimitar
+											},
+											["qg"] = 130474, -- Reckless Vulpera (Nisha)
+											["sourceQuests"] = { 49677, }, -- Plans for Attack
+											["crs"] = {
+												130474, -- Reckless Vulpera (Nisha)
+											},
+										}),
+									},
+								}),
+								crit(2, {	-- Dangers in the Desert
+									["groups"] = {
+										q(47319, { -- Restorative Venom
+											["qg"] = 123586, -- Kiro
+											["coord"] = { 56.7, 50.5, 864 }, -- Vulpera Hideaway (Vol'dun)
+											["sourceQuests"] = { 51364 }, -- An Explosive Exit
+											["crs"] = {
+												123586, -- Kiro
+											},
+										}),
+										q(51574, { -- Freshly Squeezed
+											["qg"] = 122583, -- Meerah
+											["coord"] = { 56.7, 50.5, 864 }, -- Vulpera Hideaway (Vol'dun)
+											["sourceQuests"] = { 51364 }, -- An Explosive Exit
+											["crs"] = {
+												122583, -- Meerah
+											},
+										}),
+										q(50739, { -- Missing Business
+											["groups"] = {
+												i(158464), -- Poda (Pet)
+											},
+											["qg"] = 135012, -- Vivi
+											["coord"] = { 55.2, 48.4, 864 }, -- The Prickly Grove (Vol'dun)
+											["crs"] = {
+												135012, -- Vivi
+											},
+										}),
+										q(47320, { -- A Balm to Calm
+											["qg"] = 123586,	-- Kiro
+											["coord"] = { 56.7, 50.5, 864 }, -- Vulpera Hideaway (Vol'dun)
+											["sourceQuests"] = {
+												47319, -- Restorative Venom
+												51574, -- Freshly Squeezed
+											},
+											["crs"] = {
+												123586, -- Kiro
+											},
+										}),
+										q(47321, { -- Knickknack Takeback
+											["qg"] = 123586, -- Kiro
+											["coord"] = { 56.7, 50.5, 864 }, -- Vulpera Hideaway (Vol'dun)
+											["sourceQuests"] = { 47320 }, -- A Balm to Calm
+											["crs"] = {
+												123586, -- Kiro
+											},
+										}),
+										q(47317, { -- Searching for Survivors
+											["qg"] = 130341, -- Bladeguard Kaja
+											["coord"] = { 56.8, 50.5, 864 }, -- Vulpera Hideaway (Vol'dun)
+											["sourceQuests"] = { 47320 }, -- A Balm to Calm
+											["crs"] = {
+												130341,	-- Bladeguard Kaja
+											},
+										}),
+										q(47316, { -- Secrets in the Sand
+											["qg"] = 122583, -- Meerah
+											["coord"] = { 56.7, 50.5, 864 }, -- Vulpera Hideaway (Vol'dun)
+											["sourceQuests"] = { 47320 }, -- A Balm to Calm
+											["crs"] = {
+												122583, -- Meerah
+											},
+										}),
+										q(50755, { -- A Meal for Birds
+											["groups"] = {
+												currency(1553), -- Azerite (x100)
+											},
+											["qg"] = 137629, -- Mekaru
+											["coord"] = { 54.8, 42.4, 864 }, -- The Brine Basin (Vol'dun)
+											["crs"] = {
+												137629, -- Mekaru
+											},
+										}),
+										q(47322, { -- Aided Escape
+											["groups"] = {
+												i(155388), -- Exiled Veteran's Treads
+												i(155389), -- Lastwind Sandals
+												i(155390), -- Resilient Outcast's Boots
+												i(155391), -- Scorching Sands Footpads
+												i(155409), -- Exiled Veteran's Greatbelt
+												i(155410), -- Lastwind Cord
+												i(155411), -- Resilient Outcast's Chain
+												i(155412), -- Scorching Sands Belt
+											},
+											["qg"] = 137631, -- Neri
+											["coord"] = { 54.6, 42.4, 864 }, -- The Brine Basin (Vol'dun)
+											["crs"] = {
+												137631, -- Neri
+											},
+										}),
+										q(47959, { -- The Warguard's Trail
+											["qg"] = 130341, -- Bladeguard Kaja
+											["coord"] = { 56.8, 50.4, 864 }, -- Vulpera Hideaway (Vol'dun)
+											["sourceQuests"] = {
+												47321, -- Knickknack Takeback
+												47317, -- Searching for Survivors
+												47316, -- Secrets in the Sand
+											},
+											["crs"] = {
+												130341, -- Bladeguard Kaja
+											},
+										}),
+										q(48549, { -- Grozztok the Blackheart
+											["qg"] = 126696, -- Jorak
+											["coord"] = { 53.2, 66.2, 864 }, -- Withering Gulch (Vol'dun)
+											["sourceQuests"] = { 47959 }, -- The Warguard's Trail
+											["crs"] = {
+												126696, -- Jorak
+											},
+										}),
+										q(48550, { -- Stolen Satchels
+											["groups"] = {
+												i(155400), -- Exiled Veteran's Wargreaves
+												i(155401), -- Lastwind Trousers
+												i(155402), -- Resilient Outcast's Greaves
+												i(155403), -- Scorching Sands Breeches
+												i(161269), -- Lastwind Wristguards
+												i(161271), -- Scorching Sands Bindings
+												i(161273), -- Resilient Outcast's Wristguards
+												i(161275), -- Exiled Veteran's Armbands
+											},
+											["qg"] = 126696, -- Jorak
+											["coord"] = { 53.2, 66.2, 864 }, -- Withering Gulch (Vol'dun)
+											["sourceQuests"] = { 47959 }, -- The Warguard's Trail
+											["crs"] = {
+												126696, -- Jorak
+											},
+										}),
+										{ -- Ranah's Wrench
+											["objectID"] = 291143, -- Ranah's Wrench
+											["coord"] = { 50.7, 64.7, 864 }, -- Atul'aman (Vol'dun)
+											["questID"] = 51829, -- Ranah's Wrench
+										},
+										q(48553, { -- Let it Flow
+											["qg"] = 126814, -- Ranah
+											["coord"] = { 53.8, 69.4, 864 }, -- Withering Gulch (Vol'dun)
+											["sourceQuests"] = { 51829 }, -- Ranah's Wrench
+											["crs"] = {
+												126814, -- Ranah
+											},
+										}),
+										q(48555, { -- We Can Salvage the Seeds
+											["qg"] = 126814, -- Ranah
+											["coord"] = { 53.8, 69.4, 864 }, -- Withering Gulch (Vol'dun)
+											["sourceQuests"] = { 51829 }, -- Ranah's Wrench
+											["crs"] = {
+												126814, -- Ranah
+											},
+										}),
+										q(48551, { -- Wither Without Water
+											["qg"] = 126814, -- Ranah
+											["coord"] = { 53.8, 69.4, 864 }, -- Withering Gulch (Vol'dun)
+											["sourceQuests"] = { 51829 }, -- Ranah's Wrench
+											["crs"] = {
+												126814, -- Ranah
+											},
+										}),
+										q(48554, { -- The Source of the Problem
+											["groups"] = {
+												i(155392), -- Scorching Sands Grips
+												i(155393), -- Exiled Veteran's Handguards
+												i(155394), -- Lastwind Grips
+												i(155395), -- Resilient Outcast's Gloves
+												i(155448), -- Deserted Divining Rod
+												i(159975), -- Scorched Plateau Defender
+											},
+											["qg"] = 126814, -- Ranah
+											["coord"] = { 53.8, 69.4, 864 }, -- Withering Gulch (Vol'dun)
+											["sourceQuests"] = { 
+												48553, -- Let it Flow
+												48555, -- We Can Salvage the Seeds
+												48551, -- Wither Without Water
+											},
+											["crs"] = {
+												126814, -- Ranah
+											},
+										}),
+									},
+								}),
+								crit(3, {	-- The Warguard's Fate
+									["groups"] = {
+										q(48684, { -- On the Move
+											["qg"] = 122289, -- Bladeguard Kaja
+											["coord"] = { 53.2, 66, 864 }, -- Withering Gulch (Vol'dun)
+											["sourceQuests"] = {
+												48550, -- Stolen Satchels
+												48549, -- Grozztok the Blackheart
+											},
+											["crs"] = {
+												122289, -- Bladeguard Kaja
+											},
+										}),
+										q(48895, { -- The Perfect Offering
+											["qg"] = 127691, -- Jorak
+											["coord"] = { 52.8, 89.2, 864 }, -- Temple of Akunda (Vol'dun)
+											["sourceQuests"] = { 48684 }, -- On the Move
+											["crs"] = {
+												127691, -- Jorak
+											},
+										}),
+										q(48993, { -- Powerful Conductors
+											["groups"] = {
+												i(159979), -- Rorgog's Antenna
+												i(155451), -- Akunda Adherent's Cloak
+											},
+											["qg"] = 127992, -- Akunda the Exalted
+											["coord"] = { 53.2, 90.2, 864 }, -- Temple of Akunda (Vol'dun)
+											["sourceQuests"] = { 48895 },	-- The Perfect Offering
+											["crs"] = {
+												127992, -- Akunda the Exalted
+											},
+										}),
+										q(48992, { -- Sacred Remains
+											["qg"] = 127992, -- Akunda the Exalted
+											["coord"] = { 53.2, 90.2, 864 }, -- Temple of Akunda (Vol'dun)
+											["sourceQuests"] = { 48895 }, -- The Perfect Offering
+											["crs"] = {
+												127992, -- Akunda the Exalted
+											},
+										}),
+										q(48991, { -- Vile Infestation
+											["qg"] = 127992, -- Akunda the Exalted
+											["coord"] = { 53.2, 90.2, 864 }, -- Temple of Akunda (Vol'dun)
+											["sourceQuests"] = { 48895 }, -- The Perfect Offering
+											["crs"] = {
+												127992, -- Akunda the Exalted
+											},
+										}),
+										q(48887, { -- Cleanse the Mind
+											["qg"] = 127992, -- Akunda the Exalted
+											["coord"] = { 53.2, 90.2, 864 }, -- Temple of Akunda (Vol'dun)
+											["sourceQuests"] = {
+												48993, -- Powerful Conductors
+												48992, -- Sacred Remains
+												48991, -- Vile Infestation
+											},
+											["crs"] = {
+												127992, -- Akunda the Exalted
+											},
+										}),
+										q(48888, { -- It Springs Eternal
+											["qg"] = 127992, -- Akunda the Exalted
+											["coord"] = { 53.2, 90.2, 864 }, -- Temple of Akunda (Vol'dun)
+											["sourceQuests"] = {
+												48993, -- Powerful Conductors
+												48992, -- Sacred Remains
+												48991, -- Vile Infestation
+											},
+											["crs"] = {
+												127992, -- Akunda the Exalted
+											},
+										}),
+										q(48894, { -- Trial of Truth
+											["qg"] = 127992, -- Akunda the Exalted
+											["coord"] = { 53.2, 90.2, 864 }, -- Temple of Akunda (Vol'dun)
+											["sourceQuests"] = {
+												48887, -- Cleanse the Mind
+												48888, -- It Springs Eternal
+											},
+											["crs"] = {
+												127992, -- Akunda the Exalted
+											},
+										}),
+										q(48715, { -- Akunda Awaits
+											["qg"] = 127570, -- Bladeguard Kaja
+											["coord"] = { 53.2, 90.2, 864 }, -- Temple of Akunda (Vol'dun)
+											["sourceQuests"] = { 48894 }, -- Trial of Truth
+											["crs"] = {
+												127570, -- Bladeguard Kaja
+											},
+										}),
+										q(48987, { -- Valley of Sorrows
+											["qg"] = 127980, -- Akunda the Sensible
+											["coord"] = { 53.6, 91.4, 864 }, -- Temple of Akunda (Vol'dun)
+											["sourceQuests"] = { 48715 }, -- Akunda Awaits
+											["crs"] = {
+												127980, -- Akunda the Sensible
+											},
+										}),
+										q(48988, { -- Memory Breach
+											["qg"] = 127989, -- Meijani
+											["coord"] = { 53.0, 78.8, 864 }, -- Valley of Sorrows (Vol'dun)
+											["sourceQuests"] = { 48987 }, -- Valley of Sorrows
+											["crs"] = {
+												127989, -- Meijani
+											},
+										}),
+										q(49005, { -- Shattered and Broken
+											["groups"] = {
+												i(155455), -- Ring of Akunda's Chosen
+												i(161268), -- Lastwind Bracers
+												i(161270), -- Scorching Sands Wristguards
+												i(161272), -- Resilient Outcast's Bands
+												i(161274), -- Exiled Veteran's Bindings
+											},
+											["qg"] = 127989, -- Meijani
+											["coord"] = { 53.0, 78.8, 864 }, -- Valley of Sorrows (Vol'dun)
+											["sourceQuests"] = { 48987 }, -- Valley of Sorrows
+											["crs"] = {
+												127989, -- Meijani
+											},
+										}),
+										q(48889, { -- Repairing the Past
+											["qg"] = 127989, -- Meijani
+											["coord"] = { 53.0, 78.8, 864 }, -- Valley of Sorrows (Vol'dun)
+											["sourceQuests"] = {
+												48988, -- Memory Breach
+												49005, -- Shattered and Broken
+											},
+											["crs"] = {
+												127989, -- Meijani
+											},
+										}),
+										q(48996, { -- Ending the Madness
+											["groups"] = {	-- TODO:: Find and add remaining azerite gear IDs
+												i(155386), -- Resilient Outcast's Hauberk
+												i(155408), -- Resilient Outcasat's Shoulderguards
+											},
+											["qg"] = 138382, -- Akunda
+											["coord"] = { 52.2, 79.8, 864 }, -- Valley of Sorrows (Vol'dun)
+											["sourceQuests"] = { 48889 }, -- Repairing the Past
+											["crs"] = {
+												138382, -- Akunda
+											},
+										}),
+										q(50913, { -- Akunda's Blessing
+											["qg"] = 128152, -- Akunda
+											["coord"] = { 53.2, 91.6, 864 }, -- Temple of Akunda (Vol'dun)
+											["sourceQuests"] = { 48996 }, -- Ending the Madness
+											["crs"] = {
+												128152, -- Akunda
+											},
+										}),
+										q(47874, { -- Clearing the Fog
+											["groups"] = {
+												currency(1560), -- War Resources (x50)
+											},
+											["qg"] = 130660, -- Warguard Rakera
+											["coord"] = { 53.6, 91.6, 864 }, -- Temple of Akunda (Vol'dun)
+											["sourceQuests"] = { 50913 }, -- Akunda's Blessing
+											["crs"] = {
+												130660, -- Warguard Rakera
+											},
+										}),
+									},
+								}),
+								crit(4, {	-- A City of Secrets
+									["groups"] = {
+										q(48896, { -- Knowledge of the Past
+											["qg"] = 130667, -- Warguard Rakera
+											["coord"] = { 52.8, 89.2, 864 }, -- Temple of Akunda (Vol'dun)
+											["sourceQuests"] = { 47874 }, -- Clearing the Fog
+											["crs"] = {
+												130667, -- Warguard Rakera
+											},
+										}),
+										q(47716, { -- Searching the Ruins
+											["qg"] = 129514, -- Zandalari Warguard
+											["coord"] = { 47.8, 82.3, 864 }, -- Redrock Lowlands (Vol'dun)
+											["sourceQuests"] = { 48896 }, -- Knowledge of the Past
+											["crs"] = {
+												129514, -- Zandalari Warguard
+											},
+										}),
+										q(48314, { -- Creeping Death
+											["qg"] = 135154, -- Kiro
+											["coord"] = { 47.0, 75.5, 864 }, -- Zul'Ahjin (Vol'dun)
+											["sourceQuests"] = { 47716 }, -- Searching the Ruins
+											["crs"] = {
+												135154, -- Kiro
+											},
+										}),
+										q(48313, {	-- Nature's Remedy
+											["qg"] = 135154, -- Kiro
+											["coord"] = { 47.0, 75.5, 864 }, -- Zul'Ahjin (Vol'dun)
+											["sourceQuests"] = { 47716 },	-- Searching the Ruins
+											["crs"] = {
+												135154, -- Kiro
+											},
+										}),
+										q(50770, { -- Effective Antivenom
+											["qg"] = 135154, -- Kiro
+											["coord"] = { 47.0, 75.5, 864 }, -- Zul'Ahjin (Vol'dun)
+											["sourceQuests"] = {
+												48314,	-- Creeping Death
+												48313,	-- Nature's Remedy
+											},
+											["crs"] = {
+												135154, -- Kiro
+											},
+										}),
+										q(50536, { -- Magic Decoder Device
+											["qg"] = 134148, -- Maaz
+											["coord"] = { 47.2, 72.8, 864 }, -- Zul'Ahjin (Vol'dun)
+											["crs"] = {
+												134148, -- Maaz
+											},
+										}),
+										q(48872, { -- Expedite the Excavation
+											["qg"] = 134148, -- Maaz
+											["coord"] = { 47.2, 72.8, 864 }, -- Zul'Ahjin (Vol'dun)
+											["crs"] = {
+												134148, -- Maaz
+											},
+										}),
+										q(50596, { -- Exterminate the Vermin
+											["qg"] = 134408, -- Foreman Jethek
+											["coord"] = { 49.8, 74.6, 864 }, -- Zul'Ahjin (Vol'dun)
+											["crs"] = {
+												134408, -- Foreman Jethek
+											},
+										}),
+										q(48871, { -- Rescue the Relics
+											["qg"] = 134148, -- Maaz
+											["coord"] = { 47.2, 72.8, 864 }, -- Zul'Ahjin (Vol'dun)
+											["crs"] = {
+												134148, -- Maaz
+											},
+										}),
+										q(50535, { -- Power of the Overseer
+											["groups"] = {
+												currency(1553), -- Azerite (x75)
+											},
+											["qg"] = 134148, -- Maaz
+											["coord"] = { 47.2, 72.8, 864 }, -- Zul'Ahjin (Vol'dun)
+											["crs"] = {
+												134148, -- Maaz
+											},
+										}),
+										q(50539, { -- The Secrets of Zul'Ahjin
+											["groups"] = {
+												currency(1553), -- Azerite (x100)
+											},
+											["qg"] = 134533, -- Serrik
+											["coord"] = { 47.0, 75.6, 864 }, -- Zul'Ahjin (Vol'dun)
+											["sourceQuests"] = { 50770 }, -- Effective Antivenom
+											["crs"] = {
+												134533, -- Serrik
+											},
+										}),
+										{ -- Hollow, Empty Eyes
+											["objectID"] = 281639, -- Crumbling Statue
+											["coord"] = { 48.8, 74.4, 864 }, -- Zul'Ahjin (Vol'dun)
+											["questID"] = 48315,
+											["sourceQuests"] = { 50539 }, -- The Secrets of Zul'Ahjin
+										},
+										{ -- Sulthis' Stone
+											["groups"] = {
+												i(159984), -- Exiled Veteran's Girdle
+												i(159985), -- Lastwind Sash
+												i(159986), -- Scorching Sands Girdle
+												i(159987), -- Resilient Outcast's Clasp
+												i(159988), -- Exiled Veteran's Stompers
+												i(159989), -- Lastwind Slippers
+												i(159990), -- Resilient Outcast's Sabatons
+												i(159991), -- Scorching Sands Boots
+											},
+											["objectID"] = 281583, -- Ancient Reliquary
+											["coord"] = { 48.8, 74.2, 864 }, -- Zul'Ahjin (Vol'dun)
+											["questID"] = 50561, -- Sulthis' Stone
+											["sourceQuests"] = { 48315 }, -- Hollow, Empty Eyes
+										},
+									},
+								}),
+								crit(5, {	-- The Three Keepers
+									["groups"] = {
+										q(47324, { -- Unlikely Allies
+											["qg"] = 134533, -- Serrik
+											["coord"] = { 47.0, 75.7, 864 }, -- Zul'Ahjin (Vol'dun)
+											["sourceQuests"] = { 50561 }, -- Sulthis' Stone
+											["crs"] = {
+												134533, -- Serrik
+											},
+										}),
+										q(49334, { -- A Powerful Prisoner
+											["groups"] = {
+												i(155457), -- Devoted Defender's Cloak
+												i(155454), -- Devoted Defender's Band
+											},
+											["qg"] = 128687, -- Serrik
+											["coord"] = { 27.2, 53.8, 864 }, -- Terrace of the Devoted (Vol'dun)
+											["sourceQuests"] = { 47324 }, -- Unlikely Allies
+											["crs"] = {
+												134533, -- Serrik
+											},
+										}),
+										q(50641, { -- Break Their Ranks
+											["qg"] = 128696, -- Zissiah
+											["coord"] = { 27.2, 53.8, 864 }, -- Terrace of the Devoted (Vol'dun)
+											["sourceQuests"] = { 47324 }, -- Unlikely Allies
+											["crs"] = {
+												128696, -- Zissiah
+											},
+										}),
+										q(49327, { -- Push Them Back!
+											["qg"] = 128696, -- Zissiah
+											["coord"] = { 27.2, 53.8, 864 }, -- Terrace of the Devoted (Vol'dun)
+											["sourceQuests"] = { 47324 }, -- Unlikely Allies
+											["crs"] = {
+												128696, -- Zissiah
+											},
+										}),
+										q(49340, { -- The Keepers' Keys
+											["qg"] = 129519, -- Vorrik
+											["coord"] = { 27.5, 52.5, 864 }, -- Sanctuary of the Devoted
+											["sourceQuests"] = {
+												49334,	-- A Powerful Prisoner
+												50641,	-- Break Their Ranks
+												49327,	-- Push Them Back!
+											},
+											["crs"] = {
+												 129519, -- Vorrik
+											},
+										}),
+										{ -- WANTED: Sandscout Vesarik
+											["objectID"] = 287441, -- Wanted: Sandscout Vesarik
+											["coord"] = { 27.3, 53.2, 864 }, -- Terrace of the Devoted
+											["questID"] = 51165, -- WANTED: Sandscout Vesarik
+										},
+									},
+								}),
+								crit(6, {	-- Storming the Spire
+									["groups"] = {
+										q(49662, { -- The Missing Key
+											["qg"] = 128694, -- Vorrik
+											["coord"] = { 27.1, 52.5, 864 }, -- Sanctuary of the Devoted (Vol'dun)
+											["sourceQuests"] = { 49340 }, -- The Keepers' Key
+											["crs"] = {
+												128694, -- Vorrik
+											},
+										}),
+										q(50745, { -- Infiltrating the Empire
+											["qg"] = 137970, -- Vorrik
+											["coord"] = { 42.9, 35.7, 864 }, -- Bwoljin's Fall (Vol'dun)
+											["sourceQuests"] = { 49662 },	-- The Missing Key
+											["crs"] = {
+												137970, -- Vorrik
+											},
+										}),
+										q(49664, { -- Allies in Anarchy
+											["qg"] = 135172, -- Vorrik
+											["coord"] = { 47.9, 36.4, 864 }, -- Vorrik's Sanctum
+											["sourceQuests"] = { 50745 }, -- Infiltrating the Empire
+											["crs"] = {
+												135172, -- Vorrik
+											},
+										}),
+										q(49667, { -- The Little Ones
+											["groups"] = {
+												i(160017), -- Resilient Outcast's Handguards
+												i(160018), -- Lastwind Gloves
+												i(160019), -- Exiled Veteran's Gauntlets
+												i(160020), -- Scorching Sands Gloves
+												i(159992), -- Exiled Veteran's Legguards
+												i(159993), -- Lastwind Legwraps
+												i(159994), -- Resilient Outcast's Breeches
+												i(159995), -- Scorching Sands Pants
+											},
+											["qg"] = 135355, -- Meerah
+											["coord"] = { 47.9, 36.4, 864 }, -- Vorrik's Sanctum (Vol'dun)
+											["sourceQuests"] = { 50745 }, -- Infiltrating the Empire
+											["crs"] = {
+												135355, -- Meerah
+											},
+										}),
+										q(49666, { -- Make Them Fear Us
+											["qg"] = 135090, -- Nisha
+											["coord"] = { 46.1, 33.2, 864 }, -- Crater of Conquerors (Vol'dun)
+											["sourceQuests"] = { 49664 }, -- Allies in Anarchy
+											["crs"] = {
+												135090, -- Nisha
+											},
+										}),
+										q(49665, { -- Ready to Riot
+											["groups"] = {
+												currency(1560), -- War Resources (x50)
+											},
+											["qg"] = 135090, -- Nisha
+											["coord"] = { 46.1, 33.2, 864 }, -- Crater of Conquerors (Vol'dun)
+											["sourceQuests"] = { 49664 }, -- Allies in Anarchy
+											["crs"] = {
+												135090, -- Nisha
+											},
+										}),
+										q(50746, { -- Crater Conquered
+											["qg"] = 135090, -- Nisha
+											["coord"] = { 46.1, 33.2, 864 }, -- Crater of Conquerors (Vol'dun)
+											["sourceQuests"] = {
+												49666, -- Make Them Fear Us
+												49665, -- Ready to Riot
+											},
+											["crs"] = {
+												135090, -- Nisha
+											}, 
+										}),
+										q(49668, { -- Light Up the Gulch
+											["qg"] = 137981, -- Kiro
+											["coord"] = { 46, 33.2, 864 }, -- Crater of Conquerors (Vol'dun)
+											["crs"] = {
+												137981, -- Kiro
+											},
+										}),
+										{ -- Tattered Note
+											["objectID"] = 278368, -- Tattered Note
+											["coord"] = { 54.5, 34.2, 864 }, -- Slithering Gulch (Vol'dun)
+											["questID"] = 49437, -- Tattered Note
+											["sourceQuests"] = { 49668 }, -- Light Up the Gulch
+										},
+										q(49669, { -- Unleash the Beasts
+											["groups"] = {
+												i(161182), -- Cracked Crawg Shackles
+											},
+											["qg"] = 135099, -- Kiro
+											["coord"] = { 55.4, 35, 864 }, -- Slithering Gulch (Vol'dun)
+											["sourceQuests"] = { 49668 }, -- Light Up the Gulch
+											["crs"] = {
+												135099, -- Kiro
+											},
+										}),
+										q(50757, { -- Untame Slaughter
+											["qg"] = 135099, -- Kiro
+											["coord"] = { 55.4, 35, 864 }, -- Slithering Gulch (Vol'dun)
+											["sourceQuests"] = { 49668 }, -- Light Up the Gulch
+											["crs"] = {
+												135099, -- Kiro
+											},
+										}),
+										q(50749, { -- Free Ride
+											["qg"] = 135099, -- Kiro
+											["coord"] = { 55.4, 35, 864 }, -- Slithering Gulch (Vol'dun)
+											["sourceQuests"] = { 
+												49669, -- Unleash the Beasts
+												50757, -- Untame Slaughter
+											},
+											["crs"] = {
+												135099, -- Kiro
+											},
+										}),
+										q(49141, { -- Diplomacy and Dominance
+											["qg"] = 135172, -- Vorrik
+											["coord"] = { 48.0, 36.3, 864 }, -- Vorrik's Sanctum (Vol'dun)
+											["sourceQuests"] = { 50746 }, -- Crater Conquered
+											["crs"] = {
+												135172, -- Vorrik
+											},
+										}),
+										q(50748, { -- Don't Drop It... Yet
+											["qg"] = 135172, -- Vorrik
+											["coord"] = { 48.0, 36.3, 864 }, -- Vorrik's Sanctum (Vol'dun)
+											["sourceQuests"] = { 50746 }, -- Crater Conquered
+											["crs"] = {
+												135172, -- Vorrik
+											},
+										}),
+										n(130603, { -- Beastbreaker Hakid
+											["groups"] = {
+												i(158909, { -- Beastbreaker Cage Key
+													["groups"] = {
+														q(48329, { -- Beaten But Not Broken
+															["coord"] = { 49.1, 38.3, 864 }, -- Vol'dun
+															["sourceQuests"] = { 50746 }, -- Crater Conquered
+															["crs"] = {
+																130603, -- Beastbreaker Hakid
+															},
+														}),
+													},
+												}),
+											},
+										}),
+										{ -- Forced Grounding
+											["groups"] = {
+												i(161166), -- Faithless Skyrider's Focus
+												i(161167), -- Faithless Skyrider's Shield
+											},
+											["objectID"] = 278447, -- Faithless Trapper's Spear
+											["coord"] = { 47.1, 38.8, 864 }, -- Rakjan's Peak (Vol'dun)
+											["questID"] = 49002, -- Forced Grounding
+										},
+										q(49003, { -- Vengeance From Above
+											["qg"] = 135110, -- Vorrik
+											["coord"] = { 47.1, 39.1, 864 }, -- Rakjan's Peak (Vol'dun)
+											["sourceQuests"] = {
+												49141, -- Diplomacy and Dominance
+												50748, -- Don't Drop It... Yes
+												49002, -- Forced Grounding
+											},
+											["crs"] = {
+												135110, -- Vorrik
+											},
+										}),
+										q(50750, { -- Infuriating the Emperor
+											["qg"] = 135111, -- Vorrik
+											["coord"] = { 51.9, 28.7, 864 }, -- Skycallers' Spire (Vol'dun)
+											["sourceQuests"] = { 49003 }, -- Vengeance From Above
+											["crs"] = {
+												135111, -- Vorrik
+											},
+										}),
+										q(50752, { -- Relics of Sethraliss
+											["qg"] = 135111, -- Vorrik
+											["coord"] = { 51.9, 28.7, 864 }, -- Skycallers' Spire (Vol'dun)
+											["sourceQuests"] = { 49003 }, -- Vengeance From Above
+											["crs"] = {
+												135111, -- Vorrik
+											},
+										}),
+										q(50550, { -- The Fall of Emperor Korthek
+											["groups"] = {
+												i(155440), -- Korthek's Greatstaff
+												i(155434), -- Skycaller's Ceremonial Mace
+												i(160033), -- Sethraliss-Blessed Shortblade
+												i(160034), -- Spireguard's Greatbow
+												i(160032), -- Korthek's Staff
+												i(155417), -- Keeper's Crescent
+												i(155418), -- Spireguard's Waraxe
+												i(155444), -- Sethraliss-Blessed Greatblade
+											},
+											["qg"] = 138411, -- Vorrik
+											["coord"] = { 51.9, 28.7, 864 }, -- Skycallers' Spire (Vol'dun)
+											["sourceQuests"] = {
+												50750, -- Infuriating the Emperor
+												50752, -- Relics of Sethraliss
+											},
+											["crs"] = {
+												138411, -- Vorrik
+											},
+										}),
+									},
+								}),
+								crit(7, {	-- Atul'Aman
+									["groups"] = {
+										q(50751, { -- Sanctuary Under Siege
+											["qg"] = 138519, -- Vorrik
+											["coord"] = { 52.0, 27.7, 864 }, -- Skycallers' Spire (Vol'dun)
+											["sourceQuests"] = { 50550 }, -- The Fall of Emperor Korthek
+											["crs"] = {
+												138519, -- Vorrik
+											},
+										}),
+										q(50805, { -- Skycaller Shutdown (Bonus Objective)
+											["coord"] = { 52.0, 27.7, 864 }, -- Skycallers' Spire (Vol'dun)
+										}),
+										q(50617, { -- Atul'Aman
+											["qg"] = 129588, -- Vorrik
+											["coord"] = { 27.0, 52.5, 864 }, -- Sanctuary of the Devoted
+											["sourceQuests"] = { 50751 }, -- Sanctuary Under Siege
+											["crs"] = {
+												129588, -- Vorrik
+											},
+										}),
+										q(50904, { -- The Abandoned Passage
+											["qg"] = 135625, -- Vorrik
+											["coord"] = { 43.0, 68.2, 864 }, -- Abandoned Passage (Vol'dun)
+											["sourceQuests"] = { 50617 }, -- Atul'Aman
+											["crs"] = {
+												135625, -- Vorrik
+											},
+										}),
+										q(50702, { -- Defeat Jakra'zet
+											["groups"] = {	-- TODO:: Add other azerite armor types
+												i(155398), -- Resilient Outcast's Coif
+												i(161159), -- Resilient Outcast's Spaudlers
+											},
+											["qg"] = 134803, -- Warguard Rakera
+											["coord"] = { 55.7, 36.6, 864 }, -- The Blood Font (Vol'dun)
+											["sourceQuests"] = { 50904 }, -- The Abandoned Passage
+											["crs"] = {
+												134803, -- Warguard Rakera
+											},
+										}),
+										q(50703, { -- Informing the Horde
+											["qg"] = 135133, -- Warguard Rakera
+											["coord"] = { 27, 52.6, 864 }, -- Sanctuary of the Devoted (Vol'dun)
+											["sourceQuests"] = { 50702 }, -- Defeat Jakra'zet
+											["crs"] = {
+												135133, -- Warguard Rakera
+											},
+										}),
+										q(50551, { -- Temple of Sethraliss: Avatar of the Loa
+											["qg"] = 129588, -- Vorrik
+											["coord"] = { 27, 52.6, 864 }, -- Sanctuary of the Devoted (Vol'dun)
+											["sourceQuests"] = { 50702 }, -- Defeat Jakra'zet
+											["crs"] = {
+												129588, -- Vorrik
+											},
+										}),
+									},
 								}),
 							},
-							["coord"] = { 50.7, 64.6 },
-						}),
-						q(48553, {	-- Let it Flow
-							["qg"] = 126814,	-- Ranah
-							["coord"] = { 53.8, 69.3 },
-							["sourceQuests"] = { 51829 },	-- Ranah's Wrench (breadcrumb)
-						}),
-						q(48555, {	-- We Can Salvage the Seeds
-							["qg"] = 126814,	-- Ranah
-							["coord"] = { 53.8, 69.3 },
-							["sourceQuests"] = { 51829 },	-- Ranah's Wrench (breadcrumb)
-						}),
-						q(48551, {	-- Wither Without Water
-							["qg"] = 126814,	-- Ranah
-							["coord"] = { 53.8, 69.3 },
-							["sourceQuests"] = { 51829 },	-- Ranah's Wrench (breadcrumb)
-						}),
-						q(48554, {	-- The Source of the Problem
-							["groups"] = {
-								i(155392),	-- Scorching Sands Grips
-								i(155393),	-- Exiled Veteran's Handguards
-								i(155394),	-- Lastwind Grips
-								i(155395),	-- Resilient Outcast's Gloves
-								i(155448),	-- Deserted Divining Rod
-								i(159975),	-- Scorched Plateau Defender
-							},
-							["qg"] = 126814,	-- Ranah
-							["coord"] = { 53.8, 69.3 },
-							["sourceQuests"] = {
-								48553,	-- Let It Flow
-								48555,	-- We Can Salvage the Seeds
-								48551,	-- Wither Without Water
-							},
-						}),
-						--
+						})),
 						q(49040, {	-- Fond Farewells
 							["qg"] = 127691,	-- Jorak
 							["coord"] = { 52.8, 89.2 },
@@ -563,43 +908,6 @@ _.Zones =
 							["qg"] = 128339,	-- Jorak
 							["coord"] = { 52.9, 89.1 },
 							["description"] = "This version is available after completing Ending the Madness.",
-						}),
-						--
-						i(158909, {	-- Beastbreaker Cage Key
-							["groups"] = {
-								q(48329),	-- Beaten But Not Broken
-							},
-							["coord"] = { 49.1, 38.3 },
-							["description"] = "Can be found inside a cave near Vorrik's Sanctum",
-						}),
-						--
-						q(50596, {	-- Exterminate the Vermin
-							["qg"] = 134408,	-- Foreman Jethek
-							["coord"] = { 49.7, 74.9 },
-							["sourceQuests"] = { 50770 },	-- Effective Antivenom -- need to confirm this
-						}),
-						q(50536, {	-- Magic Decoder Device -- first became visible after completing Effective Antivenom
-							["qg"] = 134148,	-- Maaz
-							["coord"] = { 47.3, 72.7 },
-							["sourceQuests"] = { 50770 },	-- Effective Antivenom -- need to confirm this
-						}),
-						q(48872, {	-- Expedite the Excavation
-							["qg"] = 134164,	-- Amre
-							["coord"] = { 47.4, 72.7 },
-							["sourceQuests"] = { 50536 },	-- Magic Decoder Device
-						}),
-						q(48871, {	-- Rescue the Relics
-							["qg"] = 134148,	-- Maaz
-							["coord"] = { 47.3, 72.7 },
-							["sourceQuests"] = { 50536 },	-- Magic Decoder Device
-						}),
-						q(50535, {	-- Power of the Overseer
-							["qg"] = 134148,	-- Maaz
-							["coord"] = { 47.3, 72.7 },
-							["sourceQuests"] = {
-								48872,	-- Expedite the Excavation
-								48871,	-- Rescue the Relics
-							},
 						}),
 						--
 						q(50794, {	-- Seeking Shelter
@@ -886,12 +1194,6 @@ _.Zones =
 								q(51164),	-- WANTED: Cobra Excursion Participants
 							},
 							["coord"] = { 43.6, 59.9 },
-						}),
-						o(287441, {	-- Wanted: Sandscout Vesarik
-							["groups"] = {
-								q(51165),	-- WANTED: Sandscout Vesarik
-							},
-							["coord"] = { 27.3, 53.2 },
 						}),
 						o(287440, {	-- Wanted: Taz'raka
 							["groups"] = {
@@ -1298,28 +1600,18 @@ _.Zones =
 							["sourceQuests"] = { 47576 },	-- Wrath of the Tiger
 						}),
 						--
+						--[[ Oxlotus: Neither of these quests can be picked up.
 						q(52024, {	-- Informing the Horde
 							["qg"] = 135133,	-- Warguard Rakera
 							["coord"] = { 27.0, 52.5 },
 							["sourceQuests"] = { 50702 },	-- Defeat Jakra'zet
-						}),
-						q(50703, {	-- Informing the Horde
-							["qg"] = 135133,	-- Warguard Rakera
-							["coord"] = { 27.0, 52.5 },
-							["sourceQuests"] = { 50702 },	-- Defeat Jakra'zet
-							["description"] = "This version is given if Vul'dun is the first zone you select.",
 						}),
 						q(52023, {	-- Informing the Horde
 							["qg"] = 135133,	-- Warguard Rakera
 							["coord"] = { 27.0, 52.5 },
 							["sourceQuests"] = { 50702 },	-- Defeat Jakra'zet
 						}),
-						--
-						q(50551, {	-- Temple of Sethraliss: Avatar of the Loa
-							["qg"] = 129588,	-- Vorrik
-							["coord"] = { 27.0, 52.6 },
-							["sourceQuests"] = { 50702 },	-- Defeat Jakra'zet
-						}),
+						]]--
 						--[[ None of these quests appear to have made it out of beta. [Pr3vention - 14.October.2018]
 						q(47860),	-- A Rude Awakening
 						q(48994),	-- Akunda the Liar
