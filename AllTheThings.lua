@@ -9720,35 +9720,39 @@ end);
 				['text'] = "Reroll",
 				['icon'] = "Interface\\Icons\\ability_monk_roll",
 				['description'] = "Click this button to reroll using the active filter.",
-				['visible'] = true,
-				['f'] = -1,
-				['key'] = "nope",
+				['visible'] = true, 
+				['back'] = 0.5,
 				['OnClick'] = function(row, button)
 					self:Reroll();
 					return true;
 				end,
-				['back'] = 0.5,
+				['OnUpdate'] = function(data) 
+					data.visible = true;
+				end,
 			};
 			filterHeader = {
 				['text'] = "Apply a Search Filter",
 				['icon'] = "Interface\\Icons\\TRADE_ARCHAEOLOGY.blp", 
 				["description"] = "Please select a search filter option.",
-				['visible'] = true, 
+				['visible'] = true,
 				['expanded'] = true,
+				['OnUpdate'] = function(data) 
+					data.visible = true;
+				end,
 				['back'] = 1,
 				['g'] = {
 					setmetatable({
 						['description'] = "Click this button to search... EVERYTHING.",
 						['visible'] = true,
-						['f'] = -1,
-						['key'] = "nope",
 						['OnClick'] = function(row, button)
 							app.SetDataMember("RandomSearchFilter", "AllTheThings");
 							self.data = mainHeader;
 							self:Reroll();
 							return true;
 						end,
-						['back'] = 0.5,
+						['OnUpdate'] = function(data) 
+							data.visible = true;
+						end,
 					}, { __index = function(t, key)
 						if key == "text" or key == "icon" or key == "preview" then
 							return app:GetWindow("Prime").data[key];
@@ -9759,135 +9763,135 @@ end);
 						['icon'] = "Interface\\Icons\\Achievement_FeatsOfStrength_Gladiator_10",
 						['description'] = "Click this button to select a random achievement based on what you're missing.",
 						['visible'] = true,
-						['f'] = -1,
-						['key'] = "nope",
 						['OnClick'] = function(row, button)
 							app.SetDataMember("RandomSearchFilter", "Achievement");
 							self.data = mainHeader;
 							self:Reroll();
 							return true;
 						end,
-						['back'] = 0.5,
+						['OnUpdate'] = function(data) 
+							data.visible = true;
+						end,
 					},
 					{
 						['text'] = "Item",
 						['icon'] = "Interface\\Icons\\INV_Box_02",
 						['description'] = "Click this button to select a random item based on what you're missing.",
 						['visible'] = true,
-						['f'] = -1,
-						['key'] = "nope",
 						['OnClick'] = function(row, button)
 							app.SetDataMember("RandomSearchFilter", "Item");
 							self.data = mainHeader;
 							self:Reroll();
 							return true;
 						end,
-						['back'] = 0.5,
+						['OnUpdate'] = function(data) 
+							data.visible = true;
+						end,
 					},
 					{
 						['text'] = "Instance",
 						['icon'] = "Interface\\Icons\\Achievement_Dungeon_HEROIC_GloryoftheRaider",
 						['description'] = "Click this button to select a random instance based on what you're missing.",
 						['visible'] = true,
-						['f'] = -1,
-						['key'] = "nope",
 						['OnClick'] = function(row, button)
 							app.SetDataMember("RandomSearchFilter", "Instance");
 							self.data = mainHeader;
 							self:Reroll();
 							return true;
 						end,
-						['back'] = 0.5,
+						['OnUpdate'] = function(data) 
+							data.visible = true;
+						end,
 					},
 					{
 						['text'] = "Dungeon",
 						['icon'] = "Interface\\Icons\\Achievement_Dungeon_GloryoftheHERO",
 						['description'] = "Click this button to select a random dungeon based on what you're missing.",
 						['visible'] = true,
-						['f'] = -1,
-						['key'] = "nope",
 						['OnClick'] = function(row, button)
 							app.SetDataMember("RandomSearchFilter", "Dungeon");
 							self.data = mainHeader;
 							self:Reroll();
 							return true;
 						end,
-						['back'] = 0.5,
+						['OnUpdate'] = function(data) 
+							data.visible = true;
+						end,
 					},
 					{
 						['text'] = "Raid",
 						['icon'] = "Interface\\Icons\\Achievement_Dungeon_GloryoftheRaider",
 						['description'] = "Click this button to select a random raid based on what you're missing.",
 						['visible'] = true,
-						['f'] = -1,
-						['key'] = "nope",
 						['OnClick'] = function(row, button)
 							app.SetDataMember("RandomSearchFilter", "Raid");
 							self.data = mainHeader;
 							self:Reroll();
 							return true;
 						end,
-						['back'] = 0.5,
+						['OnUpdate'] = function(data) 
+							data.visible = true;
+						end,
 					},
 					{
 						['text'] = "Mount",
 						['icon'] = "Interface\\Icons\\Ability_Mount_AlliancePVPMount",
 						['description'] = "Click this button to select a random mount based on what you're missing.",
 						['visible'] = true,
-						['f'] = -1,
-						['key'] = "nope",
 						['OnClick'] = function(row, button)
 							app.SetDataMember("RandomSearchFilter", "Mount");
 							self.data = mainHeader;
 							self:Reroll();
 							return true;
 						end,
-						['back'] = 0.5,
+						['OnUpdate'] = function(data) 
+							data.visible = true;
+						end,
 					},
 					{
 						['text'] = "Pet",
 						['icon'] = "Interface\\Icons\\INV_Box_02",
 						['description'] = "Click this button to select a random pet based on what you're missing.",
 						['visible'] = true,
-						['f'] = -1,
-						['key'] = "nope",
 						['OnClick'] = function(row, button)
 							app.SetDataMember("RandomSearchFilter", "Pet");
 							self.data = mainHeader;
 							self:Reroll();
 							return true;
 						end,
-						['back'] = 0.5,
+						['OnUpdate'] = function(data) 
+							data.visible = true;
+						end,
 					},
 					{
 						['text'] = "Toy",
 						['icon'] = "Interface\\Icons\\INV_Misc_Toy_10",
 						['description'] = "Click this button to select a random toy based on what you're missing.",
 						['visible'] = true,
-						['f'] = -1,
-						['key'] = "nope",
 						['OnClick'] = function(row, button)
 							app.SetDataMember("RandomSearchFilter", "Toy");
 							self.data = mainHeader;
 							self:Reroll();
 							return true;
 						end,
-						['back'] = 0.5,
+						['OnUpdate'] = function(data) 
+							data.visible = true;
+						end,
 					},
 					{
 						['text'] = "Zone",
 						['icon'] = "Interface\\Icons\\INV_Misc_Map_01",
 						['description'] = "Click this button to select a random zone based on what you're missing.",
 						['visible'] = true,
-						['f'] = -1,
-						['key'] = "nope",
 						['OnClick'] = function(row, button)
 							app.SetDataMember("RandomSearchFilter", "Zone");
 							self.data = mainHeader;
 							self:Reroll();
 							return true;
 						end,
-						['back'] = 0.5,
+						['OnUpdate'] = function(data) 
+							data.visible = true;
+						end,
 					},
 				},
 			};
@@ -9897,21 +9901,25 @@ end);
 				["description"] = "This window allows you to randomly select a place or item to get. Go get 'em!",
 				['visible'] = true, 
 				['expanded'] = true,
+				['OnUpdate'] = function(data) 
+					data.visible = true;
+				end,
 				['back'] = 1,
 				['options'] = {
 					{
 						['text'] = "Change Search Filter",
 						['icon'] = "Interface\\Icons\\TRADE_ARCHAEOLOGY.blp", 
 						["description"] = "Click this to change your search filter.",
+						['back'] = 0.5,
 						['visible'] = true,
-						['f'] = -1,
-						['key'] = "nope",
 						['OnClick'] = function(row, button)
 							self.data = filterHeader;
 							UpdateWindow(self, true);
 							return true;
 						end,
-						['back'] = 0.5,
+						['OnUpdate'] = function(data) 
+							data.visible = true;
+						end,
 					},
 					rerollOption,
 				},
@@ -10004,14 +10012,14 @@ end)();
 						['text'] = "Update World Quests Now",
 						['icon'] = "Interface\\Icons\\INV_Misc_Map_01",
 						['description'] = "Sometimes the World Quest API is slow or fails to return new data. If you wish to forcibly refresh the data without changing zones, click this button now!",
-						['visible'] = true,
-						['f'] = -1,
-						['key'] = "nope",
-						['OnClick'] = function(row, button)
+						['back'] = 0.5,
+						['OnClick'] = function(data, button)
 							Push(self, "Rebuild", self.Rebuild);
 							return true;
 						end,
-						['back'] = 0.5,
+						['OnUpdate'] = function(data) 
+							data.visible = true;
+						end,
 					},
 				},
 			};
