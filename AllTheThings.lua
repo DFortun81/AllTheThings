@@ -1386,10 +1386,8 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 					end
 				elseif group.trackable then
 					if group.saved then
-						if app.Settings:Get("Show:CollectedThings") then
-							right = L["COMPLETE_ICON"];
-						end
-					elseif app.ShowIncompleteThings(group) then
+						right = L["COMPLETE_ICON"];
+					else
 						right = L["NOT_COLLECTED_ICON"];
 					end
 				elseif group.visible then
@@ -1403,7 +1401,7 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 				if group.dr then right = "|c" .. GetProgressColor(group.dr * 0.01) .. tostring(group.dr) .. "%|r " .. right; end
 				
 				-- If this group has specialization requirements, let's attempt to show the specialization icons.
-				local specs = GetDataMember("ShowLootSpecializationRequirements") and group.specs;
+				local specs = group.specs;
 				if specs and #specs > 0 then
 					table.sort(specs);
 					for i,spec in ipairs(specs) do
@@ -6611,7 +6609,7 @@ local function SetRowData(self, row, data)
 			x = 4;
 		end
 		local summary = GetProgressTextForRow(data);
-		local specs = GetDataMember("ShowLootSpecializationRequirements") and data.specs;
+		local specs = data.specs;
 		if specs and #specs > 0 then
 			table.sort(specs);
 			for i,spec in ipairs(specs) do
@@ -10550,7 +10548,6 @@ app.events.VARIABLES_LOADED = function()
 	-- Tooltip Settings
 	GetDataMember("OnlyShowRelevantDatabaseLocations", true);
 	GetDataMember("OnlyShowRelevantSharedAppearances", false);
-	GetDataMember("ShowLootSpecializationRequirements", true);
 	GetDataMember("ShowCompleteSourceLocations", true);
 	GetDataMember("ShowSources", true);
 	GetDataMember("ShowContents", true);
