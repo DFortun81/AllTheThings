@@ -1389,7 +1389,7 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 						if app.Settings:Get("Show:CollectedThings") then
 							right = L["COMPLETE_ICON"];
 						end
-					elseif app.ShowIncompleteQuests(group) then
+					elseif app.ShowIncompleteThings(group) then
 						right = L["NOT_COLLECTED_ICON"];
 					end
 				elseif group.visible then
@@ -1560,7 +1560,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				if sourceID then
 					local sourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
 					if sourceInfo then
-						if GetDataMember("ShowSharedAppearances") then
+						if app.Settings:GetTooltipSetting("SharedAppearances") then
 							local text;
 							if GetDataMember("OnlyShowRelevantSharedAppearances") then
 								-- The user doesn't want to see Shared Appearances that don't match the item's requirements.
@@ -5625,7 +5625,7 @@ app.RaceRequirementFilter = app.NoFilter;
 app.RequireBindingFilter = app.NoFilter;
 app.UnobtainableItemFilter = app.NoFilter;
 app.RequiredSkillFilter = app.NoFilter;
-app.ShowIncompleteQuests = app.Filter;
+app.ShowIncompleteThings = app.Filter;
 app.AutomateTomTomWaypoints = app.NoFilter;
 app.TomTomIgnoreCompletedObjects = app.Filter;
 
@@ -5691,7 +5691,7 @@ UpdateGroup = function(parent, group)
 				-- If this group is trackable, then we should show it.
 				if group.total > 0 and app.GroupVisibilityFilter(group) then
 					group.visible = true;
-				elseif app.ShowIncompleteQuests(group) then
+				elseif app.ShowIncompleteThings(group) then
 					group.visible = not group.saved;
 				else
 					group.visible = false;
@@ -5716,8 +5716,8 @@ UpdateGroup = function(parent, group)
 					end
 				elseif group.trackable then
 					-- If this group is trackable, then we should show it.
-					if app.ShowIncompleteQuests(group) then
-						group.visible = not group.saved or app.Settings:Get("Show:CompletedGroups");
+					if app.ShowIncompleteThings(group) then
+						group.visible = not group.saved;
 					else
 						-- Hide this group. We aren't filtering for it.
 						group.visible = false;
@@ -5755,10 +5755,12 @@ local function UpdateParentProgress(group)
 			UpdateParentProgress(group.parent);
 			
 			-- If this group is trackable, then we should show it.
-			if app.ShowIncompleteQuests(group) then
-				group.visible = not group.saved or app.GroupVisibilityFilter(group);
+			if app.GroupVisibilityFilter(group) then
+				group.visible = true;
+			elseif app.ShowIncompleteThings(group) then
+				group.visible = not group.saved;
 			else
-				group.visible = app.GroupVisibilityFilter(group);
+				group.visible = false;
 			end
 		end
 	end
@@ -10550,7 +10552,6 @@ app.events.VARIABLES_LOADED = function()
 	GetDataMember("OnlyShowRelevantSharedAppearances", false);
 	GetDataMember("ShowLootSpecializationRequirements", true);
 	GetDataMember("ShowCompleteSourceLocations", true);
-	GetDataMember("ShowSharedAppearances", true);
 	GetDataMember("ShowSources", true);
 	GetDataMember("ShowContents", true);
 	GetDataMember("ShowDescriptions", true);

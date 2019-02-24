@@ -112,6 +112,7 @@ local TooltipSettingsBase = {
 		["Enabled"] = true,
 		["Progress"] = true,
 		["ShowIconOnly"] = false,
+		["SharedAppearances"] = true,
 	},
 };
 local OnClickForTab = function(self)
@@ -366,6 +367,11 @@ settings.UpdateMode = function(self)
 	else
 		app.CollectedItemVisibilityFilter = app.Filter;
 	end
+	if self:Get("Show:IncompleteThings") then
+		app.ShowIncompleteThings = app.FilterItemTrackable;
+	else
+		app.ShowIncompleteThings = app.Filter;
+	end
 	if self:Get("AccountWide:Achievements") then
 		app.AchievementFilter = 4;
 	else
@@ -394,11 +400,6 @@ settings.UpdateMode = function(self)
 		app.RequireBindingFilter = app.FilterItemClass_RequireBinding;
 	else
 		app.RequireBindingFilter = app.NoFilter;
-	end
-	if app.GetDataMember("ShowIncompleteQuests", false) then
-		app.ShowIncompleteQuests = app.FilterItemTrackable;
-	else
-		app.ShowIncompleteQuests = app.Filter;
 	end
 end
 
@@ -700,17 +701,17 @@ function(self)
 end);
 BattlePetsAccountWideCheckBox:SetPoint("TOPLEFT", BattlePetsCheckBox, "TOPLEFT", 220, 0);
 
-local FilterThingsByLevelCheckBox = settings:CreateCheckBox("Filter Things By Level",
+local ShowIncompleteThingsCheckBox = settings:CreateCheckBox("Show Incomplete Things",
 function(self)
-	self:SetChecked(settings:Get("Filter:ByLevel"));
+	self:SetChecked(settings:Get("Show:IncompleteThings"));
 end,
 function(self)
-	settings:Set("Filter:ByLevel", self:GetChecked());
+	settings:Set("Show:IncompleteThings", self:GetChecked());
 	settings:UpdateMode();
 	app:RefreshData();
 end);
-FilterThingsByLevelCheckBox:SetATTTooltip("Enable this setting if you only want to see content available to your current level character.\n\nNOTE: This is especially useful on Starter Accounts.");
-FilterThingsByLevelCheckBox:SetPoint("TOPLEFT", BattlePetsAccountWideCheckBox, "TOPLEFT", 160, 0);
+ShowIncompleteThingsCheckBox:SetATTTooltip("Enable this option if you want to see items, objects, NPCs, and headers associated with incomplete quests that don't necessarily have anything you can collect as a result of completing them.\n\nYou can use this to help you earn the Loremaster Achievement if you don't already have it.\n\nNOTE: Rare Spawns and Vignettes also appear in the listing with this setting turned on.");
+ShowIncompleteThingsCheckBox:SetPoint("TOPLEFT", BattlePetsAccountWideCheckBox, "TOPLEFT", 160, 0);
 
 local FlightPathsCheckBox = settings:CreateCheckBox("Flight Paths / Ferry Stations",
 function(self)
@@ -749,6 +750,18 @@ function(self)
 end);
 FlightPathsAccountWideCheckBox:SetATTTooltip("Flight Paths tracking is only really useful per character, but do you really want to collect them all on all 50 of your characters?");
 FlightPathsAccountWideCheckBox:SetPoint("TOPLEFT", FlightPathsCheckBox, "TOPLEFT", 220, 0);
+
+local FilterThingsByLevelCheckBox = settings:CreateCheckBox("Filter Things By Level",
+function(self)
+	self:SetChecked(settings:Get("Filter:ByLevel"));
+end,
+function(self)
+	settings:Set("Filter:ByLevel", self:GetChecked());
+	settings:UpdateMode();
+	app:RefreshData();
+end);
+FilterThingsByLevelCheckBox:SetATTTooltip("Enable this setting if you only want to see content available to your current level character.\n\nNOTE: This is especially useful on Starter Accounts.");
+FilterThingsByLevelCheckBox:SetPoint("TOPLEFT", FlightPathsAccountWideCheckBox, "TOPLEFT", 160, 0);
 
 local FollowersCheckBox = settings:CreateCheckBox("Followers / Champions",
 function(self)
@@ -1160,7 +1173,7 @@ function(self)
 	settings:SetTooltipSetting("Progress", self:GetChecked());
 end);
 ShowCollectionProgressCheckBox:SetATTTooltip("Enable this option if you want to see your progress towards collecting a Thing or completing a group of Things at the Top Right of its tooltip.\n\nWe recommend that you keep this setting turned on.");
-ShowCollectionProgressCheckBox:SetPoint("TOPLEFT", DisplayInCombatCheckBox, "BOTTOMLEFT", -4, 6);
+ShowCollectionProgressCheckBox:SetPoint("TOPLEFT", DisplayInCombatCheckBox, "BOTTOMLEFT", -4, -4);
 
 local ShortenProgressCheckBox = settings:CreateCheckBox("Show Icon Only",
 function(self)
@@ -1178,6 +1191,23 @@ function(self)
 end);
 ShortenProgressCheckBox:SetATTTooltip("Enable this option if you only want to see the icon in the topright corner instead of the icon and the collected/not collected text.\n\nSome people like smaller tooltips...");
 ShortenProgressCheckBox:SetPoint("TOPLEFT", ShowCollectionProgressCheckBox, "BOTTOMLEFT", 4, 4);
+
+local ShowSharedAppearancesCheckBox = settings:CreateCheckBox("Show Shared Appearances",
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("SharedAppearances"));
+	if not settings:GetTooltipSetting("Enabled") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:SetTooltipSetting("SharedAppearances", self:GetChecked());
+end);
+ShowSharedAppearancesCheckBox:SetATTTooltip("Enable this option to see items that share a similar appearance in the tooltip.\n\nNOTE: Items that do not match the armor type are displayed in the list. This is to help you diagnose the Collection progress.\n\nIf you are ever confused by this, as of ATT v1.5.0, you can Right Click the item to open the item and its Shared Appearances into their own standalone Mini List.");
+ShowSharedAppearancesCheckBox:SetPoint("TOPLEFT", ShortenProgressCheckBox, "BOTTOMLEFT", -4, -4);
 end)();
 
 ------------------------------------------
