@@ -2628,19 +2628,6 @@ app.RefreshSaves = RefreshSaves;
 app.OpenMainList = OpenMainList;
 app.OpenMiniListForCurrentProfession = OpenMiniListForCurrentProfession;
 
-app.SetHideBOEItems = function(checked)
-	app.SetDataMember("RequireBindingFilter", checked);
-	if checked then
-		app.RequireBindingFilter = app.FilterItemClass_RequireBinding;
-	else
-		app.RequireBindingFilter = app.NoFilter;
-	end
-	app:RefreshData();
-end
-app.ToggleBOEItems = function()
-	app.SetHideBOEItems(not app.GetDataMember("RequireBindingFilter"));
-end
-
 
 -- Tooltip Functions
 local function AttachTooltipRawSearchResults(self, group)
@@ -5373,17 +5360,17 @@ function app.FilterGroupsByCompletion(group)
 	return group.progress < group.total;
 end
 function app.FilterItemBind(item)
-	return item.b == 2; -- BoE
+	return item.b == 2 or item.b == 3; -- BoE
 end
 function app.FilterItemClass(item)
-	-- If the item is Bind on Equip, return Visible.
-	if app.ItemBindFilter(item) then return true; end
-	return app.ItemTypeFilter(item.f)
+	if app.UnobtainableItemFilter(item.u) then
+		if app.ItemBindFilter(item) then return true; end
+		return app.ItemTypeFilter(item.f)
 			and app.RequireBindingFilter(item)
+			and app.RequiredSkillFilter(item.requireSkill)
 			and app.ClassRequirementFilter(item)
-			and app.RaceRequirementFilter(item)
-			and app.UnobtainableItemFilter(item.u)
-			and app.RequiredSkillFilter(item.requireSkill);
+			and app.RaceRequirementFilter(item);
+	end
 end
 function app.FilterItemClass_RequireClasses(item)
 	return not item.nmc;
@@ -5418,7 +5405,7 @@ function app.FilterItemClass_UnobtainableItem(u)
 	end
 end
 function app.FilterItemClass_RequireBinding(item)
-	if item.b and item.b == 2 then
+	if item.b and (item.b == 2 or item.b == 3) then
 		return false;
 	else
 		return true;

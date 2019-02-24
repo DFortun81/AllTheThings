@@ -333,6 +333,18 @@ end
 settings.ToggleCollectedThings = function(self)
 	settings:SetCollectedThings(not self:Get("Show:CollectedThings", checked));
 end
+settings.SetHideBOEItems = function(self, checked)
+	self:Set("Hide:BoEs", checked);
+	if checked then
+		app.RequireBindingFilter = app.FilterItemClass_RequireBinding;
+	else
+		app.RequireBindingFilter = app.NoFilter;
+	end
+	app:RefreshData();
+end
+settings.ToggleBOEItems = function(self)
+	self:SetHideBOEItems(not self:Get("Hide:BoEs"));
+end
 settings.UpdateMode = function(self)
 	if self:Get("Completionist") then
 		app.ItemSourceFilter = app.FilterItemSource;
@@ -395,23 +407,22 @@ settings.UpdateMode = function(self)
 		app.RecipeChecker = app.GetTempDataSubMember;
 	end
 	
-	if app.GetDataMember("IgnoreFiltersOnNonBindingItems", false) then
+	if self:Get("Filter:BoEs") then
 		app.ItemBindFilter = app.FilterItemBind;
 	else
 		app.ItemBindFilter = app.Filter;
 	end
-	
+	if self:Get("Hide:BoEs") then
+		app.RequireBindingFilter = app.FilterItemClass_RequireBinding;
+	else
+		app.RequireBindingFilter = app.NoFilter;
+	end
 	app:UnregisterEvent("PLAYER_LEVEL_UP");
 	if self:Get("Filter:ByLevel") then
 		app:RegisterEvent("PLAYER_LEVEL_UP");
 		app.GroupRequirementsFilter = app.FilterGroupsByLevel;
 	else
 		app.GroupRequirementsFilter = app.NoFilter;
-	end
-	if app.GetDataMember("RequireBindingFilter", false) then
-		app.RequireBindingFilter = app.FilterItemClass_RequireBinding;
-	else
-		app.RequireBindingFilter = app.NoFilter;
 	end
 end
 
@@ -700,25 +711,6 @@ end);
 AchievementsAccountWideCheckBox:SetATTTooltip("Achievement tracking is usually account wide, but there are a number of achievements exclusive to specific classes and races that you can't get on your main.");
 AchievementsAccountWideCheckBox:SetPoint("TOPLEFT", AchievementsCheckBox, "TOPLEFT", 220, 0);
 
-local ShowCompletedGroupsCheckBox = settings:CreateCheckBox("Show Completed Groups",
-function(self)
-	self:SetChecked(settings:Get("Show:CompletedGroups"));
-	if settings:Get("DebugMode") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
-end,
-function(self)
-	settings:SetCompletedGroups(self:GetChecked());
-	settings:UpdateMode();
-	app:RefreshData();
-end);
-ShowCompletedGroupsCheckBox:SetATTTooltip("Enable this option if you want to see completed groups as a header with a completion percentage. If a group has nothing relevant for your class, this setting will also make those groups appear in the listing.\n\nWe recommend you turn this setting off as it will conserve the space in the mini list and allow you to quickly see what you are missing from the zone.");
-ShowCompletedGroupsCheckBox:SetPoint("TOPLEFT", AchievementsAccountWideCheckBox, "TOPLEFT", 160, 0);
-
 local TransmogCheckBox = settings:CreateCheckBox("Appearances / Transmog",
 function(self)
 	self:SetChecked(settings:Get("Thing:Transmog"));
@@ -753,25 +745,6 @@ function(self)
 end);
 TransmogAccountWideCheckBox:SetPoint("TOPLEFT", TransmogCheckBox, "TOPLEFT", 220, 0);
 
-local ShowCollectedThingsCheckBox = settings:CreateCheckBox("Show Collected Things",
-function(self)
-	self:SetChecked(settings:Get("Show:CollectedThings"));
-	if settings:Get("DebugMode") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
-end,
-function(self)
-	settings:SetCollectedThings(self:GetChecked());
-	settings:UpdateMode();
-	app:RefreshData();
-end);
-ShowCollectedThingsCheckBox:SetATTTooltip("Enable this option if you want to see completed groups as a header with a completion percentage. If a group has nothing relevant for your class, this setting will also make those groups appear in the listing.\n\nWe recommend you turn this setting off as it will conserve the space in the mini list and allow you to quickly see what you are missing from the zone.");
-ShowCollectedThingsCheckBox:SetPoint("TOPLEFT", TransmogAccountWideCheckBox, "TOPLEFT", 160, 0);
-
 local BattlePetsCheckBox = settings:CreateCheckBox("Battle Pets / Companions",
 function(self)
 	self:SetChecked(settings:Get("Thing:BattlePets"));
@@ -801,18 +774,6 @@ function(self)
 	print("Battle pets are only tracked account wide.");
 end);
 BattlePetsAccountWideCheckBox:SetPoint("TOPLEFT", BattlePetsCheckBox, "TOPLEFT", 220, 0);
-
-local ShowIncompleteThingsCheckBox = settings:CreateCheckBox("Show Incomplete Things",
-function(self)
-	self:SetChecked(settings:Get("Show:IncompleteThings"));
-end,
-function(self)
-	settings:Set("Show:IncompleteThings", self:GetChecked());
-	settings:UpdateMode();
-	app:RefreshData();
-end);
-ShowIncompleteThingsCheckBox:SetATTTooltip("Enable this option if you want to see items, objects, NPCs, and headers associated with incomplete quests that don't necessarily have anything you can collect as a result of completing them.\n\nYou can use this to help you earn the Loremaster Achievement if you don't already have it.\n\nNOTE: Rare Spawns and Vignettes also appear in the listing with this setting turned on.");
-ShowIncompleteThingsCheckBox:SetPoint("TOPLEFT", BattlePetsAccountWideCheckBox, "TOPLEFT", 160, 0);
 
 local FlightPathsCheckBox = settings:CreateCheckBox("Flight Paths / Ferry Stations",
 function(self)
@@ -851,18 +812,6 @@ function(self)
 end);
 FlightPathsAccountWideCheckBox:SetATTTooltip("Flight Paths tracking is only really useful per character, but do you really want to collect them all on all 50 of your characters?");
 FlightPathsAccountWideCheckBox:SetPoint("TOPLEFT", FlightPathsCheckBox, "TOPLEFT", 220, 0);
-
-local FilterThingsByLevelCheckBox = settings:CreateCheckBox("Filter Things By Level",
-function(self)
-	self:SetChecked(settings:Get("Filter:ByLevel"));
-end,
-function(self)
-	settings:Set("Filter:ByLevel", self:GetChecked());
-	settings:UpdateMode();
-	app:RefreshData();
-end);
-FilterThingsByLevelCheckBox:SetATTTooltip("Enable this setting if you only want to see content available to your current level character.\n\nNOTE: This is especially useful on Starter Accounts.");
-FilterThingsByLevelCheckBox:SetPoint("TOPLEFT", FlightPathsAccountWideCheckBox, "TOPLEFT", 160, 0);
 
 local FollowersCheckBox = settings:CreateCheckBox("Followers / Champions",
 function(self)
@@ -1204,6 +1153,99 @@ function(self)
 	self:SetAlpha(0.2);
 end);
 ToysAccountWideCheckBox:SetPoint("TOPLEFT", ToysCheckBox, "TOPLEFT", 220, 0);
+
+
+
+local ShowCompletedGroupsCheckBox = settings:CreateCheckBox("Show Completed Groups",
+function(self)
+	self:SetChecked(settings:Get("Show:CompletedGroups"));
+	if settings:Get("DebugMode") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:SetCompletedGroups(self:GetChecked());
+	settings:UpdateMode();
+	app:RefreshData();
+end);
+ShowCompletedGroupsCheckBox:SetATTTooltip("Enable this option if you want to see completed groups as a header with a completion percentage. If a group has nothing relevant for your class, this setting will also make those groups appear in the listing.\n\nWe recommend you turn this setting off as it will conserve the space in the mini list and allow you to quickly see what you are missing from the zone.");
+ShowCompletedGroupsCheckBox:SetPoint("TOPLEFT", AchievementsAccountWideCheckBox, "TOPLEFT", 160, 0);
+
+local ShowCollectedThingsCheckBox = settings:CreateCheckBox("Show Collected Things",
+function(self)
+	self:SetChecked(settings:Get("Show:CollectedThings"));
+	if settings:Get("DebugMode") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:SetCollectedThings(self:GetChecked());
+	settings:UpdateMode();
+	app:RefreshData();
+end);
+ShowCollectedThingsCheckBox:SetATTTooltip("Enable this option if you want to see completed groups as a header with a completion percentage. If a group has nothing relevant for your class, this setting will also make those groups appear in the listing.\n\nWe recommend you turn this setting off as it will conserve the space in the mini list and allow you to quickly see what you are missing from the zone.");
+ShowCollectedThingsCheckBox:SetPoint("TOPLEFT", TransmogAccountWideCheckBox, "TOPLEFT", 160, 0);
+
+local ShowIncompleteThingsCheckBox = settings:CreateCheckBox("Show Incomplete Things",
+function(self)
+	self:SetChecked(settings:Get("Show:IncompleteThings"));
+end,
+function(self)
+	settings:Set("Show:IncompleteThings", self:GetChecked());
+	settings:UpdateMode();
+	app:RefreshData();
+end);
+ShowIncompleteThingsCheckBox:SetATTTooltip("Enable this option if you want to see items, objects, NPCs, and headers associated with incomplete quests that don't necessarily have anything you can collect as a result of completing them.\n\nYou can use this to help you earn the Loremaster Achievement if you don't already have it.\n\nNOTE: Rare Spawns and Vignettes also appear in the listing with this setting turned on.");
+ShowIncompleteThingsCheckBox:SetPoint("TOPLEFT", BattlePetsAccountWideCheckBox, "TOPLEFT", 160, 0);
+
+local FilterThingsByLevelCheckBox = settings:CreateCheckBox("Filter Things By Level",
+function(self)
+	self:SetChecked(settings:Get("Filter:ByLevel"));
+end,
+function(self)
+	settings:Set("Filter:ByLevel", self:GetChecked());
+	settings:UpdateMode();
+	app:RefreshData();
+end);
+FilterThingsByLevelCheckBox:SetATTTooltip("Enable this setting if you only want to see content available to your current level character.\n\nNOTE: This is especially useful on Starter Accounts.");
+FilterThingsByLevelCheckBox:SetPoint("TOPLEFT", FlightPathsAccountWideCheckBox, "TOPLEFT", 160, 0);
+
+local HideBoEItemsCheckBox = settings:CreateCheckBox("Hide BoE Items",
+function(self)
+	self:SetChecked(settings:Get("Hide:BoEs"));
+	if settings:Get("DebugMode") or settings:Get("Filter:BoEs") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:SetHideBOEItems(self:GetChecked());
+end);
+HideBoEItemsCheckBox:SetATTTooltip("Enable this setting if you want to hide Bind on Equip items.\n\nThis setting is useful for when you are trying to finish a Classic Dungeon for a character and don't want to farm specifically for items that can be farmed on alts or on the Auction House.\n\nIE: Don't lose your mind grinding for Pendulum of Doom.");
+HideBoEItemsCheckBox:SetPoint("TOPLEFT", FollowersAccountWideCheckBox, "TOPLEFT", 160, 0);
+
+local IgnoreFiltersForBoEsCheckBox = settings:CreateCheckBox("Ignore Filters for BoEs",
+function(self)
+	self:SetChecked(settings:Get("Filter:BoEs"));
+end,
+function(self)
+	settings:Set("Filter:BoEs", self:GetChecked());
+	settings:UpdateMode();
+	app:RefreshData();
+end);
+IgnoreFiltersForBoEsCheckBox:SetATTTooltip("Enable this setting if you want to ignore armor, weapon, race, class, or profession requirements for BoE items.\n\nIf you are trying to collect things for your alts via Auction House scanning, this mode may be useful to you.");
+IgnoreFiltersForBoEsCheckBox:SetPoint("TOPLEFT", IllusionsAccountWideCheckBox, "TOPLEFT", 160, 0);
 end)();
 
 ------------------------------------------
