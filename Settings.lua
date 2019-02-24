@@ -70,19 +70,19 @@ local GeneralSettingsBase = {
 		["DebugMode"] = false,
 		["InsaneMode"] = false,
 		["AccountWide:Achievements"] = true,
-		["AccountWide:BattlePets"] = true,
+		-- ["AccountWide:BattlePets"] = true,
 		["AccountWide:FlightPaths"] = true,
 		["AccountWide:Followers"] = true,
 		["AccountWide:Illusions"] = true,
-		["AccountWide:Mounts"] = true,
+		-- ["AccountWide:Mounts"] = true,
 		["AccountWide:MusicRolls"] = true,
-		["AccountWide:Quests"] = false,
+		-- ["AccountWide:Quests"] = false,
 		["AccountWide:Recipes"] = true,
 		["AccountWide:Reputations"] = true,
 		["AccountWide:SelfieFilters"] = true,
 		["AccountWide:Titles"] = true,
-		["AccountWide:Toys"] = true,
-		["AccountWide:Transmog"] = true,
+		-- ["AccountWide:Toys"] = true,
+		-- ["AccountWide:Transmog"] = true,
 		["Thing:Achievements"] = true,
 		["Thing:BattlePets"] = true,
 		["Thing:FlightPaths"] = true,
@@ -632,7 +632,7 @@ function(self)
 	end
 	app:RefreshData();
 end);
-TransmogCheckBox:SetATTTooltip("Enable this option to track appearance acquisition.\n\nNOTE: Disabling this option also disables all fanfares and acquisition logic, you can use this toggle as a way to prevent lag spikes while doing important group content, bare in mind, the compution will need to occur once re-enabled.\n\nTrack Account Wide by Default.");
+TransmogCheckBox:SetATTTooltip("Enable this option to track appearance acquisition.\n\nNOTE: Disabling this option also disables all fanfares and acquisition logic, you can use this toggle as a way to prevent lag spikes while doing important group content, bare in mind, the compution will need to occur once re-enabled.\n\nTracked Account Wide by Default.");
 TransmogCheckBox:SetPoint("TOPLEFT", AchievementsCheckBox, "BOTTOMLEFT", 0, 4);
 
 local TransmogAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
@@ -681,7 +681,7 @@ function(self)
 	settings:UpdateMode();
 	app:RefreshData();
 end);
-BattlePetsCheckBox:SetATTTooltip("Enable this option to track battle pets and companions. These can be found in the open world or via boss drops in various Dungeons and Raids as well as from Vendors and Reputation.\n\nTrack Account Wide by Default.");
+BattlePetsCheckBox:SetATTTooltip("Enable this option to track battle pets and companions. These can be found in the open world or via boss drops in various Dungeons and Raids as well as from Vendors and Reputation.\n\nTracked Account Wide by Default.");
 BattlePetsCheckBox:SetPoint("TOPLEFT", TransmogCheckBox, "BOTTOMLEFT", 0, 4);
 
 local BattlePetsAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
@@ -787,26 +787,20 @@ function(self)
 	settings:UpdateMode();
 	app:RefreshData();
 end);
-IllusionsCheckBox:SetATTTooltip("Enable this option to track illusions.\n\nThese are really cool looking transmog effects you can apply to your weapons!\n\nNOTE: You are not an Illusion despite what all the Nightborn think.");
+IllusionsCheckBox:SetATTTooltip("Enable this option to track illusions.\n\nThese are really cool looking transmog effects you can apply to your weapons!\n\nNOTE: You are not an Illusion despite what all the Nightborn think.\n\nTracked Account Wide by Default.");
 IllusionsCheckBox:SetPoint("TOPLEFT", FollowersCheckBox, "BOTTOMLEFT", 0, 4);
 
 local IllusionsAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
 function(self)
 	self:SetChecked(settings:Get("AccountWide:Illusions"));
-	if settings:Get("InsaneMode") or settings:Get("DebugMode") or not settings:Get("Thing:Illusions") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
+	self:Disable();
+	self:SetAlpha(0.2);
 end,
 function(self)
 	settings:Set("AccountWide:Illusions", self:GetChecked());
 	settings:UpdateMode();
 	app:RefreshData();
 end);
-IllusionsAccountWideCheckBox:SetATTTooltip("Class and Race-locked Illusions are not normally tracked account wide in Blizzard's database, but we can do that.");
 IllusionsAccountWideCheckBox:SetPoint("TOPLEFT", IllusionsCheckBox, "TOPLEFT", 220, 0);
 
 local MountsCheckBox = settings:CreateCheckBox("Mounts",
@@ -825,26 +819,15 @@ function(self)
 	settings:UpdateMode();
 	app:RefreshData();
 end);
-MountsCheckBox:SetATTTooltip("Enable this option to track mounts.\n\nYou can ride these to go places faster than when running. Who knew!");
+MountsCheckBox:SetATTTooltip("Enable this option to track mounts.\n\nYou can ride these to go places faster than when running. Who knew!\n\nTracked Account Wide by Default.");
 MountsCheckBox:SetPoint("TOPLEFT", IllusionsCheckBox, "BOTTOMLEFT", 0, 4);
 
 local MountsAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
 function(self)
-	self:SetChecked(settings:Get("AccountWide:Mounts"));
-	if settings:Get("InsaneMode") or settings:Get("DebugMode") or not settings:Get("Thing:Mounts") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
-end,
-function(self)
-	settings:Set("AccountWide:Mounts", self:GetChecked());
-	settings:UpdateMode();
-	app:RefreshData();
+	self:SetChecked(true);
+	self:Disable();
+	self:SetAlpha(0.2);
 end);
-MountsAccountWideCheckBox:SetATTTooltip("Class and Race-locked Mounts are not normally tracked account wide in Blizzard's database, but we can do that.");
 MountsAccountWideCheckBox:SetPoint("TOPLEFT", MountsCheckBox, "TOPLEFT", 220, 0);
 
 local MusicRollsCheckBox = settings:CreateCheckBox("Music Rolls",
@@ -906,14 +889,9 @@ QuestsCheckBox:SetPoint("TOPLEFT", MusicRollsCheckBox, "BOTTOMLEFT", 0, 4);
 
 local QuestsAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
 function(self)
-	self:SetChecked(settings:Get("AccountWide:Quests"));
+	self:SetChecked(false);
 	self:Disable();
 	self:SetAlpha(0.2);
-end,
-function(self)
-	settings:Set("AccountWide:Quests", self:GetChecked());
-	settings:UpdateMode();
-	app:RefreshData();
 end);
 QuestsAccountWideCheckBox:SetPoint("TOPLEFT", QuestsCheckBox, "TOPLEFT", 220, 0);
 
@@ -1090,14 +1068,9 @@ ToysCheckBox:SetPoint("TOPLEFT", TitlesCheckBox, "BOTTOMLEFT", 0, 4);
 
 local ToysAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
 function(self)
-	self:SetChecked(settings:Get("AccountWide:Toys"));
+	self:SetChecked(true);
 	self:Disable();
 	self:SetAlpha(0.2);
-end,
-function(self)
-	settings:Set("AccountWide:Toys", self:GetChecked());
-	settings:UpdateMode();
-	app:RefreshData();
 end);
 ToysAccountWideCheckBox:SetPoint("TOPLEFT", ToysCheckBox, "TOPLEFT", 220, 0);
 end)();

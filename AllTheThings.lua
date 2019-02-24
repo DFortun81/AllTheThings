@@ -4610,7 +4610,7 @@ app.BaseMusicRoll = {
 		if key == "key" then
 			return "questID";
 		elseif key == "collectible" or key == "trackable" then
-			return completed and app.Settings:Get("Thing:MusicRoll");
+			return app.Settings:Get("Thing:MusicRolls");
 		elseif key == "collected" or key == "saved" then
 			if app.Settings:Get("AccountWide:MusicRolls") then
 				if GetDataSubMember("CollectedMusicRolls", t.questID) then
@@ -4870,7 +4870,45 @@ app.BaseQuest = {
 		elseif key == "repeatable" then
 			return t.isDaily or t.isWeekly;
 		elseif key == "saved" then
-			return IsQuestFlaggedCompleted(t.questID) or IsQuestFlaggedCompleted(t.altQuestID);
+			if t.f == 60 then
+				if app.Settings:Get("AccountWide:SelfieFilters") then
+					if GetDataSubMember("CollectedSelfieFilters", t.questID) then
+						return 1;
+					end
+				else
+					if GetTempDataSubMember("CollectedSelfieFilters", t.questID) then
+						return 1;
+					end
+				end
+				if IsQuestFlaggedCompleted(t.questID) then
+					SetTempDataSubMember("CollectedSelfieFilters", t.questID, 1);
+					SetDataSubMember("CollectedSelfieFilters", t.questID, 1);
+					return 1;
+				end
+			elseif IsQuestFlaggedCompleted(t.questID) then
+				return 1;
+			end
+			if t.altQuestID then
+				if t.f == 60 then
+					if app.Settings:Get("AccountWide:SelfieFilters") then
+						if GetDataSubMember("CollectedSelfieFilters", t.altQuestID) then
+							return 1;
+						end
+					else
+						if GetTempDataSubMember("CollectedSelfieFilters", t.altQuestID) then
+							return 1;
+						end
+					end
+					if IsQuestFlaggedCompleted(t.altQuestID) then
+						SetTempDataSubMember("CollectedSelfieFilters", t.altQuestID, 1);
+						SetDataSubMember("CollectedSelfieFilters", t.altQuestID, 1);
+						return 1;
+					end
+				else
+					return IsQuestFlaggedCompleted(t.altQuestID);
+				end
+			end
+			
 		else
 			-- Something that isn't dynamic.
 			return table[key];
@@ -10420,6 +10458,7 @@ app.events.VARIABLES_LOADED = function()
 	GetDataMember("CollectedFactions", {});
 	GetDataMember("CollectedFollowers", {});
 	GetDataMember("CollectedMusicRolls", {});
+	GetDataMember("CollectedSelfieFilters", {});
 	GetDataMember("CollectedTitles", {});
 	GetDataMember("CollectedSpells", {});
 	GetDataMember("SeasonalFilters", {});
@@ -10469,6 +10508,15 @@ app.events.VARIABLES_LOADED = function()
 		myMusicRolls = {};
 		musicRolls[app.Me] = myMusicRolls;
 		SetTempDataMember("CollectedMusicRolls", myMusicRolls);
+	end
+	
+	-- Cache your character's selfie filters data.
+	local selfieFilters = GetDataMember("CollectedSelfieFiltersPerCharacter", {});
+	local mySelfieFilters = GetTempDataMember("CollectedSelfieFilters", selfieFilters[app.Me]);
+	if not mySelfieFilters then
+		mySelfieFilters = {};
+		selfieFilters[app.Me] = mySelfieFilters;
+		SetTempDataMember("CollectedSelfieFilters", mySelfieFilters);
 	end
 	
 	-- Cache your character's title data.
