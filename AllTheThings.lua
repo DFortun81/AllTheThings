@@ -724,7 +724,7 @@ function app:PlayFanfare()
 		lastPlayedFanfare = now;
 		
 		-- Play a random fanfare
-		local t = L["AUDIO_FANFARE_TABLE"];
+		local t = app.Settings.AUDIO_FANFARE_TABLE;
 		if t and type(t) == "table" then
 			local id = math.random(1, #t);
 			if t[id] then PlaySoundFile(t[id], "master"); end
@@ -734,7 +734,7 @@ end
 function app:PlayRareFindSound()
 	if GetDataMember("PlayRareFindSound", true) then
 		-- Play a random rarefind sound
-		local t = L["AUDIO_RAREFIND_TABLE"];
+		local t = app.Settings.AUDIO_RAREFIND_TABLE;
 		if t and type(t) == "table" then
 			local id = math.random(1, #t);
 			if t[id] then PlaySoundFile(t[id], "master"); end
@@ -744,7 +744,7 @@ end
 function app:PlayRemoveSound()
 	if GetDataMember("PlayRemoveSound", true) then
 		-- Play a random fanfare
-		local t = L["AUDIO_REMOVE_TABLE"];
+		local t = app.Settings.AUDIO_REMOVE_TABLE;
 		if t and type(t) == "table" then
 			local id = math.random(1, #t);
 			if t[id] then PlaySoundFile(t[id], "master"); end
@@ -10333,20 +10333,6 @@ SlashCmdList["AllTheThings"] = function(cmd)
 		app:GetWindow("WorldQuests"):Toggle();
 	elseif cmd == "unsorted" then
 		app:GetWindow("Unsorted"):Toggle();
-	elseif string.sub(cmd,1,string.len("load "))=="load " then
-		app.Settings:profileLoad(string.sub(cmd,string.len("load ")))
-	elseif cmd == "load" or cmd =="load " then	
-		app.print("load cmd is missing arg")		
-	elseif string.sub(cmd,1,string.len("save "))=="save " then
-		app.Settings:profileSave(string.sub(cmd,string.len("save ")))
-	elseif cmd == "save" or cmd =="save " then	
-		app.print("save cmd is missing arg")
-	elseif string.sub(cmd,1,string.len("delete "))=="delete " then
-		app.Settings:profileDelete(string.sub(cmd,string.len("delete ")))
-	elseif cmd == "delete" or cmd =="delete " then	
-		app.print("delete cmd is missing arg")		
-	elseif cmd == "list" then
-		app.Settings:profileList()
 	else
 		-- Search for the Link in the database
 		local group = GetCachedSearchResults(cmd, SearchForLink, cmd);
@@ -10526,12 +10512,6 @@ app.events.VARIABLES_LOADED = function()
 		myTitles = {};
 		musicRolls[app.Me] = myTitles;
 		SetTempDataMember("CollectedTitles", myTitles);
-	end
-	
-	-- Register for Dynamic Events and Assign Filters
-	if GetDataMember("ShowMinimapButton", true) then
-		app.Minimap = app.CreateMinimapButton(); -- NOTE: Create this if they turn it on.
-		app.Minimap:Show();
 	end
 	
 	if GetDataMember("AutomateTomTomWaypoints", false) then

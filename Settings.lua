@@ -110,6 +110,10 @@ local TooltipSettingsBase = {
 	__index = {
 		["DisplayInCombat"] = true,
 		["Enabled"] = true,
+		["MinimapButton"] = true,
+		["MinimapSize"] = 36,
+		["MinimapStyle"] = true,
+		["Precision"] = 2,
 		["Progress"] = true,
 		["ShowIconOnly"] = false,
 		["SharedAppearances"] = true,
@@ -141,6 +145,18 @@ settings.Initialize = function(self)
 	setmetatable(AllTheThingsSettings.General, GeneralSettingsBase);
 	setmetatable(AllTheThingsSettings.Filters, FilterSettingsBase);
 	setmetatable(AllTheThingsSettings.Tooltips, TooltipSettingsBase);
+	self.PrecisionSlider:SetValue(self:GetTooltipSetting("Precision"));
+	self.MinimapButtonSizeSlider:SetValue(self:GetTooltipSetting("MinimapSize"));
+	if self:GetTooltipSetting("MinimapButton") then
+		if not app.Minimap then
+			local size = self:GetTooltipSetting("MinimapSize");
+			app.Minimap = app.CreateMinimapButton();
+			app.Minimap:SetSize(size, size);
+		end
+		app.Minimap:Show();
+	elseif app.Minimap then
+		app.Minimap:Hide();
+	end
 	OnClickForTab(self.Tabs[1]);
 	self:Refresh();
 	self:UpdateMode();
@@ -546,6 +562,99 @@ function(self)
 end);
 InsaneModeCheckBox:SetATTTooltip("Turn this setting on if you want to treat every additional \"Thing\" as Collectible.\n\nUnobtainable filters still apply.");
 InsaneModeCheckBox:SetPoint("TOPLEFT", AccountModeCheckBox, "BOTTOMLEFT", 0, 4);
+
+
+
+-- This creates the "Precision" slider.
+local PrecisionSlider = CreateFrame("Slider", "ATTPrecisionSlider", settings, "OptionsSliderTemplate");
+PrecisionSlider:SetPoint("RIGHT", settings, "RIGHT", -20, 0);
+PrecisionSlider:SetPoint("TOP", ModeLabel, "BOTTOM", 0, -12);
+table.insert(settings.MostRecentTab.objects, PrecisionSlider);
+settings.PrecisionSlider = PrecisionSlider;
+PrecisionSlider.tooltipText = 'Use this to customize your desired level of precision in percentage calculations.\n\nDefault: 2';
+PrecisionSlider:SetOrientation('HORIZONTAL');
+PrecisionSlider:SetWidth(260);
+PrecisionSlider:SetHeight(20);
+PrecisionSlider:SetValueStep(1);
+PrecisionSlider:SetMinMaxValues(0, 8);
+PrecisionSlider:SetObeyStepOnDrag(true);
+_G[PrecisionSlider:GetName() .. 'Low']:SetText('0')
+_G[PrecisionSlider:GetName() .. 'High']:SetText('8')
+_G[PrecisionSlider:GetName() .. 'Text']:SetText("Level of Precision for Percentage")
+PrecisionSlider.Label = PrecisionSlider:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall");
+PrecisionSlider.Label:SetPoint("TOP", PrecisionSlider, "BOTTOM", 0, 0);
+PrecisionSlider.Label:SetText(PrecisionSlider:GetValue());
+PrecisionSlider:SetScript("OnValueChanged", function(self, newValue)
+	if newValue == app.GetDataMember("Precision") then
+		return 1;
+	end
+	app.SetDataMember("Precision", newValue)
+	self.Label:SetText(newValue);
+	app:UpdateWindows();
+end);
+
+-- This creates the "Minimap Button Size" slider.
+local MinimapButtonSizeSlider = CreateFrame("Slider", "ATTMinimapButtonSizeSlider", settings, "OptionsSliderTemplate");
+MinimapButtonSizeSlider:SetPoint("RIGHT", settings, "RIGHT", -20, 0);
+MinimapButtonSizeSlider:SetPoint("TOP", PrecisionSlider, "BOTTOM", 0, -28);
+table.insert(settings.MostRecentTab.objects, MinimapButtonSizeSlider);
+settings.MinimapButtonSizeSlider = MinimapButtonSizeSlider;
+MinimapButtonSizeSlider.tooltipText = 'Use this to customize the size of the Minimap Button.\n\nDefault: 36';
+MinimapButtonSizeSlider:SetOrientation('HORIZONTAL');
+MinimapButtonSizeSlider:SetWidth(260);
+MinimapButtonSizeSlider:SetHeight(20);
+MinimapButtonSizeSlider:SetValueStep(1);
+MinimapButtonSizeSlider:SetMinMaxValues(18, 48);
+MinimapButtonSizeSlider:SetObeyStepOnDrag(true);
+_G[MinimapButtonSizeSlider:GetName() .. 'Low']:SetText('18')
+_G[MinimapButtonSizeSlider:GetName() .. 'High']:SetText('48')
+_G[MinimapButtonSizeSlider:GetName() .. 'Text']:SetText("Minimap Button Size")
+MinimapButtonSizeSlider.Label = MinimapButtonSizeSlider:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall");
+MinimapButtonSizeSlider.Label:SetPoint("TOP", MinimapButtonSizeSlider, "BOTTOM", 0, 0);
+MinimapButtonSizeSlider.Label:SetText(MinimapButtonSizeSlider:GetValue());
+MinimapButtonSizeSlider:SetScript("OnValueChanged", function(self, newValue)
+	if newValue == settings:GetTooltipSetting("MinimapSize") then
+		return 1;
+	end
+	settings:SetTooltipSetting("MinimapSize", newValue)
+	self.Label:SetText(newValue);
+	if app.Minimap then app.Minimap:SetSize(newValue, newValue); end
+end);
+
+local ShowMinimapButtonCheckBox = settings:CreateCheckBox("Show the Minimap Button",
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("MinimapButton"));
+end,
+function(self)
+	settings:SetTooltipSetting("MinimapButton", self:GetChecked());
+	if self:GetChecked() then
+		if not app.Minimap then
+			local size = self:GetTooltipSetting("MinimapSize");
+			app.Minimap = app.CreateMinimapButton();
+			app.Minimap:SetSize(size, size);
+		end
+		app.Minimap:Show();
+	elseif app.Minimap then
+		app.Minimap:Hide();
+	end
+end);
+ShowMinimapButtonCheckBox:SetATTTooltip("Enable this option if you want to see the minimap button. This button allows you to quickly access the Main List, show your Overall Collection Progress, and access the Settings Menu by right clicking it.\n\nSome people don't like clutter. Alternatively, you can access the Main List by typing '/att' in your chatbox. From there, you can right click the header to get to the Settings Menu.");
+ShowMinimapButtonCheckBox:SetPoint("TOP", MinimapButtonSizeSlider, "BOTTOM", 0, -12);
+ShowMinimapButtonCheckBox:SetPoint("RIGHT", settings, "RIGHT", -228, 0);
+
+local MinimapButtonStyleCheckBox = settings:CreateCheckBox("Use the Old Minimap Style",
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("MinimapStyle"));
+end,
+function(self)
+	settings:SetTooltipSetting("MinimapStyle", self:GetChecked());
+	settings:UpdateMode();
+end);
+MinimapButtonStyleCheckBox:SetATTTooltip("Some people don't like the new minimap button...\n\nThose people are wrong!\n\nIf you don't like it, here's an option to go back to the old style.");
+MinimapButtonStyleCheckBox:SetPoint("TOP", ShowMinimapButtonCheckBox, "BOTTOM", 0, 4);
+MinimapButtonStyleCheckBox:SetPoint("RIGHT", settings, "RIGHT", -228, 0);
+
+
 
 local ThingsLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
 ThingsLabel:SetPoint("TOPLEFT", InsaneModeCheckBox, "BOTTOMLEFT", 0, -12);
