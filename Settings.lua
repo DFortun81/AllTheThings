@@ -110,6 +110,7 @@ local TooltipSettingsBase = {
 	__index = {
 		["DisplayInCombat"] = true,
 		["Enabled"] = true,
+		["Expand:Difficulty"] = true,
 		["MinimapButton"] = true,
 		["MinimapSize"] = 36,
 		["MinimapStyle"] = true,
@@ -1192,7 +1193,7 @@ function(self)
 	app:RefreshData();
 end);
 ShowCollectedThingsCheckBox:SetATTTooltip("Enable this option if you want to see completed groups as a header with a completion percentage. If a group has nothing relevant for your class, this setting will also make those groups appear in the listing.\n\nWe recommend you turn this setting off as it will conserve the space in the mini list and allow you to quickly see what you are missing from the zone.");
-ShowCollectedThingsCheckBox:SetPoint("TOPLEFT", TransmogAccountWideCheckBox, "TOPLEFT", 160, 0);
+ShowCollectedThingsCheckBox:SetPoint("TOPLEFT", ShowCompletedGroupsCheckBox, "BOTTOMLEFT", 0, 4);
 
 local ShowIncompleteThingsCheckBox = settings:CreateCheckBox("Show Incomplete Things",
 function(self)
@@ -1204,7 +1205,7 @@ function(self)
 	app:RefreshData();
 end);
 ShowIncompleteThingsCheckBox:SetATTTooltip("Enable this option if you want to see items, objects, NPCs, and headers associated with incomplete quests that don't necessarily have anything you can collect as a result of completing them.\n\nYou can use this to help you earn the Loremaster Achievement if you don't already have it.\n\nNOTE: Rare Spawns and Vignettes also appear in the listing with this setting turned on.");
-ShowIncompleteThingsCheckBox:SetPoint("TOPLEFT", BattlePetsAccountWideCheckBox, "TOPLEFT", 160, 0);
+ShowIncompleteThingsCheckBox:SetPoint("TOPLEFT", ShowCollectedThingsCheckBox, "BOTTOMLEFT", 0, 4);
 
 local FilterThingsByLevelCheckBox = settings:CreateCheckBox("Filter Things By Level",
 function(self)
@@ -1216,7 +1217,7 @@ function(self)
 	app:RefreshData();
 end);
 FilterThingsByLevelCheckBox:SetATTTooltip("Enable this setting if you only want to see content available to your current level character.\n\nNOTE: This is especially useful on Starter Accounts.");
-FilterThingsByLevelCheckBox:SetPoint("TOPLEFT", FlightPathsAccountWideCheckBox, "TOPLEFT", 160, 0);
+FilterThingsByLevelCheckBox:SetPoint("TOPLEFT", ShowIncompleteThingsCheckBox, "BOTTOMLEFT", 0, 4);
 
 local HideBoEItemsCheckBox = settings:CreateCheckBox("Hide BoE Items",
 function(self)
@@ -1233,7 +1234,7 @@ function(self)
 	settings:SetHideBOEItems(self:GetChecked());
 end);
 HideBoEItemsCheckBox:SetATTTooltip("Enable this setting if you want to hide Bind on Equip items.\n\nThis setting is useful for when you are trying to finish a Classic Dungeon for a character and don't want to farm specifically for items that can be farmed on alts or on the Auction House.\n\nIE: Don't lose your mind grinding for Pendulum of Doom.");
-HideBoEItemsCheckBox:SetPoint("TOPLEFT", FollowersAccountWideCheckBox, "TOPLEFT", 160, 0);
+HideBoEItemsCheckBox:SetPoint("TOPLEFT", FilterThingsByLevelCheckBox, "BOTTOMLEFT", 0, 4);
 
 local IgnoreFiltersForBoEsCheckBox = settings:CreateCheckBox("Ignore Filters for BoEs",
 function(self)
@@ -1245,7 +1246,24 @@ function(self)
 	app:RefreshData();
 end);
 IgnoreFiltersForBoEsCheckBox:SetATTTooltip("Enable this setting if you want to ignore armor, weapon, race, class, or profession requirements for BoE items.\n\nIf you are trying to collect things for your alts via Auction House scanning, this mode may be useful to you.");
-IgnoreFiltersForBoEsCheckBox:SetPoint("TOPLEFT", IllusionsAccountWideCheckBox, "TOPLEFT", 160, 0);
+IgnoreFiltersForBoEsCheckBox:SetPoint("TOPLEFT", HideBoEItemsCheckBox, "BOTTOMLEFT", 0, 4);
+
+local ExpandDifficultyCheckBox = settings:CreateCheckBox("Expand Current Difficulty",
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("Expand:Difficulty"));
+	if settings:Get("DebugMode") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:SetTooltipSetting("Expand:Difficulty", self:GetChecked());
+end);
+ExpandDifficultyCheckBox:SetATTTooltip("Enable this option if you want to automatically minimize difficulty headers in the mini list that are not active when you enter a dungeon or raid.\n\nExample: Minimize the Heroic header when in a Normal difficulty dungeon");
+ExpandDifficultyCheckBox:SetPoint("TOPLEFT", IgnoreFiltersForBoEsCheckBox, "BOTTOMLEFT", 0, 4);
 end)();
 
 ------------------------------------------

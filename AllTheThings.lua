@@ -1337,7 +1337,6 @@ local function MergeObject(g, t, index)
 			return o;
 		end
 	end
-	t.expanded = true;
 	if index then
 		tinsert(g, index, t);
 	else
@@ -1346,14 +1345,18 @@ local function MergeObject(g, t, index)
 	return t;
 end
 local function ReapplyExpand(g, g2)
-	for i,o in ipairs(g2) do
+	for i,o in ipairs(g) do
 		local key = o.key;
 		local id = o[key];
-		for j,p in ipairs(g) do
-			if p[key] == id then
-				o.expanded = p.expanded;
-				if o.g and p.g then ReapplyExpand(o.g, p.g); end
-				break;
+		if o.expanded then
+			for j,p in ipairs(g2) do
+				if p[key] == id then
+					if not p.expanded then
+						p.expanded = true;
+						if o.g and p.g then ReapplyExpand(o.g, p.g); end
+					end
+					break;
+				end
 			end
 		end
 	end
@@ -8837,6 +8840,30 @@ app:GetWindow("Debugger", UIParent, function(self)
 end):Show();
 --]]--
 (function()
+	local IsSameMap = function(data, results)
+		if data.mapID then
+			-- Exact same map?
+			if data.mapID == results.mapID then
+				return true;
+			end
+			
+			-- Does the result map have an array of associated maps and this map is in there?
+			if results.maps and contains(results.maps, data.mapID) then
+				return true;
+			end
+		end
+		if data.maps then
+			-- Does the old map data contain this map?
+			if contains(data.maps, results.mapID) then
+				return true;
+			end
+			
+			-- Does the result map have an array of associated maps and this map is in there?
+			if results.maps and containsAny(results.maps, data.maps) then
+				return true;
+			end
+		end
+	end
 	app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 		if not self.initialized then
 			self.initialized = true;
@@ -8885,9 +8912,14 @@ end):Show();
 						for i, group in ipairs(results) do
 							local clone = {};
 							for key,value in pairs(group) do
-								clone[key] = value;
+								if key == "maps" then
+									if group.mapID then
+										clone[key] = value;
+									end
+								else
+									clone[key] = value;
+								end
 							end
-							clone["maps"] = nil;
 							setmetatable(clone, getmetatable(group));
 							group = clone;
 							
@@ -9003,14 +9035,14 @@ end):Show();
 							table.insert(results.g, o);
 						end
 						
-						if self.data and self.data.key == results.key and self.data[self.data.key] == results[self.data.key] then
+						if self.data and IsSameMap(self.data, results) then
 							ReapplyExpand(self.data.g, results.g);
 						else
 							ExpandGroupsRecursively(results, true);
 						end
 						
 						-- if enabled minimize rows based on difficulty 
-						if GetDataMember("AutoMinimize",true) then
+						if app.Settings:GetTooltipSetting("Expand:Difficulty") then
 							local difficultyID = select(3, GetInstanceInfo());
 							if difficultyID and difficultyID > 0 and results.g then
 								for _, row in ipairs(results.g) do
@@ -10558,7 +10590,6 @@ app.events.VARIABLES_LOADED = function()
 	GetDataMember("AutoMainList", false);
 	GetDataMember("AutoMiniList", true);
 	GetDataMember("AutoProfessionMiniList", true);
-	GetDataMember("AutoMinimize", true);
 	GetDataMember("AutomateTomTomWaypoints", false);
 	GetDataMember("EnableTomTomWaypointsOnTaxi", false);
 	GetDataMember("TomTomIgnoreCompletedObjects", false);
