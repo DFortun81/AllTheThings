@@ -7,6 +7,9 @@ _.Zones =
 		m(650, {	-- Highmountain
 			["maps"] = {
 				750,
+				651,	-- Bitestone Enclave
+				656,	-- Lifespring Cavern
+				657,	-- Path of Huln
 				659, 	-- Stonedark Grotto
 				660,	-- Feltotem Caverns
 				653,	-- Cave of the Blood Trial
