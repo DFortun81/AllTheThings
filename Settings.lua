@@ -352,10 +352,70 @@ settings.UpdateMode = function(self)
 		app.GroupFilter = app.NoFilter;
 		app.UnobtainableItemFilter = app.NoFilter;
 		app.VisibilityFilter = app.NoFilter;
+		
+		app.AccountWideAchievements = true;
+		app.AccountWideBattlePets = true;
+		app.AccountWideFlightPaths = true;
+		app.AccountWideFollowers = true;
+		app.AccountWideIllusions = true;
+		app.AccountWideMounts = true;
+		app.AccountWideMusicRolls = true;
+		app.AccountWideQuests = true;
+		app.AccountWideRecipes = true;
+		app.AccountWideReputations = true;
+		app.AccountWideSelfieFilters = true;
+		app.AccountWideTitles = true;
+		app.AccountWideToys = true;
+		app.AccountWideTransmog = true;
+		
+		app.CollectibleAchievements = true;
+		app.CollectibleBattlePets = true;
+		app.CollectibleFlightPaths = true;
+		app.CollectibleFollowers = true;
+		app.CollectibleIllusions = true;
+		app.CollectibleMounts = true;
+		app.CollectibleMusicRolls = true;
+		app.CollectibleQuests = true;
+		app.CollectibleRecipes = true;
+		app.CollectibleReputations = true;
+		app.CollectibleSelfieFilters = true;
+		app.CollectibleTitles = true;
+		app.CollectibleToys = true;
+		app.CollectibleTransmog = true;
 	else
 		app.VisibilityFilter = app.ObjectVisibilityFilter;
 		app.GroupFilter = app.FilterItemClass;
 		app.UnobtainableItemFilter = app.FilterItemClass_UnobtainableItem;
+		
+		app.AccountWideAchievements = self:Get("AccountWide:Achievements");
+		app.AccountWideBattlePets = self:Get("AccountWide:BattlePets");
+		app.AccountWideFlightPaths = self:Get("AccountWide:FlightPaths");
+		app.AccountWideFollowers = self:Get("AccountWide:Followers");
+		app.AccountWideIllusions = self:Get("AccountWide:Illusions");
+		app.AccountWideMounts = self:Get("AccountWide:Mounts");
+		app.AccountWideMusicRolls = self:Get("AccountWide:MusicRolls");
+		app.AccountWideQuests = self:Get("AccountWide:Quests");
+		app.AccountWideRecipes = self:Get("AccountWide:Recipes");
+		app.AccountWideReputations = self:Get("AccountWide:Reputations");
+		app.AccountWideSelfieFilters = self:Get("AccountWide:SelfieFilters");
+		app.AccountWideTitles = self:Get("AccountWide:Titles");
+		app.AccountWideToys = self:Get("AccountWide:Toys");
+		app.AccountWideTransmog = self:Get("AccountWide:Transmog");
+		
+		app.CollectibleAchievements = self:Get("Thing:Achievements");
+		app.CollectibleBattlePets = self:Get("Thing:BattlePets");
+		app.CollectibleFlightPaths = self:Get("Thing:FlightPaths");
+		app.CollectibleFollowers = self:Get("Thing:Followers");
+		app.CollectibleIllusions = self:Get("Thing:Illusions");
+		app.CollectibleMounts = self:Get("Thing:Mounts");
+		app.CollectibleMusicRolls = self:Get("Thing:MusicRolls");
+		app.CollectibleQuests = self:Get("Thing:Quests");
+		app.CollectibleRecipes = self:Get("Thing:Recipes");
+		app.CollectibleReputations = self:Get("Thing:Reputations");
+		app.CollectibleSelfieFilters = self:Get("Thing:SelfieFilters");
+		app.CollectibleTitles = self:Get("Thing:Titles");
+		app.CollectibleToys = self:Get("Thing:Toys");
+		app.CollectibleTransmog = self:Get("Thing:Transmog");
 	end
 	if self:Get("AccountMode") then
 		app.ItemTypeFilter = app.NoFilter;
@@ -1167,6 +1227,13 @@ ShowCollectedThingsCheckBox:SetPoint("TOPLEFT", ShowCompletedGroupsCheckBox, "BO
 local ShowIncompleteThingsCheckBox = settings:CreateCheckBox("Show Incomplete Things",
 function(self)
 	self:SetChecked(settings:Get("Show:IncompleteThings"));
+	if settings:Get("DebugMode") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
 end,
 function(self)
 	settings:Set("Show:IncompleteThings", self:GetChecked());
@@ -1179,6 +1246,13 @@ ShowIncompleteThingsCheckBox:SetPoint("TOPLEFT", ShowCollectedThingsCheckBox, "B
 local FilterThingsByLevelCheckBox = settings:CreateCheckBox("Filter Things By Level",
 function(self)
 	self:SetChecked(settings:Get("Filter:ByLevel"));
+	if settings:Get("DebugMode") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
 end,
 function(self)
 	settings:Set("Filter:ByLevel", self:GetChecked());
@@ -1208,6 +1282,13 @@ HideBoEItemsCheckBox:SetPoint("TOPLEFT", FilterThingsByLevelCheckBox, "BOTTOMLEF
 local IgnoreFiltersForBoEsCheckBox = settings:CreateCheckBox("Ignore Filters for BoEs",
 function(self)
 	self:SetChecked(settings:Get("Filter:BoEs"));
+	if settings:Get("DebugMode") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
 end,
 function(self)
 	settings:Set("Filter:BoEs", self:GetChecked());
@@ -1220,13 +1301,6 @@ IgnoreFiltersForBoEsCheckBox:SetPoint("TOPLEFT", HideBoEItemsCheckBox, "BOTTOMLE
 local ExpandDifficultyCheckBox = settings:CreateCheckBox("Expand Current Difficulty",
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Expand:Difficulty"));
-	if settings:Get("DebugMode") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
 end,
 function(self)
 	settings:SetTooltipSetting("Expand:Difficulty", self:GetChecked());
