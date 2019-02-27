@@ -2474,6 +2474,7 @@ _.Zones =
 			},
 			["lvl"] = 98,
 			["maps"] = {
+				635,	-- Shield's Rest
 				636,	-- Stormscale Cavern
 				637,	-- Thorignir Refuge
 				639,	-- Aggramar's Vault

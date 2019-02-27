@@ -2117,6 +2117,7 @@ _.Zones =
 			["lvl"] = 98,	
 			["achievementID"] = 10669,
 			["maps"] = {
+				682,	-- Felsoul Hold
 				684,	-- Shattered Locus (Floor #1)
 				685,	-- Shattered Locus (Floor #2)
 				687,	-- Kel'balor
