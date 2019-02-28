@@ -15,9 +15,34 @@ _.Instances =
 						qa(30995, { -- No Man Left Behind
 							["qg"] = 61822, -- SI:7 Field Commander Dirken
 						}),					
-						qa(30996,{ -- The Dark Shaman
+						{	-- The Dark Shaman (Alliance)
+							["questID"] = 30996, -- The Dark Shaman
+							["races"] = ALLIANCE_ONLY,
 							["qg"] = 61823, -- High Sorceress Aryna
-						}),
+							["groups"] = {
+								{	-- Hide Vest of the Shaman
+									["itemID"] = 82893,	-- Hide Vest of the Shaman
+								},
+								{	-- Robes of the Doomed Ritual
+									["itemID"] = 82891,	-- Robes of the Doomed Ritual
+								},
+								{	-- Scaled Vest of the Shaman
+									["itemID"] = 131712,	-- Scaled Vest of the Shaman
+								},
+								{	-- Searing Belt
+									["itemID"] = 82895,	-- Searing Belt
+								},
+								{	-- Ragefire Leggings
+									["itemID"] = 82892,	-- Ragefire Leggings
+								},
+								{	-- Stone Guard Greaves (Plate)
+									["itemID"] = 82894,	-- Stone Guard Greaves
+								},
+								{	-- Stone Guard Greaves (Mail)
+									["itemID"] = 131711,	-- Stone Guard Greaves
+								},
+							},
+						},
 						qh(30969, { -- A New Enemy
 							["qg"] = 61716, -- Invoker Xorenth
 						}),
