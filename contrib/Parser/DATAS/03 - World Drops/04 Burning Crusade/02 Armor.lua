@@ -241,6 +241,9 @@ _.WorldDrops =
 					{	-- Azurite Ring
 						["itemID"] = 25045,	-- Azurite Ring
 					},
+					{	-- Band of Impenetrable Defenses
+						["itemID"] = 31319,	-- Band of Impenetrable Defenses
+					},
 					{	-- Blue Topaz Band
 						["itemID"] = 25051,	-- Blue Topaz Band
 					},
