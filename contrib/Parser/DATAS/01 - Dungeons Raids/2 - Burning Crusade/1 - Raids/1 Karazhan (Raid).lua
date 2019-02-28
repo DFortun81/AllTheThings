@@ -42,7 +42,9 @@ _.Instances =
 						i(30643),	-- Belt of the Tracker
 						i(30673),	-- Inferno Waist Cord
 						i(30641),	-- Boots of Elusion
+						i(30666),	-- Ritssyn's Lost Pendant
 						i(30674),	-- Zierhut's Lost Treads
+						i(30667),	-- Ring of Unrelenting Storms
 					}),
 					e(  1552, {			-- Servant's Quarters
 						n(16181, {	-- Rokad the Ravager
