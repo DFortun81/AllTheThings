@@ -307,9 +307,6 @@ _.Instances =
 							{	-- High Tinker Mekkatorque
 								["encounterID"] = 2334,
 								["g"] = {
-									{	-- G.M.O.D.
-										["itemID"] = 166518,	-- G.M.O.D.
-									},
 									{	-- Servo-Claw Smasher
 										["itemID"] = 165598,	-- Servo-Claw Smasher
 									},
@@ -396,6 +393,9 @@ _.Instances =
 							{	-- Lady Jaina Proudmoore
 								["encounterID"] = 2343,
 								["g"] = {
+									{	-- G.M.O.D. (Changed from High Tinker Mekkatorque in 2.26.19 Hotfix, change to LFR only)
+										["itemID"] = 166518,	-- G.M.O.D.
+									},
 									{	-- Daelin Proudmoore's Saber
 										["itemID"] = 165604,	-- Daelin Proudmoore's Saber
 									},
