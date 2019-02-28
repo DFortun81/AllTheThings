@@ -21,6 +21,9 @@ _.WorldDrops =
 					{	-- Amulet of the Howling Watch
 						["itemID"] = 67040,	-- Amulet of the Howling Watch
 					},
+					{	-- Dorian's Lost Necklace
+						["itemID"] = 67130,	-- Dorian's Lost Necklace
+					},
 					{	-- Mirkfallon Amulet
 						["itemID"] = 55401,	-- Mirkfallon Amulet
 					},
