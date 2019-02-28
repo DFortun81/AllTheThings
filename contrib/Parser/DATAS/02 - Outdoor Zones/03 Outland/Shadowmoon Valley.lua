@@ -1191,6 +1191,26 @@ _.Zones =
 				}),
 				n(-16,  {	-- Rares
 					n(18695, {	-- Ambassador Jerrikar
+						["coords"] = {
+							{ 30.6, 58.2, 104 },
+							{ 29.0, 55.0, 104 },
+							{ 29.8, 51.8, 104 },
+							{ 28.0, 48.4, 104 },
+							{ 46.4, 69.4, 104 },
+							{ 47.8, 67.2, 104 },
+							{ 46.4, 66.0, 104 },
+							{ 71.0, 62.2, 104 },
+							{ 68.4, 62.0, 104 },
+							{ 68.8, 59.8, 104 },
+							{ 55.8, 38.0, 104 },
+							{ 57.4, 38.4, 104 },
+							{ 58.6, 36.6, 104 },
+							{ 56.2, 35.6, 104 },
+							{ 57.4, 35.0, 104 },
+							{ 45.6, 31.2, 104 },
+							{ 46.2, 28.8, 104 },
+							{ 46.8, 26.6, 104 },
+						},
 						["groups"] = {
 							i(31224),	-- Illidari Bracers
 							i(31223),	-- Illidari Wristguards
@@ -1200,45 +1220,79 @@ _.Zones =
 						--["achievementID"] = 1312, ["criteriaID"] = 1,
 					}), 
 					n(18694, {	-- Collidus the Warp-Watcher
-						i(31219),	-- Emerald Beholder Eye
-						i(31220),	-- Amethyst Beholder Eye
-						i(31217),	-- Crimson Beholder Eye
-						i(31218),	-- Fiery Beholder Eye
+						["coords"] = {
+							{ 37.0, 44.2, 104 },
+							{ 40.2, 43.0, 104 },
+							{ 67.2, 23.2, 104 },
+							{ 66.6, 26.2, 104 },
+							{ 70.6, 28.8, 104 },
+							{ 73.6, 29.0, 104 },
+							{ 55.0, 71.2, 104 },
+							{ 59.2, 70.6, 104 },
+						},
+						["groups"] = {
+							i(31219),	-- Emerald Beholder Eye
+							i(31220),	-- Amethyst Beholder Eye
+							i(31217),	-- Crimson Beholder Eye
+							i(31218),	-- Fiery Beholder Eye
+						},
 					}), 
 					n(18696, {	-- Kraator
-						i(31213),	-- Abyssal Plate Sabatons
-						i(31214),	-- Abyssal Mail Greaves
-						i(31216),	-- Abyssal Cloth Footwraps
-						i(31215),	-- Abyssal Leather Treads
+						["coords"] = {
+							{ 45.8, 12.2, 104 },
+							{ 31.0, 45.8, 104 },
+							{ 42.0, 40.4, 104 },
+							{ 59.6, 46.6, 104 },
+							{ 42.4, 68.4, 104 },
+						},
+						["groups"] = {
+							i(31213),	-- Abyssal Plate Sabatons
+							i(31214),	-- Abyssal Mail Greaves
+							i(31216),	-- Abyssal Cloth Footwraps
+							i(31215),	-- Abyssal Leather Treads
+						},
 					}), 
 				}),
 				n(-2,   {	-- Vendors
 					n(19521, {	-- Arrond <Tailoring Supplies>
-						i(21900), 	-- Pattern: Imbued Netherweave Robe
-						i(21901), 	-- Pattern: Imbued Netherweave Tunic
+						["coord"] = { 55.8, 58.2, 104 },
+						["groups"] = {
+							i(21900), 	-- Pattern: Imbued Netherweave Robe
+							i(21901), 	-- Pattern: Imbued Netherweave Tunic
+						},
 					}),
-					a(n(20510, {	-- Brunn Flamebeard <Gryphon Keeper>	
-						i(25473),	-- Swift Blue Gryphon Mount
-						i(25527),	-- Swift Red Gryphon Mount
-						i(25528),	-- Swift Green Gryphon Mount
-						i(25529),	-- Swift Purple Gryphon Mount
-						i(25470),	-- Golden Gryphon Mount
-						i(25471),	-- Ebon Gryphon Mount
-						i(25472),	-- Snowy Gryphon Mount
+					a(n(20510, {	-- Brunn Flamebeard <Gryphon Keeper>
+						["coord"] = { 37.6, 56.0, 104 },
+						["groups"] = {
+							i(25473),	-- Swift Blue Gryphon Mount
+							i(25527),	-- Swift Red Gryphon Mount
+							i(25528),	-- Swift Green Gryphon Mount
+							i(25529),	-- Swift Purple Gryphon Mount
+							i(25470),	-- Golden Gryphon Mount
+							i(25471),	-- Ebon Gryphon Mount
+							i(25472),	-- Snowy Gryphon Mount
+						},	
 					})),
 					na(19351, {		-- Daggle Ironshaper
-						i(23807),	-- Schematic: Adamantite Scope
+						["coord"] = { 36.8, 54.4, 104 },
+						["groups"] = {
+							i(23807),	-- Schematic: Adamantite Scope
+						},
 					}),
 					h(n(20494, {	-- Dama Wildmane <Wind Rider Keeper>
-						i(25477),	-- Swift Red Wind Rider Mount
-						i(25531),	-- Swift Green Wind Rider Mount
-						i(25532),	-- Swift Yellow Wind Rider Mount
-						i(25533),	-- Swift Purple Wind Rider Mount
-						i(25474),	-- Tawny Wind Rider Mount
-						i(25475),	-- Blue Wind Rider Mount
-						i(25476),	-- Green Wind Rider Mount
+						["coord"] = { 29.0, 29.4, 104 },
+						["groups"] = {
+							i(25477),	-- Swift Red Wind Rider Mount
+							i(25531),	-- Swift Green Wind Rider Mount
+							i(25532),	-- Swift Yellow Wind Rider Mount
+							i(25533),	-- Swift Purple Wind Rider Mount
+							i(25474),	-- Tawny Wind Rider Mount
+							i(25475),	-- Blue Wind Rider Mount
+							i(25476),	-- Green Wind Rider Mount
+						},
 					})),
 					n(23489, {	-- Drake Dealer Hurlunk
+						["coord"] = { 65.6, 86.0, 104 },
 						["groups"] = {
 							i(32506, {	-- Netherwing Egg
 								i(32858),	-- Reins of the Azure Netherwing Drake Mount
@@ -1251,15 +1305,23 @@ _.Zones =
 						},
 						["description"] = "To access this vendor, you must reach exalted with the Netherwing, complete the quest 'Bow to the Highlord, Lord Illidan Stormrage' and claim one of the six drakes in Shattrath.|r",
 					}),
-					n(19526, {	-- Dunaman <Weapons Vendor>
-						i(30753),	-- Warphorn Spear
-						i(30755),	-- Mag'hari Fighting Claw
+					n(19526,  {	-- Dunaman <Weapons Vendor>
+						["coord"] = { 63.2, 30.6, 104 },
+						["groups"] = {
+							i(30753),	-- Warphorn Spear
+							i(30755),	-- Mag'hari Fighting Claw
+						},
 					}),
 					h(n(19333, {	-- Grokom Deatheye <Weaponsmith>
-						i(30753),	-- Warphorn Spear
-						i(30755),	-- Mag'hari Fighting Claw
+						["coord"] = { 29.8, 31.2, 104 },
+						["groups"] = {
+							i(30753),	-- Warphorn Spear
+							i(30755),	-- Mag'hari Fighting Claw
+						},
+
 					})),
 					n(19342, {	-- Krek Cragcrush <Blacksmithing Supplies>
+						["coord"] = { 29.2, 31.0, 104 },
 						["groups"] = {
 							i(23596),	-- Plans: Adamantite Breastplate
 							i(23594),	-- Plans: Adamantite Plate Bracers
@@ -1268,6 +1330,7 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 					}),
 					n(19373, {	-- Mari Stonehand
+						["coord"] = { 36.8, 55.0, 104 },
 						["groups"] = {
 							un(1, i(25847)),	-- Plans: Eternium Rod
 							i(23638),	-- Plans: Lesser Ward of Shielding
