@@ -16,7 +16,7 @@ _.Zones =
 											["achievementID"] = 13285,	-- Upright Citizens
 											["g"] = {
 												{	-- Russel the Bard recruited
-													-- ["coord"] = {  },	-- coords unavailable, NPC not yet seen
+													["coord"] = { 72.4, 68.9, 1161 },
 													["criteriaID"] = 1,	-- Russel the Bard recruited
 												},
 												{	-- Flynn Fairwind recruited
