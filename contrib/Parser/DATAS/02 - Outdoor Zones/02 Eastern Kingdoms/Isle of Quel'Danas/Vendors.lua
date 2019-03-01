@@ -458,6 +458,23 @@ _.Zones =
 										},
 									},
 								},
+								{	-- Gloves of the Vanquished Hero [Correct classes here]
+									["itemID"] = 30241,	-- Gloves of the Vanquished Hero
+									["g"] = {
+								--[[	{	-- correct items here
+											["itemID"] = 25858,	-- Gladiator's Silk Trousers
+										},
+										{	-- Gladiator's Felweave Trousers
+											["itemID"] = 30201,	-- Gladiator's Felweave Trousers
+										},
+										{	-- Gladiator's Dreadweave Leggings
+											["itemID"] = 24555,	-- Gladiator's Dreadweave Leggings
+										},
+										{	-- Gladiator's Chain Leggings
+											["itemID"] = 28332,	-- Gladiator's Chain Leggings
+										},
+								--]]},
+								},
 							},
 						},
 						n(26089, {	-- Kayri <Exotic Gear Purveyor>
