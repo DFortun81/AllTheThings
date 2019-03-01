@@ -27,6 +27,7 @@ _.Instances =
 						i(30323),	-- Plans: Boots of the Protector
 						i(30322),	-- Plans: Red Belt of Battle
 						i(30324),	-- Plans: Red Havoc Boots
+						i(30620),	-- Spyglass of the Hidden Fleet
 						i(30021),	-- Wildfury Greatstaff
 					}),
 					e(1567, {	-- Hydross the Unstable
