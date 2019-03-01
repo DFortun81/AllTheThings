@@ -13,12 +13,8 @@ _.Instances =
 					{ 71.77, 52.98, 34 },	-- Blackrock Caverns, Blackrock Caverns
 				},
 			},
-			{	-- Blackwing Descent
-				["instanceID"] = 73,	-- Blackwing Descent
-				["coords"] = {
-					{ 47.54, 68.93, 13 }	-- Blackwing Descent, Eastern Kingdoms		Note!! This is the metamap it uses, don't change
-				},
-			},
+			-- Deadmines
+			-- End Time
 			{	-- Halls of Origination
 				["instanceID"] = 70,	-- Halls of Origination
 				["coords"] = {
@@ -31,17 +27,28 @@ _.Instances =
 					{ 60.53, 64.29, 249 },	-- Lost City of Tol'vir, Uldum
 				},
 			},
-			{	-- Throne of the Four Winds
-				["instanceID"] = 74,	-- Throne of the Four Winds
-				["coords"] = {
-					{ 38.37, 80.63, 249 },	-- Throne of the Four Winds, Uldum
-				},
-			},
 			{	-- Vortex Pinnacle
 				["instanceID"] = 68,	-- Vortex Pinnacle
 				["coords"] = {
 					{ 76.76, 84.44, 249 },	-- Vortex Pinnacle, Uldum
 				},
+			},
+			-- Grim Batol
+			-- Hour of Twilight
+			{	-- Shadowfang Keep
+				["instanceID"] = 64,	-- Shadowfang Keep
+				["coord"] = { 44.79, 67.82, 21 },	-- Shadowfang Keep, Silverpine Forest
+			},
+			-- Stonecore
+			--Throne of the Tides
+			--Well of Eternity
+			{	-- Zul'Aman
+				["instanceID"] = 77,	-- Zul'Aman
+				["coord"] = { 81.8, 64.3, 95 },	-- Zul'Aman, Ghostlands
+			},
+			{	-- Zul'Gurub
+				["instanceID"] = 76,	-- Zul'Gurub
+				["coord"] = { 72.0, 32.9, 50 },	-- Zul'Gurub, Northern Stranglethorn
 			},
 		},
 	},

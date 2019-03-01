@@ -225,6 +225,9 @@ _.WorldDrops =
 					{	-- Band of the Virtuous
 						["itemID"] = 66987,	-- Band of the Virtuous
 					},
+					{	-- Immaculate Br'etc Signet
+						["itemID"] = 66942,	-- Immaculate Br'etc Signet
+					},
 					{	-- Mirkfallon Ring
 						["itemID"] = 55419,	-- Mirkfallon Ring
 					},
