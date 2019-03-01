@@ -396,9 +396,11 @@ _.Zones =
 						n(-168, { -- Other Quests
 							qh(49816, { -- To Outland!
 								["isBreadcrumb"] = true,
+								["description"] = "Breadcrumb quest when you first step in Outland. You will not be able to get it if you visited Outland before this quest was implemented.",
 							}),
 							qa(49862, { -- To Outland!
 								["isBreadcrumb"] = true,
+								["description"] = "Breadcrumb quest when you first step in Outland. You will not be able to get it if you visited Outland before this quest was implemented.",
 							}),
 							sz(1271,8, { -- Cenarion Post
 								["groups"] = {
