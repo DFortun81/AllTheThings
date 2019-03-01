@@ -903,7 +903,7 @@ _.Zones =
 						un(40, h({		-- Badlands Reagent Run II
 							["questID"] = 2258,	-- Badlands Reagent Run II
 							["qg"] = 6868,	-- Quest Giver: Jarkal Mossmeld
-							["sourceQuests"] = 2202,	-- Source Quest: Uldaman Reagent Run
+							["sourceQuests"] = { 2202 },	-- Source Quest: Uldaman Reagent Run
 							["groups"] = {
 								un(2, recipe(11452)),	-- Restorative Potion
 							},
@@ -987,7 +987,7 @@ _.Zones =
 						{		-- Uldaman Reagent Run
 							["questID"] = 2202,	-- Uldaman Reagent Run
 							["qg"] = 6868,	-- Quest Giver: Jarkal Mossmeld
-							["sourceQuests"] = 2258,	-- Source Quest: Badlands Reagent Run
+							["sourceQuests"] = { 2258 },	-- Source Quest: Badlands Reagent Run
 							["u"] = 40,
 						},
 					}),

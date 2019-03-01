@@ -1904,7 +1904,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 						
 						["qg"] = 25975,	-- Master Fire Eater
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuests"] = 11731, -- Torch Tossing
+						["sourceQuests"] = { 11731 }, -- Torch Tossing
 						["maps"] = {
 							84,	-- Stormwind City
 							87,	-- Ironforge
@@ -1954,7 +1954,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 						
 						["qg"] = 26113,	-- Master Flame Eater
 						["races"] = HORDE_ONLY,
-						["sourceQuests"] = 11922, -- Torch Tossing
+						["sourceQuests"] = { 11922 }, -- Torch Tossing
 						["maps"] = {
 							85,	-- Orgrimmar
 							88,	-- Thunder Bluff

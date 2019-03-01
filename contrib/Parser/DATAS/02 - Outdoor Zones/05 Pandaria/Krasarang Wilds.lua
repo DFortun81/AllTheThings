@@ -426,7 +426,7 @@ _.Zones =
 					}),
 					qa(32145, {	-- Don't Lose Your Head
 						["qg"] = 67528, -- Sully "The Pickle" McLeary
-						["sourceQuests"] = 32143, -- A Kind of Magic
+						["sourceQuests"] = { 32143 }, -- A Kind of Magic
 						["isDaily"] = true,
 					}),
 					qh(32351, {	-- Echoes of Thunder

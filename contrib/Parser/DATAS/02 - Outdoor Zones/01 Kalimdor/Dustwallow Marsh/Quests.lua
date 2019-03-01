@@ -600,13 +600,13 @@ _.Zones =
 						["questID"] = 27219,
 						["qg"] = 23896,	-- "Dirty" Michael Crowe
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuests"] = 27218,	-- Dastardly Denizens of the Deep
+						["sourceQuests"] = { 27218 },	-- Dastardly Denizens of the Deep
 					},
 					{	-- Jaina Must Know
 						["questID"] = 27238,
 						["qg"] = 23569,	-- Renn McGill
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuests"] = 27237,	-- Recover the Cargo
+						["sourceQuests"] = { 27237 },	-- Recover the Cargo
 					},
 					{	-- Justice Dispensed
 						["questID"] = 11206,

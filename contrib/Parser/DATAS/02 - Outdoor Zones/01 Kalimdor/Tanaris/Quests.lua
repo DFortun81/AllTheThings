@@ -163,14 +163,14 @@ _.Zones =
 								["qg"] = 38703,	-- Megs Dreadshredder
 								["coord"] = { 71.8, 45.4 },
 								["races"] = HORDE_ONLY,
-								["sourceQuests"] = 24949,	-- Booty Duty
+								["sourceQuests"] = { 24949 },	-- Booty Duty
 							},
 							{	-- Going Off-Task
 								["questID"] = 25534,
 								["qg"] = 38703,	-- Megs Dreadshredder
 								["coord"] = { 71.8, 45.4 },
 								["races"] = HORDE_ONLY,
-								["sourceQuests"] = 24927,	-- Dead Man's Chest
+								["sourceQuests"] = { 24927 },	-- Dead Man's Chest
 							},
 							{	-- Captain Dreadbeard
 								["questID"] = 24950,
@@ -196,7 +196,7 @@ _.Zones =
 								["qg"] = 38703,	-- Megs Dreadshredder
 								["coord"] = { 71.8, 45.4 },
 								["races"] = HORDE_ONLY,
-								["sourceQuests"] = 24950,	-- Captain Dreadbeard
+								["sourceQuest"] = 24950,	-- Captain Dreadbeard
 							},
 							{	-- Cutting Losses
 								["questID"] = 24932,

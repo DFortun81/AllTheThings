@@ -20,7 +20,7 @@ _.Instances =
 								i(29316),	-- Warchief's Mantle
 							},
 							["qg"] = 17876,	-- Thrall
-							["sourceQuests"] = 29598,
+							["sourceQuests"] = { 29598 },
 						}),
 					}),
 					n(-2, {	-- Vendors

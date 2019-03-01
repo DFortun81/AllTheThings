@@ -52,7 +52,7 @@ _.Instances =
 								{	-- Get In My Belly!
 									["achievementID"] = 9979,
 									["crs"] = {
-										91809,	-- Gorefiend
+										90199,	-- Gorefiend
 									},
 								},
 								{	-- Pro Toss
@@ -109,7 +109,7 @@ _.Instances =
 									90435,	-- Kormrok
 									92146,	-- Hellfire High Council
 									90378,	-- Kilrogg
-									91809,	-- Gorefiend
+									90199,	-- Gorefiend
 									90316,	-- Shadow-Lord Iskar
 									92330,	-- Socrethar
 									90269,	-- Tyrant Velhari
@@ -215,7 +215,7 @@ _.Instances =
 									i(128147),	-- Teardrop of Blood
 									i(128144),	-- Vial of Vile Viscera
 								})),
-								cr(91809, e(1372, {	-- Gorefiend
+								cr(90199, e(1372, {	-- Gorefiend
 									i(128101),	-- Soulcult Ritual Staff
 									i(128196),	-- Limbcarver Hatchet
 									i(128200),	-- Deserter's Honor
@@ -389,7 +389,7 @@ _.Instances =
 									90435,	-- Kormrok
 									92146,	-- Hellfire High Council
 									90378,	-- Kilrogg
-									91809,	-- Gorefiend
+									90199,	-- Gorefiend
 									90316,	-- Shadow-Lord Iskar
 									92330,	-- Socrethar
 									90269,	-- Tyrant Velhari
@@ -515,7 +515,7 @@ _.Instances =
 							i(124232),	-- Intuition's Gift
 							i(124240),	-- Warlord's Unseeing Eye
 						})),
-						cr(91809, e(1372, {	-- Gorefiend
+						cr(90199, e(1372, {	-- Gorefiend
 							i(127955, {	-- Leggings of Hellfire's Conqueror
 								i(124167),	-- Deathrattle Leggings (Warlock)
 								i(124339),	-- Greaves of the Ceaseless Vigil (Paladin)
@@ -782,7 +782,7 @@ _.Instances =
 									90435,	-- Kormrok
 									92146,	-- Hellfire High Council
 									90378,	-- Kilrogg
-									91809,	-- Gorefiend
+									90199,	-- Gorefiend
 									90316,	-- Shadow-Lord Iskar
 									92330,	-- Socrethar
 									90269,	-- Tyrant Velhari
@@ -908,7 +908,7 @@ _.Instances =
 							i(124232),	-- Intuition's Gift
 							i(124240),	-- Warlord's Unseeing Eye
 						})),
-						cr(91809, e(1372, {	-- Gorefiend
+						cr(90199, e(1372, {	-- Gorefiend
 							i(127955, {	-- Leggings of Hellfire's Conqueror
 								i(124167),	-- Deathrattle Leggings (Warlock)
 								i(124339),	-- Greaves of the Ceaseless Vigil (Paladin)
@@ -1180,7 +1180,7 @@ _.Instances =
 									90435,	-- Kormrok
 									92146,	-- Hellfire High Council
 									90378,	-- Kilrogg
-									91809,	-- Gorefiend
+									90199,	-- Gorefiend
 									90316,	-- Shadow-Lord Iskar
 									92330,	-- Socrethar
 									90269,	-- Tyrant Velhari
@@ -1306,7 +1306,7 @@ _.Instances =
 							i(124232),	-- Intuition's Gift
 							i(124240),	-- Warlord's Unseeing Eye
 						})),
-						cr(91809, e(1372, {	-- Gorefiend
+						cr(90199, e(1372, {	-- Gorefiend
 							i(127955, {	-- Leggings of Hellfire's Conqueror
 								i(124167),	-- Deathrattle Leggings (Warlock)
 								i(124339),	-- Greaves of the Ceaseless Vigil (Paladin)

@@ -34,13 +34,13 @@ _.Zones =
 											["questID"] = 33815,
 											["qg"] = 76411,	-- Farseer Drek'Thar
 											["coord"] = { 40.7, 67.0, 525 },
-											["sourceQuests"] = 33868,	-- The Home of the Frostwolves
+											["sourceQuests"] = { 33868 },	-- The Home of the Frostwolves
 										},
 										{	-- of Wolves and  Warriors
 											["questID"] = 34402,
 											["qg"] = 78272,	-- Durotan
 											["coord"] = { 41.8, 69.6, 525 },
-											["sourceQuests"] = 33815,	-- A Song of Frost and Fire
+											["sourceQuests"] = { 33815 },	-- A Song of Frost and Fire
 										},
 									}),
 									crit(2, {	-- Siege of Bladespire Citadel

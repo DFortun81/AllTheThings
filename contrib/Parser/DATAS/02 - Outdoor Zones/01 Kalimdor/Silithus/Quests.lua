@@ -69,13 +69,13 @@ _.Zones =
 								["questID"] = 8284,
 								["qg"] = 15183,	-- Geologist Larksbane
 								["coord"] = { 53.6, 35.3 },
-								["sourceQuests"] = 8321,	-- Vyral the Vile -- this is wrong. Possibly unlocks after "Dearest Natalia" ?
+								["sourceQuests"] = { 8321 },	-- Vyral the Vile -- this is wrong. Possibly unlocks after "Dearest Natalia" ?
 							},
 							{	-- The Deserter
 								["questID"] = 8285,
 								["qg"] = 15183,	-- Geologist Larksbane
 								["coord"] = { 53.6, 35.3 },
-								["sourceQuests"] = 8284,	-- The Twilight Mystery
+								["sourceQuests"] = { 8284 },	-- The Twilight Mystery
 							},
 							{	-- The Twilight Lexicon
 								["questID"] = 8279,
@@ -345,7 +345,7 @@ _.Zones =
 						["groups"] = {
 							{
 								["questID"] = 8313,	-- Sharing the Knowledge
-								["sourceQuests"] = 8307,	-- Desert Recipe
+								["sourceQuests"] = { 8307 },	-- Desert Recipe
 								["requiredSkill"] = 185,	-- Cooking
 							},
 						},
@@ -411,7 +411,7 @@ _.Zones =
 						["questID"] = 8281,
 						["qg"] = 15191,	-- Windcaller Proudhorn
 						["coord"] = { 54.8, 36.0 },
-						["sourceQuests"] = 8280,	-- Securing the Suppy Lines
+						["sourceQuests"] = { 8280 },	-- Securing the Suppy Lines
 					},
 					{	-- Still Believing
 						["questID"] = 8324,

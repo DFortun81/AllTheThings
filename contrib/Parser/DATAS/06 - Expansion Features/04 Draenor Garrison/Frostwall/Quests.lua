@@ -28,19 +28,19 @@ _.ExpansionFeatures =
 									},
 									["qg"] = 70859,	-- Thrall
 									["coord"] = { 51.2, 43.2 },
-									["sourceQuests"] = 34402,	-- of Wolves and  Warriors
+									["sourceQuests"] = { 34402 },	-- of Wolves and  Warriors
 								},
 								{	-- Back to Work
 									["questID"] = 34375,
 									["qg"] = 78466,	-- Gazlowe
 									["coord"] = { 51.2, 39.6 },
-									["sourceQuests"] = 34364,	-- For the Horde!
+									["sourceQuests"] = { 34364 },	-- For the Horde!
 								},
 								{	-- A Gronnling Problem
 									["questID"] = 34592,
 									["qg"] = 78466,	-- Gazlowe
 									["coord"] = { 51.2, 39.6 },
-									["sourceQuests"] = 34364,	-- For the Horde!
+									["sourceQuests"] = { 34364 },	-- For the Horde!
 								},
 								{	-- The Den of Skog
 									["questID"] = 34765,

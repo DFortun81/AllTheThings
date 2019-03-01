@@ -1844,9 +1844,7 @@ _.ExpansionFeatures =
 					{	-- A Tiny Scarecrow Costume
 						["itemID"] = 128874,	-- A Tiny Scarecrow Costume
 						["questID"] = 39865,	-- Pepe can be sometimes be summoned with this mask
-						["coords"] = {
-							40.12, 70.06	-- Pepe Location [Alliance]
-						},
+						["coord"] = { 40.12, 70.06 },	-- Pepe Location [Alliance]
 						["description"] = "Halloween Decorations must be up in a Tier 3 garrison",
 					},
 					{	-- All Hands on Deck

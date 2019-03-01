@@ -268,7 +268,7 @@ _.Zones =
 							q(25471, {	-- Across the Great Divide
 								["qg"] = 41341,	-- Erunak Stonespeaker
 								["coord"] = { 63.8, 59.9, 201 },
-								["sourceQuests"] = 27708,	-- The Warden's Time
+								["sourceQuests"] = { 27708 },	-- The Warden's Time
 							}),
 							o(203128, {	-- Broken Bottle
 								q(25638, {	-- A Desperate Plea

@@ -253,7 +253,7 @@ _.Zones =
 						},
 						{
 							["questID"] = 33333,	-- Timeless Treasures
-							["sourceQuests"] = 33332,	-- Hints From The Past
+							["sourceQuests"] = { 33332 },	-- Hints From The Past
 							["qg"] = 72870,	-- Kairoz
 						},
 						{

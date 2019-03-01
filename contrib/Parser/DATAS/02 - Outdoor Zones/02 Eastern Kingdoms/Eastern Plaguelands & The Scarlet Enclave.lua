@@ -618,7 +618,7 @@ _.Zones =
 									i(63007),
 								},
 								["qg"] = 45828,	-- Argent Apotehcary Judkins
-								["sourceQuests"] = 27532,
+								["sourceQuests"] = { 27532 },
 							}),
 							q(27534, {	-- Augustus' Receipt Book
 								["qg"] = 12384,	-- Augustus the Touched
@@ -631,7 +631,7 @@ _.Zones =
 									i(63003),
 								},
 								["qg"] = 12384,	-- Augustus the Touched
-								["sourceQuests"] = 27535,
+								["sourceQuests"] = { 27535 },
 							}),
 						}),
 					--[[

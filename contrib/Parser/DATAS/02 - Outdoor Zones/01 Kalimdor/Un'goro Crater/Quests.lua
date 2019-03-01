@@ -107,7 +107,7 @@ _.Zones =
 								["questID"] = 24717,
 								["qg"] = 38275,	-- Gremix
 								["coord"] = { 43.2, 41.0 },
-								["sourceQuests"] = 24701,	-- Marshal's Refuse
+								["sourceQuests"] = { 24701 },	-- Marshal's Refuse
 							},
 							{	-- The Northern Pylon
 								["questID"] = 24722,

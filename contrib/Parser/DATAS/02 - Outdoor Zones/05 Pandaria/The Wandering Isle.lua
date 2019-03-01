@@ -244,7 +244,7 @@ _.Zones =
 					}),
 					q(29680, {	-- The Source of Our Livelihood
 						["qg"] = 54975, -- Aysa Cloudsinger
-						["sourceQuests"] = 29679, -- A New Friend
+						["sourceQuests"] = { 29679 }, -- A New Friend
 					}),
 					q(29775, {	-- The Spirit and Body of Shen-zin Su
 						["qg"] = 55477, -- Ji Firepaw
