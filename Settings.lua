@@ -107,6 +107,7 @@ local FilterSettingsBase = {
 };
 local TooltipSettingsBase = {
 	__index = {
+		["Celebrate"] = true,
 		["Descriptions"] = true,
 		["DisplayInCombat"] = true,
 		["Enabled"] = true,
@@ -116,6 +117,7 @@ local TooltipSettingsBase = {
 		["MinimapSize"] = 36,
 		["MinimapStyle"] = true,
 		["Models"] = true,
+		["Notify"] = true,
 		["Locations"] = 5,
 		["Precision"] = 2,
 		["Progress"] = true,
@@ -127,6 +129,7 @@ local TooltipSettingsBase = {
 		["SourceLocations:Things"] = true,
 		["SummarizeThings"] = true,
 		["Warn:Difficulty"] = false,
+		["Warn:Removed"] = true,
 	},
 };
 local OnClickForTab = function(self)
@@ -1332,7 +1335,7 @@ function(self)
 	settings:SetTooltipSetting("Expand:Difficulty", self:GetChecked());
 end);
 ExpandDifficultyCheckBox:SetATTTooltip("Enable this option if you want to automatically minimize difficulty headers in the mini list that are not active when you enter a dungeon or raid.\n\nExample: Minimize the Heroic header when in a Normal difficulty dungeon");
-ExpandDifficultyCheckBox:SetPoint("TOPLEFT", IgnoreFiltersForBoEsCheckBox, "BOTTOMLEFT", 0, 4);
+ExpandDifficultyCheckBox:SetPoint("TOPLEFT", IgnoreFiltersForBoEsCheckBox, "BOTTOMLEFT", 0, 0);
 
 local WarnDifficultyCheckBox = settings:CreateCheckBox("Warn Completed Difficulty",
 function(self)
@@ -1343,6 +1346,36 @@ function(self)
 end);
 WarnDifficultyCheckBox:SetATTTooltip("Enable this option if you want to be warned when you enter an instance with a difficulty setting that will result in you being unable to earn new collectibles when there is an alternative unsaved difficulty that you could enter instead.");
 WarnDifficultyCheckBox:SetPoint("TOPLEFT", ExpandDifficultyCheckBox, "BOTTOMLEFT", 0, 4);
+
+local NotifyCollectedThingsCheckBox = settings:CreateCheckBox("Notify for Collected Things",
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("Notify"));
+end,
+function(self)
+	settings:SetTooltipSetting("Notify", self:GetChecked());
+end);
+NotifyCollectedThingsCheckBox:SetATTTooltip("Enable this option if you want to see a message in chat detailing which items you have collected or removed from your collection.\n\nNOTE: This is present because Blizzard silently adds appearances and other collectible items and neglects to notify you of the additional items available to you.\n\nWe recommend you keep this setting on. You will still hear the fanfare with it off assuming you have that option turned on.");
+NotifyCollectedThingsCheckBox:SetPoint("TOPLEFT", WarnDifficultyCheckBox, "BOTTOMLEFT", 0, 0);
+
+local CelebrateCollectedThingsCheckBox = settings:CreateCheckBox("Celebrate Collected Things",
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("Celebrate"));
+end,
+function(self)
+	settings:SetTooltipSetting("Celebrate", self:GetChecked());
+end);
+CelebrateCollectedThingsCheckBox:SetATTTooltip("Enable this option if you want to hear a celebratory 'fanfare' sound effect when you obtain a new Thing.\n\nThis feature can greatly help keep you motivated.");
+CelebrateCollectedThingsCheckBox:SetPoint("TOPLEFT", NotifyCollectedThingsCheckBox, "BOTTOMLEFT", 0, 4);
+
+local WarnRemovedThingsCheckBox = settings:CreateCheckBox("Warn for Removed Things",
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("Warn:Removed"));
+end,
+function(self)
+	settings:SetTooltipSetting("Warn:Removed", self:GetChecked());
+end);
+WarnRemovedThingsCheckBox:SetATTTooltip("Enable this option if you want to hear a warning sound effect when you accidentally sell back or trade an item that granted you an appearance that would cause you to lose that appearance from your collection.\n\nThis can be extremely helpful if you vendor an item with a purchase timer. The addon will tell you that you've made a mistake.");
+WarnRemovedThingsCheckBox:SetPoint("TOPLEFT", CelebrateCollectedThingsCheckBox, "BOTTOMLEFT", 0, 4);
 end)();
 
 ------------------------------------------

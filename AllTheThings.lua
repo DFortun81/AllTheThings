@@ -698,7 +698,7 @@ end
 -- audio lib
 local lastPlayedFanfare;
 function app:PlayCompleteSound()
-	if GetDataMember("PlayCompleteSound", true) then
+	if app.Settings:GetTooltipSetting("Celebrate") then
 		-- Play a random complete sound
 		local t = app.Settings.AUDIO_COMPLETE_TABLE;
 		if t and type(t) == "table" then
@@ -708,7 +708,7 @@ function app:PlayCompleteSound()
 	end
 end
 function app:PlayFanfare()
-	if GetDataMember("PlayFanfare", true) then
+	if app.Settings:GetTooltipSetting("Celebrate") then
 		-- Don't spam the users. It's nice sometimes, but let's put a delay of at least 1 second on there.
 		local now = time();
 		if lastPlayedFanfare and (now - lastPlayedFanfare) < 1 then return nil; end
@@ -723,7 +723,7 @@ function app:PlayFanfare()
 	end
 end
 function app:PlayRareFindSound()
-	if GetDataMember("PlayRareFindSound", true) then
+	if app.Settings:GetTooltipSetting("Celebrate") then
 		-- Play a random rarefind sound
 		local t = app.Settings.AUDIO_RAREFIND_TABLE;
 		if t and type(t) == "table" then
@@ -733,7 +733,7 @@ function app:PlayRareFindSound()
 	end
 end
 function app:PlayRemoveSound()
-	if GetDataMember("PlayRemoveSound", true) then
+	if app.Settings:GetTooltipSetting("Warn:Removed") then
 		-- Play a random fanfare
 		local t = app.Settings.AUDIO_REMOVE_TABLE;
 		if t and type(t) == "table" then
@@ -5829,7 +5829,7 @@ function app.CompletionistItemCollectionHelper(sourceID, oldState)
 	local searchResults = SearchForField("s", sourceID);
 	if searchResults and #searchResults > 0 then
 		-- Show the collection message.
-		if GetDataMember("ShowNotifications", true) then
+		if app.Settings:GetTooltipSetting("Notify") then
 			local firstMatch = searchResults[1];
 			print(format(L["ITEM_ID_ADDED"], firstMatch.text or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), firstMatch.itemID));
 		end
@@ -5871,7 +5871,7 @@ function app.CompletionistItemCollectionHelper(sourceID, oldState)
 		app:RefreshData(fresh, true, true);
 	else
 		-- Show the collection message.
-		if GetDataMember("ShowNotifications", true) then
+		if app.Settings:GetTooltipSetting("Notify") then
 			-- Use the Blizzard API... We don't have this item in the addon.
 			-- NOTE: The itemlink that gets passed is BASE ITEM LINK, not the full item link.
 			-- So this may show green items where an epic was obtained. (particularly with Legion drops)
@@ -5961,14 +5961,14 @@ function app.UniqueModeItemCollectionHelperBase(sourceID, oldState, filter)
 			end
 			
 			-- Show the collection message.
-			if GetDataMember("ShowNotifications", true) then
+			if app.Settings:GetTooltipSetting("Notify") then
 				local firstMatch = searchResults[1];
 				print(format(L[#unlockedSourceIDs > 0 and "ITEM_ID_ADDED_SHARED" or "ITEM_ID_ADDED"], 
 					firstMatch.text or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), firstMatch.itemID, #unlockedSourceIDs));
 			end
 		else
 			-- Show the collection message.
-			if GetDataMember("ShowNotifications", true) then
+			if app.Settings:GetTooltipSetting("Notify") then
 				-- Use the Blizzard API... We don't have this item in the addon.
 				-- NOTE: The itemlink that gets passed is BASE ITEM LINK, not the full item link.
 				-- So this may show green items where an epic was obtained. (particularly with Legion drops)
@@ -5996,7 +5996,7 @@ function app.CompletionistItemRemovalHelper(sourceID, oldState)
 	local searchResults = SearchForField("s", sourceID);
 	if searchResults and #searchResults > 0 then
 		-- Show the collection message.
-		if GetDataMember("ShowNotifications", true) then
+		if app.Settings:GetTooltipSetting("Notify") then
 			local firstMatch = searchResults[1];
 			print(format(L["ITEM_ID_ADDED"], firstMatch.text or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), firstMatch.itemID));
 		end
@@ -6028,7 +6028,7 @@ function app.CompletionistItemRemovalHelper(sourceID, oldState)
 		app:RefreshData(fresh, true, true);
 	else
 		-- Show the collection message.
-		if GetDataMember("ShowNotifications", true) then
+		if app.Settings:GetTooltipSetting("Notify") then
 			-- Use the Blizzard API... We don't have this item in the addon.
 			-- NOTE: The itemlink that gets passed is BASE ITEM LINK, not the full item link.
 			-- So this may show green items where an epic was obtained. (particularly with Legion drops)
@@ -6121,14 +6121,14 @@ function app.UniqueModeItemRemovalHelperBase(sourceID, oldState, filter)
 			end
 			
 			-- Show the collection message.
-			if GetDataMember("ShowNotifications", true) then
+			if app.Settings:GetTooltipSetting("Notify") then
 				local firstMatch = searchResults[1];
 				print(format(L[#unlockedSourceIDs > 0 and "ITEM_ID_ADDED_SHARED" or "ITEM_ID_ADDED"], 
 					firstMatch.text or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), firstMatch.itemID, #unlockedSourceIDs));
 			end
 		else
 			-- Show the collection message.
-			if GetDataMember("ShowNotifications", true) then
+			if app.Settings:GetTooltipSetting("Notify") then
 				-- Use the Blizzard API... We don't have this item in the addon.
 				-- NOTE: The itemlink that gets passed is BASE ITEM LINK, not the full item link.
 				-- So this may show green items where an epic was obtained. (particularly with Legion drops)
@@ -10823,7 +10823,7 @@ app.events.TOYS_UPDATED = function(itemID, new)
 		wipe(searchCache);
 		collectgarbage();
 		
-		if GetDataMember("ShowNotifications", true) then
+		if app.Settings:GetTooltipSetting("Notify") then
 			local name, link = GetItemInfo(itemID);
 			if link then print(format(L["ITEM_ID_ADDED"], link, itemID)); end
 		end
@@ -10861,7 +10861,7 @@ app.events.TRANSMOG_COLLECTION_SOURCE_REMOVED = function(sourceID)
 		
 		-- If the user is a Completionist
 		if app.Settings:Get("Completionist") then
-			if GetDataMember("ShowNotifications", true) then
+			if app.Settings:GetTooltipSetting("Notify") then
 				-- Oh shucks, that was nice of you to give this item to your friend.
 				-- WAIT, WHAT? A VENDOR?! OH GOD NO! TODO: Warn a user when they vendor an appearance?
 				local name, link = GetItemInfo(sourceInfo.itemID);
@@ -10882,7 +10882,7 @@ app.events.TRANSMOG_COLLECTION_SOURCE_REMOVED = function(sourceID)
 				end
 			end
 			
-			if GetDataMember("ShowNotifications", true) then
+			if app.Settings:GetTooltipSetting("Notify") then
 				-- Oh shucks, that was nice of you to give this item to your friend.
 				-- WAIT, WHAT? A VENDOR?! OH GOD NO! TODO: Warn a user when they vendor an appearance?
 				local name, link = GetItemInfo(sourceInfo.itemID);
