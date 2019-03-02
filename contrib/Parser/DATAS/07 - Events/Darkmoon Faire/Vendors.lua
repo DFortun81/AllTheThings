@@ -241,16 +241,14 @@ _.WorldEvents =
 						{ 51.47, 75.09, 407 },
 					},
 					["groups"] = {
-						i(116138, {	-- Last Deck of Nemelex Xobeh
-							["f"] = 50,
-						}),
-						i(122238), -- Music Roll
+						i(116138),	-- Last Deck of Nemelex Xobeh
+						i(122238),	-- Music Roll
 						i(116052),
 						i(116133),
 						i(116134),
 						i(116136),
 						i(116137),
-						i(116139), -- ["isToy"] = true
+						i(116139),
 					},
 					["currencyID"] = 515,	-- Darkmoon Prize Ticket
 				}),

@@ -66,9 +66,7 @@ _.Holidays = bubbleDown({["u"] = 18},
 					-- Other Items
 					un(18, i(21813)),	-- Bag of Heart Candies
 					un(18, i(49909)),	-- Box of Chocolates
-					un(18, i(34258,	{ 	-- Love Rocket
-						["f"] = 50, -- Miscellaneous
-					})),
+					un(18, i(34258)),	-- Love Rocket
 				}),
 				n(-9978, {	-- Northrend
 					inst(277, {	-- Halls of Stone

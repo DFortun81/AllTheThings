@@ -86,9 +86,7 @@ _.Zones =
 						n(86949, {	-- Zooti Fizzlefury 
 							["groups"] = { 
 								currency(1191, { -- Valor
-									un(2, i(127785, { -- Crystallized Fel
-										["f"] = 50, 
-									})),
+									un(2, i(127785)), -- Crystallized Fel
 								}),
 								un(4, i(118290)),	-- Solium Band of Might
 								un(4, i(118291)),	-- Solium Band of Wisdom

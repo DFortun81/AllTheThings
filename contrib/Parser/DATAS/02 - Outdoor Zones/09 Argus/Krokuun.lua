@@ -687,7 +687,6 @@ _.Zones =
 										{
 											["spellID"] = 252201, -- Lightforged Beacon: Krokul Hovel
 											["questID"] = 46816, -- Rendezvous
-											["collectible"] = true,
 										},
 									},	
 									--]]

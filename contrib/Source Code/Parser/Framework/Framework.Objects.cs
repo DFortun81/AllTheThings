@@ -61,48 +61,48 @@ namespace Parser_V2
             /// </summary>
             private static readonly List<ObjectData> OBJECT_ID_FIELDS = new List<ObjectData>
             {
-                new ObjectData("buildingID", "gb", new List<string>{ /*"lvl",*/ "f", "spellID" }),
-                new ToyData("isToy", "toy", new List<string>{ /*"lvl",*/ "f", "spellID" }),                // Toy ID
-                new ToyData("toyID", "toy", new List<string>{ /*"lvl",*/ "f", "spellID" }),                // Toy ID
-                new MountData("mountID", "mnt", new List<string>{ /*"lvl",*/ "f", "spellID" }),            // Mount ID (TODO: Add item ID cache data if missing)
-                new SpeciesData("speciesID", "p", new List<string>{ /*"lvl",*/ "f", "spellID" }),          // Species ID (TODO: Add item ID cache data if missing)
-                new MusicRollData("musicRollID", "mr", new List<string>{ /*"lvl",*/ "f", "spellID" }),     // Music Roll ID (TODO: Add item ID cache data if missing)
-                new ObjectData("instanceID", "inst"),
-                new ObjectData("artifactID", "artifact"),//, new List<string>{ "lvl" }),
-                new ObjectData("heirloomID", "heir"),
-                new ObjectData("holidayID", "ho"),
-                new ItemSourceData("s", "s"),//, new List<string>{ "lvl" }),                // Source ID
-                new ObjectData("categoryID", "cat"),
-                new ObjectData("category", "tcat"),
-                new ObjectData("classID", "cl"),
-                new ObjectData("raceID", "ra"),
-                new ObjectData("criteriaID", "crit"),
-                new ObjectData("difficultyID", "d"),
-                new ObjectData("encounterID", "e"),
-                new ObjectData("flightPathID", "fp"),
-                new ObjectData("npcID", "n"),
-                new ObjectData("objectID", "o"),
-                new ObjectData("petAbilityID", "pa"),
-                new ObjectData("petTypeID", "pt"),
-                new ObjectData("followerID", "follower"),
-                new ObjectData("missionID", "gm"),
-                new ObjectData("talentID", "gt"),
-                new ObjectData("mapID", "m"),
-                new ObjectData("illusionID", "ill", new List<string>{ /*"lvl",*/ "f", "spellID" }),
+                new ObjectData("buildingID", "gb", new List<string>{ "f", "spellID" }),
+                new ToyData("isToy", "toy", new List<string>{ "f", "spellID" }),                // Toy ID
+                new ToyData("toyID", "toy", new List<string>{ "f", "spellID" }),                // Toy ID
+                new MountData("mountID", "mnt", new List<string>{ "f", "spellID" }),            // Mount ID (TODO: Add item ID cache data if missing)
+                new SpeciesData("speciesID", "p", new List<string>{ "f", "spellID" }),          // Species ID (TODO: Add item ID cache data if missing)
+                new MusicRollData("musicRollID", "mr", new List<string>{ "f", "spellID" }),     // Music Roll ID (TODO: Add item ID cache data if missing)
+                new ObjectData("instanceID", "inst", new List<string>{ "f" }),
+                new ObjectData("artifactID", "artifact", new List<string>{ "f" }),
+                new HeirloomData("heirloomID", "heir"),
+                new ObjectData("holidayID", "ho", new List<string>{ "f" }),
+                new ItemSourceData("s", "s"),
+                new ObjectData("categoryID", "cat", new List<string>{ "f" }),
+                new ObjectData("category", "tcat", new List<string>{ "f" }),
+                new ObjectData("classID", "cl", new List<string>{ "f" }),
+                new ObjectData("raceID", "ra", new List<string>{ "f" }),
+                new ObjectData("criteriaID", "crit", new List<string>{ "f" }),
+                new ObjectData("difficultyID", "d", new List<string>{ "f" }),
+                new ObjectData("encounterID", "e", new List<string>{ "f" }),
+                new ObjectData("flightPathID", "fp", new List<string>{ "f" }),
+                new ObjectData("npcID", "n", new List<string>{ "f" }),
+                new ObjectData("objectID", "o", new List<string>{ "f" }),
+                new ObjectData("petAbilityID", "pa", new List<string>{ "f" }),
+                new ObjectData("petTypeID", "pt", new List<string>{ "f" }),
+                new ObjectData("followerID", "follower", new List<string>{ "f" }),
+                new ObjectData("missionID", "gm", new List<string>{ "f" }),
+                new ObjectData("talentID", "gt", new List<string>{ "f" }),
+                new ObjectData("mapID", "m", new List<string>{ "f" }),
+                new ObjectData("illusionID", "ill", new List<string>{ "f", "spellID" }),
                 new ObjectData("recipeID", "r", new List<string>{ "f", "spellID" }),
-                new ObjectData("spellID", "sp"),
-                new ObjectData("setID", "gs"),
-                new ObjectData("setHeaderID", "gsh"),
-                new ObjectData("setSubHeaderID", "gssh"),
+                new ObjectData("spellID", "sp", new List<string>{ "f" }),
+                new ObjectData("setID", "gs", new List<string>{ "f" }),
+                new ObjectData("setHeaderID", "gsh", new List<string>{ "f" }),
+                new ObjectData("setSubHeaderID", "gssh", new List<string>{ "f" }),
                 new ObjectData("titleID", "title", new List<string>{ "f" }),
-                new ObjectData("currencyID", "cu"),
-                new ObjectData("itemID", "i"),//, new List<string>{ "lvl" }),
-                new ObjectData("factionID", "faction"),
-                new ObjectData("questID", "q"),
-                new ObjectData("achID", "ach"),
-                new ObjectData("tierID", "t"),
+                new ObjectData("currencyID", "cu", new List<string>{ "f" }),
+                new ObjectData("itemID", "i", new List<string>{ "f" }),
+                new ObjectData("factionID", "faction", new List<string>{ "f" }),
+                new ObjectData("questID", "q", new List<string>{ "f" }),
+                new ObjectData("achID", "ach", new List<string>{ "f" }),
+                new ObjectData("tierID", "t", new List<string>{ "f" }),
                 new ObjectData("professionID", "prof", new List<string>{ "requireSkill" }),
-                new ObjectData("vignetteID", "v"),
+                new ObjectData("vignetteID", "v", new List<string>{ "f" }),
                 new ObjectData("f", "flt"),
             };
 
@@ -381,6 +381,60 @@ namespace Parser_V2
                 #endregion
             }
 
+
+            /// <summary>
+            /// The heirloom data class.
+            /// This writes the heirloomID to the constructor.
+            /// </summary>
+            public class HeirloomData : ObjectData
+            {
+                #region Constructor
+                /// <summary>
+                /// Create a data container for the shortcut.
+                /// </summary>
+                /// <param name="objectType">The object type.</param>
+                /// <param name="shortcut">The shortcut.</param>
+                public HeirloomData(string objectType, string shortcut) : base(objectType, shortcut)
+                {
+
+                }
+
+                /// <summary>
+                /// Create a data container for the shortcut.
+                /// </summary>
+                /// <param name="objectType">The object type.</param>
+                /// <param name="shortcut">The shortcut.</param>
+                /// <param name="blacklist">The blacklist.</param>
+                public HeirloomData(string objectType, string shortcut, List<string> blacklist) : base(objectType, shortcut, blacklist)
+                {
+
+                }
+                #endregion
+                #region Functionality
+                /// <summary>
+                /// The constructor.
+                /// This writes the primary field and removes it from the list of available fields.
+                /// </summary>
+                /// <param name="builder">The builder.</param>
+                /// <param name="data">The data.</param>
+                /// <param name="fields">The fields.</param>
+                public override void Constructor(StringBuilder builder, Dictionary<string, object> data, List<string> fields)
+                {
+                    // Write the default data field to the builder.
+                    Framework.Export(builder, data[ObjectType]);
+                    fields.Remove(ObjectType);
+
+                    // Check to make sure that only filterable types get written here.
+                    // Rings, Necks, and Trinkets by default will 
+                    if (data.TryGetValue("f", out object fObj))
+                    {
+                        var f = Convert.ToInt32(fObj);
+                        if (f == 51 || f == 52 || f == 53) fields.Remove("f");
+                    }
+                }
+                #endregion
+            }
+
             /// <summary>
             /// The mount data class.
             /// This writes the mountID to the constructor.
@@ -652,6 +706,7 @@ namespace Parser_V2
 
                     // Remove globally blacklisted fields.
                     fields.Remove("ilvl");
+                    fields.Remove("name");
                     fields.Remove("q");
 
                     // Conditionally remove certain fields.

@@ -961,9 +961,7 @@ _.Zones =
 						["questID"] = 1370,
 						["groups"] = {
 							un(2, i(32378)),	-- Silver Star
-							un(2, i(3463, { -- Broken Silver Star
-								["f"] = 50,    -- Miscellaneous
-							})),
+							un(2, i(3463)),	-- Broken Silver Star
 							un(2, i(3464)),	-- Feathered Arrow
 							un(2, i(3465)),	-- Exploding Shot
 						},
