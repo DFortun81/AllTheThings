@@ -28,8 +28,20 @@ _.Instances =
 						}),
 					}),
 					n(  0, {	-- Zone Drop
-						i(76160),	-- Drapes of the Dragonshrine
-						i(76161),	-- Gauntlets of the Twilight Hour		
+						["crs"] = {
+							55559, -- Crystalline Elemental
+							54555, -- Frozen Servitor
+							55106, -- Twilight Assassin
+							55112, -- Twilight Bruiser
+							55107, -- Twilight Ranger
+							55109, -- Twilight Shadow-Walker
+							55111, -- Twilight Thug
+						},
+						["g"] = {
+							i(76160),	-- Drapes of the Dragonshrine
+							i(76161),	-- Gauntlets of the Twilight Hour		
+							i(76162),	-- Twilight Amulet
+						},
 					}),
 					cr(54590, e(322, {	-- Arcurion
 						i(72854),	-- Iceward Cloak
