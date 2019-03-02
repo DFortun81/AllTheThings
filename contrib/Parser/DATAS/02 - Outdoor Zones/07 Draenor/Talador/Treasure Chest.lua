@@ -10,18 +10,6 @@ _.Zones =
 				["mapID"] = 535,
 				["groups"] = {
 					{	-- Treasure Chest
-						--[[ Trackers/Flags
-							33927 - Draenei Camp Explosion Tracker - triggers when approaching the area for Deceptia's Smoldering Boots
-							33931 - This Is Not a Quest - triggers when you loot Deceptia's Smoldering Boots. Supposedly it shows the map indicator but is silently completed when the explosion happens?
-							34523 - Warlock Speaking to Gul'dan - triggers near Gul'Rok
-							34562 - Trigger Teron'gor Defense Spawns - triggers in a cave with Soulbind Nyami at Gul'Rok
-							34503 - Screaming Telmor Citizen - triggers in Telmor
-							34115 - Vignette: Four Friends Found - triggers when all 4 citizens are freed from deathweb cocoons, making the Deathweb Toxin Vial treasure lootable
-							34116 - Vignette: Girl 1 Found - triggers breaking a a deathweb cocoon in Deathweb Hollow
-							34117 - Vignette: Girl 2 Found - triggers breaking a a deathweb cocoon in Deathweb Hollow
-							34118 - Vignette: Guy 1 Found - triggers breaking a a deathweb cocoon in Deathweb Hollow
-							34119 - Vignette: Guy 2 Found - triggers breaking a a deathweb cocoon in Deathweb Hollow
-						]]
 						["npcID"] = -212,
 						["g"] = {
 							{	-- Aarko

@@ -61,10 +61,6 @@ _.Zones =
 							})),
 							un(40, q(36018)), -- We're Not Finished...
 						}),
-						--n(-16, {	-- Rares (Legacy)
-						--}),
-						--n(  0, {	-- Zone Drop (Legacy)
-						--}),
 					},
 				}),
 			},

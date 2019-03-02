@@ -28,19 +28,19 @@ _.ExpansionFeatures =
 									},
 									["qg"] = 70859,	-- Thrall
 									["coord"] = { 51.2, 43.2 },
-									["sourceQuests"] = { 34402 },	-- of Wolves and  Warriors
+									["sourceQuest"] = 34402,	-- of Wolves and  Warriors
 								},
 								{	-- Back to Work
 									["questID"] = 34375,
 									["qg"] = 78466,	-- Gazlowe
 									["coord"] = { 51.2, 39.6 },
-									["sourceQuests"] = { 34364 },	-- For the Horde!
+									["sourceQuest"] = 34364,	-- For the Horde!
 								},
 								{	-- A Gronnling Problem
 									["questID"] = 34592,
 									["qg"] = 78466,	-- Gazlowe
 									["coord"] = { 51.2, 39.6 },
-									["sourceQuests"] = { 34364 },	-- For the Horde!
+									["sourceQuest"] = 34364,	-- For the Horde!
 								},
 								{	-- The Den of Skog
 									["questID"] = 34765,
@@ -2083,6 +2083,11 @@ _.ExpansionFeatures =
 								["races"] = HORDE_ONLY,
 								["isBreadcrumb"] = true,
 							},
+							{	-- It's a Matter of Strategy
+								["questID"] = 36953,
+								["races"] = HORDE_ONLY,
+								["isBreadcrumb"] = true,
+							},
 						},
 					},
 					{	-- Den of Wolves
@@ -2397,6 +2402,13 @@ _.ExpansionFeatures =
 					{	-- Garrison Campaign: War Council
 						["questID"] = 38567,
 						["description"] = "Automatically granted upon upgrading your garrison to Rank 3.",
+					},
+					{	-- It's a Matter of Strategy
+						["questID"] = 34681,
+						["qg"] = 78487,	-- Rokhan
+						["coord"] = { 45.9, 42.7, 590 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 36494,	-- News from Talador
 					},
 					{	-- My Very Own Fortress
 						["questID"] = 36614,

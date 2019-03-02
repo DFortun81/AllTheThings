@@ -142,6 +142,15 @@ _.Zones =
 								["crs"] = { 88355 },	--  Waterfly
 								["speciesID"] = 1593,	--  Waterfly
 							},
+							{	-- Taralune
+								["questID"] = 37208,
+								["qg"] = 87125,	-- Taralune
+								["coord"] = { 49.0, 80.3, 535 },
+								["isDaily"] = true,
+								["groups"] = {
+									i(116415),	-- Shiny Pet Charm
+								},
+							},
 						},
 					},
 				},

@@ -409,9 +409,8 @@ _.Zones =
 								["questID"] = 34671,
 								["coords"] = {
 									{ 41.44, 60.14, 535 },	-- Tomb of Souls Entrance
-									{ 42.8, 54.2, 535 },		-- Shirzir
+									{ 67.5, 23.4, 537 },		-- Shirzir
 								},
-								["description"] = "Enter cave at first set of coords.",
 								["g"] = {	
 									i(112370),	-- Shirzir's Sticky Slippers
 								},

@@ -23,7 +23,7 @@ _.Zones =
 								i(95621),	-- Warbot Ignition Key Pet
 								i(45057),	-- Wind-Up Train Wreck Toy
 							},
-							["coord"] = { 45.2, 38.8 },
+							["coord"] = { 45.2, 38.8, 535 },
 							["description"] = "Vendor only available until you reach character level 100. Items are also available from vendors in Stormwind, Orgrimmar, and Dalaran.|r",
 						}),
 						n(84216, {	-- Talgaiir the Ironrender
@@ -69,10 +69,10 @@ _.Zones =
 								un(4, h(i(77592))),	-- Replica High Warlord's Tome of Mending
 								un(4, h(i(77581))),	-- Replica High Warlord's War Staff
 							},
-							["coord"] = { 45.6, 38.6 },
+							["coord"] = { 45.6, 38.6, 535 },
 							["description"] = "Vendor only available until you reach character level 100. Items also available from Big Zokk Torquewrench in Area 52. Items require Legionnaire/Knight-Captain or higher to purchase. |r",
 						}),
-						nh(23803, {	-- Wixxa the Sapper <Explosives>
+						n(23803, {	-- Wixxa the Sapper <Explosives>
 							["groups"] = {
 								i(23799),	-- Schematic: Adamantite Rifle
 								i(23807),	-- Schematic: Adamantite Scope
@@ -80,7 +80,8 @@ _.Zones =
 								i(23816),	-- Schematic: Fel Iron Toolbox
 								i(23805),	-- Schematic: Ultra-Spectropic Detection Goggles
 							},
-							["coord"] = { 71.6, 30.2 },
+							["coord"] = { 71.6, 30.2, 535 },
+							["races"] = HORDE_ONLY,
 						}),
 						n(86949, {	-- Zooti Fizzlefury 
 							["groups"] = { 
@@ -115,9 +116,7 @@ _.Zones =
 								un(4, i(124637)),	-- Sanctus, Sigil of the Unbroken
 								un(4, i(124638)),	-- Etheralus, the Eternal Reward
 							},
-							["coords"] = {
-								{ 85.0, 31.0 },	-- 
-							},
+							["coord"] = { 85.0, 31.0, 535 },
 						}),
 					}),
 				},
