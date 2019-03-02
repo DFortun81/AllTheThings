@@ -25,26 +25,12 @@ _.Instances =
 							114,	-- Borean Tundra
 						},
 --]]					["groups"] = {
---[[						{
-								["description"] = "This quest is auto accepted upon killing a Molten Lord.",
-								["allianceQuestID"] = 29453,	-- Your Time Has Come [A]
-								["hordeQuestID"] = 	  29452,	-- Your Time Has Come [H]
-								["qg"] = 53115, -- Molten Lord
-								["isBreadcrumb"] = true,    -- for A Legendary Engagement
-							},
-							{
-								["description"] = "This is a really great quest to pick up on a character that you don't plan to ever get the legendary on. So long as you never finish this quest you have a very very convenient port to the heart of the Caverns of Time from Stormwind or Orgrimmar.",
-								["allianceQuestID"] = 29129,	-- A Legendary Engagement [A]
-								["hordeQuestID"] = 	  29132,	-- A Legendary Engagement [H]
-								["qg"] = 52382,	-- Ziradormi
-								["sourceQuests"] = { 29453, 29452 },	-- Your Time Has Come
-							},
---]]						q(30118, {	-- Patricide
+							q(30118, {	-- Patricide
 								["qg"] = 57777,	-- Wrathion <The Black Prince>
+								["description"] = "This quest only requires looting the final boss, so make sure to pick it up before finishing the raid for the week.",
 								["sourceQuests"] = { 30116 },	-- Sharpening Your Fangs
 								["groups"] = {
 									i(78352, {	-- Fragment of Deathwing's Jaw
-										["description"] = "Drops from Madness of Deathwing",
 										["questID"] = 30118,
 										["crs"] = {
 											56173,	-- Madness of Deathwing
@@ -60,10 +46,10 @@ _.Instances =
 							}),
 							q(30116, {	-- Sharpening Your Fangs
 								["qg"] = 57777,	-- Wrathion <The Black Prince>
+								["description"] = "This quest requires you to turn in 60 unopened Elementium Gem Clusters.",
 								["sourceQuests"] = { 30113 },	-- Victory in the Depths
 								["groups"] = {
 									i(77952, {	-- Elementium Gem Cluster
-										["description"] = "Requires 60. You cant open them",
 										["questID"] = 30116,
 										["crs"] = {
 											55265,	-- Morchok
@@ -144,7 +130,7 @@ _.Instances =
 											i(78826),	-- Robes of Dying Light
 											i(78825),	-- Robes of the Faceless Shroud
 										},
-										["description"] = "Paladin Completionist will want to take this item to the vendor to get the specific item they want.  Right-clicking can award the Holy piece regardless of your spec.",
+										["description"] = "Paladin Completionists will want to take this item to the vendor to get the specific item they want.  Right-clicking can award the Holy piece regardless of your spec.",
 									}),
 									i(78864, {	-- Chest of the Corrupted Protector
 										i(78756),	-- Wyrmstalker's Tunic
