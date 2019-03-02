@@ -1497,7 +1497,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			if not paramB then
 				local itemString = string.match(paramA, "item[%-?%d:]+");
 				if itemString then
-					if GetDataMember("ShowItemString") then tinsert(info, { left = itemString }); end
+					if app.Settings:GetTooltipSetting("itemString") then tinsert(info, { left = itemString }); end
 					local _, itemID2, enchantId, gemId1, gemId2, gemId3, gemId4, suffixId, uniqueId, linkLevel, specializationID, upgradeId, difficultyID, numBonusIds = strsplit(":", itemString);
 					if itemID2 then
 						itemID = tonumber(itemID2); 
@@ -1574,7 +1574,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 											else
 												text = "   ";
 											end
-											tinsert(info, { left = text .. link .. (GetDataMember("ShowItemID") and " (*)" or ""), right = GetCollectionIcon(group[1].collected)});
+											tinsert(info, { left = text .. link .. (app.Settings:GetTooltipSetting("itemID") and " (*)" or ""), right = GetCollectionIcon(group[1].collected)});
 										end
 									else
 										local otherATTSource = app.SearchForField("s", otherSourceID);
@@ -1598,7 +1598,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 												else
 													text = "   ";
 												end
-												tinsert(info, { left = text .. link .. (GetDataMember("ShowItemID") and (" (" .. (otherATTSource.itemID or "???") .. ")") or ""), right = GetCollectionIcon(otherATTSource.collected)});
+												tinsert(info, { left = text .. link .. (app.Settings:GetTooltipSetting("itemID") and (" (" .. (otherATTSource.itemID or "???") .. ")") or ""), right = GetCollectionIcon(otherATTSource.collected)});
 											end
 										else
 											local otherSource = C_TransmogCollection_GetSourceInfo(otherSourceID);
@@ -1608,7 +1608,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 													link = RETRIEVING_DATA;
 													working = true;
 												end
-												tinsert(info, { left = " |CFFFF0000!|r " .. link .. (GetDataMember("ShowItemID") and (" (" .. (otherSource.itemID or "???") .. ")") or ""), right = GetCollectionIcon(otherSource.isCollected)});
+												tinsert(info, { left = " |CFFFF0000!|r " .. link .. (app.Settings:GetTooltipSetting("itemID") and (" (" .. (otherSource.itemID or "???") .. ")") or ""), right = GetCollectionIcon(otherSource.isCollected)});
 											end
 										end
 									end
@@ -1633,7 +1633,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 											else
 												text = "   ";
 											end
-											tinsert(info, { left = text .. link .. (GetDataMember("ShowItemID") and " (*)" or ""), right = GetCollectionIcon(group[1].collected)});
+											tinsert(info, { left = text .. link .. (app.Settings:GetTooltipSetting("itemID") and " (*)" or ""), right = GetCollectionIcon(group[1].collected)});
 										end
 									else
 										local otherATTSource = app.SearchForField("s", otherSourceID);
@@ -1657,7 +1657,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 											else
 												text = "   ";
 											end
-											text = text .. link .. (GetDataMember("ShowItemID") and (" (" .. (otherATTSource.itemID or "???") .. ")") or "");
+											text = text .. link .. (app.Settings:GetTooltipSetting("itemID") and (" (" .. (otherATTSource.itemID or "???") .. ")") or "");
 											
 											-- Show all of the reasons why an appearance does not meet given criteria.
 											-- Only show Shared Appearances that match the requirements for this class to prevent people from assuming things.
@@ -1691,7 +1691,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 													link = RETRIEVING_DATA;
 													working = true;
 												end
-												text = " |CFFFF0000!|r " .. link .. (GetDataMember("ShowItemID") and (" (" .. (otherSourceID == sourceID and "*" or otherSource.itemID or "???") .. ")") or "");
+												text = " |CFFFF0000!|r " .. link .. (app.Settings:GetTooltipSetting("itemID") and (" (" .. (otherSourceID == sourceID and "*" or otherSource.itemID or "???") .. ")") or "");
 												if otherSource.isCollected then SetDataSubMember("CollectedSources", otherSourceID, 1); end
 												tinsert(info, { left = text	.. " |CFFFF0000(MISSING IN ATT - " .. otherSourceID .. ")|r", right = GetCollectionIcon(otherSource.isCollected)});
 											end
@@ -1701,11 +1701,11 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 							end
 						end
 						
-						if GetDataMember("ShowVisualID") then tinsert(info, { left = L["VISUAL_ID"], right = tostring(sourceInfo.visualID) }); end
-						if GetDataMember("ShowSourceID") then tinsert(info, { left = L["SOURCE_ID"], right = sourceID .. " " .. GetCollectionIcon(sourceInfo.isCollected) }); end
+						if app.Settings:GetTooltipSetting("visualID") then tinsert(info, { left = L["VISUAL_ID"], right = tostring(sourceInfo.visualID) }); end
+						if app.Settings:GetTooltipSetting("sourceID") then tinsert(info, { left = L["SOURCE_ID"], right = sourceID .. " " .. GetCollectionIcon(sourceInfo.isCollected) }); end
 					end
 				end
-				if GetDataMember("ShowItemID") then tinsert(info, { left = L["ITEM_ID"], right = tostring(itemID) }); end
+				if app.Settings:GetTooltipSetting("itemID") then tinsert(info, { left = L["ITEM_ID"], right = tostring(itemID) }); end
 				if app.Settings:GetTooltipSetting("SpecializationRequirements") then
 					local specs = GetItemSpecInfo(itemID);
 					if specs then
@@ -2769,7 +2769,7 @@ local function AttachTooltip(self)
 						--print(name .. " is a " .. type .. " " .. target);
 						if type == "Creature" or type == "Vehicle" then
 							--print(name .. "'s NPC id is " .. npc_id)
-							if GetDataMember("ShowCreatureID") then self:AddDoubleLine(L["CREATURE_ID"], tostring(npc_id)); end
+							if app.Settings:GetTooltipSetting("creatureID") then self:AddDoubleLine(L["CREATURE_ID"], tostring(npc_id)); end
 							AttachTooltipSearchResults(self, "creatureID:" .. npc_id, SearchForField, "creatureID", tonumber(npc_id));
 						--elseif type == "Vignette" then
 							--print(name .. " is a Vignette and should have its npc_id be zero (" .. npc_id .. ").")
@@ -2784,7 +2784,7 @@ local function AttachTooltip(self)
 				
 				local encounterID = owner.encounterID;
 				if encounterID and not owner.itemID then
-					if GetDataMember("ShowEncounterID") then self:AddDoubleLine(L["ENCOUNTER_ID"], tostring(encounterID)); end
+					if app.Settings:GetTooltipSetting("encounterID") then self:AddDoubleLine(L["ENCOUNTER_ID"], tostring(encounterID)); end
 					AttachTooltipSearchResults(self, "encounterID:" .. encounterID, SearchForField, "encounterID", tonumber(encounterID));
 					return;
 				end
@@ -2823,7 +2823,7 @@ local function AttachTooltip(self)
 						--print(name .. " is a " .. type .. " " .. target);
 						if type == "Creature" or type == "Vehicle" then
 							--print(name .. "'s NPC id is " .. npc_id)
-							if GetDataMember("ShowCreatureID") then self:AddDoubleLine(L["CREATURE_ID"], tostring(npc_id)); end
+							if app.Settings:GetTooltipSetting("creatureID") then self:AddDoubleLine(L["CREATURE_ID"], tostring(npc_id)); end
 							AttachTooltipSearchResults(self, "creatureID:" .. npc_id, SearchForField, "creatureID", tonumber(npc_id));
 						--elseif type == "Vignette" then
 							--print(name .. " is a Vignette and should have its npc_id be zero (" .. npc_id .. ").")
@@ -2838,7 +2838,7 @@ local function AttachTooltip(self)
 				
 				local encounterID = self.encounterID;
 				if encounterID and not self.itemID then
-					if GetDataMember("ShowEncounterID") then self:AddDoubleLine(L["ENCOUNTER_ID"], tostring(encounterID)); end
+					if app.Settings:GetTooltipSetting("encounterID") then self:AddDoubleLine(L["ENCOUNTER_ID"], tostring(encounterID)); end
 					AttachTooltipSearchResults(self, "encounterID:" .. encounterID, SearchForField, "encounterID", tonumber(encounterID));
 					return;
 				--[[
@@ -2846,7 +2846,7 @@ local function AttachTooltip(self)
 					local questID = self.questID;
 					if questID then
 						print("QUEST", questID);
-						if GetDataMember("ShowQuestID") then self:AddDoubleLine(L["QUEST_ID"], tostring(questID)); end
+						if app.Settings:GetTooltipSetting("questID") then self:AddDoubleLine(L["QUEST_ID"], tostring(questID)); end
 						AttachTooltipSearchResults(self, "questID:" .. questID, SearchForField, "questID", tonumber(questID));
 					end
 				]]--
@@ -2922,7 +2922,7 @@ end
 		
 		if (not InCombatLockdown() or app.Settings:GetTooltipSetting("DisplayInCombat")) and app.Settings:GetTooltipSetting("Enabled") then
 			AttachTooltipSearchResults(self, "currencyID:" .. currencyID, SearchForField, "currencyID", currencyID);
-			if GetDataMember("ShowCurrencyID") then self:AddDoubleLine(L["CURRENCY_ID"], tostring(currencyID)); end
+			if app.Settings:GetTooltipSetting("currencyID") then self:AddDoubleLine(L["CURRENCY_ID"], tostring(currencyID)); end
 			self:Show();
 		end
 	end
@@ -2943,7 +2943,7 @@ end
 						-- Compare the name of the currency vs the name of the token
 						if select(1, GetCurrencyInfo(currencyID)) == name then
 							AttachTooltipSearchResults(self, "currencyID:" .. currencyID, SearchForField, "currencyID", currencyID);
-							if GetDataMember("ShowCurrencyID") then self:AddDoubleLine(L["CURRENCY_ID"], tostring(currencyID)); end
+							if app.Settings:GetTooltipSetting("currencyID") then self:AddDoubleLine(L["CURRENCY_ID"], tostring(currencyID)); end
 							self:Show();
 							break;
 						end
@@ -7144,13 +7144,13 @@ local function RowOnEnter(self)
 		end
 		local lvl = reference.lvl or 0;
 		if lvl > 1 then GameTooltip:AddDoubleLine(L["REQUIRES_LEVEL"], tostring(lvl)); end
-		if reference.b then GameTooltip:AddDoubleLine("Binding", tostring(reference.b)); end
+		if reference.b and app.Settings:GetTooltipSetting("binding") then GameTooltip:AddDoubleLine("Binding", tostring(reference.b)); end
 		if reference.requireSkill then GameTooltip:AddDoubleLine(L["REQUIRES"], tostring(GetSpellInfo(SkillIDToSpellID[reference.requireSkill] or 0))); end
-		if reference.f and reference.f > 0 and GetDataMember("ShowFilterID") then GameTooltip:AddDoubleLine(L["FILTER_ID"], tostring(L["FILTER_ID_TYPES"][reference.f])); end
-		if reference.achievementID and GetDataMember("ShowAchievementID") then GameTooltip:AddDoubleLine(L["ACHIEVEMENT_ID"], tostring(reference.achievementID)); end
-		if reference.artifactID and GetDataMember("ShowArtifactID") then GameTooltip:AddDoubleLine(L["ARTIFACT_ID"], tostring(reference.artifactID)); end
-		if reference.difficultyID and GetDataMember("ShowDifficultyID") then GameTooltip:AddDoubleLine(L["DIFFICULTY_ID"], tostring(reference.difficultyID)); end
-		if GetDataMember("ShowCreatureID") then 
+		if reference.f and reference.f > 0 and app.Settings:GetTooltipSetting("filterID") then GameTooltip:AddDoubleLine(L["FILTER_ID"], tostring(L["FILTER_ID_TYPES"][reference.f])); end
+		if reference.achievementID and app.Settings:GetTooltipSetting("achievementID") then GameTooltip:AddDoubleLine(L["ACHIEVEMENT_ID"], tostring(reference.achievementID)); end
+		if reference.artifactID and app.Settings:GetTooltipSetting("artifactID") then GameTooltip:AddDoubleLine(L["ARTIFACT_ID"], tostring(reference.artifactID)); end
+		if reference.difficultyID and app.Settings:GetTooltipSetting("difficultyID") then GameTooltip:AddDoubleLine(L["DIFFICULTY_ID"], tostring(reference.difficultyID)); end
+		if app.Settings:GetTooltipSetting("creatureID") then 
 			if reference.creatureID then
 				GameTooltip:AddDoubleLine(L["CREATURE_ID"], tostring(reference.creatureID));
 			elseif reference.npcID and reference.npcID > 0 then
@@ -7158,26 +7158,26 @@ local function RowOnEnter(self)
 			end
 		end
 		if reference.encounterID then
-			if GetDataMember("ShowEncounterID") then GameTooltip:AddDoubleLine(L["ENCOUNTER_ID"], tostring(reference.encounterID)); end
+			if app.Settings:GetTooltipSetting("encounterID") then GameTooltip:AddDoubleLine(L["ENCOUNTER_ID"], tostring(reference.encounterID)); end
 		--	if reference.parent and reference.parent.locks then GameTooltip:AddDoubleLine("Instance Progress", GetCompletionText(reference.saved)); end
 		--elseif reference.creatureID or (reference.npcID and reference.npcID > 0) then
 		--	if reference.parent and reference.parent.locks then GameTooltip:AddDoubleLine("Instance Progress", GetCompletionText(reference.saved)); end
 		end
-		if reference.factionID and GetDataMember("ShowFactionID") then GameTooltip:AddDoubleLine(L["FACTION_ID"], tostring(reference.factionID)); end
-		if reference.illusionID and GetDataMember("ShowIllusionID") then GameTooltip:AddDoubleLine(L["ILLUSION_ID"], tostring(reference.illusionID)); end
+		if reference.factionID and app.Settings:GetTooltipSetting("factionID") then GameTooltip:AddDoubleLine(L["FACTION_ID"], tostring(reference.factionID)); end
+		if reference.illusionID and app.Settings:GetTooltipSetting("illusionID") then GameTooltip:AddDoubleLine(L["ILLUSION_ID"], tostring(reference.illusionID)); end
 		if reference.instanceID then
-			if GetDataMember("ShowInstanceID") then GameTooltip:AddDoubleLine(L["INSTANCE_ID"], tostring(reference.instanceID)); end
+			if app.Settings:GetTooltipSetting("instanceID") then GameTooltip:AddDoubleLine(L["INSTANCE_ID"], tostring(reference.instanceID)); end
 			GameTooltip:AddDoubleLine(L["LOCKOUT"], L[reference.isLockoutShared and "SHARED" or "SPLIT"]);
 		end
-		if reference.objectID and GetDataMember("ShowObjectID") then GameTooltip:AddDoubleLine(L["OBJECT_ID"], tostring(reference.objectID)); end
-		if reference.speciesID and GetDataMember("ShowSpeciesID") then GameTooltip:AddDoubleLine(L["SPECIES_ID"], tostring(reference.speciesID)); end
-		if reference.spellID and GetDataMember("ShowSpellID") then GameTooltip:AddDoubleLine(L["SPELL_ID"], tostring(reference.spellID)); end
-		if reference.tierID and GetDataMember("ShowTierID") then GameTooltip:AddDoubleLine(L["EXPANSION_ID"], tostring(reference.tierID)); end
+		if reference.objectID and app.Settings:GetTooltipSetting("objectID") then GameTooltip:AddDoubleLine(L["OBJECT_ID"], tostring(reference.objectID)); end
+		if reference.speciesID and app.Settings:GetTooltipSetting("speciesID") then GameTooltip:AddDoubleLine(L["SPECIES_ID"], tostring(reference.speciesID)); end
+		if reference.spellID and app.Settings:GetTooltipSetting("spellID") then GameTooltip:AddDoubleLine(L["SPELL_ID"], tostring(reference.spellID)); end
+		if reference.tierID and app.Settings:GetTooltipSetting("tierID") then GameTooltip:AddDoubleLine(L["EXPANSION_ID"], tostring(reference.tierID)); end
 		if reference.setID then GameTooltip:AddDoubleLine(L["SET_ID"], tostring(reference.setID)); end
 		if reference.setHeaderID then GameTooltip:AddDoubleLine(L["SET_ID"], tostring(reference.setHeaderID)); end
 		if reference.setSubHeaderID then GameTooltip:AddDoubleLine(L["SET_ID"], tostring(reference.setSubHeaderID)); end
 		
-		if reference.mapID and GetDataMember("ShowMapID") then GameTooltip:AddDoubleLine(L["MAP_ID"], tostring(reference.mapID)); end
+		if reference.mapID and app.Settings:GetTooltipSetting("mapID") then GameTooltip:AddDoubleLine(L["MAP_ID"], tostring(reference.mapID)); end
 		if reference.coords and app.Settings:GetTooltipSetting("Coordinates") then
 			local j = 0;
 			for i,coord in ipairs(reference.coords) do
@@ -7202,8 +7202,8 @@ local function RowOnEnter(self)
 				GetNumberWithZeros(math.floor(reference.coord[1] * 10) * 0.1, 1) .. ", " .. 
 				GetNumberWithZeros(math.floor(reference.coord[2] * 10) * 0.1, 1), 1, 1, 1, 1, 1, 1);
 		end
-		if reference.bonusID and GetDataMember("ShowBonusID") then GameTooltip:AddDoubleLine("Bonus ID", tostring(reference.bonusID)); end
-		if reference.modID and GetDataMember("ShowModID") then GameTooltip:AddDoubleLine("Mod ID", tostring(reference.modID)); end
+		if reference.bonusID and app.Settings:GetTooltipSetting("bonusID") then GameTooltip:AddDoubleLine("Bonus ID", tostring(reference.bonusID)); end
+		if reference.modID and app.Settings:GetTooltipSetting("modID") then GameTooltip:AddDoubleLine("Mod ID", tostring(reference.modID)); end
 		if reference.dr then GameTooltip:AddDoubleLine(L["DROP_RATE"], "|c" .. GetProgressColor(reference.dr * 0.01) .. tostring(reference.dr) .. "%|r"); end
 		if not reference.itemID then
 			if reference.speciesID then
@@ -7229,17 +7229,17 @@ local function RowOnEnter(self)
 			if total then GameTooltip:AddLine(tostring(progress) .. " / " .. tostring(total) .. " Collected"); end
 		end
 		if reference.titleID then
-			if GetDataMember("ShowTitleID") then GameTooltip:AddDoubleLine(L["TITLE_ID"], tostring(reference.titleID)); end
+			if app.Settings:GetTooltipSetting("titleID") then GameTooltip:AddDoubleLine(L["TITLE_ID"], tostring(reference.titleID)); end
 			GameTooltip:AddDoubleLine(" ", L[IsTitleKnown(reference.titleID) and "KNOWN_ON_CHARACTER" or "UNKNOWN_ON_CHARACTER"]);
 		end
 		if reference.questID then
-			if GetDataMember("ShowQuestID") then
+			if app.Settings:GetTooltipSetting("questID") then
 				GameTooltip:AddDoubleLine(L["QUEST_ID"], tostring(reference.questID));
 				if reference.altQuestID then GameTooltip:AddDoubleLine(" ", tostring(reference.altQuestID)); end
 			end
 		end
 		if reference.qgs and GetDataMember("ShowQuestGivers") then
-			if GetDataMember("ShowCreatureID") then 
+			if app.Settings:GetTooltipSetting("creatureID") then 
 				for i,qg in ipairs(reference.qgs) do
 					GameTooltip:AddDoubleLine(i == 1 and L["QUEST_GIVER"] or " ", tostring(qg > 0 and NPCNameFromID[qg] or "") .. " (" .. qg .. ")");
 				end
@@ -7250,7 +7250,7 @@ local function RowOnEnter(self)
 			end
 		end
 		if reference.crs and GetDataMember("ShowCreatures") then
-			if GetDataMember("ShowCreatureID") then 
+			if app.Settings:GetTooltipSetting("creatureID") then 
 				for i,cr in ipairs(reference.crs) do
 					GameTooltip:AddDoubleLine(i == 1 and CREATURE or " ", tostring(cr > 0 and NPCNameFromID[cr] or "") .. " (" .. cr .. ")");
 				end
@@ -7289,12 +7289,16 @@ local function RowOnEnter(self)
 			end
 			GameTooltipIcon:Show();
 		elseif reference.displayID or reference.modelID or reference.model then
-			GameTooltip:AddDoubleLine("File ID", GameTooltipModel.Model:GetModelFileID());
-			if reference.displayID or reference.modelID then
-				GameTooltip:AddDoubleLine("Display ID", reference.displayID);
+			if app.Settings:GetTooltipSetting("fileID") then
+				GameTooltip:AddDoubleLine("File ID", GameTooltipModel.Model:GetModelFileID());
 			end
-			if reference.modelID then
-				GameTooltip:AddDoubleLine("Model ID", reference.modelID);
+			if app.Settings:GetTooltipSetting("displayID") then
+				if reference.displayID or reference.modelID then
+					GameTooltip:AddDoubleLine("Display ID", reference.displayID);
+				end
+				if reference.modelID then
+					GameTooltip:AddDoubleLine("Model ID", reference.modelID);
+				end
 			end
 		end
 		if reference.cost then
@@ -10629,30 +10633,6 @@ app.events.VARIABLES_LOADED = function()
 	GetDataMember("AutomateTomTomWaypoints", false);
 	GetDataMember("EnableTomTomWaypointsOnTaxi", false);
 	GetDataMember("TomTomIgnoreCompletedObjects", true);
-	
-	GetDataMember("ShowAchievementID", false);
-	GetDataMember("ShowArtifactID", false);
-	GetDataMember("ShowBonusID", false);
-	GetDataMember("ShowCreatureID", false);
-	GetDataMember("ShowCurrencyID", false);
-	GetDataMember("ShowDifficultyID", false);
-	GetDataMember("ShowEncounterID", false);
-	GetDataMember("ShowFactionID", false);
-	GetDataMember("ShowFilterID", false);
-	GetDataMember("ShowIllusionID", false);
-	GetDataMember("ShowInstanceID", false);
-	GetDataMember("ShowItemID", false);
-	GetDataMember("ShowItemString", false);
-	GetDataMember("ShowMapID", false);
-	GetDataMember("ShowModID", false);
-	GetDataMember("ShowObjectID", false);
-	GetDataMember("ShowQuestID", false);
-	GetDataMember("ShowSourceID", false);
-	GetDataMember("ShowSpeciesID", false);
-	GetDataMember("ShowSpellID", false);
-	GetDataMember("ShowTierID", false);
-	GetDataMember("ShowTitleID", false);
-	GetDataMember("ShowVisualID", false);
 	app.Settings:Initialize();
 end
 app.events.PLAYER_LOGIN = function()
@@ -10722,9 +10702,6 @@ end
 app.events.PLAYER_LOOT_SPEC_UPDATED = function()
 	app.Spec = GetLootSpecialization();
 	if not app.Spec or app.Spec == 0 then app.Spec = select(1, GetSpecializationInfo(GetSpecialization())); end
-	if GetDataMember("RequirePersonalLootFilter") then
-		app:RefreshData(false, true);
-	end
 end
 app.events.PLAYER_LEVEL_UP = function(newLevel)
 	app.Level = newLevel;

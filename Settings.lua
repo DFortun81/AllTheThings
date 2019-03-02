@@ -2576,112 +2576,74 @@ function(self)
 end);
 ShowCurrenciesInWorldQuestsList:SetATTTooltip("Enable this option if you want to treat currencies awarded by World Quests as if all of the Things they are used to acquire counted as +1 in the list.");
 ShowCurrenciesInWorldQuestsList:SetPoint("TOPLEFT", OpenWorldQuestsListAutomatically, "BOTTOMLEFT", 4, 4);
-end)();
 
-------------------------------------------
--- The "Debugging" Tab.					--
-------------------------------------------
---[[
-(function()
-local tab = settings:CreateTab("Debugging");
-
-
-
--- TomTom Integration
-local tomtomOptions = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-tomtomOptions:SetPoint("TOPLEFT", otherFrame, 0, -(otherFrame:GetHeight() + frameSpacer));
-tomtomOptions:SetText("TomTom Options");
-addObject(elm,tomtomOptions);
-
-local tomtomOptionsFrame = CreateFrame("Frame", name .. "-" .. tabName .. "-tomtomFrame", child, "ThinBorderTemplate");
-tomtomOptionsFrame:SetSize(child:GetWidth(),135);
-tomtomOptionsFrame:SetPoint("TOPLEFT",tomtomOptions,0,-frameSpacer);
-tomtomOptionsFrame:SetAlpha(0.3);
-addObject(elm,tomtomOptionsFrame);
-
--- TomTom waypoint automation
-local autoLoadTomTomWaypoints = createCheckBox("Automatically Set TomTom Waypoints", child, function(self)
-		app.SetDataMember("AutomateTomTomWaypoints", self:GetChecked());
-	end,
+local DebuggingLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
+DebuggingLabel:SetPoint("TOPLEFT", ShowCurrenciesInWorldQuestsList, "BOTTOMLEFT", -8, -8);
+DebuggingLabel:SetJustifyH("LEFT");
+DebuggingLabel:SetText("Debugging");
+DebuggingLabel:Show();
+table.insert(settings.MostRecentTab.objects, DebuggingLabel);
+local ids = {["achievementID"] = "Achievement ID",
+	["artifactID"] = "Artifact ID",
+	["bonusID"] = "Bonus ID",
+	["creatureID"] = "Creature ID",
+	["currencyID"] = "Currency ID",
+	["difficultyID"] = "Difficulty ID",
+	["displayID"] = "Display ID",
+	["encounterID"] = "Encounter ID",
+	["factionID"] = "Faction ID",
+	["filterID"] = "Filter ID",
+	["fileID"] = "File ID",
+	["illusionID"] = "Illusion ID",
+	["instanceID"] = "Instance ID",
+	["itemID"] = "Item ID",
+	["itemString"] = "Item String",
+	["mapID"] = "Map ID",
+	["modID"] = "Mod ID",
+	["objectID"] = "Object ID",
+	["questID"] = "Quest ID",
+	["sourceID"] = "Source ID",
+	["speciesID"] = "Species ID",
+	["spellID"] = "Spell ID",
+	["tierID"] = "Tier ID",
+	["titleID"] = "Title ID",
+	["visualID"] = "Visual ID",
+};
+local last = nil;
+for _,id in pairs({"achievementID","artifactID","bonusID","creatureID","currencyID","difficultyID","displayID","encounterID","factionID","fileID","filterID","illusionID","instanceID"}) do
+	local filter = settings:CreateCheckBox(ids[id],
 	function(self) 
-		self:SetChecked(app.GetDataMember("AutomateTomTomWaypoints", false));
+		self:SetChecked(settings:GetTooltipSetting(id));
 	end,
 	function(self)
-		GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
-		GameTooltip:SetText ("Enable this option if you want TomTom waypoints to be automatically added when entering new maps.", nil, nil, nil, nil, true);
-		GameTooltip:Show();
+		settings:SetTooltipSetting(id, self:GetChecked());
+		settings:Refresh();
 	end);
-autoLoadTomTomWaypoints:SetPoint("TOPLEFT",tomtomOptions,5,-frameSpacer);
-addObject(elm,autoLoadTomTomWaypoints);
-
-local setTomTomWaypointsOnTaxi = createCheckBox("Enable TomTom Waypoints While on Flightpath", child, function(self)
-		app.SetDataMember("EnableTomTomWaypointsOnTaxi", self:GetChecked());
-	end,
-	function(self) 
-		self:SetChecked(app.GetDataMember("EnableTomTomWaypointsOnTaxi", false));
-	end,
-	function(self)
-		GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
-		GameTooltip:SetText ("Enable this option if you want TomTom waypoints to be automatically added while using a taxi or flightpath.", nil, nil, nil, nil, true);
-		GameTooltip:Show();
-	end);
-setTomTomWaypointsOnTaxi:SetPoint("TOPLEFT",autoLoadTomTomWaypoints,0,-frameSpacer);
-setTomTomWaypointsOnTaxi.Label:SetWidth(setTomTomWaypointsOnTaxi.Label:GetWidth() * 1.5);
-addObject(elm,setTomTomWaypointsOnTaxi);
-
-local tomTomWaypointIgnoreCompleted = createCheckBox("Ignore Completed Objects", child, function(self)
-		app.SetDataMember("TomTomIgnoreCompletedObjects", self:GetChecked());
-	end,
-	function(self) 
-		self:SetChecked(app.GetDataMember("TomTomIgnoreCompletedObjects", true));
-	end);
-tomTomWaypointIgnoreCompleted:SetPoint("TOPLEFT",setTomTomWaypointsOnTaxi,0,-frameSpacer);
-tomTomWaypointIgnoreCompleted.Label:SetWidth(tomTomWaypointIgnoreCompleted.Label:GetWidth() * 1.5);
-addObject(elm,tomTomWaypointIgnoreCompleted);
-
-local tomtomSubFrame = CreateFrame("Frame", name .. "-" .. tabName .. "-tomtomSubFrame", child, "ThinBorderTemplate");
-tomtomSubFrame:SetSize(tomtomOptionsFrame:GetWidth()-20,55);
-tomtomSubFrame:SetPoint("TOPLEFT",tomTomWaypointIgnoreCompleted,5,-30);
-tomtomSubFrame:SetAlpha(0.3);
-addObject(elm,tomtomSubFrame);
-
--- TomTom waypoint filters
-local last = tomtomSubFrame;
-local waypointFilterNames = L["NPC_ID_NAMES"];
-local last = tomtomSubFrame;
-local x = 5;
-local y = 5
-local count = 0;
-for key,value in ipairs({ -228, -17, -16, -2 }) do
-	local filter = createCheckBox(waypointFilterNames[value], child, function(self)
-		local val = app.GetDataMember("WaypointFilters")
-		val[value] = self:GetChecked();
-		app.SetDataMember("WaypointFilters", val);
-	end, 
-	function(self)
-		local val = app.GetDataMember("WaypointFilters");
-		if(val[value] == nil) then
-			val[value] = true
-			app.SetDataMember("WaypointFilters", val);
-		end
-		self:SetChecked(val[value]);
-	end);
-	filter:SetPoint("TOPLEFT",last,x,-y)
-	addObject(elm,filter)
-	last = filter
-	x = 0;
-	y = frameSpacer;
-	count = count + 1;
-	if count == 2 then
-		x = tomtomSubFrame:GetWidth()/2
-		y = 5
-		last = tomtomSubFrame
+	if not last then
+		filter:SetPoint("TOPLEFT", DebuggingLabel, "BOTTOMLEFT", 4, 0);
+	else
+		filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, 4);
 	end
+	last = filter;
 end
-
-
+last = nil;
+for _,id in pairs({"itemID","itemString", "mapID","modID","objectID","questID","sourceID","speciesID","spellID","tierID","titleID","visualID"}) do
+	local filter = settings:CreateCheckBox(ids[id],
+	function(self) 
+		self:SetChecked(settings:GetTooltipSetting(id));
+	end,
+	function(self)
+		settings:SetTooltipSetting(id, self:GetChecked());
+		settings:Refresh();
+	end);
+	if not last then
+		filter:SetPoint("TOPLEFT", DebuggingLabel, "BOTTOMLEFT", 164, 0);
+	else
+		filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, 4);
+	end
+	last = filter;
+end
 end)();
-]]--
 
 ------------------------------------------
 -- The "About/Help" Tab.				--
