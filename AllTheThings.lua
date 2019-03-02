@@ -1557,7 +1557,26 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 							if app.Settings:GetTooltipSetting("OnlyShowRelevantSharedAppearances") then
 								-- The user doesn't want to see Shared Appearances that don't match the item's requirements.
 								for i, otherSourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
-									if otherSourceID ~= sourceID or app.Settings:GetTooltipSetting("IncludeOriginalSource") then
+									if otherSourceID == sourceID then
+										if app.Settings:GetTooltipSetting("IncludeOriginalSource") and #group > 0 then
+											local link = group[1].link;
+											if not link then 
+												link = RETRIEVING_DATA;
+												working = true;
+											end
+											if group[1].u then
+												local texture = L["UNOBTAINABLE_ITEM_TEXTURES"][L["UNOBTAINABLE_ITEM_REASONS"][group[1].u or 1][1]];
+												if texture then
+													text = "|T" .. texture .. ":0|t";
+												else
+													text = "   ";
+												end
+											else
+												text = "   ";
+											end
+											tinsert(info, { left = text .. link .. (GetDataMember("ShowItemID") and " (*)" or ""), right = GetCollectionIcon(group[1].collected)});
+										end
+									else
 										local otherATTSource = app.SearchForField("s", otherSourceID);
 										if otherATTSource then
 											otherATTSource = otherATTSource[1];
@@ -1597,7 +1616,26 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 							else
 								-- This is where we need to calculate the requirements differently because Unique Mode users are extremely frustrating.
 								for i, otherSourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
-									if otherSourceID ~= sourceID or app.Settings:GetTooltipSetting("IncludeOriginalSource") then
+									if otherSourceID == sourceID then
+										if app.Settings:GetTooltipSetting("IncludeOriginalSource") and #group > 0 then
+											local link = group[1].link;
+											if not link then 
+												link = RETRIEVING_DATA;
+												working = true;
+											end
+											if group[1].u then
+												local texture = L["UNOBTAINABLE_ITEM_TEXTURES"][L["UNOBTAINABLE_ITEM_REASONS"][group[1].u or 1][1]];
+												if texture then
+													text = "|T" .. texture .. ":0|t";
+												else
+													text = "   ";
+												end
+											else
+												text = "   ";
+											end
+											tinsert(info, { left = text .. link .. (GetDataMember("ShowItemID") and " (*)" or ""), right = GetCollectionIcon(group[1].collected)});
+										end
+									else
 										local otherATTSource = app.SearchForField("s", otherSourceID);
 										if otherATTSource then
 											otherATTSource = otherATTSource[1];
