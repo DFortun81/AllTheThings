@@ -107,6 +107,7 @@ local FilterSettingsBase = {
 };
 local TooltipSettingsBase = {
 	__index = {
+		["Descriptions"] = true,
 		["DisplayInCombat"] = true,
 		["Enabled"] = true,
 		["Expand:Difficulty"] = true,
@@ -114,10 +115,17 @@ local TooltipSettingsBase = {
 		["MinimapButton"] = true,
 		["MinimapSize"] = 36,
 		["MinimapStyle"] = true,
+		["Models"] = true,
+		["Locations"] = 5,
 		["Precision"] = 2,
 		["Progress"] = true,
 		["ShowIconOnly"] = false,
 		["SharedAppearances"] = true,
+		["SourceLocations"] = true,
+		["SourceLocations:Completed"] = true,
+		["SourceLocations:Creatures"] = true,
+		["SourceLocations:Things"] = true,
+		["SummarizeThings"] = true,
 		["Warn:Difficulty"] = false,
 	},
 };
@@ -154,6 +162,7 @@ settings.Initialize = function(self)
 	setmetatable(AllTheThingsSettingsPerCharacter.Filters, FilterSettingsBase);
 	FilterSettingsBase.__index = app.Presets[app.Class];
 	
+	self.LocationsSlider:SetValue(self:GetTooltipSetting("Locations"));
 	self.PrecisionSlider:SetValue(self:GetTooltipSetting("Precision"));
 	self.MinimapButtonSizeSlider:SetValue(self:GetTooltipSetting("MinimapSize"));
 	if self:GetTooltipSetting("MinimapButton") then
@@ -1546,6 +1555,7 @@ end);
 DisplayInCombatCheckBox:SetATTTooltip("Enable this option if you want to render tooltip information while you are in combat.\n\nIf you are raiding with your Mythic/Mythic+ Guild, you should probably turn this setting off to save as much performance as you can.\n\nIt can be useful while you are soloing old content to immediately know what you need from a boss.");
 DisplayInCombatCheckBox:SetPoint("TOPLEFT", TitlesCheckBox, "BOTTOMLEFT", 4, 4);
 
+
 local ShowCollectionProgressCheckBox = settings:CreateCheckBox("Show Collection Progress",
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Progress"));
@@ -1561,7 +1571,7 @@ function(self)
 	settings:SetTooltipSetting("Progress", self:GetChecked());
 end);
 ShowCollectionProgressCheckBox:SetATTTooltip("Enable this option if you want to see your progress towards collecting a Thing or completing a group of Things at the Top Right of its tooltip.\n\nWe recommend that you keep this setting turned on.");
-ShowCollectionProgressCheckBox:SetPoint("TOPLEFT", DisplayInCombatCheckBox, "BOTTOMLEFT", -4, -4);
+ShowCollectionProgressCheckBox:SetPoint("TOPLEFT", DisplayInCombatCheckBox, "BOTTOMLEFT", 0, -4);
 
 local ShortenProgressCheckBox = settings:CreateCheckBox("Show Icon Only",
 function(self)
@@ -1580,6 +1590,59 @@ end);
 ShortenProgressCheckBox:SetATTTooltip("Enable this option if you only want to see the icon in the topright corner instead of the icon and the collected/not collected text.\n\nSome people like smaller tooltips...");
 ShortenProgressCheckBox:SetPoint("TOPLEFT", ShowCollectionProgressCheckBox, "BOTTOMLEFT", 4, 4);
 
+
+local SummarizeThingsCheckBox = settings:CreateCheckBox("Summarize Things",
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("SummarizeThings"));
+	if not settings:GetTooltipSetting("Enabled") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:SetTooltipSetting("SummarizeThings", self:GetChecked());
+end);
+SummarizeThingsCheckBox:SetATTTooltip("Enable this option to summarize Things in the tooltip. For example, if a Thing can be turned into a Vendor for another Thing, then show that other thing in the tooltip to provide visibility for its multiple uses. If a Thing acts as a Container for a number of other Things, this option will show all of the other Things that the container Contains.\n\nWe recommend that you keep this setting turned on.");
+SummarizeThingsCheckBox:SetPoint("TOPLEFT", ShortenProgressCheckBox, "BOTTOMLEFT", -4, -4);
+
+
+local ShowDescriptionsCheckBox = settings:CreateCheckBox("Show Descriptions",
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("Descriptions"));
+	if not settings:GetTooltipSetting("Enabled") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:SetTooltipSetting("Descriptions", self:GetChecked());
+end);
+ShowDescriptionsCheckBox:SetATTTooltip("Enable this option to show descriptions within the tooltip. This may include the descriptive text supplied by the Dungeon Journal or a custom description added by a Contributor who felt some additional information was necessary.\n\nYou might want to keep this turned on.");
+ShowDescriptionsCheckBox:SetPoint("TOPLEFT", SummarizeThingsCheckBox, "BOTTOMLEFT", 0, -4);
+
+local ShowModelsCheckBox = settings:CreateCheckBox("Show Model Preview",
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("Models"));
+	if not settings:GetTooltipSetting("Enabled") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:SetTooltipSetting("Models", self:GetChecked());
+end);
+ShowModelsCheckBox:SetATTTooltip("Enable this option to show models within a preview instead of the icon on the tooltip.\n\nThis option may assist you in identifying what a Rare Spawn or Vendor looks like. It might be a good idea to keep this turned on for that reason.");
+ShowModelsCheckBox:SetPoint("TOPLEFT", ShowDescriptionsCheckBox, "BOTTOMLEFT", 0, 4);
+
 local ShowLootSpecializationsCheckBox = settings:CreateCheckBox("Show Loot Specializations",
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("LootSpecializations"));
@@ -1595,7 +1658,8 @@ function(self)
 	settings:SetTooltipSetting("LootSpecializations", self:GetChecked());
 end);
 ShowLootSpecializationsCheckBox:SetATTTooltip("Enable this option to show the loot specialization requirements of items in the item's tooltip.\n\nNOTE: These icons will still appear within the ATT mini lists regardless of this setting.");
-ShowLootSpecializationsCheckBox:SetPoint("TOPLEFT", ShortenProgressCheckBox, "BOTTOMLEFT", -4, -4);
+ShowLootSpecializationsCheckBox:SetPoint("TOPLEFT", ShowModelsCheckBox, "BOTTOMLEFT", 0, 4);
+
 
 local ShowSharedAppearancesCheckBox = settings:CreateCheckBox("Show Shared Appearances",
 function(self)
@@ -1612,11 +1676,11 @@ function(self)
 	settings:SetTooltipSetting("SharedAppearances", self:GetChecked());
 end);
 ShowSharedAppearancesCheckBox:SetATTTooltip("Enable this option to see items that share a similar appearance in the tooltip.\n\nNOTE: Items that do not match the armor type are displayed in the list. This is to help you diagnose the Collection progress.\n\nIf you are ever confused by this, as of ATT v1.5.0, you can Right Click the item to open the item and its Shared Appearances into their own standalone Mini List.");
-ShowSharedAppearancesCheckBox:SetPoint("TOPLEFT", ShowLootSpecializationsCheckBox, "BOTTOMLEFT", 0, 4);
+ShowSharedAppearancesCheckBox:SetPoint("TOPLEFT", ShowLootSpecializationsCheckBox, "BOTTOMLEFT", 0, -4);
 
-local ShowSourceSharedAppearancesCheckBox = settings:CreateCheckBox("Show Original Source",
+local IncludeOriginalSourceCheckBox = settings:CreateCheckBox("Include Original Source",
 function(self)
-	self:SetChecked(settings:GetTooltipSetting("SharedAppearancesOriginalSource"));
+	self:SetChecked(settings:GetTooltipSetting("IncludeOriginalSource"));
 	if not settings:GetTooltipSetting("Enabled") then
 		self:Disable();
 		self:SetAlpha(0.2);
@@ -1626,12 +1690,12 @@ function(self)
 	end
 end,
 function(self)
-	settings:SetTooltipSetting("SharedAppearancesOriginalSource", self:GetChecked());
+	settings:SetTooltipSetting("IncludeOriginalSource", self:GetChecked());
 end);
-ShowSourceSharedAppearancesCheckBox:SetATTTooltip("Enable this option if you actually liked seeing the original source info within the Shared Appearances list in the tooltip.");
-ShowSourceSharedAppearancesCheckBox:SetPoint("TOPLEFT", ShowSharedAppearancesCheckBox, "BOTTOMLEFT", 4, 4);
+IncludeOriginalSourceCheckBox:SetATTTooltip("Enable this option if you actually liked seeing the original source info within the Shared Appearances list in the tooltip.");
+IncludeOriginalSourceCheckBox:SetPoint("TOPLEFT", ShowSharedAppearancesCheckBox, "BOTTOMLEFT", 4, 4);
 
-local OnlyShowRelevantSharedAppearancesCheckBox = settings:CreateCheckBox("Only Show Relevant",
+local OnlyShowRelevantSharedAppearancesCheckBox = settings:CreateCheckBox("Only Relevant",
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("OnlyShowRelevantSharedAppearances"));
 	if not settings:GetTooltipSetting("Enabled") then
@@ -1646,7 +1710,113 @@ function(self)
 	settings:SetTooltipSetting("OnlyShowRelevantSharedAppearances", self:GetChecked());
 end);
 OnlyShowRelevantSharedAppearancesCheckBox:SetATTTooltip("Enable this option if you only want to see shared appearances that your character can unlock.\n\nNOTE: We recommend you keep this off as knowing the unlock requirements for an item can be helpful in identifying why an item is Not Collected.");
-OnlyShowRelevantSharedAppearancesCheckBox:SetPoint("TOPLEFT", ShowSourceSharedAppearancesCheckBox, "BOTTOMLEFT", 0, 4);
+OnlyShowRelevantSharedAppearancesCheckBox:SetPoint("TOPLEFT", IncludeOriginalSourceCheckBox, "BOTTOMLEFT", 0, 4);
+
+
+local ShowSourceLocationsCheckBox = settings:CreateCheckBox("Show Source Locations",
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("SourceLocations"));
+	if not settings:GetTooltipSetting("Enabled") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:SetTooltipSetting("SourceLocations", self:GetChecked());
+end);
+ShowSourceLocationsCheckBox:SetATTTooltip("Enable this option if you want to see full Source Location Paths for objects within the ATT database in the tooltip.");
+ShowSourceLocationsCheckBox:SetPoint("TOPLEFT", OnlyShowRelevantSharedAppearancesCheckBox, "BOTTOMLEFT", -4, -4);
+
+local ShowCompletedSourceLocationsForCheckBox = settings:CreateCheckBox("For Completed Sources",
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("SourceLocations:Completed"));
+	if not settings:GetTooltipSetting("Enabled") or not settings:GetTooltipSetting("SourceLocations") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:SetTooltipSetting("SourceLocations:Completed", self:GetChecked());
+end);
+ShowCompletedSourceLocationsForCheckBox:SetATTTooltip("Enable this option if you want to see completed source locations in the tooltip.\n\nAs an example, if you complete the quest \"Bathran's Hair\" in Ashenvale, the tooltip for Evenar Stillwhisper will no longer show that quest when hovering over him.");
+ShowCompletedSourceLocationsForCheckBox:SetPoint("TOPLEFT", ShowSourceLocationsCheckBox, "BOTTOMLEFT", 4, 4);
+
+local ShowSourceLocationsForCreaturesCheckBox = settings:CreateCheckBox("For Creatures",
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("SourceLocations:Creatures"));
+	if not settings:GetTooltipSetting("Enabled") or not settings:GetTooltipSetting("SourceLocations") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:SetTooltipSetting("SourceLocations:Creatures", self:GetChecked());
+end);
+ShowSourceLocationsForCreaturesCheckBox:SetATTTooltip("Enable this option if you want to see Source Locations for Creatures.");
+ShowSourceLocationsForCreaturesCheckBox:SetPoint("TOPLEFT", ShowCompletedSourceLocationsForCheckBox, "BOTTOMLEFT", 0, 4);
+
+local ShowSourceLocationsForThingsCheckBox = settings:CreateCheckBox("For Things",
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("SourceLocations:Things"));
+	if not settings:GetTooltipSetting("Enabled") or not settings:GetTooltipSetting("SourceLocations") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:SetTooltipSetting("SourceLocations:Things", self:GetChecked());
+end);
+ShowSourceLocationsForThingsCheckBox:SetATTTooltip("Enable this option if you want to see Source Locations for Things.");
+ShowSourceLocationsForThingsCheckBox:SetPoint("TOPLEFT", ShowSourceLocationsForCreaturesCheckBox, "BOTTOMLEFT", 0, 4);
+
+-- This creates the "Locations" slider.
+local LocationsSlider = CreateFrame("Slider", "ATTLocationsSlider", settings, "OptionsSliderTemplate");
+LocationsSlider:SetPoint("LEFT", ShowSourceLocationsCheckBox, "LEFT", 0, 0);
+LocationsSlider:SetPoint("TOP", ShowSourceLocationsForThingsCheckBox, "BOTTOM", 0, -20);
+table.insert(settings.MostRecentTab.objects, LocationsSlider);
+settings.LocationsSlider = LocationsSlider;
+LocationsSlider.tooltipText = 'Use this to customize the number of source locations to show in the tooltip.\n\nNOTE: This will also show "X" number of other sources based on how many, if that total is equivalent to the total number of displayed elements, then that will simply display the last source.\n\nDefault: 5';
+LocationsSlider:SetOrientation('HORIZONTAL');
+LocationsSlider:SetWidth(180);
+LocationsSlider:SetHeight(20);
+LocationsSlider:SetValueStep(1);
+LocationsSlider:SetMinMaxValues(1, 40);
+LocationsSlider:SetObeyStepOnDrag(true);
+_G[LocationsSlider:GetName() .. 'Low']:SetText('1')
+_G[LocationsSlider:GetName() .. 'High']:SetText('40')
+_G[LocationsSlider:GetName() .. 'Text']:SetText("Displayed Source Locations")
+LocationsSlider.Label = LocationsSlider:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall");
+LocationsSlider.Label:SetPoint("TOP", LocationsSlider, "BOTTOM", 0, 0);
+LocationsSlider.Label:SetText(LocationsSlider:GetValue());
+LocationsSlider:SetScript("OnValueChanged", function(self, newValue)
+	self.Label:SetText(newValue);
+	if newValue == settings:GetTooltipSetting("Locations") then
+		return 1;
+	end
+	settings:SetTooltipSetting("Locations", newValue)
+	app:UpdateWindows();
+end);
+LocationsSlider.OnRefresh = function(self)
+	if not settings:GetTooltipSetting("Enabled") or not settings:GetTooltipSetting("SourceLocations") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end;
 end)();
 
 ------------------------------------------

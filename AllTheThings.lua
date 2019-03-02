@@ -567,7 +567,7 @@ GameTooltipModel.TrySetDisplayInfos = function(self, reference, displayInfos)
 end
 GameTooltipModel.TrySetModel = function(self, reference)
 	GameTooltipModel.HideAllModels(self);
-	if GetDataMember("ShowModels") then
+	if app.Settings:GetTooltipSetting("Models") then
 		self.lastModel = reference;
 		local displayInfos = reference.displayInfo;
 		if GameTooltipModel.TrySetDisplayInfos(self, reference, displayInfos) then
@@ -1007,19 +1007,17 @@ local function GetDisplayID(data)
 end
 local function SetPortraitIcon(self, data, x)
 	self.lastData = data;
-	if GetDataMember("ShowModels") then
-		local displayID = GetDisplayID(data);
-		if displayID then
-			SetPortraitTextureFromDisplayID(self, displayID);
-			self:SetWidth(self:GetHeight());
-			self:SetTexCoord(0, 1, 0, 1);
-			return true;
-		elseif data.unit and not data.icon then
-			SetPortraitTexture(self, data.unit);
-			self:SetWidth(self:GetHeight());
-			self:SetTexCoord(0, 1, 0, 1);
-			return true;
-		end
+	local displayID = GetDisplayID(data);
+	if displayID then
+		SetPortraitTextureFromDisplayID(self, displayID);
+		self:SetWidth(self:GetHeight());
+		self:SetTexCoord(0, 1, 0, 1);
+		return true;
+	elseif data.unit and not data.icon then
+		SetPortraitTexture(self, data.unit);
+		self:SetWidth(self:GetHeight());
+		self:SetTexCoord(0, 1, 0, 1);
+		return true;
 	end
 	
 	-- Fallback to a traditional icon.
@@ -1471,7 +1469,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			end
 			
 			if group and #group > 0 then
-				if GetDataMember("ShowDescriptions") and paramA ~= "encounterID" then
+				if app.Settings:GetTooltipSetting("Descriptions") and paramA ~= "encounterID" then
 					for i,j in ipairs(group) do
 						if j.description and j[paramA] and j[paramA] == paramB then
 							tinsert(info, 1, { left = j.description, wrap = true, color = "ff66ccff" });
@@ -1559,7 +1557,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 							if app.Settings:GetTooltipSetting("OnlyShowRelevantSharedAppearances") then
 								-- The user doesn't want to see Shared Appearances that don't match the item's requirements.
 								for i, otherSourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
-									if otherSourceID ~= sourceID or app.Settings:GetTooltipSetting("SharedAppearancesOriginalSource") then
+									if otherSourceID ~= sourceID or app.Settings:GetTooltipSetting("IncludeOriginalSource") then
 										local otherATTSource = app.SearchForField("s", otherSourceID);
 										if otherATTSource then
 											otherATTSource = otherATTSource[1];
@@ -1599,7 +1597,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 							else
 								-- This is where we need to calculate the requirements differently because Unique Mode users are extremely frustrating.
 								for i, otherSourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
-									if otherSourceID ~= sourceID or app.Settings:GetTooltipSetting("SharedAppearancesOriginalSource") then
+									if otherSourceID ~= sourceID or app.Settings:GetTooltipSetting("IncludeOriginalSource") then
 										local otherATTSource = app.SearchForField("s", otherSourceID);
 										if otherATTSource then
 											otherATTSource = otherATTSource[1];
@@ -1724,13 +1722,13 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		end
 		
 		-- Create a list of sources
-		if GetDataMember("ShowSources") and (not paramA or GetDataSubMember("SourceText", paramA, true)) then
+		if app.Settings:GetTooltipSetting("SourceLocations") and (not paramA or (paramA ~= "encounterID" and app.Settings:GetTooltipSetting(paramA == "creatureID" and "SourceLocations:Creatures" or "SourceLocations:Things"))) then
 			local temp = {};
 			local unfiltered = {};
 			local abbrevs = L["ABBREVIATIONS"];
 			for i,j in ipairs(group.g or group) do
 				if j.parent and not j.parent.hideText and j.parent.parent
-					and (GetDataMember("ShowCompleteSourceLocations") or not app.IsComplete(j)) then
+					and (app.Settings:GetTooltipSetting("SourceLocations:Completed") or not app.IsComplete(j)) then
 					local text = BuildSourceText(paramA ~= "itemID" and j.parent or j, paramA ~= "itemID" and 1 or 0);
 					for source,replacement in pairs(abbrevs) do
 						text = string.gsub(text, source,replacement);
@@ -1746,14 +1744,14 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					end
 				end
 			end
-			if (#temp < 1 and not (paramA == "creatureID" or paramA == "encounterID")) or (not GetDataMember("OnlyShowRelevantDatabaseLocations") or app.Settings:Get("DebugMode")) then
+			if (#temp < 1 and not (paramA == "creatureID" or paramA == "encounterID")) or app.Settings:Get("DebugMode") then
 				for i,j in ipairs(unfiltered) do
 					tinsert(temp, j);
 				end
 			end
 			if #temp > 0 then
 				local listing = {};
-				local maximum = app.GetDataMember("Locations");
+				local maximum = app.Settings:GetTooltipSetting("Locations");
 				table.sort(temp);
 				for i,j in ipairs(temp) do
 					if not contains(listing, j) then
@@ -1792,19 +1790,19 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			app.UpdateGroups(group, group.g);
 		end
 		
-		if group.description and GetDataMember("ShowDescriptions") and not group.encounterID then
+		if group.description and app.Settings:GetTooltipSetting("Descriptions") and not group.encounterID then
 			tinsert(info, 1, { left = group.description, wrap = true, color = "ff66ccff" });
 		end
 		
 		if group.g and #group.g > 0 then
-			if GetDataMember("ShowDescriptions") then
+			if app.Settings:GetTooltipSetting("Descriptions") then
 				for i,j in ipairs(group.g) do
 					if j.description and ((j[paramA] and j[paramA] == paramB) or (paramA == "itemID" and group.key == j.key)) then
 						tinsert(info, 1, { left = j.description, wrap = true, color = "ff66ccff" });
 					end
 				end
 			end
-			if GetDataMember("ShowContents") then
+			if app.Settings:GetTooltipSetting("SummarizeThings") then
 				local entries = {};
 				BuildContainsInfo(group.g, entries, paramA, paramB, "  ", 1);
 				if #entries > 0 then
@@ -7175,7 +7173,7 @@ local function RowOnEnter(self)
 			if reference.speciesID then
 				AttachTooltipSearchResults(GameTooltip, "speciesID:" .. reference.speciesID, SearchForField, "speciesID", reference.speciesID);
 			else
-				if reference.description and GetDataMember("ShowDescriptions") then
+				if reference.description and app.Settings:GetTooltipSetting("Descriptions") then
 					local found = false;
 					for i=1,GameTooltip:NumLines() do
 						if _G["GameTooltipTextLeft"..i]:GetText() == reference.description then
@@ -10602,12 +10600,6 @@ app.events.VARIABLES_LOADED = function()
 	end
 	
 	-- Tooltip Settings
-	GetDataMember("OnlyShowRelevantDatabaseLocations", true);
-	GetDataMember("ShowCompleteSourceLocations", true);
-	GetDataMember("ShowSources", true);
-	GetDataMember("ShowContents", true);
-	GetDataMember("ShowDescriptions", true);
-	GetDataMember("ShowModels", true);
 	GetDataMember("AutoMainList", false);
 	GetDataMember("AutoMiniList", true);
 	GetDataMember("AutoProfessionMiniList", true);
