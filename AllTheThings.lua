@@ -1113,10 +1113,10 @@ local CompletedQuests = setmetatable({}, {__newindex = function (t, key, value)
 	DirtyQuests[key] = true;
 	rawset(t, key, value);
 	
-	if GetDataMember("DebugCompletedQuests") then
+	if app.Settings:GetTooltipSetting("Report:CompletedQuests") then
 		local searchResults = app.SearchForField("questID", key);
 		if searchResults and #searchResults > 0 then
-			if GetDataMember("OnlyReportUnsortedQuests") then
+			if app.Settings:GetTooltipSetting("Report:UnsortedQuests") then
 				return true;
 			end
 		else
@@ -1706,7 +1706,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					end
 				end
 				if GetDataMember("ShowItemID") then tinsert(info, { left = L["ITEM_ID"], right = tostring(itemID) }); end
-				if app.Settings:GetTooltipSetting("LootSpecializations") then
+				if app.Settings:GetTooltipSetting("SpecializationRequirements") then
 					local specs = GetItemSpecInfo(itemID);
 					if specs then
 						if #specs > 0 then
@@ -2272,7 +2272,7 @@ local function OpenMiniListForCurrentProfession(manual, refresh)
 	if app.Categories.Professions then
 		local popout = app:GetWindow("Tradeskills");
 		local tradeSkillLine = AllTheThings.GetTradeSkillLine();
-		if tradeSkillLine and GetDataMember("AutoProfessionMiniList") and fieldCache["requireSkill"][tradeSkillLine]
+		if tradeSkillLine and app.Settings:GetTooltipSetting("Auto:ProfessionList") and fieldCache["requireSkill"][tradeSkillLine]
 			and not (C_TradeSkillUI.IsTradeSkillLinked() or C_TradeSkillUI.IsTradeSkillGuild()) then
 			if manual or not refresh then
 				popout:ClearAllPoints();
@@ -5680,8 +5680,6 @@ app.RequireBindingFilter = app.NoFilter;
 app.UnobtainableItemFilter = app.NoFilter;
 app.RequiredSkillFilter = app.NoFilter;
 app.ShowIncompleteThings = app.Filter;
-app.AutomateTomTomWaypoints = app.NoFilter;
-app.TomTomIgnoreCompletedObjects = app.Filter;
 
 -- Recursive Checks
 app.RecursiveClassAndRaceFilter = function(group)
@@ -5829,7 +5827,7 @@ function app.CompletionistItemCollectionHelper(sourceID, oldState)
 	local searchResults = SearchForField("s", sourceID);
 	if searchResults and #searchResults > 0 then
 		-- Show the collection message.
-		if app.Settings:GetTooltipSetting("Notify") then
+		if app.Settings:GetTooltipSetting("Report:Collected") then
 			local firstMatch = searchResults[1];
 			print(format(L["ITEM_ID_ADDED"], firstMatch.text or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), firstMatch.itemID));
 		end
@@ -5871,7 +5869,7 @@ function app.CompletionistItemCollectionHelper(sourceID, oldState)
 		app:RefreshData(fresh, true, true);
 	else
 		-- Show the collection message.
-		if app.Settings:GetTooltipSetting("Notify") then
+		if app.Settings:GetTooltipSetting("Report:Collected") then
 			-- Use the Blizzard API... We don't have this item in the addon.
 			-- NOTE: The itemlink that gets passed is BASE ITEM LINK, not the full item link.
 			-- So this may show green items where an epic was obtained. (particularly with Legion drops)
@@ -5961,14 +5959,14 @@ function app.UniqueModeItemCollectionHelperBase(sourceID, oldState, filter)
 			end
 			
 			-- Show the collection message.
-			if app.Settings:GetTooltipSetting("Notify") then
+			if app.Settings:GetTooltipSetting("Report:Collected") then
 				local firstMatch = searchResults[1];
 				print(format(L[#unlockedSourceIDs > 0 and "ITEM_ID_ADDED_SHARED" or "ITEM_ID_ADDED"], 
 					firstMatch.text or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), firstMatch.itemID, #unlockedSourceIDs));
 			end
 		else
 			-- Show the collection message.
-			if app.Settings:GetTooltipSetting("Notify") then
+			if app.Settings:GetTooltipSetting("Report:Collected") then
 				-- Use the Blizzard API... We don't have this item in the addon.
 				-- NOTE: The itemlink that gets passed is BASE ITEM LINK, not the full item link.
 				-- So this may show green items where an epic was obtained. (particularly with Legion drops)
@@ -5996,7 +5994,7 @@ function app.CompletionistItemRemovalHelper(sourceID, oldState)
 	local searchResults = SearchForField("s", sourceID);
 	if searchResults and #searchResults > 0 then
 		-- Show the collection message.
-		if app.Settings:GetTooltipSetting("Notify") then
+		if app.Settings:GetTooltipSetting("Report:Collected") then
 			local firstMatch = searchResults[1];
 			print(format(L["ITEM_ID_ADDED"], firstMatch.text or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), firstMatch.itemID));
 		end
@@ -6028,7 +6026,7 @@ function app.CompletionistItemRemovalHelper(sourceID, oldState)
 		app:RefreshData(fresh, true, true);
 	else
 		-- Show the collection message.
-		if app.Settings:GetTooltipSetting("Notify") then
+		if app.Settings:GetTooltipSetting("Report:Collected") then
 			-- Use the Blizzard API... We don't have this item in the addon.
 			-- NOTE: The itemlink that gets passed is BASE ITEM LINK, not the full item link.
 			-- So this may show green items where an epic was obtained. (particularly with Legion drops)
@@ -6121,14 +6119,14 @@ function app.UniqueModeItemRemovalHelperBase(sourceID, oldState, filter)
 			end
 			
 			-- Show the collection message.
-			if app.Settings:GetTooltipSetting("Notify") then
+			if app.Settings:GetTooltipSetting("Report:Collected") then
 				local firstMatch = searchResults[1];
 				print(format(L[#unlockedSourceIDs > 0 and "ITEM_ID_ADDED_SHARED" or "ITEM_ID_ADDED"], 
 					firstMatch.text or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), firstMatch.itemID, #unlockedSourceIDs));
 			end
 		else
 			-- Show the collection message.
-			if app.Settings:GetTooltipSetting("Notify") then
+			if app.Settings:GetTooltipSetting("Report:Collected") then
 				-- Use the Blizzard API... We don't have this item in the addon.
 				-- NOTE: The itemlink that gets passed is BASE ITEM LINK, not the full item link.
 				-- So this may show green items where an epic was obtained. (particularly with Legion drops)
@@ -7180,7 +7178,7 @@ local function RowOnEnter(self)
 		if reference.setSubHeaderID then GameTooltip:AddDoubleLine(L["SET_ID"], tostring(reference.setSubHeaderID)); end
 		
 		if reference.mapID and GetDataMember("ShowMapID") then GameTooltip:AddDoubleLine(L["MAP_ID"], tostring(reference.mapID)); end
-		if reference.coords and app.GetDataMember("ShowCoordinatesInTooltip") then
+		if reference.coords and app.Settings:GetTooltipSetting("Coordinates") then
 			local j = 0;
 			for i,coord in ipairs(reference.coords) do
 				local x = coord[1];
@@ -7199,7 +7197,7 @@ local function RowOnEnter(self)
 				j = j + 1;
 			end
 		end
-		if reference.coord and app.GetDataMember("ShowCoordinatesInTooltip") then
+		if reference.coord and app.Settings:GetTooltipSetting("Coordinates") then
 			GameTooltip:AddDoubleLine("Coordinate",
 				GetNumberWithZeros(math.floor(reference.coord[1] * 10) * 0.1, 1) .. ", " .. 
 				GetNumberWithZeros(math.floor(reference.coord[2] * 10) * 0.1, 1), 1, 1, 1, 1, 1, 1);
@@ -7262,7 +7260,7 @@ local function RowOnEnter(self)
 				end
 			end
 		end
-		if reference.c and GetDataMember("ShowClassRequirements") then
+		if reference.c and app.Settings:GetTooltipSetting("ClassRequirements") then
 			local str = "";
 			for i,cl in ipairs(reference.c) do
 				if i > 1 then str = str .. ", "; end
@@ -7270,7 +7268,7 @@ local function RowOnEnter(self)
 			end
 			GameTooltip:AddDoubleLine("Classes", str);
 		end
-		if reference.races and GetDataMember("ShowRaceRequirements") then
+		if reference.races and app.Settings:GetTooltipSetting("RaceRequirements") then
 			local str = "";
 			for i,race in ipairs(reference.races) do
 				if i > 1 then str = str .. ", "; end
@@ -9159,7 +9157,7 @@ end):Show();
 				-- Determine whether or not to forcibly reshow the mini list.
 				local self = app:GetWindow("CurrentInstance");
 				if not self:IsVisible() then
-					if GetDataMember("AutoMiniList") then
+					if app.Settings:GetTooltipSetting("Auto:MiniList") then
 						if not self.openedOnLogin and not show then
 							self.openedOnLogin = true;
 							show = true;
@@ -9206,7 +9204,7 @@ end):Show();
 				OpenMiniList(mapID);
 			end
 			local function RefreshLocation()
-				if GetDataMember("AutoMiniList") or app:GetWindow("CurrentInstance"):IsVisible() then
+				if app.Settings:GetTooltipSetting("Auto:MiniList") or app:GetWindow("CurrentInstance"):IsVisible() then
 					StartCoroutine("RefreshLocation", RefreshLocationCoroutine);
 				end
 			end
@@ -10205,7 +10203,7 @@ end)();
 				-- Rebuild all World Quest data
 				local retry = false;
 				local temp = {};
-				local showCurrencies = GetDataMember("ShowCurrencyOnWorldQuestList", false);
+				local showCurrencies = app.Settings:GetTooltipSetting("WorldQuestsList:Currencies");
 				for _,mapID in pairs(worldMapIDs) do
 					local mapObject = { mapID=mapID,g={},progress=0,total=0};
 					local cache = fieldCache["mapID"][mapID];
@@ -10626,24 +10624,11 @@ app.events.VARIABLES_LOADED = function()
 		SetTempDataMember("CollectedTitles", myTitles);
 	end
 	
-	if GetDataMember("AutomateTomTomWaypoints", false) then
-		app.AutomateTomTomWaypoints = app.NoFilter
-	else
-		app.AutomateTomTomWaypoints = app.Filter
-	end
-	if GetDataMember("TomTomIgnoreCompletedObjects", true) then
-		app.TomTomIgnoreCompletedObjects = app.Filter
-	else
-		app.TomTomIgnoreCompletedObjects = app.NoFilter
-	end
-	
+
 	-- Tooltip Settings
-	GetDataMember("AutoMainList", false);
-	GetDataMember("AutoMiniList", true);
-	GetDataMember("AutoProfessionMiniList", true);
 	GetDataMember("AutomateTomTomWaypoints", false);
 	GetDataMember("EnableTomTomWaypointsOnTaxi", false);
-	GetDataMember("TomTomIgnoreCompletedObjects", false);
+	GetDataMember("TomTomIgnoreCompletedObjects", true);
 	
 	GetDataMember("ShowAchievementID", false);
 	GetDataMember("ShowArtifactID", false);
@@ -10727,15 +10712,8 @@ app.events.PLAYER_LOGIN = function()
 		OnEnter = MinimapButtonOnEnter,
 		OnLeave = MinimapButtonOnLeave,
 	});
-	if GetDataMember("AutoRaidAssistant", false) then
-		app:GetWindow("RaidAssistant"):Show();
-	end
-	if GetDataMember("AutoWorldQuestsList", false) then
-		app:GetWindow("WorldQuests"):Show();
-	end
-	if GetDataMember("AutoMainList") then
-		app:OpenMainList();
-	end
+	
+	
 end
 app.events.ACTIVE_TALENT_GROUP_CHANGED = function()
 	app.Spec = GetLootSpecialization();
@@ -10823,7 +10801,7 @@ app.events.TOYS_UPDATED = function(itemID, new)
 		wipe(searchCache);
 		collectgarbage();
 		
-		if app.Settings:GetTooltipSetting("Notify") then
+		if app.Settings:GetTooltipSetting("Report:Collected") then
 			local name, link = GetItemInfo(itemID);
 			if link then print(format(L["ITEM_ID_ADDED"], link, itemID)); end
 		end
@@ -10861,7 +10839,7 @@ app.events.TRANSMOG_COLLECTION_SOURCE_REMOVED = function(sourceID)
 		
 		-- If the user is a Completionist
 		if app.Settings:Get("Completionist") then
-			if app.Settings:GetTooltipSetting("Notify") then
+			if app.Settings:GetTooltipSetting("Report:Collected") then
 				-- Oh shucks, that was nice of you to give this item to your friend.
 				-- WAIT, WHAT? A VENDOR?! OH GOD NO! TODO: Warn a user when they vendor an appearance?
 				local name, link = GetItemInfo(sourceInfo.itemID);
@@ -10882,7 +10860,7 @@ app.events.TRANSMOG_COLLECTION_SOURCE_REMOVED = function(sourceID)
 				end
 			end
 			
-			if app.Settings:GetTooltipSetting("Notify") then
+			if app.Settings:GetTooltipSetting("Report:Collected") then
 				-- Oh shucks, that was nice of you to give this item to your friend.
 				-- WAIT, WHAT? A VENDOR?! OH GOD NO! TODO: Warn a user when they vendor an appearance?
 				local name, link = GetItemInfo(sourceInfo.itemID);

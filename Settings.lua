@@ -107,7 +107,9 @@ local FilterSettingsBase = {
 };
 local TooltipSettingsBase = {
 	__index = {
+		["Auto:MiniList"] = true,
 		["Celebrate"] = true,
+		["ClassRequirements"] = true,
 		["Descriptions"] = true,
 		["DisplayInCombat"] = true,
 		["Enabled"] = true,
@@ -117,16 +119,18 @@ local TooltipSettingsBase = {
 		["MinimapSize"] = 36,
 		["MinimapStyle"] = true,
 		["Models"] = true,
-		["Notify"] = true,
 		["Locations"] = 5,
 		["Precision"] = 2,
 		["Progress"] = true,
+		["RaceRequirements"] = true,
+		["Report:Collected"] = true,
 		["ShowIconOnly"] = false,
 		["SharedAppearances"] = true,
 		["SourceLocations"] = true,
 		["SourceLocations:Completed"] = true,
 		["SourceLocations:Creatures"] = true,
 		["SourceLocations:Things"] = true,
+		["SpecializationRequirements"] = true,
 		["SummarizeThings"] = true,
 		["Warn:Difficulty"] = false,
 		["Warn:Removed"] = true,
@@ -177,6 +181,16 @@ settings.Initialize = function(self)
 	OnClickForTab(self.Tabs[2]);
 	self:Refresh();
 	self:UpdateMode();
+	
+	if self:GetTooltipSetting("Auto:MainList") then
+		app:OpenMainList();
+	end
+	if self:GetTooltipSetting("Auto:RaidAssistant") then
+		app:GetWindow("RaidAssistant"):Show();
+	end
+	if self:GetTooltipSetting("Auto:WorldQuestsList") then
+		app:GetWindow("WorldQuests"):Show();
+	end
 end
 settings.Get = function(self, setting)
 	return AllTheThingsSettings.General[setting];
@@ -1347,16 +1361,6 @@ end);
 WarnDifficultyCheckBox:SetATTTooltip("Enable this option if you want to be warned when you enter an instance with a difficulty setting that will result in you being unable to earn new collectibles when there is an alternative unsaved difficulty that you could enter instead.");
 WarnDifficultyCheckBox:SetPoint("TOPLEFT", ExpandDifficultyCheckBox, "BOTTOMLEFT", 0, 4);
 
-local NotifyCollectedThingsCheckBox = settings:CreateCheckBox("Notify for Collected Things",
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("Notify"));
-end,
-function(self)
-	settings:SetTooltipSetting("Notify", self:GetChecked());
-end);
-NotifyCollectedThingsCheckBox:SetATTTooltip("Enable this option if you want to see a message in chat detailing which items you have collected or removed from your collection.\n\nNOTE: This is present because Blizzard silently adds appearances and other collectible items and neglects to notify you of the additional items available to you.\n\nWe recommend you keep this setting on. You will still hear the fanfare with it off assuming you have that option turned on.");
-NotifyCollectedThingsCheckBox:SetPoint("TOPLEFT", WarnDifficultyCheckBox, "BOTTOMLEFT", 0, 0);
-
 local CelebrateCollectedThingsCheckBox = settings:CreateCheckBox("Celebrate Collected Things",
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Celebrate"));
@@ -1365,7 +1369,7 @@ function(self)
 	settings:SetTooltipSetting("Celebrate", self:GetChecked());
 end);
 CelebrateCollectedThingsCheckBox:SetATTTooltip("Enable this option if you want to hear a celebratory 'fanfare' sound effect when you obtain a new Thing.\n\nThis feature can greatly help keep you motivated.");
-CelebrateCollectedThingsCheckBox:SetPoint("TOPLEFT", NotifyCollectedThingsCheckBox, "BOTTOMLEFT", 0, 4);
+CelebrateCollectedThingsCheckBox:SetPoint("TOPLEFT", WarnDifficultyCheckBox, "BOTTOMLEFT", 0, 4);
 
 local WarnRemovedThingsCheckBox = settings:CreateCheckBox("Warn for Removed Things",
 function(self)
@@ -1376,6 +1380,36 @@ function(self)
 end);
 WarnRemovedThingsCheckBox:SetATTTooltip("Enable this option if you want to hear a warning sound effect when you accidentally sell back or trade an item that granted you an appearance that would cause you to lose that appearance from your collection.\n\nThis can be extremely helpful if you vendor an item with a purchase timer. The addon will tell you that you've made a mistake.");
 WarnRemovedThingsCheckBox:SetPoint("TOPLEFT", CelebrateCollectedThingsCheckBox, "BOTTOMLEFT", 0, 4);
+
+local ReportCollectedThingsCheckBox = settings:CreateCheckBox("Report Collected Things",
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("Report:Collected"));
+end,
+function(self)
+	settings:SetTooltipSetting("Report:Collected", self:GetChecked());
+end);
+ReportCollectedThingsCheckBox:SetATTTooltip("Enable this option if you want to see a message in chat detailing which items you have collected or removed from your collection.\n\nNOTE: This is present because Blizzard silently adds appearances and other collectible items and neglects to notify you of the additional items available to you.\n\nWe recommend you keep this setting on. You will still hear the fanfare with it off assuming you have that option turned on.");
+ReportCollectedThingsCheckBox:SetPoint("TOPLEFT", WarnRemovedThingsCheckBox, "BOTTOMLEFT", 0, 4);
+
+local ReportCompletedQuestsCheckBox = settings:CreateCheckBox("Report Completed Quests",
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("Report:CompletedQuests"));
+end,
+function(self)
+	settings:SetTooltipSetting("Report:CompletedQuests", self:GetChecked());
+end);
+ReportCompletedQuestsCheckBox:SetATTTooltip("Enable this option if you want to see the Quest ID for any quest you complete immediately after it happens. (For reporting bugs, trackings purposes, etc)");
+ReportCompletedQuestsCheckBox:SetPoint("TOPLEFT", ReportCollectedThingsCheckBox, "BOTTOMLEFT", 0, 4);
+
+local ReportUnsortedCompletedQuestsCheckBox = settings:CreateCheckBox("Only Unsorted Quests",
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("Report:UnsortedQuests"));
+end,
+function(self)
+	settings:SetTooltipSetting("Report:UnsortedQuests", self:GetChecked());
+end);
+ReportUnsortedCompletedQuestsCheckBox:SetATTTooltip("Enable this option if you only want to see the Quest ID for any quest you complete that isn't already listed in the addon.");
+ReportUnsortedCompletedQuestsCheckBox:SetPoint("TOPLEFT", ReportCompletedQuestsCheckBox, "BOTTOMLEFT", 4, 4);
 end)();
 
 ------------------------------------------
@@ -2107,19 +2141,26 @@ end
 end)();
 
 ------------------------------------------
--- The "Tooltips" Tab.					--
+-- The "Features" Tab.					--
 ------------------------------------------
 (function()
-local tab = settings:CreateTab("Tooltips");
-local TitlesCheckBox = settings:CreateCheckBox("|CFFADD8E6Enable Tooltip Information|r",
+local tab = settings:CreateTab("Features");
+local TooltipLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
+TooltipLabel:SetPoint("TOPLEFT", line, "BOTTOMLEFT", 8, -8);
+TooltipLabel:SetJustifyH("LEFT");
+TooltipLabel:SetText("Tooltips");
+TooltipLabel:Show();
+table.insert(settings.MostRecentTab.objects, TooltipLabel);
+
+local EnableTooltipInformationCheckBox = settings:CreateCheckBox("|CFFADD8E6Enable Tooltip Integrations|r",
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Enabled"));
 end,
 function(self)
 	settings:SetTooltipSetting("Enabled", self:GetChecked());
 end);
-TitlesCheckBox:SetATTTooltip("Enable this option if you want to see the information provided by ATT in external tooltips. This includes item links sent by other players, in the auction house, in the dungeon journal, in your bags, in the world, on NPCs, etc.\n\nIf you turn this feature off, you are seriously reducing your ability to quickly determine if you need to kill a mob or learn an appearance.\n\nWe recommend you keep this setting on.");
-TitlesCheckBox:SetPoint("TOPLEFT", line, "BOTTOMLEFT", 8, -8);
+EnableTooltipInformationCheckBox:SetATTTooltip("Enable this option if you want to see the information provided by ATT in external tooltips. This includes item links sent by other players, in the auction house, in the dungeon journal, in your bags, in the world, on NPCs, etc.\n\nIf you turn this feature off, you are seriously reducing your ability to quickly determine if you need to kill a mob or learn an appearance.\n\nWe recommend you keep this setting on.");
+EnableTooltipInformationCheckBox:SetPoint("TOPLEFT", TooltipLabel, "BOTTOMLEFT", 4, 0);
 
 local DisplayInCombatCheckBox = settings:CreateCheckBox("Display In Combat",
 function(self)
@@ -2136,7 +2177,7 @@ function(self)
 	settings:SetTooltipSetting("DisplayInCombat", self:GetChecked());
 end);
 DisplayInCombatCheckBox:SetATTTooltip("Enable this option if you want to render tooltip information while you are in combat.\n\nIf you are raiding with your Mythic/Mythic+ Guild, you should probably turn this setting off to save as much performance as you can.\n\nIt can be useful while you are soloing old content to immediately know what you need from a boss.");
-DisplayInCombatCheckBox:SetPoint("TOPLEFT", TitlesCheckBox, "BOTTOMLEFT", 4, 4);
+DisplayInCombatCheckBox:SetPoint("TOPLEFT", EnableTooltipInformationCheckBox, "BOTTOMLEFT", 8, 4);
 
 
 local ShowCollectionProgressCheckBox = settings:CreateCheckBox("Show Collection Progress",
@@ -2154,9 +2195,9 @@ function(self)
 	settings:SetTooltipSetting("Progress", self:GetChecked());
 end);
 ShowCollectionProgressCheckBox:SetATTTooltip("Enable this option if you want to see your progress towards collecting a Thing or completing a group of Things at the Top Right of its tooltip.\n\nWe recommend that you keep this setting turned on.");
-ShowCollectionProgressCheckBox:SetPoint("TOPLEFT", DisplayInCombatCheckBox, "BOTTOMLEFT", 0, -4);
+ShowCollectionProgressCheckBox:SetPoint("TOPLEFT", DisplayInCombatCheckBox, "BOTTOMLEFT", 0, 4);
 
-local ShortenProgressCheckBox = settings:CreateCheckBox("Show Icon Only",
+local ShortenProgressCheckBox = settings:CreateCheckBox("Only Show Icon",
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("ShowIconOnly"));
 	if not settings:GetTooltipSetting("Enabled") or not settings:GetTooltipSetting("Progress") then
@@ -2171,7 +2212,7 @@ function(self)
 	settings:SetTooltipSetting("ShowIconOnly", self:GetChecked());
 end);
 ShortenProgressCheckBox:SetATTTooltip("Enable this option if you only want to see the icon in the topright corner instead of the icon and the collected/not collected text.\n\nSome people like smaller tooltips...");
-ShortenProgressCheckBox:SetPoint("TOPLEFT", ShowCollectionProgressCheckBox, "BOTTOMLEFT", 4, 4);
+ShortenProgressCheckBox:SetPoint("TOPLEFT", ShowCollectionProgressCheckBox, "BOTTOMLEFT", 8, 4);
 
 
 local SummarizeThingsCheckBox = settings:CreateCheckBox("Summarize Things",
@@ -2189,8 +2230,25 @@ function(self)
 	settings:SetTooltipSetting("SummarizeThings", self:GetChecked());
 end);
 SummarizeThingsCheckBox:SetATTTooltip("Enable this option to summarize Things in the tooltip. For example, if a Thing can be turned into a Vendor for another Thing, then show that other thing in the tooltip to provide visibility for its multiple uses. If a Thing acts as a Container for a number of other Things, this option will show all of the other Things that the container Contains.\n\nWe recommend that you keep this setting turned on.");
-SummarizeThingsCheckBox:SetPoint("TOPLEFT", ShortenProgressCheckBox, "BOTTOMLEFT", -4, -4);
+SummarizeThingsCheckBox:SetPoint("TOPLEFT", ShortenProgressCheckBox, "BOTTOMLEFT", -8, 4);
 
+
+local ShowCoordinatesCheckBox = settings:CreateCheckBox("Show Coordinates",
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("Coordinates"));
+	if not settings:GetTooltipSetting("Enabled") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:SetTooltipSetting("Coordinates", self:GetChecked());
+end);
+ShowCoordinatesCheckBox:SetATTTooltip("Enable this option if you want to see coordinates in the tooltip when hovering over an entry in the mini list.");
+ShowCoordinatesCheckBox:SetPoint("TOPLEFT", SummarizeThingsCheckBox, "BOTTOMLEFT", 0, 4);
 
 local ShowDescriptionsCheckBox = settings:CreateCheckBox("Show Descriptions",
 function(self)
@@ -2207,7 +2265,7 @@ function(self)
 	settings:SetTooltipSetting("Descriptions", self:GetChecked());
 end);
 ShowDescriptionsCheckBox:SetATTTooltip("Enable this option to show descriptions within the tooltip. This may include the descriptive text supplied by the Dungeon Journal or a custom description added by a Contributor who felt some additional information was necessary.\n\nYou might want to keep this turned on.");
-ShowDescriptionsCheckBox:SetPoint("TOPLEFT", SummarizeThingsCheckBox, "BOTTOMLEFT", 0, -4);
+ShowDescriptionsCheckBox:SetPoint("TOPLEFT", ShowCoordinatesCheckBox, "BOTTOMLEFT", 0, 4);
 
 local ShowModelsCheckBox = settings:CreateCheckBox("Show Model Preview",
 function(self)
@@ -2226,23 +2284,6 @@ end);
 ShowModelsCheckBox:SetATTTooltip("Enable this option to show models within a preview instead of the icon on the tooltip.\n\nThis option may assist you in identifying what a Rare Spawn or Vendor looks like. It might be a good idea to keep this turned on for that reason.");
 ShowModelsCheckBox:SetPoint("TOPLEFT", ShowDescriptionsCheckBox, "BOTTOMLEFT", 0, 4);
 
-local ShowLootSpecializationsCheckBox = settings:CreateCheckBox("Show Loot Specializations",
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("LootSpecializations"));
-	if not settings:GetTooltipSetting("Enabled") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
-end,
-function(self)
-	settings:SetTooltipSetting("LootSpecializations", self:GetChecked());
-end);
-ShowLootSpecializationsCheckBox:SetATTTooltip("Enable this option to show the loot specialization requirements of items in the item's tooltip.\n\nNOTE: These icons will still appear within the ATT mini lists regardless of this setting.");
-ShowLootSpecializationsCheckBox:SetPoint("TOPLEFT", ShowModelsCheckBox, "BOTTOMLEFT", 0, 4);
-
 
 local ShowSharedAppearancesCheckBox = settings:CreateCheckBox("Show Shared Appearances",
 function(self)
@@ -2259,7 +2300,7 @@ function(self)
 	settings:SetTooltipSetting("SharedAppearances", self:GetChecked());
 end);
 ShowSharedAppearancesCheckBox:SetATTTooltip("Enable this option to see items that share a similar appearance in the tooltip.\n\nNOTE: Items that do not match the armor type are displayed in the list. This is to help you diagnose the Collection progress.\n\nIf you are ever confused by this, as of ATT v1.5.0, you can Right Click the item to open the item and its Shared Appearances into their own standalone Mini List.");
-ShowSharedAppearancesCheckBox:SetPoint("TOPLEFT", ShowLootSpecializationsCheckBox, "BOTTOMLEFT", 0, -4);
+ShowSharedAppearancesCheckBox:SetPoint("TOPLEFT", ShowModelsCheckBox, "BOTTOMLEFT", 0, 4);
 
 local IncludeOriginalSourceCheckBox = settings:CreateCheckBox("Include Original Source",
 function(self)
@@ -2276,7 +2317,7 @@ function(self)
 	settings:SetTooltipSetting("IncludeOriginalSource", self:GetChecked());
 end);
 IncludeOriginalSourceCheckBox:SetATTTooltip("Enable this option if you actually liked seeing the original source info within the Shared Appearances list in the tooltip.");
-IncludeOriginalSourceCheckBox:SetPoint("TOPLEFT", ShowSharedAppearancesCheckBox, "BOTTOMLEFT", 4, 4);
+IncludeOriginalSourceCheckBox:SetPoint("TOPLEFT", ShowSharedAppearancesCheckBox, "BOTTOMLEFT", 8, 4);
 
 local OnlyShowRelevantSharedAppearancesCheckBox = settings:CreateCheckBox("Only Relevant",
 function(self)
@@ -2296,6 +2337,57 @@ OnlyShowRelevantSharedAppearancesCheckBox:SetATTTooltip("Enable this option if y
 OnlyShowRelevantSharedAppearancesCheckBox:SetPoint("TOPLEFT", IncludeOriginalSourceCheckBox, "BOTTOMLEFT", 0, 4);
 
 
+local ShowClassRequirementsCheckBox = settings:CreateCheckBox("Show Class Requirements",
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("ClassRequirements"));
+	if not settings:GetTooltipSetting("Enabled") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:SetTooltipSetting("ClassRequirements", self:GetChecked());
+end);
+ShowClassRequirementsCheckBox:SetATTTooltip("Enable this option if you want to see the full list of class requirements in the tooltip.");
+ShowClassRequirementsCheckBox:SetPoint("TOPLEFT", OnlyShowRelevantSharedAppearancesCheckBox, "BOTTOMLEFT", -8, 4);
+
+local ShowRaceRequirementsCheckBox = settings:CreateCheckBox("Show Race Requirements",
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("RaceRequirements"));
+	if not settings:GetTooltipSetting("Enabled") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:SetTooltipSetting("RaceRequirements", self:GetChecked());
+end);
+ShowRaceRequirementsCheckBox:SetATTTooltip("Enable this option if you want to see the full list of race requirements in the tooltip.");
+ShowRaceRequirementsCheckBox:SetPoint("TOPLEFT", ShowClassRequirementsCheckBox, "BOTTOMLEFT", 0, 4);
+
+local ShowSpecializationRequirementsCheckBox = settings:CreateCheckBox("Show Specialization Requirements",
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("SpecializationRequirements"));
+	if not settings:GetTooltipSetting("Enabled") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:SetTooltipSetting("SpecializationRequirements", self:GetChecked());
+end);
+ShowSpecializationRequirementsCheckBox:SetATTTooltip("Enable this option to show the loot specialization requirements of items in the item's tooltip.\n\nNOTE: These icons will still appear within the ATT mini lists regardless of this setting.");
+ShowSpecializationRequirementsCheckBox:SetPoint("TOPLEFT", ShowRaceRequirementsCheckBox, "BOTTOMLEFT", 0, 4);
+
 local ShowSourceLocationsCheckBox = settings:CreateCheckBox("Show Source Locations",
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("SourceLocations"));
@@ -2311,7 +2403,7 @@ function(self)
 	settings:SetTooltipSetting("SourceLocations", self:GetChecked());
 end);
 ShowSourceLocationsCheckBox:SetATTTooltip("Enable this option if you want to see full Source Location Paths for objects within the ATT database in the tooltip.");
-ShowSourceLocationsCheckBox:SetPoint("TOPLEFT", OnlyShowRelevantSharedAppearancesCheckBox, "BOTTOMLEFT", -4, -4);
+ShowSourceLocationsCheckBox:SetPoint("TOPLEFT", ShowSpecializationRequirementsCheckBox, "BOTTOMLEFT", 0, 4);
 
 local ShowCompletedSourceLocationsForCheckBox = settings:CreateCheckBox("For Completed Sources",
 function(self)
@@ -2328,7 +2420,7 @@ function(self)
 	settings:SetTooltipSetting("SourceLocations:Completed", self:GetChecked());
 end);
 ShowCompletedSourceLocationsForCheckBox:SetATTTooltip("Enable this option if you want to see completed source locations in the tooltip.\n\nAs an example, if you complete the quest \"Bathran's Hair\" in Ashenvale, the tooltip for Evenar Stillwhisper will no longer show that quest when hovering over him.");
-ShowCompletedSourceLocationsForCheckBox:SetPoint("TOPLEFT", ShowSourceLocationsCheckBox, "BOTTOMLEFT", 4, 4);
+ShowCompletedSourceLocationsForCheckBox:SetPoint("TOPLEFT", ShowSourceLocationsCheckBox, "BOTTOMLEFT", 8, 4);
 
 local ShowSourceLocationsForCreaturesCheckBox = settings:CreateCheckBox("For Creatures",
 function(self)
@@ -2400,6 +2492,74 @@ LocationsSlider.OnRefresh = function(self)
 		self:SetAlpha(1);
 	end
 end;
+
+
+local ModulesLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
+ModulesLabel:SetPoint("TOPRIGHT", line, "BOTTOMRIGHT", -138, -8);
+ModulesLabel:SetJustifyH("LEFT");
+ModulesLabel:SetText("Modules & Mini Lists");
+ModulesLabel:Show();
+table.insert(settings.MostRecentTab.objects, ModulesLabel);
+
+local OpenMainListAutomatically = settings:CreateCheckBox("Open the Main List Automatically",
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("Auto:MainList"));
+end,
+function(self)
+	settings:SetTooltipSetting("Auto:MainList", self:GetChecked());
+end);
+OpenMainListAutomatically:SetATTTooltip("Enable this option if you want to automatically open the Main List when you login.\n\nYou can also bind this setting to a Key:\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Main List\n\nShortcut Command: /att");
+OpenMainListAutomatically:SetPoint("TOPLEFT", ModulesLabel, "BOTTOMLEFT", 4, 0);
+
+local OpenMiniListAutomatically = settings:CreateCheckBox("Open the Mini List Automatically",
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("Auto:MiniList"));
+end,
+function(self)
+	settings:SetTooltipSetting("Auto:MiniList", self:GetChecked());
+end);
+OpenMiniListAutomatically:SetATTTooltip("Enable this option if you want to see everything you can collect in your current zone. The list will automatically switch when you change zones. Some people don't like this feature, but when you are solo farming, this feature is extremely useful.\n\nYou can also bind this setting to a Key.\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Mini List\n\nShortcut Command: /att mini");
+OpenMiniListAutomatically:SetPoint("TOPLEFT", OpenMainListAutomatically, "BOTTOMLEFT", 0, 4);
+
+local OpenProfessionListAutomatically = settings:CreateCheckBox("Open the Profession List Automatically",
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("Auto:ProfessionList"));
+end,
+function(self)
+	settings:SetTooltipSetting("Auto:ProfessionList", self:GetChecked());
+end);
+OpenProfessionListAutomatically:SetATTTooltip("Enable this option if you want ATT to open and refresh the profession list when you open your professions. Due to an API limitation imposed by Blizzard, the only time an addon can interact with your profession data is when it is open. The list will automatically switch when you change to a different profession.\n\nWe don't recommend disabling this option as it may prevent recipes from tracking correctly.\n\nYou can also bind this setting to a Key. (only works when a profession is open)\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Profession Mini List\n\nShortcut Command: /att prof");
+OpenProfessionListAutomatically:SetPoint("TOPLEFT", OpenMiniListAutomatically, "BOTTOMLEFT", 0, 4);
+
+local OpenRaidAssistantAutomatically = settings:CreateCheckBox("Open the Raid Assistant Automatically",
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("Auto:RaidAssistant"));
+end,
+function(self)
+	settings:SetTooltipSetting("Auto:RaidAssistant", self:GetChecked());
+end);
+OpenRaidAssistantAutomatically:SetATTTooltip("Enable this option if you want to see an alternative group/party/raid settings manager called the 'Raid Assistant'. The list will automatically update whenever group settings change.\n\nYou can also bind this setting to a Key.\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Raid Assistant\n\nShortcut Command: /attra");
+OpenRaidAssistantAutomatically:SetPoint("TOPLEFT", OpenProfessionListAutomatically, "BOTTOMLEFT", 0, 4);
+
+local OpenWorldQuestsListAutomatically = settings:CreateCheckBox("Open the World Quests List Automatically",
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("Auto:WorldQuestsList"));
+end,
+function(self)
+	settings:SetTooltipSetting("Auto:WorldQuestsList", self:GetChecked());
+end);
+OpenWorldQuestsListAutomatically:SetATTTooltip("Enable this option if you want the 'World Quests' list to appear automatically. The list will automatically update whenever you switch zones.\n\nYou can also bind this setting to a Key.\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle World Quests List\n\nShortcut Command: /attwq");
+OpenWorldQuestsListAutomatically:SetPoint("TOPLEFT", OpenRaidAssistantAutomatically, "BOTTOMLEFT", 0, 4);
+
+local ShowCurrenciesInWorldQuestsList = settings:CreateCheckBox("Treat Currencies as Containers",
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("WorldQuestsList:Currencies"));
+end,
+function(self)
+	settings:SetTooltipSetting("WorldQuestsList:Currencies", self:GetChecked());
+end);
+ShowCurrenciesInWorldQuestsList:SetATTTooltip("Enable this option if you want to treat currencies awarded by World Quests as if all of the Things they are used to acquire counted as +1 in the list.");
+ShowCurrenciesInWorldQuestsList:SetPoint("TOPLEFT", OpenWorldQuestsListAutomatically, "BOTTOMLEFT", 4, 4);
 end)();
 
 ------------------------------------------
@@ -2408,6 +2568,102 @@ end)();
 --[[
 (function()
 local tab = settings:CreateTab("Debugging");
+
+
+
+-- TomTom Integration
+local tomtomOptions = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
+tomtomOptions:SetPoint("TOPLEFT", otherFrame, 0, -(otherFrame:GetHeight() + frameSpacer));
+tomtomOptions:SetText("TomTom Options");
+addObject(elm,tomtomOptions);
+
+local tomtomOptionsFrame = CreateFrame("Frame", name .. "-" .. tabName .. "-tomtomFrame", child, "ThinBorderTemplate");
+tomtomOptionsFrame:SetSize(child:GetWidth(),135);
+tomtomOptionsFrame:SetPoint("TOPLEFT",tomtomOptions,0,-frameSpacer);
+tomtomOptionsFrame:SetAlpha(0.3);
+addObject(elm,tomtomOptionsFrame);
+
+-- TomTom waypoint automation
+local autoLoadTomTomWaypoints = createCheckBox("Automatically Set TomTom Waypoints", child, function(self)
+		app.SetDataMember("AutomateTomTomWaypoints", self:GetChecked());
+	end,
+	function(self) 
+		self:SetChecked(app.GetDataMember("AutomateTomTomWaypoints", false));
+	end,
+	function(self)
+		GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
+		GameTooltip:SetText ("Enable this option if you want TomTom waypoints to be automatically added when entering new maps.", nil, nil, nil, nil, true);
+		GameTooltip:Show();
+	end);
+autoLoadTomTomWaypoints:SetPoint("TOPLEFT",tomtomOptions,5,-frameSpacer);
+addObject(elm,autoLoadTomTomWaypoints);
+
+local setTomTomWaypointsOnTaxi = createCheckBox("Enable TomTom Waypoints While on Flightpath", child, function(self)
+		app.SetDataMember("EnableTomTomWaypointsOnTaxi", self:GetChecked());
+	end,
+	function(self) 
+		self:SetChecked(app.GetDataMember("EnableTomTomWaypointsOnTaxi", false));
+	end,
+	function(self)
+		GameTooltip:SetOwner (self, "ANCHOR_RIGHT");
+		GameTooltip:SetText ("Enable this option if you want TomTom waypoints to be automatically added while using a taxi or flightpath.", nil, nil, nil, nil, true);
+		GameTooltip:Show();
+	end);
+setTomTomWaypointsOnTaxi:SetPoint("TOPLEFT",autoLoadTomTomWaypoints,0,-frameSpacer);
+setTomTomWaypointsOnTaxi.Label:SetWidth(setTomTomWaypointsOnTaxi.Label:GetWidth() * 1.5);
+addObject(elm,setTomTomWaypointsOnTaxi);
+
+local tomTomWaypointIgnoreCompleted = createCheckBox("Ignore Completed Objects", child, function(self)
+		app.SetDataMember("TomTomIgnoreCompletedObjects", self:GetChecked());
+	end,
+	function(self) 
+		self:SetChecked(app.GetDataMember("TomTomIgnoreCompletedObjects", true));
+	end);
+tomTomWaypointIgnoreCompleted:SetPoint("TOPLEFT",setTomTomWaypointsOnTaxi,0,-frameSpacer);
+tomTomWaypointIgnoreCompleted.Label:SetWidth(tomTomWaypointIgnoreCompleted.Label:GetWidth() * 1.5);
+addObject(elm,tomTomWaypointIgnoreCompleted);
+
+local tomtomSubFrame = CreateFrame("Frame", name .. "-" .. tabName .. "-tomtomSubFrame", child, "ThinBorderTemplate");
+tomtomSubFrame:SetSize(tomtomOptionsFrame:GetWidth()-20,55);
+tomtomSubFrame:SetPoint("TOPLEFT",tomTomWaypointIgnoreCompleted,5,-30);
+tomtomSubFrame:SetAlpha(0.3);
+addObject(elm,tomtomSubFrame);
+
+-- TomTom waypoint filters
+local last = tomtomSubFrame;
+local waypointFilterNames = L["NPC_ID_NAMES"];
+local last = tomtomSubFrame;
+local x = 5;
+local y = 5
+local count = 0;
+for key,value in ipairs({ -228, -17, -16, -2 }) do
+	local filter = createCheckBox(waypointFilterNames[value], child, function(self)
+		local val = app.GetDataMember("WaypointFilters")
+		val[value] = self:GetChecked();
+		app.SetDataMember("WaypointFilters", val);
+	end, 
+	function(self)
+		local val = app.GetDataMember("WaypointFilters");
+		if(val[value] == nil) then
+			val[value] = true
+			app.SetDataMember("WaypointFilters", val);
+		end
+		self:SetChecked(val[value]);
+	end);
+	filter:SetPoint("TOPLEFT",last,x,-y)
+	addObject(elm,filter)
+	last = filter
+	x = 0;
+	y = frameSpacer;
+	count = count + 1;
+	if count == 2 then
+		x = tomtomSubFrame:GetWidth()/2
+		y = 5
+		last = tomtomSubFrame
+	end
+end
+
+
 end)();
 ]]--
 
