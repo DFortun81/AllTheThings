@@ -122,6 +122,7 @@ local TooltipSettingsBase = {
 		["Locations"] = 5,
 		["Precision"] = 2,
 		["Progress"] = true,
+		["QuestGivers"] = true,
 		["RaceRequirements"] = true,
 		["Report:Collected"] = true,
 		["ShowIconOnly"] = false,
@@ -2587,6 +2588,7 @@ local ids = {["achievementID"] = "Achievement ID",
 	["artifactID"] = "Artifact ID",
 	["bonusID"] = "Bonus ID",
 	["creatureID"] = "Creature ID",
+	["creatures"] = "Creatures List",
 	["currencyID"] = "Currency ID",
 	["difficultyID"] = "Difficulty ID",
 	["displayID"] = "Display ID",
@@ -2602,6 +2604,7 @@ local ids = {["achievementID"] = "Achievement ID",
 	["modID"] = "Mod ID",
 	["objectID"] = "Object ID",
 	["questID"] = "Quest ID",
+	["QuestGivers"] = "Quest Givers",
 	["sourceID"] = "Source ID",
 	["speciesID"] = "Species ID",
 	["spellID"] = "Spell ID",
@@ -2610,7 +2613,7 @@ local ids = {["achievementID"] = "Achievement ID",
 	["visualID"] = "Visual ID",
 };
 local last = nil;
-for _,id in pairs({"achievementID","artifactID","bonusID","creatureID","currencyID","difficultyID","displayID","encounterID","factionID","fileID","filterID","illusionID","instanceID"}) do
+for _,id in pairs({"achievementID","artifactID","bonusID","creatureID","creatures","currencyID","difficultyID","displayID","encounterID","factionID","fileID","filterID","illusionID","instanceID"}) do
 	local filter = settings:CreateCheckBox(ids[id],
 	function(self) 
 		self:SetChecked(settings:GetTooltipSetting(id));
@@ -2627,7 +2630,7 @@ for _,id in pairs({"achievementID","artifactID","bonusID","creatureID","currency
 	last = filter;
 end
 last = nil;
-for _,id in pairs({"itemID","itemString", "mapID","modID","objectID","questID","sourceID","speciesID","spellID","tierID","titleID","visualID"}) do
+for _,id in pairs({"itemID","itemString", "mapID","modID","objectID","questID","QuestGivers","sourceID","speciesID","spellID","tierID","titleID","visualID"}) do
 	local filter = settings:CreateCheckBox(ids[id],
 	function(self) 
 		self:SetChecked(settings:GetTooltipSetting(id));

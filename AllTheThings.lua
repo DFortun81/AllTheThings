@@ -7238,7 +7238,7 @@ local function RowOnEnter(self)
 				if reference.altQuestID then GameTooltip:AddDoubleLine(" ", tostring(reference.altQuestID)); end
 			end
 		end
-		if reference.qgs and GetDataMember("ShowQuestGivers") then
+		if reference.qgs and app.Settings:GetTooltipSetting("QuestGivers") then
 			if app.Settings:GetTooltipSetting("creatureID") then 
 				for i,qg in ipairs(reference.qgs) do
 					GameTooltip:AddDoubleLine(i == 1 and L["QUEST_GIVER"] or " ", tostring(qg > 0 and NPCNameFromID[qg] or "") .. " (" .. qg .. ")");
@@ -7249,7 +7249,7 @@ local function RowOnEnter(self)
 				end
 			end
 		end
-		if reference.crs and GetDataMember("ShowCreatures") then
+		if reference.crs and app.Settings:GetTooltipSetting("creatures") then
 			if app.Settings:GetTooltipSetting("creatureID") then 
 				for i,cr in ipairs(reference.crs) do
 					GameTooltip:AddDoubleLine(i == 1 and CREATURE or " ", tostring(cr > 0 and NPCNameFromID[cr] or "") .. " (" .. cr .. ")");
