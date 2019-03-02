@@ -1670,7 +1670,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					end
 				end
 				if GetDataMember("ShowItemID") then tinsert(info, { left = L["ITEM_ID"], right = tostring(itemID) }); end
-				if GetDataMember("ShowLootSpecializations", true) then
+				if app.Settings:GetTooltipSetting("LootSpecializations") then
 					local specs = GetItemSpecInfo(itemID);
 					if specs then
 						if #specs > 0 then
@@ -9088,7 +9088,7 @@ end):Show();
 										end
 									end
 								end
-								if completed and other and  then
+								if completed and other then
 									print("You have collected everything from this difficulty. Switch to " .. other .. " instead.");
 								end
 							end

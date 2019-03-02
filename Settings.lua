@@ -110,6 +110,7 @@ local TooltipSettingsBase = {
 		["DisplayInCombat"] = true,
 		["Enabled"] = true,
 		["Expand:Difficulty"] = true,
+		["LootSpecializations"] = true,
 		["MinimapButton"] = true,
 		["MinimapSize"] = 36,
 		["MinimapStyle"] = true,
@@ -1579,6 +1580,23 @@ end);
 ShortenProgressCheckBox:SetATTTooltip("Enable this option if you only want to see the icon in the topright corner instead of the icon and the collected/not collected text.\n\nSome people like smaller tooltips...");
 ShortenProgressCheckBox:SetPoint("TOPLEFT", ShowCollectionProgressCheckBox, "BOTTOMLEFT", 4, 4);
 
+local ShowLootSpecializationsCheckBox = settings:CreateCheckBox("Show Loot Specializations",
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("LootSpecializations"));
+	if not settings:GetTooltipSetting("Enabled") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:SetTooltipSetting("LootSpecializations", self:GetChecked());
+end);
+ShowLootSpecializationsCheckBox:SetATTTooltip("Enable this option to show the loot specialization requirements of items in the item's tooltip.\n\nNOTE: These icons will still appear within the ATT mini lists regardless of this setting.");
+ShowLootSpecializationsCheckBox:SetPoint("TOPLEFT", ShortenProgressCheckBox, "BOTTOMLEFT", -4, -4);
+
 local ShowSharedAppearancesCheckBox = settings:CreateCheckBox("Show Shared Appearances",
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("SharedAppearances"));
@@ -1594,7 +1612,7 @@ function(self)
 	settings:SetTooltipSetting("SharedAppearances", self:GetChecked());
 end);
 ShowSharedAppearancesCheckBox:SetATTTooltip("Enable this option to see items that share a similar appearance in the tooltip.\n\nNOTE: Items that do not match the armor type are displayed in the list. This is to help you diagnose the Collection progress.\n\nIf you are ever confused by this, as of ATT v1.5.0, you can Right Click the item to open the item and its Shared Appearances into their own standalone Mini List.");
-ShowSharedAppearancesCheckBox:SetPoint("TOPLEFT", ShortenProgressCheckBox, "BOTTOMLEFT", -4, -4);
+ShowSharedAppearancesCheckBox:SetPoint("TOPLEFT", ShowLootSpecializationsCheckBox, "BOTTOMLEFT", -4, 4);
 end)();
 
 ------------------------------------------
