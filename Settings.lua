@@ -137,6 +137,7 @@ local OnClickForTab = function(self)
 	end
 end;
 settings.Initialize = function(self)
+	PanelTemplates_SetNumTabs(self, #self.Tabs);
 	if not AllTheThingsSettings then AllTheThingsSettings = {}; end
 	if not AllTheThingsSettings.General then AllTheThingsSettings.General = {}; end
 	if not AllTheThingsSettings.Filters then AllTheThingsSettings.Filters = {}; end
@@ -1315,7 +1316,7 @@ end)();
 (function()
 local tab = settings:CreateTab("Filters");
 tab.OnRefresh = function(self) 
-	if settings:Get("AccountMode") or settings:Get("DebugMode") then
+	if settings:Get("DebugMode") then
 		PanelTemplates_DisableTab(settings, self:GetID());
 	else
 		PanelTemplates_EnableTab(settings, self:GetID());
@@ -1328,6 +1329,10 @@ end)();
 ------------------------------------------
 (function()
 local tab = settings:CreateTab("Social");
+tab.OnRefresh = function(self) 
+	-- We aren't ready yet. :(
+	PanelTemplates_DisableTab(settings, self:GetID());
+end;
 end)();
 
 ------------------------------------------
@@ -1427,7 +1432,7 @@ end)();
 (function()
 local tab = settings:CreateTab("About/Help");
 local AboutText = settings:CreateFontString(nil, "ARTWORK", "GameFontNormal");
-AboutText:SetPoint("TOPLEFT", line, "BOTTOMLEFT", 8, -8);`
+AboutText:SetPoint("TOPLEFT", line, "BOTTOMLEFT", 8, -8);
 AboutText:SetPoint("TOPRIGHT", line, "BOTTOMRIGHT", -8, -8);
 AboutText:SetJustifyH("LEFT");
 AboutText:SetText("ALL THE THINGS is a collection tracking addon that shows you where and how to get everything in the game! We have a large community of users on our Discord (link at the bottom) where you can ask questions, submit suggestions as well as Report Bugs / Missing Items. If you find something collectible or a quest that isn't documented, you can tell us on the Discord, or for the more technical savy, we have a Git that you may contribute directly to.\n\nWhile we do strive for completion, there's a lot of stuff getting added into the game each patch, so if we're missing something, please understand that we're a small team trying to keep up with changes as well as collect things ourselves. :D\n\nFeel free to ask me questions when I'm streaming and I'll try my best to answer it, even if it's not directly related to ATT. (general WoW Addon Programming as well)\n\n- Crieve (DFortun81)\n\nPS: As a community, we're currently focussing on Legion Raid Transmog, so if you're interested in this, we form groups on Fridays and Saturdays at 3 PM Arizona Time. Search Premade Group finder for \"CRIEVE\" around this time and you'll likely find our group!\n\n\n\nI keep getting this question:\nYes, there will be a version of ATT for Classic WoW. It will simply be a loot and quest tracker as obviously there will be no transmog collecting in Classic. (nor should there be)\n\nYes, I intend to play Classic WoW, but between working full time and developing the two versions of the addon, there won't be a lot of time for raiding.\n\nWe'll see.\n\nWebsite for comparing Collections coming Soon™.");
@@ -1442,8 +1447,3 @@ ShoutoutText:SetText("Additional Contributors: (in order of joining the team)\nD
 ShoutoutText:Show();
 table.insert(settings.MostRecentTab.objects, ShoutoutText);
 end)();
-
-
--- Finalize the layout
-PanelTemplates_SetNumTabs(settings, #settings.Tabs);
-PanelTemplates_DisableTab(settings, 3);
