@@ -9071,6 +9071,28 @@ end):Show();
 								end
 							end
 						end
+						if app.Settings:GetTooltipSetting("Warn:Difficulty") then
+							local difficultyID = select(3, GetInstanceInfo());
+							if difficultyID and difficultyID > 0 and results.g then
+								local completed,other = true, nil;
+								for _, row in ipairs(results.g) do
+									if row.difficultyID or row.difficulties then
+										if row.difficultyID == difficultyID or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
+											if row.total and row.progress < row.total then
+												completed = false;
+											end
+										else 
+											if row.total and row.progress < row.total then
+												other = row.text;
+											end
+										end
+									end
+								end
+								if completed and other and  then
+									print("You have collected everything from this difficulty. Switch to " .. other .. " instead.");
+								end
+							end
+						end
 					end
 					
 					-- Check to see completion...

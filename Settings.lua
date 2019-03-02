@@ -117,6 +117,7 @@ local TooltipSettingsBase = {
 		["Progress"] = true,
 		["ShowIconOnly"] = false,
 		["SharedAppearances"] = true,
+		["Warn:Difficulty"] = false,
 	},
 };
 local OnClickForTab = function(self)
@@ -1322,6 +1323,16 @@ function(self)
 end);
 ExpandDifficultyCheckBox:SetATTTooltip("Enable this option if you want to automatically minimize difficulty headers in the mini list that are not active when you enter a dungeon or raid.\n\nExample: Minimize the Heroic header when in a Normal difficulty dungeon");
 ExpandDifficultyCheckBox:SetPoint("TOPLEFT", IgnoreFiltersForBoEsCheckBox, "BOTTOMLEFT", 0, 4);
+
+local WarnDifficultyCheckBox = settings:CreateCheckBox("Warn Completed Difficulty",
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("Warn:Difficulty"));
+end,
+function(self)
+	settings:SetTooltipSetting("Warn:Difficulty", self:GetChecked());
+end);
+WarnDifficultyCheckBox:SetATTTooltip("Enable this option if you want to be warned when you enter an instance with a difficulty setting that will result in you being unable to earn new collectibles when there is an alternative unsaved difficulty that you could enter instead.");
+WarnDifficultyCheckBox:SetPoint("TOPLEFT", ExpandDifficultyCheckBox, "BOTTOMLEFT", 0, 4);
 end)();
 
 ------------------------------------------
