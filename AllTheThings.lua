@@ -5415,10 +5415,6 @@ function app.FilterItemClass_RequireItemFilter(item)
 		if app.Settings:GetFilter(item.f) then
 			return true;
 		else
-			local f = item.f;
-			if f > 10 and f ~= 27 and f ~= 35 then
-			print(L["FILTER_ID_TYPES"][f], f, "Disabled?!", item.text, item.key);
-			end
 			return false;
 		end
 	else
