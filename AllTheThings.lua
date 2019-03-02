@@ -1559,7 +1559,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 							if GetDataMember("OnlyShowRelevantSharedAppearances") then
 								-- The user doesn't want to see Shared Appearances that don't match the item's requirements.
 								for i, otherSourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
-									if otherSourceID ~= sourceID then
+									if otherSourceID ~= sourceID or app.Settings:GetTooltipSetting("SharedAppearancesOriginalSource") then
 										local otherATTSource = app.SearchForField("s", otherSourceID);
 										if otherATTSource then
 											otherATTSource = otherATTSource[1];
@@ -1599,7 +1599,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 							else
 								-- This is where we need to calculate the requirements differently because Unique Mode users are extremely frustrating.
 								for i, otherSourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
-									if otherSourceID ~= sourceID then
+									if otherSourceID ~= sourceID or app.Settings:GetTooltipSetting("SharedAppearancesOriginalSource") then
 										local otherATTSource = app.SearchForField("s", otherSourceID);
 										if otherATTSource then
 											otherATTSource = otherATTSource[1];

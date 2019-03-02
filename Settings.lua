@@ -1612,7 +1612,24 @@ function(self)
 	settings:SetTooltipSetting("SharedAppearances", self:GetChecked());
 end);
 ShowSharedAppearancesCheckBox:SetATTTooltip("Enable this option to see items that share a similar appearance in the tooltip.\n\nNOTE: Items that do not match the armor type are displayed in the list. This is to help you diagnose the Collection progress.\n\nIf you are ever confused by this, as of ATT v1.5.0, you can Right Click the item to open the item and its Shared Appearances into their own standalone Mini List.");
-ShowSharedAppearancesCheckBox:SetPoint("TOPLEFT", ShowLootSpecializationsCheckBox, "BOTTOMLEFT", -4, 4);
+ShowSharedAppearancesCheckBox:SetPoint("TOPLEFT", ShowLootSpecializationsCheckBox, "BOTTOMLEFT", 0, 4);
+
+local ShowSourceSharedAppearancesCheckBox = settings:CreateCheckBox("Show Original Source",
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("SharedAppearancesOriginalSource"));
+	if not settings:GetTooltipSetting("Enabled") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:SetTooltipSetting("SharedAppearancesOriginalSource", self:GetChecked());
+end);
+ShowSourceSharedAppearancesCheckBox:SetATTTooltip("Enable this option if you actually liked seeing the original source info within the Shared Appearances list in the tooltip.");
+ShowSourceSharedAppearancesCheckBox:SetPoint("TOPLEFT", ShowSharedAppearancesCheckBox, "BOTTOMLEFT", 4, 4);
 end)();
 
 ------------------------------------------
