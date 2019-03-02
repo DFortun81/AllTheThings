@@ -179,7 +179,7 @@ settings.Initialize = function(self)
 	elseif app.Minimap then
 		app.Minimap:Hide();
 	end
-	OnClickForTab(self.Tabs[2]);
+	OnClickForTab(self.Tabs[1]);
 	self:Refresh();
 	self:UpdateMode();
 	
