@@ -39,6 +39,8 @@ AllTheThings.Presets = {
 		false, -- [34]
 		false, -- [35]
 		true, -- [36]
+		[50] = true,
+		[57] = true,
 		[103] = true,
 		[100] = true,
 		[104] = true,
@@ -91,6 +93,8 @@ AllTheThings.Presets = {
 		true, -- [34]
 		true, -- [35]
 		true, -- [36]
+		[50] = true,
+		[57] = true,
 		[103] = true,
 		[100] = true,
 		[104] = true,
@@ -143,6 +147,8 @@ AllTheThings.Presets = {
 		true, -- [34]
 		false, -- [35]
 		true, -- [36]
+		[50] = true,
+		[57] = true,
 		[103] = true,
 		[100] = true,
 		[104] = true,
@@ -195,6 +201,8 @@ AllTheThings.Presets = {
 		true, -- [34]
 		false, -- [35]
 		true, -- [36]
+		[50] = true,
+		[57] = true,
 		[106] = true,
 		[101] = true,
 		[103] = true,
@@ -247,6 +255,8 @@ AllTheThings.Presets = {
 		false, -- [34]
 		false, -- [35]
 		true, -- [36]
+		[50] = true,
+		[57] = true,
 		[103] = true,
 		[100] = true,
 		[104] = true,
@@ -299,6 +309,8 @@ AllTheThings.Presets = {
 		true, -- [34]
 		false, -- [35]
 		true, -- [36]
+		[50] = true,
+		[57] = true,
 		[103] = true,
 		[100] = true,
 		[104] = true,
@@ -351,6 +363,8 @@ AllTheThings.Presets = {
 		false, -- [34]
 		false, -- [35]
 		true, -- [36]
+		[50] = true,
+		[57] = true,
 		[103] = true,
 		[100] = true,
 		[104] = true,
@@ -377,6 +391,7 @@ AllTheThings.Presets = {
 		false, -- [8]
 		true, -- [9]
 		true, -- [10]
+		[50] = true,
 		[31] = false,
 		[32] = false,
 		[33] = false,
@@ -407,6 +422,7 @@ AllTheThings.Presets = {
 		[55] = false,
 		[113] = false,
 		[35] = false,
+		[57] = true,
 	},
 	["ROGUE"] = {
 		true, -- [1]
@@ -444,6 +460,8 @@ AllTheThings.Presets = {
 		true, -- [33]
 		true, -- [34]
 		false, -- [35]
+		[50] = true,
+		[57] = true,
 		[103] = true,
 		[100] = true,
 		[104] = true,
@@ -470,6 +488,8 @@ AllTheThings.Presets = {
 		true, -- [8]
 		true, -- [9]
 		true, -- [10]
+		[50] = true,
+		[57] = true,
 		[31] = false,
 		[32] = false,
 		[33] = false,
@@ -511,12 +531,14 @@ AllTheThings.Presets = {
 		false, -- [8]
 		true, -- [9]
 		true, -- [10]
+		[50] = true,
 		[30] = false,
 		[31] = false,
 		[32] = false,
 		[33] = false,
 		[34] = false,
 		[35] = false,
+		[57] = true,
 		[101] = true,
 		[103] = true,
 		[20] = true,
@@ -577,6 +599,8 @@ AllTheThings.Presets = {
 		true, -- [34]
 		false, -- [35]
 		true, -- [36]
+		[50] = true,
+		[57] = true,
 		[103] = true,
 		[100] = true,
 		[104] = true,

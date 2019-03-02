@@ -1828,7 +1828,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		end
 		
 		-- If the item is a recipe, then show which characters know this recipe.
-		if group.f == 200 and group.collectible and group.spellID and GetDataMember("ShowKnownBy") then
+		if group.collectible and group.spellID and GetDataMember("ShowKnownBy") then
 			local recipes, knownBy = GetDataMember("CollectedSpellsPerCharacter"), {};
 			for key,value in pairs(recipes) do
 				if value[group.spellID] then
@@ -1949,7 +1949,7 @@ CacheFields = function(group)
 	CacheFieldID(group, "spellID");
 	CacheFieldID(group, "mapID");
 	CacheArrayFieldIDs(group, "mapID", "maps");
-	if group.f == 102 and group.itemID then CacheFieldValue(group, "toyID", group.itemID); end
+	if group.filterID == 102 and group.itemID then CacheFieldValue(group, "toyID", group.itemID); end
 	if group.c and not containsValue(group.c, app.ClassIndex) then
 		group.nmc = true;	-- "Not My Class"
 	end
@@ -3289,8 +3289,6 @@ app.BaseCategory = {
 	__index = function(t, key)
 		if key == "key" then
 			return "categoryID";
-		elseif key == "f" then
-			return 200;
 		elseif key == "text" then
 			local info = app.GetDataSubMember("Categories", t.categoryID);
 			if info then return info; end
@@ -3566,7 +3564,7 @@ app.BaseFaction = {
 			end
 		elseif key == "key" then
 			return "factionID";
-		elseif key == "f" then
+		elseif key == "filterID" then
 			return 112;
 		elseif key == "trackable" or key == "collectible" then
 			return app.CollectibleReputations;
@@ -3740,8 +3738,6 @@ app.BaseFilter = {
 			return L["FILTER_ID_TYPES"][t.filterID];
 		elseif key == "icon" then
 			return L["FILTER_ID_ICONS"][t.filterID];
-		elseif key == "f" then
-			return t.filterID;
 		else
 			-- Something that isn't dynamic.
 			return table[key];
@@ -3802,7 +3798,7 @@ app.BaseGarrisonBuilding = {
 	__index = function(t, key)
 		if key == "key" then
 			return "buildingID";
-		elseif key == "f" then
+		elseif key == "filterID" then
 			if t.itemID then return 200; end
 		elseif key == "text" then
 			return t.link or select(2, C_Garrison.GetBuildingInfo(t.buildingID));
@@ -3908,6 +3904,8 @@ app.BaseHeirloom = {
 	__index = function(t, key)
 		if key == "key" then
 			return "itemID";
+		elseif key == "filterID" then
+			return 109;
 		elseif key == "collectible" then
 			if t.factionID then return app.CollectibleReputations; end
 			return app.CollectibleTransmog;
@@ -3941,8 +3939,6 @@ app.BaseHeirloom = {
 					end
 				end
 			end
-		elseif key == "f" then
-			return 109;
 		elseif key == "modID" then
 			return 1;
 		elseif key == "text" then
@@ -4061,12 +4057,12 @@ app.BaseIllusion = {
 	__index = function(t, key)
 		if key == "key" then
 			return "illusionID";
+		elseif key == "filterID" then
+			return 103;
 		elseif key == "collectible" then
 			return app.CollectibleIllusions;
 		elseif key == "collected" then
 			return GetDataSubMember("CollectedIllusions", t.illusionID);
-		elseif key == "f" then
-			return 103;
 		elseif key == "text" then
 			if t.itemID then
 				local name, link, _, _, _, _, _, _, _, icon = GetItemInfo(t.itemID);
@@ -4505,6 +4501,8 @@ app.BaseMount = {
 	__index = function(t, key)
 		if key == "key" then
 			return "spellID";
+		elseif key == "filterID" then
+			return 100;
 		elseif key == "collectible" then
 			return app.CollectibleMounts;
 		elseif key == "collected" then
@@ -4514,8 +4512,6 @@ app.BaseMount = {
 				SetDataSubMember("CollectedSpells", t.spellID, 1);
 				return 1;
 			end
-		elseif key == "f" then
-			return 100;
 		elseif key == "b" then
 			return (t.parent and t.parent.b) or 1;
 		elseif key == "text" then
@@ -4590,6 +4586,8 @@ app.BaseMusicRoll = {
 	__index = function(t, key)
 		if key == "key" then
 			return "questID";
+		elseif key == "filterID" then
+			return 108;
 		elseif key == "collectible" or key == "trackable" then
 			return app.CollectibleMusicRolls;
 		elseif key == "collected" or key == "saved" then
@@ -4607,8 +4605,6 @@ app.BaseMusicRoll = {
 				SetDataSubMember("CollectedMusicRolls", t.questID, 1);
 				return 1;
 			end
-		elseif key == "f" then
-			return 108;
 		elseif key == "lvl" then
 			return 100;
 		elseif key == "text" then
@@ -4763,8 +4759,6 @@ app.BasePetAbility = {
 	__index = function(t, key)
 		if key == "key" then
 			return "petAbilityID";
-		elseif key == "f" then
-			return 101;
 		elseif key == "text" then
 			return select(2, C_PetBattles.GetAbilityInfoByID(t.petAbilityID));
 		elseif key == "icon" then
@@ -4786,7 +4780,7 @@ app.BasePetType = {
 	__index = function(t, key)
 		if key == "key" then
 			return "petTypeID";
-		elseif key == "f" then
+		elseif key == "filterID" then
 			return 101;
 		elseif key == "text" then
 			return _G["BATTLE_PET_NAME_" .. t.petTypeID];
@@ -4943,7 +4937,7 @@ app.BaseRecipe = {
 	__index = function(t, key)
 		if key == "key" then
 			return "spellID";
-		elseif key == "f" then
+		elseif key == "filterID" then
 			return 200;
 		elseif key == "text" then
 			return t.link;
@@ -5008,7 +5002,7 @@ app.BaseSpell = {
 		elseif key == "icon" then
 			return select(3, GetSpellInfo(t.spellID));
 		elseif key == "link" then
-			if t.itemID and t.f ~= 200 then
+			if t.itemID and t.filterID ~= 200 and t.f ~= 200 then
 				local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(t.itemID);
 				if link then
 					t.link = link;
@@ -5051,14 +5045,14 @@ app.BaseSpecies = {
 	__index = function(t, key)
 		if key == "key" then
 			return "speciesID";
+		elseif key == "filterID" then
+			return 101;
 		elseif key == "collectible" then
 			return app.CollectibleBattlePets;
 		elseif key == "collected" then
 			if select(1, C_PetJournal.GetNumCollectedInfo(t.speciesID)) > 0 then
 				return 1;
 			end
-		elseif key == "f" then
-			return 101;
 		elseif key == "text" then
 			return "|cff0070dd" .. (select(1, C_PetJournal.GetPetInfoBySpeciesID(t.speciesID)) or "???") .. "|r";
 		elseif key == "icon" then
@@ -5149,7 +5143,7 @@ app.BaseTitle = {
 	__index = function(t, key)
 		if key == "key" then
 			return "titleID";
-		elseif key == "f" then
+		elseif key == "filterID" then
 			return 110;
 		elseif key == "icon" then
 			return "Interface\\Icons\\Achievement_Guild_DoctorIsIn";
@@ -5247,12 +5241,12 @@ app.BaseToy = {
 	__index = function(t, key)
 		if key == "key" then
 			return "itemID";
+		elseif key == "filterID" then
+			return 102;
 		elseif key == "collectible" then
 			return app.CollectibleToys;
 		elseif key == "collected" then
 			return GetDataSubMember("CollectedToys", t.itemID);
-		elseif key == "f" then
-			return 102;
 		elseif key == "isToy" then
 			return true;
 		elseif key == "text" then
@@ -5280,8 +5274,6 @@ app.BaseVignette = {
 	__index = function(t, key)
 		if key == "key" then
 			return "questID";
-		elseif key == "f" then
-			return 107;
 		elseif key == "text" then
 			if t.qgs then
 				local all = true;
@@ -5408,7 +5400,7 @@ end
 function app.FilterItemClass(item)
 	if app.UnobtainableItemFilter(item.u) then
 		if app.ItemBindFilter(item) then return true; end
-		return app.ItemTypeFilter(item.f)
+		return app.ItemTypeFilter(item)
 			and app.RequireBindingFilter(item)
 			and app.RequiredSkillFilter(item.requireSkill)
 			and app.ClassRequirementFilter(item)
@@ -5418,9 +5410,20 @@ end
 function app.FilterItemClass_RequireClasses(item)
 	return not item.nmc;
 end
-function app.FilterItemClass_RequireItemFilter(f)
-	if f and not GetPersonalDataSubMember("ItemFilters", f, true) and not (f == 58 or f == 56) then return false; end
-	return true;
+function app.FilterItemClass_RequireItemFilter(item)
+	if item.f then
+		if app.Settings:GetFilter(item.f) then
+			return true;
+		else
+			local f = item.f;
+			if f > 10 and f ~= 27 and f ~= 35 then
+			print(L["FILTER_ID_TYPES"][f], f, "Disabled?!", item.text, item.key);
+			end
+			return false;
+		end
+	else
+		return true;
+	end
 end
 function app.FilterItemClass_RequirePersonalLoot(item)
 	local specs = item.specs;
@@ -7047,11 +7050,6 @@ local function RowOnEnter(self)
 		-- NOTE: Order matters, we "fall-through" certain values in order to pass this information to the item ID section.
 		if not reference.creatureID then
 			if reference.itemID then
-				--if reference.f == 102 then
-					-- This is a toy!
-					--GameTooltip:SetToyByItemID(reference.itemID);
-				--else
-				-- This is an non-toy item reference. :)
 				local link = reference.link;
 				if link and link ~= "" then
 					GameTooltip:SetHyperlink(link);
@@ -7068,7 +7066,6 @@ local function RowOnEnter(self)
 					--	GameTooltip:AddDoubleLine(key, tostring(value));
 					--end	
 				end
-				--end
 			elseif reference.currencyID then
 				GameTooltip:SetCurrencyByID(reference.currencyID, 1);
 			elseif not reference.encounterID then
@@ -7589,7 +7586,6 @@ function app:GetDataCache()
 		-- Zones
 		if app.Categories.Zones then
 			db = app.CreateAchievement(46, app.Categories.Zones);
-			db.f = 0;
 			db.expanded = false;
 			db.text = BUG_CATEGORY2;
 			db.icon = "Interface\\ICONS\\Achievement_Zone_Outland_01"
@@ -7610,7 +7606,6 @@ function app:GetDataCache()
 		-- Group Finder
 		if app.Categories.GroupFinder then
 			db = app.CreateAchievement(4476, app.Categories.GroupFinder);	-- Looking for More
-			db.f = 0;
 			db.expanded = false;
 			db.text = DUNGEONS_BUTTON;
 			db.collectible = false;
@@ -7620,7 +7615,6 @@ function app:GetDataCache()
 		-- Achievements
 		if app.Categories.Achievements then
 			db = app.CreateAchievement(4496, app.Categories.Achievements);	-- It's Over Nine Thousand
-			db.f = 0;
 			db.expanded = false;
 			db.text = TRACKER_HEADER_ACHIEVEMENTS;
 			db.collectible = false;
@@ -7642,7 +7636,6 @@ function app:GetDataCache()
 		-- World Events
 		if app.Categories.WorldEvents then
 			db = app.CreateAchievement(12827, app.Categories.WorldEvents);
-			db.f = 0;
 			db.expanded = false;
 			db.text = EVENTS_LABEL;
 			db.collectible = false;
@@ -7652,7 +7645,6 @@ function app:GetDataCache()
 		-- Anniversary
 		if app.Categories.Anniversary then
 			db = app.CreateAchievement(12827, app.Categories.Anniversary);
-			db.f = 0;
 			db.expanded = false;
 			db.text = "WoW Anniversary";
 			db.collectible = false;
@@ -7662,7 +7654,6 @@ function app:GetDataCache()
 		-- Holidays
 		if app.Categories.Holidays then
 			db = app.CreateAchievement(2144, app.Categories.Holidays);
-			db.f = 0;
 			db.expanded = false;
 			db.text = GetItemSubClassInfo(15,3);
 			db.npcID = -3;
@@ -7673,7 +7664,6 @@ function app:GetDataCache()
 		-- Pet Battles
 		if app.Categories.PetBattles then
 			db = app.CreateAchievement(6559, app.Categories.PetBattles); -- Traveling Pet Mauler
-			db.f = 101;
 			db.lvl = 5; -- Must be 5 to train
 			db.expanded = false;
 			db.text = SHOW_PET_BATTLES_ON_MAP_TEXT; -- Pet Battles
@@ -7718,7 +7708,6 @@ function app:GetDataCache()
 		-- Gear Sets
 		if app.Categories.GearSets then
 			db = app.CreateAchievement(11761, app.Categories.GearSets);
-			db.f = 0;
 			db.expanded = false;
 			db.text = LOOT_JOURNAL_ITEM_SETS;
 			db.icon = "Interface\\ICONS\\Achievement_Transmog_Collections";
@@ -7755,7 +7744,6 @@ function app:GetDataCache()
 		-- Mounts
 		if app.Categories.Mounts then
 			db = app.CreateAchievement(app.Faction == "Horde" and 12934 or 12933, app.Categories.Mounts);
-			db.f = 100;
 			db.expanded = false;
 			db.text = MOUNTS;
 			table.insert(g, db);
@@ -7891,7 +7879,6 @@ function app:GetDataCache()
 		-- Mounts (Dynamic)
 		--[[
 		db = app.CreateAchievement(app.Faction == "Horde" and 10355 or 10356, GetTempDataMember("MOUNT_CACHE"));
-		db.f = 100;
 		db.expanded = false;
 		db.text = "Mounts (Dynamic)";
 		table.insert(g, db);
@@ -8329,7 +8316,7 @@ function app:GetDataCache()
 		app.MaximumItemInfoRetries = 100;
 		for itemID,groups in pairs(fieldCache["itemID"]) do
 			for i,group in ipairs(groups) do
-				if (not group.s or group.s == 0) and (not group.f or group.f == 109 or group.f < 50) then
+				if (not group.s or group.s == 0) and (not group.f or group.filterID == 109 or group.f < 50) then
 					if group.bonusID and not bonusIDs[group.bonusID] then
 						bonusIDs[group.bonusID] = true;
 						tinsert(harvestData.g, setmetatable({visible = true, back = 0.5, indent = 1, s = 0, itemID = tonumber(itemID), bonusID = group.bonusID}, app.BaseItem));
@@ -8561,8 +8548,6 @@ app:GetWindow("Debugger", UIParent, function(self)
 					['icon'] = "Interface\\Icons\\Ability_Rogue_FeignDeath.blp", 
 					["description"] = "Click this to fully clear this window.\n\nNOTE: If you click this by accident, use the dynamic Restore Buttons that this generates to reapply the data that was cleared.\n\nWARNING: If you reload the UI, the data stored in the Reload Button will be lost forever!",
 					['visible'] = true,
-					['f'] = -1,
-					['key'] = "nope",
 					['count'] = 0,
 					['OnClick'] = function(row, button)
 						local copy = {};
@@ -8579,8 +8564,6 @@ app:GetWindow("Debugger", UIParent, function(self)
 							['icon'] = "Interface\\Icons\\ability_monk_roll.blp", 
 							["description"] = "Click this to restore your cleared data.\n\nNOTE: Each Restore Button houses different data.\n\nWARNING: This data will be lost forever when you reload your UI!",
 							['visible'] = true,
-							['f'] = -1,
-							['key'] = "nope",
 							['data'] = copy,
 							['OnClick'] = function(row, button)
 								for i,info in ipairs(row.ref.data) do
@@ -8920,8 +8903,6 @@ end):Show();
 						['icon'] = "Interface\\Icons\\INV_Misc_Map_01",
 						['description'] = "If you wish to forcibly refresh the data without changing zones, click this button now!",
 						['visible'] = true,
-						['f'] = -1,
-						['key'] = "nope",
 						['OnClick'] = function(row, button)
 							Push(self, "Rebuild", self.Rebuild);
 							return true;
@@ -9777,7 +9758,7 @@ end);
 					return searchCache["randommount"];
 				else
 					local searchResults, dict, temp = {}, {} , {};
-					SearchRecursivelyForValue(app:GetWindow("Prime").data, "f", 100, searchResults);
+					SearchRecursivelyForValue(app:GetWindow("Prime").data, "filterID", 100, searchResults);
 					for i,o in pairs(searchResults) do
 						if not (o.saved or o.collected) and o.collectible and (not o.achievementID or o.itemID) then
 							tinsert(temp, o);
@@ -10515,21 +10496,6 @@ app.events.VARIABLES_LOADED = function()
 	local _, id = GetClassInfo(classIndex);
 	app.Me = "|c" .. RAID_CLASS_COLORS[id].colorStr .. name .. "-" .. (realm or GetRealmName()) .. "|r";
 	app.Faction = UnitFactionGroup("player");
-	
-	-- Load in the Presets if they exist for this character.
-	-- Default values should fallback to their presets.
-	local filters = GetPersonalDataMember("ItemFilters");
-	if not filters then
-		-- If a preset exist, we need to cleanly duplicate the preset data.
-		-- If we don't do that, changing settings will change the preset itself. (until a restart)
-		local presets, data = app.Presets[app.Class], {};
-		if presets then
-			for filter, state in pairs(presets) do
-				data[filter] = state;
-			end
-		end
-		SetPersonalDataMember("ItemFilters", data);
-	end
 	
 	-- Check to see if we have a leftover ItemDB cache
 	GetDataMember("CollectedBuildings", {});

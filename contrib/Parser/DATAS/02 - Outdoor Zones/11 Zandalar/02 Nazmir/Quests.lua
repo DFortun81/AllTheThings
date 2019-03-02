@@ -41,9 +41,7 @@ _.Zones =
 											i(155327),	-- Nazmani Warplate Greaves
 											i(155330),	-- Ritual Flayer's Breeches
 											i(155319),	-- Ritual Flayer's Gloves
-											i(154724, {	-- Ceremonial Torch
-												["f"] = 50, -- Miscellaneous
-											}),
+											i(154724),	-- Ceremonial Torch
 										},
 										["qg"] = 121241,	-- Princess Talanji
 										["sourceQuests"] = { 47105 },	-- Into The Darkness
@@ -99,9 +97,7 @@ _.Zones =
 									}),
 									q(49278, {	-- Spiritual Restoration
 										["groups"] = {
-											i(153514, {	-- Hanzabu's Charm
-												["f"] = 50,	-- Miscellaneous
-											}),
+											i(153514),	-- Hanzabu's Charm
 										},
 										["qg"] = 124428,	-- Hanzabu
 										["sourceQuests"] = { 47244 },	-- A Culling of Souls

@@ -35,15 +35,9 @@ _.WorldEvents =
 			}),
 			n(-25, {	-- Pet Battles
 				un(10, i(50301, {	-- Landro's Pet Box
-					un(10, i(46779, {  -- Path of Cenarius
-						["f"] = 50,
-					})),
-					un(10, i(35223, {  -- Papa Hummel's Old-Fashioned Pet Biscuit
-						["f"] = 50,
-					})),
-					un(10, i(45047,  {  -- Sandbox Tiger
-						["f"] = 50,
-					})),
+					un(10, i(46779)),	-- Path of Cenarius
+					un(10, i(35223)),	-- Papa Hummel's Old-Fashioned Pet Biscuit
+					un(10, i(45047)),	-- Sandbox Tiger
 					un(10, i(32588)),	-- Banana Charm
 					un(10, i(34493)),	-- Dragon Kite
 					un(10, i(38050)),	-- Soul-Trader Beacon

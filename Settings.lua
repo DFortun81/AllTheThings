@@ -138,14 +138,20 @@ local OnClickForTab = function(self)
 end;
 settings.Initialize = function(self)
 	PanelTemplates_SetNumTabs(self, #self.Tabs);
+	
+	-- Assign the default settings
 	if not AllTheThingsSettings then AllTheThingsSettings = {}; end
 	if not AllTheThingsSettings.General then AllTheThingsSettings.General = {}; end
-	if not AllTheThingsSettings.Filters then AllTheThingsSettings.Filters = {}; end
 	if not AllTheThingsSettings.Tooltips then AllTheThingsSettings.Tooltips = {}; end
-	if not AllTheThingsSettingsPerCharacter then AllTheThingsSettingsPerCharacter = {}; end
 	setmetatable(AllTheThingsSettings.General, GeneralSettingsBase);
-	setmetatable(AllTheThingsSettings.Filters, FilterSettingsBase);
 	setmetatable(AllTheThingsSettings.Tooltips, TooltipSettingsBase);
+	
+	-- Assign the preset filters for your character class as the default states
+	if not AllTheThingsSettingsPerCharacter then AllTheThingsSettingsPerCharacter = {}; end
+	if not AllTheThingsSettingsPerCharacter.Filters then AllTheThingsSettingsPerCharacter.Filters = {}; end
+	setmetatable(AllTheThingsSettingsPerCharacter.Filters, FilterSettingsBase);
+	FilterSettingsBase.__index = app.Presets[app.Class];
+	
 	self.PrecisionSlider:SetValue(self:GetTooltipSetting("Precision"));
 	self.MinimapButtonSizeSlider:SetValue(self:GetTooltipSetting("MinimapSize"));
 	if self:GetTooltipSetting("MinimapButton") then
@@ -154,12 +160,15 @@ settings.Initialize = function(self)
 	elseif app.Minimap then
 		app.Minimap:Hide();
 	end
-	OnClickForTab(self.Tabs[1]);
+	OnClickForTab(self.Tabs[2]);
 	self:Refresh();
 	self:UpdateMode();
 end
 settings.Get = function(self, setting)
 	return AllTheThingsSettings.General[setting];
+end
+settings.GetFilter = function(self, filterID)
+	return AllTheThingsSettingsPerCharacter.Filters[filterID];
 end
 settings.GetModeString = function(self)
 	local mode = "Mode";
@@ -217,6 +226,11 @@ end
 settings.Set = function(self, setting, value)
 	AllTheThingsSettings.General[setting] = value;
 	self:Refresh();
+end
+settings.SetFilter = function(self, filterID, value)
+	AllTheThingsSettingsPerCharacter.Filters[filterID] = value;
+	self:Refresh();
+	app:RefreshData();
 end
 settings.SetTooltipSetting = function(self, setting, value)
 	AllTheThingsSettings.Tooltips[setting] = value;
@@ -1322,6 +1336,159 @@ tab.OnRefresh = function(self)
 		PanelTemplates_EnableTab(settings, self:GetID());
 	end
 end;
+
+local ItemFiltersLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
+ItemFiltersLabel:SetPoint("TOPLEFT", line, "BOTTOMLEFT", 8, -8);
+ItemFiltersLabel:SetJustifyH("LEFT");
+ItemFiltersLabel:SetText("Armor / Weapon Filters");
+ItemFiltersLabel:Show();
+table.insert(settings.MostRecentTab.objects, ItemFiltersLabel);
+
+-- Armor
+local last, xoffset, yoffset = ItemFiltersLabel, 0, -4;
+local itemFilterNames = L["FILTER_ID_TYPES"];
+
+-- Primary Armor Class
+local ItemFilterOnClick = function(self)
+	settings:SetFilter(self.filterID, self:GetChecked());
+end;
+local ItemFilterOnRefresh = function(self)
+	if settings:Get("AccountMode") or settings:Get("DebugMode") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	elseif FilterSettingsBase.__index[self.filterID] then
+		self:SetChecked(settings:GetFilter(self.filterID));
+		self:Enable();
+		self:SetAlpha(1);
+	else
+		self:SetChecked(false);
+		self:Disable();
+		self:SetAlpha(0.2);
+	end
+end;
+for i,filterID in ipairs({ 4, 5, 6, 7 }) do
+	local filter = settings:CreateCheckBox(itemFilterNames[filterID], ItemFilterOnRefresh, ItemFilterOnClick);
+	filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, yoffset);
+	filter.filterID = filterID;
+	last = filter;
+	yoffset = 6;
+end
+
+-- Weapons
+yoffset = -4;
+for i,filterID in ipairs({ 20, 29, 28  }) do
+	local filter = settings:CreateCheckBox(itemFilterNames[filterID], ItemFilterOnRefresh, ItemFilterOnClick);
+	filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, yoffset);
+	filter.filterID = filterID;
+	last = filter;
+	yoffset = 6;
+end
+
+-- Big Ole Boys
+yoffset = -4;
+for i,filterID in ipairs({ 21, 22, 23, 24, 25, 26, 1, 8 }) do
+	local filter = settings:CreateCheckBox(itemFilterNames[filterID], ItemFilterOnRefresh, ItemFilterOnClick);
+	filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, yoffset);
+	filter.filterID = filterID;
+	last = filter;
+	yoffset = 6;
+end
+
+-- Weird Boys
+yoffset = -4;
+for i,filterID in ipairs({ 50, 57, 34, 35, 27 }) do
+	local filter = settings:CreateCheckBox(itemFilterNames[filterID], ItemFilterOnRefresh, ItemFilterOnClick);
+	filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, yoffset);
+	filter.filterID = filterID;
+	last = filter;
+	yoffset = 6;
+end
+
+-- Secondary Armor Classes
+last, xoffset, yoffset = ItemFiltersLabel, 120, -4;
+for i,filterID in ipairs({ 2, 3, 10, 9 }) do
+	local filter = settings:CreateCheckBox(itemFilterNames[filterID], ItemFilterOnRefresh, ItemFilterOnClick);
+	filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", xoffset, yoffset);
+	filter.filterID = filterID;
+	last = filter;
+	xoffset = 0;
+	yoffset = 6;
+end
+
+-- Ranged Weapons
+yoffset = -4;
+for i,filterID in ipairs({ 33, 32, 31, }) do
+	local filter = settings:CreateCheckBox(itemFilterNames[filterID], ItemFilterOnRefresh, ItemFilterOnClick);
+	filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, yoffset);
+	filter.filterID = filterID;
+	last = filter;
+	yoffset = 6;
+end
+
+
+f = CreateFrame("Button", nil, settings, "OptionsButtonTemplate");
+f:SetPoint("BOTTOMLEFT", settings, "BOTTOMLEFT", 8, 8);
+f:SetText("Class Defaults");
+f:SetWidth(120);
+f:SetHeight(24);
+f:RegisterForClicks("AnyUp");
+f:SetScript("OnClick", function(self)
+	for key,value in pairs(AllTheThingsSettingsPerCharacter.Filters) do
+		AllTheThingsSettingsPerCharacter.Filters[key] = nil;
+	end
+	settings:Refresh();
+	app:RefreshData();
+end);
+f:SetATTTooltip("Click this button to reset all of the filters to your class defaults.\n\nNOTE: Only filters that are collectible for your class can be turned on.");
+f.OnRefresh = function(self) 
+	if settings:Get("AccountMode") or settings:Get("DebugMode") then
+		self:Disable();
+	else
+		self:Enable();
+	end
+end;
+table.insert(settings.MostRecentTab.objects, f);
+settings.classdefaults = f;
+
+f = CreateFrame("Button", nil, settings, "OptionsButtonTemplate");
+f:SetPoint("TOPLEFT", settings.classdefaults, "TOPRIGHT", 3, 0);
+f:SetText("All");
+f:SetWidth(80);
+f:SetHeight(24);
+f:RegisterForClicks("AnyUp");
+f:SetScript("OnClick", function(self)
+	local active, count = 0, 0;
+	for key,value in pairs(FilterSettingsBase.__index) do
+		if value then
+			count = count + 1;
+			if AllTheThingsSettingsPerCharacter.Filters[key] then
+				active = active + 1;
+			end
+		end
+	end
+	if count > 0 then
+		if (active / count) > 0.5 then
+			for key,value in pairs(FilterSettingsBase.__index) do
+				if value then AllTheThingsSettingsPerCharacter.Filters[key] = false; end
+			end
+		else
+			for key,value in pairs(FilterSettingsBase.__index) do
+				if value then AllTheThingsSettingsPerCharacter.Filters[key] = true; end
+			end
+		end
+		settings:Refresh();
+		app:RefreshData();
+	end
+end);
+f:SetATTTooltip("Click this button to toggle all of the filters at once.");
+f.OnRefresh = function(self) 
+	if settings:Get("AccountMode") or settings:Get("DebugMode") then
+		self:Disable();
+	else
+		self:Enable();
+	end
+end;
+table.insert(settings.MostRecentTab.objects, f);
 end)();
 
 ------------------------------------------
@@ -1435,7 +1602,7 @@ local AboutText = settings:CreateFontString(nil, "ARTWORK", "GameFontNormal");
 AboutText:SetPoint("TOPLEFT", line, "BOTTOMLEFT", 8, -8);
 AboutText:SetPoint("TOPRIGHT", line, "BOTTOMRIGHT", -8, -8);
 AboutText:SetJustifyH("LEFT");
-AboutText:SetText(L["TITLE"] .. " |CFFFFFFFFis a collection tracking addon that shows you where and how to get everything in the game! We have a large community of users on our Discord (link at the bottom) where you can ask questions, submit suggestions as well as Report Bugs / Missing Items. If you find something collectible or a quest that isn't documented, you can tell us on the Discord, or for the more technical savy, we have a Git that you may contribute directly to.\n\nWhile we do strive for completion, there's a lot of stuff getting added into the game each patch, so if we're missing something, please understand that we're a small team trying to keep up with changes as well as collect things ourselves. :D\n\nFeel free to ask me questions when I'm streaming and I'll try my best to answer it, even if it's not directly related to ATT. (general WoW Addon Programming as well)\n\n- Crieve (DFortun81)\n\nPS: As a community, we're currently focussing on Legion Raid Transmog, so if you're interested in this, we form groups on Fridays and Saturdays at 3 PM Arizona Time. Search Premade Group finder for \"CRIEVE\" around this time and you'll likely find our group!\n\n\n\nI keep getting this question:\nYes, there will be a version of ATT for Classic WoW. It will simply be a loot and quest tracker as obviously there will be no transmog collecting in Classic. (nor should there be)\n\nYes, I intend to play Classic WoW, but between working full time and developing the two versions of the addon, there won't be a lot of time for raiding.\n\nNo, ATT is not the addon that places icons on your bag icons. That's CanIMogIt and Caerdon Wardrobe!\n\nWebsite for comparing Collections coming Soon™.|r");
+AboutText:SetText(L["TITLE"] .. " |CFFFFFFFFis a collection tracking addon that shows you where and how to get everything in the game! We have a large community of users on our Discord (link at the bottom) where you can ask questions, submit suggestions as well as Report Bugs / Missing Items. If you find something collectible or a quest that isn't documented, you can tell us on the Discord, or for the more technical savy, we have a Git that you may contribute directly to.\n\nWhile we do strive for completion, there's a lot of stuff getting added into the game each patch, so if we're missing something, please understand that we're a small team trying to keep up with changes as well as collect things ourselves. :D\n\nFeel free to ask me questions when I'm streaming and I'll try my best to answer it, even if it's not directly related to ATT. (general WoW Addon Programming as well)\n\n- |r|Cffff8000Crieve (DFortun81)|CFFFFFFFF\n\nPS: As a community, we're currently focussing on Legion Raid Transmog, so if you're interested in this, we form groups on Fridays and Saturdays at 3 PM Arizona Time. Search Premade Group finder for \"CRIEVE\" around this time and you'll likely find our group!\n\n\n\nI keep getting this question:\nYes, there will be a version of ATT for Classic WoW. It will simply be a loot and quest tracker as obviously there will be no transmog collecting in Classic. (nor should there be)\n\nYes, I intend to play Classic WoW, but between working full time and developing the two versions of the addon, there won't be a lot of time for raiding.\n\nNo, ATT is not the addon that places icons on your bag icons. That's CanIMogIt and Caerdon Wardrobe!\n\nWebsite for comparing Collections coming Soon™.|r");
 AboutText:Show();
 table.insert(settings.MostRecentTab.objects, AboutText);
 

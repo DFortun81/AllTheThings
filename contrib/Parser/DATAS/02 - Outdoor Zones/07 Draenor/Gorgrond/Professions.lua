@@ -8,10 +8,7 @@
 --			["groups"] = {
 --				n(  -38, {	-- Profession
 --					prof(356, { -- Fishing
-	--					["groups"] = {
---							i(118380),		-- Hightfish Cap
---						},
---						["f"] = 50,
+	--					i(118380),		-- Hightfish Cap
 --					}),
 --				}),
 	--		},

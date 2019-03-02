@@ -126,9 +126,7 @@ _.Holidays = bubbleDown({["u"] = 18},
 									["itemID"] = 22200,			-- Silver Shafted Arrow
 								},
 								-- Useless Items --
-								un(18, i(134860, {	-- Peddlefeet's Buffing Creme
-									["f"] = 50,	-- Miscellaneous
-								})),
+								un(18, i(134860)),	-- Peddlefeet's Buffing Creme
 							},
 						})),
 					},

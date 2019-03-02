@@ -214,9 +214,7 @@ _.Zones =
 							}),
 							o(297891, {	-- Runebound Cache
 								["groups"] = {
-									i(163743, {	-- Drust Soulcatcher
-										["f"] = 50, -- Miscellaneous
-									}),
+									i(163743),	-- Drust Soulcatcher
 								},
 								["questID"] = 53385,
 								["icon"] = "Interface\\Icons\\garrison_bronzechest",

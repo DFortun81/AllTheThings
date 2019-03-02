@@ -21,9 +21,7 @@ _.Zones =
 									i(122283),	-- Rukhmar's Sacred Memory
 								}),
 								currency(1191, { -- Valor
-									un(2, i(127785, { -- Crystallized Fel
-										["f"] = 50, 
-									})),
+									un(2, i(127785)), -- Crystallized Fel
 								}),
 								i(128502, {	-- Hunter's Seeking Crystal
 									i(128503),	-- Master Hunter's Seeking Crystal
