@@ -6,666 +6,156 @@ _.Instances = { tier(2, {	-- Burning Crusade
 	inst(749, { 	-- The Eye
 		["groups"] = {
 			n(-1, {	-- Common Boss Drops
-				i(30280, {	-- Pattern: Belt of Blasting
-					["crs"] = {
-						19514,	-- Al'ar
-						19516,	-- Void Reaver
-						18805,	-- High Astromancer Solarian
-						19622,	-- Kael'thas Sunstrider
+				["crs"] = {
+					19514,	-- Al'ar
+					19516,	-- Void Reaver
+					18805,	-- High Astromancer Solarian
+					19622,	-- Kael'thas Sunstrider
+				},
+				["g"] = {
+					{
+						["itemID"] = 30280, -- Pattern: Belt of Blasting
 					},
-				}),
-				i(30302, {	-- Pattern: Belt of Deep Shadow
-					["crs"] = {
-						19514,	-- Al'ar
-						19516,	-- Void Reaver
-						18805,	-- High Astromancer Solarian
-						19622,	-- Kael'thas Sunstrider		
+					{
+						["itemID"] = 30302, -- Pattern: Belt of Deep Shadow
 					},
-				}),
-				i(30301, {	-- Pattern: Belt of Natural Power
-					["crs"] = {
-						19514,	-- Al'ar
-						19516,	-- Void Reaver
-						18805,	-- High Astromancer Solarian
-						19622,	-- Kael'thas Sunstrider		
+					{
+						["itemID"] = 30301, -- Pattern: Belt of Natural Power
 					},
-				}),
-				i(30303, {	-- Pattern: Belt of the Black Eagle
-					["crs"] = {
-						19514,	-- Al'ar
-						19516,	-- Void Reaver
-						18805,	-- High Astromancer Solarian
-						19622,	-- Kael'thas Sunstrider			
+					{
+						["itemID"] = 30303, -- Pattern: Belt of the Black Eagle
 					},
-				}),
-				i(30281, {	-- Pattern: Belt of the Long Road
-					["crs"] = {
-						19514,	-- Al'ar
-						19516,	-- Void Reaver
-						18805,	-- High Astromancer Solarian
-						19622,	-- Kael'thas Sunstrider		
+					{
+						["itemID"] = 30281, -- Pattern: Belt of the Long Road
 					},
-				}),
-				i(30282, {	-- Pattern: Boots of Blasting
-					["crs"] = {
-						19514,	-- Al'ar
-						19516,	-- Void Reaver
-						18805,	-- High Astromancer Solarian
-						19622,	-- Kael'thas Sunstrider		
+					{
+						["itemID"] = 30282, -- Pattern: Boots of Blasting
 					},
-				}),
-				i(30305, {	-- Pattern: Boots of Natural Grace
-					["crs"] = {
-						19514,	-- Al'ar
-						19516,	-- Void Reaver
-						18805,	-- High Astromancer Solarian
-						19622,	-- Kael'thas Sunstrider			
+					{
+						["itemID"] = 30305, -- Pattern: Boots of Natural Grace
 					},
-				}),
-				i(30307, {	-- Pattern: Boots of the Crimson Hawk
-					["crs"] = {
-						19514,	-- Al'ar
-						19516,	-- Void Reaver
-						18805,	-- High Astromancer Solarian
-						19622,	-- Kael'thas Sunstrider		
+					{
+						["itemID"] = 30307, -- Pattern: Boots of the Crimson Hawk
 					},
-				}),
-				i(30283, {	-- Pattern: Boots of the Long Road
-					["crs"] = {
-						19514,	-- Al'ar
-						19516,	-- Void Reaver
-						18805,	-- High Astromancer Solarian
-						19622,	-- Kael'thas Sunstrider			
+					{
+						["itemID"] = 30283, -- Pattern: Boots of the Long Road
 					},
-				}),
-				i(30306, {	-- Pattern: Boots of Utter Darkness
-					["crs"] = {
-						19514,	-- Al'ar
-						19516,	-- Void Reaver
-						18805,	-- High Astromancer Solarian
-						19622,	-- Kael'thas Sunstrider			
+					{
+						["itemID"] = 30306, -- Pattern: Boots of Utter Darkness						
 					},
-				}),
-				i(30308, {	-- Pattern: Hurricane Boots
-					["crs"] = {
-						19514,	-- Al'ar
-						19516,	-- Void Reaver
-						18805,	-- High Astromancer Solarian
-						19622,	-- Kael'thas Sunstrider		
+					{
+						["itemID"] = 30308, -- Pattern: Hurricane Boots
 					},
-				}),
-				i(30304, {	-- Pattern: Monsoon Belt
-					["crs"] = {
-						19514,	-- Al'ar
-						19516,	-- Void Reaver
-						18805,	-- High Astromancer Solarian
-						19622,	-- Kael'thas Sunstrider			
+					{
+						["itemID"] = 30304, -- Pattern: Monsoon Belt
 					},
-				}),
-				i(30321, {	-- Plans: Belt of the Guardian
-					["crs"] = {
-						19514,	-- Al'ar
-						19516,	-- Void Reaver
-						18805,	-- High Astromancer Solarian
-						19622,	-- Kael'thas Sunstrider			
+					{
+						["itemID"] = 30321, -- Plans: Belt of the Guardian
 					},
-				}),
-				i(30323, {	-- Plans: Boots of the Protector
-					["crs"] = {
-						19514,	-- Al'ar
-						19516,	-- Void Reaver
-						18805,	-- High Astromancer Solarian
-						19622,	-- Kael'thas Sunstrider		
+					{
+						["itemID"] = 30323, -- Plans: Boots of the Protector
 					},
-				}),
-				i(30322, {	-- Plans: Red Belt of Battle
-					["crs"] = {
-						19514,	-- Al'ar
-						19516,	-- Void Reaver
-						18805,	-- High Astromancer Solarian
-						19622,	-- Kael'thas Sunstrider		
+					{
+						["itemID"] = 30322, -- Plans: Red Belt of Battle
 					},
-				}),
-				i(30324, {	-- Plans: Red Havoc Boots
-					["crs"] = {
-						19514,	-- Al'ar
-						19516,	-- Void Reaver
-						18805,	-- High Astromancer Solarian
-						19622,	-- Kael'thas Sunstrider			
+					{
+						["itemID"] = 30324, -- Plans: Red Havoc Boots
 					},
-				}),
+				},	
 			}),
 			n(0, {	-- Zone Drop
-				i(30026, {	-- Bands of the Celestial Archer
-					["crs"] = {
-						20043,	-- Apprentice Star Scryer
-						20033,	-- Astromancer
-						20046,	-- Astromancer Lord
-						20031,	-- Bloodwarder Legionnaire
-						20035,	-- Bloodwarder Marshal
-						20036,	-- Bloodwarder Squire
-						20032,	-- Bloodwarder Vindicator
-						20047,	-- Crimson Hand Battle Mage
-						20049,	-- Crimson Hand Blood Knight
-						20048,	-- Crimson Hand Centurion
-						20050,	-- Crimson Hand Inquisitor
-						20040,	-- Crystalcore Devastator
-						20052,	-- Crystalcore Mechanic
-						20041,	-- Crystalcore Sentinel
-						20045,	-- Nether Scryer
-						20044,	-- Novice Astromancer
-						20039,	-- Phoenix-Hawk
-						20034,	-- Star Scryer
-						20037,	-- Tempest Falconer
-						20042,	-- Tempest-Smith			
+				["crs"] = {
+					20043,	-- Apprentice Star Scryer
+					20033,	-- Astromancer
+					20046,	-- Astromancer Lord
+					20031,	-- Bloodwarder Legionnaire
+					20035,	-- Bloodwarder Marshal
+					20036,	-- Bloodwarder Squire
+					20032,	-- Bloodwarder Vindicator
+					20047,	-- Crimson Hand Battle Mage
+					20049,	-- Crimson Hand Blood Knight
+					20048,	-- Crimson Hand Centurion
+					20050,	-- Crimson Hand Inquisitor
+					20040,	-- Crystalcore Devastator
+					20052,	-- Crystalcore Mechanic
+					20041,	-- Crystalcore Sentinel
+					20045,	-- Nether Scryer
+					20044,	-- Novice Astromancer
+					20039,	-- Phoenix-Hawk
+					20034,	-- Star Scryer
+					20037,	-- Tempest Falconer
+					20042,	-- Tempest-Smith
+				},
+				["g"] = {
+					{
+						["itemID"] = 30026,	-- Bands of the Celestial Archer
 					},
-				}),
-				i(30029, {	-- Bark-Gloves of Ancient Wisdom
-					["crs"] = {
-						20043,	-- Apprentice Star Scryer
-						20033,	-- Astromancer
-						20046,	-- Astromancer Lord
-						20031,	-- Bloodwarder Legionnaire
-						20035,	-- Bloodwarder Marshal
-						20036,	-- Bloodwarder Squire
-						20032,	-- Bloodwarder Vindicator
-						20047,	-- Crimson Hand Battle Mage
-						20049,	-- Crimson Hand Blood Knight
-						20048,	-- Crimson Hand Centurion
-						20050,	-- Crimson Hand Inquisitor
-						20040,	-- Crystalcore Devastator
-						20052,	-- Crystalcore Mechanic
-						20041,	-- Crystalcore Sentinel
-						20045,	-- Nether Scryer
-						20044,	-- Novice Astromancer
-						20039,	-- Phoenix-Hawk
-						20034,	-- Star Scryer
-						20037,	-- Tempest Falconer
-						20042,	-- Tempest-Smith			
+					{
+						["itemID"] = 30029,	-- Bark-Gloves of Ancient Wisdom
 					},
-				}),
-				i(30020, {	-- Fire-Cord of the Magus
-					["crs"] = {
-						20043,	-- Apprentice Star Scryer
-						20033,	-- Astromancer
-						20046,	-- Astromancer Lord
-						20031,	-- Bloodwarder Legionnaire
-						20035,	-- Bloodwarder Marshal
-						20036,	-- Bloodwarder Squire
-						20032,	-- Bloodwarder Vindicator
-						20047,	-- Crimson Hand Battle Mage
-						20049,	-- Crimson Hand Blood Knight
-						20048,	-- Crimson Hand Centurion
-						20050,	-- Crimson Hand Inquisitor
-						20040,	-- Crystalcore Devastator
-						20052,	-- Crystalcore Mechanic
-						20041,	-- Crystalcore Sentinel
-						20045,	-- Nether Scryer
-						20044,	-- Novice Astromancer
-						20039,	-- Phoenix-Hawk
-						20034,	-- Star Scryer
-						20037,	-- Tempest Falconer
-						20042,	-- Tempest-Smith			
+					{
+						["itemID"] = 30020,	-- Fire-Cord of the Magus
 					},
-				}),
-				i(30030, {	-- Girdle of Fallen Stars
-					["crs"] = {
-						20043,	-- Apprentice Star Scryer
-						20033,	-- Astromancer
-						20046,	-- Astromancer Lord
-						20031,	-- Bloodwarder Legionnaire
-						20035,	-- Bloodwarder Marshal
-						20036,	-- Bloodwarder Squire
-						20032,	-- Bloodwarder Vindicator
-						20047,	-- Crimson Hand Battle Mage
-						20049,	-- Crimson Hand Blood Knight
-						20048,	-- Crimson Hand Centurion
-						20050,	-- Crimson Hand Inquisitor
-						20040,	-- Crystalcore Devastator
-						20052,	-- Crystalcore Mechanic
-						20041,	-- Crystalcore Sentinel
-						20045,	-- Nether Scryer
-						20044,	-- Novice Astromancer
-						20039,	-- Phoenix-Hawk
-						20034,	-- Star Scryer
-						20037,	-- Tempest Falconer
-						20042,	-- Tempest-Smith			
+					{
+						["itemID"] = 30030,	-- Girdle of Fallen Stars
 					},
-				}),
-				i(30024, {	-- Mantle of the Elven Kings
-					["crs"] = {
-						20043,	-- Apprentice Star Scryer
-						20033,	-- Astromancer
-						20046,	-- Astromancer Lord
-						20031,	-- Bloodwarder Legionnaire
-						20035,	-- Bloodwarder Marshal
-						20036,	-- Bloodwarder Squire
-						20032,	-- Bloodwarder Vindicator
-						20047,	-- Crimson Hand Battle Mage
-						20049,	-- Crimson Hand Blood Knight
-						20048,	-- Crimson Hand Centurion
-						20050,	-- Crimson Hand Inquisitor
-						20040,	-- Crystalcore Devastator
-						20052,	-- Crystalcore Mechanic
-						20041,	-- Crystalcore Sentinel
-						20045,	-- Nether Scryer
-						20044,	-- Novice Astromancer
-						20039,	-- Phoenix-Hawk
-						20034,	-- Star Scryer
-						20037,	-- Tempest Falconer
-						20042,	-- Tempest-Smith			
+					{
+						["itemID"] = 30024,	-- Mantle of the Elven Kings
 					},
-				}),
-				i(30280, {	-- Pattern: Belt of Blasting
-					["crs"] = {
-						20043,	-- Apprentice Star Scryer
-						20033,	-- Astromancer
-						20046,	-- Astromancer Lord
-						20031,	-- Bloodwarder Legionnaire
-						20035,	-- Bloodwarder Marshal
-						20036,	-- Bloodwarder Squire
-						20032,	-- Bloodwarder Vindicator
-						20047,	-- Crimson Hand Battle Mage
-						20049,	-- Crimson Hand Blood Knight
-						20048,	-- Crimson Hand Centurion
-						20050,	-- Crimson Hand Inquisitor
-						20040,	-- Crystalcore Devastator
-						20052,	-- Crystalcore Mechanic
-						20041,	-- Crystalcore Sentinel
-						20045,	-- Nether Scryer
-						20044,	-- Novice Astromancer
-						20039,	-- Phoenix-Hawk
-						20034,	-- Star Scryer
-						20037,	-- Tempest Falconer
-						20042,	-- Tempest-Smith			
+					{
+						["itemID"] = 30280,	-- Pattern: Belt of Blasting
 					},
-				}),
-				i(30302, {	-- Pattern: Belt of Deep Shadow
-					["crs"] = {
-						20043,	-- Apprentice Star Scryer
-						20033,	-- Astromancer
-						20046,	-- Astromancer Lord
-						20031,	-- Bloodwarder Legionnaire
-						20035,	-- Bloodwarder Marshal
-						20036,	-- Bloodwarder Squire
-						20032,	-- Bloodwarder Vindicator
-						20047,	-- Crimson Hand Battle Mage
-						20049,	-- Crimson Hand Blood Knight
-						20048,	-- Crimson Hand Centurion
-						20050,	-- Crimson Hand Inquisitor
-						20040,	-- Crystalcore Devastator
-						20052,	-- Crystalcore Mechanic
-						20041,	-- Crystalcore Sentinel
-						20045,	-- Nether Scryer
-						20044,	-- Novice Astromancer
-						20039,	-- Phoenix-Hawk
-						20034,	-- Star Scryer
-						20037,	-- Tempest Falconer
-						20042,	-- Tempest-Smith			
+					{
+						["itemID"] = 30302,	-- Pattern: Belt of Deep Shadow
 					},
-				}),
-				i(30301, {	-- Pattern: Belt of Natural Power
-					["crs"] = {
-						20043,	-- Apprentice Star Scryer
-						20033,	-- Astromancer
-						20046,	-- Astromancer Lord
-						20031,	-- Bloodwarder Legionnaire
-						20035,	-- Bloodwarder Marshal
-						20036,	-- Bloodwarder Squire
-						20032,	-- Bloodwarder Vindicator
-						20047,	-- Crimson Hand Battle Mage
-						20049,	-- Crimson Hand Blood Knight
-						20048,	-- Crimson Hand Centurion
-						20050,	-- Crimson Hand Inquisitor
-						20040,	-- Crystalcore Devastator
-						20052,	-- Crystalcore Mechanic
-						20041,	-- Crystalcore Sentinel
-						20045,	-- Nether Scryer
-						20044,	-- Novice Astromancer
-						20039,	-- Phoenix-Hawk
-						20034,	-- Star Scryer
-						20037,	-- Tempest Falconer
-						20042,	-- Tempest-Smith			
+					{
+						["itemID"] = 30301,	-- Pattern: Belt of Natural Power
 					},
-				}),
-				i(30303, {	-- Pattern: Belt of the Black Eagle
-					["crs"] = {
-						20043,	-- Apprentice Star Scryer
-						20033,	-- Astromancer
-						20046,	-- Astromancer Lord
-						20031,	-- Bloodwarder Legionnaire
-						20035,	-- Bloodwarder Marshal
-						20036,	-- Bloodwarder Squire
-						20032,	-- Bloodwarder Vindicator
-						20047,	-- Crimson Hand Battle Mage
-						20049,	-- Crimson Hand Blood Knight
-						20048,	-- Crimson Hand Centurion
-						20050,	-- Crimson Hand Inquisitor
-						20040,	-- Crystalcore Devastator
-						20052,	-- Crystalcore Mechanic
-						20041,	-- Crystalcore Sentinel
-						20045,	-- Nether Scryer
-						20044,	-- Novice Astromancer
-						20039,	-- Phoenix-Hawk
-						20034,	-- Star Scryer
-						20037,	-- Tempest Falconer
-						20042,	-- Tempest-Smith			
+					{
+						["itemID"] = 30303,	-- Pattern: Belt of the Black Eagle
 					},
-				}),
-				i(30281, {	-- Pattern: Belt of the Long Road
-					["crs"] = {
-						20043,	-- Apprentice Star Scryer
-						20033,	-- Astromancer
-						20046,	-- Astromancer Lord
-						20031,	-- Bloodwarder Legionnaire
-						20035,	-- Bloodwarder Marshal
-						20036,	-- Bloodwarder Squire
-						20032,	-- Bloodwarder Vindicator
-						20047,	-- Crimson Hand Battle Mage
-						20049,	-- Crimson Hand Blood Knight
-						20048,	-- Crimson Hand Centurion
-						20050,	-- Crimson Hand Inquisitor
-						20040,	-- Crystalcore Devastator
-						20052,	-- Crystalcore Mechanic
-						20041,	-- Crystalcore Sentinel
-						20045,	-- Nether Scryer
-						20044,	-- Novice Astromancer
-						20039,	-- Phoenix-Hawk
-						20034,	-- Star Scryer
-						20037,	-- Tempest Falconer
-						20042,	-- Tempest-Smith			
+					{
+						["itemID"] = 30281,	-- Pattern: Belt of the Long Road
 					},
-				}),
-				i(30282, {	-- Pattern: Boots of Blasting
-					["crs"] = {
-						20043,	-- Apprentice Star Scryer
-						20033,	-- Astromancer
-						20046,	-- Astromancer Lord
-						20031,	-- Bloodwarder Legionnaire
-						20035,	-- Bloodwarder Marshal
-						20036,	-- Bloodwarder Squire
-						20032,	-- Bloodwarder Vindicator
-						20047,	-- Crimson Hand Battle Mage
-						20049,	-- Crimson Hand Blood Knight
-						20048,	-- Crimson Hand Centurion
-						20050,	-- Crimson Hand Inquisitor
-						20040,	-- Crystalcore Devastator
-						20052,	-- Crystalcore Mechanic
-						20041,	-- Crystalcore Sentinel
-						20045,	-- Nether Scryer
-						20044,	-- Novice Astromancer
-						20039,	-- Phoenix-Hawk
-						20034,	-- Star Scryer
-						20037,	-- Tempest Falconer
-						20042,	-- Tempest-Smith			
+					{
+						["itemID"] = 30282,	-- Pattern: Boots of Blasting
 					},
-				}),
-				i(30305, {	-- Pattern: Boots of Natural Grace
-					["crs"] = {
-						20043,	-- Apprentice Star Scryer
-						20033,	-- Astromancer
-						20046,	-- Astromancer Lord
-						20031,	-- Bloodwarder Legionnaire
-						20035,	-- Bloodwarder Marshal
-						20036,	-- Bloodwarder Squire
-						20032,	-- Bloodwarder Vindicator
-						20047,	-- Crimson Hand Battle Mage
-						20049,	-- Crimson Hand Blood Knight
-						20048,	-- Crimson Hand Centurion
-						20050,	-- Crimson Hand Inquisitor
-						20040,	-- Crystalcore Devastator
-						20052,	-- Crystalcore Mechanic
-						20041,	-- Crystalcore Sentinel
-						20045,	-- Nether Scryer
-						20044,	-- Novice Astromancer
-						20039,	-- Phoenix-Hawk
-						20034,	-- Star Scryer
-						20037,	-- Tempest Falconer
-						20042,	-- Tempest-Smith			
+					{
+						["itemID"] = 30305,	-- Pattern: Boots of Natural Grace
 					},
-				}),
-				i(30307, {	-- Pattern: Boots of the Crimson Hawk
-					["crs"] = {
-						20043,	-- Apprentice Star Scryer
-						20033,	-- Astromancer
-						20046,	-- Astromancer Lord
-						20031,	-- Bloodwarder Legionnaire
-						20035,	-- Bloodwarder Marshal
-						20036,	-- Bloodwarder Squire
-						20032,	-- Bloodwarder Vindicator
-						20047,	-- Crimson Hand Battle Mage
-						20049,	-- Crimson Hand Blood Knight
-						20048,	-- Crimson Hand Centurion
-						20050,	-- Crimson Hand Inquisitor
-						20040,	-- Crystalcore Devastator
-						20052,	-- Crystalcore Mechanic
-						20041,	-- Crystalcore Sentinel
-						20045,	-- Nether Scryer
-						20044,	-- Novice Astromancer
-						20039,	-- Phoenix-Hawk
-						20034,	-- Star Scryer
-						20037,	-- Tempest Falconer
-						20042,	-- Tempest-Smith			
+					{
+						["itemID"] = 30307,	-- Pattern: Boots of the Crimson Hawk
 					},
-				}),
-				i(30283, {	-- Pattern: Boots of the Long Road
-					["crs"] = {
-						20043,	-- Apprentice Star Scryer
-						20033,	-- Astromancer
-						20046,	-- Astromancer Lord
-						20031,	-- Bloodwarder Legionnaire
-						20035,	-- Bloodwarder Marshal
-						20036,	-- Bloodwarder Squire
-						20032,	-- Bloodwarder Vindicator
-						20047,	-- Crimson Hand Battle Mage
-						20049,	-- Crimson Hand Blood Knight
-						20048,	-- Crimson Hand Centurion
-						20050,	-- Crimson Hand Inquisitor
-						20040,	-- Crystalcore Devastator
-						20052,	-- Crystalcore Mechanic
-						20041,	-- Crystalcore Sentinel
-						20045,	-- Nether Scryer
-						20044,	-- Novice Astromancer
-						20039,	-- Phoenix-Hawk
-						20034,	-- Star Scryer
-						20037,	-- Tempest Falconer
-						20042,	-- Tempest-Smith			
+					{
+						["itemID"] = 30283,	-- Pattern: Boots of the Long Road
 					},
-				}),
-				i(30306, {	-- Pattern: Boots of Utter Darkness
-					["crs"] = {
-						20043,	-- Apprentice Star Scryer
-						20033,	-- Astromancer
-						20046,	-- Astromancer Lord
-						20031,	-- Bloodwarder Legionnaire
-						20035,	-- Bloodwarder Marshal
-						20036,	-- Bloodwarder Squire
-						20032,	-- Bloodwarder Vindicator
-						20047,	-- Crimson Hand Battle Mage
-						20049,	-- Crimson Hand Blood Knight
-						20048,	-- Crimson Hand Centurion
-						20050,	-- Crimson Hand Inquisitor
-						20040,	-- Crystalcore Devastator
-						20052,	-- Crystalcore Mechanic
-						20041,	-- Crystalcore Sentinel
-						20045,	-- Nether Scryer
-						20044,	-- Novice Astromancer
-						20039,	-- Phoenix-Hawk
-						20034,	-- Star Scryer
-						20037,	-- Tempest Falconer
-						20042,	-- Tempest-Smith			
+					{
+						["itemID"] = 30306,	-- Pattern: Boots of Utter Darkness
 					},
-				}),
-				i(30308, {	-- Pattern: Hurricane Boots
-					["crs"] = {
-						20043,	-- Apprentice Star Scryer
-						20033,	-- Astromancer
-						20046,	-- Astromancer Lord
-						20031,	-- Bloodwarder Legionnaire
-						20035,	-- Bloodwarder Marshal
-						20036,	-- Bloodwarder Squire
-						20032,	-- Bloodwarder Vindicator
-						20047,	-- Crimson Hand Battle Mage
-						20049,	-- Crimson Hand Blood Knight
-						20048,	-- Crimson Hand Centurion
-						20050,	-- Crimson Hand Inquisitor
-						20040,	-- Crystalcore Devastator
-						20052,	-- Crystalcore Mechanic
-						20041,	-- Crystalcore Sentinel
-						20045,	-- Nether Scryer
-						20044,	-- Novice Astromancer
-						20039,	-- Phoenix-Hawk
-						20034,	-- Star Scryer
-						20037,	-- Tempest Falconer
-						20042,	-- Tempest-Smith			
+					{
+						["itemID"] = 30308,	-- Pattern: Hurricane Boots
 					},
-				}),
-				i(30304, {	-- Pattern: Monsoon Belt
-					["crs"] = {
-						20043,	-- Apprentice Star Scryer
-						20033,	-- Astromancer
-						20046,	-- Astromancer Lord
-						20031,	-- Bloodwarder Legionnaire
-						20035,	-- Bloodwarder Marshal
-						20036,	-- Bloodwarder Squire
-						20032,	-- Bloodwarder Vindicator
-						20047,	-- Crimson Hand Battle Mage
-						20049,	-- Crimson Hand Blood Knight
-						20048,	-- Crimson Hand Centurion
-						20050,	-- Crimson Hand Inquisitor
-						20040,	-- Crystalcore Devastator
-						20052,	-- Crystalcore Mechanic
-						20041,	-- Crystalcore Sentinel
-						20045,	-- Nether Scryer
-						20044,	-- Novice Astromancer
-						20039,	-- Phoenix-Hawk
-						20034,	-- Star Scryer
-						20037,	-- Tempest Falconer
-						20042,	-- Tempest-Smith			
+					{
+						["itemID"] = 30304,	-- Pattern: Monsoon Belt
 					},
-				}),
-				i(30321, {	-- Plans: Belt of the Guardian
-					["crs"] = {
-						20043,	-- Apprentice Star Scryer
-						20033,	-- Astromancer
-						20046,	-- Astromancer Lord
-						20031,	-- Bloodwarder Legionnaire
-						20035,	-- Bloodwarder Marshal
-						20036,	-- Bloodwarder Squire
-						20032,	-- Bloodwarder Vindicator
-						20047,	-- Crimson Hand Battle Mage
-						20049,	-- Crimson Hand Blood Knight
-						20048,	-- Crimson Hand Centurion
-						20050,	-- Crimson Hand Inquisitor
-						20040,	-- Crystalcore Devastator
-						20052,	-- Crystalcore Mechanic
-						20041,	-- Crystalcore Sentinel
-						20045,	-- Nether Scryer
-						20044,	-- Novice Astromancer
-						20039,	-- Phoenix-Hawk
-						20034,	-- Star Scryer
-						20037,	-- Tempest Falconer
-						20042,	-- Tempest-Smith			
+					{
+						["itemID"] = 30321,	-- Plans: Belt of the Guardian
 					},
-				}),
-				i(30323, {	-- Plans: Boots of the Protector
-					["crs"] = {
-						20043,	-- Apprentice Star Scryer
-						20033,	-- Astromancer
-						20046,	-- Astromancer Lord
-						20031,	-- Bloodwarder Legionnaire
-						20035,	-- Bloodwarder Marshal
-						20036,	-- Bloodwarder Squire
-						20032,	-- Bloodwarder Vindicator
-						20047,	-- Crimson Hand Battle Mage
-						20049,	-- Crimson Hand Blood Knight
-						20048,	-- Crimson Hand Centurion
-						20050,	-- Crimson Hand Inquisitor
-						20040,	-- Crystalcore Devastator
-						20052,	-- Crystalcore Mechanic
-						20041,	-- Crystalcore Sentinel
-						20045,	-- Nether Scryer
-						20044,	-- Novice Astromancer
-						20039,	-- Phoenix-Hawk
-						20034,	-- Star Scryer
-						20037,	-- Tempest Falconer
-						20042,	-- Tempest-Smith			
+					{
+						["itemID"] = 30323,	-- Plans: Boots of the Protector
 					},
-				}),
-				i(30322, {	-- Plans: Red Belt of Battle
-					["crs"] = {
-						20043,	-- Apprentice Star Scryer
-						20033,	-- Astromancer
-						20046,	-- Astromancer Lord
-						20031,	-- Bloodwarder Legionnaire
-						20035,	-- Bloodwarder Marshal
-						20036,	-- Bloodwarder Squire
-						20032,	-- Bloodwarder Vindicator
-						20047,	-- Crimson Hand Battle Mage
-						20049,	-- Crimson Hand Blood Knight
-						20048,	-- Crimson Hand Centurion
-						20050,	-- Crimson Hand Inquisitor
-						20040,	-- Crystalcore Devastator
-						20052,	-- Crystalcore Mechanic
-						20041,	-- Crystalcore Sentinel
-						20045,	-- Nether Scryer
-						20044,	-- Novice Astromancer
-						20039,	-- Phoenix-Hawk
-						20034,	-- Star Scryer
-						20037,	-- Tempest Falconer
-						20042,	-- Tempest-Smith			
+					{
+						["itemID"] = 30322,	-- Plans: Red Belt of Battle
 					},
-				}),
-				i(30324, {	-- Plans: Red Havoc Boots
-					["crs"] = {
-						20043,	-- Apprentice Star Scryer
-						20033,	-- Astromancer
-						20046,	-- Astromancer Lord
-						20031,	-- Bloodwarder Legionnaire
-						20035,	-- Bloodwarder Marshal
-						20036,	-- Bloodwarder Squire
-						20032,	-- Bloodwarder Vindicator
-						20047,	-- Crimson Hand Battle Mage
-						20049,	-- Crimson Hand Blood Knight
-						20048,	-- Crimson Hand Centurion
-						20050,	-- Crimson Hand Inquisitor
-						20040,	-- Crystalcore Devastator
-						20052,	-- Crystalcore Mechanic
-						20041,	-- Crystalcore Sentinel
-						20045,	-- Nether Scryer
-						20044,	-- Novice Astromancer
-						20039,	-- Phoenix-Hawk
-						20034,	-- Star Scryer
-						20037,	-- Tempest Falconer
-						20042,	-- Tempest-Smith			
+					{
+						["itemID"] = 30324,	-- Plans: Red Havoc Boots
 					},
-				}),
-				i(30028, {	-- Seventh Ring of the Tirisfalen
-					["crs"] = {
-						20043,	-- Apprentice Star Scryer
-						20033,	-- Astromancer
-						20046,	-- Astromancer Lord
-						20031,	-- Bloodwarder Legionnaire
-						20035,	-- Bloodwarder Marshal
-						20036,	-- Bloodwarder Squire
-						20032,	-- Bloodwarder Vindicator
-						20047,	-- Crimson Hand Battle Mage
-						20049,	-- Crimson Hand Blood Knight
-						20048,	-- Crimson Hand Centurion
-						20050,	-- Crimson Hand Inquisitor
-						20040,	-- Crystalcore Devastator
-						20052,	-- Crystalcore Mechanic
-						20041,	-- Crystalcore Sentinel
-						20045,	-- Nether Scryer
-						20044,	-- Novice Astromancer
-						20039,	-- Phoenix-Hawk
-						20034,	-- Star Scryer
-						20037,	-- Tempest Falconer
-						20042,	-- Tempest-Smith			
+					{
+						["itemID"] = 30028,	-- Seventh Ring of the Tirisfalen
 					},
-				}),
+				},	
 			}),
-		
+	
 			cr(19514, e(1573, { -- Al'ar
 					i(97557),	-- Brilliant Phoenix Hawk Feather (PET!)
 					i(29949),	-- Arcanite Steam-Pistol
