@@ -21,6 +21,21 @@ _.Zones =
 								["coord"] = { 67.4, 38.7 },
 								["sourceQuest"] = 871,	-- In Defense of Far Watch
 							},
+							{	-- The Far Watch Offensive
+								["questID"] = 872,
+								["groups"] = {
+									i(59542),	-- Thornweaver Leggings
+									i(59543),	-- Pigman Belt
+									i(59544),	-- Kargal's Breastplate
+									i(131224),	-- Pigman Waistband
+									un(2, i(5275)),	-- Binding Girdle NOTE: Old reward, quest repurposed, original quest name was The Disruption Ends
+									un(2, i(5328)),	-- Cinched Belt NOTE: Old reward, quest repurposed, original quest name was The Disruption Ends
+								},
+								["qg"] = 3337,	-- Kargal Battlescar
+								["coord"] = { 67.7, 39.4 },
+								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 871,	-- In Defense of Far Watch
+							},
 						}),
 						crit(2, {	-- Grol'dom Farm
 							{	-- Crossroads Caravan Pickup
@@ -932,21 +947,6 @@ _.Zones =
 						["coord"] = { 57.5, 18.2 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 858,	-- Ignition
-					},
-					{	-- The Far Watch Offensive
-						["questID"] = 872,
-						["groups"] = {
-							i(59542),	-- Thornweaver Leggings
-							i(59543),	-- Pigman Belt
-							i(59544),	-- Kargal's Breastplate
-							i(131224),	-- Pigman Waistband
-							un(2, i(5275)),	-- Binding Girdle NOTE: Old reward, quest repurposed, original quest name was The Disruption Ends
-							un(2, i(5328)),	-- Cinched Belt NOTE: Old reward, quest repurposed, original quest name was The Disruption Ends
-						},
-						["qg"] = 3337,	-- Kargal Battlescar
-						["coord"] = { 67.7, 39.4 },
-						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 871,	-- In Defense of Far Watch
 					},
 					{	-- The Grol'dom Militia
 						["questID"] = 13973,

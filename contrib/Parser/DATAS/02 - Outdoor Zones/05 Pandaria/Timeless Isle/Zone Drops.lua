@@ -167,6 +167,11 @@ _.Zones =
 								["dr"] = 0.5,
 							},
 						}),
+						n(-38, {	-- Fishing
+							prof(356, { -- Fishing
+								desc(i(94933), "The Tiny Blue Carp can be fished up from Jewel Danio Schools and Redbelly Mandarin Schools. Additionally, it can be caught by casting into the Fish of the Day in Townlong Steppes and the Vale of Eternal Blossoms.|nAnother way to obtain this pet is by fishing from inland open water in Townlong Steppes and the Vale of Eternal Blossoms.|r"),	-- Tiny Blue Carp Pet
+							}),
+						}),
 						n(73162, { 	-- Foreboding Flame
 							{
 								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]

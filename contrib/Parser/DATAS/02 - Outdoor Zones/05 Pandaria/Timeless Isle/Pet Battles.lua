@@ -32,11 +32,6 @@ _.Zones =
 								["speciesID"] = 1326,	-- Skywisp Moth
 								["crs"] = { 73368 },	-- Skywisp Moth
 							},
-							{	-- Tiny Blue Carp
-								["itemID"] = 94933,		-- Tiny Blue Carp
-								["requireSkill"] = 356,	-- Fishing
-								["description"] = "Fish in pools for a chance to receive this pet.",
-							},
 						},
 					},
 				},
