@@ -28,17 +28,27 @@ _.Zones =
 								["crs"] = { 62314 },	-- Tainted Cockroach
 								["speciesID"] = 497,	-- Tainted Cockroach
 							},
+							q(31920, {	-- Grand Master Antari
+								["qg"] = 66557,	-- Bloodknight Antari <Grand Master Pet Tamer>
+								["sourceQuests"] = { 
+									31919,	-- Battle Pet Tamers: Outland (Alliance Version)
+									31921	-- Battle Pet Tamers: Outland (Horde Version)
+								},
+							}),
 							qa(31981, {	-- Exceeding Expectations
 								["qg"] = 66557,	-- Bloodknight Antari
+								["sourceQuests"] = { 31920 }	-- Grand Master Antari
 							}),
 							qh(31982, {	-- Exceeding Expectations
 								["qg"] = 66557,	-- Bloodknight Antari
-							}),
-							q(31920),	-- Grand Master Antari
+								["sourceQuests"] = { 31920 }
+							}),						
 							q(31926, { 	-- Grand Master Antari
 								["isDaily"] = true,
-								["g"] = {
-									i(89125),	-- Sack of Pet Supplies
+								["qg"] = 66557,	-- Bloodknight Antari
+								["sourceQuests"] = { 31920 },	-- Grand Master Antari
+								["groups"] = {
+									i(89125)	-- Sack of Pet Supplies
 								},
 							}),
 						},
