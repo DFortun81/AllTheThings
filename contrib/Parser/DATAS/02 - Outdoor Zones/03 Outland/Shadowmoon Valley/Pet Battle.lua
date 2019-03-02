@@ -34,10 +34,13 @@ _.Zones =
 							qh(31982, {	-- Exceeding Expectations
 								["qg"] = 66557,	-- Bloodknight Antari
 							}),
-							q(31920), {	-- Grand Master Antari
-								qr(q(31926)), { 	-- Grand Master Antari
+							q(31920),	-- Grand Master Antari
+							q(31926, { 	-- Grand Master Antari
+								["isDaily"] = true,
+								["g"] = {
 									i(89125),	-- Sack of Pet Supplies
-							}},
+								},
+							}),
 						},
 					},
 				},
