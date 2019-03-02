@@ -1864,7 +1864,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		end
 		
 		-- If the item is a recipe, then show which characters know this recipe.
-		if group.collectible and group.spellID and GetDataMember("ShowKnownBy") then
+		if group.collectible and group.spellID and group.filterID ~= 100 and app.Settings:GetTooltipSetting("KnownBy") then
 			local recipes, knownBy = GetDataMember("CollectedSpellsPerCharacter"), {};
 			for key,value in pairs(recipes) do
 				if value[group.spellID] then
