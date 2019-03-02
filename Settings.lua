@@ -1510,17 +1510,537 @@ f.OnRefresh = function(self)
 	end
 end;
 table.insert(settings.MostRecentTab.objects, f);
+
+local LegacyFiltersLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
+LegacyFiltersLabel:SetPoint("TOPRIGHT", line, "BOTTOMRIGHT", -88, -8);
+LegacyFiltersLabel:SetJustifyH("LEFT");
+LegacyFiltersLabel:SetText("Legacy / Unobtainable Filters");
+LegacyFiltersLabel:Show();
+table.insert(settings.MostRecentTab.objects, LegacyFiltersLabel);
+
+local LegacyFiltersTempLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormal");
+LegacyFiltersTempLabel:SetPoint("TOPLEFT", LegacyFiltersLabel, "BOTTOMLEFT", 0, -8);
+LegacyFiltersTempLabel:SetPoint("TOPRIGHT", LegacyFiltersLabel, "BOTTOMRIGHT", 0, -8);
+LegacyFiltersTempLabel:SetJustifyH("LEFT");
+LegacyFiltersTempLabel:SetText("|CFFFFFFFFI'm going to completely rework how our Legacy, Unobtainable, and Seasonal filters work.\n\nComing Soon™.|r");
+LegacyFiltersTempLabel:Show();
+table.insert(settings.MostRecentTab.objects, LegacyFiltersTempLabel);
 end)();
 
 ------------------------------------------
 -- The "Social" Tab.					--
 ------------------------------------------
+--[[
 (function()
 local tab = settings:CreateTab("Social");
 tab.OnRefresh = function(self) 
 	-- We aren't ready yet. :(
 	PanelTemplates_DisableTab(settings, self:GetID());
 end;
+end)();
+--]]
+
+------------------------------------------
+-- The temporary "Unobtainables" Tab.	--
+------------------------------------------
+(function()
+local tab = settings:CreateTab("Unobtainables");
+
+-- seasonal
+local seasonal = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
+seasonal:SetPoint("TOPLEFT", line, 4, -8)
+seasonal:SetText("Seasonal (Check to hide)");
+table.insert(settings.MostRecentTab.objects, seasonal);
+
+local seasonalFrame = CreateFrame("Frame", nil, settings, "ThinBorderTemplate");
+seasonalFrame:SetPoint("TOP", seasonal, "BOTTOM", 0, -4);
+seasonalFrame:SetPoint("LEFT", line, 4, 0);
+seasonalFrame:SetPoint("RIGHT", line, -4, 0);
+seasonalFrame:SetHeight(250);
+table.insert(settings.MostRecentTab.objects, seasonalFrame);
+
+-- seasonal enable
+local seasonalEnable = settings:CreateCheckBox("Filter Seasonal Items", 
+function(self) 
+	self:SetChecked(app.GetDataMember("FilterSeasonal"));
+end,
+function(self)
+	app.SetDataMember("FilterSeasonal", self:GetChecked());
+	if self:GetChecked() then
+		app.SeasonalFilter = app.FilterItemClass_SeasonalItem;
+	else
+		app.SeasonalFilter = app.NoFilter;
+	end
+	settings:Refresh();
+	app:RefreshData();
+end);
+seasonalEnable:SetPoint("TOPLEFT", seasonalFrame, "TOPLEFT", 4, -4);
+
+-- seasonal Everything
+local seasonalAll = settings:CreateCheckBox("Enable All Seasonal",
+function(self)
+	local isTrue = true
+	local val = app.GetDataMember("SeasonalFilters")
+	for k,v in ipairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
+		if v[1] > 4 then
+			isTrue = isTrue and not val[k]
+		end
+	end
+	self:SetChecked(isTrue);
+	if not app.GetDataMember("FilterSeasonal") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	local val = app.GetDataMember("SeasonalFilters")
+	for k,v in ipairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
+		if v[1] > 4 then
+			val[k] = not self:GetChecked()
+		end
+	end
+	app.SetDataMember("SeasonalFilters", val);
+	settings:Refresh();
+	app:RefreshData();
+end);
+seasonalAll:SetPoint("TOP", seasonalFrame, "TOP", 0, -4);
+seasonalAll:SetPoint("LEFT", seasonalFrame, "CENTER", 0, 0);
+
+local seasonalSubFrame = CreateFrame("Frame", nil, settings, "ThinBorderTemplate");
+seasonalSubFrame:SetPoint("TOPLEFT",seasonalFrame,5,-30);
+seasonalSubFrame:SetPoint("BOTTOMRIGHT", seasonalFrame, -15, 20);
+table.insert(settings.MostRecentTab.objects, seasonalSubFrame)
+
+local last = seasonalSubFrame;
+local x = 5;
+local y = 5;
+local count = 0;
+for k,v in ipairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
+	if v[1] > 4 then
+		local seasonalFilter = settings:CreateCheckBox(v[3], 
+		function(self) 
+			self:SetChecked(not app.GetDataMember("SeasonalFilters")[k]);
+			if not app.GetDataMember("FilterSeasonal") then
+				self:Disable();
+				self:SetAlpha(0.2);
+			else
+				self:Enable();
+				self:SetAlpha(1);
+			end
+		end,
+		function(self)
+			local val = app.GetDataMember("SeasonalFilters")
+			val[k]= not self:GetChecked()
+			app.SetDataMember("SeasonalFilters", val);
+			settings:Refresh();
+			app:RefreshData();
+		end);
+		seasonalFilter:SetATTTooltip(v[2]);
+		seasonalFilter:SetPoint("TOPLEFT",last,x,-y)
+		last = seasonalFilter
+		x = 0;
+		y = 20;
+		count = count + 1;
+		if count == 9 then
+			x = 300
+			y = 5
+			last = seasonalSubFrame
+		end
+	end
+end
+
+-- Unobtainable
+local unobtainable = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
+unobtainable:SetPoint("TOPLEFT", seasonalFrame, 0, -(seasonalFrame:GetHeight() + 20))
+unobtainable:SetText("Unobtainable (Check to hide)");
+table.insert(settings.MostRecentTab.objects, unobtainable)
+
+local unobtainableFrame = CreateFrame("Frame", nil, settings, "ThinBorderTemplate");
+unobtainableFrame:SetPoint("TOP",unobtainable,0,-20);
+unobtainableFrame:SetPoint("LEFT", line, 4, 0);
+unobtainableFrame:SetPoint("RIGHT", line, -4, 0);
+unobtainableFrame:SetHeight(520);
+table.insert(settings.MostRecentTab.objects, unobtainableFrame)
+
+-- unobtainable enable
+local unobtainableEnable = settings:CreateCheckBox("Filter Unobtainable Items",
+function(self) 
+	self:SetChecked(app.GetDataMember("FilterUnobtainableItems"));
+end,
+function(self)
+	app.SetDataMember("FilterUnobtainableItems", self:GetChecked());
+	if self:GetChecked() then
+		app.UnobtainableItemFilter = app.FilterItemClass_UnobtainableItem;
+	else
+		app.UnobtainableItemFilter = app.NoFilter;
+	end
+	settings:Refresh();
+	app:RefreshData();
+end);
+unobtainableEnable:SetPoint("TOPLEFT",unobtainable,5,-20)
+
+-- unobtainable Everything
+local unobtainableAll = settings:CreateCheckBox("Enable All Unobtainable",
+function(self)
+	local isTrue = true
+	local val = app.GetDataMember("UnobtainableItemFilters")
+	for k,v in ipairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
+		if v[1] < 5 then
+			isTrue = isTrue and not val[k]
+		end
+	end
+	self:SetChecked(isTrue);
+	if not app.GetDataMember("FilterUnobtainableItems") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	local val = app.GetDataMember("UnobtainableItemFilters")
+	for k,v in ipairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
+		if v[1] < 5 then
+			val[k] = not self:GetChecked()
+		end
+	end
+	app.SetDataMember("UnobtainableItemFilters", val);
+	settings:Refresh();
+	app:RefreshData();
+end);
+unobtainableAll:SetPoint("TOPLEFT",unobtainable, 300, -20)
+
+-- no chance
+local noChance = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
+noChance:SetPoint("TOPLEFT", unobtainable, 10, -50)
+noChance:SetText("No Chance");
+table.insert(settings.MostRecentTab.objects, noChance)
+
+local noChanceFrame = CreateFrame("Frame", nil, settings, "ThinBorderTemplate");
+noChanceFrame:SetPoint("TOP",noChance,0,-20);
+noChanceFrame:SetPoint("LEFT", line, 4, 0);
+noChanceFrame:SetPoint("RIGHT", line, -4, 0);
+noChanceFrame:SetHeight(120);
+table.insert(settings.MostRecentTab.objects, noChanceFrame)
+
+-- no chance Everything
+local noChanceAll = settings:CreateCheckBox("Enable All \"No Chance\"",
+function(self)
+	local isTrue = true
+	local val = app.GetDataMember("UnobtainableItemFilters")
+	for k,v in ipairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
+		if v[1] == 1 then
+			isTrue = isTrue and not val[k]
+		end
+	end
+	self:SetChecked(isTrue);
+	if not app.GetDataMember("FilterUnobtainableItems") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	local val = app.GetDataMember("UnobtainableItemFilters")
+	for k,v in ipairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
+		if v[1] == 1 then
+			val[k] = not self:GetChecked()
+		end
+	end
+	app.SetDataMember("UnobtainableItemFilters", val);
+	settings:Refresh();
+	app:RefreshData();
+end);
+noChanceAll:SetPoint("TOPLEFT",noChance, 300, 7)
+
+local last = noChanceFrame;
+local x = 5;
+local y = 5;
+local count = 0;
+for k,v in ipairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
+	if v[1]  == 1 then
+		local filter = settings:CreateCheckBox(v[3],
+		function(self) 
+			self:SetChecked(not app.GetDataMember("UnobtainableItemFilters")[k]);
+			if not app.GetDataMember("FilterUnobtainableItems") then
+				self:Disable();
+				self:SetAlpha(0.2);
+			else
+				self:Enable();
+				self:SetAlpha(1);
+			end
+		end,
+		function(self)
+			local val = app.GetDataMember("UnobtainableItemFilters")
+			val[k]= not self:GetChecked()
+			app.SetDataMember("UnobtainableItemFilters", val);
+			settings:Refresh();
+			app:RefreshData();
+		end);
+		filter:SetATTTooltip(v[2]);
+		filter:SetPoint("TOPLEFT",last,x,-y)
+		last = filter
+		x = 0;
+		y = 20;
+		count = count + 1;
+		if count == 4 then
+			x = 300
+			y = 5
+			last = noChanceFrame
+		end
+	end
+end
+
+-- possible
+local possChance = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
+possChance:SetPoint("TOPLEFT", noChance, 0, -(noChanceFrame:GetHeight() + (2*20)))
+possChance:SetText("Possible Chance");
+table.insert(settings.MostRecentTab.objects, possChance)
+
+local possChanceFrame = CreateFrame("Frame", nil, settings, "ThinBorderTemplate");
+possChanceFrame:SetPoint("TOP",possChance,0,-20);
+possChanceFrame:SetPoint("LEFT", line, 4, 0);
+possChanceFrame:SetPoint("RIGHT", line, -4, 0);
+possChanceFrame:SetHeight(60);
+table.insert(settings.MostRecentTab.objects, possChanceFrame)
+
+-- possible Everything
+local possChanceAll = settings:CreateCheckBox("Enable All \"Possible Chance\"",
+function(self)
+	local isTrue = true
+	local val = app.GetDataMember("UnobtainableItemFilters")
+	for k,v in ipairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
+		if v[1] == 2 then
+			isTrue = isTrue and not val[k]
+		end
+	end
+	self:SetChecked(isTrue);
+	if not app.GetDataMember("FilterUnobtainableItems") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	local val = app.GetDataMember("UnobtainableItemFilters")
+	for k,v in ipairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
+		if v[1] == 2 then
+			val[k] = not self:GetChecked()
+		end
+	end
+	app.SetDataMember("UnobtainableItemFilters", val);
+	settings:Refresh();
+	app:RefreshData();
+end);
+possChanceAll:SetPoint("TOPLEFT",possChance, possChanceFrame:GetWidth()/2, 7)
+
+local last = possChanceFrame;
+local x = 5;
+local y = 5;
+local count = 0;
+for k,v in ipairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
+	if v[1]  == 2 then
+		local filter = settings:CreateCheckBox(v[3],
+		function(self) 
+			self:SetChecked(not app.GetDataMember("UnobtainableItemFilters")[k]);
+			if not app.GetDataMember("FilterUnobtainableItems") then
+				self:Disable();
+				self:SetAlpha(0.2);
+			else
+				self:Enable();
+				self:SetAlpha(1);
+			end
+		end,
+		function(self)
+			local val = app.GetDataMember("UnobtainableItemFilters")
+			val[k]= not self:GetChecked()
+			app.SetDataMember("UnobtainableItemFilters", val);
+			settings:Refresh();
+			app:RefreshData();
+		end);
+		filter:SetATTTooltip(v[2]);
+		filter:SetPoint("TOPLEFT",last,x,-y)
+		last = filter
+		x = 0;
+		y = 20;
+		count = count + 1;
+		if count == 2 then
+			x = 300
+			y = 5
+			last = possChanceFrame
+		end
+	end
+end
+
+-- high
+local highChance = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
+highChance:SetPoint("TOPLEFT", possChance, 0, -(possChanceFrame:GetHeight() + (2*20)))
+highChance:SetText("High Chance");
+table.insert(settings.MostRecentTab.objects, highChance)
+
+local highChanceFrame = CreateFrame("Frame", nil, settings, "ThinBorderTemplate");
+highChanceFrame:SetPoint("TOP",highChance,0,-20);
+highChanceFrame:SetPoint("LEFT", line, 4, 0);
+highChanceFrame:SetPoint("RIGHT", line, -4, 0);
+highChanceFrame:SetHeight(80);
+table.insert(settings.MostRecentTab.objects, highChanceFrame)
+
+-- high Everything
+local highChanceAll = settings:CreateCheckBox("Enable All \"High Chance\"",
+function(self)
+	local isTrue = true
+	local val = app.GetDataMember("UnobtainableItemFilters")
+	for k,v in ipairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
+		if v[1] == 3 then
+			isTrue = isTrue and not val[k]
+		end
+	end
+	self:SetChecked(isTrue);
+	if not app.GetDataMember("FilterUnobtainableItems") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	local val = app.GetDataMember("UnobtainableItemFilters")
+	for k,v in ipairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
+		if v[1] == 3 then
+			val[k] = not self:GetChecked()
+		end
+	end
+	app.SetDataMember("UnobtainableItemFilters", val);
+	settings:Refresh();
+	app:RefreshData();
+end);
+highChanceAll:SetPoint("TOPLEFT",highChance, 300, 7)
+
+local last = highChanceFrame;
+local x = 5;
+local y = 5;
+local count = 0;
+for k,v in ipairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
+	if v[1] == 3 then
+		local filter = settings:CreateCheckBox(v[3],
+		function(self) 
+			self:SetChecked(not app.GetDataMember("UnobtainableItemFilters")[k]);
+			if not app.GetDataMember("FilterUnobtainableItems") then
+				self:Disable();
+				self:SetAlpha(0.2);
+			else
+				self:Enable();
+				self:SetAlpha(1);
+			end
+		end,
+		function(self)
+			local val = app.GetDataMember("UnobtainableItemFilters")
+			val[k]= not self:GetChecked()
+			app.SetDataMember("UnobtainableItemFilters", val);
+			settings:Refresh();
+			app:RefreshData();
+		end);
+		filter:SetATTTooltip(v[2]);
+		filter:SetPoint("TOPLEFT",last,x,-y)
+		last = filter
+		x = 0;
+		y = 20;
+		count = count + 1;
+		if count == 3 then
+			x = 300
+			y = 5
+			last = highChanceFrame
+		end
+	end
+end
+
+-- Legacy
+local legacy = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
+legacy:SetPoint("TOPLEFT", highChance, 0, -(highChanceFrame:GetHeight() + (2*20)))
+legacy:SetText("Legacy");
+table.insert(settings.MostRecentTab.objects, legacy)
+
+local legacyFrame = CreateFrame("Frame", nil, settings, "ThinBorderTemplate");
+legacyFrame:SetPoint("TOP",legacy,0,-20);
+legacyFrame:SetPoint("LEFT", line, 4, 0);
+legacyFrame:SetPoint("RIGHT", line, -4, 0);
+legacyFrame:SetHeight(100);
+table.insert(settings.MostRecentTab.objects, legacyFrame)
+
+-- Legacy Everything
+local legacyAll = settings:CreateCheckBox("Enable All \"Legacy\"",
+function(self)
+	local isTrue = true
+	local val = app.GetDataMember("UnobtainableItemFilters")
+	for k,v in ipairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
+		if v[1] == 4 then
+			isTrue = isTrue and not val[k]
+		end
+	end
+	self:SetChecked(isTrue);
+	if not app.GetDataMember("FilterUnobtainableItems") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	local val = app.GetDataMember("UnobtainableItemFilters")
+	for k,v in ipairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
+		if v[1] == 4 then
+			val[k] = not self:GetChecked()
+		end
+	end
+	app.SetDataMember("UnobtainableItemFilters", val);
+	settings:Refresh();
+	app:RefreshData();
+end);
+legacyAll:SetPoint("TOPLEFT",legacy, 300, 7)
+
+local x = 5;
+local y = 5;
+local legacyWidth = legacyFrame:GetWidth();
+for k,v in ipairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
+	if v[1]  == 4 then
+		local filter = settings:CreateCheckBox(v[3],
+		function(self) 
+			self:SetChecked(not app.GetDataMember("UnobtainableItemFilters")[k]);
+			if not app.GetDataMember("FilterUnobtainableItems") then
+				self:Disable();
+				self:SetAlpha(0.2);
+			else
+				self:Enable();
+				self:SetAlpha(1);
+			end
+		end,
+		function(self)
+			local val = app.GetDataMember("UnobtainableItemFilters")
+			val[k]= not self:GetChecked()
+			app.SetDataMember("UnobtainableItemFilters", val);
+			settings:Refresh();
+			app:RefreshData();
+		end);
+		filter:SetATTTooltip(v[2]);
+		filter:SetPoint("TOPLEFT",legacyFrame,x,-y)
+		
+		x = x + (legacyWidth / 2);
+		if x > legacyWidth then
+			y = y + 20;
+			x = 5;
+		end
+	end
+end
 end)();
 
 ------------------------------------------
@@ -1822,9 +2342,11 @@ end)();
 ------------------------------------------
 -- The "Debugging" Tab.					--
 ------------------------------------------
+--[[
 (function()
 local tab = settings:CreateTab("Debugging");
 end)();
+]]--
 
 ------------------------------------------
 -- The "About/Help" Tab.				--
