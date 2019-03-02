@@ -1556,7 +1556,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					if sourceInfo then
 						if app.Settings:GetTooltipSetting("SharedAppearances") then
 							local text;
-							if GetDataMember("OnlyShowRelevantSharedAppearances") then
+							if app.Settings:GetTooltipSetting("OnlyShowRelevantSharedAppearances") then
 								-- The user doesn't want to see Shared Appearances that don't match the item's requirements.
 								for i, otherSourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
 									if otherSourceID ~= sourceID or app.Settings:GetTooltipSetting("SharedAppearancesOriginalSource") then
@@ -10603,7 +10603,6 @@ app.events.VARIABLES_LOADED = function()
 	
 	-- Tooltip Settings
 	GetDataMember("OnlyShowRelevantDatabaseLocations", true);
-	GetDataMember("OnlyShowRelevantSharedAppearances", false);
 	GetDataMember("ShowCompleteSourceLocations", true);
 	GetDataMember("ShowSources", true);
 	GetDataMember("ShowContents", true);

@@ -1630,6 +1630,23 @@ function(self)
 end);
 ShowSourceSharedAppearancesCheckBox:SetATTTooltip("Enable this option if you actually liked seeing the original source info within the Shared Appearances list in the tooltip.");
 ShowSourceSharedAppearancesCheckBox:SetPoint("TOPLEFT", ShowSharedAppearancesCheckBox, "BOTTOMLEFT", 4, 4);
+
+local OnlyShowRelevantSharedAppearancesCheckBox = settings:CreateCheckBox("Only Show Relevant",
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("OnlyShowRelevantSharedAppearances"));
+	if not settings:GetTooltipSetting("Enabled") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:SetTooltipSetting("OnlyShowRelevantSharedAppearances", self:GetChecked());
+end);
+OnlyShowRelevantSharedAppearancesCheckBox:SetATTTooltip("Enable this option if you only want to see shared appearances that your character can unlock.\n\nNOTE: We recommend you keep this off as knowing the unlock requirements for an item can be helpful in identifying why an item is Not Collected.");
+OnlyShowRelevantSharedAppearancesCheckBox:SetPoint("TOPLEFT", ShowSourceSharedAppearancesCheckBox, "BOTTOMLEFT", 0, 4);
 end)();
 
 ------------------------------------------
