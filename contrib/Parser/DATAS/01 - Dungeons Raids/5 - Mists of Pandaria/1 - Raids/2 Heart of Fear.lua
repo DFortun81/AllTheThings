@@ -579,6 +579,7 @@ _.Instances =
 							}),						
 							cr(62980, e(745, {	-- Imperial Vizier Zor'lok
 								ach(6725),	-- Heroic: Imperial Vizier Zor'lok
+								ach(6937),	-- Overzealous
 								i(89917),	-- Pheromone-Coated Choker
 								i(86945),	-- Hisek's Chrysanthemum Cape
 								i(86952),	-- Chestplate of the Forbidden Tower
@@ -595,6 +596,7 @@ _.Instances =
 								i(86946),	-- Vizier's Ruby Signet
 							})),
 							cr(62543, e(744, {  -- Blade Lord Ta'yak
+								ach(6936),	-- Candle in the Wind
 								ach(6726),	-- Heroic: Blade Lord Ta'yak
 								i(86960),	-- Tornado-Summoning Censer
 								i(89922),	-- Hood of Stilled Winds
@@ -613,6 +615,7 @@ _.Instances =
 							})),
 							cr(62164, e(713, {	-- Garalon
 								ach(6727),	-- Heroic: Garalon
+								ach(6553),	-- Like an Arrow to the Face
 								i(86966),	-- Garalon's Hollow Skull
 								i(86970),	-- Xaril's Hood of Intoxicating Vapors
 								i(86967),	-- Necklace of Congealed Weaknesses
@@ -630,6 +633,7 @@ _.Instances =
 							})),
 							cr(62397, e(741, {	-- Wind Lord Mel'jarak
 								ach(6728),	-- Heroic: Wind Lord Mel'jarak
+								ach(6683),	-- Less Than Three
 								i(89256, {	-- Gauntlets of the Shadowy Conqueror
 									i(87100),	-- White Tiger Gauntlets
 									i(87105),	-- White Tiger Gloves
@@ -669,6 +673,7 @@ _.Instances =
 							})),
 							cr(62511, e(737, {	-- Amber-Shaper Un'sok
 								ach(6729),	-- Heroic: Amber-Shaper Un'sok
+								ach(6518),	-- I Heard You Like Amber...
 								i(89253, {	-- Leggings of the Shadowy Conqueror
 									i(87107),	-- White Tiger Greaves
 									i(87112),	-- White Tiger Legguards
@@ -708,6 +713,7 @@ _.Instances =
 							})),
 							cr(62837, e(743, {	-- Grand Empress Shek'zeer
 								ach(6730),	-- Heroic: Grand Empress Shek'zeer
+								ach(6922),	-- Timing is Everything
 								i(89250, {	-- Chest of the Shadowy Conqueror
 									i(87099),	-- White Tiger Battleplate
 									i(87104),	-- White Tiger Breastplate

@@ -1358,6 +1358,9 @@ _.Instances =
 							})),
 							cr(68905, e(829, {	-- Twin Consorts (Lu'lin)
 								["groups"] = {
+									{	-- From Dusk 'til Dawn
+										["achievementID"] = 8086,	-- From Dusk 'til Dawn
+									},
 									i(95577, {	-- Helm of the Crackling Conqueror
 										i(95292),	-- Lightning Emperor's Faceguard
 										i(95287),	-- Lightning Emperor's Headguard
@@ -2115,6 +2118,9 @@ _.Instances =
 							})),
 							cr(68905, e(829, {	-- Twin Consorts (Lu'lin)
 								["groups"] = {
+									{	-- From Dusk 'til Dawn
+										["achievementID"] = 8086,	-- From Dusk 'til Dawn
+									},
 									ach(8066),	-- Heroic: Twin Consorts
 									i(96624, {	-- Helm of the Crackling Conqueror
 										i(96666),	-- Lightning Emperor's Faceguard
@@ -2179,7 +2185,14 @@ _.Instances =
 								["groups"] = {
 									ach(8090),	-- A Complete Circuit
 									un(2, ach(8238)),	-- Cutting Edge: Lei Shen
-									ach(8067),	-- Heroic: Lei Shen
+									{	-- Heroic: Lei Shen
+										["achievementID"] = 8067,	-- Heroic: Lei Shen
+										["g"] = {
+											{	-- ,Storm's End
+												["titleID"] = 222,	-- ,Storm's End
+											},
+										},
+									},
 									i(96547),	-- Shan-Dun, Breaker of Hope
 									i(96553),	-- Uroe, Harbinger of Terror
 									i(96559),	-- Torall, Rod of the Shattered Throne

@@ -480,6 +480,7 @@ _.Instances =
 							cr(60583, e(683, {	-- Protectors of the Endless
 								["groups"] = {
 									ach(6731),	-- Heroic: Protectors of the Endless
+									ach(6717),	-- Power Overwhelming
 									n(-90, { -- Elite
 										["groups"] = {
 											i(90513),	-- Regail's Crackling Dagger (Elite)
@@ -522,6 +523,7 @@ _.Instances =
 							})),
 							cr(62442, e(742, {	-- Tsulong
 								ach(6732),	-- Heroic: Tsulong
+								ach(6933),	-- Who's Got Two Green Thumbs
 								i(87156),	-- Gao-Rei, Staff of the Legendary Protector
 								i(87164),	-- Loshan, Terror Incarnate
 								i(89947),	-- Shoulderpads of Twisted Fate
@@ -548,6 +550,7 @@ _.Instances =
 								i(87160),	-- Stuff of Nightmares
 							})),
 							cr(62983, e(729, {	-- Lei Shi
+								ach(6824),	-- Face Clutchers
 								ach(6733),	-- Heroic: Lei Shi
 								i(89262, {	-- Shoulders of the Shadowy Conqueror
 									i(87108),	-- White Tiger Mantle
@@ -597,7 +600,15 @@ _.Instances =
 								i(87167),	-- Terror in the Mists
 							})),
 							cr(60999, e(709, {	-- Sha of Fear
-								ach(6734),	-- Heroic: Sha of Fear
+								{	-- Heroic: Sha of Fear
+									["achievementID"] = 6734,	-- Heroic: Sha of Fear
+									["groups"] = {
+										{	-- the Fearless
+											["titleID"] = 198,	-- the Fearless
+										},
+									},
+								},
+								ach(6825),	-- The Mind-Killer
 								i( 89259, {	-- Helm of the Shadowy Conqueror
 									i(87111),	-- White Tiger Faceguard
 									i(87106),	-- White Tiger Headguard

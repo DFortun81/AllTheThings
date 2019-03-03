@@ -278,6 +278,9 @@ _.Instances =
 							}),
 							cr(60047, e(679, {	-- The Stone Guard
 								["groups"] = {
+									{	-- Must Love Dogs
+										["achievementID"] = 6823,	-- Must Love Dogs
+									},
 									i(85924),	-- Dagger of the Seven Stars
 									i(85976),	-- Sixteen-Fanged Crown
 									i(85922),	-- Beads of the Mogu'shi
@@ -301,6 +304,31 @@ _.Instances =
 								},
 							})),
 							cr(60009, e(689, {	-- Feng the Accursed
+								{	-- Anything You Can Do, I Can Do Better...
+									["achievementID"] = 6674,	-- Anything You Can Do, I Can Do Better...
+									["groups"] = {
+										{	-- Arcane Resonance
+											["achievementID"] = 6674,	-- Anything You Can Do, I Can Do Better...
+											["criteriaID"] = 5,	-- Arcane Resonance
+										},
+										{	-- Arcane Velocity
+											["achievementID"] = 6674,	-- Anything You Can Do, I Can Do Better...
+											["criteriaID"] = 4,	-- Arcane Velocity
+										},
+										{	-- Epicenter
+											["achievementID"] = 6674,	-- Anything You Can Do, I Can Do Better...
+											["criteriaID"] = 1,	-- Epicenter
+										},
+										{	-- Lightning Fists
+											["achievementID"] = 6674,	-- Anything You Can Do, I Can Do Better...
+											["criteriaID"] = 2,	-- Lightning Fists
+										},
+										{	-- Wildfire Spark
+											["achievementID"] = 6674,	-- Anything You Can Do, I Can Do Better...
+											["criteriaID"] = 3,	-- Wildfire Spark
+										},
+									},
+								},
 								i(89424),	-- Fan of Fiery Winds
 								i(85989),	-- Hood of Cursed Dreams
 								i(85984),	-- Nullification Greathelm
@@ -317,6 +345,9 @@ _.Instances =
 								i(89802),	-- Feng's Seal of Binding
 							})),
 							cr(60143, e(682, {	-- Gara'jal the Spiritbinder
+								{	-- Sorry, Were You Looking for This?
+									["achievementID"] = 7056,	-- Sorry, Were You Looking for This?
+								},
 								i(85994),	-- Gara'kal, Fist of the Spiritbinder
 								i(85996),	-- Eye of the Ancient Spirit
 								i(85991),	-- Soulgrasp Choker
@@ -334,6 +365,9 @@ _.Instances =
 							})),
 							cr(60701, e(687, {	-- The Spirit Kings
 								["groups"] = {
+									{	-- Getting Hot In Here
+										["achievementID"] = 6687,	-- Getting Hot In Here
+									},
 									i(86071),	-- Screaming Tiger, Qiang's Unbreakable Polearm
 									i(86075),	-- Steelskin, Qiang's Impervious Shield
 									i(86129),	-- Hood of Blind Eyes
@@ -356,7 +390,13 @@ _.Instances =
 									60710, -- Subetai the Swift <Bandit King>
 								},
 							})),
+							{	-- And... It's Good!
+								["achievementID"] = 7933,	-- And... It's Good!
+							},
 							cr(60410, e(726, {	-- Elegon
+								{	-- Straight Six
+									["achievementID"] = 6686,	-- Straight Six
+								},
 								i(87777),	-- Reins of the Astral Cloud Serpent (MOUNT!)
 								i(86140),	-- Starshatter
 								i(86130),	-- Elegion, the Fanged Crescent
@@ -375,6 +415,9 @@ _.Instances =
 							})),
 							cr(60400, e(677, {	-- Will of the Emperor
 								["groups"] = {
+									{	-- Show Me Your Moves!
+										["achievementID"] = 6455,	-- Show Me Your Moves!
+									},
 									i(138804),	-- Illusion: Colossus
 									i( 86148),	-- Tihan, Scepter of the Sleeping Emperor
 									i( 86142),	-- Fang Kung, Spark of Titans
@@ -458,6 +501,12 @@ _.Instances =
 							}),
 							cr(60047, e(679, {	-- The Stone Guard
 								["groups"] = {
+									{	-- Heroic: Stone Guard
+										["achievementID"] = 6719,	-- Heroic: Stone Guard
+									},
+									{	-- Must Love Dogs
+										["achievementID"] = 6823,	-- Must Love Dogs
+									},
 									i(87012),	-- Dagger of the Seven Stars
 									i(87020),	-- Sixteen-Fanged Crown
 									i(87016),	-- Beads of the Mogu'shi
@@ -481,6 +530,34 @@ _.Instances =
 								},
 							})),
 							cr(60009, e(689, {	-- Feng the Accursed
+								{	-- Heroic: Feng the Accursed
+									["achievementID"] = 6720,	-- Heroic: Feng the Accursed
+								},
+								{	-- Anything You Can Do, I Can Do Better...
+									["achievementID"] = 6674,	-- Anything You Can Do, I Can Do Better...
+									["groups"] = {
+										{	-- Arcane Resonance
+											["achievementID"] = 6674,	-- Anything You Can Do, I Can Do Better...
+											["criteriaID"] = 5,	-- Arcane Resonance
+										},
+										{	-- Arcane Velocity
+											["achievementID"] = 6674,	-- Anything You Can Do, I Can Do Better...
+											["criteriaID"] = 4,	-- Arcane Velocity
+										},
+										{	-- Epicenter
+											["achievementID"] = 6674,	-- Anything You Can Do, I Can Do Better...
+											["criteriaID"] = 1,	-- Epicenter
+										},
+										{	-- Lightning Fists
+											["achievementID"] = 6674,	-- Anything You Can Do, I Can Do Better...
+											["criteriaID"] = 2,	-- Lightning Fists
+										},
+										{	-- Wildfire Spark
+											["achievementID"] = 6674,	-- Anything You Can Do, I Can Do Better...
+											["criteriaID"] = 3,	-- Wildfire Spark
+										},
+									},
+								},
 								i(89425),	-- Fan of Fiery Winds
 								i(87029),	-- Hood of Cursed Dreams
 								i(87024),	-- Nullification Greathelm
@@ -497,6 +574,12 @@ _.Instances =
 								i(89932),	-- Feng's Seal of Binding
 							})),
 							cr(60143, e(682, {	-- Gara'jal the Spiritbinder
+								{	-- Heroic: Gara'jal the Spiritbinder
+									["achievementID"] = 6721,	-- Heroic: Gara'jal the Spiritbinder
+								},
+								{	-- Sorry, Were You Looking for This?
+									["achievementID"] = 7056,	-- Sorry, Were You Looking for This?
+								},
 								i(87032),	-- Gara'kal, Fist of the Spiritbinder
 								i(87039),	-- Eye of the Ancient Spirit
 								i(87036),	-- Soulgrasp Choker
@@ -513,6 +596,12 @@ _.Instances =
 							})),
 							cr(60701, e(687, {	-- The Spirit Kings
 								["groups"] = {
+									{	-- Heroic: Four Kings
+										["achievementID"] = 6722,	-- Heroic: Four Kings
+									},
+									{	-- Getting Hot In Here
+										["achievementID"] = 6687,	-- Getting Hot In Here
+									},
 									i(87046),	-- Screaming Tiger, Qiang's Unbreakable Polearm
 									i(87050),	-- Steelskin, Qiang's Impervious Shield
 									i(87051),	-- Hood of Blind Eyes
@@ -535,7 +624,16 @@ _.Instances =
 									60710, -- Subetai the Swift <Bandit King>
 								},
 							})),
+							{	-- And... It's Good!
+								["achievementID"] = 7933,	-- And... It's Good!
+							},
 							cr(60410, e(726, {	-- Elegon
+								{	-- Heroic: Elegon
+									["achievementID"] = 6723,	-- Heroic: Elegon
+								},
+								{	-- Straight Six
+									["achievementID"] = 6686,	-- Straight Six
+								},
 								i(87777),	-- Reins of the Astral Cloud Serpent (MOUNT!)
 								i(87061),	-- Starshatter
 								i(87062),	-- Elegion, the Fanged Crescent
@@ -554,6 +652,17 @@ _.Instances =
 							})),
 							cr(60400, e(677, {	-- Will of the Emperor
 								["groups"] = {
+									{	-- Heroic: Will of the Emperor
+										["achievementID"] = 6724,	-- Heroic: Will of the Emperor
+										["groups"] = {
+											{	-- ,Delver of the Vaults
+												["titleID"] =  204,	-- ,Delver of the Vaults
+											},
+										},
+									},
+									{	-- Show Me Your Moves!
+										["achievementID"] = 6455,	-- Show Me Your Moves!
+									},
 									i(138804),	-- Illusion: Colossus
 									i( 87074),	-- Tihan, Scepter of the Sleeping Emperor
 									i( 87069),	-- Fang Kung, Spark of Titans

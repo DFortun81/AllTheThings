@@ -8,35 +8,107 @@ _.Achievements =
 		["groups"] = {
 			n(-10009, { -- Pandaria Raid
 				["groups"] = {
-					ach(8090, {		-- A Complete Circuit
-						crit(1),		-- Static Shock Conduit Disabled First
-						crit(2),		-- Diffusion Chain Conduit Disabled First
-						crit(3),		-- Overcharge Conduit Disabled First
-						crit(4),		-- Bouncing Bolt Conduit Disabled First
-					}),
-					ach(7933),		-- And... It's Good!
-					ach(6674, {		-- Anything You Can Do, I Can Do Better...
-						crit(1),		-- Epicenter
-						crit(2),		-- Lightning Fists
-						crit(3),		-- Wildfire Spark
-						crit(4),		-- Arcane Velocity
-						crit(5),		-- Arcane Resonance
-					}),
-					ach(8073),		-- Cage Match
-					ach(8087, {		-- Can't Touch This
-						crit(1),		-- Burning Cinders
-						crit(2),		-- Frozen Blood
-						crit(3),		-- Storm Cloud
-						crit(4),		-- Frozen Solid!
-						crit(5),		-- Rushing Winds
-					}),
-					ach(6936),		-- Candle in the Wind
-					ach(8535, {		-- Celestial Challenge
-						crit(1),		-- Chi-Ji
-						crit(2),		-- Niuzao
-						crit(3),		-- Xuen
-						crit(4),		-- Yu'lon
-					}),
+					{	-- A Complete Circuit
+						["achievementID"] = 8090,	-- A Complete Circuit
+						["g"] = {
+							{	-- Bouncing Bolt Conduit Disabled First
+								["achievementID"] = 8090,	-- A Complete Circuit
+								["criteriaID"] = 4,	-- Bouncing Bolt Conduit Disabled First
+							},
+							{	-- Diffusion Chain Conduit Disabled First
+								["achievementID"] = 8090,	-- A Complete Circuit
+								["criteriaID"] = 2,	-- Diffusion Chain Conduit Disabled First
+							},
+							{	-- Overcharge Conduit Disabled First
+								["achievementID"] = 8090,	-- A Complete Circuit
+								["criteriaID"] = 3,	-- Overcharge Conduit Disabled First
+							},
+							{	-- Static Shock Conduit Disabled First
+								["achievementID"] = 8090,	-- A Complete Circuit
+								["criteriaID"] = 1,	-- Static Shock Conduit Disabled First
+							},
+						},
+					},
+					{	-- And... It's Good!
+						["achievementID"] = 7933,	-- And... It's Good!
+					},
+					{	-- Anything You Can Do, I Can Do Better...
+						["achievementID"] = 6674,	-- Anything You Can Do, I Can Do Better...
+						["groups"] = {
+							{	-- Arcane Resonance
+								["achievementID"] = 6674,	-- Anything You Can Do, I Can Do Better...
+								["criteriaID"] = 5,	-- Arcane Resonance
+							},
+							{	-- Arcane Velocity
+								["achievementID"] = 6674,	-- Anything You Can Do, I Can Do Better...
+								["criteriaID"] = 4,	-- Arcane Velocity
+							},
+							{	-- Epicenter
+								["achievementID"] = 6674,	-- Anything You Can Do, I Can Do Better...
+								["criteriaID"] = 1,	-- Epicenter
+							},
+							{	-- Lightning Fists
+								["achievementID"] = 6674,	-- Anything You Can Do, I Can Do Better...
+								["criteriaID"] = 2,	-- Lightning Fists
+							},
+							{	-- Wildfire Spark
+								["achievementID"] = 6674,	-- Anything You Can Do, I Can Do Better...
+								["criteriaID"] = 3,	-- Wildfire Spark
+							},
+						},
+					},
+					{	-- Cage Match
+						["achievementID"] = 8073,	-- Cage Match
+					},
+					{	-- Can't Touch This
+						["achievementID"] = 8087,	-- Can't Touch This
+						["g"] = {
+							{	-- Burning Cinders
+								["achievementID"] = 8087,	-- Can't Touch This
+								["criteriaID"] = 1,	-- Burning Cinders
+							},
+							{	-- Frozen Blood
+								["achievementID"] = 8087,	-- Can't Touch This
+								["criteriaID"] = 2,	-- Frozen Blood
+							},
+							{	-- Frozen Solid!
+								["achievementID"] = 8087,	-- Can't Touch This
+								["criteriaID"] = 4,	-- Frozen Solid!
+							},
+							{	-- Rushing Winds
+								["achievementID"] = 8087,	-- Can't Touch This
+								["criteriaID"] = 5,	-- Rushing Winds
+							},
+							{	-- Storm Cloud
+								["achievementID"] = 8087,	-- Can't Touch This
+								["criteriaID"] = 3,	-- Storm Cloud
+							},
+						},
+					},
+					{	-- Candle in the Wind
+						["achievementID"] = 6936,	-- Candle in the Wind
+					},
+					{	-- Celestial Challenge
+						["achievementID"] = 8535,	-- Celestial Challenge
+						["groups"] = {
+							{	-- Chi-Ji
+								["achievementID"] = 8535,	-- Celestial Challenge
+								["criteriaID"] = 1,	-- Chi-Ji
+							},
+							{	-- Niuzao
+								["achievementID"] = 8535,	-- Celestial Challenge
+								["criteriaID"] = 2,	-- Niuzao
+							},
+							{	-- Xuen
+								["achievementID"] = 8535,	-- Celestial Challenge
+								["criteriaID"] = 3,	-- Xuen
+							},
+							{	-- Yu'lon
+								["achievementID"] = 8535,	-- Celestial Challenge
+								["criteriaID"] = 4,	-- Yu'lon
+							},
+						},
+					},
 					{	-- Conqueror of Orgrimmar
 						["achievementID"] = 8679,	-- Conqueror of Orgrimmar
 						["races"] = ALLIANCE_ONLY,
@@ -47,7 +119,9 @@ _.Achievements =
 							},
 						},
 					},
-					ach(8038),		-- Cretaceous Collector
+					{	-- Cretaceous Collector
+						["achievementID"] = 8038,	-- Cretaceous Collector
+					},
 					{	-- Criss Cross
 						["achievementID"] = 8529,	-- Criss Cross
 					},
@@ -68,17 +142,35 @@ _.Achievements =
 							},
 						},
 					},
-					ach(6517),		-- Extinction Event
-					ach(6824),		-- Face Clutchers
+					{	-- Extinction Event
+						["achievementID"] = 6517,	-- Extinction Event
+					},
+					{	-- Face Clutchers
+						["achievementID"] = 6824,	-- Face Clutchers
+					},
 					{	-- Fire in the Hole!
 						["achievementID"] = 8520,	-- Fire in the Hole!
 					},
-					ach(8070, {		-- Forgotten Depths
-						crit(1),		-- Tortos
-						crit(2),		-- Megaera
-						crit(3),		-- Ji-Kun
-					}),
-					ach(8086),		-- From Dusk 'til Dawn
+					{	-- Forgotten Depths
+						["achievementID"] = 8070,	-- Forgotten Depths
+						["g"] = {
+							{	-- Forgotten Depths: Ji-Kun
+								["achievementID"] = 8070,	-- Forgotten Depths
+								["criteriaID"] = 3,	-- Ji-Kun
+							},
+							{	-- Forgotten Depths: Megaera
+								["achievementID"] = 8070,	-- Forgotten Depths
+								["criteriaID"] = 2,	-- Megaera
+							},
+							{	-- Forgotten Depths: Tortos
+								["achievementID"] = 8070,	-- Forgotten Depths
+								["criteriaID"] = 1,	-- Tortos
+							},
+						},
+					},
+					{	-- From Dusk 'til Dawn
+						["achievementID"] = 8086,	-- From Dusk 'til Dawn
+					},
 					{	-- Gamon Will Save Us!
 						["achievementID"] = 8448,	-- Gamon Will Save Us!
 					},
@@ -103,65 +195,174 @@ _.Achievements =
 							},
 						},
 					},
-					ach(8037),		-- Genetically Unmodified Organism
-					ach(6687),		-- Getting Hot In Here
+					{	-- Genetically Unmodified Organism
+						["achievementID"] = 8037,	-- Genetically Unmodified Organism
+					},
+					{	-- Getting Hot In Here
+						["achievementID"] = 6687,	-- Getting Hot In Here
+					},
 					{	-- Giant Dinosaur vs. Mega Snail
 						["achievementID"] = 8527,	-- Giant Dinosaur vs. Mega Snail
 					},
 					{	-- Go Long
 						["achievementID"] = 8528,	-- Go Long
 					},
-					ach(6458, {		-- Guardians of Mogu'shan
-						crit(1),		-- Stone Guard
-						crit(2),		-- Feng the Accursed
-						crit(3),		-- Gara'jal the Spiritbinder
-					}),
-					ach(8071, {		-- Halls of Flesh-Shaping
-						crit(1),		-- Durumu the Forgotten
-						crit(2),		-- Primordius
-						crit(3),		-- Dark Animus
-					}),
-					ach(8082, {		-- Head Case
-						crit(1),		-- Flaming
-						crit(2),		-- Frozen
-						crit(3),		-- Venomous
-					}),
-					ach(6729),		-- Heroic: Amber-Shaper Un'sok
-					ach(6726),		-- Heroic: Blade Lord Ta'yak
-					ach(8058),		-- Heroic: Council of Elders
-					ach(8064),		-- Heroic: Dark Animus
-					ach(8062),		-- Heroic: Durumu the Forgotten
-					ach(6723),		-- Heroic: Elegon
-					ach(6720),		-- Heroic: Feng the Accursed
-					ach(6722),		-- Heroic: Four Kings
-					ach(6721),		-- Heroic: Gara'jal the Spiritbinder
-					ach(6727),		-- Heroic: Garalon
-					ach(6730),		-- Heroic: Grand Empress Shek'zeer
-					ach(8057),		-- Heroic: Horridon
-					ach(6725),		-- Heroic: Imperial Vizier Zor'lok
-					ach(8065),		-- Heroic: Iron Qon
-					ach(8061),		-- Heroic: Ji-Kun
-					ach(8056),		-- Heroic: Jin'rokh the Breaker
-					ach(8067, {		-- Heroic: Lei Shen
-						title(222),		-- ,Storm's End
-					}),
-					ach(6733),		-- Heroic: Lei Shi
-					ach(8060),		-- Heroic: Megaera
-					ach(8063),		-- Heroic: Primordius
-					ach(6731),		-- Heroic: Protectors of the Endless
-					ach(8068),		-- Heroic: Ra-den
-					ach(6734, {		-- Heroic: Sha of Fear
-						title(198),		-- the Fearless
-					}),
-					ach(6719),		-- Heroic: Stone Guard
-					ach(8059),		-- Heroic: Tortos
-					ach(6732),		-- Heroic: Tsulong
-					ach(8066),		-- Heroic: Twin Consorts
-					ach(6724, {		-- Heroic: Will of the Emperor
-						title(204),		-- ,Delver of the Vaults
-					}),
-					ach(6728),		-- Heroic: Wind Lord Mel'jarak
-					ach(6518),		-- I Heard You Like Amber...
+					{	-- Guardians of Mogu'shan
+						["achievementID"] = 6458,	-- Guardians of Mogu'shan
+						["groups"] = {
+							{	-- Feng the Accursed
+								["achievementID"] = 6458,	-- Guardians of Mogu'shan
+								["criteriaID"] = 2,	-- Feng the Accursed
+							},
+							{	-- Gara'jal the Spiritbinder
+								["achievementID"] = 6458,	-- Guardians of Mogu'shan
+								["criteriaID"] = 3,	-- Gara'jal the Spiritbinder
+							},
+							{	-- Stone Guard
+								["achievementID"] = 6458,	-- Guardians of Mogu'shan
+								["criteriaID"] = 1,	-- Stone Guard
+							},
+						},
+					},
+					{	-- Halls of Flesh-Shaping
+						["achievementID"] = 8071,	-- Halls of Flesh-Shaping
+						["g"] = {
+							{
+								["achievementID"] = 8071,	-- Halls of Flesh-Shaping
+								["criteriaID"] = 3,	-- Dark Animus
+							},
+							{
+								["achievementID"] = 8071,	-- Halls of Flesh-Shaping
+								["criteriaID"] = 1,	-- Durumu the Forgotten
+							},
+							{
+								["achievementID"] = 8071,	-- Halls of Flesh-Shaping
+								["criteriaID"] = 2,	-- Primordius
+							},
+						},
+					},
+					{	-- Head Case
+						["achievementID"] = 8082,	-- Head Case
+						["groups"] = {
+							{	-- Flaming
+								["achievementID"] = 8082,	-- Head Case
+								["criteriaID"] = 1,	-- Flaming
+							},
+							{	-- Frozen
+								["achievementID"] = 8082,	-- Head Case
+								["criteriaID"] = 2,	-- Frozen
+							},
+							{	-- Venomous
+								["achievementID"] = 8082,	-- Head Case
+								["criteriaID"] = 3,	-- Venomous
+							},
+						},
+					},
+					{	-- Heroic: Amber-Shaper Un'sok
+						["achievementID"] = 6729,	-- Heroic: Amber-Shaper Un'sok
+					},
+					{	-- Heroic: Blade Lord Ta'yak
+						["achievementID"] = 6726,	-- Heroic: Blade Lord Ta'yak
+					},
+					{	-- Heroic: Council of Elders
+						["achievementID"] = 8058,	-- Heroic: Council of Elders
+					},
+					{	-- Heroic: Dark Animus
+						["achievementID"] = 8064,	-- Heroic: Dark Animus
+					},
+					{	-- Heroic: Durumu the Forgotten
+						["achievementID"] = 8062,	-- Heroic: Durumu the Forgotten
+					},
+					{	-- Heroic: Elegon
+						["achievementID"] = 6723,	-- Heroic: Elegon
+					},
+					{	-- Heroic: Feng the Accursed
+						["achievementID"] = 6720,	-- Heroic: Feng the Accursed
+					},
+					{	-- Heroic: Four Kings
+						["achievementID"] = 6722,	-- Heroic: Four Kings
+					},
+					{	-- Heroic: Gara'jal the Spiritbinder
+						["achievementID"] = 6721,	-- Heroic: Gara'jal the Spiritbinder
+					},
+					{	-- Heroic: Garalon
+						["achievementID"] = 6727,	-- Heroic: Garalon
+					},
+					{	-- Heroic: Grand Empress Shek'zeer
+						["achievementID"] = 6730,	-- Heroic: Grand Empress Shek'zeer
+					},
+					{	-- Heroic: Horridon
+						["achievementID"] = 8057,	-- Heroic: Horridon
+					},
+					{	-- Heroic: Imperial Vizier Zor'lok
+						["achievementID"] = 6725,	-- Heroic: Imperial Vizier Zor'lok
+					},
+					{	-- Heroic: Iron Qon
+						["achievementID"] = 8065,	-- Heroic: Iron Qon
+					},
+					{	-- Heroic: Ji-Kun
+						["achievementID"] = 8061,	-- Heroic: Ji-Kun
+					},
+					{	-- Heroic: Jin'rokh the Breaker
+						["achievementID"] = 8056,	-- Heroic: Jin'rokh the Breaker
+					},
+					{	-- Heroic: Lei Shen
+						["achievementID"] = 8067,	-- Heroic: Lei Shen
+						["g"] = {
+							{	-- ,Storm's End
+								["titleID"] = 222,	-- ,Storm's End
+							},
+						},
+					},
+					{	-- Heroic: Lei Shi
+						["achievementID"] = 6733,	-- Heroic: Lei Shi
+					},
+					{	-- Heroic: Megaera
+						["achievementID"] = 8060,	-- Heroic: Megaera
+					},
+					{	-- Heroic: Primordius
+						["achievementID"] = 8063,	-- Heroic: Primordius
+					},
+					{	-- Heroic: Protectors of the Endless
+						["achievementID"] = 6731,	-- Heroic: Protectors of the Endless
+					},
+					{	-- Heroic: Ra-den
+						["achievementID"] = 8068,	-- Heroic: Ra-den
+					},
+					{	-- Heroic: Sha of Fear
+						["achievementID"] = 6734,	-- Heroic: Sha of Fear
+						["groups"] = {
+							{	-- the Fearless
+								["titleID"] = 198,	-- the Fearless
+							},
+						},
+					},
+					{	-- Heroic: Stone Guard
+						["achievementID"] = 6719,	-- Heroic: Stone Guard
+					},
+					{	-- Heroic: Tortos
+						["achievementID"] = 8059,	-- Heroic: Tortos
+					},
+					{	-- Heroic: Tsulong
+						["achievementID"] = 6732,	-- Heroic: Tsulong
+					},
+					{	-- Heroic: Twin Consorts
+						["achievementID"] = 8066,	-- Heroic: Twin Consorts
+					},
+					{	-- Heroic: Will of the Emperor
+						["achievementID"] = 6724,	-- Heroic: Will of the Emperor
+						["groups"] = {
+							{	-- ,Delver of the Vaults
+								["titleID"] =  204,	-- ,Delver of the Vaults
+							},
+						},
+					},
+					{	-- Heroic: Wind Lord Mel'jarak
+						["achievementID"] = 6728,	-- Heroic: Wind Lord Mel'jarak
+					},
+					{	-- I Heard You Like Amber...
+						["achievementID"] = 6518,	-- I Heard You Like Amber...
+					},
 					{	-- Lasers and Magnets and Drills! Oh My!
 						["achievementID"] = 8543,	-- Lasers and Magnets and Drills! Oh My!
 						["g"] = {
@@ -183,12 +384,26 @@ _.Achievements =
 							},
 						},
 					},
-					ach(8069, {		-- Last Stand of the Zandalari
-						crit(1),		-- Jin'rokh the Breaker
-						crit(2),		-- Horridon
-						crit(3),		-- Council of Elders
-					}),
-					ach(6683),		-- Less Than Three
+					{	-- Last Stand of the Zandalari
+						["achievementID"] = 8069,	-- Last Stand of the Zandalari
+						["g"] = {
+							{	-- Last Stand of the Zandalari: Council of Elders
+								["achievementID"] = 8069,	-- Last Stand of the Zandalari
+								["criteriaID"] = 3,	-- Council of Elders
+							},
+							{	-- Last Stand of the Zandalari: Horridon
+								["achievementID"] = 8069,	-- Last Stand of the Zandalari
+								["criteriaID"] = 2,	-- Horridon
+							},
+							{	-- Last Stand of the Zandalari: Jin'rokh the Breaker
+								["achievementID"] = 8069,	-- Last Stand of the Zandalari
+								["criteriaID"] = 1,	-- Jin'rokh the Breaker
+							},
+						},
+					},
+					{	-- Less Than Three
+						["achievementID"] = 6683,	-- Less Than Three
+					},
 					{	-- Liberator of Orgrimmar
 						["achievementID"] = 8680,	-- Liberator of Orgrimmar
 						["races"] = HORDE_ONLY,
@@ -199,10 +414,18 @@ _.Achievements =
 							},
 						},
 					},
-					ach(8094),		-- Lightning Overload
-					ach(6553),		-- Like an Arrow to the Face
-					ach(8123),		-- Millions of Years of Evolution vs. My Fist
-					ach(6823),		-- Must Love Dogs
+					{	-- Lightning Overload
+						["achievementID"] = 8094,	-- Lightning Overload
+					},
+					{	-- Like an Arrow to the Face
+						["achievementID"] = 6553,	-- Like an Arrow to the Face
+					},
+					{	-- Millions of Years of Evolution vs. My Fist
+						["achievementID"] = 8123,	-- Millions of Years of Evolution vs. My Fist
+					},
+					{	-- Must Love Dogs
+						["achievementID"] = 6823,	-- Must Love Dogs
+					},
 					{	-- Mythic: Fallen Protectors
 						["achievementID"] = 8465,	-- Mythic: Fallen Protectors
 					},
@@ -250,11 +473,23 @@ _.Achievements =
 					{	-- Mythic: Thok the Bloodthirsty
 						["achievementID"] = 8479,	-- Mythic: Thok the Bloodthirsty
 					},
-					ach(6845, {		-- Nightmare of Shek'zeer
-						crit(1),		-- Wind Lord Mel'jarak
-						crit(2),		-- Amber-Shaper Un'sok
-						crit(3),		-- Grand Empress Shek'zeer 
-					}),
+					{	-- Nightmare of Shek'zeer
+						["achievementID"] = 6845,	-- Nightmare of Shek'zeer
+						["groups"] = {
+							{	-- Amber-Shaper Un'sok
+								["achievementID"] = 6845,	-- Nightmare of Shek'zeer
+								["criteriaID"] = 2,	-- Amber-Shaper Un'sok
+							},
+							{	-- Grand Empress Shek'zeer
+								["achievementID"] = 6845,	-- Nightmare of Shek'zeer
+								["criteriaID"] = 3,	-- Grand Empress Shek'zeer
+							},
+							{	-- Wind Lord Mel'jarak
+								["achievementID"] = 6845,	-- Nightmare of Shek'zeer
+								["criteriaID"] = 1,	-- Wind Lord Mel'jarak
+							},
+						},
+					},
 					{	-- No More Tears
 						["achievementID"] = 8536,	-- No More Tears
 					},
@@ -302,74 +537,218 @@ _.Achievements =
 							},
 						},
 					},
-					ach(8077),		-- One-Up
-					ach(6937),		-- Overzealous
-					ach(8072, {		-- Pinnacle of Storms
-						crit(1),		-- Iron Qon
-						crit(2),		-- Twin Consorts
-						crit(3),		-- Lei Shen
-					}),
-					ach(6717, {		-- Power Overwhelming
-						crit(1),		-- Protector Kaolan defeated last
-						crit(2),		-- Elder Regail defeated last
-						crit(3),		-- Elder Asani defeated last
-					}),
-					ach(8028),		-- Praise the Sun!
+					{	-- One-Up
+						["achievementID"] = 8077,	-- One-Up
+					},
+					{	-- Overzealous
+						["achievementID"] = 6937,	-- Overzealous
+					},
+					{	-- Pinnacle of Storms
+						["achievementID"] = 8072,	-- Pinnacle of Storms
+						["g"] = {
+							{	-- Pinnacle of Storms: Iron Qon
+								["achievementID"] = 8072,	-- Pinnacle of Storms
+								["criteriaID"] = 1,	-- Iron Qon
+							},
+							{	-- Pinnacle of Storms: Lei Shen
+								["achievementID"] = 8072,	-- Pinnacle of Storms
+								["criteriaID"] = 3,	-- Lei Shen
+							},
+							{	-- Pinnacle of Storms: Twin Consorts
+								["achievementID"] = 8072,	-- Pinnacle of Storms
+								["criteriaID"] = 2,	-- Twin Consorts
+							},
+						},
+					},
+					{	-- Power Overwhelming
+						["achievementID"] = 6717,	-- Power Overwhelming
+						["groups"] = {
+							{	-- Protector Kaolan defeated last
+								["achievementID"] = 6717,	-- Power Overwhelming
+								["criteriaID"] = 1,	-- Protector Kaolan defeated last
+							},
+							{	-- Elder Regail defeated last
+								["achievementID"] = 6717,	-- Power Overwhelming
+								["criteriaID"] = 2,	-- Elder Regail defeated last
+							},
+							{	-- Elder Asani defeated last
+								["achievementID"] = 6717,	-- Power Overwhelming
+								["criteriaID"] = 3,	-- Elder Asani defeated last
+							},
+						},
+					},
+					{	-- Praise the Sun!
+						["achievementID"] = 8028,	-- Praise the Sun!
+					},
 					{	-- Rescue Raiders
 						["achievementID"] = 8453,	-- Rescue Raiders
 					},
-					ach(8081, {		-- Ritualist Who?
-						crit(1),		-- Aridian
-						crit(2),		-- Auton
-						crit(3),		-- Bandril
-						crit(4),		-- Drahvin
-						crit(5),		-- Drashig
-						crit(6),		-- Fendahl
-						crit(7),		-- Gond
-						crit(8),		-- Jagaroth
-						crit(9),		-- Kroll
-						crit(10),		-- Kitling
-						crit(11),		-- Malus
-						crit(12),		-- Mandrel
-						crit(13),		-- Megara
-						crit(14),		-- Morok
-						crit(15),		-- Ogri
-						crit(16),		-- Ogron
-						crit(17),		-- Rill
-						crit(18),		-- Rutan
-						crit(19),		-- Sirian
-						crit(20),		-- Tetrap
-						crit(21),		-- Thal
-						crit(22),		-- Voord
-						crit(23),		-- Wirrn
-						crit(24),		-- Xeron
-					}),
-					ach(6480),		-- Settle Down, Bro
-					ach(6455),		-- Show Me Your Moves!
-					ach(8097),		-- Soft Hands
-					ach(7056),		-- Sorry, Were You Looking for This?
-					ach(6686),		-- Straight Six
+					{	-- Ritualist Who?
+						["achievementID"] = 8081,	-- Ritualist Who?
+						["groups"] = {
+							{	-- Aridian
+								["achievementID"] = 8081,	-- Ritualist Who?
+								["criteriaID"] = 1,	-- Aridian
+							},
+							{	-- Auton
+								["achievementID"] = 8081,	-- Ritualist Who?
+								["criteriaID"] = 2,	-- Auton
+							},
+							{	-- Bandril
+								["achievementID"] = 8081,	-- Ritualist Who?
+								["criteriaID"] = 3,	-- Bandril
+							},
+							{	-- Drahvin
+								["achievementID"] = 8081,	-- Ritualist Who?
+								["criteriaID"] = 4,	-- Drahvin
+							},
+							{	-- Drashig
+								["achievementID"] = 8081,	-- Ritualist Who?
+								["criteriaID"] = 5,	-- Drashig
+							},
+							{	-- Fendahl
+								["achievementID"] = 8081,	-- Ritualist Who?
+								["criteriaID"] = 6,	-- Fendahl
+							},
+							{	-- Gond
+								["achievementID"] = 8081,	-- Ritualist Who?
+								["criteriaID"] = 7,	-- Gond
+							},
+							{	-- Jagaroth
+								["achievementID"] = 8081,	-- Ritualist Who?
+								["criteriaID"] = 8,	-- Jagaroth
+							},
+							{	-- Kroll
+								["achievementID"] = 8081,	-- Ritualist Who?
+								["criteriaID"] = 9,	-- Kroll
+							},
+							{	-- Kitling
+								["achievementID"] = 8081,	-- Ritualist Who?
+								["criteriaID"] = 10,	-- Kitling
+							},
+							{	-- Malus
+								["achievementID"] = 8081,	-- Ritualist Who?
+								["criteriaID"] = 11,	-- Malus
+							},
+							{	-- Mandrel
+								["achievementID"] = 8081,	-- Ritualist Who?
+								["criteriaID"] = 12,	-- Mandrel
+							},
+							{	-- Megara
+								["achievementID"] = 8081,	-- Ritualist Who?
+								["criteriaID"] = 13,	-- Megara
+							},
+							{	-- Morok
+								["achievementID"] = 8081,	-- Ritualist Who?
+								["criteriaID"] = 14,	-- Morok
+							},
+							{	-- Ogri
+								["achievementID"] = 8081,	-- Ritualist Who?
+								["criteriaID"] = 15,	-- Ogri
+							},
+							{	-- Ogron
+								["achievementID"] = 8081,	-- Ritualist Who?
+								["criteriaID"] = 16,	-- Ogron
+							},
+							{	-- Rill
+								["achievementID"] = 8081,	-- Ritualist Who?
+								["criteriaID"] = 17,	-- Rill
+							},
+							{	-- Rutan
+								["achievementID"] = 8081,	-- Ritualist Who?
+								["criteriaID"] = 18,	-- Rutan
+							},
+							{	-- Sirian
+								["achievementID"] = 8081,	-- Ritualist Who?
+								["criteriaID"] = 19,	-- Sirian
+							},
+							{	-- Tetrap
+								["achievementID"] = 8081,	-- Ritualist Who?
+								["criteriaID"] = 20,	-- Tetrap
+							},
+							{	-- Thal
+								["achievementID"] = 8081,	-- Ritualist Who?
+								["criteriaID"] = 21,	-- Thal
+							},
+							{	-- Voord
+								["achievementID"] = 8081,	-- Ritualist Who?
+								["criteriaID"] = 22,	-- Voord
+							},
+							{	-- Wirrn
+								["achievementID"] = 8081,	-- Ritualist Who?
+								["criteriaID"] = 23,	-- Wirrn
+							},
+							{	-- Xeron
+								["achievementID"] = 8081,	-- Ritualist Who?
+								["criteriaID"] = 24,	-- Xeron
+							},
+						},
+					},
+					{	-- Settle Down, Bro
+						["achievementID"] = 6480,	-- Settle Down, Bro
+					},
+					{	-- Show Me Your Moves!
+						["achievementID"] = 6455,	-- Show Me Your Moves!
+					},
+					{	-- Soft Hands
+						["achievementID"] = 8097,	-- Soft Hands
+					},
+					{	-- Sorry, Were You Looking for This?
+						["achievementID"] = 7056,	-- Sorry, Were You Looking for This?
+					},
+					{	-- Straight Six
+						["achievementID"] = 6686,	-- Straight Six
+					},
 					{	-- Strike!	
 						["achievementID"] = 8537,	-- Strike!
 					},
 					{	-- Swallow Your Pride
 						["achievementID"] = 8521,	-- Swallow Your Pride
 					},
-					ach(6689, {		-- Terrace of Endless Spring
-						crit(1),		-- Protectors of the Endless
-						crit(2),		-- Tsulong
-						crit(3),		-- Lei Shi
-						crit(4),		-- Sha of Fear
-					}),
-					ach(6718, {		-- The Dread Approach
-						crit(1),		-- Imperial Vizier Zor'lok
-						crit(2),		-- Blade Lord Ta'yak
-						crit(3),		-- Garalon
-					}),
+					{	-- Terrace of Endless Spring
+						["achievementID"] = 6689,	-- Terrace of Endless Spring
+						["groups"] = {
+							{	-- Protectors of the Endless
+								["achievementID"] = 6689,	-- Terrace of Endless Spring
+								["criteriaID"] = 1,	-- Protectors of the Endless
+							},
+							{	-- Tsulong
+								["achievementID"] = 6689,	-- Terrace of Endless Spring
+								["criteriaID"] = 2,	-- Tsulong
+							},
+							{	-- Lei Shi
+								["achievementID"] = 6689,	-- Terrace of Endless Spring
+								["criteriaID"] = 3,	-- Lei Shi
+							},
+							{	-- Sha of Fear
+								["achievementID"] = 6689,	-- Terrace of Endless Spring
+								["criteriaID"] = 4,	-- Sha of Fear
+							},
+						},
+					},
+					{	-- The Dread Approach
+						["achievementID"] = 6718,	-- The Dread Approach
+						["groups"] = {
+							{	-- Blade Lord Ta'yak
+								["achievementID"] = 6718,	-- The Dread Approach
+								["criteriaID"] = 2,	-- Blade Lord Ta'yak
+							},
+							{	-- Garalon
+								["achievementID"] = 6718,	-- The Dread Approach
+								["criteriaID"] = 3,	-- Garalon
+							},
+							{	-- Imperial Vizier Zor'lok
+								["achievementID"] = 6718,	-- The Dread Approach
+								["criteriaID"] = 1,	-- Imperial Vizier Zor'lok
+							},
+						},
+					},
 					{	-- The Immortal Vanguard
 						["achievementID"] = 8530,	-- The Immortal Vanguard
 					},
-					ach(6825),		-- The Mind-Killer
+					{	-- The Mind-Killer
+						["achievementID"] = 6825,	-- The Mind-Killer
+					},
 					{	-- The Underhold
 						["achievementID"] = 8461,	-- The Underhold
 						["g"] = {
@@ -387,15 +766,37 @@ _.Achievements =
 							},
 						},
 					},
-					ach(6844, {		-- The Vault of Mysteries
-						crit(1),		-- Four Kings
-						crit(2),		-- Elegon
-						crit(3),		-- Will of the Emperor
-					}),
-					ach(6922, {		-- Timing is Everything
-						crit(1),		-- Defeat 2 Kor'thik Reavers within 10 seconds of each other
-						crit(2),		-- Defeat Grand Empress Shek'zeer
-					}),
+					{	-- The Vault of Mysteries
+						["achievementID"] = 6844,	-- The Vault of Mysteries
+						["groups"] = {
+							{
+								-- Four Kings
+								["achievementID"] = 6844,	-- The Vault of Mysteries
+								["criteriaID"] = 1,	-- Four Kings
+							},
+							{	-- Elegon
+								["achievementID"] = 6844,	-- The Vault of Mysteries
+								["criteriaID"] = 2,	-- Elegon
+							},
+							{	-- Will of the Emperor
+								["achievementID"] = 6844,	-- The Vault of Mysteries
+								["criteriaID"] = 3,	-- Will of the Emperor
+							},
+						},
+					},
+					{	-- Timing is Everything
+						["achievementID"] = 6922,	-- Timing is Everything
+						["groups"] = {
+							{	-- Defeat 2 Kor'thik Reavers within 10 seconds of each other
+								["achievementID"] = 6922,	-- Timing is Everything
+								["criteriaID"] = 1,	-- Defeat 2 Kor'thik Reavers within 10 seconds of each other
+							},
+							{	-- Defeat Grand Empress Shek'zeer
+								["achievementID"] = 6922,	-- Timing is Everything
+								["criteriaID"] = 2,	-- Defeat Grand Empress Shek'zeer
+							},
+						},
+					},
 					{	-- Unlimited Potential
 						["achievementID"] = 8538,	-- Unlimited Potential
 					},
@@ -420,8 +821,12 @@ _.Achievements =
 							},
 						},
 					},
-					ach(6933),		-- Who's Got Two Green Thumbs?
-					ach(8098),		-- You Said Crossing the Streams Was Bad
+					{	-- Who's Got Two Green Thumbs?
+						["achievementID"] = 6933,	-- Who's Got Two Green Thumbs?
+					},
+					{	-- You Said Crossing the Streams Was Bad
+						["achievementID"] = 8098,	-- You Said Crossing the Streams Was Bad
+					},
 				},
 			}),
 		},

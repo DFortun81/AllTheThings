@@ -571,6 +571,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				["maps"] = { 379 },		-- Kun-Lai Summit
 				["lvl"] = 85,			-- Confirmed by Lucetia November 5, 2018
 				["groups"] = {
+					{	-- Settle Down, Bro
+						["achievementID"] = 6480,	-- Settle Down, Bro
+					},
 					{
 						["achievementID"] = 6926,	-- Tranquil Master
 						["criteriaID"] = 5, 	-- 	Sha of Anger slain
