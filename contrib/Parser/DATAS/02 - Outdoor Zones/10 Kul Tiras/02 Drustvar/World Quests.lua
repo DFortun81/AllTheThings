@@ -340,10 +340,7 @@ _.Zones =
 						i(158095),	-- Gnarlwood Hammer
 						i(158102),	-- Gnarlwood Staff
 						i(158087),	-- Gol Osigr Handblade
-						{
-							["itemID"] = 158101,	-- Gol Osigr Pillar
-							["u"] = 1,
-						},
+						i(158101),	-- Gol Osigr Pillar
 						i(159804),	-- Ironcrest Bulwark
 						i(158106),	-- Ironcrest Greatblade
 						i(158090),	-- Ironcrest Longrifle
