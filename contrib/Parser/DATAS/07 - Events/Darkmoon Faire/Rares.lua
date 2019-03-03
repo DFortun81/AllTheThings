@@ -21,7 +21,7 @@ _.WorldEvents =
 							},
 							{	--  Darkmoon Rabbit
 								["itemID"] = 80008,	-- Darkmoon Rabbit
-								["description"] = "Drops one per kill",
+								["description"] = "Only one pet drops per kill.",
 							},
 						},
 					},
@@ -34,7 +34,7 @@ _.WorldEvents =
 							{ 65.54, 68.29, 407 },	-- Cave Entrance [Allows it to be shown on meta DMF map]
 							{ 41.43, 42.19, 408 },	-- Fight becomes active
 						},
-						["description"] = "|cff66ccffDeath Metal Knight can be killed every hour on the half-hour, however, he will not drop his rare loot more than once per month per character.|r",
+						["description"] = "|cff66ccffDeath Metal Knight can be killed every hour on the half-hour, but he will only drop his rare loot once per month per character.|r",
 						["g"] = {
 							{	-- Hey, You're a Rockstar!
 								["achievementID"] = 11918,	-- Hey, You're a Rockstar!
@@ -43,10 +43,29 @@ _.WorldEvents =
 								["achievementID"] = 11921,	-- Mosh Pit
 							},
 							{	-- Perfect Performance
+								["description"] = "Four people fighting the Death Metal Knight will need to successfully perform the roles from Taking this Show on the Road.  This achievement technically does not require a group, but it would be easier to coordinate roles with one!",
 								["achievementID"] = 11920,	-- Perfect Performance
 							},
-							{	-- Taking this Show on the Road [Expand upon]
+							{	-- Taking this Show on the Road
 								["achievementID"] = 11919,	-- Taking this Show on the Road
+								["g"] = {
+									{	-- Guitarist
+										["criteriaID"] = 1,	-- Guitarist
+										["description"] = "Get hit by one banshee wave; miss one bolt of light.",
+									},
+									{	-- Bassist
+										["criteriaID"] = 2,	-- Bassist
+										["description"] = "Do not get hit by any banshee waves; miss one bolt of light.",
+									},
+									{	-- Drummer
+										["criteriaID"] = 3,	-- Drummer
+										["description"] = "Do not get hit by any banshee waves; catch every bolt of light.",
+									},
+									{	-- Vocals
+										["criteriaID"] = 4,	-- Vocals
+										["description"] = "Get hit by one banshee wave; catch every bolt of light.",
+									},
+								},
 							},
 							{	-- Blight Boar Microphone
 								["itemID"] = 151265,	-- Blight Boar Microphone
