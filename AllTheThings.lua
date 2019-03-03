@@ -821,7 +821,6 @@ local function GetProgressColorText(progress, total)
 		local percent = progress / total;
 		return "|c" .. GetProgressColor(percent) .. tostring(progress) .. " / " .. tostring(total) .. " (" .. GetNumberWithZeros(percent * 100, app.Settings:GetTooltipSetting("Precision")) .. "%) |r";
 	end
-	return "---";
 end
 local function GetCollectionIcon(state)
 	return L[(state and (state == 2 and "COLLECTED_APPEARANCE_ICON" or "COLLECTED_ICON")) or "NOT_COLLECTED_ICON"];
@@ -845,7 +844,6 @@ local function GetProgressTextForRow(data)
 	elseif data.g and not data.expanded and #data.g > 0 then
 		return "+++";
 	end
-	return "---";
 end
 local function GetProgressTextForTooltip(data)
 	if data.total and (data.total > 1 or (data.total > 0 and not data.collectible)) then
@@ -854,8 +852,6 @@ local function GetProgressTextForTooltip(data)
 		return GetCollectionText(data.collected);
 	elseif data.trackable then
 		return GetCompletionText(data.saved);
-	else
-		return "---";
 	end
 end
 CS:Hide();
@@ -6707,7 +6703,7 @@ local function SetRowData(self, row, data)
 			relative = "RIGHT";
 			x = 4;
 		end
-		local summary = GetProgressTextForRow(data);
+		local summary = GetProgressTextForRow(data) or "---";
 		local specs = data.specs;
 		if specs and #specs > 0 then
 			table.sort(specs);
@@ -7115,13 +7111,13 @@ local function RowOnEnter(self)
 		-- Miscellaneous fields
 		if app.Settings:GetTooltipSetting("Progress") then
 			local right = (app.Settings:GetTooltipSetting("ShowIconOnly") and GetProgressTextForRow or GetProgressTextForTooltip)(reference);
-			if GameTooltip:NumLines() < 1 then
-				GameTooltip:AddDoubleLine(self.Label:GetText(), right);
-			else
-				if right ~= "---" or string.len(GameTooltipTextRight1:GetText() or "") < 1 then
+			if right and right ~= "" and right ~= "---" then
+				if GameTooltip:NumLines() < 1 then
+					GameTooltip:AddDoubleLine(self.Label:GetText(), right);
+				elseif string.len(GameTooltipTextRight1:GetText() or "") < 1 then
 					GameTooltipTextRight1:SetText(right);
+					GameTooltipTextRight1:Show();
 				end
-				GameTooltipTextRight1:Show();
 			end
 			if reference.trackable and reference.total and reference.total >= 2 then
 				GameTooltip:AddDoubleLine("Tracking Progress", GetCompletionText(reference.saved));
