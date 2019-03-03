@@ -108,6 +108,7 @@ local FilterSettingsBase = {
 local TooltipSettingsBase = {
 	__index = {
 		["Auto:MiniList"] = true,
+		["Auto:ProfessionList"] = true,
 		["Celebrate"] = true,
 		["ClassRequirements"] = true,
 		["Descriptions"] = true,
