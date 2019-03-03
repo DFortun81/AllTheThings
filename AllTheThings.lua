@@ -8341,7 +8341,7 @@ function app:GetDataCache()
 		]]--
 		
 		-- Uncomment this section if you need to Harvest Source IDs:
-		--[[
+		--[[--
 		local harvestData = {};
 		harvestData.visible = true;
 		harvestData.expanded = true;
@@ -8355,10 +8355,10 @@ function app:GetDataCache()
 		local mID = 1;
 		local modIDs = {};
 		local bonusIDs = {};
-		app.MaximumItemInfoRetries = 100;
+		app.MaximumItemInfoRetries = 40;
 		for itemID,groups in pairs(fieldCache["itemID"]) do
 			for i,group in ipairs(groups) do
-				if (not group.s or group.s == 0) and (not group.f or group.filterID == 109 or group.f < 50) then
+				if (not group.s or group.s == 0) then	--  and (not group.f or group.filterID == 109 or group.f < 50)
 					if group.bonusID and not bonusIDs[group.bonusID] then
 						bonusIDs[group.bonusID] = true;
 						tinsert(harvestData.g, setmetatable({visible = true, back = 0.5, indent = 1, s = 0, itemID = tonumber(itemID), bonusID = group.bonusID}, app.BaseItem));
@@ -8409,7 +8409,7 @@ function app:GetDataCache()
 			end
 			UpdateVisibleRowData(self);
 		end
-		--]]
+		--]]--
 	end
 	return allData;
 end
