@@ -114,6 +114,7 @@ local TooltipSettingsBase = {
 		["DisplayInCombat"] = true,
 		["Enabled"] = true,
 		["Expand:Difficulty"] = true,
+		["IncludeOriginalSource"] = true,
 		["LootSpecializations"] = true,
 		["MinimapButton"] = true,
 		["MinimapSize"] = 36,
