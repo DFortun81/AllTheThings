@@ -366,7 +366,9 @@ _.Instances =
 					227, 
 					228, 
 					229, 
+					840,	-- Pet Dungeon
 					841,	-- Pet Dungeon
+					842,	-- Pet Dungeon
 				},
 			}),
 		},
