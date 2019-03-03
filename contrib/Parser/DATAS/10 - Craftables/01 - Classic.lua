@@ -158,6 +158,9 @@ _.Craftables =
 				{	-- Hammer of the Titans
 					["itemID"] = 12796,	-- Hammer of the Titans
 				},
+				{	-- Heavy Copper Maul
+					["itemID"] = 6214,	-- Heavy Copper Maul
+				},
 				{	-- Inlaid Thorium Hammer
 					["itemID"] = 12772,	-- Inlaid Thorium Hammer
 					["u"] = 1,
@@ -225,9 +228,6 @@ _.Craftables =
 				},
 				{	-- Heavy Copper Broadsword
 					["itemID"] = 3487,	-- Heavy Copper Broadsword
-				},
-				{	-- Heavy Copper Maul
-					["itemID"] = 6214,	-- Heavy Copper Maul
 				},
 				{	-- Moonsteel Broadsword
 					["itemID"] = 3853,	-- Moonsteel Broadsword
