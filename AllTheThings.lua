@@ -5434,7 +5434,7 @@ function app.FilterItemBind(item)
 	return item.b == 2 or item.b == 3; -- BoE
 end
 function app.FilterItemClass(item)
-	if app.UnobtainableItemFilter(item.u) then
+	if app.UnobtainableItemFilter(item) and app.SeasonalItemFilter(item) then
 		if app.ItemBindFilter(item) then return true; end
 		return app.ItemTypeFilter(item)
 			and app.RequireBindingFilter(item)
@@ -5475,9 +5475,16 @@ end
 function app.FilterItemClass_RequireRaces(item)
 	return not item.nmr;
 end
-function app.FilterItemClass_UnobtainableItem(u)
-	if u then
-	   return GetDataSubMember("UnobtainableItemFilters", u);
+function app.FilterItemClass_SeasonalItem(item)
+   if item.u and L["UNOBTAINABLE_ITEM_REASONS"][item.u][1] > 4 then
+      return GetDataSubMember("SeasonalFilters", item.u);
+   else
+      return true
+   end
+end
+function app.FilterItemClass_UnobtainableItem(item)
+	if item.u and L["UNOBTAINABLE_ITEM_REASONS"][item.u][1] < 5 then
+	   return GetDataSubMember("UnobtainableItemFilters", item.u);
 	else
 		return true;
 	end
@@ -5677,6 +5684,7 @@ app.CollectedItemVisibilityFilter = app.NoFilter;
 app.ClassRequirementFilter = app.NoFilter;
 app.RaceRequirementFilter = app.NoFilter;
 app.RequireBindingFilter = app.NoFilter;
+app.SeasonalItemFilter = app.NoFilter;
 app.UnobtainableItemFilter = app.NoFilter;
 app.RequiredSkillFilter = app.NoFilter;
 app.ShowIncompleteThings = app.Filter;
@@ -5690,7 +5698,7 @@ app.RecursiveClassAndRaceFilter = function(group)
 	return false;
 end
 app.RecursiveUnobtainableFilter = function(group)
-	if app.UnobtainableItemFilter(group.u) then
+	if app.UnobtainableItemFilter(group) then
 		if group.parent then return app.RecursiveUnobtainableFilter(group.parent); end
 		return true;
 	end

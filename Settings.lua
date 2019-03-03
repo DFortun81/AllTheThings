@@ -394,6 +394,7 @@ settings.UpdateMode = function(self)
 	end
 	if self:Get("DebugMode") then
 		app.GroupFilter = app.NoFilter;
+		app.SeasonalItemFilter = app.NoFilter;
 		app.UnobtainableItemFilter = app.NoFilter;
 		app.VisibilityFilter = app.NoFilter;
 		
@@ -429,7 +430,16 @@ settings.UpdateMode = function(self)
 	else
 		app.VisibilityFilter = app.ObjectVisibilityFilter;
 		app.GroupFilter = app.FilterItemClass;
-		app.UnobtainableItemFilter = app.FilterItemClass_UnobtainableItem;
+		if app.GetDataMember("FilterSeasonal") then
+			app.SeasonalItemFilter = app.FilterItemClass_SeasonalItem;
+		else
+			app.SeasonalItemFilter = app.NoFilter;
+		end
+		if app.GetDataMember("FilterUnobtainableItems") then
+			app.UnobtainableItemFilter = app.FilterItemClass_UnobtainableItem;
+		else
+			app.UnobtainableItemFilter = app.NoFilter;
+		end
 		
 		app.AccountWideAchievements = self:Get("AccountWide:Achievements");
 		app.AccountWideBattlePets = self:Get("AccountWide:BattlePets");
@@ -1675,9 +1685,9 @@ end,
 function(self)
 	app.SetDataMember("FilterSeasonal", self:GetChecked());
 	if self:GetChecked() then
-		app.SeasonalFilter = app.FilterItemClass_SeasonalItem;
+		app.SeasonalItemFilter = app.FilterItemClass_SeasonalItem;
 	else
-		app.SeasonalFilter = app.NoFilter;
+		app.SeasonalItemFilter = app.NoFilter;
 	end
 	settings:Refresh();
 	app:RefreshData();
