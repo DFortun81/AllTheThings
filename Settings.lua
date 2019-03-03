@@ -1623,6 +1623,13 @@ end)();
 ------------------------------------------
 (function()
 local tab = settings:CreateTab("Unobtainables");
+tab.OnRefresh = function(self) 
+	if settings:Get("DebugMode") then
+		PanelTemplates_DisableTab(settings, self:GetID());
+	else
+		PanelTemplates_EnableTab(settings, self:GetID());
+	end
+end;
 local function OnScrollBarMouseWheel(self, delta)
 	self.ScrollBar:SetValue(self.ScrollBar.CurrentValue - (delta * 5));
 end
