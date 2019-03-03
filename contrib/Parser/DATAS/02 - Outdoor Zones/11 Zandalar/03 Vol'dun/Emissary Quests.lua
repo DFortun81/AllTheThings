@@ -29,6 +29,7 @@ _.Zones =
 										},
 										{	-- Words of Akunda
 											["itemID"] = 165021,	-- Words of Akunda
+											["u"] = 1,
 										},
 									},
 								},
