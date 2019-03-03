@@ -81,7 +81,7 @@ _.ExpansionFeatures =
 							},
 							["races"] = ALLIANCE_ONLY,
 							["g"] = {
-								i(164578, {	-- Warfronts Equipment Cache
+								un(2, i(164578, {	-- Warfronts Equipment Cache
 									["groups"] = bubbleDown({["modID"] = 5}, {
 										i(163891),	-- 7th Legionnaire's Aegis
 										i(163884),	-- 7th Legionnaire's Battle Hammer
@@ -136,7 +136,7 @@ _.ExpansionFeatures =
 										i(163409),	-- 7th Legionnaire's Legguards
 										i(163421),	-- 7th Legionnaire's Greaves
 									}),
-								}),
+								})),
 							},
 						},
 						{	-- Executing Exorcisms [A]
@@ -226,7 +226,7 @@ _.ExpansionFeatures =
 							currency(1560),
 						})),
 						qr( qh(53154, {	-- The League Will Lose [H]
-							i(164577, {	-- Warfronts Equipment Cache
+							un(2, i(164577, {	-- Warfronts Equipment Cache
 								["groups"] = bubbleDown({["modID"] = 5}, {
 									i(163878),	-- Honorbound Barrier
 									i(163870),	-- Honorbound Bonebreaker
@@ -280,7 +280,7 @@ _.ExpansionFeatures =
 									i(163445),	-- Honorbound Vanguard's Leggings
 									i(163460),	-- Honorbound Centurion's Greaves
 								}),
-							}),
+							})),
 						})),
 						{	-- Wiping Out the Winterbark [A]
 							["questID"] = 53149, 	-- Wiping Out the Winterbark
