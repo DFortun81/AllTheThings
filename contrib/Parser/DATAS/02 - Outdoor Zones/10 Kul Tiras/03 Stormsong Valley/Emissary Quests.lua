@@ -26,6 +26,7 @@ _.Zones =
 										},
 										{	-- Kojo's Master Matching Set
 											["itemID"] = 166851,	-- Kojo's Master Matching Set
+											["u"] = 1,
 										},
 										{	-- Recipe: Boralus Blood Sausage [Rank 3]
 											["itemID"] = 166807,	-- Recipe: Boralus Blood Sausage [Rank 3]

@@ -26,6 +26,7 @@ _.Toys =
 			},
 			{	-- Kojo's Master Matching Set
 				["itemID"] = 166851,	-- Kojo's Master Matching Set
+				["u"] = 1,
 			},
 			{	-- Meerah's Jukebox
 				["itemID"] = 166880,	-- Meerah's Jukebox
