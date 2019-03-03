@@ -1521,140 +1521,124 @@ _.Zones =
 --]]					
 					ach(10763, { -- Azsuna Matata
 						crit(1, { -- Behind Legion Lines [Verified & Fully Finished - 7/26/18; Lucetia]
-							["groups"] = {
-								q(38834, { -- Into the Fray (Non-DH version)
-									["classes"] = {
-										1,  -- Warrior
-										2,  -- Paladin
-										3,  -- Hunter
-										4,  -- Rogue
-										5,  -- Priest
-										6,  -- Death Knight
-										7,  -- Shaman
-										8,  -- Mage
-										9,  -- Lock
-										10, -- Monk
-										11, -- Druid
-									},
-									["sourceQuests"] = { 41220 }, -- Down to Azsuna
-								}),
-								q(44137, { -- Into the Fray (DH version)
-									["classes"] = { 12 }, -- Demon Hunter
-									["sourceQuests"] = { 41220 }, -- Down to Azsuna
-								}),
-								q(37658, { -- Reignite the Wards
-									["groups"] = {
-										i(141623), -- Demon Warding Halo
-										i(141622), -- Guise of the Demon Warder
-										i(141621), -- Demon Warder Helm
-										i(141620), -- Soul-Stealer's Helm
-										i(141628), -- Soul-Stealer's Leggings
-										i(141627), -- Leggings of the Soul-Trapper
-										i(141626), -- Soul-Stealer's Chain Pants
-										i(141625), -- Soul-Trapper's Greaves
-									},
-									["qg"] = 90317, -- Jace Darkweaver
-									["sourceQuests"] = {
-										38834, -- Into the Fray (Non-DH version)
-										44137, -- Into the Fray (DH version)
-									},
-								}),
-								q(37653, { -- Demon Souls
-									["qg"] = 89398, -- Allari the Souleater
-									["sourceQuests"] = {
-										38834, -- Into the Fray (Non-DH version)
-										44137, -- Into the Fray (DH version)
-									},
-								}),
-								q(37660, { -- The Scythe of Souls
-									["groups"] = {
-										i(132951), -- Leywalker Shoes
-										i(132949), -- Ruin-Stalker Footpads
-										i(132948), -- Seaspray Chain Boots
-										i(132947), -- Nar'thalas Sabatons
-									},
-									["qg"] = 89398, -- Allari the Souleateer
-									["sourceQuests"] = {
-										37653, -- Reignite the Wards
-										37653, -- Demon Souls
-									},
-								}),
-								q(36920, { -- From Within (Non-DH version)
-									["qg"] = 89362, -- Kayn Sunfury
-									["classes"] = {
-										1,  -- Warrior
-										2,  -- Paladin
-										3,  -- Hunter
-										4,  -- Rogue
-										5,  -- Priest
-										6,  -- Death Knight
-										7,  -- Shaman
-										8,  -- Mage
-										9,  -- Lock
-										10, -- Monk
-										11, -- Druid
-									},
-									["sourceQuests"] = { 37660 }, -- The Scythe of Souls
-								}),
-								q(40815, { -- From Within (DH version, must choose Altruis)
-									["qg"] = 101927, -- Altruis the Sufferer
-									["classes"] = { 12 }, -- Demon Hunter
-									["sourceQuests"] = { 37660 }, -- The Scythe of Souls
-									["description"] = "This quest is available if you chose to follow Altruis the Sufferer during the Demon Hunter introduction quests."
-								}),
-								q(44140, { -- From Within (DH version, must choose Kayn)
-									["qg"] = 89362, -- Kayn Sunfury
-									["classes"] = { 12 }, -- Demon Hunter
-									["sourceQuests"] = { 37660 }, -- The Scythe of Souls
-									["description"] = "This quest is available if you chose to follow Kayn Sunfury during the Demon Hunter introduction quests."
-								}),
-								q(37450, { -- Saving Stellagosa
-									["groups"] = {
-										i(132961), -- Cape of Azure Fury
-										i(132964), -- Stellagosa's Breath
-									},
-									["qg"] = 90474, -- Kor'vas Bloodthorn
-									["sourceQuests"] = {
-										36920, -- From Within (Non-DH Version)
-										40815, -- From Within (DH - Altruis)
-										44140, -- From Within (DH - Kayn)
-									},
-								}),
-								q(37656, { -- Fel Machinations
-									["qg"] = 90474, -- Kor'vas Bloodthorn
-									["sourceQuests"] = {
-										36920, -- From Within (Non-DH Version)
-										40815, -- From Within (DH - Altruis)
-										44140, -- From Within (DH - Kayn)
-									},
-								}),
-								q(37449, { -- Dark Revelations
-									["groups"] = {
-										i(132984), -- Abandoned Highborne Mana Crystal
-										i(132985), -- Blood of the Vanquished Highborne
-										i(133002), -- Coalesced Shadows
-										i(132996), -- Cursed Felstalker Flesh
-										i(132987), -- Everburning Ruin Ember
-										i(132995), -- Faronaar Arcane Power-Core
-										i(132990), -- Fel-Resistant Clipping
-										i(132989), -- Legion Iron Nugget
-										i(132991), -- Mortiferous' Corruption
-										i(132993), -- Nethrandamus' Zephyr
-										i(132999), -- Preserved Highborne Warrior's Fist
-										i(133001), -- Soul Fragment of Faronaar Innocent
-										i(133000), -- Stalwart Faronaar Keystone
-										i(133004), -- Swirling Demonic Whispers
-										i(132988), -- The Dreadlord's Chill Eye
-										i(132998), -- The Sufferer's Fury
-									},
-									["qg"] = 90474, -- Kor'vas Bloodthorn
-									["sourceQuests"] = {
-										37450, -- Saving Stellagosa
-										37656, -- Fel Machinations
-									},
-								}),
-							},
-							["sourceQuests"] = { 37449 }, -- Dark Revelations
+							q(38834, { -- Into the Fray (Non-DH version)
+								["qg"] = 93337,	-- Archmage Khadgar
+								["coord"] = { 45.1, 42.9, 630 },
+								["classes"] = exclude(12, ALL_CLASSES),
+								["sourceQuest"] = 41220, -- Down to Azsuna
+							}),
+							q(44137, { -- Into the Fray (DH version)
+								["qg"] = 93337,	-- Archmage Khadgar
+								["coord"] = { 45.1, 42.9, 630 },
+								["classes"] = { 12 }, -- Demon Hunter
+								["sourceQuest"] = 41220, -- Down to Azsuna
+							}),
+							q(37658, { -- Reignite the Wards
+								["qg"] = 90317, -- Jace Darkweaver
+								["coord"] = { 43.1, 43.6, 630 },
+								["groups"] = {
+									i(141623), -- Demon Warding Halo
+									i(141622), -- Guise of the Demon Warder
+									i(141621), -- Demon Warder Helm
+									i(141620), -- Soul-Stealer's Helm
+									i(141628), -- Soul-Stealer's Leggings
+									i(141627), -- Leggings of the Soul-Trapper
+									i(141626), -- Soul-Stealer's Chain Pants
+									i(141625), -- Soul-Trapper's Greaves
+								},
+								["sourceQuests"] = {
+									38834, -- Into the Fray (Non-DH version)
+									44137, -- Into the Fray (DH version)
+								},
+							}),
+							q(37653, { -- Demon Souls
+								["qg"] = 89398, -- Allari the Souleater
+								["coord"] = { 43.2, 43.1, 630 },
+								["sourceQuests"] = {
+									38834, -- Into the Fray (Non-DH version)
+									44137, -- Into the Fray (DH version)
+								},
+							}),
+							q(37660, { -- The Scythe of Souls
+								["qg"] = 89398, -- Allari the Souleateer
+								["coord"] = { 43.2, 43.1, 630 },
+								["groups"] = {
+									i(132951), -- Leywalker Shoes
+									i(132949), -- Ruin-Stalker Footpads
+									i(132948), -- Seaspray Chain Boots
+									i(132947), -- Nar'thalas Sabatons
+								},
+								["sourceQuests"] = {
+									37653, -- Reignite the Wards
+									37653, -- Demon Souls
+								},
+							}),
+							q(36920, { -- From Within (Non-DH version)
+								["qg"] = 89362, -- Kayn Sunfury
+								["classes"] = exclude(12, ALL_CLASSES),
+								["sourceQuest"] = 37660, -- The Scythe of Souls
+							}),
+							q(40815, { -- From Within (DH version, must choose Altruis)
+								["qg"] = 101927, -- Altruis the Sufferer
+								["classes"] = { 12 }, -- Demon Hunter
+								["sourceQuest"] = 37660, -- The Scythe of Souls
+								["description"] = "This quest is available if you chose to follow Altruis the Sufferer during the Demon Hunter introduction quests."
+							}),
+							q(44140, { -- From Within (DH version, must choose Kayn)
+								["qg"] = 89362, -- Kayn Sunfury
+								["coord"] = { 43.5, 43.4, 630 },
+								["classes"] = { 12 }, -- Demon Hunter
+								["sourceQuest"] = 37660, -- The Scythe of Souls
+								["description"] = "This quest is available if you chose to follow Kayn Sunfury during the Demon Hunter introduction quests."
+							}),
+							q(37450, { -- Saving Stellagosa
+								["qg"] = 90474, -- Kor'vas Bloodthorn
+								["coord"] = { 41.2, 50.5, 630 },
+								["groups"] = {
+									i(132961), -- Cape of Azure Fury
+									i(132964), -- Stellagosa's Breath
+								},
+								["sourceQuests"] = {
+									36920, -- From Within (Non-DH Version)
+									40815, -- From Within (DH - Altruis)
+									44140, -- From Within (DH - Kayn)
+								},
+							}),
+							q(37656, { -- Fel Machinations
+								["qg"] = 90474, -- Kor'vas Bloodthorn
+								["coord"] = { 41.2, 50.5, 630 },
+								["sourceQuests"] = {
+									36920, -- From Within (Non-DH Version)
+									40815, -- From Within (DH - Altruis)
+									44140, -- From Within (DH - Kayn)
+								},
+							}),
+							q(37449, { -- Dark Revelations
+								["qg"] = 90474, -- Kor'vas Bloodthorn
+								["coord"] = { 38.0, 57.6, 630 },
+								["groups"] = {
+									i(132984), -- Abandoned Highborne Mana Crystal
+									i(132985), -- Blood of the Vanquished Highborne
+									i(133002), -- Coalesced Shadows
+									i(132996), -- Cursed Felstalker Flesh
+									i(132987), -- Everburning Ruin Ember
+									i(132995), -- Faronaar Arcane Power-Core
+									i(132990), -- Fel-Resistant Clipping
+									i(132989), -- Legion Iron Nugget
+									i(132991), -- Mortiferous' Corruption
+									i(132993), -- Nethrandamus' Zephyr
+									i(132999), -- Preserved Highborne Warrior's Fist
+									i(133001), -- Soul Fragment of Faronaar Innocent
+									i(133000), -- Stalwart Faronaar Keystone
+									i(133004), -- Swirling Demonic Whispers
+									i(132988), -- The Dreadlord's Chill Eye
+									i(132998), -- The Sufferer's Fury
+								},
+								["sourceQuests"] = {
+									37450, -- Saving Stellagosa
+									37656, -- Fel Machinations
+								},
+							}),
 						}),
 						crit(2, { -- Defending Azurewing Repose
 							q(37853), -- The Death of the Eldest
@@ -2784,203 +2768,123 @@ _.Zones =
 						i(141064),	-- Technique: Glyph of the Shivarra
 						i(141051),	-- Technique: Glyph of the Trident
 						i(121015, { -- Academy Faculty Pin
-							["groups"] = {
-							},
 							["bonusID"] = 1812,
 						}),
 						i(121012, { -- Azurewing Defender's Drape
-							["groups"] = {
-							},
 							["bonusID"] = 1812,
 						}),
 						i(121028, { -- Azurewing Pendant
-							["groups"] = {
-							},
 							["bonusID"] = 1812,
 						}),
 						i(121027, { -- Azurewing Signet
-							["groups"] = {
-							},
 							["bonusID"] = 1812,
 						}),
 						i(121016, { -- Corsair's Spyglass
-							["groups"] = {
-							},
 							["bonusID"] = 1812,
 						}),
 						i(141285, { -- Nar'thalas Writ
-							["groups"] = {
-							},
 							["bonusID"] = 1812,
 						}),
 						i(141284, { -- Nor'danil Ampoule
-							["groups"] = {
-							},
 							["bonusID"] = 1812,
 						}),
 						i(121014, { -- Preserved Blue Dragon Scale
-							["groups"] = {
-							},
 							["bonusID"] = 1812,
 						}),
 						i(121049, {	-- Temporal Scholar's Cowl
-							["groups"] = {
-							},
 							["bonusID"] = 1812,
 						}),
 						i(121054, {	-- Temporal Scholar's Shoulderpads
-							["groups"] = {
-							},
 							["bonusID"] = 1812,
 						}),
 						i(121052, {	-- Temporal Scholar's Robe
-							["groups"] = {
-							},
 							["bonusID"] = 1812,
 						}),
 						i(121055, {	-- Temporal Scholar's Wristwraps
-							["groups"] = {
-							},
 							["bonusID"] = 1812,
 						}),
 						i(121050, {	-- Temporal Scholar's Handwraps
-							["groups"] = {
-							},
 							["bonusID"] = 1812,
 						}),
 						i(121048, {	-- Temporal Scholar's Cord
-							["groups"] = {
-							},
 							["bonusID"] = 1812,
 						}),						
 						i(121051, {	-- Temporal Scholar's Leggings
-							["groups"] = {
-							},
 							["bonusID"] = 1812,
 						}),
 						i(121053, {	-- Temporal Scholar's Sandals
-							["groups"] = {
-							},
 							["bonusID"] = 1812,
 						}),
 						i(121021, {	-- Llothien Hood
-							["groups"] = {
-							},
 							["bonusID"] = 1812,
 						}),
 						i(121023, {	-- Llothien Shoulders
-							["groups"] = {
-							},
 							["bonusID"] = 1812,
 						}),
 						i(121022, {	-- Llothien Jerkin
-							["groups"] = {
-							},
 							["bonusID"] = 1812,
 						}),
 						i(121017, {	-- Llothien Bindings
-							["groups"] = {
-							},
 							["bonusID"] = 1812,
 						}),
 						i(121020, {	-- Llothien Gloves
-							["groups"] = {
-							},
 							["bonusID"] = 1812,
 						}),
 						i(121024, {	-- Llothien Waistband
-							["groups"] = {
-							},
 							["bonusID"] = 1812,
 						}),
 						i(121019, {	-- Llothien Britches
-							["groups"] = {
-							},
 							["bonusID"] = 1812,
 						}),
 						i(121018, {	-- Llothien Boots
-							["groups"] = {
-							},
 							["bonusID"] = 1812,
 						}),
 						i(121044, {	-- Faronaar Chain Helm
-							["groups"] = {
-							},
 							["bonusID"] = 1812,
 						}),
 						i(121046, {	-- Faronaar Chain Spaulders
-							["groups"] = {
-							},
 							["bonusID"] = 1812,
 						}),
 						i(121047, {	-- Faronaar Chain Vest
-							["groups"] = {
-							},
 							["bonusID"] = 1812,
 						}),
 						i(121041, {	-- Faronaar Chain Bracers
-							["groups"] = {
-							},
 							["bonusID"] = 1812,
 						}),
 						i(121042, {	-- Faronaar Chain Gauntlets
-							["groups"] = {
-							},
 							["bonusID"] = 1812,
 						}),
 						i(121040, {	-- Faronaar Chain Belt
-							["groups"] = {
-							},
 							["bonusID"] = 1812,
 						}),
 						i(121045, {	-- Faronaar Chain Legguards
-							["groups"] = {
-							},
 							["bonusID"] = 1812,
 						}),
 						i(121043, {	-- Faronaar Chain Greaves
-							["groups"] = {
-							},
 							["bonusID"] = 1812,
 						}),
 						i(121004, {	-- Rhut'van Helm
-							["groups"] = {
-							},
 							["bonusID"] = 1812,
 						}),
 						i(121006, {	-- Rhut'van Pauldrons
-							["groups"] = {
-							},
 							["bonusID"] = 1812,
 						}),
 						i(121001, {	-- Rhut'van Breastplate
-							["groups"] = {
-							},
 							["bonusID"] = 1812,
 						}),
 						i(121008, {	-- Rhut'van Vambraces
-							["groups"] = {
-							},
 							["bonusID"] = 1812,
 						}),
 						i(121002, {	-- Rhut'van Gauntlets
-							["groups"] = {
-							},
 							["bonusID"] = 1812,
 						}),
 						i(121003, {	-- Rhut'van Girdle
-							["groups"] = {
-							},
 							["bonusID"] = 1812,
 						}),
 						i(121005, {	-- Rhut'van Legplates
-							["groups"] = {
-							},
 							["bonusID"] = 1812,
 						}),
 						i(121007, {	-- Rhut'van Sabatons
-							["groups"] = {
-							},
 							["bonusID"] = 1812,
 						}),
 					},
