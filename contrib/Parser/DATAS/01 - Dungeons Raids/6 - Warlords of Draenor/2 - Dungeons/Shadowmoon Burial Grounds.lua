@@ -152,6 +152,9 @@ _.Instances =
 							i(110012),	-- Bonemaw's Big Toe
 						})),
 						cr(76407, e(1160, {	-- Ner'zhul
+							{	-- Shadowmoon Burial Grounds
+								["achievementID"] = 9041,	-- Shadowmoon Burial Grounds
+							},
 							i(138806),	-- Illusion: Mark of Shadowmoon
 							i(110039),	-- Portal-Ripper's Staff
 							i(110038),	-- Ner'zhul's Ritual Blade
@@ -232,6 +235,9 @@ _.Instances =
 							}),
 						}),	
 						cr(75509, e(1139, {	-- Sadana Bloodfury
+							{	-- What's Your Sign?
+								["achievementID"] = 9018,	-- What's Your Sign?
+							},
 							i(110035),	-- Sadana's Grisly Visage
 							i(109957),	-- Alc's Pendant of Fiery Dreams
 							i(109962),	-- Bloodmist Pendant
@@ -319,6 +325,9 @@ _.Instances =
 							i(110007),	-- Voidmender's Shadowgem
 						})),
 						cr(75452, e(1140, {	-- Bonemaw
+							{	-- Icky Ichors
+								["achievementID"] = 9025,	-- Icky Ichors
+							},
 							i(110037),	-- Bonetooth Longbow
 							i(109862),	-- Blackwater Grips
 							i(109849),	-- Bloodfeather Grips
@@ -363,6 +372,12 @@ _.Instances =
 							i(110012),	-- Bonemaw's Big Toe
 						})),
 						cr(76407, e(1160, {	-- Ner'zhul
+							{	-- Heroic: Shadowmoon Burial Grounds
+								["achievementID"] = 9054,	-- Heroic: Shadowmoon Burial Grounds
+							},
+							{	-- Souls of the Lost
+								["achievementID"] = 9026,	-- Souls of the Lost
+							},
 							i(138806),	-- Illusion: Mark of Shadowmoon
 							i(110039),	-- Portal-Ripper's Staff
 							i(110038),	-- Ner'zhul's Ritual Blade
@@ -566,6 +581,9 @@ _.Instances =
 							i(110012),	-- Bonemaw's Big Toe
 						})),
 						cr(76407, e(1160, {	-- Ner'zhul
+							{	-- Mythic: Shadowmoon Burial Grounds
+								["achievementID"] = 10084,	-- Mythic: Shadowmoon Burial Grounds
+							},
 							i(138806),	-- Illusion: Mark of Shadowmoon
 							i(110039),	-- Portal-Ripper's Staff
 							i(110038),	-- Ner'zhul's Ritual Blade

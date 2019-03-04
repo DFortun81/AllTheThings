@@ -153,6 +153,9 @@ _.Instances =
 								i(110006),	-- Rukhran's Quill
 							})),
 							cr(76266, e(968, {	-- High Sage Viryx
+								{	-- Skyreach
+									["achievementID"] = 8843,	-- Skyreach
+								},
 								i(110033),	-- Arcanic of the High Sage
 								i(110034),	-- Viryx's Indomitable Bulwark
 								i(109938),	-- Blackwater Spaulders
@@ -234,6 +237,9 @@ _.Instances =
 								}),	
 							}),	
 							cr(75964, e(965, {	-- Ranjit
+								{	-- Ready for Raiding IV
+									["achievementID"] = 9033,	-- Ready for Raiding IV
+								},
 								i(110030),	-- Chakram-Breaker Greatsword
 								i(109979),	-- Blackwater Helm								
 								i(109976),	-- Bloodfeather Cowl
@@ -321,6 +327,9 @@ _.Instances =
 								i(110016),	-- Solar Containment Unit
 							})),
 							cr(76143, e(967, {	-- Rukhran
+								{	-- I Saw Solis
+									["achievementID"] = 9035,	-- I Saw Solis
+								},
 								i(110032),	-- Beakbreaker Scimitar
 								i(109882),	-- Blackwater Wristguards
 								i(109869),	-- Bloodfeather Bracers
@@ -365,6 +374,15 @@ _.Instances =
 								i(110006),	-- Rukhran's Quill
 							})),
 							cr(76266, e(968, {	-- High Sage Viryx
+								{	-- Heroic: Skyreach
+									["achievementID"] = 8844,	-- Heroic: Skyreach
+								},
+								{	-- Magnify... Enhance
+									["achievementID"] = 9034,	-- Magnify... Enhance
+								},
+								{	-- Monomania
+									["achievementID"] = 9036,	-- Monomania
+								},
 								i(110033),	-- Arcanic of the High Sage
 								i(110034),	-- Viryx's Indomitable Bulwark
 								i(109938),	-- Blackwater Spaulders
@@ -572,6 +590,9 @@ _.Instances =
 								i(110006),	-- Rukhran's Quill
 							})),
 							cr(76266, e(968, {	-- High Sage Viryx
+								{	-- Mythic: Skyreach
+									["achievementID"] = 10081,	-- Mythic: Skyreach
+								},
 								i(127771, {	-- Gemcutter Module: Haste
 									["spellID"] = 187635,
 									["requireSkill"] = 755,	-- Jewelcrafting

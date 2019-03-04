@@ -204,6 +204,9 @@ _.Instances =
 								i(110014),	-- Spores of Alacrity
 							})),
 							cr(83846, e(1210, { -- Yalnu
+								{	-- The Everbloom
+									["achievementID"] = 9044,	-- The Everbloom
+								},
 								i(119181),	-- Hoof of Yalnu
 								i(109957),	-- Alc's Pendant of Fiery Dreams
 								i(109962),	-- Bloodmist Pendant
@@ -282,6 +285,9 @@ _.Instances =
 								}),	
 							}),	
 							cr(81522, e(1214, {	-- Witherbark
+								{	-- Water Management
+									["achievementID"] = 9017,	-- Water Management
+								},
 								i(119175),	-- Leafhide Penetrator
 								i(109912),	-- Bloody-Blade Drape
 								i(109911),	-- Cloak of Annealing Flesh
@@ -414,6 +420,9 @@ _.Instances =
 								i(110019),	-- Xeri'tac's Unhatched Egg Sac
 							})),
 							cr(82682, e(1208, { -- Archmage Sol
+								{	-- They Burn, Burn, Burn
+									["achievementID"] = 9493,	-- They Burn, Burn, Burn
+								},
 								i(119174),	-- Sol's Magestaff
 								i(109979),	-- Blackwater Helm
 								i(109976),	-- Bloodfeather Cowl
@@ -458,6 +467,12 @@ _.Instances =
 								i(110014),	-- Spores of Alacrity
 							})),
 							cr(83846, e(1210, { -- Yalnu
+								{	-- Heroic: The Everbloom
+									["achievementID"] = 9053,	-- Heroic: The Everbloom
+								},
+								{	-- Weed Whacker
+									["achievementID"] = 9223,	-- Weed Whacker
+								},
 								i(119181),	-- Hoof of Yalnu
 								i(109957),	-- Alc's Pendant of Fiery Dreams
 								i(109962),	-- Bloodmist Pendant
@@ -708,6 +723,9 @@ _.Instances =
 								i(110014),	-- Spores of Alacrity
 							})),
 							cr(83846, e(1210, { -- Yalnu
+								{	-- Mythic: The Everbloom
+									["achievementID"] = 10083,	-- Mythic: The Everbloom
+								},
 								i(119181),	-- Hoof of Yalnu
 								i(109957),	-- Alc's Pendant of Fiery Dreams
 								i(109962),	-- Bloodmist Pendant

@@ -160,6 +160,9 @@ _.Instances =
 								i(109997),	-- Kihra's Adrenaline Injector
 							})),
 							cr(83612, e(1238, {	-- Skulloc
+								{	-- Iron Docks
+									["achievementID"] = 9038,	-- Iron Docks
+								},
 								i(110059),	-- Chasmwrench Docking Hook
 								i(110058),	-- Bloodied Hand of Woe
 								i(110060),	-- Painbringer's Crystal
@@ -235,6 +238,9 @@ _.Instances =
 								}),	
 							}),	
 							cr(81305, e(1235, {	-- Fleshrender Nok'gar
+								{	-- Militaristic, Expansionist
+									["achievementID"] = 9083,	-- Militaristic, Expansionist
+								},
 								i(110055),	-- Gutwrench Goreaxe
 								i(109898),	-- Blackwater Wrap
 								i(109885),	-- Bloodfeather Chestwrap
@@ -283,6 +289,9 @@ _.Instances =
 								i(109777),	-- Unsullied Signet
 								i(110002),	-- Fleshrender's Meathook
 							})),
+							{	-- Expert Timing
+								["achievementID"] = 9081,	-- Expert Timing
+							},
 							cr(80816, e(1236, {	-- Grimrail Enforcers (Ahri'ok Dugru)
 								i(110056),	-- Black Iron Sniper Rifle
 								i(109979),	-- Blackwater Helm								
@@ -372,6 +381,12 @@ _.Instances =
 								i(109997),	-- Kihra's Adrenaline Injector
 							})),
 							cr(83612, e(1238, {	-- Skulloc
+								{	-- Heroic: Iron Docks
+									["achievementID"] = 9047,	-- Heroic: Iron Docks
+								},
+								{	-- Take Cover!
+									["achievementID"] = 9082,	-- Take Cover!
+								},
 								i(110059),	-- Chasmwrench Docking Hook
 								i(110058),	-- Bloodied Hand of Woe
 								i(110060),	-- Painbringer's Crystal
@@ -579,6 +594,9 @@ _.Instances =
 								i(109997),	-- Kihra's Adrenaline Injector
 							})),
 							cr(83612, e(1238, {	-- Skulloc
+								{	-- Mythic: Iron Docks
+									["achievementID"] = 10079,	-- Mythic: Iron Docks
+								},
 								i(110059),	-- Chasmwrench Docking Hook
 								i(110058),	-- Bloodied Hand of Woe
 								i(110060),	-- Painbringer's Crystal

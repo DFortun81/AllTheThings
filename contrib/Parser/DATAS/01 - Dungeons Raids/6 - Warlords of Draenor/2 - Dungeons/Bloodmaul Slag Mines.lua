@@ -154,6 +154,9 @@ _.Instances =
 								i(110015),	-- Toria's Unseeing Eye
 							})),
 							cr(74790, e(889, {	-- Gug'rokk
+								{	-- Bloodmaul Slag Mines
+									["achievementID"] = 9037,	-- Bloodmaul Slag Mines
+								},
 								i(110042),	-- Gug'rokk's Smasher
 								i(110044),	-- Ogre Dinner Plate
 								i(110043),	-- Gug'rokk's Grandmother
@@ -372,6 +375,9 @@ _.Instances =
 								i(110015),	-- Toria's Unseeing Eye
 							})),
 							cr(74790, e(889, {	-- Gug'rokk
+								{	-- Heroic: Bloodmaul Slag Mines
+									["achievementID"] = 9046,	-- Heroic: Bloodmaul Slag Mines
+								},
 								ach(9008),	-- Is Draenor on Fire?
 								ach(9005, {	-- Come With Me If You Want to Live
 									["groups"] = {

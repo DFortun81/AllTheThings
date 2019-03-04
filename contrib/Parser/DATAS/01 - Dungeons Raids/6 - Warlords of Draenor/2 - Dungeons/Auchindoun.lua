@@ -158,6 +158,9 @@ _.Instances =
 								i(109995),	-- Blood Seal of Azzakel
 							})),
 							cr(77734, e(1225, {	-- Teron'gor
+								{	-- Auchindoun
+									["achievementID"] = 9039,	-- Auchindoun
+								},
 								i(110049),	-- Bloodblade of Teron'Gor
 								i(110050),	-- Dagger of the Sanguine Emeralds
 								i(109912),	-- Bloody-Blade Drape
@@ -282,6 +285,9 @@ _.Instances =
 								i(109777),	-- Unsullied Signet
 							})),
 							cr(76177, e(1186, { -- Soulbinder Nyami
+								{	-- ...They All Fall Down
+									["achievementID"] = 9023,	-- ...They All Fall Down
+								},
 								i(110046),	-- Hammer of the Soulbinder
 								i(110047),	-- Soulcutter Mageblade
 								i(109957),	-- Alc's Pendant of Fiery Dreams
@@ -326,6 +332,9 @@ _.Instances =
 								i(109893),	-- Verdant Plate Chest
 							})),
 							cr(75927, e(1216, {	-- Azzakel
+								{	-- Demon's Souls
+									["achievementID"] = 9551,	-- Demon's Souls
+								},
 								i(110048),	-- Azzakel's Boltslinger
 								i(109882),	-- Blackwater Wristguards
 								i(109869),	-- Bloodfeather Bracers
@@ -370,6 +379,12 @@ _.Instances =
 								i(109995),	-- Blood Seal of Azzakel
 							})),
 							cr(77734, e(1225, {	-- Teron'gor
+								{	-- Heroic: Auchindoun
+									["achievementID"] = 9049,	-- Heroic: Auchindoun
+								},
+								{	-- No Tag-backs!
+									["achievementID"] = 9552,	-- No Tag-backs!
+								},
 								i(110049),	-- Bloodblade of Teron'Gor
 								i(110050),	-- Dagger of the Sanguine Emeralds
 								i(109912),	-- Bloody-Blade Drape
@@ -578,6 +593,9 @@ _.Instances =
 								i(109995),	-- Blood Seal of Azzakel
 							})),
 							cr(77734, e(1225, {	-- Teron'gor
+								{	-- Mythic: Auchindoun
+									["achievementID"] = 10080,	-- Mythic: Auchindoun
+								},
 								i(110049),	-- Bloodblade of Teron'Gor
 								i(110050),	-- Dagger of the Sanguine Emeralds
 								i(109912),	-- Bloody-Blade Drape

@@ -118,6 +118,9 @@ _.Instances =
 								i(109996),	-- Thundertower's Targeting Reticle
 							})),
 							cr(80005, e(1133, {	-- Skylord Tovra
+								{	-- Grimrail Depot
+									["achievementID"] = 9043,	-- Grimrail Depot
+								},
 								i(110054),	-- Thunderlord Flamestaff
 								i(110053),	-- Arrowbreaker Greatshield
 								i(109882),	-- Blackwater Wristguards
@@ -192,6 +195,9 @@ _.Instances =
 								}),		
 							}),
 							cr(77803, e(1138, {	-- Railmaster Rocketspark
+								{	-- This Is Why We Can't Have Nice Things
+									["achievementID"] = 9024,	-- This Is Why We Can't Have Nice Things
+								},
 								i(110051),	-- Overseer's Final Word
 								i(109829),	-- Belt of Burning Focus
 								i(109842),	-- Blackwater Belt
@@ -240,6 +246,9 @@ _.Instances =
 								i(109777),	-- Unsullied Signet
 							})),
 							cr(79545, e(1163, {	-- Nitrogg Thundertower
+								{	-- No Ticket
+									["achievementID"] = 9007,	-- No Ticket
+								},
 								i(110052),	-- Scepter of Brutality
 								i(109898),	-- Blackwater Wrap								
 								i(109885),	-- Bloodfeather Chestwrap
@@ -284,6 +293,9 @@ _.Instances =
 								i(109996),	-- Thundertower's Targeting Reticle
 							})),
 							cr(80005, e(1133, {	-- Skylord Tovra
+								{	-- Heroic: Grimrail Depot
+									["achievementID"] = 9052,	-- Heroic: Grimrail Depot
+								},
 								i(110054),	-- Thunderlord Flamestaff
 								i(110053),	-- Arrowbreaker Greatshield
 								i(109882),	-- Blackwater Wristguards
@@ -446,6 +458,9 @@ _.Instances =
 								i(109996),	-- Thundertower's Targeting Reticle
 							})),
 							cr(80005, e(1133, {	-- Skylord Tovra
+								{	-- Mythic: Grimrail Depot
+									["achievementID"] = 10082,	-- Mythic: Grimrail Depot
+								},
 								i(110054),	-- Thunderlord Flamestaff
 								i(110053),	-- Arrowbreaker Greatshield
 								i(109882),	-- Blackwater Wristguards

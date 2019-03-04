@@ -214,6 +214,9 @@ _.Instances =
 								i(110003),	-- Ragewing's Firefang
 							})),
 							cr(77120, e(1234, {	-- Warlord Zaela
+								{	-- Upper Blackrock Spire
+									["achievementID"] = 9042,	-- Upper Blackrock Spire
+								},
 								i(118740),	-- Bleakblade of Shahram
 								i(118738),	-- Felshanker
 								i(118739),	-- Draconian Doomshield
@@ -288,7 +291,10 @@ _.Instances =
 									i(118938), -- Manastorm's Duplicator ["isToy"] = True
 								}),	
 							}),	
-							cr(76413, e(1226, {		-- Orebender Gor'ashan
+							cr(76413, e(1226, {	-- Orebender Gor'ashan
+								{	-- Magnets, How Do They Work?
+									["achievementID"] = 9045,	-- Magnets, How Do They Work?
+								},
 								i(118719),	-- Petrified Willow
 								i(109912),	-- Bloody-Blade Drape
 								i(109911),	-- Cloak of Annealing Flesh
@@ -332,7 +338,7 @@ _.Instances =
 								i(109794),	-- Verdant Plate Treads
 								i(109998),	-- Gor'ashan's Lodestone Spike
 							})),
-							cr(76021, e(1227, {		-- Kyrak
+							cr(76021, e(1227, {	-- Kyrak
 								i(118724),	-- Finkle's Flenser
 								i(109938),	-- Blackwater Spaulders
 								i(109935),	-- Bloodfeather Spaulders
@@ -381,13 +387,20 @@ _.Instances =
 								i(109777),	-- Unsullied Signet
 								i(110018),	-- Kyrak's Vileblood Serum
 							})),
+							{	-- Leeeeeeeeeeeeeroy...?
+								["achievementID"] = 9058,	-- Leeeeeeeeeeeeeroy...?
+								["groups"] = {
+									style(2, title(110)),	-- Jenkins
+									follower(178),	-- Leeroy Jenkins
+								},
+							},
 							n(77081, { -- The Lanticore
 								["groups"] = {
 									i(117528), -- Lanticore Spawnling (PET!)
 								},
 								["description"] = "This rare spawns next to the right of Kyrak (2nd boss) Droprate should be about 100% for pet",
 							}),
-							cr(79912, e(1228, {		-- Commander Tharbek
+							cr(79912, e(1228, {	-- Commander Tharbek
 								i(118726),	-- Tharbek's Brutal Possessor
 								i(118725),	-- Tharbek's Unholy Charge
 								i(109898),	-- Blackwater Wrap
@@ -432,10 +445,13 @@ _.Instances =
 								i(109857),	-- Verdant Plate Grips
 								i(110008),	-- Tharbek's Lucky Pebble
 							})),
-							n(77927, {				-- Son of the Beast
+							n(77927, {	-- Son of the Beast
 								i(120340),	-- Son of the Beast's Bloody Paw
 							}),
-							cr(76585, e(1229, {		-- Ragewing the Untamed
+							cr(76585, e(1229, {	-- Ragewing the Untamed
+								{	-- Bridge Over Troubled Fire
+									["achievementID"] = 9056,	-- Bridge Over Troubled Fire
+								},
 								i(118737),	-- Blackhand Doomcutter
 								i(109957),	-- Alc's Pendant of Fiery Dreams
 								i(109962),	-- Bloodmist Pendant
@@ -479,7 +495,13 @@ _.Instances =
 								i(109819),	-- Verdant Plate Legguards
 								i(110003),	-- Ragewing's Firefang
 							})),
-							cr(77120, e(1234, {		-- Warlord Zaela
+							cr(77120, e(1234, {	-- Warlord Zaela
+								{	-- Dragonmaw? More Like Dragonfall!
+									["achievementID"] = 9057,	-- Dragonmaw? More Like Dragonfall!
+								},
+								{	-- Heroic: Upper Blackrock Spire
+									["achievementID"] = 9055,	-- Heroic: Upper Blackrock Spire
+								},
 								i(118740),	-- Bleakblade of Shahram
 								i(118738),	-- Felshanker
 								i(118739),	-- Draconian Doomshield
@@ -549,7 +571,7 @@ _.Instances =
 					}),
 					d(23, {	-- Mythic
 						["groups"] = {
-							cr(76413, e(1226, {		-- Orebender Gor'ashan
+							cr(76413, e(1226, {	-- Orebender Gor'ashan
 								i(118719),	-- Petrified Willow
 								i(109912),	-- Bloody-Blade Drape
 								i(109911),	-- Cloak of Annealing Flesh
@@ -593,7 +615,7 @@ _.Instances =
 								i(109794),	-- Verdant Plate Treads
 								i(109998),	-- Gor'ashan's Lodestone Spike
 							})),
-							cr(76021, e(1227, {		-- Kyrak
+							cr(76021, e(1227, {	-- Kyrak
 								i(118724),	-- Finkle's Flenser
 								i(109938),	-- Blackwater Spaulders
 								i(109935),	-- Bloodfeather Spaulders
@@ -648,7 +670,7 @@ _.Instances =
 								},
 								["description"] = "This rare spawns next to the right of Kyrak (2nd boss) Droprate should be about 100% for pet",
 							}),
-							cr(79912, e(1228, {		-- Commander Tharbek
+							cr(79912, e(1228, {	-- Commander Tharbek
 								i(118726),	-- Tharbek's Brutal Possessor
 								i(118725),	-- Tharbek's Unholy Charge
 								i(109898),	-- Blackwater Wrap
@@ -693,10 +715,10 @@ _.Instances =
 								i(109857),	-- Verdant Plate Grips
 								i(110008),	-- Tharbek's Lucky Pebble
 							})),
-							n(77927, {				-- Son of the Beast
+							n(77927, {	-- Son of the Beast
 								i(120340),	-- Son of the Beast's Bloody Paw
 							}),
-							cr(76585, e(1229, {		-- Ragewing the Untamed
+							cr(76585, e(1229, {	-- Ragewing the Untamed
 								i(118737),	-- Blackhand Doomcutter
 								i(109957),	-- Alc's Pendant of Fiery Dreams
 								i(109962),	-- Bloodmist Pendant
@@ -740,7 +762,10 @@ _.Instances =
 								i(109819),	-- Verdant Plate Legguards
 								i(110003),	-- Ragewing's Firefang
 							})),
-							cr(77120, e(1234, {		-- Warlord Zaela
+							cr(77120, e(1234, {	-- Warlord Zaela
+								{	-- Mythic: Upper Blackrock Spire
+									["achievementID"] = 10085,	-- Mythic: Upper Blackrock Spire	
+								},
 								i(118740),	-- Bleakblade of Shahram
 								i(118738),	-- Felshanker
 								i(118739),	-- Draconian Doomshield

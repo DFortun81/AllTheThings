@@ -255,6 +255,9 @@ _.Instances =
 						i(  9409),	-- Ironaya's Bracers
 						i(  9407),	-- Stoneweaver Leggings
 					})),
+					cr( 7023, e(  748, {	-- Obsidian Sentinel
+						i(151399),	-- Splintered Obsidian Shard
+					})),
 					cr( 7206, e(  470, {	-- Ancient Stone Keeper
 						i(  9411),	-- Rockshard Pauldrons
 						i(132733),	-- Stone Keeper's Mantle
@@ -264,11 +267,11 @@ _.Instances =
 					})),
 					o(131979, {				-- Large Darkwood Chest
 						["groups"] = {	
-							dr(5, i(9967)),	-- Embossed Plate Gauntlets
-							dr(5, i(9904)),	-- Jazeraint Pauldrons
-							dr(5, i(9919)),	-- Tracker's Cloak
-							dr(4, i(9887)),	-- Huntsman's Armor
-							dr(4, i(9917)),	-- Tracker's Boots
+							i(9967),	-- Embossed Plate Gauntlets
+							i(9904),	-- Jazeraint Pauldrons
+							i(9919),	-- Tracker's Cloak
+							i(9887),	-- Huntsman's Armor
+							i(9917),	-- Tracker's Boots
 						},
 						["modelID"] = 64648,
 						["description"] = "These chests are scattered around the instance. They are usually locked, but sometimes spawn unlocked. Has a very long loot list, but drop chances are significantly less than Ancient Treasure.",
@@ -305,83 +308,83 @@ _.Instances =
 							{	-- Plans: Mithril Spurs
 								["itemID"] = 7989,	-- Plans: Mithril Spurs
 							},
-							dr(4.0, i( 4063)),	-- Imperial Leather Gloves
-							dr(4.0, i( 7475)),	-- Regal Cuffs
-							dr(3.0, i(  866)),	-- Monk's Staff
-							dr(3.0, i( 1640)),	-- Monstrous War Axe
-							dr(3.0, i(15244)),	-- Razor Blade
-							dr(3.0, i( 3430)),	-- Sniper Rifle
-							dr(3.0, i( 4087)),	-- Trueshot Bow
-							dr(2.0, i( 8196)),	-- Ebon Scimitar
-							dr(2.0, i( 5215)),	-- Ember Wand
-							dr(2.0, i(15251)),	-- Headstriker Sword
-							dr(2.0, i(10301)), 	-- Pattern: White Bandit Mask
-							dr(2.0, i( 3187)),	-- Sacrificial Kris
-							dr(1.9, i(15287)),	-- Crusader Bow
-							dr(1.9, i( 1625)),	-- Exquisite Flamberge
-							dr(1.9, i(15215)),	-- Furious Falchion
-							dr(1.9, i( 8194)),	-- Goblin Nutcracker
-							dr(1.9, i( 7473)),	-- Regal Mantle
-							dr(1.8, i( 6433)),	-- Imperial Leather Helm
-							dr(1.8, i( 1613)),	-- Spiritchaser Staff
-							dr(1.8, i( 5216)),	-- Umbral Wand
-							dr(1.7, i( 7494)),	-- Captain's Waistguard
-							dr(1.7, i( 9919)),	-- Tracker's Cloak
-							dr(1.6, i( 9928)),	-- Brigade Breastplate
-							dr(1.6, i( 8142)),	-- Chromite Barbute
-							dr(1.6, i( 9970)),	-- Embossed Plate Leggings
-							dr(1.6, i( 4045)),	-- Mistscape Bracers
-							dr(1.6, i( 8029)), 	-- Plans: Wicked Mithril Blade
-							dr(1.6, i( 7485)),	-- Ranger Cord
-							dr(1.5, i( 9930)),	-- Brigade Gauntlets
-							dr(1.5, i( 7525)),	-- Gossamer Bracers
-							dr(1.5, i( 4735)),	-- Mistscape Cloak
-							dr(1.5, i( 4736)),	-- Mistscape Sash
-							dr(1.5, i( 7975)), 	-- Plans: Heavy Mithril Pants
-							dr(1.5, i( 7479)),	-- Ranger Helm
-							dr(1.5, i( 7470)),	-- Regal Wizard Hat
-							dr(1.5, i( 9881)),	-- Sorcerer Mantle
-							dr(1.4, i( 7488)),	-- Captain's Circlet
-							dr(1.4, i( 9908)),	-- Royal Cape
-							dr(1.4, i( 9916)),	-- Tracker's Belt
-							dr(1.3, i( 9929)),	-- Brigade Cloak
-							dr(1.3, i( 9931)),	-- Brigade Girdle
-							dr(1.3, i( 7495)),	-- Captain's Buckler
-							dr(1.3, i(10094)),	-- Gothic Plate Vambraces
-							dr(1.3, i( 7472)),	-- Regal Boots
-							dr(1.3, i( 7469)),	-- Regal Leggings
-							dr(1.3, i( 9912)),	-- Royal Amice
-							dr(1.2, i( 7545)),	-- Champion's Bracers
-							dr(1.2, i( 8141)),	-- Chromite Greaves
-							dr(1.2, i( 7522)),	-- Gossamer Boots
-							dr(1.2, i( 7524)),	-- Gossamer Cape
-							dr(1.2, i( 8120)),	-- Heraldic Cloak
-							dr(1.2, i( 9909)),	-- Royal Bands
-							dr(1.2, i( 9907)),	-- Royal Boots
-							dr(1.1, i( 7533)),	-- Cabalist Cloak
-							dr(1.1, i( 9287)),	-- Field Plate Gauntlets
-							dr(1.1, i( 9894)),	-- Huntsman's Shoulders
-							dr(1.1, i( 8163)),	-- Jouster's Pauldrons
-							dr(1.1, i( 4046)),	-- Mistscape Pants
-							dr(1.1, i( 7480)),	-- Ranger Gloves
-							dr(1.1, i( 7478)),	-- Ranger Leggings
-							dr(1.1, i( 9915)),	-- Royal Headband
-							dr(1.1, i( 9878)),	-- Sorcerer Hat
-							dr(1.1, i( 9883)),	-- Sorcerer Pants
-							dr(1.0, i( 6423)),	-- Blackforge Greaves
-							dr(1.0, i( 6411)),	-- Chief Brigadier Armor
-							dr(1.0, i( 6432)),	-- Imperial Cloak
-							dr(1.0, i( 4061)),	-- Imperial Leather Bracers
-							dr(1.0, i( 6428)),	-- Mistscape Gloves
-							dr(1.0, i( 4734)),	-- Mistscape Mantle
-							dr(1.0, i( 6429)),	-- Mistscape Wizard Hat
-							dr(1.0, i(10302)),	-- Pattern: Red Mageweave Pants
-							dr(1.0, i( 7471)),	-- Regal Gloves
-							dr(1.0, i( 9906)),	-- Royal Sash
-							dr(1.0, i(10604)), 	-- Plans: Heavy Mithril Helm
-							dr(1.0, i( 9920)),	-- Tracker's Gloves
-							dr(1.0, i( 9925)),	-- Tracker's Wristguards
-							dr(1.0, i( 8385)),	-- Pattern: Turtle Scale Gloves
+							i( 4063),	-- Imperial Leather Gloves
+							i( 7475),	-- Regal Cuffs
+							i(  866),	-- Monk's Staff
+							i( 1640),	-- Monstrous War Axe
+							i(15244),	-- Razor Blade
+							i( 3430),	-- Sniper Rifle
+							i( 4087),	-- Trueshot Bow
+							i( 8196),	-- Ebon Scimitar
+							i( 5215),	-- Ember Wand
+							i(15251),	-- Headstriker Sword
+							i(10301), 	-- Pattern: White Bandit Mask
+							i( 3187),	-- Sacrificial Kris
+							i(15287),	-- Crusader Bow
+							i( 1625),	-- Exquisite Flamberge
+							i(15215),	-- Furious Falchion
+							i( 8194),	-- Goblin Nutcracker
+							i( 7473),	-- Regal Mantle
+							i( 6433),	-- Imperial Leather Helm
+							i( 1613),	-- Spiritchaser Staff
+							i( 5216),	-- Umbral Wand
+							i( 7494),	-- Captain's Waistguard
+							i( 9919),	-- Tracker's Cloak
+							i( 9928),	-- Brigade Breastplate
+							i( 8142),	-- Chromite Barbute
+							i( 9970),	-- Embossed Plate Leggings
+							i( 4045),	-- Mistscape Bracers
+							i( 8029), 	-- Plans: Wicked Mithril Blade
+							i( 7485),	-- Ranger Cord
+							i( 9930),	-- Brigade Gauntlets
+							i( 7525),	-- Gossamer Bracers
+							i( 4735),	-- Mistscape Cloak
+							i( 4736),	-- Mistscape Sash
+							i( 7975), 	-- Plans: Heavy Mithril Pants
+							i( 7479),	-- Ranger Helm
+							i( 7470),	-- Regal Wizard Hat
+							i( 9881),	-- Sorcerer Mantle
+							i( 7488),	-- Captain's Circlet
+							i( 9908),	-- Royal Cape
+							i( 9916),	-- Tracker's Belt
+							i( 9929),	-- Brigade Cloak
+							i( 9931),	-- Brigade Girdle
+							i( 7495),	-- Captain's Buckler
+							i(10094),	-- Gothic Plate Vambraces
+							i( 7472),	-- Regal Boots
+							i( 7469),	-- Regal Leggings
+							i( 9912),	-- Royal Amice
+							i( 7545),	-- Champion's Bracers
+							i( 8141),	-- Chromite Greaves
+							i( 7522),	-- Gossamer Boots
+							i( 7524),	-- Gossamer Cape
+							i( 8120),	-- Heraldic Cloak
+							i( 9909),	-- Royal Bands
+							i( 9907),	-- Royal Boots
+							i( 7533),	-- Cabalist Cloak
+							i( 9287),	-- Field Plate Gauntlets
+							i( 9894),	-- Huntsman's Shoulders
+							i( 8163),	-- Jouster's Pauldrons
+							i( 4046),	-- Mistscape Pants
+							i( 7480),	-- Ranger Gloves
+							i( 7478),	-- Ranger Leggings
+							i( 9915),	-- Royal Headband
+							i( 9878),	-- Sorcerer Hat
+							i( 9883),	-- Sorcerer Pants
+							i( 6423),	-- Blackforge Greaves
+							i( 6411),	-- Chief Brigadier Armor
+							i( 6432),	-- Imperial Cloak
+							i( 4061),	-- Imperial Leather Bracers
+							i( 6428),	-- Mistscape Gloves
+							i( 4734),	-- Mistscape Mantle
+							i( 6429),	-- Mistscape Wizard Hat
+							i(10302),	-- Pattern: Red Mageweave Pants
+							i( 7471),	-- Regal Gloves
+							i( 9906),	-- Royal Sash
+							i(10604), 	-- Plans: Heavy Mithril Helm
+							i( 9920),	-- Tracker's Gloves
+							i( 9925),	-- Tracker's Wristguards
+							i( 8385),	-- Pattern: Turtle Scale Gloves
 						},
 						["description"] = "Found in the Hall of the Crafters after you defeat Archaedas. Contains 2-3 items. Has a very large loot table far exceeding those listed.",
 						["model"] = "World\\Generic\\Passivedoodads\\Furniture\\Containers\\Titanchest.mdx",
