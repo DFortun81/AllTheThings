@@ -1608,8 +1608,10 @@ _.Zones =
 					qh( 32412),	-- One Last Grasp
 					q(24583),	-- Patchwerk Must Die!
 					qh( 14036),	-- Pilgrim's Bounty
-					qa( 13418),	-- Preparations for War
+					qa(13418),	-- Preparations for War
+						["sourceQuests"] = { 49537 }	-- Warchief's Command: Icecrown!
 					qh( 13419),	-- Preparations for War
+						["sourceQuests"] = { 49555 }	-- Hero's Call: Icecrown!
 					q(24586),	-- Razorscale Must Die!
 					q(24579),	-- Sartharion Must Die!
 					q(13845),	-- Sealed Vial of Poison
@@ -1645,6 +1647,10 @@ _.Zones =
 					qh( 32404),	-- Violence in the Arena
 					qa( 14203),	-- Waterlogged Recipe
 					q(12521),	-- Where in the World is Hemet Nesingwary?
+						["sourceQuests"] = { 
+							{ 49535 }	-- Warchief's Command: Sholazar Basin!
+							{ 49553 }	-- Hero's Call: Sholazar Basin!
+						},
 					q(24588),	-- XT-002 Deconstructor Must Die!
 --]]
 					qh(32413, {	-- A Return to Krasarang

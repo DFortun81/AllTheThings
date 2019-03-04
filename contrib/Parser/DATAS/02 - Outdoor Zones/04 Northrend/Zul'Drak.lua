@@ -96,7 +96,11 @@ _.Zones =
 					qh( 13500),	-- Honor the Flame
 					qa( 13492),	-- Honor the Flame
 					q(12665),	-- I Sense a Disturbance
-					q(12902),	-- In Search Of Answers
+					q(12902),	-- In Search Of Answers 
+						["sourceQuests"] = { 
+							{ 49534 }	-- Warchief's Command: Zul'Drak!
+							{ 49552 }	-- Hero's Call: Zul'Drak!
+						},
 					q(12661),	-- Infiltrating Voltarus
 					q(12789),	-- Into the Breach!
 					q(12673),	-- It Rolls Downhill

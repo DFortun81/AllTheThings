@@ -791,7 +791,7 @@ _.Zones =
 							i(38761),
 							i(38762),
 						}),
-						-- qh( 12468),	-- The Conqueror's Task
+						-- qh( 12468),	-- The Conqueror's Task ["Sourecequest"] = { 39206 }	-- Warchief's Command: Grizzly Hills!
 						-- qh( 12487),	-- To Conquest Hold, But Be Careful!
 						-- qh( 12763),	-- Shifting Priorities
 						-- qh( 12791),	-- The Magical Kingdom of Dalaran

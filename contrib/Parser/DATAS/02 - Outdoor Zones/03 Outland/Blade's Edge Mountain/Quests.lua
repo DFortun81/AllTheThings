@@ -336,8 +336,10 @@ _.Zones =
 							i(31423),	-- Wolf Hewer's Axe
 						}),
 	--[[					
-						qh( 10486),	-- The Encroaching Wilderness
-						q(10455),	-- The Encroaching Wilderness
+						qh(10486),	-- The Encroaching Wilderness
+							["sourceQuests"] = { 39198 }, -- Warchief's Command: Blade's Edge Mountains!
+						qa(10455),	-- The Encroaching Wilderness
+							["sourceQuests"] = { 39199 }, -- Hero's Call: Blade's Edge Mountains!
 						q(10982),	-- The Eye of Haramad
 	--]]					
 						q(10912, {	-- The Hound-Master
