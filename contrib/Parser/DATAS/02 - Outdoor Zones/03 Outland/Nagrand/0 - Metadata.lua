@@ -4,7 +4,7 @@
 _.Zones =
 {
 	{	-- Outland
-		["mapID"] = 107,	-- Outland
+		["mapID"] = 101,	-- Outland
 		["groups"] = {
 			{	-- Nagrand (Outland)
 				["mapID"] = 107,	-- Nagrand (Outland)

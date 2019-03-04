@@ -9,15 +9,43 @@ _.Zones =
 			{	-- Nagrand (Outland)
 				["mapID"] = 107,	-- Nagrand (Outland)
 				["groups"] = {
-					n(-25,  {	-- Pet Battle
-						p(635), 	-- Adder
-						p(518), 	-- Clefthoof Runt
-						p(386), 	-- Prairie Dog
-						p(378), 	-- Rabbit
-						p(417), 	-- Rat
-						p(379), 	-- Squirrel
-						p(420), 	-- Toad
-					}),
+					{	-- Pet Battle
+						["npcID"] = -25,	-- Pet Battle
+						["groups"] = {
+							{	-- Adder
+								["crs"] = { 61325 },	-- Adder
+								["speciesID"] = 635,	-- Adder
+							},
+							{	-- Clefthoof Runt
+								["crs"] = { 62620 },	-- Clefthoof Runt
+								["speciesID"] = 518,	-- Clefthoof Runt
+							},
+							{	-- Prairie Dog
+								["crs"] = { 61141 },	-- Prairie Dog
+								["speciesID"] = 386,	-- Prairie Dog
+							},
+
+							{	-- Rat
+								["crs"] = { 61366 },	-- Rat
+								["speciesID"] = 417,	-- Rat
+							},
+							{	-- Squirrel
+								["crs"] = { 61081 },	-- Squirrel
+								["speciesID"] = 379,	-- Squirrel
+							},
+							{	-- Toad
+								["crs"] = { 61369 },	-- Toad
+								["speciesID"] = 420,	-- Toad
+							},
+							q(31924, { 	-- Narrok
+								["isDaily"] = true,
+								["qg"] = 66552,	-- Narrok <Master Pet Tamer>
+								["groups"] = {
+									i(89125)	-- Sack of Pet Supplies
+								},
+							}),
+						},
+					},
 				},
 			},
 		},
