@@ -250,6 +250,13 @@ _.Instances =
 						})
 					}),
 					n(-1, {	-- Common Boss Drops
+						["crs"] = {
+							1577,	-- Rage Winterchill
+							1578,	-- Anetheron
+							1579,	-- Kaz'rogal
+							1580,	-- Azgalor
+							1581,	-- Archimonde
+						},
 						["g"] = {
 							i(32285),	-- Design: Flashing Crimson Spinel
 							i(32303),	-- Design: Inscribed Pyrestone
@@ -259,27 +266,9 @@ _.Instances =
 							i(32289),	-- Design: Stormy Empyrean Sapphire
 							i(32307),	-- Design: Veiled Shadowsong Amethyst
 						},
-						["crs"] = {
-							1577,	-- Rage Winterchill
-							1578,	-- Anetheron
-							1579,	-- Kaz'rogal
-							1580,	-- Azgalor
-							1581,	-- Archimonde
-						},
 					}),
 					n( 0, {	-- Zone Drop
-						i(32946),	-- Claw of Molten Fury
-						i(32945),	-- Fist of Molten Fury
-						i(34009),	-- Hammer of Judgement 
-						i(32591),	-- Choker of Serrated Blades
-						i(32589),	-- Hellfire-Encased Pendant
-						i(32590),	-- Nethervoid Cloak
-						i(34010),	-- Pepe's Shroud of Pacification
-						i(32592),	-- Chestguard of Relentless Storms
-						i(32609),	-- Boots of the Divine Light
-						-- Recipes
-						i(32748, {		-- Pattern: Bindings of Lightning Reflexes
-							["crs"] = {
+						["crs"] = {
 								17898,    -- Abomination
 								17905,    -- Banshee
 								17897,    -- Crypt Fiend
@@ -289,34 +278,34 @@ _.Instances =
 								17895,    -- Ghoul
 								17908,    -- Giant Infernal
 								17899,    -- Shadowy Necromancer
-							},
-						}),
-						i(32751),	-- Pattern: Living Earth Shoulders
-						i(32755),	-- Pattern: Mantle of Nimble Thought
-						i(32745),	-- Pattern: Shoulderpads of Renewed Life
-						i(32752),	-- Pattern: Swiftheal Wraps
-						i(32746, {		-- Pattern: Swiftstrike Bracers
-							["crs"] = {
-								17898,    -- Abomination
-								17905,    -- Banshee
-								17897,    -- Crypt Fiend
-								17916,    -- Fel Stalker
-								17907,    -- Frost Wyrm
-								17906,    -- Gargoyle
-								17895,    -- Ghoul
-								17908,    -- Giant Infernal
-								17899,    -- Shadowy Necromancer
-							},
-						}),
-						{	-- Plans: Dawnsteel Shoulders
-							["itemID"] = 32739,	-- Plans: Dawnsteel Shoulders
 						},
-						{	-- Plans: Dawnsteel Shoulders
-							["itemID"] = 35530,	-- Plans: Dawnsteel Shoulders
-							["spellID"] = 0,	-- This is now available via 32739, need to delink the old plans from the recipe
-							["u"] = 1,
+						["g"] = {
+							i(32609),	-- Boots of the Divine Light
+							i(32592),	-- Chestguard of Relentless Storms
+							i(32591),	-- Choker of Serrated Blades
+							i(32946),	-- Claw of Molten Fury
+							i(32945),	-- Fist of Molten Fury
+							i(34009),	-- Hammer of Judgement 
+							i(32589),	-- Hellfire-Encased Pendant
+							i(32590),	-- Nethervoid Cloak
+							i(34010),	-- Pepe's Shroud of Pacification
+							-- Recipes
+							i(32748),	-- Pattern: Bindings of Lightning Reflexes
+							i(32751),	-- Pattern: Living Earth Shoulders
+							i(32755),	-- Pattern: Mantle of Nimble Thought
+							i(32745),	-- Pattern: Shoulderpads of Renewed Life
+							i(32752),	-- Pattern: Swiftheal Wraps
+							i(32746),	-- Pattern: Swiftstrike Bracers
+							i(32736),	-- Plans: Swiftsteel Bracers
+							{	-- Plans: Dawnsteel Shoulders
+								["itemID"] = 32739,	-- Plans: Dawnsteel Shoulders
+							},
+							{	-- Plans: Dawnsteel Shoulders
+								["itemID"] = 35530,	-- Plans: Dawnsteel Shoulders
+								["spellID"] = 0,	-- This is now available via 32739, need to delink the old plans from the recipe
+								["u"] = 1,
+							},
 						},
-						i(32736),	-- Plans: Swiftsteel Bracers
 					}),
 					e(1577, {	-- Rage Winterchill
 						["groups"] = {
