@@ -22,12 +22,228 @@ _.Instances =
 							},
 						},
 						n(0, {		-- Zone Drop
-							i(39467),	-- Minion Bracers
-							i(39427),	-- Omen of Ruin
-							i(39468),	-- The Stray
-							i(39473),	-- Contortion
-							i(39472),	-- Chain of Latent Energies
-							i(39470),	-- Medallion of the Disgraced
+							i(39467, {	-- Minion Bracers
+								["crs"] = {
+									16018, -- Bile Retcher
+									16167, -- Bony Construct
+									15975, -- Carrion Spinner
+									15978, -- Crypt Reaver
+									16146, -- Death Knight
+									16145, -- Death Knight Captain
+									16163, -- Death Knight Cavalier
+									16067, -- Deathcharger Steed
+									15974, -- Dread Creeper
+									16036, -- Frenzied Bat
+									16244, -- Infectious Ghoul
+									16021, -- Living Monstrosity
+									16020, -- Mad Scientist
+									16297, -- Mutated Grub
+									15981, -- Naxxramas Acolyte
+									15980, -- Naxxramas Cultist
+									16165, -- Necro Knight
+									16017, -- Patchwork Golem
+									16037, -- Plagued Bat
+									16447, -- Plagued Ghoul
+									16154, -- Risen Squire
+									16164, -- Shade of Naxxramas
+									16193, -- Skeletal Smith
+									16029, -- Sludge Belcher
+									30071, -- Stitched Colossus
+									16025, -- Stitched Giant
+									16168, -- Stoneskin Gargoyle
+									16022, -- Surgical Assistant
+									15979, -- Tomb Horror
+									16194, -- Unholy Axe
+									16215, -- Unholy Staff
+									16216, -- Unholy Swords
+									15976, -- Venom Stalker
+								},
+							}),
+							i(39427, {	-- Omen of Ruin
+								["crs"] = {
+									16018, -- Bile Retcher
+									16167, -- Bony Construct
+									15975, -- Carrion Spinner
+									15978, -- Crypt Reaver
+									16146, -- Death Knight
+									16145, -- Death Knight Captain
+									16163, -- Death Knight Cavalier
+									16067, -- Deathcharger Steed
+									15974, -- Dread Creeper
+									16036, -- Frenzied Bat
+									16244, -- Infectious Ghoul
+									16021, -- Living Monstrosity
+									16020, -- Mad Scientist
+									16297, -- Mutated Grub
+									15981, -- Naxxramas Acolyte
+									15980, -- Naxxramas Cultist
+									16165, -- Necro Knight
+									16017, -- Patchwork Golem
+									16037, -- Plagued Bat
+									16447, -- Plagued Ghoul
+									16154, -- Risen Squire
+									16164, -- Shade of Naxxramas
+									16193, -- Skeletal Smith
+									16029, -- Sludge Belcher
+									30071, -- Stitched Colossus
+									16025, -- Stitched Giant
+									16168, -- Stoneskin Gargoyle
+									16022, -- Surgical Assistant
+									15979, -- Tomb Horror
+									16194, -- Unholy Axe
+									16215, -- Unholy Staff
+									16216, -- Unholy Swords
+									15976, -- Venom Stalker
+								},
+							}),
+							i(39468, {	-- The Stray
+								["crs"] = {
+									16018, -- Bile Retcher
+									16167, -- Bony Construct
+									15975, -- Carrion Spinner
+									15978, -- Crypt Reaver
+									16146, -- Death Knight
+									16145, -- Death Knight Captain
+									16163, -- Death Knight Cavalier
+									16067, -- Deathcharger Steed
+									15974, -- Dread Creeper
+									16036, -- Frenzied Bat
+									16244, -- Infectious Ghoul
+									16021, -- Living Monstrosity
+									16020, -- Mad Scientist
+									16297, -- Mutated Grub
+									15981, -- Naxxramas Acolyte
+									15980, -- Naxxramas Cultist
+									16165, -- Necro Knight
+									16017, -- Patchwork Golem
+									16037, -- Plagued Bat
+									16447, -- Plagued Ghoul
+									16154, -- Risen Squire
+									16164, -- Shade of Naxxramas
+									16193, -- Skeletal Smith
+									16029, -- Sludge Belcher
+									30071, -- Stitched Colossus
+									16025, -- Stitched Giant
+									16168, -- Stoneskin Gargoyle
+									16022, -- Surgical Assistant
+									15979, -- Tomb Horror
+									16194, -- Unholy Axe
+									16215, -- Unholy Staff
+									16216, -- Unholy Swords
+									15976, -- Venom Stalker
+								},
+							}),
+							i(39473, {	-- Contortion
+								["crs"] = {
+									16018, -- Bile Retcher
+									16167, -- Bony Construct
+									15975, -- Carrion Spinner
+									15978, -- Crypt Reaver
+									16146, -- Death Knight
+									16145, -- Death Knight Captain
+									16163, -- Death Knight Cavalier
+									16067, -- Deathcharger Steed
+									15974, -- Dread Creeper
+									16036, -- Frenzied Bat
+									16244, -- Infectious Ghoul
+									16021, -- Living Monstrosity
+									16020, -- Mad Scientist
+									16297, -- Mutated Grub
+									15981, -- Naxxramas Acolyte
+									15980, -- Naxxramas Cultist
+									16165, -- Necro Knight
+									16017, -- Patchwork Golem
+									16037, -- Plagued Bat
+									16447, -- Plagued Ghoul
+									16154, -- Risen Squire
+									16164, -- Shade of Naxxramas
+									16193, -- Skeletal Smith
+									16029, -- Sludge Belcher
+									30071, -- Stitched Colossus
+									16025, -- Stitched Giant
+									16168, -- Stoneskin Gargoyle
+									16022, -- Surgical Assistant
+									15979, -- Tomb Horror
+									16194, -- Unholy Axe
+									16215, -- Unholy Staff
+									16216, -- Unholy Swords
+									15976, -- Venom Stalker
+								},
+							}),
+							i(39472, {	-- Chain of Latent Energies
+								["crs"] = {
+									16018, -- Bile Retcher
+									16167, -- Bony Construct
+									15975, -- Carrion Spinner
+									15978, -- Crypt Reaver
+									16146, -- Death Knight
+									16145, -- Death Knight Captain
+									16163, -- Death Knight Cavalier
+									16067, -- Deathcharger Steed
+									15974, -- Dread Creeper
+									16036, -- Frenzied Bat
+									16244, -- Infectious Ghoul
+									16021, -- Living Monstrosity
+									16020, -- Mad Scientist
+									16297, -- Mutated Grub
+									15981, -- Naxxramas Acolyte
+									15980, -- Naxxramas Cultist
+									16165, -- Necro Knight
+									16017, -- Patchwork Golem
+									16037, -- Plagued Bat
+									16447, -- Plagued Ghoul
+									16154, -- Risen Squire
+									16164, -- Shade of Naxxramas
+									16193, -- Skeletal Smith
+									16029, -- Sludge Belcher
+									30071, -- Stitched Colossus
+									16025, -- Stitched Giant
+									16168, -- Stoneskin Gargoyle
+									16022, -- Surgical Assistant
+									15979, -- Tomb Horror
+									16194, -- Unholy Axe
+									16215, -- Unholy Staff
+									16216, -- Unholy Swords
+									15976, -- Venom Stalker
+								},
+							}),
+							i(39470, {	-- Medallion of the Disgraced
+								["crs"] = {
+									16018, -- Bile Retcher
+									16167, -- Bony Construct
+									15975, -- Carrion Spinner
+									15978, -- Crypt Reaver
+									16146, -- Death Knight
+									16145, -- Death Knight Captain
+									16163, -- Death Knight Cavalier
+									16067, -- Deathcharger Steed
+									15974, -- Dread Creeper
+									16036, -- Frenzied Bat
+									16244, -- Infectious Ghoul
+									16021, -- Living Monstrosity
+									16020, -- Mad Scientist
+									16297, -- Mutated Grub
+									15981, -- Naxxramas Acolyte
+									15980, -- Naxxramas Cultist
+									16165, -- Necro Knight
+									16017, -- Patchwork Golem
+									16037, -- Plagued Bat
+									16447, -- Plagued Ghoul
+									16154, -- Risen Squire
+									16164, -- Shade of Naxxramas
+									16193, -- Skeletal Smith
+									16029, -- Sludge Belcher
+									30071, -- Stitched Colossus
+									16025, -- Stitched Giant
+									16168, -- Stoneskin Gargoyle
+									16022, -- Surgical Assistant
+									15979, -- Tomb Horror
+									16194, -- Unholy Axe
+									16215, -- Unholy Staff
+									16216, -- Unholy Swords
+									15976, -- Venom Stalker
+								},
+							}),
 						}),
 						n(-368, {	-- The Arachnid Quarter
 							ach(562),	-- The Arachnid Quarter (10 player)
@@ -672,13 +888,265 @@ _.Instances =
 							},
 						},
 						n(0, {		-- Zone Drop
-							i(40410),	-- Shadow of the Ghoul
-							i(40409),	-- Boots of the Escaped Captive
-							i(40414),	-- Shoulderguards of the Undaunted
-							i(40408),	-- Haunting Call
-							i(40407),	-- Silent Crusader
-							i(40406),	-- Inevitable Defeat
-							i(40412),	-- Ousted Bead Necklace
+							i(40410, {	-- Shadow of the Ghoul
+								["crs"] = {
+									16018, -- Bile Retcher
+									16167, -- Bony Construct
+									15975, -- Carrion Spinner
+									15978, -- Crypt Reaver
+									16146, -- Death Knight
+									16145, -- Death Knight Captain
+									16163, -- Death Knight Cavalier
+									16067, -- Deathcharger Steed
+									15974, -- Dread Creeper
+									16036, -- Frenzied Bat
+									16244, -- Infectious Ghoul
+									16021, -- Living Monstrosity
+									16020, -- Mad Scientist
+									16297, -- Mutated Grub
+									15981, -- Naxxramas Acolyte
+									15980, -- Naxxramas Cultist
+									16165, -- Necro Knight
+									16017, -- Patchwork Golem
+									16037, -- Plagued Bat
+									16447, -- Plagued Ghoul
+									16154, -- Risen Squire
+									16164, -- Shade of Naxxramas
+									16193, -- Skeletal Smith
+									16029, -- Sludge Belcher
+									30071, -- Stitched Colossus
+									16025, -- Stitched Giant
+									16168, -- Stoneskin Gargoyle
+									16022, -- Surgical Assistant
+									15979, -- Tomb Horror
+									16194, -- Unholy Axe
+									16215, -- Unholy Staff
+									16216, -- Unholy Swords
+									15976, -- Venom Stalker
+								},
+							}),
+							i(40409, {	-- Boots of the Escaped Captive
+								["crs"] = {
+									16018, -- Bile Retcher
+									16167, -- Bony Construct
+									15975, -- Carrion Spinner
+									15978, -- Crypt Reaver
+									16146, -- Death Knight
+									16145, -- Death Knight Captain
+									16163, -- Death Knight Cavalier
+									16067, -- Deathcharger Steed
+									15974, -- Dread Creeper
+									16036, -- Frenzied Bat
+									16244, -- Infectious Ghoul
+									16021, -- Living Monstrosity
+									16020, -- Mad Scientist
+									16297, -- Mutated Grub
+									15981, -- Naxxramas Acolyte
+									15980, -- Naxxramas Cultist
+									16165, -- Necro Knight
+									16017, -- Patchwork Golem
+									16037, -- Plagued Bat
+									16447, -- Plagued Ghoul
+									16154, -- Risen Squire
+									16164, -- Shade of Naxxramas
+									16193, -- Skeletal Smith
+									16029, -- Sludge Belcher
+									30071, -- Stitched Colossus
+									16025, -- Stitched Giant
+									16168, -- Stoneskin Gargoyle
+									16022, -- Surgical Assistant
+									15979, -- Tomb Horror
+									16194, -- Unholy Axe
+									16215, -- Unholy Staff
+									16216, -- Unholy Swords
+									15976, -- Venom Stalker
+								},
+							}),
+							i(40414, {	-- Shoulderguards of the Undaunted
+								["crs"] = {
+									16018, -- Bile Retcher
+									16167, -- Bony Construct
+									15975, -- Carrion Spinner
+									15978, -- Crypt Reaver
+									16146, -- Death Knight
+									16145, -- Death Knight Captain
+									16163, -- Death Knight Cavalier
+									16067, -- Deathcharger Steed
+									15974, -- Dread Creeper
+									16036, -- Frenzied Bat
+									16244, -- Infectious Ghoul
+									16021, -- Living Monstrosity
+									16020, -- Mad Scientist
+									16297, -- Mutated Grub
+									15981, -- Naxxramas Acolyte
+									15980, -- Naxxramas Cultist
+									16165, -- Necro Knight
+									16017, -- Patchwork Golem
+									16037, -- Plagued Bat
+									16447, -- Plagued Ghoul
+									16154, -- Risen Squire
+									16164, -- Shade of Naxxramas
+									16193, -- Skeletal Smith
+									16029, -- Sludge Belcher
+									30071, -- Stitched Colossus
+									16025, -- Stitched Giant
+									16168, -- Stoneskin Gargoyle
+									16022, -- Surgical Assistant
+									15979, -- Tomb Horror
+									16194, -- Unholy Axe
+									16215, -- Unholy Staff
+									16216, -- Unholy Swords
+									15976, -- Venom Stalker
+								},
+							}),
+							i(40408, {	-- Haunting Call
+								["crs"] = {
+									16018, -- Bile Retcher
+									16167, -- Bony Construct
+									15975, -- Carrion Spinner
+									15978, -- Crypt Reaver
+									16146, -- Death Knight
+									16145, -- Death Knight Captain
+									16163, -- Death Knight Cavalier
+									16067, -- Deathcharger Steed
+									15974, -- Dread Creeper
+									16036, -- Frenzied Bat
+									16244, -- Infectious Ghoul
+									16021, -- Living Monstrosity
+									16020, -- Mad Scientist
+									16297, -- Mutated Grub
+									15981, -- Naxxramas Acolyte
+									15980, -- Naxxramas Cultist
+									16165, -- Necro Knight
+									16017, -- Patchwork Golem
+									16037, -- Plagued Bat
+									16447, -- Plagued Ghoul
+									16154, -- Risen Squire
+									16164, -- Shade of Naxxramas
+									16193, -- Skeletal Smith
+									16029, -- Sludge Belcher
+									30071, -- Stitched Colossus
+									16025, -- Stitched Giant
+									16168, -- Stoneskin Gargoyle
+									16022, -- Surgical Assistant
+									15979, -- Tomb Horror
+									16194, -- Unholy Axe
+									16215, -- Unholy Staff
+									16216, -- Unholy Swords
+									15976, -- Venom Stalker
+								},
+							}),
+							i(40407, {	-- Silent Crusader
+								["crs"] = {
+									16018, -- Bile Retcher
+									16167, -- Bony Construct
+									15975, -- Carrion Spinner
+									15978, -- Crypt Reaver
+									16146, -- Death Knight
+									16145, -- Death Knight Captain
+									16163, -- Death Knight Cavalier
+									16067, -- Deathcharger Steed
+									15974, -- Dread Creeper
+									16036, -- Frenzied Bat
+									16244, -- Infectious Ghoul
+									16021, -- Living Monstrosity
+									16020, -- Mad Scientist
+									16297, -- Mutated Grub
+									15981, -- Naxxramas Acolyte
+									15980, -- Naxxramas Cultist
+									16165, -- Necro Knight
+									16017, -- Patchwork Golem
+									16037, -- Plagued Bat
+									16447, -- Plagued Ghoul
+									16154, -- Risen Squire
+									16164, -- Shade of Naxxramas
+									16193, -- Skeletal Smith
+									16029, -- Sludge Belcher
+									30071, -- Stitched Colossus
+									16025, -- Stitched Giant
+									16168, -- Stoneskin Gargoyle
+									16022, -- Surgical Assistant
+									15979, -- Tomb Horror
+									16194, -- Unholy Axe
+									16215, -- Unholy Staff
+									16216, -- Unholy Swords
+									15976, -- Venom Stalker
+								},
+							}),
+							i(40406, {	-- Inevitable Defeat
+								["crs"] = {
+									16018, -- Bile Retcher
+									16167, -- Bony Construct
+									15975, -- Carrion Spinner
+									15978, -- Crypt Reaver
+									16146, -- Death Knight
+									16145, -- Death Knight Captain
+									16163, -- Death Knight Cavalier
+									16067, -- Deathcharger Steed
+									15974, -- Dread Creeper
+									16036, -- Frenzied Bat
+									16244, -- Infectious Ghoul
+									16021, -- Living Monstrosity
+									16020, -- Mad Scientist
+									16297, -- Mutated Grub
+									15981, -- Naxxramas Acolyte
+									15980, -- Naxxramas Cultist
+									16165, -- Necro Knight
+									16017, -- Patchwork Golem
+									16037, -- Plagued Bat
+									16447, -- Plagued Ghoul
+									16154, -- Risen Squire
+									16164, -- Shade of Naxxramas
+									16193, -- Skeletal Smith
+									16029, -- Sludge Belcher
+									30071, -- Stitched Colossus
+									16025, -- Stitched Giant
+									16168, -- Stoneskin Gargoyle
+									16022, -- Surgical Assistant
+									15979, -- Tomb Horror
+									16194, -- Unholy Axe
+									16215, -- Unholy Staff
+									16216, -- Unholy Swords
+									15976, -- Venom Stalker
+								},
+							}),
+							i(40412, {	-- Ousted Bead Necklace
+								["crs"] = {
+									16018, -- Bile Retcher
+									16167, -- Bony Construct
+									15975, -- Carrion Spinner
+									15978, -- Crypt Reaver
+									16146, -- Death Knight
+									16145, -- Death Knight Captain
+									16163, -- Death Knight Cavalier
+									16067, -- Deathcharger Steed
+									15974, -- Dread Creeper
+									16036, -- Frenzied Bat
+									16244, -- Infectious Ghoul
+									16021, -- Living Monstrosity
+									16020, -- Mad Scientist
+									16297, -- Mutated Grub
+									15981, -- Naxxramas Acolyte
+									15980, -- Naxxramas Cultist
+									16165, -- Necro Knight
+									16017, -- Patchwork Golem
+									16037, -- Plagued Bat
+									16447, -- Plagued Ghoul
+									16154, -- Risen Squire
+									16164, -- Shade of Naxxramas
+									16193, -- Skeletal Smith
+									16029, -- Sludge Belcher
+									30071, -- Stitched Colossus
+									16025, -- Stitched Giant
+									16168, -- Stoneskin Gargoyle
+									16022, -- Surgical Assistant
+									15979, -- Tomb Horror
+									16194, -- Unholy Axe
+									16215, -- Unholy Staff
+									16216, -- Unholy Swords
+									15976, -- Venom Stalker
+								},
+							}),
 						}),
 						n(-368, { 	-- The Arachnid Quarter
 							ach(563),	-- The Arachnid Quarter (25 player)
