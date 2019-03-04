@@ -527,6 +527,10 @@ settings.UpdateMode = function(self)
 	else
 		app.GroupRequirementsFilter = app.NoFilter;
 	end
+	app:UnregisterEvent("TAXIMAP_OPENED");
+	if self:Get("Thing:FlightPaths") or self:Get("DebugMode") then
+		app:RegisterEvent("TAXIMAP_OPENED");
+	end
 end
 
 -- The ALL THE THINGS Epic Logo!

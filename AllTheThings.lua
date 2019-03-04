@@ -3715,7 +3715,6 @@ end
 			end
 		end
 	end
-	app:RegisterEvent("TAXIMAP_OPENED");
 	app.events.TAXIMAP_OPENED = app.CacheFlightPathDataForCurrentNode;
 	app.BaseFlightPath = {
 		__index = function(t, key)
