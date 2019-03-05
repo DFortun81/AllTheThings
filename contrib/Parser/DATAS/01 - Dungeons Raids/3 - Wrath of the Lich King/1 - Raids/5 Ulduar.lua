@@ -41,31 +41,7 @@ _.Instances =
 						},
 					}),
 					d(14, {	-- Normal
-						n(0, {		-- Zone Drop
-							["groups"] = {
-								i(46351),	-- Bloodcrush Cudgel
-								i(45605),	-- Daschal's Bite
-								i(46350),	-- Pillar of Fortitude
-								i(46342),	-- Golemheart Longbow
-								i(46339),	-- Mimiron's Repeater
-								i(46343),	-- Fervor of the Protectorate
-								i(45539),	-- Pendant of Focused Energies
-								i(45538),	-- Titanstone Pendant
-								i(46344),	-- Iceshear Mantle
-								i(45543),	-- Shoulders of Misfortune
-								i(46341),	-- Drape of the Spellweaver
-								i(46347),	-- Cloak of the Dormant Blaze
-								i(45541),	-- Shroud of Alteration
-								i(46345),	-- Bracers of Righteous Reformation
-								i(46340),	-- Adamant Handguards
-								i(45549),	-- Grips of Chaos
-								i(45548),	-- Belt of the Sleeper
-								i(45547),	-- Relic Hunter's Cord
-								i(45544),	-- Leggings of the Tortured Earth
-								i(46346),	-- Boots of Unsettled Prey
-								i(45542),	-- Greaves of the Stonewarder
-								i(45540),	-- Bladebearer's Signet
-							},
+						n(0, {	-- Zone Drop
 							["crs"] = {
 								34183,	-- Arachnopod Destroyer
 								34197,	-- Chamber Overseer
@@ -101,8 +77,32 @@ _.Instances =
 								34271,	-- XD-175 Compactobot
 								34269,	-- XR-949 Salvagebot
 							},
+							["groups"] = {
+								i(46351),	-- Bloodcrush Cudgel
+								i(45605),	-- Daschal's Bite
+								i(46350),	-- Pillar of Fortitude
+								i(46342),	-- Golemheart Longbow
+								i(46339),	-- Mimiron's Repeater
+								i(46343),	-- Fervor of the Protectorate
+								i(45539),	-- Pendant of Focused Energies
+								i(45538),	-- Titanstone Pendant
+								i(46344),	-- Iceshear Mantle
+								i(45543),	-- Shoulders of Misfortune
+								i(46341),	-- Drape of the Spellweaver
+								i(46347),	-- Cloak of the Dormant Blaze
+								i(45541),	-- Shroud of Alteration
+								i(46345),	-- Bracers of Righteous Reformation
+								i(46340),	-- Adamant Handguards
+								i(45549),	-- Grips of Chaos
+								i(45548),	-- Belt of the Sleeper
+								i(45547),	-- Relic Hunter's Cord
+								i(45544),	-- Leggings of the Tortured Earth
+								i(46346),	-- Boots of Unsettled Prey
+								i(45542),	-- Greaves of the Stonewarder
+								i(45540),	-- Bladebearer's Signet
+							},
 						}),
-						n(-1, { -- Common Boss Drop
+						n(-1, {	-- Common Boss Drop
 							["crs"] = {
 								33113,	-- Flame Leviathan
 								33118,	-- Ignis the Furnace Master
@@ -142,7 +142,7 @@ _.Instances =
 								i(45091),	-- Plans: Treads of Destiny
 							},
 						}),
-						n(-17, { -- Quests
+						n(-17, {	-- Quests
 							{
 								["questID"] = 13607,	-- The Celestial Planetarium
 								["sourceQuest"] = 13604,	-- Archivum Data Disc

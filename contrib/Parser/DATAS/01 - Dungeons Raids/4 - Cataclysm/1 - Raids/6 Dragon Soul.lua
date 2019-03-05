@@ -8,15 +8,15 @@ _.Instances =
 			inst(187, { 	-- Dragon Soul
 				["groups"] = {
 					n(-10066, {	-- Legendary Questline
-						["classes"] = { 4 },    -- Rogue
+						["classes"] = { 4 },	-- Rogue
 						["title"] = "Fangs of the Father",
 						["icon"] = "Interface\\Icons\\ability_backstab",
 						["isRaid"] = true,
 						["lvl"] = 85,
 --[[					["maps"] = {
 							25,	-- Hillsbrad Foothills (maybe needs specific rogue building id)
-							74, -- Tanaris: Caverns of Time Entrance
-							75, -- Tanaris: Caverns of Time
+							74,	-- Tanaris: Caverns of Time Entrance
+							75,	-- Tanaris: Caverns of Time
 							84,	-- Stormwind City
 							85,	-- Orgrimmar
 							86,	-- Orgrimmar: The Drag
@@ -70,6 +70,15 @@ _.Instances =
 						["ignoreBonus"] = true,
 						["groups"] = {
 							n(-1, {	-- Common Boss Drops
+								["crs"] = {
+									55265,	-- Morchok
+									55308,	-- Warlord Zon'ozz
+									55312,	-- Yor'sahj the Unsleeping
+									55689,	-- Hagara the Stormbinder
+									55294,	-- Ultraxion
+									56427,	-- Warmaster Blackhorn
+									80675,	-- Auridormi <Raid Finder Guardian>
+								},
 								["groups"] = {
 									i(78869, {	-- Crown of the Corrupted Conqueror
 										i(78790),	-- Faceguard of Radiant Glory
@@ -209,15 +218,6 @@ _.Instances =
 									i(77983),	-- Indomitable Pride
 									i(77979),	-- Vial of Shadows
 									i(77981),	-- Windward Heart
-								},
-								["crs"] = {
-									55265, -- Morchok
-									55308, -- Warlord Zon'ozz
-									55312, -- Yor'sahj the Unsleeping
-									55689, -- Hagara the Stormbinder
-									55294, -- Ultraxion
-									56427, -- Warmaster Blackhorn
-									80675,	-- Auridormi <Raid Finder Guardian>
 								},
 							}),
 							ach(6106, {	-- Siege of Wyrmrest Temple
@@ -496,6 +496,22 @@ _.Instances =
 								},
 							},
 							n(  0, {	-- Zone Drop
+								["crs"] = {
+									57333,	-- Acidic Globule
+									57160,	-- Ancient Water Lord
+									57890,	-- Claw of Go'rath
+									57384,	-- Cobalt Globule <Blood of Shu'ma>
+									57386,	-- Crimson Globule <Blood of Shu'ma>
+									57382,	-- Dark Globule <Blood of Shu'ma>
+									57158,	-- Earthen Destroyer
+									57159,	-- Earthen Soldier
+									57875,	-- Eye of Go'rath
+									57877,	-- Flail of Go'rath
+									57387,	-- Glowing Globule <Blood of Shu'ma>
+									57821,	-- Lieutenant Shara
+									57388,	-- Shadowed Globule <Blood of Shu'ma>
+									57280,	-- Twilight Siege Captain
+								},
 								["groups"] = {
 									i(78886),	-- Belt of Ghostly Graces
 									i(78885),	-- Dragoncarver Belt
@@ -526,22 +542,6 @@ _.Instances =
 									i(78878),	-- Spine of the Thousand Cuts
 									i(78888),	-- Waistguard of Bleeding Bone
 									i(78889),	-- Waistplate of the Desecrated Future
-								},
-								["crs"] = {
-									57333,	-- Acidic Globule
-									57160,	-- Ancient Water Lord
-									57890,	-- Claw of Go'rath
-									57384,	-- Cobalt Globule <Blood of Shu'ma>
-									57386,	-- Crimson Globule <Blood of Shu'ma>
-									57382,	-- Dark Globule <Blood of Shu'ma>
-									57158,	-- Earthen Destroyer
-									57159,	-- Earthen Soldier
-									57875,	-- Eye of Go'rath
-									57877,	-- Flail of Go'rath
-									57387,	-- Glowing Globule <Blood of Shu'ma>
-									57821,	-- Lieutenant Shara
-									57388,	-- Shadowed Globule <Blood of Shu'ma>
-									57280,	-- Twilight Siege Captain
 								},
 							}),
 							{	-- Siege of Wyrmrest Temple
@@ -1018,8 +1018,24 @@ _.Instances =
 									},
 								},
 							},
-							n(  0, {	-- Zone Drop
-								["groups"] = {
+							n(0, {	-- Zone Drop
+								["crs"] = {
+									57333,	-- Acidic Globule
+									57160,	-- Ancient Water Lord
+									57890,	-- Claw of Go'rath
+									57384,	-- Cobalt Globule <Blood of Shu'ma>
+									57386,	-- Crimson Globule <Blood of Shu'ma>
+									57382,	-- Dark Globule <Blood of Shu'ma>
+									57158,	-- Earthen Destroyer
+									57159,	-- Earthen Soldier
+									57875,	-- Eye of Go'rath
+									57877,	-- Flail of Go'rath
+									57387,	-- Glowing Globule <Blood of Shu'ma>
+									57821,	-- Lieutenant Shara
+									57388,	-- Shadowed Globule <Blood of Shu'ma>
+									57280,	-- Twilight Siege Captain
+								},
+								["g"] = {
 									i(78886),	-- Belt of Ghostly Graces
 									i(78885),	-- Dragoncarver Belt
 									i(77938),	-- Dragonfire Orb
@@ -1028,12 +1044,7 @@ _.Instances =
 									i(78882),	-- Nightblind Cinch
 									i(72006),	-- Pattern: Bladeshadow Leggings
 									i(72010),	-- Pattern: Bladeshadow Wristguards
-									i(72008, {    -- Pattern: Bracers of Flowing Serenity
-										["crs"] = {
-											57877,    -- Flail of Go'rath
-											57388,    -- Shadowed Globule <Blood of Shu'ma>
-										},
-									}),
+									i(72008),	-- Pattern: Bracers of Flowing Serenity
 									i(72008),	-- Pattern: Bracers of Flowing Serenity
 									i(72011),	-- Pattern: Bracers of the Hunter-Killer
 									i(72004),	-- Pattern: Bracers of Unconquered Power
@@ -1055,22 +1066,6 @@ _.Instances =
 									i(78878),	-- Spine of the Thousand Cuts
 									i(78888),	-- Waistguard of Bleeding Bone
 									i(78889),	-- Waistplate of the Desecrated Future
-								},
-								["crs"] = {
-									57333,	-- Acidic Globule
-									57160,	-- Ancient Water Lord
-									57890,	-- Claw of Go'rath
-									57384,	-- Cobalt Globule <Blood of Shu'ma>
-									57386,	-- Crimson Globule <Blood of Shu'ma>
-									57382,	-- Dark Globule <Blood of Shu'ma>
-									57158,	-- Earthen Destroyer
-									57159,	-- Earthen Soldier
-									57875,	-- Eye of Go'rath
-									57877,	-- Flail of Go'rath
-									57387,	-- Glowing Globule <Blood of Shu'ma>
-									57821,	-- Lieutenant Shara
-									57388,	-- Shadowed Globule <Blood of Shu'ma>
-									57280,	-- Twilight Siege Captain
 								},
 							}),						
 							{	-- Siege of Wyrmrest Temple
@@ -1416,17 +1411,17 @@ _.Instances =
 				["isRaid"] = true,
 				["sharedLockout"] = 1,
 				["lvl"] = 85,
-				["mapID"] = 409, --  Wyrmrest Temple [Starting Area]
+				["mapID"] = 409,	--  Wyrmrest Temple [Starting Area]
 				["maps"] = { 
-					412, -- Dragon Soul: Eye of Eternity
-					415, -- Dragon Soul: The Maelstrom
+					412,	-- Dragon Soul: Eye of Eternity
+					415,	-- Dragon Soul: The Maelstrom
 					410,
 					411,
 					413,
 					414,
 				},
 			}),
-		},					
+		},
 		["tierID"] = 4
 	},	
 };
