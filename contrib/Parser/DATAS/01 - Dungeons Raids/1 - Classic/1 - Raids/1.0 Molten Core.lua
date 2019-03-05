@@ -6,7 +6,95 @@ _.Instances = { tier(1, {	-- Classic
 	inst(741, { 	-- Molten Core
 		["groups"] = {
 			n(-1, {	-- Common Boss Drop
+				i(18260, {	-- Formula: Enchant Weapon - Healing Power
+					["crs"]	= {
+						12118,	-- Lucifron
+						11982,	-- Magmadar
+						12259,	-- Gehennas
+						12057,	-- Garr
+						12264,	-- Shazzrah
+						12056,	-- Baron Geddon
+						11988,	-- Golemagg the Incinerator
+					},
+				}),
+				i(18259, {	-- Formula: Enchant Weapon - Spellpower
+					["crs"]	= {
+						12118,	-- Lucifron
+						11982,	-- Magmadar
+						12259,	-- Gehennas
+						12057,	-- Garr
+						12264,	-- Shazzrah
+						12056,	-- Baron Geddon
+						11988,	-- Golemagg the Incinerator
+					},
+				}),
+				i(21371, {	-- Pattern: Core Felcloth Bag
+					["crs"]	= {
+						12118,	-- Lucifron
+						11982,	-- Magmadar
+						12259,	-- Gehennas
+						12057,	-- Garr
+						12264,	-- Shazzrah
+						12056,	-- Baron Geddon
+						11988,	-- Golemagg the Incinerator
+					},
+				}),
+				i(18265, {	-- Pattern: Flarecore Wraps
+					["crs"]	= {
+						12118,	-- Lucifron
+						11982,	-- Magmadar
+						12259,	-- Gehennas
+						12057,	-- Garr
+						12264,	-- Shazzrah
+						12056,	-- Baron Geddon
+						11988,	-- Golemagg the Incinerator
+					},
+				}),
 				i(18264, {	-- Plans: Elemental Sharpening Stone
+					["crs"]	= {
+						12118,	-- Lucifron
+						11982,	-- Magmadar
+						12259,	-- Gehennas
+						12057,	-- Garr
+						12264,	-- Shazzrah
+						12056,	-- Baron Geddon
+						11988,	-- Golemagg the Incinerator
+					},
+				}),
+				i(18257, {	-- Recipe: Major Rejuvenation Potion
+					["crs"]	= {
+						12118,	-- Lucifron
+						11982,	-- Magmadar
+						12259,	-- Gehennas
+						12057,	-- Garr
+						12264,	-- Shazzrah
+						12056,	-- Baron Geddon
+						11988,	-- Golemagg the Incinerator
+					},
+				}),
+				i(18290, {	-- Schematic: Biznicks 247x128 Accurascope
+					["crs"]	= {
+						12118,	-- Lucifron
+						11982,	-- Magmadar
+						12259,	-- Gehennas
+						12057,	-- Garr
+						12264,	-- Shazzrah
+						12056,	-- Baron Geddon
+						11988,	-- Golemagg the Incinerator
+					},
+				}),
+				i(18292, {	-- Schematic: Core Marksman Rifle
+					["crs"]	= {
+						12118,	-- Lucifron
+						11982,	-- Magmadar
+						12259,	-- Gehennas
+						12057,	-- Garr
+						12264,	-- Shazzrah
+						12056,	-- Baron Geddon
+						11988,	-- Golemagg the Incinerator
+					},
+				}),
+				i(18291, {	-- Schematic: Force Reactive Disk
 					["crs"]	= {
 						12118,	-- Lucifron
 						11982,	-- Magmadar
@@ -363,13 +451,6 @@ _.Instances = { tier(1, {	-- Classic
 				}),
 			}),
 			cr(12118, e(1519, { -- Lucifron
-				i(18260),	-- Formula: Enchant Weapon - Healing Power
-				i(18259),	-- Formula: Enchant Weapon - Spellpower
-				i(21371),	-- Pattern: Core Felcloth Bag
-				i(18265), 	-- Pattern: Flarecore Wraps
-				i(18257),	-- Recipe: Major Rejuvenation Potion
-				i(18292),	-- Schematic: Core Marksman Rifle
-				i(18291),	-- Schematic: Force Reactive Disc
 				i(18878),	-- Sorcerous Dagger
 				i(17077),	-- Crimson Shocker
 				i(18870),	-- Helm of the Lifegiver
@@ -393,13 +474,6 @@ _.Instances = { tier(1, {	-- Classic
 			--	})),
 			})),
 			cr(11982, e(1520, { -- Magmadar
-				i(18260),	-- Formula: Enchant Weapon - Healing Power
-				i(18259),	-- Formula: Enchant Weapon - Spellpower
-				i(21371),	-- Pattern: Core Felcloth Bag
-				i(18265), 	-- Pattern: Flarecore Wraps
-				i(18257),	-- Recipe: Major Rejuvenation Potion
-				i(18292), 	-- Schematic: Core Marksman Rifle
-				i(18291), 	-- Schematic: Force Reactive Disc
 				i(93034),	-- Blazing Rune (Pet)
 				i(17073),	-- Earthshaker
 				i(18822),	-- Obsidian Edged Blade
@@ -428,13 +502,6 @@ _.Instances = { tier(1, {	-- Classic
 				i(18820),	-- Talisman of Ephemeral Power
 			})),
 			cr(12259, e(1521, { -- Gehennas
-				i(18260),	-- Formula: Enchant Weapon - Healing Power
-				i(18259),	-- Formula: Enchant Weapon - Spellpower
-				i(21371),	-- Pattern: Core Felcloth Bag
-				i(18265), 	-- Pattern: Flarecore Wraps
-				i(18257),	-- Recipe: Major Rejuvenation Potion
-				i(18292), 	-- Schematic: Core Marksman Rifle
-				i(18291), 	-- Schematic: Force Reactive Disc
 				i(18878),	-- Sorcerous Dagger
 				i(17077),	-- Crimson Shocker
 				i(18870),	-- Helm of the Lifegiver
@@ -453,13 +520,6 @@ _.Instances = { tier(1, {	-- Classic
 				i(19147),	-- Ring of Spell Power
 			})),
 			cr(12057, e(1522, { -- Garr
-				i(18260),	-- Formula: Enchant Weapon - Healing Power
-				i(18259),	-- Formula: Enchant Weapon - Spellpower
-				i(21371),	-- Pattern: Core Felcloth Bag
-				i(18265), 	-- Pattern: Flarecore Wraps
-				i(18257),	-- Recipe: Major Rejuvenation Potion
-				i(18292), 	-- Schematic: Core Marksman Rifle
-				i(18291), 	-- Schematic: Force Reactive Disc
 				i(18564, {	-- Bindings of the Windseeker (Right)
 					["groups"] = {
 						i(19019, {	-- Thunderfury, Blessed Blade of the Windseeker
@@ -498,13 +558,6 @@ _.Instances = { tier(1, {	-- Classic
 				i(18820),	-- Talisman of Ephemeral Power
 			})),
 			cr(12264, e(1523, { -- Shazzrah
-				i(18260),	-- Formula: Enchant Weapon - Healing Power
-				i(18259),	-- Formula: Enchant Weapon - Spellpower
-				i(21371),	-- Pattern: Core Felcloth Bag
-				i(18265), 	-- Pattern: Flarecore Wraps
-				i(18257),	-- Recipe: Major Rejuvenation Potion
-				i(18292), 	-- Schematic: Core Marksman Rifle
-				i(18291), 	-- Schematic: Force Reactive Disc
 				i(18878),	-- Sorcerous Dagger
 				i(17077),	-- Crimson Shocker
 				i(18870),	-- Helm of the Lifegiver
@@ -523,13 +576,6 @@ _.Instances = { tier(1, {	-- Classic
 				i(19147),	-- Ring of Spell Power
 			})),
 			cr(12056, e(1524, { -- Baron Geddon
-				i(18260),	-- Formula: Enchant Weapon - Healing Power
-				i(18259),	-- Formula: Enchant Weapon - Spellpower
-				i(21371),	-- Pattern: Core Felcloth Bag
-				i(18265), 	-- Pattern: Flarecore Wraps
-				i(18257),	-- Recipe: Major Rejuvenation Potion
-				i(18292), 	-- Schematic: Core Marksman Rifle
-				i(18291), 	-- Schematic: Force Reactive Disc
 				i(18563, {	-- Bindings of the Windseeker (Left)
 					["groups"] = {
 						i(19019, {	-- Thunderfury, Blessed Blade of the Windseeker
@@ -580,13 +626,6 @@ _.Instances = { tier(1, {	-- Classic
 				i(19147),	-- Ring of Spell Power
 			})),
 			cr(11988, e(1526, { -- Golemagg the Incinerator
-				i(18260),	-- Formula: Enchant Weapon - Healing Power
-				i(18259),	-- Formula: Enchant Weapon - Spellpower
-				i(21371),	-- Pattern: Core Felcloth Bag
-				i(18265), 	-- Pattern: Flarecore Wraps
-				i(18257),	-- Recipe: Major Rejuvenation Potion
-				i(18292), 	-- Schematic: Core Marksman Rifle
-				i(18291), 	-- Schematic: Force Reactive Disc
 				i(93035),	-- Core of Hardened Ash (Pet)
 				i(17203),	-- Sulfuron Ingot
 				i(18822),	-- Obsidian Edged Blade 

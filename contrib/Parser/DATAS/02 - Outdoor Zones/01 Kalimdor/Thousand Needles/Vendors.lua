@@ -7,6 +7,14 @@ _.Zones =
 		m(64, {	-- Thousand Needles
 			["groups"] = {
 				n(-2,  {	-- Vendors
+					n(40475, {	-- Jinky Twizzlefixxit <Engineering Supplies>
+						["groups"] = {
+							{	-- Schematic: Lovingly Crafted Boomstick
+								["itemID"] = 13309,	-- Schematic: Lovingly Crafted Boomstick
+								["u"] = 7, -- now learned from trainer, schematic was removed from game
+							},
+						},
+					}),
 					n(4878, {	-- Montarr
 						["groups"] = {
 							un(2, i(6068)),	-- Recipe: Shadow Oil

@@ -95,6 +95,13 @@ _.Zones =
 						["coord"] = { 74.6, 42.6 },
 						["races"] = HORDE_ONLY,
 					}),
+					n(14637, {	-- Zorbin Fandazzle
+						["groups"] = {
+							i(19027),	-- Schematic: Snake Burst Firework
+						},
+						["coord"] = { 48.6, 44.8 },
+						["description"] = "Must complete quests 'Still With The Zapped Giants' and 'Even More Fuel For The Zapping' before he will sell to you.",
+					}),
 				}),
 			},
 		}),

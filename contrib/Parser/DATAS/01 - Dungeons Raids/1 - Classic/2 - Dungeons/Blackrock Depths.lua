@@ -260,19 +260,35 @@ _.Instances =
 								8908,	-- Molten War Golem
 							},
 						}),
+						i(16049, {  -- Schematic: Dark Iron Bomb
+							["crs"] = {
+								8920,   -- Weapon Technician
+							},
+						}),
 						i(16048, {	-- Schematic: Dark Iron Rifle
 							["crs"] = {
 								8897,	-- Doomforge Craftsman
 							},
 						}),
-						i(18661, {	-- Schematic: World Enlarger
+						i(18235, {	-- Schematic: Field Repair Bot 74A
+							["requireSkill"] = 202,	-- Engineering
+							["description"] = "On the floor next to Golem Lord Argelmach",
+						}),
+						i(18654, {	-- Schematic: Gnomish Alarm-o-Bot
 							["crs"] = {
 								8920,	-- Weapon Technician
 							},
 						}),
-						i(16049, {  -- Schematic: Dark Iron Bomb
+						{	-- Schematic: Master Engineer's Goggles
+							["itemID"] = 16053,	-- Schematic: Master Engineer's Goggles
 							["crs"] = {
-								8920,   -- Weapon Technician
+								8900,	-- Doomforge Arcanasmith
+							},
+							["u"] = 7, -- now learned from trainer, schematic was removed from game
+						},
+						i(18661, {	-- Schematic: World Enlarger
+							["crs"] = {
+								8920,	-- Weapon Technician
 							},
 						}),
 						i(12531, {	-- Searing Needle

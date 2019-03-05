@@ -262,26 +262,27 @@ _.Instances =
 								["groups"] = {
 									o(179564, { -- Gordok Tribute Chest (No Localization)
 										["groups"] = {
-											i(18538),	-- Treant's Bane
-											i(18495),	-- Redoubt Cloak
-											i(18532),	-- Mindsurge Robe
-											i(18475),	-- Oddly Magical Belt
-											i(18528),	-- Cyclone Spaulders
-											i(18478),	-- Hyena Hide Jerkin
-											i(18477),	-- Shaggy Leggings
-											i(18476),	-- Mud Stained Boots
-											i(18479),	-- Carrion Scorpid Helm
-											i(18530),	-- Ogre Forged Hauberk
-											i(18480),	-- Scarab Plate Helm
-											i(18533),	-- Gordok Bracers of Power
-											i(18529),	-- Elemental Plate Girdle
-											i(18481),	-- Skullcracking Mace
-											i(18531),	-- Unyielding Maul
-											i(18534),	-- Rod of the Ogre Magi
 											i(18499),	-- Barrier Shield
-											i(18482),	-- Ogre Toothpick Shooter
+											i(18479),	-- Carrion Scorpid Helm
 											i(18537),	-- Counterattack Lodestone
+											i(18528),	-- Cyclone Spaulders
+											i(18529),	-- Elemental Plate Girdle
+											i(18533),	-- Gordok Bracers of Power
+											i(18478),	-- Hyena Hide Jerkin
+											i(18532),	-- Mindsurge Robe
+											i(18476),	-- Mud Stained Boots
+											i(18475),	-- Oddly Magical Belt
+											i(18530),	-- Ogre Forged Hauberk
+											i(18482),	-- Ogre Toothpick Shooter
+											i(18495),	-- Redoubt Cloak
+											i(18534),	-- Rod of the Ogre Magi
+											i(18480),	-- Scarab Plate Helm
+											i(18655),	-- Schematic: Major Recombobulator
+											i(18477),	-- Shaggy Leggings
+											i(18481),	-- Skullcracking Mace
 											i(18500),	-- Tarnished Elven Ring
+											i(18538),	-- Treant's Bane
+											i(18531),	-- Unyielding Maul
 										},
 										["description"] =  " A full Tribute Run (5 Items) requires no killing of any of bosses besides King Gordok, activating the Frost Trap & fooling Kromcrush with the Ogre Suit, granted by the Goblin near the Trap.",
 									--	["description"] = "You don't need to touch Mol'dar at all. The inner door no longer requires a key. Kreeg and Fengus: just don't kill them. The trap for Slip'kik no longer requires any items at all, just go over and activate it. The goblin requires only the Ogre Tannin from upstairs to give you the suit for fooling Kromcrush. And just don't dps Cho'rush when killing the king. Once you are the king, go and collect your gear from the chest. Don't forget to get the quest off of Kromcrush, which only requires speaking to Mol'dar now. And of course Kreeg's quest for free beer.",

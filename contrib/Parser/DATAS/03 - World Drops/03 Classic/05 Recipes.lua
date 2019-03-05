@@ -260,17 +260,32 @@ _.WorldDrops =
 					i(11165),	-- Formula: Enchant Weapon - Lesser Elemental Slayer
 				}),
 				prof(202, {	-- Engineering
+					i(16055),	-- Schematic: Arcane Bomb
 					i(10601),	-- Schematic: Bright-Eye Goggles
 					i(10603),	-- Schematic: Catseye Ultra Goggles
+					{			-- Schematic: Deepdive Helmet
+						["itemID"] = 10607,	-- Schematic: Deepdive Helmet
+						["u"] = 7, -- now learned from trainer, schematic was removed from game
+					},
 					i(6716),	-- Schematic: EZ-Thro Dynamite
 					i(4416),	-- Schematic: Goblin Land Mine
 					i(4417),	-- Schematic: Large Seaforium Charge
+					i(16044),	-- Schematic: Lifelike Mechanical Toad
 					i(4408),	-- Schematic: Mechanical Squirrel Box
 					i(4412),	-- Schematic: Moonsight Rifle
 					i(10606),	-- Schematic: Parachute Cloak
 					i(4414),	-- Schematic: Portable Bronze Mortar
 					i(4410),	-- Schematic: Shadow Goggles
 					i(4409),	-- Schematic: Small Seaforium Charge
+					i(10608),	-- Schematic: Sniper Scope
+					{			-- Schematic: Spellpower Goggles Xtreme
+						["itemID"] = 10605,	-- Schematic: Spellpower Goggles Xtreme
+						["u"] = 7, -- now learned from trainer, schematic was removed from game
+					},
+					{			-- Schematic: Thorium Rifle
+						["itemID"] = 16043,	-- Schematic: Thorium Rifle
+						["u"] = 7, -- now learned from trainer, schematic was removed from game
+					},
 				}),
 				n(-186, { 	-- Jewelcrafting
 					i(20976),	-- Design: Citrine Pendant of Golden Healing
@@ -301,9 +316,35 @@ _.WorldDrops =
 					i(10316),	-- Pattern: Colorful Kilt
 					i(7084),	-- Pattern: Crimson Silk Shoulders
 					i(7086),	-- Pattern: Earthen Silk Belt
-					un(2, i(14506)),	-- Pattern: Felcloth Robe
-					un(2, i(14508)),	-- Pattern: Felcloth Shoulders
+					{			-- Pattern: Felcloth Boots
+						["itemID"] = 14492,	-- Pattern: Felcloth Boots
+						["u"] = 7, -- now learned from trainer, recipe was removed from game
+					},
+					{			-- Pattern: Felcloth Hood
+						["itemID"] = 14496,	-- Pattern: Felcloth Hood
+						["u"] = 7, -- now learned from trainer, recipe was removed from game
+					},
+					{			-- Pattern: Felcloth Robe
+						["itemID"] = 14506,	-- Pattern: Felcloth Robe
+						["u"] = 7, -- now learned from trainer, recipe was removed from game
+					},
+					{			-- Pattern: Felcloth Shoulders
+						["itemID"] = 14508,	-- Pattern: Felcloth Shoulders
+						["u"] = 7, -- now learned from trainer, recipe was removed from game
+					},
+					{			-- Pattern: Frostweave Gloves
+						["itemID"] = 14474,	-- Pattern: Frostweave Gloves
+						["u"] = 7, -- now learned from trainer, recipe was removed from game
+					},
+					{			-- Pattern: Frostweave Pants
+						["itemID"] = 14489,	-- Pattern: Frostweave Pants
+						["u"] = 7, -- now learned from trainer, recipe was removed from game
+					},
 					i(14467),	-- Pattern: Frostweave Robe
+					{			-- Pattern: Frostweave Tunic
+						["itemID"] = 14466,	-- Pattern: Frostweave Tunic
+						["u"] = 7, -- now learned from trainer, recipe was removed from game
+					},
 					i(14511),	-- Pattern: Gloves of Spell Mastery
 					i(2601),	-- Pattern: Gray Woolen Robe
 					i(7090),	-- Pattern: Green Silk Armor
@@ -328,6 +369,10 @@ _.WorldDrops =
 					i(4345),	-- Pattern: Red Woolen Boots
 					i(4347),	-- Pattern: Reinforced Woolen Shoulders
 					i(4354),	-- Pattern: Rich Purple Silk Shirt
+					{			-- Pattern: Runecloth Tunic
+						["itemID"] = 14470,	-- Pattern: Runecloth Tunic
+						["u"] = 7, -- now learned from trainer, recipe was removed from game
+					},
 					i(4351),	-- Pattern: Shadow Hood
 					i(4353),	-- Pattern: Spider Belt
 					i(4350),	-- Pattern: Spider Silk Slippers

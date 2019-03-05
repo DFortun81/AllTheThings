@@ -316,6 +316,14 @@ _.Zones =
 						i(18649),	-- Schematic: Blue Firework
 						i(7560),	-- Schematic: Gnomish Universal Remote
 						i(22729),	-- Schematic: Steam Tonk Controller
+						{			-- Schematic: Thorium Grenade
+							["itemID"] = 16041,	-- Schematic: Thorium Grenade
+							["u"] = 7, -- now learned from trainer, schematic was removed from game
+						},
+						{			-- Schematic: Thorium Widget
+							["itemID"] = 16042,	-- Schematic: Thorium Widget
+							["u"] = 7, -- now learned from trainer, schematic was removed from game
+						},
 					}),
 					n(5161, {	-- Grimnur Stonebrand <Fishing Trainer>
 						ach(5847, {	-- Fish or Cut Bait: Ironforge

@@ -7,6 +7,15 @@ _.Zones =
 		m(80, {	-- Moonglade
 			["groups"] = {
 				n(-2, {		-- Vendors
+					n(12023, {	-- Darnall <Tailoring Supplies>
+						["groups"] = {
+							{	-- Pattern: Runecloth Boots
+								["itemID"] = 14488,	-- Pattern: Runecloth Boots
+								["u"] = 7, -- now learned from trainer, recipe was removed from game
+							},
+						},
+						["coord"] = {  51.6, 33.2 },
+					}),
 					n(12023, {	-- Kharedon <Light Armor Merchant>
 						["groups"] = {
 							i(12254),	-- Well Oiled Cloak

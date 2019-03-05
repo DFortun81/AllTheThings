@@ -967,6 +967,18 @@ _.Zones =
 						un(2, i(23714)),	-- Perpetual Purple Fireworks (before they changed it to not be a trinket)
 						un(2, i(23716)),	-- Carved Ogre Idol (before they changed it to not be a trinket)
 					}),
+					n(2685, {	-- Mazk Snipeshot <Engineering Supplies>
+						["groups"] = {
+							{	-- Schematic: Accurate Scope
+								["itemID"] = 13310,	-- Schematic: Accurate Scope
+								["u"] = 7, -- now learned from trainer, schematic was removed from game
+							},
+							{	-- Schematic: Truesilver Transformer
+								["itemID"] = 18651,	-- Schematic: Truesilver Transformer
+								["u"] = 7, -- now learned from trainer, schematic was removed from game
+							},
+						},
+					}),
 					n(54232, {	-- Mrs. Gant <Cooking Trainer & Supplies>
 						i(21219),	-- Recipe: Sagefish Delight
 						i(21099),	-- Recipe: Smoked Sagefish

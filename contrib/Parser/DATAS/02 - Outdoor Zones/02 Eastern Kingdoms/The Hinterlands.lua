@@ -894,6 +894,9 @@ _.Zones =
 					a(n(8160, {	-- Nioma <Leatherworking Supplies>
 						i(8409), -- Pattern: Nightscape Shoulders
 					})),
+					n(2688, {	-- Ruppo Zipcoil <Engineering Supplies>
+						i(10609),	-- Schematic: Mithril Mechanical Dragonling
+					}),
 					na(4782, {	-- Truk Wildbeard <Bartender>
 						i(18046),	-- Recipe: Tender Wolf Steak
 					}),

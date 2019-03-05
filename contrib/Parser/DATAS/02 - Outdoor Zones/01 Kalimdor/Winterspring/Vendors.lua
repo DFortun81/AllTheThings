@@ -60,9 +60,13 @@ _.Zones =
 					n(11185, {              -- Xizzer Fizzbolt <Engineering Supplies>
 						["groups"] = {
 							i(16050),       -- Schematic: Delicate Arcanite Converter
+							i(18652),       -- Schematic: Gyrofreeze Ice Reflector
 							i(16046),       -- Schematic: Masterwork Target Dummy
 							i(18656),       -- Schematic: Powerful Seaforium Charge
-							i(18652),       -- Schematic: Gyrofreeze Ice Reflector
+							{				-- Schematic: Thorium Tube
+								["itemID"] = 16047,	-- Schematic: Thorium Tube
+								["u"] = 7, -- now learned from trainer, schematic was removed from game
+							},
 						},
 						["coord"] = { 59.2, 50.8 },
 					}),
