@@ -89,7 +89,6 @@ _.GearSets =
 						},
 						{	-- Heart-Lesion Sabatons
 							["itemID"] = 153719,	-- Heart-Lesion Sabatons
-							["u"] = 1,
 						},
 						{	-- Heart-Lesion Band of Might
 							["itemID"] = 153730,	-- Heart-Lesion Band of Might
