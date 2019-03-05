@@ -78,10 +78,10 @@ _.GearSets =
 						},
 						{	-- Heart-Lesion Legguards
 							["itemID"] = 153738,	-- Heart-Lesion Legguards
+							["u"] = 1,
 						},
 						{	-- Heart-Lesion Legplates
 							["itemID"] = 153722,	-- Heart-Lesion Legplates
-							["u"] = 1,
 						},
 						{	-- Heart-Lesion Greaves
 							["itemID"] = 153735,	-- Heart-Lesion Greaves
