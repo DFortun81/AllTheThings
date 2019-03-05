@@ -4,7 +4,7 @@
 
 _.Instances = 
 {
-	{ -- Battle For Azeroth
+	{	-- Battle For Azeroth
 		["groups"] = {
 			inst(1031, {	-- Uldir
 				["groups"] = {

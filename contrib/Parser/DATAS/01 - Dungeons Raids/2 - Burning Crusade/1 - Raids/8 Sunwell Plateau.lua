@@ -367,7 +367,7 @@ _.Instances =
 								25369,	-- Sunblade Vindicator
 							},
 						}),
-						i(35211, { -- Plans: Hard Khorium Battleplate
+						i(35211, {	-- Plans: Hard Khorium Battleplate
 							["crs"] = {
 								25593,	-- Apocalypse Guard
 								25599,	-- Cataclysm Hound
@@ -391,7 +391,7 @@ _.Instances =
 							},
 						}),
 						{	-- Plans: Sunblessed Breastplate
-							["itemID"] = 35210, -- Plans: Sunblessed Breastplate
+							["itemID"] = 35210,	-- Plans: Sunblessed Breastplate
 							["crs"] = {
 								25593,	-- Apocalypse Guard
 								25599,	-- Cataclysm Hound
@@ -415,11 +415,11 @@ _.Instances =
 							},
 						},
 						{	-- Plans: Sunblessed Breastplate
-							["itemID"] = 35555, -- Plans: Sunblessed Breastplate
+							["itemID"] = 35555,	-- Plans: Sunblessed Breastplate
 							["spellID"] = 0,	-- This is now available via 35210, need to delink the old plans from the recipe
 							["u"] = 1,
 						},
-						i(35208, { -- Plans: Sunblessed Gauntlets
+						i(35208, {	-- Plans: Sunblessed Gauntlets
 							["crs"] = {
 								25593,	-- Apocalypse Guard
 								25599,	-- Cataclysm Hound

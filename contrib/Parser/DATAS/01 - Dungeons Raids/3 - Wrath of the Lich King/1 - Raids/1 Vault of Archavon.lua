@@ -4,7 +4,7 @@
 
 _.Instances = 
 {
-	{ -- Wrath of the Lich King
+	{	-- Wrath of the Lich King
 		["groups"] = {
 			inst(753, { 	-- Vault of Archavon
 				["groups"] = {
@@ -23,7 +23,7 @@ _.Instances =
 					}),
 					d(3, {	-- 10-Player
 						ach(4016),	-- Earth, Wind & Fire (10 player)
-						e(1599, { -- Koralon the Flame Watcher
+						e(1599, {	-- Koralon the Flame Watcher
 							["groups"] = {
 								ach(3836),		-- Koralon the Flame Watcher (10 player)
 								i(42037),	-- Furious Gladiator's Pendant of Ascendancy
@@ -67,7 +67,7 @@ _.Instances =
 								i(40808),	-- Furious Gladiator's Scaled Gauntlets
 								i(41971),	-- Furious Gladiator's Silk Handguards
 								i(41293),	-- Furious Gladiator's Wyrmhide Gloves
-							 -- Alliance-only hands start
+								-- Alliance-only hands start
 								i(47783),	-- Kel'Thuzad's Gloves of Conquest
 								i(47752),	-- Khadgar's Gauntlets of Conquest
 								i(48162),	-- Malfurion's Gloves of Conquest
@@ -87,7 +87,7 @@ _.Instances =
 								i(48254),	-- Windrunner's Handguards of Conquest
 								i(48375),	-- Wrynn's Gauntlets of Conquest
 								i(48449),	-- Wrynn's Handguards of Conquest
-							 -- Horde-only hands start
+							-- Horde-only hands start
 								i(48244),	-- Garona's Gauntlets of Conquest
 								i(47802),	-- Gul'dan's Gloves of Conquest
 								i(48387),	-- Hellscream's Gauntlets of Conquest
@@ -107,7 +107,7 @@ _.Instances =
 								i(48276),	-- Windrunner's Handguards of Conquest
 								i(48067),	-- Zabra's Gloves of Conquest
 								i(48097),	-- Zabra's Handwraps of Conquest
-							 -- Faction-specific hands end
+							-- Faction-specific hands end
 								i(41630),	-- Furious Gladiator's Belt of Dominance
 								i(41617),	-- Furious Gladiator's Belt of Salvation
 								i(41832),	-- Furious Gladiator's Belt of Triumph
@@ -134,7 +134,7 @@ _.Instances =
 								i(40849),	-- Furious Gladiator's Scaled Legguards
 								i(41959),	-- Furious Gladiator's Silk Trousers
 								i(41304),	-- Furious Gladiator's Wyrmhide Legguards
-							 -- Alliance-only legs start
+							-- Alliance-only legs start
 								i(47785),	-- Kel'Thuzad's Leggings of Conquest
 								i(47750),	-- Khadgar's Leggings of Conquest
 								i(48130),	-- Malfurion's Leggings of Conquest
@@ -154,7 +154,7 @@ _.Instances =
 								i(48252),	-- Windrunner's Legguards of Conquest
 								i(48445),	-- Wrynn's Legguards of Conquest
 								i(48373),	-- Wrynn's Legplates of Conquest
-							 -- Horde-only legs start
+							-- Horde-only legs start
 								i(48246),	-- Garona's Legplates of Conquest
 								i(47800),	-- Gul'dan's Leggings of Conquest
 								i(48459),	-- Hellscream's Legguards of Conquest
@@ -174,7 +174,7 @@ _.Instances =
 								i(48278),	-- Windrunner's Legguards of Conquest
 								i(48069),	-- Zabra's Leggings of Conquest
 								i(48099),	-- Zabra's Pants of Conquest
-							 -- Faction-specific legs end
+							-- Faction-specific legs end
 								i(41635),	-- Furious Gladiator's Boots of Dominance
 								i(41621),	-- Furious Gladiator's Boots of Salvation
 								i(41836),	-- Furious Gladiator's Boots of Triumph
@@ -190,7 +190,7 @@ _.Instances =
 							},
 							["creatureID"] = 35013,
 						}),
-						e(1598, { -- Emalon the Storm Watcher
+						e(1598, {	-- Emalon the Storm Watcher
 							["groups"] = {
 								ach(3136),		-- Emalon the Storm Watcher (10 player)
 								i(42030),	-- Deadly Gladiator's Pendant of Ascendancy
@@ -312,7 +312,7 @@ _.Instances =
 							},
 							["creatureID"] = 33993,
 						}),
-						e(1600, { -- Toravon the Ice Watcher
+						e(1600, {	-- Toravon the Ice Watcher
 							["groups"] = {
 								ach(4585),		-- Toravon the Ice Watcher (10 player)
 								i(42044),	-- Relentless Gladiator's Pendant of Ascendancy
@@ -435,7 +435,7 @@ _.Instances =
 							},
 							["creatureID"] = 38433,
 						}),
-						e(1597, { -- Archavon the Stone Watcher
+						e(1597, {	-- Archavon the Stone Watcher
 							["groups"] = {
 								ach(1722),		-- Archavon the Stone Watcher (10 player)
 								i(41085),	-- Hateful Gladiator's Chain Armor
@@ -549,7 +549,7 @@ _.Instances =
 					}),
 					d(4, {	-- 25-Player
 						ach(4017),	-- Earth, Wind & Fire (25 player)
-						e(1599, { -- Koralon the Flame Watcher
+						e(1599, {	-- Koralon the Flame Watcher
 							["groups"] = {
 								ach(3837),		-- Koralon the Flame Watcher (25 player)
 								
@@ -723,7 +723,7 @@ _.Instances =
 							},
 							["creatureID"] = 35013,
 						}),
-						e(1598, { -- Emalon the Storm Watcher
+						e(1598, {	-- Emalon the Storm Watcher
 							["groups"] = {
 								ach(3137),		-- Emalon the Storm Watcher (25 player)
 								i(42037),	-- Furious Gladiator's Pendant of Ascendancy
@@ -846,7 +846,7 @@ _.Instances =
 							},
 							["creatureID"] = 33993,
 						}),
-						e(1600, { -- Toravon the Ice Watcher
+						e(1600, {	-- Toravon the Ice Watcher
 							["groups"] = {
 								ach(4586),		-- Toravon the Ice Watcher (25 player)
 								i(51335),	-- Wrathful Gladiator's Pendant of Ascendancy
@@ -969,7 +969,7 @@ _.Instances =
 							},
 							["creatureID"] = 38433,
 						}),
-						e(1597, { -- Archavon the Stone Watcher
+						e(1597, {	-- Archavon the Stone Watcher
 							["groups"] = {
 								ach(1721),		-- Archavon the Stone Watcher (25 player)
 								i(41086),	-- Deadly Gladiator's Chain Armor

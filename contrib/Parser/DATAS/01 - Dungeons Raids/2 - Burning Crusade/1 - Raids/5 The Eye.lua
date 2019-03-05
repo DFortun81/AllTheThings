@@ -14,52 +14,52 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				},
 				["g"] = {
 					{
-						["itemID"] = 30280, -- Pattern: Belt of Blasting
+						["itemID"] = 30280,	-- Pattern: Belt of Blasting
 					},
 					{
-						["itemID"] = 30302, -- Pattern: Belt of Deep Shadow
+						["itemID"] = 30302,	-- Pattern: Belt of Deep Shadow
 					},
 					{
-						["itemID"] = 30301, -- Pattern: Belt of Natural Power
+						["itemID"] = 30301,	-- Pattern: Belt of Natural Power
 					},
 					{
-						["itemID"] = 30303, -- Pattern: Belt of the Black Eagle
+						["itemID"] = 30303,	-- Pattern: Belt of the Black Eagle
 					},
 					{
-						["itemID"] = 30281, -- Pattern: Belt of the Long Road
+						["itemID"] = 30281,	-- Pattern: Belt of the Long Road
 					},
 					{
-						["itemID"] = 30282, -- Pattern: Boots of Blasting
+						["itemID"] = 30282,	-- Pattern: Boots of Blasting
 					},
 					{
-						["itemID"] = 30305, -- Pattern: Boots of Natural Grace
+						["itemID"] = 30305,	-- Pattern: Boots of Natural Grace
 					},
 					{
-						["itemID"] = 30307, -- Pattern: Boots of the Crimson Hawk
+						["itemID"] = 30307,	-- Pattern: Boots of the Crimson Hawk
 					},
 					{
-						["itemID"] = 30283, -- Pattern: Boots of the Long Road
+						["itemID"] = 30283,	-- Pattern: Boots of the Long Road
 					},
 					{
-						["itemID"] = 30306, -- Pattern: Boots of Utter Darkness						
+						["itemID"] = 30306,	-- Pattern: Boots of Utter Darkness
 					},
 					{
-						["itemID"] = 30308, -- Pattern: Hurricane Boots
+						["itemID"] = 30308,	-- Pattern: Hurricane Boots
 					},
 					{
-						["itemID"] = 30304, -- Pattern: Monsoon Belt
+						["itemID"] = 30304,	-- Pattern: Monsoon Belt
 					},
 					{
-						["itemID"] = 30321, -- Plans: Belt of the Guardian
+						["itemID"] = 30321,	-- Plans: Belt of the Guardian
 					},
 					{
-						["itemID"] = 30323, -- Plans: Boots of the Protector
+						["itemID"] = 30323,	-- Plans: Boots of the Protector
 					},
 					{
-						["itemID"] = 30322, -- Plans: Red Belt of Battle
+						["itemID"] = 30322,	-- Plans: Red Belt of Battle
 					},
 					{
-						["itemID"] = 30324, -- Plans: Red Havoc Boots
+						["itemID"] = 30324,	-- Plans: Red Havoc Boots
 					},
 				},	
 			}),
@@ -156,7 +156,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				},	
 			}),
 	
-			cr(19514, e(1573, { -- Al'ar
+			cr(19514, e(1573, {	-- Al'ar
 					i(97557),	-- Brilliant Phoenix Hawk Feather (PET!)
 					i(29949),	-- Arcanite Steam-Pistol
 					i(29922),	-- Band of Al'ar
@@ -172,7 +172,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					i(32944),	-- Talon of the Phoenix
 					i(30447),	-- Tome of Fiery Redemption
 				})),
-			cr(19516, e(1574, { -- Void Reaver
+			cr(19516, e(1574, {	-- Void Reaver
 					i(97555),	-- Tiny Fel Engine Key (PET!)
 					i(30248, {	-- Pauldrons of the Vanquished Champion
 						i(30168),	-- Cataclysm Shoulderguards
@@ -222,7 +222,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					i(30450),	-- Warp-Spring Coil
 					i(32515),	-- Wristguards of Determination
 				})),
-			cr(18805, e(1575, { -- High Astromancer Solarian
+			cr(18805, e(1575, {	-- High Astromancer Solarian
 					i(32267),	-- Boots of the Resilient
 					i(97556),	-- Crystal of the Void (PET!)
 					i(29981),	-- Ethereum Life-Staff
@@ -238,7 +238,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					i(29982),	-- Wand of the Forgotten Star
 					i(29976),	-- Worldstorm Gauntlets
 				})),
-			cr(19622, e(1576, { -- Kael'thas Sunstrider
+			cr(19622, e(1576, {	-- Kael'thas Sunstrider
 						ach(696),	-- Tempest Keep
 						i(32405, {	-- Verdant Sphere
 							q(11007, {	-- Kael'thas and the Verdant Sphere
@@ -305,31 +305,31 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(29993),	-- Twinblade of the Phoenix
 						-- We are going to mark them as not collectible here.  If we don't it counts as a +1 type item.
 						-- While not a big deal we need to think of debug completionists
-						i(30317, { -- Cosmic Infuser 
+						i(30317, {	-- Cosmic Infuser 
 							["collectible"] = false,
 							["u"] = 15,
 						}),
-						i(30316, { -- Devastation 
+						i(30316, {	-- Devastation 
 							["collectible"] = false,
 							["u"] = 15,
 						}),
-						i(30312, { -- Infinity Blade 
+						i(30312, {	-- Infinity Blade 
 							["collectible"] = false,
 							["u"] = 15,
 						}),
-						i(30318, { -- Netherstrand Longbow 
+						i(30318, {	-- Netherstrand Longbow 
 							["collectible"] = false,
 							["u"] = 15,
 						}),
-						i(30314, { -- Phaseshift Bulwark 
+						i(30314, {	-- Phaseshift Bulwark 
 							["collectible"] = false,
 							["u"] = 15,
 						}),
-						i(30313, { -- Staff of Disintegration 
+						i(30313, {	-- Staff of Disintegration 
 							["collectible"] = false,
 							["u"] = 15,
 						}),
-						i(30311, { -- Warp Slicer 
+						i(30311, {	-- Warp Slicer 
 							["collectible"] = false,
 							["u"] = 15,
 						}),

@@ -562,13 +562,13 @@ _.Zones =
 								{ 50.22, 40.11 },
 							},
 							["groups"] = {
-								i(30244, { -- Helm of the Vanquished Hero [Hunter, Mage, Warlock]
+								i(30244, {	-- Helm of the Vanquished Hero [Hunter, Mage, Warlock]
 									i(31962),	-- Merciless Gladiator's Chain Helm
 									i(31974),	-- Merciless Gladiator's Dreadweave Hood
 									i(31980),	-- Merciless Gladiator's Felweave Cowl
 									i(32048),	-- Merciless Gladiator's Silk Cowl
 								}),
-								i(30243, { -- Helm of the Vanquished Defender [Warrior, Priest, Druid]
+								i(30243, {	-- Helm of the Vanquished Defender [Warrior, Priest, Druid]
 									i(31968),	-- Merciless Gladiator's Dragonhide Helm
 									i(31988),	-- Merciless Gladiator's Kodohide Helm
 									i(32016),	-- Merciless Gladiator's Mooncloth Hood
@@ -576,7 +576,7 @@ _.Zones =
 									i(32035),	-- Merciless Gladiator's Satin Hood
 									i(32057),	-- Merciless Gladiator's Wyrmhide Helm
 								}),
-								i(30242, { -- Helm of the Vanquished Champion [Paladin, Rogue, Shaman]
+								i(30242, {	-- Helm of the Vanquished Champion [Paladin, Rogue, Shaman]
 									i(31997),	-- Merciless Gladiator's Lamellar Helm
 									i(31999),	-- Merciless Gladiator's Leather Helm
 									i(32006),	-- Merciless Gladiator's Linked Helm
@@ -585,13 +585,13 @@ _.Zones =
 									i(32031),	-- Merciless Gladiator's Ringmail Helm
 									i(32041),	-- Merciless Gladiator's Scaled Helm
 								}),
-								i(30250, { -- Pauldrons of the Vanquished Hero [Hunter, Mage, Warlock]
+								i(30250, {	-- Pauldrons of the Vanquished Hero [Hunter, Mage, Warlock]
 									i(31964),	-- Merciless Gladiator's Chain Spaulders
 									i(31976),	-- Merciless Gladiator's Dreadweave Mantle
 									i(31979),	-- Merciless Gladiator's Felweave Amice
 									i(32047),	-- Merciless Gladiator's Silk Amice
 								}),
-								i(30249, { -- Pauldrons of the Vanquished Defender [Warrior, Priest, Druid]
+								i(30249, {	-- Pauldrons of the Vanquished Defender [Warrior, Priest, Druid]
 									i(31971),	-- Merciless Gladiator's Dragonhide Spaulders
 									i(31990),	-- Merciless Gladiator's Kodohide Spaulders
 									i(32018),	-- Merciless Gladiator's Mooncloth Mantle
@@ -599,7 +599,7 @@ _.Zones =
 									i(32037),	-- Merciless Gladiator's Satin Mantle
 									i(32059),	-- Merciless Gladiator's Wyrmhide Spaulders
 								}),
-								i(30248, { -- Pauldrons of the Vanquished Champion [Paladin, Rogue, Shaman]
+								i(30248, {	-- Pauldrons of the Vanquished Champion [Paladin, Rogue, Shaman]
 									i(31996),	-- Merciless Gladiator's Lamellar Shoulders
 									i(32001),	-- Merciless Gladiator's Leather Spaulders
 									i(32008),	-- Merciless Gladiator's Linked Spaulders
@@ -608,13 +608,13 @@ _.Zones =
 									i(32033),	-- Merciless Gladiator's Ringmail Spaulders
 									i(32043),	-- Merciless Gladiator's Scaled Shoulders
 								}),
-								i(30238, { -- Chestguard of the Vanquished Hero [Hunter, Mage, Warlock]
+								i(30238, {	-- Chestguard of the Vanquished Hero [Hunter, Mage, Warlock]
 									i(31960),	-- Merciless Gladiator's Chain Armor
 									i(31977),	-- Merciless Gladiator's Dreadweave Robe
 									i(31982),	-- Merciless Gladiator's Felweave Raiment
 									i(32050),	-- Merciless Gladiator's Silk Raiment
 								}),
-								i(30237, { -- Chestguard of the Vanquished Defender [Warrior, Priest, Druid]
+								i(30237, {	-- Chestguard of the Vanquished Defender [Warrior, Priest, Druid]
 									i(31972),	-- Merciless Gladiator's Dragonhide Tunic
 									i(31991),	-- Merciless Gladiator's Kodohide Tunic
 									i(32019),	-- Merciless Gladiator's Mooncloth Robe
@@ -622,7 +622,7 @@ _.Zones =
 									i(32038),	-- Merciless Gladiator's Satin Robe
 									i(32060),	-- Merciless Gladiator's Wyrmhide Tunic
 								}),
-								i(30236, { -- Chestguard of the Vanquished Champion [Paladin, Rogue, Shaman]
+								i(30236, {	-- Chestguard of the Vanquished Champion [Paladin, Rogue, Shaman]
 									i(31992),	-- Merciless Gladiator's Lamellar Chestpiece
 									i(32002),	-- Merciless Gladiator's Leather Tunic
 									i(32004),	-- Merciless Gladiator's Linked Armor
@@ -631,13 +631,13 @@ _.Zones =
 									i(32029),	-- Merciless Gladiator's Ringmail Armor
 									i(32039),	-- Merciless Gladiator's Scaled Chestpiece
 								}),
-								i(30247, { -- Leggings of the Vanquished Hero [Hunter, Mage, Warlock]
+								i(30247, {	-- Leggings of the Vanquished Hero [Hunter, Mage, Warlock]
 									i(31963),	-- Merciless Gladiator's Chain Leggings
 									i(31975),	-- Merciless Gladiator's Dreadweave Leggings
 									i(31983),	-- Merciless Gladiator's Felweave Trousers
 									i(32051),	-- Merciless Gladiator's Silk Trousers
 								}),
-								i(30246, { -- Leggings of the Vanquished Defender [Warrior, Priest, Druid]
+								i(30246, {	-- Leggings of the Vanquished Defender [Warrior, Priest, Druid]
 									i(31969),	-- Merciless Gladiator's Dragonhide Legguards
 									i(31989),	-- Merciless Gladiator's Kodohide Legguards
 									i(32017),	-- Merciless Gladiator's Mooncloth Leggings
@@ -645,7 +645,7 @@ _.Zones =
 									i(32036),	-- Merciless Gladiator's Satin Leggings
 									i(32058),	-- Merciless Gladiator's Wyrmhide Legguards
 								}),
-								i(30245, { -- Leggings of the Vanquished Champion [Paladin, Rogue, Shaman]
+								i(30245, {	-- Leggings of the Vanquished Champion [Paladin, Rogue, Shaman]
 									i(31995),	-- Merciless Gladiator's Lamellar Legguards
 									i(32000),	-- Merciless Gladiator's Leather Legguards
 									i(32007),	-- Merciless Gladiator's Linked Leggings
@@ -654,13 +654,13 @@ _.Zones =
 									i(32032),	-- Merciless Gladiator's Ringmail Leggings
 									i(32042),	-- Merciless Gladiator's Scaled Legguards
 								}),
-								i(30241, { -- Gloves of the Vanquished Hero [Hunter, Mage, Warlock]
+								i(30241, {	-- Gloves of the Vanquished Hero [Hunter, Mage, Warlock]
 									i(31961),	-- Merciless Gladiator's Chain Gauntlets
 									i(31973),	-- Merciless Gladiator's Dreadweave Gloves
 									i(31981),	-- Merciless Gladiator's Felweave Handguards
 									i(32049),	-- Merciless Gladiator's Silk Handguards
 								}),
-								i(30240, { -- Gloves of the Vanquished Defender [Warrior, Priest, Druid]
+								i(30240, {	-- Gloves of the Vanquished Defender [Warrior, Priest, Druid]
 									i(31967),	-- Merciless Gladiator's Dragonhide Gloves
 									i(31987),	-- Merciless Gladiator's Kodohide Gloves
 									i(32015),	-- Merciless Gladiator's Mooncloth Gloves
@@ -668,7 +668,7 @@ _.Zones =
 									i(32034),	-- Merciless Gladiator's Satin Gloves
 									i(32056),	-- Merciless Gladiator's Wyrmhide Gloves
 								}),
-								i(30239, { -- Gloves of the Vanquished Champion [Paladin, Rogue, Shaman]
+								i(30239, {	-- Gloves of the Vanquished Champion [Paladin, Rogue, Shaman]
 									i(31993),	-- Merciless Gladiator's Lamellar Gauntlets
 									i(31998),	-- Merciless Gladiator's Leather Gloves
 									i(32005),	-- Merciless Gladiator's Linked Gauntlets

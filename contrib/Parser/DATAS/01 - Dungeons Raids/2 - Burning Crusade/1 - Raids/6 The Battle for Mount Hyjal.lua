@@ -269,15 +269,15 @@ _.Instances =
 					}),
 					n( 0, {	-- Zone Drop
 						["crs"] = {
-							17898,    -- Abomination
-							17905,    -- Banshee
-							17897,    -- Crypt Fiend
-							17916,    -- Fel Stalker
-							17907,    -- Frost Wyrm
-							17906,    -- Gargoyle
-							17895,    -- Ghoul
-							17908,    -- Giant Infernal
-							17899,    -- Shadowy Necromancer
+							17898,	-- Abomination
+							17905,	-- Banshee
+							17897,	-- Crypt Fiend
+							17916,	-- Fel Stalker
+							17907,	-- Frost Wyrm
+							17906,	-- Gargoyle
+							17895,	-- Ghoul
+							17908,	-- Giant Infernal
+							17899,	-- Shadowy Necromancer
 						},
 						["g"] = {
 							i(32609),	-- Boots of the Divine Light

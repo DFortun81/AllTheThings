@@ -4,11 +4,11 @@
 
 _.Instances = 
 {
-	{ -- Cataclysm
+	{	-- Cataclysm
 		["groups"] = {
 			inst(186, { 	-- Hour of Twilight
 				["groups"] = {
-					n(-17, {	-- Quests 			
+					n(-17, {	-- Quests
 						i(77957, {	-- Urgent Twilight Missive
 							q(30105, {	-- The Twilight Prophet
 								["groups"] = {
@@ -29,13 +29,13 @@ _.Instances =
 					}),
 					n(  0, {	-- Zone Drop
 						["crs"] = {
-							55559, -- Crystalline Elemental
-							54555, -- Frozen Servitor
-							55106, -- Twilight Assassin
-							55112, -- Twilight Bruiser
-							55107, -- Twilight Ranger
-							55109, -- Twilight Shadow-Walker
-							55111, -- Twilight Thug
+							55559,	-- Crystalline Elemental
+							54555,	-- Frozen Servitor
+							55106,	-- Twilight Assassin
+							55112,	-- Twilight Bruiser
+							55107,	-- Twilight Ranger
+							55109,	-- Twilight Shadow-Walker
+							55111,	-- Twilight Thug
 						},
 						["g"] = {
 							i(76160),	-- Drapes of the Dragonshrine

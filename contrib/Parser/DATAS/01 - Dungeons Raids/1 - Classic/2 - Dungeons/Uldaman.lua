@@ -217,24 +217,24 @@ _.Instances =
 						}),
 					}),
 					e(468, {	-- The Lost Dwarves (Baelog)
+						["crs"] = {
+							6906,	-- Baelog
+							6908,	-- Olaf
+							6907,	-- Eric "The Swift"
+						},
 						["races"] = HORDE_ONLY,
 						["groups"] = {
-							i(9400), -- Baelog's Shortbow
-							i(9403), -- Battered Viking Shield
-							i(151396), -- Erik's High-Performance Armbands
+							i(9400),	-- Baelog's Shortbow
+							i(9403),	-- Battered Viking Shield
+							i(151396),	-- Erik's High-Performance Armbands
 							i(9394),	-- Horned Viking Helmet
 							i(9401),	-- Nordic Longshank
 							i(9404),	-- Olaf's All Purpose Shield
 							i(132734),	-- Viking Chain Boots
 							i(9398),	-- Worn Running Boots
 						},
-						["crs"] = {
-							6906, -- Baelog
-							6908, -- Olaf
-							6907, -- Eric "The Swift"
-						},
 					}),
-					o(123329, { -- Baelog's Chest
+					o(123329, {	-- Baelog's Chest
 						["groups"] = {
 							i(7740),	-- Gni'kiv Medallion
 						},

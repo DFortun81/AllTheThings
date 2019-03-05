@@ -4,7 +4,7 @@
 
 _.Instances = 
 {
-	{ -- Cataclysm
+	{	-- Cataclysm
 		["groups"] = {
 			inst(185, { 	-- Well of Eternity
 				["groups"] = {
@@ -32,25 +32,25 @@ _.Instances =
 								i(72879),	-- Boots of the Treacherous Path
 							},
 							["qg"] = 55624,	-- Nozdormu
-							["sourceQuests"] = { 30100 }, -- The Vainglorious
+							["sourceQuests"] = { 30100 },	-- The Vainglorious
 						}),
 						q(30100, {	-- The Vainglorious
 							["qg"] = 55624,	-- Nozdormu
-							["sourceQuests"] = { 30099 }, -- In Unending Numbers
+							["sourceQuests"] = { 30099 },	-- In Unending Numbers
 						}),
 					}),
 					n(  0, {	-- Zone Drop
 						["crs"] = {
-							55654, -- Corrupted Arcanist
-							55656, -- Dreadlord Defender
-							56579, -- Enchanted Highmistress
-							54589, -- Enchanted Highmistress
-							54612, -- Eternal Champion
-							54747, -- Eye of the Legion
-							55426, -- Highguard Elite
-							55503, -- Legion Demon
-							54645, -- Royal Handmaiden
-							55453, -- Shadowbat
+							55654,	-- Corrupted Arcanist
+							55656,	-- Dreadlord Defender
+							56579,	-- Enchanted Highmistress
+							54589,	-- Enchanted Highmistress
+							54612,	-- Eternal Champion
+							54747,	-- Eye of the Legion
+							55426,	-- Highguard Elite
+							55503,	-- Legion Demon
+							54645,	-- Royal Handmaiden
+							55453,	-- Shadowbat
 						},
 						["g"] = {
 							i(76158),	-- Courtier's Slippers

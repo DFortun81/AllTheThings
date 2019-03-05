@@ -4,9 +4,9 @@
 
 _.Instances = 
 {
-	{ -- Burning Crusade
+	{	-- Burning Crusade
 		["groups"] = {
-			inst(751, { 	-- The Black Temple
+			inst(751, {	-- The Black Temple
 				["groups"] = {
 					faction(1012, {	-- Ashtongue Deathsworn
 						["qg"] = 23159,	-- Okuno <Ashtongue Deathsworn Quartermaster>
@@ -40,914 +40,914 @@ _.Instances =
 							i(32489),	-- Ashtongue Talisman of Zeal
 						},
 					}),
-					n( 0,  {	-- Zone Drop
+					n( 0, {	-- Zone Drop
 						i(32606,	{	-- Girdle of the Lightbearer
 							["crs"] = {
-								22844, -- Ashtongue Battlelord
-								22845, -- Ashtongue Mystic
-								22847, -- Ashtongue Primalist
-								23374, -- Ashtongue Stalker
-								22846, -- Ashtongue Stormcaller
-								23196, -- Bonechewer Behemoth
-								23235, -- Bonechewer Blade Fury
-								23237, -- Bonechewer Blood Prophet
-								23222, -- Bonechewer Brawler
-								23239, -- Bonechewer Combatant
-								23236, -- Bonechewer Shield Disciple
-								23223, -- Bonechewer Spectator
-								22955, -- Charming Courtesan
-								23330, -- Dragonmaw Wind Reaver
-								22965, -- Enslaved Servant
-								23172, -- Hand of Gorefiend
-								23400, -- Illidari Archon
-								23403, -- Illidari Assassin
-								23402, -- Illidari Battle-mage
-								23397, -- Illidari Blood Lord
-								22869, -- Illidari Boneslicer
-								23337, -- Illidari Centurion
-								22853, -- Illidari Defiler
-								22954, -- Illidari Fearbringer
-								23339, -- Illidari Heartseeker
-								22855, -- Illidari Nightlord
-								23232, -- Mutant War Hound
-								22962, -- Priestess of Delight
-								22957, -- Priestess of Dementia
-								23394, -- Promenade Sentinel
-								22945, -- Shadowmoon Blood Mage
-								22880, -- Shadowmoon Champion
-								22882, -- Shadowmoon Deathshaper
-								23018, -- Shadowmoon Houndmaster
-								22879, -- Shadowmoon Reaver
-								23047, -- Shadowmoon Soldier
-								22946, -- Shadowmoon War Hound
-								23049, -- Shadowmoon Weapon Master
-								22956, -- Sister of Pain
-								22964, -- Sister of Pleasure
-								22959, -- Spellbound Attendant
-								22939, -- Temple Concubine
-								22953, -- Wrathbone Flayer
-								22873, -- Coilskar General
-								22874, -- Coilskar Harpooner
-								22875, -- Coilskar Sea-Caller
-								22876, -- Coilskar Soothsayer
-								22877, -- Coilskar Wrangler
-								22878, -- Aqueous Lord
-								22881, -- Aqueous Surger
-								22884, -- Leviathan
-								22885, -- Dragon Turtle
-								22960, -- Dragonmaw Wyrmcaller
-								23028, -- Bonechewer Taskmaster
-								23030, -- Dragonmaw Sky Stalker
+								22844,	-- Ashtongue Battlelord
+								22845,	-- Ashtongue Mystic
+								22847,	-- Ashtongue Primalist
+								23374,	-- Ashtongue Stalker
+								22846,	-- Ashtongue Stormcaller
+								23196,	-- Bonechewer Behemoth
+								23235,	-- Bonechewer Blade Fury
+								23237,	-- Bonechewer Blood Prophet
+								23222,	-- Bonechewer Brawler
+								23239,	-- Bonechewer Combatant
+								23236,	-- Bonechewer Shield Disciple
+								23223,	-- Bonechewer Spectator
+								22955,	-- Charming Courtesan
+								23330,	-- Dragonmaw Wind Reaver
+								22965,	-- Enslaved Servant
+								23172,	-- Hand of Gorefiend
+								23400,	-- Illidari Archon
+								23403,	-- Illidari Assassin
+								23402,	-- Illidari Battle-mage
+								23397,	-- Illidari Blood Lord
+								22869,	-- Illidari Boneslicer
+								23337,	-- Illidari Centurion
+								22853,	-- Illidari Defiler
+								22954,	-- Illidari Fearbringer
+								23339,	-- Illidari Heartseeker
+								22855,	-- Illidari Nightlord
+								23232,	-- Mutant War Hound
+								22962,	-- Priestess of Delight
+								22957,	-- Priestess of Dementia
+								23394,	-- Promenade Sentinel
+								22945,	-- Shadowmoon Blood Mage
+								22880,	-- Shadowmoon Champion
+								22882,	-- Shadowmoon Deathshaper
+								23018,	-- Shadowmoon Houndmaster
+								22879,	-- Shadowmoon Reaver
+								23047,	-- Shadowmoon Soldier
+								22946,	-- Shadowmoon War Hound
+								23049,	-- Shadowmoon Weapon Master
+								22956,	-- Sister of Pain
+								22964,	-- Sister of Pleasure
+								22959,	-- Spellbound Attendant
+								22939,	-- Temple Concubine
+								22953,	-- Wrathbone Flayer
+								22873,	-- Coilskar General
+								22874,	-- Coilskar Harpooner
+								22875,	-- Coilskar Sea-Caller
+								22876,	-- Coilskar Soothsayer
+								22877,	-- Coilskar Wrangler
+								22878,	-- Aqueous Lord
+								22881,	-- Aqueous Surger
+								22884,	-- Leviathan
+								22885,	-- Dragon Turtle
+								22960,	-- Dragonmaw Wyrmcaller
+								23028,	-- Bonechewer Taskmaster
+								23030,	-- Dragonmaw Sky Stalker
 							},
 						}),
 						i(34011, {	-- Illidari Runeshield
 							["crs"] = {
-								22844, -- Ashtongue Battlelord
-								22845, -- Ashtongue Mystic
-								22847, -- Ashtongue Primalist
-								23374, -- Ashtongue Stalker
-								22846, -- Ashtongue Stormcaller
-								23196, -- Bonechewer Behemoth
-								23235, -- Bonechewer Blade Fury
-								23237, -- Bonechewer Blood Prophet
-								23222, -- Bonechewer Brawler
-								23239, -- Bonechewer Combatant
-								23236, -- Bonechewer Shield Disciple
-								23223, -- Bonechewer Spectator
-								22955, -- Charming Courtesan
-								23330, -- Dragonmaw Wind Reaver
-								22965, -- Enslaved Servant
-								23172, -- Hand of Gorefiend
-								23400, -- Illidari Archon
-								23403, -- Illidari Assassin
-								23402, -- Illidari Battle-mage
-								23397, -- Illidari Blood Lord
-								22869, -- Illidari Boneslicer
-								23337, -- Illidari Centurion
-								22853, -- Illidari Defiler
-								22954, -- Illidari Fearbringer
-								23339, -- Illidari Heartseeker
-								22855, -- Illidari Nightlord
-								23232, -- Mutant War Hound
-								22962, -- Priestess of Delight
-								22957, -- Priestess of Dementia
-								23394, -- Promenade Sentinel
-								22945, -- Shadowmoon Blood Mage
-								22880, -- Shadowmoon Champion
-								22882, -- Shadowmoon Deathshaper
-								23018, -- Shadowmoon Houndmaster
-								22879, -- Shadowmoon Reaver
-								23047, -- Shadowmoon Soldier
-								22946, -- Shadowmoon War Hound
-								23049, -- Shadowmoon Weapon Master
-								22956, -- Sister of Pain
-								22964, -- Sister of Pleasure
-								22959, -- Spellbound Attendant
-								22939, -- Temple Concubine
-								22953, -- Wrathbone Flayer
-								22873, -- Coilskar General
-								22874, -- Coilskar Harpooner
-								22875, -- Coilskar Sea-Caller
-								22876, -- Coilskar Soothsayer
-								22877, -- Coilskar Wrangler
-								22878, -- Aqueous Lord
-								22881, -- Aqueous Surger
-								22884, -- Leviathan
-								22885, -- Dragon Turtle
-								22960, -- Dragonmaw Wyrmcaller
-								23028, -- Bonechewer Taskmaster
-								23030, -- Dragonmaw Sky Stalker
+								22844,	-- Ashtongue Battlelord
+								22845,	-- Ashtongue Mystic
+								22847,	-- Ashtongue Primalist
+								23374,	-- Ashtongue Stalker
+								22846,	-- Ashtongue Stormcaller
+								23196,	-- Bonechewer Behemoth
+								23235,	-- Bonechewer Blade Fury
+								23237,	-- Bonechewer Blood Prophet
+								23222,	-- Bonechewer Brawler
+								23239,	-- Bonechewer Combatant
+								23236,	-- Bonechewer Shield Disciple
+								23223,	-- Bonechewer Spectator
+								22955,	-- Charming Courtesan
+								23330,	-- Dragonmaw Wind Reaver
+								22965,	-- Enslaved Servant
+								23172,	-- Hand of Gorefiend
+								23400,	-- Illidari Archon
+								23403,	-- Illidari Assassin
+								23402,	-- Illidari Battle-mage
+								23397,	-- Illidari Blood Lord
+								22869,	-- Illidari Boneslicer
+								23337,	-- Illidari Centurion
+								22853,	-- Illidari Defiler
+								22954,	-- Illidari Fearbringer
+								23339,	-- Illidari Heartseeker
+								22855,	-- Illidari Nightlord
+								23232,	-- Mutant War Hound
+								22962,	-- Priestess of Delight
+								22957,	-- Priestess of Dementia
+								23394,	-- Promenade Sentinel
+								22945,	-- Shadowmoon Blood Mage
+								22880,	-- Shadowmoon Champion
+								22882,	-- Shadowmoon Deathshaper
+								23018,	-- Shadowmoon Houndmaster
+								22879,	-- Shadowmoon Reaver
+								23047,	-- Shadowmoon Soldier
+								22946,	-- Shadowmoon War Hound
+								23049,	-- Shadowmoon Weapon Master
+								22956,	-- Sister of Pain
+								22964,	-- Sister of Pleasure
+								22959,	-- Spellbound Attendant
+								22939,	-- Temple Concubine
+								22953,	-- Wrathbone Flayer
+								22873,	-- Coilskar General
+								22874,	-- Coilskar Harpooner
+								22875,	-- Coilskar Sea-Caller
+								22876,	-- Coilskar Soothsayer
+								22877,	-- Coilskar Wrangler
+								22878,	-- Aqueous Lord
+								22881,	-- Aqueous Surger
+								22884,	-- Leviathan
+								22885,	-- Dragon Turtle
+								22960,	-- Dragonmaw Wyrmcaller
+								23028,	-- Bonechewer Taskmaster
+								23030,	-- Dragonmaw Sky Stalker
 							},
-						}),						
+						}),
 						i(32608, {	-- Pillager's Gauntlets
 							["crs"] = {
-								22844, -- Ashtongue Battlelord
-								22845, -- Ashtongue Mystic
-								22847, -- Ashtongue Primalist
-								23374, -- Ashtongue Stalker
-								22846, -- Ashtongue Stormcaller
-								23196, -- Bonechewer Behemoth
-								23235, -- Bonechewer Blade Fury
-								23237, -- Bonechewer Blood Prophet
-								23222, -- Bonechewer Brawler
-								23239, -- Bonechewer Combatant
-								23236, -- Bonechewer Shield Disciple
-								23223, -- Bonechewer Spectator
-								22955, -- Charming Courtesan
-								23330, -- Dragonmaw Wind Reaver
-								22965, -- Enslaved Servant
-								23172, -- Hand of Gorefiend
-								23400, -- Illidari Archon
-								23403, -- Illidari Assassin
-								23402, -- Illidari Battle-mage
-								23397, -- Illidari Blood Lord
-								22869, -- Illidari Boneslicer
-								23337, -- Illidari Centurion
-								22853, -- Illidari Defiler
-								22954, -- Illidari Fearbringer
-								23339, -- Illidari Heartseeker
-								22855, -- Illidari Nightlord
-								23232, -- Mutant War Hound
-								22962, -- Priestess of Delight
-								22957, -- Priestess of Dementia
-								23394, -- Promenade Sentinel
-								22945, -- Shadowmoon Blood Mage
-								22880, -- Shadowmoon Champion
-								22882, -- Shadowmoon Deathshaper
-								23018, -- Shadowmoon Houndmaster
-								22879, -- Shadowmoon Reaver
-								23047, -- Shadowmoon Soldier
-								22946, -- Shadowmoon War Hound
-								23049, -- Shadowmoon Weapon Master
-								22956, -- Sister of Pain
-								22964, -- Sister of Pleasure
-								22959, -- Spellbound Attendant
-								22939, -- Temple Concubine
-								22953, -- Wrathbone Flayer
-								22873, -- Coilskar General
-								22874, -- Coilskar Harpooner
-								22875, -- Coilskar Sea-Caller
-								22876, -- Coilskar Soothsayer
-								22877, -- Coilskar Wrangler
-								22878, -- Aqueous Lord
-								22881, -- Aqueous Surger
-								22884, -- Leviathan
-								22885, -- Dragon Turtle
-								22960, -- Dragonmaw Wyrmcaller
-								23028, -- Bonechewer Taskmaster
-								23030, -- Dragonmaw Sky Stalker
+								22844,	-- Ashtongue Battlelord
+								22845,	-- Ashtongue Mystic
+								22847,	-- Ashtongue Primalist
+								23374,	-- Ashtongue Stalker
+								22846,	-- Ashtongue Stormcaller
+								23196,	-- Bonechewer Behemoth
+								23235,	-- Bonechewer Blade Fury
+								23237,	-- Bonechewer Blood Prophet
+								23222,	-- Bonechewer Brawler
+								23239,	-- Bonechewer Combatant
+								23236,	-- Bonechewer Shield Disciple
+								23223,	-- Bonechewer Spectator
+								22955,	-- Charming Courtesan
+								23330,	-- Dragonmaw Wind Reaver
+								22965,	-- Enslaved Servant
+								23172,	-- Hand of Gorefiend
+								23400,	-- Illidari Archon
+								23403,	-- Illidari Assassin
+								23402,	-- Illidari Battle-mage
+								23397,	-- Illidari Blood Lord
+								22869,	-- Illidari Boneslicer
+								23337,	-- Illidari Centurion
+								22853,	-- Illidari Defiler
+								22954,	-- Illidari Fearbringer
+								23339,	-- Illidari Heartseeker
+								22855,	-- Illidari Nightlord
+								23232,	-- Mutant War Hound
+								22962,	-- Priestess of Delight
+								22957,	-- Priestess of Dementia
+								23394,	-- Promenade Sentinel
+								22945,	-- Shadowmoon Blood Mage
+								22880,	-- Shadowmoon Champion
+								22882,	-- Shadowmoon Deathshaper
+								23018,	-- Shadowmoon Houndmaster
+								22879,	-- Shadowmoon Reaver
+								23047,	-- Shadowmoon Soldier
+								22946,	-- Shadowmoon War Hound
+								23049,	-- Shadowmoon Weapon Master
+								22956,	-- Sister of Pain
+								22964,	-- Sister of Pleasure
+								22959,	-- Spellbound Attendant
+								22939,	-- Temple Concubine
+								22953,	-- Wrathbone Flayer
+								22873,	-- Coilskar General
+								22874,	-- Coilskar Harpooner
+								22875,	-- Coilskar Sea-Caller
+								22876,	-- Coilskar Soothsayer
+								22877,	-- Coilskar Wrangler
+								22878,	-- Aqueous Lord
+								22881,	-- Aqueous Surger
+								22884,	-- Leviathan
+								22885,	-- Dragon Turtle
+								22960,	-- Dragonmaw Wyrmcaller
+								23028,	-- Bonechewer Taskmaster
+								23030,	-- Dragonmaw Sky Stalker
 							},
 						}),
 						i(34012, {	-- Shroud of the Final Stand
 							["crs"] = {
-								22844, -- Ashtongue Battlelord
-								22845, -- Ashtongue Mystic
-								22847, -- Ashtongue Primalist
-								23374, -- Ashtongue Stalker
-								22846, -- Ashtongue Stormcaller
-								23196, -- Bonechewer Behemoth
-								23235, -- Bonechewer Blade Fury
-								23237, -- Bonechewer Blood Prophet
-								23222, -- Bonechewer Brawler
-								23239, -- Bonechewer Combatant
-								23236, -- Bonechewer Shield Disciple
-								23223, -- Bonechewer Spectator
-								22955, -- Charming Courtesan
-								23330, -- Dragonmaw Wind Reaver
-								22965, -- Enslaved Servant
-								23172, -- Hand of Gorefiend
-								23400, -- Illidari Archon
-								23403, -- Illidari Assassin
-								23402, -- Illidari Battle-mage
-								23397, -- Illidari Blood Lord
-								22869, -- Illidari Boneslicer
-								23337, -- Illidari Centurion
-								22853, -- Illidari Defiler
-								22954, -- Illidari Fearbringer
-								23339, -- Illidari Heartseeker
-								22855, -- Illidari Nightlord
-								23232, -- Mutant War Hound
-								22962, -- Priestess of Delight
-								22957, -- Priestess of Dementia
-								23394, -- Promenade Sentinel
-								22945, -- Shadowmoon Blood Mage
-								22880, -- Shadowmoon Champion
-								22882, -- Shadowmoon Deathshaper
-								23018, -- Shadowmoon Houndmaster
-								22879, -- Shadowmoon Reaver
-								23047, -- Shadowmoon Soldier
-								22946, -- Shadowmoon War Hound
-								23049, -- Shadowmoon Weapon Master
-								22956, -- Sister of Pain
-								22964, -- Sister of Pleasure
-								22959, -- Spellbound Attendant
-								22939, -- Temple Concubine
-								22953, -- Wrathbone Flayer
-								22873, -- Coilskar General
-								22874, -- Coilskar Harpooner
-								22875, -- Coilskar Sea-Caller
-								22876, -- Coilskar Soothsayer
-								22877, -- Coilskar Wrangler
-								22878, -- Aqueous Lord
-								22881, -- Aqueous Surger
-								22884, -- Leviathan
-								22885, -- Dragon Turtle
-								22960, -- Dragonmaw Wyrmcaller
-								23028, -- Bonechewer Taskmaster
-								23030, -- Dragonmaw Sky Stalker
+								22844,	-- Ashtongue Battlelord
+								22845,	-- Ashtongue Mystic
+								22847,	-- Ashtongue Primalist
+								23374,	-- Ashtongue Stalker
+								22846,	-- Ashtongue Stormcaller
+								23196,	-- Bonechewer Behemoth
+								23235,	-- Bonechewer Blade Fury
+								23237,	-- Bonechewer Blood Prophet
+								23222,	-- Bonechewer Brawler
+								23239,	-- Bonechewer Combatant
+								23236,	-- Bonechewer Shield Disciple
+								23223,	-- Bonechewer Spectator
+								22955,	-- Charming Courtesan
+								23330,	-- Dragonmaw Wind Reaver
+								22965,	-- Enslaved Servant
+								23172,	-- Hand of Gorefiend
+								23400,	-- Illidari Archon
+								23403,	-- Illidari Assassin
+								23402,	-- Illidari Battle-mage
+								23397,	-- Illidari Blood Lord
+								22869,	-- Illidari Boneslicer
+								23337,	-- Illidari Centurion
+								22853,	-- Illidari Defiler
+								22954,	-- Illidari Fearbringer
+								23339,	-- Illidari Heartseeker
+								22855,	-- Illidari Nightlord
+								23232,	-- Mutant War Hound
+								22962,	-- Priestess of Delight
+								22957,	-- Priestess of Dementia
+								23394,	-- Promenade Sentinel
+								22945,	-- Shadowmoon Blood Mage
+								22880,	-- Shadowmoon Champion
+								22882,	-- Shadowmoon Deathshaper
+								23018,	-- Shadowmoon Houndmaster
+								22879,	-- Shadowmoon Reaver
+								23047,	-- Shadowmoon Soldier
+								22946,	-- Shadowmoon War Hound
+								23049,	-- Shadowmoon Weapon Master
+								22956,	-- Sister of Pain
+								22964,	-- Sister of Pleasure
+								22959,	-- Spellbound Attendant
+								22939,	-- Temple Concubine
+								22953,	-- Wrathbone Flayer
+								22873,	-- Coilskar General
+								22874,	-- Coilskar Harpooner
+								22875,	-- Coilskar Sea-Caller
+								22876,	-- Coilskar Soothsayer
+								22877,	-- Coilskar Wrangler
+								22878,	-- Aqueous Lord
+								22881,	-- Aqueous Surger
+								22884,	-- Leviathan
+								22885,	-- Dragon Turtle
+								22960,	-- Dragonmaw Wyrmcaller
+								23028,	-- Bonechewer Taskmaster
+								23030,	-- Dragonmaw Sky Stalker
 							},
 						}),
 						i(32943, {	-- Swiftsteel Bludgeon
 							["crs"] = {
-								22844, -- Ashtongue Battlelord
-								22845, -- Ashtongue Mystic
-								22847, -- Ashtongue Primalist
-								23374, -- Ashtongue Stalker
-								22846, -- Ashtongue Stormcaller
-								23196, -- Bonechewer Behemoth
-								23235, -- Bonechewer Blade Fury
-								23237, -- Bonechewer Blood Prophet
-								23222, -- Bonechewer Brawler
-								23239, -- Bonechewer Combatant
-								23236, -- Bonechewer Shield Disciple
-								23223, -- Bonechewer Spectator
-								22955, -- Charming Courtesan
-								23330, -- Dragonmaw Wind Reaver
-								22965, -- Enslaved Servant
-								23172, -- Hand of Gorefiend
-								23400, -- Illidari Archon
-								23403, -- Illidari Assassin
-								23402, -- Illidari Battle-mage
-								23397, -- Illidari Blood Lord
-								22869, -- Illidari Boneslicer
-								23337, -- Illidari Centurion
-								22853, -- Illidari Defiler
-								22954, -- Illidari Fearbringer
-								23339, -- Illidari Heartseeker
-								22855, -- Illidari Nightlord
-								23232, -- Mutant War Hound
-								22962, -- Priestess of Delight
-								22957, -- Priestess of Dementia
-								23394, -- Promenade Sentinel
-								22945, -- Shadowmoon Blood Mage
-								22880, -- Shadowmoon Champion
-								22882, -- Shadowmoon Deathshaper
-								23018, -- Shadowmoon Houndmaster
-								22879, -- Shadowmoon Reaver
-								23047, -- Shadowmoon Soldier
-								22946, -- Shadowmoon War Hound
-								23049, -- Shadowmoon Weapon Master
-								22956, -- Sister of Pain
-								22964, -- Sister of Pleasure
-								22959, -- Spellbound Attendant
-								22939, -- Temple Concubine
-								22953, -- Wrathbone Flayer
-								22873, -- Coilskar General
-								22874, -- Coilskar Harpooner
-								22875, -- Coilskar Sea-Caller
-								22876, -- Coilskar Soothsayer
-								22877, -- Coilskar Wrangler
-								22878, -- Aqueous Lord
-								22881, -- Aqueous Surger
-								22884, -- Leviathan
-								22885, -- Dragon Turtle
-								22960, -- Dragonmaw Wyrmcaller
-								23028, -- Bonechewer Taskmaster
-								23030, -- Dragonmaw Sky Stalker
+								22844,	-- Ashtongue Battlelord
+								22845,	-- Ashtongue Mystic
+								22847,	-- Ashtongue Primalist
+								23374,	-- Ashtongue Stalker
+								22846,	-- Ashtongue Stormcaller
+								23196,	-- Bonechewer Behemoth
+								23235,	-- Bonechewer Blade Fury
+								23237,	-- Bonechewer Blood Prophet
+								23222,	-- Bonechewer Brawler
+								23239,	-- Bonechewer Combatant
+								23236,	-- Bonechewer Shield Disciple
+								23223,	-- Bonechewer Spectator
+								22955,	-- Charming Courtesan
+								23330,	-- Dragonmaw Wind Reaver
+								22965,	-- Enslaved Servant
+								23172,	-- Hand of Gorefiend
+								23400,	-- Illidari Archon
+								23403,	-- Illidari Assassin
+								23402,	-- Illidari Battle-mage
+								23397,	-- Illidari Blood Lord
+								22869,	-- Illidari Boneslicer
+								23337,	-- Illidari Centurion
+								22853,	-- Illidari Defiler
+								22954,	-- Illidari Fearbringer
+								23339,	-- Illidari Heartseeker
+								22855,	-- Illidari Nightlord
+								23232,	-- Mutant War Hound
+								22962,	-- Priestess of Delight
+								22957,	-- Priestess of Dementia
+								23394,	-- Promenade Sentinel
+								22945,	-- Shadowmoon Blood Mage
+								22880,	-- Shadowmoon Champion
+								22882,	-- Shadowmoon Deathshaper
+								23018,	-- Shadowmoon Houndmaster
+								22879,	-- Shadowmoon Reaver
+								23047,	-- Shadowmoon Soldier
+								22946,	-- Shadowmoon War Hound
+								23049,	-- Shadowmoon Weapon Master
+								22956,	-- Sister of Pain
+								22964,	-- Sister of Pleasure
+								22959,	-- Spellbound Attendant
+								22939,	-- Temple Concubine
+								22953,	-- Wrathbone Flayer
+								22873,	-- Coilskar General
+								22874,	-- Coilskar Harpooner
+								22875,	-- Coilskar Sea-Caller
+								22876,	-- Coilskar Soothsayer
+								22877,	-- Coilskar Wrangler
+								22878,	-- Aqueous Lord
+								22881,	-- Aqueous Surger
+								22884,	-- Leviathan
+								22885,	-- Dragon Turtle
+								22960,	-- Dragonmaw Wyrmcaller
+								23028,	-- Bonechewer Taskmaster
+								23030,	-- Dragonmaw Sky Stalker
 							},
 						}),
 						i(32593, {	-- Treads of the Den Mother
 							["crs"] = {
-								22844, -- Ashtongue Battlelord
-								22845, -- Ashtongue Mystic
-								22847, -- Ashtongue Primalist
-								23374, -- Ashtongue Stalker
-								22846, -- Ashtongue Stormcaller
-								23196, -- Bonechewer Behemoth
-								23235, -- Bonechewer Blade Fury
-								23237, -- Bonechewer Blood Prophet
-								23222, -- Bonechewer Brawler
-								23239, -- Bonechewer Combatant
-								23236, -- Bonechewer Shield Disciple
-								23223, -- Bonechewer Spectator
-								22955, -- Charming Courtesan
-								23330, -- Dragonmaw Wind Reaver
-								22965, -- Enslaved Servant
-								23172, -- Hand of Gorefiend
-								23400, -- Illidari Archon
-								23403, -- Illidari Assassin
-								23402, -- Illidari Battle-mage
-								23397, -- Illidari Blood Lord
-								22869, -- Illidari Boneslicer
-								23337, -- Illidari Centurion
-								22853, -- Illidari Defiler
-								22954, -- Illidari Fearbringer
-								23339, -- Illidari Heartseeker
-								22855, -- Illidari Nightlord
-								23232, -- Mutant War Hound
-								22962, -- Priestess of Delight
-								22957, -- Priestess of Dementia
-								23394, -- Promenade Sentinel
-								22945, -- Shadowmoon Blood Mage
-								22880, -- Shadowmoon Champion
-								22882, -- Shadowmoon Deathshaper
-								23018, -- Shadowmoon Houndmaster
-								22879, -- Shadowmoon Reaver
-								23047, -- Shadowmoon Soldier
-								22946, -- Shadowmoon War Hound
-								23049, -- Shadowmoon Weapon Master
-								22956, -- Sister of Pain
-								22964, -- Sister of Pleasure
-								22959, -- Spellbound Attendant
-								22939, -- Temple Concubine
-								22953, -- Wrathbone Flayer
-								22873, -- Coilskar General
-								22874, -- Coilskar Harpooner
-								22875, -- Coilskar Sea-Caller
-								22876, -- Coilskar Soothsayer
-								22877, -- Coilskar Wrangler
-								22878, -- Aqueous Lord
-								22881, -- Aqueous Surger
-								22884, -- Leviathan
-								22885, -- Dragon Turtle
-								22960, -- Dragonmaw Wyrmcaller
-								23028, -- Bonechewer Taskmaster
-								23030, -- Dragonmaw Sky Stalker
+								22844,	-- Ashtongue Battlelord
+								22845,	-- Ashtongue Mystic
+								22847,	-- Ashtongue Primalist
+								23374,	-- Ashtongue Stalker
+								22846,	-- Ashtongue Stormcaller
+								23196,	-- Bonechewer Behemoth
+								23235,	-- Bonechewer Blade Fury
+								23237,	-- Bonechewer Blood Prophet
+								23222,	-- Bonechewer Brawler
+								23239,	-- Bonechewer Combatant
+								23236,	-- Bonechewer Shield Disciple
+								23223,	-- Bonechewer Spectator
+								22955,	-- Charming Courtesan
+								23330,	-- Dragonmaw Wind Reaver
+								22965,	-- Enslaved Servant
+								23172,	-- Hand of Gorefiend
+								23400,	-- Illidari Archon
+								23403,	-- Illidari Assassin
+								23402,	-- Illidari Battle-mage
+								23397,	-- Illidari Blood Lord
+								22869,	-- Illidari Boneslicer
+								23337,	-- Illidari Centurion
+								22853,	-- Illidari Defiler
+								22954,	-- Illidari Fearbringer
+								23339,	-- Illidari Heartseeker
+								22855,	-- Illidari Nightlord
+								23232,	-- Mutant War Hound
+								22962,	-- Priestess of Delight
+								22957,	-- Priestess of Dementia
+								23394,	-- Promenade Sentinel
+								22945,	-- Shadowmoon Blood Mage
+								22880,	-- Shadowmoon Champion
+								22882,	-- Shadowmoon Deathshaper
+								23018,	-- Shadowmoon Houndmaster
+								22879,	-- Shadowmoon Reaver
+								23047,	-- Shadowmoon Soldier
+								22946,	-- Shadowmoon War Hound
+								23049,	-- Shadowmoon Weapon Master
+								22956,	-- Sister of Pain
+								22964,	-- Sister of Pleasure
+								22959,	-- Spellbound Attendant
+								22939,	-- Temple Concubine
+								22953,	-- Wrathbone Flayer
+								22873,	-- Coilskar General
+								22874,	-- Coilskar Harpooner
+								22875,	-- Coilskar Sea-Caller
+								22876,	-- Coilskar Soothsayer
+								22877,	-- Coilskar Wrangler
+								22878,	-- Aqueous Lord
+								22881,	-- Aqueous Surger
+								22884,	-- Leviathan
+								22885,	-- Dragon Turtle
+								22960,	-- Dragonmaw Wyrmcaller
+								23028,	-- Bonechewer Taskmaster
+								23030,	-- Dragonmaw Sky Stalker
 							},
 						}),
 						-- Rings
 						i(32526, {	-- Band of Devastation
 							["crs"] = {
-								22844, -- Ashtongue Battlelord
-								22845, -- Ashtongue Mystic
-								22847, -- Ashtongue Primalist
-								23374, -- Ashtongue Stalker
-								22846, -- Ashtongue Stormcaller
-								23196, -- Bonechewer Behemoth
-								23235, -- Bonechewer Blade Fury
-								23237, -- Bonechewer Blood Prophet
-								23222, -- Bonechewer Brawler
-								23239, -- Bonechewer Combatant
-								23236, -- Bonechewer Shield Disciple
-								23223, -- Bonechewer Spectator
-								22955, -- Charming Courtesan
-								23330, -- Dragonmaw Wind Reaver
-								22965, -- Enslaved Servant
-								23172, -- Hand of Gorefiend
-								23400, -- Illidari Archon
-								23403, -- Illidari Assassin
-								23402, -- Illidari Battle-mage
-								23397, -- Illidari Blood Lord
-								22869, -- Illidari Boneslicer
-								23337, -- Illidari Centurion
-								22853, -- Illidari Defiler
-								22954, -- Illidari Fearbringer
-								23339, -- Illidari Heartseeker
-								22855, -- Illidari Nightlord
-								23232, -- Mutant War Hound
-								22962, -- Priestess of Delight
-								22957, -- Priestess of Dementia
-								23394, -- Promenade Sentinel
-								22945, -- Shadowmoon Blood Mage
-								22880, -- Shadowmoon Champion
-								22882, -- Shadowmoon Deathshaper
-								23018, -- Shadowmoon Houndmaster
-								22879, -- Shadowmoon Reaver
-								23047, -- Shadowmoon Soldier
-								22946, -- Shadowmoon War Hound
-								23049, -- Shadowmoon Weapon Master
-								22956, -- Sister of Pain
-								22964, -- Sister of Pleasure
-								22959, -- Spellbound Attendant
-								22939, -- Temple Concubine
-								22953, -- Wrathbone Flayer
-								22873, -- Coilskar General
-								22874, -- Coilskar Harpooner
-								22875, -- Coilskar Sea-Caller
-								22876, -- Coilskar Soothsayer
-								22877, -- Coilskar Wrangler
-								22878, -- Aqueous Lord
-								22881, -- Aqueous Surger
-								22884, -- Leviathan
-								22885, -- Dragon Turtle
-								22960, -- Dragonmaw Wyrmcaller
-								23028, -- Bonechewer Taskmaster
-								23030, -- Dragonmaw Sky Stalker
+								22844,	-- Ashtongue Battlelord
+								22845,	-- Ashtongue Mystic
+								22847,	-- Ashtongue Primalist
+								23374,	-- Ashtongue Stalker
+								22846,	-- Ashtongue Stormcaller
+								23196,	-- Bonechewer Behemoth
+								23235,	-- Bonechewer Blade Fury
+								23237,	-- Bonechewer Blood Prophet
+								23222,	-- Bonechewer Brawler
+								23239,	-- Bonechewer Combatant
+								23236,	-- Bonechewer Shield Disciple
+								23223,	-- Bonechewer Spectator
+								22955,	-- Charming Courtesan
+								23330,	-- Dragonmaw Wind Reaver
+								22965,	-- Enslaved Servant
+								23172,	-- Hand of Gorefiend
+								23400,	-- Illidari Archon
+								23403,	-- Illidari Assassin
+								23402,	-- Illidari Battle-mage
+								23397,	-- Illidari Blood Lord
+								22869,	-- Illidari Boneslicer
+								23337,	-- Illidari Centurion
+								22853,	-- Illidari Defiler
+								22954,	-- Illidari Fearbringer
+								23339,	-- Illidari Heartseeker
+								22855,	-- Illidari Nightlord
+								23232,	-- Mutant War Hound
+								22962,	-- Priestess of Delight
+								22957,	-- Priestess of Dementia
+								23394,	-- Promenade Sentinel
+								22945,	-- Shadowmoon Blood Mage
+								22880,	-- Shadowmoon Champion
+								22882,	-- Shadowmoon Deathshaper
+								23018,	-- Shadowmoon Houndmaster
+								22879,	-- Shadowmoon Reaver
+								23047,	-- Shadowmoon Soldier
+								22946,	-- Shadowmoon War Hound
+								23049,	-- Shadowmoon Weapon Master
+								22956,	-- Sister of Pain
+								22964,	-- Sister of Pleasure
+								22959,	-- Spellbound Attendant
+								22939,	-- Temple Concubine
+								22953,	-- Wrathbone Flayer
+								22873,	-- Coilskar General
+								22874,	-- Coilskar Harpooner
+								22875,	-- Coilskar Sea-Caller
+								22876,	-- Coilskar Soothsayer
+								22877,	-- Coilskar Wrangler
+								22878,	-- Aqueous Lord
+								22881,	-- Aqueous Surger
+								22884,	-- Leviathan
+								22885,	-- Dragon Turtle
+								22960,	-- Dragonmaw Wyrmcaller
+								23028,	-- Bonechewer Taskmaster
+								23030,	-- Dragonmaw Sky Stalker
 							},
 						}),
 						i(32528, {	-- Blessed Band of Karabor
 							["crs"] = {
-								22844, -- Ashtongue Battlelord
-								22845, -- Ashtongue Mystic
-								22847, -- Ashtongue Primalist
-								23374, -- Ashtongue Stalker
-								22846, -- Ashtongue Stormcaller
-								23196, -- Bonechewer Behemoth
-								23235, -- Bonechewer Blade Fury
-								23237, -- Bonechewer Blood Prophet
-								23222, -- Bonechewer Brawler
-								23239, -- Bonechewer Combatant
-								23236, -- Bonechewer Shield Disciple
-								23223, -- Bonechewer Spectator
-								22955, -- Charming Courtesan
-								23330, -- Dragonmaw Wind Reaver
-								22965, -- Enslaved Servant
-								23172, -- Hand of Gorefiend
-								23400, -- Illidari Archon
-								23403, -- Illidari Assassin
-								23402, -- Illidari Battle-mage
-								23397, -- Illidari Blood Lord
-								22869, -- Illidari Boneslicer
-								23337, -- Illidari Centurion
-								22853, -- Illidari Defiler
-								22954, -- Illidari Fearbringer
-								23339, -- Illidari Heartseeker
-								22855, -- Illidari Nightlord
-								23232, -- Mutant War Hound
-								22962, -- Priestess of Delight
-								22957, -- Priestess of Dementia
-								23394, -- Promenade Sentinel
-								22945, -- Shadowmoon Blood Mage
-								22880, -- Shadowmoon Champion
-								22882, -- Shadowmoon Deathshaper
-								23018, -- Shadowmoon Houndmaster
-								22879, -- Shadowmoon Reaver
-								23047, -- Shadowmoon Soldier
-								22946, -- Shadowmoon War Hound
-								23049, -- Shadowmoon Weapon Master
-								22956, -- Sister of Pain
-								22964, -- Sister of Pleasure
-								22959, -- Spellbound Attendant
-								22939, -- Temple Concubine
-								22953, -- Wrathbone Flayer
-								22873, -- Coilskar General
-								22874, -- Coilskar Harpooner
-								22875, -- Coilskar Sea-Caller
-								22876, -- Coilskar Soothsayer
-								22877, -- Coilskar Wrangler
-								22878, -- Aqueous Lord
-								22881, -- Aqueous Surger
-								22884, -- Leviathan
-								22885, -- Dragon Turtle
-								22960, -- Dragonmaw Wyrmcaller
-								23028, -- Bonechewer Taskmaster
-								23030, -- Dragonmaw Sky Stalker
+								22844,	-- Ashtongue Battlelord
+								22845,	-- Ashtongue Mystic
+								22847,	-- Ashtongue Primalist
+								23374,	-- Ashtongue Stalker
+								22846,	-- Ashtongue Stormcaller
+								23196,	-- Bonechewer Behemoth
+								23235,	-- Bonechewer Blade Fury
+								23237,	-- Bonechewer Blood Prophet
+								23222,	-- Bonechewer Brawler
+								23239,	-- Bonechewer Combatant
+								23236,	-- Bonechewer Shield Disciple
+								23223,	-- Bonechewer Spectator
+								22955,	-- Charming Courtesan
+								23330,	-- Dragonmaw Wind Reaver
+								22965,	-- Enslaved Servant
+								23172,	-- Hand of Gorefiend
+								23400,	-- Illidari Archon
+								23403,	-- Illidari Assassin
+								23402,	-- Illidari Battle-mage
+								23397,	-- Illidari Blood Lord
+								22869,	-- Illidari Boneslicer
+								23337,	-- Illidari Centurion
+								22853,	-- Illidari Defiler
+								22954,	-- Illidari Fearbringer
+								23339,	-- Illidari Heartseeker
+								22855,	-- Illidari Nightlord
+								23232,	-- Mutant War Hound
+								22962,	-- Priestess of Delight
+								22957,	-- Priestess of Dementia
+								23394,	-- Promenade Sentinel
+								22945,	-- Shadowmoon Blood Mage
+								22880,	-- Shadowmoon Champion
+								22882,	-- Shadowmoon Deathshaper
+								23018,	-- Shadowmoon Houndmaster
+								22879,	-- Shadowmoon Reaver
+								23047,	-- Shadowmoon Soldier
+								22946,	-- Shadowmoon War Hound
+								23049,	-- Shadowmoon Weapon Master
+								22956,	-- Sister of Pain
+								22964,	-- Sister of Pleasure
+								22959,	-- Spellbound Attendant
+								22939,	-- Temple Concubine
+								22953,	-- Wrathbone Flayer
+								22873,	-- Coilskar General
+								22874,	-- Coilskar Harpooner
+								22875,	-- Coilskar Sea-Caller
+								22876,	-- Coilskar Soothsayer
+								22877,	-- Coilskar Wrangler
+								22878,	-- Aqueous Lord
+								22881,	-- Aqueous Surger
+								22884,	-- Leviathan
+								22885,	-- Dragon Turtle
+								22960,	-- Dragonmaw Wyrmcaller
+								23028,	-- Bonechewer Taskmaster
+								23030,	-- Dragonmaw Sky Stalker
 							},
 						}),
 						i(32527, {	-- Ring of Ancient Knowledge
 							["crs"] = {
-								22844, -- Ashtongue Battlelord
-								22845, -- Ashtongue Mystic
-								22847, -- Ashtongue Primalist
-								23374, -- Ashtongue Stalker
-								22846, -- Ashtongue Stormcaller
-								23196, -- Bonechewer Behemoth
-								23235, -- Bonechewer Blade Fury
-								23237, -- Bonechewer Blood Prophet
-								23222, -- Bonechewer Brawler
-								23239, -- Bonechewer Combatant
-								23236, -- Bonechewer Shield Disciple
-								23223, -- Bonechewer Spectator
-								22955, -- Charming Courtesan
-								23330, -- Dragonmaw Wind Reaver
-								22965, -- Enslaved Servant
-								23172, -- Hand of Gorefiend
-								23400, -- Illidari Archon
-								23403, -- Illidari Assassin
-								23402, -- Illidari Battle-mage
-								23397, -- Illidari Blood Lord
-								22869, -- Illidari Boneslicer
-								23337, -- Illidari Centurion
-								22853, -- Illidari Defiler
-								22954, -- Illidari Fearbringer
-								23339, -- Illidari Heartseeker
-								22855, -- Illidari Nightlord
-								23232, -- Mutant War Hound
-								22962, -- Priestess of Delight
-								22957, -- Priestess of Dementia
-								23394, -- Promenade Sentinel
-								22945, -- Shadowmoon Blood Mage
-								22880, -- Shadowmoon Champion
-								22882, -- Shadowmoon Deathshaper
-								23018, -- Shadowmoon Houndmaster
-								22879, -- Shadowmoon Reaver
-								23047, -- Shadowmoon Soldier
-								22946, -- Shadowmoon War Hound
-								23049, -- Shadowmoon Weapon Master
-								22956, -- Sister of Pain
-								22964, -- Sister of Pleasure
-								22959, -- Spellbound Attendant
-								22939, -- Temple Concubine
-								22953, -- Wrathbone Flayer
-								22873, -- Coilskar General
-								22874, -- Coilskar Harpooner
-								22875, -- Coilskar Sea-Caller
-								22876, -- Coilskar Soothsayer
-								22877, -- Coilskar Wrangler
-								22878, -- Aqueous Lord
-								22881, -- Aqueous Surger
-								22884, -- Leviathan
-								22885, -- Dragon Turtle
-								22960, -- Dragonmaw Wyrmcaller
-								23028, -- Bonechewer Taskmaster
-								23030, -- Dragonmaw Sky Stalker
+								22844,	-- Ashtongue Battlelord
+								22845,	-- Ashtongue Mystic
+								22847,	-- Ashtongue Primalist
+								23374,	-- Ashtongue Stalker
+								22846,	-- Ashtongue Stormcaller
+								23196,	-- Bonechewer Behemoth
+								23235,	-- Bonechewer Blade Fury
+								23237,	-- Bonechewer Blood Prophet
+								23222,	-- Bonechewer Brawler
+								23239,	-- Bonechewer Combatant
+								23236,	-- Bonechewer Shield Disciple
+								23223,	-- Bonechewer Spectator
+								22955,	-- Charming Courtesan
+								23330,	-- Dragonmaw Wind Reaver
+								22965,	-- Enslaved Servant
+								23172,	-- Hand of Gorefiend
+								23400,	-- Illidari Archon
+								23403,	-- Illidari Assassin
+								23402,	-- Illidari Battle-mage
+								23397,	-- Illidari Blood Lord
+								22869,	-- Illidari Boneslicer
+								23337,	-- Illidari Centurion
+								22853,	-- Illidari Defiler
+								22954,	-- Illidari Fearbringer
+								23339,	-- Illidari Heartseeker
+								22855,	-- Illidari Nightlord
+								23232,	-- Mutant War Hound
+								22962,	-- Priestess of Delight
+								22957,	-- Priestess of Dementia
+								23394,	-- Promenade Sentinel
+								22945,	-- Shadowmoon Blood Mage
+								22880,	-- Shadowmoon Champion
+								22882,	-- Shadowmoon Deathshaper
+								23018,	-- Shadowmoon Houndmaster
+								22879,	-- Shadowmoon Reaver
+								23047,	-- Shadowmoon Soldier
+								22946,	-- Shadowmoon War Hound
+								23049,	-- Shadowmoon Weapon Master
+								22956,	-- Sister of Pain
+								22964,	-- Sister of Pleasure
+								22959,	-- Spellbound Attendant
+								22939,	-- Temple Concubine
+								22953,	-- Wrathbone Flayer
+								22873,	-- Coilskar General
+								22874,	-- Coilskar Harpooner
+								22875,	-- Coilskar Sea-Caller
+								22876,	-- Coilskar Soothsayer
+								22877,	-- Coilskar Wrangler
+								22878,	-- Aqueous Lord
+								22881,	-- Aqueous Surger
+								22884,	-- Leviathan
+								22885,	-- Dragon Turtle
+								22960,	-- Dragonmaw Wyrmcaller
+								23028,	-- Bonechewer Taskmaster
+								23030,	-- Dragonmaw Sky Stalker
 							},
 						}),
 						-- Recipes
 						i(32754, {	-- Pattern: Bracers of Nimble Thought
 							["crs"] = {
-								22844, -- Ashtongue Battlelord
-								22845, -- Ashtongue Mystic
-								22847, -- Ashtongue Primalist
-								23374, -- Ashtongue Stalker
-								22846, -- Ashtongue Stormcaller
-								23196, -- Bonechewer Behemoth
-								23235, -- Bonechewer Blade Fury
-								23237, -- Bonechewer Blood Prophet
-								23222, -- Bonechewer Brawler
-								23239, -- Bonechewer Combatant
-								23236, -- Bonechewer Shield Disciple
-								23223, -- Bonechewer Spectator
-								22955, -- Charming Courtesan
-								23330, -- Dragonmaw Wind Reaver
-								22965, -- Enslaved Servant
-								23172, -- Hand of Gorefiend
-								23400, -- Illidari Archon
-								23403, -- Illidari Assassin
-								23402, -- Illidari Battle-mage
-								23397, -- Illidari Blood Lord
-								22869, -- Illidari Boneslicer
-								23337, -- Illidari Centurion
-								22853, -- Illidari Defiler
-								22954, -- Illidari Fearbringer
-								23339, -- Illidari Heartseeker
-								22855, -- Illidari Nightlord
-								23232, -- Mutant War Hound
-								22962, -- Priestess of Delight
-								22957, -- Priestess of Dementia
-								23394, -- Promenade Sentinel
-								22945, -- Shadowmoon Blood Mage
-								22880, -- Shadowmoon Champion
-								22882, -- Shadowmoon Deathshaper
-								23018, -- Shadowmoon Houndmaster
-								22879, -- Shadowmoon Reaver
-								23047, -- Shadowmoon Soldier
-								22946, -- Shadowmoon War Hound
-								23049, -- Shadowmoon Weapon Master
-								22956, -- Sister of Pain
-								22964, -- Sister of Pleasure
-								22959, -- Spellbound Attendant
-								22939, -- Temple Concubine
-								22953, -- Wrathbone Flayer
+								22844,	-- Ashtongue Battlelord
+								22845,	-- Ashtongue Mystic
+								22847,	-- Ashtongue Primalist
+								23374,	-- Ashtongue Stalker
+								22846,	-- Ashtongue Stormcaller
+								23196,	-- Bonechewer Behemoth
+								23235,	-- Bonechewer Blade Fury
+								23237,	-- Bonechewer Blood Prophet
+								23222,	-- Bonechewer Brawler
+								23239,	-- Bonechewer Combatant
+								23236,	-- Bonechewer Shield Disciple
+								23223,	-- Bonechewer Spectator
+								22955,	-- Charming Courtesan
+								23330,	-- Dragonmaw Wind Reaver
+								22965,	-- Enslaved Servant
+								23172,	-- Hand of Gorefiend
+								23400,	-- Illidari Archon
+								23403,	-- Illidari Assassin
+								23402,	-- Illidari Battle-mage
+								23397,	-- Illidari Blood Lord
+								22869,	-- Illidari Boneslicer
+								23337,	-- Illidari Centurion
+								22853,	-- Illidari Defiler
+								22954,	-- Illidari Fearbringer
+								23339,	-- Illidari Heartseeker
+								22855,	-- Illidari Nightlord
+								23232,	-- Mutant War Hound
+								22962,	-- Priestess of Delight
+								22957,	-- Priestess of Dementia
+								23394,	-- Promenade Sentinel
+								22945,	-- Shadowmoon Blood Mage
+								22880,	-- Shadowmoon Champion
+								22882,	-- Shadowmoon Deathshaper
+								23018,	-- Shadowmoon Houndmaster
+								22879,	-- Shadowmoon Reaver
+								23047,	-- Shadowmoon Soldier
+								22946,	-- Shadowmoon War Hound
+								23049,	-- Shadowmoon Weapon Master
+								22956,	-- Sister of Pain
+								22964,	-- Sister of Pleasure
+								22959,	-- Spellbound Attendant
+								22939,	-- Temple Concubine
+								22953,	-- Wrathbone Flayer
 							},
 						}),
 						i(32744, {	-- Pattern: Bracers of Renewed Life
 							["crs"] = {
-								22844, -- Ashtongue Battlelord
-								22845, -- Ashtongue Mystic
-								22847, -- Ashtongue Primalist
-								23374, -- Ashtongue Stalker
-								22846, -- Ashtongue Stormcaller
-								23196, -- Bonechewer Behemoth
-								23235, -- Bonechewer Blade Fury
-								23237, -- Bonechewer Blood Prophet
-								23222, -- Bonechewer Brawler
-								23239, -- Bonechewer Combatant
-								23236, -- Bonechewer Shield Disciple
-								23223, -- Bonechewer Spectator
-								22955, -- Charming Courtesan
-								23330, -- Dragonmaw Wind Reaver
-								22965, -- Enslaved Servant
-								23172, -- Hand of Gorefiend
-								23400, -- Illidari Archon
-								23403, -- Illidari Assassin
-								23402, -- Illidari Battle-mage
-								23397, -- Illidari Blood Lord
-								22869, -- Illidari Boneslicer
-								23337, -- Illidari Centurion
-								22853, -- Illidari Defiler
-								22954, -- Illidari Fearbringer
-								23339, -- Illidari Heartseeker
-								22855, -- Illidari Nightlord
-								23232, -- Mutant War Hound
-								22962, -- Priestess of Delight
-								22957, -- Priestess of Dementia
-								23394, -- Promenade Sentinel
-								22945, -- Shadowmoon Blood Mage
-								22880, -- Shadowmoon Champion
-								22882, -- Shadowmoon Deathshaper
-								23018, -- Shadowmoon Houndmaster
-								22879, -- Shadowmoon Reaver
-								23047, -- Shadowmoon Soldier
-								22946, -- Shadowmoon War Hound
-								23049, -- Shadowmoon Weapon Master
-								22956, -- Sister of Pain
-								22964, -- Sister of Pleasure
-								22959, -- Spellbound Attendant
-								22939, -- Temple Concubine
-								22953, -- Wrathbone Flayer
+								22844,	-- Ashtongue Battlelord
+								22845,	-- Ashtongue Mystic
+								22847,	-- Ashtongue Primalist
+								23374,	-- Ashtongue Stalker
+								22846,	-- Ashtongue Stormcaller
+								23196,	-- Bonechewer Behemoth
+								23235,	-- Bonechewer Blade Fury
+								23237,	-- Bonechewer Blood Prophet
+								23222,	-- Bonechewer Brawler
+								23239,	-- Bonechewer Combatant
+								23236,	-- Bonechewer Shield Disciple
+								23223,	-- Bonechewer Spectator
+								22955,	-- Charming Courtesan
+								23330,	-- Dragonmaw Wind Reaver
+								22965,	-- Enslaved Servant
+								23172,	-- Hand of Gorefiend
+								23400,	-- Illidari Archon
+								23403,	-- Illidari Assassin
+								23402,	-- Illidari Battle-mage
+								23397,	-- Illidari Blood Lord
+								22869,	-- Illidari Boneslicer
+								23337,	-- Illidari Centurion
+								22853,	-- Illidari Defiler
+								22954,	-- Illidari Fearbringer
+								23339,	-- Illidari Heartseeker
+								22855,	-- Illidari Nightlord
+								23232,	-- Mutant War Hound
+								22962,	-- Priestess of Delight
+								22957,	-- Priestess of Dementia
+								23394,	-- Promenade Sentinel
+								22945,	-- Shadowmoon Blood Mage
+								22880,	-- Shadowmoon Champion
+								22882,	-- Shadowmoon Deathshaper
+								23018,	-- Shadowmoon Houndmaster
+								22879,	-- Shadowmoon Reaver
+								23047,	-- Shadowmoon Soldier
+								22946,	-- Shadowmoon War Hound
+								23049,	-- Shadowmoon Weapon Master
+								22956,	-- Sister of Pain
+								22964,	-- Sister of Pleasure
+								22959,	-- Spellbound Attendant
+								22939,	-- Temple Concubine
+								22953,	-- Wrathbone Flayer
 							},
 						}),
 						i(32750, {	-- Pattern: Living Earth Bindings
 							["crs"] = {
-								22844, -- Ashtongue Battlelord
-								22845, -- Ashtongue Mystic
-								22847, -- Ashtongue Primalist
-								23374, -- Ashtongue Stalker
-								22846, -- Ashtongue Stormcaller
-								23196, -- Bonechewer Behemoth
-								23235, -- Bonechewer Blade Fury
-								23237, -- Bonechewer Blood Prophet
-								23222, -- Bonechewer Brawler
-								23239, -- Bonechewer Combatant
-								23236, -- Bonechewer Shield Disciple
-								23223, -- Bonechewer Spectator
-								22955, -- Charming Courtesan
-								23330, -- Dragonmaw Wind Reaver
-								22965, -- Enslaved Servant
-								23172, -- Hand of Gorefiend
-								23400, -- Illidari Archon
-								23403, -- Illidari Assassin
-								23402, -- Illidari Battle-mage
-								23397, -- Illidari Blood Lord
-								22869, -- Illidari Boneslicer
-								23337, -- Illidari Centurion
-								22853, -- Illidari Defiler
-								22954, -- Illidari Fearbringer
-								23339, -- Illidari Heartseeker
-								22855, -- Illidari Nightlord
-								23232, -- Mutant War Hound
-								22962, -- Priestess of Delight
-								22957, -- Priestess of Dementia
-								23394, -- Promenade Sentinel
-								22945, -- Shadowmoon Blood Mage
-								22880, -- Shadowmoon Champion
-								22882, -- Shadowmoon Deathshaper
-								23018, -- Shadowmoon Houndmaster
-								22879, -- Shadowmoon Reaver
-								23047, -- Shadowmoon Soldier
-								22946, -- Shadowmoon War Hound
-								23049, -- Shadowmoon Weapon Master
-								22956, -- Sister of Pain
-								22964, -- Sister of Pleasure
-								22959, -- Spellbound Attendant
-								22939, -- Temple Concubine
-								22953, -- Wrathbone Flayer
+								22844,	-- Ashtongue Battlelord
+								22845,	-- Ashtongue Mystic
+								22847,	-- Ashtongue Primalist
+								23374,	-- Ashtongue Stalker
+								22846,	-- Ashtongue Stormcaller
+								23196,	-- Bonechewer Behemoth
+								23235,	-- Bonechewer Blade Fury
+								23237,	-- Bonechewer Blood Prophet
+								23222,	-- Bonechewer Brawler
+								23239,	-- Bonechewer Combatant
+								23236,	-- Bonechewer Shield Disciple
+								23223,	-- Bonechewer Spectator
+								22955,	-- Charming Courtesan
+								23330,	-- Dragonmaw Wind Reaver
+								22965,	-- Enslaved Servant
+								23172,	-- Hand of Gorefiend
+								23400,	-- Illidari Archon
+								23403,	-- Illidari Assassin
+								23402,	-- Illidari Battle-mage
+								23397,	-- Illidari Blood Lord
+								22869,	-- Illidari Boneslicer
+								23337,	-- Illidari Centurion
+								22853,	-- Illidari Defiler
+								22954,	-- Illidari Fearbringer
+								23339,	-- Illidari Heartseeker
+								22855,	-- Illidari Nightlord
+								23232,	-- Mutant War Hound
+								22962,	-- Priestess of Delight
+								22957,	-- Priestess of Dementia
+								23394,	-- Promenade Sentinel
+								22945,	-- Shadowmoon Blood Mage
+								22880,	-- Shadowmoon Champion
+								22882,	-- Shadowmoon Deathshaper
+								23018,	-- Shadowmoon Houndmaster
+								22879,	-- Shadowmoon Reaver
+								23047,	-- Shadowmoon Soldier
+								22946,	-- Shadowmoon War Hound
+								23049,	-- Shadowmoon Weapon Master
+								22956,	-- Sister of Pain
+								22964,	-- Sister of Pleasure
+								22959,	-- Spellbound Attendant
+								22939,	-- Temple Concubine
+								22953,	-- Wrathbone Flayer
 							},
 						}),
 						i(32749, {	-- Pattern: Shoulders of Lightning Reflexes
 							["crs"] = {
-								22844, -- Ashtongue Battlelord
-								22845, -- Ashtongue Mystic
-								22847, -- Ashtongue Primalist
-								23374, -- Ashtongue Stalker
-								22846, -- Ashtongue Stormcaller
-								23196, -- Bonechewer Behemoth
-								23235, -- Bonechewer Blade Fury
-								23237, -- Bonechewer Blood Prophet
-								23222, -- Bonechewer Brawler
-								23239, -- Bonechewer Combatant
-								23236, -- Bonechewer Shield Disciple
-								23223, -- Bonechewer Spectator
-								22955, -- Charming Courtesan
-								23330, -- Dragonmaw Wind Reaver
-								22965, -- Enslaved Servant
-								23172, -- Hand of Gorefiend
-								23400, -- Illidari Archon
-								23403, -- Illidari Assassin
-								23402, -- Illidari Battle-mage
-								23397, -- Illidari Blood Lord
-								22869, -- Illidari Boneslicer
-								23337, -- Illidari Centurion
-								22853, -- Illidari Defiler
-								22954, -- Illidari Fearbringer
-								23339, -- Illidari Heartseeker
-								22855, -- Illidari Nightlord
-								23232, -- Mutant War Hound
-								22962, -- Priestess of Delight
-								22957, -- Priestess of Dementia
-								23394, -- Promenade Sentinel
-								22945, -- Shadowmoon Blood Mage
-								22880, -- Shadowmoon Champion
-								22882, -- Shadowmoon Deathshaper
-								23018, -- Shadowmoon Houndmaster
-								22879, -- Shadowmoon Reaver
-								23047, -- Shadowmoon Soldier
-								22946, -- Shadowmoon War Hound
-								23049, -- Shadowmoon Weapon Master
-								22956, -- Sister of Pain
-								22964, -- Sister of Pleasure
-								22959, -- Spellbound Attendant
-								22939, -- Temple Concubine
-								22953, -- Wrathbone Flayer
+								22844,	-- Ashtongue Battlelord
+								22845,	-- Ashtongue Mystic
+								22847,	-- Ashtongue Primalist
+								23374,	-- Ashtongue Stalker
+								22846,	-- Ashtongue Stormcaller
+								23196,	-- Bonechewer Behemoth
+								23235,	-- Bonechewer Blade Fury
+								23237,	-- Bonechewer Blood Prophet
+								23222,	-- Bonechewer Brawler
+								23239,	-- Bonechewer Combatant
+								23236,	-- Bonechewer Shield Disciple
+								23223,	-- Bonechewer Spectator
+								22955,	-- Charming Courtesan
+								23330,	-- Dragonmaw Wind Reaver
+								22965,	-- Enslaved Servant
+								23172,	-- Hand of Gorefiend
+								23400,	-- Illidari Archon
+								23403,	-- Illidari Assassin
+								23402,	-- Illidari Battle-mage
+								23397,	-- Illidari Blood Lord
+								22869,	-- Illidari Boneslicer
+								23337,	-- Illidari Centurion
+								22853,	-- Illidari Defiler
+								22954,	-- Illidari Fearbringer
+								23339,	-- Illidari Heartseeker
+								22855,	-- Illidari Nightlord
+								23232,	-- Mutant War Hound
+								22962,	-- Priestess of Delight
+								22957,	-- Priestess of Dementia
+								23394,	-- Promenade Sentinel
+								22945,	-- Shadowmoon Blood Mage
+								22880,	-- Shadowmoon Champion
+								22882,	-- Shadowmoon Deathshaper
+								23018,	-- Shadowmoon Houndmaster
+								22879,	-- Shadowmoon Reaver
+								23047,	-- Shadowmoon Soldier
+								22946,	-- Shadowmoon War Hound
+								23049,	-- Shadowmoon Weapon Master
+								22956,	-- Sister of Pain
+								22964,	-- Sister of Pleasure
+								22959,	-- Spellbound Attendant
+								22939,	-- Temple Concubine
+								22953,	-- Wrathbone Flayer
 							},
 						}),
 						i(32747, {	-- Pattern: Swiftstrike Shoulders
 							["crs"] = {
-								22844, -- Ashtongue Battlelord
-								22845, -- Ashtongue Mystic
-								22847, -- Ashtongue Primalist
-								23374, -- Ashtongue Stalker
-								22846, -- Ashtongue Stormcaller
-								23196, -- Bonechewer Behemoth
-								23235, -- Bonechewer Blade Fury
-								23237, -- Bonechewer Blood Prophet
-								23222, -- Bonechewer Brawler
-								23239, -- Bonechewer Combatant
-								23236, -- Bonechewer Shield Disciple
-								23223, -- Bonechewer Spectator
-								22955, -- Charming Courtesan
-								23330, -- Dragonmaw Wind Reaver
-								22965, -- Enslaved Servant
-								23172, -- Hand of Gorefiend
-								23400, -- Illidari Archon
-								23403, -- Illidari Assassin
-								23402, -- Illidari Battle-mage
-								23397, -- Illidari Blood Lord
-								22869, -- Illidari Boneslicer
-								23337, -- Illidari Centurion
-								22853, -- Illidari Defiler
-								22954, -- Illidari Fearbringer
-								23339, -- Illidari Heartseeker
-								22855, -- Illidari Nightlord
-								23232, -- Mutant War Hound
-								22962, -- Priestess of Delight
-								22957, -- Priestess of Dementia
-								23394, -- Promenade Sentinel
-								22945, -- Shadowmoon Blood Mage
-								22880, -- Shadowmoon Champion
-								22882, -- Shadowmoon Deathshaper
-								23018, -- Shadowmoon Houndmaster
-								22879, -- Shadowmoon Reaver
-								23047, -- Shadowmoon Soldier
-								22946, -- Shadowmoon War Hound
-								23049, -- Shadowmoon Weapon Master
-								22956, -- Sister of Pain
-								22964, -- Sister of Pleasure
-								22959, -- Spellbound Attendant
-								22939, -- Temple Concubine
-								22953, -- Wrathbone Flayer
+								22844,	-- Ashtongue Battlelord
+								22845,	-- Ashtongue Mystic
+								22847,	-- Ashtongue Primalist
+								23374,	-- Ashtongue Stalker
+								22846,	-- Ashtongue Stormcaller
+								23196,	-- Bonechewer Behemoth
+								23235,	-- Bonechewer Blade Fury
+								23237,	-- Bonechewer Blood Prophet
+								23222,	-- Bonechewer Brawler
+								23239,	-- Bonechewer Combatant
+								23236,	-- Bonechewer Shield Disciple
+								23223,	-- Bonechewer Spectator
+								22955,	-- Charming Courtesan
+								23330,	-- Dragonmaw Wind Reaver
+								22965,	-- Enslaved Servant
+								23172,	-- Hand of Gorefiend
+								23400,	-- Illidari Archon
+								23403,	-- Illidari Assassin
+								23402,	-- Illidari Battle-mage
+								23397,	-- Illidari Blood Lord
+								22869,	-- Illidari Boneslicer
+								23337,	-- Illidari Centurion
+								22853,	-- Illidari Defiler
+								22954,	-- Illidari Fearbringer
+								23339,	-- Illidari Heartseeker
+								22855,	-- Illidari Nightlord
+								23232,	-- Mutant War Hound
+								22962,	-- Priestess of Delight
+								22957,	-- Priestess of Dementia
+								23394,	-- Promenade Sentinel
+								22945,	-- Shadowmoon Blood Mage
+								22880,	-- Shadowmoon Champion
+								22882,	-- Shadowmoon Deathshaper
+								23018,	-- Shadowmoon Houndmaster
+								22879,	-- Shadowmoon Reaver
+								23047,	-- Shadowmoon Soldier
+								22946,	-- Shadowmoon War Hound
+								23049,	-- Shadowmoon Weapon Master
+								22956,	-- Sister of Pain
+								22964,	-- Sister of Pleasure
+								22959,	-- Spellbound Attendant
+								22939,	-- Temple Concubine
+								22953,	-- Wrathbone Flayer
 							},
 						}),
 						i(32753, {	-- Pattern: Swiftheal Mantle
 							["crs"] = {
-								22844, -- Ashtongue Battlelord
-								22845, -- Ashtongue Mystic
-								22847, -- Ashtongue Primalist
-								23374, -- Ashtongue Stalker
-								22846, -- Ashtongue Stormcaller
-								23196, -- Bonechewer Behemoth
-								23235, -- Bonechewer Blade Fury
-								23237, -- Bonechewer Blood Prophet
-								23222, -- Bonechewer Brawler
-								23239, -- Bonechewer Combatant
-								23236, -- Bonechewer Shield Disciple
-								23223, -- Bonechewer Spectator
-								22955, -- Charming Courtesan
-								23330, -- Dragonmaw Wind Reaver
-								22965, -- Enslaved Servant
-								23172, -- Hand of Gorefiend
-								23400, -- Illidari Archon
-								23403, -- Illidari Assassin
-								23402, -- Illidari Battle-mage
-								23397, -- Illidari Blood Lord
-								22869, -- Illidari Boneslicer
-								23337, -- Illidari Centurion
-								22853, -- Illidari Defiler
-								22954, -- Illidari Fearbringer
-								23339, -- Illidari Heartseeker
-								22855, -- Illidari Nightlord
-								23232, -- Mutant War Hound
-								22962, -- Priestess of Delight
-								22957, -- Priestess of Dementia
-								23394, -- Promenade Sentinel
-								22945, -- Shadowmoon Blood Mage
-								22880, -- Shadowmoon Champion
-								22882, -- Shadowmoon Deathshaper
-								23018, -- Shadowmoon Houndmaster
-								22879, -- Shadowmoon Reaver
-								23047, -- Shadowmoon Soldier
-								22946, -- Shadowmoon War Hound
-								23049, -- Shadowmoon Weapon Master
-								22956, -- Sister of Pain
-								22964, -- Sister of Pleasure
-								22959, -- Spellbound Attendant
-								22939, -- Temple Concubine
-								22953, -- Wrathbone Flayer
+								22844,	-- Ashtongue Battlelord
+								22845,	-- Ashtongue Mystic
+								22847,	-- Ashtongue Primalist
+								23374,	-- Ashtongue Stalker
+								22846,	-- Ashtongue Stormcaller
+								23196,	-- Bonechewer Behemoth
+								23235,	-- Bonechewer Blade Fury
+								23237,	-- Bonechewer Blood Prophet
+								23222,	-- Bonechewer Brawler
+								23239,	-- Bonechewer Combatant
+								23236,	-- Bonechewer Shield Disciple
+								23223,	-- Bonechewer Spectator
+								22955,	-- Charming Courtesan
+								23330,	-- Dragonmaw Wind Reaver
+								22965,	-- Enslaved Servant
+								23172,	-- Hand of Gorefiend
+								23400,	-- Illidari Archon
+								23403,	-- Illidari Assassin
+								23402,	-- Illidari Battle-mage
+								23397,	-- Illidari Blood Lord
+								22869,	-- Illidari Boneslicer
+								23337,	-- Illidari Centurion
+								22853,	-- Illidari Defiler
+								22954,	-- Illidari Fearbringer
+								23339,	-- Illidari Heartseeker
+								22855,	-- Illidari Nightlord
+								23232,	-- Mutant War Hound
+								22962,	-- Priestess of Delight
+								22957,	-- Priestess of Dementia
+								23394,	-- Promenade Sentinel
+								22945,	-- Shadowmoon Blood Mage
+								22880,	-- Shadowmoon Champion
+								22882,	-- Shadowmoon Deathshaper
+								23018,	-- Shadowmoon Houndmaster
+								22879,	-- Shadowmoon Reaver
+								23047,	-- Shadowmoon Soldier
+								22946,	-- Shadowmoon War Hound
+								23049,	-- Shadowmoon Weapon Master
+								22956,	-- Sister of Pain
+								22964,	-- Sister of Pleasure
+								22959,	-- Spellbound Attendant
+								22939,	-- Temple Concubine
+								22953,	-- Wrathbone Flayer
 							},
 						}),
 						i(32738, {	-- Plans: Dawnsteel Bracers
 							["crs"] = {
-								22844, -- Ashtongue Battlelord
-								22845, -- Ashtongue Mystic
-								22847, -- Ashtongue Primalist
-								23374, -- Ashtongue Stalker
-								22846, -- Ashtongue Stormcaller
-								23196, -- Bonechewer Behemoth
-								23235, -- Bonechewer Blade Fury
-								23237, -- Bonechewer Blood Prophet
-								23222, -- Bonechewer Brawler
-								23239, -- Bonechewer Combatant
-								23236, -- Bonechewer Shield Disciple
-								23223, -- Bonechewer Spectator
-								22955, -- Charming Courtesan
-								23330, -- Dragonmaw Wind Reaver
-								22965, -- Enslaved Servant
-								23172, -- Hand of Gorefiend
-								23400, -- Illidari Archon
-								23403, -- Illidari Assassin
-								23402, -- Illidari Battle-mage
-								23397, -- Illidari Blood Lord
-								22869, -- Illidari Boneslicer
-								23337, -- Illidari Centurion
-								22853, -- Illidari Defiler
-								22954, -- Illidari Fearbringer
-								23339, -- Illidari Heartseeker
-								22855, -- Illidari Nightlord
-								23232, -- Mutant War Hound
-								22962, -- Priestess of Delight
-								22957, -- Priestess of Dementia
-								23394, -- Promenade Sentinel
-								22945, -- Shadowmoon Blood Mage
-								22880, -- Shadowmoon Champion
-								22882, -- Shadowmoon Deathshaper
-								23018, -- Shadowmoon Houndmaster
-								22879, -- Shadowmoon Reaver
-								23047, -- Shadowmoon Soldier
-								22946, -- Shadowmoon War Hound
-								23049, -- Shadowmoon Weapon Master
-								22956, -- Sister of Pain
-								22964, -- Sister of Pleasure
-								22959, -- Spellbound Attendant
-								22939, -- Temple Concubine
-								22953, -- Wrathbone Flayer
+								22844,	-- Ashtongue Battlelord
+								22845,	-- Ashtongue Mystic
+								22847,	-- Ashtongue Primalist
+								23374,	-- Ashtongue Stalker
+								22846,	-- Ashtongue Stormcaller
+								23196,	-- Bonechewer Behemoth
+								23235,	-- Bonechewer Blade Fury
+								23237,	-- Bonechewer Blood Prophet
+								23222,	-- Bonechewer Brawler
+								23239,	-- Bonechewer Combatant
+								23236,	-- Bonechewer Shield Disciple
+								23223,	-- Bonechewer Spectator
+								22955,	-- Charming Courtesan
+								23330,	-- Dragonmaw Wind Reaver
+								22965,	-- Enslaved Servant
+								23172,	-- Hand of Gorefiend
+								23400,	-- Illidari Archon
+								23403,	-- Illidari Assassin
+								23402,	-- Illidari Battle-mage
+								23397,	-- Illidari Blood Lord
+								22869,	-- Illidari Boneslicer
+								23337,	-- Illidari Centurion
+								22853,	-- Illidari Defiler
+								22954,	-- Illidari Fearbringer
+								23339,	-- Illidari Heartseeker
+								22855,	-- Illidari Nightlord
+								23232,	-- Mutant War Hound
+								22962,	-- Priestess of Delight
+								22957,	-- Priestess of Dementia
+								23394,	-- Promenade Sentinel
+								22945,	-- Shadowmoon Blood Mage
+								22880,	-- Shadowmoon Champion
+								22882,	-- Shadowmoon Deathshaper
+								23018,	-- Shadowmoon Houndmaster
+								22879,	-- Shadowmoon Reaver
+								23047,	-- Shadowmoon Soldier
+								22946,	-- Shadowmoon War Hound
+								23049,	-- Shadowmoon Weapon Master
+								22956,	-- Sister of Pain
+								22964,	-- Sister of Pleasure
+								22959,	-- Spellbound Attendant
+								22939,	-- Temple Concubine
+								22953,	-- Wrathbone Flayer
 							},
 						}),
 						i(32737,	{	-- Plans: Swiftsteel Shoulders
 							["crs"] = {
-								22844, -- Ashtongue Battlelord
-								22845, -- Ashtongue Mystic
-								22847, -- Ashtongue Primalist
-								23374, -- Ashtongue Stalker
-								22846, -- Ashtongue Stormcaller
-								23196, -- Bonechewer Behemoth
-								23235, -- Bonechewer Blade Fury
-								23237, -- Bonechewer Blood Prophet
-								23222, -- Bonechewer Brawler
-								23239, -- Bonechewer Combatant
-								23236, -- Bonechewer Shield Disciple
-								23223, -- Bonechewer Spectator
-								22955, -- Charming Courtesan
-								23330, -- Dragonmaw Wind Reaver
-								22965, -- Enslaved Servant
-								23172, -- Hand of Gorefiend
-								23400, -- Illidari Archon
-								23403, -- Illidari Assassin
-								23402, -- Illidari Battle-mage
-								23397, -- Illidari Blood Lord
-								22869, -- Illidari Boneslicer
-								23337, -- Illidari Centurion
-								22853, -- Illidari Defiler
-								22954, -- Illidari Fearbringer
-								23339, -- Illidari Heartseeker
-								22855, -- Illidari Nightlord
-								23232, -- Mutant War Hound
-								22962, -- Priestess of Delight
-								22957, -- Priestess of Dementia
-								23394, -- Promenade Sentinel
-								22945, -- Shadowmoon Blood Mage
-								22880, -- Shadowmoon Champion
-								22882, -- Shadowmoon Deathshaper
-								23018, -- Shadowmoon Houndmaster
-								22879, -- Shadowmoon Reaver
-								23047, -- Shadowmoon Soldier
-								22946, -- Shadowmoon War Hound
-								23049, -- Shadowmoon Weapon Master
-								22956, -- Sister of Pain
-								22964, -- Sister of Pleasure
-								22959, -- Spellbound Attendant
-								22939, -- Temple Concubine
-								22953, -- Wrathbone Flayer
+								22844,	-- Ashtongue Battlelord
+								22845,	-- Ashtongue Mystic
+								22847,	-- Ashtongue Primalist
+								23374,	-- Ashtongue Stalker
+								22846,	-- Ashtongue Stormcaller
+								23196,	-- Bonechewer Behemoth
+								23235,	-- Bonechewer Blade Fury
+								23237,	-- Bonechewer Blood Prophet
+								23222,	-- Bonechewer Brawler
+								23239,	-- Bonechewer Combatant
+								23236,	-- Bonechewer Shield Disciple
+								23223,	-- Bonechewer Spectator
+								22955,	-- Charming Courtesan
+								23330,	-- Dragonmaw Wind Reaver
+								22965,	-- Enslaved Servant
+								23172,	-- Hand of Gorefiend
+								23400,	-- Illidari Archon
+								23403,	-- Illidari Assassin
+								23402,	-- Illidari Battle-mage
+								23397,	-- Illidari Blood Lord
+								22869,	-- Illidari Boneslicer
+								23337,	-- Illidari Centurion
+								22853,	-- Illidari Defiler
+								22954,	-- Illidari Fearbringer
+								23339,	-- Illidari Heartseeker
+								22855,	-- Illidari Nightlord
+								23232,	-- Mutant War Hound
+								22962,	-- Priestess of Delight
+								22957,	-- Priestess of Dementia
+								23394,	-- Promenade Sentinel
+								22945,	-- Shadowmoon Blood Mage
+								22880,	-- Shadowmoon Champion
+								22882,	-- Shadowmoon Deathshaper
+								23018,	-- Shadowmoon Houndmaster
+								22879,	-- Shadowmoon Reaver
+								23047,	-- Shadowmoon Soldier
+								22946,	-- Shadowmoon War Hound
+								23049,	-- Shadowmoon Weapon Master
+								22956,	-- Sister of Pain
+								22964,	-- Sister of Pleasure
+								22959,	-- Spellbound Attendant
+								22939,	-- Temple Concubine
+								22953,	-- Wrathbone Flayer
 							},
 						}),
 						{	-- Plans: Swiftsteel Shoulders
@@ -1180,52 +1180,60 @@ _.Instances =
 								i( 32737),	-- Plans: Swiftsteel Shoulders
 							})),
 							cr(23426, e(1589, {	-- The Illidari Council
-								i(31098, {	-- Leggings of the Forgotten Conqueror
-									i(30993),	-- Lightbringer Greaves
-									i(30994),	-- Lightbringer Leggings
-									i(30995),	-- Lightbringer Legguards
-									i(31995),	-- Merciless Gladiator's Lamellar Legguards
-									i(32023),	-- Merciless Gladiator's Ornamented Legplates
-									i(32042),	-- Merciless Gladiator's Scaled Legguards
-									i(31068),	-- Breeches of Absolution
-									i(31067),	-- Leggings of Absolution
-									i(32017),	-- Merciless Gladiator's Mooncloth Leggings
-									i(32036),	-- Merciless Gladiator's Satin Leggings
-									i(31053),	-- Leggings of the Malefic
-									i(31975),	-- Merciless Gladiator's Dreadweave Leggings
-									i(31983),	-- Merciless Gladiator's Felweave Trousers
-								}),
-								i(31100, {	-- Leggings of the Forgotten Protector
-									i(31005),	-- Gronnstalker's Leggings
-									i(31963),	-- Merciless Gladiator's Chain Leggings
-									i(32007),	-- Merciless Gladiator's Linked Leggings
-									i(32012),	-- Merciless Gladiator's Mail Leggings
-									i(32032),	-- Merciless Gladiator's Ringmail Leggings
-									i(31019),	-- Skyshatter Leggings
-									i(31020),	-- Skyshatter Legguards
-									i(31021),	-- Skyshatter Pants
-									i(30489),	-- Merciless Gladiator's Plate Legguards
-									i(30977),	-- Onslaught Greaves
-									i(30978),	-- Onslaught Legguards
-								}),
-								i(31099, {	-- Leggings of the Forgotten Vanquisher
-									i(31969),	-- Merciless Gladiator's Dragonhide Legguards
-									i(31989),	-- Merciless Gladiator's Kodohide Legguards
-									i(31058),	-- Merciless Gladiator's Wyrmhide Legguards
-									i(31044),	-- Thunderheart Leggings
-									i(31045),	-- Thunderheart Legguards
-									i(31046),	-- Thunderheart Pants
-									i(32058),	-- Leggings of the Tempest
-									i(32051),	-- Merciless Gladiator's Silk Trousers
-									i(32000),	-- Merciless Gladiator's Leather Legguards
-									i(31029),	-- Slayer's Legguards
-								}),
-								i(32376),	-- Forest Prowler's Helm
-								i(32373),	-- Helm of the Illidari Shatterer
-								i(32518),	-- Veil of Turning Leaves
-								i(32331),	-- Cloak of the Illidari Council
-								i(32519),	-- Belt of Divine Guidance
-								i(32505),	-- Madness of the Betrayer
+								["crs"] = {
+									22949,	-- Gathios the Shatterer
+									22950,	-- High Nethermancer Zerevor
+									22951,	-- Lady Malande
+									22952,	-- Veras Darkshadow
+								},
+								["g"] = {
+									i(31098, {	-- Leggings of the Forgotten Conqueror
+										i(30993),	-- Lightbringer Greaves
+										i(30994),	-- Lightbringer Leggings
+										i(30995),	-- Lightbringer Legguards
+										i(31995),	-- Merciless Gladiator's Lamellar Legguards
+										i(32023),	-- Merciless Gladiator's Ornamented Legplates
+										i(32042),	-- Merciless Gladiator's Scaled Legguards
+										i(31068),	-- Breeches of Absolution
+										i(31067),	-- Leggings of Absolution
+										i(32017),	-- Merciless Gladiator's Mooncloth Leggings
+										i(32036),	-- Merciless Gladiator's Satin Leggings
+										i(31053),	-- Leggings of the Malefice
+										i(31975),	-- Merciless Gladiator's Dreadweave Leggings
+										i(31983),	-- Merciless Gladiator's Felweave Trousers
+									}),
+									i(31100, {	-- Leggings of the Forgotten Protector
+										i(31005),	-- Gronnstalker's Leggings
+										i(31963),	-- Merciless Gladiator's Chain Leggings
+										i(32007),	-- Merciless Gladiator's Linked Leggings
+										i(32012),	-- Merciless Gladiator's Mail Leggings
+										i(32032),	-- Merciless Gladiator's Ringmail Leggings
+										i(31019),	-- Skyshatter Leggings
+										i(31020),	-- Skyshatter Legguards
+										i(31021),	-- Skyshatter Pants
+										i(30489),	-- Merciless Gladiator's Plate Legguards
+										i(30977),	-- Onslaught Greaves
+										i(30978),	-- Onslaught Legguards
+									}),
+									i(31099, {	-- Leggings of the Forgotten Vanquisher
+										i(31969),	-- Merciless Gladiator's Dragonhide Legguards
+										i(31989),	-- Merciless Gladiator's Kodohide Legguards
+										i(31058),	-- Merciless Gladiator's Wyrmhide Legguards
+										i(31044),	-- Thunderheart Leggings
+										i(31045),	-- Thunderheart Legguards
+										i(31046),	-- Thunderheart Pants
+										i(32058),	-- Leggings of the Tempest
+										i(32051),	-- Merciless Gladiator's Silk Trousers
+										i(32000),	-- Merciless Gladiator's Leather Legguards
+										i(31029),	-- Slayer's Legguards
+									}),
+									i(32376),	-- Forest Prowler's Helm
+									i(32373),	-- Helm of the Illidari Shatterer
+									i(32518),	-- Veil of Turning Leaves
+									i(32331),	-- Cloak of the Illidari Council
+									i(32519),	-- Belt of Divine Guidance
+									i(32505),	-- Madness of the Betrayer
+								},
 							})),
 							cr(22917, e(1590, {	-- Illidan Stormrage
 								ach(697),	-- The Black Temple
@@ -1425,10 +1433,10 @@ _.Instances =
 								i(150527),	-- Madness of the Betrayer
 							})),
 							cr(22917, e(1590, {	-- Illidan Stormrage
-								ach(11869, { -- I'll Hold These For You Until You Get Out
+								ach(11869, {	-- I'll Hold These For You Until You Get Out
 									["groups"] = {
-										i(150372, { -- Arsenal: The Warglaives of Azzinoth
-											i(151137), -- Warglaive of Azzinoth
+										i(150372, {	-- Arsenal: The Warglaives of Azzinoth
+											i(151137),	-- Warglaive of Azzinoth
 										}),
 									},
 									["classes"] = { 12 },

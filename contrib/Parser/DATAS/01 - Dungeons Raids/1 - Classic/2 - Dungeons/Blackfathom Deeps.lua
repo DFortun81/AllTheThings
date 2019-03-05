@@ -252,7 +252,7 @@ _.Instances = { tier(1, {	-- Classic
 				i(120167),	-- Bloody Twilight Cloak
 				i(120166),	-- Gorestained Garb
 			})),
-			cr(74728, e( 437, { -- Twilight Lord Bathiel
+			cr(74728, e( 437, {	-- Twilight Lord Bathiel
 				i(  1155),	-- Rod of the Sleepwalker
 				i(151440),	-- Blackfathom Ascendant's Helm
 				i(151439),	-- Bathiel's Scale Spaulders
