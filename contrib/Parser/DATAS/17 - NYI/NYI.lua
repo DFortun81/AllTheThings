@@ -200,6 +200,7 @@ _.NeverImplemented =
 				un(1, i(150600)),	-- Outlaw's Cutlass
 				un(1, i(157637)),	-- Swaggering Cutlass
 			}),
+			un(1, i(27719)),	-- Aldor Leggings of Puissance (never made it to live)
 			un(1, i(14550)),	-- Bladebane Armguards (Leather)
 			un(1, i(12104)),	-- Brindlethorn Tunic (Leather)
 			un(1, i(5821)),		-- Darkstalker Boots (Leather)

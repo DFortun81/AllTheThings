@@ -2613,6 +2613,11 @@ _.Zones =
 							18873,	-- Disembodied Protector
 						},
 					}),
+					i(23808, {	-- Schematic: Khorium Scope
+						["crs"] = {
+							20207,	-- Sunfury Bowman
+						},
+					}),
 				}),
 				n(-40, {	-- Legacy
 					n(-2, {		-- Vendors

@@ -91,6 +91,7 @@ _.Instances =
 							i(28508),	-- Gloves of Saintly Blessings
 							i(28507),	-- Handwraps of Flowing Thought
 							i(28510),	-- Spectral Band of Innervation
+							i(23809),	-- Schematic: Stabilized Eternium Scope
 						},
 						["creatureID"] = 16152,
 					}),

@@ -71,6 +71,8 @@ _.Instances =
 								i(35304),	-- Design: Solid Star of Elune
 								i(35308),	-- Pattern: Unyielding Bracers
 								i(35309),	-- Pattern: Unyielding Girdle
+								i(35310),	-- Schematic: Healing Potion Injector (BoP version)
+								i(35311),	-- Schematic: Mana Potion Injector (BoP version)
 								i(35296),	-- Plans: Adamantite Weapon Chain
 								i(35297),	-- Formula: Enchant Boots - Boar's Speed
 								i(35299),	-- Formula: Enchant Boots - Cat's Swiftness
@@ -170,6 +172,8 @@ _.Instances =
 									i(35304),	-- Design: Solid Star of Elune
 									i(35308),	-- Pattern: Unyielding Bracers
 									i(35309),	-- Pattern: Unyielding Girdle
+									i(35310),	-- Schematic: Healing Potion Injector (BoP version)
+									i(35311),	-- Schematic: Mana Potion Injector (BoP version)
 									i(35296),	-- Plans: Adamantite Weapon Chain
 									i(35297),	-- Formula: Enchant Boots - Boar's Speed
 									i(35299),	-- Formula: Enchant Boots - Cat's Swiftness

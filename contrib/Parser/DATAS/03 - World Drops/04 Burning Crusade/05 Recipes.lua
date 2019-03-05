@@ -77,6 +77,17 @@ _.WorldDrops =
 						["itemID"] = 23623,	-- Plans: Storm Helm
 					},
 				}),
+				n(-183, {	-- Engineering
+					i(23802),	-- Schematic: Ornate Khorium Rifle
+					i(23804),	-- Schematic: Power Amplification Goggles
+					i(23810),	-- Schematic: Crashin' Thrashin' Robot
+					i(23882, {	-- Schematic: Critter Enlarger
+                        ["u"] = 1,  -- removed in TBC beta
+                    }),
+					i(23883),	-- Schematic: Healing Potion Injector (BoE version)
+					i(23884),	-- Schematic: Mana Potion Injector (BoE version)
+					i(25887),	-- Schematic: Purple Smoke Flare
+				}),
 				n(-186, { 	-- Jewelcrafting
 					i(24193),	-- Design: Bold Living Ruby
 					i(24168),	-- Design: Braided Eternium Chain

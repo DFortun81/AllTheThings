@@ -440,7 +440,9 @@ _.Craftables =
 			i(32461),	-- Furious Gizmatic Goggles
 			i(32476),	-- Gadgetstorm Goggles
 			i(23829),	-- Gnomish Battle Goggles
+			i(23835),	-- Gnomish Poultryizer
 			i(23828),	-- Gnomish Power Goggles
+			i(23836),	-- Goblin Rocket Launcher
 			i(34357),	-- Hard Khorium Goggles
 			i(35182),	-- Hyper-Magnified Moon Specs
 			i(23763),	-- Hyper-Vision Goggles
@@ -729,6 +731,7 @@ _.Craftables =
 				i(32396),	-- Redeemed Soul Legguards
 				i(32394),	-- Redeemed Soul Moccasins
 				i(32395),	-- Redeemed Soul Wristguards
+				i(25653),	-- Riding Crop
 				i(33204),	-- Shadowprowler's Chestguard
 				i(32583),	-- Shoulderpads of Renewed Life
 				i(25682),	-- Stylin' Jungle Hat

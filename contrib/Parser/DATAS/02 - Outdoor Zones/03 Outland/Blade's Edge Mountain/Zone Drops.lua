@@ -347,6 +347,31 @@ _.Zones =
 									22827,	-- Gorgolon the All-Seeing
 								},
 							},
+							{	-- Schematic: Felsteel Boomstick
+								["itemID"]  = 23800,	-- Schematic: Felsteel Boomstick
+								["coords"] = {
+									{ 73.4, 40.6 },
+									{ 73.8, 40.6 },
+									{ 73.8, 42.4 },
+									{ 74.8, 40.8 },
+									{ 74.8, 41.6 },
+								},
+								["crs"] = {
+									19960,	-- Doomforge Engineer
+								},
+							},
+							{	-- Schematic: Field Repair Bot 110G
+								["itemID"]  = 34114,	-- Schematic: Field Repair Bot 110G
+								["coords"] = {
+									{ 27.6, 69.0 },
+									{ 29.0, 47.2 },
+									{ 32.0, 63.2 },
+									{ 33.6, 52.6 },
+								},
+								["crs"] = {
+									23386,	-- Gan'arg Analyzer (wh says "Simon Unit" drops it but these are the actual mobs)
+								},
+							},
 							{	-- Skystalker's Shoulders
 								["itemID"] = 31561,	-- Skystalker's Shoulders
 								["coords"] = {
