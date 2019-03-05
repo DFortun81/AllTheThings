@@ -81,13 +81,7 @@ _.Toys =
 		i(113631),		-- Hypnosis Goggles
 		i(118244),		-- Iron Buccaneer's Hat
 		i(127668),		-- Jewel of Hellfire
-		--Note!! The below items are unconfirmed to drop.  However, due to how Island Expedition loot works there is no way
-		--to accurately verify if they do.  On November 20th, 2018 they tweeted that the mobs for a pet weren't spawning which caused
-		--it to look like they weren't.  Due to the possibility of these mobs not spawning they stay in the addon until Patch 8.1 on
-		--December 11, 2018.  At that point if no confirmed drops have been spotted and still not in Toy Box then they will be
-		--marked with un(1 here in this file.
-		--Source: https://twitter.com/WarcraftDevs/status/1065080683058487297
-		i(164372), 		-- Jinyu Light Globe
+		un(1, i(164372)), 		-- Jinyu Light Globe
 		i(141299), 		-- Kaldorei Light Globe
 		i(86571),		-- Kang's Bindstone
 		i(116125), 		-- Klikixx's Webspinner
@@ -98,6 +92,7 @@ _.Toys =
 			},
 			["classes"] = {7},
 		}),
+		i(163603),		-- Lucille's Handkerchief
 		i(153194),  	-- Legion Communication Orb
 		i(140786),		-- Ley Spider Eggs
 		i(63269),		-- Loaded Gnomish Dice
@@ -123,13 +118,7 @@ _.Toys =
 		un(7, i(140363)),	-- Pocket Fel Spreader
 		i(127394), 		-- Podling Camouflage
 		i(153181),  	-- Red Conservatory Scroll
-		--Note!! The below items are unconfirmed to drop.  However, due to how Island Expedition loot works there is no way
-		--to accurately verify if they do.  On November 20th, 2018 they tweeted that the mobs for a pet weren't spawning which caused
-		--it to look like they weren't.  Due to the possibility of these mobs not spawning they stay in the addon until Patch 8.1 on
-		--December 11, 2018.  At that point if no confirmed drops have been spotted and still not in Toy Box then they will be
-		--marked with un(1 here in this file.
-		--Source: https://twitter.com/WarcraftDevs/status/1065080683058487297
-		i(164377), 		-- Regenerating Banana Bunch
+		un(1, i(164377)), 		-- Regenerating Banana Bunch
 		i(104294), 		-- Rime of the Time-Lost Mariner
 		i(131811),		-- Rocfeather Skyhorn Kite
 		i(153253),  	-- S.F.E. Interceptor
