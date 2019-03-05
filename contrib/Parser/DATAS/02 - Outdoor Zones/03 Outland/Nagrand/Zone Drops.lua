@@ -11,19 +11,22 @@ _.Zones =
 				["groups"] = {
 					n(0,    {	-- Zone Drop
 						["groups"] = {
-							{	-- Plans: Khorium Belt
-								["itemID"]  = 23608,	-- Plans: Khorium Belt
+							i(23608, {	-- Plans: Khorium Belt
 								["crs"] = {
 									18203,	--Murkblood Raider
 								},
-							},
-							{	-- Plans: Ragesteel Gloves
-								["itemID"]  = 23611,	-- Plans: Ragesteel Gloves
+							}),
+							i(23611, {	-- Plans: Ragesteel Gloves
 								["crs"] = {
 									17137, -- Boulderfist Mage
 									17136, -- Boulderfist Warrior
 								},
-							},
+							}),
+							i(22923, {	-- Recipe: Major Arcane Protection Potion
+								["crs"] = {
+									17150	-- Vir'aani Arcanist
+								},
+							}),
 						},
 					}),
 				},
