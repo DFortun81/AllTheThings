@@ -127,7 +127,10 @@ _.Instances =
 					}),
 				},
 				["lvl"] = 12,
-				["mapID"] = 279
+				["mapID"] = 279,
+				["maps"] = { 
+					825,	-- Pet Dungeon
+				},
 			}),
 		},					
 		["tierID"] = 1
