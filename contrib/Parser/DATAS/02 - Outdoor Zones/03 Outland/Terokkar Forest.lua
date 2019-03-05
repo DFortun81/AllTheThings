@@ -211,11 +211,39 @@ _.Zones =
 						i(25932),	-- Cenarion Thicket Jerkin
 						i(25929),	-- Cenarion Thicket Legplates
 					}),
-					q(10253,  {  -- Levixus the Soul Caller
-						i(29312),	-- Cover of Righteous Fury
-						i(29313),	-- Earthbreaker's Greaves
-						i(29315),	-- Gloves of Penitence
-						i(29314),	-- Leggings of the Third Coin
+					q(10227, {	-- I See Dead Draenei
+						["qg"] = 19697, -- Ha'lei
+						["coord"] = { 35.0, 65.2, 108 },
+					}),
+					q(10228, {	-- Ezekiel
+						["qg"] = 19417, -- Ramdor the Mad
+						["coord"] = { 35.2, 66.2, 108 },
+						["sourceQuests"] = { 10227 },	-- I See Dead Draenei
+					}),
+					q(10231, {	-- What Book? I Don't See Any Book.
+						["qg"] = 19715, -- Ezekiel
+						["sourceQuests"] = { 10228 },	-- Ezekiel
+					}),
+					q(10251, {	-- The Master's Grand Design?
+						["qg"] = 19720, -- "Dirty" Larry <Ruffian>
+						["coord"] = { 43.6, 29.6, 108 },
+						["sourceQuests"] = { 10231 },	-- What Book? I Don't See Any Book.
+					}),
+					q(10252, {	-- Vision of the Dead
+						["qg"] = 19844, -- Nitrin the Learned
+						["coord"] = { 51.8, 56.8, 107 },
+						["sourceQuests"] = { 10251 },	-- The Master's Grand Design?
+					}),
+					q(10253, {	-- Levixus the Soul Caller
+						["group"] = {
+							i(29312),	-- Cover of Righteous Fury
+							i(29313),	-- Earthbreaker's Greaves
+							i(29315),	-- Gloves of Penitence
+							i(29314),	-- Leggings of the Third Coin
+						},
+						["qg"] = 19844, -- Nitrin the Learned
+						["coord"] = { 51.8, 56.8, 107 },
+						["sourceQuests"] = { 10252 }	-- Vision of the Dead
 					}),
 --[[					
 					qh( 10027),	-- Magical Disturbances

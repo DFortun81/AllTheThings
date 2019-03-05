@@ -99,83 +99,8 @@ _.Zones =
 							},
 							["coord"] = { 58.0, 35.6, 107 },
 						}),
-						n(23007,   {	-- Paulsta'ats <Consortium Quartermaster>
-							["g"] = {
-								i(31776),	-- Consortium Tabard
-								un(2, i(29118)),	-- Smuggler's Ammo Pouch
-								i(138796),	-- Illusion: Executioner
-								i(33156),	-- Design: Crimson Sun
-								i(23134),	-- Design: Delicate Blood Garnet
-								i(33305),	-- Design: Don Julio's Heart
-								i(24178),	-- Design: Pendant of the Null Rune
-								i(23136),	-- Design: Reckless Flame Spessarite
-								i(33622),	-- Design: Relentless Earthstorm Diamond
-								i(32412, {	-- Design: Relentless Earthstorm Diamond
-									["spellID"] = 0,	-- This is now available via 33622, need to delink the old plans from the recipe
-									["u"] = 2,
-								}),
-								i(23146),	-- Design: Shifting Shadow Draenite
-								i(31871, {	-- Design: Shifting Shadow Draenite
-									["spellID"] = 0,	-- This is now available via 23146, need to delink the old plans from the recipe
-									["u"] = 2,
-								}),
-								i(31872, {	-- Design: Shifting Shadow Draenite
-									["spellID"] = 0,	-- This is now available via 23146, need to delink the old plans from the recipe
-									["u"] = 2,
-								}),
-								i(23155),	-- Design: Sparkling Azure Moonstone
-								i(23153, {	-- Design: Sparkling Azure Moonstone
-									["spellID"] = 0,	-- This is now available via 23155, need to delink the old plans from the recipe
-									["u"] = 2,
-								}),
-								i(23150),	-- Design: Subtle Golden Draenite
-								i(25908),	-- Design: Swift Skyfire Diamond
-								i(28274),	-- Formula: Enchant Cloak - PvP Power
-								i(22552),	-- Formula: Enchant Weapon - Major Striking
-								i(24314),	-- Pattern: Bag of Jewels
-								i(25733), 	-- Pattern: Fel Leather Boots
-								i(25732), 	-- Pattern: Fel Leather Gloves
-								i(25734), 	-- Pattern: Fel Leather Leggings
-								i(23874),	-- Schematic: Elemental Seaforium Charge
-								i(29115),	-- Consortium Blaster
-								i(29456),	-- Gift of the Ethereal
-								i(29121),	-- Guile of Khoraazi
-								i(29457),	-- Nethershard
-								i(29119),	-- Haramad's Bargain
-								i(29122),	-- Nether Runner's Cowl
-								i(29116),	-- Nomad's Leggings
-								i(29117),	-- Stormspire Vest
-							},
-							["coord"] = { 30.5, 56.9, 107 },
-						}),
-						h(n(20241, {	-- Provisioner Nasela <Mag'har Quartermaster>
-							["g"] = {
-								i(29102),	-- Reins of the Cobalt War Talbuk
-								i(29104),	-- Reins of the Silver War Talbuk
-								i(29105),	-- Reins of the Tan War Talbuk
-								i(29103),	-- Reins of the White War Talbuk
-								i(31829),	-- Reins of the Cobalt Riding Talbuk
-								i(31831),	-- Reins of the Silver Riding Talbuk
-								i(31833),	-- Reins of the Tan Riding Talbuk
-								i(31835),	-- Reins of the White Riding Talbuk
-								i(31773),	-- Mag'har Tabard
-								i(34174),	-- Pattern: Drums of Restoration
-								i(34172),	-- Pattern: Drums of Speed
-								i(25741),	-- Pattern: Netherfury Belt
-								i(25743),	-- Pattern: Netherfury Boots
-								i(25742),	-- Pattern: Netherfury Leggings
-								i(29664),	-- Pattern: Reinforced Mining Bag
-								i(22917),	-- Recipe: Transmute Primal Fire to Earth
-								i(29137),	-- Hellscream's Will
-								i(29135),	-- Earthcaller's Headdress
-								i(29139),	-- Ceremonial Cover
-								i(29147),	-- Talbuk Hide Spaulders
-								i(29141),	-- Tempest Leggings
-								i(29145),	-- Band of Ancestral Spirits
-								un(2, i(29143)),	-- Clefthoof Hide Quiver
-							},
-							["coord"] = { 53.4, 36.8, 107 },
-						})),
+						
+						
 						a(n(18822, {	-- Quartermaster Davian Vaclav
 							["g"] = {
 								i(26045, {	-- Halaa Battle Token
