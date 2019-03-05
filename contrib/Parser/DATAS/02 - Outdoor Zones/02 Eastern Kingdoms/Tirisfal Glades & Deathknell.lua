@@ -783,7 +783,10 @@ _.Zones =
 					["description"] = "|cff66ccffDeathknell is a small Forsaken village nestled in a well guarded valley just north of Silverpine Forest in Tirisfal Glades which serves as the starting area for the Forsaken.|r",
 				}),
 			},
-			["lvl"] = 1,	
+			["lvl"] = 1,
+			["maps"] = {
+				908,	-- Ruins of Lordaeron
+			},
 			["achievementID"] = 768,
 			["description"] = "|cff66ccffTirisfal Glades is the grim starting zone for the Forsaken. It is recovering from the plague of the Lich King, as new undead are forcibly brainwashed into the new Forsaken regime.|r",				
 		}),
