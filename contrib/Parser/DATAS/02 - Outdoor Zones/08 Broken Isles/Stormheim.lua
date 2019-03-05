@@ -1504,6 +1504,17 @@ _.Zones =
 									},
 								},
 							}),
+							n(-183, { -- Engineering
+								{	-- Work Order: Gunpack
+									["questID"] = 41678,	-- Work Order: Gunpack
+									["qg"] = 106904, -- Valdemar Stormseeker
+									["g"] = {
+										{	-- Schematic: Gunpack [Rank 3]
+											["itemID"] = 137722,	-- Schematic: Gunpack [Rank 3]
+										},
+									},
+								},
+							}),
 							n(-185, { -- Inscription
 								["groups"] = {
 									q(40052, {	-- Ancient Vrykul Mastered
@@ -2077,6 +2088,7 @@ _.Zones =
 				}),				
 				n(0, { 		-- Zone Drops
 					["groups"] = {
+						i(136701),	-- Schematic: Shockinator
 						i(137729),	-- Technique: Codex of the Tranquil Mind
 						i(141043),	-- Technique: Glyph of Arachnophobia
 						i(141035),	-- Technique: Glyph of Fel Wings

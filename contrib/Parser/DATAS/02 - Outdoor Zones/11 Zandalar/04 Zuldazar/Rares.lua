@@ -243,6 +243,9 @@ _.Zones =
 							n(134717, {	-- Umbra'rix [MCMLQ]
 								["questID"] = 50673,
 								["repeatable"] = true,	-- temp
+								["g"] = {
+									i(162617),	-- Shadraspawn Shoulderpads
+								},
 							}),
 							n(134048, {	-- Vukuba [CLQS]
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {

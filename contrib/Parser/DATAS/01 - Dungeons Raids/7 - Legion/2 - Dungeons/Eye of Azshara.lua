@@ -37,6 +37,9 @@ _.Instances =
 						}),
 					}),	
 					d(1, {	-- Normal
+						n(0, { -- Zone Drops
+							i(137726),	-- Schematic: Leystone Buoy
+						}),
 						cr(91784, e(1480, {	-- Warlord Parjesh
 							i(134240),	-- Brinewashed Leather Cowl
 							i(134223),	-- Coralplate Chestguard
@@ -116,6 +119,9 @@ _.Instances =
 					d(2, {	-- Heroic
 						["lvl"] = 110,
 						["groups"] = {
+							n(0, { -- Zone Drops
+								i(137726),	-- Schematic: Leystone Buoy
+							}),
 							cr(91784, e(1480, {	-- Warlord Parjesh
 								i(134240),	-- Brinewashed Leather Cowl
 								i(134223),	-- Coralplate Chestguard
@@ -196,6 +202,9 @@ _.Instances =
 					d(23, {	-- Mythic
 						["lvl"] = 110,
 						["groups"] = {
+							n(0, { -- Zone Drops
+								i(137726),	-- Schematic: Leystone Buoy
+							}),
 							cr(91784, e(1480, {	-- Warlord Parjesh
 								ach(10456),	-- But Y ou Say He's Just a Friend
 								i(134240),	-- Brinewashed Leather Cowl

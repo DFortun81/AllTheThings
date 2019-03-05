@@ -1867,12 +1867,17 @@ _.Zones =
 						},
 						["questID"] = 39646,		
 					}), 
+					n(98311, { 		-- Mrrklr 	
+						["groups"] = {	
+							i(131797),
+						},
+						["questID"] = 40096,
+					}), 
 					n(95204, { 		-- Oubdob da Smasher
 						["groups"] = {	
 							i(131793),
 						},
-						["questID"] = 39435,	
-							
+						["questID"] = 39435,
 					}), 
 					{
 						["vignetteID"] = 40423,	-- Unethical Adventurers
@@ -1981,7 +1986,6 @@ _.Zones =
 	--				}), 
 	--				n(104517, { 	-- Mawat'aki 	}), 
 	--				n(96621, { 		-- Mellok, Son of Torok 	}), 
-	--				n(98311, { 		-- Mrrklr 	}), 
 	--				n(104484, { 	-- Olokk the Shipbreaker 	}), 
 	--				n(104524, { 	-- Ormagrogg 	}), 
 	--				n(97102, { 		-- Ram'Pag drops nothing of note			}), 

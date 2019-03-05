@@ -2757,6 +2757,7 @@ _.Zones =
 				}),	
 				n(0, { 		-- Zone Drops
 					["groups"] = {
+						i(137726),	-- Schematic: Leystone Buoy
 						i(137729),	-- Technique: Codex of the Tranquil Mind
 						i(141043),	-- Technique: Glyph of Arachnophobia
 						i(141035),	-- Technique: Glyph of Fel Wings

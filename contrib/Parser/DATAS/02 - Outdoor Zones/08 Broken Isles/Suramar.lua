@@ -1793,6 +1793,7 @@ _.Zones =
 				n(0, { 		-- Zone Drops
 					["groups"] = {
 						i(137841),	-- Design: Deep Amber Pendant (Rank 3)
+						i(136704),	-- Formula: Immaculate Fibril
 						i(137729),	-- Technique: Codex of the Tranquil Mind
 						i(141043),	-- Technique: Glyph of Arachnophobia
 						i(141035),	-- Technique: Glyph of Fel Wings

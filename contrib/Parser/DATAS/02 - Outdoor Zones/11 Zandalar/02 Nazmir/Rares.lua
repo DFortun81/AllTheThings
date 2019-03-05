@@ -219,6 +219,9 @@ _.Zones =
 							["questID"] = 50366,	-- 50459 for WQ
 						}),
 						n(126907, {	-- Wardrummer Zurula
+							["groups"] = {
+								i(160961),	-- Warmother's Drummer
+							},
 							["questID"] = 48623,
 						}),
 						n(133531, {	-- Xu'ba
