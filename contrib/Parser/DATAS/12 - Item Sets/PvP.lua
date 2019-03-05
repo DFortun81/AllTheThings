@@ -55,35 +55,35 @@ _.GearSets =
 					i(28679),	-- Grand Marshal's Lamellar Chestpiece
 					i(28680),	-- Grand Marshal's Lamellar Gauntlets
 					i(28724),	-- Grand Marshal's Lamellar Legguards
-					
+
 					-- Grand Marshal's Ornamented [Paladin]
 					i(31632),	-- Grand Marshal's Ornamented Headguard
 					i(31634),	-- Grand Marshal's Ornamented Spaulders
 					i(31630),	-- Grand Marshal's Ornamented Chestplate
 					i(31631),	-- Grand Marshal's Ornamented Gloves
 					i(31633),	-- Grand Marshal's Ornamented Leggings
-					
+
 					-- Grand Marshal's Scaled [Paladin]
 					i(28711),	-- Grand Marshal's Scaled Helm
 					i(28713),	-- Grand Marshal's Scaled Shoulders
 					i(28709),	-- Grand Marshal's Scaled Chestpiece
 					i(28710),	-- Grand Marshal's Scaled Gauntlets
 					i(28712),	-- Grand Marshal's Scaled Legguards
-					
-                    -- High Warlord's Lamellar [Paladin]
+
+					-- High Warlord's Lamellar [Paladin]
 					i(28831),	-- High Warlord's Lamellar Chestpiece
 					i(28832),	-- High Warlord's Lamellar Gauntlets
 					i(28833),	-- High Warlord's Lamellar Helm
 					i(28834),	-- High Warlord's Lamellar Legguards
 					i(28835),	-- High Warlord's Lamellar Shoulders
-					
+
 					-- High Warlord's Ornamented [Paladin]
 					i(31635),	-- High Warlord's Ornamented Chestplate
 					i(31636),	-- High Warlord's Ornamented Gloves
 					i(31637),	-- High Warlord's Ornamented Headguard
 					i(31638),	-- High Warlord's Ornamented Leggings
 					i(31639),	-- High Warlord's Ornamented Spaulders
-					
+
 					-- High Warlord's Scaled [Paladin]
 					i(28861),	-- High Warlord's Scaled Chestpiece
 					i(28862),	-- High Warlord's Scaled Gauntlets
@@ -98,7 +98,7 @@ _.GearSets =
 					i(28613),	-- Grand Marshal's Chain Armor
 					i(28614),	-- Grand Marshal's Chain Gauntlets
 					i(28616),	-- Grand Marshal's Chain Leggings
-                    
+
 					-- High Warlord's Chain [Hunter]
 					i(28805),	-- High Warlord's Chain Armor
 					i(28806),	-- High Warlord's Chain Gauntlets
@@ -113,8 +113,8 @@ _.GearSets =
 					i(28688),	-- Grand Marshal's Leather Tunic
 					i(28684),	-- Grand Marshal's Leather Gloves
 					i(28686),	-- Grand Marshal's Leather Legguards
-                    
-                    -- High Warlord's Leather [Rogue]
+
+					-- High Warlord's Leather [Rogue]
 					i(28836),	-- High Warlord's Leather Gloves
 					i(28837),	-- High Warlord's Leather Helm
 					i(28838),	-- High Warlord's Leather Legguards
@@ -128,7 +128,7 @@ _.GearSets =
 					i(31625),	-- Grand Marshal's Mooncloth Vestments
 					i(31620),	-- Grand Marshal's Mooncloth Mitts
 					i(31623),	-- Grand Marshal's Mooncloth Legguards
-					
+
 					-- Grand Marshal's Satin [Priest]
 					i(28705),	-- Grand Marshal's Satin Hood
 					i(28707),	-- Grand Marshal's Satin Mantle
@@ -157,29 +157,29 @@ _.GearSets =
 					i(28689),	-- Grand Marshal's Linked Armor
 					i(28690),	-- Grand Marshal's Linked Gauntlets
 					i(28692),	-- Grand Marshal's Linked Leggings
-					
+
 					-- Grand Marshal's Mail [Shaman]
 					i(28696),	-- Grand Marshal's Mail Helm
 					i(28698),	-- Grand Marshal's Mail Spaulders
 					i(28694),	-- Grand Marshal's Mail Armor
 					i(28695),	-- Grand Marshal's Mail Gauntlets
 					i(28697),	-- Grand Marshal's Mail Leggings
-					
+
 					-- Grand Marshal's Ringmail [Shaman]
 					i(31642),	-- Grand Marshal's Ringmail Headpiece
 					i(31644),	-- Grand Marshal's Ringmail Shoulders
 					i(31640),	-- Grand Marshal's Ringmail Chestguard
 					i(31641),	-- Grand Marshal's Ringmail Gloves
 					i(31643),	-- Grand Marshal's Ringmail Legguards
-                    
-                    -- High Warlord's Linked [Shaman]
+
+					-- High Warlord's Linked [Shaman]
 					i(28841),   -- High Warlord's Linked Armor
 					i(28842),   -- High Warlord's Linked Gauntlets
 					i(28843),   -- High Warlord's Linked Helm
 					i(28844),   -- High Warlord's Linked Leggings
 					i(28845),   -- High Warlord's Linked Spaulders
 
-                    -- High Warlord's Mail [Shaman]
+					-- High Warlord's Mail [Shaman]
 					i(28846),   -- High Warlord's Mail Armor
 					i(28847),   -- High Warlord's Mail Gauntlets
 					i(28848),   -- High Warlord's Mail Helm
@@ -230,36 +230,36 @@ _.GearSets =
 					i(28623),	-- Grand Marshal's Dragonhide Tunic
 					i(28618),	-- Grand Marshal's Dragonhide Gloves
 					i(28620),	-- Grand Marshal's Dragonhide Legguards
-					
+
 					-- Grand Marshal's Kodohide [Druid]
 					i(31590),	-- Grand Marshal's Kodohide Helm
 					i(31592),	-- Grand Marshal's Kodohide Spaulders
 					i(31593),	-- Grand Marshal's Kodohide Tunic
 					i(31589),	-- Grand Marshal's Kodohide Gloves
 					i(31591),	-- Grand Marshal's Kodohide Legguards
-					
+
 					-- Grand Marshal's Wyrmhide [Druid]
 					i(28720),	-- Grand Marshal's Wyrmhide Helm
 					i(28722),	-- Grand Marshal's Wyrmhide Spaulders
 					i(28723),	-- Grand Marshal's Wyrmhide Tunic
 					i(28719),	-- Grand Marshal's Wyrmhide Gloves
 					i(28721),	-- Grand Marshal's Wyrmhide Legguards
-					
-                    -- High Warlord's Dragonhide [Druid]
+
+					-- High Warlord's Dragonhide [Druid]
 					i(28811),	-- High Warlord's Dragonhide Gloves
 					i(28812),	-- High Warlord's Dragonhide Helm
 					i(28813),	-- High Warlord's Dragonhide Legguards
 					i(28814),	-- High Warlord's Dragonhide Spaulders
 					i(28815),	-- High Warlord's Dragonhide Tunic
-					
-                    -- High Warlord's Kodohide [Druid]
+
+					-- High Warlord's Kodohide [Druid]
 					i(31584),	-- High Warlord's Kodohide Gloves
 					i(31585),	-- High Warlord's Kodohide Helm
 					i(31586),	-- High Warlord's Kodohide Legguards
 					i(31587),	-- High Warlord's Kodohide Spaulders
 					i(31588),	-- High Warlord's Kodohide Tunic
-					
-                    -- High Warlord's Wyrmhide [Druid]
+
+					-- High Warlord's Wyrmhide [Druid]
 					i(28871),	-- High Warlord's Wyrmhide Gloves
 					i(28872),	-- High Warlord's Wyrmhide Helm
 					i(28873),	-- High Warlord's Wyrmhide Legguards
