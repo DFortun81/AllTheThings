@@ -3,11 +3,11 @@
 ---------------------------------------------------
 _.ExpansionFeatures =
 {
-	n(-9965, { -- Legion Class Hall
+	n(-9965, {	-- Legion Class Hall
 		["groups"] = {
-			cl(5, { -- Netherlight Temple -- Priest
+			cl(5, {	-- Netherlight Temple	-- Priest
 				["groups"] =  {
-					n(102589, { -- Command Map
+					n(102589, {	-- Command Map
 						["groups"] = {
 							-- Blank for Class Only Missions in the future
 						},
@@ -123,220 +123,238 @@ _.ExpansionFeatures =
 						a(ach(10743)),	-- The Prestige (Alliance) [Still in WoW UI as of 8.0]
 						h(ach(10745)),	-- The Prestige (Horde) [Still in WoW UI as of 8.0]
 					}),
-					n(-17, { -- Quests
-						n(-10067, { -- Artifact
-							qh(40705, { -- Priestly Matters	
+					n(-17, {	-- Quests
+						n(-10067, {	-- Artifact
+							qh(40705, {	-- Priestly Matters	
 								["groups"] = {
 								},
-								["qg"] = 101344, -- Hooded Priestess
+								["qg"] = 101344,	-- Hooded Priestess
 							}),	
-							qh(40706, { -- A Legend You Can Hold	
+							qh(40706, {	-- A Legend You Can Hold	
 								["groups"] = {
 								},
-								["qg"] = 101314, -- Alonsus Faol
-								["sourceQuests"] = { 40705 }, -- Priestly Matters
+								["qg"] = 101314,	-- Alonsus Faol
+								["sourceQuests"] = { 40705 },	-- Priestly Matters
 							}),	
-							qh(43935, { -- A Second Legend	
+							qh(43935, {	-- A Second Legend	
 								["groups"] = {
 								},
-								["qg"] = 110564, -- Alonsus Faol
-								["sourceQuests"] = { 40706 }, -- A Legend You Can Hold
+								["qg"] = 110564,	-- Alonsus Faol
+								["sourceQuests"] = { 40706 },	-- A Legend You Can Hold
 							}),	
-							qh(44407, { -- The Third Legend	
+							qh(44407, {	-- The Third Legend	
 								["groups"] = {
 								},
-								["qg"] = 110564, -- Alonsus Faol
-								["sourceQuests"] = { 43935 }, -- A Second Legend
+								["qg"] = 110564,	-- Alonsus Faol
+								["sourceQuests"] = { 43935 },	-- A Second Legend
 							}),	
-							i(128868, { -- Light's Wrath
+							i(128868, {	-- Light's Wrath
 								["groups"] = {
 									q(41625, {	-- The Light's Wrath
 										["groups"] = {
 										},
-										["qg"] = 101314, -- Alonsus Faol
-										["sourceQuests"] = { 40706 } , -- A Legend You Can Hold
+										["qg"] = 101314,	-- Alonsus Faol
+										["sourceQuests"] = { 40706 } ,	-- A Legend You Can Hold
 									}),	
 									q(41626, {	-- A New Threat
 										["groups"] = {
 										},
-										["qg"] = 101314, -- Alonsus Faol
-										["sourceQuests"] = { 41625 } , -- The Light's Wrath
+										["qg"] = 101314,	-- Alonsus Faol
+										["sourceQuests"] = { 41625 } ,	-- The Light's Wrath
 									}),	
 									q(41627, {	-- A Forgotten Enemy
 										["groups"] = {
 										},
-										["sourceQuests"] = { 41626 } , -- A New Threat
+										["sourceQuests"] = { 41626 } ,	-- A New Threat
 									}),	
 									q(41628, {	-- Eyes of the Dragon
 										["groups"] = {
 										},
-										["sourceQuests"] = { 41626 } , -- A Forgotten Enemy
+										["sourceQuests"] = { 41626 } ,	-- A Forgotten Enemy
 									}),	
 									q(41629, {	-- Harnessing the Holy Fire
 										["groups"] = {
 										},
 										
-										["sourceQuests"] = { 41627 } , -- Eyes of the Dragon
+										["sourceQuests"] = { 41627 } ,	-- Eyes of the Dragon
 									}),	
 									q(41630, {	-- Unleashing Judgment
 										["groups"] = {
 										},
-										["qg"] = 105917, -- Image of Kalec
-										["sourceQuests"] = { 41628 } , -- Harnessing the Holy Fire
+										["qg"] = 105917,	-- Image of Kalec
+										["sourceQuests"] = { 41628 } ,	-- Harnessing the Holy Fire
 									}),	
 									q(41631, {	-- The Nexus Vault
 										["groups"] = {
 										},
-										["qg"] = 105917, -- Image of Kalec
-										["sourceQuests"] = { 41629 } , -- Unleashing Judgment
+										["qg"] = 105917,	-- Image of Kalec
+										["sourceQuests"] = { 41629 } ,	-- Unleashing Judgment
 									}),	
 									q(41632, {	-- A Gift of Time
 										["groups"] = {
 										},
-										["qg"] = 105081, -- Archmage Kalec
-										["sourceQuests"] = { 41630 } , -- The Nexus Vault
+										["qg"] = 105081,	-- Archmage Kalec
+										["sourceQuests"] = { 41630 } ,	-- The Nexus Vault
 									}),	
 								},
 							}),
-							i(128825, { -- T'uure, Beacon of the Naaru
+							i(128825, {	-- T'uure, Beacon of the Naaru
 								["groups"] = {
-									qh(41957, { -- The Vindicator's Plea	
+									qh(41957, {	-- The Vindicator's Plea	
 										["groups"] = {
 										},
-										["qg"] = 101314, -- Alonsus Faol
-										["sourceQuests"] = { 40706 }, -- A Legend You Can Hold
+										["qg"] = 101314,	-- Alonsus Faol
+										["sourceQuests"] = { 40706 },	-- A Legend You Can Hold
 									}),	
-									qh(41966, { -- House Call	
+									qh(41966, {	-- House Call	
 										["groups"] = {
 										},
-										["qg"] = 105602, -- Vindicator Boros
-										["sourceQuests"] = { 41957 }, -- The Vindicator's Plea
+										["qg"] = 105602,	-- Vindicator Boros
+										["sourceQuests"] = { 41957 },	-- The Vindicator's Plea
 									}),	
-									qh(41967, { -- Out of the Darkness	
+									qh(41967, {	-- Out of the Darkness	
 										["groups"] = {
 										},
-										["qg"] = 105603, -- Defender Barrem
-										["sourceQuests"] = { 41966 }, -- House Call
+										["qg"] = 105603,	-- Defender Barrem
+										["sourceQuests"] = { 41966 },	-- House Call
 									}),	
-									qh(41993, { -- Salvation From On High	
+									qh(41993, {	-- Salvation From On High	
 										["groups"] = {
 										},
-										["qg"] = 105684, -- Alora
-										["sourceQuests"] = { 41967 }, -- Out of the Darkness
+										["qg"] = 105684,	-- Alora
+										["sourceQuests"] = { 41967 },	-- Out of the Darkness
 									}),	
-									qh(42074, { -- Return of the Light	
+									qh(42074, {	-- Return of the Light	
 										["groups"] = {
 										},
-										["qg"] = 106011, -- Jace  Darkweaver
-										["sourceQuests"] = { 41993 }, -- Salvation From On High
+										["qg"] = 106011,	-- Jace  Darkweaver
+										["sourceQuests"] = { 41993 },	-- Salvation From On High
 									}),
 								},
 							}),
-							i(128827, { -- Xal'atah, Blade of the Black Empire
+							i(128827, {	-- Xal'atah, Blade of the Black Empire
 								["groups"] = {
-									i(133958), -- Secrets of the Void 
+									i(133958),	-- Secrets of the Void 
 									q(40710, {	-- Blade in Twilight
 										["groups"] = {
 										},
-										["qg"] = 101314, -- Alonsus Faol
-										["sourceQuests"] = { 40706 } , -- A Legend You Can Hold
+										["qg"] = 101314,	-- Alonsus Faol
+										["sourceQuests"] = { 40706 } ,	-- A Legend You Can Hold
 									}),	
 								},
 							}),
 							i(141332, {	-- The Annals of Light and Shadow
-								["description"] = "Obtain 12 of these books to complete the set and receive the Discipline Priest Hidden Artifact Appearance.\n\nStart with Archivist Inkforge in your Order Hall.",
+								["description"] = "Obtain 12 of these books to complete the set and receive the Discipline Priest Hidden Artifact Appearance.\n\nStart with Volume VI and Archivist Inkforge in your Order Hall.",
 								["maps"] = {
-									630, -- Azsuna
-									627, -- Dalaran
-									628, -- The Underbelly (Dalaran)
-									629, -- Aegwynn's Gallery (Dalaran)
-									115, -- New Hearthglen in Northrend
-									476, -- Scholomance
-									477, -- Scholomance
-									478, -- Scholomance
-									479, -- Scholomance
-									634, -- Stormheim
-									680, -- Suramar
-									431, 432, -- Scarlet Halls
+									630,		-- Azsuna
+									751,		-- Black Rook Hold
+									627,		-- Dalaran
+									628,		-- The Underbelly (Dalaran)
+									629,		-- Aegwynn's Gallery (Dalaran)
+									115,		-- New Hearthglen in Northrend
+									435,		-- Scarlet Halls
+									476,		-- Scholomance
+									477,		-- Scholomance
+									478,		-- Scholomance
+									479,		-- Scholomance
+									634,		-- Stormheim
+									680,		-- Suramar
+									431, 432,	-- Scarlet Halls
 									350, 351, 352, 353, 354, 355, 356, 357, 358, 359, 360, 361, 362, 363, 364, 365, 366,	-- Karazhan
 								},
 								["groups"] = {
+									q(44342, {	-- Volume VI
+										["title"] = "|cFFFFFFFFVolume VI|r | Archivist Inkforge in the class order hall.",
+										["description"] = "You must get this volume first in order to collect the others.  Talk to Archivist Inkforge. Always choose the middle answer (passive curious, not judging) and he will give you the first volume.",
+										["qg"] = 111119,	-- Archivist Inkforge
+										["coord"] = { 62.5, 36.3, 702 },
+									}),
 									q(44339, {	-- Volume I
 										["title"] = "|cFFFFFFFFVolume I|r | The Violet Citadel in new Dalaran.",
-										["description"] = "The Violet Citadel in new Dalaran is where Khadgar is located. On the left side, there is an NPC named Archivist Elysiana. Behind her are two bookshelves, in the right one you will find volume 1.\n\nWorld Spawn - might be on cooldown!",
+										["description"] = "Khadgar is located in the Violet Citadel in new Dalaran. On the left side, there is an NPC named Archivist Elysiana. Volume 1 is on the right-hand bookshelf behind her.\n\nWorld Spawn - might be on cooldown!",
 										["qg"] = 113873,	-- Archivist Elysiana <Curator>
-										["coord"] = { 30.6, 50.8 },
+										["coord"] = { 30.6, 50.8, 627 },
 									}),
 									q(44340, {	-- Volume II
 										["title"] = "|cFFFFFFFFVolume II|r | Behind Juvess the Duskwhisperer in the Class Order Hall.",
-										["description"] = "This is a bit vague - on the other side of that little room is High Priestess Ishanah, right next to her an Dranei Anchorite.\n\nWorld Spawn - might be on cooldown!",
+										["description"] = "High Priestess Ishanah is on the other side of the alcove, and next to her is a Draenei Anchorite.\n\nWorld Spawn - might be on cooldown!",
 										["qg"] = 111738,	-- Juvess the Duskwhisperer
-										["coord"] = { 59.6, 28.6 },
+										["coord"] = { 58.4, 25.1, 702 },
 									}),
 									q(44341, {	-- Volume III
 										["title"] = "|cFFFFFFFFVolume III|r | New Hearthglen in Northrend.",
-										["description"] = "Book is on a bookshelf in the Library Wing (left side) of the cloister - Ground level - Entrance at 72,73.\n\nWorld Spawn - might be on cooldown (60 Minutes Respawn)",
+										["description"] = "Book is on top of a bookshelf on the left side of the cloister, on the ground floor.\n\nWorld Spawn - might be on cooldown (60-minute respawn).",
 										["icon"] = "Interface\\Icons\\INV_Misc_Token_ScarletCrusade",
-										["coord"] = { 73.0, 72.0 },
+										["coords"] = {
+											{ 72.2, 73.4, 115 },	-- Entrance to cloister
+											{ 73.2, 72.9, 115 },	-- Actual book
+										},
 									}),
 									q(44344, {	-- Volume IV
 										["title"] = "|cFFFFFFFFVolume IV|r | Bookshelf to the left of Meridelle Lightspark in the Class Order Hall. ",
-										["description"] = "This is fairly easy, on the left side of Meridelle Lightspark (whom is also selling your Priest Set) there is a shelf. On the lower board, there are some stacked books, on the right side of them you'll find it.\n\nWorld Spawn - might be on cooldown!",
+										["description"] = "On the left side of Meridelle Lightspark there is a shelf. On the lower board, there are some stacked books, and this volume is on the right side of those.\n\nWorld Spawn - might be on cooldown!",
 										["qg"] = 112401,	-- Meridelle Lightspark <Logistics>
-										["coord"] = { 39.0, 24.6 },
+										["coord"] = { 37.2, 25.0, 702 },
 									}),
 									q(44343, {	-- Volume V
 										["title"] = "|cFFFFFFFFVolume V|r | Chillheart's room in Scholomance.",
-										["description"] = "Enter Chillheart's room - you don't need to kill the boss. Kill the first trashpack on the right side. The book is on the 6th bookshelve from the right.",
+										["description"] = "Enter Chillheart's room - you don't need to kill the boss. Kill the first trashpack on the right side. The book is on top of the 6th bookshelf from the right.",
 										["qg"] = 58633,	-- Instructor Chillheart
-										["coord"] = { 62.2, 60.4 },
-									}),
-									q(44342, {	-- Volume VI
-										["title"] = "|cFFFFFFFFVolume VI|r | Archivist Inkforge in the class order hall.",
-										["description"] = "For the Archivist you need to talk to him. Always choose the middle answer (passive curious, not judging) and he will give you the first Page.",
-										["qg"] = 111119,	-- Archivist Inkforge
-										["coord"] = { 62.6, 37.0 },
+										["coords"] = {
+											{ 69.0, 72.9, 22 },		-- Scholomance entrance
+											{ 58.8, 84.0, 476 },	--	Actual volume inside the dungeon
+										},
 									}),
 									q(44345, {	-- Volume VII
 										["title"] = "|cFFFFFFFFVolume VII|r | The Flameweaver's library in Scarlet Halls.",
-										["description"] = "Run through the instance, kill Flameweaver Koegler. on the left hand side of the room there's a table with a tri-candle. On the bench between the table and the bookshelve you will find volume 7.",
+										["description"] = "Run through the instance to Flameweaver Koegler's room. on the left-hand side of the room there's a table with a candelabra. Volume 7 is on the bench between the table and the bookshelf.",
 										["qg"] = 59150,	-- Flameweaver Koegler
-										["coord"] = { 39.3, 15.6 },
+										["coords"] = {
+											{ 69.0, 24.9, 19 },		-- Scarlet Halls entrance
+											{ 35.7, 14.2, 432 },	-- Actual volume inside instance
+										},
 									}),
 									q(44350, {	-- Volume VIII
-										["title"] = "|cFFFFFFFFVolume VIII|r | A rare in the cave south-west of Halls of Valor in Stormheim (Inquisitor Ernstenbok).",
+										["title"] = "|cFFFFFFFFVolume VIII|r | A rare in the cave southwest of Halls of Valor in Stormheim (Inquisitor Ernstenbok).",
 										["description"] = "You must kill him after you have at least one of the books in your inventory and he will drop the book.\n\nIf several kill the mob, only one Priest is able to loot the book!",
 										["qg"] = 90139,	-- Inquisitor Ernstenbok
-										["coord"] = { 63.6, 74.6 },
+										["coord"] = { 63.6, 74.4, 634 },
 									}),
 									q(44347, {	-- Volume IX
 										["title"] = "|cFFFFFFFFVolume IX|r | Artificer Lothaire in Moon Guard Stronghold, Suramar.",
 										["description"] = "You must kill him after you have at least one of the books in your inventory and he will drop the book.\n\nIf several kill the mob, only one Priest is able to loot the book!",
 										["qg"] = 106351,	-- Artificer Lothaire
-										["coord"] = { 33.8, 15.0 },
+										["coord"] = { 33.8, 15.0, 680 },
 									}),
 									q(44348, {	-- Volume X
 										["title"] = "|cFFFFFFFFVolume X|r | Black Rook Hold in corner of room with ghosts and bookshelves.",
 										["description"] = "After defeating the first boss, you will get into the Map-Room with a large setup in the middle. Head along the left side, the book is on one of the tables.",
 										["qg"] = 98542,	-- Amalgam of Souls
-										["coord"] = { 39.1, 61.4 },
+										["coords"] = { 
+											{ 58.6, 75.8, 751 },	-- item in instance
+											{ 38.4, 50.8, 641 },	-- Black Rook Hold entrance
+										},
 									}),
 									q(44349, {	-- Volume XI
 										["title"] = "|cFFFFFFFFVolume XI|r | Guardian's Library in old Karazhan.",
-										["description"] = "After the Curator jump down to the right, head straight into the first alley or nook. There is a tapestry and 3 bookshelves below. On the left bookshelf socket lies Chapter 11.",
+										["description"] = "After the Curator, jump down to the right and head straight into the first nook. There is a tapestry on the wall and 3 bookshelves below. Volume 11 is on the bottom of the left-hand bookshelf.",
 										["qg"] = 15691,	-- The Curator
-										["coord"] = { 48.6, 70.5 },
+										["coords"] = {
+											{ 46.9, 74.8, 42 },	-- Karazhan entrance
+											{ 36.8, 37.9, 358 },
+										},
 									}),
 									q(44346, {	-- Volume XII
 										["title"] = "|cFFFFFFFFVolume XII|r | Chief Bitterbrine on the Queen's Reprisal in Azsuna.",
-										["description"] = "Fly to the Shakle's Den and head East.\n\nIf several kill the mob, only one Priest is able to loot the book!",
+										["description"] = "Fly to Shackle's Den and head east.\n\nIf several kill the mob, only one Priest is able to loot the book!",
 										["qg"] = 106990,	-- Chief Bitterbrine
-										["coord"] = { 65.6, 56.8 },
+										["coord"] = { 65.6, 56.8, 630 },
 									}),
 									i(139567, {	-- Writings of the End
-										["description"] = "Once you have obtained all 12 of the Volumes, return to Archivist Inkforge in the class order hall and give them to him and he will give you this item. Turn on \"Show Incomplete Quests\" to track your progress.",
+										["description"] = "Once you have obtained all 12 volumes, return to Archivist Inkforge in the class order hall and give them to him and he will give you this item. Turn on \"Show Incomplete Quests\" to track your progress.",
+										["coord"] = { 62.5, 36.3, 702 },
 										["groups"] = {
-											artifact(738), -- Discipline Priest Hidden Artifact Skin
+											artifact(738),	-- Discipline Priest Hidden Artifact Skin
 										},
 									}),
 								},
@@ -345,44 +363,44 @@ _.ExpansionFeatures =
 						qg(110564, q(43390, {	-- Forgotten Shadows
 							["groups"] = {
 							},
-							["classes"] = {5}, -- Priest
+							["classes"] = {5},	-- Priest
 						})),									
-						q(45789, { -- The Sunken Vault
+						q(45789, {	-- The Sunken Vault
 							["groups"] = {
-								{ ["mountID"] = 229377 }, -- High Priest's Lightsworn Seeker
+								{ ["mountID"] = 229377 },	-- High Priest's Lightsworn Seeker
 							},
 							["lvl"] = 110,
 							["classes"] = {5},
 						}),
-						q(44251, { -- Power Word: Armor
-							i(139757), -- Head
+						q(44251, {	-- Power Word: Armor
+							i(139757),	-- Head
 						}),
-						q(43402, { -- High Priest of Netherlight
-							i(139759), -- Chest
+						q(43402, {	-- High Priest of Netherlight
+							i(139759),	-- Chest
 						}),
-						q(43381, { -- Champion: Mariella Ward
-							i(139762), -- Bracers
+						q(43381, {	-- Champion: Mariella Ward
+							i(139762),	-- Bracers
 						}),
 						--[[ Artifact Appearance  Quests Commented Out For Now
-						q(43420, { -- A Hero's Weapon
-							sp(219663) -- Heroic Weapons [No item associated]
+						q(43420, {	-- A Hero's Weapon
+							sp(219663)	-- Heroic Weapons [No item associated]
 						}),
 						--]]
 					}),
-					n(-2, { -- Vendors
-						n(112401, { -- Meridelle Lightspark <Logistics>
-							i(143727), -- Champion's Salute Toy
-							gs(330, { -- Regalia of the High Priest
-								i(139757), -- Head
-								i(139760), -- Shoulders
-								i(139759), -- Chest
-								i(139762), -- Bracers
-								i(139756), -- Hands
-								i(139761), -- Belt
-								i(139758), -- Legs
-								i(139755), -- Feet
+					n(-2, {	-- Vendors
+						n(112401, {	-- Meridelle Lightspark <Logistics>
+							i(143727),	-- Champion's Salute Toy
+							gs(330, {	-- Regalia of the High Priest
+								i(139757),	-- Head
+								i(139760),	-- Shoulders
+								i(139759),	-- Chest
+								i(139762),	-- Bracers
+								i(139756),	-- Hands
+								i(139761),	-- Belt
+								i(139758),	-- Legs
+								i(139755),	-- Feet
 							}),
-							i(140552), -- Netherlight Spire
+							i(140552),	-- Netherlight Spire
 						}),
 					}),
 				},
