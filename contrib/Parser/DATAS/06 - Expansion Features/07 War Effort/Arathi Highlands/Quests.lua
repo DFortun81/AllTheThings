@@ -80,8 +80,9 @@ _.ExpansionFeatures =
 								{ 21.71, 64.88 },
 							},
 							["races"] = ALLIANCE_ONLY,
+							["u"] = 2,
 							["g"] = {
-								un(2, i(164578, {	-- Warfronts Equipment Cache
+								i(164578, {	-- Warfronts Equipment Cache
 									["groups"] = bubbleDown({["modID"] = 5}, {
 										i(163891),	-- 7th Legionnaire's Aegis
 										i(163884),	-- 7th Legionnaire's Battle Hammer
@@ -136,7 +137,7 @@ _.ExpansionFeatures =
 										i(163409),	-- 7th Legionnaire's Legguards
 										i(163421),	-- 7th Legionnaire's Greaves
 									}),
-								})),
+								}),
 							},
 						},
 						{	-- Executing Exorcisms [A]
