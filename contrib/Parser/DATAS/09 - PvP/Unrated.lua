@@ -536,6 +536,15 @@ _.PVP =
 				i(165210),	-- Sinister Aspirant Greatcloak
 				i(165211),	-- Sinister Aspirant Drape
 				i(165212),	-- Sinister Aspirant Cape)
+				-- Mail
+				i(165077),	-- Sinister Aspirant's Chain Armor
+				i(165078),	-- Sinister Aspirant's Chain Sabatons
+				i(165079),	-- Sinister Aspirant's Chain Gauntlets
+				i(165080),	-- Sinister Aspirant's Chain Helm
+				i(165081),	-- Sinister Aspirant's Chain Legs
+				i(165082),	-- Sinister Aspirant's Chain Chain Spaulders
+				i(165083),	-- Sinister Aspirant's Chain Waistguard
+				i(165084),	-- Sinister Aspirant's Chain Armbands
 				
 			},
 			["races"] = HORDE_ONLY,
@@ -558,6 +567,15 @@ _.PVP =
 				i(165214),	-- Sinister Aspirant Greatcloak
 				i(165215),	-- Sinister Aspirant Drape
 				i(165216),	-- Sinister Aspirant Cape)
+				-- Mail
+				i(165096),	-- Sinister Aspirant's Chain Armor
+				i(165100),	-- Sinister Aspirant's Chain Sabatons
+				i(165105),	-- Sinister Aspirant's Chain Gauntlets
+				i(165107),	-- Sinister Aspirant's Chain Helm
+				i(165111),	-- Sinister Aspirant's Chain Legs
+				i(165116),	-- Sinister Aspirant's Chain Chain Spaulders
+				i(165119),	-- Sinister Aspirant's Chain Waistguard
+				i(165123),	-- Sinister Aspirant's Chain Armbands
 			},
 			["races"] = ALLIANCE_ONLY,
 		}),

@@ -4,7 +4,7 @@
 _.NeverImplemented = 
 {   
 	n(-10052, { -- BFA - Stuff that might gets added later duo changes/hotfixes/patches and/or similar
-		-- Those Items are currently not possible to load ingame (BFA Items), but they might be with a new patch
+		-- Some of those Items are currently not possible to load ingame (BFA Items), but they might be with a new patch
 		un(1, i(161988)),	-- Tidespray Linen Cloak of the Feather
 		un(1, i(161991)),	-- Tidespray Linen Cloak of Resilience
 		un(1, i(165261)),	-- Unknown Cloak
@@ -22,6 +22,11 @@ _.NeverImplemented =
 		un(1, i(165845)),	-- Mechanical Feather. Most likely same as above.
 		un(1, i(165792)),	-- Worn Cloak (future WQ?)
 		un(1, p(2341)),	-- Feathers (possibly tied to a quest?)
+		un(1, i(157677)),	-- Hearthbonded Helm (Hunter Future Boost Gear)
+		un(1, i(157679)),	-- Hearthbonded Spaulders (Hunter Future Boost Gear)
+		un(1, i(150642)),	-- Trailseeker Spaulders
+		un(1, i(157725)),	-- Totem Caller Coif (Sham Future Boost Gear)
+		un(1, i(157727)),	-- Totem Caller Pauldrons (Sham Future Boost Gear)
 	}),
 	n(-220, { -- Class
 		cl(12, { -- DH
@@ -363,9 +368,9 @@ _.NeverImplemented =
 				un(1, i(48816)),	-- Windrunner's Legguards of Conquest
 				un(1, i(48817)),	-- Windrunner's Spaulders of Conquest
 				un(1, i(48818)),	-- Windrunner's Tunic of Conquest
-				-- Possible Unused Level 120/Lv 120 Classtrial
-				un(1, i(150642)),	-- Trailseeker Spaulders
 			}),
+			un(1, i(166402)),	-- Flaskzertauren Mail Hauberk
+			un(1, i(166410)),	-- Flaskzertauren Mail Shoulderguards
 			un(1, i(12105)),	-- Pridemail Leggings
 			un(1, i(37420)),	-- Sharkproof Boots
 			un(1, i(68844)),	-- Unknown
