@@ -90,44 +90,6 @@ _.Instances =
 									},
 								},
 							},
-							{	-- Jadefire Masters
-								["encounterID"] = 2323,
-								["g"] = {
-									{	-- Phoenixfire Staff
-										["itemID"] = 165587,	-- Phoenixfire Staff
-									},
-									{	-- Blazewing Hood
-										["itemID"] = 165500,	-- Blazewing Hood
-									},
-									{	-- Helm of Tempered Jade
-										["itemID"] = 165548,	-- Helm of Tempered Jade
-									},
-									{	-- Ma'ra's Boneblade Mantle
-										["itemID"] = 165777,	-- Ma'ra's Boneblade Mantle
-									},
-									{	-- Mistfire Raiment
-										["itemID"] = 165540,	-- Mistfire Raiment
-									},
-									{	-- Firecaller's Handwraps
-										["itemID"] = 165764,	-- Firecaller's Handwraps
-									},
-									{	-- Grips of Harmonious Spirits
-										["itemID"] = 165531,	-- Grips of Harmonious Spirits
-									},
-									{	-- Embersear Waistguard
-										["itemID"] = 165552,	-- Embersear Waistguard
-									},
-									{	-- Cranedancer Leggings
-										["itemID"] = 165521,	-- Cranedancer Leggings
-									},
-									{	-- Band of Multi-Sided Strikes
-										["itemID"] = 165565,	-- Band of Multi-Sided Strikes
-									},
-									{	-- Invocation of Yu'lon
-										["itemID"] = 165568,	-- Invocation of Yu'lon
-									},
-								},
-							},
 							{	-- Grong, the Revenant
 								["encounterID"] = 2340,
 								["g"] = {
@@ -172,6 +134,44 @@ _.Instances =
 									},
 									{	-- Grong's Primal Rage
 										["itemID"] = 165574,	-- Grong's Primal Rage
+									},
+								},
+							},
+							{	-- Jadefire Masters
+								["encounterID"] = 2323,
+								["g"] = {
+									{	-- Phoenixfire Staff
+										["itemID"] = 165587,	-- Phoenixfire Staff
+									},
+									{	-- Blazewing Hood
+										["itemID"] = 165500,	-- Blazewing Hood
+									},
+									{	-- Helm of Tempered Jade
+										["itemID"] = 165548,	-- Helm of Tempered Jade
+									},
+									{	-- Ma'ra's Boneblade Mantle
+										["itemID"] = 165777,	-- Ma'ra's Boneblade Mantle
+									},
+									{	-- Mistfire Raiment
+										["itemID"] = 165540,	-- Mistfire Raiment
+									},
+									{	-- Firecaller's Handwraps
+										["itemID"] = 165764,	-- Firecaller's Handwraps
+									},
+									{	-- Grips of Harmonious Spirits
+										["itemID"] = 165531,	-- Grips of Harmonious Spirits
+									},
+									{	-- Embersear Waistguard
+										["itemID"] = 165552,	-- Embersear Waistguard
+									},
+									{	-- Cranedancer Leggings
+										["itemID"] = 165521,	-- Cranedancer Leggings
+									},
+									{	-- Band of Multi-Sided Strikes
+										["itemID"] = 165565,	-- Band of Multi-Sided Strikes
+									},
+									{	-- Invocation of Yu'lon
+										["itemID"] = 165568,	-- Invocation of Yu'lon
 									},
 								},
 							},
