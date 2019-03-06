@@ -174,7 +174,6 @@ nld({	-- Legacy
 			["groups"] = {
 				i(156879),	-- Dread Gladiator's Proto-Drake
 			},
-			["collectible"] = false,
 		})),
 	}),
 };

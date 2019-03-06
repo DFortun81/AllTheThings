@@ -30,9 +30,11 @@ _.Achievements =
 									--]]
 									{	-- Alliance Dread Gladiator's Cloak
 										["itemID"] = 164575,	--  Alliance Dread Gladiator's Cloak
+										["u"] = 2,					-- Unobtainable
 									},
 									{	-- Horde Dread Gladiator's Cloak
 										["itemID"] = 164574,	-- Horde Dread Gladiator's Cloak
+										["u"] = 2,					-- Unobtainable
 									},
 								},
 							},
@@ -50,12 +52,15 @@ _.Achievements =
 									},
 									{	-- Dread Gladiator's Proto-Drake
 										["itemID"] = 156879,	-- Dread Gladiator's Proto-Drake
+										["u"] = 2,					-- Unobtainable
 									},
 									{	-- Alliance Dread Gladiator's Tabard
 										["itemID"] = 164573,	--  Alliance Dread Gladiator's Tabard
+										["u"] = 2,					-- Unobtainable
 									},
 									{	-- Horde Dread Gladiator's Tabard
 										["itemID"] = 164572,	-- Horde Dread Gladiator's Tabard
+										["u"] = 2,					-- Unobtainable
 									},
 								},
 							},
@@ -103,13 +108,13 @@ _.Achievements =
 									{	-- Gladiator Title
 										["titleID"] = 29,	-- Gladiator
 									},
-									{	-- Dread Gladiator's Proto-Drake
+									{	-- Sinister Gladiator's Proto-Drake
 										["itemID"] = 156880,	-- Sinister Gladiator's Proto-Drake
 									},
-									{	-- Alliance Dread Gladiator's Tabard
+									{	-- Alliance Sinister Gladiator's Tabard
 										["itemID"] = 164910,	--  Alliance Sinister Gladiator's Tabard
 									},
-									{	-- Horde Dread Gladiator's Tabard
+									{	-- Horde Sinister Gladiator's Tabard
 										["itemID"] = 164909,	-- Horde Sinister Gladiator's Tabard
 									},
 								},

@@ -31,6 +31,7 @@ _.Mounts =
 		i(69213),	-- Flameward Hippogryph
 		i(163981),	-- Frenzied Feltalon
 		i(116670),	-- Frostplains Battleboar
+		i(156880),	-- Sinister Gladiator's Proto-Drake
 		i(116383),	-- Gorestrider Gronnling
 		i(141216),	-- Grove Defiler
 		i(87776),	-- Heavenly Azure Cloud Serpent

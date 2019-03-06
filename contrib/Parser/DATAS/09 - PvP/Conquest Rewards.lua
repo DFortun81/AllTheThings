@@ -1451,7 +1451,7 @@ _.PVP =
 					},
 				}),
 			},
-			{	-- War Chest [Redoing both structures later so it's not listed like this]
+			{	-- Weekly PVP Chest [Redoing both structures later so it's not listed like this]
 				["npcID"] = -489,	-- War Chest [Redoing both structures later so it's not listed like this]
 				["icon"] = "Interface\\Icons\\garrison_silverchest",
 				["coords"] = {
@@ -2905,18 +2905,6 @@ _.PVP =
 					},
 					{	-- Sinister Gladiator's Chain Epaulets
 						["itemID"] = 166661,	-- Sinister Gladiator's Chain Epaulets
-					},
-					{	-- Sinister Gladiator's Tabard
-						["itemID"] = 164909,	-- Sinister Gladiator's Tabard
-					},
-					{	-- Sinister Gladiator's Tabard
-						["itemID"] = 164910,	-- Sinister Gladiator's Tabard
-					},
-					{	-- Sinister Gladiator's Cloak
-						["itemID"] = 165059,	-- Sinister Gladiator's Cloak
-					},
-					{	-- Sinister Gladiator's Cloak
-						["itemID"] = 165060,	-- Sinister Gladiator's Cloak
 					},
 				}),
 			},
