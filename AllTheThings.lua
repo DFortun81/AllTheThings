@@ -4698,47 +4698,13 @@ app.BaseNPC = {
 		elseif key == "trackable" then
 			return t.questID;
 		elseif key == "collectible" then
-			return (t.questID and not t.repeatable and not t.isBreadcrumb and app.CollectibleQuests) or (t.f == 60 and app.CollectibleSelfieFilters);
+			return t.questID and not t.repeatable and not t.isBreadcrumb and app.CollectibleQuests;
 		elseif key == "saved" then
-			if t.questID then
-				if t.f == 60 then
-					if app.AccountWideSelfieFilters then
-						if GetDataSubMember("CollectedSelfieFilters", t.questID) then
-							return 1;
-						end
-					else
-						if GetTempDataSubMember("CollectedSelfieFilters", t.questID) then
-							return 1;
-						end
-					end
-					if IsQuestFlaggedCompleted(t.questID) then
-						SetTempDataSubMember("CollectedSelfieFilters", t.questID, 1);
-						SetDataSubMember("CollectedSelfieFilters", t.questID, 1);
-						return 1;
-					end
-				elseif IsQuestFlaggedCompleted(t.questID) then
-					return 1;
-				end
+			if t.questID and IsQuestFlaggedCompleted(t.questID) then
+				return 1;
 			end
-			if t.altQuestID then
-				if t.f == 60 then
-					if app.AccountWideSelfieFilters then
-						if GetDataSubMember("CollectedSelfieFilters", t.altQuestID) then
-							return 1;
-						end
-					else
-						if GetTempDataSubMember("CollectedSelfieFilters", t.altQuestID) then
-							return 1;
-						end
-					end
-					if IsQuestFlaggedCompleted(t.altQuestID) then
-						SetTempDataSubMember("CollectedSelfieFilters", t.altQuestID, 1);
-						SetDataSubMember("CollectedSelfieFilters", t.altQuestID, 1);
-						return 1;
-					end
-				else
-					return IsQuestFlaggedCompleted(t.altQuestID);
-				end
+			if t.altQuestID and IsQuestFlaggedCompleted(t.altQuestID) then
+				return 1;
 			end
 		elseif key == "collected" then
 			return t.saved;
@@ -4909,49 +4875,17 @@ app.BaseQuest = {
 		elseif key == "trackable" then
 			return true;
 		elseif key == "collectible" then
-			return (not t.repeatable and not t.isBreadcrumb and app.CollectibleQuests) or (t.f == 60 and app.CollectibleSelfieFilters);
+			return not t.repeatable and not t.isBreadcrumb and app.CollectibleQuests;
 		elseif key == "collected" then
 			return t.saved;
 		elseif key == "repeatable" then
 			return t.isDaily or t.isWeekly;
 		elseif key == "saved" then
-			if t.f == 60 then
-				if app.AccountWideSelfieFilters then
-					if GetDataSubMember("CollectedSelfieFilters", t.questID) then
-						return 1;
-					end
-				else
-					if GetTempDataSubMember("CollectedSelfieFilters", t.questID) then
-						return 1;
-					end
-				end
-				if IsQuestFlaggedCompleted(t.questID) then
-					SetTempDataSubMember("CollectedSelfieFilters", t.questID, 1);
-					SetDataSubMember("CollectedSelfieFilters", t.questID, 1);
-					return 1;
-				end
-			elseif IsQuestFlaggedCompleted(t.questID) then
+			if IsQuestFlaggedCompleted(t.questID) then
 				return 1;
 			end
-			if t.altQuestID then
-				if t.f == 60 then
-					if app.AccountWideSelfieFilters then
-						if GetDataSubMember("CollectedSelfieFilters", t.altQuestID) then
-							return 1;
-						end
-					else
-						if GetTempDataSubMember("CollectedSelfieFilters", t.altQuestID) then
-							return 1;
-						end
-					end
-					if IsQuestFlaggedCompleted(t.altQuestID) then
-						SetTempDataSubMember("CollectedSelfieFilters", t.altQuestID, 1);
-						SetDataSubMember("CollectedSelfieFilters", t.altQuestID, 1);
-						return 1;
-					end
-				else
-					return IsQuestFlaggedCompleted(t.altQuestID);
-				end
+			if t.altQuestID and IsQuestFlaggedCompleted(t.altQuestID) then
+				return 1;
 			end
 		else
 			-- Something that isn't dynamic.
@@ -5021,6 +4955,68 @@ app.BaseRecipe = {
 };
 app.CreateRecipe = function(id, t)
 	return createInstance(constructor(id, t, "spellID"), app.BaseRecipe);
+end
+
+-- Selfie Filters Lib
+app.BaseSelfieFilter = {
+	__index = function(t, key)
+		if key == "key" then
+			return "questID";
+		elseif key == "text" then
+			if t.npcID then
+				if t.npcID > 0 then
+					return t.npcID > 0 and NPCNameFromID[t.npcID];
+				else
+					return L["NPC_ID_NAMES"][t.npcID];
+				end
+			end
+			return t.questName;
+		elseif key == "questName" then
+			local questID = t.questID;
+			local questName = QuestTitleFromID[questID];
+			if questName then
+				t.retries = nil;
+				t.title = nil;
+				return "[" .. questName .. "]";
+			end
+			if t.retries and t.retries > 120 then
+				return "[Quest #" .. questID .. "*]";
+			else
+				t.retries = (t.retries or 0) + 1;
+			end
+		elseif key == "link" then
+			return "quest:" .. t.questID;
+		elseif key == "icon" then
+			return "Interface\\Icons\\INV_Misc_ SelfieCamera_02";
+		elseif key == "trackable" then
+			return true;
+		elseif key == "collectible" then
+			return app.CollectibleSelfieFilters;
+		elseif key == "collected" then
+			return t.saved;
+		elseif key == "saved" then
+			if app.AccountWideSelfieFilters then
+				if GetDataSubMember("CollectedSelfieFilters", t.questID) then
+					return 1;
+				end
+			else
+				if GetTempDataSubMember("CollectedSelfieFilters", t.questID) then
+					return 1;
+				end
+			end
+			if IsQuestFlaggedCompleted(t.questID) then
+				SetTempDataSubMember("CollectedSelfieFilters", t.questID, 1);
+				SetDataSubMember("CollectedSelfieFilters", t.questID, 1);
+				return 1;
+			end
+		else
+			-- Something that isn't dynamic.
+			return table[key];
+		end
+	end
+};
+app.CreateSelfieFilter = function(id, t)
+	return createInstance(constructor(id, t, "questID"), app.BaseSelfieFilter);
 end
 
 -- Spell Lib
