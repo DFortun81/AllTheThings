@@ -841,8 +841,6 @@ local function GetProgressTextForRow(data)
 		return GetCollectionIcon(data.collected);
 	elseif data.trackable then
 		return GetCompletionIcon(data.saved);
-	elseif data.g and not data.expanded and #data.g > 0 then
-		return "+++";
 	end
 end
 local function GetProgressTextForTooltip(data)
@@ -6698,7 +6696,14 @@ local function SetRowData(self, row, data)
 			relative = "RIGHT";
 			x = 4;
 		end
-		local summary = GetProgressTextForRow(data) or "---";
+		local summary = GetProgressTextForRow(data);
+		if not summary then
+			if data.g and not data.expanded and #data.g > 0 then
+				summary = "+++";
+			else
+				summary = "---";
+			end
+		end
 		local specs = data.specs;
 		if specs and #specs > 0 then
 			table.sort(specs);
