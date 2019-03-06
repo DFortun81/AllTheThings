@@ -498,44 +498,6 @@ _.Achievements =
 					},
 					{	-- Now We are the Paragon
 						["achievementID"] = 8531,	-- Now We are the Paragon
-						["g"] = {
-							{	-- Become the Bloodseeker
-								["achievementID"] = 8531,	-- Now We are the Paragon
-								["criteriaID"] = 2,	-- Become the Bloodseeker
-							},
-							{	-- Become the Dissector
-								["achievementID"] = 8531,	-- Now We are the Paragon
-								["criteriaID"] = 5,	-- Become the Dissector
-							},
-							{	-- Become the Locust
-								["achievementID"] = 8531,	-- Now We are the Paragon
-								["criteriaID"] = 9,	-- Become the Locust
-							},
-							{	-- Become the Lucid
-								["achievementID"] = 8531,	-- Now We are the Paragon
-								["criteriaID"] = 7,	-- Become the Lucid
-							},
-							{	-- Become the Manipulator
-								["achievementID"] = 8531,	-- Now We are the Paragon
-								["criteriaID"] = 6,	-- Become the Manipulator
-							},
-							{	-- Become the Poisoned Mind
-								["achievementID"] = 8531,	-- Now We are the Paragon
-								["criteriaID"] = 8,	-- Become the Poisoned Mind
-							},
-							{	-- Become the Prime
-								["achievementID"] = 8531,	-- Now We are the Paragon
-								["criteriaID"] = 3,	-- Become the Prime
-							},
-							{	-- Become the Swarmkeeper
-								["achievementID"] = 8531,	-- Now We are the Paragon
-								["criteriaID"] = 4,	-- Become the Swarmkeeper
-							},
-							{	-- Become the Wind-Reaver
-								["achievementID"] = 8531,	-- Now We are the Paragon
-								["criteriaID"] = 1,	-- Become the Wind-Reaver
-							},
-						},
 					},
 					{	-- One-Up
 						["achievementID"] = 8077,	-- One-Up
