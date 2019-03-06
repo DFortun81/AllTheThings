@@ -39,6 +39,7 @@ _.Achievements =
 							un(2, ach(12945, {			-- Dread Gladiator: Battle for Azeroth Season 1
 								--title(XX),			-- Dread Gladiator (title not in as of Pre-Patch)
 							})),
+							un(2, ach(13465)),		-- Elite: Battle for Azeroth Season 1
 							{	-- Gladiator: Battle for Azeroth Season 1
 								["achievementID"] = 12961,	-- Gladiator: Battle for Azeroth Season 1
 								["u"] = 2,					-- Unobtainable Achievement
@@ -93,6 +94,7 @@ _.Achievements =
 									},
 								},
 							},
+							ach(13451),		-- Elite: Battle for Azeroth Season 2
 							{	-- Gladiator: Battle for Azeroth Season 2
 								["achievementID"] = 13212,	-- Gladiator: Battle for Azeroth Season 2
 								--["u"] = 2,					-- Unobtainable Achievement
