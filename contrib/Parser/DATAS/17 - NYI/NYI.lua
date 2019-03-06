@@ -854,9 +854,6 @@ _.NeverImplemented =
 		un(1, i(156884, {	-- Black Gladiator's Proto-Drake
 			["mountID"] = 262027,
 		})),
-		un(1, i(156880, {	-- Blue Gladiator's Proto-Drake
-			["mountID"] = 262023,
-		})),
 		un(1, i(156885, {	-- Gold Gladiator's Proto-Drake
 			["mountID"] = 262028,
 		})),

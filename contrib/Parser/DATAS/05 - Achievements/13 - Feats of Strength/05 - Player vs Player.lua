@@ -8,11 +8,122 @@ _.Achievements =
 		["groups"] = {
 			n(-9958, { -- Player vs Player
 				["groups"] = {
+					n(-3158, {	--	Player vs. Player (Battle for Azeroth Season 1)
+						["groups"] = {
+							un(2, ach(12959, {			-- Challenger: Battle for Azeroth Season 1
+								title(32),				-- Challenger
+							})),
+							un(2, a(ach(13199))),	-- Dread Combatant
+							{	-- Duelist: Battle for Azeroth Season 1
+								["achievementID"] = 12962,	-- Duelist: Battle for Azeroth Season 1
+								["u"] = 2,					-- Unobtainable Achievement
+								--Note!! We do not need a description stating it's not account-bound.  It's well known and ATT tracks it accordingly.
+								["g"] = {
+									{	-- Duelist Title
+										["titleID"] = 30,	-- Duelist
+									},
+									--[[
+									--Note!! Currently we can not list this due to having no item.
+									{	-- Illusion: Dreadflame
+										,	-- Dreadflame Illusion
+									},
+									--]]
+									{	-- Alliance Dread Gladiator's Cloak
+										["itemID"] = 164575,	--  Alliance Dread Gladiator's Cloak
+									},
+									{	-- Horde Dread Gladiator's Cloak
+										["itemID"] = 164574,	-- Horde Dread Gladiator's Cloak
+									},
+								},
+							},
+							un(2, ach(12945, {			-- Dread Gladiator: Battle for Azeroth Season 1
+								--title(XX),			-- Dread Gladiator (title not in as of Pre-Patch)
+							})),
+							{	-- Gladiator: Battle for Azeroth Season 1
+								["achievementID"] = 12961,	-- Gladiator: Battle for Azeroth Season 1
+								["u"] = 2,					-- Unobtainable Achievement
+								--Note!! We do not need a description stating it's not account-bound.  It's well known and ATT tracks it accordingly.
+								["g"] = {
+									{	-- Gladiator Title
+										["titleID"] = 29,	-- Gladiator
+									},
+									{	-- Dread Gladiator's Proto-Drake
+										["itemID"] = 156879,	-- Dread Gladiator's Proto-Drake
+									},
+									{	-- Alliance Dread Gladiator's Tabard
+										["itemID"] = 164573,	--  Alliance Dread Gladiator's Tabard
+									},
+									{	-- Horde Dread Gladiator's Tabard
+										["itemID"] = 164572,	-- Horde Dread Gladiator's Tabard
+									},
+								},
+							},
+							un(2, a(ach(12963))),	-- Hero of the Alliance: Dread
+							un(2, h(ach(12964))),	-- Hero of the Horde: Dread
+							un(2, ach(12960, {			-- Rival: Battle for Azeroth Season 1
+								title(31),				-- Rival
+							})),
+						},
+					}),
+					n(-3157, {	--	Player vs. Player (Battle for Azeroth Season 2)
+						["groups"] = {
+							ach(13203, {			-- Challenger: Battle for Azeroth Season 2
+								title(32),				-- Challenger
+							}),
+							ach(13204),		-- Combatant: Battle for Azeroth Season 2
+							{	-- Duelist: Battle for Azeroth Season 2
+								["achievementID"] = 13209,	-- Duelist: Battle for Azeroth Season 2
+								--["u"] = 2,					-- Unobtainable Achievement
+								--Note!! We do not need a description stating it's not account-bound.  It's well known and ATT tracks it accordingly.
+								["g"] = {
+									{	-- Duelist Title
+									["titleID"] = 30,	-- Duelist
+									},
+									--[[
+									--Note!! Currently we can not list this due to having no item.
+									{	-- Illusion: Dreadflame
+										,	-- Dreadflame Illusion
+									},
+									--]]
+									{	-- Alliance Sinister Gladiator's Cloak
+										["itemID"] = 165060,	-- Alliance Sinister Gladiator's Cloak
+									},
+									{	-- Horde Sinister Gladiator's Cloak
+										["itemID"] = 165059,	-- Horde Sinister Gladiator's Cloak
+									},
+								},
+							},
+							{	-- Gladiator: Battle for Azeroth Season 2
+								["achievementID"] = 13212,	-- Gladiator: Battle for Azeroth Season 2
+								--["u"] = 2,					-- Unobtainable Achievement
+								--Note!! We do not need a description stating it's not account-bound.  It's well known and ATT tracks it accordingly.
+								["g"] = {
+									{	-- Gladiator Title
+										["titleID"] = 29,	-- Gladiator
+									},
+									{	-- Dread Gladiator's Proto-Drake
+										["itemID"] = 156880,	-- Sinister Gladiator's Proto-Drake
+									},
+									{	-- Alliance Dread Gladiator's Tabard
+										["itemID"] = 164910,	--  Alliance Sinister Gladiator's Tabard
+									},
+									{	-- Horde Dread Gladiator's Tabard
+										["itemID"] = 164909,	-- Horde Sinister Gladiator's Tabard
+									},
+								},
+							},
+							a(ach(13210)),			-- Hero of the Alliance: Sinister
+							h(ach(13211)),			-- Hero of the Horde: Sinister
+							ach(13205, {			-- Rival: Battle for Azeroth Season 2
+								title(31),				-- Rival
+							}),
+							ach(13200, {			-- Sinister Gladiator: Battle for Azeroth Season 2
+								--title(XX),			-- Sinister Gladiator (title not in as of Pre-Patch)
+							}),
+						},
+					}),
 					un(2, ach(420)),		-- Brutal Gladiator
 					un(2, ach(6938)),		-- Cataclysmic Gladiator
-					un(2, ach(12959, {			-- Challenger: Battle for Azeroth Season 1
-						title(32),				-- Challenger
-					})),
 					un(2, ach(11017)),		-- Challenger: Legion Season 1
 					un(2, ach(11028)),		-- Challenger: Legion Season 2
 					un(2, ach(11039)),		-- Challenger: Legion Season 3
@@ -60,33 +171,6 @@ _.Achievements =
 					un(2, ach(12134, {		-- Dominant Gladiator: Legion Season 6
 						un(39, title(368)),		-- Dominant Gladiator
 					})),
-					a(ach(13137)),			-- Dread Combatant (Alliance)
-					h(ach(13136)),			-- Dread Combatant (Horde)
-					un(2, ach(12945, {			-- Dread Gladiator: Battle for Azeroth Season 1
-						--title(XX),			-- Dread Gladiator (title not in as of Pre-Patch)
-					})),
-					{	-- Duelist: Battle for Azeroth Season 1
-						["achievementID"] = 12962,	-- Duelist: Battle for Azeroth Season 1
-						["u"] = 2,					-- Unobtainable Achievement
-						--Note!! We do not need a description stating it's not account-bound.  It's well known and ATT tracks it accordingly.
-						["g"] = {
-							{	-- Duelist Title
-								["titleID"] = 30,	-- Duelist
-							},
-							--[[
-							--Note!! Currently we can not list this due to having no item.
-							{	-- Illusion: Dreadflame
-								,	-- Dreadflame Illusion
-							},
-							--]]
-							{	-- Alliance Dread Gladiator's Cloak
-								["itemID"] = 164575,	--  Alliance Dread Gladiator's Cloak
-							},
-							{	-- Horde Dread Gladiator's Cloak
-								["itemID"] = 164574,	-- Horde Dread Gladiator's Cloak
-							},
-						},
-					},
 					ach(12962, {			--
 						title(30),				--
 					}),
@@ -121,25 +205,6 @@ _.Achievements =
 						un(39, title(363)),		-- Fierce Gladiator
 					})),
 					un(2, ach(3436)),		-- Furious Gladiator
-					{	-- Gladiator: Battle for Azeroth Season 1
-						["achievementID"] = 12961,	-- Gladiator: Battle for Azeroth Season 1
-						["u"] = 2,					-- Unobtainable Achievement
-						--Note!! We do not need a description stating it's not account-bound.  It's well known and ATT tracks it accordingly.
-						["g"] = {
-							{	-- Gladiator Title
-								["titleID"] = 29,	-- Gladiator
-							},
-							{	-- Dread Gladiator's Proto-Drake
-								["itemID"] = 156879,	-- Dread Gladiator's Proto-Drake
-							},
-							{	-- Alliance Dread Gladiator's Tabard
-								["itemID"] = 164573,	--  Alliance Dread Gladiator's Tabard
-							},
-							{	-- Horde Dread Gladiator's Tabard
-								["itemID"] = 164572,	-- Horde Dread Gladiator's Tabard
-							},
-						},
-					},
 					un(2, ach(11011)),		-- Gladiator: Legion Season 1
 					un(2, ach(11013)),		-- Gladiator: Legion Season 2
 					un(2, ach(11038)),		-- Gladiator: Legion Season 3
@@ -185,7 +250,6 @@ _.Achievements =
 					un(2, a(ach(11043))),	-- Hero of the Alliance: Cruel
 					un(2, a(ach(12197))),	-- Hero of the Alliance: Demonic
 					un(2, a(ach(12173))),	-- Hero of the Alliance: Dominant
-					a(ach(12963)),			-- Hero of the Alliance: Dread
 					un(2, a(ach(11030))),	-- Hero of the Alliance: Fearless
 					un(2, a(ach(11056))),	-- Hero of the Alliance: Ferocious
 					un(2, a(ach(12037))),	-- Hero of the Alliance: Fierce
@@ -203,7 +267,6 @@ _.Achievements =
 					un(2, h(ach(11042))),	-- Hero of the Horde: Cruel
 					un(2, h(ach(12196))),	-- Hero of the Horde: Demonic
 					un(2, h(ach(12172))),	-- Hero of the Horde: Dominant
-					h(ach(12964)),			-- Hero of the Horde: Dread
 					un(2, h(ach(11029))),	-- Hero of the Horde: Fearless
 					un(2, h(ach(11057))),	-- Hero of the Horde: Ferocious
 					un(2, h(ach(12041))),	-- Hero of the Horde: Fierce
@@ -243,9 +306,6 @@ _.Achievements =
 							crit(2),			-- General Lizzie Heartbane
 							crit(3),			-- Marshal Lyrdrea Daybreaker
 					}))),
-					ach(12960, {			-- Rival: Battle for Azeroth Season 1
-						title(31),				-- Rival
-					}),
 					un(2, ach(11016)),		-- Rival: Legion Season 1
 					un(2, ach(11027)),		-- Rival: Legion Season 2
 					un(2, ach(11040)),		-- Rival: Legion Season 3
