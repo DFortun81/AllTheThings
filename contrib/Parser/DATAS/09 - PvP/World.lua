@@ -11,6 +11,11 @@ _.PVP =
 					i(163825),	-- Plundered Supplies
 				},
 			}),
+			n(-488,	{	-- War Chest
+				["groups"] = {
+				},
+				["description"] = "Contains Dread Aspirant Gear if you are Level 110-119 and Sinister Aspirant Gear at Level 120.",
+			}),
 			a(ach(12605, { -- Conqueror of Azeroth
 				i(163577), -- Conquerer's Scythemaw
 				title(377), -- %s, Conqueror of Azeroth

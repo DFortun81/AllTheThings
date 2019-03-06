@@ -1176,7 +1176,8 @@ AllTheThings.L = {
 		
 -- Blizzard Events and Anniversaries
 -- Lucetia Note: Leave these for now, some may be swapped to achieves instead.
-		[-489] = "War Chest",
+		[-488] = "War Chest",													-- Daily War Chest
+		[-489] = "Weekly PVP Chest",											-- Weekly Conquest Point Cap Chest
 		[-490] = select(2, GetAchievementInfo(12945)),							-- Dread Gladiator: Battle for Azeroth  Season 1
 		[-491] = "Tarot Cards",
 		[-492] = "Illusions",

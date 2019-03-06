@@ -3,7 +3,7 @@
 -----------------------------------------------
 _.PVP =
 {
-	n(-227, { -- Victory
+	n(-304, {	-- Battlegrounds
 		["g"] = {
 			{	-- Gold Strong Box - Rated Win (A)
 				["itemID"] = 165714,	-- Gold Strong Box - Win (A)
