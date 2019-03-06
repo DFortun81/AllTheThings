@@ -28,3 +28,4 @@ contrib/Source Code/Parser/obj/
 contrib/Source Code/Parser/.vs/
 .vs/
 obj/
+**/desktop.ini
