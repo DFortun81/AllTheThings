@@ -8,18 +8,18 @@ _.Zones =
 			["groups"] = {
 				n(-10067, {	-- Artifacts
 					q(43560, {	-- Audience with the Windlord
-						["qg"] = 92218, -- Thrymjaris <Mother of the Thorignir>
+						["qg"] = 92218,	-- Thrymjaris <Mother of the Thorignir>
 						["classes"] = { 4 },	-- Rogue Only
 						["sourceQuests"] = { 43558 },	-- Bindings of the Windlord
 						["groups"] = {
 							i(139536, {	-- Emanation of the Winds
-								artifact(881), -- Outlaw Rogue Hidden Artifact Skin
+								artifact(881),	-- Outlaw Rogue Hidden Artifact Skin
 							}),
 						},
 					}),
 					q(43558, {	-- Bindings of the Windlord
 						["description"] = "You need to first collect the two bindings and then be in Outlaw spec to get this quest.",
-						["qg"] = 92218, -- Thrymjaris <Mother of the Thorignir>
+						["qg"] = 92218,	-- Thrymjaris <Mother of the Thorignir>
 						["classes"] = { 4 },	-- Rogue Only
 						["sourceQuests"] = { 39652 },	-- Where Dragons Rule
 						["groups"] = {
@@ -29,15 +29,15 @@ _.Zones =
 					}),
 				}),
 				n(-169, { 	-- Emissary Quests
-					q(42234, { -- The Valarjar
+					q(42234, {	-- The Valarjar
 						["groups"] = {
-							i(157824, { -- Valarjar Cache
+							i(157824, {	-- Valarjar Cache
 								["groups"] = {
 									i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3)
-									n(-322, { -- Cloak
-										i(134202), -- Stormsky Cloak
+									n(-322, {	-- Cloak
+										i(134202),	-- Stormsky Cloak
 									}),
-									n(-3242, { -- Bonespeaker Set
+									n(-3242, {	-- Bonespeaker Set
 										["groups"] = {
 											i(134216),	-- Bonespeaker Cowl
 											i(134221),	-- Bonespeaker Mantle
@@ -49,7 +49,7 @@ _.Zones =
 											i(134220),	-- Bonespeaker Sandals
 										},
 									}),
-									n(-3266, { -- Biornskin Set
+									n(-3266, {	-- Biornskin Set
 										["groups"] = {
 											i(134196),	-- Biornskin Hood
 											i(134198),	-- Biornskin Shoulderpads
@@ -61,7 +61,7 @@ _.Zones =
 											i(134193),	-- Biornskin Moccasins
 										},
 									}),
-									n(-3278, { -- Tideskorn Set
+									n(-3278, {	-- Tideskorn Set
 										["groups"] = {
 											i(134211),	-- Tideskorn Coif
 											i(134213),	-- Tideskorn Mantle
@@ -73,7 +73,7 @@ _.Zones =
 											i(134210),	-- Tideskorn Sabatons
 										},
 									}),
-									n(-3302, { -- Skoldiir Set
+									n(-3302, {	-- Skoldiir Set
 										["groups"] = {
 											i(134182),	-- Skoldiir Helm
 											i(134184),	-- Skoldiir Shoulderguards
@@ -85,7 +85,7 @@ _.Zones =
 											i(134185),	-- Skoldiir Sabatons
 										},
 									}),
-									n(-3309, { -- Wardbreaker Set
+									n(-3309, {	-- Wardbreaker Set
 										["groups"] = {
 											i(136728),	-- Wardbreaker Helm
 											i(136730),	-- Wardbreaker Pauldrons
@@ -99,12 +99,12 @@ _.Zones =
 									}),
 								},
 							}),
-							un(2, i(154905, { -- Valarjar Cache
+							un(2, i(154905, {	-- Valarjar Cache
 								["groups"] = {
-									n(-322, { -- Cloak
-										i(134202), -- Stormsky Cloak
+									n(-322, {	-- Cloak
+										i(134202),	-- Stormsky Cloak
 									}),
-									n(-3242, { -- Bonespeaker Set
+									n(-3242, {	-- Bonespeaker Set
 										["groups"] = {
 											i(134216),	-- Bonespeaker Cowl
 											i(134221),	-- Bonespeaker Mantle
@@ -116,7 +116,7 @@ _.Zones =
 											i(134220),	-- Bonespeaker Sandals
 										},
 									}),
-									n(-3266, { -- Biornskin Set
+									n(-3266, {	-- Biornskin Set
 										["groups"] = {
 											i(134196),	-- Biornskin Hood
 											i(134198),	-- Biornskin Shoulderpads
@@ -128,7 +128,7 @@ _.Zones =
 											i(134193),	-- Biornskin Moccasins
 										},
 									}),
-									n(-3278, { -- Tideskorn Set
+									n(-3278, {	-- Tideskorn Set
 										["groups"] = {
 											i(134211),	-- Tideskorn Coif
 											i(134213),	-- Tideskorn Mantle
@@ -140,7 +140,7 @@ _.Zones =
 											i(134210),	-- Tideskorn Sabatons
 										},
 									}),
-									n(-3302, { -- Skoldiir Set
+									n(-3302, {	-- Skoldiir Set
 										["groups"] = {
 											i(134182),	-- Skoldiir Helm
 											i(134184),	-- Skoldiir Shoulderguards
@@ -152,7 +152,7 @@ _.Zones =
 											i(134185),	-- Skoldiir Sabatons
 										},
 									}),
-									n(-3309, { -- Wardbreaker Set
+									n(-3309, {	-- Wardbreaker Set
 										["groups"] = {
 											i(136728),	-- Wardbreaker Helm
 											i(136730),	-- Wardbreaker Pauldrons
@@ -166,12 +166,12 @@ _.Zones =
 									}),
 								},
 							})),
-							un(2, i(151466, { -- Valarjar Cache
+							un(2, i(151466, {	-- Valarjar Cache
 								["groups"] = {
-									n(-322, { -- Cloak
-										i(134202), -- Stormsky Cloak
+									n(-322, {	-- Cloak
+										i(134202),	-- Stormsky Cloak
 									}),
-									n(-3242, { -- Bonespeaker Set
+									n(-3242, {	-- Bonespeaker Set
 										["groups"] = {
 											i(134216),	-- Bonespeaker Cowl
 											i(134221),	-- Bonespeaker Mantle
@@ -183,7 +183,7 @@ _.Zones =
 											i(134220),	-- Bonespeaker Sandals
 										},
 									}),
-									n(-3266, { -- Biornskin Set
+									n(-3266, {	-- Biornskin Set
 										["groups"] = {
 											i(134196),	-- Biornskin Hood
 											i(134198),	-- Biornskin Shoulderpads
@@ -195,7 +195,7 @@ _.Zones =
 											i(134193),	-- Biornskin Moccasins
 										},
 									}),
-									n(-3278, { -- Tideskorn Set
+									n(-3278, {	-- Tideskorn Set
 										["groups"] = {
 											i(134211),	-- Tideskorn Coif
 											i(134213),	-- Tideskorn Mantle
@@ -207,7 +207,7 @@ _.Zones =
 											i(134210),	-- Tideskorn Sabatons
 										},
 									}),
-									n(-3302, { -- Skoldiir Set
+									n(-3302, {	-- Skoldiir Set
 										["groups"] = {
 											i(134182),	-- Skoldiir Helm
 											i(134184),	-- Skoldiir Shoulderguards
@@ -219,7 +219,7 @@ _.Zones =
 											i(134185),	-- Skoldiir Sabatons
 										},
 									}),
-									n(-3309, { -- Wardbreaker Set
+									n(-3309, {	-- Wardbreaker Set
 										["groups"] = {
 											i(136728),	-- Wardbreaker Helm
 											i(136730),	-- Wardbreaker Pauldrons
@@ -233,12 +233,12 @@ _.Zones =
 									}),
 								},
 							})),
-							un(2, i(146749, { -- Valarjar Cache
+							un(2, i(146749, {	-- Valarjar Cache
 								["groups"] = {
-									n(-322, { -- Cloak
-										i(134202), -- Stormsky Cloak
+									n(-322, {	-- Cloak
+										i(134202),	-- Stormsky Cloak
 									}),
-									n(-3242, { -- Bonespeaker Set
+									n(-3242, {	-- Bonespeaker Set
 										["groups"] = {
 											i(134216),	-- Bonespeaker Cowl
 											i(134221),	-- Bonespeaker Mantle
@@ -250,7 +250,7 @@ _.Zones =
 											i(134220),	-- Bonespeaker Sandals
 										},
 									}),
-									n(-3266, { -- Biornskin Set
+									n(-3266, {	-- Biornskin Set
 										["groups"] = {
 											i(134196),	-- Biornskin Hood
 											i(134198),	-- Biornskin Shoulderpads
@@ -262,7 +262,7 @@ _.Zones =
 											i(134193),	-- Biornskin Moccasins
 										},
 									}),
-									n(-3278, { -- Tideskorn Set
+									n(-3278, {	-- Tideskorn Set
 										["groups"] = {
 											i(134211),	-- Tideskorn Coif
 											i(134213),	-- Tideskorn Mantle
@@ -274,7 +274,7 @@ _.Zones =
 											i(134210),	-- Tideskorn Sabatons
 										},
 									}),
-									n(-3302, { -- Skoldiir Set
+									n(-3302, {	-- Skoldiir Set
 										["groups"] = {
 											i(134182),	-- Skoldiir Helm
 											i(134184),	-- Skoldiir Shoulderguards
@@ -286,7 +286,7 @@ _.Zones =
 											i(134185),	-- Skoldiir Sabatons
 										},
 									}),
-									n(-3309, { -- Wardbreaker Set
+									n(-3309, {	-- Wardbreaker Set
 										["groups"] = {
 											i(136728),	-- Wardbreaker Helm
 											i(136730),	-- Wardbreaker Pauldrons
@@ -300,12 +300,12 @@ _.Zones =
 									}),
 								},
 							})),
-							un(2, i(137562, { -- Valarjar Cache
+							un(2, i(137562, {	-- Valarjar Cache
 								["groups"] = {
-									n(-322, { -- Cloak
-										i(134202), -- Stormsky Cloak
+									n(-322, {	-- Cloak
+										i(134202),	-- Stormsky Cloak
 									}),
-									n(-3242, { -- Bonespeaker Set
+									n(-3242, {	-- Bonespeaker Set
 										["groups"] = {
 											i(134216),	-- Bonespeaker Cowl
 											i(134221),	-- Bonespeaker Mantle
@@ -317,7 +317,7 @@ _.Zones =
 											i(134220),	-- Bonespeaker Sandals
 										},
 									}),
-									n(-3266, { -- Biornskin Set
+									n(-3266, {	-- Biornskin Set
 										["groups"] = {
 											i(134196),	-- Biornskin Hood
 											i(134198),	-- Biornskin Shoulderpads
@@ -329,7 +329,7 @@ _.Zones =
 											i(134193),	-- Biornskin Moccasins
 										},
 									}),
-									n(-3278, { -- Tideskorn Set
+									n(-3278, {	-- Tideskorn Set
 										["groups"] = {
 											i(134211),	-- Tideskorn Coif
 											i(134213),	-- Tideskorn Mantle
@@ -341,7 +341,7 @@ _.Zones =
 											i(134210),	-- Tideskorn Sabatons
 										},
 									}),
-									n(-3302, { -- Skoldiir Set
+									n(-3302, {	-- Skoldiir Set
 										["groups"] = {
 											i(134182),	-- Skoldiir Helm
 											i(134184),	-- Skoldiir Shoulderguards
@@ -353,7 +353,7 @@ _.Zones =
 											i(134185),	-- Skoldiir Sabatons
 										},
 									}),
-									n(-3309, { -- Wardbreaker Set
+									n(-3309, {	-- Wardbreaker Set
 										["groups"] = {
 											i(136728),	-- Wardbreaker Helm
 											i(136730),	-- Wardbreaker Pauldrons
@@ -370,14 +370,14 @@ _.Zones =
 						},
 						["repeatable"] = true,
 					}),
-					n(-206, { -- Paragon
-						q(46746, { -- Supplies from the Valarjar
+					n(-206, {	-- Paragon
+						q(46746, {	-- Supplies from the Valarjar
 							["groups"] = {
-								i(152106, { -- Valarjar Strongbox
-									i(147805), -- Valarjar Stormwing
+								i(152106, {	-- Valarjar Strongbox
+									i(147805),	-- Valarjar Stormwing
 								}),
-								un(2, i(146901, { -- Valarjar Strongbox
-									i(147805), -- Valarjar Stormwing
+								un(2, i(146901, {	-- Valarjar Strongbox
+									i(147805),	-- Valarjar Stormwing
 								})),
 							},
 							["repeatable"] = true,
@@ -385,55 +385,55 @@ _.Zones =
 					}),
 				}),
 				n(-228, {	-- Flight Paths
-					fp(1738, { -- Cullen's Post, Stormheim
+					fp(1738, {	-- Cullen's Post, Stormheim
 						["coord"] = { 44.8, 59.2 },
 					}),
-					fp(1739, { -- Dreadwake's Landing, Stormheim
+					fp(1739, {	-- Dreadwake's Landing, Stormheim
 						["coord"] = { 54.4, 73 },
 					}),
-					fp(1741, { -- Forsaken Foothold, Stormheim
+					fp(1741, {	-- Forsaken Foothold, Stormheim
 						["coord"] = { 36.4, 30.6 },
 					}),
-					fp(1744, { -- Greywatch, Stormheim
+					fp(1744, {	-- Greywatch, Stormheim
 						["coord"] = { 72, 59.8 },
 					}),
-					fp(1863, { -- Hafr Fjall, Stormheim
+					fp(1863, {	-- Hafr Fjall, Stormheim
 						["coord"] = { 55.6, 87.4 },
 					}),
-					fp(1745, { -- Lorna's Watch, Stormheim
+					fp(1745, {	-- Lorna's Watch, Stormheim
 						["coord"] = { 37.4, 64 },
 					}),
-					fp(1839, { -- Nastrondir (Eagle)
+					fp(1839, {	-- Nastrondir (Eagle)
 						["coord"] = { 45.8, 35.8 },
 						["classes"] = { 3 },	-- Hunter
 					}),
-					fp(1855, { -- Shield's Rest, Stormheim
+					fp(1855, {	-- Shield's Rest, Stormheim
 						["coord"] = { 89.8, 10.6 },
 					}),
-					fp(1747, { -- Skyfire Triage Camp, Stormheim
+					fp(1747, {	-- Skyfire Triage Camp, Stormheim
 						["coord"] = { 33.6, 50.6 },
 					}),
-					fp(1857, { -- Stormtorn Foothills, Stormheim
+					fp(1857, {	-- Stormtorn Foothills, Stormheim
 						["coord"] = { 52, 34.6 },
 					}),
-					fp(1838, { -- Thorim's Peak (Eagle)
+					fp(1838, {	-- Thorim's Peak (Eagle)
 						["coord"] = { 38, 79.2 },
 						["classes"] = { 3 },	-- Hunter
 					}),
-					fp(1742, { -- Valdisdall, Stormheim
+					fp(1742, {	-- Valdisdall, Stormheim
 						["coord"] = { 60.6, 50.8 },
 					}),
 				}),
 				m(649, { 	-- Helheim
 					["groups"] = {
-						n(-17, { -- Quests
+						n(-17, {	-- Quests
 							qg(97319, q(39837)),					-- An Unworthy Task / Ashildir <Queen of the Valkyra>
 							sq(39837, qg(91531, q(38324, {			-- Accessories of the Cursed / Colborn the Unworthy
-								i(129331), -- Soulflayer Cord
-								i(129332), -- Belt of the Eternally Tortured
-								i(129333), -- Mistcaller Mail Belt
-								i(129334), -- Girdle of the Unworthy
-								i(121563), -- Soulflayer's Collar of Bones
+								i(129331),	-- Soulflayer Cord
+								i(129332),	-- Belt of the Eternally Tortured
+								i(129333),	-- Mistcaller Mail Belt
+								i(129334),	-- Girdle of the Unworthy
+								i(121563),	-- Soulflayer's Collar of Bones
 							}))),
 							sq(39837, qg(91531, q(38339))),			-- A Little Kelp From My Foes / Colborn the Unworthy
 							sq({38324,38339}, qg(91531, q(38347, {	-- Stealth by Seaweed / Colborn the Unworthy
@@ -442,8 +442,8 @@ _.Zones =
 							sq(38347, qg(97319, q(39848))),			-- A Desperate Bargain / Ashildir <Queen of the Valkyra>
 							sq(39848, qg(91387, q(39857))),			-- The Eternal Nemesis / Helya's Altar
 							sq(39857, qg(97319, q(39849, {			-- To Light the Way / Ashildir <Queen of the Valkyra>
-								i(129339), -- Drape of the Undying Raider
-								i(129239), -- Bloodbeard's Seal
+								i(129339),	-- Drape of the Undying Raider
+								i(129239),	-- Bloodbeard's Seal
 							}))),
 							sq(39849, qg(97319, q(39849))),			-- Sundered / Ashildir <Queen of the Valkyra>
 							sq(39849, qg(97319, q(39851))),			-- Allies in Death / Ashildir <Queen of the Valkyra>
@@ -451,20 +451,20 @@ _.Zones =
 							sq({39849,39851,39852}, qg(97319, q(39853, {			-- Victory is Eternal / Ashildir <Queen of the Valkyra>
 								desc(n(91948), "Soloable, but might require a group."),	-- Geir <The Eternal Nemesis>
 							}))),
-							sq(39853, qg(97319, q(39855, { -- Paid in Lifeblood / Ashildir <Queen of the Valkyra>
-								i(132832), -- Bones of Geir	
-								i(132830), -- Cursebinder Chains	
-								i(132826), -- Cursed Kvaldir Blood	
-								i(132827), -- Gaze of Helya	
-								i(132824), -- Helheim Waylight	
-								i(132828), -- Helhound Core	
-								i(132829), -- Silver of Heost	
-								i(132825), -- Val'kyra Boon	
-								i(132834), -- Wailing Wings	
-								i(132831), -- Worthy Soul	
+							sq(39853, qg(97319, q(39855, {	-- Paid in Lifeblood / Ashildir <Queen of the Valkyra>
+								i(132832),	-- Bones of Geir	
+								i(132830),	-- Cursebinder Chains	
+								i(132826),	-- Cursed Kvaldir Blood	
+								i(132827),	-- Gaze of Helya	
+								i(132824),	-- Helheim Waylight	
+								i(132828),	-- Helhound Core	
+								i(132829),	-- Silver of Heost	
+								i(132825),	-- Val'kyra Boon	
+								i(132834),	-- Wailing Wings	
+								i(132831),	-- Worthy Soul	
 							}))),
 						}),
-						n(-16, { -- Rares
+						n(-16, {	-- Rares
 							desc(n(109163), "Objective of the World Quest 'DANGER: Captain Dargun'. Is not up otherwise."),			-- Captain Dargun
 							n(92040, {	-- Fenri
 								["groups"] = {
@@ -491,9 +491,9 @@ _.Zones =
 									}),
 								}
 							}),
-							n(97630, { -- Soulthirster
+							n(97630, {	-- Soulthirster
 								["groups"] = {
-									i(129188), -- Pet
+									i(129188),	-- Pet
 								},
 								["questID"] = 39870,	
 							}),
@@ -524,11 +524,11 @@ _.Zones =
 					n(115742, {	-- Orphaned Direbeak
 						["groups"] = {
 							p(1975), 	-- Direbeak Hatchling
-							q(44982, { -- Direbeak Bonding
-								i(142495), -- Fake Teeth
+							q(44982, {	-- Direbeak Bonding
+								i(142495),	-- Fake Teeth
 							}),
-							q(44988, { -- Direbeak Reunion
-								i(137579), -- Brilliant Direbeak
+							q(44988, {	-- Direbeak Reunion
+								i(137579),	-- Brilliant Direbeak
 							}),
 						},
 						["description"] = "1. Buy Pungent Vrykul Gamalost from Steward Dayton in Stormheim.\n2. Kill Direbeak Matriarch\n3. /target Orphaned Direbeak\n4. Feed Orphaned Direbeak Pungent Vrykul Gamalost.\n5. Enjoy new Direbeak Hatchling|r",
@@ -572,7 +572,7 @@ _.Zones =
 						
 						["requireSkill"] = 182,	-- Herbalism
 					},
-					prof(356, { -- Fishing
+					prof(356, {	-- Fishing
 						n(-10067, { 	-- Artifact
 							["description"] = "Prerequisites:\n\n  Be level 110.\n  Have level 800 Fishing.\n  Complete the achievement Bigger Fish to Fry\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for the quest item linked below.",
 							["lvl"] = 110,
@@ -706,8 +706,8 @@ _.Zones =
 							faction(2100, {	-- Corbyn
 								["groups"] = {
 									i(146961, {		-- Shiny Bauble
-										i(147307), -- Carved Wooden Helm
-										i(152574), -- Corbyn's Beacon
+										i(147307),	-- Carved Wooden Helm
+										i(152574),	-- Corbyn's Beacon
 									}),
 								},
 								["description"] = "This Fisherfriend NPC is located at: |cFFFFFFFF90.5, 10.7|r on Shield's Rest.\n\nThe Fisherfriend NPC's will not always be up and only one is up at any given time.  You will have to either travel to the zone, ask a friend or check group finder to see if they are up.\n\nWhen fishing for the item for this particular fisherfriend make sure that you are close enough so that you recive the buff |cFFFFD700Something's Fishy|r, otherwise you won't be able to receive the turn-in items or the boss that is summoned.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",
@@ -716,7 +716,7 @@ _.Zones =
 							}),
 						}),
 					}),
-					prof(393, { -- Skinning
+					prof(393, {	-- Skinning
 						n(91799, {	-- Juvenile Stormwing
 							{
 								["itemID"] = 139894,	-- Skinning Technique: Unbroken Claw
@@ -883,13 +883,13 @@ _.Zones =
 						q(41936),	-- You Have Been Challenged					
 					}),
 --]]
-					ach(10790, { -- Vrykul Story, Bro
-						crit(1, { -- Greymane's Gambit
+					ach(10790, {	-- Vrykul Story, Bro
+						crit(1, {	-- Greymane's Gambit
 							qa( 44700),	-- Stormheim
 							qa( 39735),	-- Stormheim
 							qa( 38035),	-- A Royal Summons
 							qa( 38206),	-- Making the Rounds
-							qa(39800,  {  -- Greymane's Gambit
+							qa(39800,  { 	-- Greymane's Gambit
 								i(139914),
 								i(121760),
 								i(139950),
@@ -921,8 +921,8 @@ _.Zones =
 								},
 							}),
 						}),
-						crit(2, { -- The Aftermath
-							qa(38053,  {  -- Assault and Battery
+						crit(2, {	-- The Aftermath
+							qa(38053,  { 	-- Assault and Battery
 								i(134554),
 								i(134555),
 								i(134556),
@@ -937,7 +937,7 @@ _.Zones =
 							qa( 38558),	-- See Ya Later, Oscillator
 							qa( 38058),	-- Lightning Rod
 							qa( 38059),	-- Pins and Needles
-							qa(38060,  {  -- Signal Boost
+							qa(38060,  { 	-- Signal Boost
 								i(129233),
 								i(129234),
 								i(129235),
@@ -949,7 +949,7 @@ _.Zones =
 							}),
 							qh( 38332),	-- The Ranger Lord
 							qh( 38360),	-- The Windrunner's Fate
-							qh(38362,  {  -- A Grim Trophy
+							qh(38362,  { 	-- A Grim Trophy
 								i(121499),
 								i(121501),
 								i(121500),
@@ -966,7 +966,7 @@ _.Zones =
 							["creatureID"] = 107840,-- Stormforged Grapple Launcher
 							["description"] = "This item can be safely deleted and you'll still be able to interact with the hooks.",
 						},
-						crit(3, { -- The Trial of Might
+						crit(3, {	-- The Trial of Might
 							a({
 								["questID"] = 38210,	-- The Ancient Trials
 								["qg"] = 97306,	-- Muninn
@@ -1057,7 +1057,7 @@ _.Zones =
 								},
 							},
 						}),
-						crit(4, { -- The Trial of Will
+						crit(4, {	-- The Trial of Will
 							a({
 								["questID"] = 38473,	-- Will of the Thorignir
 								["sourceQuest"] = 39597,	-- The Blessing of the Watchers
@@ -1250,7 +1250,7 @@ _.Zones =
 								["qg"] = 92218,	-- Thymjaris
 							},
 						}),
-						crit(5, { -- The Trial of Valor
+						crit(5, {	-- The Trial of Valor
 							{
 								["questID"] = 39803,	-- The Trials Continue
 								["sourceQuest"] = 38624,	-- Cry Thunder!
@@ -1260,7 +1260,7 @@ _.Zones =
 							q(39796),	-- To Haustvald
 							q(38778),	-- Turn the Keys
 							q(39788),	-- The Runewood's Revenge
-							q(38808,  {  -- Bjornharta
+							q(38808,  { 	-- Bjornharta
 								i(129335),
 								i(129336),
 								i(129337),
@@ -1270,7 +1270,7 @@ _.Zones =
 							q(38811),	-- Judgment Day
 							q(39791),	-- Lay Them to Rest
 							q(38816),	-- Breaking the Bonespeakers
-							q(38817,  {  -- Regal Remains
+							q(38817,  { 	-- Regal Remains
 								i(129229),
 								i(129231),
 								i(129230),
@@ -1284,27 +1284,27 @@ _.Zones =
 							q(38815),	-- Waking the Shieldmaiden
 							q(38818),	-- The Final Judgment
 						}),
-						crit(6, { -- To Helheim and Back
-							q(39837), -- An Unworthy Task
-							q(38324), -- Accessories of the Cursed
-							q(38339), -- A Little Kelp From My Foes
-							q(38347), -- Stealth by Seaweed
-							q(39848), -- A Desperate Bargain
-							q(39857), -- The Eternal Nemesis
-							q(39849), -- To Light the Way
-							q(39850), -- Sundered
-							q(39851), -- Allies in Death
-							q(39853), -- Victory is Eternal
-							q(39855), -- Paid in Lifeblood
+						crit(6, {	-- To Helheim and Back
+							q(39837),	-- An Unworthy Task
+							q(38324),	-- Accessories of the Cursed
+							q(38339),	-- A Little Kelp From My Foes
+							q(38347),	-- Stealth by Seaweed
+							q(39848),	-- A Desperate Bargain
+							q(39857),	-- The Eternal Nemesis
+							q(39849),	-- To Light the Way
+							q(39850),	-- Sundered
+							q(39851),	-- Allies in Death
+							q(39853),	-- Victory is Eternal
+							q(39855),	-- Paid in Lifeblood
 						}),
 						q(40078, {	-- A Heavy Burden
 							i(133813),	-- Recipe: Pickled Stormray [Rank 1]
 						}),
-						crit(7, { -- Secrets of the Shieldmaidens
+						crit(7, {	-- Secrets of the Shieldmaidens
 							qa( 39059),	-- To Catch a Banshee
 							qa( 39060),	-- Combustible Contagion
 							qa( 39061),	-- Whispers from the Dark
-							qa(39472,  {  -- Cut Out the Heart
+							qa(39472,  { 	-- Cut Out the Heart
 								i(129252),
 								i(129255),
 								i(129256),
@@ -1318,7 +1318,7 @@ _.Zones =
 							qa( 39063),	-- Shielded Secrets
 							q(39405),	-- Stories of Battle
 							qa( 39092),	-- Becoming the Ascendant
-							qa(39122,  {  -- Ending the New Beginning
+							qa(39122,  { 	-- Ending the New Beginning
 								i(129346),
 								i(129347),
 								i(129348),
@@ -1330,7 +1330,7 @@ _.Zones =
 							qh( 38872),	-- The Dark Lady's Bidding
 							qh( 38873),	-- Clear the Deck!
 							qh( 39153),	-- Dreadwake's Dilemma
-							qh( 39385,  { -- A Gift for Greymane
+							qh( 39385,  {	-- A Gift for Greymane
 								i(129225),
 								i(129226),
 								i(129227),
@@ -1343,14 +1343,14 @@ _.Zones =
 							qh( 39154),	-- To Skold-Ashil
 							qh( 38878),	-- Shielded Secrets
 							qh( 39155),	-- Becoming the Ascendant
-							qh(38882,  {  -- A New Life for Undeath
+							qh(38882,  { 	-- A New Life for Undeath
 								i(129342),
 								i(129343),
 								i(129344),
 								i(129345),
 							}),
 						}),
-						crit(8, { -- The Champion of Stormheim
+						crit(8, {	-- The Champion of Stormheim
 							q(40001),	-- Knocking on Valor's Door
 							q(40002),	-- A Familiar Fate
 							q(40003),	-- Stem the Tide
@@ -1358,16 +1358,16 @@ _.Zones =
 							q(40005),	-- Stormheim's Salvation
 						}),
 					}),
-					ach(10877, { -- Pillars of Creation
+					ach(10877, {	-- Pillars of Creation
 						q(40072),	-- Halls of Valor: Securing the Aegis
-						q(43349, { -- The Aegis of Aggramar
-							i(130016), -- Valor-Bound Legplates
-							i(129989), -- Valor-Bound Trousers
-							i(129997), -- Valor-Bound Legwraps
-							i(130005), -- Valor-Bound Greaves
+						q(43349, {	-- The Aegis of Aggramar
+							i(130016),	-- Valor-Bound Legplates
+							i(129989),	-- Valor-Bound Trousers
+							i(129997),	-- Valor-Bound Legwraps
+							i(130005),	-- Valor-Bound Greaves
 						}),
 					}),
-					ach(11232, { -- Lock, Stock and Two Smoking Goblins
+					ach(11232, {	-- Lock, Stock and Two Smoking Goblins
 						ach(10793, {	-- What a Ripoff!
 							{
 								["questID"] = 39789,	-- Eating Into Our Business
@@ -1423,12 +1423,12 @@ _.Zones =
 							}
 						},
 					}),
-					n(-168, { -- Other Quests
-						sz(10668,4,  { -- Dreygrot
+					n(-168, {	-- Other Quests
+						sz(10668,4,  {	-- Dreygrot
 							q(42635),	-- The Mystery of Dreyrgrot
 							q(42639),	-- A Stone of Blood
 							q(42640),	-- The Value of Knowledge
-							q(42641,  {  -- What the Bonespeakers Buried
+							q(42641,  { 	-- What the Bonespeakers Buried
 								i(129360),
 								i(129358),
 								i(129359),
@@ -1436,11 +1436,11 @@ _.Zones =
 							}),
 							q(42645),	-- Spilling Bad Blood
 						}),
-						sz(10668,16, { -- Storm's Reach
+						sz(10668,16, {	-- Storm's Reach
 							q(42444),	-- Plight of the Blackfeather
 							q(42445),	-- Nithogg's Tribute
 							q(42446),	-- Singed Feathers
-							q(42447,  {  -- Dances With Ravenbears
+							q(42447,  { 	-- Dances With Ravenbears
 								i(129361),
 								i(129363),
 								i(129364),
@@ -1451,7 +1451,7 @@ _.Zones =
 								i(129246),
 							}),
 						}),
-						sz(10668,17, { -- Talonrest
+						sz(10668,17, {	-- Talonrest
 							q(39789),	-- Eating Into Our Business
 							q(39793),	-- Only the Finest
 							q(39787),	-- Rigging the Wager
@@ -1459,18 +1459,18 @@ _.Zones =
 							q(39792),	-- A Stack of Racks
 							q(42483),	-- Put It All on Red
 						}),
-						sz(10668,18, { -- Tideskorn Harbor
+						sz(10668,18, {	-- Tideskorn Harbor
 							q(39984),	-- Remnants of the Past
 							q(40046),	-- Scavenging the Shallows
 							q(43595),	-- To Honor the Fallen
-							q(40044,  {  -- Shadows in the Mists
+							q(40044,  { 	-- Shadows in the Mists
 								i(129350),
 								i(132773),
 								i(132772),
 								i(132771),
 								i(132770),
 							}),
-							q(43596,  {  -- Piercing the Mists - Dungeon
+							q(43596,  { 	-- Piercing the Mists - Dungeon
 								i(140618),
 								i(140619),
 								i(140620),
@@ -1479,10 +1479,10 @@ _.Zones =
 	
 						}),
 						--I don't know where these quests belong. My Horde toons haven't done anything in Legion yet.
-						qh(38317,  {  -- Masters of Disguise -  listed on Wowhead as neutral, but turns in to a Horde NPC
-							i(129093), -- Ravenbear Disguise
+						qh(38317,  { 	-- Masters of Disguise -  listed on Wowhead as neutral, but turns in to a Horde NPC
+							i(129093),	-- Ravenbear Disguise
 						}),
-						qh(38358,  {  -- Pump it Up
+						qh(38358,  { 	-- Pump it Up
 							i(134554),
 							i(134555),
 							i(134556),
@@ -1492,11 +1492,11 @@ _.Zones =
 							i(134560),
 							i(134561),
 						}),
-						n(-38, { -- Professions
-							n(-181, { -- Blacksmithing
+						n(-38, {	-- Professions
+							n(-181, {	-- Blacksmithing
 								{	-- Work Order: Leystone Breastplate
 									["questID"] = 41636,	-- Work Order: Leystone Breastplate
-									["qg"] = 106904, -- Valdemar Stormseeker
+									["qg"] = 106904,	-- Valdemar Stormseeker
 									["g"] = {
 										{	-- Recipe: Leystone Breastplate [Rank 3]
 											["itemID"] = 123939,	-- Recipe: Leystone Breastplate [Rank 3]
@@ -1504,10 +1504,10 @@ _.Zones =
 									},
 								},
 							}),
-							n(-183, { -- Engineering
+							n(-183, {	-- Engineering
 								{	-- Work Order: Gunpack
 									["questID"] = 41678,	-- Work Order: Gunpack
-									["qg"] = 106904, -- Valdemar Stormseeker
+									["qg"] = 106904,	-- Valdemar Stormseeker
 									["g"] = {
 										{	-- Schematic: Gunpack [Rank 3]
 											["itemID"] = 137722,	-- Schematic: Gunpack [Rank 3]
@@ -1515,7 +1515,7 @@ _.Zones =
 									},
 								},
 							}),
-							n(-185, { -- Inscription
+							n(-185, {	-- Inscription
 								["groups"] = {
 									q(40052, {	-- Ancient Vrykul Mastered
 										["qg"] = 97748,	-- Nicholo Swiftfuse
@@ -1680,7 +1680,7 @@ _.Zones =
 					SOON™
 					--]]
 					q(44177, {	-- Dark Secrets and Shady Deals
-						["qg"] = 112959, -- Fleet Admiral Tethys
+						["qg"] = 112959,	-- Fleet Admiral Tethys
 						["classes"] = { 4 },
 					}),
 					{	-- Halls of Valor: The Right Question
@@ -1693,13 +1693,13 @@ _.Zones =
 						["requireSkill"] = 197,	-- Tailoring
 					},
 					q(46340, {
-						["qg"] = 93628, -- Eyir
+						["qg"] = 93628,	-- Eyir
 					}),
 					q(40868, {	-- Wibbly-Wobbly, Timey-Wimey
 						["groups"] = {
 							sp(201602),	-- Schematic: Intra-Dalaran Wormhole Generator
 						},
-						["qg"] = 102198, -- Fargo Flintlocke
+						["qg"] = 102198,	-- Fargo Flintlocke
 						["requireSkill"] = 202,
 						["sourceQuests"] = {
 							40866,	-- The Shell, You Say?
@@ -1966,7 +1966,7 @@ _.Zones =
 --]]
 				}),
 				n(-2, { 	-- Vendors
-					n(98367, { -- Tigrid the Charmer <Enchantress>
+					n(98367, {	-- Tigrid the Charmer <Enchantress>
 						i(124440, {	-- Arkhana
 							i(128617),	-- Formula: Enchant Gloves - Legion Herbalism
 							i(128618),	-- Formula: Enchant Gloves - Legion Mining
@@ -1976,7 +1976,7 @@ _.Zones =
 							i(128622),	-- Formula: Enchanted Torch
 						}),
 					}),
-					n(90866, { -- Tinkmaster Overspark <Chief Architect of Gnomish Engineering>
+					n(90866, {	-- Tinkmaster Overspark <Chief Architect of Gnomish Engineering>
 						i(23799),	-- Schematic: Adamantite Rifle
 						i(23807),	-- Schematic: Adamantite Scope
 						i(23803),	-- Schematic: Cogspinner Goggles
@@ -1984,24 +1984,24 @@ _.Zones =
 						i(23805),	-- Schematic: Ultra-Spectropic Detection Goggles
 					}),
 					n(106904, {	-- Valdemar Stormseeker <Valarjar Emissary>
-						i(140656), -- Rod of the Ascended - Priest Artifact Appearance item
-						i(136698), -- Recipe: Consecrated Spike
-						i(123954), -- Recipe: Demonsteel Boots [Rank 3]
-						i(123951), -- Recipe: Demonsteel Greaves [Rank 3]
-						i(123952), -- Recipe: Demonsteel Helm [Rank 3]
-						i(129149), -- Death's Door Charm
-						i(139598), -- Legplates of Forgotten Myth
-						i(136920), -- Sunborn Val'kyr
-						i(139602), -- Valarjar Runepriest's Vesture
-						i(140579), -- Valarjar Tabard
-						i(129367), -- Vrykul Toy Boat Kit
+						i(140656),	-- Rod of the Ascended - Priest Artifact Appearance item
+						i(136698),	-- Recipe: Consecrated Spike
+						i(123954),	-- Recipe: Demonsteel Boots [Rank 3]
+						i(123951),	-- Recipe: Demonsteel Greaves [Rank 3]
+						i(123952),	-- Recipe: Demonsteel Helm [Rank 3]
+						i(129149),	-- Death's Door Charm
+						i(139598),	-- Legplates of Forgotten Myth
+						i(136920),	-- Sunborn Val'kyr
+						i(139602),	-- Valarjar Runepriest's Vesture
+						i(140579),	-- Valarjar Tabard
+						i(129367),	-- Vrykul Toy Boat Kit
 					}),
 				}),
 				n(-34, { 	-- World Quests
-					n(-322, { -- Cloak
-						i(134202), -- Stormsky Cloak
+					n(-322, {	-- Cloak
+						i(134202),	-- Stormsky Cloak
 					}),
-					n(-3242, { -- Bonespeaker Set
+					n(-3242, {	-- Bonespeaker Set
 						["groups"] = {
 							i(134216),	-- Bonespeaker Cowl
 							i(134221),	-- Bonespeaker Mantle
@@ -2014,7 +2014,7 @@ _.Zones =
 						},
 						["icon"] = "Interface\\Icons\\inv_helm_cloth_legionendgame_c_01",
 					}),
-					n(-3266, { -- Biornskin Set
+					n(-3266, {	-- Biornskin Set
 						["groups"] = {
 							i(134196),	-- Biornskin Hood
 							i(134198),	-- Biornskin Shoulderpads
@@ -2027,7 +2027,7 @@ _.Zones =
 						},
 						["icon"] = "Interface\\Icons\\inv_helm_leather_legionendgame_c_01",
 					}),
-					n(-3278, { -- Tideskorn Set
+					n(-3278, {	-- Tideskorn Set
 						["groups"] = {
 							i(134211),	-- Tideskorn Coif
 							i(134213),	-- Tideskorn Mantle
@@ -2040,7 +2040,7 @@ _.Zones =
 						},
 						["icon"] = "Interface\\Icons\\inv_helmet_mail_legionendgame_c_01",
 					}),
-					n(-3302, { -- Skoldiir Set
+					n(-3302, {	-- Skoldiir Set
 						["groups"] = {
 							i(134182),	-- Skoldiir Helm
 							i(134184),	-- Skoldiir Shoulderguards
@@ -2053,7 +2053,7 @@ _.Zones =
 						},
 						["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
 					}),
-					n(-3309, { -- Wardbreaker Set
+					n(-3309, {	-- Wardbreaker Set
 						["groups"] = {
 							i(136728),	-- Wardbreaker Helm
 							i(136730),	-- Wardbreaker Pauldrons
@@ -2099,42 +2099,42 @@ _.Zones =
 						i(141049),	-- Technique: Glyph of the Hook
 						i(141064),	-- Technique: Glyph of the Shivarra
 						i(141051),	-- Technique: Glyph of the Trident
-						i(141287, { -- Law of Strength
+						i(141287, {	-- Law of Strength
 							["groups"] = {
 							},
 							["bonusID"] = 1812,
 						}),
-						i(141286, { -- Rite of the Val'kyr
+						i(141286, {	-- Rite of the Val'kyr
 							["groups"] = {
 							},
 							["bonusID"] = 1812,
 						}),
-						i(121125, { -- Rune-Etched Bark
+						i(121125, {	-- Rune-Etched Bark
 							["groups"] = {
 							},
 							["bonusID"] = 1812,
 						}),
-						i(121124, { -- Stormforged Idol
+						i(121124, {	-- Stormforged Idol
 							["groups"] = {
 							},
 							["bonusID"] = 1812,
 						}),
-						i(121137, { -- Stormwing Band
+						i(121137, {	-- Stormwing Band
 							["groups"] = {
 							},
 							["bonusID"] = 1812,
 						}),
-						i(121138, { -- Stormwing Chain
+						i(121138, {	-- Stormwing Chain
 							["groups"] = {
 							},
 							["bonusID"] = 1812,
 						}),
-						i(121122, { -- Stormwing Drape
+						i(121122, {	-- Stormwing Drape
 							["groups"] = {
 							},
 							["bonusID"] = 1812,
 						}),
-						i(121126, { -- Stormwing Tail Tip
+						i(121126, {	-- Stormwing Tail Tip
 							["groups"] = {
 							},
 							["bonusID"] = 1812,
@@ -2489,6 +2489,7 @@ _.Zones =
 				635,	-- Shield's Rest
 				636,	-- Stormscale Cavern
 				637,	-- Thorignir Refuge
+				638,	-- Thorignir Refuge
 				639,	-- Aggramar's Vault
 				640,	-- Vault of Eyir
 			},
