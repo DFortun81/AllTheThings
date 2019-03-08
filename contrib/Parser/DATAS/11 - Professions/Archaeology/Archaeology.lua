@@ -192,8 +192,20 @@ profession(794, {	-- Archaeology
 	}),
 	currency(676,  {	-- Pandaren
 		n(-319, {	-- Weapons
-			sp(113981, { i(89685) }),	-- Spear of Xuen
-			sp(113980, { i(89684) }),	-- Umbrella of Chi-Ji
+			sp(113981, { 	-- Spear of Xuen
+				i(89685), 	-- Spear of Xuen
+			}),
+			sp(113980, { 	-- Umbrella of Chi-Ji
+				i(89684),  	-- Umbrella of Chi-Ji
+			}),	
+		}),
+		sp(113971, { -- Pandaren Game Board 
+			i(79897),	-- Pandaren Game Board 
+			i(85558),	-- Pristine Pandaren Game Board 
+		}),
+		sp(113968, { -- Pandaren Tea Set
+			i(79896),	-- Pandaren Tea Set
+			i(85557),	-- Pristine Pandaren Tea Set
 		}),
 	}),
 	currency(401,  {	-- Tol'vir

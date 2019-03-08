@@ -641,6 +641,11 @@ _.NeverImplemented =
 			un(1, i(109267)),	-- Unknown
 			un(1, i(109293)),	-- Unknown
 			un(1, i(109295)),	-- Unknown
+			un(1, i(31930)),	--Unknown
+			un(1, i(31931)),	--Unknown
+			un(1, i(31932)),	--Unknown
+			un(1, i(31933)),	--Unknown
+			un(1, i(31934)),	--Unknown
 		}),
 		filter(52, {	-- Finger
 			un(1, i(4988)),		-- Burning Obsidian Band
@@ -694,6 +699,7 @@ _.NeverImplemented =
 			un(1, i(20937)),	-- Unknown
 			un(1, i(156927)),	-- Great Hall Recall)
 		}),
+		un(1, i(79907)),	-- Spear of Xuen (Old Version)
 		un(1, spell(5169)),	-- defias disguise
 		un(1, i(45818)),	-- Unknown
 		un(1, i(46056)),	-- Unknown
