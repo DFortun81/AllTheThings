@@ -3,7 +3,9 @@
 ---------------------------------------------------------------------------
 _.NeverImplemented = 
 {   
-	n(-10052, { -- BFA - Stuff that might gets added later duo changes/hotfixes/patches and/or similar
+	n(-10052, { -- BFA - Stuff that might gets added later duo changes/hotfixes/patches and/or similar	
+		-- Future Emsembles!!
+		
 		-- Some of those Items are currently not possible to load ingame (BFA Items), but they might be with a new patch
 		un(1, i(161988)),	-- Tidespray Linen Cloak of the Feather
 		un(1, i(161991)),	-- Tidespray Linen Cloak of Resilience
@@ -514,6 +516,10 @@ _.NeverImplemented =
 				un(1, i(154044)), -- Oathsworn Defender Idol
 				un(1, i(154047)), -- Oathsworn Defender Stone
 			}),
+			un(1, i(166400)),	-- flaskzertaurens plate chestguards
+			un(1, i(166401)),	-- flaskzertaurens plate cuirass
+			un(1, i(166411)),	-- flaskzertaurens plate shoulderguards
+			un(1, i(166412)),	-- flaskzertaurens plate pauldrons
 			un(1, i(27718)),	-- Aldor Defender's Legplates
 			un(1, i(12106)),	-- Boulderskin Breastplate
 			un(1, i(25797)),	-- Crushing Grasp
