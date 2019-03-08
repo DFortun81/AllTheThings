@@ -29,6 +29,7 @@ _.Zones =
 									crit(1, {	-- Foothold in a Savage Land
 										{	-- The Home of the Frostwolves
 											["questID"] = 33868,
+											["sourceQuests"] = { 34446 },	-- The Home Stretch
 										},
 										{	-- A Song of Frost and Fire
 											["questID"] = 33815,
@@ -36,7 +37,7 @@ _.Zones =
 											["coord"] = { 40.7, 67.0, 525 },
 											["sourceQuests"] = { 33868 },	-- The Home of the Frostwolves
 										},
-										{	-- of Wolves and  Warriors
+										{	-- Of Wolves and  Warriors
 											["questID"] = 34402,
 											["qg"] = 78272,	-- Durotan
 											["coord"] = { 41.8, 69.6, 525 },
@@ -47,13 +48,13 @@ _.Zones =
 										{	-- Rally the Frostwolves
 											["questID"] = 34380,
 											["qg"] = 70860,	-- Durotan
-											["coord"] = { 20.7, 57.9, 526 },
+											["coord"] = { 20.7, 57.9, 525 },
 											["sourceQuest"] = 34379,	-- Den of Wolves
 										},
 										{	-- Gormaul Tower
 											["questID"] = 33784,
 											["qg"] = 76557,	-- Durotar
-											["coord"] = { 20.9, 57.9, 526 },
+											["coord"] = { 20.9, 57.9, 525 },
 											["sourceQuest"] = 34380,	-- Rally the Frostwolves
 											["groups"] = {
 												i(106168),	-- Frostwolf Ringmail Boots
@@ -68,7 +69,7 @@ _.Zones =
 												70860,	-- Durotan
 												76240,	-- Durotan
 											},
-											["coord"] = { 19.7, 44.7, 526 },
+											["coord"] = { 19.7, 44.7, 525 },
 											["sourceQuest"] = 33784,	-- Gormaul Tower
 										},
 										{	-- Deeds Left Undone
@@ -95,14 +96,14 @@ _.Zones =
 												i(106159),	-- Frostwolf Wind-Talker Gloves
 											},
 										},
-										{	-- Armed and Dangerous
-											["questID"] = 33344,
+										{	-- To the Slaughter
+											["questID"] = 33622,
 											["qg"] = 75186,	-- Thrall
 											["coord"] = { 70.7, 78.5, 527 },
 											["sourceQuest"] = 33410,	-- The Butcher of Bladespire
 										},
-										{	-- To the Slaughter
-											["questID"] = 33622,
+										{	-- Armed and Dangerous
+											["questID"] = 33344,
 											["qg"] = 75186,	-- Thrall
 											["coord"] = { 70.7, 78.5, 527 },
 											["sourceQuest"] = 33410,	-- The Butcher of Bladespire
@@ -684,6 +685,7 @@ _.Zones =
 								["qg"] = 75188,	-- Durotan
 								["coord"] = { 66.3, 56.5, 528 },
 								["races"] = HORDE_ONLY,
+								["sourceQuests"] = { 33527 },	-- Last Steps
 							},
 							{	-- Mulverick's Offer of Service
 								["questID"] = 34732,

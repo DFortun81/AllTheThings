@@ -817,7 +817,7 @@ _.PVP =
 				i(134783),	-- Seasoned Quickblade
 				i(134782),	-- Seasoned Pike
 				i(134803),	-- Seasoned Redoubt
-				i(134790),	-- Seasoned Staff
+				i(134790),	-- Seasoned Staff*
 				i(134776),	-- Seasoned Decapitator
 				i(134788),	-- Seasoned Distinction*
 			},

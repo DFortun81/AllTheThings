@@ -27,25 +27,25 @@ _.ExpansionFeatures =
 										i(111542),	-- Frostwolf Wind-Talker Cudgel
 									},
 									["qg"] = 70859,	-- Thrall
-									["coord"] = { 51.2, 43.2 },
+									["coord"] = { 51.2, 43.2, 590 },
 									["sourceQuest"] = 34402,	-- of Wolves and  Warriors
 								},
 								{	-- Back to Work
 									["questID"] = 34375,
 									["qg"] = 78466,	-- Gazlowe
-									["coord"] = { 51.2, 39.6 },
+									["coord"] = { 51.2, 39.6, 590 },
 									["sourceQuest"] = 34364,	-- For the Horde!
 								},
 								{	-- A Gronnling Problem
 									["questID"] = 34592,
 									["qg"] = 78466,	-- Gazlowe
-									["coord"] = { 51.2, 39.6 },
+									["coord"] = { 51.2, 39.6, 590 },
 									["sourceQuest"] = 34364,	-- For the Horde!
 								},
 								{	-- The Den of Skog
 									["questID"] = 34765,
 									["qg"] = 78466,	-- Gazlowe
-									["coord"] = { 51.2, 39.6 },
+									["coord"] = { 51.2, 39.6, 590 },
 									["sourceQuests"] = {
 										34592,	-- A Gronnling Problem
 										34375,	-- Back to Work
@@ -54,31 +54,31 @@ _.ExpansionFeatures =
 								{	-- Establish Your Garrison
 									["questID"] = 34378,
 									["qg"] = 78466,	-- Gazlowe
-									["coord"] = { 51.2, 39.6 },
+									["coord"] = { 51.2, 39.6, 590 },
 									["sourceQuest"] = 34765,	-- The Den of Skog
 								},
 								{	-- The Ogron Live?
 									["questID"] = 34823,
 									["qg"] = 78487,	-- Rokhan
-									["coord"] = { 51.2, 51.4 },
+									["coord"] = { 51.2, 51.4, 590 },
 									["sourceQuest"] = 34378,	-- Establish Your Garrison
 								},
 								{	-- What We Got
 									["questID"] = 34824,
 									["qg"] = 78466,	-- Gazlowe
-									["coord"] = { 52.4, 53.3 },
+									["coord"] = { 52.4, 53.3, 590 },
 									["sourceQuest"] = 34378,	-- Establish Your Garrison
 								},
 								{	-- What We Need
 									["questID"] = 34822,
 									["qg"] = 78466,	-- Gazlowe
-									["coord"] = { 52.4, 53.3 },
+									["coord"] = { 52.4, 53.3, 590 },
 									["sourceQuest"] = 34378,	-- Establish Your Garrison
 								},
 								{	-- Build Your Barracks
 									["questID"] = 34461,
 									["qg"] = 78466,	-- Gazlowe
-									["coord"] = { 52.4, 53.3 },
+									["coord"] = { 52.4, 53.3, 590 },
 									["sourceQuests"] = {
 										34823,	-- The Ogron Live?
 										34824,	-- What We Got
@@ -88,14 +88,14 @@ _.ExpansionFeatures =
 								{	-- We Need An Army
 									["questID"] = 34861,
 									["qg"] = 78466,	-- Gazlowe
-									["coord"] = { 57.4, 48.3 },
+									["coord"] = { 57.4, 48.3, 590 },
 									["sourceQuest"] = 34461,	-- Build Your Barracks
 								},
 								{	-- Winds of Change
 									["questID"] = 34462,
 									["qg"] = 79740,	-- Warmaster Zog
-									["coord"] = { 53.9, 54.9 },
-									["sourceQuest"] = 34861,	-- We Need An Army
+									["coord"] = { 53.9, 54.9, 590 },
+									["sourceQuest"] = 78466,	-- Build Your Barracks
 									["groups"] = {
 										follower(34),	-- Olin Umberhide
 									},
@@ -103,7 +103,7 @@ _.ExpansionFeatures =
 								{	-- Mission Probable
 									["questID"] = 34775,
 									["qg"] = 79740,	-- Warmaster Zog
-									["coord"] = { 53.9, 54.9 },
+									["coord"] = { 53.9, 54.9, 590 },
 									["sourceQuest"] = 34462,	-- Winds of Change
 								},
 							}),
@@ -236,7 +236,7 @@ _.ExpansionFeatures =
 							["requireSkill"] = 356,	-- Fishing
 						},
 					}),
-					garrisonBuilding(36, {	-- Frostwall Tavern (rank 1: 34, rank 2: 35, rank 3: 36)
+					garrisonBuilding(36,  {	-- Frostwall Tavern (rank 1: 34, rank 2: 35, rank 3: 36)
 						desc(i(119036, {	-- Box of Storied Treasures [4]
 							i(109957),	-- Alc's Pendant of Fiery Dreams
 							i(109779),	-- Ancient Draenic Loop
@@ -1608,7 +1608,7 @@ _.ExpansionFeatures =
 							["qg"] = 79829,	-- Urgra
 						},
 					}),
-					garrisonBuilding(67, {	-- Stables (rank 1: 65, rank 2: 66, rank 3: 67)
+					garrisonBuilding(67,  {	-- Stables (rank 1: 65, rank 2: 66, rank 3: 67)
 						{	-- Besting a Boar
 							["questID"] = 36944,
 							["qg"] = 86979,	-- Tormak the Scarred
@@ -1999,7 +1999,7 @@ _.ExpansionFeatures =
 							})),
 						}),
 					}),
-					garrisonBuilding(10, {	-- War Mill (rank 1: 8, rank 2: 9, rank 3: 10)
+					garrisonBuilding(10,  {	-- War Mill (rank 1: 8, rank 2: 9, rank 3: 10)
 						{	-- Scraps of Iron
 							["questID"] = 37043,
 							["qg"] = 79815,	-- Gun'lek
@@ -2716,6 +2716,8 @@ _.ExpansionFeatures =
 						["qg"] = 79252,	-- Cordana Felsong
 						["coord"] = { 49.4, 36.5, 590 },
 						["races"] = HORDE_ONLY,
+						["sourceQuests"] = { 34378 },	-- Establish Your Garrison
+						-- Not required to turn quest in, just fulfill its requirements.
 					},
 				}),			
 			},
