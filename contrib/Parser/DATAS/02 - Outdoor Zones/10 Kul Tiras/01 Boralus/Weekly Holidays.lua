@@ -601,6 +601,10 @@ _.Zones =
 											["itemID"] = 161703,	-- Dread Gladiator's Bonegrinder
 											["u"] = 2, 
 										},
+										{	-- Dread Gladiator's Cleaver
+											["itemID"] = 166334,	-- Dread Gladiator's Cleaver
+											["u"] = 2,
+										},
 										{	-- Dread Gladiator's Gavel
 											["itemID"] = 161683,	-- Dread Gladiator's Gavel
 											["u"] = 2, 

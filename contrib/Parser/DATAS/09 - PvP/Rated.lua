@@ -117,6 +117,9 @@ _.PVP =
 					{	-- Dread Gladiator's Cleaver
 						["itemID"] = 161679,	-- Dread Gladiator's Cleaver
 					},
+					{	-- Dread Gladiator's Cleaver
+						["itemID"] = 166334,	-- Dread Gladiator's Cleaver
+					},
 					{	-- Dread Gladiator's Decapitator
 						["itemID"] = 161690,	-- Dread Gladiator's Decapitator
 					},
