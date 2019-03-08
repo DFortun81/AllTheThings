@@ -221,6 +221,10 @@ _.Zones =
 								qh(9888, {	-- The Impotent Leader
 									["qg"] = 18106,	-- Jorin Deadeye
 									["coord"] = { 55.6, 37.6, 107 },
+									["sourceQuests"] = {
+										9797,	-- Reinforcements for Garadar
+										39196,	-- Warchief's Command: Nagrand!
+									},
 								}),
 								qh(9889, {	-- Don't Kill the Fat One
 									["qg"] = 18273,	-- Kilrath

@@ -44,12 +44,14 @@ _.Zones =
 			q(49536),	-- Warchief's Command: Storm Peaks!
 			q(28532),	-- Warchief's Command: Stonetalon Mountains!
 			q(28509),	-- Warchief's Command: Tanaris!
+			q(39182),	-- Warchief's Command: Terokkar Forest!
 			q(28504),	-- Warchief's Command: Thousand Needles!
 			q(28717),	-- Warchief's Command: Twilight Highlands!
 			q(28557),	-- Warchief's Command: Uldum!
 			q(28526),	-- Warchief's Command: Un'Goro Crater!
 			q(27718),	-- Warchief's Command: Vashj'ir!
 			q(28545),	-- Warchief's Command: Winterspring!
+			q(39180),	-- Warchief's Command: Zangarmarsh!
 			q(49534),	-- Warchief's Command: Zul'Drak!
 		},
 		["description"] = "These can be obtained from any city or town.  Once you start questing in a zone then you can no longer pick these up.",
@@ -63,38 +65,40 @@ _.Zones =
 				ObjectID sources:
 					Darnasses: 207321
 			]]--
-			qa(29391),	-- Guardians of Hyjal: Call of the Ancients
-			qa(29387),	-- Guardians of Hyjal: Firelands Invasion!
-			qa(28492),	-- Hero's Call: Ashenvale! (breadcrumb quest for 13594, not available if 26408 is completed) (max level 23)
-			qa(28490),	-- Hero's Call: Darkshore! (breadcrumb quest for 13518, not available if 26383, 26385 are completed) (max level 13)
-			qa(39199),	-- Hero's Call: Blade's Edge Mountains!
-			qa(28709),	-- Hero's Call: Borean Tundra!
-			qa(27727),	-- Hero's Call: Deepholm! (breadcrumb quest for 27203) (max level 93)
-			qa(28531),	-- Hero's Call: Desolace! (breadcrumb quest for 14384, not available if 25938 is completed) (max level 33)
-			qa(28552),	-- Hero's Call: Dustwallow Marsh! (breadcrumb quest for 27210, not available if 26702 is completed) (max level 38)
-			qa(28543),	-- Hero's Call: Felwood! (breadcrumb quest for 27997) (max level 48)
-			qa(28511),	-- Hero's Call: Feralas! (breadcrumb quest for 25447, not available if 14410 is completed) (max level 38)
-			qa(39207),	-- Hero's Call: Grizzly Hills!
-			qa(49555),	-- Hero's Call: Icecrown!
-			qa(27726),	-- Hero's Call: Mount Hyjal! (max level 100)
-			qa(39202),	-- Hero's Call: Netherstorm!
-			qa(28709),	-- Hero's Call: Northrend! (breadcrumb quest for 11672) (max level 78)
-			qa(28708),	-- Hero's Call: Outland!(breadcrumb quest for 10288) (max level 68)
-			qa(49550),	-- Hero's Call: Shadowmoon Valley!
-			qa(49553),	-- Hero's Call: Sholazar Basin!
-			qa(28528),	-- Hero's Call: Silithus! (breadcrumb quest for 8280, not available if 28859,28856,28527 are completed) (max level 58)
-			qa(28550),	-- Hero's Call: Southern Barrens! (breadcrumb quest for 24862) (max level 33)
-			qa(49554),	-- Hero's Call: Storm Peaks!
-			qa(28539), 	-- Hero's Call: Stonetalon Mountains!  (max level 28)
-			qa(28507),	-- Hero's Call: Tanaris! (breadcrumb quest for 25048, not available if 27446 is completed) (max level 48)
-			qa(28503),	-- Hero's Call: Thousand Needles! (breadcrumb quest for 25486, not available if 25479,25481 are completed) (max level 43)
-			qa(28716),	-- Hero's Call: Twilight Highlands! (breadcrumb quest for 26960) (max level 93)
-			qa(28558),	-- Hero's Call: Uldum! (breadcrumb quest for 27003, not available if 28295 is completed) (max level 100)
-			qa(28525),	-- Hero's Call: Un'Goro Crater! (breadcrumb quest for 24740, not available if 24911 is completed) (max level 53)
-			qa(27724),	-- Hero's Call: Vashj'ir! (breadcrumb quest for 14482, not available if 28827,14481 are completed) (max level 100)
-			qa(28544),	-- Hero's Call: Winterspring! (breadcrumb quest for ???, not available if 28524,28545,28768 are completed) (max level 53)
-			qa(49552),	-- Hero's Call: Zul'Drak!
-			qa(29156),	-- The Troll Incursion
+			q(29391),	-- Guardians of Hyjal: Call of the Ancients
+			q(29387),	-- Guardians of Hyjal: Firelands Invasion!
+			q(28492),	-- Hero's Call: Ashenvale! (breadcrumb quest for 13594, not available if 26408 is completed) (max level 23)
+			q(28490),	-- Hero's Call: Darkshore! (breadcrumb quest for 13518, not available if 26383, 26385 are completed) (max level 13)
+			q(39199),	-- Hero's Call: Blade's Edge Mountains!
+			q(28709),	-- Hero's Call: Borean Tundra!
+			q(27727),	-- Hero's Call: Deepholm! (breadcrumb quest for 27203) (max level 93)
+			q(28531),	-- Hero's Call: Desolace! (breadcrumb quest for 14384, not available if 25938 is completed) (max level 33)
+			q(28552),	-- Hero's Call: Dustwallow Marsh! (breadcrumb quest for 27210, not available if 26702 is completed) (max level 38)
+			q(28543),	-- Hero's Call: Felwood! (breadcrumb quest for 27997) (max level 48)
+			q(28511),	-- Hero's Call: Feralas! (breadcrumb quest for 25447, not available if 14410 is completed) (max level 38)
+			q(39207),	-- Hero's Call: Grizzly Hills!
+			q(49555),	-- Hero's Call: Icecrown!
+			q(27726),	-- Hero's Call: Mount Hyjal! (max level 100)
+			q(39202),	-- Hero's Call: Netherstorm!
+			q(28709),	-- Hero's Call: Northrend! (breadcrumb quest for 11672) (max level 78)
+			q(28708),	-- Hero's Call: Outland!(breadcrumb quest for 10288) (max level 68)
+			q(49550),	-- Hero's Call: Shadowmoon Valley!
+			q(49553),	-- Hero's Call: Sholazar Basin!
+			q(28528),	-- Hero's Call: Silithus! (breadcrumb quest for 8280, not available if 28859,28856,28527 are completed) (max level 58)
+			q(28550),	-- Hero's Call: Southern Barrens! (breadcrumb quest for 24862) (max level 33)
+			q(49554),	-- Hero's Call: Storm Peaks!
+			q(28539), 	-- Hero's Call: Stonetalon Mountains!  (max level 28)
+			q(28507),	-- Hero's Call: Tanaris! (breadcrumb quest for 25048, not available if 27446 is completed) (max level 48)
+			q(39188),	-- Hero's Call: Terokkar Forest!
+			q(28503),	-- Hero's Call: Thousand Needles! (breadcrumb quest for 25486, not available if 25479,25481 are completed) (max level 43)
+			q(28716),	-- Hero's Call: Twilight Highlands! (breadcrumb quest for 26960) (max level 93)
+			q(28558),	-- Hero's Call: Uldum! (breadcrumb quest for 27003, not available if 28295 is completed) (max level 100)
+			q(28525),	-- Hero's Call: Un'Goro Crater! (breadcrumb quest for 24740, not available if 24911 is completed) (max level 53)
+			q(27724),	-- Hero's Call: Vashj'ir! (breadcrumb quest for 14482, not available if 28827,14481 are completed) (max level 100)
+			q(28544),	-- Hero's Call: Winterspring! (breadcrumb quest for ???, not available if 28524,28545,28768 are completed) (max level 53)
+			q(39181),	-- Hero's Call: Zangarmarsh!
+			q(49552),	-- Hero's Call: Zul'Drak!
+			q(29156),	-- The Troll Incursion
 			--
 			qa(26365, { 		-- Hero's Call: Redridge Mountains! (add'l QG 29611)
 				["groups"] = {

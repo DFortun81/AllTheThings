@@ -245,15 +245,20 @@ _.Zones =
 						["coord"] = { 51.8, 56.8, 107 },
 						["sourceQuests"] = { 10252 }	-- Vision of the Dead
 					}),
+					qh(9993, {	-- Olemba Seed Oil
+						["qg"] = 18358,	-- Rakoria
+						["coord"] = { 50.1, 44.9, 107 },
+						["sourceQuests"] = { 
+							10105,	-- News for Rakoria
+							9796,	-- News from Zangarmarsh
+						},
+					}),
 --[[					
 					qh( 10027),	-- Magical Disturbances
 					qa( 10026),	-- Magical Disturbances
 					q(10852),	-- Missing Friends
 					q(10918),	-- More Feathers
-					q(11006),	-- More Shadow Dust
-					qh( 10105),	-- News for Rakoria
-					qh(  9796),	-- News from Zangarmarsh
-					qh(  9993),	-- Olemba Seed Oil
+					q(11006),	-- More Shadow Dust					
 					qa(  9992),	-- Olemba Seeds
 					qh( 10023),	-- Patriarch Ironjaw
 					qa( 11882),	-- Playing with Fire
@@ -304,7 +309,11 @@ _.Zones =
 					qa(11505),	-- Spirits of Auchindoun
 					q(  9968, {	-- Strange Energy
 						["qg"] = 18446,	-- Earthbinder Tavgren
-						["sourceQuests"] = { 9957 },	-- What's Wrong at Cenarion Thicket?
+						["sourceQuests"] = { 
+							9957,	-- What's Wrong at Cenarion Thicket?
+							39182,	-- Warchief's Command: Terokkar Forest!
+							39188,	-- Hero's Call: Terokkar Forest!
+						},
 					}),
 					qa(  9986),	-- Stymying the Arakkoa
 					qh(  9987),	-- Stymying the Arakkoa
