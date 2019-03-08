@@ -36,20 +36,21 @@ _.Zones =
 								},
 							}),
 							qa(31981, {	-- Exceeding Expectations
-								["qg"] = 66557,	-- Bloodknight Antari
+								["qg"] = 66557,	-- Bloodknight Antari <Grand Master Pet Tamer>
 								["sourceQuests"] = { 31920 }	-- Grand Master Antari
 							}),
 							qh(31982, {	-- Exceeding Expectations
-								["qg"] = 66557,	-- Bloodknight Antari
+								["qg"] = 66557,	-- Bloodknight Antari <Grand Master Pet Tamer>
 								["sourceQuests"] = { 31920 }
 							}),						
 							q(31926, { 	-- Grand Master Antari
-								["isDaily"] = true,
-								["qg"] = 66557,	-- Bloodknight Antari
-								["sourceQuests"] = { 31920 },	-- Grand Master Antari
 								["groups"] = {
 									i(89125)	-- Sack of Pet Supplies
 								},
+								["qg"] = 66557,	-- Bloodknight Antari <Grand Master Pet Tamer>
+								["coord"] = { 30.6, 41.8, 104 },
+								["sourceQuests"] = { 31920 },	-- Grand Master Antari
+								["isDaily"] = true,					
 							}),
 						},
 					},

@@ -24,7 +24,6 @@ _.Zones =
 								["crs"] = { 61141 },	-- Prairie Dog
 								["speciesID"] = 386,	-- Prairie Dog
 							},
-
 							{	-- Rat
 								["crs"] = { 61366 },	-- Rat
 								["speciesID"] = 417,	-- Rat
@@ -38,11 +37,13 @@ _.Zones =
 								["speciesID"] = 420,	-- Toad
 							},
 							q(31924, { 	-- Narrok
-								["isDaily"] = true,
-								["qg"] = 66552,	-- Narrok <Master Pet Tamer>
 								["groups"] = {
 									i(89125)	-- Sack of Pet Supplies
 								},
+								["qg"] = 66552,	-- Narrok <Master Pet Tamer>
+								["coord"] = { 61.0, 49.4, 107 },
+								["isDaily"] = true,
+								
 							}),
 						},
 					},
