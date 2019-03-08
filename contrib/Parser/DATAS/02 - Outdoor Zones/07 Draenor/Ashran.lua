@@ -2004,6 +2004,49 @@ _.Zones =
 							un(2, i(125758)),	-- Wild Gladiator's mail helm
 							un(2, i(125759)),	-- Wild Gladiator's mail leggings
 							un(2, i(125760)),	-- Wild Gladiator's mail spaulders
+							-- Season 2 Leather
+							un(2, i(125656)),	-- wild Gladiator's dragonhide gloves
+							un(2, i(125657)),	-- wild Gladiator's dragonhide helm
+							un(2, i(125658)),	-- wild Gladiator's dragonhide legguards
+							un(2, i(125659)),	-- wild Gladiator's dragonhide robes
+							un(2, i(125660)),	-- wild Gladiator's dragonhide spaulders
+							un(2, i(125661)),	-- wild Gladiator's kodohide belt
+							un(2, i(125662)),	-- wild Gladiator's kodohide footguards
+							un(2, i(125663)),	-- wild Gladiator's kodohide gloves
+							un(2, i(125664)),	-- wild Gladiator's kodohide helm
+							un(2, i(125665)),	-- wild Gladiator's kodohide legguards
+							un(2, i(125666)),	-- wild Gladiator's kodohide robes
+							un(2, i(125667)),	-- wild Gladiator's kodohide spaulders
+							un(2, i(125669)),	-- wild Gladiator's wyrmhide belt
+							un(2, i(125670)),	-- wild Gladiator's wyrmhide footguards
+							un(2, i(125671)),	-- wild Gladiator's wyrmhide gloves
+							un(2, i(125672)),	-- wild Gladiator's wyrmhide helm
+							un(2, i(125673)),	-- wild Gladiator's wyrmhide legguards
+							un(2, i(125674)),	-- wild Gladiator's wyrmhide robes
+							un(2, i(125675)),	-- wild Gladiator's wyrmhide spaulders
+							un(2, i(125694)),	-- wild Gladiator's ironskin waistband
+							un(2, i(125695)),	-- wild Gladiator's ironskin boosts
+							un(2, i(125696)),	-- wild Gladiator's ironskin gloves
+							un(2, i(125697)),	-- wild Gladiator's ironskin helm
+							un(2, i(125698)),	-- wild Gladiator's ironskin legguards
+							un(2, i(125699)),	-- wild Gladiator's ironskin spaulders
+							un(2, i(125700)),	-- wild Gladiator's ironskin tunic
+							un(2, i(125701)),	-- wild Gladiator's copperskin gloves
+							un(2, i(125702)),	-- wild Gladiator's copperskin helm
+							un(2, i(125703)),	-- wild Gladiator's copperskin legguards
+							un(2, i(125704)),	-- wild Gladiator's copperskin spaulders
+							un(2, i(125705)),	-- wild Gladiator's copperskin tunic
+							un(2, i(125735)),	-- wild Gladiator's leather waistband
+							un(2, i(125736)),	-- wild Gladiator's leather boosts
+							un(2, i(125737)),	-- wild Gladiator's leather tunic
+							un(2, i(125738)),	-- wild Gladiator's leather gloves
+							un(2, i(125739)),	-- wild Gladiator's leather helm
+							un(2, i(125740)),	-- wild Gladiator's leather legguards
+							un(2, i(125741)),	-- wild Gladiator's leather spaulders
+							un(2, i(125780)),	-- wild Gladiator's copperskin boots
+							un(2, i(125781)),	-- wild Gladiator's copperskin waistband
+							un(2, i(125784)),	-- wild Gladiator's dragonhide footguards
+							un(2, i(125785)),	-- wild Gladiator's dragonhide belt
 							-- Season 3 Cloth
 							un(2, i(126752)),	-- warmongering Gladiator's silk cord
 							un(2, i(126753)),	-- warmongering Gladiator's felweave cord
@@ -2340,6 +2383,49 @@ _.Zones =
 							un(2, i(125758)),	-- Wild Gladiator's mail helm
 							un(2, i(125759)),	-- Wild Gladiator's mail leggings
 							un(2, i(125760)),	-- Wild Gladiator's mail spaulders
+							-- Season 2 Leather
+							un(2, i(125656)),	-- wild Gladiator's dragonhide gloves
+							un(2, i(125657)),	-- wild Gladiator's dragonhide helm
+							un(2, i(125658)),	-- wild Gladiator's dragonhide legguards
+							un(2, i(125659)),	-- wild Gladiator's dragonhide robes
+							un(2, i(125660)),	-- wild Gladiator's dragonhide spaulders
+							un(2, i(125661)),	-- wild Gladiator's kodohide belt
+							un(2, i(125662)),	-- wild Gladiator's kodohide footguards
+							un(2, i(125663)),	-- wild Gladiator's kodohide gloves
+							un(2, i(125664)),	-- wild Gladiator's kodohide helm
+							un(2, i(125665)),	-- wild Gladiator's kodohide legguards
+							un(2, i(125666)),	-- wild Gladiator's kodohide robes
+							un(2, i(125667)),	-- wild Gladiator's kodohide spaulders
+							un(2, i(125669)),	-- wild Gladiator's wyrmhide belt
+							un(2, i(125670)),	-- wild Gladiator's wyrmhide footguards
+							un(2, i(125671)),	-- wild Gladiator's wyrmhide gloves
+							un(2, i(125672)),	-- wild Gladiator's wyrmhide helm
+							un(2, i(125673)),	-- wild Gladiator's wyrmhide legguards
+							un(2, i(125674)),	-- wild Gladiator's wyrmhide robes
+							un(2, i(125675)),	-- wild Gladiator's wyrmhide spaulders
+							un(2, i(125694)),	-- wild Gladiator's ironskin waistband
+							un(2, i(125695)),	-- wild Gladiator's ironskin boosts
+							un(2, i(125696)),	-- wild Gladiator's ironskin gloves
+							un(2, i(125697)),	-- wild Gladiator's ironskin helm
+							un(2, i(125698)),	-- wild Gladiator's ironskin legguards
+							un(2, i(125699)),	-- wild Gladiator's ironskin spaulders
+							un(2, i(125700)),	-- wild Gladiator's ironskin tunic
+							un(2, i(125701)),	-- wild Gladiator's copperskin gloves
+							un(2, i(125702)),	-- wild Gladiator's copperskin helm
+							un(2, i(125703)),	-- wild Gladiator's copperskin legguards
+							un(2, i(125704)),	-- wild Gladiator's copperskin spaulders
+							un(2, i(125705)),	-- wild Gladiator's copperskin tunic
+							un(2, i(125735)),	-- wild Gladiator's leather waistband
+							un(2, i(125736)),	-- wild Gladiator's leather boosts
+							un(2, i(125737)),	-- wild Gladiator's leather tunic
+							un(2, i(125738)),	-- wild Gladiator's leather gloves
+							un(2, i(125739)),	-- wild Gladiator's leather helm
+							un(2, i(125740)),	-- wild Gladiator's leather legguards
+							un(2, i(125741)),	-- wild Gladiator's leather spaulders
+							un(2, i(125780)),	-- wild Gladiator's copperskin boots
+							un(2, i(125781)),	-- wild Gladiator's copperskin waistband
+							un(2, i(125784)),	-- wild Gladiator's dragonhide footguards
+							un(2, i(125785)),	-- wild Gladiator's dragonhide belt
 							-- Season 3 Cloth
 							un(2, i(126752)),	-- warmongering Gladiator's silk cord
 							un(2, i(126753)),	-- warmongering Gladiator's felweave cord
