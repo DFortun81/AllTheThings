@@ -629,6 +629,12 @@ _.NeverImplemented =
 			un(1, i(18023)),	-- Blood Ruby Pendant
 			un(1, i(23058)),	-- Life Channeling Necklace
 			un(1, i(28043)),	-- Demon Stalker Pendant
+			un(1, i(108812)),	-- Unknown
+			un(1, i(108818)),	-- Unknown
+			un(1, i(108819)),	-- Unknown
+			un(1, i(109267)),	-- Unknown
+			un(1, i(109293)),	-- Unknown
+			un(1, i(109295)),	-- Unknown
 		}),
 		filter(52, {	-- Finger
 			un(1, i(4988)),		-- Burning Obsidian Band

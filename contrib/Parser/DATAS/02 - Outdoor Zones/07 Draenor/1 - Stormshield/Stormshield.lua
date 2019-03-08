@@ -1160,6 +1160,14 @@ _.Zones =
 						i(115768),	-- Primal Gladiator's Plate Helm
 						i(115769),	-- Primal Gladiator's Plate Legguards
 						i(115770),	-- Primal Gladiator's Plate Shoulders
+						un(2, i(115772)),	-- Primal Gladiator's Signet of Ruthlessness
+						un(2, i(115771)),	-- Primal Gladiator's Ring of Triumph
+						un(2, i(115747)),	-- Primal Gladiator's Signet of Accuracy
+						un(2, i(115746)),	-- Primal Gladiator's Signet of Cruelty
+						un(2, i(115665)),	-- Primal Gladiator's Band of Contemplation
+						un(2, i(115664)),	-- Primal Gladiator's Band of Meditation
+						un(2, i(115663)),	-- Primal Gladiator's Band of Victory
+						un(2, i(115662)),	-- Primal Gladiator's Band of Prowess
 					}),
 					n(87063, { 	-- Joao Calhandro <Inscription Recipes>
 						i(111923, {	-- Draenor Inscription **Teaches laughing tarot, ocean tarot, savage tarot, war paints, card of omens, research warbinders ink, secrets of draenor inscription, Warbinder's ink

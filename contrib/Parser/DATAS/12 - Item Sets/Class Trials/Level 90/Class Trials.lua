@@ -441,7 +441,7 @@ _.GearSets =
 							n(-9915, {	-- Disc / Holy
 								i(117230),	-- Communal Staff
 								i(117219),	-- Communal Hood
-							--	i(101178),	-- Communal Necklace
+								i(117221),	-- Communal Necklace
 							--	i(101173),	-- Communal Cloak of Wisdom
 								i(117227),	-- Communal Shoulderpads
 								i(117225),	-- Communal Vestments
@@ -459,7 +459,7 @@ _.GearSets =
 								i(117240),	-- Communal Stave
 							--	i(129379),	-- Communal Wand
 								i(117234),	-- Communal Cowl
-							--	i(101167),	-- Communal Medallion
+								i(117210),	-- Communal Medallion
 							--	i(101188),	-- Communal Cloak of Destruction
 								i(117237),	-- Communal Mantle
 								i(117236),	-- Communal Robe
@@ -481,7 +481,7 @@ _.GearSets =
 							i(117126),	-- Mountainsage Staff
 							--	i(101081),	-- Mountainsage Wand
 							--	i(101075),	-- Mountainsage Hood
-							--	i(101068),	-- Mountainsage Medallion
+								i(117111),	-- Mountainsage Medallion
 							--	i(101082),	-- Mountainsage Cloak of Destruction
 							--	i(101078),	-- Mountainsage Shoulderpads
 							--	i(101077),	-- Mountainsage Robe
@@ -502,7 +502,7 @@ _.GearSets =
 							i(117320),	-- Felsoul Staff
 							--	i(101275),	-- Felsoul Wand
 							--	i(101269),	-- Felsoul Cowl
-							--	i(101262),	-- Felsoul Medallion
+								i(117305),	-- Felsoul Medallion
 							--	i(101276),	-- Felsoul Cloak of Destruction
 							--	i(101272),	-- Felsoul Shoulderpads
 							--	i(101271),	-- Felsoul Robe
@@ -511,8 +511,8 @@ _.GearSets =
 							--	i(101273),	-- Felsoul Cord
 							--	i(101270),	-- Felsoul Leggings
 							--	i(101267),	-- Felsoul Sandals
-							--	i(101264),	-- Felsoul Band of Destruction
-							--	i(101265),	-- Felsoul Ring of Destruction
+							i(117307),	-- Felsoul Band of Destruction
+							i(117308),	-- Felsoul Ring of Destruction
 							i(117306),	-- Felsoul Idol of Destruction
 							i(117309),	-- Felsoul Stone of Destruction
 						},
@@ -524,7 +524,7 @@ _.GearSets =
 							i(117094),	-- Springrain Staff
 							n(-9926, { -- Balance
 								--	i(101016),	-- Springrain Headpiece
-								--	i(101037),	-- Springrain Necklace
+									i(117080),	-- Springrain Necklace
 								--	i(101042),	-- Springrain Cloak of Destruction
 								--	i(101018),	-- Springrain Spaulders
 								--	i(101013),	-- Springrain Tunic
@@ -541,7 +541,7 @@ _.GearSets =
 							n(-9925, { -- Feral
 								i(117075),	-- Springrain Spear
 								--	i(101030),	-- Springrain Helm
-								--	i(101008),	-- Springrain Choker
+									i(117051),	-- Springrain Choker
 								--	i(101007),	-- Springrain Cloak of Rage
 								--	i(101033),	-- Springrain Pauldrons
 								--	i(101027),	-- Springrain Vest
@@ -557,7 +557,7 @@ _.GearSets =
 							}),
 							n(-9927, { -- Restoration
 								--	i(101046),	-- Springrain Hood
-								--	i(101022),	-- Springrain Medallion
+									i(117065),	-- Springrain Medallion
 								--	i(101036),	-- Springrain Cloak of Wisdom
 								--	i(101048),	-- Springrain Shoulders
 								--	i(101043),	-- Springrain Jerkin
@@ -580,7 +580,7 @@ _.GearSets =
 							--	i(101214),	-- Lightdrinker Sword
 							i(117256),	-- Lightdrinker Shiv
 							--	i(101207),	-- Lightdrinker Hood
-							--	i(101199),	-- Lightdrinker Choker
+							i(117242),	-- Lightdrinker Choker
 							--	i(101198),	-- Lightdrinker Cloak of Rage
 							--	i(101209),	-- Lightdrinker Shoulders
 							--	i(101204),	-- Lightdrinker Jerkin
@@ -589,8 +589,8 @@ _.GearSets =
 							--	i(101210),	-- Lightdrinker Waistband
 							--	i(101208),	-- Lightdrinker Britches
 							--	i(101205),	-- Lightdrinker Boots
-							--	i(101201),	-- Lightdrinker Band of Onslaught
-							--	i(101202),	-- Lightdrinker Ring of Onslaught
+							i(117244),	-- Lightdrinker Band of Onslaught
+							i(117245),	-- Lightdrinker Ring of Onslaught
 							--	i(117243),	-- Lightdrinker Idol of Rage
 							--	i(117246),	-- Lightdrinker Stone of Rage
 						},
@@ -602,7 +602,7 @@ _.GearSets =
 							--	i(101112),	-- Mistdancer Sword
 							n(-9931, {	-- Brewmaster
 								i(117131),	-- Mistdancer Spire
-								--	i(101084),	-- Mistdancer Amulet
+								i(117127),	-- Mistdancer Amulet
 								--	i(101085),	-- Mistdancer Band of Stoicism
 								--	i(101086),	-- Mistdancer Ring of Stoicism
 								--	i(101089),	-- Mistdancer Defender Idol
@@ -610,7 +610,7 @@ _.GearSets =
 							}),
 							n(-9933, {	-- Mistweaver
 								--	i(101100),	-- Mistdancer Hood
-								--	i(101104),	-- Mistdancer Necklace
+								i(117147),	-- Mistdancer Necklace
 								--	i(101101),	-- Mistdancer Cloak of Wisdom
 								--	i(101108),	-- Mistdancer Shoulders
 								--	i(101119),	-- Mistdancer Jerkin
@@ -626,7 +626,7 @@ _.GearSets =
 							}),
 							n(-9932, {	-- Windwalker
 								--	i(101093),	-- Mistdancer Helm
-								--	i(101114),	-- Mistdancer Choker
+								i(117157),	-- Mistdancer Choker
 								--	i(101118),	-- Mistdancer Cloak of Rage
 								--	i(101095),	-- Mistdancer Pauldrons [Hidden Shoulders]
 								--	i(101090),	-- Mistdancer Vest
@@ -672,7 +672,7 @@ _.GearSets =
 							i(117295),	-- Streamtalker Slicers
 							n(-9939, { -- Elemental
 								i(117273),	-- Streamtalker Coif
-							--	i(101246),	-- Streamtalker Necklace
+								i(117289),	-- Streamtalker Necklace
 							--	i(101251),	-- Streamtalker Cloak of Destruction
 								i(117276),	-- Streamtalker Pauldrons
 								i(117270),	-- Streamtalker Tunic
@@ -688,7 +688,7 @@ _.GearSets =
 							}),
 							n(-9940, { -- Enhancement
 								i(117283),	-- Streamtalker Helm
-							--	i(101216),	-- Streamtalker Choker
+								i(117259),	-- Streamtalker Choker
 							--	i(101215),	-- Streamtalker Cloak of Rage
 								i(117285),	-- Streamtalker Shoulderguards
 								i(117280),	-- Streamtalker Chestguard
@@ -697,14 +697,14 @@ _.GearSets =
 								i(117286),	-- Streamtalker Waistguard
 								i(117284),	-- Streamtalker Legguards
 								i(117281),	-- Streamtalker Greaves
-							--	i(101218),	-- Streamtalker Band of Onslaught
-							--	i(101219),	-- Streamtalker Ring of Onslaught
+								i(117261),	-- Streamtalker Band of Onslaught
+								i(117262),	-- Streamtalker Ring of Onslaught
 								i(117263),	-- Streamtalker Stone of Rage
 								i(117260),	-- Streamtalker Idol of Rage
 							}),
 							n(-9941, { -- Restoration
 								i(117299),	-- Streamtalker Cowl
-							--	i(101221),	-- Streamtalker Medallion
+								i(117264),	-- Streamtalker Medallion
 							--	i(101245),	-- Streamtalker Cloak of Wisdom
 								i(117302),	-- Streamtalker Spaulders
 								i(117296),	-- Streamtalker Vest
@@ -713,8 +713,8 @@ _.GearSets =
 								i(117303),	-- Streamtalker Girdle
 								i(117300),	-- Streamtalker Leggings
 								i(117297),	-- Streamtalker Sabatons
-							--	i(101248),	-- Streamtalker Ring of Wisdom
-							--	i(101249),	-- Streamtalker Band of Wisdom
+								i(117291),	-- Streamtalker Ring of Wisdom
+								i(117292),	-- Streamtalker Band of Wisdom
 								i(117293),	-- Streamtalker Stone of Wisdom
 								i(117290),	-- Streamtalker Idol of Wisdom
 							}),
@@ -754,8 +754,8 @@ _.GearSets =
 								i(117208),	-- Sunsoul Waistband
 								i(117201),	-- Sunsoul Legguards
 								i(117198),	-- Sunsoul Greaves
-								--	i(101162),	-- Sunsoul Band of Stoicism
-								--	i(101161),	-- Sunsoul Ring of Stoicism
+								i(117205),	-- Sunsoul Band of Stoicism
+								i(117204),	-- Sunsoul Ring of Stoicism
 								--	i(101160),	-- Oathsworn Defender Idol
 								--	i(101163),	-- Oathsworn Defender Stone
 							}),
@@ -772,8 +772,8 @@ _.GearSets =
 								i(117169),	-- Sunsoul Girdle
 								i(117167),	-- Sunsoul Legplates
 								i(117164),	-- Sunsoul Sabatons
-								--	i(101150),	-- Sunsoul Band of Might
-								--	i(101149),	-- Sunsoul Ring of Might
+								i(117193),	-- Sunsoul Band of Might
+								i(117192),	-- Sunsoul Ring of Might
 								--	i(101151),	-- Sunsoul Stone of Battle
 								--	i(101152),	-- Sunsoul Idol of Battle
 							}),
@@ -789,7 +789,7 @@ _.GearSets =
 								i(117330),	-- Oathsworn Headchopper
 								i(117321),	-- Oathsworn Greataxe
 								--	i(101282),	-- Oathsworn Helm
-								--	i(117334),	-- Oathsworn Pendant
+								i(117334),	-- Oathsworn Pendant
 								--	i(101290),	-- Oathsworn Cloak of Battle
 								--	i(101284),	-- Oathsworn Pauldrons
 								--	i(101279),	-- Oathsworn Breastplate
@@ -798,8 +798,8 @@ _.GearSets =
 								--	i(101285),	-- Oathsworn Girdle
 								--	i(101283),	-- Oathsworn Legplates
 								--	i(101280),	-- Oathsworn Sabatons
-								--	i(101292),	-- Oathsworn Band of Might
-								--	i(101293),	-- Oathsworn Ring of Might
+								i(117335),	-- Oathsworn Band of Might
+								i(117336),	-- Oathsworn Ring of Might
 								--	i(101295),	-- Oathsworn Idol of Battle
 								--	i(101294),	-- Oathsworn Stone of Battle
 							}),
@@ -815,8 +815,8 @@ _.GearSets =
 								--	i(101308),	-- Oathsworn Waistband
 								--	i(101301),	-- Oathsworn Legguards
 								--	i(101298),	-- Oathsworn Greaves
-								--	i(101304),	-- Oathsworn Band of Stoicism
-								--	i(101305),	-- Oathsworn Ring of Stoicism
+								i(117347),	-- Oathsworn Band of Stoicism
+								i(117348),	-- Oathsworn Ring of Stoicism
 								--	i(101303),	-- Oathsworn Defender Idol
 								--	i(101306),	-- Oathsworn Defender Stone
 							}),
