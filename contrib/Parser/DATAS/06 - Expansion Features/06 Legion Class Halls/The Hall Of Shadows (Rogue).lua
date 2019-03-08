@@ -292,7 +292,10 @@ _.ExpansionFeatures =
 						}),
 					},
 					["lvl"] = 98,
-					["mapID"] = 626,
+					["maps"] = {
+						626,
+						740,	-- Shadowgore Citadel (Fangs of the Devourer Scenario)
+					},
 				}),
 		},
 		["icon"] = "Interface\\Icons\\achievement_level_110",
