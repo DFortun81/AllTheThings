@@ -217,6 +217,7 @@ _.Instances =
 										i(112490),	-- Petrified Pennyroyal Ring
 										i(112484),	-- Sorrowpath Signet
 										i(112476),	-- Rook's Unlucky Talisman
+										un(2, i(104931)),	-- Death Lotus Crossbow
 									})),
 									cr(72276, e(866, {	-- Norushen (Amalgam of Corruption)
 										["groups"] = {
@@ -495,6 +496,7 @@ _.Instances =
 										i(112827),	-- Pandaren Roofsprinters
 										i(112828),	-- Seal of the Forgotten Kings
 										i(112825),	-- Sigil of Rampage
+										un(2, i(105096)),	-- Immaculately Preserved Wand
 									})),
 									cr(71529, e(851, {	-- Thok the Bloodthirsty
 										{	-- The Underhold: Thok the Bloodthirsty
@@ -675,6 +677,7 @@ _.Instances =
 										i(112933),	-- Legplates of Unthinking Strife
 										i(112938),	-- Black Blood of Y'Shaarj
 										i(112924),	-- Curse of Hubris
+										un(2, i(105146)),	-- Xal'atoh, Desecrated Image of Gorehowl
 									})),
 								},
 							}),	
@@ -3812,6 +3815,10 @@ _.Instances =
 								i(112490),	-- Petrified Pennyroyal Ring
 								i(112484),	-- Sorrowpath Signet
 								i(112476),	-- Rook's Unlucky Talisman
+								un(2, i(104433)),	-- Death Lotus Crossbow
+								un(2, i(105429)),	-- Death Lotus Crossbow (WF)
+								un(2, i(104434)),	-- Softfoot's Last Resort
+								un(2, i(105430)),	-- Softfoot's Last Resort (WF)
 							})),
 							cr(72276, e(866, {	-- Norushen (Amalgam of Corruption)
 								["groups"] = {
@@ -4105,6 +4112,8 @@ _.Instances =
 								i(112817),	-- Seal of Sullen Fury
 								i(112815),	-- Frenzied Crystal of Rage
 								i(112792),	-- Vial of Living Corruption
+								un(2, i(104563)),	-- Kor'kron Hand Cannon
+								un(2, i(105559)),	-- Kor'kron Hand Cannon (WF)
 							})),
 							cr(71889, e(870, {	-- Spoils of Pandaria (Secured Stockpile of Pandaren Spoils)
 								{	-- Criss Cross

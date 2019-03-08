@@ -1250,6 +1250,9 @@ _.NeverImplemented =
 			un(1, i(164933)),	-- Sem'jin Beakblade Longrifle
 			un(1, i(165270)),	-- Unknown
 			un(1, i(165266)),	-- Unknown
+			un(1, i(108790)),	-- Unknown
+			un(1, i(109491)),	-- Unknown
+			un(1, i(109529)),	-- Unknown
 			un(1, i(64824)),	-- Bloodthirsty Gladiator's Rifle (Epic BG item never made it out of beta))
 			
 		}),
