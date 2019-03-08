@@ -1903,6 +1903,49 @@ _.Zones =
 							un(2, i(115944)),	-- Primal Gladiator's mail helm
 							un(2, i(115945)),	-- Primal Gladiator's mail leggings
 							un(2, i(115946)),	-- Primal Gladiator's mail spaulders
+							-- Season 1 Leather
+							un(2, i(115842)),	-- Primal Gladiator's dragonhide gloves
+							un(2, i(115843)),	-- Primal Gladiator's dragonhide helm
+							un(2, i(115844)),	-- Primal Gladiator's dragonhide legguards
+							un(2, i(115845)),	-- Primal Gladiator's dragonhide robes
+							un(2, i(115846)),	-- Primal Gladiator's dragonhide spaulders
+							un(2, i(115847)),	-- Primal Gladiator's kodohide belt
+							un(2, i(115848)),	-- Primal Gladiator's kodohide footguards
+							un(2, i(115849)),	-- Primal Gladiator's kodohide gloves
+							un(2, i(115850)),	-- Primal Gladiator's kodohide helm
+							un(2, i(115851)),	-- Primal Gladiator's kodohide legguards
+							un(2, i(115852)),	-- Primal Gladiator's kodohide robes
+							un(2, i(115853)),	-- Primal Gladiator's kodohide spaulders
+							un(2, i(115855)),	-- Primal Gladiator's wyrmhide belt
+							un(2, i(115856)),	-- Primal Gladiator's wyrmhide footguards
+							un(2, i(115857)),	-- Primal Gladiator's wyrmhide gloves
+							un(2, i(115858)),	-- Primal Gladiator's wyrmhide helm
+							un(2, i(115859)),	-- Primal Gladiator's wyrmhide legguards
+							un(2, i(115860)),	-- Primal Gladiator's wyrmhide robes
+							un(2, i(115861)),	-- Primal Gladiator's wyrmhide spaulders
+							un(2, i(115880)),	-- Primal Gladiator's ironskin waistband
+							un(2, i(115881)),	-- Primal Gladiator's ironskin boosts
+							un(2, i(115882)),	-- Primal Gladiator's ironskin gloves
+							un(2, i(115883)),	-- Primal Gladiator's ironskin helm
+							un(2, i(115884)),	-- Primal Gladiator's ironskin legguards
+							un(2, i(115885)),	-- Primal Gladiator's ironskin spaulders
+							un(2, i(115886)),	-- Primal Gladiator's ironskin tunic
+							un(2, i(115887)),	-- Primal Gladiator's copperskin gloves
+							un(2, i(115888)),	-- Primal Gladiator's copperskin helm
+							un(2, i(115889)),	-- Primal Gladiator's copperskin legguards
+							un(2, i(115890)),	-- Primal Gladiator's copperskin spaulders
+							un(2, i(115891)),	-- Primal Gladiator's copperskin tunic
+							un(2, i(115921)),	-- Primal Gladiator's leather waistband
+							un(2, i(115922)),	-- Primal Gladiator's leather boosts
+							un(2, i(115923)),	-- Primal Gladiator's leather tunic
+							un(2, i(115924)),	-- Primal Gladiator's leather gloves
+							un(2, i(115925)),	-- Primal Gladiator's leather helm
+							un(2, i(115926)),	-- Primal Gladiator's leather legguards
+							un(2, i(115927)),	-- Primal Gladiator's leather spaulders
+							un(2, i(115966)),	-- Primal Gladiator's copperskin boots
+							un(2, i(115967)),	-- Primal Gladiator's copperskin waistband
+							un(2, i(115970)),	-- Primal Gladiator's dragonhide footguards
+							un(2, i(115971)),	-- Primal Gladiator's dragonhide belt
 							-- Season 2 Cloth
 							un(2, i(125638)),	-- wild Gladiator's silk cord
 							un(2, i(125639)),	-- wild Gladiator's felweave cord
@@ -2196,6 +2239,49 @@ _.Zones =
 							un(2, i(115944)),	-- Primal Gladiator's mail helm
 							un(2, i(115945)),	-- Primal Gladiator's mail leggings
 							un(2, i(115946)),	-- Primal Gladiator's mail spaulders
+							-- Season 1 Leather
+							un(2, i(115842)),	-- Primal Gladiator's dragonhide gloves
+							un(2, i(115843)),	-- Primal Gladiator's dragonhide helm
+							un(2, i(115844)),	-- Primal Gladiator's dragonhide legguards
+							un(2, i(115845)),	-- Primal Gladiator's dragonhide robes
+							un(2, i(115846)),	-- Primal Gladiator's dragonhide spaulders
+							un(2, i(115847)),	-- Primal Gladiator's kodohide belt
+							un(2, i(115848)),	-- Primal Gladiator's kodohide footguards
+							un(2, i(115849)),	-- Primal Gladiator's kodohide gloves
+							un(2, i(115850)),	-- Primal Gladiator's kodohide helm
+							un(2, i(115851)),	-- Primal Gladiator's kodohide legguards
+							un(2, i(115852)),	-- Primal Gladiator's kodohide robes
+							un(2, i(115853)),	-- Primal Gladiator's kodohide spaulders
+							un(2, i(115855)),	-- Primal Gladiator's wyrmhide belt
+							un(2, i(115856)),	-- Primal Gladiator's wyrmhide footguards
+							un(2, i(115857)),	-- Primal Gladiator's wyrmhide gloves
+							un(2, i(115858)),	-- Primal Gladiator's wyrmhide helm
+							un(2, i(115859)),	-- Primal Gladiator's wyrmhide legguards
+							un(2, i(115860)),	-- Primal Gladiator's wyrmhide robes
+							un(2, i(115861)),	-- Primal Gladiator's wyrmhide spaulders
+							un(2, i(115880)),	-- Primal Gladiator's ironskin waistband
+							un(2, i(115881)),	-- Primal Gladiator's ironskin boosts
+							un(2, i(115882)),	-- Primal Gladiator's ironskin gloves
+							un(2, i(115883)),	-- Primal Gladiator's ironskin helm
+							un(2, i(115884)),	-- Primal Gladiator's ironskin legguards
+							un(2, i(115885)),	-- Primal Gladiator's ironskin spaulders
+							un(2, i(115886)),	-- Primal Gladiator's ironskin tunic
+							un(2, i(115887)),	-- Primal Gladiator's copperskin gloves
+							un(2, i(115888)),	-- Primal Gladiator's copperskin helm
+							un(2, i(115889)),	-- Primal Gladiator's copperskin legguards
+							un(2, i(115890)),	-- Primal Gladiator's copperskin spaulders
+							un(2, i(115891)),	-- Primal Gladiator's copperskin tunic
+							un(2, i(115921)),	-- Primal Gladiator's leather waistband
+							un(2, i(115922)),	-- Primal Gladiator's leather boosts
+							un(2, i(115923)),	-- Primal Gladiator's leather tunic
+							un(2, i(115924)),	-- Primal Gladiator's leather gloves
+							un(2, i(115925)),	-- Primal Gladiator's leather helm
+							un(2, i(115926)),	-- Primal Gladiator's leather legguards
+							un(2, i(115927)),	-- Primal Gladiator's leather spaulders
+							un(2, i(115966)),	-- Primal Gladiator's copperskin boots
+							un(2, i(115967)),	-- Primal Gladiator's copperskin waistband
+							un(2, i(115970)),	-- Primal Gladiator's dragonhide footguards
+							un(2, i(115971)),	-- Primal Gladiator's dragonhide belt
 							-- Season 2 Cloth
 							un(2, i(125638)),	-- wild Gladiator's silk cord
 							un(2, i(125639)),	-- wild Gladiator's felweave cord

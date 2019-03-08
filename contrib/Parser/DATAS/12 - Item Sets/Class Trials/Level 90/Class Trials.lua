@@ -450,8 +450,8 @@ _.GearSets =
 								i(117228),	-- Communal Cord
 								i(117220),	-- Communal Leggings
 								i(117217),	-- Communal Sandals
-							--	i(101180),	-- Communal Band of Wisdom
-							--	i(101181),	-- Communal Ring of Wisdom
+								i(117223),	-- Communal Band of Wisdom
+								i(117223),	-- Communal Ring of Wisdom
 								i(117222),	-- Communal Idol of Wisdom
 								i(117226),	-- Communal Stone of Wisdom
 							}),
@@ -468,8 +468,8 @@ _.GearSets =
 								i(117238),	-- Communal Sash
 								i(117235),	-- Communal Pants
 								i(117232),	-- Communal Boots
-							--	i(101169),	-- Communal Band of Destruction
-							--	i(101170),	-- Communal Ring of Destruction
+								i(117212),	-- Communal Band of Destruction
+								i(117213),	-- Communal Ring of Destruction
 								i(117211),	-- Communal Idol of Destruction
 								i(117214),	-- Communal Stone of Destruction
 							}),
@@ -523,16 +523,16 @@ _.GearSets =
 							i(117062),	-- Springrain Stave
 							i(117094),	-- Springrain Staff
 							n(-9926, { -- Balance
-								--	i(101016),	-- Springrain Headpiece
-									i(117080),	-- Springrain Necklace
+								i(117059),	-- Springrain Headpiece
+								i(117080),	-- Springrain Necklace
 								--	i(101042),	-- Springrain Cloak of Destruction
-								--	i(101018),	-- Springrain Spaulders
-								--	i(101013),	-- Springrain Tunic
-								--	i(101021),	-- Springrain Bracers
-								--	i(101015),	-- Springrain Grips
-								--	i(101020),	-- Springrain Belt
-								--	i(101017),	-- Springrain Leggings
-								--	i(101014),	-- Springrain Treads
+								i(117061),	-- Springrain Spaulders
+								i(117056),	-- Springrain Tunic
+								i(117064),	-- Springrain Bracers
+								i(117058),	-- Springrain Grips
+								i(117063),	-- Springrain Belt
+								i(117060),	-- Springrain Leggings
+								i(117057),	-- Springrain Treads
 								i(117067),	-- Springrain Band of Destruction
 								i(117068),	-- Springrain Ring of Destruction
 								i(117066),	-- Springrain Idol of Destruction
@@ -579,20 +579,20 @@ _.GearSets =
 							i(117255),	-- Lightdrinker Dagger
 							i(117257),	-- Lightdrinker Sword
 							i(117256),	-- Lightdrinker Shiv
-							--	i(101207),	-- Lightdrinker Hood
+							i(117250),	-- Lightdrinker Hood
 							i(117242),	-- Lightdrinker Choker
 							--	i(101198),	-- Lightdrinker Cloak of Rage
-							--	i(101209),	-- Lightdrinker Shoulders
-							--	i(101204),	-- Lightdrinker Jerkin
-							--	i(101211),	-- Lightdrinker Bindings
-							--	i(101206),	-- Lightdrinker Gloves
-							--	i(101210),	-- Lightdrinker Waistband
-							--	i(101208),	-- Lightdrinker Britches
-							--	i(101205),	-- Lightdrinker Boots
+							i(117252),	-- Lightdrinker Shoulders
+							i(117247),	-- Lightdrinker Jerkin
+							i(117254),	-- Lightdrinker Bindings
+							i(117249),	-- Lightdrinker Gloves
+							i(117253),	-- Lightdrinker Waistband
+							i(117251),	-- Lightdrinker Britches
+							i(117248),	-- Lightdrinker Boots
 							i(117244),	-- Lightdrinker Band of Onslaught
 							i(117245),	-- Lightdrinker Ring of Onslaught
-							--	i(117243),	-- Lightdrinker Idol of Rage
-							--	i(117246),	-- Lightdrinker Stone of Rage
+							i(117243),	-- Lightdrinker Idol of Rage
+							i(117246),	-- Lightdrinker Stone of Rage
 						},
 						["classes"] = { 4 }
 					}),
@@ -619,8 +619,8 @@ _.GearSets =
 								--	i(101110),	-- Mistdancer Waistband
 								--	i(101103),	-- Mistdancer Britches
 								--	i(101098),	-- Mistdancer Boots
-								--	i(101106),	-- Mistdancer Band of Wisdom
-								--	i(101105),	-- Mistdancer Ring of Wisdom
+								i(117149),	-- Mistdancer Band of Wisdom
+								i(117148),	-- Mistdancer Ring of Wisdom
 								--	i(101102),	-- Mistdancer Idol of Wisdom
 								--	i(101107),	-- Mistdancer Stone of Wisdom
 							}),
@@ -681,8 +681,8 @@ _.GearSets =
 								i(117277),	-- Streamtalker Belt
 								i(117274),	-- Streamtalker Legwraps
 								i(117271),	-- Streamtalker Boots
-							--	i(101223),	-- Streamtalker Ring of Destruction
-							--	i(101224),	-- Streamtalker Band of Destruction 
+								i(117266),	-- Streamtalker Ring of Destruction
+								i(117267),	-- Streamtalker Band of Destruction 
 								i(117268),	-- Streamtalker Stone of Destruction
 								i(117265),	-- Streamtalker Idol of Destruction
 							}),
