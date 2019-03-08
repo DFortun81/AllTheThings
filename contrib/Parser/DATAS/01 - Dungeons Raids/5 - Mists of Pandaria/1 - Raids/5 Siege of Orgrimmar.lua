@@ -217,7 +217,7 @@ _.Instances =
 										i(112490),	-- Petrified Pennyroyal Ring
 										i(112484),	-- Sorrowpath Signet
 										i(112476),	-- Rook's Unlucky Talisman
-										un(2, i(104931)),	-- Death Lotus Crossbow
+										--un(2, i(104931)),	-- Death Lotus Crossbow
 									})),
 									cr(72276, e(866, {	-- Norushen (Amalgam of Corruption)
 										["groups"] = {
@@ -496,7 +496,7 @@ _.Instances =
 										i(112827),	-- Pandaren Roofsprinters
 										i(112828),	-- Seal of the Forgotten Kings
 										i(112825),	-- Sigil of Rampage
-										un(2, i(105096)),	-- Immaculately Preserved Wand
+										--un(2, i(105096)),	-- Immaculately Preserved Wand
 									})),
 									cr(71529, e(851, {	-- Thok the Bloodthirsty
 										{	-- The Underhold: Thok the Bloodthirsty
@@ -677,7 +677,7 @@ _.Instances =
 										i(112933),	-- Legplates of Unthinking Strife
 										i(112938),	-- Black Blood of Y'Shaarj
 										i(112924),	-- Curse of Hubris
-										un(2, i(105146)),	-- Xal'atoh, Desecrated Image of Gorehowl
+										--un(2, i(105146)),	-- Xal'atoh, Desecrated Image of Gorehowl
 									})),
 								},
 							}),	
@@ -692,7 +692,7 @@ _.Instances =
 					}),
 					d(2, {	-- Legacy (Heroic)
 						["u"] = 12,
-						["description"] = "This version of the instance was the original Normal difficulty mode. The loot all had unique item IDs for each difficulty tier as well as their Warforged variants similar to how ToT was done. Blizzard changed their design philosophy for the better and they chose to reuse an item's ID and apply a bonus ID rather than creating a brand new item ID with the same base stats.",
+						["description"] = "This version of the instance was the original Heroic difficulty mode. The loot all had unique item IDs for each difficulty tier as well as their Warforged variants similar to how ToT was done. Blizzard changed their design philosophy for the better and they chose to reuse an item's ID and apply a bonus ID rather than creating a brand new item ID with the same base stats.",
 						["groups"] = {
 						
 						},
@@ -1895,7 +1895,7 @@ _.Instances =
 							})),
 						},
 					}),
-					d(15, {	-- Heroic (Was Flex)
+					d(15, {	-- Heroic (Was Normal)
 						["description"] = "This version of the instance was the original Flex difficulty mode. It was split into both Normal and Heroic mode after they introduced Mythic.",
 						["groups"] = {
 							n(0, {	-- Zone Drop
@@ -3815,10 +3815,10 @@ _.Instances =
 								i(112490),	-- Petrified Pennyroyal Ring
 								i(112484),	-- Sorrowpath Signet
 								i(112476),	-- Rook's Unlucky Talisman
-								un(2, i(104433)),	-- Death Lotus Crossbow
-								un(2, i(105429)),	-- Death Lotus Crossbow (WF)
-								un(2, i(104434)),	-- Softfoot's Last Resort
-								un(2, i(105430)),	-- Softfoot's Last Resort (WF)
+								--un(2, i(104433)),	-- Death Lotus Crossbow
+								--un(2, i(105429)),	-- Death Lotus Crossbow (WF)
+								--un(2, i(104434)),	-- Softfoot's Last Resort
+								--un(2, i(105430)),	-- Softfoot's Last Resort (WF)
 							})),
 							cr(72276, e(866, {	-- Norushen (Amalgam of Corruption)
 								["groups"] = {
@@ -4112,8 +4112,8 @@ _.Instances =
 								i(112817),	-- Seal of Sullen Fury
 								i(112815),	-- Frenzied Crystal of Rage
 								i(112792),	-- Vial of Living Corruption
-								un(2, i(104563)),	-- Kor'kron Hand Cannon
-								un(2, i(105559)),	-- Kor'kron Hand Cannon (WF)
+							--	un(2, i(104563)),	-- Kor'kron Hand Cannon
+								--un(2, i(105559)),	-- Kor'kron Hand Cannon (WF)
 							})),
 							cr(71889, e(870, {	-- Spoils of Pandaria (Secured Stockpile of Pandaren Spoils)
 								{	-- Criss Cross
