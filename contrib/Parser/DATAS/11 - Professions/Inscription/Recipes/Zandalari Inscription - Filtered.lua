@@ -110,6 +110,18 @@ profession(773, {	-- Inscription
 							["recipeID"] = 256284--[[Contract: Zandalari Empire]],
 							["races"] = HORDE_ONLY,
 						},
+						{	-- Contract: The Honorbound
+							["recipeID"] = 284295--[[Contract: The Honorbound]],
+							["races"] = HORDE_ONLY,
+						},
+						{	-- Contract: The Honorbound
+							["recipeID"] = 284296--[[Contract: The Honorbound]],
+							["races"] = HORDE_ONLY,
+						},
+						{	-- Contract: The Honorbound
+							["recipeID"] = 284297--[[Contract: The Honorbound]],
+							["races"] = HORDE_ONLY,
+						},
 						{	-- Contract: Order of Embers Do Not Remove, missing from _Automation
 							["recipeID"] = 256278--[[Contract: Order of Embers]],
 							["races"] = ALLIANCE_ONLY,
@@ -143,8 +155,23 @@ profession(773, {	-- Inscription
 							["races"] = ALLIANCE_ONLY,
 						},
 						{	-- Contract: Storm's Wake Do Not Remove, missing from _Automation
-							-- NOTE: WQ for Rank 3 recipe has not popped as of 11-20-2018 and will need to be added to Stormsong Valley when it does
 							["recipeID"] = 256283--[[Contract: Storm's Wake]],
+							["races"] = ALLIANCE_ONLY,
+						},
+						{	-- Contract: 7th Legion - Do Not Remove, missing from _Automation
+							["recipeID"] = 284292--[[Contract: 7th Legion]],
+							["nextRecipeID"] = 284293,
+							["races"] = ALLIANCE_ONLY,
+						},
+						{	-- Contract: 7th Legion - Do Not Remove, missing from _Automation
+							["recipeID"] = 284293--[[Contract: 7th Legion]],
+							["nextRecipeID"] = 284294,
+							["previousRecipeID"] = 284292,
+							["races"] = ALLIANCE_ONLY,
+						},
+						{	-- Contract: 7th Legion - Do Not Remove, missing from _Automation
+							["recipeID"] = 284294--[[Contract: 7th Legion]],
+							["previousRecipeID"] = 284293,
 							["races"] = ALLIANCE_ONLY,
 						},
 					},

@@ -100,8 +100,8 @@ _.Zones =
 										{	-- Rallying War Banner
 											["itemID"] = 166879,	-- Rallying War Banner
 										},
-										{	-- Recipe: Contract: 7th Legion
-											["itemID"] = 166279,	-- Recipe: Contract: 7th Legion
+										{	-- Recipe: Contract: 7th Legion [Rank 3]
+											["itemID"] = 166279,	-- Recipe: Contract: 7th Legion [Rank 3]
 										},
 									},
 								},

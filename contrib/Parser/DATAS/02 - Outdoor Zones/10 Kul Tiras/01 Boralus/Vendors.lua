@@ -697,24 +697,24 @@ _.Zones =
 								i(161589),	-- Royal Knight's Sabatons
 								i(161583),	-- Warmage's Flame-Brimming Wristcords
 								i(160536),	-- 7th Legionnaire's Cloak
-								i(162378),	-- Design: Amberblaze Loop
-								i(162302),	-- Formula: Enchant Ring - Pact of Critical Strike
-								i(163320),	-- Recipe: Battle Potion of Strength
-								i(166278),	-- Recipe: Contract: 7th Legion
-								i(162306),	-- Recipe: Enchanter's Sorcerous Scepter
-								i(162138),	-- Recipe: Endless Tincture of Fractional Power
-								i(162132),	-- Recipe: Flask of the Currents
-								i(162128),	-- Recipe: Steelskin Potion
+								i(162378),	-- Design: Amberblaze Loop [Rank 3]
+								i(162302),	-- Formula: Enchant Ring - Pact of Critical Strike [Rank 3]
+								i(163320),	-- Recipe: Battle Potion of Strength [Rank 3]
+								i(166278),	-- Recipe: Contract: 7th Legion [Rank 2]
+								i(162306),	-- Recipe: Enchanter's Sorcerous Scepter [Rank 3]
+								i(162138),	-- Recipe: Endless Tincture of Fractional Power [Rank 3]
+								i(162132),	-- Recipe: Flask of the Currents [Rank 3]
+								i(162128),	-- Recipe: Steelskin Potion [Rank 3]
 								i(162275),	-- Recipe: Stormsteel Dagger [Rank 3]
 								i(162670),	-- Recipe: Stormsteel Saber [Rank 3]
 								i(162261),	-- Recipe: Stormsteel Shield [Rank 3]
 								i(162276),	-- Recipe: Stormsteel Spear [Rank 3]
-								i(162139),	-- Recipe: Surging Alchemist Stone
-								i(162323),	-- Schematic: AZ3-R1-T3 Synthetic Specs
-								i(162324),	-- Schematic: AZ3-R1-T3 Synthetic Specs
-								i(162346),	-- Schematic: Finely-Tuned Stormsteel Destroyer
-								i(162344),	-- Schematic: Monelite Scope of Alacrity
-								i(162345),	-- Schematic: Precision Attitude Adjuster
+								i(162139),	-- Recipe: Surging Alchemist Stone [Rank 3]
+								i(162323),	-- Schematic: AZ3-R1-T3 Synthetic Specs [Rank 2]
+								i(162324),	-- Schematic: AZ3-R1-T3 Synthetic Specs [Rank 3]
+								i(162346),	-- Schematic: Finely-Tuned Stormsteel Destroyer [Rank 3]
+								i(162344),	-- Schematic: Monelite Scope of Alacrity [Rank 3]
+								i(162345),	-- Schematic: Precision Attitude Adjuster [Rank 3]
 								{	-- 7th Legion Scouting Map
 									["itemID"] = 166445,	-- 7th Legion Scouting Map
 									["collectible"] = false,
