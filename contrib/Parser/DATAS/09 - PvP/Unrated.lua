@@ -311,6 +311,10 @@ _.PVP =
 					["itemID"] = 162926,	-- Dread Aspirant's Chain Waistguard
 					["u"] = 46,
 				},
+				{	-- Dread Aspirant's Cleaver
+					["itemID"] = 166729,	-- Dread Aspirant's Cleaver
+					["u"] = 46,
+				},
 				{	-- Dread Aspirant's Cloak
 					["itemID"] = 163721,	-- Dread Aspirant's Cloak
 					["u"] = 46,

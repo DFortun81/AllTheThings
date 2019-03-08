@@ -20,6 +20,7 @@ _.ExpansionFeatures =
 						i(163881),	-- 7th Legionnaire's Longbow
 						i(163887),	-- 7th Legionnaire's Longsword
 						i(163895),	-- 7th Legionnaire's Shield
+						i(166336),	-- 7th Legionnaire's Skullcleaver
 						i(163894),	-- 7th Legionnaire's Spellhammer
 						i(163886),	-- 7th Legionnaire's Stave
 						i(163888),	-- 7th Legionnaire's Wand
