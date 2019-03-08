@@ -525,7 +525,7 @@ _.GearSets =
 							n(-9926, { -- Balance
 								i(117059),	-- Springrain Headpiece
 								i(117080),	-- Springrain Necklace
-								--	i(101042),	-- Springrain Cloak of Destruction
+								i(117085),	-- Springrain Cloak of Destruction
 								i(117061),	-- Springrain Spaulders
 								i(117056),	-- Springrain Tunic
 								i(117064),	-- Springrain Bracers
@@ -541,8 +541,8 @@ _.GearSets =
 							n(-9925, { -- Feral
 								i(117075),	-- Springrain Spear
 								--	i(101030),	-- Springrain Helm
-									i(117051),	-- Springrain Choker
-								--	i(101007),	-- Springrain Cloak of Rage
+								i(117051),	-- Springrain Choker
+								i(117050),	-- Springrain Cloak of Rage
 								--	i(101033),	-- Springrain Pauldrons
 								--	i(101027),	-- Springrain Vest
 								--	i(101035),	-- Springrain Cuffs
@@ -557,8 +557,8 @@ _.GearSets =
 							}),
 							n(-9927, { -- Restoration
 								--	i(101046),	-- Springrain Hood
-									i(117065),	-- Springrain Medallion
-								--	i(101036),	-- Springrain Cloak of Wisdom
+								i(117065),	-- Springrain Medallion
+								i(117079),	-- Springrain Cloak of Wisdom
 								--	i(101048),	-- Springrain Shoulders
 								--	i(101043),	-- Springrain Jerkin
 								--	i(101050),	-- Springrain Bindings
@@ -581,7 +581,7 @@ _.GearSets =
 							i(117256),	-- Lightdrinker Shiv
 							i(117250),	-- Lightdrinker Hood
 							i(117242),	-- Lightdrinker Choker
-							--	i(101198),	-- Lightdrinker Cloak of Rage
+							i(117241),	-- Lightdrinker Cloak of Rage
 							i(117252),	-- Lightdrinker Shoulders
 							i(117247),	-- Lightdrinker Jerkin
 							i(117254),	-- Lightdrinker Bindings
@@ -611,7 +611,7 @@ _.GearSets =
 							n(-9933, {	-- Mistweaver
 								--	i(101100),	-- Mistdancer Hood
 								i(117147),	-- Mistdancer Necklace
-								--	i(101101),	-- Mistdancer Cloak of Wisdom
+								i(117144),	-- Mistdancer Cloak of Wisdom
 								--	i(101108),	-- Mistdancer Shoulders
 								--	i(101119),	-- Mistdancer Jerkin
 								--	i(101111),	-- Mistdancer Bindings
@@ -627,7 +627,7 @@ _.GearSets =
 							n(-9932, {	-- Windwalker
 								--	i(101093),	-- Mistdancer Helm
 								i(117157),	-- Mistdancer Choker
-								--	i(101118),	-- Mistdancer Cloak of Rage
+								i(117161),	-- Mistdancer Cloak of Rage
 								--	i(101095),	-- Mistdancer Pauldrons [Hidden Shoulders]
 								--	i(101090),	-- Mistdancer Vest
 								--	i(101097),	-- Mistdancer Cuffs
@@ -729,7 +729,7 @@ _.GearSets =
 								--	i(101142),	-- Sunsoul Scepter
 								i(117175),	-- Sunsoul Headpiece
 								--	i(101134),	-- Sunsoul Necklace
-								--	i(101129),	-- Sunsoul Cloak of Wisdom
+								i(117172),	-- Sunsoul Cloak of Wisdom
 								i(117182),	-- Sunsoul Spaulders
 								i(117171),	-- Sunsoul Breastplate
 								i(117184),	-- Sunsoul Armplates
@@ -746,7 +746,7 @@ _.GearSets =
 								i(117187),	-- Sunsoul Sword
 								i(117200),	-- Sunsoul Faceguard
 								--	i(101159),	-- Sunsoul Amulet
-								--	i(101154),	-- Sunsoul Cloak of Stoicism
+								i(117197),	-- Sunsoul Cloak of Stoicism
 								i(117207),	-- Sunsoul Shoulderguards
 								i(117196),	-- Sunsoul Chestguard
 								i(117209),	-- Sunsoul Armguards
@@ -764,7 +764,7 @@ _.GearSets =
 								i(117189),	-- Sunsoul Warmaul
 								i(117166),	-- Sunsoul Helm
 								--	i(101148),	-- Sunsoul Pendant
-								--	i(101147),	-- Sunsoul Cloak of Battle
+								i(117190),	-- Sunsoul Cloak of Battle
 								i(117168),	-- Sunsoul Pauldrons
 								i(117163),	-- Sunsoul Battleplate
 								i(117170),	-- Sunsoul Vambraces

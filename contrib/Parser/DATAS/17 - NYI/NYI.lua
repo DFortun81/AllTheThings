@@ -700,6 +700,8 @@ _.NeverImplemented =
 			un(1, i(156927)),	-- Great Hall Recall)
 		}),
 		un(1, i(79907)),	-- Spear of Xuen (Old Version)
+		un(1, i(129742)),	-- Badge of timewaking justice cap
+		un(1, i(130148)),	-- Unknown
 		un(1, spell(5169)),	-- defias disguise
 		un(1, i(45818)),	-- Unknown
 		un(1, i(46056)),	-- Unknown

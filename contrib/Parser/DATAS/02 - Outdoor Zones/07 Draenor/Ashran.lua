@@ -2157,9 +2157,9 @@ _.Zones =
 							un(14, i(120287)),	-- Enchanter's Illusion - Primal Victory
 							un(2, i(115979)),	-- Primal Gladiator's Greatcloak
 							un(2, i(115972)),	-- Primal Gladiator's Tabard
-							un(2, i(127377)),	-- Warmongering Gladiator's Greatcloak
+							un(2, i(127376)),	-- Warmongering Gladiator's Greatcloak
 							un(2, i(127371)),	-- Warmongering Gladiator's Tabard
-							un(2, i(127375)),	-- Wild Gladiator's Greatcloak
+							un(2, i(127374)),	-- Wild Gladiator's Greatcloak
 							un(2, i(127365)),	-- Wild Gladiator's Tabard
 							-- Fist Weapons
 							un(2, i(115948)),	-- Primal Gladiator's Ripper
