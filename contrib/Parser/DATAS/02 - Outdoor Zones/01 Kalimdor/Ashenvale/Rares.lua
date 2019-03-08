@@ -7,7 +7,7 @@ _.Zones =
 		m(63, {	-- Ashenvale
 			["groups"] = {
 				n(-16, {	-- Rares
-					n(3773, { 	-- Akkrilus
+					n(3773,   {	-- Akkrilus
 						["groups"] = {
 							i(9838),	-- Banded Cloak
 							i(6592),	-- Battleforge Armor
@@ -56,7 +56,7 @@ _.Zones =
 						},
 						["coord"] = { 25.0, 60.4 },
 					}),
-					n(3735, { 	-- Apothecary Falthis
+					n(3735,   {	-- Apothecary Falthis
 						["groups"] = {
 							i(9782),	-- Bandit Jerkin
 							i(9781),	-- Bandit Pants
@@ -102,7 +102,7 @@ _.Zones =
 							{ 32.0, 23.4 },
 						},
 					}),
-					n(10641, { 	-- Branch Snapper
+					n(10641,  {	-- Branch Snapper
 						["groups"] = {
 							i(9782),	-- Bandit Jerkin
 							i(9781),	-- Bandit Pants
@@ -155,7 +155,7 @@ _.Zones =
 							{ 45.0, 45.4 },
 						},
 					}),
-					n(3736, { 	-- Darkslayer Mordenthal
+					n(3736,   {	-- Darkslayer Mordenthal
 						["groups"] = {
 							i(9776),	-- Bandit Boots
 							i(9780),	-- Bandit Gloves
@@ -195,7 +195,7 @@ _.Zones =
 							{ 73.6, 73.6 },
 						},
 					}),
-					n(10642, { 	-- Eck'alom
+					n(10642,  {	-- Eck'alom
 						["groups"] = {
 							i(6593),	-- Battleforge Cloak
 							i(6595),	-- Battleforge Gauntlets
@@ -249,20 +249,14 @@ _.Zones =
 							{ 48.0, 72.4 },
 						},
 					}),
-					n(3808, { 	-- Forsaken Dark Stalker
+					n(3808,   {	-- Forsaken Dark Stalker
 						["groups"] = {
 							un(7, i(1351)),	-- Fingerbone Bracers
 						},
 						["u"] = 43,
 						["races"] = ALLIANCE_ONLY,
 					}),
-					n(3792, {	-- Terrowulf Packlord
-						["groups"] = {
-							un(7, i(5753)),	-- Ruffled Chaplet
-						},
-						["u"] = 43,
-					}),
-					n(10559, { 	-- Lady Vespia
+					n(10559,  {	-- Lady Vespia
 						["groups"] = {
 							i(9782),	-- Bandit Jerkin
 							i(9781),	-- Bandit Pants
@@ -323,7 +317,7 @@ _.Zones =
 						["icon"] = "Interface\\Icons\\INV_Misc_Bag_HerbPouch",
 						["description"] = "|cff66ccffLoot the Lost Sentinel's Pouch inside a large hollow tree trunk.|r",
 					}),
-					n(10644, { 	-- Mist Howler
+					n(10644,  {	-- Mist Howler
 						["groups"] = {
 							i(9776),	-- Bandit Boots
 							i(9780),	-- Bandit Gloves
@@ -365,7 +359,7 @@ _.Zones =
 							{ 25.2, 26.8 },
 						},
 					}),
-					n(10640, { 	-- Oakpaw
+					n(10640,  {	-- Oakpaw
 						["groups"] = {
 							i(6593),	-- Battleforge Cloak
 							i(6595),	-- Battleforge Gauntlets
@@ -416,7 +410,7 @@ _.Zones =
 							{ 54.2, 62.4 },
 						},
 					}),
-					n(10647, { 	-- Prince Raze
+					n(10647,  {	-- Prince Raze
 						["groups"] = {
 							i(9776),	-- Bandit Boots
 							i(9780),	-- Bandit Gloves
@@ -456,9 +450,10 @@ _.Zones =
 						["coords"] = {
 							{ 78.6, 45.2 },
 							{ 81.0, 49.2 },
+							{ 66.6, 56.8 },
 						},
 					}),
-					n(10639, { 	-- Rorgish Jowl
+					n(10639,  {	-- Rorgish Jowl
 						["groups"] = {
 							i(9782),	-- Bandit Jerkin
 							i(9781),	-- Bandit Pants
@@ -503,7 +498,7 @@ _.Zones =
 						},
 						["coord"] = { 37.0, 33.6 },
 					}),
-					n(3792, {	-- Terrowulf Packlord
+					n(3792,   {	-- Terrowulf Packlord
 						["groups"] = {
 							i(6593),	-- Battleforge Cloak
 							i(6591),	-- Battleforge Wristguards
@@ -540,7 +535,7 @@ _.Zones =
 						},
 						["coord"] = { 53.0, 37.6 },
 					}),
-					n(12037, {	-- Ursol'lok
+					n(12037,  {	-- Ursol'lok
 						["groups"] = {
 							i(9782),	-- Bandit Jerkin
 							i(6593),	-- Battleforge Cloak
