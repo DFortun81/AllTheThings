@@ -181,6 +181,13 @@ _.Zones =
 								i(102981),	-- Grievous Gladiator's Shield Wall
 								i(102982),	-- Grievous Gladiator's Barrier
 								i(102983),	-- Grievous Gladiator's Endgame
+								un(2, i(102841)),	-- Grievous Gladiator's ring of cruelty
+								un(2, i(102846)),	-- Grievous Gladiator's band of accuracy
+								un(2, i(102871)),	-- Grievous Gladiator's band of cruelty
+								un(2, i(102880)),	-- Grievous Gladiator's ring of accuracy
+								un(2, i(102898)),	-- Grievous Gladiator's signet of cruelty
+								un(2, i(102943)),	-- Grievous Gladiator's signet of accuracy
+								un(2, i(102955)),	-- Grievous Gladiator's band of mediation
 							}),
 							nh(73145, { -- Acon Deathwielder (5.4.7 Elite and removed Version) -- Link for all the Items https://www.wowhead.com/npc=73145/acon-deathwielder#comments
 								["groups"] = {

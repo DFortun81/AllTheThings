@@ -2372,6 +2372,13 @@ _.Zones =
 						i(103330),	-- Grievous Gladiator's Plate Helm
 						i(103331),	-- Grievous Gladiator's Plate Legguards
 						i(103332),	-- Grievous Gladiator's Plate Shoulders
+						un(2, i(103151)),	-- Grievous Gladiator's ring of cruelty
+						un(2, i(103152)),	-- Grievous Gladiator's ring of accuracy
+						un(2, i(103173)),	-- Grievous Gladiator's band of cruelty
+						un(2, i(103174)),	-- Grievous Gladiator's band of accurcy
+						un(2, i(103175)),	-- Grievous Gladiator's band of mediation
+						un(2, i(103320)),	-- Grievous Gladiator's signet of cruelty
+						un(2, i(103321)),	-- Grievous Gladiator's signet of accuracy
 					}),
 					nh(73147, { -- Ethan Natice Season 15 Elite(5.4.7 Elite and removed Version) -- Link for all the Items https://www.wowhead.com/npc=73145/acon-deathwielder#comments
 						["groups"] = {

@@ -2105,6 +2105,49 @@ _.Zones =
 							un(2, i(126872)),	-- warmongering Gladiator's mail helm
 							un(2, i(126873)),	-- warmongering Gladiator's mail leggings
 							un(2, i(126874)),	-- warmongering Gladiator's mail spaulders
+							-- Season 3 Leather
+							un(2, i(126770)),	-- warmongering gladiator's dragonhide gloves
+							un(2, i(126771)),	-- warmongering gladiator's dragonhide helm
+							un(2, i(126772)),	-- warmongering gladiator's dragonhide legguards
+							un(2, i(126773)),	-- warmongering gladiator's dragonhide robes
+							un(2, i(126774)),	-- warmongering gladiator's dragonhide spaulders
+							un(2, i(126775)),	-- warmongering gladiator's kodohide belt
+							un(2, i(126776)),	-- warmongering gladiator's kodohide footguards
+							un(2, i(126777)),	-- warmongering gladiator's kodohide gloves
+							un(2, i(126778)),	-- warmongering gladiator's kodohide helm
+							un(2, i(126779)),	-- warmongering gladiator's kodohide legguards
+							un(2, i(126780)),	-- warmongering gladiator's kodohide robes
+							un(2, i(126781)),	-- warmongering gladiator's kodohide spaulders
+							un(2, i(126783)),	-- warmongering gladiator's wyrmhide belt
+							un(2, i(126784)),	-- warmongering gladiator's wyrmhide footguards
+							un(2, i(126785)),	-- warmongering gladiator's wyrmhide gloves
+							un(2, i(126786)),	-- warmongering gladiator's wyrmhide helm
+							un(2, i(126787)),	-- warmongering gladiator's wyrmhide legguards
+							un(2, i(126788)),	-- warmongering gladiator's wyrmhide robes
+							un(2, i(126789)),	-- warmongering gladiator's wyrmhide spaulders
+							un(2, i(126808)),	-- warmongering gladiator's ironskin waistband
+							un(2, i(126809)),	-- warmongering gladiator's ironskin boosts
+							un(2, i(126810)),	-- warmongering gladiator's ironskin gloves
+							un(2, i(126811)),	-- warmongering gladiator's ironskin helm
+							un(2, i(126812)),	-- warmongering gladiator's ironskin legguards
+							un(2, i(126813)),	-- warmongering gladiator's ironskin spaulders
+							un(2, i(126814)),	-- warmongering gladiator's ironskin tunic
+							un(2, i(126815)),	-- warmongering gladiator's copperskin gloves
+							un(2, i(126816)),	-- warmongering gladiator's copperskin helm
+							un(2, i(126817)),	-- warmongering gladiator's copperskin legguards
+							un(2, i(126818)),	-- warmongering gladiator's copperskin spaulders
+							un(2, i(126819)),	-- warmongering gladiator's copperskin tunic
+							un(2, i(126849)),	-- warmongering gladiator's leather waistband
+							un(2, i(126850)),	-- warmongering gladiator's leather boosts
+							un(2, i(126851)),	-- warmongering gladiator's leather tunic
+							un(2, i(126852)),	-- warmongering gladiator's leather gloves
+							un(2, i(126853)),	-- warmongering gladiator's leather helm
+							un(2, i(126854)),	-- warmongering gladiator's leather legguards
+							un(2, i(126855)),	-- warmongering gladiator's leather spaulders
+							un(2, i(126894)),	-- warmongering gladiator's copperskin boots
+							un(2, i(126895)),	-- warmongering gladiator's copperskin waistband
+							un(2, i(126898)),	-- warmongering gladiator's dragonhide footguards
+							un(2, i(126899)),	-- warmongering gladiator's dragonhide belt
 						},
 						["u"] = 2, -- Vendor doesn't sell anything in 7.0+
 					}),
@@ -2484,6 +2527,49 @@ _.Zones =
 							un(2, i(126872)),	-- warmongering Gladiator's mail helm
 							un(2, i(126873)),	-- warmongering Gladiator's mail leggings
 							un(2, i(126874)),	-- warmongering Gladiator's mail spaulders
+							-- Season 3 Leather
+							un(2, i(126770)),	-- warmongering gladiator's dragonhide gloves
+							un(2, i(126771)),	-- warmongering gladiator's dragonhide helm
+							un(2, i(126772)),	-- warmongering gladiator's dragonhide legguards
+							un(2, i(126773)),	-- warmongering gladiator's dragonhide robes
+							un(2, i(126774)),	-- warmongering gladiator's dragonhide spaulders
+							un(2, i(126775)),	-- warmongering gladiator's kodohide belt
+							un(2, i(126776)),	-- warmongering gladiator's kodohide footguards
+							un(2, i(126777)),	-- warmongering gladiator's kodohide gloves
+							un(2, i(126778)),	-- warmongering gladiator's kodohide helm
+							un(2, i(126779)),	-- warmongering gladiator's kodohide legguards
+							un(2, i(126780)),	-- warmongering gladiator's kodohide robes
+							un(2, i(126781)),	-- warmongering gladiator's kodohide spaulders
+							un(2, i(126783)),	-- warmongering gladiator's wyrmhide belt
+							un(2, i(126784)),	-- warmongering gladiator's wyrmhide footguards
+							un(2, i(126785)),	-- warmongering gladiator's wyrmhide gloves
+							un(2, i(126786)),	-- warmongering gladiator's wyrmhide helm
+							un(2, i(126787)),	-- warmongering gladiator's wyrmhide legguards
+							un(2, i(126788)),	-- warmongering gladiator's wyrmhide robes
+							un(2, i(126789)),	-- warmongering gladiator's wyrmhide spaulders
+							un(2, i(126808)),	-- warmongering gladiator's ironskin waistband
+							un(2, i(126809)),	-- warmongering gladiator's ironskin boosts
+							un(2, i(126810)),	-- warmongering gladiator's ironskin gloves
+							un(2, i(126811)),	-- warmongering gladiator's ironskin helm
+							un(2, i(126812)),	-- warmongering gladiator's ironskin legguards
+							un(2, i(126813)),	-- warmongering gladiator's ironskin spaulders
+							un(2, i(126814)),	-- warmongering gladiator's ironskin tunic
+							un(2, i(126815)),	-- warmongering gladiator's copperskin gloves
+							un(2, i(126816)),	-- warmongering gladiator's copperskin helm
+							un(2, i(126817)),	-- warmongering gladiator's copperskin legguards
+							un(2, i(126818)),	-- warmongering gladiator's copperskin spaulders
+							un(2, i(126819)),	-- warmongering gladiator's copperskin tunic
+							un(2, i(126849)),	-- warmongering gladiator's leather waistband
+							un(2, i(126850)),	-- warmongering gladiator's leather boosts
+							un(2, i(126851)),	-- warmongering gladiator's leather tunic
+							un(2, i(126852)),	-- warmongering gladiator's leather gloves
+							un(2, i(126853)),	-- warmongering gladiator's leather helm
+							un(2, i(126854)),	-- warmongering gladiator's leather legguards
+							un(2, i(126855)),	-- warmongering gladiator's leather spaulders
+							un(2, i(126894)),	-- warmongering gladiator's copperskin boots
+							un(2, i(126895)),	-- warmongering gladiator's copperskin waistband
+							un(2, i(126898)),	-- warmongering gladiator's dragonhide footguards
+							un(2, i(126899)),	-- warmongering gladiator's dragonhide belt
 						},
 						["u"] = 2, -- Vendor doesn't sell anything in 7.0+
 					}),
