@@ -5520,7 +5520,7 @@ function app.FilterItemSourceUnique(sourceInfo, allSources)
 					for i, sourceID in ipairs(allSources or C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
 						if sourceID ~= sourceInfo.sourceID then
 							local otherSource = C_TransmogCollection_GetSourceInfo(sourceID);
-							if otherSource.isCollected and otherSource.categoryID == sourceInfo.categoryID and otherSource.invType == sourceInfo.invType then
+							if otherSource.isCollected and otherSource.categoryID == sourceInfo.categoryID and C_Transmog.GetSlotForInventoryType(otherSource.invType) == C_Transmog.GetSlotForInventoryType(sourceInfo.invType) then
 								local otherItem = SearchForSourceIDQuickly(sourceID);
 								if otherItem and (item.f == otherItem.f or item.f == 2 or otherItem.f == 2) then
 									if otherItem.c then
@@ -5552,7 +5552,7 @@ function app.FilterItemSourceUnique(sourceInfo, allSources)
 					for i, sourceID in ipairs(allSources or C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
 						if sourceID ~= sourceInfo.sourceID then
 							local otherSource = C_TransmogCollection_GetSourceInfo(sourceID);
-							if otherSource.isCollected and otherSource.categoryID == sourceInfo.categoryID and otherSource.invType == sourceInfo.invType then
+							if otherSource.isCollected and otherSource.categoryID == sourceInfo.categoryID and C_Transmog.GetSlotForInventoryType(otherSource.invType) == C_Transmog.GetSlotForInventoryType(sourceInfo.invType) then
 								local otherItem = SearchForSourceIDQuickly(sourceID);
 								if otherItem and (item.f == otherItem.f or item.f == 2 or otherItem.f == 2) then
 									if otherItem.c then
@@ -5587,7 +5587,7 @@ function app.FilterItemSourceUnique(sourceInfo, allSources)
 					for i, sourceID in ipairs(allSources or C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
 						if sourceID ~= sourceInfo.sourceID then
 							local otherSource = C_TransmogCollection_GetSourceInfo(sourceID);
-							if otherSource.isCollected and otherSource.categoryID == sourceInfo.categoryID and otherSource.invType == sourceInfo.invType then
+							if otherSource.isCollected and otherSource.categoryID == sourceInfo.categoryID and C_Transmog.GetSlotForInventoryType(otherSource.invType) == C_Transmog.GetSlotForInventoryType(sourceInfo.invType) then
 								local otherItem = SearchForSourceIDQuickly(sourceID);
 								if otherItem and (item.f == otherItem.f or item.f == 2 or otherItem.f == 2) then
 									if otherItem.c then
@@ -5616,7 +5616,7 @@ function app.FilterItemSourceUnique(sourceInfo, allSources)
 					for i, sourceID in ipairs(allSources or C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
 						if sourceID ~= sourceInfo.sourceID then
 							local otherSource = C_TransmogCollection_GetSourceInfo(sourceID);
-							if otherSource.isCollected and otherSource.categoryID == sourceInfo.categoryID and otherSource.invType == sourceInfo.invType then
+							if otherSource.isCollected and otherSource.categoryID == sourceInfo.categoryID and C_Transmog.GetSlotForInventoryType(otherSource.invType) == C_Transmog.GetSlotForInventoryType(sourceInfo.invType) then
 								local otherItem = SearchForSourceIDQuickly(sourceID);
 								if otherItem and (item.f == otherItem.f or item.f == 2 or otherItem.f == 2) then
 									if otherItem.c then
