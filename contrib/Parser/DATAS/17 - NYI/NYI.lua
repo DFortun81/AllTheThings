@@ -455,6 +455,14 @@ _.NeverImplemented =
 				un(1, i(48892)),	-- Koltira's Handguards of Conquest
 				un(1, i(48893)),	-- Koltira's Legguards of Conquest
 				un(1, i(48894)),	-- Koltira's Pauldrons of Conquest
+				un(1, i(119485)),	-- Heart-Lesion chestguard
+				un(1, i(119487)),	-- Heart-Lesion greaves
+				un(1, i(119488)),	-- Heart-Lesion handguards
+				un(1, i(119489)),	-- Heart-Lesion faceguard
+				un(1, i(119490)),	-- Heart-Lesion legguards
+				un(1, i(119496)),	-- Heart-Lesion shouldersguards
+				un(1, i(119497)),	-- Heart-Lesion waistband
+				un(1, i(119498)),	-- Heart-Lesion armguards
 				-- Possible Unused Level 120/Lv 120 Classtrial
 				un(1, i(157618)),	-- Unholy Runeblade
 				un(1, i(157646)),	-- Bloodcaked Runeblade
