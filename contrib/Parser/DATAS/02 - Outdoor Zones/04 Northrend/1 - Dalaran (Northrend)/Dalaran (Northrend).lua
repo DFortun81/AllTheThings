@@ -5277,6 +5277,30 @@ _.Zones =
 									un(2, i(70501)),	-- Ruthless Gladi Sabatons of Alacrity
 									un(2, i(70508)),	-- Ruthless Gladi Sabatons of Alacrity
 									un(2, i(70509)),	-- Ruthless Gladi Sabatons of Meditation
+									un(2, i(70428)),	-- Ruthless Gladiator's Wyrmhide helm
+									un(2, i(70429)),	-- Ruthless Gladiator's Wyrmhide gloves
+									un(2, i(70430)),	-- Ruthless Gladiator's kodohide spaulders
+									un(2, i(70431)),	-- Ruthless Gladiator's kodohide robes
+									un(2, i(70432)),	-- Ruthless Gladiator's kodohide legguards
+									un(2, i(70436)),	-- Ruthless Gladiator's kodohide helm
+									un(2, i(70437)),	-- Ruthless Gladiator's kodohide gloves
+									un(2, i(70438)),	-- Ruthless Gladiator's dragonhide spaulders
+									un(2, i(70439)),	-- Ruthless Gladiator's dragonhide robes
+									un(2, i(70442)),	-- Ruthless Gladiator's leather spaulders
+									un(2, i(70443)),	-- Ruthless Gladiator's leather legguards
+									un(2, i(70444)),	-- Ruthless Gladiator's leather helm
+									un(2, i(70445)),	-- Ruthless Gladiator's leather gloves
+									un(2, i(70446)),	-- Ruthless Gladiator's leather tunic
+									un(2, i(70447)),	-- Ruthless Gladiator's wyrmhide spaulders
+									un(2, i(70448)),	-- Ruthless Gladiator's wyrmhide robes
+									un(2, i(70449)),	-- Ruthless Gladiator's wyrmhide legguards
+									un(2, i(70484)),	-- Ruthless Gladiator's dragonhide legguards
+									un(2, i(70485)),	-- Ruthless Gladiator's dragonhide helm
+									un(2, i(70486)),	-- Ruthless Gladiator's dragonhide gloves
+									un(2, i(70498)),	-- Ruthless Gladiator's footguards of mediatiton
+									un(2, i(70499)),	-- Ruthless Gladiator's footguards of alacrity
+									un(2, i(70506)),	-- Ruthless Gladiator's boots of cruelty
+									un(2, i(70507)),	-- Ruthless Gladiator's boots of alacrity
 									un(2, i(70415)),	-- Ruthless Gladi Ornamented Spaulders
 									un(2, i(70416)),	-- Ruthless Gladi Ornamented Legs
 									un(2, i(70417)),	-- Ruthless Gladi Ornamented Head

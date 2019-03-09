@@ -212,6 +212,12 @@ _.NeverImplemented =
 			un(1, i(12104)),	-- Brindlethorn Tunic (Leather)
 			un(1, i(5821)),		-- Darkstalker Boots (Leather)
 			un(1, i(37316)),	-- HF28 Leather Physical Legs4
+			un(1, i(54649)),	-- Unknown
+			un(1, i(54650)),	-- Unknown
+			un(1, i(54652)),	-- Unknown
+			un(1, i(54658)),	-- Unknown
+			un(1, i(54665)),	-- Unknown
+			un(1, i(54667)),	-- Unknown
 			un(1, i(25795)),	-- Gloves of Preservation (not added version)
 			un(1, i(56701)),	-- Jinxed Vest (never made it to live)
 			un(1, i(25796)),	-- Lurking Shadow Spaulders (only beta)
@@ -219,6 +225,12 @@ _.NeverImplemented =
 			un(1, i(19986)),	-- Pirate's Eye Patch (Leather)
 			un(1, i(20524)),	-- Shadowhide Leggings (Leather)
 			un(1, i(54655)),	-- Stormshroud Armor (Leather)
+			un(1, i(54668)),	-- Unknown
+			un(1, i(54670)),	-- Unknown
+			un(1, i(54671)),	-- Unknown
+			un(1, i(54673)),	-- Unknown
+			un(1, i(54677)),	-- Unknown
+			un(1, i(54680)),	-- Unknown
 			un(1, i(28145)),	-- Tranquillien Wraps (Leather)
 			un(1, i(7187)),		-- VanCleef's Boots (Leather)
 			un(1, i(26029)),	-- Watchman's Bracers
@@ -694,6 +706,9 @@ _.NeverImplemented =
 			un(1, i(157761)),	-- Unknown
 			un(1, i(38383)),	-- Unknown
 			un(1, i(38526)),	-- Unknown
+			un(1, i(46839)),	-- Unknown
+			un(1, i(46840)),	-- Unknown
+			un(1, i(65015)),	-- Donstusefury of angerforge
 			un(1, i(157763)),	-- ENgine of Eradication
 			un(1, i(157764)),	-- Claw of the crystaline scropid
 			un(1, i(157765)),	-- draught of souls
