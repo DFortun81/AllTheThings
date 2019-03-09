@@ -82,6 +82,14 @@ _.Instances =
 									29335,	-- Anub'ar Webspinner
 								},
 							}),
+							i(37244, {	-- Fungi-Coated Boots (Information is spare, but there are many in the auction house)
+								["crs"] = {
+									29128,	-- Anub'ar Prime Guard
+									28734,	-- Anub'ar Skirmisher
+									28732,	-- Anub'ar Warrior
+									29335,	-- Anub'ar Webspinner
+								},
+							}),
 						}),
 						cr(28684, e(585, { 	-- Krik'thir the Gatewatcher
 							{

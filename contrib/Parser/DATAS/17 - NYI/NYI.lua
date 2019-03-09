@@ -376,6 +376,7 @@ _.NeverImplemented =
 			un(1, i(166410)),	-- Flaskzertauren Mail Shoulderguards
 			un(1, i(12105)),	-- Pridemail Leggings
 			un(1, i(37420)),	-- Sharkproof Boots
+			un(1, i(30289)),	-- Cenarion warden's belt 
 			un(1, i(68844)),	-- Unknown
 			un(1, i(38527)),	-- Onslaught Scaemail haubberk
 			un(1, i(39440)),	-- Greaves of the Titan Protectorate
@@ -586,6 +587,8 @@ _.NeverImplemented =
 			un(1, i(108814)), -- 6.0 PH Cloak Agi
 			un(1, i(108822)), -- 6.0 PH Cloak STR
 			un(1, i(39828)),	-- Punisher's Cloak
+			un(1, i(35876)),	-- Talbuk Cape
+			un(1, i(37174)),	-- Rippling Azure Cloak
 			un(1, i(155384)),	-- Singed Skycaller Drape (NEver added)
 			un(1, i(108823)), -- 6.0 PH Cloak Int
 			un(1, i(109282)), -- 7.0 QA Combat Test Cloak 1
