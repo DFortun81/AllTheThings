@@ -26,51 +26,72 @@ _.Instances =
 							["qg"] = 50038,	-- Captain Hadan
 						}),
 					}),
-					d(1, {	-- Normal
-						n(0, {	-- Zone Drop
-							i(55884, {	-- Mirage Ring
-								["crs"] = {
-									45007,	-- Enslaved Bandit
-									45001,	-- Enslaved Bandit
-									44982,	-- Neferset Darkcaster
-									44976,	-- Neferset Plaguebringer
-									44980,	-- Neferset Theurgist
-									44977,	-- Neferset Torturer
-									44922,	-- Oathsworn Axemaster
-									45122,	-- Oathsworn Captain
-									44924,	-- Oathsworn Myrmidon
-									44932,	-- Oathsworn Pathfinder
-									45062,	-- Oathsworn Scorpid Keeper
-									44981,	-- Oathsworn Skinner
-									45097,	-- Oathsworn Tamer
-									44926,	-- Oathsworn Wanderer
-									44896,	-- Pygmy Brute
-									44898,	-- Pygmy Firebreather
-									44897,	-- Pygmy Scout
-								},
-							}),
-							i(55882, {	-- Oasis Bracers
-								["crs"] = {
-									45007,	-- Enslaved Bandit
-									45001,	-- Enslaved Bandit
-									44982,	-- Neferset Darkcaster
-									44976,	-- Neferset Plaguebringer
-									44980,	-- Neferset Theurgist
-									44977,	-- Neferset Torturer
-									44922,	-- Oathsworn Axemaster
-									45122,	-- Oathsworn Captain
-									44924,	-- Oathsworn Myrmidon
-									44932,	-- Oathsworn Pathfinder
-									45062,	-- Oathsworn Scorpid Keeper
-									44981,	-- Oathsworn Skinner
-									45097,	-- Oathsworn Tamer
-									44926,	-- Oathsworn Wanderer
-									44896,	-- Pygmy Brute
-									44898,	-- Pygmy Firebreather
-									44897,	-- Pygmy Scout
-								},
-							}),
+					n(0,   {	-- Zone Drop
+						i(55881, {	-- Impetuous Query
+							["crs"] = {
+								45007,	-- Enslaved Bandit
+								45001,	-- Enslaved Bandit
+								44982,	-- Neferset Darkcaster
+								44976,	-- Neferset Plaguebringer
+								44980,	-- Neferset Theurgist
+								44977,	-- Neferset Torturer
+								44922,	-- Oathsworn Axemaster
+								45122,	-- Oathsworn Captain
+								44924,	-- Oathsworn Myrmidon
+								44932,	-- Oathsworn Pathfinder
+								45062,	-- Oathsworn Scorpid Keeper
+								44981,	-- Oathsworn Skinner
+								45097,	-- Oathsworn Tamer
+								44926,	-- Oathsworn Wanderer
+								44896,	-- Pygmy Brute
+								44898,	-- Pygmy Firebreather
+								44897,	-- Pygmy Scout
+							},
 						}),
+						i(55884, {	-- Mirage Ring
+							["crs"] = {
+								45007,	-- Enslaved Bandit
+								45001,	-- Enslaved Bandit
+								44982,	-- Neferset Darkcaster
+								44976,	-- Neferset Plaguebringer
+								44980,	-- Neferset Theurgist
+								44977,	-- Neferset Torturer
+								44922,	-- Oathsworn Axemaster
+								45122,	-- Oathsworn Captain
+								44924,	-- Oathsworn Myrmidon
+								44932,	-- Oathsworn Pathfinder
+								45062,	-- Oathsworn Scorpid Keeper
+								44981,	-- Oathsworn Skinner
+								45097,	-- Oathsworn Tamer
+								44926,	-- Oathsworn Wanderer
+								44896,	-- Pygmy Brute
+								44898,	-- Pygmy Firebreather
+								44897,	-- Pygmy Scout
+							},
+						}),
+						i(55882, {	-- Oasis Bracers
+							["crs"] = {
+								45007,	-- Enslaved Bandit
+								45001,	-- Enslaved Bandit
+								44982,	-- Neferset Darkcaster
+								44976,	-- Neferset Plaguebringer
+								44980,	-- Neferset Theurgist
+								44977,	-- Neferset Torturer
+								44922,	-- Oathsworn Axemaster
+								45122,	-- Oathsworn Captain
+								44924,	-- Oathsworn Myrmidon
+								44932,	-- Oathsworn Pathfinder
+								45062,	-- Oathsworn Scorpid Keeper
+								44981,	-- Oathsworn Skinner
+								45097,	-- Oathsworn Tamer
+								44926,	-- Oathsworn Wanderer
+								44896,	-- Pygmy Brute
+								44898,	-- Pygmy Firebreather
+								44897,	-- Pygmy Scout
+							},
+						}),
+					}),
+					d(1,   {	-- Normal
 						cr(44577, e(117, {	-- General Husam
 							i(56382),	-- Siliza's Spear
 							i(157600),	-- Necklace of Rumbling Earth
@@ -138,54 +159,10 @@ _.Instances =
 							}),	
 						})),
 					}),
-					d(2, {	-- Heroic
+					d(2,   {	-- Heroic
 						["lvl"] = 85,
 						["ignoreBonus"] = true,
 						["groups"] = {
-							n(0, {	-- Zone Drop
-								i(55884, {	-- Mirage Ring
-									["crs"] = {
-										45007,	-- Enslaved Bandit
-										45001,	-- Enslaved Bandit
-										44982,	-- Neferset Darkcaster
-										44976,	-- Neferset Plaguebringer
-										44980,	-- Neferset Theurgist
-										44977,	-- Neferset Torturer
-										44922,	-- Oathsworn Axemaster
-										45122,	-- Oathsworn Captain
-										44924,	-- Oathsworn Myrmidon
-										44932,	-- Oathsworn Pathfinder
-										45062,	-- Oathsworn Scorpid Keeper
-										44981,	-- Oathsworn Skinner
-										45097,	-- Oathsworn Tamer
-										44926,	-- Oathsworn Wanderer
-										44896,	-- Pygmy Brute
-										44898,	-- Pygmy Firebreather
-										44897,	-- Pygmy Scout
-									},
-								}),
-								i(55882, {	-- Oasis Bracers
-									["crs"] = {
-										45007,	-- Enslaved Bandit
-										45001,	-- Enslaved Bandit
-										44982,	-- Neferset Darkcaster
-										44976,	-- Neferset Plaguebringer
-										44980,	-- Neferset Theurgist
-										44977,	-- Neferset Torturer
-										44922,	-- Oathsworn Axemaster
-										45122,	-- Oathsworn Captain
-										44924,	-- Oathsworn Myrmidon
-										44932,	-- Oathsworn Pathfinder
-										45062,	-- Oathsworn Scorpid Keeper
-										44981,	-- Oathsworn Skinner
-										45097,	-- Oathsworn Tamer
-										44926,	-- Oathsworn Wanderer
-										44896,	-- Pygmy Brute
-										44898,	-- Pygmy Firebreather
-										44897,	-- Pygmy Scout
-									},
-								}),
-							}),
 							cr(44577, e(117, {	-- General Husam
 								i(56382),	-- Siliza's Spear
 								i(157600),	-- Necklace of Rumbling Earth
