@@ -907,6 +907,13 @@ _.Zones =
 							2644,	-- Vilebranch Hideskinner						
 						},
 					}),
+					{	-- Formula: Enchant Bracer - Greater Intellect
+						["itemID"] = 16214,
+						["crs"] = {
+							2642,	-- Vilebranch Shadowcaster
+						},
+						["u"] = 7, -- now learned from trainer, formula was removed from game
+					},
 				}),	
 				n(-40, {	-- Legacy
 					["groups"] = {

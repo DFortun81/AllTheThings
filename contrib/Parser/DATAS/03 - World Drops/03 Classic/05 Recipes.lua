@@ -30,7 +30,7 @@ _.WorldDrops =
 					i(13487),	-- Recipe: Transmute Water to Undeath
 					i(9294),	-- Recipe: Wildvine Potion
 				}),
-				n(-181, { -- Blacksmithing
+				n(-181, { 	-- Blacksmithing
 					{	-- Plans: Bleakwood Hew
 						["itemID"] = 12817,	-- Plans: Bleakwood Hew
 						["spellID"] = 0,	-- This is available via 142346, need to delink the old plans from the recipe
@@ -249,15 +249,31 @@ _.WorldDrops =
 					},
 				}),
 				prof(333, {	-- Enchanting
+					i(11038),	-- Formula: Enchant 2H Weapon - Lesser Versatility
+					{			-- Formula: Enchant Boots - Greater Agility
+						["itemID"] = 16245,	-- Formula: Enchant Boots - Greater Agility
+						["u"] = 7, -- now learned from trainer, formula was removed from game
+					},
 					i(16215),	-- Formula: Enchant Boots - Greater Stamina
 					i(11167),	-- Formula: Enchant Boots - Lesser Versatility
+					i(16220),	-- Formula: Enchant Boots - Versatility
 					i(11225),	-- Formula: Enchant Bracer - Greater Stamina
 					i(11204),	-- Formula: Enchant Bracer - Greater Versatility
+					i(6375),	-- Formula: Enchant Bracer - Lesser Versatility
+					i(6347),	-- Formula: Enchant Bracer - Minor Strength
+					i(6344),	-- Formula: Enchant Bracer - Minor Versatility
+					i(16251),	-- Formula: Enchant Bracer - Superior Stamina
 					i(16218),	-- Formula: Enchant Bracer - Superior Versatility
+					i(6342),	-- Formula: Enchant Chest - Minor Mana 
+					i(11039),	-- Formula: Enchant Cloak - Minor Agility
+					i(11226),	-- Formula: Enchant Gloves - Riding Skill
+					i(11168),	-- Formula: Enchant Shield - Lesser Parry
+					i(11081),	-- Formula: Enchant Shield - Lesser Protection
 					i(11202),	-- Formula: Enchant Shield - Stamina
 					i(11208),	-- Formula: Enchant Weapon - Demonslaying
 					i(11164),	-- Formula: Enchant Weapon - Lesser Beastslayer
 					i(11165),	-- Formula: Enchant Weapon - Lesser Elemental Slayer
+					i(6348),	-- Formula: Enchant Weapon - Minor Beastslayer
 				}),
 				prof(202, {	-- Engineering
 					i(16055),	-- Schematic: Arcane Bomb

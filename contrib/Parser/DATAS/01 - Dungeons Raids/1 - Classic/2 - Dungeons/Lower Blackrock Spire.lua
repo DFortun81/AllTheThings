@@ -39,6 +39,12 @@ _.Instances =
 						i(17683, {	-- Book: Gift of the Wild Rank 2
 						--	["description"] = "This can only drop from Elites."	-- Commenting it out for Live, will be relevant for Classic
 						}),
+						i(16244, {			-- Formula: Enchant Gloves - Greater Strength
+							["crs"] = {
+								9198,	-- Spirestone Mystic
+							},
+							["u"] = 7, -- now learned from trainer, formula was removed from game
+						}),
 						i(16250, {			-- Formula: Enchant Weapon - Superior Striking
 							["crs"] = {
 								9216,	-- Spirestone Warlord

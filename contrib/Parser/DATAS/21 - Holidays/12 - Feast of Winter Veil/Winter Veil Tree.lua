@@ -119,6 +119,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 					q(8769, { 	-- A Ticking Present
 						["groups"] = {
 							i(21327, { -- Ticking Present
+								i(17725), -- Formula: Enchant Weapon - Winter's Might
 								i(17709), -- Recipe: Elixir of Frost Power
 								i(17722), -- Pattern: Gloves of the Greatfather
 								i(17724), -- Pattern: Green Holiday Shirt

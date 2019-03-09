@@ -77,6 +77,18 @@ _.WorldDrops =
 						["itemID"] = 23623,	-- Plans: Storm Helm
 					},
 				}),
+				prof(333, {	-- Enchanting
+					i(28280),	-- Formula: Enchant Boots - Boar's Speed (BoE version)
+					i(28279),	-- Formula: Enchant Boots - Cat's Swiftness (BoE version)
+					i(22542),	-- Formula: Enchant Boots - Vitality
+					i(22532),	-- Formula: Enchant Bracer - Versatility Prime
+					i(16253),	-- Formula: Enchant Chest - Greater Stats
+					i(28270),	-- Formula: Enchant Chest - Major Resilience
+					i(22540),	-- Formula: Enchant Shield - Parry
+					i(22557),	-- Formula: Enchant Weapon - Battlemaster
+					i(22553),	-- Formula: Enchant Weapon - Potency
+					i(22558),	-- Formula: Enchant Weapon - Spellsurge
+				}),
 				n(-183, {	-- Engineering
 					i(23802),	-- Schematic: Ornate Khorium Rifle
 					i(23804),	-- Schematic: Power Amplification Goggles

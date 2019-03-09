@@ -1348,7 +1348,19 @@ _.Zones =
 				n(-40, {	-- Legacy
 					["groups"] = {
 						n(0, {	-- Zone Drops
-							i(13479, {
+							i(16242, {	-- Formula: Enchant Chest - Major Mana
+								["crs"] = {
+									9452,	-- Scarlet Enchanter
+								},
+								["u"] = 7, -- now learned from trainer, formula was removed from game
+							}),
+							i(16222, {	-- Formula: Enchant Shield - Superior Versatility (formerly Superior Spirit)
+								["crs"] = {
+									9447,	-- Scarlet Warder
+								},
+								["u"] = 2,
+							}),
+							i(13479, {	-- Recipe: Elixir of the Sages
 								["crs"] = {
 									9451,	-- Scarlet Archmage
 									9450,	-- Scarlet Curate
