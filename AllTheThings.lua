@@ -1370,13 +1370,14 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 					else
 						right = L["NOT_COLLECTED_ICON"];
 					end
-				elseif group.trackable then
-					if group.saved then
-						if app.Settings:Get("Show:CollectedThings") then
-							right = L["COMPLETE_ICON"];
+					if group.trackable then
+						if group.saved then
+							if app.Settings:Get("Show:CollectedThings") then
+								right = L["COMPLETE_ICON"];
+							end
+						else
+							right = L["NOT_COLLECTED_ICON"];
 						end
-					else
-						right = L["NOT_COLLECTED_ICON"];
 					end
 				elseif group.visible then
 					right = "---";
