@@ -1892,7 +1892,9 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		if #info > 0 then
 			local uniques, dupes = {}, {};
 			for i,item in ipairs(info) do
-				if not dupes[item.left] then
+				if not item.left then
+					tinsert(uniques, item);
+				elseif not dupes[item.left] then
 					dupes[item.left] = true;
 					tinsert(uniques, item);
 				end
