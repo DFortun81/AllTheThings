@@ -4269,8 +4269,8 @@ _.Zones =
 								un(2, i(67462)),	-- Vicious Gladiator's Heavy Crossbow
 								un(2, i(67453)),	-- Vicious Gladiator's Decapitator
 								un(2, i(67452)),	-- Vicious Gladiator's Bonegrinder
-								un(2, i(67451)),	-- Vicious Gladiator's Pike
 								un(2, i(67447)),	-- Vicious Gladiator's Greatsword
+								un(2, i(67451)),	-- Vicious Gladiator's Pike
 								un(2, i(67448)),	-- Vicious Gladiator's Staff
 								un(2, i(67449)),	-- Vicious Gladiator's Engery Staff
 								un(2, i(67450)),	-- Vicious Gladiator's Battle  Staff
@@ -4380,6 +4380,38 @@ _.Zones =
 								un(2, i(65606)),	-- Vicious Gladiator's greaves of meditation
 								un(2, i(65607)),	-- Vicious Gladiator's warboots of cruelty
 								un(2, i(65608)),	-- Vicious Gladiator's warboots of alacrity
+								un(2, i(70515)),	-- Vicious Gladiator's armwraps of accuracy. S10 Version
+								un(2, i(70516)),	-- Vicious Gladiator's armwrapf of alacrity. S10 Version
+								un(2, i(70523)),	-- Vicious Gladiator's belt of cruelty. S10 Version
+								un(2, i(70524)),	-- Vicious Gladiator's belt of mediation. S10 Version
+								un(2, i(70525)),	-- Vicious Gladiator's bindings of meditation. S10 Version
+								un(2, i(70526)),	-- Vicious Gladiator's bindings of prowess. S10 Version
+								un(2, i(70527)),	-- Vicious Gladiator's boots of alacrity. S10 Version
+								un(2, i(70528)),	-- Vicious Gladiator's boots of cruelty. S10 Version
+								un(2, i(70550)),	-- Vicious Gladiator's dragonhide gloves. S10 Version
+								un(2, i(70551)),	-- Vicious Gladiator's dragonhide helm. S10 Version
+								un(2, i(70552)),	-- Vicious Gladiator's dragonhide legguards. S10 Version
+								un(2, i(70553)),	-- Vicious Gladiator's dragonhide robes. S10 Version
+								un(2, i(70554)),	-- Vicious Gladiator's dragonhide spaulders. S10 Version
+								un(2, i(70571)),	-- Vicious Gladiator's footguards of alacrity. S10 Version
+								un(2, i(70572)),	-- Vicious Gladiator's footguards of mediation. S10 Version
+								un(2, i(70580)),	-- Vicious Gladiator's kodohide gloves. S10 Version
+								un(2, i(70581)),	-- Vicious Gladiator's kodohide helm. S10 Version
+								un(2, i(70582)),	-- Vicious Gladiator's kodohide legguards. S10 Version
+								un(2, i(70583)),	-- Vicious Gladiator's kodohide robes. S10 Version
+								un(2, i(70584)),	-- Vicious Gladiator's kodohide spaulders. S10 Version
+								un(2, i(70585)),	-- Vicious Gladiator's leather gloves. S10 Version
+								un(2, i(70586)),	-- Vicious Gladiator's leather helm. S10 Version
+								un(2, i(70587)),	-- Vicious Gladiator's leather legguards. S10 Version
+								un(2, i(70588)),	-- Vicious Gladiator's leather spaulders. S10 Version
+								un(2, i(70589)),	-- Vicious Gladiator's leather tunic. S10 Version
+								un(2, i(70663)),	-- Vicious Gladiator's waistband of accuracy. S10 Version
+								un(2, i(70664)),	-- Vicious Gladiator's waistband of cruelty. S10 Version
+								un(2, i(70671)),	-- Vicious Gladiator's wyrmhide gloves. S10 Version
+								un(2, i(70672)),	-- Vicious Gladiator's wyrmhide helm. S10 Version
+								un(2, i(70673)),	-- Vicious Gladiator's wyrmhide legguards. S10 Version
+								un(2, i(70674)),	-- Vicious Gladiator's wyrmhide robes. S10 Version
+								un(2, i(70675)),	-- Vicious Gladiator's wyrmhide spaulders. S10 Version
 								un(2, i(70542)),	-- Vicious Gladiator's Cloak of Alacrity. S10 Version
 								un(2, i(70543)),	-- Vicious Gladiator's Cloak of Prowess. S10 Version
 								un(2, i(70555)),	-- Vicious Gladiator's Drape of Diffusion. S10 Version
@@ -4389,6 +4421,7 @@ _.Zones =
 								un(2, i(70532)),	-- Vicious Gladiator's Cape of Prowess. S10 Version
 								un(2, i(70511)),	-- Vicious Gladiator's Armsband of Mediation. S10 Version
 								un(2, i(70512)),	-- Vicious Gladiator's Armsband of Prowess. S10 Version
+								un(2, i(70590)),	-- Vicious Gladiator's Linked Armor. S10 Version
 								un(2, i(70590)),	-- Vicious Gladiator's Linked Armor. S10 Version
 								un(2, i(70591)),	-- Vicious Gladiator's Linked Gauntlets. S10 Version
 								un(2, i(70592)),	-- Vicious Gladiator's Linked Helm. S10 Version
