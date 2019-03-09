@@ -292,7 +292,14 @@ _.Zones =
 						i(139929), -- Saberguard Belt
 						i(139938), -- Bladedancer's Pantaloons
 						i(139935), -- Leyman's Boots
-						i(136744), -- Shadow Stalker Shoulders
+						i(136742),	-- Shadow Stalker Hood
+						i(136744),	-- Shadow Stalker Shoulders
+						i(136743),	-- Shadow Stalker Vest
+						i(136738),	-- Shadow Stalker Bindings
+						i(136741),	-- Shadow Stalker Gloves
+						i(136745),	-- Shadow Stalker Belt
+						i(136740),	-- Shadow Stalker Pants
+						i(136739),	-- Shadow Stalker Boots
 					}),
 					n(-45, { -- Mail
 						n(-3274, { -- Ley Dragoon Set
