@@ -571,7 +571,6 @@ _.Zones =
 							un(2, i(70511)),	-- Vicious Gladiator's Armsband of Mediation. S10 Version
 							un(2, i(70512)),	-- Vicious Gladiator's Armsband of Prowess. S10 Version
 							un(2, i(70590)),	-- Vicious Gladiator's Linked Armor. S10 Version
-							un(2, i(70590)),	-- Vicious Gladiator's Linked Armor. S10 Version
 							un(2, i(70591)),	-- Vicious Gladiator's Linked Gauntlets. S10 Version
 							un(2, i(70592)),	-- Vicious Gladiator's Linked Helm. S10 Version
 							un(2, i(70593)),	-- Vicious Gladiator's Linked Legs. S10 Version
