@@ -632,6 +632,13 @@ _.Zones =
 							un(2, i(70641)),	-- Vicious Gladiator's sabatons of cruelty. S10 Version
 							un(2, i(70669)),	-- Vicious Gladiator's wristguards of accuracy. S10 Version
 							un(2, i(70670)),	-- Vicious Gladiator's wristguards of alacrity. S10 Version
+							un(2, i(70538)),	-- Vicious Gladiator's choker of accuracy. S10 Version
+							un(2, i(70539)),	-- Vicious Gladiator's choker of proficiency. S10 Version
+							un(2, i(70613)),	-- Vicious Gladiator's necklace of proficiency. S10 Version
+							un(2, i(70614)),	-- Vicious Gladiator's necklace of prowess. S10 Version
+							un(2, i(70620)),	-- Vicious Gladiator's pendant of alacrity. S10 Version
+							un(2, i(70621)),	-- Vicious Gladiator's pendant of diffusion. S10 Version
+							un(2, i(70622)),	-- Vicious Gladiator's pendant of meditation. S10 Version
 							},
 						["u"] = 43,
 					}),

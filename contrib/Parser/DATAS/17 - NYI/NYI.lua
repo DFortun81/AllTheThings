@@ -600,6 +600,9 @@ _.NeverImplemented =
 			un(1, i(108822)), -- 6.0 PH Cloak STR
 			un(1, i(39828)),	-- Punisher's Cloak
 			un(1, i(35876)),	-- Talbuk Cape
+			un(1, i(60782)),	-- Vicious Gladiator's Cloak of Conquest
+			un(1, i(60784)),	-- Vicious Gladiator's Cloak of Dominance
+			un(1, i(60785)),	-- Vicious Gladiator's Cloak of Dominance
 			un(1, i(37174)),	-- Rippling Azure Cloak
 			un(1, i(155384)),	-- Singed Skycaller Drape (NEver added)
 			un(1, i(108823)), -- 6.0 PH Cloak Int
