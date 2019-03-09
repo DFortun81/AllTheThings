@@ -5527,7 +5527,7 @@ function app.FilterItemSourceUnique(sourceInfo, allSources)
 						if sourceID ~= sourceInfo.sourceID and C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(sourceID) then
 							local otherSource = C_TransmogCollection_GetSourceInfo(sourceID);
 							if otherSource.categoryID == sourceInfo.categoryID then
-								if otherSource.invType == sourceInfo.invType or sourceInfo.categoryID == 4 --[[CHEST: Robe vs Armor]] then
+								if otherSource.invType == sourceInfo.invType or sourceInfo.categoryID == 4 --[[CHEST: Robe vs Armor]] or C_Transmog.GetSlotForInventoryType(otherSource.invType) == C_Transmog.GetSlotForInventoryType(sourceInfo.invType) then
 									local otherItem = SearchForSourceIDQuickly(sourceID);
 									if otherItem and (item.f == otherItem.f or item.f == 2 or otherItem.f == 2) then
 										if otherItem.c then
@@ -5563,7 +5563,7 @@ function app.FilterItemSourceUnique(sourceInfo, allSources)
 						if sourceID ~= sourceInfo.sourceID and C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(sourceID) then
 							local otherSource = C_TransmogCollection_GetSourceInfo(sourceID);
 							if otherSource.categoryID == sourceInfo.categoryID then
-								if otherSource.invType == sourceInfo.invType or sourceInfo.categoryID == 4 --[[CHEST: Robe vs Armor]] then
+								if otherSource.invType == sourceInfo.invType or sourceInfo.categoryID == 4 --[[CHEST: Robe vs Armor]] or C_Transmog.GetSlotForInventoryType(otherSource.invType) == C_Transmog.GetSlotForInventoryType(sourceInfo.invType) then
 									local otherItem = SearchForSourceIDQuickly(sourceID);
 									if otherItem and (item.f == otherItem.f or item.f == 2 or otherItem.f == 2) then
 										if otherItem.c then
@@ -5602,7 +5602,7 @@ function app.FilterItemSourceUnique(sourceInfo, allSources)
 						if sourceID ~= sourceInfo.sourceID and C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(sourceID) then
 							local otherSource = C_TransmogCollection_GetSourceInfo(sourceID);
 							if otherSource.categoryID == sourceInfo.categoryID then
-								if otherSource.invType == sourceInfo.invType or sourceInfo.categoryID == 4 --[[CHEST: Robe vs Armor]] then
+								if otherSource.invType == sourceInfo.invType or sourceInfo.categoryID == 4 --[[CHEST: Robe vs Armor]] or C_Transmog.GetSlotForInventoryType(otherSource.invType) == C_Transmog.GetSlotForInventoryType(sourceInfo.invType) then
 									local otherItem = SearchForSourceIDQuickly(sourceID);
 									if otherItem and (item.f == otherItem.f or item.f == 2 or otherItem.f == 2) then
 										if otherItem.c then
@@ -5635,7 +5635,7 @@ function app.FilterItemSourceUnique(sourceInfo, allSources)
 						if sourceID ~= sourceInfo.sourceID and C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(sourceID) then
 							local otherSource = C_TransmogCollection_GetSourceInfo(sourceID);
 							if otherSource.categoryID == sourceInfo.categoryID then
-								if otherSource.invType == sourceInfo.invType or sourceInfo.categoryID == 4 --[[CHEST: Robe vs Armor]] then
+								if otherSource.invType == sourceInfo.invType or sourceInfo.categoryID == 4 --[[CHEST: Robe vs Armor]] or C_Transmog.GetSlotForInventoryType(otherSource.invType) == C_Transmog.GetSlotForInventoryType(sourceInfo.invType) then
 									local otherItem = SearchForSourceIDQuickly(sourceID);
 									if otherItem and (item.f == otherItem.f or item.f == 2 or otherItem.f == 2) then
 										if otherItem.c then
