@@ -397,6 +397,7 @@ _.NeverImplemented =
 			un(1, i(109317)),	-- Unknown
 			un(1, i(109318)),	-- Unknown
 			un(1, i(109350)),	-- Unknown
+			un(1, i(43475)),	-- Grips of the chilling revenant
 			un(1, i(109351)),	-- Unknown
 			un(1, i(109352)),	-- Unknown
 			un(1, i(109353)),	-- Unknown
@@ -710,6 +711,7 @@ _.NeverImplemented =
 		un(1, i(79907)),	-- Spear of Xuen (Old Version)
 		un(1, i(129742)),	-- Badge of timewaking justice cap
 		un(1, i(130148)),	-- Unknown
+		un(1, i(100949)),	-- Thunderlord Cache Reward
 		un(1, spell(5169)),	-- defias disguise
 		un(1, i(45818)),	-- Unknown
 		un(1, i(46056)),	-- Unknown

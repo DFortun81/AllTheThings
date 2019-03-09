@@ -1946,6 +1946,35 @@ _.Zones =
 							un(2, i(115967)),	-- Primal Gladiator's copperskin waistband
 							un(2, i(115970)),	-- Primal Gladiator's dragonhide footguards
 							un(2, i(115971)),	-- Primal Gladiator's dragonhide belt
+							-- Season 1 Plate
+							un(2, i(115837)),	-- Primal Gladiator's dreadplate chestpiece
+							un(2, i(115838)),	-- Primal Gladiator's dreadplate gauntlets
+							un(2, i(115839)),	-- Primal Gladiator's dreadplate helm
+							un(2, i(115840)),	-- Primal Gladiator's dreadplate legguards
+							un(2, i(115841)),	-- Primal Gladiator's dreadplate shoulders
+							un(2, i(115892)),	-- Primal Gladiator's scaled chestpiece
+							un(2, i(115893)),	-- Primal Gladiator's scaled gauntlets
+							un(2, i(115894)),	-- Primal Gladiator's scaled helm
+							un(2, i(115895)),	-- Primal Gladiator's scaled legguards
+							un(2, i(115896)),	-- Primal Gladiator's scaled shoulders
+							un(2, i(115897)),	-- Primal Gladiator's scaled clasp
+							un(2, i(115898)),	-- Primal Gladiator's ornamented clasp
+							un(2, i(115899)),	-- Primal Gladiator's ornamented greaves
+							un(2, i(115900)),	-- Primal Gladiator's scaled greaves
+							un(2, i(115901)),	-- Primal Gladiator's ornamented chestguard
+							un(2, i(115902)),	-- Primal Gladiator's ornamented gloves
+							un(2, i(115903)),	-- Primal Gladiator's ornamented headcover
+							un(2, i(115904)),	-- Primal Gladiator's ornamented legplates
+							un(2, i(115905)),	-- Primal Gladiator's ornamented spaulders
+							un(2, i(115906)),	-- Primal Gladiator's dreadplate girdle
+							un(2, i(115907)),	-- Primal Gladiator's plate girdle
+							un(2, i(115908)),	-- Primal Gladiator's plate warboots
+							un(2, i(115909)),	-- Primal Gladiator's dreadplatewarboots
+							un(2, i(115961)),	-- Primal Gladiator's plate chestpiece
+							un(2, i(115962)),	-- Primal Gladiator's plate gauntlets
+							un(2, i(115963)),	-- Primal Gladiator's plate helm
+							un(2, i(115964)),	-- Primal Gladiator's plate legguards
+							un(2, i(115965)),	-- Primal Gladiator's plate shoulders
 							-- Season 2 Cloth
 							un(2, i(125638)),	-- wild Gladiator's silk cord
 							un(2, i(125639)),	-- wild Gladiator's felweave cord
@@ -2368,6 +2397,35 @@ _.Zones =
 							un(2, i(115967)),	-- Primal Gladiator's copperskin waistband
 							un(2, i(115970)),	-- Primal Gladiator's dragonhide footguards
 							un(2, i(115971)),	-- Primal Gladiator's dragonhide belt
+							-- Season 1 Plate
+							un(2, i(115837)),	-- Primal Gladiator's dreadplate chestpiece
+							un(2, i(115838)),	-- Primal Gladiator's dreadplate gauntlets
+							un(2, i(115839)),	-- Primal Gladiator's dreadplate helm
+							un(2, i(115840)),	-- Primal Gladiator's dreadplate legguards
+							un(2, i(115841)),	-- Primal Gladiator's dreadplate shoulders
+							un(2, i(115892)),	-- Primal Gladiator's scaled chestpiece
+							un(2, i(115893)),	-- Primal Gladiator's scaled gauntlets
+							un(2, i(115894)),	-- Primal Gladiator's scaled helm
+							un(2, i(115895)),	-- Primal Gladiator's scaled legguards
+							un(2, i(115896)),	-- Primal Gladiator's scaled shoulders
+							un(2, i(115897)),	-- Primal Gladiator's scaled clasp
+							un(2, i(115898)),	-- Primal Gladiator's ornamented clasp
+							un(2, i(115899)),	-- Primal Gladiator's ornamented greaves
+							un(2, i(115900)),	-- Primal Gladiator's scaled greaves
+							un(2, i(115901)),	-- Primal Gladiator's ornamented chestguard
+							un(2, i(115902)),	-- Primal Gladiator's ornamented gloves
+							un(2, i(115903)),	-- Primal Gladiator's ornamented headcover
+							un(2, i(115904)),	-- Primal Gladiator's ornamented legplates
+							un(2, i(115905)),	-- Primal Gladiator's ornamented spaulders
+							un(2, i(115906)),	-- Primal Gladiator's dreadplate girdle
+							un(2, i(115907)),	-- Primal Gladiator's plate girdle
+							un(2, i(115908)),	-- Primal Gladiator's plate warboots
+							un(2, i(115909)),	-- Primal Gladiator's dreadplatewarboots
+							un(2, i(115961)),	-- Primal Gladiator's plate chestpiece
+							un(2, i(115962)),	-- Primal Gladiator's plate gauntlets
+							un(2, i(115963)),	-- Primal Gladiator's plate helm
+							un(2, i(115964)),	-- Primal Gladiator's plate legguards
+							un(2, i(115965)),	-- Primal Gladiator's plate shoulders
 							-- Season 2 Cloth
 							un(2, i(125638)),	-- wild Gladiator's silk cord
 							un(2, i(125639)),	-- wild Gladiator's felweave cord
