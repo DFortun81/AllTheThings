@@ -721,11 +721,15 @@ _.Craftables =
 			}),
 		}),
 		n(-182, { 	-- Enchanting
-			i(11288),	-- Greater Magic Wand
-			i(11290),	-- Greater Mystic Wan
-			i(11287),	-- Lesser Magic Wand
-			i(11289),	-- Lesser Mystic Wand
-			i(11811),	-- Smoking Heart of the Mountain
+			filter(27, { -- Wands
+				i(11288),	-- Greater Magic Wand
+				i(11290),	-- Greater Mystic Wand
+				i(11287),	-- Lesser Magic Wand
+				i(11289),	-- Lesser Mystic Wand
+			}),
+			filter(53, { -- Trinket
+				i(11811),	-- Smoking Heart of the Mountain
+			}),
 		}),
 		n(-183, { 	-- Engineering
 			{	-- Plans: Inlaid Mithril Cylinder

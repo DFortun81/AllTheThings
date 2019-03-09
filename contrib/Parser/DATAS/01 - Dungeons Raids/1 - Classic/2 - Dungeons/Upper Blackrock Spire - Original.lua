@@ -63,6 +63,9 @@ _.Instances =
 									un(7, i(16703)),	-- Dreadmist Bracers
 									un(2, i(13371)),	-- Father Flame
 								}),
+								n(10317, { 	-- Blackhand Elite
+									un(7, i(16247)),	-- Formula: Enchant 2H Weapon - Superior Impact
+								}),
 								n(10319, { 	-- Blackhand Iron Guard
 									un(7, i(16735)),	-- Bracers of Valor
 								}),

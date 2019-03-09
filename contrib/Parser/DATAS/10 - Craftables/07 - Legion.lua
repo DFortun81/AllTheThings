@@ -221,6 +221,13 @@ _.Craftables =
 				},
 			}),
 		}),
+		n(-182, { 	-- Enchanting
+			n(-25, { -- Pet Battles
+				i(128533),	-- Enchanted Cauldron
+				i(128535),	-- Enchanted Pen
+				i(128534),	-- Enchanted Torch
+			}),
+		}),
 		n(-183, { -- Engineering
 			n(-494, { -- Miscellaneous
 				n(101527, { -- Blingtron 6000

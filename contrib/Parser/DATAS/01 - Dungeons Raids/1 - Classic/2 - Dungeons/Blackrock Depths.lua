@@ -355,6 +355,7 @@ _.Instances =
 							i(22240), 	-- Greaves of Withering Despaire
 						})),
 						cr(9025, e(370, {	-- Lord Roccor
+							un(7, i(11813)), -- Formula: Smoking Heart of the Mountain [old BOE version that was removed]
 							i(45050),	-- Formula: Smoking Heart of the Mountain [BOP]
 							i(11631), 	-- Stoneshell Guard
 							i(22234), 	-- Mantle of Lost Hope

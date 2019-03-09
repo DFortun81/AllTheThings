@@ -314,6 +314,12 @@ _.Craftables =
 				},
 			}),
 		}),
+		n(-182, { 	-- Enchanting
+			n(-25, { -- Pet Battles
+				i(67274),	-- Enchanted Lantern
+				i(67275),	-- Magic Lamp
+			}),
+		}),
 		n(-183, { 	-- Engineering
 			i(71077),	-- Extreme-Impact Hole Puncher
 			i(59598),	-- Finely-Tuned Throat Needler
