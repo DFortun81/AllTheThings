@@ -1363,7 +1363,7 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 				end
 			elseif paramA and paramB and (not group[paramA] or (group[paramA] and group[paramA] ~= paramB)) then
 				if group.collectible then
-					if group.collected or (group.trackable and group.saved) then
+					if group.collected then
 						if app.Settings:Get("Show:CollectedThings") then
 							right = L["COLLECTED_ICON"];
 						end
