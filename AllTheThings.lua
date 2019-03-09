@@ -2591,8 +2591,12 @@ local function RefreshCollections()
 			-- Unique Mode requires a lot more calculation.
 			for id,group in pairs(fieldCache["s"]) do
 				if not collectedSources[id] then
-					local sourceInfo = C_TransmogCollection_GetSourceInfo(id);
-					if sourceInfo and app.ItemSourceFilter(sourceInfo) then collectedSources[id] = sourceInfo.isCollected and 1 or 2; end
+					if C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(id) then
+						collectedSources[id] = 1;
+					else
+						local sourceInfo = C_TransmogCollection_GetSourceInfo(id);
+						if sourceInfo and app.ItemSourceFilter(sourceInfo) then collectedSources[id] = sourceInfo.isCollected and 1 or 2; end
+					end
 				end
 			end
 		end
