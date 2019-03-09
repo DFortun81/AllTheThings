@@ -232,6 +232,7 @@ _.Zones =
 								}),
 								q(11892, {	--  The Assassination of Harold Lane
 									["groups"] = {
+										ach(561),	-- D.E.H.T.A's Little P.I.T.A.
 										i(38252),	-- Band of Wholesome Preservation
 										i(38251),	-- Ring of Indignant Rage
 										i(38250),	-- Activist's Signet of Blasting
@@ -777,6 +778,7 @@ _.Zones =
 								}),
 								q(11892, {	--  The Assassination of Harold Lane
 									["groups"] = {
+										ach(561),	-- D.E.H.T.A's Little P.I.T.A.
 										i(38252),	-- Band of Wholesome Preservation
 										i(38251),	-- Ring of Indignant Rage
 										i(38250),	-- Activist's Signet of Blasting
@@ -1015,94 +1017,6 @@ _.Zones =
 								}),
 							}),
 						})),
-						ach(561, {		-- D.E.H.T.A's Little P.I.T.A.
-							q(11864, {	--  A Mission Statement
-								["qg"] = 25809,	-- Archdruid Lathorius
-							}),
-							q(11866, {	--  Ears of Our Enemies
-								["qg"] = 25809,	-- Archdruid Lathorius
-								["sourceQuest"] = 11864,
-							}),
-							-- q(11867, {	--  Can't Get Ear-nough... [Repeatable]
-							-- 	["qg"] = 25809,	-- Archdruid Lathorius
-							-- ["sourceQuest"] = 11866,
-							-- }),
-							q(11884, {	-- Nedar, Lord of Rhinos...
-								["groups"] = {
-									i(37203), 	-- Regenerative Cloth
-									i(37406), 	-- Denwatcher's Leggings
-									i(37414), 	-- Farseer's Headpiece
-									i(37520), 	-- Plainkeeper Blockade
-								},
-								["qg"] = 25812,	-- Killinger the Den Watcher
-								["sourceQuest"] = 11864,
-							}),
-							q(11876, {	--  Help Those That Cannot Help Themselves
-								["qg"] = 25809,	-- Archdruid Lathorius
-								["sourceQuest"] = 11864,
-							}),
-							q(11878, {	--  Khu'nok Will Know
-								["qg"] = 25809,	-- Archdruid Lathorius
-								["sourceQuest"] = 11876,
-							}),
-							q(11879, {	-- Kaw the Mammoth Destroyer
-								["groups"] = {
-									i(37005), 	-- D.E.H.T.A. Overshirt
-									i(37007), 	-- Faux Leather Hood
-									i(37008), 	-- Ethical Epaulettes
-									i(37009), 	-- Moral Sabatons
-								},
-								["qg"] = 25862,	-- Khu'nok the Behemoth
-								["sourceQuest"] = 11878,
-							}),
-							q(11865, {	--  Unfit for Death
-								["qg"] = 25811,	-- Zaza
-								["sourceQuest"] = 11864,
-							}),
-							q(11868, {	-- The Culler Cometh
-								["groups"] = {
-									i(36939), 	-- Nymph Stockings
-									i(37002), 	-- Binder's Links
-									i(36998), 	-- Assailant Shroud
-									i(37004), 	-- Plainwatcher Legplates
-								},
-								["qg"] = 25811,	-- Zaza
-								["sourceQuest"] = 11865,
-							}),
-							q(11869, {	--  Happy as a Clam
-								["qg"] = 25810,	-- Hierophant Cenius
-								["sourceQuest"] = 11864,
-							}),
-							q(11870, {	--  The Abandoned Reach
-								["qg"] = 25810,	-- Hierophant Cenius
-								["sourceQuest"] = 11869,
-							}),
-							q(11871, {	--  Not On Our Watch
-								["qg"] = 25838,	-- Hierophant Liandra
-								["sourceQuest"] = 11870,
-							}),
-							q(11872, {	-- The Nefarious Clam Master...
-								["groups"] = {
-									i(37017), 	-- Nimble Blade
-									i(37014), 	-- Rod of Poacher Punishment
-									i(37018), 	-- G.E.H.T.A.
-									i(37019), 	-- Borean Ward
-									i(37016), 	-- Wand of the Keeper
-									i(37015), 	-- Dowsing Rod
-								},
-								["qg"] = 25838,	-- Hierophant Liandra
-								["sourceQuest"] = 11871,
-							}),
-							q(11892, {	--  The Assassination of Harold Lane
-								["groups"] = {
-									i(38252),	-- Band of Wholesome Preservation
-									i(38251),	-- Ring of Indignant Rage
-									i(38250),	-- Activist's Signet of Blasting
-								},
-								["qg"] = 25809,	-- Archdruid Lathorius
-								["sourceQuests"] = {11866,11884,11879,11868,11872},
-							}),
-						}),
 						n(-168, {		-- Other Quests
 							sz(1264, 1, {	-- Temple City of En'kilah
 								i(34815, {	-- Vial of Fresh Blood

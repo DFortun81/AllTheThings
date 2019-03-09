@@ -422,9 +422,13 @@ _.Zones =
 											},
 										}),
 										q(48996, { -- Ending the Madness
-											["groups"] = {	-- TODO:: Find and add remaining azerite gear IDs
+											["groups"] = {
+												i(155404), -- Lastwind Robes
+												i(155407), -- Lastwind Mantle
 												i(155386), -- Resilient Outcast's Hauberk
 												i(155408), -- Resilient Outcasat's Shoulderguards
+												i(155385), -- Exiled Veteran's Cuirass
+												i(155406), -- Exiled Veteran's Pauldrons
 											},
 											["qg"] = 138382, -- Akunda
 											["coord"] = { 52.2, 79.8, 864 }, -- Valley of Sorrows (Vol'dun)
@@ -867,9 +871,11 @@ _.Zones =
 											},
 										}),
 										q(50702, { -- Defeat Jakra'zet
-											["groups"] = {	-- TODO:: Add other azerite armor types
+											["groups"] = {	--
 												i(155398), -- Resilient Outcast's Coif
 												i(161159), -- Resilient Outcast's Spaudlers
+												i(159955), -- Exiled Veteran's Helm
+												i(161158), -- Exiled Veteran's Spaulders
 											},
 											["qg"] = 134803, -- Warguard Rakera
 											["coord"] = { 55.7, 36.6, 864 }, -- The Blood Font (Vol'dun)

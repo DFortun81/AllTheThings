@@ -35,14 +35,18 @@ _.Achievements =
 					h(ach(13056)),	-- Giving a Scrap (Horde)
 					ach(10587), 	-- Hot Swapper
 					ach(9071, {		-- Inspector Gagetzan
-						crit(1),		-- Decoded Message 001-003
-						crit(2),		-- Decoded Message 001-014
-						crit(3),		-- Decoded Message 001-107
-						crit(4),		-- Decoded Message 001-111
-						crit(5),		-- Decoded Message 001-119
-						crit(6),		-- Decoded Message 001-150
-						crit(7),		-- Decoded Message 001-159
-						crit(8),		-- Decoded Message 001-168
+						["groups"] = {
+							i(114002, { -- Encoded Message
+								crit(1),	-- Decoded Message 001-003
+								crit(2),	-- Decoded Message 001-014
+								crit(3),	-- Decoded Message 001-107
+								crit(4),	-- Decoded Message 001-111
+								crit(5),	-- Decoded Message 001-119
+								crit(6),	-- Decoded Message 001-150
+								crit(7),	-- Decoded Message 001-159
+								crit(8),	-- Decoded Message 001-168
+							}),
+						},
 					}),
 					a(ach(12736)),	-- Kul Tiran Master of All
 					ach(10583),		-- Legion Master of All

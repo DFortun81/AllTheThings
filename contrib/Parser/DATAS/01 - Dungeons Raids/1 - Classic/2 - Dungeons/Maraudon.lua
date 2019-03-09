@@ -53,6 +53,9 @@ _.Instances =
 								i(17742),	-- Fungus Shroud Armor
 								i(17767),	-- Bloomsprout Headpiece
 							},
+							["coords"] = {
+								{ 24.0, 75.0, 280 },
+							},
 						}),
 					}),
 					n(-69, { -- Maraudon Portal
