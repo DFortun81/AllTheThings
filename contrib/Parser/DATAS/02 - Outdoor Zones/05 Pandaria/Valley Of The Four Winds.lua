@@ -1803,6 +1803,9 @@ _.Zones =
 					}),
 					na(70101, {	-- Armsmaster Holinka >S13< Elite
 						["groups"] = {
+							un(2, i(91133)),	-- Tyrannical Gladiator's Staff
+							un(2, i(91182)),	-- Tyrannical Gladiator's Battle Staff
+							un(2, i(91207)),	-- Tyrannical Gladiator's Engery Staff
 							un(2, i(91393)),	-- Tyrannical Gladiator's Ripper
 							un(2, i(91397)),	-- Tyrannical Gladiator's Render
 							un(2, i(91130)),	-- Tyrannical Gladiator's Barrier

@@ -851,6 +851,9 @@ _.Zones =
 							}),
 							nh(70108, {	-- Roo Desvin >S13< Elite
 								["groups"] = {
+									un(2, i(94307)),	-- Tyrannical Gladiator's Staff
+									un(2, i(94313)),	-- Tyrannical Gladiator's Battle Staff
+									un(2, i(94320)),	-- Tyrannical Gladiator's Energy Staff
 									un(2, i(91393)),	-- Tyrannical Gladiator's Ripper
 									un(2, i(91397)),	-- Tyrannical Gladiator's Render
 									un(2, i(91130)),	-- Tyrannical Gladiator's Barrier
