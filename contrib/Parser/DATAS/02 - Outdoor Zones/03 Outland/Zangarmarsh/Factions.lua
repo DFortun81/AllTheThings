@@ -97,7 +97,7 @@ _.Zones =
 					}),
 					faction(970, {	-- Sporeggar
 						["groups"] = {
-							ach(900),	-- The Czar of Sporeggarre
+							ach(900),	-- The Czar of Sporeggar
 							n(-17,  {	-- Quests
 								q(9809, {	-- More Glowcaps 
 									["qg"] = 17924,	-- Mshii'fn

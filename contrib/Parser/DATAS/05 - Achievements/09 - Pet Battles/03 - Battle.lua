@@ -212,6 +212,27 @@ _.Achievements =
 						crit(18),		-- One-of-Many (Antoran Wastes)
 					}),
 					ach(12281),		-- Beast Brawler
+					ach(13270, {	-- Beast Mode
+						crit(1),	-- Captain Hermes
+						crit(2),	-- Automated Chaos
+						crit(3),	-- Dilbert McClint
+						crit(4),	-- Fizzie Sparkwhistle
+						crit(5),	-- Michael Skarn
+						crit(6),	-- Ellie Vern
+						crit(7),	-- Leana Darkwind
+						crit(8),	-- Kwint
+						crit(9),	-- Delia Hanako
+						crit(10),	-- Burly
+						crit(11),	-- Lozu
+						crit(12),	-- Grady Prett
+						crit(13),	-- Korval Darkbeard
+						crit(14),	-- Keeyo
+						crit(15),	-- Sizzik
+						crit(16),	-- Kusa
+						crit(17),	-- Karaga
+						crit(18),	-- Talia Sparkbrow
+						crit(19),	-- Zujai
+					}),
 					ach(9687, {		-- Best of the Beasts
 						crit(1),		-- Nightwatcher Merayl (Azsuna)
 						crit(2),		-- Bodhi Sunwayver (Dalaran)
@@ -266,6 +287,27 @@ _.Achievements =
 						crit(18),		-- One-of-Many (Antoran Wastes)
 					}),
 					ach(12284), 	-- Critter Brawler
+					ach(13271, {	-- Critters with Huge Teeth
+						crit(1),	-- Captain Hermes
+						crit(2),	-- Automated Chaos
+						crit(3),	-- Dilbert McClint
+						crit(4),	-- Fizzie Sparkwhistle
+						crit(5),	-- Michael Skarn
+						crit(6),	-- Ellie Vern
+						crit(7),	-- Leana Darkwind
+						crit(8),	-- Kwint
+						crit(9),	-- Delia Hanako
+						crit(10),	-- Burly
+						crit(11),	-- Lozu
+						crit(12),	-- Grady Prett
+						crit(13),	-- Korval Darkbeard
+						crit(14),	-- Keeyo
+						crit(15),	-- Sizzik
+						crit(16),	-- Kusa
+						crit(17),	-- Karaga
+						crit(18),	-- Talia Sparkbrow
+						crit(19),	-- Zujai
+					}),
 					ach(8301, {		-- Deadly Pet Brawler (1000)
 						title(227),		-- Trainer
 						ach(8300, {		-- Brutal Pet Brawler (250)
@@ -315,6 +357,27 @@ _.Achievements =
 						crit(14),		-- Durian Strongfruit (Val'sharah)
 						crit(15),		-- Xorvasc (Val'sharah)
 					}),
+					ach(13272, {	-- Dragons Make Everything Better
+						crit(1),	-- Captain Hermes
+						crit(2),	-- Automated Chaos
+						crit(3),	-- Dilbert McClint
+						crit(4),	-- Fizzie Sparkwhistle
+						crit(5),	-- Michael Skarn
+						crit(6),	-- Ellie Vern
+						crit(7),	-- Leana Darkwind
+						crit(8),	-- Kwint
+						crit(9),	-- Delia Hanako
+						crit(10),	-- Burly
+						crit(11),	-- Lozu
+						crit(12),	-- Grady Prett
+						crit(13),	-- Korval Darkbeard
+						crit(14),	-- Keeyo
+						crit(15),	-- Sizzik
+						crit(16),	-- Kusa
+						crit(17),	-- Karaga
+						crit(18),	-- Talia Sparkbrow
+						crit(19),	-- Zujai
+					}),
 					ach(12282),		-- Elemental Brawler
 					ach(12094, {	-- Elemental Escalation
 						crit(1),		-- Ruinhoof (Krokuun)
@@ -335,6 +398,40 @@ _.Achievements =
 						crit(16),		-- Pilfer (Antoran Wastes)
 						crit(17),		-- Minixis (Antoran Wastes)
 						crit(18),		-- One-of-Many (Antoran Wastes)
+					}),
+					ach(13273, {	-- Element of Success
+						crit(1),	-- Captain Hermes
+						crit(2),	-- Automated Chaos
+						crit(3),	-- Dilbert McClint
+						crit(4),	-- Fizzie Sparkwhistle
+						crit(5),	-- Michael Skarn
+						crit(6),	-- Ellie Vern
+						crit(7),	-- Leana Darkwind
+						crit(8),	-- Kwint
+						crit(9),	-- Delia Hanako
+						crit(10),	-- Burly
+						crit(11),	-- Lozu
+						crit(12),	-- Grady Prett
+						crit(13),	-- Korval Darkbeard
+						crit(14),	-- Keeyo
+						crit(15),	-- Sizzik
+						crit(16),	-- Kusa
+						crit(17),	-- Karaga
+						crit(18),	-- Talia Sparkbrow
+						crit(19),	-- Zujai
+					}),
+					ach(13279, {	-- Family Battler
+						i(165907),	-- Wicker Wraith
+						crit(1),	-- Hobbyist Aquarist
+						crit(2),	-- Beast Mode
+						crit(3),	-- Critters With Huge Teeth
+						crit(4),	-- Dragons Make Everything Better
+						crit(5),	-- Element of Success
+						crit(6),	-- Fun With Flying
+						crit(7),	-- Human Resources
+						crit(8),	-- Magician's Secrets
+						crit(9),	-- Machine Learning
+						crit(10),	-- Not Quite Dead Yet
 					}),
 					ach(12290, {	-- Family Brawler
 						i(156666),		-- Master Trainer's Tabard
@@ -413,6 +510,48 @@ _.Achievements =
 						crit(15),		-- Xorvasc (Val'sharah)
 					}),
 					ach(12286),		-- Flying Brawler
+					ach(13274, {	-- Fun With Flying
+						crit(1),	-- Captain Hermes
+						crit(2),	-- Automated Chaos
+						crit(3),	-- Dilbert McClint
+						crit(4),	-- Fizzie Sparkwhistle
+						crit(5),	-- Michael Skarn
+						crit(6),	-- Ellie Vern
+						crit(7),	-- Leana Darkwind
+						crit(8),	-- Kwint
+						crit(9),	-- Delia Hanako
+						crit(10),	-- Burly
+						crit(11),	-- Lozu
+						crit(12),	-- Grady Prett
+						crit(13),	-- Korval Darkbeard
+						crit(14),	-- Keeyo
+						crit(15),	-- Sizzik
+						crit(16),	-- Kusa
+						crit(17),	-- Karaga
+						crit(18),	-- Talia Sparkbrow
+						crit(19),	-- Zujai
+					}),
+					ach(13280, {	-- Hobbyist Aquarist
+						crit(1),	-- Captain Hermes
+						crit(2),	-- Automated Chaos
+						crit(3),	-- Dilbert McClint
+						crit(4),	-- Fizzie Sparkwhistle
+						crit(5),	-- Michael Skarn
+						crit(6),	-- Ellie Vern
+						crit(7),	-- Leana Darkwind
+						crit(8),	-- Kwint
+						crit(9),	-- Delia Hanako
+						crit(10),	-- Burly
+						crit(11),	-- Lozu
+						crit(12),	-- Grady Prett
+						crit(13),	-- Korval Darkbeard
+						crit(14),	-- Keeyo
+						crit(15),	-- Sizzik
+						crit(16),	-- Kusa
+						crit(17),	-- Karaga
+						crit(18),	-- Talia Sparkbrow
+						crit(19),	-- Zujai
+					}),
 					ach(12289),		-- Humanoid Brawler
 					ach(12096, {	-- Humanoid Havoc
 						crit(1),		-- Ruinhoof (Krokuun)
@@ -434,6 +573,27 @@ _.Achievements =
 						crit(17),		-- Minixis (Antoran Wastes)
 						crit(18),		-- One-of-Many (Antoran Wastes)
 					}),
+					ach(13281, {	-- Human Resources
+						crit(1),	-- Captain Hermes
+						crit(2),	-- Automated Chaos
+						crit(3),	-- Dilbert McClint
+						crit(4),	-- Fizzie Sparkwhistle
+						crit(5),	-- Michael Skarn
+						crit(6),	-- Ellie Vern
+						crit(7),	-- Leana Darkwind
+						crit(8),	-- Kwint
+						crit(9),	-- Delia Hanako
+						crit(10),	-- Burly
+						crit(11),	-- Lozu
+						crit(12),	-- Grady Prett
+						crit(13),	-- Korval Darkbeard
+						crit(14),	-- Keeyo
+						crit(15),	-- Sizzik
+						crit(16),	-- Kusa
+						crit(17),	-- Karaga
+						crit(18),	-- Talia Sparkbrow
+						crit(19),	-- Zujai
+					}),
 					ach(6592, {		-- Legendary Pet Battler (5000)
 						ach(6591),		-- Grand Master Pet Battler (1000)
 						ach(6462),		-- Master Pet Battler (250)
@@ -445,6 +605,27 @@ _.Achievements =
 						ach(6597),		-- Master Pet Brawler (250)
 						ach(6596),		-- Experienced Pet Brawler (50)
 						ach(6595),		-- Pet Brawler (10)
+					}),
+					ach(13277, {	-- Machine Learning
+						crit(1),	-- Captain Hermes
+						crit(2),	-- Automated Chaos
+						crit(3),	-- Dilbert McClint
+						crit(4),	-- Fizzie Sparkwhistle
+						crit(5),	-- Michael Skarn
+						crit(6),	-- Ellie Vern
+						crit(7),	-- Leana Darkwind
+						crit(8),	-- Kwint
+						crit(9),	-- Delia Hanako
+						crit(10),	-- Burly
+						crit(11),	-- Lozu
+						crit(12),	-- Grady Prett
+						crit(13),	-- Korval Darkbeard
+						crit(14),	-- Keeyo
+						crit(15),	-- Sizzik
+						crit(16),	-- Kusa
+						crit(17),	-- Karaga
+						crit(18),	-- Talia Sparkbrow
+						crit(19),	-- Zujai
 					}),
 					ach(12283),		-- Magic Brawler
 					ach(12097, {	-- Magical Mayhem
@@ -466,6 +647,27 @@ _.Achievements =
 						crit(16),		-- Pilfer (Antoran Wastes)
 						crit(17),		-- Minixis (Antoran Wastes)
 						crit(18),		-- One-of-Many (Antoran Wastes)
+					}),
+					ach(13275, {	-- Magician's Secrets
+						crit(1),	-- Captain Hermes
+						crit(2),	-- Automated Chaos
+						crit(3),	-- Dilbert McClint
+						crit(4),	-- Fizzie Sparkwhistle
+						crit(5),	-- Michael Skarn
+						crit(6),	-- Ellie Vern
+						crit(7),	-- Leana Darkwind
+						crit(8),	-- Kwint
+						crit(9),	-- Delia Hanako
+						crit(10),	-- Burly
+						crit(11),	-- Lozu
+						crit(12),	-- Grady Prett
+						crit(13),	-- Korval Darkbeard
+						crit(14),	-- Keeyo
+						crit(15),	-- Sizzik
+						crit(16),	-- Kusa
+						crit(17),	-- Karaga
+						crit(18),	-- Talia Sparkbrow
+						crit(19),	-- Zujai
 					}),
 					ach(9693, {		-- Master of Magic
 						crit(1),		-- Nightwatcher Merayl (Azsuna)
@@ -555,6 +757,27 @@ _.Achievements =
 						crit(15),		-- Xorvasc (Val'sharah)
 					}),
 					ach(6620),		-- No Time To Heal
+					ach(13278, {	-- Not Quite Dead Yet
+						crit(1),	-- Captain Hermes
+						crit(2),	-- Automated Chaos
+						crit(3),	-- Dilbert McClint
+						crit(4),	-- Fizzie Sparkwhistle
+						crit(5),	-- Michael Skarn
+						crit(6),	-- Ellie Vern
+						crit(7),	-- Leana Darkwind
+						crit(8),	-- Kwint
+						crit(9),	-- Delia Hanako
+						crit(10),	-- Burly
+						crit(11),	-- Lozu
+						crit(12),	-- Grady Prett
+						crit(13),	-- Korval Darkbeard
+						crit(14),	-- Keeyo
+						crit(15),	-- Sizzik
+						crit(16),	-- Kusa
+						crit(17),	-- Karaga
+						crit(18),	-- Talia Sparkbrow
+						crit(19),	-- Zujai
+					}),
 					ach(9690, {		-- Ragnaros, Watch and Learn
 						crit(1),		-- Nightwatcher Merayl (Azsuna)
 						crit(2),		-- Bodhi Sunwayver (Dalaran)

@@ -14,12 +14,7 @@ _.Zones =
 							["g"] = {
 								{	-- Tales of de Loa: Akunda
 									["itemID"] = 162628,	-- Tales of de Loa: Akunda
-									["coords"] = {
-										{
-											42.22,
-											62.11
-										},
-									},
+									["coord"] = { 42.22, 62.11 },
 									["g"] = {
 										{
 											["criteriaID"] = 1,	--  Tales of de Loa: Akunda
@@ -28,12 +23,7 @@ _.Zones =
 								},
 								{	-- Tales of de Loa: Kimbul
 									["itemID"] = 163198,	-- Tales of de Loa: Kimbul
-									["coords"] = {
-										{
-											27.70,
-											62.12
-										},
-									},
+									["coord"] = { 27.70, 62.12 },
 									["g"] = {
 										{
 											["criteriaID"] = 7,	--  Tales of de Loa: Kimbul
@@ -42,12 +32,7 @@ _.Zones =
 								},
 								{	-- Tales of de Loa: Sethraliss
 									["itemID"] = 163333,	-- Tales of de Loa: Sethraliss
-									["coords"] = {
-										{
-											49.57,
-											24.43
-										},
-									},
+									["coords"] = { 49.57, 24.43 },
 									["g"] = {
 										{
 											["criteriaID"] = 11,	--  Tales of de Loa: Sethraliss
