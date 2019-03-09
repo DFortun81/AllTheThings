@@ -1467,13 +1467,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				if app.Settings:GetTooltipSetting("Descriptions") and paramA ~= "encounterID" then
 					for i,j in ipairs(group) do
 						if j.description and j[paramA] and j[paramA] == paramB then
-							if info and info[1] and info[1].left then
-								if info[1].left ~= j.description then
-									tinsert(info, 1, { left = j.description, wrap = true, color = "ff66ccff" });
-								end
-							else
-								tinsert(info, 1, { left = j.description, wrap = true, color = "ff66ccff" });
-							end
+							tinsert(info, 1, { left = j.description, wrap = true, color = "ff66ccff" });
 						end
 					end
 				end
