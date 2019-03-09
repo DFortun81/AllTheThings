@@ -211,6 +211,7 @@ _.NeverImplemented =
 			un(1, i(14550)),	-- Bladebane Armguards (Leather)
 			un(1, i(12104)),	-- Brindlethorn Tunic (Leather)
 			un(1, i(5821)),		-- Darkstalker Boots (Leather)
+			un(1, i(37316)),	-- HF28 Leather Physical Legs4
 			un(1, i(25795)),	-- Gloves of Preservation (not added version)
 			un(1, i(56701)),	-- Jinxed Vest (never made it to live)
 			un(1, i(25796)),	-- Lurking Shadow Spaulders (only beta)
@@ -646,6 +647,11 @@ _.NeverImplemented =
 			un(1, i(31932)),	--Unknown
 			un(1, i(31933)),	--Unknown
 			un(1, i(31934)),	--Unknown
+			un(1, i(33198)),	--Unknown
+			un(1, i(33199)),	--Unknown
+			un(1, i(33200)),	--Unknown
+			un(1, i(33201)),	--Unknown
+			un(1, i(37544)),	--Unknown
 		}),
 		filter(52, {	-- Finger
 			un(1, i(4988)),		-- Burning Obsidian Band
@@ -666,6 +672,8 @@ _.NeverImplemented =
 		}),
 		n(-386, {	-- Trinket
 			un(1, i(12805)), -- Orb of Fire
+			un(1, i(25994)),	-- rune of force (only beta)
+			un(1, i(25995)),	-- Star of Sha'naar (only beta)
 			un(1, i(18355)), -- Ferras Collar
 			un(1, i(18438)), -- Sergeant's Mark
 			un(1, i(20084)), -- Hunting Net
@@ -1433,6 +1441,7 @@ _.NeverImplemented =
 			un(1, i(137581)),	-- Test Ashbringer 1
 		--	un(1, i(84717),		-- Dreadful Gladiator's Greatsword (did not make it :( )
 			un(1, i(49457)),	-- Unknown
+			un(1, i(81703)),	-- Glorenzelg, added in 5.0.1 ??
 			un(1, i(64755)),	-- Bloodthirsty Gladiator's Greatsword (Epic BG item never made it out of beta))
 			un(1, i(139621)),	-- The Watcher's Hammer. Used for Lost Edicts of the Watcher Paladin Appearance, actual appearance is gained via a different item
 			un(1, i(137582)),	-- Test Ashbringer 2

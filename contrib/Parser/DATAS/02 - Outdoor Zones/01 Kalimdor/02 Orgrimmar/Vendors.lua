@@ -395,6 +395,7 @@ _.Zones =
 							un(2, i(67453)),	-- Vicious Gladiator's Decapitator
 							un(2, i(67452)),	-- Vicious Gladiator's Bonegrinder
 							un(2, i(67447)),	-- Vicious Gladiator's Greatsword
+							un(2, i(67451)),	-- Vicious Gladiator's Pike
 							un(2, i(67448)),	-- Vicious Gladiator's Staff
 							un(2, i(67449)),	-- Vicious Gladiator's Engery Staff
 							un(2, i(67450)),	-- Vicious Gladiator's Battle  Staff
