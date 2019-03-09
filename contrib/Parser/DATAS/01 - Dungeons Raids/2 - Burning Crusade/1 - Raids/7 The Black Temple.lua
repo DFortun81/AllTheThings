@@ -1237,8 +1237,13 @@ _.Instances =
 							})),
 							cr(22917, e(1590, {	-- Illidan Stormrage
 								ach(697),	-- The Black Temple
-								ach(426, {	-- Warglaives of Azzinoth
-									["classes"] = { 6, 12, 10, 4, 1 },	-- DK, DH, Monk, Rogue, Warrior
+								n(-2000, { -- Twin Blades of Azzinoth
+									["groups"] = {
+										i(32837),	-- Warglaive of Azzinoth (LEGENDARY! MH)
+										i(32838),	-- Warglaive of Azzinoth (LEGENDARY! OH)
+									},
+									["achievementID"] = 426, -- Warglaives of Azzinoth
+									["classes"] = { 1, 4, 6, 10, 12 },	-- Warrior, Rogue, DK, Monk, DH
 								}),
 								i( 31089, {	-- Chestguard of the Forgotten Conqueror
 									i(30990),	-- Lightbringer Breastplate
@@ -1281,8 +1286,6 @@ _.Instances =
 									i(31028),	-- Slayer's Chestguard
 								}),
 								i( 32374),	-- Zhar'doom, Greatstaff ot the Devourer
-								i( 32837),	-- Warglaive of Azzinoth (LEGENDARY!  MH)
-								i( 32838),	-- Warglaive of Azzinoth (LEGENDARY!  OH)
 								i( 32500),	-- Crystal Spire of Karabor
 								i( 32471),	-- Shard of Azzinoth
 								i( 32336),	-- Black Bow of the Betrayer

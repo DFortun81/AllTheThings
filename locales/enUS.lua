@@ -1283,6 +1283,9 @@ AllTheThings.L = {
 		[-1000] = WARDROBE_SETS, 												-- Sets
 		[-1001] = "The Black Vault",
 
+-- Weapon Sets
+		[-2000] = GetSpellInfo(41433),											-- Twin Blades of Azzinoth
+
 -- Other Sets
 		[-3157] = string.format(PLAYER_V_PLAYER_SEASON, 2),						-- Player vs. Player (Battle for Azeroth Season 2)
 		[-3158] = string.format(PLAYER_V_PLAYER_SEASON, 1),						-- Player vs. Player (Battle for Azeroth Season 1)
