@@ -6755,7 +6755,7 @@ local function UpdateVisibleRowData(self)
 		end
 		
 		totalRowCount = totalRowCount + 2;
-		self.ScrollBar:SetMinMaxValues(1, math.max(1, totalRowCount - rowCount));
+		self.ScrollBar:SetMinMaxValues(1, math.max(1, totalRowCount - rowCount - 1));
 		
 		-- If the rows need to be processed again, do so next update.
 		if self.processingLinks then
