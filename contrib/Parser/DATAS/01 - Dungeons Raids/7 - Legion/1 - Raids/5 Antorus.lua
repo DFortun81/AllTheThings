@@ -31,12 +31,12 @@ _.Instances =
 							126916,	-- Felhounds of Sargeras
 							122367,	-- Antoran High Command
 							125562,	-- Eonar the Life-Bender
-							124393,	-- Portal Keeper Hasabel
-							125055,	-- Imonar the Soulhunter
-							125050,	-- Kin'garoth
-							125075,	-- Varimathras
+							122104,	-- Portal Keeper Hasabel (ID confirmed in H)
+							124158,	-- Imonar the Soulhunter (ID confirmed in H)
+							122578,	-- Kin'garoth (ID confirmed in H)
+							122366,	-- Varimathras (ID confirmed in H)
 							122468,	-- The Coven of Shivarra
-							124691,	-- Aggramar
+							121975,	-- Aggramar (ID confirmed in H)
 							124828,	-- Argus the Unmaker
 						},
 						["groups"] = {
@@ -360,7 +360,7 @@ _.Instances =
 									i(152007),	-- Sash of the Gilded Rose									
 									i(151981),	-- Life-Bearing Footpads									
 								})),
-								cr(124393, e(1985, {	-- Portal Keeper Hasabel
+								cr(122104, e(1985, {	-- Portal Keeper Hasabel
 									i(151748),	-- Recipe: Lightweave Breeches (Rank 3)
 									i(152001),	-- Nexus Conductor's Headgear
 									i(152008),	-- Reality-Splitting Wristguards
@@ -370,7 +370,7 @@ _.Instances =
 									i(151990),	-- Portal Keeper's Cincture
 									i(151945),	-- Lady Dacidion's Silk Slippers
 								})),
-								cr(125055, e(2009, {	-- Imonar the Soulhunter
+								cr(124158, e(2009, {	-- Imonar the Soulhunter
 									i(151944),	-- Soulhunter's Cowl
 									i(152416),	-- Shoulderguards of Indomitable Purpose
 									i(151989),	-- Spaulders of the Relentless Tracker									
@@ -399,7 +399,7 @@ _.Instances =
 								111246,	-- Archmage Timear
 							},
 							["groups"] = {
-								cr(125050, e(2004, {	-- Kin'garoth
+								cr(122578, e(2004, {	-- Kin'garoth
 									i(152014),	-- Titan-Subjugator's Visage
 									i(151948),	-- Magma-Spattered Smock
 									i(152280),	-- Scalding Shatterguards
@@ -417,10 +417,7 @@ _.Instances =
 									i(152132),	-- Serpentstalker Grips									
 									i(152412),	-- Depraved Machinist's Footpads
 								})),
-								cr(125075, e(1983, {	-- Varimathras
-									["crs"] = {
-										122366,	-- Varimathras (Crieve)
-									},
+								cr(122366, e(1983, {	-- Varimathras
 									["groups"] = {
 										i(151995),	-- Robes of the Forsaken Dreadlord
 										i(151979),	-- Vest of Unfathomable Anguish
@@ -458,7 +455,7 @@ _.Instances =
 								111246,	-- Archmage Timear
 							},
 							["groups"] = {
-								cr(124691, e(1984, {	-- Aggramar
+								cr(121975, e(1984, {	-- Aggramar
 									i(152127),	-- Bearmantle Headdress
 									i(152163),	-- Cavalier Hat of the Dashing Scoundrel
 									i(152145),	-- Douli of Chi'Ji
@@ -775,7 +772,7 @@ _.Instances =
 							i(152007),	-- Sash of the Gilded Rose
 							i(151981),	-- Life-Bearing Footpads
 						})),
-						cr(124393, e(1985, {	-- Portal Keeper Hasabel
+						cr(122104, e(1985, {	-- Portal Keeper Hasabel
 							i(151748),	-- Recipe: Lightweave Breeches (Rank 3)
 							i(152001),	-- Nexus Conductor's Headgear
 							i(152008),	-- Reality-Splitting Wristguards
@@ -785,7 +782,7 @@ _.Instances =
 							i(151990),	-- Portal Keeper's Cincture
 							i(151945),	-- Lady Dacidion's Silk Slippers
 						})),
-						cr(125055, e(2009, {	-- Imonar the Soulhunter
+						cr(124158, e(2009, {	-- Imonar the Soulhunter
 							i(151944),	-- Soulhunter's Cowl
 							i(152416),	-- Shoulderguards of Indomitable Purpose
 							i(151989),	-- Spaulders of the Relentless Tracker
@@ -807,7 +804,7 @@ _.Instances =
 							i(151996),	-- Deft Soulhunter's Sabatons
 							i(151939),	-- Whisperstep Runners
 						})),
-						cr(125050, e(2004, {	-- Kin'garoth
+						cr(122578, e(2004, {	-- Kin'garoth
 							i(152014),	-- Titan-Subjugator's Visage
 							i(151948),	-- Magma-Spattered Smock
 							i(152280),	-- Scalding Shatterguards
@@ -825,7 +822,7 @@ _.Instances =
 							i(152132),	-- Serpentstalker Grips
 							i(152412),	-- Depraved Machinist's Footpads
 						})),
-						cr(125075, e(1983, {	-- Varimathras
+						cr(122366, e(1983, {	-- Varimathras
 							i(151995),	-- Robes of the Forsaken Dreadlord
 							i(151979),	-- Vest of Unfathomable Anguish
 							i(151954),	-- Blood-Drenched Bindings
@@ -854,7 +851,7 @@ _.Instances =
 							i(152003),	-- Legguards of Numbing Glooom
 							i(152010),	-- Burning Coven Sabatons
 						})),
-						cr(124691, e(1984, {	-- Aggramar
+						cr(121975, e(1984, {	-- Aggramar
 							i(152094),	-- Taeshalach (not in DJ)
 							i(152127),	-- Bearmantle Headdress
 							i(152163),	-- Cavalier Hat of the Dashing Scoundrel
@@ -1176,7 +1173,7 @@ _.Instances =
 							i(152007),	-- Sash of the Gilded Rose
 							i(151981),	-- Life-Bearing Footpads
 						})),
-						cr(124393, e(1985, {	-- Portal Keeper Hasabel
+						cr(122104, e(1985, {	-- Portal Keeper Hasabel
 							i(151748),	-- Recipe: Lightweave Breeches (Rank 3)
 							i(152001),	-- Nexus Conductor's Headgear
 							i(152008),	-- Reality-Splitting Wristguards
@@ -1186,7 +1183,7 @@ _.Instances =
 							i(151990),	-- Portal Keeper's Cincture
 							i(151945),	-- Lady Dacidion's Silk Slippers
 						})),
-						cr(125055, e(2009, {	-- Imonar the Soulhunter
+						cr(124158, e(2009, {	-- Imonar the Soulhunter
 							i(151944),	-- Soulhunter's Cowl
 							i(152416),	-- Shoulderguards of Indomitable Purpose
 							i(151989),	-- Spaulders of the Relentless Tracker
@@ -1208,7 +1205,7 @@ _.Instances =
 							i(151996),	-- Deft Soulhunter's Sabatons
 							i(151939),	-- Whisperstep Runners
 						})),
-						cr(125050, e(2004, {	-- Kin'garoth
+						cr(122578, e(2004, {	-- Kin'garoth
 							i(152014),	-- Titan-Subjugator's Visage
 							i(151948),	-- Magma-Spattered Smock
 							i(152280),	-- Scalding Shatterguards
@@ -1226,7 +1223,7 @@ _.Instances =
 							i(152132),	-- Serpentstalker Grips
 							i(152412),	-- Depraved Machinist's Footpads
 						})),
-						cr(125075, e(1983, {	-- Varimathras
+						cr(122366, e(1983, {	-- Varimathras
 							i(151995),	-- Robes of the Forsaken Dreadlord
 							i(151979),	-- Vest of Unfathomable Anguish
 							i(151954),	-- Blood-Drenched Bindings
@@ -1255,7 +1252,7 @@ _.Instances =
 							i(152003),	-- Legguards of Numbing Glooom
 							i(152010),	-- Burning Coven Sabatons
 						})),
-						cr(124691, e(1984, {	-- Aggramar
+						cr(121975, e(1984, {	-- Aggramar
 							i(152094),	-- Taeshalach (not in DJ)
 							i(152127),	-- Bearmantle Headdress
 							i(152163),	-- Cavalier Hat of the Dashing Scoundrel
@@ -1581,7 +1578,7 @@ _.Instances =
 							i(152007),	-- Sash of the Gilded Rose
 							i(151981),	-- Life-Bearing Footpads
 						})),
-						cr(124393, e(1985, {	-- Portal Keeper Hasabel
+						cr(122104, e(1985, {	-- Portal Keeper Hasabel
 							i(151748),	-- Recipe: Lightweave Breeches (Rank 3)
 							i(152001),	-- Nexus Conductor's Headgear
 							i(152008),	-- Reality-Splitting Wristguards
@@ -1591,7 +1588,7 @@ _.Instances =
 							i(151990),	-- Portal Keeper's Cincture
 							i(151945),	-- Lady Dacidion's Silk Slippers
 						})),
-						cr(125055, e(2009, {	-- Imonar the Soulhunter
+						cr(124158, e(2009, {	-- Imonar the Soulhunter
 							i(151944),	-- Soulhunter's Cowl
 							i(152416),	-- Shoulderguards of Indomitable Purpose
 							i(151989),	-- Spaulders of the Relentless Tracker
@@ -1613,7 +1610,7 @@ _.Instances =
 							i(151996),	-- Deft Soulhunter's Sabatons
 							i(151939),	-- Whisperstep Runners
 						})),
-						cr(125050, e(2004, {	-- Kin'garoth
+						cr(122578, e(2004, {	-- Kin'garoth
 							i(152014),	-- Titan-Subjugator's Visage
 							i(151948),	-- Magma-Spattered Smock
 							i(152280),	-- Scalding Shatterguards
@@ -1631,7 +1628,7 @@ _.Instances =
 							i(152132),	-- Serpentstalker Grips
 							i(152412),	-- Depraved Machinist's Footpads
 						})),
-						cr(125075, e(1983, {	-- Varimathras
+						cr(122366, e(1983, {	-- Varimathras
 							i(151995),	-- Robes of the Forsaken Dreadlord
 							i(151979),	-- Vest of Unfathomable Anguish
 							i(151954),	-- Blood-Drenched Bindings
@@ -1660,7 +1657,7 @@ _.Instances =
 							i(152003),	-- Legguards of Numbing Glooom
 							i(152010),	-- Burning Coven Sabatons
 						})),
-						cr(124691, e(1984, {	-- Aggramar
+						cr(121975, e(1984, {	-- Aggramar
 							i(152094),	-- Taeshalach (not in DJ)
 							i(152127),	-- Bearmantle Headdress
 							i(152163),	-- Cavalier Hat of the Dashing Scoundrel
