@@ -27,7 +27,7 @@
 		AllTheThings.ToggleMiniListForCurrentZone();
 	</Binding>
 	<Binding name="ALLTHETHINGS_TOGGLE_PROFESSION_LIST" category="ADDONS">
-		AllTheThings:GetWindow("Professions"):Toggle();
+		AllTheThings:GetWindow("Tradeskills"):Toggle();
 	</Binding>
 	<Binding name="ALLTHETHINGS_TOGGLE_RAID_ASSISTANT" category="ADDONS">
 		AllTheThings:GetWindow("RaidAssistant"):Toggle();
