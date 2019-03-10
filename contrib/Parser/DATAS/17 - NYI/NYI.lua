@@ -699,6 +699,7 @@ _.NeverImplemented =
 		}),
 		n(-386, {	-- Trinket
 			un(1, i(12805)), -- Orb of Fire
+			un(1, i(37561)),	-- Unknown
 			un(1, i(25994)),	-- rune of force (only beta)
 			un(1, i(25995)),	-- Star of Sha'naar (only beta)
 			un(1, i(18355)), -- Ferras Collar
@@ -739,7 +740,17 @@ _.NeverImplemented =
 		}),
 		un(1, i(79907)),	-- Spear of Xuen (Old Version)
 		un(1, i(129742)),	-- Badge of timewaking justice cap
-		un(1, i(130148)),	-- Unknown
+		un(1, i(31496)),	-- Unknown
+		un(1, i(31498)),	-- Unknown
+		un(1, i(31500)),	-- Unknown
+		un(1, i(31502)),	-- Unknown
+		un(1, i(31503)),	-- Unknown
+		un(1, i(31507)),	-- Unknown
+		un(1, i(36963)),	-- Unknown
+		un(1, i(90568)),	-- Unknown
+		un(1, i(90569)),	-- Unknown
+		un(1, i(98001)),	-- Saurok Collection
+		un(1, i(98005)),	-- Saurok Collection
 		un(1, i(100949)),	-- Thunderlord Cache Reward
 		un(1, spell(5169)),	-- defias disguise
 		un(1, i(45818)),	-- Unknown
@@ -1278,6 +1289,8 @@ _.NeverImplemented =
 			un(1, i(32188)),    -- Chancellor's Fleshslicer
 			un(1, i(32189)),    -- Chancellor's Ripper
 			un(1, i(38243)),    -- Ravaging Steelfist
+			un(1, i(77559)),	-- Replica Grand Marshal's left hand blade
+			un(1, i(77583)),	-- Replica High Warlords left claw
 			un(1, i(108787)),    -- Unknown
 			un(1, i(115797)),	-- test fist weapon
 			un(1, i(64826)),	-- Bloodthirsty Gladiator's Ripper (Epic BG Item, never made it out of beta))
@@ -1403,9 +1416,6 @@ _.NeverImplemented =
 			un(1, i(132475)),	-- Unknown - was under Legion>Staves
 			un(1, i(132476)),	-- Unknown - was under Legion>Staves
 			un(1, i(49458)),	-- Unknown
-			un(1, i(64695)),	-- Bloodthirsty Gladiator's Battle Staff (Epic BG Item, never made it out of beta)
-			un(1, i(64744)),	-- Bloodthirsty Gladiator's Energy Staff (Epic BG Item, never made it out of beta)
-			un(1, i(64860)),	-- Bloodthirsty Gladiator's Staff (Epic BG Item, never made it out of beta))
 			un(1, i(132477)),	-- Unknown - was under Legion>Staves
 			un(1, i(132478)),	-- Unknown - was under Legion>Staves
 			un(1, i(132479)),	-- Unknown - was under Legion>Staves
@@ -1470,7 +1480,6 @@ _.NeverImplemented =
 			un(1, i(153717)),	-- Heart-Lession Greatsword (You get the Runeblade)
 			un(1, i(33475)),	-- Artefact Frostmourne
 			un(1, i(137581)),	-- Test Ashbringer 1
-		--	un(1, i(84717),		-- Dreadful Gladiator's Greatsword (did not make it :( )
 			un(1, i(49457)),	-- Unknown
 			un(1, i(81703)),	-- Glorenzelg, added in 5.0.1 ??
 			un(1, i(64755)),	-- Bloodthirsty Gladiator's Greatsword (Epic BG item never made it out of beta))
@@ -1504,6 +1513,37 @@ _.NeverImplemented =
 			un(1, i(165682)),	-- Unknown
 			un(1, i(164760)),	-- Illidari Warglaives (Lv100 boosted gear)
 		}),
+	-- Dreadful Gladiator (BLUE QUALITY) (did not make it to live)
+	un(1, i(84697)),	-- Dreadful Gladiator's Fleshslicer
+	un(1, i(84722)),	-- Dreadful Gladiator's Pike
+	un(1, i(84699)),	-- Dreadful Gladiator's Render
+	un(1, i(84696)),	-- Dreadful Gladiator's Ripper
+	un(1, i(84695)),	-- Dreadful Gladiator's Spellblade (blue)
+	un(1, i(84708)),	-- Dreadful Gladiator's Shanker (blue)
+	un(1, i(84698)),	-- Dreadful Gladiator's Slasher
+	un(1, i(84707)),	-- Dreadful Gladiator's Decapitator
+	un(1, i(84700)),	-- Dreadful Gladiator's pummeler
+	un(1, i(84719)),	-- Dreadful Gladiator's bonecracker
+	un(1, i(84720)),	-- Dreadful Gladiator's gavel
+	un(1, i(84701)),	-- Dreadful Gladiator's cleaver
+	un(1, i(84702)),	-- Dreadful Gladiator's hacker
+	un(1, i(84705)),	-- Dreadful Gladiator's longbow
+	un(1, i(84706)),	-- Dreadful Gladiator's rifle
+	un(1, i(84710)),	-- Dreadful Gladiator's slicer
+	un(1, i(84716)),	-- Dreadful Gladiator's quickblade
+	un(1, i(84717)),	-- Dreadful Gladiator's greatsword
+	un(1, i(84721)),	-- Dreadful Gladiator's bonegrinder
+	un(1, i(84723)),	-- Dreadful Gladiator's battle staff
+	un(1, i(84724)),	-- Dreadful Gladiator's energy staff
+	un(1, i(84725)),	-- Dreadful Gladiator's staff
+	--
+	-- Bloodthirsty Gladiator (Epic QUALITY) (did not make it to live)
+	un(1, i(64695)),	-- Bloodthirsty Gladiator's Battle Staff (Epic BG Item, never made it out of beta)
+	un(1, i(64744)),	-- Bloodthirsty Gladiator's Energy Staff (Epic BG Item, never made it out of beta)
+	un(1, i(64860)),	-- Bloodthirsty Gladiator's Staff (Epic BG Item, never made it out of beta))
+	un(1, i(64694)),	-- Bloodthirsty Gladiator's Baton of Light
+	un(1, i(64861)),	-- Bloodthirsty Gladiator's Touch of Defeat
+	--
 	un(1, i(80980)),	-- Axe of Aborted Deforestation (Never made it to Live, yet into our Appearances Tab)
 	un(1, i(80983)),	-- Extravagant Tree Chopper (Never made it to Live, yet into our Appearances Tab)
 	un(1, i(32178)),	-- Chancellor's Shanker
@@ -1538,8 +1578,6 @@ _.NeverImplemented =
 	un(1, i(34148)),	-- Purified Silverstave
 	un(1, i(34149)),	-- Lightstave
 	un(1, i(58505)),	-- ObsoleteQA Combat Test Caster DPS Wand 2
-	un(1, i(64694)),	-- Bloodthirsty Gladiator's Baton of Light
-	un(1, i(64861)),	-- Bloodthirsty Gladiator's Touch of Defeat
 	un(1, i(65878)),	-- Charbelching Wand
 	un(1, i(109384)),	-- 6.0 QA Combat Test Caster DPS Wand
 	un(1, i(23459)),	-- High Warlord's Battle Mace
@@ -1552,15 +1590,8 @@ _.NeverImplemented =
 	un(1, i(138489)), 	-- Kargath's Sacrified Hands
 	un(1, i(80981)),	-- Scavenged Rotor Blade
 	un(1, i(81320)),	-- Right-Handed Invis Knuckles
-	un(1, i(84697)),	-- Dreadful Gladiator's Fleshslicer
-	un(1, i(84722)),	-- Dreadful Gladiator's Pike
 	un(1, i(84893)),	-- Malevolent Gladiator's Fleshslicer
 	un(1, i(84894)),	-- Malevolent Gladiator's Slasher
-	un(1, i(84699)),	-- Dreadful Gladiator's Render
-	un(1, i(84696)),	-- Dreadful Gladiator's Ripper
-	un(1, i(84695)),	-- Dreadful Gladiator's Spellblade (blue)
-	un(1, i(84708)),	-- Dreadful Gladiator's Shanker (blue)
-	un(1, i(84698)),	-- Dreadful Gladiator's Slasher
 	un(1, i(70209)),	-- Ruthless Gladiator's Reprieve
 	un(1, i(23420)),	-- Engraved Axe
 	un(1, i(23422)),	-- Engraved Dagger
