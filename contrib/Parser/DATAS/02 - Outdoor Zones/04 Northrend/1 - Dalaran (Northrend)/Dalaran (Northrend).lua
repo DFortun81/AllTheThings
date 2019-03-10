@@ -4490,6 +4490,28 @@ _.Zones =
 								un(2, i(70620)),	-- Vicious Gladiator's pendant of alacrity. S10 Version
 								un(2, i(70621)),	-- Vicious Gladiator's pendant of diffusion. S10 Version
 								un(2, i(70622)),	-- Vicious Gladiator's pendant of meditation. S10 Version
+								un(2, i(70520)),	-- Vicious Gladiator's band of accuracy. S10 Version
+								un(2, i(70521)),	-- Vicious Gladiator's band of cruelty S10 Version
+								un(2, i(70522)),	-- Vicious Gladiator's band of mediation S10 Version
+								un(2, i(70637)),	-- Vicious Gladiator's ring of accuracy S10 Version
+								un(2, i(70638)),	-- Vicious Gladiator's ring of cruelty S10 Version
+								un(2, i(70653)),	-- Vicious Gladiator's signet of accuracy S10 Version
+								un(2, i(70654)),	-- Vicious Gladiator's signet of cruelty S10 Version
+								un(2, i(70654)),	-- Vicious Gladiator's badge of conquest. S10 Version
+								un(2, i(70654)),	-- Vicious Gladiator's badge of dominance. S10 Version
+								un(2, i(70654)),	-- Vicious Gladiator's badge of citory. S10 Version
+								un(2, i(70654)),	-- Vicious Gladiator's emblem of cruelty. S10 Version
+								un(2, i(70654)),	-- Vicious Gladiator's emblem of mediation. S10 Version
+								un(2, i(70654)),	-- Vicious Gladiator's emblem of tanicty. S10 Version
+								un(2, i(70654)),	-- Vicious Gladiator's insignia of conquest. S10 Version
+								un(2, i(70654)),	-- Vicious Gladiator's insignia of dominance. S10 Version
+								un(2, i(70654)),	-- Vicious Gladiator's insignia of victory. S10 Version
+								un(2, i(70654)),	-- Vicious Gladiator's medallion of cruelty . S10 Version(horde)
+								un(2, i(70654)),	-- Vicious Gladiator's medallion of cruelty. S10 Version (ally)
+								un(2, i(70654)),	-- Vicious Gladiator's medallion of meditation. S10 Version (ally)
+								un(2, i(70654)),	-- Vicious Gladiator's medallion of meditation. S10 Version (horde)
+								un(2, i(70654)),	-- Vicious Gladiator's medallion of tenacity. S10 Version (ally)
+								un(2, i(70654)),	-- Vicious Gladiator's medallion of tenactiy. S10 Version (horde)
 								},
 							["u"] = 43,
 						}),
