@@ -140,8 +140,9 @@ _.Zones =
 					qg(384, qa( 7678)),	-- Palomino Exchange
 					qg(247, qa(   86)),	-- Pie for Billy
 --					q(42568),	-- Preparation (part of Rogue class campaign, not sure where it starts)
+					
+--]]				
 					qg(244, qa(   88)),	-- Princess Must Die!
---]]					
 					{	-- On Track
 						["questID"] = 54101,
 						["qg"] = 146010,	-- Dark Ranger Lyana
@@ -559,7 +560,10 @@ _.Zones =
 				}),	
 			},
 			["lvl"] = 1,
-			["maps"] = { 40 }, -- Jasperlode Mine
+			["maps"] = {
+				39,	-- Fargodeep Mine
+				40,	-- Jasperlode Mine
+			},
 			["achievementID"] = 776,
 			["description"] = "|cff66ccffElwynn Forest is the starting zone for Human characters. It is a lush valley with farmers and loggers, with Stormwind City at its center.|r",				
 		}),	
