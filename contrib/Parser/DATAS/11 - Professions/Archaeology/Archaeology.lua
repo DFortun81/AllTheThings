@@ -179,6 +179,11 @@ profession(794, {	-- Archaeology
 			sp(90614, { i(64383) }),	-- Kaldorei Wind Chimes
 			sp(91773, { i(64651) }),	-- Wisp Amulet
 		}),
+		n(-386, {	-- Trinket
+			sp(91757, {		-- Tyrande's Favorite Doll
+				i(64645),	-- Tyrande's Favorite Doll
+			}),
+		}),
 	}),
 	currency(828,  {	-- Ogre
 		n(-319, {	-- Weapon
