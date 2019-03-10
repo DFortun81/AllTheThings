@@ -6754,8 +6754,8 @@ local function UpdateVisibleRowData(self)
 			container.rows[i]:Hide();
 		end
 		
-		totalRowCount = totalRowCount + 2;
-		self.ScrollBar:SetMinMaxValues(1, math.max(1, totalRowCount - rowCount - 1));
+		totalRowCount = totalRowCount + 1;
+		self.ScrollBar:SetMinMaxValues(1, math.max(1, totalRowCount - rowCount));
 		
 		-- If the rows need to be processed again, do so next update.
 		if self.processingLinks then
