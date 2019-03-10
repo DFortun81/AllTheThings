@@ -2365,18 +2365,18 @@ _.Zones =
 									un(2, i(70638)),	-- Vicious Gladiator's ring of cruelty S10 Version
 									un(2, i(70653)),	-- Vicious Gladiator's signet of accuracy S10 Version
 									un(2, i(70654)),	-- Vicious Gladiator's signet of cruelty S10 Version
-									un(2, i(70654)),	-- Vicious Gladiator's badge of conquest. S10 Version
-									un(2, i(70654)),	-- Vicious Gladiator's badge of dominance. S10 Version
-									un(2, i(70654)),	-- Vicious Gladiator's badge of citory. S10 Version
-									un(2, i(70654)),	-- Vicious Gladiator's emblem of cruelty. S10 Version
-									un(2, i(70654)),	-- Vicious Gladiator's emblem of mediation. S10 Version
-									un(2, i(70654)),	-- Vicious Gladiator's emblem of tanicty. S10 Version
-									un(2, i(70654)),	-- Vicious Gladiator's insignia of conquest. S10 Version
-									un(2, i(70654)),	-- Vicious Gladiator's insignia of dominance. S10 Version
-									un(2, i(70654)),	-- Vicious Gladiator's insignia of victory. S10 Version
-									un(2, i(70654)),	-- Vicious Gladiator's medallion of cruelty. S10 Version (ally)
-									un(2, i(70654)),	-- Vicious Gladiator's medallion of meditation. S10 Version (ally)
-									un(2, i(70654)),	-- Vicious Gladiator's medallion of tenacity. S10 Version (ally)
+									un(2, i(70517)),	-- Vicious Gladiator's badge of conquest. S10 Version
+									un(2, i(70518)),	-- Vicious Gladiator's badge of dominance. S10 Version
+									un(2, i(70519)),	-- Vicious Gladiator's badge of citory. S10 Version
+									un(2, i(70563)),	-- Vicious Gladiator's emblem of cruelty. S10 Version
+									un(2, i(70564)),	-- Vicious Gladiator's emblem of mediation. S10 Version
+									un(2, i(70565)),	-- Vicious Gladiator's emblem of tanicty. S10 Version
+									un(2, i(70577)),	-- Vicious Gladiator's insignia of conquest. S10 Version
+									un(2, i(70578)),	-- Vicious Gladiator's insignia of dominance. S10 Version
+									un(2, i(70579)),	-- Vicious Gladiator's insignia of victory. S10 Version
+									un(2, i(70603)),	-- Vicious Gladiator's medallion of cruelty. S10 Version (ally)
+									un(2, i(70604)),	-- Vicious Gladiator's medallion of meditation. S10 Version (ally)
+									un(2, i(70606)),	-- Vicious Gladiator's medallion of tenacity. S10 Version (ally)
 								},
 								["u"] = 43,
 							},
