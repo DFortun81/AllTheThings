@@ -9040,9 +9040,11 @@ end):Show();
 							local clone = {};
 							for key,value in pairs(group) do
 								if key == "maps" then
-									if group.mapID then
-										clone[key] = value;
+									local maps = {};
+									for i,mapID in ipairs(value) do
+										tinsert(maps, mapID);
 									end
+									clone[key] = maps;
 								else
 									clone[key] = value;
 								end
