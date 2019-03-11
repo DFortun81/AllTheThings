@@ -217,7 +217,7 @@ _.Instances =
 										i(112490),	-- Petrified Pennyroyal Ring
 										i(112484),	-- Sorrowpath Signet
 										i(112476),	-- Rook's Unlucky Talisman
-										--un(2, i(104931)),	-- Death Lotus Crossbow
+										un(2, i(104931)),	-- Death Lotus Crossbow
 									})),
 									cr(72276, e(866, {	-- Norushen (Amalgam of Corruption)
 										["groups"] = {
@@ -683,7 +683,34 @@ _.Instances =
 							}),	
 						},
 					}),
-					d(1, {	-- Legacy (Normal). Now called Heroic. >>Every Item got the HEROIC Tag<<
+					d(1, {	-- Legacy (Was Flexible now Normal). >>Every Item got NO Tag<<
+						["u"] = 12,
+						["description"] = "This version of the instance was the original Flexible difficulty mode.",
+						["groups"] = {
+							n(71543, { -- Immerseus
+							--	un(2, i(xxxx)),	-- test
+							}),
+							n(71475, { -- The Fallen Protectors (Rook Stonetoe)
+								un(2, i(104682)),	-- Death Lotus Crossbow NO TAG
+							}),
+							n(72276, { -- Norushen (Amalgam of Corruption)
+							--	un(2, i(xxxx)),	-- test
+							}),
+							n(71734, { -- Sha of Pride
+							--	un(2, i(xxxx)),	-- test
+							}),
+							n(72249, { -- Galakras
+							--	un(2, i(xxxx)),	-- test
+							}),
+							n(71466, { -- Iron Juggernaut
+							--	un(2, i(xxxx)),	-- test
+							}),
+							n(71859, { -- Kor'kron Dark Shaman (Earthbreaker Haromm)
+							--	un(2, i(xxxx)),	-- test
+							}),
+						},
+					}),
+					d(2, {	-- Legacy (Was Normal now Heroic). >>Every Item got the HEROIC Tag<<
 						["u"] = 12,
 						["description"] = "This version of the instance was the original Normal difficulty mode. The loot all had unique item IDs for each difficulty tier as well as their Warforged variants similar to how ToT was done. Blizzard changed their design philosophy for the better and they chose to reuse an item's ID and apply a bonus ID rather than creating a brand new item ID with the same base stats.",
 						["groups"] = {
@@ -694,9 +721,24 @@ _.Instances =
 								un(2, i(103776)),	-- Death Lotus Crossbow Heroic TAG
 								un(2, i(105180)),	-- Death Lotus Crossbow Heroic WF TAG
 							}),
+							n(72276, { -- Norushen (Amalgam of Corruption)
+							--	un(2, i(xxxx)),	-- test
+							}),
+							n(71734, { -- Sha of Pride
+							--	un(2, i(xxxx)),	-- test
+							}),
+							n(72249, { -- Galakras
+							--	un(2, i(xxxx)),	-- test
+							}),
+							n(71466, { -- Iron Juggernaut
+							--	un(2, i(xxxx)),	-- test
+							}),
+							n(71859, { -- Kor'kron Dark Shaman (Earthbreaker Haromm)
+							--	un(2, i(xxxx)),	-- test
+							}),
 						},
 					}),
-					d(2, {	-- Legacy (Heroic). Now called Mythic. >>Every Item got the MYTHIC Tag<<
+					d(23, {	-- Legacy (was Heroic now Mythic). >>Every Item got the MYTHIC Tag<<
 						["u"] = 12,
 						["description"] = "This version of the instance was the original Heroic difficulty mode. The loot all had unique item IDs for each difficulty tier as well as their Warforged variants similar to how ToT was done. Blizzard changed their design philosophy for the better and they chose to reuse an item's ID and apply a bonus ID rather than creating a brand new item ID with the same base stats.",
 						["groups"] = {
@@ -706,6 +748,21 @@ _.Instances =
 							n(71475, { -- The Fallen Protectors (Rook Stonetoe)
 								un(2, i(104433)),	-- Death Lotus Crossbow Mythic TAG
 								un(2, i(105429)),	-- Death Lotus Crossbow Mythic WF TAG
+							}),
+							n(72276, { -- Norushen (Amalgam of Corruption)
+							--	un(2, i(xxxx)),	-- test
+							}),
+							n(71734, { -- Sha of Pride
+							--	un(2, i(xxxx)),	-- test
+							}),
+							n(72249, { -- Galakras
+							--	un(2, i(xxxx)),	-- test
+							}),
+							n(71466, { -- Iron Juggernaut
+							--	un(2, i(xxxx)),	-- test
+							}),
+							n(71859, { -- Kor'kron Dark Shaman (Earthbreaker Haromm)
+							--	un(2, i(xxxx)),	-- test
 							}),
 						},
 					}),
