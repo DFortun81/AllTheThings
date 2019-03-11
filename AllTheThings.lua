@@ -10127,10 +10127,12 @@ end)();
 	app:GetWindow("Tradeskills", UIParent, function(self, ...)
 		if not self.initialized then
 			self.initialized = true;
+			self:SetClampedToScreen(false);
 			self:RegisterEvent("TRADE_SKILL_SHOW");
 			self:RegisterEvent("TRADE_SKILL_LIST_UPDATE");
 			self:RegisterEvent("TRADE_SKILL_CLOSE");
 			self:RegisterEvent("NEW_RECIPE_LEARNED");
+			self.wait = 5;
 			self.data = {
 				['text'] = "Profession List",
 				['icon'] = "Interface\\Icons\\INV_Scroll_04.blp", 
@@ -10232,6 +10234,18 @@ end)();
 					end
 				end
 			end
+			self.RefreshRecipes = function(self)
+				if app.CollectibleRecipes then
+					self.wait = 5;
+					StartCoroutine("RefreshingRecipes", function()
+						while self.wait > 0 do
+							self.wait = self.wait - 1;
+							coroutine.yield();
+						end
+						self:CacheRecipes();
+					end);
+				end
+			end
 			
 			-- Setup Event Handlers and register for events
 			self:SetScript("OnEvent", function(self, e, ...)
@@ -10257,17 +10271,14 @@ end)();
 						self:ClearAllPoints();
 						self:SetPoint("TOPLEFT", TradeSkillFrame, "TOPRIGHT", 0, 0);
 						self:SetPoint("BOTTOMLEFT", TradeSkillFrame, "BOTTOMRIGHT", 0, 0);
+						self:Update();
 					end
-					if app.CollectibleRecipes then
-						self:CacheRecipes();
-					end
+					self:RefreshRecipes();
 				elseif e == "TRADE_SKILL_SHOW" then
 					if app.Settings:GetTooltipSetting("Auto:ProfessionList") then
 						self:SetVisible(true);
 					end
-					if app.CollectibleRecipes then
-						self:CacheRecipes();
-					end
+					self:RefreshRecipes();
 				elseif e == "NEW_RECIPE_LEARNED" then
 					local spellID = ...;
 					if spellID then
