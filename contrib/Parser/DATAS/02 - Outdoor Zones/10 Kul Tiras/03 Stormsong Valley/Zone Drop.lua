@@ -11,15 +11,11 @@ _.Zones =
 						i(161344, {	-- Abyssal Fragment
 							["groups"] = {
 								i(161479, {	-- Nazjatar Blood Serpent
-									["coords"] = {
-										{ 73.50, 23.61 },
-									},
-									["crs"] = {
-										140474,	-- Adherent of the Abyss
-									},
+									["coord"] = { 73.5, 23.6 },
+									["crs"] = { 140474 },	-- Adherent of the Abyss
 								}),
 							},
-							["description"] = "These are a World Drop in any zone and can be bought from the Auction House.  Once you receive 20 combine them and use them on the \"Abyssal Icon\" located att 7.50, 23.61 in Stormsong Valley",
+							["description"] = "These are a World Drop in any zone and can be bought from the Auction House.  Once you collect 20, combine them and use them on the \"Abyssal Icon\" located at 73.5, 23.6 in Stormsong Valley.",
 						}),
 						i(163573, {	-- Goldemane's Reins
 							["crs"] = {
