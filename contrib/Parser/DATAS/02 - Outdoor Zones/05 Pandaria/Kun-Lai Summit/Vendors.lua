@@ -191,6 +191,7 @@ _.Zones =
 							}),
 							nh(73145, { -- Acon Deathwielder (5.4.7 Elite and removed Version) -- Link for all the Items https://www.wowhead.com/npc=73145/acon-deathwielder#comments
 								["groups"] = {
+									un(2, i(103636)),	-- Elite Prideful Gladiator's Greatcloak
 									un(2, i(102984)),	-- Elite Prideful Gladiator's Decapitator
 									un(2, i(103032)),	-- Elite Prideful Gladiator's Energy Staff
 									un(2, i(102987)),	-- Elite Prideful Gladiator's Cleaver
@@ -207,7 +208,12 @@ _.Zones =
 									un(2, i(103115)),	-- Elite Prideful Gladiator's Ripper
 									un(2, i(103116)),	-- Elite Prideful Gladiator's Render
 									un(2, i(102986)),	-- Elite Prideful Gladiator's Greatsword
-									-- Hunter
+									un(2, i(102998)),	-- Elite Prideful Gladiator's barrier
+									un(2, i(103031)),	-- Elite Prideful Gladiator's redoubt
+									un(2, i(103122)),	-- Elite Prideful Gladiator's shield wall
+									un(2, i(102988)),	-- Elite Prideful Gladiator's pummeler
+									un(2, i(103030)),	-- Elite Prideful Gladiator's gravel
+									un(2, i(103120)),	-- Elite Prideful Gladiator's bonecracker
 									un(2, i(103039)),	-- Elite Prideful Gladiator's Chain Helm
 									un(2, i(103041)),	-- Elite Prideful Gladiator's Chain Spaulders
 									un(2, i(103037)),	-- Elite Prideful Gladiator's Chain Armor
@@ -243,6 +249,63 @@ _.Zones =
 									un(2, i(103108)),	-- Elite Prideful Gladiator's Mail Waistguard
 									un(2, i(103112)),	-- Elite Prideful Gladiator's Mail Leggings
 									un(2, i(103097)),	-- Elite Prideful Gladiator's Mail Footguards
+									--
+									un(2, i(103004)),	-- Elite Prideful Gladiator's dreadplate chestpiece
+									un(2, i(103005)),	-- Elite Prideful Gladiator's dreadplate gauntlets
+									un(2, i(103006)),	-- Elite Prideful Gladiator's dreadplate helm
+									un(2, i(103007)),	-- Elite Prideful Gladiator's dreadplate legguards
+									un(2, i(103008)),	-- Elite Prideful Gladiator's dreadplate shoulders
+									un(2, i(103059)),	-- Elite Prideful Gladiator's scaled chestpiece
+									un(2, i(103060)),	-- Elite Prideful Gladiator's scaled gauntlets
+									un(2, i(103061)),	-- Elite Prideful Gladiator's scaled helm
+									un(2, i(103062)),	-- Elite Prideful Gladiator's scaled legguards
+									un(2, i(103063)),	-- Elite Prideful Gladiator's scaled shoulders
+									un(2, i(103064)),	-- Elite Prideful Gladiator's scaled clasp
+									un(2, i(103065)),	-- Elite Prideful Gladiator's ornamented clasp
+									un(2, i(103066)),	-- Elite Prideful Gladiator's ornamented greaves
+									un(2, i(103067)),	-- Elite Prideful Gladiator's scaled greaves
+									un(2, i(103068)),	-- Elite Prideful Gladiator's ornamented chestguard
+									un(2, i(103069)),	-- Elite Prideful Gladiator's ornamented gloves
+									un(2, i(103070)),	-- Elite Prideful Gladiator's ornamentedheadcover
+									un(2, i(103071)),	-- Elite Prideful Gladiator's ornamented legplates
+									un(2, i(103072)),	-- Elite Prideful Gladiator's ornamented spaulders
+									un(2, i(103073)),	-- Elite Prideful Gladiator's dreadplate girdle
+									un(2, i(103074)),	-- Elite Prideful Gladiator's plate girdle
+									un(2, i(103075)),	-- Elite Prideful Gladiator's plate warboots
+									un(2, i(103076)),	-- Elite Prideful Gladiator's dreadplate warboots
+									un(2, i(103128)),	-- Elite Prideful Gladiator's plate chestpiece
+									un(2, i(103129)),	-- Elite Prideful Gladiator's plate gauntlets
+									un(2, i(103130)),	-- Elite Prideful Gladiator's plate helm
+									un(2, i(103131)),	-- Elite Prideful Gladiator's plate legguards
+									un(2, i(103132)),	-- Elite Prideful Gladiator's plate shoulders
+									un(2, i(102991)),	-- Elite Prideful Gladiator's silk cord
+									un(2, i(102992)),	-- Elite Prideful Gladiator's felweave cord
+									un(2, i(102993)),	-- Elite Prideful Gladiator's mooncloth cord
+									un(2, i(102994)),	-- Elite Prideful Gladiator's silk treads
+									un(2, i(102995)),	-- Elite Prideful Gladiator's felweave treads
+									un(2, i(102996)),	-- Elite Prideful Gladiator's mooncloth treads
+									un(2, i(103042)),	-- Elite Prideful Gladiator's silk handguards
+									un(2, i(103043)),	-- Elite Prideful Gladiator's silk cowl
+									un(2, i(103044)),	-- Elite Prideful Gladiator's silk trousers
+									un(2, i(103045)),	-- Elite Prideful Gladiator's silk robe
+									un(2, i(103046)),	-- Elite Prideful Gladiator's silk amice
+									un(2, i(103078)),	-- Elite Prideful Gladiator's mooncloth gloves
+									un(2, i(103079)),	-- Elite Prideful Gladiator's mooncloth helm
+									un(2, i(103080)),	-- Elite Prideful Gladiator's mooncloth leggings
+									un(2, i(103081)),	-- Elite Prideful Gladiator's mooncloth robe
+									un(2, i(103082)),	-- Elite Prideful Gladiator's mooncloth mantle
+									un(2, i(103083)),	-- Elite Prideful Gladiator's satin gloves
+									un(2, i(103084)),	-- Elite Prideful Gladiator's satin hood
+									un(2, i(103085)),	-- Elite Prideful Gladiator's satin leggings
+									un(2, i(103086)),	-- Elite Prideful Gladiator's satin robe
+									un(2, i(103087)),	-- Elite Prideful Gladiator's satin mantle
+									un(2, i(103123)),	-- Elite Prideful Gladiator's felweave handguards
+									un(2, i(103124)),	-- Elite Prideful Gladiator's felweave cowl
+									un(2, i(103125)),	-- Elite Prideful Gladiator's felweave trousers
+									un(2, i(103126)),	-- Elite Prideful Gladiator's felweave rainment
+									un(2, i(103127)),	-- Elite Prideful Gladiator's felweave amice
+									un(2, i(103135)),	-- Elite Prideful Gladiator's satin treads
+									un(2, i(103136)),	-- Elite Prideful Gladiator's satin cord
 								},
 								["u"] = 2, -- Vendor no longer exists
 							}),

@@ -469,6 +469,8 @@ _.Instances =
 										i(112817),	-- Seal of Sullen Fury
 										i(112815),	-- Frenzied Crystal of Rage
 										i(112792),	-- Vial of Living Corruption
+										un(2, i(105062)),	-- Halberd of Inner Shadows
+										un(2, i(105061)),	-- Kor'Kron Hand Cannon
 									})),
 									cr(71889, e(870, {	-- Spoils of Pandaria (Secured Stockpile of Pandaren Spoils)
 										{	-- The Underhold: Spoils of Pandaria
@@ -677,7 +679,7 @@ _.Instances =
 										i(112933),	-- Legplates of Unthinking Strife
 										i(112938),	-- Black Blood of Y'Shaarj
 										i(112924),	-- Curse of Hubris
-										--un(2, i(105146)),	-- Xal'atoh, Desecrated Image of Gorehowl
+										un(2, i(105146)),	-- Xal'atoh, Desecrated Image of Gorehowl
 									})),
 								},
 							}),	
@@ -708,6 +710,28 @@ _.Instances =
 							n(71859, { -- Kor'kron Dark Shaman (Earthbreaker Haromm)
 							--	un(2, i(xxxx)),	-- test
 							}),
+							n(71515, { -- General Nazgrim
+							--	un(2, i(xxxx)),	-- test
+							}),
+							n(71454, { -- Malkorok
+								un(2, i(104812)),	-- Kor'Kron Hand Cannon NO TAG
+								un(2, i(104813)),	-- Halberd of Inner Shadows NO TAG
+							}),
+							n(71889, { -- Spoils of Pandaria (Secured Stockpile of Pandaren Spoils)
+							--	un(2, i(xxxx)),	-- test
+							}),
+							n(71529, { -- Thok the Bloodthirsty
+							--	un(2, i(xxxx)),	-- test
+							}),
+							n(71504, { -- Siegecrafter Blackfuse
+							--	un(2, i(xxxx)),	-- test
+							}),
+							n(71161, { -- Paragons of the Klaxxi (Kil'ruk the Wind Reaver)
+							--	un(2, i(xxxx)),	-- test
+							}),
+							n(71865, { -- Garrosh Hellscream
+								un(2, i(104897)),	-- Xal'atoh, Desecrated Image of Gorehowl NO TAG
+							}),
 						},
 					}),
 					d(2, {	-- Legacy (Was Normal now Heroic). >>Every Item got the HEROIC Tag<<
@@ -736,6 +760,31 @@ _.Instances =
 							n(71859, { -- Kor'kron Dark Shaman (Earthbreaker Haromm)
 							--	un(2, i(xxxx)),	-- test
 							}),
+							n(71515, { -- General Nazgrim
+							--	un(2, i(xxxx)),	-- test
+							}),
+							n(71454, { -- Malkorok
+								un(2, i(103953)),	-- Kor'Kron Hand Cannon HEROIC
+								un(2, i(105310)),	-- Kor'Kron Hand Cannon HEROIC WF TAG
+								un(2, i(103952)),	-- Halberd of Inner Shadows HEROIC
+								un(2, i(105311)),	-- Halberd of Inner Shadows HEROIC WF TAG
+							}),
+							n(71889, { -- Spoils of Pandaria (Secured Stockpile of Pandaren Spoils)
+							--	un(2, i(xxxx)),	-- test
+							}),
+							n(71529, { -- Thok the Bloodthirsty
+							--	un(2, i(xxxx)),	-- test
+							}),
+							n(71504, { -- Siegecrafter Blackfuse
+							--	un(2, i(xxxx)),	-- test
+							}),
+							n(71161, { -- Paragons of the Klaxxi (Kil'ruk the Wind Reaver)
+							--	un(2, i(xxxx)),	-- test
+							}),
+							n(71865, { -- Garrosh Hellscream
+								un(2, i(103649)),	-- Xal'atoh, Desecrated Image of Gorehowl HEROIC TAG
+								un(2, i(105395)),	-- Xal'atoh, Desecrated Image of Gorehowl HEROIC WF TAG
+							}),
 						},
 					}),
 					d(23, {	-- Legacy (was Heroic now Mythic). >>Every Item got the MYTHIC Tag<<
@@ -763,6 +812,31 @@ _.Instances =
 							}),
 							n(71859, { -- Kor'kron Dark Shaman (Earthbreaker Haromm)
 							--	un(2, i(xxxx)),	-- test
+							}),
+							n(71515, { -- General Nazgrim
+							--	un(2, i(xxxx)),	-- test
+							}),
+							n(71454, { -- Malkorok
+								un(2, i(104563)),	-- Kor'Kron Hand Cannon MYTHIC
+								un(2, i(105559)),	-- Kor'Kron Hand Cannon MYTHIC WF TAG
+								un(2, i(104564)),	-- Halberd of Inner Shadows Mythic
+								un(2, i(105560)),	-- Halberd of Inner Shadows mythic WF TAG
+							}),
+							n(71889, { -- Spoils of Pandaria (Secured Stockpile of Pandaren Spoils)
+							--	un(2, i(xxxx)),	-- test
+							}),
+							n(71529, { -- Thok the Bloodthirsty
+							--	un(2, i(xxxx)),	-- test
+							}),
+							n(71504, { -- Siegecrafter Blackfuse
+							--	un(2, i(xxxx)),	-- test
+							}),
+							n(71161, { -- Paragons of the Klaxxi (Kil'ruk the Wind Reaver)
+							--	un(2, i(xxxx)),	-- test
+							}),
+							n(71865, { -- Garrosh Hellscream
+								un(2, i(104648)),	-- Xal'atoh, Desecrated Image of Gorehowl MYTHIC TAG
+								un(2, i(105644)),	-- Xal'atoh, Desecrated Image of Gorehowl MYTHIC WF TAG
 							}),
 						},
 					}),
