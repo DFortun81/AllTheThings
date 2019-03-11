@@ -1471,6 +1471,8 @@ _.NeverImplemented =
 		}),
 		n(-337, { -- Two Handed Maces
 			un(1, i(23457)),	-- High Warlord's Destroyer
+			un(1, i(159555)),	-- Unknown
+			un(1, i(165263)),	-- Unknown
 		}),
 		n(-339, { -- Two Handed Swords
 			un(1, i(140687)),	-- Unholy Runeblade (You only get Heart-Lession Gear, even as Unholy)

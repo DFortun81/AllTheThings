@@ -28,6 +28,7 @@ _.Zones =
 												i(165628),	-- Sentinel's Branch
 												i(165637),	-- Sentinel's Bulwark
 												i(165624),	-- Sentinel's Crescent
+												i(165636),	-- Sentinel's Gavel
 												i(165632),	-- Sentinel's Greatblade
 												i(165627),	-- Sentinel's Halberd
 												i(165623),	-- Sentinel's Recurve

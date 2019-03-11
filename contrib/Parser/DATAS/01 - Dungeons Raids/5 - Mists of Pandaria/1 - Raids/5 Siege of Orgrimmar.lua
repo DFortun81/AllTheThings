@@ -683,22 +683,34 @@ _.Instances =
 							}),	
 						},
 					}),
-					d(1, {	-- Legacy (Normal)
+					d(1, {	-- Legacy (Normal). Now called Heroic. >>Every Item got the HEROIC Tag<<
 						["u"] = 12,
 						["description"] = "This version of the instance was the original Normal difficulty mode. The loot all had unique item IDs for each difficulty tier as well as their Warforged variants similar to how ToT was done. Blizzard changed their design philosophy for the better and they chose to reuse an item's ID and apply a bonus ID rather than creating a brand new item ID with the same base stats.",
 						["groups"] = {
-						
+							n(71543, { -- Immerseus
+							--	un(2, i(xxxx)),	-- test
+							}),
+							n(71475, { -- The Fallen Protectors (Rook Stonetoe)
+								un(2, i(103776)),	-- Death Lotus Crossbow Heroic TAG
+								un(2, i(105180)),	-- Death Lotus Crossbow Heroic WF TAG
+							}),
 						},
 					}),
-					d(2, {	-- Legacy (Heroic)
+					d(2, {	-- Legacy (Heroic). Now called Mythic. >>Every Item got the MYTHIC Tag<<
 						["u"] = 12,
 						["description"] = "This version of the instance was the original Heroic difficulty mode. The loot all had unique item IDs for each difficulty tier as well as their Warforged variants similar to how ToT was done. Blizzard changed their design philosophy for the better and they chose to reuse an item's ID and apply a bonus ID rather than creating a brand new item ID with the same base stats.",
 						["groups"] = {
-						
+							n(71543, { -- Immerseus
+							--	un(2, i(xxxx)),	-- test
+							}),
+							n(71475, { -- The Fallen Protectors (Rook Stonetoe)
+								un(2, i(104433)),	-- Death Lotus Crossbow Mythic TAG
+								un(2, i(105429)),	-- Death Lotus Crossbow Mythic WF TAG
+							}),
 						},
 					}),
 					d(14, {	-- Normal (Was Flex)
-						["description"] = "This version of the instance was the original Flex difficulty mode. It was split into both Normal and Heroic mode after they introduced Mythic.",
+					--	["description"] = "This version of the instance was the original Flex difficulty mode. It was split into both Normal and Heroic mode after they introduced Mythic.",
 						["groups"] = {
 							n(0, {	-- Zone Drop
 								{	-- Aeth's Swiftcinder Cloak
@@ -1896,7 +1908,7 @@ _.Instances =
 						},
 					}),
 					d(15, {	-- Heroic (Was Normal)
-						["description"] = "This version of the instance was the original Flex difficulty mode. It was split into both Normal and Heroic mode after they introduced Mythic.",
+					--	["description"] = "This version of the instance was the original Flex difficulty mode. It was split into both Normal and Heroic mode after they introduced Mythic.",
 						["groups"] = {
 							n(0, {	-- Zone Drop
 								{	-- Aeth's Swiftcinder Cloak

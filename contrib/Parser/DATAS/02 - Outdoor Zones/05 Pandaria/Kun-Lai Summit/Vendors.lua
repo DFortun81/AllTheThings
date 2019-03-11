@@ -688,7 +688,13 @@ _.Zones =
 							}),
 							nh(69982, {	-- Lok'nor Bloodfist  <Honor Quartermaster> Old Grievous Vendor (neck, etc)
 								["groups"] = {
-								--	un(2, i(102841)),	-- 
+									un(2, i(102838)),	-- Grievous Gladiator's Choker of Accuracy (H)
+									un(2, i(102875)),	-- Grievous Gladiator's Necklace of Proficiency (H)
+									un(2, i(102876)),	-- Grievous Gladiator's Necklace of Prowess (H)
+									un(2, i(102933)),	-- Grievous Gladiator's Pendant of Meditation (H)
+									un(2, i(102946)),	-- Grievous Gladiator's Choker of Proficiency (H)
+									un(2, i(102954)),	-- Grievous Gladiator's Pendant of Alacrity (H)
+									un(2, i(102970)),	-- Grievous Gladiator's Pendant of Cruelty (H)
 								},
 								["u"] = 2, -- Vendor no longer exists
 							}),

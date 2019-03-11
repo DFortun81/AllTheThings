@@ -2457,7 +2457,13 @@ _.Zones =
 					}),
 					na(73143, {	-- Hayden Christophen <Honor Quartermaster> Old Grievous Vendor (neck, etc)
 						["groups"] = {
-						--	un(2, i(102841)),	-- 
+							un(2, i(103148)),	-- Grievous Gladiator's Necklace of Proficiency (A)
+							un(2, i(103149)),	-- Grievous Gladiator's Necklace of Prowess (A)
+							un(2, i(103170)),	-- Grievous Gladiator's Pendant of Cruelty (A)
+							un(2, i(103171)),	-- Grievous Gladiator's Pendant of Alacrity (A)
+							un(2, i(103172)),	-- Grievous Gladiator's Pendant of Mediation (A)
+							un(2, i(103317)),	-- Grievous Gladiator's Choker of Proficiency (A)
+							un(2, i(103318)),	-- Grievous Gladiator's Choker of Accuracy
 						},
 						["u"] = 2, -- Vendor no longer exists
 					}),
