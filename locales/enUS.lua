@@ -2293,6 +2293,7 @@ AllTheThings.L = {
 		[179697] = "Arena Treasure Chest",
 		[180448] = "Wanted Poster: Deathclasp",
 		[180503] = "Sandy Cookbook",
+		[180691] = "Scarab Coffer",
 		[180794] = "Journal of Jandice Barov",
 		[180918] = "Wanted: Thaelis the Hungerer",
 		[181011] = "Magister Duskwither's Journal",
