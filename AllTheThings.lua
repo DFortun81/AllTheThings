@@ -10273,7 +10273,7 @@ end)();
 					if spellID then
 						local previousState = GetDataSubMember("CollectedSpells", spellID);
 						SetDataSubMember("CollectedSpells", spellID, 1);
-						if not SetTempDataSubMember("CollectedSpells", spellID) then
+						if not GetTempDataSubMember("CollectedSpells", spellID) then
 							SetTempDataSubMember("CollectedSpells", spellID, 1);
 							app:RefreshData(true, true, true);
 							if not previousState or not app.Settings:Get("AccountWide:Recipes") then
