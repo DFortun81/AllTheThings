@@ -4,8 +4,6 @@
 _.PetJournal = 
 {
 	pa(237, { 	-- Beast
-		-- p(),	-- Spawn of Garalon
-		-- p(),	-- Stoneclaw
 		p(635),		-- Adder
 		p(1571),	-- Albino River Calf
 		p(74),		-- Albino Snake
@@ -179,11 +177,13 @@ _.PetJournal =
 		p(1941),	-- Snowfang
 		p(1197),	-- Snowy Panda
 		p(2049),	-- Son of Skum
+		p(2587),	-- Spawn of Garalon
 		p(2186),	-- Spawn of Merektha
 		p(412),		-- Spider
 		p(1763),	-- Spiketail Beaver
 		p(433),		-- Spiky Lizard
 		p(466),		-- Spiny Lizard
+		p(2579),	-- Stoneclaw
 		p(432),		-- Stripe-Tailed Scorpid
 		p(1184),	-- Stunted Direhorn
 		p(532),		-- Stunted Shardhorn

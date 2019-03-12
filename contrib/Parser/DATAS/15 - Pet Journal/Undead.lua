@@ -4,7 +4,6 @@
 _.PetJournal = 
 {
 	pa(242, { 	-- Undead
-		-- p(),	-- Wayward Spirit
 		p(2456),	-- Barnaby
 		p(2408),	-- Bilefang Skitter
 		p(1965),	-- Blightbreath
@@ -69,6 +68,7 @@ _.PetJournal =
 		un(2, p(187)),	-- Vampiric Batling
 		p(2037),	-- Vilebrood Whelpling
 		p(310),		-- Voodoo Figurine
+		p(2580),	-- Wayward Spirit
 		p(1394),	-- Weebomination
 		p(1968),	-- Wicked Soul
 		p(2411),	-- Wicker Pup

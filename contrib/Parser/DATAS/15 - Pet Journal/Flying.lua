@@ -4,13 +4,12 @@
 _.PetJournal = 
 {
 	pa(239, { 	-- Flying
-		-- p(),	-- Amberglow Stinger
-		-- p(),	-- Kor'thik Swarmling
 		p(1708),	-- Albatross Chick
 		a(p(2566)), -- Albatross Hatchling
 		p(1984),	-- Albino Buzzard
 		p(2555), 	-- Albino Duskwatcher
 		a(p(331)),	-- Alliance Balloon (Alliance)
+		p(2586),	-- Amberglow Stinger
 		p(732),		-- Amber Moth
 		p(1465),	-- Amberbarb Wisp
 		p(52),		-- Ancona Chicken
@@ -107,6 +106,7 @@ _.PetJournal =
 		p(1202),	-- Ji-Kun Hatchling
 		p(1469),	-- Junglebeak
 		p(1597),	-- Kaliri Hatchling
+		p(2585),	-- Kor'thik Swarmling
 		p(2390),	-- Leafy Flutterwing
 		p(2552),	-- Leatherwing Screecher
 		p(1713),	-- Long-Eared Owl

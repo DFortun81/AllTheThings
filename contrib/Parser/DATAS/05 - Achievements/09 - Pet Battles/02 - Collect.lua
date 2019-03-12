@@ -682,7 +682,6 @@ _.Achievements =
 						crit(14),		-- Corrupted Blood (Dragon Soul - Greater Cache of the Aspects from Spine of Deathwing)
 						crit(15),		-- Unstable Tendril (Dragon Soul - Elementium Fragment from Madness of Deathwing)
 					}),
-					--[[ currently shows up all janky in-game!  uncomment and test after patch hits!
 					ach(13469, {	-- Raiding with Leashes VI: Pets of Pandaria
 						i(167057),	-- Happiness
 						crit(1),	-- Stoneclaw			( MSV  — The Stone Guard )
@@ -697,7 +696,6 @@ _.Achievements =
 						crit(10),	-- Living Amber			( HoF  — Amber-Shaper Un'sok )
 						crit(11),	-- Ravenous Prideling	( HoF  — Grand Empress Shek'zeer )
 					}),
-					--]]
 					ach(6571),		-- That Was Close!*
 					ach(6590, {		-- World Safari*
 						title(199),		-- Zookeeper

@@ -13,23 +13,6 @@ end
 	-- In the Rematch options, make sure "Show Species ID & Ability ID" is checked.
 	-- The speciesID is the number by the icon that looks like a cogwheel on the card that pops up when you hover over a pet.
 
---[[ Raiding with Leashes VI: Pets of Pandaria
-  -- Placing here until we have speciesIDs for these pets, then will reorganize with the rest of the list!
-pet(167057,  );	-- Happiness
-pet(167047,  );	-- Stoneclaw
-pet(167048,  );	-- Wayward Spirit
-pet(167049,  );	-- Celestial Gift (Comet)
-pet(167050,  );	-- Mogu Statue (Baoh-Xi)
-pet(167051,  );	-- Azure Cloud Serpent Egg (Azure Windseeker)
-pet(167052,  );	-- Spirit of the Spring
-pet(167058,  );	-- Kor'thik Swarmling
-pet(167053,  );	-- Tiny Amber Wings (Amberglow Stinger)
-pet(167054,  );	-- Spawn of Garalon
-pet(167055,  );	-- Amber Goo Puddle (Living Amber)
-pet(167056,  );	-- Essence of Pride (Ravenous Prideling)
---]]
-
-
 pet(19450, 106); 	-- A Jubling's Tiny Home (Jubling)
 pet(129205, 1660); 	-- A Tiny Infernal Collar (Fel Pup)
 pet(163489, 2403);	-- Abyssal Eel
@@ -45,6 +28,7 @@ pet(72042, 331); 	-- Alliance Balloon
 pet(139775, 1918); 	-- Alliance Enthusiast
 pet(106240, 1363);	-- Alterac Brandy (Alterac Brew-Pup)
 pet(152963, 2093);	-- Amalgam of Destruction
+pet(167055, 2589);	-- Amber Goo Puddle (Living Amber)
 pet(44984, 212); 	-- Ammen Vale Lashling
 pet(117354, 1531); 	-- Ancient Nest Guardian
 pet(11023, 52); 	-- Ancona Chicken
@@ -60,6 +44,7 @@ pet(113569, 1429);	-- Autumnal Sproutling
 pet(118599, 1429);	-- Autumnal Sproutling
 pet(163555, 2439);	-- Azerite Puddle
 pet(163515, 2429);	-- Azeriti
+pet(167051, 2583);	-- Azure Cloud Serpent Egg (Azure Windseeker)
 pet(104157, 1321); 	-- Azure Crane Chick
 pet(34535, 57); 	-- Azure Whelpling
 pet(44819, 202); 	-- Baby Blizzard Bear
@@ -133,6 +118,7 @@ pet(8489, 46);	 	-- Cat Carrier (White Kitten) - (White Kitten)
 pet(143754, 1999); 	-- Cavern Moccasin
 pet(136923, 1888);	-- Celestial Calf
 pet(54810, 255);	-- Celestial Dragon
+pet(167049, 2581);	-- Celestial Gift (Comet)
 pet(70099, 316);	-- Cenarion Hatchling
 pet(102145, 1303);	-- Chi-Chi, Hatchling of Chi-Ji
 pet(89368, 849); 	-- Chi-Ji Kite
@@ -236,6 +222,7 @@ pet(128535, 1701); 	-- Enchanted Pen
 pet(49664, 247);	-- Enchanted Purple Jade (Zipao Tiger)
 pet(152878, 2201); 	-- Enchanted Tiki Mask
 pet(128534, 1700); 	-- Enchanted Torch
+pet(167056, 2590);	-- Essence of Pride (Ravenous Prideling)
 pet(118921, 1566); 	-- Everbloom Peachick
 pet(166453, 2548);	-- Everburning Treant
 pet(143756, 1998); 	-- Everliving Spore
@@ -322,6 +309,7 @@ pet(48116, 234); 	-- Gundrak Hatchling
 pet(93669, 1174);	-- Gusting Grimoire
 pet(166448, 2545);	-- Gust of Cyclarus
 pet(97961, 1245);	-- Half-Empty Food Container (Filthling)
+pet(167057, 2591);	-- Happiness
 pet(104295, 1346);	-- Harmonious Porcupette
 pet(136900, 1718); 	-- Hateful Eye
 pet(118574, 1544); 	-- Hatespark the Tiny
@@ -364,6 +352,7 @@ pet(163804, 2447);	-- Kindleweb Spiderling
 pet(44738, 199);	-- Kirin Tor Familiar
 pet(141894, 1940); 	-- Knight-Captain Murky
 pet(136911, 1806);	-- Knockoff Blingtron
+pet(167058, 2585);	-- Kor'thik Swarmling
 pet(104165, 1334); 	-- Kovok
 pet(163822, 2454);	-- Kunchong Hatchling
 pet(140323, 1930); 	-- Lagan
@@ -431,6 +420,7 @@ pet(151632, 2064); 	-- Mining Monkey
 pet(31760, 149); 	-- Miniwing
 pet(141893, 1936);	-- Mischief
 pet(163814, 2467);	-- Mischievous Zephyr
+pet(167050, 2582);	-- Mogu Statue (Baoh-Xi)
 pet(33993, 165); 	-- Mojo
 pet(115301, 1451); 	-- Molten Corgi
 pet(101570, 1276); 	-- Moon Moon
@@ -618,6 +608,7 @@ pet(78916, 347);	-- Soul of the Aspects
 pet(119328, 1569);	-- Soul of the Forge
 pet(38050, 183);	-- Soul-Trader Beacon (Ethereal Soul-Trader)
 pet(163803, 2446);	-- Sparkleshell Sandcrawler
+pet(167054, 2587);	-- Spawn of Garalon
 pet(94595, 1201); 	-- Spawn of G'nathus
 pet(160702, 2186);	-- Spawn of Merektha
 pet(113623, 1442); 	-- Spectral Bell (Ghastly Kid)
@@ -626,6 +617,7 @@ pet(94190, 1185);	-- Spectral Porcupette
 pet(49343, 242);	-- Spectral Tiger Cub
 pet(97548, 1226); 	-- Spiky Collar (Lil' Bad Wolf)
 pet(104168, 1337); 	-- Spineclaw Crab
+pet(167052, 2584);	-- Spirit of the Spring
 pet(163789, 2411);	-- Spooky Bundle of Sticks [Wicker Pup]
 pet(44794, 200); 	-- Spring Rabbit's Foot (Spring Rabbit)
 pet(11474, 87); 	-- Sprite Darter Egg (Sprite Darter Hatchling)
@@ -633,6 +625,7 @@ pet(163712, 2441);	-- Squawkling
 pet(166454, 2549);	-- Squishy Purple Goo (Void Jelly)
 pet(142100, 1969);	-- Stardust
 pet(138810, 1911); 	-- Sting Ray Pup
+pet(167047, 2579);	-- Stoneclaw
 pet(116402, 1515); 	-- Stonegrinder
 pet(129208, 1721); 	-- Stormborne Whelpling
 pet(142088, 1957); 	-- Stormforged Rune (Runeforged Servitor)
@@ -666,6 +659,7 @@ pet(166499, 2561);	-- Thunderscale Hatchling
 pet(39896, 194); 	-- Tickbird Hatchling
 pet(118675, 1563);	-- Time-Locked Box (Bronze Whelpling)
 pet(163807, 2450);	-- Tinder Pup
+pet(167053, 2586);	-- Tiny Amber Wings (Amberglow Stinger)
 pet(94933, 1207); 	-- Tiny Blue Carp
 pet(8499, 58); 		-- Tiny Crimson Whelpling (Crimson Whelpling)
 pet(163498, 2412);	-- Tiny Direhorn
@@ -808,6 +802,7 @@ pet(166499, 2561);	-- Thunderscale Whelpling
 pet(166495, 2559);	-- Tonguelasher
 pet(166346, 2539);	-- Trecker's Cage
 pet(166719, 2569);	-- Violet Abyssal Eel
+pet(167048, 2580);	-- Wayward Spirit
 pet(160587, 2184);	-- Whomper
 pet(165907, 2535);	-- Wicker Wraith
 pet(166345, 2538);	-- Zandalari Raptor Egg (Dasher)

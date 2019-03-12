@@ -4,9 +4,6 @@
 _.PetJournal = 
 {
 	pa(241, { 	-- Elemental
-		-- p(),	-- Happiness
-		-- p(),	-- Ravenous Prideling
-		-- p(),	-- Spirit of the Spring
 		p(2433),	-- Aldrusian Sproutling
 		p(2093), 	-- Amalgam of Destruction
 		p(838),		-- Amethyst Shale Hatchling
@@ -48,6 +45,7 @@ _.PetJournal =
 		p(253),		-- Frigid Frostling
 		p(1332),	-- Gooey Sha-ling
 		p(834),		-- Grinder
+		p(2591),	-- Happiness
 		un(7, p(1544)),	-- Hatespark the Tiny
 		p(1949),	-- Igneous Flameling
 		p(856),		-- Jade Tentacle
@@ -72,6 +70,7 @@ _.PetJournal =
 		p(2018),	-- Paradox Spirit
 		p(265),		-- Pebble
 		p(175),		-- Phoenix Hatchling
+		p(2590),	-- Ravenous Prideling
 		p(1328),	-- Ruby Droplet
 		p(460),		-- Ruby Sapling
 		p(172),		-- Searing Scorchling
@@ -82,6 +81,7 @@ _.PetJournal =
 		p(1960),	-- Snaplasher
 		p(1569),	-- Soul of the Forge
 		p(128),		-- Spirit of Summer
+		p(2584),	-- Spirit of the Spring
 		p(1917),	-- Stormstruck Beaver
 		p(1518),	-- Stout Alemental
 		p(1434),	-- Sun Sproutling

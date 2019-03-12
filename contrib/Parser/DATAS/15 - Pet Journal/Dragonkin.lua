@@ -4,10 +4,10 @@
 _.PetJournal = 
 {
 	pa(245, { 	-- Dragonkin
-		-- p(),	-- Azure Windseeker
 		p(2072),	-- Ageless Bronze Drake
 		p(1385),	-- Albino Chimaeraling
 		p(57),		-- Azure Whelpling
+		p(2583),	-- Azure Windseeker
 		p(145),		-- Blue Dragonhawk Hatchling
 		p(2071),	-- Bronze Proto-Whelp
 		p(1563),	-- Bronze Whelpling
