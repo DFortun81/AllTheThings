@@ -4,6 +4,9 @@
 _.PetJournal = 
 {
 	pa(243, { 	-- Magic
+		-- p(),	-- Baoh-Xi
+		-- p(),	-- Comet
+		-- p(),	-- Living Amber
 		p(1624),	-- Abyssius
 		p(1160),	-- Arcane Eye
 		p(2131),	-- Arcane Gorger

@@ -4,6 +4,7 @@
 _.PetJournal = 
 {
 	pa(242, { 	-- Undead
+		-- p(),	-- Wayward Spirit
 		p(2456),	-- Barnaby
 		p(2408),	-- Bilefang Skitter
 		p(1965),	-- Blightbreath

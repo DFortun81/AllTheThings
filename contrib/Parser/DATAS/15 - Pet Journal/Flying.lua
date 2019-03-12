@@ -4,6 +4,8 @@
 _.PetJournal = 
 {
 	pa(239, { 	-- Flying
+		-- p(),	-- Amberglow Stinger
+		-- p(),	-- Kor'thik Swarmling
 		p(1708),	-- Albatross Chick
 		a(p(2566)), -- Albatross Hatchling
 		p(1984),	-- Albino Buzzard

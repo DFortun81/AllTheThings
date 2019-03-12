@@ -4,6 +4,9 @@
 _.PetJournal = 
 {
 	pa(241, { 	-- Elemental
+		-- p(),	-- Happiness
+		-- p(),	-- Ravenous Prideling
+		-- p(),	-- Spirit of the Spring
 		p(2433),	-- Aldrusian Sproutling
 		p(2093), 	-- Amalgam of Destruction
 		p(838),		-- Amethyst Shale Hatchling

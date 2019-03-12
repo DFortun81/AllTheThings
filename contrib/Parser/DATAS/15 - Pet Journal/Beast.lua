@@ -4,6 +4,8 @@
 _.PetJournal = 
 {
 	pa(237, { 	-- Beast
+		-- p(),	-- Spawn of Garalon
+		-- p(),	-- Stoneclaw
 		p(635),		-- Adder
 		p(1571),	-- Albino River Calf
 		p(74),		-- Albino Snake

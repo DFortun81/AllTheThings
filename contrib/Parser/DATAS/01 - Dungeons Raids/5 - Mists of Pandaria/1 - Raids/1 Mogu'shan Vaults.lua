@@ -12,7 +12,7 @@ _.Instances =
 						["groups"] = {
 							n(-1, {	-- Common Boss Drop
 								["groups"] = {
-									i(95618, { -- Cache of Mogu Riches
+									i(95618, {	-- Cache of Mogu Riches
 										["groups"] = {
 											i(86884),	-- Belt of Embodied Terror
 											i(86900),	-- Binder's Chain of Unending Summer
@@ -99,60 +99,74 @@ _.Instances =
 								]]--
 							}),
 							ach(6458, {	-- Guardians of Mogu'shan
-								["crs"] = {
-									80633,	-- Lorewalker Han <Raid Finder Storyteller>
-								},
+								["crs"] = { 80633 },	-- Lorewalker Han <Raid Finder Storyteller>
 								["groups"] = {
-									cr(60047, e(679, {	-- The Stone Guard (60051,60043,59915)
-										i(86741),	-- Dagger of the Seven Stars
-										i(86745),	-- Sixteen-Fanged Crown
-										i(86739),	-- Beads of the Mogu'shi
-										i(86748),	-- Cape of Three Lanterns
-										i(89964),	-- Stonefang Chestguard
-										i(86740),	-- Stonemaw Armguards
-										i(89966),	-- Claws of Amethyst
-										i(89965),	-- Ruby-Linked Girdle
-										i(86793),	-- Star-Stealer Waistguard
-										i(86746),	-- Stonebound Cinch
-										i(86747),	-- Jade Dust Leggings
-										i(86743),	-- Stoneflesh Leggings
-										i(86744),	-- Heavenly Jade Greatboots
-										i(86742),	-- Jasper Clawfeet
-									})),
-									cr(60009, e(689, {	-- Feng the Accursed
-										i(89426),	-- Fan of Fiery Winds
-										i(86757),	-- Hood of Cursed Dreams
-										i(86752),	-- Nullification Greathelm
-										i(86754),	-- Amulet of Seven Curses
-										i(86782),	-- Arrow Breaking Windcloak
-										i(86753),	-- Cloak of Peacock Feathers
-										i(86758),	-- Imperial Ghostbinder's Robes
-										i(86751),	-- Bracers of Six Oxen
-										i(86755),	-- Chain of Shadow
-										i(86750),	-- Tomb Raider's Girdle
-										i(86756),	-- Legplates of Sagacious Shadows
-										i(86749),	-- Wildfire Worldwalkers
-										i(89968),	-- Feng's Ring of Dreams
-										i(89967),	-- Feng's Seal of Binding
-									})),
-									cr(60143, e(682, {	-- Gara'jal the Spiritbinder
-										i(86762),	-- Gara'kal, Fist of the Spiritbinder
-										i(86764),	-- Eye of the Ancient Spirit
-										i(86759),	-- Soulgrasp Choker
-										i(86763),	-- Netherrealm Shoulderpads
-										i(86770),	-- Shadowsummoner Spaulders
-										i(86768),	-- Spaulders of the Divided Mind
-										i(86766),	-- Bindings of Ancient Spirits
-										i(89969),	-- Bonded Soul Bracers
-										i(86761),	-- Fetters of Death
-										i(86769),	-- Leggings of Imprisoned Will
-										i(86765),	-- Sandals of the Severed Soul
-										i(86760),	-- Sollerets of Spirit Splitting
-										i(86767),	-- Circuit of the Frail Soul
-									})),
+									e(679, {	-- The Stone Guard
+										["crs"] = {
+											60047,	-- Amethyst Guardian
+											60051,	-- Cobalt Guardian
+											60043,	-- Jade Guardian
+											59915,	-- Jasper Guardian
+										},
+										["groups"] = {
+--											i(167047),	-- Stoneclaw (PET!)
+											i(86741),	-- Dagger of the Seven Stars
+											i(86745),	-- Sixteen-Fanged Crown
+											i(86739),	-- Beads of the Mogu'shi
+											i(86748),	-- Cape of Three Lanterns
+											i(89964),	-- Stonefang Chestguard
+											i(86740),	-- Stonemaw Armguards
+											i(89966),	-- Claws of Amethyst
+											i(89965),	-- Ruby-Linked Girdle
+											i(86793),	-- Star-Stealer Waistguard
+											i(86746),	-- Stonebound Cinch
+											i(86747),	-- Jade Dust Leggings
+											i(86743),	-- Stoneflesh Leggings
+											i(86744),	-- Heavenly Jade Greatboots
+											i(86742),	-- Jasper Clawfeet
+										},
+									}),
+									e(689, {	-- Feng the Accursed
+										["crs"] = { 60009 },	-- Feng the Accursed
+										["groups"] = {
+											i(89426),	-- Fan of Fiery Winds
+											i(86757),	-- Hood of Cursed Dreams
+											i(86752),	-- Nullification Greathelm
+											i(86754),	-- Amulet of Seven Curses
+											i(86782),	-- Arrow Breaking Windcloak
+											i(86753),	-- Cloak of Peacock Feathers
+											i(86758),	-- Imperial Ghostbinder's Robes
+											i(86751),	-- Bracers of Six Oxen
+											i(86755),	-- Chain of Shadow
+											i(86750),	-- Tomb Raider's Girdle
+											i(86756),	-- Legplates of Sagacious Shadows
+											i(86749),	-- Wildfire Worldwalkers
+											i(89968),	-- Feng's Ring of Dreams
+											i(89967),	-- Feng's Seal of Binding
+										},
+									}),
+									e(682, {	-- Gara'jal the Spiritbinder
+										["crs"] = { 60143 },	-- Gara'jal the Spiritbinder
+										["groups"] = {
+--											i(167048),	-- Wayward Spirit (PET!)
+											i(86762),	-- Gara'kal, Fist of the Spiritbinder
+											i(86764),	-- Eye of the Ancient Spirit
+											i(86759),	-- Soulgrasp Choker
+											i(86763),	-- Netherrealm Shoulderpads
+											i(86770),	-- Shadowsummoner Spaulders
+											i(86768),	-- Spaulders of the Divided Mind
+											i(86766),	-- Bindings of Ancient Spirits
+											i(89969),	-- Bonded Soul Bracers
+											i(86761),	-- Fetters of Death
+											i(86769),	-- Leggings of Imprisoned Will
+											i(86765),	-- Sandals of the Severed Soul
+											i(86760),	-- Sollerets of Spirit Splitting
+											i(86767),	-- Circuit of the Frail Soul
+										},
+									}),
 								},
 							}),
-							ach(6844, { -- The Vault of Mysteries
+							ach(6844, {	-- The Vault of Mysteries
 								["crs"] = {
 									80633,	-- Lorewalker Han <Raid Finder Storyteller>
 								},
@@ -174,6 +188,7 @@ _.Instances =
 										i(86784),	-- Meng's Treads of Insanity
 									})),
 									cr(60410, e(726, {	-- Elegon
+--										i(167049),	-- Celestial Gift (PET!)
 										i(86799),	-- Starshatter
 										i(86789),	-- Elegion, the Fanged Crescent
 										i(86796),	-- Torch of the Celestial Spark
@@ -190,6 +205,7 @@ _.Instances =
 										i(86790),	-- Vial of Dragon's Blood
 									})),
 									cr(60400, e(677, {	-- Will of the Emperor (60399)
+--										i(167050),	-- Mogu Statue (PET!)
 										i(138804),	-- Illusion: Colossus
 										i(86806),	-- Tihan, Scepter of the Sleeping Emperor
 										i(86801),	-- Fang Kung, Spark of Titans
@@ -215,7 +231,7 @@ _.Instances =
 						["ignoreBonus"] = true,
 						["difficulties"] = { 3, 4 },
 						["groups"] = {
-							n(-0, { -- Common Zone Drop
+							n(-0,  {	-- Common Zone Drop
 								["groups"] = {
 									i(86238),	-- Pattern: Chestguard of Nemeses
 									i(86272),	-- Pattern: Fists of Lightning
@@ -269,18 +285,25 @@ _.Instances =
 									60386,	-- Zandalari Terror Rider
 								},
 							}),
-							n(0, {	-- Zone Drop
+							n(0,   {	-- Zone Drop
 								i(86043),	-- Jade Bandit Figurine
 								i(86042),	-- Jade Charioteer Figurine
 								i(86045),	-- Jade Courtesan Figurine
 								i(86044),	-- Jade Magistrate Figurine
 								i(86046),	-- Jade Warlord Figurine
 							}),
-							cr(60047, e(679, {	-- The Stone Guard
+							e(679, {	-- The Stone Guard
+								["crs"] = {
+									60047,	-- Amethyst Guardian
+									60051,	-- Cobalt Guardian
+									60043,	-- Jade Guardian
+									59915,	-- Jasper Guardian
+								},
 								["groups"] = {
 									{	-- Must Love Dogs
 										["achievementID"] = 6823,	-- Must Love Dogs
 									},
+--									i(167047),	-- Stoneclaw (PET!)
 									i(85924),	-- Dagger of the Seven Stars
 									i(85976),	-- Sixteen-Fanged Crown
 									i(85922),	-- Beads of the Mogu'shi
@@ -296,58 +319,56 @@ _.Instances =
 									i(85975),	-- Heavenly Jade Greatboots
 									i(85925),	-- Jasper Clawfeet
 								},
-								["crs"] = {
-									60047, -- Amethyst Guardian
-									60051, -- Cobalt Guardian
-									60043, -- Jade Guardian
-									59915, -- Jasper Guardian
-								},
-							})),
-							cr(60009, e(689, {	-- Feng the Accursed
-								{	-- Anything You Can Do, I Can Do Better...
-									["achievementID"] = 6674,	-- Anything You Can Do, I Can Do Better...
-									["groups"] = {
-										{	-- Arcane Resonance
-											["achievementID"] = 6674,	-- Anything You Can Do, I Can Do Better...
-											["criteriaID"] = 5,	-- Arcane Resonance
-										},
-										{	-- Arcane Velocity
-											["achievementID"] = 6674,	-- Anything You Can Do, I Can Do Better...
-											["criteriaID"] = 4,	-- Arcane Velocity
-										},
-										{	-- Epicenter
-											["achievementID"] = 6674,	-- Anything You Can Do, I Can Do Better...
-											["criteriaID"] = 1,	-- Epicenter
-										},
-										{	-- Lightning Fists
-											["achievementID"] = 6674,	-- Anything You Can Do, I Can Do Better...
-											["criteriaID"] = 2,	-- Lightning Fists
-										},
-										{	-- Wildfire Spark
-											["achievementID"] = 6674,	-- Anything You Can Do, I Can Do Better...
-											["criteriaID"] = 3,	-- Wildfire Spark
+							}),
+							e(689, {	-- Feng the Accursed
+								["crs"] = { 60009 },	-- Feng the Accursed
+								["groups"] = {
+									{	-- Anything You Can Do, I Can Do Better...
+										["achievementID"] = 6674,	-- Anything You Can Do, I Can Do Better...
+										["groups"] = {
+											{	-- Arcane Resonance
+												["achievementID"] = 6674,	-- Anything You Can Do, I Can Do Better...
+												["criteriaID"] = 5,	-- Arcane Resonance
+											},
+											{	-- Arcane Velocity
+												["achievementID"] = 6674,	-- Anything You Can Do, I Can Do Better...
+												["criteriaID"] = 4,	-- Arcane Velocity
+											},
+											{	-- Epicenter
+												["achievementID"] = 6674,	-- Anything You Can Do, I Can Do Better...
+												["criteriaID"] = 1,	-- Epicenter
+											},
+											{	-- Lightning Fists
+												["achievementID"] = 6674,	-- Anything You Can Do, I Can Do Better...
+												["criteriaID"] = 2,	-- Lightning Fists
+											},
+											{	-- Wildfire Spark
+												["achievementID"] = 6674,	-- Anything You Can Do, I Can Do Better...
+												["criteriaID"] = 3,	-- Wildfire Spark
+											},
 										},
 									},
+									i(89424),	-- Fan of Fiery Winds
+									i(85989),	-- Hood of Cursed Dreams
+									i(85984),	-- Nullification Greathelm
+									i(85986),	-- Amulet of Seven Curses
+									i(86082),	-- Arrow Breaking Windcloak
+									i(85985),	-- Cloak of Peacock Feathers
+									i(85990),	-- Imperial Ghostbinder's Robes
+									i(85983),	-- Bracers of Six Oxen
+									i(85987),	-- Chain of Shadow
+									i(85982),	-- Tomb Raider's Girdle
+									i(85988),	-- Legplates of Sagacious Shadows
+									i(85980),	-- Wildfire Worldwalkers
+									i(89803),	-- Feng's Ring of Dreams
+									i(89802),	-- Feng's Seal of Binding
 								},
-								i(89424),	-- Fan of Fiery Winds
-								i(85989),	-- Hood of Cursed Dreams
-								i(85984),	-- Nullification Greathelm
-								i(85986),	-- Amulet of Seven Curses
-								i(86082),	-- Arrow Breaking Windcloak
-								i(85985),	-- Cloak of Peacock Feathers
-								i(85990),	-- Imperial Ghostbinder's Robes
-								i(85983),	-- Bracers of Six Oxen
-								i(85987),	-- Chain of Shadow
-								i(85982),	-- Tomb Raider's Girdle
-								i(85988),	-- Legplates of Sagacious Shadows
-								i(85980),	-- Wildfire Worldwalkers
-								i(89803),	-- Feng's Ring of Dreams
-								i(89802),	-- Feng's Seal of Binding
-							})),
+							}),
 							cr(60143, e(682, {	-- Gara'jal the Spiritbinder
 								{	-- Sorry, Were You Looking for This?
 									["achievementID"] = 7056,	-- Sorry, Were You Looking for This?
 								},
+--								i(167048),	-- Wayward Spirit (PET!)
 								i(85994),	-- Gara'kal, Fist of the Spiritbinder
 								i(85996),	-- Eye of the Ancient Spirit
 								i(85991),	-- Soulgrasp Choker
@@ -384,10 +405,10 @@ _.Instances =
 									i(86084),	-- Meng's Treads of Insanity
 								},
 								["crs"] = {
-									60701, -- Zian of the Endless Shadow <Sorcer King>
-									60708, -- Meng the Demented <Mad King>
-									60709, -- Qiang the Merciless <Warlord King>
-									60710, -- Subetai the Swift <Bandit King>
+									60701,	-- Zian of the Endless Shadow <Sorcer King>
+									60708,	-- Meng the Demented <Mad King>
+									60709,	-- Qiang the Merciless <Warlord King>
+									60710,	-- Subetai the Swift <Bandit King>
 								},
 							})),
 							{	-- And... It's Good!
@@ -398,6 +419,7 @@ _.Instances =
 									["achievementID"] = 6686,	-- Straight Six
 								},
 								i(87777),	-- Reins of the Astral Cloud Serpent (MOUNT!)
+--								i(167049),	-- Celestial Gift (PET!)
 								i(86140),	-- Starshatter
 								i(86130),	-- Elegion, the Fanged Crescent
 								i(86137),	-- Torch of the Celestial Spark
@@ -418,6 +440,7 @@ _.Instances =
 									{	-- Show Me Your Moves!
 										["achievementID"] = 6455,	-- Show Me Your Moves!
 									},
+--									i(167050),	-- Mogu Statue (PET!)
 									i(138804),	-- Illusion: Colossus
 									i( 86148),	-- Tihan, Scepter of the Sleeping Emperor
 									i( 86142),	-- Fang Kung, Spark of Titans
@@ -435,8 +458,8 @@ _.Instances =
 									i( 86147),	-- Qin-xi's Polarizing Seal
 								},
 								["crs"] = {
-									60400, -- Jan-xi <Emperor's Open Hand>
-									60399, -- Qin-xi <Emperor's Closed Fist>
+									60400,	-- Jan-xi <Emperor's Open Hand>
+									60399,	-- Qin-xi <Emperor's Closed Fist>
 								},
 							})),
 						},
@@ -445,7 +468,7 @@ _.Instances =
 						["ignoreBonus"] = true,
 						["difficulties"] = { 5, 6 },
 						["groups"] = {
-							n(0, { -- Zone Drop
+							n(0, {	-- Zone Drop
 								["groups"] = {
 									i(86238),	-- Pattern: Chestguard of Nemeses
 									i(86272),	-- Pattern: Fists of Lightning
@@ -499,7 +522,13 @@ _.Instances =
 									60386,	-- Zandalari Terror Rider
 								},
 							}),
-							cr(60047, e(679, {	-- The Stone Guard
+							e(679, {	-- The Stone Guard
+								["crs"] = {
+									60047,	-- Amethyst Guardian
+									60051,	-- Cobalt Guardian
+									60043,	-- Jade Guardian
+									59915,	-- Jasper Guardian
+								},
 								["groups"] = {
 									{	-- Heroic: Stone Guard
 										["achievementID"] = 6719,	-- Heroic: Stone Guard
@@ -507,6 +536,7 @@ _.Instances =
 									{	-- Must Love Dogs
 										["achievementID"] = 6823,	-- Must Love Dogs
 									},
+--									i(167047),	-- Stoneclaw (PET!)
 									i(87012),	-- Dagger of the Seven Stars
 									i(87020),	-- Sixteen-Fanged Crown
 									i(87016),	-- Beads of the Mogu'shi
@@ -522,13 +552,7 @@ _.Instances =
 									i(87021),	-- Heavenly Jade Greatboots
 									i(87015),	-- Jasper Clawfeet
 								},
-								["crs"] = {
-									60047, -- Amethyst Guardian
-									60051, -- Cobalt Guardian
-									60043, -- Jade Guardian
-									59915, -- Jasper Guardian
-								},
-							})),
+							}),
 							cr(60009, e(689, {	-- Feng the Accursed
 								{	-- Heroic: Feng the Accursed
 									["achievementID"] = 6720,	-- Heroic: Feng the Accursed
@@ -580,6 +604,7 @@ _.Instances =
 								{	-- Sorry, Were You Looking for This?
 									["achievementID"] = 7056,	-- Sorry, Were You Looking for This?
 								},
+--								i(167048),	-- Wayward Spirit (PET!)
 								i(87032),	-- Gara'kal, Fist of the Spiritbinder
 								i(87039),	-- Eye of the Ancient Spirit
 								i(87036),	-- Soulgrasp Choker
@@ -618,10 +643,10 @@ _.Instances =
 									i(87055),	-- Meng's Treads of Insanity
 								},
 								["crs"] = {
-									60701, -- Zian of the Endless Shadow <Sorcer King>
-									60708, -- Meng the Demented <Mad King>
-									60709, -- Qiang the Merciless <Warlord King>
-									60710, -- Subetai the Swift <Bandit King>
+									60701,	-- Zian of the Endless Shadow <Sorcer King>
+									60708,	-- Meng the Demented <Mad King>
+									60709,	-- Qiang the Merciless <Warlord King>
+									60710,	-- Subetai the Swift <Bandit King>
 								},
 							})),
 							{	-- And... It's Good!
@@ -635,6 +660,7 @@ _.Instances =
 									["achievementID"] = 6686,	-- Straight Six
 								},
 								i(87777),	-- Reins of the Astral Cloud Serpent (MOUNT!)
+--								i(167049),	-- Celestial Gift (PET!)
 								i(87061),	-- Starshatter
 								i(87062),	-- Elegion, the Fanged Crescent
 								i(87066),	-- Torch of the Celestial Spark
@@ -663,6 +689,7 @@ _.Instances =
 									{	-- Show Me Your Moves!
 										["achievementID"] = 6455,	-- Show Me Your Moves!
 									},
+--									i(167050),	-- Mogu Statue (PET!)
 									i(138804),	-- Illusion: Colossus
 									i( 87074),	-- Tihan, Scepter of the Sleeping Emperor
 									i( 87069),	-- Fang Kung, Spark of Titans
@@ -680,8 +707,8 @@ _.Instances =
 									i( 87075),	-- Qin-xi's Polarizing Seal
 								},
 								["crs"] = {
-									60400, -- Jan-xi <Emperor's Open Hand>
-									60399, -- Qin-xi <Emperor's Closed Fist>
+									60400,	-- Jan-xi <Emperor's Open Hand>
+									60399,	-- Qin-xi <Emperor's Closed Fist>
 								},
 							})),
 						},
@@ -691,7 +718,7 @@ _.Instances =
 				["sharedLockout"] = 1,
 				["lvl"] = 90,
 				["mapID"] = 471,
-				["maps"] = { 472, 473 }, -- 2nd LFR Wing
+				["maps"] = { 472, 473 },	-- 2nd LFR Wing
 			}),
 		},					
 		["tierID"] = 5

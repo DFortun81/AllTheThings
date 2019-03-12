@@ -5,6 +5,31 @@ local pet = function(itemID, speciesID)
     return item;
 end
 
+-- NPC IDs are not used in this file.
+-- The numbers listed here are written as follows: (pet itemID, speciesID);
+-- For example, for A Jubling's Tiny Home, the first number is the item that teaches you how to summon the companion.
+-- This number can be found in the "Summoned by" tab on Wowhead.
+-- The speciesID can be found via various addons — the slumber-approved addon is Rematch.  
+	-- In the Rematch options, make sure "Show Species ID & Ability ID" is checked.
+	-- The speciesID is the number by the icon that looks like a cogwheel on the card that pops up when you hover over a pet.
+
+--[[ Raiding with Leashes VI: Pets of Pandaria
+  -- Placing here until we have speciesIDs for these pets, then will reorganize with the rest of the list!
+pet(167057,  );	-- Happiness
+pet(167047,  );	-- Stoneclaw
+pet(167048,  );	-- Wayward Spirit
+pet(167049,  );	-- Celestial Gift (Comet)
+pet(167050,  );	-- Mogu Statue (Baoh-Xi)
+pet(167051,  );	-- Azure Cloud Serpent Egg (Azure Windseeker)
+pet(167052,  );	-- Spirit of the Spring
+pet(167058,  );	-- Kor'thik Swarmling
+pet(167053,  );	-- Tiny Amber Wings (Amberglow Stinger)
+pet(167054,  );	-- Spawn of Garalon
+pet(167055,  );	-- Amber Goo Puddle (Living Amber)
+pet(167056,  );	-- Essence of Pride (Ravenous Prideling)
+--]]
+
+
 pet(19450, 106); 	-- A Jubling's Tiny Home (Jubling)
 pet(129205, 1660); 	-- A Tiny Infernal Collar (Fel Pup)
 pet(163489, 2403);	-- Abyssal Eel

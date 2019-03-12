@@ -4,6 +4,7 @@
 _.PetJournal = 
 {
 	pa(245, { 	-- Dragonkin
+		-- p(),	-- Azure Windseeker
 		p(2072),	-- Ageless Bronze Drake
 		p(1385),	-- Albino Chimaeraling
 		p(57),		-- Azure Whelpling

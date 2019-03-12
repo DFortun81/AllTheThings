@@ -3,9 +3,9 @@
 -----------------------------------------------------
 _.Instances = 
 {
-	{ -- Mists of Pandaria
+	{	-- Mists of Pandaria
 		["groups"] = {
-			inst(330, { 	-- Heart of Fear
+			inst(330, {	-- Heart of Fear
 				["groups"] = {
 					d(7, {	-- LFR
 						["ignoreBonus"] = true,
@@ -97,6 +97,7 @@ _.Instances =
 								},
 								["groups"] = {
 									cr(62980, e(745, {	-- Imperial Vizier Zor'lok
+--										i(167058),	-- Kor'thik Swarmling (PET!)
 										i(89952),	-- Pheromone-Coated Choker
 										i(86812),	-- Hisek's Chrysanthemum Cape
 										i(86816),	-- Chestplate of the Forbidden Tower
@@ -113,6 +114,7 @@ _.Instances =
 										i(86813),	-- Vizier's Ruby Signet
 									})),
 									cr(62543, e(744, {  -- Blade Lord Ta'yak
+--										i(167053),	-- Tiny Amber Wings (PET!)
 										i(86829),	-- Tornado-Summoning Censer
 										i(89957),	-- Hood of Stilled Winds
 										i(86824),	-- Choker of the Unleashed Storm
@@ -129,6 +131,7 @@ _.Instances =
 										i(86820),	-- Ring of the Bladed Tempest
 									})),
 									cr(62164, e(713, {	-- Garalon
+--										i(167054),	-- Spawn of Garalon (PET!)
 										i(86832),	-- Garalon's Hollow Skull
 										i(86839),	-- Xaril's Hood of Intoxicating Vapors
 										i(86835),	-- Necklace of Congealed Weaknesses
@@ -190,6 +193,7 @@ _.Instances =
 										i(86851),	-- Painful Thorned Ring
 									})),
 									cr(62511, e(737, {	-- Amber-Shaper Un'sok
+--										i(167055),	-- Amber Goo Puddle (PET!)
 										i(89268, {	-- Leggings of the Shadowy Conqueror
 											i(86685),	-- White Tiger Greaves
 											i(86660),	-- White Tiger Legguards
@@ -228,6 +232,7 @@ _.Instances =
 										i(86858),	-- Seal of the Profane
 									})),
 									cr(62837, e(743, {	-- Grand Empress Shek'zeer
+--										i(167056),	-- Essence of Pride (PET!)
 										i(89265, {	-- Chest of the Shadowy Conqueror
 											i(86683),	-- White Tiger Battleplate
 											i(86688),	-- White Tiger Breastplate
@@ -343,6 +348,7 @@ _.Instances =
 							}),
 							cr(62980, e(745, {	-- Imperial Vizier Zor'lok
 								ach(6937),	-- Overzealous
+--								i(167058),	-- Kor'thik Swarmling (PET!)
 								i(89827),	-- Pheromone-Coated Choker
 								i(86154),	-- Hisek's Chrysanthemum Cape
 								i(86158),	-- Chestplate of the Forbidden Tower
@@ -360,6 +366,7 @@ _.Instances =
 							})),
 							cr(62543, e(744, {  -- Blade Lord Ta'yak
 								ach(6936),	-- Candle in the Wind
+--								i(167053),	-- Tiny Amber Wings (PET!)
 								i(86171),	-- Tornado-Summoning Censer
 								i(89831),	-- Hood of Stilled Winds
 								i(86166),	-- Choker of the Unleashed Storm
@@ -377,6 +384,7 @@ _.Instances =
 							})),
 							cr(62164, e(713, {	-- Garalon
 								ach(6553),	-- Like an Arrow to the Face
+--								i(167054),	-- Spawn of Garalon (PET!)
 								i(86174),	-- Garlon's Hollow Skull
 								i(86181),	-- Xaril's Hood of Intoxicating Vapors
 								i(86177),	-- Necklace of Congealed Weaknesses
@@ -433,6 +441,7 @@ _.Instances =
 							})),
 							cr(62511, e(737, {	-- Amber-Shaper Un'sok
 								ach(6518),	-- I Heard You Like Amber...
+--								i(167055),	-- Amber Goo Puddle (PET!)
 								i(89243, {	-- Leggings of the Shadowy Conqueror
 									i(85345),	-- White Tiger Greaves
 									i(85320),	-- White Tiger Legguards
@@ -472,6 +481,7 @@ _.Instances =
 							})),
 							cr(62837, e(743, {	-- Grand Empress Shek'zeer
 								ach(6922),	-- Timing is Everything
+--								i(167056),	-- Essence of Pride (PET!)
 								i(89237, {	-- Chest of the Shadowy Conqueror
 									i(85343),	-- White Tiger Battleplate
 									i(85348),	-- White Tiger Breastplate
@@ -580,6 +590,7 @@ _.Instances =
 							cr(62980, e(745, {	-- Imperial Vizier Zor'lok
 								ach(6725),	-- Heroic: Imperial Vizier Zor'lok
 								ach(6937),	-- Overzealous
+--								i(167058),	-- Kor'thik Swarmling (PET!)
 								i(89917),	-- Pheromone-Coated Choker
 								i(86945),	-- Hisek's Chrysanthemum Cape
 								i(86952),	-- Chestplate of the Forbidden Tower
@@ -598,6 +609,7 @@ _.Instances =
 							cr(62543, e(744, {  -- Blade Lord Ta'yak
 								ach(6936),	-- Candle in the Wind
 								ach(6726),	-- Heroic: Blade Lord Ta'yak
+--								i(167053),	-- Tiny Amber Wings (PET!)
 								i(86960),	-- Tornado-Summoning Censer
 								i(89922),	-- Hood of Stilled Winds
 								i(86953),	-- Choker of the Unleashed Storm
@@ -616,6 +628,7 @@ _.Instances =
 							cr(62164, e(713, {	-- Garalon
 								ach(6727),	-- Heroic: Garalon
 								ach(6553),	-- Like an Arrow to the Face
+--								i(167054),	-- Spawn of Garalon (PET!)
 								i(86966),	-- Garalon's Hollow Skull
 								i(86970),	-- Xaril's Hood of Intoxicating Vapors
 								i(86967),	-- Necklace of Congealed Weaknesses
@@ -674,6 +687,7 @@ _.Instances =
 							cr(62511, e(737, {	-- Amber-Shaper Un'sok
 								ach(6729),	-- Heroic: Amber-Shaper Un'sok
 								ach(6518),	-- I Heard You Like Amber...
+--								i(167055),	-- Amber Goo Puddle (PET!)
 								i(89253, {	-- Leggings of the Shadowy Conqueror
 									i(87107),	-- White Tiger Greaves
 									i(87112),	-- White Tiger Legguards
@@ -714,6 +728,7 @@ _.Instances =
 							cr(62837, e(743, {	-- Grand Empress Shek'zeer
 								ach(6730),	-- Heroic: Grand Empress Shek'zeer
 								ach(6922),	-- Timing is Everything
+--								i(167056),	-- Essence of Pride (PET!)
 								i(89250, {	-- Chest of the Shadowy Conqueror
 									i(87099),	-- White Tiger Battleplate
 									i(87104),	-- White Tiger Breastplate

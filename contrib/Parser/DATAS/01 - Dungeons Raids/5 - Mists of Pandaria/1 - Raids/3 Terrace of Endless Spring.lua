@@ -131,6 +131,7 @@ _.Instances =
 										},
 									})),
 									cr(62442, e(742, {	-- Tsulong
+--										i(167051),	-- Azure Cloud Serpent Egg (PET!)
 										i(86879),	-- Gao-Rei, Staff of the Legendary Protector
 										i(86886),	-- Loshan, Terror Incarnate
 										i(89982),	-- Shoulderpads of Twisted Fate
@@ -157,6 +158,7 @@ _.Instances =
 										i(86881),	-- Stuff of Nightmares
 									})),
 									cr(62983, e(729, {	-- Lei Shi
+--										i(167052),	-- Spirit of the Spring (PET!)
 										i(89277, {	-- Shoulders of the Shadowy Conqueror
 											i(86684),	-- White Tiger Mantle
 											i(86679),	-- White Tiger Pauldrons
@@ -326,6 +328,7 @@ _.Instances =
 							})),
 							cr(62442, e(742, {	-- Tsulong
 								ach(6933),	-- Who's Got Two Green Thumbs
+--								i(167051),	-- Azure Cloud Serpent Egg (PET!)
 								i(86321),	-- Gao-Rei, Staff of the Legendary Protector
 								i(86328),	-- Loshan, Terror Incarnate
 								i(89883),	-- Shoulderpads of Twisted Fate
@@ -353,6 +356,7 @@ _.Instances =
 							})),
 							cr(62983, e(729, {	-- Lei Shi
 								ach(6824),	-- Face Clutchers
+--								i(167052),	-- Spirit of the Spring (PET!)
 								i(89246, {	-- Shoulders of the Shadowy Conqueror
 									i(85344),	-- White Tiger Mantle
 									i(85339),	-- White Tiger Pauldrons
@@ -524,6 +528,7 @@ _.Instances =
 							cr(62442, e(742, {	-- Tsulong
 								ach(6732),	-- Heroic: Tsulong
 								ach(6933),	-- Who's Got Two Green Thumbs
+--								i(167051),	-- Azure Cloud Serpent Egg (PET!)
 								i(87156),	-- Gao-Rei, Staff of the Legendary Protector
 								i(87164),	-- Loshan, Terror Incarnate
 								i(89947),	-- Shoulderpads of Twisted Fate
@@ -552,6 +557,7 @@ _.Instances =
 							cr(62983, e(729, {	-- Lei Shi
 								ach(6824),	-- Face Clutchers
 								ach(6733),	-- Heroic: Lei Shi
+--								i(167052),	-- Spirit of the Spring (PET!)
 								i(89262, {	-- Shoulders of the Shadowy Conqueror
 									i(87108),	-- White Tiger Mantle
 									i(87103),	-- White Tiger Pauldrons
