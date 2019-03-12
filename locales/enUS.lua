@@ -2335,6 +2335,7 @@ AllTheThings.L = {
 		[187559] = "Horde Bonfire",
 		[187564] = "Alliance Bonfire",
 		[187565] = "Elder Atkanok",
+		[187674] = "Ith'rix's Hardened Carapace",
 		[187851] = "Cultist Shrine",
 		[187905] = "Massive Glowing Egg",
 		[187916] = "Alliance Bonfire",
