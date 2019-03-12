@@ -37,6 +37,30 @@ _.Zones =
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = HORDE_ONLY,
 								}),
+								{	-- Calligraphy
+									-- [WHEN THIS QUEST IS UP WRITE WHAT SHAPE IT MADE YOU DRAW HERE.]
+									-- Check back to see if each quest ID has static shape
+									-- If shape doesn't change each time the quest comes up we can remove the criteria where they don't apply
+									["questID"] = 55342,	-- Calligraphy
+									--["races"] = ,	-- neutral?  needs confirmation
+									["isWQ"] = 120,
+									["g"] = {
+										{	-- Master Calligrapher
+											["achievementID"] = 13512,	-- Master Calligrapher
+											["g"] = {
+												{	-- Master of Calligraphy - Circle
+													["criteriaID"] = 1,	-- Master of Calligraphy - Circle
+												},
+												{	-- Master of Calligraphy - Square
+													["criteriaID"] = 2,	-- Master of Calligraphy - Square
+												},
+												{	-- Master of Calligraphy - Triangle
+													["criteriaID"] = 3,	-- Master of Calligraphy - Triangle
+												},
+											},
+										},
+									},
+								},
 								{	-- Cargo Reclamation
 									["questID"] =  50962,	-- Cargo Reclamation
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
