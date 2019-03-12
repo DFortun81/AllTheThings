@@ -836,6 +836,12 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 25065,	-- You Too, Brute?
 					},
+					qa(53818, {	-- Re-parrot / Programming On The Fly
+						-- Quest shows up in-game as "Re-parrot" currently, but Wowhead redirects to the second quest name listed
+						["qg"] = 151132,	-- Feathers
+						["coord"] = { 62.1, 45.3, 71 },	-- Tanaris
+						["sourceQuests"] = { 53816 },	-- Some Reassembly Required
+					}),
 					{	-- Rescue OOX-17/TN!
 						["questID"] = 648,
 						["groups"] = {
@@ -845,6 +851,14 @@ _.Zones =
 						["qg"] = 7784,	-- Homing Robot OOX-17/TN
 						["coord"] = { 59.7, 64.0 },
 						["sourceQuest"] = 351,	-- Find OOX-17/TN!
+					},
+					{	-- Returning a Favor
+						["questID"] = 24905,
+						["qg"] = 38706,	-- Zeke Bootscuff
+						["coord"] = { 55.6, 60.8 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 24953,	-- Just Trying to Kill Some Bugs
+						["isBreadcrumb"] = true,
 					},
 					{	-- Return to Apothecary Zinge
 						["questID"] = 864,
@@ -858,14 +872,11 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 654,	-- Tanaris Field Sampling
 					},
-					{	-- Returning a Favor
-						["questID"] = 24905,
-						["qg"] = 38706,	-- Zeke Bootscuff
-						["coord"] = { 55.6, 60.8 },
-						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 24953,	-- Just Trying to Kill Some Bugs
-						["isBreadcrumb"] = true,
-					},
+					qa(53819, {	-- Return to the Nest
+						["qg"] = 151132,	-- Feathers
+						["coord"] = { 62.1, 45.3, 71 },	-- Tanaris
+						["sourceQuests"] = { 53818 },	-- Re-parrot / Programming On The Fly
+					}),
 					{	-- Safety First
 						["questID"] = 1189,
 						["groups"] = {
@@ -926,6 +937,14 @@ _.Zones =
 						["coord"] = { 42.2, 23.8 },
 						["sourceQuest"] = 25026,	-- Darkest Mojo
 					},
+					qa(53820, {	-- She's in a Happier Place
+						["g"] = {
+							i(165845),	-- Feathers (PET!)
+						},
+						["qg"] = 151129,	-- Sapphronetta Flavvers
+						["coord"] = { 27.1, 60.0, 71 },	-- Tanaris
+						["sourceQuests"] = { 53819 },	-- Return to the Nest
+					}),
 					{	-- Slake That Thirst
 						["questID"] = 379,
 						["qg"] = 7407,	-- Chief Engineer Bilgewhizzle <Gadgetzan Water Co.>
@@ -939,6 +958,11 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["u"] = 40,
 					},
+					qa(53816, {	-- Some Reassembly Required
+						["qg"] = 151132,	-- Feathers
+						["coord"] = { 62.1, 45.3, 71 },	-- Tanaris
+						["sourceQuests"] = { 53815 },	-- Whatever Happened to Saffy Flivvers?
+					}),
 					{	-- Southsea Shakedown
 						["questID"] = 8366,
 						["groups"] = {

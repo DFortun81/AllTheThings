@@ -21,7 +21,6 @@ _.NeverImplemented =
 		un(1, i(157626)),	-- Staff of Sining mists (Lv20 Start Gear?)
 		un(1, i(166680)),	-- Echo of Elune (maybe you will able to get it with a hotfix?)
 		un(1, i(166358)),	-- Proper Parrot/ Proper Parrot was supposed to be added in 8.1, tied to the quest Be More Uniform.A few days after 8.1 went live, it was removed from the pet journal. Nobody obtained it from the quest.
-		un(1, i(165845)),	-- Mechanical Feather. Most likely same as above.
 		un(1, i(165792)),	-- Worn Cloak (future WQ?)
 		un(1, p(2341)),	-- Feathers (possibly tied to a quest?)
 		un(1, i(157677)),	-- Hearthbonded Helm (Hunter Future Boost Gear)

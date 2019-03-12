@@ -773,12 +773,12 @@ pet(166500, 2562);	-- Crimson Octopode
 pet(166449, 2544);	-- Darkshore Sentinel
 pet(165846, 2527);	-- Enchanted Talon of Pa'ku
 pet(166453, 2548);	-- Everburning Treant
+pet(165845, 2526);	-- Feathers
 pet(166493, 2557);	-- Firesting Buzzer
 pet(166487, 2552);	-- Leatherwing Screecher
 pet(165855, 2532);	-- Leper Rat Tail
 pet(166494, 2558);	-- Lord Woofington
 pet(165854, 2531);	-- Mechanical Cockroach
-pet(165845, 2341);	-- Mechanical Feather
 pet(165849, 2565);	-- Mechantula
 pet(165894, 2534);	-- Mini Spider Tank
 pet(166489, 2554);	-- Needleback Pup
