@@ -10587,6 +10587,7 @@ ItemRefShoppingTooltip2:HookScript("OnShow", AttachTooltip);
 ItemRefShoppingTooltip2:HookScript("OnTooltipSetQuest", AttachTooltip);
 ItemRefShoppingTooltip2:HookScript("OnTooltipSetItem", AttachTooltip);
 ItemRefShoppingTooltip2:HookScript("OnTooltipCleared", ClearTooltip);
+--[[
 WorldMapTooltip.ItemTooltip.Tooltip:HookScript("OnTooltipSetQuest", AttachTooltip);
 WorldMapTooltip.ItemTooltip.Tooltip:HookScript("OnTooltipSetItem", AttachTooltip);
 WorldMapTooltip.ItemTooltip.Tooltip:HookScript("OnTooltipSetUnit", AttachTooltip);
@@ -10596,6 +10597,7 @@ WorldMapTooltip:HookScript("OnTooltipSetQuest", AttachTooltip);
 WorldMapTooltip:HookScript("OnTooltipCleared", ClearTooltip);
 WorldMapTooltip:HookScript("OnTooltipCleared", ClearTooltip);
 WorldMapTooltip:HookScript("OnShow", AttachTooltip);
+--]]
 
 --hooksecurefunc("BattlePetTooltipTemplate_SetBattlePet", AttachBattlePetTooltip); -- Not ready yet.
 
