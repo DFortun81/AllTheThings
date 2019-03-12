@@ -61,7 +61,7 @@ _.Instances =
 									i(159615),	-- Ignition Mage's Fuse
 								}),
 								["crs"] = {
-									130646, -- Knight Captain Valyri
+									127490, -- Knight Captain Valyri
 								},
 							}),
 							e(2096, { -- Overseer Korgus
@@ -128,7 +128,7 @@ _.Instances =
 									i(159615),	-- Ignition Mage's Fuse
 								},
 								["crs"] = {
-									130646, -- Knight Captain Valyri
+									127490, -- Knight Captain Valyri
 								},
 							}),
 							e(2096, { -- Overseer Korgus
@@ -202,7 +202,7 @@ _.Instances =
 									i(159615),	-- Ignition Mage's Fuse
 								},
 								["crs"] = {
-									130646, -- Knight Captain Valyri
+									127490, -- Knight Captain Valyri
 								},
 							}),
 							e(2096, { -- Overseer Korgus
