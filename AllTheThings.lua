@@ -6560,7 +6560,9 @@ local function CreateMiniListForGroup(group)
 		UpdateGroups(popout.data, popout.data.g);
 		popout.data.visible = true;
 	end
-	AddTomTomWaypoint(popout.data, false);
+	if IsAltKeyDown() then
+		AddTomTomWaypoint(popout.data, false);
+	end
 	if not popout.data.expanded then
 		ExpandGroupsRecursively(popout.data, true, true);
 	end
