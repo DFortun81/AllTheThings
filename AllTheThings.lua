@@ -3998,16 +3998,16 @@ app.BaseHeirloom = {
 					if not g then
 						if not armorTokens then
 							armorTokens = {
-								app.CreateItem(122338),	-- Ancient Heirloom Armor Casing
-								app.CreateItem(122340),	-- Timeworn Heirloom Armor Casing
-								app.CreateItem(151614),	-- Weathered Heirloom Armor Casing
 								app.CreateItem(167731),	-- Battle-Hardened Heirloom Armor Casing
+								app.CreateItem(151614),	-- Weathered Heirloom Armor Casing
+								app.CreateItem(122340),	-- Timeworn Heirloom Armor Casing
+								app.CreateItem(122338),	-- Ancient Heirloom Armor Casing
 							};
 							weaponTokens = {
-								app.CreateItem(122339),	-- Ancient Heirloom Scabbard
-								app.CreateItem(122341),	-- Timeworn Heirloom Scabbard
-								app.CreateItem(151615),	-- Weathered Heirloom Scabbard
 								app.CreateItem(167732),	-- Battle-Hardened Heirloom Scabbard
+								app.CreateItem(151615),	-- Weathered Heirloom Scabbard
+								app.CreateItem(122341),	-- Timeworn Heirloom Scabbard
+								app.CreateItem(122339),	-- Ancient Heirloom Scabbard
 							};
 							for i,item in ipairs(armorTokens) do
 								CacheFields(item);
@@ -4025,9 +4025,9 @@ app.BaseHeirloom = {
 							local l = setmetatable({ ["level"] = i, ["parent"] = t, ["u"] = t.u }, app.BaseHeirloomLevel);
 							local c = setmetatable({ ["level"] = i, ["itemID"] = t.itemID, ["parent"] = t, ["u"] = t.u, ["f"] = t.f }, app.BaseHeirloomLevel);
 							if l.isWeapon then
-								tinsert(weaponTokens[i].g, c);
+								tinsert(weaponTokens[total + 1 - i].g, c);
 							else
-								tinsert(armorTokens[i].g, c);
+								tinsert(armorTokens[total + 1 - i].g, c);
 							end
 							tinsert(g, l);
 						end
