@@ -3986,6 +3986,8 @@ app.BaseHeirloom = {
 			end
 		elseif key == "modID" then
 			return 1;
+		elseif key == "b" then
+			return 1;
 		elseif key == "text" then
 			return t.link;
 		elseif key == "link" then
@@ -11068,7 +11070,7 @@ app.events.HEIRLOOMS_UPDATED = function(itemID, kind, ...)
 		
 		if app.Settings:GetTooltipSetting("Report:Collected") then
 			local name, link = GetItemInfo(itemID);
-			if link then print(format(L["ITEM_ID_ADDED"], link, itemID)); end
+			if link then print(format(L["ITEM_ID_ADDED_RANK"], link, itemID, (select(5, C_Heirloom.GetHeirloomInfo(itemID)) or 1))); end
 		end
 	end
 end
