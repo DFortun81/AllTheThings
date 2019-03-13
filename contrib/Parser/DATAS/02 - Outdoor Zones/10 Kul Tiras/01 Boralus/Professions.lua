@@ -417,6 +417,64 @@ _.Zones =
 								},
 							},
 						},
+												-- Alchemy Questline
+						qa(50121, {	-- Casting the First Stone
+							["qg"] = 132228,	-- Elrick Pfitzer <Alchemielehrer>
+							["coord"] = { 42.2, 38.0, 1161 },
+							["requireSkill"] = 171,	-- Alchemy
+						}),
+						qa(50122, {	-- Ocular Extracts
+							["qg"] = 132228,	-- Elrick Pfitzer <Alchemielehrer>
+							["coord"] = { 42.2, 38.0, 1161 },
+							["requireSkill"] = 171,	-- Alchemy
+							["sourceQuests"] = { 50121 },	-- Casting the First Stone
+						}),
+						qa(50124, {	-- Changing the Scenery
+							["qg"] = 132228,	-- Elrick Pfitzer <Alchemielehrer>
+							["coord"] = { 42.2, 38.0, 1161 },
+							["requireSkill"] = 171,	-- Alchemy
+							["sourceQuests"] = { 50121 },	-- Casting the First Stone
+						}),
+						qa(50125, {	-- A Possible Solution
+							["qg"] = 132228,	-- Elrick Pfitzer <Alchemielehrer>
+							["coord"] = { 42.2, 38.0, 1161 },
+							["requireSkill"] = 171,	-- Alchemy
+							["sourceQuests"] = { 
+								50124,	-- Changing the Scenery
+								50122,	-- Ocular Extracts
+							},
+						}),
+						qa(50126, {	-- A Deathly Draught
+							["qg"] = 132347,	-- Quintin Whalgrene <Master of Transmutations>
+							["coord"] = { 30.6, 49.6, 896 },
+							["requireSkill"] = 171,	-- Alchemy
+							["sourceQuests"] = { 50125 },
+						}),
+						qa(50127, {	-- A Stone's Throw
+							["qg"] = 132347,	-- Quintin Whalgrene <Master of Transmutations>
+							["coord"] = { 30.6, 49.6, 896 },
+							["requireSkill"] = 171,	-- Alchemy
+							["sourceQuests"] = { 50125 },
+						}),
+						qa(50128, {	-- Chemically Compounded
+							["qg"] = 132347,	-- Quintin Whalgrene <Master of Transmutations>
+							["coord"] = { 30.6, 49.6, 896 },
+							["requireSkill"] = 171,	-- Alchemy
+							["sourceQuests"] = { 
+								50127,	-- A Deathly Draught
+								50126,	-- A Stone's Throw	
+							},
+						}),
+						o(280755, {	-- Quintin's Satchel
+							qa(50129, {	-- A Recipe for Success
+								["groups"] = {
+									recipe(261463),	-- Recipe: Silus' Sphere of Transmutation
+								},
+								["coord"] = { 62.9, 28.9, 863 },
+								["requireSkill"] = 171,	-- Alchemy
+								["sourceQuests"] = { 50128 },	
+							}),
+						}),
 						--[[
 						-- Note!! Commenting out the achievements for now.  They aren't specific to the city and are already under achievements section in ATT.  Will analyze later and see if any can be reconfigured.
 						ach(12757),		-- Angling for Battle
