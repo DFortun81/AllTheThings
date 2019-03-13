@@ -10824,6 +10824,7 @@ app:RegisterEvent("ACTIVE_TALENT_GROUP_CHANGED");
 app:RegisterEvent("PLAYER_LOOT_SPEC_UPDATED");
 app:RegisterEvent("TRANSMOG_COLLECTION_SOURCE_ADDED");
 app:RegisterEvent("TRANSMOG_COLLECTION_SOURCE_REMOVED");
+app:RegisterEvent("HEIRLOOMS_UPDATED");
 
 -- Define Event Behaviours
 app.events.VARIABLES_LOADED = function()
@@ -11057,6 +11058,19 @@ end
 app.events.COMPANION_UNLEARNED = function(...)
 	--print("COMPANION_UNLEARNED", ...);
 	RefreshMountCollection();
+end
+app.events.HEIRLOOMS_UPDATED = function(itemID, kind, ...)
+	if itemID then
+		app:RefreshData(false, true, true);
+		app:PlayFanfare();
+		wipe(searchCache);
+		collectgarbage();
+		
+		if app.Settings:GetTooltipSetting("Report:Collected") then
+			local name, link = GetItemInfo(itemID);
+			if link then print(format(L["ITEM_ID_ADDED"], link, itemID)); end
+		end
+	end
 end
 app.events.QUEST_TURNED_IN = function(questID)
 	GetQuestsCompleted(CompletedQuests);
