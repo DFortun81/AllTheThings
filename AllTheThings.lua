@@ -1408,7 +1408,7 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 				tinsert(entries, o);
 				
 				-- Only go down one more level.
-				if layer < 2 and group.g and (not group.achievementID or paramA == "creatureID") and not group.parent.difficultyID and #group.g > 0 and not group.g[1].artifactID then
+				if layer < 2 and group.g and (not group.achievementID or paramA == "creatureID") and not group.parent.difficultyID and #group.g > 0 and not (group.g[1].artifactID or group.filterID == 109) then
 					BuildContainsInfo(group.g, entries, paramA, paramB, indent .. " ", layer + 1);
 				end
 			end
@@ -1822,6 +1822,12 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			group.progress = 0;
 			group.total = 0;
 			app.UpdateGroups(group, group.g);
+			if group.collectible then
+				group.total = group.total + 1;
+				if group.collected then
+					group.progress = group.progress + 1;
+				end
+			end
 		end
 		
 		if group.description and app.Settings:GetTooltipSetting("Descriptions") and not group.encounterID then
@@ -3839,6 +3845,106 @@ app.CreateGarrisonTalent = function(id, t)
 end
 
 -- Heirloom Lib
+(function()
+local heirloomUpdateLevels = {};
+local isWeapon = { 20, 29, 28,  21, 22, 23, 24, 25, 26,  50, 57, 34, 35, 27,  33, 32, 31 };
+local armorTextures = {
+	"Interface/ICONS/INV_Icon_HeirloomToken_Armor01",
+	"Interface/ICONS/INV_Icon_HeirloomToken_Armor02",
+	"Interface/ICONS/Inv_leather_draenordungeon_c_01shoulder",
+	"Interface/ICONS/inv_mail_draenorquest90_b_01shoulder"
+};
+local weaponTextures = {
+	"Interface/ICONS/INV_Icon_HeirloomToken_Weapon01",
+	"Interface/ICONS/INV_Icon_HeirloomToken_Weapon02",
+	"Interface/ICONS/inv_weapon_shortblade_112",
+	"Interface/ICONS/inv_weapon_shortblade_111"
+};
+local armorTokens, weaponTokens;
+app.BaseHeirloomUnlocked = {
+	__index = function(t, key)
+		if key == "collectible" then
+			return app.CollectibleHeirlooms;
+		elseif key == "collected" then
+			return C_Heirloom.PlayerHasHeirloom(t.parent.itemID);
+		elseif key == "text" then
+			return "Unlocked Heirloom";
+		elseif key == "description" then
+			return "This indicates whether or not you have acquired or purchased the heirloom yet.";
+		elseif key == "icon" then
+			return "Interface/ICONS/Achievement_GuildPerk_WorkingOvertime_Rank2";
+		else
+			-- Something that isn't dynamic.
+			return table[key];
+		end
+	end
+};
+app.BaseHeirloomLevel = {
+	__index = function(t, key)
+		if key == "collectible" then
+			return app.CollectibleHeirlooms;
+		elseif key == "collected" then
+			return t.level <= (select(5, C_Heirloom.GetHeirloomInfo(t.parent.itemID)) or 0);
+		elseif key == "text" then
+			return t.link or ("Upgrade Level " .. t.level);
+		elseif key == "link" then
+			local itemLink = t.itemID;
+			if itemLink then
+				if t.bonusID then
+					if t.bonusID > 0 then
+						itemLink = string.format("item:%d::::::::::::1:%d", itemLink, t.bonusID);
+					else
+						itemLink = string.format("item:%d:::::::::::::", itemLink);
+					end
+				elseif t.modID then
+					itemLink = string.format("item:%d:::::::::::%d:1:3524", itemLink, t.modID);
+				end
+				local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(itemLink);
+				if link then
+					t.link = link;
+					t.icon = icon;
+					t.retries = nil;
+					return link;
+				else
+					if t.retries then
+						t.retries = t.retries + 1;
+						if t.retries > app.MaximumItemInfoRetries then
+							local itemName = "Item #" .. t.itemID .. "*";
+							t.title = "Failed to acquire item information. The item made be invalid or may not have been cached on your server yet.";
+							t.icon = "Interface\\Icons\\INV_Misc_QuestionMark";
+							t.link = "";
+							t.s = nil;
+							t.text = itemName;
+							return itemName;
+						end
+					else
+						t.retries = 1;
+					end
+				end
+			end
+		elseif key == "description" then
+			return "This indicates whether or not you have upgraded the heirloom to a certain level.\n\nR.I.P. Gold.\n - Crieve";
+		elseif key == "icon" then
+			if t.isWeapon then
+				return weaponTextures[t.level];
+			else
+				return armorTextures[t.level];
+			end
+		elseif key == "level" then
+			return 0;
+		elseif key == "isWeapon" then
+			if t.parent.f and contains(isWeapon, t.parent.f) then
+				rawset(t, "isWeapon", true);
+				return true;
+			end
+			rawset(t, "isWeapon", false);
+			return false;
+		else
+			-- Something that isn't dynamic.
+			return table[key];
+		end
+	end
+};
 app.BaseHeirloom = {
 	__index = function(t, key)
 		if key == "key" then
@@ -3847,9 +3953,9 @@ app.BaseHeirloom = {
 			return 109;
 		elseif key == "collectible" then
 			if t.factionID then return app.CollectibleReputations; end
-			return app.CollectibleTransmog;
+			return t.s and t.s > 0 and app.CollectibleTransmog;
 		elseif key == "collected" then
-			if C_Heirloom.PlayerHasHeirloom(t.itemID) or (t.s and t.s > 0 and GetDataSubMember("CollectedSources", t.s)) then return 1; end
+			if t.s and t.s > 0 and GetDataSubMember("CollectedSources", t.s) then return 1; end
 			if t.factionID then
 				if t.repeatable then
 					-- This is used by reputation tokens.
@@ -3884,6 +3990,52 @@ app.BaseHeirloom = {
 			return t.link;
 		elseif key == "link" then
 			return C_Heirloom.GetHeirloomLink(t.itemID) or select(2, GetItemInfo(t.itemID));
+		elseif key == "g" then
+			if app.CollectibleHeirlooms then
+				local total = C_Heirloom.GetHeirloomMaxUpgradeLevel(t.itemID);
+				if total then
+					local g = heirloomUpdateLevels[t.itemID];
+					if not g then
+						if not armorTokens then
+							armorTokens = {
+								app.CreateItem(122338),	-- Ancient Heirloom Armor Casing
+								app.CreateItem(122340),	-- Timeworn Heirloom Armor Casing
+								app.CreateItem(151614),	-- Weathered Heirloom Armor Casing
+								app.CreateItem(167731),	-- Battle-Hardened Heirloom Armor Casing
+							};
+							weaponTokens = {
+								app.CreateItem(122339),	-- Ancient Heirloom Scabbard
+								app.CreateItem(122341),	-- Timeworn Heirloom Scabbard
+								app.CreateItem(151615),	-- Weathered Heirloom Scabbard
+								app.CreateItem(167732),	-- Battle-Hardened Heirloom Scabbard
+							};
+							for i,item in ipairs(armorTokens) do
+								CacheFields(item);
+								item.g = {};
+							end
+							for i,item in ipairs(weaponTokens) do
+								CacheFields(item);
+								item.g = {};
+							end
+						end
+						g = {};
+						heirloomUpdateLevels[t.itemID] = g;
+						tinsert(g, setmetatable({ ["parent"] = t }, app.BaseHeirloomUnlocked));
+						for i=1,total,1 do
+							local l = setmetatable({ ["level"] = i, ["parent"] = t, ["u"] = t.u }, app.BaseHeirloomLevel);
+							local c = setmetatable({ ["level"] = i, ["itemID"] = t.itemID, ["parent"] = t, ["u"] = t.u, ["f"] = t.f }, app.BaseHeirloomLevel);
+							if l.isWeapon then
+								tinsert(weaponTokens[i].g, c);
+							else
+								tinsert(armorTokens[i].g, c);
+							end
+							tinsert(g, l);
+						end
+					end
+					rawset(t, "g", g);
+					return g;
+				end
+			end
 		elseif key == "icon" then
 			return select(4, C_Heirloom.GetHeirloomInfo(t.itemID));
 		else
@@ -3895,6 +4047,7 @@ app.BaseHeirloom = {
 app.CreateHeirloom = function(id, t)
 	return createInstance(constructor(id, t, "itemID"), app.BaseHeirloom);
 end
+end)();
 
 -- Holiday Lib
 (function()

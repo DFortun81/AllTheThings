@@ -72,6 +72,7 @@ local GeneralSettingsBase = {
 		-- ["AccountWide:BattlePets"] = true,
 		["AccountWide:FlightPaths"] = true,
 		["AccountWide:Followers"] = true,
+		-- ["AccountWide:Heirlooms"] = true,
 		["AccountWide:Illusions"] = true,
 		-- ["AccountWide:Mounts"] = true,
 		["AccountWide:MusicRolls"] = true,
@@ -86,6 +87,7 @@ local GeneralSettingsBase = {
 		["Thing:BattlePets"] = true,
 		["Thing:FlightPaths"] = true,
 		["Thing:Followers"] = true,
+		["Thing:Heirlooms"] = true,
 		["Thing:Illusions"] = true,
 		["Thing:Mounts"] = true,
 		["Thing:MusicRolls"] = true,
@@ -419,6 +421,7 @@ settings.UpdateMode = function(self)
 		app.CollectibleBattlePets = true;
 		app.CollectibleFlightPaths = true;
 		app.CollectibleFollowers = true;
+		app.CollectibleHeirlooms = true;
 		app.CollectibleIllusions = true;
 		app.CollectibleMounts = true;
 		app.CollectibleMusicRolls = true;
@@ -462,6 +465,7 @@ settings.UpdateMode = function(self)
 		app.CollectibleBattlePets = self:Get("Thing:BattlePets");
 		app.CollectibleFlightPaths = self:Get("Thing:FlightPaths");
 		app.CollectibleFollowers = self:Get("Thing:Followers");
+		app.CollectibleHeirlooms = self:Get("Thing:Heirlooms");
 		app.CollectibleIllusions = self:Get("Thing:Illusions");
 		app.CollectibleMounts = self:Get("Thing:Mounts");
 		app.CollectibleMusicRolls = self:Get("Thing:MusicRolls");
@@ -750,7 +754,7 @@ MinimapButtonStyleCheckBox:SetPoint("RIGHT", settings, "RIGHT", -228, 0);
 
 
 local ThingsLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-ThingsLabel:SetPoint("TOPLEFT", AccountModeCheckBox, "BOTTOMLEFT", 0, -24);
+ThingsLabel:SetPoint("TOPLEFT", AccountModeCheckBox, "BOTTOMLEFT", 0, -8);
 ThingsLabel:SetJustifyH("LEFT");
 ThingsLabel:SetText("Which \"Things\" do you want to track?");
 ThingsLabel:Show();
@@ -941,6 +945,36 @@ end);
 FollowersAccountWideCheckBox:SetATTTooltip("Followers are typically per character, but do you really want to have to collect 243 Garrison Inn Followers on one character at a rate of 1 per week?\n\nI think not, good sir.");
 FollowersAccountWideCheckBox:SetPoint("TOPLEFT", FollowersCheckBox, "TOPLEFT", 220, 0);
 
+
+local HeirloomsCheckBox = settings:CreateCheckBox("Heirlooms",
+function(self)
+	self:SetChecked(settings:Get("Thing:Heirlooms"));
+	if settings:Get("DebugMode") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:Set("Thing:Heirlooms", self:GetChecked());
+	settings:UpdateMode();
+	app:RefreshData();
+end);
+HeirloomsCheckBox:SetATTTooltip("Enable this option to track whether you have unlocked an Heirloom and its respective Upgrade Levels.\n\nHeirlooms that have an associated Appearance are filtered via the Appearances filter. (turning off appearances will still show the Heirloom itself)\n\nSome items that appear with heirloom quality also help boost reputations and can be filtered via the Reputations filter.");
+HeirloomsCheckBox:SetPoint("TOPLEFT", FollowersCheckBox, "BOTTOMLEFT", 0, 4);
+
+local HeirloomsAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
+function(self)
+	self:SetChecked(true);
+	self:Disable();
+	self:SetAlpha(0.2);
+end,
+nil);
+HeirloomsAccountWideCheckBox:SetATTTooltip("Heirlooms are tracked account wide.");
+HeirloomsAccountWideCheckBox:SetPoint("TOPLEFT", HeirloomsCheckBox, "TOPLEFT", 220, 0);
+
 local IllusionsCheckBox = settings:CreateCheckBox("Illusions",
 function(self)
 	self:SetChecked(settings:Get("Thing:Illusions"));
@@ -958,7 +992,7 @@ function(self)
 	app:RefreshData();
 end);
 IllusionsCheckBox:SetATTTooltip("Enable this option to track illusions.\n\nThese are really cool looking transmog effects you can apply to your weapons!\n\nNOTE: You are not an Illusion despite what all the Nightborn think.\n\nTracked Account Wide by Default.");
-IllusionsCheckBox:SetPoint("TOPLEFT", FollowersCheckBox, "BOTTOMLEFT", 0, 4);
+IllusionsCheckBox:SetPoint("TOPLEFT", HeirloomsCheckBox, "BOTTOMLEFT", 0, 4);
 
 local IllusionsAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
 function(self)
