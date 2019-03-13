@@ -1568,7 +1568,7 @@ _.Instances =
 							i( 45522),	-- Blood of the Old God
 						})),
 					}),
-					d(33, {	-- Timewalking
+					d(24, {	-- Timewalking
 						["groups"] = {
 							n(0, {		-- Zone Drop
 								i(156462),	-- Drape of the Spellweaver
