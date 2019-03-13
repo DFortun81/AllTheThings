@@ -836,12 +836,6 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 25065,	-- You Too, Brute?
 					},
-					qa(53818, {	-- Re-parrot / Programming On The Fly
-						-- Quest shows up in-game as "Re-parrot" currently, but Wowhead redirects to the second quest name listed
-						["qg"] = 151132,	-- Feathers
-						["coord"] = { 62.1, 45.3, 71 },	-- Tanaris
-						["sourceQuests"] = { 53816 },	-- Some Reassembly Required
-					}),
 					{	-- Rescue OOX-17/TN!
 						["questID"] = 648,
 						["groups"] = {
@@ -872,11 +866,6 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 654,	-- Tanaris Field Sampling
 					},
-					qa(53819, {	-- Return to the Nest
-						["qg"] = 151132,	-- Feathers
-						["coord"] = { 62.1, 45.3, 71 },	-- Tanaris
-						["sourceQuests"] = { 53818 },	-- Re-parrot / Programming On The Fly
-					}),
 					{	-- Safety First
 						["questID"] = 1189,
 						["groups"] = {
@@ -937,15 +926,8 @@ _.Zones =
 						["coord"] = { 42.2, 23.8 },
 						["sourceQuest"] = 25026,	-- Darkest Mojo
 					},
-					qa(53820, {	-- She's in a Happier Place
-						["g"] = {
-							i(165845),	-- Feathers (PET!)
-						},
-						["qg"] = 151129,	-- Sapphronetta Flavvers
-						["coord"] = { 27.1, 60.0, 71 },	-- Tanaris
-						["sourceQuests"] = { 53819 },	-- Return to the Nest
-					}),
-					{	-- Slake That Thirst
+					{
+					-- Slake That Thirst
 						["questID"] = 379,
 						["qg"] = 7407,	-- Chief Engineer Bilgewhizzle <Gadgetzan Water Co.>
 					--	["coord"] = { 44.5, 52.6 }
@@ -958,11 +940,42 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["u"] = 40,
 					},
-					qa(53816, {	-- Some Reassembly Required
+					-- Feathers Questline
+					q(53816, {	-- Some Reassembly Required
 						["qg"] = 151132,	-- Feathers
 						["coord"] = { 62.1, 45.3, 71 },	-- Tanaris
-						["sourceQuests"] = { 53815 },	-- Whatever Happened to Saffy Flivvers?
+						["sourceQuests"] = { 
+							53815,	-- Whatever Happened to Saffy Flivvers?
+							53817,	-- Whatever Happened to Grizzek Fizzwrench?
+						},
 					}),
+					q(53818, {	-- Re-parrot / Programming On The Fly
+						-- Quest shows up in-game as "Re-parrot" currently, but Wowhead redirects to the second quest name listed
+						["qg"] = 151132,	-- Feathers
+						["coord"] = { 62.1, 45.3, 71 },	-- Tanaris
+						["sourceQuests"] = { 53816 },	-- Some Reassembly Required
+					}),
+					q(53819, {	-- Return to the Nest
+						["qg"] = 151132,	-- Feathers
+						["coord"] = { 62.1, 45.3, 71 },	-- Tanaris
+						["sourceQuests"] = { 53818 },	-- Re-parrot / Programming On The Fly
+					}),
+					qa(53820, {	-- She's in a Happier Place
+						["groups"] = {
+							i(165845),	-- Feathers (PET!)
+						},
+						["qg"] = 151129,	-- Sapphronetta Flavvers
+						["coord"] = { 27.1, 60.0, 71 },	-- Tanaris
+						["sourceQuests"] = { 53819 },	-- Return to the Nest
+					}),
+					qh(53821, {	-- He's Dead, Jastor
+						["groups"] = {
+							i(165845),	-- Feathers (PET!)
+						},
+						["qg"] = 151130,	-- Grizzek Fizzwrench
+						["coord"] = { 27.2, 60.1, 71 },	-- Tanaris
+						["sourceQuests"] = { 53819 },	-- Return to the Nest
+					}),	
 					{	-- Southsea Shakedown
 						["questID"] = 8366,
 						["groups"] = {

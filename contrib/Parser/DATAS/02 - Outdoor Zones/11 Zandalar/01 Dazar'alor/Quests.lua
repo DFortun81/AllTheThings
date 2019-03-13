@@ -237,6 +237,10 @@ _.Zones =
 							["isBreadcrumb"] = true,
 							["races"] = HORDE_ONLY,
 						},
+						qh(53817, {	-- Whatever Happened to Grizzek Fizzwrench?
+							["qg"] = 136683,	-- Trade Prince Gallywix
+							["coord"] = { 58.5, 62.6, 1163 },
+						}),
 					},
 				}),
 			},
