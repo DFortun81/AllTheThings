@@ -420,24 +420,24 @@ _.Zones =
 												-- Alchemy Questline
 						qa(50121, {	-- Casting the First Stone
 							["qg"] = 132228,	-- Elrick Pfitzer <Alchemielehrer>
-							["coord"] = { 42.2, 38.0, 1161 },
+							["coord"] = { 74.2, 6.5, 1161 },
 							["requireSkill"] = 171,	-- Alchemy
 						}),
 						qa(50122, {	-- Ocular Extracts
 							["qg"] = 132228,	-- Elrick Pfitzer <Alchemielehrer>
-							["coord"] = { 42.2, 38.0, 1161 },
+							["coord"] = { 74.2, 6.5, 1161 },
 							["requireSkill"] = 171,	-- Alchemy
 							["sourceQuests"] = { 50121 },	-- Casting the First Stone
 						}),
 						qa(50124, {	-- Changing the Scenery
 							["qg"] = 132228,	-- Elrick Pfitzer <Alchemielehrer>
-							["coord"] = { 42.2, 38.0, 1161 },
+							["coord"] = { 74.2, 6.5, 1161 },
 							["requireSkill"] = 171,	-- Alchemy
 							["sourceQuests"] = { 50121 },	-- Casting the First Stone
 						}),
 						qa(50125, {	-- A Possible Solution
 							["qg"] = 132228,	-- Elrick Pfitzer <Alchemielehrer>
-							["coord"] = { 42.2, 38.0, 1161 },
+							["coord"] = { 74.2, 6.5, 1161 },
 							["requireSkill"] = 171,	-- Alchemy
 							["sourceQuests"] = { 
 								50124,	-- Changing the Scenery
