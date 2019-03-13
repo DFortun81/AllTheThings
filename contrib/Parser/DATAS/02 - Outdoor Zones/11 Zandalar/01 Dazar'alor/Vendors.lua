@@ -38,6 +38,30 @@ _.Zones =
 								{	-- Seafarer's Dubloon
 									["currencyID"] = 1710,	-- Seafarer's Dubloon
 									["g"] = {
+										{	-- Island Expedition Gloves
+											["itemID"] = 167851,	-- Island Expedition Gloves
+											["description"] = "Cost: 35 Seafarer's Dubloons",
+										},
+										{	-- Island Expedition Bracers
+											["itemID"] = 167848,	-- Island Expedition Bracers
+											["description"] = "Cost: 35 Seafarer's Dubloons",
+										},
+										{	-- Island Expedition Belt
+											["itemID"] = 167855,	-- Island Expedition Belt
+											["description"] = "Cost: 35 Seafarer's Dubloons",
+										},
+										{	-- Island Expedition Legwear
+											["itemID"] = 167853,	-- Island Expedition Legwear
+											["description"] = "Cost: 35 Seafarer's Dubloons",
+										},
+										{	-- Island Expedition Boots
+											["itemID"] = 167850,	-- Island Expedition Boots
+											["description"] = "Cost: 35 Seafarer's Dubloons",
+										},
+										{	-- Island Expedition Cloak
+											["itemID"] = 167858,	-- Island Expedition Cloak
+											["description"] = "Cost: 35 Seafarer's Dubloons",
+										},
 										{	-- Saltwater Seahorse
 											["itemID"] = 166471,	-- Saltwater Seahorse
 											["description"] = "Cost: 500 Seafarer's Dubloons",
