@@ -240,6 +240,7 @@ _.Zones =
 											["objectID"] = 291143, -- Ranah's Wrench
 											["coord"] = { 50.7, 64.7, 864 }, -- Atul'aman (Vol'dun)
 											["questID"] = 51829, -- Ranah's Wrench
+											["isBreadcrumb"] = true,
 										},
 										q(48553, { -- Let it Flow
 											["qg"] = 126814, -- Ranah

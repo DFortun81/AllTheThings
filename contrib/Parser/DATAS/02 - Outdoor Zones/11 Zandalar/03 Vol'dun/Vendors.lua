@@ -98,6 +98,7 @@ _.Zones =
 									["f"] = 55,  -- They may change it to a toy?
 								}),
 							},
+							["coord"] = { 56.7, 49.7, 864 },
 							["races"] = HORDE_ONLY,
 						}),
 						n(135400, {	-- Jenoh
@@ -110,12 +111,14 @@ _.Zones =
 									i(163512),	-- Sandstinger Wasp
 								}),								
 							},
+							["coord"] = { 29.5, 59.4, 864 },
 							["description"] = "Complete the questline \"A Lost Flute\" to unlock this vendor.",
 							["races"] = HORDE_ONLY,
 						}),
 						{	-- Rhan'ka
-							["npcID"] = 122723,	-- Rhan'ka
+							["npcID"] = 129354,	-- Rhan'ka
 							["races"] = HORDE_ONLY,
+							["coord"] = { 43.5, 60.2, 864 },
 							["g"] = {
 								{	-- Rhan'ka's Escape Plan
 									["itemID"] = 164983,	-- Rhan'ka's Escape Plan
