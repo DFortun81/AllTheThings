@@ -99,6 +99,8 @@ _.Instances =
 					1153,	-- Gallery of Failures
 					1154,	-- The Oblivion Door
 					1155,	-- The Festering Core
+					1381, 	-- Neck Upgrade Quest #1 -- The Oblivion Door
+					1382, 	-- Neck Upgrade Quest #2 -- The Oblivion Door
 				},
 			}),
 		},					
