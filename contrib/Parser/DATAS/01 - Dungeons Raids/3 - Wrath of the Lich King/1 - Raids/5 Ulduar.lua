@@ -41,7 +41,7 @@ _.Instances =
 						},
 					}),
 					d(14, {	-- Normal
-						n(0, {	-- Zone Drop
+						n(0,   {	-- Zone Drop
 							["crs"] = {
 								34183,	-- Arachnopod Destroyer
 								34197,	-- Chamber Overseer
@@ -102,7 +102,7 @@ _.Instances =
 								i(45540),	-- Bladebearer's Signet
 							},
 						}),
-						n(-1, {	-- Common Boss Drop
+						n(-1,  {	-- Common Boss Drop
 							["crs"] = {
 								33113,	-- Flame Leviathan
 								33118,	-- Ignis the Furnace Master
@@ -143,12 +143,12 @@ _.Instances =
 							},
 						}),
 						n(-17, {	-- Quests
-							{
+							{	-- The Celestial Planetarium
 								["questID"] = 13607,	-- The Celestial Planetarium
 								["sourceQuest"] = 13604,	-- Archivum Data Disc
 								["qg"] = 33957,	-- Prospector Loren
 							},
-							{
+							{	-- Freya's Sigil
 								["questID"] = 13606,	-- Freya's Sigil
 								["sourceQuest"] = 13607,	-- The Celestial Planetarium
 								["qg"] = 33957,	-- Prospector Loren
@@ -162,7 +162,7 @@ _.Instances =
 									},
 								},
 							},
-							{
+							{	-- Hodir's Sigil
 								["questID"] = 13609,	-- Hodir's Sigil
 								["sourceQuest"] = 13607,	-- The Celestial Planetarium
 								["qg"] = 33957,	-- Prospector Loren
@@ -176,7 +176,7 @@ _.Instances =
 									},
 								},
 							},
-							{
+							{	-- Mimiron's Sigil
 								["questID"] = 13611,	-- Mimiron's Sigil
 								["sourceQuest"] = 13607,	-- The Celestial Planetarium
 								["qg"] = 33957,	-- Prospector Loren
@@ -190,7 +190,7 @@ _.Instances =
 									},
 								},
 							},
-							{
+							{	-- Thorim's Sigil
 								["questID"] = 13610,	-- Thorim's Sigil
 								["sourceQuest"] = 13607,	-- The Celestial Planetarium
 								["qg"] = 33957,	-- Prospector Loren
@@ -204,7 +204,7 @@ _.Instances =
 									},
 								},
 							},
-							{
+							{	-- Algalon
 								["questID"] = 13614,	-- Algalon
 								["sourceQuests"] = {
 									13606,	-- Freya's Sigil
@@ -225,12 +225,12 @@ _.Instances =
 									},
 								},
 							},
-							{
+							{	-- Heroic: The Celestial Planetarium
 								["questID"] = 13816,	-- Heroic: The Celestial Planetarium
 								["sourceQuest"] = 13817,	-- Heroic: Archivum Data Disc
 								["qg"] = 33957,	-- Prospector Loren
 							},
-							{
+							{	-- Heroic: Freya's Sigil
 								["questID"] = 13821,	-- Heroic: Freya's Sigil
 								["sourceQuest"] = 13816,	-- Heroic: The Celestial Planetarium
 								["qg"] = 33957,	-- Prospector Loren
@@ -244,7 +244,7 @@ _.Instances =
 									},
 								},
 							},
-							{
+							{	-- Heroic: Hodir's Sigil
 								["questID"] = 13822,	-- Heroic: Hodir's Sigil
 								["sourceQuest"] = 13816,	-- Heroic: The Celestial Planetarium
 								["qg"] = 33957,	-- Prospector Loren
@@ -258,7 +258,7 @@ _.Instances =
 									},
 								},
 							},
-							{
+							{	-- Heroic: Mimiron's Sigil
 								["questID"] = 13824,	-- Heroic: Mimiron's Sigil
 								["sourceQuest"] = 13816,	-- Heroic: The Celestial Planetarium
 								["qg"] = 33957,	-- Prospector Loren
@@ -272,7 +272,7 @@ _.Instances =
 									},
 								},
 							},
-							{
+							{	-- Heroic: Thorim's Sigil
 								["questID"] = 13823,	-- Heroic: Thorim's Sigil
 								["sourceQuest"] = 13816,	-- Heroic: The Celestial Planetarium
 								["qg"] = 33957,	-- Prospector Loren
@@ -286,7 +286,7 @@ _.Instances =
 									},
 								},
 							},
-							{
+							{	-- Heroic: Algalon
 								["questID"] = 13818,	-- Heroic: Algalon
 								["sourceQuests"] = {
 									13821,	-- Heroic: Freya's Sigil
@@ -340,7 +340,7 @@ _.Instances =
 							},
 							{	-- Orbit-uary
 								["achievementID"] = 12320,	-- Orbit-uary
-								["g"] = bubbleDown({["u"] = 45}, {	-- Hard Mode Loot is now Unobtainable
+								["g"] = {	-- 
 									{	-- Golden Saronite Dragon
 										["itemID"] = 45132,	-- Golden Saronite Dragon
 									},
@@ -368,7 +368,7 @@ _.Instances =
 									{	-- Shimmering Seal
 										["itemID"] = 45297,	-- Shimmering Seal
 									},
-								}),
+								},
 							},
 							{	-- Nuked from Orbit
 								["achievementID"] = 12319,	-- Nuked from Orbit
@@ -512,7 +512,7 @@ _.Instances =
 						cr(33293, e(1640, {	-- XT-002 Deconstructor
 							{	-- Heartbreaker
 								["achievementID"] = 12330,	-- Heartbreaker
-								["g"] = bubbleDown({["u"] = 45}, {	-- Hard Mode Loot is now Unobtainable
+								["g"] = bubbleDown({["u"] = 45}, {	-- apparently this is the only still-broken boss!
 									{	-- Aesir's Edge
 										["itemID"] = 45868,	-- Aesir's Edge
 									},
@@ -853,7 +853,7 @@ _.Instances =
 							},
 							{	-- I Could Say That This Cache Was Rare
 								["achievementID"] = 12347,	-- I Could Say That This Cache Was Rare
-								["g"] = bubbleDown({["u"] = 45}, {	-- Hard Mode Loot is now Unobtainable
+								["g"] = {
 									{	-- Icecore Staff
 										["itemID"] = 45886,	-- Icecore Staff
 									},
@@ -887,7 +887,7 @@ _.Instances =
 									{	-- Gloves of the Frozen Glade
 										["itemID"] = 45462,	-- Gloves of the Frozen Glade
 									},
-								}),
+								},
 							},
 							{	-- I Have the Coolest Friends
 								["achievementID"] = 12344,	-- I Have the Coolest Friends
@@ -1344,7 +1344,7 @@ _.Instances =
 							},
 							{	-- I Love the Smell of Saronite in the Morning
 								["achievementID"] = 12373,	-- I Love the Smell of Saronite in the Morning
-								["g"] = bubbleDown({["u"] = 45}, {	-- Hard Mode Loot is now Unobtainable
+								["g"] = {
 									{	-- Tortured Earth
 										["itemID"] = 46033,	-- Tortured Earth
 									},
@@ -1375,7 +1375,7 @@ _.Instances =
 									{	-- Flare of the Heavens
 										["itemID"] = 45518,	-- Flare of the Heavens
 									},
-								}),
+								},
 							},
 							{	-- Shadowdodger
 								["achievementID"] = 12372,	-- Shadowdodger
@@ -1447,7 +1447,7 @@ _.Instances =
 							},
 							{	-- One Light in the Darkness
 								["achievementID"] = 12387,	-- One Light in the Darkness
-								["g"] = bubbleDown({["u"] = 45}, {	-- Hard Mode Loot is now Unobtainable
+								["g"] = {
 									{	-- Dark Edge of Depravity
 										["itemID"] = 45533,	-- Dark Edge of Depravity
 									},
@@ -1478,7 +1478,7 @@ _.Instances =
 									{	-- Show of Faith
 										["itemID"] = 45535,	-- Show of Faith
 									},
-								}),
+								},
 							},
 							{	-- Two Lights in the Darkness
 								["achievementID"] = 12386,	-- Two Lights in the Darkness
