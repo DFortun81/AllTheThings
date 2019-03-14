@@ -37,25 +37,10 @@ _.Instances =
 								i(43179), -- Solid Platinum Band
 								i(43177), -- Voodoo Signet
 							},
-							["qg"] = 55738, -- Tol'mar
-						}),
-						q(29840, { -- For Posterity
-							["groups"] = {
-								i(43180), -- Lion's Head Ring
-								i(43178), -- Ring of Foul Mojo
-								i(43179), -- Solid Platinum Band
-								i(43177), -- Voodoo Signet
+							["qgs"] = {
+								55738, -- Tol'mar
+								55737, -- Chronicler Bah'Kini
 							},
-							["qg"] = 55737, -- Chronicler Bah'Kini
-						}),
-						q(29834, { -- Gal'darah Must Pay
-							["groups"] = {
-								i(43164), -- Sly Mojo Sash
-								i(43165), -- Strange Voodoo Belt
-								i(43167), -- Ranger's Beelt of the Fallen Empire
-								i(43168), -- Clasp of the Fallen Demi-God
-							},
-							["qg"] = 55738, -- Tol'mar
 						}),
 						q(29835, { -- Gal'darah Must Pay
 							["groups"] = {
@@ -64,7 +49,10 @@ _.Instances =
 								i(43167), -- Ranger's Beelt of the Fallen Empire
 								i(43168), -- Clasp of the Fallen Demi-God
 							},
-							["qg"] = 55737, -- Chronicler Bah'Kini
+							["qgs"] = {
+								55738, -- Tol'mar
+								55737, -- Chronicler Bah'Kini
+							},
 						}),
 						q(29839, { -- One of a Kind
 							["groups"] = {
@@ -74,18 +62,11 @@ _.Instances =
 								i(43176), -- Slippers of the Mojo Dojo
 								i(43174), -- Trollkickers	
 							},
-							["qg"] = 55738, -- Tol'mar
-						}),	
-						q(29838, { -- One of a Kind
-							["groups"] = {
-								i(43171), -- Fur-Lined Moccasins
-								i(43172), -- Rhino Hide Kneeboots
-								i(43173), -- Scaled Boots of Fallen Hope
-								i(43176), -- Slippers of the Mojo Dojo
-								i(43174), -- Trollkickers	
+							["qgs"] = {
+								55738, -- Tol'mar
+								55737, -- Chronicler Bah'Kini
 							},
-							["qg"] = 55737, -- Chronicler Bah'Kini
-						}),							
+						}),					
 					}),
 					d(  1, {	-- Normal
 						n(0, {	-- Zone Drop
