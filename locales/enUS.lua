@@ -430,6 +430,7 @@ AllTheThings.L = {
 		[-243] = "Interface\\Icons\\ability_hunter_markedfordeath",				-- Bounty
 		[-244] = "Interface\\Icons\\ability_racial_fireblood",					-- Dark Iron Dwarf
 		[-245] = "Interface\\Icons\\achievement_alliedrace_magharorc",			-- Mag'har Orc
+		[-251] = "Interface\\Icons\\achievement_alliedrace_zandalaritroll"		-- Zandalari Troll
 		[-297] = "Interface\\Icons\\inv_letter_17", 							-- Mailbox
 		[-299] = "Interface\\Icons\\achievement_garrisonquests_1000", 			-- Missions
 		[-304] = "Interface\\Icons\\INV_BannerPVP_03",							-- Battlegrounds
@@ -1093,6 +1094,7 @@ AllTheThings.L = {
 		[-249] = GetSpellInfo(258752),											-- Twilight Filter
 		[-250] = GetSpellInfo(258803),											-- Argus Filter
 	
+		[-251] = "Zandalari Troll",												-- Zandalari Troll
 -- Other
 		[-294] = "Killed First",
 		[-295] = "Killed Second",
