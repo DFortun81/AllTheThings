@@ -561,7 +561,8 @@ _.Zones =
 			},
 			["lvl"] = 1,
 			["maps"] = {
-				39,	-- Fargodeep Mine
+				38,	-- Fargodeep Mine Lv1
+				39,	-- Fargodeep Mine Lv2
 				40,	-- Jasperlode Mine
 			},
 			["achievementID"] = 776,
