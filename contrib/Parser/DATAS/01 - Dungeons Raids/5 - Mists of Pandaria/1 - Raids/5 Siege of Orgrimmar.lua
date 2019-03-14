@@ -940,8 +940,7 @@ _.Instances =
 							}),	
 						},
 					}),
-					--[[ //Note!! Disabling the original versions of SoO.  Unable to properly harvest and need manual entering due to how restructuring occurred.  It's why I've been delaying this project. -Lucetia
-					d(14, {	-- Legacy (Was Flexible now Normal). >>Every Item got NO Tag<<
+					d(1, {	-- Legacy (Was Flexible now Normal). >>Every Item got NO Tag<<
 						["u"] = 12,
 						["description"] = "This version of the instance was the original Flexible difficulty mode.",
 						["groups"] = {
@@ -1238,7 +1237,7 @@ _.Instances =
 							}),
 						},
 					}),
-					d(15, {	-- Legacy (Was Normal now Heroic). >>Every Item got the HEROIC Tag<<
+					d(2, {	-- Legacy (Was Normal now Heroic). >>Every Item got the HEROIC Tag<<
 						["u"] = 12,
 						["description"] = "This version of the instance was the original Normal difficulty mode. The loot all had unique item IDs for each difficulty tier as well as their Warforged variants similar to how ToT was done. Blizzard changed their design philosophy for the better and they chose to reuse an item's ID and apply a bonus ID rather than creating a brand new item ID with the same base stats.",
 						["groups"] = {
@@ -1784,7 +1783,7 @@ _.Instances =
 							}),
 						},
 					}),
-					d(16, {	-- Legacy (was Heroic now Mythic). >>Every Item got the MYTHIC Tag<<
+					d(23, {	-- Legacy (was Heroic now Mythic). >>Every Item got the MYTHIC Tag<<
 						["u"] = 12,
 						["description"] = "This version of the instance was the original Heroic difficulty mode. The loot all had unique item IDs for each difficulty tier as well as their Warforged variants similar to how ToT was done. Blizzard changed their design philosophy for the better and they chose to reuse an item's ID and apply a bonus ID rather than creating a brand new item ID with the same base stats.",
 						["groups"] = {
@@ -2330,7 +2329,6 @@ _.Instances =
 							}),
 						},
 					}),
-					--]]
 					d(14, {	-- Normal (Was Flex)
 					--	["description"] = "This version of the instance was the original Flex difficulty mode. It was split into both Normal and Heroic mode after they introduced Mythic.",
 						["groups"] = {
