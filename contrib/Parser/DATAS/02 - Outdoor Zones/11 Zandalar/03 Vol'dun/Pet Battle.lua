@@ -8,157 +8,239 @@ _.Zones =
 			["groups"] = {
 				n(-25,  { 	-- Pet Battle
 					["g"] = {
-						n(141879, {	-- Keeyo
-							["coord"] = { 57.0, 49.0, 864 },
+						ach(13279, {	-- Family Battler
+							["collectible"] = false,
 							["g"] = {
-								{
-									["achievementID"] = 13279,	-- Family Battler
-									["collectible"] = false,	-- When they complete the crit here there isn't anything left to collect for Family Battler from this NPC
+								ach(13280, {	-- Hobbyist Aquarist
+									["collectible"] = false,
 									["g"] = {
 										{	-- Keeyo — Hobbyist Aquarist
 											["achievementID"] = 13280,	-- Hobbyist Aquarist
+											["creatureID"] = 141879,	-- Keeyo
 											["criteriaID"] = 14,	-- Keeyo
+											["coord"] = { 57.0, 49.0, 864 },
 										},
-										{	-- Keeyo — Beast Mode
-											["achievementID"] = 13270,	-- Beast Mode
-											["criteriaID"] = 14,	-- Keeyo
-										},
-										{	-- Keeyo — Critters with Huge Teeth
-											["achievementID"] = 13271,	-- Critters with Huge Teeth
-											["criteriaID"] = 14,	-- Keeyo
-										},
-										{	-- Keeyo — Dragons Make Everything Better
-											["achievementID"] = 13272,	-- Dragons Make Everything Better
-											["criteriaID"] = 14,	-- Keeyo
-										},
-										{	-- Keeyo — Element of Success
-											["achievementID"] = 13273,	-- Element of Success
-											["criteriaID"] = 14,	-- Keeyo
-										},
-										{	-- Keeyo — Fun With Flying
-											["achievementID"] = 13274,	-- Fun With Flying
-											["criteriaID"] = 14,	-- Keeyo
-										},
-										{	-- Keeyo — Human Resources
-											["achievementID"] = 13281,	-- Human Resources
-											["criteriaID"] = 14,	-- Keeyo
-										},
-										{	-- Keeyo — Magician's Secrets
-											["achievementID"] = 13275,	-- Magician's Secrets
-											["criteriaID"] = 14,	-- Keeyo
-										},
-										{	-- Keeyo — Machine Learning
-											["achievementID"] = 13277,	-- Machine Learning
-											["criteriaID"] = 14,	-- Keeyo
-										},
-										{	-- Keeyo — Not Quite Dead Yet
-											["achievementID"] = 13278,	-- Not Quite Dead Yet
-											["criteriaID"] = 14,	-- Keeyo
-										},
-									},
-								},
-							},
-						}),
-						n(141945, {	-- Sizzik
-							["coord"] = { 26.6, 54.8, 864 },
-							["g"] = {
-								{
-									["achievementID"] = 13279,	-- Family Battler
-									["collectible"] = false,	-- When they complete the crit here there isn't anything left to collect for Family Battler from this NPC
-									["g"] = {
 										{	-- Sizzik — Hobbyist Aquarist
 											["achievementID"] = 13280,	-- Hobbyist Aquarist
+											["creatureID"] = 141945,	-- Sizzik
 											["criteriaID"] = 15,	-- Sizzik
+											["coord"] = { 26.6, 54.8, 864 },
+										},
+										{	-- Kusa — Hobbyist Aquarist
+											["achievementID"] = 13280,	-- Hobbyist Aquarist
+											["creatureID"] = 142054,	-- Kusa
+											["criteriaID"] = 16,	-- Kusa
+											["coord"] = { 45.0, 46.4, 864 },
+										},
+									},
+								}),
+								ach(13270, {	-- Beast Mode
+									["collectible"] = false,
+									["g"] = {
+										{	-- Keeyo — Beast Mode
+											["achievementID"] = 13270,	-- Beast Mode
+											["creatureID"] = 141879,	-- Keeyo
+											["criteriaID"] = 14,	-- Keeyo
+											["coord"] = { 57.0, 49.0, 864 },
 										},
 										{	-- Sizzik — Beast Mode
 											["achievementID"] = 13270,	-- Beast Mode
+											["creatureID"] = 141945,	-- Sizzik
 											["criteriaID"] = 15,	-- Sizzik
-										},
-										{	-- Sizzik — Critters with Huge Teeth
-											["achievementID"] = 13271,	-- Critters with Huge Teeth
-											["criteriaID"] = 15,	-- Sizzik
-										},
-										{	-- Sizzik — Dragons Make Everything Better
-											["achievementID"] = 13272,	-- Dragons Make Everything Better
-											["criteriaID"] = 15,	-- Sizzik
-										},
-										{	-- Sizzik — Element of Success
-											["achievementID"] = 13273,	-- Element of Success
-											["criteriaID"] = 15,	-- Sizzik
-										},
-										{	-- Sizzik — Fun With Flying
-											["achievementID"] = 13274,	-- Fun With Flying
-											["criteriaID"] = 15,	-- Sizzik
-										},
-										{	-- Sizzik — Human Resources
-											["achievementID"] = 13281,	-- Human Resources
-											["criteriaID"] = 15,	-- Sizzik
-										},
-										{	-- Sizzik — Magician's Secrets
-											["achievementID"] = 13275,	-- Magician's Secrets
-											["criteriaID"] = 15,	-- Sizzik
-										},
-										{	-- Sizzik — Machine Learning
-											["achievementID"] = 13277,	-- Machine Learning
-											["criteriaID"] = 15,	-- Sizzik
-										},
-										{	-- Sizzik — Not Quite Dead Yet
-											["achievementID"] = 13278,	-- Not Quite Dead Yet
-											["criteriaID"] = 15,	-- Sizzik
-										},
-									},
-								},
-							},
-						}),
-						n(142054, {	-- Kusa
-							["coord"] = { 45.0, 46.4, 864 },
-							["g"] = {
-								{
-									["achievementID"] = 13279,	-- Family Battler
-									["collectible"] = false,	-- When they complete the crit here there isn't anything left to collect for Family Battler from this NPC
-									["g"] = {
-										{	-- Kusa — Hobbyist Aquarist
-											["achievementID"] = 13280,	-- Hobbyist Aquarist
-											["criteriaID"] = 16,	-- Kusa
+											["coord"] = { 26.6, 54.8, 864 },
 										},
 										{	-- Kusa — Beast Mode
 											["achievementID"] = 13270,	-- Beast Mode
+											["creatureID"] = 142054,	-- Kusa
 											["criteriaID"] = 16,	-- Kusa
+											["coord"] = { 45.0, 46.4, 864 },
+										},
+									},
+								}),
+								ach(13271, {	-- Critters with Huge Teeth
+									["collectible"] = false,
+									["g"] = {
+										{	-- Keeyo — Critters with Huge Teeth
+											["achievementID"] = 13271,	-- Critters with Huge Teeth
+											["creatureID"] = 141879,	-- Keeyo
+											["criteriaID"] = 14,	-- Keeyo
+											["coord"] = { 57.0, 49.0, 864 },
+										},
+										{	-- Sizzik — Critters with Huge Teeth
+											["achievementID"] = 13271,	-- Critters with Huge Teeth
+											["creatureID"] = 141945,	-- Sizzik
+											["criteriaID"] = 15,	-- Sizzik
+											["coord"] = { 26.6, 54.8, 864 },
 										},
 										{	-- Kusa — Critters with Huge Teeth
 											["achievementID"] = 13271,	-- Critters with Huge Teeth
+											["creatureID"] = 142054,	-- Kusa
 											["criteriaID"] = 16,	-- Kusa
+											["coord"] = { 45.0, 46.4, 864 },
+										},
+									},
+								}),
+								ach(13272, {	-- Dragons Make Everything Better
+									["collectible"] = false,
+									["g"] = {
+										{	-- Keeyo — Dragons Make Everything Better
+											["achievementID"] = 13272,	-- Dragons Make Everything Better
+											["creatureID"] = 141879,	-- Keeyo
+											["criteriaID"] = 14,	-- Keeyo
+											["coord"] = { 57.0, 49.0, 864 },
+										},
+										{	-- Sizzik — Dragons Make Everything Better
+											["achievementID"] = 13272,	-- Dragons Make Everything Better
+											["creatureID"] = 141945,	-- Sizzik
+											["criteriaID"] = 15,	-- Sizzik
+											["coord"] = { 26.6, 54.8, 864 },
 										},
 										{	-- Kusa — Dragons Make Everything Better
 											["achievementID"] = 13272,	-- Dragons Make Everything Better
+											["creatureID"] = 142054,	-- Kusa
 											["criteriaID"] = 16,	-- Kusa
+											["coord"] = { 45.0, 46.4, 864 },
+										},
+									},
+								}),
+								ach(13273, {	-- Element of Success
+									["collectible"] = false,
+									["g"] = {
+										{	-- Keeyo — Element of Success
+											["achievementID"] = 13273,	-- Element of Success
+											["creatureID"] = 141879,	-- Keeyo
+											["criteriaID"] = 14,	-- Keeyo
+											["coord"] = { 57.0, 49.0, 864 },
+										},
+										{	-- Sizzik — Element of Success
+											["achievementID"] = 13273,	-- Element of Success
+											["creatureID"] = 141945,	-- Sizzik
+											["criteriaID"] = 15,	-- Sizzik
+											["coord"] = { 26.6, 54.8, 864 },
 										},
 										{	-- Kusa — Element of Success
 											["achievementID"] = 13273,	-- Element of Success
+											["creatureID"] = 142054,	-- Kusa
 											["criteriaID"] = 16,	-- Kusa
+											["coord"] = { 45.0, 46.4, 864 },
+										},
+									},
+								}),
+								ach(13274, {	-- Fun With Flying
+									["collectible"] = false,
+									["g"] = {
+										{	-- Keeyo — Fun With Flying
+											["achievementID"] = 13274,	-- Fun With Flying
+											["creatureID"] = 141879,	-- Keeyo
+											["criteriaID"] = 14,	-- Keeyo
+											["coord"] = { 57.0, 49.0, 864 },
+										},
+										{	-- Sizzik — Fun With Flying
+											["achievementID"] = 13274,	-- Fun With Flying
+											["creatureID"] = 141945,	-- Sizzik
+											["criteriaID"] = 15,	-- Sizzik
+											["coord"] = { 26.6, 54.8, 864 },
 										},
 										{	-- Kusa — Fun With Flying
 											["achievementID"] = 13274,	-- Fun With Flying
+											["creatureID"] = 142054,	-- Kusa
 											["criteriaID"] = 16,	-- Kusa
+											["coord"] = { 45.0, 46.4, 864 },
+										},
+									},
+								}),
+								ach(13281, {	-- Human Resources
+									["collectible"] = false,
+									["g"] = {
+										{	-- Keeyo — Human Resources
+											["achievementID"] = 13281,	-- Human Resources
+											["creatureID"] = 141879,	-- Keeyo
+											["criteriaID"] = 14,	-- Keeyo
+											["coord"] = { 57.0, 49.0, 864 },
+										},
+										{	-- Sizzik — Human Resources
+											["achievementID"] = 13281,	-- Human Resources
+											["creatureID"] = 141945,	-- Sizzik
+											["criteriaID"] = 15,	-- Sizzik
+											["coord"] = { 26.6, 54.8, 864 },
 										},
 										{	-- Kusa — Human Resources
 											["achievementID"] = 13281,	-- Human Resources
+											["creatureID"] = 142054,	-- Kusa
 											["criteriaID"] = 16,	-- Kusa
+											["coord"] = { 45.0, 46.4, 864 },
+										},
+									},
+								}),
+								ach(13275, {	-- Magician's Secrets
+									["collectible"] = false,
+									["g"] = {
+										{	-- Keeyo — Magician's Secrets
+											["achievementID"] = 13275,	-- Magician's Secrets
+											["creatureID"] = 141879,	-- Keeyo
+											["criteriaID"] = 14,	-- Keeyo
+											["coord"] = { 57.0, 49.0, 864 },
+										},
+										{	-- Sizzik — Magician's Secrets
+											["achievementID"] = 13275,	-- Magician's Secrets
+											["creatureID"] = 141945,	-- Sizzik
+											["criteriaID"] = 15,	-- Sizzik
+											["coord"] = { 26.6, 54.8, 864 },
 										},
 										{	-- Kusa — Magician's Secrets
 											["achievementID"] = 13275,	-- Magician's Secrets
+											["creatureID"] = 142054,	-- Kusa
 											["criteriaID"] = 16,	-- Kusa
+											["coord"] = { 45.0, 46.4, 864 },
+										},
+									},
+								}),
+								ach(13277, {	-- Machine Learning
+									["collectible"] = false,
+									["g"] = {
+										{	-- Keeyo — Machine Learning
+											["achievementID"] = 13277,	-- Machine Learning
+											["creatureID"] = 141879,	-- Keeyo
+											["criteriaID"] = 14,	-- Keeyo
+											["coord"] = { 57.0, 49.0, 864 },
+										},
+										{	-- Sizzik — Machine Learning
+											["achievementID"] = 13277,	-- Machine Learning
+											["creatureID"] = 141945,	-- Sizzik
+											["criteriaID"] = 15,	-- Sizzik
+											["coord"] = { 26.6, 54.8, 864 },
 										},
 										{	-- Kusa — Machine Learning
 											["achievementID"] = 13277,	-- Machine Learning
+											["creatureID"] = 142054,	-- Kusa
 											["criteriaID"] = 16,	-- Kusa
+											["coord"] = { 45.0, 46.4, 864 },
+										},
+									},
+								}),
+								ach(13278, {	-- Not Quite Dead Yet
+									["collectible"] = false,
+									["g"] = {
+										{	-- Keeyo — Not Quite Dead Yet
+											["achievementID"] = 13278,	-- Not Quite Dead Yet
+											["creatureID"] = 141879,	-- Keeyo
+											["criteriaID"] = 14,	-- Keeyo
+											["coord"] = { 57.0, 49.0, 864 },
+										},
+										{	-- Sizzik — Not Quite Dead Yet
+											["achievementID"] = 13278,	-- Not Quite Dead Yet
+											["creatureID"] = 141945,	-- Sizzik
+											["criteriaID"] = 15,	-- Sizzik
+											["coord"] = { 26.6, 54.8, 864 },
 										},
 										{	-- Kusa — Not Quite Dead Yet
 											["achievementID"] = 13278,	-- Not Quite Dead Yet
+											["creatureID"] = 142054,	-- Kusa
 											["criteriaID"] = 16,	-- Kusa
+											["coord"] = { 45.0, 46.4, 864 },
 										},
 									},
-								},
+								}),
 							},
 						}),
 						{	-- Bloodfever Tarantula
