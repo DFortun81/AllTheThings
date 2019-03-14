@@ -104,6 +104,17 @@ _.Zones =
 								q(51239, {	-- Instructions Not Included
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
+								{	-- Keeyo's Champions of Vol'dun — Pet Battle
+									["questID"] = 52850,	-- Keeyo's Champions of Vol'dun
+									["isWQ"] = 120,
+									["qg"] = 141879,	-- Keeyo
+									["g"] = {
+										{	-- Keeyo's Champions of Vol'dun — Battle on Zandalar and Kul Tiras
+											["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
+											["criteriaID"] = 17,	-- Keeyo's Champions of Vol'dun
+										},
+									},
+								},
 								q(51429, {	-- King Clickyclack
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),

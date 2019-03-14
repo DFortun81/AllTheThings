@@ -8,6 +8,159 @@ _.Zones =
 			["groups"] = {
 				n(-25,  { 	-- Pet Battle
 					["g"] = {
+						n(141879, {	-- Keeyo
+							["coord"] = { 57.0, 49.0, 864 },
+							["g"] = {
+								{
+									["achievementID"] = 13279,	-- Family Battler
+									["collectible"] = false,	-- When they complete the crit here there isn't anything left to collect for Family Battler from this NPC
+									["g"] = {
+										{	-- Keeyo — Hobbyist Aquarist
+											["achievementID"] = 13280,	-- Hobbyist Aquarist
+											["criteriaID"] = 14,	-- Keeyo
+										},
+										{	-- Keeyo — Beast Mode
+											["achievementID"] = 13270,	-- Beast Mode
+											["criteriaID"] = 14,	-- Keeyo
+										},
+										{	-- Keeyo — Critters with Huge Teeth
+											["achievementID"] = 13271,	-- Critters with Huge Teeth
+											["criteriaID"] = 14,	-- Keeyo
+										},
+										{	-- Keeyo — Dragons Make Everything Better
+											["achievementID"] = 13272,	-- Dragons Make Everything Better
+											["criteriaID"] = 14,	-- Keeyo
+										},
+										{	-- Keeyo — Element of Success
+											["achievementID"] = 13273,	-- Element of Success
+											["criteriaID"] = 14,	-- Keeyo
+										},
+										{	-- Keeyo — Fun With Flying
+											["achievementID"] = 13274,	-- Fun With Flying
+											["criteriaID"] = 14,	-- Keeyo
+										},
+										{	-- Keeyo — Human Resources
+											["achievementID"] = 13281,	-- Human Resources
+											["criteriaID"] = 14,	-- Keeyo
+										},
+										{	-- Keeyo — Magician's Secrets
+											["achievementID"] = 13275,	-- Magician's Secrets
+											["criteriaID"] = 14,	-- Keeyo
+										},
+										{	-- Keeyo — Machine Learning
+											["achievementID"] = 13277,	-- Machine Learning
+											["criteriaID"] = 14,	-- Keeyo
+										},
+										{	-- Keeyo — Not Quite Dead Yet
+											["achievementID"] = 13278,	-- Not Quite Dead Yet
+											["criteriaID"] = 14,	-- Keeyo
+										},
+									},
+								},
+							},
+						}),
+						n(141945, {	-- Sizzik
+							["coord"] = { 26.6, 54.8, 864 },
+							["g"] = {
+								{
+									["achievementID"] = 13279,	-- Family Battler
+									["collectible"] = false,	-- When they complete the crit here there isn't anything left to collect for Family Battler from this NPC
+									["g"] = {
+										{	-- Sizzik — Hobbyist Aquarist
+											["achievementID"] = 13280,	-- Hobbyist Aquarist
+											["criteriaID"] = 15,	-- Sizzik
+										},
+										{	-- Sizzik — Beast Mode
+											["achievementID"] = 13270,	-- Beast Mode
+											["criteriaID"] = 15,	-- Sizzik
+										},
+										{	-- Sizzik — Critters with Huge Teeth
+											["achievementID"] = 13271,	-- Critters with Huge Teeth
+											["criteriaID"] = 15,	-- Sizzik
+										},
+										{	-- Sizzik — Dragons Make Everything Better
+											["achievementID"] = 13272,	-- Dragons Make Everything Better
+											["criteriaID"] = 15,	-- Sizzik
+										},
+										{	-- Sizzik — Element of Success
+											["achievementID"] = 13273,	-- Element of Success
+											["criteriaID"] = 15,	-- Sizzik
+										},
+										{	-- Sizzik — Fun With Flying
+											["achievementID"] = 13274,	-- Fun With Flying
+											["criteriaID"] = 15,	-- Sizzik
+										},
+										{	-- Sizzik — Human Resources
+											["achievementID"] = 13281,	-- Human Resources
+											["criteriaID"] = 15,	-- Sizzik
+										},
+										{	-- Sizzik — Magician's Secrets
+											["achievementID"] = 13275,	-- Magician's Secrets
+											["criteriaID"] = 15,	-- Sizzik
+										},
+										{	-- Sizzik — Machine Learning
+											["achievementID"] = 13277,	-- Machine Learning
+											["criteriaID"] = 15,	-- Sizzik
+										},
+										{	-- Sizzik — Not Quite Dead Yet
+											["achievementID"] = 13278,	-- Not Quite Dead Yet
+											["criteriaID"] = 15,	-- Sizzik
+										},
+									},
+								},
+							},
+						}),
+						n(142054, {	-- Kusa
+							["coord"] = { 45.0, 46.4, 864 },
+							["g"] = {
+								{
+									["achievementID"] = 13279,	-- Family Battler
+									["collectible"] = false,	-- When they complete the crit here there isn't anything left to collect for Family Battler from this NPC
+									["g"] = {
+										{	-- Kusa — Hobbyist Aquarist
+											["achievementID"] = 13280,	-- Hobbyist Aquarist
+											["criteriaID"] = 16,	-- Kusa
+										},
+										{	-- Kusa — Beast Mode
+											["achievementID"] = 13270,	-- Beast Mode
+											["criteriaID"] = 16,	-- Kusa
+										},
+										{	-- Kusa — Critters with Huge Teeth
+											["achievementID"] = 13271,	-- Critters with Huge Teeth
+											["criteriaID"] = 16,	-- Kusa
+										},
+										{	-- Kusa — Dragons Make Everything Better
+											["achievementID"] = 13272,	-- Dragons Make Everything Better
+											["criteriaID"] = 16,	-- Kusa
+										},
+										{	-- Kusa — Element of Success
+											["achievementID"] = 13273,	-- Element of Success
+											["criteriaID"] = 16,	-- Kusa
+										},
+										{	-- Kusa — Fun With Flying
+											["achievementID"] = 13274,	-- Fun With Flying
+											["criteriaID"] = 16,	-- Kusa
+										},
+										{	-- Kusa — Human Resources
+											["achievementID"] = 13281,	-- Human Resources
+											["criteriaID"] = 16,	-- Kusa
+										},
+										{	-- Kusa — Magician's Secrets
+											["achievementID"] = 13275,	-- Magician's Secrets
+											["criteriaID"] = 16,	-- Kusa
+										},
+										{	-- Kusa — Machine Learning
+											["achievementID"] = 13277,	-- Machine Learning
+											["criteriaID"] = 16,	-- Kusa
+										},
+										{	-- Kusa — Not Quite Dead Yet
+											["achievementID"] = 13278,	-- Not Quite Dead Yet
+											["criteriaID"] = 16,	-- Kusa
+										},
+									},
+								},
+							},
+						}),
 						{	-- Bloodfever Tarantula
 							["speciesID"] = 2388,	-- Bloodfever Tarantula
 							["crs"] = { 143047 },	-- Bloodfever Tarantula

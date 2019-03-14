@@ -24,15 +24,13 @@ _.Zones =
 								}),
 								{	-- Automated Chaos [AH] [Pet Battle!!]
 									["questID"] = 52165,	-- Automated Chaos
-									["qg"] = 140315,		-- Eddie Fixit
-									["coords"] = {
-										{ 36.61, 33.61 },
-									},
-									["isWQ"] = 120,		-- Enables WQ filter for Level 120
+									["coord"] = { 36.61, 33.61, 942 },
+									["isWQ"] = 120,
+									["qg"] = 140315,	-- Eddie Fixit
 									["g"] = {
 										{	-- Automated Chaos
 											["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
-											["criteriaID"] = 3,			-- Automated Chaos
+											["criteriaID"] = 3,	-- Automated Chaos
 										},
 									},
 								},
@@ -72,9 +70,44 @@ _.Zones =
 									["races"] = ALLIANCE_ONLY,
 									--Note!! 10/16 offered Shoalbreach Waistguard
 								},
+								{	-- Calligraphy
+									-- On 3/13 this quest gave the 'Triangle' criteria
+									-- Check back to see if each quest ID has static shape
+									-- If shape doesn't change each time the quest comes up we can remove the criteria where they don't apply
+									["questID"] = 55341,	-- Calligraphy
+									["races"] = ALLIANCE_ONLY,
+									["isWQ"] = 120,
+									["g"] = {
+										{	-- Master Calligrapher
+											["achievementID"] = 13512,	-- Master Calligrapher
+											["g"] = {
+												{	-- Master of Calligraphy - Circle
+													["criteriaID"] = 1,	-- Master of Calligraphy - Circle
+												},
+												{	-- Master of Calligraphy - Square
+													["criteriaID"] = 2,	-- Master of Calligraphy - Square
+												},
+												{	-- Master of Calligraphy - Triangle
+													["criteriaID"] = 3,	-- Master of Calligraphy - Triangle
+												},
+											},
+										},
+									},
+								},
 								q(51782, {	-- Captain Razorspine
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
+								{	-- Captured Evil — Pet Battle
+									["questID"] = 52325,	-- Captured Evil
+									["isWQ"] = 120,
+									["qg"] = 141046,	-- Leana Darkwind
+									["g"] = {
+										{	-- Captured Evil — Battle on Zandalar and Kul Tiras
+											["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
+											["criteriaID"] = 8,	-- Captured Evil
+										},
+									},
+								},
 								q(52179, {	-- Fortified Resistance
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = ALLIANCE_ONLY,
@@ -117,9 +150,17 @@ _.Zones =
 								q(52889, {	-- Sandscour
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
-								q(52316, {	-- Sea Creatures Are Weird
-									["isWQ"] = 120,		-- Enables WQ filter for Level 120
-								}),
+								{	-- Sea Creatures Are Weird — Pet Battle
+									["questID"] = 52316,	-- Sea Creatures Are Weird
+									["isWQ"] = 120,
+									["qg"] = 141002,	-- Ellie Vern
+									["g"] = {
+										{	-- Sea Creatures Are Weird — Battle on Zandalar and Kul Tiras
+											["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
+											["criteriaID"] = 7,	-- Sea Creatures Are Weird
+										},
+									},
+								},
 								{	-- Severus the Outcast [AH]
 									["questID"] = 52315,	-- Severus the Outcast
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
@@ -142,15 +183,13 @@ _.Zones =
 								},
 								{	-- This Little Piggy Has Sharp Tusks [AH] [Pet Battle!!]
 									["questID"] = 52126,	-- This Little Piggy Has Sharp Tusks
-									["qg"] = 139987,		-- Bristlespine
-									["coords"] = {
-										{ 42.41, 76.61 },
-									},
-									["isWQ"] = 120,		-- Enables WQ filter for Level 120
+									["qg"] = 139987,	-- Bristlespine
+									["coord"] = { 42.41, 76.61, 942 },
+									["isWQ"] = 120,	-- Enables WQ filter for Level 120
 									["g"] = {
 										{	-- This Little Piggy Has Sharp Tusks
 											["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
-											["criteriaID"] = 2,			-- This Little Piggy Has Sharp Tusks
+											["criteriaID"] = 2,	-- This Little Piggy Has Sharp Tusks
 										},
 									},
 								},

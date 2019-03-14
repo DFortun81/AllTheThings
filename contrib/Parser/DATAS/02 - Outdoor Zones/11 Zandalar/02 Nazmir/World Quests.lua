@@ -10,6 +10,17 @@ _.Zones =
 					["groups"] = {
 						n(-17, {	-- Quests [Note: We don't attach qg's or coords since they don't apply to the WQ due to not actually receiving anything; very few exceptions apply]
 							["groups"] = {
+								{	-- Accidental Dread — Pet Battle
+									["questID"] = 52803,	-- Accidental Dread
+									["isWQ"] = 120,
+									["qg"] = 141814,	-- Korval Darkbeard
+									["g"] = {
+										{	-- Accidental Dread — Battle on Zandalar and Kul Tiras
+											["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
+											["criteriaID"] = 16,	-- Accidental Dread
+										},
+									},
+								},
 								{	-- Azerite Infused Slag
 									["questID"] = 50564,	-- Azerite Infused Slag
 									["npcID"] = 134293, 	-- Azerite-Infused Elemental	Note!! Done so we can use his name for the quest rather than Quest #123456
@@ -65,12 +76,17 @@ _.Zones =
 									["questID"] =  50962,	-- Cargo Reclamation
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								},
-								q(52779, {	-- Crawg in the Bog [Pet Battle]
-									["groups"] = {
-										i(163036),	-- Polished Pet Charm
+								{	-- Crawg in the Bog — Pet Battle
+									["questID"] = 52779,	-- Crawg in the Bog
+									["isWQ"] = 120,
+									["qg"] = 141588,	-- Bloodtusk
+									["g"] = {
+										{	-- Crawg in the Bog — Battle on Zandalar and Kul Tiras
+											["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
+											["criteriaID"] = 14,	-- Crawg in the Bog
+										},
 									},
-									["isWQ"] = 120,		-- Enables WQ filter for Level 120
-								}),
+								},
 								{	-- Don't Stalk Me, Troll (A)
 									["g"] = {
 										{	-- 7th Legion Spycatcher
@@ -145,6 +161,28 @@ _.Zones =
 									["questID"] = 53321,	-- Luminous Monelite
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["requireSkill"] = 186,	-- Mining
+								},
+								{	-- Marshdwellers — Pet Battle
+									["questID"] = 52754,	-- Marshdwellers
+									["isWQ"] = 120,
+									["qg"] = 141529,	-- Lozu
+									["g"] = {
+										{	-- Marshdwellers — Battle on Zandalar and Kul Tiras
+											["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
+											["criteriaID"] = 13,	-- Marshdwellers
+										},
+									},
+								},
+								{	-- Pack Leader — Pet Battle
+									["questID"] = 52799,	-- Pack Leader
+									["isWQ"] = 120,
+									["qg"] = 141799,	-- Grady Prett
+									["g"] = {
+										{	-- Pack Leader — Battle on Zandalar and Kul Tiras
+											["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
+											["criteriaID"] = 15,	-- Pack Leader
+										},
+									},
 								},
 								{	-- Past Due
 									["questID"] = 50667,	-- Past Due

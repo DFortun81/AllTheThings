@@ -8,6 +8,159 @@ _.Zones =
 			["groups"] = {
 				n(-25, { 	-- Pet Battle
 					["g"] = {
+						n(141077, {	-- Kwint
+							["coord"] = { 86.2, 38.6, 895 },
+							["g"] = {
+								{
+									["achievementID"] = 13279,	-- Family Battler
+									["collectible"] = false,	-- When they complete the crit here there isn't anything left to collect for Family Battler from this NPC
+									["g"] = {
+										{	-- Kwint — Hobbyist Aquarist
+											["achievementID"] = 13280,	-- Hobbyist Aquarist
+											["criteriaID"] = 8,	-- Kwint
+										},
+										{	-- Kwint — Beast Mode
+											["achievementID"] = 13270,	-- Beast Mode
+											["criteriaID"] = 8,	-- Kwint
+										},
+										{	-- Kwint — Critters with Huge Teeth
+											["achievementID"] = 13271,	-- Critters with Huge Teeth
+											["criteriaID"] = 8,	-- Kwint
+										},
+										{	-- Kwint — Dragons Make Everything Better
+											["achievementID"] = 13272,	-- Dragons Make Everything Better
+											["criteriaID"] = 8,	-- Kwint
+										},
+										{	-- Kwint — Element of Success
+											["achievementID"] = 13273,	-- Element of Success
+											["criteriaID"] = 8,	-- Kwint
+										},
+										{	-- Kwint — Fun With Flying
+											["achievementID"] = 13274,	-- Fun With Flying
+											["criteriaID"] = 8,	-- Kwint
+										},
+										{	-- Kwint — Human Resources
+											["achievementID"] = 13281,	-- Human Resources
+											["criteriaID"] = 8,	-- Kwint
+										},
+										{	-- Kwint — Magician's Secrets
+											["achievementID"] = 13275,	-- Magician's Secrets
+											["criteriaID"] = 8,	-- Kwint
+										},
+										{	-- Kwint — Machine Learning
+											["achievementID"] = 13277,	-- Machine Learning
+											["criteriaID"] = 8,	-- Kwint
+										},
+										{	-- Kwint — Not Quite Dead Yet
+											["achievementID"] = 13278,	-- Not Quite Dead Yet
+											["criteriaID"] = 8,	-- Kwint
+										},
+									},
+								},
+							},
+						}),
+						n(141292, {	-- Delia Hanako
+							["coord"] = { 59.6, 33.2, 895 },
+							["g"] = {
+								{
+									["achievementID"] = 13279,	-- Family Battler
+									["collectible"] = false,	-- When they complete the crit here there isn't anything left to collect for Family Battler from this NPC
+									["g"] = {
+										{	-- Delia Hanako — Hobbyist Aquarist
+											["achievementID"] = 13280,	-- Hobbyist Aquarist
+											["criteriaID"] = 9,	-- Delia Hanako
+										},
+										{	-- Delia Hanako — Beast Mode
+											["achievementID"] = 13270,	-- Beast Mode
+											["criteriaID"] = 9,	-- Delia Hanako
+										},
+										{	-- Delia Hanako — Critters with Huge Teeth
+											["achievementID"] = 13271,	-- Critters with Huge Teeth
+											["criteriaID"] = 9,	-- Delia Hanako
+										},
+										{	-- Delia Hanako — Dragons Make Everything Better
+											["achievementID"] = 13272,	-- Dragons Make Everything Better
+											["criteriaID"] = 9,	-- Delia Hanako
+										},
+										{	-- Delia Hanako — Element of Success
+											["achievementID"] = 13273,	-- Element of Success
+											["criteriaID"] = 9,	-- Delia Hanako
+										},
+										{	-- Delia Hanako — Fun With Flying
+											["achievementID"] = 13274,	-- Fun With Flying
+											["criteriaID"] = 9,	-- Delia Hanako
+										},
+										{	-- Delia Hanako — Human Resources
+											["achievementID"] = 13281,	-- Human Resources
+											["criteriaID"] = 9,	-- Delia Hanako
+										},
+										{	-- Delia Hanako — Magician's Secrets
+											["achievementID"] = 13275,	-- Magician's Secrets
+											["criteriaID"] = 9,	-- Delia Hanako
+										},
+										{	-- Delia Hanako — Machine Learning
+											["achievementID"] = 13277,	-- Machine Learning
+											["criteriaID"] = 9,	-- Delia Hanako
+										},
+										{	-- Delia Hanako — Not Quite Dead Yet
+											["achievementID"] = 13278,	-- Not Quite Dead Yet
+											["criteriaID"] = 9,	-- Delia Hanako
+										},
+									},
+								},
+							},
+						}),
+						n(141479, {	-- Burly
+							["coord"] = { 67.6, 12.8, 895 },
+							["g"] = {
+								{
+									["achievementID"] = 13279,	-- Family Battler
+									["collectible"] = false,	-- When they complete the crit here there isn't anything left to collect for Family Battler from this NPC
+									["g"] = {
+										{	-- Burly — Hobbyist Aquarist
+											["achievementID"] = 13280,	-- Hobbyist Aquarist
+											["criteriaID"] = 10,	-- Burly
+										},
+										{	-- Burly — Beast Mode
+											["achievementID"] = 13270,	-- Beast Mode
+											["criteriaID"] = 10,	-- Burly
+										},
+										{	-- Burly — Critters with Huge Teeth
+											["achievementID"] = 13271,	-- Critters with Huge Teeth
+											["criteriaID"] = 10,	-- Burly
+										},
+										{	-- Burly — Dragons Make Everything Better
+											["achievementID"] = 13272,	-- Dragons Make Everything Better
+											["criteriaID"] = 10,	-- Burly
+										},
+										{	-- Burly — Element of Success
+											["achievementID"] = 13273,	-- Element of Success
+											["criteriaID"] = 10,	-- Burly
+										},
+										{	-- Burly — Fun With Flying
+											["achievementID"] = 13274,	-- Fun With Flying
+											["criteriaID"] = 10,	-- Burly
+										},
+										{	-- Burly — Human Resources
+											["achievementID"] = 13281,	-- Human Resources
+											["criteriaID"] = 10,	-- Burly
+										},
+										{	-- Burly — Magician's Secrets
+											["achievementID"] = 13275,	-- Magician's Secrets
+											["criteriaID"] = 10,	-- Burly
+										},
+										{	-- Burly — Machine Learning
+											["achievementID"] = 13277,	-- Machine Learning
+											["criteriaID"] = 10,	-- Burly
+										},
+										{	-- Burly — Not Quite Dead Yet
+											["achievementID"] = 13278,	-- Not Quite Dead Yet
+											["criteriaID"] = 10,	-- Burly
+										},
+									},
+								},
+							},
+						}),
 						{	-- Alpine Chipmunk
 							["speciesID"] = 487,	-- Alpine Chipmunk
 							["crs"] = { 62189 }, -- Alpine Chipmunk	

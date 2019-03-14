@@ -102,12 +102,17 @@ _.Zones =
 										},
 									},
 								},
-								q(52009, {	-- Crab People [Pet Battle]
-									["groups"] = {
-										i(163036),	-- Polished Pet Charm
+								{	-- Crab People — Pet Battle
+									["questID"] = 52009,	-- Crab People
+									["isWQ"] = 120,
+									["qg"] = 139489,	-- Captain Hermes
+									["g"] = {
+										{	-- Crab People — Battle on Zandalar and Kul Tiras
+											["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
+											["criteriaID"] = 1,	-- Crab People
+										},
 									},
-									["isWQ"] = 120,		-- Enables WQ filter for Level 120
-								}),
+								},
 								{	-- Duchess Fallensong [A-Incursion WQ]
 									["questID"] = 54665,	-- Duchess Fallensong
 									["coords"] = {
@@ -171,6 +176,17 @@ _.Zones =
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["requireSkill"] = 186, -- Mining
 								},
+								{	-- Night Horrors — Pet Battle
+									["questID"] = 52218,	-- Night Horrors
+									["isWQ"] = 120,
+									["qg"] = 140461,	-- Dilbert McClint
+									["g"] = {
+										{	-- Night Horrors — Battle on Zandalar and Kul Tiras
+											["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
+											["criteriaID"] = 4,	-- Night Horrors
+										},
+									},
+								},
 								{	-- Omgar Doombow [A-Incursion WQ]
 									["questID"] = 54089,	-- Fungal Infestation
 									["coords"] = {
@@ -195,12 +211,17 @@ _.Zones =
 									["isWQ"] = 120,
 									["races"] = HORDE_ONLY,
 								},
-								q(52278, {	-- Rogue Azerite [Pet Battle]
-									["groups"] = {
-										i(163036),	-- Polished Pet Charm
+								{	-- Rogue Azerite [Pet Battle]
+									["questID"] = 52278,	-- Rogue Azerite
+									["isWQ"] = 120,
+									["qg"] = 140813,	-- Fizzie Sparkwhistle
+									["g"] = {
+										{	-- Rogue Azerite (Battle on Zandalar and Kul Tiras)
+											["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
+											["criteriaID"] = 5,	-- Rogue Azerite
+										},
 									},
-									["isWQ"] = 120,		-- Enables WQ filter for Level 120
-								}),
+								},
 								{	-- Sister Hilga [AH]
 									["questID"] = 51612, 	-- Sister Hilga
 									["coords"] = {
@@ -275,6 +296,17 @@ _.Zones =
 									},
 									["isWQ"] = 120,
 									["races"] = HORDE_ONLY,
+								},
+								{	-- What's the Buzz? — Pet Battle
+									["questID"] = 52297,	-- What's the Buzz?
+									["isWQ"] = 120,
+									["qg"] = 140880,	-- Michael Skarn
+									["g"] = {
+										{	-- What's the Buzz? — Battle on Zandalar and Kul Tiras
+											["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
+											["criteriaID"] = 6,	-- What's the Buzz?
+										},
+									},
 								},
 								{	-- Work Order: Battle Flag: Rallying Swiftness
 									["questID"] = 52424,
