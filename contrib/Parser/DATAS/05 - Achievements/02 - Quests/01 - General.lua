@@ -67,6 +67,7 @@ _.Achievements =
 						crit(6),		-- Loremaster of Pandaria
 						crit(7),		-- Loremaster of Draenor
 						crit(8),		-- Loremaster of Legion
+						crit(9),		-- Loremaster of Kul Tiras / Zandalar
 					}),
 				},
 			}),
