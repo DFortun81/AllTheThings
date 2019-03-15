@@ -182,23 +182,151 @@ _.ExpansionFeatures =
 							["classes"] = {11}
 						}),		
 						n(-148, { 	-- Streamtalker
+							["classes"] = { 7 },	-- Shaman Only
 							["groups"] = {
-								i(119719),
-								i(119720),
-								i(119721),
-								i(119722),
-								i(119723),
-								i(119724),
-								i(119725),
-								i(119726),
-								i(119727),
-								i(119728),
-								i(119729),
-								i(119745),	
-								i(119751),	
+								{	-- Streamtalker Aegis [Elemental]
+									["itemID"] = 119725,	-- Streamtalker Aegis
+								},
+								{	-- Streamtalker Claws [Elemental]
+									["itemID"] = 119719,	-- Streamtalker Claws
+								},
+								{	-- Streamtalker Shield [Restoration]
+									["itemID"] = 119751,	-- Streamtalker Shield
+								},
+								{	-- Streamtalker Slicers [Restoration]
+									["itemID"] = 119745,	-- Streamtalker Slicers
+								},
+								{	-- Streamtalker Talons [Enhancement]
+									["itemID"] = 119729,	-- Streamtalker Talons
+								},
+								{	-- Streamtalker Coif [Elemental]
+									["itemID"] = 119723,	-- Streamtalker Coif
+								},
+								{	-- Streamtalker Cowl [Restoration]
+									["itemID"] = 119749,	-- Streamtalker Cowl
+								},
+								{	-- Streamtalker Helm [Enhancement]
+									["itemID"] = 119733,	-- Streamtalker Helm	
+								},
+								{	-- Streamtalker Choker [Enhancement]
+									["itemID"] = 119709,	-- Streamtalker Choker	
+								},
+								{	-- Streamtalker Medallion [Elemental]
+									["itemID"] = 119714,	-- Streamtalker Medallion
+								},
+								{	-- Streamtalker Necklace [Restoration]
+									["itemID"] = 119739,	-- Streamtalker Necklace
+								},
+								{	-- Streamtalker Pauldrons [Elemental]
+									["itemID"] = 119726,	-- Streamtalker Pauldrons
+								},
+								{	-- Streamtalker Shoulderguards [Enhancement]
+									["itemID"] = 119735,	-- Streamtalker Shoulderguards	
+								},
+								{	-- Streamtalker Spaulders [Restoration]
+									["itemID"] = 119752,	-- Streamtalker Spaulders
+								},
+								{	-- Streamtalker Cloak of Destruction [Elemental]
+									["itemID"] = 119744,	-- Streamtalker Cloak of Destruction
+								},
+								{	-- Streamtalker Cloak of Rage [Enhancement]
+									["itemID"] = 119708,	-- Streamtalker Cloak of Rage	
+								},
+								{	-- Streamtalker Cloak of Wisdom [Restoration]
+									["itemID"] = 119738,	-- Streamtalker Cloak of Wisdom
+								},
+								{	-- Streamtalker Chestguard [Enhancement]
+									["itemID"] = 119730,	-- Streamtalker Chestguard	
+								},
+								{	-- Streamtalker Tunic [Elemental]
+									["itemID"] = 119720,	-- Streamtalker Tunic
+								},
+								{	-- Streamtalker Vest [Restoration]
+									["itemID"] = 119746,	-- Streamtalker Vest
+								},
+								{	-- Streamtalker Armbands [Elemental]
+									["itemID"] = 119728,	-- Streamtalker Armbands
+								},
+								{	-- Streamtalker Armguard [Enhancement]
+									["itemID"] = 119737,	-- Streamtalker Armguard	
+								},
+								{	-- Streamtalker Bracers [Restoration]
+									["itemID"] = 119754,	-- Streamtalker Bracers
+								},
+								{	-- Streamtalker Gloves [Elemental]
+									["itemID"] = 119722,	-- Streamtalker Gloves
+								},
+								{	-- Streamtalker Grips [Restoration]
+									["itemID"] = 119748,	-- Streamtalker Grips
+								},
+								{	-- Streamtalker Handguards [Enhancement]
+									["itemID"] = 119732,	-- Streamtalker Handguards	
+								},
+								{	-- Streamtalker Belt [Elemental]
+									["itemID"] = 119727,	-- Streamtalker Belt
+								},
+								{	-- Streamtalker Girdle [Restoration]
+									["itemID"] = 119753,	-- Streamtalker Girdle
+								},
+								{	-- Streamtalker Waistguard [Enhancement]
+									["itemID"] = 119736,	-- Streamtalker Waistguard	
+								},
+								{	-- Streamtalker Leggings [Restoration]
+									["itemID"] = 119750,	-- Streamtalker Leggings
+								},
+								{	-- Streamtalker Legguards [Enhancement]
+									["itemID"] = 119734,	-- Streamtalker Legguards	
+								},
+								{	-- Streamtalker Legwraps [Elemental]
+									["itemID"] = 119724,	-- Streamtalker Legwraps
+								},
+								{	-- Streamtalker Boots [Elemental]
+									["itemID"] = 119721,	-- Streamtalker Boots
+								},
+								{	-- Streamtalker Greaves [Enhancement]
+									["itemID"] = 119731,	-- Streamtalker Greaves	
+								},
+								{	-- Streamtalker Sabatons [Restoration]
+									["itemID"] = 119747,	-- Streamtalker Sabatons
+								},
+								{	-- Streamtalker Band of Destruction [Elemental]
+									["itemID"] = 119717,	-- Streamtalker Band of Destruction
+								},
+								{	-- Streamtalker Band of Onslaught [Enhancement]
+									["itemID"] = 119711,	-- Streamtalker Band of Onslaught
+								},
+								{	-- Streamtalker Band of Wisdom [Restoration]
+									["itemID"] = 119742,	-- Streamtalker Band of Wisdom
+								},
+								{	-- Streamtalker Idol of Rage [Enhancement]
+									["itemID"] = 119710,	-- Streamtalker Idol of Rage
+								},
+								{	-- Streamtalker Idol of Destruction [Elemental]
+									["itemID"] = 119715,	-- Streamtalker Idol of Destruction
+								},
+								{	-- Streamtalker Idol of Wisdom [Restoration]
+									["itemID"] = 119740,	-- Streamtalker Idol of Wisdom
+								},
+								{	-- Streamtalker Ring of Destruction [Elemental]
+									["itemID"] = 119716,	-- Streamtalker Ring of Destruction
+								},
+								{	-- Streamtalker Ring of Onslaught [Enhancement]
+									["itemID"] = 119712,	-- Streamtalker Ring of Onslaught
+								},
+								{	-- Streamtalker Ring of Wisdom [Restoration]
+									["itemID"] = 119741,	-- Streamtalker Ring of Wisdom
+								},
+								{	-- Streamtalker Stone of Destruction [Elemental]
+									["itemID"] = 119718,	-- Streamtalker Stone of Destruction
+								},
+								{	-- Streamtalker Stone of Rage [Enhancement]
+									["itemID"] = 119713,	-- Streamtalker Stone of Rage
+								},
+								{	-- Streamtalker Stone of Wisdom [Restoration]
+									["itemID"] = 119743,	-- Streamtalker Stone of Wisdom
+								},
 							},
-							["classes"] = {7}
-						}),		
+						}),	
 						n(-149, { 	-- Sunsoul
 							["groups"] = {
 								i(119620),
