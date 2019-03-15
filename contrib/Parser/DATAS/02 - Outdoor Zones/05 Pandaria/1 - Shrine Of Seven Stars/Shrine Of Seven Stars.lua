@@ -431,36 +431,36 @@ _.Zones =
 						},
 					}),
 					n(64085, { -- Cullen Hammerbrow <Blacksmithing Supplies>
-						["coords"] = {
-							{ 71.27, 50.52, 393 },
-						},
+						["coord"] = { 71.27, 50.52, 393 },
 						["g"] = {
-							i(84158), -- Plans: Contender's Revenant Belt
-							i(84159), -- Plans: Contender's Revenant Boots
-							i(84160), -- Plans: Contender's Revenant Bracers
-							i(84161), -- Plans: Contender's Revenant Breastplate
-							i(84162), -- Plans: Contender's Revenant Gauntlets
-							i(84163), -- Plans: Contender's Revenant Helm
-							i(84164), -- Plans: Contender's Revenant Legplates
-							i(84165), -- Plans: Contender's Revenant Shoulders
-							i(84166), -- Plans: Contender's Spirit Belt
-							i(84167), -- Plans: Contender's Spirit Boots
-							i(84168), -- Plans: Contender's Spirit Bracers
-							i(84169), -- Plans: Contender's Spirit Breastplate
-							i(84170), -- Plans: Contender's Spirit Gauntlets
-							i(84171), -- Plans: Contender's Spirit Helm
-							i(84172), -- Plans: Contender's Spirit Legplates
-							i(84173), -- Plans: Contender's Spirit Shoulders
-							i(84208), -- Plans: Masterwork Lightsteel Shield
-							i(84219), -- Plans: Masterwork Spiritguard Belt
-							i(84220), -- Plans: Masterwork Spiritguard Boots
-							i(84221), -- Plans: Masterwork Spiritguard Bracers
-							i(84222), -- Plans: Masterwork Spiritguard Breastplate
-							i(84223), -- Plans: Masterwork Spiritguard Gauntlets
-							i(84224), -- Plans: Masterwork Spiritguard Helm
-							i(84225), -- Plans: Masterwork Spiritguard Legplates
-							i(84226), -- Plans: Masterwork Spiritguard Shield
-							i(84227), -- Plans: Masterwork Spiritguard Shoulders
+							i(76061, {	-- Spirit of Harmony
+								i(84158), -- Plans: Contender's Revenant Belt
+								i(84159), -- Plans: Contender's Revenant Boots
+								i(84160), -- Plans: Contender's Revenant Bracers
+								i(84161), -- Plans: Contender's Revenant Breastplate
+								i(84162), -- Plans: Contender's Revenant Gauntlets
+								i(84163), -- Plans: Contender's Revenant Helm
+								i(84164), -- Plans: Contender's Revenant Legplates
+								i(84165), -- Plans: Contender's Revenant Shoulders
+								i(84166), -- Plans: Contender's Spirit Belt
+								i(84167), -- Plans: Contender's Spirit Boots
+								i(84168), -- Plans: Contender's Spirit Bracers
+								i(84169), -- Plans: Contender's Spirit Breastplate
+								i(84170), -- Plans: Contender's Spirit Gauntlets
+								i(84171), -- Plans: Contender's Spirit Helm
+								i(84172), -- Plans: Contender's Spirit Legplates
+								i(84173), -- Plans: Contender's Spirit Shoulders
+								i(84208), -- Plans: Masterwork Lightsteel Shield
+								i(84219), -- Plans: Masterwork Spiritguard Belt
+								i(84220), -- Plans: Masterwork Spiritguard Boots
+								i(84221), -- Plans: Masterwork Spiritguard Bracers
+								i(84222), -- Plans: Masterwork Spiritguard Breastplate
+								i(84223), -- Plans: Masterwork Spiritguard Gauntlets
+								i(84224), -- Plans: Masterwork Spiritguard Helm
+								i(84225), -- Plans: Masterwork Spiritguard Legplates
+								i(84226), -- Plans: Masterwork Spiritguard Shield
+								i(84227), -- Plans: Masterwork Spiritguard Shoulders
+							}),
 						},
 						["requireSkill"] = 164, -- Blacksmithing
 					}),

@@ -171,22 +171,30 @@ _.Instances =
 									80633,	-- Lorewalker Han <Raid Finder Storyteller>
 								},
 								["groups"] = {
-									cr(60701, e(687, {	-- The Spirit Kings (60708,60709,60710)
-										i(86777),	-- Screaming Tiger, Qiang's Unbreakable Polearm
-										i(86778),	-- Steelskin, Qiang's Impervious Shield
-										i(86788),	-- Hood of Blind Eyes
-										i(86776),	-- Amulet of the Hidden Kings
-										i(86783),	-- Zian's Choker of Coalesced Shadow
-										i(86780),	-- Shoulderguards of the Unflanked
-										i(89971),	-- Mindshard Drape
-										i(86779),	-- Breastplate of the Kings' Guard
-										i(86786),	-- Bracers of Dark Thoughts
-										i(89970),	-- Bracers of Violent Meditation
-										i(86787),	-- Undying Shadow Grips
-										i(86785),	-- Girdle of Delirious Visions
-										i(86781),	-- Subetai's Pillaging Leggings
-										i(86784),	-- Meng's Treads of Insanity
-									})),
+									e(687, {	-- The Spirit Kings
+										["crs"] = {
+											60708,	-- Meng the Demented
+											60709,	-- Qiang the Merciless
+											60710,	-- Subetai the Swift
+											60701,	-- Zian of the Endless Shadow
+										},
+										["g"] = {
+											i(86777),	-- Screaming Tiger, Qiang's Unbreakable Polearm
+											i(86778),	-- Steelskin, Qiang's Impervious Shield
+											i(86788),	-- Hood of Blind Eyes
+											i(86776),	-- Amulet of the Hidden Kings
+											i(86783),	-- Zian's Choker of Coalesced Shadow
+											i(86780),	-- Shoulderguards of the Unflanked
+											i(89971),	-- Mindshard Drape
+											i(86779),	-- Breastplate of the Kings' Guard
+											i(86786),	-- Bracers of Dark Thoughts
+											i(89970),	-- Bracers of Violent Meditation
+											i(86787),	-- Undying Shadow Grips
+											i(86785),	-- Girdle of Delirious Visions
+											i(86781),	-- Subetai's Pillaging Leggings
+											i(86784),	-- Meng's Treads of Insanity
+										},
+									}),
 									cr(60410, e(726, {	-- Elegon
 										i(167049),	-- Celestial Gift (PET!)
 										i(86799),	-- Starshatter
@@ -364,28 +372,36 @@ _.Instances =
 									i(89802),	-- Feng's Seal of Binding
 								},
 							}),
-							cr(60143, e(682, {	-- Gara'jal the Spiritbinder
-								{	-- Sorry, Were You Looking for This?
-									["achievementID"] = 7056,	-- Sorry, Were You Looking for This?
+							e(682, {	-- Gara'jal the Spiritbinder
+								["crs"] = { 60143 },	-- Gara'jal the Spiritbinder
+								["g"] = {
+									{	-- Sorry, Were You Looking for This?
+										["achievementID"] = 7056,	-- Sorry, Were You Looking for This?
+									},
+									i(167048),	-- Wayward Spirit (PET!)
+									i(85994),	-- Gara'kal, Fist of the Spiritbinder
+									i(85996),	-- Eye of the Ancient Spirit
+									i(85991),	-- Soulgrasp Choker
+									i(85995),	-- Netherrealm Shoulderpads
+									i(86041),	-- Shadowsummoner Spaulders
+									i(86039),	-- Spaulders of the Divided Mind
+									i(86027),	-- Bindings of Ancient Spirits
+									i(89817),	-- Bonded Soul Bracers
+									i(85993),	-- Fetters of Death
+									i(86040),	-- Leggings of Imprisoned Will
+									i(85997),	-- Sandals of the Severed Soul
+									i(85992),	-- Sollerets of Spirit Splitting
+									i(86038),	-- Circuit of the Frail Soul
 								},
-								i(167048),	-- Wayward Spirit (PET!)
-								i(85994),	-- Gara'kal, Fist of the Spiritbinder
-								i(85996),	-- Eye of the Ancient Spirit
-								i(85991),	-- Soulgrasp Choker
-								i(85995),	-- Netherrealm Shoulderpads
-								i(86041),	-- Shadowsummoner Spaulders
-								i(86039),	-- Spaulders of the Divided Mind
-								i(86027),	-- Bindings of Ancient Spirits
-								i(89817),	-- Bonded Soul Bracers
-								i(85993),	-- Fetters of Death
-								i(86040),	-- Leggings of Imprisoned Will
-								i(85997),	-- Sandals of the Severed Soul
-								i(85992),	-- Sollerets of Spirit Splitting
-								i(86038),	-- Circuit of the Frail Soul
-
-							})),
-							cr(60701, e(687, {	-- The Spirit Kings
-								["groups"] = {
+							}),
+							e(687, {	-- The Spirit Kings
+								["crs"] = {
+											60708,	-- Meng the Demented
+											60709,	-- Qiang the Merciless
+											60710,	-- Subetai the Swift
+											60701,	-- Zian of the Endless Shadow
+										},
+								["g"] = {
 									{	-- Getting Hot In Here
 										["achievementID"] = 6687,	-- Getting Hot In Here
 									},
@@ -404,38 +420,39 @@ _.Instances =
 									i(86081),	-- Subetai's Pillaging Leggings
 									i(86084),	-- Meng's Treads of Insanity
 								},
-								["crs"] = {
-									60701,	-- Zian of the Endless Shadow <Sorcer King>
-									60708,	-- Meng the Demented <Mad King>
-									60709,	-- Qiang the Merciless <Warlord King>
-									60710,	-- Subetai the Swift <Bandit King>
-								},
-							})),
+							}),
 							{	-- And... It's Good!
 								["achievementID"] = 7933,	-- And... It's Good!
 							},
-							cr(60410, e(726, {	-- Elegon
-								{	-- Straight Six
-									["achievementID"] = 6686,	-- Straight Six
+							e(726, {	-- Elegon
+								["crs"] = { 60410 },	-- Elegon
+								["g"] = {
+									{	-- Straight Six
+										["achievementID"] = 6686,	-- Straight Six
+									},
+									i(87777),	-- Reins of the Astral Cloud Serpent (MOUNT!)
+									i(167049),	-- Celestial Gift (PET!)
+									i(86140),	-- Starshatter
+									i(86130),	-- Elegion, the Fanged Crescent
+									i(86137),	-- Torch of the Celestial Spark
+									i(89821),	-- Crown of Keening Stars
+									i(86141),	-- Shoulders of Empyreal Focus
+									i(86136),	-- Chestguard of Total Annihilation
+									i(86135),	-- Starcrusher Gauntlets
+									i(89822),	-- Galaxyfire Girdle
+									i(86139),	-- Orbital Belt
+									i(86138),	-- Phasewalker Striders
+									i(89824),	-- Band of Bursting Novas
+									i(86132),	-- Bottle of Infinite Stars
+									i(86133),	-- Light of the Cosmos
+									i(86131),	-- Vial of Dragon's Blood
 								},
-								i(87777),	-- Reins of the Astral Cloud Serpent (MOUNT!)
-								i(167049),	-- Celestial Gift (PET!)
-								i(86140),	-- Starshatter
-								i(86130),	-- Elegion, the Fanged Crescent
-								i(86137),	-- Torch of the Celestial Spark
-								i(89821),	-- Crown of Keening Stars
-								i(86141),	-- Shoulders of Empyreal Focus
-								i(86136),	-- Chestguard of Total Annihilation
-								i(86135),	-- Starcrusher Gauntlets
-								i(89822),	-- Galaxyfire Girdle
-								i(86139),	-- Orbital Belt
-								i(86138),	-- Phasewalker Striders
-								i(89824),	-- Band of Bursting Novas
-								i(86132),	-- Bottle of Infinite Stars
-								i(86133),	-- Light of the Cosmos
-								i(86131),	-- Vial of Dragon's Blood
-							})),
-							cr(60400, e(677, {	-- Will of the Emperor
+							}),
+							e(677, {	-- Will of the Emperor
+								["crs"] = {
+									60400,	-- Jan-xi <Emperor's Open Hand>
+									60399,	-- Qin-xi <Emperor's Closed Fist>
+								},
 								["groups"] = {
 									{	-- Show Me Your Moves!
 										["achievementID"] = 6455,	-- Show Me Your Moves!
@@ -457,17 +474,13 @@ _.Instances =
 									i( 86144),	-- Lei Shen's Final Orders
 									i( 86147),	-- Qin-xi's Polarizing Seal
 								},
-								["crs"] = {
-									60400,	-- Jan-xi <Emperor's Open Hand>
-									60399,	-- Qin-xi <Emperor's Closed Fist>
-								},
-							})),
+							}),
 						},
 					}),
 					d(2, {	-- Heroic
 						["ignoreBonus"] = true,
 						["difficulties"] = { 5, 6 },
-						["groups"] = {
+						["g"] = {
 							n(0, {	-- Zone Drop
 								["groups"] = {
 									i(86238),	-- Pattern: Chestguard of Nemeses
@@ -529,7 +542,7 @@ _.Instances =
 									60043,	-- Jade Guardian
 									59915,	-- Jasper Guardian
 								},
-								["groups"] = {
+								["g"] = {
 									{	-- Heroic: Stone Guard
 										["achievementID"] = 6719,	-- Heroic: Stone Guard
 									},
@@ -553,74 +566,86 @@ _.Instances =
 									i(87015),	-- Jasper Clawfeet
 								},
 							}),
-							cr(60009, e(689, {	-- Feng the Accursed
-								{	-- Heroic: Feng the Accursed
-									["achievementID"] = 6720,	-- Heroic: Feng the Accursed
-								},
-								{	-- Anything You Can Do, I Can Do Better...
-									["achievementID"] = 6674,	-- Anything You Can Do, I Can Do Better...
-									["groups"] = {
-										{	-- Arcane Resonance
-											["achievementID"] = 6674,	-- Anything You Can Do, I Can Do Better...
-											["criteriaID"] = 5,	-- Arcane Resonance
-										},
-										{	-- Arcane Velocity
-											["achievementID"] = 6674,	-- Anything You Can Do, I Can Do Better...
-											["criteriaID"] = 4,	-- Arcane Velocity
-										},
-										{	-- Epicenter
-											["achievementID"] = 6674,	-- Anything You Can Do, I Can Do Better...
-											["criteriaID"] = 1,	-- Epicenter
-										},
-										{	-- Lightning Fists
-											["achievementID"] = 6674,	-- Anything You Can Do, I Can Do Better...
-											["criteriaID"] = 2,	-- Lightning Fists
-										},
-										{	-- Wildfire Spark
-											["achievementID"] = 6674,	-- Anything You Can Do, I Can Do Better...
-											["criteriaID"] = 3,	-- Wildfire Spark
+							e(689, {	-- Feng the Accursed
+								["crs"] = { 60009 },	-- Feng the Accursed
+								["g"] = {
+									{	-- Heroic: Feng the Accursed
+										["achievementID"] = 6720,	-- Heroic: Feng the Accursed
+									},
+									{	-- Anything You Can Do, I Can Do Better...
+										["achievementID"] = 6674,	-- Anything You Can Do, I Can Do Better...
+										["groups"] = {
+											{	-- Arcane Resonance
+												["achievementID"] = 6674,	-- Anything You Can Do, I Can Do Better...
+												["criteriaID"] = 5,	-- Arcane Resonance
+											},
+											{	-- Arcane Velocity
+												["achievementID"] = 6674,	-- Anything You Can Do, I Can Do Better...
+												["criteriaID"] = 4,	-- Arcane Velocity
+											},
+											{	-- Epicenter
+												["achievementID"] = 6674,	-- Anything You Can Do, I Can Do Better...
+												["criteriaID"] = 1,	-- Epicenter
+											},
+											{	-- Lightning Fists
+												["achievementID"] = 6674,	-- Anything You Can Do, I Can Do Better...
+												["criteriaID"] = 2,	-- Lightning Fists
+											},
+											{	-- Wildfire Spark
+												["achievementID"] = 6674,	-- Anything You Can Do, I Can Do Better...
+												["criteriaID"] = 3,	-- Wildfire Spark
+											},
 										},
 									},
+									i(89425),	-- Fan of Fiery Winds
+									i(87029),	-- Hood of Cursed Dreams
+									i(87024),	-- Nullification Greathelm
+									i(87028),	-- Amulet of Seven Curses
+									i(87044),	-- Arrow Breaking Windcloak
+									i(87026),	-- Cloak of Peacock Feathers
+									i(87027),	-- Imperial Ghostbinder's Robes
+									i(87025),	-- Bracers of Six Oxen
+									i(87030),	-- Chain of Shadow
+									i(87022),	-- Tomb Raider's Girdle
+									i(87031),	-- Legplates of Sagacious Shadows
+									i(87023),	-- Wildfire Worldwalkers
+									i(89933),	-- Feng's Ring of Dreams
+									i(89932),	-- Feng's Seal of Binding
 								},
-								i(89425),	-- Fan of Fiery Winds
-								i(87029),	-- Hood of Cursed Dreams
-								i(87024),	-- Nullification Greathelm
-								i(87028),	-- Amulet of Seven Curses
-								i(87044),	-- Arrow Breaking Windcloak
-								i(87026),	-- Cloak of Peacock Feathers
-								i(87027),	-- Imperial Ghostbinder's Robes
-								i(87025),	-- Bracers of Six Oxen
-								i(87030),	-- Chain of Shadow
-								i(87022),	-- Tomb Raider's Girdle
-								i(87031),	-- Legplates of Sagacious Shadows
-								i(87023),	-- Wildfire Worldwalkers
-								i(89933),	-- Feng's Ring of Dreams
-								i(89932),	-- Feng's Seal of Binding
-							})),
-							cr(60143, e(682, {	-- Gara'jal the Spiritbinder
-								{	-- Heroic: Gara'jal the Spiritbinder
-									["achievementID"] = 6721,	-- Heroic: Gara'jal the Spiritbinder
+							}),
+							e(682, {	-- Gara'jal the Spiritbinder
+								["crs"] = { 60143 },	-- Gara'jal the Spiritbinder
+								["g"] = {
+									{	-- Heroic: Gara'jal the Spiritbinder
+										["achievementID"] = 6721,	-- Heroic: Gara'jal the Spiritbinder
+									},
+									{	-- Sorry, Were You Looking for This?
+										["achievementID"] = 7056,	-- Sorry, Were You Looking for This?
+									},
+									i(167048),	-- Wayward Spirit (PET!)
+									i(87032),	-- Gara'kal, Fist of the Spiritbinder
+									i(87039),	-- Eye of the Ancient Spirit
+									i(87036),	-- Soulgrasp Choker
+									i(87033),	-- Netherrealm Shoulderpads
+									i(87038),	-- Shadowsummoner Spaulders
+									i(87041),	-- Spaulders of the Divided Mind
+									i(87043),	-- Bindings of Ancient Spirits
+									i(89934),	-- Bonded Soul Bracers
+									i(87034),	-- Fetters of Death
+									i(87042),	-- Leggings of Imprisoned Will
+									i(87037),	-- Sandals of the Severed Soul
+									i(87035),	-- Sollerets of Spirit Splitting
+									i(87040),	-- Circuit of the Frail Soul
 								},
-								{	-- Sorry, Were You Looking for This?
-									["achievementID"] = 7056,	-- Sorry, Were You Looking for This?
+							}),
+							e(687, {	-- The Spirit Kings
+								["crs"] = {
+									60708,	-- Meng the Demented
+									60709,	-- Qiang the Merciless
+									60710,	-- Subetai the Swift
+									60701,	-- Zian of the Endless Shadow
 								},
-								i(167048),	-- Wayward Spirit (PET!)
-								i(87032),	-- Gara'kal, Fist of the Spiritbinder
-								i(87039),	-- Eye of the Ancient Spirit
-								i(87036),	-- Soulgrasp Choker
-								i(87033),	-- Netherrealm Shoulderpads
-								i(87038),	-- Shadowsummoner Spaulders
-								i(87041),	-- Spaulders of the Divided Mind
-								i(87043),	-- Bindings of Ancient Spirits
-								i(89934),	-- Bonded Soul Bracers
-								i(87034),	-- Fetters of Death
-								i(87042),	-- Leggings of Imprisoned Will
-								i(87037),	-- Sandals of the Severed Soul
-								i(87035),	-- Sollerets of Spirit Splitting
-								i(87040),	-- Circuit of the Frail Soul
-							})),
-							cr(60701, e(687, {	-- The Spirit Kings
-								["groups"] = {
+								["g"] = {
 									{	-- Heroic: Four Kings
 										["achievementID"] = 6722,	-- Heroic: Four Kings
 									},
@@ -642,45 +667,46 @@ _.Instances =
 									i(87047),	-- Subetai's Pillaging Leggings
 									i(87055),	-- Meng's Treads of Insanity
 								},
-								["crs"] = {
-									60701,	-- Zian of the Endless Shadow <Sorcer King>
-									60708,	-- Meng the Demented <Mad King>
-									60709,	-- Qiang the Merciless <Warlord King>
-									60710,	-- Subetai the Swift <Bandit King>
-								},
-							})),
+							}),
 							{	-- And... It's Good!
 								["achievementID"] = 7933,	-- And... It's Good!
 							},
-							cr(60410, e(726, {	-- Elegon
-								{	-- Heroic: Elegon
-									["achievementID"] = 6723,	-- Heroic: Elegon
+							e(726, {	-- Elegon
+								["crs"] = { 60410 },	-- Elegon
+								["g"] = {
+									{	-- Heroic: Elegon
+										["achievementID"] = 6723,	-- Heroic: Elegon
+									},
+									{	-- Straight Six
+										["achievementID"] = 6686,	-- Straight Six
+									},
+									i(87777),	-- Reins of the Astral Cloud Serpent (MOUNT!)
+									i(167049),	-- Celestial Gift (PET!)
+									i(87061),	-- Starshatter
+									i(87062),	-- Elegion, the Fanged Crescent
+									i(87066),	-- Torch of the Celestial Spark
+									i(89939),	-- Crown of Keening Stars
+									i(87068),	-- Shoulders of Empyreal Focus
+									i(87058),	-- Chestguard of Total Annihilation
+									i(87059),	-- Starcrusher Gauntlets
+									i(89938),	-- Galaxyfire Girdle
+									i(87064),	-- Orbital Belt
+									i(87067),	-- Phasewalker Striders
+									i(89937),	-- Band of Bursting Novas
+									i(87057),	-- Bottle of Infinite Stars
+									i(87065),	-- Light of the Cosmos
+									i(87063),	-- Vial of Dragon's Blood
 								},
-								{	-- Straight Six
-									["achievementID"] = 6686,	-- Straight Six
+							}),
+							e(677, {	-- Will of the Emperor
+								["crs"] = {
+									60400,	-- Jan-xi <Emperor's Open Hand>
+									60399,	-- Qin-xi <Emperor's Closed Fist>
 								},
-								i(87777),	-- Reins of the Astral Cloud Serpent (MOUNT!)
-								i(167049),	-- Celestial Gift (PET!)
-								i(87061),	-- Starshatter
-								i(87062),	-- Elegion, the Fanged Crescent
-								i(87066),	-- Torch of the Celestial Spark
-								i(89939),	-- Crown of Keening Stars
-								i(87068),	-- Shoulders of Empyreal Focus
-								i(87058),	-- Chestguard of Total Annihilation
-								i(87059),	-- Starcrusher Gauntlets
-								i(89938),	-- Galaxyfire Girdle
-								i(87064),	-- Orbital Belt
-								i(87067),	-- Phasewalker Striders
-								i(89937),	-- Band of Bursting Novas
-								i(87057),	-- Bottle of Infinite Stars
-								i(87065),	-- Light of the Cosmos
-								i(87063),	-- Vial of Dragon's Blood
-							})),
-							cr(60400, e(677, {	-- Will of the Emperor
-								["groups"] = {
+								["g"] = {
 									{	-- Heroic: Will of the Emperor
 										["achievementID"] = 6724,	-- Heroic: Will of the Emperor
-										["groups"] = {
+										["g"] = {
 											{	-- ,Delver of the Vaults
 												["titleID"] =  204,	-- ,Delver of the Vaults
 											},
@@ -706,11 +732,7 @@ _.Instances =
 									i( 87072),	-- Lei Shen's Final Orders
 									i( 87075),	-- Qin-xi's Polarizing Seal
 								},
-								["crs"] = {
-									60400,	-- Jan-xi <Emperor's Open Hand>
-									60399,	-- Qin-xi <Emperor's Closed Fist>
-								},
-							})),
+							}),
 						},
 					}),
 				},
