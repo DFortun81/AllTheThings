@@ -524,19 +524,6 @@ _.NeverImplemented =
 				un(1, i(48873)),	-- Hellscream's Legguards of Conquest
 				un(1, i(48874)),	-- Hellscream's Pauldrons of Conquest
 				un(1, i(154041)), -- Oathsworn Faceguard
-				-- Possible Unused Level 120/Lv 120 Classtrial
-				un(1, i(154048)), -- Oathsworn Shoulderguards
-				un(1, i(154038)), -- Oathsworn Cloak of Stoicism
-				un(1, i(154037)), -- Oathsworn Chestguard
-				un(1, i(154050)), -- Oathsworn Armguards
-				un(1, i(154040)), -- Oathsworn Handguards
-				un(1, i(154049)), -- Oathsworn Waistband
-				un(1, i(154042)), -- Oathsworn Legguards
-				un(1, i(154039)), -- Oathsworn Greaves
-				un(1, i(154045)), -- Oathsworn Band of Stoicism
-				un(1, i(154046)), -- Oathsworn Ring of Stoicism
-				un(1, i(154044)), -- Oathsworn Defender Idol
-				un(1, i(154047)), -- Oathsworn Defender Stone
 			}),
 			un(1, i(166400)),	-- flaskzertaurens plate chestguards
 			un(1, i(166401)),	-- flaskzertaurens plate cuirass
