@@ -2330,7 +2330,17 @@ _.Zones =
 						["questID"] = 37932,	
 						
 						["description"] = "|cff66ccffClick Unbound Rift in Ley-Ruins of Zarkhenar to start event. Arcavellus will spawn after a few waves of enemies.|r",
-					}), 
+					}),
+					n(106583, { 	-- Arkethrax
+						["description"] = "|cff66ccffPart of the Tehd & Marius' Excellent Adventure Achievement. Speak to Tehd to start the encounter.|r",
+						["questID"] = 42367,
+						["groups"] = {
+							{
+								["achievementID"] = 11186,	-- Tehd & Marius' Excellent Adventure
+								["criteriaID"] = 1,	-- Azsuna
+							},
+						},
+					}),
 					n(91187, { 		-- Beacher
 						["groups"] = {
 							i(129067),
@@ -2353,12 +2363,15 @@ _.Zones =
 								
 					}), 
 					n(91100, { 		-- Brogozog
-						["groups"] = {	
+						["description"] = "|cff66ccffPart of the Tehd & Marius' Excellent Adventure Achievement. Speak to Tehd to start the encounter.|r",
+						["questID"] = 38212,	
+						["groups"] = {
+							{
+								["achievementID"] = 11186,	-- Tehd & Marius' Excellent Adventure
+								["criteriaID"] = 1,	-- Azsuna
+							},
 							i(129068),
 						},
-						["questID"] = 38212,	
-						
-						["description"] = "|cff66ccffPart of the Tehd & Marius' Excellent Adventure Achievement. Speak to Tehd to start the encounter.|r",
 					}),
 					n(107105, { 	-- Broodmother Lizax
 						["groups"] = {
@@ -2394,14 +2407,28 @@ _.Zones =
 						},
 						["questID"] = 37869,	
 							
-					}), 
-					n(105938, { 	-- Felwing (Felbats)
+					}),
+					n(91579, { 		-- Doomlord Kazrok
+						["description"] = "|cff66ccffPart of the Tehd & Marius' Excellent Adventure Achievement. Speak to Tehd to start the encounter.|r",
+						["questID"] = 38352,	-- Kazrok
 						["groups"] = {
+							{
+								["achievementID"] = 11186,	-- Tehd & Marius' Excellent Adventure
+								["criteriaID"] = 1,	-- Azsuna
+							},
+							i(129056),	-- Dreadlord's Hamstring
+						},
+					}),
+					n(105938, { 	-- Felwing (Felbats)
+						["description"] = "|cff66ccffPart of the Tehd & Marius' Excellent Adventure Achievement. Speak to Tehd to start the encounter.|r",
+						["groups"] = {
+							{
+								["achievementID"] = 11186,	-- Tehd & Marius' Excellent Adventure
+								["criteriaID"] = 1,	-- Azsuna
+							},
 							i(129087),
 						},
-						["questID"] = 42069,	
-						
-						["description"] = "|cff66ccffPart of the Tehd & Marius' Excellent Adventure Achievement. Speak to Tehd to start the encounter.|r",
+						["questID"] = 42069,
 					}), 
 					n(89884, { 		-- Flog the Captain-Eater
 						["groups"] = {	
@@ -2527,14 +2554,12 @@ _.Zones =
 					}), 
 --[[	
 	--				n(109641, { 	-- Arcanor Prime }), 
-	--				n(106583, { 	-- Arkethrax }),
 	--				n(101596, { 	-- Charfeather }), 
 	--				n(106990, { 	-- Chief Bitterbrine Drops ring }), 
 	--				n(109677, { 	-- Chief Treasurer Jabrill }), 
 	--				n(108255, { 	-- Coura, Mistress of Arcana }), 
 	--				n(109702, { 	-- Deepclaw }), 
 	--				n(112637, { 	-- Devious Sunrunner }),
-	--				n(91579, { 		-- Doomlord Kazrok Drops trinket tehd }), 
 	--				n(109584, { 	-- Fjordun }), 
 	--				n(89816, { 		-- Golza the Iron Fin drops trinket	 }), 
 	--				n(109630, { 	-- Immolian }), 
