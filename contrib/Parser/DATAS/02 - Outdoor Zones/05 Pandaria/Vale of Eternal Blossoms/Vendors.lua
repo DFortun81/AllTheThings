@@ -272,99 +272,102 @@ _.Zones =
 							})),
 						}),
 						n(65172, {	-- Len at Arms <Adventuring Supplies>
-							i(83158),	-- Wasteland Satin Hood
-							i(83159),	-- Wasteland Hide Helm
-							i(83160),	-- Wasteland Ringmail Helm
-							i(83161),	-- Wasteland Burnished Headcover
-							i(83162),	-- Wasteland Silk Cowl
-							i(83163),	-- Wasteland Leather Helm
-							i(83164),	-- Wasteland Chain Helm
-							i(83165),	-- Wasteland Heavy Helm
-							i(83166),	-- Wasteland Armored Helm
-							i(83167),	-- Wasteland Satin Mantle
-							i(83168),	-- Wasteland Hide Spaulders
-							i(83169),	-- Wasteland Ringmail Spaulders
-							i(83170),	-- Wasteland Burnished Spaulders
-							i(83171),	-- Wasteland Silk Amice
-							i(83172),	-- Wasteland Leather Spaulders
-							i(83173),	-- Wasteland Chain Spaulders
-							i(83174),	-- Wasteland Heavy Shoulders
-							i(83175),	-- Wasteland Armored Shoulders
-							i(83176),	-- Wasteland Satin Robe
-							i(83177),	-- Wasteland Hide Tunic
-							i(83178),	-- Wasteland Ringmail Armor
-							i(83179),	-- Wasteland Burnished Chestguard
-							i(83180),	-- Wasteland Silk Robe
-							i(83181),	-- Wasteland Leather Tunic
-							i(83182),	-- Wasteland Chain Armor
-							i(83183),	-- Wasteland Heavy Chestpiece
-							i(83184),	-- Wasteland Armored Chestpiece
-							i(83185),	-- Wasteland Satin Leggings
-							i(83186),	-- Wasteland Hide Legguards
-							i(83187),	-- Wasteland Ringmail Leggings
-							i(83188),	-- Wasteland Burnished Legplates
-							i(83189),	-- Wasteland Silk Trousers
-							i(83190),	-- Wasteland Leather Legguards
-							i(83191),	-- Wasteland Chain Leggings
-							i(83192),	-- Wasteland Heavy Legguards
-							i(83193),	-- Wasteland Armored Legguards
-							i(83194),	-- Wasteland Satin Treads
-							i(83195),	-- Wasteland Hide Footguards
-							i(83196),	-- Wasteland Ringmail Sabatons
-							i(83197),	-- Wasteland Burnished Greaves
-							i(83198),	-- Wasteland Silk Treads
-							i(83199),	-- Wasteland Leather Boots
-							i(83200),	-- Wasteland Chain Sabatons
-							i(83201),	-- Wasteland Heavy Warboots
-							i(83202),	-- Wasteland Armored Warboots
-							i(83203),	-- Wasteland Satin Cord
-							i(83204),	-- Wasteland Hide Belt
-							i(83205),	-- Wasteland Ringmail Waistguard
-							i(83206),	-- Wasteland Burnished Clasp
-							i(83207),	-- Wasteland Silk Cord
-							i(83208),	-- Wasteland Leather Belt
-							i(83209),	-- Wasteland Chain Links
-							i(83210),	-- Wasteland Heavy Girdle
-							i(83211),	-- Wasteland Armored Girdle
-							i(83212),	-- Wasteland Satin Gloves
-							i(83213),	-- Wasteland Hide Gloves
-							i(83214),	-- Wasteland Ringmail Gauntlets
-							i(83215),	-- Wasteland Burnished Gloves
-							i(83216),	-- Wasteland Silk Handguards
-							i(83217),	-- Wasteland Leather Gloves
-							i(83218),	-- Wasteland Chain Gauntlets
-							i(83219),	-- Wasteland Heavy Gauntlets
-							i(83220),	-- Wasteland Armored Gauntlets
-							i(83221),	-- Wasteland Satin Cuffs
-							i(83222),	-- Wasteland Hide Bindings
-							i(83223),	-- Wasteland Ringmail Armbands
-							i(83224),	-- Wasteland Burnished Bracers
-							i(83225),	-- Wasteland Silk Cuffs
-							i(83226),	-- Wasteland Leather Armwraps
-							i(83227),	-- Wasteland Chain Wristguards
-							i(83228),	-- Wasteland Heavy Armplates
-							i(83229),	-- Wasteland Armored Bracers
-							i(83255),	-- Wasteland Shawl
-							i(83256),	-- Wasteland Drape
-							i(83257),	-- Wasteland Cape
-							i(83258),	-- Wasteland Manteau
-							i(83259),	-- Wasteland Cloak
-							i(83260),	-- Wasteland Meditation Staff
-							i(83261),	-- Wasteland Diviner's Rod
-							i(83262),	-- Wasteland Combat Staff
-							i(83263),	-- Wasteland Battlemace
-							i(83264),	-- Wasteland Handaxe
-							i(83265),	-- Wasteland Crossbow
-							i(83266),	-- Wasteland Saber
-							i(83267),	-- Wasteland Scepter
-							i(83268),	-- Wasteland Dagger
-							i(83269),	-- Wasteland Smasher
-							i(83270),	-- Wasteland Greatsword
-							i(83271),	-- Wasteland Mace
-							i(83272),	-- Wasteland Barrier
-							i(83273),	-- Wasteland Shield
-							i(83274),	-- Wasteland Blade
-							i(83275),	-- Wasteland Axe
+							["coord"] = { 14.1, 78.8, 390 },
+							["g"] = {
+								i(83158),	-- Wasteland Satin Hood
+								i(83159),	-- Wasteland Hide Helm
+								i(83160),	-- Wasteland Ringmail Helm
+								i(83161),	-- Wasteland Burnished Headcover
+								i(83162),	-- Wasteland Silk Cowl
+								i(83163),	-- Wasteland Leather Helm
+								i(83164),	-- Wasteland Chain Helm
+								i(83165),	-- Wasteland Heavy Helm
+								i(83166),	-- Wasteland Armored Helm
+								i(83167),	-- Wasteland Satin Mantle
+								i(83168),	-- Wasteland Hide Spaulders
+								i(83169),	-- Wasteland Ringmail Spaulders
+								i(83170),	-- Wasteland Burnished Spaulders
+								i(83171),	-- Wasteland Silk Amice
+								i(83172),	-- Wasteland Leather Spaulders
+								i(83173),	-- Wasteland Chain Spaulders
+								i(83174),	-- Wasteland Heavy Shoulders
+								i(83175),	-- Wasteland Armored Shoulders
+								i(83176),	-- Wasteland Satin Robe
+								i(83177),	-- Wasteland Hide Tunic
+								i(83178),	-- Wasteland Ringmail Armor
+								i(83179),	-- Wasteland Burnished Chestguard
+								i(83180),	-- Wasteland Silk Robe
+								i(83181),	-- Wasteland Leather Tunic
+								i(83182),	-- Wasteland Chain Armor
+								i(83183),	-- Wasteland Heavy Chestpiece
+								i(83184),	-- Wasteland Armored Chestpiece
+								i(83185),	-- Wasteland Satin Leggings
+								i(83186),	-- Wasteland Hide Legguards
+								i(83187),	-- Wasteland Ringmail Leggings
+								i(83188),	-- Wasteland Burnished Legplates
+								i(83189),	-- Wasteland Silk Trousers
+								i(83190),	-- Wasteland Leather Legguards
+								i(83191),	-- Wasteland Chain Leggings
+								i(83192),	-- Wasteland Heavy Legguards
+								i(83193),	-- Wasteland Armored Legguards
+								i(83194),	-- Wasteland Satin Treads
+								i(83195),	-- Wasteland Hide Footguards
+								i(83196),	-- Wasteland Ringmail Sabatons
+								i(83197),	-- Wasteland Burnished Greaves
+								i(83198),	-- Wasteland Silk Treads
+								i(83199),	-- Wasteland Leather Boots
+								i(83200),	-- Wasteland Chain Sabatons
+								i(83201),	-- Wasteland Heavy Warboots
+								i(83202),	-- Wasteland Armored Warboots
+								i(83203),	-- Wasteland Satin Cord
+								i(83204),	-- Wasteland Hide Belt
+								i(83205),	-- Wasteland Ringmail Waistguard
+								i(83206),	-- Wasteland Burnished Clasp
+								i(83207),	-- Wasteland Silk Cord
+								i(83208),	-- Wasteland Leather Belt
+								i(83209),	-- Wasteland Chain Links
+								i(83210),	-- Wasteland Heavy Girdle
+								i(83211),	-- Wasteland Armored Girdle
+								i(83212),	-- Wasteland Satin Gloves
+								i(83213),	-- Wasteland Hide Gloves
+								i(83214),	-- Wasteland Ringmail Gauntlets
+								i(83215),	-- Wasteland Burnished Gloves
+								i(83216),	-- Wasteland Silk Handguards
+								i(83217),	-- Wasteland Leather Gloves
+								i(83218),	-- Wasteland Chain Gauntlets
+								i(83219),	-- Wasteland Heavy Gauntlets
+								i(83220),	-- Wasteland Armored Gauntlets
+								i(83221),	-- Wasteland Satin Cuffs
+								i(83222),	-- Wasteland Hide Bindings
+								i(83223),	-- Wasteland Ringmail Armbands
+								i(83224),	-- Wasteland Burnished Bracers
+								i(83225),	-- Wasteland Silk Cuffs
+								i(83226),	-- Wasteland Leather Armwraps
+								i(83227),	-- Wasteland Chain Wristguards
+								i(83228),	-- Wasteland Heavy Armplates
+								i(83229),	-- Wasteland Armored Bracers
+								i(83255),	-- Wasteland Shawl
+								i(83256),	-- Wasteland Drape
+								i(83257),	-- Wasteland Cape
+								i(83258),	-- Wasteland Manteau
+								i(83259),	-- Wasteland Cloak
+								i(83260),	-- Wasteland Meditation Staff
+								i(83261),	-- Wasteland Diviner's Rod
+								i(83262),	-- Wasteland Combat Staff
+								i(83263),	-- Wasteland Battlemace
+								i(83264),	-- Wasteland Handaxe
+								i(83265),	-- Wasteland Crossbow
+								i(83266),	-- Wasteland Saber
+								i(83267),	-- Wasteland Scepter
+								i(83268),	-- Wasteland Dagger
+								i(83269),	-- Wasteland Smasher
+								i(83270),	-- Wasteland Greatsword
+								i(83271),	-- Wasteland Mace
+								i(83272),	-- Wasteland Barrier
+								i(83273),	-- Wasteland Shield
+								i(83274),	-- Wasteland Blade
+								i(83275),	-- Wasteland Axe
+							},
 						}),
 						{	-- Lorewalker Huynh <Inscription Trainer>
 							["npcID"] = 64691,	-- Lorewalker Huynh <Inscription Trainer>
