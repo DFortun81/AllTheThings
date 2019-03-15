@@ -333,7 +333,18 @@ namespace Parser_V2
             foreach (var item in Items.AllItemsWithoutReferences)
             {
                 TierList tier;
-                if (item.TryGetValue("itemID", out object itemIDRef))
+                if (item.TryGetValue("lvl", out object lvlRef) && lvlRef is int level)
+                {
+                    if (level < 61) tier = tierLists[1]; // Classic
+                    else if (level < 71) tier = tierLists[2];   // Burning Crusade
+                    else if (level < 81) tier = tierLists[3];   // Wrath of the Lich King
+                    else if (level < 86) tier = tierLists[4];   // Cataclysm
+                    else if (level < 91) tier = tierLists[5];   // Mists of Pandaria
+                    else if (level < 101) tier = tierLists[6];   // Warlords of Draenor
+                    else if (level < 111) tier = tierLists[7];   // Legion
+                    else tier = tierLists[8];   // Battle For Azeroth
+                }
+                else if (item.TryGetValue("itemID", out object itemIDRef))
                 {
                     var itemID = Convert.ToInt32(itemIDRef);
                     if (itemID < 22727) tier = tierLists[1]; // Classic

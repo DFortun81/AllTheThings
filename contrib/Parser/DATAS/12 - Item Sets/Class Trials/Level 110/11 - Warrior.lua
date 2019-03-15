@@ -28,7 +28,7 @@ _.GearSets =
 						},
 						{	-- Oathsworn Faceguard
 							["itemID"] = 154041,	-- Oathsworn Faceguard
-							["u"] = 1,
+							["u"] = 2, -- Only available if you boosted a Protection Warrior. [Crieve's Warrior "Imatarp".]
 						},
 						{	-- Oathsworn Helm
 							["itemID"] = 154029,	-- Oathsworn Helm
@@ -38,32 +38,32 @@ _.GearSets =
 						},
 						{	-- Oathsworn Amulet
 							["itemID"] = 154043,	-- Oathsworn Amulet
-							["u"] = 1,
+							["u"] = 2, -- Only available if you boosted a Protection Warrior. [Crieve's Warrior "Imatarp".]
 						},
 						{	-- Oathsworn Pauldrons
 							["itemID"] = 154031,	-- Oathsworn Pauldrons
 						},
 						{	-- Oathsworn Shoulderguards
 							["itemID"] = 154048,	-- Oathsworn Shoulderguards
-							["u"] = 1,
+							["u"] = 2, -- Only available if you boosted a Protection Warrior. [Crieve's Warrior "Imatarp".]
 						},
 						{	-- Oathsworn Cloak of Battle
 							["itemID"] = 154119,	-- Oathsworn Cloak of Battle
 						},
 						{	-- Oathsworn Cloak of Stoicism
 							["itemID"] = 154038,	-- Oathsworn Cloak of Stoicism
-							["u"] = 1,
+							["u"] = 2, -- Only available if you boosted a Protection Warrior. [Crieve's Warrior "Imatarp".]
 						},
 						{	-- Oathsworn Breastplate
 							["itemID"] = 154026,	-- Oathsworn Breastplate
 						},
 						{	-- Oathsworn Chestguard
 							["itemID"] = 154037,	-- Oathsworn Chestguard
-							["u"] = 1,
+							["u"] = 2, -- Only available if you boosted a Protection Warrior. [Crieve's Warrior "Imatarp".]
 						},
 						{	-- Oathsworn Armguards
 							["itemID"] = 154050,	-- Oathsworn Armguards
-							["u"] = 1,
+							["u"] = 2, -- Only available if you boosted a Protection Warrior. [Crieve's Warrior "Imatarp".]
 						},
 						{	-- Oathsworn Vambraces
 							["itemID"] = 154033,	-- Oathsworn Vambraces
@@ -73,25 +73,25 @@ _.GearSets =
 						},
 						{	-- Oathsworn Handguards
 							["itemID"] = 154040,	-- Oathsworn Handguards
-							["u"] = 1,
+							["u"] = 2, -- Only available if you boosted a Protection Warrior. [Crieve's Warrior "Imatarp".]
 						},
 						{	-- Oathsworn Girdle
 							["itemID"] = 154032,	-- Oathsworn Girdle
 						},
 						{	-- Oathsworn Waistband
 							["itemID"] = 154049,	-- Oathsworn Waistband
-							["u"] = 1,
+							["u"] = 2, -- Only available if you boosted a Protection Warrior. [Crieve's Warrior "Imatarp".]
 						},
 						{	-- Oathsworn Legguards
 							["itemID"] = 154042,	-- Oathsworn Legguards
-							["u"] = 1,
+							["u"] = 2, -- Only available if you boosted a Protection Warrior. [Crieve's Warrior "Imatarp".]
 						},
 						{	-- Oathsworn Legplates
 							["itemID"] = 154030,	-- Oathsworn Legplates
 						},
 						{	-- Oathsworn Greaves
 							["itemID"] = 154039,	-- Oathsworn Greaves
-							["u"] = 1,
+							["u"] = 2, -- Only available if you boosted a Protection Warrior. [Crieve's Warrior "Imatarp".]
 						},
 						{	-- Oathsworn Sabatons
 							["itemID"] = 154027,	-- Oathsworn Sabatons
@@ -101,46 +101,28 @@ _.GearSets =
 						},
 						{	-- Oathsworn Band of Stoicism
 							["itemID"] = 154045,	-- Oathsworn Band of Stoicism
-							["u"] = 1,
+							["u"] = 2, -- Only available if you boosted a Protection Warrior. [Crieve's Warrior "Imatarp".]
 						},
 						{	-- Oathsworn Ring of Might
 							["itemID"] = 154114,	-- Oathsworn Ring of Might
 						},
 						{	-- Oathsworn Ring of Stoicism
 							["itemID"] = 154046,	-- Oathsworn Ring of Stoicism
-							["u"] = 1,
-						},
-						{	-- Oathsworn Stone of Battle
-							["itemID"] = 154117,	-- Oathsworn Stone of Battle
+							["u"] = 2, -- Only available if you boosted a Protection Warrior. [Crieve's Warrior "Imatarp".]
 						},
 						{	-- Oathsworn Defender Idol
 							["itemID"] = 154044,	-- Oathsworn Defender Idol
-							["u"] = 1,
+							["u"] = 2, -- Only available if you boosted a Protection Warrior. [Crieve's Warrior "Imatarp".]
 						},
 						{	-- Oathsworn Defender Stone
 							["itemID"] = 154047,	-- Oathsworn Defender Stone
-							["u"] = 1,
+							["u"] = 2, -- Only available if you boosted a Protection Warrior. [Crieve's Warrior "Imatarp".]
 						},
 						{	-- Oathsworn Idol of Battle
 							["itemID"] = 154116,	-- Oathsworn Idol of Battle
 						},
-						{	-- Mistdancer Defender Stone
-							["itemID"] = 153834,	-- Mistdancer Defender Stone
-							["u"] = 1,
-						},
-						{	-- Mistdancer Stone of Rage
-							["itemID"] = 153864,	-- Mistdancer Stone of Rage
-						},
-						{	-- Mistdancer Stone of Wisdom
-							["itemID"] = 153854,	-- Mistdancer Stone of Wisdom
-							["u"] = 1,
-						},
-						{	-- Mistdancer Idol of Rage
-							["itemID"] = 153860,	-- Mistdancer Idol of Rage
-						},
-						{	-- Mistdancer Idol of Wisdom
-							["itemID"] = 153849,	-- Mistdancer Idol of Wisdom
-							["u"] = 1,
+						{	-- Oathsworn Stone of Battle
+							["itemID"] = 154117,	-- Oathsworn Stone of Battle
 						},
 					},					
 				}),	
