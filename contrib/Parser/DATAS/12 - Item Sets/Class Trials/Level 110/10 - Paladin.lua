@@ -25,162 +25,162 @@ _.GearSets =
 								},
 							},
 						},
-						{	-- Sunsoul Warmaul	*LA3010
+						{	-- Sunsoul Warmaul
 							["itemID"] = 153893,	-- Sunsoul Warmaul
 						},
-						{	-- Sunsoul Faceguard [NYI]
+						{	-- Sunsoul Faceguard
 							["itemID"] = 153904,	-- Sunsoul Faceguard
-							["u"] = 1, 				-- Not available	
+							["u"] = 2, -- Only available if you boosted a Protection Paladin.
 						},
-						{	-- Sunsoul Headpiece [NYI]
+						{	-- Sunsoul Headpiece
 							["itemID"] = 153879,	-- Sunsoul Headpiece
-							["u"] = 1, 				-- Not available	
+							["u"] = 2, -- Only available if you boosted a Holy Paladin.
 						},
-						{	-- Sunsoul Helm	*LA3010
+						{	-- Sunsoul Helm
 							["itemID"] = 153870,	-- Sunsoul Helm
 						},
-						{	-- Sunsoul Necklace [NYI]
-							["itemID"] = 153881,	-- Sunsoul Necklace
-							["u"] = 1, 				-- Not available	
+						{	-- Sunsoul Amulet
+							["itemID"] = 153906,	-- Sunsoul Amulet
+							["u"] = 2, -- Only available if you boosted a Protection Paladin.
 						},
-						{	-- Sunsoul Pendant	*LA3010
+						{	-- Sunsoul Necklace
+							["itemID"] = 153881,	-- Sunsoul Necklace
+							["u"] = 2, -- Only available if you boosted a Holy Paladin.
+						},
+						{	-- Sunsoul Pendant
 							["itemID"] = 153895,	-- Sunsoul Pendant
 						},
-						{	-- Sunsoul Amulet [NYI]
-							["itemID"] = 153906,	-- Sunsoul Amulet
-							["u"] = 1, 				-- Not available	
-						},
-						{	-- Sunsoul Pauldrons	*LA3010
+						{	-- Sunsoul Pauldrons
 							["itemID"] = 153872,	-- Sunsoul Pauldrons
 						},
-						{	-- Sunsoul Shoulderguards [NYI]
+						{	-- Sunsoul Shoulderguards
 							["itemID"] = 153911,	-- Sunsoul Shoulderguards
-							["u"] = 1, 				-- Not available	
+							["u"] = 2, -- Only available if you boosted a Protection Paladin.
 						},
-						{	-- Sunsoul Spaulders [NYI]
+						{	-- Sunsoul Spaulders
 							["itemID"] = 153886,	-- Sunsoul Spaulders
-							["u"] = 1, 				-- Not available	
+							["u"] = 2, -- Only available if you boosted a Holy Paladin.
 						},
-						{	-- Sunsoul Cloak of Battle	*LA3010
+						{	-- Sunsoul Cloak of Battle
 							["itemID"] = 153894,	-- Sunsoul Cloak of Battle
 						},
-						{	-- Sunsoul Cloak of Stoicism [NYI]
+						{	-- Sunsoul Cloak of Stoicism
 							["itemID"] = 153901,	-- Sunsoul Cloak of Stoicism
-							["u"] = 1, 				-- Not available	
+							["u"] = 2, -- Only available if you boosted a Protection Paladin.
 						},
-						{	-- Sunsoul Cloak of Wisdom [NYI]
+						{	-- Sunsoul Cloak of Wisdom
 							["itemID"] = 153876,	-- Sunsoul Cloak of Wisdom
-							["u"] = 1, 				-- Not available	
+							["u"] = 2, -- Only available if you boosted a Holy Paladin.
 						},
-						{	-- Sunsoul Battleplate	*LA3010
+						{	-- Sunsoul Battleplate
 							["itemID"] = 153867,	-- Sunsoul Battleplate
 						},
-						{	-- Sunsoul Breastplate [NYI]
+						{	-- Sunsoul Breastplate
 							["itemID"] = 153875,	-- Sunsoul Breastplate
-							["u"] = 1, 				-- Not available	
+							["u"] = 2, -- Only available if you boosted a Holy Paladin.
 						},
-						{	-- Sunsoul Chestguard [NYI]
+						{	-- Sunsoul Chestguard
 							["itemID"] = 153900,	-- Sunsoul Chestguard
-							["u"] = 1, 				-- Not available	
+							["u"] = 2, -- Only available if you boosted a Protection Paladin.
 						},
-						{	-- Sunsoul Armguards [NYI]
+						{	-- Sunsoul Armguards
 							["itemID"] = 153913,	-- Sunsoul Armguards
-							["u"] = 1, 				-- Not available	
+							["u"] = 2, -- Only available if you boosted a Protection Paladin.
 						},
-						{	-- Sunsoul Armplates [NYI]
+						{	-- Sunsoul Armplates
 							["itemID"] = 153888,	-- Sunsoul Armplates
-							["u"] = 1, 				-- Not available	
+							["u"] = 2, -- Only available if you boosted a Holy Paladin.
 						},
-						{	-- Sunsoul Vambraces	*LA3010
+						{	-- Sunsoul Vambraces
 							["itemID"] = 153874,	-- Sunsoul Vambraces
 						},
 						{	-- Sunsoul Gauntlets
-							["itemID"] = 153869,	-- Sunsoul Gauntlets	*LA3010
+							["itemID"] = 153869,	-- Sunsoul Gauntlets
 						},
-						{	-- Sunsoul Gloves [NYI]
+						{	-- Sunsoul Gloves
 							["itemID"] = 153878,	-- Sunsoul Gloves
-							["u"] = 1, 				-- Not available	
+							["u"] = 2, -- Only available if you boosted a Holy Paladin.
 						},
-						{	-- Sunsoul Handguards [NYI]
+						{	-- Sunsoul Handguards
 							["itemID"] = 153903,	-- Sunsoul Handguards
-							["u"] = 1, 				-- Not available	
+							["u"] = 2, -- Only available if you boosted a Protection Paladin.
 						},
-						{	-- Sunsoul Belt [NYI]
+						{	-- Sunsoul Belt
 							["itemID"] = 153887,	-- Sunsoul Belt
-							["u"] = 1, 				-- Not available	
+							["u"] = 2, -- Only available if you boosted a Protection Paladin.
 						},
 						{	-- Sunsoul Girdle
-							["itemID"] = 153873,	-- Sunsoul Girdle	*LA3010
+							["itemID"] = 153873,	-- Sunsoul Girdle
 						},
-						{	-- Sunsoul Waistband [NYI]
+						{	-- Sunsoul Waistband
 							["itemID"] = 153912,	-- Sunsoul Waistband
-							["u"] = 1, 				-- Not available	
+							["u"] = 2, -- Only available if you boosted a Holy Paladin.
 						},
-						{	-- Sunsoul Leggings [NYI]
+						{	-- Sunsoul Leggings
 							["itemID"] = 153880,	-- Sunsoul Leggings
-							["u"] = 1, 				-- Not available	
+							["u"] = 2, -- Only available if you boosted a Holy Paladin.
 						},
-						{	-- Sunsoul Legguards [NYI]
+						{	-- Sunsoul Legguards
 							["itemID"] = 153905,	-- Sunsoul Legguards
-							["u"] = 1, 				-- Not available	
+							["u"] = 2, -- Only available if you boosted a Protection Paladin.
 						},
-						{	-- Sunsoul Legplates	*LA3010
+						{	-- Sunsoul Legplates
 							["itemID"] = 153871,	-- Sunsoul Legplates
 						},
-						{	-- Sunsoul Boots [NYI]
+						{	-- Sunsoul Boots
 							["itemID"] = 153877,	-- Sunsoul Boots
-							["u"] = 1, 				-- Not available	
+							["u"] = 2, -- Only available if you boosted a Holy Paladin.
 						},
-						{	-- Sunsoul Greaves [NYI]
+						{	-- Sunsoul Greaves
 							["itemID"] = 153902,	-- Sunsoul Greaves
-							["u"] = 1, 				-- Not available	
+							["u"] = 2, -- Only available if you boosted a Protection Paladin.
 						},
-						{	-- Sunsoul Sabatons	*LA3010
+						{	-- Sunsoul Sabatons
 							["itemID"] = 153868,	-- Sunsoul Sabatons
 						},
-						{	-- Sunsoul Band of Might	*LA3010
+						{	-- Sunsoul Band of Might
 							["itemID"] = 153897,	-- Sunsoul Band of Might
 						},
-						{	-- Sunsoul Band of Stoicism [NYI]
+						{	-- Sunsoul Band of Stoicism
 							["itemID"] = 153909,	-- Sunsoul Band of Stoicism
-							["u"] = 1, 				-- Not available	
+							["u"] = 2, -- Only available if you boosted a Protection Paladin.
 						},
-						{	-- Sunsoul Band of Wisdom [NYI]
+						{	-- Sunsoul Band of Wisdom
 							["itemID"] = 153884,	-- Sunsoul Band of Wisdom
-							["u"] = 1, 				-- Not available	
+							["u"] = 2, -- Only available if you boosted a Holy Paladin.
 						},
-						{	-- Sunsoul Ring of Might	*LA3010
+						{	-- Sunsoul Ring of Might
 							["itemID"] = 153896,	-- Sunsoul Ring of Might
 						},
-						{	-- Sunsoul Ring of Stoicism [NYI]
+						{	-- Sunsoul Ring of Stoicism
 							["itemID"] = 153908,	-- Sunsoul Ring of Stoicism
-							["u"] = 1, 				-- Not available	
+							["u"] = 2, -- Only available if you boosted a Protection Paladin.
 						},
-						{	-- Sunsoul Ring of Wisdom [NYI]
+						{	-- Sunsoul Ring of Wisdom
 							["itemID"] = 153883,	-- Sunsoul Ring of Wisdom
-							["u"] = 1, 				-- Not available	
+							["u"] = 2, -- Only available if you boosted a Holy Paladin.
 						},
-						{	-- Sunsoul Stone of Battle	*LA3010
+						{	-- Sunsoul Stone of Battle
 							["itemID"] = 153898,	-- Sunsoul Stone of Battle
 						},
-						{	-- Sunsoul Stone of Wisdom [NYI]
+						{	-- Sunsoul Stone of Wisdom
 							["itemID"] = 153885,	-- Sunsoul Stone of Wisdom
-							["u"] = 1, 				-- Not available	
+							["u"] = 2, -- Only available if you boosted a Holy Paladin.
 						},
-						{	-- Sunsoul Idol of Battle	*LA3010
+						{	-- Sunsoul Idol of Battle
 							["itemID"] = 153899,	-- Sunsoul Idol of Battle
 						},
-						{	-- Sunsoul Idol of Wisdom [NYI]
+						{	-- Sunsoul Idol of Wisdom
 							["itemID"] = 153882,	-- Sunsoul Idol of Wisdom
-							["u"] = 1, 				-- Not available	
+							["u"] = 2, -- Only available if you boosted a Holy Paladin.
 						},
-						{	-- Sunsoul Defender Idol [NYI]
+						{	-- Sunsoul Defender Idol
 							["itemID"] = 153907,	-- Sunsoul Defender Idol
-							["u"] = 1, 				-- Not available	
+							["u"] = 2, -- Only available if you boosted a Protection Paladin.
 						},
-						{	-- Sunsoul Defender Stone [NYI]
+						{	-- Sunsoul Defender Stone
 							["itemID"] = 153910,	-- Sunsoul Defender Stone
-							["u"] = 1, 				-- Not available	
+							["u"] = 2, -- Only available if you boosted a Protection Paladin.
 						},
 					},
 					["classes"] = { 2 }
