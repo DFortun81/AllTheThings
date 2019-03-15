@@ -151,7 +151,13 @@ _.ExpansionFeatures =
 					},
 					{	-- Heroic: Dread Chain	
 						["achievementID"] = 13096,	-- Heroic: Dread Chain
-					},		
+					},	
+					{	-- Heroic: Havenswood
+						["achievementID"] = 13397,	-- Heroic: Havenswood
+					},
+					{	-- Heroic: Jorundall
+						["achievementID"] = 13394,	-- Heroic: Jorundall
+					},					
 					{	-- Heroic: Molten Cay	
 						["achievementID"] = 13100,	-- Heroic: Molten Cay
 					},		
@@ -264,7 +270,13 @@ _.ExpansionFeatures =
 						["g"] = {
 							{	-- Mythic: Dread Chain	
 								["achievementID"] = 13097,	-- Mythic: Dread Chain
-							},		
+							},
+							{	-- Mythic: Havenswood	
+								["achievementID"] = 13398,	-- Mythic: Havenswood
+							},
+							{	-- Mythic: Jorundall	
+								["achievementID"] = 13395,	-- Mythic: Jorundall
+							},							
 							{	-- Mythic: Molten Cay	
 								["achievementID"] = 13101,	-- Mythic: Molten Cay
 							},		
@@ -293,7 +305,13 @@ _.ExpansionFeatures =
 							},		
 							{	-- Clash at the Cay	
 								["achievementID"] = 13102,	-- Clash at the Cay
-							},		
+							},
+							{	-- Havenswood Hero
+								["achievementID"] = 13400,	-- Havenswood Hero
+							},
+							{	-- Jorundall Justice
+								["achievementID"] = 13399,	-- Jorundall Justice
+							},							
 							{	-- Mire Marauder	
 								["achievementID"] = 13106,	-- Mire Marauder
 							},		
@@ -330,11 +348,17 @@ _.ExpansionFeatures =
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
 							{	-- Astralite Visara	
+								["criteriaID"] = 19,	-- Airyn Swiftfeet
+							},	
+							{	-- Astralite Visara	
 								["criteriaID"] = 7,	-- Astralite Visara
 							},		
 							{	-- Berserker Zar'ri	
 								["criteriaID"] = 13,	-- Berserker Zar'ri
-							},		
+							},
+							{	-- Brother Bruen	
+								["criteriaID"] = 20,	-- Brother Bruen
+							},							
 							{	-- Captain Greenbelly	
 								["criteriaID"] = 4,	-- Captain Greenbelly
 							},		
@@ -344,9 +368,12 @@ _.ExpansionFeatures =
 							{	-- Gazlowe	
 								["criteriaID"] = 1,	-- Gazlowe
 							},		
+							{	-- Lady Tamakeen	
+								["criteriaID"] = 21,	-- Lady Tamakeen
+							},
 							{	-- Lady Sena	
 								["criteriaID"] = 2,	-- Lady Sena
-							},		
+							},							
 							{	-- Mahna Flamewhisper	
 								["criteriaID"] = 16,	-- Mahna Flamewhisper
 							},		
@@ -397,7 +424,10 @@ _.ExpansionFeatures =
 							},		
 							{	-- Briona the Bloodthirsty	
 								["criteriaID"] = 1,	-- Briona the Bloodthirsty
-							},		
+							},	
+							{	-- Charg "The Boisterous"	
+								["criteriaID"] = 19,	-- Charg "The Boisterous"
+							},							
 							{	-- Dizzy Dina	
 								["criteriaID"] = 10,	-- Dizzy Dina
 							},		
@@ -412,7 +442,13 @@ _.ExpansionFeatures =
 							},		
 							{	-- Gunnolf the Ferocious	
 								["criteriaID"] = 17,	-- Gunnolf the Ferocious
-							},		
+							},
+							{	-- Nagtar Wolfsbane	
+								["criteriaID"] = 20,	-- Nagtar Wolfsbane
+							},
+							{	-- Ranah Saberclaw	
+								["criteriaID"] = 21,	-- Ranah Saberclaw
+							},
 							{	-- Raul the Tenacious	
 								["criteriaID"] = 18,	-- Raul the Tenacious
 							},		
