@@ -20,7 +20,7 @@ _.Instances =
 					},
 					{	-- Supreme Lord Kazzak
 						["encounterID"] = 1452,	-- Supreme Lord Kazzak
-						["coord"] = { 47.1, 21.5, 534 },
+						["coord"] = { 47.5, 22.1, 534 },
 					},
 					{	-- Tarlna the Ageless
 						["encounterID"] = 1211,	-- Tarlna the Ageless
