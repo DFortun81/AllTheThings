@@ -700,6 +700,12 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
 					},
+					{	-- A One-Way Ticket to the Heart
+						["questID"] = 54964,
+						["qg"] = 149823,	-- Magni Bronzebeard
+						["coord"] = { 52.3, 68.6, 1382 },
+						["sourceQuest"] = 54940,	-- Necessity is the MOTHER
+					},
 					{	-- All Hope is Lost
 						["questID"] = 48857,
 						["qg"] = 127212,	-- Ka'dran
@@ -870,6 +876,12 @@ _.Zones =
 						["questID"] = 47996,
 						["icon"] = "Interface\\Icons\\Ability_Warrior_OffensiveStance", -- Let's make the bonus objective icon look pretty
 					},
+					{	-- Necessity is the MOTHER
+						["questID"] = 54940,
+						["qg"] = 149823,
+						["coord"] = { 47.6, 16.2, 1381, },
+						["sourceQuest"] = 54939,	-- Stubborn as a Bronzebeard
+					},
 					{	-- No Problem Tar Can't Solve
 						["questID"] = 49776,
 						["qg"] = 131231,	-- 
@@ -982,6 +994,12 @@ _.Zones =
 					{	-- Stopping Zardrax
 						["questID"] = 48852,
 						["sourceQuest"] = 48854,	-- Offer of Power
+					},
+					{	-- Stubborn as a Bronzebeard
+						["questID"] = 54939,
+						["qg"] = 149867,	-- Magni Bronzebeard
+						["coord"] = { 57.8, 50.4, 863 },
+						["sourceQuest"] = 54938,	-- A Brother's Help
 					},
 					{	-- The Fall of Kel'vax
 						["questID"] = 48480,
