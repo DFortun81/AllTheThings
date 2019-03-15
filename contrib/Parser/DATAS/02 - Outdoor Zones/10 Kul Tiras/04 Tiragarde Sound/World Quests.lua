@@ -40,7 +40,7 @@ _.Zones =
 									["races"] = HORDE_ONLY,
 								}),
 								{	-- Calligraphy
-									-- [WHEN THIS QUEST IS UP WRITE WHAT SHAPE IT MADE YOU DRAW HERE.]
+									-- On 3/14 this quest was for "Circle"
 									-- Check back to see if each quest ID has static shape
 									-- If shape doesn't change each time the quest comes up we can remove the criteria where they don't apply
 									["questID"] = 55340,	-- Calligraphy

@@ -67,9 +67,6 @@ _.WorldDrops =
 					{	-- Torta's Oversized Choker
 						["itemID"] = 37794,	-- Torta's Oversized Choker
 					},
-					{	-- Twisted Puzzle-Ring
-						["itemID"] = 37822,	-- Twisted Puzzle-Ring
-					},
 					i(37748),	-- Winterfall's Frozen Necklace
 				}),
 				n(-321, { -- Shoulder
@@ -311,6 +308,9 @@ _.WorldDrops =
 						["itemID"] = 36426,	-- Stirrup Ring
 					},
 					i(37751),	-- Tooga's Lost Toennail
+					{	-- Twisted Puzzle-Ring
+						["itemID"] = 37822,	-- Twisted Puzzle-Ring
+					},
 				}),
 				filter(53, {	-- Trinket
 					i(37835),	-- Je'Tze's Bell
