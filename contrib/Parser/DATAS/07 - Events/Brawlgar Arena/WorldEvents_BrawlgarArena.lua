@@ -6,7 +6,7 @@ _.WorldEvents =
 	m(503, {	-- Brawlgar Arena
 		["groups"] = {
 			n(-2, {	-- Vendors
-				h(n(68364, {	-- Paul North <Brawl'gar Arena Quartermaster>
+				h(n(68364, {	-- Paul North <Brawl'gar Arena Quartermaster>  This vendor will change if you start the murder questline  New vendor = 145695 "Bad Luck" Symmes <Brawl'gar Arena Quartermaster>
 					["groups"]	= {
 						i(93025),	-- Clock'em Pet
 						i(144394),	-- Tylarr Gronnden Pet
@@ -26,6 +26,22 @@ _.WorldEvents =
 						i(98091),	-- Last Seasons Shirt
 						i(98092),	-- Digmaster's Bodysleeve
 						i(98093),	-- Sightless Mantle
+						i(167812),  -- Brawlers Guild Tabard
+						{ -- Ensemble: Brawlers Garb
+							["groups"] = {
+								i(167825), -- Brawler's Headgear
+								i(167827), -- Brawler's Shoulderpads
+								i(167822), -- Brawler's Harness
+								i(167829), -- Brawler's Bracer Chains
+								i(167824), -- Brawler's Gloves
+								i(167828), -- Brawler's Heavy Belt
+								i(167826), -- Brawler's Leggings
+								i(167823), -- Brawler's Footpads
+							},
+							["ignoreBonus"] = true,
+							["itemID"] = 167892,
+							["classes"] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 },
+						},
 						i(127773, {	-- Gemcutter Module: Mastery
 							["spellID"] = 187636,
 							["requireSkill"] = 755,	-- Jewelcrafting

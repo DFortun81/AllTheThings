@@ -6,7 +6,7 @@ _.WorldEvents =
 	n(-496, { -- Bizmo's Brawlpub
 		["groups"] = {	
 			n(-2, {	-- Vendors
-				n(68363, {	-- Quackenbush <Bizmo's Brawlpub Quartermaster>
+				n(68363, {	-- Quackenbush <Bizmo's Brawlpub Quartermaster>  This vendor will change if you start the murder questline  New vendor = 151941 Dershway the Triggered <Bizmo's Brawlpub Quartermaster>
 					["groups"]	= {
 						i(93025),	-- Clock'em Pet
 						i(144394),	-- Tylarr Gronnden Pet
@@ -26,6 +26,22 @@ _.WorldEvents =
 						i(98091),	-- Last Seasons Shirt
 						i(98092),	-- Digmaster's Bodysleeve
 						i(98093),	-- Sightless Mantle
+						i(167811),  -- Brawlers Guild Tabard
+						{ -- Ensemble: Brawlers Garb
+							["groups"] = {
+								i(167817), -- Brawler's Headgear
+								i(167819), -- Brawler's Shoulderpads
+								i(167813), -- Brawler's Harness
+								i(167821), -- Brawler's Bracer Chains
+								i(167816), -- Brawler's Gloves
+								i(167820), -- Brawler's Heavy Belt
+								i(167818), -- Brawler's Leggings
+								i(167815), -- Brawler's Footpads
+							},
+							["ignoreBonus"] = true,
+							["itemID"] = 167891,
+							["classes"] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 },
+						},
 						i(127773, {	-- Gemcutter Module: Mastery
 							["spellID"] = 187636,
 							["requireSkill"] = 755,	-- Jewelcrafting
