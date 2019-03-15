@@ -10,96 +10,89 @@ _.Zones =
 					gsh(1522, { -- Allied Races 	-- This belongs to black rock depths where this quest line takes place, but I at least wanted to get this in first.
 						["groups"] = {
 							qg(126065, qh(50242, {	-- A Choice for Allies
-								n(-245, {	-- Mag'har Orc
-									["groups"] = {
-										q(51485, {	-- For the Horde
-											["groups"] = {
-												i(161328),	-- Tabard of the Mag'har Clans
-												i(157028),	-- Letter from Lady Sylvannas
-											},
-											["qg"] = 143845,	--  Overlord Geya'rah
-											["coord"] = { 70.5, 44.5 },
-										}),
-										q(53502, {	-- Stranger in a Strange Land
-											["qg"] = 133407,	-- Ambassador Blackguard
-											["coord"] = { 39.4, 79.2 },
-											["sourceQuests"] = {
-												51485,	-- For the Horde
-											},
-										}),
-										q(51479, {	-- The Uncorrupted
-											["qg"] = 143845,	-- Overlord Geya'rah
-										--	["coord"] = { 39.4, 79.2 },
-											["groups"] = {
-												i(161330),	-- Mag'har Direwolf
-											},
-										}),
-									},
-								}),
-										nh(-209, {	-- Highmountain Tauren
-											q(48066, { -- A Feast for Our Kin
-												["qg"] = 125285, -- Baine Bloodhoof <High Chieftain>
-											}),
-											q(48067, { -- Shadow Over Thunder Bluff
-												["qg"] = 129914, -- Baine Bloodhoof <High Chieftain>
-												["sourceQuests"] = { 48066 }, --A Feast for Our Kin
-											}),
-											q(49756, { -- Dark Forces
-												["qg"] = 130773, -- Baine Bloodhoof <High Chieftain>
-												["sourceQuests"] = { 48067 }, -- Shadow Over Thunder Bluff
-											}),
-											q(48079, { -- Return to Highmountain
-												["qg"] = 130773, -- Baine Bloodhoof <High Chieftain>
-												["sourceQuests"] = { 49756 }, -- Dark Forces
-											}),
-											q(41884, { -- Dark Tales
-												["qg"] = 105085, -- Spiritwalker Graysky
-												["sourceQuests"] = { 48079 }, -- Return to Highmountain
-											}),
-											q(41764, { -- Walking in Their Footsteps
-												["qg"] = 125454, -- Spiritwalker Graysky
-												["sourceQuests"] = { 41884 }, -- Dark Tales
-											}),
-											q(48185, { -- Shadow of the Sepulcher
-												["qg"] = 125454, -- Spiritwalker Graysky
-												["sourceQuests"] = { 41764 }, -- Walking in Their Footsteps
-											}),
-											q(41799, { -- Minions of the Darkness
-												["qg"] = 125459, -- Spiritwalker Graysky
-												["sourceQuests"] = { 48185 }, -- Shadows of the Sepulcher
-											}),
-											q(48190, { -- Huln's Mountain
-												["qg"] = 125459, -- Spiritwalker Graysky
-												["sourceQuests"] = { 41799 }, -- Minions of the Darkness
-											}),
-											q(41800, { -- Servants of the Darkness
-												["qg"] = 125466, -- Spiritwalker Graysky
-												["sourceQuests"] = { 48190 }, -- Huln's Mountain
-											}),
-											q(48434, { -- How Fares Ebonhorn?
-												["qg"] = 125466, -- Spiritwalker Graysky
-												["sourceQuests"] = { 41800 }, -- Servants of the Darkness
-											}),
-											q(41815, { -- Curse of the Necrodark
-												["qg"] = 108434, -- Mayla Highmountain
-												["sourceQuests"] = { 48434 }, -- How Fares Ebonhorn?
-											}),
-											q(41840, { -- Ice and Shadow
-												["qg"] = 130423, -- Baine Bloodhoof <High Chieftain>
-												["sourceQuests"] = { 41815 }, -- Curse of the Necrodark
-											}),
-											q(41882, { -- Whispers of the Darnkess
-												["qg"] = 97662, -- Jale Rivermane
-												["sourceQuests"] = { 41815 }, -- Curse of the Necrodark
-											}),
-											q(41841, { -- The Final Ward
-												["qg"] = 105213, -- Spiritwalker Ebonhorn
-												["sourceQuests"] = { 41840, 41882 }, -- Ice and Shadow / Whispers of the Darkness
-											}),
-											q(48403, { -- The Darkness
-												["qg"] = 105213, -- Spiritwalker Ebonhorn
-												["sourceQuests"] = { 41841 }, -- The Final Ward
-											}),
+								nh(-209, {	-- Highmountain Tauren
+									q(48066, { -- A Feast for Our Kin
+										["qg"] = 125285, -- Baine Bloodhoof <High Chieftain>
+										["coord"] = { 38.0, 81.0, 85 },
+									}),
+									q(48067, { -- Shadow Over Thunder Bluff
+										["qg"] = 129914, -- Baine Bloodhoof <High Chieftain>
+										["coord"] = { 61.2, 51.8, 88 },
+										["sourceQuests"] = { 48066 }, -- A Feast for Our Kin
+									}),
+									q(49756, { -- Dark Forces
+										["qg"] = 130773, -- Baine Bloodhoof <High Chieftain>
+										["coord"] = { 61.2, 51.8, 88 },
+										["sourceQuests"] = { 48067 }, -- Shadow Over Thunder Bluff
+									}),
+									q(48079, { -- Return to Highmountain
+										["qg"] = 130773, -- Baine Bloodhoof <High Chieftain>
+										["coord"] = { 61.2, 51.8, 88 },
+										["sourceQuests"] = { 49756 }, -- Dark Forces
+									}),
+									q(41884, { -- Dark Tales
+										["qg"] = 105085, -- Spiritwalker Graysky
+										["coord"] = { 70.2, 72.0, 650 },
+										["sourceQuests"] = { 48079 }, -- Return to Highmountain
+									}),
+									q(41764, { -- Walking in Their Footsteps
+										["qg"] = 125454, -- Spiritwalker Graysky
+										["coord"] = { 38.6, 69.0, 650 },
+										["sourceQuests"] = { 41884 }, -- Dark Tales
+									}),
+									q(48185, { -- Shadow of the Sepulcher
+										["qg"] = 125454, -- Spiritwalker Graysky
+										["coord"] = { 38.6, 69.0, 650 },
+										["sourceQuests"] = { 41764 }, -- Walking in Their Footsteps
+									}),
+									q(41799, { -- Minions of the Darkness
+										["qg"] = 125459, -- Spiritwalker Graysky
+										["coord"] = { 57.0, 46.2, 650 },
+										["sourceQuests"] = { 48185 }, -- Shadows of the Sepulcher
+									}),
+									q(48190, { -- Huln's Mountain
+										["qg"] = 125459, -- Spiritwalker Graysky
+										["coord"] = { 57.0, 46.2, 650 },
+										["sourceQuests"] = { 41799 }, -- Minions of the Darkness
+									}),
+									q(41800, { -- Servants of the Darkness
+										["qg"] = 125466, -- Spiritwalker Graysky
+										["coord"] = { 53.2, 64.0, 650 },
+										["sourceQuests"] = { 48190 }, -- Huln's Mountain
+									}),
+									q(48434, { -- How Fares Ebonhorn?
+										["qg"] = 125466, -- Spiritwalker Graysky
+										["coord"] = { 53.2, 64.0, 650 },
+										["sourceQuests"] = { 41800 }, -- Servants of the Darkness
+									}),
+									q(41815, { -- Curse of the Necrodark
+										["qg"] = 108434, -- Mayla Highmountain
+										["coord"] = { 69.0, 70.4, 650 },
+										["sourceQuests"] = { 48434 }, -- How Fares Ebonhorn?
+									}),
+									q(41840, { -- Ice and Shadow
+										["qg"] = 130423, -- Baine Bloodhoof <High Chieftain>
+										["coord"] = { 56.4, 89.2, 650 },
+										["sourceQuests"] = { 41815 }, -- Curse of the Necrodark
+									}),
+									q(41882, { -- Whispers of the Darnkess
+										["qg"] = 97662, -- Jale Rivermane
+										["coord"] = { 56.4, 89.2, 650 },
+										["sourceQuests"] = { 41815 }, -- Curse of the Necrodark
+									}),
+									q(41841, { -- The Final Ward
+										["qg"] = 105213, -- Spiritwalker Ebonhorn
+										["coord"] = { 56.8, 92.0, 650 },
+										["sourceQuests"] = { 
+											41840,	-- Ice and Shadow
+											41882,	-- Whispers of the Darkness
+										},
+									}),
+									q(48403, { -- The Darkness
+										["qg"] = 105213, -- Spiritwalker Ebonhorn
+										["coord"] = { 56.8, 92.0, 650 },
+										["sourceQuests"] = { 41841 }, -- The Final Ward
+									}),
 									q(48433, { -- Together We Are the Horde!
 										["groups"] = {
 											ach(12245, { -- Allied Races: Highmountain Tauren
@@ -107,25 +100,266 @@ _.Zones =
 											}),
 										},
 										["qg"] = 126134, -- Baine Bloodhoof <High Chieftain>
+										["coord"] = { 56.6, 92.6, 650 },
 										["sourceQuests"] = { 48403 }, -- The Darkness
+									}),
+									-- Highmountain Tauren Starter Quest
+									q(49773, {	-- For the Horde
+										["groups"] = {
+											i(157757),	-- Highmountain Tabard
+											i(157028),	-- Letter from Lady Sylvannas
+										},
+										["qg"] = 143845,	--  Mayla Highmountain
+										["coord"] = { 46.6, 61.0, 650 },
+										["races"] = { 28 },	-- Highmountain Tauren
+									}),
+									q(50319, {	-- Stranger in a Strange Land
+										["qg"] = 133407,	-- Ambassador Blackguard
+										["coord"] = { 39.4, 79.2, 85 },
+										["sourceQuests"] = { 49773 },	-- For the Horde
+										["races"] = { 28 },	-- Highmountain Tauren
 									}),
 								}),
 								nh(-210, {	-- Nightborne
-									qg(126062, qh(49973)),	-- Thalyssra's Estate
-									qg(131478, qh(49613)),	-- Silvermoon City
-									qg(130133, qh(49354)),	-- Remember the Sunwell
-									qg(130133, qh(49614, {	-- The Nightborne
-										ach(12244, {	-- Allied Races: Nightborne
-											h(i(156487)),	-- Nightborne Manasaber
-										}),
-									})),
+									q(49973, {	-- Thalyssra's Estate
+										["qg"] = 126062,	-- Lady Liadrin
+										["coord"] = { 38.0, 80.6, 85 },
+									}),
+									q(49613, {	-- Silvermoon City	
+										["qg"] = 131478,	-- Lady Liadrin
+										["coord"] = { 65.8, 63.6, 680 },
+										["sourceQuests"] = { 49973 },	-- Thalyssra's Estate
+									}),
+									q(49354, {	-- Remember the Sunwell	
+										["qg"] = 130133,	-- Lady Liadrin
+										["coord"] = { 58.2, 19.4, 110 },
+										["sourceQuests"] = { 49613 },	-- Silvermoon City	
+									}),
+									q(49614, {	-- The Nightborne
+										["groups"] = {
+											ach(12244, {	-- Allied Races: Nightborne
+												i(156487),	-- Nightborne Manasaber
+											}),
+										},
+										["qg"] = 130133,	-- Lady Liadrin
+										["coord"] = { 58.2, 19.4, 110 },
+										["sourceQuests"] = { 49354 },	-- Remember the Sunwell	
+									}),
+									-- Nightborne Starter Quest
+									q(49933, {	-- For the Horde
+										["groups"] = {
+											i(157759),	-- Shal'dorei Tabard
+											i(157028),	-- Letter from Lady Sylvannas
+										},
+										["qg"] = 143845,	--  First Arcanist Thalyssra
+										["coord"] = { 59.4, 85.4, 680 },
+										["races"] = { 27 },	-- Nightborne
+									}),
+									q(50303, {	-- Stranger in a Strange Land
+										["qg"] = 133407,	-- Ambassador Blackguard
+										["coord"] = { 39.4, 79.2, 85 },
+										["sourceQuests"] = { 49933 },	-- For the Horde
+										["races"] = { 27 },	-- Nightborne
+									}),
+								}),
+								nh(-245, {	-- Mag'har Orc
+									q(53466, {	-- Vision of Time
+										["qg"] = 126066,	-- Eitrigg
+										["coord"] = { 37.8, 80.6, 85 },
+									}),
+									q(53467, {	-- Caverns of Time
+										["qg"] = 131443,	-- Chief Telemancer Oculeth 
+										["coord"] = { 67.0, 73.7, 1185 },
+										["sourceQuests"] = { 53466 },	-- Vision of Time
+									}),
+									q(53354, {	-- Echo of Gul'dan
+										["qg"] = 15192,	-- Anachronos
+										["coord"] = { 63.0, 57.2, 71 },
+										["sourceQuests"] = { 53467 },	-- Caverns of Time
+									}),
+									q(53353, {	-- Echo of Warlord Zaela
+										["qg"] = 143692,	-- Anachronos 
+										["coord"] = { 54.4, 50.2, 17 },
+										["sourceQuests"] = { 53354 },	-- Echo of Gul'dan
+									}),
+									q(53355, {	-- Echo of Garrosh Hellscream
+										["qg"] = 143692,	-- Anachronos 
+										["coord"] = { 68.8, 44.0, 379 },
+										["sourceQuests"] = { 53353 },	-- Echo of Warlord Zaela
+									}),	
+									q(52942, {	-- Restoring Old Bonds
+										["qg"] = 126066,	-- Eitrigg 
+										["coord"] = { 69.9, 69.4, 1185 },
+										["sourceQuests"] = { 53355 },	-- Echo of Garrosh Hellscream
+									}),
+									q(52943, {	-- Calling Out the Clans
+										["qg"] = 142422,	-- Eitrigg
+										["coord"] = { 44.8, 53.0, 543 },
+										["sourceQuests"] = { 52942 },	-- Restoring Old Bonds
+									}),
+									q(52945, {	-- Bonds Forged Through Battle
+										["qg"] = 142275,	-- Grommash Hellscream
+										["coord"] = { 45.2, 52.0, 543 },
+										["sourceQuests"] = { 52943 },	-- Calling Out the Clans
+									}),
+									q(52955, {	-- Tyranny of the Light
+										["qg"] = 137837,	-- Overlord Geya'rah
+										["coord"] = { 44.4, 71.4, 543 },
+										["sourceQuests"] = { 52945 },	-- Bonds Forged Through Battle
+									}),
+									q(51479, {	-- The Uncorrupted
+										["groups"] = {
+											ach(12518, {	-- Allied Races: Mag'har Orc
+												i(161330),	-- Mag'har Direwolf
+											}),
+										},
+										["qg"] = 143845,	-- Overlord Geya'rah
+										["coord"] = { 41.2, 16.8, 1 },
+										["sourceQuests"] = { 52955 },	-- Tyranny of the Light
+									}),
+									-- Mag'har Orc Starter Quest
+									q(51485, {	-- For the Horde
+										["groups"] = {
+											i(161328),	-- Tabard of the Mag'har Clans
+											i(157028),	-- Letter from Lady Sylvannas
+										},
+										["qg"] = 143845,	--  Overlord Geya'rah
+										["coord"] = { 70.6, 44.6, 85 },
+										["races"] = { 36 },	-- Mag'har Orc
+									}),
+									q(53502, {	-- Stranger in a Strange Land
+										["qg"] = 133407,	-- Ambassador Blackguard
+										["coord"] = { 39.4, 79.2, 85 },
+										["sourceQuests"] = { 51485 },	-- For the Horde
+										["races"] = { 36 },	-- Mag'har Orc
+									}),
+								}),
+								nh(-251, {	-- Zandalari
+									q(53831, {	-- A Royal Occasion
+										["qg"] = 133519,	-- Rokhan
+										["coord"] = { 38.2, 81.4, 85 }
+									}),
+									q(53823, {	-- A Queen's Entourage
+										["qg"] = 145414,	-- Natal'hakata
+										["coord"] = { 48.6, 22.0, 1165 },
+										["sourceQuests"] = { 53831 }, -- A Royal Occasion
+									}),
+									q(53824, {	-- The Rite of Kings and Queens
+										["qg"] = 148096,	-- High Prelate Rata
+										["coord"] = { 42.6, 22.5, 1165 },
+										["sourceQuests"] = { 53823 },	-- A Queen's Entourage
+									}),
+									q(54419, {	-- Quelling the Masses
+										["qg"] = 145360,	-- Zolani
+										["coord"] = { 40.3,12.5, 1165 },
+										["sourceQuests"] = { 53824 },	-- The Rite of Kings and Queens
+									}),
+									q(53826, {	-- The Instigator Among Us
+										["qg"] = 145360,	-- Zolani
+										["coord"] = { 40.3,12.5, 1165 },
+										["sourceQuests"] = { 53824 },	-- The Rite of Kings and Queens
+									}),
+									q(54301, {	-- Talanji's Mercy
+										["qg"] = 145359,	-- Princess Talanji
+										["coord"] = { 40.5, 11.9, 1165 },
+										["sourceQuests"] = { 
+											54419,	-- Quelling the Masses
+											53826,	-- The Instigator Among Us
+										},
+									}),
+									q(54925, {	-- Heresy!
+										["qg"] = 148096,	-- High Prelate Rata
+										["coord"] = { 40.2, 11.9, 1165 },
+										["sourceQuests"] = { 
+											54419,	-- Quelling the Masses
+											53826,	-- The Instigator Among Us
+										},
+									}),
+									q(54300, {	-- Breaking the Faith
+										["qg"] = 145360,	-- Zolani
+										["coord"] = { 40.5, 12.4, 1165 },
+										["sourceQuests"] = { 
+											54419,	-- Quelling the Masses
+											53826,	-- The Instigator Among Us
+										},
+									}),
+									q(53825, {	-- The New Zanchuli Council
+										["qg"] = 145359,	-- Princess Talanji
+										["coord"] = { 40.6, 12.0, 1165 },
+										["sourceQuests"] = { 
+											54301,	-- Talanji's Mercy
+											54925,	-- Heresy!
+											54300,	-- Breaking the Faith
+										},
+									}),
+									q(53827, {	-- The Council Has Spoken
+										["qg"] = 145359,	-- Princess Talanji
+										["coord"] = { 60.4, 38.9, 1165 },
+										["sourceQuests"] = { 53825 },	-- The New Zanchuli Council
+									}),
+									q(53828, {	-- Gaze of the Loa
+										["qg"] = 145359,	-- Princess Talanji
+										["coord"] = { 60.4, 38.9, 1165 },
+										["sourceQuests"] = { 53827 },	-- The Council Has Spoken
+									}),
+									q(54031, {	-- Gaze of the Loa: Krag'wa
+										["qg"] = 146208,	-- Krag'wa the Huge
+										["coord"] = { 44.2, 15.0, 1165 },
+										["sourceQuests"] = { 53828 },	-- Gaze of the Loa
+									}),
+									q(54033, {	-- Gaze of the Loa: Gonk
+										["qg"] = 146208,	-- Krag'wa the Huge
+										["coord"] = { 44.2, 15.0, 1165 },
+										["sourceQuests"] = { 54031 },	-- Gaze of the Loa: Krag'wa
+									}),
+									q(54032, {	-- Gaze of the Loa: Pa'ku
+										["qg"] = 146214,	-- Gonk
+										["coord"] = { 46.5, 12.0, 1165 },
+										["sourceQuests"] = { 54033 },	-- Gaze of the Loa: Gonk
+									}),
+									q(54034, {	-- Gaze of the Loa: Bwonsamdi
+										["qg"] = 146209,	-- Pa'ku <Lord of Winds>
+										["coord"] = { 44.5, 8.8, 1165 },
+										["sourceQuests"] = { 54032 },	-- Gaze of the Loa: Pa'ku
+									}),
+									q(53830, {	-- Queen of the Zandalari
+										["qg"] = 145359,	-- Princess Talanji
+										["coord"] = { 42.7, 8.7, 1165 },
+										["sourceQuests"] = { 54034 },	-- Gaze of the Loa: Bwonsamdi
+									}),
+									q(53719, {	-- Allegiance of the Zandalari
+										["groups"] = {
+											ach(13161, {	-- Allied Races: Zandalari Troll
+												i(157870),	-- Zandalari Direhorn
+											}),
+										},
+										["qg"] = 146335,	-- Queen Talanji
+										["coord"] = { 42.4, 9.2, 1165 },
+										["sourceQuests"] = { 53830 },	-- Queen of the Zandalari
+									}),
+									-- Zandalari Troll Starter Quest
+									q(55137, {	-- For the Horde
+										["groups"] = {
+											i(165001),	-- Tabard of the Zandalari
+											i(167169),	-- Letter from Lady Sylvannas
+										},
+										["qg"] = 146335,	--  Queen Talanji
+										["coord"] = { 42.2, 9.4, 1165 },
+										["races"] = { 31 },	-- Zandalari Troll
+									}),
+									q(55138, {	-- Stranger in a Strange Land
+										["qg"] = 133407,	-- Ambassador Blackguard
+										["coord"] = { 39.4, 79.2, 85 },
+										["sourceQuests"] = { 55137 },	-- For the Horde
+										["races"] = { 31 },	-- Zandalari Troll
+									}),
 								}),
 							qh(49930),	-- The Call for Allies
 							un(40, qg(126065, qh(50248))),	-- A Second Ally For the Cause
 							})),
 						},
 						["icon"] = "Interface\\Icons\\FactionChange",
-						--["lvl"] = 110,
+						--["lvl"] = 110,				
 					}),
 					q(53028, {	-- A Dying World
 						["qg"] = 140176, -- Nathanos Blightcaller
@@ -599,11 +833,6 @@ Legacy				q( 1436),	-- Alliance Relations
 						["qg"] = 88705,	-- Kranosh
 						["classes"] = { 9 },	-- Warlock
 					}),
-					q(50303, {	-- Stranger in a Strange Land
-						["qg"] = 133407,	-- Ambassador Blackguard
-						["coord"] = { 39.4, 79.5 },
-						["races"] = { 27 },	-- Nightborne
-					}),
 					q(27397, {	-- Terga's Task
 						["groups"] = {
 							i(65490),	-- Battleaxe of the Speaker
@@ -803,8 +1032,7 @@ Legacy				q( 1436),	-- Alliance Relations
 					}),
 --					qg( 3362, q( 7660)),	-- Wolf Swapping - Arctic Wolf
 --					qg( 3362, q( 7661)),	-- Wolf Swapping - Red Wolf
---					qg(3332, q( 6608, { ["requireSkill"] = 129 })),	-- You Too Good.	
---]]					
+--					qg(3332, q( 6608, { ["requireSkill"] = 129 })),	-- You Too Good.					
 				})),
 			},
 		}),
