@@ -138,7 +138,12 @@ AllTheThings.L = {
 		["WoW Anniversary"] = "Anniversary",
 		
 	};
-
+	["CUSTOM_DIFFICULTIES"] = {
+		[-1] = "Raid Finder (5.4)",
+		[-2] = "Flexible (5.4)",
+		[-3] = "Normal (5.4)",
+		[-4] = "Heroic (5.4)",
+	},
 	["FILTER_ID_TYPES"] = {
 		-- "Armor Types"
 		[1] = INVTYPE_HOLDABLE, 								-- Held in Off-Hand

@@ -3369,46 +3369,45 @@ end
 
 -- Difficulty Lib
 app.DifficultyColors = {
-	[1] = "ff1eff00",	--"Interface/Worldmap/Skull_64Green",
-	[2] = "ff0070dd",	--"Interface/Worldmap/Skull_64Blue",
-	[3] = "ff1eff00",	--"Interface/Worldmap/Skull_64Green",
-	[4] = "ff1eff00",	--"Interface/Worldmap/Skull_64Green",
-	[5] = "ff0070dd",	--"Interface/Worldmap/Skull_64Blue",
-	[6] = "ff0070dd",	--"Interface/Worldmap/Skull_64Blue",
-	[7] = "ff9d9d9d",		--"Interface/Worldmap/Skull_64Grey",
-	[9] = "ff1eff00",	--"Interface/Worldmap/Skull_64Green",
-	[14] = "ff1eff00",	--"Interface/Worldmap/Skull_64Green",
-	[15] = "ff0070dd",	--"Interface/Worldmap/Skull_64Blue",
-	[16] = "ffa335ee",	--"Interface/Worldmap/Skull_64Purple",
-	[17] = "ff9d9d9d",		--"Interface/Worldmap/Skull_64Grey",
-	[23] = "ffa335ee",	--"Interface/Worldmap/Skull_64Purple",
-	[24] = "ffe6cc80",	--"Interface/Worldmap/Skull_64Red",
-	[33] = "ffe6cc80",	--"Interface/Worldmap/Skull_64Red",
+	[2] = "ff0070dd",
+	[5] = "ff0070dd",
+	[6] = "ff0070dd",
+	[7] = "ff9d9d9d",
+	[15] = "ff0070dd",
+	[16] = "ffa335ee",
+	[17] = "ff9d9d9d",
+	[23] = "ffa335ee",
+	[24] = "ffe6cc80",
+	[33] = "ffe6cc80",
 };
 app.DifficultyIcons = {
-	[1] = "Interface\\Addons\\AllTheThings\\assets\\Normal",	--"Interface/Worldmap/Skull_64Green",
-	[2] = "Interface\\Addons\\AllTheThings\\assets\\Heroic",	--"Interface/Worldmap/Skull_64Blue",
-	[3] = "Interface\\Addons\\AllTheThings\\assets\\Normal",	--"Interface/Worldmap/Skull_64Green",
-	[4] = "Interface\\Addons\\AllTheThings\\assets\\Normal",	--"Interface/Worldmap/Skull_64Green",
-	[5] = "Interface\\Addons\\AllTheThings\\assets\\Heroic",	--"Interface/Worldmap/Skull_64Blue",
-	[6] = "Interface\\Addons\\AllTheThings\\assets\\Heroic",	--"Interface/Worldmap/Skull_64Blue",
-	[7] = "Interface\\Addons\\AllTheThings\\assets\\LFR",		--"Interface/Worldmap/Skull_64Grey",
-	[14] = "Interface\\Addons\\AllTheThings\\assets\\Normal",	--"Interface/Worldmap/Skull_64Green",
-	[15] = "Interface\\Addons\\AllTheThings\\assets\\Heroic",	--"Interface/Worldmap/Skull_64Blue",
-	[16] = "Interface\\Addons\\AllTheThings\\assets\\Mythic",	--"Interface/Worldmap/Skull_64Purple",
-	[17] = "Interface\\Addons\\AllTheThings\\assets\\LFR",		--"Interface/Worldmap/Skull_64Grey",
-	[23] = "Interface\\Addons\\AllTheThings\\assets\\Mythic",	--"Interface/Worldmap/Skull_64Purple",
-	[24] = "Interface\\Addons\\AllTheThings\\assets\\Timewalking",	--"Interface/Worldmap/Skull_64Red",
-	[33] = "Interface\\Addons\\AllTheThings\\assets\\Timewalking",	--"Interface/Worldmap/Skull_64Red",
+	[-1] = "Interface\\Addons\\AllTheThings\\assets\\LFR",
+	[-2] = "Interface\\Addons\\AllTheThings\\assets\\Normal",
+	[-3] = "Interface\\Addons\\AllTheThings\\assets\\Heroic",
+	[-4] = "Interface\\Addons\\AllTheThings\\assets\\Mythic",
+	[1] = "Interface\\Addons\\AllTheThings\\assets\\Normal",
+	[2] = "Interface\\Addons\\AllTheThings\\assets\\Heroic",
+	[3] = "Interface\\Addons\\AllTheThings\\assets\\Normal",
+	[4] = "Interface\\Addons\\AllTheThings\\assets\\Normal",
+	[5] = "Interface\\Addons\\AllTheThings\\assets\\Heroic",
+	[6] = "Interface\\Addons\\AllTheThings\\assets\\Heroic",
+	[7] = "Interface\\Addons\\AllTheThings\\assets\\LFR",
+	[11] = "Interface\\Addons\\AllTheThings\\assets\\Normal",
+	[12] = "Interface\\Addons\\AllTheThings\\assets\\Heroic",
+	[14] = "Interface\\Addons\\AllTheThings\\assets\\Normal",
+	[15] = "Interface\\Addons\\AllTheThings\\assets\\Heroic",
+	[16] = "Interface\\Addons\\AllTheThings\\assets\\Mythic",
+	[17] = "Interface\\Addons\\AllTheThings\\assets\\LFR",
+	[23] = "Interface\\Addons\\AllTheThings\\assets\\Mythic",
+	[24] = "Interface\\Addons\\AllTheThings\\assets\\Timewalking",
+	[33] = "Interface\\Addons\\AllTheThings\\assets\\Timewalking",
 };
 app.BaseDifficulty = {
 	__index = function(t, key)
 		if key == "key" then
 			return "difficultyID";
 		elseif key == "text" then
-			return GetDifficultyInfo(t.difficultyID) or "Unknown Difficulty";
-		elseif key == "name" then
-			return GetDifficultyInfo(t.difficultyID);
+			return L["CUSTOM_DIFFICULTIES"][t.difficultyID] or GetDifficultyInfo(t.difficultyID) or "Unknown Difficulty";
 		elseif key == "icon" then
 			return app.DifficultyIcons[t.difficultyID];
 		elseif key == "saved" then
@@ -3437,7 +3436,7 @@ app.BaseDifficulty = {
 			end
 		elseif key == "description" then
 			if t.difficultyID == 24 or t.difficultyID == 33 then
-				return "Timewalking difficulties needlessly create new Source IDs for items despite having the exact same name, appearance, and display in the Collections Tab.\n\nA plea to the Blizzard Devs: Please clean up the Source ID database and have your Timewalking / Titanforged item variants use the same Source ID as their base assuming the appearances and names are exactly the same. Not only will this make your database much cleaner, but it will also make Completionists excited for rather than dreading the introduction of more Timewalking content.\n\n - Crieve, the Very Bitter Full Account Completionist that had 99% Ulduar completion and now only has 59% because your team duplicated the Source IDs rather than reuse the existing one.";
+				return "Timewalking difficulties needlessly create new Source IDs for items despite having the exact same name, appearance, and display in the Collections Tab.\n\nA plea to the Blizzard Devs: Please clean up the Source ID database and have your Timewalking / Titanforged item variants use the same Source ID as their base assuming the appearances and names are exactly the same. Not only will this make your database much cleaner, but it will also make Completionists excited for rather than dreading the introduction of more Timewalking content.\n\n - Crieve, the Very Bitter Account Completionist that had 99% Ulduar completion and now only has 64% because your team duplicated the Source IDs rather than reuse the existing one.";
 			end
 		else
 			-- Something that isn't dynamic.
