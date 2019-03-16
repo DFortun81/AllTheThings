@@ -4,11 +4,19 @@
 
 _.Instances = { tier(1, {	-- Classic
 	inst(760, { 	-- Onyxia's Lair
+		["isRaid"] = true,
+		["sharedLockout"] = 1,
+		["lvl"] = 60,
+		["mapID"] = 248,
+		["coord"] = { 52.15, 75.77, 70 },	-- Onyxia's Lair, Kalimdor [Dustwallow Marsh]
 		["groups"] = {
-			d(1, {	-- Normal (Legacy)
+			d(9, {	-- 40 Player (Legacy)
+				["ignoreBonus"] = true,
 				["u"] = 12,
 				["groups"] = {
 					e(1651, {	-- Onyxia (Legacy)
+						["u"] = 43,
+						["creatureID"] = 10184,
 						["groups"] = {
 							un(2, ach(684)),	-- Onyxia's Lair (Level 60)
 							a({
@@ -100,14 +108,14 @@ _.Instances = { tier(1, {	-- Classic
 							un(2, i(18813)),	-- Ring of Binding
 							un(2, i(17064)),	-- Shard of the Scale
 						},
-						["u"] = 43,
-						["creatureID"] = 10184
 					}),
 				},
 			}),
 			d(3, {	-- 10 Player
+				["lvl"] = 80,
 				["groups"] = {
-					e(1651, {	-- Onyxia 
+					e(1651, {	-- Onyxia
+						["creatureID"] = 10184,
 						["groups"] = {
 							ach(4403),	-- Many Whelps! Handle It! (10 player)
 							ach(4402),	-- More Dots! (10 player)
@@ -156,9 +164,7 @@ _.Instances = { tier(1, {	-- Classic
 							}),
 							i(49636),	-- Reins of the Onyxian Drake (Mount)
 							i(49295),	-- Enlarged Onyxia Hide Backpack (Bag)
-							i(49294, {	-- Ashen Sack of Gems (Misc)
-								["f"] = 113, -- Bag
-							}),
+							i(49294),	-- Ashen Sack of Gems (Misc)
 							i(49299),	-- Keen Obsidian Edged Blade
 							i(49302),	-- Reclaimed Shadowstrike
 							i(49301),	-- Reclaimed Thunderstrike
@@ -195,14 +201,14 @@ _.Instances = { tier(1, {	-- Classic
 							i(49463),	-- Purified Shard of the Flame
 							i(49310),	-- Purified Shard of the Scale
 						},
-						["creatureID"] = 10184
 					}),
 				},
-				["lvl"] = 80,
 			}),
 			d(4, {	-- 25 Player
+				["lvl"] = 80,
 				["groups"] = {
 					e(1651, {	-- Onyxia
+						["creatureID"] = 10184,
 						["groups"] = {
 							ach(4406), -- Many Whelps! Handle It! (25 player)
 							ach(4405), -- More Dots! (25 player)
@@ -251,9 +257,7 @@ _.Instances = { tier(1, {	-- Classic
 							}),
 							i(49636),	-- Reins of the Onyxian Drake (Mount)
 							i(49295),	-- Enlarged Onyxia Hide Backpack (Bag)
-							i(49294, {	-- Ashen Sack of Gems (Misc)
-								["f"] = 113, -- Bag
-							}),
+							i(49294),	-- Ashen Sack of Gems (Misc)
 							i(49496),	-- Reinforced Shadowstrike
 							i(49497),	-- Reinforced Thunderstrike
 							i(49498),	-- Sharpened Obsidian Edged Blade
@@ -290,15 +294,9 @@ _.Instances = { tier(1, {	-- Classic
 							i(49464),	-- Shiny Shard of the Flame
 							i(49488),	-- Shiny Shard of the Scale
 						},
-						["creatureID"] = 10184
 					})
 				},
-				["lvl"] = 80,
 			})
 		},
-		["isRaid"] = true,
-		["sharedLockout"] = 1,
-		["lvl"] = 60,
-		["mapID"] = 248
 	}),
 })};

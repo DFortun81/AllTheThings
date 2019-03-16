@@ -4,6 +4,14 @@
 
 _.Instances = { tier(1, {	-- Classic
 	inst(741, { 	-- Molten Core
+		["isRaid"] = true,
+		["sharedLockout"] = 1,
+		["lvl"] = 50,
+		["mapID"] = 232,
+		["crs"] = {
+			14387,	-- Lothos Riftwaker
+		},
+		["coord"] = { 54.18, 83.25, 35 },	-- Molten Core, Blackrock Mountain [Blackrock Depths]
 		["groups"] = {
 			n(-1, {	-- Common Boss Drop
 				i(18260, {	-- Formula: Enchant Weapon - Healing Power
@@ -770,13 +778,6 @@ _.Instances = { tier(1, {	-- Classic
 				i(13130),	-- Windrunner Legguards
 				i(13066),	-- Wyrmslayer Spaulders
 			})),
-		},
-		["isRaid"] = true,
-		["sharedLockout"] = 1,
-		["lvl"] = 50,
-		["mapID"] = 232,
-		["crs"] = {
-			14387,	-- Lothos Riftwaker
 		},
 	}),
 })};

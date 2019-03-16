@@ -10,7 +10,8 @@ _.Instances = { tier(1, {	-- Classic
 		["lvl"] = 60,
 		["mapID"] = 162,
 		["groups"] = {
-			d(1, {	-- Normal (Legacy)
+			d(9, {	-- 40 Player (Legacy)
+				["ignoreBonus"] = true,
 				["u"] = 12,
 				["groups"] = {
 					n(-10066, {	-- Legendary Questline

@@ -4,6 +4,13 @@
 
 _.Instances = { tier(1, {	-- Classic
 	inst(743, { 	-- Ruins of Ahn'Qiraj
+		["isRaid"] = true,
+		["sharedLockout"] = 1,
+		["lvl"] = 50,
+		["maps"] = {
+			247,	-- Ruins of Ahn'Qiraj
+		},
+		["coord"] = { 58.93, 14.26, 327 },	-- Ruins of Ahn'Qiraj, Ahn Qiraj: The Fallen Kingdom
 		["groups"] = {
 			n(-1, { -- Common Boss Drop
 				["groups"] = { -- The class items are grey, adding them for classic in summer
@@ -86,8 +93,9 @@ _.Instances = { tier(1, {	-- Classic
 				},
 			}),
 			e(1537, { 	-- Kurinnaxx
+				["creatureID"] = 15348,
 				["groups"] = {
-				i(21498),	-- Qiraji Sacrificial Dagger
+					i(21498),	-- Qiraji Sacrificial Dagger
 					i(21499),	-- Vestments of the Shifting Sands
 					i(20884, {	-- Qiraji Magisterial Ring
 						q(8556, {	-- Signet of Unyielding Strength
@@ -246,14 +254,13 @@ _.Instances = { tier(1, {	-- Classic
 					i(21503),	-- Belt of the Sand Reaver
 					i(21500),	-- Belt of the Inquisition
 				},
-				["creatureID"] = 15348,
 			}),
 			n(15471, {	-- Lieutenant General Andorov
+				["description"] = "In order to interact with this vendor, you must first talk to him to start the encounter with General Rajaxx and allow him to get at least one hit on the boss after the waves have completed.",
 				["groups"] = {
 					i(22221),	-- Plans: Obsidian Mail Tunic
 					i(22219),	-- Plans: Jagged Obsidian Shield
 				},
-				["description"] = "In order to interact with this vendor, you must first talk to him to start the encounter with General Rajaxx and allow him to get at least one hit on the boss after the waves have completed."
 			}),
 			e(1538, { 	-- General Rajaxx
 				["groups"] = {
@@ -448,6 +455,7 @@ _.Instances = { tier(1, {	-- Classic
 				}),
 			}),
 			e(1540, { 	-- Buru the Gorger
+				["creatureID"] = 15370,
 				["groups"] = {
 					i(21485),	-- Buru's Skull Fragment
 					i(21487),	-- Slimy Scaled Gauntlets
@@ -685,9 +693,9 @@ _.Instances = { tier(1, {	-- Classic
 					i(21489),	-- Quicksand Waders
 					i(21488),	-- Fetish of Chitinous Spikes
 				},
-				["creatureID"] = 15370,
 			}),
 			n(15333, {	-- Silicate Feeder
+				["description"] = "These bugs are like loot pinatas. Their loot tables for random greens is insanely long and despite the individual % for each piece being low, they have an overall common drop rate for rare world drops. If you're going for 100%, we advise that you kill these guys whenever you see them.",
 				["groups"] = {
 					i(14304),	-- Bonecaster's Belt
 					i(15295),	-- Quillfire Bow
@@ -712,9 +720,9 @@ _.Instances = { tier(1, {	-- Classic
 					i(21803),	-- Helm of the Holy Avenger
 					i(14813),	-- Warstrike Cape
 				},
-				["description"] = "These bugs are like loot pinatas. Their loot tables for random greens is insanely long and despite the individual % for each piece being low, they have an overall common drop rate for rare world drops. If you're going for 100%, we advise that you kill these guys whenever you see them."
 			}),
 			e(1541, { 	-- Ayamiss the Hunter
+				["creatureID"] = 15369,
 				["groups"] = {
 					i(21466),	-- Stinger of Ayamiss
 					i(21478),	-- Bow of Taut Sinew
@@ -954,9 +962,9 @@ _.Instances = { tier(1, {	-- Classic
 					i(21483),	-- Ring of the Desert Winds
 					un(2, i(21482)),	-- Boots of the Fiery Sands
 				},
-				["creatureID"] = 15369,
 			}),
 			e(1542, { 	-- Ossirian the Unscarred
+				["creatureID"] = 15339,
 				["groups"] = {
 					ach(689),	-- Ruins of Ahn'Qiraj
 					i(21220, {	-- Head of Ossirian the Unscarred	
@@ -1136,9 +1144,9 @@ _.Instances = { tier(1, {	-- Classic
 					i(21461),	-- Leggings of the Black Blizzard
 					i(21453),	-- Mantle of the Horusath
 				},
-				["creatureID"] = 15339,
 			}),
 			e(1539, { 	-- Moam
+				["creatureID"] = 15340,
 				["groups"] = {
 					i(20890, {	-- Qiraji Ornate Hilt
 						q(8705, {	-- Gavel of Infinite Wisdom
@@ -1307,14 +1315,7 @@ _.Instances = { tier(1, {	-- Classic
 					i(21473),	-- Eye of Moam
 					i(22220),	-- Plans: Black Grasp of the Destroyer
 				},
-				["creatureID"] = 15340,
 			}),
-		},
-		["isRaid"] = true,
-		["sharedLockout"] = 1,
-		["lvl"] = 50,
-		["maps"] = {
-			247,	-- Ruins of Ahn'Qiraj
 		},
 	}),
 })};

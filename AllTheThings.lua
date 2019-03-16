@@ -3392,6 +3392,7 @@ app.DifficultyIcons = {
 	[5] = "Interface\\Addons\\AllTheThings\\assets\\Heroic",
 	[6] = "Interface\\Addons\\AllTheThings\\assets\\Heroic",
 	[7] = "Interface\\Addons\\AllTheThings\\assets\\LFR",
+	[9] = "Interface\\Addons\\AllTheThings\\assets\\Mythic",
 	[11] = "Interface\\Addons\\AllTheThings\\assets\\Normal",
 	[12] = "Interface\\Addons\\AllTheThings\\assets\\Heroic",
 	[14] = "Interface\\Addons\\AllTheThings\\assets\\Normal",
