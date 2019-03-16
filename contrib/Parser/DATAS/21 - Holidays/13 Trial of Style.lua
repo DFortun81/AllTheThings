@@ -5,7 +5,7 @@ _.Holidays =
 {
 	holiday(1671631, {	-- Trial of Style
 		["g"] = bubbleDown({["u"] = 22}, {
-			i(151134, { -- Trial of Style Token
+			i(151134, {	-- Trial of Style Token
 				["crs"] = {
 					54473,	-- Warpweaver Dushar (Horde / Orgrimmar)
 					85289,	-- Warpweaver Farshlah <Transmogrifier> (Horde / Frostwall)
@@ -19,96 +19,68 @@ _.Holidays =
 					85291,	-- Warpweaver Tuviss <Transmogrifier> (Alliance / Lunarfall)
 				},
 				["g"] = { 
-					i(151116), -- Fashionable Undershirt
-					{ -- Ensemble: Mana-Etched  Regalia
+				 -- SEASON 1 STARTS
+					i(151116),	-- Fashionable Undershirt
+					{	-- Ensemble: Der'izu Armor
 						["groups"] = {
-							i(151885), -- Mana-Etched Crown
-							i(151886), -- Mana-Etched Spaulders
-							i(151882), -- Mana-Etched Vestments
-							i(151884), -- Mana-Etched Gloves
-							i(151887), -- Glpyh-Lined Sash
-							i(151883), -- Mana-Etched Pantaloons
-							i(151888), -- Sigil-Laced Boots
-						},
-						["ignoreBonus"] = true,
-						["itemID"] = 151117,
-						["classes"] = { 5, 8, 9 },
-					},
-					{ -- Ensemble: Obsidian Prowler's Garb
-						["groups"] = {
-							i(151891), -- Savage Mask of the Lynx Lord
-							i(151889), -- Sun-Gilded Shouldercaps
-							i(151895), -- Chestguard of the Proweler
-							i(151892), -- Predatory Gloves
-							i(151894), -- Epoch's Whispering Cinch
-							i(151893), -- Mennu's Scaled Leggings
-							i(151890), -- Silent-Strider Kneeboots
-						},
-						["ignoreBonus"] = true,
-						["itemID"] = 151118,
-						["classes"] = { 11, 4 , 10, 12 },
-					},
-					{ -- Ensemble: Der'izu Armor
-						["groups"] = {
-							i(151898), -- Der'izu Helm
-							i(151896), -- Der'izu Spaulders
-							i(151901), -- Der'izu Chestpiece
-							i(151902), -- Der'izu Bracer
-							i(151900), -- Der'izu Fists
-							i(151903), -- Der'izu Belt
-							i(151897), -- Der'izu Legguards
-							i(151899), -- Der'izu Greaves
+							i(151898),	-- Der'izu Helm
+							i(151896),	-- Der'izu Spaulders
+							i(151901),	-- Der'izu Chestpiece
+							i(151902),	-- Der'izu Bracer
+							i(151900),	-- Der'izu Fists
+							i(151903),	-- Der'izu Belt
+							i(151897),	-- Der'izu Legguards
+							i(151899),	-- Der'izu Greaves
 						},
 						["ignoreBonus"] = true,
 						["itemID"] = 151119,
 						["classes"] = { 3, 7 },
 					},
-					{ -- Ensemble: Righteous Battleplate
+					{	-- Ensemble: Mana-Etched  Regalia
 						["groups"] = {
-							i(151906), -- Helm of the Righteous
-							i(151904), -- Spaulders of the Righteous
-							i(151908), -- Breastlate of the Righteous
-							i(151911), -- Bracers of Dignity
-							i(151907), -- Gauntlets of the Righteous
-							i(151910), -- Girdle of Valorous Deeds
-							i(151905), -- Legplates of the Righteous
-							i(151909), -- Boots of the Righteous Path
+							i(151885),	-- Mana-Etched Crown
+							i(151886),	-- Mana-Etched Spaulders
+							i(151882),	-- Mana-Etched Vestments
+							i(151884),	-- Mana-Etched Gloves
+							i(151887),	-- Glpyh-Lined Sash
+							i(151883),	-- Mana-Etched Pantaloons
+							i(151888),	-- Sigil-Laced Boots
+						},
+						["ignoreBonus"] = true,
+						["itemID"] = 151117,
+						["classes"] = { 5, 8, 9 },
+					},
+					{	-- Ensemble: Obsidian Prowler's Garb
+						["groups"] = {
+							i(151891),	-- Savage Mask of the Lynx Lord
+							i(151889),	-- Sun-Gilded Shouldercaps
+							i(151895),	-- Chestguard of the Proweler
+							i(151892),	-- Predatory Gloves
+							i(151894),	-- Epoch's Whispering Cinch
+							i(151893),	-- Mennu's Scaled Leggings
+							i(151890),	-- Silent-Strider Kneeboots
+						},
+						["ignoreBonus"] = true,
+						["itemID"] = 151118,
+						["classes"] = { 11, 4 , 10, 12 },
+					},
+					{	-- Ensemble: Righteous Battleplate
+						["groups"] = {
+							i(151906),	-- Helm of the Righteous
+							i(151904),	-- Spaulders of the Righteous
+							i(151908),	-- Breastlate of the Righteous
+							i(151911),	-- Bracers of Dignity
+							i(151907),	-- Gauntlets of the Righteous
+							i(151910),	-- Girdle of Valorous Deeds
+							i(151905),	-- Legplates of the Righteous
+							i(151909),	-- Boots of the Righteous Path
 						},
 						["ignoreBonus"] = true,
 						["itemID"] = 151120,
 						["classes"] = { 2, 1, 6 },
 					},
-					{ -- Ensemble: Mindwrack Raiment
-						["groups"] = {
-							i(156914),	-- Mindwrack Cowl
-							i(156912),	-- Mindwrack Shoulderpads
-							i(156917),	-- Mindwrack Robes
-							i(156918),	-- Mindwrack Bracers
-							i(156916),	-- Mindwrack Handwraps
-							i(156919),	-- Mindwrack Cord
-							i(156913),	-- Mindwrack Leggings
-							i(156915),	-- Mindwrack Slippers
-						},
-						["ignoreBonus"] = true,
-						["itemID"] = 157573,
-						["classes"] = { 5, 8, 9 },
-					},
-					{ -- Ensemble: Tundraspite Armor
-						["groups"] = {
-							i(156906),	-- Tundraspite Helm
-							i(156904),	-- Tundraspite Mantle
-							i(156909),	-- Tundraspite Tunic
-							i(156910),	-- Tundraspite Wristwraps
-							i(156908),	-- Tundraspite Handguards
-							i(156911),	-- Tundraspite Girdle
-							i(156905),	-- Tundraspite Legguards
-							i(156907),	-- Tundraspite Boots
-						},
-						["ignoreBonus"] = true,
-						["itemID"] = 157574,
-						["classes"] = { 11, 4, 10, 12},
-					},
-					{ -- Ensemble: Crimson Sentinel Garb
+				 -- SEASON 2 STARTS
+					{	-- Ensemble: Crimson Sentinel Garb
 						["groups"] = {
 							i(156898),	-- Crimson Sentinel Cap
 							i(156896),	-- Crimson Sentinel Shoulderplates
@@ -123,7 +95,7 @@ _.Holidays =
 						["itemID"] = 157576,
 						["classes"] = { 3, 7 },
 					},
-					{ -- Ensemble: Goldspine Plate
+					{	-- Ensemble: Goldspine Plate
 						["groups"] = {
 							i(156890),	-- Goldspine Helm
 							i(156888),	-- Goldspine Pauldrons
@@ -137,6 +109,98 @@ _.Holidays =
 						["ignoreBonus"] = true,
 						["itemID"] = 157577,
 						["classes"] = { 2, 1, 6 },
+					},
+					{	-- Ensemble: Mindwrack Raiment
+						["groups"] = {
+							i(156914),	-- Mindwrack Cowl
+							i(156912),	-- Mindwrack Shoulderpads
+							i(156917),	-- Mindwrack Robes
+							i(156918),	-- Mindwrack Bracers
+							i(156916),	-- Mindwrack Handwraps
+							i(156919),	-- Mindwrack Cord
+							i(156913),	-- Mindwrack Leggings
+							i(156915),	-- Mindwrack Slippers
+						},
+						["ignoreBonus"] = true,
+						["itemID"] = 157573,
+						["classes"] = { 5, 8, 9 },
+					},
+					{	-- Ensemble: Tundraspite Armor
+						["groups"] = {
+							i(156906),	-- Tundraspite Helm
+							i(156904),	-- Tundraspite Mantle
+							i(156909),	-- Tundraspite Tunic
+							i(156910),	-- Tundraspite Wristwraps
+							i(156908),	-- Tundraspite Handguards
+							i(156911),	-- Tundraspite Girdle
+							i(156905),	-- Tundraspite Legguards
+							i(156907),	-- Tundraspite Boots
+						},
+						["ignoreBonus"] = true,
+						["itemID"] = 157574,
+						["classes"] = { 11, 4, 10, 12},
+					},
+				 -- NO NEW TRANSMOG FOR SEASON 3
+				 -- SEASON 4 STARTS
+					{	-- Ensemble: Amaranthine Path Armor
+						["g"] = {
+							i(168070),	-- Amaranthine Path Helm
+							i(168072),	-- Amaranthine Path Pauldrons
+							i(168067),	-- Amaranthine Path Breastplate
+							i(168066),	-- Amaranthine Path Bracers
+							i(168068),	-- Amaranthine Path Gauntlets
+							i(168065),	-- Amaranthine Path Belt
+							i(168071),	-- Amaranthine Path Legguards
+							i(168069),	-- Amaranthine Path Greaves
+						},
+						["ignoreBonus"] = true,
+						["itemID"] = 168061,	-- Ensemble: Amaranthine Path Armor
+						["classes"] = { 6, 2, 1 },	-- DK, Paladin, Warrior (Plate)
+					},
+					{	-- Ensemble: Chainmail of the Timeless Hunt
+						["g"] = {
+							i(168078),	-- Headguard of the Timeless Hunt
+							i(168080),	-- Mantle of the Timeless Hunt
+							i(168075),	-- Breastplate of the Timeless Hunt
+							i(168074),	-- Bracers of the Timeless Hunt
+							i(168076),	-- Gauntlets of the Timeless Hunt
+							i(168073),	-- Belt of the Timeless Hunt
+							i(168079),	-- Legguards of the Timeless Hunt
+							i(168077),	-- Boots of the Timeless Hunt
+						},
+						["ignoreBonus"] = true,
+						["itemID"] = 168060,	-- Ensemble: Chainmail of the Timeless Hunt
+						["classes"] = { 3, 7 },	-- Hunter, Shaman (Mail)
+					},
+					{	-- Ensemble: Restless Dreambound Battlegear 
+						["g"] = {
+							i(168087),	-- Restless Dreambound Helm
+							i(168089),	-- Restless Dreambound Mantle
+							i(168084),	-- Restless Dreambound Robe
+							i(168083),	-- Restless Dreambound Wristwraps
+							i(168085),	-- Restless Dreambound Gloves
+							i(168082),	-- Restless Dreambound Belt
+							i(168088),	-- Restless Dreambound Leggings
+							i(168086),	-- Restless Dreambound Boots
+						},
+						["ignoreBonus"] = true,
+						["itemID"] = 168059,	-- 
+						["classes"] = { 12, 11, 10, 4 },	-- DH, Druid, Monk, Rogue (Leather)
+					},
+					{	-- Ensemble: Tranquil Spiritbind Regalia
+						["g"] = {
+							i(168107),	-- Tranquil Spiritbind Cowl
+							i(168109),	-- Tranquil Spiritbind Shoulderpads
+							i(168104),	-- Tranquil Spiritbind Robes
+							i(168103),	-- Tranquil Spiritbind Bracers
+							i(168105),	-- Tranquil Spiritbind Handwraps
+							i(168102),	-- Tranquil Spiritbind Sash
+							i(168108),	-- Tranquil Spiritbind Leggings
+							i(168106),	-- Tranquil Spiritbind Slippers
+						},
+						["ignoreBonus"] = true,
+						["itemID"] = 168058,	-- Ensemble: Tranquil Spiritbind Regalia
+						["classes"] = { 5, 8, 9 },	-- Priest, Mage, Warlock (Cloth)
 					},
 				},
 				["coords"] = {
