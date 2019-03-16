@@ -217,6 +217,15 @@ _.NeverImplemented =
 			un(1, i(54658)),	-- Unknown
 			un(1, i(54665)),	-- Unknown
 			un(1, i(54667)),	-- Unknown
+			un(1, i(107203)),	-- Unknown
+			un(1, i(107337)),	-- Unknown
+			un(1, i(107866)),	-- Unknown
+			un(1, i(107871)),	-- Unknown
+			un(1, i(107874)),	-- Unknown
+			un(1, i(107878)),	-- Unknown
+			un(1, i(107881)),	-- Unknown
+			un(1, i(107884)),	-- Unknown
+			un(1, i(107887)),	-- Unknown
 			un(1, i(25795)),	-- Gloves of Preservation (not added version)
 			un(1, i(56701)),	-- Jinxed Vest (never made it to live)
 			un(1, i(25796)),	-- Lurking Shadow Spaulders (only beta)
@@ -1343,6 +1352,8 @@ _.NeverImplemented =
 			un(1, i(64700)),	-- Bloodthirsty Gladiator's Bonecracker (Epic BG Item, never made it out of beta)
 			un(1, i(64752)),	-- Bloodthirsty Gladiator's Gravel (Epic BG Item, never made it out of beta)
 			un(1, i(64816)),	-- Bloodthirsty Gladiator's Pummeler (Epic BG Item, never made it out of beta))
+			un(1, i(165262)),	-- Unknown
+			un(1, i(159550)),	-- Unknown
 		}),
 		n(-334, { -- One-Handed Axes
 			un(1, i(68050)),	-- Shatterscale Mightfish
