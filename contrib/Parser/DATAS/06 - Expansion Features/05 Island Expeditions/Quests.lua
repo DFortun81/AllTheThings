@@ -94,12 +94,14 @@ _.ExpansionFeatures =
 		-- NOTE: For now we'll attach the Island Maps here until we decide if we want to rearrange them
 		["maps"] = {
 			1036,	-- Dread Chain
+			1336,	-- Havenswood
+			1337,	-- Jorundall
+			1035,	-- Molten Cray
 			1033,	-- Rotting Mire
 			981,	-- Un'gol Ruins
-			1037,	-- Whispering Reef
-			1035,	-- Molten Cray
 			1032,	-- Skittering Hollow
 			1034,	-- Verdant Wilds
+			1037,	-- Whispering Reef
 		},
 	}),
 };

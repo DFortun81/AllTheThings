@@ -7,7 +7,18 @@ _.Achievements =
 	n(-10055, { -- Expansion Features
 		["groups"] = {
 			n(-10056, { -- Island Expeditions
-				["groups"] = {
+				["maps"] = {
+					1036,	-- Dread Chain
+					1336,	-- Havenswood
+					1337,	-- Jorundall
+					1035,	-- Molten Cray
+					1033,	-- Rotting Mire
+					981,	-- Un'gol Ruins
+					1032,	-- Skittering Hollow
+					1034,	-- Verdant Wilds
+					1037,	-- Whispering Reef
+				},
+				["g"] = {
 					ach(13142),	-- Archipelago Explorer
 					ach(13125),	-- Azerite Admiral
 					ach(13098),	-- Bane of the Chain
