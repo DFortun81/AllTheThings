@@ -33,6 +33,7 @@ _.Zones =
 						["groups"] = {
 							i(157824, {	-- Valarjar Cache
 								["groups"] = {
+									i(144310),	-- Formula: Enchant Neck - Mark of the Master (Rank 3)
 									i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3)
 									n(-322, {	-- Cloak
 										i(134202),	-- Stormsky Cloak
@@ -871,7 +872,6 @@ _.Zones =
 						q(43600),	-- Warden Tower Assault: Whisperwind's Citadel
 						q(41497),	-- Wild Leystone Seams
 						q(41297),	-- Work Order: Fjarnskaggl
-						q(41678),	-- Work Order: Gunpack
 						q(41313),	-- Work Order: Leystone
 						q(41654),	-- Work Order: Queen's Opal Loop
 						q(41648),	-- Work Order: Silkweave Bracers
@@ -1492,54 +1492,93 @@ _.Zones =
 							i(134560),
 							i(134561),
 						}),
-						n(-38, {	-- Professions
-							n(-181, {	-- Blacksmithing
-								{	-- Work Order: Leystone Breastplate
-									["questID"] = 41636,	-- Work Order: Leystone Breastplate
-									["qg"] = 106904,	-- Valdemar Stormseeker
-									["g"] = {
-										{	-- Recipe: Leystone Breastplate [Rank 3]
-											["itemID"] = 123939,	-- Recipe: Leystone Breastplate [Rank 3]
-										},
+					}),
+					n(-38, {	-- Professions
+						n(-181, {	-- Blacksmithing
+							{	-- Work Order: Leystone Breastplate
+								["questID"] = 41636,	-- Work Order: Leystone Breastplate
+								["qg"] = 106904,	-- Valdemar Stormseeker
+								["g"] = {
+									{	-- Recipe: Leystone Breastplate [Rank 3]
+										["itemID"] = 123939,	-- Recipe: Leystone Breastplate [Rank 3]
 									},
-								},
-							}),
-							n(-183, {	-- Engineering
-								{	-- Work Order: Gunpack
-									["questID"] = 41678,	-- Work Order: Gunpack
-									["qg"] = 106904,	-- Valdemar Stormseeker
-									["g"] = {
-										{	-- Schematic: Gunpack [Rank 3]
-											["itemID"] = 137722,	-- Schematic: Gunpack [Rank 3]
-										},
-									},
-								},
-							}),
-							n(-185, {	-- Inscription
-								["groups"] = {
-									q(40052, {	-- Ancient Vrykul Mastered
-										["qg"] = 97748,	-- Nicholo Swiftfuse
-										["sourceQuests"] = { 39947 },	-- Not So Complex?
-										["g"] = {
-											{	-- Technique: Scroll of Forgotten Knowledge
-												["itemID"] = 137728,	-- Technique: Scroll of Forgotten Knowledge
-											},
-										},
-									}),
-								},
-								["requireSkill"] = 773,
-							}),
-							{	-- Mysteries of Nature
-								["questID"] = 40546,
-								["requireSkill"] = 755,	-- Jewelcrafting
-								["qg"] = 100499,	-- Jabrul <Jewelcrafting Master>
-								["groups"] = {
-									recipe(195883),	-- Chatterstone
 								},
 							},
 						}),
-					}),
-				  
+						n(-182, {	-- Enchanting
+							{	-- Halls of Valor: Revenge of the Enchantress
+								["questID"] = 39904,	-- Halls of Valor: Revenge of the Enchantress
+								["qg"] = 98367,	-- Tigrid the Charmer
+								["g"] = {
+									{	-- Formula: Enchanted Pen
+										["itemID"] = 128623,	-- Formula: Enchanted Pen
+									},
+								},
+							},
+						}),
+						n(-183, {	-- Engineering
+							{	-- Work Order: Gunpack
+								["questID"] = 41678,	-- Work Order: Gunpack
+								["qg"] = 106904,	-- Valdemar Stormseeker
+								["g"] = {
+									{	-- Schematic: Gunpack [Rank 3]
+										["itemID"] = 137722,	-- Schematic: Gunpack [Rank 3]
+									},
+								},
+							},
+							q(40868, {	-- Wibbly-Wobbly, Timey-Wimey
+								["groups"] = {
+									sp(201602),	-- Schematic: Intra-Dalaran Wormhole Generator
+								},
+								["qg"] = 102198,	-- Fargo Flintlocke
+								["requireSkill"] = 202,
+								["sourceQuests"] = {
+									40866,	-- The Shell, You Say?
+									40867,	-- Bubble Baubles
+								},
+							}),
+						}),
+						n(-185, {	-- Inscription
+							["groups"] = {
+								q(40052, {	-- Ancient Vrykul Mastered
+									["qg"] = 97748,	-- Nicholo Swiftfuse
+									["sourceQuests"] = { 39947 },	-- Not So Complex?
+									["g"] = {
+										{	-- Technique: Scroll of Forgotten Knowledge
+											["itemID"] = 137728,	-- Technique: Scroll of Forgotten Knowledge
+										},
+									},
+								}),
+							},
+							["requireSkill"] = 773,
+						}),
+						n(-186, {	-- Jewelcrafting
+							["groups"] = {
+								{	-- Mysteries of Nature
+									["questID"] = 40546,
+									["requireSkill"] = 755,	-- Jewelcrafting
+									["qg"] = 100499,	-- Jabrul <Jewelcrafting Master>
+									["groups"] = {
+										recipe(195883),	-- Chatterstone
+									},
+								},
+							},
+						}),
+						n(-190, {	-- Tailoring
+							["groups"] = {
+								q(38974, {	-- Halls of Valor: The Right Question
+									["qg"] = 93977,	-- Leyweaver Tellumi
+									["coord"] = { 65.6, 56.2 },
+									["g"] = {
+										{	-- Pattern: Imbued Silkweave Pantaloons (Rank 1)
+											["itemID"] = 127024,	-- Pattern: Imbued Silkweave Pantaloons (Rank 1)
+										},
+									},
+								}),
+							},
+							["requireSkill"] = 197,	-- Tailoring
+						}),
+					}),				  
 				--[[ These quests will be organized soon™
 					q(44720),	-- A Call to Action
 					qart(qg(117394, q(45534))),	-- A Common Enemy
@@ -1593,7 +1632,6 @@ _.Zones =
 					q(38607),	-- Gates of Valhallas
 					q(38670),	-- Goredome 2
 					q(40615),	-- Halls of Valor: Odyn's Blessing
-					q(39904),	-- Halls of Valor: Revenge of the Enchantress
 					q(44721),	-- Helya's Conquest
 					q(42393),	-- Homecoming
 					q(44577),	-- Honor the Flame
@@ -1683,28 +1721,8 @@ _.Zones =
 						["qg"] = 112959,	-- Fleet Admiral Tethys
 						["classes"] = { 4 },
 					}),
-					{	-- Halls of Valor: The Right Question
-						["questID"] = 38974,
-						["groups"] = {
-							i(127024),	-- Pattern: Imbued Silkweave Pantaloons (Rank 1)
-						},
-						["qg"] = 93977,	-- Leyweaveer Tellumi
-						["coord"] = { 65.6, 56.2 },
-						["requireSkill"] = 197,	-- Tailoring
-					},
 					q(46340, {
 						["qg"] = 93628,	-- Eyir
-					}),
-					q(40868, {	-- Wibbly-Wobbly, Timey-Wimey
-						["groups"] = {
-							sp(201602),	-- Schematic: Intra-Dalaran Wormhole Generator
-						},
-						["qg"] = 102198,	-- Fargo Flintlocke
-						["requireSkill"] = 202,
-						["sourceQuests"] = {
-							40866,	-- The Shell, You Say?
-							40867,	-- Bubble Baubles
-						},
 					}),
 				}),
 				n(-16, { 	-- Rares
@@ -2085,9 +2103,19 @@ _.Zones =
 						["isWQ"] = 110,
 						["requireSkill"] = 197,	-- Tailoring
 					},
+					{	-- Work Order: Word of Haste
+						["questID"] = 41672,
+						["qg"] = 106904,	-- Valdemar Stormseeker
+						["groups"] = {
+							i(128597),	-- Formula: Enchant Ring - Word of Haste (Rank 3)
+						},
+						["isWQ"] = 110,
+						["requireSkill"] = 333,	-- Enchanting
+					},
 				}),				
 				n(0, { 		-- Zone Drops
 					["groups"] = {
+						i(144309),	-- Formula: Enchant Neck - Mark of the Master (Rank 2)
 						i(136701),	-- Schematic: Shockinator
 						i(137729),	-- Technique: Codex of the Tranquil Mind
 						i(141043),	-- Technique: Glyph of Arachnophobia

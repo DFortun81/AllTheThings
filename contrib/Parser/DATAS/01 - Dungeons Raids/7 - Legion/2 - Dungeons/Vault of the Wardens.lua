@@ -229,6 +229,7 @@ _.Instances =
 								ach(10803),	-- Mythic: Vault of the Wardens
 								ach(10680),	-- Who's Afraid of the Dark?
 								i(137852),	-- Design: Vindictive Pandemonite Choker (Rank 3)
+								i(128607),	-- Formula: Enchant Cloak - Binding of Strength (Rank 3)
 								i(127931),	-- Recipe: Flask of the Seventh Demon (Rank 2)
 								i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
 								i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3)

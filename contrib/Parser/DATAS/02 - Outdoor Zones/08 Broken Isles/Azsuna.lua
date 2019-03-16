@@ -11,6 +11,7 @@ _.Zones =
 						["groups"] = {
 							i(157825, { -- Farondis Lockbox
 								["groups"] = {
+									i(144316),	-- Formula: Enchant Neck - Mark of the Quick (Rank 3)
 									i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3)
 									n(-322, { -- Cloak
 										i(134334), -- Disgraced Court Cloak
@@ -1869,11 +1870,83 @@ _.Zones =
 						n(-182, { -- Enchanting
 							["groups"] = {
 								q(40169), -- Crossroads Rendezvous
-								q(39923), -- Down to the Core
+								{	-- Down to the Core
+									["questID"] = 39923,	-- Down to the Core
+									["qg"] = 99420,	-- Kharmeera
+									["g"] = {
+										{	-- Formula: Enchant Ring - Binding of Critical Strike (Rank 1)
+											["itemID"] = 128566,	-- Formula: Enchant Ring - Binding of Critical Strike (Rank 1)
+										},
+										{	-- Formula: Enchant Ring - Binding of Haste (Rank 1)
+											["itemID"] = 128567,	-- Formula: Enchant Ring - Binding of Haste (Rank 1)
+										},
+										{	-- Formula: Enchant Ring - Binding of Mastery (Rank 1)
+											["itemID"] = 128568,	-- Formula: Enchant Ring - Binding of Mastery (Rank 1)
+										},
+										{	-- Formula: Enchant Ring - Binding of Versatility (Rank 1)
+											["itemID"] = 128569,	-- Formula: Enchant Ring - Binding of Versatility (Rank 1)
+										},
+									},
+								},
 								q(39907, {	-- Elven Enchantments
 									["qg"] = 107139, -- Enchantress Ilanya
 									["sourceQuests"] = { 39918 }, -- The Absent Priestess
 								}),
+								{	-- Ringing True
+									["questID"] = 39905,	-- Ringing True
+									["qg"] = 90317,	-- Jace Darkweaver
+									["g"] = {
+										{	-- Formula: Enchant Ring - Word of Critical Strike (Rank 1)
+											["itemID"] = 128562,	-- Formula: Enchant Ring - Word of Critical Strike (Rank 1)
+										},
+										{	-- Formula: Enchant Ring - Word of Haste (Rank 1)
+											["itemID"] = 128563,	-- Formula: Enchant Ring - Word of Haste (Rank 1)
+										},
+										{	-- Formula: Enchant Ring - Word of Mastery (Rank 1)
+											["itemID"] = 128564,	-- Formula: Enchant Ring - Word of Mastery (Rank 1)
+										},
+										{	-- Formula: Enchant Ring - Word of Versatility (Rank 1)
+											["itemID"] = 128565,	-- Formula: Enchant Ring - Word of Versatility (Rank 1)
+										},
+									},
+								},
+								{	-- Sentinel's Final Duty
+									["questID"] = 39914,	-- Sentinel's Final Duty
+									["qg"] = 98159,	-- Alynblaze
+									["g"] = {
+										{	-- Formula: Enchant Neck - Mark of the Distant Army (Rank 1)
+											["itemID"] = 128577,	-- Formula: Enchant Neck - Mark of the Distant Army (Rank 1)
+										},
+										{	-- Formula: Enchant Neck - Mark of the Trained Soldier (Rank 1)
+											["itemID"] = 141912,	-- Formula: Enchant Neck - Mark of the Trained Soldier (Rank 1)
+										},
+									},
+								},
+								{	-- The Absent Priestess
+									["questID"] = 39918,	-- The Absent Priestess
+									["qg"] = 98698,	-- Priestess Driana
+									["sourceQuests"] = { 40130 }, -- Washed Clean
+									["g"] = {
+										{	-- Formula: Enchant Neck - Mark of the Hidden Satyr (Rank 1)
+											["itemID"] = 128578,	-- Formula: Enchant Neck - Mark of the Hidden Satyr (Rank 1)
+										},
+										{	-- Formula: Enchant Neck - Mark of the Ancient Priestess (Rank 1)
+											["itemID"] = 141913,	-- Formula: Enchant Neck - Mark of the Ancient Priestess (Rank 1)
+										},
+									},
+								},
+								{	-- The Druid's Debt
+									["questID"] = 39910,	-- The Druid's Debt
+									["qg"] = 98381,	-- Merrus Dawnwind
+									["g"] = {
+										{	-- Formula: Enchant Neck - Mark of the Claw (Rank 1)
+											["itemID"] = 128576,	-- Formula: Enchant Neck - Mark of the Claw (Rank 1)
+										},
+										{	-- Formula: Enchant Neck - Mark of the Heavy Hide (Rank 1)
+											["itemID"] = 141911,	-- Formula: Enchant Neck - Mark of the Heavy Hide (Rank 1)
+										},
+									},
+								},
 							},
 							["requireSkill"] = 333,
 						}),
@@ -2181,14 +2254,12 @@ _.Zones =
 					q(38792),	-- Rethu's Lesson
 					q(38794),	-- Rethu's Sacrifice
 					q(38803),	-- Rin'thissa
-					q(39905),	-- Ringing True
 					q(38947),	-- Runic Catgut
 					q(43527),	-- Saving the Guard
 					q(40207),	-- Scales of the Arcane
 					q(40209),	-- Scales of the Earth
 					q(40133),	-- Scrap of Pants
 					q(39939),	-- Scribal Knowledge
-					q(39914),	-- Sentinel's Final Duty
 					q(38955),	-- Sew Far, Sew Good
 					q(46795),	-- Ship - Azsuna
 					q(46808),	-- Ship - Highmountain
@@ -2210,13 +2281,10 @@ _.Zones =
 					q(43518),	-- Tempering Darkness
 					q(39142),	-- Testing a Theory
 					q(40327),	-- Testing the Metal
-					q(39918),	-- The Absent Priestess
 					q(41163),	-- The Apocalypse Bringer
 					q(44875),	-- The Art of Flow
 					q(43373),	-- The Best and Brightest
 					q(37466),	-- The Broken Academy
-					
-					q(39910),	-- The Druid's Debt
 					q(43520),	-- The Emerald Nightmare: In Nightmares
 					q(45028),	-- The Fate of Kanrethad										
 					q(38963),	-- The Final Lesson?
@@ -2589,11 +2657,22 @@ _.Zones =
 					}),
 				}),
 				n(-2, { 	-- Vendors
+					n(107139, { -- Enchantress Ilyana
+						i(144317),	-- Formula: Enchant Neck - Mark of the Deadly (Rank 1)
+						i(144308),	-- Formula: Enchant Neck - Mark of the Master (Rank 1)
+						i(144314),	-- Formula: Enchant Neck - Mark of the Quick (Rank 1)
+						i(144311),	-- Formula: Enchant Neck - Mark of the Versatile (Rank 1)
+					}),
 					n(102196, {	-- Fargo Flintlocke
-						i(136629),
-						i(136630),
-						i(136631),
-						i(136632),
+						i(136632),	-- Chaos Blaster
+						i(136629),	-- Felgibber Shotgun
+						i(136631),	-- Surface-to-Infernal Rocket Launcher
+						i(136630),	-- "Twirling Bottom" Repeater
+					}),
+					n(107963, { -- Kharmeera
+						i(128574),	-- Formula: Enchant Cloak - Binding of Agility (Rank 1)
+						i(128575),	-- Formula: Enchant Cloak - Binding of Intellect (Rank 1)
+						i(128573),	-- Formula: Enchant Cloak - Binding of Strength (Rank 1)
 					}),
 					n(93973, {	-- Leyweaver Phaxondus
 						i(127023),	-- Pattern: Imbued Silkweave Epaulets [Rank 1]
@@ -2779,9 +2858,19 @@ _.Zones =
 						["isWQ"] = 110,
 						["requireSkill"] = 197,	-- Tailoring
 					},
+					{	-- Work Order: Word of Critical Strike
+						["questID"] = 41669,
+						["qg"] = 107376,	-- Veridis Fallon
+						["groups"] = {
+							i(128596),	-- Formula: Enchant Ring - Word of Critical Strike (Rank 3)
+						},
+						["isWQ"] = 110,
+						["requireSkill"] = 333,	-- Enchanting
+					},
 				}),	
 				n(0, { 		-- Zone Drops
 					["groups"] = {
+						i(144315),	-- Formula: Enchant Neck - Mark of the Quick (Rank 2)
 						i(137726),	-- Schematic: Leystone Buoy
 						i(137729),	-- Technique: Codex of the Tranquil Mind
 						i(141043),	-- Technique: Glyph of Arachnophobia

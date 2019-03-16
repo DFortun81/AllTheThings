@@ -207,6 +207,8 @@ _.Instances =
 								ach(10769),	-- Burning Down the House
 								ach(10785),	-- Mythic: Darkheart Thicket
 								i(137853),	-- Design: Sylvan Maelstrom Amulet (Rank 3)
+								i(128595),	-- Formula: Enchant Neck - Mark of the Hidden Satyr (Rank 2)
+								i(137876),	-- Recipe: Warhide Bindings (Rank 3)
 								i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
 								i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3)
 								i(134448),	-- Ashen Satyr Leggings
@@ -220,11 +222,11 @@ _.Instances =
 								i(137319),	-- Paranoid Sprinters
 								i(134537),	-- Signet of the Highborne Magi
 								i(121326),	-- Terrorweave Leggings
+								i(137316),	-- Torch of Shaladrassil
 								i(121316),	-- Vilescale Bracers
 								i(121276),	-- Wracksoul Chestplate
 								i(137314),	-- Wristbands of Cursed Torment
 								i(137315),	-- Writhing Heart of Darkness
-								i(137316),	-- Torch of Shaladrassil
 								i(137317),	-- Xavius' Mad Whispers
 							})),
 						},

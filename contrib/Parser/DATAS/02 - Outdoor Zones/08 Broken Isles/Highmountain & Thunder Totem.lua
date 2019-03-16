@@ -51,6 +51,7 @@ _.Zones =
 					q(42233, { -- Highmountain Tribes
 						["groups"] = {
 							i(157823, { -- Highmountain Tribute
+								i(144313),	-- Formula: Enchant Neck - Mark of the Versatile (Rank 3)
 								i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3)
 								n(-322, { -- Cloak
 									i(134158), -- Trembling Mightstone Drape
@@ -1153,6 +1154,22 @@ _.Zones =
 									}),
 								}),
 							}),
+							n(-182, {	-- Enchanting
+								["groups"] = bubbleDown({["requireSkill"] = 333}, { -- Enchanting
+									q(39883, {	-- Cloaked in Tradition
+										["groups"] = {
+											i(128571),	-- Formula: Enchant Cloak - Word of Agility (Rank 1)
+											i(128572),	-- Formula: Enchant Cloak - Word of Intellect (Rank 1)
+											i(128570),	-- Formula: Enchant Cloak - Word of Strength (Rank 1)
+										},
+										["qg"] = 98017,	-- Guron Twaintail
+										["sourceQuests"] = { 
+											39879,	-- Strong Like the Earth
+											39880,	-- Waste Not
+										},
+									}),
+								}),
+							}),
 							n(-189, { -- Skinning
 								["groups"] = bubbleDown({["requireSkill"] = 393}, { -- Skinning
 									q(40134, { -- Highmountain Hides
@@ -1371,7 +1388,6 @@ _.Zones =
 									q(42410),	-- Champion: Rexxar
 									q(43960),	-- Cinderwing
 									q(40192),	-- Claw of the Land
-									q(39883),	-- Cloaked in Tradition
 									q(44043),	-- Continuing the Legend
 									q(45350),	-- Countering the Contagion
 									q(42699),	-- Coura, Master of Arcana
@@ -1758,7 +1774,6 @@ _.Zones =
 						q(41647),	-- Work Order: Silkweave Robe
 						q(41653),	-- Work Order: Skystone Pendant
 						q(41235),	-- Work Order: Stonehide Leather
-						q(41671),	-- Work Order: Word of Strength
 						q(46192),	-- Zar'vok
 						q(46279),	-- Zargrom
 					}),
@@ -2057,6 +2072,14 @@ _.Zones =
 						["isWQ"] = 110,
 						["requireSkill"] = 755,	-- Jewelcrafting
 					},
+					{	-- Work Order: Word of Strength
+						["questID"] = 41671,
+						["groups"] = {
+							i(128604),	-- Formula: Enchant Cloak - Word of Strength (Rank 3)
+						},
+						["isWQ"] = 110,
+						["requireSkill"] = 333,	-- Enchanting
+					},
 					n(-322, { -- Cloak
 						i(134158), -- Trembling Mightstone Drape
 						i(139112), -- Tribal Unification Cloak
@@ -2154,6 +2177,7 @@ _.Zones =
 				}),
 				n(0, { 		-- Zone Drops
 					["groups"] = {
+						i(144312),	-- Formula: Enchant Neck - Mark of the Versatile (Rank 2)
 						i(137729),	-- Technique: Codex of the Tranquil Mind
 						i(141043),	-- Technique: Glyph of Arachnophobia
 						i(141035),	-- Technique: Glyph of Fel Wings

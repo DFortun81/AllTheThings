@@ -24,6 +24,19 @@ _.WorldDrops =
 						},
 					},
 				}),
+				n(-182, { -- Enchanting
+					i(141919),	-- Formula: Enchant Neck - Mark of the Ancient Priestess (Rank 3)
+					i(128610),	-- Formula: Enchant Neck - Mark of the Claw (Rank 3)
+					{	-- Formula: Enchant Neck - Mark of the Heavy Hide (Rank 2)
+						["itemID"] = 141915,	-- Formula: Enchant Neck - Mark of the Heavy Hide (Rank 2)
+						["description"] = "Drops from bears in any Broken Isles zone",
+					},
+					{	-- Formula: Enchant Neck - Mark of the Trained Soldier (Rank 2)
+						["itemID"] = 141914,	-- Formula: Enchant Neck - Mark of the Trained Soldier (Rank 2)
+						["description"] = "Drops from PVP world quest mobs in any Broken Isles zone",
+					},
+					i(141918),	-- Formula: Enchant Neck - Mark of the Trained Soldier (Rank 3)
+				}),
 				n(-190, {	-- Tailoring
 					i(142077),	-- Pattern: Imbued Silkweave Bag (Rank 2)
 					i(138006),	-- Pattern: Imbued Silkweave Cover (Rank 2)

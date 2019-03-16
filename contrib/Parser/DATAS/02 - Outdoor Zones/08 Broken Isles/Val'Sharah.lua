@@ -11,6 +11,7 @@ _.Zones =
 						["groups"] = {
 							i(157822, { -- Dreamweaver Provisions
 								["groups"] = {
+									i(144319),	-- Formula: Enchant Neck - Mark of the Deadly (Rank 3)
 									i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3)
 									i(130167), -- Thistleleaf Adventurer
 									n(-322, { -- Cloak
@@ -1346,19 +1347,23 @@ _.Zones =
 						i(127022),	-- Pattern: Imbued Silkweave Cinch (Rank 1)
 					}),
 					n(106901, {	-- Sylvia Hartshorn <Dreamweaver Emissary>
-						i(140652),	-- Seed of Solar Fire - Druid Artifact Skin
-						i(137898),	-- Recipe: Dreadleather Footpads
-						i(137896),	-- Recipe: Dreadleather Mask
-						i(137895),	-- Recipe: Dreadleather Pants
-						i(137883),	-- Recipe: Warhide Jerkin
-						i(140578),	-- Dreamweaver Initiate's Tabard
-						i(140667),	-- Tabard of the Dreamweavers
 						i(23712),	-- Ash'ana
+						i(140578),	-- Dreamweaver Initiate's Tabard
+						i(128608),	-- Formula: Enchant Cloak - Binding of Agility (Rank 3)
+						i(128593),	-- Formula: Enchant Neck - Mark of the Claw (Rank 2)
+						i(128601),	-- Formula: Enchant Ring - Binding of Haste (Rank 3)
+						i(128599),	-- Formula: Enchant Ring - Word of Versatility (Rank 3)
 						i(130232),	-- Moonfeather Statue
 						i(130158),	-- Path of Elothir
-						i(130170),	-- Tear of the Green Aspect
-						i(139605),	-- Pendant of the Moon Temple
 						i(139596),	-- Pauldrons of Entwined Roots
+						i(139605),	-- Pendant of the Moon Temple
+						i(137898),	-- Recipe: Dreadleather Footpads (Rank 3)
+						i(137896),	-- Recipe: Dreadleather Mask (Rank 3)
+						i(137895),	-- Recipe: Dreadleather Pants (Rank 3)
+						i(137883),	-- Recipe: Warhide Jerkin (Rank 3)
+						i(140652),	-- Seed of Solar Fire - Druid Artifact Skin
+						i(140667),	-- Tabard of the Dreamweavers
+						i(130170),	-- Tear of the Green Aspect
 						i(140745),	-- Treasure Map: Val'sharah
 					}),
 				}),
@@ -1483,10 +1488,20 @@ _.Zones =
 							["isWQ"] = 110,
 							["requireSkill"] = 197,	-- Tailoring
 						},
+						{	-- Work Order: Word of Agility
+							["questID"] = 41670,
+							["qg"] = 106901,	-- Sylvia Hartshorn
+							["groups"] = {
+								i(128605),	-- Formula: Enchant CLoak - Word of Agility (Rank 3)
+							},
+							["isWQ"] = 110,
+							["requireSkill"] = 333,	-- Enchanting
+						},
 					},
 				}),
 				n(0, {		-- Zone Drops
 					["groups"] = {
+						i(144318),	-- Formula: Enchant Neck - Mark of the Deadly (Rank 2)
 						i(137729),	-- Technique: Codex of the Tranquil Mind
 						i(141043),	-- Technique: Glyph of Arachnophobia
 						i(141035),	-- Technique: Glyph of Fel Wings

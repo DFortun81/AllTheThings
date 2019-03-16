@@ -1788,6 +1788,15 @@ _.Zones =
 							["isWQ"] = 110,
 							["requireSkill"] = 197,	-- Tailoring
 						},
+						{	-- Work Order: Word of Mastery
+							["questID"] = 41673,
+							["qg"] = 115736,	-- First Arcanist Thalyssra
+							["groups"] = {
+								i(128598),	-- Formula: Enchant Ring - Word of Mastery (Rank 3)
+							},
+							["isWQ"] = 110,
+							["requireSkill"] = 333,	-- Enchanting
+						},
 					},
 				}),
 				n(0, { 		-- Zone Drops

@@ -412,8 +412,8 @@ _.Zones =
 							]]--
 						},
 					}),
---[[					
 					n(-34, {	-- World Quests
+--[[					
 						q(42442),	-- Fight Night: Amalia
 						q(40299),	-- Fight Night: Bodhi Sunwayver
 						q(41881),	-- Fight Night: Heliosus
@@ -435,8 +435,17 @@ _.Zones =
 						q(41650),	-- Work Order: Silkweave Hood
 						q(41644),	-- Work Order: Warhide Gloves
 						q(41674),	-- Work Order: Word of Intellect
-					}),
 --]]					
+						{	-- Work Order: Word of Intellect
+							["questID"] = 41674,
+							["qg"] = 32725,	-- Warmage Silva
+							["groups"] = {
+								i(128606),	-- Formula: Enchant CLoak - Word of Intellect (Rank 3)
+							},
+							["isWQ"] = 110,
+							["requireSkill"] = 333,	-- Enchanting
+						},
+					}),
 					n(-180, {	-- Alchemy
 						["groups"] = {
 							q(39329, {	-- A Dormant Burner
@@ -718,18 +727,6 @@ _.Zones =
 							q(39903, {	-- An Enchanting Home
 								["qg"] = 93531,	-- Enchanter Nalthanis
 							}),
-							q(39883, {	-- Cloaked in Tradition
-								["groups"] = {
-									recipe(190875),	-- Word of Agility (Rank 1)
-									recipe(190876),	-- Word of Intellect (Rank 1)
-									recipe(190874),	-- Word of Strength (Rank 1)
-								},
-								["qg"] = 98017,	-- Guron Twaintail
-								["sourceQuests"] = { 
-									39879,	-- Strong Like the Earth
-									39880,	-- Waste Not
-								},
-							}),
 							q(39891, {	-- Cursed, But Convenient
 								["qg"] = 93531,	-- Enchanter Nalthanis
 								-- available after all other enchanting quests are complete. Need good source IDs here
@@ -744,14 +741,6 @@ _.Zones =
 							q(39920, {	-- On Azure Wings
 								["qg"] = 93531,	-- Enchanter Nalthanis
 								["sourceQuests"] = { 39907 },	-- Elven Enchantments
-							}),
-							q(39905, {	-- Ringing True
-								["groups"] = { 
-									recipe(190866),	-- Word of Critical Strike
-									recipe(190867),	-- Word of Haste
-									recipe(190868),	-- Word of Mastery
-								},
-								["qg"] = 90317,	-- Jace Darkweaver
 							}),
 							q(39874, {	-- Some Enchanted Evening
 								["groups"] = {
