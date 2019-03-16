@@ -1035,12 +1035,6 @@ _.NeverImplemented =
 			},
 			["u"] = 1,
 		})), 
-		model(74515, n(117343, { 	-- Hearthy 								(Never added in Game)
-			["groups"] = {	
-				p(2003),	
-			},
-			["u"] = 1,
-		})), 
 		model(57821, n(83589, {		-- Kelp Sproutling				 		(Never added in Game)
 			["groups"] = {	
 				p(1431),

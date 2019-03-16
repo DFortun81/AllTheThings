@@ -314,6 +314,7 @@ pet(104295, 1346);	-- Harmonious Porcupette
 pet(136900, 1718); 	-- Hateful Eye
 pet(118574, 1544); 	-- Hatespark the Tiny
 pet(8501, 67); 		-- Hawk Owl
+pet(163218, 2003);	-- Hearthy
 pet(46802, 228); 	-- Heavy Murloc Egg (Grunty)
 pet(23713, 130); 	-- Hippogryph Hatchling
 pet(123862, 1384); 	-- Hogs' Studded Collar (Hogs)
@@ -537,6 +538,7 @@ pet(136905, 1756); 	-- Ridgeback Piglet
 pet(130166, 1804); 	-- Risen Saber Kitten
 pet(140274, 1453);	-- River Calf
 pet(34492, 168); 	-- Rocket Chicken
+pet(163220, 2401);	-- Rooter
 pet(104317, 1349); 	-- Rotten Helper Box (Rotten Little Helper)
 pet(166488, 2553);	-- Rotting Ghoul
 pet(111866, 1411);	-- Royal Peacock

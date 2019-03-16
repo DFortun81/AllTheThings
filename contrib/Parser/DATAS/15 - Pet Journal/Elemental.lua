@@ -47,6 +47,7 @@ _.PetJournal =
 		p(834),		-- Grinder
 		p(2591),	-- Happiness
 		un(7, p(1544)),	-- Hatespark the Tiny
+		p(2003),	-- Hearthy
 		p(1949),	-- Igneous Flameling
 		p(856),		-- Jade Tentacle
 		p(1348),	-- Jadefire Spirit

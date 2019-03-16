@@ -61,6 +61,7 @@ _.PetJournal =
 		h(p(2565)),	-- Rebuilt Mechanical Spider
 		p(471),		-- Robo-Chick
 		un(10, p(168)),	-- Rocket Chicken
+		p(2401),	-- Rooter
 		p(1957),	-- Runeforged Servitor
 		p(1467),	-- Sky-Bo
 		p(1183),	-- Son of Animus
