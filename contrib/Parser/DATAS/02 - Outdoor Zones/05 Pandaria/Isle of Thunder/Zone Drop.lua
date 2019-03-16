@@ -330,6 +330,14 @@ _.Zones =
 							},
 						},
 					},
+					n(0, {	-- Zone Drops
+						i(97961, {	-- Half-Empty Food Container (Filthling Pet)
+							["crs"] = {
+								69251,	-- Quivering Filth
+							},
+							["description"] = "This item is obtained by killing Quivering Filth",
+						}),
+					}),
 				},
 			},
 		},

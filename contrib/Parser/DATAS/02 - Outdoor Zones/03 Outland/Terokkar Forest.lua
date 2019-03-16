@@ -9,6 +9,13 @@ _.Zones =
 				n(-4, {		-- Achievements
 					ach(1275),	-- Bombs Away
 				}),
+				prof(356, {	-- Fishing
+					i(27388, {	-- Mr. Pinchy
+						i(27445, { -- Magical Crawdad Box
+							["description"] = "Fish up Mr. Pinchy in Highland Mixed School.  You then have 3 chances at getting the pet.",
+						}),
+					}),
+				}),
 				n(-228, {	-- Flight Master
 					fp(121, { -- Allerian Stronghold, Terokkar Forest
 						["coords"] = { 
@@ -22,9 +29,6 @@ _.Zones =
 					}),
 				}),
 				n(-25, { 	-- Pet Battle
-					i(27445, { -- Magical Crawdad Box
-						["description"] = "This is obtained by fishing in Highland Mixed School.",
-					}),
 					p(514), -- Flayer Youngling
 					p(417), -- Rat
 					p(397), -- Skunk
