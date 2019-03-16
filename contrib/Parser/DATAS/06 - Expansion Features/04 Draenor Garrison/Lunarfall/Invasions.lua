@@ -76,6 +76,7 @@ _.ExpansionFeatures =
 								i(115404),	-- Oan's Observant Gaze
 								i(115406),	-- One-Eyed Chain Helm
 								i(115407),	-- Tehax's Penetrating Visage
+								i(122180),	-- Spiteleaf Podstrand
 								i(115414),	-- Gruntslayer Shoulderguards
 								i(115413),	-- Scaling Hook Spaulders
 								i(115415),	-- Spaulders of Primal Ferocity
@@ -103,6 +104,7 @@ _.ExpansionFeatures =
 								i(115404),	-- Oan's Observant Gaze
 								i(115406),	-- One-Eyed Chain Helm
 								i(115407),	-- Tehax's Penetrating Visage
+								i(122180),	-- Spiteleaf Podstrand
 								i(115414),	-- Gruntslayer Shoulderguards
 								i(115413),	-- Scaling Hook Spaulders
 								i(115415),	-- Spaulders of Primal Ferocity
@@ -134,6 +136,7 @@ _.ExpansionFeatures =
 								i(115404),	-- Oan's Observant Gaze
 								i(115406),	-- One-Eyed Chain Helm
 								i(115407),	-- Tehax's Penetrating Visage
+								i(122180),	-- Spiteleaf Podstrand
 								i(115414),	-- Gruntslayer Shoulderguards
 								i(115413),	-- Scaling Hook Spaulders
 								i(115415),	-- Spaulders of Primal Ferocity
@@ -185,6 +188,7 @@ _.ExpansionFeatures =
 								i(122171),	-- Acid-Grooved Gorenscale Leggings
 								i(115410),	-- Gatecrasher's Chain Boots
 								i(115407),	-- Tehax's Penetrating Visage
+								i(122180),	-- Spiteleaf Podstrand
 								i(115415),	-- Spaulders of Primal Ferocity
 								i(122166),	-- Blackrock Iron Stranglers
 								i(122173),	-- Charred Blackrock Iron Waistplate
