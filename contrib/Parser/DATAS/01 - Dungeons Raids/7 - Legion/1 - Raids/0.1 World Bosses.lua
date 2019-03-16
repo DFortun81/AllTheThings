@@ -12,6 +12,7 @@ _.Instances = { tier(7, {	-- Legion
 				["questID"] = 43512, -- Change to tracking quest later.
 				["isRaid"] = true,
 				["maps"] = { 680 }, -- Suramar
+				["coord"] = { 31.0, 65.5, 680 },
 				["groups"] = {
 					{
 						["achievementID"] = 11160,	-- Unleashed Monstrosities [Achievement]
@@ -31,6 +32,7 @@ _.Instances = { tier(7, {	-- Legion
 				["questID"] = 47061, -- Change to tracking quest later
 				["isRaid"] = true,
 				["maps"] = { 646 }, -- The Broken Shore
+				["coord"] = { 59.2, 62.6, 646 },
 				["groups"] = {
 					{
 						["achievementID"] = 11786,	-- Terrors of the Shore [Achievement]
@@ -49,6 +51,7 @@ _.Instances = { tier(7, {	-- Legion
 				["questID"] = 46947, -- Change to tracking quest later.
 				["isRaid"] = true,
 				["maps"] = { 646 }, -- The Broken Shore
+				["coord"] = { 59.2, 28.4, 646 },
 				["groups"] = {
 					{
 						["achievementID"] = 11786,	-- Terrors of the Shore [Achievement]
@@ -69,6 +72,7 @@ _.Instances = { tier(7, {	-- Legion
 				["questID"] = 44502,
 				["isRaid"] = true,
 				["maps"] = { 630 }, -- Azsuna
+				["coord"] = { 37.7, 83.6, 630 },
 				["groups"] = {
 					{
 						["achievementID"] = 11160,	-- Unleashed Monstrosities [Achievement]
@@ -88,6 +92,7 @@ _.Instances = { tier(7, {	-- Legion
 				["questID"] = 43448, -- Change to tracking quest later.
 				["isRaid"] = true,
 				["maps"] = { 650 }, -- Highmountain
+				["coord"] = { 58.4, 72.6, 650 },
 				["groups"] = {
 					{
 						["achievementID"] = 11160,	-- Unleashed Monstrosities [Achievement]
@@ -107,6 +112,7 @@ _.Instances = { tier(7, {	-- Legion
 				["questID"] = 43985, -- Change to tracking quest later.
 				["isRaid"] = true,
 				["maps"] = { 650 }, -- Highmountain
+				["coord"] = { 49.2, 7.60, 650 },
 				["groups"] = {
 					{
 						["achievementID"] = 11160,	-- Unleashed Monstrosities [Achievement]
@@ -128,6 +134,7 @@ _.Instances = { tier(7, {	-- Legion
 				["questID"] = 42819, -- Change to tracking quest later.
 				["isRaid"] = true,
 				["maps"] = { 641 }, -- Val'sharah
+				["coord"] = { 24.6, 69.6, 641 },
 				["groups"] = {
 					{
 						["achievementID"] = 11160,	-- Unleashed Monstrosities [Achievement]
@@ -154,6 +161,7 @@ _.Instances = { tier(7, {	-- Legion
 				["questID"] = 43192, -- Change to tracking quest later.
 				["isRaid"] = true,
 				["maps"] = { 630 }, -- Azsuna
+				["coord"] = { 43.0, 67.6, 630 },
 				["groups"] = {
 					{
 						["achievementID"] = 11160,	-- Unleashed Monstrosities [Achievement]
@@ -176,6 +184,7 @@ _.Instances = { tier(7, {	-- Legion
 				["questID"] = 47086,
 				["isRaid"] = true,
 				["maps"] = { 646 }, -- The Broken Shore
+				["coord"] = { 59.8, 27.8, 646 },
 				["groups"] = {
 					{
 						["achievementID"] = 11786,	-- Terrors of the Shore [Achievement]
@@ -197,6 +206,7 @@ _.Instances = { tier(7, {	-- Legion
 				["questID"] = 43513, -- Change to tracking quest later.
 				["isRaid"] = true,
 				["maps"] = { 680 }, -- Suramar
+				["coord"] = { 36.0, 66.4, 685 },
 				["groups"] = {
 					{
 						["achievementID"] = 11160,	-- Unleashed Monstrosities [Achievement]
@@ -216,6 +226,7 @@ _.Instances = { tier(7, {	-- Legion
 				["questID"] = 42270, -- Change to tracking quest later.
 				["isRaid"] = true,
 				["maps"] = { 634 }, -- Stormheim
+				["coord"] = { 46.6, 30.0, 634 },
 				["crs"] = {
 					107544, 
 					107023,
@@ -240,6 +251,7 @@ _.Instances = { tier(7, {	-- Legion
 				["questID"] = 42779, -- Change to tracking quest later.
 				["isRaid"] = true,
 				["maps"] = { 641 }, -- Val'sharah 
+				["coord"] = { 55.6, 43.2, 641 },
 				["groups"] = {
 					{
 						["achievementID"] = 11160,	-- Unleashed Monstrosities [Achievement]
@@ -259,6 +271,7 @@ _.Instances = { tier(7, {	-- Legion
 				["questID"] = 46945, -- Change to tracking quest later.
 				["isRaid"] = true,
 				["maps"] = { 646 }, -- The Broken Shore
+				["coord"] = { 89.6, 33.0, 646 },
 				["groups"] = {
 					{
 						["achievementID"] = 11786,	-- Terrors of the Shore [Achievement]
@@ -279,6 +292,7 @@ _.Instances = { tier(7, {	-- Legion
 				["questID"] = 42269, -- Change to tracking quest later.
 				["isRaid"] = true,
 				["maps"] = { 634 }, -- Stormheim
+				["coord"] = { 78.2, 8.60, 634 },
 				["crs"] = {
 					106981,	-- Captain Hring
 					106982,	-- Reaver Jdorn
@@ -305,6 +319,7 @@ _.Instances = { tier(7, {	-- Legion
 				["questID"] = 44287, -- Change to tracking quest later.
 				["isRaid"] = true,
 				["maps"] = { 630 }, -- Azsuna
+				["coord"] = { 52.6, 80.8, 630 },
 				["groups"] = {
 					{
 						["achievementID"] = 11160,	-- Unleashed Monstrosities [Achievement]
