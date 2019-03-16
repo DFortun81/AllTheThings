@@ -8,6 +8,14 @@ _.Zones =
 			["groups"] = {
 				n(-16, {	-- Rares
 					n(5347, {	-- Antilus the Soarer
+						["coords"] = {
+							{ 55.0, 65.8, 69 },
+							{ 55.0, 69.0, 69 },
+							{ 55.2, 71.6, 69 },
+							{ 54.6, 73.6, 69 },
+							{ 53.6, 70.6, 69 },
+							{ 54.0, 66.4, 69 },
+						},
 						["groups"] = {
 							i(9854),	-- Archer's Jerkin
 							i(7462),	-- Knight's Girdle
@@ -47,16 +55,16 @@ _.Zones =
 							i(7458),	-- Knight's Boots
 							i(7455),	-- Knight's Legguards
 						},
-						["coords"] = {
-							{ 55.0, 65.8 },
-							{ 55.0, 69.0 },
-							{ 55.2, 71.6 },
-							{ 54.6, 73.6 },
-							{ 53.6, 70.6 },
-							{ 54.0, 66.4 },
-						},
 					}), 
 					n(5349, {	-- Arash-ethis
+						["coords"] = {
+							{ 39.6, 20.6, 69 },
+							{ 41.0, 22.6, 69 },
+							{ 41.4, 23.8, 69 },
+							{ 38.8, 24.6, 69 },
+							{ 38.0, 24.2, 69 },
+							{ 37.8, 23.4, 69 },
+						},
 						["groups"] = {
 							i(9849),	-- Conjurer's Hood
 							i(9852),	-- Conjurer's Robe
@@ -96,16 +104,9 @@ _.Zones =
 							i(7456),	-- Knight's Headguard
 							i(7441),	-- Sentinel Cap
 						},
-						["coords"] = {
-							{ 39.6, 20.6 },
-							{ 41.0, 22.6 },
-							{ 41.4, 23.8 },
-							{ 38.8, 24.6 },
-							{ 38.0, 24.2 },
-							{ 37.8, 23.4 },
-						},
 					}), 
 					n(5346, {	-- Bloodroar the Stalker
+						["coord"] = { 52.6, 60.6, 69 },
 						["groups"] = {
 							i(9862),	-- Archer's Trousers
 							i(7461),	-- Knight's Bracers
@@ -149,9 +150,9 @@ _.Zones =
 							i(7455),	-- Knight's Legguards
 							i(7459),	-- Knight's Pauldrons
 						},
-						["coord"] = { 52.6, 60.6 },
 					}), 
 					n(5345, {	-- Diamond Head
+						["coord"] = { 49.0, 20.8, 69 },
 						["groups"] = {
 							i(7461),	-- Knight's Bracers
 							i(9846),	-- Conjurer's Bracers
@@ -180,9 +181,16 @@ _.Zones =
 							i(9862),	-- Archer's Trousers
 							i(7353),	-- Elder's Padded Armor
 						},
-						["coord"] = { 49.0, 20.8 },
 					}), 
 					n(5354, {	-- Gnarl Leafbrother
+						["coords"] = {
+							{ 72.4, 39.6, 69 },
+							{ 72.0, 43.4, 69 },
+							{ 70.6, 46.0, 69 },
+							{ 69.4, 44.2, 69 },
+							{ 69.6, 41.8, 69 },
+							{ 70.6, 41.0, 69 },
+						},
 						["groups"] = {
 							i(9854),	-- Archer's Jerkin
 							i(7456),	-- Knight's Headguard
@@ -220,16 +228,14 @@ _.Zones =
 							i(9875),	-- Sorcerer Sash
 							i(9896),	-- Jazeraint Bracers
 						},
-						["coords"] = {
-							{ 72.4, 39.6 },
-							{ 72.0, 43.4 },
-							{ 70.6, 46.0 },
-							{ 69.4, 44.2 },
-							{ 69.6, 41.8 },
-							{ 70.6, 41.0 },
-						},
 					}), 
 					n(5343, {	-- Lady Szallah
+						["coords"] = {
+							{ 31.0, 42.6, 69 },
+							{ 32.4, 43.8, 69 },
+							{ 31.8, 45.2, 69 },
+							{ 30.4, 45.8, 69 },
+						},
 						["groups"] = {
 							i(7462),	-- Knight's Girdle
 							i(7444),	-- Sentinel Boots
@@ -270,14 +276,9 @@ _.Zones =
 							i(9891),	-- Huntsman's Belt
 							i(9898),	-- Jazeraint Cloak
 						},
-						["coords"] = {
-							{ 31.0, 42.6 },
-							{ 32.4, 43.8 },
-							{ 31.8, 45.2 },
-							{ 30.4, 45.8 },
-						},
 					}), 
 					n(43488, {	-- Mordei the Earthrender
+						["coord"] = { 49.6, 30.2, 69 },
 						["groups"] = {
 							i(7407),	-- Infiltrator Armor
 							i(7436),	-- Twilight Cape
@@ -307,9 +308,16 @@ _.Zones =
 							i(7368),	-- Elder's Pants
 							i(7446),	-- Sentinel Cloak
 						},
-						["coord"] = { 49.6, 30.2 },
 					}), 
 					n(11447, {	-- Mushgog
+						["coords"] = {
+							{ 71.8, 58.6, 69 },
+							{ 72.0, 59.6, 69 },
+							{ 71.6, 63.0, 69 },
+							{ 70.4, 63.6, 69 },
+							{ 69.6, 62.2, 69 },
+							{ 69.6, 58.8, 69 },
+						},
 						["groups"] = {
 							i(7454),	-- Knight's Breastplate
 							i(9886),	-- Huntsman's Bands
@@ -344,16 +352,17 @@ _.Zones =
 							i(9901),	-- Jazeraint Belt
 							i(7439),	-- Sentinel Breastplate
 						},
-						["coords"] = {
-							{ 71.8, 58.6 },
-							{ 72.0, 59.6 },
-							{ 71.6, 63.0 },
-							{ 70.4, 63.6 },
-							{ 69.6, 62.2 },
-							{ 69.6, 58.8 },
-						}
 					}), 
 					n(5352, {	-- Old Grizzlegut
+						["coords"] = {
+							{ 56.4, 58.2, 69 },
+							{ 58.6, 58.4, 69 },
+							{ 60.0, 59.4, 69 },
+							{ 61.0, 62.6, 69 },
+							{ 59.0, 62.6, 69 },
+							{ 56.6, 62.6, 69 },
+							{ 55.4, 61.2, 69 },
+						},
 						["groups"] = {
 							i(7462),	-- Knight's Girdle
 							i(7437),	-- Twilight Cuffs
@@ -397,27 +406,22 @@ _.Zones =
 							i(7459),	-- Knight's Pauldrons
 							i(7432),	-- Twilight Cowl
 						},
-						["coords"] = {
-							{ 56.4, 58.2 },
-							{ 58.6, 58.4 },
-							{ 60.0, 59.4 },
-							{ 61.0, 62.6 },
-							{ 59.0, 62.6 },
-							{ 56.6, 62.6 },
-							{ 55.4, 61.2 },
-						},
 					}),
 					n(54533, {	-- Prince Lakma
+						["coords"] = {
+							{ 47.6, 74.6, 69 },
+							{ 48.2, 78.8, 69 },
+							{ 48.6, 79.0, 69 },
+						},
 						["groups"] = {
 							i(21024),	-- Chimaerok Tenderloin
 						},
-						["coords"] = {
-							{ 47.6, 74.6 },
-							{ 48.2, 78.8 },
-							{ 48.6, 79.0 },
-						},
 					}),
 					n(5350, {	-- Qirot
+						["coords"] = {
+							{ 76.6, 61.4, 69 },
+							{ 73.6, 64.0, 69 },
+						},
 						["groups"] = {
 							i(9886),	-- Huntsman's Bands
 							i(7455),	-- Knight's Legguards
@@ -453,12 +457,9 @@ _.Zones =
 							i(9901),	-- Jazeraint Belt
 							i(9876),	-- Sorcerer Slippers
 						},
-						["coords"] = {
-							{ 76.6, 61.4 },
-							{ 73.6, 64.0 },
-						},
 					}), 
 					n(11498, {	-- Skarr the Broken
+						["coord"] = { 84.2, 37.0, 69 },
 						["groups"] = {
 							i(9885),	-- Huntsman's Boots
 							i(9895),	-- Jazeraint Boots
@@ -493,9 +494,16 @@ _.Zones =
 							i(7488),	-- Captain's Circlet
 							i(7479),	-- Ranger Helm
 						},
-						["coord"] = { 84.2, 37.0 },
 					}), 
 					n(5356, {	-- Snarler
+						["coords"] = {
+							{ 74.6, 35.4, 69 },
+							{ 75.8, 38.6, 69 },
+							{ 77.8, 37.8, 69 },
+							{ 80.2, 39.8, 69 },
+							{ 82.2, 39.8, 69 },
+							{ 85.0, 37.6, 69 },
+						},
 						["groups"] = {
 							i(7492),	-- Captain's Cloak
 							i(7440),	-- Sentinel Trousers
@@ -531,16 +539,9 @@ _.Zones =
 							i(7474),	-- Regal Cloak
 							i(7429),	-- Twilight Armor
 						},
-						["coords"] = {
-							{ 74.6, 35.4 },
-							{ 75.8, 38.6 },
-							{ 77.8, 37.8 },
-							{ 80.2, 39.8 },
-							{ 82.2, 39.8 },
-							{ 85.0, 37.6 },
-						},
 					}), 
 					n(11497, {	-- The Razza
+						["coord"] = { 84.5, 49.7, 69 },
 						["groups"] = {
 							i(7455),	-- Knight's Legguards
 							i(7474),	-- Regal Cloak
@@ -576,7 +577,6 @@ _.Zones =
 							i(9290),	-- Field Plate Helmet
 							i(7482),	-- Ranger Shoulders
 						},
-						["coord"] = { 84.5, 49.7 },
 					}), 
 				}),
 			},

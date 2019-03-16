@@ -16,13 +16,13 @@ _.Zones =
 					{  -- A Tamer's Homecoming
 						["questID"] = 31918,
 						["qg"] = 66422,	-- Cassandra Kaboom
-						["coord"] = { 39.5, 79.1 },
+						["coord"] = { 39.5, 79.1, 199 },
 						["races"] = HORDE_ONLY,
 					},
 					{	-- Cassandra Kaboom
 						["questID"] = 31904,
 						["qg"] = 66422,	-- Cassandra Kaboom
-						["coord"] = { 39.5, 79.1 },
+						["coord"] = { 39.5, 79.1, 199 },
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					},

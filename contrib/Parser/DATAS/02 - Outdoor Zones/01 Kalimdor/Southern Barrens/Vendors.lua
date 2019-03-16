@@ -8,6 +8,8 @@ _.Zones =
 			["groups"] = {
 				n(-2, {	-- Vendors
 					n(44283, {	-- Camran <Mail Armor>
+						["coord"] = { 67.4, 48.2, 199 },
+						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(4797),	-- Fiery Cloak
 							i(4798),	-- Heavy Runed Cloak
@@ -15,8 +17,6 @@ _.Zones =
 							i(4799),	-- Antiquated Cloak
 							i(4800),	-- Mighty Chain Pants
 						},
-						["coord"] = { 67.4, 48.2 },
-						["races"] = ALLIANCE_ONLY,
 					}),
 				}),
 			},

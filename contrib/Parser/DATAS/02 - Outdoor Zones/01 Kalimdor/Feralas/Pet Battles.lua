@@ -15,7 +15,7 @@ _.Zones =
 					{	-- Traitor Gluk
 						["questID"] = 31871,
 						["qg"] = 66352,	-- Traitor Gluk
-						["coord"] = { 59.6, 49.6 },
+						["coord"] = { 59.6, 49.6, 69 },
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					},

@@ -15,7 +15,7 @@ _.Zones =
 					{	-- Zoltan
 						["questID"] = 31907,
 						["qg"] = 66442,	-- Zoltan
-						["coord"] = { 40.0, 56.6 },
+						["coord"] = { 40.0, 56.6, 77 },
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					},

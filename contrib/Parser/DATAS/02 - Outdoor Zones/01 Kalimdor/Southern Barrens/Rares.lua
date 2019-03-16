@@ -8,6 +8,16 @@ _.Zones =
 			["groups"] = {
 				n(-16, {	-- Rares
 					n(5834, {	-- Azzere the Skyblade
+						["coords"] = {
+							{ 45.8, 55.0, 199 },
+							{ 46.0, 58.6, 199 },
+							{ 44.2, 59.0, 199 },
+							{ 43.6, 57.6, 199 },
+							{ 42.4, 54.8, 199 },
+							{ 42.6, 53.4, 199 },
+							{ 43.8, 55.2, 199 },
+							{ 44.6, 56.2, 199 },
+						},
 						["groups"] = {
 							i(6617),	-- Sage's Mantle
 							i(6607),	-- Dervish Leggings
@@ -40,18 +50,10 @@ _.Zones =
 							i(9839),	-- Banded Gauntlets
 							i(7370),	-- Elder's Sash
 						},
-						["coords"] = {
-							{ 45.8, 55.0 },
-							{ 46.0, 58.6 },
-							{ 44.2, 59.0 },
-							{ 43.6, 57.6 },
-							{ 42.4, 54.8 },
-							{ 42.6, 53.4 },
-							{ 43.8, 55.2 },
-							{ 44.6, 56.2 },
-						},
 					}), 
 					n(5851, {	-- Captain Gerogg Hammertoe
+						["coord"] = { 49.8, 89.6, 199 },
+						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(7353),	-- Elder's Padded Armor
 							i(9855),	-- Archer's Belt
@@ -89,10 +91,10 @@ _.Zones =
 							i(9859),	-- Archer's Cap
 							i(9826),	-- Durable Robe
 						},
-						["coord"] = { 49.8, 89.6 },
-						["races"] = HORDE_ONLY,
 					}), 
 					n(5849, {	-- Digger Flameforge
+						["coord"] = { 47.8, 88.2, 199 },
+						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(7414),	-- Infiltrator Pants
 							i(9853),	-- Conjurer's Cinch
@@ -131,10 +133,13 @@ _.Zones =
 							i(7369),	-- Elder's Robe
 							i(9870),	-- Renegade Circlet
 						},
-						["coord"] = { 47.8, 88.2 },
-						["races"] = HORDE_ONLY,
 					}), 
 					n(5863, {	-- Geopriest Gukk'rok
+						["coords"] = {
+							{ 42.0, 42.6, 199 },
+							{ 44.2, 42.0, 199 },
+							{ 42.2, 37.6, 199 },
+						},
 						["groups"] = {
 							i(10408),	-- Banded Helm
 							i(10409),	-- Banded Boots
@@ -177,13 +182,13 @@ _.Zones =
 							i(7353),	-- Elder's Padded Armor
 							un(7, i(1539)),	-- Gnarled Hermit's Staff
 						},
-						["coords"] = {
-							{ 42.0, 42.6 },
-							{ 44.2, 42.0 },
-							{ 42.2, 37.6 },
-						},
 					}), 
 					n(5859, {	-- Hagg Taurenbane
+						["coords"] = {
+							{ 43.4, 84.6, 199 },
+							{ 41.8, 85.2, 199 },
+							{ 40.4, 83.0, 199 },
+						},
 						["groups"] = {
 							i(9859),	-- Archer's Cap
 							i(9850),	-- Conjurer's Mantle
@@ -225,13 +230,10 @@ _.Zones =
 							i(7435),	-- Twilight Mantle
 							i(7431),	-- Twilight Pants
 						},
-						["coords"] = {
-							{ 43.4, 84.6 },
-							{ 41.8, 85.2 },
-							{ 40.4, 83.0 },
-						},
 					}), 
 					n(5847, {	-- Heggin Stonewhisker
+						["coord"] = { 47.0, 88.6, 199 },
+						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(9846),	-- Conjurer's Bracers
 							i(9845),	-- Conjurer's Shoes
@@ -273,10 +275,10 @@ _.Zones =
 							i(7438),	-- Twilight Belt
 							un(7, i(2035)),	-- Sword of the Night Sky
 						},
-						["coord"] = { 47.0, 88.6 },
-						["races"] = HORDE_ONLY,
 					}), 
 					n(5848, {	-- Malgin Barleybrew
+						["coord"] = { 47.4, 85.8, 199 },
+						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(9860),	-- Archer's Cloak
 							i(9826),	-- Durable Robe
@@ -326,10 +328,9 @@ _.Zones =
 							i(7447),	-- Sentinel Bracers
 							i(7438),	-- Twilight Belt
 						},
-						["coord"] = { 47.4, 85.8 },
-						["races"] = HORDE_ONLY,
 					}), 
 					n(3253, {	-- Silithid Harvester
+						["coord"] = { 41.2, 67.0, 199 },
 						["groups"] = {
 							i(9860),	-- Archer's Cloak
 							i(9853),	-- Conjurer's Cinch
@@ -370,9 +371,9 @@ _.Zones =
 							i(7461),	-- Knight's Bracers
 							i(7424),	-- Phalanx Spaulders
 						},
-						["coord"] = { 41.2, 67.0 },
 					}), 
 					n(5829, {	-- Snort the Heckler
+						["coord"] = { 45.6, 43.6, 199 },
 						["groups"] = {
 							i(9820),	-- Durable Boots
 							i(7411),	-- Infiltrator Cloak
@@ -408,9 +409,9 @@ _.Zones =
 							i(6616),	-- Sage's Pants
 							i(6610),	-- Sage's Robe
 						},
-						["coord"] = { 45.6, 43.6 },
 					}), 
 					n(5864, {	-- Swinegart Spearhide
+						["coord"] = { 38.6, 33.6, 199 },
 						["groups"] = {
 							i(9867),	-- Renegade Cloak
 							i(7354),	-- Elder's Boots
@@ -453,9 +454,15 @@ _.Zones =
 							i(10137),	-- High Councillor's Boots
 							i(10135),	-- High Councillor's Tunic
 						},
-						["coord"] = { 38.6, 33.6 },
 					}),
 					n(5832, {	-- Thunderstomp
+						["coords"] = {
+							{ 48.2, 74.6, 199 },
+							{ 49.8, 80.0, 199 },
+							{ 46.4, 78.6, 199 },
+							{ 44.6, 80.0, 199 },
+							{ 44.6, 77.4, 199 },
+						},
 						["groups"] = {
 							i(9861),	-- Archer's Gloves
 							i(7418),	-- Phalanx Breastplate
@@ -493,14 +500,7 @@ _.Zones =
 							i(9871),	-- Renegade Leggings
 							i(7446),	-- Sentinel Cloak
 						},
-						["coords"] = {
-							{ 48.2, 74.6 },
-							{ 49.8, 80.0 },
-							{ 46.4, 78.6 },
-							{ 44.6, 80.0 },
-							{ 44.6, 77.4 },
-						},
-					}), 					
+					}),
 				}),
 			},
 		}),

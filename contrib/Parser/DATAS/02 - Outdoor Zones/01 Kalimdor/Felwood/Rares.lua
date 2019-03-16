@@ -7,7 +7,14 @@ _.Zones =
 		m(77, {	-- Felwood
 			["groups"] = {
 				n(-16, {	-- Rares	
-					n(14340, { 		-- Alshirr Banebreath
+					n(14340, { 	-- Alshirr Banebreath
+						["coords"] = {
+							{ 40.0, 82.2, 77 },
+							{ 40.6, 83.2, 77 },
+							{ 41.8, 84.0, 77 },
+							{ 43.2, 85.6, 77 },
+							{ 43.8, 85.8, 77 },
+						},
 						["groups"] = {
 							i(7522),	-- Gossamer Boots
 							i(8120),	-- Heraldic Cloak
@@ -65,22 +72,16 @@ _.Zones =
 							i(9961),	-- Warmonger's Belt
 							i(9960),	-- Warmonger's Gauntlets
 						},
-						["coords"] = {
-							{ 40.0, 82.2 },
-							{ 40.6, 83.2 },
-							{ 41.8, 84.0 },
-							{ 43.2, 85.6 },
-							{ 43.8, 85.8 },
-						},
 					}), 
-					n(50362, { 		-- Blackbog the Fang
+					n(50362, { 	-- Blackbog the Fang
+						["coord"] = { 34.8, 59.6, 77 },
 						["groups"] = {
 							i(9941),	-- Abjurer's Mantle
 							i(7534),	-- Cabalist Bracers
 						},
-						["coord"] = { 34.8, 59.6 },
 					}), 
-					n(50905, { 		-- Cida
+					n(50905, { 	-- Cida
+						["coord"] = { 45.0, 31.8, 77 },
 						["groups"] = {
 							i(7469),	-- Regal Leggings
 							i(9912),	-- Royal Amice
@@ -103,9 +104,12 @@ _.Zones =
 							i(9910),	-- Royal Gloves
 							i(9922),	-- Tracker's Leggings
 						},
-						["coord"] = { 45.0, 31.8 },
 					}), 
-					n(14339, { 		-- Death Howl
+					n(14339, { 	-- Death Howl
+						["coords"] = {
+							{ 54.2, 84.4, 77 },
+							{ 48.2, 74.6, 77 },
+						},
 						["groups"] = {
 							i(9933),	-- Brigade Leggings
 							i(9966),	-- Embossed Plate Armor
@@ -156,12 +160,9 @@ _.Zones =
 							i(7542),	-- Champion's Greaves
 							i(9970),	-- Embossed Plate Leggings
 						},
-						["coords"] = {
-							{ 54.2, 84.4 },
-							{ 48.2, 74.6 },
-						},
 					}), 
-					n(7104, { 		-- Dessecus
+					n(7104, { 	-- Dessecus
+						["coord"] = { 57.8, 19.6, 77 },
 						["groups"] = {
 							i(10080),	-- Lord's Gauntlets
 							i(9939),	-- Abjurer's Gloves
@@ -204,9 +205,9 @@ _.Zones =
 							i(9957),	-- Warmonger's Chestpiece
 							i(9963),	-- Warmonger's Circlet
 						},
-						["coord"] = { 57.8, 19.6 },
 					}), 
-					n(51025, { 		-- Dilennaa
+					n(51025, { 	-- Dilennaa
+						["coord"] = { 42.2, 48.2, 77 },
 						["groups"] = {
 							i(10194),	-- Crusader's Cloak
 							i(9938),	-- Abjurer's Cloak
@@ -217,9 +218,9 @@ _.Zones =
 							i(10092),	-- Gothic Plate Spaulders
 							i(7519),	-- Gossamer Pants
 						},
-						["coord"] = { 42.2, 48.2 },
 					}), 
-					n(50833, { 		-- Duskcoat
+					n(50833, { 	-- Duskcoat
+						["coord"] = { 39.8, 31.4, 77 },
 						["groups"] = {
 							i(10091),	-- Gothic Plate Leggings
 							i(7540),	-- Champion's Helmet
@@ -234,9 +235,9 @@ _.Zones =
 							i(10090),	-- Gothic Plate Helmet
 							i(9947),	-- Chieftain's Belt
 						},
-						["coord"] = { 39.8, 31.4 },
 					}), 
-					n(51046, { 		-- Fidonis
+					n(51046, { 	-- Fidonis
+						["coord"] = { 38.6, 52.8, 77 },
 						["groups"] = {
 							i(10072),	-- Righteous Gloves
 							i(7532),	-- Cabalist Spaulders
@@ -265,9 +266,9 @@ _.Zones =
 							i(9960),	-- Warmonger's Gauntlets
 							i(9965),	-- Warmonger's Pauldrons
 						},
-						["coord"] = { 38.6, 52.8 },
 					}), 
-					n(51017, { 		-- Gezan
+					n(51017, { 	-- Gezan
+						["coord"] = { 52.6, 31.8, 77 },
 						["groups"] = {
 							i(10127),	-- Revenant Bracers
 							i(10067),	-- Righteous Waistguard
@@ -285,9 +286,10 @@ _.Zones =
 							i(9963),	-- Warmonger's Circlet
 							i(9965),	-- Warmonger's Pauldrons
 						},
-						["coord"] = { 52.6, 31.8 },
 					}), 
-					n(107595, { 	-- Grimrot
+					n(107595, { -- Grimrot
+						["coord"] = { 38.2, 45.4, 77 },
+						["description"] = "|cff66ccffThis is the daytime light grey bear model.|r",
 						["groups"] = {
 							i(10384),	-- Hyperion Armor
 							i(10266),	-- Masterwork Breastplate
@@ -300,10 +302,10 @@ _.Zones =
 							i(9942),	-- Abjurer's Pants
 							i(10252),	-- Master's Leggings
 						},
-						["coord"] = { 38.2, 45.4 },
-						["description"] = "|cff66ccffThis is the daytime light grey bear model.|r"
 					}), 
-					n(107596, { 	-- Grimrot
+					n(107596, { -- Grimrot
+						["coord"] = { 38.2, 45.4, 77 },
+						["description"] = "|cff66ccffThis is the nightime black diseased bear model.|r",
 						["groups"] = {
 							i(10384),	-- Hyperion Armor
 							i(10266),	-- Masterwork Breastplate
@@ -316,17 +318,16 @@ _.Zones =
 							i(9942),	-- Abjurer's Pants
 							i(10252),	-- Master's Leggings
 						},
-						["coord"] = { 38.2, 45.4 },
-						["description"] = "|cff66ccffThis is the nightime black diseased bear model.|r"
 					}),
-					n(50925, { 		-- Grovepaw
+					n(50925, { 	-- Grovepaw
+						["coord"] = { 38.2, 72.8, 77 },
 						["groups"] = {
 							i(10092),	-- Gothic Plate Spaulders
 							i(9932),	-- Brigade Circlet
 						},
-						["coord"] = { 38.2, 72.8 },
 					}), 
-					n(7137, { 		-- Immolatus
+					n(7137, { 	-- Immolatus
+						["coord"] = { 41.4, 42.0, 77 },
 						["groups"] = {
 							i(10201),	-- Overlord's Greaves
 							i(9938),	-- Abjurer's Cloak
@@ -361,9 +362,12 @@ _.Zones =
 							i(9939),	-- Abjurer's Gloves
 							i(10066),	-- Duskwoven Sash
 						},
-						["coord"] = { 41.4, 42.0 },
 					}), 
-					n(14344, { 		-- Mongress
+					n(14344, { 	-- Mongress
+						["coords"] = {
+							{ 43.4, 75.8, 77 },
+							{ 46.8, 82.0, 77 },
+						},
 						["groups"] = {
 							i(9948),	-- Chieftain's Boots
 							i(9922),	-- Tracker's Leggings
@@ -381,12 +385,9 @@ _.Zones =
 							i(7542),	-- Champion's Greaves
 							i(9911),	-- Royal Trousers
 						},
-						["coords"] = {
-							{ 43.4, 75.8 },
-							{ 46.8, 82.0 },
-						},
 					}), 
-					n(50777, { 		-- Needle
+					n(50777, { 	-- Needle
+						["coord"] = { 51.0, 34.2, 77 },
 						["groups"] = {
 							i(7527),	-- Cabalist Chestpiece
 							i(7540),	-- Champion's Helmet
@@ -401,9 +402,14 @@ _.Zones =
 							i(9961),	-- Warmonger's Belt
 							i(9951),	-- Chieftain's Cloak
 						},
-						["coord"] = { 51.0, 34.2 },
 					}), 
-					n(14343, { 		-- Olm the Wise
+					n(14343, { 	-- Olm the Wise
+						["coords"] = {
+							{ 57.8, 19.4, 77 },
+							{ 56.6, 23.6, 77 },
+							{ 55.2, 23.6, 77 },
+							{ 54.6, 27.2, 77 },
+						},
 						["groups"] = {
 							i(9961),	-- Warmonger's Belt
 							i(9949),	-- Chieftain's Bracers
@@ -442,14 +448,9 @@ _.Zones =
 							i(7539),	-- Champion's Leggings
 							i(10086),	-- Gothic Plate Armor
 						},
-						["coords"] = {
-							{ 57.8, 19.4 },
-							{ 56.6, 23.6 },
-							{ 55.2, 23.6 },
-							{ 54.6, 27.2 },
-						},
 					}), 
-					n(14342, { 		-- Ragepaw
+					n(14342, { 	-- Ragepaw
+						["coord"] = { 48.6, 89.0, 77 },
 						["groups"] = {
 							i(9923),	-- Tracker's Shoulderpads
 							i(9928),	-- Brigade Breastplate
@@ -490,9 +491,9 @@ _.Zones =
 							i(9910),	-- Royal Gloves
 							i(9925),	-- Tracker's Wristguards
 						},
-						["coord"] = { 48.6, 89.0 },
 					}), 
-					n(50724, { 		-- Spinecrawl
+					n(50724, { 	-- Spinecrawl
+						["coord"] = { 60.6, 22.2, 77 },
 						["groups"] = {
 							i(9963),	-- Warmonger's Circlet
 							i(10071),	-- Righteous Cloak
@@ -509,9 +510,9 @@ _.Zones =
 							i(9948),	-- Chieftain's Boots
 							i(10066),	-- Duskwoven Sash
 						},
-						["coord"] = { 60.6, 22.2 },
 					}), 
-					n(14345, { 		-- The Ongar
+					n(14345, { 	-- The Ongar
+						["coord"] = { 42.0, 45.8, 77 },
 						["groups"] = {
 							i(7529),	-- Cabalist Helm
 							i(7519),	-- Gossamer Pants
@@ -547,9 +548,9 @@ _.Zones =
 							i(10206),	-- Overlord's Girdle
 							i(7528),	-- Cabalist Leggings
 						},
-						["coord"] = { 42.0, 45.8 },
 					}), 
-					n(50864, { 		-- Thicket
+					n(50864, { 	-- Thicket
+						["coord"] = { 59.6, 6.8, 77 },
 						["groups"] = {
 							i(7531),	-- Cabalist Boots
 							i(7526),	-- Gossamer Belt
@@ -566,7 +567,6 @@ _.Zones =
 							i(7468),	-- Regal Robe
 							i(9963),	-- Warmonger's Circlet
 						},
-						["coord"] = { 59.6, 6.8 },
 					}), 
 				}),
 			},

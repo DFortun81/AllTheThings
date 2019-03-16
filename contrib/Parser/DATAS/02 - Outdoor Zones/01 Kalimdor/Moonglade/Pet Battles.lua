@@ -13,7 +13,7 @@ _.Zones =
 					{	-- Elena Flutterfly
 						["questID"] = 31908,
 						["qg"] = 66412,	-- Elena Flutterfly
-						["coord"] = { 46.0, 60.4 },
+						["coord"] = { 46.0, 60.4, 80 },
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					},
