@@ -380,6 +380,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				["u"] = 38,				-- Ordos - Legendary Cloak
 				["lvl"] = 80,			-- Confirmed by Lucetia November 5, 2018
 				["maps"] = { 554 }, 	-- Timeless Isle
+				["sourceQuests"] = {
+					33104,	-- A Pandaren Legend
+				},
 				["groups"] = {
 					un(38, ach(8533)),	-- Ordos
 					un(38, i(104273, {	-- Flame-Scarred Cache of Offerings
@@ -388,59 +391,78 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							-- NOTE FOR CONTRIBS: Only add items you receive to this. The old listings on WoWHead may be inaccurate or out of date.
 						},
 					})),
-					un(38, i(105806)),
-					un(38, i(105811)),
-					un(38, i(105810)),
-					un(38, i(105809)),
-					un(38, i(105805)),
-					un(38, i(105807)),
-					un(38, i(105804)),
-					un(38, i(105803)),
-					un(38, i(105808)),
-					un(38, i(105801)),
-					un(38, i(105800)),
-					un(38, i(105799)),
-					un(38, i(105798)),
-					un(38, i(105797)),
-					un(38, i(105796)),
-					un(38, i(105795)),
-					un(38, i(105802)),
-					un(38, i(105794)),
-					un(38, i(105770)),
-					un(38, i(105768)),
-					un(38, i(105774)),
-					un(38, i(105769)),
-					un(38, i(105773)),
-					un(38, i(105771)),
-					un(38, i(105772)),
-					un(38, i(105767)),
-					un(38, i(105775)),
-					un(38, i(105791)),
-					un(38, i(105793)),
-					un(38, i(105787)),
-					un(38, i(105790)),
-					un(38, i(105792)),
-					un(38, i(105786)),
-					un(38, i(105785)),
-					un(38, i(105789)),
-					un(38, i(105788)),
-					un(38, i(105777)),
-					un(38, i(105781)),
-					un(38, i(105776)),
-					un(38, i(105783)),
-					un(38, i(105779)),
-					un(38, i(105784)),
-					un(38, i(105780)),
-					un(38, i(105778)),
-					un(38, i(105782)),
-					un(38, i(105754)),
-					un(38, i(105759)),
-					un(38, i(105758)),
-					un(38, i(105761)),
-					un(38, i(105757)),
-					un(38, i(105756)),
-					un(38, i(105760)),
-					un(38, i(105755)),
+					
+					-- Head
+					un(38, i(105804)),	-- Aladya's Spiritfire Greathelm
+					un(38, i(105810)),	-- Buc-Zakai Burning Hood
+					un(38, i(105806)),	-- Circlet of the Panser
+					un(38, i(105809)),	-- Crest of Burning Deeds
+					un(38, i(105808)),	-- Damien's Ice-Vein Mask
+					un(38, i(105805)),	-- Dominik's Casque of Raging Flame
+					un(38, i(105807)),	-- Magdalena's Murderous Crown
+					un(38, i(105811)),	-- Olivia's Graceful Gaze
+					un(38, i(105803)),	-- Stickney's Grey-Shade Hood
+					
+					-- Neck
+					un(38, i(105766)),	-- Anafielle's Spiked Choker
+					un(38, i(105765)),	-- Bladeforger Necklace
+					un(38, i(105763)),	-- Penate's Perilous Pendant
+					un(38, i(105764)),	-- Rising New Moon Talisman
+					un(38, i(105762)),	-- Smoldering Eye
+					
+					-- Shoulder
+					un(38, i(105795)),	-- Bo He Me's Deathwind Mantle
+					un(38, i(105800)),	-- Firearrow Shoulderpads
+					un(38, i(105798)),	-- Flame Healer's Shoulderguards
+					un(38, i(105799)),	-- Fleshsmoke Chain Shoulders
+					un(38, i(105796)),	-- Rossi's Rosin-Soaked Shoulderplates
+					un(38, i(105797)),	-- Shay-Nii's Popping Shoulderpads
+					un(38, i(105801)),	-- Spaulders of Dominating Dreams
+					un(38, i(105794)),	-- Starry Spaulders of Durability
+					un(38, i(105802)),	-- Yaungol Deathcult Shoulderguards
+					
+					-- Chest
+					un(38, i(105774)),	-- Catia's Flowing Robes
+					un(38, i(105771)),	-- Chestguard of Pyrrhic Immolation
+					un(38, i(105775)),	-- Gleaming Eye Spellplate
+					un(38, i(105767)),	-- Hoodrych's Bloodied Chestplate
+					un(38, i(105772)),	-- Moonhee's Mean Vest
+					un(38, i(105769)),	-- Omegal's Crushing Carapace
+					un(38, i(105768)),	-- Pamela's Muuscat Wrap
+					un(38, i(105773)),	-- Ulmaas' Robes of Crushing Magma
+					un(38, i(105770)),	-- Zoo-Per's Superior Chestguard
+					
+					-- Wrists
+					un(38, i(105789)),	-- Bjam's Blasting Bracers
+					un(38, i(105792)),	-- Bowflight Wristguard
+					un(38, i(105793)),	-- Bracers of Simmering Fury
+					un(38, i(105791)),	-- Bracers of Unquestioning Belief
+					un(38, i(105787)),	-- Burnseal Bracers
+					un(38, i(105790)),	-- Firetotem Bracers
+					un(38, i(105786)),	-- Ordosian Cultist's Bracers
+					un(38, i(105788)),	-- Paululum's Doodled Wraps
+					un(38, i(105785)),	-- Vanguard's Burly Bracers
+					
+					-- Waist
+					un(38, i(105782)),	-- Belt of Glowing Embers
+					un(38, i(105776)),	-- Belt of the Burning Soul
+					un(38, i(105784)),	-- Binkenstein's Burnished Belt
+					un(38, i(105778)),	-- Derevka's Gleaming Girdle
+					un(38, i(105783)),	-- Greatbelt of the Crendor
+					un(38, i(105779)),	-- Light Kindler Waistguard
+					un(38, i(105777)),	-- Remnar's Ruinous Girdle
+					un(38, i(105781)),	-- Venruki's Venerable Sash
+					un(38, i(105780)),	-- Windflame Girdle
+					
+					-- Legs
+					un(38, i(105758)),	-- Arielle's Ancient Legwraps
+					un(38, i(105754)),	-- Desirae's Dashing Leggings
+					un(38, i(105760)),	-- Hamlet's Wind-Whipped Leggings
+					un(38, i(105759)),	-- Magmaplates of Jian Wu Xi Feng
+					un(38, i(105755)),	-- Moshne's Keen Kilt
+					un(38, i(105761)),	-- Partik's Purified Legplates
+					un(38, i(105756)),	-- Poxleitner's Leggings of Lights
+					un(38, i(105757)),	-- Shipley's Shady Silks
 				},
 			})),
 			cr(62346, e(725, { 	-- Saylis's Warband [Galleon]
