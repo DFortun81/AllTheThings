@@ -1487,6 +1487,24 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				end
 				group = subgroup;
 			end
+		elseif paramA == "achievementID" then
+			-- Don't do anything
+			local regroup = {};
+			if app.Settings:Get("AccountMode") then
+				for i,j in ipairs(group) do
+					if app.RecursiveUnobtainableFilter(j) then
+						tinsert(regroup, setmetatable({["g"] = {}}, { __index = j }));
+					end
+				end
+			else
+				for i,j in ipairs(group) do
+					if app.RecursiveClassAndRaceFilter(j) and app.RecursiveUnobtainableFilter(j) then
+						tinsert(regroup, setmetatable({["g"] = {}}, { __index = j }));
+					end
+				end
+			end
+			
+			group = regroup;
 		else
 			-- Determine if this is a cache for an item
 			local itemID, sourceID;
@@ -1925,6 +1943,7 @@ end
 local fieldCache = {};
 local CacheFields;
 (function()
+fieldCache["achievementID"] = {};
 fieldCache["currencyID"] = {};
 fieldCache["creatureID"] = {};
 fieldCache["encounterID"] = {};
@@ -1980,6 +1999,7 @@ local function CacheSubFieldID(group, field, subfield)
 	end
 end
 CacheFields = function(group)
+	CacheFieldID(group, "achievementID");
 	CacheFieldID(group, "creatureID");
 	CacheFieldID(group, "currencyID");
 	CacheArrayFieldIDs(group, "creatureID", "crs");
@@ -7431,7 +7451,12 @@ local function RowOnEnter(self)
 			end
 			GameTooltip:AddDoubleLine("Cost", cost); 
 		end
-		if reference.criteriaID and reference.achievementID then GameTooltip:AddDoubleLine("Criteria for", GetAchievementLink(reference.achievementID)); end
+		if reference.criteriaID and reference.achievementID then
+			GameTooltip:AddDoubleLine("Criteria for", GetAchievementLink(reference.achievementID));
+		end
+		if reference.achievementID then
+			AttachTooltipSearchResults(GameTooltip, "achievementID:" .. reference.achievementID, SearchForField, "achievementID", reference.achievementID, true);
+		end
 		
 		-- Show Quest Prereqs
 		if reference.sourceQuests and not reference.saved then
