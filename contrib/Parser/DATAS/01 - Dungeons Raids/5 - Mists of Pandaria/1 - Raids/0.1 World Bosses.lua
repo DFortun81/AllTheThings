@@ -12,6 +12,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				["questID"] = 32518,
 				["maps"] = { 504 }, 	-- Isle of Thunder
 				["lvl"] = 85,			-- Confirmed by Lucetia November 5, 2018
+				["coord"] = { 60.01, 37.73, 504 },
 				["groups"] = {
 					ach(8028),	-- Praise the Sun!
 					
@@ -334,6 +335,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				["questID"] = 32519,
 				["maps"] = { 507 }, 	-- Isle of Giants
 				["lvl"] = 85,			-- Confirmed by Lucetia November 5, 2018
+				["coord"] = { 49.90, 56.85, 507 },
 				["groups"] = {
 					ach(8123),	-- Millions of Years of Evolution vs. My Fist
 					i(94228),	-- Reins of the Cobalt Primordial Direhorn
@@ -436,6 +438,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				["u"] = 38,				-- Ordos - Legendary Cloak
 				["lvl"] = 80,			-- Confirmed by Lucetia November 5, 2018
 				["maps"] = { 554 }, 	-- Timeless Isle
+				["coord"] = { 54.98, 17.36, 554 },
 				["sourceQuests"] = {
 					33104,	-- A Pandaren Legend
 				},
@@ -526,6 +529,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				["questID"] = 32098,
 				["maps"] = { 376 }, 	-- Valley of the Four Winds
 				["lvl"] = 85,			-- Confirmed by Lucetia November 5, 2018
+				["coord"] = { 70.79, 63.51, 376 },
 				["groups"] = {
 					ach(6517),	-- Extinction Event
 					i(89783),	-- Son of Galleon's Saddle
@@ -650,6 +654,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				["questID"] = 32099,
 				["maps"] = { 379 },		-- Kun-Lai Summit
 				["lvl"] = 85,			-- Confirmed by Lucetia November 5, 2018
+				["coord"] = { 53.53, 65.26, 379 },
 				["groups"] = {
 					{	-- Settle Down, Bro
 						["achievementID"] = 6480,	-- Settle Down, Bro
@@ -890,6 +895,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				["maps"] = { 554 }, -- Timeless Isle
 				["isRaid"] = true,
 				["lvl"] = 80,		-- Confirmed by Lucetia November 5, 2018
+				["coord"] = { 38.87, 55.29, 554 },
 				["qgs"] = {
 					71952,	-- Chi-Ji, The Red Crane
 					71954,	-- Niuzao, The Black Ox
