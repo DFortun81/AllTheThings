@@ -4,6 +4,9 @@
 
 _.Instances = { tier(1, {	-- Classic
 	inst(227, { 	-- Blackfathom Deeps
+		["lvl"] = 15,
+		["maps"] = { 221, 222, 223 },
+		["coord"] =	{ 16.53, 11.01, 63 },	-- Blackfathom Deeps, Ashenvale
 		["groups"] = {
 			n(-17, {	-- Quests 
 				qg(75606, qa(34672, { 	-- The Rise of Aku'mai
@@ -305,7 +308,5 @@ _.Instances = { tier(1, {	-- Classic
 				}),
 			}),
 		},
-		["lvl"] = 15,
-		["maps"] = { 221, 222, 223 },
 	}),
 })};
