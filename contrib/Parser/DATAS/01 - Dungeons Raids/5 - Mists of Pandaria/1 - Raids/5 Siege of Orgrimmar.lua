@@ -7,6 +7,25 @@ _.Instances =
 	{	-- Mists of Pandaria
 		["groups"] = {
 			inst(369, { 	-- Siege of Orgrimmar
+				["isRaid"] = true,
+				["lvl"] = 90,
+				["mapID"] = 556,
+				["maps"] = {
+					557,
+					558,
+					559,
+					560,
+					561,
+					562,
+					563,
+					564,
+					565,
+					566,
+					567,
+					568,
+					569,
+					570,
+				},
 				["groups"] = {
 					n(-2, {	-- Vendors
 						n(5643, {
@@ -22,7 +41,281 @@ _.Instances =
 						["ignoreBonus"] = true,
 						["description"] = "This version of the instance was the original Raid Finder difficulty mode. The loot all had unique item IDs for each difficulty tier as well as their Warforged variants similar to how ToT was done. Blizzard changed their design philosophy for the better with Patch 6.0 and chose to reuse an item's ID and apply a bonus ID rather than creating a brand new item ID with the same base stats.",
 						["groups"] = {
-						
+							cr(71543, e(852, {	-- Immerseus
+								un(2, i(104920)),	-- Bolt-Burster Grips LFR
+								un(2, i(104927)),	-- Bracers of Purified Spirit LFR
+								un(2, i(104917)),	-- Bracers of Sordid Sleep LFR
+								un(2, i(104913)),	-- Bubble-Burst Bracers LFR
+								un(2, i(104914)),	-- Chestplate of Congealed Corrosion LFR
+								un(2, i(104923)),	-- Cloak of Misguided Power LFR
+								un(2, i(104915)),	-- Corruption-Rotted Gauntlets LFR
+								un(2, i(104919)),	-- Encapsulated Essence of Immerseus LFR
+								un(2, i(104929)),	-- Greatbelt of Living Waters LFR
+								un(2, i(104911)),	-- Hood of Blackened Tears LFR
+								un(2, i(104922)),	-- Hood of Swirling Senses LFR
+								un(2, i(104921)),	-- Ichor-Dripping Shoulderpads LFR
+								un(2, i(104909)),	-- Immerseus' Crystalline Eye LFR
+								un(2, i(104918)),	-- Pauldrons of Violent Eruption LFR
+								un(2, i(104912)),	-- Puddle Punishers LFR
+								un(2, i(104924)),	-- Purified Bindings of Immerseus LFR
+								un(2, i(104926)),	-- Salt Water Sandals LFR
+								un(2, i(104925)),	-- Seal of Eternal Sorrow LFR
+								un(2, i(104916)),	-- Treads of Unchained Hate LFR
+								un(2, i(104910)),	-- Trident of Corrupted Waters LFR
+								un(2, i(104930)),	-- Waterwalker Greatboots LFR
+							})),
+							cr(71475, e(849, {	-- The Fallen Protectors (Rook Stonetoe)
+								un(2, i(104936)),	-- Darkfallen Shoulderplates LFR
+								un(2, i(104931)),	-- Death Lotus Crossbow LFR
+								un(2, i(104951)),	-- Gaze of Echoing Despair LFR
+								un(2, i(104939)),	-- Gloomwrap Greatcloak LFR
+								un(2, i(104950)),	-- Grips of the Fallen Council LFR
+								un(2, i(104934)),	-- Grips of Unending Anguish LFR
+								un(2, i(104944)),	-- Lifebane Bracers LFR
+								un(2, i(104945)),	-- Petrified Pennyroyal Ring LFR
+								un(2, i(104935)),	-- Poisonbinder Girth LFR
+								un(2, i(104946)),	-- Purehearted Cricket Cage LFR
+								un(2, i(104942)),	-- Robes of the Tendered Heart LFR
+								un(2, i(104940)),	-- Rook's Unlucky Talisman LFR
+								un(2, i(104948)),	-- Sabatons of Defilement LFR
+								un(2, i(104941)),	-- Sha-Seared Sandals LFR
+								un(2, i(104937)),	-- Shockstriker Gauntlets LFR
+								un(2, i(104949)),	-- Shoulderguards of Dark Meditations LFR
+								un(2, i(104943)),	-- Shoulderpads of Dou Dou Chong LFR
+								un(2, i(104947)),	-- Shoulders of the Roiling Inferno LFR
+								un(2, i(104932)),	-- Softfoot's Last Resort LFR
+								un(2, i(104938)),	-- Sorrowpath Signet LFR
+								un(2, i(104933)),	-- Stonetoe's Tormented Treads LFR
+							})),
+							cr(72276, e(866, {	-- Norushen (Amalgam of Corruption)
+								un(2, i(104964)),	-- Blight Hurlers LFR
+								un(2, i(104969)),	-- Boots of Broken Reliance LFR
+								un(2, i(104958)),	-- Bracers of Blind Hatred LFR
+								un(2, i(104963)),	-- Bracers of Broken Causation LFR
+								un(2, i(104971)),	-- Bracers of Final Serenity LFR
+								un(2, i(104970)),	-- Confident Grips LFR
+								un(2, i(104960)),	-- Drape of the Despairing Pit LFR
+								un(2, i(104961)),	-- Fusion-Fire Core LFR
+								un(2, i(104955)),	-- Gloves of the Golden Protector LFR
+								un(2, i(104956)),	-- Leggings of Unabashed Anger LFR
+								un(2, i(104968)),	-- Norushen's Enigmatic Barrier LFR
+								un(2, i(104952)),	-- Norushen's Shortblade LFR
+								un(2, i(104957)),	-- Quarantine Shoulderguards LFR
+								un(2, i(104959)),	-- Rage-Blind Greathelm LFR
+								un(2, i(104953)),	-- Reality Ripper Ring LFR
+								un(2, i(104966)),	-- Rime-Rift Shoulders LFR
+								un(2, i(104954)),	-- Robes of the Blackened Watcher LFR
+								un(2, i(104965)),	-- Sash of the Last Guardian LFR
+								un(2, i(104972)),	-- Shadow-Binder's Kilt LFR
+								un(2, i(104967)),	-- Untainted Guardian's Chain LFR
+								un(2, i(104973)),	-- Wristplates of Broken Doubt LFR
+								un(2, i(104962)),	-- Xifeng, Longblade of the Titanic Guardian LFR
+							})),
+							cr(71734, e(867, {	-- Sha of Pride
+								un(2, i(104974)),	-- Assurance of Consequence LFR
+								un(2, i(104982)),	-- Choker of the Final Word LFR
+								un(2, i(104979)),	-- Crown of Boastful Words LFR
+								un(2, i(104977)),	-- Gaze of Arrogance LFR
+								un(2, i(104981)),	-- Greatsword of Pride's Fall LFR
+								un(2, i(104980)),	-- Greaves of Sublime Superiority LFR
+								un(2, i(104975)),	-- Necklace of Fading Light LFR
+								un(2, i(104976)),	-- Prismatic Prison of Pride LFR
+								un(2, i(104978)),	-- Self-Reflecting Mask LFR
+								un(2, i(104983)),	-- Shield of Mockery LFR
+							})),
+							cr(72249, e(881, {	-- Galakras
+								un(2, i(104991)),	-- Arcsmasher Bracers LFR
+								un(2, i(104995)),	-- Bone-Inlaid Sandals LFR
+								un(2, i(104988)),	-- Cannoneer's Multipocket Gunbelt LFR
+								un(2, i(104984)),	-- Dagryn's Discarded Longbow LFR
+								un(2, i(104989)),	-- Dagryn's Fuselight Bracers LFR
+								un(2, i(105002)),	-- Dragonmaw Emergency Strap LFR
+								un(2, i(105001)),	-- Drakebinder Greatstaff LFR
+								un(2, i(104993)),	-- Evil Eye of Galakras LFR
+								un(2, i(105000)),	-- Extinguished Ember of Galakras LFR
+								un(2, i(104997)),	-- Flameslinger's Fiery Cowl LFR
+								un(2, i(104994)),	-- Galakrond Control Band LFR
+								un(2, i(105003)),	-- Grips of Tidal Force LFR
+								un(2, i(104987)),	-- Korgra's Venom-Soaked Gauntlets LFR
+								un(2, i(104992)),	-- Krugruk's Rigid Shoulderplates LFR
+								un(2, i(104996)),	-- Scalebane Bracers LFR
+								un(2, i(104999)),	-- Shoulderpads of Pulsing Protection LFR
+								un(2, i(104998)),	-- Skydancer Boots LFR
+								un(2, i(105004)),	-- Smoldering Drakescale Bracers LFR
+								un(2, i(104985)),	-- Swift Serpent Signet LFR
+								un(2, i(104990)),	-- Thranok's Shattering Helm LFR
+								un(2, i(104737)),	-- Unrepentant Heels LFR
+								un(2, i(105005)),	-- Windfire Legplates LFR
+							})),
+							cr(71466, e(864, {	-- Iron Juggernaut
+								un(2, i(105017)),	-- Belt of Ominous Trembles LFR
+								un(2, i(105027)),	-- Borer Drill Boots LFR
+								un(2, i(105019)),	-- Bracers of the Broken Fault LFR
+								un(2, i(105024)),	-- Castlebreaker Bracers LFR
+								un(2, i(105026)),	-- Cavemaker Wristguards LFR
+								un(2, i(105011)),	-- Demolisher's Reinforced Belt LFR
+								un(2, i(105014)),	-- Earthbreaker's Steaming Chestplate LFR
+								un(2, i(105020)),	-- Earthripper Gloves LFR
+								un(2, i(105016)),	-- Juggernaut's Focusing Crystal LFR
+								un(2, i(105015)),	-- Juggernaut's Ignition Keys LFR
+								un(2, i(105023)),	-- Juggernaut's Power Core LFR
+								un(2, i(105007)),	-- Laser Burn Bracers LFR
+								un(2, i(105022)),	-- Laser-Slice Signet LFR
+								un(2, i(105018)),	-- Leggings of Furious Flame LFR
+								un(2, i(105009)),	-- Minelayer's Padded Boots LFR
+								un(2, i(105010)),	-- Precision Cutters LFR
+								un(2, i(105008)),	-- Ricocheting Shoulderguards LFR
+								un(2, i(105006)),	-- Seismic Bore LFR
+								un(2, i(105021)),	-- Shock Pulse Robes LFR
+								un(2, i(105013)),	-- Tar-Coated Gauntlets LFR
+								un(2, i(105025)),	-- Treads of Autonomic Motion LFR
+								un(2, i(105012)),	-- Wall-Borer Bracers LFR
+							})),
+							cr(71859, e(856, {	-- Kor'kron Dark Shaman (Earthbreaker Haromm)
+								un(2, i(105035)),	-- Ashen Wall Girdle LFR
+								un(2, i(105041)),	-- Ashflare Pendant LFR
+								un(2, i(105045)),	-- Belt of the Iron Prison LFR
+								un(2, i(105036)),	-- Bloodclaw Band LFR
+								un(2, i(105034)),	-- Breastplate of Shamanic Mirrors LFR
+								un(2, i(105030)),	-- Damron's Belt of Darkness LFR
+								un(2, i(105044)),	-- Darkfang Mask LFR
+								un(2, i(105037)),	-- Haromm's Frozen Crescent LFR
+								un(2, i(105032)),	-- Haromm's Horrifying Helm LFR
+								un(2, i(105029)),	-- Haromm's Talisman LFR
+								un(2, i(105040)),	-- Iron Wolf Hood LFR
+								un(2, i(105043)),	-- Kardris' Scepter LFR
+								un(2, i(105042)),	-- Kardris' Toxic Totem LFR
+								un(2, i(105028)),	-- Poisonmist Nightcloak LFR
+								un(2, i(105038)),	-- Ring of the Iron Tomb LFR
+								un(2, i(105031)),	-- Riou's Vigilant Leggings LFR
+								un(2, i(105047)),	-- Shackles of Stinking Slime LFR
+								un(2, i(105046)),	-- Shoulderguards of Foul Streams LFR
+								un(2, i(105048)),	-- Shoulderplates of Gushing Geysers LFR
+								un(2, i(105039)),	-- Toxic Tornado Treads LFR
+								un(2, i(105033)),	-- Wolf-Rider Spurs LFR
+							})),
+							cr(71515, e(850, {	-- General Nazgrim
+								un(2, i(105052)),	-- Arcweaver Spell Sword LFR
+								un(2, i(105058)),	-- Bulwark of the Fallen General LFR
+								un(2, i(105056)),	-- Crown of Tragic Truth LFR
+								un(2, i(105057)),	-- Gar'tok, Strength of the Faithful LFR
+								un(2, i(105051)),	-- Nazgrim's Burnished Insignia LFR
+								un(2, i(105049)),	-- Nazgrim's Gutripper LFR
+								un(2, i(105055)),	-- Ravager's Pathwalkers LFR
+								un(2, i(105054)),	-- Robes of the Warrior's Fall LFR
+								un(2, i(105050)),	-- Sandals of Two Little Bees LFR
+								un(2, i(105053)),	-- Shoulderguards of the Righteous Stand LFR
+								un(2, i(105059)),	-- Spaulders of Kor'kron Fealty LFR
+							})),
+							cr(71454, e(846, {	-- Malkorok
+								un(2, i(105075)),	-- Black-Blooded Drape LFR
+								un(2, i(105066)),	-- Blood Rage Bracers LFR
+								un(2, i(105078)),	-- Boots of Perilous Infusion LFR
+								un(2, i(105079)),	-- Bracers of Averted Fatality LFR
+								un(2, i(105080)),	-- Ebon Blood Chestguard LFR
+								un(2, i(105074)),	-- Frenzied Crystal of Rage LFR
+								un(2, i(105062)),	-- Halberd of Inner Shadows LFR
+								un(2, i(105072)),	-- Hood of Perpetual Implosion LFR
+								un(2, i(105061)),	-- Kor'kron Hand Cannon LFR
+								un(2, i(105063)),	-- Lazahk's Lost Shadowrap LFR
+								un(2, i(105067)),	-- Legplates of Willful Doom LFR
+								un(2, i(105065)),	-- Malkorok's Giant Stompers LFR
+								un(2, i(105069)),	-- Malkorok's Skullcleaver LFR
+								un(2, i(105068)),	-- Malkorok's Tainted Dog Tags LFR
+								un(2, i(105071)),	-- Miasmic Skullbelt LFR
+								un(2, i(105060)),	-- Ring of Restless Energy LFR
+								un(2, i(105073)),	-- Robes of Riven Dreams LFR
+								un(2, i(105076)),	-- Seal of Sullen Fury LFR
+								un(2, i(105081)),	-- Terrorguard Chestplate LFR
+								un(2, i(105070)),	-- Vial of Living Corruption LFR
+								un(2, i(105077)),	-- Visage of the Monstrous LFR
+								un(2, i(105064)),	-- Wristguards of Ruination LFR
+							})),
+							cr(71889, e(870, {	-- Spoils of Pandaria (Secured Stockpile of Pandaren Spoils)
+								un(2, i(105087)),	-- Ancient Archer's Chestguard LFR
+								un(2, i(105092)),	-- Ancient Mogu Tower Shield LFR
+								un(2, i(105086)),	-- Arrowflight Girdle LFR
+								un(2, i(105093)),	-- Avool's Ancestral Bracers LFR
+								un(2, i(105100)),	-- Bracers of the Pristine Purifier LFR
+								un(2, i(105099)),	-- Chitin-Link Chain Belt LFR
+								un(2, i(105083)),	-- Enchanted Shao-Tien Saber LFR
+								un(2, i(105088)),	-- Helm of the Night Watchman LFR
+								un(2, i(105096)),	-- Immaculately Preserved Wand LFR
+								un(2, i(105097)),	-- Klaxxi Grips of Rejuvenation LFR
+								un(2, i(105095)),	-- Lost Necklace of the Mogu Empress LFR
+								un(2, i(105085)),	-- Mantid Carapace Augments LFR
+								un(2, i(105094)),	-- Mantid Vizier's Robes LFR
+								un(2, i(105102)),	-- Mogu Mindbender's Greaves LFR
+								un(2, i(105090)),	-- Ominous Mogu Greatboots LFR
+								un(2, i(105084)),	-- Pandaren Roofsprinters LFR
+								un(2, i(105101)),	-- Plate Belt of the War-Healer LFR
+								un(2, i(105091)),	-- Seal of the Forgotten Kings LFR
+								un(2, i(105098)),	-- Shado-Pan Reliquary Kilt LFR
+								un(2, i(105082)),	-- Sigil of Rampage LFR
+								un(2, i(105089)),	-- Untarnishable Greatbelt LFR
+							})),
+							cr(71529, e(851, {	-- Thok the Bloodthirsty
+								un(2, i(105106)),	-- Akolik's Acid-Soaked Robes LFR
+								un(2, i(105112)),	-- Britomart's Jagged Pike LFR
+								un(2, i(105113)),	-- Devilfang Band LFR
+								un(2, i(105107)),	-- Festering Primordial Globule LFR
+								un(2, i(105104)),	-- Gleaming Eye of the Devilsaur LFR
+								un(2, i(105103)),	-- Hvitserk's Formidable Shanker LFR
+								un(2, i(105110)),	-- Icy Blood Chestplate LFR
+								un(2, i(105105)),	-- Montak's Grips of Scorching Breath LFR
+								un(2, i(105108)),	-- Signet of the Dinomancers LFR
+								un(2, i(105109)),	-- Thok's Acid-Grooved Tooth LFR
+								un(2, i(105111)),	-- Thok's Tail Tip LFR
+							})),
+							cr(71504, e(865, {	-- Siegecrafter Blackfuse
+								un(2, i(105122)),	-- Asgorathian Blood Seal LFR
+								un(2, i(105124)),	-- Blackfuse's Blasting Cord LFR
+								un(2, i(105118)),	-- Bomber's Blackened Wristwatch LFR
+								un(2, i(105119)),	-- Bracers of Infinite Pipes LFR
+								un(2, i(105121)),	-- Calixian Bladebreakers LFR
+								un(2, i(105117)),	-- Dysmorphic Samophlange of Discontinuity LFR
+								un(2, i(105115)),	-- Fusespark Gloves LFR
+								un(2, i(105116)),	-- Lever of the Megantholithic Apparatus LFR
+								un(2, i(105120)),	-- Powder-Stained Totemic Treads LFR
+								un(2, i(105123)),	-- Siegecrafter's Forge Hammer LFR
+								un(2, i(105114)),	-- Ticking Ebon Detonator LFR
+							})),
+							cr(71161, e(853, {	-- Paragons of the Klaxxi (Kil'ruk the Wind Reaver)
+								un(2, i(105131)),	-- Amber Parasite Wraps LFR
+								un(2, i(105128)),	-- Bracers of Sonic Projection LFR
+								un(2, i(105132)),	-- Chestguard of Toxic Injections LFR
+								un(2, i(105133)),	-- Gauntlets of Insane Calculations LFR
+								un(2, i(105125)),	-- Hisek's Reserve Longbow LFR
+								un(2, i(105130)),	-- Iyyokuk's Hereditary Seal LFR
+								un(2, i(105126)),	-- Kil'ruk's Band of Ascendancy LFR
+								un(2, i(105135)),	-- Kil'ruk's Furious Blade LFR
+								un(2, i(105127)),	-- Korven's Crimson Crescent LFR
+								un(2, i(105129)),	-- Rik'kal's Bloody Scalpel LFR
+								un(2, i(105134)),	-- Skeer's Bloodsoaked Talisman LFR
+							})),
+							cr(71865, e(869, {	-- Garrosh Hellscream
+								un(2, i(105148)),	-- Belt of the Broken Pact LFR
+								un(2, i(105150)),	-- Black Blood of Y'Shaarj LFR
+								un(2, i(105139)),	-- Chestguard of Relentless Tyranny LFR
+								un(2, i(105156)),	-- Chestplate of Fallen Passion LFR
+								un(2, i(105137)),	-- Cord of Black Dreams LFR
+								un(2, i(105155)),	-- Cowl of Smoking Dreams LFR
+								un(2, i(105147)),	-- Curse of Hubris LFR
+								un(2, i(105149)),	-- Ebon Ritual Hood LFR
+								un(2, i(105145)),	-- Greathelm of the Warchief LFR
+								un(2, i(105154)),	-- Hopeglow Spaulders LFR
+								un(2, i(105151)),	-- Horned Mace of the Old Ones LFR
+								un(2, i(105138)),	-- Kor'kron Elite Skullmask LFR
+								un(2, i(105136)),	-- Kor'kron Spire of Supremacy LFR
+								un(2, i(105142)),	-- Legplates of Unthinking Strife LFR
+								un(2, i(105157)),	-- Mantle of Looming Darkness LFR
+								un(2, i(105140)),	-- Penetrating Gaze of Y'Shaarj LFR
+								un(2, i(105152)),	-- Revelations of Y'Shaarj LFR
+								un(2, i(105153)),	-- Seal of Karmic Return LFR
+								un(2, i(105141)),	-- Shoulderguards of Intended Power LFR
+								un(2, i(105143)),	-- Spaulders of the Fallen Warchief LFR
+								un(2, i(105146)),	-- Xal'atoh, Desecrated Image of Gorehowl LFR
+							})),
 						},
 					}),
 					d(-2, {	-- Flexible (Pre-Patch 6.0) >> Items unmarked after 6.0, used to be marked "Flexible" <<
@@ -1602,27 +1895,6 @@ _.Instances =
 									i(112448),	-- Waterwalker Greatboots
 									i(112427),	-- Seal of Eternal Sorrow
 									i(112426),	-- Purified Bindings of Immerseus
-									un(2, i(104920)),	-- Bolt-Burster Grips LFR
-									un(2, i(104927)),	-- Bracers of Purified Spirit LFR
-									un(2, i(104917)),	-- Bracers of Sordid Sleep LFR
-									un(2, i(104913)),	-- Bubble-Burst Bracers LFR
-									un(2, i(104914)),	-- Chestplate of Congealed Corrosion LFR
-									un(2, i(104923)),	-- Cloak of Misguided Power LFR
-									un(2, i(104915)),	-- Corruption-Rotted Gauntlets LFR
-									un(2, i(104919)),	-- Encapsulated Essence of Immerseus LFR
-									un(2, i(104929)),	-- Greatbelt of Living Waters LFR
-									un(2, i(104911)),	-- Hood of Blackened Tears LFR
-									un(2, i(104922)),	-- Hood of Swirling Senses LFR
-									un(2, i(104921)),	-- Ichor-Dripping Shoulderpads LFR
-									un(2, i(104909)),	-- Immerseus' Crystalline Eye LFR
-									un(2, i(104918)),	-- Pauldrons of Violent Eruption LFR
-									un(2, i(104912)),	-- Puddle Punishers LFR
-									un(2, i(104924)),	-- Purified Bindings of Immerseus LFR
-									un(2, i(104926)),	-- Salt Water Sandals LFR
-									un(2, i(104925)),	-- Seal of Eternal Sorrow LFR
-									un(2, i(104916)),	-- Treads of Unchained Hate LFR
-									un(2, i(104910)),	-- Trident of Corrupted Waters LFR
-									un(2, i(104930)),	-- Waterwalker Greatboots LFR
 								})),
 								cr(71475, e(849, {	-- The Fallen Protectors (Rook Stonetoe)
 									{	-- Vale of Eternal Sorrows: Fallen Protectors
@@ -1650,80 +1922,34 @@ _.Instances =
 									i(112490),	-- Petrified Pennyroyal Ring
 									i(112484),	-- Sorrowpath Signet
 									i(112476),	-- Rook's Unlucky Talisman
-									un(2, i(104936)),	-- Darkfallen Shoulderplates LFR
-									un(2, i(104931)),	-- Death Lotus Crossbow LFR
-									un(2, i(104951)),	-- Gaze of Echoing Despair LFR
-									un(2, i(104939)),	-- Gloomwrap Greatcloak LFR
-									un(2, i(104950)),	-- Grips of the Fallen Council LFR
-									un(2, i(104934)),	-- Grips of Unending Anguish LFR
-									un(2, i(104944)),	-- Lifebane Bracers LFR
-									un(2, i(104945)),	-- Petrified Pennyroyal Ring LFR
-									un(2, i(104935)),	-- Poisonbinder Girth LFR
-									un(2, i(104946)),	-- Purehearted Cricket Cage LFR
-									un(2, i(104942)),	-- Robes of the Tendered Heart LFR
-									un(2, i(104940)),	-- Rook's Unlucky Talisman LFR
-									un(2, i(104948)),	-- Sabatons of Defilement LFR
-									un(2, i(104941)),	-- Sha-Seared Sandals LFR
-									un(2, i(104937)),	-- Shockstriker Gauntlets LFR
-									un(2, i(104949)),	-- Shoulderguards of Dark Meditations LFR
-									un(2, i(104943)),	-- Shoulderpads of Dou Dou Chong LFR
-									un(2, i(104947)),	-- Shoulders of the Roiling Inferno LFR
-									un(2, i(104932)),	-- Softfoot's Last Resort LFR
-									un(2, i(104938)),	-- Sorrowpath Signet LFR
-									un(2, i(104933)),	-- Stonetoe's Tormented Treads LFR
 								})),
 								cr(72276, e(866, {	-- Norushen (Amalgam of Corruption)
-									["groups"] = {
-										{	-- Vale of Eternal Sorrows: Norushen
-											["achievementID"] = 8458,	-- Vale of Eternal Sorrows
-											["criteriaID"] = 3,	-- Norushen
-										},
-										i(112547),	-- Norushen's Shortblade
-										i(112546),	-- Xifeng, Longblade of the Titanic Guardian
-										i(112560),	-- Norushen's Enigmatic Barrier
-										i(112552),	-- Rage-Blind Greathelm
-										i(112559),	-- Untainted Guardian's Chain
-										i(112550),	-- Quarantine Shoulderguards
-										i(112558),	-- Rime-Rift Shoulders
-										i(112554),	-- Drape of the Despairing Pit
-										i(112549),	-- Robes of the Blackened Watcher
-										i(112545),	-- Bracers of Blind Hatred
-										i(112555),	-- Bracers of Broken Causation
-										i(112563),	-- Bracers of Final Serenity
-										i(112565),	-- Wristplates of Broken Doubt
-										i(112556),	-- Blight Hurlers
-										i(112562),	-- Confident Grips
-										i(112548),	-- Gloves of the Golden Protector
-										i(112557),	-- Sash of the Last Guardian
-										i(112551),	-- Leggings of Unabashed Anger
-										i(112564),	-- Shadow-Binder's Kilt
-										i(112561),	-- Boots of Broken Reliance
-										i(112553),	-- Reality Ripper Ring
-										i(112503),	-- Fusion-Fire Core
-										un(2, i(104964)),	-- Blight Hurlers LFR
-										un(2, i(104969)),	-- Boots of Broken Reliance LFR
-										un(2, i(104958)),	-- Bracers of Blind Hatred LFR
-										un(2, i(104963)),	-- Bracers of Broken Causation LFR
-										un(2, i(104971)),	-- Bracers of Final Serenity LFR
-										un(2, i(104970)),	-- Confident Grips LFR
-										un(2, i(104960)),	-- Drape of the Despairing Pit LFR
-										un(2, i(104961)),	-- Fusion-Fire Core LFR
-										un(2, i(104955)),	-- Gloves of the Golden Protector LFR
-										un(2, i(104956)),	-- Leggings of Unabashed Anger LFR
-										un(2, i(104968)),	-- Norushen's Enigmatic Barrier LFR
-										un(2, i(104952)),	-- Norushen's Shortblade LFR
-										un(2, i(104957)),	-- Quarantine Shoulderguards LFR
-										un(2, i(104959)),	-- Rage-Blind Greathelm LFR
-										un(2, i(104953)),	-- Reality Ripper Ring LFR
-										un(2, i(104966)),	-- Rime-Rift Shoulders LFR
-										un(2, i(104954)),	-- Robes of the Blackened Watcher LFR
-										un(2, i(104965)),	-- Sash of the Last Guardian LFR
-										un(2, i(104972)),	-- Shadow-Binder's Kilt LFR
-										un(2, i(104967)),	-- Untainted Guardian's Chain LFR
-										un(2, i(104973)),	-- Wristplates of Broken Doubt LFR
-										un(2, i(104962)),	-- Xifeng, Longblade of the Titanic Guardian LFR
+									{	-- Vale of Eternal Sorrows: Norushen
+										["achievementID"] = 8458,	-- Vale of Eternal Sorrows
+										["criteriaID"] = 3,	-- Norushen
 									},
-									["creatureID"] = 72276,
+									i(112547),	-- Norushen's Shortblade
+									i(112546),	-- Xifeng, Longblade of the Titanic Guardian
+									i(112560),	-- Norushen's Enigmatic Barrier
+									i(112552),	-- Rage-Blind Greathelm
+									i(112559),	-- Untainted Guardian's Chain
+									i(112550),	-- Quarantine Shoulderguards
+									i(112558),	-- Rime-Rift Shoulders
+									i(112554),	-- Drape of the Despairing Pit
+									i(112549),	-- Robes of the Blackened Watcher
+									i(112545),	-- Bracers of Blind Hatred
+									i(112555),	-- Bracers of Broken Causation
+									i(112563),	-- Bracers of Final Serenity
+									i(112565),	-- Wristplates of Broken Doubt
+									i(112556),	-- Blight Hurlers
+									i(112562),	-- Confident Grips
+									i(112548),	-- Gloves of the Golden Protector
+									i(112557),	-- Sash of the Last Guardian
+									i(112551),	-- Leggings of Unabashed Anger
+									i(112564),	-- Shadow-Binder's Kilt
+									i(112561),	-- Boots of Broken Reliance
+									i(112553),	-- Reality Ripper Ring
+									i(112503),	-- Fusion-Fire Core
 								})),
 								cr(71734, e(867, {	-- Sha of Pride
 									{	-- Vale of Eternal Sorrows: Sha of Pride
@@ -1771,18 +1997,7 @@ _.Instances =
 									i(112953),	-- Greaves of Sublime Superiority
 									i(112947),	-- Assurance of Consequence
 									i(112948),	-- Prismatic Prison of Pride
-									un(2, i(104974)),	-- Assurance of Consequence LFR
-									un(2, i(104982)),	-- Choker of the Final Word LFR
-									un(2, i(104979)),	-- Crown of Boastful Words LFR
-									un(2, i(104977)),	-- Gaze of Arrogance LFR
-									un(2, i(104981)),	-- Greatsword of Pride's Fall LFR
-									un(2, i(104980)),	-- Greaves of Sublime Superiority LFR
-									un(2, i(104975)),	-- Necklace of Fading Light LFR
-									un(2, i(104976)),	-- Prismatic Prison of Pride LFR
-									un(2, i(104978)),	-- Self-Reflecting Mask LFR
-									un(2, i(104983)),	-- Shield of Mockery LFR
 								})),
-								
 							},
 						}),
 						ach(8459, {	-- Gates of Retribution
@@ -1817,28 +2032,6 @@ _.Instances =
 									i(112714),	-- Galakrond Control Band
 									i(112709),	-- Swift Serpent Signet
 									i(112703),	-- Evil Eye of Galakras
-									un(2, i(104991)),	-- Arcsmasher Bracers LFR
-									un(2, i(104995)),	-- Bone-Inlaid Sandals LFR
-									un(2, i(104988)),	-- Cannoneer's Multipocket Gunbelt LFR
-									un(2, i(104984)),	-- Dagryn's Discarded Longbow LFR
-									un(2, i(104989)),	-- Dagryn's Fuselight Bracers LFR
-									un(2, i(105002)),	-- Dragonmaw Emergency Strap LFR
-									un(2, i(105001)),	-- Drakebinder Greatstaff LFR
-									un(2, i(104993)),	-- Evil Eye of Galakras LFR
-									un(2, i(105000)),	-- Extinguished Ember of Galakras LFR
-									un(2, i(104997)),	-- Flameslinger's Fiery Cowl LFR
-									un(2, i(104994)),	-- Galakrond Control Band LFR
-									un(2, i(105003)),	-- Grips of Tidal Force LFR
-									un(2, i(104987)),	-- Korgra's Venom-Soaked Gauntlets LFR
-									un(2, i(104992)),	-- Krugruk's Rigid Shoulderplates LFR
-									un(2, i(104996)),	-- Scalebane Bracers LFR
-									un(2, i(104999)),	-- Shoulderpads of Pulsing Protection LFR
-									un(2, i(104998)),	-- Skydancer Boots LFR
-									un(2, i(105004)),	-- Smoldering Drakescale Bracers LFR
-									un(2, i(104985)),	-- Swift Serpent Signet LFR
-									un(2, i(104990)),	-- Thranok's Shattering Helm LFR
-									un(2, i(104737)),	-- Unrepentant Heels LFR
-									un(2, i(105005)),	-- Windfire Legplates LFR
 								})),
 								cr(71466, e(864, {	-- Iron Juggernaut
 									{	-- Gates of Retribution: Iron Juggernaut
@@ -1867,28 +2060,6 @@ _.Instances =
 									i(112750),	-- Treads of Autonomic Motion
 									i(112747),	-- Laser-Slice Signet
 									i(112729),	-- Juggernaut's Focusing Crystal
-									un(2, i(105017)),	-- Belt of Ominous Trembles LFR
-									un(2, i(105027)),	-- Borer Drill Boots LFR
-									un(2, i(105019)),	-- Bracers of the Broken Fault LFR
-									un(2, i(105024)),	-- Castlebreaker Bracers LFR
-									un(2, i(105026)),	-- Cavemaker Wristguards LFR
-									un(2, i(105011)),	-- Demolisher's Reinforced Belt LFR
-									un(2, i(105014)),	-- Earthbreaker's Steaming Chestplate LFR
-									un(2, i(105020)),	-- Earthripper Gloves LFR
-									un(2, i(105016)),	-- Juggernaut's Focusing Crystal LFR
-									un(2, i(105015)),	-- Juggernaut's Ignition Keys LFR
-									un(2, i(105023)),	-- Juggernaut's Power Core LFR
-									un(2, i(105007)),	-- Laser Burn Bracers LFR
-									un(2, i(105022)),	-- Laser-Slice Signet LFR
-									un(2, i(105018)),	-- Leggings of Furious Flame LFR
-									un(2, i(105009)),	-- Minelayer's Padded Boots LFR
-									un(2, i(105010)),	-- Precision Cutters LFR
-									un(2, i(105008)),	-- Ricocheting Shoulderguards LFR
-									un(2, i(105006)),	-- Seismic Bore LFR
-									un(2, i(105021)),	-- Shock Pulse Robes LFR
-									un(2, i(105013)),	-- Tar-Coated Gauntlets LFR
-									un(2, i(105025)),	-- Treads of Autonomic Motion LFR
-									un(2, i(105012)),	-- Wall-Borer Bracers LFR
 								})),
 								cr(71859, e(856, {	-- Kor'kron Dark Shaman (Earthbreaker Haromm)
 									{	-- Gates of Retribution: Kor'kron Dark Shaman
@@ -1916,27 +2087,6 @@ _.Instances =
 									i(112758),	-- Ring of the Iron Tomb
 									i(112754),	-- Haromm's Talisman
 									i(112768),	-- Kardris' Toxic Totem
-									un(2, i(105035)),	-- Ashen Wall Girdle LFR
-									un(2, i(105041)),	-- Ashflare Pendant LFR
-									un(2, i(105045)),	-- Belt of the Iron Prison LFR
-									un(2, i(105036)),	-- Bloodclaw Band LFR
-									un(2, i(105034)),	-- Breastplate of Shamanic Mirrors LFR
-									un(2, i(105030)),	-- Damron's Belt of Darkness LFR
-									un(2, i(105044)),	-- Darkfang Mask LFR
-									un(2, i(105037)),	-- Haromm's Frozen Crescent LFR
-									un(2, i(105032)),	-- Haromm's Horrifying Helm LFR
-									un(2, i(105029)),	-- Haromm's Talisman LFR
-									un(2, i(105040)),	-- Iron Wolf Hood LFR
-									un(2, i(105043)),	-- Kardris' Scepter LFR
-									un(2, i(105042)),	-- Kardris' Toxic Totem LFR
-									un(2, i(105028)),	-- Poisonmist Nightcloak LFR
-									un(2, i(105038)),	-- Ring of the Iron Tomb LFR
-									un(2, i(105031)),	-- Riou's Vigilant Leggings LFR
-									un(2, i(105047)),	-- Shackles of Stinking Slime LFR
-									un(2, i(105046)),	-- Shoulderguards of Foul Streams LFR
-									un(2, i(105048)),	-- Shoulderplates of Gushing Geysers LFR
-									un(2, i(105039)),	-- Toxic Tornado Treads LFR
-									un(2, i(105033)),	-- Wolf-Rider Spurs LFR
 								})),
 								cr(71515, e(850, {	-- General Nazgrim
 									{	-- Gates of Retribution: General Nazgrim
@@ -1983,19 +2133,7 @@ _.Instances =
 									i(112779),	-- Ravager's Pathwalkers
 									i(112782),	-- Sandals of Two Little Bees
 									i(112778),	-- Nazgrim's Burnished Insignia
-									un(2, i(105052)),	-- Arcweaver Spell Sword LFR
-									un(2, i(105058)),	-- Bulwark of the Fallen General LFR
-									un(2, i(105056)),	-- Crown of Tragic Truth LFR
-									un(2, i(105057)),	-- Gar'tok, Strength of the Faithful LFR
-									un(2, i(105051)),	-- Nazgrim's Burnished Insignia LFR
-									un(2, i(105049)),	-- Nazgrim's Gutripper LFR
-									un(2, i(105055)),	-- Ravager's Pathwalkers LFR
-									un(2, i(105054)),	-- Robes of the Warrior's Fall LFR
-									un(2, i(105050)),	-- Sandals of Two Little Bees LFR
-									un(2, i(105053)),	-- Shoulderguards of the Righteous Stand LFR
-									un(2, i(105059)),	-- Spaulders of Kor'kron Fealty LFR
 								})),
-								
 							},
 						}),
 						ach(8461, {	-- The Underhold
@@ -2030,28 +2168,6 @@ _.Instances =
 									i(112817),	-- Seal of Sullen Fury
 									i(112815),	-- Frenzied Crystal of Rage
 									i(112792),	-- Vial of Living Corruption
-									un(2, i(105075)),	-- Black-Blooded Drape LFR
-									un(2, i(105066)),	-- Blood Rage Bracers LFR
-									un(2, i(105078)),	-- Boots of Perilous Infusion LFR
-									un(2, i(105079)),	-- Bracers of Averted Fatality LFR
-									un(2, i(105080)),	-- Ebon Blood Chestguard LFR
-									un(2, i(105074)),	-- Frenzied Crystal of Rage LFR
-									un(2, i(105062)),	-- Halberd of Inner Shadows LFR
-									un(2, i(105072)),	-- Hood of Perpetual Implosion LFR
-									un(2, i(105061)),	-- Kor'kron Hand Cannon LFR
-									un(2, i(105063)),	-- Lazahk's Lost Shadowrap LFR
-									un(2, i(105067)),	-- Legplates of Willful Doom LFR
-									un(2, i(105065)),	-- Malkorok's Giant Stompers LFR
-									un(2, i(105069)),	-- Malkorok's Skullcleaver LFR
-									un(2, i(105068)),	-- Malkorok's Tainted Dog Tags LFR
-									un(2, i(105071)),	-- Miasmic Skullbelt LFR
-									un(2, i(105060)),	-- Ring of Restless Energy LFR
-									un(2, i(105073)),	-- Robes of Riven Dreams LFR
-									un(2, i(105076)),	-- Seal of Sullen Fury LFR
-									un(2, i(105081)),	-- Terrorguard Chestplate LFR
-									un(2, i(105070)),	-- Vial of Living Corruption LFR
-									un(2, i(105077)),	-- Visage of the Monstrous LFR
-									un(2, i(105064)),	-- Wristguards of Ruination LFR
 								})),
 								cr(71889, e(870, {	-- Spoils of Pandaria (Secured Stockpile of Pandaren Spoils)
 									{	-- The Underhold: Spoils of Pandaria
@@ -2079,27 +2195,6 @@ _.Instances =
 									i(112827),	-- Pandaren Roofsprinters
 									i(112828),	-- Seal of the Forgotten Kings
 									i(112825),	-- Sigil of Rampage
-									un(2, i(105087)),	-- Ancient Archer's Chestguard LFR
-									un(2, i(105092)),	-- Ancient Mogu Tower Shield LFR
-									un(2, i(105086)),	-- Arrowflight Girdle LFR
-									un(2, i(105093)),	-- Avool's Ancestral Bracers LFR
-									un(2, i(105100)),	-- Bracers of the Pristine Purifier LFR
-									un(2, i(105099)),	-- Chitin-Link Chain Belt LFR
-									un(2, i(105083)),	-- Enchanted Shao-Tien Saber LFR
-									un(2, i(105088)),	-- Helm of the Night Watchman LFR
-									un(2, i(105096)),	-- Immaculately Preserved Wand LFR
-									un(2, i(105097)),	-- Klaxxi Grips of Rejuvenation LFR
-									un(2, i(105095)),	-- Lost Necklace of the Mogu Empress LFR
-									un(2, i(105085)),	-- Mantid Carapace Augments LFR
-									un(2, i(105094)),	-- Mantid Vizier's Robes LFR
-									un(2, i(105102)),	-- Mogu Mindbender's Greaves LFR
-									un(2, i(105090)),	-- Ominous Mogu Greatboots LFR
-									un(2, i(105084)),	-- Pandaren Roofsprinters LFR
-									un(2, i(105101)),	-- Plate Belt of the War-Healer LFR
-									un(2, i(105091)),	-- Seal of the Forgotten Kings LFR
-									un(2, i(105098)),	-- Shado-Pan Reliquary Kilt LFR
-									un(2, i(105082)),	-- Sigil of Rampage LFR
-									un(2, i(105089)),	-- Untarnishable Greatbelt LFR
 								})),
 								cr(71529, e(851, {	-- Thok the Bloodthirsty
 									{	-- The Underhold: Thok the Bloodthirsty
@@ -2146,19 +2241,7 @@ _.Instances =
 									i(112852),	-- Signet of the Dinomancers
 									i(112849),	-- Thok's Acid-Grooved Tooth
 									i(112850),	-- Thok's Tail Tip
-									un(2, i(105106)),	-- Akolik's Acid-Soaked Robes LFR
-									un(2, i(105112)),	-- Britomart's Jagged Pike LFR
-									un(2, i(105113)),	-- Devilfang Band LFR
-									un(2, i(105107)),	-- Festering Primordial Globule LFR
-									un(2, i(105104)),	-- Gleaming Eye of the Devilsaur LFR
-									un(2, i(105103)),	-- Hvitserk's Formidable Shanker LFR
-									un(2, i(105110)),	-- Icy Blood Chestplate LFR
-									un(2, i(105105)),	-- Montak's Grips of Scorching Breath LFR
-									un(2, i(105108)),	-- Signet of the Dinomancers LFR
-									un(2, i(105109)),	-- Thok's Acid-Grooved Tooth LFR
-									un(2, i(105111)),	-- Thok's Tail Tip LFR
 								})),
-								
 							},
 						}),
 						ach(8462, {	-- Downfall
@@ -2212,77 +2295,53 @@ _.Instances =
 									i(112883),	-- Asgorathian Blood Seal
 									i(112877),	-- Dysmorphic Samophlange of Discontinuity
 									i(112879),	-- Ticking Ebon Detonator
-									un(2, i(105122)),	-- Asgorathian Blood Seal LFR
-									un(2, i(105124)),	-- Blackfuse's Blasting Cord LFR
-									un(2, i(105118)),	-- Bomber's Blackened Wristwatch LFR
-									un(2, i(105119)),	-- Bracers of Infinite Pipes LFR
-									un(2, i(105121)),	-- Calixian Bladebreakers LFR
-									un(2, i(105117)),	-- Dysmorphic Samophlange of Discontinuity LFR
-									un(2, i(105115)),	-- Fusespark Gloves LFR
-									un(2, i(105116)),	-- Lever of the Megantholithic Apparatus LFR
-									un(2, i(105120)),	-- Powder-Stained Totemic Treads LFR
-									un(2, i(105123)),	-- Siegecrafter's Forge Hammer LFR
-									un(2, i(105114)),	-- Ticking Ebon Detonator LFR
 								})),
 								cr(71161, e(853, {	-- Paragons of the Klaxxi (Kil'ruk the Wind Reaver)
-									["groups"] = {
-										{	-- Downfall: Paragons of the Klaxxi
-											["achievementID"] = 8462,	-- Downfall
-											["criteriaID"] = 2,	-- Paragons of the Klaxxi
-										},
-										i(104165),	-- Kovok (PET!)
-										i( 99675, {	-- Leggings of the Cursed Conqueror
-											i(98980),	-- Greaves of Winged Triumph
-											i(99026),	-- Legguards of Winged Triumph
-											i(98986),	-- Legplates of Winged Triumph
-											i(99021),	-- Leggings of the Ternion Glory
-											i(99025),	-- Legwraps of the Ternion Glory
-											i(99055),	-- Leggings of the Horned Nightmare
-										}),
-										i( 99676, {	-- Leggings of the Cursed Protector
-											i(99081),	-- Legguards of the Unblinking Vigil
-											i(99074),	-- Leggings of Seven Sacred Seals
-											i(99050),	-- Legguards of Seven Sacred Seals
-											i(99070),	-- Legwraps of Seven Sacred Seals
-											i(99090),	-- Leggings of Celestial Harmony
-											i(98984),	-- Legguards of Celestial Harmony
-											i(98990),	-- Legwraps of Celestial Harmony
-											i(99033),	-- Legguards of the Prehistoric Marauder
-											i(99035),	-- Legplates of the Prehistoric Marauder
-										}),
-										i( 99674, {	-- Leggings of the Cursed Vanquisher
-											i(99058),	-- Greaves of Cyclopean Dread
-											i(99039),	-- Legguards of Cyclopean Dread
-											i(98981),	-- Breeches of the Shattered Vale
-											i(98996),	-- Leggings of the Shattered Vale
-											i(99044),	-- Legguards of the Shattered Vale
-											i(99014),	-- Legwraps of the Shattered Vale
-											i(99077),	-- Chronomancer Leggings
-											i(99009),	-- Legguards of the Barbed Assassin
-										}),
-										i(112921),	-- Kil'ruk's Furious Blade
-										i(112920),	-- Korven's Crimson Crescent
-										i(112922),	-- Rik'kal's Bloody Scalpel
-										i(112918),	-- Hisek's Reserve Longbow
-										i(112923),	-- Amber Parasite Wraps
-										i(112919),	-- Chestguard of Toxic Injections
-										i(112914),	-- Bracers of Sonic Projection
-										i(112915),	-- Gauntlets of Insane Calculations
-										i(112916),	-- Iyyokuk's Hereditary Seal
-										i(112917),	-- Kil'ruk's Band of Ascendancy
-										i(112913),	-- Skeer's Bloodsoaked Talisman
-										un(2, i(105131)),	-- Amber Parasite Wraps LFR
-										un(2, i(105128)),	-- Bracers of Sonic Projection LFR
-										un(2, i(105132)),	-- Chestguard of Toxic Injections LFR
-										un(2, i(105133)),	-- Gauntlets of Insane Calculations LFR
-										un(2, i(105125)),	-- Hisek's Reserve Longbow LFR
-										un(2, i(105130)),	-- Iyyokuk's Hereditary Seal LFR
-										un(2, i(105126)),	-- Kil'ruk's Band of Ascendancy LFR
-										un(2, i(105135)),	-- Kil'ruk's Furious Blade LFR
-										un(2, i(105127)),	-- Korven's Crimson Crescent LFR
-										un(2, i(105129)),	-- Rik'kal's Bloody Scalpel LFR
-										un(2, i(105134)),	-- Skeer's Bloodsoaked Talisman LFR
+									{	-- Downfall: Paragons of the Klaxxi
+										["achievementID"] = 8462,	-- Downfall
+										["criteriaID"] = 2,	-- Paragons of the Klaxxi
 									},
+									i(104165),	-- Kovok (PET!)
+									i( 99675, {	-- Leggings of the Cursed Conqueror
+										i(98980),	-- Greaves of Winged Triumph
+										i(99026),	-- Legguards of Winged Triumph
+										i(98986),	-- Legplates of Winged Triumph
+										i(99021),	-- Leggings of the Ternion Glory
+										i(99025),	-- Legwraps of the Ternion Glory
+										i(99055),	-- Leggings of the Horned Nightmare
+									}),
+									i( 99676, {	-- Leggings of the Cursed Protector
+										i(99081),	-- Legguards of the Unblinking Vigil
+										i(99074),	-- Leggings of Seven Sacred Seals
+										i(99050),	-- Legguards of Seven Sacred Seals
+										i(99070),	-- Legwraps of Seven Sacred Seals
+										i(99090),	-- Leggings of Celestial Harmony
+										i(98984),	-- Legguards of Celestial Harmony
+										i(98990),	-- Legwraps of Celestial Harmony
+										i(99033),	-- Legguards of the Prehistoric Marauder
+										i(99035),	-- Legplates of the Prehistoric Marauder
+									}),
+									i( 99674, {	-- Leggings of the Cursed Vanquisher
+										i(99058),	-- Greaves of Cyclopean Dread
+										i(99039),	-- Legguards of Cyclopean Dread
+										i(98981),	-- Breeches of the Shattered Vale
+										i(98996),	-- Leggings of the Shattered Vale
+										i(99044),	-- Legguards of the Shattered Vale
+										i(99014),	-- Legwraps of the Shattered Vale
+										i(99077),	-- Chronomancer Leggings
+										i(99009),	-- Legguards of the Barbed Assassin
+									}),
+									i(112921),	-- Kil'ruk's Furious Blade
+									i(112920),	-- Korven's Crimson Crescent
+									i(112922),	-- Rik'kal's Bloody Scalpel
+									i(112918),	-- Hisek's Reserve Longbow
+									i(112923),	-- Amber Parasite Wraps
+									i(112919),	-- Chestguard of Toxic Injections
+									i(112914),	-- Bracers of Sonic Projection
+									i(112915),	-- Gauntlets of Insane Calculations
+									i(112916),	-- Iyyokuk's Hereditary Seal
+									i(112917),	-- Kil'ruk's Band of Ascendancy
+									i(112913),	-- Skeer's Bloodsoaked Talisman
 								})),
 								cr(71865, e(869, {	-- Garrosh Hellscream
 									{	-- Downfall: Garrosh Hellscream
@@ -2313,27 +2372,6 @@ _.Instances =
 									i(112933),	-- Legplates of Unthinking Strife
 									i(112938),	-- Black Blood of Y'Shaarj
 									i(112924),	-- Curse of Hubris
-									un(2, i(105148)),	-- Belt of the Broken Pact LFR
-									un(2, i(105150)),	-- Black Blood of Y'Shaarj LFR
-									un(2, i(105139)),	-- Chestguard of Relentless Tyranny LFR
-									un(2, i(105156)),	-- Chestplate of Fallen Passion LFR
-									un(2, i(105137)),	-- Cord of Black Dreams LFR
-									un(2, i(105155)),	-- Cowl of Smoking Dreams LFR
-									un(2, i(105147)),	-- Curse of Hubris LFR
-									un(2, i(105149)),	-- Ebon Ritual Hood LFR
-									un(2, i(105145)),	-- Greathelm of the Warchief LFR
-									un(2, i(105154)),	-- Hopeglow Spaulders LFR
-									un(2, i(105151)),	-- Horned Mace of the Old Ones LFR
-									un(2, i(105138)),	-- Kor'kron Elite Skullmask LFR
-									un(2, i(105136)),	-- Kor'kron Spire of Supremacy LFR
-									un(2, i(105142)),	-- Legplates of Unthinking Strife LFR
-									un(2, i(105157)),	-- Mantle of Looming Darkness LFR
-									un(2, i(105140)),	-- Penetrating Gaze of Y'Shaarj LFR
-									un(2, i(105152)),	-- Revelations of Y'Shaarj LFR
-									un(2, i(105153)),	-- Seal of Karmic Return LFR
-									un(2, i(105141)),	-- Shoulderguards of Intended Power LFR
-									un(2, i(105143)),	-- Spaulders of the Fallen Warchief LFR
-									un(2, i(105146)),	-- Xal'atoh, Desecrated Image of Gorehowl LFR
 								})),
 							},
 						}),	
@@ -6023,25 +6061,6 @@ _.Instances =
 							i(112924),	-- Curse of Hubris
 						})),
 					}),
-				},
-				["isRaid"] = true,
-				["lvl"] = 90,
-				["mapID"] = 556,
-				["maps"] = {
-					557,
-					558,
-					559,
-					560,
-					561,
-					562,
-					563,
-					564,
-					565,
-					566,
-					567,
-					568,
-					569,
-					570,
 				},
 			}),
 		},					
