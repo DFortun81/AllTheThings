@@ -15,13 +15,15 @@ _.Instances =
 								i(95202),	-- Necklace of the Terra-Cotta Archer
 								i(95203),	-- Necklace of the Terra-Cotta Invoker
 								i(95204),	-- Necklace of the Terra-Cotta Mender
+								i(95215),	-- Abandoned Zandalari Bucklebreaker [Crieve actually got this to drop from here]
+								i(95959),	-- Spiderweb Tabi
 							},
 							["description"] = "This bag contains gold, flasks, reagents, epic necklaces, and has chance to drop a Primal Egg."
 						}),
 						i(95343, {	-- Treasures of the Thunder
 							["groups"] = {
 								i(94295),	-- Primal Egg
-								i(95961),	-- Abandoned  Zandalari Firecord
+								i(95961),	-- Abandoned Zandalari Firecord
 								i(95962),	-- Abandoned Zandalari Shadowgirdle
 								i(95965),	-- Home-Warding Slippers
 								i(95963),	-- Silentflame Sandals
