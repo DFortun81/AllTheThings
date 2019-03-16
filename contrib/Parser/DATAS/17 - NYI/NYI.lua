@@ -112,6 +112,15 @@ _.NeverImplemented =
 			un(1, i(32111)),	-- Chancellor's Silk Rainment
 			un(1, i(32112)),	-- Chancellor's Silk Legs
 			un(1, i(104355)),	-- Titan Rocket Boots-
+			un(1, i(107890)),	-- Unknown
+			un(1, i(109272)),	-- Unknown
+			un(1, i(109278)),	-- Unknown
+			un(1, i(109290)),	-- Unknown
+			un(1, i(109296)),	-- Unknown
+			un(1, i(109297)),	-- Unknown
+			un(1, i(109298)),	-- Unknown
+			un(1, i(109299)),	-- Unknown
+			un(1, i(109302)),	-- Unknown
 			un(1, i(90358)),	-- Honorary Combat Engineer's Silk Trousers
 			un(1, i(90359)),	-- Honorary Combat Engineer's Satin Leggings
 			un(1, i(6478)),		-- Rat Stompers
@@ -396,7 +405,9 @@ _.NeverImplemented =
 			un(1, i(166410)),	-- Flaskzertauren Mail Shoulderguards
 			un(1, i(12105)),	-- Pridemail Leggings
 			un(1, i(37420)),	-- Sharkproof Boots
+			un(1, i(106166)),	-- Frostwolf Ringmail Armor (Beta only, was reward from https://www.wowhead.com/quest=32985/fury-of-frostfire )
 			un(1, i(30289)),	-- Cenarion warden's belt 
+			un(1, i(106178)),	-- Rangari Initiate Wristwraps (Beta only)
 			un(1, i(68844)),	-- Unknown
 			un(1, i(38527)),	-- Onslaught Scaemail haubberk
 			un(1, i(39440)),	-- Greaves of the Titan Protectorate
@@ -752,6 +763,8 @@ _.NeverImplemented =
 		un(1, i(31500)),	-- Unknown
 		un(1, i(31502)),	-- Unknown
 		un(1, i(31503)),	-- Unknown
+		un(1, i(107474)),	-- ph6 engorged innards
+		un(1, i(103535)),	-- Bulging Bag of Charms (was planned for asia store
 		un(1, i(31507)),	-- Unknown
 		un(1, i(36963)),	-- Unknown
 		un(1, i(90568)),	-- Unknown

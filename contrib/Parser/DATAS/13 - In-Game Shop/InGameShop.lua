@@ -61,4 +61,6 @@ _.InGameShop =
 			["description"] = "This item is available only if you purchase the Plush Toy and redeem the code.",
 		})),
 	}),
+	un(2, i(105911)),	-- Pouch of Enduring Wisdome (was in asia store during 5.4)
+	un(2, i(105912)),	-- Pouch of Enduring Wisdome 5 (was in asia store during 5.4)
 };

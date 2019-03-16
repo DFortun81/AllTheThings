@@ -262,6 +262,7 @@ _.Zones =
 								i(104012),	-- Timeless Leather Armor Cache
 								i(104010),	-- Timeless Mail Armor Cache
 								i(104009),	-- Timeless Plate Armor Cache
+								un(2, i(104014)),	-- Pouch of Timeless Coins (was purchased via valor points)
 
 								-- Trinkets
 								i(103989),	-- Alacrity of Xuen [Timeless]
