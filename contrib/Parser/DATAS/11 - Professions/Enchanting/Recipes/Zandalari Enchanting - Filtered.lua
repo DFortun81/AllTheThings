@@ -3,6 +3,15 @@ profession(333, {	-- Enchanting
 		{
 			["categoryID"] = 647--[[Zandalari Enchanting]],
 			["g"] = {
+								{
+					["categoryID"] = 424--[[Training]],
+					["g"] = {
+						{
+							-- Enchant Runic Power Core
+							["recipeID"] = 284415,--[[Enchant Runic Power Core]]
+						}
+					}
+				},
 				{
 					["categoryID"] = 650--[[Glove Enchantments]],
 					["g"] = {

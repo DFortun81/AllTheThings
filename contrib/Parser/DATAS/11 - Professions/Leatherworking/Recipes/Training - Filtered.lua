@@ -5,6 +5,10 @@ profession(165, {	-- Leatherworking
 			["categoryID"] = 468,
 			["g"] = {
 				{
+					["name"] = "Drum of Primal Might",
+					["recipeID"] = 293135
+				},
+				{
 					["name"] = "Fel Leather Cuff",
 					["recipeID"] = 196457
 				},
