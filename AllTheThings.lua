@@ -1848,12 +1848,12 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			end
 		end
 		
-		if group.description and app.Settings:GetTooltipSetting("Descriptions") and not group.encounterID then
+		if group.description and app.Settings:GetTooltipSetting("Descriptions") and not group.encounterID and paramA ~= "achievementID" then
 			tinsert(info, 1, { left = group.description, wrap = true, color = "ff66ccff" });
 		end
 		
 		if group.g and #group.g > 0 then
-			if app.Settings:GetTooltipSetting("Descriptions") then
+			if app.Settings:GetTooltipSetting("Descriptions") and paramA ~= "achievementID" then
 				for i,j in ipairs(group.g) do
 					if j.description and ((j[paramA] and j[paramA] == paramB) or (paramA == "itemID" and group.key == j.key)) then
 						tinsert(info, 1, { left = j.description, wrap = true, color = "ff66ccff" });
