@@ -15,22 +15,22 @@ _.Zones =
 					n(63083, {	-- Will Larsons
 						["groups"] = {
 							p(138, {	-- Blue Moth
-								["races"] = {11}	-- Draenei
+								["races"] = { 11 }	-- Draenei
 							}),
 							p(630, {	-- Gilnean Raven
-								["races"] = {22}	-- Worgan
+								["races"] = { 22 }	-- Worgan
 							}),
 							p(68, {		-- Great Horned Owl
-								["races"] = {4}		-- Night Elf
+								["races"] = { 4 }		-- Night Elf
 							}),
 							p(792, {	-- Jade Crane Chick
-								["races"] = {25}	-- Pandaren
+								["races"] = { 25 }	-- Pandaren
 							}),
 							p(43, {		-- Orange Tabby Cat
-								["races"] = {1}		-- Human
+								["races"] = { 1 }		-- Human
 							}),
 							p(72, {     	-- Snowshoe Rabbit
-								["races"] = {3,7}	-- Gnome, Dwarf
+								["races"] = { 3, 7 }	-- Gnome, Dwarf
 							}),
 						},
 						["description"] = "You may only learn this pet once per character from a Battle Pet Trainer.|r"

@@ -9,244 +9,246 @@ _.Zones =
 				n(-17, {	-- Quests
 					{	-- Band of Unending Life
 						["questID"] = 8700,
+						["qg"] = 15498,	-- Windcaller Yessendra
+						["coord"] = { 59.4, 14.0, 327 },
+						["classes"] = { 11 },	-- Druid
 						["groups"] = {
 							i(21408),	-- Band of Unending Life
 						},
-						["qg"] = 15498,	-- Windcaller Yessendra
-						["coord"] = { 59.4, 14.0 },
-						["classes"] = { 11 },	-- Druid
 					},
 					{	-- Band of Vaulted Secrets
 						["questID"] = 8699,
+						["qg"] = 15498,	-- Windcaller Yessendra
+						["coord"] = { 59.4, 14.0, 327 },
+						["classes"] = { 8 },	-- Mage
 						["groups"] = {
 							i(21414),	-- Band of Vaulted Secrets
 						},
-						["qg"] = 15498,	-- Windcaller Yessendra
-						["coord"] = { 59.4, 14.0 },
-						["classes"] = { 8 },	-- Mage
 					},
 					{	-- Band of Veiled Shadows
 						["questID"] = 8701,
+						["qg"] = 15498,	-- Windcaller Yessendra
+						["coord"] = { 59.4, 14.0, 327 },
+						["classes"] = { 4 },	-- Rogue
 						["groups"] = {
 							i(21405),	-- Band of Veiled Shadows
 						},
-						["qg"] = 15498,	-- Windcaller Yessendra
-						["coord"] = { 59.4, 14.0 },
-						["classes"] = { 4 },	-- Rogue
 					},
 					{	-- Blade of Eternal Justice
 						["questID"] = 8711,
+						["qg"] = 15499,	-- Warden Haro
+						["coord"] = { 59.4, 14.0, 327 },
+						["classes"] = { 2 },	-- Paladin
 						["groups"] = {
 							i(21395),	-- Blade of Eternal Justice
 						},
-						["qg"] = 15499,	-- Warden Haro
-						["coord"] = { 59.4, 14.0 },
-						["classes"] = { 2 },	-- Paladin
 					},
 					{	-- Blade of Vaulted Secrets
 						["questID"] = 8707,
+						["qg"] = 15499,	-- Warden Haro
+						["coord"] = { 59.4, 14.0, 327 },
+						["classes"] = { 8 },	-- Mage
 						["groups"] = {
 							i(21413),	-- Blade of Vaulted Secrets
 						},
-						["qg"] = 15499,	-- Warden Haro
-						["coord"] = { 59.4, 14.0 },
-						["classes"] = { 8 },	-- Mage
 					},
 					{	-- Cape of Eternal Justice
 						["questID"] = 8695,
+						["qg"] = 15500,	-- Keyl Swiftclaw
+						["coord"] = { 59.4, 14.0, 327 },
+						["classes"] = { 2 },	-- Paladin
 						["groups"] = {
 							i(21397),	-- Cape of Eternal Justice
 						},
-						["qg"] = 15500,	-- Keyl Swiftclaw
-						["coord"] = { 59.4, 14.0 },
-						["classes"] = { 2 },	-- Paladin
 					},
 					{	-- Cloak of Unending Life
 						["questID"] = 8692,
+						["qg"] = 15500,	-- Keyl Swiftclaw
+						["coord"] = { 59.4, 14.0, 327 },
+						["classes"] = { 11 },	-- Druid
 						["groups"] = {
 							i(21409),	-- Cloak of Unending Life
 						},
-						["qg"] = 15500,	-- Keyl Swiftclaw
-						["coord"] = { 59.4, 14.0 },
-						["classes"] = { 11 },	-- Druid
 					},
 					{	-- Cloak of Veiled Shadows
 						["questID"] = 8693,
+						["qg"] = 15500,	-- Keyl Swiftclaw
+						["coord"] = { 59.4, 14.0, 327 },
+						["classes"] = { 4 },	-- Rogue
 						["groups"] = {
 							i(21406),	-- Cloak of Veiled Shadows
 						},
-						["qg"] = 15500,	-- Keyl Swiftclaw
-						["coord"] = { 59.4, 14.0 },
-						["classes"] = { 4 },	-- Rogue
 					},
 					{	-- Cloak of the Gathering Storm
 						["questID"] = 8690,
+						["qg"] = 15500,	-- Keyl Swiftclaw
+						["coord"] = { 59.4, 14.0, 327 },
+						["classes"] = { 7 },	-- Shaman
 						["groups"] = {
 							i(21400),	-- Cloak of the Gathering Storm
 						},
-						["qg"] = 15500,	-- Keyl Swiftclaw
-						["coord"] = { 59.4, 14.0 },
-						["classes"] = { 7 },	-- Shaman
 					},
 					{	-- Cloak of the Unseen Path
 						["questID"] = 8696,
+						["qg"] = 15500,	-- Keyl Swiftclaw
+						["coord"] = { 59.4, 14.0, 327 },
+						["classes"] = { 3 },	-- Hunter
 						["groups"] = {
 							i(21403),	-- Cloak of the Unseen Path
 						},
-						["qg"] = 15500,	-- Keyl Swiftclaw
-						["coord"] = { 59.4, 14.0 },
-						["classes"] = { 3 },	-- Hunter
 					},
 					{	-- Dagger of Veiled Shadows
 						["questID"] = 8709,
+						["qg"] = 15499,	-- Warden Haro
+						["coord"] = { 59.4, 14.0, 327 },
+						["classes"] = { 4 },	-- Rogue
 						["groups"] = {
 							i(21404),	-- Dagger of Veiled Shadows
 						},
-						["qg"] = 15499,	-- Warden Haro
-						["coord"] = { 59.4, 14.0 },
-						["classes"] = { 4 },	-- Rogue
 					},
 					{	-- Drape of Unyielding Strength
 						["questID"] = 8557,
+						["qg"] = 15500,	-- Keyl Swiftclaw
+						["coord"] = { 59.4, 14.0, 327 },
+						["classes"] = { 1 },	-- Warrior
 						["groups"] = {
 							i(21394),	-- Drape of Unyielding Strength
 						},
-						["qg"] = 15500,	-- Keyl Swiftclaw
-						["coord"] = { 59.4, 14.0 },
-						["classes"] = { 1 },	-- Warrior
 					},
 					{	-- Drape of Vaulted Secrets
 						["questID"] = 8691,
+						["qg"] = 15500,	-- Keyl Swiftclaw
+						["coord"] = { 59.4, 14.0, 327 },
+						["classes"] = { 8 },	-- Mage
 						["groups"] = {
 							i(21415),	-- Drape of Vaulted Secrets
 						},
-						["qg"] = 15500,	-- Keyl Swiftclaw
-						["coord"] = { 59.4, 14.0 },
-						["classes"] = { 8 },	-- Mage
 					},
 					{	-- Gavel of Infinite Wisdom
 						["questID"] = 8705,
+						["qg"] = 15499,	-- Warden Haro
+						["coord"] = { 59.4, 14.0, 327 },
+						["classes"] = { 5 },	-- Priest
 						["groups"] = {
 							i(21410),	-- Gavel of Infinite Wisdom
 						},
-						["qg"] = 15499,	-- Warden Haro
-						["coord"] = { 59.4, 14.0 },
-						["classes"] = { 5 },	-- Priest
 					},
 					{	-- Hammer of the Gathering Storm
 						["questID"] = 8706,
+						["qg"] = 15499,	-- Warden Haro
+						["coord"] = { 59.4, 14.0, 327 },
+						["classes"] = { 7 },	-- Shaman
 						["groups"] = {
 							i(21398),	-- Hammer of the Gathering Storm
 						},
-						["qg"] = 15499,	-- Warden Haro
-						["coord"] = { 59.4, 14.0 },
-						["classes"] = { 7 },	-- Shaman
 					},
 					{	-- Kris of Unspoken Names
 						["questID"] = 8710,
+						["qg"] = 15499,	-- Warden Haro
+						["coord"] = { 59.4, 14.0, 327 },
+						["classes"] = { 9 },	-- Warlock
 						["groups"] = {
 							i(21416),	-- Kris of Unspoken Names
 						},
-						["qg"] = 15499,	-- Warden Haro
-						["coord"] = { 59.4, 14.0 },
-						["classes"] = { 9 },	-- Warlock
 					},
 					{	-- Mace of Unending Life
 						["questID"] = 8708,
+						["qg"] = 15499,	-- Warden Haro
+						["coord"] = { 59.4, 14.0, 327 },
+						["classes"] = { 11 },	-- Druid
 						["groups"] = {
 							i(21407),	-- Mace of Unending Life
 						},
-						["qg"] = 15499,	-- Warden Haro
-						["coord"] = { 59.4, 14.0 },
-						["classes"] = { 11 },	-- Druid
 					},
 					{	-- Ring of Eternal Justice
 						["questID"] = 8703,
+						["qg"] = 15498,	-- Windcaller Yessendra
+						["coord"] = { 59.4, 14.0, 327 },
+						["classes"] = { 2 },	-- Paladin
 						["groups"] = {
 							i(21396),	-- Ring of Eternal Justice
 						},
-						["qg"] = 15498,	-- Windcaller Yessendra
-						["coord"] = { 59.4, 14.0 },
-						["classes"] = { 2 },	-- Paladin
 					},
 					{	-- Ring of Infinite Wisdom
 						["questID"] = 8697,
+						["qg"] = 15498,	-- Windcaller Yessendra
+						["coord"] = { 59.4, 14.0, 327 },
+						["classes"] = { 5 },	-- Priest
 						["groups"] = {
 							i(21411),	-- Ring of Infinite Wisdom
 						},
-						["qg"] = 15498,	-- Windcaller Yessendra
-						["coord"] = { 59.4, 14.0 },
-						["classes"] = { 5 },	-- Priest
 					},
 					{	-- Ring of Unspoken Names
 						["questID"] = 8702,
+						["qg"] = 15498,	-- Windcaller Yessendra
+						["coord"] = { 59.4, 14.0, 327 },
+						["classes"] = { 9 },	-- Warlock
 						["groups"] = {
 							i(21417),	-- Ring of Unspoken Names
 						},
-						["qg"] = 15498,	-- Windcaller Yessendra
-						["coord"] = { 59.4, 14.0 },
-						["classes"] = { 9 },	-- Warlock
 					},
 					{	-- Ring of the Gathering Storm
 						["questID"] = 8698,
+						["qg"] = 15498,	-- Windcaller Yessendra
+						["coord"] = { 59.4, 14.0, 327 },
+						["classes"] = { 7 },	-- Shaman
 						["groups"] = {
 							i(21399),	-- Ring of the Gathering Storm
 						},
-						["qg"] = 15498,	-- Windcaller Yessendra
-						["coord"] = { 59.4, 14.0 },
-						["classes"] = { 7 },	-- Shaman
 					},
 					{	-- Scythe of the Unseen Path
 						["questID"] = 8712,
+						["qg"] = 15499,	-- Warden Haro
+						["coord"] = { 59.4, 14.0, 327 },
+						["classes"] = { 3 },	-- Hunter
 						["groups"] = {
 							i(21401),	-- Scythe of the Unseen Path
 						},
-						["qg"] = 15499,	--Warden Haro
-						["coord"] = { 59.4, 14.0 },
-						["classes"] = { 3 },	-- Hunter
 					},
 					{	-- Shroud of Infinite Wisdom
 						["questID"] = 8689,
-						["groups"] = {
-							i(21412),	-- 
-						},
 						["qg"] = 15500,	-- Keyl Swiftclaw
+						["coord"] = { 59.4, 14.0, 327 },
 						["classes"] = { 5 },	-- Priest
+						["groups"] = {
+							i(21412),	-- Shroud of Infinite Wisdom
+						},
 					},
 					{	-- Shroud of Unspoken Names
 						["questID"] = 8694,
+						["qg"] = 15500,	-- Keyl Swiftclaw
+						["coord"] = { 59.4, 14.0, 327 },
+						["classes"] = { 9 },	-- Warlock
 						["groups"] = {
 							i(21418),	-- Shroud of Unspoken Names
 						},
-						["qg"] = 15500,	-- Keyl Swiftclaw
-						["classes"] = { 9 },	-- Warlock
 					},
 					{	-- Sickle of Unyielding Strength
 						["questID"] = 8558,
+						["qg"] = 15499,	-- Warden Haro
+						["coord"] = { 59.4, 14.0, 327 },
+						["classes"] = { 1 },	-- Warrior
 						["groups"] = {
 							i(21392),	-- Sickle of Unyielding Strength
 						},
-						["qg"] = 15499,	-- Warden Haro
-						["coord"] = { 59.4, 14.0 },
-						["classes"] = { 1 },	-- Warrior
 					},
 					{	-- Signet of Unyielding Strength
 						["questID"] = 8556,
+						["qg"] = 15498,	-- Windcaller Yessendra
+						["coord"] = { 59.4, 14.0, 327 },
+						["classes"] = { 1 },	-- Warrior
 						["groups"] = {
 							i(21393),	-- Signet of Unyielding Strength
 						},
-						["qg"] = 15498,	-- Windcaller Yessendra
-						["coord"] = { 59.4, 14.0 },
-						["classes"] = { 1 },	-- Warrior
 					},
 					{	-- Signet of the Unseen path
 						["questID"] = 8704,
+						["qg"] = 15498,	-- Windcaller Yessendra
+						["coord"] = { 59.4, 14.0, 327 },
+						["classes"] = { 3 },	-- Hunter
 						["groups"] = {
 							i(21402),	-- Signet of the unseen Path
 						},
-						["qg"] = 15498,	-- Windcaller Yessendra
-						["coord"] = { 59.4, 14.0 },
-						["classes"] = { 3 },	-- Hunter
 					},
 				}),
 			},

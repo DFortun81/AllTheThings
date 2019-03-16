@@ -8,6 +8,7 @@ _.Zones =
 			["groups"] = {
 				n(-16, {	-- Rares	
 					n(6648, {	-- Antilos
+						["coord"] = { 45.2, 27.2, 76 },
 						["groups"] = {
 							i(9776),	-- Bandit Boots
 							i(9777),	-- Bandit Bracers
@@ -44,17 +45,18 @@ _.Zones =
 							i(6538),	-- Willow Robe
 							i(6536),	-- Willow Vest
 						},
-						["coord"] = { 45.2, 27.2 },
 					}),
 					n(44372, { 	-- Avalanchion
+						["u"] = 43,
+						["description"] = "This was only available during the Elemental Invasion.",
 						["groups"] = {
 							un(7, i(18673)),	-- Avalanchion's Stony Hide
 							un(7, i(18674)),	-- Hardened Stone Band
 						},
-						["u"] = 43,
-						["description"] = "This was only available during the Elemental Invasion.",
 					}),
 					n(6651, {	-- Gatekeeper Rageroar
+						["coord"] = { 33.0, 32.6, 76 },
+						["description"] = "|cff66ccff-125 Timbermaw Reputation if you kill.|r",
 						["groups"] = {
 							i(9779),	-- Bandit Cloak
 							i(6558),	-- Bard's Belt
@@ -85,10 +87,15 @@ _.Zones =
 							i(6541),	-- Willow Gloves
 							i(6540),	-- Willow Pants
 						},
-						["coord"] = { 33.0, 32.6 },
-						["description"] = "|cff66ccff-125 Timbermaw Reputation if you kill.|r"
 					}), 
 					n(6650, {	-- General Fangferror
+						["coords"] = {
+							{ 59.4, 77.6, 76 },
+							{ 60.6, 77.6, 76 },
+							{ 62.6, 76.8, 76 },
+							{ 63.2, 79.2, 76 },
+							{ 63.6, 81.4, 76 },
+						},
 						["groups"] = {
 							i(6558),	-- Bard's Belt
 							i(6557),	-- Bard's Boots
@@ -119,15 +126,9 @@ _.Zones =
 							i(6541),	-- Willow Gloves
 							un(7, i(17054)),	-- Joonho's Mercy
 						},
-						["coords"] = {
-							{ 59.4, 77.6 },
-							{ 60.6, 77.6 },
-							{ 62.6, 76.8 },
-							{ 63.2, 79.2 },
-							{ 63.6, 81.4 },
-						},
 					}), 
 					n(6649, {	-- Lady Sesspira
+						["coord"] = { 44.0, 59.8, 76 },
 						["groups"] = {
 							i(9776),	-- Bandit Boots
 							i(9777),	-- Bandit Bracers
@@ -169,56 +170,59 @@ _.Zones =
 							i(6538),	-- Willow Robe
 							i(6536),	-- Willow Vest
 						},
-						["coord"] = { 44.0, 59.8 },
 					}), 
 					n(13896, {	-- Scalebeard
-						["groups"] = {
-						i(9777),	-- Bandit Bracers
-						i(9775),	-- Bandit Cinch
-						i(9779),	-- Bandit Cloak
-						i(6558),	-- Bard's Belt
-						i(6557),	-- Bard's Boots
-						i(6556),	-- Bard's Bracers
-						i(6554),	-- Bard's Gloves
-						i(6553),	-- Bard's Trousers
-						i(6552),	-- Bard's Tunic
-						i(9765),	-- Cadet Vest
-						i(9757),	-- Gypsy Tunic
-						i(9768),	-- Greenweave Bracers
-						i(9770),	-- Greenweave Cloak
-						i(9767),	-- Greenweave Sandals
-						i(9757),	-- Gypsy Tunic
-						i(9788),	-- Raider's Belt
-						i(9784),	-- Raider's Boots
-						i(9785),	-- Raider's Bracers
-						i(9786),	-- Raider's Cloak
-						i(9787),	-- Raider's Gauntlets
-						i(9789),	-- Raider's Legguards
-						i(9749),	-- Simple Blouse
-						i(9748),	-- Simple Robe
-						i(6545),	-- Soldier's Armor
-						i(6551),	-- Soldier's Boots
-						i(6547),	-- Soldier's Gauntlets
-						i(6548),	-- Soldier's Girdle
-						i(6546),	-- Soldier's Leggings
-						i(6550),	-- Soldier's Wristguards
-						i(6539),	-- Willow Belt
-						i(6537),	-- Willow Boots
-						i(6543),	-- Willow Bracers
-						i(6542),	-- Willow Cape
-						i(6541),	-- Willow Gloves
-						i(6540),	-- Willow Pants
-						i(6538),	-- Willow Robe
-						i(6536),	-- Willow Vest
-						},
 						["coords"] = {
-							{ 43.6, 52.6 },
-							{ 42.8, 50.6 },
-							{ 42.8, 47.2 },
-							{ 42.6, 46.4 },
+							{ 43.6, 52.6, 76 },
+							{ 42.8, 50.6, 76 },
+							{ 42.8, 47.2, 76 },
+							{ 42.6, 46.4, 76 },
+						},
+						["groups"] = {
+							i(9777),	-- Bandit Bracers
+							i(9775),	-- Bandit Cinch
+							i(9779),	-- Bandit Cloak
+							i(6558),	-- Bard's Belt
+							i(6557),	-- Bard's Boots
+							i(6556),	-- Bard's Bracers
+							i(6554),	-- Bard's Gloves
+							i(6553),	-- Bard's Trousers
+							i(6552),	-- Bard's Tunic
+							i(9765),	-- Cadet Vest
+							i(9757),	-- Gypsy Tunic
+							i(9768),	-- Greenweave Bracers
+							i(9770),	-- Greenweave Cloak
+							i(9767),	-- Greenweave Sandals
+							i(9757),	-- Gypsy Tunic
+							i(9788),	-- Raider's Belt
+							i(9784),	-- Raider's Boots
+							i(9785),	-- Raider's Bracers
+							i(9786),	-- Raider's Cloak
+							i(9787),	-- Raider's Gauntlets
+							i(9789),	-- Raider's Legguards
+							i(9749),	-- Simple Blouse
+							i(9748),	-- Simple Robe
+							i(6545),	-- Soldier's Armor
+							i(6551),	-- Soldier's Boots
+							i(6547),	-- Soldier's Gauntlets
+							i(6548),	-- Soldier's Girdle
+							i(6546),	-- Soldier's Leggings
+							i(6550),	-- Soldier's Wristguards
+							i(6539),	-- Willow Belt
+							i(6537),	-- Willow Boots
+							i(6543),	-- Willow Bracers
+							i(6542),	-- Willow Cape
+							i(6541),	-- Willow Gloves
+							i(6540),	-- Willow Pants
+							i(6538),	-- Willow Robe
+							i(6536),	-- Willow Vest
 						},
 					}), 
 					n(8660, {	-- The Evalcharr
+						["coords"] = { 
+							{ 14.2, 50.6, 76 },
+							{ 15.0, 58.2, 76 },
+						},
 						["groups"] = {
 							i(9777),	-- Bandit Bracers
 							i(9775),	-- Bandit Cinch
@@ -249,12 +253,15 @@ _.Zones =
 							i(6538),	-- Willow Robe
 							i(6536),	-- Willow Vest
 						},
-						["coords"] = { 
-							{ 14.2, 50.6 },
-							{ 15.0, 58.2 },
-						}
 					}), 
 					n(6118, {	-- Varo'then's Ghost
+						["coords"] = {
+							{ 34.4, 76.8, 76 },
+							{ 33.0, 75.0, 76 },
+							{ 34.6, 71.6, 76 },
+							{ 36.4, 71.6, 76 },
+							{ 37.4, 74.6, 76 },
+						},
 						["groups"] = {
 							i(9941),	-- Abjurer's Mantle
 							i(6558),	-- Bard's Belt
@@ -288,13 +295,6 @@ _.Zones =
 							i(6537),	-- Willow Boots
 							i(6543),	-- Willow Bracers
 							i(6542),	-- Willow Cape
-						},
-						["coords"] = {
-							{ 34.4, 76.8 },
-							{ 33.0, 75.0 },
-							{ 34.6, 71.6 },
-							{ 36.4, 71.6 },
-							{ 37.4, 74.6 },
 						},
 					}), 
 	--				n(107477, { 	-- N.U.T.Z. -- mob to tame			}),

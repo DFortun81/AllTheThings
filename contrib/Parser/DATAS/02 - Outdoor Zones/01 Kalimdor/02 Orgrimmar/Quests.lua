@@ -613,24 +613,24 @@ Legacy				q( 1436),	-- Alliance Relations
 						["qg"] = 6929, -- Innkeeper Gryshka
 						["coord"] = { 53.5, 78.7 },
 						["races"] = { 2, 8 }, -- Orcs/Trolls
-						["sourceQuests"] = { 6384 }, -- Ride to Orgrimmar
+						["sourceQuest"] = 6384, -- Ride to Orgrimmar
 					}),
 					q(6386, { -- Return to Razor Hill
 						["qg"] = 3310, -- Doras
 						["coord"] = { 49.5, 59.2 },
 						["races"] = { 2, 8}, -- Orcs/Trolls
-						["sourceQuests"] = { 6385 }, -- Doras the Wind Rider Master
+						["sourceQuest"] = 6385, -- Doras the Wind Rider Master
 					}),
 					{	-- Dread Head Redemption
 						["questID"] = 13842,
 						["qg"] = 14720,	-- Eitrigg
+						["coord"] = { 49.2, 72.3 },
+						["sourceQuest"] = 13841,	-- All Apologies
 						["groups"] = {
 							i(119325),	-- Bow of Fire
 							i(119326),  -- Ring of Pardons
 							i(119327),	-- Durak's Downfall
 						},
-						["coord"] = { 49.2, 72.3 },
-						["sourceQuest"] = 13841,	-- All Apologies
 					},
 					{	-- Elemental Goo
 						["questID"] = 25162,

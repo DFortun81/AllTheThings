@@ -7,12 +7,13 @@ _.Zones =
 		m(62, {	-- Darkshore
 			["groups"] = {
 				n(0, {	-- Zone Drop
-					n(2337, {	-- Dark Strand Voidcaller
-						["groups"] = {
-							un(7, i(5773)),	-- Pattern: Robes of Arcana
+					{	-- Pattern: Robes of Arcana
+						["itemID"] = 5773,
+						["u"] = 7,
+						["crs"] = {
+							2337,	-- Dark Strand Voidcaller (removed in cata)
 						},
-						["u"] = 43,
-					}),
+					},
 				}),
 			},
 		}),

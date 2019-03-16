@@ -9,12 +9,20 @@ _.Zones =
 				n(-16, {	-- Rares
 					n(5824, {	-- Captain Flat Tusk -- NO TRANSMOGGABLE LOOT!
 						["coords"] = {
-							{ 38.6, 53.8 },
-							{ 44.8, 50.6 },
-							{ 42.4, 38.6 },
+							{ 38.6, 53.8, 1 },
+							{ 44.8, 50.6, 1 },
+							{ 42.4, 38.6, 1 },
 						},
 					}),
 					n(5823, {	-- Death Flayer
+						["coords"] = {
+							{ 34.8, 43.8, 1 },
+							{ 35.6, 46.0, 1 },
+							{ 37.8, 47.8, 1 },
+							{ 39.6, 45.6, 1 },
+							{ 38.6, 44.0, 1 },
+							{ 36.6, 44.4, 1 },
+						},
 						["groups"] = {
 							i(6267),	--Disciple's Pants
 							i(68762),	-- Imbued Cadet Cloak
@@ -40,16 +48,12 @@ _.Zones =
 							i(6337),	-- Infantry Leggings
 							i(6269),	-- Pioneer Trousers
 						},
-						["coords"] = {
-							{ 34.8, 43.8 },
-							{ 35.6, 46.0 },
-							{ 37.8, 47.8 },
-							{ 39.6, 45.6 },
-							{ 38.6, 44.0 },
-							{ 36.6, 44.4 },
-						},
 					}),
 					n(5822, {	-- Felweaver Scornn
+						["coords"] = {
+							{ 51.8, 9.6, 1 },
+							{ 53.2, 7.6, 1 },
+						},
 						["groups"] = {
 							i(6267),	-- Disciple's Pants
 							i(6512),	-- Disciple's Robe
@@ -77,20 +81,16 @@ _.Zones =
 							i(6269),	-- Pioneer Trousers
 							i(6268),	-- Pioneer Tunic
 						},
-						["coords"] = {
-							{ 51.8, 9.6 },
-							{ 53.2, 7.6 },
-						},
 					}),
 					n(5826, {	-- Geolord Mottle -- NO TRANSMOGGABLE LOOT!
 						["coords"] = {
-							{ 43.2, 39.6 },
-							{ 43.6, 50.2 },
-							{ 47.0, 49.6 },
+							{ 43.2, 39.6, 1 },
+							{ 43.6, 50.2, 1 },
+							{ 47.0, 49.6, 1 },
 						},
 					}),
 					n(5809, {	-- Sergeant Curtis -- NO TRANSMOGGABLE LOOT!
-						["coord"] = { 59.6, 58.8 },
+						["coord"] = { 59.6, 58.8, 1 },
 					}),
 				}),
 			},

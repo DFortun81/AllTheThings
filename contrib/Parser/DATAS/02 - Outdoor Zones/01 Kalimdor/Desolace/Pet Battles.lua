@@ -22,16 +22,16 @@ _.Zones =
 					{	-- Cassandra Kaboom
 						["questID"] = 31870,
 						["qg"] = 66372,	-- Merda Stronghoof
+						["coord"] = { 57.2, 45.8, 66 },
+						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(89125),	-- Sack of Pet Supplies
 						},
-						["coord"] = { 57.2, 45.8 },
-						["races"] = HORDE_ONLY,
 					},	
 					{	-- Merda Stronghoof
 						["questID"] = 31872,
 						["qg"] = 66372,	-- Merda Stronghoof
-						["coord"] = { 57.2, 45.8 },
+						["coord"] = { 57.2, 45.8, 66 },
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					},

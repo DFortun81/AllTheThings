@@ -16,7 +16,7 @@ _.Zones =
 					{	-- Grazzle the Great
 						["questID"] = 31905,
 						["qg"] = 66436,	-- Grazzle the Great
-						["coord"] = { 53.8, 74.8 },
+						["coord"] = { 53.8, 74.8, 70 },
 						["isDaily"] = true,
 					},
 				}),

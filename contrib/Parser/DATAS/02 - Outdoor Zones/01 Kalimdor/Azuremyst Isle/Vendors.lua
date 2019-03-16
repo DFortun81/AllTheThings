@@ -8,12 +8,12 @@ _.Zones =
 			["groups"] = {
 				n(-2, {	-- Vendors
 					n(17246, {	-- "Cookie" McWeaksauce <Cooking Trainer & Supplies>
+						["coord"] = { 46.6, 70.6, 97 },
+						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(21219),	-- Recipe: Sagefish Delight
 							i(21099),	-- Recipe: Smoked Sagefish
 						},
-						["coord"] = { 46.6, 70.6 },
-						["races"] = ALLIANCE_ONLY,
 					}),
 				}),
 			},

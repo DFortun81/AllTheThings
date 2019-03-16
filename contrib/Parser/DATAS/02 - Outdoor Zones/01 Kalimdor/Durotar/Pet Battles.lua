@@ -17,22 +17,22 @@ _.Zones =
 					n(63061, { -- Narzak
 						["groups"] = {
 							p(75, {	-- Black Kingsnake
-								["races"] = {8,2} -- Troll, Orc
+								["races"] = { 8, 2 } -- Troll, Orc
 							}),
 							p(70, {	-- Brown Prarie Dog
-								["races"] = {6}	-- Tauren
+								["races"] = { 6 }	-- Tauren
 							}),
 							p(142, { -- Golden Dragonhawk Hatchling
-								["races"] = {10} -- Blood Elf
+								["races"] = { 10 } -- Blood Elf
 							}),
 							p(792, { -- Jade Crane Chick
-								["races"] = {26} -- Pandaren
+								["races"] = { 26 } -- Pandaren
 							}),
 							p(629, { -- Shore Crawler
-								["races"] = {9}	-- Goblin
+								["races"] = { 9 }	-- Goblin
 							}),
 							p(55, {	-- Undercity Cockroach
-								["races"] = {5}	-- Undeads
+								["races"] = { 5 }	-- Undeads
 							}),
 						},
 						["races"] = HORDE_ONLY,
@@ -64,11 +64,11 @@ _.Zones =
 					},
 					{	-- Dagra the Fierce
 						["questID"] = 31813,
+						["qg"] = 66126, -- Zunta
+						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(89125), -- Sack of Pet Supplies
 						},
-						["qg"] = 66126, -- Zunta
-						["races"] = HORDE_ONLY,
 					},
 					{	-- Zunta
 						["questID"] = 31818,

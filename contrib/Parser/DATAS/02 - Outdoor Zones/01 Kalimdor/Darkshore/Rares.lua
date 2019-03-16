@@ -8,6 +8,7 @@ _.Zones =
 			["groups"] = {
 				n(-16, {	-- Rares
 					n(2186, {	-- Carnivous the Breaker
+						["coord"] = { 44.4, 83.0, 62 },
 						["groups"] = {
 							i(6536),	-- Willow Vest
 							i(6575),	-- Defender Cloak
@@ -38,9 +39,9 @@ _.Zones =
 							i(6564),	-- Shimmering Cloak
 							i(6585),	-- Scouting Cloak
 						},
-						["coord"] = { 44.4, 83.0 },
 					}), 
 					n(2192, {	-- Firecaller Radison
+						["coord"] = { 40.0, 83.0, 62 },
 						["groups"] = {
 							i(6552),	-- Bard's Tunic
 							i(9784),	-- Raider's Boots
@@ -65,9 +66,13 @@ _.Zones =
 							i(9783),	-- Raider's Chestpiece
 							i(6563),	-- Shimmering Bracers
 						},
-						["coord"] = { 40.0, 83.0 },
 					}), 
 					n(7015, {	-- Flagglemurk the Cruel
+						["coords"] = {
+							{ 57.6, 15.0, 62 },
+							{ 58.0, 11.8, 62 },
+							{ 58.6, 9.8, 62 },
+						},
 						["groups"] = {
 							i(9747),	-- Simple Britches
 							i(9756),	-- Gypsy Trousers
@@ -96,13 +101,9 @@ _.Zones =
 							i(6556),	-- Bard's Bracers
 							i(6554),	-- Bard's Gloves
 						},
-						["coords"] = {
-							{ 57.6, 15.0 },
-							{ 58.0, 11.8 },
-							{ 58.6, 9.8 },
-						},
 					}), 
 					n(2184, {	-- Lady Moongazer
+						["coord"] = { 44.8, 56.6, 62 },
 						["groups"] = {
 							i(6550),	-- Soldier's Wristguards
 							i(6548),	-- Soldier's Girdle
@@ -130,9 +131,13 @@ _.Zones =
 							i(9748),	-- Simple Robe
 							i(6556),	-- Bard's Bracers
 						},
-						["coord"] = { 44.8, 56.6 },
 					}), 
 					n(7016, {	-- Lady Vespira
+						["coords"] = {
+							{ 48.6, 39.0, 62 },
+							{ 48.6, 41.6, 62 },
+							{ 46.6, 41.4, 62 },
+						},
 						["groups"] = {
 							i(6269),	-- Pioneer Trousers
 							i(6267),	-- Disciple's Pants
@@ -156,13 +161,9 @@ _.Zones =
 							i(6550),	-- Soldier's Wristguards
 							i(6333),	-- Spikelash Dagger
 						},
-						["coords"] = {
-							{ 48.6, 39.0 },
-							{ 48.6, 41.6 },
-							{ 46.6, 41.4 },
-						},
 					}), 
 					n(2191, {	-- Licillin
+						["coord"] = { 57.2, 32.8, 62 },
 						["groups"] = {
 							i(9756),	-- Gypsy Trousers
 							i(9763),	-- Cadet Leggings
@@ -192,9 +193,9 @@ _.Zones =
 							i(9749),	-- Simple Blouse
 							i(6542),	-- Willow Cape
 						},
-						["coord"] = { 57.2, 32.8 },
 					}), 
 					n(7017, {	-- Lord Sinslayer
+						["coord"] = { 34.2, 83.6, 62 },
 						["groups"] = {
 							i(9788),	-- Raider's Belt
 							i(6585),	-- Scouting Cloak
@@ -225,9 +226,12 @@ _.Zones =
 							i(6562),	-- Shimmering Boots
 							i(6564),	-- Shimmering Cloak
 						},
-						["coord"] = { 34.2, 83.6 },
 					}),
 					n(2175, {	-- Shadowclaw
+						["coords"] = {
+							{ 41.6, 36.0, 62 },
+							{ 41.2, 36.6, 62 },
+						},
 						["groups"] = {
 							i(9763),	-- Cadet Leggings
 							i(6558),	-- Bard's Belt
@@ -243,12 +247,9 @@ _.Zones =
 							i(6557),	-- Bard's Boots
 							i(6539),	-- Willow Belt
 						},
-						["coords"] = {
-							{ 41.6, 36.0 },
-							{ 41.2, 36.6 },
-						},
 					}), 
 					n(2172, {	-- Strider Clutchmother
+						["coord"] = { 40.8, 48.6, 62 },
 						["groups"] = {
 							i(9756),	-- Gypsy Trousers
 							i(9763),	-- Cadet Leggings
@@ -262,7 +263,6 @@ _.Zones =
 							i(9749),	-- Simple Blouse
 							i(6541),	-- Willow Gloves
 						},
-						["coord"] = { 40.8, 48.6 },
 					}), 
 				}),
 			},
