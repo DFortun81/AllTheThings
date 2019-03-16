@@ -4,8 +4,14 @@
 
 _.Instances = { tier(6, {	-- Warlords of Draenor
 	n(-7, {	-- World Bosses
+		["isRaid"] = true,
+		["lvl"] = 100,
 		["groups"] = {
 			cr(81252, e(1291, {	-- Drov the Ruiner
+				["questID"] = 37462,
+				["isRaid"] = true,
+				["maps"] = { 543 },	-- Gorgrond
+				["coord"] = { 44.1, 39.9, 543 },
 				["groups"] = {	
 					i(120086),	-- Bone Charm Chain
 					i(120084),	-- Braided Magnaron Plait
@@ -21,11 +27,13 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(115430),	-- Cord of Ruination
 					i(115432),	-- Waistplate of Bladed Force
 				},
-				["questID"] = 37462,
-				["isRaid"] = true,
-				["maps"] = { 543 },	-- Gorgrond
 			})),
 			cr(87493, e(1262, {	-- Rukhmar
+				["achievementID"] = 9425,
+				["questID"] = 37464,
+				["isRaid"] = true,
+				["maps"] = { 542 }, -- Spires of Arak
+				["coord"] = { 37.0, 39.3, 542 },
 				["groups"] = {
 					i(116771),	-- Solar Spirehawk (MOUNT!)
 					i(127775, {	-- Gemcutter Module: Stamina
@@ -50,12 +58,14 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(115439),	-- Firemender Seal
 					i(115438),	-- Signet of Burning Truths
 				},
-				["achievementID"] = 9425,
-				["questID"] = 37464,
-				["isRaid"] = true,
-				["maps"] = { 542 }, -- Spires of Arak
 			})),
 			cr(94015, e(1452, { -- Supreme Lord Kazzak
+				["questID"] = 39380,
+				["isRaid"] = true,
+				["maps"] = {
+					534,	-- Tanaan Jungle
+				},
+				["coord"] = { 47.5, 22.1, 534 },
 				["groups"] = {
 					i(127976), -- Choker of Reciprocity
 					i(127977), -- Insightful Void-Link Chain
@@ -74,13 +84,12 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(124545), -- Chipped Soul Prism
 					i(124546), -- Mark of Supreme Doom
 				},
-				["questID"] = 39380,
-				["isRaid"] = true,
-				["maps"] = {
-					534,	-- Tanaan Jungle
-				},
 			})),
 			cr(81535, e(1211, {	-- Tarlna the Ageless
+				["questID"] = 37462,
+				["isRaid"] = true,
+				["maps"] = { 543 }, -- Gorgrond
+				["coord"] = { 47.0, 86.7, 543 },
 				["groups"] = {	
 					i(120089),	-- Chestguard of Rejuvenation
 					i(120090),	-- Falling Leaf Breastplate
@@ -95,12 +104,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(115430),	-- Cord of Ruination
 					i(115432),	-- Waistplate of Bladed Force
 				},
-				["questID"] = 37462,
-				["isRaid"] = true,
-				["maps"] = { 543 }, -- Gorgrond
 			})),
 		},
-		["isRaid"] = true,
-		["lvl"] = 100,
 	}),
 })};
