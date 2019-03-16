@@ -1487,7 +1487,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				end
 				group = subgroup;
 			end
-		elseif paramA == "achievementID" then
+		elseif paramA == "achievementID" or paramA == "titleID" then
 			-- Don't do anything
 			local regroup = {};
 			if app.Settings:Get("AccountMode") then
@@ -1957,6 +1957,7 @@ fieldCache["requireSkill"] = {};
 fieldCache["s"] = {};
 fieldCache["speciesID"] = {};
 fieldCache["spellID"] = {};
+fieldCache["titleID"] = {};
 fieldCache["toyID"] = {};
 fieldCache["sym"] = {};
 local function CacheArrayFieldIDs(group, field, arrayField)
@@ -2009,6 +2010,7 @@ CacheFields = function(group)
 	CacheFieldID(group, "flightPathID");
 	CacheFieldID(group, "objectID");
 	CacheFieldID(group, "itemID");
+	CacheFieldID(group, "titleID");
 	CacheFieldID(group, "questID");
 	CacheSubFieldID(group, "questID", "altQuestID");
 	CacheFieldID(group, "requireSkill");
@@ -7374,6 +7376,7 @@ local function RowOnEnter(self)
 		if reference.titleID then
 			if app.Settings:GetTooltipSetting("titleID") then GameTooltip:AddDoubleLine(L["TITLE_ID"], tostring(reference.titleID)); end
 			GameTooltip:AddDoubleLine(" ", L[IsTitleKnown(reference.titleID) and "KNOWN_ON_CHARACTER" or "UNKNOWN_ON_CHARACTER"]);
+			AttachTooltipSearchResults(GameTooltip, "titleID:" .. reference.titleID, SearchForField, "titleID", reference.titleID, true);
 		end
 		if reference.questID then
 			if app.Settings:GetTooltipSetting("questID") then
@@ -7454,9 +7457,7 @@ local function RowOnEnter(self)
 		if reference.criteriaID and reference.achievementID then
 			GameTooltip:AddDoubleLine("Criteria for", GetAchievementLink(reference.achievementID));
 		end
-		if reference.achievementID then
-			AttachTooltipSearchResults(GameTooltip, "achievementID:" .. reference.achievementID, SearchForField, "achievementID", reference.achievementID, true);
-		end
+		if reference.achievementID then AttachTooltipSearchResults(GameTooltip, "achievementID:" .. reference.achievementID, SearchForField, "achievementID", reference.achievementID, true); end
 		
 		-- Show Quest Prereqs
 		if reference.sourceQuests and not reference.saved then
