@@ -6562,12 +6562,13 @@ local function CreateMiniListForGroup(group)
 	end
 	if IsAltKeyDown() then
 		AddTomTomWaypoint(popout.data, false);
+	else
+		if not popout.data.expanded then
+			ExpandGroupsRecursively(popout.data, true, true);
+		end
+		--ExportData(popout.data);
+		popout:Toggle(true);
 	end
-	if not popout.data.expanded then
-		ExpandGroupsRecursively(popout.data, true, true);
-	end
-	--ExportData(popout.data);
-	popout:Toggle(true);
 end
 local function ClearRowData(self)
 	self.ref = nil;
