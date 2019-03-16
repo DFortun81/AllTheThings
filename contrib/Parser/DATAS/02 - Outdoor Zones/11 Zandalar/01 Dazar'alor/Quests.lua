@@ -226,21 +226,33 @@ _.Zones =
 								},
 							},
 						},
-						q(47432, {	-- The Bargain is Struck; Actually Gonk/Pa'ku triggeeer
-							["qg"] = 127489,	-- Hexlord Raal
-							["sourceQuests"] = { 47440, 47439, },	-- Pa'ku, Master of Winds, Gonk, Lord of the Pack
+						{	-- Righting Wrongs
+							["questID"] = 55124,
+							["qg"] = 150433,	-- Bluffwatcher Proudscar
+							["coord"] = { 49.8, 95.9, 1165 },
 							["races"] = HORDE_ONLY,
-						}),
+						},
+						{	-- The Bargain is Struck; Actually Gonk/Pa'ku triggeeer
+							["questID"] = 47432,
+							["qg"] = 127489,	-- Hexlord Raal
+							["races"] = HORDE_ONLY,
+							["sourceQuests"] = {
+								47440,	-- Pa'ku, Master of Winds
+								47439,	-- Gonk, Lord of the Pack
+							},
+						},
 						{	-- Trouble in Gnomeregan
 							["questID"]	= 54276,	-- Trouble in Gnomeregan
 							["qg"] = 147641,	-- Radek Fuselock
 							["isBreadcrumb"] = true,
 							["races"] = HORDE_ONLY,
 						},
-						qh(53817, {	-- Whatever Happened to Grizzek Fizzwrench?
+						{	-- Whatever Happened to Grizzek Fizzwrench?
+							["questID"] = 53817,
 							["qg"] = 136683,	-- Trade Prince Gallywix
 							["coord"] = { 58.5, 62.6, 1163 },
-						}),
+							["races"] = HORDE_ONLY,
+						},
 					},
 				}),
 			},
@@ -248,7 +260,6 @@ _.Zones =
 			["achievementID"] = 12559,	-- Explore Zuldazar
 			["lvl"] = 110,
 			["maps"] = {
-				--1163,	-- Dazar'alor
 				1164,	-- Dazar'alor
 				1165,	-- Dazar'alor
 			},

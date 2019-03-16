@@ -1052,6 +1052,14 @@ _.Zones =
 						["requireSkill"] = 129,	-- First Aid
 						["sourceQuest"] = 6625,	-- Alliance Trauma
 					},
+					{	-- Under False Colors
+							["questID"] = 54999,
+							["qg"] = 150311,	-- Thomas Zelling
+							["coord"] = { 76.3, 42.7, 70 },
+							["lvl"] = 120,
+							["races"] = HORDE_ONLY,
+							["sourceQuest"] = 54960,	-- A Bitter Reunion
+						},
 					{	-- Unleash the Raptors
 						["questID"] = 27243,
 						["groups"] = {

@@ -748,6 +748,16 @@ _.Zones =
 				}),
 				n(-17, {	-- Quests [H]
 					["groups"] = {
+						{	-- A Bitter Reunion
+							["questID"] = 54960,
+							["qg"] = 149842,	-- Baine Bloodhoof
+							["coord"] = { 85.8, 45.8, 895 },
+							["races"] = HORDE_ONLY,
+							["sourceQuests"] = {
+								54997,	-- Dead in the Water
+								54960,	-- A Bitter Reunion
+							},
+						},
 						{	-- Castaway Point [Area]
 							["npcID"] = -90005,	-- Castaway Point
 							["icon"] = "Interface\\Icons\\inv_tiragardesound",
@@ -835,6 +845,27 @@ _.Zones =
 									-- NOTE!! Also grants credit for Alliance Equivalent == 49218
 								},
 							},
+						},
+						{	-- Dead in the Water
+							["questID"] = 54997,
+							["qg"] = 149842,	-- Baine Bloodhoof
+							["coord"] = { 85.8, 45.8, 895 },
+							["races"] = HORDE_ONLY,
+							["sourceQuest"] = 54958,	-- Ships in the Night
+						},
+						{	-- Ships in the Night
+							["questID"] = 54958,
+							["qg"] = 150309,	-- Baine Bloodhoof
+							["coord"] = { 87.3, 49.6, 895 },
+							["races"] = HORDE_ONLY,
+							["sourceQuest"] = 55124,	-- Righting Wrongs
+						},
+						{	-- Under Lock and Keys
+							["questID"] = 54959,
+							["qg"] = 149842,	-- Baine Bloodhoof
+							["coord"] = { 85.8, 45.8, 895 },
+							["races"] = HORDE_ONLY,
+							["sourceQuest"] = 54958,	-- Ships in the Night
 						},
 						{	-- Waning Glacier
 							["npcID"] = -90003, 	-- Waning Glacier
