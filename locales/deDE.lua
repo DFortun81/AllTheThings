@@ -2,10 +2,10 @@
 if GetLocale() ~= "deDE" then return; end
 local L = AllTheThings.L;
 
-L.CUSTOM_DIFFICULTIES[-1] = "Raid Finder (5.4)";
+L.CUSTOM_DIFFICULTIES[-1] = "Schlachtzugbrowser (5.4)";
 L.CUSTOM_DIFFICULTIES[-2] = "Flexible (5.4)";
 L.CUSTOM_DIFFICULTIES[-3] = "Normal (5.4)";
-L.CUSTOM_DIFFICULTIES[-4] = "Heroic (5.4)";
+L.CUSTOM_DIFFICULTIES[-4] = "Heroisch (5.4)";
 
 -- TODO
 L.SAVED_TO_DJ_INSTANCES["Geschmolzener Kern"] = "Der Geschmolzene Kern";
