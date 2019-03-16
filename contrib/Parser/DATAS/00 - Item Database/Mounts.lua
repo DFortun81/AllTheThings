@@ -149,6 +149,7 @@ i(163123, 272481);	-- Vicious War Riverbeast [A]
 i(163124, 270560);	-- Vicious War Clefthoof [H]
 i(151625, 239767);	-- Red Qiraji War Tank
 i(151626, 239766);	-- Sapphire Qiraji Resonating Crystal
+i(164762, 282682);	-- Kul Tiran Charger (Kul Tiran Allied Race)
 
 ---------------
 -- PATCH 8.1 --

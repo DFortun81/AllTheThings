@@ -23,7 +23,7 @@ _.Mounts =
 		i(163577),	-- Conquerer's Scythemaw
 		i(69230),	-- Corrupted Fire Hawk
 		i(87769),	-- Crimson Cloud Serpent
-		i(166539),		-- Dazar'alor Windreaver
+		i(166539),	-- Dazar'alor Windreaver
 		i(161331),	-- Dark Iron Core Hound [Dark Iron Dwarf Allied Race]
 		i(62901),	-- Drake of the East Wind
 		i(118676),	-- Emerald Drake
@@ -42,6 +42,7 @@ _.Mounts =
 		i(45801),	-- Ironbound Proto-Drake
 		i(168056),	-- Ironclad Frostclaw
 		i(91802),	-- Jade Pandaren Kite
+		i(164762),	-- Kul Tiran Charger (Kul Tiran Allied Race)
 		i(141217),	-- Leyfeather Hippogryph
 		i(155656),	-- Lightforged Felcrusher (Alliance)
 		i(140500),	-- Mechanized Lumber Extractor
