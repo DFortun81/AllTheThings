@@ -8,6 +8,7 @@ _.Zones =
 			["groups"] = {
 				n(-2,  {	-- Vendors
 					n(5594, {	-- Alchemist Pestlezugg <Alchemy Supplies>
+						["coord"] = { 50.8, 28.0, 71 },
 						["groups"] = {
 							i(6057),	-- Recipe: Nature Protection Potion
 							i(9303),	-- Recipe: Philosopher's Stone
@@ -15,9 +16,9 @@ _.Zones =
 							i(9304),	-- Recipe: Transmute Iron to Gold
 							i(9305),	-- Recipe: Transmute Mithril to Truesilver
 						},
-						["coord"] = { 50.8, 28.0 },
 					}),
 					n(21643, {	-- Alurmi <Keepers of Time Quartermaster>
+						["coord"] = { 63.0, 57.2, 71 },
 						["groups"] = {
 							i(29183),	-- Bindings of the Timewalker
 							i(29185),	-- Continuum Blade
@@ -50,9 +51,9 @@ _.Zones =
 							i(29713),	-- Pattern: Drums of Panic
 							i(31355),	-- Recipe: Flask of Supreme Power
 						},
-						["coord"] = { 63.0, 57.2 },
 					}),
 					n(33915, {  -- Argex Irongut <Veteran Arena Vendor>
+						["u"] = 43,
 						["groups"] = {
 							un(2, i(45983)),	-- Furious Gladiator's Tabard [Elite Rating]
 							i(42565),	-- Furious Gladiator's Barrier
@@ -147,9 +148,9 @@ _.Zones =
 							i(41316),	-- Furious Gladiator's Wyrmhide Robes
 							i(41281),	-- Furious Gladiator's Wyrmhide Spaulders
 						},
-						["u"] = 43,
 					}),
 					n(34090, {	-- Blazzek the Biter Season >7< Elite Version [Note: Yes, two npc's with same name. One is removed]
+						["u"] = 43,
 						["groups"] = {
 							un(2, i(49086)), -- Relentless Gladiator's Tabard [Elite Rating]
 							un(2, i(48435)),	-- Relentless Gladiator's Punisher
@@ -172,9 +173,9 @@ _.Zones =
 							un(2, i(48402)),	-- Relentless Gladiator's Sunderer
 							un(2, i(48406)),	-- Relentless Gladiator's Claymore)
 						},
-						["u"] = 2, -- Vendor no longer exists
 					}),
 					n(34093, {	-- Blazzek the Biter Season >8< Elite Version [Note: Yes, two npc's with same name. One is removed]
+						["u"] = 43,
 						["groups"] = {
 							un(2, i(51534)),	-- Wrathful Gladiator's Tabard [Elite Rating]
 							un(2, i(51403)),	-- Wrathful Gladiator's Acute Staff [Elite Rating]
@@ -206,12 +207,9 @@ _.Zones =
 							un(2, i(51448)),	-- Wrathful Gladiator's Swiftblade [Elite Rating]
 							un(2, i(51520)),	-- Wrathful Gladiator's Truncheon [Elite Rating]
 						},
-						["u"] = 43,
 					}),
 					n(40216, {	-- Blazzek the Biter <Vicious Gladiator>
-						["coords"] = {
-							{ 51.56, 28.01, 71 },
-						},
+						["coord"] = { 51.56, 28.01, 71 },
 						["itemID"] = 137642,  -- Marks of Honor
 						["groups"] = {
 							i(146641), --  Arsenal: Vicious Gladiator's Weapons
@@ -391,12 +389,12 @@ _.Zones =
 						},
 					}),
 					n(8131,	{	-- Blizrik Buckshot <Gunsmith>
-						i(18650),	-- Schematic: EZ-Thro Dynamite II
+						["groups"] = {
+							i(18650),	-- Schematic: EZ-Thro Dynamite II
+						},
 					}),
 					n(69322, {	-- Capps Carlin <Cataclysmic Gladiator>
-						["coords"] = {
-							{ 51.51, 28.04, 71 },
-						},
+						["coord"] = { 51.51, 28.04, 71 },
 						["itemID"] = 137642,  -- Marks of Honor
 						["groups"] = {
 							i(146639), -- Arsenal: Cataclysmic Gladiator's Weapons
@@ -565,13 +563,14 @@ _.Zones =
 						},
 					}),
 					n(40589, {	-- Dirge Quikcleave <Butcher>
+						["coord"] = { 52.6, 29.0, 71 },
 						["groups"] = {
 							i(18046),	-- Recipe: Tender Wolf Steak
 						},
-						["coord"] = { 52.6, 29.0 },
 					}),
 					n(69979, {	-- Ecton Brasstumbler <Honor Quartermaster>
 					--[[ Only sold Honor Items
+						["u"] = 43,
 						["groups"] = {
 							un(2, i(70542)),	-- Vicious Gladiator's Cloak of Alacrity
 							un(2, i(70543)),	-- Vicious Gladiator's Cloak of Prowess
@@ -579,71 +578,68 @@ _.Zones =
 							un(2, i(70556)),	-- Vicious Gladiator's Drape o of Mediation
 							un(2, i(70557)),	-- Vicious Gladiator's Drape o of Prowess
 						},
-						["u"] = 43,
 				--]]}),
 					n(32362, {  -- Evee Copperspring <Arena Vendor> >Season 6< Elite
-						["groups"] = {
-								un(2, i(45952)),	-- Furious Gladiator's Greatstaff
-								un(2, i(45948)),	-- Furious Gladiator's Sunderer
-								un(2, i(45958)),	-- Furious Gladiator's Spike
-								un(2, i(45962)),	-- Furious Gladiator's Dirk
-								un(2, i(45967)),	-- Furious Gladiator's Eviscerator
-								un(2, i(45970)),	-- Furious Gladiator's Mageblade
-								un(2, i(45957)),	-- Furious Gladiator's Handaxe
-								un(2, i(45961)),	-- Furious Gladiator's Dicer
-								un(2, i(45966)),	-- Furious Gladiator's Splitter)
-								un(2, i(45959)),	-- Furious Gladiator's Truncheon
-								un(2, i(45964)),	-- Furious Gladiator's Punisher
-								un(2, i(45971)),	-- Furious Gladiator's Salvation)
-								un(2, i(45960)),	-- Furious Gladiator's Longblade
-								un(2, i(45965)),	-- Furious Gladiator's Swiftblade
-								un(2, i(45937)),	-- Furious Gladiator's Shotgun
-								un(2, i(45938)),	-- Furious Gladiator's Recurve
-								un(2, i(45939)),	-- Furious Gladiator's Repeater
-								un(2, i(45949)),	-- Furious Gladiator's Crusher
-								un(2, i(45950)),	-- Furious Gladiator's Claymore
-								un(2, i(45951)),	-- Furious Gladiator's Halberd
-								un(2, i(45953)),	-- Furious Gladiator's Combat Staff
-								un(2, i(45954)),	-- Furious Gladiator's Acute Staff
-								un(2, i(45955)),	-- Furious Gladiator's Skirmish Staff
-								un(2, i(45956)),	-- Furious Gladiator's Light Staff
-								un(2, i(45963)),	-- Furious Gladiator's Fleshslicer
-								un(2, i(45968)),	-- Furious Gladiator's Claw
-								un(2, i(45969)),	-- Furious Gladiator's Grasp)
-							},
 						["u"] = 43,
+						["groups"] = {
+							un(2, i(45952)),	-- Furious Gladiator's Greatstaff
+							un(2, i(45948)),	-- Furious Gladiator's Sunderer
+							un(2, i(45958)),	-- Furious Gladiator's Spike
+							un(2, i(45962)),	-- Furious Gladiator's Dirk
+							un(2, i(45967)),	-- Furious Gladiator's Eviscerator
+							un(2, i(45970)),	-- Furious Gladiator's Mageblade
+							un(2, i(45957)),	-- Furious Gladiator's Handaxe
+							un(2, i(45961)),	-- Furious Gladiator's Dicer
+							un(2, i(45966)),	-- Furious Gladiator's Splitter)
+							un(2, i(45959)),	-- Furious Gladiator's Truncheon
+							un(2, i(45964)),	-- Furious Gladiator's Punisher
+							un(2, i(45971)),	-- Furious Gladiator's Salvation)
+							un(2, i(45960)),	-- Furious Gladiator's Longblade
+							un(2, i(45965)),	-- Furious Gladiator's Swiftblade
+							un(2, i(45937)),	-- Furious Gladiator's Shotgun
+							un(2, i(45938)),	-- Furious Gladiator's Recurve
+							un(2, i(45939)),	-- Furious Gladiator's Repeater
+							un(2, i(45949)),	-- Furious Gladiator's Crusher
+							un(2, i(45950)),	-- Furious Gladiator's Claymore
+							un(2, i(45951)),	-- Furious Gladiator's Halberd
+							un(2, i(45953)),	-- Furious Gladiator's Combat Staff
+							un(2, i(45954)),	-- Furious Gladiator's Acute Staff
+							un(2, i(45955)),	-- Furious Gladiator's Skirmish Staff
+							un(2, i(45956)),	-- Furious Gladiator's Light Staff
+							un(2, i(45963)),	-- Furious Gladiator's Fleshslicer
+							un(2, i(45968)),	-- Furious Gladiator's Claw
+							un(2, i(45969)),	-- Furious Gladiator's Grasp)
+						},
 					}),
 					n(40572, {	-- Haughty Modiste <Fashion Designer>
+						["coord"] = { 50.6, 28.6, 71 },
 						["groups"] = {
 							i(37915),	-- Pattern: Dress Shoes
 							i(38327),	-- Pattern: Haliscan Jacket
 							i(38328),	-- Pattern: Haliscan Pantaloons
 						},
-						["coord"] = { 50.6, 28.6 },
 					}),
 					n(5411, {	-- Krinkle Goodsteel <Blacksmithing Supplies>
+						["coord"] = { 51.2, 30.2, 71 },
 						["groups"] = {
 							i(6047),	-- Plans: Golden Scale Coif
 						},
-						["coord"] = { 51.2, 30.2 },
 					}),
 					n(7733, {	-- Innkeeper Fizzgrimble <Innkeeper>
+						["coord"] = { 52.6, 27.0, 71 },
 						["groups"] = {
 							i(18046),	-- Recipe: Tender Wolf Steak
 						},
-						["coord"] = { 52.6, 27.0 },
 					}),
 					n(106940, {	-- Innkeeper Fizzgrimble <Innkeeper>
+						["coord"] = { 52.6, 27.0, 71 },
 						["groups"] = {
 							i(18046),	-- Recipe: Tender Wolf Steak
 						},
-						["coord"] = { 52.6, 27.0 },
 					}),
 					n(69323, {	-- Tiny Tayger <Ruthless Gladiator>
 						["itemID"] = 137642,  -- Marks of Honor
-						["coords"] = {
-							{ 51.53, 28.02, 71 },
-						},
+						["coord"] = { 51.53, 28.02, 71 },
 						["groups"] = {
 							i(146640),	-- Arsenal: Ruthless Gladiator's Weapons
 							i(70242),	-- Ruthless Gladiator's Barrier
@@ -812,9 +808,7 @@ _.Zones =
 						},
 					}),
 					n(20278, {	-- Vixton Pinchwhistle <Bloodthirsty Gladiator>
-						["coords"] = {
-							{ 51.61, 28.01, 71 },
-						},
+						["coords"] = { 51.61, 28.01, 71 },
 						["itemID"] = 137642,  -- Marks of Honor
 						["groups"] = {
 							i(64782),	-- Bloodthirsty Gladiator's Links of Cruelty
@@ -952,11 +946,11 @@ _.Zones =
 						},
 					}),
 					n(6568, {	-- Vizzklick <Tailoring Supplies>
+						["coord"] = { 50.6, 28.6, 71 },
 						["groups"] = {
 							i(7088), 	-- Pattern: Crimson Silk Robe
 							i(21358),	-- Pattern: Soul Pouch
 						},
-						["coord"] = { 50.6, 28.6 },
 					}),
 				}),
 			},

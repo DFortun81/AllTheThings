@@ -7,11 +7,8 @@ _.Zones =
 		m(71, {	-- Tanaris
 			["groups"] = {
 				n(0, {	-- Zone Drops
-					i(71714),	-- Formula: Enchant Cloak - Lesser Agility (new version, can drop from any mob in the zone)
-					{	-- Formula: Enchant Cloak - Lesser Agility (legacy version, removed from game)
-						["itemID"] = 11206,	-- Formula: Enchant Cloak - Lesser Agility
-						["u"] = 2,
-					},
+					i(71714),	-- Formula: Enchant Cloak - Lesser Agility
+					un(2, i(11206)),	-- Formula: Enchant Cloak - Lesser Agility (legacy version, removed from game)
 				}),
 			},
 		}),

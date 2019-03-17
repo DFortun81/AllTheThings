@@ -7,9 +7,7 @@ _.Zones =
 		m(249, {	-- Uldum
 			["groups"] = {
 				n(0, {	-- Zone Drop
-					{	-- Technique: Origami Beetle
-						["itemID"] = 65651,	-- Technique: Origami Beetle
-					},
+					i(65651),	-- Technique: Origami Beetle
 				}),
 			},
 		}),

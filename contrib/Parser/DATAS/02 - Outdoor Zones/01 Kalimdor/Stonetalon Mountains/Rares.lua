@@ -8,6 +8,7 @@ _.Zones =
 			["groups"] = {
 				n(-16, {	-- Rares	
 					n(50812, {	-- Arae
+						["coord"] = { 49.4, 65.6, 65 },
 						["groups"] = {
 							i(6612),	-- Sage's Boots
 							i(9818),	-- Fortified Chain
@@ -15,9 +16,9 @@ _.Zones =
 							i(9817),	-- Fortified Spaulders
 							i(9795),	-- Ivycloth Gloves
 						},
-						["coord"] = { 49.4, 65.6 },
 					}), 
 					n(5915, {	-- Brother Ravenoak
+						["coord"] = { 41.8, 19.0, 65 },
 						["groups"] = {
 							i(9828),	-- Scaled Leather Boots
 							i(9808),	-- Superior Leggings
@@ -40,9 +41,9 @@ _.Zones =
 							i(10404),	-- Durable Belt
 							i(9809),	-- Superior Tunic
 						},
-						["coord"] = { 41.8, 19.0 },
 					}), 
 					n(50884, {	-- Dustflight the Cowardly
+						["coord"] = { 44.8, 55.8, 65 },
 						["groups"] = {
 							i(9808),	-- Superior Leggings
 							i(7415),	-- Dervish Spaulders
@@ -60,17 +61,17 @@ _.Zones =
 							i(7356),	-- Elder's Cloak
 							i(9791),	-- Ivycloth Tunic
 						},
-						["coord"] = { 44.8, 55.8 },
 					}), 
 					n(50825, {	-- Feras
+						["coord"] = { 76.0, 91.2, 65 },
 						["groups"] = {
 							i(9818),	-- Fortified Chain
 							i(9799),	-- Ivycloth Sash
 							i(6602),	-- Dervish Bracers
 						},
-						["coord"] = { 76.0, 91.2 },
 					}), 
 					n(50986, {	-- Goldenback
+						["coord"] = { 82.2, 79.2, 65 },
 						["groups"] = {
 							i(9802),	-- Superior Boots
 							i(9817),	-- Fortified Spaulders
@@ -80,17 +81,17 @@ _.Zones =
 							i(9803),	-- Superior Bracers
 							i(6602),	-- Dervish Bracers
 						},
-						["coord"] = { 82.2, 79.2 },
 					}), 
 					n(50759, {	-- Iriss the Widow
+						["coord"] = { 54.4, 74.8, 65 },
 						["groups"] = {
 							i(6600),	-- Dervish Belt
 							i(9817),	-- Fortified Spaulders
 							i(9796),	-- Ivycloth Mantle
 						},
-						["coord"] = { 54.4, 74.8 },
 					}), 
 					n(51062, {	-- Khep-Re
+						["coord"] = { 74.6, 73.2, 65 },
 						["groups"] = {
 							i(6595),	-- Battleforge Gauntlets
 							i(6602),	-- Dervish Bracers
@@ -102,9 +103,9 @@ _.Zones =
 							i(6596),	-- Battleforge Legguards
 							i(7356),	-- Elder's Cloak
 						},
-						["coord"] = { 74.6, 73.2 },
 					}),
 					n(4066, {	-- Nal'taszar
+						["coord"] = { 48.6, 73.2, 65 },
 						["groups"] = {
 							i(9817),	-- Fortified Spaulders
 							i(6602),	-- Dervish Bracers
@@ -135,16 +136,19 @@ _.Zones =
 							i(6601),	-- Dervish Boots
 							i(6614),	-- Sage's Cloak
 						},
-						["coord"] = { 48.6, 73.2 },
 					}),
 					n(4015, {	-- Pridewing Patriarch
+						["coord"] = { 55.6, 44.8, 65 },
 						["groups"] = {
 							un(7, i(5751)), 	-- Webwing Cloak
 							un(7, i(5752)), 	-- Wyvern Tailspike
 						},
-						["coord"] = { 55.6, 44.8 },
 					}),
 					n(50343, {	-- Quall
+						["coords"] = {
+							{ 60.0, 63.4, 65 },
+							{ 59.6, 64.0, 65 },
+						},
 						["groups"] = {
 							i(9817),	-- Fortified Spaulders
 							i(9792),	-- Ivycloth Boots
@@ -176,12 +180,12 @@ _.Zones =
 							i(9799),	-- Ivycloth Sash
 							i(9795),	-- Ivycloth Gloves
 						},
-						["coords"] = {
-							{ 60.0, 63.4 },
-							{ 59.6, 64.0 },
-						},
 					}), 
 					n(5930, {	-- Sister Riven
+						["coords"] = {
+							{ 40.4, 70.8, 65 },
+							{ 40.4, 71.6, 65 },
+						},
 						["groups"] = {
 							i(6607),	-- Dervish Leggings
 							i(9820),	-- Durable Boots
@@ -200,12 +204,9 @@ _.Zones =
 							i(9831),	-- Scaled Cloak
 							i(6592),	-- Battleforge Armor
 						},
-						["coords"] = {
-							{ 40.4, 70.8 },
-							{ 40.4, 71.6 },
-						},
 					}), 
 					n(5928, {	-- Sorrow Wing
+						["coord"] = { 50.2, 41.2, 65 },
 						["groups"] = {
 							i(9809),	-- Superior Tunic
 							i(4715),	-- Emblazoned Cloak
@@ -233,9 +234,9 @@ _.Zones =
 							i(10404),	-- Durable Belt
 							i(9829),	-- Scaled Leather Bracers
 						},
-						["coord"] = { 50.2, 41.2 },
 					}), 
 					n(50786, {	-- Sparkwing
+						["coord"] = { 58.8, 86.6, 65 },
 						["groups"] = {
 							i(4715),	-- Emblazoned Cloak
 							i(9799),	-- Ivycloth Sash
@@ -258,9 +259,9 @@ _.Zones =
 							i(9817),	-- Fortified Spaulders
 							i(9791),	-- Ivycloth Tunic
 						},
-						["coord"] = { 58.8, 86.6 },
 					}), 
 					n(5932, {	-- Taskmaster Whipfang
+						["coord"] = { 64.6, 45.6, 65 },
 						["groups"] = {
 							i(6590),	-- Battleforge Boots
 							i(6604),	-- Dervish Cape
@@ -289,15 +290,15 @@ _.Zones =
 							i(9792),	-- Ivycloth Boots
 							i(9794),	-- Ivycloth Cloak
 						},
-						["coord"] = { 64.6, 45.6 },
 					}), 
 					n(50874, {	-- Tenok
+						["coord"] = { 44.4, 49.2, 65 },
 						["groups"] = {
 							i(6612),	-- Sage's Boots
 						},
-						["coord"] = { 44.4, 49.2 },
 					}), 
 					n(50895, {	-- Volux
+						["coord"] = { 39.8, 46.2, 65 },
 						["groups"] = {
 							i(9839),	-- Banded Gauntlets
 							i(6613),	-- Sage's Bracers
@@ -317,7 +318,6 @@ _.Zones =
 							i(6616),	-- Sage's Pants
 							i(9832),	-- Scaled Leather Gloves
 						},
-						["coord"] = { 39.8, 46.2 },
 					}), 									
 				}),
 			},

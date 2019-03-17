@@ -8,28 +8,30 @@ _.Zones =
 			["groups"] = {
 				n (-2, {	-- Vendors
 					n(9549, {	-- Borand <Bowyer>
+						["coord"] = { 48.6, 61.4, 65 },
+						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(11304),	-- Fine Longbow
 						},
-						["coord"] = { 48.6, 61.4, 65 },
-						["races"] = HORDE_ONLY,
 					}),
 					n(4083, {	-- Jeeda <Apprentice Witch Doctor>
+						["coord"] = { 50.4, 63.4, 65 },
+						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(6055),	-- Recipe: Fire Protection Potion
 						},
-						["coord"] = { 50.4, 63.4, 65 },
-						["races"] = HORDE_ONLY,
 					}),
 					n(12043, {	-- Kulwia <Trade Supplies>
+						["coord"] = { 48.6, 61.6, 65 },
+						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(11101),	-- Formula: Enchant Bracer - Lesser Strength
 							i(11039),	-- Formula: Enchant Cloak - Minor Agility
 						},
-						["coord"] = { 48.6, 61.6, 65 },
-						["races"] = HORDE_ONLY,
 					}),
 					n(42028, {	-- Krom'gar Quartermaster <Quartermaster>
+						["coord"] = { 65.8, 64.0, 65 },
+						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(57501),	-- Krom'gar Champion's Linen Shoulderpads
 							i(57502),	-- Krom'gar Champion's Hide Shoulderguard
@@ -60,8 +62,6 @@ _.Zones =
 							i(131882),	-- Krom'gar Sergeant's Mesh Boots
 							i(131883),	-- Krom'gar Sergeant's Chain Boots
 						},
-						["coord"] = { 65.8, 64.0, 65 },
-						["races"] = HORDE_ONLY,
 					}),
 				}),
 			},

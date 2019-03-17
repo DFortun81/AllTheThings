@@ -6,8 +6,15 @@ _.Zones =
 	m(12, {	-- Kalimdor
 		m(71, {	-- Tanaris
 			["groups"] = {
-				n(-16, {	-- Rares	
+				n(-16, {	-- Rares
 					n(47386, {	-- Ainamiss the Hive Queen
+						["coords"] = {
+							{ 33.0, 49.0, 71 },
+							{ 34.0, 45.4, 71 },
+							{ 35.4, 44.4, 71 },
+							{ 36.6, 42.6, 71 },
+							{ 36.8, 46.6, 71 },
+						},
 						["groups"] = {
 							i(9937),	-- Abjurer's Bands
 							i(9938),	-- Abjurer's Cloak
@@ -46,15 +53,9 @@ _.Zones =
 							i(10067),	-- Righteous Waistguard
 							i(9939),	-- Abjurer's Gloves
 						},
-						["coords"] = {
-							{ 33.0, 49.0 },
-							{ 34.0, 45.4 },
-							{ 35.4, 44.4 },
-							{ 36.6, 42.6 },
-							{ 36.8, 46.6 },
-						},
 					}), 
 					n(44759, {	-- Andre Firebeard
+						["coord"] = { 69.6, 56.8, 71 },
 						["groups"] = {
 							i(7529),	-- Cabalist Helm
 							i(7540),	-- Champion's Helmet
@@ -91,9 +92,9 @@ _.Zones =
 							i(9938),	-- Abjurer's Cloak
 							i(9965),	-- Warmonger's Pauldrons
 						},
-						["coord"] = { 69.6, 56.8 },
 					}), 
 					n(44761, {	-- Aquementas the Unchained
+						["coord"] = { 69.6, 50.0, 71 },
 						["groups"] = {
 							i(9954),	-- Chieftain's Leggings
 							i(10059),	-- Duskwoven Bracers
@@ -145,9 +146,9 @@ _.Zones =
 							i(10132),	-- Revenant Helmet
 							i(10072),	-- Righteous Gloves
 						},
-						["coord"] = { 69.6, 50.0 },
 					}), 
 					n(44750, {	-- Caliph Scorpidsting
+						["coord"] = { 47.0, 65.2, 71 },
 						["groups"] = {
 							i(9905),	-- Royal Blouse
 							i(9937),	-- Abjurer's Bands
@@ -187,9 +188,12 @@ _.Zones =
 							i(10069),	-- Righteous Bracers
 							i(10071),	-- Righteous Cloak
 						},
-						["coord"] = { 47.0, 65.2 },
 					}), 
 					n(8207, {	-- Emberwing
+						["coords"] = {
+							{ 44.6, 40.6, 71 },
+							{ 48.2, 45.6, 71 },
+						},
 						["groups"] = {
 							i(7534),	-- Cabalist Bracers
 							i(7525),	-- Gossamer Bracers
@@ -243,12 +247,9 @@ _.Zones =
 							i(9911),	-- Royal Trousers
 							i(9960),	-- Warmonger's Gauntlets
 						},
-						["coords"] = {
-							{ 44.6, 40.6 },
-							{ 48.2, 45.6 },
-						},
 					}), 
 					n(44714, {	-- Fronkle the Disturbed
+						["coord"] = { 57.0, 89.8, 71 },
 						["groups"] = {
 							i(9949),	-- Chieftain's Bracers
 							i(10086),	-- Gothic Plate Armor
@@ -283,9 +284,9 @@ _.Zones =
 							i(9905),	-- Royal Blouse
 							i(9924),	-- Tracker's Tunic
 						},
-						["coord"] = { 57.0, 89.8 },
 					}), 
 					n(8205, {	-- Haarka the Ravenous
+						["coord"] = { 56.6, 68.2, 71 },
 						["groups"] = {
 							i(9951),	-- Chieftain's Cloak
 							i(7540),	-- Champion's Helmet
@@ -315,9 +316,15 @@ _.Zones =
 							i(10079),	-- Lord's Cape
 							i(9922),	-- Tracker's Leggings
 						},
-						["coord"] = { 56.6, 68.2 },
 					}), 
 					n(47387, {	-- Harakiss the Infestor
+						["coords"] = {
+							{ 55.8, 64.6, 71 },
+							{ 52.6, 65.6, 71 },
+							{ 56.2, 68.6, 71 },
+							{ 53.0, 70.4, 71 },
+							{ 50.6, 72.6, 71 },
+						},
 						["groups"] = {
 							i(7540),	-- Champion's Helmet
 							i(7529),	-- Cabalist Helm
@@ -357,15 +364,9 @@ _.Zones =
 							i(9913),	-- Royal Gown
 							i(9924),	-- Tracker's Tunic
 						},
-						["coords"] = {
-							{ 55.8, 64.6 },
-							{ 52.6, 65.6 },
-							{ 56.2, 68.6 },
-							{ 53.0, 70.4 },
-							{ 50.6, 72.6 },
-						},
 					}),
 					n(39186, {	-- Hellgazer
+						["coord"] = { 40.8, 41.2, 71 },
 						["groups"] = {
 							i(7530),	-- Cabalist Gloves
 							i(7523),	-- Gossamer Shoulderpads
@@ -406,9 +407,12 @@ _.Zones =
 							i(8120),	-- Heraldic Cloak
 							i(9912),	-- Royal Amice
 						},
-						["coord"] = { 40.8, 41.2 },
 					}), 
 					n(8200, {	-- Jin'Zallah the Sandbringer
+						["coords"] = {
+							{ 37.6, 25.8, 71 },
+							{ 40.8, 30.2, 71 },
+						},
 						["groups"] = {
 							i(10092),	-- Gothic Plate Spaulders
 							i(9923),	-- Tracker's Shoulderpads
@@ -460,12 +464,13 @@ _.Zones =
 							i(9925),	-- Tracker's Wristguards
 							i(9956),	-- Warmonger's Bracers
 						},
-						["coords"] = {
-							{ 37.6, 25.8 },
-							{ 40.8, 30.2 },
-						},
 					}), 
 					n(8203, {	-- Kregg Keelhaul
+						["coords"] = {
+							{ 71.2, 46.8, 71 },
+							{ 73.6, 47.6, 71 },
+							{ 75.0, 45.4, 71 },
+						},
 						["groups"] = {
 							i(7535),	-- Cabalist Belt
 							i(7531),	-- Cabalist Boots
@@ -511,13 +516,9 @@ _.Zones =
 							i(10089),	-- Gothic Sabatons
 							i(10202),	-- Overlord's Vambraces
 						},
-						["coords"] = {
-							{ 71.2, 46.8 },
-							{ 73.6, 47.6 },
-							{ 75.0, 45.4 },
-						},
 					}), 
 					n(44767, {	-- Occulus the Corrupted
+						["coord"] = { 61.0, 50.6, 71 },
 						["groups"] = {
 							i(9955),	-- Chieftain's Shoulders
 							i(10058),	-- Duskwoven Sandals
@@ -571,9 +572,19 @@ _.Zones =
 							i(10190),	-- Swashbuckler's Belt
 							i(9965),	-- Warmonger's Pauldrons
 						},
-						["coord"] = { 61.0, 50.6 },
 					}), 
 					n(8201, {	-- Omgorn the Lost
+						["coords"] = {
+							{ 41.2, 49.8, 71 },
+							{ 42.6, 52.8, 71 },
+							{ 43.2, 55.4, 71 },
+							{ 40.6, 58.4, 71 },
+							{ 38.8, 58.2, 71 },
+							{ 37.8, 56.8, 71 },
+							{ 38.6, 54.6, 71 },
+							{ 38.6, 52.0, 71 },
+							{ 39.6, 50.6, 71 },
+						},
 						["groups"] = {
 							i(9947),	-- Chieftain's Belt
 							i(7528),	-- Cabalist Leggings
@@ -615,19 +626,9 @@ _.Zones =
 							i(10127),	-- Revenant Bracers
 							un(7, i(17055)),	-- Changuk Smasher
 						},
-						["coords"] = {
-							{ 41.2, 49.8 },
-							{ 42.6, 52.8 },
-							{ 43.2, 55.4 },
-							{ 40.6, 58.4 },
-							{ 38.8, 58.2 },
-							{ 37.8, 56.8 },
-							{ 38.6, 54.6 },
-							{ 38.6, 52.0 },
-							{ 39.6, 50.6 },
-						},
 					}), 
 					n(39183, {	-- Scorpitar
+						["coord"] = { 49.6, 58.6, 71 },
 						["groups"] = {
 							i(7540),	-- Champion's Helmet
 							i(9951),	-- Chieftain's Cloak
@@ -660,9 +661,9 @@ _.Zones =
 							i(9949),	-- Chieftain's Bracers
 							i(9905),	-- Royal Blouse
 						},
-						["coord"] = { 49.6, 58.6 },
 					}), 	
 					n(39185, {	-- Slaverjaw
+						["coord"] = { 40.2, 67.4, 71 },
 						["groups"] = {
 							i(9948),	-- Chieftain's Boots
 							i(9952),	-- Chieftain's Gloves
@@ -711,9 +712,9 @@ _.Zones =
 							i(10075),	-- Righteous Spaulders
 							i(9957),	-- Warmonger's Chestpiece
 						},
-						["coord"] = { 40.2, 67.4 },
 					}), 
 					n(8204, {	-- Soriid the Devourer
+						["coord"] = { 35.0, 46.2, 71 },
 						["groups"] = {
 							i(7528),	-- Cabalist Leggings
 							i(7543),	-- Champion's Pauldrons
@@ -746,9 +747,9 @@ _.Zones =
 							i(10075),	-- Righteous Spaulders
 							i(9905),	-- Royal Blouse
 						},
-						["coord"] = { 35.0, 46.2 },
 					}), 
 					n(44722, {	-- Twisted Reflection of Narain
+						["coord"] = { 64.6, 19.8, 71 },
 						["groups"] = {
 							i(9928),	-- Brigade Breastplate
 							i(9933),	-- Brigade Leggings
@@ -805,9 +806,9 @@ _.Zones =
 							i(9907),	-- Royal Boots
 							i(9916),	-- Tracker's Belt
 						},
-						["coord"] = { 64.6, 19.8 },
 					}), 
 					n(8199, {	-- Warleader Krazzilak
+						["coord"] = { 40.8, 29.6, 71 },
 						["groups"] = {
 							i(9951),	-- Chieftain's Cloak
 							i(7519),	-- Gossamer Pants
@@ -831,7 +832,6 @@ _.Zones =
 							i(7540),	-- Champion's Helmet
 							i(9911),	-- Royal Trousers
 						},
-						["coord"] = { 40.8, 29.6 },
 					}), 
 				}),
 			},

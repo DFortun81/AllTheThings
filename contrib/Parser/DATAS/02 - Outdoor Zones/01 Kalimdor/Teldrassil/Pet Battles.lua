@@ -42,28 +42,28 @@ _.Zones =
 					{	-- Learning the Ropes
 						["questID"] = 31552,
 						["qg"] = 63070,	-- Valeena
-						["coord"] = { 55.2, 51.2 },
+						["coord"] = { 55.2, 51.2, 57 },
 						["races"] = ALLIANCE_ONLY,
 						["description"] = "This quest is part of a chain initiated by learning Battle Pet Training."
 					},
 					{	-- On The Mend
 						["questID"] = 31553,
 						["qg"] = 63070,	-- Valeena
-						["coord"] = { 55.2, 51.2 },
+						["coord"] = { 55.2, 51.2, 57 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 31552,	-- Learning the Ropes
 					},
 					{	-- Level Up!
 						["questID"] = 31826,
 						["qg"] = 63070,	-- Valeena
-						["coord"] = { 55.2, 51.2 },
+						["coord"] = { 55.2, 51.2, 57 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 31553,	-- On The Mend
 					},
 					{	-- Got one!
 						["questID"] = 31555,
 						["qg"] = 63070,	-- Valeena
-						["coord"] = { 55.2, 51.2 },
+						["coord"] = { 55.2, 51.2, 57 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 31826,	-- Level Up!
 					},

@@ -8,6 +8,7 @@ _.Zones =
 			["groups"] = {
 				n(-16, {	-- Rares
 					n(2162, {	-- Agal
+						["coord"] = { 47.2, 44.8, 57 },
 						["groups"] = {
 							i(68744),	-- Imbued Pioneer Cloak
 							i(68743),	-- Imbued Infantry Cloak
@@ -27,9 +28,15 @@ _.Zones =
 							i(68758),	-- Imbued Pioneer Boots
 							i(68753),	-- Imbued Infantry Bracers
 						},
-						["coord"] = { 47.2, 44.8 },
 					}), 
 					n(14431, {	-- Fury Shelda
+						["coords"] = {
+							{ 37.2, 30.6, 57 },
+							{ 38.2, 33.4, 57 },
+							{ 39.4, 35.2, 57 },
+							{ 39.4, 36.4, 57 },
+							{ 39.6, 37.4, 57 },
+						},
 						["groups"] = {
 							i(68744),	-- Imbued Pioneer Cloak
 							i(68743),	-- Imbued Infantry Cloak
@@ -48,18 +55,17 @@ _.Zones =
 							i(68751),	-- Imbued Pioneer Bracers
 							i(68758),	-- Imbued Pioneer Boots
 						},
-						["coords"] = {
-							{ 37.2, 30.6 },
-							{ 38.2, 33.4 },
-							{ 39.4, 35.2 },
-							{ 39.4, 36.4 },
-							{ 39.6, 37.4 },
-						},
 					}), 
 					n(3535, {	-- Blackmoss the Fetid
-						["coord"] = { 52.0, 63.8 },
+						["coord"] = { 52.0, 63.8, 57 },
 					}),
 					n(14430, {	-- Duskstalker
+						["coords"] = {
+							{ 52.2, 67.6, 57 },
+							{ 54.0, 66.6, 57 },
+							{ 57.6, 66.6, 57 },
+							{ 59.6, 65.6, 57 },
+						},
 						["groups"] = {
 							i(68743),	-- Imbued Infantry Cloak
 							i(68745),	-- Imbued Primal Belt
@@ -69,14 +75,9 @@ _.Zones =
 							i(68751),	-- Imbued Pioneer Bracers
 							i(68757),	-- Imbued Pioneer Gloves
 						},
-						["coords"] = {
-							{ 52.2, 67.6 },
-							{ 54.0, 66.6 },
-							{ 57.6, 66.6 },
-							{ 59.6, 65.6 },
-						},
 					}),
 					n(14429, {	-- Grimmaw
+						["coord"] = { 51.6, 38.6, 57 },
 						["groups"] = {
 							i(6267),	-- Disciple's Pants
 							i(9756),	-- Gypsy Trousers
@@ -95,13 +96,12 @@ _.Zones =
 							i(68749),	-- Imbued Disciple's Bracers
 							i(68757),	-- Imbued Pioneer Gloves
 						},
-						["coord"] = { 51.6, 38.6 },
 					}),
 					n(14432, {	-- Threggil
-						["coord"] = { 53.0, 44.6 },
+						["coord"] = { 53.0, 44.6, 57 },
 					}),
 					n(14428, {	-- Uruson
-						["coord"] = { 65.6, 51.8 },
+						["coord"] = { 65.6, 51.8, 57 },
 					}),
 				}),
 			},

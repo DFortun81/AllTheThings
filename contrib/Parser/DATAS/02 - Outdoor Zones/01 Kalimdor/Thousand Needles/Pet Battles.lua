@@ -14,7 +14,7 @@ _.Zones =
 					{	-- Kela Grimtotem
 						["questID"] = 31906,
 						["qg"] = 66452,	-- Kela Grimtotem
-						["coord"] = { 31.8, 32.8 },
+						["coord"] = { 31.8, 32.8, 64 },
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					},
