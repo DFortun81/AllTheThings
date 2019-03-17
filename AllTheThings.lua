@@ -2091,10 +2091,35 @@ local function SearchForLink(link)
 		-- Parse the link and get the itemID and bonus ids.
 		local itemString = string.match(link, "item[%-?%d:]+") or link;
 		if itemString then
-			local itemID = tonumber(select(2, strsplit(":", link)) or "0") or 0;
+			local _, itemID, enchantId, gemId1, gemId2, gemId3, gemId4, suffixId, uniqueId,
+				linkLevel, specializationID, upgradeId, modID = strsplit(":", link);
 			if itemID then
+				itemID = tonumber(itemID) or 0;
 				local sourceID = select(3, GetItemInfo(link)) ~= LE_ITEM_QUALITY_ARTIFACT and GetSourceID(link, itemID);
-				return sourceID and SearchForField("s", sourceID) or SearchForField("itemID", itemID);
+				if sourceID then
+					_ = SearchForField("s", sourceID);
+					if _ then return _; end
+				end
+				
+				-- Search for the item ID.
+				_ = SearchForField("itemID", itemID);
+				if _ and modID and modID ~= "" then
+					modID = tonumber(modID or "1");
+					local onlyMatchingModIDs = {};
+					for i,o in ipairs(_) do
+						if o.modID then
+							if o.modID == modID then
+								tinsert(onlyMatchingModIDs, o);
+							end
+						else
+							tinsert(onlyMatchingModIDs, o);
+						end
+					end
+					if #onlyMatchingModIDs > 0 then
+						return onlyMatchingModIDs;
+					end
+				end
+				return _;
 			end
 		end
 	else
