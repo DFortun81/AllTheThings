@@ -619,36 +619,17 @@ _.Zones =
 			{	-- Tortollan Trader's Stock
 				["itemID"] = 165785,	-- Tortollan Trader's Stock
 				["g"] = {
-					{	-- Ancient Tuskarr Sea Charm
-						["itemID"] = 165661,	-- Ancient Tuskarr Sea Charm
-					},
-					{	-- Chargestone of the Thunder King's Court
-						["itemID"] = 165660,	-- Chargestone of the Thunder King's Court
-					},
-					{	-- Igneaous WInterskorn Loop
-						["itemID"] = 165680,	-- Igneaous WInterskorn Loop
-					},
-					{	-- Kezan Stamped Bijou
-						["itemID"] = 165662,	-- Kezan Stamped Bijou
-					},
-					{	-- Moonstone of Zin AZshari
-						["itemID"] = 165666,	-- Moonstone of Zin AZshari
-					},
-					{	-- Ornat Elundris Ring
-						["itemID"] = 165679,	-- Ornat Elundris Ring
-					},
-					{	-- Ritual Feather of Uung Ak
-						["itemID"] = 165665,	-- Ritual Feather of Uung Ak
-					},
-					{	-- Sea Giant Tidestone
-						["itemID"] = 165664,	-- Sea Giant Tidestone
-					},
-					{	-- Seal of Dath remar
-						["itemID"] = 165683,	-- Seal of Dath remar
-					},
-					{	-- Stonemason Guild Ba
-						["itemID"] = 165678,	-- Stonemason Guild Ba
-					},
+					i(165680),	-- Igneous Winterskorn Loop
+					i(165679),	-- Ornate Elun'dris Ring
+					i(165683),	-- Seal of Dath'Remar
+					i(165678),	-- Stonemason's Guild Band
+					i(165661),	-- Ancient Tuskarr Sea Charm
+					i(165660),	-- Chargestone of the Thunder King's Court
+					i(165662),	-- Kezan Stamped Bijou
+					i(165666),	-- Moonstone of Zin-Azshari
+					i(165667),	-- Razzashi Tooth Medallion
+					i(165665),	-- Ritual Feather of Unng Ak
+					i(165664),	-- Sea Giant's Tidestone
 				},
 			},
 			i(163601),	-- Overgrown Anchor Weed. You get it for a split second after completing a Achor Weed WQ
