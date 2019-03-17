@@ -659,6 +659,16 @@ profession(165, {	-- Leatherworking
 							["recipeID"] = 276256
 						}
 					}
+				},
+				{
+					["name"] = "Tools of the Trade",
+					["categoryID"] = 1267,
+					["g"] = {
+						{
+							["name"] = "Recipe: Mallet of Thunderous Skins",
+							["recipeID"] = 293076
+						},
+					}
 				}
 			}
 		},

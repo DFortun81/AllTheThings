@@ -24,7 +24,17 @@ profession(197, {	-- Tailoring
 				},
 				{
 					["categoryID"] = 1230--[[Follower Equipment]],
-				}
+				},
+				--[[{	-- Tools of the Trade
+					["name"] = "Tools of the Trade",
+					["categoryID"] = needsID,
+					["g"] = {
+						{	-- Synchronous Thread
+							["name"] = "Synchronous Thread",
+							["recipeID"] = 292946
+						},
+					},
+				},]]--
 			}
 		},
 	}),

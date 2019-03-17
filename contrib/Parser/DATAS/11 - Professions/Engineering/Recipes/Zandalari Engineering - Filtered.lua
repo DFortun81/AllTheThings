@@ -563,7 +563,17 @@ profession(202, {	-- Engineering
 							["recipeID"] = 278413
 						}
 					}
-				}
+				},
+				--[[{	-- Tools of the Trade
+					["name"] = "Tools of the Trade",
+					["categoryID"] = needsID,
+					["g"] = {
+						{	-- The Ub3r-Spanner
+							["name"] = "The Ub3r-Spanner",
+							["recipeID"] = 282975
+						},
+					},
+				},]]--
 			}
 		},
 	}),

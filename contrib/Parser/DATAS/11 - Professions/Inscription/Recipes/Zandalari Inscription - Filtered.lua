@@ -274,7 +274,17 @@ profession(773, {	-- Inscription
 							["recipeID"] = 278422--[[Crimson Ink Well]]
 						}
 					}
-				}
+				},
+				--[[{	-- Tools of the Trade
+					["name"] = "Tools of the Trade",
+					["categoryID"] = needsID,
+					["g"] = {
+						{	-- Sanguine Feather Quill of Lana'thel
+							["name"] = "Sanguine Feather Quill of Lana'thel",
+							["recipeID"] = 256301
+						},
+					},
+				},]]--
 			}
 		},
 	}),
