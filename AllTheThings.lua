@@ -1430,11 +1430,12 @@ local function ResolveSymbolicLink(o)
 			elseif cmd == "contains" then
 				-- Instruction to include only search results where a key value contains a value.
 				local key = sym[2];
-				table.remove(sym, 1);
-				table.remove(sym, 1);
+				local clone = {unpack(sym)};
+				table.remove(clone, 1);
+				table.remove(clone, 1);
 				for k=#searchResults,1,-1 do
 					local s = searchResults[k];
-					if not s[key] or not contains(sym, s[key]) then
+					if not s[key] or not contains(clone, s[key]) then
 						table.remove(searchResults, k);
 					end
 				end
@@ -2066,7 +2067,6 @@ fieldCache["speciesID"] = {};
 fieldCache["spellID"] = {};
 fieldCache["titleID"] = {};
 fieldCache["toyID"] = {};
---fieldCache["sym"] = {};
 local function CacheArrayFieldIDs(group, field, arrayField)
 	local firldCache_g = group[arrayField];
 	if firldCache_g then
@@ -2137,8 +2137,6 @@ CacheFields = function(group)
 		for i,subgroup in ipairs(group.g) do
 			CacheFields(subgroup);
 		end
-	--elseif group.sym then
-	--	table.insert(fieldCache["sym"], group);
 	end
 end
 end)();
@@ -8431,110 +8429,6 @@ function app:GetDataCache()
 		BuildGroups(allData, allData.g);
 		app:GetWindow("Unsorted").data = allData;
 		CacheFields(allData);
-		
-		-- Evaluate the Symbolic links.
-		--[[
-		if fieldCache["sym"] then
-			for i,o in ipairs(fieldCache["sym"]) do
-				if o.sym then
-					local searchResults = {};
-					-- {{"select", "itemID", 119321}, {"where", "modID", 6 },{"pop"}},
-					for j,sym in ipairs(o.sym) do
-						local cmd = sym[1];
-						if cmd == "select" then
-							-- Instruction to search the full database for something.
-							for k,s in ipairs(SearchForField(sym[2], sym[3])) do
-								table.insert(searchResults, s);
-							end
-						elseif cmd == "pop" then
-							-- Instruction to "pop" all of the group values up one level.
-							local orig = searchResults;
-							searchResults = {};
-							for k,s in ipairs(orig) do
-								if s.g then
-									for l,t in ipairs(s.g) do
-										table.insert(searchResults, t);
-									end
-								end
-							end
-						elseif cmd == "where" then
-							-- Instruction to include only search results where a key value is a value
-							local key, value = sym[2], sym[3];
-							for k=#searchResults,1,-1 do
-								local s = searchResults[k];
-								if not s[key] or s[key] ~= value then
-									table.remove(searchResults, k);
-								end
-							end
-						elseif cmd == "not" then
-							-- Instruction to include only search results where a key value is not a value
-							if #sym > 3 then
-								local dict = {};
-								for k=2,#sym,2 do
-									dict[sym[k] ] = sym[k + 1];
-								end
-								for k=#searchResults,1,-1 do
-									local s = searchResults[k];
-									local matched = true;
-									for key,value in pairs(dict) do
-										if not s[key] or s[key] ~= value then
-											matched = false;
-											break;
-										end
-									end
-									if matched then
-										table.remove(searchResults, k);
-									end
-								end
-							else
-								local key, value = sym[2], sym[3];
-								for k=#searchResults,1,-1 do
-									local s = searchResults[k];
-									if s[key] and s[key] == value then
-										table.remove(searchResults, k);
-									end
-								end
-							end
-						elseif cmd == "is" then
-							-- Instruction to include only search results where a key exists
-							local key = sym[2];
-							for k=#searchResults,1,-1 do
-								local s = searchResults[k];
-								if not s[key] then table.remove(searchResults, k); end
-							end
-						elseif cmd == "isnt" then
-							-- Instruction to include only search results where a key doesn't exist
-							local key = sym[2];
-							for k=#searchResults,1,-1 do
-								local s = searchResults[k];
-								if s[key] then table.remove(searchResults, k); end
-							end
-						elseif cmd == "contains" then
-							-- Instruction to include only search results where a key value contains a value.
-							local key = sym[2];
-							table.remove(sym, 1);
-							table.remove(sym, 1);
-							for k=#searchResults,1,-1 do
-								local s = searchResults[k];
-								if not s[key] or not contains(sym, s[key]) then
-									table.remove(searchResults, k);
-								end
-							end
-						end
-					end
-					
-					if #searchResults > 0 then
-						-- print("Symbolic Link for ", o.key, " ", o[o.key], " contains ", #searchResults, " values after filtering.");
-						o.g = searchResults;
-					else
-						-- print("Symbolic Link for ", o.key, " ", o[o.key], " contained no values after filtering.");
-					end
-					o.sym = nil;
-				end
-			end
-			fieldCache["sym"] = nil;
-		end
-		]]--
 		
 		-- Uncomment this section if you need to Harvest Display IDs:
 		--[[
