@@ -1306,6 +1306,8 @@ local function MergeObject(g, t, index)
 			key = "questID";
 		elseif t.unit then
 			key = "unit";
+		elseif t.criteriaID then
+			key = "criteriaID";
 		end
 	end
 	for i,o in ipairs(g) do
@@ -1382,6 +1384,17 @@ local function ResolveSymbolicLink(o)
 					local s = searchResults[k];
 					if not s[key] or s[key] ~= value then
 						table.remove(searchResults, k);
+					end
+				end
+			elseif cmd == "index" then
+				-- Instruction to include the search result with a given index within each of the selection's groups.
+				local index = sym[2];
+				local orig = searchResults;
+				searchResults = {};
+				for k=#orig,1,-1 do
+					local s = orig[k];
+					if s.g and index <= #s.g then
+						table.insert(searchResults, s.g[index]);
 					end
 				end
 			elseif cmd == "not" then
@@ -1584,7 +1597,34 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				end
 				group = subgroup;
 			end
-		elseif paramA == "achievementID" or paramA == "titleID" then
+		elseif paramA == "achievementID" then
+			-- Don't do anything for things linked to maps.
+			local regroup = {};
+			local criteriaID = ...;
+			if app.Settings:Get("AccountMode") then
+				for i,j in ipairs(group) do
+					if j.criteriaID == criteriaID and app.RecursiveUnobtainableFilter(j) then
+						if j.mapID or j.parent == nil or j.parent.parent == nil then
+							tinsert(regroup, setmetatable({["g"] = {}}, { __index = j }));
+						else
+							tinsert(regroup, j);
+						end
+					end
+				end
+			else
+				for i,j in ipairs(group) do
+					if j.criteriaID == criteriaID and app.RecursiveClassAndRaceFilter(j) and app.RecursiveUnobtainableFilter(j) then
+						if j.mapID or j.parent == nil or j.parent.parent == nil then
+							tinsert(regroup, setmetatable({["g"] = {}}, { __index = j }));
+						else
+							tinsert(regroup, j);
+						end
+					end
+				end
+			end
+			
+			group = regroup;
+		elseif paramA == "titleID" then
 			-- Don't do anything
 			local regroup = {};
 			if app.Settings:Get("AccountMode") then
@@ -1929,20 +1969,29 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			end
 			if #merged == 1 and merged[1][paramA] == paramB then
 				group = merged[1];
-			else
-				group = CreateObject({ [paramA] = paramB });
-				group.g = merged;
-			end
-			
-			local symbolicLink = ResolveSymbolicLink(group);
-			if symbolicLink then
-				if not group.g or #group.g == 0 then
+				local symbolicLink = ResolveSymbolicLink(group);
+				if symbolicLink then
+					if group.g and #group.g >= 0 then
+						for i,o in ipairs(group.g) do
+							MergeObject(symbolicLink, CreateObject(o));
+						end
+					end
 					group.g = symbolicLink;
-				else
-					for i,o in ipairs(group.g) do
-						MergeObject(symbolicLink, CreateObject(o));
+				end
+			else
+				for i,o in ipairs(merged) do
+					local symbolicLink = ResolveSymbolicLink(o);
+					if symbolicLink then
+						if o.g and #o.g >= 0 then
+							for j,k in ipairs(o.g) do
+								MergeObject(symbolicLink, CreateObject(k));
+							end
+						end
+						o.g = symbolicLink;
 					end
 				end
+				group = CreateObject({ [paramA] = paramB });
+				group.g = merged;
 			end
 			
 			group.progress = 0;
@@ -7380,21 +7429,11 @@ local function RowOnEnter(self)
 		end
 		
 		-- Miscellaneous fields
+		if GameTooltip:NumLines() < 1 then GameTooltip:AddLine(self.Label:GetText()); end
 		if app.Settings:GetTooltipSetting("Progress") then
-			local right = (app.Settings:GetTooltipSetting("ShowIconOnly") and GetProgressTextForRow or GetProgressTextForTooltip)(reference);
-			if right and right ~= "" and right ~= "---" then
-				if GameTooltip:NumLines() < 1 then
-					GameTooltip:AddDoubleLine(self.Label:GetText(), right);
-				elseif string.len(GameTooltipTextRight1:GetText() or "") < 1 then
-					GameTooltipTextRight1:SetText(right);
-					GameTooltipTextRight1:Show();
-				end
-			end
 			if reference.trackable and reference.total and reference.total >= 2 then
 				GameTooltip:AddDoubleLine("Tracking Progress", GetCompletionText(reference.saved));
 			end
-		else
-			if GameTooltip:NumLines() < 1 then GameTooltip:AddLine(self.Label:GetText()); end
 		end
 		
 		-- Relative ATT location
@@ -7587,7 +7626,14 @@ local function RowOnEnter(self)
 		if reference.criteriaID and reference.achievementID then
 			GameTooltip:AddDoubleLine("Criteria for", GetAchievementLink(reference.achievementID));
 		end
-		if reference.achievementID then AttachTooltipSearchResults(GameTooltip, "achievementID:" .. reference.achievementID, SearchForField, "achievementID", reference.achievementID, true); end
+		if reference.achievementID then AttachTooltipSearchResults(GameTooltip, "achievementID:" .. reference.achievementID, SearchForField, "achievementID", reference.achievementID, reference.criteriaID); end
+		if app.Settings:GetTooltipSetting("Progress") then
+			local right = (app.Settings:GetTooltipSetting("ShowIconOnly") and GetProgressTextForRow or GetProgressTextForTooltip)(reference);
+			if right and right ~= "" and right ~= "---" then
+				GameTooltipTextRight1:SetText(right);
+				GameTooltipTextRight1:Show();
+			end
+		end
 		
 		-- Show Quest Prereqs
 		if reference.sourceQuests and not reference.saved then

@@ -248,13 +248,7 @@ _.PVP =
 				},
 				{	-- Raider's Supply Cache
 					["itemID"] = 163826,	-- Raider's Supply Cache
-					["description"] = "Contains only trade goods.",
 				},
-			}),
-			["races"] = HORDE_ONLY,
-		}),
-		n(-3158, {	-- Player vs. Player (Battle for Azeroth Season 1)
-			["g"] = bubbleDown({["modID"] = 8}, {
 				{	-- Dread Aspirant's Badge
 					["itemID"] = 162966,	-- Dread Aspirant's Badge
 					["u"] = 46,
@@ -517,10 +511,8 @@ _.PVP =
 				},
 				{	-- Raider's Supply Cache
 					["itemID"] = 163826,	-- Raider's Supply Cache
-					["description"] = "Contains only trade goods.",
 				},
 			}),
-			["races"] = ALLIANCE_ONLY,
 		}),
 		n(-3157, {	-- Player vs. Player (Battle for Azeroth Season 2)
 			["g"] = {
@@ -577,17 +569,13 @@ _.PVP =
 				i(165091),	-- Sinister Aspirant's plate girdle
 				i(165092),	-- Sinister Aspirant's plate armguards
 				
-			},
-			["races"] = HORDE_ONLY,
-		}),
-		n(-3157, {	-- Player vs. Player (Battle for Azeroth Season 2)
-			["g"] = {
+				-- Alliance Items
 				i(165202),	-- Sinister Aspirant's Pike
 				i(165204),	-- Sinister Aspirant's Warglaive
 				i(166476),	-- Sinister Aspirant's Runeaxe
 				i(165208),	-- Sinister Aspirant's Longbow
 				i(166478),	-- Sinister Aspirant's Greatsword
-				i(165200),	-- Sninister Aspirant Staff
+				i(165200),	-- Sinister Aspirant Staff
 				i(165205),	-- Sinister Aspirant Pummeler
 				i(165206),	-- Sinister Aspirant Bonecracker
 				i(165207),	-- Sinister Aspirant Mageblade
@@ -634,11 +622,7 @@ _.PVP =
 				i(165114),	-- Sinister Aspirant's plate pauldrons
 				i(165117),	-- Sinister Aspirant's plate girdle
 				i(165122),	-- Sinister Aspirant's plate armguards
-			},
-			["races"] = ALLIANCE_ONLY,
-		}),
-		n(-3157, {	-- Player vs. Player (Battle for Azeroth Season 2)
-			["g"] = {
+				
 				i(165217),	-- Sinister Aspirant Ring
 				i(165219),	-- Sinister Aspirant Band
 				i(165220),	-- Sinister Aspirant's Medallion
@@ -648,6 +632,8 @@ _.PVP =
 			},
 		}),
 		i(135539, {	-- Crate of Battlefield Goods 15-39
+			["description"] = "|cff66ccffRewarded for winning a random battleground in the level 15-39 range.|r",
+			["lvl"] = 15,
 			["groups"] = {
 				i(134643),	-- Auxiliary's Cuffs*
 				i(134642),	-- Auxiliary's Leggings*
@@ -680,10 +666,10 @@ _.PVP =
 				i(134660),  -- Recruit's Band
 				i(134659),  -- Recruit's Ring
 			},
-			["description"] = "|cff66ccffRewarded for winning a random battleground in the level 15-39 range.|r",
-			["lvl"] = 15,
 		}),
 		i(135540, {	-- Crate of Battlefield Goods 40-59
+			["description"] = "|cff66ccffRewarded for winning a random battleground in the level 40-59 range.|r",
+			["lvl"] = 40,
 			["groups"] = {
 				i(134672),	-- Auxiliary's Amice
 				i(134670),	-- Auxiliary's Cowl
@@ -713,10 +699,10 @@ _.PVP =
 				i(134688),	-- Recruit's Slicer*
 				i(134691),  -- Recruit's Badge*
 			},
-			["description"] = "|cff66ccffRewarded for winning a random battleground in the level 40-59 range.|r",
-			["lvl"] = 40,
 		}),
 		i(135541, {	-- Crusader's Crate of Battlefield Goods 60-69
+			["description"] = "|cff66ccffRewarded for winning a random battleground in the level 60-69 range.|r",
+			["lvl"] = 60,
 			["groups"] = {
 				i(134584),	-- Inciter's Cord
 				i(134585),	-- Inciter's Cuffs
@@ -742,10 +728,10 @@ _.PVP =
 				i(134577),	-- Vanguard Decapitator*
 				i(134590),	-- Vanguard Baton of Light
 			},
-			["description"] = "|cff66ccffRewarded for winning a random battleground in the level 60-69 range.|r",
-			["lvl"] = 60,
 		}),
 		i(135542, {	-- Icy Crate of Battlefield Goods 70-79
+			["description"] = "|cff66ccffRewarded for winning a random battleground in the level 70-79 range.|r",
+			["lvl"] = 70, 
 			["groups"] = {
 				i(134724),	-- Icyweave Amice*
 				i(134722),	-- Icyweave Robes*
@@ -775,12 +761,14 @@ _.PVP =
 				i(134745),	-- Cold-Touched Badge*
 				i(134744),	-- Cold-Touched Distinction*
 			},
-			["description"] = "|cff66ccffRewarded for winning a random battleground in the level 70-79 range.|r",
-			["lvl"] = 70, 
 		}),
 		i(135543, {	-- Rival's Crate of Battlefield Goods 80-89; splitting this box into two categories, loot table varies with level
+			["description"] = "|cff66ccffRewarded for winning a random battleground in the level 80-89 range.|r",
 			["groups"] = {
 				n(-302, {	-- Level 80-84
+					["description"] = "Rewarded for winning a random battleground in the level 80-84 range.",
+					["icon"] = "Interface\\Icons\\expansionicon_cataclysm",
+					["lvl"] = 80,
 					["groups"] = {
 						i(134616),	-- Inflammatory Cord*
 						i(134615),	-- Inflammatory Hood*
@@ -807,11 +795,11 @@ _.PVP =
 						i(134619),	-- Scorching Staff*
 						i(134627),	-- Scorching Pendant*
 					},
-					["description"] = "Rewarded for winning a random battleground in the level 80-84 range.",
-					["icon"] = "Interface\\Icons\\expansionicon_cataclysm",
-					["lvl"] = 80,
 				}),
 				n(-303, {	-- Level 85-89
+					["description"] = "Rewarded for winning a random battleground in the level 85-89 range.",
+					["icon"] = "Interface\\Icons\\expansionicon_mistsofpandaria",
+					["lvl"] = 85,
 					["groups"] = {
 						i(134754),	-- Veiled Cuffs*
 						i(134752),	-- Veiled Leggings*
@@ -841,14 +829,12 @@ _.PVP =
 						i(134746),	-- Covert Greatsword
 						i(134772),	-- Covert Band*
 					},
-					["description"] = "Rewarded for winning a random battleground in the level 85-89 range.",
-					["icon"] = "Interface\\Icons\\expansionicon_mistsofpandaria",
-					["lvl"] = 85,
 				}),
 			},
-			["description"] = "|cff66ccffRewarded for winning a random battleground in the level 80-89 range.|r",
 		}),
 		i(135545, {	-- Savage Crate of Battlefield Goods 90-99
+			["description"] = "|cff66ccffRewarded for winning a random battleground in the level 90-99 range.|r",
+			["lvl"] = 90,
 			["groups"] = {
 				i(134787),	-- Entrenched Cowl*
 				i(134786),	-- Entrenched Handwraps*
@@ -879,10 +865,10 @@ _.PVP =
 				i(134776),	-- Seasoned Decapitator
 				i(134788),	-- Seasoned Distinction*
 			},
-			["description"] = "|cff66ccffRewarded for winning a random battleground in the level 90-99 range.|r",
-			["lvl"] = 90,
 		}),
 		i(135546, {	-- Fel-Touched Crate of Battlefield Goods 100-109 / Ashran
+			["description"] = "|cff66ccffRewarded for winning a random battleground in the level 100-109 range, or Ashran quests.|r",
+			["lvl"] = 100,
 			["groups"] = {
 				i(135578), -- Battle Touched Banner
 				i(135568), -- Battle Touched Blood of the Fallen
@@ -916,77 +902,29 @@ _.PVP =
 				i(134701), -- Swarming Legguards
 				i(134702), -- Swarming Shoulders
 			},
-			["description"] = "|cff66ccffRewarded for winning a random battleground in the level 100-109 range, or Ashran quests.|r",
-			["lvl"] = 100,
 		}),
-		i(126919, { -- Champion's Strongbox		
-			["groups"] = {	
-				i(141889), -- Glory of the Melee
-				i(141858), -- Soldier's Worth
-			},	
-			["races"] = ALLIANCE_ONLY,	
+		i(126919, { -- Champion's Strongbox [Alliance]
+			["u"] = 2,
+		}),		
+		i(126920, { -- Champion's Strongbox [Horde]
 			["u"] = 2,	
 		}),		
-		i(126920, { -- Champion's Strongbox		
-			["groups"] = {	
-				i(141889), -- Glory of the Melee
-				i(141858), -- Soldier's Worth
-			},	
-			["races"] = HORDE_ONLY,	
+		i(126923, { -- Champion's Strongbox [Alliance]
 			["u"] = 2,	
 		}),		
-		i(126923, { -- Champion's Strongbox		
-			["groups"] = {	
-				i(141889), -- Glory of the Melee
-				i(141858), -- Soldier's Worth
-			},	
-			["races"] = ALLIANCE_ONLY,	
+		i(126924, { -- Champion's Strongbox [Horde]
 			["u"] = 2,	
 		}),		
-		i(126924, { -- Champion's Strongbox		
-			["groups"] = {	
-				i(141889), -- Glory of the Melee
-				i(141858), -- Soldier's Worth
-			},	
-			["races"] = HORDE_ONLY,	
+		i(138469, { -- Champion's Strongbox [Alliance]
 			["u"] = 2,	
 		}),		
-		i(138469, { -- Champion's Strongbox		
-			["groups"] = {	
-				i(141889), -- Glory of the Melee
-				i(141858), -- Soldier's Worth
-			},	
-			["races"] = HORDE_ONLY,	
+		i(138474, { -- Champion's Strongbox	[Horde]
 			["u"] = 2,	
-		}),		
-		i(138474, { -- Champion's Strongbox		
-			["groups"] = {	
-				i(141889), -- Glory of the Melee
-				i(141858), -- Soldier's Worth
-			},	
-			["races"] = ALLIANCE_ONLY,	
-			["u"] = 2,	
-		}),		
-		i(151557, { -- Champion's Strongbox		
-			["groups"] = {	
-				i(141889), -- Glory of the Melee
-				i(141858), -- Soldier's Worth
-			},	
-			["races"] = ALLIANCE_ONLY,	
 		}),
-		i(151558, { -- Champion's Strongbox		
-			["groups"] = {	
-				i(141889), -- Glory of the Melee
-				i(141858), -- Soldier's Worth
-			},	
-			["races"] = HORDE_ONLY,	
-		}),
-		i(1164252, { -- Champion's Strongbox		
-			["races"] = ALLIANCE_ONLY,	
-		}),
-		i(164251, { -- Champion's Strongbox		
-			["races"] = HORDE_ONLY,	
-		}),
+		i(151557),	-- Champion's Strongbox [Alliance]
+		i(151558),	-- Champion's Strongbox [Horde]
+		i(164252),	-- Champion's Strongbox [Alliance]
+		i(164251),	-- Champion's Strongbox [Horde]
 		{	-- 2v2/3v3/RBG
 			["itemID"] = 165717,	-- Steel Strong Box -- 2v2/3v3/RBG sometimes on Lose, contains only BFA Mats - Ally
 		},

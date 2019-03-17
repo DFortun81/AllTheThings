@@ -5,53 +5,57 @@ _.PVP =
 {
 	n(-304, {	-- Battlegrounds
 		m(123, { -- Wintergrasp
+			["maps"] = {
+				1334,	-- Wintergrasp (BG)
+			},
+			["lvl"] = 67,	
+			["description"] = "|cff66ccffWintergrasp is a World PvP zone, similar to Tol Barad. It emphasizes siege weapon warfare--walls and towers are destroyed not by player damage, but by siege damage. Your siege engine amount is controlled by which workshops in the zone your faction owns. .|r",	
+			["icon"] = "Interface\\Icons\\spell_frost_chillingblast", 
 			["groups"] = {
 				n(-4, {		-- Achievements
-					["groups"] = {
-						a(ach(1737, {	-- Destruction Derby (Alliance)
-							crit(1),		-- Wintergrasp Catapult
-							crit(2),		-- Wintergrasp Demolisher
-							crit(3),		-- Wintergrasp Siege Engine
-							crit(4),		-- Wintergrasp Tower Cannon
-						})),
-						h(ach(2476, {	-- Destruction Derby (Horde)
-							crit(1),		-- Wintergrasp Catapult
-							crit(2),		-- Wintergrasp Demolisher
-							crit(3),		-- Wintergrasp Siege Engine
-							crit(4),		-- Wintergrasp Tower Cannon
-						})),
-						ach(1751),		-- Didn't Stand a Chance
-						ach(1727),		-- Leaning Tower
-						ach(1752, {		-- Master of Wintergrasp
-							crit(1),		-- Wintergrasp Veteran
-							crit(2),		-- Within Our Grasp
-							crit(3),		-- Wintergrasp Ranger
-							crit(4),		-- Black War Mammoth
-							crit(5),		-- Archavon the Stone Watcher
-							crit(6),		-- Heroic: Archavon the Stone Watcher
-							crit(7),		-- Destruction Derby
-							crit(8),		-- Vehicular Gnomeslaughter
-							crit(9),		-- Leaning Tower
-							crit(10),		-- Didn't Stand a Chance
-						}),
-						ach(1723),		-- Vehicular Gnomeslaughter
-						ach(2199, {		-- Wintergrasp Ranger
-							crit(1),		-- Wintergrasp Fortress
-							crit(2),		-- Eastspark Workshop
-							crit(3),		-- Flamewatch Tower
-							crit(4),		-- The Broken Temple
-							crit(5),		-- Shadowsight Tower
-							crit(6),		-- The Cauldron of Flames
-							crit(7),		-- The Sunken Ring
-							crit(8),		-- Winter's Edge Tower
-							crit(9),		-- Westspark Workshop
-							crit(10),		-- The Chilled Quagmire
-						}),
-						ach(1718, {		-- Wintergrasp Veteran
-							ach(1717),		-- Wintergrasp Victory
-						}),
-						ach(1755),		-- Within Our Grasp
-					},
+					a(ach(1737, {	-- Destruction Derby (Alliance)
+						crit(1),		-- Wintergrasp Catapult
+						crit(2),		-- Wintergrasp Demolisher
+						crit(3),		-- Wintergrasp Siege Engine
+						crit(4),		-- Wintergrasp Tower Cannon
+					})),
+					h(ach(2476, {	-- Destruction Derby (Horde)
+						crit(1),		-- Wintergrasp Catapult
+						crit(2),		-- Wintergrasp Demolisher
+						crit(3),		-- Wintergrasp Siege Engine
+						crit(4),		-- Wintergrasp Tower Cannon
+					})),
+					ach(1751),		-- Didn't Stand a Chance
+					ach(1727),		-- Leaning Tower
+					ach(1752, {		-- Master of Wintergrasp
+						crit(1),		-- Wintergrasp Veteran
+						crit(2),		-- Within Our Grasp
+						crit(3),		-- Wintergrasp Ranger
+						crit(4),		-- Black War Mammoth
+						crit(5),		-- Archavon the Stone Watcher
+						crit(6),		-- Heroic: Archavon the Stone Watcher
+						crit(7),		-- Destruction Derby
+						crit(8),		-- Vehicular Gnomeslaughter
+						crit(9),		-- Leaning Tower
+						crit(10),		-- Didn't Stand a Chance
+					}),
+					ach(1723),		-- Vehicular Gnomeslaughter
+					ach(2199, {		-- Wintergrasp Ranger
+						crit(1),		-- Wintergrasp Fortress
+						crit(2),		-- Eastspark Workshop
+						crit(3),		-- Flamewatch Tower
+						crit(4),		-- The Broken Temple
+						crit(5),		-- Shadowsight Tower
+						crit(6),		-- The Cauldron of Flames
+						crit(7),		-- The Sunken Ring
+						crit(8),		-- Winter's Edge Tower
+						crit(9),		-- Westspark Workshop
+						crit(10),		-- The Chilled Quagmire
+					}),
+					ach(1718, {		-- Wintergrasp Veteran
+						ach(1717),		-- Wintergrasp Victory
+					}),
+					ach(1755),		-- Within Our Grasp
 				}),
 				n(-228, {	-- Flight Points
 					fp(303, { -- Valiance Landing Camp, Wintergrasp
@@ -95,6 +99,7 @@ _.PVP =
 	--]]				
 				n(-2, {		-- Vendors
 					nh(39173, {	-- Champion Ros'slai <Wintergrasp Quartermaster>
+						["description"] = "|cff66ccffThis vendor will only show if your faction controls Wintergrasp.|r",
 						["groups"] = {	
 							i(48974),	-- Titan-Forged Armwraps of Dominance
 							i(48975),	-- Titan-Forged Armwraps of Salvation
@@ -167,9 +172,9 @@ _.PVP =
 							i(44078),	-- Tireless Starflare Diamond
 							i(44089),	-- Trenchant Earthshatter Diamond
 						},
-						["description"] = "|cff66ccffThis vendor will only show if your faction controls Wintergrasp.|r",	
 					}),
 					na(32294, {	-- Knight Dameron <Wintergrasp Quartermaster>
+						["description"] = "|cff66ccffThis vendor will only show if your faction controls Wintergrasp.|r",
 						["groups"] = {	
 							i(43956, {	-- Reins of the Black War Mammoth
 								ach(2080),		-- Black War Mammoth
@@ -232,9 +237,9 @@ _.PVP =
 							i(122338),	-- Ancient Heirloom Armor Casing
 							i(122339),	-- Ancient Heirloom Scabbard
 						},
-						["description"] = "|cff66ccffThis vendor will only show if your faction controls Wintergrasp.|r",	
 					}),
 					na(39172, {	-- Marshal Magruder <Wintergrasp Quartermaster>
+						["description"] = "|cff66ccffThis vendor will only show if your faction controls Wintergrasp.|r",
 						["groups"] = {	
 							i(48974),	-- Titan-Forged Armwraps of Dominance
 							i(48975),	-- Titan-Forged Armwraps of Salvation
@@ -269,7 +274,6 @@ _.PVP =
 							i(48982),	-- Titan-Forged Wristguards of Triumph
 							i(48982),	-- Titan-Forged Wristguards of Triumph
 						},
-						["description"] = "|cff66ccffThis vendor will only show if your faction controls Wintergrasp.|r",	
 					}),
 					na(30489, { -- Morgan Day <Jewelcrafter>
 						["groups"] = {
@@ -305,6 +309,7 @@ _.PVP =
 						},
 					}),
 					nh(32296, {	-- Stone Guard Mukar <Wintergrasp Quartermaster>
+						["description"] = "|cff66ccffThis vendor will only show if your faction controls Wintergrasp.|r",	
 						["groups"] = {	
 							i(44077, {	-- Reins of the Black War Mammoth
 								ach(2080),		-- Black War Mammoth
@@ -366,14 +371,10 @@ _.PVP =
 							i(122366),	-- Upgraded Dwarven Hand Cannon
 							i(122338),	-- Ancient Heirloom Armor Casing
 							i(122339),	-- Ancient Heirloom Scabbard
-						},
-						["description"] = "|cff66ccffThis vendor will only show if your faction controls Wintergrasp.|r",								
+						},							
 					}),
 				}),
 			},
-			["lvl"] = 67,	
-			["description"] = "|cff66ccffWintergrasp is a World PvP zone, similar to Tol Barad. It emphasizes siege weapon warfare--walls and towers are destroyed not by player damage, but by siege damage. Your siege engine amount is controlled by which workshops in the zone your faction owns. .|r",	
-			["icon"] = "Interface\\Icons\\spell_frost_chillingblast", 
 		}),
 	}),
 };

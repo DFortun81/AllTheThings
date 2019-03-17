@@ -5,7 +5,12 @@ _.PVP =
 {
 	n(-304, {	-- Battlegrounds
 		m(93 , {	-- Arathi Basin
-			["maps"] = {14},	-- Arathi Highlands
+			["maps"] = {
+				14,	-- Arathi Highlands
+				837,	-- Arathi Basin
+				844,	-- Arathi Basin
+				1383,	-- Arathi Basin
+			},
 			["achievementID"] = 154,	-- Arathi Basin Victory
 			["description"] = "Arathi Basin is a 15v15 battleground located in Arathi Highlands. Players fight over five bases (Stables, Mines, Blacksmith, Lumber Mill, Farm) which reward teams with resources. The more bases a team controls, the faster they accumulate resources. A team with all five bases captured will gain 30 resources per second.\n\nThe game is won when one team reaches 1,600 resources. The most common way of winning is to hold three bases and defend, with the Blacksmith being a key base.",
 			["groups"] = {
@@ -24,6 +29,7 @@ _.PVP =
 					ach( 162),	-- We Had It All Along *cough*
 				}),
 				h(faction(510, {
+					["creatureID"] = 19905,
 					["groups"] = {
 						ach(710), 	-- The Defiler
 						n(15126, {	-- Rutherford Twing
@@ -103,9 +109,9 @@ _.PVP =
 							},
 						}),
 					},
-					["creatureID"] = 19905,
 				})),
 				a(faction(509, {
+					["creatureID"] = 30231,
 					["groups"] = {
 						ach(711), 	-- Knight of Arathor
 						n(15127, {	-- Samual Hawke
@@ -185,7 +191,6 @@ _.PVP =
 							},
 						}),
 					},
-					["creatureID"] = 30231,
 				})),
 			},
 		}),
