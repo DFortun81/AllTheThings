@@ -95,9 +95,7 @@ _.ExpansionFeatures =
 							["npcID"] = 147708,				-- Athrikus Narassin
 							["qg"] = 147708,				-- Athrikus Narassin
 							["isWeekly"] = true,
-							["coords"] = {
-								{ 59.02, 24.29, 62 },
-							},
+							["coord"] = { 58.5, 24.2, 62 },
 							["g"] = {
 								{	--Narassin's Soul Gem
 									["itemID"] = 166784,	-- Narassin's Soul Gem

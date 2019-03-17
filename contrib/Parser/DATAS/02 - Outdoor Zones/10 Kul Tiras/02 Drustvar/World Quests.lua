@@ -80,6 +80,7 @@ _.Zones =
 								}),
 								{	-- Calligraphy
 									-- On 3/12 this quest gave the 'Square' criteria
+									-- On 3/16 this quest gave the 'Square' criteria
 									-- Check back to see if each quest ID has static shape
 									-- If shape doesn't change each time the quest comes up we can remove the criteria where they don't apply
 									["questID"] = 55264,	-- Calligraphy
