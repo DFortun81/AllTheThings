@@ -443,7 +443,7 @@ _.ExpansionFeatures =
 							},
 						},
 						{	-- Shattershard
-							["allianceQuestID"] = 54289,	-- Shattershard [A]
+							["allianceQuestID"] = 54884,	-- Shattershard [A] 54884
 							["hordeQuestID"] = 54290,		-- Shattershard [H]
 							["npcID"] = 147751,				-- Shattershard
 							["qg"] = 147751,				-- Shattershard
