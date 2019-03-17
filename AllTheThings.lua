@@ -8714,6 +8714,82 @@ end
 -- Create the Primary Collection Window (this allows you to save the size and location)
 app:GetWindow("Prime"):SetSize(425, 305);
 app:GetWindow("Unsorted");
+(function()
+	app:GetWindow("CosmicInfuser", UIParent, function(self)
+		if not self.initialized then
+			self.initialized = true;
+			self.data = {
+				['text'] = "Cosmic Infuser",
+				['icon'] = "Interface\\Icons\\INV_Misc_Celestial Map.blp", 
+				["description"] = "This window helps debug when we're missing map IDs in the addon.",
+				['visible'] = true, 
+				['expanded'] = true,
+				['OnUpdate'] = function(data) 
+					data.visible = true;
+				end,
+				['back'] = 1,
+				['g'] = {
+					{
+						['text'] = "Check for missing maps now!",
+						['icon'] = "Interface\\Icons\\INV_Misc_Map_01",
+						['description'] = "This function will check for missing mapIDs in ATT.",
+						['back'] = 0.5,
+						['OnClick'] = function(data, button)
+							Push(self, "Rebuild", self.Rebuild);
+							return true;
+						end,
+						['OnUpdate'] = function(data) 
+							data.visible = true;
+						end,
+					},
+				},
+			};
+			self.Rebuild = function(self)
+				-- Rebuild all the datas
+				local temp = self.data.g[1];
+				wipe(self.data.g);
+				tinsert(self.data.g, temp);
+				
+				-- Go through all of the possible maps
+				for mapID=1,3000,1 do
+					local mapInfo = C_Map.GetMapInfo(mapID);
+					if mapInfo then
+						local results = SearchForField("mapID", mapID);
+						local mapObject = { ["mapID"] = mapID, ["collectible"] = true };
+						if results and #results > 0 then
+							mapObject.collected = true;
+						else	
+							mapObject.collected = false;
+						end
+						
+						-- Recurse up the map chain and build the full hierarchy
+						local parentMapID = mapInfo.parentMapID;
+						while parentMapID do
+							mapInfo = C_Map.GetMapInfo(parentMapID);
+							if mapInfo then
+								mapObject = { ["mapID"] = parentMapID, ["collectible"] = true, ["g"] = { mapObject } };
+								parentMapID = mapInfo.parentMapID;
+							else
+								break;
+							end
+						end
+						
+						-- Merge it into the listing.
+						MergeObject(self.data.g, CreateObject(mapObject));
+					end
+				end
+				
+				self:Update();
+			end
+		end
+		
+		-- Update the window and all of its row data
+		self.data.progress = 0;
+		self.data.total = 0;
+		UpdateGroups(self.data, self.data.g);
+		UpdateWindow(self, true);
+	end);
+end)();
 --[[
 app:GetWindow("Debugger", UIParent, function(self)
 	if not self.initialized then
@@ -10804,6 +10880,11 @@ SlashCmdList["AllTheThings"] = function(cmd)
 		local group = GetCachedSearchResults(cmd, SearchForLink, cmd);
 		if group then CreateMiniListForGroup(group); end
 	end
+end
+
+SLASH_AllTheThingsMAPS1 = "/attmaps";
+SlashCmdList["AllTheThingsMAPS"] = function(cmd)
+	app:GetWindow("CosmicInfuser"):Toggle();
 end
 
 SLASH_AllTheThingsNote1 = "/attnote";
