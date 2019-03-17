@@ -34,10 +34,16 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 54042,	-- Trouble in Darkshore
 						["qg"] = 146325,	-- Shredmaster Blix
 					}),
-					{	-- Remaining Threats
-						["questID"] = 54843,
+					{	-- Remaining Threats (Alliance)
+						["questID"] = 54875,	-- Remaining Threats (Alliance)
+						["qg"] = 149623,	-- Commander Lorna Crowley
+						["coord"] = { 46.8, 35.4, 62 },
+						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- Remaining Threats (Horde)
+						["questID"] = 54843,	-- Remaining Threats (Horde)
 						["qg"] = 149410,	-- Deathstalker Commander Belmont
-						["coord"] = { 46.9, 35.5 },
+						["coord"] = { 46.9, 35.5, 62 },
 						["races"] = HORDE_ONLY,
 					},
 					h({
