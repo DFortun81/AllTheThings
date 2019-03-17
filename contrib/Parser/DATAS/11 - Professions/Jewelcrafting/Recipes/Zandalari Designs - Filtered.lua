@@ -148,16 +148,16 @@ profession(755, {	-- Jewelcrafting
 						}
 					}
 				},
-				--[[{	-- Tools of the Trade
+				{	-- Tools of the Trade
 					["name"] = "Tools of the Trade",
-					["categoryID"] = needsID,
+					["categoryID"] = 1278,
 					["g"] = {
 						{	-- Jewelhammer's Focus
 							["name"] = "Jewelhammer's Focus",
 							["recipeID"] = 256703
 						},
 					},
-				},]]--
+				},
 			}
 		},
 	}),

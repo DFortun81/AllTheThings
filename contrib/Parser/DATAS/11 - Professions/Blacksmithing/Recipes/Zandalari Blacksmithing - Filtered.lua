@@ -599,16 +599,16 @@ profession(164, {	-- Blacksmithing
 						},
 					},
 				},
-				--[[{	-- Tools of the Trade
+				{	-- Tools of the Trade
 					["name"] = "Tools of the Trade",
-					["categoryID"] = needsID,
+					["categoryID"] = 550,
 					["g"] = {
 						{	-- Khaz'gorian Smithing Hammer
 							["name"] = "Khaz'gorian Smithing Hammer",
 							["recipeID"] = 253145
 						},
 					},
-				},]]--
+				},
 			},
 		},
 	}),
