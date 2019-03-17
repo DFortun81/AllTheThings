@@ -10407,6 +10407,10 @@ end)();
 					if tradeSkillID == self.lastTradeSkillID then
 						return false;
 					end
+					-- If it's not yours, don't take credit for it.
+					if C_TradeSkillUI.IsTradeSkillLinked() or C_TradeSkillUI.IsTradeSkillGuild() then
+						return false;
+					end
 					self.lastTradeSkillID = tradeSkillID;
 					
 					local currentCategoryID, categories = -1, {};
