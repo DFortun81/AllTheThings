@@ -12,10 +12,31 @@ _.ExpansionFeatures =
 				{	-- Ready for War
 					["achievementID"] = 12510,	-- Ready for War
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 110,
 					["maps"] = { 1161 },	--  Boralus
+					["lvl"] = 110,
 					-- We need to attach lvl requirements in various areas here as the quests are specific to certain levels.  To ensure everything works properly we'll attach lvls to each quest to be safe.
 					["g"] = { 
+						n(-6015,  {	-- Rewards
+							["description"] = "You'll be offered these rewards at the end of your first foothold.",
+							["g"] = {
+								i(163660),	-- 7th Legionnaire's Chainmail
+								i(163659),	-- 7th Legionnaire's Skullcap
+								i(163658),	-- 7th Legionnaire's Spaulders
+								i(163662, {	-- 7th Legionnaire's Helmet
+									["modID"] = 25,
+								}),
+								i(163661, {	-- 7th Legionnaire's Pauldrons
+									["modID"] = 25,
+								}),
+								i(163663, {	-- 7th Legionnaire's Breastplate
+									["modID"] = 25,
+								}),
+								-- This quest must reward other Azerite gear for other armor types, but it's not on wowhead.
+								-- Need to complete on cloth/leather to see rewards
+								-- Not sure what the modID does in this instance, but Luce put it on the items during their playthrough, so I'm keeping it
+								-- Mail gear seemed to track fine without it but I could be missing something
+							},
+						}),
 						qa(52654, {	-- The War Campaign
 							["qg"] = 120788,	-- Genn Greymane
 							["coord"] = { 68.0, 22.3, 1161 },	-- Boralus
@@ -84,6 +105,12 @@ _.ExpansionFeatures =
 							-- SQ could also be The Ongoing Campaign or The Final Foothold depending upon the order you do the zones in.
 							-- I listed only the first one as a SQ since it'll be required for all 3 footholds.
 						}),
+						qa(51308, {	-- Zuldazar Foothold
+							["qg"] = 135612,	-- Halford Wyrmbane
+							["lvl"] = 110,	-- Can pick a foothold at 110, 114, and 118
+							["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
+							["sourceQuests"] = { 51570 },	-- Foothold: Zuldazar
+						}),
 						qa(53583, {	-- Adapting Our Tactics
 							["qg"] = 143846,	-- Alleria Windrunner
 							["coord"] = { 70.5, 27.3, 1161 },	-- Boralus
@@ -100,23 +127,20 @@ _.ExpansionFeatures =
 								-- last Zuldazar quest
 							},
 						}),
---
-						{	-- The Final Foothold
-							["questID"] = 52443,
+						qa(52443, {	-- The Final Foothold
 							["qg"] = 135612,	-- Halford Wyrmbane
-							["coords"] = {
-								{ 69.48, 26.83 },
-							},
-							["races"] = ALLIANCE_ONLY,
-							-- NOTE!! Source Quest is finishing two zones.  Add all at a later date.
-						},
+							["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
+							["description"] = "To get this quest and continue the campaign, you must complete two footholds of your choice.",
+							["sourceQuests"] = { 51961 },	-- The Ongoing Campaign
+							-- Setting "The Ongoing Campaign" because it starts the second foothold, and you have to finish 2 footholds to unlock this.
+						}),
 						{	-- Nazmir Foothold
 							["achievementID"] = 12510,	-- Ready for War
+							["collectible"] = false,
 							["criteriaID"] = 1,	--  Nazmir Foothold
-							["collectible"] = false,	-- We are making it not collectible here because we are awarding it at the end of the chain.
-							["lvl"] = 112,
-							["maps"] = { 863 },	-- Nazmir
 							["races"] = ALLIANCE_ONLY,
+							["maps"] = { 863 },	-- Nazmir
+							["lvl"] = 112,
 							["g"] = {
 								qa(51129, {	-- Dubious Offering
 									["qg"] = 136432,	-- Brann Bronzebeard
@@ -190,280 +214,148 @@ _.ExpansionFeatures =
 											["achievementID"] = 12510,	-- Ready for War
 											["criteriaID"] = 1,	--  Nazmir Foothold
 										},
-										i(163660),	-- 7th Legionnaire's Chainmail
-										i(163659),	-- 7th Legionnaire's Skullcap
-										i(163658),	-- 7th Legionnaire's Spaulders
-										-- This quest must reward other Azerite gear for other armor types, but it's not on wowhead.
-										-- Not sure if the gear changes based on which foothold you choose first.
 									},
 								}),
 							},
 						},
 						{	-- Vol'dun Foothold
 							["achievementID"] = 12510,	-- Ready for War
+							["collectible"] = false,
 							["criteriaID"] = 2,	--  Vol'dun Foothold
-							["collectible"] = false,	-- We are making it not collectible here because we are awarding it at the end of the chain.
-							["lvl"] = 112,
-							["maps"] = { 864 },	-- Vol'dun
 							["races"] = ALLIANCE_ONLY,
+							["maps"] = { 864 },	-- Vol'dun
+							["lvl"] = 112,
 							["g"] = {
 								qa(51170, {	-- Ooh Rah!
 									["qg"] = 137867,	-- Halford Wyrmbane
 									["coord"] = { 32.8, 34.8, 864 },	-- Vol'dun
 									["sourceQuests"] = { 51283 },	-- Voyage to the West
 								}),
-								{	-- Establish a Beachhead
-									["questID"] = 51229,	-- Establish a Beachhead
+								qa(51229, {	-- Establish a Beachhead
 									["qg"] = 137008,	-- Sergeant Ermey
-									["sourceQuests"] = {
-										51170,	-- Ooh Rah!
-									},
-									["coords"] = {
-										{ 39.63, 35.65 },
-									},
-									["races"] = ALLIANCE_ONLY,
-								},
-								{	-- Honor Bound
-									["questID"] = 51349,	-- Honor Bound
+									["coord"] = { 39.6, 35.7, 864 },	-- Vol'dun
+									["sourceQuests"] = { 51170 },	-- Ooh Rah!
+								}),
+								qa(51349, {	-- Honor Bound
 									["qg"] = 137213,	-- Halford Wyrmbane
-									["sourceQuests"] = {
-										51229,	-- Establishing a Beachhead
-									},
-									["coords"] = {
-										{ 37.71, 35.85 },
-									},
-									["races"] = ALLIANCE_ONLY,
-								},
-								{	-- Unexpected Aid
-									["questID"] = 51350,	-- Unexpected Aid
+									["coord"] = { 37.7, 35.7, 864 },	-- Vol'dun
+									["sourceQuests"] = { 51229 },	-- Establish a Beachhead
+								}),
+								qa(51350, {	-- Unexpected Aid
 									["qg"] = 137337,	-- Sergeant Ermey
-									["sourceQuests"] = {
-										51349,	-- Honor Bound
-									},
-									["coords"] = {
-										{ 39.01, 42.93 },
-									},
-									["races"] = ALLIANCE_ONLY,
-								},
-								{	-- Poisoned Barbs
-									["questID"] = 51351,	-- Poisoned Barbs
+									["coord"] = { 39.0, 42.9, 864 },	-- Vol'dun
+									["sourceQuests"] = { 51349 },	-- Honor Bound
+								}),
+								qa(51351, {	-- Poisoned Barbs
 									["qg"] = 137337,	-- Sergeant Ermey
-									["sourceQuests"] = {
-										51349,	-- Honor Bound
-									},
-									["coords"] = {
-										{ 39.01, 42.93 },
-									},
-									["races"] = ALLIANCE_ONLY,
-								},
-								{	-- Antidote Application
-									["questID"] = 51366,	-- Antidote Application
+									["coord"] = { 39.0, 42.9, 864 },	-- Vol'dun
+									["sourceQuests"] = { 51349 },	-- Honor Bound
+								}),
+								qa(51366, {	-- Antidote Application
 									["qg"] = 137337,	-- Sergeant Ermey
+									["coord"] = { 39.0, 42.9, 864 },	-- Vol'dun
 									["sourceQuests"] = {
-										51350,	-- Unexpected Aid
 										51351,	-- Poisoned Barbs
+										51350,	-- Unexpected Aid
 									},
-									["coords"] = {
-										{ 39.01, 42.93 },
-									},
-									["races"] = ALLIANCE_ONLY,
-								},
-								{	-- Friends in Strang Places
-									["questID"] = 51369,	-- Friends in Strang Places
+								}),
+								qa(51369, {	-- Friends in Strange Places
 									["qg"] = 137434,	-- Vorrik
-									["sourceQuests"] = {
-										51366,	-- Antidote Application
-									},
-									["coords"] = {
-										{ 38.91, 42.96 },
-									},
-									["races"] = ALLIANCE_ONLY,
-								},
-								{	-- Defang the Faithless
-									["questID"] = 51391,	-- Defang the Faithless
+									["coord"] = { 38.9, 42.9, 864 },	-- Vol'dun
+									["sourceQuests"] = { 51366 },	-- Antidote Application
+								}),
+								qa(51391, {	-- Defang the Faithless
 									["qg"] = 137537,	-- Vorrik
-									["sourceQuests"] = {
-										51369,	-- Friends in Strang Places
-									},
-									["coords"] = {
-										{ 27.23, 53.92 },
-									},
-									["races"] = ALLIANCE_ONLY,
-								},
-								{	-- Break the Siege
-									["questID"] = 51394,	-- Break the Siege
+									["coord"] = { 27.2, 53.9, 864 },	-- Vol'dun
+									["sourceQuests"] = { 51369 },	-- Friends in Strange Places
+								}),
+								qa(51394, {	-- Break the Siege
 									["qg"] = 137537,	-- Vorrik
-									["sourceQuests"] = {
-										51369,	-- Friends in Strang Places
-									},
-									["coords"] = {
-										{ 27.23, 53.92 },
-									},
-									["races"] = ALLIANCE_ONLY,
-								},
-								{	-- Breaking Free
-									["questID"] = 51389,	-- Breaking Free
+									["coord"] = { 27.2, 53.9, 864 },	-- Vol'dun
+									["sourceQuests"] = { 51369 },	-- Friends in Strange Places
+								}),
+								qa(51389, {	-- Breaking Free
 									["qg"] = 137543,	-- Sergeant Ermey
-									["sourceQuests"] = {
-										51369,	-- Friends in Strang Places
-									},
-									["coords"] = {
-										{ 27.21, 53.92 },
-									},
-									["races"] = ALLIANCE_ONLY,
-								},
-								{	-- The Keeper's Keys
-									["questID"] = 51395,	-- The Keeper's Keys
+									["coord"] = { 27.2, 53.9, 864 },	-- Vol'dun
+									["sourceQuests"] = { 51369 },	-- Friends in Strange Places
+								}),
+								qa(51395, {	-- The Keepers' Keys
 									["qg"] = 129519,	-- Vorrik
+									["coord"] = { 27.5, 52.5, 864 },	-- Vol'dun
 									["sourceQuests"] = {
-										51391,	-- Defang the Faithless
-										51394,	-- Break the Siege
 										51389,	-- Breaking Free
+										51394,	-- Break the Siege
+										51391,	-- Defang the Faithless
 									},
-									["coords"] = {
-										{ 27.59, 52.57 },
-									},
-									["races"] = ALLIANCE_ONLY,
-								},
-								{	-- Reporting In
-									["questID"] = 51402,	-- Reporting In
+								}),
+								qa(51402, {	-- Reporting In
 									["qg"] = 137543,	-- Sergeant Ermey
-									["sourceQuests"] = {
-										51395,	-- The Keeper's Keys
-									},
-									["coords"] = {
-										{ 27.01, 52.55 },
-									},
-									["races"] = ALLIANCE_ONLY,
-								},
-								{	-- Champion: Magister Umbric
-									["questID"] = 52008,	-- Champion: Magister Umbric
+									["coord"] = { 27.0, 52.5, 864 },	-- Vol'dun
+									["sourceQuests"] = { 51395 },	-- The Keepers' Keys
+								}),
+								qa(52008, {	-- Champion: Magister Umbric
 									["qg"] = 139568,	-- Magister Umbric
-									["sourceQuests"] = {
-										51402,	-- Reporting In
-									},
-									["coords"] = {
-										{ 37.46, 35.81 },
-									},
-									["races"] = ALLIANCE_ONLY,
+									["coord"] = { 37.5, 35.8, 864 },	-- Vol'dun
+									["sourceQuests"] = { 51402 },	-- Reporting In
 									["g"] = {
-										{	-- Magister Umbric
-											["followerID"] = 1072,	-- Magister Umbric
-											["questID"] = 52008,
-										},
+										follower(1072),	-- Magister Umbric
 									},
-								},
-								{	-- Return to Boralus
-									["questID"] =  51969,	-- Return to Boralus
+								}),
+								qa(51969, {	-- Return to Boralus
 									["qg"] = 137213,	-- Halford Wyrmbane
-									["sourceQuests"] = {
-										52008,	-- Champion: Magister Umbric
-									},
-									["coords"] = {
-										{ 37.71, 35.76 },
-									},
-									["races"] = ALLIANCE_ONLY,
+									["coord"] = { 37.7, 35.7, 864 },	-- Vol'dun
+									["sourceQuests"] = { 52008 },	-- Champion: Magister Umbric
+									-- I did this foothold second and received a Glowing Azerite Crystal (250 Azerite) as my reward.
 									["g"] = {
 										{	--  Vol'dun Foothold
 											["achievementID"] = 12510,	-- Ready for War
 											["criteriaID"] = 2,	--  Vol'dun Foothold
 										},
 									},
-								},
+								}),
 							},
 						},
 						{	-- Zuldazar Foothold
 							["achievementID"] = 12510,	-- Ready for War
 							["criteriaID"] = 3,	--  Zuldazar Foothold
-							["collectible"] = false,	-- We are making it not collectible here because we are awarding it at the end of the chain.
-							["lvl"] = 112,
-							["maps"] = {
-								862,	-- Zuldazar
-							},
+							["collectible"] = false,
 							["races"] = ALLIANCE_ONLY,
+							["maps"] = { 862 },	-- Zuldazar
+							["lvl"] = 112,
 							["g"] = {
-								{	-- Zuldazar Foothold
-									["questID"] = 51308,	-- Zuldazar Foothold
-									["qg"] = 135612,	-- Halford Wyrmbane
-									["sourceQuests"] = {
-										51569,	-- The Zandalar Campaign
-									},
-									["lvl"] = 112, -- When you get the three choices.
-									["coords"] = {
-										{ 69.59, 26.93 },
-									},
-									["races"] = ALLIANCE_ONLY,
-								},
-								{	-- The Troll's Tale	[Zuldazar!!]
-									["questID"] = 51201,	-- The Troll's Tale
-									["qg"] =  136197,	-- Brigadier Thom
-									["sourceQuests"] = {
-										51308,	-- Zuldazar Foothold
-									},
-									["coords"] = {
-										{ 77.54, 54.63 },
-									},
-									["races"] = ALLIANCE_ONLY,
-									-- Note!! Hidden quest 51346 procced during this.  Probably indicating cinematic seen.
-								},
-								{	-- Granting a Reprieve [Zuldazar!!]
-									["questID"] = 51190,	-- Granting a Reprieve
-									["qg"] =  136197,	-- Brigadier Thom
-									["sourceQuests"] = {
-										51201,	-- The Troll's Fate
-									},
-									["coords"] = {
-										{ 77.54, 54.63 },
-									},
-									["races"] = ALLIANCE_ONLY,
-								},
-								{	-- Disarming the Cannons [Zuldazar!!]
-									["questID"] = 51544,	-- Disarming the Cannons
-									["qg"] =  136197,	-- Brigadier Thom
-									["sourceQuests"] = {
-										51201,	-- The Troll's Fate
-									},
-									["coords"] = {
-										{ 77.54, 54.63 },
-									},
-									["races"] = ALLIANCE_ONLY,
-								},
-								{	-- Save Them All [Zuldazar!!]
-									["questID"] = 51191,	-- Save Them All
+								qa(51201, {	-- The Troll's Tale
+									["qg"] = 136197,	-- Brigadier Thom
+									["coord"] = { 77.5, 54.6, 862 },	-- Zuldazar
+									["sourceQuests"] = { 51308 },	-- Zuldazar Foothold
+								}),
+								qa(51190, {	-- Granting a Reprieve
+									["qg"] = 136197,	-- Brigadier Thom
+									["coord"] = { 77.5, 54.6, 862 },	-- Zuldazar
+									["sourceQuests"] = { 51201 },	-- The Troll's Tale
+								}),
+								qa(51544, {	-- Disarming the Cannons
+									["qg"] = 136197,	-- Brigadier Thom
+									["coord"] = { 77.5, 54.6, 862 },	-- Zuldazar
+									["sourceQuests"] = { 51201 },	-- The Troll's Tale
+								}),
+								qa(51192, {	-- A Lack of Surplus
+									["qg"] = 136192,	-- Degdod
+									["coord"] = { 77.1, 55.5, 862 },	-- Zuldazar
+									["sourceQuests"] = { 51201 },	-- The Troll's Tale
+								}),
+								qa(51193, {	-- That One's Mine
+									["qg"] = 136192,	-- Degdod
+									["coord"] = { 77.1, 55.5, 862 },	-- Zuldazar
+									["sourceQuests"] = { 51201 },	-- The Troll's Tale
+								}),
+								qa(51191, {	-- Save Them All
 									["qg"] = 136195,	-- Medic Feorea
-									["sourceQuests"] = {
-										51201,	-- The Troll's Fate
-									},
-									["coords"] = {
-										{ 77.16, 55.49 },
-									},
-									["races"] = ALLIANCE_ONLY,
-								},
-								{	-- A Lack of Surplus [Zuldazar!!]
-									["questID"] = 51192,	-- A Lack of Surplus
-									["qg"] = 136195,	-- Degdod
-									["sourceQuests"] = {
-										51201,	-- The Troll's Fate
-									},
-									["coords"] = {
-										{ 77.16, 55.53 },
-									},
-									["races"] = ALLIANCE_ONLY,
-								},
-								{	-- That One's Mine [Zuldazar!!]
-									["questID"] = 51193,	-- That One's Mine
-									["qg"] = 136195,	-- Degdod
-									["sourceQuests"] = {
-										51201,	-- The Troll's Fate
-									},
-									["coords"] = {
-										{ 77.16, 55.53 },
-									},
-									["races"] = ALLIANCE_ONLY,
-								},
-								{	-- Xibala [Zuldazar!!]
-									["questID"] = 51418,	-- Xibala
+									["coord"] = { 77.1, 55.5, 862 },	-- Zuldazar
+									["sourceQuests"] = { 51201 },	-- The Troll's Tale
+								}),
+								qa(51418, {	-- Xibala
 									["qg"] = 135620,	-- Kelsey Steelspark
+									["coord"] = { 77.4, 55.2, 862 },	-- Zuldazar
 									["sourceQuests"] = {
 										51192,	-- A Lack of Surplus
 										51544,	-- Disarming the Cannons
@@ -471,107 +363,64 @@ _.ExpansionFeatures =
 										51191,	-- Save Them All
 										51193,	-- That One's Mine
 									},
-									["coords"] = {
-										{ 77.49, 55.27 },
-									},
-									["races"] = ALLIANCE_ONLY,
-									-- Note!! Hidden quest 53384 procs as Kelsey Steelspark runs up
-								},
-								{	-- Mole Machinations [Zuldazar!!]
-									["questID"] = 51331,	-- Mole Machinations
+									-- Hidden quest 53384 completes as Kelsey Steelspark runs up
+								}),
+								qa(51359, {	-- Fragment of the Firelands
 									["qg"] = 137401,	-- Anvil-Thane Thurgaden
-									["sourceQuests"] = {
-										51418,	-- Xibala
-									},
-									["coords"] = {
-										{ 40.71, 70.89 }
-									},
-									["races"] = ALLIANCE_ONLY,
-								},
-								{	-- Rocks of Ragnaros [Zuldazar!!]
-									["questID"] = 51309,	-- Rocks of Ragnaros
-									["qg"] = 137401,	-- Anvil-Thane Thurgaden 
-									["sourceQuests"] = {
-										51418,	-- Xibala
-									},
-									["coords"] = {
-										{ 40.71, 70.89 }
-									},
-									["races"] = ALLIANCE_ONLY,
-								},
-								{	-- Fragment of the Firelands [Zuldazar!!]
-									["questID"] = 51359,	-- Fragment of the Firelands
-									["qg"] = 137401,	-- Anvil-Thane Thurgaden 
+									["coord"] = { 40.7, 70.8, 862 },	-- Zuldazar
 									["sourceQuests"] = {
 										51331,	-- Mole Machinations
 										51309,	-- Rocks of Ragnaros
 									},
-									["coords"] = {
-										{ 40.71, 70.89 }
-									},
-									["races"] = ALLIANCE_ONLY,
-								},
-								{	-- Champion: Kelsey Steelspark [Zuldazar!!]
-									["questID"] = 52003,	-- Champion: Kelsey Steelspark
+								}),
+								qa(52003, {	-- Champion: Kelsey Steelspark
 									["qg"] = 135620,	-- Kelsey Steelspark
-									["sourceQuests"] = {
-										51359,	-- Fragment of the Firelands
-									},
-									["coords"] = {
-										{ 40.74, 70.71 },
-									},
-									["races"] = ALLIANCE_ONLY,
+									["coord"] = { 40.7, 70.6, 862 },	-- Zuldazar
+									["sourceQuests"] = { 51359 },	-- Fragment of the Firelands
 									["g"] = {
-										{	-- Kelsey Steelspark
-											["followerID"] = 1068,	-- Kelsey Steelspark
-										},
+										follower(1068),	-- Kelsey Steelspark
 									},
-								},
-								{	-- Return to Boralus [Zuldazar!!]
-									["questID"] = 51968,	-- Return to Boralus
+								}),
+								qa(51968, {	-- Return to Boralus
 									["qg"] = 135620,	-- Kelsey Steelspark
-									["sourceQuests"] = {
-										52003,	-- Champion: Kelsey Steelspark
-									},
-									["coords"] = {
-										{ 40.74, 70.71 },
-									},
-									["races"] = ALLIANCE_ONLY,
+									["coord"] = { 40.7, 70.6, 862 },	-- Zuldazar
+									["sourceQuests"] = { 52003 },	-- Champion: Kelsey Steelspark
+									-- I did this foothold second and received a Glowing Azerite Crystal (250 Azerite) as my reward.
 									["g"] = {
 										{	-- Zuldazar Foothold
 											["achievementID"] = 12510,	-- Ready for War
 											["criteriaID"] = 3,	--  Zuldazar Foothold
 										},
-										{	-- 7th Legionnaire's Helmet
-											["itemID"] = 163662,	-- 7th Legionnaire's Helmet
-											["modID"] = 25,
-										},
-										{	-- 7th Legionnaire's Pauldrons
-											["itemID"] = 163661,	-- 7th Legionnaire's Pauldrons
-											["modID"] = 25,
-										},
-										{	-- 7th Legionnaire's Breastplate
-											["itemID"] = 163663,	-- 7th Legionnaire's Breastplate
-											["modID"] = 25,
-										},
 									},
-								},
+								}),
 							},
 						},
-						{	-- Uniting Kul Tiras
-							["questID"] = 51918,	-- Uniting Kul Tiras
+						qa(51918, {	-- Uniting Kul Tiras
 							["qg"] = 135612,	-- Halford Wyrmbane
-							["groups"] = {
+							["lvl"] = 120,
+							["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
+							["sourceQuests"] = { 52654 },	-- The War Campaign
+							["g"] = {
 								i(141605),	-- Flight Master Whistle
 							},
-							["sourceQuests"] = {
-								52654,	-- The War Campaign
-							},
-							["lvl"] = 120,
+							-- Grants credit for Horde Equivalent quests 51916 (probably main quest requiring rep) 52451 (probably alt quest)
+							-- Grants credit for Alliance whistle unlock, 51722
+							-- Turning in 52450, the alt version (once you've unlocked 51918 on your main via rep) grants credit for 51918 on the alt
+						}),
+						{	-- Blood on the Sand
+							["achievementID"] = 12510,	-- Ready for War
+							["collectible"] = false,
+							["criteriaID"] = 4,	--  Blood on the Sand
 							["races"] = ALLIANCE_ONLY,
-							-- NOTE!! Also grants credit for Horde Equivalent == 52451 and 51916
-							-- NOTE!! Also grants credit for Alliance Whistle Unlock == 51722
-							-- NOTE!! Also grants credit for Alliance Other Quest (Same Name) == 52450
+							["maps"] = { 864 },	-- Vol'dun
+							["lvl"] = 120,
+							["g"] = {
+								qa(52027, {	-- The Vol'dun Plan
+									["qg"] = 139705,	-- Halford Wyrmbane
+									["coord"] = { 37.7, 35.8, 864 },	-- Vol'dun
+									["sourceQuests"] = { 52026 },	-- Overseas Assassination
+								}),
+							},
 						},
 					},
 				},
