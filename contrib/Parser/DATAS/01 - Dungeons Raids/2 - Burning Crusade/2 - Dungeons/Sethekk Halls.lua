@@ -17,7 +17,11 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				}),
 			}),
 			d(1, {	-- Normal
-				n(-17, {	-- Quests 					
+				n(-17, {	-- Quests 	
+					q(29605, {	-- Brother Against Brother
+						["qg"] = 54840,	-- Isfar
+						["sourceQuests"] = 10180,	-- Can't Stay Away
+					}),
 					q(29606, {	-- Terokk's Legacy
 						i(29330),	-- The Saga of Terokk
 						i(29332),	-- Terokk's Mask

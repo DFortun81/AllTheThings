@@ -354,9 +354,10 @@ _.Zones =
 						["qg"] = 18481,	-- A'dal
 						["sourceQuests"] = { 10102 },	-- A Secret Revealed (*UNTESTED*)
 					}),
-					un(40, q( 10180, {	-- Can't Stay Away
+					q(10180, {	-- Can't Stay Away
 						["qg"] = 19045,	-- Oloraak
-					})), -- Quest seems removed. Gold 28.10.2018
+						["isBreadcrumb"] = true,
+					}),
 					qh(11046, {	-- Chief Apothecary Hildagard
 						["qg"] = 19678,	-- Fantei
 						["isBreadcrumb"] = true,	-- for "A Haunted History" in Shadowmoon Valley
