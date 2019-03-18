@@ -223,6 +223,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(127578),	-- Belt of Draconic Runes
 					})),
 					cr(26763, e(619, {	-- Anomalus
+						i(127586),	-- Helm of Anomalus (not in DJ, reported in #general 3/18/19)
 						i(127575), 	-- Chiseled Stalagmite Pauldrons
 						i(127590), 	-- Gloves of the Crystal Gardener
 						i(127589), 	-- Girdle of Ice
