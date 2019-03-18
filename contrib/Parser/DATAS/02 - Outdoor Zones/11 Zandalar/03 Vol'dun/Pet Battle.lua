@@ -255,9 +255,9 @@ _.Zones =
 							["speciesID"] = 2390,	-- Leafy Flutterwing
 							["crs"] = { 143049 },	-- Leafy Flutterwing
 						},
-						{	-- Loose Parts [A Only]
+						{	-- Loose Parts [A Only] / Battle Bots WQ
 							["objectID"] = 311903,	-- Loose Parts
-							["questID"] = 54526,	-- Whether you have it collected this assault or not.
+							["questID"] = 54272,	-- Battle Bots (Alliance)
 							["icon"] = "Interface\\Icons\\INV_Engineering_ReavesBattery",
 							["races"] = ALLIANCE_ONLY,	-- Only Alliance can collect the parts from this.
 							["g"] ={
@@ -297,9 +297,9 @@ _.Zones =
 								},
 							},
 						},
-						{	-- Loose Parts [H Only]
+						{	-- Loose Parts [H Only] / Battle Bots WQ
 							["objectID"] = 311902,	-- Loose Parts
-							["questID"] = 54525,	-- Whether you have it collected this assault or not.
+							["questID"] = 54273,	-- Battle Bots (Horde)
 							["icon"] = "Interface\\Icons\\INV_Engineering_ReavesBattery",
 							["races"] = HORDE_ONLY,	-- Only Horde can collect the parts from this.
 							["g"] ={
