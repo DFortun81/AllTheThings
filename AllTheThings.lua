@@ -8864,6 +8864,8 @@ app:GetWindow("Unsorted");
 		UpdateWindow(self, true);
 	end);
 end)();
+
+		-- Uncomment this section if you need to enable Debugger:
 --[[
 app:GetWindow("Debugger", UIParent, function(self)
 	if not self.initialized then
