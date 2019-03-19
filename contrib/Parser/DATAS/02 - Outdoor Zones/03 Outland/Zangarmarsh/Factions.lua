@@ -22,7 +22,7 @@ _.Zones =
 								q(9784, {	-- Identify Plant Parts
 									["qg"] = 17909,	-- Lauranna Thar'well
 									["coord"] = { 80.3, 64.2, 102 },
-									["sourceQuests"] = 9802,	-- Plants of Zangarmarsh
+									["sourceQuest"] = 9802,	-- Plants of Zangarmarsh
 									["description"] = "This quest is repeatable until you are Honored with Cenarion Expedition.",
 									["repeatable"] = true,
 									["groups"] = {
@@ -33,7 +33,7 @@ _.Zones =
 									i(24407, {	-- Uncatalogued Species
 										q(9875, {	-- Uncatalogued Species
 											["description"] = "Only available until you are Honored with Cenarion Expedition.",
-											["sourceQuests"] = 9784,	-- Identify Plant Parts
+											["sourceQuest"] = 9784,	-- Identify Plant Parts
 											["repeatable"] = true,
 										}),
 									}),
@@ -102,35 +102,35 @@ _.Zones =
 								q(9809, {	-- More Glowcaps 
 									["qg"] = 17924,	-- Mshii'fn
 									["coord"] = { 19.7, 52.1, 102 },
-									["sourceQuests"] = 9808,	-- Glowcap Mushrooms
+									["sourceQuest"] = 9808,	-- Glowcap Mushrooms
 									["description"] = "Unavailable after you reach Friendly with Sporeggar.",
 									["repeatable"] = true,	-- Not possible if you reached friendly or higher
 								}),
 								q(9742, {	-- More Spore Sacs
 									["qg"] = 17923,	-- Fahssn
 									["coord"] = { 19.0, 63,4, 102 },
-									["sourceQuests"] = 9739,	-- The Sporelings' Plight
+									["sourceQuest"] = 9739,	-- The Sporelings' Plight
 									["description"] = "Unavailable after you reach Friendly with Sporeggar.",
 									["repeatable"] = true,	-- Not possible if you reached friendly or higher
 								}),
 								q(9744, {	-- More Tendrils!
 									["qg"] = 17923,	-- Fahssn
 									["coord"] = { 19.0, 63,4, 102 },
-									["sourceQuests"] = 9743,	-- Natural Enemies
+									["sourceQuest"] = 9743,	-- Natural Enemies
 									["description"] = "Unavailable after you reach Friendly with Sporeggar.",
 									["repeatable"] = true,	-- Not possible if you reached friendly or higher
 								}),
 								q(9807, {	-- More Fertile Spores
 									["qg"] = 17925,	-- Gshaff
 									["coord"] = { 19.1, 49.4, 102 },
-									["sourceQuests"] = 9806,	-- Fertile Spores
+									["sourceQuest"] = 9806,	-- Fertile Spores
 									["description"] = "Unavailable until you reach Friendly with Sporeggar.",
 									["repeatable"] = true,	-- Not possible if you reached friendly or higher
 								}),
 								q(9727, {	-- Now That We're Still Friends...
 									["qg"] = 17856,	-- Gzhun'tt
 									["coord"] = { 19.5, 50.0, 102 },
-									["sourceQuests"] = 9726,	-- Now That We're Friends...
+									["sourceQuest"] = 9726,	-- Now That We're Friends...
 									["repeatable"] = true,
 								}),
 							}),

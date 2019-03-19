@@ -426,13 +426,13 @@ _.Zones =
 						qa(50122, {	-- Ocular Extracts
 							["qg"] = 132228,	-- Elrick Pfitzer <Alchemielehrer>
 							["coord"] = { 74.2, 6.5, 1161 },
-							["sourceQuests"] = 50121,	-- Casting the First Stone
+							["sourceQuest"] = 50121,	-- Casting the First Stone
 							["requireSkill"] = 171,	-- Alchemy
 						}),
 						qa(50124, {	-- Changing the Scenery
 							["qg"] = 132228,	-- Elrick Pfitzer <Alchemielehrer>
 							["coord"] = { 74.2, 6.5, 1161 },
-							["sourceQuests"] = 50121,	-- Casting the First Stone
+							["sourceQuest"] = 50121,	-- Casting the First Stone
 							["requireSkill"] = 171,	-- Alchemy
 						}),
 						qa(50125, {	-- A Possible Solution
@@ -447,13 +447,13 @@ _.Zones =
 						qa(50126, {	-- A Deathly Draught
 							["qg"] = 132347,	-- Quintin Whalgrene <Master of Transmutations>
 							["coord"] = { 30.6, 49.6, 896 },
-							["sourceQuests"] = 50125,
+							["sourceQuest"] = 50125,
 							["requireSkill"] = 171,	-- Alchemy
 						}),
 						qa(50127, {	-- A Stone's Throw
 							["qg"] = 132347,	-- Quintin Whalgrene <Master of Transmutations>
 							["coord"] = { 30.6, 49.6, 896 },
-							["sourceQuests"] = 50125,
+							["sourceQuest"] = 50125,
 							["requireSkill"] = 171,	-- Alchemy
 						}),
 						qa(50128, {	-- Chemically Compounded
@@ -468,7 +468,7 @@ _.Zones =
 						o(280755, {	-- Quintin's Satchel
 							qa(50129, {	-- A Recipe for Success
 								["coord"] = { 62.9, 28.9, 863 },
-								["sourceQuests"] = 50128,
+								["sourceQuest"] = 50128,
 								["requireSkill"] = 171,	-- Alchemy
 								["groups"] = {
 									recipe(260403),	-- Recipe: Silus' Sphere of Transmutation

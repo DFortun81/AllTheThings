@@ -21,7 +21,7 @@ _.Zones =
 								q(9883, {	-- More Crystal Fragments
 									["qg"] = 18265,	-- Gezhe <The Consortium>
 									["coord"] = { 31.4, 57.8, 107 },
-									["sourceQuests"] = 9882,	-- Stealing from Thieves
+									["sourceQuest"] = 9882,	-- Stealing from Thieves
 									["repeatable"] = true,
 								}),
 								q(9893, {	-- Obsidian Warbeads
@@ -31,7 +31,7 @@ _.Zones =
 								q(9892, {	-- More Obsidian Warbeads
 									["qg"] = 18265,	-- Gezhe <The Consortium>
 									["coord"] = { 31.4, 57.8, 107 },
-									["sourceQuests"] = 9893,	-- Obsidian Warbeads
+									["sourceQuest"] = 9893,	-- Obsidian Warbeads
 									["repeatable"] = true,
 								}),
 								q(9914, {	-- A Head Full of Ivory
@@ -41,7 +41,7 @@ _.Zones =
 								q(9915, {	-- More Heads Full of Ivory
 									["qg"] = 18333,	-- Shadrek
 									["coord"] = { 31.8, 56.8, 107 },
-									["sourceQuests"] = 9914,	-- A Head Full of Ivory
+									["sourceQuest"] = 9914,	-- A Head Full of Ivory
 									["repeatable"] = true,
 								}),
 								q(9886, {	-- Membership Benefits
@@ -142,7 +142,7 @@ _.Zones =
 								qh(10478, {	-- More Warbeads!
 									["qg"] = 18407,	-- Warden Bullrok
 									["coord"] = { 55.8, 37.8, 107 },
-									["sourceQuests"] = 10479,	-- Proving Your Strength
+									["sourceQuest"] = 10479,	-- Proving Your Strength
 									["repeatable"] = true,
 								}),
 							}),
@@ -190,7 +190,7 @@ _.Zones =
 								qa(10477, {	-- More Warbeads!
 									["qg"] = 18408,	-- Warden Moi'bff Jill
 									["coord"] = { 54.8, 70.8, 107 },
-									["sourceQuests"] = 10476,	-- Fierce Enemies
+									["sourceQuest"] = 10476,	-- Fierce Enemies
 									["repeatable"] = true,
 								}),
 							}),
@@ -226,7 +226,6 @@ _.Zones =
 							}),
 						},
 					})),
-				
 				},
 			},
 		},

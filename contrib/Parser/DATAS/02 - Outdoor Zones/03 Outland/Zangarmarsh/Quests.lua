@@ -20,17 +20,17 @@ _.Zones =
 								qa(9787, {	-- Idols of the Feralfen
 									["qg"] = 18003,	-- Anchorite Ahuurn
 									["coord"] = { 68.2, 49.4, 102 },
-									["sourceQuests"] = 9786,	-- The Boha'mu Ruins
+									["sourceQuest"] = 9786,	-- The Boha'mu Ruins
 								}),
 								qa(9801, {	-- Gathering the Reagents
 									["qg"] = 18003,	-- Anchorite Ahuurn
 									["coord"] = { 68.2, 49.4, 102 },
-									["sourceQuests"] = 9787,	-- Idols of the Feralfen
+									["sourceQuest"] = 9787,	-- Idols of the Feralfen
 								}),
 								qa(9803, { 	-- Messenger to the Feralfen
 									["qg"] = 18003,	-- Anchorite Ahuurn
 									["coord"] = { 68.2, 49.4, 102 },
-									["sourceQuests"] = 9801,	-- Gathering the Reagents
+									["sourceQuest"] = 9801,	-- Gathering the Reagents
 									["groups"] = {
 										i(25614), 	-- Feralfen Beastmaster's Hauberk
 										i(25615), 	-- Feralfen Champion's Boots
@@ -46,12 +46,12 @@ _.Zones =
 								qh(9771, {	-- Searching for Scout Jyoba
 									["qg"] = 18011,	-- Zurai
 									["coord"] = { 85.3, 54.8, 102 },
-									["sourceQuests"] = 9774,	-- Thick Hydra Scales
+									["sourceQuest"] = 9774,	-- Thick Hydra Scales
 								}),
 								qh(9772, {	-- Jyoba's Report
 									["qg"] = 18035,	-- Scout Jyoba
 									["coord"] = { 80.7, 36.3, 102 },
-									["sourceQuests"] = 9771,	-- Searching for Scout Jyoba
+									["sourceQuest"] = 9771,	-- Searching for Scout Jyoba
 									["groups"] = {
 										i(25600),	-- Bog Walker's Bands
 										i(25602),	-- Bog Walker's Belt
@@ -70,7 +70,7 @@ _.Zones =
 								qh(9899, {	-- A Job Undone
 									["qg"] = 18016,	-- Magasha
 									["coord"] = { 84.4, 54.3, 102 },
-									["sourceQuests"] = 9773,	-- No More Mushrooms!
+									["sourceQuest"] = 9773,	-- No More Mushrooms!
 								}),
 								qh(9770, {	-- Menacing Marshfangs
 									["qg"] = 18012,	-- Reavij
@@ -79,7 +79,7 @@ _.Zones =
 								qh(9898, {	-- Nothin' Says Lovin' Like a Big Stinger
 									["qg"] = 18012,	-- Reavij
 									["coord"] = { 85.0, 54.0, 102 },
-									["sourceQuests"] = 9770,	-- Menacing Marshfangs
+									["sourceQuest"] = 9770,	-- Menacing Marshfangs
 									["groups"] = {
 										i(31788),	-- Blacksting Gloves
 										i(31786),	-- Blacksting Shoulders
@@ -97,7 +97,7 @@ _.Zones =
 								qa(9783, {	-- An Unnatural Drought
 									["qg"] = 18004,	-- Vindicator Idaar
 									["coord"] = { 68.2, 50.0, 102 },
-									["sourceQuests"] = 9782,	-- The Dead Mire
+									["sourceQuest"] = 9782,	-- The Dead Mire
 									["groups"] = {
 										i(25599),	-- Explorer's Bands
 										i(25598),	-- Fen Strider's Bracer
@@ -112,7 +112,7 @@ _.Zones =
 								qa(9896, { 	-- Blacksting's Bane
 									["qg"] = 18295,	-- Prospector Conall
 									["coord"] = { 68.6, 49.4, 102 },
-									["sourceQuests"] = 9901,	-- Unfinished Business
+									["sourceQuest"] = 9901,	-- Unfinished Business
 									["groups"] = {
 										i(31788), 	-- Blacksting Gloves
 										i(31786), 	-- Blacksting Shoulders
@@ -131,7 +131,7 @@ _.Zones =
 								qa(9790, {	-- Diaphanous Wings
 									["qg"] = 18005,	-- Haalrun
 									["coord"] = { 67.8, 48.0, 102 },
-									["sourceQuests"] = 9781,	-- Too Many Mouths to Feed
+									["sourceQuest"] = 9781,	-- Too Many Mouths to Feed
 								}),
 								qa(9791, {	-- Menacing Marshfangs
 									["qg"] = 18006,	-- Noraani
@@ -140,7 +140,7 @@ _.Zones =
 								qa(9780, {	-- Umbrafen Eel Filets
 									["qg"] = 18006,	-- Noraani
 									["coord"] = { 67.6, 47.8, 102 },
-									["sourceQuests"] = 9791,	-- Menacing Marshfangs
+									["sourceQuest"] = 9791,	-- Menacing Marshfangs
 								}),
 								-- Horde quests start (needs to be filled in)
 								qh(9775, {	-- Report to Shadow Hunter Denjai
@@ -154,7 +154,7 @@ _.Zones =
 								qh(9842, {	-- The Sharpest Blades
 									["qg"] = 18015,	-- Gambarinka
 									["coord"] = { 31.6, 49.2, 102 },
-									["sourceQuests"] = 9841,	-- Stinging the Stingers
+									["sourceQuest"] = 9841,	-- Stinging the Stingers
 									["groups"] = {
 										i(27753),	-- Ensorcelled Marshfang Blade
 										i(157547),	-- Keen Marshfang Shanker
@@ -169,7 +169,7 @@ _.Zones =
 								qh(9816, {	-- Have You Ever Seen One of These?
 									["qg"] = 18014,	-- Witch Doctor Tor'gash
 									["coord"] = { 32.9, 48.9, 102 },
-									["sourceQuests"] = 9814,	-- Burstcap Mushrooms, Mon!
+									["sourceQuest"] = 9814,	-- Burstcap Mushrooms, Mon!
 									["groups"] = {
 										i(25612),	-- Daggerfen Mail
 										i(25610),	-- Fen Strider's Footguards
@@ -183,7 +183,7 @@ _.Zones =
 								qh(9904, {	-- Pursuing Terrorclaw
 									["qg"] = 18018,	-- Zurjaya
 									["coord"] = { 32.9, 48.9, 102 },
-									["sourceQuests"] = 9845,	-- Angling to Beat the Competition
+									["sourceQuest"] = 9845,	-- Angling to Beat the Competition
 									["groups"] = {
 										i(25922),	-- Fearless Girdle
 										i(25923),	-- Fierce Mantle
@@ -194,7 +194,7 @@ _.Zones =
 								qh(9903, {	-- The Biggest of Them All
 									["qg"] = 18018,	-- Zurjaya
 									["coord"] = { 32.2, 49.6, 102 },
-									["sourceQuests"] = 9845,	-- Angling to Beat the Competition
+									["sourceQuest"] = 9845,	-- Angling to Beat the Competition
 								}),
 								qh(9846, {	-- Spirits of the Feralfen
 									["qg"] = 18017,	-- Seer Janidi
@@ -224,7 +224,7 @@ _.Zones =
 								qa(9839, { 	-- Overlord Gorefist
 									["qg"] = 18008,	-- Ikuti
 									["coord"] = { 41.8, 27.0, 102 },
-									["sourceQuests"] = 9835,	-- Ango'rosh Encroachment
+									["sourceQuest"] = 9835,	-- Ango'rosh Encroachment
 									["groups"] = {
 										i(25619),	-- Glowing Crystal Insignia
 										i(31770),	-- Marsh Bracers
@@ -246,17 +246,17 @@ _.Zones =
 								qa(9834, {	-- Natural Armor
 									["qg"] = 18010,	-- Maktu
 									["coord"] = { 41.6, 27.4, 102 },
-									["sourceQuests"] = 10116,	-- WANTED: Chieftain Mummaki
+									["sourceQuest"] = 10116,	-- WANTED: Chieftain Mummaki
 								}),
 								qa(9905, {	-- Maktu's Revenge
 									["qg"] = 18010,	-- Maktu
 									["coord"] = { 41.6, 27.4, 102 },
-									["sourceQuests"] = 9834,	-- Natural Armor
+									["sourceQuest"] = 9834,	-- Natural Armor
 								}),
 								qa(9830, {	-- Stinger Venom
 									["qg"] = 18009,	-- Puluu
 									["coord"] = { 40.8, 28.6, 102 },
-									["sourceQuests"] = 10116,	-- WANTED: Chieftain Mummaki
+									["sourceQuest"] = 10116,	-- WANTED: Chieftain Mummaki
 								}),
 								qa(9833, {	-- Lines of Communication
 									["groups"] = {
@@ -267,7 +267,7 @@ _.Zones =
 									},
 									["qg"] = 18009,	-- Puluu
 									["coord"] = { 40.8, 28.6, 102 },
-									["sourceQuests"] = 10116,	-- WANTED: Chieftain Mummaki
+									["sourceQuest"] = 10116,	-- WANTED: Chieftain Mummaki
 								}),
 								qa(9902, {	-- The Terror of Marshlight Lake
 									["groups"] = {
@@ -278,7 +278,7 @@ _.Zones =
 									},
 									["qg"] = 18009,	-- Puluu
 									["coord"] = { 40.8, 28.6, 102 },
-									["sourceQuests"] = 10116,	-- WANTED: Chieftain Mummaki
+									["sourceQuest"] = 10116,	-- WANTED: Chieftain Mummaki
 								}),
 								-- Horde quests start
 								o(182165, {	-- Wanted Poster
@@ -292,7 +292,7 @@ _.Zones =
 								qh(9822, {	-- Impending Attack
 									["qg"] = 18013,	-- Shadow Hunter Denjai
 									["coord"] = { 30.6, 50.8, 102 },
-									["sourceQuests"] = 9820,	-- WANTED: Boss Grog'ak
+									["sourceQuest"] = 9820,	-- WANTED: Boss Grog'ak
 								}),
 								qh(9823, {	-- Us or Them
 									["groups"] = {
@@ -300,12 +300,12 @@ _.Zones =
 									},
 									["qg"] = 18013,	-- Shadow Hunter Denjai
 									["coord"] = { 30.6, 50.8, 102 },
-									["sourceQuests"] = 9822,	-- Impending Attack
+									["sourceQuest"] = 9822,	-- Impending Attack
 								}),
 								qh(10118, {	-- Message to the Daggerfen
 									["qg"] = 18013,	-- Shadow Hunter Denjai
 									["coord"] = { 30.6, 50.8, 102 },
-									["sourceQuests"] = 9822,	-- Impending Attack
+									["sourceQuest"] = 9822,	-- Impending Attack
 								}),
 							}),
 							crit(4, {	-- Don't Eat THOSE Mushrooms!
@@ -317,7 +317,7 @@ _.Zones =
 								q(9701, {	-- Observing the Sporelings
 									["qg"] = 17831,	-- Watcher Leesa'oh
 									["coord"] = { 23.3, 66.2, 102 },
-									["sourceQuests"] = 9697,	-- Watcher Leesa'oh
+									["sourceQuest"] = 9697,	-- Watcher Leesa'oh
 								}),
 								q(9702, {	-- A Question of Gluttony
 									["qg"] = 17831,	-- Watcher Leesa'oh
@@ -327,7 +327,7 @@ _.Zones =
 								q(9708, {	-- Familiar Fungi
 									["qg"] = 17831,	-- Watcher Leesa'oh
 									["coord"] = { 23.3, 66.2, 102 },
-									["sourceQuests"] = 9702,	-- A Question of Gluttony
+									["sourceQuest"] = 9702,	-- A Question of Gluttony
 								}),
 								q(9709, {	-- Stealing Back the Mushrooms
 									["qg"] = 17831,	-- Watcher Leesa'oh
@@ -354,18 +354,18 @@ _.Zones =
 								q(9718, {	-- As the Crow Flies
 									["qg"] = 17841,	-- Ysiel Windsinger
 									["coord"] = { 78.4, 62.0, 102 },
-									["sourceQuests"] = 9716,	-- Disturbance at Umbrafen Lake
+									["sourceQuest"] = 9716,	-- Disturbance at Umbrafen Lake
 								}),
 								q(9720, {	-- Balance Must Be Preserved
 									["qg"] = 17841,	-- Ysiel Windsinger
 									["coord"] = { 78.4, 62.0, 102 },
 									["description"] = "You don't have to complete this quest for this criteria, but you need to at least pick it up to loot the item that starts 'Drain Schematics.'",
-									["sourceQuests"] = 9718,	-- As the Crow Flies
+									["sourceQuest"] = 9718,	-- As the Crow Flies
 								}),
 								i(24330, {	-- Drain Schematics
 									q(9731, {	-- Drain Schematics
 										["qg"] = 18340,	-- Steam Pump Overseer
-										["sourceQuests"] = 9718,	-- Balance Must Be Preserved
+										["sourceQuest"] = 9718,	-- Balance Must Be Preserved
 										["groups"] = {
 											i(27734),	-- Expedition Caster's Band
 											i(27735),	-- Pendant of the Marsh
@@ -377,11 +377,11 @@ _.Zones =
 								q(9724, {	-- Warning the Cenarion Circle
 									["qg"] = 17841,	-- Ysiel Windsinger
 									["coord"] = { 78.4, 62.0, 102 },
-									["sourceQuests"] = 9731,	-- Drain Schematics
+									["sourceQuest"] = 9731,	-- Drain Schematics
 								}),
 								q(9732, {	-- Return to the Marsh
 									["qg"] = 16885,	-- Amythiel Mistwalker
-									["sourceQuests"] = 9724,	-- Warning the Cenarion Circle
+									["sourceQuest"] = 9724,	-- Warning the Cenarion Circle
 									["groups"] = {
 										i(25524),	-- Cenarion Expedition Boots
 										i(25523),	-- Windcaller's Gauntlets
@@ -397,7 +397,7 @@ _.Zones =
 								q(9788, {	-- A Damp, Dark Place
 									["qg"] = 17956,	-- Ikeyen
 									["coord"] = { 80.4, 64.2, 102 },
-									["sourceQuests"] = 9747,	-- The Umbrafen Tribe
+									["sourceQuest"] = 9747,	-- The Umbrafen Tribe
 									["groups"] = {
 										i(25516),	-- Ikeyen's Boots
 										i(25514),	-- Ikeyen's Pauldrons
@@ -408,7 +408,7 @@ _.Zones =
 								q(10096, {	-- Saving the Sporeloks
 									["qg"] = 17909,	-- Lauranna Thar'well
 									["coord"] = { 80.3, 64.2, 102 },
-									["sourceQuests"] = 9747,	-- The Umbrafen Tribe
+									["sourceQuest"] = 9747,	-- The Umbrafen Tribe
 									["groups"] = {
 										i(31657),	-- Chemise of Rebirth
 										i(27715),	-- Circle's Stalwart Helmet
@@ -419,7 +419,7 @@ _.Zones =
 								q(9894, {	-- Safeguarding the Watchers
 									["qg"] = 18070,	-- Windcaller Blackhoof
 									["coord"] = { 80.4, 64.7, 102 },
-									["sourceQuests"] = 9747,	-- The Umbrafen Tribe
+									["sourceQuest"] = 9747,	-- The Umbrafen Tribe
 								}),
 							}),
 							crit(7, {	-- A Trip With the Sporelings
@@ -443,14 +443,14 @@ _.Zones =
 								q(9808, {	-- Glowcap Mushrooms
 									["qg"] = 17924,	-- Msshi'fn
 									["coord"] = { 19.7, 52.1, 102 },
-									["sourceQuests"] = 9919,	-- Sporeggar
+									["sourceQuest"] = 9919,	-- Sporeggar
 									["description"] = "Available from Neutral to Friendly with Sporeggar.",
 									["isBreadcrumb"] = true,  -- Not possible if you reached friendly or higher
 								}),
 								q(9806, {	-- Fertile Spores
 									["qg"] = 17925,	-- Gshaff
 									["coord"] = { 19.1, 49.4, 102 },
-									["sourceQuests"] = 9919,	-- Sporeggar
+									["sourceQuest"] = 9919,	-- Sporeggar
 									["description"] = "Invisible until you reach Neutral with Sporeggar.",
 								}),
 								q(50131, {	-- An Outside Perspective
@@ -466,14 +466,14 @@ _.Zones =
 								q(50130, {	-- A Friendly Gesture
 									["qg"] = 17924,	-- Msshi'fn
 									["coord"] = { 19.1, 49.4, 102 },
-									["sourceQuests"] = 50131,	-- An Outside Perspective
+									["sourceQuest"] = 50131,	-- An Outside Perspective
 									["description"] = "Available from Neutral to Honored with Sporeggar.",
 									["isBreadcrumb"] = true, -- Not possible if you reached honored or higher
 								}),
 								q(9726, {	-- Now That We're Friends...
 									["qg"] = 17856,	-- Gzhun'tt
 									["coord"] = { 19.5, 50.0, 102 },
-									["sourceQuests"] = 50130,	-- A Friendly Gesture
+									["sourceQuest"] = 50130,	-- A Friendly Gesture
 									["description"] = "Invisible until you reach Friendly with Sporeggar.",	
 									["groups"] = {
 										i(27750),	-- Hammer of the Sporelings
@@ -503,7 +503,7 @@ _.Zones =
 							q(9728, {	-- A Warm Welcome
 								["qg"] = 17858,	-- Warden Hamoot
 								["coord"] = { 79.1, 65.3, 102 },
-								["sourceQuests"] = 9778,	-- Warden Hamoot
+								["sourceQuest"] = 9778,	-- Warden Hamoot
 							}),
 							q(9895, {	-- The Dying Balance
 								["qg"] = 17834,	-- Lethyn Moonfire
@@ -562,11 +562,11 @@ _.Zones =
 							qa(10355, {	-- Withered Flesh
 								["qg"] = 18007,	-- Ruam
 								["coord"] = { 68.6, 48.8, 102 },
-								["sourceQuests"] = 9827,	-- Withered Basidium
+								["sourceQuest"] = 9827,	-- Withered Basidium
 							}),
 							qa(9792, {	-- A Message to Telaar
 								["qg"] = 18008,	-- Ikuti
-								["sourceQuests"] = 10116,	-- WANTED: Chieftain Mummaki
+								["sourceQuest"] = 10116,	-- WANTED: Chieftain Mummaki
 							}),
 							qa(10104, {	-- Concerns About Tuurem
 								["qg"] = 18008,	-- Ikuti

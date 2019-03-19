@@ -24,37 +24,37 @@ _.Zones =
 								q(10045, {	-- Material Components
 									["qg"] = 18141,	-- Greatmother Geyah
 									["coord"] = { 56.6, 34.2, 107 },
-									["sourceQuests"] = 10044,	-- A Visit With the Greatmother
+									["sourceQuest"] = 10044,	-- A Visit With the Greatmother
 								}),
 								q(10081, {	-- To Meet Mother Kashur
 									["qg"] = 18141,	-- Greatmother Geyah
 									["coord"] = { 56.6, 34.2, 107 },
-									["sourceQuests"] = 10045,	-- Material Components
+									["sourceQuest"] = 10045,	-- Material Components
 								}),
 								q(10082, {	-- The Agitated Ancestors
 									["qg"] = 18687,	-- Mother Kashur
 									["coord"] = { 26.0, 60.6, 107 },
-									["sourceQuests"] = 10081,	-- To Meet Mother Kashur
+									["sourceQuest"] = 10081,	-- To Meet Mother Kashur
 								}),
 								q(10085, {	-- A Visit With The Ancestors
 									["qg"] = 18687,	-- Mother Kashur
 									["coord"] = { 26.0, 60.6, 107 },
-									["sourceQuests"] = 10082,	-- The Agitated Ancestors
+									["sourceQuest"] = 10082,	-- The Agitated Ancestors
 								}),
 								q(10101, {	-- When Spirits Speak
 									["qg"] = 18687,	-- Mother Kashur
 									["coord"] = { 26.0, 60.6, 107 },
-									["sourceQuests"] = 10085,	-- A Visit With The Ancestors
+									["sourceQuest"] = 10085,	-- A Visit With The Ancestors
 								}),
 								q(10102, {	-- A Secret Revealed
 									["qg"] = 17545,	-- K'ure
 									["coord"] = { 35.4, 77.6, 107 },
-									["sourceQuests"] = 10101,	-- When Spirits Speak
+									["sourceQuest"] = 10101,	-- When Spirits Speak
 								}),
 								q(10167, {	-- Auchindoun...
 									["qg"] = 18481,	-- A'dal
 									["coord"] = { 53.9, 44.8, 111 },
-									["sourceQuests"] = 10102,	-- A Secret Revealed
+									["sourceQuest"] = 10102,	-- A Secret Revealed
 								}),
 								q(10168, {	-- What the Soul Sees
 									["qg"] = 19412,	-- D'ore
@@ -62,22 +62,22 @@ _.Zones =
 										{ 34.3, 65.6, 108 },
 										{ 73.8, 57.0, 257 },
 									},
-									["sourceQuests"] = 10167,	-- Auchindoun...
+									["sourceQuest"] = 10167,	-- Auchindoun...
 								}),
 								q(10170, {	-- Return to the Greatmother
 									["qg"] = 18687,	-- Mother Kashur
 									["coord"] = { 26.0, 60.6, 107 },
-									["sourceQuests"] = 10168,	-- What the Soul Sees
+									["sourceQuest"] = 10168,	-- What the Soul Sees
 								}),
 								q(10171, {	-- The Inconsolable Chieftain
 									["qg"] = 18141,	-- Greatmother Geyah
 									["coord"] = { 56.6, 34.2, 107 },
-									["sourceQuests"] = 10168,	-- Return to the Greatmother
+									["sourceQuest"] = 10168,	-- Return to the Greatmother
 								}),
 								q(10172, {	-- There Is No Hope
 									["qg"] = 18063,	-- Garrosh <Son of Hellscream>
 									["coord"] = { 26.0, 60.6, 107 },
-									["sourceQuests"] = 10171,	-- The Inconsolable Chieftain
+									["sourceQuest"] = 10171,	-- The Inconsolable Chieftain
 									["groups"] = {
 										i(28168),	-- Insignia of the Mag'hari Hero
 										i(28173),	-- Mag'hari Huntsman's Leggings
@@ -95,22 +95,22 @@ _.Zones =
 								q(9967, {	-- The Ring of Blood: The Blue Brothers
 									["qg"] = 18471,	-- Gurgthock
 									["coord"] = { 42.8, 20.7, 107 },
-									["sourceQuests"] = 9962,	-- The Ring of Blood: Brokentoe
+									["sourceQuest"] = 9962,	-- The Ring of Blood: Brokentoe
 								}),
 								q(9970, {	-- The Ring of Blood: Rokdar the Sundered Lord
 									["qg"] = 18471,	-- Gurgthock
 									["coord"] = { 42.8, 20.7, 107 },
-									["sourceQuests"] = 9967,	-- The Ring of Blood: The Blue Brothers
+									["sourceQuest"] = 9967,	-- The Ring of Blood: The Blue Brothers
 								}),
 								q(9972, {	-- The Ring of Blood: Skra'gath
 									["qg"] = 18471,	-- Gurgthock
 									["coord"] = { 42.8, 20.7, 107 },
-									["sourceQuests"] = 9970,	-- The Ring of Blood: Rokdar the Sundered Lord
+									["sourceQuest"] = 9970,	-- The Ring of Blood: Rokdar the Sundered Lord
 								}),
 								q(9973, {	-- The Ring of Blood: The Warmaul Champion
 									["qg"] = 18471,	-- Gurgthock
 									["coord"] = { 42.8, 20.7, 107 },
-									["sourceQuests"] = 9972,	-- The Ring of Blood: Skra'gath
+									["sourceQuest"] = 9972,	-- The Ring of Blood: Skra'gath
 								}),
 								q(9977, {	-- The Ring of Blood: The Final Challenge
 									["qg"] = 18471,	-- Gurgthock
@@ -135,27 +135,27 @@ _.Zones =
 								q(9818, {	-- The Underneath
 									["qg"] = 18071,	-- Elementalist Untrag <The Earthen Ring>
 									["coord"] = { 60.6, 22,6, 107 },
-									["sourceQuests"] = 9870,	-- The Throne of the Elements
+									["sourceQuest"] = 9870,	-- The Throne of the Elements
 								}),
 								q(9819, {	-- The Tortured Earth
 									["qg"] = 18099,	-- Gordawg <Fury of Earth>
 									["coord"] = { 60.0, 22.0, 107 },
-									["sourceQuests"] = 9818,	-- The Underneath
+									["sourceQuest"] = 9818,	-- The Underneath
 								}),
 								q(9821, {	-- Eating Damnation
 									["qg"] = 18099,	-- Gordawg <Fury of Earth>
 									["coord"] = { 60.0, 22.0, 107 },
-									["sourceQuests"] = 9819,	-- The Tortured Earth
+									["sourceQuest"] = 9819,	-- The Tortured Earth
 								}),
 								q(9849, {	-- Shattering the Veil
 									["qg"] = 18099,	-- Gordawg <Fury of Earth>
 									["coord"] = { 60.0, 22.0, 107 },
-									["sourceQuests"] = 9821,	-- Eating Damnation
+									["sourceQuest"] = 9821,	-- Eating Damnation
 								}),
 								q(9853, {	-- Gurok the Usurper
 									["coord"] = { 60.0, 22.0, 107 },
 									["qg"] = 18099,	-- Gordawg <Fury of Earth>
-									["sourceQuests"] = 9849,	-- Shattering the Veil
+									["sourceQuest"] = 9849,	-- Shattering the Veil
 									["groups"] =	{
 										i(25564),	-- Earthen Mark of Health
 										i(25563),	-- Earthen Mark of Power
@@ -165,22 +165,22 @@ _.Zones =
 								q(9800, {	-- A Rare Bean
 									["qg"] = 18073,	-- Elementalist Lo'ap <The Earthen Ring>
 									["coord"] = { 60.8, 22.4, 107 },
-									["sourceQuests"] = 9870,	-- The Throne of the Elements
+									["sourceQuest"] = 9870,	-- The Throne of the Elements
 								}),
 								q(9804, {	-- Agitated Spirits of Skysong
 									["qg"] = 18073,	-- Elementalist Lo'ap <The Earthen Ring>
 									["coord"] = { 60.8, 22.4, 107 },
-									["sourceQuests"] = 9800,	-- A Rare Bean
+									["sourceQuest"] = 9800,	-- A Rare Bean
 								}),
 								q(9805, {	-- Blessing of Incineratus
 									["qg"] = 18073,	-- Elementalist Lo'ap <The Earthen Ring>
 									["coord"] = { 60.8, 22.4, 107 },	
-									["sourceQuests"] = 9804,	-- Agitated Spirits of Skysong
+									["sourceQuest"] = 9804,	-- Agitated Spirits of Skysong
 								}),
 								q(9810, {	-- The Spirit Polluted
 									["qg"] = 18073,	-- Elementalist Lo'ap <The Earthen Ring>
 									["coord"] = { 60.8, 22.4, 107 },
-									["sourceQuests"] = 9805,	-- Blessing of Incineratus
+									["sourceQuest"] = 9805,	-- Blessing of Incineratus
 									["groups"] = {
 										i(25558),	-- Ango'rosh Souleater's Cowl
 										i(25556),	-- Oversized Ogre Hauberk
@@ -190,7 +190,7 @@ _.Zones =
 								q(9815, {	-- Muck Diving
 									["qg"] = 18073,	-- Elementalist Lo'ap <The Earthen Ring>
 									["coord"] = { 60.8, 22.4, 107 },
-									["sourceQuests"] = 9870,	-- The Throne of the Elements
+									["sourceQuest"] = 9870,	-- The Throne of the Elements
 									["groups"] = {
 										i(25560),	-- Lo'ap's Muck Diving Pads
 										i(25559),	-- Lo'ap's Tunic of Muck Diving
@@ -209,7 +209,7 @@ _.Zones =
 								q(9862, {	-- Murkblood Corrupters
 									["qg"] = 18074,	-- Elementalist Morgh <The Earthen Ring>
 									["coord"] = { 60.6, 22.4, 107 },
-									["sourceQuests"] = 9861,	-- The Howling Wind
+									["sourceQuest"] = 9861,	-- The Howling Wind
 									["groups"] = {
 										i(25567),	-- Cord of the Ring
 										i(25566),	-- Judicator's Gauntlets
@@ -229,27 +229,27 @@ _.Zones =
 								qh(9889, {	-- Don't Kill the Fat One
 									["qg"] = 18273,	-- Kilrath
 									["coord"] = { 19.6, 60.8, 108 },
-									["sourceQuests"] = 9888,	-- The Impotent Leader
+									["sourceQuest"] = 9888,	-- The Impotent Leader
 								}),
 								qh(9890, {	-- Success!
 									["qg"] = 18262,	-- Unkor the Ruthless
 									["coord"] = { 20.0, 63.3, 108 },
-									["sourceQuests"] = 9889,	-- Don't Kill the Fat One
+									["sourceQuest"] = 9889,	-- Don't Kill the Fat One
 								}),
 								qh(9891, {	-- Because Kilrath is a Coward
 									["qg"] = 18273,	-- Kilrath
 									["coord"] = { 19.6, 60.8, 108 },
-									["sourceQuests"] = 9890,	-- Success!
+									["sourceQuest"] = 9890,	-- Success!
 								}),
 								qh(9910, {	-- Standards and Practices
 									["qg"] = 18300,	-- Elkay'gan the Mystic
 									["coord"] = { 55.6, 37.6, 107 },
-									["sourceQuests"] = 9891,	-- Because Kilrath is a Coward
+									["sourceQuest"] = 9891,	-- Because Kilrath is a Coward
 								}),
 								qh(9916, {	-- Bleeding Hollow Supply Crates
 									["qg"] = 18300,	-- Elkay'gan the Mystic
 									["coord"] = { 55.6, 37.6, 107 },
-									["sourceQuests"] = 9910,	-- Standards and Practices
+									["sourceQuest"] = 9910,	-- Standards and Practices
 									["groups"] = {
 										i(25630),	-- Ogre Basher's Slippers
 										i(25629),	-- Ogre Handler's Shooter
@@ -259,7 +259,7 @@ _.Zones =
 								qh(9906, {	-- Message in a Battle
 									["qg"] = 18106,	-- Jorin Deadeye
 									["coord"] = { 55.6, 37.6, 107 },
-									["sourceQuests"] = 9891 ,	-- Because Kilrath is a Coward
+									["sourceQuest"] = 9891 ,	-- Because Kilrath is a Coward
 								}),
 								qh(9907, {	-- An Audacious Advance
 									["groups"] = {
@@ -269,22 +269,22 @@ _.Zones =
 									},
 									["qg"] = 18106,	-- Jorin Deadeye
 									["coord"] = { 55.6, 37.6, 107 },
-									["sourceQuests"] = 9906 ,	-- Message in a Battle
+									["sourceQuest"] = 9906 ,	-- Message in a Battle
 								}),
 								qh(10107, {	-- Diplomatic Measures (Horde Version)
 									["qg"] = 18106,	-- Jorin Deadeye
 									["coord"] = { 55.6, 37.6, 107 },
-									["sourceQuests"] = 9906,	-- An Audacious Advance
+									["sourceQuest"] = 9906,	-- An Audacious Advance
 								}),
 								q(9928, {	-- Armaments for Deception
 									["qg"] = 18261,	-- Lantresor of the Blade
 									["coord"] = { 73.8, 62.6, 107 },
-									["sourceQuests"] = 10107,	-- Diplomatic Measures (Horde Version)´
+									["sourceQuest"] = 10107,	-- Diplomatic Measures (Horde Version)´
 								}),
 								q(9927, {	-- Ruthless Cunning
 									["qg"] = 18261,	-- Lantresor of the Blade
 									["coord"] = { 73.8, 62.6, 107 },
-									["sourceQuests"] = 10107,	-- Diplomatic Measures (Horde Version)
+									["sourceQuest"] = 10107,	-- Diplomatic Measures (Horde Version)
 								}),
 								q(9932, {	-- Body of Evidence
 									["qg"] = 18261,	-- Lantresor of the Blade
@@ -342,12 +342,12 @@ _.Zones =
 								q(9945, {	-- War on the Warmaul
 									["qg"] = 18414,	-- Elder Yorley
 									["coord"] = { 32.2, 36.2, 107 },
-									["sourceQuests"] = 9944,	-- Missing Mag'hari Procession
+									["sourceQuest"] = 9944,	-- Missing Mag'hari Procession
 								}),
 								q(9946, {	-- Cho'war the Pillager
 									["qg"] = 18414,	-- Elder Yorley
 									["coord"] = { 32.2, 36.2, 107 },
-									["sourceQuests"] = 9945,	-- War on the Warmaul
+									["sourceQuest"] = 9945,	-- War on the Warmaul
 									["groups"] = {
 										i(25775),	-- Ogre Slayer's Band
 										i(25776),	-- Ogre Slayer's Pendant
@@ -371,12 +371,12 @@ _.Zones =
 								q(9865, {	-- Once Were Warriors
 									["qg"] = 18229,	-- Saurfang the Younger
 									["coord"] = { 32.2, 36.2, 107 },
-									["sourceQuests"] = 9864,	-- The Missing War Party
+									["sourceQuest"] = 9864,	-- The Missing War Party
 								}),
 								q(9866, {	-- He Will Walk The Earth...
 									["qg"] = 18229,	-- Saurfang the Younger
 									["coord"] = { 32.2, 36.2, 107 },
-									["sourceQuests"] = 9865,	-- Once Were Warriors
+									["sourceQuest"] = 9865,	-- Once Were Warriors
 									["groups"] = {
 										i(25574),	-- Greenkeeper's Pantaloons
 										i(25576),	-- Smuggler's Mitts
@@ -397,37 +397,37 @@ _.Zones =
 								q(9991, {	-- Survey the Land
 									["qg"] = 18417,	-- Altruis the Sufferer
 									["coord"] = { 27.4, 42.0, 107 },
-									["sourceQuests"] = 9983,	-- He Called Himself Altruis...
+									["sourceQuest"] = 9983,	-- He Called Himself Altruis...
 								}),
 								q(9999, {	-- Buying Time
 									["qg"] = 18417,	-- Altruis the Sufferer
 									["coord"] = { 27.4, 42.0, 107 },
-									["sourceQuests"] = 9991,	-- Survey the Land
+									["sourceQuest"] = 9991,	-- Survey the Land
 								}),
 								q(10001, {	-- The Master Planner
 									["qg"] = 18417,	-- Altruis the Sufferer
 									["coord"] = { 27.4, 42.0, 107 },
-									["sourceQuests"] = 9999,	-- Buying Time
+									["sourceQuest"] = 9999,	-- Buying Time
 								}),
 								q(10004, {	-- Patience and Understanding
 									["qg"] = 18417,	-- Altruis the Sufferer
 									["coord"] = { 27.4, 42.0, 107 },
-									["sourceQuests"] = 10001,	-- The Master Planner
+									["sourceQuest"] = 10001,	-- The Master Planner
 								}),
 								q(10009, {	-- Crackin' Some Skulls
 									["qg"] = 18584,	-- Sal'salabim
 									["coord"] = { 77.2, 34.8, 111 },
-									["sourceQuests"] = 10004,	-- Patience and Understanding
+									["sourceQuest"] = 10004,	-- Patience and Understanding
 								}),
 								q(10010, {	-- It's Just That Easy?
 									["qg"] = 18584,	-- Sal'salabim
 									["coord"] = { 77.2, 34.8, 111 },
-									["sourceQuests"] = 10009,	-- Crackin' Some Skulls
+									["sourceQuest"] = 10009,	-- Crackin' Some Skulls
 								}),
 								q(10011, {	-- Forge Camp: Annihilated
 									["qg"] = 18417,	-- Altruis the Sufferer
 									["coord"] = { 27.4, 42.0, 107 },
-									["sourceQuests"] = 10010,	-- It's Just That Easy?
+									["sourceQuest"] = 10010,	-- It's Just That Easy?
 									["groups"] = {
 										i(25819),	-- Breastplate of the Warbringer
 										i(25821),	-- Leggings of Unending Assault
@@ -468,17 +468,17 @@ _.Zones =
 									q(9854, {	-- Windroc Mastery
 										["qg"] = 18200,	-- Shado 'Fitz' Farstrider
 										["coord"] = { 71.6, 40.5, 107 },
-										["sourceQuests"] = 10114,	-- The Nesingwary Safari
+										["sourceQuest"] = 10114,	-- The Nesingwary Safari
 									}),
 									q(9855, {	-- Windroc Mastery
 										["qg"] = 18200,	-- Shado 'Fitz' Farstrider
 										["coord"] = { 71.6, 40.5, 107 },
-										["sourceQuests"] = 9854,	-- Windroc Mastery
+										["sourceQuest"] = 9854,	-- Windroc Mastery
 									}),
 									q(9856, {	-- Windroc Mastery
 										["qg"] = 18200,	-- Shado 'Fitz' Farstrider
 										["coord"] = { 71.6, 40.5, 107 },
-										["sourceQuests"] = 9855,	-- Windroc Mastery
+										["sourceQuest"] = 9855,	-- Windroc Mastery
 										["groups"] = {
 											i(25594),	-- Windroc Boots
 											i(25593),	-- Windroc Greaves
@@ -492,12 +492,12 @@ _.Zones =
 									q(9850, {	-- Clefthoof Mastery
 										["qg"] = 18180,	-- Hemet Nesingwary
 										["coord"] = { 71.5, 40.8, 107 },
-										["sourceQuests"] = 9855,	-- Clefthoof Mastery
+										["sourceQuest"] = 9855,	-- Clefthoof Mastery
 									}),
 									q(9851, {	-- Clefthoof Mastery
 										["qg"] = 18180,	-- Hemet Nesingwary
 										["coord"] = { 71.5, 40.8, 107 },
-										["sourceQuests"] = 9850,	-- Clefthoof Mastery
+										["sourceQuest"] = 9850,	-- Clefthoof Mastery
 										["groups"] = {
 											i(25591),	-- Clefthoof Gloves
 											i(25589),	-- Clefthoof Helm
@@ -511,12 +511,12 @@ _.Zones =
 									q(9858, {	-- Talbuk Mastery
 										["qg"] = 18218,	-- Harold Lane
 										["coord"] = { 71.4, 40.6, 107 },
-										["sourceQuests"] = 9857,	-- Talbuk Mastery
+										["sourceQuest"] = 9857,	-- Talbuk Mastery
 									}),
 									q(9859, {	-- Talbuk Mastery
 										["qg"] = 18218,	-- Harold Lane
 										["coord"] = { 71.4, 40.6, 107 },
-										["sourceQuests"] = 9858,	-- Talbuk Mastery
+										["sourceQuest"] = 9858,	-- Talbuk Mastery
 										["groups"] = {
 											i(25636),	-- Talbuk Cape
 											i(25545),	-- Talbuk Dirk
@@ -550,7 +550,7 @@ _.Zones =
 								q(9900, {	-- Gava'xi
 									["qg"] = 18276,	-- Zerid
 									["coord"] = { 30.8, 58.1, 107 },
-									["sourceQuests"] = 9913,	-- The Consortium Needs You!
+									["sourceQuest"] = 9913,	-- The Consortium Needs You!
 									["groups"] = {
 										i(25637),	-- Ethereal Sash
 										i(25634),	-- Oshu'gun Relic
@@ -572,7 +572,7 @@ _.Zones =
 								qa(9924, {	-- Corki's Gone Missing Again
 									["qg"] = 18183,	-- Arechron
 									["coord"] = { 55.4, 68.8, 107 },
-									["sourceQuests"] = 9923,	-- HELP!
+									["sourceQuest"] = 9923,	-- HELP!
 									["groups"] = {
 										i(25631),	-- Boots of the Specialist
 										i(25633),	-- Uniting Charm
@@ -582,12 +582,12 @@ _.Zones =
 								qa(9954, {	-- Corki's Ransom
 									["qg"] = 18183,	-- Arechron
 									["coord"] = { 55.4, 68.8, 107 },
-									["sourceQuests"] = 9924,	-- Corki's Gone Missing Again
+									["sourceQuest"] = 9924,	-- Corki's Gone Missing Again
 								}),
 								qa(9955,  { 	-- Cho'war the Pillager
 									["qg"] = 18445,	-- Corki
 									["coord"] = { 31.4, 44.0, 107 },
-									["sourceQuests"] = 9954,	-- Corki's Ransom
+									["sourceQuest"] = 9954,	-- Corki's Ransom
 									["groups"] = {
 										i(25775),	-- Ogre Slayer's Band
 										i(25776),	-- Ogre Slayer's Pendant
@@ -606,27 +606,27 @@ _.Zones =
 								q(9967, {	-- The Ring of Blood: The Blue Brothers
 									["qg"] = 18471,	-- Gurgthock
 									["coord"] = { 42.8, 20.7, 107 },
-									["sourceQuests"] = 9962,	-- The Ring of Blood: Brokentoe
+									["sourceQuest"] = 9962,	-- The Ring of Blood: Brokentoe
 								}),
 								q(9970, {	-- The Ring of Blood: Rokdar the Sundered Lord
 									["qg"] = 18471,	-- Gurgthock
 									["coord"] = { 42.8, 20.7, 107 },
-									["sourceQuests"] = 9967,	-- The Ring of Blood: The Blue Brothers
+									["sourceQuest"] = 9967,	-- The Ring of Blood: The Blue Brothers
 								}),
 								q(9972, {	-- The Ring of Blood: Skra'gath
 									["qg"] = 18471,	-- Gurgthock
 									["coord"] = { 42.8, 20.7, 107 },
-									["sourceQuests"] = 9970,	-- The Ring of Blood: Rokdar the Sundered Lord
+									["sourceQuest"] = 9970,	-- The Ring of Blood: Rokdar the Sundered Lord
 								}),
 								q(9973, {	-- The Ring of Blood: The Warmaul Champion
 									["qg"] = 18471,	-- Gurgthock
 									["coord"] = { 42.8, 20.7, 107 },
-									["sourceQuests"] = 9972,	-- The Ring of Blood: Skra'gath
+									["sourceQuest"] = 9972,	-- The Ring of Blood: Skra'gath
 								}),
 								q(9977, {	-- The Ring of Blood: The Final Challenge
 									["qg"] = 18471,	-- Gurgthock
 									["coord"] = { 42.8, 20.7, 107 },
-									["sourceQuests"] = 9973,	-- The Ring of Blood: The Warmaul Champion
+									["sourceQuest"] = 9973,	-- The Ring of Blood: The Warmaul Champion
 									["groups"] = {
 										i(25760),	-- Battle Mage's Baton
 										i(25763),	-- Ceremonial Warmaul Blood-Blade
@@ -645,27 +645,27 @@ _.Zones =
 								q(9818, {	-- The Underneath
 									["qg"] = 18071,	-- Elementalist Untrag <The Earthen Ring>
 									["coord"] = { 60.6, 22,6, 107 },
-									["sourceQuests"] = 9870,	-- The Throne of the Elements
+									["sourceQuest"] = 9870,	-- The Throne of the Elements
 								}),
 								q(9819, {	-- The Tortured Earth
 									["qg"] = 18099,	-- Gordawg <Fury of Earth>
 									["coord"] = { 60.0, 22.0, 107 },
-									["sourceQuests"] = 9818,	-- The Underneath
+									["sourceQuest"] = 9818,	-- The Underneath
 								}),
 								q(9821, {	-- Eating Damnation
 									["qg"] = 18099,	-- Gordawg <Fury of Earth>
 									["coord"] = { 60.0, 22.0, 107 },
-									["sourceQuests"] = 9819,	-- The Tortured Earth
+									["sourceQuest"] = 9819,	-- The Tortured Earth
 								}),
 								q(9849, {	-- Shattering the Veil
 									["qg"] = 18099,	-- Gordawg <Fury of Earth>
 									["coord"] = { 60.0, 22.0, 107 },
-									["sourceQuests"] = 9821,	-- Eating Damnation
+									["sourceQuest"] = 9821,	-- Eating Damnation
 								}),
 								q(9853, {	-- Gurok the Usurper
 									["coord"] = { 60.0, 22.0, 107 },
 									["qg"] = 18099,	-- Gordawg <Fury of Earth>
-									["sourceQuests"] = 9849,	-- Shattering the Veil
+									["sourceQuest"] = 9849,	-- Shattering the Veil
 									["groups"] =	{
 										i(25564),	-- Earthen Mark of Health
 										i(25563),	-- Earthen Mark of Power
@@ -675,22 +675,22 @@ _.Zones =
 								q(9800, {	-- A Rare Bean
 									["qg"] = 18073,	-- Elementalist Lo'ap <The Earthen Ring>
 									["coord"] = { 60.8, 22.4, 107 },
-									["sourceQuests"] = 9870,	-- The Throne of the Elements
+									["sourceQuest"] = 9870,	-- The Throne of the Elements
 								}),
 								q(9804, {	-- Agitated Spirits of Skysong
 									["qg"] = 18073,	-- Elementalist Lo'ap <The Earthen Ring>
 									["coord"] = { 60.8, 22.4, 107 },
-									["sourceQuests"] = 9800,	-- A Rare Bean
+									["sourceQuest"] = 9800,	-- A Rare Bean
 								}),
 								q(9805, {	-- Blessing of Incineratus
 									["qg"] = 18073,	-- Elementalist Lo'ap <The Earthen Ring>
 									["coord"] = { 60.8, 22.4, 107 },	
-									["sourceQuests"] = 9804,	-- Agitated Spirits of Skysong
+									["sourceQuest"] = 9804,	-- Agitated Spirits of Skysong
 								}),
 								q(9810, {	-- The Spirit Polluted
 									["qg"] = 18073,	-- Elementalist Lo'ap <The Earthen Ring>
 									["coord"] = { 60.8, 22.4, 107 },
-									["sourceQuests"] = 9805,	-- Blessing of Incineratus
+									["sourceQuest"] = 9805,	-- Blessing of Incineratus
 									["groups"] = {
 										i(25558),	-- Ango'rosh Souleater's Cowl
 										i(25556),	-- Oversized Ogre Hauberk
@@ -700,7 +700,7 @@ _.Zones =
 								q(9815, {	-- Muck Diving
 									["qg"] = 18073,	-- Elementalist Lo'ap <The Earthen Ring>
 									["coord"] = { 60.8, 22.4, 107 },
-									["sourceQuests"] = 9870,	-- The Throne of the Elements
+									["sourceQuest"] = 9870,	-- The Throne of the Elements
 									["groups"] = {
 										i(25560),	-- Lo'ap's Muck Diving Pads
 										i(25559),	-- Lo'ap's Tunic of Muck Diving
@@ -719,7 +719,7 @@ _.Zones =
 								q(9862, {	-- Murkblood Corrupters
 									["qg"] = 18074,	-- Elementalist Morgh <The Earthen Ring>
 									["coord"] = { 60.6, 22.4, 107 },
-									["sourceQuests"] = 9861,	-- The Howling Wind
+									["sourceQuest"] = 9861,	-- The Howling Wind
 									["groups"] = {
 										i(25567),	-- Cord of the Ring
 										i(25566),	-- Judicator's Gauntlets
@@ -735,22 +735,22 @@ _.Zones =
 								qa(9918, {	-- Not On My Watch!
 									["qg"] = 18353,	-- Huntress Bintook
 									["coord"] = { 55.0, 70.6, 107 },
-									["sourceQuests"] = 9917,	-- Do My Eyes Deceive Me
+									["sourceQuest"] = 9917,	-- Do My Eyes Deceive Me
 								}),
 								qa(9920, {	-- Mo'mor the Breaker
 									["qg"] = 18353,	-- Huntress Bintook
 									["coord"] = { 55.0, 70.6, 107 },
-									["sourceQuests"] = 9918,	-- Not On My Watch!
+									["sourceQuest"] = 9918,	-- Not On My Watch!
 								}),
 								qa(9921, {	-- The Ruins of Burning Blade
 									["qg"] = 18223,	-- Mo'mor the Breaker
 									["coord"] = { 54.6, 72.2, 107 },
-									["sourceQuests"] = 9920,	-- Mo'mor the Breaker
+									["sourceQuest"] = 9920,	-- Mo'mor the Breaker
 								}),
 								qa(9922, {	-- The Twin Clefts of Nagrand
 									["qg"] = 18223,	-- Mo'mor the Breaker
 									["coord"] = { 54.6, 72.2, 107 },
-									["sourceQuests"] = 9921,	-- The Ruins of Burning Blade
+									["sourceQuest"] = 9921,	-- The Ruins of Burning Blade
 									["groups"] = {
 										i(25623),	-- Bracers of the Battle Cleric
 										i(25624),	-- King's Bulwark
@@ -760,17 +760,17 @@ _.Zones =
 								qa(10108, {	-- Diplomatic Measures (Alliance Version)
 									["qg"] = 18223,	-- Mo'mor the Breaker
 									["coord"] = { 54.6, 72.2, 107 },
-									["sourceQuests"] = 9922,	-- The Twin Clefts of Nagrand
+									["sourceQuest"] = 9922,	-- The Twin Clefts of Nagrand
 								}),
 								q(9928, {	-- Armaments for Deception
 									["qg"] = 18261,	-- Lantresor of the Blade
 									["coord"] = { 73.8, 62.6, 107 },
-									["sourceQuests"] = 10108,	-- Diplomatic Measures (Alliance Version)
+									["sourceQuest"] = 10108,	-- Diplomatic Measures (Alliance Version)
 								}),
 								q(9927, {	-- Ruthless Cunning
 									["qg"] = 18261,	-- Lantresor of the Blade
 									["coord"] = { 73.8, 62.6, 107 },
-									["sourceQuests"] = 10108,	-- Diplomatic Measures (Alliance Version)
+									["sourceQuest"] = 10108,	-- Diplomatic Measures (Alliance Version)
 								}),
 								q(9932, {	-- Body of Evidence
 									["qg"] = 18261,	-- Lantresor of the Blade
@@ -806,7 +806,7 @@ _.Zones =
 								qa(9878,  { 	-- Solving the Problem
 									["qg"] = 18224,	-- Poli'lukluk the Wiser
 									["coord"] = { 54.4, 72.2, 107 },
-									["sourceQuests"] = 9918,	-- Not On My Watch!
+									["sourceQuest"] = 9918,	-- Not On My Watch!
 									["groups"] = {
 										i(25578),	-- Caustic Feeler
 										i(25579),	-- Dark Shaman's Cover
@@ -843,7 +843,7 @@ _.Zones =
 								qa(9873,  { 	-- Ortor My Old Friend...
 									["qg"] = 18183,	-- Arechron
 									["coord"] = { 55.4, 68.8, 107 },
-									["sourceQuests"] = 9871,	-- Murkblood Invaders!
+									["sourceQuest"] = 9871,	-- Murkblood Invaders!
 									["groups"] = {
 										i(25583),	-- Eighty Silver Links
 										i(25585),	-- Murkblood Avenger's Legplates
@@ -860,22 +860,22 @@ _.Zones =
 								q(9991, {	-- Survey the Land
 									["qg"] = 18417,	-- Altruis the Sufferer
 									["coord"] = { 27.4, 42.0, 107 },
-									["sourceQuests"] = 9982,	-- He Called Himself Altruis...
+									["sourceQuest"] = 9982,	-- He Called Himself Altruis...
 								}),
 								q(9999, {	-- Buying Time
 									["qg"] = 18417,	-- Altruis the Sufferer
 									["coord"] = { 27.4, 42.0, 107 },
-									["sourceQuests"] = 9991,	-- Survey the Land
+									["sourceQuest"] = 9991,	-- Survey the Land
 								}),
 								q(10001, {	-- The Master Planner
 									["qg"] = 18417,	-- Altruis the Sufferer
 									["coord"] = { 27.4, 42.0, 107 },
-									["sourceQuests"] = 9999,	-- Buying Time
+									["sourceQuest"] = 9999,	-- Buying Time
 								}),
 								q(10004, {	-- Patience and Understanding
 									["qg"] = 18417,	-- Altruis the Sufferer
 									["coord"] = { 27.4, 42.0, 107 },
-									["sourceQuests"] = 10001,	-- The Master Planner
+									["sourceQuest"] = 10001,	-- The Master Planner
 								}),
 								o(182393, {	--	Telaar Bulletin Board
 									["groups"] = {
@@ -903,17 +903,17 @@ _.Zones =
 								q(10009, {	-- Crackin' Some Skulls
 									["qg"] = 18584,	-- Sal'salabim
 									["coord"] = { 77.2, 34.8, 111 },
-									["sourceQuests"] = 10004,	-- Patience and Understanding
+									["sourceQuest"] = 10004,	-- Patience and Understanding
 								}),
 								q(10010, {	-- It's Just That Easy?
 									["qg"] = 18584,	-- Sal'salabim
 									["coord"] = { 77.2, 34.8, 111 },
-									["sourceQuests"] = 10009,	-- Crackin' Some Skulls
+									["sourceQuest"] = 10009,	-- Crackin' Some Skulls
 								}),
 								q(10011, {	-- Forge Camp: Annihilated
 									["qg"] = 18417,	-- Altruis the Sufferer
 									["coord"] = { 27.4, 42.0, 107 },
-									["sourceQuests"] = 10010,	-- It's Just That Easy?
+									["sourceQuest"] = 10010,	-- It's Just That Easy?
 									["groups"] = {
 										i(25819),	-- Breastplate of the Warbringer
 										i(25821),	-- Leggings of Unending Assault
@@ -954,17 +954,17 @@ _.Zones =
 									q(9854, {	-- Windroc Mastery
 										["qg"] = 18200,	-- Shado 'Fitz' Farstrider
 										["coord"] = { 71.6, 40.5, 107 },
-										["sourceQuests"] = 10113,	-- The Nesingwary Safari
+										["sourceQuest"] = 10113,	-- The Nesingwary Safari
 									}),
 									q(9855, {	-- Windroc Mastery
 										["qg"] = 18200,	-- Shado 'Fitz' Farstrider
 										["coord"] = { 71.6, 40.5, 107 },
-										["sourceQuests"] = 9854,	-- Windroc Mastery
+										["sourceQuest"] = 9854,	-- Windroc Mastery
 									}),
 									q(9856, {	-- Windroc Mastery
 										["qg"] = 18200,	-- Shado 'Fitz' Farstrider
 										["coord"] = { 71.6, 40.5, 107 },
-										["sourceQuests"] = 9855,	-- Windroc Mastery
+										["sourceQuest"] = 9855,	-- Windroc Mastery
 										["groups"] = {
 											i(25594),	-- Windroc Boots
 											i(25593),	-- Windroc Greaves
@@ -978,12 +978,12 @@ _.Zones =
 									q(9850, {	-- Clefthoof Mastery
 										["qg"] = 18180,	-- Hemet Nesingwary
 										["coord"] = { 71.5, 40.8, 107 },
-										["sourceQuests"] = 9855,	-- Clefthoof Mastery
+										["sourceQuest"] = 9855,	-- Clefthoof Mastery
 									}),
 									q(9851, {	-- Clefthoof Mastery
 										["qg"] = 18180,	-- Hemet Nesingwary
 										["coord"] = { 71.5, 40.8, 107 },
-										["sourceQuests"] = 9850,	-- Clefthoof Mastery
+										["sourceQuest"] = 9850,	-- Clefthoof Mastery
 										["groups"] = {
 											i(25591),	-- Clefthoof Gloves
 											i(25589),	-- Clefthoof Helm
@@ -997,12 +997,12 @@ _.Zones =
 									q(9858, {	-- Talbuk Mastery
 										["qg"] = 18218,	-- Harold Lane
 										["coord"] = { 71.4, 40.6, 107 },
-										["sourceQuests"] = 9857,	-- Talbuk Mastery
+										["sourceQuest"] = 9857,	-- Talbuk Mastery
 									}),
 									q(9859, {	-- Talbuk Mastery
 										["qg"] = 18218,	-- Harold Lane
 										["coord"] = { 71.4, 40.6, 107 },
-										["sourceQuests"] = 9858,	-- Talbuk Mastery
+										["sourceQuest"] = 9858,	-- Talbuk Mastery
 										["groups"] = {
 											i(25636),	-- Talbuk Cape
 											i(25545),	-- Talbuk Dirk
@@ -1036,7 +1036,7 @@ _.Zones =
 								q(9900, {	-- Gava'xi
 									["qg"] = 18276,	-- Zerid
 									["coord"] = { 30.8, 58.1, 107 },
-									["sourceQuests"] = 9913,	-- The Consortium Needs You!
+									["sourceQuest"] = 9913,	-- The Consortium Needs You!
 									["groups"] = {
 										i(25637),	-- Ethereal Sash
 										i(25634),	-- Oshu'gun Relic
@@ -1084,11 +1084,11 @@ _.Zones =
 										}),
 										q(10649, {	-- The Book of Fel Names
 											["qg"] = 18417,	-- Altruis
-											["sourceQuests"] = 10646,	-- Illidan's Pupil
+											["sourceQuest"] = 10646,	-- Illidan's Pupil
 										}),
 										q(10650, {	-- Return to the Aldor
 											["qg"] = 18417,	-- Altruis the Sufferer
-											["sourceQuests"] = 10649,	-- The Book of Fel Names
+											["sourceQuest"] = 10649,	-- The Book of Fel Names
 										}),
 									}),
 								},
@@ -1133,12 +1133,12 @@ _.Zones =
 										q(10649, {	-- The Book of Fel Names
 											["qg"] = 18417,	-- Altruis
 											["coord"] = { 27.3, 43.0, 107 },
-											["sourceQuests"] = 10646,	-- Illidan's Pupil
+											["sourceQuest"] = 10646,	-- Illidan's Pupil
 										}),
 										q(10691, {	-- Return to the Scryers
 											["qg"] = 18417,	-- Altruis
 											["coord"] = { 27.3, 43.0, 107 },
-											["sourceQuests"] = 10649,	-- The Book of Fel Names
+											["sourceQuest"] = 10649,	-- The Book of Fel Names
 										}),
 									}),
 								},
@@ -1156,7 +1156,7 @@ _.Zones =
 							q(10111, {	-- Bring Me The Egg!
 								["qg"] = 19035,	-- Wazat
 								["coord"] = { 61.6, 67.0, 107 },
-								["sourceQuests"] = 10109,	-- I Must Have Them!
+								["sourceQuest"] = 10109,	-- I Must Have Them!
 								["groups"] = {
 									i(28030),	-- Spell-Slinger's Protector
 									i(28032),	-- Delicate Green Poncho
@@ -1209,7 +1209,7 @@ _.Zones =
 							qh(10075, {	-- Oshu'gun Crystal Powder (Horde Version)
 								["qg"] = 18816,	-- Chief Researcher Amereldine
 								["coord"] = { 41.2, 44.2, 107 },
-								["sourceQuests"] = 10074,	-- Oshu'gun Crystal Powder (Horde Version)
+								["sourceQuest"] = 10074,	-- Oshu'gun Crystal Powder (Horde Version)
 								["repeatable"] = true,
 								["description"] = "This quest is only accessible when the Horde controls Halaa.",
 								["groups"] = {
@@ -1232,7 +1232,7 @@ _.Zones =
 							qa(10077, {	-- Oshu'gun Crystal Powder (Alliance Version)
 								["qg"] = 18816,	-- Chief Researcher Amereldine
 								["coord"] = { 41.2, 44.2, 107 },
-								["sourceQuests"] = 10076,	-- Oshu'gun Crystal Powder (Alliance Version)
+								["sourceQuest"] = 10076,	-- Oshu'gun Crystal Powder (Alliance Version)
 								["repeatable"] = true,
 								["description"] = "This quest is only accessible when the Alliance controls Halaa.",
 								["groups"] = {
@@ -1246,7 +1246,7 @@ _.Zones =
 							}),
 							q(13800, {	-- Get My Keys
 								["qg"] = 33801,	-- Dr. Fingers
-								["sourceQuests"] = 13799,	-- Where Are My Keys?
+								["sourceQuest"] = 13799,	-- Where Are My Keys?
 								["u"] = 1,
 ]]--						}),
 						}),

@@ -11,10 +11,10 @@ _.Zones =
 				["groups"] = {
 					n(-228, {	-- Flight Master
 						fp(121, { -- Allerian Stronghold, Terokkar Forest
-							["coords"] = { 59.4, 55.4, 108 },
+							["coord"] = { 59.4, 55.4, 108 },
 						}),
 						fp(127, { -- Stonebreaker Hold, Terokkar Forest
-							["coords"] = { 49.2, 43.4, 108 },
+							["coord"] = { 49.2, 43.4, 108 },
 						}),
 					}),
 				},

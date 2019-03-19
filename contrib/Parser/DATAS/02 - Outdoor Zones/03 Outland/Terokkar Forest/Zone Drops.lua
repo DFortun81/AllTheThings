@@ -18,6 +18,11 @@ _.Zones =
 								23022,    -- Gordunni Soulreaper
 							},
 						}),
+						i(16248, {	-- Formula: Enchant Weapon - Unholy
+							["crs"] = {
+								16810,	-- Bonechewer Backbreaker
+							},
+						}),		
 					}),
 				},
 			},

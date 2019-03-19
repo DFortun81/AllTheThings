@@ -93,13 +93,13 @@ _.Zones =
 						qh(50113, {	-- Ocular Extracts
 							["qg"] = 122703,	-- Clever Kumali <Alchemist Trainer>
 							["coord"] = { 42.2, 38.0, 1165 },
-							["sourceQuests"] = 50112,	-- Casting the First Stone
+							["sourceQuest"] = 50112,	-- Casting the First Stone
 							["requireSkill"] = 171,	-- Alchemy
 						}),
 						qh(50115, {	-- Changing the Scenery
 							["qg"] = 122703,	-- Clever Kumali <Alchemist Trainer>
 							["coord"] = { 42.2, 38.0, 1165 },
-							["sourceQuests"] = 50112,	-- Casting the First Stone
+							["sourceQuest"] = 50112,	-- Casting the First Stone
 							["requireSkill"] = 171,	-- Alchemy
 						}),
 						qh(50116, {	-- A Possible Solution
@@ -114,13 +114,13 @@ _.Zones =
 						qh(50117, {	-- A Deathly Draught
 							["qg"] = 132680,	-- Zukashi <Master of Transmutations>
 							["coord"] = { 65.2, 36.9, 863 },
-							["sourceQuests"] = 50116,
+							["sourceQuest"] = 50116,
 							["requireSkill"] = 171,	-- Alchemy
 						}),
 						qh(50118, {	-- A Stone's Throw
 							["qg"] = 132680,	-- Zukashi <Master of Transmutations>
 							["coord"] = { 65.2, 36.9, 863 },
-							["sourceQuests"] = 50116,
+							["sourceQuest"] = 50116,
 							["requireSkill"] = 171,	-- Alchemy
 						}),
 						qh(50119, {	-- Chemically Compounded
@@ -135,7 +135,7 @@ _.Zones =
 						o(280957, {	-- Zukashi's Satchel
 							qh(50120, {	-- A Recipe for Success
 								["coord"] = { 62.9, 28.9, 863 },
-								["sourceQuests"] = 50119,
+								["sourceQuest"] = 50119,
 								["requireSkill"] = 171,	-- Alchemy
 								["groups"] = {
 									recipe(260403),	-- Recipe: Silus' Sphere of Transmutation
