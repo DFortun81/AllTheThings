@@ -23,6 +23,14 @@ _.Zones =
 						["coord"] = { 60, 56.8 },
 					}),
 				}),
+				n(-25,  {	-- Pet Battle
+					p(641),		-- Arctic Hare
+					p(234),		-- Gundrak Hatchling
+					p(387),		-- Snake
+					p(412),		-- Spider
+					p(1238),	-- Unborn Val'kyr
+					p(535),		-- Water Waveling
+				}),
 				n(-17, { 	-- Quests
 --[[	Achievement info for Loremaster related zone quests or other quest achievements
 					ach(1596, {		-- Guru of Drakuru
