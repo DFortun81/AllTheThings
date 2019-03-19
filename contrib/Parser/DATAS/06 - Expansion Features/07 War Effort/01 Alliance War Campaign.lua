@@ -420,6 +420,89 @@ _.ExpansionFeatures =
 									["coord"] = { 37.7, 35.8, 864 },	-- Vol'dun
 									["sourceQuests"] = { 52026 },	-- Overseas Assassination
 								}),
+								qa(52028, {	-- Comb the Desert
+									["qg"] = 139705,	-- Halford Wyrmbane
+									["coord"] = { 37.7, 35.8, 864 },	-- Vol'dun
+									["sourceQuests"] = { 52027 },	-- The Vol'dun Plan
+								}),
+								qa(52029, {	-- Dirty Work
+									["qg"] = 139719,	-- Shandris Feathermoon
+									["coord"] = { 40.7, 47.8, 864 },	-- Vol'dun
+									["sourceQuests"] = { 52028 },	-- Comb the Desert
+								}),
+								qa(52030, {	-- Keep Combing
+									["qg"] = 139705,	-- Halford Wyrmbane
+									["coord"] = { 40.7, 47.8, 864 },	-- Vol'dun
+									["sourceQuests"] = { 52029 },	-- Dirty Work
+								}),
+								qa(52031, {	-- Classic Reliquary
+									["qg"] = 139719,	-- Shandris Feathermoon
+									["coord"] = { 44.9, 58.7, 864 },	-- Vol'dun
+									["sourceQuests"] = { 52030 },	-- Keep Combing
+								}),
+								qa(52032, {	-- Never Stop Combing
+									["qg"] = 139705,	-- Halford Wyrmbane
+									["coord"] = { 44.9, 58.7, 864 },	-- Vol'dun
+									["sourceQuests"] = { 52031 },	-- Classic Reliquary
+								}),
+								qa(52035, {	-- Improvised Survival
+									["qg"] = 139705,	-- Halford Wyrmbane
+									["coord"] = { 41.0, 72.5, 864 },	-- Vol'dun
+									["sourceQuests"] = { 52032 },	-- Never Stop Combing
+								}),
+								qa(52034, {	-- A Message to the Zandalari
+									["qg"] = 139719,	-- Shandris Feathermoon
+									["coord"] = { 41.0, 72.5, 864 },	-- Vol'dun
+									["sourceQuests"] = { 52032 },	-- Never Stop Combing
+								}),
+								qa(52036, {	-- They Have Alpacas Here
+									["qg"] = 139722,	-- Explosioneer Zoidfuse
+									["coord"] = { 41.0, 72.5, 864 },	-- Vol'dun
+									["sourceQuests"] = { 52032 },	-- Never Stop Combing
+								}),
+								qa(52038, {	-- Splitting Up
+									["qg"] = 139705,	-- Halford Wyrmbane
+									["coord"] = { 41.0, 72.5, 864 },	-- Vol'dun
+									["sourceQuests"] = {
+										52034,	-- A Message to the Zandalari
+										52035,	-- Improvised Survival
+										52036,	-- They Have Alpacas Here
+									},
+								}),
+								qa(52040, {	-- Full of Arrows
+									["qg"] = 139719,	-- Shandris Feathermoon
+									["coord"] = { 29.9, 78.5, 864 },	-- Vol'dun
+									["sourceQuests"] = { 52038 },	-- Splitting Up
+								}),
+								qa(52039, {	-- Delayed Deathification
+									["qg"] = 139719,	-- Shandris Feathermoon
+									["coord"] = { 29.9, 78.5, 864 },	-- Vol'dun
+									["sourceQuests"] = { 52038 },	-- Splitting Up
+								}),
+								qa(52041, {	-- Report to Wyrmbane
+									["qg"] = 139719,	-- Shandris Feathermoon
+									["coord"] = { 29.9, 78.5, 864 },	-- Vol'dun
+									["sourceQuests"] = {
+										52039,	-- Delayed Deathification
+										52040,	-- Full of Arrows
+									},
+								}),
+								qa(52042, {	-- The Big Boom
+									["qg"] = 139705,	-- Halford Wyrmbane
+									["coord"] = { 39.6, 83.9, 864 },	-- Vol'dun
+									["sourceQuests"] = { 52041 },	-- Report to Wyrmbane
+								}),
+								qa(52146, {	-- Blood on the Sand
+									["qg"] = 139705,	-- Halford Wyrmbane
+									["coord"] = { 39.6, 83.9, 864 },	-- Vol'dun
+									["sourceQuests"] = { 52042 },	-- The Big Boom
+									["g"] = {
+										{	-- Blood on the Sand
+											["achievementID"] = 12510,	-- Ready for War
+											["criteriaID"] = 4,	--  Zuldazar Foothold
+										},
+									},
+								}),
 							},
 						},
 					},

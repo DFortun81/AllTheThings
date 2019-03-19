@@ -13,7 +13,7 @@ _.Zones =
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 									i(161021),	-- Soaring Slateclaw Gloves
 								}),
-								["coord"] = { 50.3, 81.6 },
+								["coord"] = { 50.3, 81.6, 864 },
 								["questID"] = 51058,
 							}),
 							n(130439, {	-- Ashmane
@@ -29,7 +29,7 @@ _.Zones =
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 									i(162622),	-- Groggy Brawler's Chestplate
 								}),
-								["coord"] = { 31.0, 81.0 },
+								["coord"] = { 31.0, 81.0, 864 },
 								["questID"] = 49251,
 							}),	
 							n(129476, {	-- Bloated Krolusk		
@@ -96,7 +96,7 @@ _.Zones =
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 									i(161107),	-- Brineshell Footguards [Low Droprate]
 								}),
-								["coord"] = { 37.3, 84.8 },	-- sort of mills around in this general area, 1 coord should suffice
+								["coord"] = { 37.3, 84.8, 864 },	-- sort of mills around in this general area, 1 coord should suffice
 								["questID"] = 49392,
 							}),	
 							n(136341, {	-- Jungleweb Hunter		
@@ -115,16 +115,14 @@ _.Zones =
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 									i(161108),	-- Kingshell Legplates
 								}),
-								["coord"] = { 38.2, 41.3 },
+								["coord"] = { 38.2, 41.3, 864 },
 								["questID"] = 51424,
 							}),
 							n(134694, { -- Mor'fani the Exile
 								["groups"] = {
 									i(162616),	-- Master Dinomancer's Tunic
 								},
-								["coord"] = {
-									37.61, 88.01
-								},
+								["coord"] = { 37.61, 88.01, 864 },
 								["questID"] = 50666,
 							}),
 							n(128951, {	-- Nez'ara
@@ -137,21 +135,21 @@ _.Zones =
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 									i(160956),	-- Hazaak's Windshorn Claws
 								}),
-								["coord"] = { 49.0, 72.0 },
+								["coord"] = { 49.0, 72.0, 864 },
 								["questID"] = 51126,	
 							}),	
 							n(127776, {	-- Scaleclaw Broodmother
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 									i(161039),	-- Sandclaw Handguards
 								}),
-								["coord"] = { 44.4, 80.1 },
+								["coord"] = { 44.4, 80.1, 864 },
 								["questID"] = 48960,
 							}),
 							n(136336, {	-- Scorpox
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 									i(161030),	-- Vicious Scorpidsting Sandals
 								}),
-								["coord"] = { 32.8, 65.1 },
+								["coord"] = { 32.8, 65.1, 864 },
 								["questID"] = 51076,
 							}),
 							n(136338, {	-- Sirokar
@@ -211,6 +209,7 @@ _.Zones =
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 									i(161119),	-- Ravasaur Skull Bijou
 								}),
+								["coord"] = { 43.9, 52.4, 864 },	-- cave entrance
 								["questID"] = 48319,	
 							}),
 					},

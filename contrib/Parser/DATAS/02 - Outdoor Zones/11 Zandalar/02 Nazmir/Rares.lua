@@ -22,9 +22,7 @@ _.Zones =
 							["npcID"] = 134293, 			-- Azerite-Infused Slag
 							["allianceQuestID"] = 50563, 	-- Azerite-Infused Slag [A]
 							["hordeQuestID"] = 49305,		-- Azerite-Infused Slag [H]
-							["coords"] = {
-								{ 32.98, 26.80 }
-							},
+							["coord"] = { 32.98, 26.80, 863 },
 							["g"] = {
 								{	-- Fused-Slag Girdle
 									["itemID"] = 161100,	-- Fused-Slag Girdle
@@ -159,9 +157,7 @@ _.Zones =
 								i(160963),	-- Blood Jungle Stinger
 							}),
 							["questID"] = 49312,
-							["coords"] = {
-								{ 57.81, 67.52, 863 },
-							},
+							["coord"] = { 57.81, 67.52, 863 },
 						},
 						n(127820, {	-- Scout Skrasniss
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
@@ -176,6 +172,7 @@ _.Zones =
 							["questID"] = 48980,
 						}),
 						n(124475, {	-- Shambling Ambusher
+							["coord"] = { 29.1, 55.6, 863 },
 							["questID"] = 47878,
 						}),
 						n(126460, {	-- Tainted Guardian
@@ -210,6 +207,7 @@ _.Zones =
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(161028),	-- Noxious Crocolisk Trousers
 							}),
+							["coord"] = { 29.5, 50.8, 863 },
 							["questID"] = 48626,
 						}),
 						n(128584, {	-- Vugthuth

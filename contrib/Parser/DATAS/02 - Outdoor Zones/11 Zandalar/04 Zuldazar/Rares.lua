@@ -18,9 +18,7 @@ _.Zones =
 									i(161042),-- Gotaka's Wallopers
 								}),
 								["questID"] = 50280,
-								["coords"] = {
-									{ 80.88, 21.31 },
-								},
+								["coord"] = { 80.88, 21.31, 862 },
 							}),	
 							n(129343, {	-- Avatar of Xolotal [CLQS]
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
@@ -28,9 +26,7 @@ _.Zones =
 									i(161034),	-- Thunderhowl Gauntlets
 								}),
 								["questID"] = 49410,
-								["coords"] = {
-									{ 49.78, 57.33 },
-								},
+								["coord"] = { 49.78, 57.33, 862 },
 							}),
 							n(128699, {	-- Bloodbulge [CLQS]
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
@@ -38,9 +34,7 @@ _.Zones =
 									i(161104),	-- Blood Feast Gauntlets
 								}),
 								["questID"] = 49267,
-								["coords"] = {
-									{ 59.68, 18.22 },
-								},
+								["coord"] = { 59.68, 18.22, 862 },
 							}),
 							n(131718, { -- Bramblewing [CLQS]
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
@@ -48,16 +42,12 @@ _.Zones =
 									i(161020),	-- Sky-Hunter Breeches
 								}),
 								["questID"] = 50034,
-								["coords"] = {
-									{ 66.63, 32.40 },
-								},
+								["coord"] = { 66.63, 32.40, 862 },
 							}),
 							{	-- Daggerjaw
 								["npcID"] = 133190,		-- Daggerjaw
 								["questID"] = 50269,
-								["coords"] = {
-									{ 75.62, 36.25 },
-								},
+								["coord"] = { 75.62, 36.25, 862 },
 								["g"] = {
 									{	-- Daggerjaw
 										["achievementID"] = 12944,	-- Adventurer of Zuldazar
@@ -76,9 +66,7 @@ _.Zones =
 									i(160979),	-- Ancient Chronicler's Focus
 								}),
 								["questID"] = 51083,
-								["coords"] = {
-									{ 43.23, 76.37 },
-								},
+								["coord"] = { 43.23, 76.37, 862 },
 							}),	
 							n(134760, {	-- Darkspeaker Jo'la [CLQS]
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
@@ -86,9 +74,7 @@ _.Zones =
 									i(160958),	-- Darkspeaker Scepter
 								}),
 								["questID"] = 50693,
-								["coords"] = {
-									{ 65.36, 10.20 },
-								},
+								["coord"] = { 65.36, 10.20, 862 },
 							}),
 							n(133155, {	-- G'Naat [CLQS]
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
@@ -96,9 +82,7 @@ _.Zones =
 									i(161048),	-- Brutish Tidecaller Armwraps
 								}),
 								["questID"] = 50260,
-								["coords"] = {
-									{ 80.02, 35.98 },
-								},
+								["coord"] = { 80.02, 35.98, 862 },
 							}),
 							n(124185, {	-- Golrakahn [CLQS]	
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
@@ -106,9 +90,7 @@ _.Zones =
 									i(161035),	-- Thundercrash Footguards
 								}),
 								["questID"] = 47792,
-								["coords"] = {
-									{ 74.12, 28.49 },
-								},
+								["coord"] = { 74.12, 28.49, 862 },
 							}),	
 							n(134738, {	-- Hakbi the Risen  [CLQS]
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
@@ -116,9 +98,7 @@ _.Zones =
 									i(160978),	-- Golden Tomb Defender
 								}),
 								["questID"] = 50677,
-								["coords"] = {
-									{ 42.11, 36.14 },
-								},
+								["coord"] = { 42.11, 36.14, 862 },
 							}),
 							n(134637, {	-- Headhunter Lee'za
 								["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
@@ -133,16 +113,12 @@ _.Zones =
 									i(160984),	-- Sauroscale Cloak of Adaptation
 								}),
 								["questID"] = 48453,
-								["coords"] = {
-									{ 68.74, 48.41 },
-								},
+								["coord"] = { 68.74, 48.41, 862 },
 							}),
 							{	-- Kiboku
 								["npcID"] = 132244,		-- Kiboku
 								["questID"] = 50159,
-								["coords"] = {
-									{ 75.62, 36.25 },
-								},
+								["coord"] = { 75.62, 36.25, 862 },
 								["g"] = {
 									{	-- Kiboku
 										["achievementID"] = 12944,	-- Adventurer of Zuldazar
@@ -161,9 +137,7 @@ _.Zones =
 									i(161033),	-- Jolting Leap Legguards
 								}),
 								["questID"] = 49911,
-								["coords"] =  {
-									{ 58.80, 74.21 },
-								},
+								["coord"] =  { 58.80, 74.21, 862 },
 							}),
 							n(134782, {	-- Murderbeak [CLQS]
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
@@ -171,17 +145,15 @@ _.Zones =
 									i(161022),	-- Gusting Axebeaek Anklewraps
 								}),
 								["questID"] = 50281,
-								["coords"] = {
-									{ 60.72, 66.11 },
-								},
+								["coord"] = { 60.72, 66.11, 862 },
 							}),
 							n(149147, {	-- N'chala the Egg Thief
 								["g"] = {
 									i(166345),	-- Zandalari Raptor Egg (PET!)
 								},
 								["coords"] = {
-									{ 69.2, 35.2 },
-									{ 69.4, 38.6 },
+									{ 69.2, 35.2, 862 },
+									{ 69.4, 38.6, 862 },
 								},
 								["questID"] = 54770,	-- needs confirmation, but this was the last questID printed after I killed it
 								["description"] = "N'chala pats between the coordinates.",
@@ -192,9 +164,7 @@ _.Zones =
 									i(161047),	-- Shadow Wind Leggings
 								}),
 								["questID"] = 51080,
-								["coords"] = {
-									{ 53.80, 44.84 },
-								},
+								["coord"] = { 53.80, 44.84, 862 },
 								["repeatable"] = true,	-- temp
 							}),
 							n(131687, {	-- Tambano [CLQS]
@@ -203,9 +173,7 @@ _.Zones =
 									i(161109),	-- Coastal Hardshell Girdle
 								}),
 								["questID"] = 50013,
-								["coords"] = {
-									{ 77.70, 10.81 },
-								},
+								["coord"] = { 77.70, 10.81, 862 },
 							}),	
 							n(133163, {	-- Tia'Kawan [MCLQ]
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
@@ -219,9 +187,7 @@ _.Zones =
 									i(161029),	-- Ageless Toxin Grips
 								}),
 								["questID"] = 49004,
-								["coords"] = {
-									{ 46.69, 65.34 },
-								},
+								["coord"] = { 46.69, 65.34, 862 },
 							}),
 							n(130643, {	-- Twisted Child of Rezan [MCLQ]
 								["groups"] = { -- Level 120 mob which means no gear scaling	
@@ -236,9 +202,7 @@ _.Zones =
 									i(161091),	-- Swift-Talon Striders
 								}),
 								["questID"] = 47567,
-								["coords"] = {
-									{ 70.33, 33.02 },
-								},
+								["coord"] = { 70.4, 32.7, 862 },	-- cave entrance
 							}),
 							n(134717, {	-- Umbra'rix [MCMLQ]
 								["questID"] = 50673,
@@ -257,9 +221,7 @@ _.Zones =
 									}),
 								}),
 								["questID"] = 50508,
-								["coords"] = {
-									{ 62.16, 46.20 },
-								},
+								["coord"] = { 62.16, 46.20, 862 },
 							}),	
 							n(133842, {	-- Warcrawler Karkithiss [CLQS]
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
@@ -267,9 +229,7 @@ _.Zones =
 									i(161040),	-- Arid Dune Stompers
 								}),
 								["questID"] = 50438,
-								["coords"] = {
-									{ 44.25, 25.21 },
-								},
+								["coord"] = { 44.25, 25.21, 862 },
 							}),
 							n(131476, {	-- Zayoos [CLQS]
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
@@ -277,9 +237,7 @@ _.Zones =
 									i(161125),	-- Kaja-fied Banana
 								}),
 								["questID"] = 49972,
-								["coords"] = {
-									{ 47.97, 54.25 },
-								},
+								["coord"] = { 47.97, 54.25, 862 },
 							}),
 							n(136702, {	-- Zu'shin the Infused [MCMLQ]
 								["questID"] = 9999, -- Apparently people are upset at seeing ---  in the addon 	

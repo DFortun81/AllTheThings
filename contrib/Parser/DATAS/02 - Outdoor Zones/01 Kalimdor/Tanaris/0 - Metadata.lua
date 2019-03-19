@@ -6,6 +6,7 @@ _.Zones =
 	m(12, {	-- Kalimdor
 		m(71, {	-- Tanaris
 			["maps"] = {  -- Temporarily attaching Caverns of Time here until we separate
+				72,	-- The Noxious Lair
 				73,	-- The Gaping Chasm
 				74, -- Caverns of Time Entrance
 				75, -- Caverns of Time
