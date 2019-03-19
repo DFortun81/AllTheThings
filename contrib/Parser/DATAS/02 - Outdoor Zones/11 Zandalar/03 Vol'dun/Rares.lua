@@ -129,6 +129,7 @@ _.Zones =
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 									i(161024),	-- Wrathful Sister's Cincture
 								}),
+								["coord"] = { 43.9, 87.0, 864 },	-- cave entrance
 								["questID"] = 50898,
 							}),
 							n(136340, {	-- Relic Hunter Hazaak		

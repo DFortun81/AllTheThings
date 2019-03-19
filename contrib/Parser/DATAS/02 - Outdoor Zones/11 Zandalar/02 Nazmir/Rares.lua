@@ -65,6 +65,7 @@ _.Zones =
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(161041),	-- Gutrip's Tramplers
 							}),
+							["coord"] = { 32.8, 43.1, 863 },
 							["questID"] = 49231,
 						}),
 						n(127001, {	-- Gwugnug the Cursed
@@ -89,6 +90,7 @@ _.Zones =
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(160950),	-- Nicked Nazmani Greataxe
 							}),
+							["coord"] = { 28.2, 33.8, 863 },
 							["questID"] = 50342,
 						}),
 						n(129005, {	-- King Kooba
@@ -163,6 +165,7 @@ _.Zones =
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(160951),	-- Evergreen Scout's Bow
 							}),
+							["coord"] = { 59.1, 38.9, 863 },
 							["questID"] = 48972,
 						}),
 						n(127873, {	-- Scrounger Patriarch
@@ -179,6 +182,7 @@ _.Zones =
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(162621),	-- Nazmani Golem's Greathelm
 							}),
+							["coord"] = { 31.4, 38.1, 863 },
 							["questID"] = 48508,
 						}),
 						n(126056, {	-- Totem Maker Jash'ga
@@ -214,6 +218,7 @@ _.Zones =
 							["groups"] = {
 								i(161098),	-- Abyssal Scale Gauntlets
 							},
+							["coord"] = { 46.8, 33.6, 863 },
 							["questID"] = 50366,	-- 50459 for WQ
 						}),
 						n(126907, {	-- Wardrummer Zurula

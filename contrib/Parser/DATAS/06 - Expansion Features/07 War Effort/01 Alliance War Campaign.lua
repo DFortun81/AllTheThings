@@ -505,6 +505,74 @@ _.ExpansionFeatures =
 								}),
 							},
 						},
+						qa(53069, {	-- Operation: Blood Arrow
+							["description"] = "This quest will automatically be offered when you reach 4,500 Friendly reputation with 7th Legion (75% of Friendly).",
+							["sourceQuests"] = { 52146 },	-- Blood on the Sand
+						}),
+						qa(52147, {	-- Crippling the Horde
+							["qg"] = 135612,	-- Halford Wyrmbane
+							["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
+							["sourceQuests"] = { 53069 },	-- Operation: Blood Arrow
+						}),
+						{	-- Chasing Darkness
+							["achievementID"] = 12510,	-- Ready for War
+							["collectible"] = false,
+							["criteriaID"] = 5,	--  Chasing Darkness
+							["races"] = ALLIANCE_ONLY,
+							["maps"] = { 863 },	-- Nazmir
+							["lvl"] = 120,
+							["g"] = {
+								qa(52150, {	-- How to Kill a Dark Ranger
+									["qg"] = 140258,	-- Shandris Feathermoon
+									["coord"] = { 61.9, 41.1, 863 },	-- Nazmir
+									["sourceQuests"] = { 52147 },	-- Crippling the Horde
+								}),
+								qa(52170, {	-- Ending Areiel
+									["qg"] = 140258,	-- Shandris Feathermoon
+									["coord"] = { 51.2, 21.8, 863 },	-- Nazmir
+									["sourceQuests"] = {
+										52158,	-- The Savage Hunt
+										52156,	-- Tortollans in Distress
+									},
+								}),
+								qa(52171, {	-- One Option: Fire
+									["qg"] = 139609,	-- John J. Keeshan
+									["coord"] = { 51.2, 21.8, 863 },	-- Nazmir
+									["sourceQuests"] = {
+										52158,	-- The Savage Hunt
+										52156,	-- Tortollans in Distress
+									},
+								}),
+								qa(52172, {	-- They Can't Stay Here
+									["qg"] = 139609,	-- John J. Keeshan
+									["coord"] = { 51.2, 21.8, 863 },	-- Nazmir
+									["sourceQuests"] = {
+										52158,	-- The Savage Hunt
+										52156,	-- Tortollans in Distress
+									},
+								}),
+								qa(52208, {	-- Meeting of the Minds
+									["qg"] = 140258,	-- Shandris Feathermoon
+									["coord"] = { 51.2, 21.8, 863 },	-- Nazmir
+									["sourceQuests"] = {
+										52170,	-- Ending Areiel
+										52171,	-- One Option: Fire
+										52172,	-- They Can't Stay Here
+									},
+								}),
+								qa(52219, {	-- Target: Blood Prince Dreven
+									["qg"] = 140519,	-- Shandris Feathermoon
+									["coord"] = { 42.1, 39.7, 863 },	-- Nazmir
+									["sourceQuests"] = { 52208 },	-- Meeting of the Minds
+									["g"] = {
+										{	-- Chasing Darkness
+											["achievementID"] = 12510,	-- Ready for War
+											["criteriaID"] = 5,	--  Chasing Darkness
+										},
+									},
+								}),
+							},
+						},
 					},
 				},
 			}),
