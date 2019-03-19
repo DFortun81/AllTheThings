@@ -37,13 +37,12 @@ _.Zones =
 								["speciesID"] = 420,	-- Toad
 							},
 							q(31924, { 	-- Narrok
-								["groups"] = {
-									i(89125)	-- Sack of Pet Supplies
-								},
 								["qg"] = 66552,	-- Narrok <Master Pet Tamer>
 								["coord"] = { 61.0, 49.4, 107 },
 								["isDaily"] = true,
-								
+								["groups"] = {
+									i(89125)	-- Sack of Pet Supplies
+								},
 							}),
 						},
 					},

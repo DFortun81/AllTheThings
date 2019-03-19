@@ -21,7 +21,7 @@ _.Zones =
 								q(9883, {	-- More Crystal Fragments
 									["qg"] = 18265,	-- Gezhe <The Consortium>
 									["coord"] = { 31.4, 57.8, 107 },
-									["sourceQuests"] = { 9882 },	-- Stealing from Thieves
+									["sourceQuests"] = 9882,	-- Stealing from Thieves
 									["repeatable"] = true,
 								}),
 								q(9893, {	-- Obsidian Warbeads
@@ -31,7 +31,7 @@ _.Zones =
 								q(9892, {	-- More Obsidian Warbeads
 									["qg"] = 18265,	-- Gezhe <The Consortium>
 									["coord"] = { 31.4, 57.8, 107 },
-									["sourceQuests"] = { 9893 },	-- Obsidian Warbeads
+									["sourceQuests"] = 9893,	-- Obsidian Warbeads
 									["repeatable"] = true,
 								}),
 								q(9914, {	-- A Head Full of Ivory
@@ -41,44 +41,45 @@ _.Zones =
 								q(9915, {	-- More Heads Full of Ivory
 									["qg"] = 18333,	-- Shadrek
 									["coord"] = { 31.8, 56.8, 107 },
-									["sourceQuests"] = { 9914 },	-- A Head Full of Ivory
+									["sourceQuests"] = 9914,	-- A Head Full of Ivory
 									["repeatable"] = true,
 								}),
 								q(9886, {	-- Membership Benefits
+									["qg"] = 18265,	-- Gezhe <The Consortium>
+									["coord"] = { 31.4, 57.8, 107 },
+									["repeatable"] = true,
 									["groups"] = {
 										i(25424),	-- Gem-Stuffed Envelope
 									},
+								}),
+								q(9884, {	-- Membership Benefits
 									["qg"] = 18265,	-- Gezhe <The Consortium>
 									["coord"] = { 31.4, 57.8, 107 },
 									["repeatable"] = true,
-								}),
-								q(9884, {	-- Membership Benefits
 									["groups"] = {
 										i(25419),	-- Unmarked Bag of Gems
 									},
+								}),
+								q(9885, {	-- Membership Benefits
 									["qg"] = 18265,	-- Gezhe <The Consortium>
 									["coord"] = { 31.4, 57.8, 107 },
 									["repeatable"] = true,
-								}),
-								q(9885, {	-- Membership Benefits
 									["groups"] = {
 										i(25422),	-- Bulging Sack of Gems
 									},
+								}),
+								q(9887, {	-- Membership Benefits
 									["qg"] = 18265,	-- Gezhe <The Consortium>
 									["coord"] = { 31.4, 57.8, 107 },
 									["repeatable"] = true,
-								}),
-								q(9887, {	-- Membership Benefits
 									["groups"] = {
 										i(25423),	-- Bag of Premium Gems
 									},
-									["qg"] = 18265,	-- Gezhe <The Consortium>
-									["coord"] = { 31.4, 57.8, 107 },
-									["repeatable"] = true,
 								}),
 							}),
 							n(-2,   {	-- Vendors
 								n(23007,   {	-- Paulsta'ats <Consortium Quartermaster>
+									["coord"] = { 30.5, 56.9, 107 },
 									["groups"] = {
 										i(31776),	-- Consortium Tabard
 										un(2, i(29118)),	-- Smuggler's Ammo Pouch
@@ -125,7 +126,6 @@ _.Zones =
 										i(29116),	-- Nomad's Leggings
 										i(29117),	-- Stormspire Vest
 									},
-									["coord"] = { 30.5, 56.9, 107 },
 								}),
 							}),
 						},
@@ -142,12 +142,13 @@ _.Zones =
 								qh(10478, {	-- More Warbeads!
 									["qg"] = 18407,	-- Warden Bullrok
 									["coord"] = { 55.8, 37.8, 107 },
-									["sourceQuests"] = { 10479 },	-- Proving Your Strength
+									["sourceQuests"] = 10479,	-- Proving Your Strength
 									["repeatable"] = true,
 								}),
 							}),
 							n(-2,   {	-- Vendors
 								h(n(20241, {	-- Provisioner Nasela <Mag'har Quartermaster>
+									["coord"] = { 53.4, 36.8, 107 },
 									["groups"] = {
 										i(29102),	-- Reins of the Cobalt War Talbuk
 										i(29104),	-- Reins of the Silver War Talbuk
@@ -173,7 +174,6 @@ _.Zones =
 										i(29145),	-- Band of Ancestral Spirits
 										un(2, i(29143)),	-- Clefthoof Hide Quiver
 									},
-									["coord"] = { 53.4, 36.8, 107 },
 								})),
 							}),
 						},
@@ -190,12 +190,13 @@ _.Zones =
 								qa(10477, {	-- More Warbeads!
 									["qg"] = 18408,	-- Warden Moi'bff Jill
 									["coord"] = { 54.8, 70.8, 107 },
-									["sourceQuests"] = { 10476 },	-- Fierce Enemies
+									["sourceQuests"] = 10476,	-- Fierce Enemies
 									["repeatable"] = true,
 								}),
 							}),
 							n(-2,   {	-- Vendors
 								a(n(20240, {	-- Trader Narasu <Kurenai Quartermaster>
+									["coord"] = { 54.5, 75.1, 107 },
 									["groups"] = {
 										i(29227),	-- Reins of the Cobalt War Talbuk
 										i(29229),	-- Reins of the Silver War Talbuk
@@ -221,7 +222,6 @@ _.Zones =
 										i(29146),	-- Band of Elemental Spirits
 										un(2, i(29144)),	-- Worg Hide Quiver
 									},
-									["coord"] = { 54.5, 75.1, 107 },
 								})),
 							}),
 						},

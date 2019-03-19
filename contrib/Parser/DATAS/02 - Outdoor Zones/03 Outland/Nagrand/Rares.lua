@@ -11,12 +11,6 @@ _.Zones =
 				["groups"] = {
 					n(-16,  {	-- Rares	
 						n(17144, { -- Goretooth
-							["groups"] = {
-								i(31192),	-- Crocolisk Hide Bindings
-								i(31191),	-- Crocolisk Hide Bracers
-								i(31188),	-- Crocolisk Scale Vambraces
-								i(31189),	-- Crocolisk Scale Wristguards
-							},
 							["coords"] = {
 								{ 58.2, 27.8, 107 },
 								{ 44.8, 40.4, 107 },
@@ -26,11 +20,14 @@ _.Zones =
 								{ 76.2, 78.0, 107 },
 								{ 76.0, 80.8, 107 },
 							},
+							["groups"] = {
+								i(31192),	-- Crocolisk Hide Bindings
+								i(31191),	-- Crocolisk Hide Bracers
+								i(31188),	-- Crocolisk Scale Vambraces
+								i(31189),	-- Crocolisk Scale Wristguards
+							},
 						}), 
 						n(18684, {	-- Bro'Gaz the Clanlese
-							["groups"] = {
-								i(31194),	-- Gronn-Blessed Warbeads
-							},
 							["coords"] = {
 								{ 27.2, 43.0, 107 },
 								{ 25.6, 51.8, 107 },
@@ -40,15 +37,12 @@ _.Zones =
 								{ 64.8, 77.0, 107 },
 								{ 67.6, 73.8, 107 },
 								{ 70.0, 70.4, 107 },
+							},
+							["groups"] = {
+								i(31194),	-- Gronn-Blessed Warbeads
 							},			
 						}),
 						n(18683, { -- Voidhunter Yar
-							["groups"] = {
-								i(31198),	-- Voidhide Cord
-								i(31195),	-- Voidplate Girdle
-								i(31197),	-- Voidscale Belt
-								i(31199),	-- Voidweave Cilice
-							},
 							["coords"] = {
 								{ 36.0, 65.4, 107 },
 								{ 39.0, 68.2, 107 },
@@ -58,6 +52,12 @@ _.Zones =
 								{ 33.0, 74.6, 107 },
 								{ 32.2, 70.8, 107 },
 								{ 33.2, 67.8, 107 },
+							},
+							["groups"] = {
+								i(31198),	-- Voidhide Cord
+								i(31195),	-- Voidplate Girdle
+								i(31197),	-- Voidscale Belt
+								i(31199),	-- Voidweave Cilice
 							},
 						}), 
 					}),
