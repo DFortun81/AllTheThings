@@ -5,6 +5,9 @@ _.Zones =
 {
 	m(113, { 	-- Northrend
 		m(116, {	-- Grizzly Hills
+			["maps"] = {
+				757,	-- Ursoc's Lair
+			},
 			["groups"] = {
 				n(-228, {	-- Flight Points
 					fp(253, { -- Amberpine Lodge, Grizzly Hills

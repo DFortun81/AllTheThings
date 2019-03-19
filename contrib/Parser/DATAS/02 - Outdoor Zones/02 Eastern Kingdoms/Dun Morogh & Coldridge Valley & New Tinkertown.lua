@@ -654,7 +654,9 @@ _.Zones =
 			["lvl"] = 1,	
 			["achievementID"] = 627,
 			["maps"] = {
-				31,	-- Coldridge Valley
+				28,		-- Coldridge Pass
+				29,		-- The Grizzled Den
+				31,		-- Coldridge Valley
 				428,	-- Frostmane Hovel (Coldridge Valley)
 				523,	-- Dun Morogh
 			},
