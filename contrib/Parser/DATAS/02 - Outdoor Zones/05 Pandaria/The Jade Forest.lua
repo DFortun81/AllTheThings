@@ -1258,6 +1258,13 @@ _.Zones =
 						["qg"] = 57242, -- Elder Sage Wind-Yi
 					}),
 					q(29920, { -- Getting Permission
+						["groups"] = {
+							i(80758), -- zen lotus pendant
+							i(80759), -- dawnblossom necklace
+							i(80760), -- vale song pendant
+							i(80761), -- greenstone pendant
+							i(80762), -- jade eye pendant
+						},
 						["qg"] = 56708, --  Syra Goldendraft
 						["sourceQuests"] = { 29995 }, -- Shrine of the Dawn
 					}),

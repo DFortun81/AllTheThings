@@ -225,6 +225,12 @@ _.NeverImplemented =
 			un(1, i(54652)),	-- Unknown
 			un(1, i(54658)),	-- Unknown
 			un(1, i(54665)),	-- Unknown
+			un(1, i(54689)),	-- Unknown
+			un(1, i(54692)),	-- Unknown
+			un(1, i(54695)),	-- Unknown
+			un(1, i(54707)),	-- Unknown
+			un(1, i(54716)),	-- Unknown
+			un(1, i(54726)),	-- Unknown
 			un(1, i(54667)),	-- Unknown
 			un(1, i(107203)),	-- Unknown
 			un(1, i(107337)),	-- Unknown
@@ -610,6 +616,11 @@ _.NeverImplemented =
 			un(1, i(108814)), -- 6.0 PH Cloak Agi
 			un(1, i(108822)), -- 6.0 PH Cloak STR
 			un(1, i(39828)),	-- Punisher's Cloak
+			un(1, i(80965)),	-- Scavenger's cape
+			un(1, i(80966)),	-- Scavenger's drape
+			un(1, i(80967)),	-- Scavenger's shawl
+			un(1, i(80968)),	-- Scavenger's cloak
+			un(1, i(80969)),	-- Scavenger's manteua
 			un(1, i(35876)),	-- Talbuk Cape
 			un(1, i(60782)),	-- Vicious Gladiator's Cloak of Conquest
 			un(1, i(60784)),	-- Vicious Gladiator's Cloak of Dominance
@@ -1446,6 +1457,9 @@ _.NeverImplemented =
 			un(1, i(132475)),	-- Unknown - was under Legion>Staves
 			un(1, i(132476)),	-- Unknown - was under Legion>Staves
 			un(1, i(49458)),	-- Unknown
+			un(1, i(64695)),	-- Bloodthirsty Gladiator's Battle Staff (Epic BG Item, never made it out of beta)
+			un(1, i(64744)),	-- Bloodthirsty Gladiator's Energy Staff (Epic BG Item, never made it out of beta)
+			un(1, i(64860)),	-- Bloodthirsty Gladiator's Staff (Epic BG Item, never made it out of beta))
 			un(1, i(132477)),	-- Unknown - was under Legion>Staves
 			un(1, i(132478)),	-- Unknown - was under Legion>Staves
 			un(1, i(132479)),	-- Unknown - was under Legion>Staves
@@ -1495,6 +1509,7 @@ _.NeverImplemented =
 			un(1, i(69916)),	-- Trollbane (Test)
 			un(1, i(109519)),	-- Unknown
 			un(1, i(165265)),	-- Unknown
+			un(1, i(80984)),	-- Expropriator's Greataxe
 			un(1, i(117994)),	-- Rename karabor honor guard axe
 			un(1, i(64701)),	-- Bloodthirsty Gladiator's Bonegrinder (Epic BG Item, never made it out of beta))
 			un(1, i(64726)),	-- Bloodthirsty Gladiator's Decapitator (Epic BG item never made it out of beta))
@@ -1538,6 +1553,8 @@ _.NeverImplemented =
 			un(1, i(161926)),	-- Talanji's Salutary Scepter (never added)
 			un(1, i(159923)),	-- Unknown
 			un(1, i(161929)),	-- Unknown
+			un(1, i(64694)),	-- Bloodthirsty Gladiator's Baton of Light
+			un(1, i(64861)),	-- Bloodthirsty Gladiator's Touch of Defeat
 			un(1, i(165275)),	-- Unknown
 		}),
 		n(-340, { -- War Glaives
@@ -1573,12 +1590,12 @@ _.NeverImplemented =
 	un(1, i(84724)),	-- Dreadful Gladiator's energy staff
 	un(1, i(84725)),	-- Dreadful Gladiator's staff
 	--
-	-- Bloodthirsty Gladiator (Epic QUALITY) (did not make it to live)
-	un(1, i(64695)),	-- Bloodthirsty Gladiator's Battle Staff (Epic BG Item, never made it out of beta)
-	un(1, i(64744)),	-- Bloodthirsty Gladiator's Energy Staff (Epic BG Item, never made it out of beta)
-	un(1, i(64860)),	-- Bloodthirsty Gladiator's Staff (Epic BG Item, never made it out of beta))
-	un(1, i(64694)),	-- Bloodthirsty Gladiator's Baton of Light
-	un(1, i(64861)),	-- Bloodthirsty Gladiator's Touch of Defeat
+	-- Dreadful Gladiator (EPIC QUALITY) (did not make it to live)
+	un(1, i(84711)),	-- Dreadful Gladiator's endgame
+	un(1, i(84712)),	-- Dreadful Gladiator's reprieve
+	un(1, i(84713)),	-- Dreadful Gladiator's shield wall
+	un(1, i(84714)),	-- Dreadful Gladiator's barrier
+	un(1, i(84715)),	-- Dreadful Gladiator's redoubt
 	--
 	un(1, i(80980)),	-- Axe of Aborted Deforestation (Never made it to Live, yet into our Appearances Tab)
 	un(1, i(80983)),	-- Extravagant Tree Chopper (Never made it to Live, yet into our Appearances Tab)

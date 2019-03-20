@@ -25,6 +25,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(144100),	-- Saboteur's Stablizing Bracers
 					i(144134),	-- Grenadier's Belt
 					i(144135),	-- Pulled Grenade Pin
+					un(2, i(80934)),	-- Pendant of Precise Timing
 					un(2, i(80920)),	-- Fallout Filter (7.1 - Removed from Game!)
 					un(2, i(80921)),	-- Saboteur's Stablizing Bracers (7.1 - Removed from Game!)
 				})),
@@ -83,6 +84,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						i(144100),	-- Saboteur's Stablizing Bracers
 						i(144134),	-- Grenadier's Belt
 						i(144135),	-- Pulled Grenade Pin
+						un(2, i(81095)),	-- Pendant of Precise Timing
 						un(2, i(81104)),	-- Fallout-Filtering Hood (7.1 - Removed from Game!)
 						un(2, i(81090)),	-- Saboteur's Stablizing Bracers (7.1 - Removed from Game!)
 						un(2, i(81190)),	-- Grenadier's Belt (7.1 - Removed from Game!)

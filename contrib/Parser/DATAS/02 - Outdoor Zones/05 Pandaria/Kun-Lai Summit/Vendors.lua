@@ -946,7 +946,10 @@ _.Zones =
 									un(2, i(91308)),	-- Tyrannical Gladiator's Pike
 									un(2, i(91132)),	-- Tyrannical Gladiator's Spellblade
 									un(2, i(91391)),	-- Tyrannical Gladiator's Shanker
+									un(2, i(94326)),	-- Tyrannical Gladiator's Heavy Crossbow (used 2 upgrade to elite)
 									un(2, i(91146)),	-- Tyrannical Gladiator's Heavy Crossbow
+									un(2, i(91144)),	-- Tyrannical Gladiator's  Touch of Defeat
+									un(2, i(91403)),	-- tyrannical Gladiator's baton of light
 									un(2, i(91213)),	-- Tyrannical Gladiator's Links of Cruelty
 									un(2, i(91215)),	-- Tyrannical Gladiator's Links of Accuracy
 									un(2, i(91217)),	-- Tyrannical Gladiator's Sabatons of Cruelty
