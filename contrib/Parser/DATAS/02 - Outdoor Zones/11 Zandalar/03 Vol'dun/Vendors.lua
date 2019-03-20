@@ -109,6 +109,7 @@ _.Zones =
 									i(163509),	-- Freshwater Pincher
 									i(163503),	-- Ranishu Runt
 									i(163512),	-- Sandstinger Wasp
+									i(163514),	-- Violent Looking Flower Pot (Carnivorous Lasher)
 								}),								
 							},
 							["coord"] = { 29.5, 59.4, 864 },

@@ -73,6 +73,7 @@ _.Zones =
 								{	-- Calligraphy
 									-- On 3/13 this quest gave the 'Triangle' criteria
 									-- On 3/15 this quest gave the 'Triangle' criteria
+									-- On 3/19 this quest gave the 'Triangle' criteria
 									-- Check back to see if each quest ID has static shape
 									-- If shape doesn't change each time the quest comes up we can remove the criteria where they don't apply
 									["questID"] = 55341,	-- Calligraphy

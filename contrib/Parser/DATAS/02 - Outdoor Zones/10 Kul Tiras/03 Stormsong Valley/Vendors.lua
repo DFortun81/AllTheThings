@@ -86,7 +86,7 @@ _.Zones =
 										i(163509),	-- Freshwater Pincher
 										i(163512),	-- Sandstinger Wasp
 										i(163560),	-- Saurolisk Hatchling
-										i(163514),	-- Violent Looking Flower Pot
+										i(163514),	-- Violent Looking Flower Pot (Carnivorous Lasher)
 										i(163705),	-- Imaginary Gun
 										i(163704),	-- Tiny Mechanical Mouse
 										{	-- Pocket Pet Portal
