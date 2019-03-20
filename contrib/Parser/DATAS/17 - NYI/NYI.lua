@@ -424,6 +424,11 @@ _.NeverImplemented =
 			un(1, i(109313)),	-- Unknown
 			un(1, i(109314)),	-- Unknown
 			un(1, i(109315)),	-- Unknown
+			un(1, i(109359)),	-- Unknown
+			un(1, i(109371)),	-- Unknown
+			un(1, i(109382)),	-- Unknown
+			un(1, i(109393)),	-- Unknown
+			un(1, i(109396)),	-- Unknown
 			un(1, i(71570)),	-- Bracers of forked lightning
 			un(1, i(109316)),	-- Unknown
 			un(1, i(109317)),	-- Unknown
@@ -685,6 +690,13 @@ _.NeverImplemented =
 			un(1, i(33200)),	--Unknown
 			un(1, i(33201)),	--Unknown
 			un(1, i(37544)),	--Unknown
+			un(1, i(109300)),	--Unknown
+			un(1, i(109369)),	--Unknown
+			un(1, i(109427)),	--Unknown
+			un(1, i(109452)),	--Unknown
+			un(1, i(109459)),	--Unknown
+			un(1, i(109522)),	--Unknown
+			un(1, i(109526)),	--Unknown
 		}),
 		filter(52, {	-- Finger
 			un(1, i(4988)),		-- Burning Obsidian Band

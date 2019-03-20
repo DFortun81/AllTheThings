@@ -232,6 +232,25 @@ _.Zones =
 						i(111241),	-- Primal Gladiator's Plate Helm
 						i(111242),	-- Primal Gladiator's Plate Legguards
 						i(111243),	-- Primal Gladiator's Plate Shoulders
+						un(2, i(111079)),	-- Primal Gladiator's Necklace of Cruelty
+						un(2, i(111080)),	-- Primal Gladiator's necklace of prowess
+						un(2, i(111128)),	-- Primal Gladiator's pendant of cruelty
+						un(2, i(111129)),	-- Primal Gladiator's pendant of prowess
+						un(2, i(111130)),	-- Primal Gladiator's pendant of meditation
+						un(2, i(111131)),	-- Primal Gladiator's pendant of contemplation
+						un(2, i(111207)),	-- Primal Gladiator's choker of cruelty
+						un(2, i(111208)),	-- Primal Gladiator's choker of prowess
+						un(2, i(111081)),	-- Primal Gladiator's ring of cruelty
+						un(2, i(111082)),	-- Primal Gladiator's Ring of prowess
+						un(2, i(111134)),	-- Primal Gladiator's band of cruelty
+						un(2, i(111135)),	-- Primal Gladiator's band of prowess
+						un(2, i(111136)),	-- Primal Gladiator's band of victory
+						un(2, i(111137)),	-- Primal Gladiator's band of meditation
+						un(2, i(111138)),	-- Primal Gladiator's band of contemplation
+						un(2, i(111219)),	-- Primal Gladiator's signet of cruelty
+						un(2, i(111220)),	-- Primal Gladiator's signet of accuracy
+						un(2, i(111271)),	-- Primal Gladiator's ring of triumph
+						un(2, i(111272)),	-- Primal Gladiator's signet of ruthlessness
 					}),	
 					n(88161, {	-- Challenger Sunforge
 						["groups"] = {
