@@ -2399,7 +2399,8 @@ _.Zones =
 					}),
 					nh(73147, { -- Ethan Natice Season 15 Elite(5.4.7 Elite and removed Version) -- Link for all the Items https://www.wowhead.com/npc=73145/acon-deathwielder#comments
 						["groups"] = {
-							un(2, i(103636)),	-- Elite Prideful Gladiator's Greatcloak
+							un(2, i(103635)),	-- Elite Prideful Gladiator's Greatcloak
+							un(2, i(103636)),	-- Elite Prideful Gladiator's Tabard
 							un(2, i(102984)),	-- Elite Prideful Gladiator's Decapitator
 							un(2, i(103032)),	-- Elite Prideful Gladiator's Energy Staff
 							un(2, i(102987)),	-- Elite Prideful Gladiator's Cleaver
@@ -2422,6 +2423,8 @@ _.Zones =
 							un(2, i(102988)),	-- Elite Prideful Gladiator's pummeler
 							un(2, i(103030)),	-- Elite Prideful Gladiator's gravel
 							un(2, i(103120)),	-- Elite Prideful Gladiator's bonecracker
+							un(2, i(103002)),	-- Elite Prideful Gladiator's Touch of Defeat
+							un(2, i(103118)),	-- Elite Prideful Gladiator's baton of light
 							un(2, i(103039)),	-- Elite Prideful Gladiator's Chain Helm
 							un(2, i(103041)),	-- Elite Prideful Gladiator's Chain Spaulders
 							un(2, i(103037)),	-- Elite Prideful Gladiator's Chain Armor
@@ -2767,6 +2770,9 @@ _.Zones =
 							un(2, i(85137)),	-- Elite Malevolent Gladiator's Gavel
 							un(2, i(85107)),	-- Elite Malevolent Gladiator's Bonegrinder
 							un(2, i(85121)),	-- Elite Malevolent GLadiator's Touch of Defeat
+							un(2, i(85124)),	-- Elite Malevolent Gladiator's shield wall
+							un(2, i(85125)),	-- Elite Malevolent Gladiator's barrier
+							un(2, i(85126)),	-- Elite Malevolent GLadiator's redoubt
 							un(2, i(84993)), -- Elite Malevolent Gladiator's Dreadplate Chestpiece  -- DK
 							un(2, i(85028)), -- Elite Malevolent Gladiator's Dreadplate Gauntlets
 							un(2, i(85046)), -- Elite Malevolent Gladiator's Dreadplate Helm
@@ -2827,11 +2833,14 @@ _.Zones =
 							un(2, i(85053)), -- Elite Malevolent Gladiator's Satin Leggings
 							un(2, i(85073)), -- Elite Malevolent Gladiator's Satin Robe
 							un(2, i(85074)), -- Elite Malevolent Gladiator's Satin Mantle
-							un(2, i(84994)), -- Elite Malevolent Gladiator's Leather Tunic  -- Rogue Leather
+							un(2, i(84994)), -- Elite Malevolent Gladiator's Chain Armor
+							un(2, i(84995)), -- Elite Malevolent Gladiator's Leather Tunic
 							un(2, i(85023)), -- Elite Malevolent Gladiator's Leather Gloves
 							un(2, i(85041)), -- Elite Malevolent Gladiator's Leather Helm
 							un(2, i(85055)), -- Elite Malevolent Gladiator's Leather Legguards
 							un(2, i(85089)), -- Elite Malevolent Gladiator's Leather Spaulders
+							un(2, i(84792)), -- Malevolent Gladiator's Leather Tunic  (used to upgrade to elite)
+							un(2, i(84848)), -- Malevolent Gladiator's Leather Helm		(used to upgrade to elite)
 							un(2, i(84990)), -- Elite Malevolent Gladiator's Ringmail Armor  -- Shaman RingMail
 							un(2, i(85014)), -- Elite Malevolent Gladiator's Ringmail Gauntlets
 							un(2, i(85029)), -- Elite Malevolent Gladiator's Ringmail Helm
@@ -2846,21 +2855,21 @@ _.Zones =
 							un(2, i(85011)), -- Elite Malevolent Gladiator's Linked Gauntlets
 							un(2, i(85038)), -- Elite Malevolent Gladiator's Linked Helm
 							un(2, i(85050)), -- Elite Malevolent Gladiator's Linked Leggings
-							un(2, i(85081)), -- Elite Malevolent Gladiator's Linked Spaulders
-							un(2, i(85021)), -- Elite Malevolent Gladiator's Felweave Armor  -- Warlock
-							un(2, i(85035)), -- Elite Malevolent Gladiator's Felweave Cowl
-							un(2, i(85047)), -- Elite Malevolent Gladiator's Felweave Trousers
-							un(2, i(85069)), -- Elite Malevolent Gladiator's Felweave Rainment
-							un(2, i(85078)), -- Elite Malevolent Gladiator's Felweave Amice
-							un(2, i(84987)), -- Elite Malevolent Gladiator's Plate Chestpiece  -- Warrior
-							un(2, i(85019)), -- Elite Malevolent Gladiator's Plate Gauntlets
-							un(2, i(85032)), -- Elite Malevolent Gladiator's Plate Helm
-							un(2, i(85063)), -- Elite Malevolent Gladiator's Plate Legguards
-							un(2, i(85077)), -- Elite Malevolent Gladiator's Plate Shoulders
-							un(2, i(84997)),			-- Malevolent Gladiator's Footguards of Alacrity
-							un(2, i(84998)),			-- Malevolent Gladiator's Footguards of Medittation
-							un(2, i(85097)),			-- Malevolent Gladiator's Waistguard of Cruelty
-							un(2, i(85099)),			-- Malevolent Gladiator's Waistguard of Meditation
+							un(2, i(85081)), 	-- Elite Malevolent Gladiator's Linked Spaulders
+							un(2, i(85021)), 	-- Elite Malevolent Gladiator's Felweave Armor  -- Warlock
+							un(2, i(85035)), 	-- Elite Malevolent Gladiator's Felweave Cowl
+							un(2, i(85047)), 	-- Elite Malevolent Gladiator's Felweave Trousers
+							un(2, i(85069)), 	-- Elite Malevolent Gladiator's Felweave Rainment
+							un(2, i(85078)), 	-- Elite Malevolent Gladiator's Felweave Amice
+							un(2, i(84987)), 	-- Elite Malevolent Gladiator's Plate Chestpiece  -- Warrior
+							un(2, i(85019)), 	-- Elite Malevolent Gladiator's Plate Gauntlets
+							un(2, i(85032)), 	-- Elite Malevolent Gladiator's Plate Helm
+							un(2, i(85063)), 	-- Elite Malevolent Gladiator's Plate Legguards
+							un(2, i(85077)), 	-- Elite Malevolent Gladiator's Plate Shoulders
+							un(2, i(84997)),	-- Malevolent Gladiator's Footguards of Alacrity
+							un(2, i(84998)),	-- Malevolent Gladiator's Footguards of Medittation
+							un(2, i(85097)),	-- Malevolent Gladiator's Waistguard of Cruelty
+							un(2, i(85099)),	-- Malevolent Gladiator's Waistguard of Meditation
 						},
 						["u"] = 43, -- Vendor no longer exists
 					}),

@@ -7,6 +7,7 @@ _.NeverImplemented =
 		-- Future Emsembles!!
 		
 		-- Some of those Items are currently not possible to load ingame (BFA Items), but they might be with a new patch
+		un(1, i(166405)),	-- Blindside (TW Vendor?)
 		un(1, i(161988)),	-- Tidespray Linen Cloak of the Feather
 		un(1, i(161991)),	-- Tidespray Linen Cloak of Resilience
 		un(1, i(165261)),	-- Unknown Cloak
@@ -758,6 +759,14 @@ _.NeverImplemented =
 			un(1, i(157764)),	-- Claw of the crystaline scropid
 			un(1, i(157765)),	-- draught of souls
 			un(1, i(157766)),	-- vial of nightmare fog
+			un(1, i(109263)),	-- Unknown
+			un(1, i(109286)),	-- Unknown
+			un(1, i(109360)),	-- Unknown
+			un(1, i(109370)),	-- Unknown
+			un(1, i(109376)),	-- Unknown
+			un(1, i(109378)),	-- Unknown
+			un(1, i(109386)),	-- Unknown
+			un(1, i(109394)),	-- Unknown
 			
 		}),
 	}),
@@ -791,6 +800,7 @@ _.NeverImplemented =
 		un(1, i(31507)),	-- Unknown
 		un(1, i(36963)),	-- Unknown
 		un(1, i(90568)),	-- Unknown
+		un(1, i(114833)),	-- Miniature Flying Carpet
 		un(1, i(90569)),	-- Unknown
 		un(1, i(98001)),	-- Saurok Collection
 		un(1, i(98005)),	-- Saurok Collection
@@ -1387,6 +1397,15 @@ _.NeverImplemented =
 			un(1, i(64816)),	-- Bloodthirsty Gladiator's Pummeler (Epic BG Item, never made it out of beta))
 			un(1, i(165262)),	-- Unknown
 			un(1, i(159550)),	-- Unknown
+			un(1, i(108791)),	-- Unknown
+			un(1, i(108792)),	-- Unknown
+			un(1, i(108793)),	-- Unknown
+			un(1, i(109279)),	-- Unknown
+			un(1, i(109383)),	-- Unknown
+			un(1, i(109404)),	-- Unknown
+			un(1, i(109438)),	-- Unknown
+			un(1, i(109470)),	-- Unknown
+			un(1, i(109533)),	-- Unknown
 		}),
 		n(-334, { -- One-Handed Axes
 			un(1, i(68050)),	-- Shatterscale Mightfish
@@ -1454,6 +1473,9 @@ _.NeverImplemented =
 			un(1, i(159814)),	-- Unknown
 			un(1, i(159815)),	-- Unknown
 			un(1, i(165276)),	-- Unknown
+			un(1, i(93441)),	-- crafted dreadful gladiator's barrier
+			un(1, i(93483)),	-- crafted dreadful gladiator's redoubt
+			un(1, i(93614)),	-- crafted dreadful gladiator's shield wall
 		}),
 		n(-342, { -- Staves
 			un(1, i(132474)),	-- Unknown - was under Legion>Staves
