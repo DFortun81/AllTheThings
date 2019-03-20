@@ -2520,8 +2520,11 @@ _.Zones =
 				638,	-- Thorignir Refuge
 				639,	-- Aggramar's Vault
 				640,	-- Vault of Eyir
+				649,	-- Helheim
 				694,	-- Helmouth Shallows
 				829,	-- Halls of Valor
+				865,	-- Stormheim (Legion Invasion)
+				866,	-- Stormheim (Legion Invasion)
 				877,	-- Fields of the Eternal Hunt
 			},
 			["achievementID"] = 10668,

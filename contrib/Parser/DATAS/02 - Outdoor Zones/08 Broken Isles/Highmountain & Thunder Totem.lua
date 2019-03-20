@@ -6,17 +6,18 @@ _.Zones =
 	m(619, { 	-- The Broken Isles
 		m(650, {	-- Highmountain
 			["maps"] = {
-				750,
 				651,	-- Bitestone Enclave
+				652,	-- Thunder Totem
+				653,	-- Cave of the Blood Trial
 				654,	-- Mucksnout Den
+				655,	-- Lifespring Cavern
 				656,	-- Lifespring Cavern
 				657,	-- Path of Huln
 				658,	-- Path of Huln
 				659, 	-- Stonedark Grotto
 				660,	-- Feltotem Caverns
-				653,	-- Cave of the Blood Trial
-				655,	-- Lifespring Cavern
-			--	826,	-- Cave of the Bloodtotem (Probably was Artefact Scenario for Mage Tower)
+				750,	-- Thunder Totem
+				826,	-- Cave of the Bloodtotem (Probably was Artefact Scenario for Mage Tower)
 				869,	-- Highmountain (legion invasion ship 1)
 				870,	-- Highmountain (legion invasion ship 2)
 			},

@@ -2138,6 +2138,8 @@ _.Zones =
 				689,	-- Ley Station Moonfall
 				690,	-- Ley Station Aethenar
 				691,	-- Nyell's Workshop
+				692,	-- Falanaar Arcway
+				693,	-- Falanaar Arcway
 				798,	-- The Arcway
 			},
 			["description"] = "|cff66ccffSuramar is a max-level zone located in the central Broken Isles. Once a great night elven settlement, though not as glorious as the capital of Zin-Azshari, it was famously the hometown of several important night elves: Illidan Stormrage, his brother Malfurion, their friend Tyrande Whisperwind, and the siblings Jarod and Maiev Shadowsong. Today it is the home of the Nightborne. Suramar is built on ley lines, and arcane coils in the tunnel system running beneath Suramar and the surrounding areas tap into those ley lines' power. Since the creation of the Nightwell, the ley lines have become redundant and the arcane coils abandoned.|r",				
