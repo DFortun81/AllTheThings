@@ -1803,20 +1803,31 @@ _.Zones =
 					}),
 					na(70101, {	-- Armsmaster Holinka >S13< Elite
 						["groups"] = {
+							un(2, i(98336)),	-- Tyrannical Gladiator's Greatcloak
 							un(2, i(91133)),	-- Tyrannical Gladiator's Staff
 							un(2, i(91182)),	-- Tyrannical Gladiator's Battle Staff
 							un(2, i(91207)),	-- Tyrannical Gladiator's Engery Staff
 							un(2, i(91393)),	-- Tyrannical Gladiator's Ripper
 							un(2, i(91397)),	-- Tyrannical Gladiator's Render
+							un(2, i(91129)),	-- Tyrannical Gladiator's Barrier (used 2 upgrade to elite)
+							un(2, i(91205)),	-- Tyrannical Gladiator's Redoubt (used 2 upgrade to elite)
+							un(2, i(91418)),	-- Tyrannical Gladiator's Shield Wall (used 2 upgrade to elite)
 							un(2, i(91130)),	-- Tyrannical Gladiator's Barrier
 							un(2, i(91206)),	-- Tyrannical Gladiator's Redoubt
 							un(2, i(91419)),	-- Tyrannical Gladiator's Shield Wall
+							un(2, i(91087)),	-- Tyrannical Gladiator's Decapitator (used 2 upgrade to elite)
 							un(2, i(91088)),	-- Tyrannical Gladiator's Decapitator
+							un(2, i(91108)),	-- Tyrannical Gladiator's Longbow
+							un(2, i(91405)),	-- Tyrannical Gladiator's Cleaver
+							un(2, i(91091)),	-- Tyrannical Gladiator's Greatsword (used 2 upgrade to elite)
 							un(2, i(91092)),	-- Tyrannical Gladiator's Greatsword
 							un(2, i(91096)),	-- Tyrannical Gladiator's Pummeler
 							un(2, i(91204)),	-- Tyrannical Gladiator's Gavel
 							un(2, i(91407)),	-- Tyrannical Gladiator's Bonecracker
 							un(2, i(91202)),	-- Tyrannical Gladiator's Rifle
+							un(2, i(91097)),	-- Tyrannical Gladiator's Quickblade (used 2 upgrade to elite)
+							un(2, i(91398)),	-- Tyrannical Gladiator's Mageblade (used 2 upgrade to elite)
+							un(2, i(91408)),	-- Tyrannical Gladiator's Slicer (used 2 upgrade to elite)
 							un(2, i(91098)),	-- Tyrannical Gladiator's Quickblade
 							un(2, i(91399)),	-- Tyrannical Gladiator's Mageblade
 							un(2, i(91409)),	-- Tyrannical Gladiator's Slicer
@@ -2750,11 +2761,12 @@ _.Zones =
 							un(2, i(85123)),	-- Elite Malevolent Gladiator's Rifle
 							un(2, i(85120)),	-- Elite Malevolent Gladiator's Crossbow
 							un(2, i(85122)),	-- Elite Malevolent Gladiator's Baton of Light
-							un(2, i(85120)),	-- Elite Malevolent Gladiator's Touch of Defeat
+							un(2, i(85120)),	-- Elite Malevolent Gladiator's Heavy Crossbow
 							un(2, i(85136)),	-- Elite Malevolent Gladiator's Bonecracker  -- Maces
 							un(2, i(85130)),	-- Elite Malevolent Gladiator's Pummeler
 							un(2, i(85137)),	-- Elite Malevolent Gladiator's Gavel
 							un(2, i(85107)),	-- Elite Malevolent Gladiator's Bonegrinder
+							un(2, i(85121)),	-- Elite Malevolent GLadiator's Touch of Defeat
 							un(2, i(84993)), -- Elite Malevolent Gladiator's Dreadplate Chestpiece  -- DK
 							un(2, i(85028)), -- Elite Malevolent Gladiator's Dreadplate Gauntlets
 							un(2, i(85046)), -- Elite Malevolent Gladiator's Dreadplate Helm

@@ -1301,6 +1301,9 @@ _.NeverImplemented =
 			un(1, i(103375)),    -- Prideful Gladiator's Heavy Crossbow (they ditched those items)
 			un(1, i(102613)),    -- Prideful Gladiator's Heavy Crossbow (they ditched those items)	
 			un(1, i(102810)),    -- Grievous Gladiator's Heavy Crossbow (they ditched those items)
+			un(1, i(100241)),	-- Grevious Gladiator's Heavy Crossbow (they ditched those items, first try) (A)
+			un(1, i(100556)),	-- Grevious Gladiator's Heavy Crossbow (they ditched those items, first try) (H)
+			un(1, i(100242)),	-- Grevious Gladiator's Heavy Crossbow (they ditched those items, first try) (Elite)
 			un(1, i(103178)),	-- Grevious Gladiator's Heavy Crossbow (they ditched those items) (A)
 			un(1, i(158503)),	-- Scalawag's Bolt Thrower
 		}),
