@@ -40,10 +40,6 @@ _.Zones =
 									["races"] = HORDE_ONLY,
 								}),
 								{	-- Calligraphy
-									-- On 3/14 this quest was for "Circle"
-									-- On 3/17 this quest was for "Circle"
-									-- Check back to see if each quest ID has static shape
-									-- If shape doesn't change each time the quest comes up we can remove the criteria where they don't apply
 									["questID"] = 55340,	-- Calligraphy
 									["races"] = ALLIANCE_ONLY,
 									["isWQ"] = 120,
@@ -53,12 +49,6 @@ _.Zones =
 											["g"] = {
 												{	-- Master of Calligraphy - Circle
 													["criteriaID"] = 1,	-- Master of Calligraphy - Circle
-												},
-												{	-- Master of Calligraphy - Square
-													["criteriaID"] = 2,	-- Master of Calligraphy - Square
-												},
-												{	-- Master of Calligraphy - Triangle
-													["criteriaID"] = 3,	-- Master of Calligraphy - Triangle
 												},
 											},
 										},

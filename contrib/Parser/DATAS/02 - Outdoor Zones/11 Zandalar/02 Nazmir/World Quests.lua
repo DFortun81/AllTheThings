@@ -49,11 +49,8 @@ _.Zones =
 									["races"] = HORDE_ONLY,
 								}),
 								{	-- Calligraphy
-									-- [WHEN THIS QUEST IS UP WRITE WHAT SHAPE IT MADE YOU DRAW HERE.]
-									-- Check back to see if each quest ID has static shape
-									-- If shape doesn't change each time the quest comes up we can remove the criteria where they don't apply
 									["questID"] = 55342,	-- Calligraphy
-									--["races"] = ,	-- neutral?  needs confirmation
+									["races"] = HORDE_ONLY,
 									["isWQ"] = 120,
 									["g"] = {
 										{	-- Master Calligrapher
@@ -61,12 +58,6 @@ _.Zones =
 											["g"] = {
 												{	-- Master of Calligraphy - Circle
 													["criteriaID"] = 1,	-- Master of Calligraphy - Circle
-												},
-												{	-- Master of Calligraphy - Square
-													["criteriaID"] = 2,	-- Master of Calligraphy - Square
-												},
-												{	-- Master of Calligraphy - Triangle
-													["criteriaID"] = 3,	-- Master of Calligraphy - Triangle
 												},
 											},
 										},

@@ -71,11 +71,6 @@ _.Zones =
 									--Note!! 10/16 offered Shoalbreach Waistguard
 								},
 								{	-- Calligraphy
-									-- On 3/13 this quest gave the 'Triangle' criteria
-									-- On 3/15 this quest gave the 'Triangle' criteria
-									-- On 3/19 this quest gave the 'Triangle' criteria
-									-- Check back to see if each quest ID has static shape
-									-- If shape doesn't change each time the quest comes up we can remove the criteria where they don't apply
 									["questID"] = 55341,	-- Calligraphy
 									["races"] = ALLIANCE_ONLY,
 									["isWQ"] = 120,
@@ -83,12 +78,6 @@ _.Zones =
 										{	-- Master Calligrapher
 											["achievementID"] = 13512,	-- Master Calligrapher
 											["g"] = {
-												{	-- Master of Calligraphy - Circle
-													["criteriaID"] = 1,	-- Master of Calligraphy - Circle
-												},
-												{	-- Master of Calligraphy - Square
-													["criteriaID"] = 2,	-- Master of Calligraphy - Square
-												},
 												{	-- Master of Calligraphy - Triangle
 													["criteriaID"] = 3,	-- Master of Calligraphy - Triangle
 												},
