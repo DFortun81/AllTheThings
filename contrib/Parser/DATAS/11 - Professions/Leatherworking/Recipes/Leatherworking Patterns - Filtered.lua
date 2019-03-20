@@ -394,7 +394,6 @@ profession(165, {	-- Leatherworking
 						{
 							["name"] = "Raptor Hide Harness",
 							["recipeID"] = 4096,
-							["races"] = HORDE_ONLY
 						},
 						{
 							["name"] = "Red Dragonscale Breastplate",
@@ -813,7 +812,6 @@ profession(165, {	-- Leatherworking
 						{
 							["name"] = "Raptor Hide Belt",
 							["recipeID"] = 4097,
-							["races"] = ALLIANCE_ONLY
 						},
 						{
 							["name"] = "Runic Leather Belt",

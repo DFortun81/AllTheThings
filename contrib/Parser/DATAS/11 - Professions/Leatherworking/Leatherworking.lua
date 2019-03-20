@@ -217,8 +217,16 @@ profession(165, { -- Leatherworking
 			i(19333), -- Pattern: Molten Belt
 			i(17023), -- Pattern: Molten Helm
 			i(8409), -- Pattern: Nightscape Shoulders		
-			i(13288), -- Pattern: Raptor Hide Belt
-			i(13287), -- Pattern: Raptor Hide Harness
+			i(13288, { -- Pattern: Raptor Hide Belt
+				["groups"] = {
+				},
+				["description"] = "This recipe is only available to Alliance players.",
+			}),
+			i(13287, { -- Pattern: Raptor Hide Harness
+				["groups"] = {
+				},
+				["description"] = "This recipe is only available to Horde players.",
+			}),
 			un(8, i(22663)), -- Pattern: Polar Bracers
 			un(8, i(22662)), -- Pattern: Polar Gloves
 			--un(2, i(23020)), -- Pattern: Polar Helm (This is not showing as a pattern anywhere, item was a drop from a quest in the original Naxx, and BoP)
