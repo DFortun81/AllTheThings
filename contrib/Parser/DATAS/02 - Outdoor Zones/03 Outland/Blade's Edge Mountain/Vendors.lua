@@ -53,6 +53,7 @@ _.Zones =
 						n(23428, {	-- Jho'nass <Ogri'la Quartermaster>
 							i(32569, { -- Apexis Shard
 								i(32650),	-- Cerulean Crystal Rod
+								i(32654),	-- Crystalforged Trinket
 								i(32652),	-- Ogri'la Aegis
 								i(32653),	-- Apexis Cloak
 								i(32647),	-- Shard-Bound Bracers

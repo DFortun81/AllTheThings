@@ -88,7 +88,9 @@ _.Zones =
 							["groups"] = {
 								n(21838, {	-- Terokk
 									["coord"] = { 66.2, 77.5, 108 },
-									["groups"] = {	
+									["groups"] = {
+										i(32535),	-- Gift of the Talonpriests
+										i(32534),	-- Brooch of the Immortal King
 										dr(13, i(31564)),	--	Skystalker's Leggings
 										dr(12, i(31580)),	--	Slatesteel Leggings
 										dr(12, i(31556)),	--	Windchanneller's Leggings
@@ -122,6 +124,7 @@ _.Zones =
 										dr(20, i(32529)),	-- Heretic's Gauntlets
 										dr(6, i(31571)),	-- Mistshroud Belt
 										dr(6, i(31574)),	-- Mistshroud Bracers
+										i(32514),	-- Skettis Band
 										dr(6, i(31566)),	-- Skystalker's Bracers
 										dr(6, i(31582)),	-- Slatesteel Bracers
 										dr(6, i(31579)),	-- Slatesteel Girdle
@@ -145,8 +148,10 @@ _.Zones =
 									},
 									["description"] = "Summoned at skull piles with 10 Time-Lost Scrolls. See Terokk description for more info.",	
 									["groups"] = {
+										i(32531),	-- Gezzarak's Fang
 										dr(6, i(31571)),	-- Mistshroud Belt
 										dr(6, i(31574)),	-- Mistshroud Bracers
+										i(32514),	-- Skettis Band
 										dr(6, i(31566)),	-- Skystalker's Bracers
 										dr(6, i(31563)),	-- Skystalker's Cord							
 										dr(6, i(31582)),	-- Slatesteel Bracers
@@ -173,6 +178,7 @@ _.Zones =
 										dr(20, i(32533)),	-- Karrog's Shard
 										dr(6, i(31571)),	-- Mistshroud Belt
 										dr(6, i(31574)),	-- Mistshroud Bracers
+										i(32514),	-- Skettis Band
 										dr(6, i(31566)),	-- Skystalker's Bracers
 										dr(6, i(31563)),	-- Skystalker's Cord							
 										dr(6, i(31582)),	-- Slatesteel Bracers
@@ -199,6 +205,7 @@ _.Zones =
 										dr(20, i(32532)),	-- Windrager's Coils
 										dr(6, i(31571)),	-- Mistshroud Belt
 										dr(6, i(31574)),	-- Mistshroud Bracers
+										i(32514),	-- Skettis Band
 										dr(6, i(31566)),	-- Skystalker's Bracers							
 										dr(6, i(31582)),	-- Slatesteel Bracers
 										dr(6, i(31579)),	-- Slatesteel Girdle
