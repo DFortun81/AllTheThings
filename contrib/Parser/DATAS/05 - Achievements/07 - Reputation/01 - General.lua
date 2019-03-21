@@ -238,10 +238,12 @@ _.Achievements =
 					}),
 					a(ach(12515)),	-- Allied Races: Dark Iron Dwarf
 					h(ach(12245)),	-- Allied Races: Highmountain Tauren
+					a(ach(13163)),	-- Allied Races: Kul Tiran
 					a(ach(12243)),	-- Allied Races: Lightforged Draenei
 					h(ach(12518)),	-- Allied Races: Mag'har Orc
 					h(ach(12244)),	-- Allied Races: Nightborne
 					a(ach(12242)),	-- Allied Races: Void Elf
+					h(ach(13161)),	-- Allied Races: Zandalari Troll
 					a(ach(948, {	-- Ambassador of the Alliance
 						title(98),		-- Ambassador
 						faction(69),	-- Darnassus
@@ -290,6 +292,20 @@ _.Achievements =
 							i(161013),	-- Dark Iron Leggings
 						},
 						["races"] = {34},
+					}),
+					ach(13504, {	-- Heritage of the Kul Tirans
+						["groups"] = {
+							i(165002),	-- Kul'Tiran Bicorne
+							i(165003),	-- Kul'Tiran Tasseled Pauldron
+							i(165004),	-- Kul'Tiran Longcoat
+							i(165010),	-- Tabard of Kul'Tiras
+							i(165009),	-- Kul'Tiran Bracers
+							i(165005),	-- Kul'Tiran Gloves
+							i(165006),	-- Kul'Tiran Cinch
+							i(165007),	-- Kul'Tiran Britches
+							i(165008),	-- Kul'Tiran Boots
+						},
+						["races"] = {32},
 					}),
 					{	-- Heritage of the Lightforged
 						["achievementID"] = 12414,	-- Heritage of the Lightforged
@@ -355,6 +371,20 @@ _.Achievements =
 							i(156697),	-- Ren'dorei Bracers
 						},
 						["races"] = {29},
+					}),
+					ach(13503, {	-- Heritage of the Zandalari
+						["groups"] = {
+							i(164993),	-- Zandalari Mask
+							i(164994),	-- Zandalari Pauldrons
+							i(164995),	-- Zandalari Torque
+							i(165001),	-- Tabard of the Zandalari
+							i(165000),	-- Zandalari Bracers
+							i(164996),	-- Zandalari Blade-Turners
+							i(164997),	-- Zandalari Belt
+							i(164998),	-- Zandalari Leggings
+							i(164999),	-- Zandalari Shinguards
+						},
+						["races"] = {31},
 					}),
 					ach(945, {		-- The Argent Champion
 						title(99),		-- the Argent Champion

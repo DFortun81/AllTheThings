@@ -91,6 +91,11 @@ _.Achievements =
 						crit(13),		-- Un'Goro Crater
 						crit(14),		-- Winterspring
 					})),
+					h(ach(13342, {	-- Extinguishing Kul Tiras (Horde)
+						crit(1),		-- Tiragarde Sound
+						crit(2),		-- Stormsong Valley
+						crit(3),		-- Drustvar
+					})),
 					a(ach(6007, {	-- Extinguishing Northrend (Alliance)
 						crit(1),		-- Borean Tundra
 						crit(2),		-- Storm Peaks
@@ -140,6 +145,11 @@ _.Achievements =
 					h(ach(6014, {	-- Extinguishing the Cataclysm (Horde)
 						crit(1),		-- Twilight Highlands
 						crit(2),		-- Uldum
+					})),
+					a(ach(13343, {	-- Extinguishing Zandalar (Alliance)
+						crit(1),		-- Zuldazar
+						crit(2),		-- Nazmir
+						crit(3),		-- Vol'dun
 					})),
 					h(ach(6012, {	-- Flame Keeper of Cataclysm (Horde)
 						crit(1),		-- Vashj'ir
@@ -222,6 +232,11 @@ _.Achievements =
 						crit(4),		-- Stormheim
 						crit(5),		-- Suramar
 					})),
+					h(ach(13340, {	-- Flame Keeper of Zandalar (Horde)
+						crit(1),		-- Zuldazar
+						crit(2),		-- Nazmir
+						crit(3),		-- Vol'dun
+					})),
 					a(ach(6011, {	-- Flame Warden of Cataclysm (Alliance)
 						crit(1),		-- Uldum
 						crit(2),		-- Deepholm
@@ -269,6 +284,11 @@ _.Achievements =
 						crit(12),		-- Teldrassil
 						crit(13),		-- Un'Goro Crater
 						crit(14),		-- Winterspring
+					})),
+					a(ach(13341, {	-- Flame Warden of Kul Tiras (Alliance)
+						crit(1),		-- Tiragarde Sound
+						crit(2),		-- Stormsong Valley
+						crit(3),		-- Drustvar
 					})),
 					a(ach(6008, {	-- Flame Warden of Northrend (Alliance)
 						crit(1),		-- Dragonblight
