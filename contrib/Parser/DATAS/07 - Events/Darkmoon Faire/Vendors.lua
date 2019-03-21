@@ -234,6 +234,15 @@ _.WorldEvents =
 						{	-- Flimsy Green Balloon
 							["itemID"] = 75041,	-- Flimsy Green Balloon
 						},
+						{	-- Horse Balloon
+							["itemID"] = 164969,	-- Horse Balloon
+						},
+						{	-- Murloc Balloon
+							["itemID"] = 164971,	-- Murloc Balloon
+						},
+						{	-- Wolf Balloon
+							["itemID"] = 164970,	-- Wolf Balloon
+						},
 					},
 				},
 				n(85484, { -- Chester
