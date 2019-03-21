@@ -290,6 +290,7 @@ namespace Parser_V2
                     case "f":
                     case "u":
                     case "b":
+                    case "r":
                     case "ilvl":
                     case "lvl":
                     case "q":
@@ -598,6 +599,7 @@ namespace Parser_V2
                     case "isToy":
                     case "f":
                     case "u":
+                    case "r":
                     case "b":
                     case "ilvl":
                     case "lvl":

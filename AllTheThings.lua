@@ -2179,7 +2179,9 @@ CacheFields = function(group)
 	if group.c and not containsValue(group.c, app.ClassIndex) then
 		group.nmc = true;	-- "Not My Class"
 	end
-	if group.races and not containsValue(group.races, app.RaceIndex) then
+	if group.r and group.r ~= app.FactionID then
+		group.nmr = true;	-- "Not My Race"
+	elseif group.races and not containsValue(group.races, app.RaceIndex) then
 		group.nmr = true;	-- "Not My Race"
 	end
 	if group.g then
@@ -3204,7 +3206,7 @@ app.AchievementFilter = 4;
 app.BaseAchievement = {
 	__index = function(t, key)
 		if key == "achievementID" then
-			local achievementID = t.altAchID and app.Faction == "Horde" and t.altAchID or t.achID;
+			local achievementID = t.altAchID and app.FactionID == 2 and t.altAchID or t.achID;
 			if achievementID then
 				rawset(t, "achievementID", achievementID);
 				return achievementID;
@@ -3236,7 +3238,7 @@ end
 app.BaseAchievementCriteria = { 
 	__index = function(t, key)
 		if key == "achievementID" then
-			local achievementID = t.altAchID and app.Faction == "Horde" and t.altAchID or t.achID;
+			local achievementID = t.altAchID and app.FactionID == 2 and t.altAchID or t.achID;
 			if achievementID then
 				rawset(t, "achievementID", achievementID);
 				return achievementID;
@@ -3699,12 +3701,41 @@ app.CreateEncounter = function(id, t)
 end
 
 -- Faction Lib
+(function()
+app.FACTION_RACES = {
+	[1] = {
+		1,	-- Human
+		3,	-- Dwarf
+		4,	-- Night Elf
+		7,	-- Gnome
+		11,	-- Draenei
+		22,	-- Worgen
+		25,	-- Pandaren [Alliance]
+		29,	-- Void Elf
+		30,	-- Lightforged
+		32,	-- Kul Tiran
+		34,	-- Dark Iron
+	},
+	[2] = {
+		2,	-- Orc
+		5,	-- Undead
+		6,	-- Tauren
+		8,	-- Troll
+		9,	-- Goblin
+		10,	-- Blood Elf
+		26,	-- Pandaren [Horde]
+		27,	-- Nightborne
+		28,	-- Highmountain
+		31,	-- Zandalari
+		36,	-- Mag'har
+	}
+};
 app.BaseFaction = {
 	-- name, description, standingID, barMin, barMax, barValue, atWarWith, canToggleAtWar, isHeader, isCollapsed, hasRep, isWatched, isChild, factionID, hasBonusRepGain, canBeLFGBonus = GetFactionInfo(factionIndex)
 	-- friendID, friendRep, friendMaxRep, friendName, friendText, friendTexture, friendTextLevel, friendThreshold, nextFriendThreshold = GetFriendshipReputation(factionID)
 	__index = function(t, key)
 		if key == "achievementID" then
-			local achievementID = t.altAchID and app.Faction == "Horde" and t.altAchID or t.achID;
+			local achievementID = t.altAchID and app.FactionID == 2 and t.altAchID or t.achID;
 			if achievementID then
 				rawset(t, "achievementID", achievementID);
 				return achievementID;
@@ -3759,6 +3790,7 @@ app.BaseFaction = {
 app.CreateFaction = function(id, t)
 	return createInstance(constructor(id, t, "factionID"), app.BaseFaction);
 end
+end)();
 
 -- Flight Path Lib
 (function()
@@ -3848,11 +3880,7 @@ end
 			elseif key == "nmr" then
 				local info = t.info;
 				if info and info.faction then
-					if info.faction == 2 then
-						return app.Faction == "Horde";
-					elseif info.faction == 1 then
-						return app.Faction == "Alliance";
-					end
+					return info.faction == app.FactionID;
 				end
 			elseif key == "info" then
 				return cachedNodeData[t.flightPathID];
@@ -4481,7 +4509,7 @@ end
 app.BaseGearSetHeader = {
 	__index = function(t, key)
 		if key == "achievementID" then
-			local achievementID = t.altAchID and app.Faction == "Horde" and t.altAchID or t.achID;
+			local achievementID = t.altAchID and app.FactionID == 2 and t.altAchID or t.achID;
 			if achievementID then
 				rawset(t, "achievementID", achievementID);
 				return achievementID;
@@ -4507,7 +4535,7 @@ end
 app.BaseGearSetSubHeader = {
 	__index = function(t, key)
 		if key == "achievementID" then
-			local achievementID = t.altAchID and app.Faction == "Horde" and t.altAchID or t.achID;
+			local achievementID = t.altAchID and app.FactionID == 2 and t.altAchID or t.achID;
 			if achievementID then
 				rawset(t, "achievementID", achievementID);
 				return achievementID;
@@ -4765,7 +4793,7 @@ end
 app.BaseMap = {
 	__index = function(t, key)
 		if key == "achievementID" then
-			local achievementID = t.altAchID and app.Faction == "Horde" and t.altAchID or t.achID;
+			local achievementID = t.altAchID and app.FactionID == 2 and t.altAchID or t.achID;
 			if achievementID then
 				rawset(t, "achievementID", achievementID);
 				return achievementID;
@@ -4932,7 +4960,7 @@ end
 app.BaseNPC = {
 	__index = function(t, key)
 		if key == "achievementID" then
-			local achievementID = t.altAchID and app.Faction == "Horde" and t.altAchID or t.achID;
+			local achievementID = t.altAchID and app.FactionID == 2 and t.altAchID or t.achID;
 			if achievementID then
 				rawset(t, "achievementID", achievementID);
 				return achievementID;
@@ -5120,7 +5148,7 @@ app.BaseQuest = {
 			end
 			return questName;
 		elseif key == "questName" then
-			local questID = t.altQuestID and app.Faction == "Horde" and t.altQuestID or t.questID;
+			local questID = t.altQuestID and app.FactionID == 2 and t.altQuestID or t.questID;
 			local questName = QuestTitleFromID[questID];
 			if questName then
 				t.retries = nil;
@@ -5133,7 +5161,7 @@ app.BaseQuest = {
 				t.retries = (t.retries or 0) + 1;
 			end
 		elseif key == "link" then
-			return "quest:" .. (t.altQuestID and app.Faction == "Horde" and t.altQuestID or t.questID);
+			return "quest:" .. (t.altQuestID and app.FactionID == 2 and t.altQuestID or t.questID);
 		elseif key == "icon" then
 			return "Interface\\Icons\\Achievement_Quests_Completed_08";
 		elseif key == "trackable" then
@@ -5636,7 +5664,7 @@ app.BaseVignette = {
 			end
 			return t.questName;
 		elseif key == "questName" then
-			local questID = t.altQuestID and app.Faction == "Horde" and t.altQuestID or t.questID;
+			local questID = t.altQuestID and app.FactionID == 2 and t.altQuestID or t.questID;
 			local questName = QuestTitleFromID[questID];
 			if questName then
 				t.retries = nil;
@@ -5649,7 +5677,7 @@ app.BaseVignette = {
 				t.retries = (t.retries or 0) + 1;
 			end
 		elseif key == "link" then
-			return "quest:" .. (t.altQuestID and app.Faction == "Horde" and t.altQuestID or t.questID);
+			return "quest:" .. (t.altQuestID and app.FactionID == 2 and t.altQuestID or t.questID);
 		elseif key == "icon" then
 			return "Interface\\Icons\\INV_Misc_Head_Dragon_Black";
 		elseif key == "collectible" then
@@ -5769,36 +5797,254 @@ function app.FilterItemSourceUnique(sourceInfo, allSources)
 		-- If at least one of the sources of this visual ID was collected, that means that we've acquired the base appearance.
 		local item = SearchForSourceIDQuickly(sourceInfo.sourceID);
 		if item then
-			-- If the first item is class locked...
-			if item.c then
-				if item.races then
-					-- If the first item is ALSO race locked...
+			if item.races then
+				-- If the first item is EXPLICITLY race locked...
+				for i, sourceID in ipairs(allSources or C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
+					if sourceID ~= sourceInfo.sourceID and C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(sourceID) then
+						local otherItem = SearchForSourceIDQuickly(sourceID);
+						if otherItem then
+							if item.f == otherItem.f or item.f == 2 or otherItem.f == 2 then
+								local otherSource = C_TransmogCollection_GetSourceInfo(sourceID);
+								if otherSource.categoryID == sourceInfo.categoryID and (otherSource.invType == sourceInfo.invType or sourceInfo.categoryID == 4 --[[CHEST: Robe vs Armor]] or C_Transmog.GetSlotForInventoryType(otherSource.invType) == C_Transmog.GetSlotForInventoryType(sourceInfo.invType)) then
+									if otherItem.races then
+										-- If the second item is EXPLICITLY race locked...
+										if containsAny(otherItem.races, item.races) then
+											-- return true;
+											-- Okay, great! Is the first item class locked?
+											if item.c then
+												-- If the first item is class locked...
+												if otherItem.c then
+													-- If this item is class locked...
+													if containsAny(otherItem.c, item.c) then
+														-- Since the source item is locked to the same race and class, you unlock the source ID. Congrats, mate!
+														return true;
+													end
+												else
+													-- This item is not class locked.
+													-- Since the source item is locked to the same race and class, you unlock the source ID. Congrats, mate!
+													return true;
+												end
+											else
+												-- If the first item is class locked...
+												if otherItem.c then
+													-- If this item is class locked...
+													-- Sorry bro, you can't do that. That would be cheating.... Or Unique Mode (Main Only).
+												else
+													-- This item is not class locked.
+													-- Since the source item is locked to the same race and class, you unlock the source ID. Congrats, mate!
+													return true;
+												end
+											end
+										end
+									elseif otherItem.r then
+										-- If the second item is FACTION race locked
+										if otherItem.r == item.r or containsAny(app.FACTION_RACES[otherItem.r], item.races) then
+											-- return true;
+											-- Okay, great! Is the first item class locked?
+											if item.c then
+												-- If the first item is class locked...
+												if otherItem.c then
+													-- If this item is class locked...
+													if containsAny(otherItem.c, item.c) then
+														-- Since the source item is locked to the same race and class, you unlock the source ID. Congrats, mate!
+														return true;
+													end
+												else
+													-- This item is not class locked.
+													-- Since the source item is locked to the same race and class, you unlock the source ID. Congrats, mate!
+													return true;
+												end
+											else
+												-- If the first item is class locked...
+												if otherItem.c then
+													-- If this item is class locked...
+													-- Sorry bro, you can't do that. That would be cheating.... Or Unique Mode (Main Only).
+												else
+													-- This item is not class locked.
+													-- Since the source item is locked to the same race and class, you unlock the source ID. Congrats, mate!
+													return true;
+												end
+											end
+										end
+									else
+										-- If the second item is not race locked...
+										-- Okay, great! Is the first item class locked?
+										if item.c then
+											-- If the first item is class locked...
+											if otherItem.c then
+												-- If this item is class locked...
+												if containsAny(otherItem.c, item.c) then
+													-- Since the source item is locked to the same race and class, you unlock the source ID. Congrats, mate!
+													return true;
+												end
+											else
+												-- This item is not class locked.
+												-- Since the source item is locked to the same race and class, you unlock the source ID. Congrats, mate!
+												return true;
+											end
+										else
+											-- If the first item is class locked...
+											if otherItem.c then
+												-- If this item is class locked...
+												-- Sorry bro, you can't do that. That would be cheating.... Or Unique Mode (Main Only).
+											else
+												-- This item is not class locked.
+												-- Since the source item is locked to the same race and class, you unlock the source ID. Congrats, mate!
+												return true;
+											end
+										end
+									end
+								end
+							end
+						else
+							-- OH NOES! It doesn't exist!
+							local otherSource = C_TransmogCollection_GetSourceInfo(sourceID);
+							if otherSource.categoryID == sourceInfo.categoryID then
+								if otherSource.invType == sourceInfo.invType or sourceInfo.categoryID == 4 --[[CHEST: Robe vs Armor]] or C_Transmog.GetSlotForInventoryType(otherSource.invType) == C_Transmog.GetSlotForInventoryType(sourceInfo.invType) then
+									-- print("OH NOES! MISSING SOURCE ID ", sourceID, " FOUND THAT YOU HAVE COLLECTED, BUT ATT DOESNT HAVE!!!!");
+									return true;
+								else
+									-- print(otherSource.sourceID, sourceInfo.sourceID, "share appearances, but one is ", sourceInfo.invType, "and the other is", otherSource.invType, sourceInfo.categoryID);
+								end
+							end
+						end
+					end
+				end
+			elseif item.r then
+				-- If the first item is FACTION race locked...
+				for i, sourceID in ipairs(allSources or C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
+					if sourceID ~= sourceInfo.sourceID and C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(sourceID) then
+						local otherItem = SearchForSourceIDQuickly(sourceID);
+						if otherItem then
+							if item.f == otherItem.f or item.f == 2 or otherItem.f == 2 then
+								local otherSource = C_TransmogCollection_GetSourceInfo(sourceID);
+								if otherSource.categoryID == sourceInfo.categoryID and (otherSource.invType == sourceInfo.invType or sourceInfo.categoryID == 4 --[[CHEST: Robe vs Armor]] or C_Transmog.GetSlotForInventoryType(otherSource.invType) == C_Transmog.GetSlotForInventoryType(sourceInfo.invType)) then
+									if otherItem.r then
+										-- If the second item is FACTION race locked
+										if otherItem.r == item.r then
+											-- return true;
+											-- Okay, great! Is the first item class locked?
+											if item.c then
+												-- If the first item is class locked...
+												if otherItem.c then
+													-- If this item is class locked...
+													if containsAny(otherItem.c, item.c) then
+														-- Since the source item is locked to the same race and class, you unlock the source ID. Congrats, mate!
+														return true;
+													end
+												else
+													-- This item is not class locked.
+													-- Since the source item is locked to the same race and class, you unlock the source ID. Congrats, mate!
+													return true;
+												end
+											else
+												-- If the first item is class locked...
+												if otherItem.c then
+													-- If this item is class locked...
+													-- Sorry bro, you can't do that. That would be cheating.... Or Unique Mode (Main Only).
+												else
+													-- This item is not class locked.
+													-- Since the source item is locked to the same race and class, you unlock the source ID. Congrats, mate!
+													return true;
+												end
+											end
+										end
+									elseif otherItem.races then
+										-- If the second item is EXPLICITLY race locked...
+										if containsAny(otherItem.races, app.FACTION_RACES[item.r]) then
+											-- return true;
+											-- Okay, great! Is the first item class locked?
+											if item.c then
+												-- If the first item is class locked...
+												if otherItem.c then
+													-- If this item is class locked...
+													if containsAny(otherItem.c, item.c) then
+														-- Since the source item is locked to the same race and class, you unlock the source ID. Congrats, mate!
+														return true;
+													end
+												else
+													-- This item is not class locked.
+													-- Since the source item is locked to the same race and class, you unlock the source ID. Congrats, mate!
+													return true;
+												end
+											else
+												-- If the first item is class locked...
+												if otherItem.c then
+													-- If this item is class locked...
+													-- Sorry bro, you can't do that. That would be cheating.... Or Unique Mode (Main Only).
+												else
+													-- This item is not class locked.
+													-- Since the source item is locked to the same race and class, you unlock the source ID. Congrats, mate!
+													return true;
+												end
+											end
+										end
+									else
+										-- If the second item is not race locked...
+										-- Okay, great! Is the first item class locked?
+										if item.c then
+											-- If the first item is class locked...
+											if otherItem.c then
+												-- If this item is class locked...
+												if containsAny(otherItem.c, item.c) then
+													-- Since the source item is locked to the same race and class, you unlock the source ID. Congrats, mate!
+													return true;
+												end
+											else
+												-- This item is not class locked.
+												-- Since the source item is locked to the same race and class, you unlock the source ID. Congrats, mate!
+												return true;
+											end
+										else
+											-- If the first item is class locked...
+											if otherItem.c then
+												-- If this item is class locked...
+												-- Sorry bro, you can't do that. That would be cheating.... Or Unique Mode (Main Only).
+											else
+												-- This item is not class locked.
+												-- Since the source item is locked to the same race and class, you unlock the source ID. Congrats, mate!
+												return true;
+											end
+										end
+									end
+								end
+							end
+						else
+							-- OH NOES! It doesn't exist!
+							local otherSource = C_TransmogCollection_GetSourceInfo(sourceID);
+							if otherSource.categoryID == sourceInfo.categoryID then
+								if otherSource.invType == sourceInfo.invType or sourceInfo.categoryID == 4 --[[CHEST: Robe vs Armor]] or C_Transmog.GetSlotForInventoryType(otherSource.invType) == C_Transmog.GetSlotForInventoryType(sourceInfo.invType) then
+									-- print("OH NOES! MISSING SOURCE ID ", sourceID, " FOUND THAT YOU HAVE COLLECTED, BUT ATT DOESNT HAVE!!!!");
+									return true;
+								else
+									-- print(otherSource.sourceID, sourceInfo.sourceID, "share appearances, but one is ", sourceInfo.invType, "and the other is", otherSource.invType, sourceInfo.categoryID);
+								end
+							end
+						end
+					end
+				end
+			else
+				-- If the first item is not race locked...
+				-- Okay, great! Is the first item class locked?
+				if item.c then
 					for i, sourceID in ipairs(allSources or C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
 						if sourceID ~= sourceInfo.sourceID and C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(sourceID) then
 							local otherItem = SearchForSourceIDQuickly(sourceID);
 							if otherItem then
 								if item.f == otherItem.f or item.f == 2 or otherItem.f == 2 then
 									local otherSource = C_TransmogCollection_GetSourceInfo(sourceID);
-									if otherSource.categoryID == sourceInfo.categoryID then
-										if otherSource.invType == sourceInfo.invType or sourceInfo.categoryID == 4 --[[CHEST: Robe vs Armor]] or C_Transmog.GetSlotForInventoryType(otherSource.invType) == C_Transmog.GetSlotForInventoryType(sourceInfo.invType) then
+									if otherSource.categoryID == sourceInfo.categoryID and (otherSource.invType == sourceInfo.invType or sourceInfo.categoryID == 4 --[[CHEST: Robe vs Armor]] or C_Transmog.GetSlotForInventoryType(otherSource.invType) == C_Transmog.GetSlotForInventoryType(sourceInfo.invType)) then
+										if not otherItem.r and not otherItem.races then
+											-- If this item is not race or faction locked...
 											if otherItem.c then
 												-- If this item is class locked...
 												if containsAny(otherItem.c, item.c) then
-													if otherItem.races then
-														-- If this item is ALSO race locked.
-														if containsAny(otherItem.races, item.races) then
-															-- Since the source item is locked to the same race and class, you unlock the source ID. Congrats, mate!
-															return true;
-														end
-													else
-														-- This item is not race locked.
-														-- Since the source item is race locked, but this item matches the class requirements and is not race locked, you unlock the source ID. Congrats, mate!
-														return true;
-													end
+													-- Since the source item is locked to the same race and class, you unlock the source ID. Congrats, mate!
+													return true;
 												end
 											else
 												-- This item is not class locked.
-												-- Since this item is also not class or race locked, you unlock the source ID. Congrats, mate!
+												-- Since the source item is locked to the same race and class, you unlock the source ID. Congrats, mate!
 												return true;
 											end
 										end
@@ -5819,80 +6065,21 @@ function app.FilterItemSourceUnique(sourceInfo, allSources)
 						end
 					end
 				else
-					-- Not additionally race locked.
 					for i, sourceID in ipairs(allSources or C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
 						if sourceID ~= sourceInfo.sourceID and C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(sourceID) then
 							local otherItem = SearchForSourceIDQuickly(sourceID);
 							if otherItem then
 								if item.f == otherItem.f or item.f == 2 or otherItem.f == 2 then
 									local otherSource = C_TransmogCollection_GetSourceInfo(sourceID);
-									if otherSource.categoryID == sourceInfo.categoryID then
-										if otherSource.invType == sourceInfo.invType or sourceInfo.categoryID == 4 --[[CHEST: Robe vs Armor]] or C_Transmog.GetSlotForInventoryType(otherSource.invType) == C_Transmog.GetSlotForInventoryType(sourceInfo.invType) then
-											if otherItem.c then
-												-- If this item is class locked...
-												if containsAny(otherItem.c, item.c) then
-													if otherItem.races then
-														-- Since the item is race locked, you don't unlock this source ID despite matching the class. Sorry mate.
-													else
-														-- This item is not race locked.
-														-- Since this item is also not race locked, you unlock the source ID. Congrats, mate!
-														return true;
-													end
-												end
-											else
-												-- This item is not class locked.
-												if otherItem.races then
-													-- Since the item is race locked, you don't unlock this source ID despite matching the class. Sorry mate.
-												else
-													-- This item is not race locked.
-													-- Since this item is also not race locked, you unlock the source ID. Congrats, mate!
-													return true;
-												end
-											end
-										end
-									end
-								end
-							else
-								local otherSource = C_TransmogCollection_GetSourceInfo(sourceID);
-								if otherSource.categoryID == sourceInfo.categoryID then
-									if otherSource.invType == sourceInfo.invType or sourceInfo.categoryID == 4 --[[CHEST: Robe vs Armor]] or C_Transmog.GetSlotForInventoryType(otherSource.invType) == C_Transmog.GetSlotForInventoryType(sourceInfo.invType) then
-										-- print("OH NOES! MISSING SOURCE ID ", sourceID, " FOUND THAT YOU HAVE COLLECTED, BUT ATT DOESNT HAVE!!!!");
-										return true;
-									else
-										-- print(otherSource.sourceID, sourceInfo.sourceID, "share appearances, but one is ", sourceInfo.invType, "and the other is", otherSource.invType, sourceInfo.categoryID);
-									end
-								end
-							end
-						end
-					end
-				end
-			else
-				if item.races then
-					-- If the first item is race locked...
-					for i, sourceID in ipairs(allSources or C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
-						if sourceID ~= sourceInfo.sourceID and C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(sourceID) then
-							local otherItem = SearchForSourceIDQuickly(sourceID);
-							if otherItem then
-								if item.f == otherItem.f or item.f == 2 or otherItem.f == 2 then
-									if otherItem.c then
-										-- If this item is class locked...
-										-- Since the item is class locked, you don't unlock this source ID despite matching the class. Sorry mate.
-									else
-										-- This item is not class locked.
-										if otherItem.races then
-											-- If this item is race locked.
-											if containsAny(otherItem.races, item.races) then
-												-- Since the source item is locked to the same race and class, you unlock the source ID. Congrats, mate!
-												return true;
-											end
-										else
-											-- This item is not race locked.
-											-- Since the source item is locked to the a race, but this item is not, you unlock the source ID. Congrats, mate!
+									if otherSource.categoryID == sourceInfo.categoryID and (otherSource.invType == sourceInfo.invType or sourceInfo.categoryID == 4 --[[CHEST: Robe vs Armor]] or C_Transmog.GetSlotForInventoryType(otherSource.invType) == C_Transmog.GetSlotForInventoryType(sourceInfo.invType)) then
+										if not otherItem.r and not otherItem.races and not otherItem.c then
+											-- If this item is not class, race or faction locked, you unlock the source ID. Congrats, mate!
 											return true;
 										end
 									end
 								end
 							else
+								-- OH NOES! It doesn't exist!
 								local otherSource = C_TransmogCollection_GetSourceInfo(sourceID);
 								if otherSource.categoryID == sourceInfo.categoryID then
 									if otherSource.invType == sourceInfo.invType or sourceInfo.categoryID == 4 --[[CHEST: Robe vs Armor]] or C_Transmog.GetSlotForInventoryType(otherSource.invType) == C_Transmog.GetSlotForInventoryType(sourceInfo.invType) then
@@ -5903,48 +6090,6 @@ function app.FilterItemSourceUnique(sourceInfo, allSources)
 									end
 								end
 							end
-							
-						end
-					end
-				else
-					-- Not race nor class locked.
-					for i, sourceID in ipairs(allSources or C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
-						if sourceID ~= sourceInfo.sourceID and C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(sourceID) then
-							local otherItem = SearchForSourceIDQuickly(sourceID);
-							if otherItem then
-								if item.f == otherItem.f or item.f == 2 or otherItem.f == 2 then
-									local otherSource = C_TransmogCollection_GetSourceInfo(sourceID);
-									if otherSource.categoryID == sourceInfo.categoryID then
-										if otherSource.invType == sourceInfo.invType or sourceInfo.categoryID == 4 --[[CHEST: Robe vs Armor]] or C_Transmog.GetSlotForInventoryType(otherSource.invType) == C_Transmog.GetSlotForInventoryType(sourceInfo.invType) then
-											if otherItem.c then
-												-- If this item is class locked...
-												-- Since the item is class locked, you don't unlock this source ID despite matching the class. Sorry mate.
-											else
-												-- This item is not class locked.
-												if otherItem.races then
-													-- If this item is race locked.
-													-- Since the item is race locked, you don't unlock this source ID despite matching the race. Sorry mate.
-												else
-													-- This item is not race locked.
-													-- The source item is not class nor race locked, you unlock this source ID! Congrats, mate!
-													return true;
-												end
-											end
-										end
-									end
-								end
-							else
-								local otherSource = C_TransmogCollection_GetSourceInfo(sourceID);
-								if otherSource.categoryID == sourceInfo.categoryID then
-									if otherSource.invType == sourceInfo.invType or sourceInfo.categoryID == 4 --[[CHEST: Robe vs Armor]] or C_Transmog.GetSlotForInventoryType(otherSource.invType) == C_Transmog.GetSlotForInventoryType(sourceInfo.invType) then
-										-- print("OH NOES! MISSING SOURCE ID ", sourceID, " FOUND THAT YOU HAVE COLLECTED, BUT ATT DOESNT HAVE!!!!");
-										return true;
-									else
-										-- print(otherSource.sourceID, sourceInfo.sourceID, "share appearances, but one is ", sourceInfo.invType, "and the other is", otherSource.invType, sourceInfo.categoryID);
-									end
-								end
-							end
-							
 						end
 					end
 				end
@@ -6807,7 +6952,7 @@ local function CreateMiniListForGroup(group)
 							if sq and app.GroupFilter(sq) and not sq.isBreadcrumb then
 								if sq.altQuestID then
 									-- Alt Quest IDs are always Horde.
-									if app.Faction == "Horde" then
+									if app.FactionID == 2 then
 										if sq.altQuestID == sourceQuestID then
 											found = sq;
 											break;
@@ -7583,13 +7728,17 @@ local function RowOnEnter(self)
 			end
 			GameTooltip:AddDoubleLine("Classes", str);
 		end
-		if reference.races and app.Settings:GetTooltipSetting("RaceRequirements") then
-			local str = "";
-			for i,race in ipairs(reference.races) do
-				if i > 1 then str = str .. ", "; end
-				str = str .. C_CreatureInfo.GetRaceInfo(race).raceName;
+		if app.Settings:GetTooltipSetting("RaceRequirements") then
+			if reference.races then
+				local str = "";
+				for i,race in ipairs(reference.races) do
+					if i > 1 then str = str .. ", "; end
+					str = str .. C_CreatureInfo.GetRaceInfo(race).raceName;
+				end
+				GameTooltip:AddDoubleLine("Races", str);
+			elseif reference.r and reference.r > 0 then
+				GameTooltip:AddDoubleLine("Races", (reference.r == 1 and "Alliance Only") or (reference.r == 2 and "Horde Only") or "Unknown");
 			end
-			GameTooltip:AddDoubleLine("Races", str);
 		end
 		if reference.isDaily then GameTooltip:AddLine("This can be completed daily."); end
 		if reference.isWeekly then GameTooltip:AddLine("This can be completed weekly."); end
@@ -8102,7 +8251,7 @@ function app:GetDataCache()
 		
 		-- Mounts
 		if app.Categories.Mounts then
-			db = app.CreateAchievement(app.Faction == "Horde" and 12934 or 12933, app.Categories.Mounts);
+			db = app.CreateAchievement(app.FactionID == 2 and 12934 or 12933, app.Categories.Mounts);
 			db.expanded = false;
 			db.text = MOUNTS;
 			table.insert(g, db);
@@ -8237,7 +8386,7 @@ function app:GetDataCache()
 		
 		-- Mounts (Dynamic)
 		--[[
-		db = app.CreateAchievement(app.Faction == "Horde" and 10355 or 10356, GetTempDataMember("MOUNT_CACHE"));
+		db = app.CreateAchievement(app.FactionID == 2 and 10355 or 10356, GetTempDataMember("MOUNT_CACHE"));
 		db.expanded = false;
 		db.text = "Mounts (Dynamic)";
 		table.insert(g, db);
@@ -9286,16 +9435,16 @@ end):Show();
 										if group.parent.achievementID then
 											group = app.CreateAchievement(group.parent.achievementID, 
 												{ g = { group }, total = group.total, progress = group.progress, 
-													u = group.parent.u, races = group.parent.races, c = group.parent.c, nmc = group.parent.nmc, nmr = group.parent.nmr });
+													u = group.parent.u, races = group.parent.races, r = group.r, c = group.parent.c, nmc = group.parent.nmc, nmr = group.parent.nmr });
 										else
 											group = app.CreateAchievement(group.achievementID,
 												{ g = { group }, total = group.total, progress = group.progress,
-													u = group.u, races = group.races, c = group.c, nmc = group.nmc, nmr = group.nmr });
+													u = group.u, races = group.races, r = group.r, c = group.c, nmc = group.nmc, nmr = group.nmr });
 										end
 									end
 								elseif group.criteriaID and group.parent.achievementID then
 									group = app.CreateAchievement(group.parent.achievementID, { g = { group }, total = group.total, progress = group.progress, 
-										u = group.parent.u, races = group.parent.races, c = group.parent.c, nmc = group.parent.nmc, nmr = group.parent.nmr });
+										u = group.parent.u, races = group.parent.races, r = group.r, c = group.parent.c, nmc = group.parent.nmc, nmr = group.parent.nmr });
 								end
 								MergeObject(app.HolidayHeader.g, group);
 							elseif group.instanceID then
@@ -11046,6 +11195,14 @@ app.events.VARIABLES_LOADED = function()
 	local _, id = GetClassInfo(classIndex);
 	app.Me = "|c" .. RAID_CLASS_COLORS[id].colorStr .. name .. "-" .. (realm or GetRealmName()) .. "|r";
 	app.Faction = UnitFactionGroup("player");
+	if app.Faction == "Horde" then
+		app.FactionID = 2;
+	elseif app.Faction == "Alliance" then
+		app.FactionID = 1;
+	else
+		-- Neutral Pandaren or... something else. Scourge? Neat.
+		app.FactionID = 0;
+	end
 	
 	-- Check to see if we have a leftover ItemDB cache
 	GetDataMember("CollectedBuildings", {});

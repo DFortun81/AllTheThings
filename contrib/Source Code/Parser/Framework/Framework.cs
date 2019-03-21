@@ -147,6 +147,7 @@ namespace Parser_V2
             // Merge all relevant Item Data into the data container.
             Items.Merge(data);
             Items.MergeInto(data);
+            Objects.AssignFactionID(data);
 
             // Cache the Filter ID.
             Objects.Filters filter = Objects.Filters.Ignored;
@@ -307,10 +308,17 @@ namespace Parser_V2
         {
             // Go through all of the items in the database and calculate the Filter ID
             // if the Filter ID is not already assigned. (manual assignment should always override this)
-            foreach (var data in Items.AllItems) Objects.AssignFilterID(data);
+            foreach (var data in Items.AllItems)
+            {
+                Objects.AssignFilterID(data);
+                Objects.AssignFactionID(data);
+            }
 
             // Merge the Item Data into the Containers.
-            foreach (var container in Objects.AllContainers.Values) Process(container, 1, 1);
+            foreach (var container in Objects.AllContainers.Values)
+            {
+                Process(container, 1, 1);
+            }
 
             // Sort World Drops by Name
             var worldDrops = Objects.GetNull("WorldDrops");
