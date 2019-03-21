@@ -930,15 +930,36 @@ _.Instances = { tier(7, {	-- Legion
 					i(147001),
 					i(147052)
 				})),
-				cr(117269, e(1898, {	-- Kil'jaeden
-					i(151539),	-- Technique: Glyph of Ember Shards
-					i(147072),
-					i(147066),
-					i(147034),
-					i(147347),
-					i(146988),
-					i(147048),
-					i(147046)
+				cr(117269, e(1898, {	-- Kil'jaeden					
+						{	-- Cutting Edge: Kil'jaeden
+							["achievementID"] = 11875,	-- Cutting Edge: Kil'jaeden
+							["u"] = 2,	-- Legacy Achievement
+						},
+						{	-- Ahead of the Curve: Kil'jaeden
+							["achievementID"] = 11874,	-- Ahead of the Curve: Kil'jaeden
+							["u"] = 2,	-- Legacy Achievement
+						},
+						{	-- Realm First! Kil'jaeden
+							["achievementID"] = 11783,	-- Realm First! Kil'jaeden
+							["u"] = 2,	-- Legacy Achievement
+						},
+						{	-- Mythic: Kil'jaeden
+							["achievementID"] = 11781,	-- Mythic: Kil'jaeden
+							["g"] = {
+								{	-- <Name> the Darkener
+									["titleID"] = 357,	-- %s the Darkener
+								},
+							},
+						},
+						i(151539),	-- Technique: Glyph of Ember Shards
+						i(147072),
+						i(147066),
+						i(147034),
+						i(147347),
+						i(146988),
+						i(147048),
+						i(147046),
+					
 				})),
 			})
 		},

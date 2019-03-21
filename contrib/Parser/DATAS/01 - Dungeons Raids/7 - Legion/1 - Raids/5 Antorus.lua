@@ -1680,6 +1680,26 @@ _.Instances = { tier(7, {	-- Legion
 							un(2, i(152901)),	-- Kirin Tor Summoning Cystal (MOUNT!)
 						}),
 					})),
+					{	-- Cutting Edge: Argus the Unmaker
+						["achievementID"] = 12111,	-- Cutting Edge: Argus the Unmaker
+						["u"] = 2,	-- Legacy Achievement
+					},
+					{	-- Ahead of the Curve: Argus the Unmaker
+						["achievementID"] = 12110,	-- Ahead of the Curve: Argus the Unmaker
+						["u"] = 2,	-- Legacy Achievement
+					},
+					{	-- Realm First! Argus the Unmaker
+						["achievementID"] = 12258,	-- Realm First! Argus the Unmaker
+						["u"] = 2,	-- Legacy Achievement
+					},
+					{	-- Mythic: Argus the Unmaker
+						["achievementID"] = 12002,	-- Mythic: Argus the Unmaker
+						["g"] = {
+							{	-- Titanslayer <Name>
+								["titleID"] = 364,	-- Titanslayer %s
+							},
+						},
+					},
 					i(152789),	-- Shackled Ur'zul (MOUNT! MYTHIC ONLY)
 					i(155880),	-- Scythe of the Unmaker (not in DJ)
 					i(152423),	-- Helm of the Awakened Soul

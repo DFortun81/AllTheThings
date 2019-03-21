@@ -411,7 +411,7 @@ _.Instances =
 								},
 							},
 							{	-- G'huun
-								["encounterID"] = 2147,	--  Mythrax the Unraveler
+								["encounterID"] = 2147,	--  G'huun
 								["crs"] = {
 									132998,	-- G'huun
 									134590,	-- Blightspreader Tendril
@@ -421,15 +421,37 @@ _.Instances =
 								["g"] = {
 									{	-- Cutting Edge: G'huun
 										["achievementID"] = 12535,	-- Cutting Edge: G'huun
+										["u"] = 2,	-- Legacy Achievement
 									},
 									{	-- Ahead of the Curve: G'huun
 										["achievementID"] = 12536,	-- Ahead of the Curve: G'huun
+										["u"] = 2,	-- Legacy Achievement
 									},
 									{	-- Mythic: G'huun
 										["achievementID"] = 12533,	-- Mythic: G'huun
 										["g"] = {
 											{	-- <Name> the Purifier
 												["titleID"] = 381,	-- %s the Purifier
+											},
+										},
+									},
+									{	-- Hall of Fame: G'huun (Alliance)
+										["achievementID"] = 12542,	-- Hall of Fame: G'huun (Alliance)
+										["u"] = 2,	-- Legacy Achievement
+										["races"] = ALLIANCE_ONLY,  -- Alliance races
+										["g"] = {
+											{	-- <Name>, Famed Slayer of G'huun
+												["titleID"] = 374,	-- %s Famed Slayer of G'huun
+											},
+										},
+									},
+									{	-- Hall of Fame: G'huun (Horde)
+										["achievementID"] = 12543,	-- Hall of Fame: G'huun (Horde)
+										["u"] = 2,	-- Legacy Achievement
+										["races"] = HORDE_ONLY,  -- Horde races
+										["g"] = {
+											{	-- <Name>, Famed Slayer of G'huun
+												["titleID"] = 374,	-- %s Famed Slayer of G'huun
 											},
 										},
 									},

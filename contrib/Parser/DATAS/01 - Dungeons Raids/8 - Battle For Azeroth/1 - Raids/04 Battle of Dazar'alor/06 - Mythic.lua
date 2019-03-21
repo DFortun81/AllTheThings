@@ -404,6 +404,42 @@ _.Instances =
 							{	-- Lady Jaina Proudmoore
 								["encounterID"] = 2343,
 								["g"] = {
+									{	-- Cutting Edge: Lady Jaina Proudmoore
+										["achievementID"] = 13323,	-- Cutting Edge: Lady Jaina Proudmoore
+										--["u"] = 2,	-- Legacy Achievement
+									},
+									{	-- Ahead of the Curve: Lady Jaina Proudmoore
+										["achievementID"] = 13322,	-- Ahead of the Curve: Lady Jaina Proudmoore
+										--["u"] = 2,	-- Legacy Achievement
+									},
+									{	-- Mythic: Lady Jaina Proudmoore
+										["achievementID"] = 13314,	-- Mythic: Lady Jaina Proudmoore
+										["g"] = {
+											{	-- <Name>, Hero of Dazar'alor
+												["titleID"] = 386,	-- %s Hero of Dazar'alor
+											},
+										},
+									},
+									{	-- Hall of Fame: Lady Jaina Proudmoore (Alliance)
+										["achievementID"] = 13326,	-- Hall of Fame: Lady Jaina Proudmoore (Alliance)
+										--["u"] = 2,	-- Legacy Achievement
+										["races"] = ALLIANCE_ONLY,  -- Alliance races
+										["g"] = {
+											{	-- <Name>, Famed Conqueror of Dazar'alor
+												["titleID"] = 384,	-- %s Famed Conqueror of Dazar'alor
+											},
+										},
+									},
+									{	-- Hall of Fame: Lady Jaina Proudmoore (Horde)
+										["achievementID"] = 13327,	-- Hall of Fame: Lady Jaina Proudmoore (Horde)
+										["u"] = 2,	-- Legacy Achievement
+										["races"] = HORDE_ONLY,  -- Horde races
+										["g"] = {
+											{	-- <Name>, Famed Defender of Dazar'alor
+												["titleID"] = 385,	-- %s Famed Defender of Dazar'alor
+											},
+										},
+									},
 									{	-- Glacial Tidestorm
 										["itemID"] = 166705,	-- Glacial Tidestorm
 									},
