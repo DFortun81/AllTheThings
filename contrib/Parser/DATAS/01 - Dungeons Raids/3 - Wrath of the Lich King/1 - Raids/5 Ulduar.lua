@@ -514,7 +514,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				cr(33293, e(1640, {	-- XT-002 Deconstructor
 					{	-- Heartbreaker
 						["achievementID"] = 12330,	-- Heartbreaker
-						["g"] = bubbleDown({["u"] = 45}, {	-- apparently this is the only still-broken boss!
+						["g"] = {
 							{	-- Aesir's Edge
 								["itemID"] = 45868,	-- Aesir's Edge
 							},
@@ -545,7 +545,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							{	-- Seal of Ulduar
 								["itemID"] = 45871,	-- Seal of Ulduar
 							},
-						}),
+						},
 					},
 					{	-- Must Deconstruct Faster
 						["achievementID"] = 12329,	-- Must Deconstruct Faster
