@@ -2425,6 +2425,7 @@ _.Zones =
 							un(2, i(103120)),	-- Elite Prideful Gladiator's bonecracker
 							un(2, i(103002)),	-- Elite Prideful Gladiator's Touch of Defeat
 							un(2, i(103118)),	-- Elite Prideful Gladiator's baton of light
+							un(2, i(102990)),	-- Elite Prideful Gladiator's Longbow
 							un(2, i(103039)),	-- Elite Prideful Gladiator's Chain Helm
 							un(2, i(103041)),	-- Elite Prideful Gladiator's Chain Spaulders
 							un(2, i(103037)),	-- Elite Prideful Gladiator's Chain Armor
@@ -2749,9 +2750,14 @@ _.Zones =
 							un(2, i(85109)),	-- Elite Malevolent Gladiator's Battle Staff  -- Staffs
 							un(2, i(85111)),	-- Elite Malevolent Gladiator's Staff
 							un(2, i(85110)),	-- Elite Malevolent Gladiator's Energy Staff
-							un(2, i(85108)),	-- Elite Malevolent Gladiator's Pike  -- Polearms
+							un(2, i(85108)),	-- Elite Malevolent Gladiator's Pike
+							un(2, i(84786)),	-- Malevolent Gladiator's Pike (used to upgrade to elite)
+							un(2, i(84790)),	-- Malevolent Gladiator's Greatsword (used to upgrade to elite)
+							un(2, i(84791)),	-- Malevolent Gladiator's Decapitator (used to upgrade to elite)
 							un(2, i(85135)),	-- Elite Malevolent Gladiator's Quickblade  -- Swords
 							un(2, i(85134)),	-- Elite Malevolent Gladiator's Slicer
+							un(2, i(84969)),	-- Malevolent Gladiator's Quickblade(used to upgrade to elite)
+							un(2, i(84968)),	-- Malevolent Gladiator's Slicer(used to upgrade to elite)
 							un(2, i(85112)),	-- Elite Malevolent Gladiator's Greatsword
 							un(2, i(85129)),	-- Elite Malevolent Gladiator's Render  -- Fist Weapons
 							un(2, i(85128)),	-- Elite Malevolent Gladiator's Ripper
@@ -2769,10 +2775,19 @@ _.Zones =
 							un(2, i(85130)),	-- Elite Malevolent Gladiator's Pummeler
 							un(2, i(85137)),	-- Elite Malevolent Gladiator's Gavel
 							un(2, i(85107)),	-- Elite Malevolent Gladiator's Bonegrinder
+							un(2, i(84964)),	-- Malevolent Gladiator's pummeler (used to upgrade to elite)
+							un(2, i(84970)),	-- Malevolent Gladiator's bonecracker (used to upgrade to elite)
+							un(2, i(84971)),	-- Malevolent GLadiator's gavel (used to upgrade to elite)
+							un(2, i(84785)),	-- Malevolent Gladiator's Bonegrinder (used to upgrade to elite)
 							un(2, i(85121)),	-- Elite Malevolent GLadiator's Touch of Defeat
+							un(2, i(85114)),	-- Elite Malevolent GLadiator's Endgame
+							un(2, i(85115)),	-- Elite Malevolent GLadiator's Reprieve
 							un(2, i(85124)),	-- Elite Malevolent Gladiator's shield wall
 							un(2, i(85125)),	-- Elite Malevolent Gladiator's barrier
 							un(2, i(85126)),	-- Elite Malevolent GLadiator's redoubt
+							un(2, i(84910)),	-- Malevolent Gladiator's shield wall (used to upgrade to elite)
+							un(2, i(84911)),	-- Malevolent Gladiator's barrier (used to upgrade to elite)
+							un(2, i(84912)),	-- Malevolent GLadiator's redoubt (used to upgrade to elite)
 							un(2, i(84993)), -- Elite Malevolent Gladiator's Dreadplate Chestpiece  -- DK
 							un(2, i(85028)), -- Elite Malevolent Gladiator's Dreadplate Gauntlets
 							un(2, i(85046)), -- Elite Malevolent Gladiator's Dreadplate Helm

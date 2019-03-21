@@ -564,6 +564,9 @@ _.NeverImplemented =
 			un(1, i(27718)),	-- Aldor Defender's Legplates
 			un(1, i(12106)),	-- Boulderskin Breastplate
 			un(1, i(25797)),	-- Crushing Grasp
+			un(1, i(80952)),	-- Peacebreaker's burnished headcorver
+			un(1, i(80953)),	-- Peacebreaker's armored helm
+			un(1, i(80954)),	-- Peacebreaker's heavy helm
 			un(1, i(38524)),	-- Carapace of the Scarlet Commander
 			un(1, i(32163)),	    -- Chancellor's PlateChestpiece
 			un(1, i(32164)),	    -- Chancellor's Plate Handguards
@@ -649,6 +652,7 @@ _.NeverImplemented =
 		n(-349, { -- Cosmetic
 			un(1, i(134110)), -- Hidden Helm
 			un(1, i(134111)), -- Hidden Cloak
+			un(1, i(81143)), 	-- Avanced Deepdive Helmet (Mop Beta Only)
 			un(1, i(52488)),	-- Jeweler's Sapphire Monocle (other version got added)
 			un(1, i(133996)),	-- Was testing version, they added i(134022))	-- Burgy Blackheart's Handsome Hat
 			un(1, i(142503)), 	-- Hidden Shirt
@@ -1296,6 +1300,7 @@ _.NeverImplemented =
 	n(-319, { -- Weapons
 		n(-347, { -- Bows
 			un(1, i(108783)),    -- Unknown
+			un(1, i(115294)),	-- Spectral Longbow
 			un(1, i(109283)),    -- 6.0 QA Combat Test Hunter Bow
 			un(1, i(64783)),	-- Bloodthirsty Gladiator's Longbow(Epic BG item never made it out of beta)))
 		}),
@@ -1319,6 +1324,7 @@ _.NeverImplemented =
 		}),
 		n(-333, { -- Daggers
 			un(1, i(108785)),	-- Unknown
+			un(1, i(115295)),	-- Spectral Dagger
 			un(1, i(108786)),	-- Unknown
 			un(1, i(64848)),	-- Bloodthirsty Gladiator's Shanker(Epic BG Item, never made it out of beta)
 			un(1, i(64859)),	-- Bloodthirsty Gladiator's Spellblade (Epic BG Item, never made it out of beta))
@@ -1406,6 +1412,7 @@ _.NeverImplemented =
 			un(1, i(109438)),	-- Unknown
 			un(1, i(109470)),	-- Unknown
 			un(1, i(109533)),	-- Unknown
+			un(1, i(90331)),	-- Face Smasher Warhammer
 		}),
 		n(-334, { -- One-Handed Axes
 			un(1, i(68050)),	-- Shatterscale Mightfish
