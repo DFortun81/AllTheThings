@@ -98,6 +98,7 @@ _.PetJournal =
 		p(1762),	-- Hog-Nosed Bat
 		p(2379),	-- Honey Bee
 		h(p(332)),	-- Horde Balloon (Horde)
+		p(2484),	-- Horse Ballon
 		p(49),		-- Hyacinth Macaw
 		p(1532),	-- Ikky
 		p(534),		-- Imperial Eagle Chick
@@ -114,6 +115,7 @@ _.PetJournal =
 		p(1403),	-- Mechanical Axebeak
 		p(722),		-- Mei Li Sparkler
 		p(149),		-- Miniwing
+		p(2483),	-- Murloc Ballon
 		p(1514),	-- Mystical Spring Bouquet
 		p(186),		-- Nether Ray Fry
 		p(1715),	-- Nightwatch Swooper
@@ -158,6 +160,7 @@ _.PetJournal =
 		p(2441),	-- Squawkling
 		p(1546),	-- Stormwing
 		p(1570),	-- Sunfire Kaliri
+		p(2473),	-- Sunscale Hatchling
 		p(402),		-- Swamp Moth
 		p(1590),	-- Swamplighter Firelfy
 		p(728),		-- Szechuan Chicken
@@ -181,6 +184,7 @@ _.PetJournal =
 		p(141),		-- White Moth
 		p(195),		-- White Tickbird Hatchling
 		p(548),		-- Wildhammer Gryphon Hatchling
+		p(2483),	-- Wolf Ballon
 		p(1463),	-- Wood Wasp
 		p(140),		-- Yellow Moth
 		p(2000),	-- Young Venomfang

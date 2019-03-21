@@ -49,6 +49,7 @@ _.PetJournal =
 		p(1954),	-- Nerubian Swarmer
 		p(2080), 	-- Rattlejaw
 		p(439),		-- Restless Shadeling
+		p(2199),	-- Restored Revenant
 		p(2394),	-- Returned Hatchling
 		p(1804),	-- Risen Saber Kitten
 		p(2553),	-- Rotting Ghoul

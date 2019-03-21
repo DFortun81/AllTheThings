@@ -23,7 +23,8 @@ _.PetJournal =
 		un(3, p(202)),	-- Baby Blizzard Bear
 		p(2477),	-- Baby Crawg
 		p(1884),	-- Baby Elderhorn
-		p(2551), 	-- Baby Stonehide
+		p(2551),	-- Baby Stonehide
+		p(2537),	-- Baby Zandalari Raptor
 		un(10, p(156)),		-- Bananas
 		p(2047),	-- Ban-Fu, Cub of Ban-Lu
 		p(2123),	-- Bile Larva
@@ -69,6 +70,7 @@ _.PetJournal =
 		p(233),		-- Deviate Hatchling
 		p(523),		-- Devouring Maggot
 		p(504),		-- Diemetradon Hatchling
+		p(2197),	-- Direhorn Hatchling
 		p(1205),	-- Direhorn Runt
 		p(1952),	-- Dreadmaw
 		p(2406),	-- Drustvar Piglet

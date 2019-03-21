@@ -22,7 +22,6 @@ _.PetJournal =
 		p(59),		-- Emerald Whelpling
 		p(1720),	-- Emmigosa
 		un(3, p(180)),	-- Essence of Competition
-		p(2466),	-- Giggling Flame
 		p(142),		-- Golden Dragonhawk Hatchling
 		p(2017),	-- Infinite Hatchling
 		p(1161),	-- Infinite Whelpling
@@ -31,17 +30,16 @@ _.PetJournal =
 		p(2468),	-- Laughing Stonekin
 		un(6, p(268)),	-- Lil' Deathwing
 		p(320),		-- Lil' Tarecgosa
-		p(2467),	-- Mischievous Zephyr
 		p(557),		-- Nether Faerie Dragon
 		un(6, p(131)),	-- Netherwhelp
 		p(1165),	-- Nexus Whelpling
 		p(1723),	-- Nightmare Whelpling
 		un(3, p(243)),	-- Onyxian Whelpling
 		p(1235),	-- Phoenix Hawk Hatchling
-		p(2465),	-- Playful Frostkin
 		p(196),		-- Proto-Drake Whelp
 		p(143),		-- Red Dragonhawk Hatchling
 		p(2421),	-- Saurolisk Hatchling
+		p(2578),	-- Scaley
 		p(144),		-- Silver Dragonhawk Hatchling
 		un(35, p(347)),		-- Soul of the Aspects
 		p(489),		-- Spawn of Onyxia

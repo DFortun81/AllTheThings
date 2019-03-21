@@ -8,6 +8,7 @@ _.PetJournal =
 		p(836), 	-- Aqua Strider
 		p(2425),	-- Barnacled Hermit Crab
 		p(2385),	-- Barrier Hermit
+		p(2576),	-- Beakbert
 		p(1934), 	-- Benax
 		p(649), 	-- Biletoad
 		p(1753), 	-- Bleakwater Jelly
@@ -32,6 +33,7 @@ _.PetJournal =
 		p(2374),	-- Freshwater Crawler
 		p(2423),	-- Freshwater Pincher
 		p(495), 	-- Frog
+		p(2577),	-- Froglet
 		p(1578), 	-- Frostshell Pincher
 		p(1237), 	-- Gahz'rooki
 		p(569), 	-- Garden Frog
@@ -67,6 +69,7 @@ _.PetJournal =
 		p(739), 	-- Mongoose Pup
 		p(1447), 	-- Moonshell Crab
 		un(2, p(192)), 	-- Mr. Chilly
+		p(2575),	-- Mr. Crabs
 		p(164), 	-- Muckbreath
 		p(1441), 	-- Mud Jumper
 		p(2462),	-- Octopode Fry
@@ -107,6 +110,7 @@ _.PetJournal =
 		p(401), 	-- Strand Crab
 		p(211), 	-- Strand Crawler
 		p(1182), 	-- Swamp Croaker
+		p(2419),	-- Swamp Toad
 		p(1230), 	-- Tideskipper
 		p(1207), 	-- Tiny Blue Carp
 		p(652), 	-- Tiny Goldfish
