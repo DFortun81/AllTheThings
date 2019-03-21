@@ -103,6 +103,7 @@ _.Zones =
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 									i(161026),	-- Spiderbite Wristwraps
 								}),
+								["coord"] = { 60.4, 17.8, 864 },
 								["questID"] = 51074,
 							}),	
 							n(128686, {	-- Kamid the Trapper

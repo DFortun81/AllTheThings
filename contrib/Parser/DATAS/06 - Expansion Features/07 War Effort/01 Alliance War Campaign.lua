@@ -573,6 +573,148 @@ _.ExpansionFeatures =
 								}),
 							},
 						},
+						qa(53070, {	-- Operation: Cutpurse
+							["description"] = "This quest will automatically be offered when you reach 3,000 Honored reputation with 7th Legion (25% of Honored).",
+							["sourceQuests"] = { 52219 },	-- Target: Blood Prince Dreven
+						}),
+						qa(52154, {	-- Our Next Target
+							["qg"] = 135612,	-- Halford Wyrmbane
+							["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
+							["sourceQuests"] = { 53070 },	-- Operation: Cutpurse
+						}),
+						qa(52173, {	-- The Void Elves Stand Ready
+							["qg"] = 140348,	-- Magister Umbric
+							["coord"] = { 69.4, 26.7, 1161 },	-- Boralus
+							["sourceQuests"] = { 52154 },	-- Our Next Target
+						}),
+						{	-- A Golden Opportunity
+							["achievementID"] = 12510,	-- Ready for War
+							["collectible"] = false,
+							["criteriaID"] = 6,	--  A Golden Opportunity
+							["races"] = ALLIANCE_ONLY,
+							["maps"] = { 
+								76,		-- Azshara
+								862,	-- Zuldazar
+							},
+							["lvl"] = 120,
+							["g"] = {
+								qa(52205, {	-- Bilgewater Bonanza Go Boom
+									["qg"] = 140477,	-- Magister Umbric
+									["coord"] = { 40.6, 70.7, 862 },	-- Zuldazar
+									["sourceQuests"] = { 52173 },	-- The Void Elves Stand Ready
+								}),
+								qa(52204, {	-- The Void Solution
+									["qg"] = 140477,	-- Magister Umbric
+									["coord"] = { 40.6, 70.7, 862 },	-- Zuldazar
+									["sourceQuests"] = { 52173 },	-- The Void Elves Stand Ready
+								}),
+								qa(52203, {	-- Find the Paper Trail
+									["qg"] = 140477,	-- Magister Umbric
+									["coord"] = { 40.6, 70.7, 862 },	-- Zuldazar
+									["sourceQuests"] = { 52173 },	-- The Void Elves Stand Ready
+								}),
+								qa(52241, {	-- A Greedy Goblin's Paradise
+									["qg"] = 140477,	-- Magister Umbric
+									["coord"] = { 40.6, 70.7, 862 },	-- Zuldazar
+									["sourceQuests"] = {
+										52205,	-- Bilgewater Bonanza Go Boom
+										52203,	-- Find the Paper Trail
+										52204,	-- The Void Solution
+									},
+								}),
+								qa(52247, {	-- Chasing Gallywix
+									["qg"] = 140712,	-- Magister Umbric
+									["coord"] = { 40.3, 39.7, 862 },	-- Zuldazar
+									["sourceQuests"] = { 52241 },	-- A Greedy Goblin's Paradise
+								}),
+								qa(52259, {	-- I Take No Pleasure In This
+									["qg"] = 140740,	-- Magister Umbric
+									["coord"] = { 21.5, 52.3, 76 },	-- Azshara
+									["sourceQuests"] = { 52247 },	-- Chasing Gallywix
+								}),
+								qa(52260, {	-- We Have Him Cornered
+									["qg"] = 140740,	-- Magister Umbric
+									["sourceQuests"] = { 52259 },	-- I Take No Pleasure In This
+								}),
+								qa(52261, {	-- Gallywix Got Away
+									["qg"] = 140740,	-- Magister Umbric
+									["sourceQuests"] = { 52260 },	-- We Have Him Cornered
+									["g"] = {
+										{	-- A Golden Opportunity
+											["achievementID"] = 12510,	-- Ready for War
+											["criteriaID"] = 6,	--  A Golden Opportunity
+										},
+									},
+								}),
+							},
+						},
+						qa(53071, {	-- Operation: Gryphon's Claw
+							["description"] = "This quest will automatically be offered when you reach 7,500 Honored reputation with 7th Legion (62% of Honored).",
+							["sourceQuests"] = { 52261 },	-- Gallywix Got Away
+						}),
+						qa(52308, {	-- Intercepted Orders
+							["qg"] = 135612,	-- Halford Wyrmbane
+							["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
+							["sourceQuests"] = { 53071 },	-- Operation: Gryphon's Claw
+						}),
+						qa(52489, {	-- Hunting Blood Prince Dreven
+							["qg"] = 141356,	-- Shandris Feathermoon
+							["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
+							["sourceQuests"] = { 52308 },	-- Intercepted Orders
+						}),
+						{	-- Blood in the Water
+							["achievementID"] = 12510,	-- Ready for War
+							["collectible"] = false,
+							["criteriaID"] = 7,	--  Blood in the Water
+							["races"] = ALLIANCE_ONLY,
+							["maps"] = { 1156 },	-- The Great Sea
+							["lvl"] = 120,
+							["g"] = {
+								qa(52490, {	-- Behind Enemy Boats
+									["qg"] = 141567,	-- Shandris Feathermoon
+									["sourceQuests"] = { 52489 },	-- Hunting Blood Prince Dreven
+								}),
+								qa(52491, {	-- Broadside Bedlam
+									["coord"] = { 36.8, 52.4, 1156 },	-- The Great Sea
+									["sourceQuests"] = { 52490 },	-- Behind Enemy Boats
+								}),
+								qa(52492, {	-- The Wildhammer Specialty
+									["qg"] = 141541,	-- Falstad Wildhammer
+									["sourceQuests"] = {
+										52490,	-- Behind Enemy Boats
+										52491,	-- Broadside Bedlam
+									},
+								}),
+								qa(52493, {	-- An Unnatural Crew
+									["qg"] = 142228,	-- Shandris Feathermoon
+									["coord"] = { 41.7, 56.9, 1156 },	-- The Great Sea
+									["sourceQuests"] = { 52492 },	-- The Wildhammer Specialty
+								}),
+								qa(52494, {	-- Foul Crystals for Foul People
+									["qg"] = 142228,	-- Shandris Feathermoon
+									["coord"] = { 41.7, 56.9, 1156 },	-- The Great Sea
+									["sourceQuests"] = { 52492 },	-- The Wildhammer Specialty
+								}),
+								qa(52495, {	-- Ending the San'layn Threat
+									["qg"] = 142232,	-- Shandris Feathermoon
+									["coord"] = { 41.6, 55.3, 1156 },	-- The Great Sea
+									["sourceQuests"] = {
+										52493,	-- An Unnatural Crew
+										52494,	-- Foul Crystals for Foul People
+									},
+								}),
+								qa(52496, {	-- A Clean Escape
+									["qg"] = 141567,	-- Shandris Feathermoon
+									["sourceQuests"] = { 52495 },	-- Ending the San'layn Threat
+									["g"] = {
+										{	-- Blood in the Water
+											["achievementID"] = 12510,	-- Ready for War
+											["criteriaID"] = 7,	--  Blood in the Water
+										},
+									},
+								}),
+							},
+						},
 					},
 				},
 			}),
