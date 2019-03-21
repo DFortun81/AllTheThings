@@ -5,9 +5,28 @@ _.NeverImplemented =
 {   
 	n(-10052, { -- BFA - Stuff that might gets added later duo changes/hotfixes/patches and/or similar	
 		-- Future Emsembles!!
+		-- Mail Horde (you probably will learn both after learning one)
+		un(1, i(166923)),	-- Dread Gladiator's Chain armor
+		un(1, i(166924)),	-- Dread Gladiator's Chain sabatons
+		un(1, i(166925)),	-- Dread Gladiator's Chain gauntlets
+		un(1, i(166926)),	-- Dread Gladiator's Chain helm
+		un(1, i(166927)),	-- Dread Gladiator's Chain leggings
+		un(1, i(166928)),	-- Dread Gladiator's Chain spaulders
+		un(1, i(166929)),	-- Dread Gladiator's Chain waistguard
+		un(1, i(166930)),	-- Dread Gladiator's Chain armbands
+		-- Mail Ally (you probably will learn both after learning one)
+		un(1, i(166954)),	-- Dread Gladiator's Chain armor
+		un(1, i(166955)),	-- Dread Gladiator's Chain sabatons
+		un(1, i(166956)),	-- Dread Gladiator's Chain gauntlets
+		un(1, i(166957)),	-- Dread Gladiator's Chain helm
+		un(1, i(166958)),	-- Dread Gladiator's Chain leggings
+		un(1, i(166959)),	-- Dread Gladiator's Chain spaulders
+		un(1, i(166960)),	-- Dread Gladiator's Chain waistguard
+		un(1, i(166961)),	-- Dread Gladiator's Chain armbands
 		
 		-- Some of those Items are currently not possible to load ingame (BFA Items), but they might be with a new patch
 		un(1, i(166405)),	-- Blindside (TW Vendor?)
+		un(1, i(166700)),	-- Durable Sailor's Duffel
 		un(1, i(161988)),	-- Tidespray Linen Cloak of the Feather
 		un(1, i(161991)),	-- Tidespray Linen Cloak of Resilience
 		un(1, i(165261)),	-- Unknown Cloak
@@ -427,11 +446,23 @@ _.NeverImplemented =
 			un(1, i(46276)),	-- Scourgestalker spaulders
 			un(1, i(46277)),	-- Scourgestalker tunic
 			un(1, i(109270)),	-- Unknown
+			un(1, i(56485)),	-- Windbound Bracers
+			un(1, i(56486)),	-- Windbound Gloves
+			un(1, i(56487)),	-- Razorshell Bracers
+			un(1, i(56488)),	-- Razorshell Shoulders
 			un(1, i(109280)),	-- Unknown
 			un(1, i(109313)),	-- Unknown
 			un(1, i(109314)),	-- Unknown
 			un(1, i(109315)),	-- Unknown
 			un(1, i(109359)),	-- Unknown
+			un(1, i(167119)),	-- Unknown
+			un(1, i(167120)),	-- Unknown
+			un(1, i(167121)),	-- Unknown
+			un(1, i(167122)),	-- Unknown
+			un(1, i(167123)),	-- Unknown
+			un(1, i(167124)),	-- Unknown
+			un(1, i(167125)),	-- Unknown
+			un(1, i(167126)),	-- Unknown
 			un(1, i(109371)),	-- Unknown
 			un(1, i(109382)),	-- Unknown
 			un(1, i(109393)),	-- Unknown
@@ -564,6 +595,11 @@ _.NeverImplemented =
 			un(1, i(27718)),	-- Aldor Defender's Legplates
 			un(1, i(12106)),	-- Boulderskin Breastplate
 			un(1, i(25797)),	-- Crushing Grasp
+			un(1, i(37175)),	-- Glassy Silver Bracers
+			un(1, i(37477)),	-- Lost Crusader Chestplate
+			un(1, i(37485)),	-- Clam Collector Gauntlets
+			un(1, i(37510)),	-- Wristguards of Edification
+			un(1, i(37511)),	-- Crucible Waistguard
 			un(1, i(80952)),	-- Peacebreaker's burnished headcorver
 			un(1, i(80953)),	-- Peacebreaker's armored helm
 			un(1, i(80954)),	-- Peacebreaker's heavy helm
@@ -729,6 +765,7 @@ _.NeverImplemented =
 			un(1, i(109418)),	-- Unknown
 			un(1, i(109447)),	-- Unknown
 			un(1, i(109454)),	-- Unknown
+			un(1, i(167137)),	-- Unknown
 			un(1, i(109478)),	-- Unknown
 			un(1, i(109512)),	-- Unknown
 			un(1, i(109516)),	-- Unknown
@@ -1144,6 +1181,7 @@ _.NeverImplemented =
 			un(1, i(162740)),	-- Schematic: Neurological Immobilization Bomb
 			un(1, i(23813)),	-- Schematic: Blue Smoke Flare [Removed TBC Beta]
 			un(1, i(23812)),	-- Schematic: Red Smoke Flare [Removed TBC Beta]
+			un(1, i(165843)),	-- Schematic: Mechantula (165844 was the added version)
 		}),
 		n(-185, { 	-- Inscription
 			un(1, i(87830)),	-- Recipe: Tigersblood Tincture
@@ -1354,6 +1392,7 @@ _.NeverImplemented =
 			un(1, i(108788)),    -- Unknown
 			un(1, i(108789)),    -- Unknown
 			un(1, i(109361)),    -- Unknown
+			un(1, i(105955)),	-- Wrathful Gladiator's Razor (Elite, added in 5.4 ????)
 			un(1, i(109535)),    -- Unknown
 			un(1, i(109534)),    -- Unknown
 			un(1, i(165269)),	-- unknown
@@ -1402,6 +1441,7 @@ _.NeverImplemented =
 			un(1, i(64752)),	-- Bloodthirsty Gladiator's Gravel (Epic BG Item, never made it out of beta)
 			un(1, i(64816)),	-- Bloodthirsty Gladiator's Pummeler (Epic BG Item, never made it out of beta))
 			un(1, i(165262)),	-- Unknown
+			un(1, i(146304)),	-- Fel Titan Hammer (test version for Maiden Mog Drop)
 			un(1, i(159550)),	-- Unknown
 			un(1, i(108791)),	-- Unknown
 			un(1, i(108792)),	-- Unknown
@@ -1480,6 +1520,7 @@ _.NeverImplemented =
 			un(1, i(159814)),	-- Unknown
 			un(1, i(159815)),	-- Unknown
 			un(1, i(165276)),	-- Unknown
+			un(1, i(167140)),	-- Unknown
 			un(1, i(93441)),	-- crafted dreadful gladiator's barrier
 			un(1, i(93483)),	-- crafted dreadful gladiator's redoubt
 			un(1, i(93614)),	-- crafted dreadful gladiator's shield wall
@@ -1538,6 +1579,9 @@ _.NeverImplemented =
 		n(-335, { -- Two Handed Axes
 			un(1, i(134563)),	-- Unknown
 			un(1, i(108782)),	-- Unknown
+			un(1, i(167142)),	-- Unknown (probably discarded idea of crucible of storms loot)
+			un(1, i(167145)),	-- Unknown (probably discarded idea of crucible of storms loot)
+			un(1, i(167147)),	-- Unknown (probably discarded idea of crucible of storms loot)
 			un(1, i(69916)),	-- Trollbane (Test)
 			un(1, i(109519)),	-- Unknown
 			un(1, i(165265)),	-- Unknown

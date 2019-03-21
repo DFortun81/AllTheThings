@@ -2039,6 +2039,13 @@ _.Zones =
 							["qg"] = 26218,	-- Elder Muahit
 							["coord"] = { 67.2, 54.8, 114 },
 							["sourceQuest"] = 11961,	-- Spirits Watch Over Us
+							["groups"] = {
+								i(37030),	-- Blubber Grinder
+								i(37031),	-- Zook's Walking Stick
+								i(37029),	-- Fin Carver
+								i(37032),	-- Edge of the Tuskarr
+								i(37033),	-- Manual of the Tides
+							},
 						},
 						{	-- The Trident of Naz'jan
 							["questID"] = 11625,

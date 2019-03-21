@@ -172,6 +172,18 @@ _.Zones =
 								},
 							},
 						},
+						{	-- Layla Evenkeel
+							["npcID"] = 136059,	-- Layla Evenkeel
+							["coords"] = {
+								{ 77.64, 14.32, 1161 },
+							},
+							["races"] = ALLIANCE_ONLY,
+							["g"] = {
+								{	-- Book of Schematics: Ub3r-Spanner
+									["itemID"] = 168025,	-- Book of Schematics: Ub3r-Spanner
+								},
+							},
+						},
 						{	-- Leedan Gustaf <Profession Liason> [NOTE: PvP Craftable Recipes]
 							["npcID"] = 142564,	-- Leedan Gustaf <Profession Liason> [NOTE: PvP Craftable Recipes]
 							["coord"] = { 56.30, 26.95, 1161 },
