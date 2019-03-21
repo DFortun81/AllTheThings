@@ -5,6 +5,13 @@ _.WorldEvents =
 {
 	m(503, {	-- Brawlgar Arena
 		["groups"] = {
+			n(-17, { 	-- Quests
+				q(53935, {	-- SOlving the mystery
+					["groups"] = {
+						i(166724),	-- Bruce
+					},
+				}),
+			}),
 			n(-2, {	-- Vendors
 				h(n(68364, {	-- Paul North <Brawl'gar Arena Quartermaster>  This vendor will change if you start the murder questline  New vendor = 145695 "Bad Luck" Symmes <Brawl'gar Arena Quartermaster>
 					["groups"]	= {

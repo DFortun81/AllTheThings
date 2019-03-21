@@ -5,6 +5,13 @@ _.WorldEvents =
 {
 	n(-496, { -- Bizmo's Brawlpub
 		["groups"] = {	
+			n(-17, { 	-- Quests
+				q(55022, {	-- SOlving the mystery
+					["groups"] = {
+						i(166724),	-- Bruce
+					},
+				}),
+			}),
 			n(-2, {	-- Vendors
 				n(68363, {	-- Quackenbush <Bizmo's Brawlpub Quartermaster>  This vendor will change if you start the murder questline  New vendor = 151941 Dershway the Triggered <Bizmo's Brawlpub Quartermaster>
 					["groups"]	= {

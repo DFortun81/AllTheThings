@@ -110,6 +110,7 @@ _.Achievements =
 									},
 									{	-- Sinister Gladiator's Proto-Drake
 										["itemID"] = 156880,	-- Sinister Gladiator's Proto-Drake
+										["collectible"] = false,
 									},
 									{	-- Alliance Sinister Gladiator's Tabard
 										["itemID"] = 164910,	--  Alliance Sinister Gladiator's Tabard

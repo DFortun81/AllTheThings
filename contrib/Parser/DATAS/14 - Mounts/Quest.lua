@@ -30,6 +30,7 @@ _.Mounts =
 			["classes"] = {2},
 			["races"] = {1,3},
 		},
+		i(166724),		-- Bruce
 		i(128311),		-- Coalfist Gronnling
 		i(32859),		-- Cobalt Netherwing Drake
 		i(52200),		-- Crimsom Deathcharger
