@@ -1,11 +1,11 @@
 -------------------------------------------------------------------
---      E X P A N S I O N   F E A T U R E S    M O D U L E       --
+--      E X P A N S I O N   F E A T U R E S    M O D U L E      	--
 -------------------------------------------------------------------
 _.ExpansionFeatures =
 {
-	n(-9965, { -- Legion Class Hall
+	n(-9965, {	-- Legion Class Hall
 		["groups"] = {
-			cl(6, { 	-- Acherus -- Death Knight
+			cl(6, { 	-- Acherus	-- Death Knight
 				["groups"] = {
 					n(-4, {	-- Achievements
 						ach(11298, {	-- A Classy Outfit
@@ -116,82 +116,85 @@ _.ExpansionFeatures =
 						a(ach(10743)),	-- The Prestige (Alliance) [Still in WoW UI as of 8.0]
 						h(ach(10745)),	-- The Prestige (Horde) [Still in WoW UI as of 8.0]
 					}),
-					n(-17, { -- Quests
+					n(-17, {	-- Quests
 						{
-							["npcID"] = 111093, -- Stitchwork
+							["npcID"] = 111093,	-- Stitchwork
 							["questID"] = 44188,	-- Hidden Tracking
 							["classes"] = { 6 },	-- Death Knight Only!
-							["maps"] = { 186, 187, 188, 189, 190, 191, 192, 193 }, -- Icecrown Citadel
+							["maps"] = { 186, 187, 188, 189, 190, 191, 192, 193 },	-- Icecrown Citadel
 							["lvl"] = 110,
 							["collectible"] = false,
 							["description"] = "\"Professor Putricide's Lost Journal\" drops from ghouls summoned by your Apocalypse or Army of the Dead spells anywhere in the world. If this is checked off as completed, you will be eligible to enter the trap door in Putricide's room under the Green Slime Pipe. You do not have to interact with the book to be eligible.",
 							["groups"] = {
 								i(139548, {	-- The Bonereaper's Hook
-									artifact(404), -- Find Hidden Artifact Skin
+									artifact(404),	-- Find Hidden Artifact Skin
 								}),
 							},
 						},
-						q(46813, { -- The Lost Glacier
-							i(142231), -- Decaying Reins of the Vilebrood Vanquisher
+						q(46813, {	-- The Lost Glacier
+							i(142231),	-- Decaying Reins of the Vilebrood Vanquisher
 						}),
-						q(44217, { -- Armor Fit For A Deathlord
-							i(139676), -- Head
+						q(44217, {	-- Armor Fit For A Deathlord
+							i(139676),	-- Head
 						}),
-						q(43686, { -- The Fourth Horseman
-							i(139673), -- Chest
+						q(43686, {	-- The Fourth Horseman
+							i(139673),	-- Chest
 						}),
-						q(44246, { -- Champion: Rottgut
-							i(139680), -- Bracers
+						q(44246, {	-- Champion: Rottgut
+							i(139680),	-- Bracers
 						}),
 					}),
-					n(97379, { -- Scouting Map
+					n(97379, {	-- Scouting Map
 						["groups"] = {
 							-- Blank for Class Only Missions in the future
 						},
 						["achievementID"] = 11217,
 						["modelScale"] = 1.95,
 					}),
-					n(-2, { -- Vendors
-						n(93550, { -- Quartermaster Ozorg
-							i(40775), -- Winged Steed of the Ebon Blade Mount
-							i(143727), -- Champion's Salute Toy
+					n(-2, {	-- Vendors
+						n(93550, {	-- Quartermaster Ozorg
+							i(40775),	-- Winged Steed of the Ebon Blade Mount
+							i(143727),	-- Champion's Salute Toy
 							i(136796),	-- Necrophile Tome: Corpse Exploder
-							gs(550, { -- Deathlord's Battleplate
-								i(139676), -- Head
-								i(139678), -- Shoulders
-								i(139673), -- Chest
-								i(139680), -- Bracers
-								i(139675), -- Hands
-								i(139679), -- Belt
-								i(139677), -- Legs
-								i(139674), -- Feet		
+							gs(550, {	-- Deathlord's Battleplate
+								i(139676),	-- Head
+								i(139678),	-- Shoulders
+								i(139673),	-- Chest
+								i(139680),	-- Bracers
+								i(139675),	-- Hands
+								i(139679),	-- Belt
+								i(139677),	-- Legs
+								i(139674),	-- Feet		
 							}),
-							i(140538), -- Broadaxe of the Ebon Blade
-							i(140554), -- Warsword of the Ebon Blade
-							i(34652), -- Archerus Knight's Hood
-							i(34655), -- Archerus Knight's Pauldrons
-							i(34659), -- Archerus Knight's Shroud
-							i(34650), -- Archerus Knight's Tunic
-							i(34653), -- Archerus Knight's Wristguard
-							i(34649), -- Archerus Knight's Gauntlets
-							i(34651), -- Archerus Knight's Girdle
-							i(34656), -- Archerus Knight's Legplates
-							i(34648), -- Archerus Knight's Greaves
-							i(38633), -- Greataxe of the Ebon Blade
-							i(38632), -- Greatsword of the Ebon Blade
-							i(34661), -- Massacre Sword
-							i(38707), -- Runed Spellblade
-							i(38661), -- Greathelm of the Scourge Champion
-							i(38663), -- Blood-Soaked Saronite Plated Spaulders
-							i(39322), -- Shroud of the North Wind
-							i(39320), -- Sky Darkener's Shroud of Blood
-							i(38664), -- Sky Darkener's Shroud of the Unholy
-							i(38665), -- Saronite War Plate
-							i(38666), -- Plated Saronite Bracers
-							i(38667), -- Bloodbane's Gauntlets of Command
-							i(38668), -- The Plaguebringer's Girdle
-							i(38669), -- Engraved Saronite Legplates
-							i(38670), -- Greaves of the Slaughter
+							i(140538),	-- Broadaxe of the Ebon Blade
+							i(140554),	-- Warsword of the Ebon Blade
+							i(34652),	-- Archerus Knight's Hood
+							i(34655),	-- Archerus Knight's Pauldrons
+							i(34659),	-- Archerus Knight's Shroud
+							i(34650),	-- Archerus Knight's Tunic
+							i(34653),	-- Archerus Knight's Wristguard
+							i(34649),	-- Archerus Knight's Gauntlets
+							i(34651),	-- Archerus Knight's Girdle
+							i(34656),	-- Archerus Knight's Legplates
+							i(34648),	-- Archerus Knight's Greaves
+							i(34657),	-- Choker of Damnation
+							i(34658),	-- Plague Band
+							i(38147),	-- Corrupted Band
+							i(38633),	-- Greataxe of the Ebon Blade
+							i(38632),	-- Greatsword of the Ebon Blade
+							i(34661),	-- Massacre Sword
+							i(38707),	-- Runed Spellblade
+							i(38661),	-- Greathelm of the Scourge Champion
+							i(38663),	-- Blood-Soaked Saronite Plated Spaulders
+							i(39322),	-- Shroud of the North Wind
+							i(39320),	-- Sky Darkener's Shroud of Blood
+							i(38664),	-- Sky Darkener's Shroud of the Unholy
+							i(38665),	-- Saronite War Plate
+							i(38666),	-- Plated Saronite Bracers
+							i(38667),	-- Bloodbane's Gauntlets of Command
+							i(38668),	-- The Plaguebringer's Girdle
+							i(38669),	-- Engraved Saronite Legplates
+							i(38670),	-- Greaves of the Slaughter
 						}),
 						n(121752, {	-- Slimy
 							i(147539),	-- Bloodbrood Whelpling (PET!)
@@ -201,7 +204,7 @@ _.ExpansionFeatures =
 					}),
 				},
 				["mapID"] = 648,
-				["maps"] = { 647 }, -- Upper Level
+				["maps"] = { 647 },	-- Upper Level
 				["lvl"] = 98,
 			}),
 		},

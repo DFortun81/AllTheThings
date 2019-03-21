@@ -49,6 +49,13 @@ _.Zones =
 						}),
 					}),
 				}),
+				n(-38, {	-- Professions
+						prof(356, {	-- Fishing
+							i(68795, {	-- Stendel's Bane
+								i(68797),	-- Stendel's Wedding Band
+							}),
+						}),
+					}),
 				n(-17, {	-- Quests
 --[[	Achievement info for Loremaster related zone quests
 					a(ach(4903, {	-- Westfall Quests

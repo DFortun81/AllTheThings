@@ -29,6 +29,7 @@ _.Zones =
 						["groups"] = {
 							i(9598),	-- Sleeping Robes
 							i(18957),	-- Brushwood Blade
+							un(2, i(9602)),	-- Brushwood Blade
 						},
 					},
 					{	-- Elixirs for the Bladeleafs
