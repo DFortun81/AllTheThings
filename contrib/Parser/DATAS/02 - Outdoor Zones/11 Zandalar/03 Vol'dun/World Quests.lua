@@ -125,6 +125,33 @@ _.Zones =
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = ALLIANCE_ONLY,
 								}),
+								{	-- Sandfishing
+									["questID"] = 51173,	-- Sandfishing
+									["races"] = HORDE_ONLY,
+									["isWQ"] = 120,
+									["g"] = {
+										{	-- Adept Sandfisher
+											["achievementID"] = 13009,	-- Adept Sandfisher
+											["g"] = {
+												{	-- Adept Sandfisher — Cobalt Sandworm Scale
+													["criteriaID"] = 1,	-- Adept Sandfisher — Cobalt Sandworm Scale
+												},
+												{	-- Adept Sandfisher — Silver Sandworm Scale
+													["criteriaID"] = 2,	-- Adept Sandfisher — Silver Sandworm Scale
+												},
+												{	-- Adept Sandfisher — Emerald Sandworm Scale
+													["criteriaID"] = 3,	-- Adept Sandfisher — Emerald Sandworm Scale
+												},
+												{	-- Adept Sandfisher — Ruby Sandworm Scale
+													["criteriaID"] = 4,	-- Adept Sandfisher — Ruby Sandworm Scale
+												},
+												{	-- Adept Sandfisher — Onyx Sandworm Scale
+													["criteriaID"] = 5,	-- Adept Sandfisher — Onyx Sandworm Scale
+												},
+											},
+										},
+									},
+								},
 								{	-- Scaleclaw Broodmother
 									["questID"] = 51107,	-- Scaleclaw Broodmother
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
