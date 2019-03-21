@@ -422,7 +422,6 @@ pet(118741, 1565); 	-- Mechanical Scorpid
 pet(4401, 39); 		-- Mechanical Squirrel Box (Mechanical Squirrel)
 pet(45002, 215); 	-- Mechanopeep
 pet(165849, 2530);	-- Mechantula
-pet(165849, 2565);	-- Mechantula
 pet(101426, 666); 	-- Micronax Controller (Micronax)
 pet(165894, 2534);	-- Mini Spider Tank
 pet(56806, 258);	-- Mini Thor
