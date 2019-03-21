@@ -68,14 +68,6 @@ profession(197, {	-- Tailoring
 							["recipeID"] = 12068,--[[Stormcloth Vest]]
 							["u"] = 1,
 						},
-						{
-							["recipeID"] = 6692,--[[Robes of Arcana]]
-							["u"] = 2,
-						},
-						{
-							["recipeID"] = 18436,--[[Robe of Winter Night]]
-							["u"] = 2,
-						},
 					}
 				},
 				{
@@ -88,13 +80,7 @@ profession(197, {	-- Tailoring
 					},
 				},
 				{
-					["categoryID"] = 238--[[Belts]],
-					["g"] = {
-						{
-							["recipeID"] = 22866,--[[Belt of the Archmage]]
-							["u"] = 2,
-						},
-					}
+					["categoryID"] = 238--[[Belts]]
 				},
 				{
 					["categoryID"] = 239--[[Gloves]],
@@ -104,20 +90,8 @@ profession(197, {	-- Tailoring
 							["u"] = 1,
 						},
 						{
-							["recipeID"] = 22867,--[[Felcloth Gloves]]
-							["u"] = 2,
-						},
-						{
 							["recipeID"] = 28205,--[[Glacial Gloves]]
 							["u"] = 7,
-						},
-						{
-							["recipeID"] = 22868,--[[Inferno Gloves]]
-							["u"] = 2,
-						},
-						{
-							["recipeID"] = 22869,--[[Mooncloth Gloves]]
-							["u"] = 2,
 						},
 					}
 				},
@@ -154,10 +128,6 @@ profession(197, {	-- Tailoring
 				{
 					["categoryID"] = 242--[[Cloaks]],
 					["g"] = {
-						{
-							["recipeID"] = 22870,--[[Cloak of Warding]]
-							["u"] = 2,
-						},
 						{
 							["recipeID"] = 28208,--[[Glacial Cloak]]
 							["u"] = 7,

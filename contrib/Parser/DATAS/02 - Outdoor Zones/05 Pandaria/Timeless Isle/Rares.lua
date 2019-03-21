@@ -25,7 +25,7 @@ _.Zones =
 									["criteriaID"] = 31,		-- Archiereus of Flame
 								},
 								{	-- Burden of Eternity
-									["itemID"] = 03982,	-- Burden of Eternity
+									["itemID"] = 103982,	-- Burden of Eternity
 								},
 								{	-- Elixir of Ancient Knowledge
 									["itemID"] = 86574,	-- Elxir of Ancient Knowledge
