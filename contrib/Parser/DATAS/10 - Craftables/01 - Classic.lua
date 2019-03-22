@@ -1381,7 +1381,6 @@ _.Craftables =
 			un(8, i(22652)),	-- Glacial Vest
 			un(8, i(22655)),	-- Glacial Wrists
 			un(5, i(14153)),	-- Robe of the Void
-			un(8, i(14136)),	-- Robe of Winter Night
 			
 			i(10030),	-- Admiral's Hat
 			i(19056),	-- Argent Boots
@@ -1513,6 +1512,7 @@ _.Craftables =
 			i(4335),	-- Rich Purple Silk Shirt
 			i(7054),	-- Robe of Power
 			i(14152),	-- Robe of the Archmage
+			i(14136),	-- Robe of Winter Night
 			i(5770),	-- Robes of Arcana
 			i(13856),	-- Runecloth Belt
 			i(13864),	-- Runecloth Boots

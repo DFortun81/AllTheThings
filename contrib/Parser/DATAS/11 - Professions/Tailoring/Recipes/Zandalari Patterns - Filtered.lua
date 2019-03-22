@@ -66,16 +66,16 @@ profession(197, {	-- Tailoring
 									},	]]--How do I get this to show up in each zone only?Someday I'll figure it out.
 									["groups"] = {	
 										i(167889),	-- Pattern: Azure Silk Cloak
-										i(167890),  -- Pattern: Icy Cloak
+										i(167881),  -- Pattern: Belt of the Archmage
 										i(167887),  -- Pattern: Cindercloth Gloves
 										i(167886),  -- Pattern: Cindercloth Vest
-										i(167880),  -- Pattern: Robes of Arcana
 										i(167882),  -- Pattern: Cloak of Warding
 										i(167883),  -- Pattern: Felcloth Gloves
+										i(167890),  -- Pattern: Icy Cloak
 										i(167884),  -- Pattern: Inferno Gloves
 										i(167885),  -- Pattern: Mooncloth Gloves
-										i(167881),  -- Pattern: Belt of the Archmage]]
-									
+										i(167888),	-- Pattern: Robe of Winter Night
+										i(167880),  -- Pattern: Robes of Arcana
 									},
 								},
 							},	
