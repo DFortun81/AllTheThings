@@ -1753,16 +1753,21 @@ AllTheThings.L = {
 		[-91001] = C_Map.GetAreaInfo(362),	-- Razor Hill
 		[-91002] = C_Map.GetAreaInfo(367),	-- Sen'jin Village
 		[-91003] = C_Map.GetAreaInfo(4982),	-- The Dranosh'ar Blockade
+		[-91004] = C_Map.GetAreaInfo(6750), -- Razor Hill Watchtower
+		[-91005] = C_Map.GetAreaInfo(816),	-- Razormane Grounds
+		[-91006] = C_Map.GetAreaInfo(4981),	-- Southfury Watershed
+		[-91007] = C_Map.GetAreaInfo(2979),	-- Tor'kren Farm
+		[-91008] = C_Map.GetAreaInfo(375),	-- Deadeye Shore
 		-- Northern Barrens
-		[-91004] = C_Map.GetAreaInfo(379),	-- Far Watch Post
-		[-91005] = C_Map.GetAreaInfo(1704),	-- Grol'dom Farm
-		[-91006] = C_Map.GetAreaInfo(380),	-- The Crossroads
-		[-91007] = C_Map.GetAreaInfo(386),	-- The Forgotten Pools
-		[-91008] = C_Map.GetAreaInfo(388),	-- The Stagnant Oasis
-		[-91009] = C_Map.GetAreaInfo(392),	-- Ratchet
-		[-91010] = C_Map.GetAreaInfo(5117),	-- Nozzlepot's Outpost
-		[-91011] = C_Map.GetAreaInfo(382),	-- The Sludge Fen
-		[-91012] = C_Map.GetAreaInfo(1703),	-- The Mor'Shan Ramparts
+		[-91009] = C_Map.GetAreaInfo(379),	-- Far Watch Post
+		[-91010] = C_Map.GetAreaInfo(1704),	-- Grol'dom Farm
+		[-91011] = C_Map.GetAreaInfo(380),	-- The Crossroads
+		[-91012] = C_Map.GetAreaInfo(386),	-- The Forgotten Pools
+		[-91013] = C_Map.GetAreaInfo(388),	-- The Stagnant Oasis
+		[-91014] = C_Map.GetAreaInfo(392),	-- Ratchet
+		[-91015] = C_Map.GetAreaInfo(5117),	-- Nozzlepot's Outpost
+		[-91016] = C_Map.GetAreaInfo(382),	-- The Sludge Fen
+		[-91017] = C_Map.GetAreaInfo(1703),	-- The Mor'Shan Ramparts
 		
 		 
 -- Custom Subzone Names that we can't pull from the API because Blizz hates us
