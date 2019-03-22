@@ -1369,7 +1369,6 @@ _.Craftables =
 			}),
 		}),
 		n(-190, { 	-- Tailoring
-			i(18405),	-- Belt of the Archmage		
 			un(8, i(19684)),	-- Bloodvine Boots
 			un(8, i(19683)),	-- Bloodvine Leggings
 			un(8, i(19682)),	-- Bloodvine Vest
@@ -1377,17 +1376,13 @@ _.Craftables =
 				["itemID"] = 7027,	-- Boots of Darkness	**NYI and replaced by Boots of Utter Darkness pattern in BC**
 				["u"] = 1,
 			},
-			i(18413),	-- Cloak of Warding
-			i(18407),	-- Felcloth Gloves
 			un(8, i(22658)),	-- Glacial Cloak
 			un(8, i(22654)),	-- Glacial Gloves
 			un(8, i(22652)),	-- Glacial Vest
 			un(8, i(22655)),	-- Glacial Wrists
-			i(18408),	-- Inferno Gloves
-			i(18409),	-- Mooncloth Gloves
 			un(5, i(14153)),	-- Robe of the Void
 			un(8, i(14136)),	-- Robe of Winter Night
-			i(5770),		-- Robes of Arcana
+			
 			i(10030),	-- Admiral's Hat
 			i(19056),	-- Argent Boots
 			i(19059),	-- Argent Shoulders
@@ -1399,6 +1394,7 @@ _.Craftables =
 			i(7046),	-- Azure Silk Pants
 			i(4324),	-- Azure Silk Vest
 			i(2578),	-- Barbaric Linen Vest
+			i(18405),	-- Belt of the Archmage
 			i(10026),	-- Black Mageweave Boots
 			i(10003),	-- Black Mageweave Gloves
 			i(10024),	-- Black Mageweave Headband
@@ -1427,6 +1423,7 @@ _.Craftables =
 			i(10042),	-- Cindercloth Robe
 			i(14042),	-- Cindercloth Vest
 			i(14134),	-- Cloak of Fire
+			i(18413),	-- Cloak of Warding
 			i(10048),	-- Colorful Kilt
 			i(7055),	-- Crimson Silk Belt
 			i(7056),	-- Crimson Silk Cloak
@@ -1444,6 +1441,7 @@ _.Craftables =
 			i(7051),	-- Earthen Vest
 			i(4322),	-- Enchanter's Cowl
 			i(14108),	-- Felcloth Boots
+			i(18407),	-- Felcloth Gloves
 			i(14111),	-- Felcloth Hood
 			i(14107),	-- Felcloth Pants
 			i(14106),	-- Felcloth Robe
@@ -1481,6 +1479,7 @@ _.Craftables =
 			i(4310),	-- Heavy Woolen Gloves
 			i(4316),	-- Heavy Woolen Pants
 			i(4327),	-- Icy Cloak
+			i(18408),	-- Inferno Gloves
 			i(10054),	-- Lavender Mageweave Shirt
 			i(5766),	-- Lesser Wizard's Robe
 			i(2569),	-- Linen Boots
@@ -1488,6 +1487,7 @@ _.Craftables =
 			i(19050),	-- Mantle of the Timbermaw
 			i(15802),	-- Mooncloth Boots
 			i(14140),	-- Mooncloth Circlet
+			i(18409),	-- Mooncloth Gloves
 			i(14137),	-- Mooncloth Leggings
 			i(18486),	-- Mooncloth Robe
 			i(14139),	-- Mooncloth Shoulders
@@ -1513,6 +1513,7 @@ _.Craftables =
 			i(4335),	-- Rich Purple Silk Shirt
 			i(7054),	-- Robe of Power
 			i(14152),	-- Robe of the Archmage
+			i(5770),	-- Robes of Arcana
 			i(13856),	-- Runecloth Belt
 			i(13864),	-- Runecloth Boots
 			i(13860),	-- Runecloth Cloak
