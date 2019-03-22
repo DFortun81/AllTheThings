@@ -25,6 +25,10 @@ profession(197, {	-- Tailoring
 							["recipeID"] = 36665,--[[Netherflame Robe]]
 							["u"] = 1,
 						},
+						{
+							["recipeID"] = 28207,--[[Glacial Vest]]
+							["u"] = 2,-- pattern removed from game
+						},
 					},
 				},
 				{
@@ -33,6 +37,10 @@ profession(197, {	-- Tailoring
 						{
 							["recipeID"] = 36672,--[[Lifeblood Bracers]]
 							["u"] = 1,
+						},
+						{
+							["recipeID"] = 28209,--[[Glacial Wrists]]
+							["u"] = 2,-- pattern removed from game
 						},
 					},
 				},
@@ -51,6 +59,12 @@ profession(197, {	-- Tailoring
 				},
 				{
 					["categoryID"] = 1008--[[Gloves]],
+					["g"] = {
+						{
+							["recipeID"] = 28205,--[[Glacial Gloves]]
+							["u"] = 2,-- pattern removed from game
+						},
+					},
 				},
 				{
 					["categoryID"] = 1009--[[Pants]],
@@ -72,6 +86,12 @@ profession(197, {	-- Tailoring
 				},
 				{
 					["categoryID"] = 1011--[[Cloaks]],
+					["g"] = {
+						{
+							["recipeID"] = 28208,--[[Glacial Cloak]]
+							["u"] = 2,-- pattern removed from game
+						},
+					},
 				},
 				{
 					["categoryID"] = 1012--[[Nets]],
