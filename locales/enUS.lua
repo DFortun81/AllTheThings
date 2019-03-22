@@ -1742,11 +1742,11 @@ AllTheThings.L = {
 		
 		--90000+ are reserved for town names.  If you use one make sure to attach an icon (either here or in the file).
 		
-		[-90000] = "Lunarwing Shallows",
-		[-90001] = "Lostlight Grotto",
+		[-90000] = C_Map.GetAreaInfo(7680),							-- Lunarwing Shallows
+		[-90000] = C_Map.GetAreaInfo(8268),							-- Lostlight Grotto
 		[-90002] = C_Map.GetAreaInfo(9655),							-- Krazzlefrazz Outpost
-		[-90003] = "Waning Glacier",								-- Waning Glacier
-		[-90004] = "Anyport",										-- Currently no localization calls
+		[-90002] = C_Map.GetAreaInfo(9338),							-- Waning Glacier
+		[-90002] = C_Map.GetAreaInfo(9617),							-- Anyport
 		[-90005] = C_Map.GetAreaInfo(9305),							-- Castaway Point
 		
 		-- Durotar
