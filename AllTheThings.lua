@@ -7004,7 +7004,7 @@ local function CreateMiniListForGroup(group)
 					end
 					
 					-- Insert the header for the source quest
-					if #prereqs > 1 then
+					if #prereqs > 0 then
 						tinsert(prereqs, {
 							["text"] = "Upon Completion",
 							["description"] = "The above quests need to be completed before being able to complete the quest(s) listed below.",
@@ -7031,6 +7031,61 @@ local function CreateMiniListForGroup(group)
 					end
 				end
 			end
+			
+			-- Clean up the recursive hierarchy. (this removed duplicates)
+			sourceQuests = {};
+			prereqs = g;
+			local orig = g;
+			while prereqs and #prereqs > 0 do
+				for i=#prereqs,1,-1 do
+					local o = prereqs[i];
+					if o.key then
+						sourceQuest = o.key .. o[o.key];
+						if sourceQuests[sourceQuest] then
+							-- Already exists in the hierarchy. Uh oh.
+							table.remove(prereqs, i);
+						else
+							sourceQuests[sourceQuest] = true;
+						end
+					end
+				end
+				
+				if #prereqs > 1 then
+					prereqs = prereqs[#prereqs];
+					if prereqs then prereqs = prereqs.g; end
+					orig = prereqs;
+				else
+					prereqs = prereqs[#prereqs];
+					if prereqs then prereqs = prereqs.g; end
+					orig[#orig].g = prereqs;
+				end
+			end
+			
+			-- Clean up standalone "Upon Completion" headers.
+			prereqs = g;
+			repeat
+				local orig = prereqs;
+				if #orig == 2 then
+					prereqs = orig[1].g;
+					if not prereqs or #prereqs < 1 then
+						prereqs = orig[2].g;
+						orig[1].g = prereqs;
+						table.remove(orig, 2);
+					else
+						sourceQuests = orig[2].g;
+						table.remove(orig, 2);
+						if #sourceQuests == 2 then
+							sourceQuests[1].g = sourceQuests[2].g;
+							table.remove(sourceQuests, 2);
+						end
+						for i,sourceQuest in ipairs(sourceQuests) do
+							table.insert(prereqs, sourceQuest);
+						end
+					end
+				else
+					prereqs = orig[#orig].g;
+				end
+			until not prereqs or #prereqs < 1;
 		end
 		popout.data = {
 			["text"] = "Quest Chain Requirements",

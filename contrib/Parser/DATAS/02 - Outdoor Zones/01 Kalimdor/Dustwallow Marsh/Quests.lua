@@ -49,7 +49,7 @@ _.Zones =
 							{	-- Connection to the Grimtotem
 								["criteriaID"] = 4,
 								["sourceQuests"] = {
-									20992,	-- Black Shield
+									--20992,	-- Black Shield
 									27297,	-- Justice Dispensed
 									27257,	-- The Black Shield (#4)
 									27258,	-- The Black Shield
