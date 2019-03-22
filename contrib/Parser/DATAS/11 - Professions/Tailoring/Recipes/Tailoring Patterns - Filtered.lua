@@ -49,10 +49,6 @@ profession(197, {	-- Tailoring
 							["u"] = 17,
 						},
 						{
-							["recipeID"] = 28207,--[[Glacial Vest]]
-							["u"] = 2,-- pattern removed from game
-						},
-						{
 							["recipeID"] = 44950,--[[Green Winter Clothes]]
 							["u"] = 17,
 						},
@@ -72,12 +68,6 @@ profession(197, {	-- Tailoring
 				},
 				{
 					["categoryID"] = 237--[[Bracers]],
-					["g"] = {
-						{
-							["recipeID"] = 28209,--[[Glacial Wrists]]
-							["u"] = 2,-- pattern removed from game
-						},
-					},
 				},
 				{
 					["categoryID"] = 238--[[Belts]]
@@ -88,10 +78,6 @@ profession(197, {	-- Tailoring
 						{
 							["recipeID"] = 12063,--[[Stormcloth Gloves]]
 							["u"] = 1,
-						},
-						{
-							["recipeID"] = 28205,--[[Glacial Gloves]]
-							["u"] = 2,-- pattern removed from game
 						},
 					}
 				},
@@ -127,12 +113,6 @@ profession(197, {	-- Tailoring
 				},
 				{
 					["categoryID"] = 242--[[Cloaks]],
-					["g"] = {
-						{
-							["recipeID"] = 28208,--[[Glacial Cloak]]
-							["u"] = 2,-- pattern removed from game
-						}
-					},
 				},
 				{
 					["categoryID"] = 243--[[Shirts]],
