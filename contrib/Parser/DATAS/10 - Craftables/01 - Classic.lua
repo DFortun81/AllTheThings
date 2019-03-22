@@ -1381,7 +1381,6 @@ _.Craftables =
 			un(8, i(22652)),	-- Glacial Vest
 			un(8, i(22655)),	-- Glacial Wrists
 			un(5, i(14153)),	-- Robe of the Void
-			
 			i(10030),	-- Admiral's Hat
 			i(19056),	-- Argent Boots
 			i(19059),	-- Argent Shoulders
