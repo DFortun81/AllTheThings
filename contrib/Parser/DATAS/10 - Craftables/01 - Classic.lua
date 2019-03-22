@@ -1369,7 +1369,7 @@ _.Craftables =
 			}),
 		}),
 		n(-190, { 	-- Tailoring
-			un(8, i(18405)),	-- Belt of the Archmage		
+			i(18405),	-- Belt of the Archmage		
 			un(8, i(19684)),	-- Bloodvine Boots
 			un(8, i(19683)),	-- Bloodvine Leggings
 			un(8, i(19682)),	-- Bloodvine Vest
@@ -1377,17 +1377,17 @@ _.Craftables =
 				["itemID"] = 7027,	-- Boots of Darkness	**NYI and replaced by Boots of Utter Darkness pattern in BC**
 				["u"] = 1,
 			},
-			un(8, i(18413)),	-- Cloak of Warding
-			un(8, i(18407)),	-- Felcloth Gloves
+			i(18413),	-- Cloak of Warding
+			i(18407),	-- Felcloth Gloves
 			un(8, i(22658)),	-- Glacial Cloak
 			un(8, i(22654)),	-- Glacial Gloves
 			un(8, i(22652)),	-- Glacial Vest
 			un(8, i(22655)),	-- Glacial Wrists
-			un(8, i(18408)),	-- Inferno Gloves
-			un(8, i(18409)),	-- Mooncloth Gloves
+			i(18408),	-- Inferno Gloves
+			i(18409),	-- Mooncloth Gloves
 			un(5, i(14153)),	-- Robe of the Void
 			un(8, i(14136)),	-- Robe of Winter Night
-			un(8, i(5770)),		-- Robes of Arcana
+			i(5770),		-- Robes of Arcana
 			i(10030),	-- Admiral's Hat
 			i(19056),	-- Argent Boots
 			i(19059),	-- Argent Shoulders
