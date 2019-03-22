@@ -22,7 +22,8 @@ _.Zones =
 								}),
 								["questID"] = 47532,
 							}),
-							n(128553, {	-- Azer'tor [MissingL]
+							n(128553, {	-- Azer'tor
+								["coord"] = { 47.9, 88.2, 864 },
 								["questID"] = 49252
 							}),	
 							n(128497, {	-- Bajiani the Slick		
@@ -36,12 +37,18 @@ _.Zones =
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 									i(161037),	-- Sand Scoured Girdle
 								}),
-								 ["questID"] = 47562,
+								["coord"] = { 48.8, 50.0, 864 },
+								["questID"] = 47562,
 							}),	
 							n(136393, {	-- Bloodwing Bonepicker
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 									i(161019),	-- Dread Vulture Waistcord
 								}),
+								["coords"] = {
+									-- { 56.7, 56.0, 864 },	-- start of path if in the future we have a way to attach description coords
+									-- { 59.5, 50.8, 864 },	-- start of another path up the mountain
+									{ 56.0, 53.5, 864 },	-- actual rare/nest coord
+								},
 								["questID"] = 51079,
 							}),
 							n(134643, {	-- Brgl-Lrgl the Basher
@@ -60,7 +67,9 @@ _.Zones =
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {		
 									i(162615),	-- Commodore Calhoun's Tricorne
 								}),
+								["coord"] = { 42.5, 92.1, 864 },
 								["questID"] = 50905,
+								["description"] = "This rare is at the very top of the Ashvane encampment, not down by the ship.",
 							}),	
 							n(136335, {	-- Enraged Krolusk
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
@@ -90,6 +99,7 @@ _.Zones =
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 									i(161027),	-- Venomous Hivemother Cord
 								}),
+								["coord"] = { 53.9, 51.8, 864 },
 								["questID"] = 47533,	
 							}),	
 							n(129283, {	-- Jumbo Sandsnapper		

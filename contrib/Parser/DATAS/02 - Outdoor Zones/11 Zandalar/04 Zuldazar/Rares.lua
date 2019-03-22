@@ -44,7 +44,7 @@ _.Zones =
 								["questID"] = 50034,
 								["coord"] = { 66.63, 32.40, 862 },
 							}),
-							{	-- Daggerjaw
+							{			-- Daggerjaw
 								["npcID"] = 133190,		-- Daggerjaw
 								["questID"] = 50269,
 								["coord"] = { 75.62, 36.25, 862 },
@@ -115,7 +115,7 @@ _.Zones =
 								["questID"] = 48453,
 								["coord"] = { 68.74, 48.41, 862 },
 							}),
-							{	-- Kiboku
+							{			-- Kiboku
 								["npcID"] = 132244,		-- Kiboku
 								["questID"] = 50159,
 								["coord"] = { 75.62, 36.25, 862 },
@@ -193,6 +193,7 @@ _.Zones =
 								["groups"] = { -- Level 120 mob which means no gear scaling	
 									i(162620),	-- Devilbone Shoulderguards
 								},
+								["coord"] = { 76.4, 27.1, 862 },
 								["questID"] = 50847,	
 								["repeatable"] = true,	-- temp
 							}),	

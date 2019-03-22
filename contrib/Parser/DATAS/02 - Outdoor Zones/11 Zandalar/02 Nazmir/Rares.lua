@@ -16,9 +16,10 @@ _.Zones =
 							["questID"] = 48063,
 						}),
 						n(134298, {	-- Azerite-Infused Elemental
+							["coord"] = { 54.0, 80.9, 863 },
 							["questID"] = 50569,
 						}),
-						{	-- Azerite-Infused Slag
+						{			-- Azerite-Infused Slag
 							["npcID"] = 134293, 			-- Azerite-Infused Slag
 							["allianceQuestID"] = 50563, 	-- Azerite-Infused Slag [A]
 							["hordeQuestID"] = 49305,		-- Azerite-Infused Slag [H]
@@ -35,12 +36,14 @@ _.Zones =
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(161093),	-- Clutch Mother Wristwraps
 							}),
+							["coord"] = { 42.6, 60.4, 863 },
 							["questID"] = 48439,
 						}),
 						n(126635, {	-- Blood Priest Xak'lar
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(161217),	-- Tainted Blood Vambraces
 							}),
+							["coord"] = { 43.1, 90.4, 863 },
 							["questID"] = 48541,
 						}),
 						n(125232, {	-- Captain Mu'kala
@@ -53,6 +56,7 @@ _.Zones =
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(161102),	-- Corpseblood Belt
 							}),
+							["coord"] = { 41.4, 53.4, 863 },
 							["questID"] = 48462,
 						}),
 						n(121242, {	-- Glompmaw
@@ -72,18 +76,22 @@ _.Zones =
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(162614),	-- Gwugnug's Cursed Wraps
 							}),
+							["coord"] = { 33.4, 87.1, 863 },
 							["questID"] = 48638,
+							["description"] = "This rare is not on top of the mountain, but on the middle level in a cave.  The cave entrance is on the southern side of the mountain.",
 						}),
 						n(124399, {	-- Infected Direhorn
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(161218),	-- Direhorn Studded Belt
 							}),
+							["coord"] = { 24.9, 77.7, 863 },
 							["questID"] = 47877,
 						}),
 						n(133373, {	-- Jax'teb the Reanimated
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(160969),	-- Reanimated Necromancer's Blade
 							}),
+							["coord"] = { 45.1, 51.9, 863 },
 							["questID"] = 50307,
 						}),
 						n(133527, {	-- Juba the Scarred
@@ -97,6 +105,7 @@ _.Zones =
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(161221),	-- Jungle King Mudtossers
 							}),
+							["coord"] = { 53.1, 42.8, 863 },
 							["questID"] = 49317,
 						}),
 						n(125214, {	-- Krubbs
@@ -134,11 +143,10 @@ _.Zones =
 						n(128935, {	-- Mala'kili
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(163703, {	-- Crawag Gnawed Femur
-									["crs"] = {
-										128930,  -- Rohnkor
-									},
+									["crs"] = { 128930 },  -- Rohnkor
 								}),
 							}),
+							["coord"] = { 52.9, 54.6, 863 },
 							["questID"] = 50040,
 						}),
 						n(128610, {	-- Maw of Shul-Nagruth
@@ -151,9 +159,10 @@ _.Zones =
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(160987),	-- Ring of Incomplete Digestion
 							}),
+							["coord"] = { 62.1, 65.0, 863 },
 							["questID"] = 47827,
 						}),
-						{	-- Queen Tzxi'kik
+						{			-- Queen Tzxi'kik
 							["npcID"] = 128974,	-- Queen Tzxi'kik
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(160963),	-- Blood Jungle Stinger
@@ -191,12 +200,13 @@ _.Zones =
 							}),
 							["questID"] = 48406,
 						}),
-						o(282666, {	-- Urn of Agussu [MissingL]
+						o(282666, {	-- Urn of Agussu
 								--[[
 								["crs"] = {
 									135565,	-- Guardian of Agussu
 								},
 								--]]
+							["coord"] = { 38.1, 57.6, 863 },
 							["questID"] = 50888,
 							["icon"] = "Interface\\Icons\\INV_Misc_Urn_01",
 							["model"] = "World\\Expansion07\\Doodads\\Zandalaritroll\\8tr_zandalari_graveyard_urn03.mdx",
@@ -205,6 +215,7 @@ _.Zones =
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(161094),	-- Voodoo-Bound Handwraps
 							}),
+							["coord"] = { 44.2, 48.9, 863 },
 							["questID"] = 49305,
 						}),
 						n(126926, {	-- Venomjaw
@@ -225,12 +236,14 @@ _.Zones =
 							["groups"] = {
 								i(160961),	-- Warmother's Drummer
 							},
+							["coord"] = { 48.7, 50.8, 863 },
 							["questID"] = 48623,
 						}),
 						n(133531, {	-- Xu'ba
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(162619),	-- Bone Collector's Chestcage
 							}),
+							["coord"] = { 36.6, 50.6, 863 },
 							["questID"] = 50348,
 						}),
 						n(129657, {	-- Za'amar the Queen's Blade
@@ -243,6 +256,7 @@ _.Zones =
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(161092),	-- Rivermarsh Quickclaw Buckle
 							}),
+							["coord"] = { 38.8, 71.3, 863 },
 							["questID"] = 50423,
 						}),
 					},
