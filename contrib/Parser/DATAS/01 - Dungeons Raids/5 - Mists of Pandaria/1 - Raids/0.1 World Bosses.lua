@@ -926,6 +926,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						},
 					}),
 					
+					-- Caches / Boxes
+					i(104272),	-- Celestial Treasure Box
+					
 					-- Neck
 					i(103515),	-- Prideful Gladiator's Choker of Accuracy
 					i(102641),	-- Prideful Gladiator's Choker of Accuracy
