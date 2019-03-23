@@ -185,7 +185,7 @@ _.Zones =
 									o(279609, {	-- Spoils of Pandaria	
 										["criteriaID"] = 3,
 										["questID"] = 49936,
---										["coord"] = { , , 862 },	-- need to go on an alt to get map/coordinate info
+										["coord"] = { 24.5, 27.0, 1177 },	-- lower level of Breath of Pa'ku
 										["icon"] = "Interface\\Icons\\garrison_bronzechest",
 									}),
 									o(281655, {	-- Gift of the Brokenhearted	

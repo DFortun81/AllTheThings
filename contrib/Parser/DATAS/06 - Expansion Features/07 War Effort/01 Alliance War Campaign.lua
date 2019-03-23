@@ -134,7 +134,7 @@ _.ExpansionFeatures =
 							["sourceQuests"] = { 51961 },	-- The Ongoing Campaign
 							-- Setting "The Ongoing Campaign" because it starts the second foothold, and you have to finish 2 footholds to unlock this.
 						}),
-						{	-- Nazmir Foothold
+						{	---------- Criteria: Nazmir Foothold
 							["achievementID"] = 12510,	-- Ready for War
 							["collectible"] = false,
 							["criteriaID"] = 1,	--  Nazmir Foothold
@@ -218,7 +218,7 @@ _.ExpansionFeatures =
 								}),
 							},
 						},
-						{	-- Vol'dun Foothold
+						{	---------- Criteria: Vol'dun Foothold
 							["achievementID"] = 12510,	-- Ready for War
 							["collectible"] = false,
 							["criteriaID"] = 2,	--  Vol'dun Foothold
@@ -315,7 +315,7 @@ _.ExpansionFeatures =
 								}),
 							},
 						},
-						{	-- Zuldazar Foothold
+						{	---------- Criteria: Zuldazar Foothold
 							["achievementID"] = 12510,	-- Ready for War
 							["criteriaID"] = 3,	--  Zuldazar Foothold
 							["collectible"] = false,
@@ -407,7 +407,7 @@ _.ExpansionFeatures =
 							-- Grants credit for Alliance whistle unlock, 51722
 							-- Turning in 52450, the alt version (once you've unlocked 51918 on your main via rep) grants credit for 51918 on the alt
 						}),
-						{	-- Blood on the Sand
+						{	---------- Criteria: Blood on the Sand
 							["achievementID"] = 12510,	-- Ready for War
 							["collectible"] = false,
 							["criteriaID"] = 4,	--  Blood on the Sand
@@ -514,7 +514,7 @@ _.ExpansionFeatures =
 							["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
 							["sourceQuests"] = { 53069 },	-- Operation: Blood Arrow
 						}),
-						{	-- Chasing Darkness
+						{	---------- Criteria: Chasing Darkness
 							["achievementID"] = 12510,	-- Ready for War
 							["collectible"] = false,
 							["criteriaID"] = 5,	--  Chasing Darkness
@@ -587,7 +587,7 @@ _.ExpansionFeatures =
 							["coord"] = { 69.4, 26.7, 1161 },	-- Boralus
 							["sourceQuests"] = { 52154 },	-- Our Next Target
 						}),
-						{	-- A Golden Opportunity
+						{	---------- Criteria: A Golden Opportunity
 							["achievementID"] = 12510,	-- Ready for War
 							["collectible"] = false,
 							["criteriaID"] = 6,	--  A Golden Opportunity
@@ -662,7 +662,7 @@ _.ExpansionFeatures =
 							["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
 							["sourceQuests"] = { 52308 },	-- Intercepted Orders
 						}),
-						{	-- Blood in the Water
+						{	---------- Criteria: Blood in the Water
 							["achievementID"] = 12510,	-- Ready for War
 							["collectible"] = false,
 							["criteriaID"] = 7,	--  Blood in the Water
@@ -715,10 +715,137 @@ _.ExpansionFeatures =
 								}),
 							},
 						},
+						qa(53072, {	-- Operation: Heartstrike
+							["description"] = "This quest will automatically be offered when you reach Revered with 7th Legion.",
+							["sourceQuests"] = { 52496 },	-- A Clean Escape
+						}),
+						qa(52473, {	-- Bringing Down the Fleet
+							["qg"] = 135612,	-- Halford Wyrmbane
+							["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
+							["sourceQuests"] = { 53072 },	-- Operation: Heartstrike
+						}),
+						{	---------- Criteria: The Strike on Zuldazar
+							["achievementID"] = 12510,	-- Ready for War
+							["collectible"] = false,
+							["criteriaID"] = 8,	--  The Strike on Zuldazar
+							["races"] = ALLIANCE_ONLY,
+							["maps"] = {
+								862,	-- Zuldazar
+								1176,	-- Breath of Pa'ku, middle level
+								1177,	-- Breath of Pa'ku, bottom level
+							},
+							["lvl"] = 120,
+							["g"] = {
+								qa(52282, {	-- How to Sink a Zandalari Battleship
+									["qg"] = 140257,	-- Halford Wyrmbane
+									["coord"] = { 40.7, 70.8, 862 },	-- Zuldazar
+									["sourceQuests"] = { 52473 },	-- Bringing Down the Fleet
+								}),
+								qa(52281, {	-- Under the Cover of Swiftwing
+									["qg"] = 141287,	-- Falstad Wildhammer
+									["coord"] = { 40.7, 70.8, 862 },	-- Zuldazar
+									["sourceQuests"] = { 52282 },	-- How to Sink a Zandalari Battleship
+								}),
+								qa(52284, {	-- Ship Logs
+									["qg"] = 141290,	-- Kelsey Steelspark
+									["coord"] = { 57.6, 87.5, 862 },	-- Zuldazar
+									["sourceQuests"] = { 52281 },	-- Under the Cover of Swiftwing
+								}),
+								qa(52283, {	-- Sabotaging the Pa'ku
+									["qg"] = 141289,	-- John J. Keeshan
+									["coord"] = { 57.6, 87.5, 862 },	-- Zuldazar
+									["sourceQuests"] = { 52281 },	-- Under the Cover of Swiftwing
+								}),
+								qa(52285, {	-- The Enlarged Miniaturized Submarine
+									["qg"] = 141290,	-- Kelsey Steelspark
+									["coord"] = { 57.6, 87.5, 862 },	-- Zuldazar
+									["sourceQuests"] = {
+										52283,	-- Sabotaging the Pa'ku
+										52284,	-- Ship Logs
+									},
+								}),
+								qa(52290, {	-- My Enemy's Enemy is My Disguise
+									["qg"] = 141291,	-- Shandris Feathermoon
+									["coord"] = { 48.8, 68.5, 862 },	-- Zuldazar
+									["sourceQuests"] = { 52285 },	-- The Enlarged Miniaturized Submarine
+								}),
+								qa(52286, {	-- Right Beneath Their Nose
+									["qg"] = 141291,	-- Shandris Feathermoon
+									["coord"] = { 48.8, 68.5, 862 },	-- Zuldazar
+									["sourceQuests"] = { 52290 },	-- My Enemy's Enemy is My Disguise
+								}),
+								qa(52287, {	-- Intelligence Denial
+									["qg"] = 141291,	-- Shandris Feathermoon
+									["coord"] = { 48.8, 68.5, 862 },	-- Zuldazar
+									["sourceQuests"] = { 52290 },	-- My Enemy's Enemy is My Disguise
+								}),
+								qa(52288, {	-- Void Vacation
+									["qg"] = 141288,	-- Magister Umbric
+									["coord"] = { 48.8, 68.5, 862 },	-- Zuldazar
+									["sourceQuests"] = { 52290 },	-- My Enemy's Enemy is My Disguise
+								}),
+								qa(52289, {	-- Victory is Assured
+									["qg"] = 141291,	-- Shandris Feathermoon
+									["coord"] = { 48.8, 68.5, 862 },	-- Zuldazar
+									["sourceQuests"] = {
+										52287,	-- Intelligence Denial
+										52286,	-- Right Beneath Their Nose
+										52288,	-- Void Vacation
+									},
+								}),
+								qa(52291, {	-- Victory Was Assured
+									["qg"] = 140257,	-- Halford Wyrmbane
+									["coord"] = { 40.4, 71.5, 862 },	-- Zuldazar
+									["sourceQuests"] = { 52289 },	-- Victory is Assured
+								}),
+								qa(52788, {	-- Leave None Alive
+									["qg"] = 141719,	-- Halford Wyrmbane
+									["coord"] = { 35.1, 77.2, 862 },	-- Zuldazar
+									["sourceQuests"] = { 52291 },	-- Victory Was Assured
+								}),
+								qa(52789, {	-- Silencing the Advisor
+									["qg"] = 144024,	-- Halford Wyrmbane
+									["sourceQuests"] = { 52788 },	-- Leave None Alive
+								}),
+								qa(52790, {	-- An End to the Killing
+									["g"] = {
+										{	-- The Strike on Zuldazar
+											["achievementID"] = 12510,	-- Ready for War
+											["criteriaID"] = 8,	--  The Strike on Zuldazar
+										},
+										a(ach(12510)),	-- Ready for War
+									},
+									["qg"] = 144024,	-- Halford Wyrmbane
+									["sourceQuests"] = { 52789 },	-- Silencing the Advisor
+								}),
+							},
+						},
+						qa(53098, {	-- Champion: Shandris Feathermoon
+							["g"] = {
+								follower(1062),	-- Shandris Feathermoon
+							},
+							["qg"] = 141291,	-- Shandris Feathermoon
+							["maps"] = { 84 },	-- Stormwind City
+							-- ^This puts just this quest in SW.  It looks weird without context, but the only alternative I can think of is attaching the SW map at the very beginning of the achievement with the Boralus map, which would list the entirety of Ready for War in SW, which doesn't make much sense.
+							["coord"] = { 85.7, 31.7, 84 },	-- Stormwind City
+							["sourceQuests"] = { 52790 },	-- An End to the Killing
+						}),
+					},
+				},
+				{	-- Tides of Vengeance
+					["achievementID"] = 13467,	-- Tides of Vengeance
+					["races"] = ALLIANCE_ONLY,
+					["maps"] = { 1161 },	--  Boralus
+					["lvl"] = 120,
+					["g"] = {
+						qa(53986, {	-- The Calm Before
+							["qg"] = 135614,	-- Master Mathias Shaw
+							["coord"] = { 70.4, 27.0, 1161 },	-- Boralus
+							["sourceQuests"] = { 53098 },	-- Champion: Shandris Feathermoon
+						}),
 					},
 				},
 			}),
 		}),
 	},
 };
---]]
