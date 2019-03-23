@@ -6,6 +6,9 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 	inst(281, { 	-- The Nexus
 		["lvl"] = 59,
 		["mapID"] = 129,
+		["maps"] = {
+			370, -- The Nexus (Dragonwrath, Tarecgosa's Rest Quest Chain)
+		},
 		["groups"] = {
 			n(-17, {	-- Quests
 				a(q(13094,{ 	-- Have They No Shame?
