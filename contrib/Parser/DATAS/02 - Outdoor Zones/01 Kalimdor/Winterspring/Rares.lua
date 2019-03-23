@@ -8,6 +8,7 @@ _.Zones =
 			["groups"] = {
 				n(-16, {	-- Rares
 					n(51045, {	-- Arcanus
+						["coord"] = { 48.0, 59.6, 83 },
 						["groups"] = {
 							i(10276),	-- Emerald Sabatons
 							i(10096),	-- Councillor's Cuffs
@@ -34,9 +35,18 @@ _.Zones =
 							i(10245),	-- Heavy Lamellar Pauldrons
 							i(10120),	-- Ornate Cloak
 						},
-						["coord"] = { 48.0, 59.6 },
 					}), 
 					n(10202, {	-- Azurous
+						["coords"] = {
+							{ 58.0, 56.0, 83 },
+							{ 59.8, 53.8, 83 },
+							{ 61.2, 54.6, 83 },
+							{ 63.0, 54.8, 83 },
+							{ 65.6, 58.0, 83 },
+							{ 65.8, 61.0, 83 },
+							{ 65.8, 64.6, 83 },
+							{ 66.0, 67.8, 83 },
+						},
 						["groups"] = {
 							i(10197),	-- Crusader's Belt
 							i(10196),	-- Crusader's Gauntlets
@@ -82,18 +92,12 @@ _.Zones =
 							i(10074),	-- Righteous Leggings
 							i(10183),	-- Swashbuckler's Boots
 						},
-						["coords"] = {
-							{ 58.0, 56.0 },
-							{ 59.8, 53.8 },
-							{ 61.2, 54.6 },
-							{ 63.0, 54.8 },
-							{ 65.6, 58.0 },
-							{ 65.8, 61.0 },
-							{ 65.8, 64.6 },
-							{ 66.0, 67.8 },
-						},
 					}), 
 					n(50997, {	-- Bornak the Gorer
+						["coords"] = {
+							{ 59.6, 17.4, 83 },
+							{ 62.4, 24.8, 83 },
+						},
 						["groups"] = {
 							i(10186),	-- Swashbuckler's Gloves
 							i(10200),	-- Crusader's Pauldrons
@@ -112,12 +116,9 @@ _.Zones =
 							i(10170),	-- Templar Pauldrons
 							i(10245),	-- Heavy Lamellar Pauldrons
 						},
-						["coords"] = {
-							{ 59.6, 17.4 },
-							{ 62.4, 24.8 },
-						},
 					}), 
 					n(50995, {	-- Bruiser
+						["coord"] = { 65.6, 42.8, 83 },
 						["groups"] = {
 							i(10203),	-- Overlord's Chestplate
 							i(10184),	-- Swashbuckler's Bracers
@@ -140,17 +141,17 @@ _.Zones =
 							i(10077),	-- Lord's Breastplate
 							i(10126),	-- Ornate Bracers
 						},
-						["coord"] = { 65.6, 42.8 },
 					}), 
 					o(240616, {	-- Frozen Supplies
+						["coord"] = { 68.0, 73.9, 83 },
+						["modelID"] = 32854,
+						["description"] = "|cff66ccffLoot the Frozen Supplies in a nook at the base of the pillar.|r",
 						["groups"] = {	
 							i(122224)		-- Music Roll: Mountains
 						},
-						["coord"] = { 68.0, 73.9 },
-						["modelID"] = 32854,
-						["description"] = "|cff66ccffLoot the Frozen Supplies in a nook at the base of the pillar.|r",
 					}), 					
 					n(50993, {	-- Gal'dorak
+						["coord"] = { 35.6, 48.8, 83 },
 						["groups"] = {
 							i(7527),	-- Cabalist Chestpiece
 							i(10131),	-- Revenant Boots
@@ -182,9 +183,16 @@ _.Zones =
 							i(10069),	-- Righteous Bracers
 							i(10190),	-- Swashbuckler's Belt
 						},
-						["coord"] = { 35.6, 48.8 },
 					}), 
 					n(10196, {	-- General Colbatann
+						["coords"] = {
+							{ 55.8, 64.6, 83 },
+							{ 57.2, 65.8, 83 },
+							{ 58.6, 65.6, 83 },
+							{ 59.4, 65.0, 83 },
+							{ 60.6, 64.0, 83 },
+							{ 62.8, 63.6, 83 },
+						},
 						["groups"] = {
 							i(10244),	-- Heavy Lamellar Leggings
 							i(10096),	-- Councillor's Cuffs
@@ -230,16 +238,9 @@ _.Zones =
 							i(10188),	-- Swashbuckler's Leggings
 							i(10170),	-- Templar Pauldrons
 						},
-						["coords"] = {
-							{ 55.8, 64.6 },
-							{ 57.2, 65.8 },
-							{ 58.6, 65.6 },
-							{ 59.4, 65.0 },
-							{ 60.6, 64.0 },
-							{ 62.8, 63.6 },
-						},
 					}), 
 					n(10199, {	-- Grizzle Snowpaw
+						["coord"] = { 68.6, 50.2, 83 },
 						["groups"] = {
 							i(9950),	-- Chieftain's Breastplate
 							i(10198),	-- Crusader's Helm
@@ -287,9 +288,9 @@ _.Zones =
 							i(10187),	-- Swashbuckler's Eyepatch
 							i(10110),	-- Wanderer's Gloves
 						},
-						["coord"] = { 68.6, 50.2 },
 					}), 
 					n(50819, {	-- Iceclaw
+						["coord"] = { 52.0, 18.8, 83 },
 						["groups"] = {
 							i(9955),	-- Chieftain's Shoulders
 							i(10209),	-- Overlord's Spaulders
@@ -307,9 +308,9 @@ _.Zones =
 							i(10076),	-- Lord's Armguards
 							i(7527),	-- Cabalist Chestpiece
 						},
-						["coord"] = { 52.0, 18.8 },
 					}), 
 					n(10198, {	-- Kashoch the Reaver
+						["coord"] = { 61.2, 83.8, 83 },
 						["groups"] = {
 							i(10070),	-- Righteous Armor
 							i(10193),	-- Crusader's Armor
@@ -356,9 +357,9 @@ _.Zones =
 							i(10169),	-- Templar Legplates
 							i(10170),	-- Templar Pauldrons
 						},
-						["coord"] = { 61.2, 83.8 },
 					}), 
 					n(50353, {	-- Manas
+						["coord"] = { 64.0, 80.0, 83 },
 						["groups"] = {
 							i(9953),	-- Chieftain's Headdress
 							i(10098),	-- Councillor's Cloak
@@ -379,9 +380,9 @@ _.Zones =
 							i(10185),	-- Swashbuckler's Cape
 							i(10243),	-- Heavy Lamellar Girdle
 						},
-						["coord"] = { 64.0, 80.0 },
 					}), 
 					n(10197, {	-- Mezzir the Howler
+						["coord"] = { 24.2, 51.6, 83 },
 						["groups"] = {
 							i(9954),	-- Chieftain's Leggings
 							i(10191),	-- Crusader's Armguards
@@ -426,9 +427,9 @@ _.Zones =
 							i(7517),	-- Gossamer Tunic
 							i(10174),	-- Mystical Cape
 						},
-						["coord"] = { 24.2, 51.6 },
 					}), 
 					n(50348, {	-- Norissis
+						["coord"] = { 59.6, 24.0, 83 },
 						["groups"] = {
 							i(10245),	-- Heavy Lamellar Pauldrons
 							i(10132),	-- Revenant Helmet
@@ -454,28 +455,28 @@ _.Zones =
 							i(10241),	-- Heavy Lamellar Helm
 							i(10166),	-- Templar Girdle
 						},
-						["coord"] = { 59.6, 24.0 },
 					}), 
 					o(272487, {	-- Oddly-Colored Egg
-						["groups"] = {
-							i(142223),	-- Sun Darter Hatchling (PET!)
-						},
-						["coord"] = { 50.9, 2.3 },
+						["coord"] = { 50.9, 2.3, 83 },
 						["model"] = "World\\Expansion06\\Doodads\\Dungeon\\Doodads\\7du_Nightmare_Egg01.mdx",
 						["modelScale"] = 2,
 						["icon"] = "Interface\\Icons\\INV_Egg_09",
-						["description"] = "|cff3399ffSTEP 1:|r |cff66ccffObtain Major Arcane, Fire, Frost, Holy, Nature, & Shadow Protection Potions, 20x Noggenfogger Elixir (Sprinkle Noggenfogger - Tanaris - 51.2,29.8), Scotty's Lucky Coin (Scotty - Townlong Steppes - 21.8,46), Dire Brew (Dark Iron Brewer - BRD, talk to him til he passes out, loot Mug of Dire Brew), Ethereal Oil, Gordok Ogre Suit (Dire Maul West - ogre tannin - jump down free knot), Winterfall Firewater (Winterfall mobs - Winterspring), 20x Pygmy Oil, Perky Pug, Little Princess Costume (Pet Vendor - Garrison), Scroll of Intellect (level 1 version)|r \n|cff3399ffSTEP 2:|r |cff66ccffGo to Cavern of Consumption (57,16) North Coast of Winterspring|r \n|cff3399ffSTEP 3:|r |cff66ccffFire Barrior - Use Major Fire Protection Potion |r\n|cff3399ffSTEP 4:|r |cff66ccffPrismatic Barrior - Use rest of Major Potions |r\n|cff3399ffSTEP 5:|r |cff66ccffDiligent Watcher - Use Noggenfogger Elixir - Skeleton - Walk Past |r\n|cff3399ffSTEP 6:|r |cff66ccffWall of Vines - Use Scotty's Lucky Coin - Loot Water Stone in water. |r\n|cff3399ffSTEP 7:|r |cff66ccffUse Water Stone - backtrack to Blue Barrier - Walk Past |r\n|cff3399ffSTEP 8:|r |cff66ccffStone Watcher - Use Dire Brew - Walk Past |r\n|cff3399ffSTEP 9:|r |cff66ccffThree Paths - Up ramp to Purple Transparent Barrier - Use Ethereal Oil - Walk Past |r\n|cff3399ffSTEP 10:|r |cff66ccffStrange Stone - Use Gordok Ogre Suit & Wintefall Firewater - Stick arm in stone - Sign of the Second Buff |r\n|cff3399ffSTEP 11:|r |cff66ccffBacktrack to gate - Use Pygmy oil - Pygmy - Walk Past to Wisdom Cube |r\n|cff3399ffSTEP 12:|r |cff66ccffSummon Perky Pug - Use Little Princess Costume - Place Arm Beneath Cube - Sign of the First Buff |r\n|cff3399ffSTEP 13:|r |cff66ccffBacktrack to now opened gate. DO NOT JUMP OFF - Walk Around - Click Tarnished Plague |r\n|cff3399ffSTEP 14:|r |cff66ccffClick off Winterfall Firewater Buff - use Scroll of intellect - DO NOT JUMP IN WATER - Walk to far edge of water on right to slope to walk to egg|r"
+						["description"] = "|cff3399ffSTEP 1:|r |cff66ccffObtain Major Arcane, Fire, Frost, Holy, Nature, & Shadow Protection Potions, 20x Noggenfogger Elixir (Sprinkle Noggenfogger - Tanaris - 51.2,29.8), Scotty's Lucky Coin (Scotty - Townlong Steppes - 21.8,46), Dire Brew (Dark Iron Brewer - BRD, talk to him til he passes out, loot Mug of Dire Brew), Ethereal Oil, Gordok Ogre Suit (Dire Maul West - ogre tannin - jump down free knot), Winterfall Firewater (Winterfall mobs - Winterspring), 20x Pygmy Oil, Perky Pug, Little Princess Costume (Pet Vendor - Garrison), Scroll of Intellect (level 1 version)|r \n|cff3399ffSTEP 2:|r |cff66ccffGo to Cavern of Consumption (57,16) North Coast of Winterspring|r \n|cff3399ffSTEP 3:|r |cff66ccffFire Barrior - Use Major Fire Protection Potion |r\n|cff3399ffSTEP 4:|r |cff66ccffPrismatic Barrior - Use rest of Major Potions |r\n|cff3399ffSTEP 5:|r |cff66ccffDiligent Watcher - Use Noggenfogger Elixir - Skeleton - Walk Past |r\n|cff3399ffSTEP 6:|r |cff66ccffWall of Vines - Use Scotty's Lucky Coin - Loot Water Stone in water. |r\n|cff3399ffSTEP 7:|r |cff66ccffUse Water Stone - backtrack to Blue Barrier - Walk Past |r\n|cff3399ffSTEP 8:|r |cff66ccffStone Watcher - Use Dire Brew - Walk Past |r\n|cff3399ffSTEP 9:|r |cff66ccffThree Paths - Up ramp to Purple Transparent Barrier - Use Ethereal Oil - Walk Past |r\n|cff3399ffSTEP 10:|r |cff66ccffStrange Stone - Use Gordok Ogre Suit & Wintefall Firewater - Stick arm in stone - Sign of the Second Buff |r\n|cff3399ffSTEP 11:|r |cff66ccffBacktrack to gate - Use Pygmy oil - Pygmy - Walk Past to Wisdom Cube |r\n|cff3399ffSTEP 12:|r |cff66ccffSummon Perky Pug - Use Little Princess Costume - Place Arm Beneath Cube - Sign of the First Buff |r\n|cff3399ffSTEP 13:|r |cff66ccffBacktrack to now opened gate. DO NOT JUMP OFF - Walk Around - Click Tarnished Plague |r\n|cff3399ffSTEP 14:|r |cff66ccffClick off Winterfall Firewater Buff - use Scroll of intellect - DO NOT JUMP IN WATER - Walk to far edge of water on right to slope to walk to egg|r",
+						["groups"] = {
+							i(142223),	-- Sun Darter Hatchling (PET!)
+						},
 					}),
 					n(14457, { 	-- Princess Tempestria
+						["u"] = 43,
+						["description"] = "This rare was only available during the Elemental Invasions.",
 						["groups"] = {
 							un(8, i(21548)),	-- Pattern: Stormshroud Gloves
 							un(7, i(18678)), 	-- Tempestria's Frozen Necklace
 							un(7, i(18679)),	-- Frigid Ring
 						},
-						["u"] = 43,
-						["description"] = "This rare was only available during the Elemental Invasions.",
 					}),
 					n(50788, {	-- Quetzl
+						["coord"] = { 67.0, 83.6, 83 },
 						["groups"] = {
 							i(10198),	-- Crusader's Helm
 							i(9950),	-- Chieftain's Breastplate
@@ -484,9 +485,13 @@ _.Zones =
 							i(10189),	-- Swashbuckler's Shoulderpads
 							i(10196),	-- Crusader's Gauntlets
 						},
-						["coord"] = { 67.0, 83.6 },
 					}), 
 					n(10200, {	-- Rak'shiri
+						["coords"] = {
+							{ 47.6, 18.2, 83 },
+							{ 47.0, 19.6, 83 },
+							{ 46.2, 18.6, 83 },
+						},
 						["groups"] = {
 							i(10098),	-- Councillor's Cloak
 							i(10108),	-- Wanderer's Cloak
@@ -532,13 +537,9 @@ _.Zones =
 							i(10179),	-- Mystical Boots
 							i(10166),	-- Templar Girdle
 						},
-						["coords"] = {
-							{ 47.6, 18.2 },
-							{ 47.0, 19.6 },
-							{ 46.2, 18.6 },
-						},
 					}),		
 					n(50346, {	-- Ronak
+						["coord"] = { 59.6, 42.8, 83 },
 						["groups"] = {
 							i(10184),	-- Swashbuckler's Bracers
 							i(10108),	-- Wanderer's Cloak
@@ -567,9 +568,9 @@ _.Zones =
 							i(10176),	-- Mystical Gloves
 							i(10187),	-- Swashbuckler's Eyepatch
 						},
-						["coord"] = { 59.6, 42.8 },
 					}), 
 					n(10741, {	-- Sian-Rotam
+						["coord"] = { 45.8, 17.6, 83 },
 						["groups"] = {
 							i(10189),	-- Swashbuckler's Shoulderpads
 							i(10108),	-- Wanderer's Cloak
@@ -593,9 +594,9 @@ _.Zones =
 							i(10184),	-- Swashbuckler's Bracers
 							i(10203),	-- Overlord's Chestplate
 						},
-						["coord"] = { 45.8, 17.6 },
 					}), 
 					n(51028, {	-- The Deep Tunneler
+						["coord"] = { 50.6, 72.2, 83 },
 						["groups"] = {
 							i(20768, {	-- Oozing Bag
 								i(20769),	-- Disgusting Oozeling
@@ -626,7 +627,6 @@ _.Zones =
 							i(10180),	-- Mystical Belt
 							i(10203),	-- Overlord's Chestplate
 						},
-						["coord"] = { 50.6, 72.2 },
 					}),
 				}),
 			},

@@ -8,6 +8,7 @@ _.Zones =
 			["groups"] = {
 				n(-2,  {	-- Vendors
 					n(48617, {	-- Blacksmith Abasi <Ramkahen Quartermaster>
+						["coord"] = { 54.0, 33.2, 249 },
 						["groups"] = {
 							i(63044),	-- Reins of the Brown Riding Camel Mount
 							i(63045),	-- Reins of the Tan Riding Camel Mount
@@ -25,7 +26,6 @@ _.Zones =
 							i(62440),	-- Red Rock Band
 							i(62447),	-- Gift of Nadun
 						},
-						["coord"] = { 54.0, 33.2, 249 },
 					}),
 				}),
 			},
