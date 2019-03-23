@@ -212,7 +212,11 @@ _.Zones =
 								},
 							},
 						},
-						{			-- Azerite for the Alliance
+						{	-- Azerite for the Alliance
+							["groups"] = {
+								i(166883), -- Treasure Map (Displayed when hovering over the quest on the map.)
+								i(166999), -- Treasure Map
+							},
 							["questID"] = 53436, 	-- Azerite for the Alliance
 							["qg"] = 131290,	-- Flynn
 							["coords"] = {
@@ -221,12 +225,6 @@ _.Zones =
 							["repeatable"] = true,
 							["isWeekly"] = true,
 							["races"] = ALLIANCE_ONLY,
-							["g"] = {
-								{	-- Treasure Map
-									["itemID"] = 166999, 	-- Treasure Map
-									["itemID"] = 166883, 	-- Treasure Map, Displayed Version, you get the first
-								},
-							},
 						},
 						qa(50789, {	-- Clear the Air
 							["qg"] = 135259,	-- Taelia

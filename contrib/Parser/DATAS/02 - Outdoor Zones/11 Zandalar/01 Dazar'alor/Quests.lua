@@ -211,6 +211,10 @@ _.Zones =
 							["races"] = HORDE_ONLY,
 						}),
 						{	-- Azerite for the Horde
+							["groups"] = {
+								i(166883), -- Treasure Map (Displayed when hovering over the quest on the map.)
+								i(166999), -- Treasure Map
+							},
 							["questID"] = 53435, 	-- Azerite for the Horde
 							["qg"] = 133000,	-- Captain Rez'okun
 							["coords"] = {
@@ -219,12 +223,6 @@ _.Zones =
 							["repeatable"] = true,
 							["isWeekly"] = true,
 							["races"] = HORDE_ONLY,
-							["g"] = {
-								{	-- Treasure Map
-									["itemID"] = 166999, 	-- Treasure Map
-									["itemID"] = 166883, 	-- Treasure Map, Displayed Version, you get the first
-								},
-							},
 						},
 						{	-- Righting Wrongs
 							["questID"] = 55124,
