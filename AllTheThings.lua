@@ -10921,24 +10921,7 @@ end)();
 					if pois then
 						for i,poi in ipairs(pois) do
 							local questObject = {questID=poi.questId,g={},progress=0,total=0};
-							if poi.mapID ~= mapID then
-								local subMapObject = { mapID=poi.mapID,g={},progress=0,total=0};
-								cache = fieldCache["mapID"][poi.mapID];
-								if cache then
-									for _,data in ipairs(cache) do
-										if data.mapID and data.icon then
-											subMapObject.icon = data.icon;
-											subMapObject.lvl = data.lvl;
-											subMapObject.description = data.description;
-											break;
-										end
-									end
-								end
-								MergeObject(subMapObject.g, questObject);
-								MergeObject(mapObject.g, subMapObject);
-							else
-								MergeObject(mapObject.g, questObject);
-							end
+							
 							local tagID, tagName, worldQuestType, rarity, isElite, tradeskillLineIndex = GetQuestTagInfo(questObject.questID);
 							if worldQuestType == LE_QUEST_TAG_TYPE_PVP or worldQuestType == LE_QUEST_TAG_TYPE_BOUNTY then
 								questObject.icon = "Interface\\Icons\\Achievement_PVP_P_09";
@@ -10946,10 +10929,9 @@ end)();
 								questObject.icon = "Interface\\Icons\\PetJournalPortrait";
 							elseif worldQuestType == LE_QUEST_TAG_TYPE_PROFESSION then
 								questObject.icon = "Interface\\Icons\\Trade_BlackSmithing";
-							elseif worldQuestType == LE_QUEST_TAG_TYPE_DUNGEON then
+							elseif worldQuestType == LE_QUEST_TAG_TYPE_DUNGEON or tagID == 137 then
 								-- questObject.icon = "Interface\\Icons\\Achievement_PVP_P_09";
-								-- TODO: Add the relevent dungeon icon.
-								
+								-- TODO: Add the relevent dungeon icon. (DONE! IN REWARDS!)
 							elseif worldQuestType == LE_QUEST_TAG_TYPE_RAID then
 								-- questObject.icon = "Interface\\Icons\\Achievement_PVP_P_09";
 								-- TODO: Add the relevent dungeon icon.
@@ -10978,21 +10960,37 @@ end)();
 								end
 							end
 							
-							local numQuestRewards = GetNumQuestLogRewards (questObject.questID)
+							local numQuestRewards = GetNumQuestLogRewards (questObject.questID);
 							for j=1,numQuestRewards,1 do
-								local itemID = select(6, GetQuestLogRewardInfo (j, questObject.questID));
+								local _, _, _, _, _, itemID, ilvl = GetQuestLogRewardInfo (j, questObject.questID);
 								if itemID then
+									local modID = tagID == 137 and ((ilvl >= 370 and 23) or (ilvl >= 355 and 2)) or 1;
 									if showCurrencies or (itemID ~= 116415 and itemID ~= 163036) then
 										-- QuestHarvester:SetQuestLogItem("reward", j, questObject.questID);
 										local item = { ["itemID"] = itemID, ["expanded"] = false, };
 										cache = fieldCache["itemID"][itemID];
 										if cache then
+											local ACKCHUALLY;
 											for _,data in ipairs(cache) do
 												if data.f then
 													item.f = data.f;
 												end
 												if data.s then
 													item.s = data.s;
+													if data.modID == modID then
+														ACKCHUALLY = data.s;
+														item.modID = modID;
+														if tagID == 137 then
+															local parent = data.parent;
+															while parent do
+																if parent.instanceID then
+																	questObject.icon = parent.icon;
+																	break;
+																end
+																parent = parent.parent;
+															end
+														end
+													end
 												end
 												if data.g and #data.g > 0 then
 													if not item.g then
@@ -11005,6 +11003,9 @@ end)();
 														MergeObject(item.g, subdata);
 													end
 												end
+											end
+											if ACKCHUALLY then
+												item.s = ACKCHUALLY;
 											end
 										end
 										MergeObject(questObject.g, item);
@@ -11055,6 +11056,24 @@ end)();
 							end
 							--print(i, ": ", mapID, " ", poi.mapID, ", ", questObject.questID, timeRemaining);
 							--print(tagID, tagName, worldQuestType, rarity, isElite, tradeskillLineIndex, displayTimeLeft);
+							if poi.mapID ~= mapID then
+								local subMapObject = { mapID=poi.mapID,g={},progress=0,total=0};
+								cache = fieldCache["mapID"][poi.mapID];
+								if cache then
+									for _,data in ipairs(cache) do
+										if data.mapID and data.icon then
+											subMapObject.icon = data.icon;
+											subMapObject.lvl = data.lvl;
+											subMapObject.description = data.description;
+											break;
+										end
+									end
+								end
+								MergeObject(subMapObject.g, questObject);
+								MergeObject(mapObject.g, subMapObject);
+							else
+								MergeObject(mapObject.g, questObject);
+							end
 						end
 						table.sort(mapObject.g, self.Sort);
 					end
