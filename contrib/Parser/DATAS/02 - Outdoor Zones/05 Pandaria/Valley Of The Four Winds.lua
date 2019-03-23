@@ -595,7 +595,7 @@ _.Zones =
 						["qg"] = 58647,	-- Ella (53,51.6)
 						["description"] = "Requires reputation level of \"Friend\" or better.",
 					}),
-					i(79237, {	-- Enormous Crocolisk Tail
+					i(79238, {	-- Enormous Crocolisk Tail
 						q(30275, {	-- A Crocolisk Tale
 							["qg"] = 58755,	-- Manglemaw's Mother
 							["description"] = "Kill Manglemaw at the Pools of Purity to spawn Manglemaw's Mother.",
