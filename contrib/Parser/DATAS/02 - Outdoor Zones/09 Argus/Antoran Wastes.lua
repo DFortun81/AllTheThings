@@ -589,7 +589,6 @@ _.Zones =
 					q(48039),	-- Balancing the Break
 					q(49007),	-- Commander on Deck!
 					q(48605),	-- Commander's Downfall
-					q(48078),	-- Counterbalancing
 					q(47891),	-- Dire News
 					q(48038),	-- Don't Just Pick At It
 					q(48055),	-- Empyrial Strength

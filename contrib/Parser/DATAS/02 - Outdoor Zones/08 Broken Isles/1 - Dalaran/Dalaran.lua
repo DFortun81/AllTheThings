@@ -433,9 +433,16 @@ _.Zones =
 						q(41680),	-- Work Order: Failure Detection Pylon
 						q(41638),	-- Work Order: Leystone Gauntlets
 						q(41650),	-- Work Order: Silkweave Hood
-						q(41644),	-- Work Order: Warhide Gloves
-						q(41674),	-- Work Order: Word of Intellect
 --]]					
+						{	-- Work Order: Warhide Gloves
+							["questID"] = 41644,
+							["qg"] = 32725,	-- Warmage Silva
+							["groups"] = {
+								i(137879),	-- Recipe: Warhide Gloves (Rank 3)
+							},
+							["isWQ"] = 110,
+							["requireSkill"] = 165,	-- Leatherworking
+						},
 						{	-- Work Order: Word of Intellect
 							["questID"] = 41674,
 							["qg"] = 32725,	-- Warmage Silva
@@ -1222,7 +1229,7 @@ _.Zones =
 							}),
 							q(41889, {	-- Dazed of the Past
 								["groups"] = {
-									recipe(196648),	-- Stonehide Leather Barding
+									i(137952), -- Recipe: Stonehide Leather Barding				
 								},
 								["qg"] = 93523,	-- Namha Moonwater
 								["sourceQuests"] = { 40197 },	-- The Necessary Materials
@@ -1232,8 +1239,8 @@ _.Zones =
 							}),
 							q(40176, {	-- From Head to Toe
 								["groups"] = {
-									recipe(194701),	-- Warhide Footpads (Rank 1)
-									recipe(194741),	-- Battlebound Treads (Rank 1)
+									i(132124), -- Pattern: Battlebound Treads
+									recipe(194701), -- Recipe: Warhide Footpads
 								},
 								["qg"] = 93523,	-- Namha Moonwater
 							}),
@@ -1248,8 +1255,8 @@ _.Zones =
 							}),
 							q(40199, {	-- Leather Legwork
 								["groups"] = {
-									recipe(194745),	-- Battlebound Spaulders (Rank 2)
-									recipe(194749),	-- Battlebound Treads (Rank 2)
+									i(137902),	-- Recipe: Battlebound Spaulders (Rank 2)
+									i(137906),	-- Recipe: Battlebound Treads (Rank 2)
 								},
 								["qg"] = 98931,	-- Thanid Glowergold
 							}),
@@ -1268,14 +1275,14 @@ _.Zones =
 							q(40183, {	-- Over Your Head
 								["groups"] = {
 									recipe(194699),	-- Warhide Mask
-									recipe(194739),	-- Battlebound Warhelm
+									i(132123),	-- Pattern: Battlebound Warhelm
 								},
 								["qg"] = 93523,	-- Namha Moonwater
 								["sourceQuests"] = { 39958 },	-- Skin Deep
 							}),
 							q(40201, {	-- Playthings
 								["groups"] = { 
-									recipe(194776),	-- Leather Pet Bed
+									i(137933), -- Recipe: Leather Pet Bed
 								},
 								["qg"] = 93523,	-- Namha Moonwater
 								["sourceQuests"] = { 
@@ -1285,8 +1292,8 @@ _.Zones =
 							}),
 							q(40198, {	-- Rats!
 								["groups"] = {
-									recipe(194705),	-- Warhide Shoulderguard (Rank 2)
-									recipe(194709),	-- Warhide Footpads (Rank 2)
+									i(137874),	-- Recipe: Warhide Footpads (Rank 2)
+									i(137870),	-- Recipe: Warhide Shoulderguard (Rank 2)
 								},
 								["qg"] = 93522,	-- Diane Cannings
 							}),
@@ -6767,12 +6774,30 @@ _.Zones =
 						i(51304),	-- Sanctified Lasherweave Pauldrons
 					}),
 					n(93521, { 	-- Ranid Glowergold <Leatherworking & Skinning Supplies>
-						["groups"] = {
+						["coord"] = { 34.6, 28.6 },
+						["g"] = {
+							i(137884), -- Recipe: Dreadleather Bindings (Rank 2)
+							i(137890), -- Recipe: Dreadleather Footpads (Rank 2)
+							i(137889), -- Recipe: Dreadleather Gloves (Rank 2)
+							i(137891), -- Recipe: Dreadleather Jerkin (Rank 2)
+							i(137888), -- Recipe: Dreadleather Mask (Rank 2)
+							i(137887), -- Recipe: Dreadleather Pants (Rank 2)
+							i(137886), -- Recipe: Dreadleather Shoulderguard (Rank 2)
+							i(142407), -- Recipe: Drums of the Mountain (Rank 1)
 							i(141850, { -- Recipe: Elderhorn Riding Harness
-								i(129962),	-- Mount
+								["description"] = "Vendor will only sell this recipe to those who have already completed the quest that rewards it. This is in case you deleted the recipe without learning it, or if you dropped Leatherworking after doing the quest and decided to relearn it later.",
+								["g"] = {
+									i(129962),	-- Mount
+								},
 							}),
+							i(137916), -- Recipe: Gravenscale Armbands (Rank 2)
+							i(137921), -- Recipe: Gravenscale Grips (Rank 2)
+							i(137923), -- Recipe: Gravenscale Hauberk (Rank 2)
+							i(137919), -- Recipe: Gravenscale Leggings (Rank 2)
+							i(137918), -- Recipe: Gravenscale Spaulders (Rank 2)
+							i(137922), -- Recipe: Gravenscale Treads (Rank 2)
+							i(137920), -- Recipe: Gravenscale Warhelm (Rank 2)
 						},
-						["description"] = "Vendor will only sell this recipe to those who have already completed the quest that rewards it. This is in case you deleted the recipe without learning it, or if you dropped Leatherworking after doing the quest and decided to relearn it later.",
 					}),
 					n(97342, {	-- Salan Sunthread <Clothier>
 						i(42360),	-- Ebon Filigreed Doublet
@@ -8068,15 +8093,13 @@ _.Zones =
 								["requireSkill"] = 333,	-- Enchanting
 							}),
 							i(136699),	-- Recipe: Flamespike
+							i(137935),	-- Recipe: Leather Love Seat
 							i(137727, { -- Schematic: Mecha-Bond Imprint Matrix
 								i(134125, { -- Mecha-Bond Imprint Matric
 									["classes"] = 3,	-- Hunter/camp
 								}),
 							}),
-							i(136706), -- Technique: Straszan Mark
-							i(137935, { -- Recipe: Leather Love Seat
-								i(129956),	-- Leather Love Seat Toy
-							}),
+							i(136706),	-- Technique: Straszan Mark
 							i(141713),	-- Arcadian War Turtle Mount
 							i(141862),	-- Mote of Light Toy
 						}),
@@ -8142,53 +8165,30 @@ _.Zones =
 						}),
 						n(107760, { -- Strap Bucklebolt <Belts>
 							currency(1149, { -- Sightless Eyes
-								i(137901, { -- Recipe: Battlebound Girdle Rank 2
-									i(128898),	-- Battlebound Girdle
-								}),
-								i(137913, { -- Recipe: Battlebound Girdle Rank 3
-									i(128898),	-- Battlebound Girdle
-								}),
+								i(137966),	-- Pattern: Imbued Silkweave Cinch (Rank 2)
+								i(137974),	-- Pattern: Imbued Silkweave Cinch (Rank 3)
+								i(137954),	-- Pattern: Silkweave Cinch (Rank 2)
+								i(137962),	-- Pattern: Silkweave Cinch (Rank 3)
+								i(137901), 	-- Recipe: Battlebound Girdle (Rank 2)
+								i(137913), 	-- Recipe: Battlebound Girdle (Rank 3)
 								i(123949),	-- Recipe: Demonsteel Waistguard (Rank 3)
-								i(137885, { -- Recipe: Dreadleather Belt Rank 2
-									i(128890),	-- Dreadleather Belt
-								}),
-								i(137893, { -- Recipe: Dreadleather Belt Rank 3
-									i(128890),	-- Dreadleather Belt
-								}),
-								i(137917, { -- Recipe: Gravenscale Girdle Rank 2
-									i(128906),	-- Gravenscale Girdle
-								}),
-								i(137925, {	-- Recipe: Gravenscale Girdle Rank 3
-									i(128906),	-- Gravenscale Girdle
-								}),
-								i(137966, { -- Pattern: Imbued Silkweave Cinch Rank 2
-									i(127001),	-- Imbued Silkweave Cinch
-								}),
-								i(137974, { -- Pattern: Imbued Silkweave Cinch Rank 3
-									i(127001),	-- Imbued Silkweave Cinch
-								}),
+								i(137885),	-- Recipe: Dreadleather Belt (Rank 2)
+								i(137893),	-- Recipe: Dreadleather Belt (Rank 3)
+								i(137917),	-- Recipe: Gravenscale Girdle (Rank 2)
+								i(137925),	-- Recipe: Gravenscale Girdle (Rank 3)
 								i(123929),	-- Recipe: Leystone Waistguard (Rank 2)
 								i(123937),	-- Recipe: Leystone Waistguard (Rank 3)
-								i(137954, { -- Pattern: Silkweave Cinch Rank 2
-									i(126993),	-- Silkweave Cinch
-								}),
-								i(137962, { -- Pattern: Silkweave Cinch Rank 3
-									i(126993),	-- Silkweave Cinch
-								}),
-								i(137869, { -- Recipe: Warhide Belt Rank 2
-									i(128882),	-- Warhide Belt
-								}),
-								i(137881, { -- Recipe: Warhide Belt Rank 3
-									i(128882),	-- Warhide Belt
-								}),
+								i(137869),	-- Recipe: Warhide Belt (Rank 2)
+								i(137881),	-- Recipe: Warhide Belt (Rank 3)
 							}),
 						}),
 						n(97366, {	-- The Widow <Tools of Deception>
 							currency(1149, { -- Sightless Eyes
 								i(137829),	-- Design: Subtle Shadowruby Pendant (Rank 2)
-								i(137706),	-- Schematic: Gunpowder Charge
-								i(137720),	-- Schematic: Gunpowder Charge
+								i(137706),	-- Schematic: Gunpowder Charge (Rank 2)
+								i(137720),	-- Schematic: Gunpowder Charge (Rank 3)
 								i(141057),	-- Technique: Glyph of Flash Bang
+								i(139426),	-- Widowsister Contract
 							}),
 						}),
 					}),

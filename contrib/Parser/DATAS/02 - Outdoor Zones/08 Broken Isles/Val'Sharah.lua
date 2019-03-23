@@ -1488,6 +1488,14 @@ _.Zones =
 							["isWQ"] = 110,
 							["requireSkill"] = 197,	-- Tailoring
 						},
+						{	-- Work Order: Warhide Mask
+							["questID"] = 41640,
+							["groups"] = {
+								i(137878),	-- Recipe: Warhide Mask (Rank 3)
+							},
+							["isWQ"] = 110,
+							["requireSkill"] = 165,	-- Leatherworking
+						},
 						{	-- Work Order: Word of Agility
 							["questID"] = 41670,
 							["qg"] = 106901,	-- Sylvia Hartshorn

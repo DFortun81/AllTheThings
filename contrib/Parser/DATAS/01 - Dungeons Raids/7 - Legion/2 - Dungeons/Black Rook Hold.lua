@@ -200,6 +200,7 @@ _.Instances = { tier(7, {	-- Legion
 						ach(10806),	-- Mythic: Black Rook Hold
 						i(137858),	-- Design: Grim Furystone Gorget (Rank 3)
 						i(127930),	-- Recipe: Flask of the Whispered Pact (Rank 2)
+						i(137931),	-- Recipe: Gravenscale Hauberk (Rank 3)
 						i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
 						i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3)
 						i(136716),	-- Caged Horror

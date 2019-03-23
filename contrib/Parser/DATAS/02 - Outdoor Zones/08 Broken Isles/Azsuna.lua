@@ -1509,7 +1509,6 @@ _.Zones =
 						q(42274),	-- Won't Anyone Think of the Whelps?
 						q(41287),	-- Work Order: Aethril
 						q(41651),	-- Work Order: Azsunite Pendant
-						q(41639),	-- Work Order: Battlebound Spaulders
 						q(41675),	-- Work Order: Blink-Trigger Headgun
 						q(41267),	-- Work Order: Cursed Queenfish
 						q(41657),	-- Work Order: Draughts of Raw Magic
@@ -2055,6 +2054,49 @@ _.Zones =
 							},
 							["requireSkill"] = 773,
 						}),
+						n(-187, {	-- Leatherworking
+							["groups"] = bubbleDown({["requireSkill"] = 165}, { -- Leatherworking
+								q(40188, {	-- Best Served Cold
+									["groups"] = {
+										-- note there is no pattern item for these, so just listing the spell IDs
+										recipe(194735),	-- Battlebound Armbands (Rank 1)
+										recipe(194740),	-- Battlebound Grips (Rank 1)
+									},
+									["qg"] = 98964,	-- Celea
+								}),
+								q(40208, {	-- Eye of Azshara: Scales of the Sea
+									["groups"] = {
+										i(137904),	-- Recipe: Battlebound Warhelm (Rank 2)
+									},
+									["qg"] = 98964,	-- Celea
+								}),
+								q(40194, {	-- Reclaimed Cargo
+									["groups"] = {
+										i(137900),	-- Recipe: Battlebound Armbands (Rank 2)
+										i(137901), 	-- Recipe: Battlebound Girdle (Rank 2)
+									},
+									["qg"] = 98964,	-- Celea
+								}),
+								q(40207, {	-- Scales of the Arcane
+									["groups"] = {
+										i(137905),	-- Recipe: Battlebound Grips (Rank 2)
+									},
+									["qg"] = 98964,	-- Celea
+								}),
+								q(40209, {	-- Scales of the Earth
+									["groups"] = {
+										i(137903),	-- Recipe: Battlebound Leggings (Rank 2)
+									},
+									["qg"] = 98964,	-- Celea
+								}),
+								q(40327, {	-- Testing the Metal
+									["groups"] = {
+										i(137907),	-- Recipe: Battlebound Hauberk (Rank 2)
+									},
+									["qg"] = 99689,	-- Taldranis
+								}),
+							}),
+						}),
 					}),
 					ach(10994, { -- Class Campaign
 						cl(5, {    -- Priest
@@ -2160,7 +2202,6 @@ _.Zones =
 					q(47194),	-- Battle for Highmountain
 					q(47195),	-- Battle for Stormheim
 					q(47196),	-- Battle for Val'sharah
-					q(40188),	-- Best Served Cold
 					q(40857),	-- Bits and Pieces
 					q(42450),	-- Brawlgoth
 					q(43193),	-- Calamitous Intent
@@ -2168,7 +2209,6 @@ _.Zones =
 					q(42221),	-- Chief Bitterbrine										
 					q(44673),	-- Commander Soraax
 					q(38946),	-- Consult the Locals
-					
 					q(41157),	-- Corrupted Studies
 					q(42420),	-- Court of Farondis
 					q(46020),	-- Crystal Containment
@@ -2179,7 +2219,6 @@ _.Zones =
 					q(40058),	-- Defense Symbology
 					q(41172),	-- Echoes of My Ancestors
 					q(41178),	-- Explosive Results
-					q(40208),	-- Eye of Azshara: Scales of the Sea
 					q(38961),	-- Eye of Azshara: The Depraved Nightfallen
 					q(37526),	-- Farondis Murder Flag
 					q(38014),	-- Feasting on the Dragon
@@ -2209,7 +2248,6 @@ _.Zones =
 					q(37908),	-- Inquisitor Ernstenbok
 					q(39936),	-- Inscription of the Body
 					q(39389),	-- It Hungers for Blood
-					
 					q(40556),	-- Jabrul Needs You
 					q(38443),	-- Journey to the Repose
 					q(40873),	-- Keep Yer Powder Dry
@@ -2248,7 +2286,6 @@ _.Zones =
 					q(43376),	-- Problem Salver
 					q(41159),	-- Process of Elimination
 					q(41771),	-- Recharging the Blade
-					q(40194),	-- Reclaimed Cargo
 					q(43523),	-- Repaid Debt
 					q(38791),	-- Rethu's Horn
 					q(38792),	-- Rethu's Lesson
@@ -2256,8 +2293,6 @@ _.Zones =
 					q(38803),	-- Rin'thissa
 					q(38947),	-- Runic Catgut
 					q(43527),	-- Saving the Guard
-					q(40207),	-- Scales of the Arcane
-					q(40209),	-- Scales of the Earth
 					q(40133),	-- Scrap of Pants
 					q(39939),	-- Scribal Knowledge
 					q(38955),	-- Sew Far, Sew Good
@@ -2280,7 +2315,6 @@ _.Zones =
 					q(38957),	-- Taking Inspiration
 					q(43518),	-- Tempering Darkness
 					q(39142),	-- Testing a Theory
-					q(40327),	-- Testing the Metal
 					q(41163),	-- The Apocalypse Bringer
 					q(44875),	-- The Art of Flow
 					q(43373),	-- The Best and Brightest
@@ -2842,6 +2876,14 @@ _.Zones =
 						["isWQ"] = 110,
 						["requireSkill"] = 755,	-- Jewelcrafting
 					},
+					{	-- Work Order: Battlebound Spaulders
+						["questID"] = 41639,
+						["groups"] = {
+							i(137914),	-- Recipe: Battlebound Spaulders (Rank 3)
+						},
+						["isWQ"] = 110,
+						["requireSkill"] = 165,	-- Leatherworking
+					},
 					{	-- Work Order: Deep Amber Loop
 						["questID"] = 41652,
 						["groups"] = {
@@ -2871,6 +2913,7 @@ _.Zones =
 				n(0, { 		-- Zone Drops
 					["groups"] = {
 						i(144315),	-- Formula: Enchant Neck - Mark of the Quick (Rank 2)
+						i(137924),	-- Recipe: Gravenscale Armbands (Rank 3)
 						i(137726),	-- Schematic: Leystone Buoy
 						i(137729),	-- Technique: Codex of the Tranquil Mind
 						i(141043),	-- Technique: Glyph of Arachnophobia

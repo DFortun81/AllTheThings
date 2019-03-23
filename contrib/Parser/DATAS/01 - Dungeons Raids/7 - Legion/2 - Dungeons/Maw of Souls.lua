@@ -166,6 +166,7 @@ _.Instances = { tier(7, {	-- Legion
 						},
 					}),
 					i(137848),	-- Design: Blessed Dawnlight Medallion (Rank 3)
+					i(137899),	-- Recipe: Dreadleather Jerkin (Rank 3)
 					i(127932),	-- Recipe: Flask of the Countless Armies (Rank 2)
 					i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
 					i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3)

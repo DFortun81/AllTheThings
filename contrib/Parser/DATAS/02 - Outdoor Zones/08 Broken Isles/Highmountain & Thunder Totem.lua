@@ -1174,6 +1174,41 @@ _.Zones =
 									}),
 								}),
 							}),
+							n(-187, {	-- Leatherworking
+								["groups"] = bubbleDown({["requireSkill"] = 165}, { -- Leatherworking
+									q(40192, {	-- Claw of the Land
+										["groups"] = {
+											i(137869),	-- Recipe: Warhide Belt (Rank 2)
+											i(137868),	-- Recipe: Warhide Bindings (Rank 2)
+										},
+										["qg"] = 98948,	-- Hrul Sharphoof
+									}),
+									q(40204, {	-- Evolution of the Past
+										["groups"] = {
+											i(137873),	-- Recipe: Warhide Gloves (Rank 2)
+										},
+										["qg"] = 98948,	-- Hrul Sharphoof
+									}),
+									q(40205, {	-- Respect for the Past
+										["groups"] = {
+											i(137871),	-- Recipe: Warhide Pants (Rank 2)
+										},
+										["qg"] = 98948,	-- Hrul Sharphoof
+									}),
+									q(40191, {	-- Stamped Stories
+										["groups"] = {
+											i(137875),	-- Recipe: Warhide Jerkin (Rank 2)
+										},
+										["qg"] = 98948,	-- Hrul Sharphoof
+									}),
+									q(40203, {	-- Strength of the Past
+										["groups"] = {
+											i(137872),	-- Recipe: Warhide Mask (Rank 2)
+										},
+										["qg"] = 98948,	-- Hrul Sharphoof
+									}),
+								}),
+							}),
 							n(-189, { -- Skinning
 								["groups"] = bubbleDown({["requireSkill"] = 393}, { -- Skinning
 									q(40134, { -- Highmountain Hides
@@ -1391,7 +1426,6 @@ _.Zones =
 									q(42409),	-- Champion: Loren Stormhoof
 									q(42410),	-- Champion: Rexxar
 									q(43960),	-- Cinderwing
-									q(40192),	-- Claw of the Land
 									q(44043),	-- Continuing the Legend
 									q(45350),	-- Countering the Contagion
 									q(42699),	-- Coura, Master of Arcana
@@ -1415,7 +1449,6 @@ _.Zones =
 									q(40186),	-- Drogbar Durability
 									q(40070),	-- Eagle Egg Recovery
 									q(39576),	-- Echoes of Deathwing
-									q(40204),	-- Evolution of the Past
 									q(44270),	-- Eye of Azshara
 									q(44271),	-- Eye of Azshara
 									q(39762),	-- Feltotem Warlock
@@ -1496,7 +1529,6 @@ _.Zones =
 									q(41540),	-- Rendezvous with the Courier
 									q(42402),	-- Requesting Reinforcements
 									q(42408),	-- Required Reagents
-									q(40205),	-- Respect for the Past
 									q(38793),	-- Rethu's Experience
 									q(38791),	-- Rethu's Horn
 									q(38789),	-- Rethu's Journal
@@ -1523,10 +1555,8 @@ _.Zones =
 									q(39465),	-- Skywhisker Taskmaster
 									q(40175),	-- Sleeping Bear
 									q(40681),	-- Snarf
-									q(40191),	-- Stamped Stories
 									q(46145),	-- Sterile Surroundings
 									q(40141),	-- Stormscale Sample
-									q(40203),	-- Strength of the Past
 									q(39879),	-- Strong Like the Earth
 									q(46743),	-- Supplies From Highmountain
 									q(41187),	-- Surveying Student
@@ -1771,7 +1801,6 @@ _.Zones =
 						q(46194),	-- Wolves of the Legion
 						q(41677),	-- Work Order: Auto-Hammer
 						q(41659),	-- Work Order: Avalanche Elixirs
-						q(41641),	-- Work Order: Battlebound Armbands
 						q(41223),	-- Work Order: Foxflower
 						q(41240),	-- Work Order: Highmountain Salmon
 						q(41206),	-- Work Order: Leystone
@@ -2068,6 +2097,14 @@ _.Zones =
 					}),
 				}),
 				n(-34, { 	-- World Quests
+					{	-- Work Order: Battlebound Armbands
+						["questID"] = 41641,
+						["groups"] = {
+							i(137908),	-- Recipe: Battlebound Armbands (Rank 3)
+						},
+						["isWQ"] = 110,
+						["requireSkill"] = 165,	-- Leatherworking
+					},
 					{	-- Work Order: Skystone Pendant
 						["questID"] = 41653,
 						["groups"] = {

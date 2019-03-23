@@ -142,6 +142,7 @@ _.Instances = { tier(7, {	-- Legion
 						ach(10802),	-- Heroic: Vault of the Wardens
 						i(137852),	-- Design: Vindictive Pandemonite Choker (Rank 3)
 						i(127931),	-- Recipe: Flask of the Seventh Demon (Rank 2)
+						i(137930),	-- Recipe: Gravenscale Treads (Rank 3)
 						i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
 						i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3)
 						i(137522),	-- Bracers of Twisted Revelation
@@ -227,6 +228,7 @@ _.Instances = { tier(7, {	-- Legion
 						i(137852),	-- Design: Vindictive Pandemonite Choker (Rank 3)
 						i(128607),	-- Formula: Enchant Cloak - Binding of Strength (Rank 3)
 						i(127931),	-- Recipe: Flask of the Seventh Demon (Rank 2)
+						i(137930),	-- Recipe: Gravenscale Treads (Rank 3)
 						i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
 						i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3)
 						i(137522),	-- Bracers of Twisted Revelation

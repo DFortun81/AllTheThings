@@ -878,7 +878,6 @@ _.Zones =
 						q(41660),	-- Work Order: Skaggldrynk
 						q(41277),	-- Work Order: Stormrays
 						q(41344),	-- Work Order: Stormscales
-						q(41642),	-- Work Order: Warhide Footpads
 						q(41672),	-- Work Order: Word of Haste
 						q(41936),	-- You Have Been Challenged					
 					}),
@@ -2003,10 +2002,14 @@ _.Zones =
 					}),
 					n(106904, {	-- Valdemar Stormseeker <Valarjar Emissary>
 						i(140656),	-- Rod of the Ascended - Priest Artifact Appearance item
+						i(137915),	-- Recipe: Battlebound Hauberk [Rank 3]
+						i(137910),	-- Recipe: Battlebound Warhelm [Rank 3]
 						i(136698),	-- Recipe: Consecrated Spike
 						i(123954),	-- Recipe: Demonsteel Boots [Rank 3]
 						i(123951),	-- Recipe: Demonsteel Greaves [Rank 3]
 						i(123952),	-- Recipe: Demonsteel Helm [Rank 3]
+						i(137927),	-- Recipe: Gravenscale Leggings [Rank 3]
+						i(137928),	-- Recipe: Gravenscale Warhelm [Rank 3]
 						i(129149),	-- Death's Door Charm
 						i(139598),	-- Legplates of Forgotten Myth
 						i(136920),	-- Sunborn Val'kyr
@@ -2102,6 +2105,15 @@ _.Zones =
 						},
 						["isWQ"] = 110,
 						["requireSkill"] = 197,	-- Tailoring
+					},
+					{	-- Work Order: Warhide Footpads
+						["questID"] = 41642,
+						["qg"] = 106904,	-- Valdemar Stormseeker
+						["groups"] = {
+							i(137880),	-- Recipe: Warhide Footpads (Rank 3)
+						},
+						["isWQ"] = 110,
+						["requireSkill"] = 165,	-- Leatherworking
 					},
 					{	-- Work Order: Word of Haste
 						["questID"] = 41672,

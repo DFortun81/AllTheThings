@@ -98,6 +98,14 @@ _.PVP =
 						["description"] = "This has a CHANCE to drop from any rated battleground win.",
 						["requireSkill"] = 164, -- Blacksmithing
 					}),
+					i(137894, { -- Recipe: Dreadleather Shoulderguard (Rank 3)
+						["description"] = "This has a CHANCE to drop from any rated battleground win.",
+						["requireSkill"] = 165, -- Leatherworking
+					}),
+					i(137926, { -- Recipe: Gravenscale Spaulders (Rank 3)
+						["description"] = "This has a CHANCE to drop from any rated battleground win.",
+						["requireSkill"] = 165, -- Leatherworking
+					}),
 				},
 			},
 			n(-227, { -- Victory

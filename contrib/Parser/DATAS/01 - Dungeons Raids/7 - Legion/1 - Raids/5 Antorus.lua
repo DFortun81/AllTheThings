@@ -775,6 +775,7 @@ _.Instances = { tier(7, {	-- Legion
 					},
 					["g"] = {
 						i(151742),	-- Recipe: Fiendish Shoulderguards (Rank 3)
+						i(151745),	-- Recipe: Fiendish Spaulders (Rank 3)
 						i(151985),	-- General Erodus' Tricorne
 						i(152019),	-- Pauldrons of the Eternal Offensive
 						i(152125),	-- Bearmantle Cloak
@@ -1220,6 +1221,7 @@ _.Instances = { tier(7, {	-- Legion
 					},
 					["g"] = {
 						i(151742),	-- Recipe: Fiendish Shoulderguards (Rank 3)
+						i(151745),	-- Recipe: Fiendish Spaulders (Rank 3)
 						i(151985),	-- General Erodus' Tricorne
 						i(152019),	-- Pauldrons of the Eternal Offensive
 						i(152125),	-- Bearmantle Cloak
@@ -1669,6 +1671,7 @@ _.Instances = { tier(7, {	-- Legion
 					},
 					["g"] = {
 						i(151742),	-- Recipe: Fiendish Shoulderguards (Rank 3)
+						i(151745),	-- Recipe: Fiendish Spaulders (Rank 3)
 						i(151985),	-- General Erodus' Tricorne
 						i(152019),	-- Pauldrons of the Eternal Offensive
 						i(152125),	-- Bearmantle Cloak

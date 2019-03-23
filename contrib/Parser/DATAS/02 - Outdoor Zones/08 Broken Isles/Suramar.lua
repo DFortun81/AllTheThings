@@ -830,6 +830,7 @@ _.Zones =
 								}),
 								n(109497, {	-- Small Treasure Chest
 									i(137823),	-- Design: Prophetic Band (Rank 2)
+									i(137892),	-- Recipe: Dreadleather Bindings (Rank 3)
 								}),
 							},
 						}),
@@ -837,16 +838,12 @@ _.Zones =
 						q(43807),	-- Withered Wrangling: Ambervale
 						q(44158),	-- Withered Wrangling: Falanaar
 						q(44157),	-- Withered Wrangling: Tel'anor
-						q(41643),	-- Work Order: Battlebound Leggings
 						q(41679),	-- Work Order: Deployable Bullet Dispenser
 						q(41314),	-- Work Order: Felslate
-						q(41655),	-- Work Order: Queen's Opal Pendant
 						q(41282),	-- Work Order: Runescale Koi
-						q(41649),	-- Work Order: Silkweave Slippers
 						q(41661),	-- Work Order: Skystep Potions
 						q(41302),	-- Work Order: Starlight Roses
 						q(41350),	-- Work Order: Stonehide Leather
-						q(41673),	-- Work Order: Word of Mastery
 --]]						
 					}),						
 					q(44057),	-- A "Noble" Event
@@ -1011,7 +1008,13 @@ _.Zones =
 					q(45265),	-- Feeding the Rebellion
 					q(40919),	-- Fel Bent for Leather
 					q(41167),	-- Fel Fragments
-					q(40214),	-- Fel Tanning
+					q(40214, { -- Fel Tanning
+						["groups"] = {
+							i(140636), -- Pattern: Dreadleather Bindings (Rank 1)
+							i(140644), -- Recipe: Gravenscale Armbands (Rank 1)
+						},
+						["qg"] = 98969, -- Stalriss Dawnrunner
+					}),
 					q(45064),	-- Felborne No More
 					q(45555),	-- Felbound Beasts
 					q(41452),	-- Feline Frantic
@@ -1772,6 +1775,15 @@ _.Zones =
 							},
 							["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
 						}),
+						{	-- Work Order: Battlebound Leggings
+							["questID"] = 41643,
+							["qg"] = 115736,	-- First Arcanist Thalyssra
+							["groups"] = {
+								i(137909),	-- Recipe: Battlebound Leggings (Rank 3)
+							},
+							["isWQ"] = 110,
+							["requireSkill"] = 165,	-- Leatherworking
+						},
 						{	-- Work Order: Queen's Opal Pendant
 							["questID"] = 41655,
 							["groups"] = {

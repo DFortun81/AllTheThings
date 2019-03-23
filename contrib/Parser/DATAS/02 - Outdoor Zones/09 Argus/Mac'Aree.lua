@@ -637,7 +637,6 @@ _.Zones =
 					q(48605),	-- Commander's Downfall
 					q(47066),	-- Consecrating Ground
 					q(47882),	-- Conservation of Magic
-					q(48078),	-- Counterbalancing
 					q(46818),	-- Defenseless and Afraid
 					q(47891),	-- Dire News
 					q(48038),	-- Don't Just Pick At It

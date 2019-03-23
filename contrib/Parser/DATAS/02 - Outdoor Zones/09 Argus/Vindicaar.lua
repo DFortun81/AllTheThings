@@ -706,8 +706,8 @@ _.Zones =
 					},
 					q(48078, { -- Counterbalancing
 						["groups"] = {
-							i(151577), -- Fiendish Shoulderguards
-							i(151578), -- Fiendish Spaulders
+							i(151740), -- Recipe: Fiendish Shoulderguards (Rank 1)					
+							i(151743), -- Recipe: Fiendish Spaulders (Rank 1)					
 						},
 						["requireSkill"] = 165, -- Leatherworking
 						["sourceQuests"] = { 47743 }, -- The Child of Light and Shadow
