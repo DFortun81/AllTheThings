@@ -37,7 +37,7 @@ _.ExpansionFeatures =
 						--["questID"] = 53114,	-- Golden Beetle
 						--Note!! We are commenting out the questID so we no longer show "Incomplete" on the item
 						["repeatable"] = true,
-						["description"] = "|CFFFF0000Turn this into Krag'wa in Nazmire at 75, 56 for Talanji's Expedition rep.|r",
+						["description"] = "|CFFFF0000Turn this into Krag'wa in Nazmir at 75, 56 for Talanji's Expedition rep.|r",
 						["races"] = HORDE_ONLY
 					},
 					{	-- Island Flotsam [H]
