@@ -22,6 +22,7 @@ _.Zones =
 					{	-- Brok
 						["questID"] = 31972,
 						["qg"] = 66819,	-- Brok
+						["coord"] = { 61.4, 32.7, 198 },
 						["isDaily"] = true,
 					},
 				}),
