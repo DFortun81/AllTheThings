@@ -28,7 +28,7 @@ _.Instances = { tier(7, {	-- Legion
 					122135,	-- Felhounds of Sargeras — Shatug*
 					122477,	-- Felhounds of Sargeras — F'harg*
 					122367,	-- Antoran High Command — Admiral Svirax*
-					122359,	-- Antoran High Command — Chief Engineer Ishkar*
+					122369,	-- Antoran High Command — Chief Engineer Ishkar*
 					122333,	-- Antoran High Command — General Erodus*
 					122500,	-- Eonar the Life-Bender — Essence of Eonar*
 					124445,	-- Eonar the Life-Binder — The Paraxis*
@@ -311,7 +311,7 @@ _.Instances = { tier(7, {	-- Legion
 						e(1997, {	-- Antoran High Command
 							["crs"] = {
 								122367,	-- Admiral Svirax
-								122359,	-- Chief Engineer Ishkar
+								122369,	-- Chief Engineer Ishkar
 								122333,	-- General Erodus
 							},
 							["g"] = {
@@ -770,7 +770,7 @@ _.Instances = { tier(7, {	-- Legion
 				e(1997, {	-- Antoran High Command
 					["crs"] = {
 						122367,	-- Admiral Svirax
-						122359,	-- Chief Engineer Ishkar
+						122369,	-- Chief Engineer Ishkar
 						122333,	-- General Erodus
 					},
 					["g"] = {
@@ -1216,7 +1216,7 @@ _.Instances = { tier(7, {	-- Legion
 				e(1997, {	-- Antoran High Command
 					["crs"] = {
 						122367,	-- Admiral Svirax
-						122359,	-- Chief Engineer Ishkar
+						122369,	-- Chief Engineer Ishkar
 						122333,	-- General Erodus
 					},
 					["g"] = {
@@ -1666,7 +1666,7 @@ _.Instances = { tier(7, {	-- Legion
 				e(1997, {	-- Antoran High Command
 					["crs"] = {
 						122367,	-- Admiral Svirax
-						122359,	-- Chief Engineer Ishkar
+						122369,	-- Chief Engineer Ishkar
 						122333,	-- General Erodus
 					},
 					["g"] = {
