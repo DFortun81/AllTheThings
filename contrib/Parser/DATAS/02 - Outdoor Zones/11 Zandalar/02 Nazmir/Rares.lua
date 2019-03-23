@@ -13,6 +13,7 @@ _.Zones =
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(161113),	-- Incessantly Ticking Clock
 							}),
+							["coord"] = { 67.6, 29.3, 863 },
 							["questID"] = 48063,
 						}),
 						n(134298, {	-- Azerite-Infused Elemental
@@ -50,6 +51,7 @@ _.Zones =
 							["g"] = {
 								i(161115),	-- Cursed Captain's Charm
 							},
+							["coord"] = { 81.9, 30.6, 863 },
 							["questID"] = 48057,
 						}),
 						n(126187, {	-- Corpse Bringer Yal'kar
@@ -63,6 +65,7 @@ _.Zones =
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(160985),	-- Glompmaw's Ring
 							}),
+							["coord"] = { 68.5, 57.4, 863 },
 							["questID"] = 50361,
 						}),
 						n(128426, {	-- Gutrip
@@ -112,12 +115,14 @@ _.Zones =
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(161110),	-- Crusty Chitin Armguards
 							}),
+							["coord"] = { 75.8, 36.3, 863 },
 							["questID"] = 50355,
 						}),
 						n(133539, {	-- Lo'kuno
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(161111),	-- Marshqueen's Crushers
 							}),
+							["coord"] = { 77.5, 45.3, 863 },
 							["questID"] = 50355,
 						}),
 						n(134295, {	-- Lost Scroll
@@ -133,11 +138,10 @@ _.Zones =
 						n(134296, {	-- Lucille
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(161046, {	-- Scrollbound Arachnid Gloves
-									["crs"] = {
-										134297,	-- Chag
-									},
+									["crs"] = { 134297 },	-- Chag
 								}),
 							}),
+							["coord"] = { 68.0, 19.8, 863 },
 							["questID"] = 50567,
 						}),
 						n(128935, {	-- Mala'kili

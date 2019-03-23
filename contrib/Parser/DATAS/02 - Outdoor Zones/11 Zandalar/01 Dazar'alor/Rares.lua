@@ -17,22 +17,6 @@ _.Zones =
 							["achievementID"] = 12944,	-- Adventurer of Zuldazar
 							["collectible"] = false,	-- Can't be completed solely in this zone
 							["g"] = {
-								{	--  Gahz'ralka [CQLA]
-									["npcID"] = 129954,	-- Gahz'ralka
-									["coords"] = {
-										{ 64.28, 32.67, 1165 },
-									},
-									["questID"] = 50439,
-									["g"] = {
-										{	-- Gahz'ralka
-											["criteriaID"] = 2,	-- Gahz'ralka
-										},
-										{	-- Relentless Hydra Legguards
-											["itemID"] = 161043,	-- Relentless Hydra Legguards
-											["bonusID"] = 4776,
-										},
-									},
-								},
 								{	-- Kul'krazahn [CQLA]
 									["npcID"] = 120899,	-- Kul'krazahn
 									["coords"] = {

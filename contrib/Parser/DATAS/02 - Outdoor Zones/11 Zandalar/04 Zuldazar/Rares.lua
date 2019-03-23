@@ -76,6 +76,18 @@ _.Zones =
 								["questID"] = 50693,
 								["coord"] = { 65.36, 10.20, 862 },
 							}),
+							n(129954, {	-- Gahz'ralka
+								["coord"] = { 64.0, 33.0, 862 },
+								["g"] = {
+									i(161043, {	-- Relentless Hydra Legguards
+										["bonusID"] = 4776,
+									}),
+									{	-- Gahz'ralka
+										["achievementID"] = 12944,	-- Adventurer of Zuldazar
+										["criteriaID"] = 2,	-- Gahz'ralka
+									},
+								},
+							}),
 							n(133155, {	-- G'Naat [CLQS]
 								["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 									sz(12944, 20),	-- G'Naat

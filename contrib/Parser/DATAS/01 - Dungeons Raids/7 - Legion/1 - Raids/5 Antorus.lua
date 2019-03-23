@@ -23,16 +23,23 @@ _.Instances = { tier(7, {	-- Legion
 		["groups"] = {
 			n(-1, {	-- Common Boss Drop
 				["crs"] = {
-					123371,	-- Garothi Worldbreaker
-					126916,	-- Felhounds of Sargeras
-					122367,	-- Antoran High Command
-					125562,	-- Eonar the Life-Bender
-					122104,	-- Portal Keeper Hasabel (ID confirmed in H)
-					124158,	-- Imonar the Soulhunter (ID confirmed in H)
-					122578,	-- Kin'garoth (ID confirmed in H)
-					122366,	-- Varimathras (ID confirmed in H)
-					122468,	-- The Coven of Shivarra
-					121975,	-- Aggramar (ID confirmed in H)
+					-- * = ID confirmed in H
+					122450,	-- Garothi Worldbreaker*
+					122135,	-- Felhounds of Sargeras — Shatug*
+					122477,	-- Felhounds of Sargeras — F'harg*
+					122367,	-- Antoran High Command — Admiral Svirax*
+					122359,	-- Antoran High Command — Chief Engineer Ishkar*
+					122333,	-- Antoran High Command — General Erodus*
+					122500,	-- Eonar the Life-Bender — Essence of Eonar*
+					124445,	-- Eonar the Life-Binder — The Paraxis*
+					122104,	-- Portal Keeper Hasabel*
+					124158,	-- Imonar the Soulhunter*
+					122578,	-- Kin'garoth*
+					122366,	-- Varimathras*
+					122467,	-- The Coven of Shivarra — Asara, Mother of Night*
+					122469,	-- The Coven of Shivarra — Diima, Mother of Gloom*
+					122468,	-- The Coven of Shivarra — Noura, Mother of Flames*
+					121975,	-- Aggramar*
 					124828,	-- Argus the Unmaker
 				},
 				["groups"] = {
@@ -216,7 +223,7 @@ _.Instances = { tier(7, {	-- Legion
 							i(152683),	-- World-Ravager Waistguard
 							i(152284),	-- Zealous Tormentor's Ring
 						}),
-						{
+						{	-- Antoran High Command [Raid Finder]
 							["itemID"] = 152313,	-- Azeroth Invasion Plans [Raid Finder]
 							["questID"] = 48288,	-- Antoran High Command [Raid Finder]
 							["repeatable"] = true,
@@ -224,7 +231,7 @@ _.Instances = { tier(7, {	-- Legion
 								i(153502),	-- Cache of Antoran Treasures [Raid Finder]
 							},
 						},
-						{
+						{	-- The Soulhunter [Raid Finder]
 							["itemID"] = 152317,	-- Discharged Shock Lance [Raid Finder]
 							["questID"] = 48292,	-- The Soulhunter [Raid Finder]
 							["repeatable"] = true,
@@ -232,7 +239,7 @@ _.Instances = { tier(7, {	-- Legion
 								i(153502),	-- Cache of Antoran Treasures [Raid Finder]
 							},
 						},
-						{
+						{	-- The Unmaker [Raid Finder]
 							["itemID"] = 152325,	-- Sanguine Argunite [Raid Finder]
 							["questID"] = 48294,	-- The Unmaker [Raid Finder]
 							["repeatable"] = true,
@@ -240,7 +247,7 @@ _.Instances = { tier(7, {	-- Legion
 								i(153502),	-- Cache of Antoran Treasures [Raid Finder]
 							},
 						},
-						{
+						{	-- The Burning Coven [Raid Finder]
 							["itemID"] = 152321,	-- Sargerei Manifesto [Raid Finder]
 							["questID"] = 48293,	-- The Burning Coven [Raid Finder]
 							["repeatable"] = true,
@@ -251,9 +258,7 @@ _.Instances = { tier(7, {	-- Legion
 					},
 				}),
 				n(0, {	-- Zone Drops
-					["crs"] = {
-						111246,	-- Archmage Timear
-					},
+					["crs"] = { 111246 },	-- Archmage Timear
 					["groups"] = {
 						i(152084),	-- Gloves of Abhorrent Strategies
 						i(152085),	-- Cuffs of the Viridian Flameweavers
@@ -270,22 +275,23 @@ _.Instances = { tier(7, {	-- Legion
 					},
 				}),
 				ach(11988, {	-- Light's Breach [Garothi / Hounds / High Command]
-					["crs"] = {
-						111246,	-- Archmage Timear
-					},
+					["crs"] = { 111246 },	-- Archmage Timear
 					["groups"] = {
-						cr(123371, e(1992, {	-- Garothi Worldbreaker
-							i(151943),	-- Crown of Relentless Annihilation
-							i(151988),	-- Shoulderpads of the Demonic Blitz
-							i(151937),	-- Cloak of  the Burning Vanguard
-							i(152017),	-- Soul-Tempered Chestplate
-							i(151998),	-- Heedless Eradication Gauntlets
-							i(151951),	-- Enhanced Worldscorcher Cinch
-							i(152002),	-- Battalion-Shattering Leggings
-							i(151987),	-- Breach-Blocker Legguards
-							i(152009),	-- Doomwalker Warboots
-						})),
-						cr(126916, e(1987, {	-- Felhounds of Sargeras
+						e(1992, {	-- Garothi Worldbreaker
+							["crs"] = { 122450 },	-- Garothi Worldbreaker
+							["g"] = {
+								i(151943),	-- Crown of Relentless Annihilation
+								i(151988),	-- Shoulderpads of the Demonic Blitz
+								i(151937),	-- Cloak of  the Burning Vanguard
+								i(152017),	-- Soul-Tempered Chestplate
+								i(151998),	-- Heedless Eradication Gauntlets
+								i(151951),	-- Enhanced Worldscorcher Cinch
+								i(152002),	-- Battalion-Shattering Leggings
+								i(151987),	-- Breach-Blocker Legguards
+								i(152009),	-- Doomwalker Warboots
+							},
+						}),
+						e(1987, {	-- Felhounds of Sargeras
 							["crs"] = {
 								122477,	-- F'Harg
 								122135,	-- Shatug
@@ -301,178 +307,208 @@ _.Instances = { tier(7, {	-- Legion
 								i(152021),	-- Flamelicked Girdle
 								i(151983),	-- Vicious Flamepaws
 							},
-						})),
-						cr(122367, e(1997, {	-- Antoran High Command
-							-- Start Tier Cloaks
-							i(151742),	-- Recipe: Fiendish Shoulderguards (Rank 3)
-							i(151745),	-- Recipe: Fiendish Spaulders (Rank 3)
-							i(151985),	-- General Erodus' Tricorne
-							i(152019),	-- Pauldrons of the Eternal Offensive
-							i(152125),	-- Bearmantle Cloak
-							i(152143),	-- Cloak of Chi'Ji
-							i(152161),	-- Cloak of the Dashing Scoundrel
-							i(152167),	-- Drape of Venerated Spirits
-							i(152113),	-- Dreadwake Greatcloak
-							i(152119),	-- Felreaper Drape									
-							i(152154),	-- Gilded Seraph's Drape
-							i(152172),	-- Grim Inquisitor's Cloak
-							i(152179),	-- Juggernaut Cloak
-							i(152149),	-- Light's Vanguard Greatcloak
-							i(152136),	-- Runebound Cape
-							i(152131),	-- Serpentstalker Drape
-							i(151994),	-- Fleet Commander's Hauberk
-							i(151992),	-- Fiendish Logistician's Wristwraps
-							i(151953),	-- Man'ari Pyromancer Cuffs
-							i(152006),	-- Depraved Tactician's Waistguard
-							i(152424),	-- Legwraps of the Seasoned Exterminator
-							i(152011),	-- Eredar Warcouncil Sabatons
-						})),
+						}),
+						e(1997, {	-- Antoran High Command
+							["crs"] = {
+								122367,	-- Admiral Svirax
+								122359,	-- Chief Engineer Ishkar
+								122333,	-- General Erodus
+							},
+							["g"] = {
+								-- Start Tier Cloaks
+								i(151742),	-- Recipe: Fiendish Shoulderguards (Rank 3)
+								i(151745),	-- Recipe: Fiendish Spaulders (Rank 3)
+								i(151985),	-- General Erodus' Tricorne
+								i(152019),	-- Pauldrons of the Eternal Offensive
+								i(152125),	-- Bearmantle Cloak
+								i(152143),	-- Cloak of Chi'Ji
+								i(152161),	-- Cloak of the Dashing Scoundrel
+								i(152167),	-- Drape of Venerated Spirits
+								i(152113),	-- Dreadwake Greatcloak
+								i(152119),	-- Felreaper Drape									
+								i(152154),	-- Gilded Seraph's Drape
+								i(152172),	-- Grim Inquisitor's Cloak
+								i(152179),	-- Juggernaut Cloak
+								i(152149),	-- Light's Vanguard Greatcloak
+								i(152136),	-- Runebound Cape
+								i(152131),	-- Serpentstalker Drape
+								i(151994),	-- Fleet Commander's Hauberk
+								i(151992),	-- Fiendish Logistician's Wristwraps
+								i(151953),	-- Man'ari Pyromancer Cuffs
+								i(152006),	-- Depraved Tactician's Waistguard
+								i(152424),	-- Legwraps of the Seasoned Exterminator
+								i(152011),	-- Eredar Warcouncil Sabatons
+							},
+						}),
 					},
 				}),
 				ach(11989, {	-- Hope's End [Eonar / Hasabel / Imonar]
-					["crs"] = {
-						111246,	-- Archmage Timear
-					},
+					["crs"] = { 111246 },	-- Archmage Timear
 					["groups"] = {
-						cr(125562, e(2025, {	-- Eonar the Life-Bender
-							-- Start Tier Chest
-							i(152124),	-- Bearmantle Harness
-							i(152112),	-- Dreadwake Bonecage
-							i(152118),	-- Felreaper Vest
-							i(152158),	-- Gilded Seraph's Robes
-							i(152176),	-- Grim Inquisitor's Robes
-							i(152178),	-- Juggernaut Breastplate
-							i(152148),	-- Light's Vanguard  Breastplate
-							i(152166),	-- Robes of Venerated Spirits
-							i(152140),	-- Runebound Tunic
-							i(152130),	-- Serpentstalker Tunic
-							i(152142),	-- Tunic of Chi'Ji									
-							i(152160),	-- Vest of the Dashing Scoundrel
-							-- End Tier Chest
-							i(152681),	-- Headdress of Living Brambles
-							i(152013),	-- Helmet of  the Hidden Sanctuary
-							i(152023),	-- Vambraces of  Life's Assurance
-							i(151952),	-- Cord of Blossoming Petals
-							i(152007),	-- Sash of the Gilded Rose									
-							i(151981),	-- Life-Bearing Footpads									
-						})),
-						cr(122104, e(1985, {	-- Portal Keeper Hasabel
-							i(151748),	-- Recipe: Lightweave Breeches (Rank 3)
-							i(152001),	-- Nexus Conductor's Headgear
-							i(152008),	-- Reality-Splitting Wristguards
-							i(151941),	-- Aranasi Shadow-Weaver's Gloves
-							i(152086),	-- Grips of Hungering Shadows
-							i(152020),	-- Nathrezim Battle Girdle
-							i(151990),	-- Portal Keeper's Cincture
-							i(151945),	-- Lady Dacidion's Silk Slippers
-						})),
-						cr(124158, e(2009, {	-- Imonar the Soulhunter
-							i(151944),	-- Soulhunter's Cowl
-							i(152416),	-- Shoulderguards of Indomitable Purpose
-							i(151989),	-- Spaulders of the Relentless Tracker									
-							i(151938),	-- Drape of the Spirited Hunt
-							i(152687),	-- Imonar's Demi-Gauntlets
-							i(151999),	-- Preysnare Vicegrips
-							i(152128),	-- Bearmantle Legguards
-							i(152116),	-- Dreadwake Legplates
-							i(152122),	-- Felreaper Leggings									
-							i(152157),	-- Gilded  Seraph's Leggings
-							i(152175),	-- Grim Inquisitor's Leggings
-							i(152182),	-- Juggernaut Legplates
-							i(152146),	-- Leggings of Chi'Ji
-							i(152170),	-- Leggings of Venerated Spirits
-							i(152152),	-- Light's Vanguard Legplates
-							i(152164),	-- Pants of the Dashing Scoundrel									
-							i(152139),	-- Runebound Leggings
-							i(152134),	-- Serpentstalker Legguards
-							i(151996),	-- Deft Soulhunter's Sabatons									
-							i(151939),	-- Whisperstep Runners
-						})),
+						e(2025, {	-- Eonar the Life-Bender
+							["crs"] = {
+								122500,	-- Essence of Eonar
+								124445,	-- The Paraxis
+							},
+							["g"] = {
+								-- Start Tier Chest
+								i(152124),	-- Bearmantle Harness
+								i(152112),	-- Dreadwake Bonecage
+								i(152118),	-- Felreaper Vest
+								i(152158),	-- Gilded Seraph's Robes
+								i(152176),	-- Grim Inquisitor's Robes
+								i(152178),	-- Juggernaut Breastplate
+								i(152148),	-- Light's Vanguard  Breastplate
+								i(152166),	-- Robes of Venerated Spirits
+								i(152140),	-- Runebound Tunic
+								i(152130),	-- Serpentstalker Tunic
+								i(152142),	-- Tunic of Chi'Ji
+								i(152160),	-- Vest of the Dashing Scoundrel
+								-- End Tier Chest
+								i(152681),	-- Headdress of Living Brambles
+								i(152013),	-- Helmet of  the Hidden Sanctuary
+								i(152023),	-- Vambraces of  Life's Assurance
+								i(151952),	-- Cord of Blossoming Petals
+								i(152007),	-- Sash of the Gilded Rose
+								i(151981),	-- Life-Bearing Footpads
+							},
+						}),
+						e(1985, {	-- Portal Keeper Hasabel
+							["crs"] = { 122104 },	-- Portal Keeper Hasabel
+							["g"] = {
+								i(151748),	-- Recipe: Lightweave Breeches (Rank 3)
+								i(152001),	-- Nexus Conductor's Headgear
+								i(152008),	-- Reality-Splitting Wristguards
+								i(151941),	-- Aranasi Shadow-Weaver's Gloves
+								i(152086),	-- Grips of Hungering Shadows
+								i(152020),	-- Nathrezim Battle Girdle
+								i(151990),	-- Portal Keeper's Cincture
+								i(151945),	-- Lady Dacidion's Silk Slippers
+							},
+						}),
+						e(2009, {	-- Imonar the Soulhunter
+							["crs"] = { 124158 },	-- Imonar the Soulhunter
+							["g"] = {
+								i(151944),	-- Soulhunter's Cowl
+								i(152416),	-- Shoulderguards of Indomitable Purpose
+								i(151989),	-- Spaulders of the Relentless Tracker									
+								i(151938),	-- Drape of the Spirited Hunt
+								i(152687),	-- Imonar's Demi-Gauntlets
+								i(151999),	-- Preysnare Vicegrips
+								i(152128),	-- Bearmantle Legguards
+								i(152116),	-- Dreadwake Legplates
+								i(152122),	-- Felreaper Leggings									
+								i(152157),	-- Gilded  Seraph's Leggings
+								i(152175),	-- Grim Inquisitor's Leggings
+								i(152182),	-- Juggernaut Legplates
+								i(152146),	-- Leggings of Chi'Ji
+								i(152170),	-- Leggings of Venerated Spirits
+								i(152152),	-- Light's Vanguard Legplates
+								i(152164),	-- Pants of the Dashing Scoundrel									
+								i(152139),	-- Runebound Leggings
+								i(152134),	-- Serpentstalker Legguards
+								i(151996),	-- Deft Soulhunter's Sabatons									
+								i(151939),	-- Whisperstep Runners
+							},
+						}),
 					},
 				}),
 				ach(11990, {	-- Forbidden Descent [Kin'garoth / Varimathras / Coven]
-					["crs"] = {
-						111246,	-- Archmage Timear
-					},
+					["crs"] = { 111246 },	-- Archmage Timear
 					["groups"] = {
-						cr(122578, e(2004, {	-- Kin'garoth
-							i(152014),	-- Titan-Subjugator's Visage
-							i(151948),	-- Magma-Spattered Smock
-							i(152280),	-- Scalding Shatterguards
-							i(152126),	-- Bearmantle Paws
-							i(152114),	-- Dreadwake Gauntlets
-							i(152120),	-- Felreaper Gloves
-							i(152155),	-- Gilded Seraph's Handwraps
-							i(152162),	-- Gloves of the Dashing Scoundrel
-							i(152168),	-- Gloves of Venerated Spirits
-							i(152173),	-- Grim Inquisitor's Gloves
-							i(152144),	-- Grips of Chi'Ji
-							i(152180),	-- Juggernaut Gauntlets
-							i(152150),	-- Light's Vanguard Gauntlets
-							i(152137),	-- Runebound Gloves
-							i(152132),	-- Serpentstalker Grips									
-							i(152412),	-- Depraved Machinist's Footpads
-						})),
-						cr(122366, e(1983, {	-- Varimathras
-							i(151995),	-- Robes of the Forsaken Dreadlord
-							i(151979),	-- Vest of Unfathomable Anguish
-							i(151954),	-- Blood-Drenched Bindings
-							i(152281),	-- Varimathras' Shattered Manacles
-							i(151991),	-- Belt of Fractured Sanity									
-							i(151942),	-- Cord of Surging Hysteria
-							i(152015),	-- Greaves of Mercurial Alliegance									
-							i(151997),	-- Nathrezim Shade-Walkers
-						})),
-						cr(122468, e(1986, {	-- The Coven of Shivarra
-							i(152129),	-- Bearmantle Shoulders
-							i(152117),	-- Dreadwake Pauldrons
-							i(152123),	-- Felreaper Spaulders
-							i(152159),	-- Gilded Seraph's Amice
-							i(152177),	-- Grim Inquisitor's Shoulderguards
-							i(152183),	-- Juggernaut Pauldrons
-							i(152153),	-- Light's Vanguard Shoulderplates
-							i(152147),	-- Meditation Spheres of Chi'Ji
-							i(152171),	-- Pauldrons of Venerated Spirits
-							i(152141),	-- Runebound Mantle
-							i(152135),	-- Serpentstalker Mantle
-							i(152165),	-- Shoulderpads of the Dashing Scoundrel
-							i(152414),	-- Bracers of Wanton Morality
-							i(151984),	-- Lurid Grips of the Obscene
-							i(151946),	-- Fervent Twilight Legwraps
-							i(152003),	-- Legguards of Numbing Glooom
-							i(152010),	-- Burning Coven Sabatons
-						})),
+						e(2004, {	-- Kin'garoth
+							["crs"] = { 122578 },	-- Kin'garoth
+							["g"] = {
+								i(152014),	-- Titan-Subjugator's Visage
+								i(151948),	-- Magma-Spattered Smock
+								i(152280),	-- Scalding Shatterguards
+								i(152126),	-- Bearmantle Paws
+								i(152114),	-- Dreadwake Gauntlets
+								i(152120),	-- Felreaper Gloves
+								i(152155),	-- Gilded Seraph's Handwraps
+								i(152162),	-- Gloves of the Dashing Scoundrel
+								i(152168),	-- Gloves of Venerated Spirits
+								i(152173),	-- Grim Inquisitor's Gloves
+								i(152144),	-- Grips of Chi'Ji
+								i(152180),	-- Juggernaut Gauntlets
+								i(152150),	-- Light's Vanguard Gauntlets
+								i(152137),	-- Runebound Gloves
+								i(152132),	-- Serpentstalker Grips
+								i(152412),	-- Depraved Machinist's Footpads
+							},
+						}),
+						e(1983, {	-- Varimathras
+							["crs"] = { 122366 },	-- Varimathras
+							["g"] = {
+								i(151995),	-- Robes of the Forsaken Dreadlord
+								i(151979),	-- Vest of Unfathomable Anguish
+								i(151954),	-- Blood-Drenched Bindings
+								i(152281),	-- Varimathras' Shattered Manacles
+								i(151991),	-- Belt of Fractured Sanity
+								i(151942),	-- Cord of Surging Hysteria
+								i(152015),	-- Greaves of Mercurial Alliegance
+								i(151997),	-- Nathrezim Shade-Walkers
+							},
+						}),
+						e(1986, {	-- The Coven of Shivarra
+							["crs"] = {
+								122467,	-- Asara, Mother of Night
+								122469,	-- Diima, Mother of Gloom
+								122468,	-- Noura, Mother of Flames
+							},
+							["g"] = {
+								i(152129),	-- Bearmantle Shoulders
+								i(152117),	-- Dreadwake Pauldrons
+								i(152123),	-- Felreaper Spaulders
+								i(152159),	-- Gilded Seraph's Amice
+								i(152177),	-- Grim Inquisitor's Shoulderguards
+								i(152183),	-- Juggernaut Pauldrons
+								i(152153),	-- Light's Vanguard Shoulderplates
+								i(152147),	-- Meditation Spheres of Chi'Ji
+								i(152171),	-- Pauldrons of Venerated Spirits
+								i(152141),	-- Runebound Mantle
+								i(152135),	-- Serpentstalker Mantle
+								i(152165),	-- Shoulderpads of the Dashing Scoundrel
+								i(152414),	-- Bracers of Wanton Morality
+								i(151984),	-- Lurid Grips of the Obscene
+								i(151946),	-- Fervent Twilight Legwraps
+								i(152003),	-- Legguards of Numbing Glooom
+								i(152010),	-- Burning Coven Sabatons
+							},
+						}),
 					},
 				}),
 				ach(11991, {	-- Seat of the Pantheon [Aggramar / Argus]
-					["crs"] = {
-						111246,	-- Archmage Timear
-					},
+					["crs"] = { 111246 },	-- Archmage Timear
 					["groups"] = {
-						cr(121975, e(1984, {	-- Aggramar
-							i(152127),	-- Bearmantle Headdress
-							i(152163),	-- Cavalier Hat of the Dashing Scoundrel
-							i(152145),	-- Douli of Chi'Ji
-							i(152115),	-- Dreadwake Helm
-							i(152121),	-- Felreaper Hood
-							i(152156),	-- Gilded Seraph's Crown
-							i(152174),	-- Grim Inquisitor's Death Mas
-							i(152169),	-- Headdress of Venerated Spirits
-							i(152181),	-- Juggernaut Helm
-							i(152151),	-- Light's Vanguard Helm
-							i(152138),	-- Runebound Collar
-							i(152133),	-- Serpentstalker Helmet
-							i(151950),	-- Fallen Avenger's Amice
-							i(152062),	-- Greatcloak of the Dark Pantheon
-							i(152018),	-- Breastplate of Molten Rebirth
-							i(152022),	-- Grond-Father Girdle
-							i(152683),	-- World-Ravager Waistguard
-							i(152282),	-- Caustic Titanspite Legguards
-							i(152684),	-- Greatboots of the Searing Tempest
-							i(151940),	-- Sandals of the Reborn Colossus
-							i(152094),	-- Taeshalach (not in DJ)
-						})),
+						e(1984, {	-- Aggramar
+							["crs"] = { 121975 },	-- Aggramar
+							["g"] = {
+								i(152094),	-- Taeshalach (not in DJ)
+								i(152127),	-- Bearmantle Headdress
+								i(152163),	-- Cavalier Hat of the Dashing Scoundrel
+								i(152145),	-- Douli of Chi'Ji
+								i(152115),	-- Dreadwake Helm
+								i(152121),	-- Felreaper Hood
+								i(152156),	-- Gilded Seraph's Crown
+								i(152174),	-- Grim Inquisitor's Death Mas
+								i(152169),	-- Headdress of Venerated Spirits
+								i(152181),	-- Juggernaut Helm
+								i(152151),	-- Light's Vanguard Helm
+								i(152138),	-- Runebound Collar
+								i(152133),	-- Serpentstalker Helmet
+								i(151950),	-- Fallen Avenger's Amice
+								i(152062),	-- Greatcloak of the Dark Pantheon
+								i(152018),	-- Breastplate of Molten Rebirth
+								i(152022),	-- Grond-Father Girdle
+								i(152683),	-- World-Ravager Waistguard
+								i(152282),	-- Caustic Titanspite Legguards
+								i(152684),	-- Greatboots of the Searing Tempest
+								i(151940),	-- Sandals of the Reborn Colossus
+							},
+						}),
 						cr(124828, e(2031, {	-- Argus the Unmaker
+							i(153115),	-- Scythe of the Unmaker (not in DJ)
 							i(152423),	-- Helm of the Awakened Soul
 							i(152005),	-- Pauldrons of Colossal Burden
 							i(152679),	-- Gambeson of Sargeras' Corruption
@@ -481,7 +517,6 @@ _.Instances = { tier(7, {	-- Legion
 							i(152686),	-- Nascent Deathbringer's Clutches
 							i(151986),	-- Death-Enveloping Cincture
 							i(152016),	-- Cosmos-Culling Legplates
-							i(153115),	-- Scythe of the Unmaker (not in DJ)
 						})),
 					},
 				}),
@@ -696,178 +731,222 @@ _.Instances = { tier(7, {	-- Legion
 				ach(11987, {	-- Glory of the Argus Raider (NORMAL+ ONLY)
 					i(152815),	-- Antoran Glooomhound 
 				}),
-				cr(123371, e(1992, {	-- Garothi Worldbreaker
-					i(151713),	-- Recipe: Empyrial Breastplate (Rank 3)
-					i(151943),	-- Crown of Relentless Annihilation
-					i(151988),	-- Shoulderpads of the Demonic Blitz
-					i(151937),	-- Cloak of  the Burning Vanguard
-					i(152017),	-- Soul-Tempered Chestplate
-					i(151998),	-- Heedless Eradication Gauntlets
-					i(151951),	-- Enhanced Worldscorcher Cinch
-					i(152002),	-- Battalion-Shattering Leggings
-					i(151987),	-- Breach-Blocker Legguards
-					i(152009),	-- Doomwalker Warboots
-				})),
-				cr(126916, e(1987, {	-- Felhounds of Sargeras
-					i(152816),	-- Antoran Charhound (MOUNT!)
-					i(151726),	-- Design: Empyrial Cosmic Crown (Rank 3)
-					i(151729),	-- Design: Empyrial Deep Crown (Rank 3)
-					i(151732),	-- Design: Empyrial Elemental Crown (Rank 3)
-					i(151735),	-- Design: Empyrial Titan Crown (Rank 3)
-					i(152000), 	-- Shadowfused Chain Coif
-					i(152004), 	-- Pauldrons of the Soulburner
-					i(151949), 	-- Soul-Siphon Mantle
-					i(151980), 	-- Harness of Oppressing Dark
-					i(151947), 	-- Vestments of Enflamed Blight
-					i(152012), 	-- Molten Bite Handguards
-					i(152021), 	-- Flamelicked Girdle
-					i(151983), 	-- Vicious Flamepaws
-				})),
-				cr(122367, e(1997, {	-- Antoran High Command
-					i(151742),	-- Recipe: Fiendish Shoulderguards (Rank 3)
-					i(151985),	-- General Erodus' Tricorne
-					i(152019),	-- Pauldrons of the Eternal Offensive
-					i(152125),	-- Bearmantle Cloak
-					i(152143),	-- Cloak of Chi'Ji
-					i(152161),	-- Cloak of the Dashing Scoundrel
-					i(152167),	-- Drape of Venerated Spirits
-					i(152113),	-- Dreadwake Greatcloak
-					i(152119),	-- Felreaper Drape
-					i(152154),	-- Gilded Seraph's Drape
-					i(152172),	-- Grim Inquisitor's Cloak
-					i(152179),	-- Juggernaut Cloak
-					i(152149),	-- Light's Vanguard Greatcloak
-					i(152136),	-- Runebound Cape
-					i(152131),	-- Serpentstalker Drape
-					i(151994),	-- Fleet Commander's Hauberk
-					i(151992),	-- Fiendish Logistician's Wristwraps
-					i(151953),	-- Man'ari Pyromancer Cuffs
-					i(152006),	-- Depraved Tactician's Waistguard
-					i(152424),	-- Legwraps of the Seasoned Exterminator
-					i(152011),	-- Eredar Warcouncil Sabatons
-				})),
-				cr(125562, e(2025, {	-- Eonar the Life-Bender
-					i(152681),	-- Headdress of Living Brambles
-					i(152013),	-- Helmet of  the Hidden Sanctuary
-					i(152124),	-- Bearmantle Harness
-					i(152112),	-- Dreadwake Bonecage
-					i(152118),	-- Felreaper Vest
-					i(152158),	-- Gilded Seraph's Robes
-					i(152176),	-- Grim Inquisitor's Robes
-					i(152178),	-- Juggernaut Breastplate
-					i(152148),	-- Light's Vanguard  Breastplate
-					i(152166),	-- Robes of Venerated Spirits
-					i(152140),	-- Runebound Tunic
-					i(152130),	-- Serpentstalker Tunic
-					i(152142),	-- Tunic of Chi'Ji
-					i(152160),	-- Vest of the Dashing Scoundrel
-					i(152023),	-- Vambraces of  Life's Assurance
-					i(151952),	-- Cord of Blossoming Petals
-					i(152007),	-- Sash of the Gilded Rose
-					i(151981),	-- Life-Bearing Footpads
-				})),
-				cr(122104, e(1985, {	-- Portal Keeper Hasabel
-					i(151748),	-- Recipe: Lightweave Breeches (Rank 3)
-					i(152001),	-- Nexus Conductor's Headgear
-					i(152008),	-- Reality-Splitting Wristguards
-					i(151941),	-- Aranasi Shadow-Weaver's Gloves
-					i(152086),	-- Grips of Hungering Shadows
-					i(152020),	-- Nathrezim Battle Girdle
-					i(151990),	-- Portal Keeper's Cincture
-					i(151945),	-- Lady Dacidion's Silk Slippers
-				})),
-				cr(124158, e(2009, {	-- Imonar the Soulhunter
-					i(151944),	-- Soulhunter's Cowl
-					i(152416),	-- Shoulderguards of Indomitable Purpose
-					i(151989),	-- Spaulders of the Relentless Tracker
-					i(151938),	-- Drape of the Spirited Hunt
-					i(152687),	-- Imonar's Demi-Gauntlets
-					i(151999),	-- Preysnare Vicegrips
-					i(152128),	-- Bearmantle Legguards
-					i(152116),	-- Dreadwake Legplates
-					i(152122),	-- Felreaper Leggings
-					i(152157),	-- Gilded  Seraph's Leggings
-					i(152175),	-- Grim Inquisitor's Leggings
-					i(152182),	-- Juggernaut Legplates
-					i(152146),	-- Leggings of Chi'Ji
-					i(152170),	-- Leggings of Venerated Spirits
-					i(152152),	-- Light's Vanguard Legplates
-					i(152164),	-- Pants of the Dashing Scoundrel
-					i(152139),	-- Runebound Leggings
-					i(152134),	-- Serpentstalker Legguards
-					i(151996),	-- Deft Soulhunter's Sabatons
-					i(151939),	-- Whisperstep Runners
-				})),
-				cr(122578, e(2004, {	-- Kin'garoth
-					i(152014),	-- Titan-Subjugator's Visage
-					i(151948),	-- Magma-Spattered Smock
-					i(152280),	-- Scalding Shatterguards
-					i(152126),	-- Bearmantle Paws
-					i(152114),	-- Dreadwake Gauntlets
-					i(152120),	-- Felreaper Gloves
-					i(152155),	-- Gilded Seraph's Handwraps
-					i(152162),	-- Gloves of the Dashing Scoundrel
-					i(152168),	-- Gloves of Venerated Spirits
-					i(152173),	-- Grim Inquisitor's Gloves
-					i(152144),	-- Grips of Chi'Ji
-					i(152180),	-- Juggernaut Gauntlets
-					i(152150),	-- Light's Vanguard Gauntlets
-					i(152137),	-- Runebound Gloves
-					i(152132),	-- Serpentstalker Grips
-					i(152412),	-- Depraved Machinist's Footpads
-				})),
-				cr(122366, e(1983, {	-- Varimathras
-					i(151995),	-- Robes of the Forsaken Dreadlord
-					i(151979),	-- Vest of Unfathomable Anguish
-					i(151954),	-- Blood-Drenched Bindings
-					i(152281),	-- Varimathras' Shattered Manacles
-					i(151991),	-- Belt of Fractured Sanity
-					i(151942),	-- Cord of Surging Hysteria
-					i(152015),	-- Greaves of Mercurial Alliegance
-					i(151997),	-- Nathrezim Shade-Walkers
-				})),
-				cr(122468, e(1986, {	-- The Coven of Shivarra
-					i(152129),	-- Bearmantle Shoulders
-					i(152117),	-- Dreadwake Pauldrons
-					i(152123),	-- Felreaper Spaulders
-					i(152159),	-- Gilded Seraph's Amice
-					i(152177),	-- Grim Inquisitor's Shoulderguards
-					i(152183),	-- Juggernaut Pauldrons
-					i(152153),	-- Light's Vanguard Shoulderplates
-					i(152147),	-- Meditation Spheres of Chi'Ji
-					i(152171),	-- Pauldrons of Venerated Spirits
-					i(152141),	-- Runebound Mantle
-					i(152135),	-- Serpentstalker Mantle
-					i(152165),	-- Shoulderpads of the Dashing Scoundrel
-					i(152414),	-- Bracers of Wanton Morality
-					i(151984),	-- Lurid Grips of the Obscene
-					i(151946),	-- Fervent Twilight Legwraps
-					i(152003),	-- Legguards of Numbing Glooom
-					i(152010),	-- Burning Coven Sabatons
-				})),
-				cr(121975, e(1984, {	-- Aggramar
-					i(152094),	-- Taeshalach (not in DJ)
-					i(152127),	-- Bearmantle Headdress
-					i(152163),	-- Cavalier Hat of the Dashing Scoundrel
-					i(152145),	-- Douli of Chi'Ji
-					i(152115),	-- Dreadwake Helm
-					i(152121),	-- Felreaper Hood
-					i(152156),	-- Gilded Seraph's Crown
-					i(152174),	-- Grim Inquisitor's Death Mas
-					i(152169),	-- Headdress of Venerated Spirits
-					i(152181),	-- Juggernaut Helm
-					i(152151),	-- Light's Vanguard Helm
-					i(152138),	-- Runebound Collar
-					i(152133),	-- Serpentstalker Helmet
-					i(151950),	-- Fallen Avenger's Amice
-					i(152062),	-- Greatcloak of the Dark Pantheon
-					i(152018),	-- Breastplate of Molten Rebirth
-					i(152022),	-- Grond-Father Girdle
-					i(152683),	-- World-Ravager Waistguard
-					i(152282),	-- Caustic Titanspite Legguards
-					i(152684),	-- Greatboots of the Searing Tempest
-					i(151940),	-- Sandals of the Reborn Colossus
-				})),
+				e(1992, {	-- Garothi Worldbreaker
+					["crs"] = { 122450 },	-- Garothi Worldbreaker
+					["g"] = {
+						i(151713),	-- Recipe: Empyrial Breastplate (Rank 3)
+						i(151943),	-- Crown of Relentless Annihilation
+						i(151988),	-- Shoulderpads of the Demonic Blitz
+						i(151937),	-- Cloak of  the Burning Vanguard
+						i(152017),	-- Soul-Tempered Chestplate
+						i(151998),	-- Heedless Eradication Gauntlets
+						i(151951),	-- Enhanced Worldscorcher Cinch
+						i(152002),	-- Battalion-Shattering Leggings
+						i(151987),	-- Breach-Blocker Legguards
+						i(152009),	-- Doomwalker Warboots
+					},
+				}),
+				e(1987, {	-- Felhounds of Sargeras
+					["crs"] = {
+						122477,	-- F'harg
+						122135,	-- Shatug
+					},
+					["g"] = {
+						i(152816),	-- Antoran Charhound (MOUNT!)
+						i(151726),	-- Design: Empyrial Cosmic Crown (Rank 3)
+						i(151729),	-- Design: Empyrial Deep Crown (Rank 3)
+						i(151732),	-- Design: Empyrial Elemental Crown (Rank 3)
+						i(151735),	-- Design: Empyrial Titan Crown (Rank 3)
+						i(152000), 	-- Shadowfused Chain Coif
+						i(152004), 	-- Pauldrons of the Soulburner
+						i(151949), 	-- Soul-Siphon Mantle
+						i(151980), 	-- Harness of Oppressing Dark
+						i(151947), 	-- Vestments of Enflamed Blight
+						i(152012), 	-- Molten Bite Handguards
+						i(152021), 	-- Flamelicked Girdle
+						i(151983), 	-- Vicious Flamepaws
+					},
+				}),
+				e(1997, {	-- Antoran High Command
+					["crs"] = {
+						122367,	-- Admiral Svirax
+						122359,	-- Chief Engineer Ishkar
+						122333,	-- General Erodus
+					},
+					["g"] = {
+						i(151742),	-- Recipe: Fiendish Shoulderguards (Rank 3)
+						i(151985),	-- General Erodus' Tricorne
+						i(152019),	-- Pauldrons of the Eternal Offensive
+						i(152125),	-- Bearmantle Cloak
+						i(152143),	-- Cloak of Chi'Ji
+						i(152161),	-- Cloak of the Dashing Scoundrel
+						i(152167),	-- Drape of Venerated Spirits
+						i(152113),	-- Dreadwake Greatcloak
+						i(152119),	-- Felreaper Drape
+						i(152154),	-- Gilded Seraph's Drape
+						i(152172),	-- Grim Inquisitor's Cloak
+						i(152179),	-- Juggernaut Cloak
+						i(152149),	-- Light's Vanguard Greatcloak
+						i(152136),	-- Runebound Cape
+						i(152131),	-- Serpentstalker Drape
+						i(151994),	-- Fleet Commander's Hauberk
+						i(151992),	-- Fiendish Logistician's Wristwraps
+						i(151953),	-- Man'ari Pyromancer Cuffs
+						i(152006),	-- Depraved Tactician's Waistguard
+						i(152424),	-- Legwraps of the Seasoned Exterminator
+						i(152011),	-- Eredar Warcouncil Sabatons
+					},
+				}),
+				e(2025, {	-- Eonar the Life-Bender
+					["crs"] = {
+						122500,	-- Essence of Eonar
+						124445,	-- The Paraxis
+					},
+					["g"] = {
+						i(152681),	-- Headdress of Living Brambles
+						i(152013),	-- Helmet of  the Hidden Sanctuary
+						i(152124),	-- Bearmantle Harness
+						i(152112),	-- Dreadwake Bonecage
+						i(152118),	-- Felreaper Vest
+						i(152158),	-- Gilded Seraph's Robes
+						i(152176),	-- Grim Inquisitor's Robes
+						i(152178),	-- Juggernaut Breastplate
+						i(152148),	-- Light's Vanguard  Breastplate
+						i(152166),	-- Robes of Venerated Spirits
+						i(152140),	-- Runebound Tunic
+						i(152130),	-- Serpentstalker Tunic
+						i(152142),	-- Tunic of Chi'Ji
+						i(152160),	-- Vest of the Dashing Scoundrel
+						i(152023),	-- Vambraces of  Life's Assurance
+						i(151952),	-- Cord of Blossoming Petals
+						i(152007),	-- Sash of the Gilded Rose
+						i(151981),	-- Life-Bearing Footpads
+					},
+				}),
+				e(1985, {	-- Portal Keeper Hasabel
+					["crs"] = { 122104 },	-- Portal Keeper Hasabel
+					["g"] = {
+						i(151748),	-- Recipe: Lightweave Breeches (Rank 3)
+						i(152001),	-- Nexus Conductor's Headgear
+						i(152008),	-- Reality-Splitting Wristguards
+						i(151941),	-- Aranasi Shadow-Weaver's Gloves
+						i(152086),	-- Grips of Hungering Shadows
+						i(152020),	-- Nathrezim Battle Girdle
+						i(151990),	-- Portal Keeper's Cincture
+						i(151945),	-- Lady Dacidion's Silk Slippers
+					},
+				}),
+				e(2009, {	-- Imonar the Soulhunter
+					["crs"] = { 124158 },	-- Imonar the Soulhunter
+					["g"] = {
+						i(151944),	-- Soulhunter's Cowl
+						i(152416),	-- Shoulderguards of Indomitable Purpose
+						i(151989),	-- Spaulders of the Relentless Tracker
+						i(151938),	-- Drape of the Spirited Hunt
+						i(152687),	-- Imonar's Demi-Gauntlets
+						i(151999),	-- Preysnare Vicegrips
+						i(152128),	-- Bearmantle Legguards
+						i(152116),	-- Dreadwake Legplates
+						i(152122),	-- Felreaper Leggings
+						i(152157),	-- Gilded  Seraph's Leggings
+						i(152175),	-- Grim Inquisitor's Leggings
+						i(152182),	-- Juggernaut Legplates
+						i(152146),	-- Leggings of Chi'Ji
+						i(152170),	-- Leggings of Venerated Spirits
+						i(152152),	-- Light's Vanguard Legplates
+						i(152164),	-- Pants of the Dashing Scoundrel
+						i(152139),	-- Runebound Leggings
+						i(152134),	-- Serpentstalker Legguards
+						i(151996),	-- Deft Soulhunter's Sabatons
+						i(151939),	-- Whisperstep Runners
+					},
+				}),
+				e(2004, {	-- Kin'garoth
+					["crs"] = { 122578 },	-- Kin'garoth
+					["g"] = {
+						i(152014),	-- Titan-Subjugator's Visage
+						i(151948),	-- Magma-Spattered Smock
+						i(152280),	-- Scalding Shatterguards
+						i(152126),	-- Bearmantle Paws
+						i(152114),	-- Dreadwake Gauntlets
+						i(152120),	-- Felreaper Gloves
+						i(152155),	-- Gilded Seraph's Handwraps
+						i(152162),	-- Gloves of the Dashing Scoundrel
+						i(152168),	-- Gloves of Venerated Spirits
+						i(152173),	-- Grim Inquisitor's Gloves
+						i(152144),	-- Grips of Chi'Ji
+						i(152180),	-- Juggernaut Gauntlets
+						i(152150),	-- Light's Vanguard Gauntlets
+						i(152137),	-- Runebound Gloves
+						i(152132),	-- Serpentstalker Grips
+						i(152412),	-- Depraved Machinist's Footpads
+					},
+				}),
+				e(1983, {	-- Varimathras
+					["crs"] = { 122366 },	-- Varimathras
+					["g"] = {
+						i(151995),	-- Robes of the Forsaken Dreadlord
+						i(151979),	-- Vest of Unfathomable Anguish
+						i(151954),	-- Blood-Drenched Bindings
+						i(152281),	-- Varimathras' Shattered Manacles
+						i(151991),	-- Belt of Fractured Sanity
+						i(151942),	-- Cord of Surging Hysteria
+						i(152015),	-- Greaves of Mercurial Alliegance
+						i(151997),	-- Nathrezim Shade-Walkers
+					},
+				}),
+				e(1986, {	-- The Coven of Shivarra
+					["crs"] = {
+						122467,	-- Asara, Mother of Night
+						122469,	-- Diima, Mother of Gloom
+						122468,	-- Noura, Mother of Flames
+					},
+					["g"] = {
+						i(152129),	-- Bearmantle Shoulders
+						i(152117),	-- Dreadwake Pauldrons
+						i(152123),	-- Felreaper Spaulders
+						i(152159),	-- Gilded Seraph's Amice
+						i(152177),	-- Grim Inquisitor's Shoulderguards
+						i(152183),	-- Juggernaut Pauldrons
+						i(152153),	-- Light's Vanguard Shoulderplates
+						i(152147),	-- Meditation Spheres of Chi'Ji
+						i(152171),	-- Pauldrons of Venerated Spirits
+						i(152141),	-- Runebound Mantle
+						i(152135),	-- Serpentstalker Mantle
+						i(152165),	-- Shoulderpads of the Dashing Scoundrel
+						i(152414),	-- Bracers of Wanton Morality
+						i(151984),	-- Lurid Grips of the Obscene
+						i(151946),	-- Fervent Twilight Legwraps
+						i(152003),	-- Legguards of Numbing Glooom
+						i(152010),	-- Burning Coven Sabatons
+					},
+				}),
+				e(1984, {	-- Aggramar
+					["crs"] = { 121975 },	-- Aggramar
+					["g"] = {
+						i(152094),	-- Taeshalach (not in DJ)
+						i(152127),	-- Bearmantle Headdress
+						i(152163),	-- Cavalier Hat of the Dashing Scoundrel
+						i(152145),	-- Douli of Chi'Ji
+						i(152115),	-- Dreadwake Helm
+						i(152121),	-- Felreaper Hood
+						i(152156),	-- Gilded Seraph's Crown
+						i(152174),	-- Grim Inquisitor's Death Mas
+						i(152169),	-- Headdress of Venerated Spirits
+						i(152181),	-- Juggernaut Helm
+						i(152151),	-- Light's Vanguard Helm
+						i(152138),	-- Runebound Collar
+						i(152133),	-- Serpentstalker Helmet
+						i(151950),	-- Fallen Avenger's Amice
+						i(152062),	-- Greatcloak of the Dark Pantheon
+						i(152018),	-- Breastplate of Molten Rebirth
+						i(152022),	-- Grond-Father Girdle
+						i(152683),	-- World-Ravager Waistguard
+						i(152282),	-- Caustic Titanspite Legguards
+						i(152684),	-- Greatboots of the Searing Tempest
+						i(151940),	-- Sandals of the Reborn Colossus
+					},
+				}),
 				cr(124828, e(2031, {	-- Argus the Unmaker
 					i(153115),	-- Scythe of the Unmaker (not in DJ)
 					i(152423),	-- Helm of the Awakened Soul
@@ -1097,178 +1176,222 @@ _.Instances = { tier(7, {	-- Legion
 				ach(11987, {	-- Glory of the Argus Raider (NORMAL+ ONLY)
 					i(152815),	-- Antoran Glooomhound 
 				}),
-				cr(123371, e(1992, {	-- Garothi Worldbreaker
-					i(151713),	-- Recipe: Empyrial Breastplate (Rank 3)
-					i(151943),	-- Crown of Relentless Annihilation
-					i(151988),	-- Shoulderpads of the Demonic Blitz
-					i(151937),	-- Cloak of  the Burning Vanguard
-					i(152017),	-- Soul-Tempered Chestplate
-					i(151998),	-- Heedless Eradication Gauntlets
-					i(151951),	-- Enhanced Worldscorcher Cinch
-					i(152002),	-- Battalion-Shattering Leggings
-					i(151987),	-- Breach-Blocker Legguards
-					i(152009),	-- Doomwalker Warboots
-				})),
-				cr(126916, e(1987, {	-- Felhounds of Sargeras
-					i(152816),	-- Antoran Charhound (MOUNT!)
-					i(151726),	-- Design: Empyrial Cosmic Crown (Rank 3)
-					i(151729),	-- Design: Empyrial Deep Crown (Rank 3)
-					i(151732),	-- Design: Empyrial Elemental Crown (Rank 3)
-					i(151735),	-- Design: Empyrial Titan Crown (Rank 3)
-					i(152000),	-- Shadowfused Chain Coif
-					i(152004),	-- Pauldrons of the Soulburner
-					i(151949),	-- Soul-Siphon Mantle
-					i(151980),	-- Harness of Oppressing Dark
-					i(151947),	-- Vestments of Enflamed Blight
-					i(152012),	-- Molten Bite Handguards
-					i(152021),	-- Flamelicked Girdle
-					i(151983),	-- Vicious Flamepaws
-				})),
-				cr(122367, e(1997, {	-- Antoran High Command
-					i(151742),	-- Recipe: Fiendish Shoulderguards (Rank 3)
-					i(151985),	-- General Erodus' Tricorne
-					i(152019),	-- Pauldrons of the Eternal Offensive
-					i(152125),	-- Bearmantle Cloak
-					i(152143),	-- Cloak of Chi'Ji
-					i(152161),	-- Cloak of the Dashing Scoundrel
-					i(152167),	-- Drape of Venerated Spirits
-					i(152113),	-- Dreadwake Greatcloak
-					i(152119),	-- Felreaper Drape
-					i(152154),	-- Gilded Seraph's Drape
-					i(152172),	-- Grim Inquisitor's Cloak
-					i(152179),	-- Juggernaut Cloak
-					i(152149),	-- Light's Vanguard Greatcloak
-					i(152136),	-- Runebound Cape
-					i(152131),	-- Serpentstalker Drape
-					i(151994),	-- Fleet Commander's Hauberk
-					i(151992),	-- Fiendish Logistician's Wristwraps
-					i(151953),	-- Man'ari Pyromancer Cuffs
-					i(152006),	-- Depraved Tactician's Waistguard
-					i(152424),	-- Legwraps of the Seasoned Exterminator
-					i(152011),	-- Eredar Warcouncil Sabatons
-				})),
-				cr(125562, e(2025, {	-- Eonar the Life-Bender
-					i(152681),	-- Headdress of Living Brambles
-					i(152013),	-- Helmet of  the Hidden Sanctuary
-					i(152124),	-- Bearmantle Harness
-					i(152112),	-- Dreadwake Bonecage
-					i(152118),	-- Felreaper Vest
-					i(152158),	-- Gilded Seraph's Robes
-					i(152176),	-- Grim Inquisitor's Robes
-					i(152178),	-- Juggernaut Breastplate
-					i(152148),	-- Light's Vanguard  Breastplate
-					i(152166),	-- Robes of Venerated Spirits
-					i(152140),	-- Runebound Tunic
-					i(152130),	-- Serpentstalker Tunic
-					i(152142),	-- Tunic of Chi'Ji
-					i(152160),	-- Vest of the Dashing Scoundrel
-					i(152023),	-- Vambraces of  Life's Assurance
-					i(151952),	-- Cord of Blossoming Petals
-					i(152007),	-- Sash of the Gilded Rose
-					i(151981),	-- Life-Bearing Footpads
-				})),
-				cr(122104, e(1985, {	-- Portal Keeper Hasabel
-					i(151748),	-- Recipe: Lightweave Breeches (Rank 3)
-					i(152001),	-- Nexus Conductor's Headgear
-					i(152008),	-- Reality-Splitting Wristguards
-					i(151941),	-- Aranasi Shadow-Weaver's Gloves
-					i(152086),	-- Grips of Hungering Shadows
-					i(152020),	-- Nathrezim Battle Girdle
-					i(151990),	-- Portal Keeper's Cincture
-					i(151945),	-- Lady Dacidion's Silk Slippers
-				})),
-				cr(124158, e(2009, {	-- Imonar the Soulhunter
-					i(151944),	-- Soulhunter's Cowl
-					i(152416),	-- Shoulderguards of Indomitable Purpose
-					i(151989),	-- Spaulders of the Relentless Tracker
-					i(151938),	-- Drape of the Spirited Hunt
-					i(152687),	-- Imonar's Demi-Gauntlets
-					i(151999),	-- Preysnare Vicegrips
-					i(152128),	-- Bearmantle Legguards
-					i(152116),	-- Dreadwake Legplates
-					i(152122),	-- Felreaper Leggings
-					i(152157),	-- Gilded  Seraph's Leggings
-					i(152175),	-- Grim Inquisitor's Leggings
-					i(152182),	-- Juggernaut Legplates
-					i(152146),	-- Leggings of Chi'Ji
-					i(152170),	-- Leggings of Venerated Spirits
-					i(152152),	-- Light's Vanguard Legplates
-					i(152164),	-- Pants of the Dashing Scoundrel
-					i(152139),	-- Runebound Leggings
-					i(152134),	-- Serpentstalker Legguards
-					i(151996),	-- Deft Soulhunter's Sabatons
-					i(151939),	-- Whisperstep Runners
-				})),
-				cr(122578, e(2004, {	-- Kin'garoth
-					i(152014),	-- Titan-Subjugator's Visage
-					i(151948),	-- Magma-Spattered Smock
-					i(152280),	-- Scalding Shatterguards
-					i(152126),	-- Bearmantle Paws
-					i(152114),	-- Dreadwake Gauntlets
-					i(152120),	-- Felreaper Gloves
-					i(152155),	-- Gilded Seraph's Handwraps
-					i(152162),	-- Gloves of the Dashing Scoundrel
-					i(152168),	-- Gloves of Venerated Spirits
-					i(152173),	-- Grim Inquisitor's Gloves
-					i(152144),	-- Grips of Chi'Ji
-					i(152180),	-- Juggernaut Gauntlets
-					i(152150),	-- Light's Vanguard Gauntlets
-					i(152137),	-- Runebound Gloves
-					i(152132),	-- Serpentstalker Grips
-					i(152412),	-- Depraved Machinist's Footpads
-				})),
-				cr(122366, e(1983, {	-- Varimathras
-					i(151995),	-- Robes of the Forsaken Dreadlord
-					i(151979),	-- Vest of Unfathomable Anguish
-					i(151954),	-- Blood-Drenched Bindings
-					i(152281),	-- Varimathras' Shattered Manacles
-					i(151991),	-- Belt of Fractured Sanity
-					i(151942),	-- Cord of Surging Hysteria
-					i(152015),	-- Greaves of Mercurial Alliegance
-					i(151997),	-- Nathrezim Shade-Walkers								
-				})),
-				cr(122468, e(1986, {	-- The Coven of Shivarra
-					i(152129),	-- Bearmantle Shoulders
-					i(152117),	-- Dreadwake Pauldrons
-					i(152123),	-- Felreaper Spaulders
-					i(152159),	-- Gilded Seraph's Amice
-					i(152177),	-- Grim Inquisitor's Shoulderguards
-					i(152183),	-- Juggernaut Pauldrons
-					i(152153),	-- Light's Vanguard Shoulderplates
-					i(152147),	-- Meditation Spheres of Chi'Ji
-					i(152171),	-- Pauldrons of Venerated Spirits
-					i(152141),	-- Runebound Mantle
-					i(152135),	-- Serpentstalker Mantle
-					i(152165),	-- Shoulderpads of the Dashing Scoundrel
-					i(152414),	-- Bracers of Wanton Morality
-					i(151984),	-- Lurid Grips of the Obscene
-					i(151946),	-- Fervent Twilight Legwraps
-					i(152003),	-- Legguards of Numbing Glooom
-					i(152010),	-- Burning Coven Sabatons
-				})),
-				cr(121975, e(1984, {	-- Aggramar
-					i(152094),	-- Taeshalach (not in DJ)
-					i(152127),	-- Bearmantle Headdress
-					i(152163),	-- Cavalier Hat of the Dashing Scoundrel
-					i(152145),	-- Douli of Chi'Ji
-					i(152115),	-- Dreadwake Helm
-					i(152121),	-- Felreaper Hood
-					i(152156),	-- Gilded Seraph's Crown
-					i(152174),	-- Grim Inquisitor's Death Mas
-					i(152169),	-- Headdress of Venerated Spirits
-					i(152181),	-- Juggernaut Helm
-					i(152151),	-- Light's Vanguard Helm
-					i(152138),	-- Runebound Collar
-					i(152133),	-- Serpentstalker Helmet
-					i(151950),	-- Fallen Avenger's Amice
-					i(152062),	-- Greatcloak of the Dark Pantheon
-					i(152018),	-- Breastplate of Molten Rebirth
-					i(152022),	-- Grond-Father Girdle
-					i(152683),	-- World-Ravager Waistguard
-					i(152282),	-- Caustic Titanspite Legguards
-					i(152684),	-- Greatboots of the Searing Tempest
-					i(151940),	-- Sandals of the Reborn Colossus
-				})),
+				e(1992, {	-- Garothi Worldbreaker
+					["crs"] = { 122450 },	-- Garothi Worldbreaker
+					["g"] = {
+						i(151713),	-- Recipe: Empyrial Breastplate (Rank 3)
+						i(151943),	-- Crown of Relentless Annihilation
+						i(151988),	-- Shoulderpads of the Demonic Blitz
+						i(151937),	-- Cloak of  the Burning Vanguard
+						i(152017),	-- Soul-Tempered Chestplate
+						i(151998),	-- Heedless Eradication Gauntlets
+						i(151951),	-- Enhanced Worldscorcher Cinch
+						i(152002),	-- Battalion-Shattering Leggings
+						i(151987),	-- Breach-Blocker Legguards
+						i(152009),	-- Doomwalker Warboots
+					},
+				}),
+				e(1987, {	-- Felhounds of Sargeras
+					["crs"] = {
+						122477,	-- F'harg
+						122135,	-- Shatug
+					},
+					["g"] = {
+						i(152816),	-- Antoran Charhound (MOUNT!)
+						i(151726),	-- Design: Empyrial Cosmic Crown (Rank 3)
+						i(151729),	-- Design: Empyrial Deep Crown (Rank 3)
+						i(151732),	-- Design: Empyrial Elemental Crown (Rank 3)
+						i(151735),	-- Design: Empyrial Titan Crown (Rank 3)
+						i(152000),	-- Shadowfused Chain Coif
+						i(152004),	-- Pauldrons of the Soulburner
+						i(151949),	-- Soul-Siphon Mantle
+						i(151980),	-- Harness of Oppressing Dark
+						i(151947),	-- Vestments of Enflamed Blight
+						i(152012),	-- Molten Bite Handguards
+						i(152021),	-- Flamelicked Girdle
+						i(151983),	-- Vicious Flamepaws
+					},
+				}),
+				e(1997, {	-- Antoran High Command
+					["crs"] = {
+						122367,	-- Admiral Svirax
+						122359,	-- Chief Engineer Ishkar
+						122333,	-- General Erodus
+					},
+					["g"] = {
+						i(151742),	-- Recipe: Fiendish Shoulderguards (Rank 3)
+						i(151985),	-- General Erodus' Tricorne
+						i(152019),	-- Pauldrons of the Eternal Offensive
+						i(152125),	-- Bearmantle Cloak
+						i(152143),	-- Cloak of Chi'Ji
+						i(152161),	-- Cloak of the Dashing Scoundrel
+						i(152167),	-- Drape of Venerated Spirits
+						i(152113),	-- Dreadwake Greatcloak
+						i(152119),	-- Felreaper Drape
+						i(152154),	-- Gilded Seraph's Drape
+						i(152172),	-- Grim Inquisitor's Cloak
+						i(152179),	-- Juggernaut Cloak
+						i(152149),	-- Light's Vanguard Greatcloak
+						i(152136),	-- Runebound Cape
+						i(152131),	-- Serpentstalker Drape
+						i(151994),	-- Fleet Commander's Hauberk
+						i(151992),	-- Fiendish Logistician's Wristwraps
+						i(151953),	-- Man'ari Pyromancer Cuffs
+						i(152006),	-- Depraved Tactician's Waistguard
+						i(152424),	-- Legwraps of the Seasoned Exterminator
+						i(152011),	-- Eredar Warcouncil Sabatons
+					},
+				}),
+				e(2025, {	-- Eonar the Life-Bender
+					["crs"] = {
+						122500,	-- Essence of Eonar
+						124445,	-- The Paraxis
+					},
+					["g"] = {
+						i(152681),	-- Headdress of Living Brambles
+						i(152013),	-- Helmet of  the Hidden Sanctuary
+						i(152124),	-- Bearmantle Harness
+						i(152112),	-- Dreadwake Bonecage
+						i(152118),	-- Felreaper Vest
+						i(152158),	-- Gilded Seraph's Robes
+						i(152176),	-- Grim Inquisitor's Robes
+						i(152178),	-- Juggernaut Breastplate
+						i(152148),	-- Light's Vanguard  Breastplate
+						i(152166),	-- Robes of Venerated Spirits
+						i(152140),	-- Runebound Tunic
+						i(152130),	-- Serpentstalker Tunic
+						i(152142),	-- Tunic of Chi'Ji
+						i(152160),	-- Vest of the Dashing Scoundrel
+						i(152023),	-- Vambraces of  Life's Assurance
+						i(151952),	-- Cord of Blossoming Petals
+						i(152007),	-- Sash of the Gilded Rose
+						i(151981),	-- Life-Bearing Footpads
+					},
+				}),
+				e(1985, {	-- Portal Keeper Hasabel
+					["crs"] = { 122104 },	-- Portal Keeper Hasabel
+					["g"] = {
+						i(151748),	-- Recipe: Lightweave Breeches (Rank 3)
+						i(152001),	-- Nexus Conductor's Headgear
+						i(152008),	-- Reality-Splitting Wristguards
+						i(151941),	-- Aranasi Shadow-Weaver's Gloves
+						i(152086),	-- Grips of Hungering Shadows
+						i(152020),	-- Nathrezim Battle Girdle
+						i(151990),	-- Portal Keeper's Cincture
+						i(151945),	-- Lady Dacidion's Silk Slippers
+					},
+				}),
+				e(2009, {	-- Imonar the Soulhunter
+					["crs"] = { 124158 },	-- Imonar the Soulhunter
+					["g"] = {
+						i(151944),	-- Soulhunter's Cowl
+						i(152416),	-- Shoulderguards of Indomitable Purpose
+						i(151989),	-- Spaulders of the Relentless Tracker
+						i(151938),	-- Drape of the Spirited Hunt
+						i(152687),	-- Imonar's Demi-Gauntlets
+						i(151999),	-- Preysnare Vicegrips
+						i(152128),	-- Bearmantle Legguards
+						i(152116),	-- Dreadwake Legplates
+						i(152122),	-- Felreaper Leggings
+						i(152157),	-- Gilded  Seraph's Leggings
+						i(152175),	-- Grim Inquisitor's Leggings
+						i(152182),	-- Juggernaut Legplates
+						i(152146),	-- Leggings of Chi'Ji
+						i(152170),	-- Leggings of Venerated Spirits
+						i(152152),	-- Light's Vanguard Legplates
+						i(152164),	-- Pants of the Dashing Scoundrel
+						i(152139),	-- Runebound Leggings
+						i(152134),	-- Serpentstalker Legguards
+						i(151996),	-- Deft Soulhunter's Sabatons
+						i(151939),	-- Whisperstep Runners
+					},
+				}),
+				e(2004, {	-- Kin'garoth
+					["crs"] = { 122578 },	-- Kin'garoth
+					["g"] = {
+						i(152014),	-- Titan-Subjugator's Visage
+						i(151948),	-- Magma-Spattered Smock
+						i(152280),	-- Scalding Shatterguards
+						i(152126),	-- Bearmantle Paws
+						i(152114),	-- Dreadwake Gauntlets
+						i(152120),	-- Felreaper Gloves
+						i(152155),	-- Gilded Seraph's Handwraps
+						i(152162),	-- Gloves of the Dashing Scoundrel
+						i(152168),	-- Gloves of Venerated Spirits
+						i(152173),	-- Grim Inquisitor's Gloves
+						i(152144),	-- Grips of Chi'Ji
+						i(152180),	-- Juggernaut Gauntlets
+						i(152150),	-- Light's Vanguard Gauntlets
+						i(152137),	-- Runebound Gloves
+						i(152132),	-- Serpentstalker Grips
+						i(152412),	-- Depraved Machinist's Footpads
+					},
+				}),
+				e(1983, {	-- Varimathras
+					["crs"] = { 122366 },	-- Varimathras
+					["g"] = {
+						i(151995),	-- Robes of the Forsaken Dreadlord
+						i(151979),	-- Vest of Unfathomable Anguish
+						i(151954),	-- Blood-Drenched Bindings
+						i(152281),	-- Varimathras' Shattered Manacles
+						i(151991),	-- Belt of Fractured Sanity
+						i(151942),	-- Cord of Surging Hysteria
+						i(152015),	-- Greaves of Mercurial Alliegance
+						i(151997),	-- Nathrezim Shade-Walkers
+					},
+				}),
+				e(1986, {	-- The Coven of Shivarra
+					["crs"] = {
+						122467,	-- Asara, Mother of Night
+						122469,	-- Diima, Mother of Gloom
+						122468,	-- Noura, Mother of Flames
+					},
+					["g"] = {
+						i(152129),	-- Bearmantle Shoulders
+						i(152117),	-- Dreadwake Pauldrons
+						i(152123),	-- Felreaper Spaulders
+						i(152159),	-- Gilded Seraph's Amice
+						i(152177),	-- Grim Inquisitor's Shoulderguards
+						i(152183),	-- Juggernaut Pauldrons
+						i(152153),	-- Light's Vanguard Shoulderplates
+						i(152147),	-- Meditation Spheres of Chi'Ji
+						i(152171),	-- Pauldrons of Venerated Spirits
+						i(152141),	-- Runebound Mantle
+						i(152135),	-- Serpentstalker Mantle
+						i(152165),	-- Shoulderpads of the Dashing Scoundrel
+						i(152414),	-- Bracers of Wanton Morality
+						i(151984),	-- Lurid Grips of the Obscene
+						i(151946),	-- Fervent Twilight Legwraps
+						i(152003),	-- Legguards of Numbing Glooom
+						i(152010),	-- Burning Coven Sabatons
+					},
+				}),
+				e(1984, {	-- Aggramar
+					["crs"] = { 121975 },	-- Aggramar
+					["g"] = {
+						i(152094),	-- Taeshalach (not in DJ)
+						i(152127),	-- Bearmantle Headdress
+						i(152163),	-- Cavalier Hat of the Dashing Scoundrel
+						i(152145),	-- Douli of Chi'Ji
+						i(152115),	-- Dreadwake Helm
+						i(152121),	-- Felreaper Hood
+						i(152156),	-- Gilded Seraph's Crown
+						i(152174),	-- Grim Inquisitor's Death Mas
+						i(152169),	-- Headdress of Venerated Spirits
+						i(152181),	-- Juggernaut Helm
+						i(152151),	-- Light's Vanguard Helm
+						i(152138),	-- Runebound Collar
+						i(152133),	-- Serpentstalker Helmet
+						i(151950),	-- Fallen Avenger's Amice
+						i(152062),	-- Greatcloak of the Dark Pantheon
+						i(152018),	-- Breastplate of Molten Rebirth
+						i(152022),	-- Grond-Father Girdle
+						i(152683),	-- World-Ravager Waistguard
+						i(152282),	-- Caustic Titanspite Legguards
+						i(152684),	-- Greatboots of the Searing Tempest
+						i(151940),	-- Sandals of the Reborn Colossus
+					},
+				}),
 				cr(124828, e(2031, {	-- Argus the Unmaker
 					un(2, i(152900, {	-- Blood of the Unmaker (HEROIC+ ONLY)
 						q(48954, {	-- Blood of a Titan
@@ -1503,177 +1626,221 @@ _.Instances = { tier(7, {	-- Legion
 				ach(11987, {	-- Glory of the Argus Raider (NORMAL+ ONLY)
 					i(152815),	-- Antoran Glooomhound 
 				}),
-				cr(123371, e(1992, {	-- Garothi Worldbreaker
-					i(151943),	-- Crown of Relentless Annihilation
-					i(151988),	-- Shoulderpads of the Demonic Blitz
-					i(151937),	-- Cloak of  the Burning Vanguard
-					i(152017),	-- Soul-Tempered Chestplate
-					i(151998),	-- Heedless Eradication Gauntlets
-					i(151951),	-- Enhanced Worldscorcher Cinch
-					i(152002),	-- Battalion-Shattering Leggings
-					i(151987),	-- Breach-Blocker Legguards
-					i(152009),	-- Doomwalker Warboots
-				})),
-				cr(126916, e(1987, {	-- Felhounds of Sargeras
-					i(152816),	-- Antoran Charhound (MOUNT!)
-					i(151726),	-- Design: Empyrial Cosmic Crown (Rank 3)
-					i(151729),	-- Design: Empyrial Deep Crown (Rank 3)
-					i(151732),	-- Design: Empyrial Elemental Crown (Rank 3)
-					i(151735),	-- Design: Empyrial Titan Crown (Rank 3)
-					i(152000),	-- Shadowfused Chain Coif
-					i(152004),	-- Pauldrons of the Soulburner
-					i(151949),	-- Soul-Siphon Mantle
-					i(151980),	-- Harness of Oppressing Dark
-					i(151947),	-- Vestments of Enflamed Blight
-					i(152012),	-- Molten Bite Handguards
-					i(152021),	-- Flamelicked Girdle
-					i(151983),	-- Vicious Flamepaws
-				})),
-				cr(122367, e(1997, {	-- Antoran High Command
-					i(151742),	-- Recipe: Fiendish Shoulderguards (Rank 3)
-					i(151985),	-- General Erodus' Tricorne
-					i(152019),	-- Pauldrons of the Eternal Offensive
-					i(152125),	-- Bearmantle Cloak
-					i(152143),	-- Cloak of Chi'Ji
-					i(152161),	-- Cloak of the Dashing Scoundrel
-					i(152167),	-- Drape of Venerated Spirits
-					i(152113),	-- Dreadwake Greatcloak
-					i(152119),	-- Felreaper Drape
-					i(152154),	-- Gilded Seraph's Drape
-					i(152172),	-- Grim Inquisitor's Cloak
-					i(152179),	-- Juggernaut Cloak
-					i(152149),	-- Light's Vanguard Greatcloak
-					i(152136),	-- Runebound Cape
-					i(152131),	-- Serpentstalker Drape
-					i(151994),	-- Fleet Commander's Hauberk
-					i(151992),	-- Fiendish Logistician's Wristwraps
-					i(151953),	-- Man'ari Pyromancer Cuffs
-					i(152006),	-- Depraved Tactician's Waistguard
-					i(152424),	-- Legwraps of the Seasoned Exterminator
-					i(152011),	-- Eredar Warcouncil Sabatons
-				})),
-				cr(125562, e(2025, {	-- Eonar the Life-Bender
-					i(152681),	-- Headdress of Living Brambles
-					i(152013),	-- Helmet of  the Hidden Sanctuary
-					i(152124),	-- Bearmantle Harness
-					i(152112),	-- Dreadwake Bonecage
-					i(152118),	-- Felreaper Vest
-					i(152158),	-- Gilded Seraph's Robes
-					i(152176),	-- Grim Inquisitor's Robes
-					i(152178),	-- Juggernaut Breastplate
-					i(152148),	-- Light's Vanguard  Breastplate
-					i(152166),	-- Robes of Venerated Spirits
-					i(152140),	-- Runebound Tunic
-					i(152130),	-- Serpentstalker Tunic
-					i(152142),	-- Tunic of Chi'Ji
-					i(152160),	-- Vest of the Dashing Scoundrel
-					i(152023),	-- Vambraces of  Life's Assurance
-					i(151952),	-- Cord of Blossoming Petals
-					i(152007),	-- Sash of the Gilded Rose
-					i(151981),	-- Life-Bearing Footpads
-				})),
-				cr(122104, e(1985, {	-- Portal Keeper Hasabel
-					i(151748),	-- Recipe: Lightweave Breeches (Rank 3)
-					i(152001),	-- Nexus Conductor's Headgear
-					i(152008),	-- Reality-Splitting Wristguards
-					i(151941),	-- Aranasi Shadow-Weaver's Gloves
-					i(152086),	-- Grips of Hungering Shadows
-					i(152020),	-- Nathrezim Battle Girdle
-					i(151990),	-- Portal Keeper's Cincture
-					i(151945),	-- Lady Dacidion's Silk Slippers
-				})),
-				cr(124158, e(2009, {	-- Imonar the Soulhunter
-					i(151944),	-- Soulhunter's Cowl
-					i(152416),	-- Shoulderguards of Indomitable Purpose
-					i(151989),	-- Spaulders of the Relentless Tracker
-					i(151938),	-- Drape of the Spirited Hunt
-					i(152687),	-- Imonar's Demi-Gauntlets
-					i(151999),	-- Preysnare Vicegrips
-					i(152128),	-- Bearmantle Legguards
-					i(152116),	-- Dreadwake Legplates
-					i(152122),	-- Felreaper Leggings
-					i(152157),	-- Gilded  Seraph's Leggings
-					i(152175),	-- Grim Inquisitor's Leggings
-					i(152182),	-- Juggernaut Legplates
-					i(152146),	-- Leggings of Chi'Ji
-					i(152170),	-- Leggings of Venerated Spirits
-					i(152152),	-- Light's Vanguard Legplates
-					i(152164),	-- Pants of the Dashing Scoundrel
-					i(152139),	-- Runebound Leggings
-					i(152134),	-- Serpentstalker Legguards
-					i(151996),	-- Deft Soulhunter's Sabatons
-					i(151939),	-- Whisperstep Runners
-				})),
-				cr(122578, e(2004, {	-- Kin'garoth
-					i(152014),	-- Titan-Subjugator's Visage
-					i(151948),	-- Magma-Spattered Smock
-					i(152280),	-- Scalding Shatterguards
-					i(152126),	-- Bearmantle Paws
-					i(152114),	-- Dreadwake Gauntlets
-					i(152120),	-- Felreaper Gloves
-					i(152155),	-- Gilded Seraph's Handwraps
-					i(152162),	-- Gloves of the Dashing Scoundrel
-					i(152168),	-- Gloves of Venerated Spirits
-					i(152173),	-- Grim Inquisitor's Gloves
-					i(152144),	-- Grips of Chi'Ji
-					i(152180),	-- Juggernaut Gauntlets
-					i(152150),	-- Light's Vanguard Gauntlets
-					i(152137),	-- Runebound Gloves
-					i(152132),	-- Serpentstalker Grips
-					i(152412),	-- Depraved Machinist's Footpads
-				})),
-				cr(122366, e(1983, {	-- Varimathras
-					i(151995),	-- Robes of the Forsaken Dreadlord
-					i(151979),	-- Vest of Unfathomable Anguish
-					i(151954),	-- Blood-Drenched Bindings
-					i(152281),	-- Varimathras' Shattered Manacles
-					i(151991),	-- Belt of Fractured Sanity
-					i(151942),	-- Cord of Surging Hysteria
-					i(152015),	-- Greaves of Mercurial Alliegance
-					i(151997),	-- Nathrezim Shade-Walkers	
-				})),
-				cr(122468, e(1986, {	-- The Coven of Shivarra
-					i(152129),	-- Bearmantle Shoulders
-					i(152117),	-- Dreadwake Pauldrons
-					i(152123),	-- Felreaper Spaulders
-					i(152159),	-- Gilded Seraph's Amice
-					i(152177),	-- Grim Inquisitor's Shoulderguards
-					i(152183),	-- Juggernaut Pauldrons
-					i(152153),	-- Light's Vanguard Shoulderplates
-					i(152147),	-- Meditation Spheres of Chi'Ji
-					i(152171),	-- Pauldrons of Venerated Spirits
-					i(152141),	-- Runebound Mantle
-					i(152135),	-- Serpentstalker Mantle
-					i(152165),	-- Shoulderpads of the Dashing Scoundrel
-					i(152414),	-- Bracers of Wanton Morality
-					i(151984),	-- Lurid Grips of the Obscene
-					i(151946),	-- Fervent Twilight Legwraps
-					i(152003),	-- Legguards of Numbing Glooom
-					i(152010),	-- Burning Coven Sabatons
-				})),
-				cr(121975, e(1984, {	-- Aggramar
-					i(152094),	-- Taeshalach (not in DJ)
-					i(152127),	-- Bearmantle Headdress
-					i(152163),	-- Cavalier Hat of the Dashing Scoundrel
-					i(152145),	-- Douli of Chi'Ji
-					i(152115),	-- Dreadwake Helm
-					i(152121),	-- Felreaper Hood
-					i(152156),	-- Gilded Seraph's Crown
-					i(152174),	-- Grim Inquisitor's Death Mas
-					i(152169),	-- Headdress of Venerated Spirits
-					i(152181),	-- Juggernaut Helm
-					i(152151),	-- Light's Vanguard Helm
-					i(152138),	-- Runebound Collar
-					i(152133),	-- Serpentstalker Helmet
-					i(151950),	-- Fallen Avenger's Amice
-					i(152062),	-- Greatcloak of the Dark Pantheon
-					i(152018),	-- Breastplate of Molten Rebirth
-					i(152022),	-- Grond-Father Girdle
-					i(152683),	-- World-Ravager Waistguard
-					i(152282),	-- Caustic Titanspite Legguards
-					i(152684),	-- Greatboots of the Searing Tempest
-					i(151940),	-- Sandals of the Reborn Colossus
-				})),
+				e(1992, {	-- Garothi Worldbreaker
+					["crs"] = { 122450 },	-- Garothi Worldbreaker
+					["g"] = {
+						i(151943),	-- Crown of Relentless Annihilation
+						i(151988),	-- Shoulderpads of the Demonic Blitz
+						i(151937),	-- Cloak of  the Burning Vanguard
+						i(152017),	-- Soul-Tempered Chestplate
+						i(151998),	-- Heedless Eradication Gauntlets
+						i(151951),	-- Enhanced Worldscorcher Cinch
+						i(152002),	-- Battalion-Shattering Leggings
+						i(151987),	-- Breach-Blocker Legguards
+						i(152009),	-- Doomwalker Warboots
+					},
+				}),
+				e(1987, {	-- Felhounds of Sargeras
+					["crs"] = {
+						122477,	-- F'harg
+						122135,	-- Shatug
+					},
+					["g"] = {
+						i(152816),	-- Antoran Charhound (MOUNT!)
+						i(151726),	-- Design: Empyrial Cosmic Crown (Rank 3)
+						i(151729),	-- Design: Empyrial Deep Crown (Rank 3)
+						i(151732),	-- Design: Empyrial Elemental Crown (Rank 3)
+						i(151735),	-- Design: Empyrial Titan Crown (Rank 3)
+						i(152000),	-- Shadowfused Chain Coif
+						i(152004),	-- Pauldrons of the Soulburner
+						i(151949),	-- Soul-Siphon Mantle
+						i(151980),	-- Harness of Oppressing Dark
+						i(151947),	-- Vestments of Enflamed Blight
+						i(152012),	-- Molten Bite Handguards
+						i(152021),	-- Flamelicked Girdle
+						i(151983),	-- Vicious Flamepaws
+					},
+				}),
+				e(1997, {	-- Antoran High Command
+					["crs"] = {
+						122367,	-- Admiral Svirax
+						122359,	-- Chief Engineer Ishkar
+						122333,	-- General Erodus
+					},
+					["g"] = {
+						i(151742),	-- Recipe: Fiendish Shoulderguards (Rank 3)
+						i(151985),	-- General Erodus' Tricorne
+						i(152019),	-- Pauldrons of the Eternal Offensive
+						i(152125),	-- Bearmantle Cloak
+						i(152143),	-- Cloak of Chi'Ji
+						i(152161),	-- Cloak of the Dashing Scoundrel
+						i(152167),	-- Drape of Venerated Spirits
+						i(152113),	-- Dreadwake Greatcloak
+						i(152119),	-- Felreaper Drape
+						i(152154),	-- Gilded Seraph's Drape
+						i(152172),	-- Grim Inquisitor's Cloak
+						i(152179),	-- Juggernaut Cloak
+						i(152149),	-- Light's Vanguard Greatcloak
+						i(152136),	-- Runebound Cape
+						i(152131),	-- Serpentstalker Drape
+						i(151994),	-- Fleet Commander's Hauberk
+						i(151992),	-- Fiendish Logistician's Wristwraps
+						i(151953),	-- Man'ari Pyromancer Cuffs
+						i(152006),	-- Depraved Tactician's Waistguard
+						i(152424),	-- Legwraps of the Seasoned Exterminator
+						i(152011),	-- Eredar Warcouncil Sabatons
+					},
+				}),
+				e(2025, {	-- Eonar the Life-Bender
+					["crs"] = {
+						122500,	-- Essence of Eonar
+						124445,	-- The Paraxis
+					},
+					["g"] = {
+						i(152681),	-- Headdress of Living Brambles
+						i(152013),	-- Helmet of  the Hidden Sanctuary
+						i(152124),	-- Bearmantle Harness
+						i(152112),	-- Dreadwake Bonecage
+						i(152118),	-- Felreaper Vest
+						i(152158),	-- Gilded Seraph's Robes
+						i(152176),	-- Grim Inquisitor's Robes
+						i(152178),	-- Juggernaut Breastplate
+						i(152148),	-- Light's Vanguard  Breastplate
+						i(152166),	-- Robes of Venerated Spirits
+						i(152140),	-- Runebound Tunic
+						i(152130),	-- Serpentstalker Tunic
+						i(152142),	-- Tunic of Chi'Ji
+						i(152160),	-- Vest of the Dashing Scoundrel
+						i(152023),	-- Vambraces of  Life's Assurance
+						i(151952),	-- Cord of Blossoming Petals
+						i(152007),	-- Sash of the Gilded Rose
+						i(151981),	-- Life-Bearing Footpads
+					},
+				}),
+				e(1985, {	-- Portal Keeper Hasabel
+					["crs"] = { 122104 },	-- Portal Keeper Hasabel
+					["g"] = {
+						i(151748),	-- Recipe: Lightweave Breeches (Rank 3)
+						i(152001),	-- Nexus Conductor's Headgear
+						i(152008),	-- Reality-Splitting Wristguards
+						i(151941),	-- Aranasi Shadow-Weaver's Gloves
+						i(152086),	-- Grips of Hungering Shadows
+						i(152020),	-- Nathrezim Battle Girdle
+						i(151990),	-- Portal Keeper's Cincture
+						i(151945),	-- Lady Dacidion's Silk Slippers
+					},
+				}),
+				e(2009, {	-- Imonar the Soulhunter
+					["crs"] = { 124158 },	-- Imonar the Soulhunter
+					["g"] = {
+						i(151944),	-- Soulhunter's Cowl
+						i(152416),	-- Shoulderguards of Indomitable Purpose
+						i(151989),	-- Spaulders of the Relentless Tracker
+						i(151938),	-- Drape of the Spirited Hunt
+						i(152687),	-- Imonar's Demi-Gauntlets
+						i(151999),	-- Preysnare Vicegrips
+						i(152128),	-- Bearmantle Legguards
+						i(152116),	-- Dreadwake Legplates
+						i(152122),	-- Felreaper Leggings
+						i(152157),	-- Gilded  Seraph's Leggings
+						i(152175),	-- Grim Inquisitor's Leggings
+						i(152182),	-- Juggernaut Legplates
+						i(152146),	-- Leggings of Chi'Ji
+						i(152170),	-- Leggings of Venerated Spirits
+						i(152152),	-- Light's Vanguard Legplates
+						i(152164),	-- Pants of the Dashing Scoundrel
+						i(152139),	-- Runebound Leggings
+						i(152134),	-- Serpentstalker Legguards
+						i(151996),	-- Deft Soulhunter's Sabatons
+						i(151939),	-- Whisperstep Runners
+					},
+				}),
+				e(2004, {	-- Kin'garoth
+					["crs"] = { 122578 },	-- Kin'garoth
+					["g"] = {
+						i(152014),	-- Titan-Subjugator's Visage
+						i(151948),	-- Magma-Spattered Smock
+						i(152280),	-- Scalding Shatterguards
+						i(152126),	-- Bearmantle Paws
+						i(152114),	-- Dreadwake Gauntlets
+						i(152120),	-- Felreaper Gloves
+						i(152155),	-- Gilded Seraph's Handwraps
+						i(152162),	-- Gloves of the Dashing Scoundrel
+						i(152168),	-- Gloves of Venerated Spirits
+						i(152173),	-- Grim Inquisitor's Gloves
+						i(152144),	-- Grips of Chi'Ji
+						i(152180),	-- Juggernaut Gauntlets
+						i(152150),	-- Light's Vanguard Gauntlets
+						i(152137),	-- Runebound Gloves
+						i(152132),	-- Serpentstalker Grips
+						i(152412),	-- Depraved Machinist's Footpads
+					},
+				}),
+				e(1983, {	-- Varimathras
+					["crs"] = { 122366 },	-- Varimathras
+					["g"] = {
+						i(151995),	-- Robes of the Forsaken Dreadlord
+						i(151979),	-- Vest of Unfathomable Anguish
+						i(151954),	-- Blood-Drenched Bindings
+						i(152281),	-- Varimathras' Shattered Manacles
+						i(151991),	-- Belt of Fractured Sanity
+						i(151942),	-- Cord of Surging Hysteria
+						i(152015),	-- Greaves of Mercurial Alliegance
+						i(151997),	-- Nathrezim Shade-Walkers
+					},
+				}),
+				e(1986, {	-- The Coven of Shivarra
+					["crs"] = {
+						122467,	-- Asara, Mother of Night
+						122469,	-- Diima, Mother of Gloom
+						122468,	-- Noura, Mother of Flames
+					},
+					["g"] = {
+						i(152129),	-- Bearmantle Shoulders
+						i(152117),	-- Dreadwake Pauldrons
+						i(152123),	-- Felreaper Spaulders
+						i(152159),	-- Gilded Seraph's Amice
+						i(152177),	-- Grim Inquisitor's Shoulderguards
+						i(152183),	-- Juggernaut Pauldrons
+						i(152153),	-- Light's Vanguard Shoulderplates
+						i(152147),	-- Meditation Spheres of Chi'Ji
+						i(152171),	-- Pauldrons of Venerated Spirits
+						i(152141),	-- Runebound Mantle
+						i(152135),	-- Serpentstalker Mantle
+						i(152165),	-- Shoulderpads of the Dashing Scoundrel
+						i(152414),	-- Bracers of Wanton Morality
+						i(151984),	-- Lurid Grips of the Obscene
+						i(151946),	-- Fervent Twilight Legwraps
+						i(152003),	-- Legguards of Numbing Glooom
+						i(152010),	-- Burning Coven Sabatons
+					},
+				}),
+				e(1984, {	-- Aggramar
+					["crs"] = { 121975 },	-- Aggramar
+					["g"] = {
+						i(152094),	-- Taeshalach (not in DJ)
+						i(152127),	-- Bearmantle Headdress
+						i(152163),	-- Cavalier Hat of the Dashing Scoundrel
+						i(152145),	-- Douli of Chi'Ji
+						i(152115),	-- Dreadwake Helm
+						i(152121),	-- Felreaper Hood
+						i(152156),	-- Gilded Seraph's Crown
+						i(152174),	-- Grim Inquisitor's Death Mas
+						i(152169),	-- Headdress of Venerated Spirits
+						i(152181),	-- Juggernaut Helm
+						i(152151),	-- Light's Vanguard Helm
+						i(152138),	-- Runebound Collar
+						i(152133),	-- Serpentstalker Helmet
+						i(151950),	-- Fallen Avenger's Amice
+						i(152062),	-- Greatcloak of the Dark Pantheon
+						i(152018),	-- Breastplate of Molten Rebirth
+						i(152022),	-- Grond-Father Girdle
+						i(152683),	-- World-Ravager Waistguard
+						i(152282),	-- Caustic Titanspite Legguards
+						i(152684),	-- Greatboots of the Searing Tempest
+						i(151940),	-- Sandals of the Reborn Colossus
+					},
+				}),
 				cr(124828, e(2031, {	-- Argus the Unmaker
 					un(2, i(152900, {	-- Blood of the Unmaker  (HEROIC+ ONLY)
 						q(48954, {	-- Blood of a Titan
