@@ -568,7 +568,7 @@ _.Zones =
 						["coord"] = { 58.8, 46.1, 249 },
 						["sourceQuest"] = 27631,	-- The High Commander's Vote
 					},
-					{	-- Premature Explosionation -- aa
+					{	-- Premature Explosionation
 						["questID"] = 27141,
 						["qg"] = 44860,	-- Harrison Jones
 						["coord"] = { 64.3, 22.3, 249 },
