@@ -96,6 +96,7 @@ _.ExpansionFeatures =
 					n(91024, { 	-- Jake the Fox <Leather Trader>
 						i(120945),	-- Primal Spirit
 						i(127722),	-- Recipe: Mighty Burnished Essence
+						un(2, i(122547)),	-- Recipe: Powerful Burnished Essence
 						i(127740),	-- Recipe: Savage Burnished Essence
 						i(122715),	-- Recipe: Spiritual Leathercraft
 					}),
@@ -760,39 +761,52 @@ _.ExpansionFeatures =
 							},
 						}),
 					}),
-					--[[
 					n(-118, { 		-- The Tannery
-						n(77383, { 	-- Anders Longstitch
-							i(115358),		-- Teaches Journeying helm, robes, slacks -- Traveling helm, leggings, tunic, burnished leather, secrets of draenor leatherworking
-							i(116325),
-							i(116326),
-							i(116327),
-							i(116328),
-							i(116329),
-							i(116330),
-							i(116331),
-							i(116332),
-							i(116333),
-							i(116334),
-							i(116335),
-							i(116336),
-							i(116337),
-							i(116338),
-							i(116339),
-							i(116340),
-							i(116341),
-							i(116342),
-							i(116343),
-							i(116344),
-							i(116345),
-							i(116347),
-							i(116348),
-							i(116349),
-							i(116350),
-							i(120258),
+						na(77383, { 	-- Anders Longstitch
+							i(115358, { -- Draenor Leatherworking
+								recipe(171391),	-- Burnished Leather
+								i(116319), -- Recipe: Journeying Helm
+								i(116320), -- Recipe: Journeying Robes
+								i(116321), -- Recipe: Journeying Slacks
+								i(120130), -- Recipe: Secrets of Draenor Leatherworking
+								i(116322), -- Recipe: Traveling Helm
+								i(116324), -- Recipe: Traveling Leggings
+								i(116323), -- Recipe: Traveling Tunic
+							}),
+							i(118721, { -- Secret of Draenor Leatherworking
+								i(116328), -- Recipe: Brilliant Burnished Cloak
+								i(116345), -- Recipe: Burnished Essence
+								i(116349), -- Recipe: Burnished Inscription Bag
+								i(116347), -- Recipe: Burnished Leather Bag
+								i(116348), -- Recipe: Burnished Mining Bag
+								i(120258), -- Recipe: Drums of Fury
+								i(116325), -- Recipe: Leather Refurbishing Kit
+								i(116327), -- Recipe: Nimble Burnished Cloak
+								i(116326), -- Recipe: Powerful Burnished Cloak
+								i(116350), -- Recipe: Riding Harness
+								i(116335), -- Recipe: Supple Boots
+								i(116334), -- Recipe: Supple Bracers
+								i(116332), -- Recipe: Supple Gloves
+								i(116330), -- Recipe: Supple Helm
+								i(116331), -- Recipe: Supple Leggings
+								i(116329), -- Recipe: Supple Shoulderguards
+								i(116333), -- Recipe: Supple Vest
+								i(116336), -- Recipe: Supple Waistguard
+								i(116344), -- Recipe: Wayfaring Belt
+								i(116343), -- Recipe: Wayfaring Boots
+								i(116342), -- Recipe: Wayfaring Bracers
+								i(116340), -- Recipe: Wayfaring Gloves
+								i(116338), -- Recipe: Wayfaring Helm
+								i(116339), -- Recipe: Wayfaring Leggings
+								i(116337), -- Recipe: Wayfaring Shoulderguards
+								i(116341), -- Recipe: Wayfaring Tunic
+								{	-- Small Pouch of Coins
+									["itemID"] = 116376,
+									["description"] = "This item contains 1-5 gold. DON'T WASTE YOUR SECRETS!\n\nSide note: This gold counts toward gold-looting achievements. (Got My Mind on My Money, etc.)",
+								},
+							}),
 						}),		
 					}),
-					]]--							
 					n(-119, { 	-- Trading Post
 						n(85427, { 	-- Maaria <Sha'tari Defense Quartermaster>
 							["groups"] = {

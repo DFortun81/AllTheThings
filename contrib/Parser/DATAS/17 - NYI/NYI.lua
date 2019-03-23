@@ -306,8 +306,11 @@ _.NeverImplemented =
 			un(1, i(107881)),	-- Unknown
 			un(1, i(107884)),	-- Unknown
 			un(1, i(107887)),	-- Unknown
+			un(1, i(39410)),	-- Gauntlets of Rampant Destruction
 			un(1, i(25795)),	-- Gloves of Preservation (not added version)
+			un(1, i(38525)),	-- Jailor's Padded Cover
 			un(1, i(56701)),	-- Jinxed Vest (never made it to live)
+			un(1, i(43895)),	-- Leggings of Silent Echoes
 			un(1, i(25796)),	-- Lurking Shadow Spaulders (only beta)
 			un(1, i(22273)),	-- Moonshadow Hood (Leather)
 			un(1, i(19986)),	-- Pirate's Eye Patch (Leather)
@@ -322,6 +325,8 @@ _.NeverImplemented =
 			un(1, i(28145)),	-- Tranquillien Wraps (Leather)
 			un(1, i(7187)),		-- VanCleef's Boots (Leather)
 			un(1, i(26029)),	-- Watchman's Bracers
+			un(1, i(41757)),	-- Vest of Unyielding Companionship (was in Wrath beta)
+			un(1, i(42875)),	-- Worg-Hide Pants
 			un(1, i(21613)),	-- Wormhide Boots (Leather)
 			un(1, i(21614)),	-- Wormhide Protector (Leather)
 		}),
@@ -1314,7 +1319,143 @@ _.NeverImplemented =
 			un(1, i(141065)),	-- Technique: Glyph of the Terrorguard (Item never made it into the game)
 		}),
 		n(-187, {	-- Leatherworking
+			{	-- Pattern: Cloak of Beasts
+				["itemID"] = 67039,   	-- Pattern: Cloak of Beasts
+				["spellID"] = 0,   	-- This is available via the trainer, use spellID = 0 to delink the unused plans from the recipe
+				["u"] = 1,
+			},
+			{	-- Pattern: Cloak of War
+				["itemID"] = 67041,   	-- Pattern: Cloak of War
+				["spellID"] = 0,   	-- This is available via the trainer, use spellID = 0 to delink the unused plans from the recipe
+				["u"] = 1,
+			},
+			{	-- Pattern: Darkbrand Belt
+				["itemID"] = 67015,   	-- Pattern: Darkbrand Belt
+				["spellID"] = 0,   	-- This is available via the trainer, use spellID = 0 to delink the unused plans from the recipe
+				["u"] = 1,
+			},
+			{	-- Pattern: Darkbrand Boots
+				["itemID"] = 67007,   	-- Pattern: Darkbrand Boots
+				["spellID"] = 0,   	-- This is available via the trainer, use spellID = 0 to delink the unused plans from the recipe
+				["u"] = 1,
+			},
+			{	-- Pattern: Darkbrand Bracers
+				["itemID"] = 66999,   	-- Pattern: Darkbrand Bracers
+				["spellID"] = 0,   	-- This is available via the trainer, use spellID = 0 to delink the unused plans from the recipe
+				["u"] = 1,
+			},
+			{	-- Pattern: Darkbrand Chestguard
+				["itemID"] = 67026,   	-- Pattern: Darkbrand Chestguard
+				["spellID"] = 0,   	-- This is available via the trainer, use spellID = 0 to delink the unused plans from the recipe
+				["u"] = 1,
+			},
+			{	-- Pattern: Darkbrand Gloves
+				["itemID"] = 67000,   	-- Pattern: Darkbrand Gloves
+				["spellID"] = 0,   	-- This is available via the trainer, use spellID = 0 to delink the unused plans from the recipe
+				["u"] = 1,
+			},
+			{	-- Pattern: Darkbrand Helm
+				["itemID"] = 67021,   	-- Pattern: Darkbrand Helm
+				["spellID"] = 0,   	-- This is available via the trainer, use spellID = 0 to delink the unused plans from the recipe
+				["u"] = 1,
+			},
+			{	-- Pattern: Darkbrand Leggings
+				["itemID"] = 67033,   	-- Pattern: Darkbrand Leggings
+				["spellID"] = 0,   	-- This is available via the trainer, use spellID = 0 to delink the unused plans from the recipe
+				["u"] = 1,
+			},
+			{	-- Pattern: Darkbrand Shoulders
+				["itemID"] = 67011,   	-- Pattern: Darkbrand Shoulders
+				["spellID"] = 0,   	-- This is available via the trainer, use spellID = 0 to delink the unused plans from the recipe
+				["u"] = 1,
+			},
+			{	-- Pattern: Heavy Savage Armor Kit
+				["itemID"] = 67038,   	-- Pattern: Heavy Savage Armor Kit
+				["spellID"] = 0,   	-- This is available via the trainer, use spellID = 0 to delink the unused plans from the recipe
+				["u"] = 1,
+			},
+			{	-- Pattern: Heavy Savage Leather
+				["itemID"] = 67036,   	-- Pattern: Heavy Savage Leather
+				["spellID"] = 0,   	-- This is available via the trainer, use spellID = 0 to delink the unused plans from the recipe
+				["u"] = 1,
+			},
 			un(1, i(15780)),	-- Pattern: Onyxia Scale Breastplate [never made it out of Beta]
+			un(1, i(67017)),	-- Pattern: Razorshell Belt (never made it into game)
+			un(1, i(67009)),	-- Pattern: Razorshell Boots (never made it into game)
+			un(1, i(67003)),	-- Pattern: Razorshell Bracers (never made it into game)
+			un(1, i(67035)),	-- Pattern: Razorshell Chest (never made it into game)
+			un(1, i(67013)),	-- Pattern: Razorshell Gloves (never made it into game)
+			un(1, i(67023)),	-- Pattern: Razorshell Helm (never made it into game)
+			un(1, i(67030)),	-- Pattern: Razorshell Leggings (never made it into game)
+			un(1, i(67004)),	-- Pattern: Razorshell Shoulders (never made it into game)
+			{	-- Pattern: Savage Cloak
+				["itemID"] = 66995,   	-- Pattern: Savage Cloak 
+				["spellID"] = 0,   	-- This is available via the trainer, use spellID = 0 to delink the unused plans from the recipe
+				["u"] = 1,
+			},
+			{	-- Pattern: Scorched Leg Armor
+				["itemID"] = 67018,   	-- Pattern: Scorched Leg Armor
+				["spellID"] = 0,   	-- This is available via the trainer, use spellID = 0 to delink the unused plans from the recipe
+				["u"] = 1,
+			},
+			{	-- Pattern: Shellscale Cloak
+				["itemID"] = 67005,   	-- Pattern: Shellscale Cloak (was changed to Hardened Scale Cloak and added to trainers)
+				["spellID"] = 0,   	-- This is available via the trainer, use spellID = 0 to delink the unused plans from the recipe
+				["u"] = 1,
+			},
+			{	-- Pattern: Tsunami Belt
+				["itemID"] = 66997,   	-- Pattern: Tsunami Belt
+				["spellID"] = 0,   	-- This is available via the trainer, use spellID = 0 to delink the unused plans from the recipe
+				["u"] = 1,
+			},
+			{	-- Pattern: Tsunami Boots
+				["itemID"] = 67010,   	-- Pattern: Tsunami Boots
+				["spellID"] = 0,   	-- This is available via the trainer, use spellID = 0 to delink the unused plans from the recipe
+				["u"] = 1,
+			},
+			{	-- Pattern: Tsunami Bracers
+				["itemID"] = 66996,   	-- Pattern: Tsunami Bracers
+				["spellID"] = 0,   	-- This is available via the trainer, use spellID = 0 to delink the unused plans from the recipe
+				["u"] = 1,
+			},
+			{	-- Pattern: Tsunami Chestguard
+				["itemID"] = 67020,   	-- Pattern: Tsunami Chestguard
+				["spellID"] = 0,   	-- This is available via the trainer, use spellID = 0 to delink the unused plans from the recipe
+				["u"] = 1,
+			},
+			{	-- Pattern: Tsunami Gloves
+				["itemID"] = 67006,   	-- Pattern: Tsunami Gloves
+				["spellID"] = 0,   	-- This is available via the trainer, use spellID = 0 to delink the unused plans from the recipe
+				["u"] = 1,
+			},
+			{	-- Pattern: Tsunami Helm
+				["itemID"] = 67031,   	-- Pattern: Tsunami Helm
+				["spellID"] = 0,   	-- This is available via the trainer, use spellID = 0 to delink the unused plans from the recipe
+				["u"] = 1,
+			},
+			{	-- Pattern: Tsunami Leggings
+				["itemID"] = 67025,   	-- Pattern: Tsunami Leggings
+				["spellID"] = 0,   	-- This is available via the trainer, use spellID = 0 to delink the unused plans from the recipe
+				["u"] = 1,
+			},
+			{	-- Pattern: Tsunami Shoulders
+				["itemID"] = 67014,   	-- Pattern: Tsunami Shoulders
+				["spellID"] = 0,   	-- This is available via the trainer, use spellID = 0 to delink the unused plans from the recipe
+				["u"] = 1,
+			},
+			{	-- Pattern: Twilight Leg Armor
+				["itemID"] = 67019,   	-- Pattern: Twilight Leg Armor
+				["spellID"] = 0,   	-- This is available via the trainer, use spellID = 0 to delink the unused plans from the recipe
+				["u"] = 1,
+			},
+			un(1, i(67012)),	-- Pattern: Windbound Belt (never made it into game)
+			un(1, i(67008)),	-- Pattern: Windbound Boots (never made it into game)
+			un(1, i(67001)),	-- Pattern: Windbound Bracers (never made it into game)
+			un(1, i(67028)),	-- Pattern: Windbound Chest (never made it into game)
+			un(1, i(67002)),	-- Pattern: Windbound Gloves (never made it into game)
+			un(1, i(67034)),	-- Pattern: Windbound Helm (never made it into game)
+			un(1, i(67022)),	-- Pattern: Windbound Leggings (never made it into game)
+			un(1, i(67016)),	-- Pattern: Windbound Shoulders (never made it into game)
 			{	-- Recipe: Coarse Leather Barding [Rank 2]
 				["itemID"] = 166312,	-- Recipe: Coarse Leather Barding [Rank 2]
 				["spellID"] = 0,	-- This is available via the trainer, need to delink the unused plans from the recipe
@@ -1340,6 +1481,7 @@ _.NeverImplemented =
 				["spellID"] = 0,	-- This is a single rank recipe on live, need to delink the unused plans from the recipe
 				["u"] = 1,
 			},
+			un(1, i(118097)),	-- Recipe: Small Football
 		}),
 		n(-190, { 	-- Tailoring
 			un(1, i(42196)),	-- Pattern: Aurora Slippers (pattern never went live, but it's learned at the trainer)

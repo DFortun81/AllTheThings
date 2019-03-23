@@ -220,6 +220,7 @@ pet(8498, 59);	 	-- Emerald Whelpling
 pet(129178, 1720); 	-- Emmigosa
 pet(44982, 213); 	-- Enchanted Broom
 pet(128533, 1699); 	-- Enchanted Cauldron
+pet(46894, 231);	-- Enchanted Jade (Jade Tiger)
 pet(67274, 267); 	-- Enchanted Lantern
 pet(48527, 240);	-- Enchanted Onyx (Onyx Panther)
 pet(128535, 1701); 	-- Enchanted Pen
