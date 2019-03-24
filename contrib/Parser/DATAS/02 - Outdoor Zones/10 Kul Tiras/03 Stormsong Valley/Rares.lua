@@ -368,6 +368,10 @@ _.Zones =
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(158299),	-- Ratha's Thornscepter
 							}),
+							["coords"] = {
+								{ 51.1, 68.7, 942 },	-- cave entrance
+								-- { 49.6, 68.5, 942 },	-- inside cave at rare
+							},
 							["questID"] = 50037,
 						}),
 						n(130079, {	-- Wagga Snarltusk	
