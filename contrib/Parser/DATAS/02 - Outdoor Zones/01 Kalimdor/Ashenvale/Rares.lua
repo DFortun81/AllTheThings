@@ -57,6 +57,7 @@ _.Zones =
 						},
 					}),
 					n(3735,   {	-- Apothecary Falthis
+						["races"] = ALLIANCE_ONLY,
 						["coords"] = {
 							{ 31.4, 22.4, 63 },
 							{ 32.0, 23.4, 63 },
@@ -156,6 +157,7 @@ _.Zones =
 						},
 					}),
 					n(3736,   {	-- Darkslayer Mordenthal
+						["races"] = ALLIANCE_ONLY,
 						["coords"] = {
 							{ 72.4, 71.0, 63 },
 							{ 75.2, 71.0, 63 },
