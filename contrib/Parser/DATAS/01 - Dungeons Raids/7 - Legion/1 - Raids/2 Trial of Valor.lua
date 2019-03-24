@@ -95,6 +95,7 @@ _.Instances = { tier(7, {	-- Legion
 					},
 					["groups"] = {
 						i(143509, {	-- Ensemble: Vestment of the Chosen Dead
+							["description"] = "This item has a chance to drop from any boss in LFR, Normal, Heroic, and Mythic difficulties",
 							["classes"] = { 5, 8, 9 },	-- Priest, Mage, Warlock
 							["crs"] = {
 								116242,	-- Aspiring Champion of the Chosen Dead
@@ -112,6 +113,7 @@ _.Instances = { tier(7, {	-- Legion
 							},
 						}),		
 						i(143513, {	-- Ensemble: Garb of the Chosen Dead
+							["description"] = "This item has a chance to drop from any boss in LFR, Normal, Heroic, and Mythic difficulties",
 							["classes"] = { 11, 4, 10, 12 },	-- Druid, Rogue, Monk, Demon Hunter
 							["crs"] = {
 								116242,	-- Aspiring Champion of the Chosen Dead
@@ -129,6 +131,11 @@ _.Instances = { tier(7, {	-- Legion
 							},
 						}),		
 						i(143517, {	-- Ensemble: Chains of the Chosen Dead	
+							["description"] = "This item has a chance to drop from any boss in LFR, Normal, Heroic, and Mythic difficulties",
+							["classes"] = { 3, 7 },	-- Hunter, Shaman
+							["crs"] = {
+								116242,	-- Aspiring Champion of the Chosen Dead
+							},
 							["groups"] = {
 								i(143347),	-- Coif of the Chosen Dead
 								i(143357),	-- Pauldrons of the Chosen Dead
@@ -140,12 +147,9 @@ _.Instances = { tier(7, {	-- Legion
 								i(143351),	-- Chain Leggings of the Chosen Dead
 								i(143339),	-- Sabatons of the Chosen Dead
 							},
-							["classes"] = { 3, 7 },	-- Hunter, Shaman
-							["crs"] = {
-								116242,	-- Aspiring Champion of the Chosen Dead
-							},
 						}),		
 						i(143521, {	-- Ensemble: Funerary Plate of the Chosen Dead
+							["description"] = "This item has a chance to drop from any boss in LFR, Normal, Heroic, and Mythic, difficulties",
 							["classes"] = { 2, 1, 6 },	-- Paladin, Warrior, Death Knight
 							["crs"] = {
 								116242,	-- Aspiring Champion of the Chosen Dead
@@ -323,6 +327,7 @@ _.Instances = { tier(7, {	-- Legion
 				}),
 				n(-1, {	-- Common Boss Drop
 					i(143507, {	-- Ensemble: Vestment of the Chosen Dead
+						["description"] = "This item has a chance to drop from any boss in Heroic and Mythic difficulties",
 						["classes"] = { 5, 8, 9 },	-- Priest, Mage, Warlock
 						["crs"] = {
 							116245,	-- Heroic Champion of the Chosen Dead
@@ -340,6 +345,7 @@ _.Instances = { tier(7, {	-- Legion
 						},
 					}),		
 					i(143511, {	-- Ensemble: Garb of the Chosen Dead
+						["description"] = "This item has a chance to drop from any boss in Heroic and Mythic difficulties",
 						["classes"] = { 11, 4, 10, 12 },	-- Druid, Rogue, Monk, Demon Hunter
 						["crs"] = {
 							116245,	-- Heroic Champion of the Chosen Dead
@@ -357,6 +363,7 @@ _.Instances = { tier(7, {	-- Legion
 						},
 					}),		
 					i(143515, {	-- Ensemble: Chains of the Chosen Dead
+						["description"] = "This item has a chance to drop from any boss in Heroic and Mythic difficulties",
 						["classes"] = { 3, 7 },	-- Hunter, Shaman
 						["crs"] = {
 							116245,	-- Heroic Champion of the Chosen Dead
@@ -374,6 +381,7 @@ _.Instances = { tier(7, {	-- Legion
 						},
 					}),		
 					i(143519, {	-- Ensemble: Funerary Plate of the Chosen Dead
+						["description"] = "This item has a chance to drop from any boss in Heroic and Mythic difficulties",
 						["classes"] = { 2, 1, 6 },	-- Paladin, Warrior, Death Knight
 						["crs"] = {
 							116245,	-- Heroic Champion of the Chosen Dead
