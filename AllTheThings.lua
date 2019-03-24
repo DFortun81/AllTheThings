@@ -70,12 +70,6 @@ local function StartCoroutine(name, method)
 		local instance = coroutine.create(method);
 		app.refreshing[name] = true;
 		Push(app, name, function()
-			-- Lock out during PVP
-			local inInstance, instanceType = IsInInstance();
-			if inInstance and (instanceType == "pvp" or instanceType == "arena") then
-				return true;
-			end
-		
 			-- Check the status of the coroutine
 			if instance and coroutine.status(instance) ~= "dead" then
 				local ok, err = coroutine.resume(instance);
@@ -2495,18 +2489,6 @@ local function RefreshSavesCoroutine()
 	
 	-- While the player is still logging in, wait.
 	while not app.Me do coroutine.yield(); end
-	
-	-- Lock out during PVP
-	local inInstance, instanceType = IsInInstance();
-	if inInstance and (instanceType == "pvp" or instanceType == "arena") then
-		while inInstance and (instanceType == "pvp" or instanceType == "arena") do
-			coroutine.yield();
-			inInstance, instanceType = IsInInstance();
-		end
-		--print("No longer PVPing.  (RefreshSaves) ");
-	--else 
-		--print("Definitely not PVPing. (RefreshSaves) " ..  (instanceType or "??"));
-	end
 	
 	-- While the player is still waiting for information, wait.
 	-- NOTE: Usually, this is only 1 wait.
@@ -9698,13 +9680,6 @@ end):Show();
 				
 				-- While the player is in combat, wait for combat to end.
 				while InCombatLockdown() do coroutine.yield(); end
-				
-				-- Lock out during PVP
-				local inInstance, instanceType = IsInInstance();
-				if inInstance and (instanceType == "pvp" or instanceType == "arena") then
-					app:GetWindow("CurrentInstance"):Hide();
-					return;
-				end
 				
 				-- Acquire the new map ID.
 				local mapID = app.GetCurrentMapID();
