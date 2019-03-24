@@ -11,30 +11,34 @@ profession(171, {	-- Alchemy
 					["g"] = {
 						{
 							["recipeID"] = 4508,--[[Discolored Healing Potion]]
-							["u"] = 1,
+							["u"] = 7,
 						},
 						{
 							["recipeID"] = 24366,--[[Greater Dreamless Sleep Potion]]
-							["u"] = 1,
+							["u"] = 2,
 						},
 						{
 							["recipeID"] = 17577,--[[Greater Arcane Protection Potion]]
-							["u"] = 1,
+							["u"] = 7,
 						},
 						{
 							["recipeID"] = 17575,--[[Greater Frost Protection Potion]]
-							["u"] = 1,
+							["u"] = 7,
 						},
 						{
 							["recipeID"] = 17578,--[[Greater Shadow Protection Potion]]
-							["u"] = 1,
+							["u"] = 7,
 						},
 						{
 							["recipeID"] = 4942,--[[Lesser Stoneshield Potion]]
-							["u"] = 1,
+							["u"] = 7,
 						},
 						{
 							["recipeID"] = 11452,--[[Restorative Potion]]
+							["u"] = 1,										
+						},
+						{
+							["recipeID"] = 17579,--[[Greater Holy Protection Potion]]
 							["u"] = 1,
 						},
 					},
@@ -48,22 +52,20 @@ profession(171, {	-- Alchemy
 						},
 						{
 							["recipeID"] = 24365,--[[Mageblood Elixir]]
-							["u"] = 1,
+							["u"] = 2,
 						},
 						{
 							["recipeID"] = 24368,--[[Mighty Troll's Blood Elixir]]
-							["u"] = 1,
+							["u"] = 2,
+						},
+						{
+							["recipeID"] = 26277,--[[Elixir of Greater Firepower]]
+							["u"] = 7,
 						},
 					},
 				},
 				{
 					["categoryID"] = 640,--[[Flasks]]
-					["g"] = {
-						{
-							["recipeID"] = 17637,--[[Flask of Supreme Power]]
-							["u"] = 1,
-						},
-					},
 				},
 				{
 					["categoryID"] = 641,--[[Transmutation]]
@@ -79,7 +81,7 @@ profession(171, {	-- Alchemy
 					["g"] = {
 						{
 							["recipeID"] = 24266,--[[Gurubashi Mojo Madness]]
-							["u"] = 1,
+							["u"] = 2,
 						}
 					},
 				},
