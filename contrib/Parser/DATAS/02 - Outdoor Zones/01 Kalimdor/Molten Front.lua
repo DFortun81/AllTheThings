@@ -78,37 +78,62 @@ _.Zones =
 							}),
 						}),
 						n(-17, { -- Quests
+							{	-- Additional Armaments
+								["questID"] = 29281,
+								["qg"] = 53214,	-- Damek Bloombeard
+								["coord"] = { 47.0, 90.0, 338 },
+								["sourceQuests"] = {
+									29181,	-- Druids of the Talon
+									29214,	-- The Shadow Wardens
+								},
+							},
 							{	-- Agressive Growth
-								["questID"] = 29139,	-- Aggressive Growth
+								["questID"] = 29139,
+								["qg"] = 52467,	-- Rayne Feathersong
+								["coord"] = { 48.5, 86.2, 338 },
+								["isDaily"] = true,
+								["sourceQuest"] = 29201,	-- Through the Gates of Hell
+								["groups"] = {
+									currency(416),	-- Mark of the World Tree x2
+								},
 							},
 							{	-- Breach in the Defenses
-								["questID"] = 29137,	-- Breach in the Defenses
-								["sourceQuest"] = 29201,	-- Through the Gates of Hell
+								["questID"] = 29137,
 								["qg"] = 52824,	-- General Taldris Moonfall
-								["coord"] = { 45.5, 85.8 },
+								["coord"] = { 45.5, 85.8, 338 },
 								["isDaily"] = true,
+								["sourceQuest"] = 29201,	-- Through the Gates of Hell
 								["groups"] = {
 									currency(416),	-- Mark of the World Tree
 								},
 							},
 							{	-- Burn Victims
-								["questID"] = 29138,	-- Burn Victims
-								["sourceQuest"] = 29201,	-- Through the Gates of Hell
+								["questID"] = 29138,
 								["qg"] = 53080,	-- Captain Irontree
-								["coord"] = { 46.8, 90.0 },
+								["coord"] = { 46.8, 90.0, 338 },
 								["isDaily"] = true,
+								["sourceQuest"] = 29201,	-- Through the Gates of Hell
 								["groups"] = {
 									currency(416),	-- Mark of the World Tree
 								},
 							},
+							{	-- Calling the Ancients
+								["questID"] = 29283,
+								["qg"] = 53882,	-- Varlan Highbough
+								["coord"] = { 44.4, 88.4, 338 },
+								["sourceQuests"] = {
+									29181,	-- Druids of the Talon
+									29214,	-- The Shadow Wardens
+								},
+							},
 							{	-- Druids of the Talon
-								["questID"] = 29181,	-- Druids of the Talon
-								["sourceQuest"] = 29201,	-- Through the Gates of Hell
+								["questID"] = 29181,
 								["qg"] = 52135,	-- Malfurion Stormrage
-								["coord"] = { 47.0, 91.3 },
+								["coord"] = { 47.0, 91.3, 338 },
+								["sourceQuest"] = 29201,	-- Through the Gates of Hell
 								["groups"] = {
-									{
-										["achievementID"] = 5866,	-- The Molten Front Offensive
+									{	-- The Molten Front Offensive
+										["achievementID"] = 5866,
 										["criteriaID"] = 3,	-- Recruit the Druids of the Talon
 									},
 								},
@@ -124,69 +149,83 @@ _.Zones =
 								["coord"] = { 51.4, 25.7, 338 },
 								["sourceQuest"] = 29330,	-- Elemental Bonds: Fury
 							},
+							{	-- Filling the Moonwell
+								["questID"] = 29279,
+								["qg"] = 53881,	-- Ayla Shadowstorm
+								["coord"] = { 47.0, 90.0, 338 },
+								["sourceQuests"] = {
+									29181,	-- Druids of the Talon
+									29214,	-- The Shadow Wardens
+								},
+							},
 							{	-- Hostile Elements
-								["questID"] = 29179,	-- Hostile Elements
-								["sourceQuest"] = 29201,	-- Through the Gates of Hell
+								["questID"] = 29179,
 								["qg"] = 52824,	-- General Taldris Moonfall
-								["coord"] = { 45.5, 85.8 },
+								["coord"] = { 45.5, 85.8, 338 },
 								["isDaily"] = true,
+								["sourceQuest"] = 29201,	-- Through the Gates of Hell
 								["groups"] = {
 									currency(416),	-- Mark of the World Tree
 								},
 							},
 							{	-- Some Like It Hot
-								["questID"] = 29299,	-- Some Like It Hot
-								["qg"] = 52489,			-- Avrilla
-								["coords"] = {
-									{ 50.64, 87.31, 338 },
+								["questID"] = 29299,
+								["qg"] = 52489,	-- Avrilla
+								["coord"] = { 50.64, 87.31, 338 },
+							},
+							{	-- The Harder They Fall
+								["questID"] = 29141,
+								["qg"] = 52824,	-- General Taldris Moonfall
+								["coord"] = { 45.5, 85.8, 338 },
+								["isDaily"] = true,
+								["sourceQuest"] = 29201,	-- Through the Gates of Hell
+								["groups"] = {
+									currency(416),	-- Mark of the World Tree x2
 								},
 							},
 							{	-- The Shadow Wardens
-								["questID"] = 29214,	-- The Shadow Wardens
-								["sourceQuest"] = 29201,	-- Through the Gates of Hell
+								["questID"] = 29214,
 								["qg"] = 52135,	-- Malfurion Stormrage
-								["coord"] = { 47.0, 91.3 },
+								["coord"] = { 47.0, 91.3, 338 },
+								["sourceQuest"] = 29201,	-- Through the Gates of Hell
 								["groups"] = {
-									{
-										["achievementID"] = 5866,	-- The Molten Front Offensive
+									{	-- The Molten Front Offensive
+										["achievementID"] = 5866,
 										["criteriaID"] = 4,	-- Recruit the Shadow Wardens
 									},
 								},
 							},
 							{	-- Traitors Return
-								["questID"] = 29142,	-- Traitors Return
-								["sourceQuest"] = 29201,	-- Through the Gates of Hell
+								["questID"] = 29142,
 								["qg"] = 52824,	-- General Taldris Moonfall
-								["coord"] = { 45.5, 85.8 },
+								["coord"] = { 45.5, 85.8, 338 },
 								["isDaily"] = true,
+								["sourceQuest"] = 29201,	-- Through the Gates of Hell
 								["groups"] = {
 									currency(416),	-- Mark of the World Tree
 								},
 							},
 							{	-- Wisp Away
-								["questID"] = 29143,	-- Wisp Away
-								["sourceQuest"] = 29201,	-- Through the Gates of Hell
+								["questID"] = 29143,
 								["qg"] = 52467,	-- Rayne Feathersong
-								["coord"] = { 48.5, 86.2 },
+								["coord"] = { 48.5, 86.2, 338 },
 								["isDaily"] = true,
+								["sourceQuest"] = 29201,	-- Through the Gates of Hell
 								["groups"] = {
 									currency(416),	-- Mark of the World Tree
 								},
 							},
 							
 							--[[
+							
 							qg(53196, q(29263)),	-- A Bitter Pill
 							qg(52493, q(29244)),	-- A Lieutenant of Flame
-							qg(53214, q(29281)),	-- Additional Armaments
-							qg(52467, q(29139)),	-- Aggressive Growth
 							
 							qg(54163, q(29297)),	-- Bye Bye Burdy
-							qg(53882, q(29283)),	-- Calling the Ancients
 							qg(52921, q(29160)),	-- Egg-stinction
 							qg(52489, q(29255)),	-- Embergris
 							qg(52494, q(29210)),	-- Enduring the Heat
 							qg(52478, q(29275)),	-- Fandral's Methods
-							qg(53881, q(29279)),	-- Filling the Moonwell
 							qg(52444, q(29265)),	-- Fire Flowers
 							qg(52491, q(29290)),	-- Fire in the Skies
 							qg(52444, q(29264)),	-- Flamewakers of the Molten Flow
@@ -213,7 +252,6 @@ _.Zones =
 							qg(52824, q(29304)),	-- The Dogs of War
 							qg(52477, q(29276)),	-- The Flame Spider Queen
 							qg(52824, q(29205)),	-- The Forlorn Spire
-							qg(52824, q(29141)),	-- The Harder They Fall
 							o(208535, { -- Dried Acorn
 								q(29245),	-- The Mysterious Seed
 							}),

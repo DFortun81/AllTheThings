@@ -379,6 +379,13 @@ _.ExpansionFeatures =
 					}),
 					m(715, { -- Emerald Dreamway
 						["groups"] = {
+							n(-17, {	-- Quests
+								{	-- Communing With Malorne
+									["questID"] = 42045,
+									["qg"] = 106204,	-- Archdruid Hamuul Runetotem
+									["classes"]= { 11 }, 	-- Druid
+								},
+							}),
 							n(-159, { -- Daily Dreamway Event Roll
 								["isDaily"] = true,
 								["isBreadcrumb"] = true,

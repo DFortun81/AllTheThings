@@ -147,7 +147,9 @@ _.Zones =
 					},
 					{	-- Aid of the Ancients
 						["questID"] = 29284,
-						["qg"] = 52669,	-- 
+						["qg"] = 52669,	-- Matoclaw
+						["coord"] = { 27.1, 62.5, 198 },
+						["sourceQuest"] = 29283,	-- Calling the Ancients
 					},
 					{	-- An Ancient Awakens
 						["questID"] = 25520,
@@ -173,7 +175,11 @@ _.Zones =
 						["questID"] = 25663,
 						["qg"] = 41005,	-- Choluna
 						["coord"] = { 44.4, 46.2, 198 },
-						["sourceQuest"] = 25584,	-- The Return of the Ancients
+						["sourceQuests"] = {
+							27874,	-- Aviana's Legacy
+							25584,	-- The Return of the Ancients
+							25985,	-- Wings Over Mount Hyjal
+						},
 					},
 					{	-- Attack on the Roost
 						["questID"] = 44877,
@@ -198,13 +204,19 @@ _.Zones =
 							45532,	-- Mother's Orders
 						},
 					},
-					{	-- Aviana's Legacy (add'l QGs 46987 and 46998)
+					{	-- Aviana's Legacy
 						["questID"] = 27874,
-						["qg"] = 40289,	-- 
+						["qg"] = 40289,	-- Ysera
+						["coord"] = { 62.0, 24.8, 198 },
+						["sourceQuest"] = 25611, -- Return from the Firelands
+						["isBreadcrumb"] = true,
 					},
 					{	-- Between the Trees
 						["questID"] = 29125,
-						["qg"] = 52669,	-- 
+						["qg"] = 52669,	-- Matoclaw
+						["isDaily"] = true,
+						["coord"] = { 27.1, 62.5, 198 },
+						["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
 					},
 					{	-- Black Heart of Flame
 						["questID"] = 25428,
@@ -237,7 +249,10 @@ _.Zones =
 					},
 					{	-- Call the Flock
 						["questID"] = 29147,
-						["qg"] = 52669,	-- 
+						["qg"] = 52669,	-- Matoclaw
+						["isDaily"] = true,
+						["coord"] = { 27.1, 62.5, 198 },
+						["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
 					},
 					{	-- Calling for Reinforcements
 						["questID"] = 29199,
@@ -284,7 +299,7 @@ _.Zones =
 					},
 					{	-- Cleaning House
 						["questID"] = 25278,
-						["qg"] = 39433,	-- 
+						["qg"] = 39433,	-- Ian Duran
 						["races"] = ALLIANCE_ONLY,
 					},
 					{	-- Codex of Shadows
@@ -298,11 +313,6 @@ _.Zones =
 						["qg"] = 40289,	-- Ysera
 						["coord"] = { 62.0, 24.8, 198 },
 						["sourceQuest"] = 25653,	-- The Ancients are With Us
-					},
-					{	-- Communing With Malorne (QG in Emerald Dreamway)
-						["questID"] = 42045,
-						["qg"] = 106204,	-- 
-						["classes"]= { 11 }, 	-- Druid
 					},
 					{	-- Crushing the Cores
 						["questID"] = 25577,
@@ -399,7 +409,7 @@ _.Zones =
 							i(65661),	-- Blue Mini Jouster
 						},
 					},
-					{	-- Elemental Bonds: The Vow (QG unknown, possibly 54168)
+					{	-- Elemental Bonds: The Vow -- originally offered in the molten front map but is this also offered in mount hyjal?
 						["questID"] = 29331,
 						["groups"] = {
 							i(71268),	-- Mantle of Doubt
@@ -498,9 +508,17 @@ _.Zones =
 						["coord"] = { 44.1, 45.9, 198 },
 						["sourceQuest"] = 25810,	-- The Hatchery Must Burn
 					},
-					{	-- Flight of the Storm Crows (add'l QG 52669)
+					{	-- Flight of the Storm Crows
 						["questID"] = 29182,
-						["qg"] = 50068,	-- 
+						["sourceQuest"] = 29181,	-- Druids of the Talon
+						["coords"] = {
+							{ 27.1, 62.5, 198 },
+							{ 42.6, 45.6, 198 },
+						},
+						["qgs"] = {
+							50068,	-- Isara Riverstride
+							52669,	-- Matoclaw
+						},
 					},
 					{	-- Forged of Shadow and Flame
 						["questID"] = 25575,
@@ -555,7 +573,7 @@ _.Zones =
 					},
 					{	-- Goldrinn's Ferocity
 						["questID"] = 25271,
-						["qg"] = 39433,	-- 
+						["qg"] = 39433,	-- Ian Duran
 						["races"] = ALLIANCE_ONLY,
 					},
 					{	-- Good News... and Bad News
@@ -636,7 +654,7 @@ _.Zones =
 							i(57383),	-- Sharptooth Signet
 						},
 					},
-					{	-- Inciting the Elements -- aa
+					{	-- Inciting the Elements
 						["questID"] = 25370,
 						["qg"] = 40278,	-- Tholo Whitehoof
 						["coord"] = { 64.0, 22.4, 198 },
@@ -649,8 +667,10 @@ _.Zones =
 					},
 					{	-- Into the Maw!
 						["questID"] = 25624,
-						["qg"] = 39432,	-- 
+						["qg"] = 39432,	-- Takrik Ragehowl
+						["coord"] = { 28.4, 29.8, 198 },
 						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 25355,	-- Lightning in a Bottle
 					},
 					{	-- Into the Maw!
 						["questID"] = 25617,
@@ -661,12 +681,12 @@ _.Zones =
 					},
 					{	-- Into the Maw!
 						["questID"] = 25623,
-						["qg"] = 39433,	-- 
+						["qg"] = 39433,	-- Ian Duran
 						["races"] = ALLIANCE_ONLY,
 					},
 					{	-- Into the Maw!
 						["questID"] = 25618,
-						["qg"] = 39627,	-- 
+						["qg"] = 39627,	-- Spirit of Goldrinn
 						["races"] = ALLIANCE_ONLY,
 					},
 					{	-- Last Stand at Whistling Grove
@@ -692,7 +712,7 @@ _.Zones =
 					},
 					{	-- Lightning in a Bottle
 						["questID"] = 25353,
-						["qg"] = 39433,	-- 
+						["qg"] = 39433,	-- Ian Duran
 						["races"] = ALLIANCE_ONLY,
 					},
 					{	-- Lone Wolf
@@ -782,7 +802,9 @@ _.Zones =
 					},
 					{	-- Nourishing Waters
 						["questID"] = 29280,
-						["qg"] = 52669,	-- 
+						["qg"] = 52669,	-- Matoclaw
+						["coord"] = { 27.1, 62.5, 198 },
+						["sourceQuest"] = 29279,	-- Filling the Moonwell
 					},
 					{	-- Oh, Deer!
 						["questID"] = 25392,
@@ -829,7 +851,10 @@ _.Zones =
 					},
 					{	-- Perfecting Your Howl
 						["questID"] = 29164,
-						["qg"] = 52669,	-- 
+						["qg"] = 52669,	-- Matoclaw
+						["coord"] = { 27.1, 62.5, 198 },
+						["isDaily"] = true,
+						["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
 					},
 					{	-- Physical Training: Forced Labor
 						["questID"] = 25509,
@@ -854,7 +879,7 @@ _.Zones =
 						["coord"] = { 57.1, 55.9, 198 },
 						["sourceQuest"] = 25881,	-- Lost Wardens
 					},
-					{	-- Protect the World Tree -- aa
+					{	-- Protect the World Tree
 						["questID"] = 25317,
 						["qg"] = 40289,	-- Ysera
 						["coord"] = { 62.0, 24.8, 198 },
@@ -930,14 +955,16 @@ _.Zones =
 						["coord"] = { 26.3, 41.9, 198 },
 						["sourceQuest"] = 25617,	-- Into the Maw!
 					},
-					{	-- Releasing the Pressure
+					{	-- Releasing the Pressure -- todo: unknown source quest
 						["questID"] = 29248,
 						["qg"] = 52986,	-- Dorda'en Nightweaver
+						["coord"] = { 27.5, 62.5, 198 },
 						["isDaily"] = true,
 					},
-					{	-- Relieving the Pain
+					{	-- Relieving the Pain -- todo: unknown source quest
 						["questID"] = 29246,
 						["qg"] = 52986,	-- Dorda'en Nightweaver
+						["coord"] = { 27.5, 62.5, 198 },
 						["isDaily"] = true,
 					},
 					{	-- Return from the Firelands
@@ -1056,7 +1083,9 @@ _.Zones =
 					{	-- Supplies for the Other Side
 						["questID"] = 29166,
 						["qg"] = 52669,	-- Matoclaw
+						["coord"] = { 27.1, 62.5, 198 },
 						["isDaily"] = true,
+						["sourceQuest"] = 29203,	-- Into the Depths
 					},
 					{	-- Sweeping the Shelf
 						["questID"] = 25352,
@@ -1081,10 +1110,6 @@ _.Zones =
 							i(57366),	-- Girdle of the Ancient Wolf
 							i(57369),	-- Goldrinn's Purifier
 						},
-					},
-					{	-- Talon Terror (QG in The Dreamgrove)
-						["questID"] = 44869,
-						["qg"] = 106299,	-- 
 					},
 					{	-- The Ancients are With Us
 						["questID"] = 25653,
@@ -1119,7 +1144,10 @@ _.Zones =
 					},
 					{	-- The Call of the Pack
 						["questID"] = 29165,
-						["qg"] = 52669,	-- 
+						["qg"] = 52669,	-- Matoclaw
+						["coord"] = { 27.1, 62.5, 198 },
+						["isDaily"] = true,
+						["sourceQuest"] = 29164,	-- Perfecting Your Howl
 					},
 					{	-- The Captured Scout
 						["questID"] = 25320,
@@ -1127,7 +1155,7 @@ _.Zones =
 						["coord"] = { 48.4, 18.9, 198 },
 						["sourceQuest"] = 25430,	-- Emerald Allies
 					},
-					{	-- The Earth Rises -- aa
+					{	-- The Earth Rises
 						["questID"] = 25460,
 						["qg"] = 39925,	-- Anren Shadowseeker
 						["coord"] = { 63.9, 22.6, 198 },
@@ -1173,7 +1201,9 @@ _.Zones =
 					},
 					{	-- The Fires of Mount Hyjal
 						["questID"] = 25630,
-						["qg"] = 39434,	-- 
+						["qg"] = 39434,	-- Rio Duran
+						["coord"] = { 28.1, 29.8, 198 },
+						["isBreadcrumb"] = true,
 					},
 					{	-- The Flameseer's Staff
 						["questID"] = 25472,
@@ -1214,7 +1244,9 @@ _.Zones =
 					},
 					{	-- The Hunt Begins
 						["questID"] = 29215,
-						["qg"] = 52669,	-- 
+						["qg"] = 52669,	-- Matoclaw
+						["coord"] = { 27.1, 62.5, 198 },
+						["sourceQuest"] = 29214,	-- The Shadow Wardens
 					},
 					{	-- The Last Living Lorekeeper
 						["questID"] = 25830,
@@ -1240,14 +1272,17 @@ _.Zones =
 						["qg"] = 40093,	-- Subjugated Inferno Lord
 						["sourceQuest"] = 25411,	-- A New Master
 					},
-					{	-- The Nordrassil Summit -- aa
+					{	-- The Nordrassil Summit
 						["questID"] = 29326,
 						["qg"] = 54313,	-- Thrall
 						["coord"] = { 60.6, 31.4, 198 },
 					},
 					{	-- The Power of Malorne
 						["questID"] = 29126,
-						["qg"] = 52669,	-- 
+						["qg"] = 52669,	-- Matoclaw
+						["coord"] = { 27.1, 62.5, 198 },
+						["isDaily"] = true,
+						["sourceQuest"] = 29125,	-- Between the Trees
 					},
 					{	-- The Protectors of Hyjal
 						["questID"] = 29128,
@@ -1307,7 +1342,7 @@ _.Zones =
 					},
 					{	-- The Shrine Reclaimed
 						["questID"] = 25280,
-						["qg"] = 39627,	-- 
+						["qg"] = 39627,	-- Spirit of Goldrinn
 						["races"] = ALLIANCE_ONLY,
 					},
 					{	-- The Shrine Reclaimed
@@ -1361,7 +1396,7 @@ _.Zones =
 					},
 					{	-- The Voice of Goldrinn
 						["questID"] = 25268,
-						["qg"] = 39427,	-- 
+						["qg"] = 39427,	-- Jadi Falaryn
 						["races"] = ALLIANCE_ONLY,
 					},
 					{	-- The Voice of Lo'Gosh
@@ -1381,10 +1416,11 @@ _.Zones =
 						["coord"] = { 42.1, 45.4, 198 },
 						["sourceQuest"] = 25584,	-- The Return of the Ancients
 					},
-					{	-- This Can Only Mean One Thing... -- aa
+					{	-- This Can Only Mean One Thing...
 						["questID"] = 28732,
 						["qg"] = 49444,	-- Finkle Einhorn
 						["coord"] = { 42.6, 28.1, 198 },
+						["isBreadcrumb"] = true,
 					},
 					{	-- Those Bears Up There
 						["questID"] = 29161,
@@ -1446,9 +1482,11 @@ _.Zones =
 						["coord"] = { 64.2, 53.5, 198 },
 						["sourceQuest"] = 25923,	-- Finish Nemesis
 					},
-					{	-- Treating the Wounds
+					{	-- Treating the Wounds -- todo: unknown source quest
 						["questID"] = 29247,
-						["qg"] = 52986,	-- 
+						["qg"] = 52986,	-- Dorda'en Nightweaver
+						["coord"] = { 27.5, 62.5, 198 },
+						["isDaily"] = true,
 					},
 					{	-- Trial By Fire
 						["questID"] = 25223,
@@ -1549,17 +1587,23 @@ _.Zones =
 						["coord"] = { 37.2, 56.1, 198 },
 						["sourceQuest"] = 25525,	-- Wave One
 					},
-					{	-- Well Armed
+					{	-- Well Armed -- todo: unknown source quest
 						["questID"] = 29282,
-						["qg"] = 52669,	-- 
+						["qg"] = 52669,	-- Matoclaw
+						["coord"] = { 27.1, 62.5, 198 },
 					},
 					{	-- Wings Aflame
 						["questID"] = 29148,
-						["qg"] = 52669,	-- 
+						["qg"] = 52669,	-- Matoclaw
+						["coord"] = { 27.1, 62.5, 198 },
+						["isDaily"] = true,
+						["sourceQuest"] = 29147,	-- Call the Flock
 					},
 					{	-- Wings Over Mount Hyjal
 						["questID"] = 25985,
-						["qg"] = 41005,	-- 
+						["qg"] = 41005,	-- Choluna
+						["coord"] = { 44.4, 46.2, 198 },
+						["isBreadcrumb"] = true,
 					},
 					{	-- Your New Identity
 						["questID"] = 25276,
