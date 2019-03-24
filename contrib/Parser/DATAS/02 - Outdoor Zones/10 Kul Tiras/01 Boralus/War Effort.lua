@@ -94,7 +94,7 @@ _.Zones =
 								}),
 								q(53414, {	-- Warfront: The Battle For Stromgarde [Tier 3]
 									["groups"] = {
-										i(164577, {	-- Warfronts Equipment Cache
+										i(164578, {	-- Warfronts Equipment Cache
 											["groups"] = bubbleDown({["modID"] = 6}, {
 												i(163891),	-- 7th Legionnaire's Aegis
 												i(163884),	-- 7th Legionnaire's Battle Hammer
