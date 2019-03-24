@@ -215,6 +215,7 @@ _.Zones =
 			},
 			["lvl"] = 1,	
 			["maps"] = {
+				180,	-- Emberstone Mine
 				182,	-- Greymane Manor
 			},
 			["icon"] = "Interface\\Icons\\achievement_battleground_battleforgilneas",	
