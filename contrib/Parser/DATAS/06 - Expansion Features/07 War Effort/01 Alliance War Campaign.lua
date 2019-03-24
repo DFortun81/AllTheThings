@@ -9,8 +9,9 @@ _.ExpansionFeatures =
 		["g"] = bubbleDown({["races"] = ALLIANCE_ONLY}, {
 			na(-236, {	-- Alliance War Campaign
 				["g"] = bubbleDown({["races"] = ALLIANCE_ONLY}, {
-					{	-- Ready for War
+					a(ach(12510, {	-- Ready for War
 						["achievementID"] = 12510,	-- Ready for War
+						-- ["collectible"] = false,
 						["races"] = ALLIANCE_ONLY,
 						["maps"] = { 1161 },	--  Boralus
 						["lvl"] = 110,
@@ -831,7 +832,7 @@ _.ExpansionFeatures =
 								["sourceQuests"] = { 52790 },	-- An End to the Killing
 							}),
 						},
-					},
+					})),
 					{	-- Tides of Vengeance
 						["achievementID"] = 13467,	-- Tides of Vengeance
 						["races"] = ALLIANCE_ONLY,
