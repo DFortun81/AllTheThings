@@ -5,8 +5,7 @@
 
 _.ExpansionFeatures =
 {
-	{	-- War Effort
-		["npcID"] = -10057,	-- War Effort
+	na(-10057, {	-- War Effort
 		["g"] = bubbleDown({["races"] = ALLIANCE_ONLY}, {
 			na(-236, {	-- Alliance War Campaign
 				["g"] = bubbleDown({["races"] = ALLIANCE_ONLY}, {
@@ -849,5 +848,5 @@ _.ExpansionFeatures =
 				}),
 			}),
 		}),
-	},
+	}),
 };
