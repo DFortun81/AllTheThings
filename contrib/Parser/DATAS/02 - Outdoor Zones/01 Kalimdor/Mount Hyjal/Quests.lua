@@ -9,6 +9,7 @@ _.Zones =
 				n(-17, {	-- Quests
 					--[[
 						25829 - tracking quest - goldrinn hub complete
+						27872 - tortolla hub complete
 						27873 - aviana hub complete
 					]]--
 					{	-- Coming Down the Mountain
@@ -75,7 +76,9 @@ _.Zones =
 					},
 					{	-- A Champion's Collar
 						["questID"] = 25494,
-						["qg"] = 39406,	-- 
+						["qg"] = 39406,	-- Instructor Devoran
+						["coord"] = { 90.1, 56.3, 198 },
+						["sourceQuest"] = 25294,	-- Walking the Dog
 					},
 					{	-- A Gap in Their Armor
 						["questID"] = 25758,
@@ -127,6 +130,8 @@ _.Zones =
 					{	-- Aessina's Miracle
 						["questID"] = 25372,
 						["qg"] = 41381,	-- Nordu
+						["coord"] = { 27.3, 55.5, 198 },
+						["sourceQuest"] = 25842,	-- Firefight
 						["groups"] = {
 							i(57267),	-- Rebirth Spaulders
 							i(57266),	-- Gloves of Nurtured Truth
@@ -136,7 +141,9 @@ _.Zones =
 					},
 					{	-- Agility Training: Run Like Hell!
 						["questID"] = 25499,
-						["qg"] = 39413,	-- 
+						["qg"] = 39413,	-- Instructor Mylva
+						["coord"] = { 89.5, 59.0, 198 },
+						["sourceQuest"] = 25509,	-- Physical Training: Forced Labor
 					},
 					{	-- Aid of the Ancients
 						["questID"] = 29284,
@@ -144,7 +151,12 @@ _.Zones =
 					},
 					{	-- An Ancient Awakens
 						["questID"] = 25520,
-						["qg"] = 40341,	-- 
+						["qg"] = 40341,	-- Tortolla
+						["coord"] = { 24.6, 55.6, 198 },
+						["sourceQuests"] = {
+							25514,	-- Breaking the Bonds
+							25519,	-- Children of Tortolla
+						},
 					},
 					{	-- An Ancient Reborn
 						["questID"] = 25807,
@@ -207,15 +219,21 @@ _.Zones =
 					},
 					{	-- Breaking the Bonds
 						["questID"] = 25514,
-						["qg"] = 40341,	-- 
+						["qg"] = 40341,	-- Tortolla
+						["coord"] = { 24.6, 55.6, 198 },
+						["sourceQuest"] = 25510,	-- Tortolla Speaks
 					},
 					{	-- Breakthrough
 						["questID"] = 25899,
-						["qg"] = 41507,	-- 
+						["qg"] = 41507,	-- Niden
+						["coord"] = { 42.2, 60.5, 198 },
+						["sourceQuest"] = 25843,	-- Tortolla's Revenge
 					},
 					{	-- Brood of Evil
 						["questID"] = 25552,
-						["qg"] = 40816,	-- 
+						["qg"] = 40816,	-- Aronus
+						["coord"] = { 72.2, 73.9, 198 },
+						["sourceQuest"] = 25644,	-- The Twilight Egg
 					},
 					{	-- Call the Flock
 						["questID"] = 29147,
@@ -238,6 +256,8 @@ _.Zones =
 					{	-- Children of Tortolla
 						["questID"] = 25519,
 						["qg"] = 40341,	-- Tortolla
+						["coord"] = { 24.6, 55.6, 198 },
+						["sourceQuest"] = 25510,	-- Tortolla Speaks
 						["groups"] = {
 							i(57280),	-- Kilt of Reborn Future
 							i(57279),	-- Boots of Infinite Possibility
@@ -275,7 +295,9 @@ _.Zones =
 					},
 					{	-- Commander Jarod Shadowsong
 						["questID"] = 25597,
-						["qg"] = 40289,	-- 
+						["qg"] = 40289,	-- Ysera
+						["coord"] = { 62.0, 24.8, 198 },
+						["sourceQuest"] = 25653,	-- The Ancients are With Us
 					},
 					{	-- Communing With Malorne (QG in Emerald Dreamway)
 						["questID"] = 42045,
@@ -296,6 +318,8 @@ _.Zones =
 					{	-- Death to the Broodmother
 						["questID"] = 25553,
 						["qg"] = 40816,	-- Aronus
+						["coord"] = { 72.2, 73.9, 198 },
+						["sourceQuest"] = 25552,	-- Brood of Evil
 						["groups"] = {
 							i(57302),	-- Maggotproof Gloves
 							i(57301),	-- Matriarch-Hide Wristguards
@@ -424,6 +448,11 @@ _.Zones =
 					{	-- Finish Nemesis
 						["questID"] = 25923,
 						["qg"] = 41498,	-- Garunda Mountainpeak
+						["coord"] = { 64.2, 53.5, 198 },
+						["sourceQuests"] = {
+							25915,	-- The Strength of Tortolla
+							25910,	-- The Time for Mercy has Passed
+						},
 						["groups"] = {
 							i(57263),	-- Liberating Crown
 							i(57262),	-- Leggings of the Vanquished Usurper
@@ -439,7 +468,9 @@ _.Zones =
 					},
 					{	-- Firefight
 						["questID"] = 25842,
-						["qg"] = 41381,	-- 
+						["qg"] = 41381,	-- Nordu
+						["coord"] = { 27.3, 55.5, 198 },
+						["sourceQuest"] = 25830,	-- The Last Living Lorekeeper
 					},
 					{	-- Flamebreaker
 						["questID"] = 25323,
@@ -453,6 +484,8 @@ _.Zones =
 					{	-- Flames from Above
 						["questID"] = 25574,
 						["qg"] = 40278,	-- Tholo Whitehoof
+						["coord"] = { 64.0, 22.4, 198 },
+						["sourceQuest"] = 25370,	-- Inciting the Elements
 						["groups"] = {
 							i(57296),	-- Girdle of Nullified Infiltration
 							i(57295),	-- Hornblower's Legguards
@@ -532,17 +565,22 @@ _.Zones =
 					},
 					{	-- Graduation Speech
 						["questID"] = 25315,
-						["qg"] = 39413,	-- 
+						["qg"] = 39413,	-- Instructor Mylva
+						["coord"] = { 59.5, 59.0, 198 },
+						["sourceQuest"] = 25601,	-- Head of the Class
 					},
 					{	-- Grudge Match
 						["questID"] = 25496,
-						["qg"] = 39406,	-- 
+						["qg"] = 39406,	-- Instructor Devoran
+						["coord"] = { 90.1, 56.3, 198 },
+						["sourceQuest"] = 25494,	-- A Champion's Collar
 					},
 					{	-- Guardians of Hyjal: Firelands Invasion!
 						["questID"] = 29389,
 						["qg"] = 52838,	-- Archdruid Hamuul Runetotem
 						["lvl"] = 85,
-						["coord"] = { 19.5, 37.9, 198 },
+						["coord"] = { 19.5, 37.8, 198 },
+						["sourceQuest"] = 25372,	-- Aessina's Miracle
 						["isBreadcrumb"] = true,
 					},
 					{	-- Harrying the Hunters
@@ -553,7 +591,9 @@ _.Zones =
 					},
 					{	-- Hell's Shells
 						["questID"] = 25507,
-						["qg"] = 39858,	-- 
+						["qg"] = 39858,	-- Archdruid Hamuul Runetotem
+						["coord"] = { 27.1, 62.6, 198 },
+						["sourceQuest"] = 25493,	-- Fresh Bait
 					},
 					{	-- Howling Mad
 						["questID"] = 25270,
@@ -565,6 +605,8 @@ _.Zones =
 					{	-- Hyjal Recycling Program
 						["questID"] = 25901,
 						["qg"] = 41497,	-- Logram
+						["coord"] = { 56.8, 56.0, 198 },
+						["sourceQuest"] = 25904,	-- The Hammer and the Key -- verify
 						["groups"] = {
 							i(57347),	-- Bloodbolt Crossbow
 							i(57345),	-- Razorproof Greaves
@@ -579,7 +621,9 @@ _.Zones =
 					},
 					{	-- In Bloom
 						["questID"] = 25224,
-						["qg"] = 39442,	-- 
+						["qg"] = 39442,	-- Condenna the Pitiless
+						["coord"] = { 76.9, 62.0, 198 },
+						["sourceQuest"] = 25276,	-- Your New Identity
 					},
 					{	-- In the Rear With the Gear
 						["questID"] = 25234,
@@ -599,7 +643,9 @@ _.Zones =
 					},
 					{	-- Into Slashing Winds
 						["questID"] = 29335,
-						["qg"] = 54312,	-- 
+						["qg"] = 54312,	-- Aggra
+						["coord"] = { 60.2, 30.1, 198 },
+						["sourceQuest"] = 29326,	-- The Nordrassil Summit
 					},
 					{	-- Into the Maw!
 						["questID"] = 25624,
@@ -654,11 +700,13 @@ _.Zones =
 						["qg"] = 115749,	-- Aviana
 						["lvl"] = 110,
 						["classes"]= { 11 },	-- Druid
-						["sourceQuest"]	= 44888,	-- Source Quest: Aviana's Grace
+						["sourceQuest"]	= 44888,	-- Aviana's Grace
 					},
 					{	-- Lost Wardens
 						["questID"] = 25881,
-						["qg"] = 41507,	-- 
+						["qg"] = 41507,	-- Niden
+						["coord"] = { 42.2, 60.5, 198 },
+						["sourceQuest"] = 25843,	-- Tortolla's Revenge
 					},
 					{	-- Lycanthoth the Corruptor
 						["questID"] = 25273,
@@ -684,15 +732,21 @@ _.Zones =
 					},
 					{	-- Magma Monarch
 						["questID"] = 25550,
-						["qg"] = 40772,	-- 
+						["qg"] = 40772,	-- Commander Jarod Shadowsong
+						["coord"] = { 72.0, 74.0, 198 },
+						["sourceQuest"] = 25549,	-- The Sanctum of the Prophets
 					},
 					{	-- Mental Training: Speaking the Truth to Power
 						["questID"] = 25299,
-						["qg"] = 39413,	-- 
+						["qg"] = 39413,	-- Instructor Mylva
+						["coord"] = { 89.5, 59.0, 198 },
+						["sourceQuest"] = 25499,	-- Agility Training: Run Like Hell!
 					},
 					{	-- Might of the Firelord
 						["questID"] = 25548,
 						["qg"] = 40772,	-- Commander Jarod Shadowsong
+						["coord"] = { 72.0, 74.0, 198 },
+						["sourceQuest"] = 25608,	-- Slash and Burn
 						["groups"] = {
 							i(57289),	-- Flamesear Leggings
 							i(57288),	-- Subjugator's Shoulderguards
@@ -703,7 +757,7 @@ _.Zones =
 						["questID"] = 45532,
 						["lvl"] = 110,
 						["classes"]= { 11 },	-- Druid
-						["sourceQuest"]	= 44869,	-- Source Quest: Talon Terror
+						["sourceQuest"]	= 44869,	-- Talon Terror
 						["qgs"] = {
 							115802,	-- Thisalee Crow
 							119982,	-- Druid of the Talon
@@ -750,11 +804,27 @@ _.Zones =
 					},
 					{	-- Outhouse Hideout
 						["objectID"] = 202701,
+						["coord"] = { 88.2, 58.5, 198 },
 						["groups"] = {
-							q(25296),	-- Gather the Intelligence
-							q(25601),	-- Head of the Class
-							q(25308),	-- Seeds of Discord
-							q(25314),	-- Speech Writing for Dummies
+							{	-- Gather the Intelligence
+								["questID"] = 25296,
+								["sourceQuest"] = 25291,	-- Twilight Training
+							},
+							{	-- Head of the Class
+								["questID"] = 25601,
+								["sourceQuest"] = 25314,	-- Speech Writing for Dummies
+							},
+							{	-- Seeds of Discord
+								["questID"] = 25308,
+								["sourceQuest"] = 25296,	-- Gather the Intelligence
+							},
+							{	-- Speech Writing for Dummies
+								["questID"] = 25314,
+								["sourceQuests"] = {
+									25310,	-- The Greater of Two Evils
+									25311,	-- Twilight Territory
+								},
+							},
 						},
 					},
 					{	-- Perfecting Your Howl
@@ -763,11 +833,15 @@ _.Zones =
 					},
 					{	-- Physical Training: Forced Labor
 						["questID"] = 25509,
-						["qg"] = 39413,	-- 
+						["qg"] = 39413,	-- Instructor Mylva
+						["coord"] = { 89.5, 59.0, 198 },
+						["sourceQuest"] = 25291,	-- Twilight Training
 					},
 					{	-- Prepping the Soil
 						["questID"] = 25502,
 						["qg"] = 40331,	-- Rayne Feathersong
+						["coord"] = { 27.0, 63.0, 198 },
+						["sourceQuest"] = 25492,	-- Firebreak
 						["groups"] = {
 							i(57349),	-- Helm of the Mendicant
 							i(57348),	-- Flameward Cloak
@@ -776,7 +850,9 @@ _.Zones =
 					},
 					{	-- Pressing the Advantage
 						["questID"] = 25886,
-						["qg"] = 41492,	-- 
+						["qg"] = 41492,	-- Captain Irontree
+						["coord"] = { 57.1, 55.9, 198 },
+						["sourceQuest"] = 25881,	-- Lost Wardens
 					},
 					{	-- Protect the World Tree -- aa
 						["questID"] = 25317,
@@ -796,8 +872,12 @@ _.Zones =
 					},
 					{	-- Pure Twilight Egg
 						["objectID"] = 207359,
+						["coord"] = { 59.1, 83.8, 198 },
 						["groups"] = {
-							q(25644),	-- The Twilight Egg
+							{	-- The Twilight Egg
+								["questID"] = 25644,
+								["sourceQuest"] = 25608,	-- Slash and Burn
+							},
 						},
 					},
 					{	-- Rage Against the Flames
@@ -870,7 +950,9 @@ _.Zones =
 					{	-- Return from the Firelands
 						["questID"] = 25611,
 						["qg"] = 40834,	-- Jordan Olafson
+						["coord"] = { 26.2, 41.9, 198 },
 						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 25600,	-- Forgemaster Pyrendius
 					},
 					{	-- Return to Alysra
 						["questID"] = 25424,
@@ -916,6 +998,8 @@ _.Zones =
 					{	-- Secrets of the Flame
 						["questID"] = 25554,
 						["qg"] = 40773,	-- Cenarius
+						["coord"] = { 71.9, 74.0, 198 },
+						["sourceQuest"] = 25608,	-- Slash and Burn
 					},
 					{	-- Seeds of Their Demise
 						["questID"] = 25408,
@@ -943,10 +1027,14 @@ _.Zones =
 					{	-- Signed in Blood
 						["questID"] = 25274,
 						["qg"] = 39621,	-- Elementalist Ortell
+						["coord"] = { 71.9, 58.0, 198 },
+						["sourceQuest"] = 25597,	-- Commander Jarod Shadowsong
 					},
 					{	-- Slash and Burn
 						["questID"] = 25608,
 						["qg"] = 40772,	-- Commander Jarod Shadowsong
+						["coord"] = { 72.2, 74.7, 198 },
+						["sourceQuest"] = 25531,	-- Twilight Riot
 					},
 					{	-- Smashing Through Ashes
 						["questID"] = 25490,
@@ -957,6 +1045,8 @@ _.Zones =
 					{	-- Spiritual Training: Mercy is for the Weak
 						["questID"] = 25309,
 						["qg"] = 39413,	-- Instructor Mylva
+						["coord"] = { 89.5, 59.0, 198 },
+						["sourceQuest"] = 25299,	-- Mental Training: Speaking the Truth to Power
 						["groups"] = {
 							i(57308),	-- Supplicant's Discarded Bracer
 							i(57307),	-- Belt of Swift Failure
@@ -998,17 +1088,23 @@ _.Zones =
 					},
 					{	-- The Ancients are With Us
 						["questID"] = 25653,
-						["qg"] = 41504,	-- 
+						["qg"] = 41504,	-- Tortolla
+						["coord"] = { 41.9, 60.7, 198 },
+						["sourceQuest"] = 25928,	-- Tortolla's Triumph
 					},
 					{	-- The Battle Is Won, The War Goes On
 						["questID"] = 27398,
-						["qg"] = 40772,	-- 
+						["qg"] = 40772,	-- Commander Jarod Shadowsong
+						["coord"] = { 71.9, 74.0, 198 },
 						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 25551,	-- The Firelord
 					},
 					{	-- The Battle Is Won, The War Goes On
 						["questID"] = 27399,
-						["qg"] = 40772,	-- 
+						["qg"] = 40772,	-- Commander Jarod Shadowsong
+						["coord"] = { 71.9, 74.0, 198 },
 						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 25551,	-- The Firelord
 					},
 					{	-- The Bears Up There
 						["questID"] = 25462,
@@ -1047,9 +1143,11 @@ _.Zones =
 						["coord"] = { 28.6, 30.2, 198 },
 						["sourceQuest"] = 25272,	-- Lycanthoth the Corruptor
 					},
-					{	-- The Fallen Guardian (add'l QG 46998 and 52793)
+					{	-- The Fallen Guardian
 						["questID"] = 29437,
-						["qg"] = 40289,	-- 
+						["qg"] = 40289,	-- Ysera
+						["coord"] = { 62.0, 24.9, 198 },
+						["sourceQuest"] = 29326,	-- The Nordrassil Summit -- verify
 					},
 					{	-- The Fate of Runetotem
 						["questID"] = 29202,
@@ -1061,6 +1159,12 @@ _.Zones =
 					{	-- The Firelord
 						["questID"] = 25551,
 						["qg"] = 40773,	-- Cenarius
+						["coord"] = { 71.9, 74.0, 198 },
+						["sourceQuests"] = {
+							25553,	-- Death to the Broodmother
+							25550,	-- Magma Monarch
+							25555,	-- The Gatekeeper
+						},
 						["groups"] = {
 							i(57275),	-- Hyjal Savior's Pendant
 							i(57276),	-- Hyjal Savior's Signet
@@ -1080,6 +1184,8 @@ _.Zones =
 					{	-- The Gatekeeper
 						["questID"] = 25555,
 						["qg"] = 40773,	-- Cenarius
+						["coord"] = { 71.9, 74.0, 198 },
+						["sourceQuest"] = 25554,	-- Secrets of the Flame
 						["groups"] = {
 							i(57299),	-- Torque of the Herald
 							i(57298),	-- Gatekeeper Treads
@@ -1087,11 +1193,18 @@ _.Zones =
 					},
 					{	-- The Greater of Two Evils
 						["questID"] = 25310,
-						["qg"] = 39413,	-- 
+						["qg"] = 39413,	-- Instructor Mylva
+						["coord"] = { 89.5, 59.0, 198 },
+						["sourceQuests"] = {
+							25496,	-- Grudge Match
+							25309,	-- Spiritual Training: Mercy is the for Weak
+						},
 					},
 					{	-- The Hammer and the Key
 						["questID"] = 25904,
-						["qg"] = 41504,	-- 
+						["qg"] = 41504,	-- Tortolla
+						["coord"] = { 41.9, 60.8, 198 },
+						["sourceQuest"] = 25843,	-- Tortolla's Revenge
 					},
 					{	-- The Hatchery Must Burn
 						["questID"] = 25810,
@@ -1103,9 +1216,24 @@ _.Zones =
 						["questID"] = 29215,
 						["qg"] = 52669,	-- 
 					},
-					{	-- The Last Living Lorekeeper (add'l QGs 46987, 46998, and 47002)
+					{	-- The Last Living Lorekeeper
 						["questID"] = 25830,
-						["qg"] = 40289,	-- 
+						["coords"] = {	-- there 4 possible coords here, one for each ancient. Need to determine the remaining two [Pr3vention]
+							{ 62.0, 24.8, 198 },
+							{ 27.0, 62.6, 198 },
+						},
+						["qgs"] = {
+							40289,	-- Ysera
+							46987,	-- Vision of Ysera
+							46998,	-- Vision of Ysera
+							47002,	-- Vision of Ysera
+						},
+						["sourceQuests"] = {
+							25520,	-- An Ancient Awakens
+							25382,	-- Disrupting the Rituals
+							29066,	-- Good News... and Bad News
+							25832,	-- Return to Aviana
+						},
 					},
 					{	-- The Name Never Spoken
 						["questID"] = 25412,
@@ -1173,7 +1301,9 @@ _.Zones =
 					},
 					{	-- The Sanctum of the Prophets
 						["questID"] = 25549,
-						["qg"] = 40772,	-- 
+						["qg"] = 40772,	-- Commander Jarod Shadowsong
+						["coord"] = { 72.0, 74.0, 198 },
+						["sourceQuest"] = 25548,	-- Might of the Firelord
 					},
 					{	-- The Shrine Reclaimed
 						["questID"] = 25280,
@@ -1189,11 +1319,15 @@ _.Zones =
 					},
 					{	-- The Strength of Tortolla
 						["questID"] = 25915,
-						["qg"] = 41498,	-- 
+						["qg"] = 41498,	-- Garunda Mountainpeak
+						["coord"] = { 64.2, 53.5, 198 },
+						["sourceQuest"] = 25906,	-- The Third Flamegate
 					},
 					{	-- The Third Flamegate
 						["questID"] = 25906,
 						["qg"] = 41504,	-- Tortolla
+						["coord"] = { 41.9, 60.7, 198 },
+						["sourceQuest"] = 25904,	-- The Hammer and the Key
 						["groups"] = {
 							i(57343),	-- Leggings of Fiery Travail
 							i(57342),	-- Rescuers Shoulderguards
@@ -1202,7 +1336,9 @@ _.Zones =
 					},
 					{	-- The Time for Mercy has Passed
 						["questID"] = 25910,
-						["qg"] = 41498,	-- 
+						["qg"] = 41498,	-- Garunda Mountainpeak
+						["coord"] = { 64.2, 53.5, 198 },
+						["sourceQuest"] = 25906,	-- The Third Flamegate
 					},
 					{	-- The Twilight Apocrypha
 						["objectID"] = 202712,
@@ -1274,10 +1410,10 @@ _.Zones =
 					},
 					{	-- Through the Gates of Hell
 						["questID"] = 29201,
-						["sourceQuest"] = 29200,	-- Leyara
 						["qg"] = 52845,	-- Malfurion Stormrage
-						["coord"] = { 27.0, 62.7, 198 },
 						["lvl"] = 85,
+						["coord"] = { 27.0, 62.7, 198 },
+						["sourceQuest"] = 29200,	-- Leyara
 						["groups"] = {
 							{	-- The Molten Front Offensive
 								["achievementID"] = 5866,
@@ -1287,22 +1423,28 @@ _.Zones =
 					},
 					{	-- To the Sanctuary!
 						["questID"] = 29196,
-						["sourceQuest"] = 29195,	-- A Ritual of Flame
 						["qg"] = 52845,	-- Malfurion Stormrage
-						["coord"] = { 27.3, 55.2, 198 },
 						["lvl"] = 85,
+						["coord"] = { 27.3, 55.2, 198 },
+						["sourceQuest"] = 29195,	-- A Ritual of Flame
 					},
 					{	-- Tortolla Speaks
 						["questID"] = 25510,
-						["qg"] = 39858,	-- 
+						["qg"] = 39858,	-- Archdruid Hamuul Runetotem
+						["coord"] = { 27.1, 62.6, 198 },
+						["sourceQuest"] = 25507,	-- Hell's Shells
 					},
-					{	-- Tortolla's Revenge (add'l QGs 41480 and 52838)
+					{	-- Tortolla's Revenge
 						["questID"] = 25843,
-						["qg"] = 39858,	-- 
+						["qg"] = 52838,	-- Archdruid Hamuul Runetotem
+						["coord"] = { 19.5, 37.8, 198 },
+						["sourceQuest"] = 25372,	-- Aessina's Miracle
 					},
 					{	-- Tortolla's Triumph
 						["questID"] = 25928,
-						["qg"] = 41498,	-- 
+						["qg"] = 41498,	-- Garunda Mountainpeak
+						["coord"] = { 64.2, 53.5, 198 },
+						["sourceQuest"] = 25923,	-- Finish Nemesis
 					},
 					{	-- Treating the Wounds
 						["questID"] = 29247,
@@ -1311,6 +1453,8 @@ _.Zones =
 					{	-- Trial By Fire
 						["questID"] = 25223,
 						["qg"] = 39442,	-- Condenna the Pitiless
+						["coord"] = { 76.9, 62.0, 198 },
+						["sourceQuest"] = 25276,	-- Your New Identity
 						["groups"] = {
 							i(57310),	-- Impressive Greaves
 							i(57309),	-- Chestplate of Exceptional Expectations
@@ -1339,15 +1483,28 @@ _.Zones =
 					},
 					{	-- Twilight Riot
 						["questID"] = 25531,
-						["qg"] = 40619,	-- 
+						["qg"] = 40619,	-- Commander Jarod Shadowsong
+						["coord"] = { 95.3, 51.3, 198 },
+						["sourceQuest"] = 25315,	-- Graduation Speech
 					},
 					{	-- Twilight Territory
 						["questID"] = 25311,
-						["qg"] = 39413,	-- 
+						["qg"] = 39413,	-- Instructor Mylva
+						["coord"] = { 89.5, 59.0, 198 },
+						["sourceQuests"] = {
+							25496,	-- Grudge Match
+							25309,	-- Spiritual Training: Mercy is the for Weak
+						},
 					},
 					{	-- Twilight Training
 						["questID"] = 25291,
-						["qg"] = 39442,	-- 
+						["qg"] = 39442,	-- Condenna the Pitiless
+						["coord"] = { 76.9, 62.0, 198 },
+						["sourceQuests"] = {
+							25224,	-- In Bloom
+							25223,	-- Trial By Fire
+							25330,	-- Waste of Flesh
+						},
 					},
 					{	-- Vigilance on Wings
 						["questID"] = 29177,
@@ -1358,7 +1515,9 @@ _.Zones =
 					},
 					{	-- Walking the Dog
 						["questID"] = 25294,
-						["qg"] = 39406,	-- 
+						["qg"] = 39406,	-- Instructor Devoran
+						["coord"] = { 90.1, 56.3, 198 },
+						["sourceQuest"] = 25291,	-- Twilight Training
 					},
 					{	-- War on the Twilight's Hammer
 						["questID"] = 25319,
@@ -1374,7 +1533,9 @@ _.Zones =
 					},
 					{	-- Waste of Flesh
 						["questID"] = 25330,
-						["qg"] = 39451,	-- 
+						["qg"] = 39451,	-- Instructor Cargall
+						["coord"] = { 77.0, 62.1, 198 },
+						["sourceQuest"] = 25276,	-- Your New Identity
 					},
 					{	-- Wave One
 						["questID"] = 25525,
@@ -1402,7 +1563,9 @@ _.Zones =
 					},
 					{	-- Your New Identity
 						["questID"] = 25276,
-						["qg"] = 39621,	-- 
+						["qg"] = 39621,	-- Elementalist Ortell
+						["coord"] = { 71.9, 58.0, 198 },
+						["sourceQuest"] = 25274,	-- Signed in Blood
 					},
 				}),
 			},

@@ -10,26 +10,40 @@ _.Instances = { tier(4, {	-- Cataclysm
 		["coord"] = { 71.77, 52.98, 34 },	-- Blackrock Caverns, Blackrock Caverns
 		["groups"] = {
 			n(-17, {	-- Quests
-				n(49476, { -- Finkle Einhorn
-					q(28732, {  -- This Can Only Mean One Thing...
-						["isBreadcrumb"] = true,
-					}),
-					q(28735, { -- To the Chamber of Incineration!
-						q(28737, { -- What Is This Place?
-							q(28738, { -- The Twilight Forge
-								q(28740, { -- Do My Eyes Deceive Me?
-									i(66889), -- Beauty's Cootie-Ridden Blankie
-									i(66887), -- Beauty Jr.'s Collar
-								}),
-								q(28741, { -- Ascendant Lord Obsidius
-									i(66886), -- Acid-Eaten Vest
-									i(66885), -- Diamond-Studden Helm
-									i(66884), -- Raz's Breastplate
-								}),
-							}),
-						}),
-					}),
-				}),
+				{	-- Ascendant Lord Obsidius
+					["questID"] = 28741,
+					["qg"] = 49476,	-- Finkle Einhorn
+					["sourceQuest"] = 28738,	-- The Twilight Forge
+					["groups"] = {
+						i(66886),	-- Acid-Eaten Vest
+						i(66885),	-- Diamond-Studden Helm
+						i(66884),	-- Raz's Breastplate
+					},
+				},
+				{	-- Do My Eyes Deceive Me?
+					["questID"] = 28740,
+					["qg"] = 49476,	-- Finkle Einhorn
+					["sourceQuest"] = 28738,	-- The Twilight Forge
+					["groups"] = {
+						i(66889),	-- Beauty's Cootie-Ridden Blankie
+						i(66887),	-- Beauty Jr.'s Collar
+					},
+				},
+				{	-- The Twilight Forge
+					["questID"] = 28738,
+					["qg"] = 49476,	-- Finkle Einhorn
+					["sourceQuest"] = 28737,	-- What Is This Place?
+				},
+				{	-- To the Chamber of Incineration!
+					["questID"] = 28735,
+					["qg"] = 49476,	-- Finkle Einhorn
+					["sourceQuest"] = 28732,	-- This Can Only Mean One Thing...
+				},
+				{	-- What Is This Place?
+					["questID"] = 28737,
+					["qg"] = 49476,	-- Finkle Einhorn
+					["sourceQuest"] = 28735,	-- To the Chamber of Incineration!
+				},
 			}),
 			n(  0, {	-- Zone Drop
 				{	-- Berto's Staff

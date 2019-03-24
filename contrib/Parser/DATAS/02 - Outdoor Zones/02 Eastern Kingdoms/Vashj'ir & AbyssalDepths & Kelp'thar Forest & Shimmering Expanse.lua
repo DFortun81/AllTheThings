@@ -822,6 +822,12 @@ _.Zones =
 								i(59730),
 								i(59729),
 							})),
+							{	-- Elemental Bonds: Desire
+								["questID"] = 29328,
+								["qg"] = 53652,	-- Aggra
+								["coord"] = { 69.8, 34.2, 204 },
+								["sourceQuest"] = 29336,	-- Into Coaxing Tides
+							},
 --[[
 							qg(, qh(25592)),	-- Deep Attraction
 							qg(, qa(25893)),	-- Desperate Plan
@@ -855,6 +861,12 @@ _.Zones =
 								i(59743),
 								i(59741),
 							})),
+							{	-- Into Constant Earth
+								["questID"] = 29337,
+								["qg"] = 53652,	-- Aggra
+								["coord"] = { 69.8, 34.2, 204 },
+								["sourceQuest"] = 29328,	-- Elemental Bonds: Desire
+							},
 --[[
 							qg(, qh(25969)),	-- Hostile Waters
 							qg(, qa(25894)),	-- Hostile Waters

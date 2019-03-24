@@ -113,6 +113,17 @@ _.Zones =
 									},
 								},
 							},
+							{	-- Elemental Bonds: Fury
+								["questID"] = 29330,
+								["qg"] = 53925,	-- Aggra
+								["coord"] = { 51.4, 25.7, 338 },
+								["sourceQuest"] = 29338,	-- Into Unrelenting Flame
+							},
+							{	-- Elemental Bonds: The Vow
+								["questID"] = 29331,
+								["coord"] = { 51.4, 25.7, 338 },
+								["sourceQuest"] = 29330,	-- Elemental Bonds: Fury
+							},
 							{	-- Hostile Elements
 								["questID"] = 29179,	-- Hostile Elements
 								["sourceQuest"] = 29201,	-- Through the Gates of Hell
@@ -172,7 +183,6 @@ _.Zones =
 							qg(54163, q(29297)),	-- Bye Bye Burdy
 							qg(53882, q(29283)),	-- Calling the Ancients
 							qg(52921, q(29160)),	-- Egg-stinction
-							qg(53925, q(29330)),	-- Elemental Bonds: Fury
 							qg(52489, q(29255)),	-- Embergris
 							qg(52494, q(29210)),	-- Enduring the Heat
 							qg(52478, q(29275)),	-- Fandral's Methods

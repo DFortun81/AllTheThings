@@ -274,7 +274,7 @@ _.Zones =
 					{	-- Elemental Bonds: Doubt
 						["questID"] = 29327,
 						["qg"] = 53524,	-- Cyclonas
-						["coord"] = { 47.6, 88.6, 249 },
+						["coord"] = { 47.7, 88.9, 249 },
 						["sourceQuest"] = 29335,	-- Into Slashing Winds
 					},
 					{	-- Escape From the Lost City
@@ -436,7 +436,7 @@ _.Zones =
 					{	-- Into Coaxing Tides
 						["questID"] = 29336,
 						["qg"] = 53519,	-- Aggra
-						["coord"] = { 34.2, 77.6, 249 },
+						["coord"] = { 34.3, 77.6, 249 },
 						["sourceQuest"] = 29327,	-- Elemental Bonds: Doubt
 					},
 					{	-- Jonesy Sent For You

@@ -838,14 +838,18 @@ _.Zones =
 								["sourceQuests"] = {26248},
 							}),
 						n(-225, {	-- Elemental Bonds
-							q(29329, {	--  Elemental Bonds: Patience
+							{	--  Elemental Bonds: Patience
+								["questID"] = 29329,
 								["qg"] = 53738,	-- Aggra
-								["sourceQuests"] = {29337}
-							}),
-							q(29338, {	--  Into Unrelenting Flame
+								["coord"] = { 56.5, 12.4, 207 },
+								["sourceQuest"] = 29337,	-- Into Constant Earth
+							},
+							{	--  Into Unrelenting Flame
+								["questID"] = 29338,
 								["qg"] = 53738,	-- Aggra
-								["sourceQuests"] = {29329}
-							}),
+								["coord"] = { 64.0, 46.0, 207 },
+								["sourceQuest"] = 29329,	-- Elemental Bonds: Patience
+							},
 						}),
 					}),
 				}),	
