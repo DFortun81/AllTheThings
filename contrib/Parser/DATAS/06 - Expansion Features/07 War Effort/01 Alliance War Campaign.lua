@@ -9,15 +9,15 @@ _.ExpansionFeatures =
 		["g"] = bubbleDown({["races"] = ALLIANCE_ONLY}, {
 			na(-236, {	-- Alliance War Campaign
 				["g"] = bubbleDown({["races"] = ALLIANCE_ONLY}, {
-					a(ach(12510, {	-- Ready for War
+					{	-- Ready for War
 						["achievementID"] = 12510,	-- Ready for War
-						-- ["collectible"] = false,
+						["collectible"] = false,
 						["races"] = ALLIANCE_ONLY,
 						["maps"] = { 1161 },	--  Boralus
 						["lvl"] = 110,
 						-- We need to attach lvl requirements in various areas here as the quests are specific to certain levels.  To ensure everything works properly we'll attach lvls to each quest to be safe.
 						["g"] = { 
-							na(-6015,  {	-- Rewards
+							na(-6015, {	-- Rewards
 								["description"] = "You'll be offered these rewards at the end of your first foothold.",
 								["g"] = {
 									i(163660),	-- 7th Legionnaire's Chainmail
@@ -214,6 +214,7 @@ _.ExpansionFeatures =
 											{	--  Nazmir Foothold
 												["achievementID"] = 12510,	-- Ready for War
 												["criteriaID"] = 1,	--  Nazmir Foothold
+												["races"] = ALLIANCE_ONLY,
 											},
 										},
 									}),
@@ -311,6 +312,7 @@ _.ExpansionFeatures =
 											{	--  Vol'dun Foothold
 												["achievementID"] = 12510,	-- Ready for War
 												["criteriaID"] = 2,	--  Vol'dun Foothold
+												["races"] = ALLIANCE_ONLY,
 											},
 										},
 									}),
@@ -391,6 +393,7 @@ _.ExpansionFeatures =
 											{	-- Zuldazar Foothold
 												["achievementID"] = 12510,	-- Ready for War
 												["criteriaID"] = 3,	--  Zuldazar Foothold
+												["races"] = ALLIANCE_ONLY,
 											},
 										},
 									}),
@@ -501,6 +504,7 @@ _.ExpansionFeatures =
 											{	-- Blood on the Sand
 												["achievementID"] = 12510,	-- Ready for War
 												["criteriaID"] = 4,	--  Zuldazar Foothold
+												["races"] = ALLIANCE_ONLY,
 											},
 										},
 									}),
@@ -569,6 +573,7 @@ _.ExpansionFeatures =
 											{	-- Chasing Darkness
 												["achievementID"] = 12510,	-- Ready for War
 												["criteriaID"] = 5,	--  Chasing Darkness
+												["races"] = ALLIANCE_ONLY,
 											},
 										},
 									}),
@@ -644,6 +649,7 @@ _.ExpansionFeatures =
 											{	-- A Golden Opportunity
 												["achievementID"] = 12510,	-- Ready for War
 												["criteriaID"] = 6,	--  A Golden Opportunity
+												["races"] = ALLIANCE_ONLY,
 											},
 										},
 									}),
@@ -711,6 +717,7 @@ _.ExpansionFeatures =
 											{	-- Blood in the Water
 												["achievementID"] = 12510,	-- Ready for War
 												["criteriaID"] = 7,	--  Blood in the Water
+												["races"] = ALLIANCE_ONLY,
 											},
 										},
 									}),
@@ -813,6 +820,7 @@ _.ExpansionFeatures =
 											{	-- The Strike on Zuldazar
 												["achievementID"] = 12510,	-- Ready for War
 												["criteriaID"] = 8,	--  The Strike on Zuldazar
+												["races"] = ALLIANCE_ONLY,
 											},
 											a(ach(12510)),	-- Ready for War
 										},
@@ -832,9 +840,10 @@ _.ExpansionFeatures =
 								["sourceQuests"] = { 52790 },	-- An End to the Killing
 							}),
 						},
-					})),
+					},
 					{	-- Tides of Vengeance
 						["achievementID"] = 13467,	-- Tides of Vengeance
+						["collectible"] = false,
 						["races"] = ALLIANCE_ONLY,
 						["maps"] = { 1161 },	--  Boralus
 						["lvl"] = 120,
