@@ -8,9 +8,8 @@ _.ExpansionFeatures =
 	{	-- War Effort
 		["npcID"] = -10057,	-- War Effort
 		["g"] = bubbleDown({["races"] = ALLIANCE_ONLY}, {
-			n(-236, {	-- Alliance War Campaign
-				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+			na(-236, {	-- Alliance War Campaign
+				["g"] = bubbleDown({["races"] = ALLIANCE_ONLY}, {
 					{	-- Ready for War
 						["achievementID"] = 12510,	-- Ready for War
 						["races"] = ALLIANCE_ONLY,
@@ -18,7 +17,7 @@ _.ExpansionFeatures =
 						["lvl"] = 110,
 						-- We need to attach lvl requirements in various areas here as the quests are specific to certain levels.  To ensure everything works properly we'll attach lvls to each quest to be safe.
 						["g"] = { 
-							n(-6015,  {	-- Rewards
+							na(-6015,  {	-- Rewards
 								["description"] = "You'll be offered these rewards at the end of your first foothold.",
 								["g"] = {
 									i(163660),	-- 7th Legionnaire's Chainmail
@@ -847,7 +846,7 @@ _.ExpansionFeatures =
 							}),
 						},
 					},
-				},
+				}),
 			}),
 		}),
 	},
