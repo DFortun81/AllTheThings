@@ -935,7 +935,18 @@ _.Zones =
 						q(51711),	-- Having a Blast
 						q(52068),	-- Helping Out, Somewhere Else
 						q(50060),	-- Honey, Slimes!
-						q(51427),	-- I like Turtles
+						{
+							["questID"] = 51427,	-- I like Turtles
+							["qg"] = 137453,	-- Loroja <Watcher of Ai'twen>
+							["groups"] = {
+								i(160395),	-- Ai'twen's Light
+								i(160396),	-- Ai'twen's Defender
+								i(160352),	-- Darkwater Grasps
+								i(160358),	-- Dread Corsair Grips
+								i(160355),	-- Stormchaser Handcovers
+								i(160349),	-- Tidespeaker Mittens
+							},
+						},
 						q(50802),	-- Iron Low Tide
 						q(51557),	-- Irontide Warning
 						q(51582),	-- Make it Mildenhall
