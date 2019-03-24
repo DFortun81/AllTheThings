@@ -176,34 +176,6 @@ _.Zones =
 								}),
 							},
 						}),
-						na(20240, {	-- Trader Narasu <Kurenai Quartermaster>
-							["coord"] = { 54.5, 75.1, 107 },
-							["groups"] = {
-								i(29227),	-- Reins of the Cobalt War Talbuk
-								i(29229),	-- Reins of the Silver War Talbuk
-								i(29230),	-- Reins of the Tan War Talbuk
-								i(29231),	-- Reins of the White War Talbuk
-								i(31830),	-- Reins of the Cobalt Riding Talbuk
-								i(31832),	-- Reins of the Silver Riding Talbuk
-								i(31834),	-- Reins of the Tan Riding Talbuk
-								i(31836),	-- Reins of the White Riding Talbuk
-								i(31774),	-- Kurenai Tabard
-								i(34175),	-- Pattern: Drums of Restoration
-								i(34173),	-- Pattern: Drums of Speed
-								i(29217),	-- Pattern: Netherfury Belt
-								i(29218),	-- Pattern: Netherfury Boots
-								i(29219),	-- Pattern: Netherfury Leggings
-								i(30444),	-- Pattern: Reinforced Mining Bag
-								i(30443),	-- Recipe: Transmute Primal Fire to Earth
-								i(29138),	-- Arechron's Gift
-								i(29136),	-- Far Seer's Helm
-								i(29140),	-- Cloak of the Ancient Spirit
-								i(29148),	-- Blackened Leather Spaulders
-								i(29142),	-- Kurenai Kilt
-								i(29146),	-- Band of Elemental Spirits
-								un(2, i(29144)),	-- Worg Hide Quiver
-							},
-						}),
 						na(20096, {		-- Uriku <Cooking Supplies>
 							["coord"] = { 56.2, 73.2, 107 },
 							["groups"] = {
