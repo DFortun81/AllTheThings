@@ -5,6 +5,16 @@ _.Zones =
 {
 	m(619, { 	-- The Broken Isles
 		m(627, { 	-- Dalaran
+			["lvl"] = 1,
+			["isRaid"] = true,
+			["lvl"] = 98,
+			["maps"] = { -- Do not include 626 as that is Rogue Class Hall
+				-- 627,	-- Dalaran [This causes it to load the list twice]
+				628,	-- The Underbelly,
+				629,	-- Aegwynn's Gallery [May separate out later]
+			},
+			["icon"] = "Interface\\Icons\\Spell_arcane_teleportdalaranbrokenisles",
+			["description"] = "|cff66ccffDalaran moves to the Broken Isles as the mages of the Kirin Tor want to keep close to the events of the Burning Legion's third invasion from the Tomb of Sargeras, the fallen Titan and ravager of Worlds. The floating city receives several upgrades and can be found floating in the southern Broken Isles, south of Suramar and southeast of Azsuna. |r",
 			["groups"] = {
 				n(-169, { 	-- Emissary Quests
 					q(43179, { -- The Kirin Tor of Dalaran
@@ -3718,6 +3728,7 @@ _.Zones =
 							["icon"] = "Interface\\Worldmap\\GlowSkull_64Purple",	-- Purple
 						}),
 						gssh(1414, { -- Gladiator
+							["icon"] = "Interface\\Worldmap\\GlowSkull_64Red",	-- Red
 							["groups"] = {
 								-- LEGION { Legion Season 1 & 2
 								i(146149, { -- Vindictive Gladiator's Satin Armor		
@@ -3985,9 +3996,20 @@ _.Zones =
 									i(144571),	-- Cruel Gladiator's Dreadplate Girdle
 									i(144567),	-- Cruel Gladiator's Dreadplate Legguards
 									i(144561),	-- Cruel Gladiator's Dreadplate Sabatons
-								}),		
+								}),
+								-- LEGION 5,6,7
+								i(149499, {	-- Ensemble: Fierce Gladiator's Scaled Armor
+									i(148041),	-- Fierce Gladiator's Scaled Helm
+									i(148046),	-- Fierce Gladiator's Scaled Shoulders
+									i(147922),	-- Fierce Gladiator's Greatcloak of Faith
+									i(148050),	-- Fierce Gladiator's Scaled Wristplates
+									i(148039),	-- Fierce Gladiator's Scaled Gauntlets
+									i(148035),	-- Fierce Gladiator's Scaled Breastplate
+									i(148048),	-- Fierce Gladiator's Scaled Girdle
+									i(148043),	-- Fierce Gladiator's Scaled Legguards
+									i(148037),	-- Fierce Gladiator's Scaled Sabatons
+								}),
 							},
-							["icon"] = "Interface\\Worldmap\\GlowSkull_64Red",	-- Red
 						}),	
 					})),
 					{	-- Arcanomancer Vridiel <Blacksmithing Trainer>
@@ -5626,7 +5648,19 @@ _.Zones =
 									i(144570),	-- Cruel Gladiator's Dreadplate Girdle
 									i(144566),	-- Cruel Gladiator's Dreadplate Legguards
 									i(144560),	-- Cruel Gladiator's Dreadplate Sabatons
-								}),		
+								}),
+								-- LEGION 5,6,7
+								i(149498, {	-- Ensemble: Fierce Gladiator's Scaled Armor
+									i(148040),	-- Fierce Gladiator's Scaled Helm
+									i(148045),	-- Fierce Gladiator's Scaled Shoulders
+									i(147921),	-- Fierce Gladiator's Greatcloak of Faith
+									i(148049),	-- Fierce Gladiator's Scaled Wristplates
+									i(148038),	-- Fierce Gladiator's Scaled Gauntlets
+									i(148044),	-- Fierce Gladiator's Scaled Breastplate
+									i(148047),	-- Fierce Gladiator's Scaled Girdle
+									i(148042),	-- Fierce Gladiator's Scaled Legguards
+									i(148036),	-- Fierce Gladiator's Scaled Sabatons
+								}),
 							},
 							["icon"] = "Interface\\Worldmap\\GlowSkull_64Red",	-- Red
 						}),	
@@ -8367,16 +8401,6 @@ _.Zones =
 					},
 				}),
 			},
-			["lvl"] = 1,
-			["isRaid"] = true,
-			["lvl"] = 98,
-			["maps"] = { -- Do not include 626 as that is Rogue Class Hall
-				-- 627,	-- Dalaran [This causes it to load the list twice]
-				628,	-- The Underbelly,
-				629,	-- Aegwynn's Gallery [May separate out later]
-			},
-			["icon"] = "Interface\\Icons\\Spell_arcane_teleportdalaranbrokenisles",
-			["description"] = "|cff66ccffDalaran moves to the Broken Isles as the mages of the Kirin Tor want to keep close to the events of the Burning Legion's third invasion from the Tomb of Sargeras, the fallen Titan and ravager of Worlds. The floating city receives several upgrades and can be found floating in the southern Broken Isles, south of Suramar and southeast of Azsuna. |r",				
 		}),
 	}),
 };;
