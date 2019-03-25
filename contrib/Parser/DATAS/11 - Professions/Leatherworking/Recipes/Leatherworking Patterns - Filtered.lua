@@ -75,10 +75,6 @@ profession(165, {	-- Leatherworking
 							["recipeID"] = 19077,
 							["u"] = 7,
 						},
-						{   -- Ebon Netherscale Breastplate
-							["recipeID"] = 35575,
-							["u"] = 2,
-						},
 						{	-- Heavy Scorpid Vest
 							["recipeID"] = 19051,
 							["u"] = 7,
@@ -91,10 +87,6 @@ profession(165, {	-- Leatherworking
 							["recipeID"] = 19095,
 							["u"] = 7,
 						},
-						{	-- Netherstrike Breastplate
-							["recipeID"] = 35580,
-							["u"] = 2,
-						},
 						{	-- Onyxia Scale Breastplate
 							["recipeID"] = 19106,
 							["u"] = 1,
@@ -105,10 +97,6 @@ profession(165, {	-- Leatherworking
 						},
 						{	-- Primal Batskin Jerkin
 							["recipeID"] = 24121,
-							["u"] = 2,
-						},
-						{	-- Primalstrike Vest
-							["recipeID"] = 35589,
 							["u"] = 2,
 						},
 						{	-- Raptor Hide Harness
@@ -128,26 +116,14 @@ profession(165, {	-- Leatherworking
 							["recipeID"] = 10544,
 							["u"] = 2,
 						},
-						{	-- Windhawk Hauberk
-							["recipeID"] = 35585,
-							["u"] = 2,
-						},
 					}
 				},
 				{
 					["name"] = "Bracers",
 					["categoryID"] = 254,
 					["g"] = {
-						{	-- Ebon Netherscale Bracers
-							["recipeID"] = 35577,
-							["u"] = 2,
-						},
 						{	-- Icy Scale Bracers
 							["recipeID"] = 28224,
-							["u"] = 2,
-						},
-						{	-- Netherstrike Bracers
-							["recipeID"] = 35584,
 							["u"] = 2,
 						},
 						{	-- Polar Bracers
@@ -158,16 +134,8 @@ profession(165, {	-- Leatherworking
 							["recipeID"] = 24123,
 							["u"] = 2,
 						},
-						{	-- Primalstrike Bracers
-							["recipeID"] = 35591,
-							["u"] = 2,
-						},
 						{	-- Swift Flight Bracers
 							["recipeID"] = 22923,
-							["u"] = 2,
-						},
-						{	-- Windhawk Bracers
-							["recipeID"] = 35588,
 							["u"] = 2,
 						},
 					}
@@ -218,10 +186,6 @@ profession(165, {	-- Leatherworking
 					["name"] = "Belts",
 					["categoryID"] = 256,
 					["g"] = {
-						{	-- Ebon Netherscale Belt
-							["recipeID"] = 35576,
-							["u"] = 2,
-						},
 						{	-- Deviate Scale Belt
 							["recipeID"] = 7955,
 							["u"] = 7,
@@ -230,24 +194,11 @@ profession(165, {	-- Leatherworking
 							["recipeID"] = 22921,
 							["u"] = 2,
 						},
-						{	-- Netherstrike Belt
-							["recipeID"] = 35582,
-							["u"] = 2,
-						},
-						{	-- Primalstrike Belt
-							["recipeID"] = 35590,
-							["u"] = 2,
-						},
 						{	-- Raptor Hide Belt
 							["recipeID"] = 4097,
 							["races"] = ALLIANCE_ONLY,
 							["description"] = "Pattern only available to Alliance players",
 						},
-						{	-- Windhawk Belt
-							["recipeID"] = 35587,
-							["u"] = 2,
-						},
-						
 					}
 				},
 				{

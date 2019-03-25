@@ -43,12 +43,45 @@ profession(165, {	-- Leatherworking
 					["name"] = "Chest",
 					["categoryID"] = 932,
 					["g"] = {
+						{   -- Ebon Netherscale Breastplate
+							["recipeID"] = 35575,
+							["u"] = 2,
+						},
+						{	-- Netherstrike Breastplate
+							["recipeID"] = 35580,
+							["u"] = 2,
+						},
+						{	-- Primalstrike Vest
+							["recipeID"] = 35589,
+							["u"] = 2,
+						},
+						{	-- Windhawk Hauberk
+							["recipeID"] = 35585,
+							["u"] = 2,
+						},
 					}
 				},
 				{
 					["name"] = "Bracers",
 					["categoryID"] = 933,
 					["g"] = {
+						{	-- Ebon Netherscale Bracers
+							["recipeID"] = 35577,
+							["u"] = 2,
+						},
+						{	-- Netherstrike Bracers
+							["recipeID"] = 35584,
+							["u"] = 2,
+						},
+						{	-- Primalstrike Bracers
+							["recipeID"] = 35591,
+							["u"] = 2,
+						},
+						{	-- Windhawk Bracers
+							["recipeID"] = 35588,
+							["u"] = 2,
+						},
+						
 					}
 				},
 				{
@@ -61,6 +94,22 @@ profession(165, {	-- Leatherworking
 					["name"] = "Belts",
 					["categoryID"] = 935,
 					["g"] = {
+						{	-- Ebon Netherscale Belt
+							["recipeID"] = 35576,
+							["u"] = 2,
+						},
+						{	-- Netherstrike Belt
+							["recipeID"] = 35582,
+							["u"] = 2,
+						},
+						{	-- Primalstrike Belt
+							["recipeID"] = 35590,
+							["u"] = 2,
+						},
+						{	-- Windhawk Belt
+							["recipeID"] = 35587,
+							["u"] = 2,
+						},
 					}
 				},
 				{
