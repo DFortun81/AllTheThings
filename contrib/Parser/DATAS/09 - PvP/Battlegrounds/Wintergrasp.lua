@@ -4,15 +4,15 @@
 _.PVP =
 {
 	n(-304, {	-- Battlegrounds
-		m(123, { -- Wintergrasp
+		m(123, {	-- Wintergrasp
 			["maps"] = {
 				1334,	-- Wintergrasp (BG)
 			},
 			["lvl"] = 67,	
 			["description"] = "|cff66ccffWintergrasp is a World PvP zone, similar to Tol Barad. It emphasizes siege weapon warfare--walls and towers are destroyed not by player damage, but by siege damage. Your siege engine amount is controlled by which workshops in the zone your faction owns. .|r",	
 			["icon"] = "Interface\\Icons\\spell_frost_chillingblast", 
-			["groups"] = {
-				n(-4, {		-- Achievements
+			["g"] = {
+				n(-4,   {	-- Achievements
 					a(ach(1737, {	-- Destruction Derby (Alliance)
 						crit(1),		-- Wintergrasp Catapult
 						crit(2),		-- Wintergrasp Demolisher
@@ -65,8 +65,7 @@ _.PVP =
 						["coord"] = { 21.6, 34.8 },
 					}),
 				}),
-	--[[			
-				n(-17, { 	-- Quests
+--[[			n(-17,  { 	-- Quests
 					qa( 13156),	-- A Rare Herb
 					qa( 13195),	-- A Rare Herb
 					q(13026),	-- Bluewolf the Elder
@@ -97,10 +96,11 @@ _.PVP =
 					qa( 13153),	-- Warding the Warriors				
 				}),
 	--]]				
-				n(-2, {		-- Vendors
+				n(-2,   {	-- Vendors
 					nh(39173, {	-- Champion Ros'slai <Wintergrasp Quartermaster>
 						["description"] = "|cff66ccffThis vendor will only show if your faction controls Wintergrasp.|r",
-						["groups"] = {	
+						["itemID"] = 137642,	-- Mark of Honor
+						["g"] = {	
 							i(48974),	-- Titan-Forged Armwraps of Dominance
 							i(48975),	-- Titan-Forged Armwraps of Salvation
 							i(48976),	-- Titan-Forged Armwraps of Triumph
@@ -175,7 +175,8 @@ _.PVP =
 					}),
 					na(32294, {	-- Knight Dameron <Wintergrasp Quartermaster>
 						["description"] = "|cff66ccffThis vendor will only show if your faction controls Wintergrasp.|r",
-						["groups"] = {	
+						["itemID"] = 137642,	-- Mark of Honor
+						["g"] = {	
 							i(43956, {	-- Reins of the Black War Mammoth
 								ach(2080),		-- Black War Mammoth
 							}),
@@ -240,7 +241,8 @@ _.PVP =
 					}),
 					na(39172, {	-- Marshal Magruder <Wintergrasp Quartermaster>
 						["description"] = "|cff66ccffThis vendor will only show if your faction controls Wintergrasp.|r",
-						["groups"] = {	
+						["itemID"] = 137642,	-- Mark of Honor
+						["g"] = {	
 							i(48974),	-- Titan-Forged Armwraps of Dominance
 							i(48975),	-- Titan-Forged Armwraps of Salvation
 							i(48976),	-- Titan-Forged Armwraps of Triumph
@@ -276,7 +278,8 @@ _.PVP =
 						},
 					}),
 					na(30489, { -- Morgan Day <Jewelcrafter>
-						["groups"] = {
+						["itemID"] = 137642,	-- Mark of Honor
+						["g"] = {
 							i(41742),	-- Design: Enigmatic Skyflare Diamond
 							i(41743),	-- Design: Forlorn Skyflare Diamond
 							i(41744),	-- Design: Impassive Skyflare Diamond
@@ -309,8 +312,9 @@ _.PVP =
 						},
 					}),
 					nh(32296, {	-- Stone Guard Mukar <Wintergrasp Quartermaster>
-						["description"] = "|cff66ccffThis vendor will only show if your faction controls Wintergrasp.|r",	
-						["groups"] = {	
+						["description"] = "|cff66ccffThis vendor will only show if your faction controls Wintergrasp.|r",
+						["itemID"] = 137642,	-- Mark of Honor
+						["g"] = {	
 							i(44077, {	-- Reins of the Black War Mammoth
 								ach(2080),		-- Black War Mammoth
 							}),
