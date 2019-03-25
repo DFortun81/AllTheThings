@@ -930,7 +930,18 @@ _.Zones =
 						q(50088),	-- Golden Fields Forever
 						q(50069),	-- Goldfield's War
 						q(51883),	-- Grizz's Lunch
-						q(51752),	-- Grizzled
+						q(51752, {	-- Grizzled
+							["g"] = {
+								i(160348),	-- Tidespeaker Handwraps
+								i(160351),	-- Darkwater Mitts
+								i(160354),	-- Stormchaser Strikers
+								i(160357),	-- Dread Corsair Strikers
+								i(158686),	-- Tidespeaker Slippers
+								i(158688),	-- Darkwater Treads
+								i(158687),	-- Stormchaser Striders
+								i(158685),	-- Dread Corsair Warboots
+							},
+						}),
 						a({
 							["questID"] = 51492,	-- Gunpowder Plot
 							["qg"] = 136574,	-- Charles Davenport
