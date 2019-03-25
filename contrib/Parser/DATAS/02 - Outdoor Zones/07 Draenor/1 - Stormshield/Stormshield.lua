@@ -80,6 +80,17 @@ _.Zones =
 						["coord"] = { 54.8, 17.0, 622 },
 						["g"] = {
 							i(138633), -- Arsenal: Wild Gladiator's Weapons
+							-- Ensemble: Wild Gladiator's Chain Armor (Hunter)
+							-- Ensemble: Wild Gladiator's Dragonhide Armor (Druid)
+							-- Ensemble: Wild Gladiator's Dreadplate Armor (DK)
+							-- Ensemble: Wild Gladiator's Felweave Armor (Warlock)
+							-- Ensemble: Wild Gladiator's Ironskin Armor (Monk)
+							-- Ensemble: Wild Gladiator's Leather Armor (Rogue)
+							-- Ensemble: Wild Gladiator's Plate Armor (Warrior)
+							-- Ensemble: Wild Gladiator's Ringmail Armor (Shaman)
+							-- Ensemble: Wild Gladiator's Satin Armor (Priest)
+							-- Ensemble: Wild Gladiator's Scaled Armor (Paladin)
+							-- Ensemble: Wild Gladiator's Silk Armor (Mage)
 							i(124675),	-- Wild Gladiator's Cleaver
 							i(124676),	-- Wild Gladiator's Shanker
 							i(124677),	-- Wild Gladiator's Ripper
@@ -307,6 +318,17 @@ _.Zones =
 						["coord"] = { 56.2, 20.0, 622 },
 						["g"] = {
 							i(138625), -- Arsenal: Primal Combatant's Weapons
+							-- Ensemble: Primal Combatant's Chain Armor (Hunter)
+							-- Ensemble: Primal Combatant's Dragonhide Armor (Druid)
+							-- Ensemble: Primal Combatant's Dreadplate Armor (DK)
+							-- Ensemble: Primal Combatant's Felweave Armor (Warlock)
+							-- Ensemble: Primal Combatant's Ironskin Armor (Monk)
+							-- Ensemble: Primal Combatant's Leather Armor (Rogue)
+							-- Ensemble: Primal Combatant's Plate Armor (Warrior)
+							-- Ensemble: Primal Combatant's Ringmail Armor (Shaman)
+							-- Ensemble: Primal Combatant's Satin Armor (Priest)
+							-- Ensemble: Primal Combatant's Scaled Armor (Paladin)
+							-- Ensemble: Primal Combatant's Silk Armor (Mage)
 							i(120053),	-- Primal Combatant's Cleaver
 							i(120054),	-- Primal Combatant's Shanker
 							i(120055),	-- Primal Combatant's Ripper
@@ -830,7 +852,8 @@ _.Zones =
 						["coord"] = { 54.8, 18.8, 622 },
 						["g"] = {
 							un(14, i(120287)),	-- Enchanter's Illusion - Primal Victory
-							i(138501, {	-- Ensemble: Warmongering Gladiator's Dragonhide Armor
+							-- Ensemble: Warmongering Gladiator's Chain Armor (Hunter)
+							i(138501, {	-- Ensemble: Warmongering Gladiator's Dragonhide Armor (Druid)
 								i(125831),	-- Warmongering Gladiator's Dragonhide Helm
 								i(125834),	-- Warmongering Gladiator's Dragonhide Spaulders
 								i(125833),	-- Warmongering Gladiator's Dragonhide Robes
@@ -839,7 +862,45 @@ _.Zones =
 								i(125866),	-- Warmongering Gladiator's Belt of Victory
 								i(125832),	-- Warmongering Gladiator's Dragonhide Legguards
 								i(125868),	-- Warmongering Gladiator's Dragonhide Boots of Prowess
+								--[[ also received credit for these Horde appearances
+								i(126309),	-- Warmongering Gladiator's Dragonhide Gloves
+								i(126310),	-- Warmongering Gladiator's Dragonhide Helm
+								i(126311),	-- Warmongering Gladiator's Dragonhide Legguards
+								i(126312),	-- Warmongering Gladiator's Dragonhide Robes
+								i(126313),	-- Warmongering Gladiator's Dragonhide Spaulders
+								i(126345),	-- Warmongering Gladiator's Belt of Victory
+								i(126347),	-- Boots of Prowess
+								i(126351),	-- Bindings of Victory
+								--]]
 							}),
+							-- Ensemble: Warmongering Gladiator's Dreadplate Armor (DK)
+							-- Ensemble: Warmongering Gladiator's Felweave Armor (Warlock)
+							-- Ensemble: Warmongering Gladiator's Ironskin Armor (Monk)
+							i(138505, {	-- Ensemble: Warmongering Gladiator's Leather Armor
+								i(125943),	-- Warmongering Gladiator's Leather Helm
+								i(125945),	-- Warmongering Gladiator's Leather Spaulders
+								i(125941),	-- Warmongering Gladiator's Leather Tunic
+								i(125871),	-- Warmongering Gladiator's Bindings of Prowess
+								i(125942),	-- Warmongering Gladiator's Leather Gloves
+								i(125865),	-- Warmongering Gladiator's Belt of Cruelty
+								i(125944),	-- Warmongering Gladiator's Leather Legguards
+								i(125867),	-- Warmongering Gladiator's Boots of Cruelty
+								--[[ also received credit for these Horde appearances
+								i(126422),	-- Warmongering Gladiator's Leather Helm
+								i(126424),	-- Warmongering Gladiator's Leather Spaulders
+								i(126420),	-- Warmongering Gladiator's Leather Tunic
+								i(126350),	-- Warmongering Gladiator's Bindings of Prowess
+								i(126421),	-- Warmongering Gladiator's Leather Gloves
+								i(126344),	-- Warmongering Gladiator's Belt of Cruelty
+								i(126423),	-- Warmongering Gladiator's Leather Legguards
+								i(126346),	-- Warmongering Gladiator's Boots of Cruelty
+								--]]
+							}),
+							-- Ensemble: Warmongering Gladiator's Plate Armor (Warrior)
+							-- Ensemble: Warmongering Gladiator's Ringmail Armor (Shaman)
+							-- Ensemble: Warmongering Gladiator's Satin Armor (Priest)
+							-- Ensemble: Warmongering Gladiator's Scaled Armor (Paladin)
+							-- Ensemble: Warmongering Gladiator's Silk Armor (Mage)
 							i(138635), -- Arsenal: Warmongering Gladiator's Weapons
 							i(125789),	-- Warmongering Gladiator's Cleaver
 							i(125790),	-- Warmongering Gladiator's Shanker
@@ -1018,6 +1079,17 @@ _.Zones =
 						["coord"] = { 55.0, 19.4, 622 },
 						["g"] = {
 							i(138631), -- Arsenal: Primal Gladiator's Weapons
+							-- Ensemble: Primal Gladiator's Chain Armor (Hunter)
+							-- Ensemble: Primal Gladiator's Dragonhide Armor (Druid)
+							-- Ensemble: Primal Gladiator's Dreadplate Armor (DK)
+							-- Ensemble: Primal Gladiator's Felweave Armor (Warlock)
+							-- Ensemble: Primal Gladiator's Ironskin Armor (Monk)
+							-- Ensemble: Primal Gladiator's Leather Armor (Rogue)
+							-- Ensemble: Primal Gladiator's Plate Armor (Warrior)
+							-- Ensemble: Primal Gladiator's Ringmail Armor (Shaman)
+							-- Ensemble: Primal Gladiator's Satin Armor (Priest)
+							-- Ensemble: Primal Gladiator's Scaled Armor (Paladin)
+							-- Ensemble: Primal Gladiator's Silk Armor (Mage)
 							i(115594),	-- Primal Gladiator's Cleaver
 							i(115595),	-- Primal Gladiator's Shanker
 							i(115596),	-- Primal Gladiator's Ripper
@@ -1293,6 +1365,17 @@ _.Zones =
 						["coord"] = { 54.8, 18.8, 622 },
 						["g"] = {
 							i(138628), -- Arsenal: Warmongering Combatant's Weapons
+							-- Ensemble: Warmongering Combatant's Chain Armor (Hunter)
+							-- Ensemble: Warmongering Combatant's Dragonhide Armor (Druid)
+							-- Ensemble: Warmongering Combatant's Dreadplate Armor (DK)
+							-- Ensemble: Warmongering Combatant's Felweave Armor (Warlock)
+							-- Ensemble: Warmongering Combatant's Ironskin Armor (Monk)
+							-- Ensemble: Warmongering Combatant's Leather Armor (Rogue)
+							-- Ensemble: Warmongering Combatant's Plate Armor (Warrior)
+							-- Ensemble: Warmongering Combatant's Ringmail Armor (Shaman)
+							-- Ensemble: Warmongering Combatant's Satin Armor (Priest)
+							-- Ensemble: Warmongering Combatant's Scaled Armor (Paladin)
+							-- Ensemble: Warmongering Combatant's Silk Armor (Mage)
 							i(125999),	-- Warmongering Combatant's Cleaver
 							i(126000),	-- Warmongering Combatant's Shanker
 							i(126001),	-- Warmongering Combatant's Ripper
@@ -1415,19 +1498,11 @@ _.Zones =
 					}),
 					n(87062, { 	-- Royce Bigbeard <Blacksmithing Plans>
 						i(115356, { -- Draenor Blacksmithing
-							{	-- Recipe: Smoldering Breastplate
-								["itemID"] = 116727,	-- Recipe: Smoldering Breastplate
-							},
-							{	-- Recipe: Smoldering Helm
-								["itemID"] = 116726,	-- Recipe: Smoldering Helm
-							},
-							{	-- Recipe: Smoldering Greaves
-								["itemID"] = 116728,	-- Recipe: Smoldering Greaves
-							},
+							i(116727),		-- Recipe: Smoldering Breastplate
+							i(116726),		-- Recipe: Smoldering Helm
+							i(116728),		-- Recipe: Smoldering Greaves
 							recipe(171690),	-- Truesteel Ingot
-							{	-- Recipe: Secrets of Draenor Blacksmithing
-								["itemID"] = 120129,	-- Recipe: Secrets of Draenor Blacksmithing
-							},
+							i(120129),		-- Recipe: Secrets of Draenor Blacksmithing
 						}),
 						i(118720, { -- Secret of Draenor Blacksmithing
 							i(119329), -- Recipe: Soul of the Forge
@@ -1452,18 +1527,15 @@ _.Zones =
 							i(116742), -- Recipe: Truesteel Waistguard
 							desc(i(116764), "This item contains 1-5 gold. DON'T WASTE YOUR SECRETS!\n\nSide note: This gold counts toward gold-looting achievements. (Got My Mind on My Money, etc.)"), -- Small Pouch of Coins
 						}),
-						{	-- Plans: Blackrock Crucibles and Their Uses
-							["itemID"] = 108421,	-- Plans: Blackrock Crucibles and Their Uses
+						i(108421, {	-- Plans: Blackrock Crucibles and Their Uses
 							["u"] = 1,
-						},
-						{	-- Recipe: Powerful Steelforged Essence
-							["itemID"] = 122550,	-- Recipe: Powerful Steelforged Essence
+						}),
+						i(122550, {	-- Recipe: Powerful Steelforged Essence
 							["u"] = 2,
-						},
-						{	-- Recipe: Powerful Truesteel Essence
-							["itemID"] = 122552,	-- Recipe: Powerful Truesteel Essence
+						}),
+						i(122552, {	-- Recipe: Powerful Truesteel Essence
 							["u"] = 2,
-						},
+						}),
 					}),
 					n(87065, {	-- Sean Catchpole
 						i(111921),	-- Draenor Engineering
@@ -1509,6 +1581,17 @@ _.Zones =
 						["coord"] = { 54.6, 17.6, 622 },
 						["g"] = {
 							i(138630), -- Arsenal: Wild Combatant's Weapons
+							-- Ensemble: Wild Combatant's Chain Armor (Hunter)
+							-- Ensemble: Wild Combatant's Dragonhide Armor (Druid)
+							-- Ensemble: Wild Combatant's Dreadplate Armor (DK)
+							-- Ensemble: Wild Combatant's Felweave Armor (Warlock)
+							-- Ensemble: Wild Combatant's Ironskin Armor (Monk)
+							-- Ensemble: Wild Combatant's Leather Armor (Rogue)
+							-- Ensemble: Wild Combatant's Plate Armor (Warrior)
+							-- Ensemble: Wild Combatant's Ringmail Armor (Shaman)
+							-- Ensemble: Wild Combatant's Satin Armor (Priest)
+							-- Ensemble: Wild Combatant's Scaled Armor (Paladin)
+							-- Ensemble: Wild Combatant's Silk Armor (Mage)
 							i(124885),	-- Wild Combatant's Cleaver
 							i(124886),	-- Wild Combatant's Shanker
 							i(124887),	-- Wild Combatant's Ripper

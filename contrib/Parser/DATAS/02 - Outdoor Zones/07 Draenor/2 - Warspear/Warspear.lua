@@ -1102,6 +1102,11 @@ _.Zones =
 								i(126344),	-- Warmongering Gladiator's Belt of Cruelty
 								i(126311),	-- Warmongering Gladiator's Dragonhide Legguards
 								i(126346),	-- Warmongering Gladiator's Boots of Cruelty
+								--[[ slumber got credit for these 3 horde items by opening the alliance ensemble, not what we have listed
+								i(126345),	-- Warmongering Gladiator's Belt of Victory
+								i(126347),	-- Boots of Prowess
+								i(126351),	-- Bindings of Victory
+								--]]
 							},
 							["ignoreBonus"] = true,
 							["itemID"] = 138502,
@@ -1112,6 +1117,7 @@ _.Zones =
 								i(126424),	-- Warmongering Gladiator's Leather Spaulders
 								i(126420),	-- Warmongering Gladiator's Leather Tunic
 								i(126349),	-- Warmongering Gladiator's Bindings of Cruelty
+								-- i(126350)	-- Bindings of Prowess (slumber received when opening alliance version instead of 'bindings of cruelty')
 								i(126421),	-- Warmongering Gladiator's Leather Gloves
 								i(126344),	-- Warmongering Gladiator's Belt of Cruelty
 								i(126423),	-- Warmongering Gladiator's Leather Legguards
