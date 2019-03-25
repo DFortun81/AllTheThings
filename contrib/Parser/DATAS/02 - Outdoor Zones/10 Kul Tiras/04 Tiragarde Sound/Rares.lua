@@ -215,6 +215,7 @@ _.Zones =
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(160466),	-- Saurolisk Broodmother Boots
 							}),
+							["coord"] = { 60.7, 17.4, 895 },
 							["questID"] = 50301,
 						}),
 						n(139289, {	-- Tentulos the Drifter
@@ -258,15 +259,15 @@ _.Zones =
 							["description"] = "This NPC looks like it doesn't exist in Live and only existed in Beta",
 						}),		
 						n(137176, {	-- Walter Ferrell
+							["questID"] = 51321,
+							["coord"] = { 64.2, 19.2, 895 },
 							["crs"] = {
 								137181,	-- Mead-Craving Cranee
 								137182,	-- Honey-Crazed Gull
 								137183,	-- Honey-Coated Slitherer
 								137175,	-- Bradford Crusco
 							},
-							["questID"] = 51321,
-							["coord"] = { 64.2, 19.2 },
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+							["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(160472),	-- Honey-Glazed Gauntlets
 							}),
 						}),

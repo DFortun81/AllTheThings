@@ -6,6 +6,7 @@ _.Instances = { tier(7, {	-- Legion
 	inst(945, { -- Seat of the Triumvirate
 		["lvl"] = 110,
 		["mapID"] = 903,
+		["coord"] = { 22.2, 55.9, 882 },	-- Mac'Aree
 		["groups"] = {
 			d(2, { -- Heroic
 				sz(12069,9, { 	-- Shadowguard Incursion
