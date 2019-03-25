@@ -1725,14 +1725,8 @@ _.Zones =
 						i(44586),	-- Pattern: Polar Boots
 						i(44585),	-- Pattern: Polar Cord
 						i(44584),	-- Pattern: Polar Vest
-						i(44535),	-- Pattern: Swiftarrow Belt
-						i(44537),	-- Pattern: Swiftarrow Boots
-						i(44533),	-- Pattern: Swiftarrow Bracers
-						i(44534),	-- Pattern: Swiftarrow Gauntlets
-						i(44532),	-- Pattern: Swiftarrow Hauberk
-						i(44530),	-- Pattern: Swiftarrow Helm
-						i(44536),	-- Pattern: Swiftarrow Leggings
-						i(44531),	-- Pattern: Swiftarrow Shoulderguards
+						i(44548),	-- Pattern: Revenant's Breastplate
+						i(44549),	-- Pattern: Revenant's Treads
 						i(44543),	-- Pattern: Stormhide Belt
 						i(44538),	-- Pattern: Stormhide Crown
 						i(44542),	-- Pattern: Stormhide Grips
@@ -1741,8 +1735,14 @@ _.Zones =
 						i(44539),	-- Pattern: Stormhide Shoulders
 						i(44545),	-- Pattern: Stormhide Stompers
 						i(44541),	-- Pattern: Stormhide Wristguards
-						i(44548),	-- Pattern: Revenant's Breastplate
-						i(44549),	-- Pattern: Revenant's Treads
+						i(44535),	-- Pattern: Swiftarrow Belt
+						i(44537),	-- Pattern: Swiftarrow Boots
+						i(44533),	-- Pattern: Swiftarrow Bracers
+						i(44534),	-- Pattern: Swiftarrow Gauntlets
+						i(44532),	-- Pattern: Swiftarrow Hauberk
+						i(44530),	-- Pattern: Swiftarrow Helm
+						i(44536),	-- Pattern: Swiftarrow Leggings
+						i(44531),	-- Pattern: Swiftarrow Shoulderguards
 						i(44551),	-- Pattern: Trollwoven Girdle
 						i(44550),	-- Pattern: Trollwoven Spaulders					
 						i(44932),	-- Pattern: Windripper Boots

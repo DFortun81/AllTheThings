@@ -36,6 +36,17 @@ _.Instances = { tier(1, {	-- Classic
 						11988,	-- Golemagg the Incinerator
 					},
 				}),
+				i(18252, {	-- Pattern: Core Armor Kit
+					["crs"]	= {
+						12118,	-- Lucifron
+						11982,	-- Magmadar
+						12259,	-- Gehennas
+						12057,	-- Garr
+						12264,	-- Shazzrah
+						12056,	-- Baron Geddon
+						11988,	-- Golemagg the Incinerator
+					},
+				}),
 				i(21371, {	-- Pattern: Core Felcloth Bag
 					["crs"]	= {
 						12118,	-- Lucifron

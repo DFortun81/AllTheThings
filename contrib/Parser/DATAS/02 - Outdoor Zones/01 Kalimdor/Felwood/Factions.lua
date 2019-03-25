@@ -93,7 +93,7 @@ _.Zones =
 									i(19218), 	-- Pattern: Mantle of the Timbermaw
 									i(19326), 	-- Pattern: Might of the Timbermaw
 									i(19327),  	-- Pattern: Timbermaw Brawlers
-									i(20253), 	-- Pattern: Warbear Harness
+									i(20253), 	-- Pattern: Warbear Harness (BoP version)
 									i(20254), 	-- Pattern: Warbear Woolies
 									i(19215), 	-- Pattern: Wisdom of the Timbermaw
 									i(19202), 	-- Plans: Heavy Timbermaw Belt

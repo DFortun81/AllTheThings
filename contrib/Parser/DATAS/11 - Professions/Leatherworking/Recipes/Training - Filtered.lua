@@ -1,3 +1,8 @@
+-- Note that _Automation.lua should provide all the possible recipes.  Only add
+-- entries to this file if you need to override what comes from automation, e.g.
+-- marking something unobtainable or faction only, or adding a new recipe that is
+-- not yet in the automation.
+
 profession(165, {	-- Leatherworking
 	filter(200, {
 		{
@@ -5,44 +10,44 @@ profession(165, {	-- Leatherworking
 			["categoryID"] = 468,
 			["g"] = {
 				{
-					["name"] = "Drum of Primal Might",
-					["recipeID"] = 293135
+					["recipeID"] = 293135,	-- Drum of Primal Might
+					["u"] = 15,				-- Profession Training Recipe
 				},
 				{
-					["name"] = "Fel Leather Cuff",
-					["recipeID"] = 196457
+					["recipeID"] = 196457,	-- Fel Leather Cuff
+					["u"] = 15,				-- Profession Training Recipe
 				},
 				{
-					["name"] = "Fel Leather Strap",
-					["recipeID"] = 196395
+					["recipeID"] = 196395,	-- Fel Leather Strap
+					["u"] = 15,				-- Profession Training Recipe
 				},
 				{
-					["name"] = "Felhide Bracers",
-					["recipeID"] = 196456
+					["recipeID"] = 196456,	-- Felhide Bracers
+					["u"] = 15,				-- Profession Training Recipe
 				},
 				{
-					["name"] = "Shaved Felhide",
-					["recipeID"] = 196387
+					["recipeID"] = 196387,	-- Shaved Felhide
+					["u"] = 15,				-- Profession Training Recipe
 				},
 				{
-					["name"] = "Tanned Fel Leather",
-					["recipeID"] = 196388
+					["recipeID"] = 196388,	-- Tanned Fel Leather
+					["u"] = 15,				-- Profession Training Recipe
 				},
 				{
 					["name"] = "Material Preparation",
 					["categoryID"] = 484,
 					["g"] = {
 						{
-							["name"] = "Shaved Stonehide Pelt",
-							["recipeID"] = 196375
+							["recipeID"] = 196375,	-- Shaved Stonehide Pelt
+							["u"] = 15,				-- Profession Training Recipe
 						},
 						{
-							["name"] = "Stonehide Leather Strip",
-							["recipeID"] = 208615
+							["recipeID"] = 208615,	-- Stonehide Leather Strip
+							["u"] = 15,				-- Profession Training Recipe
 						},
 						{
-							["name"] = "Stonehide Leather Strip",
-							["recipeID"] = 196385
+							["recipeID"] = 196385,	-- Stonehide Leather Strip
+							["u"] = 15,				-- Profession Training Recipe
 						}
 					}
 				},
@@ -51,12 +56,12 @@ profession(165, {	-- Leatherworking
 					["categoryID"] = 485,
 					["g"] = {
 						{
-							["name"] = "Tanned Stonehide Leather",
-							["recipeID"] = 196379
+							["recipeID"] = 196379,	-- Tanned Stonehide Leather
+							["u"] = 15,				-- Profession Training Recipe
 						},
 						{
-							["name"] = "Tanned Stonehide Pelt",
-							["recipeID"] = 208596
+							["recipeID"] = 208596,	-- Tanned Stonehide Pelt
+							["u"] = 15,				-- Profession Training Recipe
 						}
 					}
 				},
@@ -65,32 +70,32 @@ profession(165, {	-- Leatherworking
 					["categoryID"] = 486,
 					["g"] = {
 						{
-							["name"] = "Stonehide Boot Base",
-							["recipeID"] = 196425
+							["recipeID"] = 196425,	-- Stonehide Boot Base
+							["u"] = 15,				-- Profession Training Recipe
 						},
 						{
-							["name"] = "Stonehide Boot Exterior",
-							["recipeID"] = 196384
+							["recipeID"] = 196384,	-- Stonehide Boot Exterior
+							["u"] = 15,				-- Profession Training Recipe
 						},
 						{
-							["name"] = "Stonehide Caparison",
-							["recipeID"] = 196469
+							["recipeID"] = 196469,	-- Stonehide Caparison
+							["u"] = 15,				-- Profession Training Recipe
 						},
 						{
-							["name"] = "Stonehide Champron",
-							["recipeID"] = 196467
+							["recipeID"] = 196467,	-- Stonehide Champron
+							["u"] = 15,				-- Profession Training Recipe
 						},
 						{
-							["name"] = "Stonehide Crinet",
-							["recipeID"] = 196468
+							["recipeID"] = 196468,	-- Stonehide Crinet
+							["u"] = 15,				-- Profession Training Recipe
 						},
 						{
-							["name"] = "Stonehide Leather Lining",
-							["recipeID"] = 196382
+							["recipeID"] = 196382,	-- Stonehide Leather Lining
+							["u"] = 15,				-- Profession Training Recipe
 						},
 						{
-							["name"] = "Stonehide Leather Vamp",
-							["recipeID"] = 196383
+							["recipeID"] = 196383,	-- Stonehide Leather Vamp
+							["u"] = 15,				-- Profession Training Recipe
 						}
 					}
 				},
@@ -99,20 +104,20 @@ profession(165, {	-- Leatherworking
 					["categoryID"] = 487,
 					["g"] = {
 						{
-							["name"] = "Rough Warhide Mask",
-							["recipeID"] = 196428
+							["recipeID"] = 196428,	-- Rough Warhide Mask
+							["u"] = 15,				-- Profession Training Recipe
 						},
 						{
-							["name"] = "Stonehide Leather Barding",
-							["recipeID"] = 196397
+							["recipeID"] = 196397,	-- Stonehide Leather Barding
+							["u"] = 15,				-- Profession Training Recipe
 						},
 						{
-							["name"] = "Stonehide Leather Bed",
-							["recipeID"] = 196442
+							["recipeID"] = 196442,	-- Stonehide Leather Bed
+							["u"] = 15,				-- Profession Training Recipe
 						},
 						{
-							["name"] = "Sturdy Stonehide Boots",
-							["recipeID"] = 196427
+							["recipeID"] = 196427,	-- Sturdy Stonehide Boots
+							["u"] = 15,				-- Profession Training Recipe
 						}
 					}
 				},

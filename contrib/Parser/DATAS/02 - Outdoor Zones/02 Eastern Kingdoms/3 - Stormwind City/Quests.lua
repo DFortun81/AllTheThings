@@ -578,7 +578,16 @@ _.Zones =
 							qg(, qa( 8763)),	-- The Hero of the Day
 							qg(, qh( 8799)),	-- The Hero of the Day
 							qg(, qa(43471)),	-- The Historians
-							qg(, qa( 7497)),	-- The Journey Has Just Begun
+		--]]					
+							qa(7497, { -- The Journey Has Just Begun
+								["groups"] = {
+									recipe(19093),		-- Onyxia Scale Cloak
+									un(1, i(15769)), 	-- Pattern: Onyxia Scale Cloak
+								},
+								["qg"] = 14394, -- Major Mattingly
+								["sourceQuests"] = {24428}, --A Most Puzzling Circumstance
+							}),
+		--[[
 							qg(, qa(26183)),	-- The King's Cider
 							qg(, q(29547)),	-- The King's Command
 							qg(, qa(25157)),	-- The Latest Fashion!

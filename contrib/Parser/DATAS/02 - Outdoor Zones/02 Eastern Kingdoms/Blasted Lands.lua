@@ -1254,6 +1254,11 @@ _.Zones =
 						},
 						["description"] = "This has a high chance (about 50%) to drop from rares in the zone, but can technically drop from any mob in the zone.",							
 					}),
+					un(7, i(15727, {	-- Pattern: Heavy Scorpid Vest
+						["crs"] = {
+							6005,	-- Shadowsworn Thug
+						},
+					})),
 					i(118675),	-- Time-Locked Box Bronze Whelpling
 				}),
 				n(-40,  {	-- Legacy

@@ -57,6 +57,7 @@ _.Instances = { tier(1, {	-- Classic
 				n(  0, {	-- Zone Drop (Legacy)
 					["groups"] = {
 						n(10318, {	-- Blackhand Assassin
+							un(7, i(15774)),	-- Pattern: Heavy Scorpid Shoulders
 							un(7, i(16713)),	-- Shadowcraft Belt
 						}),
 						n(9817, { 	-- Blackhand Dreadweaver

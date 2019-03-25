@@ -146,6 +146,9 @@ _.Instances = { tier(1, {	-- Classic
 						n(10469, { 	-- Scholomance Adept
 							un(7, i(16685)),	-- Magister's Belt
 						}),
+						n(11582, { 	-- Scholomance Dark Summoner
+							un(7, i(15776)),	-- Pattern: Runic Leather Armor (now learned from trainer)
+						}),
 						n(11257, { 	-- Scholomance Handler
 							un(7, i(16716)),	-- Wildheart Belt
 						}),
@@ -156,6 +159,7 @@ _.Instances = { tier(1, {	-- Classic
 							un(7, i(16710)),	-- Shadowcraft Bracers
 						}),
 						n(10499, { 	-- Spectral Researcher
+							un(7, i(15773)),	-- Pattern: Wicked Leather Armor
 							un(7, i(16716)),	-- Wildheart Belt
 						}),
 						n(10500, {	-- Spectral Teacher

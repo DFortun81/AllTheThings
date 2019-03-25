@@ -249,6 +249,11 @@ _.Instances = { tier(1, {	-- Classic
 									10422, 	-- Crimson Sorcerer
 								},
 							})),
+							un(7, i(15777, {	-- Pattern: Runic Leather Shoulders (now learned from trainer)
+								["crs"] = {
+									10425, 	-- Crimson Battle Mage
+								},
+							})),
 							un(7, i(16714, {	-- Wildheart Bracers
 								["crs"] = {
 									10426, 	-- Crimson Inquisitor
@@ -490,6 +495,11 @@ _.Instances = { tier(1, {	-- Classic
 								["crs"] = {
 									10400, 	-- Thuzadin Necromancer
 									10398, 	-- Thuzadin Shadowcaster
+								},
+							})),
+							un(7, i(15768, {	-- Pattern: Wicked Leather Belt
+								["crs"] = {
+									10406, 	-- Ghoul Ravener
 								},
 							})),
 							un(7, i(16710, {	-- Shadowcraft Bracers

@@ -888,7 +888,14 @@ Legacy				q( 1436),	-- Alliance Relations
 					qg(39605, q(31013, {	-- The Horde Way
 						["races"] = { 26 },	-- Pandaren
 					})),
-					qg(14392, q( 7493)),	-- The Journey Has Just Begun
+					qh(7493, { -- The Journey Has Just Begun
+						["groups"] = {
+							recipe(19093),		-- Onyxia Scale Cloak
+							un(1, i(15769)), 	-- Pattern: Onyxia Scale Cloak
+						},
+						["qg"] = 14392, -- Overlord Natoj
+						["sourceQuests"] = {24429}, --A Most Puzzling Circumstance
+					}),
 					{	-- The Latest Fashion!
 						["questID"] = 25159,
 						["qg"] = 50482,	-- Marith Lazuria

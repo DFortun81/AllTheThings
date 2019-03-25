@@ -1076,6 +1076,16 @@ _.Zones =
 							7037,	-- Thaurissan Firewalker
 						},
 					}),
+					un(7, i(15738, {	-- Pattern: Heavy Scorpid Gauntlets
+						["crs"] = {
+							7025,	-- Blackrock Soldier
+						},
+					})),
+					un(7, i(15748, {	-- Pattern: Heavy Scorpid Leggings
+						["crs"] = {
+							7027,	-- Blackrock Slayer
+						},
+					})),
 					i(15732, {	-- Pattern: Volcanic Leggings
 						["crs"] = {
 							7035,	-- Firegut Brute

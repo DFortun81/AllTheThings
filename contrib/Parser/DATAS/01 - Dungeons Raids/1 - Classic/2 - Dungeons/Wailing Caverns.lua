@@ -117,6 +117,15 @@ _.Instances = { tier(1, {	-- Classic
 						un(2, i(918)),	-- Deviate Hide Pack
 					})),
 				}),
+				n(-2, {	-- Vendors (Legacy)
+					n(5783, {	-- Kalldan Felmoon <Specialist Leatherworking Supplies>
+						["u"] = 43,	-- Removed from game
+						["groups"] = {
+							un(7, i(6474)), -- Pattern: Deviate Scale Cloak
+							un(7, i(6475)), -- Pattern: Deviate Scale Gloves
+						},
+					}),
+				}),
 			}),
 		},
 	}),

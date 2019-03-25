@@ -1289,6 +1289,7 @@ _.Zones =
 							{	-- Design: Ring of Bitter Shadows
 								["itemID"] = 21954,	-- Design: Ring of Bitter Shadows
 							},
+							un(7, i(15756)), -- Pattern: Runic Leather Headband (now learned from trainer)
 						},
 					},
 					n(11536, {	-- Quartermaster Miranda Breechlock <The Argent Crusade>

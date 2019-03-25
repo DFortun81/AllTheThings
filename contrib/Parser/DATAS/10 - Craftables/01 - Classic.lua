@@ -1288,8 +1288,8 @@ _.Craftables =
 				i(8175),	-- Nightscape Tunic
 				i(7285),	-- Nimble Leather Gloves
 				i(7358),	-- Pilferer's Gloves
-				i(4456),	-- Raptor Hide Belt
-				i(4455),	-- Raptor Hide Harness
+				a(i(4456)),	-- Raptor Hide Belt (alliance only)
+				h(i(4455)),	-- Raptor Hide Harness (horde only)
 				i(7284),	-- Red Whelp Gloves
 				i(7280),	-- Rugged Leather Pants
 				i(15090),	-- Runic Leather Armor (Trainable now, old Pattern id 15776 used to teach this.)

@@ -29,6 +29,7 @@ _.Instances = { tier(1, {	-- Classic
 				i(78346, {	-- Pattern: Green Dragonscale Breastplate
 					["crs"] = {
 						5721,	-- Dreamscythe
+						5722,	-- Hazzas
 						5719,	-- Morphaz
 						5720,	-- Weaver
 						5277,	-- Nightmare Scalebane
@@ -41,9 +42,12 @@ _.Instances = { tier(1, {	-- Classic
 					["crs"] = {
 						5721,	-- Dreamscythe
 						5722,	-- Hazzas
+						5719,	-- Morphaz
 						5720,	-- Weaver
+						5277,	-- Nightmare Scalebane
 						5283,	-- Nightmare Wanderer
 						8319,	-- Nightmare Whelp
+						5280,	-- Nightmare Wyrmkin
 						
 					},
 				}),

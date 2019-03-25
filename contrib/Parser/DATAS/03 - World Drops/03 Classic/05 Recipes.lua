@@ -314,15 +314,42 @@ _.WorldDrops =
 					i(21944),	-- Design: Truesilver Boar
 				}),
 				prof(165, {	-- Leatherworking
+					i(4301),	-- Pattern: Barbaric Belt
+					i(4297),	-- Pattern: Barbaric Gloves
 					i(8390),	-- Pattern: Big Voodoo Cloak
 					i(8387),	-- Pattern: Big Voodoo Mask
 					i(8389),	-- Pattern: Big Voodoo Pants
 					i(8386),	-- Pattern: Big Voodoo Robe
+					i(15737),	-- Pattern: Chimeric Boots		
+					i(15746),	-- Pattern: Chimeric Leggings
+					i(15755),	-- Pattern: Chimeric Vest	
+					i(4296),	-- Pattern: Dark Leather Shoulders
+					i(2409),	-- Pattern: Dark Leather Tunic
+					i(7452),	-- Pattern: Dusky Boots
 					i(7449),	-- Pattern: Dusky Leather Leggings
+					i(2406),	-- Pattern: Fine Leather Boots
+					i(2408),	-- Pattern: Fine Leather Gloves
+					i(5972),	-- Pattern: Fine Leather Pants
 					i(7450),	-- Pattern: Green Whelp Armor
 					i(4299),	-- Pattern: Guardian Armor
+					i(4298),	-- Pattern: Guardian Belt
+					i(5974),	-- Pattern: Guardian Cloak
 					i(4300),	-- Pattern: Guardian Leather Bracers
+					i(7364),	-- Pattern: Heavy Earthen Gloves
+					i(15743),	-- Pattern: Heavy Scorpid Belt
+					i(4294),	-- Pattern: Hillman's Belt
+					i(4293),	-- Pattern: Hillman's Leather Vest
+					i(7363),	-- Pattern: Pilferer's Gloves
+					i(7288),	-- Pattern: Rugged Leather Pants
+					un(7, i(15745)), -- Pattern: Runic Leather Belt (now taught by trainer)
+					un(7, i(15731)), -- Pattern: Runic Leather Gauntlets (now taught by trainer)
+					un(7, i(15765)), -- Pattern: Runic Leather Pants (now taught by trainer)
+					i(7453),	-- Pattern: Swift Boots
 					i(8385),	-- Pattern: Turtle Scale Gloves
+					i(15742),	-- Pattern: Warbear Harness (BoE version)
+					un(2, i(15754)), -- Pattern: Warbear Woolies
+					i(2407),	-- Pattern: White Leather Jerkin
+					un(7, i(15757)), -- Pattern: Wicked Leather Pants (now taught by trainer)
 				}),
 				n(-190, {	-- Tailoring
 					i(7085),	-- Pattern: Azure Shoulders

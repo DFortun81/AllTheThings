@@ -999,6 +999,7 @@ _.Zones =
 						["g"] = {
 							i(12254),	-- Well Oiled Cloak
 							i(12253),	-- Brilliant Red Cloak
+							un(7, i(15726)), -- Pattern: Green Dragonscale Breastplate (BoE version was removed from game)
 						},
 						["coord"] = { 29.6, 33.6 },
 					})),

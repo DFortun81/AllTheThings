@@ -68,38 +68,42 @@ _.Instances = { tier(2, {	-- Burning Crusade
 							["spellID"] = 0,	-- This is now available via 35305, need to delink the old plans from the recipe
 							["u"] = 7,
 						},
-						i(35307),	-- Design: Rigid Star of Elune
-						i(35304),	-- Design: Solid Star of Elune
-						i(35308),	-- Pattern: Unyielding Bracers
-						i(35309),	-- Pattern: Unyielding Girdle
+						i(35307),	-- Design: Rigid Star of Elune (BoP version)
+						i(35304),	-- Design: Solid Star of Elune (BoP version)
+						i(35297),	-- Formula: Enchant Boots - Boar's Speed (BoP version)
+						i(35299),	-- Formula: Enchant Boots - Cat's Swiftness (BoP version)
+						i(35298),	-- Formula: Enchant Boots - Vitality (BoP version)
+						i(35302), 	-- Pattern: Cobrascale Gloves (BoP version)
+						i(35303),	-- Pattern: Gloves of the Living Touch (BoP version)
+						i(35301),	-- Pattern: Netherdrake Gloves (BoP version)
+						i(35308),	-- Pattern: Unyielding Bracers (BoP version)
+						i(35309),	-- Pattern: Unyielding Girdle (BoP version)
+						i(35300),	-- Pattern: Windstrike Gloves (BoP version)
+						i(35296),	-- Plans: Adamantite Weapon Chain (BoP version)
+						i(35294),	-- Recipe: Elixir of Empowerment (BoP version)
+						i(35295),	-- Recipe: Haste Potion (BoP version)
 						i(35310),	-- Schematic: Healing Potion Injector (BoP version)
 						i(35311),	-- Schematic: Mana Potion Injector (BoP version)
-						i(35296),	-- Plans: Adamantite Weapon Chain
-						i(35297),	-- Formula: Enchant Boots - Boar's Speed
-						i(35299),	-- Formula: Enchant Boots - Cat's Swiftness
-						i(35298),	-- Formula: Enchant Boots - Vitality
-						i(35294),	-- Recipe: Elixir of Empowerment
-						i(35295),	-- Recipe: Haste Potion
 						i(34794),	-- Axe of Shattered Dreams
-						i(34797),	-- Sun-Infused Focus Staff
+						i(34798),	-- Band of Celerity
 						i(34616),	-- Breeching Comet
-						i(34611),	-- Cudgel of Consecration
-						i(34609),	-- Quickening Blade of the Prince
-						i(34795),	-- Helm of Sanctification
-						i(34613),	-- Shoulderpads of the Silvermoon Retainer
 						i(34810),	-- Cloak of Blade Turning
-						i(34799),	-- Haubrerk of the War Bringer
+						i(34793),	-- Cord of Reconstruction
+						i(34611),	-- Cudgel of Consecration
+						i(34808),	-- Gloves of Arcane Acuity
+						i(34612),	-- Greaves of the Penitent Knight
+						i(34799),	-- Hauberk of the War Bringer
+						i(34795),	-- Helm of Sanctification
+						i(34625),	-- Kharmaa's Ring of Fate
 						i(34615),	-- Netherforce Chestplate
+						i(34609),	-- Quickening Blade of the Prince
 						i(34796),	-- Robes of the Summer Flame
 						i(34610),	-- Scarlet Sin'dorei Robes
-						i(34614),	-- Tunic of the Ranger Lord
-						i(34808),	-- Gloves of Arcane Acuity
-						i(34793),	-- Cord of Reconstruction
-						i(34612),	-- Graves of the Penitent Knight
+						i(34613),	-- Shoulderpads of the Silvermoon Retainer
+						i(34797),	-- Sun-Infused Focus Staff
 						i(34809),	-- Sunrage Treads
 						i(34807),	-- Sunstrider Warboots
-						i(34798),	-- Band of Celerity
-						i(34625),	-- Kharmaa's Ring of Fate
+						i(34614),	-- Tunic of the Ranger Lord
 					},
 				})
 			}),
@@ -169,38 +173,42 @@ _.Instances = { tier(2, {	-- Burning Crusade
 								["spellID"] = 0,	-- This is now available via 35305, need to delink the old plans from the recipe
 								["u"] = 7,
 							},
-							i(35307),	-- Design: Rigid Star of Elune
-							i(35304),	-- Design: Solid Star of Elune
-							i(35308),	-- Pattern: Unyielding Bracers
-							i(35309),	-- Pattern: Unyielding Girdle
+							i(35307),	-- Design: Rigid Star of Elune (BoP version)
+							i(35304),	-- Design: Solid Star of Elune (BoP version)
+							i(35297),	-- Formula: Enchant Boots - Boar's Speed (BoP version)
+							i(35299),	-- Formula: Enchant Boots - Cat's Swiftness (BoP version)
+							i(35298),	-- Formula: Enchant Boots - Vitality (BoP version)
+							i(35302), 	-- Pattern: Cobrascale Gloves (BoP version)
+							i(35303),	-- Pattern: Gloves of the Living Touch (BoP version)
+							i(35301),	-- Pattern: Netherdrake Gloves (BoP version)
+							i(35308),	-- Pattern: Unyielding Bracers (BoP version)
+							i(35309),	-- Pattern: Unyielding Girdle (BoP version)
+							i(35300),	-- Pattern: Windstrike Gloves (BoP version)
+							i(35296),	-- Plans: Adamantite Weapon Chain (BoP version)
+							i(35294),	-- Recipe: Elixir of Empowerment (BoP version)
+							i(35295),	-- Recipe: Haste Potion (BoP version)
 							i(35310),	-- Schematic: Healing Potion Injector (BoP version)
 							i(35311),	-- Schematic: Mana Potion Injector (BoP version)
-							i(35296),	-- Plans: Adamantite Weapon Chain
-							i(35297),	-- Formula: Enchant Boots - Boar's Speed
-							i(35299),	-- Formula: Enchant Boots - Cat's Swiftness
-							i(35298),	-- Formula: Enchant Boots - Vitality
-							i(35294),	-- Recipe: Elixir of Empowerment
-							i(35295),	-- Recipe: Haste Potion
 							i(34794),	-- Axe of Shattered Dreams
-							i(34797),	-- Sun-Infused Focus Staff
+							i(34798),	-- Band of Celerity
 							i(34616),	-- Breeching Comet
-							i(34611),	-- Cudgel of Consecration
-							i(34609),	-- Quickening Blade of the Prince
-							i(34795),	-- Helm of Sanctification
-							i(34613),	-- Shoulderpads of the Silvermoon Retainer
 							i(34810),	-- Cloak of Blade Turning
-							i(34799),	-- Haubrerk of the War Bringer
+							i(34793),	-- Cord of Reconstruction
+							i(34611),	-- Cudgel of Consecration
+							i(34808),	-- Gloves of Arcane Acuity
+							i(34612),	-- Greaves of the Penitent Knight
+							i(34799),	-- Hauberk of the War Bringer
+							i(34795),	-- Helm of Sanctification
+							i(34625),	-- Kharmaa's Ring of Fate
 							i(34615),	-- Netherforce Chestplate
+							i(34609),	-- Quickening Blade of the Prince
 							i(34796),	-- Robes of the Summer Flame
 							i(34610),	-- Scarlet Sin'dorei Robes
-							i(34614),	-- Tunic of the Ranger Lord
-							i(34808),	-- Gloves of Arcane Acuity
-							i(34793),	-- Cord of Reconstruction
-							i(34612),	-- Graves of the Penitent Knight
+							i(34613),	-- Shoulderpads of the Silvermoon Retainer
+							i(34797),	-- Sun-Infused Focus Staff
 							i(34809),	-- Sunrage Treads
 							i(34807),	-- Sunstrider Warboots
-							i(34798),	-- Band of Celerity
-							i(34625),	-- Kharmaa's Ring of Fate
+							i(34614),	-- Tunic of the Ranger Lord
 						},
 					})
 				}

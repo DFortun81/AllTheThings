@@ -933,6 +933,15 @@ _.Zones =
 						},
 						["coord"] = { 23.6, 32.6 },
 					}),
+					n(19196, {	-- Cro Threadstrong <Leatherworking Supplies>
+						["groups"] = {
+							i(25720, {	-- Pattern: Heavy Knothide Leather
+								["spellID"] = 0,	-- This is now available from the trainer, so use spellID=0 to delink the old plans from the recipe
+								["u"] = 8,
+							}),
+						},
+						["coord"] = { 67.2, 67.6 },
+					}),
 					n(19213, {	-- Eiin <Specialty Tailoring Supplies>
 						["groups"] = {
 							i(21892),	-- Pattern: Bolt of Imbued Netherweave

@@ -54,10 +54,15 @@ _.Zones =
 						["classes"] = {5},
 						["races"] = {10},
 					})),
-					qh(769, {    -- Kodo Hide Bag
-						["qg"] = 3050,    -- Veren Tallstrider
+--]]
+					qh(769, { -- Kodo Hide Bag
+						["qg"] = 3050, -- Veren Tallstrider				
 						["requireSkill"] = 165,    -- Leatherworking
+						["groups"] = {
+							i(5083), -- Pattern: Kodo Hide Bag
+						},
 					}),
+--[[
 					qg(43881, qh(27282, {	-- Kranosh's Behest
 						["groups"] = {
 						},

@@ -50,7 +50,7 @@ profession(197, {	-- Tailoring
 						},
 						{
 							["recipeID"] = 44950,--[[Green Winter Clothes]]
-							["u"] = 17,
+							["u"] = 29,
 						},
 						{
 							["recipeID"] = 7636,--[[Green Woolen Robe]]
@@ -58,7 +58,7 @@ profession(197, {	-- Tailoring
 						},
 						{
 							["recipeID"] = 44958,--[[Red Winter Clothes]]
-							["u"] = 17,
+							["u"] = 29,
 						},
 						{
 							["recipeID"] = 12068,--[[Stormcloth Vest]]
@@ -119,7 +119,7 @@ profession(197, {	-- Tailoring
 					["g"] = {
 						{
 							["recipeID"] = 21945,--[[Green Holiday Shirt]]
-							["u"] = 17,
+							["u"] = 29,
 						},
 					},
 				},
