@@ -1897,6 +1897,7 @@ _.Zones =
 					}),
 					na(75694, {	-- Armsmaster Holinka <Tyrannical Gladiator>
 						["itemID"] = 137642,	-- Mark of Honor
+						["coord"] = { 12.0, 34.0, 376 },
 						["g"] = {
 							i(144246), -- Arsenal: Tyrannical Gladiator's Weapons
 							i(99794),	-- Tyrannical Gladiator's Barrier
@@ -2224,6 +2225,7 @@ _.Zones =
 					}),
 					na(75692, {	-- Ethan Natice <Grievous Gladiator>
 						["itemID"] = 137642,	-- Mark of Honor
+						["coord"] = { 12.0, 34.2, 376 },
 						["g"] = {
 							i(144252), -- Arsenal: Grievous Gladiator's Weapons
 							i(103139),	-- Grievous Gladiator's Decapitator
@@ -2556,6 +2558,7 @@ _.Zones =
 					}),
 					na(75691, {	-- Hayden Christophen <Dreadful Gladiator>
 						["itemID"] = 137642,	-- Mark of Honor
+						["coord"] = { 12.2, 34.2, 376 },
 						["g"] = {
 							i(84345),	-- Dreadful Gladiator's Cape of Cruelty
 							i(84346),	-- Dreadful Gladiator's Cape of Prowess
@@ -2899,6 +2902,7 @@ _.Zones =
 					}),
 					na(75689, {	-- Lucan Malory <Malevolent Gladiator>
 						["itemID"] = 137642,	-- Mark of Honor
+						["coord"] = { 12.2, 34.2, 376 },
 						["g"] = {
 							un(2, i(98162)),	-- Tyrannical Gladiator's Tabard [Elite Rating]
 							un(2, i(101697)),	-- Grievous Gladiator's Tabard [Elite Rating]
@@ -3130,6 +3134,7 @@ _.Zones =
 					}),
 					na(78456, {	-- Starlight Sinclair <Prideful Gladiator>
 						["itemID"] = 137642,	-- Mark of Honor
+						["coord"] = { 12.0, 34.0, 376 },
 						["g"] = {
 							un(14, i(120286)),	-- Enchanter's Illusion - Glorious Tyranny
 							i(144248), -- Arsenal: Prideful Gladiator's Weapons

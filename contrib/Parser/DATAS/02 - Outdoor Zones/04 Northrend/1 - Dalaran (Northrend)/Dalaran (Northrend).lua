@@ -3,13 +3,13 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(113, { 	-- Northrend
-		m(125, { -- Dalaran: Northrend
-			["groups"] = {
-				faction(1090, {	-- Kirin Tor
+	m(113, {	-- Northrend
+		m(125, {	-- Dalaran: Northrend
+			["g"] = {
+				faction(1090,   {	-- Kirin Tor
 					["achievementID"] = 1008,	-- The Kirin Tor
-					["groups"] = {
-						n(32287, { 	-- Archmage Alvareaux <Kirin Tor Quartermaster>
+					["g"] = {
+						n(32287, {	-- Archmage Alvareaux <Kirin Tor Quartermaster>
 							i(43157),	-- Tabard of the Kirin Tor
 							i(41718),	-- Design: Brilliant Scarlet Ruby
 							i(42188),	-- Pattern: Sapphire Spellthread
@@ -30,7 +30,7 @@ _.Zones =
 				}),
 				a(faction(1094, {	-- The Silver Covenant
 					["creatureID"] = 30115,	-- Vareesa Windrunner <Ranger-General of the Silver Covenant>
-					["groups"] = {
+					["g"] = {
 						na(31579, { -- Arcanist Adurin <Legacy Justice Quartermaster>
 							i(40637, { -- Mantle of the Lost Conqueror (Paladin, Priest, Warlock)
 								i(40459),	-- Valorous Mantle of Faith
@@ -718,7 +718,7 @@ _.Zones =
 						}),
 						na(31032, { -- Derek Odds <Cooking Supplies>
 							currency(81, {	-- Epicurean's Award
-								i(134020), 	-- Chef's Hat
+								i(134020),	-- Chef's Hat
 								i(43035),	-- Recipe: Blackened Dragonfin
 								i(43032),	-- Recipe: Blackened Worg Steak
 								i(43029),	-- Recipe: Critter Bites
@@ -748,7 +748,7 @@ _.Zones =
 						}),
 						na(28705, {	-- Katherine Lee
 							["description"] = "All dailies offered by this questgiver award at least one Epicurean's Award and a Small Spice Bag, which can contain the recipes for Captain Rumsey's Lager, Delicious Chocolate Cake, and Stormchops.",
-							["groups"] = {
+							["g"] = {
 								a({
 									["achievementID"] = 1782,	-- Our Daily Bread (Alliance)
 									["criteriaID"] = 4,		-- Cheese for Glowergold
@@ -780,10 +780,10 @@ _.Zones =
 				})),
 				h(faction(1124, {	-- The Sunreavers
 					["creatureID"] = 30116,	-- Archmage Aethas Sunreaver <Kirin Tor>
-					["groups"] = {
+					["g"] = {
 						nh(29631, {	-- Awilo Longomba
 							["description"] = "All dailies offered by this questgiver award at least one Epicurean's Award and a Small Spice Bag, which can contain the recipes for Captain Rumsey's Lager, Delicious Chocolate Cake, and Stormchops.",
-							["groups"] = {
+							["g"] = {
 								h({
 									["achievementID"] = 1783,	-- Our Daily Bread (Horde)
 									["criteriaID"] = 4,		-- Cheese for Glowergold
@@ -1498,7 +1498,7 @@ _.Zones =
 						}),
 						nh(31031, { -- Misensi <Cooking Supplies>
 							currency(81, {	-- Epicurean's Award
-								i(134020), 	-- Chef's Hat
+								i(134020),	-- Chef's Hat
 								i(43035),	-- Recipe: Blackened Dragonfin
 								i(43032),	-- Recipe: Blackened Worg Steak
 								i(43029),	-- Recipe: Critter Bites
@@ -1528,9 +1528,9 @@ _.Zones =
 						}),
 					},
 				})),
-				n(-4, {		-- Achievement
+				n(-4,   {	-- Achievement
 					ach(1956, {	-- Higher Learning
-						["groups"] = {
+						["g"] = {
 							i(44738),	-- Kirin Tor Familiar Pet
 							desc(n(16128, {	-- Rhonin <Leader of the Kirin Tor>
 								i(43824),	-- The Schools of Arcane Magic - Mastery
@@ -1544,7 +1544,7 @@ _.Zones =
 						["coord"] = { 72.8, 45.6 },
 					}),
 				}),
-				n(-17, { 	-- Quests
+				n(-17,  {	-- Quests
 --[[				
 					qh( 29400),	-- A Season for Celebration
 					qh( 32406),	-- A Tactical Assault
@@ -1582,7 +1582,7 @@ _.Zones =
 --]]
 					{
 						["questID"] = 14151,	-- Cardinal Ruby
-						["groups"] = {
+						["g"] = {
 							recipe(66659),	-- Transmute: Cardinal Ruby
 						},
 						["qg"] = 28703,	-- Quest Giver: Linzy Blackbolt <Alchemy Trainer>
@@ -1657,7 +1657,7 @@ _.Zones =
 						["qg"] = 68586, -- Grand Magister Rommath
 					}),
 					i(46007,  {	-- Bag of Fishing Treasures
-						["groups"] = {
+						["g"] = {
 							i(44983),	-- Strand Crawler Pet
 							i(45984),	-- Unusual Compass Toy
 							i(33820),	-- Weather-Beaten Fishing Hat
@@ -1675,30 +1675,30 @@ _.Zones =
 						["isBreadcrumb"] = true,
 					}),
 				}),
-				n(-2, { 	-- Vendors
-					n(28994, { 	-- Abra Cadabra
+				n(-2,   {	-- Vendors
+					n(28994,  {	-- Abra Cadabra
 						i(47658), 		-- Brimstone Igniter
 					}),
-					n(29512, { 	-- Ainderu Summerleaf <Mooncloth Tailoring Specialist>
+					n(29512,  {	-- Ainderu Summerleaf <Mooncloth Tailoring Specialist>
 						i(21895),	-- Pattern: Primal Mooncloth
 						i(21919),	-- Pattern: Primal Mooncloth Bag
 						i(21916),	-- Pattern: Primal Mooncloth Belt
 						i(21917),	-- Pattern: Primal Mooncloth Robe
 						i(21918),	-- Pattern: Primal Mooncloth Shoulders
 					}),
-					n(29628, { 	-- Angelique Butler <First Aid Supplies>
+					n(29628,  {	-- Angelique Butler <First Aid Supplies>
 						i(44694),	-- Antiseptic-Soaked Dressing
 						i(44693),	-- Wound Dressing
 					}),
-					n(28990, { 	-- Anthony Durain <Shield Merchant>
+					n(28990,  {	-- Anthony Durain <Shield Merchant>
 						i(40701),	-- Crygil's Discarded Plate Panel
 						i(40700),	-- Protective Barricade of the Light
 					}),
-					n(29499, { 	-- Bartram Haller <Dagger & Fist Weapon Merchant>
+					n(29499,  {	-- Bartram Haller <Dagger & Fist Weapon Merchant>
 						i(40704),	-- Pride
 						i(40702),	-- Rolfsen's Ripper
 					}),
-					n(32515, { 	-- Braeg Stoutbeard <Fur & Leather Trader>
+					n(32515,  {	-- Braeg Stoutbeard <Fur & Leather Trader>
 						i(44553),	-- Pattern: Earthgiving Boots
 						i(44552),	-- Pattern: Earthgiving Legguards
 						i(44516),	-- Pattern: Eviscerator's Bindings
@@ -1748,7 +1748,7 @@ _.Zones =
 						i(44932),	-- Pattern: Windripper Boots
 						i(44933),	-- Pattern: Windripper Leggings
 					}),
-					n(29523, { 	-- Bragund Brightlink <Mail Armor Merchant>
+					n(29523,  {	-- Bragund Brightlink <Mail Armor Merchant>
 						i(50993),	-- Band of the Night Raven
 						i(50980),	-- Blizzard Keeper's Mitts
 						i(50979),	-- Logsplitters
@@ -1849,23 +1849,23 @@ _.Zones =
 						i(39578),	-- Heroes' Cryptstalker Headpiece
 					
 					}),
-					n(28951, { 	-- Breanni <Pet Supplies>
+					n(28951,  {	-- Breanni <Pet Supplies>
 						i(44822),	-- Albino Snake Pet
 						i(46398),	-- Cat Carrier (Calico Cat) Pet
 						i(48120),	-- Obsidian Hatchling Pet
 						i(129826),	-- Nursery Spider Pet
 						i(44820),	-- Red Ribbon Pet Leash Toy
 					}),
-					n(28722, {	-- Bryan Landers <Engineering Supplies>
+					n(28722,  {	-- Bryan Landers <Engineering Supplies>
 						["coord"] = { 39.0, 26.0 },
-						["groups"] = {
+						["g"] = {
 							i(136782),	-- Fireworks Instruction Manual
 							i(23817),	-- Schematic: Titanium Toolbox
 						},
 					}),
-					n(28699, {	-- Charles Worth <Tailoring Trainer>
+					n(28699,  {	-- Charles Worth <Tailoring Trainer>
 						["description"] = "Your Tailor has to have completed Loremaster of Northrend for Deathchill Cloak and Northrend Dungeonmaster for Wispcloak, and not just via account wide. If you have done them account wide, but not exclusively on your tailor, you will need to go back, and finish them up to get the recipes from Charles Worth.",
-						["groups"] = {
+						["g"] = {
 							ach(41, {	-- Loremaster of Northrend
 								{
 									["recipeID"] = 56017,	-- Deathchill Cloak
@@ -1880,7 +1880,7 @@ _.Zones =
 							}),
 						},
 					}),
-					n(29716, { 	-- Clockwork Assistant <Jepetto's Companion>
+					n(29716,  {	-- Clockwork Assistant <Jepetto's Companion>
 						i(54436),	-- Blue Clockwork Rocket Bot Pet
 						i(95621),	-- Warbot Ignition Key Pet
 						i(54343),	-- Blue Crashin' Thrashin' Racer Controller Toy
@@ -1892,26 +1892,19 @@ _.Zones =
 						i(44606),	-- Toy Train Set Toy
 						i(45057),	-- Wind-Up Train Wreck Toy
 					}),
-					{	-- Cravitz Lorent <Shady Book Dealer>
-						["npcID"]= 106887,	-- Cravitz Lorent <Shady Book Dealer>
+					n(106887, {	-- Cravitz Lorent <Shady Book Dealer>
 						["g"] = {
-							{	-- Technique: Glyph of Burnout
-								["itemID"] = 141056,	-- Technique: Glyph of Burnout
-							},
-							{	-- Scarlet Confessional Book
-								["itemID"] = 136927,	-- Scarlet Confessional Book
-							},
-							{	-- Tome of Hex: Cockroach
-								["itemID"] = 136972,	-- Tome of Hex: Cockroach
-								["spellID"] = 0,		-- Invalidate the Spell ID (this makes it uncollectible)
-							},
-							{	-- Tome of the Wilds: Treant Form
-								["itemID"] = 136803,	-- Dirty Tricks, Vol 1: Detection
-								["spellID"] = 0,		-- Invalidate the Spell ID (this makes it uncollectible)
-							},
+							i(141056),	-- Technique: Glyph of Burnout
+							i(136927),	-- Scarlet Confessional Book
+							i(136972, {	-- Tome of Hex: Cockroach
+								["spellID"] = 0,	-- Invalidate the Spell ID (this makes it uncollectible)
+							}),
+							i(136803, {	-- Dirty Tricks, Vol 1: Detection
+								["spellID"] = 0,	-- Invalidate the Spell ID (this makes it uncollectible)
+							}),
 						},
-					},
-					n(34252, { 	-- Dubin Clay <Plate Armor Merchant>
+					}),
+					n(34252,  {	-- Dubin Clay <Plate Armor Merchant>
 						i(45335),	-- Valorous Darkruned Chestguard
 						i(45336),	-- Valorous Darkruned Faceguard
 						i(45337),	-- Valorous Darkruned Handguards
@@ -2018,8 +2011,8 @@ _.Zones =
 						i(48635),	-- Turalyon's Legguards of Conquest
 						i(48636),	-- Turalyon's Shoulderguards of Conquest
 					}),
-					n(28776, { 	-- Elizabeth Ross <Tabard Vendor>
-						["groups"] = {
+					n(28776,  {	-- Elizabeth Ross <Tabard Vendor>
+						["g"] = {
 							i(31404),	-- Green Trophy Tabard of the Illidari
 							i(31405),	-- Purple Trophy Tabard of the Illidari
 							i(40643),	-- Tabard of the Achiever
@@ -2046,7 +2039,7 @@ _.Zones =
 						},
 						["description"] = "Tabards are only obtainable by those who have earned them.|r",
 					}),
-					n(28715, { 	-- Endora Moorehead <Magical Goods>
+					n(28715,  {	-- Endora Moorehead <Magical Goods>
 						i(82470),	-- Ancient Tome of Portal: Dalaran [Mage only]
 						i(137294),	-- Dalaran Initiates' Pin Toy [Mage only]
 						i(136846),	-- Familiar Stone Toy [Mage only]
@@ -2060,43 +2053,22 @@ _.Zones =
 						},
 						i(44709),	-- Tome of Polymorph: Black Cat [Mage only]
 					}),
-					{	-- Frozo the Renowned <Frozen Orb Trader>
-						["npcID"] = 40160, 	-- Frozo the Renowned <Frozen Orb Trader>
+					n(40160,  {	-- Frozo the Renowned <Frozen Orb Trader>
 						["itemID"] = 43102,	-- Frozen Orb	Note!! This is the currency used for all items on this vendor!
 						["g"] = {
-							{	-- Crusader Orb
-								["itemID"] = 47556,	-- Crusader Orb
-							},
-							{	-- Eternal Air
-								["itemID"] = 35623,	-- Eternal Air
-							},
-							{	-- Eternal Earth
-								["itemID"] = 35624,	-- Eternal Earth
-							},
-							{	-- Eternal Fire
-								["itemID"] = 36860,	-- Eternal Fire
-							},
-							{	-- Eternal Life
-								["itemID"] = 35625,	-- Eternal Life
-							},
-							{	-- Eternal Shadow
-								["itemID"] = 35627,	-- Eternal Shadow
-							},
-							{	-- Eternal Water
-								["itemID"] = 35622,	-- Eternal Water
-							},
-							{	-- Frost Lotus
-								["itemID"] = 36908,	-- Frost Lotus
-							},
-							{	-- Pattern: Frosty Flying Carpet
-								["itemID"] = 54798,	-- Pattern: Frosty Flying Carpet
-							},
-							{	-- Runed Orb
-								["itemID"] = 45087,	-- Runed Orb
-							},
+							i(47556),	-- Crusader Orb
+							i(35623),	-- Eternal Air
+							i(35624),	-- Eternal Earth
+							i(36860),	-- Eternal Fire
+							i(35625),	-- Eternal Life
+							i(35627),	-- Eternal Shadow
+							i(35622),	-- Eternal Water
+							i(36908),	-- Frost Lotus
+							i(54798),	-- Pattern: Frosty Flying Carpet
+							i(45087),	-- Runed Orb
 						},
-					},
-					n(28997, { 	-- Griselda Hunderland <Plate Armor Merchant>
+					}),
+					n(28997,  {	-- Griselda Hunderland <Plate Armor Merchant>
 						i(50991),	-- Verdigris Chain Belt
 						i(50987),	-- Malevolent Girdle
 						i(50978),	-- Gauntlets of the Kraken
@@ -2195,7 +2167,7 @@ _.Zones =
 						i(39607),	-- Heroes' Dreadnaught Legplates
 						i(39605),	-- Heroes' Dreadnaught Helmet
 					}),
-					n(32172, {	-- Harold Winston <Jewelry Vendor>
+					n(32172,  {	-- Harold Winston <Jewelry Vendor>
 						i(45820),	-- Brooch of the Wailing Night
 						i(40679),	-- Chained Military Gorget
 						i(40680),	-- Encircling Burnished Gold Chains
@@ -2231,7 +2203,7 @@ _.Zones =
 						i(40718),	-- Signet of the Impregnable Fortress
 						i(40585),	-- Signet of the Kirin Tor
 					}),
-					n(35498, {  -- Horace Hunderland <Plate Armor Merchant>
+					n(35498,  {  -- Horace Hunderland <Plate Armor Merchant>
 						i(48371),	-- Wrynn's Helmet of Conquest			
 						i(48372),	-- Wrynn's Battleplate of Conquest
 						i(48373),	-- Wrynn's Legplates of Conquest
@@ -2408,13 +2380,13 @@ _.Zones =
 						i(51313),	-- Sanctified Scourgelord Legplates
 						i(51314),	-- Sanctified Scourgelord Shoulderplates
 					}),
-					n(28714, {	-- Ildine Sorrowspear <Enchanting Supplies>
+					n(28714,  {	-- Ildine Sorrowspear <Enchanting Supplies>
 						i(20753),	-- Formula: Lesser Wizard Oil
 						i(20752),	-- Formula: Minor Mana Oil
 						i(20758),	-- Formula: Minor Wizard Oil
 						i(22307),	-- Pattern: Enchanted Mageweave Pouch
 					}),
-					n(96483, {  -- Jepetto Joybuzz <Toymaker>
+					n(96483,  {  -- Jepetto Joybuzz <Toymaker>
 						i(54436),	-- Blue Clockwork Rocket Bot Pet
 						i(95621),	-- Warbot Ignition Key Pet
 						i(54343),	-- Blue Crashin' Thrashin' Racer Controller Toy
@@ -2426,7 +2398,7 @@ _.Zones =
 						i(44606),	-- Toy Train Set Toy
 						i(45057),	-- Wind-Up Train Wreck Toy
 					}),
-					n(29491, {  -- Karandonna <Clothier>
+					n(29491,  {  -- Karandonna <Clothier>
 						i(42360),	-- Ebon Filigreed Doublet
 						i(42361),	-- Cerulean Filigreed Doublet
 						i(42363),	-- Golden Filigreed Doublet
@@ -2444,21 +2416,21 @@ _.Zones =
 						i(42378),	-- Red Martial Shirt
 						i(53852),	-- Embroidered Shirt
 					}),
-					n(29511, {  -- Lalla Brightweave <Spellfire Tailoring Specialist>
+					n(29511,  {  -- Lalla Brightweave <Spellfire Tailoring Specialist>
 						i(24316),	-- Pattern: Spellcloth
 						i(21911),	-- Pattern: Spellfire Bag
 						i(21908),	-- Pattern: Spellfire Belt
 						i(21909),	-- Pattern: Spellfire Gloves
 						i(21910),	-- Pattern: Spellfire Robe
 					}),
-					n(29510, {  -- Linna Bruder <Shadoweave Tailoring Specialist>
+					n(29510,  {  -- Linna Bruder <Shadoweave Tailoring Specialist>
 						i(21915),	-- Pattern: Ebon Shadowbag
 						i(21914),	-- Pattern: Frozen Shadoweave Boots
 						i(21912),	-- Pattern: Frozen Shadoweave Shoulders
 						i(21913),	-- Pattern: Frozen Shadoweave Robe
 						i(30483),	-- Pattern: Shadowcloth
 					}),
-					n(35500, {  -- Matilda Brightlink <Mail Armor Merchant>
+					n(35500,  {  -- Matilda Brightlink <Mail Armor Merchant>
 						i(48250),	-- Windrunner's Headpiece of Conquest
 						i(48251),	-- Windrunner's Tunic of Conquest
 						i(48252),	-- Windrunner's Legguards of Conquest
@@ -2561,7 +2533,7 @@ _.Zones =
 						i(51289),	-- Sanctified Ahn'Kahar Blood Hunter's Tunic
 
 					}),
-					n(32216, {  -- Mei Francis <Exotic Mounts>
+					n(32216,  {  -- Mei Francis <Exotic Mounts>
 						i(25475),	-- Blue Wind Rider
 						i(25471),	-- Ebon Gryphon
 						i(25470),	-- Golden Gryphon
@@ -2585,70 +2557,70 @@ _.Zones =
 						i(25477),	-- Swift Red Wind Rider
 						i(25532),	-- Swift Yellow Wind Rider
 					}),
-					n(51512, {  -- Mirla Silverblaze <Guild Vendor>
-						["groups"] = {
+					n(51512,  {  -- Mirla Silverblaze <Guild Vendor>
+						["g"] = {
 							faction(1168, {	-- Your Guild (Faction)
 								["icon"] = "Interface\\Icons\\ACHIEVEMENT_GUILDPERK_EVERYONES A HERO",
-								["groups"] = {
+								["g"] = {
 									ach(4989, {	-- A Class Act
 										["collectible"] = false,
-										["groups"] = {
+										["g"] = {
 											a(i(63352)),	-- Shroud of Cooperation - Honored
 											h(i(63353)),	-- Shroud of Cooperation - Honored
 										},
 									}),
 									h(ach(5179, {	-- Alliance Slayer
 										["collectible"] = false,
-										["groups"] = {
+										["g"] = {
 											h(i(65362)),	-- Guild Page - Honored - minipet bound to Character
 										},
 									})),
 									ach(5024, {	-- Better Leveling Through Chemistry
 										["collectible"] = false,
-										["groups"] = {
+										["g"] = {
 											i(65498),	-- Recipe: Big Cauldron of Battle
 										},
 									}),
 									ach(9651, {	-- Challenge Warlord: Gold - Guild Edition
 										["collectible"] = false,
-										["groups"] = {
+										["g"] = {
 											un(4, i(114968)),	-- Deathwatch Hatchling - Revered
 										},
 										["description"] = "Achievement no longer obtainable. You will need to find a guild that already has it to buy Deathwatch Hatchling.|r",
 									}),
 									ach(5144, {	-- Critter Kill Squad
 										["collectible"] = false,
-										["groups"] = {
+										["g"] = {
 											i(63398),	-- Armadillo Pup - Revered
 										},
 									}),
 									ach(5840, {	-- Dragonwrath, Tarecgosa's Rest - Guild Edition
 										["collectible"] = false,
-										["groups"] = {
+										["g"] = {
 											i(71033),	-- Lil' Tarecgosa - Exalted
 										},
 									}),
 									ach(4988, {	-- Guild Glory of the Cataclysm Raider
 										["collectible"] = false,
-										["groups"] = {
+										["g"] = {
 											i(63125),	-- Reins of the Dark Phoenix - Exalted
 										},
 									}),
 									ach(9669, {	-- Guild Glory of the Draenor Raider
 										["collectible"] = false,
-										["groups"] = {
+										["g"] = {
 											i(116666),	-- Blacksteel Battleboar - Exalted
 										},
 									}),
 									ach(6682, {	-- Guild Glory of the Pandaria Raider
 										["collectible"] = false,
-										["groups"] = {
+										["g"] = {
 											i(85666),	-- Reins of the Thundering Jade Cloud Serpent - Exalted
 										},
 									}),
 									ach(6681, {	-- Guild Pandaren Dungeon Hero
 										["collectible"] = false,
-										["groups"] = {
+										["g"] = {
 											i(89190),	-- Tailored Initiate's Shirt - Honored
 											i(89192),	-- Tailored Memeber's Shirt - Honored
 											i(89194),	-- Tailored Officer's Shirt - Honored
@@ -2656,26 +2628,26 @@ _.Zones =
 									}),
 									a(ach(5031, {	-- Horde Slayer
 										["collectible"] = false,
-										["groups"] = {
+										["g"] = {
 											a(i(65361)),	-- Guild Page - Honored - minipet bound to Character
 										},
 									})),
 									ach(5035, {	-- Master Crafter
 										["collectible"] = false,
-										["groups"] = {
+										["g"] = {
 											a(i(65360)),	-- Cloak of Coordination - Revered
 											h(i(65274)),	-- Cloak of Coordination - Revered
 										},
 									}),
 									ach(5465, {	-- Mix Master
 										["collectible"] = false,
-										["groups"] = {
+										["g"] = {
 											i(65435),	-- Recipe: Cauldron of Battle
 										},
 									}),
 									a(ach(6644, {	-- Pandaren Embassy
 										["collectible"] = false,
-										["groups"] = {
+										["g"] = {
 											i(89191),	-- Artisan Initiate's Shirt - Exalted
 											i(89193),	-- Artisan Member's Shirt - Exalted
 											i(89195),	-- Artisan Officer's Shirt - Exalted
@@ -2683,7 +2655,7 @@ _.Zones =
 									})),
 									h(ach(6664, {	-- Pandaren Embassy
 										["collectible"] = false,
-										["groups"] = {
+										["g"] = {
 											i(89191),	-- Artisan Initiate's Shirt - Exalted
 											i(89193),	-- Artisan Member's Shirt - Exalted
 											i(89195),	-- Artisan Officer's Shirt - Exalted
@@ -2691,14 +2663,14 @@ _.Zones =
 									})),
 									ach(5201, {	-- Profit Sharing
 										["collectible"] = false,
-										["groups"] = {
+										["g"] = {
 											a(i(65363)),	-- Guild Herald - Revered - minipet bound to Character
 											h(i(65364)),	-- Guild Herald - Revered - minipet bound to Character
 										},
 									}),
 									a(ach(7448, {	-- Scenario Roundup
 										["collectible"] = false,
-										["groups"] = {
+										["g"] = {
 											i(85508),	-- Initiate's Shirt - Honored
 											i(85509),	-- Member's Shirt - Honored
 											i(85510),	-- Officer's Shirt - Honored
@@ -2706,7 +2678,7 @@ _.Zones =
 									})),
 									h(ach(7449, {	-- Scenario Roundup
 										["collectible"] = false,
-										["groups"] = {
+										["g"] = {
 											i(85508),	-- Initiate's Shirt - Honored
 											i(85509),	-- Member's Shirt - Honored
 											i(85510),	-- Officer's Shirt - Honored
@@ -2714,31 +2686,31 @@ _.Zones =
 									})),
 									ach(5467, {	-- Set the Oven to "Cataclysmic"
 										["collectible"] = false,
-										["groups"] = {
+										["g"] = {
 											i(62799),	-- Recipe: Broiled Dragon Feast
 										},
 									}),
 									ach(5036, {	-- That's a Lot of Bait
 										["collectible"] = false,
-										["groups"] = {
+										["g"] = {
 											i(62800),	-- Recipe: Seafood Magnifique Feast
 										},
 									}),
 									a(ach(5812, {	-- United Nations
 										["collectible"] = false,
-										["groups"] = {
+										["g"] = {
 											i(63138),	-- Dark Phoenix Hatchling - Exalted
 										},
 									})),
 									h(ach(5892, {	-- United Nations
 										["collectible"] = false,
-										["groups"] = {
+										["g"] = {
 											i(63138),	-- Dark Phoenix Hatchling - Exalted
 										},
 									})),
 									ach(6626, {	-- Working Better as a Team
 										["collectible"] = false,
-										["groups"] = {
+										["g"] = {
 											i(127011),	-- Pristine Lightforged Legplates - Honored
 											i(122252),	-- Tarnished Leggings of Destruction - Honored
 											i(122251),	-- Polished Legplates of Valor - Honored
@@ -2773,7 +2745,7 @@ _.Zones =
 						},
 						["description"] = "If you cannot find an item on this vendor, either your guild does not have the required Achievement, or you do not have sufficient rep with your guild to purchase the item.|r",
 					}),
-					n(29495, {  -- Norvin Alderman <Cloaks>
+					n(29495,  {  -- Norvin Alderman <Cloaks>
 						i(50466),	-- Sentinel's Winter Cloak
 						i(50467),	-- Might of the Ocean Serpent
 						i(50468),	-- Drape of the Violet Tower
@@ -2784,11 +2756,11 @@ _.Zones =
 						i(40723),	-- Disguise of the Kumiho
 						i(40724),	-- Cloak of Kea Feathers
 					}),
-					n(29527, {  -- Orton Bennet <Offhand Offerings>
+					n(29527,  {  -- Orton Bennet <Offhand Offerings>
 						i(40698),	-- Ward of the Violet Citadel
 						i(40699),	-- Handbook of Obscure Remedies
 					}),
-					n(28995, {  -- Paldesse <Cloth Armor Merchant>	
+					n(28995,  {  -- Paldesse <Cloth Armor Merchant>	
 						i(50997),	-- Circle of Ossus
 						i(50984),	-- Gloves of Ambivalence
 						i(50983),	-- Gloves of False Gestures
@@ -2886,7 +2858,7 @@ _.Zones =
 					
 					
 					}),
-					n(35497, {  -- Rafael Langrom <Leather Armor Merchant>
+					n(35497,  {  -- Rafael Langrom <Leather Armor Merchant>
 						i(48102),	-- Malfurion's Headpiece of Conquest
 						i(48129),	-- Malfurion's Robe of Conquest
 						i(48130),	-- Malfurion's Leggings of Conquest
@@ -2988,7 +2960,7 @@ _.Zones =
 						i(51303),	-- Sanctified Lasherweave Legplates
 						i(51304),	-- Sanctified Lasherweave Pauldrons
 					}),
-					n(35496, {  -- Rueben Lauren <Cloth Armor Merchant>
+					n(35496,  {  -- Rueben Lauren <Cloth Armor Merchant>
 						i(51258),	-- Sanctified Crimson Acolyte Pants
 						i(51284),	-- Sanctified Bloodmage Shoulderpads
 						i(51281),	-- Sanctified Bloodmage Hood
@@ -3090,7 +3062,7 @@ _.Zones =
 						i(47750),	-- Khadgar's Leggings of Conquest
 						i(47748),	-- Khadgar's Hood of Conquest
 					}),
-					n(29703, {  -- Sheddle Glossgleam <Cobbler>
+					n(29703,  {  -- Sheddle Glossgleam <Cobbler>
 						i(40742),	-- Bladed Steelboots
 						i(40743),	-- Kyzoc's Ground Stompers
 						i(40745),	-- Sabatons of Rapid Recovery
@@ -3101,7 +3073,7 @@ _.Zones =
 						i(40750),	-- Xintor's Expeditionary Boots
 						i(40751),	-- Slippers of the Holy Light
 					}),
-					n(28721, { -- Tiffany Cartier <Jewelcrafting Supplies>
+					n(28721,  { -- Tiffany Cartier <Jewelcrafting Supplies>
 						currency(61, { -- Dalaran Jewelcrafter's Token
 							i(42298),	-- Design: Bold Dragon's Eye
 							i(41576),	-- Design: Bold Scarlet Ruby
@@ -3230,7 +3202,7 @@ _.Zones =
 							i(42225),	-- Dragon's Eye
 						}),
 					}),
-					n(28701, { -- Timothy Jones <Jewelcrafting Trainer>
+					n(28701,  { -- Timothy Jones <Jewelcrafting Trainer>
 						currency(61, { -- Dalaran Jewelcrafter's Token
 							i(47010),	-- Design: Accurate Dreadstone
 							i(46917),	-- Design: Bold Cardinal Ruby
@@ -3382,10 +3354,10 @@ _.Zones =
 							i(46952),	-- Design: Willful Ametrine
 						}),
 					}),
-					n(28991, {  -- Valaden Silverblade <Sword Merchant>
+					n(28991,  {  -- Valaden Silverblade <Sword Merchant>
 						i(40703),	-- Grasscutter
 					}),
-					n(28992, {  -- Valerie Langrom <Leather Armor Merchant>
+					n(28992,  {  -- Valerie Langrom <Leather Armor Merchant>
 						i(50995),	-- Vengeful Noose
 						i(50982),	-- Cat Burglar's Grips
 						i(50981),	-- Gloves of the Great Horned Owl
@@ -3485,7 +3457,7 @@ _.Zones =
 						i(39539),	-- Heroes' Dreamwalker Leggings
 						i(39531),	-- Heroes' Dreamwalker Headpiece				
 					}),
-					n(32514, {	-- Vanessa Sellers <Shard Trader>
+					n(32514,  {	-- Vanessa Sellers <Shard Trader>
 						i(34057, {	-- Abyss Crystal
 							i(44944),	-- Formula: Enchant Bracer - Major Stamina
 						}),
@@ -3517,10 +3489,10 @@ _.Zones =
 					}),
 				}),
 				n(-213, {	-- The Underbelly
-					prof(356, { -- Fishing
+					prof(356, {	-- Fishing
 						i(43698),	-- Giant Sewer Rat
 					}),
-					n(-17, {	-- Quests
+					n(-17,    {	-- Quests
 						qg(32516, q(13571, {	-- Fletcher's Lost and Found
 							recipe(53056),	-- Kungaloosh
 						})),
@@ -3530,9 +3502,11 @@ _.Zones =
 							["isBreadcrumb"] = 1,
 						},
 					}),
-					n(-2, {		-- Vendors
-						n(30885, { 	-- Blazik Fireclaw <Hateful Gladiator>
-							["groups"] = {
+					n(-2,     {	-- Vendors
+						n(30885, {	-- Blazik Fireclaw <Hateful Gladiator>
+							["itemID"] = 137642,	-- Mark of Honor
+							["coord"] = {60.4, 55.2, 502 },
+							["g"] = {
 								i(146646), -- Arsenal: Hateful Gladiator's Weapons
 								i(146565, { -- Ensemble: Hateful Gladiator's Satin Armor		
 									i(41913),	-- Hateful Gladiator's Satin Hood
@@ -3795,13 +3769,14 @@ _.Zones =
 								i(41314),	-- Hateful Gladiator's Wyrmhide Robes
 								i(41279),	-- Hateful Gladiator's Wyrmhide Spaulders
 							},
-							["itemID"] = 137642,  -- Marks of Honor
 						}),
-						n(29537, { 	-- Darahir <Reagents & Magical Goods>
+						n(29537, {	-- Darahir <Reagents & Magical Goods>
 							i(39973),	-- Ghostly Skull
 						}),
-						n(69321, { 	-- Herwin Steampop <Deadly Gladiator>
-							["groups"] = {
+						n(69321, {	-- Herwin Steampop <Deadly Gladiator>
+							["itemID"] = 137642,	-- Mark of Honor
+							["coord"] = {59.2, 58.6, 502 },
+							["g"] = {
 								i(146645), -- Arsenal: Deadly Gladiator's Weapon
 								i(42564),	-- Deadly Gladiator's Barrier
 								i(42513),	-- Deadly Gladiator's Baton of Light
@@ -3964,7 +3939,6 @@ _.Zones =
 								i(147589),	-- Deadly Gladiator's Bracers of Victory
 								i(147594),	-- Deadly Gladiator's Treads of Ascendancy
 							},
-							["itemID"] = 137642,  -- Marks of Honor
 						}),
 						n(29538, {  -- Hexil Garrot <Tools of the Trade>
 							i(50995),	-- Vengeful Noose
@@ -3989,7 +3963,9 @@ _.Zones =
 							i(40694),	-- Jorach's Crocolisk Skin Belt
 						}),
 						n(69318, {  -- Kylo Kelwin <Furious Gladiator>
-							["groups"] = {
+							["itemID"] = 137642,	-- Mark of Honor
+							["coord"] = {59.2, 58.6, 502 },
+							["g"] = {
 								i(146644), -- Arsenal: Furious Gladiator's Weapons
 								i(42565),	-- Furious Gladiator's Barrier
 								i(42514),	-- Furious Gladiator's Baton of Light
@@ -4154,10 +4130,10 @@ _.Zones =
 								i(147595),	-- Furious Gladiator's Cuffs of Ascendancy
 								i(147600),	-- Furious Gladiator's Greaves of Victory
 							},
-							["itemID"] = 137642,  -- Marks of Honor
 						}),
 						n(33921, {  -- Nargle Lashcord <Veteran Arena Vendor>
-							["groups"] = {
+							["u"] = 43, -- Vendor no longer exists
+							["g"] = {
 								un(2, i(45983)),	-- Furious Gladiator's Tabard [Elite Rating]
 								i(42565),	-- Furious Gladiator's Barrier
 								i(42514),	-- Furious Gladiator's Baton of Light
@@ -4251,9 +4227,9 @@ _.Zones =
 								i(41316),	-- Furious Gladiator's Wyrmhide Robes
 								i(41281),	-- Furious Gladiator's Wyrmhide Spaulders
 							},
-							["u"] = 43, -- Vendor no longer exists
 						}),
 						n(40211, { -- Nargle Lashcord >S9< Elite <Vicious Gladiator>
+							["u"] = 43,	-- Vendor no longer exists
 							["g"] = {
 								un(2, i(67454)),	-- Vicious Gladiator's Gavel
 								un(2, i(67470)),	-- Vicious Gladiator's Bonebracker
@@ -4514,137 +4490,137 @@ _.Zones =
 								un(2, i(70606)),	-- Vicious Gladiator's medallion of tenacity. S10 Version (ally)
 								un(2, i(70607)),	-- Vicious Gladiator's medallion of tenactiy. S10 Version (horde)
 								},
-							["u"] = 43,
 						}),
 						n(54653, { -- Nargle Lashcord >S11< Elite <Glorious Conquest Quartermaster>
+							["u"] = 43,	-- Vendor no longer exists
 							["g"] = {
 								-- Elite
-									un(2, i(73413)),	-- Cataclysmic Gladitor's Shield Wall
-									un(2, i(73425)),	-- Cataclysmic Gladitor's Redoubt
-									un(2, i(73435)),	-- Cataclysmic Gladitor's Barrier
-									un(2, i(73414)),	-- Cataclysmic Gladitor's Slicer
-									un(2, i(73439)),	-- Cataclysmic Gladitor's Quickblade
-									un(2, i(73415)),	-- Cataclysmic Gladitor's Bonebracker
-									un(2, i(73426)),	-- Cataclysmic Gladitor's Gavel
-									un(2, i(73440)),	-- Cataclysmic Gladitor's Pummeler
-									un(2, i(73416)),	-- Cataclysmic Gladitor's Hacker
-									un(2, i(73441)),	-- Cataclysmic Gladitor's Cleaver
-									un(2, i(73417)),	-- Cataclysmic Gladitor's Baton of light
-									un(2, i(73431)),	-- Cataclysmic Gladitor's Touch of Defeat
-									un(2, i(73418)),	-- Cataclysmic Gladitor's Slasher
-									un(2, i(73419)),	-- Cataclysmic Gladitor's Right render
-									un(2, i(73420)),	-- Cataclysmic Gladitor's flesh slicer
-									un(2, i(73421)),	-- Cataclysmic Gladitor's ripper
-									un(2, i(73422)),	-- Cataclysmic Gladitor's Shanker
-									un(2, i(73428)),	-- Cataclysmic Gladitor's Shiv
-									un(2, i(73434)),	-- Cataclysmic Gladitor's Spellblade)
-									un(2, i(73423)),	-- Cataclysmic Gladitor's Pike
-									un(2, i(73424)),	-- Cataclysmic Gladitor's Engery Staff
-									un(2, i(73429)),	-- Cataclysmic Gladitor's Staff
-									un(2, i(73433)),	-- Cataclysmic Gladitor's Battle Staff
-									un(2, i(73427)),	-- Cataclysmic Gladitor's Rifle
-									un(2, i(73430)),	-- Cataclysmic Gladitor's Heavy Crossbow
-									un(2, i(73432)),	-- Cataclysmic Gladitor's Reprieve
-									un(2, i(73436)),	-- Cataclysmic Gladitor's Endgame)
-									un(2, i(73437)),	-- Cataclysmic Gladitor's Longbow
-									un(2, i(73442)),	-- Cataclysmic Gladitor's Greatsword)
-									un(2, i(73443)),	-- Cataclysmic Gladitor's Bonegrinder
-									un(2, i(73444)),	-- Cataclysmic Gladitor's Decapitator)
-									un(2, i(73661)),	-- Cataclysmic Gladitor's Mail Spaulders
-									un(2, i(73662)),	-- Cataclysmic Gladitor's Mail Legs
-									un(2, i(73663)),	-- Cataclysmic Gladitor's Mail Helm
-									un(2, i(73664)),	-- Cataclysmic Gladitor's Mail Gauntlets
-									un(2, i(73665)),	-- Cataclysmic Gladitor's Mail Armor
-									un(2, i(73666)),	-- Cataclysmic Gladitor's Linked Spaulders
-									un(2, i(73667)),	-- Cataclysmic Gladitor's Linked Legs
-									un(2, i(73668)),	-- Cataclysmic Gladitor's Linked Helm
-									un(2, i(73669)),	-- Cataclysmic Gladitor's Linked Gauntlets
-									un(2, i(73670)),	-- Cataclysmic Gladitor's Linked Armor
-									un(2, i(73671)),	-- Cataclysmic Gladitor's Ringmail Spaulders
-									un(2, i(73672)),	-- Cataclysmic Gladitor's Ringmail Legs
-									un(2, i(73673)),	-- Cataclysmic Gladitor's Ringmail Helm
-									un(2, i(73674)),	-- Cataclysmic Gladitor's Ringmail Gauntlets
-									un(2, i(73675)),	-- Cataclysmic Gladitor's Ringmail Armor
-									un(2, i(73676)),	-- Cataclysmic Gladitor's Sabatons of Meditation
-									un(2, i(73677)),	-- Cataclysmic Gladitor's Sabatons of Alacrity
-									un(2, i(73714)),	-- Cataclysmic Gladitor's Chain Spaulders
-									un(2, i(73715)),	-- Cataclysmic Gladitor's Chain Legs
-									un(2, i(73716)),	-- Cataclysmic Gladitor's Chain Helm
-									un(2, i(73717)),	-- Cataclysmic Gladitor's Chain Gauntlets
-									un(2, i(73718)),	-- Cataclysmic Gladitor's Chain Armor
-									un(2, i(73719)),	-- Cataclysmic Gladitor's Sabatons of Alacrity
-									un(2, i(73720)),	-- Cataclysmic Gladitor's Sabatons of Cruelty
-									un(2, i(73678)),	-- Cataclysmic Gladiator's Leather Spaulders
-									un(2, i(73679)),	-- Cataclysmic Gladiator's Leather Legs
-									un(2, i(73680)),	-- Cataclysmic Gladiator's Leather Helm
-									un(2, i(73681)),	-- Cataclysmic Gladiator's Leather Gloves
-									un(2, i(73682)),	-- Cataclysmic Gladiator's Leather Tunic
-									un(2, i(73683)),	-- Cataclysmic Gladiator's Boots of Alacrity
-									un(2, i(73684)),	-- Cataclysmic Gladiator's Leather Boots of Cruelty
-									un(2, i(73721)),	-- Cataclysmic Gladiator's Wyrmhide Spaulders
-									un(2, i(73722)),	-- Cataclysmic Gladiator's Wyrmhide Robe
-									un(2, i(73723)),	-- Cataclysmic Gladiator's Wyrmhide legs
-									un(2, i(73724)),	-- Cataclysmic Gladiator's Wyrmhide helm
-									un(2, i(73725)),	-- Cataclysmic Gladiator's Wyrmhide gloves
-									un(2, i(73726)),	-- Cataclysmic Gladiator's Wyrmhide Footguards of Alacrity
-									un(2, i(73727)),	-- Cataclysmic Gladiator's Kodohide Spaulders
-									un(2, i(73728)),	-- Cataclysmic Gladiator's Kodohide Robe
-									un(2, i(73729)),	-- Cataclysmic Gladiator's Kodohide Legs
-									un(2, i(73730)),	-- Cataclysmic Gladiator's Kodohide Helm
-									un(2, i(73731)),	-- Cataclysmic Gladiator's Kodohide Gloves
-									un(2, i(73732)),	-- Cataclysmic Gladiator's Kodohide Footguards of Meditation
-									un(2, i(73733)),	-- Cataclysmic Gladiator's Dragonhide Spaulders
-									un(2, i(73734)),	-- Cataclysmic Gladiator's DragonhideRobe
-									un(2, i(73735)),	-- Cataclysmic Gladiator's Dragonhide Legs
-									un(2, i(73736)),	-- Cataclysmic Gladiator's DragonhideHelm
-									un(2, i(73737)),	-- Cataclysmic Gladiator's DragonhideGloves
-									un(2, i(73656)),	-- Cataclysmic Gladiator's Felweave Amice
-									un(2, i(73657)),	-- Cataclysmic Gladiator's Felweave Rainment
-									un(2, i(73658)),	-- Cataclysmic Gladiator's Felweave Trousers
-									un(2, i(73659)),	-- Cataclysmic Gladiator's Felweave Cowl
-									un(2, i(73660)),	-- Cataclysmic Gladiator's Felweave Gloves
-									un(2, i(73685)),	-- Cataclysmic Gladiator's Satin Mantle
-									un(2, i(73686)),	-- Cataclysmic Gladiator's Satin Robe
-									un(2, i(73687)),	-- Cataclysmic Gladiator's Satin Legs
-									un(2, i(73688)),	-- Cataclysmic Gladiator's Satin Hood
-									un(2, i(73689)),	-- Cataclysmic Gladiator's Satin Gloves
-									un(2, i(73690)),	-- Cataclysmic Gladiator's Mooncloth Mantle
-									un(2, i(73691)),	-- Cataclysmic Gladiator's Mooncloth Robe
-									un(2, i(73692)),	-- Cataclysmic Gladiator's Mooncloth Legs
-									un(2, i(73693)),	-- Cataclysmic Gladiator's Mooncloth Helm
-									un(2, i(73694)),	-- Cataclysmic Gladiator's Mooncloth Gloves
-									un(2, i(73709)),	-- Cataclysmic Gladiator's Silk Amice
-									un(2, i(73710)),	-- Cataclysmic Gladiator's Silk Robe
-									un(2, i(73711)),	-- Cataclysmic Gladiator's Silk Trousers
-									un(2, i(73712)),	-- Cataclysmic Gladiator's Silk Cowl
-									un(2, i(73713)),	-- Cataclysmic Gladiator's Silk Handguards
-									un(2, i(73743)),	-- Cataclysmic Gladiator's Treads of Medi
-									un(2, i(73744)),	-- Cataclysmic Gladiator's Treads of Alacrity
-									un(2, i(73745)),	-- Cataclysmic Gladiator's Treads of Cruelty 
-									un(2, i(73651)),	-- Cataclysmic Gladiator's Plate Soulders
-									un(2, i(73652)),	-- Cataclysmic Gladiator's Plate Legs
-									un(2, i(73653)),	-- Cataclysmic Gladiator's Plate Helm
-									un(2, i(73654)),	-- Cataclysmic Gladiator's Plate Gloves
-									un(2, i(73655)),	-- Cataclysmic Gladiator's Plate Chest
-									un(2, i(73695)),	-- Cataclysmic Gladiator's warboots of alacrity
-									un(2, i(73696)),	-- Cataclysmic Gladiator's warboots of cruelty
-									un(2, i(73697)),	-- Cataclysmic Gladiator's Ornnamented Spaulders
-									un(2, i(73698)),	-- Cataclysmic Gladiator's Ornnamented legs
-									un(2, i(73699)),	-- Cataclysmic Gladiator's Ornnamented head
-									un(2, i(73700)),	-- Cataclysmic Gladiator's Ornnamented gloves
-									un(2, i(73701)),	-- Cataclysmic Gladiator's Ornnamented chest
-									un(2, i(73702)),	-- Cataclysmic Gladiator's greaves of mediation
-									un(2, i(73703)),	-- Cataclysmic Gladiator's greaves of alacrity
-									un(2, i(73704)),	-- Cataclysmic Gladiator's scaled shoulders
-									un(2, i(73705)),	-- Cataclysmic Gladiator's scaled legs
-									un(2, i(73706)),	-- Cataclysmic Gladiator's scaled helm
-									un(2, i(73707)),	-- Cataclysmic Gladiator's scaled gloves
-									un(2, i(73708)),	-- Cataclysmic Gladiator's scaled chest
-									un(2, i(73738)),	-- Cataclysmic Gladiator's dreadplate shoulders
-									un(2, i(73739)),	-- Cataclysmic Gladiator's dreadplate legs
-									un(2, i(73740)),	-- Cataclysmic Gladiator's dreadplate helm
-									un(2, i(73741)),	-- Cataclysmic Gladiator's dreadplate gauntlets
-									un(2, i(73742)),	-- Cataclysmic Gladiator's dreadplate chestpiece
+								un(2, i(73413)),	-- Cataclysmic Gladitor's Shield Wall
+								un(2, i(73425)),	-- Cataclysmic Gladitor's Redoubt
+								un(2, i(73435)),	-- Cataclysmic Gladitor's Barrier
+								un(2, i(73414)),	-- Cataclysmic Gladitor's Slicer
+								un(2, i(73439)),	-- Cataclysmic Gladitor's Quickblade
+								un(2, i(73415)),	-- Cataclysmic Gladitor's Bonebracker
+								un(2, i(73426)),	-- Cataclysmic Gladitor's Gavel
+								un(2, i(73440)),	-- Cataclysmic Gladitor's Pummeler
+								un(2, i(73416)),	-- Cataclysmic Gladitor's Hacker
+								un(2, i(73441)),	-- Cataclysmic Gladitor's Cleaver
+								un(2, i(73417)),	-- Cataclysmic Gladitor's Baton of light
+								un(2, i(73431)),	-- Cataclysmic Gladitor's Touch of Defeat
+								un(2, i(73418)),	-- Cataclysmic Gladitor's Slasher
+								un(2, i(73419)),	-- Cataclysmic Gladitor's Right render
+								un(2, i(73420)),	-- Cataclysmic Gladitor's flesh slicer
+								un(2, i(73421)),	-- Cataclysmic Gladitor's ripper
+								un(2, i(73422)),	-- Cataclysmic Gladitor's Shanker
+								un(2, i(73428)),	-- Cataclysmic Gladitor's Shiv
+								un(2, i(73434)),	-- Cataclysmic Gladitor's Spellblade)
+								un(2, i(73423)),	-- Cataclysmic Gladitor's Pike
+								un(2, i(73424)),	-- Cataclysmic Gladitor's Engery Staff
+								un(2, i(73429)),	-- Cataclysmic Gladitor's Staff
+								un(2, i(73433)),	-- Cataclysmic Gladitor's Battle Staff
+								un(2, i(73427)),	-- Cataclysmic Gladitor's Rifle
+								un(2, i(73430)),	-- Cataclysmic Gladitor's Heavy Crossbow
+								un(2, i(73432)),	-- Cataclysmic Gladitor's Reprieve
+								un(2, i(73436)),	-- Cataclysmic Gladitor's Endgame)
+								un(2, i(73437)),	-- Cataclysmic Gladitor's Longbow
+								un(2, i(73442)),	-- Cataclysmic Gladitor's Greatsword)
+								un(2, i(73443)),	-- Cataclysmic Gladitor's Bonegrinder
+								un(2, i(73444)),	-- Cataclysmic Gladitor's Decapitator)
+								un(2, i(73661)),	-- Cataclysmic Gladitor's Mail Spaulders
+								un(2, i(73662)),	-- Cataclysmic Gladitor's Mail Legs
+								un(2, i(73663)),	-- Cataclysmic Gladitor's Mail Helm
+								un(2, i(73664)),	-- Cataclysmic Gladitor's Mail Gauntlets
+								un(2, i(73665)),	-- Cataclysmic Gladitor's Mail Armor
+								un(2, i(73666)),	-- Cataclysmic Gladitor's Linked Spaulders
+								un(2, i(73667)),	-- Cataclysmic Gladitor's Linked Legs
+								un(2, i(73668)),	-- Cataclysmic Gladitor's Linked Helm
+								un(2, i(73669)),	-- Cataclysmic Gladitor's Linked Gauntlets
+								un(2, i(73670)),	-- Cataclysmic Gladitor's Linked Armor
+								un(2, i(73671)),	-- Cataclysmic Gladitor's Ringmail Spaulders
+								un(2, i(73672)),	-- Cataclysmic Gladitor's Ringmail Legs
+								un(2, i(73673)),	-- Cataclysmic Gladitor's Ringmail Helm
+								un(2, i(73674)),	-- Cataclysmic Gladitor's Ringmail Gauntlets
+								un(2, i(73675)),	-- Cataclysmic Gladitor's Ringmail Armor
+								un(2, i(73676)),	-- Cataclysmic Gladitor's Sabatons of Meditation
+								un(2, i(73677)),	-- Cataclysmic Gladitor's Sabatons of Alacrity
+								un(2, i(73714)),	-- Cataclysmic Gladitor's Chain Spaulders
+								un(2, i(73715)),	-- Cataclysmic Gladitor's Chain Legs
+								un(2, i(73716)),	-- Cataclysmic Gladitor's Chain Helm
+								un(2, i(73717)),	-- Cataclysmic Gladitor's Chain Gauntlets
+								un(2, i(73718)),	-- Cataclysmic Gladitor's Chain Armor
+								un(2, i(73719)),	-- Cataclysmic Gladitor's Sabatons of Alacrity
+								un(2, i(73720)),	-- Cataclysmic Gladitor's Sabatons of Cruelty
+								un(2, i(73678)),	-- Cataclysmic Gladiator's Leather Spaulders
+								un(2, i(73679)),	-- Cataclysmic Gladiator's Leather Legs
+								un(2, i(73680)),	-- Cataclysmic Gladiator's Leather Helm
+								un(2, i(73681)),	-- Cataclysmic Gladiator's Leather Gloves
+								un(2, i(73682)),	-- Cataclysmic Gladiator's Leather Tunic
+								un(2, i(73683)),	-- Cataclysmic Gladiator's Boots of Alacrity
+								un(2, i(73684)),	-- Cataclysmic Gladiator's Leather Boots of Cruelty
+								un(2, i(73721)),	-- Cataclysmic Gladiator's Wyrmhide Spaulders
+								un(2, i(73722)),	-- Cataclysmic Gladiator's Wyrmhide Robe
+								un(2, i(73723)),	-- Cataclysmic Gladiator's Wyrmhide legs
+								un(2, i(73724)),	-- Cataclysmic Gladiator's Wyrmhide helm
+								un(2, i(73725)),	-- Cataclysmic Gladiator's Wyrmhide gloves
+								un(2, i(73726)),	-- Cataclysmic Gladiator's Wyrmhide Footguards of Alacrity
+								un(2, i(73727)),	-- Cataclysmic Gladiator's Kodohide Spaulders
+								un(2, i(73728)),	-- Cataclysmic Gladiator's Kodohide Robe
+								un(2, i(73729)),	-- Cataclysmic Gladiator's Kodohide Legs
+								un(2, i(73730)),	-- Cataclysmic Gladiator's Kodohide Helm
+								un(2, i(73731)),	-- Cataclysmic Gladiator's Kodohide Gloves
+								un(2, i(73732)),	-- Cataclysmic Gladiator's Kodohide Footguards of Meditation
+								un(2, i(73733)),	-- Cataclysmic Gladiator's Dragonhide Spaulders
+								un(2, i(73734)),	-- Cataclysmic Gladiator's DragonhideRobe
+								un(2, i(73735)),	-- Cataclysmic Gladiator's Dragonhide Legs
+								un(2, i(73736)),	-- Cataclysmic Gladiator's DragonhideHelm
+								un(2, i(73737)),	-- Cataclysmic Gladiator's DragonhideGloves
+								un(2, i(73656)),	-- Cataclysmic Gladiator's Felweave Amice
+								un(2, i(73657)),	-- Cataclysmic Gladiator's Felweave Rainment
+								un(2, i(73658)),	-- Cataclysmic Gladiator's Felweave Trousers
+								un(2, i(73659)),	-- Cataclysmic Gladiator's Felweave Cowl
+								un(2, i(73660)),	-- Cataclysmic Gladiator's Felweave Gloves
+								un(2, i(73685)),	-- Cataclysmic Gladiator's Satin Mantle
+								un(2, i(73686)),	-- Cataclysmic Gladiator's Satin Robe
+								un(2, i(73687)),	-- Cataclysmic Gladiator's Satin Legs
+								un(2, i(73688)),	-- Cataclysmic Gladiator's Satin Hood
+								un(2, i(73689)),	-- Cataclysmic Gladiator's Satin Gloves
+								un(2, i(73690)),	-- Cataclysmic Gladiator's Mooncloth Mantle
+								un(2, i(73691)),	-- Cataclysmic Gladiator's Mooncloth Robe
+								un(2, i(73692)),	-- Cataclysmic Gladiator's Mooncloth Legs
+								un(2, i(73693)),	-- Cataclysmic Gladiator's Mooncloth Helm
+								un(2, i(73694)),	-- Cataclysmic Gladiator's Mooncloth Gloves
+								un(2, i(73709)),	-- Cataclysmic Gladiator's Silk Amice
+								un(2, i(73710)),	-- Cataclysmic Gladiator's Silk Robe
+								un(2, i(73711)),	-- Cataclysmic Gladiator's Silk Trousers
+								un(2, i(73712)),	-- Cataclysmic Gladiator's Silk Cowl
+								un(2, i(73713)),	-- Cataclysmic Gladiator's Silk Handguards
+								un(2, i(73743)),	-- Cataclysmic Gladiator's Treads of Medi
+								un(2, i(73744)),	-- Cataclysmic Gladiator's Treads of Alacrity
+								un(2, i(73745)),	-- Cataclysmic Gladiator's Treads of Cruelty 
+								un(2, i(73651)),	-- Cataclysmic Gladiator's Plate Soulders
+								un(2, i(73652)),	-- Cataclysmic Gladiator's Plate Legs
+								un(2, i(73653)),	-- Cataclysmic Gladiator's Plate Helm
+								un(2, i(73654)),	-- Cataclysmic Gladiator's Plate Gloves
+								un(2, i(73655)),	-- Cataclysmic Gladiator's Plate Chest
+								un(2, i(73695)),	-- Cataclysmic Gladiator's warboots of alacrity
+								un(2, i(73696)),	-- Cataclysmic Gladiator's warboots of cruelty
+								un(2, i(73697)),	-- Cataclysmic Gladiator's Ornnamented Spaulders
+								un(2, i(73698)),	-- Cataclysmic Gladiator's Ornnamented legs
+								un(2, i(73699)),	-- Cataclysmic Gladiator's Ornnamented head
+								un(2, i(73700)),	-- Cataclysmic Gladiator's Ornnamented gloves
+								un(2, i(73701)),	-- Cataclysmic Gladiator's Ornnamented chest
+								un(2, i(73702)),	-- Cataclysmic Gladiator's greaves of mediation
+								un(2, i(73703)),	-- Cataclysmic Gladiator's greaves of alacrity
+								un(2, i(73704)),	-- Cataclysmic Gladiator's scaled shoulders
+								un(2, i(73705)),	-- Cataclysmic Gladiator's scaled legs
+								un(2, i(73706)),	-- Cataclysmic Gladiator's scaled helm
+								un(2, i(73707)),	-- Cataclysmic Gladiator's scaled gloves
+								un(2, i(73708)),	-- Cataclysmic Gladiator's scaled chest
+								un(2, i(73738)),	-- Cataclysmic Gladiator's dreadplate shoulders
+								un(2, i(73739)),	-- Cataclysmic Gladiator's dreadplate legs
+								un(2, i(73740)),	-- Cataclysmic Gladiator's dreadplate helm
+								un(2, i(73741)),	-- Cataclysmic Gladiator's dreadplate gauntlets
+								un(2, i(73742)),	-- Cataclysmic Gladiator's dreadplate chestpiece
 								un(2, i(73662)),	-- Cataclysmic Gladitor's Mail Legs
 								un(2, i(73663)),	-- Cataclysmic Gladitor's Mail Helm
 								un(2, i(73664)),	-- Cataclysmic Gladitor's Mail Gauntlets
@@ -4693,10 +4669,10 @@ _.Zones =
 								un(2, i(73736)),	-- Cataclysmic Gladiator's DragonhideHelm
 								un(2, i(73737)),	-- Cataclysmic Gladiator's DragonhideGloves
 								},
-							["u"] = 43,
 						}),
 						n(34092, {	-- Trapjaw Rix Season >7< Elite Version [Note: Yes, two npc's with same name. One is removed]
-							["groups"] = {
+							["u"] = 43,	-- Vendor no longer exists
+							["g"] = {
 								un(2, i(49086)), -- Relentless Gladiator's Tabard [Elite Rating]
 								un(2, i(48435)),	-- Relentless Gladiator's Punisher
 								un(2, i(48511)),	-- Relentless Gladiator's Truncheon
@@ -4718,10 +4694,10 @@ _.Zones =
 								un(2, i(48402)),	-- Relentless Gladiator's Sunderer
 								un(2, i(48406)),	-- Relentless Gladiator's Claymore)
 							},
-							["u"] = 43, -- Vendor no longer exists
 						}),
 						n(34095, {	-- Trapjaw Rix Season >8< Elite Version [Note: Yes, two npc's with same name. One is removed]
-							["groups"] = {
+							["u"] = 43,	-- Vendor no longer exists
+							["g"] = {
 								un(2, i(51534)),	-- Wrathful Gladiator's Tabard [Elite Rating]
 								un(2, i(51403)),	-- Wrathful Gladiator's Acute Staff [Elite Rating]
 								un(2, i(51398)),	-- Wrathful Gladiator's Blade of Celerity [Elite Rating]
@@ -4752,10 +4728,11 @@ _.Zones =
 								un(2, i(51448)),	-- Wrathful Gladiator's Swiftblade [Elite Rating]
 								un(2, i(51520)),	-- Wrathful Gladiator's Truncheon [Elite Rating]
 							},
-							["u"] = 43, -- Vendor no longer exists
 						}),
 						n(40212, {  -- Trapjaw Rix <Savage Gladiator>
-							["groups"] = {
+							["itemID"] = 137642,	-- Mark of Honor
+							["coord"] = {59.6, 57.6, 502 },
+							["g"] = {
 								i(146647), -- Arsenal: Savage Gladiator's Weapons
 								i(146585, { -- Ensemble: Savage Gladiator's Satin Armor		
 									i(41912),	-- Savage Gladiator's Satin Hood
@@ -4908,10 +4885,10 @@ _.Zones =
 								i(42008),	-- Savage Gladiator's Felweave Amice
 								i(42014),	-- Savage Gladiator's Felweave Handguards
 							},
-							["itemID"] = 137642,  -- Marks of Honor
 						}),
 						n(31864, {  -- Xazi Smolderpipe >Season 6< Elite
-							["groups"] = {
+							["u"] = 43,	-- Vendor no longer exists
+							["g"] = {
 								un(2, i(45952)),	-- Furious Gladiator's Greatstaff
 								un(2, i(45948)),	-- Furious Gladiator's Sunderer
 								un(2, i(45958)),	-- Furious Gladiator's Spike
@@ -4940,10 +4917,11 @@ _.Zones =
 								un(2, i(45968)),	-- Furious Gladiator's Claw
 								un(2, i(45969)),	-- Furious Gladiator's Grasp)
 							},
-							["u"] = 43,
 						}),
 						n(69971, {  -- Xazi Smolderpipe <Wrathful Gladiator>
-							["groups"] = {
+							["itemID"] = 137642,	-- Mark of Honor
+							["coord"] = {59.0, 58.8, 502 },
+							["g"] = {
 								i(146642), -- Arsenal: Wrathful Gladiator's Weapons
 								i(51452),	-- Wrathful Gladiator's Barrier	
 								i(51532),	-- Wrathful Gladiator's Baton of Light	
@@ -5109,10 +5087,11 @@ _.Zones =
 								i(147605),	-- Wrathful Gladiator's Cuffs of Ascendancy
 								i(147608),	-- Wrathful Gladiator's Girdle of Victory
 							},
-							["itemID"] = 137642,  -- Marks of Honor
 						}),
 						n(69973, {  -- Zom Bocom <Relentless Gladiator>
-							["groups"] = {
+							["itemID"] = 137642,	-- Mark of Honor
+							["coord"] = { 59.0, 58.8, 502 },
+							["g"] = {
 								i(146643), -- Arsenal: Relentless Gladiator's Weapons
 								i(42566),	-- Relentless Gladiator's Barrier
 								i(42515),	-- Relentless Gladiator's Baton of Light
@@ -5280,150 +5259,148 @@ _.Zones =
 								i(41061),	-- Relentless Gladiator's Wristguards of Salvation
 								i(41226),	-- Relentless Gladiator's Wristguards of Triumph
 							},
-							["itemID"] = 137642,  -- Marks of Honor
 						}),
 						n(54651, {	-- Zom Bocom (Same name, different npc)
-							["groups"] = {
+							["u"] = 43,	-- Vendor no longer exists
+							["g"] = {
 								un(2, i(70185)),	-- Ruthless Gladiator's Gavel
-									un(2, i(70201)),	-- Ruthless Gladiator's Bonecracker
-									un(2, i(70202)),	-- Ruthless Gladiator's Pummeler
-									un(2, i(70188)),	-- Ruthless Gladiator's Spellblade
-									un(2, i(70191)),	-- Ruthless Gladiator's Shiv
-									un(2, i(70203)),	-- Ruthless Gladiator's Shanker
-									un(2, i(70204)),	-- Ruthless Gladiator's Hacker
-									un(2, i(70205)),	-- Ruthless Gladiator's Cleaver
-									un(2, i(70199)),	-- Ruthless Gladiator's Quickblade
-									un(2, i(70200)),	-- Ruthless Gladiator's Slicer
-									un(2, i(70194)),	-- Ruthless Gladiator's Rifle
-									un(2, i(70192)),	-- Ruthless Gladiator's Longbow
-									un(2, i(70193)),	-- Ruthless Gladiator's Heavy Crossbow
-									un(2, i(70184)),	-- Ruthless Gladiator's Decapitator
-									un(2, i(70183)),	-- Ruthless Gladiator's Bonegrinder
-									un(2, i(70178)),	-- Ruthless Gladiator's Greatsword)
-									un(2, i(70182)),	-- Ruthless Gladiator's Pike
-									un(2, i(70179)),	-- Ruthless Gladiator's Staff
-									un(2, i(70180)),	-- Ruthless Gladiator's Energy Staff
-									un(2, i(70181)),	-- Ruthless Gladiator's Battle Staff
-									un(2, i(70186)),	-- Ruthless Gladiator's Right Render
-									un(2, i(70187)),	-- Ruthless Gladiator's Ripper
-									un(2, i(70189)),	-- Ruthless Gladiator's Slasher
-									un(2, i(70190)),	-- Ruthless Gladiator's Fleshslicer
-									un(2, i(70206)),	-- Ruthless Gladiator's Redoubt
-									un(2, i(70207)),	-- Ruthless Gladiator's Barrier
-									un(2, i(70208)),	-- Ruthless Gladiator's Shield Wall
-									un(2, i(70195)),	-- Ruthless Gladiator's Baton of Light
-									un(2, i(70196)),	-- Ruthless Gladiator's Touch of Defeat
-									un(2, i(70210)),	-- Ruthless Gladiator's Endgame)
-									
-									un(2, i(70420)),	-- Ruthless Gladiator's Mail Spaulders
-									un(2, i(70421)),	-- Ruthless Gladiator's Mail Legs
-									un(2, i(70422)),	-- Ruthless Gladiator's Mail Helm
-									un(2, i(70423)),	-- Ruthless Gladiator's Mail Gauntlets
-									un(2, i(70424)),	-- Ruthless Gladiator's Mail Armor
-									un(2, i(70433)),	-- Ruthless Gladi Ringmail Armor
-									un(2, i(70464)),	-- Ruthless Gladi Ringmail Spaulders
-									un(2, i(70465)),	-- Ruthless Gladi Ringmail Legs
-									un(2, i(70466)),	-- Ruthless Gladi Ringmail Helm
-									un(2, i(70467)),	-- Ruthless Gladi Ringmail Gauntlets
-									un(2, i(70434)),	-- Ruthless Gladi Chain Spaulders
-									un(2, i(70435)),	-- Ruthless Gladi Chain Legs
-									un(2, i(70440)),	-- Ruthless Gladi Chain Helm
-									un(2, i(70441)),	-- Ruthless Gladi Chain Gauntlets
-									un(2, i(70476)),	-- Ruthless Gladi Chain Armor
-									un(2, i(70456)),	-- Ruthless Gladi Linked Spaulders
-									un(2, i(70457)),	-- Ruthless Gladi Linked Legs
-									un(2, i(70458)),	-- Ruthless Gladi Linked Helm
-									un(2, i(70459)),	-- Ruthless Gladi Linked Gauntlets
-									un(2, i(70460)),	-- Ruthless Gladi Linked Armor
-									un(2, i(70500)),	-- Ruthless Gladi Sabatons of Cruelty
-									un(2, i(70501)),	-- Ruthless Gladi Sabatons of Alacrity
-									un(2, i(70508)),	-- Ruthless Gladi Sabatons of Alacrity
-									un(2, i(70509)),	-- Ruthless Gladi Sabatons of Meditation
-									un(2, i(70428)),	-- Ruthless Gladiator's Wyrmhide helm
-									un(2, i(70429)),	-- Ruthless Gladiator's Wyrmhide gloves
-									un(2, i(70430)),	-- Ruthless Gladiator's kodohide spaulders
-									un(2, i(70431)),	-- Ruthless Gladiator's kodohide robes
-									un(2, i(70432)),	-- Ruthless Gladiator's kodohide legguards
-									un(2, i(70436)),	-- Ruthless Gladiator's kodohide helm
-									un(2, i(70437)),	-- Ruthless Gladiator's kodohide gloves
-									un(2, i(70438)),	-- Ruthless Gladiator's dragonhide spaulders
-									un(2, i(70439)),	-- Ruthless Gladiator's dragonhide robes
-									un(2, i(70442)),	-- Ruthless Gladiator's leather spaulders
-									un(2, i(70443)),	-- Ruthless Gladiator's leather legguards
-									un(2, i(70444)),	-- Ruthless Gladiator's leather helm
-									un(2, i(70445)),	-- Ruthless Gladiator's leather gloves
-									un(2, i(70446)),	-- Ruthless Gladiator's leather tunic
-									un(2, i(70447)),	-- Ruthless Gladiator's wyrmhide spaulders
-									un(2, i(70448)),	-- Ruthless Gladiator's wyrmhide robes
-									un(2, i(70449)),	-- Ruthless Gladiator's wyrmhide legguards
-									un(2, i(70484)),	-- Ruthless Gladiator's dragonhide legguards
-									un(2, i(70485)),	-- Ruthless Gladiator's dragonhide helm
-									un(2, i(70486)),	-- Ruthless Gladiator's dragonhide gloves
-									un(2, i(70498)),	-- Ruthless Gladiator's footguards of mediatiton
-									un(2, i(70499)),	-- Ruthless Gladiator's footguards of alacrity
-									un(2, i(70506)),	-- Ruthless Gladiator's boots of cruelty
-									un(2, i(70507)),	-- Ruthless Gladiator's boots of alacrity
-									un(2, i(70415)),	-- Ruthless Gladi Ornamented Spaulders
-									un(2, i(70416)),	-- Ruthless Gladi Ornamented Legs
-									un(2, i(70417)),	-- Ruthless Gladi Ornamented Head
-									un(2, i(70418)),	-- Ruthless Gladi Ornamented Gloves
-									un(2, i(70419)),	-- Ruthless Gladi Ornamented Chest
-									un(2, i(70477)),	-- Ruthless Gladi Plate Shoulders
-									un(2, i(70478)),	-- Ruthless Gladi Plate Legs
-									un(2, i(70479)),	-- Ruthless Gladi Plate Helm
-									un(2, i(70480)),	-- Ruthless Gladi Plate Gloves
-									un(2, i(70481)),	-- Ruthless Gladi Plate Chest
-									un(2, i(70482)),	-- Ruthless Gladi Scaled shoulders
-									un(2, i(70483)),	-- Ruthless Gladi Scaled legs
-									un(2, i(70487)),	-- Ruthless Gladi Scaled helm
-									un(2, i(70488)),	-- Ruthless Gladi Scaled gloves
-									un(2, i(70489)),	-- Ruthless Gladi Scaled chest
-									un(2, i(70490)),	-- Ruthless Gladi Dreadplate Shoulders
-									un(2, i(70491)),	-- Ruthless Gladi Dreadplate Legs
-									un(2, i(70492)),	-- Ruthless Gladi Dreadplate Helm
-									un(2, i(70493)),	-- Ruthless Gladi Dreadplate Gloves
-									un(2, i(70494)),	-- Ruthless Gladi Dreadplate Chest
-									un(2, i(70502)),	-- Ruthless Gladi Dreadplate Greaves of alacrity
-									un(2, i(70503)),	-- Ruthless Gladi Dreadplate greaves of meditation
-									un(2, i(70504)),	-- Ruthless Gladi Dreadplate warboots of cruelty
-									un(2, i(70505)),	-- Ruthless Gladi Dreadplate warboots of alacrity
-									un(2, i(72322)),	-- Ruthless Gladi Drape of Prowess. S11 Version
-									un(2, i(72323)),	-- Ruthless Gladi Drape of Diffusion. S11 Version
-									un(2, i(72324)),	-- Ruthless Gladi Drape of Meditation. S11 Version
-									un(2, i(72362)),	-- Ruthless Gladi Links of Cruelty. S11 Version
-									un(2, i(72363)),	-- Ruthless Gladi Links of Accuracy. S11 Version
-									un(2, i(72364)),	-- Ruthless Gladi Sabatons of Cruelty. S11 Version
-									un(2, i(72365)),	-- Ruthless Gladi sabatons of alacrity. S11 Version
-									un(2, i(72366)),	-- Ruthless Gladi Wristguard of Alacrity. S11 Version
-									un(2, i(72367)),	-- Ruthless Gladi Wristguard of Accuracy. S11 Version
-									un(2, i(72368)),	-- Ruthless Gladi Chain Armor. S11 Version
-									un(2, i(72369)),	-- Ruthless Gladi Chain gauntlets. S11 Version
-									un(2, i(72370)),	-- Ruthless Gladi helm. S11 Version
-									un(2, i(72371)),	-- Ruthless Gladi legs. S11 Version
-									un(2, i(72372)),	-- Ruthless Gladi spaulders. S11 Version
-									un(2, i(72427)),	-- Ruthless Gladi waistguard of meditation. S11 Version
-									un(2, i(72428)),	-- Ruthless Gladi sabatons of alacrity. S11 Version
-									un(2, i(72429)),	-- Ruthless Gladi sabatons of meditation. S11 Version
-									un(2, i(72430)),	-- Ruthless Gladi armsband of prower. S11 Version
-									un(2, i(72431)),	-- Ruthless Gladi armbands of meditation. S11 Version
-									un(2, i(72432)),	-- Ruthless Gladi ringmail armor. S11 Version
-									un(2, i(72433)),	-- Ruthless Gladi ringmail gauntlets. S11 Version
-									un(2, i(72434)),	-- Ruthless Gladi ringmail helm. S11 Version
-									un(2, i(72435)),	-- Ruthless Gladi ringmail legs. S11 Version
-									un(2, i(72436)),	-- Ruthless Gladi ringmail spaulders. S11 Version
-									un(2, i(72437)),	-- Ruthless Gladi linked armor. S11 Version
-									un(2, i(72437)),	-- Ruthless Gladi linked gauntlets. S11 Version
-									un(2, i(72437)),	-- Ruthless Gladi linked helm. S11 Version
-									un(2, i(72437)),	-- Ruthless Gladi linked legs. S11 Version
-									un(2, i(72437)),	-- Ruthless Gladi linked spaulders. S11 Version
-									un(2, i(72437)),	-- Ruthless Gladi waistguard of cruelty. S11 Version
-									un(2, i(72437)),	-- Ruthless Gladi mail armor. S11 Version
-									un(2, i(72437)),	-- Ruthless Gladi mail gauntlets. S11 Version
-									un(2, i(72437)),	-- Ruthless Gladi mail helm. S11 Version
-									un(2, i(72437)),	-- Ruthless Gladi mail legs. S11 Version
-									un(2, i(72437)),	-- Ruthless Gladi mail spaulders. S11 Version
+								un(2, i(70201)),	-- Ruthless Gladiator's Bonecracker
+								un(2, i(70202)),	-- Ruthless Gladiator's Pummeler
+								un(2, i(70188)),	-- Ruthless Gladiator's Spellblade
+								un(2, i(70191)),	-- Ruthless Gladiator's Shiv
+								un(2, i(70203)),	-- Ruthless Gladiator's Shanker
+								un(2, i(70204)),	-- Ruthless Gladiator's Hacker
+								un(2, i(70205)),	-- Ruthless Gladiator's Cleaver
+								un(2, i(70199)),	-- Ruthless Gladiator's Quickblade
+								un(2, i(70200)),	-- Ruthless Gladiator's Slicer
+								un(2, i(70194)),	-- Ruthless Gladiator's Rifle
+								un(2, i(70192)),	-- Ruthless Gladiator's Longbow
+								un(2, i(70193)),	-- Ruthless Gladiator's Heavy Crossbow
+								un(2, i(70184)),	-- Ruthless Gladiator's Decapitator
+								un(2, i(70183)),	-- Ruthless Gladiator's Bonegrinder
+								un(2, i(70178)),	-- Ruthless Gladiator's Greatsword)
+								un(2, i(70182)),	-- Ruthless Gladiator's Pike
+								un(2, i(70179)),	-- Ruthless Gladiator's Staff
+								un(2, i(70180)),	-- Ruthless Gladiator's Energy Staff
+								un(2, i(70181)),	-- Ruthless Gladiator's Battle Staff
+								un(2, i(70186)),	-- Ruthless Gladiator's Right Render
+								un(2, i(70187)),	-- Ruthless Gladiator's Ripper
+								un(2, i(70189)),	-- Ruthless Gladiator's Slasher
+								un(2, i(70190)),	-- Ruthless Gladiator's Fleshslicer
+								un(2, i(70206)),	-- Ruthless Gladiator's Redoubt
+								un(2, i(70207)),	-- Ruthless Gladiator's Barrier
+								un(2, i(70208)),	-- Ruthless Gladiator's Shield Wall
+								un(2, i(70195)),	-- Ruthless Gladiator's Baton of Light
+								un(2, i(70196)),	-- Ruthless Gladiator's Touch of Defeat
+								un(2, i(70210)),	-- Ruthless Gladiator's Endgame)
+								un(2, i(70420)),	-- Ruthless Gladiator's Mail Spaulders
+								un(2, i(70421)),	-- Ruthless Gladiator's Mail Legs
+								un(2, i(70422)),	-- Ruthless Gladiator's Mail Helm
+								un(2, i(70423)),	-- Ruthless Gladiator's Mail Gauntlets
+								un(2, i(70424)),	-- Ruthless Gladiator's Mail Armor
+								un(2, i(70433)),	-- Ruthless Gladi Ringmail Armor
+								un(2, i(70464)),	-- Ruthless Gladi Ringmail Spaulders
+								un(2, i(70465)),	-- Ruthless Gladi Ringmail Legs
+								un(2, i(70466)),	-- Ruthless Gladi Ringmail Helm
+								un(2, i(70467)),	-- Ruthless Gladi Ringmail Gauntlets
+								un(2, i(70434)),	-- Ruthless Gladi Chain Spaulders
+								un(2, i(70435)),	-- Ruthless Gladi Chain Legs
+								un(2, i(70440)),	-- Ruthless Gladi Chain Helm
+								un(2, i(70441)),	-- Ruthless Gladi Chain Gauntlets
+								un(2, i(70476)),	-- Ruthless Gladi Chain Armor
+								un(2, i(70456)),	-- Ruthless Gladi Linked Spaulders
+								un(2, i(70457)),	-- Ruthless Gladi Linked Legs
+								un(2, i(70458)),	-- Ruthless Gladi Linked Helm
+								un(2, i(70459)),	-- Ruthless Gladi Linked Gauntlets
+								un(2, i(70460)),	-- Ruthless Gladi Linked Armor
+								un(2, i(70500)),	-- Ruthless Gladi Sabatons of Cruelty
+								un(2, i(70501)),	-- Ruthless Gladi Sabatons of Alacrity
+								un(2, i(70508)),	-- Ruthless Gladi Sabatons of Alacrity
+								un(2, i(70509)),	-- Ruthless Gladi Sabatons of Meditation
+								un(2, i(70428)),	-- Ruthless Gladiator's Wyrmhide helm
+								un(2, i(70429)),	-- Ruthless Gladiator's Wyrmhide gloves
+								un(2, i(70430)),	-- Ruthless Gladiator's kodohide spaulders
+								un(2, i(70431)),	-- Ruthless Gladiator's kodohide robes
+								un(2, i(70432)),	-- Ruthless Gladiator's kodohide legguards
+								un(2, i(70436)),	-- Ruthless Gladiator's kodohide helm
+								un(2, i(70437)),	-- Ruthless Gladiator's kodohide gloves
+								un(2, i(70438)),	-- Ruthless Gladiator's dragonhide spaulders
+								un(2, i(70439)),	-- Ruthless Gladiator's dragonhide robes
+								un(2, i(70442)),	-- Ruthless Gladiator's leather spaulders
+								un(2, i(70443)),	-- Ruthless Gladiator's leather legguards
+								un(2, i(70444)),	-- Ruthless Gladiator's leather helm
+								un(2, i(70445)),	-- Ruthless Gladiator's leather gloves
+								un(2, i(70446)),	-- Ruthless Gladiator's leather tunic
+								un(2, i(70447)),	-- Ruthless Gladiator's wyrmhide spaulders
+								un(2, i(70448)),	-- Ruthless Gladiator's wyrmhide robes
+								un(2, i(70449)),	-- Ruthless Gladiator's wyrmhide legguards
+								un(2, i(70484)),	-- Ruthless Gladiator's dragonhide legguards
+								un(2, i(70485)),	-- Ruthless Gladiator's dragonhide helm
+								un(2, i(70486)),	-- Ruthless Gladiator's dragonhide gloves
+								un(2, i(70498)),	-- Ruthless Gladiator's footguards of mediatiton
+								un(2, i(70499)),	-- Ruthless Gladiator's footguards of alacrity
+								un(2, i(70506)),	-- Ruthless Gladiator's boots of cruelty
+								un(2, i(70507)),	-- Ruthless Gladiator's boots of alacrity
+								un(2, i(70415)),	-- Ruthless Gladi Ornamented Spaulders
+								un(2, i(70416)),	-- Ruthless Gladi Ornamented Legs
+								un(2, i(70417)),	-- Ruthless Gladi Ornamented Head
+								un(2, i(70418)),	-- Ruthless Gladi Ornamented Gloves
+								un(2, i(70419)),	-- Ruthless Gladi Ornamented Chest
+								un(2, i(70477)),	-- Ruthless Gladi Plate Shoulders
+								un(2, i(70478)),	-- Ruthless Gladi Plate Legs
+								un(2, i(70479)),	-- Ruthless Gladi Plate Helm
+								un(2, i(70480)),	-- Ruthless Gladi Plate Gloves
+								un(2, i(70481)),	-- Ruthless Gladi Plate Chest
+								un(2, i(70482)),	-- Ruthless Gladi Scaled shoulders
+								un(2, i(70483)),	-- Ruthless Gladi Scaled legs
+								un(2, i(70487)),	-- Ruthless Gladi Scaled helm
+								un(2, i(70488)),	-- Ruthless Gladi Scaled gloves
+								un(2, i(70489)),	-- Ruthless Gladi Scaled chest
+								un(2, i(70490)),	-- Ruthless Gladi Dreadplate Shoulders
+								un(2, i(70491)),	-- Ruthless Gladi Dreadplate Legs
+								un(2, i(70492)),	-- Ruthless Gladi Dreadplate Helm
+								un(2, i(70493)),	-- Ruthless Gladi Dreadplate Gloves
+								un(2, i(70494)),	-- Ruthless Gladi Dreadplate Chest
+								un(2, i(70502)),	-- Ruthless Gladi Dreadplate Greaves of alacrity
+								un(2, i(70503)),	-- Ruthless Gladi Dreadplate greaves of meditation
+								un(2, i(70504)),	-- Ruthless Gladi Dreadplate warboots of cruelty
+								un(2, i(70505)),	-- Ruthless Gladi Dreadplate warboots of alacrity
+								un(2, i(72322)),	-- Ruthless Gladi Drape of Prowess. S11 Version
+								un(2, i(72323)),	-- Ruthless Gladi Drape of Diffusion. S11 Version
+								un(2, i(72324)),	-- Ruthless Gladi Drape of Meditation. S11 Version
+								un(2, i(72362)),	-- Ruthless Gladi Links of Cruelty. S11 Version
+								un(2, i(72363)),	-- Ruthless Gladi Links of Accuracy. S11 Version
+								un(2, i(72364)),	-- Ruthless Gladi Sabatons of Cruelty. S11 Version
+								un(2, i(72365)),	-- Ruthless Gladi sabatons of alacrity. S11 Version
+								un(2, i(72366)),	-- Ruthless Gladi Wristguard of Alacrity. S11 Version
+								un(2, i(72367)),	-- Ruthless Gladi Wristguard of Accuracy. S11 Version
+								un(2, i(72368)),	-- Ruthless Gladi Chain Armor. S11 Version
+								un(2, i(72369)),	-- Ruthless Gladi Chain gauntlets. S11 Version
+								un(2, i(72370)),	-- Ruthless Gladi helm. S11 Version
+								un(2, i(72371)),	-- Ruthless Gladi legs. S11 Version
+								un(2, i(72372)),	-- Ruthless Gladi spaulders. S11 Version
+								un(2, i(72427)),	-- Ruthless Gladi waistguard of meditation. S11 Version
+								un(2, i(72428)),	-- Ruthless Gladi sabatons of alacrity. S11 Version
+								un(2, i(72429)),	-- Ruthless Gladi sabatons of meditation. S11 Version
+								un(2, i(72430)),	-- Ruthless Gladi armsband of prower. S11 Version
+								un(2, i(72431)),	-- Ruthless Gladi armbands of meditation. S11 Version
+								un(2, i(72432)),	-- Ruthless Gladi ringmail armor. S11 Version
+								un(2, i(72433)),	-- Ruthless Gladi ringmail gauntlets. S11 Version
+								un(2, i(72434)),	-- Ruthless Gladi ringmail helm. S11 Version
+								un(2, i(72435)),	-- Ruthless Gladi ringmail legs. S11 Version
+								un(2, i(72436)),	-- Ruthless Gladi ringmail spaulders. S11 Version
+								un(2, i(72437)),	-- Ruthless Gladi linked armor. S11 Version
+								un(2, i(72437)),	-- Ruthless Gladi linked gauntlets. S11 Version
+								un(2, i(72437)),	-- Ruthless Gladi linked helm. S11 Version
+								un(2, i(72437)),	-- Ruthless Gladi linked legs. S11 Version
+								un(2, i(72437)),	-- Ruthless Gladi linked spaulders. S11 Version
+								un(2, i(72437)),	-- Ruthless Gladi waistguard of cruelty. S11 Version
+								un(2, i(72437)),	-- Ruthless Gladi mail armor. S11 Version
+								un(2, i(72437)),	-- Ruthless Gladi mail gauntlets. S11 Version
+								un(2, i(72437)),	-- Ruthless Gladi mail helm. S11 Version
+								un(2, i(72437)),	-- Ruthless Gladi mail legs. S11 Version
+								un(2, i(72437)),	-- Ruthless Gladi mail spaulders. S11 Version
 							},
-							["u"] = 43, -- Vendor no longer exists
 						}),
 					}),
 				}),

@@ -77,6 +77,7 @@ _.Zones =
 					}),
 					n(93907, {	-- Amelia Clarke <Wild Gladiator>
 						["itemID"] = 137642,	-- Mark of Honor
+						["coord"] = { 54.8, 17.0, 622 },
 						["g"] = {
 							i(138633), -- Arsenal: Wild Gladiator's Weapons
 							i(124675),	-- Wild Gladiator's Cleaver
@@ -303,6 +304,7 @@ _.Zones =
 					}),
 					n(86175, {	-- Bregg Coppercast <Primal Combatant>
 						["itemID"] = 137642,	-- Mark of Honor
+						["coord"] = { 56.2, 20.0, 622 },
 						["g"] = {
 							i(138625), -- Arsenal: Primal Combatant's Weapons
 							i(120053),	-- Primal Combatant's Cleaver
@@ -825,6 +827,7 @@ _.Zones =
 					}),
 					n(93914, {	-- Holly McTilla <Warmongering Gladiator>
 						["itemID"] = 137642,	-- Mark of Honor
+						["coord"] = { 54.8, 18.8, 622 },
 						["g"] = {
 							un(14, i(120287)),	-- Enchanter's Illusion - Primal Victory
 							i(138635), -- Arsenal: Warmongering Gladiator's Weapons
@@ -1002,6 +1005,7 @@ _.Zones =
 					}),
 					n(86176, {	-- Ingrid Blackingot <Primal Gladiator>
 						["itemID"] = 137642,	-- Mark of Honor
+						["coord"] = { 55.0, 19.4, 622 },
 						["g"] = {
 							i(138631), -- Arsenal: Primal Gladiator's Weapons
 							i(115594),	-- Primal Gladiator's Cleaver
@@ -1276,6 +1280,7 @@ _.Zones =
 					}),
 					n(93915, {	-- Li "Crunchpaw" Tsang <Warmongering Combatant>
 						["itemID"] = 137642,	-- Mark of Honor
+						["coord"] = { 54.8, 18.8, 622 },
 						["g"] = {
 							i(138628), -- Arsenal: Warmongering Combatant's Weapons
 							i(125999),	-- Warmongering Combatant's Cleaver
@@ -1491,6 +1496,7 @@ _.Zones =
 					}),	
 					n(93906, {	-- Slugg Spinbolt <Wild Combatant>
 						["itemID"] = 137642,	-- Mark of Honor
+						["coord"] = { 54.6, 17.6, 622 },
 						["g"] = {
 							i(138630), -- Arsenal: Wild Combatant's Weapons
 							i(124885),	-- Wild Combatant's Cleaver

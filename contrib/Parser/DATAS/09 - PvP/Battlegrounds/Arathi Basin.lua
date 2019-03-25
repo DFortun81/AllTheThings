@@ -13,7 +13,7 @@ _.PVP =
 			},
 			["achievementID"] = 154,	-- Arathi Basin Victory
 			["description"] = "Arathi Basin is a 15v15 battleground located in Arathi Highlands. Players fight over five bases (Stables, Mines, Blacksmith, Lumber Mill, Farm) which reward teams with resources. The more bases a team controls, the faster they accumulate resources. A team with all five bases captured will gain 30 resources per second.\n\nThe game is won when one team reaches 1,600 resources. The most common way of winning is to hold three bases and defend, with the Blacksmith being a key base.",
-			["groups"] = {
+			["g"] = {
 				ach(1169, {	-- Master of Arathi Basin
 					ach( 583),	-- Arathi Basin All-Star
 					ach( 584),	-- Arathi Basin Assassin
@@ -30,11 +30,12 @@ _.PVP =
 				}),
 				h(faction(510, {
 					["creatureID"] = 19905,
-					["groups"] = {
+					["g"] = {
 						ach(710), 	-- The Defiler
 						n(15126, {	-- Rutherford Twing
 							["itemID"] = 137642,	-- Mark of Honor
-							["groups"] = {
+							["coord"] = { 68.4, 30.6, 14 },
+							["g"] = {
 								i(20176),	-- Defiler's Epaulets
 								i(20163),	-- Defiler's Cloth Girdle
 								i(20164),	-- Defiler's Cloth Girdle
@@ -112,11 +113,12 @@ _.PVP =
 				})),
 				a(faction(509, {
 					["creatureID"] = 30231,
-					["groups"] = {
+					["g"] = {
 						ach(711), 	-- Knight of Arathor
-						n(15127, {	-- Samual Hawke
+						n(15127, {	-- Samuel Hawke
 							["itemID"] = 137642,	-- Mark of Honor
-							["groups"] = {
+							["coord"] = { 40.2, 46.4, 14 },
+							["g"] = {
 								i(20061),	-- Highlander's Epaulets
 								i(20047),	-- Highlander's Cloth Girdle
 								i(20097),	-- Highlander's Cloth Girdle

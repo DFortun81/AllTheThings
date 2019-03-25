@@ -5,11 +5,11 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(71, {	-- Tanaris
-			["groups"] = {
-				n(-2,  {	-- Vendors
-					n(5594, {	-- Alchemist Pestlezugg <Alchemy Supplies>
+			["g"] = {
+				n(-2, {	-- Vendors
+					n(5594,   {	-- Alchemist Pestlezugg <Alchemy Supplies>
 						["coord"] = { 50.8, 28.0, 71 },
-						["groups"] = {
+						["g"] = {
 							i(6057),	-- Recipe: Nature Protection Potion
 							i(9303),	-- Recipe: Philosopher's Stone
 							i(12958),	-- Recipe: Transmute Arcanite
@@ -17,9 +17,9 @@ _.Zones =
 							i(9305),	-- Recipe: Transmute Mithril to Truesilver
 						},
 					}),
-					n(21643, {	-- Alurmi <Keepers of Time Quartermaster>
+					n(21643,  {	-- Alurmi <Keepers of Time Quartermaster>
 						["coord"] = { 63.0, 57.2, 71 },
-						["groups"] = {
+						["g"] = {
 							i(29183),	-- Bindings of the Timewalker
 							i(29185),	-- Continuum Blade
 							i(35402),	-- Crusader's Ornamented Chestplate
@@ -52,9 +52,9 @@ _.Zones =
 							i(31355),	-- Recipe: Flask of Supreme Power
 						},
 					}),
-					n(33915, {  -- Argex Irongut <Veteran Arena Vendor>
-						["u"] = 43,
-						["groups"] = {
+					n(33915,  {	-- Argex Irongut <Veteran Arena Vendor>
+						["u"] = 43,	-- Vendor no longer exists
+						["g"] = {
 							un(2, i(45983)),	-- Furious Gladiator's Tabard [Elite Rating]
 							i(42565),	-- Furious Gladiator's Barrier
 							i(42514),	-- Furious Gladiator's Baton of Light
@@ -149,9 +149,9 @@ _.Zones =
 							i(41281),	-- Furious Gladiator's Wyrmhide Spaulders
 						},
 					}),
-					n(34090, {	-- Blazzek the Biter Season >7< Elite Version [Note: Yes, two npc's with same name. One is removed]
-						["u"] = 43,
-						["groups"] = {
+					n(34090,  {	-- Blazzek the Biter Season >7< Elite Version [Note: Yes, two npc's with same name. One is removed]
+						["u"] = 43,	-- Vendor no longer exists
+						["g"] = {
 							un(2, i(49086)), -- Relentless Gladiator's Tabard [Elite Rating]
 							un(2, i(48435)),	-- Relentless Gladiator's Punisher
 							un(2, i(48511)),	-- Relentless Gladiator's Truncheon
@@ -174,9 +174,9 @@ _.Zones =
 							un(2, i(48406)),	-- Relentless Gladiator's Claymore)
 						},
 					}),
-					n(34093, {	-- Blazzek the Biter Season >8< Elite Version [Note: Yes, two npc's with same name. One is removed]
-						["u"] = 43,
-						["groups"] = {
+					n(34093,  {	-- Blazzek the Biter Season >8< Elite Version [Note: Yes, two npc's with same name. One is removed]
+						["u"] = 43,	-- Vendor no longer exists
+						["g"] = {
 							un(2, i(51534)),	-- Wrathful Gladiator's Tabard [Elite Rating]
 							un(2, i(51403)),	-- Wrathful Gladiator's Acute Staff [Elite Rating]
 							un(2, i(51398)),	-- Wrathful Gladiator's Blade of Celerity [Elite Rating]
@@ -208,10 +208,10 @@ _.Zones =
 							un(2, i(51520)),	-- Wrathful Gladiator's Truncheon [Elite Rating]
 						},
 					}),
-					n(40216, {	-- Blazzek the Biter <Vicious Gladiator>
-						["coord"] = { 51.56, 28.01, 71 },
-						["itemID"] = 137642,  -- Marks of Honor
-						["groups"] = {
+					n(40216,  {	-- Blazzek the Biter <Vicious Gladiator>
+						["itemID"] = 137642,	-- Marks of Honor
+						["coord"] = { 51.6, 28.0, 71 },
+						["g"] = {
 							i(146641), --  Arsenal: Vicious Gladiator's Weapons
 							-- Weapons
 							i(61360),	-- Vicious Gladiator's Barrier
@@ -388,15 +388,15 @@ _.Zones =
 							i(60509),	-- Vicious Gladiator's Warboots of Cruelty
 						},
 					}),
-					n(8131,	{	-- Blizrik Buckshot <Gunsmith>
-						["groups"] = {
+					n(8131,	  {	-- Blizrik Buckshot <Gunsmith>
+						["g"] = {
 							i(18650),	-- Schematic: EZ-Thro Dynamite II
 						},
 					}),
-					n(69322, {	-- Capps Carlin <Cataclysmic Gladiator>
-						["coord"] = { 51.51, 28.04, 71 },
-						["itemID"] = 137642,  -- Marks of Honor
-						["groups"] = {
+					n(69322,  {	-- Capps Carlin <Cataclysmic Gladiator>
+						["itemID"] = 137642,	-- Marks of Honor
+						["coord"] = { 51.6, 28.0, 71 },
+						["g"] = {
 							i(146639), -- Arsenal: Cataclysmic Gladiator's Weapons
 							i(73552),	-- Cataclysmic Gladiator's Warboots of Alacrity
 							i(73479),	-- Cataclysmic Gladiator's Plate Legguards
@@ -562,16 +562,16 @@ _.Zones =
 							i(73455),	-- Cataclysmic Gladiator's Shanker
 						},
 					}),
-					n(40589, {	-- Dirge Quikcleave <Butcher>
+					n(40589,  {	-- Dirge Quikcleave <Butcher>
 						["coord"] = { 52.6, 29.0, 71 },
-						["groups"] = {
+						["g"] = {
 							i(18046),	-- Recipe: Tender Wolf Steak
 						},
 					}),
-					n(69979, {	-- Ecton Brasstumbler <Honor Quartermaster>
+					n(69979,  {	-- Ecton Brasstumbler <Honor Quartermaster>
 					--[[ Only sold Honor Items
 						["u"] = 43,
-						["groups"] = {
+						["g"] = {
 							un(2, i(70542)),	-- Vicious Gladiator's Cloak of Alacrity
 							un(2, i(70543)),	-- Vicious Gladiator's Cloak of Prowess
 							un(2, i(70555)),	-- Vicious Gladiator's Drape of Diffusion
@@ -579,9 +579,9 @@ _.Zones =
 							un(2, i(70557)),	-- Vicious Gladiator's Drape o of Prowess
 						},
 				--]]}),
-					n(32362, {  -- Evee Copperspring <Arena Vendor> >Season 6< Elite
-						["u"] = 43,
-						["groups"] = {
+					n(32362,  {	-- Evee Copperspring <Arena Vendor> >Season 6< Elite
+						["u"] = 43,	-- Vendor no longer exists
+						["g"] = {
 							un(2, i(45952)),	-- Furious Gladiator's Greatstaff
 							un(2, i(45948)),	-- Furious Gladiator's Sunderer
 							un(2, i(45958)),	-- Furious Gladiator's Spike
@@ -611,36 +611,36 @@ _.Zones =
 							un(2, i(45969)),	-- Furious Gladiator's Grasp)
 						},
 					}),
-					n(40572, {	-- Haughty Modiste <Fashion Designer>
+					n(40572,  {	-- Haughty Modiste <Fashion Designer>
 						["coord"] = { 50.6, 28.6, 71 },
-						["groups"] = {
+						["g"] = {
 							i(37915),	-- Pattern: Dress Shoes
 							i(38327),	-- Pattern: Haliscan Jacket
 							i(38328),	-- Pattern: Haliscan Pantaloons
 						},
 					}),
-					n(5411, {	-- Krinkle Goodsteel <Blacksmithing Supplies>
+					n(5411,   {	-- Krinkle Goodsteel <Blacksmithing Supplies>
 						["coord"] = { 51.2, 30.2, 71 },
-						["groups"] = {
+						["g"] = {
 							i(6047),	-- Plans: Golden Scale Coif
 						},
 					}),
-					n(7733, {	-- Innkeeper Fizzgrimble <Innkeeper>
+					n(7733,   {	-- Innkeeper Fizzgrimble <Innkeeper>
 						["coord"] = { 52.6, 27.0, 71 },
-						["groups"] = {
+						["g"] = {
 							i(18046),	-- Recipe: Tender Wolf Steak
 						},
 					}),
 					n(106940, {	-- Innkeeper Fizzgrimble <Innkeeper>
 						["coord"] = { 52.6, 27.0, 71 },
-						["groups"] = {
+						["g"] = {
 							i(18046),	-- Recipe: Tender Wolf Steak
 						},
 					}),
-					n(69323, {	-- Tiny Tayger <Ruthless Gladiator>
-						["itemID"] = 137642,  -- Marks of Honor
-						["coord"] = { 51.53, 28.02, 71 },
-						["groups"] = {
+					n(69323,  {	-- Tiny Tayger <Ruthless Gladiator>
+						["itemID"] = 137642,	-- Marks of Honor
+						["coord"] = { 51.6, 28.0, 71 },
+						["g"] = {
 							i(146640),	-- Arsenal: Ruthless Gladiator's Weapons
 							i(70242),	-- Ruthless Gladiator's Barrier
 							i(70235),	-- Ruthless Gladiator's Baton of Light
@@ -807,10 +807,10 @@ _.Zones =
 							i(70389),	-- Ruthless Gladiator's Drape of Meditation
 						},
 					}),
-					n(20278, {	-- Vixton Pinchwhistle <Bloodthirsty Gladiator>
-						["coords"] = { 51.61, 28.01, 71 },
-						["itemID"] = 137642,  -- Marks of Honor
-						["groups"] = {
+					n(20278,  {	-- Vixton Pinchwhistle <Bloodthirsty Gladiator>
+						["coord"] = { 51.6, 28.0, 71 },
+						["itemID"] = 137642,	-- Marks of Honor
+						["g"] = {
 							i(64782),	-- Bloodthirsty Gladiator's Links of Cruelty
 							i(64681),	-- Bloodthirsty Gladiator's Armbands of Meditation
 							i(64683),	-- Bloodthirsty Gladiator's Armplates of Alacrity
@@ -945,9 +945,9 @@ _.Zones =
 							i(64878),	-- Bloodthirsty Gladiator's Wyrmhide Spaulders
 						},
 					}),
-					n(6568, {	-- Vizzklick <Tailoring Supplies>
+					n(6568,   {	-- Vizzklick <Tailoring Supplies>
 						["coord"] = { 50.6, 28.6, 71 },
-						["groups"] = {
+						["g"] = {
 							i(7088), 	-- Pattern: Crimson Silk Robe
 							i(21358),	-- Pattern: Soul Pouch
 						},
