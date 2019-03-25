@@ -931,7 +931,20 @@ _.Zones =
 						q(50069),	-- Goldfield's War
 						q(51883),	-- Grizz's Lunch
 						q(51752),	-- Grizzled
-						q(51492),	-- Gunpowder Plot
+						a({
+							["questID"] = 51492,	-- Gunpowder Plot
+							["qg"] = 136574,	-- Charles Davenport
+							["groups"] = {
+								i(160350),	-- Darkwater Handwraps
+								i(160356),	-- Dread Corsair Gloves
+								i(160353),	-- Stormchaser Handguards
+								i(160347),	-- Tidespeaker Grips
+								i(160362),	-- Darkwater Britches
+								i(160368),	-- Dread Corsair Pants
+								i(160365),	-- Stormchaser Pants
+								i(160359),	-- Tidespeaker Pantaloons
+							},
+						}),
 						q(51711),	-- Having a Blast
 						q(52068),	-- Helping Out, Somewhere Else
 						q(50060),	-- Honey, Slimes!
