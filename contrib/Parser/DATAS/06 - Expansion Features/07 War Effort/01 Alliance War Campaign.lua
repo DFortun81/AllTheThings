@@ -5,7 +5,7 @@
 
 _.ExpansionFeatures =
 {
-	na(-10057, {	-- War Effort
+	n(-10057, {	-- War Effort
 		["g"] = bubbleDown({["races"] = ALLIANCE_ONLY}, {
 			na(-236, {	-- Alliance War Campaign
 				["g"] = bubbleDown({["races"] = ALLIANCE_ONLY}, {
@@ -16,8 +16,8 @@ _.ExpansionFeatures =
 						["maps"] = { 1161 },	--  Boralus
 						["lvl"] = 110,
 						-- We need to attach lvl requirements in various areas here as the quests are specific to certain levels.  To ensure everything works properly we'll attach lvls to each quest to be safe.
-						["g"] = { 
-							na(-6015, {	-- Rewards
+						["g"] = {
+							n(-6015, {	-- Rewards
 								["description"] = "You'll be offered these rewards at the end of your first foothold.",
 								["g"] = {
 									i(163660),	-- 7th Legionnaire's Chainmail
