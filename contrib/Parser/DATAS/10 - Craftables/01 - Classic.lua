@@ -1325,6 +1325,8 @@ _.Craftables =
 				un(8, i(15049)),	-- Blue Dragonscale Shoulders
 				un(8, i(19157)),	-- Chromatic Gauntlets
 				un(8, i(8347)),		-- Dragonscale Gauntlets
+				-- Dreamscale Breastplate
+				desc(un(8, i(20380)), "While this recipe is still available, the mats required to craft it are not"),
 				un(8, i(15078)),	-- Heavy Scorpid Gauntlets
 				un(8, i(15079)),	-- Heavy Scorpid Leggings
 				un(8, i(15081)),	-- Heavy Scorpid Shoulders
@@ -1340,7 +1342,6 @@ _.Craftables =
 				i(15051),	-- Black Dragonscale Shoulders
 				i(20295),	-- Blue Dragonscale Leggings
 				i(8367),	-- Dragonscale Breastplate
-				i(20380),	-- Dreamscale Breastplate
 				i(7348),	-- Fletcher's Gloves
 				i(15045),	-- Green Dragonscale Breastplate
 				i(20296),	-- Green Dragonscale Gauntlets
