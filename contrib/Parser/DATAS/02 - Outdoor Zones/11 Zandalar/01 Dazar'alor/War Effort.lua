@@ -14,7 +14,7 @@ _.Zones =
 							["groups"] = {
 								q(53992, {	-- Warfront: The Battle for Darkshore [Tier 3]
 									["groups"] = {
-										i(166370, {	-- Sentinel Equipment Cache
+										i(166369, {	-- Sentinel Equipment Cache
 											["groups"] = bubbleDown({["modID"] = 6}, {
 															-- HORDE SET --
 												i(165614),	-- Apothecary Spellstaff
