@@ -830,6 +830,16 @@ _.Zones =
 						["coord"] = { 54.8, 18.8, 622 },
 						["g"] = {
 							un(14, i(120287)),	-- Enchanter's Illusion - Primal Victory
+							i(138501, {	-- Ensemble: Warmongering Gladiator's Dragonhide Armor
+								i(125831),	-- Warmongering Gladiator's Dragonhide Helm
+								i(125834),	-- Warmongering Gladiator's Dragonhide Spaulders
+								i(125833),	-- Warmongering Gladiator's Dragonhide Robes
+								i(125872),	-- Warmongering Gladiator's Dragonhide Bindings of Victory
+								i(125830),	-- Warmongering Gladiator's Dragonhide Gloves
+								i(125866),	-- Warmongering Gladiator's Belt of Victory
+								i(125832),	-- Warmongering Gladiator's Dragonhide Legguards
+								i(125868),	-- Warmongering Gladiator's Dragonhide Boots of Prowess
+							}),
 							i(138635), -- Arsenal: Warmongering Gladiator's Weapons
 							i(125789),	-- Warmongering Gladiator's Cleaver
 							i(125790),	-- Warmongering Gladiator's Shanker
