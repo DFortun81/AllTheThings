@@ -1092,18 +1092,24 @@ _.GearSets =
 						i(138629, { -- Arsenal: Wild Combatant's Weapons [ Horde / Tested ]
 							["groups"] = {
 								i(125428),	-- Wild Combatant's Barrier
+								i(124951),	-- Wild Combatant's Barrier
+								i(124931),	-- Wild Combatant's Baton of Light
 								i(125408),	-- Wild Combatant's Baton of Light
 								i(125410),	-- Wild Combatant's Battle Staff
+								i(124933),	-- Wild Combatant's Battle Staff
 								i(125017),	-- Wild Combatant's Bonecracker
 								i(125494),	-- Wild Combatant's Bonecracker
 								i(125020),	-- Wild Combatant's Bonegrinder
 								i(125497),	-- Wild Combatant's Bonegrinder
 								i(127380),	-- Wild Combatant's Chopper
 								i(127381),	-- Wild Combatant's Chopper
+								i(124885),	-- Wild Combatant's Cleaver
 								i(125362),	-- Wild Combatant's Cleaver
 								i(125019),	-- Wild Combatant's Decapitator
 								i(125496),	-- Wild Combatant's Decapitator
+								i(124943),	-- Wild Combatant's Endgame
 								i(125420),	-- Wild Combatant's Endgame
+								i(124934),	-- Wild Combatant's Energy Staff
 								i(125411),	-- Wild Combatant's Energy Staff
 								i(125406),	-- Wild Combatant's Gavel
 								i(125021),	-- Wild Combatant's Greatsword
@@ -1111,43 +1117,63 @@ _.GearSets =
 								i(125015),	-- Wild Combatant's Hacker
 								i(125492),	-- Wild Combatant's Hacker
 								i(125368),	-- Wild Combatant's Heavy Crossbow
+								i(124891),	-- Wild Combatant's Heavy Crossbow
 								i(125367),	-- Wild Combatant's Longbow
+								i(124890),	-- Wild Combatant's Longbow
 								i(125407),	-- Wild Combatant's Mageblade
+								i(124930),	-- Wild Combatant's Mageblade
 								i(125370),	-- Wild Combatant's Pike
+								i(124893),	-- Wild Combatant's Pike
 								i(125365),	-- Wild Combatant's Pummeler
+								i(124888),	-- Wild Combatant's Pummeler
 								i(125366),	-- Wild Combatant's Quickblade
+								i(124889),	-- Wild Combatant's Quickblade
 								i(125427),	-- Wild Combatant's Redoubt
+								i(124950),	-- Wild Combatant's Redoubt
 								i(125016),	-- Wild Combatant's Render
 								i(125493),	-- Wild Combatant's Render
 								i(125421),	-- Wild Combatant's Reprieve
+								i(124944),	-- Wild Combatant's Reprieve
 								i(125369),	-- Wild Combatant's Rifle
+								i(124892),	-- Wild Combatant's Rifle
 								i(125364),	-- Wild Combatant's Ripper
+								i(124887),	-- Wild Combatant's Ripper
 								i(125363),	-- Wild Combatant's Shanker
+								i(124886),	-- Wild Combatant's Shanker
 								i(125029),	-- Wild Combatant's Shield Wall
 								i(125506),	-- Wild Combatant's Shield Wall
 								i(125018),	-- Wild Combatant's Slicer
 								i(125495),	-- Wild Combatant's Slicer
 								i(125405),	-- Wild Combatant's Spellblade
+								i(124928),	-- Wild Combatant's Spellblade
 								i(125371),	-- Wild Combatant's Staff
+								i(124894),	-- Wild Combatant's Staff
 								i(125409),	-- Wild Combatant's Touch of Defeat
+								i(124932),	-- Wild Combatant's Touch of Defeat
 							},
 							["races"] = HORDE_ONLY,
 						}),
 						i(138630, { -- Arsenal: Wild Combatant's Weapons [ Alliance ]
 							["groups"] = {
 								i(125428),	-- Wild Combatant's Barrier
+								i(124951),	-- Wild Combatant's Barrier
+								i(124931),	-- Wild Combatant's Baton of Light
 								i(125408),	-- Wild Combatant's Baton of Light
 								i(125410),	-- Wild Combatant's Battle Staff
+								i(124933),	-- Wild Combatant's Battle Staff
 								i(125017),	-- Wild Combatant's Bonecracker
 								i(125494),	-- Wild Combatant's Bonecracker
 								i(125020),	-- Wild Combatant's Bonegrinder
 								i(125497),	-- Wild Combatant's Bonegrinder
 								i(127380),	-- Wild Combatant's Chopper
 								i(127381),	-- Wild Combatant's Chopper
+								i(124885),	-- Wild Combatant's Cleaver
 								i(125362),	-- Wild Combatant's Cleaver
 								i(125019),	-- Wild Combatant's Decapitator
 								i(125496),	-- Wild Combatant's Decapitator
+								i(124943),	-- Wild Combatant's Endgame
 								i(125420),	-- Wild Combatant's Endgame
+								i(124934),	-- Wild Combatant's Energy Staff
 								i(125411),	-- Wild Combatant's Energy Staff
 								i(125406),	-- Wild Combatant's Gavel
 								i(125021),	-- Wild Combatant's Greatsword
@@ -1155,25 +1181,39 @@ _.GearSets =
 								i(125015),	-- Wild Combatant's Hacker
 								i(125492),	-- Wild Combatant's Hacker
 								i(125368),	-- Wild Combatant's Heavy Crossbow
+								i(124891),	-- Wild Combatant's Heavy Crossbow
 								i(125367),	-- Wild Combatant's Longbow
+								i(124890),	-- Wild Combatant's Longbow
 								i(125407),	-- Wild Combatant's Mageblade
+								i(124930),	-- Wild Combatant's Mageblade
 								i(125370),	-- Wild Combatant's Pike
+								i(124893),	-- Wild Combatant's Pike
 								i(125365),	-- Wild Combatant's Pummeler
+								i(124888),	-- Wild Combatant's Pummeler
 								i(125366),	-- Wild Combatant's Quickblade
+								i(124889),	-- Wild Combatant's Quickblade
 								i(125427),	-- Wild Combatant's Redoubt
+								i(124950),	-- Wild Combatant's Redoubt
 								i(125016),	-- Wild Combatant's Render
 								i(125493),	-- Wild Combatant's Render
 								i(125421),	-- Wild Combatant's Reprieve
+								i(124944),	-- Wild Combatant's Reprieve
 								i(125369),	-- Wild Combatant's Rifle
+								i(124892),	-- Wild Combatant's Rifle
 								i(125364),	-- Wild Combatant's Ripper
+								i(124887),	-- Wild Combatant's Ripper
 								i(125363),	-- Wild Combatant's Shanker
+								i(124886),	-- Wild Combatant's Shanker
 								i(125029),	-- Wild Combatant's Shield Wall
 								i(125506),	-- Wild Combatant's Shield Wall
 								i(125018),	-- Wild Combatant's Slicer
 								i(125495),	-- Wild Combatant's Slicer
 								i(125405),	-- Wild Combatant's Spellblade
+								i(124928),	-- Wild Combatant's Spellblade
 								i(125371),	-- Wild Combatant's Staff
+								i(124894),	-- Wild Combatant's Staff
 								i(125409),	-- Wild Combatant's Touch of Defeat
+								i(124932),	-- Wild Combatant's Touch of Defeat
 							},
 							["races"] = ALLIANCE_ONLY,
 						}),
