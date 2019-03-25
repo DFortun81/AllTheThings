@@ -12,7 +12,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 		["coord"] = { 59.6, 39.1, 379 },	-- Kun-Lai Summit (Mogu'shan Terrace)
 		["groups"] = {
 			d(7, {	-- LFR	
-				["description"] = "|cff66ccffSpeak to Lorewalker Han at Seat of Knowledge in Vale of Eternal Blossoms to queue for LFR. \nLoot from this LFR is NOT tradeable to others in group.|r",
+				["description"] = "|cff66ccffSpeak to Lorewalker Han at Seat of Knowledge in Vale of Eternal Blossoms to queue for LFR. \nLoot from the Elegon chest is NOT tradeable to others in group.|r",
 				["coord"] = { 83.0, 30.6, 390 },	-- Seat of Knowledge, Vale of Eternal Blossoms
 				["ignoreBonus"] = true,
 				["groups"] = {
@@ -173,7 +173,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						},
 					}),
 					ach(6844, {	-- The Vault of Mysteries
-						["description"] = "|cff66ccffSpeak to Lorewalker Han (83.2,30.6) at Seat of Knowledge in Vale of Eternal Blossoms to queue for LFR. \nLoot from this LFR is NOT tradeable to others in group.|r",
+						["description"] = "|cff66ccffSpeak to Lorewalker Han at Seat of Knowledge in Vale of Eternal Blossoms to queue for LFR. \nLoot from the Elegon chest is NOT tradeable to others in group.|r",
 						["crs"] = {
 							80633,	-- Lorewalker Han <Raid Finder Storyteller>
 						},
