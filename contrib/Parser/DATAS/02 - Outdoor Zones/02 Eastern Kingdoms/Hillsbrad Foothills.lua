@@ -1314,8 +1314,8 @@ _.Zones =
 						i(4817),	-- Blessed Claymore
 					}),
 					nh(13219, {	-- Jorek Ironside
-						i(137642, {	-- Mark of Honor
-							["g"] = {
+						["g"] = {
+							i(137642, {	-- Mark of Honor
 								i(19029),	-- Horn of the Frostwolf Howler Mount
 								i(19031),	-- Frostwolf Battle Tabard
 								i(19046),	-- Frostwolf Battle Standard
@@ -1343,8 +1343,8 @@ _.Zones =
 								i(21563),	-- Don Rodrigo's Band
 								un(2, i(19320)),	-- Gnoll Skin Bandolier
 								un(2, i(19319)),	-- Harpy Hide Quiver
-							},
-						}),
+							}),
+						},
 					}),
 					n(3536,   {	-- Kris Legace <Freewheeling Tradeswoman>
 						i(4832),	-- Mystic Sarong
@@ -1380,8 +1380,9 @@ _.Zones =
 						},
 					}),
 					na(13217, {	-- Thanthaldis Snowgleam <Stormpike Supply Officer>
-						i(137642, {	-- Mark of Honor
-							["g"] = {
+						["crs"] = { 13216 },	-- Gaelden Hammersmith <Stormpike Supply Officer>
+						["g"] = {
+							i(137642, {	-- Mark of Honor
 								i(19030),	-- Stormpike Battle Charger Mount
 								i(19032),	-- Stormpike Battle Tabard
 								i(19045),	-- Stormpike Battle Standard
@@ -1407,11 +1408,8 @@ _.Zones =
 								i(19091),	-- Stormpike Plate Girdle
 								i(19325),	-- Don Julio's Band
 								i(21563),	-- Don Rodrigo's Band
-							},
-							["crs"] = {
-								13216,	-- Gaelden Hammersmith <Stormpike Supply Officer>
-							},
-						}),
+							}),
+						},
 					}),
 					n(6777,   {	-- Zan Shivsproket <Speciality Engineer>
 						i(7742),	-- Schematic: Gnomish Cloaking Device
