@@ -25,8 +25,8 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				}),
 				e(2093, { -- Council o' Captains
 					["crs"] = {
-						129431, -- Capttain Eudora
-						129432, -- Captain Jolly
+						126848, -- Capttain Eudora
+						126845, -- Captain Jolly
 						126847, -- Captain Raoul
 					},
 					["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
@@ -57,9 +57,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					}),
 				}),
 				e(2095,	{	-- Harlan Sweete
-					["crs"] = {
-						129440, -- Harlan Sweete
-					},
+					["crs"] = { 126983 }, -- Harlan Sweete
 					["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						ach(12831),	-- Freehold
 						i(159635),	-- Bloody Tideturner
@@ -94,8 +92,8 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					}),
 					e(2093, { -- Council o' Captains
 						["crs"] = {
-							129431, -- Capttain Eudora
-							129432, -- Captain Jolly
+							126848, -- Capttain Eudora
+							126845, -- Captain Jolly
 							126847, -- Captain Raoul
 						},
 						["groups"] = {
@@ -126,9 +124,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						},
 					}),
 					e(2095, { -- Harlan Sweete
-						["crs"] = {
-							129440, -- Harlan Sweete
-						},
+						["crs"] = { 126983 }, -- Harlan Sweete
 						["groups"] = {
 							ach(12832),	-- Heroic: Freehold
 							i(159635),	-- Bloody Tideturner
@@ -166,8 +162,8 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					}),
 					e(2093, { -- Council o' Captains
 						["crs"] = {
-							129431, -- Capttain Eudora
-							129432, -- Captain Jolly
+							126848, -- Capttain Eudora
+							126845, -- Captain Jolly
 							126847, -- Captain Raoul
 						},
 						["groups"] = {
@@ -198,9 +194,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						},
 					}),
 					e(2095, { -- Harlan Sweete
-						["crs"] = {
-							129440, -- Harlan Sweete
-						},
+						["crs"] = { 126983 }, -- Harlan Sweete
 						["groups"] = {
 							ach(12833),	-- Mythic: Freehold
 							ach(12998),	-- That Sweete Booty
