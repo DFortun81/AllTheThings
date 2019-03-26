@@ -61,407 +61,282 @@ _.Zones =
 								["coord"] = { 75.05, 67.53 },
 								["g"] = {
 									-- Ensembles not added as unable to verify contents
-									i(146639, { -- Arsenal: Cataclysmic Gladiator's Weapons [ Horde / Alliance / Tested ]
-										["groups"] = {
-											i(73446),	-- Cataclysmic Gladiator's Shield Wall
-											i(73447),	-- Cataclysmic Gladiator's Slicer
-											i(73448),	-- Cataclysmic Gladiator's Bonecracker
-											i(73449),	-- Cataclysmic Gladiator's Hacker
-											i(73450),	-- Cataclysmic Gladiator's Baton of Light
-											i(73451),	-- Cataclysmic Gladiator's Slasher
-											i(73452),	-- Cataclysmic Gladiator's Right Render
-											i(73453),	-- Cataclysmic Gladiator's Fleshslicer
-											i(73454),	-- Cataclysmic Gladiator's Ripper
-											i(73455),	-- Cataclysmic Gladiator's Shanker
-											i(73457),	-- Cataclysmic Gladiator's Energy Staff
-											i(73458),	-- Cataclysmic Gladiator's Redoubt
-											i(73459),	-- Cataclysmic Gladiator's Gavel
-											i(73460),	-- Cataclysmic Gladiator's Rifle
-											i(73461),	-- Cataclysmic Gladiator's Shiv
-											i(73462),	-- Cataclysmic Gladiator's Staff
-											i(73463),	-- Cataclysmic Gladiator's Heavy Crossbow
-											i(73464),	-- Cataclysmic Gladiator's Touch of Defeat
-											i(73465),	-- Cataclysmic Gladiator's Reprieve
-											i(73466),	-- Cataclysmic Gladiator's Battle Staff
-											i(73467),	-- Cataclysmic Gladiator's Spellblade
-											i(73468),	-- Cataclysmic Gladiator's Barrier
-											i(73469),	-- Cataclysmic Gladiator's Endgame
-											i(73470),	-- Cataclysmic Gladiator's Longbow
-											i(73472),	-- Cataclysmic Gladiator's Quickblade
-											i(73473),	-- Cataclysmic Gladiator's Pummeler
-											i(73474),	-- Cataclysmic Gladiator's Cleaver
-											i(73475),	-- Cataclysmic Gladiator's Greatsword
-											i(73476),	-- Cataclysmic Gladiator's Bonegrinder
-											i(73477),	-- Cataclysmic Gladiator's Decapitator
-										},
+									i(137642, {	-- Mark of Honor
+										i(146639, { -- Arsenal: Cataclysmic Gladiator's Weapons [ Horde / Alliance / Tested ]
+											["groups"] = {
+												i(73446),	-- Cataclysmic Gladiator's Shield Wall
+												i(73447),	-- Cataclysmic Gladiator's Slicer
+												i(73448),	-- Cataclysmic Gladiator's Bonecracker
+												i(73449),	-- Cataclysmic Gladiator's Hacker
+												i(73450),	-- Cataclysmic Gladiator's Baton of Light
+												i(73451),	-- Cataclysmic Gladiator's Slasher
+												i(73452),	-- Cataclysmic Gladiator's Right Render
+												i(73453),	-- Cataclysmic Gladiator's Fleshslicer
+												i(73454),	-- Cataclysmic Gladiator's Ripper
+												i(73455),	-- Cataclysmic Gladiator's Shanker
+												i(73457),	-- Cataclysmic Gladiator's Energy Staff
+												i(73458),	-- Cataclysmic Gladiator's Redoubt
+												i(73459),	-- Cataclysmic Gladiator's Gavel
+												i(73460),	-- Cataclysmic Gladiator's Rifle
+												i(73461),	-- Cataclysmic Gladiator's Shiv
+												i(73462),	-- Cataclysmic Gladiator's Staff
+												i(73463),	-- Cataclysmic Gladiator's Heavy Crossbow
+												i(73464),	-- Cataclysmic Gladiator's Touch of Defeat
+												i(73465),	-- Cataclysmic Gladiator's Reprieve
+												i(73466),	-- Cataclysmic Gladiator's Battle Staff
+												i(73467),	-- Cataclysmic Gladiator's Spellblade
+												i(73468),	-- Cataclysmic Gladiator's Barrier
+												i(73469),	-- Cataclysmic Gladiator's Endgame
+												i(73470),	-- Cataclysmic Gladiator's Longbow
+												i(73472),	-- Cataclysmic Gladiator's Quickblade
+												i(73473),	-- Cataclysmic Gladiator's Pummeler
+												i(73474),	-- Cataclysmic Gladiator's Cleaver
+												i(73475),	-- Cataclysmic Gladiator's Greatsword
+												i(73476),	-- Cataclysmic Gladiator's Bonegrinder
+												i(73477),	-- Cataclysmic Gladiator's Decapitator
+											},
+										}),
+										i(73562),	-- Cataclysmic Gladiator's Bracers of Prowess
+										i(73552),	-- Cataclysmic Gladiator's Warboots of Alacrity
+										i(73479),	-- Cataclysmic Gladiator's Plate Legguards
+										i(73480),	-- Cataclysmic Gladiator's Plate Helm
+										i(73481),	-- Cataclysmic Gladiator's Plate Gauntlets
+										i(73482),	-- Cataclysmic Gladiator's Plate Chestpiece
+										i(73483),	-- Cataclysmic Gladiator's Felweave Amice
+										i(73484),	-- Cataclysmic Gladiator's Felweave Raiment
+										i(73485),	-- Cataclysmic Gladiator's Felweave Trousers
+										i(73486),	-- Cataclysmic Gladiator's Felweave Cowl
+										i(73487),	-- Cataclysmic Gladiator's Felweave Handguards
+										i(73494),	-- Cataclysmic Gladiator's Cloak of Prowess
+										i(73495),	-- Cataclysmic Gladiator's Cloak of Alacrity
+										i(73502),	-- Cataclysmic Gladiator's Mail Spaulders
+										i(73503),	-- Cataclysmic Gladiator's Mail Leggings
+										i(73504),	-- Cataclysmic Gladiator's Mail Helm
+										i(73505),	-- Cataclysmic Gladiator's Mail Gauntlets
+										i(73506),	-- Cataclysmic Gladiator's Mail Armor
+										i(73507),	-- Cataclysmic Gladiator's Waistguard of Cruelty
+										i(73508),	-- Cataclysmic Gladiator's Linked Spaulders
+										i(73509),	-- Cataclysmic Gladiator's Linked Leggings
+										i(73510),	-- Cataclysmic Gladiator's Linked Helm
+										i(73511),	-- Cataclysmic Gladiator's Linked Gauntlets
+										i(73512),	-- Cataclysmic Gladiator's Linked Armor
+										i(73513),	-- Cataclysmic Gladiator's Ringmail Spaulders
+										i(73514),	-- Cataclysmic Gladiator's Ringmail Leggings
+										i(73515),	-- Cataclysmic Gladiator's Ringmail Helm
+										i(73516),	-- Cataclysmic Gladiator's Ringmail Gauntlets
+										i(73517),	-- Cataclysmic Gladiator's Ringmail Armor
+										i(73518),	-- Cataclysmic Gladiator's Armbands of Meditation
+										i(73519),	-- Cataclysmic Gladiator's Armbands of Prowess
+										i(73520),	-- Cataclysmic Gladiator's Sabatons of Meditation
+										i(73521),	-- Cataclysmic Gladiator's Sabatons of Alacrity
+										i(73522),	-- Cataclysmic Gladiator's Waistguard of Meditation
+										i(73523),	-- Cataclysmic Gladiator's Leather Spaulders
+										i(73524),	-- Cataclysmic Gladiator's Leather Legguards
+										i(73525),	-- Cataclysmic Gladiator's Leather Helm
+										i(73526),	-- Cataclysmic Gladiator's Leather Gloves
+										i(73527),	-- Cataclysmic Gladiator's Leather Tunic
+										i(73528),	-- Cataclysmic Gladiator's Armwraps of Accuracy
+										i(73529),	-- Cataclysmic Gladiator's Armwraps of Alacrity
+										i(73530),	-- Cataclysmic Gladiator's Boots of Alacrity
+										i(73531),	-- Cataclysmic Gladiator's Boots of Cruelty
+										i(73532),	-- Cataclysmic Gladiator's Waistband of Accuracy
+										i(73533),	-- Cataclysmic Gladiator's Waistband of Cruelty
+										i(73540),	-- Cataclysmic Gladiator's Satin Mantle
+										i(73541),	-- Cataclysmic Gladiator's Satin Robe
+										i(73542),	-- Cataclysmic Gladiator's Satin Leggings
+										i(73543),	-- Cataclysmic Gladiator's Satin Hood
+										i(73544),	-- Cataclysmic Gladiator's Satin Gloves
+										i(73545),	-- Cataclysmic Gladiator's Mooncloth Mantle
+										i(73546),	-- Cataclysmic Gladiator's Mooncloth Robe
+										i(73547),	-- Cataclysmic Gladiator's Mooncloth Leggings
+										i(73548),	-- Cataclysmic Gladiator's Mooncloth Helm
+										i(73549),	-- Cataclysmic Gladiator's Mooncloth Gloves
+										i(73550),	-- Cataclysmic Gladiator's Armplates of Alacrity
+										i(73551),	-- Cataclysmic Gladiator's Armplates of Proficiency
+										i(73553),	-- Cataclysmic Gladiator's Warboots of Cruelty
+										i(73554),	-- Cataclysmic Gladiator's Girdle of Prowess
+										i(73555),	-- Cataclysmic Gladiator's Girdle of Cruelty
+										i(73556),	-- Cataclysmic Gladiator's Ornamented Spaulders
+										i(73557),	-- Cataclysmic Gladiator's Ornamented Legplates
+										i(73558),	-- Cataclysmic Gladiator's Ornamented Headcover
+										i(73559),	-- Cataclysmic Gladiator's Ornamented Gloves
+										i(73560),	-- Cataclysmic Gladiator's Ornamented Chestguard
+										i(73561),	-- Cataclysmic Gladiator's Bracers of Meditation
+										i(73478),	-- Cataclysmic Gladiator's Plate Shoulders
+										i(73563),	-- Cataclysmic Gladiator's Greaves of Meditation
+										i(73564),	-- Cataclysmic Gladiator's Greaves of Alacrity
+										i(73565),	-- Cataclysmic Gladiator's Clasp of Meditation
+										i(73566),	-- Cataclysmic Gladiator's Clasp of Cruelty
+										i(73567),	-- Cataclysmic Gladiator's Scaled Shoulders
+										i(73568),	-- Cataclysmic Gladiator's Scaled Legguards
+										i(73569),	-- Cataclysmic Gladiator's Scaled Helm
+										i(73570),	-- Cataclysmic Gladiator's Scaled Gauntlets
+										i(73571),	-- Cataclysmic Gladiator's Scaled Chestpiece
+										i(73572),	-- Cataclysmic Gladiator's Silk Amice
+										i(73573),	-- Cataclysmic Gladiator's Silk Robe
+										i(73574),	-- Cataclysmic Gladiator's Silk Trousers
+										i(73575),	-- Cataclysmic Gladiator's Silk Cowl
+										i(73576),	-- Cataclysmic Gladiator's Silk Handguards
+										i(73580),	-- Cataclysmic Gladiator's Chain Spaulders
+										i(73581),	-- Cataclysmic Gladiator's Chain Leggings
+										i(73582),	-- Cataclysmic Gladiator's Chain Helm
+										i(73583),	-- Cataclysmic Gladiator's Chain Gauntlets
+										i(73584),	-- Cataclysmic Gladiator's Chain Armor
+										i(73585),	-- Cataclysmic Gladiator's Wristguards of Accuracy
+										i(73586),	-- Cataclysmic Gladiator's Wristguards of Alacrity
+										i(73587),	-- Cataclysmic Gladiator's Sabatons of Alacrity
+										i(73588),	-- Cataclysmic Gladiator's Sabatons of Cruelty
+										i(73589),	-- Cataclysmic Gladiator's Links of Accuracy
+										i(73590),	-- Cataclysmic Gladiator's Links of Cruelty
+										i(73595),	-- Cataclysmic Gladiator's Wyrmhide Spaulders
+										i(73596),	-- Cataclysmic Gladiator's Wyrmhide Robes
+										i(73597),	-- Cataclysmic Gladiator's Wyrmhide Legguards
+										i(73598),	-- Cataclysmic Gladiator's Wyrmhide Helm
+										i(73599),	-- Cataclysmic Gladiator's Wyrmhide Gloves
+										i(73600),	-- Cataclysmic Gladiator's Bindings of Prowess
+										i(73601),	-- Cataclysmic Gladiator's Footguards of Alacrity
+										i(73602),	-- Cataclysmic Gladiator's Belt of Cruelty
+										i(73603),	-- Cataclysmic Gladiator's Kodohide Spaulders
+										i(73604),	-- Cataclysmic Gladiator's Kodohide Robes
+										i(73605),	-- Cataclysmic Gladiator's Kodohide Legguards
+										i(73606),	-- Cataclysmic Gladiator's Kodohide Helm
+										i(73607),	-- Cataclysmic Gladiator's Kodohide Gloves
+										i(73608),	-- Cataclysmic Gladiator's Bindings of Meditation
+										i(73609),	-- Cataclysmic Gladiator's Footguards of Meditation
+										i(73610),	-- Cataclysmic Gladiator's Belt of Meditation
+										i(73611),	-- Cataclysmic Gladiator's Dragonhide Spaulders
+										i(73612),	-- Cataclysmic Gladiator's Dragonhide Robes
+										i(73613),	-- Cataclysmic Gladiator's Dragonhide Legguards
+										i(73614),	-- Cataclysmic Gladiator's Dragonhide Helm
+										i(73615),	-- Cataclysmic Gladiator's Dragonhide Gloves
+										i(73616),	-- Cataclysmic Gladiator's Dreadplate Shoulders
+										i(73617),	-- Cataclysmic Gladiator's Dreadplate Legguards
+										i(73618),	-- Cataclysmic Gladiator's Dreadplate Helm
+										i(73619),	-- Cataclysmic Gladiator's Dreadplate Gauntlets
+										i(73620),	-- Cataclysmic Gladiator's Dreadplate Chestpiece
+										i(73628),	-- Cataclysmic Gladiator's Drape of Meditation
+										i(73629),	-- Cataclysmic Gladiator's Drape of Diffusion
+										i(73630),	-- Cataclysmic Gladiator's Drape of Prowess
+										i(73631),	-- Cataclysmic Gladiator's Cuffs of Meditation
+										i(73632),	-- Cataclysmic Gladiator's Cuffs of Prowess
+										i(73633),	-- Cataclysmic Gladiator's Cuffs of Accuracy
+										i(73634),	-- Cataclysmic Gladiator's Treads of Meditation
+										i(73635),	-- Cataclysmic Gladiator's Treads of Alacrity
+										i(73636),	-- Cataclysmic Gladiator's Treads of Cruelty
+										i(73637),	-- Cataclysmic Gladiator's Cord of Meditation
+										i(73638),	-- Cataclysmic Gladiator's Cord of Accuracy
+										i(73639),	-- Cataclysmic Gladiator's Cord of Cruelty
+										i(73646),	-- Cataclysmic Gladiator's Cape of Prowess
+										i(73647),	-- Cataclysmic Gladiator's Cape of Cruelty
+										i(88170),	-- Cataclysmic Gladiator's Ornamented Battlerobe
+										i(73457),	-- Cataclysmic Gladiator's Energy Staff
+										i(73458),	-- Cataclysmic Gladiator's Redoubt
+										i(73459),	-- Cataclysmic Gladiator's Gavel
+										i(73460),	-- Cataclysmic Gladiator's Rifle
+										i(73461),	-- Cataclysmic Gladiator's Shiv
+										i(73462),	-- Cataclysmic Gladiator's Staff
+										i(73463),	-- Cataclysmic Gladiator's Heavy Crossbow
+										i(73464),	-- Cataclysmic Gladiator's Touch of Defeat
+										i(73465),	-- Cataclysmic Gladiator's Reprieve
+										i(73466),	-- Cataclysmic Gladiator's Battle Staff
+										i(73467),	-- Cataclysmic Gladiator's Spellblade
+										i(73468),	-- Cataclysmic Gladiator's Barrier
+										i(73469),	-- Cataclysmic Gladiator's Endgame
+										i(73470),	-- Cataclysmic Gladiator's Longbow
+										i(73472),	-- Cataclysmic Gladiator's Quickblade
+										i(73473),	-- Cataclysmic Gladiator's Pummeler
+										i(73447),	-- Cataclysmic Gladiator's Slicer
+										i(73474),	-- Cataclysmic Gladiator's Cleaver
+										i(73475),	-- Cataclysmic Gladiator's Greatsword
+										i(73476),	-- Cataclysmic Gladiator's Bonegrinder
+										i(73477),	-- Cataclysmic Gladiator's Decapitator
+										i(73446),	-- Cataclysmic Gladiator's Shield Wall
+										i(73448),	-- Cataclysmic Gladiator's Bonecracker
+										i(73449),	-- Cataclysmic Gladiator's Hacker
+										i(73450),	-- Cataclysmic Gladiator's Baton of Light
+										i(73451),	-- Cataclysmic Gladiator's Slasher
+										i(73452),	-- Cataclysmic Gladiator's Right Render
+										i(73453),	-- Cataclysmic Gladiator's Fleshslicer
+										i(73454),	-- Cataclysmic Gladiator's Ripper
+										i(73455),	-- Cataclysmic Gladiator's Shanker
+										i(73456),	-- Cataclysmic Gladiator's Pike
+										un(2, i(31640)),	-- Grand Marshal's Ringmail Chestguard
+										un(2, i(31641)),	-- Grand Marshal's Ringmail Gloves
+										un(2, i(31642)),	-- Grand Marshal's Ringmail Headpiece
+										un(2, i(31643)),	-- Grand Marshal's Ringmail Legguards
+										un(2, i(31644)),	-- Grand Marshal's Ringmail Shoulders
+										un(2, i(28615)),	-- Grand Marshal's Chain Helm
+										un(2, i(28617)),	-- Grand Marshal's Chain Spaulders
+										un(2, i(28613)),	-- Grand Marshal's Chain Armor
+										un(2, i(28614)),	-- Grand Marshal's Chain Gauntlets
+										un(2, i(28616)),	-- Grand Marshal's Chain Leggings
+										-- Grand Marshal's Linked [Shaman]
+										un(2, i(28691)),	-- Grand Marshal's Linked Helm
+										un(2, i(28693)),	-- Grand Marshal's Linked Spaulders
+										un(2, i(28689)),	-- Grand Marshal's Linked Armor
+										un(2, i(28690)),	-- Grand Marshal's Linked Gauntlets
+										un(2, i(28692)),	-- Grand Marshal's Linked Leggings
+										-- Grand Marshal's Mail [Shaman]
+										un(2, i(28696)),	-- Grand Marshal's Mail Helm
+										un(2, i(28698)),	-- Grand Marshal's Mail Spaulders
+										un(2, i(28694)),	-- Grand Marshal's Mail Armor
+										un(2, i(28695)),	-- Grand Marshal's Mail Gauntlets
+										un(2, i(28697)),	-- Grand Marshal's Mail Leggings
+										-- Grand Marshal's Ringmail [Shaman]
+										un(2, i(31642)),	-- Grand Marshal's Ringmail Headpiece
+										un(2, i(31644)),	-- Grand Marshal's Ringmail Shoulders
+										un(2, i(31640)),	-- Grand Marshal's Ringmail Chestguard
+										un(2, i(31641)),	-- Grand Marshal's Ringmail Gloves
+										un(2, i(31643)),	-- Grand Marshal's Ringmail Legguards
+										-- Lieutenant Commander's Regalia [Mage]
+										un(2, i(16416)),	-- Lieutenant Commander's Crown
+										un(2, i(16415)),	-- Lieutenant Commander's Silk Spaulders
+										un(2, i(16413)),	-- Knight-Captain's Silk Raiment
+										un(2, i(16391)),	-- Knight-Lieutenant's Silk Gloves
+										un(2, i(16414)),	-- Knight-Captain's Silk Leggings
+										un(2, i(16369)),	-- Knight-Lieutenant's Silk Boots
+										-- Lieutenant Commander's Threads [Warlock]
+										un(2, i(17566)),	-- Lieutenant Commander's Headguard
+										un(2, i(17569)),	-- Lieutenant Commander's Dreadweave Mantle
+										un(2, i(17568)),	-- Knight-Captain's Dreadweave Robe
+										un(2, i(17564)),	-- Knight-Lieutenant's Dreadweave Gloves
+										un(2, i(17567)),	-- Knight-Captain's Dreadweave Leggings
+										un(2, i(17562)),	-- Knight-Lieutenant's Dreadweave Boots
+										-- Lieutenant Commander's Raiment [Priest]
+										un(2, i(17598)),	-- Lieutenant Commander's Diadem
+										un(2, i(17601)),	-- Lieutenant Commander's Satin Amice
+										un(2, i(17600)),	-- Knight-Captain's Satin Robes
+										un(2, i(17596)),	-- Knight-Lieutenant's Satin Gloves
+										un(2, i(17599)),	-- Knight-Captain's Satin Leggings
+										un(2, i(17594)),	-- Knight-Lieutenant's Satin Boots
+										-- Lieutenant Commander's Vestments [Rogue]
+										un(2, i(16418)),	-- Lieutenant Commander's Leather Veil
+										un(2, i(16420)),	-- Lieutenant Commander's Leather Spaulders
+										un(2, i(16417)),	-- Knight-Captain's Leather Armor
+										un(2, i(16396)),	-- Knight-Lieutenant's Leather Gauntlets
+										un(2, i(16419)),	-- Knight-Captain's Leather Legguards
+										un(2, i(16392)),	-- Knight-Lieutenant's Leather Boots
+										-- Lieutenant Commander's Battlegear [Warrior]
+										un(2, i(16429)),	-- Lieutenant Commander's Plate Helm
+										un(2, i(16432)),	-- Lieutenant Commander's Plate Pauldrons
+										un(2, i(16430)),	-- Knight-Captain's Plate Chestguard
+										un(2, i(16406)),	-- Knight-Lieutenant's Plate Gauntlets
+										un(2, i(16431)),	-- Knight-Captain's Plate Leggings
+										un(2, i(16405)),	-- Knight-Lieutenant's Plate Boots
+										-- Lieutenant Commander's Aegis [Paladin]
+										un(2, i(16434)),	-- Lieutenant Commander's Lamellar Headguard
+										un(2, i(16436)),	-- Lieutenant Commander's Lamellar Shoulders
+										un(2, i(16433)),	-- Knight-Captain's Lamellar Breastplate
+										un(2, i(16410)),	-- Knight-Lieutenant's Lamellar Gauntlets
+										un(2, i(16435)),	-- Knight-Captain's Lamellar Leggings
+										un(2, i(16409)),	-- Knight-Lieutenant's Lamellar Sabatons
+										un(2, i(16428)),	-- Lieutenant Commander's Chain Helmet
+										un(2, i(16427)),	-- Lieutenant Commander's Chain Pauldrons
+										un(2, i(16425)),	-- Knight-Captain's Chain Hauberk
+										un(2, i(16403)),	-- Knight-Lieutenant's Chain Gauntlets
+										un(2, i(16426)),	-- Knight-Captain's Chain Leggings
+										un(2, i(16401)),	-- Knight-Lieutenant's Chain Boots
 									}),
-									i(73562),	-- Cataclysmic Gladiator's Bracers of Prowess
-									i(73552),	-- Cataclysmic Gladiator's Warboots of Alacrity
-									i(73479),	-- Cataclysmic Gladiator's Plate Legguards
-									i(73480),	-- Cataclysmic Gladiator's Plate Helm
-									i(73481),	-- Cataclysmic Gladiator's Plate Gauntlets
-									i(73482),	-- Cataclysmic Gladiator's Plate Chestpiece
-									i(73483),	-- Cataclysmic Gladiator's Felweave Amice
-									i(73484),	-- Cataclysmic Gladiator's Felweave Raiment
-									i(73485),	-- Cataclysmic Gladiator's Felweave Trousers
-									i(73486),	-- Cataclysmic Gladiator's Felweave Cowl
-									i(73487),	-- Cataclysmic Gladiator's Felweave Handguards
-									i(73494),	-- Cataclysmic Gladiator's Cloak of Prowess
-									i(73495),	-- Cataclysmic Gladiator's Cloak of Alacrity
-									i(73502),	-- Cataclysmic Gladiator's Mail Spaulders
-									i(73503),	-- Cataclysmic Gladiator's Mail Leggings
-									i(73504),	-- Cataclysmic Gladiator's Mail Helm
-									i(73505),	-- Cataclysmic Gladiator's Mail Gauntlets
-									i(73506),	-- Cataclysmic Gladiator's Mail Armor
-									i(73507),	-- Cataclysmic Gladiator's Waistguard of Cruelty
-									i(73508),	-- Cataclysmic Gladiator's Linked Spaulders
-									i(73509),	-- Cataclysmic Gladiator's Linked Leggings
-									i(73510),	-- Cataclysmic Gladiator's Linked Helm
-									i(73511),	-- Cataclysmic Gladiator's Linked Gauntlets
-									i(73512),	-- Cataclysmic Gladiator's Linked Armor
-									i(73513),	-- Cataclysmic Gladiator's Ringmail Spaulders
-									i(73514),	-- Cataclysmic Gladiator's Ringmail Leggings
-									i(73515),	-- Cataclysmic Gladiator's Ringmail Helm
-									i(73516),	-- Cataclysmic Gladiator's Ringmail Gauntlets
-									i(73517),	-- Cataclysmic Gladiator's Ringmail Armor
-									i(73518),	-- Cataclysmic Gladiator's Armbands of Meditation
-									i(73519),	-- Cataclysmic Gladiator's Armbands of Prowess
-									i(73520),	-- Cataclysmic Gladiator's Sabatons of Meditation
-									i(73521),	-- Cataclysmic Gladiator's Sabatons of Alacrity
-									i(73522),	-- Cataclysmic Gladiator's Waistguard of Meditation
-									i(73523),	-- Cataclysmic Gladiator's Leather Spaulders
-									i(73524),	-- Cataclysmic Gladiator's Leather Legguards
-									i(73525),	-- Cataclysmic Gladiator's Leather Helm
-									i(73526),	-- Cataclysmic Gladiator's Leather Gloves
-									i(73527),	-- Cataclysmic Gladiator's Leather Tunic
-									i(73528),	-- Cataclysmic Gladiator's Armwraps of Accuracy
-									i(73529),	-- Cataclysmic Gladiator's Armwraps of Alacrity
-									i(73530),	-- Cataclysmic Gladiator's Boots of Alacrity
-									i(73531),	-- Cataclysmic Gladiator's Boots of Cruelty
-									i(73532),	-- Cataclysmic Gladiator's Waistband of Accuracy
-									i(73533),	-- Cataclysmic Gladiator's Waistband of Cruelty
-									i(73540),	-- Cataclysmic Gladiator's Satin Mantle
-									i(73541),	-- Cataclysmic Gladiator's Satin Robe
-									i(73542),	-- Cataclysmic Gladiator's Satin Leggings
-									i(73543),	-- Cataclysmic Gladiator's Satin Hood
-									i(73544),	-- Cataclysmic Gladiator's Satin Gloves
-									i(73545),	-- Cataclysmic Gladiator's Mooncloth Mantle
-									i(73546),	-- Cataclysmic Gladiator's Mooncloth Robe
-									i(73547),	-- Cataclysmic Gladiator's Mooncloth Leggings
-									i(73548),	-- Cataclysmic Gladiator's Mooncloth Helm
-									i(73549),	-- Cataclysmic Gladiator's Mooncloth Gloves
-									i(73550),	-- Cataclysmic Gladiator's Armplates of Alacrity
-									i(73551),	-- Cataclysmic Gladiator's Armplates of Proficiency
-									i(73553),	-- Cataclysmic Gladiator's Warboots of Cruelty
-									i(73554),	-- Cataclysmic Gladiator's Girdle of Prowess
-									i(73555),	-- Cataclysmic Gladiator's Girdle of Cruelty
-									i(73556),	-- Cataclysmic Gladiator's Ornamented Spaulders
-									i(73557),	-- Cataclysmic Gladiator's Ornamented Legplates
-									i(73558),	-- Cataclysmic Gladiator's Ornamented Headcover
-									i(73559),	-- Cataclysmic Gladiator's Ornamented Gloves
-									i(73560),	-- Cataclysmic Gladiator's Ornamented Chestguard
-									i(73561),	-- Cataclysmic Gladiator's Bracers of Meditation
-									i(73478),	-- Cataclysmic Gladiator's Plate Shoulders
-									i(73563),	-- Cataclysmic Gladiator's Greaves of Meditation
-									i(73564),	-- Cataclysmic Gladiator's Greaves of Alacrity
-									i(73565),	-- Cataclysmic Gladiator's Clasp of Meditation
-									i(73566),	-- Cataclysmic Gladiator's Clasp of Cruelty
-									i(73567),	-- Cataclysmic Gladiator's Scaled Shoulders
-									i(73568),	-- Cataclysmic Gladiator's Scaled Legguards
-									i(73569),	-- Cataclysmic Gladiator's Scaled Helm
-									i(73570),	-- Cataclysmic Gladiator's Scaled Gauntlets
-									i(73571),	-- Cataclysmic Gladiator's Scaled Chestpiece
-									i(73572),	-- Cataclysmic Gladiator's Silk Amice
-									i(73573),	-- Cataclysmic Gladiator's Silk Robe
-									i(73574),	-- Cataclysmic Gladiator's Silk Trousers
-									i(73575),	-- Cataclysmic Gladiator's Silk Cowl
-									i(73576),	-- Cataclysmic Gladiator's Silk Handguards
-									i(73580),	-- Cataclysmic Gladiator's Chain Spaulders
-									i(73581),	-- Cataclysmic Gladiator's Chain Leggings
-									i(73582),	-- Cataclysmic Gladiator's Chain Helm
-									i(73583),	-- Cataclysmic Gladiator's Chain Gauntlets
-									i(73584),	-- Cataclysmic Gladiator's Chain Armor
-									i(73585),	-- Cataclysmic Gladiator's Wristguards of Accuracy
-									i(73586),	-- Cataclysmic Gladiator's Wristguards of Alacrity
-									i(73587),	-- Cataclysmic Gladiator's Sabatons of Alacrity
-									i(73588),	-- Cataclysmic Gladiator's Sabatons of Cruelty
-									i(73589),	-- Cataclysmic Gladiator's Links of Accuracy
-									i(73590),	-- Cataclysmic Gladiator's Links of Cruelty
-									i(73595),	-- Cataclysmic Gladiator's Wyrmhide Spaulders
-									i(73596),	-- Cataclysmic Gladiator's Wyrmhide Robes
-									i(73597),	-- Cataclysmic Gladiator's Wyrmhide Legguards
-									i(73598),	-- Cataclysmic Gladiator's Wyrmhide Helm
-									i(73599),	-- Cataclysmic Gladiator's Wyrmhide Gloves
-									i(73600),	-- Cataclysmic Gladiator's Bindings of Prowess
-									i(73601),	-- Cataclysmic Gladiator's Footguards of Alacrity
-									i(73602),	-- Cataclysmic Gladiator's Belt of Cruelty
-									i(73603),	-- Cataclysmic Gladiator's Kodohide Spaulders
-									i(73604),	-- Cataclysmic Gladiator's Kodohide Robes
-									i(73605),	-- Cataclysmic Gladiator's Kodohide Legguards
-									i(73606),	-- Cataclysmic Gladiator's Kodohide Helm
-									i(73607),	-- Cataclysmic Gladiator's Kodohide Gloves
-									i(73608),	-- Cataclysmic Gladiator's Bindings of Meditation
-									i(73609),	-- Cataclysmic Gladiator's Footguards of Meditation
-									i(73610),	-- Cataclysmic Gladiator's Belt of Meditation
-									i(73611),	-- Cataclysmic Gladiator's Dragonhide Spaulders
-									i(73612),	-- Cataclysmic Gladiator's Dragonhide Robes
-									i(73613),	-- Cataclysmic Gladiator's Dragonhide Legguards
-									i(73614),	-- Cataclysmic Gladiator's Dragonhide Helm
-									i(73615),	-- Cataclysmic Gladiator's Dragonhide Gloves
-									i(73616),	-- Cataclysmic Gladiator's Dreadplate Shoulders
-									i(73617),	-- Cataclysmic Gladiator's Dreadplate Legguards
-									i(73618),	-- Cataclysmic Gladiator's Dreadplate Helm
-									i(73619),	-- Cataclysmic Gladiator's Dreadplate Gauntlets
-									i(73620),	-- Cataclysmic Gladiator's Dreadplate Chestpiece
-									i(73628),	-- Cataclysmic Gladiator's Drape of Meditation
-									i(73629),	-- Cataclysmic Gladiator's Drape of Diffusion
-									i(73630),	-- Cataclysmic Gladiator's Drape of Prowess
-									i(73631),	-- Cataclysmic Gladiator's Cuffs of Meditation
-									i(73632),	-- Cataclysmic Gladiator's Cuffs of Prowess
-									i(73633),	-- Cataclysmic Gladiator's Cuffs of Accuracy
-									i(73634),	-- Cataclysmic Gladiator's Treads of Meditation
-									i(73635),	-- Cataclysmic Gladiator's Treads of Alacrity
-									i(73636),	-- Cataclysmic Gladiator's Treads of Cruelty
-									i(73637),	-- Cataclysmic Gladiator's Cord of Meditation
-									i(73638),	-- Cataclysmic Gladiator's Cord of Accuracy
-									i(73639),	-- Cataclysmic Gladiator's Cord of Cruelty
-									i(73646),	-- Cataclysmic Gladiator's Cape of Prowess
-									i(73647),	-- Cataclysmic Gladiator's Cape of Cruelty
-									i(88170),	-- Cataclysmic Gladiator's Ornamented Battlerobe
-									i(73457),	-- Cataclysmic Gladiator's Energy Staff
-									i(73458),	-- Cataclysmic Gladiator's Redoubt
-									i(73459),	-- Cataclysmic Gladiator's Gavel
-									i(73460),	-- Cataclysmic Gladiator's Rifle
-									i(73461),	-- Cataclysmic Gladiator's Shiv
-									i(73462),	-- Cataclysmic Gladiator's Staff
-									i(73463),	-- Cataclysmic Gladiator's Heavy Crossbow
-									i(73464),	-- Cataclysmic Gladiator's Touch of Defeat
-									i(73465),	-- Cataclysmic Gladiator's Reprieve
-									i(73466),	-- Cataclysmic Gladiator's Battle Staff
-									i(73467),	-- Cataclysmic Gladiator's Spellblade
-									i(73468),	-- Cataclysmic Gladiator's Barrier
-									i(73469),	-- Cataclysmic Gladiator's Endgame
-									i(73470),	-- Cataclysmic Gladiator's Longbow
-									i(73472),	-- Cataclysmic Gladiator's Quickblade
-									i(73473),	-- Cataclysmic Gladiator's Pummeler
-									i(73447),	-- Cataclysmic Gladiator's Slicer
-									i(73474),	-- Cataclysmic Gladiator's Cleaver
-									i(73475),	-- Cataclysmic Gladiator's Greatsword
-									i(73476),	-- Cataclysmic Gladiator's Bonegrinder
-									i(73477),	-- Cataclysmic Gladiator's Decapitator
-									i(73446),	-- Cataclysmic Gladiator's Shield Wall
-									i(73448),	-- Cataclysmic Gladiator's Bonecracker
-									i(73449),	-- Cataclysmic Gladiator's Hacker
-									i(73450),	-- Cataclysmic Gladiator's Baton of Light
-									i(73451),	-- Cataclysmic Gladiator's Slasher
-									i(73452),	-- Cataclysmic Gladiator's Right Render
-									i(73453),	-- Cataclysmic Gladiator's Fleshslicer
-									i(73454),	-- Cataclysmic Gladiator's Ripper
-									i(73455),	-- Cataclysmic Gladiator's Shanker
-									i(73456),	-- Cataclysmic Gladiator's Pike
-									un(2, i(31640)),	    -- Grand Marshal's Ringmail Chestguard
-									un(2, i(31641)),	    -- Grand Marshal's Ringmail Gloves
-									un(2, i(31642)),	    -- Grand Marshal's Ringmail Headpiece
-									un(2, i(31643)),	    -- Grand Marshal's Ringmail Legguards
-									un(2, i(31644)),	    -- Grand Marshal's Ringmail Shoulders
-									un(2, i(28615)),	-- Grand Marshal's Chain Helm
-									un(2, i(28617)),	-- Grand Marshal's Chain Spaulders
-									un(2, i(28613)),	-- Grand Marshal's Chain Armor
-									un(2, i(28614)),	-- Grand Marshal's Chain Gauntlets
-									un(2, i(28616)),	-- Grand Marshal's Chain Leggings
-									-- Grand Marshal's Linked [Shaman]
-									un(2, i(28691)),	-- Grand Marshal's Linked Helm
-									un(2, i(28693)),	-- Grand Marshal's Linked Spaulders
-									un(2, i(28689)),	-- Grand Marshal's Linked Armor
-									un(2, i(28690)),	-- Grand Marshal's Linked Gauntlets
-									un(2, i(28692)),	-- Grand Marshal's Linked Leggings
-									-- Grand Marshal's Mail [Shaman]
-									un(2, i(28696)),	-- Grand Marshal's Mail Helm
-									un(2, i(28698)),	-- Grand Marshal's Mail Spaulders
-									un(2, i(28694)),	-- Grand Marshal's Mail Armor
-									un(2, i(28695)),	-- Grand Marshal's Mail Gauntlets
-									un(2, i(28697)),	-- Grand Marshal's Mail Leggings
-									-- Grand Marshal's Ringmail [Shaman]
-									un(2, i(31642)),	-- Grand Marshal's Ringmail Headpiece
-									un(2, i(31644)),	-- Grand Marshal's Ringmail Shoulders
-									un(2, i(31640)),	-- Grand Marshal's Ringmail Chestguard
-									un(2, i(31641)),	-- Grand Marshal's Ringmail Gloves
-									un(2, i(31643)),	-- Grand Marshal's Ringmail Legguards
-									-- Lieutenant Commander's Regalia [Mage]
-									{	-- Lieutenant Commander's Crown
-										["itemID"] = 16416,	-- Lieutenant Commander's Crown
-										["u"] = 2,
-									},
-									{	-- Lieutenant Commander's Silk Spaulders
-										["itemID"] = 16415,	-- Lieutenant Commander's Silk Spaulders
-										["u"] = 2,
-									},
-									{	-- Knight-Captain's Silk Raiment
-										["itemID"] = 16413,	-- Knight-Captain's Silk Raiment
-										["u"] = 2,
-									},
-									{	-- Knight-Lieutenant's Silk Gloves
-										["itemID"] = 16391,	-- Knight-Lieutenant's Silk Gloves
-										["u"] = 2,
-									},
-									{	-- Knight-Captain's Silk Leggings
-										["itemID"] = 16414,	-- Knight-Captain's Silk Leggings
-										["u"] = 2,
-									},
-									{	-- Knight-Lieutenant's Silk Boots
-										["itemID"] = 16369,	-- Knight-Lieutenant's Silk Boots
-										["u"] = 2,
-									},
-									-- Lieutenant Commander's Threads [Warlock]
-									{	-- Lieutenant Commander's Headguard
-										["itemID"] = 17566,	-- Lieutenant Commander's Headguard
-										["u"] = 2,
-									},
-									{	-- Lieutenant Commander's Dreadweave Mantle
-										["itemID"] = 17569,	-- Lieutenant Commander's Dreadweave Mantle
-										["u"] = 2,
-									},
-									{	-- Knight-Captain's Dreadweave Robe
-										["itemID"] = 17568,	-- Knight-Captain's Dreadweave Robe
-										["u"] = 2,
-									},
-									{	-- Knight-Lieutenant's Dreadweave Gloves
-										["itemID"] = 17564,	-- Knight-Lieutenant's Dreadweave Gloves
-										["u"] = 2,
-									},
-									{	-- Knight-Captain's Dreadweave Leggings
-										["itemID"] = 17567,	-- Knight-Captain's Dreadweave Leggings
-										["u"] = 2,
-									},
-									{	-- Knight-Lieutenant's Dreadweave Boots
-										["itemID"] = 17562,	-- Knight-Lieutenant's Dreadweave Boots
-										["u"] = 2,
-									},
-									-- Lieutenant Commander's Raiment [Priest]
-									{	-- Lieutenant Commander's Diadem
-										["itemID"] = 17598,	-- Lieutenant Commander's Diadem
-										["u"] = 2,
-									},
-									{	-- Lieutenant Commander's Satin Amice
-										["itemID"] = 17601,	-- Lieutenant Commander's Satin Amice
-										["u"] = 2,
-									},
-									{	-- Knight-Captain's Satin Robes
-										["itemID"] = 17600,	-- Knight-Captain's Satin Robes
-										["u"] = 2,
-									},
-									{	-- Knight-Lieutenant's Satin Gloves
-										["itemID"] = 17596,	-- Knight-Lieutenant's Satin Gloves
-										["u"] = 2,
-									},
-									{	-- Knight-Captain's Satin Leggings
-										["itemID"] = 17599,	-- Knight-Captain's Satin Leggings
-										["u"] = 2,
-									},
-									{	-- Knight-Lieutenant's Satin Boots
-										["itemID"] = 17594,	-- Knight-Lieutenant's Satin Boots
-										["u"] = 2,
-									},
-									-- Lieutenant Commander's Vestments [Rogue]
-									{	-- Lieutenant Commander's Leather Veil
-										["itemID"] = 16418,	-- Lieutenant Commander's Leather Veil
-										["u"] = 2,
-									},
-									{	-- Lieutenant Commander's Leather Spaulders
-										["itemID"] = 16420,	-- Lieutenant Commander's Leather Spaulders
-										["u"] = 2,
-									},
-									{	-- Knight-Captain's Leather Armor
-										["itemID"] = 16417,	-- Knight-Captain's Leather Armor
-										["u"] = 2,
-									},
-									{	-- Knight-Lieutenant's Leather Gauntlets
-										["itemID"] = 16396,	-- Knight-Lieutenant's Leather Gauntlets
-										["u"] = 2,
-									},
-									{	-- Knight-Captain's Leather Legguards
-										["itemID"] = 16419,	-- Knight-Captain's Leather Legguards
-										["u"] = 2,
-									},
-									{	-- Knight-Lieutenant's Leather Boots
-										["itemID"] = 16392,	-- Knight-Lieutenant's Leather Boots
-										["u"] = 2,
-									},
-									-- Lieutenant Commander's Battlegear [Warrior]
-									{	-- Lieutenant Commander's Plate Helm
-										["itemID"] = 16429,	-- Lieutenant Commander's Plate Helm
-										["u"] = 2,
-									},
-									{	-- Lieutenant Commander's Plate Pauldrons
-										["itemID"] = 16432,	-- Lieutenant Commander's Plate Pauldrons
-										["u"] = 2,
-									},
-									{	-- Knight-Captain's Plate Chestguard
-										["itemID"] = 16430,	-- Knight-Captain's Plate Chestguard
-										["u"] = 2,
-									},
-									{	-- Knight-Lieutenant's Plate Gauntlets
-										["itemID"] = 16406,	-- Knight-Lieutenant's Plate Gauntlets
-										["u"] = 2,
-									},
-									{	-- Knight-Captain's Plate Leggings
-										["itemID"] = 16431,	-- Knight-Captain's Plate Leggings
-										["u"] = 2,
-									},
-									{	-- Knight-Lieutenant's Plate Boots
-										["itemID"] = 16405,	-- Knight-Lieutenant's Plate Boots
-										["u"] = 2,
-									},
-									-- Lieutenant Commander's Aegis [Paladin]
-									{	-- Lieutenant Commander's Lamellar Headguard
-										["itemID"] = 16434,	-- Lieutenant Commander's Lamellar Headguard
-										["u"] = 2,
-									},
-									{	-- Lieutenant Commander's Lamellar Shoulders
-										["itemID"] = 16436,	-- Lieutenant Commander's Lamellar Shoulders
-										["u"] = 2,
-									},
-									{	-- Knight-Captain's Lamellar Breastplate
-										["itemID"] = 16433,	-- Knight-Captain's Lamellar Breastplate
-										["u"] = 2,
-									},
-									{	-- Knight-Lieutenant's Lamellar Gauntlets
-										["itemID"] = 16410,	-- Knight-Lieutenant's Lamellar Gauntlets
-										["u"] = 2,
-									},
-									{	-- Knight-Captain's Lamellar Leggings
-										["itemID"] = 16435,	-- Knight-Captain's Lamellar Leggings
-										["u"] = 2,
-									},
-									{	-- Knight-Lieutenant's Lamellar Sabatons
-										["itemID"] = 16409,	-- Knight-Lieutenant's Lamellar Sabatons
-										["u"] = 2,
-									},
-									-- Lieutenant Commander's Pursuit [Hunter]
-									{	-- Lieutenant Commander's Chain Helmet
-										["itemID"] = 16428,	-- Lieutenant Commander's Chain Helmet
-										["u"] = 2,
-									},
-									{	-- Lieutenant Commander's Chain Pauldrons
-										["itemID"] = 16427,	-- Lieutenant Commander's Chain Pauldrons
-										["u"] = 2,
-									},
-									{	-- Knight-Captain's Chain Hauberk
-										["itemID"] = 16425,	-- Knight-Captain's Chain Hauberk
-										["u"] = 2,
-									},
-									{	-- Knight-Lieutenant's Chain Gauntlets
-										["itemID"] = 16403,	-- Knight-Lieutenant's Chain Gauntlets
-										["u"] = 2,
-									},
-									{	-- Knight-Captain's Chain Leggings
-										["itemID"] = 16426,	-- Knight-Captain's Chain Leggings
-										["u"] = 2,
-									},
-									{	-- Knight-Lieutenant's Chain Boots
-										["itemID"] = 16401,	-- Knight-Lieutenant's Chain Boots
-										["u"] = 2,
-									},
 								},
 							},
 							{	-- Captain Lancy Revshon <Stormwind Quartermaster>
@@ -595,139 +470,141 @@ _.Zones =
 								["npcID"] = 52029,	-- Edlan Halsing <Bloodthirsty Gladiator>
 								["coord"] = { 74.73, 68.21 },
 								["g"] = {
-									-- Ensembles not added as unable to verify contents
-									i(64782),	-- Bloodthirsty Gladiator's Links of Cruelty
-									i(64681),	-- Bloodthirsty Gladiator's Armbands of Meditation
-									i(64683),	-- Bloodthirsty Gladiator's Armplates of Alacrity
-									i(64684),	-- Bloodthirsty Gladiator's Armplates of Proficiency
-									i(64685),	-- Bloodthirsty Gladiator's Armwraps of Accuracy
-									i(64686),	-- Bloodthirsty Gladiator's Armwraps of Alacrity
-									i(64696),	-- Bloodthirsty Gladiator's Belt of Cruelty
-									i(64697),	-- Bloodthirsty Gladiator's Belt of Meditation
-									i(64698),	-- Bloodthirsty Gladiator's Bindings of Meditation
-									i(64699),	-- Bloodthirsty Gladiator's Bindings of Prowess
-									i(64702),	-- Bloodthirsty Gladiator's Boots of Alacrity
-									i(64703),	-- Bloodthirsty Gladiator's Boots of Cruelty
-									i(64704),	-- Bloodthirsty Gladiator's Bracers of Meditation
-									i(64705),	-- Bloodthirsty Gladiator's Bracers of Prowess
-									i(64706),	-- Bloodthirsty Gladiator's Cape of Cruelty
-									i(64707),	-- Bloodthirsty Gladiator's Cape of Prowess
-									i(64708),	-- Bloodthirsty Gladiator's Chain Armor
-									i(64709),	-- Bloodthirsty Gladiator's Chain Gauntlets
-									i(64710),	-- Bloodthirsty Gladiator's Chain Helm
-									i(64711),	-- Bloodthirsty Gladiator's Chain Leggings
-									i(64712),	-- Bloodthirsty Gladiator's Chain Spaulders
-									i(64715),	-- Bloodthirsty Gladiator's Clasp of Cruelty
-									i(64716),	-- Bloodthirsty Gladiator's Clasp of Meditation
-									i(64718),	-- Bloodthirsty Gladiator's Cloak of Alacrity
-									i(64719),	-- Bloodthirsty Gladiator's Cloak of Prowess
-									i(64720),	-- Bloodthirsty Gladiator's Cord of Accuracy
-									i(64721),	-- Bloodthirsty Gladiator's Cord of Cruelty
-									i(64722),	-- Bloodthirsty Gladiator's Cord of Meditation
-									i(64723),	-- Bloodthirsty Gladiator's Cuffs of Accuracy
-									i(64724),	-- Bloodthirsty Gladiator's Cuffs of Meditation
-									i(64725),	-- Bloodthirsty Gladiator's Cuffs of Prowess
-									i(64727),	-- Bloodthirsty Gladiator's Dragonhide Gloves
-									i(64728),	-- Bloodthirsty Gladiator's Dragonhide Helm
-									i(64729),	-- Bloodthirsty Gladiator's Dragonhide Legguards
-									i(64730),	-- Bloodthirsty Gladiator's Dragonhide Robes
-									i(64731),	-- Bloodthirsty Gladiator's Dragonhide Spaulders
-									i(64732),	-- Bloodthirsty Gladiator's Drape of Diffusion
-									i(64733),	-- Bloodthirsty Gladiator's Drape of Meditation
-									i(64734),	-- Bloodthirsty Gladiator's Drape of Prowess
-									i(64735),	-- Bloodthirsty Gladiator's Dreadplate Chestpiece
-									i(64736),	-- Bloodthirsty Gladiator's Dreadplate Gauntlets
-									i(64737),	-- Bloodthirsty Gladiator's Dreadplate Helm
-									i(64738),	-- Bloodthirsty Gladiator's Dreadplate Legguards
-									i(64739),	-- Bloodthirsty Gladiator's Dreadplate Shoulders
-									i(64745),	-- Bloodthirsty Gladiator's Felweave Amice
-									i(64746),	-- Bloodthirsty Gladiator's Felweave Cowl
-									i(64747),	-- Bloodthirsty Gladiator's Felweave Handguards
-									i(64748),	-- Bloodthirsty Gladiator's Felweave Raiment
-									i(64749),	-- Bloodthirsty Gladiator's Felweave Trousers
-									i(64750),	-- Bloodthirsty Gladiator's Footguards of Alacrity
-									i(64751),	-- Bloodthirsty Gladiator's Footguards of Meditation
-									i(64753),	-- Bloodthirsty Gladiator's Girdle of Cruelty
-									i(64754),	-- Bloodthirsty Gladiator's Girdle of Prowess
-									i(64756),	-- Bloodthirsty Gladiator's Greaves of Alacrity
-									i(64757),	-- Bloodthirsty Gladiator's Greaves of Meditation
-									i(64764),	-- Bloodthirsty Gladiator's Kodohide Gloves
-									i(64765),	-- Bloodthirsty Gladiator's Kodohide Helm
-									i(64766),	-- Bloodthirsty Gladiator's Kodohide Legguards
-									i(64767),	-- Bloodthirsty Gladiator's Kodohide Robes
-									i(64768),	-- Bloodthirsty Gladiator's Kodohide Spaulders
-									i(64769),	-- Bloodthirsty Gladiator's Leather Gloves
-									i(64770),	-- Bloodthirsty Gladiator's Leather Helm
-									i(64771),	-- Bloodthirsty Gladiator's Leather Legguards
-									i(64772),	-- Bloodthirsty Gladiator's Leather Spaulders
-									i(64773),	-- Bloodthirsty Gladiator's Leather Tunic
-									i(64776),	-- Bloodthirsty Gladiator's Linked Armor
-									i(64777),	-- Bloodthirsty Gladiator's Linked Gauntlets
-									i(64778),	-- Bloodthirsty Gladiator's Linked Helm
-									i(64779),	-- Bloodthirsty Gladiator's Linked Leggings
-									i(64780),	-- Bloodthirsty Gladiator's Linked Spaulders
-									i(64781),	-- Bloodthirsty Gladiator's Links of Accuracy
-									i(64682),	-- Bloodthirsty Gladiator's Armbands of Prowess
-									i(64784),	-- Bloodthirsty Gladiator's Mail Armor
-									i(64785),	-- Bloodthirsty Gladiator's Mail Gauntlets
-									i(64786),	-- Bloodthirsty Gladiator's Mail Helm
-									i(64787),	-- Bloodthirsty Gladiator's Mail Leggings
-									i(64788),	-- Bloodthirsty Gladiator's Mail Spaulders
-									i(64795),	-- Bloodthirsty Gladiator's Mooncloth Gloves
-									i(64796),	-- Bloodthirsty Gladiator's Mooncloth Helm
-									i(64797),	-- Bloodthirsty Gladiator's Mooncloth Leggings
-									i(64798),	-- Bloodthirsty Gladiator's Mooncloth Mantle
-									i(64799),	-- Bloodthirsty Gladiator's Mooncloth Robe
-									i(64802),	-- Bloodthirsty Gladiator's Ornamented Chestguard
-									i(64803),	-- Bloodthirsty Gladiator's Ornamented Gloves
-									i(64804),	-- Bloodthirsty Gladiator's Ornamented Headcover
-									i(64805),	-- Bloodthirsty Gladiator's Ornamented Legplates
-									i(64806),	-- Bloodthirsty Gladiator's Ornamented Spaulders
-									i(64811),	-- Bloodthirsty Gladiator's Plate Chestpiece
-									i(64812),	-- Bloodthirsty Gladiator's Plate Gauntlets
-									i(64813),	-- Bloodthirsty Gladiator's Plate Helm
-									i(64814),	-- Bloodthirsty Gladiator's Plate Legguards
-									i(64815),	-- Bloodthirsty Gladiator's Plate Shoulders
-									i(64827),	-- Bloodthirsty Gladiator's Ringmail Armor
-									i(64828),	-- Bloodthirsty Gladiator's Ringmail Gauntlets
-									i(64829),	-- Bloodthirsty Gladiator's Ringmail Helm
-									i(64830),	-- Bloodthirsty Gladiator's Ringmail Leggings
-									i(64831),	-- Bloodthirsty Gladiator's Ringmail Spaulders
-									i(64834),	-- Bloodthirsty Gladiator's Sabatons of Alacrity
-									i(64835),	-- Bloodthirsty Gladiator's Sabatons of Alacrity
-									i(64836),	-- Bloodthirsty Gladiator's Sabatons of Cruelty
-									i(64837),	-- Bloodthirsty Gladiator's Sabatons of Meditation
-									i(64838),	-- Bloodthirsty Gladiator's Satin Gloves
-									i(64839),	-- Bloodthirsty Gladiator's Satin Hood
-									i(64840),	-- Bloodthirsty Gladiator's Satin Leggings
-									i(64841),	-- Bloodthirsty Gladiator's Satin Mantle
-									i(64842),	-- Bloodthirsty Gladiator's Satin Robe
-									i(64843),	-- Bloodthirsty Gladiator's Scaled Chestpiece
-									i(64844),	-- Bloodthirsty Gladiator's Scaled Gauntlets
-									i(64845),	-- Bloodthirsty Gladiator's Scaled Helm
-									i(64846),	-- Bloodthirsty Gladiator's Scaled Legguards
-									i(64847),	-- Bloodthirsty Gladiator's Scaled Shoulders
-									i(64853),	-- Bloodthirsty Gladiator's Silk Amice
-									i(64854),	-- Bloodthirsty Gladiator's Silk Cowl
-									i(64855),	-- Bloodthirsty Gladiator's Silk Handguards
-									i(64856),	-- Bloodthirsty Gladiator's Silk Robe
-									i(64857),	-- Bloodthirsty Gladiator's Silk Trousers
-									i(64862),	-- Bloodthirsty Gladiator's Treads of Alacrity
-									i(64863),	-- Bloodthirsty Gladiator's Treads of Cruelty
-									i(64864),	-- Bloodthirsty Gladiator's Treads of Meditation
-									i(64865),	-- Bloodthirsty Gladiator's Waistband of Accuracy
-									i(64866),	-- Bloodthirsty Gladiator's Waistband of Cruelty
-									i(64867),	-- Bloodthirsty Gladiator's Waistguard of Cruelty
-									i(64868),	-- Bloodthirsty Gladiator's Waistguard of Meditation
-									i(64869),	-- Bloodthirsty Gladiator's Warboots of Alacrity
-									i(64870),	-- Bloodthirsty Gladiator's Warboots of Cruelty
-									i(64872),	-- Bloodthirsty Gladiator's Wristguards of Accuracy
-									i(64873),	-- Bloodthirsty Gladiator's Wristguards of Alacrity
-									i(64874),	-- Bloodthirsty Gladiator's Wyrmhide Gloves
-									i(64875),	-- Bloodthirsty Gladiator's Wyrmhide Helm
-									i(64876),	-- Bloodthirsty Gladiator's Wyrmhide Legguards
-									i(64877),	-- Bloodthirsty Gladiator's Wyrmhide Robes
-									i(64878),	-- Bloodthirsty Gladiator's Wyrmhide Spaulders
+									i(137642, {	-- Mark of Honor
+										-- Ensembles not added as unable to verify contents
+										i(64782),	-- Bloodthirsty Gladiator's Links of Cruelty
+										i(64681),	-- Bloodthirsty Gladiator's Armbands of Meditation
+										i(64683),	-- Bloodthirsty Gladiator's Armplates of Alacrity
+										i(64684),	-- Bloodthirsty Gladiator's Armplates of Proficiency
+										i(64685),	-- Bloodthirsty Gladiator's Armwraps of Accuracy
+										i(64686),	-- Bloodthirsty Gladiator's Armwraps of Alacrity
+										i(64696),	-- Bloodthirsty Gladiator's Belt of Cruelty
+										i(64697),	-- Bloodthirsty Gladiator's Belt of Meditation
+										i(64698),	-- Bloodthirsty Gladiator's Bindings of Meditation
+										i(64699),	-- Bloodthirsty Gladiator's Bindings of Prowess
+										i(64702),	-- Bloodthirsty Gladiator's Boots of Alacrity
+										i(64703),	-- Bloodthirsty Gladiator's Boots of Cruelty
+										i(64704),	-- Bloodthirsty Gladiator's Bracers of Meditation
+										i(64705),	-- Bloodthirsty Gladiator's Bracers of Prowess
+										i(64706),	-- Bloodthirsty Gladiator's Cape of Cruelty
+										i(64707),	-- Bloodthirsty Gladiator's Cape of Prowess
+										i(64708),	-- Bloodthirsty Gladiator's Chain Armor
+										i(64709),	-- Bloodthirsty Gladiator's Chain Gauntlets
+										i(64710),	-- Bloodthirsty Gladiator's Chain Helm
+										i(64711),	-- Bloodthirsty Gladiator's Chain Leggings
+										i(64712),	-- Bloodthirsty Gladiator's Chain Spaulders
+										i(64715),	-- Bloodthirsty Gladiator's Clasp of Cruelty
+										i(64716),	-- Bloodthirsty Gladiator's Clasp of Meditation
+										i(64718),	-- Bloodthirsty Gladiator's Cloak of Alacrity
+										i(64719),	-- Bloodthirsty Gladiator's Cloak of Prowess
+										i(64720),	-- Bloodthirsty Gladiator's Cord of Accuracy
+										i(64721),	-- Bloodthirsty Gladiator's Cord of Cruelty
+										i(64722),	-- Bloodthirsty Gladiator's Cord of Meditation
+										i(64723),	-- Bloodthirsty Gladiator's Cuffs of Accuracy
+										i(64724),	-- Bloodthirsty Gladiator's Cuffs of Meditation
+										i(64725),	-- Bloodthirsty Gladiator's Cuffs of Prowess
+										i(64727),	-- Bloodthirsty Gladiator's Dragonhide Gloves
+										i(64728),	-- Bloodthirsty Gladiator's Dragonhide Helm
+										i(64729),	-- Bloodthirsty Gladiator's Dragonhide Legguards
+										i(64730),	-- Bloodthirsty Gladiator's Dragonhide Robes
+										i(64731),	-- Bloodthirsty Gladiator's Dragonhide Spaulders
+										i(64732),	-- Bloodthirsty Gladiator's Drape of Diffusion
+										i(64733),	-- Bloodthirsty Gladiator's Drape of Meditation
+										i(64734),	-- Bloodthirsty Gladiator's Drape of Prowess
+										i(64735),	-- Bloodthirsty Gladiator's Dreadplate Chestpiece
+										i(64736),	-- Bloodthirsty Gladiator's Dreadplate Gauntlets
+										i(64737),	-- Bloodthirsty Gladiator's Dreadplate Helm
+										i(64738),	-- Bloodthirsty Gladiator's Dreadplate Legguards
+										i(64739),	-- Bloodthirsty Gladiator's Dreadplate Shoulders
+										i(64745),	-- Bloodthirsty Gladiator's Felweave Amice
+										i(64746),	-- Bloodthirsty Gladiator's Felweave Cowl
+										i(64747),	-- Bloodthirsty Gladiator's Felweave Handguards
+										i(64748),	-- Bloodthirsty Gladiator's Felweave Raiment
+										i(64749),	-- Bloodthirsty Gladiator's Felweave Trousers
+										i(64750),	-- Bloodthirsty Gladiator's Footguards of Alacrity
+										i(64751),	-- Bloodthirsty Gladiator's Footguards of Meditation
+										i(64753),	-- Bloodthirsty Gladiator's Girdle of Cruelty
+										i(64754),	-- Bloodthirsty Gladiator's Girdle of Prowess
+										i(64756),	-- Bloodthirsty Gladiator's Greaves of Alacrity
+										i(64757),	-- Bloodthirsty Gladiator's Greaves of Meditation
+										i(64764),	-- Bloodthirsty Gladiator's Kodohide Gloves
+										i(64765),	-- Bloodthirsty Gladiator's Kodohide Helm
+										i(64766),	-- Bloodthirsty Gladiator's Kodohide Legguards
+										i(64767),	-- Bloodthirsty Gladiator's Kodohide Robes
+										i(64768),	-- Bloodthirsty Gladiator's Kodohide Spaulders
+										i(64769),	-- Bloodthirsty Gladiator's Leather Gloves
+										i(64770),	-- Bloodthirsty Gladiator's Leather Helm
+										i(64771),	-- Bloodthirsty Gladiator's Leather Legguards
+										i(64772),	-- Bloodthirsty Gladiator's Leather Spaulders
+										i(64773),	-- Bloodthirsty Gladiator's Leather Tunic
+										i(64776),	-- Bloodthirsty Gladiator's Linked Armor
+										i(64777),	-- Bloodthirsty Gladiator's Linked Gauntlets
+										i(64778),	-- Bloodthirsty Gladiator's Linked Helm
+										i(64779),	-- Bloodthirsty Gladiator's Linked Leggings
+										i(64780),	-- Bloodthirsty Gladiator's Linked Spaulders
+										i(64781),	-- Bloodthirsty Gladiator's Links of Accuracy
+										i(64682),	-- Bloodthirsty Gladiator's Armbands of Prowess
+										i(64784),	-- Bloodthirsty Gladiator's Mail Armor
+										i(64785),	-- Bloodthirsty Gladiator's Mail Gauntlets
+										i(64786),	-- Bloodthirsty Gladiator's Mail Helm
+										i(64787),	-- Bloodthirsty Gladiator's Mail Leggings
+										i(64788),	-- Bloodthirsty Gladiator's Mail Spaulders
+										i(64795),	-- Bloodthirsty Gladiator's Mooncloth Gloves
+										i(64796),	-- Bloodthirsty Gladiator's Mooncloth Helm
+										i(64797),	-- Bloodthirsty Gladiator's Mooncloth Leggings
+										i(64798),	-- Bloodthirsty Gladiator's Mooncloth Mantle
+										i(64799),	-- Bloodthirsty Gladiator's Mooncloth Robe
+										i(64802),	-- Bloodthirsty Gladiator's Ornamented Chestguard
+										i(64803),	-- Bloodthirsty Gladiator's Ornamented Gloves
+										i(64804),	-- Bloodthirsty Gladiator's Ornamented Headcover
+										i(64805),	-- Bloodthirsty Gladiator's Ornamented Legplates
+										i(64806),	-- Bloodthirsty Gladiator's Ornamented Spaulders
+										i(64811),	-- Bloodthirsty Gladiator's Plate Chestpiece
+										i(64812),	-- Bloodthirsty Gladiator's Plate Gauntlets
+										i(64813),	-- Bloodthirsty Gladiator's Plate Helm
+										i(64814),	-- Bloodthirsty Gladiator's Plate Legguards
+										i(64815),	-- Bloodthirsty Gladiator's Plate Shoulders
+										i(64827),	-- Bloodthirsty Gladiator's Ringmail Armor
+										i(64828),	-- Bloodthirsty Gladiator's Ringmail Gauntlets
+										i(64829),	-- Bloodthirsty Gladiator's Ringmail Helm
+										i(64830),	-- Bloodthirsty Gladiator's Ringmail Leggings
+										i(64831),	-- Bloodthirsty Gladiator's Ringmail Spaulders
+										i(64834),	-- Bloodthirsty Gladiator's Sabatons of Alacrity
+										i(64835),	-- Bloodthirsty Gladiator's Sabatons of Alacrity
+										i(64836),	-- Bloodthirsty Gladiator's Sabatons of Cruelty
+										i(64837),	-- Bloodthirsty Gladiator's Sabatons of Meditation
+										i(64838),	-- Bloodthirsty Gladiator's Satin Gloves
+										i(64839),	-- Bloodthirsty Gladiator's Satin Hood
+										i(64840),	-- Bloodthirsty Gladiator's Satin Leggings
+										i(64841),	-- Bloodthirsty Gladiator's Satin Mantle
+										i(64842),	-- Bloodthirsty Gladiator's Satin Robe
+										i(64843),	-- Bloodthirsty Gladiator's Scaled Chestpiece
+										i(64844),	-- Bloodthirsty Gladiator's Scaled Gauntlets
+										i(64845),	-- Bloodthirsty Gladiator's Scaled Helm
+										i(64846),	-- Bloodthirsty Gladiator's Scaled Legguards
+										i(64847),	-- Bloodthirsty Gladiator's Scaled Shoulders
+										i(64853),	-- Bloodthirsty Gladiator's Silk Amice
+										i(64854),	-- Bloodthirsty Gladiator's Silk Cowl
+										i(64855),	-- Bloodthirsty Gladiator's Silk Handguards
+										i(64856),	-- Bloodthirsty Gladiator's Silk Robe
+										i(64857),	-- Bloodthirsty Gladiator's Silk Trousers
+										i(64862),	-- Bloodthirsty Gladiator's Treads of Alacrity
+										i(64863),	-- Bloodthirsty Gladiator's Treads of Cruelty
+										i(64864),	-- Bloodthirsty Gladiator's Treads of Meditation
+										i(64865),	-- Bloodthirsty Gladiator's Waistband of Accuracy
+										i(64866),	-- Bloodthirsty Gladiator's Waistband of Cruelty
+										i(64867),	-- Bloodthirsty Gladiator's Waistguard of Cruelty
+										i(64868),	-- Bloodthirsty Gladiator's Waistguard of Meditation
+										i(64869),	-- Bloodthirsty Gladiator's Warboots of Alacrity
+										i(64870),	-- Bloodthirsty Gladiator's Warboots of Cruelty
+										i(64872),	-- Bloodthirsty Gladiator's Wristguards of Accuracy
+										i(64873),	-- Bloodthirsty Gladiator's Wristguards of Alacrity
+										i(64874),	-- Bloodthirsty Gladiator's Wyrmhide Gloves
+										i(64875),	-- Bloodthirsty Gladiator's Wyrmhide Helm
+										i(64876),	-- Bloodthirsty Gladiator's Wyrmhide Legguards
+										i(64877),	-- Bloodthirsty Gladiator's Wyrmhide Robes
+										i(64878),	-- Bloodthirsty Gladiator's Wyrmhide Spaulders
+									}),
 								},
 							},
 							{	-- Edna Mullby
@@ -1860,8 +1737,41 @@ _.Zones =
 								["npcID"] = 69974,	-- Knight-Lieutenant T'Maire Sydes <Ruthless Gladiator>
 								["coord"] = { 74.94, 67.25 },
 								["g" ] = {
-									-- Ensembles not added as unable to verify contents
-									i(146640, { -- Arsenal: Ruthless Gladiator's Weapons
+									i(137642, {	-- Mark of Honor
+										-- Ensembles not added as unable to verify contents
+										i(146640, { -- Arsenal: Ruthless Gladiator's Weapons
+											i(70242),	-- Ruthless Gladiator's Barrier
+											i(70235),	-- Ruthless Gladiator's Baton of Light
+											i(70226),	-- Ruthless Gladiator's Battle Staff
+											i(70222),	-- Ruthless Gladiator's Bonecracker
+											i(70224),	-- Ruthless Gladiator's Bonegrinder
+											i(70211),	-- Ruthless Gladiator's Cleaver
+											i(70213),	-- Ruthless Gladiator's Decapitator
+											i(70239),	-- Ruthless Gladiator's Endgame
+											i(70227),	-- Ruthless Gladiator's Energy Staff
+											i(70218),	-- Ruthless Gladiator's Fleshslicer
+											i(70223),	-- Ruthless Gladiator's Gavel
+											i(70231),	-- Ruthless Gladiator's Greatsword
+											i(70212),	-- Ruthless Gladiator's Hacker
+											i(70238),	-- Ruthless Gladiator's Heavy Crossbow
+											i(70236),	-- Ruthless Gladiator's Longbow
+											i(70225),	-- Ruthless Gladiator's Pike
+											i(70221),	-- Ruthless Gladiator's Pummeler
+											i(70230),	-- Ruthless Gladiator's Quickblade
+											i(70243),	-- Ruthless Gladiator's Redoubt
+											i(70240),	-- Ruthless Gladiator's Reprieve
+											i(70237),	-- Ruthless Gladiator's Rifle
+											i(70220),	-- Ruthless Gladiator's Right Render
+											i(70217),	-- Ruthless Gladiator's Ripper
+											i(70214),	-- Ruthless Gladiator's Shanker
+											i(70241),	-- Ruthless Gladiator's Shield Wall
+											i(70215),	-- Ruthless Gladiator's Shiv
+											i(70219),	-- Ruthless Gladiator's Slasher
+											i(70229),	-- Ruthless Gladiator's Slicer
+											i(70216),	-- Ruthless Gladiator's Spellblade
+											i(70228),	-- Ruthless Gladiator's Staff
+											i(70234),	-- Ruthless Gladiator's Touch of Defeat
+										}),
 										i(70242),	-- Ruthless Gladiator's Barrier
 										i(70235),	-- Ruthless Gladiator's Baton of Light
 										i(70226),	-- Ruthless Gladiator's Battle Staff
@@ -1893,170 +1803,139 @@ _.Zones =
 										i(70216),	-- Ruthless Gladiator's Spellblade
 										i(70228),	-- Ruthless Gladiator's Staff
 										i(70234),	-- Ruthless Gladiator's Touch of Defeat
+										i(70244),	-- Ruthless Gladiator's Dreadplate Chestpiece
+										i(70245),	-- Ruthless Gladiator's Dreadplate Gauntlets
+										i(70246),	-- Ruthless Gladiator's Dreadplate Helm
+										i(70247),	-- Ruthless Gladiator's Dreadplate Legguards
+										i(70248),	-- Ruthless Gladiator's Dreadplate Shoulders
+										i(70249),	-- Ruthless Gladiator's Scaled Chestpiece
+										i(70250),	-- Ruthless Gladiator's Scaled Gauntlets
+										i(70251),	-- Ruthless Gladiator's Scaled Helm
+										i(70252),	-- Ruthless Gladiator's Scaled Legguards
+										i(70253),	-- Ruthless Gladiator's Scaled Shoulders
+										i(70254),	-- Ruthless Gladiator's Plate Chestpiece
+										i(70255),	-- Ruthless Gladiator's Plate Gauntlets
+										i(70256),	-- Ruthless Gladiator's Plate Helm
+										i(70257),	-- Ruthless Gladiator's Plate Legguards
+										i(70258),	-- Ruthless Gladiator's Plate Shoulders
+										i(70259),	-- Ruthless Gladiator's Chain Armor
+										i(70260),	-- Ruthless Gladiator's Chain Gauntlets
+										i(70261),	-- Ruthless Gladiator's Chain Helm
+										i(70262),	-- Ruthless Gladiator's Chain Leggings
+										i(70263),	-- Ruthless Gladiator's Chain Spaulders
+										i(70264),	-- Ruthless Gladiator's Ringmail Armor
+										i(70265),	-- Ruthless Gladiator's Ringmail Gauntlets
+										i(70266),	-- Ruthless Gladiator's Ringmail Helm
+										i(70267),	-- Ruthless Gladiator's Ringmail Leggings
+										i(70268),	-- Ruthless Gladiator's Ringmail Spaulders
+										i(70269),	-- Ruthless Gladiator's Linked Armor
+										i(70270),	-- Ruthless Gladiator's Linked Gauntlets
+										i(70271),	-- Ruthless Gladiator's Linked Helm
+										i(70272),	-- Ruthless Gladiator's Linked Leggings
+										i(70273),	-- Ruthless Gladiator's Linked Spaulders
+										i(70274),	-- Ruthless Gladiator's Mail Armor
+										i(70275),	-- Ruthless Gladiator's Mail Gauntlets
+										i(70276),	-- Ruthless Gladiator's Mail Helm
+										i(70277),	-- Ruthless Gladiator's Mail Leggings
+										i(70278),	-- Ruthless Gladiator's Mail Spaulders
+										i(70279),	-- Ruthless Gladiator's Dragonhide Gloves
+										i(70280),	-- Ruthless Gladiator's Dragonhide Helm
+										i(70281),	-- Ruthless Gladiator's Dragonhide Legguards
+										i(70282),	-- Ruthless Gladiator's Dragonhide Robes
+										i(70283),	-- Ruthless Gladiator's Dragonhide Spaulders
+										i(70284),	-- Ruthless Gladiator's Kodohide Gloves
+										i(70285),	-- Ruthless Gladiator's Kodohide Helm
+										i(70286),	-- Ruthless Gladiator's Kodohide Legguards
+										i(70287),	-- Ruthless Gladiator's Kodohide Robes
+										i(70288),	-- Ruthless Gladiator's Kodohide Spaulders
+										i(70289),	-- Ruthless Gladiator's Wyrmhide Gloves
+										i(70290),	-- Ruthless Gladiator's Wyrmhide Helm
+										i(70291),	-- Ruthless Gladiator's Wyrmhide Legguards
+										i(70292),	-- Ruthless Gladiator's Wyrmhide Robes
+										i(70293),	-- Ruthless Gladiator's Wyrmhide Spaulders
+										i(70294),	-- Ruthless Gladiator's Leather Tunic
+										i(70295),	-- Ruthless Gladiator's Leather Gloves
+										i(70296),	-- Ruthless Gladiator's Leather Helm
+										i(70297),	-- Ruthless Gladiator's Leather Legguards
+										i(70298),	-- Ruthless Gladiator's Leather Spaulders
+										i(70299),	-- Ruthless Gladiator's Silk Handguards
+										i(70300),	-- Ruthless Gladiator's Silk Cowl
+										i(70301),	-- Ruthless Gladiator's Silk Trousers
+										i(70302),	-- Ruthless Gladiator's Silk Robe
+										i(70303),	-- Ruthless Gladiator's Silk Amice
+										i(70304),	-- Ruthless Gladiator's Mooncloth Gloves
+										i(70305),	-- Ruthless Gladiator's Mooncloth Helm
+										i(70306),	-- Ruthless Gladiator's Mooncloth Leggings
+										i(70307),	-- Ruthless Gladiator's Mooncloth Robe
+										i(70308),	-- Ruthless Gladiator's Mooncloth Mantle
+										i(70309),	-- Ruthless Gladiator's Satin Gloves
+										i(70310),	-- Ruthless Gladiator's Satin Hood
+										i(70311),	-- Ruthless Gladiator's Satin Leggings
+										i(70312),	-- Ruthless Gladiator's Satin Robe
+										i(70313),	-- Ruthless Gladiator's Satin Mantle
+										i(70314),	-- Ruthless Gladiator's Felweave Handguards
+										i(70315),	-- Ruthless Gladiator's Felweave Cowl
+										i(70316),	-- Ruthless Gladiator's Felweave Trousers
+										i(70317),	-- Ruthless Gladiator's Felweave Raiment
+										i(70318),	-- Ruthless Gladiator's Felweave Amice
+										i(70319),	-- Ruthless Gladiator's Clasp of Cruelty
+										i(70320),	-- Ruthless Gladiator's Girdle of Cruelty
+										i(70321),	-- Ruthless Gladiator's Warboots of Cruelty
+										i(70322),	-- Ruthless Gladiator's Armplates of Alacrity
+										i(70323),	-- Ruthless Gladiator's Warboots of Alacrity
+										i(70324),	-- Ruthless Gladiator's Greaves of Alacrity
+										i(70325),	-- Ruthless Gladiator's Bracers of Prowess
+										i(70326),	-- Ruthless Gladiator's Girdle of Prowess
+										i(70327),	-- Ruthless Gladiator's Armplates of Proficiency
+										i(70328),	-- Ruthless Gladiator's Waistguard of Meditation
+										i(70329),	-- Ruthless Gladiator's Sabatons of Meditation
+										i(70330),	-- Ruthless Gladiator's Armbands of Meditation
+										i(70331),	-- Ruthless Gladiator's Waistguard of Cruelty
+										i(70332),	-- Ruthless Gladiator's Clasp of Meditation
+										i(70333),	-- Ruthless Gladiator's Greaves of Meditation
+										i(70334),	-- Ruthless Gladiator's Bracers of Meditation
+										i(70335),	-- Ruthless Gladiator's Sabatons of Cruelty
+										i(70336),	-- Ruthless Gladiator's Links of Cruelty
+										i(70337),	-- Ruthless Gladiator's Sabatons of Alacrity
+										i(70338),	-- Ruthless Gladiator's Wristguards of Alacrity
+										i(70339),	-- Ruthless Gladiator's Links of Accuracy
+										i(70340),	-- Ruthless Gladiator's Wristguards of Accuracy
+										i(70341),	-- Ruthless Gladiator's Sabatons of Alacrity
+										i(70342),	-- Ruthless Gladiator's Armbands of Prowess
+										i(70343),	-- Ruthless Gladiator's Belt of Meditation
+										i(70344),	-- Ruthless Gladiator's Footguards of Meditation
+										i(70345),	-- Ruthless Gladiator's Bindings of Meditation
+										i(70346),	-- Ruthless Gladiator's Belt of Cruelty
+										i(70347),	-- Ruthless Gladiator's Waistband of Cruelty
+										i(70348),	-- Ruthless Gladiator's Boots of Cruelty
+										i(70349),	-- Ruthless Gladiator's Waistband of Accuracy
+										i(70350),	-- Ruthless Gladiator's Armwraps of Accuracy
+										i(70351),	-- Ruthless Gladiator's Boots of Alacrity
+										i(70352),	-- Ruthless Gladiator's Armwraps of Alacrity
+										i(70353),	-- Ruthless Gladiator's Ornamented Chestguard
+										i(70354),	-- Ruthless Gladiator's Ornamented Gloves
+										i(70355),	-- Ruthless Gladiator's Ornamented Headcover
+										i(70356),	-- Ruthless Gladiator's Ornamented Legplates
+										i(70357),	-- Ruthless Gladiator's Ornamented Spaulders
+										i(70358),	-- Ruthless Gladiator's Footguards of Alacrity
+										i(70359),	-- Ruthless Gladiator's Bindings of Prowess
+										i(70360),	-- Ruthless Gladiator's Cord of Cruelty
+										i(70361),	-- Ruthless Gladiator's Treads of Cruelty
+										i(70362),	-- Ruthless Gladiator's Cord of Accuracy
+										i(70363),	-- Ruthless Gladiator's Cuffs of Accuracy
+										i(70364),	-- Ruthless Gladiator's Treads of Alacrity
+										i(70365),	-- Ruthless Gladiator's Cuffs of Prowess
+										i(70366),	-- Ruthless Gladiator's Cuffs of Meditation
+										i(70367),	-- Ruthless Gladiator's Treads of Meditation
+										i(70368),	-- Ruthless Gladiator's Cord of Meditation
+										i(70383),	-- Ruthless Gladiator's Cloak of Alacrity
+										i(70384),	-- Ruthless Gladiator's Cloak of Prowess
+										i(70385),	-- Ruthless Gladiator's Cape of Prowess
+										i(70386),	-- Ruthless Gladiator's Cape of Cruelty
+										i(70387),	-- Ruthless Gladiator's Drape of Diffusion
+										i(70388),	-- Ruthless Gladiator's Drape of Prowess
+										i(70389),	-- Ruthless Gladiator's Drape of Meditation
 									}),
-									i(70242),	-- Ruthless Gladiator's Barrier
-									i(70235),	-- Ruthless Gladiator's Baton of Light
-									i(70226),	-- Ruthless Gladiator's Battle Staff
-									i(70222),	-- Ruthless Gladiator's Bonecracker
-									i(70224),	-- Ruthless Gladiator's Bonegrinder
-									i(70211),	-- Ruthless Gladiator's Cleaver
-									i(70213),	-- Ruthless Gladiator's Decapitator
-									i(70239),	-- Ruthless Gladiator's Endgame
-									i(70227),	-- Ruthless Gladiator's Energy Staff
-									i(70218),	-- Ruthless Gladiator's Fleshslicer
-									i(70223),	-- Ruthless Gladiator's Gavel
-									i(70231),	-- Ruthless Gladiator's Greatsword
-									i(70212),	-- Ruthless Gladiator's Hacker
-									i(70238),	-- Ruthless Gladiator's Heavy Crossbow
-									i(70236),	-- Ruthless Gladiator's Longbow
-									i(70225),	-- Ruthless Gladiator's Pike
-									i(70221),	-- Ruthless Gladiator's Pummeler
-									i(70230),	-- Ruthless Gladiator's Quickblade
-									i(70243),	-- Ruthless Gladiator's Redoubt
-									i(70240),	-- Ruthless Gladiator's Reprieve
-									i(70237),	-- Ruthless Gladiator's Rifle
-									i(70220),	-- Ruthless Gladiator's Right Render
-									i(70217),	-- Ruthless Gladiator's Ripper
-									i(70214),	-- Ruthless Gladiator's Shanker
-									i(70241),	-- Ruthless Gladiator's Shield Wall
-									i(70215),	-- Ruthless Gladiator's Shiv
-									i(70219),	-- Ruthless Gladiator's Slasher
-									i(70229),	-- Ruthless Gladiator's Slicer
-									i(70216),	-- Ruthless Gladiator's Spellblade
-									i(70228),	-- Ruthless Gladiator's Staff
-									i(70234),	-- Ruthless Gladiator's Touch of Defeat
-									i(70244),	-- Ruthless Gladiator's Dreadplate Chestpiece
-									i(70245),	-- Ruthless Gladiator's Dreadplate Gauntlets
-									i(70246),	-- Ruthless Gladiator's Dreadplate Helm
-									i(70247),	-- Ruthless Gladiator's Dreadplate Legguards
-									i(70248),	-- Ruthless Gladiator's Dreadplate Shoulders
-									i(70249),	-- Ruthless Gladiator's Scaled Chestpiece
-									i(70250),	-- Ruthless Gladiator's Scaled Gauntlets
-									i(70251),	-- Ruthless Gladiator's Scaled Helm
-									i(70252),	-- Ruthless Gladiator's Scaled Legguards
-									i(70253),	-- Ruthless Gladiator's Scaled Shoulders
-									i(70254),	-- Ruthless Gladiator's Plate Chestpiece
-									i(70255),	-- Ruthless Gladiator's Plate Gauntlets
-									i(70256),	-- Ruthless Gladiator's Plate Helm
-									i(70257),	-- Ruthless Gladiator's Plate Legguards
-									i(70258),	-- Ruthless Gladiator's Plate Shoulders
-									i(70259),	-- Ruthless Gladiator's Chain Armor
-									i(70260),	-- Ruthless Gladiator's Chain Gauntlets
-									i(70261),	-- Ruthless Gladiator's Chain Helm
-									i(70262),	-- Ruthless Gladiator's Chain Leggings
-									i(70263),	-- Ruthless Gladiator's Chain Spaulders
-									i(70264),	-- Ruthless Gladiator's Ringmail Armor
-									i(70265),	-- Ruthless Gladiator's Ringmail Gauntlets
-									i(70266),	-- Ruthless Gladiator's Ringmail Helm
-									i(70267),	-- Ruthless Gladiator's Ringmail Leggings
-									i(70268),	-- Ruthless Gladiator's Ringmail Spaulders
-									i(70269),	-- Ruthless Gladiator's Linked Armor
-									i(70270),	-- Ruthless Gladiator's Linked Gauntlets
-									i(70271),	-- Ruthless Gladiator's Linked Helm
-									i(70272),	-- Ruthless Gladiator's Linked Leggings
-									i(70273),	-- Ruthless Gladiator's Linked Spaulders
-									i(70274),	-- Ruthless Gladiator's Mail Armor
-									i(70275),	-- Ruthless Gladiator's Mail Gauntlets
-									i(70276),	-- Ruthless Gladiator's Mail Helm
-									i(70277),	-- Ruthless Gladiator's Mail Leggings
-									i(70278),	-- Ruthless Gladiator's Mail Spaulders
-									i(70279),	-- Ruthless Gladiator's Dragonhide Gloves
-									i(70280),	-- Ruthless Gladiator's Dragonhide Helm
-									i(70281),	-- Ruthless Gladiator's Dragonhide Legguards
-									i(70282),	-- Ruthless Gladiator's Dragonhide Robes
-									i(70283),	-- Ruthless Gladiator's Dragonhide Spaulders
-									i(70284),	-- Ruthless Gladiator's Kodohide Gloves
-									i(70285),	-- Ruthless Gladiator's Kodohide Helm
-									i(70286),	-- Ruthless Gladiator's Kodohide Legguards
-									i(70287),	-- Ruthless Gladiator's Kodohide Robes
-									i(70288),	-- Ruthless Gladiator's Kodohide Spaulders
-									i(70289),	-- Ruthless Gladiator's Wyrmhide Gloves
-									i(70290),	-- Ruthless Gladiator's Wyrmhide Helm
-									i(70291),	-- Ruthless Gladiator's Wyrmhide Legguards
-									i(70292),	-- Ruthless Gladiator's Wyrmhide Robes
-									i(70293),	-- Ruthless Gladiator's Wyrmhide Spaulders
-									i(70294),	-- Ruthless Gladiator's Leather Tunic
-									i(70295),	-- Ruthless Gladiator's Leather Gloves
-									i(70296),	-- Ruthless Gladiator's Leather Helm
-									i(70297),	-- Ruthless Gladiator's Leather Legguards
-									i(70298),	-- Ruthless Gladiator's Leather Spaulders
-									i(70299),	-- Ruthless Gladiator's Silk Handguards
-									i(70300),	-- Ruthless Gladiator's Silk Cowl
-									i(70301),	-- Ruthless Gladiator's Silk Trousers
-									i(70302),	-- Ruthless Gladiator's Silk Robe
-									i(70303),	-- Ruthless Gladiator's Silk Amice
-									i(70304),	-- Ruthless Gladiator's Mooncloth Gloves
-									i(70305),	-- Ruthless Gladiator's Mooncloth Helm
-									i(70306),	-- Ruthless Gladiator's Mooncloth Leggings
-									i(70307),	-- Ruthless Gladiator's Mooncloth Robe
-									i(70308),	-- Ruthless Gladiator's Mooncloth Mantle
-									i(70309),	-- Ruthless Gladiator's Satin Gloves
-									i(70310),	-- Ruthless Gladiator's Satin Hood
-									i(70311),	-- Ruthless Gladiator's Satin Leggings
-									i(70312),	-- Ruthless Gladiator's Satin Robe
-									i(70313),	-- Ruthless Gladiator's Satin Mantle
-									i(70314),	-- Ruthless Gladiator's Felweave Handguards
-									i(70315),	-- Ruthless Gladiator's Felweave Cowl
-									i(70316),	-- Ruthless Gladiator's Felweave Trousers
-									i(70317),	-- Ruthless Gladiator's Felweave Raiment
-									i(70318),	-- Ruthless Gladiator's Felweave Amice
-									i(70319),	-- Ruthless Gladiator's Clasp of Cruelty
-									i(70320),	-- Ruthless Gladiator's Girdle of Cruelty
-									i(70321),	-- Ruthless Gladiator's Warboots of Cruelty
-									i(70322),	-- Ruthless Gladiator's Armplates of Alacrity
-									i(70323),	-- Ruthless Gladiator's Warboots of Alacrity
-									i(70324),	-- Ruthless Gladiator's Greaves of Alacrity
-									i(70325),	-- Ruthless Gladiator's Bracers of Prowess
-									i(70326),	-- Ruthless Gladiator's Girdle of Prowess
-									i(70327),	-- Ruthless Gladiator's Armplates of Proficiency
-									i(70328),	-- Ruthless Gladiator's Waistguard of Meditation
-									i(70329),	-- Ruthless Gladiator's Sabatons of Meditation
-									i(70330),	-- Ruthless Gladiator's Armbands of Meditation
-									i(70331),	-- Ruthless Gladiator's Waistguard of Cruelty
-									i(70332),	-- Ruthless Gladiator's Clasp of Meditation
-									i(70333),	-- Ruthless Gladiator's Greaves of Meditation
-									i(70334),	-- Ruthless Gladiator's Bracers of Meditation
-									i(70335),	-- Ruthless Gladiator's Sabatons of Cruelty
-									i(70336),	-- Ruthless Gladiator's Links of Cruelty
-									i(70337),	-- Ruthless Gladiator's Sabatons of Alacrity
-									i(70338),	-- Ruthless Gladiator's Wristguards of Alacrity
-									i(70339),	-- Ruthless Gladiator's Links of Accuracy
-									i(70340),	-- Ruthless Gladiator's Wristguards of Accuracy
-									i(70341),	-- Ruthless Gladiator's Sabatons of Alacrity
-									i(70342),	-- Ruthless Gladiator's Armbands of Prowess
-									i(70343),	-- Ruthless Gladiator's Belt of Meditation
-									i(70344),	-- Ruthless Gladiator's Footguards of Meditation
-									i(70345),	-- Ruthless Gladiator's Bindings of Meditation
-									i(70346),	-- Ruthless Gladiator's Belt of Cruelty
-									i(70347),	-- Ruthless Gladiator's Waistband of Cruelty
-									i(70348),	-- Ruthless Gladiator's Boots of Cruelty
-									i(70349),	-- Ruthless Gladiator's Waistband of Accuracy
-									i(70350),	-- Ruthless Gladiator's Armwraps of Accuracy
-									i(70351),	-- Ruthless Gladiator's Boots of Alacrity
-									i(70352),	-- Ruthless Gladiator's Armwraps of Alacrity
-									i(70353),	-- Ruthless Gladiator's Ornamented Chestguard
-									i(70354),	-- Ruthless Gladiator's Ornamented Gloves
-									i(70355),	-- Ruthless Gladiator's Ornamented Headcover
-									i(70356),	-- Ruthless Gladiator's Ornamented Legplates
-									i(70357),	-- Ruthless Gladiator's Ornamented Spaulders
-									i(70358),	-- Ruthless Gladiator's Footguards of Alacrity
-									i(70359),	-- Ruthless Gladiator's Bindings of Prowess
-									i(70360),	-- Ruthless Gladiator's Cord of Cruelty
-									i(70361),	-- Ruthless Gladiator's Treads of Cruelty
-									i(70362),	-- Ruthless Gladiator's Cord of Accuracy
-									i(70363),	-- Ruthless Gladiator's Cuffs of Accuracy
-									i(70364),	-- Ruthless Gladiator's Treads of Alacrity
-									i(70365),	-- Ruthless Gladiator's Cuffs of Prowess
-									i(70366),	-- Ruthless Gladiator's Cuffs of Meditation
-									i(70367),	-- Ruthless Gladiator's Treads of Meditation
-									i(70368),	-- Ruthless Gladiator's Cord of Meditation
-									i(70383),	-- Ruthless Gladiator's Cloak of Alacrity
-									i(70384),	-- Ruthless Gladiator's Cloak of Prowess
-									i(70385),	-- Ruthless Gladiator's Cape of Prowess
-									i(70386),	-- Ruthless Gladiator's Cape of Cruelty
-									i(70387),	-- Ruthless Gladiator's Drape of Diffusion
-									i(70388),	-- Ruthless Gladiator's Drape of Prowess
-									i(70389),	-- Ruthless Gladiator's Drape of Meditation
 								},
 							},
 							{	-- Lelanai <Saber Handler>
@@ -2085,38 +1964,42 @@ _.Zones =
 								["npcID"] = 12784,	-- Lieutenant Jackspring <Legacy Weapon Quartermaster>
 								["coord"] = { 75.29, 67.21 },
 								["g"] = {
-									i(18825),	-- Grand Marshal's Aegis
-									i(18867),	-- Grand Marshal's Battle Hammer
-									i(18833),	-- Grand Marshal's Bullseye
-									i(18876),	-- Grand Marshal's Claymore
-									i(23455),	-- Grand Marshal's Demolisher
-									i(18838),	-- Grand Marshal's Dirk
-									i(18869),	-- Grand Marshal's Glaive
-									i(18855),	-- Grand Marshal's Hand Cannon
-									i(18827),	-- Grand Marshal's Handaxe
-									i(12584),	-- Grand Marshal's Longsword
-									i(23451),	-- Grand Marshal's Mageblade
-									i(18865),	-- Grand Marshal's Punisher
-									i(18847),	-- Grand Marshal's Razor Hand Blade
-									i(18836),	-- Grand Marshal's Repeater
-									i(18843),	-- Grand Marshal's Right Hand Blade
-									i(18873),	-- Grand Marshal's Stave
-									i(18830),	-- Grand Marshal's Sunderer
-									i(23456),	-- Grand Marshal's Swiftblade
-									i(23452),	-- Grand Marshal's Tome of Power
-									i(23453),	-- Grand Marshal's Tome of Restoration
-									i(23454),	-- Grand Marshal's Warhammer
+									i(137642, {	-- Mark of Honor
+										i(18825),	-- Grand Marshal's Aegis
+										i(18867),	-- Grand Marshal's Battle Hammer
+										i(18833),	-- Grand Marshal's Bullseye
+										i(18876),	-- Grand Marshal's Claymore
+										i(23455),	-- Grand Marshal's Demolisher
+										i(18838),	-- Grand Marshal's Dirk
+										i(18869),	-- Grand Marshal's Glaive
+										i(18855),	-- Grand Marshal's Hand Cannon
+										i(18827),	-- Grand Marshal's Handaxe
+										i(12584),	-- Grand Marshal's Longsword
+										i(23451),	-- Grand Marshal's Mageblade
+										i(18865),	-- Grand Marshal's Punisher
+										i(18847),	-- Grand Marshal's Razor Hand Blade
+										i(18836),	-- Grand Marshal's Repeater
+										i(18843),	-- Grand Marshal's Right Hand Blade
+										i(18873),	-- Grand Marshal's Stave
+										i(18830),	-- Grand Marshal's Sunderer
+										i(23456),	-- Grand Marshal's Swiftblade
+										i(23452),	-- Grand Marshal's Tome of Power
+										i(23453),	-- Grand Marshal's Tome of Restoration
+										i(23454),	-- Grand Marshal's Warhammer
+									}),
 								},
 							},
 							{	-- Lieutenant Karter <War Mount Quartermaster>
 								["npcID"] = 12783,	-- Lieutenant Karter <War Mount Quartermaster>
 								["coord"] = { 76.36, 65.33 },
 								["g"] = {
-									i(29465),	-- Black Battlestrider Mount
-									i(29467),	-- Black War Ram Mount
-									i(29468),	-- Black War Steed Bridle Mount
-									i(35906),	-- Reins of the Black War Elekk Mount
-									i(29471),	-- Reins of the Black War Tiger Mount
+									i(137642, {	-- Mark of Honor
+										i(29465),	-- Black Battlestrider Mount
+										i(29467),	-- Black War Ram Mount
+										i(29468),	-- Black War Steed Bridle Mount
+										i(35906),	-- Reins of the Black War Elekk Mount
+										i(29471),	-- Reins of the Black War Tiger Mount
+									}),
 								},
 							},
 							{	-- Lieutenant Tristia >S9< Elite <Vicious Gladiator>
@@ -2386,308 +2269,310 @@ _.Zones =
 								-- The NPC ID got reused, she was also >S11< Elite Vendor
 								["coord"] = { 75.00, 67.02 },
 								["g"] = {
-									-- Ensembles not added as unable to verify contents, individual armor pieces verified on vendor
-									i(146641), --  Arsenal: Vicious Gladiator's Weapons
-									-- Weapons
-									i(61360),	-- Vicious Gladiator's Barrier
-									i(61351),	-- Vicious Gladiator's Baton of Light
-									i(61341),	-- Vicious Gladiator's Battle Staff
-									i(61336),	-- Vicious Gladiator's Bonecracker
-									i(61339),	-- Vicious Gladiator's Bonegrinder
-									i(61324),	-- Vicious Gladiator's Cleaver
-									i(61326),	-- Vicious Gladiator's Decapitator
-									i(61357),	-- Vicious Gladiator's Endgame
-									i(61342),	-- Vicious Gladiator's Energy Staff
-									i(61331),	-- Vicious Gladiator's Fleshslicer
-									i(61338),	-- Vicious Gladiator's Gavel
-									i(61346),	-- Vicious Gladiator's Greatsword
-									i(61325),	-- Vicious Gladiator's Hacker
-									i(61355),	-- Vicious Gladiator's Heavy Crossbow
-									i(61353),	-- Vicious Gladiator's Longbow
-									i(61340),	-- Vicious Gladiator's Pike
-									i(61335),	-- Vicious Gladiator's Pummeler
-									i(61345),	-- Vicious Gladiator's Quickblade
-									i(61361),	-- Vicious Gladiator's Redoubt
-									i(61358),	-- Vicious Gladiator's Reprieve
-									i(61354),	-- Vicious Gladiator's Rifle
-									i(61333),	-- Vicious Gladiator's Right Render
-									i(61330),	-- Vicious Gladiator's Ripper
-									i(61327),	-- Vicious Gladiator's Shanker
-									i(61359),	-- Vicious Gladiator's Shield Wall
-									i(61328),	-- Vicious Gladiator's Shiv
-									i(61332),	-- Vicious Gladiator's Slasher
-									i(61344),	-- Vicious Gladiator's Slicer
-									i(61329),	-- Vicious Gladiator's Spellblade
-									i(61343),	-- Vicious Gladiator's Staff
-									i(61350),	-- Vicious Gladiator's Touch of Defeat
-									-- Head
-									i(60425),	-- Vicious Gladiator's Chain Helm
-									i(60444),	-- Vicious Gladiator's Dragonhide Helm
-									i(60410),	-- Vicious Gladiator's Dreadplate Helm
-									i(60479),	-- Vicious Gladiator's Felweave Cowl
-									i(60449),	-- Vicious Gladiator's Kodohide Helm
-									i(60460),	-- Vicious Gladiator's Leather Helm
-									i(60435),	-- Vicious Gladiator's Linked Helm
-									i(60440),	-- Vicious Gladiator's Mail Helm
-									i(60469),	-- Vicious Gladiator's Mooncloth Helm
-									i(60603),	-- Vicious Gladiator's Ornamented Headcover
-									i(60420),	-- Vicious Gladiator's Plate Helm
-									i(60430),	-- Vicious Gladiator's Ringmail Helm
-									i(60474),	-- Vicious Gladiator's Satin Hood
-									i(60415),	-- Vicious Gladiator's Scaled Helm
-									i(60464),	-- Vicious Gladiator's Silk Cowl
-									i(60454),	-- Vicious Gladiator's Wyrmhide Helm
-									-- Shoulders
-									i(60427),	-- Vicious Gladiator's Chain Spaulders
-									i(60447),	-- Vicious Gladiator's Dragonhide Spaulders
-									i(60412),	-- Vicious Gladiator's Dreadplate Shoulders
-									i(60482),	-- Vicious Gladiator's Felweave Amice
-									i(60452),	-- Vicious Gladiator's Kodohide Spaulders
-									i(60462),	-- Vicious Gladiator's Leather Spaulders
-									i(60437),	-- Vicious Gladiator's Linked Spaulders
-									i(60442),	-- Vicious Gladiator's Mail Spaulders
-									i(60472),	-- Vicious Gladiator's Mooncloth Mantle
-									i(60605),	-- Vicious Gladiator's Ornamented Spaulders
-									i(60422),	-- Vicious Gladiator's Plate Shoulders
-									i(60432),	-- Vicious Gladiator's Ringmail Spaulders
-									i(60477),	-- Vicious Gladiator's Satin Mantle
-									i(60417),	-- Vicious Gladiator's Scaled Shoulders
-									i(60467),	-- Vicious Gladiator's Silk Amice
-									i(60457),	-- Vicious Gladiator's Wyrmhide Spaulders
-									-- Back
-									i(60783),	-- Vicious Gladiator's Cape of Cruelty
-									i(60779),	-- Vicious Gladiator's Cape of Prowess
-									i(60776),	-- Vicious Gladiator's Cloak of Alacrity
-									i(60778),	-- Vicious Gladiator's Cloak of Prowess
-									i(60786),	-- Vicious Gladiator's Drape of Diffusion
-									i(60788),	-- Vicious Gladiator's Drape of Meditation
-									i(60787),	-- Vicious Gladiator's Drape of Prowess
-									-- Chest
-									i(60423),	-- Vicious Gladiator's Chain Armor
-									i(60446),	-- Vicious Gladiator's Dragonhide Robes
-									i(60408),	-- Vicious Gladiator's Dreadplate Chestpiece
-									i(60481),	-- Vicious Gladiator's Felweave Raiment
-									i(60451),	-- Vicious Gladiator's Kodohide Robes
-									i(60458),	-- Vicious Gladiator's Leather Tunic
-									i(60433),	-- Vicious Gladiator's Linked Armor
-									i(60438),	-- Vicious Gladiator's Mail Armor
-									i(60471),	-- Vicious Gladiator's Mooncloth Robe
-									i(60601),	-- Vicious Gladiator's Ornamented Chestguard
-									i(60418),	-- Vicious Gladiator's Plate Chestpiece
-									i(60428),	-- Vicious Gladiator's Ringmail Armor
-									i(60476),	-- Vicious Gladiator's Satin Robe
-									i(60413),	-- Vicious Gladiator's Scaled Chestpiece
-									i(60466),	-- Vicious Gladiator's Silk Robe
-									i(60456),	-- Vicious Gladiator's Wyrmhide Robes
-									-- Wrist
-									i(60535),	-- Vicious Gladiator's Armbands of Meditation
-									i(60569),	-- Vicious Gladiator's Armbands of Prowess
-									i(60512),	-- Vicious Gladiator's Armplates of Alacrity
-									i(60523),	-- Vicious Gladiator's Armplates of Proficiency
-									i(60591),	-- Vicious Gladiator's Armwraps of Accuracy
-									i(60594),	-- Vicious Gladiator's Armwraps of Alacrity
-									i(60582),	-- Vicious Gladiator's Bindings of Meditation
-									i(60611),	-- Vicious Gladiator's Bindings of Prowess
-									i(60541),	-- Vicious Gladiator's Bracers of Meditation
-									i(60520),	-- Vicious Gladiator's Bracers of Prowess
-									i(60628),	-- Vicious Gladiator's Cuffs of Accuracy
-									i(60635),	-- Vicious Gladiator's Cuffs of Meditation
-									i(60634),	-- Vicious Gladiator's Cuffs of Prowess
-									i(60565),	-- Vicious Gladiator's Wristguards of Accuracy
-									i(60559),	-- Vicious Gladiator's Wristguards of Alacrity
-									-- Hands
-									i(60424),	-- Vicious Gladiator's Chain Gauntlets
-									i(60443),	-- Vicious Gladiator's Dragonhide Gloves
-									i(60409),	-- Vicious Gladiator's Dreadplate Gauntlets
-									i(60478),	-- Vicious Gladiator's Felweave Handguards
-									i(60448),	-- Vicious Gladiator's Kodohide Gloves
-									i(60459),	-- Vicious Gladiator's Leather Gloves
-									i(60434),	-- Vicious Gladiator's Linked Gauntlets
-									i(60439),	-- Vicious Gladiator's Mail Gauntlets
-									i(60468),	-- Vicious Gladiator's Mooncloth Gloves
-									i(60602),	-- Vicious Gladiator's Ornamented Gloves
-									i(60419),	-- Vicious Gladiator's Plate Gauntlets
-									i(60429),	-- Vicious Gladiator's Ringmail Gauntlets
-									i(60473),	-- Vicious Gladiator's Satin Gloves
-									i(60414),	-- Vicious Gladiator's Scaled Gauntlets
-									i(60463),	-- Vicious Gladiator's Silk Handguards
-									i(60453),	-- Vicious Gladiator's Wyrmhide Gloves
-									-- Waist
-									i(60583),	-- Vicious Gladiator's Belt of Cruelty
-									i(60580),	-- Vicious Gladiator's Belt of Meditation
-									i(60505),	-- Vicious Gladiator's Clasp of Cruelty
-									i(60539),	-- Vicious Gladiator's Clasp of Meditation
-									i(60626),	-- Vicious Gladiator's Cord of Accuracy
-									i(60612),	-- Vicious Gladiator's Cord of Cruelty
-									i(60637),	-- Vicious Gladiator's Cord of Meditation
-									i(60508),	-- Vicious Gladiator's Girdle of Cruelty
-									i(60521),	-- Vicious Gladiator's Girdle of Prowess
-									i(60564),	-- Vicious Gladiator's Links of Accuracy
-									i(60555),	-- Vicious Gladiator's Links of Cruelty
-									i(60589),	-- Vicious Gladiator's Waistband of Accuracy
-									i(60586),	-- Vicious Gladiator's Waistband of Cruelty
-									i(60536),	-- Vicious Gladiator's Waistguard of Cruelty
-									i(60533),	-- Vicious Gladiator's Waistguard of Meditation
-									-- Legs
-									i(60426),	-- Vicious Gladiator's Chain Leggings
-									i(60445),	-- Vicious Gladiator's Dragonhide Legguards
-									i(60411),	-- Vicious Gladiator's Dreadplate Legguards
-									i(60480),	-- Vicious Gladiator's Felweave Trousers
-									i(60450),	-- Vicious Gladiator's Kodohide Legguards
-									i(60461),	-- Vicious Gladiator's Leather Legguards
-									i(60436),	-- Vicious Gladiator's Linked Leggings
-									i(60441),	-- Vicious Gladiator's Mail Leggings
-									i(60470),	-- Vicious Gladiator's Mooncloth Leggings
-									i(60604),	-- Vicious Gladiator's Ornamented Legplates
-									i(60421),	-- Vicious Gladiator's Plate Legguards
-									i(60431),	-- Vicious Gladiator's Ringmail Leggings
-									i(60475),	-- Vicious Gladiator's Satin Leggings
-									i(60416),	-- Vicious Gladiator's Scaled Legguards
-									i(60465),	--Vicious Gladiator's Silk Trousers
-									i(60455),	-- Vicious Gladiator's Wyrmhide Legguards
-									-- Feet
-									i(60593),	-- Vicious Gladiator's Boots of Alacrity
-									i(60587),	-- Vicious Gladiator's Boots of Cruelty
-									i(60607),	-- Vicious Gladiator's Footguards of Alacrity
-									i(60581),	-- Vicious Gladiator's Footguards of Meditation
-									i(60516),	-- Vicious Gladiator's Greaves of Alacrity
-									i(60540),	-- Vicious Gladiator's Greaves of Meditation
-									i(60557),	-- Vicious Gladiator's Sabatons of Alacrity
-									i(60567),	-- Vicious Gladiator's Sabatons of Alacrity
-									i(60554),	-- Vicious Gladiator's Sabatons of Cruelty
-									i(60534),	-- Vicious Gladiator's Sabatons of Meditation
-									i(60630),	-- Vicious Gladiator's Treads of Alacrity
-									i(60613),	-- Vicious Gladiator's Treads of Cruelty
-									i(60636),	-- Vicious Gladiator's Treads of Meditation
-									i(60513),	-- Vicious Gladiator's Warboots of Alacrity
-									i(60509),	-- Vicious Gladiator's Warboots of Cruelty
-									-- Elite
-									un(2, i(73413)),	-- Cataclysmic Gladitor's Shield Wall
-									un(2, i(73425)),	-- Cataclysmic Gladitor's Redoubt
-									un(2, i(73435)),	-- Cataclysmic Gladitor's Barrier
-									un(2, i(73414)),	-- Cataclysmic Gladitor's Slicer
-									un(2, i(73439)),	-- Cataclysmic Gladitor's Quickblade
-									un(2, i(73415)),	-- Cataclysmic Gladitor's Bonebracker
-									un(2, i(73426)),	-- Cataclysmic Gladitor's Gavel
-									un(2, i(73440)),	-- Cataclysmic Gladitor's Pummeler
-									un(2, i(73416)),	-- Cataclysmic Gladitor's Hacker
-									un(2, i(73441)),	-- Cataclysmic Gladitor's Cleaver
-									un(2, i(73417)),	-- Cataclysmic Gladitor's Baton of light
-									un(2, i(73431)),	-- Cataclysmic Gladitor's Touch of Defeat
-									un(2, i(73418)),	-- Cataclysmic Gladitor's Slasher
-									un(2, i(73419)),	-- Cataclysmic Gladitor's Right render
-									un(2, i(73420)),	-- Cataclysmic Gladitor's flesh slicer
-									un(2, i(73421)),	-- Cataclysmic Gladitor's ripper
-									un(2, i(73422)),	-- Cataclysmic Gladitor's Shanker
-									un(2, i(73428)),	-- Cataclysmic Gladitor's Shiv
-									un(2, i(73434)),	-- Cataclysmic Gladitor's Spellblade)
-									un(2, i(73423)),	-- Cataclysmic Gladitor's Pike
-									un(2, i(73424)),	-- Cataclysmic Gladitor's Engery Staff
-									un(2, i(73429)),	-- Cataclysmic Gladitor's Staff
-									un(2, i(73433)),	-- Cataclysmic Gladitor's Battle Staff
-									un(2, i(73427)),	-- Cataclysmic Gladitor's Rifle
-									un(2, i(73430)),	-- Cataclysmic Gladitor's Heavy Crossbow
-									un(2, i(73432)),	-- Cataclysmic Gladitor's Reprieve
-									un(2, i(73436)),	-- Cataclysmic Gladitor's Endgame)
-									un(2, i(73437)),	-- Cataclysmic Gladitor's Longbow
-									un(2, i(73442)),	-- Cataclysmic Gladitor's Greatsword)
-									un(2, i(73443)),	-- Cataclysmic Gladitor's Bonegrinder
-									un(2, i(73444)),	-- Cataclysmic Gladitor's Decapitator)
-									un(2, i(73661)),	-- Cataclysmic Gladitor's Mail Spaulders
-									un(2, i(73662)),	-- Cataclysmic Gladitor's Mail Legs
-									un(2, i(73663)),	-- Cataclysmic Gladitor's Mail Helm
-									un(2, i(73664)),	-- Cataclysmic Gladitor's Mail Gauntlets
-									un(2, i(73665)),	-- Cataclysmic Gladitor's Mail Armor
-									un(2, i(73666)),	-- Cataclysmic Gladitor's Linked Spaulders
-									un(2, i(73667)),	-- Cataclysmic Gladitor's Linked Legs
-									un(2, i(73668)),	-- Cataclysmic Gladitor's Linked Helm
-									un(2, i(73669)),	-- Cataclysmic Gladitor's Linked Gauntlets
-									un(2, i(73670)),	-- Cataclysmic Gladitor's Linked Armor
-									un(2, i(73671)),	-- Cataclysmic Gladitor's Ringmail Spaulders
-									un(2, i(73672)),	-- Cataclysmic Gladitor's Ringmail Legs
-									un(2, i(73673)),	-- Cataclysmic Gladitor's Ringmail Helm
-									un(2, i(73674)),	-- Cataclysmic Gladitor's Ringmail Gauntlets
-									un(2, i(73675)),	-- Cataclysmic Gladitor's Ringmail Armor
-									un(2, i(73676)),	-- Cataclysmic Gladitor's Sabatons of Meditation
-									un(2, i(73677)),	-- Cataclysmic Gladitor's Sabatons of Alacrity
-									un(2, i(73714)),	-- Cataclysmic Gladitor's Chain Spaulders
-									un(2, i(73715)),	-- Cataclysmic Gladitor's Chain Legs
-									un(2, i(73716)),	-- Cataclysmic Gladitor's Chain Helm
-									un(2, i(73717)),	-- Cataclysmic Gladitor's Chain Gauntlets
-									un(2, i(73718)),	-- Cataclysmic Gladitor's Chain Armor
-									un(2, i(73719)),	-- Cataclysmic Gladitor's Sabatons of Alacrity
-									un(2, i(73720)),	-- Cataclysmic Gladitor's Sabatons of Cruelty
-									un(2, i(73678)),	-- Cataclysmic Gladiator's Leather Spaulders
-									un(2, i(73679)),	-- Cataclysmic Gladiator's Leather Legs
-									un(2, i(73680)),	-- Cataclysmic Gladiator's Leather Helm
-									un(2, i(73681)),	-- Cataclysmic Gladiator's Leather Gloves
-									un(2, i(73682)),	-- Cataclysmic Gladiator's Leather Tunic
-									un(2, i(73683)),	-- Cataclysmic Gladiator's Boots of Alacrity
-									un(2, i(73684)),	-- Cataclysmic Gladiator's Leather Boots of Cruelty
-									un(2, i(73721)),	-- Cataclysmic Gladiator's Wyrmhide Spaulders
-									un(2, i(73722)),	-- Cataclysmic Gladiator's Wyrmhide Robe
-									un(2, i(73723)),	-- Cataclysmic Gladiator's Wyrmhide legs
-									un(2, i(73724)),	-- Cataclysmic Gladiator's Wyrmhide helm
-									un(2, i(73725)),	-- Cataclysmic Gladiator's Wyrmhide gloves
-									un(2, i(73726)),	-- Cataclysmic Gladiator's Wyrmhide Footguards of Alacrity
-									un(2, i(73727)),	-- Cataclysmic Gladiator's Kodohide Spaulders
-									un(2, i(73728)),	-- Cataclysmic Gladiator's Kodohide Robe
-									un(2, i(73729)),	-- Cataclysmic Gladiator's Kodohide Legs
-									un(2, i(73730)),	-- Cataclysmic Gladiator's Kodohide Helm
-									un(2, i(73731)),	-- Cataclysmic Gladiator's Kodohide Gloves
-									un(2, i(73732)),	-- Cataclysmic Gladiator's Kodohide Footguards of Meditation
-									un(2, i(73733)),	-- Cataclysmic Gladiator's Dragonhide Spaulders
-									un(2, i(73734)),	-- Cataclysmic Gladiator's DragonhideRobe
-									un(2, i(73735)),	-- Cataclysmic Gladiator's Dragonhide Legs
-									un(2, i(73736)),	-- Cataclysmic Gladiator's DragonhideHelm
-									un(2, i(73737)),	-- Cataclysmic Gladiator's DragonhideGloves
-									un(2, i(73656)),	-- Cataclysmic Gladiator's Felweave Amice
-									un(2, i(73657)),	-- Cataclysmic Gladiator's Felweave Rainment
-									un(2, i(73658)),	-- Cataclysmic Gladiator's Felweave Trousers
-									un(2, i(73659)),	-- Cataclysmic Gladiator's Felweave Cowl
-									un(2, i(73660)),	-- Cataclysmic Gladiator's Felweave Gloves
-									un(2, i(73685)),	-- Cataclysmic Gladiator's Satin Mantle
-									un(2, i(73686)),	-- Cataclysmic Gladiator's Satin Robe
-									un(2, i(73687)),	-- Cataclysmic Gladiator's Satin Legs
-									un(2, i(73688)),	-- Cataclysmic Gladiator's Satin Hood
-									un(2, i(73689)),	-- Cataclysmic Gladiator's Satin Gloves
-									un(2, i(73690)),	-- Cataclysmic Gladiator's Mooncloth Mantle
-									un(2, i(73691)),	-- Cataclysmic Gladiator's Mooncloth Robe
-									un(2, i(73692)),	-- Cataclysmic Gladiator's Mooncloth Legs
-									un(2, i(73693)),	-- Cataclysmic Gladiator's Mooncloth Helm
-									un(2, i(73694)),	-- Cataclysmic Gladiator's Mooncloth Gloves
-									un(2, i(73709)),	-- Cataclysmic Gladiator's Silk Amice
-									un(2, i(73710)),	-- Cataclysmic Gladiator's Silk Robe
-									un(2, i(73711)),	-- Cataclysmic Gladiator's Silk Trousers
-									un(2, i(73712)),	-- Cataclysmic Gladiator's Silk Cowl
-									un(2, i(73713)),	-- Cataclysmic Gladiator's Silk Handguards
-									un(2, i(73743)),	-- Cataclysmic Gladiator's Treads of Medi
-									un(2, i(73744)),	-- Cataclysmic Gladiator's Treads of Alacrity
-									un(2, i(73745)),	-- Cataclysmic Gladiator's Treads of Cruelty 
-									un(2, i(73651)),	-- Cataclysmic Gladiator's Plate Soulders
-									un(2, i(73652)),	-- Cataclysmic Gladiator's Plate Legs
-									un(2, i(73653)),	-- Cataclysmic Gladiator's Plate Helm
-									un(2, i(73654)),	-- Cataclysmic Gladiator's Plate Gloves
-									un(2, i(73655)),	-- Cataclysmic Gladiator's Plate Chest
-									un(2, i(73695)),	-- Cataclysmic Gladiator's warboots of alacrity
-									un(2, i(73696)),	-- Cataclysmic Gladiator's warboots of cruelty
-									un(2, i(73697)),	-- Cataclysmic Gladiator's Ornnamented Spaulders
-									un(2, i(73698)),	-- Cataclysmic Gladiator's Ornnamented legs
-									un(2, i(73699)),	-- Cataclysmic Gladiator's Ornnamented head
-									un(2, i(73700)),	-- Cataclysmic Gladiator's Ornnamented gloves
-									un(2, i(73701)),	-- Cataclysmic Gladiator's Ornnamented chest
-									un(2, i(73702)),	-- Cataclysmic Gladiator's greaves of mediation
-									un(2, i(73703)),	-- Cataclysmic Gladiator's greaves of alacrity
-									un(2, i(73704)),	-- Cataclysmic Gladiator's scaled shoulders
-									un(2, i(73705)),	-- Cataclysmic Gladiator's scaled legs
-									un(2, i(73706)),	-- Cataclysmic Gladiator's scaled helm
-									un(2, i(73707)),	-- Cataclysmic Gladiator's scaled gloves
-									un(2, i(73708)),	-- Cataclysmic Gladiator's scaled chest
-									un(2, i(73738)),	-- Cataclysmic Gladiator's dreadplate shoulders
-									un(2, i(73739)),	-- Cataclysmic Gladiator's dreadplate legs
-									un(2, i(73740)),	-- Cataclysmic Gladiator's dreadplate helm
-									un(2, i(73741)),	-- Cataclysmic Gladiator's dreadplate gauntlets
-									un(2, i(73742)),	-- Cataclysmic Gladiator's dreadplate chestpiece
+									i(137642, {	-- Mark of Honor
+										-- Ensembles not added as unable to verify contents, individual armor pieces verified on vendor
+										i(146641), --  Arsenal: Vicious Gladiator's Weapons
+										-- Weapons
+										i(61360),	-- Vicious Gladiator's Barrier
+										i(61351),	-- Vicious Gladiator's Baton of Light
+										i(61341),	-- Vicious Gladiator's Battle Staff
+										i(61336),	-- Vicious Gladiator's Bonecracker
+										i(61339),	-- Vicious Gladiator's Bonegrinder
+										i(61324),	-- Vicious Gladiator's Cleaver
+										i(61326),	-- Vicious Gladiator's Decapitator
+										i(61357),	-- Vicious Gladiator's Endgame
+										i(61342),	-- Vicious Gladiator's Energy Staff
+										i(61331),	-- Vicious Gladiator's Fleshslicer
+										i(61338),	-- Vicious Gladiator's Gavel
+										i(61346),	-- Vicious Gladiator's Greatsword
+										i(61325),	-- Vicious Gladiator's Hacker
+										i(61355),	-- Vicious Gladiator's Heavy Crossbow
+										i(61353),	-- Vicious Gladiator's Longbow
+										i(61340),	-- Vicious Gladiator's Pike
+										i(61335),	-- Vicious Gladiator's Pummeler
+										i(61345),	-- Vicious Gladiator's Quickblade
+										i(61361),	-- Vicious Gladiator's Redoubt
+										i(61358),	-- Vicious Gladiator's Reprieve
+										i(61354),	-- Vicious Gladiator's Rifle
+										i(61333),	-- Vicious Gladiator's Right Render
+										i(61330),	-- Vicious Gladiator's Ripper
+										i(61327),	-- Vicious Gladiator's Shanker
+										i(61359),	-- Vicious Gladiator's Shield Wall
+										i(61328),	-- Vicious Gladiator's Shiv
+										i(61332),	-- Vicious Gladiator's Slasher
+										i(61344),	-- Vicious Gladiator's Slicer
+										i(61329),	-- Vicious Gladiator's Spellblade
+										i(61343),	-- Vicious Gladiator's Staff
+										i(61350),	-- Vicious Gladiator's Touch of Defeat
+										-- Head
+										i(60425),	-- Vicious Gladiator's Chain Helm
+										i(60444),	-- Vicious Gladiator's Dragonhide Helm
+										i(60410),	-- Vicious Gladiator's Dreadplate Helm
+										i(60479),	-- Vicious Gladiator's Felweave Cowl
+										i(60449),	-- Vicious Gladiator's Kodohide Helm
+										i(60460),	-- Vicious Gladiator's Leather Helm
+										i(60435),	-- Vicious Gladiator's Linked Helm
+										i(60440),	-- Vicious Gladiator's Mail Helm
+										i(60469),	-- Vicious Gladiator's Mooncloth Helm
+										i(60603),	-- Vicious Gladiator's Ornamented Headcover
+										i(60420),	-- Vicious Gladiator's Plate Helm
+										i(60430),	-- Vicious Gladiator's Ringmail Helm
+										i(60474),	-- Vicious Gladiator's Satin Hood
+										i(60415),	-- Vicious Gladiator's Scaled Helm
+										i(60464),	-- Vicious Gladiator's Silk Cowl
+										i(60454),	-- Vicious Gladiator's Wyrmhide Helm
+										-- Shoulders
+										i(60427),	-- Vicious Gladiator's Chain Spaulders
+										i(60447),	-- Vicious Gladiator's Dragonhide Spaulders
+										i(60412),	-- Vicious Gladiator's Dreadplate Shoulders
+										i(60482),	-- Vicious Gladiator's Felweave Amice
+										i(60452),	-- Vicious Gladiator's Kodohide Spaulders
+										i(60462),	-- Vicious Gladiator's Leather Spaulders
+										i(60437),	-- Vicious Gladiator's Linked Spaulders
+										i(60442),	-- Vicious Gladiator's Mail Spaulders
+										i(60472),	-- Vicious Gladiator's Mooncloth Mantle
+										i(60605),	-- Vicious Gladiator's Ornamented Spaulders
+										i(60422),	-- Vicious Gladiator's Plate Shoulders
+										i(60432),	-- Vicious Gladiator's Ringmail Spaulders
+										i(60477),	-- Vicious Gladiator's Satin Mantle
+										i(60417),	-- Vicious Gladiator's Scaled Shoulders
+										i(60467),	-- Vicious Gladiator's Silk Amice
+										i(60457),	-- Vicious Gladiator's Wyrmhide Spaulders
+										-- Back
+										i(60783),	-- Vicious Gladiator's Cape of Cruelty
+										i(60779),	-- Vicious Gladiator's Cape of Prowess
+										i(60776),	-- Vicious Gladiator's Cloak of Alacrity
+										i(60778),	-- Vicious Gladiator's Cloak of Prowess
+										i(60786),	-- Vicious Gladiator's Drape of Diffusion
+										i(60788),	-- Vicious Gladiator's Drape of Meditation
+										i(60787),	-- Vicious Gladiator's Drape of Prowess
+										-- Chest
+										i(60423),	-- Vicious Gladiator's Chain Armor
+										i(60446),	-- Vicious Gladiator's Dragonhide Robes
+										i(60408),	-- Vicious Gladiator's Dreadplate Chestpiece
+										i(60481),	-- Vicious Gladiator's Felweave Raiment
+										i(60451),	-- Vicious Gladiator's Kodohide Robes
+										i(60458),	-- Vicious Gladiator's Leather Tunic
+										i(60433),	-- Vicious Gladiator's Linked Armor
+										i(60438),	-- Vicious Gladiator's Mail Armor
+										i(60471),	-- Vicious Gladiator's Mooncloth Robe
+										i(60601),	-- Vicious Gladiator's Ornamented Chestguard
+										i(60418),	-- Vicious Gladiator's Plate Chestpiece
+										i(60428),	-- Vicious Gladiator's Ringmail Armor
+										i(60476),	-- Vicious Gladiator's Satin Robe
+										i(60413),	-- Vicious Gladiator's Scaled Chestpiece
+										i(60466),	-- Vicious Gladiator's Silk Robe
+										i(60456),	-- Vicious Gladiator's Wyrmhide Robes
+										-- Wrist
+										i(60535),	-- Vicious Gladiator's Armbands of Meditation
+										i(60569),	-- Vicious Gladiator's Armbands of Prowess
+										i(60512),	-- Vicious Gladiator's Armplates of Alacrity
+										i(60523),	-- Vicious Gladiator's Armplates of Proficiency
+										i(60591),	-- Vicious Gladiator's Armwraps of Accuracy
+										i(60594),	-- Vicious Gladiator's Armwraps of Alacrity
+										i(60582),	-- Vicious Gladiator's Bindings of Meditation
+										i(60611),	-- Vicious Gladiator's Bindings of Prowess
+										i(60541),	-- Vicious Gladiator's Bracers of Meditation
+										i(60520),	-- Vicious Gladiator's Bracers of Prowess
+										i(60628),	-- Vicious Gladiator's Cuffs of Accuracy
+										i(60635),	-- Vicious Gladiator's Cuffs of Meditation
+										i(60634),	-- Vicious Gladiator's Cuffs of Prowess
+										i(60565),	-- Vicious Gladiator's Wristguards of Accuracy
+										i(60559),	-- Vicious Gladiator's Wristguards of Alacrity
+										-- Hands
+										i(60424),	-- Vicious Gladiator's Chain Gauntlets
+										i(60443),	-- Vicious Gladiator's Dragonhide Gloves
+										i(60409),	-- Vicious Gladiator's Dreadplate Gauntlets
+										i(60478),	-- Vicious Gladiator's Felweave Handguards
+										i(60448),	-- Vicious Gladiator's Kodohide Gloves
+										i(60459),	-- Vicious Gladiator's Leather Gloves
+										i(60434),	-- Vicious Gladiator's Linked Gauntlets
+										i(60439),	-- Vicious Gladiator's Mail Gauntlets
+										i(60468),	-- Vicious Gladiator's Mooncloth Gloves
+										i(60602),	-- Vicious Gladiator's Ornamented Gloves
+										i(60419),	-- Vicious Gladiator's Plate Gauntlets
+										i(60429),	-- Vicious Gladiator's Ringmail Gauntlets
+										i(60473),	-- Vicious Gladiator's Satin Gloves
+										i(60414),	-- Vicious Gladiator's Scaled Gauntlets
+										i(60463),	-- Vicious Gladiator's Silk Handguards
+										i(60453),	-- Vicious Gladiator's Wyrmhide Gloves
+										-- Waist
+										i(60583),	-- Vicious Gladiator's Belt of Cruelty
+										i(60580),	-- Vicious Gladiator's Belt of Meditation
+										i(60505),	-- Vicious Gladiator's Clasp of Cruelty
+										i(60539),	-- Vicious Gladiator's Clasp of Meditation
+										i(60626),	-- Vicious Gladiator's Cord of Accuracy
+										i(60612),	-- Vicious Gladiator's Cord of Cruelty
+										i(60637),	-- Vicious Gladiator's Cord of Meditation
+										i(60508),	-- Vicious Gladiator's Girdle of Cruelty
+										i(60521),	-- Vicious Gladiator's Girdle of Prowess
+										i(60564),	-- Vicious Gladiator's Links of Accuracy
+										i(60555),	-- Vicious Gladiator's Links of Cruelty
+										i(60589),	-- Vicious Gladiator's Waistband of Accuracy
+										i(60586),	-- Vicious Gladiator's Waistband of Cruelty
+										i(60536),	-- Vicious Gladiator's Waistguard of Cruelty
+										i(60533),	-- Vicious Gladiator's Waistguard of Meditation
+										-- Legs
+										i(60426),	-- Vicious Gladiator's Chain Leggings
+										i(60445),	-- Vicious Gladiator's Dragonhide Legguards
+										i(60411),	-- Vicious Gladiator's Dreadplate Legguards
+										i(60480),	-- Vicious Gladiator's Felweave Trousers
+										i(60450),	-- Vicious Gladiator's Kodohide Legguards
+										i(60461),	-- Vicious Gladiator's Leather Legguards
+										i(60436),	-- Vicious Gladiator's Linked Leggings
+										i(60441),	-- Vicious Gladiator's Mail Leggings
+										i(60470),	-- Vicious Gladiator's Mooncloth Leggings
+										i(60604),	-- Vicious Gladiator's Ornamented Legplates
+										i(60421),	-- Vicious Gladiator's Plate Legguards
+										i(60431),	-- Vicious Gladiator's Ringmail Leggings
+										i(60475),	-- Vicious Gladiator's Satin Leggings
+										i(60416),	-- Vicious Gladiator's Scaled Legguards
+										i(60465),	--Vicious Gladiator's Silk Trousers
+										i(60455),	-- Vicious Gladiator's Wyrmhide Legguards
+										-- Feet
+										i(60593),	-- Vicious Gladiator's Boots of Alacrity
+										i(60587),	-- Vicious Gladiator's Boots of Cruelty
+										i(60607),	-- Vicious Gladiator's Footguards of Alacrity
+										i(60581),	-- Vicious Gladiator's Footguards of Meditation
+										i(60516),	-- Vicious Gladiator's Greaves of Alacrity
+										i(60540),	-- Vicious Gladiator's Greaves of Meditation
+										i(60557),	-- Vicious Gladiator's Sabatons of Alacrity
+										i(60567),	-- Vicious Gladiator's Sabatons of Alacrity
+										i(60554),	-- Vicious Gladiator's Sabatons of Cruelty
+										i(60534),	-- Vicious Gladiator's Sabatons of Meditation
+										i(60630),	-- Vicious Gladiator's Treads of Alacrity
+										i(60613),	-- Vicious Gladiator's Treads of Cruelty
+										i(60636),	-- Vicious Gladiator's Treads of Meditation
+										i(60513),	-- Vicious Gladiator's Warboots of Alacrity
+										i(60509),	-- Vicious Gladiator's Warboots of Cruelty
+										-- Elite
+										un(2, i(73413)),	-- Cataclysmic Gladitor's Shield Wall
+										un(2, i(73425)),	-- Cataclysmic Gladitor's Redoubt
+										un(2, i(73435)),	-- Cataclysmic Gladitor's Barrier
+										un(2, i(73414)),	-- Cataclysmic Gladitor's Slicer
+										un(2, i(73439)),	-- Cataclysmic Gladitor's Quickblade
+										un(2, i(73415)),	-- Cataclysmic Gladitor's Bonebracker
+										un(2, i(73426)),	-- Cataclysmic Gladitor's Gavel
+										un(2, i(73440)),	-- Cataclysmic Gladitor's Pummeler
+										un(2, i(73416)),	-- Cataclysmic Gladitor's Hacker
+										un(2, i(73441)),	-- Cataclysmic Gladitor's Cleaver
+										un(2, i(73417)),	-- Cataclysmic Gladitor's Baton of light
+										un(2, i(73431)),	-- Cataclysmic Gladitor's Touch of Defeat
+										un(2, i(73418)),	-- Cataclysmic Gladitor's Slasher
+										un(2, i(73419)),	-- Cataclysmic Gladitor's Right render
+										un(2, i(73420)),	-- Cataclysmic Gladitor's flesh slicer
+										un(2, i(73421)),	-- Cataclysmic Gladitor's ripper
+										un(2, i(73422)),	-- Cataclysmic Gladitor's Shanker
+										un(2, i(73428)),	-- Cataclysmic Gladitor's Shiv
+										un(2, i(73434)),	-- Cataclysmic Gladitor's Spellblade)
+										un(2, i(73423)),	-- Cataclysmic Gladitor's Pike
+										un(2, i(73424)),	-- Cataclysmic Gladitor's Engery Staff
+										un(2, i(73429)),	-- Cataclysmic Gladitor's Staff
+										un(2, i(73433)),	-- Cataclysmic Gladitor's Battle Staff
+										un(2, i(73427)),	-- Cataclysmic Gladitor's Rifle
+										un(2, i(73430)),	-- Cataclysmic Gladitor's Heavy Crossbow
+										un(2, i(73432)),	-- Cataclysmic Gladitor's Reprieve
+										un(2, i(73436)),	-- Cataclysmic Gladitor's Endgame)
+										un(2, i(73437)),	-- Cataclysmic Gladitor's Longbow
+										un(2, i(73442)),	-- Cataclysmic Gladitor's Greatsword)
+										un(2, i(73443)),	-- Cataclysmic Gladitor's Bonegrinder
+										un(2, i(73444)),	-- Cataclysmic Gladitor's Decapitator)
+										un(2, i(73661)),	-- Cataclysmic Gladitor's Mail Spaulders
+										un(2, i(73662)),	-- Cataclysmic Gladitor's Mail Legs
+										un(2, i(73663)),	-- Cataclysmic Gladitor's Mail Helm
+										un(2, i(73664)),	-- Cataclysmic Gladitor's Mail Gauntlets
+										un(2, i(73665)),	-- Cataclysmic Gladitor's Mail Armor
+										un(2, i(73666)),	-- Cataclysmic Gladitor's Linked Spaulders
+										un(2, i(73667)),	-- Cataclysmic Gladitor's Linked Legs
+										un(2, i(73668)),	-- Cataclysmic Gladitor's Linked Helm
+										un(2, i(73669)),	-- Cataclysmic Gladitor's Linked Gauntlets
+										un(2, i(73670)),	-- Cataclysmic Gladitor's Linked Armor
+										un(2, i(73671)),	-- Cataclysmic Gladitor's Ringmail Spaulders
+										un(2, i(73672)),	-- Cataclysmic Gladitor's Ringmail Legs
+										un(2, i(73673)),	-- Cataclysmic Gladitor's Ringmail Helm
+										un(2, i(73674)),	-- Cataclysmic Gladitor's Ringmail Gauntlets
+										un(2, i(73675)),	-- Cataclysmic Gladitor's Ringmail Armor
+										un(2, i(73676)),	-- Cataclysmic Gladitor's Sabatons of Meditation
+										un(2, i(73677)),	-- Cataclysmic Gladitor's Sabatons of Alacrity
+										un(2, i(73714)),	-- Cataclysmic Gladitor's Chain Spaulders
+										un(2, i(73715)),	-- Cataclysmic Gladitor's Chain Legs
+										un(2, i(73716)),	-- Cataclysmic Gladitor's Chain Helm
+										un(2, i(73717)),	-- Cataclysmic Gladitor's Chain Gauntlets
+										un(2, i(73718)),	-- Cataclysmic Gladitor's Chain Armor
+										un(2, i(73719)),	-- Cataclysmic Gladitor's Sabatons of Alacrity
+										un(2, i(73720)),	-- Cataclysmic Gladitor's Sabatons of Cruelty
+										un(2, i(73678)),	-- Cataclysmic Gladiator's Leather Spaulders
+										un(2, i(73679)),	-- Cataclysmic Gladiator's Leather Legs
+										un(2, i(73680)),	-- Cataclysmic Gladiator's Leather Helm
+										un(2, i(73681)),	-- Cataclysmic Gladiator's Leather Gloves
+										un(2, i(73682)),	-- Cataclysmic Gladiator's Leather Tunic
+										un(2, i(73683)),	-- Cataclysmic Gladiator's Boots of Alacrity
+										un(2, i(73684)),	-- Cataclysmic Gladiator's Leather Boots of Cruelty
+										un(2, i(73721)),	-- Cataclysmic Gladiator's Wyrmhide Spaulders
+										un(2, i(73722)),	-- Cataclysmic Gladiator's Wyrmhide Robe
+										un(2, i(73723)),	-- Cataclysmic Gladiator's Wyrmhide legs
+										un(2, i(73724)),	-- Cataclysmic Gladiator's Wyrmhide helm
+										un(2, i(73725)),	-- Cataclysmic Gladiator's Wyrmhide gloves
+										un(2, i(73726)),	-- Cataclysmic Gladiator's Wyrmhide Footguards of Alacrity
+										un(2, i(73727)),	-- Cataclysmic Gladiator's Kodohide Spaulders
+										un(2, i(73728)),	-- Cataclysmic Gladiator's Kodohide Robe
+										un(2, i(73729)),	-- Cataclysmic Gladiator's Kodohide Legs
+										un(2, i(73730)),	-- Cataclysmic Gladiator's Kodohide Helm
+										un(2, i(73731)),	-- Cataclysmic Gladiator's Kodohide Gloves
+										un(2, i(73732)),	-- Cataclysmic Gladiator's Kodohide Footguards of Meditation
+										un(2, i(73733)),	-- Cataclysmic Gladiator's Dragonhide Spaulders
+										un(2, i(73734)),	-- Cataclysmic Gladiator's DragonhideRobe
+										un(2, i(73735)),	-- Cataclysmic Gladiator's Dragonhide Legs
+										un(2, i(73736)),	-- Cataclysmic Gladiator's DragonhideHelm
+										un(2, i(73737)),	-- Cataclysmic Gladiator's DragonhideGloves
+										un(2, i(73656)),	-- Cataclysmic Gladiator's Felweave Amice
+										un(2, i(73657)),	-- Cataclysmic Gladiator's Felweave Rainment
+										un(2, i(73658)),	-- Cataclysmic Gladiator's Felweave Trousers
+										un(2, i(73659)),	-- Cataclysmic Gladiator's Felweave Cowl
+										un(2, i(73660)),	-- Cataclysmic Gladiator's Felweave Gloves
+										un(2, i(73685)),	-- Cataclysmic Gladiator's Satin Mantle
+										un(2, i(73686)),	-- Cataclysmic Gladiator's Satin Robe
+										un(2, i(73687)),	-- Cataclysmic Gladiator's Satin Legs
+										un(2, i(73688)),	-- Cataclysmic Gladiator's Satin Hood
+										un(2, i(73689)),	-- Cataclysmic Gladiator's Satin Gloves
+										un(2, i(73690)),	-- Cataclysmic Gladiator's Mooncloth Mantle
+										un(2, i(73691)),	-- Cataclysmic Gladiator's Mooncloth Robe
+										un(2, i(73692)),	-- Cataclysmic Gladiator's Mooncloth Legs
+										un(2, i(73693)),	-- Cataclysmic Gladiator's Mooncloth Helm
+										un(2, i(73694)),	-- Cataclysmic Gladiator's Mooncloth Gloves
+										un(2, i(73709)),	-- Cataclysmic Gladiator's Silk Amice
+										un(2, i(73710)),	-- Cataclysmic Gladiator's Silk Robe
+										un(2, i(73711)),	-- Cataclysmic Gladiator's Silk Trousers
+										un(2, i(73712)),	-- Cataclysmic Gladiator's Silk Cowl
+										un(2, i(73713)),	-- Cataclysmic Gladiator's Silk Handguards
+										un(2, i(73743)),	-- Cataclysmic Gladiator's Treads of Medi
+										un(2, i(73744)),	-- Cataclysmic Gladiator's Treads of Alacrity
+										un(2, i(73745)),	-- Cataclysmic Gladiator's Treads of Cruelty 
+										un(2, i(73651)),	-- Cataclysmic Gladiator's Plate Soulders
+										un(2, i(73652)),	-- Cataclysmic Gladiator's Plate Legs
+										un(2, i(73653)),	-- Cataclysmic Gladiator's Plate Helm
+										un(2, i(73654)),	-- Cataclysmic Gladiator's Plate Gloves
+										un(2, i(73655)),	-- Cataclysmic Gladiator's Plate Chest
+										un(2, i(73695)),	-- Cataclysmic Gladiator's warboots of alacrity
+										un(2, i(73696)),	-- Cataclysmic Gladiator's warboots of cruelty
+										un(2, i(73697)),	-- Cataclysmic Gladiator's Ornnamented Spaulders
+										un(2, i(73698)),	-- Cataclysmic Gladiator's Ornnamented legs
+										un(2, i(73699)),	-- Cataclysmic Gladiator's Ornnamented head
+										un(2, i(73700)),	-- Cataclysmic Gladiator's Ornnamented gloves
+										un(2, i(73701)),	-- Cataclysmic Gladiator's Ornnamented chest
+										un(2, i(73702)),	-- Cataclysmic Gladiator's greaves of mediation
+										un(2, i(73703)),	-- Cataclysmic Gladiator's greaves of alacrity
+										un(2, i(73704)),	-- Cataclysmic Gladiator's scaled shoulders
+										un(2, i(73705)),	-- Cataclysmic Gladiator's scaled legs
+										un(2, i(73706)),	-- Cataclysmic Gladiator's scaled helm
+										un(2, i(73707)),	-- Cataclysmic Gladiator's scaled gloves
+										un(2, i(73708)),	-- Cataclysmic Gladiator's scaled chest
+										un(2, i(73738)),	-- Cataclysmic Gladiator's dreadplate shoulders
+										un(2, i(73739)),	-- Cataclysmic Gladiator's dreadplate legs
+										un(2, i(73740)),	-- Cataclysmic Gladiator's dreadplate helm
+										un(2, i(73741)),	-- Cataclysmic Gladiator's dreadplate gauntlets
+										un(2, i(73742)),	-- Cataclysmic Gladiator's dreadplate chestpiece
+									}),
 								},
 							},
 							{	-- Lil Timmy <Boy with kittens>
@@ -2701,27 +2586,29 @@ _.Zones =
 								["npcID"] = 52030,	-- Liliana Emberfrost <Honor Heirlooms>
 								["coord"] = { 74.41, 67.59 },
 								["g"] = {
-									-- Weapons
-									i(122369),	-- Battleworn Thrash Blade
-									i(122368),	-- Grand Staff of Jordan
-									i(122365),	-- Reforged Truesilver Champion
-									i(122364),	-- Sharpened Scarlet Kris
-									i(122367),	-- The Blessed Hammer of Grace
-									i(122366),	-- Upgraded Dwarven Hand Cannon
-									-- Shoulders
-									i(122375),	-- Aged Paundrons of The Five Thunders
-									i(122376),	-- Exceptional Stormshroud Shoulders
-									i(122378),	-- Exquisite Sunderseer Mantle
-									i(122377),	-- Lasting Feralheart Spaulders
-									i(122373),	-- Pristine Lightforge Spaulders
-									i(122374),	-- Prized Beastmaster's Mantle
-									i(122372),	-- Strengthened Stockade Pauldrons
-									-- Trinkets
-									i(122371),	-- Inherited Insignia of the Alliance
-									i(122530),	-- Inherited Mark of Tyranny
-									-- Consumable
-									i(122338),	-- Ancient Heirloom Armor Casing
-									i(122339),	-- Ancient Heirloom Scabbard
+									i(137642, {	-- Mark of Honor
+										-- Weapons
+										i(122369),	-- Battleworn Thrash Blade
+										i(122368),	-- Grand Staff of Jordan
+										i(122365),	-- Reforged Truesilver Champion
+										i(122364),	-- Sharpened Scarlet Kris
+										i(122367),	-- The Blessed Hammer of Grace
+										i(122366),	-- Upgraded Dwarven Hand Cannon
+										-- Shoulders
+										i(122375),	-- Aged Paundrons of The Five Thunders
+										i(122376),	-- Exceptional Stormshroud Shoulders
+										i(122378),	-- Exquisite Sunderseer Mantle
+										i(122377),	-- Lasting Feralheart Spaulders
+										i(122373),	-- Pristine Lightforge Spaulders
+										i(122374),	-- Prized Beastmaster's Mantle
+										i(122372),	-- Strengthened Stockade Pauldrons
+										-- Trinkets
+										i(122371),	-- Inherited Insignia of the Alliance
+										i(122530),	-- Inherited Mark of Tyranny
+										-- Consumable
+										i(122338),	-- Ancient Heirloom Armor Casing
+										i(122339),	-- Ancient Heirloom Scabbard
+									}),
 								},
 							},
 							{	-- Lisbeth Schneider <Clothier>
@@ -2982,21 +2869,23 @@ _.Zones =
 								["npcID"] = 12781,	-- Master Sergeant Biggins <Accessories Quartermaster>
 								["coord"] = { 75.18, 66.77 },
 								["g"] = {
-									i(15198),	-- Knight's Colors
-									i(15196),	-- Private's Tabard
-									un(2, i(18854)),	-- Insignia of the Alliance [Warrior]
-									un(2, i(18864)),	-- Insignia of the Alliance [Paladin]
-									un(2, i(18856)),	-- Insignia of the Alliance [Hunter]
-									un(2, i(18857)),	-- Insignia of the Alliance [Rogue]
-									un(2, i(18859)),	-- Insignia of the Alliance [Mage]
-									un(2, i(18862)),	-- Insignia of the Alliance [Priest]
-									un(2, i(18858)),	-- Insignia of the Alliance [Warlock]
-									un(2, i(18863)),	-- Insignia of the Alliance [Druid]
-									un(2, i(28246)),	-- Band of Triumph
-									un(2, i(28247)),	-- Band of Dominance
-									un(2, i(18442)),	-- Master Sergeant's Insignia
-									un(2, i(18444)),	-- Master Sergeant's Insignia
-									un(2, i(18443)),	-- Master Sergeant's Insignia
+									i(137642, {	-- Mark of Honor
+										i(15198),	-- Knight's Colors
+										i(15196),	-- Private's Tabard
+										un(2, i(18854)),	-- Insignia of the Alliance [Warrior]
+										un(2, i(18864)),	-- Insignia of the Alliance [Paladin]
+										un(2, i(18856)),	-- Insignia of the Alliance [Hunter]
+										un(2, i(18857)),	-- Insignia of the Alliance [Rogue]
+										un(2, i(18859)),	-- Insignia of the Alliance [Mage]
+										un(2, i(18862)),	-- Insignia of the Alliance [Priest]
+										un(2, i(18858)),	-- Insignia of the Alliance [Warlock]
+										un(2, i(18863)),	-- Insignia of the Alliance [Druid]
+										un(2, i(28246)),	-- Band of Triumph
+										un(2, i(28247)),	-- Band of Dominance
+										un(2, i(18442)),	-- Master Sergeant's Insignia
+										un(2, i(18444)),	-- Master Sergeant's Insignia
+										un(2, i(18443)),	-- Master Sergeant's Insignia
+									}),
 								},
 							},
 							{	-- Miles Sidney <Poison Supplies>
@@ -3166,137 +3055,139 @@ _.Zones =
 								["npcID"] = 12785,	-- Sergeant Major Clate <Legacy Armor Quartermaster>
 								["coord"] = { 75.46, 67.03 },
 								["g"] = {
-									-- Head
-									i(16465),	-- Field Marshal's Chain Helm
-									i(17578),	-- Field Marshal's Coronal
-									i(16441),	-- Field Marshal's Coronet
-									i(16451),	-- Field Marshal's Dragonhide Helmet
-									i(17602),	-- Field Marshal's Headdress
-									i(16474),	-- Field Marshal's Lamellar Faceguard
-									i(16455),	-- Field Marshal's Leather Mask
-									i(29610),	-- Field Marshal's Mail Helm
-									i(16478),	-- Field Marshal's Plate Helm
-									i(23306),	-- Lieutenant Commander's Chain Helm
-									i(23308),	-- Lieutenant Commander's Dragonhide Headguard
-									i(23310),	-- Lieutenant Commander's Dreadweave Cowl
-									i(23276),	-- Lieutenant Commander's Lamellar Headguard
-									i(23312),	-- Lieutenant Commander's Leather Helm
-									i(29598),	-- Lieutenant Commander's Mail Headguard
-									i(23314),	-- Lieutenant Commander's Plate Helmet
-									i(23316),	-- Lieutenant Commander's Satin Hood
-									i(23318),	-- Lieutenant Commander's Silk Cowl
-									-- Shoulders
-									i(16468),	-- Field Marshal's Chain Spaulders
-									i(16449),	-- Field Marshal's Dragonhide Spaulders
-									i(17580),	-- Field Marshal's Dreadweave Shoulders
-									i(16476),	-- Field Marshal's Lamellar Pauldrons
-									i(16457),	-- Field Marshal's Leather Epaulets
-									i(29611),	-- Field Marshal's Mail Spaulders
-									i(16480),	-- Field Marshal's Plate Shoulderguards
-									i(17604),	-- Field Marshal's Satin Mantle
-									i(16444),	-- Field Marshal's Silk Spaulders
-									i(23307),	-- Lieutenant Commander's Chain Shoulders
-									i(23309),	-- Lieutenant Commander's Dragonhide Shoulders
-									i(23311),	-- Lieutenant Commander's Dreadweave Spaulders
-									i(23277),	-- Lieutenant Commander's Lamellar Shoulders
-									i(23313),	-- Lieutenant Commander's Leather Shoulders
-									i(29599),	-- Lieutenant Commander's Mail Pauldrons
-									i(23315),	-- Lieutenant Commander's Plate Shoulders
-									i(23317),	-- Lieutenant Commander's Satin Mantle
-									i(23319),	-- Lieutenant Commander's Silk Mantle
-									-- Back
-									i(16342),	-- Sergeant's Cape
-									i(18440),	-- Sergeant's Cape
-									i(18441),	-- Sergeant's Cape
-									i(28379),	-- Sergeant's Heavy Cape
-									i(28380),	-- Sergeant's Heavy Cloak
-									-- Chest
-									i(16466),	-- Field Marshal's Chain Breastplate
-									i(16452),	-- Field Marshal's Dragonhide Breastplate
-									i(17581),	-- Field Marshal's Dreadweave Robe
-									i(16473),	-- Field Marshal's Lamellar Chestplate
-									i(16453),	-- Field Marshal's Leather Chestpiece
-									i(29609),	-- Field Marshal's Mail Armor
-									i(16477),	-- Field Marshal's Plate Armor
-									i(16443),	-- Field Marshal's Silk Vestments
-									i(17605),	-- Field Marshal's Satin Vestments
-									i(23292),	-- Knight-Captain's Chain Hauberk
-									i(23294),	-- Knight-Captain's Dragonhide Chestpiece
-									i(23297),	-- Knight-Captain's Dreadweave Tunic
-									i(23272),	-- Knight-Captain's Lamellar Breastplate
-									i(23298),	-- Knight-Captain's Leather Chestpiece
-									i(29596),	-- Knight-Captain's Mail Hauberk
-									i(23300),	-- Knight-Captain's Plate Hauberk
-									i(23303),	-- Knight-Captain's Satin Tunic
-									i(23305),	-- Knight-Captain's Silk Tunic
-									-- Wrist
-									i(18448),	-- Sergeant Major's Chain Armguards
-									i(18449),	-- Sergeant Major's Chain Armguards
-									i(18454),	-- Sergeant Major's Dragonhide Armsplints
-									i(18455),	-- Sergeant Major's Dragonhide Armsplints
-									i(18452),	-- Sergeant Major's Leather Armsplints
-									i(18453),	-- Sergeant Major's Leather Armsplints
-									i(18445),	-- Sergeant Major's Plate Wristguards
-									i(18447),	-- Sergeant Major's Plate Wristguards
-									i(18456),	-- Sergeant Major's Silk Cuffs
-									i(18457),	-- Sergeant Major's Silk Cuffs
-									-- Hands
-									i(23279),	-- Knight-Lieutenant's Chain Vices
-									i(23280),	-- Knight-Lieutenant's Dragonhide Grips
-									i(23282),	-- Knight-Lieutenant's Dreadweave Handwraps
-									i(23274),	-- Knight-Lieutenant's Lamellar Gauntlets
-									i(23284),	-- Knight-Lieutenant's Leather Grips
-									i(29595),	-- Knight-Lieutenant's Mail Vices
-									i(23286),	-- Knight-Lieutenant's Plate Gauntlets
-									i(23288),	-- Knight-Lieutenant's Satin Handwraps
-									i(23290),	-- Knight-Lieutenant's Silk Handwraps
-									i(16463),	-- Marshal's Chain Grips
-									i(16448),	-- Marshal's Dragonhide Gauntlets
-									i(17584),	-- Marshal's Dreadweave Gloves
-									i(16471),	-- Marshal's Lamellar Gloves
-									i(16454),	-- Marshal's Leather Handgrips
-									i(29607),	-- Marshal's Mail Gauntlets
-									i(16484),	-- Marshal's Plate Gauntlets
-									i(17608),	-- Marshal's Satin Gloves
-									i(16440),	-- Marshal's Silk Gloves
-									-- Legs
-									i(23293),	-- Knight-Captain's Chain Legguards
-									i(23295),	-- Knight-Captain's Dragonhide Leggings
-									i(23296),	-- Knight-Captain's Dreadweave Legguards
-									i(23273),	-- Knight-Captain's Lamellar Leggings
-									i(23299),	-- Knight-Captain's Leather Legguards
-									i(29597),	-- Knight-Captain's Mail Legguards
-									i(23301),	-- Knight-Captain's Plate Leggings
-									i(23302),	-- Knight-Captain's Satin Legguards
-									i(23304),	-- Knight-Captain's Silk Legguards
-									i(16467),	-- Marshal's Chain Legguards
-									i(16450),	-- Marshal's Dragonhide Legguards
-									i(17579),	-- Marshal's Dreadweave Leggings
-									i(16475),	-- Marshal's Lamellar Legplates
-									i(16456),	-- Marshal's Leather Leggings
-									i(29608),	-- Marshal's Mail Leggings
-									i(16479),	-- Marshal's Plate Legguards
-									i(17603),	-- Marshal's Satin Pants
-									i(16442),	-- Marshal's Silk Leggings
-									-- Feet
-									i(23278),	-- Knight-Lieutenant's Chain Greaves
-									i(23281),	-- Knight-Lieutenant's Dragonhide Treads
-									i(23283),	-- Knight-Lieutenant's Dreadweave Walkers
-									i(23275),	-- Knight-Lieutenant's Lamellar Sabatons
-									i(23285),	-- Knight-Lieutenant's Leather Walkers
-									i(29594),	-- Knight-Lieutenant's Mail Greaves
-									i(23287),	-- Knight-Lieutenant's Plate Greaves
-									i(23289),	-- Knight-Lieutenant's Satin Walkers
-									i(23291),	-- Knight-Lieutenant's Silk Walkers
-									i(16462),	-- Marshal's Chain Boots
-									i(16459),	-- Marshal's Dragonhide Boots
-									i(17583),	-- Marshal's Dreadweave Boots
-									i(16472),	-- Marshal's Lamellar Boots
-									i(16446),	-- Marshal's Leather Footguards
-									i(29606),	-- Marshal's Mail Boots
-									i(16483),	-- Marshal's Plate Boots
-									i(17607),	-- Marshal's Satin Sandals
-									i(16437),	-- Marshal's Silk Footwraps
+									i(137642, {	-- Mark of Honor
+										-- Head
+										i(16465),	-- Field Marshal's Chain Helm
+										i(17578),	-- Field Marshal's Coronal
+										i(16441),	-- Field Marshal's Coronet
+										i(16451),	-- Field Marshal's Dragonhide Helmet
+										i(17602),	-- Field Marshal's Headdress
+										i(16474),	-- Field Marshal's Lamellar Faceguard
+										i(16455),	-- Field Marshal's Leather Mask
+										i(29610),	-- Field Marshal's Mail Helm
+										i(16478),	-- Field Marshal's Plate Helm
+										i(23306),	-- Lieutenant Commander's Chain Helm
+										i(23308),	-- Lieutenant Commander's Dragonhide Headguard
+										i(23310),	-- Lieutenant Commander's Dreadweave Cowl
+										i(23276),	-- Lieutenant Commander's Lamellar Headguard
+										i(23312),	-- Lieutenant Commander's Leather Helm
+										i(29598),	-- Lieutenant Commander's Mail Headguard
+										i(23314),	-- Lieutenant Commander's Plate Helmet
+										i(23316),	-- Lieutenant Commander's Satin Hood
+										i(23318),	-- Lieutenant Commander's Silk Cowl
+										-- Shoulders
+										i(16468),	-- Field Marshal's Chain Spaulders
+										i(16449),	-- Field Marshal's Dragonhide Spaulders
+										i(17580),	-- Field Marshal's Dreadweave Shoulders
+										i(16476),	-- Field Marshal's Lamellar Pauldrons
+										i(16457),	-- Field Marshal's Leather Epaulets
+										i(29611),	-- Field Marshal's Mail Spaulders
+										i(16480),	-- Field Marshal's Plate Shoulderguards
+										i(17604),	-- Field Marshal's Satin Mantle
+										i(16444),	-- Field Marshal's Silk Spaulders
+										i(23307),	-- Lieutenant Commander's Chain Shoulders
+										i(23309),	-- Lieutenant Commander's Dragonhide Shoulders
+										i(23311),	-- Lieutenant Commander's Dreadweave Spaulders
+										i(23277),	-- Lieutenant Commander's Lamellar Shoulders
+										i(23313),	-- Lieutenant Commander's Leather Shoulders
+										i(29599),	-- Lieutenant Commander's Mail Pauldrons
+										i(23315),	-- Lieutenant Commander's Plate Shoulders
+										i(23317),	-- Lieutenant Commander's Satin Mantle
+										i(23319),	-- Lieutenant Commander's Silk Mantle
+										-- Back
+										i(16342),	-- Sergeant's Cape
+										i(18440),	-- Sergeant's Cape
+										i(18441),	-- Sergeant's Cape
+										i(28379),	-- Sergeant's Heavy Cape
+										i(28380),	-- Sergeant's Heavy Cloak
+										-- Chest
+										i(16466),	-- Field Marshal's Chain Breastplate
+										i(16452),	-- Field Marshal's Dragonhide Breastplate
+										i(17581),	-- Field Marshal's Dreadweave Robe
+										i(16473),	-- Field Marshal's Lamellar Chestplate
+										i(16453),	-- Field Marshal's Leather Chestpiece
+										i(29609),	-- Field Marshal's Mail Armor
+										i(16477),	-- Field Marshal's Plate Armor
+										i(16443),	-- Field Marshal's Silk Vestments
+										i(17605),	-- Field Marshal's Satin Vestments
+										i(23292),	-- Knight-Captain's Chain Hauberk
+										i(23294),	-- Knight-Captain's Dragonhide Chestpiece
+										i(23297),	-- Knight-Captain's Dreadweave Tunic
+										i(23272),	-- Knight-Captain's Lamellar Breastplate
+										i(23298),	-- Knight-Captain's Leather Chestpiece
+										i(29596),	-- Knight-Captain's Mail Hauberk
+										i(23300),	-- Knight-Captain's Plate Hauberk
+										i(23303),	-- Knight-Captain's Satin Tunic
+										i(23305),	-- Knight-Captain's Silk Tunic
+										-- Wrist
+										i(18448),	-- Sergeant Major's Chain Armguards
+										i(18449),	-- Sergeant Major's Chain Armguards
+										i(18454),	-- Sergeant Major's Dragonhide Armsplints
+										i(18455),	-- Sergeant Major's Dragonhide Armsplints
+										i(18452),	-- Sergeant Major's Leather Armsplints
+										i(18453),	-- Sergeant Major's Leather Armsplints
+										i(18445),	-- Sergeant Major's Plate Wristguards
+										i(18447),	-- Sergeant Major's Plate Wristguards
+										i(18456),	-- Sergeant Major's Silk Cuffs
+										i(18457),	-- Sergeant Major's Silk Cuffs
+										-- Hands
+										i(23279),	-- Knight-Lieutenant's Chain Vices
+										i(23280),	-- Knight-Lieutenant's Dragonhide Grips
+										i(23282),	-- Knight-Lieutenant's Dreadweave Handwraps
+										i(23274),	-- Knight-Lieutenant's Lamellar Gauntlets
+										i(23284),	-- Knight-Lieutenant's Leather Grips
+										i(29595),	-- Knight-Lieutenant's Mail Vices
+										i(23286),	-- Knight-Lieutenant's Plate Gauntlets
+										i(23288),	-- Knight-Lieutenant's Satin Handwraps
+										i(23290),	-- Knight-Lieutenant's Silk Handwraps
+										i(16463),	-- Marshal's Chain Grips
+										i(16448),	-- Marshal's Dragonhide Gauntlets
+										i(17584),	-- Marshal's Dreadweave Gloves
+										i(16471),	-- Marshal's Lamellar Gloves
+										i(16454),	-- Marshal's Leather Handgrips
+										i(29607),	-- Marshal's Mail Gauntlets
+										i(16484),	-- Marshal's Plate Gauntlets
+										i(17608),	-- Marshal's Satin Gloves
+										i(16440),	-- Marshal's Silk Gloves
+										-- Legs
+										i(23293),	-- Knight-Captain's Chain Legguards
+										i(23295),	-- Knight-Captain's Dragonhide Leggings
+										i(23296),	-- Knight-Captain's Dreadweave Legguards
+										i(23273),	-- Knight-Captain's Lamellar Leggings
+										i(23299),	-- Knight-Captain's Leather Legguards
+										i(29597),	-- Knight-Captain's Mail Legguards
+										i(23301),	-- Knight-Captain's Plate Leggings
+										i(23302),	-- Knight-Captain's Satin Legguards
+										i(23304),	-- Knight-Captain's Silk Legguards
+										i(16467),	-- Marshal's Chain Legguards
+										i(16450),	-- Marshal's Dragonhide Legguards
+										i(17579),	-- Marshal's Dreadweave Leggings
+										i(16475),	-- Marshal's Lamellar Legplates
+										i(16456),	-- Marshal's Leather Leggings
+										i(29608),	-- Marshal's Mail Leggings
+										i(16479),	-- Marshal's Plate Legguards
+										i(17603),	-- Marshal's Satin Pants
+										i(16442),	-- Marshal's Silk Leggings
+										-- Feet
+										i(23278),	-- Knight-Lieutenant's Chain Greaves
+										i(23281),	-- Knight-Lieutenant's Dragonhide Treads
+										i(23283),	-- Knight-Lieutenant's Dreadweave Walkers
+										i(23275),	-- Knight-Lieutenant's Lamellar Sabatons
+										i(23285),	-- Knight-Lieutenant's Leather Walkers
+										i(29594),	-- Knight-Lieutenant's Mail Greaves
+										i(23287),	-- Knight-Lieutenant's Plate Greaves
+										i(23289),	-- Knight-Lieutenant's Satin Walkers
+										i(23291),	-- Knight-Lieutenant's Silk Walkers
+										i(16462),	-- Marshal's Chain Boots
+										i(16459),	-- Marshal's Dragonhide Boots
+										i(17583),	-- Marshal's Dreadweave Boots
+										i(16472),	-- Marshal's Lamellar Boots
+										i(16446),	-- Marshal's Leather Footguards
+										i(29606),	-- Marshal's Mail Boots
+										i(16483),	-- Marshal's Plate Boots
+										i(17607),	-- Marshal's Satin Sandals
+										i(16437),	-- Marshal's Silk Footwraps
+									}),
 								},
 							},
 							{	-- Shay Pressler <Guild Vendor>

@@ -100,8 +100,9 @@ _.PVP =
 					["description"] = "|cff66ccffThese vendors will only show if your faction controls Wintergrasp.|r",
 					["g"] = {
 						nh(39173, {	-- Champion Ros'slai <Wintergrasp Quartermaster>
-							i(137642, {	-- Mark of Honor
-								["g"] = {
+							["coord"] = { 51.8, 17.4, 123 },
+							["g"] = {
+								i(137642, {	-- Mark of Honor
 									i(48974),	-- Titan-Forged Armwraps of Dominance
 									i(48975),	-- Titan-Forged Armwraps of Salvation
 									i(48976),	-- Titan-Forged Armwraps of Triumph
@@ -172,12 +173,13 @@ _.PVP =
 									i(44076),	-- Swift Starflare Diamond
 									i(44078),	-- Tireless Starflare Diamond
 									i(44089),	-- Trenchant Earthshatter Diamond
-								},
-							}),
+								}),
+							},
 						}),
 						na(32294, {	-- Knight Dameron <Wintergrasp Quartermaster>
-							i(137642, {	-- Mark of Honor
-								["g"] = {	
+							["coord"] = { 51.6, 17.6, 123 },
+							["g"] = {
+								i(137642, {	-- Mark of Honor
 									i(43956, {	-- Reins of the Black War Mammoth
 										ach(2080),		-- Black War Mammoth
 									}),
@@ -238,12 +240,13 @@ _.PVP =
 									i(122366),	-- Upgraded Dwarven Hand Cannon
 									i(122338),	-- Ancient Heirloom Armor Casing
 									i(122339),	-- Ancient Heirloom Scabbard
-								},
-							}),
+								}),
+							},
 						}),
 						na(39172, {	-- Marshal Magruder <Wintergrasp Quartermaster>
-							i(137642, {	-- Mark of Honor
-								["g"] = {	
+							["coord"] = { 51.6, 17.6, 123 },
+							["g"] = {
+								i(137642, {	-- Mark of Honor
 									i(48974),	-- Titan-Forged Armwraps of Dominance
 									i(48975),	-- Titan-Forged Armwraps of Salvation
 									i(48976),	-- Titan-Forged Armwraps of Triumph
@@ -276,12 +279,13 @@ _.PVP =
 									i(48981),	-- Titan-Forged Wristguards of Salvation
 									i(48982),	-- Titan-Forged Wristguards of Triumph
 									i(48982),	-- Titan-Forged Wristguards of Triumph
-								},
-							}),
+								}),
+							},
 						}),
 						na(30489, { -- Morgan Day <Jewelcrafter>
-							i(137642, {	-- Mark of Honor
-								["g"] = {
+							["coord"] = { 48.8, 17.6, 123 },
+							["g"] = {
+								i(137642, {	-- Mark of Honor
 									i(41742),	-- Design: Enigmatic Skyflare Diamond
 									i(41743),	-- Design: Forlorn Skyflare Diamond
 									i(41744),	-- Design: Impassive Skyflare Diamond
@@ -311,12 +315,13 @@ _.PVP =
 									i(44076),	-- Swift Starflare Diamond
 									i(44078),	-- Tireless Starflare Diamond
 									i(44089),	-- Trenchant Earthshatter Diamond
-								},
-							}),
+								}),
+							},
 						}),
 						nh(32296, {	-- Stone Guard Mukar <Wintergrasp Quartermaster>
-							i(137642, {	-- Mark of Honor
-								["g"] = {	
+							["coord"] = { 51.6, 17.6, 123 },
+							["g"] = {
+								i(137642, {	-- Mark of Honor
 									i(44077, {	-- Reins of the Black War Mammoth
 										ach(2080),		-- Black War Mammoth
 									}),
@@ -377,8 +382,8 @@ _.PVP =
 									i(122366),	-- Upgraded Dwarven Hand Cannon
 									i(122338),	-- Ancient Heirloom Armor Casing
 									i(122339),	-- Ancient Heirloom Scabbard
-								},
-							}),
+								}),
+							},
 						}),
 					},
 				}),
