@@ -424,7 +424,8 @@ profession(202, {	-- Engineering
 						},
 						{
 							["name"] = "Hyper-Radiant Flame Reflector",
-							["recipeID"] = 23081
+							["recipeID"] = 23081,
+							["u"] = 7,
 						},
 						{
 							["name"] = "Ice Deflector",
@@ -502,7 +503,8 @@ profession(202, {	-- Engineering
 						},
 						{
 							["name"] = "Ultrasafe Transporter - Gadgetzan",
-							["recipeID"] = 23489
+							["recipeID"] = 23489,
+							["description"] = "Speak to Jhordy Lapforge in Gadgetzan at 52.17, 27.88 to learn this recipe.",
 						},
 						{
 							["name"] = "Voice Amplification Modulator",
@@ -532,7 +534,8 @@ profession(202, {	-- Engineering
 						},
 						{
 							["name"] = "Flawless Arcanite Rifle",
-							["recipeID"] = 19833
+							["recipeID"] = 19833,
+							["u"] = 7,
 						},
 						{
 							["name"] = "Lovingly Crafted Boomstick",

@@ -732,67 +732,94 @@ _.Craftables =
 			}),
 		}),
 		n(-183, { 	-- Engineering
-			{	-- Plans: Inlaid Mithril Cylinder
-				["itemID"] = 10713,	-- Plans: Inlaid Mithril Cylinder
-				["description"] = "This recipe is crafted by Engineers and given to Blacksmiths to learn so that the Blacksmith can craft the item needed by the Engineer.\n\nIf you are missing this recipe, ask an Engineer to craft it for you.",
-			},
-			{	-- Recipe: Goblin Rocket Fuel
-				["itemID"] = 10644,	-- Recipe: Goblin Rocket Fuel (Engineers make the recipe for alchemists)
-				["description"] = "This recipe is crafted by Engineers and given to Alchemists to learn so that the Alchemist can craft the item needed by the Engineer.\n\nIf you are missing this recipe, ask an Engineer to craft it for you.",
-			},
-			i(18282),	-- Core Marksman Rifle
-			i(16004),	-- Dark Iron Rifle
-			i(4369),	-- Deadly Blunderbuss
-			un(8, i(16007)),	-- Flawless Arcanite Rifle
-			i(18168),	-- Force Reactive Disk
-			i(4372),	-- Lovingly Crafted Boomstick
-			i(10508),	-- Mithril Blunderbuss
-			i(10510),	-- Mithril Heavy-Bore Rifle
-			i(4383),	-- Moonsight Rifle
-			i(4362),	-- Rough Boomstick
-			i(4379),	-- Silver-Plated Shotgun
-			i(15995),	-- Thorium Rifle
-			un(8, i(19999)),	-- Bloodvine Goggles
-			un(8, i(19998)),	-- Bloodvine Lens
-			i(10499),	-- Bright-Eye Goggles
-			i(10501),	-- Catseye Ultra Goggles
-			i(4393),	-- Craftsman's Monocle
-			i(10506),	-- Deepdive Helmet
-			i(10500),	-- Fire Goggles
-			i(4368),	-- Flying Tiger Goggles
-			i(10545),	-- Gnomish Goggles
-			i(10726),	-- Gnomish Mind Control Cap
-			i(10543),	-- Goblin Construction Helmet
-			i(10542),	-- Goblin Mining Helmet
-			i(10588),	-- Goblin Rocket Helmet
-			i(10504),	-- Green Lens
-			i(4385),	-- Green Tinted Goggles
-			i(16008),	-- Master Engineer's Goggles
-			i(10503),	-- Rose Colored Goggles
-			i(4373),	-- Shadow Goggles
-			i(10502),	-- Spellpower Goggles Xtreme
-			i(15999),	-- Spellpower Goggles Xtreme Plus
-			i(10518),	-- Parachute Cloak
-			i(10721),	-- Gnomish Harm Prevention Belt
-			i(10724),	-- Gnomish Rocket Boots
-			i(7189),	-- Goblin Rocket Boots
-			filter(51, {	-- Neck
-				i(16009),	-- Voice Amplification Modulator
+			filter(100, {	-- Mounts
+				i(34060),	-- Flying Machine*
 			}),
-			filter(53, {	-- Trinket
-				i(16022),	-- Arcanite Dragonling
-				i(4397),	-- Gnomish Cloaking Device
-				i(10720),	-- Gnomish Net-o-Matic Projector
-				i(10716),	-- Gnomish Shrink Ray
-				i(7506),	-- Gnomish Universal Remote
-				i(10577),	-- Goblin Mortar
-				i(18634),	-- Gyrofreeze Ice Reflector
-				i(18638),	-- Hyper-Radiant Flame Reflector
-				i(4396),	-- Mechanical Dragonling
-				i(10576),	-- Mithril Mechanical Dragonling
-				i(4381),	-- Minor Recombobulator
-				i(18639),	-- Ultra-Flash Shadow Reflector
-				i(18637),	-- Major Recombobulator
+			filter(200, {	-- Recipes
+				{	-- Recipe: Goblin Rocket Fuel*
+					["itemID"] = 10644,	-- Recipe: Goblin Rocket Fuel (Engineers make the recipe for alchemists)
+					["description"] = "This recipe is crafted by Engineers and given to Alchemists to learn so that the Alchemist can craft the item needed by the Engineer.\n\nIf you are missing this recipe, ask an Engineer to craft it for you.",
+				},
+				{	-- Plans: Inlaid Mithril Cylinder*
+					["itemID"] = 10713,	-- Plans: Inlaid Mithril Cylinder
+					["description"] = "This recipe is crafted by Engineers and given to Blacksmiths to learn so that the Blacksmith can craft the item needed by the Engineer.\n\nIf you are missing this recipe, ask an Engineer to craft it for you.",
+				},
+			}),
+			filter(101, {	-- Pets
+				i(15996),	-- Lifelike Mechanical Toad*
+				i(11826),	-- Lil' Smoky*
+				i(4401),	-- Mechanical Squirrel Box*
+				i(11825),	-- Pet Bombling*
+				i(21277),	-- Tranquil Mechanical Yeti*
+			}),
+			filter(102, {	-- Toys
+				i(18984),	-- Dimensional Ripper - Everlook*
+				i(17716),	-- Snowmaster 9000*
+				i(18986),	-- Ultrasafe Transporter: Gadgetzan*
+				i(18660),	-- World Enlarger*
+			}),
+			n(-319, {	-- Weapons	
+				-- Guns
+				i(18282),	-- Core Marksman Rifle*
+				i(16004),	-- Dark Iron Rifle*
+				i(4369),	-- Deadly Blunderbuss*
+				un(8, i(16007)),	-- Flawless Arcanite Rifle
+				i(4372),	-- Lovingly Crafted Boomstick*
+				i(10508),	-- Mithril Blunderbuss*
+				i(10510),	-- Mithril Heavy-Bore Rifle*
+				i(4383),	-- Moonsight Rifle*
+				i(4362),	-- Rough Boomstick*
+				i(4379),	-- Silver-Plated Shotgun*
+				i(15995),	-- Thorium Rifle*
+				-- Shields
+				i(18168),	-- Force Reactive Disk*
+			}),
+			n(-318, {	-- Armor
+				-- Head
+				un(8, i(19999)),	-- Bloodvine Goggles
+				un(8, i(19998)),	-- Bloodvine Lens
+				i(10499),	-- Bright-Eye Goggles*
+				i(10501),	-- Catseye Ultra Goggles*
+				i(4393),	-- Craftsman's Monocle*
+				i(10506),	-- Deepdive Helmet*
+				i(10500),	-- Fire Goggles*
+				i(4368),	-- Flying Tiger Goggles*
+				i(10545),	-- Gnomish Goggles*
+				i(10726),	-- Gnomish Mind Control Cap*
+				i(10543),	-- Goblin Construction Helmet*
+				i(10542),	-- Goblin Mining Helmet*
+				i(10588),	-- Goblin Rocket Helmet*
+				i(10504),	-- Green Lens*
+				i(4385),	-- Green Tinted Goggles*
+				i(16008),	-- Master Engineer's Goggles*
+				i(10503),	-- Rose Colored Goggles*
+				i(4373),	-- Shadow Goggles*
+				i(10502),	-- Spellpower Goggles Xtreme*
+				i(15999),	-- Spellpower Goggles Xtreme Plus*
+				-- Neck
+				i(16009),	-- Voice Amplification Modulator*
+				-- Back
+				i(10518),	-- Parachute Cloak*
+				-- Waist
+				i(10721),	-- Gnomish Harm Prevention Belt*
+				-- Feet
+				i(10724),	-- Gnomish Rocket Boots*
+				i(7189),	-- Goblin Rocket Boots*
+				-- Trinket
+				i(16022),	-- Arcanite Dragonling*
+				i(4397),	-- Gnomish Cloaking Device*
+				i(10720),	-- Gnomish Net-o-Matic Projector*
+				i(10716),	-- Gnomish Shrink Ray*
+				i(7506),	-- Gnomish Universal Remote*
+				i(10577),	-- Goblin Mortar*
+				i(18634),	-- Gyrofreeze Ice Reflector*
+				i(45631),	-- High-Powered Flashlight*
+				un(8, i(18638)),	-- Hyper-Radiant Flame Reflector
+				i(18637),	-- Major Recombobulator*
+				i(4396),	-- Mechanical Dragonling*
+				i(4381),	-- Minor Recombobulator*
+				i(10576),	-- Mithril Mechanical Dragonling*
+				i(18639),	-- Ultra-Flash Shadow Reflector*
 			}),
 		}),
 		n(-185, { 	-- Inscription

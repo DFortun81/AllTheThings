@@ -1412,9 +1412,13 @@ _.Zones =
 						},
 					}),
 					n(6777,   {	-- Zan Shivsproket <Speciality Engineer>
-						i(7742),	-- Schematic: Gnomish Cloaking Device
+						["coord"] = { 71.18, 45.26, 25 },
+						["groups"] = {
+							i(7742),	-- Schematic: Gnomish Cloaking Device
+						},
 					}),
 					n(3537,   {	-- Zixil <Merchant Supreme>
+						i(7114),	-- Pattern: Azure Silk Gloves
 						i(6377),	-- Formula: Enchant Boots - Minor Agility
 						i(7362), 	-- Pattern: Earthen Leather Shoulders
 						i(5772),	-- Pattern: Red Woolen Bag

@@ -1386,6 +1386,12 @@ _.Zones =
 								},
 								["u"] = 2,
 							}),
+							i(16056, {	-- Schematic: Flawless Arcanite Rifle
+								["u"] = 7,
+								["crs"] = {
+									8561,	-- Mossflayer Shadowhunter
+								},
+							}),
 						}),
 						n(-17, {	-- Quests (Legacy)
 							un(40, qr(q(9222, {	-- Epic Armaments of Battle - Friend of the Dawn

@@ -8,7 +8,6 @@
 profession(202, { -- Engineering	
 	n(-160, { -- Mounts
 		i(87250),	-- Depleted-Kyparium Rocket
-		i(34060),	-- Flying Machine
 		i(87251),	-- Geosynchronous World Spinner
 		i(41508),	-- Mechano-Hog
 		i(161134),	-- Mecha-Mogul Mk2
@@ -18,18 +17,13 @@ profession(202, { -- Engineering
 	}),
 	n(-25, { -- Pet Battles
 		i(60216),	-- De-Weaponized Mechanical Companion
-		i(112057),	-- Lifelike Mechanical Frostboar
-		i(15996),	-- Lifelike Mechanical Toad
-		i(11826),	-- Lil' Smoky
+		i(112057),	-- Lifelike Mechanical Frostboar		
 		i(111402),	-- Mechanical Axebeak
 		i(87526),	-- Mechanical Pandaren Dragonling
 		i(118741),	-- Mechanical Scorpid
-		i(4401),	-- Mechanical Squirrel Box
-		i(59597),	-- Personal World Destroyer
-		i(11825),	-- Pet Bombling
+		i(59597),	-- Personal World Destroyer		
 		i(94903),	-- Pierre
 		i(100905),	-- Rascal-Bot
-		i(21277),	-- Tranquil Mechanical Yeti
 		i(132519),	-- Trigger
 	}),
 	n(-161, { --  Toys
@@ -38,60 +32,18 @@ profession(202, { -- Engineering
 		i(132518),	-- Blingtron's Circuit Design Tutorial
 		i(23767),	-- Crashin' Thrashin' Robot
 		i(30542),	-- Dimensional Ripper - Area 52
-		i(18984),	-- Dimensional Ripper - Everlook
 		i(109167),	-- Findle's Loot-A-Rang
 		i(40727),	-- Gnomish Gravity Well
 		i(40895),	-- Gnomish X-Ray Specs
 		i(60854),	-- Loot-A-Rang
 		i(40768),	-- MOLL-E
 		i(108745),	-- Personal Hologram
-		i(17716),	-- Snowmaster 9000
-		i(18986),	-- Ultrasafe Transporter: Gadgetzan
 		i(30544),	-- Ultrasafe Transporter: Toshley's Station
-		i(18660),	-- World Enlarger
 		i(109183),	-- World Shrinker
 		i(112059),	-- Wormhole Centrifuge
 		i(151652),	-- Wormhole Generator: Argus
 		i(48933),	-- Wormhole Generator: Northrend
 		i(87215),	-- Wormhole Generator: Pandaria		
-	}),
-	tier(1, { -- Classic
-		i(18282),	-- Core Marksman Rifle
-		i(16004),	-- Dark Iron Rifle
-		i(4369),	-- Deadly Blunderbuss
-		un(8, i(16007)),	-- Flawless Arcanite Rifle
-		i(18168),	-- Force Reactive Disk
-		i(4372),	-- Lovingly Crafted Boomstick
-		i(10508),	-- Mithril Blunderbuss
-		i(10510),	-- Mithril Heavy-Bore Rifle
-		i(4383),	-- Moonsight Rifle
-		i(4362),	-- Rough Boomstick
-		i(4379),	-- Silver-Plated Shotgun
-		i(15995),	-- Thorium Rifle
-		un(8, i(19999)),	-- Bloodvine Goggles
-		un(8, i(19998)),	-- Bloodvine Lens
-		i(10499),	-- Bright-Eye Goggles
-		i(10501),	-- Catseye Ultra Goggles
-		i(4393),	-- Craftsman's Monocle
-		i(10506),	-- Deepdive Helmet
-		i(10500),	-- Fire Goggles
-		i(4368),	-- Flying Tiger Goggles
-		i(10545),	-- Gnomish Goggles
-		i(10726),	-- Gnomish Mind Control Cap
-		i(10543),	-- Goblin Construction Helmet
-		i(10542),	-- Goblin Mining Helmet
-		i(10588),	-- Goblin Rocket Helmet
-		i(10504),	-- Green Lens
-		i(4385),	-- Green Tinted Goggles
-		i(16008),	-- Master Engineer's Goggles
-		i(10503),	-- Rose Colored Goggles
-		i(4373),	-- Shadow Goggles
-		i(10502),	-- Spellpower Goggles Xtreme
-		i(15999),	-- Spellpower Goggles Xtreme Plus
-		i(10518),	-- Parachute Cloak
-		i(10721),	-- Gnomish Harm Prevention Belt
-		i(10724),	-- Gnomish Rocket Boots
-		i(7189),	-- Goblin Rocket Boots
 	}),
 	tier(2, { -- The Burning Crusade
 		i(23746),	-- Adamantite Rifle

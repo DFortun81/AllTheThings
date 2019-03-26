@@ -643,7 +643,10 @@ _.Zones =
 						i(4818),	-- Executioner's Sword
 					})),
 					na(41435, {	-- Fradd Swiftgear <Engineering Supplies>
-						i(14639),	-- Schematic: Minor Recombobulator
+						["coord"] = { 26.80, 25.91, 56 },
+						["groups"] = {
+							i(14639),	-- Schematic: Minor Recombobulator
+						},
 					}),
 					a(n(1454, {	-- Jennabink Powerseam <Tailoring Supplies & Specialty Goods>
 						i(6275),	-- Pattern: Greater Adept's Robe

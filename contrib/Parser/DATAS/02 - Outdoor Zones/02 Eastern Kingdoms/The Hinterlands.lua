@@ -895,7 +895,10 @@ _.Zones =
 						i(8409), -- Pattern: Nightscape Shoulders
 					})),
 					n(2688, {	-- Ruppo Zipcoil <Engineering Supplies>
-						i(10609),	-- Schematic: Mithril Mechanical Dragonling
+						["coord"] = { 34.33, 37.77, 26 },
+						["groups"] = {
+							i(10609),	-- Schematic: Mithril Mechanical Dragonling
+						},
 					}),
 					na(4782, {	-- Truk Wildbeard <Bartender>
 						i(18046),	-- Recipe: Tender Wolf Steak

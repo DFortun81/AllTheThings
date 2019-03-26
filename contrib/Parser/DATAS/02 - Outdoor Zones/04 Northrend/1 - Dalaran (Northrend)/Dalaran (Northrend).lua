@@ -2416,6 +2416,14 @@ _.Zones =
 						i(42378),	-- Red Martial Shirt
 						i(53852),	-- Embroidered Shirt
 					}),
+					n(35826, {	-- Kaye Toogie
+						["description"] = "Chance when using Wormhole Generator: Northrend to recieve the option Underground... which ports you to vendor, must have engineering to use toy.",
+						["groups"] = {
+							i(16054),	-- Schematic: Arcanite Dragonling
+							i(13311),	-- Schematic: Mechanical Dragonling
+							i(10609),	-- Schematic: Mithril Mechanical Dragonling
+						},
+					}),
 					n(29511,  { 	-- Lalla Brightweave <Spellfire Tailoring Specialist>
 						i(24316),	-- Pattern: Spellcloth
 						i(21911),	-- Pattern: Spellfire Bag
