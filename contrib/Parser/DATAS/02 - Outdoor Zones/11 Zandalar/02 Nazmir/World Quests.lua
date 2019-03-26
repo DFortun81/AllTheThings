@@ -63,6 +63,17 @@ _.Zones =
 										},
 									},
 								},
+								{	-- Cancel the Blood Troll Apocalypse
+									["questID"] = 50665,	-- Cancel the Blood Troll Apocalypse
+									["races"] = HORDE_ONLY,
+									["isWQ"] = 120,
+									["g"] = {
+										{	-- A Most Efficient Apocalypse
+											["achievementID"] = 13021,	-- A Most Efficient Apocalypse
+											["races"] = HORDE_ONLY,
+										},
+									},
+								},
 								{	-- Cargo Reclamation
 									["questID"] =  50962,	-- Cargo Reclamation
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
