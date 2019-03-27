@@ -129,7 +129,7 @@ _.Craftables =
 				i(127842),	-- Infernal Alchemist Stone
 			}),
 		}),
-		n(-181, { -- Blacksmithing
+		n(-181, {	-- Blacksmithing
 		-- Reviewed and updated as of 12.14.2018 BfA 8.0
 			filter(100, {	-- Mounts
 				{	-- Steelbound Harness
@@ -228,7 +228,7 @@ _.Craftables =
 				i(128534),	-- Enchanted Torch
 			}),
 		}),
-		n(-183, { -- Engineering
+		n(-183, {	-- Engineering
 			n(-494, { -- Miscellaneous
 				n(101527, { -- Blingtron 6000
 					i(132892, { -- Blingtron 6000 Gift Package
@@ -255,20 +255,20 @@ _.Craftables =
 					}),
 				}),
 			}),
-			i(132500),	-- Blink-Trigger Headgun
-			i(132502),	-- Bolt-Action Headgun
-			i(144333),	-- Chain Skullblasters
-			i(132506),	-- Double-Barreled Cranial Cannon
-			i(144334),	-- Heavy Skullblasters
-			i(132507),	-- Ironsight Cranial Cannon
-			i(132503),	-- Reinforced Headgun
-			i(144332),	-- Rugged Skullblasters
-			i(132505),	-- Sawed-Off Cranial Cannon
-			i(132504),	-- Semi-Automagic Cranial Cannon
-			i(132501),	-- Tactical Headgun
-			i(144331),	-- Tailored Skullblasters
+				i(132500),	-- Blink-Trigger Headgun
+				i(132502),	-- Bolt-Action Headgun
+				i(144333),	-- Chain Skullblasters
+				i(132506),	-- Double-Barreled Cranial Cannon
+				i(144334),	-- Heavy Skullblasters
+				i(132507),	-- Ironsight Cranial Cannon
+				i(132503),	-- Reinforced Headgun
+				i(144332),	-- Rugged Skullblasters
+				i(132505),	-- Sawed-Off Cranial Cannon
+				i(132504),	-- Semi-Automagic Cranial Cannon
+				i(132501),	-- Tactical Headgun
+				i(144331),	-- Tailored Skullblasters
 		}),
-		n(-185, { -- Inscription
+		n(-185, {	-- Inscription
 		-- Reviewed and updated as of 11.21.2018 BfA 8.0
 			n(-491, { -- Tarot Cards
 				sp(191659, {	-- Darkmoon Card of the Legion
@@ -297,7 +297,7 @@ _.Craftables =
 				i(136693),	-- Straszan Mark
 			}),
 		}),
-		n(-186, { -- Jewelcrafting
+		n(-186, {	-- Jewelcrafting
 		-- Reviewed and updated as of 11.27.2018 BfA 8.0
 			filter(102, {	-- Toy
 				{	-- Chatterstone
@@ -398,7 +398,7 @@ _.Craftables =
 				},
 			}),
 		}),
-		n(-187, { -- Leatherworking
+		n(-187, {	-- Leatherworking
 			n(-349, { 	-- Cosmetic		
 				un(29, i(151791)),	-- Winter Boots
 			}),
@@ -476,7 +476,7 @@ _.Craftables =
 				i(146668),	-- Vigilance Perch
 			}),
 		}),
-		n(-190, { -- Tailoring
+		n(-190, {	-- Tailoring
 			--n(-37, {	-- Discovery
 			--}),
 			i(126998),	-- Imbued Silkweave Hood

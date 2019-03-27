@@ -918,7 +918,12 @@ _.Zones =
 						["coord"] = { 37.6, 46.4, 120 },
 						["requireSkill"] = 202,	-- Engineering
 						["sourceQuests"] = { 12888 },	-- SCRAP-E
-						-- teaches Scrapbot Construction Kit, spell 55252, not sure how to list
+						["groups"] = {
+							{	-- Schematic: Scrapbot Construction Kit
+								["recipeID"] = 55252, -- Schematic: Scrapbot Construction Kit
+							},
+						},
+							
 					}),
 					q(13047, {	-- The Reckoning (triggered completion of "Loken" criteria even before turning quest in)
 						["g"] = {
@@ -1232,6 +1237,11 @@ _.Zones =
 							["crs"] = {
 								29793,	-- Frostfeather Witch
 								29792,	-- Frostfeather Screecher
+							},
+						}),
+						i(49050, {	-- Schematic: Jeeves
+							["crs"] = {
+								29724,	-- Library Guardian
 							},
 						}),
 					},

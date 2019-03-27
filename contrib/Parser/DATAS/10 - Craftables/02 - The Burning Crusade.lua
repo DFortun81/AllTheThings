@@ -426,46 +426,66 @@ _.Craftables =
 			}),
 		}),
 		n(-183, { 	-- Engineering
-			i(23746),	-- Adamantite Rifle
-			i(23742),	-- Fel Iron Musket
-			i(23747),	-- Felsteel Boomstick
-			i(32756),	-- Gyro-Balanced Khorium Destroyer
-			i(23748),	-- Ornate Khorium Rifle
-			i(34847),	-- Annihilator Holo-Gogs
-			i(23758),	-- Cogspinner Goggles
-			i(32478),	-- Deathblow X11 Goggles
-			i(32494),	-- Destruction Holo-Gogs
-			i(23838),	-- Foreman's Enchanted Helmet
-			i(23839),	-- Foreman's Reinforced Helmet
-			i(32461),	-- Furious Gizmatic Goggles
-			i(32476),	-- Gadgetstorm Goggles
-			i(23829),	-- Gnomish Battle Goggles
-			i(23835),	-- Gnomish Poultryizer
-			i(23828),	-- Gnomish Power Goggles
-			i(23836),	-- Goblin Rocket Launcher
-			i(34357),	-- Hard Khorium Goggles
-			i(35182),	-- Hyper-Magnified Moon Specs
-			i(23763),	-- Hyper-Vision Goggles
-			i(32472),	-- Justicebringer 2000 Specs
-			i(35185),	-- Justicebringer 3000 Specs
-			i(34355),	-- Lightning Etched Specs
-			i(32475),	-- Living Replicator Specs
-			i(32480),	-- Magnified Moon Specs
-			i(34354),	-- Mayhem Projection Goggles
-			i(23761),	-- Power Amplification Goggles
-			i(32495),	-- Powerheal 4000 Lens
-			i(35181),	-- Powerheal 9000 Lens
-			i(35184),	-- Primal-Attuned Goggles
-			i(34353),	-- Quad Deathblow X44 Goggles
-			i(32474),	-- Surestrike Goggles v2.0
-			i(34356),	-- Surestrike Goggles v3.0
-			i(32473),	-- Tankatronic Goggles
-			i(23762),	-- Ultra-Spectropic Detection Goggles
-			i(32479),	-- Wonderheal XT40 Shades
-			i(35183),	-- Wonderheal XT68 Shades
-			i(23825),	-- Nigh-Invulnerability Belt
-			i(23824),	-- Rocket Boots Xtreme
-			i(35581),	-- Rocket Boots Xtreme Lite
+			filter(100, {	-- Mounts
+				i(34061),	-- Turbo-Charged Flying Machine*
+			}),
+			filter(102, {	-- Toys
+				i(23767),	-- Crashin' Thrashin' Robot*
+				i(30542),	-- Dimensional Ripper - Area 52*
+				i(30544),	-- Ultrasafe Transporter: Toshley's Station*
+			}),
+			n(-319, {	-- Weapons
+				-- Guns
+				i(23746),	-- Adamantite Rifle*
+				i(23742),	-- Fel Iron Musket*
+				i(23747),	-- Felsteel Boomstick*
+				i(32756),	-- Gyro-Balanced Khorium Destroyer*
+				i(23748),	-- Ornate Khorium Rifle*
+			}),
+			n(-318, {	-- Armor
+				-- Head
+				i(34847),	-- Annihilator Holo-Gogs*
+				i(23758),	-- Cogspinner Goggles*
+				i(32478),	-- Deathblow X11 Goggles*
+				i(32494),	-- Destruction Holo-Gogs*
+				i(23838),	-- Foreman's Enchanted Helmet*
+				i(23839),	-- Foreman's Reinforced Helmet*
+				i(32461),	-- Furious Gizmatic Goggles*
+				i(32476),	-- Gadgetstorm Goggles*
+				i(23829),	-- Gnomish Battle Goggles*
+				i(23828),	-- Gnomish Power Goggles*
+				i(34357),	-- Hard Khorium Goggles*
+				i(35182),	-- Hyper-Magnified Moon Specs*
+				i(23763),	-- Hyper-Vision Goggles*
+				i(32472),	-- Justicebringer 2000 Specs*
+				i(35185),	-- Justicebringer 3000 Specs*
+				i(34355),	-- Lightning Etched Specs*
+				i(32475),	-- Living Replicator Specs*
+				i(32480),	-- Magnified Moon Specs*
+				i(34354),	-- Mayhem Projection Goggles*
+				i(23761),	-- Power Amplification Goggles*
+				i(32495),	-- Powerheal 4000 Lens*
+				i(35181),	-- Powerheal 9000 Lens*
+				i(35184),	-- Primal-Attuned Goggles*
+				i(34353),	-- Quad Deathblow X44 Goggles*
+				i(32474),	-- Surestrike Goggles v2.0*
+				i(34356),	-- Surestrike Goggles v3.0*
+				i(32473),	-- Tankatronic Goggles*
+				i(23762),	-- Ultra-Spectropic Detection Goggles*
+				i(32479),	-- Wonderheal XT40 Shades*
+				i(35183),	-- Wonderheal XT68 Shades*
+				-- Waist
+				i(23825),	-- Nigh-Invulnerability Belt*
+				-- Feet
+				i(23824),	-- Rocket Boots Xtreme*
+				i(35581),	-- Rocket Boots Xtreme Lite*
+				-- Trinket
+				i(23835),	-- Gnomish Poultryizer*
+				i(23836),	-- Goblin Rocket Launcher*
+			}),				
+			filter(113, {	-- Bags
+				i(23774),	-- Fil Iron Toolbox
+			}),
 		}),
 		n(-185, { 	-- Inscription
 		-- Reviewed and updated as of 11.21.2018 BfA 8.0

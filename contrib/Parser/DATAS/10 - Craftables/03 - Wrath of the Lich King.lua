@@ -405,21 +405,43 @@ _.Craftables =
 			}),
 		}),
 		n(-183, { 	-- Engineering
-			i(41168),	-- Armor Plated Combat Shotgun
-			i(39688),	-- Mark "S" Boomstick
-			i(44504),	-- Nesingwary 4000
-			i(42549),	-- Armored Titanium Goggles
-			i(42552),	-- Charged Titanium Specs
-			i(42555),	-- Electroflux Sight Enhancers
-			i(42554),	-- Greensight Gogs
-			i(41112),	-- Mechanized Snow Goggles
-			i(44740),	-- Mechanized Snow Goggles
-			i(44741),	-- Mechanized Snow Goggles
-			i(44742),	-- Mechanized Snow Goggles
-			i(42551),	-- Truesight Ice Blinders
-			i(44949),	-- Unbreakable Healing Amplifiers
-			i(42553),	-- Visage Liquification Goggles
-			i(42550),	-- Weakness Spectralizers
+			filter(100, {	-- Mounts
+				i(41508),	-- Mechano-Hog*
+				i(44413),	-- Mekgineer's Chopper*
+			}),
+			filter(102, {	-- Toys
+				i(40895),	-- Gnomish X-Ray Specs*
+				i(40768),	-- MOLL-E*
+				i(48933),	-- Wormhole Generator: Northrend*
+			}),
+			n(-319, {	-- Weapons
+				-- Guns
+				i(41168),	-- Armor Plated Combat Shotgun*
+				i(39688),	-- Mark "S" Boomstick*
+				i(44504),	-- Nesingwary 4000*
+			}),
+			n(-318, {	-- Armour
+				-- Head
+				i(42549),	-- Armored Titanium Goggles*
+				i(42552),	-- Charged Titanium Specs*
+				i(42555),	-- Electroflux Sight Enhancers*
+				i(42554),	-- Greensight Gogs*
+				i(41112),	-- Mechanized Snow Goggles*
+				i(44740),	-- Mechanized Snow Goggles*
+				i(44741),	-- Mechanized Snow Goggles*
+				i(44742),	-- Mechanized Snow Goggles*
+				i(42551),	-- Truesight Ice Blinders*
+				i(44949),	-- Unbreakable Healing Amplifiers*
+				i(42553),	-- Visage Liquification Goggles*
+				i(42550),	-- Weakness Spectralizers*
+				-- Trinket
+				i(41121),	-- Gnomish Lightning Generator*
+				i(40865),	-- Noise Machine*
+				i(40767),	-- Sonic Booster*
+			}),
+			filter(113, {	-- Bags
+				i(23775),	-- Titanium Toolbox*
+			}),
 		}),
 		n(-185, { 	-- Inscription
 		-- Reviewed and updated as of 11.21.2018 BfA 8.0

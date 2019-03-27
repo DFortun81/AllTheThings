@@ -11,6 +11,7 @@ _.ExpansionFeatures =
 				["lvl"] = 90,
 				["maps"] = {
 					579,	-- Lunarfall Excavation
+					580,	-- Lunarfall Excavation (Level 2)
 					581,	-- Lunarfall Excavation (Level 3)
 				},
 				["icon"] = "Interface\\Icons\\achievement_garrison_tier01_alliance",

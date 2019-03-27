@@ -321,18 +321,37 @@ _.Craftables =
 			}),
 		}),
 		n(-183, { 	-- Engineering
-			i(71077),	-- Extreme-Impact Hole Puncher
-			i(59598),	-- Finely-Tuned Throat Needler
-			i(59367),	-- Kickback 5000
-			i(59364),	-- Overpowered Chicken Splitter
-			i(59599),	-- Volatile Thunderstick
-			i(59455),	-- Agile Bio-Optic Killshades
-			i(59453),	-- Camouflage Bio-Optic Killshades
-			i(59456),	-- Deadly Bio-Optic Killshades
-			i(59458),	-- Energized Bio-Optic Killshades
-			i(59449),	-- Lightweight Bio-Optic Killshades
-			i(59359),	-- Reinforced Bio-Optic Killshades
-			i(59448),	-- Specialized Bio-Optic Killshades
+			filter(101, {	-- Pets
+				i(60216),	-- De-Weaponized Mechanical Companion*
+				i(59597),	-- Personal World Destroyer*
+			}),
+			filter(102, {	-- Toys
+				i(40727),	-- Gnomish Gravity Well*
+				i(60854),	-- Loot-A-Rang*
+			}),
+			n(-319, {	-- Weapons
+				i(71077),	-- Extreme-Impact Hole Puncher*
+				i(59598),	-- Finely-Tuned Throat Needler*
+				i(59367),	-- Kickback 5000*
+				i(59364),	-- Overpowered Chicken Splitter*
+				i(59599),	-- Volatile Thunderstick*
+			}),
+			n(-318, {	-- Armour
+				-- Head
+				i(59455),	-- Agile Bio-Optic Killshades*
+				i(59453),	-- Camouflage Bio-Optic Killshades*
+				i(59456),	-- Deadly Bio-Optic Killshades*
+				i(59458),	-- Energized Bio-Optic Killshades*
+				i(59449),	-- Lightweight Bio-Optic Killshades*
+				i(59359),	-- Reinforced Bio-Optic Killshades*
+				i(59448),	-- Specialized Bio-Optic Killshades*
+				-- Trinkets
+				i(60403),	-- Elementium Dragonling*
+			}),
+			filter(113, {	-- Bags
+				i(60217),	-- Elementium Toolbox*
+				i(60218),	-- Lure Master Tackle Box*
+			}),
 		}),
 		n(-185, { 	-- Inscription
 		-- Reviewed and updated as of 11.21.2018 BfA 8.0

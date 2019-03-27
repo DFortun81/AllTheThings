@@ -252,7 +252,8 @@ profession(202, {	-- Engineering
 						},
 						{
 							["name"] = "Ultrasafe Transporter - Toshley's Station",
-							["recipeID"] = 36955
+							["recipeID"] = 36955,
+							["description"] = "Requires Gnomish Engineering. Speak to Smiles O'Byron just outside Toshley's Station in Blade's Edge Mountains at 60.35, 65.21 to learn this recipe.",
 						},
 						{
 							["name"] = "Zapthrottle Mote Extractor",

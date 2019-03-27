@@ -524,35 +524,50 @@ _.Craftables =
 			}),
 		}),
 		n(-183, { 	-- Engineering
-			n(-494, { -- Miscellaneous
-				n(77789, { -- Blingtron 5000
-					i(113258, { -- Blingtron 5000 Gift Package
-						["groups"] = {
-							i(87250),	-- Depleted-Kyparium Rocket Mount
-							i(87251), 	-- Geosynchronous World Spinner Mount
-							i(41508), 	-- Mechano-Hog Mount
-							i(44413), 	-- Mekgineer's Chopper Mount
-							i(103670), 	-- Lil'Bling Pet
-							i(15996), 	-- Lifelike Mechanical Toad Pet
-							i(11826), 	-- Lil' Smoky Pet
-							i(4401), 	-- Mechanical Squirrel Box Pet
-							i(11825), 	-- Pet Bombling
-							i(115483), 	-- Sky-Bo Pet
-							i(21277), 	-- Tranquil Mechanical Yeti Pet
-							i(123851), 	-- Photo B.O.M.B. Toy
-						},
-						["questID"] = 34774,
+			filter(101, {	-- Pets
+				i(112057),	-- Lifelike Mechanical Frostboar*		
+				i(111402),	-- Mechanical Axebeak*
+				i(118741),	-- Mechanical Scorpid*
+			}),
+			filter(102, {	-- Toys
+				i(111821, {	-- Blingtron 5000*
+					n(77789, { -- Blingtron 5000
+						i(113258, { -- Blingtron 5000 Gift Package
+							["questID"] = 34774,
+							["groups"] = {
+								i(87250),	-- Depleted-Kyparium Rocket Mount
+								i(87251), 	-- Geosynchronous World Spinner Mount
+								i(41508), 	-- Mechano-Hog Mount
+								i(44413), 	-- Mekgineer's Chopper Mount
+								i(103670), 	-- Lil'Bling Pet
+								i(15996), 	-- Lifelike Mechanical Toad Pet
+								i(11826), 	-- Lil' Smoky Pet
+								i(4401), 	-- Mechanical Squirrel Box Pet
+								i(11825), 	-- Pet Bombling
+								i(115483), 	-- Sky-Bo Pet
+								i(21277), 	-- Tranquil Mechanical Yeti Pet
+								i(123851), 	-- Photo B.O.M.B. Toy
+							},							
+						}),
 					}),
 				}),
+				i(109167),	-- Findle's Loot-A-Rang*
+				i(108745),	-- Personal Hologram*
+				i(109183),	-- World Shrinker*
+				i(112059),	-- Wormhole Centrifuge*
 			}),
-			i(128017, {	-- True Iron Trigger
-				WOD_CRAFTED_ITEM(109168),	-- Shrediron's Shredder
+			n(-319, {	-- Weapons
+				i(128017, {	-- True Iron Trigger*
+					WOD_CRAFTED_ITEM(109168),	-- Shrediron's Shredder*
+				}),
 			}),
-			i(128011, {	-- Linkgrease Locksprocket
-				WOD_CRAFTED_ITEM(109173),	-- Cybergenetic Mechshades
-				WOD_CRAFTED_ITEM(109171),	-- Night-Vision Mechshades
-				WOD_CRAFTED_ITEM(109172),	-- Plasma Mechshades
-				WOD_CRAFTED_ITEM(109174),	-- Razorguard Mechshades
+			n(-318, {	-- Armour
+				i(128011, {	-- Linkgrease Locksprocket*
+					WOD_CRAFTED_ITEM(109173),	-- Cybergenetic Mechshades*
+					WOD_CRAFTED_ITEM(109171),	-- Night-Vision Mechshades*
+					WOD_CRAFTED_ITEM(109172),	-- Plasma Mechshades*
+					WOD_CRAFTED_ITEM(109174),	-- Razorguard Mechshades*
+				}),
 			}),
 		}),
 		n(-185, { 	-- Inscription
