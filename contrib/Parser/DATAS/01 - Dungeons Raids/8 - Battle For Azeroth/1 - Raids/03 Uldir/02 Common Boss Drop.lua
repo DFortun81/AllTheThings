@@ -10,8 +10,12 @@ _.Instances =
 				["groups"] = {
 					n(-1, {	-- Common Boss Drop
 						["crs"] = {
+							-- * = verified in LFR
 							137119,	-- Taloc
-							140853,	-- MOTHER
+							135452,	-- MOTHER*
+							136429,	-- Chamber 01 (MOTHER)*
+							137022,	-- Chamber 02 (MOTHER)*
+							137023,	-- Chamber 03 (MOTHER)*
 							134445,	-- Zek'voz <Herald of N'zoth>
 							134442,	-- Vectis
 							133298,	-- Fetid Devourer

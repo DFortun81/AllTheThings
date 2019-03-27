@@ -98,10 +98,11 @@ _.Instances =
 							{	-- MOTHER [2]
 								["encounterID"] = 2167,	-- MOTHER
 								["crs"] = {
-									140853,	-- MOTHER
-									136315,	-- Remnant of Corruption
-									143067,	-- Resistant Bacterium
-									143065,	-- Viral Contagion
+									-- may have other NPCs that need to be added, have only confirmed LFR difficulty
+									135452,	-- MOTHER
+									136429,	-- Chamber 01 (MOTHER)
+									137022,	-- Chamber 02 (MOTHER)
+									137023,	-- Chamber 03 (MOTHER)
 								},
 								["g"] = {
 									{	-- Mythic: MOTHER

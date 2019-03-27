@@ -94,10 +94,10 @@ _.Instances =
 									{	-- MOTHER
 										["encounterID"] = 2167,	-- MOTHER
 										["crs"] = {
-											140853,	-- MOTHER
-											136315,	-- Remnant of Corruption
-											143067,	-- Resistant Bacterium
-											143065,	-- Viral Contagion
+											135452,	-- MOTHER
+											136429,	-- Chamber 01 (MOTHER)
+											137022,	-- Chamber 02 (MOTHER)
+											137023,	-- Chamber 03 (MOTHER)
 										},
 										["g"] = {
 											{	-- MOTHER
@@ -191,7 +191,7 @@ _.Instances =
 									},
 								},
 							},
-							{	-- Halls of Containment
+							{	-- Crimson Descent
 								["achievementID"] = 12522,	 -- Crimson Descent
 								["g"] = {
 									{	-- Vectis
