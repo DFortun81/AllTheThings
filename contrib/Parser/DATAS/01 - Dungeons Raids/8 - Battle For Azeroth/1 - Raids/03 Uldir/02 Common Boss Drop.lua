@@ -20,8 +20,8 @@ _.Instances =
 							134442,	-- Vectis
 							133298,	-- Fetid Devourer
 							138967,	-- Zul
-							136383,	-- Mythrax the Unraveler
-							132998,	-- G'huun
+							134546,	-- Mythrax the Unraveler*
+							132998,	-- G'huun*
 						},
 						["g"] = {
 							{	-- Vantus Rune Technique: Uldir [Rank 1]

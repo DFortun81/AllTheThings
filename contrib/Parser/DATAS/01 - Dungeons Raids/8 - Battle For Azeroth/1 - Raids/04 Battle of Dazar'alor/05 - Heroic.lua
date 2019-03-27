@@ -48,6 +48,7 @@ _.Instances =
 							},
 							{	-- Champion of the Light
 								["encounterID"] = 2344,
+								["crs"] = { 144683 },	-- Ra'wani Kanae
 								["g"] = {
 									{	-- Dawnbreaker
 										["itemID"] = 165586,	-- Dawnbreaker
@@ -90,8 +91,51 @@ _.Instances =
 									},
 								},
 							},
+							{	-- Jadefire Masters
+								["encounterID"] = 2323,
+								["crs"] = {
+									144692,	-- Anathos Firecaller
+									144691,	-- Ma'ra Grimfang
+								},
+								["g"] = {
+									{	-- Phoenixfire Staff
+										["itemID"] = 165587,	-- Phoenixfire Staff
+									},
+									{	-- Blazewing Hood
+										["itemID"] = 165500,	-- Blazewing Hood
+									},
+									{	-- Helm of Tempered Jade
+										["itemID"] = 165548,	-- Helm of Tempered Jade
+									},
+									{	-- Ma'ra's Boneblade Mantle
+										["itemID"] = 165777,	-- Ma'ra's Boneblade Mantle
+									},
+									{	-- Mistfire Raiment
+										["itemID"] = 165540,	-- Mistfire Raiment
+									},
+									{	-- Firecaller's Handwraps
+										["itemID"] = 165764,	-- Firecaller's Handwraps
+									},
+									{	-- Grips of Harmonious Spirits
+										["itemID"] = 165531,	-- Grips of Harmonious Spirits
+									},
+									{	-- Embersear Waistguard
+										["itemID"] = 165552,	-- Embersear Waistguard
+									},
+									{	-- Cranedancer Leggings
+										["itemID"] = 165521,	-- Cranedancer Leggings
+									},
+									{	-- Band of Multi-Sided Strikes
+										["itemID"] = 165565,	-- Band of Multi-Sided Strikes
+									},
+									{	-- Invocation of Yu'lon
+										["itemID"] = 165568,	-- Invocation of Yu'lon
+									},
+								},
+							},
 							{	-- Grong, the Revenant
 								["encounterID"] = 2340,
+								["crs"] = { 144638 },	-- Grong the Revenant
 								["g"] = {
 									{	-- Hornridged Crusher
 										["itemID"] = 165589,	-- Hornridged Crusher
@@ -134,44 +178,6 @@ _.Instances =
 									},
 									{	-- Grong's Primal Rage
 										["itemID"] = 165574,	-- Grong's Primal Rage
-									},
-								},
-							},
-							{	-- Jadefire Masters
-								["encounterID"] = 2323,
-								["g"] = {
-									{	-- Phoenixfire Staff
-										["itemID"] = 165587,	-- Phoenixfire Staff
-									},
-									{	-- Blazewing Hood
-										["itemID"] = 165500,	-- Blazewing Hood
-									},
-									{	-- Helm of Tempered Jade
-										["itemID"] = 165548,	-- Helm of Tempered Jade
-									},
-									{	-- Ma'ra's Boneblade Mantle
-										["itemID"] = 165777,	-- Ma'ra's Boneblade Mantle
-									},
-									{	-- Mistfire Raiment
-										["itemID"] = 165540,	-- Mistfire Raiment
-									},
-									{	-- Firecaller's Handwraps
-										["itemID"] = 165764,	-- Firecaller's Handwraps
-									},
-									{	-- Grips of Harmonious Spirits
-										["itemID"] = 165531,	-- Grips of Harmonious Spirits
-									},
-									{	-- Embersear Waistguard
-										["itemID"] = 165552,	-- Embersear Waistguard
-									},
-									{	-- Cranedancer Leggings
-										["itemID"] = 165521,	-- Cranedancer Leggings
-									},
-									{	-- Band of Multi-Sided Strikes
-										["itemID"] = 165565,	-- Band of Multi-Sided Strikes
-									},
-									{	-- Invocation of Yu'lon
-										["itemID"] = 165568,	-- Invocation of Yu'lon
 									},
 								},
 							},
@@ -271,6 +277,12 @@ _.Instances =
 							},
 							{	-- King Rastakhan
 								["encounterID"] = 2335,
+								["crs"] = {
+									145644,	-- Bwonsamdi
+									145616,	-- King Rastakhan
+									146492,	-- Phantom of Rage
+									146322,	-- Siegebreaker Roka
+								},
 								["g"] = {
 									{	-- Deathspeaker Spire
 										["itemID"] = 165597,	-- Deathspeaker Spire
@@ -312,6 +324,7 @@ _.Instances =
 							},
 							{	-- High Tinker Mekkatorque
 								["encounterID"] = 2334,
+								["crs"] = { 144796 },	-- High Tinker Mekkatorque
 								["g"] = {
 									{	-- G.M.O.D.
 										["itemID"] = 166518,	-- G.M.O.D.
@@ -356,6 +369,11 @@ _.Instances =
 							},
 							{	-- Stormwall Blockade
 								["encounterID"] = 2337,
+								["crs"] = {
+									146253,	-- Brother Joseph
+									146256,	-- Laminaria
+									146251,	-- Sister Katherine
+								},
 								["g"] = {
 									{	-- Crash of Tides
 										["itemID"] = 165602,	-- Crash of Tides
@@ -400,6 +418,7 @@ _.Instances =
 							},
 							{	-- Lady Jaina Proudmoore
 								["encounterID"] = 2343,
+								["crs"] = { 146409 },	-- Lady Jaina Proudmoore
 								["g"] = {
 									{	-- Daelin Proudmoore's Saber
 										["itemID"] = 165604,	-- Daelin Proudmoore's Saber

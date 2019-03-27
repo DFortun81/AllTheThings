@@ -12,7 +12,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 			1018,	-- The Rupture
 			1029,	-- Waycrest Dimension
 		},
-		["groups"] = {
+		["g"] = {
 			n(-17, {	-- Quests
 				n(-34, {	-- World Quests
 					q(51212, { -- Waycrest Manor: Witchy Kithcen
@@ -21,7 +21,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				}),
 				q(50990, { -- Cutting Edge Poultry Science
 					["description"] = "This quest pops up when killing mobs in the kitchen.  It is unknown for certain if the World Quest \"Witchy Kitchen\"  is required.",
-					["groups"] = {
+					["g"] = {
 						i(160940),	-- Intact Chicken Brain
 					},
 				}),
@@ -33,7 +33,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						131823, -- Sister Malady
 						131824, -- Sister Malady
 					},
-					["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						i(159133),	-- Jagged Iris Sica
 						i(159669),	-- Solena's Watchful Collection
 						i(159340),	-- Bracers of Dreadful Maladies
@@ -49,7 +49,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					["crs"] = {
 						131667, -- Soulbound Goliath
 					},
-					["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						i(159659),	-- Sinister Wicker Talons
 						i(159282),	-- Drust-Thatched Wristwraps
 						i(159399),	-- Thornshaper Mitts
@@ -65,7 +65,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						133361, -- Wasting Servant
 						136541, -- Bile Oozing
 					},
-					["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						i(163833, { -- Recipe: Heartsbane Hexwurst
 							["spellID"] = 280282,
 						}),
@@ -81,9 +81,9 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				e(2128, { -- Lord and Lady Waycrest
 					["crs"] = {
 						131527, -- Lord Waycrest
-						136918, -- Lady Waycrest
+						131545, -- Lady Waycrest
 					},
-					["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						i(159661),	-- Soulcharmer's Bludgeon
 						i(159457),	-- Risen Lord's Oversized Gauntlets
 						i(159262),	-- Belt of Undying Devotion
@@ -94,11 +94,8 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					}),
 				}),
 				e(2129, { -- Gorak Tul
-					["crs"] = {
-						144324, -- Gorak Tul
-						135552, -- Deathtouched Slaver
-					},
-					["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+					["crs"] = { 131864 }, -- Gorak Tul
+					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						ach(12483),	-- Waycrest Manor
 						i(159662),	-- Blightreaper
 						i(159279),	-- Soulfuel Headdress
@@ -114,14 +111,14 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 			}),
 			d(2, { -- Heroic
 				["lvl"] = 120,
-				["groups"] = {
+				["g"] = {
 					e(2125, { -- Heartsbane Triad
 						["crs"] = {
 							131825, -- Sister Briar
 							131823, -- Sister Malady
 							131824, -- Sister Malady
 						},
-						["groups"] = {
+						["g"] = {
 							i(159133),	-- Jagged Iris Sica
 							i(159669),	-- Solena's Watchful Collection
 							i(159340),	-- Bracers of Dreadful Maladies
@@ -137,7 +134,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						["crs"] = {
 							131667, -- Soulbound Goliath
 						},
-						["groups"] = {
+						["g"] = {
 							i(159659),	-- Sinister Wicker Talons
 							i(159282),	-- Drust-Thatched Wristwraps
 							i(159399),	-- Thornshaper Mitts
@@ -153,7 +150,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							133361, -- Wasting Servant
 							136541, -- Bile Oozing
 						},
-						["groups"] = {
+						["g"] = {
 							i(163833, { -- Recipe: Heartsbane Hexwurst
 								["spellID"] = 280282,
 							}),
@@ -169,9 +166,9 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					e(2128, { -- Lord and Lady Waycrest
 						["crs"] = {
 							131527, -- Lord Waycrest
-							136918, -- Lady Waycrest
+							131545, -- Lady Waycrest
 						},
-						["groups"] = {
+						["g"] = {
 							i(159661),	-- Soulcharmer's Bludgeon
 							i(159457),	-- Risen Lord's Oversized Gauntlets
 							i(159262),	-- Belt of Undying Devotion
@@ -182,11 +179,8 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						},
 					}),
 					e(2129, { -- Gorak Tul
-						["crs"] = {
-							144324, -- Gorak Tul
-							135552, -- Deathtouched Slaver
-						},
-						["groups"] = {
+						["crs"] = { 131864 }, -- Gorak Tul
+						["g"] = {
 							ach(12484),	-- Heroic: Waycrest Manor
 							i(159662),	-- Blightreaper
 							i(159279),	-- Soulfuel Headdress
@@ -203,7 +197,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 			}),
 			d(23, { -- Mythic
 				["lvl"] = 120,
-				["groups"] = {
+				["g"] = {
 					ach(12489, { -- Losing My Profession
 						{
 							["criteriaID"] = 1,	-- Governess Tabitha
@@ -232,7 +226,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							131823, -- Sister Malady
 							131824, -- Sister Malady
 						},
-						["groups"] = {
+						["g"] = {
 							i(159133),	-- Jagged Iris Sica
 							i(159669),	-- Solena's Watchful Collection
 							i(159340),	-- Bracers of Dreadful Maladies
@@ -248,7 +242,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						["crs"] = {
 							131667, -- Soulbound Goliath
 						},
-						["groups"] = {
+						["g"] = {
 							ach(12495),	-- Run Wild Like a Man On Fire
 							i(159659),	-- Sinister Wicker Talons
 							i(159282),	-- Drust-Thatched Wristwraps
@@ -265,7 +259,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							133361, -- Wasting Servant
 							136541, -- Bile Oozing
 						},
-						["groups"] = {
+						["g"] = {
 							i(163833, { -- Recipe: Heartsbane Hexwurst
 								["spellID"] = 280282,
 							}),
@@ -281,9 +275,9 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					e(2128, { -- Lord and Lady Waycrest
 						["crs"] = {
 							131527, -- Lord Waycrest
-							136918, -- Lady Waycrest
+							131545, -- Lady Waycrest
 						},
-						["groups"] = {
+						["g"] = {
 							i(159661),	-- Soulcharmer's Bludgeon
 							i(159457),	-- Risen Lord's Oversized Gauntlets
 							i(159262),	-- Belt of Undying Devotion
@@ -294,11 +288,8 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						},
 					}),
 					e(2129, { -- Gorak Tul
-						["crs"] = {
-							144324, -- Gorak Tul
-							135552, -- Deathtouched Slaver
-						},
-						["groups"] = {
+						["crs"] = { 131864 }, -- Gorak Tul
+						["g"] = {
 							ach(12490),	-- Alchemical Romance
 							ach(12488),	-- Mythic: Waycrest Manor
 							i(162520),	-- Recipe: Mystical Cauldron (Rank 2)

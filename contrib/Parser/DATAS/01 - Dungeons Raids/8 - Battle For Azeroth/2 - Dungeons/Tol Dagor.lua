@@ -13,7 +13,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 			979, -- Overseer's Redoubt
 			980, -- Oveseer's Summit
 		},
-		["groups"] = {
+		["g"] = {
 			n(-34, {	-- World Quests
 				q(51297, {	-- Tol Dagor: Shorefront Property
 					["repeatable"] = true,
@@ -24,10 +24,8 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 			}),
 			d(1, { -- Normal
 				e(2097, { -- The Sand Queen
-					["crs"] = {
-						134927, -- The Sand Queen
-					},
-					["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+					["crs"] = { 127479 }, -- The Sand Queen
+					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						i(159656),	-- Halberd of the Unwary Guard
 						i(160110),	-- Warglaive of the Sand Queen
 						i(159668),	-- Rattling Jar of Eyes
@@ -41,7 +39,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					["crs"] = {
 						127484, -- Jes Howlis
 					},
-					["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						i(159131),	-- Howlis' Crystal Shiv
 						i(159666),	-- Improvised Riot Shield
 						i(159293),	-- Turncoat's Cape
@@ -55,7 +53,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					["crs"] = {
 						127490, -- Knight Captain Valyri
 					},
-					["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						i(159441),	-- Valyri's Fire-Proof Bracers
 						i(159389),	-- Flint-Linked Wristguards
 						i(159390),	-- Sure-Grip Munition Handlers
@@ -71,7 +69,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					["crs"] = {
 						127503, -- Overseer Korgus
 					},
-					["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						ach(12840),	-- Tol Dagor
 						i(159129),	-- Flamecaster Botefeux
 						i(159658),	-- Cudgel of Correctional Oversight
@@ -89,12 +87,10 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 			}),
 			d(2, { -- Heroic
 				["lvl"] = 120,
-				["groups"] = {
+				["g"] = {
 					e(2097, { -- The Sand Queen
-						["crs"] = {
-							134927, -- The Sand Queen
-						},
-						["groups"] = {
+						["crs"] = { 127479 }, -- The Sand Queen
+						["g"] = {
 							i(159656),	-- Halberd of the Unwary Guard
 							i(160110),	-- Warglaive of the Sand Queen
 							i(159668),	-- Rattling Jar of Eyes
@@ -108,7 +104,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						["crs"] = {
 							127484, -- Jes Howlis
 						},
-						["groups"] = {
+						["g"] = {
 							i(159131),	-- Howlis' Crystal Shiv
 							i(159666),	-- Improvised Riot Shield
 							i(159293),	-- Turncoat's Cape
@@ -122,7 +118,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						["crs"] = {
 							127490, -- Knight Captain Valyri
 						},
-						["groups"] = {
+						["g"] = {
 							i(159441),	-- Valyri's Fire-Proof Bracers
 							i(159389),	-- Flint-Linked Wristguards
 							i(159390),	-- Sure-Grip Munition Handlers
@@ -138,7 +134,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						["crs"] = {
 							127503, -- Overseer Korgus
 						},
-						["groups"] = {
+						["g"] = {
 							ach(12841),	-- Heroic: Tol Dagor
 							i(159129),	-- Flamecaster Botefeux
 							i(159658),	-- Cudgel of Correctional Oversight
@@ -157,15 +153,13 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 			}),
 			d(23, { -- Mythic
 				["lvl"] = 120,
-				["groups"] = {
+				["g"] = {
 					n(135448, {	-- Gol'than the Malodorous
 						i(160704),	--  Filthy Bucket
 					}),
 					e(2097, { -- The Sand Queen
-						["crs"] = {
-							134927, -- The Sand Queen
-						}, 
-						["groups"] = {
+						["crs"] = { 127479 }, -- The Sand Queen
+						["g"] = {
 							i(159656),	-- Halberd of the Unwary Guard
 							i(160110),	-- Warglaive of the Sand Queen
 							i(159668),	-- Rattling Jar of Eyes
@@ -179,7 +173,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						["crs"] = {
 							127484, -- Jes Howlis
 						},
-						["groups"] = {
+						["g"] = {
 							i(159131),	-- Howlis' Crystal Shiv
 							i(159666),	-- Improvised Riot Shield
 							i(159293),	-- Turncoat's Cape
@@ -193,7 +187,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						["crs"] = {
 							127490, -- Knight Captain Valyri
 						},
-						["groups"] = {
+						["g"] = {
 							ach(12457),	-- Remix to Ignition
 							i(159441),	-- Valyri's Fire-Proof Bracers
 							i(159389),	-- Flint-Linked Wristguards
@@ -210,7 +204,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						["crs"] = {
 							127503, -- Overseer Korgus
 						},
-						["groups"] = {
+						["g"] = {
 							ach(12842),	-- Mythic: Tol Dagor
 							ach(12462),	-- Shot Through the Heart
 							i(162520),	-- Recipe: Mystical Cauldron (Rank 2)

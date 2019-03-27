@@ -13,6 +13,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				e(2153, { -- Aqu'sirr
 					["crs"]  = {
 						134056, -- Aqu'sirr
+						134828,	-- Aqualing
 					},
 					["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						i(159321),	-- Gloves of Corrupted Water

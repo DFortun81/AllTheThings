@@ -10,7 +10,7 @@ _.Instances =
 					d(17, {		-- LFR 
 						["groups"] = {
 							{	-- Zone Drops
-								["npcID"] = 0,	-- Zonee Drops
+								["npcID"] = 0,	-- Zone Drops
 								["g"] = {
 									{	-- Bloody Experimenter's Wraps
 										["itemID"] = 161071,	-- Bloody Experimenter's Wraps
@@ -331,9 +331,7 @@ _.Instances =
 								["g"] = {
 									{	--  Mythrax the Unraveler
 										["encounterID"] = 2194,	--  Mythrax the Unraveler
-										["crs"] = {
-											136383,	-- Mythrax the Unraveler
-										},
+										["crs"] = { 134546 },	-- Mythrax the Unraveler
 										["g"] = {
 											{	-- Mythrax the Unraveler
 												["achievementID"] = 12523,	-- Heart of Corruption

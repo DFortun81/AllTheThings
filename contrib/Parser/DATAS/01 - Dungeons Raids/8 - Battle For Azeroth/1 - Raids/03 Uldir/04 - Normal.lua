@@ -343,9 +343,7 @@ _.Instances =
 							},
 							{	-- Mythrax the Unraveler [7]
 								["encounterID"] = 2194,	--  Mythrax the Unraveler
-								["crs"] = {
-									136383,	-- Mythrax the Unraveler
-								},
+								["crs"] = { 134546 },	-- Mythrax the Unraveler
 								["g"] = {
 									{	-- Mythrax the Unraveler
 										["achievementID"] = 12523,	-- Heart of Corruption

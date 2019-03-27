@@ -14,14 +14,6 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					["isDaily"] = true, 	-- Would like to swap it to WQ below
 					--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 					["lvl"] = 120,			-- WQ is 120+ only
-					["groups"] = bubbleDown({["modID"] = 23}, {
-						i(159371),	-- Boots of the Headlong Conqueror
-						i(160216),	-- Crackling Jade Kilij
-						i(159644),	-- Geti'ikku, Cut of Death
-						i(159645),	-- Headcracker of Supplication
-						i(159301),	-- Primal Dinomancer's Belt
-						i(159243),	-- Sandals of Wise Voodoo
-					}),
 				}),
 			}),
 			d(2,   {	-- Heroic
