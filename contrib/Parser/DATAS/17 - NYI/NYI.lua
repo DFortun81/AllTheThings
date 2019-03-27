@@ -281,10 +281,38 @@ _.NeverImplemented =
 				un(1, i(78079)),	-- Replica Shadowcraft Tunic
 			}),
 			un(1, i(27719)),	-- Aldor Leggings of Puissance (never made it to live)
+			un(1, i(54685)),	-- Archer's Jerkin
+			un(1, i(54686)),	-- Barbaric Harness
 			un(1, i(14550)),	-- Bladebane Armguards (Leather)
+			un(1, i(54703)),	-- Bogwalker Boots
 			un(1, i(12104)),	-- Brindlethorn Tunic (Leather)
-			un(1, i(5821)),		-- Darkstalker Boots (Leather)
-			un(1, i(37316)),	-- HF28 Leather Physical Legs4
+			un(1, i(54708)),	-- Ceremonial Leather Gloves
+			un(1, i(54666)),	-- Ceremonial Leather Harness
+			un(1, i(54698)),	-- Ceremonial Leather Loincloth
+			un(1, i(5821)),	-- Darkstalker Boots (Leather)
+			un(1, i(54683)),	-- Dusky Leather Armor
+			un(1, i(39410)),	-- Gauntlets of Rampant Destruction
+			un(1, i(54674)),	-- Gloomshroud Armor
+			un(1, i(25795)),	-- Gloves of Preservation (not added version)
+			un(1, i(54684)),	-- Guardian Armor
+			un(1, i(38525)),	-- Jailor's Padded Cover
+			un(1, i(56701)),	-- Jinxed Vest (never made it to live)
+			un(1, i(37316)),	-- Leather Physical Legs
+			un(1, i(43895)),	-- Leggings of Silent Echoes
+			un(1, i(54723)),	-- Living Leggings
+			un(1, i(25796)),	-- Lurking Shadow Spaulders (only beta)
+			un(1, i(22273)),	-- Moonshadow Hood (Leather)
+			un(1, i(54691)),	-- Nightscape Tunic
+			un(1, i(19986)),	-- Pirate's Eye Patch (Leather)
+			un(1, i(54696)),	-- Scorpashi Breastplate
+			un(1, i(54687)),	-- Sentinel Breastplate
+			un(1, i(54724)),	-- Shadowcraft Bracers
+			un(1, i(54725)),	-- Shadowcraft Gloves
+			un(1, i(20524)),	-- Shadowhide Leggings (Leather)
+			un(1, i(54655)),	-- Stormshroud Armor (Leather)
+			un(1, i(54681)),	-- Thick Murloc Armor
+			un(1, i(28145)),	-- Tranquillien Wraps (Leather)
+			un(1, i(54727)),	-- Traveler's Boots
 			un(1, i(54649)),	-- Unknown
 			un(1, i(54650)),	-- Unknown
 			un(1, i(54652)),	-- Unknown
@@ -297,6 +325,7 @@ _.NeverImplemented =
 			un(1, i(54716)),	-- Unknown
 			un(1, i(54726)),	-- Unknown
 			un(1, i(54667)),	-- Unknown
+			un(1, i(54731)),	-- Unknown
 			un(1, i(107203)),	-- Unknown
 			un(1, i(107337)),	-- Unknown
 			un(1, i(107866)),	-- Unknown
@@ -306,26 +335,17 @@ _.NeverImplemented =
 			un(1, i(107881)),	-- Unknown
 			un(1, i(107884)),	-- Unknown
 			un(1, i(107887)),	-- Unknown
-			un(1, i(39410)),	-- Gauntlets of Rampant Destruction
-			un(1, i(25795)),	-- Gloves of Preservation (not added version)
-			un(1, i(38525)),	-- Jailor's Padded Cover
-			un(1, i(56701)),	-- Jinxed Vest (never made it to live)
-			un(1, i(43895)),	-- Leggings of Silent Echoes
-			un(1, i(25796)),	-- Lurking Shadow Spaulders (only beta)
-			un(1, i(22273)),	-- Moonshadow Hood (Leather)
-			un(1, i(19986)),	-- Pirate's Eye Patch (Leather)
-			un(1, i(20524)),	-- Shadowhide Leggings (Leather)
-			un(1, i(54655)),	-- Stormshroud Armor (Leather)
 			un(1, i(54668)),	-- Unknown
 			un(1, i(54670)),	-- Unknown
 			un(1, i(54671)),	-- Unknown
 			un(1, i(54673)),	-- Unknown
 			un(1, i(54677)),	-- Unknown
 			un(1, i(54680)),	-- Unknown
-			un(1, i(28145)),	-- Tranquillien Wraps (Leather)
-			un(1, i(7187)),		-- VanCleef's Boots (Leather)
-			un(1, i(26029)),	-- Watchman's Bracers
+			un(1, i(7187)),	-- VanCleef's Boots (Leather)
 			un(1, i(41757)),	-- Vest of Unyielding Companionship (was in Wrath beta)
+			un(1, i(26029)),	-- Watchman's Bracers
+			un(1, i(54711)),	-- Wendigo Collar
+			un(1, i(54694)),	-- Wolf Rider's Padded Armor
 			un(1, i(42875)),	-- Worg-Hide Pants
 			un(1, i(21613)),	-- Wormhide Boots (Leather)
 			un(1, i(21614)),	-- Wormhide Protector (Leather)
