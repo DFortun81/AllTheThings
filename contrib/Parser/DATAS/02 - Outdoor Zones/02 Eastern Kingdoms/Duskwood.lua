@@ -208,6 +208,7 @@ _.Zones =
 					})),
 --					qg(264, qa(26796)),	-- The Daughter Who Lived
 					qg(263, qa(26727, { -- The Embalmer's Revenge
+						i(60905), -- Ello's Band
 						i(60906),
 						i(60907),
 					})),
