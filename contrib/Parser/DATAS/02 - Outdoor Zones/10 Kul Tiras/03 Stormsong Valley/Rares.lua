@@ -288,11 +288,10 @@ _.Zones =
 						n(139328, {	-- Sabertron	
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								ach(13054, {	-- Sabertron Assemble
-									crit(1),	-- Red Sabertron
-									crit(2),	-- Yellow Sabertron
-									crit(3),	-- Orange Sabertron
-									crit(4),	-- Green Sabertron
-									crit(5),	-- Copper Sabertron
+									["description"] = "Red is the default color when a WQ isn't active.  To get credit for killing all the different colors, wait for the 'Sabertron' world quests to pop up!",
+									["g"] = {
+										crit(1),	-- Red Sabertron
+									},
 								}),
 								i(154664),	-- Lionsight Omensword
 							}),
