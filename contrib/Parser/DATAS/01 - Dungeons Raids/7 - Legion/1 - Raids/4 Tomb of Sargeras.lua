@@ -198,7 +198,8 @@ _.Instances = { tier(7, {	-- Legion
 							i(147031),
 							i(147061),
 							i(147056),
-							i(146987)
+							i(146987),
+							i(147021),	-- Yathae's Thumb Ring
 						})),
 						e(1896, {	-- The Desolate Host
 							["crs"] = { 119072 },	-- The Desolate Host
@@ -293,7 +294,8 @@ _.Instances = { tier(7, {	-- Legion
 							i(147072),
 							i(147347),
 							i(147066),
-							i(147046)
+							i(147046),
+							i(147195),	-- Seal of the Second Duumvirate
 						})),
 					},
 				}),
@@ -415,6 +417,7 @@ _.Instances = { tier(7, {	-- Legion
 					i(147153),
 					i(147045),
 					i(147100),	-- Calcified Barnacle
+					i(147020),	-- Scaled Band of Servitude
 				})),
 				cr(118523, e(1903, {	-- Sisters of the Moon (Huntress Kasparian)
 					i(147068),
@@ -424,7 +427,8 @@ _.Instances = { tier(7, {	-- Legion
 					i(147054),
 					i(146997),
 					i(147056),
-					i(146987)
+					i(146987),
+					i(147021),	-- Yathae's Thumb Ring
 				})),
 				cr(115767, e(1861, {	-- Mistress Sassz'ine
 					i(146985),
@@ -526,7 +530,8 @@ _.Instances = { tier(7, {	-- Legion
 					i(147347),
 					i(146988),
 					i(147048),
-					i(147046)
+					i(147046),
+					i(147195),	-- Seal of the Second Duumvirate
 				})),
 			}),
 			d(15, {		-- Heroic
@@ -646,6 +651,7 @@ _.Instances = { tier(7, {	-- Legion
 					i(147153),
 					i(147045),
 					i(147100),	-- Calcified Barnacle
+					i(147020),	-- Scaled Band of Servitude
 				})),
 				cr(118523, e(1903, {	-- Sisters of the Moon (Huntress Kasparian)
 					i(147068),
@@ -655,7 +661,8 @@ _.Instances = { tier(7, {	-- Legion
 					i(147054),
 					i(146997),
 					i(147056),
-					i(146987)
+					i(146987),
+					i(147021),	-- Yathae's Thumb Ring
 				})),
 				cr(115767, e(1861, {	-- Mistress Sassz'ine
 					i(146985),
@@ -757,7 +764,8 @@ _.Instances = { tier(7, {	-- Legion
 					i(147347),
 					i(146988),
 					i(147048),
-					i(147046)
+					i(147046),
+					i(147195),	-- Seal of the Second Duumvirate
 				})),
 			}),
 			d(16, {		-- Mythic
@@ -877,6 +885,7 @@ _.Instances = { tier(7, {	-- Legion
 					i(147153),
 					i(147045),
 					i(147100),	-- Calcified Barnacle
+					i(147020),	-- Scaled Band of Servitude
 				})),
 				cr(118523, e(1903, {	-- Sisters of the Moon (Huntress Kasparian)
 					i(147068),
@@ -886,7 +895,8 @@ _.Instances = { tier(7, {	-- Legion
 					i(147054),
 					i(146997),
 					i(147056),
-					i(146987)
+					i(146987),
+					i(147021),	-- Yathae's Thumb Ring
 				})),
 				cr(115767, e(1861, {	-- Mistress Sassz'ine
 					i(146985),
@@ -1009,6 +1019,7 @@ _.Instances = { tier(7, {	-- Legion
 						i(146988),
 						i(147048),
 						i(147046),
+						i(147195),	-- Seal of the Second Duumvirate
 					
 				})),
 			})

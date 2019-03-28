@@ -1727,6 +1727,7 @@ _.Zones =
 							q(37497), -- Trailing the Tidestone
 							q(37486,  {  	-- Nar'thalas Still Suffers
 								i(121487),
+								i(132911),	-- Seal of House Farondis
 							}),
 							q(37467), -- The Walk of Shame
 							q(37468), -- Into the Academy
@@ -1770,7 +1771,9 @@ _.Zones =
 							q(38407), -- Bottled Up
 							q(37496), -- Infiltrating Shipwreck Arena
 							q(37507), -- Boss Whalebelly's in Charge
-							q(37542), -- No Time for Tryouts
+							q(37542, { -- No Time for Tryouts
+								i(132954), -- Polished Dookin Ring
+							}),
 							q(37528), -- Let Sleeping Giants Lie
 							q(37510), -- Sternfathom's Champion
 							q(37536, { -- Morale Booster

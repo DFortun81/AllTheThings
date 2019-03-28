@@ -34,6 +34,7 @@ _.WorldEvents =
 					i(139165), -- Bloodseeker's Bulwark
 					i(139166), -- Soulstealer's Barrier
 					i(146766),  -- Nethercaller Cloak
+					i(146767),	-- Portal Keeper's Seal
 					i(146786),	-- Vileweave Cap
 					i(146791),	-- Vileweave Amice
 					i(146789),	-- Vileweave Robes

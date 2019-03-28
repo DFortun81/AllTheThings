@@ -59,6 +59,35 @@ _.ExpansionFeatures =
 							},
 						},
 					},
+					{	-- A Good Dust Up
+						["missionID"] = 1505,
+						["groups"] = {
+							i(143328, { -- Battle Report
+								q(45172, { -- To Battle!
+									i(143606, { -- Satchel of Battlefield Spoils (THIS IS TEMPORARY - Oxlotus)
+										i(135682, { -- Vindictive Gladiator's Ring
+											["races"] = ALLIANCE_ONLY,
+										}),
+										i(135686, { -- Vindictive Gladiator's Band
+											["races"] = ALLIANCE_ONLY,
+										}),
+										i(135690, { -- Vindictive Gladiator's Signet
+											["races"] = ALLIANCE_ONLY,
+										}),
+										i(135795, { -- Vindictive Gladiator's Ring
+											["races"] = HORDE_ONLY,
+										}),
+										i(135799, { -- Vindictive Gladiator's Band
+											["races"] = HORDE_ONLY,
+										}),
+										i(135803, { -- Vindictive Gladiator's Signet
+											["races"] = HORDE_ONLY,
+										}),
+									}),
+								}),
+							}),
+						},
+					},
 					{	-- Argussian Reach Insignia
 						["itemID"] = 152960,	-- Argussian Reach Insignia
 						["g"] = {

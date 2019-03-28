@@ -249,7 +249,11 @@ _.ExpansionFeatures =
 						q(45997),	-- An Urgent Warning
 						qa( 42433),	-- Ancient Magic
 						q(42126),	-- Archmage Omniara
-						q(42956),	-- Ari's Package
+						q(42956, {	-- Ari's Package
+							["groups"] = {
+								i(141880), -- Ari's Wooden Ring
+							},
+						}),
 						q(46000),	-- Arming Dalaran
 						qa( 45844),	-- Avocation of Antonidas
 						q(44766),	-- Backup Plan

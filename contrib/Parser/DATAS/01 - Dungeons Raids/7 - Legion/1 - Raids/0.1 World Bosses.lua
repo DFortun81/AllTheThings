@@ -38,6 +38,7 @@ _.Instances = { tier(7, {	-- Legion
 						["achievementID"] = 11786,	-- Terrors of the Shore [Achievement]
 						["criteriaID"] = 4,	-- 	Apocron slain [Criteria]
 					},
+					i(147766),	-- Band of Dark Millennia
 					i(147734),	-- Spaulders of Forgotten Worlds
 					i(147743),	-- Harness of Devouring Flame
 					i(147730),	-- Ashen Worldscorcher Gloves

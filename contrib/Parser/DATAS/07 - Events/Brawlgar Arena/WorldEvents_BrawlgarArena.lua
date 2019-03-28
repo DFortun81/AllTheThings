@@ -33,6 +33,9 @@ _.WorldEvents =
 						i(98091),	-- Last Seasons Shirt
 						i(98092),	-- Digmaster's Bodysleeve
 						i(98093),	-- Sightless Mantle
+						i(144392, { -- Pugilist's Powerful Punching Ring
+							["races"] = HORDE_ONLY,
+						}),
 						i(167812),  -- Brawlers Guild Tabard
 						{ -- Ensemble: Brawlers Garb
 							["groups"] = {

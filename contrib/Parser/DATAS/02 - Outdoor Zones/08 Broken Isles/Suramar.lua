@@ -1948,6 +1948,7 @@ _.Zones =
 						i(121227, {	-- Jandvik Sabatons
 							["bonusID"] = 1812,
 						}),
+						i(121801), -- Coral-Edge Band
 					},
 					["crs"] = {
 						112705,	-- Achronos

@@ -105,6 +105,21 @@ _.WorldDrops =
 					i(147426),	-- Treads of Panicked Escape
 					i(147428),	-- Spiked Terrorwake Greatboots
 				}),
+				n(-385, { -- Finger
+					i(139103), -- An'she's Band
+					i(141581), -- Demar's Band of Amore
+					i(139065), -- Dreamwalker's Band
+					i(141582), -- Fran's Intractable Loop
+					i(134323), -- Glinting Quartz Ring
+					i(140024), -- Ley-Charged Band
+					i(134245), -- Nazjatar Manapearl Ring
+					i(121288), -- Nightmare Loop
+					i(134157), -- Roggstone Signet
+					i(134191), -- Rough-Hammered Silver Ring
+					i(141583), -- Sameed's Vision Ring
+					i(141580), -- Vastly Oversized Ring
+					i(136737), -- Warden Band
+				}),
 			}),
 		},
 		["tierID"] = 7

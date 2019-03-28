@@ -1710,8 +1710,12 @@ _.Zones =
 									i(152753), -- Praetorium Guard's Sabatons
 								}),
 								i(153214, { -- Relinquished Ring
+									i(150989),	-- Foul-Sadist's Seal
+									i(152779),	-- Jed'hin Aspirant's Ring
 									i(134367),	-- Legionnaire's Band
+									i(146858),	-- Malefic Inquisitor's Ring
 									i(134279),	-- Nightborne Signet Ring
+									i(147020),	-- Scaled Band of Servitude
 									i(121799),	-- Tel'anor Magister's Ring
 								}),
 								i(153216, { -- Relinquished Trinket
