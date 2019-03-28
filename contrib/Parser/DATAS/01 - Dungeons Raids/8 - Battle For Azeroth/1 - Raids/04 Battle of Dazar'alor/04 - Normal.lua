@@ -47,8 +47,11 @@ _.Instances =
 								},
 							},
 							{	-- Champion of the Light
-								["encounterID"] = 2344,
-								["crs"] = { 144683 },	-- Ra'wani Kanae
+								["encounterID"] = 2344,	-- 2333 Horde
+								["crs"] = {
+									144683,	-- Ra'wani Kanae (A)
+									144683,	-- Frida Ironbellows (H)
+								},
 								["g"] = {
 									{	-- Dawnbreaker
 										["itemID"] = 165586,	-- Dawnbreaker
@@ -92,10 +95,12 @@ _.Instances =
 								},
 							},
 							{	-- Jadefire Masters
-								["encounterID"] = 2323,
+								["encounterID"] = 2323,	-- 2341 Horde
 								["crs"] = {
-									144692,	-- Anathos Firecaller
-									144691,	-- Ma'ra Grimfang
+									144692,	-- Anathos Firecaller (A)
+									144691,	-- Ma'ra Grimfang (A)
+									144693,	-- Manceroy Flamefist (H)
+									148270,	-- Mestrah <The Illuminated> (H)
 								},
 								["g"] = {
 									{	-- Phoenixfire Staff
@@ -107,17 +112,23 @@ _.Instances =
 									{	-- Helm of Tempered Jade
 										["itemID"] = 165548,	-- Helm of Tempered Jade
 									},
-									{	-- Ma'ra's Boneblade Mantle
+									{	-- Ma'ra's Boneblade Mantle (Alliance only)
 										["itemID"] = 165777,	-- Ma'ra's Boneblade Mantle
+									},
+									{	-- Mestrah's Singing Spaulders (Horde only)
+										["itemID"] = 165516,	-- Mestrah's Singing Spaulders
 									},
 									{	-- Mistfire Raiment
 										["itemID"] = 165540,	-- Mistfire Raiment
 									},
-									{	-- Firecaller's Handwraps
+									{	-- Firecaller's Handwraps (Alliance only)
 										["itemID"] = 165764,	-- Firecaller's Handwraps
 									},
 									{	-- Grips of Harmonious Spirits
 										["itemID"] = 165531,	-- Grips of Harmonious Spirits
+									},
+									{    -- Manceroy's Flamefists (Horde only)
+										["itemID"] = 165503,    -- Manceroy's Flamefists
 									},
 									{	-- Embersear Waistguard
 										["itemID"] = 165552,	-- Embersear Waistguard
@@ -134,8 +145,11 @@ _.Instances =
 								},
 							},
 							{	-- Grong, the Revenant
-								["encounterID"] = 2340,
-								["crs"] = { 144638 },	-- Grong the Revenant
+								["encounterID"] = 2340,	-- 2325 Horde
+								["crs"] = {
+									144638,	-- Grong the Revenant (A)
+									148117,	-- Grong the Revenant (H)
+								},
 								["g"] = {
 									{	-- Hornridged Crusher
 										["itemID"] = 165589,	-- Hornridged Crusher
@@ -183,6 +197,11 @@ _.Instances =
 							},
 							{	-- Opulence
 								["encounterID"] = 2342,
+								["crs"] = {
+									145261,	-- Opulence
+									145274,	-- Yalat's Bulwark
+									145273,	-- The Hand of In'zashi
+								},
 								["g"] = {
 									{	-- Bloodtooth, the Soulfeaster
 										["itemID"] = 165591,	-- Bloodtooth, the Soulfeaster
@@ -230,6 +249,12 @@ _.Instances =
 							},
 							{	-- Conclave of the Chosen
 								["encounterID"] = 2330,
+								["crs"] = {
+									144941,	-- Akunda's Aspect
+									144767,	-- Gonk's Aspect
+									144963,	-- Kimbul's Aspect
+									144747,	-- Pa'ku's Aspect
+								},
 								["g"] = {
 									{	-- Enchanted Talon of Pa'ku
 										["itemID"] = 165846,	-- Enchanted Talon of Pa'ku
