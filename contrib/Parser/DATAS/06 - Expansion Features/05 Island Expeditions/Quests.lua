@@ -9,6 +9,11 @@ _.ExpansionFeatures =
 		["groups"] = {
 			n(-17, {	-- Quests
 				["groups"] = {
+					{	-- Ancient Crypt Key [Both]
+						["itemID"] = 163470,	-- Ancient Crypt Key
+						--["questID"] = 53160,	-- Ancient Crypt Key
+						["repeatable"] = true,
+					},
 					{	-- Azeroth's Tear [Both]
 						["itemID"] = 163217,	-- Azeroth's Tear
 						--["questID"] = 53112,	-- Azeroth's Tear
