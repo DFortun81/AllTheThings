@@ -960,42 +960,46 @@ _.Zones =
 					},
 				}),
 				n(-2, {		-- Vendors
-					na(27760, {	-- "Grizzly" D. Adams <Venture Coin Vendor>
-						["description"] = "Only available while your faction controls the area. If no NPCs are available, ground your mount and flag for PVP. They will respawn once the control % reaches 100%. Each item costs 1 Mark of Honor. Venture Coins no longer exist in the game.",
-						["itemID"] = 137642,	-- Mark of Honor
-						["coord"] = { 13.8, 86.4 },
-						["g"] = {
-							i(38356),	-- Venture Battle Wand
-							i(38354),	-- Oil-Stained Tarp
-							i(38355),	-- Thick Goblin Back Protector
-							i(38353),	-- Venture Bay Buccaneer's Cape
-							i(38358),	-- Arcane Revitalizer
-							i(38359),	-- Goblin Repetition Reducer
-						},
-					}),
-					nh(26868, {	-- Provisioner Lorkran <General Goods>
-						["coord"] = { 22.6, 66.0 },
-						["g"] = {
-							i(21219),	-- Recipe: Sagefish Delight
-							i(21099),	-- Recipe: Smoked Sagefish
-						},
-					}),
-					nh(27730, {	-- Purkom <Venture Coin Vendor>
-						["description"] = "Only available while your faction controls the area. If no NPCs are available, ground your mount and flag for PVP. They will respawn once the control % reaches 100%. Each item costs 1 Mark of Honor. Venture Coins no longer exist in the game.",
-						["itemID"] = 137642,	-- Mark of Honor
-						["coord"] = { 13.8, 86.2 },
-						["g"] = {
-							i(38356),	-- Venture Battle Wand
-							i(38354),	-- Oil-Stained Tarp
-							i(38355),	-- Thick Goblin Back Protector
-							i(38353),	-- Venture Bay Buccaneer's Cape
-							i(38358),	-- Arcane Revitalizer
-							i(38359),	-- Goblin Repetition Reducer
-						},
-					}),
-					desc(n(91632, {	-- Remington Brode <Traveling Lumberjack>
-						i(122236)
-					}), "Patrols all over Grizzly Hills. When you find him select\n \"<Breathe deeply.>\",\n \"I'm looking for a song...\",\n \"A song about the wilderness.\",\n and \"Yes!\""),
+					["description"] = "The PVP vendors in this zone (Grizzly D. Adams and Purkom) are only visible while your faction controls Venture Bay.  All the items they sell now cost 1 Mark of Honor; the old currency, Venture Coins, were removed from the game.",
+					["g"] = {
+						na(27760, {	-- "Grizzly" D. Adams <Venture Coin Vendor>
+							["itemID"] = 137642,	-- Mark of Honor
+							["coord"] = { 13.8, 86.4 },
+							["g"] = {
+								i(38356),	-- Venture Battle Wand
+								i(38354),	-- Oil-Stained Tarp
+								i(38355),	-- Thick Goblin Back Protector
+								i(38353),	-- Venture Bay Buccaneer's Cape
+								i(38358),	-- Arcane Revitalizer
+								i(38359),	-- Goblin Repetition Reducer
+							},
+						}),
+						nh(26868, {	-- Provisioner Lorkran <General Goods>
+							["coord"] = { 22.6, 66.0 },
+							["g"] = {
+								i(21219),	-- Recipe: Sagefish Delight
+								i(21099),	-- Recipe: Smoked Sagefish
+							},
+						}),
+						nh(27730, {	-- Purkom <Venture Coin Vendor>
+							["itemID"] = 137642,	-- Mark of Honor
+							["coord"] = { 13.8, 86.2 },
+							["g"] = {
+								i(38356),	-- Venture Battle Wand
+								i(38354),	-- Oil-Stained Tarp
+								i(38355),	-- Thick Goblin Back Protector
+								i(38353),	-- Venture Bay Buccaneer's Cape
+								i(38358),	-- Arcane Revitalizer
+								i(38359),	-- Goblin Repetition Reducer
+							},
+						}),
+						n(91632, {	-- Remington Brode <Traveling Lumberjack>
+							["description"] = "Patrols all over Grizzly Hills. When you find him select\n \"<Breathe deeply.>\",\n \"I'm looking for a song...\",\n \"A song about the wilderness.\",\n and \"Yes!\"",
+							["g"] = {
+								i(122236)
+							},
+						}),
+					},
 				}),
 				n(0, { 		-- Zone Drop
 					["groups"] = {

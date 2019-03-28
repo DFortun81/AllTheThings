@@ -138,6 +138,95 @@ _.Zones =
 									["questID"] = 51806,	-- Pest Remover Mk. II
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								},
+							--	It looks like there's a "Sabertron" WQ for each color of Sabertron, so every time a WQ is up we'll need to determine which criteria to attach to it.  Only one confirmed so far.  This way the WQs will show the correct criteria reward in /attwq, and it will reduce unnecessary duplication of information.
+								q(51978, {	-- Sabertron (unknown criteria)
+									["g"] = {
+										{	-- Red Sabertron
+											["achievementID"] = 12936,	-- Sabertron Assemble
+											["criteriaID"] = 1,	-- Red Sabertron
+										},
+										{	-- Yellow Sabertron
+											["achievementID"] = 12936,	-- Sabertron Assemble
+											["criteriaID"] = 2,	-- Yellow Sabertron
+										},
+										{	-- Orange Sabertron
+											["achievementID"] = 12936,	-- Sabertron Assemble
+											["criteriaID"] = 3,	--  Sabertron
+										},
+										{	-- Green Sabertron
+											["achievementID"] = 12936,	-- Sabertron Assemble
+											["criteriaID"] = 4,	--  Sabertron
+										},
+									},
+								}),
+								q(51947, {	-- Sabertron (unknown criteria)
+									["g"] = {
+										{	-- Red Sabertron
+											["achievementID"] = 12936,	-- Sabertron Assemble
+											["criteriaID"] = 1,	-- Red Sabertron
+										},
+										{	-- Yellow Sabertron
+											["achievementID"] = 12936,	-- Sabertron Assemble
+											["criteriaID"] = 2,	-- Yellow Sabertron
+										},
+										{	-- Orange Sabertron
+											["achievementID"] = 12936,	-- Sabertron Assemble
+											["criteriaID"] = 3,	--  Sabertron
+										},
+										{	-- Green Sabertron
+											["achievementID"] = 12936,	-- Sabertron Assemble
+											["criteriaID"] = 4,	--  Sabertron
+										},
+									},
+								}),
+								q(51976, {	-- Sabertron (unknown criteria)
+									["g"] = {
+										{	-- Red Sabertron
+											["achievementID"] = 12936,	-- Sabertron Assemble
+											["criteriaID"] = 1,	-- Red Sabertron
+										},
+										{	-- Yellow Sabertron
+											["achievementID"] = 12936,	-- Sabertron Assemble
+											["criteriaID"] = 2,	-- Yellow Sabertron
+										},
+										{	-- Orange Sabertron
+											["achievementID"] = 12936,	-- Sabertron Assemble
+											["criteriaID"] = 3,	--  Sabertron
+										},
+										{	-- Green Sabertron
+											["achievementID"] = 12936,	-- Sabertron Assemble
+											["criteriaID"] = 4,	--  Sabertron
+										},
+									},
+								}),
+								q(51977, {	-- Sabertron (unknown criteria)
+									["g"] = {
+										{	-- Red Sabertron
+											["achievementID"] = 12936,	-- Sabertron Assemble
+											["criteriaID"] = 1,	-- Red Sabertron
+										},
+										{	-- Yellow Sabertron
+											["achievementID"] = 12936,	-- Sabertron Assemble
+											["criteriaID"] = 2,	-- Yellow Sabertron
+										},
+										{	-- Orange Sabertron
+											["achievementID"] = 12936,	-- Sabertron Assemble
+											["criteriaID"] = 3,	--  Sabertron
+										},
+										{	-- Green Sabertron
+											["achievementID"] = 12936,	-- Sabertron Assemble
+											["criteriaID"] = 4,	--  Sabertron
+										},
+									},
+								}),
+								q(51974, {	-- Sabertron (Copper, criteria 5)
+									["g"] = {
+										{	-- Copper Sabertron
+											["achievementID"] = 12936,	-- Sabertron Assemble
+											["criteriaID"] = 5,	--  Sabertron
+										},
+									},
+								}),
 								q(52889, {	-- Sandscour
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
