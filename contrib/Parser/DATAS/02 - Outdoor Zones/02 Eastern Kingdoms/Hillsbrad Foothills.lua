@@ -1314,36 +1314,35 @@ _.Zones =
 						i(4817),	-- Blessed Claymore
 					}),
 					nh(13219, {	-- Jorek Ironside
+						["itemID"] = 137642,	-- Mark of Honor
 						["g"] = {
-							i(137642, {	-- Mark of Honor
-								i(19029),	-- Horn of the Frostwolf Howler Mount
-								i(19031),	-- Frostwolf Battle Tabard
-								i(19046),	-- Frostwolf Battle Standard
-								i(19103),	-- Frostbite
-								i(19099),	-- Glacial Blade
-								i(19312),	-- Lei of the Lifegiver
-								i(19321),	-- The Immovable Object
-								i(19324),	-- The Lobotomizer
-								i(19323),	-- The Unstoppable Force
-								i(19315),	-- Therazane's Torch
-								i(19308),	-- Tome of Arcane Domination
-								i(19311),	-- Tome of Fiery Arcana
-								i(19309),	-- Tome of Shadow Force
-								i(19310),	-- Tome of the Ice Lord
-								i(19101),	-- Whiteout Staff
-								i(19096),	-- Frostwolf Advisor's Pendant
-								i(19095),	-- Frostwolf Legionnaire's Pendant
-								i(19085),	-- Frostwolf Advisor's Cloak
-								i(19083),	-- Frostwolf Legionnaire's Cloak
-								i(19090),	-- Frostwolf Cloth Belt
-								i(19089),	-- Frostwolf Leather Belt
-								i(19088),	-- Frostwolf Mail Belt
-								i(19087),	-- Frostwolf Plate Belt
-								i(19325),	-- Don Julio's Band
-								i(21563),	-- Don Rodrigo's Band
-								un(2, i(19320)),	-- Gnoll Skin Bandolier
-								un(2, i(19319)),	-- Harpy Hide Quiver
-							}),
+							i(19029),	-- Horn of the Frostwolf Howler Mount
+							i(19031),	-- Frostwolf Battle Tabard
+							i(19046),	-- Frostwolf Battle Standard
+							i(19103),	-- Frostbite
+							i(19099),	-- Glacial Blade
+							i(19312),	-- Lei of the Lifegiver
+							i(19321),	-- The Immovable Object
+							i(19324),	-- The Lobotomizer
+							i(19323),	-- The Unstoppable Force
+							i(19315),	-- Therazane's Torch
+							i(19308),	-- Tome of Arcane Domination
+							i(19311),	-- Tome of Fiery Arcana
+							i(19309),	-- Tome of Shadow Force
+							i(19310),	-- Tome of the Ice Lord
+							i(19101),	-- Whiteout Staff
+							i(19096),	-- Frostwolf Advisor's Pendant
+							i(19095),	-- Frostwolf Legionnaire's Pendant
+							i(19085),	-- Frostwolf Advisor's Cloak
+							i(19083),	-- Frostwolf Legionnaire's Cloak
+							i(19090),	-- Frostwolf Cloth Belt
+							i(19089),	-- Frostwolf Leather Belt
+							i(19088),	-- Frostwolf Mail Belt
+							i(19087),	-- Frostwolf Plate Belt
+							i(19325),	-- Don Julio's Band
+							i(21563),	-- Don Rodrigo's Band
+							un(2, i(19320)),	-- Gnoll Skin Bandolier
+							un(2, i(19319)),	-- Harpy Hide Quiver
 						},
 					}),
 					n(3536,   {	-- Kris Legace <Freewheeling Tradeswoman>
@@ -1380,35 +1379,34 @@ _.Zones =
 						},
 					}),
 					na(13217, {	-- Thanthaldis Snowgleam <Stormpike Supply Officer>
+						["itemID"] = 137642,	-- Mark of Honor
 						["crs"] = { 13216 },	-- Gaelden Hammersmith <Stormpike Supply Officer>
 						["g"] = {
-							i(137642, {	-- Mark of Honor
-								i(19030),	-- Stormpike Battle Charger Mount
-								i(19032),	-- Stormpike Battle Tabard
-								i(19045),	-- Stormpike Battle Standard
-								i(19102),	-- Crackling Staff
-								i(19100),	-- Electrified Dagger
-								i(19312),	-- Lei of the Lifegiver
-								i(19104),	-- Stormstrike Hammer
-								i(19321),	-- The Immovable Object
-								i(19324),	-- The Lobotomizer
-								i(19323),	-- The Unstoppable Force
-								i(19315),	-- Therazane's Torch
-								i(19308),	-- Tome of Arcane Domination
-								i(19311),	-- Tome of Fiery Arcana
-								i(19309),	-- Tome of Shadow Force
-								i(19310),	-- Tome of the Ice Lord
-								i(19098),	-- Stormpike Sage's Pendant
-								i(19097),	-- Stormpike Soldier's Pendant
-								i(19086),	-- Stormpike Sage's Cloak
-								i(19084),	-- Stormpike Soldier's Cloak
-								i(19094),	-- Stormpike Cloth Girdle
-								i(19093),	-- Stormpike Leather Girdle
-								i(19092),	-- Stormpike Mail Girgle
-								i(19091),	-- Stormpike Plate Girdle
-								i(19325),	-- Don Julio's Band
-								i(21563),	-- Don Rodrigo's Band
-							}),
+							i(19030),	-- Stormpike Battle Charger Mount
+							i(19032),	-- Stormpike Battle Tabard
+							i(19045),	-- Stormpike Battle Standard
+							i(19102),	-- Crackling Staff
+							i(19100),	-- Electrified Dagger
+							i(19312),	-- Lei of the Lifegiver
+							i(19104),	-- Stormstrike Hammer
+							i(19321),	-- The Immovable Object
+							i(19324),	-- The Lobotomizer
+							i(19323),	-- The Unstoppable Force
+							i(19315),	-- Therazane's Torch
+							i(19308),	-- Tome of Arcane Domination
+							i(19311),	-- Tome of Fiery Arcana
+							i(19309),	-- Tome of Shadow Force
+							i(19310),	-- Tome of the Ice Lord
+							i(19098),	-- Stormpike Sage's Pendant
+							i(19097),	-- Stormpike Soldier's Pendant
+							i(19086),	-- Stormpike Sage's Cloak
+							i(19084),	-- Stormpike Soldier's Cloak
+							i(19094),	-- Stormpike Cloth Girdle
+							i(19093),	-- Stormpike Leather Girdle
+							i(19092),	-- Stormpike Mail Girgle
+							i(19091),	-- Stormpike Plate Girdle
+							i(19325),	-- Don Julio's Band
+							i(21563),	-- Don Rodrigo's Band
 						},
 					}),
 					n(6777,   {	-- Zan Shivsproket <Speciality Engineer>

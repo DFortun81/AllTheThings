@@ -3512,442 +3512,440 @@ _.Zones =
 					}),
 					n(-2,     {	-- Vendors
 						n(30885, {	-- Blazik Fireclaw <Hateful Gladiator>
+							["itemID"] = 137642,	-- Mark of Honor
 							["coord"] = { 60.4, 55.2, 502 },
 							["g"] = {
-								i(137642, {	-- Mark of Honor
-									i(146646),	-- Arsenal: Hateful Gladiator's Weapons
-									i(146565, {	-- Ensemble: Hateful Gladiator's Satin Armor		
-										i(41913),	-- Hateful Gladiator's Satin Hood
-										i(41931),	-- Hateful Gladiator's Satin Mantle
-										i(41919),	-- Hateful Gladiator's Satin Robe
-										i(41878),	-- Hateful Gladiator's Cuffs of Salvation
-										i(41938),	-- Hateful Gladiator's Satin Gloves
-										i(41877),	-- Hateful Gladiator's Cord of Salvation
-										i(41925),	-- Hateful Gladiator's Satin Leggings
-										i(41879),	-- Hateful Gladiator's Satin 
-									}),		
-									i(146567, {	-- Ensemble: Hateful Gladiator's Silk Armor		
-										i(41944),	-- Hateful Gladiator's Silk Cowl
-										i(41963),	-- Hateful Gladiator's Silk Amice
-										i(41950),	-- Hateful Gladiator's Silk Raiment
-										i(41907),	-- Hateful Gladiator's Cuffs of Dominance
-										i(41969),	-- Hateful Gladiator's Silk Handguards
-										i(41896),	-- Hateful Gladiator's Cord of Dominance
-										i(41957),	-- Hateful Gladiator's Silk Trousers
-										i(41901),	-- Hateful Gladiator's Slippers of Dominance
-									}),		
-									i(146561, {	-- Ensemble: Hateful Gladiator's Felweave Armor		
-										i(41991),	-- Hateful Gladiator's Felweave Cowl
-										i(42009),	-- Hateful Gladiator's Felweave Amice
-										i(42001),	-- Hateful Gladiator's Felweave Raiment
-										i(147586),	-- Hateful Gladiator's Cuffs of Ascendancy
-										i(42015),	-- Hateful Gladiator's Felweave Handguards
-										i(147587),	-- Hateful Gladiator's Cord of Ascendancy
-										i(42003),	-- Hateful Gladiator's Felweave Trousers
-										i(147588),	-- Hateful Gladiator's Slippers of Ascendancy
-									}),		
-									i(146559, {	-- Ensemble: Hateful Gladiator's Dragonhide Armor		
-										i(41676),	-- Hateful Gladiator's Dragonhide Helm
-										i(41713),	-- Hateful Gladiator's Dragonhide Spaulders
-										i(41659),	-- Hateful Gladiator's Dragonhide Robes
-										i(41332),	-- Hateful Gladiator's Wristguards of Triumph
-										i(41771),	-- Hateful Gladiator's Dragonhide Gloves
-										i(41330),	-- Hateful Gladiator's Waistguard of Triumph
-										i(41665),	-- Hateful Gladiator's Dragonhide Legguards
-										i(41633),	-- Hateful Gladiator's Sabatons of Triumph
-									}),		
-									i(146562, {	-- Ensemble: Hateful Gladiator's Leather Armor		
-										i(41670),	-- Hateful Gladiator's Leather Helm
-										i(41681),	-- Hateful Gladiator's Leather Spaulders
-										i(41648),	-- Hateful Gladiator's Leather Tunic
-										i(41830),	-- Hateful Gladiator's Armwraps of Triumph
-										i(41765),	-- Hateful Gladiator's Leather Gloves
-										i(41827),	-- Hateful Gladiator's Belt of Triumph
-										i(41653),	-- Hateful Gladiator's Leather Legguards
-										i(41828),	-- Hateful Gladiator's Boots of Triumph
-									}),		
-									i(146558, {	-- Ensemble: Hateful Gladiator's Chain Armor		
-										i(41155),	-- Hateful Gladiator's Chain Helm
-										i(41215),	-- Hateful Gladiator's Chain Spaulders
-										i(41085),	-- Hateful Gladiator's Chain Armor
-										i(41223),	-- Hateful Gladiator's Wristguards of Triumph
-										i(41141),	-- Hateful Gladiator's Chain Gauntlets
-										i(41233),	-- Hateful Gladiator's Waistguard of Triumph
-										i(41203),	-- Hateful Gladiator's Chain Leggings
-										i(41228),	-- Hateful Gladiator's Sabatons of Triumph
-									}),		
-									i(146564, {	-- Ensemble: Hateful Gladiator's Ringmail Armor		
-										i(41011),	-- Hateful Gladiator's Ringmail Helm
-										i(41036),	-- Hateful Gladiator's Ringmail Spaulders
-										i(40988),	-- Hateful Gladiator's Ringmail Armor
-										i(41047),	-- Hateful Gladiator's Wristguards of Dominance
-										i(40999),	-- Hateful Gladiator's Ringmail Gauntlets
-										i(41050),	-- Hateful Gladiator's Waistguard of Domincance
-										i(41025),	-- Hateful Gladiator's Ringmail Leggings
-										i(41049),	-- Hateful Gladiator's Sabatons of Dominance
-									}),		
-									i(146566, {	-- Ensemble: Hateful Gladiator's Scaled Armor		
-										i(40821),	-- Hateful Gladiator's Scaled Helm
-										i(40861),	-- Hateful Gladiator's Scaled Shoulders
-										i(40782),	-- Hateful Gladiator's Scaled Chestpiece
-										i(40972),	-- Hateful Gladiator's Bracers of Salvation
-										i(40802),	-- Hateful Gladiator's Scaled Gauntlets
-										i(40966),	-- Hateful Gladiator's Girdle of Salvation
-										i(40842),	-- Hateful Gladiator's Scaled Legguards
-										i(40973),	-- Titan-Forged Greaves of Salvation
-									}),		
-									i(146563, {	-- Ensemble: Hateful Gladiator's Plate Armor		
-										i(40819),	-- Hateful Gladiator's Plate Helm
-										i(40859),	-- Hateful Gladiator's Plate Shoulders
-										i(40783),	-- Hateful Gladiator's Plate Chestpiece
-										i(40887),	-- Hateful Gladiator's Bracers of Triumph
-										i(40801),	-- Hateful Gladiator's Plate 
-										i(40877),	-- Hateful Gladiator's Girdle of Triumph
-										i(40840),	-- Hateful Gladiator's Plate 
-										i(40878),	-- Hateful Gladiator's Greaves of Triumph
-									}),		
-									i(146560, {	-- Ensemble: Hateful Gladiator's Dreadplate Armor		
-										i(40820),	-- Hateful Gladiator's Dreadplate Helm
-										i(40860),	-- Hateful Gladiator's Dreadplate Shoulders
-										i(40781),	-- Hateful Gladiator's Dreadplate Chestpiece
-										i(147583),	-- Hateful Gladiator's Bracers of Victory
-										i(40803),	-- Hateful Gladiator's Dreadplate 
-										i(147584),	-- Hateful Gladiator's Girdle of Victory
-										i(40841),	-- Hateful Gladiator's Dreadplate 
-										i(147585),	-- Hateful Gladiator's Greaves of Victory
-									}),	
-									i(42563),	-- Hateful Gladiator's Barrier
-									i(42512),	-- Hateful Gladiator's Baton of Light
-									i(42359),	-- Hateful Gladiator's Battle Staff
-									i(42279),	-- Hateful Gladiator's Bonecracker
-									i(42321),	-- Hateful Gladiator's Bonegrinder
-									i(42231),	-- Hateful Gladiator's Chopper
-									i(42207),	-- Hateful Gladiator's Cleaver
-									i(42316),	-- Hateful Gladiator's Decapitator
-									i(42524),	-- Hateful Gladiator's Endgame
-									i(42383),	-- Hateful Gladiator's Energy Staff
-									i(42269),	-- Hateful Gladiator's Fleshslicer
-									i(44418),	-- Hateful Gladiator's Focus Staff
-									i(42351),	-- Hateful Gladiator's Gavel
-									i(42331),	-- Hateful Gladiator's Greatsword
-									i(42536),	-- Hateful Gladiator's Grimoire
-									i(42226),	-- Hateful Gladiator's Hacker
-									i(42494),	-- Hateful Gladiator's Heavy Crossbow
-									i(42489),	-- Hateful Gladiator's Longbow
-									i(42254),	-- Hateful Gladiator's Mutilator
-									i(42518),	-- Hateful Gladiator's Piercing Touch
-									i(42326),	-- Hateful Gladiator's Pike
-									i(42274),	-- Hateful Gladiator's Pummeler
-									i(42289),	-- Hateful Gladiator's Quickblade
-									i(42569),	-- Hateful Gladiator's Redoubt
-									i(42530),	-- Hateful Gladiator's Reprieve
-									i(42484),	-- Hateful Gladiator's Rifle
-									i(42259),	-- Hateful Gladiator's Ripper
-									i(42241),	-- Hateful Gladiator's Shanker
-									i(42558),	-- Hateful Gladiator's Shield Wall
-									i(42247),	-- Hateful Gladiator's Shiv
-									i(42264),	-- Hateful Gladiator's Slasher
-									i(42284),	-- Hateful Gladiator's Slicer
-									i(42345),	-- Hateful Gladiator's Spellblade
-									i(42389),	-- Hateful Gladiator's Staff
-									i(42501),	-- Hateful Gladiator's Touch of Defeat
-									i(44417),	-- Hateful Gladiator's War Staff
-									i(42236),	-- Hateful Gladiator's Waraxe	
-									i(41638),	-- Hateful Gladiator's Armwraps of Dominance
-									i(41332),	-- Hateful Gladiator's Armwraps of Salvation
-									i(41830),	-- Hateful Gladiator's Armwraps of Triumph
-									i(41628),	-- Hateful Gladiator's Belt of Dominance
-									i(41330),	-- Hateful Gladiator's Belt of Salvation
-									i(41827),	-- Hateful Gladiator's Belt of Triumph
-									i(41633),	-- Hateful Gladiator's Boots of Dominance
-									i(41331),	-- Hateful Gladiator's Boots of Salvation
-									i(41828),	-- Hateful Gladiator's Boots of Triumph
-									i(40972),	-- Hateful Gladiator's Bracers of Salvation
-									i(40887),	-- Hateful Gladiator's Bracers of Triumph
-									i(147583),	-- Hateful Gladiator's Bracers of Victory
-									i(41085),	-- Hateful Gladiator's Chain Armor
-									i(41141),	-- Hateful Gladiator's Chain Gauntlets
-									i(41155),	-- Hateful Gladiator's Chain Helm
-									i(41203),	-- Hateful Gladiator's Chain Leggings
-									i(41215),	-- Hateful Gladiator's Chain Spaulders
-									i(42057),	-- Hateful Gladiator's Cloak of Ascendancy
-									i(42059),	-- Hateful Gladiator's Cloak of Deliverance
-									i(42055),	-- Hateful Gladiator's Cloak of Dominance
-									i(42058),	-- Hateful Gladiator's Cloak of Salvation
-									i(42056),	-- Hateful Gladiator's Cloak of Subjugation
-									i(42060),	-- Hateful Gladiator's Cloak of Triumph
-									i(42061),	-- Hateful Gladiator's Cloak of Victory
-									i(147587),	-- Hateful Gladiator's Cord of Ascendancy
-									i(41896),	-- Hateful Gladiator's Cord of Dominance
-									i(41877),	-- Hateful Gladiator's Cord of Salvation
-									i(147586),	-- Hateful Gladiator's Cuffs of Ascendancy
-									i(41907),	-- Hateful Gladiator's Cuffs of Dominance
-									i(41878),	-- Hateful Gladiator's Cuffs of Salvation
-									i(41771),	-- Hateful Gladiator's Dragonhide Gloves
-									i(41676),	-- Hateful Gladiator's Dragonhide Helm
-									i(41665),	-- Hateful Gladiator's Dragonhide Legguards
-									i(41659),	-- Hateful Gladiator's Dragonhide Robes
-									i(41713),	-- Hateful Gladiator's Dragonhide Spaulders
-									i(40781),	-- Hateful Gladiator's Dreadplate Chestpiece
-									i(40803),	-- Hateful Gladiator's Dreadplate Gauntlets
-									i(40820),	-- Hateful Gladiator's Dreadplate Helm
-									i(40841),	-- Hateful Gladiator's Dreadplate Legguards
-									i(40860),	-- Hateful Gladiator's Dreadplate Shoulders
-									i(42009),	-- Hateful Gladiator's Felweave Amice
-									i(41991),	-- Hateful Gladiator's Felweave Cowl
-									i(42015),	-- Hateful Gladiator's Felweave Handguards
-									i(42001),	-- Hateful Gladiator's Felweave Raiment
-									i(42003),	-- Hateful Gladiator's Felweave Trousers
-									i(40966),	-- Hateful Gladiator's Girdle of Salvation
-									i(40877),	-- Hateful Gladiator's Girdle of Triumph
-									i(147584),	-- Hateful Gladiator's Girdle of Victory
-									i(40973),	-- Hateful Gladiator's Greaves of Salvation
-									i(40878),	-- Hateful Gladiator's Greaves of Triumph
-									i(147585),	-- Hateful Gladiator's Greaves of Victory
-									i(41284),	-- Hateful Gladiator's Kodohide Gloves
-									i(41319),	-- Hateful Gladiator's Kodohide Helm
-									i(41296),	-- Hateful Gladiator's Kodohide Legguards
-									i(41308),	-- Hateful Gladiator's Kodohide Robes
-									i(41273),	-- Hateful Gladiator's Kodohide Spaulders
-									i(41765),	-- Hateful Gladiator's Leather Gloves
-									i(41670),	-- Hateful Gladiator's Leather Helm
-									i(41653),	-- Hateful Gladiator's Leather Legguards
-									i(41681),	-- Hateful Gladiator's Leather Spaulders
-									i(41648),	-- Hateful Gladiator's Leather Tunic
-									i(41079),	-- Hateful Gladiator's Linked Armor
-									i(41135),	-- Hateful Gladiator's Linked Gauntlets
-									i(41149),	-- Hateful Gladiator's Linked Helm
-									i(41162),	-- Hateful Gladiator's Linked Leggings
-									i(41209),	-- Hateful Gladiator's Linked Spaulders
-									i(40989),	-- Hateful Gladiator's Mail Armor
-									i(41005),	-- Hateful Gladiator's Mail Gauntlets
-									i(41017),	-- Hateful Gladiator's Mail Helm
-									i(41031),	-- Hateful Gladiator's Mail Leggings
-									i(41042),	-- Hateful Gladiator's Mail Spaulders
-									i(41872),	-- Hateful Gladiator's Mooncloth Gloves
-									i(41852),	-- Hateful Gladiator's Mooncloth Hood
-									i(41862),	-- Hateful Gladiator's Mooncloth Leggings
-									i(41867),	-- Hateful Gladiator's Mooncloth Mantle
-									i(41857),	-- Hateful Gladiator's Mooncloth Robe
-									i(40904),	-- Hateful Gladiator's Ornamented Chestguard
-									i(40925),	-- Hateful Gladiator's Ornamented Gloves
-									i(40931),	-- Hateful Gladiator's Ornamented Headcover
-									i(40937),	-- Hateful Gladiator's Ornamented Legplates
-									i(40961),	-- Hateful Gladiator's Ornamented Spaulders
-									i(40783),	-- Hateful Gladiator's Plate Chestpiece
-									i(40801),	-- Hateful Gladiator's Plate Gauntlets
-									i(40819),	-- Hateful Gladiator's Plate Helm
-									i(40840),	-- Hateful Gladiator's Plate Legguards
-									i(40859),	-- Hateful Gladiator's Plate Shoulders
-									i(40988),	-- Hateful Gladiator's Ringmail Armor
-									i(40999),	-- Hateful Gladiator's Ringmail Gauntlets
-									i(41011),	-- Hateful Gladiator's Ringmail Helm
-									i(41025),	-- Hateful Gladiator's Ringmail Leggings
-									i(41036),	-- Hateful Gladiator's Ringmail Spaulders
-									i(41073),	-- Hateful Gladiator's Sabatons of Dominance
-									i(41049),	-- Hateful Gladiator's Sabatons of Salvation
-									i(41228),	-- Hateful Gladiator's Sabatons of Triumph
-									i(41938),	-- Hateful Gladiator's Satin Gloves
+								i(146646),	-- Arsenal: Hateful Gladiator's Weapons
+								i(146565, {	-- Ensemble: Hateful Gladiator's Satin Armor		
 									i(41913),	-- Hateful Gladiator's Satin Hood
-									i(41925),	-- Hateful Gladiator's Satin Leggings
 									i(41931),	-- Hateful Gladiator's Satin Mantle
 									i(41919),	-- Hateful Gladiator's Satin Robe
-									i(40782),	-- Hateful Gladiator's Scaled Chestpiece
-									i(40802),	-- Hateful Gladiator's Scaled Gauntlets
-									i(40821),	-- Hateful Gladiator's Scaled Helm
-									i(40842),	-- Hateful Gladiator's Scaled Legguards
-									i(40861),	-- Hateful Gladiator's Scaled Shoulders
-									i(41963),	-- Hateful Gladiator's Silk Amice
+									i(41878),	-- Hateful Gladiator's Cuffs of Salvation
+									i(41938),	-- Hateful Gladiator's Satin Gloves
+									i(41877),	-- Hateful Gladiator's Cord of Salvation
+									i(41925),	-- Hateful Gladiator's Satin Leggings
+									i(41879),	-- Hateful Gladiator's Satin 
+								}),		
+								i(146567, {	-- Ensemble: Hateful Gladiator's Silk Armor		
 									i(41944),	-- Hateful Gladiator's Silk Cowl
-									i(41969),	-- Hateful Gladiator's Silk Handguards
+									i(41963),	-- Hateful Gladiator's Silk Amice
 									i(41950),	-- Hateful Gladiator's Silk Raiment
+									i(41907),	-- Hateful Gladiator's Cuffs of Dominance
+									i(41969),	-- Hateful Gladiator's Silk Handguards
+									i(41896),	-- Hateful Gladiator's Cord of Dominance
 									i(41957),	-- Hateful Gladiator's Silk Trousers
-									i(147588),	-- Hateful Gladiator's Slippers of Ascendancy
 									i(41901),	-- Hateful Gladiator's Slippers of Dominance
-									i(41879),	-- Hateful Gladiator's Slippers of Salvation
-									i(41068),	-- Hateful Gladiator's Waistguard of Dominance
-									i(41050),	-- Hateful Gladiator's Waistguard of Salvation
-									i(41233),	-- Hateful Gladiator's Waistguard of Triumph
-									i(41063),	-- Hateful Gladiator's Wristguards of Dominance
-									i(41047),	-- Hateful Gladiator's Wristguards of Salvation
+								}),		
+								i(146561, {	-- Ensemble: Hateful Gladiator's Felweave Armor		
+									i(41991),	-- Hateful Gladiator's Felweave Cowl
+									i(42009),	-- Hateful Gladiator's Felweave Amice
+									i(42001),	-- Hateful Gladiator's Felweave Raiment
+									i(147586),	-- Hateful Gladiator's Cuffs of Ascendancy
+									i(42015),	-- Hateful Gladiator's Felweave Handguards
+									i(147587),	-- Hateful Gladiator's Cord of Ascendancy
+									i(42003),	-- Hateful Gladiator's Felweave Trousers
+									i(147588),	-- Hateful Gladiator's Slippers of Ascendancy
+								}),		
+								i(146559, {	-- Ensemble: Hateful Gladiator's Dragonhide Armor		
+									i(41676),	-- Hateful Gladiator's Dragonhide Helm
+									i(41713),	-- Hateful Gladiator's Dragonhide Spaulders
+									i(41659),	-- Hateful Gladiator's Dragonhide Robes
+									i(41332),	-- Hateful Gladiator's Wristguards of Triumph
+									i(41771),	-- Hateful Gladiator's Dragonhide Gloves
+									i(41330),	-- Hateful Gladiator's Waistguard of Triumph
+									i(41665),	-- Hateful Gladiator's Dragonhide Legguards
+									i(41633),	-- Hateful Gladiator's Sabatons of Triumph
+								}),		
+								i(146562, {	-- Ensemble: Hateful Gladiator's Leather Armor		
+									i(41670),	-- Hateful Gladiator's Leather Helm
+									i(41681),	-- Hateful Gladiator's Leather Spaulders
+									i(41648),	-- Hateful Gladiator's Leather Tunic
+									i(41830),	-- Hateful Gladiator's Armwraps of Triumph
+									i(41765),	-- Hateful Gladiator's Leather Gloves
+									i(41827),	-- Hateful Gladiator's Belt of Triumph
+									i(41653),	-- Hateful Gladiator's Leather Legguards
+									i(41828),	-- Hateful Gladiator's Boots of Triumph
+								}),		
+								i(146558, {	-- Ensemble: Hateful Gladiator's Chain Armor		
+									i(41155),	-- Hateful Gladiator's Chain Helm
+									i(41215),	-- Hateful Gladiator's Chain Spaulders
+									i(41085),	-- Hateful Gladiator's Chain Armor
 									i(41223),	-- Hateful Gladiator's Wristguards of Triumph
-									i(41291),	-- Hateful Gladiator's Wyrmhide Gloves
-									i(41325),	-- Hateful Gladiator's Wyrmhide Helm
-									i(41302),	-- Hateful Gladiator's Wyrmhide Legguards
-									i(41314),	-- Hateful Gladiator's Wyrmhide Robes
-									i(41279),	-- Hateful Gladiator's Wyrmhide Spaulders
-								}),
+									i(41141),	-- Hateful Gladiator's Chain Gauntlets
+									i(41233),	-- Hateful Gladiator's Waistguard of Triumph
+									i(41203),	-- Hateful Gladiator's Chain Leggings
+									i(41228),	-- Hateful Gladiator's Sabatons of Triumph
+								}),		
+								i(146564, {	-- Ensemble: Hateful Gladiator's Ringmail Armor		
+									i(41011),	-- Hateful Gladiator's Ringmail Helm
+									i(41036),	-- Hateful Gladiator's Ringmail Spaulders
+									i(40988),	-- Hateful Gladiator's Ringmail Armor
+									i(41047),	-- Hateful Gladiator's Wristguards of Dominance
+									i(40999),	-- Hateful Gladiator's Ringmail Gauntlets
+									i(41050),	-- Hateful Gladiator's Waistguard of Domincance
+									i(41025),	-- Hateful Gladiator's Ringmail Leggings
+									i(41049),	-- Hateful Gladiator's Sabatons of Dominance
+								}),		
+								i(146566, {	-- Ensemble: Hateful Gladiator's Scaled Armor		
+									i(40821),	-- Hateful Gladiator's Scaled Helm
+									i(40861),	-- Hateful Gladiator's Scaled Shoulders
+									i(40782),	-- Hateful Gladiator's Scaled Chestpiece
+									i(40972),	-- Hateful Gladiator's Bracers of Salvation
+									i(40802),	-- Hateful Gladiator's Scaled Gauntlets
+									i(40966),	-- Hateful Gladiator's Girdle of Salvation
+									i(40842),	-- Hateful Gladiator's Scaled Legguards
+									i(40973),	-- Titan-Forged Greaves of Salvation
+								}),		
+								i(146563, {	-- Ensemble: Hateful Gladiator's Plate Armor		
+									i(40819),	-- Hateful Gladiator's Plate Helm
+									i(40859),	-- Hateful Gladiator's Plate Shoulders
+									i(40783),	-- Hateful Gladiator's Plate Chestpiece
+									i(40887),	-- Hateful Gladiator's Bracers of Triumph
+									i(40801),	-- Hateful Gladiator's Plate 
+									i(40877),	-- Hateful Gladiator's Girdle of Triumph
+									i(40840),	-- Hateful Gladiator's Plate 
+									i(40878),	-- Hateful Gladiator's Greaves of Triumph
+								}),		
+								i(146560, {	-- Ensemble: Hateful Gladiator's Dreadplate Armor		
+									i(40820),	-- Hateful Gladiator's Dreadplate Helm
+									i(40860),	-- Hateful Gladiator's Dreadplate Shoulders
+									i(40781),	-- Hateful Gladiator's Dreadplate Chestpiece
+									i(147583),	-- Hateful Gladiator's Bracers of Victory
+									i(40803),	-- Hateful Gladiator's Dreadplate 
+									i(147584),	-- Hateful Gladiator's Girdle of Victory
+									i(40841),	-- Hateful Gladiator's Dreadplate 
+									i(147585),	-- Hateful Gladiator's Greaves of Victory
+								}),	
+								i(42563),	-- Hateful Gladiator's Barrier
+								i(42512),	-- Hateful Gladiator's Baton of Light
+								i(42359),	-- Hateful Gladiator's Battle Staff
+								i(42279),	-- Hateful Gladiator's Bonecracker
+								i(42321),	-- Hateful Gladiator's Bonegrinder
+								i(42231),	-- Hateful Gladiator's Chopper
+								i(42207),	-- Hateful Gladiator's Cleaver
+								i(42316),	-- Hateful Gladiator's Decapitator
+								i(42524),	-- Hateful Gladiator's Endgame
+								i(42383),	-- Hateful Gladiator's Energy Staff
+								i(42269),	-- Hateful Gladiator's Fleshslicer
+								i(44418),	-- Hateful Gladiator's Focus Staff
+								i(42351),	-- Hateful Gladiator's Gavel
+								i(42331),	-- Hateful Gladiator's Greatsword
+								i(42536),	-- Hateful Gladiator's Grimoire
+								i(42226),	-- Hateful Gladiator's Hacker
+								i(42494),	-- Hateful Gladiator's Heavy Crossbow
+								i(42489),	-- Hateful Gladiator's Longbow
+								i(42254),	-- Hateful Gladiator's Mutilator
+								i(42518),	-- Hateful Gladiator's Piercing Touch
+								i(42326),	-- Hateful Gladiator's Pike
+								i(42274),	-- Hateful Gladiator's Pummeler
+								i(42289),	-- Hateful Gladiator's Quickblade
+								i(42569),	-- Hateful Gladiator's Redoubt
+								i(42530),	-- Hateful Gladiator's Reprieve
+								i(42484),	-- Hateful Gladiator's Rifle
+								i(42259),	-- Hateful Gladiator's Ripper
+								i(42241),	-- Hateful Gladiator's Shanker
+								i(42558),	-- Hateful Gladiator's Shield Wall
+								i(42247),	-- Hateful Gladiator's Shiv
+								i(42264),	-- Hateful Gladiator's Slasher
+								i(42284),	-- Hateful Gladiator's Slicer
+								i(42345),	-- Hateful Gladiator's Spellblade
+								i(42389),	-- Hateful Gladiator's Staff
+								i(42501),	-- Hateful Gladiator's Touch of Defeat
+								i(44417),	-- Hateful Gladiator's War Staff
+								i(42236),	-- Hateful Gladiator's Waraxe	
+								i(41638),	-- Hateful Gladiator's Armwraps of Dominance
+								i(41332),	-- Hateful Gladiator's Armwraps of Salvation
+								i(41830),	-- Hateful Gladiator's Armwraps of Triumph
+								i(41628),	-- Hateful Gladiator's Belt of Dominance
+								i(41330),	-- Hateful Gladiator's Belt of Salvation
+								i(41827),	-- Hateful Gladiator's Belt of Triumph
+								i(41633),	-- Hateful Gladiator's Boots of Dominance
+								i(41331),	-- Hateful Gladiator's Boots of Salvation
+								i(41828),	-- Hateful Gladiator's Boots of Triumph
+								i(40972),	-- Hateful Gladiator's Bracers of Salvation
+								i(40887),	-- Hateful Gladiator's Bracers of Triumph
+								i(147583),	-- Hateful Gladiator's Bracers of Victory
+								i(41085),	-- Hateful Gladiator's Chain Armor
+								i(41141),	-- Hateful Gladiator's Chain Gauntlets
+								i(41155),	-- Hateful Gladiator's Chain Helm
+								i(41203),	-- Hateful Gladiator's Chain Leggings
+								i(41215),	-- Hateful Gladiator's Chain Spaulders
+								i(42057),	-- Hateful Gladiator's Cloak of Ascendancy
+								i(42059),	-- Hateful Gladiator's Cloak of Deliverance
+								i(42055),	-- Hateful Gladiator's Cloak of Dominance
+								i(42058),	-- Hateful Gladiator's Cloak of Salvation
+								i(42056),	-- Hateful Gladiator's Cloak of Subjugation
+								i(42060),	-- Hateful Gladiator's Cloak of Triumph
+								i(42061),	-- Hateful Gladiator's Cloak of Victory
+								i(147587),	-- Hateful Gladiator's Cord of Ascendancy
+								i(41896),	-- Hateful Gladiator's Cord of Dominance
+								i(41877),	-- Hateful Gladiator's Cord of Salvation
+								i(147586),	-- Hateful Gladiator's Cuffs of Ascendancy
+								i(41907),	-- Hateful Gladiator's Cuffs of Dominance
+								i(41878),	-- Hateful Gladiator's Cuffs of Salvation
+								i(41771),	-- Hateful Gladiator's Dragonhide Gloves
+								i(41676),	-- Hateful Gladiator's Dragonhide Helm
+								i(41665),	-- Hateful Gladiator's Dragonhide Legguards
+								i(41659),	-- Hateful Gladiator's Dragonhide Robes
+								i(41713),	-- Hateful Gladiator's Dragonhide Spaulders
+								i(40781),	-- Hateful Gladiator's Dreadplate Chestpiece
+								i(40803),	-- Hateful Gladiator's Dreadplate Gauntlets
+								i(40820),	-- Hateful Gladiator's Dreadplate Helm
+								i(40841),	-- Hateful Gladiator's Dreadplate Legguards
+								i(40860),	-- Hateful Gladiator's Dreadplate Shoulders
+								i(42009),	-- Hateful Gladiator's Felweave Amice
+								i(41991),	-- Hateful Gladiator's Felweave Cowl
+								i(42015),	-- Hateful Gladiator's Felweave Handguards
+								i(42001),	-- Hateful Gladiator's Felweave Raiment
+								i(42003),	-- Hateful Gladiator's Felweave Trousers
+								i(40966),	-- Hateful Gladiator's Girdle of Salvation
+								i(40877),	-- Hateful Gladiator's Girdle of Triumph
+								i(147584),	-- Hateful Gladiator's Girdle of Victory
+								i(40973),	-- Hateful Gladiator's Greaves of Salvation
+								i(40878),	-- Hateful Gladiator's Greaves of Triumph
+								i(147585),	-- Hateful Gladiator's Greaves of Victory
+								i(41284),	-- Hateful Gladiator's Kodohide Gloves
+								i(41319),	-- Hateful Gladiator's Kodohide Helm
+								i(41296),	-- Hateful Gladiator's Kodohide Legguards
+								i(41308),	-- Hateful Gladiator's Kodohide Robes
+								i(41273),	-- Hateful Gladiator's Kodohide Spaulders
+								i(41765),	-- Hateful Gladiator's Leather Gloves
+								i(41670),	-- Hateful Gladiator's Leather Helm
+								i(41653),	-- Hateful Gladiator's Leather Legguards
+								i(41681),	-- Hateful Gladiator's Leather Spaulders
+								i(41648),	-- Hateful Gladiator's Leather Tunic
+								i(41079),	-- Hateful Gladiator's Linked Armor
+								i(41135),	-- Hateful Gladiator's Linked Gauntlets
+								i(41149),	-- Hateful Gladiator's Linked Helm
+								i(41162),	-- Hateful Gladiator's Linked Leggings
+								i(41209),	-- Hateful Gladiator's Linked Spaulders
+								i(40989),	-- Hateful Gladiator's Mail Armor
+								i(41005),	-- Hateful Gladiator's Mail Gauntlets
+								i(41017),	-- Hateful Gladiator's Mail Helm
+								i(41031),	-- Hateful Gladiator's Mail Leggings
+								i(41042),	-- Hateful Gladiator's Mail Spaulders
+								i(41872),	-- Hateful Gladiator's Mooncloth Gloves
+								i(41852),	-- Hateful Gladiator's Mooncloth Hood
+								i(41862),	-- Hateful Gladiator's Mooncloth Leggings
+								i(41867),	-- Hateful Gladiator's Mooncloth Mantle
+								i(41857),	-- Hateful Gladiator's Mooncloth Robe
+								i(40904),	-- Hateful Gladiator's Ornamented Chestguard
+								i(40925),	-- Hateful Gladiator's Ornamented Gloves
+								i(40931),	-- Hateful Gladiator's Ornamented Headcover
+								i(40937),	-- Hateful Gladiator's Ornamented Legplates
+								i(40961),	-- Hateful Gladiator's Ornamented Spaulders
+								i(40783),	-- Hateful Gladiator's Plate Chestpiece
+								i(40801),	-- Hateful Gladiator's Plate Gauntlets
+								i(40819),	-- Hateful Gladiator's Plate Helm
+								i(40840),	-- Hateful Gladiator's Plate Legguards
+								i(40859),	-- Hateful Gladiator's Plate Shoulders
+								i(40988),	-- Hateful Gladiator's Ringmail Armor
+								i(40999),	-- Hateful Gladiator's Ringmail Gauntlets
+								i(41011),	-- Hateful Gladiator's Ringmail Helm
+								i(41025),	-- Hateful Gladiator's Ringmail Leggings
+								i(41036),	-- Hateful Gladiator's Ringmail Spaulders
+								i(41073),	-- Hateful Gladiator's Sabatons of Dominance
+								i(41049),	-- Hateful Gladiator's Sabatons of Salvation
+								i(41228),	-- Hateful Gladiator's Sabatons of Triumph
+								i(41938),	-- Hateful Gladiator's Satin Gloves
+								i(41913),	-- Hateful Gladiator's Satin Hood
+								i(41925),	-- Hateful Gladiator's Satin Leggings
+								i(41931),	-- Hateful Gladiator's Satin Mantle
+								i(41919),	-- Hateful Gladiator's Satin Robe
+								i(40782),	-- Hateful Gladiator's Scaled Chestpiece
+								i(40802),	-- Hateful Gladiator's Scaled Gauntlets
+								i(40821),	-- Hateful Gladiator's Scaled Helm
+								i(40842),	-- Hateful Gladiator's Scaled Legguards
+								i(40861),	-- Hateful Gladiator's Scaled Shoulders
+								i(41963),	-- Hateful Gladiator's Silk Amice
+								i(41944),	-- Hateful Gladiator's Silk Cowl
+								i(41969),	-- Hateful Gladiator's Silk Handguards
+								i(41950),	-- Hateful Gladiator's Silk Raiment
+								i(41957),	-- Hateful Gladiator's Silk Trousers
+								i(147588),	-- Hateful Gladiator's Slippers of Ascendancy
+								i(41901),	-- Hateful Gladiator's Slippers of Dominance
+								i(41879),	-- Hateful Gladiator's Slippers of Salvation
+								i(41068),	-- Hateful Gladiator's Waistguard of Dominance
+								i(41050),	-- Hateful Gladiator's Waistguard of Salvation
+								i(41233),	-- Hateful Gladiator's Waistguard of Triumph
+								i(41063),	-- Hateful Gladiator's Wristguards of Dominance
+								i(41047),	-- Hateful Gladiator's Wristguards of Salvation
+								i(41223),	-- Hateful Gladiator's Wristguards of Triumph
+								i(41291),	-- Hateful Gladiator's Wyrmhide Gloves
+								i(41325),	-- Hateful Gladiator's Wyrmhide Helm
+								i(41302),	-- Hateful Gladiator's Wyrmhide Legguards
+								i(41314),	-- Hateful Gladiator's Wyrmhide Robes
+								i(41279),	-- Hateful Gladiator's Wyrmhide Spaulders
 							},
 						}),
 						n(29537, {	-- Darahir <Reagents & Magical Goods>
 							i(39973),	-- Ghostly Skull
 						}),
 						n(69321, {	-- Herwin Steampop <Deadly Gladiator>
+							["itemID"] = 137642,	-- Mark of Honor
 							["coord"] = { 59.2, 58.6, 502 },
 							["g"] = {
-								i(137642, {	-- Mark of Honor
-									i(146645),	-- Arsenal: Deadly Gladiator's Weapon
-									i(42564),	-- Deadly Gladiator's Barrier
-									i(42513),	-- Deadly Gladiator's Baton of Light
-									i(42362),	-- Deadly Gladiator's Battle Staff
-									i(42280),	-- Deadly Gladiator's Bonecracker
-									i(42322),	-- Deadly Gladiator's Bonegrinder
-									i(42232),	-- Deadly Gladiator's Chopper
-									i(42208),	-- Deadly Gladiator's Cleaver
-									i(42317),	-- Deadly Gladiator's Decapitator
-									i(42525),	-- Deadly Gladiator's Endgame
-									i(42384),	-- Deadly Gladiator's Energy Staff
-									i(42270),	-- Deadly Gladiator's Fleshslicer
-									i(44420),	-- Deadly Gladiator's Focus Staff
-									i(42352),	-- Deadly Gladiator's Gavel
-									i(42332),	-- Deadly Gladiator's Greatsword
-									i(42537),	-- Deadly Gladiator's Grimoire
-									i(42227),	-- Deadly Gladiator's Hacker
-									i(42495),	-- Deadly Gladiator's Heavy Crossbow
-									i(42490),	-- Deadly Gladiator's Longbow
-									i(42255),	-- Deadly Gladiator's Mutilator
-									i(42519),	-- Deadly Gladiator's Piercing Touch
-									i(42327),	-- Deadly Gladiator's Pike
-									i(42275),	-- Deadly Gladiator's Pummeler
-									i(42290),	-- Deadly Gladiator's Quickblade
-									i(42570),	-- Deadly Gladiator's Redoubt
-									i(42531),	-- Deadly Gladiator's Reprieve
-									i(42485),	-- Deadly Gladiator's Rifle
-									i(42260),	-- Deadly Gladiator's Ripper
-									i(42242),	-- Deadly Gladiator's Shanker
-									i(42559),	-- Deadly Gladiator's Shield Wall
-									i(42248),	-- Deadly Gladiator's Shiv
-									i(42265),	-- Deadly Gladiator's Slasher
-									i(42285),	-- Deadly Gladiator's Slicer
-									i(42346),	-- Deadly Gladiator's Spellblade
-									i(42390),	-- Deadly Gladiator's Staff
-									i(42502),	-- Deadly Gladiator's Touch of Defeat
-									i(44419),	-- Deadly Gladiator's War Staff
-									i(42237),	-- Deadly Gladiator's Waraxe
-									i(41858),	-- Deadly Gladiator's Mooncloth Robe
-									i(40784),	-- Deadly Gladiator's Dreadplate Chestpiece
-									i(40786),	-- Deadly Gladiator's Plate Chestpiece
-									i(40804),	-- Deadly Gladiator's Plate Gauntlets
-									i(40805),	-- Deadly Gladiator's Scaled Gauntlets
-									i(40806),	-- Deadly Gladiator's Dreadplate Gauntlets
-									i(40823),	-- Deadly Gladiator's Plate Helm
-									i(40824),	-- Deadly Gladiator's Dreadplate Helm
-									i(40825),	-- Deadly Gladiator's Scaled Helm
-									i(40844),	-- Deadly Gladiator's Plate Legguards
-									i(40845),	-- Deadly Gladiator's Dreadplate Legguards
-									i(40846),	-- Deadly Gladiator's Scaled Legguards
-									i(40862),	-- Deadly Gladiator's Plate Shoulders
-									i(40863),	-- Deadly Gladiator's Dreadplate Shoulders
-									i(40864),	-- Deadly Gladiator's Scaled Shoulders
-									i(40879),	-- Deadly Gladiator's Girdle of Triumph
-									i(40880),	-- Deadly Gladiator's Greaves of Triumph
-									i(40888),	-- Deadly Gladiator's Bracers of Triumph
-									i(40905),	-- Deadly Gladiator's Ornamented Chestguard
-									i(40926),	-- Deadly Gladiator's Ornamented Gloves
-									i(40932),	-- Deadly Gladiator's Ornamented Headcover
-									i(40938),	-- Deadly Gladiator's Ornamented Legplates
-									i(40962),	-- Deadly Gladiator's Ornamented Spaulders
-									i(40974),	-- Deadly Gladiator's Girdle of Salvation
-									i(40975),	-- Deadly Gladiator's Greaves of Salvation
-									i(40982),	-- Deadly Gladiator's Bracers of Salvation
-									i(40990),	-- Deadly Gladiator's Ringmail Armor
-									i(40991),	-- Deadly Gladiator's Mail Armor
-									i(41000),	-- Deadly Gladiator's Ringmail Gauntlets
-									i(41006),	-- Deadly Gladiator's Mail Gauntlets
-									i(41012),	-- Deadly Gladiator's Ringmail Helm
-									i(41018),	-- Deadly Gladiator's Mail Helm
-									i(41026),	-- Deadly Gladiator's Ringmail Leggings
-									i(41032),	-- Deadly Gladiator's Mail Leggings
-									i(41037),	-- Deadly Gladiator's Ringmail Spaulders
-									i(41043),	-- Deadly Gladiator's Mail Spaulders
-									i(41048),	-- Deadly Gladiator's Waistguard of Salvation
-									i(41054),	-- Deadly Gladiator's Sabatons of Salvation
-									i(41059),	-- Deadly Gladiator's Wristguards of Salvation
-									i(41064),	-- Deadly Gladiator's Wristguards of Dominance
-									i(41069),	-- Deadly Gladiator's Waistguard of Dominance
-									i(41074),	-- Deadly Gladiator's Sabatons of Dominance
-									i(41080),	-- Deadly Gladiator's Linked Armor
-									i(41086),	-- Deadly Gladiator's Chain Armor
-									i(41136),	-- Deadly Gladiator's Linked Gauntlets
-									i(41142),	-- Deadly Gladiator's Chain Gauntlets
-									i(41150),	-- Deadly Gladiator's Linked Helm
-									i(41156),	-- Deadly Gladiator's Chain Helm
-									i(41198),	-- Deadly Gladiator's Linked Leggings
-									i(41204),	-- Deadly Gladiator's Chain Leggings
-									i(41210),	-- Deadly Gladiator's Linked Spaulders
-									i(41216),	-- Deadly Gladiator's Chain Spaulders
-									i(41224),	-- Deadly Gladiator's Wristguards of Triumph
-									i(41229),	-- Deadly Gladiator's Sabatons of Triumph
-									i(41234),	-- Deadly Gladiator's Waistguard of Triumph
-									i(41274),	-- Deadly Gladiator's Kodohide Spaulders
-									i(41280),	-- Deadly Gladiator's Wyrmhide Spaulders
-									i(41286),	-- Deadly Gladiator's Kodohide Gloves
-									i(41292),	-- Deadly Gladiator's Wyrmhide Gloves
-									i(41297),	-- Deadly Gladiator's Kodohide Legguards
-									i(41303),	-- Deadly Gladiator's Wyrmhide Legguards
-									i(41309),	-- Deadly Gladiator's Kodohide Robes
-									i(41315),	-- Deadly Gladiator's Wyrmhide Robes
-									i(41320),	-- Deadly Gladiator's Kodohide Helm
-									i(41326),	-- Deadly Gladiator's Wyrmhide Helm
-									i(41616),	-- Deadly Gladiator's Belt of Salvation
-									i(41620),	-- Deadly Gladiator's Boots of Salvation
-									i(41624),	-- Deadly Gladiator's Armwraps of Salvation
-									i(41629),	-- Deadly Gladiator's Belt of Dominance
-									i(41634),	-- Deadly Gladiator's Boots of Dominance
-									i(41639),	-- Deadly Gladiator's Armwraps of Dominance
-									i(41649),	-- Deadly Gladiator's Leather Tunic
-									i(41654),	-- Deadly Gladiator's Leather Legguards
-									i(41660),	-- Deadly Gladiator's Dragonhide Robes
-									i(41666),	-- Deadly Gladiator's Dragonhide Legguards
-									i(41671),	-- Deadly Gladiator's Leather Helm
-									i(41677),	-- Deadly Gladiator's Dragonhide Helm
-									i(41682),	-- Deadly Gladiator's Leather Spaulders
-									i(41714),	-- Deadly Gladiator's Dragonhide Spaulders
-									i(41766),	-- Deadly Gladiator's Leather Gloves
-									i(41772),	-- Deadly Gladiator's Dragonhide Gloves
-									i(41831),	-- Deadly Gladiator's Belt of Triumph
-									i(41835),	-- Deadly Gladiator's Boots of Triumph
-									i(41839),	-- Deadly Gladiator's Armwraps of Triumph
-									i(41853),	-- Deadly Gladiator's Mooncloth Hood
-									i(40785),	-- Deadly Gladiator's Scaled Chestpiece
-									i(41863),	-- Deadly Gladiator's Mooncloth Leggings
-									i(41868),	-- Deadly Gladiator's Mooncloth Mantle
-									i(41873),	-- Deadly Gladiator's Mooncloth Gloves
-									i(41880),	-- Deadly Gladiator's Cord of Salvation
-									i(41884),	-- Deadly Gladiator's Treads of Salvation
-									i(41892),	-- Deadly Gladiator's Cuffs of Salvation
-									i(41897),	-- Deadly Gladiator's Cord of Dominance
-									i(41902),	-- Deadly Gladiator's Treads of Dominance
-									i(41908),	-- Deadly Gladiator's Cuffs of Dominance
-									i(41914),	-- Deadly Gladiator's Satin Hood
-									i(41920),	-- Deadly Gladiator's Satin Robe
-									i(41926),	-- Deadly Gladiator's Satin Leggings
-									i(41933),	-- Deadly Gladiator's Satin Mantle
-									i(41939),	-- Deadly Gladiator's Satin Gloves
-									i(41945),	-- Deadly Gladiator's Silk Cowl
-									i(41951),	-- Deadly Gladiator's Silk Raiment
-									i(41958),	-- Deadly Gladiator's Silk Trousers
-									i(41964),	-- Deadly Gladiator's Silk Amice
-									i(41970),	-- Deadly Gladiator's Silk Handguards
-									i(41992),	-- Deadly Gladiator's Felweave Cowl
-									i(41997),	-- Deadly Gladiator's Felweave Raiment
-									i(42004),	-- Deadly Gladiator's Felweave Trousers
-									i(42010),	-- Deadly Gladiator's Felweave Amice
-									i(42016),	-- Deadly Gladiator's Felweave Handguards
-									i(42062),	-- Deadly Gladiator's Cloak of Dominance
-									i(42063),	-- Deadly Gladiator's Cloak of Subjugation
-									i(42064),	-- Deadly Gladiator's Cloak of Ascendancy
-									i(42065),	-- Deadly Gladiator's Cloak of Salvation
-									i(42066),	-- Deadly Gladiator's Cloak of Deliverance
-									i(42067),	-- Deadly Gladiator's Cloak of Triumph
-									i(42068),	-- Deadly Gladiator's Cloak of Victory
-									i(147593),	-- Deadly Gladiator's Cord of Ascendancy
-									i(147592),	-- Deadly Gladiator's Cuffs of Ascendancy
-									i(147591),	-- Deadly Gladiator's Greaves of Victory
-									i(147590),	-- Deadly Gladiator's Girdle of Victory
-									i(147589),	-- Deadly Gladiator's Bracers of Victory
-									i(147594),	-- Deadly Gladiator's Treads of Ascendancy
-								}),
+								i(146645),	-- Arsenal: Deadly Gladiator's Weapon
+								i(42564),	-- Deadly Gladiator's Barrier
+								i(42513),	-- Deadly Gladiator's Baton of Light
+								i(42362),	-- Deadly Gladiator's Battle Staff
+								i(42280),	-- Deadly Gladiator's Bonecracker
+								i(42322),	-- Deadly Gladiator's Bonegrinder
+								i(42232),	-- Deadly Gladiator's Chopper
+								i(42208),	-- Deadly Gladiator's Cleaver
+								i(42317),	-- Deadly Gladiator's Decapitator
+								i(42525),	-- Deadly Gladiator's Endgame
+								i(42384),	-- Deadly Gladiator's Energy Staff
+								i(42270),	-- Deadly Gladiator's Fleshslicer
+								i(44420),	-- Deadly Gladiator's Focus Staff
+								i(42352),	-- Deadly Gladiator's Gavel
+								i(42332),	-- Deadly Gladiator's Greatsword
+								i(42537),	-- Deadly Gladiator's Grimoire
+								i(42227),	-- Deadly Gladiator's Hacker
+								i(42495),	-- Deadly Gladiator's Heavy Crossbow
+								i(42490),	-- Deadly Gladiator's Longbow
+								i(42255),	-- Deadly Gladiator's Mutilator
+								i(42519),	-- Deadly Gladiator's Piercing Touch
+								i(42327),	-- Deadly Gladiator's Pike
+								i(42275),	-- Deadly Gladiator's Pummeler
+								i(42290),	-- Deadly Gladiator's Quickblade
+								i(42570),	-- Deadly Gladiator's Redoubt
+								i(42531),	-- Deadly Gladiator's Reprieve
+								i(42485),	-- Deadly Gladiator's Rifle
+								i(42260),	-- Deadly Gladiator's Ripper
+								i(42242),	-- Deadly Gladiator's Shanker
+								i(42559),	-- Deadly Gladiator's Shield Wall
+								i(42248),	-- Deadly Gladiator's Shiv
+								i(42265),	-- Deadly Gladiator's Slasher
+								i(42285),	-- Deadly Gladiator's Slicer
+								i(42346),	-- Deadly Gladiator's Spellblade
+								i(42390),	-- Deadly Gladiator's Staff
+								i(42502),	-- Deadly Gladiator's Touch of Defeat
+								i(44419),	-- Deadly Gladiator's War Staff
+								i(42237),	-- Deadly Gladiator's Waraxe
+								i(41858),	-- Deadly Gladiator's Mooncloth Robe
+								i(40784),	-- Deadly Gladiator's Dreadplate Chestpiece
+								i(40786),	-- Deadly Gladiator's Plate Chestpiece
+								i(40804),	-- Deadly Gladiator's Plate Gauntlets
+								i(40805),	-- Deadly Gladiator's Scaled Gauntlets
+								i(40806),	-- Deadly Gladiator's Dreadplate Gauntlets
+								i(40823),	-- Deadly Gladiator's Plate Helm
+								i(40824),	-- Deadly Gladiator's Dreadplate Helm
+								i(40825),	-- Deadly Gladiator's Scaled Helm
+								i(40844),	-- Deadly Gladiator's Plate Legguards
+								i(40845),	-- Deadly Gladiator's Dreadplate Legguards
+								i(40846),	-- Deadly Gladiator's Scaled Legguards
+								i(40862),	-- Deadly Gladiator's Plate Shoulders
+								i(40863),	-- Deadly Gladiator's Dreadplate Shoulders
+								i(40864),	-- Deadly Gladiator's Scaled Shoulders
+								i(40879),	-- Deadly Gladiator's Girdle of Triumph
+								i(40880),	-- Deadly Gladiator's Greaves of Triumph
+								i(40888),	-- Deadly Gladiator's Bracers of Triumph
+								i(40905),	-- Deadly Gladiator's Ornamented Chestguard
+								i(40926),	-- Deadly Gladiator's Ornamented Gloves
+								i(40932),	-- Deadly Gladiator's Ornamented Headcover
+								i(40938),	-- Deadly Gladiator's Ornamented Legplates
+								i(40962),	-- Deadly Gladiator's Ornamented Spaulders
+								i(40974),	-- Deadly Gladiator's Girdle of Salvation
+								i(40975),	-- Deadly Gladiator's Greaves of Salvation
+								i(40982),	-- Deadly Gladiator's Bracers of Salvation
+								i(40990),	-- Deadly Gladiator's Ringmail Armor
+								i(40991),	-- Deadly Gladiator's Mail Armor
+								i(41000),	-- Deadly Gladiator's Ringmail Gauntlets
+								i(41006),	-- Deadly Gladiator's Mail Gauntlets
+								i(41012),	-- Deadly Gladiator's Ringmail Helm
+								i(41018),	-- Deadly Gladiator's Mail Helm
+								i(41026),	-- Deadly Gladiator's Ringmail Leggings
+								i(41032),	-- Deadly Gladiator's Mail Leggings
+								i(41037),	-- Deadly Gladiator's Ringmail Spaulders
+								i(41043),	-- Deadly Gladiator's Mail Spaulders
+								i(41048),	-- Deadly Gladiator's Waistguard of Salvation
+								i(41054),	-- Deadly Gladiator's Sabatons of Salvation
+								i(41059),	-- Deadly Gladiator's Wristguards of Salvation
+								i(41064),	-- Deadly Gladiator's Wristguards of Dominance
+								i(41069),	-- Deadly Gladiator's Waistguard of Dominance
+								i(41074),	-- Deadly Gladiator's Sabatons of Dominance
+								i(41080),	-- Deadly Gladiator's Linked Armor
+								i(41086),	-- Deadly Gladiator's Chain Armor
+								i(41136),	-- Deadly Gladiator's Linked Gauntlets
+								i(41142),	-- Deadly Gladiator's Chain Gauntlets
+								i(41150),	-- Deadly Gladiator's Linked Helm
+								i(41156),	-- Deadly Gladiator's Chain Helm
+								i(41198),	-- Deadly Gladiator's Linked Leggings
+								i(41204),	-- Deadly Gladiator's Chain Leggings
+								i(41210),	-- Deadly Gladiator's Linked Spaulders
+								i(41216),	-- Deadly Gladiator's Chain Spaulders
+								i(41224),	-- Deadly Gladiator's Wristguards of Triumph
+								i(41229),	-- Deadly Gladiator's Sabatons of Triumph
+								i(41234),	-- Deadly Gladiator's Waistguard of Triumph
+								i(41274),	-- Deadly Gladiator's Kodohide Spaulders
+								i(41280),	-- Deadly Gladiator's Wyrmhide Spaulders
+								i(41286),	-- Deadly Gladiator's Kodohide Gloves
+								i(41292),	-- Deadly Gladiator's Wyrmhide Gloves
+								i(41297),	-- Deadly Gladiator's Kodohide Legguards
+								i(41303),	-- Deadly Gladiator's Wyrmhide Legguards
+								i(41309),	-- Deadly Gladiator's Kodohide Robes
+								i(41315),	-- Deadly Gladiator's Wyrmhide Robes
+								i(41320),	-- Deadly Gladiator's Kodohide Helm
+								i(41326),	-- Deadly Gladiator's Wyrmhide Helm
+								i(41616),	-- Deadly Gladiator's Belt of Salvation
+								i(41620),	-- Deadly Gladiator's Boots of Salvation
+								i(41624),	-- Deadly Gladiator's Armwraps of Salvation
+								i(41629),	-- Deadly Gladiator's Belt of Dominance
+								i(41634),	-- Deadly Gladiator's Boots of Dominance
+								i(41639),	-- Deadly Gladiator's Armwraps of Dominance
+								i(41649),	-- Deadly Gladiator's Leather Tunic
+								i(41654),	-- Deadly Gladiator's Leather Legguards
+								i(41660),	-- Deadly Gladiator's Dragonhide Robes
+								i(41666),	-- Deadly Gladiator's Dragonhide Legguards
+								i(41671),	-- Deadly Gladiator's Leather Helm
+								i(41677),	-- Deadly Gladiator's Dragonhide Helm
+								i(41682),	-- Deadly Gladiator's Leather Spaulders
+								i(41714),	-- Deadly Gladiator's Dragonhide Spaulders
+								i(41766),	-- Deadly Gladiator's Leather Gloves
+								i(41772),	-- Deadly Gladiator's Dragonhide Gloves
+								i(41831),	-- Deadly Gladiator's Belt of Triumph
+								i(41835),	-- Deadly Gladiator's Boots of Triumph
+								i(41839),	-- Deadly Gladiator's Armwraps of Triumph
+								i(41853),	-- Deadly Gladiator's Mooncloth Hood
+								i(40785),	-- Deadly Gladiator's Scaled Chestpiece
+								i(41863),	-- Deadly Gladiator's Mooncloth Leggings
+								i(41868),	-- Deadly Gladiator's Mooncloth Mantle
+								i(41873),	-- Deadly Gladiator's Mooncloth Gloves
+								i(41880),	-- Deadly Gladiator's Cord of Salvation
+								i(41884),	-- Deadly Gladiator's Treads of Salvation
+								i(41892),	-- Deadly Gladiator's Cuffs of Salvation
+								i(41897),	-- Deadly Gladiator's Cord of Dominance
+								i(41902),	-- Deadly Gladiator's Treads of Dominance
+								i(41908),	-- Deadly Gladiator's Cuffs of Dominance
+								i(41914),	-- Deadly Gladiator's Satin Hood
+								i(41920),	-- Deadly Gladiator's Satin Robe
+								i(41926),	-- Deadly Gladiator's Satin Leggings
+								i(41933),	-- Deadly Gladiator's Satin Mantle
+								i(41939),	-- Deadly Gladiator's Satin Gloves
+								i(41945),	-- Deadly Gladiator's Silk Cowl
+								i(41951),	-- Deadly Gladiator's Silk Raiment
+								i(41958),	-- Deadly Gladiator's Silk Trousers
+								i(41964),	-- Deadly Gladiator's Silk Amice
+								i(41970),	-- Deadly Gladiator's Silk Handguards
+								i(41992),	-- Deadly Gladiator's Felweave Cowl
+								i(41997),	-- Deadly Gladiator's Felweave Raiment
+								i(42004),	-- Deadly Gladiator's Felweave Trousers
+								i(42010),	-- Deadly Gladiator's Felweave Amice
+								i(42016),	-- Deadly Gladiator's Felweave Handguards
+								i(42062),	-- Deadly Gladiator's Cloak of Dominance
+								i(42063),	-- Deadly Gladiator's Cloak of Subjugation
+								i(42064),	-- Deadly Gladiator's Cloak of Ascendancy
+								i(42065),	-- Deadly Gladiator's Cloak of Salvation
+								i(42066),	-- Deadly Gladiator's Cloak of Deliverance
+								i(42067),	-- Deadly Gladiator's Cloak of Triumph
+								i(42068),	-- Deadly Gladiator's Cloak of Victory
+								i(147593),	-- Deadly Gladiator's Cord of Ascendancy
+								i(147592),	-- Deadly Gladiator's Cuffs of Ascendancy
+								i(147591),	-- Deadly Gladiator's Greaves of Victory
+								i(147590),	-- Deadly Gladiator's Girdle of Victory
+								i(147589),	-- Deadly Gladiator's Bracers of Victory
+								i(147594),	-- Deadly Gladiator's Treads of Ascendancy
 							},
 						}),
 						n(29538, { 	-- Hexil Garrot <Tools of the Trade>
@@ -3973,173 +3971,172 @@ _.Zones =
 							i(40694),	-- Jorach's Crocolisk Skin Belt
 						}),
 						n(69318, { 	-- Kylo Kelwin <Furious Gladiator>
+							["itemID"] = 137642,	-- Mark of Honor
 							["coord"] = { 59.2, 58.6, 502 },
 							["g"] = {
-								i(137642, {	-- Mark of Honor
-									i(146644),	-- Arsenal: Furious Gladiator's Weapons
-									i(42565),	-- Furious Gladiator's Barrier
-									i(42514),	-- Furious Gladiator's Baton of Light
-									i(42364),	-- Furious Gladiator's Battle Staff
-									i(42281),	-- Furious Gladiator's Bonecracker
-									i(42323),	-- Furious Gladiator's Bonegrinder
-									i(42233),	-- Furious Gladiator's Chopper
-									i(42209),	-- Furious Gladiator's Cleaver
-									i(42318),	-- Furious Gladiator's Decapitator
-									i(42526),	-- Furious Gladiator's Endgame
-									i(42385),	-- Furious Gladiator's Energy Staff
-									i(42271),	-- Furious Gladiator's Fleshslicer
-									i(44422),	-- Furious Gladiator's Focus Staff
-									i(42353),	-- Furious Gladiator's Gavel
-									i(42333),	-- Furious Gladiator's Greatsword
-									i(42538),	-- Furious Gladiator's Grimoire
-									i(42228),	-- Furious Gladiator's Hacker
-									i(42496),	-- Furious Gladiator's Heavy Crossbow
-									i(42491),	-- Furious Gladiator's Longbow
-									i(42256),	-- Furious Gladiator's Mutilator
-									i(42520),	-- Furious Gladiator's Piercing Touch
-									i(42328),	-- Furious Gladiator's Pike
-									i(42276),	-- Furious Gladiator's Pummeler
-									i(42291),	-- Furious Gladiator's Quickblade
-									i(42571),	-- Furious Gladiator's Redoubt
-									i(42532),	-- Furious Gladiator's Reprieve
-									i(42486),	-- Furious Gladiator's Rifle
-									i(42261),	-- Furious Gladiator's Ripper
-									i(42243),	-- Furious Gladiator's Shanker
-									i(42560),	-- Furious Gladiator's Shield Wall
-									i(42249),	-- Furious Gladiator's Shiv
-									i(42266),	-- Furious Gladiator's Slasher
-									i(42286),	-- Furious Gladiator's Slicer
-									i(42347),	-- Furious Gladiator's Spellblade
-									i(42391),	-- Furious Gladiator's Staff
-									i(42503),	-- Furious Gladiator's Touch of Defeat
-									i(44421),	-- Furious Gladiator's War Staff
-									i(41859),	-- Furious Gladiator's Mooncloth Robe
-									i(40787),	-- Furious Gladiator's Dreadplate Chestpiece
-									i(40789),	-- Furious Gladiator's Plate Chestpiece
-									i(40807),	-- Furious Gladiator's Plate Gauntlets
-									i(40808),	-- Furious Gladiator's Scaled Gauntlets
-									i(40809),	-- Furious Gladiator's Dreadplate Gauntlets
-									i(40826),	-- Furious Gladiator's Plate Helm
-									i(40827),	-- Furious Gladiator's Dreadplate Helm
-									i(40828),	-- Furious Gladiator's Scaled Helm
-									i(40847),	-- Furious Gladiator's Plate Legguards
-									i(40848),	-- Furious Gladiator's Dreadplate Legguards
-									i(40849),	-- Furious Gladiator's Scaled Legguards
-									i(40866),	-- Furious Gladiator's Plate Shoulders
-									i(40868),	-- Furious Gladiator's Dreadplate Shoulders
-									i(40869),	-- Furious Gladiator's Scaled Shoulders
-									i(40907),	-- Furious Gladiator's Ornamented Chestguard
-									i(40927),	-- Furious Gladiator's Ornamented Gloves
-									i(40933),	-- Furious Gladiator's Ornamented Headcover
-									i(40939),	-- Furious Gladiator's Ornamented Legplates
-									i(40963),	-- Furious Gladiator's Ornamented Spaulders
-									i(40992),	-- Furious Gladiator's Ringmail Armor
-									i(40993),	-- Furious Gladiator's Mail Armor
-									i(41001),	-- Furious Gladiator's Ringmail Gauntlets
-									i(41007),	-- Furious Gladiator's Mail Gauntlets
-									i(41013),	-- Furious Gladiator's Ringmail Helm
-									i(41019),	-- Furious Gladiator's Mail Helm
-									i(41027),	-- Furious Gladiator's Ringmail Leggings
-									i(41033),	-- Furious Gladiator's Mail Leggings
-									i(41038),	-- Furious Gladiator's Ringmail Spaulders
-									i(41044),	-- Furious Gladiator's Mail Spaulders
-									i(41081),	-- Furious Gladiator's Linked Armor
-									i(41087),	-- Furious Gladiator's Chain Armor
-									i(41137),	-- Furious Gladiator's Linked Gauntlets
-									i(41143),	-- Furious Gladiator's Chain Gauntlets
-									i(41151),	-- Furious Gladiator's Linked Helm
-									i(41157),	-- Furious Gladiator's Chain Helm
-									i(41199),	-- Furious Gladiator's Linked Leggings
-									i(41205),	-- Furious Gladiator's Chain Leggings
-									i(41211),	-- Furious Gladiator's Linked Spaulders
-									i(41217),	-- Furious Gladiator's Chain Spaulders
-									i(41275),	-- Furious Gladiator's Kodohide Spaulders
-									i(41281),	-- Furious Gladiator's Wyrmhide Spaulders
-									i(41287),	-- Furious Gladiator's Kodohide Gloves
-									i(41293),	-- Furious Gladiator's Wyrmhide Gloves
-									i(41298),	-- Furious Gladiator's Kodohide Legguards
-									i(41304),	-- Furious Gladiator's Wyrmhide Legguards
-									i(41310),	-- Furious Gladiator's Kodohide Robes
-									i(41316),	-- Furious Gladiator's Wyrmhide Robes
-									i(41321),	-- Furious Gladiator's Kodohide Helm
-									i(41327),	-- Furious Gladiator's Wyrmhide Helm
-									i(41650),	-- Furious Gladiator's Leather Tunic
-									i(41655),	-- Furious Gladiator's Leather Legguards
-									i(41661),	-- Furious Gladiator's Dragonhide Robes
-									i(41667),	-- Furious Gladiator's Dragonhide Legguards
-									i(41672),	-- Furious Gladiator's Leather Helm
-									i(41678),	-- Furious Gladiator's Dragonhide Helm
-									i(41683),	-- Furious Gladiator's Leather Spaulders
-									i(41715),	-- Furious Gladiator's Dragonhide Spaulders
-									i(41767),	-- Furious Gladiator's Leather Gloves
-									i(41773),	-- Furious Gladiator's Dragonhide Gloves
-									i(42323),	-- Furious Gladiator's Bonegrinder
-									i(42318),	-- Furious Gladiator's Decapitator
-									i(42291),	-- Furious Gladiator's Quickblade
-									i(41854),	-- Furious Gladiator's Mooncloth Hood
-									i(40788),	-- Furious Gladiator's Scaled Chestpiece
-									i(41864),	-- Furious Gladiator's Mooncloth Leggings
-									i(41869),	-- Furious Gladiator's Mooncloth Mantle
-									i(41874),	-- Furious Gladiator's Mooncloth Gloves
-									i(41915),	-- Furious Gladiator's Satin Hood
-									i(41921),	-- Furious Gladiator's Satin Robe
-									i(41927),	-- Furious Gladiator's Satin Leggings
-									i(41934),	-- Furious Gladiator's Satin Mantle
-									i(41940),	-- Furious Gladiator's Satin Gloves
-									i(41946),	-- Furious Gladiator's Silk Cowl
-									i(41953),	-- Furious Gladiator's Silk Raiment
-									i(41959),	-- Furious Gladiator's Silk Trousers
-									i(41965),	-- Furious Gladiator's Silk Amice
-									i(41971),	-- Furious Gladiator's Silk Handguards
-									i(41993),	-- Furious Gladiator's Felweave Cowl
-									i(41998),	-- Furious Gladiator's Felweave Raiment
-									i(42005),	-- Furious Gladiator's Felweave Trousers
-									i(42011),	-- Furious Gladiator's Felweave Amice
-									i(42017),	-- Furious Gladiator's Felweave Handguards
-									i(41065),	-- Furious Gladiator's Wristguards of Dominance
-									i(42075),	-- Furious Gladiator's Cloak of Victory
-									i(42073),	-- Furious Gladiator's Cloak of Deliverance
-									i(42072),	-- Furious Gladiator's Cloak of Salvation
-									i(42071),	-- Furious Gladiator's Cloak of Ascendancy
-									i(42070),	-- Furious Gladiator's Cloak of Subjugation
-									i(42069),	-- Furious Gladiator's Cloak of Dominance
-									i(41909),	-- Furious Gladiator's Cuffs of Dominance
-									i(41903),	-- Furious Gladiator's Slippers of Dominance
-									i(41898),	-- Furious Gladiator's Cord of Dominance
-									i(41893),	-- Furious Gladiator's Cuffs of Salvation
-									i(41885),	-- Furious Gladiator's Slippers of Salvation
-									i(41881),	-- Furious Gladiator's Cord of Salvation
-									i(41840),	-- Furious Gladiator's Armwraps of Triumph
-									i(41836),	-- Furious Gladiator's Boots of Triumph
-									i(41832),	-- Furious Gladiator's Belt of Triumph
-									i(41640),	-- Furious Gladiator's Armwraps of Dominance
-									i(41635),	-- Furious Gladiator's Boots of Dominance
-									i(41630),	-- Furious Gladiator's Belt of Dominance
-									i(41625),	-- Furious Gladiator's Armwraps of Salvation
-									i(41621),	-- Furious Gladiator's Boots of Salvation
-									i(41617),	-- Furious Gladiator's Belt of Salvation
-									i(41235),	-- Furious Gladiator's Waistguard of Triumph
-									i(41230),	-- Furious Gladiator's Sabatons of Triumph
-									i(41225),	-- Furious Gladiator's Wristguards of Triumph
-									i(41075),	-- Furious Gladiator's Sabatons of Dominance
-									i(41070),	-- Furious Gladiator's Waistguard of Dominance
-									i(42074),	-- Furious Gladiator's Cloak of Triumph
-									i(41060),	-- Furious Gladiator's Wristguards of Salvation
-									i(41055),	-- Furious Gladiator's Sabatons of Salvation
-									i(41051),	-- Furious Gladiator's Waistguard of Salvation
-									i(40983),	-- Furious Gladiator's Bracers of Salvation
-									i(40977),	-- Furious Gladiator's Greaves of Salvation
-									i(40976),	-- Furious Gladiator's Girdle of Salvation
-									i(40889),	-- Furious Gladiator's Bracers of Triumph
-									i(40882),	-- Furious Gladiator's Greaves of Triumph
-									i(40881),	-- Furious Gladiator's Girdle of Triumph
-									i(147599),	-- Furious Gladiator's Girdle of Victory
-									i(147598),	-- Furious Gladiator's Bracers of Victory
-									i(147597),	-- Furious Gladiator's Slippers of Ascendancy
-									i(147596),	-- Furious Gladiator's Cord of Ascendancy
-									i(147595),	-- Furious Gladiator's Cuffs of Ascendancy
-									i(147600),	-- Furious Gladiator's Greaves of Victory
-								}),
+								i(146644),	-- Arsenal: Furious Gladiator's Weapons
+								i(42565),	-- Furious Gladiator's Barrier
+								i(42514),	-- Furious Gladiator's Baton of Light
+								i(42364),	-- Furious Gladiator's Battle Staff
+								i(42281),	-- Furious Gladiator's Bonecracker
+								i(42323),	-- Furious Gladiator's Bonegrinder
+								i(42233),	-- Furious Gladiator's Chopper
+								i(42209),	-- Furious Gladiator's Cleaver
+								i(42318),	-- Furious Gladiator's Decapitator
+								i(42526),	-- Furious Gladiator's Endgame
+								i(42385),	-- Furious Gladiator's Energy Staff
+								i(42271),	-- Furious Gladiator's Fleshslicer
+								i(44422),	-- Furious Gladiator's Focus Staff
+								i(42353),	-- Furious Gladiator's Gavel
+								i(42333),	-- Furious Gladiator's Greatsword
+								i(42538),	-- Furious Gladiator's Grimoire
+								i(42228),	-- Furious Gladiator's Hacker
+								i(42496),	-- Furious Gladiator's Heavy Crossbow
+								i(42491),	-- Furious Gladiator's Longbow
+								i(42256),	-- Furious Gladiator's Mutilator
+								i(42520),	-- Furious Gladiator's Piercing Touch
+								i(42328),	-- Furious Gladiator's Pike
+								i(42276),	-- Furious Gladiator's Pummeler
+								i(42291),	-- Furious Gladiator's Quickblade
+								i(42571),	-- Furious Gladiator's Redoubt
+								i(42532),	-- Furious Gladiator's Reprieve
+								i(42486),	-- Furious Gladiator's Rifle
+								i(42261),	-- Furious Gladiator's Ripper
+								i(42243),	-- Furious Gladiator's Shanker
+								i(42560),	-- Furious Gladiator's Shield Wall
+								i(42249),	-- Furious Gladiator's Shiv
+								i(42266),	-- Furious Gladiator's Slasher
+								i(42286),	-- Furious Gladiator's Slicer
+								i(42347),	-- Furious Gladiator's Spellblade
+								i(42391),	-- Furious Gladiator's Staff
+								i(42503),	-- Furious Gladiator's Touch of Defeat
+								i(44421),	-- Furious Gladiator's War Staff
+								i(41859),	-- Furious Gladiator's Mooncloth Robe
+								i(40787),	-- Furious Gladiator's Dreadplate Chestpiece
+								i(40789),	-- Furious Gladiator's Plate Chestpiece
+								i(40807),	-- Furious Gladiator's Plate Gauntlets
+								i(40808),	-- Furious Gladiator's Scaled Gauntlets
+								i(40809),	-- Furious Gladiator's Dreadplate Gauntlets
+								i(40826),	-- Furious Gladiator's Plate Helm
+								i(40827),	-- Furious Gladiator's Dreadplate Helm
+								i(40828),	-- Furious Gladiator's Scaled Helm
+								i(40847),	-- Furious Gladiator's Plate Legguards
+								i(40848),	-- Furious Gladiator's Dreadplate Legguards
+								i(40849),	-- Furious Gladiator's Scaled Legguards
+								i(40866),	-- Furious Gladiator's Plate Shoulders
+								i(40868),	-- Furious Gladiator's Dreadplate Shoulders
+								i(40869),	-- Furious Gladiator's Scaled Shoulders
+								i(40907),	-- Furious Gladiator's Ornamented Chestguard
+								i(40927),	-- Furious Gladiator's Ornamented Gloves
+								i(40933),	-- Furious Gladiator's Ornamented Headcover
+								i(40939),	-- Furious Gladiator's Ornamented Legplates
+								i(40963),	-- Furious Gladiator's Ornamented Spaulders
+								i(40992),	-- Furious Gladiator's Ringmail Armor
+								i(40993),	-- Furious Gladiator's Mail Armor
+								i(41001),	-- Furious Gladiator's Ringmail Gauntlets
+								i(41007),	-- Furious Gladiator's Mail Gauntlets
+								i(41013),	-- Furious Gladiator's Ringmail Helm
+								i(41019),	-- Furious Gladiator's Mail Helm
+								i(41027),	-- Furious Gladiator's Ringmail Leggings
+								i(41033),	-- Furious Gladiator's Mail Leggings
+								i(41038),	-- Furious Gladiator's Ringmail Spaulders
+								i(41044),	-- Furious Gladiator's Mail Spaulders
+								i(41081),	-- Furious Gladiator's Linked Armor
+								i(41087),	-- Furious Gladiator's Chain Armor
+								i(41137),	-- Furious Gladiator's Linked Gauntlets
+								i(41143),	-- Furious Gladiator's Chain Gauntlets
+								i(41151),	-- Furious Gladiator's Linked Helm
+								i(41157),	-- Furious Gladiator's Chain Helm
+								i(41199),	-- Furious Gladiator's Linked Leggings
+								i(41205),	-- Furious Gladiator's Chain Leggings
+								i(41211),	-- Furious Gladiator's Linked Spaulders
+								i(41217),	-- Furious Gladiator's Chain Spaulders
+								i(41275),	-- Furious Gladiator's Kodohide Spaulders
+								i(41281),	-- Furious Gladiator's Wyrmhide Spaulders
+								i(41287),	-- Furious Gladiator's Kodohide Gloves
+								i(41293),	-- Furious Gladiator's Wyrmhide Gloves
+								i(41298),	-- Furious Gladiator's Kodohide Legguards
+								i(41304),	-- Furious Gladiator's Wyrmhide Legguards
+								i(41310),	-- Furious Gladiator's Kodohide Robes
+								i(41316),	-- Furious Gladiator's Wyrmhide Robes
+								i(41321),	-- Furious Gladiator's Kodohide Helm
+								i(41327),	-- Furious Gladiator's Wyrmhide Helm
+								i(41650),	-- Furious Gladiator's Leather Tunic
+								i(41655),	-- Furious Gladiator's Leather Legguards
+								i(41661),	-- Furious Gladiator's Dragonhide Robes
+								i(41667),	-- Furious Gladiator's Dragonhide Legguards
+								i(41672),	-- Furious Gladiator's Leather Helm
+								i(41678),	-- Furious Gladiator's Dragonhide Helm
+								i(41683),	-- Furious Gladiator's Leather Spaulders
+								i(41715),	-- Furious Gladiator's Dragonhide Spaulders
+								i(41767),	-- Furious Gladiator's Leather Gloves
+								i(41773),	-- Furious Gladiator's Dragonhide Gloves
+								i(42323),	-- Furious Gladiator's Bonegrinder
+								i(42318),	-- Furious Gladiator's Decapitator
+								i(42291),	-- Furious Gladiator's Quickblade
+								i(41854),	-- Furious Gladiator's Mooncloth Hood
+								i(40788),	-- Furious Gladiator's Scaled Chestpiece
+								i(41864),	-- Furious Gladiator's Mooncloth Leggings
+								i(41869),	-- Furious Gladiator's Mooncloth Mantle
+								i(41874),	-- Furious Gladiator's Mooncloth Gloves
+								i(41915),	-- Furious Gladiator's Satin Hood
+								i(41921),	-- Furious Gladiator's Satin Robe
+								i(41927),	-- Furious Gladiator's Satin Leggings
+								i(41934),	-- Furious Gladiator's Satin Mantle
+								i(41940),	-- Furious Gladiator's Satin Gloves
+								i(41946),	-- Furious Gladiator's Silk Cowl
+								i(41953),	-- Furious Gladiator's Silk Raiment
+								i(41959),	-- Furious Gladiator's Silk Trousers
+								i(41965),	-- Furious Gladiator's Silk Amice
+								i(41971),	-- Furious Gladiator's Silk Handguards
+								i(41993),	-- Furious Gladiator's Felweave Cowl
+								i(41998),	-- Furious Gladiator's Felweave Raiment
+								i(42005),	-- Furious Gladiator's Felweave Trousers
+								i(42011),	-- Furious Gladiator's Felweave Amice
+								i(42017),	-- Furious Gladiator's Felweave Handguards
+								i(41065),	-- Furious Gladiator's Wristguards of Dominance
+								i(42075),	-- Furious Gladiator's Cloak of Victory
+								i(42073),	-- Furious Gladiator's Cloak of Deliverance
+								i(42072),	-- Furious Gladiator's Cloak of Salvation
+								i(42071),	-- Furious Gladiator's Cloak of Ascendancy
+								i(42070),	-- Furious Gladiator's Cloak of Subjugation
+								i(42069),	-- Furious Gladiator's Cloak of Dominance
+								i(41909),	-- Furious Gladiator's Cuffs of Dominance
+								i(41903),	-- Furious Gladiator's Slippers of Dominance
+								i(41898),	-- Furious Gladiator's Cord of Dominance
+								i(41893),	-- Furious Gladiator's Cuffs of Salvation
+								i(41885),	-- Furious Gladiator's Slippers of Salvation
+								i(41881),	-- Furious Gladiator's Cord of Salvation
+								i(41840),	-- Furious Gladiator's Armwraps of Triumph
+								i(41836),	-- Furious Gladiator's Boots of Triumph
+								i(41832),	-- Furious Gladiator's Belt of Triumph
+								i(41640),	-- Furious Gladiator's Armwraps of Dominance
+								i(41635),	-- Furious Gladiator's Boots of Dominance
+								i(41630),	-- Furious Gladiator's Belt of Dominance
+								i(41625),	-- Furious Gladiator's Armwraps of Salvation
+								i(41621),	-- Furious Gladiator's Boots of Salvation
+								i(41617),	-- Furious Gladiator's Belt of Salvation
+								i(41235),	-- Furious Gladiator's Waistguard of Triumph
+								i(41230),	-- Furious Gladiator's Sabatons of Triumph
+								i(41225),	-- Furious Gladiator's Wristguards of Triumph
+								i(41075),	-- Furious Gladiator's Sabatons of Dominance
+								i(41070),	-- Furious Gladiator's Waistguard of Dominance
+								i(42074),	-- Furious Gladiator's Cloak of Triumph
+								i(41060),	-- Furious Gladiator's Wristguards of Salvation
+								i(41055),	-- Furious Gladiator's Sabatons of Salvation
+								i(41051),	-- Furious Gladiator's Waistguard of Salvation
+								i(40983),	-- Furious Gladiator's Bracers of Salvation
+								i(40977),	-- Furious Gladiator's Greaves of Salvation
+								i(40976),	-- Furious Gladiator's Girdle of Salvation
+								i(40889),	-- Furious Gladiator's Bracers of Triumph
+								i(40882),	-- Furious Gladiator's Greaves of Triumph
+								i(40881),	-- Furious Gladiator's Girdle of Triumph
+								i(147599),	-- Furious Gladiator's Girdle of Victory
+								i(147598),	-- Furious Gladiator's Bracers of Victory
+								i(147597),	-- Furious Gladiator's Slippers of Ascendancy
+								i(147596),	-- Furious Gladiator's Cord of Ascendancy
+								i(147595),	-- Furious Gladiator's Cuffs of Ascendancy
+								i(147600),	-- Furious Gladiator's Greaves of Victory
 							},
 						}),
 						n(33921, { 	-- Nargle Lashcord <Veteran Arena Vendor>
@@ -4741,161 +4738,160 @@ _.Zones =
 							},
 						}),
 						n(40212, { 	-- Trapjaw Rix <Savage Gladiator>
+							["itemID"] = 137642,	-- Mark of Honor
 							["coord"] = { 59.6, 57.6, 502 },
 							["g"] = {
-								i(137642, {	-- Mark of Honor
-									i(146647),	-- Arsenal: Savage Gladiator's Weapons
-									i(146585, {	-- Ensemble: Savage Gladiator's Satin Armor		
-										i(41912),	-- Savage Gladiator's Satin Hood
-										i(41930),	-- Savage Gladiator's Satin Mantle
-										i(41918),	-- Savage Gladiator's Satin Robe
-										i(41937),	-- Savage Gladiator's Satin Gloves
-										i(41924),	-- Savage Gladiator's Satin Leggings
-									}),		
-									i(146587, {	-- Ensemble: Savage Gladiator's Silk Armor		
-										i(41943),	-- Savage Gladiator's Silk Cowl
-										i(41962),	-- Savage Gladiator's Silk Amice
-										i(41949),	-- Savage Gladiator's Silk Raiment
-										i(41968),	-- Savage Gladiator's Silk Handguards
-										i(41956),	-- Savage Gladiator's Silk Trousers
-									}),		
-									i(146581, {	-- Ensemble: Savage Gladiator's Felweave Armor		
-										i(41990),	-- Savage Gladiator's Felweave Cowl
-										i(42008),	-- Savage Gladiator's Felweave Amice
-										i(41996),	-- Savage Gladiator's Felweave Raiment
-										i(42014),	-- Savage Gladiator's Felweave Handguards
-										i(42002),	-- Savage Gladiator's Felweave Trousers
-									}),		
-									i(146579, {	-- Ensemble: Savage Gladiator's Dragonhide Armor		
-										i(41675),	-- Savage Gladiator's Dragonhide Helm
-										i(41712),	-- Savage Gladiator's Dragonhide Spaulders
-										i(41658),	-- Savage Gladiator's Dragonhide Robes
-										i(41770),	-- Savage Gladiator's Dragonhide Gloves
-										i(41664),	-- Savage Gladiator's Dragonhide Legguards
-									}),		
-									i(146582, {	-- Ensemble: Savage Gladiator's Leather Armor		
-										i(41644),	-- Savage Gladiator's Leather Helm
-										i(41646),	-- Savage Gladiator's Leather Spaulders
-										i(41647),	-- Savage Gladiator's Leather Tunic
-										i(41643),	-- Savage Gladiator's Leather Gloves
-										i(41645),	-- Savage Gladiator's Leather Legguards
-									}),		
-									i(146578, {	-- Ensemble: Savage Gladiator's Chain Armor		
-										i(41154),	-- Savage Gladiator's Chain Helm
-										i(41214),	-- Savage Gladiator's Chain Spaulders
-										i(41084),	-- Savage Gladiator's Chain Armor
-										i(41140),	-- Savage Gladiator's Chain Gauntlets
-										i(41202),	-- Savage Gladiator's Chain Leggings
-									}),		
-									i(146584, {	-- Ensemble: Savage Gladiator's Ringmail Armor		
-										i(41010),	-- Savage Gladiator's Ringmail Helm
-										i(41024),	-- Savage Gladiator's Ringmail Spaulders
-										i(40986),	-- Savage Gladiator's Ringmail Armor
-										i(40998),	-- Savage Gladiator's Ringmail Gauntlets
-										i(41023),	-- Savage Gladiator's Ringmail Leggings
-									}),		
-									i(146586, {	-- Ensemble: Savage Gladiator's Scaled Armor		
-										i(40818),	-- Savage Gladiator's Scaled Helm
-										i(40858),	-- Savage Gladiator's Scaled Shoulders
-										i(40780),	-- Savage Gladiator's Scaled Chestpiece
-										i(40798),	-- Savage Gladiator's Scaled Gauntlets
-										i(40838),	-- Savage Gladiator's Scaled Legguards
-									}),		
-									i(146583, {	-- Ensemble: Savage Gladiator's Plate Armor		
-										i(40816),	-- Savage Gladiator's Plate Helm
-										i(40856),	-- Savage Gladiator's Plate Shoulders
-										i(40778),	-- Savage Gladiator's Plate Chestpiece
-										i(40797),	-- Savage Gladiator's Plate 
-										i(40836),	-- Savage Gladiator's Plate 
-									}),		
-									i(146580, {	-- Ensemble: Savage Gladiator's Dreadplate Armor		
-										i(40817),	-- Savage Gladiator's Dreadplate Helm
-										i(40857),	-- Savage Gladiator's Dreadplate Shoulders
-										i(40779),	-- Savage Gladiator's Dreadplate Chestpiece
-										i(40799),	-- Savage Gladiator's Dreadplate 
-										i(40837),	-- Savage Gladiator's Dreadplate 
-									}),		
-									i(41278),	-- Savage Gladiator's Wyrmhide Spaulders
-									i(40778),	-- Savage Gladiator's Plate Chestpiece
-									i(40780),	-- Savage Gladiator's Scaled Chestpiece
-									i(40797),	-- Savage Gladiator's Plate Gauntlets
-									i(40798),	-- Savage Gladiator's Scaled Gauntlets
-									i(40799),	-- Savage Gladiator's Dreadplate Gauntlets
-									i(40816),	-- Savage Gladiator's Plate Helm
-									i(40817),	-- Savage Gladiator's Dreadplate Helm
-									i(40818),	-- Savage Gladiator's Scaled Helm
-									i(40836),	-- Savage Gladiator's Plate Legguards
-									i(40837),	-- Savage Gladiator's Dreadplate Legguards
-									i(40838),	-- Savage Gladiator's Scaled Legguards
-									i(40856),	-- Savage Gladiator's Plate Shoulders
-									i(40857),	-- Savage Gladiator's Dreadplate Shoulders
-									i(40858),	-- Savage Gladiator's Scaled Shoulders
-									i(40898),	-- Savage Gladiator's Ornamented Chestguard
-									i(40918),	-- Savage Gladiator's Ornamented Gloves
-									i(40930),	-- Savage Gladiator's Ornamented Headcover
-									i(40936),	-- Savage Gladiator's Ornamented Legplates
-									i(40960),	-- Savage Gladiator's Ornamented Spaulders
-									i(40986),	-- Savage Gladiator's Ringmail Armor
-									i(40987),	-- Savage Gladiator's Mail Armor
-									i(40998),	-- Savage Gladiator's Ringmail Gauntlets
-									i(41004),	-- Savage Gladiator's Mail Gauntlets
-									i(41010),	-- Savage Gladiator's Ringmail Helm
-									i(41016),	-- Savage Gladiator's Mail Helm
-									i(41023),	-- Savage Gladiator's Ringmail Leggings
-									i(41024),	-- Savage Gladiator's Ringmail Spaulders
-									i(41030),	-- Savage Gladiator's Mail Leggings
-									i(41041),	-- Savage Gladiator's Mail Spaulders
-									i(41078),	-- Savage Gladiator's Linked Armor
-									i(41084),	-- Savage Gladiator's Chain Armor
-									i(41134),	-- Savage Gladiator's Linked Gauntlets
-									i(41140),	-- Savage Gladiator's Chain Gauntlets
-									i(41148),	-- Savage Gladiator's Linked Helm
-									i(41154),	-- Savage Gladiator's Chain Helm
-									i(41160),	-- Savage Gladiator's Linked Leggings
-									i(41202),	-- Savage Gladiator's Chain Leggings
-									i(41208),	-- Savage Gladiator's Linked Spaulders
-									i(41214),	-- Savage Gladiator's Chain Spaulders
-									i(41268),	-- Savage Gladiator's Kodohide Gloves
-									i(41269),	-- Savage Gladiator's Kodohide Helm
-									i(41270),	-- Savage Gladiator's Kodohide Legguards
-									i(41271),	-- Savage Gladiator's Kodohide Spaulders
-									i(41272),	-- Savage Gladiator's Kodohide Robes
-									i(40779),	-- Savage Gladiator's Dreadplate Chestpiece
-									i(41290),	-- Savage Gladiator's Wyrmhide Gloves
-									i(41301),	-- Savage Gladiator's Wyrmhide Legguards
-									i(41313),	-- Savage Gladiator's Wyrmhide Robes
-									i(41324),	-- Savage Gladiator's Wyrmhide Helm
-									i(41643),	-- Savage Gladiator's Leather Gloves
-									i(41644),	-- Savage Gladiator's Leather Helm
-									i(41645),	-- Savage Gladiator's Leather Legguards
-									i(41646),	-- Savage Gladiator's Leather Spaulders
-									i(41647),	-- Savage Gladiator's Leather Tunic
-									i(41658),	-- Savage Gladiator's Dragonhide Robes
-									i(41664),	-- Savage Gladiator's Dragonhide Legguards
+								i(146647),	-- Arsenal: Savage Gladiator's Weapons
+								i(146585, {	-- Ensemble: Savage Gladiator's Satin Armor		
+									i(41912),	-- Savage Gladiator's Satin Hood
+									i(41930),	-- Savage Gladiator's Satin Mantle
+									i(41918),	-- Savage Gladiator's Satin Robe
+									i(41937),	-- Savage Gladiator's Satin Gloves
+									i(41924),	-- Savage Gladiator's Satin Leggings
+								}),		
+								i(146587, {	-- Ensemble: Savage Gladiator's Silk Armor		
+									i(41943),	-- Savage Gladiator's Silk Cowl
+									i(41962),	-- Savage Gladiator's Silk Amice
+									i(41949),	-- Savage Gladiator's Silk Raiment
+									i(41968),	-- Savage Gladiator's Silk Handguards
+									i(41956),	-- Savage Gladiator's Silk Trousers
+								}),		
+								i(146581, {	-- Ensemble: Savage Gladiator's Felweave Armor		
+									i(41990),	-- Savage Gladiator's Felweave Cowl
+									i(42008),	-- Savage Gladiator's Felweave Amice
+									i(41996),	-- Savage Gladiator's Felweave Raiment
+									i(42014),	-- Savage Gladiator's Felweave Handguards
+									i(42002),	-- Savage Gladiator's Felweave Trousers
+								}),		
+								i(146579, {	-- Ensemble: Savage Gladiator's Dragonhide Armor		
 									i(41675),	-- Savage Gladiator's Dragonhide Helm
 									i(41712),	-- Savage Gladiator's Dragonhide Spaulders
+									i(41658),	-- Savage Gladiator's Dragonhide Robes
 									i(41770),	-- Savage Gladiator's Dragonhide Gloves
-									i(41847),	-- Savage Gladiator's Mooncloth Gloves
-									i(41848),	-- Savage Gladiator's Mooncloth Hood
-									i(41849),	-- Savage Gladiator's Mooncloth Leggings
-									i(41850),	-- Savage Gladiator's Mooncloth Mantle
-									i(41851),	-- Savage Gladiator's Mooncloth Robe
-									i(41912),	-- Savage Gladiator's Satin Hood
-									i(41918),	-- Savage Gladiator's Satin Robe
-									i(41924),	-- Savage Gladiator's Satin Leggings
-									i(41930),	-- Savage Gladiator's Satin Mantle
-									i(41937),	-- Savage Gladiator's Satin Gloves
-									i(41943),	-- Savage Gladiator's Silk Cowl
-									i(41949),	-- Savage Gladiator's Silk Raiment
-									i(41956),	-- Savage Gladiator's Silk Trousers
-									i(41962),	-- Savage Gladiator's Silk Amice
-									i(41968),	-- Savage Gladiator's Silk Handguards
-									i(41990),	-- Savage Gladiator's Felweave Cowl
-									i(41996),	-- Savage Gladiator's Felweave Raiment
-									i(42002),	-- Savage Gladiator's Felweave Trousers
-									i(42008),	-- Savage Gladiator's Felweave Amice
-									i(42014),	-- Savage Gladiator's Felweave Handguards
-								}),
+									i(41664),	-- Savage Gladiator's Dragonhide Legguards
+								}),		
+								i(146582, {	-- Ensemble: Savage Gladiator's Leather Armor		
+									i(41644),	-- Savage Gladiator's Leather Helm
+									i(41646),	-- Savage Gladiator's Leather Spaulders
+									i(41647),	-- Savage Gladiator's Leather Tunic
+									i(41643),	-- Savage Gladiator's Leather Gloves
+									i(41645),	-- Savage Gladiator's Leather Legguards
+								}),		
+								i(146578, {	-- Ensemble: Savage Gladiator's Chain Armor		
+									i(41154),	-- Savage Gladiator's Chain Helm
+									i(41214),	-- Savage Gladiator's Chain Spaulders
+									i(41084),	-- Savage Gladiator's Chain Armor
+									i(41140),	-- Savage Gladiator's Chain Gauntlets
+									i(41202),	-- Savage Gladiator's Chain Leggings
+								}),		
+								i(146584, {	-- Ensemble: Savage Gladiator's Ringmail Armor		
+									i(41010),	-- Savage Gladiator's Ringmail Helm
+									i(41024),	-- Savage Gladiator's Ringmail Spaulders
+									i(40986),	-- Savage Gladiator's Ringmail Armor
+									i(40998),	-- Savage Gladiator's Ringmail Gauntlets
+									i(41023),	-- Savage Gladiator's Ringmail Leggings
+								}),		
+								i(146586, {	-- Ensemble: Savage Gladiator's Scaled Armor		
+									i(40818),	-- Savage Gladiator's Scaled Helm
+									i(40858),	-- Savage Gladiator's Scaled Shoulders
+									i(40780),	-- Savage Gladiator's Scaled Chestpiece
+									i(40798),	-- Savage Gladiator's Scaled Gauntlets
+									i(40838),	-- Savage Gladiator's Scaled Legguards
+								}),		
+								i(146583, {	-- Ensemble: Savage Gladiator's Plate Armor		
+									i(40816),	-- Savage Gladiator's Plate Helm
+									i(40856),	-- Savage Gladiator's Plate Shoulders
+									i(40778),	-- Savage Gladiator's Plate Chestpiece
+									i(40797),	-- Savage Gladiator's Plate 
+									i(40836),	-- Savage Gladiator's Plate 
+								}),		
+								i(146580, {	-- Ensemble: Savage Gladiator's Dreadplate Armor		
+									i(40817),	-- Savage Gladiator's Dreadplate Helm
+									i(40857),	-- Savage Gladiator's Dreadplate Shoulders
+									i(40779),	-- Savage Gladiator's Dreadplate Chestpiece
+									i(40799),	-- Savage Gladiator's Dreadplate 
+									i(40837),	-- Savage Gladiator's Dreadplate 
+								}),		
+								i(41278),	-- Savage Gladiator's Wyrmhide Spaulders
+								i(40778),	-- Savage Gladiator's Plate Chestpiece
+								i(40780),	-- Savage Gladiator's Scaled Chestpiece
+								i(40797),	-- Savage Gladiator's Plate Gauntlets
+								i(40798),	-- Savage Gladiator's Scaled Gauntlets
+								i(40799),	-- Savage Gladiator's Dreadplate Gauntlets
+								i(40816),	-- Savage Gladiator's Plate Helm
+								i(40817),	-- Savage Gladiator's Dreadplate Helm
+								i(40818),	-- Savage Gladiator's Scaled Helm
+								i(40836),	-- Savage Gladiator's Plate Legguards
+								i(40837),	-- Savage Gladiator's Dreadplate Legguards
+								i(40838),	-- Savage Gladiator's Scaled Legguards
+								i(40856),	-- Savage Gladiator's Plate Shoulders
+								i(40857),	-- Savage Gladiator's Dreadplate Shoulders
+								i(40858),	-- Savage Gladiator's Scaled Shoulders
+								i(40898),	-- Savage Gladiator's Ornamented Chestguard
+								i(40918),	-- Savage Gladiator's Ornamented Gloves
+								i(40930),	-- Savage Gladiator's Ornamented Headcover
+								i(40936),	-- Savage Gladiator's Ornamented Legplates
+								i(40960),	-- Savage Gladiator's Ornamented Spaulders
+								i(40986),	-- Savage Gladiator's Ringmail Armor
+								i(40987),	-- Savage Gladiator's Mail Armor
+								i(40998),	-- Savage Gladiator's Ringmail Gauntlets
+								i(41004),	-- Savage Gladiator's Mail Gauntlets
+								i(41010),	-- Savage Gladiator's Ringmail Helm
+								i(41016),	-- Savage Gladiator's Mail Helm
+								i(41023),	-- Savage Gladiator's Ringmail Leggings
+								i(41024),	-- Savage Gladiator's Ringmail Spaulders
+								i(41030),	-- Savage Gladiator's Mail Leggings
+								i(41041),	-- Savage Gladiator's Mail Spaulders
+								i(41078),	-- Savage Gladiator's Linked Armor
+								i(41084),	-- Savage Gladiator's Chain Armor
+								i(41134),	-- Savage Gladiator's Linked Gauntlets
+								i(41140),	-- Savage Gladiator's Chain Gauntlets
+								i(41148),	-- Savage Gladiator's Linked Helm
+								i(41154),	-- Savage Gladiator's Chain Helm
+								i(41160),	-- Savage Gladiator's Linked Leggings
+								i(41202),	-- Savage Gladiator's Chain Leggings
+								i(41208),	-- Savage Gladiator's Linked Spaulders
+								i(41214),	-- Savage Gladiator's Chain Spaulders
+								i(41268),	-- Savage Gladiator's Kodohide Gloves
+								i(41269),	-- Savage Gladiator's Kodohide Helm
+								i(41270),	-- Savage Gladiator's Kodohide Legguards
+								i(41271),	-- Savage Gladiator's Kodohide Spaulders
+								i(41272),	-- Savage Gladiator's Kodohide Robes
+								i(40779),	-- Savage Gladiator's Dreadplate Chestpiece
+								i(41290),	-- Savage Gladiator's Wyrmhide Gloves
+								i(41301),	-- Savage Gladiator's Wyrmhide Legguards
+								i(41313),	-- Savage Gladiator's Wyrmhide Robes
+								i(41324),	-- Savage Gladiator's Wyrmhide Helm
+								i(41643),	-- Savage Gladiator's Leather Gloves
+								i(41644),	-- Savage Gladiator's Leather Helm
+								i(41645),	-- Savage Gladiator's Leather Legguards
+								i(41646),	-- Savage Gladiator's Leather Spaulders
+								i(41647),	-- Savage Gladiator's Leather Tunic
+								i(41658),	-- Savage Gladiator's Dragonhide Robes
+								i(41664),	-- Savage Gladiator's Dragonhide Legguards
+								i(41675),	-- Savage Gladiator's Dragonhide Helm
+								i(41712),	-- Savage Gladiator's Dragonhide Spaulders
+								i(41770),	-- Savage Gladiator's Dragonhide Gloves
+								i(41847),	-- Savage Gladiator's Mooncloth Gloves
+								i(41848),	-- Savage Gladiator's Mooncloth Hood
+								i(41849),	-- Savage Gladiator's Mooncloth Leggings
+								i(41850),	-- Savage Gladiator's Mooncloth Mantle
+								i(41851),	-- Savage Gladiator's Mooncloth Robe
+								i(41912),	-- Savage Gladiator's Satin Hood
+								i(41918),	-- Savage Gladiator's Satin Robe
+								i(41924),	-- Savage Gladiator's Satin Leggings
+								i(41930),	-- Savage Gladiator's Satin Mantle
+								i(41937),	-- Savage Gladiator's Satin Gloves
+								i(41943),	-- Savage Gladiator's Silk Cowl
+								i(41949),	-- Savage Gladiator's Silk Raiment
+								i(41956),	-- Savage Gladiator's Silk Trousers
+								i(41962),	-- Savage Gladiator's Silk Amice
+								i(41968),	-- Savage Gladiator's Silk Handguards
+								i(41990),	-- Savage Gladiator's Felweave Cowl
+								i(41996),	-- Savage Gladiator's Felweave Raiment
+								i(42002),	-- Savage Gladiator's Felweave Trousers
+								i(42008),	-- Savage Gladiator's Felweave Amice
+								i(42014),	-- Savage Gladiator's Felweave Handguards
 							},
 						}),
 						n(31864, { 	-- Xazi Smolderpipe >Season 6< Elite
@@ -4931,347 +4927,345 @@ _.Zones =
 							},
 						}),
 						n(69971, { 	-- Xazi Smolderpipe <Wrathful Gladiator>
+							["itemID"] = 137642,	-- Mark of Honor
 							["coord"] = { 59.0, 58.8, 502 },
 							["g"] = {
-								i(137642, {	-- Mark of Honor
-									i(146642),	-- Arsenal: Wrathful Gladiator's Weapons
-									i(51452),	-- Wrathful Gladiator's Barrier	
-									i(51532),	-- Wrathful Gladiator's Baton of Light	
-									i(51404),	-- Wrathful Gladiator's Battle Staff	
-									i(51406),	-- Wrathful Gladiator's Blade of Alacrity	
-									i(51445),	-- Wrathful Gladiator's Bonecracker	
-									i(51390),	-- Wrathful Gladiator's Bonegrinder	
-									i(51525),	-- Wrathful Gladiator's Chopper	
-									i(51515),	-- Wrathful Gladiator's Cleaver	
-									i(51407),	-- Wrathful Gladiator's Compendium	
-									i(51388),	-- Wrathful Gladiator's Decapitator	
-									i(51396),	-- Wrathful Gladiator's Endgame	
-									i(51456),	-- Wrathful Gladiator's Energy Staff	
-									i(51443),	-- Wrathful Gladiator's Fleshslicer	
-									i(51402),	-- Wrathful Gladiator's Focus Staff	
-									i(51453),	-- Wrathful Gladiator's Gavel	
-									i(51392),	-- Wrathful Gladiator's Greatsword	
-									i(51408),	-- Wrathful Gladiator's Grimoire	
-									i(51439),	-- Wrathful Gladiator's Hacker	
-									i(51411),	-- Wrathful Gladiator's Heavy Crossbow	
-									i(51394),	-- Wrathful Gladiator's Longbow	
-									i(51527),	-- Wrathful Gladiator's Mutilator	
-									i(51531),	-- Wrathful Gladiator's Piercing Touch	
-									i(51480),	-- Wrathful Gladiator's Pike	
-									i(51519),	-- Wrathful Gladiator's Pummeler	
-									i(51447),	-- Wrathful Gladiator's Quickblade	
-									i(51455),	-- Wrathful Gladiator's Redoubt	
-									i(51409),	-- Wrathful Gladiator's Reprieve	
-									i(51449),	-- Wrathful Gladiator's Rifle	
-									i(51523),	-- Wrathful Gladiator's Ripper	
-									i(51517),	-- Wrathful Gladiator's Shanker	
-									i(51533),	-- Wrathful Gladiator's Shield Wall	
-									i(51441),	-- Wrathful Gladiator's Shiv	
-									i(51530),	-- Wrathful Gladiator's Slasher	
-									i(51521),	-- Wrathful Gladiator's Slicer	
-									i(51397),	-- Wrathful Gladiator's Spellblade	
-									i(51431),	-- Wrathful Gladiator's Staff	
-									i(51410),	-- Wrathful Gladiator's Touch of Defeat	
-									i(51451),	-- Wrathful Gladiator's Wand of Alacrity	
-									i(51400),	-- Wrathful Gladiator's War Staff
-									i(51476),	-- Wrathful Gladiator's Scaled Helm
-									i(51458),	-- Wrathful Gladiator's Chain Armor
-									i(51413),	-- Wrathful Gladiator's Dreadplate Chestpiece
-									i(51414),	-- Wrathful Gladiator's Dreadplate Gauntlets
-									i(51415),	-- Wrathful Gladiator's Dreadplate Helm
-									i(51416),	-- Wrathful Gladiator's Dreadplate Legguards
-									i(51418),	-- Wrathful Gladiator's Dreadplate Shoulders
-									i(51419),	-- Wrathful Gladiator's Kodohide Robes
-									i(51420),	-- Wrathful Gladiator's Kodohide Gloves
-									i(51421),	-- Wrathful Gladiator's Kodohide Helm
-									i(51422),	-- Wrathful Gladiator's Kodohide Legguards
-									i(51424),	-- Wrathful Gladiator's Kodohide Spaulders
-									i(51425),	-- Wrathful Gladiator's Dragonhide Robes
-									i(51426),	-- Wrathful Gladiator's Dragonhide Gloves
-									i(51427),	-- Wrathful Gladiator's Dragonhide Helm
-									i(51428),	-- Wrathful Gladiator's Dragonhide Legguards
-									i(51430),	-- Wrathful Gladiator's Dragonhide Spaulders
-									i(51433),	-- Wrathful Gladiator's Wyrmhide Robes
-									i(51434),	-- Wrathful Gladiator's Wyrmhide Gloves
-									i(51435),	-- Wrathful Gladiator's Wyrmhide Helm
-									i(51436),	-- Wrathful Gladiator's Wyrmhide Legguards
-									i(51438),	-- Wrathful Gladiator's Wyrmhide Spaulders
-									i(51459),	-- Wrathful Gladiator's Chain Gauntlets
-									i(51460),	-- Wrathful Gladiator's Chain Helm
-									i(51461),	-- Wrathful Gladiator's Chain Leggings
-									i(51462),	-- Wrathful Gladiator's Chain Spaulders
-									i(51463),	-- Wrathful Gladiator's Silk Raiment
-									i(51464),	-- Wrathful Gladiator's Silk Handguards
-									i(51465),	-- Wrathful Gladiator's Silk Cowl
-									i(51466),	-- Wrathful Gladiator's Silk Trousers
-									i(51467),	-- Wrathful Gladiator's Silk Amice
-									i(51468),	-- Wrathful Gladiator's Ornamented Chestguard
-									i(51469),	-- Wrathful Gladiator's Ornamented Gloves
-									i(51470),	-- Wrathful Gladiator's Ornamented Headcover
-									i(51471),	-- Wrathful Gladiator's Ornamented Legplates
-									i(51473),	-- Wrathful Gladiator's Ornamented Spaulders
-									i(51474),	-- Wrathful Gladiator's Scaled Chestpiece
-									i(51475),	-- Wrathful Gladiator's Scaled Gauntlets
-									i(51477),	-- Wrathful Gladiator's Scaled Legguards
-									i(51479),	-- Wrathful Gladiator's Scaled Shoulders
-									i(51482),	-- Wrathful Gladiator's Mooncloth Robe
-									i(51483),	-- Wrathful Gladiator's Mooncloth Gloves
-									i(51484),	-- Wrathful Gladiator's Mooncloth Hood
-									i(51485),	-- Wrathful Gladiator's Mooncloth Leggings			
-									i(51486),	-- Wrathful Gladiator's Mooncloth Mantle
-									i(51487),	-- Wrathful Gladiator's Satin Robe
-									i(51488),	-- Wrathful Gladiator's Satin Gloves
-									i(51489),	-- Wrathful Gladiator's Satin Hood
-									i(51490),	-- Wrathful Gladiator's Satin Leggings
-									i(51491),	-- Wrathful Gladiator's Satin Mantle
-									i(51492),	-- Wrathful Gladiator's Leather Tunic
-									i(51493),	-- Wrathful Gladiator's Leather Gloves
-									i(51494),	-- Wrathful Gladiator's Leather Helm
-									i(51495),	-- Wrathful Gladiator's Leather Legguards
-									i(51496),	-- Wrathful Gladiator's Leather Spaulders
-									i(51497),	-- Wrathful Gladiator's Ringmail Armor
-									i(51498),	-- Wrathful Gladiator's Ringmail Gauntlets
-									i(51499),	-- Wrathful Gladiator's Ringmail Helm
-									i(51500),	-- Wrathful Gladiator's Ringmail Leggings
-									i(51502),	-- Wrathful Gladiator's Ringmail Spaulders
-									i(51503),	-- Wrathful Gladiator's Linked Armor
-									i(51504),	-- Wrathful Gladiator's Linked Gauntlets
-									i(51505),	-- Wrathful Gladiator's Linked Helm
-									i(51506),	-- Wrathful Gladiator's Linked Leggings
-									i(51508),	-- Wrathful Gladiator's Linked Spaulders
-									i(51509),	-- Wrathful Gladiator's Mail Armor
-									i(51510),	-- Wrathful Gladiator's Mail Gauntlets
-									i(51511),	-- Wrathful Gladiator's Mail Helm
-									i(51512),	-- Wrathful Gladiator's Mail Leggings
-									i(51514),	-- Wrathful Gladiator's Mail Spaulders
-									i(51536),	-- Wrathful Gladiator's Felweave Raiment
-									i(51537),	-- Wrathful Gladiator's Felweave Handguards
-									i(51538),	-- Wrathful Gladiator's Felweave Cowl
-									i(51539),	-- Wrathful Gladiator's Felweave Trousers
-									i(51540),	-- Wrathful Gladiator's Felweave Amice
-									i(51541),	-- Wrathful Gladiator's Plate Chestpiece
-									i(51542),	-- Wrathful Gladiator's Plate Gauntlets
-									i(51543),	-- Wrathful Gladiator's Plate Helm
-									i(51544),	-- Wrathful Gladiator's Plate Legguards
-									i(51545),	-- Wrathful Gladiator's Plate Shoulders
-									i(51328),	-- Wrathful Gladiator's Treads of Dominance
-									i(51364),	-- Wrathful Gladiator's Bracers of Triumph
-									i(51365),	-- Wrathful Gladiator's Cord of Salvation
-									i(51366),	-- Wrathful Gladiator's Treads of Salvation
-									i(51367),	-- Wrathful Gladiator's Cuffs of Salvation
-									i(51368),	-- Wrathful Gladiator's Belt of Triumph
-									i(51369),	-- Wrathful Gladiator's Boots of Triumph
-									i(51370),	-- Wrathful Gladiator's Armwraps of Triumph
-									i(51371),	-- Wrathful Gladiator's Waistguard of Salvation
-									i(51372),	-- Wrathful Gladiator's Sabatons of Salvation
-									i(51373),	-- Wrathful Gladiator's Wristguards of Salvation
-									i(51374),	-- Wrathful Gladiator's Waistguard of Dominance
-									i(51375),	-- Wrathful Gladiator's Sabatons of Dominance
-									i(51376),	-- Wrathful Gladiator's Wristguards of Dominance
-									i(51327),	-- Wrathful Gladiator's Cord of Dominance
-									i(51329),	-- Wrathful Gladiator's Cuffs of Dominance
-									i(51330),	-- Wrathful Gladiator's Cloak of Dominance
-									i(51332),	-- Wrathful Gladiator's Cloak of Subjugation
-									i(51334),	-- Wrathful Gladiator's Cloak of Ascendancy
-									i(51337),	-- Wrathful Gladiator's Cord of Alacrity
-									i(51338),	-- Wrathful Gladiator's Treads of Alacrity
-									i(51339),	-- Wrathful Gladiator's Cuffs of Alacrity
-									i(51340),	-- Wrathful Gladiator's Belt of Salvation
-									i(51341),	-- Wrathful Gladiator's Boots of Salvation
-									i(51342),	-- Wrathful Gladiator's Armwraps of Salvation
-									i(51343),	-- Wrathful Gladiator's Belt of Dominance
-									i(51344),	-- Wrathful Gladiator's Boots of Dominance
-									i(51345),	-- Wrathful Gladiator's Armwraps of Dominance
-									i(51346),	-- Wrathful Gladiator's Cloak of Salvation
-									i(51348),	-- Wrathful Gladiator's Cloak of Deliverance
-									i(51350),	-- Wrathful Gladiator's Waistguard of Triumph
-									i(51351),	-- Wrathful Gladiator's Sabatons of Triumph
-									i(51352),	-- Wrathful Gladiator's Wristguards of Triumph
-									i(51354),	-- Wrathful Gladiator's Cloak of Triumph
-									i(51356),	-- Wrathful Gladiator's Cloak of Victory
-									i(51359),	-- Wrathful Gladiator's Girdle of Salvation
-									i(51360),	-- Wrathful Gladiator's Greaves of Salvation
-									i(51361),	-- Wrathful Gladiator's Bracers of Salvation
-									i(51362),	-- Wrathful Gladiator's Girdle of Triumph
-									i(51363),	-- Wrathful Gladiator's Greaves of Triumph
-									i(147607),	-- Wrathful Gladiator's Bracers of Victory
-									i(147606),	-- Wrathful Gladiator's Cord of Ascendancy
-									i(147605),	-- Wrathful Gladiator's Cuffs of Ascendancy
-									i(147608),	-- Wrathful Gladiator's Girdle of Victory
-								}),
+								i(146642),	-- Arsenal: Wrathful Gladiator's Weapons
+								i(51452),	-- Wrathful Gladiator's Barrier	
+								i(51532),	-- Wrathful Gladiator's Baton of Light	
+								i(51404),	-- Wrathful Gladiator's Battle Staff	
+								i(51406),	-- Wrathful Gladiator's Blade of Alacrity	
+								i(51445),	-- Wrathful Gladiator's Bonecracker	
+								i(51390),	-- Wrathful Gladiator's Bonegrinder	
+								i(51525),	-- Wrathful Gladiator's Chopper	
+								i(51515),	-- Wrathful Gladiator's Cleaver	
+								i(51407),	-- Wrathful Gladiator's Compendium	
+								i(51388),	-- Wrathful Gladiator's Decapitator	
+								i(51396),	-- Wrathful Gladiator's Endgame	
+								i(51456),	-- Wrathful Gladiator's Energy Staff	
+								i(51443),	-- Wrathful Gladiator's Fleshslicer	
+								i(51402),	-- Wrathful Gladiator's Focus Staff	
+								i(51453),	-- Wrathful Gladiator's Gavel	
+								i(51392),	-- Wrathful Gladiator's Greatsword	
+								i(51408),	-- Wrathful Gladiator's Grimoire	
+								i(51439),	-- Wrathful Gladiator's Hacker	
+								i(51411),	-- Wrathful Gladiator's Heavy Crossbow	
+								i(51394),	-- Wrathful Gladiator's Longbow	
+								i(51527),	-- Wrathful Gladiator's Mutilator	
+								i(51531),	-- Wrathful Gladiator's Piercing Touch	
+								i(51480),	-- Wrathful Gladiator's Pike	
+								i(51519),	-- Wrathful Gladiator's Pummeler	
+								i(51447),	-- Wrathful Gladiator's Quickblade	
+								i(51455),	-- Wrathful Gladiator's Redoubt	
+								i(51409),	-- Wrathful Gladiator's Reprieve	
+								i(51449),	-- Wrathful Gladiator's Rifle	
+								i(51523),	-- Wrathful Gladiator's Ripper	
+								i(51517),	-- Wrathful Gladiator's Shanker	
+								i(51533),	-- Wrathful Gladiator's Shield Wall	
+								i(51441),	-- Wrathful Gladiator's Shiv	
+								i(51530),	-- Wrathful Gladiator's Slasher	
+								i(51521),	-- Wrathful Gladiator's Slicer	
+								i(51397),	-- Wrathful Gladiator's Spellblade	
+								i(51431),	-- Wrathful Gladiator's Staff	
+								i(51410),	-- Wrathful Gladiator's Touch of Defeat	
+								i(51451),	-- Wrathful Gladiator's Wand of Alacrity	
+								i(51400),	-- Wrathful Gladiator's War Staff
+								i(51476),	-- Wrathful Gladiator's Scaled Helm
+								i(51458),	-- Wrathful Gladiator's Chain Armor
+								i(51413),	-- Wrathful Gladiator's Dreadplate Chestpiece
+								i(51414),	-- Wrathful Gladiator's Dreadplate Gauntlets
+								i(51415),	-- Wrathful Gladiator's Dreadplate Helm
+								i(51416),	-- Wrathful Gladiator's Dreadplate Legguards
+								i(51418),	-- Wrathful Gladiator's Dreadplate Shoulders
+								i(51419),	-- Wrathful Gladiator's Kodohide Robes
+								i(51420),	-- Wrathful Gladiator's Kodohide Gloves
+								i(51421),	-- Wrathful Gladiator's Kodohide Helm
+								i(51422),	-- Wrathful Gladiator's Kodohide Legguards
+								i(51424),	-- Wrathful Gladiator's Kodohide Spaulders
+								i(51425),	-- Wrathful Gladiator's Dragonhide Robes
+								i(51426),	-- Wrathful Gladiator's Dragonhide Gloves
+								i(51427),	-- Wrathful Gladiator's Dragonhide Helm
+								i(51428),	-- Wrathful Gladiator's Dragonhide Legguards
+								i(51430),	-- Wrathful Gladiator's Dragonhide Spaulders
+								i(51433),	-- Wrathful Gladiator's Wyrmhide Robes
+								i(51434),	-- Wrathful Gladiator's Wyrmhide Gloves
+								i(51435),	-- Wrathful Gladiator's Wyrmhide Helm
+								i(51436),	-- Wrathful Gladiator's Wyrmhide Legguards
+								i(51438),	-- Wrathful Gladiator's Wyrmhide Spaulders
+								i(51459),	-- Wrathful Gladiator's Chain Gauntlets
+								i(51460),	-- Wrathful Gladiator's Chain Helm
+								i(51461),	-- Wrathful Gladiator's Chain Leggings
+								i(51462),	-- Wrathful Gladiator's Chain Spaulders
+								i(51463),	-- Wrathful Gladiator's Silk Raiment
+								i(51464),	-- Wrathful Gladiator's Silk Handguards
+								i(51465),	-- Wrathful Gladiator's Silk Cowl
+								i(51466),	-- Wrathful Gladiator's Silk Trousers
+								i(51467),	-- Wrathful Gladiator's Silk Amice
+								i(51468),	-- Wrathful Gladiator's Ornamented Chestguard
+								i(51469),	-- Wrathful Gladiator's Ornamented Gloves
+								i(51470),	-- Wrathful Gladiator's Ornamented Headcover
+								i(51471),	-- Wrathful Gladiator's Ornamented Legplates
+								i(51473),	-- Wrathful Gladiator's Ornamented Spaulders
+								i(51474),	-- Wrathful Gladiator's Scaled Chestpiece
+								i(51475),	-- Wrathful Gladiator's Scaled Gauntlets
+								i(51477),	-- Wrathful Gladiator's Scaled Legguards
+								i(51479),	-- Wrathful Gladiator's Scaled Shoulders
+								i(51482),	-- Wrathful Gladiator's Mooncloth Robe
+								i(51483),	-- Wrathful Gladiator's Mooncloth Gloves
+								i(51484),	-- Wrathful Gladiator's Mooncloth Hood
+								i(51485),	-- Wrathful Gladiator's Mooncloth Leggings			
+								i(51486),	-- Wrathful Gladiator's Mooncloth Mantle
+								i(51487),	-- Wrathful Gladiator's Satin Robe
+								i(51488),	-- Wrathful Gladiator's Satin Gloves
+								i(51489),	-- Wrathful Gladiator's Satin Hood
+								i(51490),	-- Wrathful Gladiator's Satin Leggings
+								i(51491),	-- Wrathful Gladiator's Satin Mantle
+								i(51492),	-- Wrathful Gladiator's Leather Tunic
+								i(51493),	-- Wrathful Gladiator's Leather Gloves
+								i(51494),	-- Wrathful Gladiator's Leather Helm
+								i(51495),	-- Wrathful Gladiator's Leather Legguards
+								i(51496),	-- Wrathful Gladiator's Leather Spaulders
+								i(51497),	-- Wrathful Gladiator's Ringmail Armor
+								i(51498),	-- Wrathful Gladiator's Ringmail Gauntlets
+								i(51499),	-- Wrathful Gladiator's Ringmail Helm
+								i(51500),	-- Wrathful Gladiator's Ringmail Leggings
+								i(51502),	-- Wrathful Gladiator's Ringmail Spaulders
+								i(51503),	-- Wrathful Gladiator's Linked Armor
+								i(51504),	-- Wrathful Gladiator's Linked Gauntlets
+								i(51505),	-- Wrathful Gladiator's Linked Helm
+								i(51506),	-- Wrathful Gladiator's Linked Leggings
+								i(51508),	-- Wrathful Gladiator's Linked Spaulders
+								i(51509),	-- Wrathful Gladiator's Mail Armor
+								i(51510),	-- Wrathful Gladiator's Mail Gauntlets
+								i(51511),	-- Wrathful Gladiator's Mail Helm
+								i(51512),	-- Wrathful Gladiator's Mail Leggings
+								i(51514),	-- Wrathful Gladiator's Mail Spaulders
+								i(51536),	-- Wrathful Gladiator's Felweave Raiment
+								i(51537),	-- Wrathful Gladiator's Felweave Handguards
+								i(51538),	-- Wrathful Gladiator's Felweave Cowl
+								i(51539),	-- Wrathful Gladiator's Felweave Trousers
+								i(51540),	-- Wrathful Gladiator's Felweave Amice
+								i(51541),	-- Wrathful Gladiator's Plate Chestpiece
+								i(51542),	-- Wrathful Gladiator's Plate Gauntlets
+								i(51543),	-- Wrathful Gladiator's Plate Helm
+								i(51544),	-- Wrathful Gladiator's Plate Legguards
+								i(51545),	-- Wrathful Gladiator's Plate Shoulders
+								i(51328),	-- Wrathful Gladiator's Treads of Dominance
+								i(51364),	-- Wrathful Gladiator's Bracers of Triumph
+								i(51365),	-- Wrathful Gladiator's Cord of Salvation
+								i(51366),	-- Wrathful Gladiator's Treads of Salvation
+								i(51367),	-- Wrathful Gladiator's Cuffs of Salvation
+								i(51368),	-- Wrathful Gladiator's Belt of Triumph
+								i(51369),	-- Wrathful Gladiator's Boots of Triumph
+								i(51370),	-- Wrathful Gladiator's Armwraps of Triumph
+								i(51371),	-- Wrathful Gladiator's Waistguard of Salvation
+								i(51372),	-- Wrathful Gladiator's Sabatons of Salvation
+								i(51373),	-- Wrathful Gladiator's Wristguards of Salvation
+								i(51374),	-- Wrathful Gladiator's Waistguard of Dominance
+								i(51375),	-- Wrathful Gladiator's Sabatons of Dominance
+								i(51376),	-- Wrathful Gladiator's Wristguards of Dominance
+								i(51327),	-- Wrathful Gladiator's Cord of Dominance
+								i(51329),	-- Wrathful Gladiator's Cuffs of Dominance
+								i(51330),	-- Wrathful Gladiator's Cloak of Dominance
+								i(51332),	-- Wrathful Gladiator's Cloak of Subjugation
+								i(51334),	-- Wrathful Gladiator's Cloak of Ascendancy
+								i(51337),	-- Wrathful Gladiator's Cord of Alacrity
+								i(51338),	-- Wrathful Gladiator's Treads of Alacrity
+								i(51339),	-- Wrathful Gladiator's Cuffs of Alacrity
+								i(51340),	-- Wrathful Gladiator's Belt of Salvation
+								i(51341),	-- Wrathful Gladiator's Boots of Salvation
+								i(51342),	-- Wrathful Gladiator's Armwraps of Salvation
+								i(51343),	-- Wrathful Gladiator's Belt of Dominance
+								i(51344),	-- Wrathful Gladiator's Boots of Dominance
+								i(51345),	-- Wrathful Gladiator's Armwraps of Dominance
+								i(51346),	-- Wrathful Gladiator's Cloak of Salvation
+								i(51348),	-- Wrathful Gladiator's Cloak of Deliverance
+								i(51350),	-- Wrathful Gladiator's Waistguard of Triumph
+								i(51351),	-- Wrathful Gladiator's Sabatons of Triumph
+								i(51352),	-- Wrathful Gladiator's Wristguards of Triumph
+								i(51354),	-- Wrathful Gladiator's Cloak of Triumph
+								i(51356),	-- Wrathful Gladiator's Cloak of Victory
+								i(51359),	-- Wrathful Gladiator's Girdle of Salvation
+								i(51360),	-- Wrathful Gladiator's Greaves of Salvation
+								i(51361),	-- Wrathful Gladiator's Bracers of Salvation
+								i(51362),	-- Wrathful Gladiator's Girdle of Triumph
+								i(51363),	-- Wrathful Gladiator's Greaves of Triumph
+								i(147607),	-- Wrathful Gladiator's Bracers of Victory
+								i(147606),	-- Wrathful Gladiator's Cord of Ascendancy
+								i(147605),	-- Wrathful Gladiator's Cuffs of Ascendancy
+								i(147608),	-- Wrathful Gladiator's Girdle of Victory
 							},
 						}),
 						n(69973, { 	-- Zom Bocom <Relentless Gladiator>
+							["itemID"] = 137642,	-- Mark of Honor
 							["coord"] = { 59.0, 58.8, 502 },
 							["g"] = {
-								i(137642, {	-- Mark of Honor
-									i(146643),	-- Arsenal: Relentless Gladiator's Weapons
-									i(42566),	-- Relentless Gladiator's Barrier
-									i(42515),	-- Relentless Gladiator's Baton of Light
-									i(42366),	-- Relentless Gladiator's Battle Staff
-									i(49189),	-- Relentless Gladiator's Blade of Alacrity
-									i(42282),	-- Relentless Gladiator's Bonecracker
-									i(42324),	-- Relentless Gladiator's Bonegrinder
-									i(42234),	-- Relentless Gladiator's Chopper
-									i(42210),	-- Relentless Gladiator's Cleaver
-									i(49187),	-- Relentless Gladiator's Compendium
-									i(42319),	-- Relentless Gladiator's Decapitator
-									i(42527),	-- Relentless Gladiator's Endgame
-									i(42386),	-- Relentless Gladiator's Energy Staff
-									i(42272),	-- Relentless Gladiator's Fleshslicer
-									i(44424),	-- Relentless Gladiator's Focus Staff
-									i(42354),	-- Relentless Gladiator's Gavel
-									i(42334),	-- Relentless Gladiator's Greatsword
-									i(42539),	-- Relentless Gladiator's Grimoire
-									i(42229),	-- Relentless Gladiator's Hacker
-									i(42498),	-- Relentless Gladiator's Heavy Crossbow
-									i(42492),	-- Relentless Gladiator's Longbow
-									i(42257),	-- Relentless Gladiator's Mutilator
-									i(42521),	-- Relentless Gladiator's Piercing Touch
-									i(42329),	-- Relentless Gladiator's Pike
-									i(42277),	-- Relentless Gladiator's Pummeler
-									i(42292),	-- Relentless Gladiator's Quickblade
-									i(42572),	-- Relentless Gladiator's Redoubt
-									i(42533),	-- Relentless Gladiator's Reprieve
-									i(42487),	-- Relentless Gladiator's Rifle
-									i(42262),	-- Relentless Gladiator's Ripper
-									i(42244),	-- Relentless Gladiator's Shanker
-									i(42561),	-- Relentless Gladiator's Shield Wall
-									i(42250),	-- Relentless Gladiator's Shiv
-									i(42267),	-- Relentless Gladiator's Slasher
-									i(42287),	-- Relentless Gladiator's Slicer
-									i(42348),	-- Relentless Gladiator's Spellblade
-									i(42392),	-- Relentless Gladiator's Staff
-									i(42504),	-- Relentless Gladiator's Touch of Defeat
-									i(49185),	-- Relentless Gladiator's Wand of Alacrity
-									i(44423),	-- Relentless Gladiator's War Staff
-									i(41088),	-- Relentless Gladiator's Chain Armor
-									i(41144),	-- Relentless Gladiator's Chain Gauntlets
-									i(41158),	-- Relentless Gladiator's Chain Helm
-									i(41206),	-- Relentless Gladiator's Chain Leggings
-									i(41218),	-- Relentless Gladiator's Chain Spaulders
-									i(49187),	-- Relentless Gladiator's Compendium
-									i(41774),	-- Relentless Gladiator's Dragonhide Gloves
-									i(41679),	-- Relentless Gladiator's Dragonhide Helm
-									i(41668),	-- Relentless Gladiator's Dragonhide Legguards
-									i(41662),	-- Relentless Gladiator's Dragonhide Robes
-									i(41716),	-- Relentless Gladiator's Dragonhide Spaulders
-									i(40791),	-- Relentless Gladiator's Dreadplate Chestpiece
-									i(40811),	-- Relentless Gladiator's Dreadplate Gauntlets
-									i(40830),	-- Relentless Gladiator's Dreadplate Helm
-									i(40851),	-- Relentless Gladiator's Dreadplate Legguards
-									i(40871),	-- Relentless Gladiator's Dreadplate Shoulders
-									i(42012),	-- Relentless Gladiator's Felweave Amice
-									i(41994),	-- Relentless Gladiator's Felweave Cowl
-									i(42018),	-- Relentless Gladiator's Felweave Handguards
-									i(41999),	-- Relentless Gladiator's Felweave Raiment
-									i(42006),	-- Relentless Gladiator's Felweave Trousers
-									i(41288),	-- Relentless Gladiator's Kodohide Gloves
-									i(41322),	-- Relentless Gladiator's Kodohide Helm
-									i(41299),	-- Relentless Gladiator's Kodohide Legguards
-									i(41311),	-- Relentless Gladiator's Kodohide Robes
-									i(41276),	-- Relentless Gladiator's Kodohide Spaulders
-									i(41768),	-- Relentless Gladiator's Leather Gloves
-									i(41673),	-- Relentless Gladiator's Leather Helm
-									i(41656),	-- Relentless Gladiator's Leather Legguards
-									i(41684),	-- Relentless Gladiator's Leather Spaulders
-									i(41651),	-- Relentless Gladiator's Leather Tunic
-									i(41082),	-- Relentless Gladiator's Linked Armor
-									i(41138),	-- Relentless Gladiator's Linked Gauntlets
-									i(41152),	-- Relentless Gladiator's Linked Helm
-									i(41200),	-- Relentless Gladiator's Linked Leggings
-									i(41212),	-- Relentless Gladiator's Linked Spaulders
-									i(40995),	-- Relentless Gladiator's Mail Armor
-									i(41008),	-- Relentless Gladiator's Mail Gauntlets
-									i(41020),	-- Relentless Gladiator's Mail Helm
-									i(41034),	-- Relentless Gladiator's Mail Leggings
-									i(41045),	-- Relentless Gladiator's Mail Spaulders
-									i(41875),	-- Relentless Gladiator's Mooncloth Gloves
-									i(41855),	-- Relentless Gladiator's Mooncloth Hood
-									i(41865),	-- Relentless Gladiator's Mooncloth Leggings
-									i(41870),	-- Relentless Gladiator's Mooncloth Mantle
-									i(41860),	-- Relentless Gladiator's Mooncloth Robe
-									i(40910),	-- Relentless Gladiator's Ornamented Chestguard
-									i(40928),	-- Relentless Gladiator's Ornamented Gloves
-									i(40934),	-- Relentless Gladiator's Ornamented Headcover
-									i(40940),	-- Relentless Gladiator's Ornamented Legplates
-									i(40964),	-- Relentless Gladiator's Ornamented Spaulders
-									i(40790),	-- Relentless Gladiator's Plate Chestpiece
-									i(40810),	-- Relentless Gladiator's Plate Gauntlets
-									i(40829),	-- Relentless Gladiator's Plate Helm
-									i(40850),	-- Relentless Gladiator's Plate Legguards
-									i(40870),	-- Relentless Gladiator's Plate Shoulders
-									i(40994),	-- Relentless Gladiator's Ringmail Armor
-									i(41002),	-- Relentless Gladiator's Ringmail Gauntlets
-									i(41014),	-- Relentless Gladiator's Ringmail Helm
-									i(41028),	-- Relentless Gladiator's Ringmail Leggings
-									i(41039),	-- Relentless Gladiator's Ringmail Spaulders
-									i(41941),	-- Relentless Gladiator's Satin Gloves
-									i(41916),	-- Relentless Gladiator's Satin Hood
-									i(41928),	-- Relentless Gladiator's Satin Leggings
-									i(41935),	-- Relentless Gladiator's Satin Mantle
-									i(41922),	-- Relentless Gladiator's Satin Robe
-									i(40792),	-- Relentless Gladiator's Scaled Chestpiece
-									i(40812),	-- Relentless Gladiator's Scaled Gauntlets
-									i(40831),	-- Relentless Gladiator's Scaled Helm
-									i(40852),	-- Relentless Gladiator's Scaled Legguards
-									i(40872),	-- Relentless Gladiator's Scaled Shoulders
-									i(41966),	-- Relentless Gladiator's Silk Amice
-									i(41947),	-- Relentless Gladiator's Silk Cowl
-									i(41972),	-- Relentless Gladiator's Silk Handguards
-									i(41954),	-- Relentless Gladiator's Silk Raiment
-									i(41960),	-- Relentless Gladiator's Silk Trousers
-									i(41294),	-- Relentless Gladiator's Wyrmhide Gloves
-									i(41328),	-- Relentless Gladiator's Wyrmhide Helm
-									i(41305),	-- Relentless Gladiator's Wyrmhide Legguards
-									i(41317),	-- Relentless Gladiator's Wyrmhide Robes
-									i(41282),	-- Relentless Gladiator's Wyrmhide Spaulders
-									i(41641),	-- Relentless Gladiator's Armwraps of Dominance
-									i(41626),	-- Relentless Gladiator's Armwraps of Salvation
-									i(41841),	-- Relentless Gladiator's Armwraps of Triumph
-									i(41631),	-- Relentless Gladiator's Belt of Dominance
-									i(41618),	-- Relentless Gladiator's Belt of Salvation
-									i(41833),	-- Relentless Gladiator's Belt of Triumph
-									i(49189),	-- Relentless Gladiator's Blade of Alacrity
-									i(41636),	-- Relentless Gladiator's Boots of Dominance
-									i(41622),	-- Relentless Gladiator's Boots of Salvation
-									i(41837),	-- Relentless Gladiator's Boots of Triumph
-									i(40984),	-- Relentless Gladiator's Bracers of Salvation
-									i(40890),	-- Relentless Gladiator's Bracers of Triumph
-									i(147603),	-- Relentless Gladiator's Bracers of Victory
-									i(42078),	-- Relentless Gladiator's Cloak of Ascendancy
-									i(42080),	-- Relentless Gladiator's Cloak of Deliverance
-									i(42076),	-- Relentless Gladiator's Cloak of Dominance
-									i(42079),	-- Relentless Gladiator's Cloak of Salvation
-									i(42077),	-- Relentless Gladiator's Cloak of Subjugation
-									i(42081),	-- Relentless Gladiator's Cloak of Triumph
-									i(42082),	-- Relentless Gladiator's Cloak of Victory
-									i(49179),	-- Relentless Gladiator's Cord of Alacrity
-									i(41899),	-- Relentless Gladiator's Cord of Dominance
-									i(41882),	-- Relentless Gladiator's Cord of Salvation
-									i(49181),	-- Relentless Gladiator's Cuffs of Alacrity
-									i(147602),	-- Relentless Gladiator's Cuffs of Ascendancy
-									i(41910),	-- Relentless Gladiator's Cuffs of Dominance
-									i(41894),	-- Relentless Gladiator's Cuffs of Salvation
-									i(40978),	-- Relentless Gladiator's Girdle of Salvation
-									i(40883),	-- Relentless Gladiator's Girdle of Triumph
-									i(147604),	-- Relentless Gladiator's Girdle of Victory
-									i(40979),	-- Relentless Gladiator's Greaves of Salvation
-									i(40884),	-- Relentless Gladiator's Greaves of Triumph
-									i(147601),	-- Relentless Gladiator's Greaves of Victory
-									i(41076),	-- Relentless Gladiator's Sabatons of Dominance
-									i(41056),	-- Relentless Gladiator's Sabatons of Salvation
-									i(41231),	-- Relentless Gladiator's Sabatons of Triumph of Defeat
-									i(49183),	-- Relentless Gladiator's Treads of Alacrity
-									i(41904),	-- Relentless Gladiator's Treads of Dominance
-									i(41886),	-- Relentless Gladiator's Treads of Salvation
-									i(41071),	-- Relentless Gladiator's Waistguard of Dominance
-									i(41052),	-- Relentless Gladiator's Waistguard of Salvation
-									i(41236),	-- Relentless Gladiator's Waistguard of Triumph
-									i(41066),	-- Relentless Gladiator's Wristguards of Dominance
-									i(41061),	-- Relentless Gladiator's Wristguards of Salvation
-									i(41226),	-- Relentless Gladiator's Wristguards of Triumph
-								}),
+								i(146643),	-- Arsenal: Relentless Gladiator's Weapons
+								i(42566),	-- Relentless Gladiator's Barrier
+								i(42515),	-- Relentless Gladiator's Baton of Light
+								i(42366),	-- Relentless Gladiator's Battle Staff
+								i(49189),	-- Relentless Gladiator's Blade of Alacrity
+								i(42282),	-- Relentless Gladiator's Bonecracker
+								i(42324),	-- Relentless Gladiator's Bonegrinder
+								i(42234),	-- Relentless Gladiator's Chopper
+								i(42210),	-- Relentless Gladiator's Cleaver
+								i(49187),	-- Relentless Gladiator's Compendium
+								i(42319),	-- Relentless Gladiator's Decapitator
+								i(42527),	-- Relentless Gladiator's Endgame
+								i(42386),	-- Relentless Gladiator's Energy Staff
+								i(42272),	-- Relentless Gladiator's Fleshslicer
+								i(44424),	-- Relentless Gladiator's Focus Staff
+								i(42354),	-- Relentless Gladiator's Gavel
+								i(42334),	-- Relentless Gladiator's Greatsword
+								i(42539),	-- Relentless Gladiator's Grimoire
+								i(42229),	-- Relentless Gladiator's Hacker
+								i(42498),	-- Relentless Gladiator's Heavy Crossbow
+								i(42492),	-- Relentless Gladiator's Longbow
+								i(42257),	-- Relentless Gladiator's Mutilator
+								i(42521),	-- Relentless Gladiator's Piercing Touch
+								i(42329),	-- Relentless Gladiator's Pike
+								i(42277),	-- Relentless Gladiator's Pummeler
+								i(42292),	-- Relentless Gladiator's Quickblade
+								i(42572),	-- Relentless Gladiator's Redoubt
+								i(42533),	-- Relentless Gladiator's Reprieve
+								i(42487),	-- Relentless Gladiator's Rifle
+								i(42262),	-- Relentless Gladiator's Ripper
+								i(42244),	-- Relentless Gladiator's Shanker
+								i(42561),	-- Relentless Gladiator's Shield Wall
+								i(42250),	-- Relentless Gladiator's Shiv
+								i(42267),	-- Relentless Gladiator's Slasher
+								i(42287),	-- Relentless Gladiator's Slicer
+								i(42348),	-- Relentless Gladiator's Spellblade
+								i(42392),	-- Relentless Gladiator's Staff
+								i(42504),	-- Relentless Gladiator's Touch of Defeat
+								i(49185),	-- Relentless Gladiator's Wand of Alacrity
+								i(44423),	-- Relentless Gladiator's War Staff
+								i(41088),	-- Relentless Gladiator's Chain Armor
+								i(41144),	-- Relentless Gladiator's Chain Gauntlets
+								i(41158),	-- Relentless Gladiator's Chain Helm
+								i(41206),	-- Relentless Gladiator's Chain Leggings
+								i(41218),	-- Relentless Gladiator's Chain Spaulders
+								i(49187),	-- Relentless Gladiator's Compendium
+								i(41774),	-- Relentless Gladiator's Dragonhide Gloves
+								i(41679),	-- Relentless Gladiator's Dragonhide Helm
+								i(41668),	-- Relentless Gladiator's Dragonhide Legguards
+								i(41662),	-- Relentless Gladiator's Dragonhide Robes
+								i(41716),	-- Relentless Gladiator's Dragonhide Spaulders
+								i(40791),	-- Relentless Gladiator's Dreadplate Chestpiece
+								i(40811),	-- Relentless Gladiator's Dreadplate Gauntlets
+								i(40830),	-- Relentless Gladiator's Dreadplate Helm
+								i(40851),	-- Relentless Gladiator's Dreadplate Legguards
+								i(40871),	-- Relentless Gladiator's Dreadplate Shoulders
+								i(42012),	-- Relentless Gladiator's Felweave Amice
+								i(41994),	-- Relentless Gladiator's Felweave Cowl
+								i(42018),	-- Relentless Gladiator's Felweave Handguards
+								i(41999),	-- Relentless Gladiator's Felweave Raiment
+								i(42006),	-- Relentless Gladiator's Felweave Trousers
+								i(41288),	-- Relentless Gladiator's Kodohide Gloves
+								i(41322),	-- Relentless Gladiator's Kodohide Helm
+								i(41299),	-- Relentless Gladiator's Kodohide Legguards
+								i(41311),	-- Relentless Gladiator's Kodohide Robes
+								i(41276),	-- Relentless Gladiator's Kodohide Spaulders
+								i(41768),	-- Relentless Gladiator's Leather Gloves
+								i(41673),	-- Relentless Gladiator's Leather Helm
+								i(41656),	-- Relentless Gladiator's Leather Legguards
+								i(41684),	-- Relentless Gladiator's Leather Spaulders
+								i(41651),	-- Relentless Gladiator's Leather Tunic
+								i(41082),	-- Relentless Gladiator's Linked Armor
+								i(41138),	-- Relentless Gladiator's Linked Gauntlets
+								i(41152),	-- Relentless Gladiator's Linked Helm
+								i(41200),	-- Relentless Gladiator's Linked Leggings
+								i(41212),	-- Relentless Gladiator's Linked Spaulders
+								i(40995),	-- Relentless Gladiator's Mail Armor
+								i(41008),	-- Relentless Gladiator's Mail Gauntlets
+								i(41020),	-- Relentless Gladiator's Mail Helm
+								i(41034),	-- Relentless Gladiator's Mail Leggings
+								i(41045),	-- Relentless Gladiator's Mail Spaulders
+								i(41875),	-- Relentless Gladiator's Mooncloth Gloves
+								i(41855),	-- Relentless Gladiator's Mooncloth Hood
+								i(41865),	-- Relentless Gladiator's Mooncloth Leggings
+								i(41870),	-- Relentless Gladiator's Mooncloth Mantle
+								i(41860),	-- Relentless Gladiator's Mooncloth Robe
+								i(40910),	-- Relentless Gladiator's Ornamented Chestguard
+								i(40928),	-- Relentless Gladiator's Ornamented Gloves
+								i(40934),	-- Relentless Gladiator's Ornamented Headcover
+								i(40940),	-- Relentless Gladiator's Ornamented Legplates
+								i(40964),	-- Relentless Gladiator's Ornamented Spaulders
+								i(40790),	-- Relentless Gladiator's Plate Chestpiece
+								i(40810),	-- Relentless Gladiator's Plate Gauntlets
+								i(40829),	-- Relentless Gladiator's Plate Helm
+								i(40850),	-- Relentless Gladiator's Plate Legguards
+								i(40870),	-- Relentless Gladiator's Plate Shoulders
+								i(40994),	-- Relentless Gladiator's Ringmail Armor
+								i(41002),	-- Relentless Gladiator's Ringmail Gauntlets
+								i(41014),	-- Relentless Gladiator's Ringmail Helm
+								i(41028),	-- Relentless Gladiator's Ringmail Leggings
+								i(41039),	-- Relentless Gladiator's Ringmail Spaulders
+								i(41941),	-- Relentless Gladiator's Satin Gloves
+								i(41916),	-- Relentless Gladiator's Satin Hood
+								i(41928),	-- Relentless Gladiator's Satin Leggings
+								i(41935),	-- Relentless Gladiator's Satin Mantle
+								i(41922),	-- Relentless Gladiator's Satin Robe
+								i(40792),	-- Relentless Gladiator's Scaled Chestpiece
+								i(40812),	-- Relentless Gladiator's Scaled Gauntlets
+								i(40831),	-- Relentless Gladiator's Scaled Helm
+								i(40852),	-- Relentless Gladiator's Scaled Legguards
+								i(40872),	-- Relentless Gladiator's Scaled Shoulders
+								i(41966),	-- Relentless Gladiator's Silk Amice
+								i(41947),	-- Relentless Gladiator's Silk Cowl
+								i(41972),	-- Relentless Gladiator's Silk Handguards
+								i(41954),	-- Relentless Gladiator's Silk Raiment
+								i(41960),	-- Relentless Gladiator's Silk Trousers
+								i(41294),	-- Relentless Gladiator's Wyrmhide Gloves
+								i(41328),	-- Relentless Gladiator's Wyrmhide Helm
+								i(41305),	-- Relentless Gladiator's Wyrmhide Legguards
+								i(41317),	-- Relentless Gladiator's Wyrmhide Robes
+								i(41282),	-- Relentless Gladiator's Wyrmhide Spaulders
+								i(41641),	-- Relentless Gladiator's Armwraps of Dominance
+								i(41626),	-- Relentless Gladiator's Armwraps of Salvation
+								i(41841),	-- Relentless Gladiator's Armwraps of Triumph
+								i(41631),	-- Relentless Gladiator's Belt of Dominance
+								i(41618),	-- Relentless Gladiator's Belt of Salvation
+								i(41833),	-- Relentless Gladiator's Belt of Triumph
+								i(49189),	-- Relentless Gladiator's Blade of Alacrity
+								i(41636),	-- Relentless Gladiator's Boots of Dominance
+								i(41622),	-- Relentless Gladiator's Boots of Salvation
+								i(41837),	-- Relentless Gladiator's Boots of Triumph
+								i(40984),	-- Relentless Gladiator's Bracers of Salvation
+								i(40890),	-- Relentless Gladiator's Bracers of Triumph
+								i(147603),	-- Relentless Gladiator's Bracers of Victory
+								i(42078),	-- Relentless Gladiator's Cloak of Ascendancy
+								i(42080),	-- Relentless Gladiator's Cloak of Deliverance
+								i(42076),	-- Relentless Gladiator's Cloak of Dominance
+								i(42079),	-- Relentless Gladiator's Cloak of Salvation
+								i(42077),	-- Relentless Gladiator's Cloak of Subjugation
+								i(42081),	-- Relentless Gladiator's Cloak of Triumph
+								i(42082),	-- Relentless Gladiator's Cloak of Victory
+								i(49179),	-- Relentless Gladiator's Cord of Alacrity
+								i(41899),	-- Relentless Gladiator's Cord of Dominance
+								i(41882),	-- Relentless Gladiator's Cord of Salvation
+								i(49181),	-- Relentless Gladiator's Cuffs of Alacrity
+								i(147602),	-- Relentless Gladiator's Cuffs of Ascendancy
+								i(41910),	-- Relentless Gladiator's Cuffs of Dominance
+								i(41894),	-- Relentless Gladiator's Cuffs of Salvation
+								i(40978),	-- Relentless Gladiator's Girdle of Salvation
+								i(40883),	-- Relentless Gladiator's Girdle of Triumph
+								i(147604),	-- Relentless Gladiator's Girdle of Victory
+								i(40979),	-- Relentless Gladiator's Greaves of Salvation
+								i(40884),	-- Relentless Gladiator's Greaves of Triumph
+								i(147601),	-- Relentless Gladiator's Greaves of Victory
+								i(41076),	-- Relentless Gladiator's Sabatons of Dominance
+								i(41056),	-- Relentless Gladiator's Sabatons of Salvation
+								i(41231),	-- Relentless Gladiator's Sabatons of Triumph of Defeat
+								i(49183),	-- Relentless Gladiator's Treads of Alacrity
+								i(41904),	-- Relentless Gladiator's Treads of Dominance
+								i(41886),	-- Relentless Gladiator's Treads of Salvation
+								i(41071),	-- Relentless Gladiator's Waistguard of Dominance
+								i(41052),	-- Relentless Gladiator's Waistguard of Salvation
+								i(41236),	-- Relentless Gladiator's Waistguard of Triumph
+								i(41066),	-- Relentless Gladiator's Wristguards of Dominance
+								i(41061),	-- Relentless Gladiator's Wristguards of Salvation
+								i(41226),	-- Relentless Gladiator's Wristguards of Triumph
 							},
 						}),
 						n(54651, {	-- Zom Bocom (Same name, different npc)

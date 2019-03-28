@@ -580,12 +580,13 @@ _.Zones =
 							qg(, qa(43471)),	-- The Historians
 		--]]					
 							qa(7497, { -- The Journey Has Just Begun
-								["groups"] = {
+								["sourceQuests"] = {24428}, --A Most Puzzling Circumstance
+								["requireSkill"] = 165,	-- Leatherworking
+								["qg"] = 14394, -- Major Mattingly
+								["g"] = {
 									recipe(19093),		-- Onyxia Scale Cloak
 									un(1, i(15769)), 	-- Pattern: Onyxia Scale Cloak
 								},
-								["qg"] = 14394, -- Major Mattingly
-								["sourceQuests"] = {24428}, --A Most Puzzling Circumstance
 							}),
 		--[[
 							qg(, qa(26183)),	-- The King's Cider

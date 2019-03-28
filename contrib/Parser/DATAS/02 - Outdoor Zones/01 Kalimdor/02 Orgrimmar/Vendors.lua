@@ -5,9 +5,9 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor		
 		m(85, {	-- Orgrimmar
-			["groups"] = {
+			["g"] = {
 				h(n( -2, {	-- Vendors
-					n(52809, {	-- Blax Bottlerocket <Toys and Novelties>
+					n(52809,  {	-- Blax Bottlerocket <Toys and Novelties>
 						i(54436),	-- Blue Clockwork Rocket Bot Pet
 						i(95621),	-- Warbot Ignition Key Pet
 						i(54343),	-- Blue Crashin' Thrashin' Racer Controller Toy
@@ -21,8 +21,9 @@ _.Zones =
 						i(45057),	-- Wind-Up Train Wrecker Toy
 						i(69896),	-- Yellow Balloon Toy
 					}),
-					n(69977, {	-- Blood Guard Zar'shi <Ruthless Gladiator>
-						i(137642, {	-- Mark of Honor
+					n(69977,  {	-- Blood Guard Zar'shi <Ruthless Gladiator>
+						["itemID"] = 137642,	-- Mark of Honor
+						["g"] = {
 							i(146640), -- Arsenal: Ruthless Gladiator's Weapons
 							i(70242),	-- Ruthless Gladiator's Barrier
 							i(70235),	-- Ruthless Gladiator's Baton of Light
@@ -187,152 +188,152 @@ _.Zones =
 							i(70387),	-- Ruthless Gladiator's Drape of Diffusion
 							i(70388),	-- Ruthless Gladiator's Drape of Prowess
 							i(70389),	-- Ruthless Gladiator's Drape of Meditation
-						}),
+						},
 					}),
-					n(54659, {	-- Blood Guard Zar'shi >S10< Elite (Same name, different npc)
-						["groups"] = {
-							un(2, i(70185)),	-- Ruthless Gladiator's Gavel
-									un(2, i(70201)),	-- Ruthless Gladiator's Bonecracker
-									un(2, i(70202)),	-- Ruthless Gladiator's Pummeler
-									un(2, i(70188)),	-- Ruthless Gladiator's Spellblade
-									un(2, i(70191)),	-- Ruthless Gladiator's Shiv
-									un(2, i(70203)),	-- Ruthless Gladiator's Shanker
-									un(2, i(70204)),	-- Ruthless Gladiator's Hacker
-									un(2, i(70205)),	-- Ruthless Gladiator's Cleaver
-									un(2, i(70199)),	-- Ruthless Gladiator's Quickblade
-									un(2, i(70200)),	-- Ruthless Gladiator's Slicer
-									un(2, i(70194)),	-- Ruthless Gladiator's Rifle
-									un(2, i(70192)),	-- Ruthless Gladiator's Longbow
-									un(2, i(70193)),	-- Ruthless Gladiator's Heavy Crossbow
-									un(2, i(70184)),	-- Ruthless Gladiator's Decapitator
-									un(2, i(70183)),	-- Ruthless Gladiator's Bonegrinder
-									un(2, i(70178)),	-- Ruthless Gladiator's Greatsword)
-									un(2, i(70182)),	-- Ruthless Gladiator's Pike
-									un(2, i(70179)),	-- Ruthless Gladiator's Staff
-									un(2, i(70180)),	-- Ruthless Gladiator's Energy Staff
-									un(2, i(70181)),	-- Ruthless Gladiator's Battle Staff
-									un(2, i(70186)),	-- Ruthless Gladiator's Right Render
-									un(2, i(70187)),	-- Ruthless Gladiator's Ripper
-									un(2, i(70189)),	-- Ruthless Gladiator's Slasher
-									un(2, i(70190)),	-- Ruthless Gladiator's Fleshslicer
-									un(2, i(70206)),	-- Ruthless Gladiator's Redoubt
-									un(2, i(70207)),	-- Ruthless Gladiator's Barrier
-									un(2, i(70208)),	-- Ruthless Gladiator's Shield Wall
-									un(2, i(70195)),	-- Ruthless Gladiator's Baton of Light
-									un(2, i(70196)),	-- Ruthless Gladiator's Touch of Defeat
-									un(2, i(70210)),	-- Ruthless Gladiator's Endgame)
-									
-									un(2, i(70420)),	-- Ruthless Gladiator's Mail Spaulders
-									un(2, i(70421)),	-- Ruthless Gladiator's Mail Legs
-									un(2, i(70422)),	-- Ruthless Gladiator's Mail Helm
-									un(2, i(70423)),	-- Ruthless Gladiator's Mail Gauntlets
-									un(2, i(70424)),	-- Ruthless Gladiator's Mail Armor
-									un(2, i(70433)),	-- Ruthless Gladi Ringmail Armor
-									un(2, i(70464)),	-- Ruthless Gladi Ringmail Spaulders
-									un(2, i(70465)),	-- Ruthless Gladi Ringmail Legs
-									un(2, i(70466)),	-- Ruthless Gladi Ringmail Helm
-									un(2, i(70467)),	-- Ruthless Gladi Ringmail Gauntlets
-									un(2, i(70434)),	-- Ruthless Gladi Chain Spaulders
-									un(2, i(70435)),	-- Ruthless Gladi Chain Legs
-									un(2, i(70440)),	-- Ruthless Gladi Chain Helm
-									un(2, i(70441)),	-- Ruthless Gladi Chain Gauntlets
-									un(2, i(70476)),	-- Ruthless Gladi Chain Armor
-									un(2, i(70456)),	-- Ruthless Gladi Linked Spaulders
-									un(2, i(70457)),	-- Ruthless Gladi Linked Legs
-									un(2, i(70458)),	-- Ruthless Gladi Linked Helm
-									un(2, i(70459)),	-- Ruthless Gladi Linked Gauntlets
-									un(2, i(70460)),	-- Ruthless Gladi Linked Armor
-									un(2, i(70500)),	-- Ruthless Gladi Sabatons of Cruelty
-									un(2, i(70501)),	-- Ruthless Gladi Sabatons of Alacrity
-									un(2, i(70508)),	-- Ruthless Gladi Sabatons of Alacrity
-									un(2, i(70509)),	-- Ruthless Gladi Sabatons of Meditation
-									un(2, i(70428)),	-- Ruthless Gladiator's Wyrmhide helm
-									un(2, i(70429)),	-- Ruthless Gladiator's Wyrmhide gloves
-									un(2, i(70430)),	-- Ruthless Gladiator's kodohide spaulders
-									un(2, i(70431)),	-- Ruthless Gladiator's kodohide robes
-									un(2, i(70432)),	-- Ruthless Gladiator's kodohide legguards
-									un(2, i(70436)),	-- Ruthless Gladiator's kodohide helm
-									un(2, i(70437)),	-- Ruthless Gladiator's kodohide gloves
-									un(2, i(70438)),	-- Ruthless Gladiator's dragonhide spaulders
-									un(2, i(70439)),	-- Ruthless Gladiator's dragonhide robes
-									un(2, i(70442)),	-- Ruthless Gladiator's leather spaulders
-									un(2, i(70443)),	-- Ruthless Gladiator's leather legguards
-									un(2, i(70444)),	-- Ruthless Gladiator's leather helm
-									un(2, i(70445)),	-- Ruthless Gladiator's leather gloves
-									un(2, i(70446)),	-- Ruthless Gladiator's leather tunic
-									un(2, i(70447)),	-- Ruthless Gladiator's wyrmhide spaulders
-									un(2, i(70448)),	-- Ruthless Gladiator's wyrmhide robes
-									un(2, i(70449)),	-- Ruthless Gladiator's wyrmhide legguards
-									un(2, i(70484)),	-- Ruthless Gladiator's dragonhide legguards
-									un(2, i(70485)),	-- Ruthless Gladiator's dragonhide helm
-									un(2, i(70486)),	-- Ruthless Gladiator's dragonhide gloves
-									un(2, i(70498)),	-- Ruthless Gladiator's footguards of mediatiton
-									un(2, i(70499)),	-- Ruthless Gladiator's footguards of alacrity
-									un(2, i(70506)),	-- Ruthless Gladiator's boots of cruelty
-									un(2, i(70507)),	-- Ruthless Gladiator's boots of alacrity
-									un(2, i(70415)),	-- Ruthless Gladi Ornamented Spaulders
-									un(2, i(70416)),	-- Ruthless Gladi Ornamented Legs
-									un(2, i(70417)),	-- Ruthless Gladi Ornamented Head
-									un(2, i(70418)),	-- Ruthless Gladi Ornamented Gloves
-									un(2, i(70419)),	-- Ruthless Gladi Ornamented Chest
-									un(2, i(70477)),	-- Ruthless Gladi Plate Shoulders
-									un(2, i(70478)),	-- Ruthless Gladi Plate Legs
-									un(2, i(70479)),	-- Ruthless Gladi Plate Helm
-									un(2, i(70480)),	-- Ruthless Gladi Plate Gloves
-									un(2, i(70481)),	-- Ruthless Gladi Plate Chest
-									un(2, i(70482)),	-- Ruthless Gladi Scaled shoulders
-									un(2, i(70483)),	-- Ruthless Gladi Scaled legs
-									un(2, i(70487)),	-- Ruthless Gladi Scaled helm
-									un(2, i(70488)),	-- Ruthless Gladi Scaled gloves
-									un(2, i(70489)),	-- Ruthless Gladi Scaled chest
-									un(2, i(70490)),	-- Ruthless Gladi Dreadplate Shoulders
-									un(2, i(70491)),	-- Ruthless Gladi Dreadplate Legs
-									un(2, i(70492)),	-- Ruthless Gladi Dreadplate Helm
-									un(2, i(70493)),	-- Ruthless Gladi Dreadplate Gloves
-									un(2, i(70494)),	-- Ruthless Gladi Dreadplate Chest
-									un(2, i(70502)),	-- Ruthless Gladi Dreadplate Greaves of alacrity
-									un(2, i(70503)),	-- Ruthless Gladi Dreadplate greaves of meditation
-									un(2, i(70504)),	-- Ruthless Gladi Dreadplate warboots of cruelty
-									un(2, i(70505)),	-- Ruthless Gladi Dreadplate warboots of alacrity
-									un(2, i(72322)),	-- Ruthless Gladi Drape of Prowess. S11 Version
-									un(2, i(72323)),	-- Ruthless Gladi Drape of Diffusion. S11 Version
-									un(2, i(72324)),	-- Ruthless Gladi Drape of Meditation. S11 Version
-									un(2, i(72362)),	-- Ruthless Gladi Links of Cruelty. S11 Version
-									un(2, i(72363)),	-- Ruthless Gladi Links of Accuracy. S11 Version
-									un(2, i(72364)),	-- Ruthless Gladi Sabatons of Cruelty. S11 Version
-									un(2, i(72365)),	-- Ruthless Gladi sabatons of alacrity. S11 Version
-									un(2, i(72366)),	-- Ruthless Gladi Wristguard of Alacrity. S11 Version
-									un(2, i(72367)),	-- Ruthless Gladi Wristguard of Accuracy. S11 Version
-									un(2, i(72368)),	-- Ruthless Gladi Chain Armor. S11 Version
-									un(2, i(72369)),	-- Ruthless Gladi Chain gauntlets. S11 Version
-									un(2, i(72370)),	-- Ruthless Gladi helm. S11 Version
-									un(2, i(72371)),	-- Ruthless Gladi legs. S11 Version
-									un(2, i(72372)),	-- Ruthless Gladi spaulders. S11 Version
-									un(2, i(72427)),	-- Ruthless Gladi waistguard of meditation. S11 Version
-									un(2, i(72428)),	-- Ruthless Gladi sabatons of alacrity. S11 Version
-									un(2, i(72429)),	-- Ruthless Gladi sabatons of meditation. S11 Version
-									un(2, i(72430)),	-- Ruthless Gladi armsband of prower. S11 Version
-									un(2, i(72431)),	-- Ruthless Gladi armbands of meditation. S11 Version
-									un(2, i(72432)),	-- Ruthless Gladi ringmail armor. S11 Version
-									un(2, i(72433)),	-- Ruthless Gladi ringmail gauntlets. S11 Version
-									un(2, i(72434)),	-- Ruthless Gladi ringmail helm. S11 Version
-									un(2, i(72435)),	-- Ruthless Gladi ringmail legs. S11 Version
-									un(2, i(72436)),	-- Ruthless Gladi ringmail spaulders. S11 Version
-									un(2, i(72437)),	-- Ruthless Gladi linked armor. S11 Version
-									un(2, i(72437)),	-- Ruthless Gladi linked gauntlets. S11 Version
-									un(2, i(72437)),	-- Ruthless Gladi linked helm. S11 Version
-									un(2, i(72437)),	-- Ruthless Gladi linked legs. S11 Version
-									un(2, i(72437)),	-- Ruthless Gladi linked spaulders. S11 Version
-									un(2, i(72437)),	-- Ruthless Gladi waistguard of cruelty. S11 Version
-									un(2, i(72437)),	-- Ruthless Gladi mail armor. S11 Version
-									un(2, i(72437)),	-- Ruthless Gladi mail gauntlets. S11 Version
-									un(2, i(72437)),	-- Ruthless Gladi mail helm. S11 Version
-									un(2, i(72437)),	-- Ruthless Gladi mail legs. S11 Version
-									un(2, i(72437)),	-- Ruthless Gladi mail spaulders. S11 Version
-							},
+					n(54659,  {	-- Blood Guard Zar'shi >S10< Elite (Same name, different npc)
 						["u"] = 43, -- Vendor no longer exists
+						["g"] = {
+							un(2, i(70185)),	-- Ruthless Gladiator's Gavel
+								un(2, i(70201)),	-- Ruthless Gladiator's Bonecracker
+								un(2, i(70202)),	-- Ruthless Gladiator's Pummeler
+								un(2, i(70188)),	-- Ruthless Gladiator's Spellblade
+								un(2, i(70191)),	-- Ruthless Gladiator's Shiv
+								un(2, i(70203)),	-- Ruthless Gladiator's Shanker
+								un(2, i(70204)),	-- Ruthless Gladiator's Hacker
+								un(2, i(70205)),	-- Ruthless Gladiator's Cleaver
+								un(2, i(70199)),	-- Ruthless Gladiator's Quickblade
+								un(2, i(70200)),	-- Ruthless Gladiator's Slicer
+								un(2, i(70194)),	-- Ruthless Gladiator's Rifle
+								un(2, i(70192)),	-- Ruthless Gladiator's Longbow
+								un(2, i(70193)),	-- Ruthless Gladiator's Heavy Crossbow
+								un(2, i(70184)),	-- Ruthless Gladiator's Decapitator
+								un(2, i(70183)),	-- Ruthless Gladiator's Bonegrinder
+								un(2, i(70178)),	-- Ruthless Gladiator's Greatsword)
+								un(2, i(70182)),	-- Ruthless Gladiator's Pike
+								un(2, i(70179)),	-- Ruthless Gladiator's Staff
+								un(2, i(70180)),	-- Ruthless Gladiator's Energy Staff
+								un(2, i(70181)),	-- Ruthless Gladiator's Battle Staff
+								un(2, i(70186)),	-- Ruthless Gladiator's Right Render
+								un(2, i(70187)),	-- Ruthless Gladiator's Ripper
+								un(2, i(70189)),	-- Ruthless Gladiator's Slasher
+								un(2, i(70190)),	-- Ruthless Gladiator's Fleshslicer
+								un(2, i(70206)),	-- Ruthless Gladiator's Redoubt
+								un(2, i(70207)),	-- Ruthless Gladiator's Barrier
+								un(2, i(70208)),	-- Ruthless Gladiator's Shield Wall
+								un(2, i(70195)),	-- Ruthless Gladiator's Baton of Light
+								un(2, i(70196)),	-- Ruthless Gladiator's Touch of Defeat
+								un(2, i(70210)),	-- Ruthless Gladiator's Endgame)
+								
+								un(2, i(70420)),	-- Ruthless Gladiator's Mail Spaulders
+								un(2, i(70421)),	-- Ruthless Gladiator's Mail Legs
+								un(2, i(70422)),	-- Ruthless Gladiator's Mail Helm
+								un(2, i(70423)),	-- Ruthless Gladiator's Mail Gauntlets
+								un(2, i(70424)),	-- Ruthless Gladiator's Mail Armor
+								un(2, i(70433)),	-- Ruthless Gladi Ringmail Armor
+								un(2, i(70464)),	-- Ruthless Gladi Ringmail Spaulders
+								un(2, i(70465)),	-- Ruthless Gladi Ringmail Legs
+								un(2, i(70466)),	-- Ruthless Gladi Ringmail Helm
+								un(2, i(70467)),	-- Ruthless Gladi Ringmail Gauntlets
+								un(2, i(70434)),	-- Ruthless Gladi Chain Spaulders
+								un(2, i(70435)),	-- Ruthless Gladi Chain Legs
+								un(2, i(70440)),	-- Ruthless Gladi Chain Helm
+								un(2, i(70441)),	-- Ruthless Gladi Chain Gauntlets
+								un(2, i(70476)),	-- Ruthless Gladi Chain Armor
+								un(2, i(70456)),	-- Ruthless Gladi Linked Spaulders
+								un(2, i(70457)),	-- Ruthless Gladi Linked Legs
+								un(2, i(70458)),	-- Ruthless Gladi Linked Helm
+								un(2, i(70459)),	-- Ruthless Gladi Linked Gauntlets
+								un(2, i(70460)),	-- Ruthless Gladi Linked Armor
+								un(2, i(70500)),	-- Ruthless Gladi Sabatons of Cruelty
+								un(2, i(70501)),	-- Ruthless Gladi Sabatons of Alacrity
+								un(2, i(70508)),	-- Ruthless Gladi Sabatons of Alacrity
+								un(2, i(70509)),	-- Ruthless Gladi Sabatons of Meditation
+								un(2, i(70428)),	-- Ruthless Gladiator's Wyrmhide helm
+								un(2, i(70429)),	-- Ruthless Gladiator's Wyrmhide gloves
+								un(2, i(70430)),	-- Ruthless Gladiator's kodohide spaulders
+								un(2, i(70431)),	-- Ruthless Gladiator's kodohide robes
+								un(2, i(70432)),	-- Ruthless Gladiator's kodohide legguards
+								un(2, i(70436)),	-- Ruthless Gladiator's kodohide helm
+								un(2, i(70437)),	-- Ruthless Gladiator's kodohide gloves
+								un(2, i(70438)),	-- Ruthless Gladiator's dragonhide spaulders
+								un(2, i(70439)),	-- Ruthless Gladiator's dragonhide robes
+								un(2, i(70442)),	-- Ruthless Gladiator's leather spaulders
+								un(2, i(70443)),	-- Ruthless Gladiator's leather legguards
+								un(2, i(70444)),	-- Ruthless Gladiator's leather helm
+								un(2, i(70445)),	-- Ruthless Gladiator's leather gloves
+								un(2, i(70446)),	-- Ruthless Gladiator's leather tunic
+								un(2, i(70447)),	-- Ruthless Gladiator's wyrmhide spaulders
+								un(2, i(70448)),	-- Ruthless Gladiator's wyrmhide robes
+								un(2, i(70449)),	-- Ruthless Gladiator's wyrmhide legguards
+								un(2, i(70484)),	-- Ruthless Gladiator's dragonhide legguards
+								un(2, i(70485)),	-- Ruthless Gladiator's dragonhide helm
+								un(2, i(70486)),	-- Ruthless Gladiator's dragonhide gloves
+								un(2, i(70498)),	-- Ruthless Gladiator's footguards of mediatiton
+								un(2, i(70499)),	-- Ruthless Gladiator's footguards of alacrity
+								un(2, i(70506)),	-- Ruthless Gladiator's boots of cruelty
+								un(2, i(70507)),	-- Ruthless Gladiator's boots of alacrity
+								un(2, i(70415)),	-- Ruthless Gladi Ornamented Spaulders
+								un(2, i(70416)),	-- Ruthless Gladi Ornamented Legs
+								un(2, i(70417)),	-- Ruthless Gladi Ornamented Head
+								un(2, i(70418)),	-- Ruthless Gladi Ornamented Gloves
+								un(2, i(70419)),	-- Ruthless Gladi Ornamented Chest
+								un(2, i(70477)),	-- Ruthless Gladi Plate Shoulders
+								un(2, i(70478)),	-- Ruthless Gladi Plate Legs
+								un(2, i(70479)),	-- Ruthless Gladi Plate Helm
+								un(2, i(70480)),	-- Ruthless Gladi Plate Gloves
+								un(2, i(70481)),	-- Ruthless Gladi Plate Chest
+								un(2, i(70482)),	-- Ruthless Gladi Scaled shoulders
+								un(2, i(70483)),	-- Ruthless Gladi Scaled legs
+								un(2, i(70487)),	-- Ruthless Gladi Scaled helm
+								un(2, i(70488)),	-- Ruthless Gladi Scaled gloves
+								un(2, i(70489)),	-- Ruthless Gladi Scaled chest
+								un(2, i(70490)),	-- Ruthless Gladi Dreadplate Shoulders
+								un(2, i(70491)),	-- Ruthless Gladi Dreadplate Legs
+								un(2, i(70492)),	-- Ruthless Gladi Dreadplate Helm
+								un(2, i(70493)),	-- Ruthless Gladi Dreadplate Gloves
+								un(2, i(70494)),	-- Ruthless Gladi Dreadplate Chest
+								un(2, i(70502)),	-- Ruthless Gladi Dreadplate Greaves of alacrity
+								un(2, i(70503)),	-- Ruthless Gladi Dreadplate greaves of meditation
+								un(2, i(70504)),	-- Ruthless Gladi Dreadplate warboots of cruelty
+								un(2, i(70505)),	-- Ruthless Gladi Dreadplate warboots of alacrity
+								un(2, i(72322)),	-- Ruthless Gladi Drape of Prowess. S11 Version
+								un(2, i(72323)),	-- Ruthless Gladi Drape of Diffusion. S11 Version
+								un(2, i(72324)),	-- Ruthless Gladi Drape of Meditation. S11 Version
+								un(2, i(72362)),	-- Ruthless Gladi Links of Cruelty. S11 Version
+								un(2, i(72363)),	-- Ruthless Gladi Links of Accuracy. S11 Version
+								un(2, i(72364)),	-- Ruthless Gladi Sabatons of Cruelty. S11 Version
+								un(2, i(72365)),	-- Ruthless Gladi sabatons of alacrity. S11 Version
+								un(2, i(72366)),	-- Ruthless Gladi Wristguard of Alacrity. S11 Version
+								un(2, i(72367)),	-- Ruthless Gladi Wristguard of Accuracy. S11 Version
+								un(2, i(72368)),	-- Ruthless Gladi Chain Armor. S11 Version
+								un(2, i(72369)),	-- Ruthless Gladi Chain gauntlets. S11 Version
+								un(2, i(72370)),	-- Ruthless Gladi helm. S11 Version
+								un(2, i(72371)),	-- Ruthless Gladi legs. S11 Version
+								un(2, i(72372)),	-- Ruthless Gladi spaulders. S11 Version
+								un(2, i(72427)),	-- Ruthless Gladi waistguard of meditation. S11 Version
+								un(2, i(72428)),	-- Ruthless Gladi sabatons of alacrity. S11 Version
+								un(2, i(72429)),	-- Ruthless Gladi sabatons of meditation. S11 Version
+								un(2, i(72430)),	-- Ruthless Gladi armsband of prower. S11 Version
+								un(2, i(72431)),	-- Ruthless Gladi armbands of meditation. S11 Version
+								un(2, i(72432)),	-- Ruthless Gladi ringmail armor. S11 Version
+								un(2, i(72433)),	-- Ruthless Gladi ringmail gauntlets. S11 Version
+								un(2, i(72434)),	-- Ruthless Gladi ringmail helm. S11 Version
+								un(2, i(72435)),	-- Ruthless Gladi ringmail legs. S11 Version
+								un(2, i(72436)),	-- Ruthless Gladi ringmail spaulders. S11 Version
+								un(2, i(72437)),	-- Ruthless Gladi linked armor. S11 Version
+								un(2, i(72437)),	-- Ruthless Gladi linked gauntlets. S11 Version
+								un(2, i(72437)),	-- Ruthless Gladi linked helm. S11 Version
+								un(2, i(72437)),	-- Ruthless Gladi linked legs. S11 Version
+								un(2, i(72437)),	-- Ruthless Gladi linked spaulders. S11 Version
+								un(2, i(72437)),	-- Ruthless Gladi waistguard of cruelty. S11 Version
+								un(2, i(72437)),	-- Ruthless Gladi mail armor. S11 Version
+								un(2, i(72437)),	-- Ruthless Gladi mail gauntlets. S11 Version
+								un(2, i(72437)),	-- Ruthless Gladi mail helm. S11 Version
+								un(2, i(72437)),	-- Ruthless Gladi mail legs. S11 Version
+								un(2, i(72437)),	-- Ruthless Gladi mail spaulders. S11 Version
+							},
 					}),
-					n(3364, {	-- Borya <Tailoring Supplies>
+					n(3364,   {	-- Borya <Tailoring Supplies>
 						i(54440, {	-- Dreamcloth
 							i(54601),	-- Pattern: Belt of the Depths
 							i(54602),	-- Pattern: Dreamless Belt
@@ -357,8 +358,9 @@ _.Zones =
 						i(10317),	-- Pattern: Pink Mageweave Shirt
 						i(5772),	-- Pattern: Red Woolen Bag
 					}),
-					n(12793, {	-- Brave Stonehide <Accessories Quartermaster>
-						i(137642, {	-- Mark of Honor
+					n(12793,  {	-- Brave Stonehide <Accessories Quartermaster>
+						["itemID"] = 137642,	-- Mark of Honor
+						["g"] = {
 							i(15199),	-- Stone Guard's Herald
 							i(15197),	-- Scout's Tabard
 							un(2, i(18834)),	-- Insignia of the Horde [Warrior]
@@ -374,20 +376,20 @@ _.Zones =
 							un(2, i(15200)),	-- Senior Sergeant's Insignia
 							un(2, i(18428)),	-- Senior Sergeant's Insignia
 							un(2, i(16335)),	-- Senior Sergeant's Insignia
-						}),
+						},
 					}),
-					n(50477, {	-- Champion Uru'zin <Darkspear Quartermaster>
-						["groups"] = {
+					n(50477,  {	-- Champion Uru'zin <Darkspear Quartermaster>
+						["coord"] = { 49.9, 58.1, 85 },
+						["g"] = {
 							i(45582),	-- Darkspear Tabard
 							i(64912),	-- Darkspear Cape
 							i(64911),	-- Darkspear Mantle
 							i(64913),	-- Darkspear Shroud
 							i(67536),	-- Darkspear Satchel
 						},
-						["coord"] = { 49.9, 58.1 },
 					}),
-					n(73151, {	-- Deathguard Netharian <Combatant Mount Quartermaster>
-						["groups"] = bubbleDown({["u"] = 2}, {
+					n(73151,  {	-- Deathguard Netharian <Combatant Mount Quartermaster>
+						["g"] = bubbleDown({["u"] = 2}, {
 							i(103533, {	-- Vicious Saddle
 								i(70910),	-- Horn of the Vicious War Wolf Mount
 								i(102533),	-- Reins of the Vicious Skeletal Warhorse Mount
@@ -402,10 +404,11 @@ _.Zones =
 							}),
 						}),
 					}),
-					n(69333, {	-- Disciple Jusi <Huojin Quartermaster>
+					n(69333,  {	-- Disciple Jusi <Huojin Quartermaster>
 						i(83080),	-- Huojin Tabard
 					}),
-					n(46593, { -- Doris Volanthius >S9< Elite <Vicious Gladiator>
+					n(46593,  {	-- Doris Volanthius >S9< Elite <Vicious Gladiator>
+						["u"] = 43,
 						["g"] = {
 							un(2, i(67454)),	-- Vicious Gladiator's Gavel
 							un(2, i(67470)),	-- Vicious Gladiator's Bonebracker
@@ -663,11 +666,11 @@ _.Zones =
 								un(2, i(70605)),	-- Vicious Gladiator's medallion of meditation. S10 Version (horde)
 								un(2, i(70607)),	-- Vicious Gladiator's medallion of tenactiy. S10 Version (horde)
 							},
-						["u"] = 43,
 					}),
-					n(54657, {	-- Doris Volanthius <Vicious Gladiator>
-						i(137642, {	-- Mark of Honor
-						-- The NPC ID got reused, she was also >S11< Elite Vendor
+					n(54657,  {	-- Doris Volanthius <Vicious Gladiator>
+						["itemID"] = 137642,	-- Mark of Honor
+						["g"] = {
+							-- The NPC ID got reused, she was also >S11< Elite Vendor
 							i(146641), --  Arsenal: Vicious Gladiator's Weapons
 							-- Weapons
 							i(61360),	-- Vicious Gladiator's Barrier
@@ -969,9 +972,9 @@ _.Zones =
 							un(2, i(73740)),	-- Cataclysmic Gladiator's dreadplate helm
 							un(2, i(73741)),	-- Cataclysmic Gladiator's dreadplate gauntlets
 							un(2, i(73742)),	-- Cataclysmic Gladiator's dreadplate chestpiece
-						}),
+						},
 					}),
-					n(44918, {	-- Drakma <Wind Rider Keeper>
+					n(44918,  {	-- Drakma <Wind Rider Keeper>
 						i(25477),	-- Swift Red Wind Rider Mount
 						i(25531),	-- Swift Green Wind Rider Mount
 						i(25532),	-- Swift Yellow Wind Rider Mount
@@ -980,15 +983,17 @@ _.Zones =
 						i(25475),	-- Blue Wind Rider Mount
 						i(25476),	-- Green Wind Rider Mount
 					}),
-					n(3367, {	-- Felika <Trade Supplies>
+					n(3367,   {	-- Felika <Trade Supplies>
 						i(20856),	-- Design: Heavy Golden Necklace of Battle
 					}),
 					n(133261, {	-- Feng Su <Cooking Trainer>
 						i(21219),	-- Recipe: Sagefish Delight
 						i(21099),	-- Recipe: Smoked Sagefish
 					}),
-					n(12795, {	-- First Sergeant Hola'mahi <Legacy Armor Quartermaster>
-						i(137642, {	-- Mark of Honor
+					n(12795,  {	-- First Sergeant Hola'mahi <Legacy Armor Quartermaster>
+						["itemID"] = 137642,	-- Mark of Honor
+						["coord"] = { 38.2, 72.6, 85 }, 
+						["g"] = {
 							i(28377),  -- Sergeant's Heavy Cloak
 							i(28378),  -- Sergeant's Heavy Cape
 							i(16486),  -- First Sergeant's Silk Cuffs
@@ -1113,20 +1118,22 @@ _.Zones =
 							i(18436),  -- First Sergeant's Dragonhide Armguards
 							i(18437),  -- First Sergeant's Silk Cuffs
 							i(18427),  -- Sergeant's Cloak
-						}),
+						},
 					}),
-					n(50323, {	-- Frizzo Villamar <Bilgewater Cartel Quartermaster>
-						["groups"] = {
+					n(50323,  {	-- Frizzo Villamar <Bilgewater Cartel Quartermaster>
+						["coord"] = { 50.0, 58.6, 85 },
+						["g"] = {
 							i(64884),	-- Bilgewater Cartel Tabard
 							i(64906),	-- Bilgewater Cape
 							i(64905),	-- Bilgewater Shroud
 							i(64907),	-- Bilgewater Mantle
 							i(67525),	-- Bilgewater Satchel
 						},
-						["coord"] = { 50.0, 58.6 },
 					}),
-					n(52036, {	-- Galra <Honor Heirlooms>
-						i(137642, {	-- Mark of Honor
+					n(52036,  {	-- Galra <Honor Heirlooms>
+						["itemID"] = 137642,	-- Mark of Honor
+						["coord"] = { 38.0, 70.8, 85 },
+						["g"] = {
 							i(122364),	-- Sharpened Scarlet Kris
 							i(122365),	-- Reforged Truesilver Champion
 							i(122366),	-- Upgraded Dwarven Hand Cannon
@@ -1142,10 +1149,12 @@ _.Zones =
 							i(122377),	-- Lasting Feralheart Spaulders
 							i(122378),	-- Exquisite Sunderseer Mantle
 							i(122530),	-- Inherited Mark of Tyranny
-						}),
+						},
 					}),
-					n(5188, {	-- Garyl <Tabard Vendor>
-						["groups"] = {
+					n(5188,   {	-- Garyl <Tabard Vendor>
+						["description"] = "Tabards are only obtainable by those who have earned them.|r",
+						["coord"] = { 47.6, 75.6, 85 },
+						["g"] = {
 							h(i(20131)),	-- Battle Tabard of the Defilers
 							i(31404),		-- Green Trophy Tabard of the Illidari
 							i(31405),		-- Purple Trophy Tabard of the Illidari
@@ -1181,72 +1190,73 @@ _.Zones =
 							["description"]	= "Participated in a battleground during the Beijing 2008 Summer Olympics event.",
 							},
 						},
-						["description"] = "Tabards are only obtainable by those who have earned them.|r",
 					}),
-					n(46572, {	-- Goram <Guild Vendor>
-						["groups"] = {
+					n(46572,  {	-- Goram <Guild Vendor>
+						["description"] = "If you cannot find an item on this vendor, either your guild does not have the required achievement or you do not have sufficient rep with your guild to purchase the item.|r",
+						["coord"] = { 48.2, 75.6, 85 },
+						["g"] = {
 							faction(1168, {	-- Your Guild (Faction)
 								["icon"] = "Interface\\Icons\\ACHIEVEMENT_GUILDPERK_EVERYONES A HERO",
-								["groups"] = {
+								["g"] = {
 									ach(4989, {	-- A Class Act
 										["collectible"] = false,
-										["groups"] = {
+										["g"] = {
 											--a(i(63352)),	-- Shroud of Cooperation - Honored
 											h(i(63353)),	-- Shroud of Cooperation - Honored
 										},
 									}),
 									h(ach(5179, {	-- Alliance Slayer
 										["collectible"] = false,
-										["groups"] = {
+										["g"] = {
 											h(i(65362)),	-- Guild Page - Honored - minipet bound to Character
 										},
 									})),
 									ach(5024, {	-- Better Leveling Through Chemistry
 										["collectible"] = false,
-										["groups"] = {
+										["g"] = {
 											i(65498),	-- Recipe: Big Cauldron of Battle
 										},
 									}),
 									ach(9651, {	-- Challenge Warlord: Gold - Guild Edition
 										["collectible"] = false,
-										["groups"] = {
+										["g"] = {
 											un(4, i(114968)),	-- Deathwatch Hatchling - Revered
 										},
 										["description"] = "Achievement no longer obtainable. You will need to find a guild that already has it to buy Deathwatch Hatchling.|r",
 									}),
 									ach(5144, {	-- Critter Kill Squad
 										["collectible"] = false,
-										["groups"] = {
+										["g"] = {
 											i(63398),	-- Armadillo Pup - Revered
 										},
 									}),
 									ach(5840, {	-- Dragonwrath, Tarecgosa's Rest - Guild Edition
 										["collectible"] = false,
-										["groups"] = {
+										["g"] = {
 											i(71033),	-- Lil' Tarecgosa - Exalted
 										},
 									}),
 									ach(4988, {	-- Guild Glory of the Cataclysm Raider
 										["collectible"] = false,
-										["groups"] = {
+										["g"] = {
 											i(63125),	-- Reins of the Dark Phoenix - Exalted
 										},
 									}),
 									ach(9669, {	-- Guild Glory of the Draenor Raider
 										["collectible"] = false,
-										["groups"] = {
+										["g"] = {
 											i(116666),	-- Blacksteel Battleboar - Exalted
 										},
 									}),
 									ach(6682, {	-- Guild Glory of the Pandaria Raider
 										["collectible"] = false,
-										["groups"] = {
+										["g"] = {
 											i(85666),	-- Reins of the Thundering Jade Cloud Serpent - Exalted
 										},
 									}),
 									ach(6681, {	-- Guild Pandaren Dungeon Hero
 										["collectible"] = false,
-										["groups"] = {
+										["g"] = {
 											i(89190),	-- Tailored Initiate's Shirt - Honored
 											i(89192),	-- Tailored Memeber's Shirt - Honored
 											i(89194),	-- Tailored Officer's Shirt - Honored
@@ -1255,28 +1265,28 @@ _.Zones =
 									--[[
 									a(ach(5031, {	-- Horde Slayer
 										["collectible"] = false,
-										["groups"] = {
+										["g"] = {
 											a(i(65361)),	-- Guild Page - Honored - minipet bound to Character
 										},
 									})),
 									]]--
 									ach(5035, {	-- Master Crafter
 										["collectible"] = false,
-										["groups"] = {
+										["g"] = {
 											--a(i(65360)),	-- Cloak of Coordination - Revered
 											h(i(65274)),	-- Cloak of Coordination - Revered
 										},
 									}),
 									ach(5465, {	-- Mix Master
 										["collectible"] = false,
-										["groups"] = {
+										["g"] = {
 											i(65435),	-- Recipe: Cauldron of Battle
 										},
 									}),
 									--[[
 									a(ach(6644, {	-- Pandaren Embassy
 										["collectible"] = false,
-										["groups"] = {
+										["g"] = {
 											i(89191),	-- Artisan Initiate's Shirt - Exalted
 											i(89193),	-- Artisan Member's Shirt - Exalted
 											i(89195),	-- Artisan Officer's Shirt - Exalted
@@ -1285,7 +1295,7 @@ _.Zones =
 									]]--
 									h(ach(6664, {	-- Pandaren Embassy
 										["collectible"] = false,
-										["groups"] = {
+										["g"] = {
 											i(89191),	-- Artisan Initiate's Shirt - Exalted
 											i(89193),	-- Artisan Member's Shirt - Exalted
 											i(89195),	-- Artisan Officer's Shirt - Exalted
@@ -1293,7 +1303,7 @@ _.Zones =
 									})),
 									ach(5201, {	-- Profit Sharing
 										["collectible"] = false,
-										["groups"] = {
+										["g"] = {
 											--a(i(65363)),	-- Guild Herald - Revered - minipet bound to Character
 											h(i(65364)),	-- Guild Herald - Revered - minipet bound to Character
 										},
@@ -1301,7 +1311,7 @@ _.Zones =
 									--[[
 									a(ach(7448, {	-- Scenario Roundup
 										["collectible"] = false,
-										["groups"] = {
+										["g"] = {
 											i(85508),	-- Initiate's Shirt - Honored
 											i(85509),	-- Member's Shirt - Honored
 											i(85510),	-- Officer's Shirt - Honored
@@ -1310,7 +1320,7 @@ _.Zones =
 									]]--
 									h(ach(7449, {	-- Scenario Roundup
 										["collectible"] = false,
-										["groups"] = {
+										["g"] = {
 											i(85508),	-- Initiate's Shirt - Honored
 											i(85509),	-- Member's Shirt - Honored
 											i(85510),	-- Officer's Shirt - Honored
@@ -1318,33 +1328,33 @@ _.Zones =
 									})),
 									ach(5467, {	-- Set the Oven to "Cataclysmic"
 										["collectible"] = false,
-										["groups"] = {
+										["g"] = {
 											i(62799),	-- Recipe: Broiled Dragon Feast
 										},
 									}),
 									ach(5036, {	-- That's a Lot of Bait
 										["collectible"] = false,
-										["groups"] = {
+										["g"] = {
 											i(62800),	-- Recipe: Seafood Magnifique Feast
 										},
 									}),
 									--[[
 									a(ach(5812, {	-- United Nations
 										["collectible"] = false,
-										["groups"] = {
+										["g"] = {
 											i(63138),	-- Dark Phoenix Hatchling - Exalted
 										},
 									})),
 									]]--
 									h(ach(5892, {	-- United Nations
 										["collectible"] = false,
-										["groups"] = {
+										["g"] = {
 											i(63138),	-- Dark Phoenix Hatchling - Exalted
 										},
 									})),
 									ach(6626, {	-- Working Better as a Team
 										["collectible"] = false,
-										["groups"] = {
+										["g"] = {
 											i(127011),	-- Pristine Lightforged Legplates - Honored
 											i(122252),	-- Tarnished Leggings of Destruction - Honored
 											i(122251),	-- Polished Legplates of Valor - Honored
@@ -1377,9 +1387,8 @@ _.Zones =
 								},
 							}),
 						},
-						["description"] = "If you cannot find an item on this vendor, either your guild does not have the required Achievement, or you do not have sufficient rep with your guild to purchase the item.|r",
 					}),
-					n(46555, {	-- Gunra <Justice Quartermaster>
+					n(46555,  {	-- Gunra <Justice Quartermaster>
 						i(71523),	-- Immolation Handguards
 						i(71608),	-- Shoulderguards of the Molten Giant
 						i(71477),	-- Elementium Deathplate Gauntlets
@@ -1582,411 +1591,420 @@ _.Zones =
 						i(71284),	-- Balespider's Robes
 						i(71295),	-- Erupting Volcanic Shoulderwraps												
 					}),
-					n(3335, {	-- Hagrus <Reagents>
+					n(3335,   {	-- Hagrus <Reagents>
 						["qgs"] = {72157},	-- Hagrus <Reagents> (SOO)
-						["groups"] = {
+						["g"] = {
 							i(5643),	-- Recipe: Great Rage Potion
 							i(5640),	-- Recipe: Rage Potion
 						}
 					}),
-					n(3316, {	-- Handor <Cloth & Leather Armor Merchant>
-						i(12256),	-- Cindercloth Leggings
+					n(3316,   {	-- Handor <Cloth & Leather Armor Merchant>
+						["coord"] = { 60.8, 54.0, 85 },
+						["g"] = {
+							i(12256),	-- Cindercloth Leggings
+						},
 					}),
-					n(46556, {	-- Jamus'Vaz <Valor Quartermaster>
-						i(78704),	-- Spiritwalker's Legguards
-						i(78666),	-- Spiritwalker's Gloves
-						i(78658),	-- Colossal Dragonplate Chestguard
-						i(78659),	-- Necrotic Boneplate Breastplate
-						i(78660),	-- Deep Earth Robes
-						i(78661),	-- Wyrmstalker's Tunic
-						i(78662),	-- Deep Earth Vestment
-						i(78663),	-- Necrotic Boneplate Chestguard
-						i(78664),	-- Blackfang Battleweave Tunic
-						i(78665),	-- Deep Earth Raiment
-						i(78667),	-- Spiritwalker's Grips
-						i(78668),	-- Colossal Dragonplate Gauntlets
-						i(78669),	-- Colossal Dragonplate Handguards
-						i(78670),	-- Necrotic Boneplate Gauntlets
-						i(78671),	-- Time Lord's Gloves
-						i(78672),	-- Spiritwalker's Handwraps
-						i(78673),	-- Gloves of Radiant Glory
-						i(78674),	-- Wyrmstalker's Gloves
-						i(78675),	-- Gauntlets of Radiant Glory
-						i(78676),	-- Deep Earth Gloves
-						i(78677),	-- Handguards of Radiant Glory
-						i(78678),	-- Necrotic Boneplate Handguards
-						i(78679),	-- Blackfang Battleweave Gloves
-						i(78680),	-- Deep Earth Handwraps
-						i(78681),	-- Gloves of the Faceless Shroud
-						i(78682),	-- Gloves of Dying Light
-						i(78683),	-- Handwraps of Dying Light
-						i(78684),	-- Deep Earth Grips
-						i(78685),	-- Spiritwalker's Headpiece
-						i(78686),	-- Spiritwalker's Helmet
-						i(78687),	-- Necrotic Boneplate Helmet
-						i(78688),	-- Colossal Dragonplate Helmet
-						i(78689),	-- Colossal Dragonplate Faceguard
-						i(78690),	-- Deep Earth Helm
-						i(78691),	-- Spiritwalker's Faceguard
-						i(78692),	-- Headguard of Radiant Glory
-						i(78693),	-- Helmet of Radiant Glory
-						i(78694),	-- Deep Earth Headpiece
-						i(78695),	-- Faceguard of Radiant Glory
-						i(78696),	-- Deep Earth Cover
-						i(78697),	-- Necrotic Boneplate Faceguard
-						i(78698),	-- Wyrmstalker's Headguard
-						i(78699),	-- Blackfang Battleweave Helmet
-						i(78700),	-- Cowl of Dying Light
-						i(78701),	-- Time Lord's Hood
-						i(78702),	-- Hood of the Faceless Shroud
-						i(78703),	-- Hood of Dying Light
-						i(78657),	-- Colossal Dragonplate Battleplate
-						i(78705),	-- Colossal Dragonplate Legguards
-						i(78706),	-- Colossal Dragonplate Legplates
-						i(78707),	-- Necrotic Boneplate Greaves
-						i(78708),	-- Blackfang Battleweave Legguards
-						i(78709),	-- Wyrmstalker's Legguards
-						i(78710),	-- Deep Earth Legwraps
-						i(78711),	-- Spiritwalker's Kilt
-						i(78712),	-- Legplates of Radiant Glory
-						i(78713),	-- Deep Earth Legguards
-						i(78714),	-- Deep Earth Leggings
-						i(78715),	-- Legguards of Radiant Glory
-						i(78716),	-- Necrotic Boneplate Legguards
-						i(78717),	-- Greaves of Radiant Glory
-						i(78718),	-- Spiritwalker's Legwraps
-						i(78719),	-- Legwraps of Dying Light
-						i(78720),	-- Time Lord's Leggings
-						i(78721),	-- Leggings of the Faceless Shroud
-						i(78722),	-- Leggings of Dying Light
-						i(78723),	-- Spiritwalker's Hauberk
-						i(78724),	-- Spiritwalker's Cuirass
-						i(78725),	-- Spiritwalker's Tunic
-						i(78726),	-- Breastplate of Radiant Glory
-						i(78727),	-- Battleplate of Radiant Glory
-						i(78728),	-- Robes of Dying Light
-						i(78729),	-- Time Lord's Robes
-						i(78730),	-- Robes of the Faceless Shroud
-						i(78731),	-- Robes of Dying Light
-						i(78732),	-- Chestguard of Radiant Glory
-						i(78733),	-- Spiritwalker's Spaulders
-						i(78734),	-- Colossal Dragonplate Shoulderguards
-						i(78735),	-- Colossal Dragonplate Pauldrons
-						i(78736),	-- Necrotic Boneplate Pauldrons
-						i(78737),	-- Wyrmstalker's Spaulders
-						i(78738),	-- Blackfang Battleweave Spaulders
-						i(78739),	-- Spiritwalker's Mantle
-						i(78740),	-- Deep Earth Mantle
-						i(78741),	-- Spiritwalker's Shoulderwraps
-						i(78742),	-- Pauldrons of Radiant Glory
-						i(78743),	-- Deep Earth Spaulders
-						i(78744),	-- Deep Earth Shoulderwraps
-						i(78745),	-- Shoulderguards of Radiant Glory
-						i(78746),	-- Mantle of Radiant Glory
-						i(78747),	-- Mantle of Dying Light
-						i(78748),	-- Time Lord's Mantle
-						i(78749),	-- Mantle of the Faceless Shroud
-						i(78750),	-- Mantle of Dying Light
-						i(78751),	-- Necrotic Boneplate Shoulderguards
-						i(77078),	-- Scintillating Rods
-						i(77079),	-- Hungermouth Wand
-						i(77095),	-- Batwing Cloak
-						i(77096),	-- Woundlicker Cover
-						i(77097),	-- Dreamcrusher Drape
-						i(77098),	-- Nanoprecise Cape
-						i(77099),	-- Indefatigable Greatcloak
-						i(77119),	-- Bones of the Damned
-						i(77120),	-- Chestplate of the Unshakable Titan
-						i(77121),	-- Lightwarper Vestments
-						i(77122),	-- Robes of Searing Shadow
-						i(77123),	-- Shining Carapace of Glory
-						i(77124),	-- Dragonflayer Vest
-						i(77125),	-- Ghostworld Chestguard
-						i(77126),	-- Shadowbinder Chestguard
-						i(77127),	-- Decaying Herbalist's Robes
-						i(77146),	-- Soulgaze Cowl
-						i(77147),	-- Hood of Hidden Flesh
-						i(77148),	-- Nocturnal Gaze
-						i(77149),	-- Helmet of Perpetual Rebirth
-						i(77150),	-- Zeherah's Dragonskull Crown
-						i(77151),	-- Wolfdream Circlet
-						i(77153),	-- Glowing Wings of Hope
-						i(77155),	-- Visage of Petrification
-						i(77156),	-- Jaw of Repudiation
-						i(77157),	-- The Hands of Gilly
-						i(77159),	-- Clockwinder's Immaculate Gloves
-						i(77160),	-- Fungus-Born Gloves
-						i(77161),	-- Lightfinger Handwraps
-						i(77162),	-- Arrowflick Gauntlets
-						i(77163),	-- Gloves of Ghostly Dreams
-						i(77164),	-- Gleaming Grips of Mending
-						i(77165),	-- Grimfist Crushers
-						i(77166),	-- Gauntlets of Feathery Blows
-						i(77169),	-- Silver Sabatons of Fury
-						i(77170),	-- Kneebreaker Boots
-						i(77171),	-- Bladeshatter Treads
-						i(77172),	-- Boots of Fungoid Growth
-						i(77173),	-- Rooftop Griptoes
-						i(77174),	-- Sabatons of the Graceful Spirit
-						i(77175),	-- Boneshard Boots
-						i(77176),	-- Kavan's Forsaken Treads
-						i(77177),	-- Splinterfoot Sandals
-						i(77179),	-- Tentacular Belt
-						i(77180),	-- Belt of Hidden Keys
-						i(77181),	-- Belt of Universal Curing
-						i(77182),	-- Cord of Dragon Sinew
-						i(77183),	-- Girdle of Shamanic Fury
-						i(77184),	-- Blinding Girdle of Truth
-						i(77185),	-- Demonbone Waistguard
-						i(77186),	-- Forgesmelter Waistplate
-						i(77187),	-- Vestal's Irrepressible Girdle
-						i(77316),	-- Flashing Bracers of Warmth
-						i(77317),	-- Heartcrusher Wristplates
-						i(77318),	-- Bracers of Unrelenting Excellence
-						i(77319),	-- Bracers of the Spectral Wolf
-						i(77320),	-- Luminescent Bracers
-						i(77321),	-- Dragonbelly Bracers
-						i(77322),	-- Bracers of Manifold Pockets
-						i(77323),	-- Bracers of the Black Dream
-						i(77324),	-- Chronoboost Bracers
-						i(76212),	-- Time Lord's Gloves
-						i(76214),	-- Time Lord's Leggings
-						i(76215),	-- Time Lord's Robes
-						i(76216),	-- Time Lord's Mantle
-						i(76339),	-- Mantle of the Faceless Shroud
-						i(76340),	-- Robes of the Faceless Shroud
-						i(76341),	-- Leggings of the Faceless Shroud
-						i(76342),	-- Hood of the Faceless Shroud
-						i(76343),	-- Gloves of the Faceless Shroud
-						i(76213),	-- Time Lord's Hood
-						i(76344),	-- Mantle of Dying Light
-						i(76345),	-- Robes of Dying Light
-						i(76346),	-- Leggings of Dying Light
-						i(76347),	-- Hood of Dying Light
-						i(76348),	-- Gloves of Dying Light
-						i(76357),	-- Handwraps of Dying Light
-						i(76358),	-- Cowl of Dying Light
-						i(76359),	-- Legwraps of Dying Light
-						i(76360),	-- Robes of Dying Light
-						i(76361),	-- Mantle of Dying Light
-						i(76749),	-- Deep Earth Handwraps
-						i(76750),	-- Deep Earth Helm
-						i(76751),	-- Deep Earth Legwraps
-						i(76752),	-- Deep Earth Robes
-						i(76753),	-- Deep Earth Mantle
-						i(76756),	-- Spiritwalker's Tunic
-						i(76757),	-- Spiritwalker's Handwraps
-						i(76758),	-- Spiritwalker's Faceguard
-						i(76759),	-- Spiritwalker's Legwraps
-						i(76760),	-- Spiritwalker's Mantle
-						i(76765),	-- Breastplate of Radiant Glory
-						i(76766),	-- Gloves of Radiant Glory
-						i(76767),	-- Headguard of Radiant Glory
-						i(76768),	-- Greaves of Radiant Glory
-						i(76769),	-- Mantle of Radiant Glory
-						i(76874),	-- Battleplate of Radiant Glory
-						i(76875),	-- Gauntlets of Radiant Glory
-						i(76876),	-- Helmet of Radiant Glory
-						i(76877),	-- Legplates of Radiant Glory
-						i(76878),	-- Pauldrons of Radiant Glory
-						i(76974),	-- Necrotic Boneplate Breastplate
-						i(76975),	-- Necrotic Boneplate Gauntlets
-						i(76976),	-- Necrotic Boneplate Helmet
-						i(76977),	-- Necrotic Boneplate Greaves
-						i(76978),	-- Necrotic Boneplate Pauldrons
-						i(76983),	-- Colossal Dragonplate Helmet
-						i(76984),	-- Colossal Dragonplate Battleplate
-						i(76985),	-- Colossal Dragonplate Gauntlets
-						i(76986),	-- Colossal Dragonplate Legplates
-						i(76987),	-- Colossal Dragonplate Pauldrons
-						i(76988),	-- Colossal Dragonplate Chestguard
-						i(76989),	-- Colossal Dragonplate Handguards
-						i(76990),	-- Colossal Dragonplate Faceguard
-						i(76991),	-- Colossal Dragonplate Legguards
-						i(76992),	-- Colossal Dragonplate Shoulderguards
-						i(77003),	-- Chestguard of Radiant Glory
-						i(77004),	-- Handguards of Radiant Glory
-						i(77005),	-- Faceguard of Radiant Glory
-						i(77006),	-- Legguards of Radiant Glory
-						i(77007),	-- Shoulderguards of Radiant Glory
-						i(77008),	-- Necrotic Boneplate Chestguard
-						i(77009),	-- Necrotic Boneplate Handguards
-						i(77010),	-- Necrotic Boneplate Faceguard
-						i(77011),	-- Necrotic Boneplate Legguards
-						i(77012),	-- Necrotic Boneplate Shoulderguards
-						i(77013),	-- Deep Earth Raiment
-						i(77014),	-- Deep Earth Grips
-						i(77015),	-- Deep Earth Headpiece
-						i(77016),	-- Deep Earth Legguards
-						i(77017),	-- Deep Earth Spaulders
-						i(77018),	-- Deep Earth Gloves
-						i(77019),	-- Deep Earth Cover
-						i(77020),	-- Deep Earth Leggings
-						i(77021),	-- Deep Earth Vestment
-						i(77022),	-- Deep Earth Shoulderwraps
-						i(77023),	-- Blackfang Battleweave Tunic
-						i(77024),	-- Blackfang Battleweave Gloves
-						i(77025),	-- Blackfang Battleweave Helmet
-						i(77026),	-- Blackfang Battleweave Legguards
-						i(77027),	-- Blackfang Battleweave Spaulders
-						i(77028),	-- Wyrmstalker's Tunic
-						i(77029),	-- Wyrmstalker's Gloves
-						i(77030),	-- Wyrmstalker's Headguard
-						i(77031),	-- Wyrmstalker's Legguards
-						i(77032),	-- Wyrmstalker's Spaulders
-						i(77035),	-- Spiritwalker's Shoulderwraps
-						i(77036),	-- Spiritwalker's Kilt
-						i(77037),	-- Spiritwalker's Headpiece
-						i(77038),	-- Spiritwalker's Gloves
-						i(77039),	-- Spiritwalker's Hauberk
-						i(77040),	-- Spiritwalker's Cuirass
-						i(77041),	-- Spiritwalker's Grips
-						i(77042),	-- Spiritwalker's Helmet
-						i(77043),	-- Spiritwalker's Legguards
-						i(77044),	-- Spiritwalker's Spaulders
-						i(78799),	-- Spiritwalker's Legguards
-						i(78752),	-- Colossal Dragonplate Battleplate
-						i(78754),	-- Necrotic Boneplate Breastplate
-						i(78755),	-- Deep Earth Robes
-						i(78756),	-- Wyrmstalker's Tunic
-						i(78757),	-- Deep Earth Vestment
-						i(78758),	-- Necrotic Boneplate Chestguard
-						i(78759),	-- Blackfang Battleweave Tunic
-						i(78760),	-- Deep Earth Raiment
-						i(78761),	-- Spiritwalker's Gloves
-						i(78762),	-- Spiritwalker's Grips
-						i(78763),	-- Colossal Dragonplate Gauntlets
-						i(78764),	-- Colossal Dragonplate Handguards
-						i(78765),	-- Necrotic Boneplate Gauntlets
-						i(78766),	-- Time Lord's Gloves
-						i(78767),	-- Spiritwalker's Handwraps
-						i(78768),	-- Gloves of Radiant Glory
-						i(78769),	-- Wyrmstalker's Gloves
-						i(78770),	-- Gauntlets of Radiant Glory
-						i(78771),	-- Deep Earth Gloves
-						i(78772),	-- Handguards of Radiant Glory
-						i(78773),	-- Necrotic Boneplate Handguards
-						i(78774),	-- Blackfang Battleweave Gloves
-						i(78775),	-- Deep Earth Handwraps
-						i(78776),	-- Gloves of the Faceless Shroud
-						i(78777),	-- Gloves of Dying Light
-						i(78778),	-- Handwraps of Dying Light
-						i(78779),	-- Deep Earth Grips
-						i(78780),	-- Spiritwalker's Headpiece
-						i(78781),	-- Spiritwalker's Helmet
-						i(78782),	-- Necrotic Boneplate Helmet
-						i(78783),	-- Colossal Dragonplate Helmet
-						i(78784),	-- Colossal Dragonplate Faceguard
-						i(78785),	-- Deep Earth Helm
-						i(78786),	-- Spiritwalker's Faceguard
-						i(78787),	-- Headguard of Radiant Glory
-						i(78788),	-- Helmet of Radiant Glory
-						i(78789),	-- Deep Earth Headpiece
-						i(78790),	-- Faceguard of Radiant Glory
-						i(78791),	-- Deep Earth Cover
-						i(78792),	-- Necrotic Boneplate Faceguard
-						i(78793),	-- Wyrmstalker's Headguard
-						i(78794),	-- Blackfang Battleweave Helmet
-						i(78795),	-- Cowl of Dying Light
-						i(78796),	-- Time Lord's Hood
-						i(78797),	-- Hood of the Faceless Shroud
-						i(78798),	-- Hood of Dying Light
-						i(78753),	-- Colossal Dragonplate Chestguard
-						i(78800),	-- Colossal Dragonplate Legguards
-						i(78801),	-- Colossal Dragonplate Legplates
-						i(78802),	-- Necrotic Boneplate Greaves
-						i(78803),	-- Blackfang Battleweave Legguards
-						i(78804),	-- Wyrmstalker's Legguards
-						i(78805),	-- Deep Earth Legwraps
-						i(78806),	-- Spiritwalker's Kilt
-						i(78807),	-- Legplates of Radiant Glory
-						i(78808),	-- Deep Earth Legguards
-						i(78809),	-- Deep Earth Leggings
-						i(78810),	-- Legguards of Radiant Glory
-						i(78811),	-- Necrotic Boneplate Legguards
-						i(78812),	-- Greaves of Radiant Glory
-						i(78813),	-- Spiritwalker's Legwraps
-						i(78814),	-- Legwraps of Dying Light
-						i(78815),	-- Time Lord's Leggings
-						i(78816),	-- Leggings of the Faceless Shroud
-						i(78817),	-- Leggings of Dying Light
-						i(78818),	-- Spiritwalker's Hauberk
-						i(78819),	-- Spiritwalker's Cuirass
-						i(78820),	-- Spiritwalker's Tunic
-						i(78821),	-- Breastplate of Radiant Glory
-						i(78822),	-- Battleplate of Radiant Glory
-						i(78823),	-- Robes of Dying Light
-						i(78824),	-- Time Lord's Robes
-						i(78825),	-- Robes of the Faceless Shroud
-						i(78826),	-- Robes of Dying Light
-						i(78827),	-- Chestguard of Radiant Glory
-						i(78828),	-- Spiritwalker's Spaulders
-						i(78829),	-- Colossal Dragonplate Shoulderguards
-						i(78830),	-- Colossal Dragonplate Pauldrons
-						i(78831),	-- Necrotic Boneplate Pauldrons
-						i(78832),	-- Wyrmstalker's Spaulders
-						i(78833),	-- Blackfang Battleweave Spaulders
-						i(78834),	-- Spiritwalker's Mantle
-						i(78835),	-- Deep Earth Mantle
-						i(78836),	-- Spiritwalker's Shoulderwraps
-						i(78837),	-- Pauldrons of Radiant Glory
-						i(78838),	-- Deep Earth Spaulders
-						i(78839),	-- Deep Earth Shoulderwraps
-						i(78840),	-- Shoulderguards of Radiant Glory
-						i(78841),	-- Mantle of Radiant Glory
-						i(78842),	-- Mantle of Dying Light
-						i(78843),	-- Time Lord's Mantle
-						i(78844),	-- Mantle of the Faceless Shroud
-						i(78845),	-- Mantle of Dying Light
-						i(78846),	-- Necrotic Boneplate Shoulderguards
+					n(46556,  {	-- Jamus'Vaz <Valor Quartermaster>
+						["coord"] = { 48.6, 71.4, 85 },
+						["g"] = {
+							i(78704),	-- Spiritwalker's Legguards
+							i(78666),	-- Spiritwalker's Gloves
+							i(78658),	-- Colossal Dragonplate Chestguard
+							i(78659),	-- Necrotic Boneplate Breastplate
+							i(78660),	-- Deep Earth Robes
+							i(78661),	-- Wyrmstalker's Tunic
+							i(78662),	-- Deep Earth Vestment
+							i(78663),	-- Necrotic Boneplate Chestguard
+							i(78664),	-- Blackfang Battleweave Tunic
+							i(78665),	-- Deep Earth Raiment
+							i(78667),	-- Spiritwalker's Grips
+							i(78668),	-- Colossal Dragonplate Gauntlets
+							i(78669),	-- Colossal Dragonplate Handguards
+							i(78670),	-- Necrotic Boneplate Gauntlets
+							i(78671),	-- Time Lord's Gloves
+							i(78672),	-- Spiritwalker's Handwraps
+							i(78673),	-- Gloves of Radiant Glory
+							i(78674),	-- Wyrmstalker's Gloves
+							i(78675),	-- Gauntlets of Radiant Glory
+							i(78676),	-- Deep Earth Gloves
+							i(78677),	-- Handguards of Radiant Glory
+							i(78678),	-- Necrotic Boneplate Handguards
+							i(78679),	-- Blackfang Battleweave Gloves
+							i(78680),	-- Deep Earth Handwraps
+							i(78681),	-- Gloves of the Faceless Shroud
+							i(78682),	-- Gloves of Dying Light
+							i(78683),	-- Handwraps of Dying Light
+							i(78684),	-- Deep Earth Grips
+							i(78685),	-- Spiritwalker's Headpiece
+							i(78686),	-- Spiritwalker's Helmet
+							i(78687),	-- Necrotic Boneplate Helmet
+							i(78688),	-- Colossal Dragonplate Helmet
+							i(78689),	-- Colossal Dragonplate Faceguard
+							i(78690),	-- Deep Earth Helm
+							i(78691),	-- Spiritwalker's Faceguard
+							i(78692),	-- Headguard of Radiant Glory
+							i(78693),	-- Helmet of Radiant Glory
+							i(78694),	-- Deep Earth Headpiece
+							i(78695),	-- Faceguard of Radiant Glory
+							i(78696),	-- Deep Earth Cover
+							i(78697),	-- Necrotic Boneplate Faceguard
+							i(78698),	-- Wyrmstalker's Headguard
+							i(78699),	-- Blackfang Battleweave Helmet
+							i(78700),	-- Cowl of Dying Light
+							i(78701),	-- Time Lord's Hood
+							i(78702),	-- Hood of the Faceless Shroud
+							i(78703),	-- Hood of Dying Light
+							i(78657),	-- Colossal Dragonplate Battleplate
+							i(78705),	-- Colossal Dragonplate Legguards
+							i(78706),	-- Colossal Dragonplate Legplates
+							i(78707),	-- Necrotic Boneplate Greaves
+							i(78708),	-- Blackfang Battleweave Legguards
+							i(78709),	-- Wyrmstalker's Legguards
+							i(78710),	-- Deep Earth Legwraps
+							i(78711),	-- Spiritwalker's Kilt
+							i(78712),	-- Legplates of Radiant Glory
+							i(78713),	-- Deep Earth Legguards
+							i(78714),	-- Deep Earth Leggings
+							i(78715),	-- Legguards of Radiant Glory
+							i(78716),	-- Necrotic Boneplate Legguards
+							i(78717),	-- Greaves of Radiant Glory
+							i(78718),	-- Spiritwalker's Legwraps
+							i(78719),	-- Legwraps of Dying Light
+							i(78720),	-- Time Lord's Leggings
+							i(78721),	-- Leggings of the Faceless Shroud
+							i(78722),	-- Leggings of Dying Light
+							i(78723),	-- Spiritwalker's Hauberk
+							i(78724),	-- Spiritwalker's Cuirass
+							i(78725),	-- Spiritwalker's Tunic
+							i(78726),	-- Breastplate of Radiant Glory
+							i(78727),	-- Battleplate of Radiant Glory
+							i(78728),	-- Robes of Dying Light
+							i(78729),	-- Time Lord's Robes
+							i(78730),	-- Robes of the Faceless Shroud
+							i(78731),	-- Robes of Dying Light
+							i(78732),	-- Chestguard of Radiant Glory
+							i(78733),	-- Spiritwalker's Spaulders
+							i(78734),	-- Colossal Dragonplate Shoulderguards
+							i(78735),	-- Colossal Dragonplate Pauldrons
+							i(78736),	-- Necrotic Boneplate Pauldrons
+							i(78737),	-- Wyrmstalker's Spaulders
+							i(78738),	-- Blackfang Battleweave Spaulders
+							i(78739),	-- Spiritwalker's Mantle
+							i(78740),	-- Deep Earth Mantle
+							i(78741),	-- Spiritwalker's Shoulderwraps
+							i(78742),	-- Pauldrons of Radiant Glory
+							i(78743),	-- Deep Earth Spaulders
+							i(78744),	-- Deep Earth Shoulderwraps
+							i(78745),	-- Shoulderguards of Radiant Glory
+							i(78746),	-- Mantle of Radiant Glory
+							i(78747),	-- Mantle of Dying Light
+							i(78748),	-- Time Lord's Mantle
+							i(78749),	-- Mantle of the Faceless Shroud
+							i(78750),	-- Mantle of Dying Light
+							i(78751),	-- Necrotic Boneplate Shoulderguards
+							i(77078),	-- Scintillating Rods
+							i(77079),	-- Hungermouth Wand
+							i(77095),	-- Batwing Cloak
+							i(77096),	-- Woundlicker Cover
+							i(77097),	-- Dreamcrusher Drape
+							i(77098),	-- Nanoprecise Cape
+							i(77099),	-- Indefatigable Greatcloak
+							i(77119),	-- Bones of the Damned
+							i(77120),	-- Chestplate of the Unshakable Titan
+							i(77121),	-- Lightwarper Vestments
+							i(77122),	-- Robes of Searing Shadow
+							i(77123),	-- Shining Carapace of Glory
+							i(77124),	-- Dragonflayer Vest
+							i(77125),	-- Ghostworld Chestguard
+							i(77126),	-- Shadowbinder Chestguard
+							i(77127),	-- Decaying Herbalist's Robes
+							i(77146),	-- Soulgaze Cowl
+							i(77147),	-- Hood of Hidden Flesh
+							i(77148),	-- Nocturnal Gaze
+							i(77149),	-- Helmet of Perpetual Rebirth
+							i(77150),	-- Zeherah's Dragonskull Crown
+							i(77151),	-- Wolfdream Circlet
+							i(77153),	-- Glowing Wings of Hope
+							i(77155),	-- Visage of Petrification
+							i(77156),	-- Jaw of Repudiation
+							i(77157),	-- The Hands of Gilly
+							i(77159),	-- Clockwinder's Immaculate Gloves
+							i(77160),	-- Fungus-Born Gloves
+							i(77161),	-- Lightfinger Handwraps
+							i(77162),	-- Arrowflick Gauntlets
+							i(77163),	-- Gloves of Ghostly Dreams
+							i(77164),	-- Gleaming Grips of Mending
+							i(77165),	-- Grimfist Crushers
+							i(77166),	-- Gauntlets of Feathery Blows
+							i(77169),	-- Silver Sabatons of Fury
+							i(77170),	-- Kneebreaker Boots
+							i(77171),	-- Bladeshatter Treads
+							i(77172),	-- Boots of Fungoid Growth
+							i(77173),	-- Rooftop Griptoes
+							i(77174),	-- Sabatons of the Graceful Spirit
+							i(77175),	-- Boneshard Boots
+							i(77176),	-- Kavan's Forsaken Treads
+							i(77177),	-- Splinterfoot Sandals
+							i(77179),	-- Tentacular Belt
+							i(77180),	-- Belt of Hidden Keys
+							i(77181),	-- Belt of Universal Curing
+							i(77182),	-- Cord of Dragon Sinew
+							i(77183),	-- Girdle of Shamanic Fury
+							i(77184),	-- Blinding Girdle of Truth
+							i(77185),	-- Demonbone Waistguard
+							i(77186),	-- Forgesmelter Waistplate
+							i(77187),	-- Vestal's Irrepressible Girdle
+							i(77316),	-- Flashing Bracers of Warmth
+							i(77317),	-- Heartcrusher Wristplates
+							i(77318),	-- Bracers of Unrelenting Excellence
+							i(77319),	-- Bracers of the Spectral Wolf
+							i(77320),	-- Luminescent Bracers
+							i(77321),	-- Dragonbelly Bracers
+							i(77322),	-- Bracers of Manifold Pockets
+							i(77323),	-- Bracers of the Black Dream
+							i(77324),	-- Chronoboost Bracers
+							i(76212),	-- Time Lord's Gloves
+							i(76214),	-- Time Lord's Leggings
+							i(76215),	-- Time Lord's Robes
+							i(76216),	-- Time Lord's Mantle
+							i(76339),	-- Mantle of the Faceless Shroud
+							i(76340),	-- Robes of the Faceless Shroud
+							i(76341),	-- Leggings of the Faceless Shroud
+							i(76342),	-- Hood of the Faceless Shroud
+							i(76343),	-- Gloves of the Faceless Shroud
+							i(76213),	-- Time Lord's Hood
+							i(76344),	-- Mantle of Dying Light
+							i(76345),	-- Robes of Dying Light
+							i(76346),	-- Leggings of Dying Light
+							i(76347),	-- Hood of Dying Light
+							i(76348),	-- Gloves of Dying Light
+							i(76357),	-- Handwraps of Dying Light
+							i(76358),	-- Cowl of Dying Light
+							i(76359),	-- Legwraps of Dying Light
+							i(76360),	-- Robes of Dying Light
+							i(76361),	-- Mantle of Dying Light
+							i(76749),	-- Deep Earth Handwraps
+							i(76750),	-- Deep Earth Helm
+							i(76751),	-- Deep Earth Legwraps
+							i(76752),	-- Deep Earth Robes
+							i(76753),	-- Deep Earth Mantle
+							i(76756),	-- Spiritwalker's Tunic
+							i(76757),	-- Spiritwalker's Handwraps
+							i(76758),	-- Spiritwalker's Faceguard
+							i(76759),	-- Spiritwalker's Legwraps
+							i(76760),	-- Spiritwalker's Mantle
+							i(76765),	-- Breastplate of Radiant Glory
+							i(76766),	-- Gloves of Radiant Glory
+							i(76767),	-- Headguard of Radiant Glory
+							i(76768),	-- Greaves of Radiant Glory
+							i(76769),	-- Mantle of Radiant Glory
+							i(76874),	-- Battleplate of Radiant Glory
+							i(76875),	-- Gauntlets of Radiant Glory
+							i(76876),	-- Helmet of Radiant Glory
+							i(76877),	-- Legplates of Radiant Glory
+							i(76878),	-- Pauldrons of Radiant Glory
+							i(76974),	-- Necrotic Boneplate Breastplate
+							i(76975),	-- Necrotic Boneplate Gauntlets
+							i(76976),	-- Necrotic Boneplate Helmet
+							i(76977),	-- Necrotic Boneplate Greaves
+							i(76978),	-- Necrotic Boneplate Pauldrons
+							i(76983),	-- Colossal Dragonplate Helmet
+							i(76984),	-- Colossal Dragonplate Battleplate
+							i(76985),	-- Colossal Dragonplate Gauntlets
+							i(76986),	-- Colossal Dragonplate Legplates
+							i(76987),	-- Colossal Dragonplate Pauldrons
+							i(76988),	-- Colossal Dragonplate Chestguard
+							i(76989),	-- Colossal Dragonplate Handguards
+							i(76990),	-- Colossal Dragonplate Faceguard
+							i(76991),	-- Colossal Dragonplate Legguards
+							i(76992),	-- Colossal Dragonplate Shoulderguards
+							i(77003),	-- Chestguard of Radiant Glory
+							i(77004),	-- Handguards of Radiant Glory
+							i(77005),	-- Faceguard of Radiant Glory
+							i(77006),	-- Legguards of Radiant Glory
+							i(77007),	-- Shoulderguards of Radiant Glory
+							i(77008),	-- Necrotic Boneplate Chestguard
+							i(77009),	-- Necrotic Boneplate Handguards
+							i(77010),	-- Necrotic Boneplate Faceguard
+							i(77011),	-- Necrotic Boneplate Legguards
+							i(77012),	-- Necrotic Boneplate Shoulderguards
+							i(77013),	-- Deep Earth Raiment
+							i(77014),	-- Deep Earth Grips
+							i(77015),	-- Deep Earth Headpiece
+							i(77016),	-- Deep Earth Legguards
+							i(77017),	-- Deep Earth Spaulders
+							i(77018),	-- Deep Earth Gloves
+							i(77019),	-- Deep Earth Cover
+							i(77020),	-- Deep Earth Leggings
+							i(77021),	-- Deep Earth Vestment
+							i(77022),	-- Deep Earth Shoulderwraps
+							i(77023),	-- Blackfang Battleweave Tunic
+							i(77024),	-- Blackfang Battleweave Gloves
+							i(77025),	-- Blackfang Battleweave Helmet
+							i(77026),	-- Blackfang Battleweave Legguards
+							i(77027),	-- Blackfang Battleweave Spaulders
+							i(77028),	-- Wyrmstalker's Tunic
+							i(77029),	-- Wyrmstalker's Gloves
+							i(77030),	-- Wyrmstalker's Headguard
+							i(77031),	-- Wyrmstalker's Legguards
+							i(77032),	-- Wyrmstalker's Spaulders
+							i(77035),	-- Spiritwalker's Shoulderwraps
+							i(77036),	-- Spiritwalker's Kilt
+							i(77037),	-- Spiritwalker's Headpiece
+							i(77038),	-- Spiritwalker's Gloves
+							i(77039),	-- Spiritwalker's Hauberk
+							i(77040),	-- Spiritwalker's Cuirass
+							i(77041),	-- Spiritwalker's Grips
+							i(77042),	-- Spiritwalker's Helmet
+							i(77043),	-- Spiritwalker's Legguards
+							i(77044),	-- Spiritwalker's Spaulders
+							i(78799),	-- Spiritwalker's Legguards
+							i(78752),	-- Colossal Dragonplate Battleplate
+							i(78754),	-- Necrotic Boneplate Breastplate
+							i(78755),	-- Deep Earth Robes
+							i(78756),	-- Wyrmstalker's Tunic
+							i(78757),	-- Deep Earth Vestment
+							i(78758),	-- Necrotic Boneplate Chestguard
+							i(78759),	-- Blackfang Battleweave Tunic
+							i(78760),	-- Deep Earth Raiment
+							i(78761),	-- Spiritwalker's Gloves
+							i(78762),	-- Spiritwalker's Grips
+							i(78763),	-- Colossal Dragonplate Gauntlets
+							i(78764),	-- Colossal Dragonplate Handguards
+							i(78765),	-- Necrotic Boneplate Gauntlets
+							i(78766),	-- Time Lord's Gloves
+							i(78767),	-- Spiritwalker's Handwraps
+							i(78768),	-- Gloves of Radiant Glory
+							i(78769),	-- Wyrmstalker's Gloves
+							i(78770),	-- Gauntlets of Radiant Glory
+							i(78771),	-- Deep Earth Gloves
+							i(78772),	-- Handguards of Radiant Glory
+							i(78773),	-- Necrotic Boneplate Handguards
+							i(78774),	-- Blackfang Battleweave Gloves
+							i(78775),	-- Deep Earth Handwraps
+							i(78776),	-- Gloves of the Faceless Shroud
+							i(78777),	-- Gloves of Dying Light
+							i(78778),	-- Handwraps of Dying Light
+							i(78779),	-- Deep Earth Grips
+							i(78780),	-- Spiritwalker's Headpiece
+							i(78781),	-- Spiritwalker's Helmet
+							i(78782),	-- Necrotic Boneplate Helmet
+							i(78783),	-- Colossal Dragonplate Helmet
+							i(78784),	-- Colossal Dragonplate Faceguard
+							i(78785),	-- Deep Earth Helm
+							i(78786),	-- Spiritwalker's Faceguard
+							i(78787),	-- Headguard of Radiant Glory
+							i(78788),	-- Helmet of Radiant Glory
+							i(78789),	-- Deep Earth Headpiece
+							i(78790),	-- Faceguard of Radiant Glory
+							i(78791),	-- Deep Earth Cover
+							i(78792),	-- Necrotic Boneplate Faceguard
+							i(78793),	-- Wyrmstalker's Headguard
+							i(78794),	-- Blackfang Battleweave Helmet
+							i(78795),	-- Cowl of Dying Light
+							i(78796),	-- Time Lord's Hood
+							i(78797),	-- Hood of the Faceless Shroud
+							i(78798),	-- Hood of Dying Light
+							i(78753),	-- Colossal Dragonplate Chestguard
+							i(78800),	-- Colossal Dragonplate Legguards
+							i(78801),	-- Colossal Dragonplate Legplates
+							i(78802),	-- Necrotic Boneplate Greaves
+							i(78803),	-- Blackfang Battleweave Legguards
+							i(78804),	-- Wyrmstalker's Legguards
+							i(78805),	-- Deep Earth Legwraps
+							i(78806),	-- Spiritwalker's Kilt
+							i(78807),	-- Legplates of Radiant Glory
+							i(78808),	-- Deep Earth Legguards
+							i(78809),	-- Deep Earth Leggings
+							i(78810),	-- Legguards of Radiant Glory
+							i(78811),	-- Necrotic Boneplate Legguards
+							i(78812),	-- Greaves of Radiant Glory
+							i(78813),	-- Spiritwalker's Legwraps
+							i(78814),	-- Legwraps of Dying Light
+							i(78815),	-- Time Lord's Leggings
+							i(78816),	-- Leggings of the Faceless Shroud
+							i(78817),	-- Leggings of Dying Light
+							i(78818),	-- Spiritwalker's Hauberk
+							i(78819),	-- Spiritwalker's Cuirass
+							i(78820),	-- Spiritwalker's Tunic
+							i(78821),	-- Breastplate of Radiant Glory
+							i(78822),	-- Battleplate of Radiant Glory
+							i(78823),	-- Robes of Dying Light
+							i(78824),	-- Time Lord's Robes
+							i(78825),	-- Robes of the Faceless Shroud
+							i(78826),	-- Robes of Dying Light
+							i(78827),	-- Chestguard of Radiant Glory
+							i(78828),	-- Spiritwalker's Spaulders
+							i(78829),	-- Colossal Dragonplate Shoulderguards
+							i(78830),	-- Colossal Dragonplate Pauldrons
+							i(78831),	-- Necrotic Boneplate Pauldrons
+							i(78832),	-- Wyrmstalker's Spaulders
+							i(78833),	-- Blackfang Battleweave Spaulders
+							i(78834),	-- Spiritwalker's Mantle
+							i(78835),	-- Deep Earth Mantle
+							i(78836),	-- Spiritwalker's Shoulderwraps
+							i(78837),	-- Pauldrons of Radiant Glory
+							i(78838),	-- Deep Earth Spaulders
+							i(78839),	-- Deep Earth Shoulderwraps
+							i(78840),	-- Shoulderguards of Radiant Glory
+							i(78841),	-- Mantle of Radiant Glory
+							i(78842),	-- Mantle of Dying Light
+							i(78843),	-- Time Lord's Mantle
+							i(78844),	-- Mantle of the Faceless Shroud
+							i(78845),	-- Mantle of Dying Light
+							i(78846),	-- Necrotic Boneplate Shoulderguards
+						},
 					}),
-					n(3322, { 	-- Kaja <Bow & Rifle Vendor>
+					n(3322,   {	-- Kaja <Bow & Rifle Vendor>
 						i(11307),	-- Massive Longbow
 						i(11306),	-- Sturdy Recurve
 						i(11303),	-- Fine Shortbow
 					}),
-					n(48510, {	-- Kall Worthaton <Trike Dealer>
+					n(48510,  {	-- Kall Worthaton <Trike Dealer>
 						i(62462),	-- Goblin Turbo-Trike Key Mount
 						i(62461),	-- Goblin Trike Key Mount
 					}),
-					n(45551, {	-- Karizi Porkpatty <Cooking Supplies>
+					n(45551,  {	-- Karizi Porkpatty <Cooking Supplies>
 						i(21219),	-- Recipe: Sagefish Delight
 						i(21099),	-- Recipe: Smoked Sagefish
 					}),
-					n(3346, {	-- Kithas <Enchanting Supplies>
-						i(6349),	-- Formula: Enchant 2H Weapon - Lesser Intellect
-						i(6346),	-- Formula: Enchant Chest - Lesser Mana
-						i(20753),	-- Formula: Lesser Wizard Oil
-						i(20752),	-- Formula: Minor Mana Oil
-						i(20758),	-- Formula: Minor Wizard Oil
-						i(22307),	-- Pattern: Enchanted Mageweave Pouch
-						i(52555, {	-- Hypnotic Dust
-							h(i(67308)),	-- Formula: Enchanted Lantern
-						}),
-						i(52721, {	-- Heavenly Shard
-							i(64411),	-- Formula: Enchant Boots - Assassin's Step
-							i(64412),	-- Formula: Enchant Boots - Lavawalker
-							i(52738),	-- Formula: Enchant Bracer - Greater Critical Strike
-							i(64413),	-- Formula: Enchant Bracer - Greater Speed
-							i(52740),	-- Formula: Enchant Chest - Greater Stamina
-							i(52739),	-- Formula: Enchant Chest - Peerless Stats
-							i(52737),	-- Formula: Enchant Cloak - Greater Critical Strike
-							i(64414),	-- Formula: Enchant Gloves - Greater Mastery
-							i(64415),	-- Formula: Enchant Gloves - Mighty Strength
-						}),
-						i(52722, {	-- Maelstrom Crystal
-							i(52736),	-- Formula: Enchant Weapon - Landslide
-							i(52733),	-- Formula: Enchant Weapon - Power Torrent
-							i(52735),	-- Formula: Enchant Weapon - Windwalk
-						}),
+					n(3346,   {	-- Kithas <Enchanting Supplies>
+						["coord"] = { 53.2, 48.8, 85 },
+						["g"] = {
+							i(6349),	-- Formula: Enchant 2H Weapon - Lesser Intellect
+							i(6346),	-- Formula: Enchant Chest - Lesser Mana
+							i(20753),	-- Formula: Lesser Wizard Oil
+							i(20752),	-- Formula: Minor Mana Oil
+							i(20758),	-- Formula: Minor Wizard Oil
+							i(22307),	-- Pattern: Enchanted Mageweave Pouch
+							i(52555, {	-- Hypnotic Dust
+								h(i(67308)),	-- Formula: Enchanted Lantern
+							}),
+							i(52721, {	-- Heavenly Shard
+								i(64411),	-- Formula: Enchant Boots - Assassin's Step
+								i(64412),	-- Formula: Enchant Boots - Lavawalker
+								i(52738),	-- Formula: Enchant Bracer - Greater Critical Strike
+								i(64413),	-- Formula: Enchant Bracer - Greater Speed
+								i(52740),	-- Formula: Enchant Chest - Greater Stamina
+								i(52739),	-- Formula: Enchant Chest - Peerless Stats
+								i(52737),	-- Formula: Enchant Cloak - Greater Critical Strike
+								i(64414),	-- Formula: Enchant Gloves - Greater Mastery
+								i(64415),	-- Formula: Enchant Gloves - Mighty Strength
+							}),
+							i(52722, {	-- Maelstrom Crystal
+								i(52736),	-- Formula: Enchant Weapon - Landslide
+								i(52733),	-- Formula: Enchant Weapon - Power Torrent
+								i(52735),	-- Formula: Enchant Weapon - Windwalk
+							}),
+						},
 					}),
-					n(3348, {	-- Kor'geld <Alchemy Supplies>
+					n(3348,   {	-- Kor'geld <Alchemy Supplies>
 						i(13478),	-- Recipe: Elixir of Superior Defense
 						i(5642),	-- Recipe: Free Action Potion
 					}),
-					{	-- Lady Palanseer (removed in 4.0.3a)
-						["npcID"] = 34043,
-						["groups"] = {
+					n(34043,  {	-- Lady Palanseer (removed in 4.0.3a)
+						["u"] = 43,
+						["g"] = {
 							i(41563),	-- Design: Willful Huge Citrine
 							i(41564),	-- Design: Empowered Huge Citrine
 							i(41565),	-- Design: Lucent Huge Citrine
@@ -2185,8 +2203,7 @@ _.Zones =
 							},
 							
 						},
-						["u"] = 43,
-					},
+					}),
 					n(133239, {	-- Leyweaver Aurielle
 						i(6270),	-- Pattern: Blue Linen Vest
 						i(6274),	-- Pattern: Blue Overalls
@@ -2194,7 +2211,7 @@ _.Zones =
 						i(10317),	-- Pattern: Pink Mageweave Shirt
 						i(5772),	-- Pattern: Red Woolen Bag
 					}),
-					n(45558, {	-- Lizna Goldweaver <Tailoring Supplies>
+					n(45558,  {	-- Lizna Goldweaver <Tailoring Supplies>
 						i(54440, {	-- Dreamcloth
 							i(54601),	-- Pattern: Belt of the Depths
 							i(54602),	-- Pattern: Dreamless Belt
@@ -2219,9 +2236,9 @@ _.Zones =
 						i(10317),	-- Pattern: Pink Mageweave Shirt
 						i(5772),	-- Pattern: Red Woolen Bag
 					}),
-					{	-- Marith Lazuria <Jewelcrafting Supplies>
-						["npcID"] = 50482,	-- Marith Lazuria <Jewelcrafting Supplies>
-						["g"] ={
+					n(50482,  {	-- Marith Lazuria <Jewelcrafting Supplies>
+						["coord"] = { 72.4, 34.6, 85 },
+						["g"] = {
 							currency(361, {	-- Illustrious Jewelcrafter's Token
 								i(52409),	-- Design: Accurate Demonseye
 								i(52419),	-- Design: Adept Ember Topaz
@@ -2313,17 +2330,14 @@ _.Zones =
 								i(52431),	-- Design: Zen Dream Emerald
 							}),
 						},
-					},
-					{	-- Nerog <Inscription Trainer>
-						["npcID"] = 46716,	-- Nerog <Inscription Trainer>
+					}),
+					n(46716,  {	-- Nerog <Inscription Trainer>
 						["coord"] = { 55.2, 55.8 },
 						["g"] = {
-							{	-- Technique: Songs of the Horde
-								["itemID"] = 140565,	-- Technique: Songs of the Horde
-							},
+							i(140565),	-- Technique: Songs of the Horde
 						},
-					},
-					n(3362, { 	-- Ogunaro Wolfrunner <Kennel Master>
+					}),
+					n(3362,   {	-- Ogunaro Wolfrunner <Kennel Master>
 						i(18796),	-- Horn of the Swift Brown Wolf
 						i(18797),	-- Horn of the Swift Timber Wolf
 						i(18798),	-- Horn of the Swift Grey Wolf
@@ -2332,155 +2346,86 @@ _.Zones =
 						i(5668),	-- Horn of the Brown Wolf
 						i(46099),	-- Horn of the Black Wolf
 					}),
-					n(3317, {	-- Ollanus <Cloth Armor Merchant>
+					n(3317,   {	-- Ollanus <Cloth Armor Merchant>
 						i(3428),	-- Common Gray Shirt
 						i(16059),	-- Common Brown Shirt
 						i(16060),	-- Common White Shirt
 					}),
-					{	-- Punra <Blacksmithing Supplies>
-						["npcID"] = 46359,	-- Punra <Blacksmithing Supplies>
+					n(46359,  {	-- Punra <Blacksmithing Supplies>
 						["g"] = {
-							{	-- Plans: Hardened Iron Shortsword
-								["itemID"] = 12162,	-- Plans: Hardened Iron Shortsword
-							},
-							{	-- Elementium Bar
-								["itemID"] = 52186,	-- Elementium Bar
+							i(12162),	-- Plans: Hardened Iron Shortsword
+							i(52186, {	-- Elementium Bar
 								["g"] = {
-									{	-- Plans: Elementium Girdle of Pain
-										["itemID"] = 66107,	-- Plans: Elementium Girdle of Pain
-									},
-									{	-- Plans: Hardened Elementium Girdle
-										["itemID"] = 66105,	-- Plans: Hardened Elementium Girdle
-									},
-									{	-- Plans: Light Elementium Belt
-										["itemID"] = 66109,	-- Plans: Light Elementium Belt
-									},
-									{	-- Plans: Pyrium Weapon Chain
-										["itemID"] = 66103,	-- Plans: Pyrium Weapon Chain
-									},
-									{	-- Plans: Vicious Ornate Pyrium Belt
-										["itemID"] = 66127,	-- Plans: Vicious Ornate Pyrium Belt
-									},
-									{	-- Plans: Vicious Ornate Pyrium Bracers
-										["itemID"] = 66125,	-- Plans: Vicious Ornate Pyrium Bracers
-									},
-									{	-- Plans: Vicious Ornate Pyrium Gauntlets
-										["itemID"] = 66126,	-- Plans: Vicious Ornate Pyrium Gauntlets
-									},
-									{	-- Plans: Vicious Pyrium Belt
-										["itemID"] = 66119,	-- Plans: Vicious Pyrium Belt
-									},
-									{	-- Plans: Vicious Pyrium Bracers
-										["itemID"] = 66117,	-- Plans: Vicious Pyrium Bracers
-									},
-									{	-- Plans: Vicious Pyrium Gauntlets
-										["itemID"] = 66118,	-- Plans: Vicious Pyrium Gauntlets
-									},
+									i(66107),	-- Plans: Elementium Girdle of Pain
+									i(66105),	-- Plans: Hardened Elementium Girdle
+									i(66109),	-- Plans: Light Elementium Belt
+									i(66103),	-- Plans: Pyrium Weapon Chain
+									i(66127),	-- Plans: Vicious Ornate Pyrium Belt
+									i(66125),	-- Plans: Vicious Ornate Pyrium Bracers
+									i(66126),	-- Plans: Vicious Ornate Pyrium Gauntlets
+									i(66119),	-- Plans: Vicious Pyrium Belt
+									i(66117),	-- Plans: Vicious Pyrium Bracers
+									i(66118),	-- Plans: Vicious Pyrium Gauntlets
 								},
-							},
-							{	-- Hardened Elementium Bar
-								["itemID"] = 53039,	-- Hardened Elementium Bar
+							}),
+							i(53039, {	-- Hardened Elementium Bar
 								["g"] = {
-									{	-- Plans: Elementium Bonesplitter
-										["itemID"] = 66113,	-- Plans: Elementium Bonesplitter
-									},
-									{	-- Plans: Elementium Deathplate
-										["itemID"] = 66106,	-- Plans: Elementium Deathplate
-									},
-									{	-- Plans: Elementium Earthguard
-										["itemID"] = 66115,	-- Plans: Elementium Earthguard
-									},
-									{	-- Plans: Elementium Gutslicer
-										["itemID"] = 67603,	-- Plans: Elementium Gutslicer
-									},
-									{	-- Plans: Elementium Hammer
-										["itemID"] = 66111,	-- Plans: Elementium Hammer
-									},
-									{	-- Plans: Elementium Poleaxe
-										["itemID"] = 66112,	-- Plans: Elementium Poleaxe
-									},
-									{	-- Plans: Elementium Shank
-										["itemID"] = 66114,	-- Plans: Elementium Shank
-									},
-									{	-- Plans: Elementium Spellblade
-										["itemID"] = 66110,	-- Plans: Elementium Spellblade
-									},
-									{	-- Plans: Elementium Stormshield
-										["itemID"] = 66116,	-- Plans: Elementium Stormshield
-									},
-									{	-- Plans: Hardened Elementium Hauberk
-										["itemID"] = 66104,	-- Plans: Hardened Elementium Hauberk
-									},
-									{	-- Plans: Light Elementium Chestguard
-										["itemID"] = 66108,	-- Plans: Light Elementium Chestguard
-									},
-									{	-- Plans: Vicious Ornate Pyrium Boots
-										["itemID"] = 66128,	-- Plans: Vicious Ornate Pyrium Boots
-									},
-									{	-- Plans: Vicious Ornate Pyrium Shoulders
-										["itemID"] = 66129,	-- Plans: Vicious Ornate Pyrium Shoulders
-									},
-									{	-- Plans: Vicious Pyrium Boots
-										["itemID"] = 66120,	-- Plans: Vicious Pyrium Boots
-									},
-									{	-- Plans: Vicious Pyrium Shoulders
-										["itemID"] = 66121,	-- Plans: Vicious Pyrium Shoulders
-									},
+									i(66113),	-- Plans: Elementium Bonesplitter
+									i(66106),	-- Plans: Elementium Deathplate
+									i(66115),	-- Plans: Elementium Earthguard
+									i(67603),	-- Plans: Elementium Gutslicer
+									i(66111),	-- Plans: Elementium Hammer
+									i(66112),	-- Plans: Elementium Poleaxe
+									i(66114),	-- Plans: Elementium Shank
+									i(66110),	-- Plans: Elementium Spellblade
+									i(66116),	-- Plans: Elementium Stormshield
+									i(66104),	-- Plans: Hardened Elementium Hauberk
+									i(66108),	-- Plans: Light Elementium Chestguard
+									i(66128),	-- Plans: Vicious Ornate Pyrium Boots
+									i(66129),	-- Plans: Vicious Ornate Pyrium Shoulders
+									i(66120),	-- Plans: Vicious Pyrium Boots
+									i(66121),	-- Plans: Vicious Pyrium Shoulders
 								},
-							},
-							{	-- Pyrium Bar
-								["itemID"] = 51950,	-- Pyrium Bar
+							}),
+							i(51950, {	-- Pyrium Bar
 								["g"] = {
-									{	-- Plans: Ebonsteel Belt Buckle
-										["itemID"] = 66100,	-- Plans: Ebonsteel Belt Buckle
-									},
-									{	-- Plans: Forged Elementium Mindcrusher
-										["itemID"] = 67606,	-- Plans: Forged Elementium Mindcrusher
-									},
-									{	-- Plans: Pyrium Shield Spike
-										["itemID"] = 66101,	-- Plans: Pyrium Shield Spike
-									},
-									{	-- Plans: Vicious Ornate Pyrium Breastplate
-										["itemID"] = 66132,	-- Plans: Vicious Ornate Pyrium Breastplate
-									},
-									{	-- Plans: Vicious Ornate Pyrium Helm
-										["itemID"] = 66131,	-- Plans: Vicious Ornate Pyrium Helm
-									},
-									{	-- Plans: Vicious Ornate Pyrium Legguards
-										["itemID"] = 66130,	-- Plans: Vicious Ornate Pyrium Legguards
-									},
-									{	-- Plans: Vicious Pyrium Breastplate
-										["itemID"] = 66124,	-- Plans: Vicious Pyrium Breastplate
-									},
-									{	-- Plans: Vicious Pyrium Helm
-										["itemID"] = 66123,	-- Plans: Vicious Pyrium Helm
-									},
-									{	-- Plans: Vicious Pyrium Legguards
-										["itemID"] = 66122,	-- Plans: Vicious Pyrium Legguards
-									},
+									i(66100),	-- Plans: Ebonsteel Belt Buckle
+									i(67606),	-- Plans: Forged Elementium Mindcrusher
+									i(66101),	-- Plans: Pyrium Shield Spike
+									i(66132),	-- Plans: Vicious Ornate Pyrium Breastplate
+									i(66131),	-- Plans: Vicious Ornate Pyrium Helm
+									i(66130),	-- Plans: Vicious Ornate Pyrium Legguards
+									i(66124),	-- Plans: Vicious Pyrium Breastplate
+									i(66123),	-- Plans: Vicious Pyrium Helm
+									i(66122),	-- Plans: Vicious Pyrium Legguards
 								},
-							},
+							}),
 						},
-					},
-					n(12796, {	-- Raider Bork <War Mount Quartermaster>
-						i(137642, {	-- Mark of Honor
+					}),
+					n(12796,  {	-- Raider Bork <War Mount Quartermaster>
+						["itemID"] = 137642,	-- Mark of Honor
+						["g"] = {
 							i(29466),	-- Black War Kodo
 							i(29469),	-- Horn of the Black War Wolf
 							i(29470),	-- Red Skeletal Warhorse
 							i(29472),	-- Whistle of the Black WAr Raptor
 							i(34129),	-- Swift Warstrider
-						}),
+						},
 					}),
-					n(43239, {	-- Razgar <Master Angler>
-						ach(5477, {	-- Fish or Cut Bait: Orgrimmar
-							i(67414, {	-- Bag of Shiny Things
-								dr(1.1, i(44983)),	-- Strand Crawler
-								dr(1.1, i(33820)),	-- Weather-Beaten Fishing Hat
+					n(43239,  {	-- Razgar <Master Angler>
+						["coord"] = { 66.0, 40.4, 85 },
+						["g"] = {
+							ach(5477, {	-- Fish or Cut Bait: Orgrimmar
+								i(67414, {	-- Bag of Shiny Things
+									dr(1.1, i(44983)),	-- Strand Crawler
+									dr(1.1, i(33820)),	-- Weather-Beaten Fishing Hat
+								}),
 							}),
-						}),
+						},
 					}),
-					n(52033, {	-- Rogoc <Bloodthirsty Gladiator>
-						i(137642, {	-- Mark of Honor
+					n(52033,  {	-- Rogoc <Bloodthirsty Gladiator>
+						["itemID"] = 137642,	-- Mark of Honor
+						["g"] = {
 							i(64782),	-- Bloodthirsty Gladiator's Links of Cruelty
 							i(64681),	-- Bloodthirsty Gladiator's Armbands of Meditation
 							i(64683),	-- Bloodthirsty Gladiator's Armplates of Alacrity
@@ -2613,9 +2558,9 @@ _.Zones =
 							i(64876),	-- Bloodthirsty Gladiator's Wyrmhide Legguards
 							i(64877),	-- Bloodthirsty Gladiator's Wyrmhide Robes
 							i(64878),	-- Bloodthirsty Gladiator's Wyrmhide Spaulders
-						}),
+						},
 					}),
-					n(58155, {	-- Rugok <Legacy Justice Quartermaster>
+					n(58155,  {	-- Rugok <Legacy Justice Quartermaster>
 						i(65226),	-- Reinforced Sapphirium Faceguard
 						i(65202),	-- Stormrider's Vestment
 						i(65272),	-- Earthen Legguards
@@ -2882,8 +2827,9 @@ _.Zones =
 						i(57922),	-- Belt of the Falling Rain
 						i(57921),	-- Incense Infused Cummerbund					
 					}),
-					n(69978, {	-- Sergeant Thunderhorn <Cataclysmic Gladiator>
-						i(137642, {	-- Mark of Honor
+					n(69978,  {	-- Sergeant Thunderhorn <Cataclysmic Gladiator>
+						["itemID"] = 137642,	-- Mark of Honor
+						["g"] = {
 							i(146639), -- Arsenal: Cataclysmic Gladiator's Weapons
 							i(73562),	-- Cataclysmic Gladiator's Bracers of Prowess
 							i(73552),	-- Cataclysmic Gladiator's Warboots of Alacrity
@@ -3069,14 +3015,14 @@ _.Zones =
 							un(2, i(28933)),	    -- High Warlord's Crossbow
 							un(2, i(28935)),	    -- High Warlord's War Staff
 							un(2, i(28938)),	    -- High Warlord's Battletome
-						}),
+						},
 					}),
-					n(3333, {	-- Shankys <Fishing Supplies>
+					n(3333,   {	-- Shankys <Fishing Supplies>
 						i(17062),	-- Recipe: Mithril Head Trout
 						i(6368),	-- Recipe: Rainbow Fin Albacore
 						i(6369),	-- Recipe: Rockscale Cod
 					}),
-					n(49737, {	-- Shazdar <Sous Chef>
+					n(49737,  {	-- Shazdar <Sous Chef>
 						currency(81, {	-- Epicurean's Award
 							i(65426),	-- Recipe: Baked Rockfish
 							i(65427),	-- Recipe: Basilisk Liverdog
@@ -3109,32 +3055,27 @@ _.Zones =
 							i(65406),	-- Recipe: Whitecrest Gumbo
 						}),
 					}),
-					{	-- Sovik
-						["npcID"] = 3413,	-- Sovik
-						["coords"] = {
-							{ 56.7, 56.4 },
-						},
+					n(3413,   {	-- Sovik
+						["coord"] = { 56.7, 56.4, 85 },
 						["g"] = {
-							{	-- Schematic: Red Firework
-								["itemID"] = 18647,	-- Schematic: Red Firework
-							},
-							{	-- Schematic: Steam Tonk Controller
-								["itemID"] = 22729,	-- Steam Tonk Controller
-							},
+							i(18647),	-- Schematic: Red Firework
+							i(22729),	-- Steam Tonk Controller
 						},
-					},
-					n(50488, {	-- Stone Guard Nargol <Orgrimmar Quartermaster>
-						["groups"] = {
+					}),
+					n(50488,  {	-- Stone Guard Nargol <Orgrimmar Quartermaster>
+						["coord"] = { 50.4, 58.4, 85 },
+						["g"] = {
 							i(45581),	-- Orgrimmar Tabard
 							i(64908),	-- Shroud of Orgrimmar
 							i(64909),	-- Cape of Orgrimmar
 							i(64910),	-- Mantle of Orgrimmar
 							i(67533),	-- Orgrimmar Satchel
 						},
-						["coord"] = { 50.4, 58.4 },
 					}),
-					n(12794, {	-- Stone Guard Zarg <Legacy Weapon Quartermaster>
-						i(137642, {	-- Mark of Honor
+					n(12794,  {	-- Stone Guard Zarg <Legacy Weapon Quartermaster>
+						["itemID"] = 137642,	-- Mark of Honor
+						["coord"] = { 38.6, 72.8, 85 },
+						["g"] = {
 							i(16345),	-- High Warlord's Blade
 							i(18826),	-- High Warlord's Shield Wall
 							i(18828),	-- High Warlord's Cleaver
@@ -3156,187 +3097,116 @@ _.Zones =
 							i(23467),	-- High Warlord's Quickblade
 							i(23468),	-- High Warlord's Tome of Destruction
 							i(23469),	-- High Warlord's Tome of Mending
-						}),
+						},
 					}),
-					n(46708, {	-- Suja <Cooking Supplies>
+					n(46708,  {	-- Suja <Cooking Supplies>
 						i(21219),	-- Recipe: Sagefish Delight
 						i(21099),	-- Recipe: Smoked Sagefish
 					}),
-					{	-- Sumi <Blacksmithing Supplies>
-						["npcID"] = 3356,	-- Sumi <Blacksmithing Supplies>
+					n(3356,   {	-- Sumi <Blacksmithing Supplies>
 						["g"] = {
-							{	-- Plans: Hardened Iron Shortsword
-								["itemID"] = 12162,	-- Plans: Hardened Iron Shortsword
-							},
-							{	-- Elementium Bar
-								["itemID"] = 52186,	-- Elementium Bar
+							i(12162),	-- Plans: Hardened Iron Shortsword
+							i(52186, {	-- Elementium Bar
 								["g"] = {
-									{	-- Plans: Elementium Girdle of Pain
-										["itemID"] = 66107,	-- Plans: Elementium Girdle of Pain
-									},
-									{	-- Plans: Hardened Elementium Girdle
-										["itemID"] = 66105,	-- Plans: Hardened Elementium Girdle
-									},
-									{	-- Plans: Light Elementium Belt
-										["itemID"] = 66109,	-- Plans: Light Elementium Belt
-									},
-									{	-- Plans: Pyrium Weapon Chain
-										["itemID"] = 66103,	-- Plans: Pyrium Weapon Chain
-									},
-									{	-- Plans: Vicious Ornate Pyrium Belt
-										["itemID"] = 66127,	-- Plans: Vicious Ornate Pyrium Belt
-									},
-									{	-- Plans: Vicious Ornate Pyrium Bracers
-										["itemID"] = 66125,	-- Plans: Vicious Ornate Pyrium Bracers
-									},
-									{	-- Plans: Vicious Ornate Pyrium Gauntlets
-										["itemID"] = 66126,	-- Plans: Vicious Ornate Pyrium Gauntlets
-									},
-									{	-- Plans: Vicious Pyrium Belt
-										["itemID"] = 66119,	-- Plans: Vicious Pyrium Belt
-									},
-									{	-- Plans: Vicious Pyrium Bracers
-										["itemID"] = 66117,	-- Plans: Vicious Pyrium Bracers
-									},
-									{	-- Plans: Vicious Pyrium Gauntlets
-										["itemID"] = 66118,	-- Plans: Vicious Pyrium Gauntlets
-									},
+									i(66107),	-- Plans: Elementium Girdle of Pain
+									i(66105),	-- Plans: Hardened Elementium Girdle
+									i(66109),	-- Plans: Light Elementium Belt
+									i(66103),	-- Plans: Pyrium Weapon Chain
+									i(66127),	-- Plans: Vicious Ornate Pyrium Belt
+									i(66125),	-- Plans: Vicious Ornate Pyrium Bracers
+									i(66126),	-- Plans: Vicious Ornate Pyrium Gauntlets
+									i(66119),	-- Plans: Vicious Pyrium Belt
+									i(66117),	-- Plans: Vicious Pyrium Bracers
+									i(66118),	-- Plans: Vicious Pyrium Gauntlets
 								},
-							},
-							{	-- Hardened Elementium Bar
-								["itemID"] = 53039,	-- Hardened Elementium Bar
+							}),
+							i(53039, {	-- Hardened Elementium Bar
 								["g"] = {
-									{	-- Plans: Elementium Bonesplitter
-										["itemID"] = 66113,	-- Plans: Elementium Bonesplitter
-									},
-									{	-- Plans: Elementium Deathplate
-										["itemID"] = 66106,	-- Plans: Elementium Deathplate
-									},
-									{	-- Plans: Elementium Earthguard
-										["itemID"] = 66115,	-- Plans: Elementium Earthguard
-									},
-									{	-- Plans: Elementium Gutslicer
-										["itemID"] = 67603,	-- Plans: Elementium Gutslicer
-									},
-									{	-- Plans: Elementium Hammer
-										["itemID"] = 66111,	-- Plans: Elementium Hammer
-									},
-									{	-- Plans: Elementium Poleaxe
-										["itemID"] = 66112,	-- Plans: Elementium Poleaxe
-									},
-									{	-- Plans: Elementium Shank
-										["itemID"] = 66114,	-- Plans: Elementium Shank
-									},
-									{	-- Plans: Elementium Spellblade
-										["itemID"] = 66110,	-- Plans: Elementium Spellblade
-									},
-									{	-- Plans: Elementium Stormshield
-										["itemID"] = 66116,	-- Plans: Elementium Stormshield
-									},
-									{	-- Plans: Hardened Elementium Hauberk
-										["itemID"] = 66104,	-- Plans: Hardened Elementium Hauberk
-									},
-									{	-- Plans: Light Elementium Chestguard
-										["itemID"] = 66108,	-- Plans: Light Elementium Chestguard
-									},
-									{	-- Plans: Vicious Ornate Pyrium Boots
-										["itemID"] = 66128,	-- Plans: Vicious Ornate Pyrium Boots
-									},
-									{	-- Plans: Vicious Ornate Pyrium Shoulders
-										["itemID"] = 66129,	-- Plans: Vicious Ornate Pyrium Shoulders
-									},
-									{	-- Plans: Vicious Pyrium Boots
-										["itemID"] = 66120,	-- Plans: Vicious Pyrium Boots
-									},
-									{	-- Plans: Vicious Pyrium Shoulders
-										["itemID"] = 66121,	-- Plans: Vicious Pyrium Shoulders
-									},
+									i(66113),	-- Plans: Elementium Bonesplitter
+									i(66106),	-- Plans: Elementium Deathplate
+									i(66115),	-- Plans: Elementium Earthguard
+									i(67603),	-- Plans: Elementium Gutslicer
+									i(66111),	-- Plans: Elementium Hammer
+									i(66112),	-- Plans: Elementium Poleaxe
+									i(66114),	-- Plans: Elementium Shank
+									i(66110),	-- Plans: Elementium Spellblade
+									i(66116),	-- Plans: Elementium Stormshield
+									i(66104),	-- Plans: Hardened Elementium Hauberk
+									i(66108),	-- Plans: Light Elementium Chestguard
+									i(66128),	-- Plans: Vicious Ornate Pyrium Boots
+									i(66129),	-- Plans: Vicious Ornate Pyrium Shoulders
+									i(66120),	-- Plans: Vicious Pyrium Boots
+									i(66121),	-- Plans: Vicious Pyrium Shoulders
 								},
-							},
-							{	-- Pyrium Bar
-								["itemID"] = 51950,	-- Pyrium Bar
+							}),
+							i(51950, {	-- Pyrium Bar
 								["g"] = {
-									{	-- Plans: Ebonsteel Belt Buckle
-										["itemID"] = 66100,	-- Plans: Ebonsteel Belt Buckle
-									},
-									{	-- Plans: Forged Elementium Mindcrusher
-										["itemID"] = 67606,	-- Plans: Forged Elementium Mindcrusher
-									},
-									{	-- Plans: Pyrium Shield Spike
-										["itemID"] = 66101,	-- Plans: Pyrium Shield Spike
-									},
-									{	-- Plans: Vicious Ornate Pyrium Breastplate
-										["itemID"] = 66132,	-- Plans: Vicious Ornate Pyrium Breastplate
-									},
-									{	-- Plans: Vicious Ornate Pyrium Helm
-										["itemID"] = 66131,	-- Plans: Vicious Ornate Pyrium Helm
-									},
-									{	-- Plans: Vicious Ornate Pyrium Legguards
-										["itemID"] = 66130,	-- Plans: Vicious Ornate Pyrium Legguards
-									},
-									{	-- Plans: Vicious Pyrium Breastplate
-										["itemID"] = 66124,	-- Plans: Vicious Pyrium Breastplate
-									},
-									{	-- Plans: Vicious Pyrium Helm
-										["itemID"] = 66123,	-- Plans: Vicious Pyrium Helm
-									},
-									{	-- Plans: Vicious Pyrium Legguards
-										["itemID"] = 66122,	-- Plans: Vicious Pyrium Legguards
-									},
+									i(66100),	-- Plans: Ebonsteel Belt Buckle
+									i(67606),	-- Plans: Forged Elementium Mindcrusher
+									i(66101),	-- Plans: Pyrium Shield Spike
+									i(66132),	-- Plans: Vicious Ornate Pyrium Breastplate
+									i(66131),	-- Plans: Vicious Ornate Pyrium Helm
+									i(66130),	-- Plans: Vicious Ornate Pyrium Legguards
+									i(66124),	-- Plans: Vicious Pyrium Breastplate
+									i(66123),	-- Plans: Vicious Pyrium Helm
+									i(66122),	-- Plans: Vicious Pyrium Legguards
 								},
-							},
+							}),
 						},
-					},
-					n(3366, { 	-- Tamar <Leatherworking Supplies>
-						i(67095), -- Pattern: Assassin's Chestplate
-						i(67070), -- Pattern: Belt of Nefarious Whispers
-						i(67084), -- Pattern: Charscale Leg Armor
-						i(67094), -- Pattern: Chestguard of Nature's Fury
-						i(67073), -- Pattern: Corded Viper Belt
-						i(67100), -- Pattern: Dragonkiller Tunic
-						i(68193), -- Pattern: Dragonscale Leg Armor							
-						i(71721), -- Pattern: Drakehide Leg Armor
-						i(18731), -- Pattern: Heavy Leather Ball						
-						i(67068), -- Pattern: Lightning Lash
-						i(67082), -- Pattern: Razor-Edged Cloak
-						i(67072), -- Pattern: Stormleather Sash	
-						i(67083), -- Pattern: Twilight Dragonscale Cloak
-						i(67096), -- Pattern: Twilight Scale Chestguard
-						i(67064), -- Pattern: Vicious Charscale Belt
-						i(67063), -- Pattern: Vicious Charscale Boots	
-						i(67049), -- Pattern: Vicious Charscale Bracers
-						i(67090), -- Pattern: Vicious Charscale Chest
-						i(67053), -- Pattern: Vicious Charscale Gloves
-						i(67091), -- Pattern: Vicious Charscale Helm
-						i(67079), -- Pattern: Vicious Charscale Legs
-						i(67078), -- Pattern: Vicious Charscale Shoulders						
-						i(67080), -- Pattern: Vicious Dragonscale Belt
-						i(67065), -- Pattern: Vicious Dragonscale Boots	
-						i(67054), -- Pattern: Vicious Dragonscale Bracers
-						i(67093), -- Pattern: Vicious Dragonscale Chest
-						i(67066), -- Pattern: Vicious Dragonscale Gloves
-						i(67081), -- Pattern: Vicious Dragonscale Helm
-						i(67092), -- Pattern: Vicious Dragonscale Legs
-						i(67055), -- Pattern: Vicious Dragonscale Shoulders
-						i(67076), -- Pattern: Vicious Leather Belt
-						i(67060), -- Pattern: Vicious Leather Boots	
-						i(67046), -- Pattern: Vicious Leather Bracers
-						i(67087), -- Pattern: Vicious Leather Chest
-						i(67048), -- Pattern: Vicious Leather Gloves
-						i(67077), -- Pattern: Vicious Leather Helm
-						i(67089), -- Pattern: Vicious Leather Legs	
-						i(67062), -- Pattern: Vicious Leather Shoulders
-						i(67044), -- Pattern: Vicious Wyrmhide Belt
-						i(67058), -- Pattern: Vicious Wyrmhide Boots
-						i(67042), -- Pattern: Vicious Wyrmhide Bracers
-						i(67075), -- Pattern: Vicious Wyrmhide Chest	
-						i(67056), -- Pattern: Vicious Wyrmhide Gloves
-						i(67086), -- Pattern: Vicious Wyrmhide Helm
-						i(67085), -- Pattern: Vicious Wyrmhide Legs	
-						i(67074), -- Pattern: Vicious Wyrmhide Shoulders
 					}),
-					{	-- Taryssa Lazuria <Jewelcrafting Supplies>
-						["npcID"] = 57922,	-- Taryssa Lazuria <Jewelcrafting Supplies>
+					n(3366,   {	-- Tamar <Leatherworking Supplies>
+						["coord"] = { 60.6, 54.4, 85 },
+						["g"] = {
+							i(67095), -- Pattern: Assassin's Chestplate
+							i(67070), -- Pattern: Belt of Nefarious Whispers
+							i(67084), -- Pattern: Charscale Leg Armor
+							i(67094), -- Pattern: Chestguard of Nature's Fury
+							i(67073), -- Pattern: Corded Viper Belt
+							i(67100), -- Pattern: Dragonkiller Tunic
+							i(68193), -- Pattern: Dragonscale Leg Armor							
+							i(71721), -- Pattern: Drakehide Leg Armor
+							i(18731), -- Pattern: Heavy Leather Ball						
+							i(67068), -- Pattern: Lightning Lash
+							i(67082), -- Pattern: Razor-Edged Cloak
+							i(67072), -- Pattern: Stormleather Sash	
+							i(67083), -- Pattern: Twilight Dragonscale Cloak
+							i(67096), -- Pattern: Twilight Scale Chestguard
+							i(67064), -- Pattern: Vicious Charscale Belt
+							i(67063), -- Pattern: Vicious Charscale Boots	
+							i(67049), -- Pattern: Vicious Charscale Bracers
+							i(67090), -- Pattern: Vicious Charscale Chest
+							i(67053), -- Pattern: Vicious Charscale Gloves
+							i(67091), -- Pattern: Vicious Charscale Helm
+							i(67079), -- Pattern: Vicious Charscale Legs
+							i(67078), -- Pattern: Vicious Charscale Shoulders						
+							i(67080), -- Pattern: Vicious Dragonscale Belt
+							i(67065), -- Pattern: Vicious Dragonscale Boots	
+							i(67054), -- Pattern: Vicious Dragonscale Bracers
+							i(67093), -- Pattern: Vicious Dragonscale Chest
+							i(67066), -- Pattern: Vicious Dragonscale Gloves
+							i(67081), -- Pattern: Vicious Dragonscale Helm
+							i(67092), -- Pattern: Vicious Dragonscale Legs
+							i(67055), -- Pattern: Vicious Dragonscale Shoulders
+							i(67076), -- Pattern: Vicious Leather Belt
+							i(67060), -- Pattern: Vicious Leather Boots	
+							i(67046), -- Pattern: Vicious Leather Bracers
+							i(67087), -- Pattern: Vicious Leather Chest
+							i(67048), -- Pattern: Vicious Leather Gloves
+							i(67077), -- Pattern: Vicious Leather Helm
+							i(67089), -- Pattern: Vicious Leather Legs	
+							i(67062), -- Pattern: Vicious Leather Shoulders
+							i(67044), -- Pattern: Vicious Wyrmhide Belt
+							i(67058), -- Pattern: Vicious Wyrmhide Boots
+							i(67042), -- Pattern: Vicious Wyrmhide Bracers
+							i(67075), -- Pattern: Vicious Wyrmhide Chest	
+							i(67056), -- Pattern: Vicious Wyrmhide Gloves
+							i(67086), -- Pattern: Vicious Wyrmhide Helm
+							i(67085), -- Pattern: Vicious Wyrmhide Legs	
+							i(67074), -- Pattern: Vicious Wyrmhide Shoulders
+						},
+					}),
+					n(57922,  {	-- Taryssa Lazuria <Jewelcrafting Supplies>
+						["coord"] = { 72.4, 34.6, 85 },
 						["g"] = {
 							currency(361, {	-- Illustrious Jewelcrafter's Token
 								i(71928),	-- Design: Accurate Shadow Spinel
@@ -3408,203 +3278,138 @@ _.Zones =
 								i(71949),	-- Tome of Burning Jewels
 							}),
 						},
-					},
+					}),
 					n(133127, {	-- Thaluriel <Engineering Supplies>
-						i(18647),	-- Schematic: Red Firework
-						i(22729),	-- Schematic: Steam Tonk Controller
+						["coord"] = { 36.8, 84.6, 85 },
+						["g"] = {
+							i(18647),	-- Schematic: Red Firework
+							i(22729),	-- Schematic: Steam Tonk Controller
+						},
 					}),
-					n(3315, {	-- Tor'phan <Cloth & Leather Armor Merchant>
-						i(12255),	-- Pale Leggings
+					n(3315,   {	-- Tor'phan <Cloth & Leather Armor Merchant>
+						["coord"] = { 60.8, 59.6, 85 },
+						["g"] = {
+							i(12255),	-- Pale Leggings
+						},
 					}),
-					n(66022, {	-- Turtlemaster Odai <Dragon Turtle Breeder>
+					n(66022,  {	-- Turtlemaster Odai <Dragon Turtle Breeder>
 						i(91008, { 	-- Black Dragon Turtle (Panda)
-							["races"] = {25,26},
+							["races"] = { 25, 26 },
 						}),			
 						i(87795), 	-- Black Dragon Turtle
 						i(91009, {	-- Blue Dragon Turtle (Panda)
-							["races"] = {25,26},
+							["races"] = { 25, 26 },
 						}),			
 						i(87796), 	-- Blue Dragon Turtle 
 						i(91005, { 	-- Brown Dragon Turtle (Panda)
-							["races"] = {25,26},
+							["races"] = { 25, 26 },
 						}),			
 						i(87797),	-- Brown Dragon Turtle 
 						i(91011, {	-- Great Black Dragon Turtle (Panda)
-							["races"] = {25,26},
+							["races"] = { 25, 26 },
 						}),			
 						i(87802),	-- Great Black Dragon Turtle 
 						i(91013, {	-- Great Blue Dragon Turtle (Panda)
-							["races"] = {25,26},
+							["races"] = { 25, 26 },
 						}),			
 						i(87803),	-- Great Blue Dragon Turtle
 						i(91014, {	-- Great Brown Dragon Turtle (Panda)
-							["races"] = {25,26},
+							["races"] = { 25, 26 },
 						}),			
 						i(87804),	-- Great Brown Dragon Turtle
 						i(91012, {	-- Great Green Dragon Turtle (Panda)
-							["races"] = {25,26},
+							["races"] = { 25, 26 },
 						}),			
 						i(87801),	-- Great Green Dragon Turtle
 						i(91015, {	-- Great Purple Dragon Turtle (Panda)
-							["races"] = {25,26},
+							["races"] = { 25, 26 },
 						}),			
 						i(87805),	-- Great Purple Dragon Turtle 
 						i(91010, {	-- Great Red Dragon Turtle (Panda)
-							["races"] = {25,26},
+							["races"] = { 25, 26 },
 						}),			
 						i(82811),	-- Great Red Dragon Turtle 
 						i(91004, {	-- Green Dragon Turtle (Panda)
-							["races"] = {25,26},
+							["races"] = { 25, 26 },
 						}),			
 						i(82765),	-- Green Dragon Turtle
 						i(91006, {	-- Purple Dragon Turtle (Panda)
-							["races"] = {25,26},
+							["races"] = { 25, 26 },
 						}),			
 						i(87799),	-- Purple Dragon Turtle
 						i(91007, {	-- Red Dragon Turtle (Panda)
-							["races"] = {25,26},
+							["races"] = { 25, 26 },
 						}),			
 						i(87800),	-- Red Dragon Turtle
 						un(1, i(91016)),	-- Reins of the Great Red Dragon Turtle (Never Implemented?)
 					}),
-					n(45546, {	-- Vizna Bangwrench <Engineering Supplies>
-						i(18647),	-- Schematic: Red Firework
-						i(22729),	-- Schematic: Steam Tonk Controller
+					n(45546,  {	-- Vizna Bangwrench <Engineering Supplies>
+						["coord"] = { 36.6, 86.8, 85 },
+						["g"] = {
+							i(18647),	-- Schematic: Red Firework
+							i(22729),	-- Schematic: Steam Tonk Controller
+						},
 					}),
-					n(8404, {	-- Xan'tish <Snake Vendor>
+					n(8404,   {	-- Xan'tish <Snake Vendor>
 						i(10360),	-- Black Kingsnake
 						i(10361),	-- Brown Snake
 						i(10392),	-- Crimson Snake
 					}),
-					n(3400, {	-- Xen'to <Cooking Supplies>
+					n(3400,   {	-- Xen'to <Cooking Supplies>
 						i(21219),	-- Recipe: Sagefish Delight
 						i(21099),	-- Recipe: Smoked Sagefish
 					}),
-					{	-- Zido Helmbreaker <Blacksmithing Supplies>
-						["npcID"] = 45549,	-- Zido Helmbreaker <Blacksmithing Supplies>
+					n(45549,  {	-- Zido Helmbreaker <Blacksmithing Supplies>
 						["g"] = {
-							{	-- Plans: Hardened Iron Shortsword
-								["itemID"] = 12162,	-- Plans: Hardened Iron Shortsword
-							},
-							{	-- Elementium Bar
-								["itemID"] = 52186,	-- Elementium Bar
+							i(12162),	-- Plans: Hardened Iron Shortsword
+							i(52186, {	-- Elementium Bar
 								["g"] = {
-									{	-- Plans: Elementium Girdle of Pain
-										["itemID"] = 66107,	-- Plans: Elementium Girdle of Pain
-									},
-									{	-- Plans: Hardened Elementium Girdle
-										["itemID"] = 66105,	-- Plans: Hardened Elementium Girdle
-									},
-									{	-- Plans: Light Elementium Belt
-										["itemID"] = 66109,	-- Plans: Light Elementium Belt
-									},
-									{	-- Plans: Pyrium Weapon Chain
-										["itemID"] = 66103,	-- Plans: Pyrium Weapon Chain
-									},
-									{	-- Plans: Vicious Ornate Pyrium Belt
-										["itemID"] = 66127,	-- Plans: Vicious Ornate Pyrium Belt
-									},
-									{	-- Plans: Vicious Ornate Pyrium Bracers
-										["itemID"] = 66125,	-- Plans: Vicious Ornate Pyrium Bracers
-									},
-									{	-- Plans: Vicious Ornate Pyrium Gauntlets
-										["itemID"] = 66126,	-- Plans: Vicious Ornate Pyrium Gauntlets
-									},
-									{	-- Plans: Vicious Pyrium Belt
-										["itemID"] = 66119,	-- Plans: Vicious Pyrium Belt
-									},
-									{	-- Plans: Vicious Pyrium Bracers
-										["itemID"] = 66117,	-- Plans: Vicious Pyrium Bracers
-									},
-									{	-- Plans: Vicious Pyrium Gauntlets
-										["itemID"] = 66118,	-- Plans: Vicious Pyrium Gauntlets
-									},
+									i(66107),	-- Plans: Elementium Girdle of Pain
+									i(66105),	-- Plans: Hardened Elementium Girdle
+									i(66109),	-- Plans: Light Elementium Belt
+									i(66103),	-- Plans: Pyrium Weapon Chain
+									i(66127),	-- Plans: Vicious Ornate Pyrium Belt
+									i(66125),	-- Plans: Vicious Ornate Pyrium Bracers
+									i(66126),	-- Plans: Vicious Ornate Pyrium Gauntlets
+									i(66119),	-- Plans: Vicious Pyrium Belt
+									i(66117),	-- Plans: Vicious Pyrium Bracers
+									i(66118),	-- Plans: Vicious Pyrium Gauntlets
 								},
-							},
-							{	-- Hardened Elementium Bar
-								["itemID"] = 53039,	-- Hardened Elementium Bar
+							}),
+							i(53039, {	-- Hardened Elementium Bar
 								["g"] = {
-									{	-- Plans: Elementium Bonesplitter
-										["itemID"] = 66113,	-- Plans: Elementium Bonesplitter
-									},
-									{	-- Plans: Elementium Deathplate
-										["itemID"] = 66106,	-- Plans: Elementium Deathplate
-									},
-									{	-- Plans: Elementium Earthguard
-										["itemID"] = 66115,	-- Plans: Elementium Earthguard
-									},
-									{	-- Plans: Elementium Gutslicer
-										["itemID"] = 67603,	-- Plans: Elementium Gutslicer
-									},
-									{	-- Plans: Elementium Hammer
-										["itemID"] = 66111,	-- Plans: Elementium Hammer
-									},
-									{	-- Plans: Elementium Poleaxe
-										["itemID"] = 66112,	-- Plans: Elementium Poleaxe
-									},
-									{	-- Plans: Elementium Shank
-										["itemID"] = 66114,	-- Plans: Elementium Shank
-									},
-									{	-- Plans: Elementium Spellblade
-										["itemID"] = 66110,	-- Plans: Elementium Spellblade
-									},
-									{	-- Plans: Elementium Stormshield
-										["itemID"] = 66116,	-- Plans: Elementium Stormshield
-									},
-									{	-- Plans: Hardened Elementium Hauberk
-										["itemID"] = 66104,	-- Plans: Hardened Elementium Hauberk
-									},
-									{	-- Plans: Light Elementium Chestguard
-										["itemID"] = 66108,	-- Plans: Light Elementium Chestguard
-									},
-									{	-- Plans: Vicious Ornate Pyrium Boots
-										["itemID"] = 66128,	-- Plans: Vicious Ornate Pyrium Boots
-									},
-									{	-- Plans: Vicious Ornate Pyrium Shoulders
-										["itemID"] = 66129,	-- Plans: Vicious Ornate Pyrium Shoulders
-									},
-									{	-- Plans: Vicious Pyrium Boots
-										["itemID"] = 66120,	-- Plans: Vicious Pyrium Boots
-									},
-									{	-- Plans: Vicious Pyrium Shoulders
-										["itemID"] = 66121,	-- Plans: Vicious Pyrium Shoulders
-									},
+									i(66113),	-- Plans: Elementium Bonesplitter
+									i(66106),	-- Plans: Elementium Deathplate
+									i(66115),	-- Plans: Elementium Earthguard
+									i(67603),	-- Plans: Elementium Gutslicer
+									i(66111),	-- Plans: Elementium Hammer
+									i(66112),	-- Plans: Elementium Poleaxe
+									i(66114),	-- Plans: Elementium Shank
+									i(66110),	-- Plans: Elementium Spellblade
+									i(66116),	-- Plans: Elementium Stormshield
+									i(66104),	-- Plans: Hardened Elementium Hauberk
+									i(66108),	-- Plans: Light Elementium Chestguard
+									i(66128),	-- Plans: Vicious Ornate Pyrium Boots
+									i(66129),	-- Plans: Vicious Ornate Pyrium Shoulders
+									i(66120),	-- Plans: Vicious Pyrium Boots
+									i(66121),	-- Plans: Vicious Pyrium Shoulders
 								},
-							},
-							{	-- Pyrium Bar
-								["itemID"] = 51950,	-- Pyrium Bar
+							}),
+							i(51950, {	-- Pyrium Bar
 								["g"] = {
-									{	-- Plans: Ebonsteel Belt Buckle
-										["itemID"] = 66100,	-- Plans: Ebonsteel Belt Buckle
-									},
-									{	-- Plans: Forged Elementium Mindcrusher
-										["itemID"] = 67606,	-- Plans: Forged Elementium Mindcrusher
-									},
-									{	-- Plans: Pyrium Shield Spike
-										["itemID"] = 66101,	-- Plans: Pyrium Shield Spike
-									},
-									{	-- Plans: Vicious Ornate Pyrium Breastplate
-										["itemID"] = 66132,	-- Plans: Vicious Ornate Pyrium Breastplate
-									},
-									{	-- Plans: Vicious Ornate Pyrium Helm
-										["itemID"] = 66131,	-- Plans: Vicious Ornate Pyrium Helm
-									},
-									{	-- Plans: Vicious Ornate Pyrium Legguards
-										["itemID"] = 66130,	-- Plans: Vicious Ornate Pyrium Legguards
-									},
-									{	-- Plans: Vicious Pyrium Breastplate
-										["itemID"] = 66124,	-- Plans: Vicious Pyrium Breastplate
-									},
-									{	-- Plans: Vicious Pyrium Helm
-										["itemID"] = 66123,	-- Plans: Vicious Pyrium Helm
-									},
-									{	-- Plans: Vicious Pyrium Legguards
-										["itemID"] = 66122,	-- Plans: Vicious Pyrium Legguards
-									},
+									i(66100),	-- Plans: Ebonsteel Belt Buckle
+									i(67606),	-- Plans: Forged Elementium Mindcrusher
+									i(66101),	-- Plans: Pyrium Shield Spike
+									i(66132),	-- Plans: Vicious Ornate Pyrium Breastplate
+									i(66131),	-- Plans: Vicious Ornate Pyrium Helm
+									i(66130),	-- Plans: Vicious Ornate Pyrium Legguards
+									i(66124),	-- Plans: Vicious Pyrium Breastplate
+									i(66123),	-- Plans: Vicious Pyrium Helm
+									i(66122),	-- Plans: Vicious Pyrium Legguards
 								},
-							},
+							}),
 						},
-					},
+					}),
 				})),
 			},
 		}),

@@ -3450,570 +3450,569 @@ _.Zones =
 						i(44693),	-- Wound Dressing
 					}),
 					nh(119486, { -- Apothecary Lee <Legion Gladiator>
+						["itemID"] = 137642,	-- Mark of Honor
 						["coord"] = { 56.8, 27.8, 625 },
 						["g"] = {
-							i(137642, {	-- Mark of Honor
-								gssh(1071, { -- Combatant
-									["groups"] = {
-										-- LEGION { Legion Season 1 AND 2
-										i(146159, { -- Vindictive Combatant's Satin Armor		
-											i(135980),	-- Vindictive Combatant's Satin Hood
-											i(135983),	-- Vindictive Combatant's Satin Mantle
-											i(136870),	-- Vindictive Combatant's Drape of Piety
-											i(135982),	-- Vindictive Combatant's Satin Tunic
-											i(135985),	-- Vindictive Combatant's Satin Bracers
-											i(135979),	-- Vindictive Combatant's Satin Gloves
-											i(135984),	-- Vindictive Combatant's Satin Cord
-											i(135981),	-- Vindictive Combatant's Satin Leggings
-											i(135978),	-- Vindictive Combatant's Satin Treads
-										}),		
-										i(146157, { -- Vindictive Combatant's Silk Armor		
-											i(135956),	-- Vindictive Combatant's Silk Cowl
-											i(135959),	-- Vindictive Combatant's Silk Amice
-											i(136019),	-- Vindictive Combatant's Silken Shawl
-											i(135958),	-- Vindictive Combatant's Silk Tunic
-											i(135961),	-- Vindictive Combatant's Silk Bracers
-											i(135955),	-- Vindictive Combatant's Silk Handguards
-											i(135960),	-- Vindictive Combatant's Silk Cord
-											i(135957),	-- Vindictive Combatant's Silk Trousers
-											i(135954),	-- Vindictive Combatant's Silk Treads
-										}),		
-										i(146161, { -- Vindictive Combatant's Felweave Armor		
-											i(136004),	-- Vindictive Combatant's Felweave Cowl
-											i(136007),	-- Vindictive Combatant's Felweave Amice
-											i(136882),	-- Vindictive Combatant's Felweave Cloak
-											i(136006),	-- Vindictive Combatant's Felweave Tunic
-											i(136009),	-- Vindictive Combatant's Felweave Bracers
-											i(136003),	-- Vindictive Combatant's Felweave Handguards
-											i(136008),	-- Vindictive Combatant's Felweave Cord
-											i(136005),	-- Vindictive Combatant's Felweave Trousers
-											i(136002),	-- Vindictive Combatant's Felweave Treads
-										}),		
-										i(146169, { -- Vindictive Combatant's Dragonhide Armor		
-											i(135940),	-- Vindictive Combatant's Dragonhide Helm
-											i(135943),	-- Vindictive Combatant's Dragonhide Spaulders
-											i(136022),	-- Vindictive Combatant's Dragonhide Cloak
-											i(135942),	-- Vindictive Combatant's Dragonhide Tunic
-											i(135945),	-- Vindictive Combatant's Dragonhide Wristguards
-											i(135939),	-- Vindictive Combatant's Dragonhide Gloves
-											i(135944),	-- Vindictive Combatant's Dragonhide Belt
-											i(135941),	-- Vindictive Combatant's Dragonhide Legguards
-											i(135938),	-- Vindictive Combatant's Dragonhide Moccasins
-										}),		
-										i(146173, { -- Vindictive Combatant's Leather Armor		
-											i(135989),	-- Vindictive Combatant's Leather Helm
-											i(135991),	-- Vindictive Combatant's Leather Spaulders
-											i(136871),	-- Vindictive Combatant's Shadowcape
-											i(135986),	-- Vindictive Combatant's Leather Tunic
-											i(135993),	-- Vindictive Combatant's Leather Wristguards
-											i(135988),	-- Vindictive Combatant's Leather Gloves
-											i(135992),	-- Vindictive Combatant's Leather Belt
-											i(135990),	-- Vindictive Combatant's Leather Legguards
-											i(135987),	-- Vindictive Combatant's Leather Slippers
-										}),		
-										i(146171, { -- Vindictive Combatant's Ironskin Armor		
-											i(135964),	-- Vindictive Combatant's Ironskin Helm
-											i(135966),	-- Vindictive Combatant's Ironskin Spaulders
-											i(136023),	-- Vindictive Combatant's Ironskin Cloak
-											i(135967),	-- Vindictive Combatant's Ironskin Tunic
-											i(135969),	-- Vindictive Combatant's Ironskin Wristguards
-											i(135963),	-- Vindictive Combatant's Ironskin Gloves
-											i(135968),	-- Vindictive Combatant's Ironskin Belt
-											i(135965),	-- Vindictive Combatant's Ironskin Legguards
-											i(135962),	-- Vindictive Combatant's Ironskin Slippers
-										}),		
-										i(146265, { -- Vindictive Combatant's Felskin Armor	
-											["groups"] = {
-												i(136305),	-- Vindictive Combatant's Felskin Helm
-												i(136308),	-- Vindictive Combatant's Felskin Spaulders
-												i(136894),	-- Vindictive Combatant's Demonthread Cloak
-												i(136307),	-- Vindictive Combatant's Felskin Tunic
-												i(136310),	-- Vindictive Combatant's Felskin Wristguards
-												i(136304),	-- Vindictive Combatant's Felskin Gloves
-												i(136309),	-- Vindictive Combatant's Felskin Belt
-												i(136306),	-- Vindictive Combatant's Felskin Legguards
-												i(136303),	-- Vindictive Combatant's Felskin Boots
-											},
-											["classes"] = { 12 },
-										}),		
-										i(146155, { -- Vindictive Combatant's Chain Armor		
-											i(135949),	-- Vindictive Combatant's Chain Helm
-											i(135951),	-- Vindictive Combatant's Chain Spaulders
-											i(136026),	-- Vindictive Combatant's Drape of the Tracker
-											i(135946),	-- Vindictive Combatant's Chain Armor
-											i(135953),	-- Vindictive Combatant's Chain Armband
-											i(135948),	-- Vindictive Combatant's Chain Gauntlets
-											i(135952),	-- Vindictive Combatant's Chain Clasp
-											i(135950),	-- Vindictive Combatant's Chain Leggings
-											i(135947),	-- Vindictive Combatant's Chain Treads
-										}),		
-										i(146153, { -- Vindictive Combatant's Ringmail Armor		
-											i(135997),	-- Vindictive Combatant's Ringmail Helm
-											i(135999),	-- Vindictive Combatant's Ringmail Spaulders
-											i(136872),	-- Vindictive Combatant's Totemic Cloak
-											i(135994),	-- Vindictive Combatant's Ringmail Armor
-											i(136001),	-- Vindictive Combatant's Ringmail Armband
-											i(135996),	-- Vindictive Combatant's Ringmail Gauntlets
-											i(136000),	-- Vindictive Combatant's Ringmail Clasp
-											i(135998),	-- Vindictive Combatant's Ringmail Kilt
-											i(135995),	-- Vindictive Combatant's Ringmail Boots
-										}),		
-										i(146167, { -- Vindictive Combatant's Scaled Armor		
-											i(135973),	-- Vindictive Combatant's Scaled Helm
-											i(135975),	-- Vindictive Combatant's Scaled Shoulders
-											i(136027),	-- Vindictive Combatant's Greatcloak of Faith
-											i(135970),	-- Vindictive Combatant's Scaled Chestpiece
-											i(135977),	-- Vindictive Combatant's Scaled Wristplates
-											i(135972),	-- Vindictive Combatant's Scaled Gauntlets
-											i(135976),	-- Vindictive Combatant's Scaled Girdle
-											i(135974),	-- Vindictive Combatant's Scaled Legguards
-											i(135971),	-- Vindictive Combatant's Scaled Sabatons
-										}),		
-										i(146163, { -- Vindictive Combatant's Plate Armor		
-											i(136013),	-- Vindictive Combatant's Plate Helm
-											i(136015),	-- Vindictive Combatant's Plate Shoulders
-											i(136888),	-- Vindictive Combatant's Cloak of Battle
-											i(136010),	-- Vindictive Combatant's Plate Chestpiece
-											i(136017),	-- Vindictive Combatant's Plate Wristplates
-											i(136012),	-- Vindictive Combatant's Plate Gauntlets
-											i(136016),	-- Vindictive Combatant's Plate Girdle
-											i(136014),	-- Vindictive Combatant's Plate Legguards
-											i(136011),	-- Vindictive Combatant's Plate Warboots
-										}),		
-										i(146165, { -- Vindictive Combatant's Dreadplate Armor		
-											i(135933),	-- Vindictive Combatant's Dreadplate Helm
-											i(135935),	-- Vindictive Combatant's Dreadplate Shoulders
-											i(136018),	-- Vindictive Combatant's Dreadcloak
-											i(135930),	-- Vindictive Combatant's Dreadplate Chestpiece
-											i(135937),	-- Vindictive Combatant's Dreadplate Wristplates
-											i(135932),	-- Vindictive Combatant's Dreadplate Gauntlets
-											i(135936),	-- Vindictive Combatant's Dreadplate Girdle
-											i(135934),	-- Vindictive Combatant's Dreadplate Legguards
-											i(135931),	-- Vindictive Combatant's Dreadplate Sabatons
-										}),
-										-- LEGION & 4
-										i(147687, { -- Cruel Combatant's Satin Armor		
-											i(145173),	-- Cruel Combatant's Satin Hood
-											i(145179),	-- Cruel Combatant's Satin Mantle
-											i(145041),	-- Cruel Combatant's Drape of Piety
-											i(145177),	-- Cruel Combatant's Satin Robe
-											i(145183),	-- Cruel Combatant's Satin Bracers
-											i(145171),	-- Cruel Combatant's Satin Gloves
-											i(145181),	-- Cruel Combatant's Satin Cord
-											i(145175),	-- Cruel Combatant's Satin Leggings
-											i(145169),	-- Cruel Combatant's Satin Treads
-										}),		
-										i(147695, { -- Cruel Combatant's Silk Armor		
-											i(145119),	-- Cruel Combatant's Silk Cowl
-											i(145125),	-- Cruel Combatant's Silk Amice
-											i(145035),	-- Cruel Combatant's Silken Shawl
-											i(145123),	-- Cruel Combatant's Silk Robe
-											i(145129),	-- Cruel Combatant's Silk Bracers
-											i(145117),	-- Cruel Combatant's Silk Handguards
-											i(145127),	-- Cruel Combatant's Silk Cord
-											i(145121),	-- Cruel Combatant's Silk Trousers
-											i(145115),	-- Cruel Combatant's Silk Treads
-										}),		
-										i(147681, { -- Cruel Combatant's Felweave Armor		
-											i(145245),	-- Cruel Combatant's Felweave Cowl
-											i(145251),	-- Cruel Combatant's Felweave Amice
-											i(145047),	-- Cruel Combatant's Felweave Cloak
-											i(145249),	-- Cruel Combatant's Felweave Raiment
-											i(145255),	-- Cruel Combatant's Felweave Bracers
-											i(145243),	-- Cruel Combatant's Felweave Handguards
-											i(145253),	-- Cruel Combatant's Felweave Cord
-											i(145247),	-- Cruel Combatant's Felweave Trousers
-											i(145241),	-- Cruel Combatant's Felweave Treads
-										}),		
-										i(147676, { -- Cruel Combatant's Dragonhide Armor		
-											i(145089),	-- Cruel Combatant's Dragonhide Helm
-											i(145093),	-- Cruel Combatant's Dragonhide Spaulders
-											i(145031),	-- Cruel Combatant's Dragonhide Cloak
-											i(145083),	-- Cruel Combatant's Dragonhide Tunic
-											i(145097),	-- Cruel Combatant's Dragonhide Wristguards
-											i(145087),	-- Cruel Combatant's Dragonhide Gloves
-											i(145095),	-- Cruel Combatant's Dragonhide Belt
-											i(145091),	-- Cruel Combatant's Dragonhide Legguards
-											i(145085),	-- Cruel Combatant's Dragonhide Moccasins
-										}),		
-										i(147686, { -- Cruel Combatant's Leather Armor		
-											i(145197),	-- Cruel Combatant's Leather Helm
-											i(145201),	-- Cruel Combatant's Leather Spaulders
-											i(145043),	-- Cruel Combatant's Shadowcape
-											i(145191),	-- Cruel Combatant's Leather Tunic
-											i(145205),	-- Cruel Combatant's Leather Wristguards
-											i(145195),	-- Cruel Combatant's Leather Gloves
-											i(145203),	-- Cruel Combatant's Leather Belt
-											i(145199),	-- Cruel Combatant's Leather Legguards
-											i(145193),	-- Cruel Combatant's Leather Slippers
-										}),		
-										i(147683, { -- Cruel Combatant's Ironskin Armor		
-											i(145135),	-- Cruel Combatant's Ironskin Helm
-											i(145139),	-- Cruel Combatant's Ironskin Spaulders
-											i(145037),	-- Cruel Combatant's Ironskin Cloak
-											i(145141),	-- Cruel Combatant's Ironskin Tunic
-											i(145145),	-- Cruel Combatant's Ironskin Wristguards
-											i(145133),	-- Cruel Combatant's Ironskin Gloves
-											i(145143),	-- Cruel Combatant's Ironskin Belt
-											i(145137),	-- Cruel Combatant's Ironskin Legguards
-											i(145131),	-- Cruel Combatant's Ironskin Slippers
-										}),		
-										i(147679, { -- Cruel Combatant's Felskin Armor	
-											["groups"] = {
-												i(145073),	-- Cruel Combatant's Felskin Helm
-												i(145077),	-- Cruel Combatant's Felskin Spaulders
-												i(145029),	-- Cruel Combatant's Demonthread Cloak
-												i(145067),	-- Cruel Combatant's Felskin Tunic
-												i(145081),	-- Cruel Combatant's Felskin Wristguards
-												i(145071),	-- Cruel Combatant's Felskin Gloves
-												i(145079),	-- Cruel Combatant's Felskin Belt
-												i(145075),	-- Cruel Combatant's Felskin Legguards
-												i(145069),	-- Cruel Combatant's Felskin Boots
-											},
-											["classes"] = { 12 },
-										}),		
-										i(147690, { -- Cruel Combatant's Chain Armor		
-											i(145105),	-- Cruel Combatant's Chain Helm
-											i(145109),	-- Cruel Combatant's Chain Spaulders
-											i(145033),	-- Cruel Combatant's Drape of the Tracker
-											i(145099),	-- Cruel Combatant's Chain Armor
-											i(145113),	-- Cruel Combatant's Chain Armband
-											i(145103),	-- Cruel Combatant's Chain Gauntlets
-											i(145111),	-- Cruel Combatant's Chain Clasp
-											i(145107),	-- Cruel Combatant's Chain Leggings
-											i(145101),	-- Cruel Combatant's Chain Treads
-										}),		
-										i(147673, { -- Cruel Combatant's Ringmail Armor		
-											i(145213),	-- Cruel Combatant's Ringmail Helm
-											i(145217),	-- Cruel Combatant's Ringmail Spaulders
-											i(145045),	-- Cruel Combatant's Totemic Cloak
-											i(145207),	-- Cruel Combatant's Ringmail Armor
-											i(145221),	-- Cruel Combatant's Ringmail Armband
-											i(145211),	-- Cruel Combatant's Ringmail Gauntlets
-											i(145219),	-- Cruel Combatant's Ringmail Clasp
-											i(145215),	-- Cruel Combatant's Ringmail Leggings
-											i(145209),	-- Cruel Combatant's Ringmail Boots
-										}),		
-										i(147694, { -- Cruel Combatant's Scaled Armor		
-											i(145159),	-- Cruel Combatant's Scaled Helm
-											i(145163),	-- Cruel Combatant's Scaled Shoulders
-											i(145039),	-- Cruel Combatant's Greatcloak of Faith
-											i(145153),	-- Cruel Combatant's Scaled Chestpiece
-											i(145167),	-- Cruel Combatant's Scaled Wristplates
-											i(145157),	-- Cruel Combatant's Scaled Gauntlets
-											i(145165),	-- Cruel Combatant's Scaled Girdle
-											i(145161),	-- Cruel Combatant's Scaled Legguards
-											i(145155),	-- Cruel Combatant's Scaled Sabatons
-										}),		
-										i(147691, { -- Cruel Combatant's Plate Armor		
-											i(145263),	-- Cruel Combatant's Plate Helm
-											i(145267),	-- Cruel Combatant's Plate Shoulders
-											i(145049),	-- Cruel Combatant's Cloak of Battle
-											i(145257),	-- Cruel Combatant's Plate Chestpiece
-											i(145271),	-- Cruel Combatant's Plate Wristplates
-											i(145261),	-- Cruel Combatant's Plate Gauntlets
-											i(145269),	-- Cruel Combatant's Plate Girdle
-											i(145265),	-- Cruel Combatant's Plate Legguards
-											i(145259),	-- Cruel Combatant's Plate Warboots
-										}),		
-										i(147678, { -- Cruel Combatant's Dreadplate Armor		
-											i(145057),	-- Cruel Combatant's Dreadplate Helm
-											i(145061),	-- Cruel Combatant's Dreadplate Shoulders
-											i(145027),	-- Cruel Combatant's Dreadcloak
-											i(145051),	-- Cruel Combatant's Dreadplate Chestpiece
-											i(145065),	-- Cruel Combatant's Dreadplate Wristplates
-											i(145055),	-- Cruel Combatant's Dreadplate Gauntlets
-											i(145063),	-- Cruel Combatant's Dreadplate Girdle
-											i(145059),	-- Cruel Combatant's Dreadplate Legguards
-											i(145053),	-- Cruel Combatant's Dreadplate Sabatons
-										}),		
-									},
-									["icon"] = "Interface\\Worldmap\\GlowSkull_64Purple",	-- Purple
-								}),
-								gssh(1414, { -- Gladiator
-									["icon"] = "Interface\\Worldmap\\GlowSkull_64Red",	-- Red
-									["groups"] = {
-										-- LEGION { Legion Season 1 & 2
-										i(146149, { -- Vindictive Gladiator's Satin Armor		
-											i(135754),	-- Vindictive Gladiator's Satin Hood
-											i(135757),	-- Vindictive Gladiator's Satin Mantle
-											i(136864),	-- Vindictive Gladiator's Drape of Piety
-											i(135756),	-- Vindictive Gladiator's Satin Robe
-											i(135759),	-- Vindictive Gladiator's Satin Bracers
-											i(135753),	-- Vindictive Gladiator's Satin Gloves
-											i(135758),	-- Vindictive Gladiator's Satin Cord
-											i(135755),	-- Vindictive Gladiator's Satin Leggings
-											i(135752),	-- Vindictive Gladiator's Satin Treads
-										}),		
-										i(146147, { -- Vindictive Gladiator's Silk Armor		
-											i(135730),	-- Vindictive Gladiator's Silk Cowl
-											i(135733),	-- Vindictive Gladiator's Silk Amice
-											i(135793),	-- Vindictive Gladiator's Silken Shawl
-											i(135732),	-- Vindictive Gladiator's Silk Robe
-											i(135735),	-- Vindictive Gladiator's Silk Bracers
-											i(135729),	-- Vindictive Gladiator's Silk Handguards
-											i(135734),	-- Vindictive Gladiator's Silk Cord
-											i(135731),	-- Vindictive Gladiator's Silk Trousers
-											i(135728),	-- Vindictive Gladiator's Silk Treads
-										}),		
-										i(146151, { -- Vindictive Gladiator's Felweave Armor		
-											i(135778),	-- Vindictive Gladiator's Felweave Cowl
-											i(135781),	-- Vindictive Gladiator's Felweave Amice
-											i(136880),	-- Vindictive Gladiator's Felweave Cloak
-											i(135780),	-- Vindictive Gladiator's Felweave Raiment
-											i(135783),	-- Vindictive Gladiator's Felweave Bracers
-											i(135777),	-- Vindictive Gladiator's Felweave Handguards
-											i(135782),	-- Vindictive Gladiator's Felweave Cord
-											i(135779),	-- Vindictive Gladiator's Felweave Trousers
-											i(135776),	-- Vindictive Gladiator's Felweave Treads
-										}),		
-										i(146141, { -- Vindictive Gladiator's Dragonhide Armor		
-											i(135714),	-- Vindictive Gladiator's Dragonhide Helm
-											i(135717),	-- Vindictive Gladiator's Dragonhide Spaulders
-											i(135796),	-- Vindictive Gladiator's Dragonhide Cloak
-											i(135716),	-- Vindictive Gladiator's Dragonhide Robe
-											i(135719),	-- Vindictive Gladiator's Dragonhide Wristguards
-											i(135713),	-- Vindictive Gladiator's Dragonhide Gloves
-											i(135718),	-- Vindictive Gladiator's Dragonhide Belt
-											i(135715),	-- Vindictive Gladiator's Dragonhide Legguards
-											i(135712),	-- Vindictive Gladiator's Dragonhide Moccasins
-										}),		
-										i(146145, { -- Vindictive Gladiator's Leather Armor		
-											i(135763),	-- Vindictive Gladiator's Leather Helm
-											i(135765),	-- Vindictive Gladiator's Leather Spaulders
-											i(136865),	-- Vindictive Gladiator's Shadowcape
-											i(135760),	-- Vindictive Gladiator's Leather Tunic
-											i(135767),	-- Vindictive Gladiator's Leather Wristguards
-											i(135762),	-- Vindictive Gladiator's Leather Gloves
-											i(135766),	-- Vindictive Gladiator's Leather Belt
-											i(135764),	-- Vindictive Gladiator's Leather Legguards
-											i(135761),	-- Vindictive Gladiator's Leather Slippers
-										}),		
-										i(146143, { -- Vindictive Gladiator's Ironskin Armor		
-											i(135738),	-- Vindictive Gladiator's Ironskin Helm
-											i(135740),	-- Vindictive Gladiator's Ironskin Spaulders
-											i(135797),	-- Vindictive Gladiator's Ironskin Cloak
-											i(135741),	-- Vindictive Gladiator's Ironskin Tunic
-											i(135743),	-- Vindictive Gladiator's Ironskin Wristguards
-											i(135737),	-- Vindictive Gladiator's Ironskin Gloves
-											i(135742),	-- Vindictive Gladiator's Ironskin Belt
-											i(135739),	-- Vindictive Gladiator's Ironskin Legguards
-											i(135736),	-- Vindictive Gladiator's Ironskin Slippers
-										}),		
-										i(146263, { -- Vindictive Gladiator's Felskin Armor		
-											i(136289),	-- Vindictive Gladiator's Felskin Helm
-											i(136292),	-- Vindictive Gladiator's Felskin Spaulders
-											i(136892),	-- Vindictive Gladiator's Demonthread Cloak
-											i(136291),	-- Vindictive Gladiator's Felskin Tunic
-											i(136294),	-- Vindictive Gladiator's Felskin Wristguards
-											i(136288),	-- Vindictive Gladiator's Felskin Gloves
-											i(136293),	-- Vindictive Gladiator's Felskin Belt
-											i(136290),	-- Vindictive Gladiator's Felskin Legguards
-											i(136287),	-- Vindictive Gladiator's Felskin Boots
-										}),		
-										i(146139, { -- Vindictive Gladiator's Chain Armor		
-											i(135723),	-- Vindictive Gladiator's Chain Helm
-											i(135725),	-- Vindictive Gladiator's Chain Spaulders
-											i(135800),	-- Vindictive Gladiator's Drape of the Tracker
-											i(135720),	-- Vindictive Gladiator's Chain Armor
-											i(135727),	-- Vindictive Gladiator's Chain Armband
-											i(135722),	-- Vindictive Gladiator's Chain Gauntlets
-											i(135726),	-- Vindictive Gladiator's Chain Clasp
-											i(135724),	-- Vindictive Gladiator's Chain Leggings
-											i(135721),	-- Vindictive Gladiator's Chain Treads
-										}),		
-										i(146137, { -- Vindictive Gladiator's Ringmail Armor		
-											i(135771),	-- Vindictive Gladiator's Ringmail Helm
-											i(135773),	-- Vindictive Gladiator's Ringmail Spaulders
-											i(136866),	-- Vindictive Gladiator's Totemic Cloak
-											i(135768),	-- Vindictive Gladiator's Ringmail Armor
-											i(135775),	-- Vindictive Gladiator's Ringmail Armband
-											i(135770),	-- Vindictive Gladiator's Ringmail Gauntlets
-											i(135774),	-- Vindictive Gladiator's Ringmail Clasp
-											i(135772),	-- Vindictive Gladiator's Ringmail Kilt
-											i(135769),	-- Vindictive Gladiator's Ringmail Boots
-										}),		
-										i(146135, { -- Vindictive Gladiator's Scaled Armor		
-											i(135747),	-- Vindictive Gladiator's Scaled Helm
-											i(135749),	-- Vindictive Gladiator's Scaled Shoulders
-											i(135801),	-- Vindictive Gladiator's Greatcloak of Faith
-											i(135744),	-- Vindictive Gladiator's Scaled Battlerobe
-											i(135751),	-- Vindictive Gladiator's Scaled Wristplates
-											i(135746),	-- Vindictive Gladiator's Scaled Gauntlets
-											i(135750),	-- Vindictive Gladiator's Scaled Girdle
-											i(135748),	-- Vindictive Gladiator's Scaled Legguards
-											i(135745),	-- Vindictive Gladiator's Scaled Sabatons
-										}),		
-										i(146131, { -- Vindictive Gladiator's Plate Armor		
-											i(135787),	-- Vindictive Gladiator's Plate Helm
-											i(135789),	-- Vindictive Gladiator's Plate Shoulders
-											i(136886),	-- Vindictive Gladiator's Cloak of Battle
-											i(135784),	-- Vindictive Gladiator's Plate Chestpiece
-											i(135791),	-- Vindictive Gladiator's Plate Wristplates
-											i(135786),	-- Vindictive Gladiator's Plate Gauntlets
-											i(135790),	-- Vindictive Gladiator's Plate Girdle
-											i(135788),	-- Vindictive Gladiator's Plate Legguards
-											i(135785),	-- Vindictive Gladiator's Plate Warboots
-										}),		
-										i(146133, { -- Vindictive Gladiator's Dreadplate Armor		
-											i(135707),	-- Vindictive Gladiator's Dreadplate Helm
-											i(135709),	-- Vindictive Gladiator's Dreadplate Shoulders
-											i(135792),	-- Vindictive Gladiator's Dreadcloak
-											i(135704),	-- Vindictive Gladiator's Dreadplate Chestpiece
-											i(135711),	-- Vindictive Gladiator's Dreadplate Wristplates
-											i(135706),	-- Vindictive Gladiator's Dreadplate Gauntlets
-											i(135710),	-- Vindictive Gladiator's Dreadplate Girdle
-											i(135708),	-- Vindictive Gladiator's Dreadplate Legguards
-											i(135705),	-- Vindictive Gladiator's Dreadplate Sabatons
-											
-										}),
-										-- LEGION & 4
-										i(147664, { -- Cruel Gladiator's Satin Armor		
-											i(144681),	-- Cruel Gladiator's Satin Hood
-											i(144687),	-- Cruel Gladiator's Satin Mantle
-											i(144549),	-- Cruel Gladiator's Drape of Piety
-											i(144685),	-- Cruel Gladiator's Satin Robe
-											i(144691),	-- Cruel Gladiator's Satin Bracers
-											i(144679),	-- Cruel Gladiator's Satin Gloves
-											i(144689),	-- Cruel Gladiator's Satin Cord
-											i(144683),	-- Cruel Gladiator's Satin Leggings
-											i(144677),	-- Cruel Gladiator's Satin Treads
-										}),		
-										i(147667, { -- Cruel Gladiator's Silk Armor		
-											i(144627),	-- Cruel Gladiator's Silk Cowl
-											i(144633),	-- Cruel Gladiator's Silk Amice
-											i(144543),	-- Cruel Gladiator's Silken Shawl
-											i(144631),	-- Cruel Gladiator's Silk Robe
-											i(144637),	-- Cruel Gladiator's Silk Bracers
-											i(144625),	-- Cruel Gladiator's Silk Handguards
-											i(144635),	-- Cruel Gladiator's Silk Cord
-											i(144629),	-- Cruel Gladiator's Silk Trousers
-											i(144623),	-- Cruel Gladiator's Silk Treads
-										}),		
-										i(147654, { -- Cruel Gladiator's Felweave Armor		
-											i(144753),	-- Cruel Gladiator's Felweave Cowl
-											i(144759),	-- Cruel Gladiator's Felweave Amice
-											i(144555),	-- Cruel Gladiator's Felweave Cloak
-											i(144757),	-- Cruel Gladiator's Felweave Raiment
-											i(144763),	-- Cruel Gladiator's Felweave Bracers
-											i(144751),	-- Cruel Gladiator's Felweave Handguards
-											i(144761),	-- Cruel Gladiator's Felweave Cord
-											i(144755),	-- Cruel Gladiator's Felweave Trousers
-											i(144749),	-- Cruel Gladiator's Felweave Treads
-										}),		
-										i(147648, { -- Cruel Gladiator's Dragonhide Armor		
-											i(144597),	-- Cruel Gladiator's Dragonhide Helm
-											i(144601),	-- Cruel Gladiator's Dragonhide Spaulders
-											i(144539),	-- Cruel Gladiator's Dragonhide Cloak
-											i(144591),	-- Cruel Gladiator's Dragonhide Robe
-											i(144605),	-- Cruel Gladiator's Dragonhide Wristguards
-											i(144595),	-- Cruel Gladiator's Dragonhide Gloves
-											i(144603),	-- Cruel Gladiator's Dragonhide Belt
-											i(144599),	-- Cruel Gladiator's Dragonhide Legguards
-											i(144593),	-- Cruel Gladiator's Dragonhide Moccasins
-										}),		
-										i(147658, { -- Cruel Gladiator's Leather Armor		
-											i(144705),	-- Cruel Gladiator's Leather Helm
-											i(144709),	-- Cruel Gladiator's Leather Spaulders
-											i(144551),	-- Cruel Gladiator's Shadowcape
-											i(144699),	-- Cruel Gladiator's Leather Tunic
-											i(144713),	-- Cruel Gladiator's Leather Wristguards
-											i(144703),	-- Cruel Gladiator's Leather Gloves
-											i(144711),	-- Cruel Gladiator's Leather Belt
-											i(144707),	-- Cruel Gladiator's Leather Legguards
-											i(144701),	-- Cruel Gladiator's Leather Slippers
-										}),		
-										i(147655, { -- Cruel Gladiator's Ironskin Armor		
-											i(144643),	-- Cruel Gladiator's Ironskin Helm
-											i(144647),	-- Cruel Gladiator's Ironskin Spaulders
-											i(144545),	-- Cruel Gladiator's Ironskin Cloak
-											i(144649),	-- Cruel Gladiator's Ironskin Tunic
-											i(144653),	-- Cruel Gladiator's Ironskin Wristguards
-											i(144641),	-- Cruel Gladiator's Ironskin Gloves
-											i(144651),	-- Cruel Gladiator's Ironskin Belt
-											i(144645),	-- Cruel Gladiator's Ironskin Legguards
-											i(144639),	-- Cruel Gladiator's Ironskin Slippers
-										}),		
-										i(147652, { -- Cruel Gladiator's Felskin Armor		
-											i(144581),	-- Cruel Gladiator's Felskin Helm
-											i(144585),	-- Cruel Gladiator's Felskin Spaulders
-											i(144537),	-- Cruel Gladiator's Demonthread Cloak
-											i(144575),	-- Cruel Gladiator's Felskin Tunic
-											i(144589),	-- Cruel Gladiator's Felskin Wristguards
-											i(144579),	-- Cruel Gladiator's Felskin Gloves
-											i(144587),	-- Cruel Gladiator's Felskin Belt
-											i(144583),	-- Cruel Gladiator's Felskin Legguards
-											i(144577),	-- Cruel Gladiator's Felskin Boots
-										}),		
-										i(147645, { -- Cruel Gladiator's Chain Armor		
-											i(144613),	-- Cruel Gladiator's Chain Helm
-											i(144617),	-- Cruel Gladiator's Chain Spaulders
-											i(144541),	-- Cruel Gladiator's Drape of the Tracker
-											i(144607),	-- Cruel Gladiator's Chain Armor
-											i(144621),	-- Cruel Gladiator's Chain Armband
-											i(144611),	-- Cruel Gladiator's Chain Gauntlets
-											i(144619),	-- Cruel Gladiator's Chain Clasp
-											i(144615),	-- Cruel Gladiator's Chain Leggings
-											i(144609),	-- Cruel Gladiator's Chain Treads
-										}),		
-										i(147662, { -- Cruel Gladiator's Ringmail Armor		
-											i(144721),	-- Cruel Gladiator's Ringmail Helm
-											i(144725),	-- Cruel Gladiator's Ringmail Spaulders
-											i(144553),	-- Cruel Gladiator's Totemic Cloak
-											i(144715),	-- Cruel Gladiator's Ringmail Armor
-											i(144729),	-- Cruel Gladiator's Ringmail Armband
-											i(144719),	-- Cruel Gladiator's Ringmail Gauntlets
-											i(144727),	-- Cruel Gladiator's Ringmail Clasp
-											i(144723),	-- Cruel Gladiator's Ringmail Kilt
-											i(144717),	-- Cruel Gladiator's Ringmail Boots
-										}),		
-										i(147666, { -- Cruel Gladiator's Scaled Armor		
-											i(144666),	-- Cruel Gladiator's Scaled Helm
-											i(144671),	-- Cruel Gladiator's Scaled Shoulders
-											i(144547),	-- Cruel Gladiator's Greatcloak of Faith
-											i(144660),	-- Cruel Gladiator's Scaled Breastplate
-											i(144675),	-- Cruel Gladiator's Scaled Wristplates
-											i(144664),	-- Cruel Gladiator's Scaled Gauntlets
-											i(144673),	-- Cruel Gladiator's Scaled Girdle
-											i(144668),	-- Cruel Gladiator's Scaled Legguards
-											i(144662),	-- Cruel Gladiator's Scaled Sabatons
-										}),		
-										i(147659, { -- Cruel Gladiator's Plate Gaun Armor		
-											i(144769),	-- Cruel Gladiator's Plate Gauntlets
-											i(144773),	-- Cruel Gladiator's Plate Legguards
-											i(144557),	-- Cruel Gladiator's Cloak of Battle
-											i(144779),	-- Cruel Gladiator's Plate Wristplates
-											i(144777),	-- Cruel Gladiator's Plate Girdle
-											i(144767),	-- Cruel Gladiator's Plate Warboots
-											i(144775),	-- Cruel Gladiator's Plate Shoulders
-											i(144771),	-- Cruel Gladiator's Plate Helm
-											i(144765),	-- Cruel Gladiator's Plate Chestpiece
-										}),		
-										i(147649, { -- Cruel Gladiator's Dreadplate Armor		
-											i(144565),	-- Cruel Gladiator's Dreadplate Helm
-											i(144569),	-- Cruel Gladiator's Dreadplate Shoulders
-											i(144535),	-- Cruel Gladiator's Dreadcloak
-											i(144559),	-- Cruel Gladiator's Dreadplate Chestpiece
-											i(144573),	-- Cruel Gladiator's Dreadplate Wristplates
-											i(144563),	-- Cruel Gladiator's Dreadplate Gauntlets
-											i(144571),	-- Cruel Gladiator's Dreadplate Girdle
-											i(144567),	-- Cruel Gladiator's Dreadplate Legguards
-											i(144561),	-- Cruel Gladiator's Dreadplate Sabatons
-										}),
-										-- LEGION 5,6,7
-										i(149499, {	-- Ensemble: Fierce Gladiator's Scaled Armor
-											i(148041),	-- Fierce Gladiator's Scaled Helm
-											i(148046),	-- Fierce Gladiator's Scaled Shoulders
-											i(147922),	-- Fierce Gladiator's Greatcloak of Faith
-											i(148050),	-- Fierce Gladiator's Scaled Wristplates
-											i(148039),	-- Fierce Gladiator's Scaled Gauntlets
-											i(148035),	-- Fierce Gladiator's Scaled Breastplate
-											i(148048),	-- Fierce Gladiator's Scaled Girdle
-											i(148043),	-- Fierce Gladiator's Scaled Legguards
-											i(148037),	-- Fierce Gladiator's Scaled Sabatons
-										}),
-									},
-								}),
+							gssh(1071, { -- Combatant
+								["groups"] = {
+									-- LEGION { Legion Season 1 AND 2
+									i(146159, { -- Vindictive Combatant's Satin Armor		
+										i(135980),	-- Vindictive Combatant's Satin Hood
+										i(135983),	-- Vindictive Combatant's Satin Mantle
+										i(136870),	-- Vindictive Combatant's Drape of Piety
+										i(135982),	-- Vindictive Combatant's Satin Tunic
+										i(135985),	-- Vindictive Combatant's Satin Bracers
+										i(135979),	-- Vindictive Combatant's Satin Gloves
+										i(135984),	-- Vindictive Combatant's Satin Cord
+										i(135981),	-- Vindictive Combatant's Satin Leggings
+										i(135978),	-- Vindictive Combatant's Satin Treads
+									}),		
+									i(146157, { -- Vindictive Combatant's Silk Armor		
+										i(135956),	-- Vindictive Combatant's Silk Cowl
+										i(135959),	-- Vindictive Combatant's Silk Amice
+										i(136019),	-- Vindictive Combatant's Silken Shawl
+										i(135958),	-- Vindictive Combatant's Silk Tunic
+										i(135961),	-- Vindictive Combatant's Silk Bracers
+										i(135955),	-- Vindictive Combatant's Silk Handguards
+										i(135960),	-- Vindictive Combatant's Silk Cord
+										i(135957),	-- Vindictive Combatant's Silk Trousers
+										i(135954),	-- Vindictive Combatant's Silk Treads
+									}),		
+									i(146161, { -- Vindictive Combatant's Felweave Armor		
+										i(136004),	-- Vindictive Combatant's Felweave Cowl
+										i(136007),	-- Vindictive Combatant's Felweave Amice
+										i(136882),	-- Vindictive Combatant's Felweave Cloak
+										i(136006),	-- Vindictive Combatant's Felweave Tunic
+										i(136009),	-- Vindictive Combatant's Felweave Bracers
+										i(136003),	-- Vindictive Combatant's Felweave Handguards
+										i(136008),	-- Vindictive Combatant's Felweave Cord
+										i(136005),	-- Vindictive Combatant's Felweave Trousers
+										i(136002),	-- Vindictive Combatant's Felweave Treads
+									}),		
+									i(146169, { -- Vindictive Combatant's Dragonhide Armor		
+										i(135940),	-- Vindictive Combatant's Dragonhide Helm
+										i(135943),	-- Vindictive Combatant's Dragonhide Spaulders
+										i(136022),	-- Vindictive Combatant's Dragonhide Cloak
+										i(135942),	-- Vindictive Combatant's Dragonhide Tunic
+										i(135945),	-- Vindictive Combatant's Dragonhide Wristguards
+										i(135939),	-- Vindictive Combatant's Dragonhide Gloves
+										i(135944),	-- Vindictive Combatant's Dragonhide Belt
+										i(135941),	-- Vindictive Combatant's Dragonhide Legguards
+										i(135938),	-- Vindictive Combatant's Dragonhide Moccasins
+									}),		
+									i(146173, { -- Vindictive Combatant's Leather Armor		
+										i(135989),	-- Vindictive Combatant's Leather Helm
+										i(135991),	-- Vindictive Combatant's Leather Spaulders
+										i(136871),	-- Vindictive Combatant's Shadowcape
+										i(135986),	-- Vindictive Combatant's Leather Tunic
+										i(135993),	-- Vindictive Combatant's Leather Wristguards
+										i(135988),	-- Vindictive Combatant's Leather Gloves
+										i(135992),	-- Vindictive Combatant's Leather Belt
+										i(135990),	-- Vindictive Combatant's Leather Legguards
+										i(135987),	-- Vindictive Combatant's Leather Slippers
+									}),		
+									i(146171, { -- Vindictive Combatant's Ironskin Armor		
+										i(135964),	-- Vindictive Combatant's Ironskin Helm
+										i(135966),	-- Vindictive Combatant's Ironskin Spaulders
+										i(136023),	-- Vindictive Combatant's Ironskin Cloak
+										i(135967),	-- Vindictive Combatant's Ironskin Tunic
+										i(135969),	-- Vindictive Combatant's Ironskin Wristguards
+										i(135963),	-- Vindictive Combatant's Ironskin Gloves
+										i(135968),	-- Vindictive Combatant's Ironskin Belt
+										i(135965),	-- Vindictive Combatant's Ironskin Legguards
+										i(135962),	-- Vindictive Combatant's Ironskin Slippers
+									}),		
+									i(146265, { -- Vindictive Combatant's Felskin Armor	
+										["groups"] = {
+											i(136305),	-- Vindictive Combatant's Felskin Helm
+											i(136308),	-- Vindictive Combatant's Felskin Spaulders
+											i(136894),	-- Vindictive Combatant's Demonthread Cloak
+											i(136307),	-- Vindictive Combatant's Felskin Tunic
+											i(136310),	-- Vindictive Combatant's Felskin Wristguards
+											i(136304),	-- Vindictive Combatant's Felskin Gloves
+											i(136309),	-- Vindictive Combatant's Felskin Belt
+											i(136306),	-- Vindictive Combatant's Felskin Legguards
+											i(136303),	-- Vindictive Combatant's Felskin Boots
+										},
+										["classes"] = { 12 },
+									}),		
+									i(146155, { -- Vindictive Combatant's Chain Armor		
+										i(135949),	-- Vindictive Combatant's Chain Helm
+										i(135951),	-- Vindictive Combatant's Chain Spaulders
+										i(136026),	-- Vindictive Combatant's Drape of the Tracker
+										i(135946),	-- Vindictive Combatant's Chain Armor
+										i(135953),	-- Vindictive Combatant's Chain Armband
+										i(135948),	-- Vindictive Combatant's Chain Gauntlets
+										i(135952),	-- Vindictive Combatant's Chain Clasp
+										i(135950),	-- Vindictive Combatant's Chain Leggings
+										i(135947),	-- Vindictive Combatant's Chain Treads
+									}),		
+									i(146153, { -- Vindictive Combatant's Ringmail Armor		
+										i(135997),	-- Vindictive Combatant's Ringmail Helm
+										i(135999),	-- Vindictive Combatant's Ringmail Spaulders
+										i(136872),	-- Vindictive Combatant's Totemic Cloak
+										i(135994),	-- Vindictive Combatant's Ringmail Armor
+										i(136001),	-- Vindictive Combatant's Ringmail Armband
+										i(135996),	-- Vindictive Combatant's Ringmail Gauntlets
+										i(136000),	-- Vindictive Combatant's Ringmail Clasp
+										i(135998),	-- Vindictive Combatant's Ringmail Kilt
+										i(135995),	-- Vindictive Combatant's Ringmail Boots
+									}),		
+									i(146167, { -- Vindictive Combatant's Scaled Armor		
+										i(135973),	-- Vindictive Combatant's Scaled Helm
+										i(135975),	-- Vindictive Combatant's Scaled Shoulders
+										i(136027),	-- Vindictive Combatant's Greatcloak of Faith
+										i(135970),	-- Vindictive Combatant's Scaled Chestpiece
+										i(135977),	-- Vindictive Combatant's Scaled Wristplates
+										i(135972),	-- Vindictive Combatant's Scaled Gauntlets
+										i(135976),	-- Vindictive Combatant's Scaled Girdle
+										i(135974),	-- Vindictive Combatant's Scaled Legguards
+										i(135971),	-- Vindictive Combatant's Scaled Sabatons
+									}),		
+									i(146163, { -- Vindictive Combatant's Plate Armor		
+										i(136013),	-- Vindictive Combatant's Plate Helm
+										i(136015),	-- Vindictive Combatant's Plate Shoulders
+										i(136888),	-- Vindictive Combatant's Cloak of Battle
+										i(136010),	-- Vindictive Combatant's Plate Chestpiece
+										i(136017),	-- Vindictive Combatant's Plate Wristplates
+										i(136012),	-- Vindictive Combatant's Plate Gauntlets
+										i(136016),	-- Vindictive Combatant's Plate Girdle
+										i(136014),	-- Vindictive Combatant's Plate Legguards
+										i(136011),	-- Vindictive Combatant's Plate Warboots
+									}),		
+									i(146165, { -- Vindictive Combatant's Dreadplate Armor		
+										i(135933),	-- Vindictive Combatant's Dreadplate Helm
+										i(135935),	-- Vindictive Combatant's Dreadplate Shoulders
+										i(136018),	-- Vindictive Combatant's Dreadcloak
+										i(135930),	-- Vindictive Combatant's Dreadplate Chestpiece
+										i(135937),	-- Vindictive Combatant's Dreadplate Wristplates
+										i(135932),	-- Vindictive Combatant's Dreadplate Gauntlets
+										i(135936),	-- Vindictive Combatant's Dreadplate Girdle
+										i(135934),	-- Vindictive Combatant's Dreadplate Legguards
+										i(135931),	-- Vindictive Combatant's Dreadplate Sabatons
+									}),
+									-- LEGION & 4
+									i(147687, { -- Cruel Combatant's Satin Armor		
+										i(145173),	-- Cruel Combatant's Satin Hood
+										i(145179),	-- Cruel Combatant's Satin Mantle
+										i(145041),	-- Cruel Combatant's Drape of Piety
+										i(145177),	-- Cruel Combatant's Satin Robe
+										i(145183),	-- Cruel Combatant's Satin Bracers
+										i(145171),	-- Cruel Combatant's Satin Gloves
+										i(145181),	-- Cruel Combatant's Satin Cord
+										i(145175),	-- Cruel Combatant's Satin Leggings
+										i(145169),	-- Cruel Combatant's Satin Treads
+									}),		
+									i(147695, { -- Cruel Combatant's Silk Armor		
+										i(145119),	-- Cruel Combatant's Silk Cowl
+										i(145125),	-- Cruel Combatant's Silk Amice
+										i(145035),	-- Cruel Combatant's Silken Shawl
+										i(145123),	-- Cruel Combatant's Silk Robe
+										i(145129),	-- Cruel Combatant's Silk Bracers
+										i(145117),	-- Cruel Combatant's Silk Handguards
+										i(145127),	-- Cruel Combatant's Silk Cord
+										i(145121),	-- Cruel Combatant's Silk Trousers
+										i(145115),	-- Cruel Combatant's Silk Treads
+									}),		
+									i(147681, { -- Cruel Combatant's Felweave Armor		
+										i(145245),	-- Cruel Combatant's Felweave Cowl
+										i(145251),	-- Cruel Combatant's Felweave Amice
+										i(145047),	-- Cruel Combatant's Felweave Cloak
+										i(145249),	-- Cruel Combatant's Felweave Raiment
+										i(145255),	-- Cruel Combatant's Felweave Bracers
+										i(145243),	-- Cruel Combatant's Felweave Handguards
+										i(145253),	-- Cruel Combatant's Felweave Cord
+										i(145247),	-- Cruel Combatant's Felweave Trousers
+										i(145241),	-- Cruel Combatant's Felweave Treads
+									}),		
+									i(147676, { -- Cruel Combatant's Dragonhide Armor		
+										i(145089),	-- Cruel Combatant's Dragonhide Helm
+										i(145093),	-- Cruel Combatant's Dragonhide Spaulders
+										i(145031),	-- Cruel Combatant's Dragonhide Cloak
+										i(145083),	-- Cruel Combatant's Dragonhide Tunic
+										i(145097),	-- Cruel Combatant's Dragonhide Wristguards
+										i(145087),	-- Cruel Combatant's Dragonhide Gloves
+										i(145095),	-- Cruel Combatant's Dragonhide Belt
+										i(145091),	-- Cruel Combatant's Dragonhide Legguards
+										i(145085),	-- Cruel Combatant's Dragonhide Moccasins
+									}),		
+									i(147686, { -- Cruel Combatant's Leather Armor		
+										i(145197),	-- Cruel Combatant's Leather Helm
+										i(145201),	-- Cruel Combatant's Leather Spaulders
+										i(145043),	-- Cruel Combatant's Shadowcape
+										i(145191),	-- Cruel Combatant's Leather Tunic
+										i(145205),	-- Cruel Combatant's Leather Wristguards
+										i(145195),	-- Cruel Combatant's Leather Gloves
+										i(145203),	-- Cruel Combatant's Leather Belt
+										i(145199),	-- Cruel Combatant's Leather Legguards
+										i(145193),	-- Cruel Combatant's Leather Slippers
+									}),		
+									i(147683, { -- Cruel Combatant's Ironskin Armor		
+										i(145135),	-- Cruel Combatant's Ironskin Helm
+										i(145139),	-- Cruel Combatant's Ironskin Spaulders
+										i(145037),	-- Cruel Combatant's Ironskin Cloak
+										i(145141),	-- Cruel Combatant's Ironskin Tunic
+										i(145145),	-- Cruel Combatant's Ironskin Wristguards
+										i(145133),	-- Cruel Combatant's Ironskin Gloves
+										i(145143),	-- Cruel Combatant's Ironskin Belt
+										i(145137),	-- Cruel Combatant's Ironskin Legguards
+										i(145131),	-- Cruel Combatant's Ironskin Slippers
+									}),		
+									i(147679, { -- Cruel Combatant's Felskin Armor	
+										["groups"] = {
+											i(145073),	-- Cruel Combatant's Felskin Helm
+											i(145077),	-- Cruel Combatant's Felskin Spaulders
+											i(145029),	-- Cruel Combatant's Demonthread Cloak
+											i(145067),	-- Cruel Combatant's Felskin Tunic
+											i(145081),	-- Cruel Combatant's Felskin Wristguards
+											i(145071),	-- Cruel Combatant's Felskin Gloves
+											i(145079),	-- Cruel Combatant's Felskin Belt
+											i(145075),	-- Cruel Combatant's Felskin Legguards
+											i(145069),	-- Cruel Combatant's Felskin Boots
+										},
+										["classes"] = { 12 },
+									}),		
+									i(147690, { -- Cruel Combatant's Chain Armor		
+										i(145105),	-- Cruel Combatant's Chain Helm
+										i(145109),	-- Cruel Combatant's Chain Spaulders
+										i(145033),	-- Cruel Combatant's Drape of the Tracker
+										i(145099),	-- Cruel Combatant's Chain Armor
+										i(145113),	-- Cruel Combatant's Chain Armband
+										i(145103),	-- Cruel Combatant's Chain Gauntlets
+										i(145111),	-- Cruel Combatant's Chain Clasp
+										i(145107),	-- Cruel Combatant's Chain Leggings
+										i(145101),	-- Cruel Combatant's Chain Treads
+									}),		
+									i(147673, { -- Cruel Combatant's Ringmail Armor		
+										i(145213),	-- Cruel Combatant's Ringmail Helm
+										i(145217),	-- Cruel Combatant's Ringmail Spaulders
+										i(145045),	-- Cruel Combatant's Totemic Cloak
+										i(145207),	-- Cruel Combatant's Ringmail Armor
+										i(145221),	-- Cruel Combatant's Ringmail Armband
+										i(145211),	-- Cruel Combatant's Ringmail Gauntlets
+										i(145219),	-- Cruel Combatant's Ringmail Clasp
+										i(145215),	-- Cruel Combatant's Ringmail Leggings
+										i(145209),	-- Cruel Combatant's Ringmail Boots
+									}),		
+									i(147694, { -- Cruel Combatant's Scaled Armor		
+										i(145159),	-- Cruel Combatant's Scaled Helm
+										i(145163),	-- Cruel Combatant's Scaled Shoulders
+										i(145039),	-- Cruel Combatant's Greatcloak of Faith
+										i(145153),	-- Cruel Combatant's Scaled Chestpiece
+										i(145167),	-- Cruel Combatant's Scaled Wristplates
+										i(145157),	-- Cruel Combatant's Scaled Gauntlets
+										i(145165),	-- Cruel Combatant's Scaled Girdle
+										i(145161),	-- Cruel Combatant's Scaled Legguards
+										i(145155),	-- Cruel Combatant's Scaled Sabatons
+									}),		
+									i(147691, { -- Cruel Combatant's Plate Armor		
+										i(145263),	-- Cruel Combatant's Plate Helm
+										i(145267),	-- Cruel Combatant's Plate Shoulders
+										i(145049),	-- Cruel Combatant's Cloak of Battle
+										i(145257),	-- Cruel Combatant's Plate Chestpiece
+										i(145271),	-- Cruel Combatant's Plate Wristplates
+										i(145261),	-- Cruel Combatant's Plate Gauntlets
+										i(145269),	-- Cruel Combatant's Plate Girdle
+										i(145265),	-- Cruel Combatant's Plate Legguards
+										i(145259),	-- Cruel Combatant's Plate Warboots
+									}),		
+									i(147678, { -- Cruel Combatant's Dreadplate Armor		
+										i(145057),	-- Cruel Combatant's Dreadplate Helm
+										i(145061),	-- Cruel Combatant's Dreadplate Shoulders
+										i(145027),	-- Cruel Combatant's Dreadcloak
+										i(145051),	-- Cruel Combatant's Dreadplate Chestpiece
+										i(145065),	-- Cruel Combatant's Dreadplate Wristplates
+										i(145055),	-- Cruel Combatant's Dreadplate Gauntlets
+										i(145063),	-- Cruel Combatant's Dreadplate Girdle
+										i(145059),	-- Cruel Combatant's Dreadplate Legguards
+										i(145053),	-- Cruel Combatant's Dreadplate Sabatons
+									}),		
+								},
+								["icon"] = "Interface\\Worldmap\\GlowSkull_64Purple",	-- Purple
+							}),
+							gssh(1414, { -- Gladiator
+								["icon"] = "Interface\\Worldmap\\GlowSkull_64Red",	-- Red
+								["groups"] = {
+									-- LEGION { Legion Season 1 & 2
+									i(146149, { -- Vindictive Gladiator's Satin Armor		
+										i(135754),	-- Vindictive Gladiator's Satin Hood
+										i(135757),	-- Vindictive Gladiator's Satin Mantle
+										i(136864),	-- Vindictive Gladiator's Drape of Piety
+										i(135756),	-- Vindictive Gladiator's Satin Robe
+										i(135759),	-- Vindictive Gladiator's Satin Bracers
+										i(135753),	-- Vindictive Gladiator's Satin Gloves
+										i(135758),	-- Vindictive Gladiator's Satin Cord
+										i(135755),	-- Vindictive Gladiator's Satin Leggings
+										i(135752),	-- Vindictive Gladiator's Satin Treads
+									}),		
+									i(146147, { -- Vindictive Gladiator's Silk Armor		
+										i(135730),	-- Vindictive Gladiator's Silk Cowl
+										i(135733),	-- Vindictive Gladiator's Silk Amice
+										i(135793),	-- Vindictive Gladiator's Silken Shawl
+										i(135732),	-- Vindictive Gladiator's Silk Robe
+										i(135735),	-- Vindictive Gladiator's Silk Bracers
+										i(135729),	-- Vindictive Gladiator's Silk Handguards
+										i(135734),	-- Vindictive Gladiator's Silk Cord
+										i(135731),	-- Vindictive Gladiator's Silk Trousers
+										i(135728),	-- Vindictive Gladiator's Silk Treads
+									}),		
+									i(146151, { -- Vindictive Gladiator's Felweave Armor		
+										i(135778),	-- Vindictive Gladiator's Felweave Cowl
+										i(135781),	-- Vindictive Gladiator's Felweave Amice
+										i(136880),	-- Vindictive Gladiator's Felweave Cloak
+										i(135780),	-- Vindictive Gladiator's Felweave Raiment
+										i(135783),	-- Vindictive Gladiator's Felweave Bracers
+										i(135777),	-- Vindictive Gladiator's Felweave Handguards
+										i(135782),	-- Vindictive Gladiator's Felweave Cord
+										i(135779),	-- Vindictive Gladiator's Felweave Trousers
+										i(135776),	-- Vindictive Gladiator's Felweave Treads
+									}),		
+									i(146141, { -- Vindictive Gladiator's Dragonhide Armor		
+										i(135714),	-- Vindictive Gladiator's Dragonhide Helm
+										i(135717),	-- Vindictive Gladiator's Dragonhide Spaulders
+										i(135796),	-- Vindictive Gladiator's Dragonhide Cloak
+										i(135716),	-- Vindictive Gladiator's Dragonhide Robe
+										i(135719),	-- Vindictive Gladiator's Dragonhide Wristguards
+										i(135713),	-- Vindictive Gladiator's Dragonhide Gloves
+										i(135718),	-- Vindictive Gladiator's Dragonhide Belt
+										i(135715),	-- Vindictive Gladiator's Dragonhide Legguards
+										i(135712),	-- Vindictive Gladiator's Dragonhide Moccasins
+									}),		
+									i(146145, { -- Vindictive Gladiator's Leather Armor		
+										i(135763),	-- Vindictive Gladiator's Leather Helm
+										i(135765),	-- Vindictive Gladiator's Leather Spaulders
+										i(136865),	-- Vindictive Gladiator's Shadowcape
+										i(135760),	-- Vindictive Gladiator's Leather Tunic
+										i(135767),	-- Vindictive Gladiator's Leather Wristguards
+										i(135762),	-- Vindictive Gladiator's Leather Gloves
+										i(135766),	-- Vindictive Gladiator's Leather Belt
+										i(135764),	-- Vindictive Gladiator's Leather Legguards
+										i(135761),	-- Vindictive Gladiator's Leather Slippers
+									}),		
+									i(146143, { -- Vindictive Gladiator's Ironskin Armor		
+										i(135738),	-- Vindictive Gladiator's Ironskin Helm
+										i(135740),	-- Vindictive Gladiator's Ironskin Spaulders
+										i(135797),	-- Vindictive Gladiator's Ironskin Cloak
+										i(135741),	-- Vindictive Gladiator's Ironskin Tunic
+										i(135743),	-- Vindictive Gladiator's Ironskin Wristguards
+										i(135737),	-- Vindictive Gladiator's Ironskin Gloves
+										i(135742),	-- Vindictive Gladiator's Ironskin Belt
+										i(135739),	-- Vindictive Gladiator's Ironskin Legguards
+										i(135736),	-- Vindictive Gladiator's Ironskin Slippers
+									}),		
+									i(146263, { -- Vindictive Gladiator's Felskin Armor		
+										i(136289),	-- Vindictive Gladiator's Felskin Helm
+										i(136292),	-- Vindictive Gladiator's Felskin Spaulders
+										i(136892),	-- Vindictive Gladiator's Demonthread Cloak
+										i(136291),	-- Vindictive Gladiator's Felskin Tunic
+										i(136294),	-- Vindictive Gladiator's Felskin Wristguards
+										i(136288),	-- Vindictive Gladiator's Felskin Gloves
+										i(136293),	-- Vindictive Gladiator's Felskin Belt
+										i(136290),	-- Vindictive Gladiator's Felskin Legguards
+										i(136287),	-- Vindictive Gladiator's Felskin Boots
+									}),		
+									i(146139, { -- Vindictive Gladiator's Chain Armor		
+										i(135723),	-- Vindictive Gladiator's Chain Helm
+										i(135725),	-- Vindictive Gladiator's Chain Spaulders
+										i(135800),	-- Vindictive Gladiator's Drape of the Tracker
+										i(135720),	-- Vindictive Gladiator's Chain Armor
+										i(135727),	-- Vindictive Gladiator's Chain Armband
+										i(135722),	-- Vindictive Gladiator's Chain Gauntlets
+										i(135726),	-- Vindictive Gladiator's Chain Clasp
+										i(135724),	-- Vindictive Gladiator's Chain Leggings
+										i(135721),	-- Vindictive Gladiator's Chain Treads
+									}),		
+									i(146137, { -- Vindictive Gladiator's Ringmail Armor		
+										i(135771),	-- Vindictive Gladiator's Ringmail Helm
+										i(135773),	-- Vindictive Gladiator's Ringmail Spaulders
+										i(136866),	-- Vindictive Gladiator's Totemic Cloak
+										i(135768),	-- Vindictive Gladiator's Ringmail Armor
+										i(135775),	-- Vindictive Gladiator's Ringmail Armband
+										i(135770),	-- Vindictive Gladiator's Ringmail Gauntlets
+										i(135774),	-- Vindictive Gladiator's Ringmail Clasp
+										i(135772),	-- Vindictive Gladiator's Ringmail Kilt
+										i(135769),	-- Vindictive Gladiator's Ringmail Boots
+									}),		
+									i(146135, { -- Vindictive Gladiator's Scaled Armor		
+										i(135747),	-- Vindictive Gladiator's Scaled Helm
+										i(135749),	-- Vindictive Gladiator's Scaled Shoulders
+										i(135801),	-- Vindictive Gladiator's Greatcloak of Faith
+										i(135744),	-- Vindictive Gladiator's Scaled Battlerobe
+										i(135751),	-- Vindictive Gladiator's Scaled Wristplates
+										i(135746),	-- Vindictive Gladiator's Scaled Gauntlets
+										i(135750),	-- Vindictive Gladiator's Scaled Girdle
+										i(135748),	-- Vindictive Gladiator's Scaled Legguards
+										i(135745),	-- Vindictive Gladiator's Scaled Sabatons
+									}),		
+									i(146131, { -- Vindictive Gladiator's Plate Armor		
+										i(135787),	-- Vindictive Gladiator's Plate Helm
+										i(135789),	-- Vindictive Gladiator's Plate Shoulders
+										i(136886),	-- Vindictive Gladiator's Cloak of Battle
+										i(135784),	-- Vindictive Gladiator's Plate Chestpiece
+										i(135791),	-- Vindictive Gladiator's Plate Wristplates
+										i(135786),	-- Vindictive Gladiator's Plate Gauntlets
+										i(135790),	-- Vindictive Gladiator's Plate Girdle
+										i(135788),	-- Vindictive Gladiator's Plate Legguards
+										i(135785),	-- Vindictive Gladiator's Plate Warboots
+									}),		
+									i(146133, { -- Vindictive Gladiator's Dreadplate Armor		
+										i(135707),	-- Vindictive Gladiator's Dreadplate Helm
+										i(135709),	-- Vindictive Gladiator's Dreadplate Shoulders
+										i(135792),	-- Vindictive Gladiator's Dreadcloak
+										i(135704),	-- Vindictive Gladiator's Dreadplate Chestpiece
+										i(135711),	-- Vindictive Gladiator's Dreadplate Wristplates
+										i(135706),	-- Vindictive Gladiator's Dreadplate Gauntlets
+										i(135710),	-- Vindictive Gladiator's Dreadplate Girdle
+										i(135708),	-- Vindictive Gladiator's Dreadplate Legguards
+										i(135705),	-- Vindictive Gladiator's Dreadplate Sabatons
+										
+									}),
+									-- LEGION & 4
+									i(147664, { -- Cruel Gladiator's Satin Armor		
+										i(144681),	-- Cruel Gladiator's Satin Hood
+										i(144687),	-- Cruel Gladiator's Satin Mantle
+										i(144549),	-- Cruel Gladiator's Drape of Piety
+										i(144685),	-- Cruel Gladiator's Satin Robe
+										i(144691),	-- Cruel Gladiator's Satin Bracers
+										i(144679),	-- Cruel Gladiator's Satin Gloves
+										i(144689),	-- Cruel Gladiator's Satin Cord
+										i(144683),	-- Cruel Gladiator's Satin Leggings
+										i(144677),	-- Cruel Gladiator's Satin Treads
+									}),		
+									i(147667, { -- Cruel Gladiator's Silk Armor		
+										i(144627),	-- Cruel Gladiator's Silk Cowl
+										i(144633),	-- Cruel Gladiator's Silk Amice
+										i(144543),	-- Cruel Gladiator's Silken Shawl
+										i(144631),	-- Cruel Gladiator's Silk Robe
+										i(144637),	-- Cruel Gladiator's Silk Bracers
+										i(144625),	-- Cruel Gladiator's Silk Handguards
+										i(144635),	-- Cruel Gladiator's Silk Cord
+										i(144629),	-- Cruel Gladiator's Silk Trousers
+										i(144623),	-- Cruel Gladiator's Silk Treads
+									}),		
+									i(147654, { -- Cruel Gladiator's Felweave Armor		
+										i(144753),	-- Cruel Gladiator's Felweave Cowl
+										i(144759),	-- Cruel Gladiator's Felweave Amice
+										i(144555),	-- Cruel Gladiator's Felweave Cloak
+										i(144757),	-- Cruel Gladiator's Felweave Raiment
+										i(144763),	-- Cruel Gladiator's Felweave Bracers
+										i(144751),	-- Cruel Gladiator's Felweave Handguards
+										i(144761),	-- Cruel Gladiator's Felweave Cord
+										i(144755),	-- Cruel Gladiator's Felweave Trousers
+										i(144749),	-- Cruel Gladiator's Felweave Treads
+									}),		
+									i(147648, { -- Cruel Gladiator's Dragonhide Armor		
+										i(144597),	-- Cruel Gladiator's Dragonhide Helm
+										i(144601),	-- Cruel Gladiator's Dragonhide Spaulders
+										i(144539),	-- Cruel Gladiator's Dragonhide Cloak
+										i(144591),	-- Cruel Gladiator's Dragonhide Robe
+										i(144605),	-- Cruel Gladiator's Dragonhide Wristguards
+										i(144595),	-- Cruel Gladiator's Dragonhide Gloves
+										i(144603),	-- Cruel Gladiator's Dragonhide Belt
+										i(144599),	-- Cruel Gladiator's Dragonhide Legguards
+										i(144593),	-- Cruel Gladiator's Dragonhide Moccasins
+									}),		
+									i(147658, { -- Cruel Gladiator's Leather Armor		
+										i(144705),	-- Cruel Gladiator's Leather Helm
+										i(144709),	-- Cruel Gladiator's Leather Spaulders
+										i(144551),	-- Cruel Gladiator's Shadowcape
+										i(144699),	-- Cruel Gladiator's Leather Tunic
+										i(144713),	-- Cruel Gladiator's Leather Wristguards
+										i(144703),	-- Cruel Gladiator's Leather Gloves
+										i(144711),	-- Cruel Gladiator's Leather Belt
+										i(144707),	-- Cruel Gladiator's Leather Legguards
+										i(144701),	-- Cruel Gladiator's Leather Slippers
+									}),		
+									i(147655, { -- Cruel Gladiator's Ironskin Armor		
+										i(144643),	-- Cruel Gladiator's Ironskin Helm
+										i(144647),	-- Cruel Gladiator's Ironskin Spaulders
+										i(144545),	-- Cruel Gladiator's Ironskin Cloak
+										i(144649),	-- Cruel Gladiator's Ironskin Tunic
+										i(144653),	-- Cruel Gladiator's Ironskin Wristguards
+										i(144641),	-- Cruel Gladiator's Ironskin Gloves
+										i(144651),	-- Cruel Gladiator's Ironskin Belt
+										i(144645),	-- Cruel Gladiator's Ironskin Legguards
+										i(144639),	-- Cruel Gladiator's Ironskin Slippers
+									}),		
+									i(147652, { -- Cruel Gladiator's Felskin Armor		
+										i(144581),	-- Cruel Gladiator's Felskin Helm
+										i(144585),	-- Cruel Gladiator's Felskin Spaulders
+										i(144537),	-- Cruel Gladiator's Demonthread Cloak
+										i(144575),	-- Cruel Gladiator's Felskin Tunic
+										i(144589),	-- Cruel Gladiator's Felskin Wristguards
+										i(144579),	-- Cruel Gladiator's Felskin Gloves
+										i(144587),	-- Cruel Gladiator's Felskin Belt
+										i(144583),	-- Cruel Gladiator's Felskin Legguards
+										i(144577),	-- Cruel Gladiator's Felskin Boots
+									}),		
+									i(147645, { -- Cruel Gladiator's Chain Armor		
+										i(144613),	-- Cruel Gladiator's Chain Helm
+										i(144617),	-- Cruel Gladiator's Chain Spaulders
+										i(144541),	-- Cruel Gladiator's Drape of the Tracker
+										i(144607),	-- Cruel Gladiator's Chain Armor
+										i(144621),	-- Cruel Gladiator's Chain Armband
+										i(144611),	-- Cruel Gladiator's Chain Gauntlets
+										i(144619),	-- Cruel Gladiator's Chain Clasp
+										i(144615),	-- Cruel Gladiator's Chain Leggings
+										i(144609),	-- Cruel Gladiator's Chain Treads
+									}),		
+									i(147662, { -- Cruel Gladiator's Ringmail Armor		
+										i(144721),	-- Cruel Gladiator's Ringmail Helm
+										i(144725),	-- Cruel Gladiator's Ringmail Spaulders
+										i(144553),	-- Cruel Gladiator's Totemic Cloak
+										i(144715),	-- Cruel Gladiator's Ringmail Armor
+										i(144729),	-- Cruel Gladiator's Ringmail Armband
+										i(144719),	-- Cruel Gladiator's Ringmail Gauntlets
+										i(144727),	-- Cruel Gladiator's Ringmail Clasp
+										i(144723),	-- Cruel Gladiator's Ringmail Kilt
+										i(144717),	-- Cruel Gladiator's Ringmail Boots
+									}),		
+									i(147666, { -- Cruel Gladiator's Scaled Armor		
+										i(144666),	-- Cruel Gladiator's Scaled Helm
+										i(144671),	-- Cruel Gladiator's Scaled Shoulders
+										i(144547),	-- Cruel Gladiator's Greatcloak of Faith
+										i(144660),	-- Cruel Gladiator's Scaled Breastplate
+										i(144675),	-- Cruel Gladiator's Scaled Wristplates
+										i(144664),	-- Cruel Gladiator's Scaled Gauntlets
+										i(144673),	-- Cruel Gladiator's Scaled Girdle
+										i(144668),	-- Cruel Gladiator's Scaled Legguards
+										i(144662),	-- Cruel Gladiator's Scaled Sabatons
+									}),		
+									i(147659, { -- Cruel Gladiator's Plate Gaun Armor		
+										i(144769),	-- Cruel Gladiator's Plate Gauntlets
+										i(144773),	-- Cruel Gladiator's Plate Legguards
+										i(144557),	-- Cruel Gladiator's Cloak of Battle
+										i(144779),	-- Cruel Gladiator's Plate Wristplates
+										i(144777),	-- Cruel Gladiator's Plate Girdle
+										i(144767),	-- Cruel Gladiator's Plate Warboots
+										i(144775),	-- Cruel Gladiator's Plate Shoulders
+										i(144771),	-- Cruel Gladiator's Plate Helm
+										i(144765),	-- Cruel Gladiator's Plate Chestpiece
+									}),		
+									i(147649, { -- Cruel Gladiator's Dreadplate Armor		
+										i(144565),	-- Cruel Gladiator's Dreadplate Helm
+										i(144569),	-- Cruel Gladiator's Dreadplate Shoulders
+										i(144535),	-- Cruel Gladiator's Dreadcloak
+										i(144559),	-- Cruel Gladiator's Dreadplate Chestpiece
+										i(144573),	-- Cruel Gladiator's Dreadplate Wristplates
+										i(144563),	-- Cruel Gladiator's Dreadplate Gauntlets
+										i(144571),	-- Cruel Gladiator's Dreadplate Girdle
+										i(144567),	-- Cruel Gladiator's Dreadplate Legguards
+										i(144561),	-- Cruel Gladiator's Dreadplate Sabatons
+									}),
+									-- LEGION 5,6,7
+									i(149499, {	-- Ensemble: Fierce Gladiator's Scaled Armor
+										i(148041),	-- Fierce Gladiator's Scaled Helm
+										i(148046),	-- Fierce Gladiator's Scaled Shoulders
+										i(147922),	-- Fierce Gladiator's Greatcloak of Faith
+										i(148050),	-- Fierce Gladiator's Scaled Wristplates
+										i(148039),	-- Fierce Gladiator's Scaled Gauntlets
+										i(148035),	-- Fierce Gladiator's Scaled Breastplate
+										i(148048),	-- Fierce Gladiator's Scaled Girdle
+										i(148043),	-- Fierce Gladiator's Scaled Legguards
+										i(148037),	-- Fierce Gladiator's Scaled Sabatons
+									}),
+								},
 							}),
 						},
 					}),
@@ -4449,299 +4448,298 @@ _.Zones =
 						i(44820),	-- Red Ribbon Pet Leash Toy
 					}),
 					na(119484, { -- Captain Roberts <Legion Elite Gladiator>
+						["itemID"] = 137642,	-- Mark of Honor
 						["coord"] = { 29.6, 74.8, 625 },
 						["g"] = {
-							i(137642, {	-- Mark of Honor
-								un(14, i(147778)),	-- Enchanter's Illusion - Demonic Tyranny
-								i(139775),	-- Alliance Enthusiast
-								i(142379),	-- Dutiful Squire
-								un(14, i(147337)),	-- Cruel Gladiator's Tabard [Elite Rating]
-								un(14, i(147360)),	-- Cruel Gladiator's Cloak [Elite Rating]
-								un(14, i(147339)),	-- Ferocious Gladiator's Tabard [Elite Rating]
-								un(14, i(147364)),	-- Ferocious Gladiator's Cloak [Elite Rating]
-								un(14, i(149443)),	-- Fierce Gladiator's Tabard [Elite Rating]
-								un(14, i(149445)),	-- Fierce Gladiator's Cloak [Elite Rating]
-								un(14, i(149447)),	-- Dominant Gladiator's Tabard [Elite Rating]
-								un(14, i(149449)),	-- Dominant Gladiator's Cloak [Elite Rating]
-								un(14, i(149451)),	-- Demonic Gladiator's Tabard [Elite Rating]
-								un(14, i(149453)),	-- Demonic Gladiator's Cloak [Elite Rating]
-								gssh(1391, { -- Elite
-									["groups"] = {
-										-- Legion { Legion Season 1 & 2
-										i(146236, { -- Vindictive Gladiator's Satin Armor		
-											i(136093),	-- Vindictive Gladiator's Satin Hood
-											i(136096),	-- Vindictive Gladiator's Satin Mantle
-											i(136873),	-- Vindictive Gladiator's Drape of Piety
-											i(136095),	-- Vindictive Gladiator's Satin Robe
-											i(136098),	-- Vindictive Gladiator's Satin Bracers
-											i(136092),	-- Vindictive Gladiator's Satin Gloves
-											i(136097),	-- Vindictive Gladiator's Satin Cord
-											i(136094),	-- Vindictive Gladiator's Satin Leggings
-											i(136091),	-- Vindictive Gladiator's Satin Treads
-										}),		
-										i(146234, { -- Vindictive Gladiator's Silk Armor		
-											i(136069),	-- Vindictive Gladiator's Silk Cowl
-											i(136072),	-- Vindictive Gladiator's Silk Amice
-											i(136132),	-- Vindictive Gladiator's Silken Shawl
-											i(136071),	-- Vindictive Gladiator's Silk Robe
-											i(136074),	-- Vindictive Gladiator's Silk Bracers
-											i(136068),	-- Vindictive Gladiator's Silk Handguards
-											i(136073),	-- Vindictive Gladiator's Silk Cord
-											i(136070),	-- Vindictive Gladiator's Silk Trousers
-											i(136067),	-- Vindictive Gladiator's Silk Treads
-										}),		
-										i(146238, { -- Vindictive Gladiator's Felweave Armor		
-											i(136117),	-- Vindictive Gladiator's Felweave Cowl
-											i(136120),	-- Vindictive Gladiator's Felweave Amice
-											i(136883),	-- Vindictive Gladiator's Felweave Cloak
-											i(136119),	-- Vindictive Gladiator's Felweave Raiment
-											i(136122),	-- Vindictive Gladiator's Felweave Bracers
-											i(136116),	-- Vindictive Gladiator's Felweave Handguards
-											i(136121),	-- Vindictive Gladiator's Felweave Cord
-											i(136118),	-- Vindictive Gladiator's Felweave Trousers
-											i(136115),	-- Vindictive Gladiator's Felweave Treads
-										}),		
-										i(146228, { -- Vindictive Gladiator's Dragonhide Armor		
-											i(136053),	-- Vindictive Gladiator's Dragonhide Helm
-											i(136056),	-- Vindictive Gladiator's Dragonhide Spaulders
-											i(136135),	-- Vindictive Gladiator's Dragonhide Cloak
-											i(136055),	-- Vindictive Gladiator's Dragonhide Robe
-											i(136058),	-- Vindictive Gladiator's Dragonhide Wristguards
-											i(136052),	-- Vindictive Gladiator's Dragonhide Gloves
-											i(136057),	-- Vindictive Gladiator's Dragonhide Belt
-											i(136054),	-- Vindictive Gladiator's Dragonhide Legguards
-											i(136051),	-- Vindictive Gladiator's Dragonhide Moccasins
-										}),		
-										i(146232, { -- Vindictive Gladiator's Leather Armor		
-											i(136102),	-- Vindictive Gladiator's Leather Helm
-											i(136104),	-- Vindictive Gladiator's Leather Spaulders
-											i(136874),	-- Vindictive Gladiator's Shadowcape
-											i(136099),	-- Vindictive Gladiator's Leather Tunic
-											i(136106),	-- Vindictive Gladiator's Leather Wristguards
-											i(136101),	-- Vindictive Gladiator's Leather Gloves
-											i(136105),	-- Vindictive Gladiator's Leather Belt
-											i(136103),	-- Vindictive Gladiator's Leather Legguards
-											i(136100),	-- Vindictive Gladiator's Leather Slippers
-										}),		
-										i(146230, { -- Vindictive Gladiator's Ironskin Armor		
-											i(136077),	-- Vindictive Gladiator's Ironskin Helm
-											i(136079),	-- Vindictive Gladiator's Ironskin Spaulders
-											i(136136),	-- Vindictive Gladiator's Ironskin Cloak
-											i(136080),	-- Vindictive Gladiator's Ironskin Tunic
-											i(136082),	-- Vindictive Gladiator's Ironskin Wristguards
-											i(136076),	-- Vindictive Gladiator's Ironskin Gloves
-											i(136081),	-- Vindictive Gladiator's Ironskin Belt
-											i(136078),	-- Vindictive Gladiator's Ironskin Legguards
-											i(136075),	-- Vindictive Gladiator's Ironskin Slippers
-										}),		
-										i(146270, { -- Vindictive Gladiator's Felskin Armor		
-											["groups"] = {
-												i(136313),	-- Vindictive Gladiator's Felskin Helm
-												i(136316),	-- Vindictive Gladiator's Felskin Spaulders
-												i(136895),	-- Vindictive Gladiator's Demonthread Cloak
-												i(136315),	-- Vindictive Gladiator's Felskin Tunic
-												i(136318),	-- Vindictive Gladiator's Felskin Wristguards
-												i(136312),	-- Vindictive Gladiator's Felskin Gloves
-												i(136317),	-- Vindictive Gladiator's Felskin Belt
-												i(136314),	-- Vindictive Gladiator's Felskin Legguards
-												i(136311),	-- Vindictive Gladiator's Felskin Boots
-											},
-											["classes"] = { 12 },
-										}),		
-										i(146226, { -- Vindictive Gladiator's Chain Armor		
-											i(136062),	-- Vindictive Gladiator's Chain Helm
-											i(136064),	-- Vindictive Gladiator's Chain Spaulders
-											i(136139),	-- Vindictive Gladiator's Drape of the Tracker
-											i(136059),	-- Vindictive Gladiator's Chain Armor
-											i(136066),	-- Vindictive Gladiator's Chain Armband
-											i(136061),	-- Vindictive Gladiator's Chain Gauntlets
-											i(136065),	-- Vindictive Gladiator's Chain Clasp
-											i(136063),	-- Vindictive Gladiator's Chain Leggings
-											i(136060),	-- Vindictive Gladiator's Chain Treads
-										}),		
-										i(146224, { -- Vindictive Gladiator's Ringmail Armor		
-											i(136110),	-- Vindictive Gladiator's Ringmail Helm
-											i(136112),	-- Vindictive Gladiator's Ringmail Spaulders
-											i(136875),	-- Vindictive Gladiator's Totemic Cloak
-											i(136107),	-- Vindictive Gladiator's Ringmail Armor
-											i(136114),	-- Vindictive Gladiator's Ringmail Armband
-											i(136109),	-- Vindictive Gladiator's Ringmail Gauntlets
-											i(136113),	-- Vindictive Gladiator's Ringmail Clasp
-											i(136111),	-- Vindictive Gladiator's Ringmail Kilt
-											i(136108),	-- Vindictive Gladiator's Ringmail Boots
-										}),		
-										i(146222, { -- Vindictive Gladiator's Scaled Armor		
-											i(136086),	-- Vindictive Gladiator's Scaled Helm
-											i(136088),	-- Vindictive Gladiator's Scaled Shoulders
-											i(136140),	-- Vindictive Gladiator's Greatcloak of Faith
-											i(136083),	-- Vindictive Gladiator's Scaled Battlerobe
-											i(136090),	-- Vindictive Gladiator's Scaled Wristplates
-											i(136085),	-- Vindictive Gladiator's Scaled Gauntlets
-											i(136089),	-- Vindictive Gladiator's Scaled Girdle
-											i(136087),	-- Vindictive Gladiator's Scaled Legguards
-											i(136084),	-- Vindictive Gladiator's Scaled Sabatons
-										}),		
-										i(146218, { -- Vindictive Gladiator's Plate Armor		
-											i(136126),	-- Vindictive Gladiator's Plate Helm
-											i(136128),	-- Vindictive Gladiator's Plate Shoulders
-											i(136889),	-- Vindictive Gladiator's Cloak of Battle
-											i(136123),	-- Vindictive Gladiator's Plate Chestpiece
-											i(136130),	-- Vindictive Gladiator's Plate Wristplates
-											i(136125),	-- Vindictive Gladiator's Plate Gauntlets
-											i(136129),	-- Vindictive Gladiator's Plate Girdle
-											i(136127),	-- Vindictive Gladiator's Plate Legguards
-											i(136124),	-- Vindictive Gladiator's Plate Warboots
-										}),		
-										i(146220, { -- Vindictive Gladiator's Dreadplate Armor		
-											i(136046),	-- Vindictive Gladiator's Dreadplate Helm
-											i(136048),	-- Vindictive Gladiator's Dreadplate Shoulders
-											i(136131),	-- Vindictive Gladiator's Dreadcloak
-											i(136043),	-- Vindictive Gladiator's Dreadplate Chestpiece
-											i(136050),	-- Vindictive Gladiator's Dreadplate Wristplates
-											i(136045),	-- Vindictive Gladiator's Dreadplate Gauntlets
-											i(136049),	-- Vindictive Gladiator's Dreadplate Girdle
-											i(136047),	-- Vindictive Gladiator's Dreadplate Legguards
-											i(136044),	-- Vindictive Gladiator's Dreadplate Sabatons
-										}),			
-										-- LEGION 3 & 4
-										i(147640, { -- Cruel Gladiator's Satin Armor		
-											i(144926),	-- Cruel Gladiator's Satin Hood
-											i(144932),	-- Cruel Gladiator's Satin Mantle
-											i(144794),	-- Cruel Gladiator's Drape of Piety
-											i(144930),	-- Cruel Gladiator's Satin Robe
-											i(144936),	-- Cruel Gladiator's Satin Bracers
-											i(144924),	-- Cruel Gladiator's Satin Gloves
-											i(144934),	-- Cruel Gladiator's Satin Cord
-											i(144928),	-- Cruel Gladiator's Satin Leggings
-											i(144922),	-- Cruel Gladiator's Satin Treads
-										}),		
-										i(147644, { -- Cruel Gladiator's Silk Armor		
-											i(144872),	-- Cruel Gladiator's Silk Cowl
-											i(144878),	-- Cruel Gladiator's Silk Amice
-											i(144788),	-- Cruel Gladiator's Silken Shawl
-											i(144876),	-- Cruel Gladiator's Silk Robe
-											i(144882),	-- Cruel Gladiator's Silk Bracers
-											i(144870),	-- Cruel Gladiator's Silk Handguards
-											i(144880),	-- Cruel Gladiator's Silk Cord
-											i(144874),	-- Cruel Gladiator's Silk Trousers
-											i(144868),	-- Cruel Gladiator's Silk Treads
-										}),		
-										i(147629, { -- Cruel Gladiator's Felweave Armor		
-											i(144998),	-- Cruel Gladiator's Felweave Cowl
-											i(145004),	-- Cruel Gladiator's Felweave Amice
-											i(144800),	-- Cruel Gladiator's Felweave Cloak
-											i(145002),	-- Cruel Gladiator's Felweave Raiment
-											i(145008),	-- Cruel Gladiator's Felweave Bracers
-											i(144996),	-- Cruel Gladiator's Felweave Handguards
-											i(145006),	-- Cruel Gladiator's Felweave Cord
-											i(145000),	-- Cruel Gladiator's Felweave Trousers
-											i(144994),	-- Cruel Gladiator's Felweave Treads
-										}),		
-										i(147623, { -- Cruel Gladiator's Dragonhide Armor		
-											i(144842),	-- Cruel Gladiator's Dragonhide Helm
-											i(144846),	-- Cruel Gladiator's Dragonhide Spaulders
-											i(144784),	-- Cruel Gladiator's Dragonhide Cloak
-											i(144836),	-- Cruel Gladiator's Dragonhide Robe
-											i(144850),	-- Cruel Gladiator's Dragonhide Wristguards
-											i(144840),	-- Cruel Gladiator's Dragonhide Gloves
-											i(144848),	-- Cruel Gladiator's Dragonhide Belt
-											i(144844),	-- Cruel Gladiator's Dragonhide Legguards
-											i(144838),	-- Cruel Gladiator's Dragonhide Moccasins
-										}),		
-										i(147634, { -- Cruel Gladiator's Leather Armor		
-											i(144950),	-- Cruel Gladiator's Leather Helm
-											i(144954),	-- Cruel Gladiator's Leather Spaulders
-											i(144796),	-- Cruel Gladiator's Shadowcape
-											i(144944),	-- Cruel Gladiator's Leather Tunic
-											i(144958),	-- Cruel Gladiator's Leather Wristguards
-											i(144948),	-- Cruel Gladiator's Leather Gloves
-											i(144956),	-- Cruel Gladiator's Leather Belt
-											i(144952),	-- Cruel Gladiator's Leather Legguards
-											i(144946),	-- Cruel Gladiator's Leather Slippers
-										}),		
-										i(147632, { -- Cruel Gladiator's Ironskin Armor		
-											i(144888),	-- Cruel Gladiator's Ironskin Helm
-											i(144892),	-- Cruel Gladiator's Ironskin Spaulders
-											i(144790),	-- Cruel Gladiator's Ironskin Cloak
-											i(144894),	-- Cruel Gladiator's Ironskin Tunic
-											i(144898),	-- Cruel Gladiator's Ironskin Wristguards
-											i(144886),	-- Cruel Gladiator's Ironskin Gloves
-											i(144896),	-- Cruel Gladiator's Ironskin Belt
-											i(144890),	-- Cruel Gladiator's Ironskin Legguards
-											i(144884),	-- Cruel Gladiator's Ironskin Slippers
-										}),		
-										i(147627, { -- Cruel Gladiator's Felskin Armor
-											["groups"] = {
-												i(144826),	-- Cruel Gladiator's Felskin Helm
-												i(144830),	-- Cruel Gladiator's Felskin Spaulders
-												i(144782),	-- Cruel Gladiator's Demonthread Cloak
-												i(144820),	-- Cruel Gladiator's Felskin Tunic
-												i(144834),	-- Cruel Gladiator's Felskin Wristguards
-												i(144824),	-- Cruel Gladiator's Felskin Gloves
-												i(144832),	-- Cruel Gladiator's Felskin Belt
-												i(144828),	-- Cruel Gladiator's Felskin Legguards
-												i(144822),	-- Cruel Gladiator's Felskin Boots
-											},
-											["classes"] = { 12 },
-										}),		
-										i(147621, { -- Cruel Gladiator's Chain Armor		
-											i(144858),	-- Cruel Gladiator's Chain Helm
-											i(144862),	-- Cruel Gladiator's Chain Spaulders
-											i(144786),	-- Cruel Gladiator's Drape of the Tracker
-											i(144852),	-- Cruel Gladiator's Chain Armor
-											i(144866),	-- Cruel Gladiator's Chain Armband
-											i(144856),	-- Cruel Gladiator's Chain Gauntlets
-											i(144864),	-- Cruel Gladiator's Chain Clasp
-											i(144860),	-- Cruel Gladiator's Chain Leggings
-											i(144854),	-- Cruel Gladiator's Chain Treads
-										}),		
-										i(147637, { -- Cruel Gladiator's Ringmail Armor		
-											i(144966),	-- Cruel Gladiator's Ringmail Helm
-											i(144970),	-- Cruel Gladiator's Ringmail Spaulders
-											i(144798),	-- Cruel Gladiator's Totemic Cloak
-											i(144960),	-- Cruel Gladiator's Ringmail Armor
-											i(144974),	-- Cruel Gladiator's Ringmail Armband
-											i(144964),	-- Cruel Gladiator's Ringmail Gauntlets
-											i(144972),	-- Cruel Gladiator's Ringmail Clasp
-											i(144968),	-- Cruel Gladiator's Ringmail Kilt
-											i(144962),	-- Cruel Gladiator's Ringmail Boots
-										}),		
-										i(147642, { -- Cruel Gladiator's Scaled Armor		
-											i(144912),	-- Cruel Gladiator's Scaled Helm
-											i(144916),	-- Cruel Gladiator's Scaled Shoulders
-											i(144792),	-- Cruel Gladiator's Greatcloak of Faith
-											i(144906),	-- Cruel Gladiator's Scaled Breastplate
-											i(144920),	-- Cruel Gladiator's Scaled Wristplates
-											i(144910),	-- Cruel Gladiator's Scaled Gauntlets
-											i(144918),	-- Cruel Gladiator's Scaled Girdle
-											i(144914),	-- Cruel Gladiator's Scaled Legguards
-											i(144908),	-- Cruel Gladiator's Scaled Sabatons
-										}),		
-										i(147636, { -- Cruel Gladiator's Plate Armor		
-											i(145016),	-- Cruel Gladiator's Plate Helm
-											i(145020),	-- Cruel Gladiator's Plate Shoulders
-											i(144802),	-- Cruel Gladiator's Cloak of Battle
-											i(145010),	-- Cruel Gladiator's Plate Chestpiece
-											i(145024),	-- Cruel Gladiator's Plate Wristplates
-											i(145014),	-- Cruel Gladiator's Plate Gauntlets
-											i(145022),	-- Cruel Gladiator's Plate Girdle
-											i(145018),	-- Cruel Gladiator's Plate Legguards
-											i(145012),	-- Cruel Gladiator's Plate Warboots
-										}),		
-										i(147625, { -- Cruel Gladiator's Dreadplate Armor		
-											i(144810),	-- Cruel Gladiator's Dreadplate Helm
-											i(144814),	-- Cruel Gladiator's Dreadplate Shoulders
-											i(144780),	-- Cruel Gladiator's Dreadcloak
-											i(144804),	-- Cruel Gladiator's Dreadplate Chestpiece
-											i(144818),	-- Cruel Gladiator's Dreadplate Wristplates
-											i(144808),	-- Cruel Gladiator's Dreadplate Gauntlets
-											i(144816),	-- Cruel Gladiator's Dreadplate Girdle
-											i(144812),	-- Cruel Gladiator's Dreadplate Legguards
-											i(144806),	-- Cruel Gladiator's Dreadplate Sabatons
-										}),		
-									},
-									["icon"] = "Interface\\Worldmap\\GlowSkull_64Red",	-- Red
-								}),
+							un(14, i(147778)),	-- Enchanter's Illusion - Demonic Tyranny
+							i(139775),	-- Alliance Enthusiast
+							i(142379),	-- Dutiful Squire
+							un(14, i(147337)),	-- Cruel Gladiator's Tabard [Elite Rating]
+							un(14, i(147360)),	-- Cruel Gladiator's Cloak [Elite Rating]
+							un(14, i(147339)),	-- Ferocious Gladiator's Tabard [Elite Rating]
+							un(14, i(147364)),	-- Ferocious Gladiator's Cloak [Elite Rating]
+							un(14, i(149443)),	-- Fierce Gladiator's Tabard [Elite Rating]
+							un(14, i(149445)),	-- Fierce Gladiator's Cloak [Elite Rating]
+							un(14, i(149447)),	-- Dominant Gladiator's Tabard [Elite Rating]
+							un(14, i(149449)),	-- Dominant Gladiator's Cloak [Elite Rating]
+							un(14, i(149451)),	-- Demonic Gladiator's Tabard [Elite Rating]
+							un(14, i(149453)),	-- Demonic Gladiator's Cloak [Elite Rating]
+							gssh(1391, { -- Elite
+								["icon"] = "Interface\\Worldmap\\GlowSkull_64Red",	-- Red
+								["g"] = {
+									-- Legion { Legion Season 1 & 2
+									i(146236, { -- Vindictive Gladiator's Satin Armor		
+										i(136093),	-- Vindictive Gladiator's Satin Hood
+										i(136096),	-- Vindictive Gladiator's Satin Mantle
+										i(136873),	-- Vindictive Gladiator's Drape of Piety
+										i(136095),	-- Vindictive Gladiator's Satin Robe
+										i(136098),	-- Vindictive Gladiator's Satin Bracers
+										i(136092),	-- Vindictive Gladiator's Satin Gloves
+										i(136097),	-- Vindictive Gladiator's Satin Cord
+										i(136094),	-- Vindictive Gladiator's Satin Leggings
+										i(136091),	-- Vindictive Gladiator's Satin Treads
+									}),		
+									i(146234, { -- Vindictive Gladiator's Silk Armor		
+										i(136069),	-- Vindictive Gladiator's Silk Cowl
+										i(136072),	-- Vindictive Gladiator's Silk Amice
+										i(136132),	-- Vindictive Gladiator's Silken Shawl
+										i(136071),	-- Vindictive Gladiator's Silk Robe
+										i(136074),	-- Vindictive Gladiator's Silk Bracers
+										i(136068),	-- Vindictive Gladiator's Silk Handguards
+										i(136073),	-- Vindictive Gladiator's Silk Cord
+										i(136070),	-- Vindictive Gladiator's Silk Trousers
+										i(136067),	-- Vindictive Gladiator's Silk Treads
+									}),		
+									i(146238, { -- Vindictive Gladiator's Felweave Armor		
+										i(136117),	-- Vindictive Gladiator's Felweave Cowl
+										i(136120),	-- Vindictive Gladiator's Felweave Amice
+										i(136883),	-- Vindictive Gladiator's Felweave Cloak
+										i(136119),	-- Vindictive Gladiator's Felweave Raiment
+										i(136122),	-- Vindictive Gladiator's Felweave Bracers
+										i(136116),	-- Vindictive Gladiator's Felweave Handguards
+										i(136121),	-- Vindictive Gladiator's Felweave Cord
+										i(136118),	-- Vindictive Gladiator's Felweave Trousers
+										i(136115),	-- Vindictive Gladiator's Felweave Treads
+									}),		
+									i(146228, { -- Vindictive Gladiator's Dragonhide Armor		
+										i(136053),	-- Vindictive Gladiator's Dragonhide Helm
+										i(136056),	-- Vindictive Gladiator's Dragonhide Spaulders
+										i(136135),	-- Vindictive Gladiator's Dragonhide Cloak
+										i(136055),	-- Vindictive Gladiator's Dragonhide Robe
+										i(136058),	-- Vindictive Gladiator's Dragonhide Wristguards
+										i(136052),	-- Vindictive Gladiator's Dragonhide Gloves
+										i(136057),	-- Vindictive Gladiator's Dragonhide Belt
+										i(136054),	-- Vindictive Gladiator's Dragonhide Legguards
+										i(136051),	-- Vindictive Gladiator's Dragonhide Moccasins
+									}),		
+									i(146232, { -- Vindictive Gladiator's Leather Armor		
+										i(136102),	-- Vindictive Gladiator's Leather Helm
+										i(136104),	-- Vindictive Gladiator's Leather Spaulders
+										i(136874),	-- Vindictive Gladiator's Shadowcape
+										i(136099),	-- Vindictive Gladiator's Leather Tunic
+										i(136106),	-- Vindictive Gladiator's Leather Wristguards
+										i(136101),	-- Vindictive Gladiator's Leather Gloves
+										i(136105),	-- Vindictive Gladiator's Leather Belt
+										i(136103),	-- Vindictive Gladiator's Leather Legguards
+										i(136100),	-- Vindictive Gladiator's Leather Slippers
+									}),		
+									i(146230, { -- Vindictive Gladiator's Ironskin Armor		
+										i(136077),	-- Vindictive Gladiator's Ironskin Helm
+										i(136079),	-- Vindictive Gladiator's Ironskin Spaulders
+										i(136136),	-- Vindictive Gladiator's Ironskin Cloak
+										i(136080),	-- Vindictive Gladiator's Ironskin Tunic
+										i(136082),	-- Vindictive Gladiator's Ironskin Wristguards
+										i(136076),	-- Vindictive Gladiator's Ironskin Gloves
+										i(136081),	-- Vindictive Gladiator's Ironskin Belt
+										i(136078),	-- Vindictive Gladiator's Ironskin Legguards
+										i(136075),	-- Vindictive Gladiator's Ironskin Slippers
+									}),		
+									i(146270, { -- Vindictive Gladiator's Felskin Armor		
+										["groups"] = {
+											i(136313),	-- Vindictive Gladiator's Felskin Helm
+											i(136316),	-- Vindictive Gladiator's Felskin Spaulders
+											i(136895),	-- Vindictive Gladiator's Demonthread Cloak
+											i(136315),	-- Vindictive Gladiator's Felskin Tunic
+											i(136318),	-- Vindictive Gladiator's Felskin Wristguards
+											i(136312),	-- Vindictive Gladiator's Felskin Gloves
+											i(136317),	-- Vindictive Gladiator's Felskin Belt
+											i(136314),	-- Vindictive Gladiator's Felskin Legguards
+											i(136311),	-- Vindictive Gladiator's Felskin Boots
+										},
+										["classes"] = { 12 },
+									}),		
+									i(146226, { -- Vindictive Gladiator's Chain Armor		
+										i(136062),	-- Vindictive Gladiator's Chain Helm
+										i(136064),	-- Vindictive Gladiator's Chain Spaulders
+										i(136139),	-- Vindictive Gladiator's Drape of the Tracker
+										i(136059),	-- Vindictive Gladiator's Chain Armor
+										i(136066),	-- Vindictive Gladiator's Chain Armband
+										i(136061),	-- Vindictive Gladiator's Chain Gauntlets
+										i(136065),	-- Vindictive Gladiator's Chain Clasp
+										i(136063),	-- Vindictive Gladiator's Chain Leggings
+										i(136060),	-- Vindictive Gladiator's Chain Treads
+									}),		
+									i(146224, { -- Vindictive Gladiator's Ringmail Armor		
+										i(136110),	-- Vindictive Gladiator's Ringmail Helm
+										i(136112),	-- Vindictive Gladiator's Ringmail Spaulders
+										i(136875),	-- Vindictive Gladiator's Totemic Cloak
+										i(136107),	-- Vindictive Gladiator's Ringmail Armor
+										i(136114),	-- Vindictive Gladiator's Ringmail Armband
+										i(136109),	-- Vindictive Gladiator's Ringmail Gauntlets
+										i(136113),	-- Vindictive Gladiator's Ringmail Clasp
+										i(136111),	-- Vindictive Gladiator's Ringmail Kilt
+										i(136108),	-- Vindictive Gladiator's Ringmail Boots
+									}),		
+									i(146222, { -- Vindictive Gladiator's Scaled Armor		
+										i(136086),	-- Vindictive Gladiator's Scaled Helm
+										i(136088),	-- Vindictive Gladiator's Scaled Shoulders
+										i(136140),	-- Vindictive Gladiator's Greatcloak of Faith
+										i(136083),	-- Vindictive Gladiator's Scaled Battlerobe
+										i(136090),	-- Vindictive Gladiator's Scaled Wristplates
+										i(136085),	-- Vindictive Gladiator's Scaled Gauntlets
+										i(136089),	-- Vindictive Gladiator's Scaled Girdle
+										i(136087),	-- Vindictive Gladiator's Scaled Legguards
+										i(136084),	-- Vindictive Gladiator's Scaled Sabatons
+									}),		
+									i(146218, { -- Vindictive Gladiator's Plate Armor		
+										i(136126),	-- Vindictive Gladiator's Plate Helm
+										i(136128),	-- Vindictive Gladiator's Plate Shoulders
+										i(136889),	-- Vindictive Gladiator's Cloak of Battle
+										i(136123),	-- Vindictive Gladiator's Plate Chestpiece
+										i(136130),	-- Vindictive Gladiator's Plate Wristplates
+										i(136125),	-- Vindictive Gladiator's Plate Gauntlets
+										i(136129),	-- Vindictive Gladiator's Plate Girdle
+										i(136127),	-- Vindictive Gladiator's Plate Legguards
+										i(136124),	-- Vindictive Gladiator's Plate Warboots
+									}),		
+									i(146220, { -- Vindictive Gladiator's Dreadplate Armor		
+										i(136046),	-- Vindictive Gladiator's Dreadplate Helm
+										i(136048),	-- Vindictive Gladiator's Dreadplate Shoulders
+										i(136131),	-- Vindictive Gladiator's Dreadcloak
+										i(136043),	-- Vindictive Gladiator's Dreadplate Chestpiece
+										i(136050),	-- Vindictive Gladiator's Dreadplate Wristplates
+										i(136045),	-- Vindictive Gladiator's Dreadplate Gauntlets
+										i(136049),	-- Vindictive Gladiator's Dreadplate Girdle
+										i(136047),	-- Vindictive Gladiator's Dreadplate Legguards
+										i(136044),	-- Vindictive Gladiator's Dreadplate Sabatons
+									}),			
+									-- LEGION 3 & 4
+									i(147640, { -- Cruel Gladiator's Satin Armor		
+										i(144926),	-- Cruel Gladiator's Satin Hood
+										i(144932),	-- Cruel Gladiator's Satin Mantle
+										i(144794),	-- Cruel Gladiator's Drape of Piety
+										i(144930),	-- Cruel Gladiator's Satin Robe
+										i(144936),	-- Cruel Gladiator's Satin Bracers
+										i(144924),	-- Cruel Gladiator's Satin Gloves
+										i(144934),	-- Cruel Gladiator's Satin Cord
+										i(144928),	-- Cruel Gladiator's Satin Leggings
+										i(144922),	-- Cruel Gladiator's Satin Treads
+									}),		
+									i(147644, { -- Cruel Gladiator's Silk Armor		
+										i(144872),	-- Cruel Gladiator's Silk Cowl
+										i(144878),	-- Cruel Gladiator's Silk Amice
+										i(144788),	-- Cruel Gladiator's Silken Shawl
+										i(144876),	-- Cruel Gladiator's Silk Robe
+										i(144882),	-- Cruel Gladiator's Silk Bracers
+										i(144870),	-- Cruel Gladiator's Silk Handguards
+										i(144880),	-- Cruel Gladiator's Silk Cord
+										i(144874),	-- Cruel Gladiator's Silk Trousers
+										i(144868),	-- Cruel Gladiator's Silk Treads
+									}),		
+									i(147629, { -- Cruel Gladiator's Felweave Armor		
+										i(144998),	-- Cruel Gladiator's Felweave Cowl
+										i(145004),	-- Cruel Gladiator's Felweave Amice
+										i(144800),	-- Cruel Gladiator's Felweave Cloak
+										i(145002),	-- Cruel Gladiator's Felweave Raiment
+										i(145008),	-- Cruel Gladiator's Felweave Bracers
+										i(144996),	-- Cruel Gladiator's Felweave Handguards
+										i(145006),	-- Cruel Gladiator's Felweave Cord
+										i(145000),	-- Cruel Gladiator's Felweave Trousers
+										i(144994),	-- Cruel Gladiator's Felweave Treads
+									}),		
+									i(147623, { -- Cruel Gladiator's Dragonhide Armor		
+										i(144842),	-- Cruel Gladiator's Dragonhide Helm
+										i(144846),	-- Cruel Gladiator's Dragonhide Spaulders
+										i(144784),	-- Cruel Gladiator's Dragonhide Cloak
+										i(144836),	-- Cruel Gladiator's Dragonhide Robe
+										i(144850),	-- Cruel Gladiator's Dragonhide Wristguards
+										i(144840),	-- Cruel Gladiator's Dragonhide Gloves
+										i(144848),	-- Cruel Gladiator's Dragonhide Belt
+										i(144844),	-- Cruel Gladiator's Dragonhide Legguards
+										i(144838),	-- Cruel Gladiator's Dragonhide Moccasins
+									}),		
+									i(147634, { -- Cruel Gladiator's Leather Armor		
+										i(144950),	-- Cruel Gladiator's Leather Helm
+										i(144954),	-- Cruel Gladiator's Leather Spaulders
+										i(144796),	-- Cruel Gladiator's Shadowcape
+										i(144944),	-- Cruel Gladiator's Leather Tunic
+										i(144958),	-- Cruel Gladiator's Leather Wristguards
+										i(144948),	-- Cruel Gladiator's Leather Gloves
+										i(144956),	-- Cruel Gladiator's Leather Belt
+										i(144952),	-- Cruel Gladiator's Leather Legguards
+										i(144946),	-- Cruel Gladiator's Leather Slippers
+									}),		
+									i(147632, { -- Cruel Gladiator's Ironskin Armor		
+										i(144888),	-- Cruel Gladiator's Ironskin Helm
+										i(144892),	-- Cruel Gladiator's Ironskin Spaulders
+										i(144790),	-- Cruel Gladiator's Ironskin Cloak
+										i(144894),	-- Cruel Gladiator's Ironskin Tunic
+										i(144898),	-- Cruel Gladiator's Ironskin Wristguards
+										i(144886),	-- Cruel Gladiator's Ironskin Gloves
+										i(144896),	-- Cruel Gladiator's Ironskin Belt
+										i(144890),	-- Cruel Gladiator's Ironskin Legguards
+										i(144884),	-- Cruel Gladiator's Ironskin Slippers
+									}),		
+									i(147627, { -- Cruel Gladiator's Felskin Armor
+										["groups"] = {
+											i(144826),	-- Cruel Gladiator's Felskin Helm
+											i(144830),	-- Cruel Gladiator's Felskin Spaulders
+											i(144782),	-- Cruel Gladiator's Demonthread Cloak
+											i(144820),	-- Cruel Gladiator's Felskin Tunic
+											i(144834),	-- Cruel Gladiator's Felskin Wristguards
+											i(144824),	-- Cruel Gladiator's Felskin Gloves
+											i(144832),	-- Cruel Gladiator's Felskin Belt
+											i(144828),	-- Cruel Gladiator's Felskin Legguards
+											i(144822),	-- Cruel Gladiator's Felskin Boots
+										},
+										["classes"] = { 12 },
+									}),		
+									i(147621, { -- Cruel Gladiator's Chain Armor		
+										i(144858),	-- Cruel Gladiator's Chain Helm
+										i(144862),	-- Cruel Gladiator's Chain Spaulders
+										i(144786),	-- Cruel Gladiator's Drape of the Tracker
+										i(144852),	-- Cruel Gladiator's Chain Armor
+										i(144866),	-- Cruel Gladiator's Chain Armband
+										i(144856),	-- Cruel Gladiator's Chain Gauntlets
+										i(144864),	-- Cruel Gladiator's Chain Clasp
+										i(144860),	-- Cruel Gladiator's Chain Leggings
+										i(144854),	-- Cruel Gladiator's Chain Treads
+									}),		
+									i(147637, { -- Cruel Gladiator's Ringmail Armor		
+										i(144966),	-- Cruel Gladiator's Ringmail Helm
+										i(144970),	-- Cruel Gladiator's Ringmail Spaulders
+										i(144798),	-- Cruel Gladiator's Totemic Cloak
+										i(144960),	-- Cruel Gladiator's Ringmail Armor
+										i(144974),	-- Cruel Gladiator's Ringmail Armband
+										i(144964),	-- Cruel Gladiator's Ringmail Gauntlets
+										i(144972),	-- Cruel Gladiator's Ringmail Clasp
+										i(144968),	-- Cruel Gladiator's Ringmail Kilt
+										i(144962),	-- Cruel Gladiator's Ringmail Boots
+									}),		
+									i(147642, { -- Cruel Gladiator's Scaled Armor		
+										i(144912),	-- Cruel Gladiator's Scaled Helm
+										i(144916),	-- Cruel Gladiator's Scaled Shoulders
+										i(144792),	-- Cruel Gladiator's Greatcloak of Faith
+										i(144906),	-- Cruel Gladiator's Scaled Breastplate
+										i(144920),	-- Cruel Gladiator's Scaled Wristplates
+										i(144910),	-- Cruel Gladiator's Scaled Gauntlets
+										i(144918),	-- Cruel Gladiator's Scaled Girdle
+										i(144914),	-- Cruel Gladiator's Scaled Legguards
+										i(144908),	-- Cruel Gladiator's Scaled Sabatons
+									}),		
+									i(147636, { -- Cruel Gladiator's Plate Armor		
+										i(145016),	-- Cruel Gladiator's Plate Helm
+										i(145020),	-- Cruel Gladiator's Plate Shoulders
+										i(144802),	-- Cruel Gladiator's Cloak of Battle
+										i(145010),	-- Cruel Gladiator's Plate Chestpiece
+										i(145024),	-- Cruel Gladiator's Plate Wristplates
+										i(145014),	-- Cruel Gladiator's Plate Gauntlets
+										i(145022),	-- Cruel Gladiator's Plate Girdle
+										i(145018),	-- Cruel Gladiator's Plate Legguards
+										i(145012),	-- Cruel Gladiator's Plate Warboots
+									}),		
+									i(147625, { -- Cruel Gladiator's Dreadplate Armor		
+										i(144810),	-- Cruel Gladiator's Dreadplate Helm
+										i(144814),	-- Cruel Gladiator's Dreadplate Shoulders
+										i(144780),	-- Cruel Gladiator's Dreadcloak
+										i(144804),	-- Cruel Gladiator's Dreadplate Chestpiece
+										i(144818),	-- Cruel Gladiator's Dreadplate Wristplates
+										i(144808),	-- Cruel Gladiator's Dreadplate Gauntlets
+										i(144816),	-- Cruel Gladiator's Dreadplate Girdle
+										i(144812),	-- Cruel Gladiator's Dreadplate Legguards
+										i(144806),	-- Cruel Gladiator's Dreadplate Sabatons
+									}),		
+								},
 							}),
 						},
 					}),
@@ -5108,575 +5106,574 @@ _.Zones =
 						i(137959),	-- Pattern: Silkweave Slippers [Rank 2]
 					}),
 					na(106930, { -- Lieutenant Surtees <Legion Gladiator>
+						["itemID"] = 137642,	-- Mark of Honor
 						["coord"] = { 29.6, 75.0, 625 },
 						["g"] = {
-							i(137642, {	-- Mark of Honor
-								gssh(1071, { -- Combatant
-									["groups"] = {
-										-- LEGION { Legion Season 1 & 2
-										i(146158, { -- Vindictive Combatant's Satin Armor		
-											i(135867),	-- Vindictive Combatant's Satin Hood
-											i(135870),	-- Vindictive Combatant's Satin Mantle
-											i(136867),	-- Vindictive Combatant's Drape of Piety
-											i(135869),	-- Vindictive Combatant's Satin Tunic
-											i(135872),	-- Vindictive Combatant's Satin Bracers
-											i(135866),	-- Vindictive Combatant's Satin Gloves
-											i(135871),	-- Vindictive Combatant's Satin Cord
-											i(135868),	-- Vindictive Combatant's Satin Leggings
-											i(135865),	-- Vindictive Combatant's Satin Treads
-										}),		
-										i(146156, { -- Vindictive Combatant's Satin Armor		
-											i(135843),	-- Vindictive Combatant's Silk Cowl
-											i(135846),	-- Vindictive Combatant's Silk Amice
-											i(135906),	-- Vindictive Combatant's Silken Shawl
-											i(135845),	-- Vindictive Combatant's Silk Tunic
-											i(135848),	-- Vindictive Combatant's Silk Bracers
-											i(135842),	-- Vindictive Combatant's Silk Handguards
-											i(135847),	-- Vindictive Combatant's Silk Cord
-											i(135844),	-- Vindictive Combatant's Silk Trousers
-											i(135841),	-- Vindictive Combatant's Silk Treads
-										}),		
-										i(146160, { -- Vindictive Combatant's Satin Armor		
-											i(135891),	-- Vindictive Combatant's Felweave Cowl
-											i(135894),	-- Vindictive Combatant's Felweave Amice
-											i(136881),	-- Vindictive Combatant's Felweave Cloak
-											i(135893),	-- Vindictive Combatant's Felweave Tunic
-											i(135896),	-- Vindictive Combatant's Felweave Bracers
-											i(135890),	-- Vindictive Combatant's Felweave Handguards
-											i(135895),	-- Vindictive Combatant's Felweave Cord
-											i(135892),	-- Vindictive Combatant's Felweave Trousers
-											i(135889),	-- Vindictive Combatant's Felweave Treads
-										}),		
-										i(146168, { -- Vindictive Combatant's Satin Armor		
-											i(135827),	-- Vindictive Combatant's Dragonhide Helm
-											i(135830),	-- Vindictive Combatant's Dragonhide Spaulders
-											i(135909),	-- Vindictive Combatant's Dragonhide Cloak
-											i(135829),	-- Vindictive Combatant's Dragonhide Tunic
-											i(135832),	-- Vindictive Combatant's Dragonhide Wristguards
-											i(135826),	-- Vindictive Combatant's Dragonhide Gloves
-											i(135831),	-- Vindictive Combatant's Dragonhide Belt
-											i(135828),	-- Vindictive Combatant's Dragonhide Legguards
-											i(135825),	-- Vindictive Combatant's Dragonhide Moccasins
-										}),		
-										i(146172, { -- Vindictive Combatant's Satin Armor		
-											i(135876),	-- Vindictive Combatant's Leather Helm
-											i(135878),	-- Vindictive Combatant's Leather Spaulders
-											i(136868),	-- Vindictive Combatant's Shadowcape
-											i(135873),	-- Vindictive Combatant's Leather Tunic
-											i(135880),	-- Vindictive Combatant's Leather Wristguards
-											i(135875),	-- Vindictive Combatant's Leather Gloves
-											i(135879),	-- Vindictive Combatant's Leather Belt
-											i(135877),	-- Vindictive Combatant's Leather Legguards
-											i(135874),	-- Vindictive Combatant's Leather Slippers
-										}),		
-										i(146170, { -- Vindictive Combatant's Satin Armor		
-											i(135851),	-- Vindictive Combatant's Ironskin Helm
-											i(135853),	-- Vindictive Combatant's Ironskin Spaulders
-											i(135910),	-- Vindictive Combatant's Ironskin Cloak
-											i(135854),	-- Vindictive Combatant's Ironskin Tunic
-											i(135856),	-- Vindictive Combatant's Ironskin Wristguards
-											i(135850),	-- Vindictive Combatant's Ironskin Gloves
-											i(135855),	-- Vindictive Combatant's Ironskin Belt
-											i(135852),	-- Vindictive Combatant's Ironskin Legguards
-											i(135849),	-- Vindictive Combatant's Ironskin Slippers
-										}),		
-										i(146264, { -- Vindictive Combatant's Satin Armor		
-											["groups"] = {
-												i(136297),	-- Vindictive Combatant's Felskin Helm
-												i(136300),	-- Vindictive Combatant's Felskin Spaulders
-												i(136893),	-- Vindictive Combatant's Demonthread Cloak
-												i(136299),	-- Vindictive Combatant's Felskin Tunic
-												i(136302),	-- Vindictive Combatant's Felskin Wristguards
-												i(136296),	-- Vindictive Combatant's Felskin Gloves
-												i(136301),	-- Vindictive Combatant's Felskin Belt
-												i(136298),	-- Vindictive Combatant's Felskin Legguards
-												i(136295),	-- Vindictive Combatant's Felskin Boots
-											},
-											["classes"] = { 12 },
-										}),		
-										i(146154, { -- Vindictive Combatant's Satin Armor		
-											i(135836),	-- Vindictive Combatant's Chain Helm
-											i(135838),	-- Vindictive Combatant's Chain Spaulders
-											i(135913),	-- Vindictive Combatant's Drape of the Tracker
-											i(135833),	-- Vindictive Combatant's Chain Armor
-											i(135840),	-- Vindictive Combatant's Chain Armband
-											i(135835),	-- Vindictive Combatant's Chain Gauntlets
-											i(135839),	-- Vindictive Combatant's Chain Clasp
-											i(135837),	-- Vindictive Combatant's Chain Leggings
-											i(135834),	-- Vindictive Combatant's Chain Treads
-										}),		
-										i(146152, { -- Vindictive Combatant's Satin Armor		
-											i(135884),	-- Vindictive Combatant's Ringmail Helm
-											i(135886),	-- Vindictive Combatant's Ringmail Spaulders
-											i(136869),	-- Vindictive Combatant's Totemic Cloak
-											i(135881),	-- Vindictive Combatant's Ringmail Armor
-											i(135888),	-- Vindictive Combatant's Ringmail Armband
-											i(135883),	-- Vindictive Combatant's Ringmail Gauntlets
-											i(135887),	-- Vindictive Combatant's Ringmail Clasp
-											i(135885),	-- Vindictive Combatant's Ringmail Kilt
-											i(135882),	-- Vindictive Combatant's Ringmail Boots
-										}),		
-										i(146166, { -- Vindictive Combatant's Satin Armor		
-											i(135860),	-- Vindictive Combatant's Scaled Helm
-											i(135862),	-- Vindictive Combatant's Scaled Shoulders
-											i(135914),	-- Vindictive Combatant's Greatcloak of Faith
-											i(135857),	-- Vindictive Combatant's Scaled Chestpiece
-											i(135864),	-- Vindictive Combatant's Scaled Wristplates
-											i(135859),	-- Vindictive Combatant's Scaled Gauntlets
-											i(135863),	-- Vindictive Combatant's Scaled Girdle
-											i(135861),	-- Vindictive Combatant's Scaled Legguards
-											i(135858),	-- Vindictive Combatant's Scaled Sabatons
-										}),		
-										i(146162, { -- Vindictive Combatant's Satin Armor		
-											i(135900),	-- Vindictive Combatant's Plate Helm
-											i(135902),	-- Vindictive Combatant's Plate Shoulders
-											i(136887),	-- Vindictive Combatant's Cloak of Battle
-											i(135897),	-- Vindictive Combatant's Plate Chestpiece
-											i(135904),	-- Vindictive Combatant's Plate Wristplates
-											i(135899),	-- Vindictive Combatant's Plate Gauntlets
-											i(135903),	-- Vindictive Combatant's Plate Girdle
-											i(135901),	-- Vindictive Combatant's Plate Legguards
-											i(135898),	-- Vindictive Combatant's Plate Warboots
-										}),		
-										i(146164, { -- Vindictive Combatant's Satin Armor		
-											i(135820),	-- Vindictive Combatant's Dreadplate Helm
-											i(135822),	-- Vindictive Combatant's Dreadplate Shoulders
-											i(135905),	-- Vindictive Combatant's Dreadcloak
-											i(135817),	-- Vindictive Combatant's Dreadplate Chestpiece
-											i(135824),	-- Vindictive Combatant's Dreadplate Wristplates
-											i(135819),	-- Vindictive Combatant's Dreadplate Gauntlets
-											i(135823),	-- Vindictive Combatant's Dreadplate Girdle
-											i(135821),	-- Vindictive Combatant's Dreadplate Legguards
-											i(135818),	-- Vindictive Combatant's Dreadplate Sabatons
-										}),	
-										-- LEGION & 4
-										i(147688, { -- Cruel Combatant's Satin Armor		
-											i(145172),	-- Cruel Combatant's Satin Hood
-											i(145178),	-- Cruel Combatant's Satin Mantle
-											i(145040),	-- Cruel Combatant's Drape of Piety
-											i(145176),	-- Cruel Combatant's Satin Robe
-											i(145182),	-- Cruel Combatant's Satin Bracers
-											i(145170),	-- Cruel Combatant's Satin Gloves
-											i(145180),	-- Cruel Combatant's Satin Cord
-											i(145174),	-- Cruel Combatant's Satin Leggings
-											i(145168),	-- Cruel Combatant's Satin Treads
-										}),		
-										i(147696, { -- Cruel Combatant's Silk Armor		
-											i(145118),	-- Cruel Combatant's Silk Cowl
-											i(145124),	-- Cruel Combatant's Silk Amice
-											i(145034),	-- Cruel Combatant's Silken Shawl
-											i(145122),	-- Cruel Combatant's Silk Robe
-											i(145128),	-- Cruel Combatant's Silk Bracers
-											i(145116),	-- Cruel Combatant's Silk Handguards
-											i(145126),	-- Cruel Combatant's Silk Cord
-											i(145120),	-- Cruel Combatant's Silk Trousers
-											i(145114),	-- Cruel Combatant's Silk Treads
-										}),		
-										i(147682, { -- Cruel Combatant's Felweave Armor		
-											i(145244),	-- Cruel Combatant's Felweave Cowl
-											i(145250),	-- Cruel Combatant's Felweave Amice
-											i(145046),	-- Cruel Combatant's Felweave Cloak
-											i(145248),	-- Cruel Combatant's Felweave Raiment
-											i(145254),	-- Cruel Combatant's Felweave Bracers
-											i(145242),	-- Cruel Combatant's Felweave Handguards
-											i(145252),	-- Cruel Combatant's Felweave Cord
-											i(145246),	-- Cruel Combatant's Felweave Trousers
-											i(145240),	-- Cruel Combatant's Felweave Treads
-										}),		
-										i(147675, { -- Cruel Combatant's Dragonhide Armor		
-											i(145088),	-- Cruel Combatant's Dragonhide Helm
-											i(145092),	-- Cruel Combatant's Dragonhide Spaulders
-											i(145030),	-- Cruel Combatant's Dragonhide Cloak
-											i(145082),	-- Cruel Combatant's Dragonhide Tunic
-											i(145096),	-- Cruel Combatant's Dragonhide Wristguards
-											i(145086),	-- Cruel Combatant's Dragonhide Gloves
-											i(145094),	-- Cruel Combatant's Dragonhide Belt
-											i(145090),	-- Cruel Combatant's Dragonhide Legguards
-											i(145084),	-- Cruel Combatant's Dragonhide Moccasins
-										}),		
-										i(147685, { -- Cruel Combatant's Leather Armor		
-											i(145196),	-- Cruel Combatant's Leather Helm
-											i(145200),	-- Cruel Combatant's Leather Spaulders
-											i(145042),	-- Cruel Combatant's Shadowcape
-											i(145190),	-- Cruel Combatant's Leather Tunic
-											i(145204),	-- Cruel Combatant's Leather Wristguards
-											i(145194),	-- Cruel Combatant's Leather Gloves
-											i(145202),	-- Cruel Combatant's Leather Belt
-											i(145198),	-- Cruel Combatant's Leather Legguards
-											i(145192),	-- Cruel Combatant's Leather Slippers
-										}),		
-										i(147684, { -- Cruel Combatant's Ironskin Armor		
-											i(145134),	-- Cruel Combatant's Ironskin Helm
-											i(145138),	-- Cruel Combatant's Ironskin Spaulders
-											i(145036),	-- Cruel Combatant's Ironskin Cloak
-											i(145140),	-- Cruel Combatant's Ironskin Tunic
-											i(145144),	-- Cruel Combatant's Ironskin Wristguards
-											i(145132),	-- Cruel Combatant's Ironskin Gloves
-											i(145142),	-- Cruel Combatant's Ironskin Belt
-											i(145136),	-- Cruel Combatant's Ironskin Legguards
-											i(145130),	-- Cruel Combatant's Ironskin Slippers
-										}),		
-										i(147680, { -- Cruel Combatant's Felskin Armor
-											["groups"] = {
-												i(145072),	-- Cruel Combatant's Felskin Helm
-												i(145076),	-- Cruel Combatant's Felskin Spaulders
-												i(145028),	-- Cruel Combatant's Demonthread Cloak
-												i(145066),	-- Cruel Combatant's Felskin Tunic
-												i(145080),	-- Cruel Combatant's Felskin Wristguards
-												i(145070),	-- Cruel Combatant's Felskin Gloves
-												i(145078),	-- Cruel Combatant's Felskin Belt
-												i(145074),	-- Cruel Combatant's Felskin Legguards
-												i(145068),	-- Cruel Combatant's Felskin Boots
-											},
-											["classes"] = { 12 },
-										}),		
-										i(147689, { -- Cruel Combatant's Chain Armor		
-											i(145104),	-- Cruel Combatant's Chain Helm
-											i(145108),	-- Cruel Combatant's Chain Spaulders
-											i(145032),	-- Cruel Combatant's Drape of the Tracker
-											i(145098),	-- Cruel Combatant's Chain Armor
-											i(145112),	-- Cruel Combatant's Chain Armband
-											i(145102),	-- Cruel Combatant's Chain Gauntlets
-											i(145110),	-- Cruel Combatant's Chain Clasp
-											i(145106),	-- Cruel Combatant's Chain Leggings
-											i(145100),	-- Cruel Combatant's Chain Treads
-										}),		
-										i(147674, { -- Cruel Combatant's Ringmail Armor		
-											i(145212),	-- Cruel Combatant's Ringmail Helm
-											i(145216),	-- Cruel Combatant's Ringmail Spaulders
-											i(145044),	-- Cruel Combatant's Totemic Cloak
-											i(145206),	-- Cruel Combatant's Ringmail Armor
-											i(145220),	-- Cruel Combatant's Ringmail Armband
-											i(145210),	-- Cruel Combatant's Ringmail Gauntlets
-											i(145218),	-- Cruel Combatant's Ringmail Clasp
-											i(145214),	-- Cruel Combatant's Ringmail Kilt
-											i(145208),	-- Cruel Combatant's Ringmail Boots
-										}),		
-										i(147693, { -- Cruel Combatant's Scaled Armor		
-											i(145158),	-- Cruel Combatant's Scaled Helm
-											i(145162),	-- Cruel Combatant's Scaled Shoulders
-											i(145038),	-- Cruel Combatant's Greatcloak of Faith
-											i(145152),	-- Cruel Combatant's Scaled Chestpiece
-											i(145166),	-- Cruel Combatant's Scaled Wristplates
-											i(145156),	-- Cruel Combatant's Scaled Gauntlets
-											i(145164),	-- Cruel Combatant's Scaled Girdle
-											i(145160),	-- Cruel Combatant's Scaled Legguards
-											i(145154),	-- Cruel Combatant's Scaled Sabatons
-										}),		
-										i(147692, { -- Cruel Combatant's Plate Armor		
-											i(145262),	-- Cruel Combatant's Plate Helm
-											i(145266),	-- Cruel Combatant's Plate Shoulders
-											i(145048),	-- Cruel Combatant's Cloak of Battle
-											i(145256),	-- Cruel Combatant's Plate Chestpiece
-											i(145270),	-- Cruel Combatant's Plate Wristplates
-											i(145260),	-- Cruel Combatant's Plate Gauntlets
-											i(145268),	-- Cruel Combatant's Plate Girdle
-											i(145264),	-- Cruel Combatant's Plate Legguards
-											i(145258),	-- Cruel Combatant's Plate Warboots
-										}),		
-										i(147677, { -- Cruel Combatant's Dreadplate Armor		
-											i(145056),	-- Cruel Combatant's Dreadplate Helm
-											i(145060),	-- Cruel Combatant's Dreadplate Shoulders
-											i(145026),	-- Cruel Combatant's Dreadcloak
-											i(145050),	-- Cruel Combatant's Dreadplate Chestpiece
-											i(145064),	-- Cruel Combatant's Dreadplate Wristplates
-											i(145054),	-- Cruel Combatant's Dreadplate Gauntlets
-											i(145062),	-- Cruel Combatant's Dreadplate Girdle
-											i(145058),	-- Cruel Combatant's Dreadplate Legguards
-											i(145052),	-- Cruel Combatant's Dreadplate Sabatons
-										}),		
-									},
-									["icon"] = "Interface\\Worldmap\\GlowSkull_64Purple",	-- Purple
-								}),
-								gssh(1414, { -- Gladiator
-									["groups"] = {
-										-- LEGION { Legion Season 1 & 2
-										i(146148, { -- Vindictive Gladiator's Satin Armor		
-											i(135641),	-- Vindictive Gladiator's Satin Hood
-											i(135644),	-- Vindictive Gladiator's Satin Mantle
-											i(136861),	-- Vindictive Gladiator's Drape of Piety
-											i(135643),	-- Vindictive Gladiator's Satin Robe
-											i(135646),	-- Vindictive Gladiator's Satin Bracers
-											i(135640),	-- Vindictive Gladiator's Satin Gloves
-											i(135645),	-- Vindictive Gladiator's Satin Cord
-											i(135642),	-- Vindictive Gladiator's Satin Leggings
-											i(135639),	-- Vindictive Gladiator's Satin Treads
-										}),		
-										i(146146, { -- Vindictive Gladiator's Silk Armor		
-											i(135617),	-- Vindictive Gladiator's Silk Cowl
-											i(135620),	-- Vindictive Gladiator's Silk Amice
-											i(135684),	-- Vindictive Gladiator's Silken Shawl
-											i(135619),	-- Vindictive Gladiator's Silk Robe
-											i(135622),	-- Vindictive Gladiator's Silk Bracers
-											i(135616),	-- Vindictive Gladiator's Silk Handguards
-											i(135621),	-- Vindictive Gladiator's Silk Cord
-											i(135618),	-- Vindictive Gladiator's Silk Trousers
-											i(135615),	-- Vindictive Gladiator's Silk Treads
-										}),		
-										i(146150, { -- Vindictive Gladiator's Satin Armor		
-											i(135665),	-- Vindictive Gladiator's Felweave Cowl
-											i(135668),	-- Vindictive Gladiator's Felweave Amice
-											i(136879),	-- Vindictive Gladiator's Felweave Cloak
-											i(135667),	-- Vindictive Gladiator's Felweave Raiment
-											i(135670),	-- Vindictive Gladiator's Felweave Bracers
-											i(135664),	-- Vindictive Gladiator's Felweave Handguards
-											i(135669),	-- Vindictive Gladiator's Felweave Cord
-											i(135666),	-- Vindictive Gladiator's Felweave Trousers
-											i(135663),	-- Vindictive Gladiator's Felweave Treads
-										}),		
-										i(146140, { -- Vindictive Gladiator's Satin Armor		
-											i(135601),	-- Vindictive Gladiator's Dragonhide Helm
-											i(135604),	-- Vindictive Gladiator's Dragonhide Spaulders
-											i(135680),	-- Vindictive Gladiator's Dragonhide Cloak
-											i(135603),	-- Vindictive Gladiator's Dragonhide Robe
-											i(135606),	-- Vindictive Gladiator's Dragonhide Wristguards
-											i(135600),	-- Vindictive Gladiator's Dragonhide Gloves
-											i(135605),	-- Vindictive Gladiator's Dragonhide Belt
-											i(135602),	-- Vindictive Gladiator's Dragonhide Legguards
-											i(135599),	-- Vindictive Gladiator's Dragonhide Moccasins
-										}),		
-										i(146144, { -- Vindictive Gladiator's Satin Armor		
-											i(135650),	-- Vindictive Gladiator's Leather Helm
-											i(135652),	-- Vindictive Gladiator's Leather Spaulders
-											i(136862),	-- Vindictive Gladiator's Shadowcape
-											i(135647),	-- Vindictive Gladiator's Leather Tunic
-											i(135654),	-- Vindictive Gladiator's Leather Wristguards
-											i(135649),	-- Vindictive Gladiator's Leather Gloves
-											i(135653),	-- Vindictive Gladiator's Leather Belt
-											i(135651),	-- Vindictive Gladiator's Leather Legguards
-											i(135648),	-- Vindictive Gladiator's Leather Slippers
-										}),		
-										i(146142, { -- Vindictive Gladiator's Satin Armor		
-											i(135625),	-- Vindictive Gladiator's Ironskin Helm
-											i(135627),	-- Vindictive Gladiator's Ironskin Spaulders
-											i(135687),	-- Vindictive Gladiator's Ironskin Cloak
-											i(135628),	-- Vindictive Gladiator's Ironskin Tunic
-											i(135630),	-- Vindictive Gladiator's Ironskin Wristguards
-											i(135624),	-- Vindictive Gladiator's Ironskin Gloves
-											i(135629),	-- Vindictive Gladiator's Ironskin Belt
-											i(135626),	-- Vindictive Gladiator's Ironskin Legguards
-											i(135623),	-- Vindictive Gladiator's Ironskin Slippers
-										}),		
-										i(146262, { -- Vindictive Gladiator's Satin Armor
-											["groups"] = {
-												i(136281),	-- Vindictive Gladiator's Felskin Helm
-												i(136284),	-- Vindictive Gladiator's Felskin Spaulders
-												i(136891),	-- Vindictive Gladiator's Demonthread Cloak
-												i(136283),	-- Vindictive Gladiator's Felskin Tunic
-												i(136286),	-- Vindictive Gladiator's Felskin Wristguards
-												i(136280),	-- Vindictive Gladiator's Felskin Gloves
-												i(136285),	-- Vindictive Gladiator's Felskin Belt
-												i(136282),	-- Vindictive Gladiator's Felskin Legguards
-												i(136279),	-- Vindictive Gladiator's Felskin Boots
-											},
-											["classes"] = { 12 },
-										}),		
-										i(146138, { -- Vindictive Gladiator's Satin Armor		
-											i(135610),	-- Vindictive Gladiator's Chain Helm
-											i(135612),	-- Vindictive Gladiator's Chain Spaulders
-											i(135683),	-- Vindictive Gladiator's Drape of the Tracker
-											i(135607),	-- Vindictive Gladiator's Chain Armor
-											i(135614),	-- Vindictive Gladiator's Chain Armband
-											i(135609),	-- Vindictive Gladiator's Chain Gauntlets
-											i(135613),	-- Vindictive Gladiator's Chain Clasp
-											i(135611),	-- Vindictive Gladiator's Chain Leggings
-											i(135608),	-- Vindictive Gladiator's Chain Treads
-										}),		
-										i(146136, { -- Vindictive Gladiator's Satin Armor		
-											i(135658),	-- Vindictive Gladiator's Ringmail Helm
-											i(135660),	-- Vindictive Gladiator's Ringmail Spaulders
-											i(136863),	-- Vindictive Gladiator's Totemic Cloak
-											i(135655),	-- Vindictive Gladiator's Ringmail Armor
-											i(135662),	-- Vindictive Gladiator's Ringmail Armband
-											i(135657),	-- Vindictive Gladiator's Ringmail Gauntlets
-											i(135661),	-- Vindictive Gladiator's Ringmail Clasp
-											i(135659),	-- Vindictive Gladiator's Ringmail Kilt
-											i(135656),	-- Vindictive Gladiator's Ringmail Boots
-										}),		
-										i(146134, { -- Vindictive Gladiator's Satin Armor		
-											i(135634),	-- Vindictive Gladiator's Scaled Helm
-											i(135636),	-- Vindictive Gladiator's Scaled Shoulders
-											i(135688),	-- Vindictive Gladiator's Greatcloak of Faith
-											i(135631),	-- Vindictive Gladiator's Scaled Battlerobe
-											i(135638),	-- Vindictive Gladiator's Scaled Wristplates
-											i(135633),	-- Vindictive Gladiator's Scaled Gauntlets
-											i(135637),	-- Vindictive Gladiator's Scaled Girdle
-											i(135635),	-- Vindictive Gladiator's Scaled Legguards
-											i(135632),	-- Vindictive Gladiator's Scaled Sabatons
-										}),		
-										i(146130, { -- Vindictive Gladiator's Satin Armor		
-											i(135674),	-- Vindictive Gladiator's Plate Helm
-											i(135676),	-- Vindictive Gladiator's Plate Shoulders
-											i(136885),	-- Vindictive Gladiator's Cloak of Battle
-											i(135671),	-- Vindictive Gladiator's Plate Chestpiece
-											i(135678),	-- Vindictive Gladiator's Plate Wristplates
-											i(135673),	-- Vindictive Gladiator's Plate Gauntlets
-											i(135677),	-- Vindictive Gladiator's Plate Girdle
-											i(135675),	-- Vindictive Gladiator's Plate Legguards
-											i(135672),	-- Vindictive Gladiator's Plate Warboots
-										}),		
-										i(146132, { -- Vindictive Gladiator's Satin Armor		
-											i(135594),	-- Vindictive Gladiator's Dreadplate Helm
-											i(135596),	-- Vindictive Gladiator's Dreadplate Shoulders
-											i(135679),	-- Vindictive Gladiator's Dreadcloak
-											i(135591),	-- Vindictive Gladiator's Dreadplate Chestpiece
-											i(135598),	-- Vindictive Gladiator's Dreadplate Wristplates
-											i(135593),	-- Vindictive Gladiator's Dreadplate Gauntlets
-											i(135597),	-- Vindictive Gladiator's Dreadplate Girdle
-											i(135595),	-- Vindictive Gladiator's Dreadplate Legguards
-											i(135592),	-- Vindictive Gladiator's Dreadplate Sabatons
-										}),		
-										-- LEGION &4
-										i(147663, { -- Cruel Gladiator's Satin Armor		
-											i(144680),	-- Cruel Gladiator's Satin Hood
-											i(144686),	-- Cruel Gladiator's Satin Mantle
-											i(144548),	-- Cruel Gladiator's Drape of Piety
-											i(144684),	-- Cruel Gladiator's Satin Robe
-											i(144690),	-- Cruel Gladiator's Satin Bracers
-											i(144678),	-- Cruel Gladiator's Satin Gloves
-											i(144688),	-- Cruel Gladiator's Satin Cord
-											i(144682),	-- Cruel Gladiator's Satin Leggings
-											i(144676),	-- Cruel Gladiator's Satin Treads
-										}),		
-										i(147668, { -- Cruel Gladiator's Silk Armor		
-											i(144626),	-- Cruel Gladiator's Silk Cowl
-											i(144632),	-- Cruel Gladiator's Silk Amice
-											i(144542),	-- Cruel Gladiator's Silken Shawl
-											i(144630),	-- Cruel Gladiator's Silk Robe
-											i(144636),	-- Cruel Gladiator's Silk Bracers
-											i(144624),	-- Cruel Gladiator's Silk Handguards
-											i(144634),	-- Cruel Gladiator's Silk Cord
-											i(144628),	-- Cruel Gladiator's Silk Trousers
-											i(144622),	-- Cruel Gladiator's Silk Treads
-										}),		
-										i(147653, { -- Cruel Gladiator's Felweave Armor		
-											i(144752),	-- Cruel Gladiator's Felweave Cowl
-											i(144758),	-- Cruel Gladiator's Felweave Amice
-											i(144554),	-- Cruel Gladiator's Felweave Cloak
-											i(144756),	-- Cruel Gladiator's Felweave Raiment
-											i(144762),	-- Cruel Gladiator's Felweave Bracers
-											i(144750),	-- Cruel Gladiator's Felweave Handguards
-											i(144760),	-- Cruel Gladiator's Felweave Cord
-											i(144754),	-- Cruel Gladiator's Felweave Trousers
-											i(144748),	-- Cruel Gladiator's Felweave Treads
-										}),		
-										i(147647, { -- Cruel Gladiator's Dragonhide Armor		
-											i(144596),	-- Cruel Gladiator's Dragonhide Helm
-											i(144600),	-- Cruel Gladiator's Dragonhide Spaulders
-											i(144538),	-- Cruel Gladiator's Dragonhide Cloak
-											i(144590),	-- Cruel Gladiator's Dragonhide Robe
-											i(144604),	-- Cruel Gladiator's Dragonhide Wristguards
-											i(144594),	-- Cruel Gladiator's Dragonhide Gloves
-											i(144602),	-- Cruel Gladiator's Dragonhide Belt
-											i(144598),	-- Cruel Gladiator's Dragonhide Legguards
-											i(144592),	-- Cruel Gladiator's Dragonhide Moccasins
-										}),		
-										i(147657, { -- Cruel Gladiator's Leather Armor		
-											i(144704),	-- Cruel Gladiator's Leather Helm
-											i(144708),	-- Cruel Gladiator's Leather Spaulders
-											i(144550),	-- Cruel Gladiator's Shadowcape
-											i(144698),	-- Cruel Gladiator's Leather Tunic
-											i(144712),	-- Cruel Gladiator's Leather Wristguards
-											i(144702),	-- Cruel Gladiator's Leather Gloves
-											i(144710),	-- Cruel Gladiator's Leather Belt
-											i(144706),	-- Cruel Gladiator's Leather Legguards
-											i(144700),	-- Cruel Gladiator's Leather Slippers
-										}),		
-										i(147656, { -- Cruel Gladiator's Ironskin Armor		
-											i(144642),	-- Cruel Gladiator's Ironskin Helm
-											i(144646),	-- Cruel Gladiator's Ironskin Spaulders
-											i(144544),	-- Cruel Gladiator's Ironskin Cloak
-											i(144648),	-- Cruel Gladiator's Ironskin Tunic
-											i(144652),	-- Cruel Gladiator's Ironskin Wristguards
-											i(144640),	-- Cruel Gladiator's Ironskin Gloves
-											i(144650),	-- Cruel Gladiator's Ironskin Belt
-											i(144644),	-- Cruel Gladiator's Ironskin Legguards
-											i(144638),	-- Cruel Gladiator's Ironskin Slippers
-										}),		
-										i(147651, { -- Cruel Gladiator's Felskin Armor	
-											["groups"] = {
-												i(144580),	-- Cruel Gladiator's Felskin Helm
-												i(144584),	-- Cruel Gladiator's Felskin Spaulders
-												i(144536),	-- Cruel Gladiator's Demonthread Cloak
-												i(144574),	-- Cruel Gladiator's Felskin Tunic
-												i(144588),	-- Cruel Gladiator's Felskin Wristguards
-												i(144578),	-- Cruel Gladiator's Felskin Gloves
-												i(144586),	-- Cruel Gladiator's Felskin Belt
-												i(144582),	-- Cruel Gladiator's Felskin Legguards
-												i(144576),	-- Cruel Gladiator's Felskin Boots
-											},
-											["classes"] = { 12 },
-										}),		
-										i(147646, { -- Cruel Gladiator's Chain Armor		
-											i(144612),	-- Cruel Gladiator's Chain Helm
-											i(144616),	-- Cruel Gladiator's Chain Spaulders
-											i(144540),	-- Cruel Gladiator's Drape of the Tracker
-											i(144606),	-- Cruel Gladiator's Chain Armor
-											i(144620),	-- Cruel Gladiator's Chain Armband
-											i(144610),	-- Cruel Gladiator's Chain Gauntlets
-											i(144618),	-- Cruel Gladiator's Chain Clasp
-											i(144614),	-- Cruel Gladiator's Chain Leggings
-											i(144608),	-- Cruel Gladiator's Chain Treads
-										}),		
-										i(147661, { -- Cruel Gladiator's Ringmail Armor		
-											i(144720),	-- Cruel Gladiator's Ringmail Helm
-											i(144724),	-- Cruel Gladiator's Ringmail Spaulders
-											i(144552),	-- Cruel Gladiator's Totemic Cloak
-											i(144714),	-- Cruel Gladiator's Ringmail Armor
-											i(144728),	-- Cruel Gladiator's Ringmail Armband
-											i(144718),	-- Cruel Gladiator's Ringmail Gauntlets
-											i(144726),	-- Cruel Gladiator's Ringmail Clasp
-											i(144722),	-- Cruel Gladiator's Ringmail Kilt
-											i(144716),	-- Cruel Gladiator's Ringmail Boots
-										}),		
-										i(147665, { -- Cruel Gladiator's Scaled Armor		
-											i(144665),	-- Cruel Gladiator's Scaled Helm
-											i(144670),	-- Cruel Gladiator's Scaled Shoulders
-											i(144546),	-- Cruel Gladiator's Greatcloak of Faith
-											i(144669),	-- Cruel Gladiator's Scaled Breastplate
-											i(144674),	-- Cruel Gladiator's Scaled Wristplates
-											i(144663),	-- Cruel Gladiator's Scaled Gauntlets
-											i(144672),	-- Cruel Gladiator's Scaled Girdle
-											i(144667),	-- Cruel Gladiator's Scaled Legguards
-											i(144661),	-- Cruel Gladiator's Scaled Sabatons
-										}),		
-										i(147660, { -- Cruel Gladiator's Plate Armor		
-											i(144770),	-- Cruel Gladiator's Plate Helm
-											i(144774),	-- Cruel Gladiator's Plate Shoulders
-											i(144556),	-- Cruel Gladiator's Cloak of Battle
-											i(144764),	-- Cruel Gladiator's Plate Chestpiece
-											i(144778),	-- Cruel Gladiator's Plate Wristplates
-											i(144768),	-- Cruel Gladiator's Plate Gauntlets
-											i(144776),	-- Cruel Gladiator's Plate Girdle
-											i(144772),	-- Cruel Gladiator's Plate Legguards
-											i(144766),	-- Cruel Gladiator's Plate Warboots
-										}),		
-										i(147650, { -- Cruel Gladiator's Dreadplate Armor		
-											i(144564),	-- Cruel Gladiator's Dreadplate Helm
-											i(144568),	-- Cruel Gladiator's Dreadplate Shoulders
-											i(144534),	-- Cruel Gladiator's Dreadcloak
-											i(144558),	-- Cruel Gladiator's Dreadplate Chestpiece
-											i(144572),	-- Cruel Gladiator's Dreadplate Wristplates
-											i(144562),	-- Cruel Gladiator's Dreadplate Gauntlets
-											i(144570),	-- Cruel Gladiator's Dreadplate Girdle
-											i(144566),	-- Cruel Gladiator's Dreadplate Legguards
-											i(144560),	-- Cruel Gladiator's Dreadplate Sabatons
-										}),
-										-- LEGION 5,6,7
-										i(149498, {	-- Ensemble: Fierce Gladiator's Scaled Armor
-											i(148040),	-- Fierce Gladiator's Scaled Helm
-											i(148045),	-- Fierce Gladiator's Scaled Shoulders
-											i(147921),	-- Fierce Gladiator's Greatcloak of Faith
-											i(148049),	-- Fierce Gladiator's Scaled Wristplates
-											i(148038),	-- Fierce Gladiator's Scaled Gauntlets
-											i(148044),	-- Fierce Gladiator's Scaled Breastplate
-											i(148047),	-- Fierce Gladiator's Scaled Girdle
-											i(148042),	-- Fierce Gladiator's Scaled Legguards
-											i(148036),	-- Fierce Gladiator's Scaled Sabatons
-										}),
-									},
-									["icon"] = "Interface\\Worldmap\\GlowSkull_64Red",	-- Red
-								}),
+							gssh(1071, { -- Combatant
+								["groups"] = {
+									-- LEGION { Legion Season 1 & 2
+									i(146158, { -- Vindictive Combatant's Satin Armor		
+										i(135867),	-- Vindictive Combatant's Satin Hood
+										i(135870),	-- Vindictive Combatant's Satin Mantle
+										i(136867),	-- Vindictive Combatant's Drape of Piety
+										i(135869),	-- Vindictive Combatant's Satin Tunic
+										i(135872),	-- Vindictive Combatant's Satin Bracers
+										i(135866),	-- Vindictive Combatant's Satin Gloves
+										i(135871),	-- Vindictive Combatant's Satin Cord
+										i(135868),	-- Vindictive Combatant's Satin Leggings
+										i(135865),	-- Vindictive Combatant's Satin Treads
+									}),		
+									i(146156, { -- Vindictive Combatant's Satin Armor		
+										i(135843),	-- Vindictive Combatant's Silk Cowl
+										i(135846),	-- Vindictive Combatant's Silk Amice
+										i(135906),	-- Vindictive Combatant's Silken Shawl
+										i(135845),	-- Vindictive Combatant's Silk Tunic
+										i(135848),	-- Vindictive Combatant's Silk Bracers
+										i(135842),	-- Vindictive Combatant's Silk Handguards
+										i(135847),	-- Vindictive Combatant's Silk Cord
+										i(135844),	-- Vindictive Combatant's Silk Trousers
+										i(135841),	-- Vindictive Combatant's Silk Treads
+									}),		
+									i(146160, { -- Vindictive Combatant's Satin Armor		
+										i(135891),	-- Vindictive Combatant's Felweave Cowl
+										i(135894),	-- Vindictive Combatant's Felweave Amice
+										i(136881),	-- Vindictive Combatant's Felweave Cloak
+										i(135893),	-- Vindictive Combatant's Felweave Tunic
+										i(135896),	-- Vindictive Combatant's Felweave Bracers
+										i(135890),	-- Vindictive Combatant's Felweave Handguards
+										i(135895),	-- Vindictive Combatant's Felweave Cord
+										i(135892),	-- Vindictive Combatant's Felweave Trousers
+										i(135889),	-- Vindictive Combatant's Felweave Treads
+									}),		
+									i(146168, { -- Vindictive Combatant's Satin Armor		
+										i(135827),	-- Vindictive Combatant's Dragonhide Helm
+										i(135830),	-- Vindictive Combatant's Dragonhide Spaulders
+										i(135909),	-- Vindictive Combatant's Dragonhide Cloak
+										i(135829),	-- Vindictive Combatant's Dragonhide Tunic
+										i(135832),	-- Vindictive Combatant's Dragonhide Wristguards
+										i(135826),	-- Vindictive Combatant's Dragonhide Gloves
+										i(135831),	-- Vindictive Combatant's Dragonhide Belt
+										i(135828),	-- Vindictive Combatant's Dragonhide Legguards
+										i(135825),	-- Vindictive Combatant's Dragonhide Moccasins
+									}),		
+									i(146172, { -- Vindictive Combatant's Satin Armor		
+										i(135876),	-- Vindictive Combatant's Leather Helm
+										i(135878),	-- Vindictive Combatant's Leather Spaulders
+										i(136868),	-- Vindictive Combatant's Shadowcape
+										i(135873),	-- Vindictive Combatant's Leather Tunic
+										i(135880),	-- Vindictive Combatant's Leather Wristguards
+										i(135875),	-- Vindictive Combatant's Leather Gloves
+										i(135879),	-- Vindictive Combatant's Leather Belt
+										i(135877),	-- Vindictive Combatant's Leather Legguards
+										i(135874),	-- Vindictive Combatant's Leather Slippers
+									}),		
+									i(146170, { -- Vindictive Combatant's Satin Armor		
+										i(135851),	-- Vindictive Combatant's Ironskin Helm
+										i(135853),	-- Vindictive Combatant's Ironskin Spaulders
+										i(135910),	-- Vindictive Combatant's Ironskin Cloak
+										i(135854),	-- Vindictive Combatant's Ironskin Tunic
+										i(135856),	-- Vindictive Combatant's Ironskin Wristguards
+										i(135850),	-- Vindictive Combatant's Ironskin Gloves
+										i(135855),	-- Vindictive Combatant's Ironskin Belt
+										i(135852),	-- Vindictive Combatant's Ironskin Legguards
+										i(135849),	-- Vindictive Combatant's Ironskin Slippers
+									}),		
+									i(146264, { -- Vindictive Combatant's Satin Armor		
+										["groups"] = {
+											i(136297),	-- Vindictive Combatant's Felskin Helm
+											i(136300),	-- Vindictive Combatant's Felskin Spaulders
+											i(136893),	-- Vindictive Combatant's Demonthread Cloak
+											i(136299),	-- Vindictive Combatant's Felskin Tunic
+											i(136302),	-- Vindictive Combatant's Felskin Wristguards
+											i(136296),	-- Vindictive Combatant's Felskin Gloves
+											i(136301),	-- Vindictive Combatant's Felskin Belt
+											i(136298),	-- Vindictive Combatant's Felskin Legguards
+											i(136295),	-- Vindictive Combatant's Felskin Boots
+										},
+										["classes"] = { 12 },
+									}),		
+									i(146154, { -- Vindictive Combatant's Satin Armor		
+										i(135836),	-- Vindictive Combatant's Chain Helm
+										i(135838),	-- Vindictive Combatant's Chain Spaulders
+										i(135913),	-- Vindictive Combatant's Drape of the Tracker
+										i(135833),	-- Vindictive Combatant's Chain Armor
+										i(135840),	-- Vindictive Combatant's Chain Armband
+										i(135835),	-- Vindictive Combatant's Chain Gauntlets
+										i(135839),	-- Vindictive Combatant's Chain Clasp
+										i(135837),	-- Vindictive Combatant's Chain Leggings
+										i(135834),	-- Vindictive Combatant's Chain Treads
+									}),		
+									i(146152, { -- Vindictive Combatant's Satin Armor		
+										i(135884),	-- Vindictive Combatant's Ringmail Helm
+										i(135886),	-- Vindictive Combatant's Ringmail Spaulders
+										i(136869),	-- Vindictive Combatant's Totemic Cloak
+										i(135881),	-- Vindictive Combatant's Ringmail Armor
+										i(135888),	-- Vindictive Combatant's Ringmail Armband
+										i(135883),	-- Vindictive Combatant's Ringmail Gauntlets
+										i(135887),	-- Vindictive Combatant's Ringmail Clasp
+										i(135885),	-- Vindictive Combatant's Ringmail Kilt
+										i(135882),	-- Vindictive Combatant's Ringmail Boots
+									}),		
+									i(146166, { -- Vindictive Combatant's Satin Armor		
+										i(135860),	-- Vindictive Combatant's Scaled Helm
+										i(135862),	-- Vindictive Combatant's Scaled Shoulders
+										i(135914),	-- Vindictive Combatant's Greatcloak of Faith
+										i(135857),	-- Vindictive Combatant's Scaled Chestpiece
+										i(135864),	-- Vindictive Combatant's Scaled Wristplates
+										i(135859),	-- Vindictive Combatant's Scaled Gauntlets
+										i(135863),	-- Vindictive Combatant's Scaled Girdle
+										i(135861),	-- Vindictive Combatant's Scaled Legguards
+										i(135858),	-- Vindictive Combatant's Scaled Sabatons
+									}),		
+									i(146162, { -- Vindictive Combatant's Satin Armor		
+										i(135900),	-- Vindictive Combatant's Plate Helm
+										i(135902),	-- Vindictive Combatant's Plate Shoulders
+										i(136887),	-- Vindictive Combatant's Cloak of Battle
+										i(135897),	-- Vindictive Combatant's Plate Chestpiece
+										i(135904),	-- Vindictive Combatant's Plate Wristplates
+										i(135899),	-- Vindictive Combatant's Plate Gauntlets
+										i(135903),	-- Vindictive Combatant's Plate Girdle
+										i(135901),	-- Vindictive Combatant's Plate Legguards
+										i(135898),	-- Vindictive Combatant's Plate Warboots
+									}),		
+									i(146164, { -- Vindictive Combatant's Satin Armor		
+										i(135820),	-- Vindictive Combatant's Dreadplate Helm
+										i(135822),	-- Vindictive Combatant's Dreadplate Shoulders
+										i(135905),	-- Vindictive Combatant's Dreadcloak
+										i(135817),	-- Vindictive Combatant's Dreadplate Chestpiece
+										i(135824),	-- Vindictive Combatant's Dreadplate Wristplates
+										i(135819),	-- Vindictive Combatant's Dreadplate Gauntlets
+										i(135823),	-- Vindictive Combatant's Dreadplate Girdle
+										i(135821),	-- Vindictive Combatant's Dreadplate Legguards
+										i(135818),	-- Vindictive Combatant's Dreadplate Sabatons
+									}),	
+									-- LEGION & 4
+									i(147688, { -- Cruel Combatant's Satin Armor		
+										i(145172),	-- Cruel Combatant's Satin Hood
+										i(145178),	-- Cruel Combatant's Satin Mantle
+										i(145040),	-- Cruel Combatant's Drape of Piety
+										i(145176),	-- Cruel Combatant's Satin Robe
+										i(145182),	-- Cruel Combatant's Satin Bracers
+										i(145170),	-- Cruel Combatant's Satin Gloves
+										i(145180),	-- Cruel Combatant's Satin Cord
+										i(145174),	-- Cruel Combatant's Satin Leggings
+										i(145168),	-- Cruel Combatant's Satin Treads
+									}),		
+									i(147696, { -- Cruel Combatant's Silk Armor		
+										i(145118),	-- Cruel Combatant's Silk Cowl
+										i(145124),	-- Cruel Combatant's Silk Amice
+										i(145034),	-- Cruel Combatant's Silken Shawl
+										i(145122),	-- Cruel Combatant's Silk Robe
+										i(145128),	-- Cruel Combatant's Silk Bracers
+										i(145116),	-- Cruel Combatant's Silk Handguards
+										i(145126),	-- Cruel Combatant's Silk Cord
+										i(145120),	-- Cruel Combatant's Silk Trousers
+										i(145114),	-- Cruel Combatant's Silk Treads
+									}),		
+									i(147682, { -- Cruel Combatant's Felweave Armor		
+										i(145244),	-- Cruel Combatant's Felweave Cowl
+										i(145250),	-- Cruel Combatant's Felweave Amice
+										i(145046),	-- Cruel Combatant's Felweave Cloak
+										i(145248),	-- Cruel Combatant's Felweave Raiment
+										i(145254),	-- Cruel Combatant's Felweave Bracers
+										i(145242),	-- Cruel Combatant's Felweave Handguards
+										i(145252),	-- Cruel Combatant's Felweave Cord
+										i(145246),	-- Cruel Combatant's Felweave Trousers
+										i(145240),	-- Cruel Combatant's Felweave Treads
+									}),		
+									i(147675, { -- Cruel Combatant's Dragonhide Armor		
+										i(145088),	-- Cruel Combatant's Dragonhide Helm
+										i(145092),	-- Cruel Combatant's Dragonhide Spaulders
+										i(145030),	-- Cruel Combatant's Dragonhide Cloak
+										i(145082),	-- Cruel Combatant's Dragonhide Tunic
+										i(145096),	-- Cruel Combatant's Dragonhide Wristguards
+										i(145086),	-- Cruel Combatant's Dragonhide Gloves
+										i(145094),	-- Cruel Combatant's Dragonhide Belt
+										i(145090),	-- Cruel Combatant's Dragonhide Legguards
+										i(145084),	-- Cruel Combatant's Dragonhide Moccasins
+									}),		
+									i(147685, { -- Cruel Combatant's Leather Armor		
+										i(145196),	-- Cruel Combatant's Leather Helm
+										i(145200),	-- Cruel Combatant's Leather Spaulders
+										i(145042),	-- Cruel Combatant's Shadowcape
+										i(145190),	-- Cruel Combatant's Leather Tunic
+										i(145204),	-- Cruel Combatant's Leather Wristguards
+										i(145194),	-- Cruel Combatant's Leather Gloves
+										i(145202),	-- Cruel Combatant's Leather Belt
+										i(145198),	-- Cruel Combatant's Leather Legguards
+										i(145192),	-- Cruel Combatant's Leather Slippers
+									}),		
+									i(147684, { -- Cruel Combatant's Ironskin Armor		
+										i(145134),	-- Cruel Combatant's Ironskin Helm
+										i(145138),	-- Cruel Combatant's Ironskin Spaulders
+										i(145036),	-- Cruel Combatant's Ironskin Cloak
+										i(145140),	-- Cruel Combatant's Ironskin Tunic
+										i(145144),	-- Cruel Combatant's Ironskin Wristguards
+										i(145132),	-- Cruel Combatant's Ironskin Gloves
+										i(145142),	-- Cruel Combatant's Ironskin Belt
+										i(145136),	-- Cruel Combatant's Ironskin Legguards
+										i(145130),	-- Cruel Combatant's Ironskin Slippers
+									}),		
+									i(147680, { -- Cruel Combatant's Felskin Armor
+										["groups"] = {
+											i(145072),	-- Cruel Combatant's Felskin Helm
+											i(145076),	-- Cruel Combatant's Felskin Spaulders
+											i(145028),	-- Cruel Combatant's Demonthread Cloak
+											i(145066),	-- Cruel Combatant's Felskin Tunic
+											i(145080),	-- Cruel Combatant's Felskin Wristguards
+											i(145070),	-- Cruel Combatant's Felskin Gloves
+											i(145078),	-- Cruel Combatant's Felskin Belt
+											i(145074),	-- Cruel Combatant's Felskin Legguards
+											i(145068),	-- Cruel Combatant's Felskin Boots
+										},
+										["classes"] = { 12 },
+									}),		
+									i(147689, { -- Cruel Combatant's Chain Armor		
+										i(145104),	-- Cruel Combatant's Chain Helm
+										i(145108),	-- Cruel Combatant's Chain Spaulders
+										i(145032),	-- Cruel Combatant's Drape of the Tracker
+										i(145098),	-- Cruel Combatant's Chain Armor
+										i(145112),	-- Cruel Combatant's Chain Armband
+										i(145102),	-- Cruel Combatant's Chain Gauntlets
+										i(145110),	-- Cruel Combatant's Chain Clasp
+										i(145106),	-- Cruel Combatant's Chain Leggings
+										i(145100),	-- Cruel Combatant's Chain Treads
+									}),		
+									i(147674, { -- Cruel Combatant's Ringmail Armor		
+										i(145212),	-- Cruel Combatant's Ringmail Helm
+										i(145216),	-- Cruel Combatant's Ringmail Spaulders
+										i(145044),	-- Cruel Combatant's Totemic Cloak
+										i(145206),	-- Cruel Combatant's Ringmail Armor
+										i(145220),	-- Cruel Combatant's Ringmail Armband
+										i(145210),	-- Cruel Combatant's Ringmail Gauntlets
+										i(145218),	-- Cruel Combatant's Ringmail Clasp
+										i(145214),	-- Cruel Combatant's Ringmail Kilt
+										i(145208),	-- Cruel Combatant's Ringmail Boots
+									}),		
+									i(147693, { -- Cruel Combatant's Scaled Armor		
+										i(145158),	-- Cruel Combatant's Scaled Helm
+										i(145162),	-- Cruel Combatant's Scaled Shoulders
+										i(145038),	-- Cruel Combatant's Greatcloak of Faith
+										i(145152),	-- Cruel Combatant's Scaled Chestpiece
+										i(145166),	-- Cruel Combatant's Scaled Wristplates
+										i(145156),	-- Cruel Combatant's Scaled Gauntlets
+										i(145164),	-- Cruel Combatant's Scaled Girdle
+										i(145160),	-- Cruel Combatant's Scaled Legguards
+										i(145154),	-- Cruel Combatant's Scaled Sabatons
+									}),		
+									i(147692, { -- Cruel Combatant's Plate Armor		
+										i(145262),	-- Cruel Combatant's Plate Helm
+										i(145266),	-- Cruel Combatant's Plate Shoulders
+										i(145048),	-- Cruel Combatant's Cloak of Battle
+										i(145256),	-- Cruel Combatant's Plate Chestpiece
+										i(145270),	-- Cruel Combatant's Plate Wristplates
+										i(145260),	-- Cruel Combatant's Plate Gauntlets
+										i(145268),	-- Cruel Combatant's Plate Girdle
+										i(145264),	-- Cruel Combatant's Plate Legguards
+										i(145258),	-- Cruel Combatant's Plate Warboots
+									}),		
+									i(147677, { -- Cruel Combatant's Dreadplate Armor		
+										i(145056),	-- Cruel Combatant's Dreadplate Helm
+										i(145060),	-- Cruel Combatant's Dreadplate Shoulders
+										i(145026),	-- Cruel Combatant's Dreadcloak
+										i(145050),	-- Cruel Combatant's Dreadplate Chestpiece
+										i(145064),	-- Cruel Combatant's Dreadplate Wristplates
+										i(145054),	-- Cruel Combatant's Dreadplate Gauntlets
+										i(145062),	-- Cruel Combatant's Dreadplate Girdle
+										i(145058),	-- Cruel Combatant's Dreadplate Legguards
+										i(145052),	-- Cruel Combatant's Dreadplate Sabatons
+									}),		
+								},
+								["icon"] = "Interface\\Worldmap\\GlowSkull_64Purple",	-- Purple
+							}),
+							gssh(1414, { -- Gladiator
+								["groups"] = {
+									-- LEGION { Legion Season 1 & 2
+									i(146148, { -- Vindictive Gladiator's Satin Armor		
+										i(135641),	-- Vindictive Gladiator's Satin Hood
+										i(135644),	-- Vindictive Gladiator's Satin Mantle
+										i(136861),	-- Vindictive Gladiator's Drape of Piety
+										i(135643),	-- Vindictive Gladiator's Satin Robe
+										i(135646),	-- Vindictive Gladiator's Satin Bracers
+										i(135640),	-- Vindictive Gladiator's Satin Gloves
+										i(135645),	-- Vindictive Gladiator's Satin Cord
+										i(135642),	-- Vindictive Gladiator's Satin Leggings
+										i(135639),	-- Vindictive Gladiator's Satin Treads
+									}),		
+									i(146146, { -- Vindictive Gladiator's Silk Armor		
+										i(135617),	-- Vindictive Gladiator's Silk Cowl
+										i(135620),	-- Vindictive Gladiator's Silk Amice
+										i(135684),	-- Vindictive Gladiator's Silken Shawl
+										i(135619),	-- Vindictive Gladiator's Silk Robe
+										i(135622),	-- Vindictive Gladiator's Silk Bracers
+										i(135616),	-- Vindictive Gladiator's Silk Handguards
+										i(135621),	-- Vindictive Gladiator's Silk Cord
+										i(135618),	-- Vindictive Gladiator's Silk Trousers
+										i(135615),	-- Vindictive Gladiator's Silk Treads
+									}),		
+									i(146150, { -- Vindictive Gladiator's Satin Armor		
+										i(135665),	-- Vindictive Gladiator's Felweave Cowl
+										i(135668),	-- Vindictive Gladiator's Felweave Amice
+										i(136879),	-- Vindictive Gladiator's Felweave Cloak
+										i(135667),	-- Vindictive Gladiator's Felweave Raiment
+										i(135670),	-- Vindictive Gladiator's Felweave Bracers
+										i(135664),	-- Vindictive Gladiator's Felweave Handguards
+										i(135669),	-- Vindictive Gladiator's Felweave Cord
+										i(135666),	-- Vindictive Gladiator's Felweave Trousers
+										i(135663),	-- Vindictive Gladiator's Felweave Treads
+									}),		
+									i(146140, { -- Vindictive Gladiator's Satin Armor		
+										i(135601),	-- Vindictive Gladiator's Dragonhide Helm
+										i(135604),	-- Vindictive Gladiator's Dragonhide Spaulders
+										i(135680),	-- Vindictive Gladiator's Dragonhide Cloak
+										i(135603),	-- Vindictive Gladiator's Dragonhide Robe
+										i(135606),	-- Vindictive Gladiator's Dragonhide Wristguards
+										i(135600),	-- Vindictive Gladiator's Dragonhide Gloves
+										i(135605),	-- Vindictive Gladiator's Dragonhide Belt
+										i(135602),	-- Vindictive Gladiator's Dragonhide Legguards
+										i(135599),	-- Vindictive Gladiator's Dragonhide Moccasins
+									}),		
+									i(146144, { -- Vindictive Gladiator's Satin Armor		
+										i(135650),	-- Vindictive Gladiator's Leather Helm
+										i(135652),	-- Vindictive Gladiator's Leather Spaulders
+										i(136862),	-- Vindictive Gladiator's Shadowcape
+										i(135647),	-- Vindictive Gladiator's Leather Tunic
+										i(135654),	-- Vindictive Gladiator's Leather Wristguards
+										i(135649),	-- Vindictive Gladiator's Leather Gloves
+										i(135653),	-- Vindictive Gladiator's Leather Belt
+										i(135651),	-- Vindictive Gladiator's Leather Legguards
+										i(135648),	-- Vindictive Gladiator's Leather Slippers
+									}),		
+									i(146142, { -- Vindictive Gladiator's Satin Armor		
+										i(135625),	-- Vindictive Gladiator's Ironskin Helm
+										i(135627),	-- Vindictive Gladiator's Ironskin Spaulders
+										i(135687),	-- Vindictive Gladiator's Ironskin Cloak
+										i(135628),	-- Vindictive Gladiator's Ironskin Tunic
+										i(135630),	-- Vindictive Gladiator's Ironskin Wristguards
+										i(135624),	-- Vindictive Gladiator's Ironskin Gloves
+										i(135629),	-- Vindictive Gladiator's Ironskin Belt
+										i(135626),	-- Vindictive Gladiator's Ironskin Legguards
+										i(135623),	-- Vindictive Gladiator's Ironskin Slippers
+									}),		
+									i(146262, { -- Vindictive Gladiator's Satin Armor
+										["groups"] = {
+											i(136281),	-- Vindictive Gladiator's Felskin Helm
+											i(136284),	-- Vindictive Gladiator's Felskin Spaulders
+											i(136891),	-- Vindictive Gladiator's Demonthread Cloak
+											i(136283),	-- Vindictive Gladiator's Felskin Tunic
+											i(136286),	-- Vindictive Gladiator's Felskin Wristguards
+											i(136280),	-- Vindictive Gladiator's Felskin Gloves
+											i(136285),	-- Vindictive Gladiator's Felskin Belt
+											i(136282),	-- Vindictive Gladiator's Felskin Legguards
+											i(136279),	-- Vindictive Gladiator's Felskin Boots
+										},
+										["classes"] = { 12 },
+									}),		
+									i(146138, { -- Vindictive Gladiator's Satin Armor		
+										i(135610),	-- Vindictive Gladiator's Chain Helm
+										i(135612),	-- Vindictive Gladiator's Chain Spaulders
+										i(135683),	-- Vindictive Gladiator's Drape of the Tracker
+										i(135607),	-- Vindictive Gladiator's Chain Armor
+										i(135614),	-- Vindictive Gladiator's Chain Armband
+										i(135609),	-- Vindictive Gladiator's Chain Gauntlets
+										i(135613),	-- Vindictive Gladiator's Chain Clasp
+										i(135611),	-- Vindictive Gladiator's Chain Leggings
+										i(135608),	-- Vindictive Gladiator's Chain Treads
+									}),		
+									i(146136, { -- Vindictive Gladiator's Satin Armor		
+										i(135658),	-- Vindictive Gladiator's Ringmail Helm
+										i(135660),	-- Vindictive Gladiator's Ringmail Spaulders
+										i(136863),	-- Vindictive Gladiator's Totemic Cloak
+										i(135655),	-- Vindictive Gladiator's Ringmail Armor
+										i(135662),	-- Vindictive Gladiator's Ringmail Armband
+										i(135657),	-- Vindictive Gladiator's Ringmail Gauntlets
+										i(135661),	-- Vindictive Gladiator's Ringmail Clasp
+										i(135659),	-- Vindictive Gladiator's Ringmail Kilt
+										i(135656),	-- Vindictive Gladiator's Ringmail Boots
+									}),		
+									i(146134, { -- Vindictive Gladiator's Satin Armor		
+										i(135634),	-- Vindictive Gladiator's Scaled Helm
+										i(135636),	-- Vindictive Gladiator's Scaled Shoulders
+										i(135688),	-- Vindictive Gladiator's Greatcloak of Faith
+										i(135631),	-- Vindictive Gladiator's Scaled Battlerobe
+										i(135638),	-- Vindictive Gladiator's Scaled Wristplates
+										i(135633),	-- Vindictive Gladiator's Scaled Gauntlets
+										i(135637),	-- Vindictive Gladiator's Scaled Girdle
+										i(135635),	-- Vindictive Gladiator's Scaled Legguards
+										i(135632),	-- Vindictive Gladiator's Scaled Sabatons
+									}),		
+									i(146130, { -- Vindictive Gladiator's Satin Armor		
+										i(135674),	-- Vindictive Gladiator's Plate Helm
+										i(135676),	-- Vindictive Gladiator's Plate Shoulders
+										i(136885),	-- Vindictive Gladiator's Cloak of Battle
+										i(135671),	-- Vindictive Gladiator's Plate Chestpiece
+										i(135678),	-- Vindictive Gladiator's Plate Wristplates
+										i(135673),	-- Vindictive Gladiator's Plate Gauntlets
+										i(135677),	-- Vindictive Gladiator's Plate Girdle
+										i(135675),	-- Vindictive Gladiator's Plate Legguards
+										i(135672),	-- Vindictive Gladiator's Plate Warboots
+									}),		
+									i(146132, { -- Vindictive Gladiator's Satin Armor		
+										i(135594),	-- Vindictive Gladiator's Dreadplate Helm
+										i(135596),	-- Vindictive Gladiator's Dreadplate Shoulders
+										i(135679),	-- Vindictive Gladiator's Dreadcloak
+										i(135591),	-- Vindictive Gladiator's Dreadplate Chestpiece
+										i(135598),	-- Vindictive Gladiator's Dreadplate Wristplates
+										i(135593),	-- Vindictive Gladiator's Dreadplate Gauntlets
+										i(135597),	-- Vindictive Gladiator's Dreadplate Girdle
+										i(135595),	-- Vindictive Gladiator's Dreadplate Legguards
+										i(135592),	-- Vindictive Gladiator's Dreadplate Sabatons
+									}),		
+									-- LEGION &4
+									i(147663, { -- Cruel Gladiator's Satin Armor		
+										i(144680),	-- Cruel Gladiator's Satin Hood
+										i(144686),	-- Cruel Gladiator's Satin Mantle
+										i(144548),	-- Cruel Gladiator's Drape of Piety
+										i(144684),	-- Cruel Gladiator's Satin Robe
+										i(144690),	-- Cruel Gladiator's Satin Bracers
+										i(144678),	-- Cruel Gladiator's Satin Gloves
+										i(144688),	-- Cruel Gladiator's Satin Cord
+										i(144682),	-- Cruel Gladiator's Satin Leggings
+										i(144676),	-- Cruel Gladiator's Satin Treads
+									}),		
+									i(147668, { -- Cruel Gladiator's Silk Armor		
+										i(144626),	-- Cruel Gladiator's Silk Cowl
+										i(144632),	-- Cruel Gladiator's Silk Amice
+										i(144542),	-- Cruel Gladiator's Silken Shawl
+										i(144630),	-- Cruel Gladiator's Silk Robe
+										i(144636),	-- Cruel Gladiator's Silk Bracers
+										i(144624),	-- Cruel Gladiator's Silk Handguards
+										i(144634),	-- Cruel Gladiator's Silk Cord
+										i(144628),	-- Cruel Gladiator's Silk Trousers
+										i(144622),	-- Cruel Gladiator's Silk Treads
+									}),		
+									i(147653, { -- Cruel Gladiator's Felweave Armor		
+										i(144752),	-- Cruel Gladiator's Felweave Cowl
+										i(144758),	-- Cruel Gladiator's Felweave Amice
+										i(144554),	-- Cruel Gladiator's Felweave Cloak
+										i(144756),	-- Cruel Gladiator's Felweave Raiment
+										i(144762),	-- Cruel Gladiator's Felweave Bracers
+										i(144750),	-- Cruel Gladiator's Felweave Handguards
+										i(144760),	-- Cruel Gladiator's Felweave Cord
+										i(144754),	-- Cruel Gladiator's Felweave Trousers
+										i(144748),	-- Cruel Gladiator's Felweave Treads
+									}),		
+									i(147647, { -- Cruel Gladiator's Dragonhide Armor		
+										i(144596),	-- Cruel Gladiator's Dragonhide Helm
+										i(144600),	-- Cruel Gladiator's Dragonhide Spaulders
+										i(144538),	-- Cruel Gladiator's Dragonhide Cloak
+										i(144590),	-- Cruel Gladiator's Dragonhide Robe
+										i(144604),	-- Cruel Gladiator's Dragonhide Wristguards
+										i(144594),	-- Cruel Gladiator's Dragonhide Gloves
+										i(144602),	-- Cruel Gladiator's Dragonhide Belt
+										i(144598),	-- Cruel Gladiator's Dragonhide Legguards
+										i(144592),	-- Cruel Gladiator's Dragonhide Moccasins
+									}),		
+									i(147657, { -- Cruel Gladiator's Leather Armor		
+										i(144704),	-- Cruel Gladiator's Leather Helm
+										i(144708),	-- Cruel Gladiator's Leather Spaulders
+										i(144550),	-- Cruel Gladiator's Shadowcape
+										i(144698),	-- Cruel Gladiator's Leather Tunic
+										i(144712),	-- Cruel Gladiator's Leather Wristguards
+										i(144702),	-- Cruel Gladiator's Leather Gloves
+										i(144710),	-- Cruel Gladiator's Leather Belt
+										i(144706),	-- Cruel Gladiator's Leather Legguards
+										i(144700),	-- Cruel Gladiator's Leather Slippers
+									}),		
+									i(147656, { -- Cruel Gladiator's Ironskin Armor		
+										i(144642),	-- Cruel Gladiator's Ironskin Helm
+										i(144646),	-- Cruel Gladiator's Ironskin Spaulders
+										i(144544),	-- Cruel Gladiator's Ironskin Cloak
+										i(144648),	-- Cruel Gladiator's Ironskin Tunic
+										i(144652),	-- Cruel Gladiator's Ironskin Wristguards
+										i(144640),	-- Cruel Gladiator's Ironskin Gloves
+										i(144650),	-- Cruel Gladiator's Ironskin Belt
+										i(144644),	-- Cruel Gladiator's Ironskin Legguards
+										i(144638),	-- Cruel Gladiator's Ironskin Slippers
+									}),		
+									i(147651, { -- Cruel Gladiator's Felskin Armor	
+										["groups"] = {
+											i(144580),	-- Cruel Gladiator's Felskin Helm
+											i(144584),	-- Cruel Gladiator's Felskin Spaulders
+											i(144536),	-- Cruel Gladiator's Demonthread Cloak
+											i(144574),	-- Cruel Gladiator's Felskin Tunic
+											i(144588),	-- Cruel Gladiator's Felskin Wristguards
+											i(144578),	-- Cruel Gladiator's Felskin Gloves
+											i(144586),	-- Cruel Gladiator's Felskin Belt
+											i(144582),	-- Cruel Gladiator's Felskin Legguards
+											i(144576),	-- Cruel Gladiator's Felskin Boots
+										},
+										["classes"] = { 12 },
+									}),		
+									i(147646, { -- Cruel Gladiator's Chain Armor		
+										i(144612),	-- Cruel Gladiator's Chain Helm
+										i(144616),	-- Cruel Gladiator's Chain Spaulders
+										i(144540),	-- Cruel Gladiator's Drape of the Tracker
+										i(144606),	-- Cruel Gladiator's Chain Armor
+										i(144620),	-- Cruel Gladiator's Chain Armband
+										i(144610),	-- Cruel Gladiator's Chain Gauntlets
+										i(144618),	-- Cruel Gladiator's Chain Clasp
+										i(144614),	-- Cruel Gladiator's Chain Leggings
+										i(144608),	-- Cruel Gladiator's Chain Treads
+									}),		
+									i(147661, { -- Cruel Gladiator's Ringmail Armor		
+										i(144720),	-- Cruel Gladiator's Ringmail Helm
+										i(144724),	-- Cruel Gladiator's Ringmail Spaulders
+										i(144552),	-- Cruel Gladiator's Totemic Cloak
+										i(144714),	-- Cruel Gladiator's Ringmail Armor
+										i(144728),	-- Cruel Gladiator's Ringmail Armband
+										i(144718),	-- Cruel Gladiator's Ringmail Gauntlets
+										i(144726),	-- Cruel Gladiator's Ringmail Clasp
+										i(144722),	-- Cruel Gladiator's Ringmail Kilt
+										i(144716),	-- Cruel Gladiator's Ringmail Boots
+									}),		
+									i(147665, { -- Cruel Gladiator's Scaled Armor		
+										i(144665),	-- Cruel Gladiator's Scaled Helm
+										i(144670),	-- Cruel Gladiator's Scaled Shoulders
+										i(144546),	-- Cruel Gladiator's Greatcloak of Faith
+										i(144669),	-- Cruel Gladiator's Scaled Breastplate
+										i(144674),	-- Cruel Gladiator's Scaled Wristplates
+										i(144663),	-- Cruel Gladiator's Scaled Gauntlets
+										i(144672),	-- Cruel Gladiator's Scaled Girdle
+										i(144667),	-- Cruel Gladiator's Scaled Legguards
+										i(144661),	-- Cruel Gladiator's Scaled Sabatons
+									}),		
+									i(147660, { -- Cruel Gladiator's Plate Armor		
+										i(144770),	-- Cruel Gladiator's Plate Helm
+										i(144774),	-- Cruel Gladiator's Plate Shoulders
+										i(144556),	-- Cruel Gladiator's Cloak of Battle
+										i(144764),	-- Cruel Gladiator's Plate Chestpiece
+										i(144778),	-- Cruel Gladiator's Plate Wristplates
+										i(144768),	-- Cruel Gladiator's Plate Gauntlets
+										i(144776),	-- Cruel Gladiator's Plate Girdle
+										i(144772),	-- Cruel Gladiator's Plate Legguards
+										i(144766),	-- Cruel Gladiator's Plate Warboots
+									}),		
+									i(147650, { -- Cruel Gladiator's Dreadplate Armor		
+										i(144564),	-- Cruel Gladiator's Dreadplate Helm
+										i(144568),	-- Cruel Gladiator's Dreadplate Shoulders
+										i(144534),	-- Cruel Gladiator's Dreadcloak
+										i(144558),	-- Cruel Gladiator's Dreadplate Chestpiece
+										i(144572),	-- Cruel Gladiator's Dreadplate Wristplates
+										i(144562),	-- Cruel Gladiator's Dreadplate Gauntlets
+										i(144570),	-- Cruel Gladiator's Dreadplate Girdle
+										i(144566),	-- Cruel Gladiator's Dreadplate Legguards
+										i(144560),	-- Cruel Gladiator's Dreadplate Sabatons
+									}),
+									-- LEGION 5,6,7
+									i(149498, {	-- Ensemble: Fierce Gladiator's Scaled Armor
+										i(148040),	-- Fierce Gladiator's Scaled Helm
+										i(148045),	-- Fierce Gladiator's Scaled Shoulders
+										i(147921),	-- Fierce Gladiator's Greatcloak of Faith
+										i(148049),	-- Fierce Gladiator's Scaled Wristplates
+										i(148038),	-- Fierce Gladiator's Scaled Gauntlets
+										i(148044),	-- Fierce Gladiator's Scaled Breastplate
+										i(148047),	-- Fierce Gladiator's Scaled Girdle
+										i(148042),	-- Fierce Gladiator's Scaled Legguards
+										i(148036),	-- Fierce Gladiator's Scaled Sabatons
+									}),
+								},
+								["icon"] = "Interface\\Worldmap\\GlowSkull_64Red",	-- Red
 							}),
 						},
 					}),
@@ -6867,299 +6864,298 @@ _.Zones =
 						i(53852),	-- Embroidered Shirt
 					}),
 					nh(119272, { -- Sarah the Savage <Legion Elite Gladiator>
+						["itemID"] = 137642,	-- Mark of Honor
 						["coord"] = { 57.0, 27.8, 625 },
 						["g"] = {
-							i(137642, {	-- Mark of Honor
-								un(14, i(147778)),	-- Enchanter's Illusion - Demonic Tyranny
-								i(142380),	-- Dutiful Gruntling
-								i(139776),	-- Horde Fanatic
-								un(14, i(147336)),	-- Cruel Gladiator's Tabard [Elite Rating]
-								un(14, i(147357)),	-- Cruel Gladiator's Cloak [Elite Rating]
-								un(14, i(147338)),	-- Ferocious Gladiator's Tabard [Elite Rating]
-								un(14, i(147363)),	-- Ferocious Gladiator's Cloak [Elite Rating]
-								un(14, i(149442)),	-- Fierce Gladiator's Tabard [Elite Rating]
-								un(14, i(149444)),	-- Fierce Gladiator's Cloak [Elite Rating]
-								un(14, i(149446)),	-- Dominant Gladiator's Tabard [Elite Rating]
-								un(14, i(149448)),	-- Dominant Gladiator's Cloak [Elite Rating]
-								un(14, i(149450)),	-- Demonic Gladiator's Tabard [Elite Rating]
-								un(14, i(149452)),	-- Demonic Gladiator's Cloak [Elite Rating]
-								gssh(1391, { -- Elite
-									["groups"] = {
-										-- LEGION { Legion Season 1 & 2
-										i(146237, { -- Vindictive Gladiator's Satin Armor		
-											i(136206),	-- Vindictive Gladiator's Satin Hood
-											i(136209),	-- Vindictive Gladiator's Satin Mantle
-											i(136876),	-- Vindictive Gladiator's Drape of Piety
-											i(136208),	-- Vindictive Gladiator's Satin Robe
-											i(136211),	-- Vindictive Gladiator's Satin Bracers
-											i(136205),	-- Vindictive Gladiator's Satin Gloves
-											i(136210),	-- Vindictive Gladiator's Satin Cord
-											i(136207),	-- Vindictive Gladiator's Satin Leggings
-											i(136204),	-- Vindictive Gladiator's Satin Treads
-										}),		
-										i(146235, { -- Vindictive Gladiator's Satin Armor		
-											i(136182),	-- Vindictive Gladiator's Silk Cowl
-											i(136185),	-- Vindictive Gladiator's Silk Amice
-											i(136245),	-- Vindictive Gladiator's Silken Shawl
-											i(136184),	-- Vindictive Gladiator's Silk Robe
-											i(136187),	-- Vindictive Gladiator's Silk Bracers
-											i(136181),	-- Vindictive Gladiator's Silk Handguards
-											i(136186),	-- Vindictive Gladiator's Silk Cord
-											i(136183),	-- Vindictive Gladiator's Silk Trousers
-											i(136180),	-- Vindictive Gladiator's Silk Treads
-										}),		
-										i(146239, { -- Vindictive Gladiator's Satin Armor		
-											i(136230),	-- Vindictive Gladiator's Felweave Cowl
-											i(136233),	-- Vindictive Gladiator's Felweave Amice
-											i(136884),	-- Vindictive Gladiator's Felweave Cloak
-											i(136232),	-- Vindictive Gladiator's Felweave Raiment
-											i(136235),	-- Vindictive Gladiator's Felweave Bracers
-											i(136229),	-- Vindictive Gladiator's Felweave Handguards
-											i(136234),	-- Vindictive Gladiator's Felweave Cord
-											i(136231),	-- Vindictive Gladiator's Felweave Trousers
-											i(136228),	-- Vindictive Gladiator's Felweave Treads
-										}),		
-										i(146229, { -- Vindictive Gladiator's Satin Armor		
-											i(136166),	-- Vindictive Gladiator's Dragonhide Helm
-											i(136169),	-- Vindictive Gladiator's Dragonhide Spaulders
-											i(136248),	-- Vindictive Gladiator's Dragonhide Cloak
-											i(136168),	-- Vindictive Gladiator's Dragonhide Robe
-											i(136171),	-- Vindictive Gladiator's Dragonhide Wristguards
-											i(136165),	-- Vindictive Gladiator's Dragonhide Gloves
-											i(136170),	-- Vindictive Gladiator's Dragonhide Belt
-											i(136167),	-- Vindictive Gladiator's Dragonhide Legguards
-											i(136164),	-- Vindictive Gladiator's Dragonhide Moccasins
-										}),		
-										i(146233, { -- Vindictive Gladiator's Satin Armor		
-											i(136215),	-- Vindictive Gladiator's Leather Helm
-											i(136217),	-- Vindictive Gladiator's Leather Spaulders
-											i(136877),	-- Vindictive Gladiator's Shadowcape
-											i(136212),	-- Vindictive Gladiator's Leather Tunic
-											i(136219),	-- Vindictive Gladiator's Leather Wristguards
-											i(136214),	-- Vindictive Gladiator's Leather Gloves
-											i(136218),	-- Vindictive Gladiator's Leather Belt
-											i(136216),	-- Vindictive Gladiator's Leather Legguards
-											i(136213),	-- Vindictive Gladiator's Leather Slippers
-										}),		
-										i(146231, { -- Vindictive Gladiator's Satin Armor		
-											i(136190),	-- Vindictive Gladiator's Ironskin Helm
-											i(136192),	-- Vindictive Gladiator's Ironskin Spaulders
-											i(136249),	-- Vindictive Gladiator's Ironskin Cloak
-											i(136193),	-- Vindictive Gladiator's Ironskin Tunic
-											i(136195),	-- Vindictive Gladiator's Ironskin Wristguards
-											i(136189),	-- Vindictive Gladiator's Ironskin Gloves
-											i(136194),	-- Vindictive Gladiator's Ironskin Belt
-											i(136191),	-- Vindictive Gladiator's Ironskin Legguards
-											i(136188),	-- Vindictive Gladiator's Ironskin Slippers
-										}),		
-										i(146271, { -- Vindictive Gladiator's Satin Armor
-											["groups"] = {
-												i(136321),	-- Vindictive Gladiator's Felskin Helm
-												i(136324),	-- Vindictive Gladiator's Felskin Spaulders
-												i(136896),	-- Vindictive Gladiator's Demonthread Cloak
-												i(136323),	-- Vindictive Gladiator's Felskin Tunic
-												i(136326),	-- Vindictive Gladiator's Felskin Wristguards
-												i(136320),	-- Vindictive Gladiator's Felskin Gloves
-												i(136325),	-- Vindictive Gladiator's Felskin Belt
-												i(136322),	-- Vindictive Gladiator's Felskin Legguards
-												i(136319),	-- Vindictive Gladiator's Felskin Boots
-											},
-											["classes"] = { 12 },
-										}),		
-										i(146227, { -- Vindictive Gladiator's Satin Armor		
-											i(136175),	-- Vindictive Gladiator's Chain Helm
-											i(136177),	-- Vindictive Gladiator's Chain Spaulders
-											i(136252),	-- Vindictive Gladiator's Drape of the Tracker
-											i(136172),	-- Vindictive Gladiator's Chain Armor
-											i(136179),	-- Vindictive Gladiator's Chain Armband
-											i(136174),	-- Vindictive Gladiator's Chain Gauntlets
-											i(136178),	-- Vindictive Gladiator's Chain Clasp
-											i(136176),	-- Vindictive Gladiator's Chain Leggings
-											i(136173),	-- Vindictive Gladiator's Chain Treads
-										}),		
-										i(146225, { -- Vindictive Gladiator's Satin Armor		
-											i(136223),	-- Vindictive Gladiator's Ringmail Helm
-											i(136225),	-- Vindictive Gladiator's Ringmail Spaulders
-											i(136878),	-- Vindictive Gladiator's Totemic Cloak
-											i(136220),	-- Vindictive Gladiator's Ringmail Armor
-											i(136227),	-- Vindictive Gladiator's Ringmail Armband
-											i(136222),	-- Vindictive Gladiator's Ringmail Gauntlets
-											i(136226),	-- Vindictive Gladiator's Ringmail Clasp
-											i(136224),	-- Vindictive Gladiator's Ringmail Kilt
-											i(136221),	-- Vindictive Gladiator's Ringmail Boots
-										}),		
-										i(146223, { -- Vindictive Gladiator's Satin Armor		
-											i(136199),	-- Vindictive Gladiator's Scaled Helm
-											i(136201),	-- Vindictive Gladiator's Scaled Shoulders
-											i(136253),	-- Vindictive Gladiator's Greatcloak of Faith
-											i(136196),	-- Vindictive Gladiator's Scaled Chestpiece
-											i(136203),	-- Vindictive Gladiator's Scaled Wristplates
-											i(136198),	-- Vindictive Gladiator's Scaled Gauntlets
-											i(136202),	-- Vindictive Gladiator's Scaled Girdle
-											i(136200),	-- Vindictive Gladiator's Scaled Legguards
-											i(136197),	-- Vindictive Gladiator's Scaled Sabatons
-										}),		
-										i(146219, { -- Vindictive Gladiator's Satin Armor		
-											i(136239),	-- Vindictive Gladiator's Plate Helm
-											i(136241),	-- Vindictive Gladiator's Plate Shoulders
-											i(136890),	-- Vindictive Gladiator's Cloak of Battle
-											i(136236),	-- Vindictive Gladiator's Plate Chestpiece
-											i(136243),	-- Vindictive Gladiator's Plate Wristplates
-											i(136238),	-- Vindictive Gladiator's Plate Gauntlets
-											i(136242),	-- Vindictive Gladiator's Plate Girdle
-											i(136240),	-- Vindictive Gladiator's Plate Legguards
-											i(136237),	-- Vindictive Gladiator's Plate Warboots
-										}),		
-										i(146221, { -- Vindictive Gladiator's Satin Armor		
-											i(136159),	-- Vindictive Gladiator's Dreadplate Helm
-											i(136161),	-- Vindictive Gladiator's Dreadplate Shoulders
-											i(136244),	-- Vindictive Gladiator's Dreadcloak
-											i(136156),	-- Vindictive Gladiator's Dreadplate Chestpiece
-											i(136163),	-- Vindictive Gladiator's Dreadplate Wristplates
-											i(136158),	-- Vindictive Gladiator's Dreadplate Gauntlets
-											i(136162),	-- Vindictive Gladiator's Dreadplate Girdle
-											i(136160),	-- Vindictive Gladiator's Dreadplate Legguards
-											i(136157),	-- Vindictive Gladiator's Dreadplate Sabatons
-										}),	
-										-- LEGION 3 & 4
-										i(147639, { -- Cruel Gladiator's Satin Armor		
-											i(144927),	-- Cruel Gladiator's Satin Hood
-											i(144933),	-- Cruel Gladiator's Satin Mantle
-											i(144795),	-- Cruel Gladiator's Drape of Piety
-											i(144931),	-- Cruel Gladiator's Satin Robe
-											i(144937),	-- Cruel Gladiator's Satin Bracers
-											i(144925),	-- Cruel Gladiator's Satin Gloves
-											i(144935),	-- Cruel Gladiator's Satin Cord
-											i(144929),	-- Cruel Gladiator's Satin Leggings
-											i(144923),	-- Cruel Gladiator's Satin Treads
-										}),		
-										i(147643, { -- Cruel Gladiator's Silk Armor		
-											i(144873),	-- Cruel Gladiator's Silk Cowl
-											i(144879),	-- Cruel Gladiator's Silk Amice
-											i(144789),	-- Cruel Gladiator's Silken Shawl
-											i(144877),	-- Cruel Gladiator's Silk Robe
-											i(144883),	-- Cruel Gladiator's Silk Bracers
-											i(144871),	-- Cruel Gladiator's Silk Handguards
-											i(144881),	-- Cruel Gladiator's Silk Cord
-											i(144875),	-- Cruel Gladiator's Silk Trousers
-											i(144869),	-- Cruel Gladiator's Silk Treads
-										}),		
-										i(147630, { -- Cruel Gladiator's Felweave Armor		
-											i(144999),	-- Cruel Gladiator's Felweave Cowl
-											i(145005),	-- Cruel Gladiator's Felweave Amice
-											i(144801),	-- Cruel Gladiator's Felweave Cloak
-											i(145003),	-- Cruel Gladiator's Felweave Raiment
-											i(145009),	-- Cruel Gladiator's Felweave Bracers
-											i(144997),	-- Cruel Gladiator's Felweave Handguards
-											i(145007),	-- Cruel Gladiator's Felweave Cord
-											i(145001),	-- Cruel Gladiator's Felweave Trousers
-											i(144995),	-- Cruel Gladiator's Felweave Treads
-										}),		
-										i(147624, { -- Cruel Gladiator's Dragonhide Armor		
-											i(144843),	-- Cruel Gladiator's Dragonhide Helm
-											i(144847),	-- Cruel Gladiator's Dragonhide Spaulders
-											i(144785),	-- Cruel Gladiator's Dragonhide Cloak
-											i(144837),	-- Cruel Gladiator's Dragonhide Robe
-											i(144851),	-- Cruel Gladiator's Dragonhide Wristguards
-											i(144841),	-- Cruel Gladiator's Dragonhide Gloves
-											i(144849),	-- Cruel Gladiator's Dragonhide Belt
-											i(144845),	-- Cruel Gladiator's Dragonhide Legguards
-											i(144839),	-- Cruel Gladiator's Dragonhide Moccasins
-										}),		
-										i(147633, { -- Cruel Gladiator's Leather Armor		
-											i(144951),	-- Cruel Gladiator's Leather Helm
-											i(144955),	-- Cruel Gladiator's Leather Spaulders
-											i(144797),	-- Cruel Gladiator's Shadowcape
-											i(144945),	-- Cruel Gladiator's Leather Tunic
-											i(144959),	-- Cruel Gladiator's Leather Wristguards
-											i(144949),	-- Cruel Gladiator's Leather Gloves
-											i(144957),	-- Cruel Gladiator's Leather Belt
-											i(144953),	-- Cruel Gladiator's Leather Legguards
-											i(144947),	-- Cruel Gladiator's Leather Slippers
-										}),		
-										i(147631, { -- Cruel Gladiator's Ironskin Armor		
-											i(144889),	-- Cruel Gladiator's Ironskin Helm
-											i(144893),	-- Cruel Gladiator's Ironskin Spaulders
-											i(144791),	-- Cruel Gladiator's Ironskin Cloak
-											i(144895),	-- Cruel Gladiator's Ironskin Tunic
-											i(144899),	-- Cruel Gladiator's Ironskin Wristguards
-											i(144887),	-- Cruel Gladiator's Ironskin Gloves
-											i(144897),	-- Cruel Gladiator's Ironskin Belt
-											i(144891),	-- Cruel Gladiator's Ironskin Legguards
-											i(144885),	-- Cruel Gladiator's Ironskin Slippers
-										}),		
-										i(147628, { -- Cruel Gladiator's Felskin Armor
-											["groups"] = {
-												i(144827),	-- Cruel Gladiator's Felskin Helm
-												i(144831),	-- Cruel Gladiator's Felskin Spaulders
-												i(144783),	-- Cruel Gladiator's Demonthread Cloak
-												i(144821),	-- Cruel Gladiator's Felskin Tunic
-												i(144835),	-- Cruel Gladiator's Felskin Wristguards
-												i(144825),	-- Cruel Gladiator's Felskin Gloves
-												i(144833),	-- Cruel Gladiator's Felskin Belt
-												i(144829),	-- Cruel Gladiator's Felskin Legguards
-												i(144823),	-- Cruel Gladiator's Felskin Boots
-											},
-											["classes"] = { 12 },
-										}),		
-										i(147622, { -- Cruel Gladiator's Chain Armor		
-											i(144859),	-- Cruel Gladiator's Chain Helm
-											i(144863),	-- Cruel Gladiator's Chain Spaulders
-											i(144787),	-- Cruel Gladiator's Drape of the Tracker
-											i(144853),	-- Cruel Gladiator's Chain Armor
-											i(144867),	-- Cruel Gladiator's Chain Armband
-											i(144857),	-- Cruel Gladiator's Chain Gauntlets
-											i(144865),	-- Cruel Gladiator's Chain Clasp
-											i(144861),	-- Cruel Gladiator's Chain Leggings
-											i(144855),	-- Cruel Gladiator's Chain Treads
-										}),		
-										i(147638, { -- Cruel Gladiator's Ringmail Armor		
-											i(144967),	-- Cruel Gladiator's Ringmail Helm
-											i(144971),	-- Cruel Gladiator's Ringmail Spaulders
-											i(144799),	-- Cruel Gladiator's Totemic Cloak
-											i(144961),	-- Cruel Gladiator's Ringmail Armor
-											i(144975),	-- Cruel Gladiator's Ringmail Armband
-											i(144965),	-- Cruel Gladiator's Ringmail Gauntlets
-											i(144973),	-- Cruel Gladiator's Ringmail Clasp
-											i(144969),	-- Cruel Gladiator's Ringmail Kilt
-											i(144963),	-- Cruel Gladiator's Ringmail Boots
-										}),		
-										i(147641, { -- Cruel Gladiator's Scaled Armor		
-											i(144913),	-- Cruel Gladiator's Scaled Helm
-											i(144917),	-- Cruel Gladiator's Scaled Shoulders
-											i(144793),	-- Cruel Gladiator's Greatcloak of Faith
-											i(144907),	-- Cruel Gladiator's Scaled Breastplate
-											i(144921),	-- Cruel Gladiator's Scaled Wristplates
-											i(144911),	-- Cruel Gladiator's Scaled Gauntlets
-											i(144919),	-- Cruel Gladiator's Scaled Girdle
-											i(144915),	-- Cruel Gladiator's Scaled Legguards
-											i(144909),	-- Cruel Gladiator's Scaled Sabatons
-										}),		
-										i(147635, { -- Cruel Gladiator's Plate Armor		
-											i(145017),	-- Cruel Gladiator's Plate Helm
-											i(145021),	-- Cruel Gladiator's Plate Shoulders
-											i(144803),	-- Cruel Gladiator's Cloak of Battle
-											i(145011),	-- Cruel Gladiator's Plate Chestpiece
-											i(145025),	-- Cruel Gladiator's Plate Wristplates
-											i(145015),	-- Cruel Gladiator's Plate Gauntlets
-											i(145023),	-- Cruel Gladiator's Plate Girdle
-											i(145019),	-- Cruel Gladiator's Plate Legguards
-											i(145013),	-- Cruel Gladiator's Plate Warboots
-										}),		
-										i(147626, { -- Cruel Gladiator's Dreadplate Armor		
-											i(144811),	-- Cruel Gladiator's Dreadplate Helm
-											i(144815),	-- Cruel Gladiator's Dreadplate Shoulders
-											i(144781),	-- Cruel Gladiator's Dreadcloak
-											i(144805),	-- Cruel Gladiator's Dreadplate Chestpiece
-											i(144819),	-- Cruel Gladiator's Dreadplate Wristplates
-											i(144809),	-- Cruel Gladiator's Dreadplate Gauntlets
-											i(144817),	-- Cruel Gladiator's Dreadplate Girdle
-											i(144813),	-- Cruel Gladiator's Dreadplate Legguards
-											i(144807),	-- Cruel Gladiator's Dreadplate Sabatons
-										}),		
-									},
-									["icon"] = "Interface\\Worldmap\\GlowSkull_64Red",	-- Red
-								}),
+							un(14, i(147778)),	-- Enchanter's Illusion - Demonic Tyranny
+							i(142380),	-- Dutiful Gruntling
+							i(139776),	-- Horde Fanatic
+							un(14, i(147336)),	-- Cruel Gladiator's Tabard [Elite Rating]
+							un(14, i(147357)),	-- Cruel Gladiator's Cloak [Elite Rating]
+							un(14, i(147338)),	-- Ferocious Gladiator's Tabard [Elite Rating]
+							un(14, i(147363)),	-- Ferocious Gladiator's Cloak [Elite Rating]
+							un(14, i(149442)),	-- Fierce Gladiator's Tabard [Elite Rating]
+							un(14, i(149444)),	-- Fierce Gladiator's Cloak [Elite Rating]
+							un(14, i(149446)),	-- Dominant Gladiator's Tabard [Elite Rating]
+							un(14, i(149448)),	-- Dominant Gladiator's Cloak [Elite Rating]
+							un(14, i(149450)),	-- Demonic Gladiator's Tabard [Elite Rating]
+							un(14, i(149452)),	-- Demonic Gladiator's Cloak [Elite Rating]
+							gssh(1391, { -- Elite
+								["icon"] = "Interface\\Worldmap\\GlowSkull_64Red",	-- Red
+								["g"] = {
+									-- LEGION { Legion Season 1 & 2
+									i(146237, { -- Vindictive Gladiator's Satin Armor		
+										i(136206),	-- Vindictive Gladiator's Satin Hood
+										i(136209),	-- Vindictive Gladiator's Satin Mantle
+										i(136876),	-- Vindictive Gladiator's Drape of Piety
+										i(136208),	-- Vindictive Gladiator's Satin Robe
+										i(136211),	-- Vindictive Gladiator's Satin Bracers
+										i(136205),	-- Vindictive Gladiator's Satin Gloves
+										i(136210),	-- Vindictive Gladiator's Satin Cord
+										i(136207),	-- Vindictive Gladiator's Satin Leggings
+										i(136204),	-- Vindictive Gladiator's Satin Treads
+									}),		
+									i(146235, { -- Vindictive Gladiator's Satin Armor		
+										i(136182),	-- Vindictive Gladiator's Silk Cowl
+										i(136185),	-- Vindictive Gladiator's Silk Amice
+										i(136245),	-- Vindictive Gladiator's Silken Shawl
+										i(136184),	-- Vindictive Gladiator's Silk Robe
+										i(136187),	-- Vindictive Gladiator's Silk Bracers
+										i(136181),	-- Vindictive Gladiator's Silk Handguards
+										i(136186),	-- Vindictive Gladiator's Silk Cord
+										i(136183),	-- Vindictive Gladiator's Silk Trousers
+										i(136180),	-- Vindictive Gladiator's Silk Treads
+									}),		
+									i(146239, { -- Vindictive Gladiator's Satin Armor		
+										i(136230),	-- Vindictive Gladiator's Felweave Cowl
+										i(136233),	-- Vindictive Gladiator's Felweave Amice
+										i(136884),	-- Vindictive Gladiator's Felweave Cloak
+										i(136232),	-- Vindictive Gladiator's Felweave Raiment
+										i(136235),	-- Vindictive Gladiator's Felweave Bracers
+										i(136229),	-- Vindictive Gladiator's Felweave Handguards
+										i(136234),	-- Vindictive Gladiator's Felweave Cord
+										i(136231),	-- Vindictive Gladiator's Felweave Trousers
+										i(136228),	-- Vindictive Gladiator's Felweave Treads
+									}),		
+									i(146229, { -- Vindictive Gladiator's Satin Armor		
+										i(136166),	-- Vindictive Gladiator's Dragonhide Helm
+										i(136169),	-- Vindictive Gladiator's Dragonhide Spaulders
+										i(136248),	-- Vindictive Gladiator's Dragonhide Cloak
+										i(136168),	-- Vindictive Gladiator's Dragonhide Robe
+										i(136171),	-- Vindictive Gladiator's Dragonhide Wristguards
+										i(136165),	-- Vindictive Gladiator's Dragonhide Gloves
+										i(136170),	-- Vindictive Gladiator's Dragonhide Belt
+										i(136167),	-- Vindictive Gladiator's Dragonhide Legguards
+										i(136164),	-- Vindictive Gladiator's Dragonhide Moccasins
+									}),		
+									i(146233, { -- Vindictive Gladiator's Satin Armor		
+										i(136215),	-- Vindictive Gladiator's Leather Helm
+										i(136217),	-- Vindictive Gladiator's Leather Spaulders
+										i(136877),	-- Vindictive Gladiator's Shadowcape
+										i(136212),	-- Vindictive Gladiator's Leather Tunic
+										i(136219),	-- Vindictive Gladiator's Leather Wristguards
+										i(136214),	-- Vindictive Gladiator's Leather Gloves
+										i(136218),	-- Vindictive Gladiator's Leather Belt
+										i(136216),	-- Vindictive Gladiator's Leather Legguards
+										i(136213),	-- Vindictive Gladiator's Leather Slippers
+									}),		
+									i(146231, { -- Vindictive Gladiator's Satin Armor		
+										i(136190),	-- Vindictive Gladiator's Ironskin Helm
+										i(136192),	-- Vindictive Gladiator's Ironskin Spaulders
+										i(136249),	-- Vindictive Gladiator's Ironskin Cloak
+										i(136193),	-- Vindictive Gladiator's Ironskin Tunic
+										i(136195),	-- Vindictive Gladiator's Ironskin Wristguards
+										i(136189),	-- Vindictive Gladiator's Ironskin Gloves
+										i(136194),	-- Vindictive Gladiator's Ironskin Belt
+										i(136191),	-- Vindictive Gladiator's Ironskin Legguards
+										i(136188),	-- Vindictive Gladiator's Ironskin Slippers
+									}),		
+									i(146271, { -- Vindictive Gladiator's Satin Armor
+										["groups"] = {
+											i(136321),	-- Vindictive Gladiator's Felskin Helm
+											i(136324),	-- Vindictive Gladiator's Felskin Spaulders
+											i(136896),	-- Vindictive Gladiator's Demonthread Cloak
+											i(136323),	-- Vindictive Gladiator's Felskin Tunic
+											i(136326),	-- Vindictive Gladiator's Felskin Wristguards
+											i(136320),	-- Vindictive Gladiator's Felskin Gloves
+											i(136325),	-- Vindictive Gladiator's Felskin Belt
+											i(136322),	-- Vindictive Gladiator's Felskin Legguards
+											i(136319),	-- Vindictive Gladiator's Felskin Boots
+										},
+										["classes"] = { 12 },
+									}),		
+									i(146227, { -- Vindictive Gladiator's Satin Armor		
+										i(136175),	-- Vindictive Gladiator's Chain Helm
+										i(136177),	-- Vindictive Gladiator's Chain Spaulders
+										i(136252),	-- Vindictive Gladiator's Drape of the Tracker
+										i(136172),	-- Vindictive Gladiator's Chain Armor
+										i(136179),	-- Vindictive Gladiator's Chain Armband
+										i(136174),	-- Vindictive Gladiator's Chain Gauntlets
+										i(136178),	-- Vindictive Gladiator's Chain Clasp
+										i(136176),	-- Vindictive Gladiator's Chain Leggings
+										i(136173),	-- Vindictive Gladiator's Chain Treads
+									}),		
+									i(146225, { -- Vindictive Gladiator's Satin Armor		
+										i(136223),	-- Vindictive Gladiator's Ringmail Helm
+										i(136225),	-- Vindictive Gladiator's Ringmail Spaulders
+										i(136878),	-- Vindictive Gladiator's Totemic Cloak
+										i(136220),	-- Vindictive Gladiator's Ringmail Armor
+										i(136227),	-- Vindictive Gladiator's Ringmail Armband
+										i(136222),	-- Vindictive Gladiator's Ringmail Gauntlets
+										i(136226),	-- Vindictive Gladiator's Ringmail Clasp
+										i(136224),	-- Vindictive Gladiator's Ringmail Kilt
+										i(136221),	-- Vindictive Gladiator's Ringmail Boots
+									}),		
+									i(146223, { -- Vindictive Gladiator's Satin Armor		
+										i(136199),	-- Vindictive Gladiator's Scaled Helm
+										i(136201),	-- Vindictive Gladiator's Scaled Shoulders
+										i(136253),	-- Vindictive Gladiator's Greatcloak of Faith
+										i(136196),	-- Vindictive Gladiator's Scaled Chestpiece
+										i(136203),	-- Vindictive Gladiator's Scaled Wristplates
+										i(136198),	-- Vindictive Gladiator's Scaled Gauntlets
+										i(136202),	-- Vindictive Gladiator's Scaled Girdle
+										i(136200),	-- Vindictive Gladiator's Scaled Legguards
+										i(136197),	-- Vindictive Gladiator's Scaled Sabatons
+									}),		
+									i(146219, { -- Vindictive Gladiator's Satin Armor		
+										i(136239),	-- Vindictive Gladiator's Plate Helm
+										i(136241),	-- Vindictive Gladiator's Plate Shoulders
+										i(136890),	-- Vindictive Gladiator's Cloak of Battle
+										i(136236),	-- Vindictive Gladiator's Plate Chestpiece
+										i(136243),	-- Vindictive Gladiator's Plate Wristplates
+										i(136238),	-- Vindictive Gladiator's Plate Gauntlets
+										i(136242),	-- Vindictive Gladiator's Plate Girdle
+										i(136240),	-- Vindictive Gladiator's Plate Legguards
+										i(136237),	-- Vindictive Gladiator's Plate Warboots
+									}),		
+									i(146221, { -- Vindictive Gladiator's Satin Armor		
+										i(136159),	-- Vindictive Gladiator's Dreadplate Helm
+										i(136161),	-- Vindictive Gladiator's Dreadplate Shoulders
+										i(136244),	-- Vindictive Gladiator's Dreadcloak
+										i(136156),	-- Vindictive Gladiator's Dreadplate Chestpiece
+										i(136163),	-- Vindictive Gladiator's Dreadplate Wristplates
+										i(136158),	-- Vindictive Gladiator's Dreadplate Gauntlets
+										i(136162),	-- Vindictive Gladiator's Dreadplate Girdle
+										i(136160),	-- Vindictive Gladiator's Dreadplate Legguards
+										i(136157),	-- Vindictive Gladiator's Dreadplate Sabatons
+									}),	
+									-- LEGION 3 & 4
+									i(147639, { -- Cruel Gladiator's Satin Armor		
+										i(144927),	-- Cruel Gladiator's Satin Hood
+										i(144933),	-- Cruel Gladiator's Satin Mantle
+										i(144795),	-- Cruel Gladiator's Drape of Piety
+										i(144931),	-- Cruel Gladiator's Satin Robe
+										i(144937),	-- Cruel Gladiator's Satin Bracers
+										i(144925),	-- Cruel Gladiator's Satin Gloves
+										i(144935),	-- Cruel Gladiator's Satin Cord
+										i(144929),	-- Cruel Gladiator's Satin Leggings
+										i(144923),	-- Cruel Gladiator's Satin Treads
+									}),		
+									i(147643, { -- Cruel Gladiator's Silk Armor		
+										i(144873),	-- Cruel Gladiator's Silk Cowl
+										i(144879),	-- Cruel Gladiator's Silk Amice
+										i(144789),	-- Cruel Gladiator's Silken Shawl
+										i(144877),	-- Cruel Gladiator's Silk Robe
+										i(144883),	-- Cruel Gladiator's Silk Bracers
+										i(144871),	-- Cruel Gladiator's Silk Handguards
+										i(144881),	-- Cruel Gladiator's Silk Cord
+										i(144875),	-- Cruel Gladiator's Silk Trousers
+										i(144869),	-- Cruel Gladiator's Silk Treads
+									}),		
+									i(147630, { -- Cruel Gladiator's Felweave Armor		
+										i(144999),	-- Cruel Gladiator's Felweave Cowl
+										i(145005),	-- Cruel Gladiator's Felweave Amice
+										i(144801),	-- Cruel Gladiator's Felweave Cloak
+										i(145003),	-- Cruel Gladiator's Felweave Raiment
+										i(145009),	-- Cruel Gladiator's Felweave Bracers
+										i(144997),	-- Cruel Gladiator's Felweave Handguards
+										i(145007),	-- Cruel Gladiator's Felweave Cord
+										i(145001),	-- Cruel Gladiator's Felweave Trousers
+										i(144995),	-- Cruel Gladiator's Felweave Treads
+									}),		
+									i(147624, { -- Cruel Gladiator's Dragonhide Armor		
+										i(144843),	-- Cruel Gladiator's Dragonhide Helm
+										i(144847),	-- Cruel Gladiator's Dragonhide Spaulders
+										i(144785),	-- Cruel Gladiator's Dragonhide Cloak
+										i(144837),	-- Cruel Gladiator's Dragonhide Robe
+										i(144851),	-- Cruel Gladiator's Dragonhide Wristguards
+										i(144841),	-- Cruel Gladiator's Dragonhide Gloves
+										i(144849),	-- Cruel Gladiator's Dragonhide Belt
+										i(144845),	-- Cruel Gladiator's Dragonhide Legguards
+										i(144839),	-- Cruel Gladiator's Dragonhide Moccasins
+									}),		
+									i(147633, { -- Cruel Gladiator's Leather Armor		
+										i(144951),	-- Cruel Gladiator's Leather Helm
+										i(144955),	-- Cruel Gladiator's Leather Spaulders
+										i(144797),	-- Cruel Gladiator's Shadowcape
+										i(144945),	-- Cruel Gladiator's Leather Tunic
+										i(144959),	-- Cruel Gladiator's Leather Wristguards
+										i(144949),	-- Cruel Gladiator's Leather Gloves
+										i(144957),	-- Cruel Gladiator's Leather Belt
+										i(144953),	-- Cruel Gladiator's Leather Legguards
+										i(144947),	-- Cruel Gladiator's Leather Slippers
+									}),		
+									i(147631, { -- Cruel Gladiator's Ironskin Armor		
+										i(144889),	-- Cruel Gladiator's Ironskin Helm
+										i(144893),	-- Cruel Gladiator's Ironskin Spaulders
+										i(144791),	-- Cruel Gladiator's Ironskin Cloak
+										i(144895),	-- Cruel Gladiator's Ironskin Tunic
+										i(144899),	-- Cruel Gladiator's Ironskin Wristguards
+										i(144887),	-- Cruel Gladiator's Ironskin Gloves
+										i(144897),	-- Cruel Gladiator's Ironskin Belt
+										i(144891),	-- Cruel Gladiator's Ironskin Legguards
+										i(144885),	-- Cruel Gladiator's Ironskin Slippers
+									}),		
+									i(147628, { -- Cruel Gladiator's Felskin Armor
+										["groups"] = {
+											i(144827),	-- Cruel Gladiator's Felskin Helm
+											i(144831),	-- Cruel Gladiator's Felskin Spaulders
+											i(144783),	-- Cruel Gladiator's Demonthread Cloak
+											i(144821),	-- Cruel Gladiator's Felskin Tunic
+											i(144835),	-- Cruel Gladiator's Felskin Wristguards
+											i(144825),	-- Cruel Gladiator's Felskin Gloves
+											i(144833),	-- Cruel Gladiator's Felskin Belt
+											i(144829),	-- Cruel Gladiator's Felskin Legguards
+											i(144823),	-- Cruel Gladiator's Felskin Boots
+										},
+										["classes"] = { 12 },
+									}),		
+									i(147622, { -- Cruel Gladiator's Chain Armor		
+										i(144859),	-- Cruel Gladiator's Chain Helm
+										i(144863),	-- Cruel Gladiator's Chain Spaulders
+										i(144787),	-- Cruel Gladiator's Drape of the Tracker
+										i(144853),	-- Cruel Gladiator's Chain Armor
+										i(144867),	-- Cruel Gladiator's Chain Armband
+										i(144857),	-- Cruel Gladiator's Chain Gauntlets
+										i(144865),	-- Cruel Gladiator's Chain Clasp
+										i(144861),	-- Cruel Gladiator's Chain Leggings
+										i(144855),	-- Cruel Gladiator's Chain Treads
+									}),		
+									i(147638, { -- Cruel Gladiator's Ringmail Armor		
+										i(144967),	-- Cruel Gladiator's Ringmail Helm
+										i(144971),	-- Cruel Gladiator's Ringmail Spaulders
+										i(144799),	-- Cruel Gladiator's Totemic Cloak
+										i(144961),	-- Cruel Gladiator's Ringmail Armor
+										i(144975),	-- Cruel Gladiator's Ringmail Armband
+										i(144965),	-- Cruel Gladiator's Ringmail Gauntlets
+										i(144973),	-- Cruel Gladiator's Ringmail Clasp
+										i(144969),	-- Cruel Gladiator's Ringmail Kilt
+										i(144963),	-- Cruel Gladiator's Ringmail Boots
+									}),		
+									i(147641, { -- Cruel Gladiator's Scaled Armor		
+										i(144913),	-- Cruel Gladiator's Scaled Helm
+										i(144917),	-- Cruel Gladiator's Scaled Shoulders
+										i(144793),	-- Cruel Gladiator's Greatcloak of Faith
+										i(144907),	-- Cruel Gladiator's Scaled Breastplate
+										i(144921),	-- Cruel Gladiator's Scaled Wristplates
+										i(144911),	-- Cruel Gladiator's Scaled Gauntlets
+										i(144919),	-- Cruel Gladiator's Scaled Girdle
+										i(144915),	-- Cruel Gladiator's Scaled Legguards
+										i(144909),	-- Cruel Gladiator's Scaled Sabatons
+									}),		
+									i(147635, { -- Cruel Gladiator's Plate Armor		
+										i(145017),	-- Cruel Gladiator's Plate Helm
+										i(145021),	-- Cruel Gladiator's Plate Shoulders
+										i(144803),	-- Cruel Gladiator's Cloak of Battle
+										i(145011),	-- Cruel Gladiator's Plate Chestpiece
+										i(145025),	-- Cruel Gladiator's Plate Wristplates
+										i(145015),	-- Cruel Gladiator's Plate Gauntlets
+										i(145023),	-- Cruel Gladiator's Plate Girdle
+										i(145019),	-- Cruel Gladiator's Plate Legguards
+										i(145013),	-- Cruel Gladiator's Plate Warboots
+									}),		
+									i(147626, { -- Cruel Gladiator's Dreadplate Armor		
+										i(144811),	-- Cruel Gladiator's Dreadplate Helm
+										i(144815),	-- Cruel Gladiator's Dreadplate Shoulders
+										i(144781),	-- Cruel Gladiator's Dreadcloak
+										i(144805),	-- Cruel Gladiator's Dreadplate Chestpiece
+										i(144819),	-- Cruel Gladiator's Dreadplate Wristplates
+										i(144809),	-- Cruel Gladiator's Dreadplate Gauntlets
+										i(144817),	-- Cruel Gladiator's Dreadplate Girdle
+										i(144813),	-- Cruel Gladiator's Dreadplate Legguards
+										i(144807),	-- Cruel Gladiator's Dreadplate Sabatons
+									}),		
+								},
 							}),
 						},
 					}),
