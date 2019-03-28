@@ -142,19 +142,19 @@ _.Zones =
 								q(51978, {	-- Sabertron (unknown criteria)
 									["g"] = {
 										{	-- Red Sabertron
-											["achievementID"] = 12936,	-- Sabertron Assemble
+											["achievementID"] = 13054,	-- Sabertron Assemble
 											["criteriaID"] = 1,	-- Red Sabertron
 										},
 										{	-- Yellow Sabertron
-											["achievementID"] = 12936,	-- Sabertron Assemble
+											["achievementID"] = 13054,	-- Sabertron Assemble
 											["criteriaID"] = 2,	-- Yellow Sabertron
 										},
 										{	-- Orange Sabertron
-											["achievementID"] = 12936,	-- Sabertron Assemble
+											["achievementID"] = 13054,	-- Sabertron Assemble
 											["criteriaID"] = 3,	--  Sabertron
 										},
 										{	-- Green Sabertron
-											["achievementID"] = 12936,	-- Sabertron Assemble
+											["achievementID"] = 13054,	-- Sabertron Assemble
 											["criteriaID"] = 4,	--  Sabertron
 										},
 									},
@@ -162,19 +162,19 @@ _.Zones =
 								q(51947, {	-- Sabertron (unknown criteria)
 									["g"] = {
 										{	-- Red Sabertron
-											["achievementID"] = 12936,	-- Sabertron Assemble
+											["achievementID"] = 13054,	-- Sabertron Assemble
 											["criteriaID"] = 1,	-- Red Sabertron
 										},
 										{	-- Yellow Sabertron
-											["achievementID"] = 12936,	-- Sabertron Assemble
+											["achievementID"] = 13054,	-- Sabertron Assemble
 											["criteriaID"] = 2,	-- Yellow Sabertron
 										},
 										{	-- Orange Sabertron
-											["achievementID"] = 12936,	-- Sabertron Assemble
+											["achievementID"] = 13054,	-- Sabertron Assemble
 											["criteriaID"] = 3,	--  Sabertron
 										},
 										{	-- Green Sabertron
-											["achievementID"] = 12936,	-- Sabertron Assemble
+											["achievementID"] = 13054,	-- Sabertron Assemble
 											["criteriaID"] = 4,	--  Sabertron
 										},
 									},
@@ -182,19 +182,19 @@ _.Zones =
 								q(51976, {	-- Sabertron (unknown criteria)
 									["g"] = {
 										{	-- Red Sabertron
-											["achievementID"] = 12936,	-- Sabertron Assemble
+											["achievementID"] = 13054,	-- Sabertron Assemble
 											["criteriaID"] = 1,	-- Red Sabertron
 										},
 										{	-- Yellow Sabertron
-											["achievementID"] = 12936,	-- Sabertron Assemble
+											["achievementID"] = 13054,	-- Sabertron Assemble
 											["criteriaID"] = 2,	-- Yellow Sabertron
 										},
 										{	-- Orange Sabertron
-											["achievementID"] = 12936,	-- Sabertron Assemble
+											["achievementID"] = 13054,	-- Sabertron Assemble
 											["criteriaID"] = 3,	--  Sabertron
 										},
 										{	-- Green Sabertron
-											["achievementID"] = 12936,	-- Sabertron Assemble
+											["achievementID"] = 13054,	-- Sabertron Assemble
 											["criteriaID"] = 4,	--  Sabertron
 										},
 									},
@@ -202,19 +202,19 @@ _.Zones =
 								q(51977, {	-- Sabertron (unknown criteria)
 									["g"] = {
 										{	-- Red Sabertron
-											["achievementID"] = 12936,	-- Sabertron Assemble
+											["achievementID"] = 13054,	-- Sabertron Assemble
 											["criteriaID"] = 1,	-- Red Sabertron
 										},
 										{	-- Yellow Sabertron
-											["achievementID"] = 12936,	-- Sabertron Assemble
+											["achievementID"] = 13054,	-- Sabertron Assemble
 											["criteriaID"] = 2,	-- Yellow Sabertron
 										},
 										{	-- Orange Sabertron
-											["achievementID"] = 12936,	-- Sabertron Assemble
+											["achievementID"] = 13054,	-- Sabertron Assemble
 											["criteriaID"] = 3,	--  Sabertron
 										},
 										{	-- Green Sabertron
-											["achievementID"] = 12936,	-- Sabertron Assemble
+											["achievementID"] = 13054,	-- Sabertron Assemble
 											["criteriaID"] = 4,	--  Sabertron
 										},
 									},
@@ -222,7 +222,7 @@ _.Zones =
 								q(51974, {	-- Sabertron (Copper, criteria 5)
 									["g"] = {
 										{	-- Copper Sabertron
-											["achievementID"] = 12936,	-- Sabertron Assemble
+											["achievementID"] = 13054,	-- Sabertron Assemble
 											["criteriaID"] = 5,	--  Sabertron
 										},
 									},
