@@ -831,6 +831,7 @@ _.Zones =
 								n(109497, {	-- Small Treasure Chest
 									i(137823),	-- Design: Prophetic Band (Rank 2)
 									i(137892),	-- Recipe: Dreadleather Bindings (Rank 3)
+									i(137718),  -- Schematic: Ironsight Cranial Cannon (Rank 3)
 								}),
 							},
 						}),
