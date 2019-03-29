@@ -130,6 +130,7 @@ profession(794, {	-- Archaeology
 				i(131733),	-- Spear of Rethu
 			})),
 		}),
+		i(137867),	-- Design: Shadowruby Band [Rank 3]
 		sp(196478, { 
 			i(130914),	-- Drogbar Gem-Roller
 			i(130929),	-- Pristine Drogbar Gem-Roller
