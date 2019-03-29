@@ -228,7 +228,8 @@ profession(202, {	-- Engineering
 						},
 						{
 							["name"] = "The Mortar: Reloaded",
-							["recipeID"] = 13240
+							["recipeID"] = 13240,
+							["u"] = 2
 						},
 						{
 							["name"] = "Thorium Grenade",
@@ -242,11 +243,13 @@ profession(202, {	-- Engineering
 					["g"] = {
 						{
 							["name"] = "Bloodvine Goggles",
-							["recipeID"] = 24356
+							["recipeID"] = 24356,
+							["u"] = 8
 						},
 						{
 							["name"] = "Bloodvine Lens",
-							["recipeID"] = 24357
+							["recipeID"] = 24357,
+							["u"] = 8
 						},
 						{
 							["name"] = "Bright-Eye Goggles",
@@ -429,7 +432,8 @@ profession(202, {	-- Engineering
 						},
 						{
 							["name"] = "Ice Deflector",
-							["recipeID"] = 3957
+							["recipeID"] = 3957,
+							["u"] = 7
 						},
 						{
 							["name"] = "Lifelike Mechanical Toad",
