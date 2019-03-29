@@ -1276,6 +1276,26 @@ _.NeverImplemented =
 			un(1, i(86554)),	-- Grand Master Cookbook
 		}),
 		n(-183, { 	-- Engineering
+			{	-- Blingtron's Circuit Design Tutorial
+				["itemID"] = 137692,
+				["spellID"] = 0,	-- Schematic wasn't implemented, spell is a reward from a quest now
+				["u"] = 1,
+			},
+			{	-- Schematic: Advanced Refrigeration Unit
+				["itemID"] = 94894,
+				["spellID"] = 0,	-- Schematic wasn't implemented, spell is a reward from a MoP world drop
+				["u"] = 1,
+			},
+			{	-- Schematic: Blink-Trigger Headgun (Rank 2)
+				["itemID"] = 137697,
+				["spellID"] = 0,	-- Schematic wasn't implemented, spell is a reward from a quest now
+				["u"] = 1,
+			},
+			{	-- Schematic: Bolt-Action Headgun (Rank 2)
+				["itemID"] = 137699,
+				["spellID"] = 0,	-- Schematic wasn't implemented, spell is a reward from a quest now
+				["u"] = 1,
+			},
 			un(1, i(162333)),	-- Schematic: Catchroot Seed Spreader
 			un(1, i(162737)),	-- Schematic: Catchroot Seed Spreader
 			un(1, i(162334)),	-- Schematic: Charged Refrigeration Projectile
@@ -1283,11 +1303,71 @@ _.NeverImplemented =
 			un(1, i(162338)),	-- Schematic: Electro-Induced Slumber Bomb
 			un(1, i(162335)),	-- Schematic: Fro-Grow Grenade
 			un(1, i(162739)),	-- Schematic: Fro-Grow Grenade
+			{	-- Schematic: Gravitational Reduction Slippers
+				["itemID"] = 151714,
+				["spellID"] = 0,	-- Schematic wasn't implemented, spell is a reward from a quest now
+				["u"] = 1,
+			},
+			{	-- Schematic: Jard's Peculiar Energy Source
+				["itemID"] = 97230,
+				["spellID"] = 0,	-- Schematic wasn't implemented, spell is a reward from a MoP world drop
+				["u"] = 1,
+			},
 			un(1, i(162336)),	-- Schematic: Neurological Immobilization Bomb
 			un(1, i(162740)),	-- Schematic: Neurological Immobilization Bomb
 			un(1, i(23813)),	-- Schematic: Blue Smoke Flare [Removed TBC Beta]
 			un(1, i(23812)),	-- Schematic: Red Smoke Flare [Removed TBC Beta]
 			un(1, i(165843)),	-- Schematic: Mechantula (165844 was the added version)
+			{	-- Schematic: Pierre
+				["itemID"] = 94893,
+				["spellID"] = 0,	-- Schematic wasn't implemented, spell is a reward from a MoP world drop
+				["u"] = 1,
+			},
+			{	-- Schematic: Rascal-Bot
+				["itemID"] = 100907,
+				["spellID"] = 0,	-- Schematic wasn't implemented, spell is a reward from a MoP world drop
+				["u"] = 1,
+			},
+			{	-- Schematic: Reaves Module: Failure Detection Mode
+				["itemID"] = 137693,
+				["spellID"] = 0,	-- Schematic wasn't implemented, spell is a reward from a quest now
+				["u"] = 1,
+			},			
+			{	-- Schematic: Reaves Module: Repair Mode
+				["itemID"] = 137694,
+				["spellID"] = 0,	-- Schematic wasn't implemented, spell is a reward from a quest now
+				["u"] = 1,
+			},
+			{	-- Schematic: Rechargeable Reaves Battery
+				["itemID"] = 144343,
+				["spellID"] = 0,	-- Schematic wasn't implemented, spell is a reward from a quest now
+				["u"] = 1,
+			},
+			{	-- Schematic: Reinforced Headgun (Rank 2)
+				["itemID"] = 137700,
+				["spellID"] = 0,	-- Schematic wasn't implemented, spell is a reward from a quest now
+				["u"] = 1,
+			},
+			{	-- Schematic: Sky Golem
+				["itemID"] = 94880,
+				["spellID"] = 0,	-- Schematic wasn't implemented, spell is a reward from a MoP world drop
+				["u"] = 1,
+			},
+			{	-- Schematic: Sonic Environment Enhancer
+				["itemID"] = 137725,
+				["spellID"] = 0,	-- Schematic wasn't implemented, spell is a reward from a quest now
+				["u"] = 1,
+			},
+			{	-- Schematic: Tactical Headgun (Rank 2)
+				["itemID"] = 137698,
+				["spellID"] = 0,	-- Schematic wasn't implemented, spell is a reward from a quest now
+				["u"] = 1,
+			},
+			{	-- Schematic: Wormhole Generator: Argus
+				["itemID"] = 151717,
+				["spellID"] = 0,	-- Schematic wasn't implemented, spell is a reward from a quest now
+				["u"] = 1,
+			},
 		}),
 		n(-185, { 	-- Inscription
 			un(1, i(87830)),	-- Recipe: Tigersblood Tincture

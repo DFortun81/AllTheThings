@@ -530,57 +530,62 @@ _.Craftables =
 			}),
 		}),
 		n(-183, { -- Engineering
+			filter(100, {	-- Mounts
+				{	-- Mecha-Mogul Mk2*
+					["itemID"] = 161134,	-- Mecha-Mogul Mk2
+				},
+			}),
 			filter(101, {	-- Battle Pets
-				{	-- Mechantula
+				{	-- Mechantula*
 					["itemID"] = 165849,	-- Mechantula
 				},
 			}),
 			filter(23, {	-- 1H Maces
-				{	-- Honorable Combatant's Discombobulator
+				{	-- Honorable Combatant's Discombobulator*
 					["itemID"] = 159937,	-- Honorable Combatant's Discombobulator
 				},
-				{	-- Magnetic Discombobulator
+				{	-- Magnetic Discombobulator*
 					["itemID"] = 152830,	-- Magnetic Discombobulator
 				},
-				{	-- Precision Attitude Adjuster
+				{	-- Precision Attitude Adjuster*
 					["itemID"] = 152837,	-- Precision Attitude Adjuster
 				},
-				{	-- Sinister Combatant's Discombobulator
+				{	-- Sinister Combatant's Discombobulator*
 					["itemID"] = 164680,	-- Sinister Combatant's Discombobulator
 				},
 			}),
 			filter(31, {	-- Guns
-				{	-- Finely-Tuned Stormsteel Destroyer [A]
+				{	-- Finely-Tuned Stormsteel Destroyer [A]*
 					["itemID"] = 161930,	-- Finely-Tuned Stormsteel Destroyer [A]
 				},
-				{	-- Finely-Tuned Stormsteel Destroyer [H]
+				{	-- Finely-Tuned Stormsteel Destroyer [H]*
 					["itemID"] = 153506,	-- Finely-Tuned Stormsteel Destroyer [H]
 				},
-				{	-- Honorable Combatant's Stormsteel Destroyer [A]
+				{	-- Honorable Combatant's Stormsteel Destroyer [A]*
 					["itemID"] = 161931,	-- Honorable Combatant's Stormsteel Destroyer [A]
 				},
-				{	-- Honorable Combatant's Stormsteel Destroyer [H]
+				{	-- Honorable Combatant's Stormsteel Destroyer [H]*
 					["itemID"] = 159936,	-- Honorable Combatant's Stormsteel Destroyer [H]
 				},
-				{	-- Sinister Combatant's Stormsteel Destroyer [A]
+				{	-- Sinister Combatant's Stormsteel Destroyer [A]*
 					["itemID"] = 164696,	-- Sinister Combatant's Stormsteel Destroyer [A]
 				},
-				{	-- Sinister Combatant's Stormsteel Destroyer [H]
+				{	-- Sinister Combatant's Stormsteel Destroyer [H]*
 					["itemID"] = 164679,	-- Sinister Combatant's Stormsteel Destroyer [H]
 				},
 			}),
 			n(-320,	{ 		-- Head
 				filter(4, {	-- Cloth
-					{	-- AZ3-R1-T3 Synthetic Specs
+					{	-- AZ3-R1-T3 Synthetic Specs*
 						["itemID"] = 160488,	-- AZ3-R1-T3 Synthetic Specs
 					},
-					{	-- Charged SP1-R1-73D Synthetic Specs
+					{	-- Charged SP1-R1-73D Synthetic Specs*
 						["itemID"] = 165895,	-- Charged SP1-R1-73D Synthetic Specs
 					},
-					{	-- Emblazoned Synthetic Specs
+					{	-- Emblazoned Synthetic Specs*
 						["itemID"] = 166980,	-- Emblazoned Synthetic Specs
 					},
-					{	-- Imbued Synthetic Specs
+					{	-- Imbued Synthetic Specs*
 						["itemID"] = 166979,	-- Imbued Synthetic Specs
 						["g"] = {
 							{	-- Schematic: Emblazoned Synthetic Specs
@@ -588,7 +593,7 @@ _.Craftables =
 							},
 						},
 					},
-					{	-- SP1-R1-73D Synthetic Specs
+					{	-- SP1-R1-73D Synthetic Specs*
 						["itemID"] = 165890,	-- SP1-R1-73D Synthetic Specs
 						["g"] = {
 							{	-- Schematic: Charged SP1-R1-73D Synthetic Specs
@@ -596,7 +601,7 @@ _.Craftables =
 							},
 						},
 					},
-					{	-- Surging Synthetic Specs
+					{	-- Surging Synthetic Specs*
 						["itemID"] = 165885,	-- Surging Synthetic Specs
 						["g"] = {
 							{	-- Schematic: SP1-R1-73D Synthetic Specs
@@ -606,16 +611,16 @@ _.Craftables =
 					},
 				}),
 				filter(5, {	-- Leather
-					{	-- AZ3-R1-T3 Gearspun Goggles
+					{	-- AZ3-R1-T3 Gearspun Goggles*
 						["itemID"] = 160489,	-- AZ3-R1-T3 Gearspun Goggles
 					},
-					{	-- Charged SP1-R1-73D Gearspun Goggles
+					{	-- Charged SP1-R1-73D Gearspun Goggles*
 						["itemID"] = 165896,	-- Charged SP1-R1-73D Gearspun Goggles
 					},
-					{	-- Emblazoned Gearspun Goggles
+					{	-- Emblazoned Gearspun Goggles*
 						["itemID"] = 166982,	-- Emblazoned Gearspun Goggles
 					},
-					{	-- Imbued Gearspun Goggles
+					{	-- Imbued Gearspun Goggles*
 						["itemID"] = 166981,	-- Imbued Gearspun Goggles
 						["g"] = {
 							{	-- Schematic: Emblazoned Gearspun Goggles
@@ -623,7 +628,7 @@ _.Craftables =
 							},
 						},
 					},
-					{	-- SP1-R1-73D Gearspun Goggles
+					{	-- SP1-R1-73D Gearspun Goggles*
 						["itemID"] = 165891,	-- SP1-R1-73D Gearspun Goggles
 						["g"] = {
 							{	-- Schematic: Charged SP1-R1-73D Gearspun Goggles
@@ -631,7 +636,7 @@ _.Craftables =
 							},
 						},
 					},
-					{	-- Surging Gearspun Goggles
+					{	-- Surging Gearspun Goggles*
 						["itemID"] = 165886,	-- Surging Gearspun Goggles
 						["g"] = {
 							{	-- Schematic: SP1-R1-73D Gearspun Goggles
@@ -641,16 +646,16 @@ _.Craftables =
 					},
 				}),
 				filter(6, {	-- Mail
-					{	-- AZ3-R1-T3 Bionic Bifocals
+					{	-- AZ3-R1-T3 Bionic Bifocals*
 						["itemID"] = 160490,	-- AZ3-R1-T3 Bionic Bifocals
 					},
-					{	-- Charged SP1-R1-73D Bionic Bifocals
+					{	-- Charged SP1-R1-73D Bionic Bifocals*
 						["itemID"] = 165897,	-- Charged SP1-R1-73D Bionic Bifocals
 					},
-					{	-- Emblazoned Bionic Bifocals
+					{	-- Emblazoned Bionic Bifocals*
 						["itemID"] = 166984,	-- Emblazoned Bionic Bifocals
 					},
-					{	-- Imbued Bionic Bifocals
+					{	-- Imbued Bionic Bifocals*
 						["itemID"] = 166983,	-- Imbued Bionic Bifocals
 						["g"] = {
 							{	-- Schematic: Emblazoned Bionic Bifocals
@@ -658,7 +663,7 @@ _.Craftables =
 							},
 						},
 					},
-					{	-- SP1-R1-73D Bionic Bifocals
+					{	-- SP1-R1-73D Bionic Bifocals*
 						["itemID"] = 165892,	-- SP1-R1-73D Bionic Bifocals
 						["g"] = {
 							{	-- Schematic: Charged SP1-R1-73D Bionic Bifocals
@@ -666,7 +671,7 @@ _.Craftables =
 							},
 						},
 					},
-					{	-- Surging Bionic Bifocals
+					{	-- Surging Bionic Bifocals*
 						["itemID"] = 165887,	-- Surging Bionic Bifocals
 						["g"] = {
 							{	-- Schematic: SP1-R1-73D Bionic Bifocals
@@ -676,16 +681,16 @@ _.Craftables =
 					},
 				}),
 				filter(7, {	-- Plate
-					{	-- AZ3-R1-T3 Orthogonal Optics
+					{	-- AZ3-R1-T3 Orthogonal Optics*
 						["itemID"] = 160491,	-- AZ3-R1-T3 Orthogonal Optics
 					},
-					{	-- Charged SP1-R1-73D Orthogonal Optics
+					{	-- Charged SP1-R1-73D Orthogonal Optics*
 						["itemID"] = 165898,	-- Charged SP1-R1-73D Orthogonal Optics
 					},
-					{	-- Emblazoned Orthogonal Optics
+					{	-- Emblazoned Orthogonal Optics*
 						["itemID"] = 166986,	-- Emblazoned Orthogonal Optics
 					},
-					{	-- Imbued Orthogonal Optics
+					{	-- Imbued Orthogonal Optics*
 						["itemID"] = 166985,	-- Imbued Orthogonal Optics
 						["g"] = {
 							{	-- Schematic: Emblazoned Orthogonal Optics
@@ -693,7 +698,7 @@ _.Craftables =
 							},
 						},
 					},
-					{	-- SP1-R1-73D Orthogonal Optics
+					{	-- SP1-R1-73D Orthogonal Optics*
 						["itemID"] = 165893,	-- SP1-R1-73D Orthogonal Optics
 						["g"] = {
 							{	-- Schematic: Charged SP1-R1-73D Orthogonal Optics
@@ -701,7 +706,7 @@ _.Craftables =
 							},
 						},
 					},
-					{	-- Surging Orthogonal Optics
+					{	-- Surging Orthogonal Optics*
 						["itemID"] = 165888,	-- Surging Orthogonal Optics
 						["g"] = {
 							{	-- Schematic: SP1-R1-73D Orthogonal Optics

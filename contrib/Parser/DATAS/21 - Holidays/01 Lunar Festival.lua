@@ -1510,7 +1510,17 @@ _.Holidays = bubbleDown({["u"] = 17},
 								un(17, i(21734)),  -- Schematic: Large Green Rocket Cluster
 							})),
 							un(17, i(44919)),  -- Schematic: Firework Launcher
+							{	-- Schematic: Firework Launcher
+								["itemID"] = 21738,
+								["u"] = 7, -- replaced with BOP version
+								["spellID"] = 0,   	-- Old BOE version new version is 44919 and BOP, using spellID = 0 to delink the unused plans from the recipe otherwise the recipe will show as unobtainable in tooltips
+							},
 							un(17, i(44918)),  -- Schematic: Cluster Launcher
+							{	-- Schematic: Cluster Launcher
+								["itemID"] = 21737,
+								["u"] = 7, -- replaced with BOP version
+								["spellID"] = 0,   	-- Old BOE version new version is 44918 and BOP, using spellID = 0 to delink the unused plans from the recipe otherwise the recipe will show as unobtainable in tooltips
+							},
 							un(17, i(116146)),  -- Schematic: Snake Firework
 							un(17, i(116144)),  -- Schematic: Horde Firework
 							un(17, i(116142)),  -- Schematic: Alliance Firework

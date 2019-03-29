@@ -1342,7 +1342,10 @@ _.Zones =
 								["creatureID"] = 120266
 							}),
 						}),
-						{
+						{	-- Schematic: Reaves Module: Wormhole Generator Mode
+							["itemID"] = 137695, 	-- Schematic: Reaves Module: Wormhole Generator Mode
+						},
+						{	-- Vantus Rune Technique: Chronomatic Anomaly [Rank 3]
 							["itemID"] = 137775,	-- Vantus Rune Technique: Chronomatic Anomaly [Rank 3]
 							["description"] = "I got it after about ~20-30 min of fishing from a Cursed Queenfish pool in the lake near Narthalas Academy. No legendary pole equipped or any special lures.",
 						},
@@ -1508,14 +1511,10 @@ _.Zones =
 						q(46263),	-- Weaving Fel Webs
 						q(42274),	-- Won't Anyone Think of the Whelps?
 						q(41287),	-- Work Order: Aethril
-						q(41651),	-- Work Order: Azsunite Pendant
-						q(41675),	-- Work Order: Blink-Trigger Headgun
 						q(41267),	-- Work Order: Cursed Queenfish
 						q(41657),	-- Work Order: Draughts of Raw Magic
 						q(41311),	-- Work Order: Leystone
-						q(41645),	-- Work Order: Silkweave Epaulets
 						q(41326),	-- Work Order: Stormscales
-						q(41669),	-- Work Order: Word of Critical Strike
 						q(44788),	-- Work Study: Bestiaries of Azsuna
 					}),
 --]]					
@@ -1962,6 +1961,25 @@ _.Zones =
 								}),
 								q(40876, {	-- 'Locke, Stock and Barrel
 									["qg"] = 102196,	-- Fargo Flintlocke
+									["groups"] = {
+										{	-- Schematic: Better Headguns
+											["recipeID"] = 201611,	-- Schematic: Better Headguns
+											["groups"] = {
+												{	-- Blink-Trigger Headgun (Rank 2)
+													["recipeID"] = 198991,	-- Blink-Trigger Headgun (Rank 2)
+												},
+												{	-- Bolt-Action Headgun (Rank 2)
+													["recipeID"] = 198993,	-- Bolt-Action Headgun (Rank 2)
+												},
+												{	-- Reinforced Headgun (Rank 2)
+													["recipeID"] = 198994,	-- Reinforced Headgun (Rank 2)
+												},
+												{	-- Tactical Headgun (Rank 2)
+													["recipeID"] = 198992,	-- Tactical Headgun (Rank 2)
+												},
+											},
+										},
+									},
 								}),
 								q(40859, {	-- The Latest Fashion: Headguns!
 									["sourceQuest"] = 40856,	-- It'll Cost You
@@ -2701,10 +2719,17 @@ _.Zones =
 						i(144311),	-- Formula: Enchant Neck - Mark of the Versatile (Rank 1)
 					}),
 					n(102196, {	-- Fargo Flintlocke
-						i(136632),	-- Chaos Blaster
-						i(136629),	-- Felgibber Shotgun
-						i(136631),	-- Surface-to-Infernal Rocket Launcher
-						i(136630),	-- "Twirling Bottom" Repeater
+						["coord"] = { 43.0, 62.84, 630 },
+						["groups"] = {
+							i(137703),	-- Schematic: Double-Barreled Cranial Cannon
+							i(137704),	-- Schematic: Ironsight Cranial Cannon
+							i(137702),	-- Schematic: Sawed-Off Cranial Cannon
+							i(137701),	-- Schematic: Semi-Automagic Cranial Cannon
+							i(136632),	-- Chaos Blaster
+							i(136629),	-- Felgibber Shotgun
+							i(136631),	-- Surface-to-Infernal Rocket Launcher
+							i(136630),	-- "Twirling Bottom" Repeater
+						},
 					}),
 					n(107963, { -- Kharmeera
 						i(128574),	-- Formula: Enchant Cloak - Binding of Agility (Rank 1)
@@ -2886,6 +2911,14 @@ _.Zones =
 						},
 						["isWQ"] = 110,
 						["requireSkill"] = 165,	-- Leatherworking
+					},
+					{	-- Work Order: Blink-Trigger Headgun
+						["questID"] = 41639,
+						["isWQ"] = 110,
+						["requireSkill"] = 202,	-- Engineering
+						["groups"] = {
+							i(137711),	-- Schematic: Blink-Trigger Headgun (Rank 3)
+						},
 					},
 					{	-- Work Order: Deep Amber Loop
 						["questID"] = 41652,

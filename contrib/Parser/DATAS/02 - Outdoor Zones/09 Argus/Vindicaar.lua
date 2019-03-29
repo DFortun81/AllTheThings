@@ -730,11 +730,13 @@ _.Zones =
 						["sourceQuests"] = { 46941 }, -- The Path Forward
 					}),
 					q(48065, { -- Extraterrestrial Exploration
-						["groups"] = {
-							i(151652), -- Wormhole Generator: Argus
-						},
 						["requireSkill"] = 202, -- Engineering
 						["sourceQuests"] = { 48069 }, -- The Wrench Calls
+						["groups"] = {
+							{	-- Wormhole Generator: Argus
+								["recipeID"] = 247744, 	-- Wormhole Generator: Argus
+							},
+						},
 					}),
 					q(48074, { -- Looming Over Me
 						["groups"] = {

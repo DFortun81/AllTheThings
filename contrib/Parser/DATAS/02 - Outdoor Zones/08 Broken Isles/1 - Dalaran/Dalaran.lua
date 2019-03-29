@@ -440,10 +440,18 @@ _.Zones =
 						q(41668),	-- Vantus Rune Work Order: Il'gynoth, The Heart of Corruption
 						q(41662),	-- Work Order: Ancient Rejuvenation Potions
 						q(41656),	-- Work Order: Azsunite Loop
-						q(41680),	-- Work Order: Failure Detection Pylon
 						q(41638),	-- Work Order: Leystone Gauntlets
 						q(41650),	-- Work Order: Silkweave Hood
 --]]					
+						{	-- Work Order: Failure Detection Pylon
+							["questID"] = 41680,
+							["qg"] = 32725,	-- Warmage Silva
+							["isWQ"] = 110,
+							["requireSkill"] = 202,	-- Engineering
+							["groups"] = {
+								i(137724),	-- Schematic: Failure Detection Pylon (Rank 3)
+							},
+						},
 						{	-- Work Order: Warhide Gloves
 							["questID"] = 41644,
 							["qg"] = 32725,	-- Warmage Silva

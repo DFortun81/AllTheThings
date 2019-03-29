@@ -879,6 +879,9 @@ _.Zones =
 								["creatureID"] = 120456
 							}),
 						}),
+						{	-- Schematic: Reaves Module: Wormhole Generator Mode
+							["itemID"] = 137695, 	-- Schematic: Reaves Module: Wormhole Generator Mode
+						},
 					}),
 				}),
 				n(-17, { 	-- Quests
@@ -1480,6 +1483,14 @@ _.Zones =
 						n(-387, {	-- Relics
 							i(143682),	-- Viscous Terror
 						}),
+						{	-- Work Order: Pump-Action Bandage Gun
+							["questID"] = 41676,
+							["isWQ"] = 110,
+							["requireSkill"] = 202,	-- Engineering
+							["groups"] = {
+								i(137721),	-- Schematic: Pump-Action Bandage Gun (Rank 3)
+							},
+						},
 						{	-- Work Order: Silkweave Gloves
 							["questID"] = 41646,
 							["groups"] = {

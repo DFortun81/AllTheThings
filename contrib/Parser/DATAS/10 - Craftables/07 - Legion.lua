@@ -229,6 +229,31 @@ _.Craftables =
 			}),
 		}),
 		n(-183, {	-- Engineering
+			filter(101, {	-- Pets
+				i(132519),	-- Trigger*
+			}),
+			filter(102, {	-- Toys
+				i(132518),	-- Blingtron's Circuit Design Tutorial*					
+				i(151652),	-- Wormhole Generator: Argus*
+			}),
+			n(-318, {	-- Armour
+				i(132500),	-- Blink-Trigger Headgun*
+				i(132502),	-- Bolt-Action Headgun*
+				i(144333),	-- Chain Skullblasters*
+				i(132506),	-- Double-Barreled Cranial Cannon*
+				i(144334),	-- Heavy Skullblasters*
+				i(132507),	-- Ironsight Cranial Cannon*
+				i(132503),	-- Reinforced Headgun*
+				i(144332),	-- Rugged Skullblasters*
+				i(132505),	-- Sawed-Off Cranial Cannon*
+				i(132504),	-- Semi-Automagic Cranial Cannon*
+				i(132501),	-- Tactical Headgun*
+				i(144331),	-- Tailored Skullblasters*
+			}),
+			filter(54, {	-- Relics
+				i(136687),	-- "The Felic"*
+				i(136688),	-- Shockinator*
+			}),
 			n(-494, { -- Miscellaneous
 				n(101527, { -- Blingtron 6000
 					i(132892, { -- Blingtron 6000 Gift Package
@@ -255,18 +280,6 @@ _.Craftables =
 					}),
 				}),
 			}),
-				i(132500),	-- Blink-Trigger Headgun
-				i(132502),	-- Bolt-Action Headgun
-				i(144333),	-- Chain Skullblasters
-				i(132506),	-- Double-Barreled Cranial Cannon
-				i(144334),	-- Heavy Skullblasters
-				i(132507),	-- Ironsight Cranial Cannon
-				i(132503),	-- Reinforced Headgun
-				i(144332),	-- Rugged Skullblasters
-				i(132505),	-- Sawed-Off Cranial Cannon
-				i(132504),	-- Semi-Automagic Cranial Cannon
-				i(132501),	-- Tactical Headgun
-				i(144331),	-- Tailored Skullblasters
 		}),
 		n(-185, {	-- Inscription
 		-- Reviewed and updated as of 11.21.2018 BfA 8.0

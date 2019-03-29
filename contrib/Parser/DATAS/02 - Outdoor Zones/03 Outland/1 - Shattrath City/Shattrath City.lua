@@ -2260,10 +2260,15 @@ _.Zones =
 						["coord"] = {44.8, 91.6 },
 					}),
 					n(19661, {	-- Viggz Shinesparked <Engineering Supplies>
+						["coord"] = { 64.8, 69.6 },
 						["groups"] = {
 							i(23799),	-- Schematic: Adamantite Rifle
+							{				-- Schematic: Fused Wiring
+								["itemID"] = 32381,	-- Schematic: Fused Wiring
+								["spellID"] = 0,
+								["u"] = 7, -- now learned from trainer, schematic was removed from game
+							},
 						},
-						["coord"] = { 64.8, 69.6 },
 					}),
 					n(18484, {	-- Wind Trader Lathrai
 						["groups"] = {

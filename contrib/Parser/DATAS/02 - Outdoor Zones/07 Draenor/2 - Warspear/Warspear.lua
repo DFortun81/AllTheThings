@@ -1280,6 +1280,18 @@ _.Zones =
 							i(118488),	-- Schematic: Wormhole Centrifuge
 							i(128327),	-- Small Pouch of Coins
 						}),
+						{	-- Schematic: Blackrock Rifling
+							["itemID"] = 120267,	-- Schematic: Blackrock Rifling
+							["u"] = 2,	-- Deprecated and removed in 6.2.0
+						},
+						{	-- Schematic: Oglethorpe's Octagonal Lenses
+							["itemID"] = 122546,	-- Schematic: Oglethorpe's Octagonal Lenses
+							["u"] = 2,	-- Deprecated and removed in 6.2.0
+						},
+						{	-- Schematic: Precision Scope Tuning Kit
+							["itemID"] = 122554,	-- Schematic: Precision Scope Tuning Kit
+							["u"] = 2,	-- Deprecated and removed in 6.2.0
+						},
 					}),
 					n(87550, { 	-- Nonn Threeratchet <Blacksmithing Plans>
 						i(115356, {	-- Draenor Blacksmithing

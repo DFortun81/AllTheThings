@@ -848,6 +848,9 @@ _.Zones =
 								["creatureID"] = 120457
 							}),
 						}),
+						{	-- Schematic: Reaves Module: Wormhole Generator Mode
+							["itemID"] = 137695, 	-- Schematic: Reaves Module: Wormhole Generator Mode
+						},
 					}),
 					prof(197, {	-- Tailoring
 						desc(i(137681), "Can drop from any Feltotem."),	-- Recipe: Bloodtotem Saddle Blanket
@@ -1799,7 +1802,6 @@ _.Zones =
 						q(41766),	-- Wildlife Protection Force
 						q(41525),	-- Wispy Foxflower
 						q(46194),	-- Wolves of the Legion
-						q(41677),	-- Work Order: Auto-Hammer
 						q(41659),	-- Work Order: Avalanche Elixirs
 						q(41223),	-- Work Order: Foxflower
 						q(41240),	-- Work Order: Highmountain Salmon
@@ -2097,6 +2099,14 @@ _.Zones =
 					}),
 				}),
 				n(-34, { 	-- World Quests
+					{	-- Work Order: Auto-Hammer
+						["questID"] = 41677,
+						["isWQ"] = 110,
+						["requireSkill"] = 202,	-- Engineering
+						["groups"] = {
+							i(137723),	-- Schematic: Auto-Hammer (Rank 3)
+						},
+					},
 					{	-- Work Order: Battlebound Armbands
 						["questID"] = 41641,
 						["groups"] = {

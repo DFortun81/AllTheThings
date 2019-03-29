@@ -61,6 +61,11 @@ _.Zones =
 						["coord"] = { 59.2, 50.8, 83 },
 						["groups"] = {
 							i(16050),       -- Schematic: Delicate Arcanite Converter
+							{				-- Schematic: Fused Wiring
+								["itemID"] = 32381,	-- Schematic: Fused Wiring
+								["spellID"] = 0,
+								["u"] = 7, -- now learned from trainer, schematic was removed from game
+							},
 							i(18652),       -- Schematic: Gyrofreeze Ice Reflector
 							i(16046),       -- Schematic: Masterwork Target Dummy
 							i(18656),       -- Schematic: Powerful Seaforium Charge

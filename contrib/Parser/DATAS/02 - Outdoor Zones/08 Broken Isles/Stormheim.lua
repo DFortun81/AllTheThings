@@ -716,6 +716,9 @@ _.Zones =
 								["creatureID"] = 120458
 							}),
 						}),
+						{	-- Schematic: Reaves Module: Wormhole Generator Mode
+							["itemID"] = 137695, 	-- Schematic: Reaves Module: Wormhole Generator Mode
+						},
 					}),
 					prof(393, {	-- Skinning
 						n(91799, {	-- Juvenile Stormwing
@@ -1525,6 +1528,16 @@ _.Zones =
 									},
 								},
 							},
+							{	-- The Shell, You Say?
+								["questID"] = 40866,	-- The Shell, You Say?
+								["qg"] = 102198,	-- Fargo Flintlocke
+								["requireSkill"] = 202,
+								["groups"] = {
+									{	-- Schematic: Sonic Environment Enhancer
+										["recipeID"] = 201596,	-- Schematic: Sonic Environment Enhancer
+									},
+								},
+							},
 							q(40868, {	-- Wibbly-Wobbly, Timey-Wimey
 								["groups"] = {
 									sp(201602),	-- Schematic: Intra-Dalaran Wormhole Generator
@@ -1700,8 +1713,7 @@ _.Zones =
 					q(44775),	-- The Peak of Bones
 					q(41168),	-- The Purple Hills of Mac'Aree
 					q(41170),	-- The Relic Renewed
-					q(45486),	-- The Reluctant Queen					
-					q(40866),	-- The Shell, You Say?
+					q(45486),	-- The Reluctant Queen
 					q(45406),	-- The Storm's Fury
 					q(44117),	-- Time Flies When Yer Havin' Rum!
 					q(45522),	-- To Silence the Bonespeakers
@@ -2128,6 +2140,11 @@ _.Zones =
 				n(0, { 		-- Zone Drops
 					["groups"] = {
 						i(144309),	-- Formula: Enchant Neck - Mark of the Master (Rank 2)
+						i(137717, {	-- Schematic: Double-Barreled Cranial Cannon (Rank 3)
+							["crs"] = {
+								111393, 	-- Deathcaller Mystic
+							},
+						}),
 						i(136701),	-- Schematic: Shockinator
 						i(137729),	-- Technique: Codex of the Tranquil Mind
 						i(141043),	-- Technique: Glyph of Arachnophobia

@@ -586,6 +586,9 @@ _.Zones =
 							}),
 						}),
 						i(137845),	-- Design: Maelstrom Band (Rank 3)
+						{	-- Schematic: Reaves Module: Wormhole Generator Mode
+							["itemID"] = 137695, 	-- Schematic: Reaves Module: Wormhole Generator Mode
+						},
 					}),
 				}),
 				n(-17, { 	-- Quests
@@ -1784,6 +1787,15 @@ _.Zones =
 							},
 							["isWQ"] = 110,
 							["requireSkill"] = 165,	-- Leatherworking
+						},
+						{	-- Work Order: Deployable Bullet Dispenser
+							["questID"] = 41679,
+							["qg"] = 115736,	-- First Arcanist Thalyssra
+							["isWQ"] = 110,
+							["requireSkill"] = 202,	-- Engineering
+							["groups"] = {
+								i(137719),	-- Schematic: Deployable Bullet Dispenser (Rank 3)
+							},
 						},
 						{	-- Work Order: Queen's Opal Pendant
 							["questID"] = 41655,
