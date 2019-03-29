@@ -21,6 +21,9 @@ _.Instances = { tier(7, {	-- Legion
 				}),
 			}),
 			d(1, {		-- Normal
+				n(0, { 		-- Zone Drop
+					i(137717),	-- Schematic: Double-Barreled Cranial Cannon (Rank 3)
+				}),
 				cr(94960, e(1485, {	-- Hymdall
 					i(133621),	-- Adorned Guardian's Bracers
 					i(133628),	-- Battleborne Sentinel Gauntlets
@@ -100,6 +103,9 @@ _.Instances = { tier(7, {	-- Legion
 			d(2, {		-- Heroic
 				["lvl"] = 110,
 				["groups"] = {
+					n(0, { 		-- Zone Drop
+						i(137717),	-- Schematic: Double-Barreled Cranial Cannon (Rank 3)
+					}),
 					cr(94960, e(1485, {	-- Hymdall
 						i(133621),	-- Adorned Guardian's Bracers
 						i(133628),	-- Battleborne Sentinel Gauntlets
@@ -185,6 +191,9 @@ _.Instances = { tier(7, {	-- Legion
 					n(-4, {	-- Achievements
 						ach(10542),	-- I Got What You Mead
 						ach(10544),	-- Stag Party
+					}),
+					n(0, { 		-- Zone Drop
+						i(137717),	-- Schematic: Double-Barreled Cranial Cannon (Rank 3)
 					}),
 					cr(94960, e(1485, {	-- Hymdall
 						i(133621),	-- Adorned Guardian's Bracers
