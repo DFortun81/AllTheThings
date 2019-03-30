@@ -24,11 +24,16 @@ _.Instances = { tier(7, {	-- Legion
 					116689,	-- Demonic Inquisition (Atrigan)*
 					116691,	-- Demonic Inquisition (Belac)*
 					116407,	-- Harjatan
-					118523,	-- Sisters of the Moon (Huntress Kasparian)
+					118374,	-- Sisters of the Moon (Captain Yathae Moonstrike)*
+					118523,	-- Sisters of the Moon (Huntress Kasparian)*
+					118518,	-- Sisters of the Moon (Priestess Lunaspyre)*
 					115767,	-- Mistress Sassz'ine
-					119072,	-- The Desolate Host* (may need additional IDs added through crs)
+					119072,	-- The Desolate Host*
+					118460,	-- The Desolate Host — Engine of Souls*
+					118462,	-- The Desolate Host — Soul Queen Dejahna*
 					118289,	-- Maiden of Vigilance
 					116939,	-- Fallen Avatar*
+					117264,	-- Fallen Avatar — Maiden of Valor*
 					117269,	-- Kil'jaeden
 				},
 				["groups"] = {
@@ -190,19 +195,30 @@ _.Instances = { tier(7, {	-- Legion
 								i(147035),
 							},
 						}),	
-						cr(118523, e(1903, {	-- Sisters of the Moon (Huntress Kasparian)
-							i(147033),
-							i(146997),
-							i(147054),
-							i(147068),
-							i(147031),
-							i(147061),
-							i(147056),
-							i(146987),
-							i(147021),	-- Yathae's Thumb Ring
-						})),
+						e(1903, {	-- Sisters of the Moon
+							["crs"] = {
+								118374,	-- Sisters of the Moon (Captain Yathae Moonstrike)
+								118523,	-- Sisters of the Moon (Huntress Kasparian)
+								118518,	-- Sisters of the Moon (Priestess Lunaspyre)
+							},
+							["g"] = {
+								i(147033),
+								i(146997),
+								i(147054),
+								i(147068),
+								i(147031),
+								i(147061),
+								i(147056),
+								i(146987),
+								i(147021),	-- Yathae's Thumb Ring
+							},
+						}),
 						e(1896, {	-- The Desolate Host
-							["crs"] = { 119072 },	-- The Desolate Host
+							["crs"] = {
+								119072,	-- The Desolate Host
+								118460,	-- The Desolate Host — Engine of Souls
+								118462,	-- The Desolate Host — Soul Queen Dejahna
+							},
 							["g"] = {
 								i(147063),
 								i(147070),
@@ -256,7 +272,10 @@ _.Instances = { tier(7, {	-- Legion
 --]]								
 						})),
 						e(1873, {	-- Fallen Avatar
-							["crs"] = { 116939 },	-- Fallen Avatar
+							["crs"] = {
+								116939,	-- Fallen Avatar
+								117264,	-- Fallen Avatar — Maiden of Valor
+							},
 							["g"] = {
 								i(146991),
 								i(147132),
@@ -419,17 +438,24 @@ _.Instances = { tier(7, {	-- Legion
 					i(147100),	-- Calcified Barnacle
 					i(147020),	-- Scaled Band of Servitude
 				})),
-				cr(118523, e(1903, {	-- Sisters of the Moon (Huntress Kasparian)
-					i(147068),
-					i(147061),
-					i(147033),
-					i(147031),
-					i(147054),
-					i(146997),
-					i(147056),
-					i(146987),
-					i(147021),	-- Yathae's Thumb Ring
-				})),
+				e(1903, {	-- Sisters of the Moon
+					["crs"] = {
+						118374,	-- Sisters of the Moon (Captain Yathae Moonstrike)
+						118523,	-- Sisters of the Moon (Huntress Kasparian)
+						118518,	-- Sisters of the Moon (Priestess Lunaspyre)
+					},
+					["g"] = {
+						i(147068),
+						i(147061),
+						i(147033),
+						i(147031),
+						i(147054),
+						i(146997),
+						i(147056),
+						i(146987),
+						i(147021),	-- Yathae's Thumb Ring
+					},
+				}),
 				cr(115767, e(1861, {	-- Mistress Sassz'ine
 					i(146985),
 					i(147125),
@@ -451,7 +477,11 @@ _.Instances = { tier(7, {	-- Legion
 					i(143643)
 				})),
 				e(1896, {	-- The Desolate Host
-					["crs"] = { 119072 },	-- The Desolate Host
+					["crs"] = {
+						119072,	-- The Desolate Host
+						118460,	-- The Desolate Host — Engine of Souls
+						118462,	-- The Desolate Host — Soul Queen Dejahna
+					},
 					["g"] = {
 						i(147063),
 						i(147070),
@@ -499,7 +529,10 @@ _.Instances = { tier(7, {	-- Legion
 --]]			
 				})),
 				e(1873, {	-- Fallen Avatar
-					["crs"] = { 116939 },	-- Fallen Avatar
+					["crs"] = {
+						116939,	-- Fallen Avatar
+						117264,	-- Fallen Avatar — Maiden of Valor
+					},
 					["g"] = {
 						i(147126),
 						i(147193),
@@ -653,17 +686,24 @@ _.Instances = { tier(7, {	-- Legion
 					i(147100),	-- Calcified Barnacle
 					i(147020),	-- Scaled Band of Servitude
 				})),
-				cr(118523, e(1903, {	-- Sisters of the Moon (Huntress Kasparian)
-					i(147068),
-					i(147061),
-					i(147033),
-					i(147031),
-					i(147054),
-					i(146997),
-					i(147056),
-					i(146987),
-					i(147021),	-- Yathae's Thumb Ring
-				})),
+				e(1903, {	-- Sisters of the Moon
+					["crs"] = {
+						118374,	-- Sisters of the Moon (Captain Yathae Moonstrike)
+						118523,	-- Sisters of the Moon (Huntress Kasparian)
+						118518,	-- Sisters of the Moon (Priestess Lunaspyre)
+					},
+					["g"] = {
+						i(147068),
+						i(147061),
+						i(147033),
+						i(147031),
+						i(147054),
+						i(146997),
+						i(147056),
+						i(146987),
+						i(147021),	-- Yathae's Thumb Ring
+					},
+				}),
 				cr(115767, e(1861, {	-- Mistress Sassz'ine
 					i(146985),
 					i(147125),
@@ -685,7 +725,11 @@ _.Instances = { tier(7, {	-- Legion
 					i(143643)
 				})),
 				e(1896, {	-- The Desolate Host
-					["crs"] = { 119072 },	-- The Desolate Host
+					["crs"] = {
+						119072,	-- The Desolate Host
+						118460,	-- The Desolate Host — Engine of Souls
+						118462,	-- The Desolate Host — Soul Queen Dejahna
+					},
 					["g"] = {
 						i(147063),
 						i(147070),
@@ -733,7 +777,10 @@ _.Instances = { tier(7, {	-- Legion
 --]]
 				})),
 				e(1873, {	-- Fallen Avatar
-					["crs"] = { 116939 },	-- Fallen Avatar
+					["crs"] = {
+						116939,	-- Fallen Avatar
+						117264,	-- Fallen Avatar — Maiden of Valor
+					},
 					["g"] = {
 						i(147126),
 						i(147193),
@@ -887,17 +934,24 @@ _.Instances = { tier(7, {	-- Legion
 					i(147100),	-- Calcified Barnacle
 					i(147020),	-- Scaled Band of Servitude
 				})),
-				cr(118523, e(1903, {	-- Sisters of the Moon (Huntress Kasparian)
-					i(147068),
-					i(147061),
-					i(147033),
-					i(147031),
-					i(147054),
-					i(146997),
-					i(147056),
-					i(146987),
-					i(147021),	-- Yathae's Thumb Ring
-				})),
+				e(1903, {	-- Sisters of the Moon
+					["crs"] = {
+						118374,	-- Sisters of the Moon (Captain Yathae Moonstrike)
+						118523,	-- Sisters of the Moon (Huntress Kasparian)
+						118518,	-- Sisters of the Moon (Priestess Lunaspyre)
+					},
+					["g"] = {
+						i(147068),
+						i(147061),
+						i(147033),
+						i(147031),
+						i(147054),
+						i(146997),
+						i(147056),
+						i(146987),
+						i(147021),	-- Yathae's Thumb Ring
+					},
+				}),
 				cr(115767, e(1861, {	-- Mistress Sassz'ine
 					i(146985),
 					i(147125),
@@ -919,7 +973,11 @@ _.Instances = { tier(7, {	-- Legion
 					i(143643)
 				})),
 				e(1896, {	-- The Desolate Host
-					["crs"] = { 119072 },	-- The Desolate Host
+					["crs"] = {
+						119072,	-- The Desolate Host
+						118460,	-- The Desolate Host — Engine of Souls
+						118462,	-- The Desolate Host — Soul Queen Dejahna
+					},
 					["g"] = {
 						i(147063),
 						i(147070),
@@ -967,7 +1025,10 @@ _.Instances = { tier(7, {	-- Legion
 --]]
 				})),
 				e(1873, {	-- Fallen Avatar
-					["crs"] = { 116939 },	-- Fallen Avatar
+					["crs"] = {
+						116939,	-- Fallen Avatar
+						117264,	-- Fallen Avatar — Maiden of Valor
+					},
 					["g"] = {
 						i(147126),
 						i(147193),
