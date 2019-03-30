@@ -1418,6 +1418,9 @@ _.NeverImplemented =
 			un(1, i(141061)),	-- Technique: Glyph of the Abyssal (Item never made it into the game)
 			un(1, i(141065)),	-- Technique: Glyph of the Terrorguard (Item never made it into the game)
 		}),
+		--n(-185, { 	-- Jewelcrafting
+			un(1, i(20972)),	-- Design: Silver Rose Pendant
+		--}),
 		n(-187, {	-- Leatherworking
 			{	-- Pattern: Cloak of Beasts
 				["itemID"] = 67039,   	-- Pattern: Cloak of Beasts
