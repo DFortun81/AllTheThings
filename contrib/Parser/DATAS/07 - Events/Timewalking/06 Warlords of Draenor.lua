@@ -49,7 +49,7 @@ _.WorldEvents =
 							i(167927),	-- Commendation of the Saberstalkers
 							i(167929),	-- Commendation of the Council of Exarchs - 50
 							i(167932),	-- Commendation of the Sha'tari Defense - 50
-							i(167918),	-- Commendation of the Hand of the Prophet - 50	
+							i(168018),	-- Commendation of the Hand of the Prophet - 50	
 							i(122338),	-- Ancient Heirloom Armor Casing
 							i(122339),	-- Ancient Heirloom Scabbard
 							i(122340),	-- Timeworn Heirloom Armor Casing
@@ -100,7 +100,7 @@ _.WorldEvents =
 							i(167927),	-- Commendation of the Saberstalkers
 							i(167928),	--  Commendation of the Frostwolf Orcs - 50
 							i(167930),	--  Commendation of the Laughing Skull Orcs - 50
-							i(167917),	--  Commendation of Vol'jin's Headhunters - 50	
+							i(168017),	--  Commendation of Vol'jin's Headhunters - 50	
 							i(122338),	-- Ancient Heirloom Armor Casing
 							i(122339),	-- Ancient Heirloom Scabbard
 							i(122340),	-- Timeworn Heirloom Armor Casing
