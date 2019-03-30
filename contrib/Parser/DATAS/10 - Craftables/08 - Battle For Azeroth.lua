@@ -755,6 +755,9 @@ _.Craftables =
 					["itemID"] = 164682,	-- Sinister Combatant's Etched Vessel [H]
 				},
 			}),
+			sp(256236, {	-- Tome of the Quiet Mind
+				i(153647),	-- Tome of the Quiet Mind
+			}),
 		}),
 		n(-186, { -- Jewelcrafting
 		-- Reviewed and updated as of 12.15.2018 BfA 8.1

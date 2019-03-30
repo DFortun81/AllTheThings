@@ -1165,6 +1165,21 @@ _.Zones =
 					},
 				}),
 				n(-2,   {	-- Vendors
+					{	-- "Honest" Max
+						["npcID"] = 30464,	-- Olut Alegut
+						["g"] = {
+							{	-- Loaned Gryphon Reins
+								["itemID"] = 44221,	-- Loaned Gryphon Reins
+								["u"] = 2, 
+								["races"] = ALLIANCE_ONLY,
+							},
+							{	-- Loaned Wind Rider Reins
+								["itemID"] = 44221,	-- Loaned Wind Rider  Reins
+								["u"] = 2,
+								["races"] = HORDE_ONLY,
+							},
+						},
+					},
 					{	-- Olut Alegut
 						["npcID"] = 30472,	-- Olut Alegut
 						["itemID"] = 42780,	-- Relics of Ulduar

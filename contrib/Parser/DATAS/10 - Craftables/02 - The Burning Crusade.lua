@@ -824,6 +824,9 @@ _.Craftables =
 				i(32397),	-- Waistguard of Shackled Souls
 				i(29509),	-- Windstrike Gloves
 			}),
+			filter(113, {	-- Bags
+				i(24270),	-- Bag of Jewels
+			}),
 		}),
 		n(-190, { 	-- Tailoring
 			i(24267),	-- Battlecast Hood
