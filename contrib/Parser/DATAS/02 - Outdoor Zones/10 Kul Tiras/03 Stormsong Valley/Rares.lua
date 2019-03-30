@@ -145,9 +145,7 @@ _.Zones =
 								{	-- Grimscowl the Harebrained
 									["npcID"] = 141059,	-- Grimscowl the Harebrained	Note!! Done so we can use his name for the quest rather than Quest #123456
 									["questID"] = 52329,
-									["coords"] = {
-										{ 62.01, 73.91 },
-									},
+									["coord"] = { 62.01, 73.91, 942 },
 									["g"] = {
 										{	-- Grimscowl the Harebrained
 											["achievementID"] = 12940,	-- Adventurer of Stormsong Valley

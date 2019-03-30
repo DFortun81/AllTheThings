@@ -853,6 +853,115 @@ _.ExpansionFeatures =
 								["coord"] = { 70.4, 27.0, 1161 },	-- Boralus
 								["sourceQuests"] = { 53098 },	-- Champion: Shandris Feathermoon
 							}),
+							{	---------- Criteria: War Marches On
+							["achievementID"] = 13467,	-- Tides of Vengeance
+							["collectible"] = false,
+							["criteriaID"] = 1,	--  War Marches On
+							["races"] = ALLIANCE_ONLY,
+							["maps"] = { 895 },	-- Tiragarde Sound
+							["lvl"] = 120,
+							["g"] = {
+								qa(53888, {	-- To Anglepoint
+									["qg"] = 145580,	-- Lady Jaina Proudmoore
+									["coord"] = { 67.0, 36.2, 895 },	-- Boralus/Tiragarde Sound (technically in Boralus but shows up in TS)
+									["sourceQuests"] = { 53986 },	-- The Calm Before
+								}),
+								qa(53896, {	-- Stand Fast
+									["qg"] = 145580,	-- Lady Jaina Proudmoore
+									["coord"] = { 42.1, 29.9, 895 },	-- Tiragarde Sound
+									["sourceQuests"] = { 53888 },	-- To Anglepoint
+								}),
+								qa(53910, {	-- Repel the Horde
+									["qg"] = 145580,	-- Lady Jaina Proudmoore
+									["coord"] = { 42.1, 29.9, 895 },	-- Tiragarde Sound
+									["sourceQuests"] = { 53896 },	-- Stand Fast
+								}),
+								qa(54519, {	-- Squad Goals
+									["qg"] = 148015,	-- Taelia Fordragon
+									["coord"] = { 42.1, 29.9, 895 },	-- Tiragarde Sound
+									["sourceQuests"] = { 53896 },	-- Stand Fast
+								}),
+								qa(54518, {	-- Zero Zeppelins
+									["qg"] = 145632,	-- Okri Putterwrench
+									["coord"] = { 42.1, 29.8, 895 },	-- Tiragarde Sound
+									["sourceQuests"] = { 54519 },	-- Squad Goals (not required to complete first, but must fully pick up the quest before Zero Zeppelins appears)
+								}),
+								qa(53909, {	-- Besieged Allies
+									["qg"] = 145580,	-- Lady Jaina Proudmoore
+									["coord"] = { 42.1, 29.9, 895 },	-- Tiragarde Sound
+									["sourceQuests"] = { 53896 },	-- Stand Fast
+								}),
+								qa(53916, {	-- Outrigger Outfitters
+									["qg"] = 145593,	-- Rosaline Madison
+									["coord"] = { 41.5, 27.1, 895 },	-- Tiragarde Sound
+									["sourceQuests"] = { 53909 },	-- Besieged Allies
+									-- This quest was available before I turned in Squad Goals, Repel the Horde, or Zero Zeppelins.  Not sure if those 3 are optional or required further down the chain.  Assuming they are required for the next part, so listing them.
+								}),
+								qa(53978, {	-- Gunpowder Plots
+									["qg"] = 145593,	-- Rosaline Madison
+									["coord"] = { 41.5, 27.1, 895 },	-- Tiragarde Sound
+									["sourceQuests"] = {
+										53916,	-- Outrigger Outfitters (definitely required)
+										53906,	-- Besieged Allies
+										54519,	-- Squad Goals
+										54518,	-- Zero Zeppelins
+									},
+								}),
+								qa(54787, {	-- Masking for a Friend
+									["qg"] = 145593,	-- Rosaline Madison
+									["coord"] = { 41.5, 27.1, 895 },	-- Tiragarde Sound
+									["sourceQuests"] = {
+										53916,	-- Outrigger Outfitters (definitely required)
+										53906,	-- Besieged Allies
+										54519,	-- Squad Goals
+										54518,	-- Zero Zeppelins
+									},
+								}),
+								qa(54559, {	-- Free Plumeria
+									["qg"] = 145632,	-- Okri Putterwrench
+									["coord"] = { 41.5, 27.1, 895 },	-- Tiragarde Sound
+									["sourceQuests"] = {
+										53916,	-- Outrigger Outfitters (definitely required)
+										53906,	-- Besieged Allies
+										54519,	-- Squad Goals
+										54518,	-- Zero Zeppelins
+									},
+								}),
+								qa(53919, {	-- Shots Fired
+									["qg"] = 145593,	-- Rosaline Madison
+									["coord"] = { 37.5, 24.9, 895 },	-- Tiragarde Sound
+									["sourceQuests"] = {
+										54559,	-- Free Plumeria
+										53978,	-- Gunpowder Plots
+										54787,	-- Masking for a Friend
+									},
+								}),
+								qa(53936, {	-- Stopping the Sappers
+									["qg"] = 145580,	-- Lady Jaina Proudmoore
+									["coord"] = { 37.4, 24.9, 895 },	-- Tiragarde Sound
+									["sourceQuests"] = { 53919 },	-- Shots Fired
+								}),
+								qa(54703, {	-- Express Delivery
+									["qg"] = 145580,	-- Lady Jaina Proudmoore
+									["coord"] = { 36.2, 29.8, 895 },	-- Tiragarde Sound
+									["sourceQuests"] = { 53936 },	-- Stopping the Sappers
+									["g"] = {
+										a(ach(13384)),	-- Kul Tirans Don't Look at Explosions
+									},
+								}),
+								qa(53887, {	-- War Marches On
+									["qg"] = 145580,	-- Lady Jaina Proudmoore
+									["coord"] = { 36.4, 30.7, 895 },	-- Tiragarde Sound
+									["sourceQuests"] = { 54703 },	-- Express Delivery
+									["g"] = {
+										{	-- War Marches On
+											["achievementID"] = 13467,	-- Tides of Vengeance
+											["criteriaID"] = 1,	-- War Marches On
+										},
+									},
+								}),
+							},
+						},
 						},
 					},
 				}),
