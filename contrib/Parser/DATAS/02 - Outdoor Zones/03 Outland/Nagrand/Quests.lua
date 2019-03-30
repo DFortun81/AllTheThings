@@ -933,7 +933,7 @@ _.Zones =
 								}),
 								qa(9938, {	-- WANTED: Durn the Hungerer
 									["qg"] = 18408,	-- Warden Moi'bff Jill
-									["coord"] = { 55.8, 37.8, 107 },
+									["coord"] = { 54.8, 70.8, 107 },
 									["sourceQuests"] = {
 										9936,	-- WANTED: Giselda the Crone
 										9940,	-- WANTED: Zorbo the Advisor
@@ -1171,22 +1171,22 @@ _.Zones =
 							qa(11044, {	-- Visions of Destruction
 								["qg"] = 23268,	-- Seer Jovar
 								["coord"] = { 55.4, 68.6, 107 },
-								["description"] = "This is a breadcrumbquest to Shadowmoon Valley, don't forget to get the Quest Hero's Call: Shadowmoon Valley! from a warboard."
+								["isBreadcrumb"] = true,
 							}),
 							qa(11042, {	-- A Mystifying Vision
 								["qg"] = 23268,	-- Seer Jovar
 								["coord"] = { 55.4, 68.6, 107 },
-								["description"] = "This is a breadcrumbquest to Netherstorm, don't forget to get the Quest Hero's Call: Netherstorm! from a warboard."
+								["isBreadcrumb"] = true,
 							}),
 							qh(11048, {	-- Kroghan's Report
 								["qg"] = 18090,	-- Captain Kroghan
 								["coord"] = { 55.4, 37.6, 107 },
-								["description"] = "This is a breadcrumbquest to Shadowmoon Valley, don't forget to get the Quest Warchief's Command: Shadowmoon Valley! from a warboard."
+								["isBreadcrumb"] = true,
 							}),
 							qh(11037, {	-- A Strange Vision
 								["qg"] = 23268,	-- Seer Nakha
 								["coord"] = { 55.6, 37.2, 107 },
-								["description"] = "This is a breadcrumbquest to Netherstorm, don't forget to get the Quest Warchief's Command: Netherstorm! from a warboard."
+								["isBreadcrumb"] = true,
 							}),
 							q(29571, {	-- Defending the Wilds
 								["qg"] = 18074,	-- Elementalist Morgh <The Earthen Ring>

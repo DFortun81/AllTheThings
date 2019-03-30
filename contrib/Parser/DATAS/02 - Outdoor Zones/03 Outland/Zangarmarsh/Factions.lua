@@ -32,8 +32,8 @@ _.Zones =
 								i(24402, {	-- Package of Identified Plants
 									i(24407, {	-- Uncatalogued Species
 										q(9875, {	-- Uncatalogued Species
-											["description"] = "Only available until you are Honored with Cenarion Expedition.",
 											["sourceQuest"] = 9784,	-- Identify Plant Parts
+											["description"] = "Only available until you are Honored with Cenarion Expedition.",
 											["repeatable"] = true,
 										}),
 									}),

@@ -11,8 +11,7 @@ _.Zones =
 				["groups"] = {
 					faction(933, {	-- The Consortium
 						["groups"] = {
-							ach(902, {	-- Chief Exalted Officer
-							}),
+							ach(902),	-- Chief Exalted Officer
 							n(-17,  {	-- Quests
 								q(9882, {	-- Stealing from Thieves
 									["qg"] = 18265,	-- Gezhe <The Consortium>
@@ -27,11 +26,13 @@ _.Zones =
 								q(9893, {	-- Obsidian Warbeads
 									["qg"] = 18265,	-- Gezhe <The Consortium>
 									["coord"] = { 31.4, 57.8, 107 },
+									["description"] = "Only available if you are Friendly with The Consortium.",
 								}),
 								q(9892, {	-- More Obsidian Warbeads
 									["qg"] = 18265,	-- Gezhe <The Consortium>
 									["coord"] = { 31.4, 57.8, 107 },
 									["sourceQuest"] = 9893,	-- Obsidian Warbeads
+									["description"] = "Only available if you are Friendly with The Consortium.",
 									["repeatable"] = true,
 								}),
 								q(9914, {	-- A Head Full of Ivory
@@ -132,8 +133,7 @@ _.Zones =
 					}),
 					h(faction(941, {	-- The Mag'har
 						["groups"] = {
-							h(ach(901, {	-- Mag'har of Draenor
-							})),
+							h(ach(901)),	-- Mag'har of Draenor
 							n(-17,  {	-- Quests
 								qh(10479, {	-- Proving Your Strength
 									["qg"] = 18407,	-- Warden Bullrok
@@ -180,8 +180,7 @@ _.Zones =
 					})),
 					a(faction(978, {	-- Kurenai
 						["groups"] = {
-							a(ach(899, {	-- Oh My, Kurenai
-							})),
+							a(ach(899)),	-- Oh My, Kurenai
 							n(-17,  {	-- Quests
 								qa(10476, {	-- Fierce Enemies
 									["qg"] = 18408,	-- Warden Moi'bff Jill

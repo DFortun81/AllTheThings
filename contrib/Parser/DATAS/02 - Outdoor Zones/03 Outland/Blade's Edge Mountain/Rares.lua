@@ -11,10 +11,14 @@ _.Zones =
 				["g"] = {
 					n(-16, {	-- Rares
 						n(18692, {	-- Hemathion
-							dr(25, i(31155)),	-- Drakescale Breastplate
-							dr(25, i(31156)),	-- Drakescale Hauberk
-							dr(25, i(31158)),	-- Drakeweave Raiment
-							dr(24, i(31157)),	-- Drakehide Tunic
+							["coords"] = {
+							},
+							["groups"] = {
+								dr(25, i(31155)),	-- Drakescale Breastplate
+								dr(25, i(31156)),	-- Drakescale Hauberk
+								dr(25, i(31158)),	-- Drakeweave Raiment
+								dr(24, i(31157)),	-- Drakehide Tunic
+							},
 						}),
 						n(18690, {	-- Morcrush
 							dr(29, i(31159)),	-- Felstone Pauldrons

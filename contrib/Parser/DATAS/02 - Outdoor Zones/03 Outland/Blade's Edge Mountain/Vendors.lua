@@ -50,19 +50,6 @@ _.Zones =
 							i(22911),	-- Recipe: Major Dreamless Sleep Potion
 							i(22907),	-- Recipe: Super Mana Potion
 						}),
-						n(23428, {	-- Jho'nass <Ogri'la Quartermaster>
-							i(32569, { -- Apexis Shard
-								i(32650),	-- Cerulean Crystal Rod
-								i(32654),	-- Crystalforged Trinket
-								i(32652),	-- Ogri'la Aegis
-								i(32653),	-- Apexis Cloak
-								i(32647),	-- Shard-Bound Bracers
-								i(32648),	-- Vortex Walking Boots
-								i(32651),	-- Crystal Orb of Enlightenment
-								i(32645),	-- Crystalline Crossbow
-								i(32828),	-- Ogri'la Tabard
-							}),
-						}),
 						na(21113, {	-- Sassa Weldwell <Trade Goods>
 							i(31674),	-- Recipe: Crunchy Serpent
 							i(31675),	-- Recipe: Mok'Nathal Shortribs

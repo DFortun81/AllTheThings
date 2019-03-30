@@ -886,6 +886,10 @@ _.Zones =
 							["sourceQuests"] = {
 								39202,	-- Hero's Call: Netherstorm!
 								39201,	-- Warchief's Command: Netherstorm!
+								11040,	-- Parts for the Rocket-Chief
+								11036,	-- Out of This World Produce!
+								11037,	-- A Strange Vision
+								11042,	-- A Mystifying Vision	
 							},
 						}),
 						q( 10248, {	-- You, Robot

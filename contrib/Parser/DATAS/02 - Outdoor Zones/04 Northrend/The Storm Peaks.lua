@@ -795,7 +795,7 @@ _.Zones =
 						["coord"] = { 31.2, 38.1, 120 },
 						["sourceQuests"] = { 12979 },	-- Armor of Darkness
 					}),
-					q(13417),	-- The Brothers Bronzebeard	-- scrapped version? no qg or faction data on wowhead, and this isn't the version of the quest i received (i got the next quest, 12973)
+--					qa(13417),	-- The Brothers Bronzebeard	-- scrapped version? no qg on wowhead, and this isn't the version of the quest i received (i got the next quest, 12973)
 					qa(12973, {	-- The Brothers Bronzebeard (awarded "For the Frostborn King" criteria before turning in quest)
 						["g"] = {
 							i(43192),	-- Ring of the Northern Winds

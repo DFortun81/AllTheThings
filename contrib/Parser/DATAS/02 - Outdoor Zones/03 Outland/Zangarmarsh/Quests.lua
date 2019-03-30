@@ -575,6 +575,7 @@ _.Zones =
 							qa(9794, {	-- No Time for Curiosity
 								["qg"] = 18019,	-- Timothy Daniels
 								["coord"] = { 41.2, 28.6, 102 },
+								["isBreadcrumb"] = true,
 							}),
 							i(34469, {	-- Strange Engine Part
 								q(11531, {	-- Strange Engine Part

@@ -189,11 +189,14 @@ _.Zones =
 						["groups"] = {
 							q(10984, {	-- Speak with the Ogre
 								["qg"] = 22497,	-- V'eru
-								["isBreadcrumb"] = true,	-- for "Mog'dorg the Wizened"
+								["coord"] = { 56.4, 49.2, 111 },
+								["isBreadcrumb"] = true,
 							}),
 							q(10983, {	-- Mog'dorg the Wizened
 								["qg"] = 22940,	-- Grok
-								["sourceQuests"] = { 10984 },	-- Speak with the Ogre
+								["coord"] = { 65.0, 68.4, 111 },
+								["sourceQuest"] = 10984,	-- Speak with the Ogre
+								["isBreadcrumb"] = true,
 							}),
 						},
 						["collectible"] = false,	-- Turn off Collectible flags.
@@ -334,9 +337,16 @@ _.Zones =
 								["qg"] = 19202,	-- Emissary Mordin
 								["description"] = "This daily quest is only available to characters with Herbalism, Mining, or Skinning.",
 							})),
-							qr(q(11514, {	-- Maintaining the Sunwell Portal
+							un(40, q(11513, {	-- Intercepting the Mana Cells
 								["qg"] = 24932,	-- Exarch Nasuun
-							})),
+								["coord"] = { 49.8, 42.6, 111 },
+								["repeatable"] = true,
+							})),	
+							q(11514, {	-- Maintaining the Sunwell Portal
+								["qg"] = 24932,	-- Exarch Nasuun
+								["coord"] = { 49.8, 42.6, 111 },
+								["repeatable"] = true,
+							}),
 						},
 						["collectible"] = false,	-- Turn off Collectible flags.
 					}),
