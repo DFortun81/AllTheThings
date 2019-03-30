@@ -190,6 +190,12 @@ _.Instances = { tier(1, {	-- Classic
 						un(2, i(6751)),	-- Mourning Shawl
 						un(2, i(6752)),	-- Lancer Boots
 					})),
+					un(40, q(24630, {	-- The Crone of the Kraul
+						un(2, i(53155)),	-- Agamaggan's Thorn
+						un(2, i(53158)),	-- Spaulder of the Matriarch
+						un(2, i(57408)),	-- Bloodshard Band
+						un(2, i(53157)),	-- Charlga's Cowl
+					})),
 					un(40, q(1144, {	-- Willix the Importer
 						un(2, i(6748)),	-- Monkey Ring
 						un(2, i(6750)),	-- Snake Hoop

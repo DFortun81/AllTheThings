@@ -406,6 +406,7 @@ _.Zones =
 					}),
 					n(69333,  {	-- Disciple Jusi <Huojin Quartermaster>
 						i(83080),	-- Huojin Tabard
+						i(92070),	-- Houjin Satchel
 					}),
 					n(46593,  {	-- Doris Volanthius >S9< Elite <Vicious Gladiator>
 						["u"] = 43,

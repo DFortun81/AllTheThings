@@ -1000,6 +1000,9 @@ _.NeverImplemented =
 		un(1, i(140921)),	--
 		un(1, i(132107)),	--
 		un(1, i(132250)),	--
+		un(1, i(82460)),	-- Unknown
+		un(1, i(82462)),	-- Unknown
+		un(1, i(82463)),	-- Unknown
 		un(1, i(155010)),	-- REUSE MD DNT
 		un(1, i(155011)),	-- REUSE MD DNT
 		un(1, i(155012)),	-- REUSE MD DNT
@@ -1388,6 +1391,8 @@ _.NeverImplemented =
 				["u"] = 1,
 			},
 		}),
+		-- Enchanting
+			un(1, i(84582)),	-- Formula: Enchant Weapon - Windsong (never added version)
 		n(-185, { 	-- Inscription
 			un(1, i(87830)),	-- Recipe: Tigersblood Tincture
 			un(1, i(87829)),	-- Recipe: Incarnadine Ink
@@ -1437,11 +1442,11 @@ _.NeverImplemented =
 			un(1, i(141061)),	-- Technique: Glyph of the Abyssal (Item never made it into the game)
 			un(1, i(141065)),	-- Technique: Glyph of the Terrorguard (Item never made it into the game)
 		}),
-		--n(-185, { 	-- Jewelcrafting
+		n(-186, { 	-- Jewelcrafting
 			un(1, i(20972)),	-- Design: Silver Rose Pendant
 			un(1, i(21959)),	-- Design: Blood Crown
 			un(1, i(25888)),	-- Design: Primal Stone Statue
-		--}),
+		}),
 		n(-187, {	-- Leatherworking
 			{	-- Pattern: Cloak of Beasts
 				["itemID"] = 67039,   	-- Pattern: Cloak of Beasts
@@ -1619,7 +1624,7 @@ _.NeverImplemented =
 		n(-190, { 	-- Tailoring
 			un(1, i(42196)),	-- Pattern: Aurora Slippers (pattern never went live, but it's learned at the trainer)
 			un(1, i(7093)),		-- Pattern: Boots of Darkness
-			un(1, i(6273)),	-- Pattern: Green Woolen Robe
+			un(1, i(6273)),		-- Pattern: Green Woolen Robe
 			un(1, i(42190)),	-- Pattern: Deathchill Cloak (pattern never went live, but it's learned at the trainer)
 			un(1, i(42180)),	-- Pattern: Ebonweave (pattern never went live, but it's learned at the trainer)
 			un(1, i(42200)),	-- Pattern: Ebonweave Gloves (pattern never went live, but it's learned at the trainer)
@@ -1836,6 +1841,8 @@ _.NeverImplemented =
 			un(1, i(134562)),	-- Odyns Fury
 			un(1, i(166889)),	-- Unknown
 			un(1, i(134067)),	-- Unknown
+			un(1, i(43922)),	-- Honed Lightblade
+			--un(1, i(134067)),	-- Unknown
 			un(1, i(162447)),	-- Marrow Render
 			un(1, i(64817)),	-- Bloodthirsty Gladiator's Quickblade (Epic BG Item, never made it out of beta)
 			un(1, i(64858)),	-- Bloodthirsty Gladiator's Slicer (Epic BG Item, never made it out of beta))
