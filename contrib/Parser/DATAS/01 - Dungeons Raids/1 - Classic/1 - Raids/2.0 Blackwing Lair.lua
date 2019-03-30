@@ -30,7 +30,7 @@ _.Instances = { tier(1, {	-- Classic
 						12465, -- Death Talon Wyrmkin
 					},
 				}),
-				i(19436, {	-- Cloak of Dragonic Might
+				i(19436, {	-- Cloak of Draconic Might
 					["crs"] = {
 						12467, -- Death Talon Captain
 						12463, -- Death Talon Flamescale
@@ -91,7 +91,7 @@ _.Instances = { tier(1, {	-- Classic
 					i(93036),	-- Unscathed Egg (Pet)
 					i(19334),	-- The Untamed Blade
 					i(19335),	-- Spineshatter
-					i(19370),	-- Mantle of the Blackwing Cabal
+					un(45, i(19370)),	-- Mantle of the Blackwing Cabal
 					i(16926),	-- Bindings of Transcendence
 					i(16911),	-- Bloodfang Bracers
 					i(16959),	-- Bracelets of Wrath
@@ -110,7 +110,7 @@ _.Instances = { tier(1, {	-- Classic
 				["creatureID"] = 13020,
 				["groups"] = {
 					i(19346),	-- Dragonfang Blade
-					i(19348),	-- Red Dragonscale Protector
+					un(45, i(19348)),	-- Red Dragonscale Protector
 					i(19372),	-- Helm of Endless Rage
 					i(19371),	-- Pendant of the Fallen Dragon
 					i(16944),	-- Belt of Ten Storms
@@ -122,7 +122,7 @@ _.Instances = { tier(1, {	-- Classic
 					i(16818),	-- Netherwind Belt
 					i(16903),	-- Stormrage Belt
 					i(16960),	-- Waistband of Wrath
-					i(19339),	-- Mind Quickening Gem
+					un(45, i(19339)),	-- Mind Quickening Gem
 					i(19340),	-- Rune of Metamorphosis
 				},
 			}),
@@ -155,7 +155,7 @@ _.Instances = { tier(1, {	-- Classic
 					i(19365),	-- Claw of the Black Drake
 					i(19394),	-- Drake Talon Pauldrons
 					i(19398),	-- Cloak of Firemaw
-					i(19399),	-- Black Ash Robe
+					un(45, i(19399)),	-- Black Ash Robe
 					i(16907),	-- Bloodfang Gloves
 					i(16940),	-- Dragonstalker's Gauntlets
 					i(16928),	-- Nemesis Gloves
@@ -165,14 +165,14 @@ _.Instances = { tier(1, {	-- Classic
 					i(16956),	-- Judgment Gauntlets
 					i(16913),	-- Netherwind Gloves
 					i(16899),	-- Stormrage Handguards
-					i(19400),	-- Firemaw's Clutch
+					un(45, i(19400)),	-- Firemaw's Clutch
 					i(19396),	-- Taut Dragonhide Belt
-					i(19402),	-- Legguards of the Fallen Crusader
+					un(45, i(19402)),	-- Legguards of the Fallen Crusader
 					i(19401),	-- Primalist's Linked Legguards
 					i(19397),	-- Ring of Blackrock
-					i(19344),	-- Natural Alignment Crystal
+					un(45, i(19344)),	-- Natural Alignment Crystal
 					i(19395),	-- Rejuvenating Gem
-					i(19343),	-- Scrolls of Blinding Light
+					un(45, i(19343)),	-- Scrolls of Blinding Light
 				},
 			}),
 			n(14401, {	-- Master Elemental Shaper Krixix
@@ -184,7 +184,7 @@ _.Instances = { tier(1, {	-- Classic
 				["groups"] = {
 					i(19353),	-- Drake Talon Cleaver
 					i(19355),	-- Shadow Wing Focus Staff
-					i(19368),	-- Dragonbreath Hand Cannon
+					un(45, i(19368)),	-- Dragonbreath Hand Cannon
 					i(19394),	-- Drake Talon Pauldrons
 					i(19405),	-- Malfurion's Blessed Bulwark
 					i(16907),	-- Bloodfang Gloves
@@ -198,7 +198,7 @@ _.Instances = { tier(1, {	-- Classic
 					i(16913),	-- Netherwind Gloves
 					i(16899),	-- Stormrage Handguards
 					i(19396),	-- Taut Dragonhide Belt
-					i(19403),	-- Band of Forced Concentration
+					un(45, i(19403)),	-- Band of Forced Concentration
 					i(19397),	-- Ring of Blackrock
 					i(19345),	-- Aegis of Preservation
 					i(19406),	-- Drake Fang Talisman
@@ -224,11 +224,11 @@ _.Instances = { tier(1, {	-- Classic
 					i(16913),	-- Netherwind Gloves
 					i(16899),	-- Stormrage Handguards
 					i(19396),	-- Taut Dragonhide Belt
-					i(19433),	-- Emberweave Leggings
-					i(19432),	-- Circle of Applied Force
+					un(45, i(19433)),	-- Emberweave Leggings
+					un(45, i(19432)),	-- Circle of Applied Force
 					i(19397),	-- Ring of Blackrock
 					i(19395),	-- Rejuvenating Gem
-					i(19431),	-- Styleen's Impeding Scarab
+					un(45, i(19431)),	-- Styleen's Impeding Scarab
 				},
 			}),
 			e( 1535, {	-- Chromaggus
@@ -279,7 +279,7 @@ _.Instances = { tier(1, {	-- Classic
 							i(19384),	-- Master Dragonslayer's Ring
 						}))),
 					}),
-					i(19364),	-- Ashkandi, Greatsword of the Brotherhood
+					un(45, i(19364)),	-- Ashkandi, Greatsword of the Brotherhood
 					i(19356),	-- Staff of the Shadow Flame
 					i(19363),	-- Crul'shorukh, Edge of Chaos
 					i(19360),	-- Lok'amir il Romathis
@@ -293,7 +293,7 @@ _.Instances = { tier(1, {	-- Classic
 					i(16929),	-- Nemesis Skullcap
 					i(16914),	-- Netherwind Crown
 					i(16900),	-- Stormrage Cover
-					i(19377),	-- Prestor's Talisman of Connivery
+					un(45, i(19377)),	-- Prestor's Talisman of Connivery
 					i(19378),	-- Cloak of the Brood Lord
 					i(16905),	-- Bloodfang Chestpiece
 					i(16950),	-- Breastplate of Ten Storms
@@ -304,11 +304,11 @@ _.Instances = { tier(1, {	-- Classic
 					i(16916),	-- Netherwind Robes
 					i(16923),	-- Robes of Transcendence
 					i(16897),	-- Stormrage Chestguard
-					i(19380),	-- Therazane's Link
+					un(45, i(19380)),	-- Therazane's Link
 					i(19381),	-- Boots of the Shadow Flame
 					i(19376),	-- Archimtiros' Ring of Reckoning
-					i(19382),	-- Pure Elementium Band
-					i(19379),	-- Neltharion's Tear
+					un(45, i(19382)),	-- Pure Elementium Band
+					un(45, i(19379)),	-- Neltharion's Tear
 				 -- BLUES (NOT IN DUNGEON JOURNAL/WOWHEAD)
 					i(1203),	-- Aegis of Stormwind
 					i(13036),	-- Assassination Blade
