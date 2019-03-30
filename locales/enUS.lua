@@ -3295,7 +3295,8 @@ AllTheThings.L = {
 		{21, "|CFFFF0000These appearances are only available during the weekly Timewalking Event.\nOnly dungeons released during the featured expansion will be available.|r", "Timewalking (42)"}; -- 42
 		{1, "|CFFFF0000This NPC or creature has been removed from the game.|r", "Removed NPCs (43)"}; -- 43
 		{21, "|CFFFF0000May require a specific Micro-Holiday to be active.|r", "Micro-Holiday (44)"}; -- 44
-		{1, "|CFFFF0000With 8.0, Blizzard's Legacy Loot implementation for Ulduar broke a number of Hard Mode loot tables.|r", "Ulduar Hard Mode Loot (45)"}; -- 45
+		{1, "|CFFFF0000With 8.0, Blizzard's Legacy Loot implementation broke Chromaggus' loot table.|r", "Chromaggus Non-Tier Loot (45)"}; -- 45
 		{2, "|CFFFF0000This item is likely available from Incursions while under max level.|r", "Incursion Loot (46)"}; -- 46
+		{1, "|CFFFF0000With 8.0, Blizzard's Legacy Loot implementation broke Gruul' loot table.|r", "Gruul Non-Tier Loot (47)"}; -- 47
 	};
 };

@@ -236,8 +236,8 @@ _.Instances = { tier(1, {	-- Classic
 				["groups"] = {
 					i(93038),	-- Whistle of Chromatic Bone
 					i(19352),	-- Chromatically Tempered Sword
-					i(19347),	-- Claw of Chromaggus
-					i(19361),	-- Ashjre'thul, Crossbow of Smiting
+					un(45, i(19347)),	-- Claw of Chromaggus
+					un(45, i(19361)),	-- Ashjre'thul, Crossbow of Smiting
 					i(19349),	-- Elementium Reinforced Bulwark
 					i(16832),	-- Bloodfang Spaulders
 					i(16937),	-- Dragonstalker's Spaulders
@@ -249,14 +249,14 @@ _.Instances = { tier(1, {	-- Classic
 					i(16961),	-- Pauldrons of Wrath
 					i(16902),	-- Stormrage Pauldrons
 					i(19389),	-- Taut Dragonhide Shoulderpads
-					i(19386),	-- Elementium Threaded Cloak
-					i(19390),	-- Taut Dragonhide Gloves
+					un(45, i(19386)),	-- Elementium Threaded Cloak
+					un(45, i(19390)),	-- Taut Dragonhide Gloves
 					i(19388),	-- Angelista's Grasp
-					i(19392),	-- Girdle of the Fallen Crusader
-					i(19393),	-- Primalist's Linked Waistguard
+					un(45, i(19392)),	-- Girdle of the Fallen Crusader
+					un(45, i(19393)),	-- Primalist's Linked Waistguard
 					i(19385),	-- Empowered Leggings
 					i(19387),	-- Chromatic Boots
-					i(19391),	-- Shimmering Geta
+					un(45, i(19391)),	-- Shimmering Geta
 				},
 			}),
 			e( 1536, {	-- Nefarian

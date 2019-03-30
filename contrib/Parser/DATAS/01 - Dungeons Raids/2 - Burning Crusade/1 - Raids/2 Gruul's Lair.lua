@@ -106,10 +106,10 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(28966),	-- Voidheart Leggings
 					}),
 					i(28794),	-- Axe of the Gronn Lords
-					un(2, i(28802)),	-- Bloodmaw Magus-Blade		-- Note!! No solid leads as of 7.3.5 - 8.0
+					un(47, i(28802)),	-- Bloodmaw Magus-Blade		-- Note!! No solid leads as of 7.3.5 - 8.0
 					i(28825),	-- Aldori Legacy Defender
-					un(2, i(28804)),	-- Collar of Cho'gall		-- Note!! No solid leads as of 7.3.5 - 8.0
-					un(2, i(28803)),	-- Cowl of Nature's Breath	-- Note!! No solid leads as of 7.3.5 - 8.0
+					un(47, i(28804)),	-- Collar of Cho'gall		-- Note!! No solid leads as of 7.3.5 - 8.0
+					un(47, i(28803)),	-- Cowl of Nature's Breath	-- Note!! No solid leads as of 7.3.5 - 8.0
 					i(28822),	-- Teeth of Gruul
 					i(28824),	-- Gauntlets of Martial Perfection
 					i(28827),	-- Gauntlets of the Dragonslayer
