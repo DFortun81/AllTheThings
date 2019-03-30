@@ -1043,7 +1043,21 @@ _.Zones =
 					q(42487),	-- Friends On the Outside
 					q(44053),	-- Friends With Benefits
 					q(41258),	-- Fruit of the Doom
-					q(44738),	-- Full Might of the Elves
+					q(44738, {	-- Full Might of the Elves
+						["groups"] = {
+							i(140078), -- Crystalized Leypetal
+							i(140077), -- Goldleaf Arcwine Phial
+							i(140076), -- Felborne Energist's Gem
+							i(140075), -- Petrified Ancient Bark
+							i(140074), -- Sin'dorei Blood Gems
+							i(140073), -- Khadgar's Pocket Warmer
+							i(140072), -- Headpiece of the Elunian Cycle
+							i(140071), -- first Page of the Book of Shadows
+							i(140069), -- Trueflight Arrow
+							i(140040), -- Comet Dust
+						},
+						--["qg"] = 98969, -- Stalriss Dawnrunner
+					}),
 					q(40897),	-- Garvrulg
 					q(44736),	-- Gates of the Nighthold
 					q(43562),	-- Giving It All We've Got

@@ -26,6 +26,7 @@ _.NeverImplemented =
 		
 		-- Some of those Items are currently not possible to load ingame (BFA Items), but they might be with a new patch
 		un(1, i(166405)),	-- Blindside (TW Vendor?)
+		un(1, i(166364)),	-- Song of the Fallen (TW Vendor?)
 		un(1, i(166700)),	-- Durable Sailor's Duffel
 		un(1, i(161988)),	-- Tidespray Linen Cloak of the Feather
 		un(1, i(161991)),	-- Tidespray Linen Cloak of Resilience
@@ -48,6 +49,9 @@ _.NeverImplemented =
 		un(1, i(150642)),	-- Trailseeker Spaulders
 		un(1, i(157725)),	-- Totem Caller Coif (Sham Future Boost Gear)
 		un(1, i(157727)),	-- Totem Caller Pauldrons (Sham Future Boost Gear)
+		
+		-- Cant find any infos for those items anywhere (ID's indicate scrapped boost gear)
+		un(1, i(122069)),	-- Nurturer Spear
 	}),
 	n(-220, {	-- Class
 		cl(12, {	-- DH
@@ -159,6 +163,12 @@ _.NeverImplemented =
 			un(1, i(32111)),	-- Chancellor's Silk Rainment
 			un(1, i(32112)),	-- Chancellor's Silk Legs
 			un(1, i(104355)),	-- Titan Rocket Boots-
+			un(1, i(109303)),	-- Unknown
+			un(1, i(109339)),	-- Unknown
+			un(1, i(109340)),	-- Unknown
+			un(1, i(109341)),	-- Unknown
+			un(1, i(109342)),	-- Unknown
+			un(1, i(109343)),	-- Unknown
 			un(1, i(107890)),	-- Unknown
 			un(1, i(109272)),	-- Unknown
 			un(1, i(109278)),	-- Unknown
@@ -303,6 +313,15 @@ _.NeverImplemented =
 			un(1, i(25796)),	-- Lurking Shadow Spaulders (only beta)
 			un(1, i(22273)),	-- Moonshadow Hood (Leather)
 			un(1, i(54691)),	-- Nightscape Tunic
+			un(1, i(107864)),	-- Unknown
+			un(1, i(107868)),	-- Unknown
+			un(1, i(107869)),	-- Unknown
+			un(1, i(107876)),	-- Unknown
+			un(1, i(107880)),	-- Unknown
+			un(1, i(107882)),	-- Unknown
+			un(1, i(107889)),	-- Unknown
+			un(1, i(107893)),	-- Unknown
+			un(1, i(109264)),	-- Unknown
 			un(1, i(19986)),	-- Pirate's Eye Patch (Leather)
 			un(1, i(54696)),	-- Scorpashi Breastplate
 			un(1, i(54687)),	-- Sentinel Breastplate
@@ -1420,6 +1439,8 @@ _.NeverImplemented =
 		}),
 		--n(-185, { 	-- Jewelcrafting
 			un(1, i(20972)),	-- Design: Silver Rose Pendant
+			un(1, i(21959)),	-- Design: Blood Crown
+			un(1, i(25888)),	-- Design: Primal Stone Statue
 		--}),
 		n(-187, {	-- Leatherworking
 			{	-- Pattern: Cloak of Beasts
@@ -1703,6 +1724,7 @@ _.NeverImplemented =
 			un(1, i(64859)),	-- Bloodthirsty Gladiator's Spellblade (Epic BG Item, never made it out of beta))
 			un(1, i(109269)),	-- Unknown
 			un(1, i(109292)),	-- Unknown
+			un(1, i(117993)),	-- RENAME RANGARI BOOT KNIFE
 			un(1, i(38247)),	-- Entrail Render
 			un(1, i(52969)),	-- Heartache Dagger	-- 52965 got added
 			un(1, i(62329)),	-- Dire Slasher (never added)
@@ -1849,6 +1871,12 @@ _.NeverImplemented =
 		n(-332, {	-- Shields
 			un(1, i(165617)),	-- Unknown
 			un(1, i(139439)),	-- Highkeepers' Ward
+			un(1, i(108808)),	-- Unknown
+			un(1, i(108809)),	-- Unknown
+			un(1, i(109288)),	-- Unknown
+			un(1, i(109312)),	-- Unknown
+			un(1, i(109476)),	-- Unknown
+			un(1, i(109550)),	-- Unknown
 			un(1, i(34415)),	-- Crystaline Shard Shield
 			un(1, i(54554)),	-- Bejeweled Ship's Wheel
 			un(1, i(60220)),	-- Unknown
@@ -1961,6 +1989,7 @@ _.NeverImplemented =
 		}),
 		n(-341, {	-- Wands
 			un(1, i(161924)),	-- Seapriest's Wand (never addedd)
+			un(1, i(165883)),	-- Unknown
 			un(1, i(161926)),	-- Talanji's Salutary Scepter (never added)
 			un(1, i(159923)),	-- Unknown
 			un(1, i(161929)),	-- Unknown
@@ -1971,6 +2000,7 @@ _.NeverImplemented =
 		n(-340, {	-- War Glaives
 			un(1, i(129735)), 	-- Verus
 			un(1, i(129736)), 	-- Verus
+			un(1, i(108807)),	-- Unknown
 			un(1, i(158580)),	-- Loa-Claimer's Wariglaives
 			un(1, i(151138)), 	-- Warglaive of Azzinoth [This version not implemented; was testing for transmog]
 			un(1, i(129737)), 	-- Verus

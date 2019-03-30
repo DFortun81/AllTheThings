@@ -235,6 +235,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(127576),	-- Greaves of the Blue Flight
 						i(127588),	-- Band of Frosted Thorns
 						i(127572),	-- Gauntlets of Serpent Scales [DJ Doesn't have it; #errors confirmed it drops confirmed 5-29-18]
+						i(127571),	-- Tome of the Lore Keepers (TW Only)
 					})),
 					cr(26794, e(620, {	-- Ormorok the Tree-Shaper
 						i(127568),	-- Glacier Sharpened Vileblade
