@@ -944,6 +944,9 @@ _.Zones =
 										["qg"] = 22919, -- Image of Commander Ameer
 										["coord"] = { 52.8, 15.0, 105 },
 										["sourceQuest"] = 10976, -- The Mark of the Nexus-King
+										["groups"] = {
+											i(32064), -- Protectorate Treasure Cache
+										},
 									}),	
 									q(10981, {	-- Nexus-Prince Shaffar's Personal Chamber
 										["qg"] = 22919, -- Image of Commander Ameer

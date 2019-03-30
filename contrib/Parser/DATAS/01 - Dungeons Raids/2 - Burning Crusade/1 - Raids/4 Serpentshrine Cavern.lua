@@ -249,6 +249,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					i(30110),	-- Coral Band of the Revived
 					i(30109),	-- Ring of Endless Coils
 					i(30621),	-- Prism of Inner Calm
+					un(2, i(32895)),	-- Scroll of the Maelstrom. This Item originally boe & completed the attunement to enter The Serpentshrine. It was later changed to be bop and provide 5 Mark of the Illidari.
 				},
 			}),
 		},

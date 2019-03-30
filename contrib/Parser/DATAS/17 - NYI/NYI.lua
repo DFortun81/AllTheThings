@@ -1000,6 +1000,12 @@ _.NeverImplemented =
 		un(1, i(140921)),	--
 		un(1, i(132107)),	--
 		un(1, i(132250)),	--
+		un(1, i(101537)),	-- Timeless Coins
+		un(1, i(103975)),	-- Elder Charm of Good Fortune
+		un(1, i(103976)),	-- Mogu Rune of Fate
+		un(1, i(107459)),	-- Black Iron Fragment
+		un(1, i(108595)),	-- Recall Stone
+		un(1, i(108882)),	-- Bloodmaul Blasting Charge
 		un(1, i(82460)),	-- Unknown
 		un(1, i(82462)),	-- Unknown
 		un(1, i(82463)),	-- Unknown
@@ -1078,6 +1084,7 @@ _.NeverImplemented =
 		un(1, i(54331)),
 		un(1, i(55047)),
 		un(1, i(21163)),
+		un(1, i(34544)),	-- Essence of the immortals
 		un(1, i(84897)),	-- Never made to Live. Malevolent Gladiator's Heavy Crossbow
 		un(1, i(94899)),	-- Never made to Live. Malevolent Gladiator's Baton of Light
 		un(1, i(94898)),	-- Never made to Live. Malevolent Gladiator's Touch of Death
@@ -1594,6 +1601,7 @@ _.NeverImplemented =
 			un(1, i(67034)),	-- Pattern: Windbound Helm (never made it into game)
 			un(1, i(67022)),	-- Pattern: Windbound Leggings (never made it into game)
 			un(1, i(67016)),	-- Pattern: Windbound Shoulders (never made it into game)
+			un(1, i(38598)),	-- Pattern: Dark Arctic Leggings
 			{	-- Recipe: Coarse Leather Barding [Rank 2]
 				["itemID"] = 166312,	-- Recipe: Coarse Leather Barding [Rank 2]
 				["spellID"] = 0,	-- This is available via the trainer, need to delink the unused plans from the recipe

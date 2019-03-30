@@ -309,6 +309,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				i(29994),	-- Thalassian Wildercloak
 				i(29988),	-- The Nexus Key
 				i(29993),	-- Twinblade of the Phoenix
+				un(2, i(32896)),	-- Scroll of the Sun. This Item originally boe & completed the attunement to enter The Eye. It was later changed to be bop and provide 5 Mark of the Illidari.
 				i(30317, {	-- Cosmic Infuser 
 					["collectible"] = false,
 					["u"] = 15,

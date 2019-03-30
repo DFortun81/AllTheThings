@@ -10,6 +10,9 @@ _.Zones =
 				["mapID"] = 390,	-- Vale of Eternal Blossoms
 				["g"] = {
 					n(-2, {		-- Vendors
+						n(64922, {	-- Brann Bronzebeard <Archaeology Trainer>
+							i(104198),	-- Mantid Artifact Hunter's Kit
+						}),
 						na(64028, {	-- Challenger Soong <Challenge Dungeons>
 							["groups"] = {
 								un(4, i(90049)),	-- Girdle of the Lich Lord
@@ -492,6 +495,7 @@ _.Zones =
 							i(89363),	-- Disc of the Red Flying Cloud Mount
 							i(122221),	-- Music Roll: Song of Liu Lang
 							i(89795),	-- Lorewalkers Tabard
+							i(104198),	-- Mantid Artifact Hunter's Kit
 							i(93230),	-- Grand Commendation of the Lorewalkers
 						}),
 					}),
