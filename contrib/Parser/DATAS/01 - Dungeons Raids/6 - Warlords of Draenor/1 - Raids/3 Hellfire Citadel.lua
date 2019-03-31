@@ -43,12 +43,12 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 							},
 						},
 						{	-- A Race Against Slime
-							["g"] = {
-								follower(474), -- Ariok
-							},
 							["achievementID"] = 9972,
 							["crs"] = {
 								90378,	-- Kilrogg
+							},
+							["g"] = {
+								follower(474), -- Ariok
 							},
 						},
 						{	-- Get In My Belly!
@@ -59,6 +59,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						},
 						{	-- Pro Toss
 							["achievementID"] = 9988,
+							["description"] = "Pull the boss and burn him before he transitions. As long as no one touched the Eye of Anzu, you will earn the achievement.",
 							["crs"] = {
 								90316,	-- Shadow-Lord Iskar
 							},
