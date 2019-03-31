@@ -1547,6 +1547,17 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					end
 					group = subgroup;
 				end
+			elseif paramA == "encounterID" then
+				local difficultyID = EJ_GetDifficulty();
+				if difficultyID and difficultyID > 0 then
+					local subgroup = {};
+					for i,j in ipairs(group) do
+						if GetRelativeDifficulty(j, difficultyID) then
+							tinsert(subgroup, j);
+						end
+					end
+					group = subgroup;
+				end
 			end
 			
 			if not app.Settings:Get("DebugMode") then
@@ -2013,7 +2024,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			end
 			if app.Settings:GetTooltipSetting("SummarizeThings") then
 				local entries = {};
-				BuildContainsInfo(group.g, entries, paramA, paramB, "  ", 1);
+				BuildContainsInfo(group.g, entries, paramA, paramB, "  ", app.noDepth and 99 or 1);
 				if #entries > 0 then
 					tinsert(info, { left = "Contains:" });
 					if #entries < 25 then
@@ -2806,157 +2817,135 @@ local function AttachTooltip(self)
 	if not self.AllTheThingsProcessing then
 		self.AllTheThingsProcessing = true;
 		if (not InCombatLockdown() or app.Settings:GetTooltipSetting("DisplayInCombat")) and app.Settings:GetTooltipSetting("Enabled") then
-			--[[
-			for i,j in pairs(self) do
-				self:AddDoubleLine(tostring(i), tostring(j));
-			end
-			self:Show();
-			]]--
-		
-			local owner = self:GetOwner();
-			if owner then
-				--[[
-				for i,j in pairs(owner) do
+			local numLines = self:NumLines();
+			if numLines > 0 then
+				--[[--
+				-- Debug all of the available fields on the tooltip.
+				for i,j in pairs(self) do
 					self:AddDoubleLine(tostring(i), tostring(j));
 				end
 				self:Show();
-				]]--
-				if owner.SpellHighlightTexture then
+				self:AddDoubleLine("GetItem", tostring(select(2, self:GetItem()) or "nil"));
+				self:AddDoubleLine("GetSpell", tostring(select(2, self:GetSpell()) or "nil"));
+				self:AddDoubleLine("GetUnit", tostring(select(2, self:GetUnit()) or "nil"));
+				--]]--
+				
+				-- Does the tooltip have an owner?
+				local owner = self:GetOwner();
+				if owner and owner.SpellHighlightTexture then
 					-- Actionbars, don't want that.
 					return true;
-				elseif owner.lastNumMountsNeedingFanfare then
-					-- Collections
-					local gf = app:GetWindow("Prime").data;
-					AttachTooltipSearchResults(self, "Collections", (function() return gf; end), gf.key, gf[gf.key]);
-					self:Show();
-				elseif owner.NewAdventureNotice then
-					-- Adventure Guide
-					local gf = app:GetWindow("Prime").data.g[1];
-					AttachTooltipSearchResults(self, "Adventure Guide", (function() return gf; end), gf.key, gf[gf.key]);
-					self:Show();
-				elseif owner.tooltipText then
-					if owner.tooltipText == DUNGEONS_BUTTON then
-						-- Group Finder
-						local gf = app:GetWindow("Prime").data.g[4];
-						AttachTooltipSearchResults(self, "Group Finder", (function() return gf; end), gf.key, gf[gf.key]);
-						self:Show();
-					elseif owner.tooltipText == BLIZZARD_STORE then
-						-- Shop
-						local gf = app:GetWindow("Prime").data.g[15];
-						AttachTooltipSearchResults(self, "Shop", (function() return gf; end), gf.key, gf[gf.key]);
-						self:Show();
-					elseif string.sub(owner.tooltipText, 1, string.len(ACHIEVEMENT_BUTTON)) == ACHIEVEMENT_BUTTON then
-						-- Achievements
-						local gf = app:GetWindow("Prime").data.g[5];
-						AttachTooltipSearchResults(self, "Achievements", (function() return gf; end), gf.key, gf[gf.key]);
-						self:Show();
-					end
 				end
 				
-				-- Is this for a Unit?
-				local name, target = self:GetUnit();
+				-- Does the tooltip have an itemlink?
+				local link = select(2, self:GetItem());
+				if link then AttachTooltipSearchResults(self, link, SearchForLink, link); end
+				
+				-- Does the tooltip have a target?
+				local target = select(2, self:GetUnit());
 				if target then
-					-- Yes it is. Awesome.
+					-- Yes.
 					target = UnitGUID(target);
 					if target then
-						--print(target);
 						local type, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid = strsplit("-",target);
-						--print(name .. " is a " .. type .. " " .. target);
-						if type == "Creature" or type == "Vehicle" then
-							--print(name .. "'s NPC id is " .. npc_id)
+						-- print(target, type, npc_id);
+						if type == "Player" then
+							if target == "Player-76-0895E23B" then
+								local leftSide = _G[self:GetName() .. "TextLeft1"];
+								if leftSide then
+									leftSide:SetText("|cffff8000" .. leftSide:GetText() .. "|r");
+								end
+								local rightSide = _G[self:GetName() .. "TextRight2"];
+								leftSide = _G[self:GetName() .. "TextLeft2"];
+								if leftSide and rightSide then
+									leftSide:SetText(L["TITLE"]);
+									leftSide:Show();
+									rightSide:SetText("Author");
+									rightSide:Show();
+								else
+									self:AddDoubleLine(L["TITLE"], "Author");
+								end
+							end
+						elseif type == "Creature" or type == "Vehicle" then
 							if app.Settings:GetTooltipSetting("creatureID") then self:AddDoubleLine(L["CREATURE_ID"], tostring(npc_id)); end
 							AttachTooltipSearchResults(self, "creatureID:" .. npc_id, SearchForField, "creatureID", tonumber(npc_id));
-						--elseif type == "Vignette" then
-							--print(name .. " is a Vignette and should have its npc_id be zero (" .. npc_id .. ").")
-						--elseif type == "Player" then
-						--	if target == "Player-76-0895E23B" then
-						--		self:AddDoubleLine(L["TITLE"], "Author");
-						--	end
 						end
-						return;
+						return true;
 					end
 				end
 				
-				local encounterID = owner.encounterID;
-				if encounterID and not owner.itemID then
-					if app.Settings:GetTooltipSetting("encounterID") then self:AddDoubleLine(L["ENCOUNTER_ID"], tostring(encounterID)); end
-					AttachTooltipSearchResults(self, "encounterID:" .. encounterID, SearchForField, "encounterID", tonumber(encounterID));
-					return;
-				end
-				
-				local itemID = owner.itemID;
-				if itemID then
-					-- Parse the link and get the itemID and bonus ids.
-					local link = select(2, self:GetItem());
-					if link then
-						AttachTooltipSearchResults(self, link, SearchForLink, link);
-						self:Show();
-					else
-						AttachTooltipSearchResults(self, "itemID:" .. itemID, SearchForField, "itemID", itemID);
-						self:Show();
-					end
-				else
-					local link = select(2, self:GetItem());
-					if link then
-						AttachTooltipSearchResults(self, link, SearchForLink, link);
-						self:Show();
-					end
-				end
-				
+				-- Does the tooltip have a spell? [Mount Journal, Action Bars, etc]
 				local spellID = select(2, self:GetSpell());
-				if spellID then AttachTooltipSearchResults(self, "spellID:" .. spellID, SearchForField, "spellID", spellID); end
-			else
-				-- Is this for a Unit?
-				local name, target = self:GetUnit();
-				if target then
-					-- Yes it is. Awesome.
-					-- print(name, target);
-					target = UnitGUID(target);
-					if target then
-						-- print("GUID", name, target);
-						local type, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid = strsplit("-",target);
-						--print(name .. " is a " .. type .. " " .. target);
-						if type == "Creature" or type == "Vehicle" then
-							--print(name .. "'s NPC id is " .. npc_id)
-							if app.Settings:GetTooltipSetting("creatureID") then self:AddDoubleLine(L["CREATURE_ID"], tostring(npc_id)); end
-							AttachTooltipSearchResults(self, "creatureID:" .. npc_id, SearchForField, "creatureID", tonumber(npc_id));
-						--elseif type == "Vignette" then
-							--print(name .. " is a Vignette and should have its npc_id be zero (" .. npc_id .. ").")
-						--elseif type == "Player" then
-						--	if target == "Player-76-0895E23B" then
-						--		self:AddDoubleLine(L["TITLE"], "Author");
-						--	end
-						end
+				if spellID then
+					AttachTooltipSearchResults(self, "spellID:" .. spellID, SearchForField, "spellID", spellID);
+					self:Show();
+					self.AllTheThingsProcessing = nil;
+					return true;
+				end
+				
+				-- Does the tooltip have an owner?
+				local owner = self:GetOwner();
+				if owner then
+					-- If the owner has a ref, it's an ATT row. Ignore it.
+					if owner.ref then return true; end
+					
+					--[[--
+					-- Debug all of the available fields on the owner.
+					self:AddDoubleLine("GetOwner", tostring(owner:GetName()));
+					for i,j in pairs(owner) do
+						self:AddDoubleLine(tostring(i), tostring(j));
+					end
+					self:Show();
+					--]]--
+					
+					local encounterID = owner.encounterID;
+					if encounterID and not owner.itemID then
+						if app.Settings:GetTooltipSetting("encounterID") then self:AddDoubleLine(L["ENCOUNTER_ID"], tostring(encounterID)); end
+						AttachTooltipSearchResults(self, "encounterID:" .. encounterID, SearchForField, "encounterID", tonumber(encounterID));
 						return;
 					end
-				end
-				
-				local encounterID = self.encounterID;
-				if encounterID and not self.itemID then
-					if app.Settings:GetTooltipSetting("encounterID") then self:AddDoubleLine(L["ENCOUNTER_ID"], tostring(encounterID)); end
-					AttachTooltipSearchResults(self, "encounterID:" .. encounterID, SearchForField, "encounterID", tonumber(encounterID));
-					return;
-				--[[
-				else
-					local questID = self.questID;
-					if questID then
-						print("QUEST", questID);
-						if app.Settings:GetTooltipSetting("questID") then self:AddDoubleLine(L["QUEST_ID"], tostring(questID)); end
-						AttachTooltipSearchResults(self, "questID:" .. questID, SearchForField, "questID", tonumber(questID));
-					end
-				]]--
-				end
-				
-				local itemID = self.itemID;
-				if itemID then
-					AttachTooltipSearchResults(self, "itemID:" .. itemID, SearchForField, "itemID", itemID);
-					self:Show();
-				else
-					local link = select(2, self:GetItem());
-					if link then AttachTooltipSearchResults(self, link, SearchForLink, link); end
 					
-					local spellID = select(2, self:GetSpell());
-					if spellID then AttachTooltipSearchResults(self, "spellID:" .. spellID, SearchForField, "spellID", spellID); end
+					local gf;
+					if owner.lastNumMountsNeedingFanfare then
+						-- Collections
+						gf = app:GetWindow("Prime").data;
+					elseif owner.NewAdventureNotice then
+						-- Adventure Guide
+						gf = app:GetWindow("Prime").data.g[1];
+					elseif owner.tooltipText then
+						if owner.tooltipText == DUNGEONS_BUTTON then
+							-- Group Finder
+							gf = app:GetWindow("Prime").data.g[4];
+						elseif owner.tooltipText == BLIZZARD_STORE then
+							-- Shop
+							gf = app:GetWindow("Prime").data.g[15];
+						elseif string.sub(owner.tooltipText, 1, string.len(ACHIEVEMENT_BUTTON)) == ACHIEVEMENT_BUTTON then
+							-- Achievements
+							gf = app:GetWindow("Prime").data.g[5];
+						end
+					end
+					if gf then
+						app.noDepth = true;
+						AttachTooltipSearchResults(self, owner:GetName(), (function() return gf; end), owner:GetName(), 1);
+						app.noDepth = nil;
+						self:Show();
+					end
+				end
+				
+				-- Addons Menu?
+				if numLines == 2 then
+					local leftSide = _G[self:GetName() .. "TextLeft1"];
+					if leftSide and leftSide:GetText() == "AllTheThings" then
+						leftSide:SetText(L["TITLE"]);
+						local reference = app:GetDataCache();
+						local rightSide = _G[self:GetName() .. "TextRight1"];
+						if rightSide then
+							rightSide:SetText(GetProgressColorText(reference.progress, reference.total));
+							rightSide:Show();
+						end
+						self:AddDoubleLine(app.Settings:GetModeString(), app.GetNumberOfItemsUntilNextPercentage(reference.progress, reference.total), 1, 1, 1);
+						return true;
+					end
 				end
 			end
 		end
@@ -11110,7 +11099,7 @@ end)();
 GameTooltip.SetToyByItemID = function(self, itemID, ...)
 	self:SetHyperlink(C_ToyBox_GetToyLink(itemID));
 end
-GameTooltip:HookScript("OnShow", AttachTooltip);
+-- GameTooltip:HookScript("OnShow", AttachTooltip);
 GameTooltip:HookScript("OnTooltipSetQuest", AttachTooltip);
 GameTooltip:HookScript("OnTooltipSetItem", AttachTooltip);
 GameTooltip:HookScript("OnTooltipSetUnit", AttachTooltip);
