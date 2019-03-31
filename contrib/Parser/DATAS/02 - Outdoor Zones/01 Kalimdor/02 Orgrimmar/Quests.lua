@@ -1256,6 +1256,7 @@ _.Zones =
 					{	-- Nogg's Ring Redo
 						["questID"] = 2950,
 						["qg"] = 3412,	-- Nogg
+						["coord"] = { 56.7, 57.0, 85 },
 						["sourceQuest"] = 2949,	-- Return of the Ring
 						["races"] = HORDE_ONLY,
 						["groups"] = {
