@@ -22,6 +22,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						},
 						{	-- Turning the Tide
 							["achievementID"] = 10057,
+							["description"] = "When the boss casts Barrage, simply stand at the North or South walls and try to get at least 2-3 Guardians within the frontal cone to kill them. There are 5 Guardians at each wall, 10 Guardians in all, very easy to solo at 120.",
 							["crs"] = {
 								90284,	-- Iron Reaver
 							},
