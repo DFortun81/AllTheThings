@@ -74,10 +74,14 @@ _.Zones =
 						["sourceQuest"] = 14360,	-- Nothing a Couple of Melons Won't Fix
 					},
 					{	-- Alliance Relations
-						["questID"] = 1432,
+						["questID"] = 1436,
 						["u"] = 40,
-						["qg"] = 5640,	-- Keldran
+						["qg"] = 5641,	-- Takata Steelblade
 						["races"] = HORDE_ONLY,
+						["groups"] = {
+							un(2, i(6744)),	-- Gloves of Kapelan
+							un(2, i(6745)),	-- Swiftrunner Cape
+						},
 					},
 					{	-- An Impactful Discovery
 						["questID"] = 14380,

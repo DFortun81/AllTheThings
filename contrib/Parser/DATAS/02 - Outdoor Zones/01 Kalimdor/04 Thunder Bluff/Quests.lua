@@ -85,23 +85,12 @@ _.Zones =
 						},
 						["classes"] = {9},
 					})),
-					qg(437950, q(28303, {	-- Meet with Master Pyreanor
-						["groups"] = {
-						},
-						["classes"] = {2},
-						["races"] = {10},
-					})),
 					qg(3039, qh(28297, {	-- Meet with Ormak Grimshot
 						["groups"] = {
 						},
 						["classes"] = {3},
 					})),
 					qg(43870, qh(28308)),	-- Meet with Seer Liwatha
-					qg(43795, qh(28302, {	-- Meet with Sunwalker Atohmo
-						["groups"] = {
-						},
-						["classes"] = {2},
-					})),
 					qg(51639, qh(28301, {	-- Meet with Terga Earthbreaker
 						["groups"] = {
 						},
@@ -125,6 +114,20 @@ _.Zones =
 					})),
 					qg(3978, qh( 2965)),	-- Portents of Uldum
 --]]					
+					{	-- Meet with Master Pyreanor
+						["questID"] = 28303,
+						["qg"] = 43795,	-- Aponi Brightmane
+						["races"] = { 10 },	-- Blood Elf
+						["classes"] = { 2 },	-- Paladin
+						["isBreadcrumb"] = true,
+					},
+					{	-- Meet with Sunwalker Atohmo
+						["questID"] = 28302,
+						["qg"] = 43795,	-- Sunwalker Atohmo
+						["races"] = { 6 },	-- Tauren
+						["classes"] = { 2 },	-- Paladin
+						["isBreadcrumb"] = true,
+					},
 					{	-- Return to Krog
 						["questID"] = 27292,
 						["groups"] = {
