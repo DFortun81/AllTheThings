@@ -122,7 +122,7 @@ _.Instances = { tier(1, {	-- Classic
 					i(16818),	-- Netherwind Belt
 					i(16903),	-- Stormrage Belt
 					i(16960),	-- Waistband of Wrath
-					un(45, i(19339)),	-- Mind Quickening Gem
+					i(19339),	-- Mind Quickening Gem
 					i(19340),	-- Rune of Metamorphosis
 				},
 			}),
@@ -165,7 +165,7 @@ _.Instances = { tier(1, {	-- Classic
 					i(16956),	-- Judgment Gauntlets
 					i(16913),	-- Netherwind Gloves
 					i(16899),	-- Stormrage Handguards
-					un(45, i(19400)),	-- Firemaw's Clutch
+					i(19400),	-- Firemaw's Clutch
 					i(19396),	-- Taut Dragonhide Belt
 					un(45, i(19402)),	-- Legguards of the Fallen Crusader
 					i(19401),	-- Primalist's Linked Legguards
