@@ -167,7 +167,7 @@ _.Instances = { tier(1, {	-- Classic
 					i(16899),	-- Stormrage Handguards
 					i(19400),	-- Firemaw's Clutch
 					i(19396),	-- Taut Dragonhide Belt
-					un(45, i(19402)),	-- Legguards of the Fallen Crusader
+					i(19402),	-- Legguards of the Fallen Crusader
 					i(19401),	-- Primalist's Linked Legguards
 					i(19397),	-- Ring of Blackrock
 					i(19344),	-- Natural Alignment Crystal
