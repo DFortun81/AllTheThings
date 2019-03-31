@@ -11106,6 +11106,10 @@ end)();
 	end);
 end)();
 
+-- NOTE: Replacing Blizzard's broken "SetToyByItemID" with a more sensible solution.
+GameTooltip.SetToyByItemID = function(self, itemID, ...)
+	self:SetHyperlink(C_ToyBox_GetToyLink(itemID));
+end
 GameTooltip:HookScript("OnShow", AttachTooltip);
 GameTooltip:HookScript("OnTooltipSetQuest", AttachTooltip);
 GameTooltip:HookScript("OnTooltipSetItem", AttachTooltip);
