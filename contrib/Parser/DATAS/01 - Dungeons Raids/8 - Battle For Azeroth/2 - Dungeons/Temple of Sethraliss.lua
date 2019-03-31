@@ -57,12 +57,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					}),
 				}),
 				e(2145, { -- Avatar of Sethraliss
-					["crs"] = {
-						133392,	-- Avatar of Sethraliss
-						139946,	-- Heart Guardian
-						136250,	-- Hoodoo Hexxer
-						139949,	-- Plague Doctor
-					},
+					["crs"] = { 133392 },	-- Avatar of Sethraliss
 					["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						ach(12504),	-- The Temple of Sethraliss
 						i(158373),	-- Resonating Crystal Scimitar
@@ -128,12 +123,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						},
 					}),
 					e(2145, { -- Avatar of Sethraliss
-						["crs"] = {
-							133392,	-- Avatar of Sethraliss
-							139946,	-- Heart Guardian
-							136250,	-- Hoodoo Hexxer
-							139949,	-- Plague Doctor
-						},
+						["crs"] = { 133392 },	-- Avatar of Sethraliss
 						["groups"] = {
 							ach(12505),	-- Heroic: The Temple of Sethraliss
 							i(158373),	-- Resonating Crystal Scimitar
@@ -207,12 +197,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						},
 					}),
 					e(2145, { -- Avatar of Sethraliss
-						["crs"] = {
-							133392,	-- Avatar of Sethraliss
-							139946,	-- Heart Guardian
-							136250,	-- Hoodoo Hexxer
-							139949,	-- Plague Doctor
-						},
+						["crs"] = { 133392 },	-- Avatar of Sethraliss
 						["groups"] = {
 							ach(12508),	-- Good Night, Sweet Prince
 							ach(12506),	-- Mythic: The Temple of Sethraliss

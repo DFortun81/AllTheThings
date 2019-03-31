@@ -40,7 +40,7 @@ _.Instances = { tier(7, {	-- Legion
 					122469,	-- The Coven of Shivarra — Diima, Mother of Gloom*
 					122468,	-- The Coven of Shivarra — Noura, Mother of Flames*
 					121975,	-- Aggramar*
-					124828,	-- Argus the Unmaker
+					124828,	-- Argus the Unmaker*
 				},
 				["groups"] = {
 					i(151654),	-- Vantus Rune Technique: Antorus, the Burning Throne [Rank 1]

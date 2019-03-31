@@ -962,6 +962,106 @@ _.ExpansionFeatures =
 								}),
 							},
 						},
+							qa(54191, {	-- Changing Course
+								["description"] = "This quest will automatically be offered when you reach 7,000 Revered reputation with 7th Legion (33.3% of Revered).",
+								["sourceQuests"] = { 53887 },	-- War Marches On
+							}),
+							qa(54192, {	-- Sensitive Intel
+								["qg"] = 135612,	-- Halford Wyrmbane
+								["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
+								["sourceQuests"] = { 54191 },	-- Changing Course
+							}),
+							{	---------- Criteria: The Sleeper Agent
+								["achievementID"] = 13467,	-- Tides of Vengeance
+								["collectible"] = false,
+								["criteriaID"] = 2,	-- The Sleeper Agent
+								["races"] = ALLIANCE_ONLY,
+								["maps"] = { 862 },	-- Zuldazar
+								["lvl"] = 120,
+								["g"] = {
+									qa(54193, {	-- This is Huge!
+										["qg"] = 147151,	-- Kelsey Steelspark
+										["coord"] = { 41.1, 70.6, 862 },	-- Zuldazar
+										["sourceQuests"] = { 54192 },	-- Sensitive Intel
+									}),
+									qa(54194, {	-- Real Big Power
+										["qg"] = 147148,	-- Megs
+										["coord"] = { 41.1, 70.6, 862 },	-- Zuldazar
+										["sourceQuests"] = { 54193 },	-- This is Huge
+									}),
+									qa(54195, {	-- A Beast with Brains
+										["qg"] = 147148,	-- Megs
+										["coord"] = { 41.1, 70.6, 862 },	-- Zuldazar
+										["sourceQuests"] = { 54194 },	-- Real Big Power
+									}),
+									qa(54196, {	-- Out of Options
+										["qg"] = 147228,	-- Grong
+										["coord"] = { 48.2, 55.6, 862 },	-- Zuldazar
+										["sourceQuests"] = { 54195 },	-- A Beast with Brains
+									}),
+									qa(54197, {	-- Freedom for the Da'kani
+										["qg"] = 147228,	-- Grong
+										["coord"] = { 48.2, 55.6, 862 },	-- Zuldazar
+										["sourceQuests"] = { 54195 },	-- A Beast with Brains
+									}),
+									qa(54198, {	-- Bittersweet Goodbyes
+										["qg"] = 147293,	-- Grong
+										["sourceQuests"] = {
+											54197,	-- Freedom for the Da'kani
+											54196,	-- Out of Options
+										},
+									}),
+									qa(54199, {	-- The Needs of the Many
+										["qg"] = 147228,	-- Grong
+										["coord"] = { 46.8, 50.5, 862 },	-- Zuldazar
+										["sourceQuests"] = { 54198 },	-- Bittersweet Goodbyes
+									}),
+									qa(54200, {	-- Bring the Base
+										["qg"] = 147149,	-- Morton Cogswald
+										["coord"] = { 41.1, 70.6, 862 },	-- Zuldazar
+										["sourceQuests"] = { 54199 },	-- The Needs of the Many
+									}),
+									qa(54201, {	-- Fit for Grong
+										["qg"] = 147311,	-- Morton Cogswald
+										["coord"] = { 41.1, 70.6, 862 },	-- Zuldazar
+										["sourceQuests"] = { 54200 },	-- Bring the Base
+									}),
+									qa(54202, {	-- Calibrate the Core
+										["qg"] = 147148,	-- Megs
+										["coord"] = { 41.1, 70.6, 862 },	-- Zuldazar
+										["sourceQuests"] = { 54200 },	-- Bring the Base
+									}),
+									qa(54203, {	-- The Embiggining
+										["qg"] = 147148,	-- Megs
+										["coord"] = { 41.1, 70.6, 862 },	-- Zuldazar
+										["sourceQuests"] = {
+											54202,	-- Calibrate the Core
+											54201,	-- Fit for Grong
+										},
+									}),
+									qa(54204, {	-- Total Temple Destruction
+										["qg"] = 147148,	-- Megs
+										["coord"] = { 41.1, 70.6, 862 },	-- Zuldazar
+										["sourceQuests"] = { 54203 },	-- The Embiggining
+									}),
+									qa(54205, {	-- A Nice Nap
+										["qg"] = 147519,	-- Kelsey Steelspark
+										["coord"] = { 41.1, 70.6, 862 },	-- Zuldazar
+										["sourceQuests"] = { 54204 },	-- Total Temple Destruction
+									}),
+									qa(54206, {	-- The Sleeper Agent
+										["qg"] = 147519,	-- Kelsey Steelspark
+										["coord"] = { 41.1, 70.6, 862 },	-- Zuldazar
+										["sourceQuests"] = { 54205 },	-- A Nice Nap
+										["g"] = {
+											{	-- The Sleeper Agent
+												["achievementID"] = 13467,	-- Tides of Vengeance
+												["criteriaID"] = 2,	--  The Sleeper Agent
+											},
+										},
+									}),
+								},
+							},
 						},
 					},
 				}),

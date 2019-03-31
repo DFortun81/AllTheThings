@@ -181,7 +181,7 @@ _.Instances = { tier(7, {	-- Legion
 						111246,	-- Archmage Timear
 					},
 					["groups"] = {
-						cr(107699, e(1751, {	-- Spellblade Aluriel
+						cr(104881, e(1751, {	-- Spellblade Aluriel
 							{
 								["achievementID"] = 10837,	-- Royal Athenaeum
 								["criteriaID"] = 1,			-- Spellblade Aluriel
@@ -547,7 +547,7 @@ _.Instances = { tier(7, {	-- Legion
 					i(140818),	-- Foreign Contaminant
 					i(140812),	-- Soggy Manascrubber Brush
 				})),
-				cr(107699, e(1751, {	-- Spellblade Aluriel
+				cr(104881, e(1751, {	-- Spellblade Aluriel
 					{
 						["achievementID"] = 10817,	-- A Change In Scenery
 						["groups"] = {
@@ -945,7 +945,7 @@ _.Instances = { tier(7, {	-- Legion
 					i(140818),	-- Foreign Contaminant
 					i(140812),	-- Soggy Manascrubber Brush
 				})),
-				cr(107699, e(1751, {	-- Spellblade Aluriel
+				cr(104881, e(1751, {	-- Spellblade Aluriel
 					{
 						["achievementID"] = 10817,	-- A Change In Scenery
 						["groups"] = {
@@ -1350,7 +1350,7 @@ _.Instances = { tier(7, {	-- Legion
 					i(140818),	-- Foreign Contaminant
 					i(140812),	-- Soggy Manascrubber Brush
 				})),
-				cr(107699, e(1751, {	-- Spellblade Aluriel
+				cr(104881, e(1751, {	-- Spellblade Aluriel
 					{
 						["achievementID"] = 10817,	-- A Change In Scenery
 						["groups"] = {

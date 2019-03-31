@@ -185,6 +185,7 @@ _.Zones =
 							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(161219),	-- Raptor Patriarch Gloves
 							}),
+							["coord"] = { 58.0, 9.10, 863 },
 							["questID"] = 48980,
 						}),
 						n(124475, {	-- Shambling Ambusher
