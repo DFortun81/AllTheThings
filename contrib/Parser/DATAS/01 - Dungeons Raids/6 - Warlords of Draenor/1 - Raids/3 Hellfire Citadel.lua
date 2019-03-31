@@ -46,6 +46,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 							["achievementID"] = 9972,
 							["crs"] = {
 								90378,	-- Kilrogg
+								90980,	-- Ariok
 							},
 							["g"] = {
 								follower(474), -- Ariok
