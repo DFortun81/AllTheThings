@@ -8,7 +8,8 @@ _.Zones =
 			["groups"] = {
 				n(-4,   {	-- Achievements
 					["groups"] = {
-						{	--  A Loa of a Tale
+						ach(12943),		-- Adventurer of Vol'dun
+						{				-- A Loa of a Tale
 							["achievementID"] = 13036,	-- A Loa of a Tale
 							["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 							["g"] = {
@@ -51,7 +52,7 @@ _.Zones =
 							["npcID"] = 143255
 							]]--
 						}),
-						{	-- Get Hek'd
+						{				-- Get Hek'd
 							["achievementID"] = 12482,	-- Get Hek'd
 							["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 							["g"] = {
