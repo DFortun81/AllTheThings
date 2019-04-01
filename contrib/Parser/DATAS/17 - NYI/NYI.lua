@@ -1062,6 +1062,9 @@ _.NeverImplemented =
 		un(1, i(8505)),	-- Heavy Iron Lotterybox
 		un(1, i(8506)),	-- Mithril Lotterybox
 		un(1, i(8507)),	-- Heavy Mithril Lotterybox
+		un(1, i(165730)),	-- Cache of Dazar'alor Treasures
+		un(1, i(165731)),	-- Cache of Dazar'alor Treasures
+		un(1, i(165732)),	-- Cache of Dazar'alor Treasures
 		un(1, i(13247)),	-- Quartermaster Zigris' Footlocker
 		un(1, i(19804)),	-- Pale Ghoulfish
 		un(1, i(21135)),	-- Broken Assassin's Throwing Axe
@@ -1084,6 +1087,12 @@ _.NeverImplemented =
 		un(1, i(54331)),
 		un(1, i(55047)),
 		un(1, i(21163)),
+		un(1, i(137278)),	-- Wardens Vendor List
+		un(1, i(137279)),	-- nightfallen Vendor List
+		un(1, i(137280)),	-- highmountain Vendor List
+		un(1, i(137281)),	-- court of farondis Vendor List
+		un(1, i(137282)),	-- valarjar Vendor List
+		un(1, i(137283)),	-- dreamweavers Vendor List
 		un(1, i(34544)),	-- Essence of the immortals
 		un(1, i(84897)),	-- Never made to Live. Malevolent Gladiator's Heavy Crossbow
 		un(1, i(94899)),	-- Never made to Live. Malevolent Gladiator's Baton of Light
@@ -1970,6 +1979,10 @@ _.NeverImplemented =
 		}),
 		n(-337, {	-- Two Handed Maces
 			un(1, i(23457)),	-- High Warlord's Destroyer
+			un(1, i(137660)),	-- The Silver Hand
+			un(1, i(140699)),	-- Warhammer of Retribution
+			un(1, i(150594)),	-- Warhammer of Retribution
+			un(1, i(141615)),	-- Fel Lord's Warmace
 			un(1, i(159555)),	-- Unknown
 			un(1, i(165263)),	-- Unknown
 			un(1, i(108794)),	-- Unknown

@@ -1486,6 +1486,11 @@ _.Zones =
 						},
 						["questID"] = 41135,		
 					}), 
+					n(111651, { 	-- Degren 
+						["groups"] = {	
+							i(121808),	-- Nether Conductors
+						},	
+					}), 
 					n(99792, {		-- Elfbane
 						["groups"] = {	
 							i(121806),	-- Mountain Rage Shaker

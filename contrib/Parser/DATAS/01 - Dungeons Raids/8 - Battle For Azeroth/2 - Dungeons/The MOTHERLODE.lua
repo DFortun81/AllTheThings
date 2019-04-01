@@ -36,6 +36,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						i(155864),	-- Power-Assisted Vicegrips
 						i(158350),	-- Rowdy Reveler's Legwraps
 						i(159462),	-- Footbomb Championship Ring
+						i(168153),	-- Coin Return Flipper
 					}),
 				}),
 				e(2114, { -- Azerokk
@@ -52,6 +53,8 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						i(159336),	-- Mercenary Miner's Boots
 						i(159679),	-- Sabatons of Rampaging Elements
 						i(159612),	-- Azerokk's Resonating Heart
+						i(168133),	-- Unrefined Azerite Geode
+						i(168136),	-- Azerokk's Fist
 					}),
 				}),
 				e(2115, { -- Rixxa Fluxflame
@@ -102,6 +105,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							i(155864),	-- Power-Assisted Vicegrips
 							i(158350),	-- Rowdy Reveler's Legwraps
 							i(159462),	-- Footbomb Championship Ring
+							i(168153),	-- Coin Return Flipper
 						},
 					}),
 					e(2114, { -- Azerokk
@@ -118,6 +122,8 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							i(159336),	-- Mercenary Miner's Boots
 							i(159679),	-- Sabatons of Rampaging Elements
 							i(159612),	-- Azerokk's Resonating Heart
+							i(168133),	-- Unrefined Azerite Geode
+							i(168136),	-- Azerokk's Fist
 						},
 					}),
 					e(2115, { -- Rixxa Fluxflame
@@ -170,6 +176,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							i(155864),	-- Power-Assisted Vicegrips
 							i(158350),	-- Rowdy Reveler's Legwraps
 							i(159462),	-- Footbomb Championship Ring
+							i(168153),	-- Coin Return Flipper
 						},
 					}),
 					e(2114, { -- Azerokk
@@ -186,6 +193,8 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							i(159336),	-- Mercenary Miner's Boots
 							i(159679),	-- Sabatons of Rampaging Elements
 							i(159612),	-- Azerokk's Resonating Heart
+							i(168133),	-- Unrefined Azerite Geode
+							i(168136),	-- Azerokk's Fist
 						},
 					}),
 					e(2115, { -- Rixxa Fluxflame

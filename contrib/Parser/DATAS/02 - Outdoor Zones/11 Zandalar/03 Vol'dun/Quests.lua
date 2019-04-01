@@ -430,6 +430,8 @@ _.Zones =
 												i(155408), -- Resilient Outcasat's Shoulderguards
 												i(155385), -- Exiled Veteran's Cuirass
 												i(155406), -- Exiled Veteran's Pauldrons
+												i(155387),	-- Scorching Sands Wraps
+												i(155405),	-- Scorching Sand Shoulderpads
 											},
 											["qg"] = 138382, -- Akunda
 											["coord"] = { 52.2, 79.8, 864 }, -- Valley of Sorrows (Vol'dun)
@@ -877,6 +879,9 @@ _.Zones =
 												i(161159), -- Resilient Outcast's Spaudlers
 												i(159955), -- Exiled Veteran's Helm
 												i(161158), -- Exiled Veteran's Spaulders
+												i(155399),	-- Scorching Sands Mask
+												i(161160),	-- Scorching Sands Shoulderspads
+												-- Probably 2 more Items
 											},
 											["qg"] = 134803, -- Warguard Rakera
 											["coord"] = { 55.7, 36.6, 864 }, -- The Blood Font (Vol'dun)
