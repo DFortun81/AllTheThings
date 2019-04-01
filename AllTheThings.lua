@@ -2885,10 +2885,6 @@ local function AttachTooltip(self)
 					return true;
 				end
 				
-				-- Does the tooltip have an itemlink?
-				local link = select(2, self:GetItem());
-				if link then AttachTooltipSearchResults(self, link, SearchForLink, link); end
-				
 				-- Does the tooltip have a target?
 				local target = select(2, self:GetUnit());
 				if target then
@@ -2930,6 +2926,10 @@ local function AttachTooltip(self)
 					self.AllTheThingsProcessing = nil;
 					return true;
 				end
+				
+				-- Does the tooltip have an itemlink?
+				local link = select(2, self:GetItem());
+				if link then AttachTooltipSearchResults(self, link, SearchForLink, link); end
 				
 				-- Does the tooltip have an owner?
 				local owner = self:GetOwner();

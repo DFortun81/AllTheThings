@@ -81,10 +81,10 @@ _.Zones =
 									["spellID"] = 256789,
 								}),
 								i(162329, {	-- Schematic: AZ3-R1-T3 Orthogonal Optics [Rank 2]
-									["spellID"] = 272067,
+									-- ["spellID"] = 272066,
 								}),
 								i(162330, {	-- Schematic: AZ3-R1-T3 Orthogonal Optics [Rank 3]
-									["spellID"] = 272066,
+									-- ["spellID"] = 272067,
 								}),
 								i(162322, {	-- Schematic: Frost-Laced Ammunition [Rank 3]
 									["spellID"] = 265102,
