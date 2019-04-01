@@ -1211,6 +1211,9 @@ _.Zones =
 							},
 							{	-- Thrumn <Tabard Vendor>
 								["npcID"] = 5189,	-- Thrumn <Tabard Vendor>
+								["coords"] = {
+									{ 54.08, 57.22, 88 },
+								},
 								["description"] = "Tabards are only obtainable by those who have earned them.|r",
 								["g"] = {
 									{	-- Apexis Shard
