@@ -308,10 +308,39 @@ _.ExpansionFeatures =
 						},
 					}),
 					nh(88228, {	-- Sergeant Grimjaw - Garrison Quartermaster
-						["qgs"] = {79774, 88228},
+						["crs"] = {79774},
 						["groups"] = {
 							i(114931, {	-- Cerulean Pigment
 								i(141642),	-- Technique: Tome of the Clear Mind
+							}),
+							currency(824, {	-- Garrison Resources
+								i(122307),	-- Rush Order: Barn
+								i(122496),	-- Rush Order: Garden Shipment [H]
+								i(122487),	-- Rush Order: Gladiator's Sanctum
+								i(122501),	-- Rush Order: Goblin Workshop [H]
+								i(122502),	-- Rush Order: Mine Shipment [H]
+								i(128373),	-- Rush Order: Shipyard
+								i(122491),	-- Rush Order: War Mill [H]
+								i(122424),	-- Scouting Missive: Broken Precipice [H]
+								i(122418),	-- Scouting Missive: Darktide Roost [H]
+								i(122400),	-- Scouting Missive: Everbloom Wilds [H]
+								i(122402),	-- Scouting Missive: Iron Siegeworks [H]
+								i(122413),	-- Scouting Missive: Lost Veil Anzu [H]
+								i(122403),	-- Scouting Missive: Magnarok [H]
+								i(122421),	-- Scouting Missive: Mok'gol Watchpost [H]
+								i(122411),	-- Scouting Missive: Pillars of Fate [H]
+								i(122412),	-- Scouting Missive: Shattrath Harbor [H]
+								i(122408),	-- Scouting Missive: Skettis [H]
+								i(122416),	-- Scouting Missive: Socrethar's Rise [H]
+								i(122405),	-- Scouting Missive: Stonefury Cliffs [H]
+								i(133884),	-- Scouting Missive: The Heart of Shattrath [H]
+								i(133876),	-- Scouting Missive: The Pit [H]
+								i(122272),	-- Follower Ability Retraining Manual
+								i(122273),	-- Follower Trait Retraining Guide
+								i(120348),	-- Enchanted Crystal of Freezing
+								i(120347),	-- Enchanted Crystal of Replenishment
+								i(120349),	-- Enduring Vial of Swiftness
+								i(120182),	-- Excess Potion of Accelerated Learning
 							}),
 						},
 					}),

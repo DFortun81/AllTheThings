@@ -154,10 +154,40 @@ _.ExpansionFeatures =
 						}),
 					}),	
 					n(88223, { 	-- Sergeant Crowler <Garrison Quartermaster>
-						["qgs"] = {78564, 88223},
-						["itemID"] = 114931,	-- Cerulean Pigment
+						["crs"] = {78564},
 						["groups"] = {
-							i(141642),	-- Technique: Tome of the Clear Mind
+							i(114931, {	-- Cerulean Pigment
+								i(141642),	-- Technique: Tome of the Clear Mind
+							}),
+							currency(824, {	-- Garrison Resources
+								i(122307),	-- Rush Order: Barn
+								i(122490),	-- Rush Order: Dwarven Bunker [A]
+								i(122497),	-- Rush Order: Garden Shipment [A]
+								i(122487),	-- Rush Order: Gladiator's Sanctum
+								i(122500),	-- Rush Order: Gnomish Gearworks [A]
+								i(122503),	-- Rush Order: Mine Shipment [A]
+								i(128373),	-- Rush Order: Shipyard
+								i(122423),	-- Scouting Missive: Broken Precipice [A]
+								i(122417),	-- Scouting Missive: Darktide Roost [A]
+								i(122404),	-- Scouting Missive: Everbloom Wilds [A]
+								i(122406),	-- Scouting Missive: Iron Siegeworks [A]
+								i(122414),	-- Scouting Missive: Lost Veil Anzu [A]
+								i(122399),	-- Scouting Missive: Magnarok [A]
+								i(122422),	-- Scouting Missive: Mok'gol Watchpost [A]
+								i(122409),	-- Scouting Missive: Pillars of Fate [A]
+								i(122410),	-- Scouting Missive: Shattrath Harbor [A]
+								i(122407),	-- Scouting Missive: Skettis [A]
+								i(122415),	-- Scouting Missive: Socrethar's Rise [A]
+								i(122401),	-- Scouting Missive: Stonefury Cliffs [A]
+								i(133883),	-- Scouting Missive: The Heart of Shattrath [A]
+								i(133878),	-- Scouting Missive: The Pit [A]
+								i(122272),	-- Follower Ability Retraining Manual
+								i(122273),	-- Follower Trait Retraining Guide
+								i(120348),	-- Enchanted Crystal of Freezing
+								i(120347),	-- Enchanted Crystal of Replenishment
+								i(120349),	-- Enduring Vial of Swiftness
+								i(120182),	-- Excess Potion of Accelerated Learning
+							}),
 						},
 					}),
 					n(85839, {	-- Sparz Boltwist <Blueprints Vendor>
