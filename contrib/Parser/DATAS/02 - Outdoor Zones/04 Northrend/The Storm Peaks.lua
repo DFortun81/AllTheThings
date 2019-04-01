@@ -1174,7 +1174,7 @@ _.Zones =
 								["races"] = ALLIANCE_ONLY,
 							},
 							{	-- Loaned Wind Rider Reins
-								["itemID"] = 44221,	-- Loaned Wind Rider  Reins
+								["itemID"] = 44229,	-- Loaned Wind Rider  Reins
 								["u"] = 2,
 								["races"] = HORDE_ONLY,
 							},

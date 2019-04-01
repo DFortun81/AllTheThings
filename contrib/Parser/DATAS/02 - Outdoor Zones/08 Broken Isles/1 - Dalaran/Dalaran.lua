@@ -2393,6 +2393,17 @@ _.Zones =
 						["qg"] = 115465,	-- Archmage Modera
 						["sourceQuests"] = { 44782 },	-- Away From Prying Eyes
 					}),
+					q(44184, {	-- In the Blink of an Eye
+						["groups"] = {
+							i(143780),	-- Tome of the Tranquil Mind
+						},
+						["u"] = 2,	-- Changed to make the Tranquil Mind item Bop to stop abusing of class trials
+					}),
+					q(44663, {	-- In the Blink of an Eye
+						["groups"] = {
+							i(143785),	-- Tome of the Tranquil Mind
+						},
+					}),
 					q(44448, {	-- In the House of Light and Shadow
 						["qg"] = 90417,	-- Archmage Khadgar
 						["sourceQuests"] = {

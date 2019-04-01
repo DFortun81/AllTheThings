@@ -2878,6 +2878,7 @@ _.Zones =
 									un(2, i(18442)),	-- Master Sergeant's Insignia
 									un(2, i(18444)),	-- Master Sergeant's Insignia
 									un(2, i(18443)),	-- Master Sergeant's Insignia
+									un(2, i(44957)),	-- Greater Inscription of the Gladiator
 								},
 							},
 							{	-- Miles Sidney <Poison Supplies>

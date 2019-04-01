@@ -384,6 +384,7 @@ _.Zones =
 							un(2, i(15200)),	-- Senior Sergeant's Insignia
 							un(2, i(18428)),	-- Senior Sergeant's Insignia
 							un(2, i(16335)),	-- Senior Sergeant's Insignia
+							un(2, i(44957)),	-- Greater Inscription of the Gladiator
 						},
 					}),
 					n(50477, {	-- Champion Uru'zin <Darkspear Quartermaster>

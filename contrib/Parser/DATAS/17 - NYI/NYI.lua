@@ -720,6 +720,7 @@ _.NeverImplemented =
 			un(1, i(27718)),	-- Aldor Defender's Legplates
 			un(1, i(12106)),	-- Boulderskin Breastplate
 			un(1, i(25797)),	-- Crushing Grasp
+			un(1, i(29237)),	-- Warpath Bracers
 			un(1, i(37175)),	-- Glassy Silver Bracers
 			un(1, i(37477)),	-- Lost Crusader Chestplate
 			un(1, i(37485)),	-- Clam Collector Gauntlets
@@ -849,12 +850,14 @@ _.NeverImplemented =
 			un(1, i(7550)),		-- Warrior's Honor
 			un(1, i(13811)),	-- Necklace of the Dawn
 			un(1, i(18023)),	-- Blood Ruby Pendant
+			un(1, i(157750)),	-- Pendant of Good Fortune
 			un(1, i(23058)),	-- Life Channeling Necklace
 			un(1, i(28043)),	-- Demon Stalker Pendant
 			un(1, i(108812)),	-- Unknown
 			un(1, i(108818)),	-- Unknown
 			un(1, i(108819)),	-- Unknown
 			un(1, i(109267)),	-- Unknown
+			un(1, i(33197)),	-- Mossy necklace
 			un(1, i(109293)),	-- Unknown
 			un(1, i(109295)),	-- Unknown
 			un(1, i(31930)),	--Unknown
@@ -880,6 +883,11 @@ _.NeverImplemented =
 			un(1, i(17000)),	-- Band of the Wraith
 			un(1, i(17108)),	-- Mark of Deflection
 			un(1, i(132449)),	-- Phyrix's Embrace
+			un(1, i(33097)),	-- Unknown
+			un(1, i(33193)),	-- Unknown
+			un(1, i(33194)),	-- Unknown
+			un(1, i(33195)),	-- Unknown
+			un(1, i(33196)),	-- Unknown
 			un(1, i(13812)),	-- Ring of the Dawn
 			un(1, i(108813)),	-- Unknown
 			un(1, i(108820)),	-- Unknown
@@ -1030,6 +1038,10 @@ _.NeverImplemented =
 		un(1, i(40796)),	-- Unknown
 		un(1, i(42147)),	-- Unknown
 		un(1, i(43254)),	-- Unknown
+		un(1, i(35728)),	-- Greater Inscription of the blade (arena realm only)
+		un(1, i(35729)),	-- Greater Inscription of the knight (arena realm only)
+		un(1, i(35730)),	-- Greater Inscription of the oracle (arena realm only)
+		un(1, i(35731)),	-- Greater Inscription of the orb (arena realm only)
 		un(1, i(44125)),	-- zzzOLDLesser Inscription of Template - PH
 		un(1, i(44126)),	-- zzzOLDGreater Inscription of Template - PH
 		un(1, i(92563)),	-- The Eye of the Storm
@@ -1071,6 +1083,7 @@ _.NeverImplemented =
 		un(1, i(164763)),	-- Unknown
 		un(1, i(164765)),	-- Unknown
 		un(1, i(120370)),
+		un(1, i(162549)),	-- Personal Anchor
 		un(1, i(158922)),	-- Zany Zombiefied Raptor (Did not make it)
 		un(1, i(165357)),	-- Wolf's Den (162530) is used
 		un(1, i(165018)),	-- Unknown
