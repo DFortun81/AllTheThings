@@ -207,6 +207,14 @@ _.Zones =
 						["races"] = { 10 }, -- Blood Elf
 						["sourceQuests"] = { 9175 },	-- The Lady's Necklace
 					}),
+					{	-- Lament of the Highborne
+						["questID"] = 53736,
+						["qg"] = 145005,	-- Farstrider Elite
+						["lvl"] = 120,
+						["coord"] = { 36.9, 66.9, 95 },
+						["races"] = { 10 },	-- Blood Elf
+						["sourceQuest"] = 53735,	-- The First to Fall
+					},
 					qh(9217, {	-- More Rotting Hearts
 						["qg"] = 16205,	-- Magistrix Aminel
 						["sourceQuests"] = { 9216 },	-- Rotting Hearts
@@ -269,11 +277,27 @@ _.Zones =
 						["qg"] = 16197,	-- Arcanist Vandril
 						["sourceQuests"] = { 9758 },	-- Return to Arcanist Vandril
 					}),
+					{	-- The Day Hope Died
+						["questID"] = 53737,
+						["qg"] = 145005,	-- Farstrider Elite
+						["lvl"] = 120,
+						["coord"] = { 12.6, 56.8, 95 },
+						["races"] = { 10 },	-- Blood Elf
+						["sourceQuest"] = 53736,	-- Lament of the Highborne
+					},
 					qh( 9282, {	-- The Farstrider Enclave
 						["qg"] = 16239,	-- Magister Kaendris
 						["sourceQuests"] = { 9151 },	-- The Sanctum of the Sun
 						["isBreadcrumb"] = true,
 					}),
+					{	-- The First to Fall
+						["questID"] = 53735,
+						["qg"] = 145005,	-- Farstrider Elite (debugger shows Farstrider Elite, but lor'thermar offered this instead?)
+						["lvl"] = 120,
+						["coord"] = { 47.4, 84.0, 95 },
+						["races"] = { 10 },	-- Blood Elf
+						["sourceQuest"] = 53882,	-- Writing on the Wall
+					},
 					q(  9327, {	-- The Forsaken
 						["qg"] = 16197,	-- Arcanist Vandril
 						["races"] = {10}, -- Blood Elf
@@ -378,6 +402,14 @@ _.Zones =
 						["qg"] = 16197,	-- Arcanist Vandril
 						["sourceQuests"] = { 9139 },	-- Goldenmist Village
 					}),
+					{	-- Writing on the Wall
+						["questID"] = 53882,
+						["qg"] = 145015,	-- Lor'themar Theron
+						["lvl"] = 120,
+						["coord"] = { 46.3, 31.9, 95 },
+						["races"] = { 10 },
+						["sourceQuest"] = 53734,	-- Walk Among Ghosts
+					},
 				}),
 				n(-16, {	-- Rares	
 					n(22062, { -- Dr. Whitherlimb

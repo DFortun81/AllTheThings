@@ -130,6 +130,14 @@ _.Zones =
 						["qg"] = 15942,	-- Ranger Sareyn
 						["sourceQuests"] = { 9358 },	-- Ranger Sareyn
 					}),
+					{	-- Defense of Qual'Danas
+						["questID"] = 53738,
+						["qg"] = 145005,	-- Farstrider Elite
+						["lvl"] = 120,
+						["coord"] = { 51.4, 68.7, 94 },
+						["races"] = { 10 },	-- Blood Elf
+						["sourceQuest"] = 53737,	-- The Day Hope Died
+					},
 					qh( 8895, {	-- Delivery to the North Sanctum
 						["qg"] = 15418,	-- Magister Jaronis
 						["sourceQuests"] = { 8472 },	-- Major Malfunction

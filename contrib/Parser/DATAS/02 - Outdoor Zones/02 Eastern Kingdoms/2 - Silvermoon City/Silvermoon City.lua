@@ -20,6 +20,16 @@ _.Zones =
 						["crs"] = { 61080 },	-- Rabbit
 					},
 				}),
+				n(-17, {
+					{	-- Walk Among Ghosts
+						["questID"] = 53734,
+						["qg"] = 16802,	-- Lor'themar Theron
+						["lvl"] = 120,
+						["coord"] = { 53.7, 20.2, 110 },
+						["races"] = { 10 },	-- Blood Elf
+						["sourceQuest"] = 53791,	-- The Pride of the Sin'dorei
+					},
+				}),
 --[[				
 				n(-17, { 	-- Quests
 					q(24635),	-- A Cloudlet of Classy Cologne
