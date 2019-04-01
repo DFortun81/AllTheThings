@@ -5,19 +5,20 @@ _.Zones =
 {
 	m(876, { 	-- Kul'Tiras
 		m(895, {	-- -- Tiragarde Sound
-			["groups"] = {
+			["g"] = {
 				n(-4, {	-- Achievement
-					["groups"] = {
+					["g"] = {
+						ach(12939),		-- Adventurer of Tiragarde Sound
 						ach(12852, {	-- Treasures of Tiragarde Sound
 							o(279750, {	-- Hay Covered Chest [Localized]
-								["groups"] = {
+								["g"] = {
 									sz(12852, 1),	-- Hay Covered Chest
 								},
 								["icon"] = "Interface\\Icons\\garrison_bronzechest",
 								["questID"]  = 49963,
 							}),
 							o(281397, {	-- Cutwater Treasure Chest [Localized]
-								["groups"] = {
+								["g"] = {
 									sz(12852, 2),	-- Cutwater Treasure Chest
 									i(155381),  -- Cutwater-Captain's Sapphire Ring
 								},
@@ -28,7 +29,7 @@ _.Zones =
 								["questID"]  = 50442,
 							}),
 							o(293962, {	-- Precarious Noble Cache [Localized]
-								["groups"] = {
+								["g"] = {
 									sz(12852, 3),	-- Precarious Noble Cache
 								},
 								["icon"] = "Interface\\Icons\\garrison_bronzechest",
@@ -36,7 +37,7 @@ _.Zones =
 								["criteriaID"] = 3,
 							}),
 							o(293964, {	-- Forgotten Smuggler's Stash [Localized]
-								["groups"] = {
+								["g"] = {
 									sz(12852, 4),	-- Forgotten Smuggler's Stash
 								},
 								["icon"] = "Interface\\Icons\\garrison_bronzechest",
@@ -46,16 +47,16 @@ _.Zones =
 								["questID"]  = 52867,
 							}),
 							o(293965, {	-- Scrimshaw Cache [Localized]
-								["groups"] = {
+								["g"] = {
 									sz(12852, 5),	-- Scrimshaw Cache
 								},
 								["icon"] = "Interface\\Icons\\garrison_bronzechest",
 								["questID"] = 52870,
 							}),
 							i(162571, {	-- Soggy Treasure Map
-								["groups"] = {
+								["g"] = {
 									o(293852, {	-- Buried Treasure Chest
-										["groups"] = {
+										["g"] = {
 											sz(12852, 7),	-- Soggy Treasure Map
 										},
 										["questID"] = 52807,
@@ -70,9 +71,9 @@ _.Zones =
 								["questID"] = 52853,
 							}),
 							i(162580, {	-- Fading Treasure Map
-								["groups"] = {
+								["g"] = {
 									o(293880, {	-- Buried Treasure Chest
-										["groups"] = {
+										["g"] = {
 											sz(12852, 8),	-- Faded Treasure Map
 										},
 										["questID"] = 52833,
@@ -86,9 +87,9 @@ _.Zones =
 								["questID"] = 52854,
 							}),
 							i(162581, {	-- Yellowed Treasure Map
-								["groups"] = {
+								["g"] = {
 									o(293881, {	-- Buried Treasure Chest
-										["groups"] = {
+										["g"] = {
 											sz(12852, 9),	-- Yellowed Treasure Map
 										},
 										["questID"] = 52836,
@@ -102,9 +103,9 @@ _.Zones =
 								["questID"] = 52859,
 							}),
 							i(162584, {	-- Singed Treasure Map
-								["groups"] = {
+								["g"] = {
 									o(293884, {	-- Buried Treasure Chest
-										["groups"] = {
+										["g"] = {
 											sz(12852, 10),	-- Singed Treasure Map
 										},
 										["questID"] = 52845,
