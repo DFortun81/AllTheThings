@@ -5,13 +5,13 @@ _.ExpansionFeatures =
 {
 	n(-9966, { -- Draenor Garrisons
 		m(582, {	-- Lunarfall
-			["groups"] = {	
+			["g"] = {	
 				na(-17, { 	-- Quests
 					garrisonBuilding(10, {	-- Dwarven Bunker (rank 1: 8, rank 2: 9, rank 3: 10)
 						{	-- Scraps of Iron
 							["questID"] = 37092,
 							["qg"] = 77377,	-- Kristen Stoneforge
-							["groups"] = {
+							["g"] = {
 								i(118365),	-- Stormwind Tabard
 							},
 						},
@@ -23,7 +23,7 @@ _.ExpansionFeatures =
 							["isDaily"] = true,
 							["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
 							["requireSkill"] = 356,	-- Fishing
-							["groups"] = {
+							["g"] = {
 								i(112623, {	-- Pack of Fishing Supplies
 									i(34834),	-- Recipe: Captain Rumsey's Lager
 									i(33820),	-- Weather-Beaten Fishing Hat
@@ -39,7 +39,7 @@ _.ExpansionFeatures =
 							["isDaily"] = true,
 							["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
 							["requireSkill"] = 356,	-- Fishing
-							["groups"] = {
+							["g"] = {
 								i(112623),	-- Pack of Fishing Supplies
 							},
 						},
@@ -49,7 +49,7 @@ _.ExpansionFeatures =
 							["isDaily"] = true,
 							["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
 							["requireSkill"] = 356,	-- Fishing
-							["groups"] = {
+							["g"] = {
 								i(112623),	-- Pack of Fishing Supplies
 							},
 						},
@@ -59,7 +59,7 @@ _.ExpansionFeatures =
 							["isDaily"] = true,
 							["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
 							["requireSkill"] = 356,	-- Fishing
-							["groups"] = {
+							["g"] = {
 								i(112623),	-- Pack of Fishing Supplies
 							},
 						},
@@ -69,7 +69,7 @@ _.ExpansionFeatures =
 							["isDaily"] = true,
 							["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
 							["requireSkill"] = 356,	-- Fishing
-							["groups"] = {
+							["g"] = {
 								i(112623),	-- Pack of Fishing Supplies
 							},
 						},
@@ -79,7 +79,7 @@ _.ExpansionFeatures =
 							["isDaily"] = true,
 							["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
 							["requireSkill"] = 356,	-- Fishing
-							["groups"] = {
+							["g"] = {
 								i(112623),	-- Pack of Fishing Supplies
 							},
 						},
@@ -106,7 +106,7 @@ _.ExpansionFeatures =
 							["questID"] = 36448,
 							["sourceQuest"] = 36429,	-- The Rise and Fall of Barov Industries: Weldon Barov
 							["qg"] = 85413,	-- Weldon Barov <Barov Industries>
-							["groups"] = {
+							["g"] = {
 								i(116154),	-- Barov Lumberjack Caller
 							},
 						},
@@ -118,7 +118,7 @@ _.ExpansionFeatures =
 							["questID"] = 36813,
 							["qg"] = 84889, -- Phylarch the Evergreen
 							["description"] = "This Quest requires a Level 3 Lumber Mill as well as the Follower Phylarch the Green either active or attached to the Lumber Mill.",
-							["groups"] = {
+							["g"] = {
 								i(117398), -- Everbloom Seed Pouch
 							},
 						},
@@ -126,7 +126,7 @@ _.ExpansionFeatures =
 							["questID"] = 36429,
 							["qg"] = 85378,	-- Weldon Barov <Barov Industries>
 							["description"] = "Weldon Barov is found at 73.7, 64.0 in Talador. He is stuck under a log and it seems you need lumber mill to be able to get him out of there.",
-							["groups"] = {
+							["g"] = {
 								follower(195),	-- Weldon Barov / Alexi Barov
 							},
 						},
@@ -137,11 +137,11 @@ _.ExpansionFeatures =
 						{	-- Petrified Ancient
 							["npcID"] = 85199,
 							["description"] = "These will appear as nodes on your mini-map as trees do after you have built your Level 2 Lumber Mill.",
-							["groups"] = {
+							["g"] = {
 								{
 									["itemID"] = 115467,	-- Barkskin Tome
 									["questID"] = 36385,	-- Legacy of the Ancients
-									["groups"] = {
+									["g"] = {
 										i(115506),	-- Treessassin's Guise
 									},
 								},
@@ -554,7 +554,7 @@ _.ExpansionFeatures =
 							i(109953),	-- Windseal Necklace
 						}), "Commonly rewarded from quests provided from the Inn."),
 						q(37228, {	-- A Fruitful Proposition			
-							["groups"] = {
+							["g"] = {
 								i(119037), -- Supply of Storied Rarities
 							},		
 							["qg"] = 87991, -- Cro Threadstrong	
@@ -563,7 +563,7 @@ _.ExpansionFeatures =
 							["repeatable"] = true,
 						}),	
 						q(37237, {	-- A Hero's Quest is Never Complete			
-							["groups"] = {
+							["g"] = {
 								i(119037), -- Supply of Storied Rarities
 							},
 							["qg"] = 88001, -- Maximillian of Northshire
@@ -572,7 +572,7 @@ _.ExpansionFeatures =
 							["repeatable"] = true,
 						}),
 						q(37235, {	-- A Plea to the Sky			
-							["groups"] = {
+							["g"] = {
 								i(119037), -- Supply of Storied Rarities
 							},
 							["qg"] = 87999, --  Skylord Omnuron
@@ -581,7 +581,7 @@ _.ExpansionFeatures =
 							["repeatable"] = true,
 						}),
 						q(37243, {	-- An Axe to Grind			
-							["groups"] = {
+							["g"] = {
 								i(119037), -- Supply of Storied Rarities
 							},	
 							["qg"] = 88007, -- Gamon
@@ -590,7 +590,7 @@ _.ExpansionFeatures =
 							["repeatable"] = true,
 						}),
 						q(37167, {	-- And No Maces!
-							["groups"] = {							
+							["g"] = {							
 								i(118924, { -- Cache of Arms
 									i(114073, {	-- Turbulent Hood
 										i(114448),	-- Fireflash Hood
@@ -628,7 +628,7 @@ _.ExpansionFeatures =
 							["qg"] = 87999, --  Skylord Omnuron
 						}),
 						q(37230, {	-- Bloody Expensive			
-							["groups"] = {
+							["g"] = {
 								i(119037), -- Supply of Storied Rarities
 							},	
 							["qg"] = 87994, --  Moroes
@@ -637,7 +637,7 @@ _.ExpansionFeatures =
 							["repeatable"] = true,
 						}),
 						q(37145, { 	-- Budd's Gambit
-							["groups"] = {
+							["g"] = {
 								i(119041, { -- Strongbox of Mysterious Treasures
 									i(109829),	-- Belt of Burning Focus
 									i(109799),	-- Blackwater Boots
@@ -730,25 +730,25 @@ _.ExpansionFeatures =
 							["repeatable"] = true,
 						}),
 						q(37165, {	-- Cenrion Concerns
-							["groups"]  = {
+							["g"]  = {
 								i(118935), -- Ever-Blooming Frond 
 							},
 							["qg"] = 88004, --  Zen'kiki
 						}),
 						q(37160, {	-- Cleaving Time
-							["groups"] = {
+							["g"] = {
 								i(118937),  -- Gamon's Braid
 							},	
 							["qg"] = 88007, -- Gamon
 						}),	
 						q(37151, {	-- Cold Steel
-							["groups"] = {
+							["g"] = {
 								i(118918),  -- Bloody Bandann
 							},
 							["qg"] = 88026, -- John J. Keeshan
 						}),	
 						q(37209, {	-- Cold Steel Part II
-							["groups"] = {
+							["g"] = {
 								i(119036),  -- Box of Storied Treasures
 							},
 							["qg"] = 88026, -- John J. Keeshan
@@ -757,25 +757,25 @@ _.ExpansionFeatures =
 							["repeatable"] = true,
 						}),
 						q(37152, {	-- Cro's Revenge
-							["groups"] = {
+							["g"] = {
 								i(119083),  -- Fruit Basket
 							},	
 							["qg"] = 87991, -- Cro Threadstrong
 						}),
 						q(37162, {	-- Damsels and Dragons
-							["groups"] = {
+							["g"] = {
 								i(118927), -- Maximillian's Laundry
 							},
 							["qg"] = 88001, -- Maximillian of Northshire
 						}),
 						q(37161, {	-- Family Traditions
-							["groups"] = {
+							["g"] = {
 								i(118926), -- Huge Pile of Skins
 							},	
 							["qg"] = 88000, --  Finkle Einhorn
 						}),
 						q(37239, {	-- Fate of the Fallen			
-							["groups"] = {
+							["g"] = {
 								i(119037),  -- Supply of Storied Rarities
 							},
 							["qg"] = 88003, --  Cowled Ranger
@@ -784,13 +784,13 @@ _.ExpansionFeatures =
 							["repeatable"] = true,
 						}),
 						q(37157, {	-- Feeling A Bit Morose
-							["groups"] = {
+							["g"] = {
 								i(119092), -- Moroes' Famous Polish 
 							},
 							["qg"] = 87994, -- Moroes <Tower Steward>
 						}),	
 						q(37244, {	-- Flamefly Trap
-							["groups"] = {
+							["g"] = {
 								i(119036),  -- Box of Storied Treasures
 							},
 							["qg"] = 88024, -- Oralius
@@ -799,20 +799,20 @@ _.ExpansionFeatures =
 							["repeatable"] = true,
 						}),
 						q(37150, {	-- For the Birds
-							["groups"] = {
+							["g"] = {
 								i(118921), -- Everbloom Peachick
 							},
 							["qg"] = 88025, -- Mylune
 						}),
 						q(37179, {	-- For the Children!
-							["groups"] = {
+							["g"] = {
 								i(118938), -- Manstorm's Duplicator 
 								follower(455), -- Millhouse Manstorm
 							},
 							["qg"] = 88009, -- Millhouse Manstorm
 						}),
 						q(37146, {	-- Go Fetch
-							["groups"] = {
+							["g"] = {
 								i(119042, { -- Crate of Valuable Treasures
 									i(109957),	-- Alc's Pendant of Fiery Dreams
 									i(109779),	-- Ancient Draenic Loop
@@ -994,13 +994,13 @@ _.ExpansionFeatures =
 							["repeatable"] = true,
 						}),
 						q(37158, { 	-- Gloriously Incandescent
-							["groups"] = {
+							["g"] = {
 								i(118928), -- Faintly-Sparkling Cache
 							},	
 							["qg"] = 87998, --  Sunwalker Dezco
 						}),
 						q(37242, {	-- Learning Is Painful			
-							["groups"] = {
+							["g"] = {
 								i(119037),  -- Supply of Storied Rarities
 							},	
 							["qg"] = 88006, --  Lonika Stillblade
@@ -1009,7 +1009,7 @@ _.ExpansionFeatures =
 							["repeatable"] = true,
 						}),
 						q(37241, {	-- Lessons of the Past			
-							["groups"] = {
+							["g"] = {
 								i(119037), -- Supply of Storied Rarities
 							},
 							["qg"] = 88005, --  Lorewalker Cho
@@ -1018,7 +1018,7 @@ _.ExpansionFeatures =
 							["repeatable"] = true,
 						}),
 						q(37229, {	-- Like A Dwarf In A Mine			
-							["groups"] = {
+							["g"] = {
 								i(119037), -- Supply of Storied Rarities
 							},		
 							["qg"] = 87992, --  Olaf
@@ -1027,7 +1027,7 @@ _.ExpansionFeatures =
 							["repeatable"] = true,
 						}),
 						q(37236, {	-- Like Father, Like Son			
-							["groups"] = {
+							["g"] = {
 								i(119037), -- Supply of Storied Rarities
 							},	
 							["qg"] = 88000, --  Finkle Einhorn
@@ -1036,7 +1036,7 @@ _.ExpansionFeatures =
 							["repeatable"] = true,
 						}),
 						qd(q(37142, {	-- Ogre Ancestry
-							["groups"] = {
+							["g"] = {
 								i(119040, { -- Cache of Mingled Treasures
 									i(109829),	-- Belt of Burning Focus
 									i(109799),	-- Blackwater Boots
@@ -1128,13 +1128,13 @@ _.ExpansionFeatures =
 							["qg"] = 88013, -- Lunk
 						})),
 						q(37148, {	-- Oralius' Adventure
-							["groups"] = {
+							["g"] = {
 								i(118922), -- Oralius' Whispering Crystal
 							},
 							["qg"] = 88024, -- Oralius
 						}),
 						q(37227, {	-- Put a Bird on It
-							["groups"] = {
+							["g"] = {
 								i(119036),  -- Box of Storied Treasures
 							},
 							["qg"] = 88025, -- Mylune
@@ -1143,7 +1143,7 @@ _.ExpansionFeatures =
 							["repeatable"] = true,
 						}),
 						q(37238, {	-- Secrets of Soulbinding			
-							["groups"] = {
+							["g"] = {
 								i(119037), -- Supply of Storied Rarities
 							},	
 							["qg"] = 88002, --  Highlord Darion Mograine
@@ -1152,13 +1152,13 @@ _.ExpansionFeatures =
 							["repeatable"] = true,
 						}),
 						q(37163, {	-- Shadowy Secrets
-							["groups"] = {
+							["g"] = {
 								i(119003), -- Void Totem 
 							},
 							["qg"] = 88002, -- Highlord Darion Mograine
 						}),
 						q(37147, {	-- Sky Dancers
-							["groups"] = {
+							["g"] = {
 								i(119043, { -- Trove of Smoldering Treasures
 									i(109957),	-- Alc's Pendant of Fiery Dreams
 									i(109779),	-- Ancient Draenic Loop
@@ -1350,7 +1350,7 @@ _.ExpansionFeatures =
 							["repeatable"] = true,
 						}),
 						q(37232, {	-- Soulcarver Voss			
-							["groups"] = {
+							["g"] = {
 								i(119037),  -- Supply of Storied Rarities
 							},	
 							["qg"] = 87996, --  Lillian Voss
@@ -1359,19 +1359,19 @@ _.ExpansionFeatures =
 							["repeatable"] = true,
 						}),
 						q(37155, { 	-- The Brass Compass
-							["groups"] = {
+							["g"] = {
 								i(118925), -- Plundered Booty
 							},	
 							["qg"] = 87995, --  Fleet Master Seahorn
 						}),
 						q(37154, {	-- The Cure For Death
-							["groups"] = {
+							["g"] = {
 								i(118931), -- Leonid's Bag of Supplies
 							},	
 							["qg"] = 87997, --  Leonid Barthalomew the Revered
 						}),
 						q(37234, {	-- The Dark Within			
-							["groups"] = {
+							["g"] = {
 								i(119037),  -- Supply of Storied Rarities
 							},	
 							["qg"] = 87998, --  Sunwalker Dezco
@@ -1380,13 +1380,13 @@ _.ExpansionFeatures =
 							["repeatable"] = true,
 						}),
 						q(37164, {	-- The Huntresses
-							["groups"] = {
+							["g"] = {
 								i(118923), -- Sentinel's Companion
 							},
 							["qg"] = 88003, --  Cowled Ranger
 						}),
 						q(37240, {	-- The Leaf-Reader			
-							["groups"] = {
+							["g"] = {
 								i(119037),  -- Supply of Storied Rarities
 							},	
 							["qg"] = 88004, --  Zen'kiki
@@ -1395,7 +1395,7 @@ _.ExpansionFeatures =
 							["repeatable"] = true,
 						}),
 						q(37231, {	-- The Search Continues			
-							["groups"] = {
+							["g"] = {
 								i(119037), -- Supply of Storied Rarities
 							},	
 							["qg"] = 87995, --  Fleet Master Seahorn
@@ -1404,31 +1404,31 @@ _.ExpansionFeatures =
 							["repeatable"] = true,
 						}),
 						q(37156, {	-- The Soulcutter
-							["groups"] = {
+							["g"] = {
 								i(119039), -- Lilian's Warning Sign
 							},
 							["qg"] = 87996, --  Lillian Voss
 						}),
 						q(37149, {	-- The Void-Gate
-							["groups"] = {
+							["g"] = {
 								i(118936), -- Manual of Void-Calling
 							},
 							["qg"] = 88027, -- Impsy
 						}),
 						q(37153, {	-- Time-Lost Vikings
-							["groups"] = {
+							["g"] = {
 								i(118929), -- Sack of Mined Ore
 							},
 							["qg"] = 87992, --  Olaf
 						}),
 						q(37166, {	-- Titanic Evolution
-							["groups"] = {
+							["g"] = {
 								i(118930), -- Bag of Everbloom Herbs
 							},
 							["qg"] = 88005, --  Lorewalker Cho
 						}),
 						q(37233, {	-- Vessel of Virtue			
-							["groups"] = {
+							["g"] = {
 								i(119037), -- Supply of Storied Rarities
 							},	
 							["qg"] = 87997, --  Leonid Barthalomew the Revered
@@ -1437,7 +1437,7 @@ _.ExpansionFeatures =
 							["repeatable"] = true,
 						}),
 						q(37245, {	-- Whispers in the Darkness
-							["groups"] = {
+							["g"] = {
 								i(119036), -- Box of Storied Treasures
 							},
 							["qg"] = 88027, -- Impsy
@@ -1502,7 +1502,7 @@ _.ExpansionFeatures =
 							["questID"] = 37004,
 							["qg"] = 86973,	-- Keegan Firebeard
 							["races"] = ALLIANCE_ONLY,
-							["groups"] = {
+							["g"] = {
 								i(116675),	-- Trained Rocktusk
 							},
 						},
@@ -1570,7 +1570,7 @@ _.ExpansionFeatures =
 							["questID"] = 36994,
 							["qg"] = 86973,	-- Keegan Firebeard
 							["races"] = ALLIANCE_ONLY,
-							["groups"] = {
+							["g"] = {
 								i(116656),	-- Trained Icehoof
 							},
 						},
@@ -1608,7 +1608,7 @@ _.ExpansionFeatures =
 							["questID"] = 37021,
 							["qg"] = 86973,	-- Keegan Firebeard
 							["races"] = ALLIANCE_ONLY,
-							["groups"] = {
+							["g"] = {
 								i(116662),	-- Trained Meadowstomper
 							},
 						},
@@ -1666,7 +1666,7 @@ _.ExpansionFeatures =
 							["questID"] = 37013,
 							["qg"] = 86974,	-- Fanny Firebeard
 							["races"] = ALLIANCE_ONLY,
-							["groups"] = {
+							["g"] = {
 								i(116676),	-- Trained Riverwallow
 							},
 						},
@@ -1729,7 +1729,7 @@ _.ExpansionFeatures =
 							["questID"] = 36982,
 							["qg"] = 86974,	-- Fanny Firebeard
 							["races"] = ALLIANCE_ONLY,
-							["groups"] = {
+							["g"] = {
 								i(116774),	-- Trained Silverpelt
 							},
 						},
@@ -1782,7 +1782,7 @@ _.ExpansionFeatures =
 							["questID"] = 37028,
 							["qg"] = 86974,	-- Fanny Firebeard
 							["races"] = ALLIANCE_ONLY,
-							["groups"] = {
+							["g"] = {
 								i(116784),	-- Trained Snarler
 							},
 						},
@@ -1801,7 +1801,7 @@ _.ExpansionFeatures =
 						q(36948, {	-- Auctioning for Parts
 							["description"] = "Completing this quest grants you the ability to access the Auction House from your Garrison.",
 							["qg"] = 87206,	-- Ancient Trading Mechanism
-							["groups"] = addObject(
+							["g"] = addObject(
 								bubbleDown({["u"] = 7, ["description"] = "This item is no longer required to complete the Auctioning for Parts garrison quest."}, {
 									i(118377, {	-- Universal Language Module
 										i(118333),	-- Universal Language Compensator [Part 1 of 3]
@@ -1852,10 +1852,11 @@ _.ExpansionFeatures =
 						["qg"] = 92219,	-- King Varian Wrynn
 						["races"] = ALLIANCE_ONLY,
 					},
-					{ 	-- Ashran Appearance
-						["questID"] = 36624,
-						["qg"] = 79953, -- Lieutennt Thorn
-					},
+					qa(36624, {	-- Ashran Appearance
+						["coord"] = { 40.7, 53.6, 582 },
+						["lvl"] = 91,
+						["qg"] = 79953, -- Lieutenant Thorn
+					}),
 					{	-- Bigger is Better
 						["questID"] = 36592,
 						["qg"] = 77209,	-- Baros Alexston
@@ -1864,7 +1865,7 @@ _.ExpansionFeatures =
 					{ 	-- Bringing the Bass
 						["questID"] = 38356,
 						["qg"] = 91589,	-- Fix "Smallie" Biggswrench
-						["groups"] = {
+						["g"] = {
 							i(122613, { -- Stash of Dusty Music Rolls
 								i(122209), -- Music Roll: Curse of the Worgen
 								i(122208), -- Music Roll: Exodar
@@ -1896,10 +1897,8 @@ _.ExpansionFeatures =
 						["qg"] = 85344,	-- Naron Bloomthistle
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 36592,	-- Bigger is Better
-						["groups"] = {
-							{	-- Herb Garden lvl 1
-								["buildingID"] = 29,
-							},
+						["g"] = {
+							{ ["buildingID"] = 29 },	-- Herb Garden lvl 1
 						},
 					},
 					{	-- Feeding An Army
@@ -1910,7 +1909,7 @@ _.ExpansionFeatures =
 					{ 	-- For the Alliance
 						["questID"] = 34583,
 						["qg"] = 79470,	-- Vindicator Maraad
-						["groups"] = {
+						["g"] = {
 							i(108908),	-- Rangari Initiate Crossbow
 							i(108909),	-- Karabor Footman's Pike
 							i(108910),	-- Rangari Initiate Dagger
@@ -1937,7 +1936,7 @@ _.ExpansionFeatures =
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
 						["requireSkill"] = 755, -- Jewelcrafting
-						["groups"] = {
+						["g"] = {
 							recipe(187639),	-- Immaculate Versatility Taladite
 						},
 					},
@@ -1960,7 +1959,7 @@ _.ExpansionFeatures =
 					{ 	-- Proving Grounds
 						["questID"] = 37433,
 						["qg"] = 79953,	-- Lieutenant Thorn
-						["groups"] = {
+						["g"] = {
 							i(119463),	-- Staff of Trials
 							i(119458),	-- Greataxe of Trials
 							i(119462),	-- Skullcutter of Trials
@@ -1972,9 +1971,9 @@ _.ExpansionFeatures =
 						},
 					},
 					n(89763, { 	-- Muradin Bronzebeard
-						["groups"] = {
+						["g"] = {
 							i(123975, { -- Greater Bounty Spoils
-								["groups"] = {
+								["g"] = {
 									i(114111, { -- Formidable Armament
 										i(115335), -- Formidable Axe
 										i(115338), -- Formidable Dagger
@@ -2106,7 +2105,7 @@ _.ExpansionFeatures =
 										i(114503), -- Undying Boots
 									}),
 								},
-								["description"] = "This satchel is awarded by High Overlord Saurfang and Muradin Bronzebear on all of the Garrison Raid Quests.",
+								["description"] = "This satchel is awarded by High Overlord Saurfang and Muradin Bronzebeard on all of the Garrison Raid Quests.",
 							}),
 							qw(q(37767, { 	-- Arcane Sanctum: Ko'ragh
 								i(123975, { -- Greater Bounty Spoils
@@ -2145,11 +2144,11 @@ _.ExpansionFeatures =
 						["races"] = ALLIANCE_ONLY,
 					},
 					n(-152, { 	-- Garrison Campaign
-						q(35195, {
-							i(119134),	-- Toy
+						q(35195, {	-- Socrethar's Fury
+							i(119134),	-- Sargerei Disguise (TOY!)
 						}),
-						q(36169, {
-							i(119144), -- Toy
+						q(36169, {	-- The Trial of Champions
+							i(119144),	-- Touch of the Naaru (TOY!)
 						}),
 					}),
 					{	-- The Secrets of Gorgrond
@@ -2165,10 +2164,8 @@ _.ExpansionFeatures =
 						["questID"] = 34192,
 						["qg"] = 77730,	-- Timothy Leens
 						["sourceQuest"] = 36592,	-- Bigger is Better
-						["groups"] = {
-							{
-								["buildingID"] = 61,	-- Frostwall Mines
-							},
+						["g"] = {
+							{ ["buildingID"] = 61 },	-- Frostwall Mines
 						},
 					},
 					{	-- Treasure Contract: The Infected Orc

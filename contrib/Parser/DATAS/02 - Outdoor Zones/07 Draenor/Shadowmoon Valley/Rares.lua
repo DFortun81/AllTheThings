@@ -370,6 +370,11 @@ _.Zones =
 								["races"] = ALLIANCE_ONLY,
 								["g"] = {
 									i(113553),	-- Windfang Sabre
+									qa(35614, {
+										["g"] = {
+											follower(179),	-- Artificer Romuul
+										},
+									}),
 								},
 							},	
 							{	-- Yggdrel

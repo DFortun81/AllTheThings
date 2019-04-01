@@ -26,65 +26,55 @@ _.Zones =
 ]]--				
 							a(ach(8845, {
 								crit(1, {	-- Establishing a Foothold
-									{	-- Finding a Foothold
-										["questID"] = 34582,
+									q(34582, {	-- Finding a Foothold
 										["qg"] = 79206,	-- Prophet Velen
 										["coord"] = { 26.9, 8.00, 539 },
 										["sourceQuests"] = { 34575 },	-- Step Three: Prophet!
-									},
-									{	-- For the Alliance!
-										["questID"] = 34583,
+									}),
+									q(34583, {	-- For the Alliance!
 										["qg"] = 79470,	-- Vindicator Maraad
 										["coord"] = { 30.0, 34.3, 582 },
-										["sourceQuest"] = 34582,	-- Finding a Foothold
-									},
-									{	-- Looking for Lumber
-										["questID"] = 34584,
+										["sourceQuests"] = { 34582 },	-- Finding a Foothold
+									}),
+									q(34584, {	-- Looking for Lumber
 										["qg"] = 79243,	-- Baros Alexston
 										["coord"] = { 32.5, 34.2, 582 },
-										["sourceQuest"] = 34583,	-- For the Alliance!
-									},
-									{	-- Ravenous Ravens
-										["questID"] = 34616,
+										["sourceQuests"] = { 34583 },	-- For the Alliance!
+									}),
+									q(34616, {	-- Ravenous Ravens
 										["qg"] = 79243,	-- Baros Alexston
 										["coord"] = { 32.5, 34.2, 582 },
-										["sourceQuest"] = 34583,	-- For the Alliance!
-									},
-									{	-- Quakefist
-										["questID"] = 34585,
+										["sourceQuests"] = { 34583 },	-- For the Alliance!
+									}),
+									q(34585, {	-- Quakefist
 										["qg"] = 79567,	-- Yrel
 										["coord"] = { 31.4, 35.8, 582 },
 										["sourceQuests"] = {
 											34584,	-- Looking for Lumber
 											34616,	-- Ravenous Ravens
 										},
-									},
-									{	-- Establish Your Garrison
-										["questID"] = 34586,
+									}),
+									q(34586, {	-- Establish Your Garrison
 										["qg"] = 79243,	-- Baros Alexston
 										["coord"] = { 32.7, 34.0, 582 },
-										["sourceQuest"] = 34585,	-- Quakefist
-									},
-									{	-- Keeping it Together
-										["questID"] = 35176,
+										["sourceQuests"] = { 34585 },	-- Quakefist
+									}),
+									q(35176, {	-- Keeping it Together
 										["qg"] = 77209,	-- Baros Alexston
 										["coord"] = { 41.1, 49.4, 582 },
-										["sourceQuest"] = 34586,	-- Establish Your Garrison
-									},
-									{	-- Ship Salvage
-										["questID"] = 35166,
+										["sourceQuests"] = { 34586 },	-- Establish Your Garrison
+									}),
+									q(35166, {	-- Ship Salvage
 										["qg"] = 77209,	-- Baros Alexston
 										["coord"] = { 41.1, 49.4, 582 },
-										["sourceQuest"] = 34586,	-- Establish Your Garrison
-									},
-									{	-- Pale Moonlight
-										["questID"] = 35174,
+										["sourceQuests"] = { 34586 },	-- Establish Your Garrison
+									}),
+									q(35174, {	-- Pale Moonlight
 										["qg"] = 79457,	-- Vindicator Maraad
 										["coord"] = { 44.0, 53.3, 582 },
-										["sourceQuest"] = 34586,	-- Establish Your Garrison
-									},
-									{	-- Build Your Barracks
-										["questID"] = 34587,
+										["sourceQuests"] = { 34586 },	-- Establish Your Garrison
+									}),
+									q(34587, {	-- Build Your Barracks
 										["qg"] = 77209,	-- Baros Alexston
 										["coord"] = { 41.1, 49.4, 582 },
 										["sourceQuests"] = {
@@ -92,21 +82,35 @@ _.Zones =
 											35174,	-- Pale Moonlight
 											35166,	-- Ship Salvage
 										},
-									},
-									{	-- Qiana Moonshadow
-										["questID"] = 34646,
+									}),
+									q(34646, {	-- Qiana Moonshadow
 										["qg"] = 79457,	-- Vindicator Maraad
 										["coord"] = { 44.1, 53.3, 582 },
-										["sourceQuest"] = 34587,	-- Build Your Barracks
-									},
-									{	-- Delegating on Draenor
-										["questID"] = 34692,
+										["sourceQuests"] = { 34587 },	-- Build Your Barracks
+									}),
+									q(34692, {	-- Delegating on Draenor
 										["qg"] = 79953,	-- Lieutenant Thorn
 										["coord"] = { 40.2, 43.6, 582 },
-										["sourceQuest"] = 34646,	-- Qiana Moonshadow
-									},
+										["sourceQuests"] = { 34646 },	-- Qiana Moonshadow
+									}),
 								}),
 							})),
+							
+
+					--[[
+								["qg"] = ,	-- 
+								["coord"] = { , , 539 },
+								["sourceQuests"] = {  },	-- 
+							}),
+					--]]
+							
+							
+							
+							qa(33120, {	-- A Curse Upon the Woods
+								["qg"] = 72623,	-- Delas Moonfang
+								["coord"] = { 29.4, 24.6, 539 },
+								["sourceQuests"] = { 33113 },	-- Shadowmoonwell
+							}),
 							qa(33082, {	-- Ancestor's Memory
 								i(106151),	-- Karabor Honor Guard Legguards
 								i(107316),	-- Karabor Sage Leggings
@@ -117,12 +121,10 @@ _.Zones =
 								["questID"] = 36202,
 								["qg"] = 84372,	-- Madari
 								["races"] = ALLIANCE_ONLY,
-								["sourceQuest"] = 36201,	-- Proving Your Worth
+								["sourceQuests"] = { 36201 },	-- Proving Your Worth
 								["requireSkill"] = 356,	-- Fishing
-								["groups"] = {
-									{
-										["buildingID"] = 64,	-- Fishing Shack
-									},
+								["g"] = {
+									{ ["buildingID"] = 64 },	-- Fishing Shack
 								},
 							},
 							qa(33062, {	-- Catching His Eye
@@ -139,15 +141,30 @@ _.Zones =
 								i(117497),	-- Moonchain Boots
 								i(117498),	-- Moonsole Slippers
 							}),
+							qa(33269, {	-- Cleaning Up Gul'var
+								["qg"] = 72637,	-- Cordana Felsong
+								["coord"] = { 29.2, 25.6, 539 },
+								["sourceQuests"] = { 33112 },	-- Ominous Portents
+							}),
+							qa(33905, {	-- Closing the Door
+								["qg"] = 74343,	-- Vindicator Tenuum
+								["coord"] = { 46.6, 37.3, 539 },
+								["sourceQuests"] = { 33075 },	-- A Hero's Welcome
+							}),
 							{	-- Cursed Tome
 								["objectID"] = 258980,
 								["questID"] = 44488,
 								["coord"] = { 37.6, 59.3, 539 },
 							},
 							qa(33765, {	-- Dark Enemies
-								i(113145),	-- Karabor Guardian Gorget
-								i(113146),	-- Karabor Sage Pendant
-								i(113147),	-- Rangari Luck Charm
+								["qg"] = 75005,	-- Samaara
+								["coord"] = { 45.9, 38.9, 539 },
+								["sourceQuests"] = { 33075 },	-- A Hero's Welcome
+								["g"] = {
+									i(113145),	-- Karabor Guardian Gorget
+									i(113146),	-- Karabor Sage Pendant
+									i(113147),	-- Rangari Luck Charm
+								},
 							}),
 							qa(33837, { -- Darkness Falls
 								i(113176),	-- Karabor Anchorite Cudgel
@@ -169,6 +186,23 @@ _.Zones =
 								i(107315),	-- Karabor Sage Treads
 								i(107304),	-- Karabor Skirmisher Boots
 								i(106174),	-- Rangari Initiate Sabatons
+							}),
+							qa(36311, {  -- Father and Son
+								["g"] = {
+									i(115356, { -- Draenor Blacksmithing
+										["collectible"] = false,
+									}),
+									i(111813), -- The Forge, Level 1
+								},
+								["qg"] = 80827, -- Haephest
+								["sourceQuests"] = { 36309 }, -- The Strength of Iron
+								["races"] = ALLIANCE_ONLY,
+								["requireSkill"] = 164, -- Blacksmithing
+							}),
+							qa(33114, {	-- Forging the Soul Trap
+								["qg"] = 77417,	-- Image of Archmage Khadgar
+								["coord"] = { 19.1, 28.5, 539 },
+								["sourceQuests"] = { 33168 },	-- Heart On Fire
 							}),
 							qa(34583, { -- For the Alliance!
 								i(108918),	-- Karabor Arcanist Rod
@@ -192,23 +226,35 @@ _.Zones =
 								i(107861),	-- Karabor Sage Gloves
 								i(107305),	-- Karabor Skirmisher Gloves
 							}),
+							qa(33168, {	-- Heart On Fire
+								["qg"] = 77417,	-- Image of Archmage Khadgar
+								["coord"] = { 19.1, 28.5, 539 },
+								["sourceQuests"] = { 33066 },	-- Soul Shards of Summoning
+								-- Was able to pick up before turning in "Cleaning Up Gul'var."
+							}),
 							{	-- Moonshell Claws
 								["questID"] = 36199,
 								["qg"] = 84372,	-- Madari
 								["races"] = ALLIANCE_ONLY,
-								["sourceQuest"] = 34194,	-- Looking For Help
+								["sourceQuests"] = { 34194 },	-- Looking For Help
 								["requireSkill"] = 356,	-- Fishing
 							},
 							qa(33112, {	-- Ominous Portents
-								i(108972),	-- Blind Fel-Eye Ring
-								i(108975),	-- Fel-Blackened Ring
-								i(108976),	-- Sanctified Fel-Wrap Ring
+								["qg"] = 77184,	-- Archmage Khadgar
+								["coord"] = { 29.2, 25.6, 539 },
+								["sourceQuests"] = { 33115 },	-- Shrouding Stones
+								-- May also require "A Curse Upon the Woods"
+								["g"] = {
+									i(108972),	-- Blind Fel-Eye Ring
+									i(108975),	-- Fel-Blackened Ring
+									i(108976),	-- Sanctified Fel-Wrap Ring
+								},
 							}),
 							{	-- Proving Your Worth
 								["questID"] = 36201,
 								["qg"] = 84372,	-- Madari
 								["races"] = ALLIANCE_ONLY,
-								["sourceQuest"] = 36199,	-- Moonshell Claws
+								["sourceQuests"] = { 36199 },	-- Moonshell Claws
 								["requireSkill"] = 356,	-- Fishing
 							},
 							qa(34996, { -- Rotting Riverbeasts
@@ -230,6 +276,16 @@ _.Zones =
 								i(107318),	-- Karabor Sage Cord
 								i(107308),	-- Karabor Skirmisher Belt
 								i(106167),	-- Rangari Initiate Belt
+							}),
+							qa(33115, {	-- Shrouding Stones
+								["qg"] = 77184,	-- Archmage Khadgar
+								["coord"] = { 29.2, 25.6, 539 },
+								["sourceQuests"] = { 33062 },	-- Catching his Eye
+							}),
+							qa(33066, {	-- Soul Shards of Summoning
+								["qg"] = 77184,	-- Archmage Khadgar
+								["coord"] = { 29.2, 25.6, 539 },
+								["sourceQuests"] = { 33112 },	-- Ominous Portents
 							}),
 							qa(33808, { -- Swamplighter Queen
 								i(106153),	-- Karabor Honor Guard Chestplate
@@ -258,24 +314,12 @@ _.Zones =
 								i(113182),	-- Rangari Initiate Hatchet
 							}),
 							i(115343, { -- Haephest's Satchel
-								["groups"] = {
+								["g"] = {
 									q(36309, { -- The Strength of Iron
 										["qg"] = 75043, -- Karnoth
 									}),
 								},
 								["description"] = "This can be looted from almost any mob in Shadowmoon Valley; however, Karnoth has a guaranteed drop for the item.",
-								["races"] = ALLIANCE_ONLY,
-								["requireSkill"] = 164, -- Blacksmithing
-							}),
-							q(36311, {  -- Father and Son
-								["groups"] = {
-									i(115356, { -- Draenor Blacksmithing
-										["collectible"] = false,
-									}),
-									i(111813), -- The Forge, Level 1
-								},
-								["qg"] = 80827, -- Haephest
-								["sourceQuest"] = 36309, -- The Strength of Iron
 								["races"] = ALLIANCE_ONLY,
 								["requireSkill"] = 164, -- Blacksmithing
 							}),
@@ -290,15 +334,28 @@ _.Zones =
 								i(113235),	-- Karabor Skirmisher Wristwraps
 								i(113232),	-- Rangari Initiate Wristwraps
 							}),
-							qa(33116, { -- To Catch a Shadow
-								i(113150),	-- Felblood-Starched Cloak
-								i(113149),	-- Flayed Flesh Cloak
-								i(113148),	-- Foulspawn Drape
+							qa(33070, {	-- Think of the Children!
+								["qg"] = 80196,	-- Efee
+								["coord"] = { 46.5, 37.7, 539 },
+								["sourceQuests"] = { 33075 },	-- A Hero's Welcome
+							}),
+							qa(33116, { -- To Catch a Shadow (awarded "To Catch a Shadow" achievement)
+								["qg"] = 77417,	-- Image of Archmage Khadgar
+								["coord"] = { 19.1, 28.5, 539 },
+								["sourceQuests"] = { 33114 },	-- Forging the Soul Trap
+								["g"] = {
+									i(113150),	-- Felblood-Starched Cloak
+									i(113149),	-- Flayed Flesh Cloak
+									i(113148),	-- Foulspawn Drape
+								},
 							}),
 							qa(33834, {	-- WANTED: Kliaa's Stinger
 								i(113163),	-- Kliaa's Venomclaws
 								i(113159),	-- Probiscus of the Swampfly Queen
 								i(113161),	-- Throbbing Swampfly Venom Sac
+							}),
+							qa(33833, {	-- WANTED: Kuu'rat's Tusks
+								["coord"] = { 33.2, 30.7, 539 },
 							}),
 							qa(33836, {	-- WANTED: Maa'run's Hoof
 								i(117989),	-- Maa'run's Baleful Eye

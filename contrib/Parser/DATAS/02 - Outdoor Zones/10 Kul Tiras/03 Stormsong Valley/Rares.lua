@@ -5,9 +5,9 @@ _.Zones =
 {
 	m(876, { 	-- Kul'Tiras
 		m(942, {	-- Stormsong Valley
-			["groups"] = {
+			["g"] = {
 				n(-4,   {	-- Achievement
-					["groups"] = {
+					["g"] = {
 						{	-- Adventurer of Stormsong Valley
 							-- Note: Actual information is in rare file.  This just lets us alphabetize it properly instead of it going to the bottom.
 							["achievementID"] = 12940,	-- Adventurer of Stormsong Valley
@@ -15,6 +15,7 @@ _.Zones =
 							["g"] = {
 								{	-- Broodmother
 									["npcID"] = 137025,	-- Broodmother	Note!! Done so we can use his name for the quest rather than Quest #123456
+									["coord"] = { 29.5, 69.6, 942 },	-- entrance to cellar
 									["questID"] = 51298,
 									["g"] = {
 										{	--Broodmother
@@ -63,6 +64,7 @@ _.Zones =
 								},
 								{	-- Crushtacean
 									["npcID"] = 136183,	-- Crushtacean	Note!! Done so we can use his name for the quest rather than Quest #123456
+									["coord"] = { 51.1, 54.4, 942 },	-- entrance
 									["questID"] = 52466,
 									["g"] = {
 										{	-- Crushtacean
@@ -93,6 +95,7 @@ _.Zones =
 								},
 								{	-- Deepfang
 									["npcID"] = 139385,	-- Deepfang	Note!! Done so we can use his name for the quest rather than Quest #123456
+									["coord"] = { 53.0, 50.6, 942 },	-- pats a little but one coord should suffice
 									["questID"] = 50692,
 									["g"] = {
 										{	-- Deepfang
@@ -109,9 +112,7 @@ _.Zones =
 								{	-- Foreman Scripps
 									["npcID"] = 131404,	-- Foreman Scripps	Note!! Done so we can use his name for the quest rather than Quest #123456
 									["questID"] = 49951,
-									["coords"] = {
-										{ 64.41, 65.91 },
-									},
+									["coord"] = { 64.41, 65.91 },
 									["g"] = {
 										{	-- Foreman Scripps
 											["achievementID"] = 12940,	-- Adventurer of Stormsong Valley
@@ -193,9 +194,9 @@ _.Zones =
 				}),
 				n(-16,  {	-- Rares
 					-- Note: While these are all technically Achievement Criteria we don't want to use that in the infomration on whether you have killed it or not.  These is due to once you killing it on one character it would auto-complete your alts. What we want to do is instead place it as a reward.  This way it tracks if you did it for your account while also still telling you if you killed it on that toon.
-					["groups"] = {
+					["g"] = {
 						n(139968, {	-- Corrupted Tideskipper	
-							["groups"] = {
+							["g"] = {
 								i(162028, {	-- Technique: Glyph of the Tideskipper
 									["spellID"] = 276088,
 								}),
@@ -210,7 +211,7 @@ _.Zones =
 							},
 						}),
 						o(281646, { -- Honey Vat
-							["groups"] = {
+							["g"] = {
 								i(154476),	-- Honey-Glazed Vambraces
 							},
 							["coord"] = { 66.6, 71.1 },
@@ -218,7 +219,7 @@ _.Zones =
 						
 						}),
 						n(141039, {	-- Ice Sickle
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+							["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(154464),
 							}),
 							["coords"] = {
@@ -227,7 +228,7 @@ _.Zones =
 							["questID"] = 52327,
 						}),
 						n(141043, {	-- Jakala the Cruel	
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+							["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(159179, {	-- Headtaker's Helm
 									["crs"] = {
 										140925,	-- Doc Marrtens
@@ -237,13 +238,13 @@ _.Zones =
 							["questID"] = 52324,	-- Possibly 52323
 						}),
 						n(141029, {	-- Kickers
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+							["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(154475),	-- Goathair Bindings
 							}),
 							["questID"] = 52318,
 						}),
 						n(138963, {	-- Nestmother Acada
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+							["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(160458),	-- Ancient Featherlight Slippers
 							}),
 							["description"] = "Path starts at 41.27, 44.10",
@@ -253,29 +254,30 @@ _.Zones =
 								{ 41.27, 44.10 }, -- Path
 							},
 						}),
-						n(141239, {	-- Osca the Bloodied	
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+						n(141239, {	-- Osca the Bloodied
+							["coord"] = { 42.2, 63.1, 942 },
+							["questID"] = 52461,
+							["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(159169),	-- Bloody Bearhide Pants
 							}),
-							["questID"] = 52461,
 						}),
 						n(137649, {	-- Pest Remover Mk. II
 							["questID"] = 53612,	-- WQ is 51806
 						}),
 						n(139298, {	-- Pinku'shon	
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+							["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(163678),	-- Pinku'shon's Impaler
 							}),
 							["questID"] = 51959,
 						}),
 						n(141286, {	-- Poacher Zane
-							["groups"] = {
+							["questID"] = 52469,
+							["g"] = {
 								i(163036),	-- Polished Pet Charm
 							},
-							["questID"] = 52469,
 						}),
 						n(134884, {	-- Ragna	
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+							["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(160465),	-- Raging-Earth Wranglers
 							}),
 							["questID"] = 50725,
@@ -284,7 +286,7 @@ _.Zones =
 							["questID"] = 53611,
 						}),
 						n(139328, {	-- Sabertron	
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+							["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								ach(13054, {	-- Sabertron Assemble
 									["description"] = "Red is the default color when a WQ isn't active.  To get credit for killing all the different colors, wait for the 'Sabertron' world quests to pop up!",
 									["g"] = {
@@ -296,7 +298,7 @@ _.Zones =
 							["questID"] = 51956,
 						}),
 						n(139988, {	-- Sandfang
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+							["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(154389),	-- Abyssal-Serpent Pauldrons
 							}),
 							["questID"] = 52125,
@@ -305,7 +307,7 @@ _.Zones =
 							["questID"] = 9999, -- Apparently people are upset at seeing ---  in the addon 
 						}),
 						n(138938, {	-- Seabreaker Skoloth	
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+							["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(160477),	-- Skoloth's Anchorplate Greaves
 							}),
 							["questID"] = 51757,
@@ -317,52 +319,52 @@ _.Zones =
 							["questID"] = 50938,
 						}),
 						n(141143, {	-- Sister Absinthe	
-							["groups"] = {
+							["g"] = {
 								i(155164),	-- Beryl-Tide Greatcloak
 							},
 							["coord"] = { 61.5, 57.0 },
 							["questID"] = 52441,
 						}),
 						n(139319, {	-- Slickspill	
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+							["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(158216),	-- Living Oil Cannister
 							}),
 							["questID"] = 51958,
 						}),
 						n(141175, {	-- Song Mistress Dadalea	
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+							["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(158218),	-- Dadalea's Wing
 							}),
 							["questID"] = 52448,
 						}),
 						n(141088, {	-- Squall	
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+							["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(158224),	-- Vial of Storms [Confirmed - Crieve]
 							}),
 							["coord"] = { 56.9, 76.0 },	-- patrols, needs path added
 							["questID"] = 52433,
 						}),
 						n(135947, {	-- Strange Mushroom Ring	
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+							["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(154466),	-- Fungalshroud Raiment
 								-- i(158224),	-- Vial of Storms (Unconfirmed - Crieve)
 							}),
 							["questID"] = 50024,
 						}),
 						n(139980, {	-- Taja the Tidehowler	
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+							["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(154449),	-- Tidebound Chestguard
 							}),
 							["questID"] = 52123,
 						}),
 						n(136189, {	-- The Lichen King	
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+							["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(150909),	-- Morel Coils
 							}),
 							["questID"] = 50974,
 						}),
 						n(135939, {	-- Vinespeaker Ratha	
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+							["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(158299),	-- Ratha's Thornscepter
 							}),
 							["coords"] = {
@@ -372,16 +374,17 @@ _.Zones =
 							["questID"] = 50037,
 						}),
 						n(130079, {	-- Wagga Snarltusk	
-							["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+							["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(154431),	-- Earthshaker's Flame
 							}),
 							["questID"] = 50819,
 						}),
 						n(142088, {	-- Whirlwing
-							["groups"] = {
+							["questID"] = 52457,
+							["coord"] = { 46.8, 42.1, 942 },
+							["g"] = {
 								i(158215),	-- Whirlwing's Plumage
 							},
-							["questID"] = 52457,
 						}),
 					},
 				}),

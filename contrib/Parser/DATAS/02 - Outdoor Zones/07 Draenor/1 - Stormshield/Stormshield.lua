@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(572, { 	-- Draenor
 		m(622, {	-- Stormshield
-			["groups"] = {
+			["g"] = {
 				follower(467, { -- Fen Tao
 					["creatureID"] = 91483, -- Fen Tao
 					["description"] = "In order to obtain this follower you need to talk to him and let him finish his dialogue.",
@@ -15,28 +15,32 @@ _.Zones =
 						["coord"] = { 30.8, 48.8 },
 					}),
 				}),
-				n(-17, {	-- Quests
+				n(-17,  {	-- Quests
 					q(36626, { -- Host Howell
 						["qg"] = 86095, -- Private Tristan
+						["coord"] = { 32.0, 50.5, 622 },
 						["sourceQuests"] = { 36624 }, -- Ashran Appearance
 					}),
 					q(36629, { -- Inspiring Ashran
 						["qg"] = 86069, -- Lieutenant Howell
+						["coord"] = { 35.6, 75.1, 622 },
 						["sourceQuests"] = { 36626 }, -- Host Howell
 					}),
 					q(36630 , { -- A Surly Dwarf
 						["qg"] = 86069, -- Lieutenant Howell
+						["coord"] = { 35.6, 75.1, 622 },
 						["sourceQuests"] = { 36629 }, -- Inspiring Ashran
 					}),
 					q(36633, { -- Delvar Ironfist
-						["groups"] = {
+						["g"] = {
 							follower(216), -- Delvar Ironfist
 						},
 						["qg"] = 86084, -- Delvar Ironfist
+						["coord"] = { 47.5, 30.8, 622 },
 						["sourceQuests"] = { 36630 }, -- A Surly Dwarf
 					}),
 				}),
-				na(-2, {	-- Vendors
+				na(-2,  {	-- Vendors
 					n(87052, {	-- Artificer Harlaan <Jewelcrafting Designs>
 						i(115359, {	-- Draenor Jewelcrafting
 							i(120131, {	-- Recipe: Secrets of Draenor Jewelcrafting **Teaches glowing blackrock band, glowing iron band, glowing iron choker, shifting iron band, shifting iron choker, shifting blackrock band, whispering blackrock band, whispering iron band, whispering iron choker, taladite crystal, secrets of draenor jewelcrafting.
@@ -269,7 +273,7 @@ _.Zones =
 						i(111922, {		-- Draenor Enchanting
 							["collectible"] = false,
 							["description"] = "This is a quest reward for completing the Enchanting Intro Warlords Quest that can drop from any Draenor mob. Also sold at the Enchanter's Study for 100 gold.",
-							["groups"] = {
+							["g"] = {
 								recipe(177043),	-- Secrets of Draenor Enchanting
 								recipe(169092),	-- Temporal Crystal
 								recipe(169091),	-- Luminous Shard
@@ -488,7 +492,7 @@ _.Zones =
 							i(118399),	-- Suneater
 							i(118410),	-- Tesseract Timepiece
 							un(2, i(119032, { -- Rusted Challenger's Strongbox
-								["groups"] = {
+								["g"] = {
 									un(2, i(118997)),	-- Blackfire Cape
 									un(2, i(118998)),	-- Blackfire Crystal
 									un(2, i(118999)),	-- Blackfire Ring
@@ -563,7 +567,7 @@ _.Zones =
 								["description"] = "This box was from the WoD Challenge Mode Dailies.",
 							})),
 							un(2, i(127831, { -- Challenger's Strongbox
-								["groups"] = {
+								["g"] = {
 									un(2, i(118997)),	-- Blackfire Cape
 									un(2, i(118998)),	-- Blackfire Crystal
 									un(2, i(118999)),	-- Blackfire Ring
@@ -640,9 +644,9 @@ _.Zones =
 						},
 					}),
 					n(128756, { -- Crafticus Mindbender
-						["groups"] = {
+						["g"] = {
 							currency(823, { -- Apexis Crystal
-								["groups"] = {
+								["g"] = {
 									un(2, i(116776)),	-- Pale Thorngrazer (Rep removed from Medallion of the Legion in hotfix for 8.0)
 								},
 							}),
@@ -652,7 +656,7 @@ _.Zones =
 					}),
 					n(92501, {	-- Dawn-Seeker Kasrek <Apexis Belt Trader>
 						currency(823, { -- Apexis Crystal
-							["groups"] = {
+							["g"] = {
 								i(119821, {	-- Contact: Dawnseeker Rukaryx
 									follower(462),	-- Dawnseeker Rukaryx
 								}),
@@ -678,7 +682,7 @@ _.Zones =
 					}),
 					n(86391, {	-- Dawn-Seeker Krek <Apexis Leggings Trader>
 						currency(823, { -- Apexis Crystal
-							["groups"] = {
+							["g"] = {
 								i(119821, {	-- Contact: Dawnseeker Rukaryx
 									follower(462),	-- Dawnseeker Rukaryx
 								}),
@@ -704,7 +708,7 @@ _.Zones =
 					}),
 					n(86387, {	-- Dawn-Seeker Rilak <Apexis Helm Trader>
 						currency(823, { -- Apexis Crystal
-							["groups"] = {
+							["g"] = {
 								i(119821, {	-- Contact: Dawnseeker Rukaryx
 									follower(462),	-- Dawnseeker Rukaryx
 								}),
@@ -730,7 +734,7 @@ _.Zones =
 					}),
 					n(91321, {	-- Dawn-Seeker Skelak <Apexis Bracer Trader>
 						currency(823, { -- Apexis Crystal
-							["groups"] = {
+							["g"] = {
 								i(119821, {	-- Contact: Dawnseeker Rukaryx
 									follower(462),	-- Dawnseeker Rukaryx
 								}),
@@ -756,7 +760,7 @@ _.Zones =
 					}),
 					n(86390, {	-- Dawn-Seeker Vallar <Apexis Glove Trader>
 						currency(823, { -- Apexis Crystal
-							["groups"] = {
+							["g"] = {
 								i(119821, {	-- Contact: Dawnseeker Rukaryx
 									follower(462),	-- Dawnseeker Rukaryx
 								}),
@@ -782,7 +786,7 @@ _.Zones =
 					}),
 					n(86389, {	-- Dawn-Seeker Verroak <Apexis Cloak Trader>
 						currency(823, { -- Apexis Crystal
-							["groups"] = {
+							["g"] = {
 								i(119821, {	-- Contact: Dawnseeker Rukaryx
 									follower(462),	-- Dawnseeker Rukaryx
 								}),
@@ -811,9 +815,9 @@ _.Zones =
 						i(116952),	-- Shard-Covered Dreadcloak
 					}),
 					n(88482, {	-- Gazrix Gearlock <Steamwheedle "Preservation" Society Quartermaster>
-						["groups"] = {
+						["g"] = {
 							currency(823, { -- Apexis Crystal
-								["groups"] = {
+								["g"] = {
 									i(119149),	-- Captured Forest Sproutling
 									i(116672),	-- Domesticated Razorback
 									i(119148),	-- Indentured Albino River Calf
@@ -829,7 +833,7 @@ _.Zones =
 						},
 					}),
 					n(87365, {  -- Grakis
-						["groups"] = {
+						["g"] = {
 							i(118729, { -- Gorgrond Treasure Map
 								["questID"] = 36465,
 							}),
@@ -1298,7 +1302,7 @@ _.Zones =
 							["collectible"] = false,
 							["spellID"] = 0,
 							["description"] = "This is a quest reward for completing the Alchemy Intro Warlords Quest that can drop from any Draenor mob. Also sold at the Alchemy Lab for 100 gold.",
-							["groups"] = {
+							["g"] = {
 								recipe(156587),	-- Alchemical Catalyst
 								recipe(156585),	-- Crescent Oil
 								recipe(175865),	-- Draenic Invisibility Potion
@@ -1337,7 +1341,7 @@ _.Zones =
 						}),
 					}),
 					n(85849, {	-- Kinkade Jakobs <Blueprints Trader>
-						["groups"]	= {
+						["g"]	= {
 							i(111929),	-- Alchemy Lab, Level 2
 							i(111968),	-- Barn, Level 2
 							i(111970),	-- Barracks, Level 2
@@ -1576,9 +1580,9 @@ _.Zones =
 						},
 					}),
 					n(85946, {	-- Shadow Sage Brakoss <Arakkoa Outcasts Quartermaster>
-						["groups"] = {
+						["g"] = {
 							currency (823, { -- Apexis Crystal
-								["groups"] = {
+								["g"] = {
 									i(116772),	-- Shadowmane Charger
 									i(119143),	-- Son of Sethe
 								},
@@ -1725,9 +1729,9 @@ _.Zones =
 						},
 					}),
 					n(85932, {	-- Vindicator Nuurem <Council of Exarchs Quartermaster>
-						["groups"] = {
+						["g"] = {
 							currency(823, { -- Apexis Crystal
-								["groups"] = {
+								["g"] = {
 									i(119142),	-- Draenei Micro Defender
 									i(116664),	-- Dusty Rockhide
 									i(118665),	-- Exarch Elixir
