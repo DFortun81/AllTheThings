@@ -504,10 +504,7 @@ GameTooltipModel.HideAllModels = function(self)
 end
 GameTooltipModel.SetCreatureID = function(self, creatureID)
 	GameTooltipModel.HideAllModels(self);
-	if creatureID < 0 then
-		self.Model:SetDisplayInfo(math.abs(creatureID));
-		self.Model:Show();
-	else
+	if creatureID > 0 then
 		self.Model:SetUnit("none");
 		self.Model:SetCreature(creatureID);
 		if not self.Model:GetModelFileID() then
@@ -650,7 +647,7 @@ GameTooltipModel.TrySetModel = function(self, reference)
 			self.Model:Show();
 			self:Show();
 			return true;
-		elseif reference.creatureID then
+		elseif reference.creatureID and reference.creatureID > 0 then
 			self.Model:SetFacing(reference.modelRotation and ((reference.modelRotation * math.pi) / 180) or MODELFRAME_DEFAULT_ROTATION);
 			self.Model:SetCamDistanceScale(reference.modelScale or 1);
 			self:SetCreatureID(reference.creatureID);
@@ -984,8 +981,6 @@ local function GetDisplayID(data)
 		local displayID = app.NPCDB[data.creatureID];
 		if displayID then
 			return displayID;
-		elseif data.creatureID < 0 then
-			return math.abs(data.creatureID);
 		end
 	end
 	
