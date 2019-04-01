@@ -1901,12 +1901,60 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 						end
 					end
 					]]--
-					for itemID,count in pairs(reagentCache[2]) do
-						local searchResults = app.SearchForField("itemID", itemID);
-						if searchResults then
-							for i,o in ipairs(searchResults) do
-								if not contains(group, o) then
-									tinsert(group, o);
+					if select(14, GetItemInfo(itemID)) == 1 and not app.Settings:Get("DebugMode") then
+						if not app.AppliedSkillIDToNPCIDs then
+							app.AppliedSkillIDToNPCIDs = true;
+							local skillIDMap = {
+								[-178] = 202, 											-- Goblin Engineering"Goblin Engineering",
+								[-179] = 202, 											-- Gnomish Engineering
+								[-180] = 171,				 							-- Alchemy
+								[-181] = 164,				 							-- Blacksmithing
+								[-182] = 333,				 							-- Enchanting
+								[-183] = 202,				 							-- Engineering
+								[-184] = 182,				 							-- Herbalism
+								[-185] = 773,				 							-- Inscription
+								[-186] = 755,				 							-- Jewelcrafting
+								[-187] = 165,				 							-- Leatherworking
+								[-188] = 186,				 							-- Mining
+								[-189] = 393,				 							-- Skinning
+								[-190] = 197,				 							-- Tailoring
+								[-191] = 794, 										-- Archaeology
+								[-192] = 185, 											-- Cooking
+								[-193] = 129, 										-- First Aid
+								[-194] = 356, 											-- Fishing
+							};
+							for npcID,skillID in pairs(skillIDMap) do
+								local searchResults = app.SearchForField("creatureID", npcID);
+								if searchResults then
+									for i,o in ipairs(searchResults) do
+										o.skillID = skillID;
+									end
+								end
+							end
+						end
+					
+						-- If the reagent itself is BOP, then only show things you can make.
+						for itemID,count in pairs(reagentCache[2]) do
+							local searchResults = app.SearchForField("itemID", itemID);
+							if searchResults then
+								for i,o in ipairs(searchResults) do
+									if not contains(group, o) then
+										local skillID = GetRelativeValue(o, "skillID");
+										if not skillID or app.GetTradeSkillCache()[skillID] then
+											tinsert(group, o);
+										end
+									end
+								end
+							end
+						end
+					else
+						for itemID,count in pairs(reagentCache[2]) do
+							local searchResults = app.SearchForField("itemID", itemID);
+							if searchResults then
+								for i,o in ipairs(searchResults) do
+									if not contains(group, o) then
+										tinsert(group, o);
+									end
 								end
 							end
 						end
@@ -4957,7 +5005,7 @@ app.BaseNPC = {
 				or (t.parent and t.parent.npcID == -2 and "Interface\\Icons\\Achievement_Character_Human_Male")
 				or "Interface\\Icons\\INV_Misc_Head_Human_01";
 		elseif key == "creatureID" then
-			return t.npcID > 0 and t.npcID;
+			return t.npcID;
 		elseif key == "trackable" then
 			return t.questID;
 		elseif key == "collectible" then
@@ -5087,6 +5135,8 @@ app.BaseProfession = {
 			return C_TradeSkillUI.GetTradeSkillTexture(t.requireSkill);
 		elseif key == "spellID" then
 			return SkillIDToSpellID[t.requireSkill];
+		elseif key == "skillID" then
+			return t.requireSkill;
 		else
 			-- Something that isn't dynamic.
 			return table[key];
@@ -5211,6 +5261,8 @@ app.BaseRecipe = {
 			if t.itemID then
 				return string.format("i:%d", t.itemID);
 			end
+		elseif key == "skillID" then
+			return t.requireSkill;
 		else
 			-- Something that isn't dynamic.
 			return table[key];
@@ -5321,6 +5373,8 @@ app.BaseSpell = {
 			if t.itemID then
 				return string.format("i:%d", t.itemID);
 			end
+		elseif key == "skillID" then
+			return t.requireSkill;
 		else
 			-- Something that isn't dynamic.
 			return table[key];
