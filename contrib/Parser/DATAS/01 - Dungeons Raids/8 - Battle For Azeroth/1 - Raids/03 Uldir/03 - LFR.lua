@@ -278,12 +278,7 @@ _.Instances =
 									},
 									{	-- Zul, Reborn
 										["encounterID"] = 2195,	-- Zul, Reborn
-										["crs"] = {
-											138967,	-- Zul
-											139059,	-- Bloodthirsty Crawg
-											139057,	-- Nazmani Bloodhexer
-											139051,	-- Nazmani Crusher
-										},
+										["crs"] = { 138967 },	-- Zul
 										["g"] = {
 											{	-- Zul, Reborn
 												["achievementID"] = 12522,	-- Crimson Descent

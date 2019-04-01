@@ -17,17 +17,31 @@ _.Zones =
 							["crs"] = { 128181 },	-- Vengeful Dead
 							["model"] = "World\\SkillActivated\\Containers\\TreasureChest06.mdx",
 							["modelScale"] = 2,
+							["g"] = {
+								{	-- Ancient Sarcophagus (Adventurer of Drustvar)
+									["achievementID"] = 12941,	-- Adventurer of Drustvar
+									["criteriaID"] = 8,	-- Ancient Sarcophagus
+								},
+							},
 						}),
 						n(137824, {	-- Arclight
 							["questID"] = 51470,
 							["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(160469),	-- Arclight Jumpers
+								{	-- Arclight (Adventurer of Drustvar)
+									["achievementID"] = 12941,	-- Adventurer of Drustvar
+									["criteriaID"] = 26,	-- Arclight
+								},
 							}),
 						}),
 						n(137529, { -- Arvon the Betrayed
 							["questID"] = 51383,
 							["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(160449),	-- Spectral Revenger
+								{	-- Arvon the Betrayed (Adventurer of Drustvar)
+									["achievementID"] = 12941,	-- Adventurer of Drustvar
+									["criteriaID"] = 25,	-- Arvon the Betrayed
+								},
 							}),
 						}),
 						n(137825, {	-- Avalanche
@@ -39,29 +53,37 @@ _.Zones =
 								{ 44.41, 85.61 },
 							},
 							["g"] = {
-								{	-- Avalanche
-									["achievementID"] = 12941,	-- Adventurer of Drustvar
-									["criteriaID"] = 27,	-- Avalanche
-								},
 								i(154447, {	-- Gryphon-Rider's Breastplate
 									["bonusID"] = 4775,	-- Azerite Armor
 									["modID"] = 17,	-- Azerite Armor
 									["lvl"] = 110,	-- will show 120 otherwise
 								}),
+								{	-- Avalanche
+									["achievementID"] = 12941,	-- Adventurer of Drustvar
+									["criteriaID"] = 27,	-- Avalanche
+								},
 							},
 						}),
-						n(130143, {	-- Balethorn		
-							["questID"] = 49602,	
+						n(130143, {	-- Balethorn
+							["questID"] = 49602,
 							["coord"] = { 58.0, 29.6 },	-- patrols, needs path added
-							["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+							["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(160475),	-- Barksnapper Girdle
+								{	-- Balethorn (Adventurer of Drustvar)
+									["achievementID"] = 12941,	-- Adventurer of Drustvar
+									["criteriaID"] = 19,	-- Balethorn
+								},
 							}),
-						}),	
-						n(127333, {	-- Barbthorn Queen		
+						}),
+						n(127333, {	-- Barbthorn Queen
 							["questID"] = 48842,	
 							["coord"] = { 59.0, 16.8 },
 							["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(155425),	-- Barbthorn Queen's Stinger
+								{	-- Barbthorn Queen (Adventurer of Drustvar)
+									["achievementID"] = 12941,	-- Adventurer of Drustvar
+									["criteriaID"] = 3,	-- Barbthorn Queen
+								},
 							}),
 						}),
 						n(129805, {	-- Beshol
@@ -69,15 +91,15 @@ _.Zones =
 							["questID"] = 49481,
 							["coord"] = { 50.61, 30.01 },
 							["g"] = {
-								{	-- Beshol
-									["achievementID"] = 12941,	-- Adventurer of Drustvar
-									["criteriaID"] = 15,	-- Beshol
-								},
 								i(158363, {	-- Spiderhair Circlet
 									["bonusID"] = 4775,	-- Azerite Armor
 									["modID"] = 18,	-- Azerite Armor
 									["lvl"] = 110,	-- will show 120 otherwise
 								}),
+								{	-- Beshol (Adventurer of Drustvar)
+									["achievementID"] = 12941,	-- Adventurer of Drustvar
+									["criteriaID"] = 15,	-- Beshol
+								},
 							},
 						}),
 						n(124548, {	-- Betsy
@@ -85,14 +107,22 @@ _.Zones =
 							["coord"] = { 58.4, 33.2 },	-- may have other spawnpoints (?)
 							["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(160463),	-- Blue-Ribbon Belt
+								{	-- Betsy (Adventurer of Drustvar)
+									["achievementID"] = 12941,	-- Adventurer of Drustvar
+									["criteriaID"] = 1,	-- Betsy
+								},
 							}),
 						}),
-						n(132319, {	-- Bilefang Mother		
-							["questID"] = 50163,	
-							["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+						n(132319, {	-- Bilefang Mother
+							["questID"] = 50163,
+							["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(155284),	-- Bleak Hills Swatter
+								{	-- Bilefang Mother (Adventurer of Drustvar)
+									["achievementID"] = 12941,	-- Adventurer of Drustvar
+									["criteriaID"] = 20,	-- Bilefang Mother
+								},
 							}),
-						}),	
+						}),
 						n(138667, {	-- Blighted Monstrosity
 							["questID"] = 52001,	-- 51699 for WQ
 							["g"] = {
@@ -104,12 +134,20 @@ _.Zones =
 							["coord"] = { 66.5, 51.0, 896 },
 							["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(154376),	-- Bonecurse Gauntlets
+								{	-- Bonesquall (Adventurer of Drustvar)
+									["achievementID"] = 12941,	-- Adventurer of Drustvar
+									["criteriaID"] = 5,	-- Bonesquall
+								},
 							}),
 						}),
 						n(139321, {	-- Braedan Whitewall
 							["questID"] = 51922,
 							["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(154500),	-- Moonwood Bramblespire
+								{	-- Braedan Whitewall (Adventurer of Drustvar)
+									["achievementID"] = 12941,	-- Adventurer of Drustvar
+									["criteriaID"] = 32,	-- Braedan Whitewall
+								},
 							}),
 						}),
 						n(135796, {	-- Captain Leadfist
@@ -120,28 +158,44 @@ _.Zones =
 							},
 							["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(160450),	-- Leadshot Heavy Rifle
+								{	-- Captain Leadfist (Adventurer of Drustvar)
+									["achievementID"] = 12941,	-- Adventurer of Drustvar
+									["criteriaID"] = 24,	-- Captain Leadfist
+								},
 							}),
-						}),	
+						}),
 						n(129904, {	-- Cottontail Matron
 							["questID"] = 49216,
 							["coord"] = { 52.1, 46.9, 896 },
 							["g"] = {
 								i(163036),	-- Polished Pet Charm
+								-- may need to remove loot if pet charms don't drop from every Cottontail Matron WQ
+								{	-- Beastly Ritual Skull (Adventurer of Drustvar)
+									["achievementID"] = 12941,	-- Adventurer of Drustvar
+									["criteriaID"] = 9,	-- Beastly Ritual Skull
+								},
 							},
-							-- may need to remove loot if pet charms don't drop from every Cottontail Matron WQ
 						}),
 						n(134706, {	-- Deathcap
 							["questID"] = 50669,
 							["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(158555),	-- Doom Shroom
+								{	-- Deathcap (Adventurer of Drustvar)
+									["achievementID"] = 12941,	-- Adventurer of Drustvar
+									["criteriaID"] = 22,	-- Deathcap
+								},
 							}),
 						}),
-						n(129995, {	-- Emily Mayville		
-							["questID"] = 49530,	
-							["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+						n(129995, {	-- Emily Mayville
+							["questID"] = 49530,
+							["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(160447),	-- Soul-Pillar Lantern
+								{	-- Emily Mayville (Adventurer of Drustvar)
+									["achievementID"] = 12941,	-- Adventurer of Drustvar
+									["criteriaID"] = 17,	-- Emily Mayville
+								},
 							}),
-						}),	
+						}),
 						n(138871, {	-- Ernie (Fungi Trio)
 							["questID"] = 51749,
 							["coord"] = { 24.1, 21.8, 896 },
@@ -152,29 +206,45 @@ _.Zones =
 										138866,	-- Mack
 									},
 								}),
+								{	-- Fungi Trio (Adventurer of Drustvar)
+									["achievementID"] = 12941,	-- Adventurer of Drustvar
+									["criteriaID"] = 31,	-- Fungi Trio
+								},
 							}),
 						}),
-						n(134213, {	-- Executioner Blackwell		
-							["questID"] = 50546,	
-							["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+						n(134213, {	-- Executioner Blackwell
+							["questID"] = 50546,
+							["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(155055),	-- Soul-Curse Executioner
+								{	-- Executioner Blackwell (Adventurer of Drustvar)
+									["achievementID"] = 12941,	-- Adventurer of Drustvar
+									["criteriaID"] = 21,	-- Executioner Blackwell
+								},
 							}),
-						}),	
-						n(127844, {	-- Gluttonous Yeti		
+						}),
+						n(127844, {	-- Gluttonous Yeti
 							["questID"] = 48979,	
 							["coord"] = { 63.0, 69.6, 896 },
 							["crs"] = { 127979 },	-- Lost Goat
 							["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(158683),	-- Giant Yeti's Bowl
+								{	-- Gluttonous Yeti (Adventurer of Drustvar)
+									["achievementID"] = 12941,	-- Adventurer of Drustvar
+									["criteriaID"] = 6,	-- Gluttonous Yeti
+								},
 							}),
 						}),	
-						n(129835, {	-- Gorehorn		
-							["questID"] = 49480,	
+						n(129835, {	-- Gorehorn
+							["questID"] = 49480,
 							["coord"] = { 57.0, 44.2, 896 },
-							["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+							["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(158710),	-- Gorehorn's Rack
+								{	-- Gorehorn (Adventurer of Drustvar)
+									["achievementID"] = 12941,	-- Adventurer of Drustvar
+									["criteriaID"] = 14,	-- Gorehorn
+								},
 							}),
-						}),	
+						}),
 						n(138675, {	-- Gorged Boar
 							["questID"] = 51700,
 							["coords"] = {
@@ -183,34 +253,46 @@ _.Zones =
 								{ 28.61, 25.61 },
 							},
 							["g"] = {
-								{	-- Gorged Boar
-									["achievementID"] = 12941,	-- Adventurer of Drustvar
-									["criteriaID"] = 29,	-- Gorged Boar
-								},
 								i(154461, {	-- Cursed Boarhide Helm
 									["bonusID"] = 4775,	-- Azerite Armor
 									["modID"] = 17,	-- Azerite Armor
 									["lvl"] = 110,	-- will show 120 otherwise
 								}),
+								{	-- Gorged Boar (Adventurer of Drustvar)
+									["achievementID"] = 12941,	-- Adventurer of Drustvar
+									["criteriaID"] = 29,	-- Gorged Boar
+								},
 							},
 						}),
-						n(127129, {	-- Grozgore		
-							["questID"] = 49388,	
+						n(127129, {	-- Grozgore
+							["questID"] = 49388,
 							["coord"] = { 50.3, 20.7 },
-							["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+							["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(160457),	-- Lava-Starched Britches
+								{	-- Grozgore (Adventurer of Drustvar)
+									["achievementID"] = 12941,	-- Adventurer of Drustvar
+									["criteriaID"] = 13,	-- Grozgore
+								},
 							}),
-						}),	
-						n(138618, {	-- Haywire Golem		
-							["questID"] = 51698,	
-							["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+						}),
+						n(138618, {	-- Haywire Golem
+							["questID"] = 51698,
+							["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(155362),	-- Wickerbeast Mulcher
+								{	-- Haywire Golem (Adventurer of Drustvar)
+									["achievementID"] = 12941,	-- Adventurer of Drustvar
+									["criteriaID"] = 28,	-- Haywire Golem
+								},
 							}),
-						}),	
+						}),
 						n(134754, {	-- Hyo'gi
 							["questID"] = 50688,
 							["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(160462),	-- Hyo'gi Basket Binders
+								{	-- Hyo'gi (Adventurer of Drustvar)
+									["achievementID"] = 12941,	-- Adventurer of Drustvar
+									["criteriaID"] = 23,	-- Hyo'gi
+								},
 							}),
 						}),
 						n(127877, {	-- Longfang
@@ -218,14 +300,14 @@ _.Zones =
 							["questID"] = 48981,
 							["coord"] = { 59.3, 55.2, 896 },
 							["g"] = {
-								{	-- Longfang [Criteria]
-									["achievementID"] = 12941,	-- Adventurer of Drustvar
-									["criteriaID"] = 7,	-- Longfang
-								},
 								i(159518, {	-- Long Fang
 									["bonusID"] = 4776,	-- leveling item
 									["lvl"] = 110,	-- will show 120 otherwise
 								}),
+								{	-- Longfang (Adventurer of Drustvar)
+									["achievementID"] = 12941,	-- Adventurer of Drustvar
+									["criteriaID"] = 7,	-- Longfang
+								},
 								un(1, i(160468, {	-- Longfang Paws
 									["crs"] = { 127901 },	-- Henry Breakwater
 								})),
@@ -239,42 +321,58 @@ _.Zones =
 							["coord"] = { 59.9, 45.5, 896 },
 							["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(160456),	-- Blanched Ravenfeather Gloves
+								{	-- Nevermore (Adventurer of Drustvar)
+									["achievementID"] = 12941,	-- Adventurer of Drustvar
+									["criteriaID"] = 18,	-- Nevermore
+								},
 							}),
 						}),
-						n(125453, {	-- Quillrat Matriarch		
+						n(125453, {	-- Quillrat Matriarch
 							["questID"] = 48178,	
 							["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(158583),	-- Quillstitch Greatcloak
+								{	-- Quillrat Matriarch (Adventurer of Drustvar)
+									["achievementID"] = 12941,	-- Adventurer of Drustvar
+									["criteriaID"] = 2,	-- Quillrat Matriarch
+								},
 							}),
 						}),
 						n(128707, {	-- Rimestone
 							["questID"] = 49269,
 							["coord"] = { 59.7, 70.0, 896 },	-- cave entrance
 							["g"] = {
-								{	-- Rimestone
-									["achievementID"] = 12941,	-- Adventurer of Drustvar
-									["criteriaID"] = 10,	-- Rimestone
-								},
 								i(158345, {	-- Coldsnap Pauldrons
 									["bonusID"] = 4775,	-- Azerite Armor
 									["modID"] = 17,	-- Azerite Armor
 									["lvl"] = 110,	-- will show 120 otherwise
 								}),
+								{	-- Rimestone (Adventurer of Drustvar)
+									["achievementID"] = 12941,	-- Adventurer of Drustvar
+									["criteriaID"] = 10,	-- Rimestone
+								},
 							},
 						}),
-						o(277897, {	-- Seething Cache		
+						o(277897, {	-- Seething Cache
 							["modelScale"] = 2,
 							["questID"] = 49341,
 							["model"] = "World\\Expansion07\\Doodads\\Witch\\8wi_witch_treasurechest02.mdx",
 							["icon"] = "Interface\\Icons\\INV_Eng_Crate",
-							["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+							["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(158598),	-- Band of Seething Manifest
+								{	-- Seething Cache (Adventurer of Drustvar)
+									["achievementID"] = 12941,	-- Adventurer of Drustvar
+									["criteriaID"] = 12,	-- Seething Cache
+								},
 							}),
-						}),	
+						}),
 						n(138863, {	-- Sister Martha
 							["questID"] = 51748,
 							["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(155299),	-- Sister Martha's Soulstealer
+								{	-- Sister Martha (Adventurer of Drustvar)
+									["achievementID"] = 12941,	-- Adventurer of Drustvar
+									["criteriaID"] = 30,	-- Sister Martha
+								},
 							}),
 						}),
 						n(137665, {	-- Soul Goliath
@@ -290,15 +388,15 @@ _.Zones =
 								{ 32.21, 40.01, 896 },
 							},
 							["g"] = {
-								{	-- Talon
-									["achievementID"] = 12941,	-- Adventurer of Drustvar
-									["criteriaID"] = 16,		-- Talon
-								},
 								i(161444, {	-- Frosted Talonfeather Mantle
 									["bonusID"] = 4775,	-- Azerite Armor!!
 									["modID"] = 17,			-- Azerite Armor!!
 									["lvl"] = 110,			-- Will show 120 otherwise!!
 								}),
+								{	-- Talon (Adventurer of Drustvar
+									["achievementID"] = 12941,	-- Adventurer of Drustvar
+									["criteriaID"] = 16,		-- Talon
+								},
 							},
 						}),
 						n(139358, {	-- The Caterer
@@ -313,19 +411,31 @@ _.Zones =
 							["coord"] = { 72.8, 60.5, 896 },
 							["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(160474),	-- Vicemaul Wristpinchers
+								{	-- Vicemaul (Adventurer of Drustvar)
+									["achievementID"] = 12941,	-- Adventurer of Drustvar
+									["criteriaID"] = 4,	-- Vicemaul
+								},
 							}),
 						}),	
-						n(128973, {	-- Whargarble the Ill-Tempered		
+						n(128973, {	-- Whargarble the Ill-Tempered
 							["questID"] = 49311,	
 							["coord"] = { 64.9, 21.5 },
 							["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(155543),	-- Tuskarr Whaler's Harpoon
+								{	-- Whargarble the Ill-Tempered (Adventurer of Drustvar)
+									["achievementID"] = 12941,	-- Adventurer of Drustvar
+									["criteriaID"] = 11,	-- Whargarble the Ill-Tempered
+								},
 							}),
 						}),	
 						n(139322, {	-- Whitney "Steelclaw" Ramsay
 							["questID"] = 51923,
 							["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(154315),	-- Rusty Steelclaw
+								{	-- Hexed Hunter (Adventurer of Drustvar)
+									["achievementID"] = 12941,	-- Adventurer of Drustvar
+									["criteriaID"] = 33,	-- Hexed Hunter
+								},
 							}),
 						}),
 					},

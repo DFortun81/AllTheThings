@@ -302,12 +302,7 @@ _.Instances =
 							},
 							{	-- Zul, Reborn [6]
 								["encounterID"] = 2195,	-- Zul, Reborn
-								["crs"] = {
-									138967,	-- Zul
-									139059,	-- Bloodthirsty Crawg
-									139057,	-- Nazmani Bloodhexer
-									139051,	-- Nazmani Crusher
-								},
+								["crs"] = { 138967 },	-- Zul
 								["g"] = {
 									{	-- Mythic: Zul, Reborn
 										["achievementID"] = 12531,	-- Mythic: Zul, Reborn

@@ -8,45 +8,42 @@ _.Zones =
 			["groups"] = {
 				n(-4,   {	-- Achievement
 					["groups"] = {
-						{	-- Adventurer of Stormsong Valley
-							-- Note: Actual information is in rare file.  This just lets us alphabetize it properly instead of it going to the bottom.
-							["achievementID"] = 12940,	-- Adventurer of Stormsong Valley
-							["collectible"] = false,	-- Can't be completed solely in this zone
-						},
+						ach(12940),		-- Adventurer of Stormsong Valley
 						ach(13051, {	-- Legends of the Tidesages
-							{
+							{	-- Legends of the Tidesages - Part 1
 								["criteriaID"] = 1,	-- Legends of the Tidesages - Part 1
 								["coord"] = { 49.51, 80.90 },
 							},
-							{
+							{	-- Legends of the Tidesages - Part 2
 								["criteriaID"] = 2,	-- Legends of the Tidesages - Part 2
 								["coord"] = { 59.02, 59.54 },
 							},
-							{
+							{	-- Legends of the Tidesages - Part 3
 								["criteriaID"] = 3,	-- Legends of the Tidesages - Part 3
 								["coord"] = { 31.95, 72.91 },
 							},
-							{
+							{	-- Legends of the Tidesages - Part 4
 								["criteriaID"] = 4,	-- Legends of the Tidesages - Part 4
 								["coord"] = { 33.81, 33.23 },
 							},
-							{
+							{	-- Legends of the Tidesages - Part 5
 								["criteriaID"] = 5,	-- Legends of the Tidesages - Part 5
 								["coord"] = { 56.02, 38.53 },
 							},
-							{
+							{	-- Legends of the Tidesages - Part 6
 								["criteriaID"] = 6,	-- Legends of the Tidesages - Part 6
 								["coord"] = { 44.18, 36.60 },
 							},
-							{
+							{	-- Legends of the Tidesages - Part 7
 								["criteriaID"] = 7,	-- Legends of the Tidesages - Part 7
 								["coord"] = { 62.08, 30.22 },
 							},
-							{
+							{	-- Legends of the Tidesages - Part 8
 								["criteriaID"] = 8,	-- Legends of the Tidesages - Part 8
 								["coord"] = { 75.07, 31.13 },
 							},
 						}),
+						ach(13054),		-- Sabertron Assemble
 						ach(12853, {	-- Treasures of Stormsong
 							o(293350, {	-- Carved Wooden Chest	
 								["questID"] = 52429,

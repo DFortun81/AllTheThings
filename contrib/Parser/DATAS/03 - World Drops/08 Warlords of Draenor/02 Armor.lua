@@ -164,6 +164,7 @@ _.WorldDrops =
 					{	-- Moonwhisper Ring
 						["itemID"] = 116698,	-- Moonwhisper Ring
 					},
+					i(118863),	-- Salubrious Signet of Snif'le
 					{	-- Shadowsage Ring
 						["itemID"] = 116716,	-- Shadowsage Ring
 					},

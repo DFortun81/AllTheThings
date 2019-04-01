@@ -19,7 +19,7 @@ _.Instances =
 							134445,	-- Zek'voz <Herald of N'zoth>
 							134442,	-- Vectis
 							133298,	-- Fetid Devourer
-							138967,	-- Zul
+							138967,	-- Zul*
 							134546,	-- Mythrax the Unraveler*
 							132998,	-- G'huun*
 						},

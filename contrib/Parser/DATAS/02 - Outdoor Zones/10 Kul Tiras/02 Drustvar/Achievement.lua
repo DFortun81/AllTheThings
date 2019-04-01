@@ -6,9 +6,10 @@ _.Zones =
 {
 	m(876, { 	-- Kul'Tiras
 		m(896, {	-- Drustvar
-			["groups"] = {
+			["g"] = {
 				n(-4, {	-- Achievement
-					["groups"] = {
+					["g"] = {
+						ach(12941),		-- Adventurer of Drustvar
 						ach(13094, {	-- Cursed Game Hunter
 							{	-- Goats
 								["crs"] = {
@@ -148,7 +149,7 @@ _.Zones =
 						}),
 						ach(12995, {	-- Treasures of Drustvar
 							o(297879, {	-- Bespelled Chest
-								["groups"] = {
+								["g"] = {
 									i(163790, {	-- Spooky Incantation
 										["questID"] = 53448,	-- Spooky Bundle of Sticks Crafting [Wicker Pup]
 									}),
@@ -161,7 +162,7 @@ _.Zones =
 								},
 							}),
 							o(297881, {	-- Enchanted Chest
-								["groups"] = {
+								["g"] = {
 									i(163796, {	-- Wolf Pup Spine
 										["questID"] = 53448,	-- Spooky Bundle of Sticks Crafting [Wicker Pup]
 									}),
@@ -174,7 +175,7 @@ _.Zones =
 								},
 							}),
 							o(297880, {	-- Ensorcelled Chest
-								["groups"] = {
+								["g"] = {
 									i(163791, {	-- Miniature Stag Skull
 										["questID"] = 53448,	-- Spooky Bundle of Sticks Crafting [Wicker Pup]
 									}),
@@ -186,7 +187,7 @@ _.Zones =
 								},
 							}),
 							o(297878, {	-- Hexed Chest
-								["groups"] = {
+								["g"] = {
 									i(163789, {	-- Bundle of Wicker Stick
 										["questID"] = 53448,	-- Spooky Bundle of Sticks Crafting [Wicker Pup]
 									}),
@@ -199,7 +200,7 @@ _.Zones =
 								},
 							}),
 							o(297828, {	-- Merchant's Chest
-								["groups"] = {
+								["g"] = {
 									n(137468, {	-- Gorging Raven
 										i(163710),	-- Merchant's Key
 									}),
@@ -211,14 +212,14 @@ _.Zones =
 								["icon"] = "Interface\\Icons\\garrison_bronzechest",
 							}),
 							o(297891, {	-- Runebound Cache
-								["groups"] = {
+								["g"] = {
 									i(163743),	-- Drust Soulcatcher
 								},
 								["questID"] = 53385,
 								["icon"] = "Interface\\Icons\\garrison_bronzechest",
 							}),
 							o(297892, {	-- Runebound Chest
-								["groups"] = {
+								["g"] = {
 									i(163742),	-- Heartsbane Grimoire (TOY!)
 								},
 								["questID"] = 53386,
