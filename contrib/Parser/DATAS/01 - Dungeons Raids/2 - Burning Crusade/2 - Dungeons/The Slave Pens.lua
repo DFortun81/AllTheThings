@@ -8,14 +8,26 @@ _.Instances = { tier(2, {	-- Burning Crusade
 		["mapID"] = 265,
 		["coord"] = { 48.95, 35.84, 102 },	-- The Slave Pens, Zangarmarsh
 		["groups"] = {
-			d( 1, {	-- Normal
-				n(-17, {	-- Quests 					
-					q(29565, {	-- The Heart of the Matter
+			n(-17, {	-- Quests 					
+				{	-- A Brother Betrayed
+					["questID"] = 29564,	-- A Brother Betrayed
+					["qg"] = 54668,	-- Nahuud
+				},
+				{	-- Lost in Action
+					["questID"] = 29563,	-- Lost in Action
+					["qg"] = 54667,	-- Watcher Jhang
+				},
+				{	-- The Heart of the Matter
+					["questID"] = 29565,	-- The Heart of the Matter
+					["qg"] = 54667,	-- Watcher Jhang
+					["groups"]	= {
 						i(25541),	-- Cenarion Ring of Casting
 						i(28029),	-- Goldenvine Wraps
 						i(25540),	-- Dark Cloak of the Marsh
-					}),	
-				}),
+					},
+				},	
+			}),
+			d( 1, {	-- Normal
 				cr(17941, e(570, { -- Mennu the Betrayer
 					i(24361),	-- Spellfire Longsword
 					i(27543),	-- Starlight Dagger

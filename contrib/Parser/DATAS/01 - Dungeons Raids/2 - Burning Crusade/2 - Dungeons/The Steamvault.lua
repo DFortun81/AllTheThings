@@ -9,6 +9,20 @@ _.Instances = { tier(2, {	-- Burning Crusade
 		["maps"] = { 264 },
 		["coord"] = { 50.35, 33.39, 102 },	-- The Steamvault, Zangarmarsh
 		["groups"] = {
+			n(-17, {	-- Quests
+				{	-- A Proper Fate
+					["questID"] = 29613,	-- A Proper Fate
+					["qg"] = 54848, 	-- Watcher Jhang
+				},
+				{	-- Containment is Key
+					["questID"] = 29614,	-- Containment is Key
+					["qg"] = 54849, 	-- Naturalist Bite
+				},
+				{	-- Windcaller Claw and the Water Thief
+					["questID"] = 29615,	-- Windcaller Claw and the Water Thief
+					["qg"] = 54851, 	-- Windcaller Claw
+				},
+			}),
 			n(0, {	-- Zone Drops
 				i(24159, {  -- Design: Khorium Band of Frost
 					["crs"] = {
