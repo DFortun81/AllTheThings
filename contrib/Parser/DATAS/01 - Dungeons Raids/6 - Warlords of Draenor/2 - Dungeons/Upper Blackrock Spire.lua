@@ -4,6 +4,8 @@
 
 _.Instances = { tier(6, {	-- Warlords of Draenor
 	inst(559, {	-- Upper Blackrock Spire
+		["lvl"] = 100,
+		["mapID"] = 616,
 		["maps"] = { 616, 617, 618 },
 		["coord"] = { 78.94, 33.62, 33 },	-- Blackrock Spire, Eastern Kingdoms
 		["groups"] = {
