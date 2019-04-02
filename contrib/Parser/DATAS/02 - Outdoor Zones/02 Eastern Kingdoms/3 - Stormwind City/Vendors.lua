@@ -15,7 +15,7 @@ _.Zones =
 						["g"] = {
 							{	-- Adherent Hanjun <Tushui Quartermaster>
 								["npcID"] = 69334,	-- Adherent Hanjun <Tushui Quartermaster>
-								["coord"] = { 67.85, 17.05 },
+								["coord"] = { 67.85, 17.05, 84 },
 								["g"] = {
 									i(83079),	-- Tushui Tabard
 									i(92071),	-- Tushui Satchel
@@ -23,7 +23,7 @@ _.Zones =
 							},
 							{	-- Alexandra Bolero <Tailoring Supplies>
 								["npcID"] = 1347,	-- Alexandra Bolero <Tailoring Supplies>
-								["coord" ] = { 53.32, 81.67 },
+								["coord" ] = { 53.32, 81.67, 84 },
 								["g"] = {
 									i(54440, {	-- Dreamcloth
 										i(54601),	-- Pattern: Belt of the Depths
@@ -50,7 +50,7 @@ _.Zones =
 							{	-- Astrid Langstrump <Mountain Horse Handler>
 								["npcID"] = 55285,	-- Astrid Langstrump <Mountain Horse Handler>
 								["description"] = "Appears in Stormwind after War of Thorns.",
-								["coord"] = { 52.39, 7.93 },
+								["coord"] = { 52.39, 7.93, 84 },
 								["g"] = {
 									i(73838),	-- Mountain Horse
 									i(73839),	-- Swift Mountain Horse
@@ -59,7 +59,7 @@ _.Zones =
 							{	-- Captain Dirgehammer <Cataclysmic Gladiator>	
 								["itemID"] = 137642,	-- Mark of Honor
 								["npcID"] = 69975,	-- Captain Dirgehammer <Cataclysmic Gladiator>
-								["coord"] = { 75.05, 67.53 },
+								["coord"] = { 75.05, 67.53, 84 },
 								["g"] = {
 									-- Ensembles not added as unable to verify contents
 									i(146639, { -- Arsenal: Cataclysmic Gladiator's Weapons [ Horde / Alliance / Tested ]
@@ -340,7 +340,7 @@ _.Zones =
 							},
 							{	-- Captain Lancy Revshon <Stormwind Quartermaster>
 								["npcID"] = 49877,	-- Captain Lancy Revshon <Stormwind Quartermaster>
-								["coord"] = { 67.59, 72.96 },
+								["coord"] = { 67.59, 72.96, 84 },
 								["g"] = {
 									i(64902),	-- Cape of Stormwind
 									i(64901),	-- Mantle of Stormwind
@@ -370,7 +370,7 @@ _.Zones =
 							},
 							{	-- Carla Granger <Cloth Armor Merchant>
 								["npcID"] = 1291,	-- Carla Granger <Cloth Armor Merchant>
-								["coord"] = { 62.22, 67.71 },
+								["coord"] = { 62.22, 67.71, 84 },
 								["g"] = {
 									i(16059),	-- Common Brown Shirt
 									i(3428),	-- Common Grey Shirt
@@ -379,7 +379,7 @@ _.Zones =
 							},
 							{	-- Catarina Stanford <Inscription Trainer>
 								["npcID"] = 30713,	-- Catarina Stanford <Inscription Trainer>
-								["coord"] = { 49.79, 74.60 },
+								["coord"] = { 49.79, 74.60, 84 },
 								["g"] = {
 									{	-- Technique: Songs of the Alliance
 										["itemID"] = 140566,	-- Technique: Songs of the Alliance
@@ -388,7 +388,7 @@ _.Zones =
 							},
 							{	-- Catherine Leland <Fishing Supplies>
 								["npcID"] = 5494,	-- Catherine Leland <Fishing Supplies>
-								["coord"] = { 55.03, 69.54 },
+								["coord"] = { 55.03, 69.54, 84 },
 								["g"] = {
 									i(6325),	-- Recipe: Brilliant Smallfish
 									i(6330),	-- Recipe: Bristle Whisker Catfish
@@ -405,7 +405,7 @@ _.Zones =
 							},
 							{	-- Charys Yserian <Arcane Trinkets Vendor>
 								["npcID"] = 1307,	-- Charys Yserian <Arcane Trinkets Vendor> **Limited Supply on all items**
-								["coord"] = { 44.75, 86.35 },
+								["coord"] = { 44.75, 86.35, 84 },
 								["g"] = {
 									i(4824),	-- Blurred Axe
 									i(4825),	-- Callous Axe
@@ -436,9 +436,9 @@ _.Zones =
 							{	-- Dalia Skyblossom <Cooking Trainer>
 								["npcID"] = 133411,	-- Dalia Skyblossom <Cooking Trainer>
 								["coords"] = {
-									{ 51.55, 17.92 },	-- Fire (walks between here and the lean-to)
-									{ 50.66, 17.24 },	-- Lean-to (walks between here and the fire)
-								},
+									{ 51.55, 17.92, 84 },	-- Fire (walks between here and the lean-to)
+									{ 50.66, 17.24, 84 },	-- Lean-to (walks between here and the fire)
+									},
 								["g"] = {
 									i(21219),	-- Recipe: Sagefish Delight
 									i(21099),	-- Recipe: Smoked Sagefish
@@ -446,14 +446,14 @@ _.Zones =
 							},
 							{	-- Darian Singh <Fireworks Vendor>
 								["npcID"] = 1304,	-- Darian Singh <Fireworks Vendor>
-								["coord"] = { 42.64, 76.88 },
+								["coord"] = { 42.64, 76.88, 84 },
 								["g"] = {
 									i(18649),	-- Schematic: Blue Firework	**Limited Supply**
 								},
 							},
 							{	-- Dawn Radue <Bag Merchant>
 								["npcID"] = 50669,	-- Dawn Radue <Bag Merchant>
-								["coord"] = { 64.83, 71.63 },
+								["coord"] = { 64.83, 71.63, 84 },
 								["g"] = {
 									i(67387),	-- "Carriage" Signature Bag
 									i(67396),	-- "Carriage - Christina" Precious Metal Bag
@@ -468,7 +468,7 @@ _.Zones =
 							{	-- Edlan Halsing <Bloodthirsty Gladiator>
 								["itemID"] = 137642,	-- Mark of Honor
 								["npcID"] = 52029,	-- Edlan Halsing <Bloodthirsty Gladiator>
-								["coord"] = { 74.73, 68.21 },
+								["coord"] = { 74.73, 68.21, 84 },
 								["g"] = {
 									-- Ensembles not added as unable to verify contents
 									i(64782),	-- Bloodthirsty Gladiator's Links of Cruelty
@@ -607,21 +607,21 @@ _.Zones =
 							},
 							{	-- Edna Mullby
 								["npcID"] = 1286,	-- Edna Mullby
-								["coord"] = { 64.65, 71.38 },
+								["coord"] = { 64.65, 71.38, 84 },
 								["g"] = {
 									i(20856),	-- Design: Heavy Golden Necklace of Battle
 								},
 							},
 							{	-- Eldraeith <Herbalism Supplies>
 								["npcID"] = 5503,	-- Eldraeith <Herbalism Supplies>
-								["coord"] = { 55.68, 85.20 },
+								["coord"] = { 55.68, 85.20, 84 },
 								["g"] = {
 									i(22250),	-- Herb Pouch
 								},
 							},
 							{	-- Erika Tate <Cooking Supplies>
 								["npcID"] = 5483,	-- Erika Tate <Cooking Supplies>
-								["coord"] = { 77.53, 53.16 },
+								["coord"] = { 77.53, 53.16, 84 },
 								["g"] = {
 									i(21219),	-- Recipe: Sagefish Delight
 									i(21099),	-- Recipe: Smoked Sagefish
@@ -629,7 +629,7 @@ _.Zones =
 							},
 							{	-- Faldren Tillsdale <Valor Quartermaster>
 								["npcID"] = 44245,	-- Faldren Tillsdale <Valor Quartermaster>
-								["coord"] = { 79.15, 69.57 },
+								["coord"] = { 79.15, 69.57, 84 },
 								["g"] = {
 									-- Weapons
 									i(77079),	-- Hungermouth Wand
@@ -1009,7 +1009,7 @@ _.Zones =
 							},
 							{	-- Farrah Facet <Epic Gem Recipes>
 								["npcID"] = 56925,	-- Farrah Facet <Epic Gem Recipes>
-								["coord"] = { 63.90, 61.61 },
+								["coord"] = { 63.90, 61.61, 84 },
 								["g"] = {
 									currency(361, {	-- Illustrious Jewelcrafter's Token
 										i(71928),	-- Design: Accurate Shadow Spinel
@@ -1084,7 +1084,7 @@ _.Zones =
 							},
 							{	-- Frederick Stover <Bow Merchant>
 								["npcID"] = 1298,	-- Frederick Stover <Bow Merchant>	**All items Limited Supply**
-								["coord"] = { 58.59, 69.08 },
+								["coord"] = { 58.59, 69.08, 84 },
 								["g"] = {
 									i(11303),	-- Fine Shortbow
 									i(11307),	-- Massive Longbow
@@ -1093,7 +1093,7 @@ _.Zones =
 							},
 							{	-- Isabel Jones <Jewelcrafting Design Vendor>
 								["npcID"] = 50480,	-- Isabel Jones <Jewelcrafting Design Vendor>
-								["coord"] = { 63.81, 61.36 },
+								["coord"] = { 63.81, 61.36, 84 },
 								["g"] ={
 									currency(361, {	-- Illustrious Jewelcrafter's Token
 										i(52409),	-- Design: Accurate Demonseye
@@ -1189,7 +1189,7 @@ _.Zones =
 							},
 							{	-- Jessara Cordell <Enchanting Supplies>
 								["npcID"] = 1318,	-- Jessara Cordell <Enchanting Supplies>
-								["coord"] = { 52.94, 74.09 },
+								["coord"] = { 52.94, 74.09, 84 },
 								["g"] = {
 									i(20753),	-- Formula: Lesser Wizard Oil
 									i(20752),	-- Formula: Minor Mana Oil
@@ -1218,7 +1218,7 @@ _.Zones =
 							},
 							{	-- Jillian Tanner <Leatherworking Supplies>
 								["npcID"] = 5565,	-- Jillian Tanner <Leatherworking Supplies>
-								["coord"] = { 71.71, 62.74 },
+								["coord"] = { 71.71, 62.74, 84 },
 								["g"] = {
 									i(56516, {	-- Heavy Savage Leather
 										i(67095), -- Pattern: Assassin's Chestplate
@@ -1271,7 +1271,7 @@ _.Zones =
 							},
 							{	-- Jon Casper <Sous Chef>
 								["npcID"] = 49701,	-- Jon Casper <Sous Chef>
-								["coord"] = { 50.42, 71.84 },
+								["coord"] = { 50.42, 71.84, 84 },
 								["g"] = {
 									currency(81, {	-- Epicurean's Award
 										i(65426),	-- Recipe: Baked Rockfish
@@ -1308,7 +1308,7 @@ _.Zones =
 							},
 							{	-- Jordan Smith <Blacksmithing Trainer & Supplies>
 								["npcID"] = 55684,	-- Jordan Smith <Blacksmithing Trainer & Supplies>
-								["coord"] = { 65.00, 48.46 },
+								["coord"] = { 65.00, 48.46, 84 },
 								["g"] = {
 									{	-- Elementium Bar
 										["itemID"] = 52186,	-- Elementium Bar
@@ -1431,7 +1431,7 @@ _.Zones =
 							},
 							{	-- Kaita Deepforge <Blacksmithing Supplies>
 								["npcID"] = 5512,	-- Kaita Deepforge <Blacksmithing Supplies>
-								["coord"] = { 63.62, 37.75 },
+								["coord"] = { 63.62, 37.75, 84 },
 								["g"] = {
 									{	-- Plans: Hardened Iron Shortsword
 										["itemID"] = 12162,	-- Plans: Hardened Iron Shortsword
@@ -1557,7 +1557,7 @@ _.Zones =
 							},
 							{	-- Katie Stokx <Horse Breeder>
 								["npcID"] = 43694,	-- Katie Stokx <Horse Breeder>
-								["coord"] = { 77.01, 67.91 },
+								["coord"] = { 77.01, 67.91, 84 },
 								["g"] = {
 									i(2411),	-- Black Stallion Bridle
 									i(5656),	-- Brown Horse Bridle
@@ -1570,7 +1570,7 @@ _.Zones =
 							},
 							{	-- Kendor Kabonka <Master of Cooking Recipes>
 								["npcID"] = 340,	-- Kendor Kabonka <Master of Cooking Recipes>
-								["coord"] = { 76.47, 52.92 },
+								["coord"] = { 76.47, 52.92, 84 },
 								["g"] = {
 									i(2889),	-- Recipe: Beer Basted Boar Ribs
 									i(3679),	-- Recipe: Blood Sausage
@@ -1619,8 +1619,7 @@ _.Zones =
 									un(2, i(70208)),	-- Ruthless Gladiator's Shield Wall
 									un(2, i(70195)),	-- Ruthless Gladiator's Baton of Light
 									un(2, i(70196)),	-- Ruthless Gladiator's Touch of Defeat
-									un(2, i(70210)),	-- Ruthless Gladiator's Endgame)
-									
+									un(2, i(70210)),	-- Ruthless Gladiator's Endgame
 									un(2, i(70420)),	-- Ruthless Gladiator's Mail Spaulders
 									un(2, i(70421)),	-- Ruthless Gladiator's Mail Legs
 									un(2, i(70422)),	-- Ruthless Gladiator's Mail Helm
@@ -1734,7 +1733,7 @@ _.Zones =
 							{	-- Knight-Lieutenant T'Maire Sydes <Ruthless Gladiator>
 								["itemID"] = 137642,	-- Mark of Honor
 								["npcID"] = 69974,	-- Knight-Lieutenant T'Maire Sydes <Ruthless Gladiator>
-								["coord"] = { 74.94, 67.25 },
+								["coord"] = { 74.94, 67.25, 84 },
 								["g" ] = {
 									-- Ensembles not added as unable to verify contents
 									i(146640, { -- Arsenal: Ruthless Gladiator's Weapons
@@ -1938,7 +1937,7 @@ _.Zones =
 							{	-- Lelanai <Saber Handler>
 								["npcID"] = 4730,	-- Lelanai <Saber Handler>
 								["description"] = "Appears in Stormwind after War of Thorns.",
-								["coord"] = { 55.07, 12.83 },
+								["coord"] = { 55.07, 12.83, 84 },
 								["g"] = {
 									i(8632),	-- Reins of the Spotted Frostsaber
 									i(47100),	-- Reins of the Striped Dawnsaber
@@ -1951,7 +1950,7 @@ _.Zones =
 							},
 							{	-- Lenny "Fingers" McCoy
 								["npcID"] = 2795,	-- Lenny "Fingers" McCoy
-								["coord"] = { 72.80, 58.92 },
+								["coord"] = { 72.80, 58.92, 84 },
 								["g"] = {
 									i(97921),	-- Bom'bay's Color-Seein'Sauce
 									i(138385),	-- Lucky Shirt
@@ -1960,7 +1959,7 @@ _.Zones =
 							{	-- Lieutenant Jackspring <Legacy Weapon Quartermaster>
 								["itemID"] = 137642,	-- Mark of Honor
 								["npcID"] = 12784,	-- Lieutenant Jackspring <Legacy Weapon Quartermaster>
-								["coord"] = { 75.29, 67.21 },
+								["coord"] = { 75.29, 67.21, 84 },
 								["g"] = {
 									i(18825),	-- Grand Marshal's Aegis
 									i(18867),	-- Grand Marshal's Battle Hammer
@@ -1988,7 +1987,7 @@ _.Zones =
 							{	-- Lieutenant Karter <War Mount Quartermaster>
 								["itemID"] = 137642,	-- Mark of Honor
 								["npcID"] = 12783,	-- Lieutenant Karter <War Mount Quartermaster>
-								["coord"] = { 76.36, 65.33 },
+								["coord"] = { 76.36, 65.33, 84 },
 								["g"] = {
 									i(29465),	-- Black Battlestrider Mount
 									i(29467),	-- Black War Ram Mount
@@ -2263,7 +2262,7 @@ _.Zones =
 								["itemID"] = 137642,	-- Mark of Honor
 								["npcID"] = 54660,	-- Lieutenant Tristia <Vicious Gladiator>
 								-- The NPC ID got reused, she was also >S11< Elite Vendor
-								["coord"] = { 75.00, 67.02 },
+								["coord"] = { 75.00, 67.02, 84 },
 								["g"] = {
 									-- Ensembles not added as unable to verify contents, individual armor pieces verified on vendor
 									i(146641), --  Arsenal: Vicious Gladiator's Weapons
@@ -2579,7 +2578,7 @@ _.Zones =
 							{	-- Liliana Emberfrost <Honor Heirlooms>
 								["itemID"] = 137642,	-- Mark of Honor
 								["npcID"] = 52030,	-- Liliana Emberfrost <Honor Heirlooms>
-								["coord"] = { 74.41, 67.59 },
+								["coord"] = { 74.41, 67.59, 84 },
 								["g"] = {
 									-- Weapons
 									i(122369),	-- Battleworn Thrash Blade
@@ -2606,7 +2605,7 @@ _.Zones =
 							},
 							{	-- Lisbeth Schneider <Clothier>
 								["npcID"] = 1299,	-- Lisbeth Schneider <Clothier>
-								["coord"] = { 58.18, 66.96 },
+								["coord"] = { 58.18, 66.96, 84 },
 								["g"] = {
 									i(3426),	-- Bold Yellow Shirt
 									i(3428),	-- Common Grey Shirt
@@ -2616,7 +2615,7 @@ _.Zones =
 							{	-- Lord Candren <Gilneas Quartermaster>
 								["npcID"] = 50307,	-- Lord Candren <Gilneas Quartermaster>
 								["description"] = "Appears in Stormwind after War of Thorns.",
-								["coord"] = { 56.28, 13.04 },
+								["coord"] = { 56.28, 13.04, 84 },
 								["g"] = {
 									i(64893),	-- Cape of Gilneas
 									i(64892),	-- Mantle of Gilneas
@@ -2627,7 +2626,7 @@ _.Zones =
 							},
 							{	-- Magatha Silverton <Justice Quartermaster>
 								["npcID"] = 44246,	-- Magatha Silverton <Justice Quartermaster>
-								["coord"] = { 78.98, 69.77 },
+								["coord"] = { 78.98, 69.77, 84 },
 								["g"] = {
 									-- Weapons
 									i(71150),	-- Scorchvine Wand
@@ -2853,7 +2852,7 @@ _.Zones =
 							},
 							{	-- Maria Lumere <Alchemy Supplies>
 								["npcID"] = 1313,	-- Maria Lumere <Alchemy Supplies>
-								["coord"]= { 55.75, 85.52 },
+								["coord"]= { 55.75, 85.52, 84 },
 								["g"] = {
 									i(9301),	-- Recipe: Elixir of Shadow Power
 								},
@@ -2861,7 +2860,7 @@ _.Zones =
 							{	-- Master Sergeant Biggins <Accessories Quartermaster>
 								["itemID"] = 137642,	-- Mark of Honor
 								["npcID"] = 12781,	-- Master Sergeant Biggins <Accessories Quartermaster>
-								["coord"] = { 75.18, 66.77 },
+								["coord"] = { 75.18, 66.77, 84 },
 								["g"] = {
 									i(15198),	-- Knight's Colors
 									i(15196),	-- Private's Tabard
@@ -2883,7 +2882,7 @@ _.Zones =
 							},
 							{	-- Miles Sidney <Poison Supplies>
 								["npcID"] = 28347,	-- Miles Sidney <Poison Supplies>
-								["coord"] = {74.25, 58.18 },
+								["coord"] = {74.25, 58.18, 84 },
 								["g"] = {
 									i(38579),	-- Venomous Tome
 								},
@@ -2891,7 +2890,7 @@ _.Zones =
 							{	-- Moon Priestess Lasara <Darnassus Quartermaster>
 								["npcID"] = 50305,	-- Moon Priestess Lasara <Darnassus Quartermaster>
 								["description"] = "Appears in Stormwind after War of Thorns.",
-								["coord"] = { 56.59, 13.25 },
+								["coord"] = { 56.59, 13.25, 84 },
 								["g"] = {
 									i(45579),	-- Darnassus Tabard
 									i(64887),	-- Cape of Darnassus
@@ -2902,7 +2901,7 @@ _.Zones =
 							},
 							{	-- Necrolord Sipe <Combatant Mount Quartermaster>
 								["npcID"] = 73190,	-- Necrolord Sipe <Combatant Mount Quartermaster>
-								["coord"] = { 76.88, 65.60 },
+								["coord"] = { 76.88, 65.60, 84 },
 								["g"] = bubbleDown({["u"] = 2}, {
 									i(103533, {	-- Vicious Saddle
 										i(70909),	-- Reins of the Vicious War Steed
@@ -2920,7 +2919,7 @@ _.Zones =
 							},
 							{	-- Old Whitenose <Dragon Turtle Breeder>
 								["npcID"] = 65068,	-- Old Whitenose <Dragon Turtle Breeder>
-								["coord"] = { 67.74, 18.44 },
+								["coord"] = { 67.74, 18.44, 84 },
 								["g"] = {
 									i(91008, { 	-- Black Dragon Turtle (Panda)
 										["races"] = { 25, 26 },
@@ -2999,7 +2998,7 @@ _.Zones =
 							},
 							{	-- Paulie <Old Town Choppers>
 								["npcID"] = 87501,	-- Paulie <Old Town Choppers>
-								["coord"] = { 73.09, 59.38 },
+								["coord"] = { 73.09, 59.38, 84 },
 								["g"] = {
 									i(116789),	-- Champion's Treadblade
 								},
@@ -3007,7 +3006,7 @@ _.Zones =
 							{	-- Rebecca Laughlin <Tabard Designer>
 								["npcID"] = 5193,	-- Rebecca Laughlin <Tabard Designer>
 								["description"] = "Tabards are only obtainable by those who have earned them.|r",
-								["coord"] = { 64.05, 77.42 },
+								["coord"] = { 64.05, 77.42, 84 },
 								["g"] = {
 									i(31779),	-- Aldor Tabard
 									i(20132),	-- Arathor Battle Tabard
@@ -3047,7 +3046,7 @@ _.Zones =
 							{	-- Sergeant Major Clate <Legacy Armor Quartermaster>
 								["itemID"] = 137642,	-- Mark of Honor
 								["npcID"] = 12785,	-- Sergeant Major Clate <Legacy Armor Quartermaster>
-								["coord"] = { 75.46, 67.03 },
+								["coord"] = { 75.46, 67.03, 84 },
 								["g"] = {
 									-- Head
 									i(16465),	-- Field Marshal's Chain Helm
@@ -3185,7 +3184,7 @@ _.Zones =
 							{	-- Shay Pressler <Guild Vendor>
 								["npcID"] = 46602,	-- Shay Pressler <Guild Vendor>
 								["description"] = "If you cannot find an item on this vendor, either your guild does not have the required Achievement, or you do not have sufficient rep with your guild to purchase the item.|r",
-								["coord"] = { 64.14, 77.03 },
+								["coord"] = { 64.14, 77.03, 84 },
 								["g"] = {
 									faction(1168, {	-- Your Guild (Faction)
 										["icon"] = "Interface\\Icons\\ACHIEVEMENT_GUILDPERK_EVERYONES A HERO",
@@ -3382,7 +3381,7 @@ _.Zones =
 							{	-- Shylenai <Owl Trainer>
 								["npcID"] = 8665,	-- Shylenai <Owl Trainer>
 								["description"] = "Appears in Stormwind after War of Thorns.",
-								["coord"] = { 56.00, 3.22 },
+								["coord"] = { 56.00, 3.22, 84 },
 								["g"] = {
 									i(8500),	-- Great Horned Owl
 									i(8501),	-- Hawk Owl
@@ -3390,14 +3389,14 @@ _.Zones =
 							},
 							{	-- Stanly McCormick <Inscription Supplies>
 								["npcID"] = 30730,	-- Stanly McCormick <Inscription Supplies>
-								["coord"] = { 49.62, 74.81 },
+								["coord"] = { 49.62, 74.81, 84 },
 								["g"] = {
 									i(39489),	-- Scribe's Satchel	**Limited Supply**
 								},
 							},
 							{	-- Tannec Stonebeak <Gryphon Keeper>
 								["npcID"] = 43768,	-- Tannec Stonebeak <Gryphon Keeper>
-								["coord"] = { 71.45, 72.08 },
+								["coord"] = { 71.45, 72.08, 84 },
 								["g"] = {
 									i(25471),	-- Ebon Gryphon Mount
 									i(25470),	-- Golden Gryphon Mount
@@ -3410,7 +3409,7 @@ _.Zones =
 							},
 							{	-- Terrance Denman <Jewelcrafting Supplies>
 								["npcID"] = 44583,	-- Terrance Denman <Jewelcrafting Supplies>
-								["coord"] = { 63.18, 61.50 },
+								["coord"] = { 63.18, 61.50, 84 },
 								["g"] ={
 									currency(361, {	-- Illustrious Jewelcrafter's Token
 										i(52409),	-- Design: Accurate Demonseye
@@ -3506,7 +3505,7 @@ _.Zones =
 							},
 							{	-- Toren Landow <Legacy Justice Quartermaster>
 								["npcID"] = 58154,	-- Toren Landow <Legacy Justice Quartermaster>
-								["coord"] = { 79.08, 70.15 },
+								["coord"] = { 79.08, 70.15, 84 },
 								["g"] = {
 									-- Weapons
 									i(57924),	-- Apple-Bent Bough

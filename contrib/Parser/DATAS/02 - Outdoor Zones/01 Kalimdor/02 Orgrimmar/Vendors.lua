@@ -8,6 +8,8 @@ _.Zones =
 			["groups"] = {
 				n(-2, {	-- Vendors
 					n(52809, {	-- Blax Bottlerocket <Toys and Novelties>
+					["description"] = "This npc walks around the Drag.",
+					["coord"] = { 58.6, 53.8, 85 },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(54436),	-- Blue Clockwork Rocket Bot Pet
@@ -26,6 +28,7 @@ _.Zones =
 					}),
 					n(69977, {	-- Blood Guard Zar'shi <Ruthless Gladiator>
 						["itemID"] = 137642,	-- Mark of Honor
+						["coord"] = { 38.6, 70.0, 85 },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(146640),	-- Arsenal: Ruthless Gladiator's Weapons
@@ -196,6 +199,7 @@ _.Zones =
 					}),
 					n(54659, {	-- Blood Guard Zar'shi >S10< Elite (Same name, different npc)
 						["u"] = 43,
+						["coord"] = { 38.2, 71.0, 85 },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							un(2, i(70185)),	-- Ruthless Gladiator's Gavel
@@ -338,6 +342,7 @@ _.Zones =
 						},
 					}),
 					n(3364, {	-- Borya <Tailoring Supplies>
+					["coord"] = { 60.6, 58.6, 85 },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(54440, {	-- Dreamcloth
@@ -367,6 +372,7 @@ _.Zones =
 					}),
 					n(12793, {	-- Brave Stonehide <Accessories Quartermaster>
 						["itemID"] = 137642,	-- Mark of Honor
+						["coord"] = { 38.2, 72.6, 85 },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(15199),	-- Stone Guard's Herald
@@ -400,6 +406,7 @@ _.Zones =
 					}),
 					n(73151, {	-- Deathguard Netharian <Combatant Mount Quartermaster>
 						["races"] = HORDE_ONLY,
+						["coord"] = { 41.8, 73.0, 85 },
 						["groups"] = {
 							un(2, i(103533, {	-- Vicious Saddle
 								un(2, i(70910)),	-- Horn of the Vicious War Wolf Mount
@@ -417,6 +424,7 @@ _.Zones =
 					}),
 					n(69333, {	-- Disciple Jusi <Huojin Quartermaster>
 						["races"] = HORDE_ONLY,
+						["coord"] = { 68., 40.2, 85 },
 						["groups"] = {
 							i(83080),	-- Huojin Tabard
 							i(92070),	-- Houjin Satchel
@@ -424,6 +432,7 @@ _.Zones =
 					}),
 					n(46593, {	-- Doris Volanthius >S9< Elite <Vicious Gladiator>
 						["u"] = 43,
+						["coord"] = { 38.8, 69.8, 85 },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							un(2, i(67454)),	-- Vicious Gladiator's Gavel
@@ -685,6 +694,7 @@ _.Zones =
 					}),
 					n(54657, {	-- Doris Volanthius <Vicious Gladiator>
 						["itemID"] = 137642,	-- Mark of Honor
+						["coord"] = { 38.8, 69.8, 85 },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							-- The NPC ID got reused, she was also >S11< Elite Vendor
@@ -993,6 +1003,7 @@ _.Zones =
 					}),
 					n(44918, {	-- Drakma <Wind Rider Keeper>
 						["races"] = HORDE_ONLY,
+						["coord"] = { 48.0, 58.6, 85 },
 						["groups"] = {
 							i(25477),	-- Swift Red Wind Rider Mount
 							i(25531),	-- Swift Green Wind Rider Mount
@@ -1005,12 +1016,18 @@ _.Zones =
 					}),
 					n(3367, {	-- Felika <Trade Supplies>
 						["races"] = HORDE_ONLY,
+						["description"] = "This npc walks between the Valley of Wisdom and Valley of Strength on the right path.",
+                        ["coords"] = {
+                         { 48.4, 47.8, 85 },
+						 { 52.6, 64.6, 85 },
+                         },
 						["groups"] = {
 							i(20856),	-- Design: Heavy Golden Necklace of Battle
 						},
 					}),
 					n(133261, {	-- Feng Su <Cooking Trainer>
 						["races"] = HORDE_ONLY,
+						["coord"] = { 41.0, 79.4, 85 },
 						["groups"] = {
 							i(21219),	-- Recipe: Sagefish Delight
 							i(21099),	-- Recipe: Smoked Sagefish
@@ -1420,6 +1437,7 @@ _.Zones =
 					}),
 					n(46555, {	-- Gunra <Justice Quartermaster>
 						["races"] = HORDE_ONLY,
+						["coord"] = { 48.4, 71.6, 85 },
 						["groups"] = {
 							i(71523),	-- Immolation Handguards
 							i(71608),	-- Shoulderguards of the Molten Giant
@@ -1626,6 +1644,7 @@ _.Zones =
 					}),
 					n(3335, {	-- Hagrus <Reagents>
 						["qgs"] = {72157},	-- Hagrus <Reagents> (SOO) -- this isn't a quest giver... why is this here?
+                        ["coord"] = { 45.6, 39.0, 86 },
 						["g"] = {
 							i(5643),	-- Recipe: Great Rage Potion
 							i(5640),	-- Recipe: Rage Potion
@@ -1991,6 +2010,7 @@ _.Zones =
 						},
 					}),
 					n(3322, { 	-- Kaja <Bow & Rifle Vendor>
+					    ["coord"] = { 40.8, 49.6, 85 },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(11307),	-- Massive Longbow
@@ -1999,6 +2019,7 @@ _.Zones =
 						},
 					}),
 					n(48510, {	-- Kall Worthaton <Trike Dealer>
+					    ["coord"] = { 36.2, 86.6, 85 },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(62462),	-- Goblin Turbo-Trike Key Mount
@@ -2006,6 +2027,7 @@ _.Zones =
 						},
 					}),
 					n(45551, {	-- Karizi Porkpatty <Cooking Supplies>
+					    ["coord"] = { 39.0, 85.6, 85 },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(21219),	-- Recipe: Sagefish Delight
@@ -2044,6 +2066,7 @@ _.Zones =
 						},
 					}),
 					n(3348, {	-- Kor'geld <Alchemy Supplies>
+					    ["coord"] = { 55.6, 45.4, 85 },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(13478),	-- Recipe: Elixir of Superior Defense
@@ -2145,6 +2168,7 @@ _.Zones =
 						},
 					}),
 					n(133239, {	-- Leyweaver Aurielle
+					    ["coord"] = { 38.2, 86.8, 85 },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(6270),	-- Pattern: Blue Linen Vest
@@ -2155,6 +2179,7 @@ _.Zones =
 						},
 					}),
 					n(45558, {	-- Lizna Goldweaver <Tailoring Supplies>
+                        ["coord"] = { 41.0, 79.8, 85 },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(54440, {	-- Dreamcloth
@@ -2286,6 +2311,7 @@ _.Zones =
 						},
 					}),
 					n(3362, { 	-- Ogunaro Wolfrunner <Kennel Master>
+					["coord"] = { 61.6, 35.6, 85 },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(18796),	-- Horn of the Swift Brown Wolf
@@ -2298,6 +2324,7 @@ _.Zones =
 						},
 					}),
 					n(3317, {	-- Ollanus <Cloth Armor Merchant>
+					["coord"] = { 60.6, 58.6, 85 },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(3428),	-- Common Gray Shirt
@@ -2306,6 +2333,7 @@ _.Zones =
 						},
 					}),
 					n(46359, {	-- Punra <Blacksmithing Supplies>
+					["coord"] = { 45.0, 77.6, 85 },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(12162),	-- Plans: Hardened Iron Shortsword
@@ -2352,6 +2380,7 @@ _.Zones =
 						},
 					}),
 					n(12796, {	-- Raider Bork <War Mount Quartermaster>
+					["coord"] = { 41.8, 72.6, 85 },
 						["itemID"] = 137642,	-- Mark of Honor
 						["races"] = HORDE_ONLY,
 						["groups"] = {
@@ -2374,6 +2403,7 @@ _.Zones =
 						},
 					}),
 					n(52033, {	-- Rogoc <Bloodthirsty Gladiator>
+					    ["coord"] = { 37.8, 71.6, 85 },
 						["itemID"] = 137642,	-- Mark of Honor
 						["races"] = HORDE_ONLY,
 						["groups"] = {
@@ -2512,6 +2542,7 @@ _.Zones =
 						},
 					}),
 					n(58155, {	-- Rugok <Legacy Justice Quartermaster>
+					    ["coord"] = { 48.2, 71.6, 85 },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(65226),	-- Reinforced Sapphirium Faceguard
@@ -2782,6 +2813,7 @@ _.Zones =
 						},
 					}),
 					n(69978, {	-- Sergeant Thunderhorn <Cataclysmic Gladiator>
+					    ["coord"] = { 38.8, 70.0, 85 },
 						["itemID"] = 137642,	-- Mark of Honor
 						["races"] = HORDE_ONLY,
 						["groups"] = {
@@ -2973,6 +3005,7 @@ _.Zones =
 						},
 					}),
 					n(3333, {	-- Shankys <Fishing Supplies>
+					    ["coord"] = { 66.6, 41.6, 85 },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(17062),	-- Recipe: Mithril Head Trout
@@ -2981,6 +3014,7 @@ _.Zones =
 						},
 					}),
 					n(49737, {	-- Shazdar <Sous Chef>
+					    ["coord"] = { 56.8, 62.6, 85 },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							currency(81, {	-- Epicurean's Award
@@ -3064,6 +3098,7 @@ _.Zones =
 						},
 					}),
 					n(46708, {	-- Suja <Cooking Supplies>
+					["coord"] = { 56.6, 61.2, 85 },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(21219),	-- Recipe: Sagefish Delight
@@ -3071,6 +3106,7 @@ _.Zones =
 						},
 					}),
 					n(3356, {	-- Sumi <Blacksmithing Supplies>
+					["coord"] = { 75.8, 35.2, 85 },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(12162),	-- Plans: Hardened Iron Shortsword
@@ -3259,6 +3295,7 @@ _.Zones =
 						},
 					}),
 					n(66022, {	-- Turtlemaster Odai <Dragon Turtle Breeder>
+					["coord"] = { 69.8, 41.0, 85 },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(91008, { 	-- Black Dragon Turtle (Panda)
@@ -3321,6 +3358,8 @@ _.Zones =
 						},
 					}),
 					n(8404, {	-- Xan'tish <Snake Vendor>
+                    ["description"] = "This npc walks around in a circle in the Valley of Spirits.",
+					["coord"] = { 34.0, 67.6, 85 },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(10360),	-- Black Kingsnake
@@ -3330,12 +3369,14 @@ _.Zones =
 					}),
 					n(3400, {	-- Xen'to <Cooking Supplies>
 						["races"] = HORDE_ONLY,
+						["coord"] = { 32.6, 68.6, 85 },
 						["groups"] = {
 							i(21219),	-- Recipe: Sagefish Delight
 							i(21099),	-- Recipe: Smoked Sagefish
 						},
 					}),
 					n(45549, {	-- Zido Helmbreaker <Blacksmithing Supplies>
+					    ["coord"] = { 36.2, 83.2, 85 },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(12162),	-- Plans: Hardened Iron Shortsword

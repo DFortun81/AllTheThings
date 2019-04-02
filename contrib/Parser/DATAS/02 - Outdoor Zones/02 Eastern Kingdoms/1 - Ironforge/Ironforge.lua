@@ -46,7 +46,7 @@ _.Zones =
 					}),
 					qa(4512, {	-- A Little Slime Goes a Long Way
 						["qg"] = 9616,	-- Laris Geardawdle
-						["coord"] = { 75.7, 23.3 },
+						["coord"] = { 75.7, 23.3, 87 },
 					}),
 					qa(4513, {	-- A Little Slime Goes a Long Way
 						["g"] = {
@@ -54,7 +54,7 @@ _.Zones =
 							i(12051),	-- Brazen Gauntlets
 						},
 						["qg"] = 9616,	-- Laris Geardawdle
-						["coord"] = { 75.7, 23.3 },
+						["coord"] = { 75.7, 23.3, 87 },
 						["sourceQuests"] = { 4512 },	-- A Little Slime Goes a Long Way
 					}),
 					qg(16817, qa( 9365, {	-- A Thief's Reward
@@ -84,7 +84,7 @@ _.Zones =
 							i(133692),	-- Ambassador's Deceitful Dagger
 						},
 						["qg"] = 42129,	-- Moira Thaurissan
-						["coord"] = { 39.7, 57.3 },
+						["coord"] = { 39.7, 57.3, 87 },
 						["sourceQuests"] = { 26112 },	-- Demanding Answers
 					}),
 					{    -- Supplying the Front
@@ -93,7 +93,7 @@ _.Zones =
                             i(33792),    -- Plans: Heavy Copper Longsword
                         },
                         ["qg"] = 6031,    -- Tormus Deepforge
-                        ["coord"] = { 49.0, 42.4 },
+                        ["coord"] = { 49.0, 42.4, 87 },
                         ["races"] = ALLIANCE_ONLY,
                         ["requireSkill"] = 164,    -- Blacksmithing
                     },

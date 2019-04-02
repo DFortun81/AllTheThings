@@ -351,13 +351,13 @@ _.Zones =
 								["itemID"] = 139632,	-- A Tiny Pair of Goggles
 								["questID"] = 43695,	-- Pepe can be sometimes be summoned with this mask
 								["coords"] = {
-									{ 42.31, 57.51 },	-- Near Fruit Vendor
-									{ 48.01, 58.01 },	-- Stairs to Curiositiese & Moore
-									{ 47.71, 32.31 },	-- Magus Commerce Exchange well
-									{ 47.31, 37.61 },	-- Legerdemain Lounge
-									{ 40.01, 28.01 },	-- Things of the Past
-									{ 42.01, 19.01 },	-- Antonidas Memoria
-									{ 36.01, 37.01 },	-- Angelique Butler (First Aid Shop)
+									{ 42.31, 57.51, 625 },	-- Near Fruit Vendor
+									{ 48.01, 58.01, 625 },	-- Stairs to Curiositiese & Moore
+									{ 47.71, 32.31, 625 },	-- Magus Commerce Exchange well
+									{ 47.31, 37.61, 625 },	-- Legerdemain Lounge
+									{ 40.01, 28.01, 625 },	-- Things of the Past
+									{ 42.01, 19.01, 625 },	-- Antonidas Memoria
+									{ 36.01, 37.01, 625 },	-- Angelique Butler (First Aid Shop)
 								},
 							},
 						},
@@ -3308,7 +3308,7 @@ _.Zones =
 					{	-- Technique: Tome of the Tranquil Mind
 						["objectID"] = 257999,	-- Technique: Tome of the Tranquil Mind
 						["requireSkill"] = 773,	-- Inscription
-						["coord"] = { 41.34, 36.05 },
+						["coord"] = { 41.34, 36.05, 625 },
 						["g"] = {
 							{	-- Technique: Tome of the Tranquil Mind
 								["itemID"] = 141447,	-- Technique: Tome of the Tranquil Mind
@@ -4993,7 +4993,7 @@ _.Zones =
 						i(140634),	-- Formula: Ley Shatter
 					}),
 					n(100500, { -- Jabrul <Jewelcrafting Master>
-						["coord"] = { 39.60, 34.56 },
+						["coord"] = { 39.60, 34.56, 625 },
 						["g"] = {
 							i(137809),	-- Design: Ancient Maelstrom Amulet (Rank 1)
 							i(137794),	-- Design: Azsunite Loop (Rank 1)
@@ -5030,7 +5030,7 @@ _.Zones =
 					}),
 					{	-- Jang Quillpaw <Inscription Supplies>
 						["npcID"] = 93544,	-- Jang Quillpaw <Inscription Supplies>
-						["coord"] = { 41.44, 36.72 },
+						["coord"] = { 41.44, 36.72, 625 },
 						["g"] = {
 							{	-- Technique: Glyph of Autumnal Bloom*
 								["itemID"] = 141042,	-- Technique: Glyph of Autumnal Bloom
@@ -6725,11 +6725,11 @@ _.Zones =
 							i(127909),	-- Recipe: Unbending Potion (Rank 1)
 							i(128209),	-- Recipe: Wild Transmutation (Rank 1)
 						},
-						["coord"] = { 42.2, 32.3 },
+						["coord"] = { 42.2, 32.3, 625 },
 					}),
 					{	-- Professor Pallin <Inscription Trainer>
 						["npcID"]= 92195,	-- Professor Pallin <Inscription Trainer>
-						["coord"] = { 41.50, 37.31 },
+						["coord"] = { 41.50, 37.31, 625 },
 						["g"] = {
 							{	-- Technique: Songs of Battle
 								["itemID"] = 137787,	-- Technique: Songs of Battle
@@ -6839,7 +6839,7 @@ _.Zones =
 						i(51304),	-- Sanctified Lasherweave Pauldrons
 					}),
 					n(93521, { 	-- Ranid Glowergold <Leatherworking & Skinning Supplies>
-						["coord"] = { 34.6, 28.6 },
+						["coord"] = { 34.6, 28.6, 625 },
 						["g"] = {
 							i(137884), -- Recipe: Dreadleather Bindings (Rank 2)
 							i(137890), -- Recipe: Dreadleather Footpads (Rank 2)
@@ -7188,7 +7188,7 @@ _.Zones =
 						i(138300),	-- Madman's Luggage
 					}),
 					n(93526, { 	-- Tiffany Cartier <Jewelcrafting Supplies>
-						["coord"] = { 39.86, 34.77 },
+						["coord"] = { 39.86, 34.77, 625 },
 						["g"] = {
 							i(137834),	-- Design: Ancient Maelstrom Amulet (Rank 2)
 							i(137819),	-- Design: Azsunite Loop (Rank 2)
