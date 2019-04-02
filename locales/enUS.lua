@@ -1816,8 +1816,10 @@ AllTheThings.L = {
 		[179832] = "Interface\\Icons\\inv_misc_armorkit_06",
 		[180448] = "Interface\\Icons\\INV_Inscription_ScrollOfWisdom_01",
 		[180503] = "Interface\\Icons\\INV_Misc_Book_09",
+		[180690] = "Interface\\Icons\\Garrison_BronzeChest",
+		[180691] = "Interface\\Icons\\Garrison_BronzeChest",
 		[180794] = "Interface\\Icons\\INV_Misc_Book_06",
-		[180918] = "Interface\\Icons\\INV_Inscription_ScrollOfWisdom_01",
+		[180918] = "Interface\\Icons\\INV_Inscription_ScrollOfWisdom_01".
 		[181011] = "Interface\\Icons\\INV_Misc_Book_11",
 		[181074] = "Interface\\Icons\\Garrison_SilverChest",
 		[181147] = "Interface\\Icons\\INV_Inscription_ScrollOfWisdom_01",
@@ -2315,6 +2317,7 @@ AllTheThings.L = {
 		[179697] = "Arena Treasure Chest",
 		[180448] = "Wanted Poster: Deathclasp",
 		[180503] = "Sandy Cookbook",
+		[180690] = "Large Scarab Coffer",
 		[180691] = "Scarab Coffer",
 		[180794] = "Journal of Jandice Barov",
 		[180918] = "Wanted: Thaelis the Hungerer",
@@ -3296,7 +3299,7 @@ AllTheThings.L = {
 		{1, "|CFFFF0000This NPC or creature has been removed from the game.|r", "Removed NPCs (43)"}; -- 43
 		{21, "|CFFFF0000May require a specific Micro-Holiday to be active.|r", "Micro-Holiday (44)"}; -- 44
 		{1, "|CFFFF0000With 8.0, Blizzard's Legacy Loot implementation broke Chromaggus' loot table.|r", "Chromaggus Non-Tier Loot (45)"}; -- 45
-		{2, "|CFFFF0000This item is only available from War Chests while under max level.|r", "War Chest (Low Level) (46)"}; -- 46
-		{1, "|CFFFF0000With 8.0, Blizzard's Legacy Loot implementation broke Gruul's loot table.|r", "Gruul Non-Tier Loot (47)"}; -- 47
+		{2, "|CFFFF0000This item is only available from War Chests while under max level.|r", "Incursion Loot (46)"}; -- 46
+		{1, "|CFFFF0000With 8.0, Blizzard's Legacy Loot implementation broke Gruul' loot table.|r", "Gruul Non-Tier Loot (47)"}; -- 47
 	};
 };
