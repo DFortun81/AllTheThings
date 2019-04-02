@@ -388,7 +388,7 @@ _.ExpansionFeatures =
 										["qg"] = 135620,	-- Kelsey Steelspark
 										["coord"] = { 40.7, 70.6, 862 },	-- Zuldazar
 										["sourceQuests"] = { 52003 },	-- Champion: Kelsey Steelspark
-										-- I did this foothold second and received a Glowing Azerite Crystal (250 Azerite) as my reward.
+										-- I did this foothold third and received a Glowing Azerite Crystal (250 Azerite) as my reward.
 										["g"] = {
 											{	-- Zuldazar Foothold
 												["achievementID"] = 12510,	-- Ready for War
@@ -1062,8 +1062,140 @@ _.ExpansionFeatures =
 									}),
 								},
 							},
+							qa(54171, {	-- The Abyssal Scepter
+								["qg"] = 135612,	-- Halford Wyrmbane
+								["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
+								["description"] = "This quest will be available in Boralus when you reach 14,000 Revered reputation with 7th Legion (66.6% of Revered).",
+								["sourceQuests"] = { 54206 },	-- The Sleeper Agent
+							}),
+							{	---------- Criteria: Mischief Managed
+								["achievementID"] = 13467,	-- Tides of Vengeance
+								["collectible"] = false,
+								["criteriaID"] = 3,	-- Mischief Managed
+								["races"] = ALLIANCE_ONLY,
+								["maps"] = { 862 },	-- Zuldazar
+								-- 1348 Battle of Dazaralor (Zandalari Treasury)
+								["lvl"] = 120,
+								["g"] = {
+									qa(54169, {	-- The Treasury Heist
+										["qg"] = 146982,	-- Lady Jaina Proudmoore
+										["coord"] = { 40.6, 70.7, 862 },	-- Zuldazar
+										["sourceQuests"] = { 54171 },	-- The Abyssal Scepter
+									}),
+									qa(54510, {	-- Mischief Managed
+										["qg"] = 146982,	-- Lady Jaina Proudmoore
+										["coord"] = { 40.6, 70.7, 862 },	-- Zuldazar
+										["sourceQuests"] = { 54169 },	-- The Treasury Heist
+										["g"] = {
+											i(163394),	-- 7th Legionnaire's Helm
+											i(163389),	-- 7th Legionnaire's Monnion
+											i(163398),	-- 7th Legionnaire's Chainmail
+											-- Need to do this criteria on cloth, leather, and plate to get other rewards
+											{	-- Mischief Managed
+												["achievementID"] = 13467,	-- Tides of Vengeance
+												["criteriaID"] = 3,	--  Mischief Managed
+											},
+										},
+									}),
+								},
+							},
+							qa(54302, {	-- The Fall of Zuldazar
+								["qg"] = 135612,	-- Halford Wyrmbane
+								["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
+								["sourceQuests"] = { 54510 },	-- Mischief Managed
+								-- Technically available before turning in this quest, but is the next part of the campaign.
+							}),
+							qa(54303, {	-- The March to Nazmir
+								["qg"] = 147819,	-- Blademaster Telaamon
+								["coord"] = { 39.1, 77.1, 1161 },	-- Boralus
+								["sourceQuests"] = { 54302 },	-- The Fall of Zuldazar
+							}),
+							{	---------- Criteria: He Who Walks in the Light
+								["achievementID"] = 13467,	-- Tides of Vengeance
+								["collectible"] = false,
+								["criteriaID"] = 4,	-- He Who Walks in the Light
+								["races"] = ALLIANCE_ONLY,
+								["maps"] = { 863 },	-- Nazmir
+								-- 1348 Battle of Dazaralor (Zandalari Treasury)
+								["lvl"] = 120,
+								["g"] = {
+									qa(54310, {	-- Repurposing Their Village
+										["qg"] = 147842,	-- Lady Jaina Proudmoore
+										["coord"] = { 30.9, 29.5, 863 },	-- Nazmir
+										["sourceQuests"] = { 54303 },	-- The March to Nazmir
+									}),
+									qa(54404, {	-- Dark Iron Machinations
+										["qg"] = 147843,	-- Master Mathias Shaw
+										["coord"] = { 30.9, 29.5, 863 },	-- Nazmir
+										["sourceQuests"] = { 54303 },	-- The March to Nazmir
+									}),
+									qa(54312, {	-- Fog of War
+										["qg"] = 147844,	-- Blademaster Telaamon
+										["coord"] = { 33.3, 45.9, 863 },	-- Nazmir
+										["sourceQuests"] = {
+											54404,	-- Dark Iron Machinations
+											54310,	-- Repurposing Their Village
+										},
+									}),
+									qa(54407, {	-- Lurking in the Swamp
+										["qg"] = 147842,	-- Lady Jaina Proudmoore
+										["coord"] = { 33.6, 47.7, 863 },	-- Nazmir
+										["sourceQuests"] = { 54312 },	-- Fog of War
+									}),
+									qa(54412, {	-- Zul'jan Deluge
+										["qg"] = 147842,	-- Lady Jaina Proudmoore
+										["coord"] = { 35.7, 68.1, 863 },	-- Nazmir
+										["sourceQuests"] = { 54407 },	-- Lurking in the Swamp
+									}),
+									qa(54417, {	-- Showing Our Might
+										["qg"] = 147842,	-- Lady Jaina Proudmoore
+										["coord"] = { 44.2, 78.8, 863 },	-- Nazmir
+										["sourceQuests"] = { 54412 },	-- Zul'jan Deluge
+									}),
+									qa(54421, {	-- Taming their Beasts
+										["qg"] = 147843,	-- Master Mathias Shaw
+										["coord"] = { 44.2, 78.6, 863 },	-- Nazmir
+										["sourceQuests"] = { 54412 },	-- Zul'jan Deluge
+									}),
+									qa(54418, {	-- The Mech of Death
+										["qg"] = 147844,	-- Blademaster Telaamon
+										["coord"] = { 44.2, 78.6, 863 },	-- Nazmir
+										["sourceQuests"] = { 54412 },	-- Zul'jan Deluge
+									}),
+									qa(54441, {	-- Taking the Blood Gate
+										["qg"] = 147842,	-- Lady Jaina Proudmoore
+										["coord"] = { 50.4, 84.1, 863 },	-- Nazmir
+										["sourceQuests"] = {
+											54417,	-- Showing Our Might
+											54421,	-- Taming their Beasts
+											54418,	-- The Mech of Death
+										},
+									}),
+									qa(54459, {	-- He Who Walks in the Light
+										["qg"] = 147842,	-- Lady Jaina Proudmoore
+										["coord"] = { 50.4, 84.1, 863 },	-- Nazmir
+										["sourceQuests"] = { 54441 },	-- Taking the Blood Gate
+										["g"] = {
+											{	-- He Who Walks in the Light
+												["achievementID"] = 13467,	-- Tides of Vengeance
+												["criteriaID"] = 4,	--  He Who Walks in the Light
+											},
+										},
+									}),
+								},
+							},
 						},
 					},
+					qa(54485, {	-- Battle of Dazar'alor
+						["qg"] = 135612,	-- Halford Wyrmbane
+						["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
+						["sourceQuests"] = { 54459 },	-- He Who Walks in the Light
+					}),
+					qa(54163, {	-- As the Dust Settles
+						["qg"] = 135612,	-- Halford Wyrmbane
+						["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
+						["sourceQuests"] = { 54485 },	-- Battle of Dazar'alor
+					}),
 				}),
 			}),
 		}),

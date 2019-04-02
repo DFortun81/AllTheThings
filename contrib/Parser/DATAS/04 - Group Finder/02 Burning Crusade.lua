@@ -31,6 +31,7 @@ _.GroupFinder =
 					i(160600),	-- Turbulent Cloak (screenshot from Emsarrev on Discord)
 					i(51995),	-- Turbulent Necklace*
 					i(51991),	-- Turbulent Signet*
+					i(160605),	-- Turbulent Signet*
 				},
 				["lvl"] = 60,
 				-- ["description"] = "|cff66ccffRewarded for completing a random dungeon in the level 58 - ??? range.|r", (NOTE: unsure about start/end points -- I *think* but am not positive that they opened at 58 and I'm not sure when they become unavailable.  Still available for a 70 character.  Commenting this out until confirmation.

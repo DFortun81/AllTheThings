@@ -8,7 +8,8 @@ _.Zones =
 			["groups"] = {
 				n(-4,   {	-- Achievements
 					["groups"] = {
-						{	--  A Loa of a Tale [Note: Don't convert please]
+						ach(12942),		-- Adventurer of Nazmir
+						{				-- A Loa of a Tale [Note: Don't convert please]
 							["achievementID"] = 13036,	-- A Loa of a Tale
 							["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 							["g"] = {
@@ -70,7 +71,7 @@ _.Zones =
 								},
 							},
 						},
-						{	-- Carved in Stone, Written in Blood
+						{				-- Carved in Stone, Written in Blood
 							["achievementID"] = 13024,	-- Carved in Stone, Written in Blood
 							["g"] = {
 								{	-- Ancient Nazmani Tablet
@@ -166,7 +167,7 @@ _.Zones =
 								["criteriaID"] = 6,	-- Stonebloom
 							}),
 						}),
-						{	-- Get Hek'd
+						{				-- Get Hek'd
 							["achievementID"] = 12482,	-- Get Hek'd
 							["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 							["g"] = {

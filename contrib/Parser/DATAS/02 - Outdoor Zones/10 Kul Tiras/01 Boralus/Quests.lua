@@ -238,11 +238,6 @@ _.Zones =
 							["qg"] = 135259,	-- Taelia
 							["sourceQuests"] = { 50789, 50788 },	-- Clear the Air / Enemies Within [Alliance Only]
 						}),
-						qa(55118, {	-- Loose Ends
-							["qg"] = 135612,	-- Halford Wyrmbane
-							["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
-							-- Unsure if this has any prerequisite quests or other requirements.
-						}),
 						qa(50787, {	-- Make Our Case
 							["qg"] = 135335,	-- Proudmoore Guard
 							["sourceQuests"] = { 50795 },	-- Prepare for Trouble [Alliance Only]

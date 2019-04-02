@@ -129,6 +129,10 @@ _.Zones =
 						}),
 						n(128674, {	-- Gut-Gut the Glutton
 							["questID"] = 49270,
+							["coords"] = {
+							 -- { 62.3, 48.1, 864 },	-- start of path (if we ever have ability to add description to coords)
+								{ 63.9, 48.0, 864 },	-- cave entrance
+							},
 							["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(161105),	-- Gluttonous Carnivore Treads
 								{	-- Gut-Gut the Glutton (Adventurer of Vol'dun)

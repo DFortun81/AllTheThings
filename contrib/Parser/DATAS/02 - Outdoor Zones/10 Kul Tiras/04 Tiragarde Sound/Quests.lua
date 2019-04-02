@@ -540,32 +540,6 @@ _.Zones =
 							["sourceQuests"] = { 49290 },	-- Aged to Perfection [Alliance Only]
 						})),
 						
-						-- NOT PART OF ZONE QUEST ACHIEVEMENT!
-						-- The section below is in Freehold but for the Feathers questline
-						------------------------------------------------------------------
-						qa(55033, {	-- Ashes to Ashvane
-							["qg"] = 150796,	-- Kelsey Steelspark
-							["coord"] = { 80.1, 75.0, 895 },	-- Tiragarde Sound
-							["sourceQuests"] = { 55118 },	-- Loose Ends
-						}),
-						qa(55117, {	-- Correspondence Conundrum
-							["qg"] = 150796,	-- Kelsey Steelspark
-							["coord"] = { 80.1, 75.0, 895 },	-- Tiragarde Sound
-							["sourceQuests"] = { 55118 },	-- Loose Ends
-						}),
-						qa(55116, {	-- Getting a Clue
-							["qg"] = 150796,	-- Kelsey Steelspark
-							["coord"] = { 80.1, 75.0, 895 },	-- Tiragarde Sound
-							["sourceQuests"] = {
-								55033,	-- Ashes to Ashvane
-								55117,	-- Correspondence Conundrum
-							},
-						}),
-						qa(55119, {	-- Reporting In!
-							["qg"] = 150796,	-- Kelsey Steelspark
-							["coord"] = { 80.1, 75.0, 895 },	-- Tiragarde Sound
-							["sourceQuests"] = { 55116 },	-- Getting a Clue
-						}),
 						------------------------------------------------------------------
 						--------------------------------------
 						-- Daelin's Gate / Old Drust Road

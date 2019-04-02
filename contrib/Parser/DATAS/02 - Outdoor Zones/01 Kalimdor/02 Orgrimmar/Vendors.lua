@@ -5,13 +5,13 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(85, {	-- Orgrimmar
-			["groups"] = {
+			["g"] = {
 				n(-2, {	-- Vendors
 					n(52809, {	-- Blax Bottlerocket <Toys and Novelties>
-					["description"] = "This npc walks around the Drag.",
+					["description"] = "This NPC walks around the Drag.",
 					["coord"] = { 58.6, 53.8, 85 },
 						["races"] = HORDE_ONLY,
-						["groups"] = {
+						["g"] = {
 							i(54436),	-- Blue Clockwork Rocket Bot Pet
 							i(95621),	-- Warbot Ignition Key Pet
 							i(54343),	-- Blue Crashin' Thrashin' Racer Controller Toy
@@ -30,7 +30,7 @@ _.Zones =
 						["itemID"] = 137642,	-- Mark of Honor
 						["coord"] = { 38.6, 70.0, 85 },
 						["races"] = HORDE_ONLY,
-						["groups"] = {
+						["g"] = {
 							i(146640),	-- Arsenal: Ruthless Gladiator's Weapons
 							i(70242),	-- Ruthless Gladiator's Barrier
 							i(70235),	-- Ruthless Gladiator's Baton of Light
@@ -201,7 +201,7 @@ _.Zones =
 						["u"] = 43,
 						["coord"] = { 38.2, 71.0, 85 },
 						["races"] = HORDE_ONLY,
-						["groups"] = {
+						["g"] = {
 							un(2, i(70185)),	-- Ruthless Gladiator's Gavel
 							un(2, i(70201)),	-- Ruthless Gladiator's Bonecracker
 							un(2, i(70202)),	-- Ruthless Gladiator's Pummeler
@@ -344,7 +344,7 @@ _.Zones =
 					n(3364, {	-- Borya <Tailoring Supplies>
 					["coord"] = { 60.6, 58.6, 85 },
 						["races"] = HORDE_ONLY,
-						["groups"] = {
+						["g"] = {
 							i(54440, {	-- Dreamcloth
 								i(54601),	-- Pattern: Belt of the Depths
 								i(54602),	-- Pattern: Dreamless Belt
@@ -374,7 +374,7 @@ _.Zones =
 						["itemID"] = 137642,	-- Mark of Honor
 						["coord"] = { 38.2, 72.6, 85 },
 						["races"] = HORDE_ONLY,
-						["groups"] = {
+						["g"] = {
 							i(15199),	-- Stone Guard's Herald
 							i(15197),	-- Scout's Tabard
 							un(2, i(18834)),	-- Insignia of the Horde [Warrior]
@@ -396,7 +396,7 @@ _.Zones =
 					n(50477, {	-- Champion Uru'zin <Darkspear Quartermaster>
 						["coord"] = { 49.9, 58.1, 85 },
 						["races"] = HORDE_ONLY,
-						["groups"] = {
+						["g"] = {
 							i(45582),	-- Darkspear Tabard
 							i(64912),	-- Darkspear Cape
 							i(64911),	-- Darkspear Mantle
@@ -407,7 +407,7 @@ _.Zones =
 					n(73151, {	-- Deathguard Netharian <Combatant Mount Quartermaster>
 						["races"] = HORDE_ONLY,
 						["coord"] = { 41.8, 73.0, 85 },
-						["groups"] = {
+						["g"] = {
 							un(2, i(103533, {	-- Vicious Saddle
 								un(2, i(70910)),	-- Horn of the Vicious War Wolf Mount
 								un(2, i(102533)),	-- Reins of the Vicious Skeletal Warhorse Mount
@@ -425,7 +425,7 @@ _.Zones =
 					n(69333, {	-- Disciple Jusi <Huojin Quartermaster>
 						["races"] = HORDE_ONLY,
 						["coord"] = { 68., 40.2, 85 },
-						["groups"] = {
+						["g"] = {
 							i(83080),	-- Huojin Tabard
 							i(92070),	-- Houjin Satchel
 						},
@@ -434,7 +434,7 @@ _.Zones =
 						["u"] = 43,
 						["coord"] = { 38.8, 69.8, 85 },
 						["races"] = HORDE_ONLY,
-						["groups"] = {
+						["g"] = {
 							un(2, i(67454)),	-- Vicious Gladiator's Gavel
 							un(2, i(67470)),	-- Vicious Gladiator's Bonebracker
 							un(2, i(67461)),	-- Vicious Gladiator's Longbow
@@ -696,7 +696,7 @@ _.Zones =
 						["itemID"] = 137642,	-- Mark of Honor
 						["coord"] = { 38.8, 69.8, 85 },
 						["races"] = HORDE_ONLY,
-						["groups"] = {
+						["g"] = {
 							-- The NPC ID got reused, she was also >S11< Elite Vendor
 							i(146641),	--  Arsenal: Vicious Gladiator's Weapons
 							-- Weapons
@@ -1004,7 +1004,7 @@ _.Zones =
 					n(44918, {	-- Drakma <Wind Rider Keeper>
 						["races"] = HORDE_ONLY,
 						["coord"] = { 48.0, 58.6, 85 },
-						["groups"] = {
+						["g"] = {
 							i(25477),	-- Swift Red Wind Rider Mount
 							i(25531),	-- Swift Green Wind Rider Mount
 							i(25532),	-- Swift Yellow Wind Rider Mount
@@ -1021,14 +1021,14 @@ _.Zones =
                          { 48.4, 47.8, 85 },
 						 { 52.6, 64.6, 85 },
                          },
-						["groups"] = {
+						["g"] = {
 							i(20856),	-- Design: Heavy Golden Necklace of Battle
 						},
 					}),
 					n(133261, {	-- Feng Su <Cooking Trainer>
 						["races"] = HORDE_ONLY,
 						["coord"] = { 41.0, 79.4, 85 },
-						["groups"] = {
+						["g"] = {
 							i(21219),	-- Recipe: Sagefish Delight
 							i(21099),	-- Recipe: Smoked Sagefish
 						},
@@ -1037,7 +1037,7 @@ _.Zones =
 						["itemID"] = 137642,	-- Mark of Honor
 						["coord"] = { 38.2, 72.6, 85 }, 
 						["races"] = HORDE_ONLY,
-						["groups"] = {
+						["g"] = {
 							i(28377), 	-- Sergeant's Heavy Cloak
 							i(28378), 	-- Sergeant's Heavy Cape
 							i(16486), 	-- First Sergeant's Silk Cuffs
@@ -1167,7 +1167,7 @@ _.Zones =
 					n(50323, {	-- Frizzo Villamar <Bilgewater Cartel Quartermaster>
 						["coord"] = { 50.0, 58.6, 85 },
 						["races"] = HORDE_ONLY,
-						["groups"] = {
+						["g"] = {
 							i(64884),	-- Bilgewater Cartel Tabard
 							i(64906),	-- Bilgewater Cape
 							i(64905),	-- Bilgewater Shroud
@@ -1179,7 +1179,7 @@ _.Zones =
 						["itemID"] = 137642,	-- Mark of Honor
 						["coord"] = { 38.0, 70.8, 85 },
 						["races"] = HORDE_ONLY,
-						["groups"] = {
+						["g"] = {
 							i(122364),	-- Sharpened Scarlet Kris
 							i(122365),	-- Reforged Truesilver Champion
 							i(122366),	-- Upgraded Dwarven Hand Cannon
@@ -1201,7 +1201,7 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["description"] = "Tabards are only obtainable by those who have earned them.|r",
 						["coord"] = { 47.6, 75.6, 85 },
-						["groups"] = {
+						["g"] = {
 							h(i(20131)),	-- Battle Tabard of the Defilers
 							i(31404),		-- Green Trophy Tabard of the Illidari
 							i(31405),		-- Purple Trophy Tabard of the Illidari
@@ -1239,71 +1239,71 @@ _.Zones =
 						},
 					}),
 					n(46572, {	-- Goram <Guild Vendor>
-						["description"] = "If you cannot find an item on this vendor, either your guild does not have the required Achievement, or you do not have sufficient rep with your guild to purchase the item.|r",
+						["description"] = "If you cannot find an item on this vendor, either your guild does not have the required achievement or you do not have sufficient rep with your guild to purchase the item.|r",
 						["coord"] = { 48.2, 75.6, 85 },
-						["groups"] = {
+						["g"] = {
 							faction(1168, {	-- Your Guild (Faction)
 								["icon"] = "Interface\\Icons\\ACHIEVEMENT_GUILDPERK_EVERYONES A HERO",
-								["groups"] = {
+								["g"] = {
 									ach(4989, {	-- A Class Act
 										["collectible"] = false,
-										["groups"] = {
+										["g"] = {
 											--a(i(63352)),	-- Shroud of Cooperation - Honored
 											h(i(63353)),	-- Shroud of Cooperation - Honored
 										},
 									}),
 									h(ach(5179, {	-- Alliance Slayer
 										["collectible"] = false,
-										["groups"] = {
+										["g"] = {
 											h(i(65362)),	-- Guild Page - Honored - minipet bound to Character
 										},
 									})),
 									ach(5024, {	-- Better Leveling Through Chemistry
 										["collectible"] = false,
-										["groups"] = {
+										["g"] = {
 											i(65498),	-- Recipe: Big Cauldron of Battle
 										},
 									}),
 									ach(9651, {	-- Challenge Warlord: Gold - Guild Edition
 										["collectible"] = false,
-										["groups"] = {
+										["g"] = {
 											un(4, i(114968)),	-- Deathwatch Hatchling - Revered
 										},
 										["description"] = "Achievement no longer obtainable. You will need to find a guild that already has it to buy Deathwatch Hatchling.|r",
 									}),
 									ach(5144, {	-- Critter Kill Squad
 										["collectible"] = false,
-										["groups"] = {
+										["g"] = {
 											i(63398),	-- Armadillo Pup - Revered
 										},
 									}),
 									ach(5840, {	-- Dragonwrath, Tarecgosa's Rest - Guild Edition
 										["collectible"] = false,
-										["groups"] = {
+										["g"] = {
 											i(71033),	-- Lil' Tarecgosa - Exalted
 										},
 									}),
 									ach(4988, {	-- Guild Glory of the Cataclysm Raider
 										["collectible"] = false,
-										["groups"] = {
+										["g"] = {
 											i(63125),	-- Reins of the Dark Phoenix - Exalted
 										},
 									}),
 									ach(9669, {	-- Guild Glory of the Draenor Raider
 										["collectible"] = false,
-										["groups"] = {
+										["g"] = {
 											i(116666),	-- Blacksteel Battleboar - Exalted
 										},
 									}),
 									ach(6682, {	-- Guild Glory of the Pandaria Raider
 										["collectible"] = false,
-										["groups"] = {
+										["g"] = {
 											i(85666),	-- Reins of the Thundering Jade Cloud Serpent - Exalted
 										},
 									}),
 									ach(6681, {	-- Guild Pandaren Dungeon Hero
 										["collectible"] = false,
-										["groups"] = {
+										["g"] = {
 											i(89190),	-- Tailored Initiate's Shirt - Honored
 											i(89192),	-- Tailored Memeber's Shirt - Honored
 											i(89194),	-- Tailored Officer's Shirt - Honored
@@ -1312,28 +1312,28 @@ _.Zones =
 									--[[
 									a(ach(5031, {	-- Horde Slayer
 										["collectible"] = false,
-										["groups"] = {
+										["g"] = {
 											a(i(65361)),	-- Guild Page - Honored - minipet bound to Character
 										},
 									})),
 									]]--
 									ach(5035, {	-- Master Crafter
 										["collectible"] = false,
-										["groups"] = {
+										["g"] = {
 											--a(i(65360)),	-- Cloak of Coordination - Revered
 											h(i(65274)),	-- Cloak of Coordination - Revered
 										},
 									}),
 									ach(5465, {	-- Mix Master
 										["collectible"] = false,
-										["groups"] = {
+										["g"] = {
 											i(65435),	-- Recipe: Cauldron of Battle
 										},
 									}),
 									--[[
 									a(ach(6644, {	-- Pandaren Embassy
 										["collectible"] = false,
-										["groups"] = {
+										["g"] = {
 											i(89191),	-- Artisan Initiate's Shirt - Exalted
 											i(89193),	-- Artisan Member's Shirt - Exalted
 											i(89195),	-- Artisan Officer's Shirt - Exalted
@@ -1342,7 +1342,7 @@ _.Zones =
 									]]--
 									h(ach(6664, {	-- Pandaren Embassy
 										["collectible"] = false,
-										["groups"] = {
+										["g"] = {
 											i(89191),	-- Artisan Initiate's Shirt - Exalted
 											i(89193),	-- Artisan Member's Shirt - Exalted
 											i(89195),	-- Artisan Officer's Shirt - Exalted
@@ -1350,7 +1350,7 @@ _.Zones =
 									})),
 									ach(5201, {	-- Profit Sharing
 										["collectible"] = false,
-										["groups"] = {
+										["g"] = {
 											--a(i(65363)),	-- Guild Herald - Revered - minipet bound to Character
 											h(i(65364)),	-- Guild Herald - Revered - minipet bound to Character
 										},
@@ -1358,7 +1358,7 @@ _.Zones =
 									--[[
 									a(ach(7448, {	-- Scenario Roundup
 										["collectible"] = false,
-										["groups"] = {
+										["g"] = {
 											i(85508),	-- Initiate's Shirt - Honored
 											i(85509),	-- Member's Shirt - Honored
 											i(85510),	-- Officer's Shirt - Honored
@@ -1367,7 +1367,7 @@ _.Zones =
 									]]--
 									h(ach(7449, {	-- Scenario Roundup
 										["collectible"] = false,
-										["groups"] = {
+										["g"] = {
 											i(85508),	-- Initiate's Shirt - Honored
 											i(85509),	-- Member's Shirt - Honored
 											i(85510),	-- Officer's Shirt - Honored
@@ -1375,33 +1375,33 @@ _.Zones =
 									})),
 									ach(5467, {	-- Set the Oven to "Cataclysmic"
 										["collectible"] = false,
-										["groups"] = {
+										["g"] = {
 											i(62799),	-- Recipe: Broiled Dragon Feast
 										},
 									}),
 									ach(5036, {	-- That's a Lot of Bait
 										["collectible"] = false,
-										["groups"] = {
+										["g"] = {
 											i(62800),	-- Recipe: Seafood Magnifique Feast
 										},
 									}),
 									--[[
 									a(ach(5812, {	-- United Nations
 										["collectible"] = false,
-										["groups"] = {
+										["g"] = {
 											i(63138),	-- Dark Phoenix Hatchling - Exalted
 										},
 									})),
 									]]--
 									h(ach(5892, {	-- United Nations
 										["collectible"] = false,
-										["groups"] = {
+										["g"] = {
 											i(63138),	-- Dark Phoenix Hatchling - Exalted
 										},
 									})),
 									ach(6626, {	-- Working Better as a Team
 										["collectible"] = false,
-										["groups"] = {
+										["g"] = {
 											i(127011),	-- Pristine Lightforged Legplates - Honored
 											i(122252),	-- Tarnished Leggings of Destruction - Honored
 											i(122251),	-- Polished Legplates of Valor - Honored
@@ -1438,7 +1438,7 @@ _.Zones =
 					n(46555, {	-- Gunra <Justice Quartermaster>
 						["races"] = HORDE_ONLY,
 						["coord"] = { 48.4, 71.6, 85 },
-						["groups"] = {
+						["g"] = {
 							i(71523),	-- Immolation Handguards
 							i(71608),	-- Shoulderguards of the Molten Giant
 							i(71477),	-- Elementium Deathplate Gauntlets
@@ -1653,14 +1653,14 @@ _.Zones =
 					n(3316, {	-- Handor <Cloth & Leather Armor Merchant>
 						["coord"] = { 60.8, 54.0, 85 },
 						["races"] = HORDE_ONLY,
-						["groups"] = {
+						["g"] = {
 							i(12256),	-- Cindercloth Leggings
 						},
 					}),
 					n(46556, {	-- Jamus'Vaz <Valor Quartermaster>
 						["coord"] = { 48.6, 71.4, 85 },
 						["races"] = HORDE_ONLY,
-						["groups"] = {
+						["g"] = {
 							i(78704),	-- Spiritwalker's Legguards
 							i(78666),	-- Spiritwalker's Gloves
 							i(78658),	-- Colossal Dragonplate Chestguard
@@ -2012,7 +2012,7 @@ _.Zones =
 					n(3322, { 	-- Kaja <Bow & Rifle Vendor>
 					    ["coord"] = { 40.8, 49.6, 85 },
 						["races"] = HORDE_ONLY,
-						["groups"] = {
+						["g"] = {
 							i(11307),	-- Massive Longbow
 							i(11306),	-- Sturdy Recurve
 							i(11303),	-- Fine Shortbow
@@ -2021,7 +2021,7 @@ _.Zones =
 					n(48510, {	-- Kall Worthaton <Trike Dealer>
 					    ["coord"] = { 36.2, 86.6, 85 },
 						["races"] = HORDE_ONLY,
-						["groups"] = {
+						["g"] = {
 							i(62462),	-- Goblin Turbo-Trike Key Mount
 							i(62461),	-- Goblin Trike Key Mount
 						},
@@ -2029,7 +2029,7 @@ _.Zones =
 					n(45551, {	-- Karizi Porkpatty <Cooking Supplies>
 					    ["coord"] = { 39.0, 85.6, 85 },
 						["races"] = HORDE_ONLY,
-						["groups"] = {
+						["g"] = {
 							i(21219),	-- Recipe: Sagefish Delight
 							i(21099),	-- Recipe: Smoked Sagefish
 						},
@@ -2037,7 +2037,7 @@ _.Zones =
 					n(3346, {	-- Kithas <Enchanting Supplies>
 						["coord"] = { 53.2, 48.8, 85 },
 						["races"] = HORDE_ONLY,
-						["groups"] = {
+						["g"] = {
 							i(6349),	-- Formula: Enchant 2H Weapon - Lesser Intellect
 							i(6346),	-- Formula: Enchant Chest - Lesser Mana
 							i(20753),	-- Formula: Lesser Wizard Oil
@@ -2068,7 +2068,7 @@ _.Zones =
 					n(3348, {	-- Kor'geld <Alchemy Supplies>
 					    ["coord"] = { 55.6, 45.4, 85 },
 						["races"] = HORDE_ONLY,
-						["groups"] = {
+						["g"] = {
 							i(13478),	-- Recipe: Elixir of Superior Defense
 							i(5642),	-- Recipe: Free Action Potion
 						},
@@ -2076,7 +2076,7 @@ _.Zones =
 					n(34043, {	-- Lady Palanseer (removed in 4.0.3a)
 						["u"] = 43,
 						["races"] = HORDE_ONLY,
-						["groups"] = {
+						["g"] = {
 							i(41563),	-- Design: Willful Huge Citrine
 							i(41564),	-- Design: Empowered Huge Citrine
 							i(41565),	-- Design: Lucent Huge Citrine
@@ -2170,7 +2170,7 @@ _.Zones =
 					n(133239, {	-- Leyweaver Aurielle
 					    ["coord"] = { 38.2, 86.8, 85 },
 						["races"] = HORDE_ONLY,
-						["groups"] = {
+						["g"] = {
 							i(6270),	-- Pattern: Blue Linen Vest
 							i(6274),	-- Pattern: Blue Overalls
 							i(10314),	-- Pattern: Lavender Mageweave Shirt
@@ -2181,7 +2181,7 @@ _.Zones =
 					n(45558, {	-- Lizna Goldweaver <Tailoring Supplies>
                         ["coord"] = { 41.0, 79.8, 85 },
 						["races"] = HORDE_ONLY,
-						["groups"] = {
+						["g"] = {
 							i(54440, {	-- Dreamcloth
 								i(54601),	-- Pattern: Belt of the Depths
 								i(54602),	-- Pattern: Dreamless Belt
@@ -2210,7 +2210,7 @@ _.Zones =
 					n(50482, {	-- Marith Lazuria <Jewelcrafting Supplies>
 						["coord"] = { 72.4, 34.6, 85 },
 						["races"] = HORDE_ONLY,
-						["groups"] = {
+						["g"] = {
 							currency(361, {	-- Illustrious Jewelcrafter's Token
 								i(52409),	-- Design: Accurate Demonseye
 								i(52419),	-- Design: Adept Ember Topaz
@@ -2306,14 +2306,14 @@ _.Zones =
 					n(46716, {	-- Nerog <Inscription Trainer>
 						["coord"] = { 55.2, 55.8, 85 },
 						["races"] = HORDE_ONLY,
-						["groups"] = {
+						["g"] = {
 							i(140565),	-- Technique: Songs of the Horde
 						},
 					}),
 					n(3362, { 	-- Ogunaro Wolfrunner <Kennel Master>
 					["coord"] = { 61.6, 35.6, 85 },
 						["races"] = HORDE_ONLY,
-						["groups"] = {
+						["g"] = {
 							i(18796),	-- Horn of the Swift Brown Wolf
 							i(18797),	-- Horn of the Swift Timber Wolf
 							i(18798),	-- Horn of the Swift Grey Wolf
@@ -2326,16 +2326,16 @@ _.Zones =
 					n(3317, {	-- Ollanus <Cloth Armor Merchant>
 					["coord"] = { 60.6, 58.6, 85 },
 						["races"] = HORDE_ONLY,
-						["groups"] = {
+						["g"] = {
 							i(3428),	-- Common Gray Shirt
 							i(16059),	-- Common Brown Shirt
 							i(16060),	-- Common White Shirt
 						},
 					}),
 					n(46359, {	-- Punra <Blacksmithing Supplies>
-					["coord"] = { 45.0, 77.6, 85 },
+						["coord"] = { 45.0, 77.6, 85 },
 						["races"] = HORDE_ONLY,
-						["groups"] = {
+						["g"] = {
 							i(12162),	-- Plans: Hardened Iron Shortsword
 							i(52186, {	-- Elementium Bar
 								i(66107),	-- Plans: Elementium Girdle of Pain
@@ -2380,10 +2380,10 @@ _.Zones =
 						},
 					}),
 					n(12796, {	-- Raider Bork <War Mount Quartermaster>
-					["coord"] = { 41.8, 72.6, 85 },
+						["coord"] = { 41.8, 72.6, 85 },
 						["itemID"] = 137642,	-- Mark of Honor
 						["races"] = HORDE_ONLY,
-						["groups"] = {
+						["g"] = {
 							i(29466),	-- Black War Kodo
 							i(29469),	-- Horn of the Black War Wolf
 							i(29470),	-- Red Skeletal Warhorse
@@ -2406,7 +2406,7 @@ _.Zones =
 					    ["coord"] = { 37.8, 71.6, 85 },
 						["itemID"] = 137642,	-- Mark of Honor
 						["races"] = HORDE_ONLY,
-						["groups"] = {
+						["g"] = {
 							i(64782),	-- Bloodthirsty Gladiator's Links of Cruelty
 							i(64681),	-- Bloodthirsty Gladiator's Armbands of Meditation
 							i(64683),	-- Bloodthirsty Gladiator's Armplates of Alacrity
@@ -2544,7 +2544,7 @@ _.Zones =
 					n(58155, {	-- Rugok <Legacy Justice Quartermaster>
 					    ["coord"] = { 48.2, 71.6, 85 },
 						["races"] = HORDE_ONLY,
-						["groups"] = {
+						["g"] = {
 							i(65226),	-- Reinforced Sapphirium Faceguard
 							i(65202),	-- Stormrider's Vestment
 							i(65272),	-- Earthen Legguards
@@ -2816,7 +2816,7 @@ _.Zones =
 					    ["coord"] = { 38.8, 70.0, 85 },
 						["itemID"] = 137642,	-- Mark of Honor
 						["races"] = HORDE_ONLY,
-						["groups"] = {
+						["g"] = {
 							i(146639),	-- Arsenal: Cataclysmic Gladiator's Weapons
 							i(73562),	-- Cataclysmic Gladiator's Bracers of Prowess
 							i(73552),	-- Cataclysmic Gladiator's Warboots of Alacrity
@@ -3007,7 +3007,7 @@ _.Zones =
 					n(3333, {	-- Shankys <Fishing Supplies>
 					    ["coord"] = { 66.6, 41.6, 85 },
 						["races"] = HORDE_ONLY,
-						["groups"] = {
+						["g"] = {
 							i(17062),	-- Recipe: Mithril Head Trout
 							i(6368),	-- Recipe: Rainbow Fin Albacore
 							i(6369),	-- Recipe: Rockscale Cod
@@ -3016,7 +3016,7 @@ _.Zones =
 					n(49737, {	-- Shazdar <Sous Chef>
 					    ["coord"] = { 56.8, 62.6, 85 },
 						["races"] = HORDE_ONLY,
-						["groups"] = {
+						["g"] = {
 							currency(81, {	-- Epicurean's Award
 								i(65426),	-- Recipe: Baked Rockfish
 								i(65427),	-- Recipe: Basilisk Liverdog
@@ -3051,9 +3051,9 @@ _.Zones =
 						},
 					}),
 					n(3413, {	-- Sovik
-						["coords"] = { 56.7, 56.4, 85 },
+						["coord"] = { 56.0, 56.0, 85 },
 						["races"] = HORDE_ONLY,
-						["groups"] = {
+						["g"] = {
 							i(18647),	-- Schematic: Red Firework
 							i(22729),	-- Steam Tonk Controller
 						},
@@ -3061,7 +3061,7 @@ _.Zones =
 					n(50488, {	-- Stone Guard Nargol <Orgrimmar Quartermaster>
 						["coord"] = { 50.4, 58.4, 85 },
 						["races"] = HORDE_ONLY,
-						["groups"] = {
+						["g"] = {
 							i(45581),	-- Orgrimmar Tabard
 							i(64908),	-- Shroud of Orgrimmar
 							i(64909),	-- Cape of Orgrimmar
@@ -3073,7 +3073,7 @@ _.Zones =
 						["itemID"] = 137642,	-- Mark of Honor
 						["coord"] = { 38.6, 72.8, 85 },
 						["races"] = HORDE_ONLY,
-						["groups"] = {
+						["g"] = {
 							i(16345),	-- High Warlord's Blade
 							i(18826),	-- High Warlord's Shield Wall
 							i(18828),	-- High Warlord's Cleaver
@@ -3098,17 +3098,17 @@ _.Zones =
 						},
 					}),
 					n(46708, {	-- Suja <Cooking Supplies>
-					["coord"] = { 56.6, 61.2, 85 },
+						["coord"] = { 56.6, 61.2, 85 },
 						["races"] = HORDE_ONLY,
-						["groups"] = {
+						["g"] = {
 							i(21219),	-- Recipe: Sagefish Delight
 							i(21099),	-- Recipe: Smoked Sagefish
 						},
 					}),
 					n(3356, {	-- Sumi <Blacksmithing Supplies>
-					["coord"] = { 75.8, 35.2, 85 },
+						["coord"] = { 75.8, 35.2, 85 },
 						["races"] = HORDE_ONLY,
-						["groups"] = {
+						["g"] = {
 							i(12162),	-- Plans: Hardened Iron Shortsword
 							i(52186, {	-- Elementium Bar
 								i(66107),	-- Plans: Elementium Girdle of Pain
@@ -3155,7 +3155,7 @@ _.Zones =
 					n(3366, {	-- Tamar <Leatherworking Supplies>
 						["coord"] = { 60.6, 54.4, 85 },
 						["races"] = HORDE_ONLY,
-						["groups"] = {
+						["g"] = {
 							i(67095),	-- Pattern: Assassin's Chestplate
 							i(67070),	-- Pattern: Belt of Nefarious Whispers
 							i(67084),	-- Pattern: Charscale Leg Armor
@@ -3207,7 +3207,7 @@ _.Zones =
 					n(57922, {	-- Taryssa Lazuria <Jewelcrafting Supplies>
 						["coord"] = { 72.4, 34.6, 85 },
 						["races"] = HORDE_ONLY,
-						["groups"] = {
+						["g"] = {
 							currency(361, {	-- Illustrious Jewelcrafter's Token
 								i(71928),	-- Design: Accurate Shadow Spinel
 								i(71917),	-- Design: Adept Lava Coral
@@ -3282,7 +3282,7 @@ _.Zones =
 					n(133127, {	-- Thaluriel <Engineering Supplies>
 						["coord"] = { 36.8, 84.6, 85 },
 						["races"] = HORDE_ONLY,
-						["groups"] = {
+						["g"] = {
 							i(18647),	-- Schematic: Red Firework
 							i(22729),	-- Schematic: Steam Tonk Controller
 						},
@@ -3290,14 +3290,14 @@ _.Zones =
 					n(3315, {	-- Tor'phan <Cloth & Leather Armor Merchant>
 						["coord"] = { 60.8, 59.6, 85 },
 						["races"] = HORDE_ONLY,
-						["groups"] = {
+						["g"] = {
 							i(12255),	-- Pale Leggings
 						},
 					}),
 					n(66022, {	-- Turtlemaster Odai <Dragon Turtle Breeder>
-					["coord"] = { 69.8, 41.0, 85 },
+						["coord"] = { 69.8, 41.0, 85 },
 						["races"] = HORDE_ONLY,
-						["groups"] = {
+						["g"] = {
 							i(91008, { 	-- Black Dragon Turtle (Panda)
 								["races"] = { 25, 26 },
 							}),			
@@ -3352,16 +3352,16 @@ _.Zones =
 					n(45546, {	-- Vizna Bangwrench <Engineering Supplies>
 						["coord"] = { 36.6, 86.8, 85 },
 						["races"] = HORDE_ONLY,
-						["groups"] = {
+						["g"] = {
 							i(18647),	-- Schematic: Red Firework
 							i(22729),	-- Schematic: Steam Tonk Controller
 						},
 					}),
 					n(8404, {	-- Xan'tish <Snake Vendor>
-                    ["description"] = "This npc walks around in a circle in the Valley of Spirits.",
-					["coord"] = { 34.0, 67.6, 85 },
+						["description"] = "This NPC walks around in a circle in the Valley of Spirits.",
+						["coord"] = { 34.0, 67.6, 85 },
 						["races"] = HORDE_ONLY,
-						["groups"] = {
+						["g"] = {
 							i(10360),	-- Black Kingsnake
 							i(10361),	-- Brown Snake
 							i(10392),	-- Crimson Snake
@@ -3370,7 +3370,7 @@ _.Zones =
 					n(3400, {	-- Xen'to <Cooking Supplies>
 						["races"] = HORDE_ONLY,
 						["coord"] = { 32.6, 68.6, 85 },
-						["groups"] = {
+						["g"] = {
 							i(21219),	-- Recipe: Sagefish Delight
 							i(21099),	-- Recipe: Smoked Sagefish
 						},
@@ -3378,7 +3378,7 @@ _.Zones =
 					n(45549, {	-- Zido Helmbreaker <Blacksmithing Supplies>
 					    ["coord"] = { 36.2, 83.2, 85 },
 						["races"] = HORDE_ONLY,
-						["groups"] = {
+						["g"] = {
 							i(12162),	-- Plans: Hardened Iron Shortsword
 							i(52186, {	-- Elementium Bar
 								i(66107),	-- Plans: Elementium Girdle of Pain
