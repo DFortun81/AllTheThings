@@ -404,7 +404,72 @@ _.Zones =
 										-- Trinket
 									}),					
 								},
-							},								
+							},	
+                            {	-- Shattered Hand Lockbox
+								["objectID"] = 234456,	-- Shattered Hand Lockbox
+								["questID"] = 36361,
+								["coords"] = {
+									{ 47.9, 30.7, 542 },
+								},
+								["g"] = {
+									i(116920, {	-- True Steel Lockbox
+										-- Weapons
+										i(116721),	-- Ancestral Branch
+										i(116619),	-- Ancestral Scepter
+										i(116626),	-- Ancestral Wand
+										i(116613),	-- Gorian Crossbow
+										i(116614),	-- Gorian Dagger
+										i(116625),	-- Gorian Greatsword
+										i(116617),	-- Gorian Gun
+										i(116620),	-- Gorian Hammer
+										i(116618),	-- Gorian Mace
+										i(116621),	-- Gorian Spear
+										i(116622),	-- Gorian Staff
+										i(116627),	-- Howling Axe
+										i(116634),	-- Howling Gun
+										i(116633),	-- Howling Knuckles
+										i(116640),	-- Howling Staff
+										i(116632),	-- Oshu'gun Spellblade
+										i(116643),	-- Oshu'gun Wand
+										-- Head
+										i(106690),	-- Ironfist Helm
+										i(106723),	-- Stonecrag Helm
+										-- Neck
+										-- Shoulders
+										i(106692),	-- Ironfist Pauldrons
+										i(106735),	-- Meadowstomper Shoulders
+										i(106702),	-- Sabermaw Shoulders
+										-- Back
+										-- Chest
+										i(106687),	-- Ironfist Breastplate
+										i(106701),	-- Sabermaw Jerkin
+										i(106720),	-- Stonecrag Breastplate
+										i(106708),	-- Voidwrap Robe
+										-- Wrist
+										i(106729),	-- Meadowstomper Bindings
+										i(106713),	-- Sunspring Bracers							
+										i(106711),	-- Voidwrap Wristwraps
+										-- Hands
+										i(106747),	-- Packrunner Gauntlets
+										i(106699),	-- Sabermaw Gloves
+										i(106714),	-- Sunspring Gauntlets
+										i(106706),	-- Voidwrap Handwraps
+										-- Waist
+										i(106722),	-- Stonecrag Girdle
+										i(106712),	-- Sunspring Belt
+										i(106704),	-- Voidwrap Cord
+										-- Legs
+										i(106740),	-- Dark Star Leggings
+										i(106691),	-- Ironfist Legplates
+										i(106717),	-- Sunspring Legguards
+										-- Feet
+										i(106697),	-- Sabermaw Boots
+										i(106726),	-- Stonecrag Sabatons
+										-- Finger
+										-- Trinket
+									}),				
+								},
+							},							
 							{	-- Waterlogged Satchel
 								["objectID"] = 235307,	-- Waterlogged Satchel
 								["questID"] = 36455,
