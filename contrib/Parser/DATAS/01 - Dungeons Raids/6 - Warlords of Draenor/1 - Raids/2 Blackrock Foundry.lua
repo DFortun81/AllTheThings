@@ -1775,82 +1775,74 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 							}),
 						})),							
 					}),
-					{
-						["itemID"] = 120284,	-- Essence of the Iron Protector
-						["ignoreBonus"] = true,
-						["groups"] = {
-							a({
-								["questID"] = 37562,	-- Essence of the Iron Protector
-								["repeatable"] = true,
-								["ignoreBonus"] = true,
-								["groups"] = {
-									{
-										["itemID"] = 120255,	-- Helm of the Iron Protector
-										["ignoreBonus"] = true,
-										["sym"] = {{"select", "itemID", 119321}, {"where", "modID", 6 },{"pop"}},
-									},
-									{
-										["itemID"] = 120256,	-- Shoulders of the Iron Protector
-										["ignoreBonus"] = true,
-										["sym"] = {{"select", "itemID", 119322}, {"where", "modID", 6 },{"pop"}},
-									},
-									{
-										["itemID"] = 120252,	-- Chest of the Iron Protector
-										["ignoreBonus"] = true,
-										["sym"] = {{"select", "itemID", 119318}, {"where", "modID", 6 },{"pop"}},
-									},
-									{
-										["itemID"] = 120253,	-- Gauntlets of the Iron Protector
-										["ignoreBonus"] = true,
-										["sym"] = {{"select", "itemID", 119319}, {"where", "modID", 6 },{"pop"}},
-									},
-									{
-										["itemID"] = 120254,	-- Leggings of the Iron Protector
-										["ignoreBonus"] = true,
-										["sym"] = {{"select", "itemID", 119320}, {"where", "modID", 6 },{"pop"}},
-									},
-								},
+                    i(120284, {	-- Essence of the Iron Protector
+						qr( qa(37562, { -- Essence of the Iron Protector
+							i(120255, { -- Helm of the Iron Protector
+						    i(115584),	-- Blackhand's Faceguard
+						    i(115556),	-- Helm of the Somber Gaze
+						    i(115545),	-- Rylakstalker's Headguard
+						    i(115579),	-- Windspeaker's Faceguard
 							}),
-						},
-					},
-					{
-						["itemID"] = 120210,	-- Essence of the Iron Protector
-						["ignoreBonus"] = true,
-						["groups"] = {
-							h({
-								["questID"] = 37548,	-- Essence of the Iron Protector
-								["repeatable"] = true,
-								["ignoreBonus"] = true,
-								["groups"] = {
-									{
-										["itemID"] = 120255,	-- Helm of the Iron Protector
-										["ignoreBonus"] = true,
-										["sym"] = {{"select", "itemID", 119321}, {"where", "modID", 6 },{"pop"}},
-									},
-									{
-										["itemID"] = 120256,	-- Shoulders of the Iron Protector
-										["ignoreBonus"] = true,
-										["sym"] = {{"select", "itemID", 119322}, {"where", "modID", 6 },{"pop"}},
-									},
-									{
-										["itemID"] = 120252,	-- Chest of the Iron Protector
-										["ignoreBonus"] = true,
-										["sym"] = {{"select", "itemID", 119318}, {"where", "modID", 6 },{"pop"}},
-									},
-									{
-										["itemID"] = 120253,	-- Gauntlets of the Iron Protector
-										["ignoreBonus"] = true,
-										["sym"] = {{"select", "itemID", 119319}, {"where", "modID", 6 },{"pop"}},
-									},
-									{
-										["itemID"] = 120254,	-- Leggings of the Iron Protector
-										["ignoreBonus"] = true,
-										["sym"] = {{"select", "itemID", 119320}, {"where", "modID", 6 },{"pop"}},
-									},
-								},
+							i(120256, { -- Shoulders of the Iron Protector
+						    i(115581),	-- Blackhand's Shoulderguards
+						    i(115559),	-- Mantle of the Somber Gaze
+						    i(115547),	-- Rylakstalker's Spaulders
+						    i(115576),	-- Windspeaker's Mantle
 							}),
-						},
-					},
+							i(120252, { -- Chest of the Iron Protector
+						    i(115582),	-- Blackhand's Chestguard
+						    i(115548),	-- Rylakstalker's Tunic
+						    i(115558),	-- Vest of the Somber Gaze
+						    i(115577),	-- Windspeaker's Tunic
+							}),
+							i(120253, { -- Gauntlets of the Iron Protector
+						    i(115583),	-- Blackhand's Handguards
+						    i(115555),	-- Handwraps of the Somber Gaze
+						    i(115549),	-- Rylakstalker's Gloves
+						    i(115578),	-- Windspeaker's Handwraps
+							}),
+							i(120254, { -- Leggings of the Iron Protector
+						    i(115580),	-- Blackhand's Legguards
+						    i(115557),	-- Legwraps of the Somber Gaze
+						    i(115546),	-- Rylakstalker's Legguards
+						    i(115575),	-- Windspeaker's Legwraps
+							}),
+						})),								
+					}),
+					i(120210, { -- Essence of the Iron Protector
+						qr( qa(37548, { -- Essence of the Iron Protector
+							i(120248, { -- Helm of the Iron Protector
+						    i(115584),	-- Blackhand's Faceguard
+						    i(115556),	-- Helm of the Somber Gaze
+						    i(115545),	-- Rylakstalker's Headguard
+						    i(115579),	-- Windspeaker's Faceguard			
+							}),								
+							i(120256, { -- Shoulders of the Iron Protector
+						    i(115581),	-- Blackhand's Shoulderguards
+						    i(115559),	-- Mantle of the Somber Gaze
+						    i(115547),	-- Rylakstalker's Spaulders
+						    i(115576),	-- Windspeaker's Mantle				
+							}),		
+							i(120252, { -- Chest of the Iron Protector
+						    i(115582),	-- Blackhand's Chestguard
+						    i(115548),	-- Rylakstalker's Tunic
+						    i(115558),	-- Vest of the Somber Gaze
+						    i(115577),	-- Windspeaker's Tunic			
+							}),		
+							i(120253, { -- Gauntlets of the Iron Protector
+						    i(115583),	-- Blackhand's Handguards
+						    i(115555),	-- Handwraps of the Somber Gaze
+						    i(115549),	-- Rylakstalker's Gloves
+						    i(115578),	-- Windspeaker's Handwraps			
+							}),		
+							i(120254, { -- Leggings of the Iron Protector
+						    i(115580),	-- Blackhand's Legguards
+						    i(115557),	-- Legwraps of the Somber Gaze
+						    i(115546),	-- Rylakstalker's Legguards
+						    i(115575),	-- Windspeaker's Legwraps			
+							}),
+						})),								
+					}),
 					i(120285, { -- Essence of the Iron Vanquisher
 						qr( qa(37561, { -- Essence of the Iron Vanquisher
 							i(120248, { -- Helm of the Iron Vanquisher
