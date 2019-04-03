@@ -29,6 +29,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 					i(67135),	-- Morrie's Waywalker Wrap
 					i(67145),	-- Blockade's Lost Shield
 					i(67129),	-- Signet of High Arcanist Savor
+					i(67130),	-- Dorian's Lost Necklace
 				},
 			}), 
 			n(50056, { -- Garr
@@ -53,6 +54,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 					i(67135),	-- Morrie's Waywalker Wrap
 					i(67132),	-- Grips of the Failed Immortal
 					i(67129),	-- Signet of High Arcanist Savor
+					i(67130),	-- Dorian's Lost Necklace
 				},
 			}), 
 			n(50089, { -- Julak-Doom
@@ -77,6 +79,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 					i(67146),	-- Woundsplicer Handwraps
 					i(67142),	-- Zom's Electrostatic Cloak
 					i(67129),	-- Signet of High Arcanist Savor
+					i(67130),	-- Dorian's Lost Necklace
 				},
 			}), 
 			n(50009, { -- Mobus
@@ -88,6 +91,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 					i(67140),	-- Drape of Inimitable Fate
 					i(67146),	-- Woundsplicer Handwraps
 					i(67148),	-- Kilt of Trollish Dreams
+					i(67130),	-- Dorian's Lost Necklace
 				},
 			}), 
 			n(50061, { -- Xariona
@@ -112,6 +116,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 					i(67145),	-- Blockade's Lost Shield
 					i(67143),	-- Icebone Hauberk
 					i(67129),	-- Signet of High Arcanist Savor
+					i(67130),	-- Dorian's Lost Necklace
 				},
 			}),
 		},

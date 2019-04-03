@@ -9,7 +9,6 @@ _.Craftables =
 				i(65891), -- Vial of the Sands
 			}),
 			i(58488, {	-- Potion of Treasure Finding
-				["description"] = "Drink this potion if you ever go out to farm Cataclysm mobs/quests. Any mob in those zones can drop a Tiny Treasure Chest, due to the demand for the crafting reagents within, this may make your time quite profitable.",
 				["groups"] = {
 					i(67539, {	-- Tiny Treasure Chest
 						i(53010),	-- Embersilk Cloth

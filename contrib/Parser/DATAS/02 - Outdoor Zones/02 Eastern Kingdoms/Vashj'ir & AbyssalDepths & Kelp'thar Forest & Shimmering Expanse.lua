@@ -211,6 +211,7 @@ _.Zones =
 								dr(1.4, i(67133)),	-- Dizze's Whirling Robe
 								dr(1.4, i(67134)),	-- Dory's Finery
 								i(67129),	-- Signet of High Arcanist Savor
+								i(67130),	-- Dorian's Lost Necklace
 							}), 
 							n(50050, {	-- Shok'sharak
 								dr(100, i(67233))	-- Sussurating Treads of Shok'sharak
@@ -1016,6 +1017,7 @@ _.Zones =
 								dr(1.4, i(67133)),	-- Dizze's Whirling Robe
 								dr(1.4, i(67134)),	-- Dory's Finery
 								i(67129),	-- Signet of High Arcanist Savor
+								i(67130),	-- Dorian's Lost Necklace
 							}), 
 							n(50052, {	-- Burgy Blackheart
 								dr(100, i(134022))	-- Burgy Blackheart's Handsome Hat

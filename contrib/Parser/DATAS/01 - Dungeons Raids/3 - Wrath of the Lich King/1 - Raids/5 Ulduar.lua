@@ -1202,142 +1202,152 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(46133),	-- Conqueror's Kirin Tor Leggings
 						i(46126),	-- Conqueror's Terrorblade Legplates
 					}),
-					i( 45479),	-- The Lifebinder
-					i( 45934),	-- Unraveling Reach
-					i( 45935),	-- Ironbark Faceguard
-					i( 45480),	-- Nymph Heart Charm
-					i( 45941),	-- Chestguard of the Lasher
-					i( 45940),	-- Tunic of the Limber Stalker
-					i( 45481),	-- Gauntlets of Ruthless Reprisal
-					i( 45482),	-- Leggings of the Lifetender
-					i( 45936),	-- Legplates of Fluorishing Resolve
-					i( 45483),	-- Boots of the Servant
+					i(45479),	-- The Lifebinder
+					i(45934),	-- Unraveling Reach
+					i(45935),	-- Ironbark Faceguard
+					i(45480),	-- Nymph Heart Charm
+					i(45941),	-- Chestguard of the Lasher
+					i(45940),	-- Tunic of the Limber Stalker
+					i(45481),	-- Gauntlets of Ruthless Reprisal
+					i(45482),	-- Leggings of the Lifetender
+					i(45936),	-- Legplates of Fluorishing Resolve
+					i(45483),	-- Boots of the Servant
+					i(46110, {	-- Alchemist's Cache
+						["requireSkill"] = 171, -- Alchemy
+					}),
 				})),
 				cr(33350, e(1647, {	-- Mimiron
-					{	-- Firefighter
-						["achievementID"] = 12369,	-- Firefighter
-						["g"] = {
-							{	-- Delirium's Touch
-								["itemID"] = 45494,	-- Delirium's Touch
-							},
-							{	-- Fusion Blade
-								["itemID"] = 45990,	-- Fusion Blade
-							},
-							{	-- Starshard Edge
-								["itemID"] = 45620,	-- Starshard Edge
-							},
-							{	-- Crown of Luminescence
-								["itemID"] = 45497,	-- Crown of Luminescence
-							},
-							{	-- Mimiron's Flight Goggles
-								["itemID"] = 45993,	-- Mimiron's Flight Goggles
-							},
-							{	-- Titanskin Cloak
-								["itemID"] = 45496,	-- Titanskin Cloak
-							},
-							{	-- Armbands of Bedlam
-								["itemID"] = 45663,	-- Armbands of Bedlam
-							},
-							{	-- Fused Alloy Legplates
-								["itemID"] = 45982,	-- Fused Alloy Legplates
-							},
-							{	-- Greaves of the Iron Army
-								["itemID"] = 45988,	-- Greaves of the Iron Army
-							},
-							{	-- Tempered Mercury Greaves
-								["itemID"] = 45989,	-- Tempered Mercury Greaves
-							},
-							{	-- Conductive Seal
-								["itemID"] = 45495,	-- Conductive Seal
+					["crs"] = {
+						33432,	-- Leviathan Mk II
+						33651,	-- VX-001
+						33670,	-- Aerial Command Unit
+					},
+					["groups"] = {
+						{	-- Firefighter
+							["achievementID"] = 12369,	-- Firefighter
+							["g"] = {
+								{	-- Delirium's Touch
+									["itemID"] = 45494,	-- Delirium's Touch
+								},
+								{	-- Fusion Blade
+									["itemID"] = 45990,	-- Fusion Blade
+								},
+								{	-- Starshard Edge
+									["itemID"] = 45620,	-- Starshard Edge
+								},
+								{	-- Crown of Luminescence
+									["itemID"] = 45497,	-- Crown of Luminescence
+								},
+								{	-- Mimiron's Flight Goggles
+									["itemID"] = 45993,	-- Mimiron's Flight Goggles
+								},
+								{	-- Titanskin Cloak
+									["itemID"] = 45496,	-- Titanskin Cloak
+								},
+								{	-- Armbands of Bedlam
+									["itemID"] = 45663,	-- Armbands of Bedlam
+								},
+								{	-- Fused Alloy Legplates
+									["itemID"] = 45982,	-- Fused Alloy Legplates
+								},
+								{	-- Greaves of the Iron Army
+									["itemID"] = 45988,	-- Greaves of the Iron Army
+								},
+								{	-- Tempered Mercury Greaves
+									["itemID"] = 45989,	-- Tempered Mercury Greaves
+								},
+								{	-- Conductive Seal
+									["itemID"] = 45495,	-- Conductive Seal
+								},
 							},
 						},
-					},
-					{	-- The Keepers of Ulduar: Mimiron
-						["achievementID"] = 12309,	-- The Keepers of Ulduar
-						["criteriaID"] = 4,		-- Mimiron
-					},
-					{	-- Not-So-Friendly Fire
-						["achievementID"] = 12368,	-- Not-So-Friendly Fire
-					},
-					{	-- Set Up Us the Bomb
-						["achievementID"] = 12367,	-- Set Up Us the Bomb
-						["g"] = {
-							{	-- A Proximity Mine
-								["achievementID"] = 12367,	-- Set Up Us the Bomb
-								["criteriaID"] = 1,		-- A Proximity Mine
-							},
-							{	-- A Rocket Strike
-								["achievementID"] = 12367,	-- Set Up Us the Bomb
-								["criteriaID"] = 2,		-- A Rocket Strike
-							},
-							{	-- A Bomb Bot
-								["achievementID"] = 12367,	-- Set Up Us the Bomb
-								["criteriaID"] = 3,		-- A Bomb Bot
+						{	-- The Keepers of Ulduar: Mimiron
+							["achievementID"] = 12309,	-- The Keepers of Ulduar
+							["criteriaID"] = 4,		-- Mimiron
+						},
+						{	-- Not-So-Friendly Fire
+							["achievementID"] = 12368,	-- Not-So-Friendly Fire
+						},
+						{	-- Set Up Us the Bomb
+							["achievementID"] = 12367,	-- Set Up Us the Bomb
+							["g"] = {
+								{	-- A Proximity Mine
+									["achievementID"] = 12367,	-- Set Up Us the Bomb
+									["criteriaID"] = 1,		-- A Proximity Mine
+								},
+								{	-- A Rocket Strike
+									["achievementID"] = 12367,	-- Set Up Us the Bomb
+									["criteriaID"] = 2,		-- A Rocket Strike
+								},
+								{	-- A Bomb Bot
+									["achievementID"] = 12367,	-- Set Up Us the Bomb
+									["criteriaID"] = 3,		-- A Bomb Bot
+								},
 							},
 						},
+						i( 45641, {	-- Gauntlets of the Wayward Conqueror
+							i(46163),	-- 
+							i(46188),	-- 
+							i(46135),	-- 
+							i(46174),	-- 
+							i(46179),	-- 
+							i(46155),	-- 
+						}),
+						i( 45642, {	-- Gauntlets of the Wayward Protector
+							i(46199),	-- 
+							i(46200),	-- 
+							i(46207),	-- 
+							i(46164),	-- 
+							i(46148),	-- 
+							i(46142),	-- 
+						}),
+						i( 45643, {	-- Gauntlets of the Wayward Vanquisher
+							i(46124),	-- 
+							i(46183),	-- 
+							i(46158),	-- 
+							i(46189),	-- 
+							i(46132),	-- 
+							i(46119),	-- 
+							i(46113),	-- 
+						}),
+						i( 45647, {	-- Helm of the Wayward Conqueror
+							i(45417),	-- 
+							i(45386),	-- 
+							i(45391),	-- 
+							i(45377),	-- 
+							i(45372),	-- 
+							i(45382),	-- 
+						}),
+						i( 45648, {	-- Helm of the Wayward Protector
+							i(45408),	-- 
+							i(45402),	-- 
+							i(45412),	-- 
+							i(45431),	-- 
+							i(45425),	-- 
+							i(45361),	-- 
+						}),
+						i( 45649, {	-- Helm of the Wayward Vanquisher
+							i(45398),	-- 
+							i(45346),	-- 
+							i(45356),	-- 
+							i(46313),	-- 
+							i(45365),	-- 
+							i(45342),	-- 
+							i(45336),	-- 
+						}),
+						i(138800),	-- Illusion: Blade Ward
+						i(142092),	-- Overcomplicated Controller (PET!)
+						i( 45489),	-- Insanity's Grip
+						i( 45972),	-- Pulse Baton
+						i( 45492),	-- Malleable Steelweave Mantle
+						i( 45974),	-- Shoulderguards of Assimilation
+						i( 45493),	-- Asimov's Drape
+						i( 45973),	-- Stylish Power Cape
+						i( 45976),	-- Static Charge Handwraps
+						i( 45975),	-- Cable of the Metrognome
+						i( 45491),	-- Waistguard of the Creator
+						i( 45490),	-- Pandora's Plea
 					},
-					i( 45641, {	-- Gauntlets of the Wayward Conqueror
-						i(46163),	-- 
-						i(46188),	-- 
-						i(46135),	-- 
-						i(46174),	-- 
-						i(46179),	-- 
-						i(46155),	-- 
-					}),
-					i( 45642, {	-- Gauntlets of the Wayward Protector
-						i(46199),	-- 
-						i(46200),	-- 
-						i(46207),	-- 
-						i(46164),	-- 
-						i(46148),	-- 
-						i(46142),	-- 
-					}),
-					i( 45643, {	-- Gauntlets of the Wayward Vanquisher
-						i(46124),	-- 
-						i(46183),	-- 
-						i(46158),	-- 
-						i(46189),	-- 
-						i(46132),	-- 
-						i(46119),	-- 
-						i(46113),	-- 
-					}),
-					i( 45647, {	-- Helm of the Wayward Conqueror
-						i(45417),	-- 
-						i(45386),	-- 
-						i(45391),	-- 
-						i(45377),	-- 
-						i(45372),	-- 
-						i(45382),	-- 
-					}),
-					i( 45648, {	-- Helm of the Wayward Protector
-						i(45408),	-- 
-						i(45402),	-- 
-						i(45412),	-- 
-						i(45431),	-- 
-						i(45425),	-- 
-						i(45361),	-- 
-					}),
-					i( 45649, {	-- Helm of the Wayward Vanquisher
-						i(45398),	-- 
-						i(45346),	-- 
-						i(45356),	-- 
-						i(46313),	-- 
-						i(45365),	-- 
-						i(45342),	-- 
-						i(45336),	-- 
-					}),
-					i(138800),	-- Illusion: Blade Ward
-					i(142092),	-- Overcomplicated Controller (PET!)
-					i( 45489),	-- Insanity's Grip
-					i( 45972),	-- Pulse Baton
-					i( 45492),	-- Malleable Steelweave Mantle
-					i( 45974),	-- Shoulderguards of Assimilation
-					i( 45493),	-- Asimov's Drape
-					i( 45973),	-- Stylish Power Cape
-					i( 45976),	-- Static Charge Handwraps
-					i( 45975),	-- Cable of the Metrognome
-					i( 45491),	-- Waistguard of the Creator
-					i( 45490),	-- Pandora's Plea
 				})),
 				cr(33271, e(1648, {	-- General Vezax
 					{	-- The Descent into Madness: General Vezax
@@ -1922,52 +1932,59 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(156200),	-- Boots of the Servant
 					})),
 					cr(33350, e(1647, {	-- Mimiron
-						i(138800),	-- Illusion: Blade Ward
-						i(142092),	-- Overcomplicated Controller
-						i(156211),	-- Delirium's Touch
-						i(156329),	-- Fusion Blade
-						i(156206),	-- Insanity's Grip
-						i(156321),	-- Pulse Baton
-						i(156614),	-- Starshard Edge
-						i(156214),	-- Crown of Luminescence
-						i(156330),	-- Mimiron's Flight Goggles
-						i(156106),	-- Valorous Aegis Faceguard
-						i(156115),	-- Valorous Cowl of Sanctification
-						i(156062),	-- Valorous Darkruned Helmet
-						i(156140),	-- Valorous Deathbringer Hood
-						i(156495),	-- Valorous Glaivedancer Helmet
-						i(156090),	-- Valorous Kirin Tor Hood
-						i(156459),	-- Valorous Nightsong Cover
-						i(156086),	-- Valorous Scourgestalker Headpiece
-						i(156148),	-- Valorous Siegebreaker Greathelm
-						i(156505),	-- Valorous Steelfist Helmet
-						i(156122),	-- Valorous Terrorblade Helmet
-						i(156131),	-- Valorous Worldbreaker Helm
-						i(156209),	-- Malleable Steelweave Mantle
-						i(156323),	-- Shoulderguards of Assimilation
-						i(156210),	-- Asimov's Drape
-						i(156322),	-- Stylish Power Cape
-						i(156213),	-- Titanskin Cloak
-						i(156258),	-- Armbands of Bedlam
-						i(156419),	-- Conqueror's Aegis Handguards
-						i(156368),	-- Conqueror's Darkruned Handguards
-						i(156383),	-- Conqueror's Deathbringer Gloves
-						i(156489),	-- Conqueror's Glaivedancer Gauntlets
-						i(156409),	-- Conqueror's Handwraps of Sanctification
-						i(156380),	-- Conqueror's Kirin Tor Gauntlets
-						i(156434),	-- Conqueror's Nightsong Gloves
-						i(156389),	-- Conqueror's Scourgestalker Handguards
-						i(156410),	-- Conqueror's Siegebreaker Handguards
-						i(156499),	-- Conqueror's Steelfist Gauntlets
-						i(156373),	-- Conqueror's Terrorblade Gauntlets
-						i(156452),	-- Conqueror's Worldbreaker Gloves
-						i(156325),	-- Static Charge Handwraps
-						i(156324),	-- Cable of the Metrognome
-						i(156208),	-- Waistguard of the Creator
-						i(156326),	-- Fused Alloy Legplates
-						i(156327),	-- Greaves of the Iron Army
-						i(156328),	-- Tempered Mercury Greaves
-						i(156207),	-- Pandora's Plea
+						["crs"] = {
+							33432,	-- Leviathan Mk II
+							33651,	-- VX-001
+							33670,	-- Aerial Command Unit
+						},
+						["groups"] = {
+							i(138800),	-- Illusion: Blade Ward
+							i(142092),	-- Overcomplicated Controller
+							i(156211),	-- Delirium's Touch
+							i(156329),	-- Fusion Blade
+							i(156206),	-- Insanity's Grip
+							i(156321),	-- Pulse Baton
+							i(156614),	-- Starshard Edge
+							i(156214),	-- Crown of Luminescence
+							i(156330),	-- Mimiron's Flight Goggles
+							i(156106),	-- Valorous Aegis Faceguard
+							i(156115),	-- Valorous Cowl of Sanctification
+							i(156062),	-- Valorous Darkruned Helmet
+							i(156140),	-- Valorous Deathbringer Hood
+							i(156495),	-- Valorous Glaivedancer Helmet
+							i(156090),	-- Valorous Kirin Tor Hood
+							i(156459),	-- Valorous Nightsong Cover
+							i(156086),	-- Valorous Scourgestalker Headpiece
+							i(156148),	-- Valorous Siegebreaker Greathelm
+							i(156505),	-- Valorous Steelfist Helmet
+							i(156122),	-- Valorous Terrorblade Helmet
+							i(156131),	-- Valorous Worldbreaker Helm
+							i(156209),	-- Malleable Steelweave Mantle
+							i(156323),	-- Shoulderguards of Assimilation
+							i(156210),	-- Asimov's Drape
+							i(156322),	-- Stylish Power Cape
+							i(156213),	-- Titanskin Cloak
+							i(156258),	-- Armbands of Bedlam
+							i(156419),	-- Conqueror's Aegis Handguards
+							i(156368),	-- Conqueror's Darkruned Handguards
+							i(156383),	-- Conqueror's Deathbringer Gloves
+							i(156489),	-- Conqueror's Glaivedancer Gauntlets
+							i(156409),	-- Conqueror's Handwraps of Sanctification
+							i(156380),	-- Conqueror's Kirin Tor Gauntlets
+							i(156434),	-- Conqueror's Nightsong Gloves
+							i(156389),	-- Conqueror's Scourgestalker Handguards
+							i(156410),	-- Conqueror's Siegebreaker Handguards
+							i(156499),	-- Conqueror's Steelfist Gauntlets
+							i(156373),	-- Conqueror's Terrorblade Gauntlets
+							i(156452),	-- Conqueror's Worldbreaker Gloves
+							i(156325),	-- Static Charge Handwraps
+							i(156324),	-- Cable of the Metrognome
+							i(156208),	-- Waistguard of the Creator
+							i(156326),	-- Fused Alloy Legplates
+							i(156327),	-- Greaves of the Iron Army
+							i(156328),	-- Tempered Mercury Greaves
+							i(156207),	-- Pandora's Plea
+						},
 					})),
 					cr(33271, e(1648, {	-- General Vezax
 						i(156331),	-- Hoperender
