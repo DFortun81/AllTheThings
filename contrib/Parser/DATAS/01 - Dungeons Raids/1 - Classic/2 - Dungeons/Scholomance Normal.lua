@@ -116,7 +116,7 @@ _.Instances = { tier(1, {	-- Classic
 						})),
 						un(40, q(7668, { 	-- The Darkreaver Menace
 							["classes"] = { 7 },
-							["races"] = { 6 },
+							["races"] = HORDE_ONLY,
 							["groups"] = {
 								un(32, i(18807)), 	-- Helm of Latent Power (1.4 till 1.7 only)
 								un(2, i(20134)), 	-- Skyfury Helm

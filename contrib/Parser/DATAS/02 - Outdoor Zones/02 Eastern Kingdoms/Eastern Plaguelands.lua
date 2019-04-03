@@ -884,8 +884,48 @@ _.Zones =
 						dr(01.0, i(9960)),	-- Warmonger's Gauntlets
 					}),
 					n(50813, { 	-- Fene-mal
-						dr(82.0, i(9878)),	-- Sorcerer Hat
-						dr(01.0, i(9897)),	-- Jazeraint Chestguard
+						i(9927),	-- Brigade Bracers
+						i(9932),	-- Brigade Circlet
+						i(9931),	-- Brigade Girdle
+						i(7533),	-- Cabalist Cloak
+						i(7490),	-- Captain's Boots
+						i(7493),	-- Captain's Bracers
+						i(7487),	-- Captain's Leggings
+						i(7494),	-- Captain's Waistguard
+						i(8141),	-- Chromite Greaves
+						i(9973),	-- Embossed Plate Boots
+						i(9289),	-- Field Plate Boots
+						i(9287),	-- Field Plate Gauntlets
+						i(9288),	-- Field Plate Girdle
+						i(9285),	-- Field Plate Vambraces
+						i(9887),	-- Huntsman's Armor
+						i(9885),	-- Huntsman's Boots
+						i(9893),	-- Huntsman's Leggings
+						i(9894),	-- Huntsman's Shoulders
+						i(9901),	-- Jazeraint Belt
+						i(9895),	-- Jazeraint Boots
+						i(9897),	-- Jazeraint Chestguard
+						i(9900),	-- Jazeraint Gauntlets
+						i(9902),	-- Jazeraint Helm
+						i(9904),	-- Jazeraint Pauldrons
+						i(7483),	-- Ranger Cloak
+						i(7485),	-- Ranger Cord
+						i(7480),	-- Ranger Gloves
+						i(7484),	-- Ranger Wristguards
+						i(7472),	-- Regal Boots
+						i(7475),	-- Regal Cuffs
+						i(7471),	-- Regal Gloves
+						i(7470),	-- Regal Wizard Hat
+						i(9908),	-- Royal Cape
+						i(9910),	-- Royal Gloves
+						i(9906),	-- Royal Sash
+						i(7439),	-- Sentinel Breastplate
+						i(9874),	-- Sorcerer Drape
+						i(9878),	-- Sorcerer Hat
+						i(9917),	-- Tracker's Boots
+						i(9919),	-- Tracker's Cloak
+						i(7429),	-- Twilight Armor
+						i(7430),	-- Twilight Robe
 					}),
 					n(1843, { 	-- Foreman Jerris
 						dr(43.0, i(7544)),	-- Champion's Cape
@@ -1224,18 +1264,51 @@ _.Zones =
 						dr(01.0, i(9959)),	-- Warmonger's Cloak
 					}),
 					n(50947, { 	-- Varah
-						dr(78.0, i(9925)),	-- Tracker's Wristguards
-						dr(01.9, i(9883)),	-- Sorcerer Pants
-						dr(01.2, i(9887)),	-- Huntsman's Armor
+						i(9927),	-- Brigade Bracers
+						i(9932),	-- Brigade Circlet
+						i(9930),	-- Brigade Gauntlets
+						i(9931),	-- Brigade Girdle
+						i(7534),	-- Cabalist Bracers
+						i(7533),	-- Cabalist Cloak
+						i(7530),	-- Cabalist Gloves
+						i(7490),	-- Captain's Boots
+						i(7487),	-- Captain's Leggings
+						i(9966),	-- Embossed Plate Armor
+						i(9973),	-- Embossed Plate Boots
+						i(9972),	-- Embossed Plate Bracers
+						i(9967),	-- Embossed Plate Gauntlets
+						i(9968),	-- Embossed Plate Girdle
+						i(9969),	-- Embossed Plate Helmet
+						i(9970),	-- Embossed Plate Leggings
+						i(9971),	-- Embossed Plate Pauldrons
+						i(9286),	-- Field Plate Armor
+						i(9290),	-- Field Plate Helmet
+						i(9291),	-- Field Plate Leggings
+						i(9292),	-- Field Plate Pauldrons
+						i(7522),	-- Gossamer Boots
+						i(10094),	-- Gothic Plate Vambraces
+						i(8120),	-- Heraldic Cloak
+						i(9887),	-- Huntsman's Armor
+						i(9893),	-- Huntsman's Leggings
+						i(9903),	-- Jazeraint Leggings
+						i(4046),	-- Mistscape Pants
+						i(7481),	-- Ranger Boots
+						i(7478),	-- Ranger Leggings
+						i(7482),	-- Ranger Shoulders
+						i(7332),	-- Regal Armor
+						i(7471),	-- Regal Gloves
+						i(7470),	-- Regal Wizard Hat
+						i(9907),	-- Royal Boots
+						i(9908),	-- Royal Cape
+						i(9910),	-- Royal Gloves
+						i(9911),	-- Royal Trousers
+						i(9874),	-- Sorcerer Drape
+						i(9883),	-- Sorcerer Pants
+						i(9884),	-- Sorcerer Robe
+						i(9916),	-- Tracker's Belt
+						i(9919),	-- Tracker's Cloak
+						i(9925),	-- Tracker's Wristguards
 						i(10606),	-- Schematic: Parachute Cloak
-					}),
-					n(0, { 		-- Zone Drop
-						["groups"] = {
-							i(61387, { 	-- Hidden Stash
-								dr(35, i(66076)),	-- Mr. Grubbs Pet
-							}),
-						},
-						["description"] = "Before being able to farm for this companion, players must complete a quest chain from Fiona. When asked to choose a buff from the carriage choose Fiona's Lucky Charm. This gives a buff with a blue rabbit's foot while in the zone.",
 					}),
 					n(10823, { 	-- Zul'Brin Warpbranch
 						dr(36.0, i(10089)),	-- Gothic Sabatons
@@ -1261,6 +1334,14 @@ _.Zones =
 						dr(01.0, i(9292)),	-- Field Plate Pauldrons
 						dr(01.0, i(9916)),	-- Tracker's Belt
 					}),
+				}),
+				n(0, { 		-- Zone Drop
+					["groups"] = {
+						i(61387, { 	-- Hidden Stash
+							dr(35, i(66076)),	-- Mr. Grubbs Pet
+						}),
+					},
+					["description"] = "Before being able to farm for this companion, players must complete a quest chain from Fiona. When asked to choose a buff from the carriage choose Fiona's Lucky Charm. This gives a buff with a blue rabbit's foot while in the zone.",
 				}),
 				n (-2, {	-- Vendors
 					n(12384, {	-- Agustus the Touched
@@ -1289,7 +1370,7 @@ _.Zones =
 							{	-- Design: Ring of Bitter Shadows
 								["itemID"] = 21954,	-- Design: Ring of Bitter Shadows
 							},
-							un(7, i(15756)), -- Pattern: Runic Leather Headband (now learned from trainer)
+							un(7, i(15756)),	-- Pattern: Runic Leather Headband (now learned from trainer)
 						},
 					},
 					n(11536, {	-- Quartermaster Miranda Breechlock <The Argent Crusade>

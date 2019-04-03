@@ -9,12 +9,18 @@ _.Holidays = bubbleDown({["u"] = 19},
 				["groups"] = {
 					un(19, title(122)), -- the Noble
 					ach(2676, { -- I Found One!
-						
+						o(113768, {	-- Brightly Colored Egg
+							i(45072),	-- Brightly Colored Egg
+						}),
 					}),
 					ach(2417, { -- Chocolate Lover
 						["groups"] = {
 							ach(2418, { -- Chocoholic
-								
+								o(113768, {	-- Brightly Colored Egg
+									i(45072, {	-- Brightly Colored Egg
+										i(44791),	-- Noblegarden Chocolate
+									}),
+								}),
 							}),
 						},
 					}),
@@ -79,20 +85,24 @@ _.Holidays = bubbleDown({["u"] = 19},
 			}),
 			ach(248, { -- Sunday's Finest
 				["groups"] = {
-					i(45072, { -- Brightly Colored Egg
-						["groups"] = {
-							i(6833), -- White Tuxedo Shirt
-							i(151804), -- Black Tuxedo Pants
-						},
+					o(113768, {	-- Brightly Colored Egg
+						i(45072, { -- Brightly Colored Egg
+							["groups"] = {
+								i(6833), -- White Tuxedo Shirt
+								i(151804), -- Black Tuxedo Pants
+							},
+						}),
 					}),
 				},
 			}),
 			ach(249, { -- Dressed for the Occasion
 				["groups"] = {
-					i(45072, { -- Brightly Colored Egg
-						["groups"] = {
-							i(151806), -- Elegant Dress
-						},
+					o(113768, {	-- Brightly Colored Egg
+						i(45072, { -- Brightly Colored Egg
+							["groups"] = {
+								i(151806), -- Elegant Dress
+							},
+						}),
 					}),
 				},
 			}),
@@ -207,11 +217,14 @@ _.Holidays = bubbleDown({["u"] = 19},
 						-- Appearances --
 						un(19, i(74282)),	-- Black Spring Circlet
 						un(19, i(151804)),	-- Black Tuxedo Pants
+--						un(19, i(164922)),	-- Blue Spring Circlet
+--						un(19, i(164923)),	-- Brown Spring Circlet
 						un(19, i(151806)),	-- Elegant Dress
 						un(19, i(74283)),	-- Pink Spring Circlet
 						un(19, i(44803)),	-- Spring Circlet
 						un(19, i(44800)),	-- Spring Robes
 						un(19, i(6833)),	-- White Tuxedo Shirt
+--						un(19, i(164924)),	-- Yellow Spring Circlet
 						-- Pets --
 						un(19, i(141532)),	-- Noblegarden Bunny
 						un(19, i(116258)),	-- Mystical Spring Bouquet
@@ -230,11 +243,14 @@ _.Holidays = bubbleDown({["u"] = 19},
 						-- Appearances --
 						un(19, i(74282)),	-- Black Spring Circlet
 						un(19, i(151804)),	-- Black Tuxedo Pants
+--						un(19, i(164922)),	-- Blue Spring Circlet
+--						un(19, i(164923)),	-- Brown Spring Circlet
 						un(19, i(151806)),	-- Elegant Dress
 						un(19, i(74283)),	-- Pink Spring Circlet
 						un(19, i(44803)),	-- Spring Circlet
 						un(19, i(44800)),	-- Spring Robes
 						un(19, i(6833)),	-- White Tuxedo Shirt
+--						un(19, i(164924)),	-- Yellow Spring Circlet
 						-- Pets --
 						un(19, i(141532)),	-- Noblegarden Bunny
 						un(19, i(116258)),	-- Mystical Spring Bouquet
@@ -247,6 +263,21 @@ _.Holidays = bubbleDown({["u"] = 19},
 				},
 				["races"] = HORDE_ONLY,
 			}),
+		}),
+		n(0, {	-- Zone Drop
+			un(19, o(113768, {	-- Brightly Colored Egg
+				un(19, i(45072, {	-- Brightly Colored Egg
+					un(19, i(44791)),	-- Noblegarden Chocolate
+					un(19, i(151804)),	-- Black Tuxedo Pants
+					un(19, i(44792)),	-- Blossoming Branch
+					un(19, i(151806)),	-- Elegant Dress
+					un(19, i(44803)),	-- Spring Circlet
+					un(19, i(45073)),	-- Spring Flowers
+					un(19, i(44794)),	-- Spring Rabbit's Foot
+					un(19, i(44800)),	-- Spring Robes
+					un(19, i(6833)),	-- White Tuxedo Shirt
+				})),
+			})),
 		}),
 	}),
 });
