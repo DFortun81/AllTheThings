@@ -1811,7 +1811,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					}),
 					i(120210, { -- Essence of the Iron Protector
 						qr( qa(37548, { -- Essence of the Iron Protector
-							i(120248, { -- Helm of the Iron Protector
+							i(120255, { -- Helm of the Iron Protector
 						    i(115584),	-- Blackhand's Faceguard
 						    i(115556),	-- Helm of the Somber Gaze
 						    i(115545),	-- Rylakstalker's Headguard
