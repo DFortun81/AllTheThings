@@ -2273,7 +2273,7 @@ AllTheThings.L = {
 		[62483] = "A.I.D.A. Communicator",
 		[106780] = "Tidestone of Golganneth",
 		[112948] = "Intrepid's Locked Strongbox",
-		[113768] = "Brightly Colored Egg",
+		[113768] = GetSpellInfo(61820),
 		[123329] = "Baelog's Chest",
 		[131474] = "The Discs of Norgannon",
 		[131979] = "Large Darkwood Chest",
@@ -3267,7 +3267,7 @@ AllTheThings.L = {
 		{3, "|CFFFF0000The source of this item has been removed and is only available with the Black Market Auction House.|r", "Black Market AH [BMAH] (9)"}, -- There is Hope -- 9
 		{3, "|CFFFF0000Item from TCG card is no longer in print, but still purchaseable online, sometimes BMAH, and possibly AH.|r", "Trading Card  Game [TCG] (10)"}, -- There is Hope -- 10
 		{3, "|CFFFF0000This item is Bind on Pickup but can be obtained if you have access to the items to summon the boss.|r", "Requires Summoning Items (11)"}, -- There is Hope -- 11
-		{4, "|CFFFF0000This is legacy instance that is no longer available.|r", "Legacy Instance (12)"}; -- 12
+		{4, "|CFFFF0000This is legacy instance or boss that is no longer available.|r", "Legacy Instance (12)"}; -- 12
 		{1, "|CFFFF0000Your followers are too high and the mission for the cache will no longer spawn.|r", "Legacy Cache (13)"}; -- 13
 		{2, "|CFFFF0000These items can't be purchased unless you have the required PvP Rating or were in the Top % of that season.|r", "PvP Elite/Gladiator (14)"}, -- 14
 		{1, "|CFFFF0000This item has a Source ID (Tempest Keep Legendaries), but can't be learned (training recipes). |r", "Training Recipes / Unlearnable (15)"}, -- 15

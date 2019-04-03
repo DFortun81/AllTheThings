@@ -127,31 +127,35 @@ _.Instances = { tier(1, {	-- Classic
 						un(2, i(12930)),	-- Briarwood Reed
 					},
 				}),
-				n(10899, { 	-- Goraluk Anvilcrack
-					i(18779, { 	-- Bottom Half of Advanced Armorsmithing: Volume 1
-						["description"] = "Combine with the Top Half of Advanced Armorsmithing: Volume 1",
-						["groups"] = {
-							i(18769, { 	-- Enchanted Thorium Platemail [Item was removed from the game and turned into gray item Torn Scroll]
-								q(7649, { 	-- Enchanted Thorium Platemail: Volume 1
-									un(2, i(12727)),	-- Plans: Enchanted Thorium Breastplate
+				{	-- Goraluk Anvilcrack
+					["npcID"] = 10899,	-- Goraluk Anvilcrack
+					["u"] = 12,	-- Legacy Boss
+					["g"] = {
+						i(18779, { 	-- Bottom Half of Advanced Armorsmithing: Volume 1
+							["description"] = "Combine with the Top Half of Advanced Armorsmithing: Volume 1",
+							["groups"] = {
+								i(18769, { 	-- Enchanted Thorium Platemail [Item was removed from the game and turned into gray item Torn Scroll]
+									q(7649, { 	-- Enchanted Thorium Platemail: Volume 1
+										un(2, i(12727)),	-- Plans: Enchanted Thorium Breastplate
+									}),
 								}),
-							}),
+							},
+						}),
+						{	-- Plans: Arcanite Champion
+							["itemID"] = 12834,	-- Plans: Arcanite Champion
+							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
+							["u"] = 7,
 						},
-					}),
-					{	-- Plans: Arcanite Champion
-						["itemID"] = 12834,	-- Plans: Arcanite Champion
-						["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
-						["u"] = 7,
+						{	-- Plans: Invulnerable Mail
+							["itemID"] = 12728,	-- Plans: Invulnerable Mail **Still in game as a general world drop now**
+						},
+						un(2, i(12837)),	-- Plans: Masterwork Stormhammer
+						un(2, i(18048)), 	-- Mastersmith's Hammer
+						un(2, i(13502)), 	-- Handcrafted Mastersmith Girdle
+						un(2, i(13498)), 	-- Handcrafted Mastersmith Leggings
+						un(2, i(18047)), 	-- Flame Walkers
 					},
-					{	-- Plans: Invulnerable Mail
-						["itemID"] = 12728,	-- Plans: Invulnerable Mail **Still in game as a general world drop now**
-					},
-					un(2, i(12837)),	-- Plans: Masterwork Stormhammer
-					un(2, i(18048)), 	-- Mastersmith's Hammer
-					un(2, i(13502)), 	-- Handcrafted Mastersmith Girdle
-					un(2, i(13498)), 	-- Handcrafted Mastersmith Leggings
-					un(2, i(18047)), 	-- Flame Walkers
-				}),
+				},
 				n(10339, { 	-- Gyth
 					un(7, i(13522)),	-- Recipe: Flask of Chromatic Resistance
 					i(12871, { 	-- Chromatic Carapace

@@ -310,6 +310,7 @@ _.Instances = { tier(1, {	-- Classic
 					i(19382),	-- Pure Elementium Band
 					i(19379),	-- Neltharion's Tear
 				 -- BLUES (NOT IN DUNGEON JOURNAL/WOWHEAD)
+					i(12728),	-- Plans: Invulnerable Mail
 					i(1203),	-- Aegis of Stormwind
 					i(13036),	-- Assassination Blade
 					i(13096),	-- Band of the Hierophant
