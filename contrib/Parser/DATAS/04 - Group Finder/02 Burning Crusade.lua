@@ -15,7 +15,7 @@ _.GroupFinder =
 					i(51967),	-- Enumerated Sandals*
 					i(51961),	-- Vigorous Shoulderguards
 					i(51959),	-- Vigorous Belt
-					i(51962),	-- Vigorous Bracers
+					i(51962),	-- Vigorous Bracers*
 					i(51960),	-- Vigorous Gloves [User confirmed; haven't seen]
 					i(51975),	-- Earthbound Shoulders
 					i(51981),	-- Earthbound Wristguards
@@ -27,7 +27,7 @@ _.GroupFinder =
 					i(51985),	-- Stalwart Belt [User confirmed; haven't seen]
 					i(51990),	-- Stalwart Treads*
 					i(51993),	-- Turbulent Cloak*
-					i(160599),	-- Turbulent Cloak (screenshot from Surrender to the Ebonblade on Discord)
+					i(160599),	-- Turbulent Cloak*
 					i(160600),	-- Turbulent Cloak (screenshot from Emsarrev on Discord)
 					i(51995),	-- Turbulent Necklace*
 					i(51991),	-- Turbulent Signet*

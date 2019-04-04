@@ -194,6 +194,43 @@ _.Instances =
 							{	-- Crimson Descent
 								["achievementID"] = 12522,	 -- Crimson Descent
 								["g"] = {
+									{	-- Fetid Devourer
+										["encounterID"] = 2146,	-- Fetid Devourer
+										["crs"] = {
+											133298,	-- Fetid Devourer
+											133492,	-- Corruption Corpuscle
+										},
+										["g"] = {
+											{	--  Fetid Devourer
+												["achievementID"] = 12522,	-- Crimson Descent
+												["criteriaID"] = 2,			-- Fetid Devourer
+											},
+											{	-- Regurgitated Purifier's Flamestaff
+												["itemID"] = 160689,	-- Regurgitated Purifier's Flamestaff
+											},
+											{	-- Biomelding Cleaver
+												["itemID"] = 160685,	-- Biomelding Cleaver
+											},
+											{	-- Horrific Amalgam's Hood
+												["itemID"] = 160616,	-- Horrific Amalgam's Hood
+											},
+											{	-- Fetid Horror's Tanglecloak
+												["itemID"] = 160643,	-- Fetid Horror's Tanglecloak
+											},
+											{	-- Jerkin of the Aberrant Chimera
+												["itemID"] = 160619,	-- Jerkin of the Aberrant Chimera
+											},
+											{	-- Waste Disposal Crushers
+												["itemID"] = 160635,	-- Waste Disposal Crushers
+											},
+											{	-- Fused Monstrosity Stompers
+												["itemID"] = 160628,	-- Fused Monstrosity Stompers
+											},
+											{	-- Frenetic Corpuscle
+												["itemID"] = 160648,	-- Frenetic Corpuscle
+											},
+										},
+									},
 									{	-- Vectis
 										["encounterID"] = 2166,	-- Vectis
 										["crs"] = {
@@ -236,43 +273,6 @@ _.Instances =
 											},
 											{	-- Syringe of Bloodborne Infirmity
 												["itemID"] = 160655,	-- Syringe of Bloodborne Infirmity
-											},
-										},
-									},
-									{	-- Fetid Devourer
-										["encounterID"] = 2146,	-- Fetid Devourer
-										["crs"] = {
-											133298,	-- Fetid Devourer
-											133492,	-- Corruption Corpuscle
-										},
-										["g"] = {
-											{	--  Fetid Devourer
-												["achievementID"] = 12522,	-- Crimson Descent
-												["criteriaID"] = 2,			-- Fetid Devourer
-											},
-											{	-- Regurgitated Purifier's Flamestaff
-												["itemID"] = 160689,	-- Regurgitated Purifier's Flamestaff
-											},
-											{	-- Biomelding Cleaver
-												["itemID"] = 160685,	-- Biomelding Cleaver
-											},
-											{	-- Horrific Amalgam's Hood
-												["itemID"] = 160616,	-- Horrific Amalgam's Hood
-											},
-											{	-- Fetid Horror's Tanglecloak
-												["itemID"] = 160643,	-- Fetid Horror's Tanglecloak
-											},
-											{	-- Jerkin of the Aberrant Chimera
-												["itemID"] = 160619,	-- Jerkin of the Aberrant Chimera
-											},
-											{	-- Waste Disposal Crushers
-												["itemID"] = 160635,	-- Waste Disposal Crushers
-											},
-											{	-- Fused Monstrosity Stompers
-												["itemID"] = 160628,	-- Fused Monstrosity Stompers
-											},
-											{	-- Frenetic Corpuscle
-												["itemID"] = 160648,	-- Frenetic Corpuscle
 											},
 										},
 									},

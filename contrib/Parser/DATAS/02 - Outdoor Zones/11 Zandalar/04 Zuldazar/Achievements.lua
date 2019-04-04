@@ -11,7 +11,8 @@ _.Zones =
 				["g"] = {
 					n(-4,   {	-- Achievements
 						["g"] = {
-							{	--  A Loa of a Tale [Note: Ugh Longhand, but parser will only take it this way.  Don't convert please]
+							ach(12944),		-- Adventurer of Zuldazar
+							{				-- A Loa of a Tale [Note: Ugh Longhand, but parser will only take it this way.  Don't convert please]
 								["achievementID"] = 13036,	-- A Loa of a Tale
 								["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 								["g"] = {

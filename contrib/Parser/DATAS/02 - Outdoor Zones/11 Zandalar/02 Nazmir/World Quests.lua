@@ -143,13 +143,6 @@ _.Zones =
 									["races"] = ALLIANCE_ONLY,
 								},
 								q(50505, {	-- Kal'draxa
-									["groups"] = {
-										i(161018, {	-- Winged Terror Wristwraps
-											["crs"] = {
-												124397,	-- Kal'draxa
-											},
-										}),
-									},
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
 								{	-- King Kooba
