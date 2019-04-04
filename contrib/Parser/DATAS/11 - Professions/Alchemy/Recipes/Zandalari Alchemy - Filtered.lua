@@ -10,11 +10,13 @@ profession(171, {	-- Alchemy
 					["g"] = {
 						{
 							["name"] = "Potion of Durability",
-							["recipeID"] = 288182
+							["recipeID"] = 288182,
+							["u"] = 15,        -- Training Recipe
 						},
 						{
 							["name"] = "Potion of Shifting States",
-							["recipeID"] = 288176
+							["recipeID"] = 288176,
+							["u"] = 15,        -- Training Recipe
 						},
 					}
 				},
