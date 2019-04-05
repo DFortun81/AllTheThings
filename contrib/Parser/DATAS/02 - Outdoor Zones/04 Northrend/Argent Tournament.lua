@@ -1293,7 +1293,7 @@ _.Zones =
 					})),
 					a(n(35579, {	-- Aspirant Forudir <Triumphant Armor Vendor>
 						["coord"] = { 75.4, 21.6 },
-						["groups"] = {
+						["groups"] = bubbleDown({["description"] = "|CFFFF0000Purchasing this exact piece (shared appearances don't work) and letting the 2 hour timer disappear unlocks the Horde equivalent.|r"}, {
 							gs(674, {	-- Kel'Thuzad's Regalia
 								i(47783),	-- Kel'Thuzad's Gloves of Conquest
 								i(47784),	-- Kel'Thuzad's Hood of Conquest
@@ -1409,11 +1409,11 @@ _.Zones =
 								i(48448),	-- Wrynn's Pauldrons of Conquest
 								i(48374),	-- Wrynn's Shoulderplates of Conquest
 							}),
-						},
+						}),
 					})),
 					h(n(35580, {	-- Aspirant Naradiel <Triumphant Armor Vendor>
 						["coord"] = { 75.4, 22.0 },
-						["groups"] = {
+						["groups"] = bubbleDown({["description"] = "|CFFFF0000Purchasing this exact piece (shared appearances don't work) and letting the 2 hour timer disappear unlocks the Alliance equivalent.|r"}, {
 							gs(350, {	-- Zabra's Regalia
 								i(48068),	-- Zabra's Cowl of Conquest
 								i(48071),	-- Zabra's Shoulderpads of Conquest
@@ -1529,11 +1529,11 @@ _.Zones =
 								i(48502),	-- Koltira's Gauntlets of Conquest
 								i(48504),	-- Koltira's Legplates of Conquest
 							}),
-						},							
+						}),							
 					})),
 					h(n(35576, {	-- Champion Faesrol <Triumphant Armor Vendor>
 						["coord"] = { 75.2, 22.0 },
-						["groups"] = {
+						["groups"] = bubbleDown({["description"] = "|CFFFF0000Purchasing this exact piece (shared appearances don't work) and letting the 2 hour timer disappear unlocks the Alliance equivalent.|r"}, {
 							un(2, i(47557, {	-- Regalia of the Grand Conqueror
 								gs(350, {	-- Zabra's Regalia
 									un(2, i(48058)),	-- Zabra's Cowl of Triumph
@@ -1651,11 +1651,11 @@ _.Zones =
 									un(2, i(48494)),	-- Koltira's Legplates of Triumph
 								}),
 							})),
-						},
+						}),
 					})),
 					a(n(35575, {	-- Champion Isimode <Triumphant Armor Vendor>
 						["coord"] = { 75.2, 21.6 },
-						["groups"] = {
+						["groups"] = bubbleDown({["description"] = "|CFFFF0000Purchasing this exact piece (shared appearances don't work) and letting the 2 hour timer disappear unlocks the Horde equivalent.|r"}, {
 							un(2, i(47557, {	-- Regalia of the Grand Conqueror
 								gs(674, {	-- Kel'Thuzad's Regalia
 									un(2, i(47788)),	-- Kel'Thuzad's Gloves of Triumph
@@ -1774,7 +1774,7 @@ _.Zones =
 									un(2, i(48381)),	-- Wrynn's Shoulderplates of Triumph
 								}),
 							})),
-						},
+						}),
 					})),
 					a(n(33307, {	-- Corporal Arthur Flew <Stormwind Quartermaster>
 						["coord"] = { 76.4, 19.2 },
@@ -2226,7 +2226,7 @@ _.Zones =
 					})),
 					h(n(35578, {	-- Valiant Bressia <Triumphant Armor Vendor>
 						["coord"] = { 75.4, 22.0 },
-						["groups"] = {
+						["groups"] = bubbleDown({["description"] = "|CFFFF0000Purchasing this exact piece (shared appearances don't work) and letting the 2 hour timer disappear unlocks the Alliance equivalent.|r"}, {
 							i(47242, {	-- Trophy of the Crusade
 								-- Priest
 								gs(350, {	-- Zabra's Regalia
@@ -2354,11 +2354,11 @@ _.Zones =
 									i(48497),	-- Koltira's Legplates of Triumph
 								}),
 							}),
-						},
+						}),
 					})),
 					a(n(35577, {	-- Valiant Laradia <Triumphant Armor Vendor>
 						["coord"] = { 75.4, 21.6 },
-						["groups"] = {
+						["groups"] = bubbleDown({["description"] = "|CFFFF0000Purchasing this exact piece (shared appearances don't work) and letting the 2 hour timer disappear unlocks the Horde equivalent.|r"}, {
 							i(47242, {	-- Trophy of the Crusade
 								-- Priest
 								gs(349, {	-- Velen's Regalia
@@ -2486,7 +2486,7 @@ _.Zones =
 									i(48484),	-- Thassarian's Legplates of Triumph			
 								}),
 							}),
-						},
+						}),
 					})),
 					h(n(34772, {	-- Vasarin Redmorn <Sunreavers Quartermaster>
 						["coord"] = { 76.2, 24.0 },
