@@ -1709,7 +1709,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 					n(25740, { -- Ahune
 						["groups"] = {
 							ach(263),	-- Ice the Frost Lord
-							un(21, i(149753, { -- Knapsack of Chilled Goods [Uncommon Quality]
+							un(21, i(149753, {	-- Knapsack of Chilled Goods [Uncommon Quality]
 								["groups"] = {
 									un(21, dr(5, i(117373))),	-- Frostscythe of Lord Ahune
 								},
@@ -1732,31 +1732,35 @@ _.Holidays =  bubbleDown({["u"] = 21},
 								},
 								["description"] = "This item can be looted and completed once per character, but has no level requirement.",
 							},
-							un(21, i(138838)), -- Illusion: Deathfrost
-							un(21, dr(3, i(35498))), -- Formula: Enchant Weapon - Deathfrost
-							un(2, i(35514)), -- Frostscythe of Lord Ahune
-							un(2, i(54806)), -- Frostscythe of Lord Ahune
-							un(2, i(69771)), -- Frostscythe of Lord Ahune
-							un(2, i(95426)), -- Frostscythe of Lord Ahune
-							un(2, i(35497)), -- Cloak of the Frigid Winds
-							un(2, i(54805)), -- Cloak of the Frigid Winds
-							un(2, i(69769)), -- Cloak of the Frigid Winds
-							un(2, i(95425)), -- Cloak of the Frigid Winds
-							un(2, i(35496)), -- Icebound Cloak
-							un(2, i(54801)), -- Icebound Cloak
-							un(2, i(69770)), -- Icebound Cloak
-							un(2, i(95427)), -- Icebound Cloak
-							un(2, i(35494)), -- Shroud of Winter's Chill
-							un(2, i(54804)), -- Shroud of Winter's Chill
-							un(2, i(69768)), -- Shroud of Winter's Chill
-							un(2, i(95428)), -- Shroud of Winter's Chill
-							un(2, i(54803)), -- The Frost Lord's Battle Shroud
-							un(2, i(69767)), -- The Frost Lord's Battle Shroud
-							un(2, i(95429)), -- The Frost Lord's Battle Shroud
-							un(2, i(35495)), -- The Frost Lord's War Cloak
-							un(2, i(54802)), -- The Frost Lord's War Cloak
-							un(2, i(69766)), -- The Frost Lord's War Cloak
-							un(2, i(95430)), -- The Frost Lord's War Cloak
+							un(21, i(138838)),	-- Illusion: Deathfrost
+							un(21, i(35498)),	-- Formula: Enchant Weapon - Deathfrost
+							un(2, i(35514)),	-- Frostscythe of Lord Ahune
+							un(2, i(54806)),	-- Frostscythe of Lord Ahune
+							un(2, i(69771)),	-- Frostscythe of Lord Ahune
+							un(2, i(95426)),	-- Frostscythe of Lord Ahune
+							un(2, i(35507)),	-- Amulet of Bitter Hatred
+							un(2, i(35509)),	-- Amulet of Glacial Tranquility
+							un(2, i(35508)),	-- Choker of the Arctic Flow
+							un(2, i(35511)),	-- Hailstone Pendant
+							un(2, i(35497)),	-- Cloak of the Frigid Winds
+							un(2, i(54805)),	-- Cloak of the Frigid Winds
+							un(2, i(69769)),	-- Cloak of the Frigid Winds
+							un(2, i(95425)),	-- Cloak of the Frigid Winds
+							un(2, i(35496)),	-- Icebound Cloak
+							un(2, i(54801)),	-- Icebound Cloak
+							un(2, i(69770)),	-- Icebound Cloak
+							un(2, i(95427)),	-- Icebound Cloak
+							un(2, i(35494)),	-- Shroud of Winter's Chill
+							un(2, i(54804)),	-- Shroud of Winter's Chill
+							un(2, i(69768)),	-- Shroud of Winter's Chill
+							un(2, i(95428)),	-- Shroud of Winter's Chill
+							un(2, i(54803)),	-- The Frost Lord's Battle Shroud
+							un(2, i(69767)),	-- The Frost Lord's Battle Shroud
+							un(2, i(95429)),	-- The Frost Lord's Battle Shroud
+							un(2, i(35495)),	-- The Frost Lord's War Cloak
+							un(2, i(54802)),	-- The Frost Lord's War Cloak
+							un(2, i(69766)),	-- The Frost Lord's War Cloak
+							un(2, i(95430)),	-- The Frost Lord's War Cloak
 							un(21, i(117372)),	-- Cloak of the Frigid Winds
 							un(21, i(117374)),	-- Icebound Cloak
 							un(21, i(117375)),	-- Shroud of Winter's Chill

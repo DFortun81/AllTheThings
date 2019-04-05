@@ -912,6 +912,10 @@ _.NeverImplemented =
 			un(1, i(28044)),	-- Band of the Demon Stalker
 			un(1, i(25991)),	-- Seamless Stone Band
 			un(1, i(25990)),	-- Smooth soapstone band
+			un(1, i(33957)),	-- Witches Band (unused version)
+			un(1, i(33958)),	-- The Horseman's Signet Ring (unused version)
+			un(1, i(33959)),	-- Ring of Ghoulish Delight (unused version)
+			un(1, i(34712)),	-- Unknown (might be Prismatic Signet)
 		}),
 		n(-386, {	-- Trinket
 			un(1, i(12805)),	-- Orb of Fire
@@ -941,7 +945,9 @@ _.NeverImplemented =
 			un(1, i(109378)),	-- Unknown
 			un(1, i(109386)),	-- Unknown
 			un(1, i(109394)),	-- Unknown
-			
+			un(1, i(25996)),	-- Emblem of Perseverance
+			un(1, i(44869)),	-- Frenzyheart Insignia of Fury
+			un(1, i(44870)),	-- Oracle Talisman of Ablution
 		}),
 	}),
 	n(-494, {	-- Misc

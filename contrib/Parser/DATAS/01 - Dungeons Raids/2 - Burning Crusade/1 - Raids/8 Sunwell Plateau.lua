@@ -1235,10 +1235,10 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				},
 				["groups"] = {
 					i(122114),	-- Void Collar (PET!)
-					i( 34214),	-- Muramasa
-					i( 34231),	-- Aegis of Angelic Fortune (MISSING IN ADVENTURE GUIDE)
-					i( 34232),	-- Fel Conqueror Raiments (MISSING IN ADVENTURE GUIDE)
-					i( 34229, {	-- Garments of Serene Shores
+					i(34214),	-- Muramasa
+					i(34231),	-- Aegis of Angelic Fortune (MISSING IN ADVENTURE GUIDE)
+					i(34232),	-- Fel Conqueror Raiments (MISSING IN ADVENTURE GUIDE)
+					i(34229, {	-- Garments of Serene Shores
 						n(25977, {	-- Yrma
 							["description"] = "This vendor is located on a boat on the Isle of Quel'Danas.",
 							["groups"] = {	
@@ -1246,7 +1246,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 							},
 						}),
 					}),
-					i( 34211, {	-- Harness of Carnal Instinct
+					i(34211, {	-- Harness of Carnal Instinct
 						n(25977, {	-- Yrma
 							["description"] = "This vendor is located on a boat on the Isle of Quel'Danas.",
 							["groups"] = {	
@@ -1254,7 +1254,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 							},
 						}),
 					}),
-					i( 34216, {	-- Heroic Judicator's Chestguard
+					i(34216, {	-- Heroic Judicator's Chestguard
 						n(25977, {	-- Yrma
 							["description"] = "This vendor is located on a boat on the Isle of Quel'Danas.",
 							["groups"] = {	
@@ -1262,7 +1262,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 							},
 						}),
 					}),
-					i( 34233, {	-- Robes of Faltered Light (MISSING IN ADVENTURE GUIDE)
+					i(34233, {	-- Robes of Faltered Light (MISSING IN ADVENTURE GUIDE)
 						n(25977, {	-- Yrma
 							["description"] = "This vendor is located on a boat on the Isle of Quel'Danas.",
 							["groups"] = {
@@ -1270,7 +1270,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 							},
 						}),
 					}),
-					i( 34212, {	-- Sunglow Vest
+					i(34212, {	-- Sunglow Vest
 						n(25977, {	-- Yrma
 							["description"] = "This vendor is located on a boat on the Isle of Quel'Danas.",
 							["groups"] = {	
@@ -1278,8 +1278,8 @@ _.Instances = { tier(2, {	-- Burning Crusade
 							},
 						}),
 					}),
-					i( 34228),	-- Vicious Hawkstrider Hauberk
-					i( 34215, {	-- Warharness of Reckless Fury
+					i(34228),	-- Vicious Hawkstrider Hauberk
+					i(34215, {	-- Warharness of Reckless Fury
 						n(25977, {	-- Yrma
 							["description"] = "This vendor is located on a boat on the Isle of Quel'Danas.",
 							["groups"] = {	
@@ -1287,8 +1287,8 @@ _.Instances = { tier(2, {	-- Burning Crusade
 							},
 						}),
 					}),
-					i( 34240),	-- Gauntlets of the Soothed Soul (MISSING IN ADVENTURE GUIDE)
-					i( 34234, {	-- Shadowed Gauntlets of Paroxysm (MISSING IN ADVENTURE GUIDE)
+					i(34240),	-- Gauntlets of the Soothed Soul (MISSING IN ADVENTURE GUIDE)
+					i(34234, {	-- Shadowed Gauntlets of Paroxysm (MISSING IN ADVENTURE GUIDE)
 						n(25977, {	-- Yrma
 							["description"] = "This vendor is located on a boat on the Isle of Quel'Danas.",
 							["groups"] = {	
@@ -1296,14 +1296,15 @@ _.Instances = { tier(2, {	-- Burning Crusade
 							},
 						}),
 					}),
-					i( 34213),	-- Ring of Hardened Resolve
-					i( 35282),	-- Sin'dorei Band of Dominance
-					i( 35283),	-- Sin'dorei Band of Salvation
-					i( 35284),	-- Sin'dorei Band of Triumph
-					i( 34427),	-- Blackened Naaru Sliver
-					i( 34430),	-- Glimmering Naaru Sliver
-					i( 34429),	-- Shifting Naaru Sliver
-					i( 34428),	-- Steely Naaru Sliver
+					i(34213),	-- Ring of Hardened Resolve
+					i(34230),	-- Ring of Omnipotence
+					i(35282),	-- Sin'dorei Band of Dominance
+					i(35283),	-- Sin'dorei Band of Salvation
+					i(35284),	-- Sin'dorei Band of Triumph
+					i(34427),	-- Blackened Naaru Sliver
+					i(34430),	-- Glimmering Naaru Sliver
+					i(34429),	-- Shifting Naaru Sliver
+					i(34428),	-- Steely Naaru Sliver
 				},
 			}),
 			e(1596, {	-- Kil'jaeden

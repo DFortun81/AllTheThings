@@ -26,6 +26,20 @@ _.Zones =
 							dr(23, i(31160)),	-- Felstone Epaulets
 							dr(23, i(31162)),	-- Felstone Mantle
 						}),
+						{	-- Shartuul
+							["npcID"] = 23230,	-- Shartuul [Was the boss of an event in BEM that was removed may better fit somewhere else]
+							["u"] = 43,
+							["groups"] = {
+								{	-- Corruptor's Signet
+									["itemID"] = 32941,	-- Corruptor's Signet
+									["u"] = 2,
+								},
+								{	-- Ring of the Overseer
+									["itemID"] = 32942,	-- Ring of the Overseer
+									["u"] = 2,
+								},
+							},
+						},
 						n(18693, {	-- Speaker Mar'grom
 							dr(25, i(31163)),	-- Nethersteel Handguards
 							dr(25, i(31166)),	-- Nethersteel-Lined Handwraps

@@ -12,6 +12,32 @@ _.Zones =
 					{	-- Zone Drops
 						["npcID"] = 0,	-- Zone Drop
 						["g"] = {
+							{	-- Depleted Badge
+								["itemID"] = 32672,	-- Depleted Badge
+								["crs"] = {
+									19973,	-- Abyssal Flamebringer
+									22175,	-- Apexis Flayer
+									22275,	-- Apexis Guardian
+									23391,	-- Bash'ir
+									22243,	-- Bash'ir Arcanist
+									23353,	-- Braxxus
+									23261,	-- Furywing
+									22281,	-- Galvanoth
+									23281,	-- Insidion
+									23354,	-- Mo'arg Incinerator
+									23282,	-- Obsidia
+									23061,	-- Rivendark
+									22180,	-- Shard-Hide Boar
+									23333,	-- The Grand Collector
+									20557,	-- Wrath Hound
+									23355,	-- Zarcsin
+								},
+								["g"] = {
+									{	-- Badge of Tenacity
+										["itemID"] = 32658,	-- Badge of Tenacity
+									},
+								},
+							},
 							{	-- Demonic Bulwark
 								["itemID"] = 32522,	-- Demonic Bulwark
 								["coords"] = {
@@ -76,6 +102,31 @@ _.Zones =
 								["g"] = {
 									{	-- Apexis Crystal Mace
 										["itemID"] = 32661,	-- Apexis Crystal Mace
+									},
+								},
+							},
+							{	-- Depleted Ring
+								["itemID"] = 32678,	-- Depleted Ring
+								["crs"] = {
+									22175,	-- Apexis Flayer
+									22275,	-- Apexis Guardian
+									22243,	-- Bash'ir Arcanist
+									23390,	-- Bash'ir's Harbinger
+									23353,	-- Braxxus
+									23261,	-- Furywing
+									22281,	-- Galvanoth
+									23281,	-- Insidion
+									23354,	-- Mo'arg Incinerator
+									23282,	-- Obsidia
+									23061,	-- Rivendark
+									22180,	-- Shard-Hide Boar
+									23333,	-- The Grand Collector
+									20557,	-- Wrath Hound
+									23355,	-- Zarcsin
+								},
+								["g"] = {
+									{	-- Dreamcrystal Band
+										["itemID"] = 32664,	-- Dreamcrystal Band
 									},
 								},
 							},

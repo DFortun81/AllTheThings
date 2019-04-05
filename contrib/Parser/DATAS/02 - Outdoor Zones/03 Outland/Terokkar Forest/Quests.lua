@@ -70,16 +70,17 @@ _.Zones =
 						q(10009),	-- Crackin' Some Skulls
 	--]]					
 						q(11665,  {  -- Crocolisks in the City
+							["description"] = "|cff66ccffOne of five random fishing daily quests. The other four do not drop minipets.|r",
 							["groups"] = {
 								i(35348,  { -- Bag of Fishing Treasures
-									i(35350),  -- Chuck's Bucket
-									i(33818),  -- Muckbreath's Bucket
-									i(35349),  -- Snarly's Bucket
-									i(33816),  -- Toothy's Bucket
-									i(33820),  -- Weather-Beaten Fishing Hat
+									i(35350),	 -- Chuck's Bucket
+									i(33818),	-- Muckbreath's Bucket
+									i(35349),	-- Snarly's Bucket
+									i(33816),	-- Toothy's Bucket
+									i(33820),	-- Weather-Beaten Fishing Hat
+									i(34837),	-- The 2 Ring
 								}),
 							},	
-							["description"] = "|cff66ccffOne of five random fishing daily quests. The other four do not drop minipets.|r",
 						}),
 	--[[					
 						qa( 11580),	-- Desecrate this Fire!

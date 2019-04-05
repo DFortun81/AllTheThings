@@ -241,8 +241,14 @@ _.WorldDrops =
 					{	-- Azurite Ring
 						["itemID"] = 25045,	-- Azurite Ring
 					},
+					{	-- Band of Dominion
+						["itemID"] = 31290,	-- Band of Dominion
+					},
 					{	-- Band of Impenetrable Defenses
 						["itemID"] = 31319,	-- Band of Impenetrable Defenses
+					},
+					{	-- Band of Sorrow
+						["itemID"] = 31258,	-- Band of Sorrow
 					},
 					{	-- Blue Topaz Band
 						["itemID"] = 25051,	-- Blue Topaz Band
@@ -253,8 +259,14 @@ _.WorldDrops =
 					{	-- Lazuli Ring
 						["itemID"] = 25053,	-- Lazuli Ring
 					},
+					{	-- Lola's Eve
+						["itemID"] = 31339,	-- Lola's Eve
+					},
 					{	-- Moldavite Ring
 						["itemID"] = 25050,	-- Moldavite Ring
+					},
+					{	-- Pathfinder's Band
+						["itemID"] = 31277,	-- Pathfinder's Band
 					},
 					{	-- Rubellite Ring
 						["itemID"] = 25044,	-- Rubellite Ring
@@ -273,6 +285,9 @@ _.WorldDrops =
 					},
 					{	-- Tourmaline Loop
 						["itemID"] = 25047,	-- Tourmaline Loop
+					},
+					{	-- Truestrike Ring
+						["itemID"] = 31326,	-- Truestrike Ring
 					},
 				}),
 			}),

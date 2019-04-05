@@ -54,6 +54,15 @@ _.WorldEvents =
 						},
 						["icon"] = "Interface\\Icons\\inv_chest_plate19",
 					}),
+					un(3, i(40601)),	-- Argent Dawn Banner
+					un(3, i(40593)),	-- Argent Tome
+					un(3, i(40492)),	-- Argent War Horn
+					un(3, q(12616, {	-- Chamber of Secrets
+						["qg"] = 16285,	-- Argent Emissary
+						["groups"] = {
+							un(3, i(40354)),	-- Monster Slayer's Kit
+						},
+					})),
 				},
 				["icon"] = "Interface\\Icons\\expansionicon_wrathofthelichking",
 				["lvl"] = 80,
