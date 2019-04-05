@@ -490,38 +490,44 @@ _.Craftables =
 			}),
 		}),
 		n(-190, {	-- Tailoring
-			--n(-37, {	-- Discovery
-			--}),
-			i(126998),	-- Imbued Silkweave Hood
-			i(126990),	-- Silkweave Hood
-			i(146666),	-- Celumbra, the Night's Dichotomy
-			i(127000),	-- Imbued Silkweave Epaulets
-			i(126992),	-- Silkweave Epaulets
-			i(127019),	-- Imbued Silkweave Cover
-			i(127020),	-- Imbued Silkweave Drape
-			i(127034),	-- Imbued Silkweave Flourish
-			i(127033),	-- Imbued Silkweave Shade
-			i(127016),	-- Silkweave Cover
-			i(127017),	-- Silkweave Drape
-			i(127032),	-- Silkweave Flourish
-			i(127031),	-- Silkweave Shade
-			i(151771),	-- Festival Dress
-			i(151772),	-- Festival Suit
-			i(151792),	-- Green Winter Clothes
-			i(126995),	-- Imbued Silkweave Robe
-			i(151790),	-- Red Winter Clothes
-			i(126987),	-- Silkweave Robe
-			i(127002),	-- Imbued Silkweave Bracers
-			i(126994),	-- Silkweave Bracers
-			i(126997),	-- Imbued Silkweave Gloves
-			i(126989),	-- Silkweave Gloves
-			i(127001),	-- Imbued Silkweave Cinch
-			i(126993),	-- Silkweave Cinch
-			i(126999),	-- Imbued Silkweave Pantaloons
-			i(151571),	-- Lightweave Breeches
-			i(126991),	-- Silkweave Pantaloons
-			i(126996),	-- Imbued Silkweave Slippers
-			i(126988),	-- Silkweave Slippers
+			filter(113, {	-- Bags
+				i(142075),	-- Imbued Silkweave Bag
+				i(127035),	-- Silkweave Satchel
+			}),
+			n(-322, {	-- Cloak
+				i(127019),	-- Imbued Silkweave Cover
+				i(127020),	-- Imbued Silkweave Drape
+				i(127034),	-- Imbued Silkweave Flourish
+				i(127033),	-- Imbued Silkweave Shade
+				i(127016),	-- Silkweave Cover
+				i(127017),	-- Silkweave Drape
+				i(127032),	-- Silkweave Flourish
+				i(127031),	-- Silkweave Shade
+			}),
+			n(-43, { -- Cloth
+				i(146666),	-- Celumbra, the Night's Dichotomy
+				i(151771),	-- Festival Dress
+				i(151772),	-- Festival Suit
+				i(151792),	-- Green Winter Clothes
+				i(127002),	-- Imbued Silkweave Bracers
+				i(127001),	-- Imbued Silkweave Cinch
+				i(127000),	-- Imbued Silkweave Epaulets
+				i(126997),	-- Imbued Silkweave Gloves
+				i(126998),	-- Imbued Silkweave Hood
+				i(126999),	-- Imbued Silkweave Pantaloons
+				i(126995),	-- Imbued Silkweave Robe
+				i(126996),	-- Imbued Silkweave Slippers
+				i(151571),	-- Lightweave Breeches
+				i(151790),	-- Red Winter Clothes
+				i(126994),	-- Silkweave Bracers
+				i(126993),	-- Silkweave Cinch
+				i(126992),	-- Silkweave Epaulets
+				i(126989),	-- Silkweave Gloves
+				i(126990),	-- Silkweave Hood
+				i(126991),	-- Silkweave Pantaloons
+				i(126987),	-- Silkweave Robe
+				i(126988),	-- Silkweave Slippers
+			}),
 		}),
 	}),
 };

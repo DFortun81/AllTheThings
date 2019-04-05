@@ -824,76 +824,102 @@ _.Craftables =
 				i(32397),	-- Waistguard of Shackled Souls
 				i(29509),	-- Windstrike Gloves
 			}),
-			filter(113, {	-- Bags
-				i(24270),	-- Bag of Jewels
-			}),
 		}),
 		n(-190, { 	-- Tailoring
-			i(24267),	-- Battlecast Hood
-			i(24266),	-- Spellstrike Hood
-			i(24264),	-- Whitemend Hood
-			i(21869),	-- Frozen Shadoweave Shoulders
-			i(32587),	-- Mantle of Nimble Thought
-			i(21874),	-- Primal Mooncloth Shoulders
-			i(21864),	-- Soulcloth Shoulders
-			i(32585),	-- Swiftheal Mantle
-			i(30831),	-- Cloak of Arcane Evasion
-			i(24253),	-- Cloak of Eternity
-			i(24252),	-- Cloak of the Black Void
-			i(24260),	-- Manaweave Cloak
-			i(32420),	-- Night's End
-			i(24258),	-- Resolute Cape
-			i(24259),	-- Vengeance Wrap
-			i(24254),	-- White Remedy Cape
-			i(21868),	-- Arcanoweave Robe
-			i(30839),	-- Flameheart Vest
-			i(21871),	-- Frozen Shadoweave Robe
-			i(21861),	-- Imbued Netherweave Robe
-			i(21862),	-- Imbued Netherweave Tunic
-			i(21854),	-- Netherweave Robe
-			i(21855),	-- Netherweave Tunic
-			i(21875),	-- Primal Mooncloth Robe
-			i(34365),	-- Robe of Eternal Light
-			i(21865),	-- Soulcloth Vest
-			i(21848),	-- Spellfire Robe
-			i(34364),	-- Sunfire Robe
-			i(21866),	-- Arcanoweave Bracers
-			i(24251),	-- Blackstrike Bracers
-			i(24250),	-- Bracers of Havok
-			i(32586),	-- Bracers of Nimble Thought
-			i(30837),	-- Flameheart Bracers
-			i(21849),	-- Netherweave Bracers
-			i(32392),	-- Soulguard Bracers
-			i(32584),	-- Swiftheal Wraps
-			i(24249),	-- Unyielding Bracers
-			i(30838),	-- Flameheart Gloves
-			i(34367),	-- Hands of Eternal Light
-			i(21851),	-- Netherweave Gloves
-			i(21863),	-- Soulcloth Gloves
-			i(21847),	-- Spellfire Gloves
-			i(34366),	-- Sunfire Handwraps
-			i(30038),	-- Belt of Blasting
-			i(30036),	-- Belt of the Long Road
-			i(24257),	-- Black Belt of Knowledge
-			i(24256),	-- Girdle of Ruination
-			i(21850),	-- Netherweave Belt
-			i(21873),	-- Primal Mooncloth Belt
-			i(32390),	-- Soulguard Girdle
-			i(21846),	-- Spellfire Belt
-			i(24255),	-- Unyielding Girdle
-			i(24263),	-- Battlecast Pants
-			i(21859),	-- Imbued Netherweave Pants
-			i(21852),	-- Netherweave Pants
-			i(32389),	-- Soulguard Leggings
-			i(24262),	-- Spellstrike Pants
-			i(24261),	-- Whitemend Pants
-			i(21867),	-- Arcanoweave Boots
-			i(30037),	-- Boots of Blasting
-			i(30035),	-- Boots of the Long Road
-			i(21870),	-- Frozen Shadoweave Boots
-			i(21860),	-- Imbued Netherweave Boots
-			i(21853),	-- Netherweave Boots
-			i(32391),	-- Soulguard Slippers
+			filter(113, { -- Bags
+				i(24270),	-- Bag of Jewels
+				i(22249),	-- Big Bag of Enchantment
+				i(21872),	-- Ebon Shadowbag
+				i(21843),	-- Imbued Netherweave Bag
+				i(38225),	-- Mycah's Botanical Bag
+				i(21841),	-- Netherweave Bag
+				i(21876),	-- Primal Mooncloth Bag
+				i(22252),	-- Satchel of Cenarius
+				i(21858),	-- Spellfire Bag
+			}),	
+			n(-323, {	-- Chest
+				i(21868),	-- Arcanoweave Robe
+				i(30839),	-- Flameheart Vest
+				i(21871),	-- Frozen Shadoweave Robe
+				i(21861),	-- Imbued Netherweave Robe
+				i(21862),	-- Imbued Netherweave Tunic
+				i(21854),	-- Netherweave Robe
+				i(21855),	-- Netherweave Tunic
+				i(21875),	-- Primal Mooncloth Robe
+				i(34365),	-- Robe of Eternal Light
+				i(21865),	-- Soulcloth Vest
+				i(21848),	-- Spellfire Robe
+				i(34364),	-- Sunfire Robe
+			}),
+			n(-322, {	-- Cloaks
+				i(30831),	-- Cloak of Arcane Evasion
+				i(24253),	-- Cloak of Eternity
+				i(24252),	-- Cloak of the Black Void
+				i(24260),	-- Manaweave Cloak
+				i(32420),	-- Night's End
+				i(24258),	-- Resolute Cape
+				i(24259),	-- Vengeance Wrap
+				i(24254),	-- White Remedy Cape
+			}),
+			n(-330, {	-- Feet
+				i(21867),	-- Arcanoweave Boots
+				i(30037),	-- Boots of Blasting
+				i(30035),	-- Boots of the Long Road
+				i(21870),	-- Frozen Shadoweave Boots
+				i(21860),	-- Imbued Netherweave Boots
+				i(21853),	-- Netherweave Boots
+				i(32391),	-- Soulguard Slippers
+			}),
+			n(-327, {	-- Hands
+				i(30838),	-- Flameheart Gloves
+				i(34367),	-- Hands of Eternal Light
+				i(21851),	-- Netherweave Gloves
+				i(21863),	-- Soulcloth Gloves
+				i(21847),	-- Spellfire Gloves
+				i(34366),	-- Sunfire Handwraps
+			}),
+			n(-320, {	-- Head
+				i(24267),	-- Battlecast Hood
+				i(24266),	-- Spellstrike Hood
+				i(24264),	-- Whitemend Hood
+			}),
+			n(-329, {	-- Legs
+				i(24263),	-- Battlecast Pants
+				i(21859),	-- Imbued Netherweave Pants
+				i(21852),	-- Netherweave Pants
+				i(32389),	-- Soulguard Leggings
+				i(24262),	-- Spellstrike Pants
+				i(24261),	-- Whitemend Pants
+			}),
+			n(-321, {	-- Shoulders
+				i(21869),	-- Frozen Shadoweave Shoulders
+				i(32587),	-- Mantle of Nimble Thought
+				i(21874),	-- Primal Mooncloth Shoulders
+				i(21864),	-- Soulcloth Shoulders
+				i(32585),	-- Swiftheal Mantle
+			}),
+			n(-328, {	-- Waist
+				i(30038),	-- Belt of Blasting
+				i(30036),	-- Belt of the Long Road
+				i(24257),	-- Black Belt of Knowledge
+				i(24256),	-- Girdle of Ruination
+				i(21850),	-- Netherweave Belt
+				i(21873),	-- Primal Mooncloth Belt
+				i(32390),	-- Soulguard Girdle
+				i(21846),	-- Spellfire Belt
+				i(24255),	-- Unyielding Girdle
+			}),
+			n(-326, {	-- Wrist
+				i(21866),	-- Arcanoweave Bracers
+				i(24251),	-- Blackstrike Bracers
+				i(24250),	-- Bracers of Havok
+				i(32586),	-- Bracers of Nimble Thought
+				i(30837),	-- Flameheart Bracers
+				i(21849),	-- Netherweave Bracers
+				i(32392),	-- Soulguard Bracers
+				i(32584),	-- Swiftheal Wraps
+				i(24249),	-- Unyielding Bracers
+			}),
 		}),
 	}),
 };

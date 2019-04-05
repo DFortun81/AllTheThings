@@ -597,51 +597,76 @@ _.Craftables =
 			}),
 		}),
 		n(-190, { 	-- Tailoring
-			i(54476),	-- Deathsilk Cowl
-			i(54485),	-- Spiritmend Cowl
-			i(75073),	-- Vicious Embersilk Cowl
-			i(75062),	-- Vicious Fireweave Cowl
-			i(54474),	-- Deathsilk Shoulders
-			i(54479),	-- Spiritmend Shoulders
-			i(75064),	-- Vicious Embersilk Shoulders
-			i(75091),	-- Vicious Fireweave Shoulders
-			i(75065),	-- Vicious Embersilk Cape
-			i(54475),	-- Deathsilk Robe
-			i(54486),	-- Spiritmend Robe
-			i(75093),	-- Vicious Embersilk Robe
-			i(75088),	-- Vicious Fireweave Robe
-			i(71989),	-- Bracers of Unconquered Power
-			i(54473),	-- Deathsilk Bracers
-			i(71990),	-- Dreamwraps of the Light
-			i(54480),	-- Spiritmend Bracers
-			i(75098),	-- Vicious Embersilk Bracers
-			i(75089),	-- Vicious Fireweave Bracers
-			i(54478),	-- Deathsilk Gloves
-			i(69945),	-- Don Tayo's Inferno Mittens
-			i(69944),	-- Grips of Altered Reality
-			i(54484),	-- Spiritmend Gloves
-			i(75070),	-- Vicious Embersilk Gloves
-			i(75063),	-- Vicious Fireweave Gloves
-			i(54504),	-- Belt of the Depths
-			i(54471),	-- Deathsilk Belt
-			i(54503),	-- Dreamless Belt
-			i(54481),	-- Spiritmend Belt
-			i(75096),	-- Vicious Embersilk Belt
-			i(75086),	-- Vicious Fireweave Belt
-			i(54505),	-- Breeches of Mended Nightmares
-			i(54472),	-- Deathsilk Leggings
-			i(54506),	-- Flame-Ascended Pantaloons
-			i(71980),	-- Lavaquake Legwraps
-			i(54483),	-- Spiritmend Leggings
-			i(75072),	-- Vicious Embersilk Pants
-			i(75082),	-- Vicious Fireweave Pants
-			i(71981),	-- World Mender's Pants
-			i(69954),	-- Boots of the Black Flame
-			i(54477),	-- Deathsilk Boots
-			i(69953),	-- Endless Dream Walkers
-			i(54482),	-- Spiritmend Boots
-			i(75095),	-- Vicious Embersilk Boots
-			i(75087),	-- Vicious Fireweave Boots
+			filter(113, {	-- Bags
+				i(54443),	-- Embersilk Bag
+				i(54446),	-- Hyjal Expedition Bag
+				i(54444),	-- Illusionary Bag
+				i(70138),	-- Luxurious Silk Gem Bag
+				i(54445),	-- Otherworldly Bag
+			}),
+			n(-323, {	-- Chest
+				i(54475),	-- Deathsilk Robe
+				i(54486),	-- Spiritmend Robe
+				i(75093),	-- Vicious Embersilk Robe
+				i(75088),	-- Vicious Fireweave Robe
+			}),
+			n(-322, {	-- Cloaks
+				i(75065),	-- Vicious Embersilk Cape
+			}),
+			n(-330, {	-- Feet
+				i(69954),	-- Boots of the Black Flame
+				i(54477),	-- Deathsilk Boots
+				i(69953),	-- Endless Dream Walkers
+				i(54482),	-- Spiritmend Boots
+				i(75095),	-- Vicious Embersilk Boots
+				i(75087),	-- Vicious Fireweave Boots
+			}),
+			n(-327, {	-- Hands
+				i(54478),	-- Deathsilk Gloves
+				i(69945),	-- Don Tayo's Inferno Mittens
+				i(69944),	-- Grips of Altered Reality
+				i(54484),	-- Spiritmend Gloves
+				i(75070),	-- Vicious Embersilk Gloves
+				i(75063),	-- Vicious Fireweave Gloves
+			}),
+			n(-320, {	-- Head
+				i(54476),	-- Deathsilk Cowl
+				i(54485),	-- Spiritmend Cowl
+				i(75073),	-- Vicious Embersilk Cowl
+				i(75062),	-- Vicious Fireweave Cowl
+			}),
+			n(-329, {	-- Legs
+				i(54505),	-- Breeches of Mended Nightmares
+				i(54472),	-- Deathsilk Leggings
+				i(54506),	-- Flame-Ascended Pantaloons
+				i(71980),	-- Lavaquake Legwraps
+				i(54483),	-- Spiritmend Leggings
+				i(75072),	-- Vicious Embersilk Pants
+				i(75082),	-- Vicious Fireweave Pants
+				i(71981),	-- World Mender's Pants
+			}),
+			n(-321, {	-- Shoulders
+				i(54474),	-- Deathsilk Shoulders
+				i(54479),	-- Spiritmend Shoulders
+				i(75064),	-- Vicious Embersilk Shoulders
+				i(75091),	-- Vicious Fireweave Shoulders
+			}),
+			n(-328, {	-- Waist
+				i(54504),	-- Belt of the Depths
+				i(54471),	-- Deathsilk Belt
+				i(54503),	-- Dreamless Belt
+				i(54481),	-- Spiritmend Belt
+				i(75096),	-- Vicious Embersilk Belt
+				i(75086),	-- Vicious Fireweave Belt
+			}),
+			n(-326, {	-- Wrist
+				i(71989),	-- Bracers of Unconquered Power
+				i(54473),	-- Deathsilk Bracers
+				i(71990),	-- Dreamwraps of the Light
+				i(54480),	-- Spiritmend Bracers
+				i(75098),	-- Vicious Embersilk Bracers
+				i(75089),	-- Vicious Fireweave Bracers
+			}),
 		}),
 	}),
 };
