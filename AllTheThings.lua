@@ -4091,7 +4091,6 @@ end
 
 -- Heirloom Lib
 (function()
-local heirloomUpdateLevels = {};
 local isWeapon = { 20, 29, 28,  21, 22, 23, 24, 25, 26,  50, 57, 34, 35, 27,  33, 32, 31 };
 local armorTextures = {
 	"Interface/ICONS/INV_Icon_HeirloomToken_Armor01",
@@ -4105,7 +4104,6 @@ local weaponTextures = {
 	"Interface/ICONS/inv_weapon_shortblade_112",
 	"Interface/ICONS/inv_weapon_shortblade_111"
 };
-local armorTokens, weaponTokens;
 app.BaseHeirloomUnlocked = {
 	__index = function(t, key)
 		if key == "collectible" then
@@ -4241,45 +4239,40 @@ app.BaseHeirloom = {
 			if app.CollectibleHeirlooms then
 				local total = C_Heirloom.GetHeirloomMaxUpgradeLevel(t.itemID);
 				if total then
-					local g = heirloomUpdateLevels[t.itemID];
-					if not g then
-						if not armorTokens then
-							armorTokens = {
-								app.CreateItem(167731),	-- Battle-Hardened Heirloom Armor Casing
-								app.CreateItem(151614),	-- Weathered Heirloom Armor Casing
-								app.CreateItem(122340),	-- Timeworn Heirloom Armor Casing
-								app.CreateItem(122338),	-- Ancient Heirloom Armor Casing
-							};
-							weaponTokens = {
-								app.CreateItem(167732),	-- Battle-Hardened Heirloom Scabbard
-								app.CreateItem(151615),	-- Weathered Heirloom Scabbard
-								app.CreateItem(122341),	-- Timeworn Heirloom Scabbard
-								app.CreateItem(122339),	-- Ancient Heirloom Scabbard
-							};
-							for i,item in ipairs(armorTokens) do
-								CacheFields(item);
-								item.g = {};
-							end
-							for i,item in ipairs(weaponTokens) do
-								CacheFields(item);
-								item.g = {};
-							end
+					local armorTokens = {
+						app.CreateItem(167731),	-- Battle-Hardened Heirloom Armor Casing
+						app.CreateItem(151614),	-- Weathered Heirloom Armor Casing
+						app.CreateItem(122340),	-- Timeworn Heirloom Armor Casing
+						app.CreateItem(122338),	-- Ancient Heirloom Armor Casing
+					};
+					local weaponTokens = {
+						app.CreateItem(167732),	-- Battle-Hardened Heirloom Scabbard
+						app.CreateItem(151615),	-- Weathered Heirloom Scabbard
+						app.CreateItem(122341),	-- Timeworn Heirloom Scabbard
+						app.CreateItem(122339),	-- Ancient Heirloom Scabbard
+					};
+					for i,item in ipairs(armorTokens) do
+						CacheFields(item);
+						item.g = {};
+					end
+					for i,item in ipairs(weaponTokens) do
+						CacheFields(item);
+						item.g = {};
+					end
+					g = {};
+					tinsert(g, setmetatable({ ["parent"] = t }, app.BaseHeirloomUnlocked));
+					for i=1,total,1 do
+						local l = setmetatable({ ["level"] = i, ["parent"] = t, ["u"] = t.u }, app.BaseHeirloomLevel);
+						local c = setmetatable({ ["level"] = i, ["itemID"] = t.itemID, ["parent"] = t, ["u"] = t.u, ["f"] = t.f }, app.BaseHeirloomLevel);
+						if l.isWeapon then
+							tinsert(weaponTokens[total + 1 - i].g, c);
+						else
+							tinsert(armorTokens[total + 1 - i].g, c);
 						end
-						g = {};
-						heirloomUpdateLevels[t.itemID] = g;
-						tinsert(g, setmetatable({ ["parent"] = t }, app.BaseHeirloomUnlocked));
-						for i=1,total,1 do
-							local l = setmetatable({ ["level"] = i, ["parent"] = t, ["u"] = t.u }, app.BaseHeirloomLevel);
-							local c = setmetatable({ ["level"] = i, ["itemID"] = t.itemID, ["parent"] = t, ["u"] = t.u, ["f"] = t.f }, app.BaseHeirloomLevel);
-							if l.isWeapon then
-								tinsert(weaponTokens[total + 1 - i].g, c);
-							else
-								tinsert(armorTokens[total + 1 - i].g, c);
-							end
-							tinsert(g, l);
-						end
+						tinsert(g, l);
 					end
 					BuildGroups(t, g);
+					app.UpdateGroups(t, g);
 					rawset(t, "g", g);
 					return g;
 				end
