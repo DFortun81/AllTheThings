@@ -292,6 +292,9 @@ _.WorldDrops =
 					{	-- Glass Ring
 						["itemID"] = 36419,	-- Glass Ring
 					},
+					{	-- Milan's Mastercraft Band
+						["itemID"] = 37819,	-- Milan's Mastercraft Band
+					},
 					{	-- Oval Ring
 						["itemID"] = 36417,	-- Oval Ring
 					},
@@ -301,15 +304,26 @@ _.WorldDrops =
 					{	-- Puzzle Ring
 						["itemID"] = 36430,	-- Puzzle Ring
 					},
+					{	-- Raine's Signet of Blasting
+						["itemID"] = 37821,	-- Raine's Signet of Blasting
+					},
+					{	-- Signet of Edward the Odd
+						["itemID"] = 44308,	-- Signet of Edward the Odd
+					},
 					{	-- Spur Ring
 						["itemID"] = 36429,	-- Spur Ring
 					},
 					{	-- Stirrup Ring
 						["itemID"] = 36426,	-- Stirrup Ring
 					},
-					i(37751),	-- Tooga's Lost Toennail
+					{	-- Tooga's Lost Toennail
+						["itemID"] = 37751,	-- Tooga's Lost Toennail
+					},
 					{	-- Twisted Puzzle-Ring
 						["itemID"] = 37822,	-- Twisted Puzzle-Ring
+					},
+					{	-- Worgen's Ring of Revitalization
+						["itemID"] = 37820,	-- Worgen's Ring of Revitalization
 					},
 				}),
 				filter(53, {	-- Trinket

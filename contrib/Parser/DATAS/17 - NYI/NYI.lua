@@ -916,6 +916,8 @@ _.NeverImplemented =
 			un(1, i(33958)),	-- The Horseman's Signet Ring (unused version)
 			un(1, i(33959)),	-- Ring of Ghoulish Delight (unused version)
 			un(1, i(34712)),	-- Unknown (might be Prismatic Signet)
+			un(1, i(37531)),	-- Unknown (might be Circle of Frigid Wind)
+			un(1, i(46842)),	-- Unknown
 		}),
 		n(-386, {	-- Trinket
 			un(1, i(12805)),	-- Orb of Fire

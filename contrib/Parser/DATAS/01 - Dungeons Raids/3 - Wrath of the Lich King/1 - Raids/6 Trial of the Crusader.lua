@@ -1084,7 +1084,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					h(i(47435)),	-- Pants of the Soothing Touch
 					a(i(47003)),	-- Dawnbreaker Greaves
 					h(i(47430)),	-- Dawnbreaker Sabatons
-					h(i(47278)),	-- Circle of the Darkmender
+					h(i(47439)),	-- Circle of the Darkmender
 					a(i(47224)),	-- Ring of the Darkmender
 					a(i(47059)),	-- Solace of the Defeated
 					h(i(47432)),	-- Solace of the Fallen

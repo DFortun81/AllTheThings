@@ -121,6 +121,14 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				["groups"] = {
 					ach(491),	-- Heroic: Azjol-Nerub
 					n(0, {		-- Zone Drop
+						i(37624, {	-- Stained-Glass Shard Ring
+							["crs"] = {
+								29128,	-- Anub'ar Prime Guard
+								28734,	-- Anub'ar Skirmisher
+								28732,	-- Anub'ar Warrior
+								29335,	-- Anub'ar Webspinner
+							},
+						}),
 						i(37243, {	-- Treasure Seeker's Belt
 							["crs"] = {
 								29128,	-- Anub'ar Prime Guard
