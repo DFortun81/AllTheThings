@@ -309,6 +309,7 @@ _.Zones =
 						["questID"] = 27340,
 						["groups"] = {
 							i(33240),	-- Grimtotem Earthbinder's Tunic
+							un(2, i(33262)),	-- Morlann's Seal
 							i(57827),	-- Morlann's Other Seal
 							i(33261),	-- Destroyer's Cloak
 							i(57831),	-- Direhorn Cinch

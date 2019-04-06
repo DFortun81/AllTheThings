@@ -90,6 +90,7 @@ _.Zones =
 									i(30369),	-- Cleansed Fel Pauldrons
 									i(30370),	-- Gauntlets of the Redeemed Vindicator
 									i(30371),	-- Lightwarden's Girdle
+									i(30860),	-- Kaylaan's Signet
 								},
 								["qg"] = 18538,	-- Ishanah
 								["sourceQuests"] = { 10410 },	-- Ishanah's Help

@@ -8,6 +8,31 @@ _.Instances = { tier(2, {	-- Burning Crusade
 		["maps"] = { 348, 349 },
 		["coord"] = { 61.23, 30.94, 122 },	-- Magister's Terrace, Isle of Quel'Danas
 		["groups"] = {
+			n(-17, {	-- Quests
+				{	-- A Radical Notion
+					["questID"] = 29686,	-- A Radical Notion
+					["qg"] = 55007,	-- Exarch Larethor
+				},
+				{	-- Hard to Kill
+					["questID"] = 29685,	-- Hard to Kill
+					["qg"] = 24848,	-- Kalecgos
+					["sourceQuest"] = 11490,	-- The Scryer's Scryer
+				},
+				{	-- Severed Communications
+					["questID"] = 29684,	-- Severed Communications
+					["qg"] = 55007,	-- Exarch Larethor
+					["sourceQuest"] = 11482,	-- Duty Calls
+				},
+				{	-- The Scryer's Scryer
+					["questID"] = 11490,	-- The Scryer's Scryer
+					["qg"] = 24822,	-- Tyrith
+					["sourceQuest"] = 29684,	-- Severed Communications
+				},
+				{	-- Twisted Associations
+					["questID"] = 29687,	-- Twisted Associations
+					["qg"] = 55007,	-- Exarch Larethor
+				},
+			}),
 			d(1, {	-- Normal
 				e(530, { -- Selin Fireheart
 					["creatureID"] = 24723,

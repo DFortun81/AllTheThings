@@ -73,7 +73,7 @@ _.Zones =
 							["description"] = "|cff66ccffOne of five random fishing daily quests. The other four do not drop minipets.|r",
 							["groups"] = {
 								i(35348,  { -- Bag of Fishing Treasures
-									i(35350),	 -- Chuck's Bucket
+									i(35350),	-- Chuck's Bucket
 									i(33818),	-- Muckbreath's Bucket
 									i(35349),	-- Snarly's Bucket
 									i(33816),	-- Toothy's Bucket
