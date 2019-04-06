@@ -7,11 +7,15 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 		["isRaid"] = true,
 		["lvl"] = 100,
 		["groups"] = {
-			cr(81252, e(1291, {	-- Drov the Ruiner
+			e(1291, {	-- Drov the Ruiner
 				["questID"] = 37462,
 				["isRaid"] = true,
 				["maps"] = { 543 },	-- Gorgrond
 				["coord"] = { 44.1, 39.9, 543 },
+				["crs"] = {
+					81252,	-- Drov the Ruiner
+					87437,	-- Drov the Ruiner
+				},
 				["groups"] = {	
 					i(120086),	-- Bone Charm Chain
 					i(120084),	-- Braided Magnaron Plait
@@ -27,13 +31,17 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(115430),	-- Cord of Ruination
 					i(115432),	-- Waistplate of Bladed Force
 				},
-			})),
-			cr(87493, e(1262, {	-- Rukhmar
+			}),
+			e(1262, {	-- Rukhmar
 				["achievementID"] = 9425,
 				["questID"] = 37464,
 				["isRaid"] = true,
 				["maps"] = { 542 }, -- Spires of Arak
 				["coord"] = { 37.0, 39.3, 542 },
+				["crs"] = {
+					87493,	-- Rukhmar (WoWHead)
+					83746,	-- Rukhmar (Crieve)
+				},
 				["groups"] = {
 					i(116771),	-- Solar Spirehawk (MOUNT!)
 					i(127775, {	-- Gemcutter Module: Stamina
@@ -58,7 +66,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(115439),	-- Firemender Seal
 					i(115438),	-- Signet of Burning Truths
 				},
-			})),
+			}),
 			cr(94015, e(1452, { -- Supreme Lord Kazzak
 				["questID"] = 39380,
 				["isRaid"] = true,
