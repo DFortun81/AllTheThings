@@ -2918,7 +2918,9 @@ local function AttachTooltip(self)
 				if spellID then
 					AttachTooltipSearchResults(self, "spellID:" .. spellID, SearchForField, "spellID", spellID);
 					self:Show();
-					self.AllTheThingsProcessing = nil;
+					if owner and owner.ActiveTexture then
+						self.AllTheThingsProcessing = nil;
+					end
 					return true;
 				end
 				
@@ -2927,7 +2929,6 @@ local function AttachTooltip(self)
 				if link then AttachTooltipSearchResults(self, link, SearchForLink, link); end
 				
 				-- Does the tooltip have an owner?
-				local owner = self:GetOwner();
 				if owner then
 					-- If the owner has a ref, it's an ATT row. Ignore it.
 					if owner.ref then return true; end
