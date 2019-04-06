@@ -5381,6 +5381,43 @@ app.CreateSpell = function(id, t)
 end
 
 -- Species Lib
+(function()
+local collectedSpecies = {};
+app.events.NEW_PET_ADDED = function(petID)
+	local speciesID = select(1, C_PetJournal.GetPetInfoByPetID(petID));
+	--print("NEW_PET_ADDED", petID, speciesID);
+	if speciesID and C_PetJournal.GetNumCollectedInfo(speciesID) > 0 and not collectedSpecies[speciesID] then
+		collectedSpecies[speciesID] = true;
+		UpdateSearchResults(SearchForField("speciesID", speciesID));
+		app:PlayFanfare();
+		wipe(searchCache);
+		collectgarbage();
+	end
+end
+app.events.PET_JOURNAL_PET_DELETED = function(petID)
+	-- /dump C_PetJournal.GetPetInfoByPetID("BattlePet-0-00001006503D")
+	-- local speciesID = select(1, C_PetJournal.GetPetInfoByPetID(petID));
+	-- NOTE: Above APIs do not work in the DELETED API, THANKS BLIZZARD
+	-- print("PET_JOURNAL_PET_DELETED", petID);
+	
+	-- Check against all of the collected species for a species that is no longer 1/X
+	local atLeastOne = false;
+	for speciesID,collected in pairs(collectedSpecies) do
+		if C_PetJournal.GetNumCollectedInfo(speciesID) < 1 then
+			atLeastOne = true;
+			break;
+		end
+	end
+	if atLeastOne then
+		wipe(collectedSpecies);
+		app:PlayRemoveSound();
+		
+		-- Refresh the Collection Windows!
+		app:RefreshData(false, true, true);
+		wipe(searchCache);
+		collectgarbage();
+	end
+end
 app.BaseSpecies = {
 	__index = function(t, key)
 		if key == "key" then
@@ -5390,7 +5427,8 @@ app.BaseSpecies = {
 		elseif key == "collectible" then
 			return app.CollectibleBattlePets;
 		elseif key == "collected" then
-			if select(1, C_PetJournal.GetNumCollectedInfo(t.speciesID)) > 0 then
+			if collectedSpecies[t.speciesID] or select(1, C_PetJournal.GetNumCollectedInfo(t.speciesID)) > 0 then
+				collectedSpecies[t.speciesID] = true;
 				return 1;
 			end
 		elseif key == "text" then
@@ -5422,6 +5460,7 @@ app.BaseSpecies = {
 app.CreateSpecies = function(id, t)
 	return createInstance(constructor(id, t, "speciesID"), app.BaseSpecies);
 end
+end)();
 
 -- Tier Lib
 (function()
@@ -11479,23 +11518,6 @@ app.events.UPDATE_INSTANCE_INFO = function()
 end
 app.events.COMPANION_LEARNED = function(...)
 	--print("COMPANION_LEARNED", ...);
-	RefreshMountCollection();
-end
-app.events.NEW_PET_ADDED = function(petID)
-	local speciesID = select(1, C_PetJournal.GetPetInfoByPetID(petID));
-	--print("NEW_PET_ADDED", petID, speciesID);
-	if speciesID and C_PetJournal.GetNumCollectedInfo(speciesID) == 1 then
-		UpdateSearchResults(SearchForField("speciesID", speciesID));
-		app:PlayFanfare();
-		wipe(searchCache);
-		collectgarbage();
-	end
-end
-app.events.PET_JOURNAL_PET_DELETED = function(petID)
-	-- /dump C_PetJournal.GetPetInfoByPetID("BattlePet-0-00001006503D")
-	-- local speciesID = select(1, C_PetJournal.GetPetInfoByPetID(petID));
-	-- NOTE: Above APIs do not work in the DELETED API, THANKS BLIZZARD
-	--print("PET_JOURNAL_PET_DELETED", petID);
 	RefreshMountCollection();
 end
 app.events.COMPANION_UNLEARNED = function(...)
