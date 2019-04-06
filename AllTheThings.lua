@@ -8856,11 +8856,18 @@ end
 function app:RefreshData(lazy, safely, got)
 	--print("RefreshData(" .. tostring(lazy or false) .. ", " .. tostring(safely or false) .. ")");
 	app.refreshDataForce = app.refreshDataForce or not lazy;
+	app.countdown = 30;
 	StartCoroutine("RefreshData", function()
 		-- This method can be triggered by an event, if so, we want to safely wait for combat to end.
 		if safely then
 			-- While the player is in combat, wait for combat to end.
 			while InCombatLockdown() do coroutine.yield(); end
+		end
+		
+		-- Wait 1/2 second. For multiple simultaneous requests, each one will reapply the delay. [This should fix a lot of lag with ensembles.]
+		while app.countdown > 0 do
+			app.countdown = app.countdown - 1;
+			coroutine.yield();
 		end
 		
 		-- Send an Update to the Windows to Rebuild their Row Data
