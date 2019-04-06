@@ -4229,8 +4229,8 @@ app.BaseHeirloom = {
 			end
 		elseif key == "modID" then
 			return 1;
-		--elseif key == "b" then
-		--	return 1;
+		elseif key == "b" then
+			return 2;
 		elseif key == "text" then
 			return t.link;
 		elseif key == "link" then
@@ -4709,6 +4709,8 @@ app.BaseItem = {
 				end
 				return string.format("i:%d", itemLink);
 			end
+		elseif key == "b" then
+			return 2;
 		else
 			-- Something that isn't dynamic.
 			return table[key];
@@ -4787,6 +4789,8 @@ app.BaseItemSource = {
 			end
 		elseif key == "s" then
 			return 0;
+		elseif key == "b" then
+			return 2;
 		else
 			-- Something that isn't dynamic.
 			return table[key];
@@ -4845,8 +4849,8 @@ app.BaseMount = {
 				SetDataSubMember("CollectedSpells", t.spellID, 1);
 				return 1;
 			end
-		--elseif key == "b" then
-		--	return (t.parent and t.parent.b) or 1;
+		elseif key == "b" then
+			return (t.parent and t.parent.b) or 1;
 		elseif key == "text" then
 			return "|cffb19cd9" .. (select(1, GetSpellInfo(t.spellID)) or "???") .. "|r";
 			--return select(1, GetSpellLink(t.spellID)) or select(1, GetSpellInfo(t.spellID)) or ("Spell #" .. t.spellID);
@@ -5254,6 +5258,8 @@ app.BaseRecipe = {
 			end
 		elseif key == "skillID" then
 			return t.requireSkill;
+		elseif key == "b" then
+			return t.itemID and 2;
 		else
 			-- Something that isn't dynamic.
 			return table[key];
@@ -5634,6 +5640,8 @@ app.BaseToy = {
 			return select(2, C_ToyBox_GetToyInfo(t.itemID));
 		elseif key == "tsm" then
 			return string.format("i:%d", t.itemID);
+		elseif key == "b" then
+			return 2;
 		else
 			-- Something that isn't dynamic.
 			return table[key];
@@ -5770,7 +5778,7 @@ function app.FilterGroupsByCompletion(group)
 	return group.progress < group.total;
 end
 function app.FilterItemBind(item)
-	return item.b == 1; -- BoE
+	return item.b == 2 or item.b == 3; -- BoE
 end
 function app.FilterItemClass(item)
 	if app.UnobtainableItemFilter(item) and app.SeasonalItemFilter(item) then
@@ -5829,7 +5837,7 @@ function app.FilterItemClass_UnobtainableItem(item)
 	end
 end
 function app.FilterItemClass_RequireBinding(item)
-	if item.b and item.b == 1 then
+	if item.b and (item.b == 2 or item.b == 3) then
 		return false;
 	else
 		return true;
