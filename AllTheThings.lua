@@ -5259,7 +5259,7 @@ app.BaseRecipe = {
 		elseif key == "skillID" then
 			return t.requireSkill;
 		elseif key == "b" then
-			return t.itemID and 2;
+			return t.itemID and app.AccountWideRecipes and 2;
 		else
 			-- Something that isn't dynamic.
 			return table[key];
