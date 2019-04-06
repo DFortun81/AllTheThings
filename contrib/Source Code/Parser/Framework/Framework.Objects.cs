@@ -1864,21 +1864,11 @@ namespace Parser_V2
                     case "specs":
                     case "difficulties":
                     case "sourceQuests":
+                    case "races":
                     case "maps":
                     case "qgs":
                     case "crs":
                         {
-                            MergeArrayData(item, field, value);
-                            break;
-                        }
-                    case "races":
-                        {
-                            // Check for Mark of Honor and don't merge!
-                            if (item.TryGetValue("itemID", out int itemID) && itemID == 137642)
-                            {
-                                // We don't want to merge this!
-                                break;
-                            }
                             MergeArrayData(item, field, value);
                             break;
                         }

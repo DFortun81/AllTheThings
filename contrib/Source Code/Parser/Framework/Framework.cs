@@ -424,12 +424,15 @@ namespace Parser_V2
                                         }
                                     }
 
-                                    var newItem = new Dictionary<string, object>
+                                    if (item.TryGetValue("itemID", out int itemID))
                                     {
-                                        {"itemID", item["itemID"] },
-                                    };
-                                    Items.MergeInto(item, newItem);
-                                    listing.Add(newItem);
+                                        var newItem = new Dictionary<string, object>
+                                        {
+                                            {"itemID", itemID },
+                                        };
+                                        Items.MergeInto(itemID, item, newItem);
+                                        listing.Add(newItem);
+                                    }
                                     break;
                                 }
                             default:
@@ -447,12 +450,15 @@ namespace Parser_V2
                                             });
                                         }
 
-                                        var newItem = new Dictionary<string, object>
+                                        if (item.TryGetValue("itemID", out int itemID))
                                         {
-                                            {"itemID", item["itemID"] },
-                                        };
-                                        Items.MergeInto(item, newItem);
-                                        listing.Add(newItem);
+                                            var newItem = new Dictionary<string, object>
+                                            {
+                                                {"itemID", itemID },
+                                            };
+                                            Items.MergeInto(itemID, item, newItem);
+                                            listing.Add(newItem);
+                                        }
                                     }
                                     break;
                                 }
