@@ -249,7 +249,6 @@ _.Zones =
 							["currencyID"] = 1579,	-- Champions of Azeroth
 							["modID"] = 1,
 							["q"] = 3,
-							["b"] = 1,
 							["ilvl"] = 120,
 							["factionID"] = 2164,
 							["f"] = 104,			-- Quest

@@ -56,49 +56,41 @@ _.Zones =
 									["itemID"] = 44133,	-- Greater Inscription of the Axe
 									["spellID"] = 0,	-- Ignore
 									["f"] = 55,		-- Consumable
-									["b"] = 0,	-- Ignore BoA
 								},
 								{
 									["itemID"] = 50335,	-- Greater Inscription of the Axe
 									["spellID"] = 0,	-- Ignore
 									["f"] = 55,		-- Consumable
-									["b"] = 0,	-- Ignore BoA
 								},
 								{
 									["itemID"] = 44134,	-- Greater Inscription of the Crag
 									["spellID"] = 0,	-- Ignore
 									["f"] = 55,		-- Consumable
-									["b"] = 0,	-- Ignore BoA
 								},
 								{
 									["itemID"] = 50336,	-- Greater Inscription of the Crag
 									["spellID"] = 0,	-- Ignore
 									["f"] = 55,		-- Consumable
-									["b"] = 0,	-- Ignore BoA
 								},
 								{
 									["itemID"] = 44136,	-- Greater Inscription of the Pinnacle
 									["spellID"] = 0,	-- Ignore
 									["f"] = 55,		-- Consumable
-									["b"] = 0,	-- Ignore BoA
 								},
 								{
 									["itemID"] = 50337,	-- Greater Inscription of the Pinnacle
 									["spellID"] = 0,	-- Ignore
 									["f"] = 55,		-- Consumable
-									["b"] = 0,	-- Ignore BoA
 								},
 								{
 									["itemID"] = 44135,	-- Greater Inscription of the Storm
 									["spellID"] = 0,	-- Ignore
 									["f"] = 55,		-- Consumable
-									["b"] = 0,	-- Ignore BoA
 								},
 								{
 									["itemID"] = 50338,	-- Greater Inscription of the Storm
 									["spellID"] = 0,	-- Ignore
 									["f"] = 55,		-- Consumable
-									["b"] = 0,	-- Ignore BoA
 								},
 							},
 							["coord"] = { 66.1, 61.4, 120 },

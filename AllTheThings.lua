@@ -4229,8 +4229,8 @@ app.BaseHeirloom = {
 			end
 		elseif key == "modID" then
 			return 1;
-		elseif key == "b" then
-			return 1;
+		--elseif key == "b" then
+		--	return 1;
 		elseif key == "text" then
 			return t.link;
 		elseif key == "link" then
@@ -4845,8 +4845,8 @@ app.BaseMount = {
 				SetDataSubMember("CollectedSpells", t.spellID, 1);
 				return 1;
 			end
-		elseif key == "b" then
-			return (t.parent and t.parent.b) or 1;
+		--elseif key == "b" then
+		--	return (t.parent and t.parent.b) or 1;
 		elseif key == "text" then
 			return "|cffb19cd9" .. (select(1, GetSpellInfo(t.spellID)) or "???") .. "|r";
 			--return select(1, GetSpellLink(t.spellID)) or select(1, GetSpellInfo(t.spellID)) or ("Spell #" .. t.spellID);
@@ -5770,7 +5770,7 @@ function app.FilterGroupsByCompletion(group)
 	return group.progress < group.total;
 end
 function app.FilterItemBind(item)
-	return item.b == 2 or item.b == 3; -- BoE
+	return item.b == 1; -- BoE
 end
 function app.FilterItemClass(item)
 	if app.UnobtainableItemFilter(item) and app.SeasonalItemFilter(item) then
@@ -5829,7 +5829,7 @@ function app.FilterItemClass_UnobtainableItem(item)
 	end
 end
 function app.FilterItemClass_RequireBinding(item)
-	if item.b and (item.b == 2 or item.b == 3) then
+	if item.b and item.b == 1 then
 		return false;
 	else
 		return true;
