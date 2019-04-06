@@ -3552,6 +3552,8 @@ app.BaseUnit = {
 			else
 				rawset(t, "isGUID", false);
 			end
+		elseif key == "collectible" then
+			if t.unit == "player" and app.Settings:Get("DebugMode") then return true; end
 		else
 			-- Something that isn't dynamic.
 			return table[key];
@@ -8403,24 +8405,6 @@ function app:GetDataCache()
 		table.insert(g, app.CreateUnit("player", {
 			["collected"] = 1,
 			["description"] = "Awarded for logging in.\n\nGood job! YOU DID IT!\n\nOnly visible while in Debug Mode.",
-			['OnUpdate'] = function(data)
-				if app.Settings:Get("DebugMode") then
-					data.visible = true;
-					data.collectible = true;
-					
-					-- Increment the parent group's totals.
-					data.parent.total = (data.parent.total or 0) + 1;
-					data.parent.progress = (data.parent.progress or 0) + 1;
-				else
-					data.visible = false;
-					if data.collectible then
-						data.collectible = false;
-						-- Decrement the parent group's totals.
-						data.parent.total = (data.parent.total or 0) - 1;
-						data.parent.progress = (data.parent.progress or 0) - 1;
-					end
-				end
-			end,
 		}));
 		
 		--[[
