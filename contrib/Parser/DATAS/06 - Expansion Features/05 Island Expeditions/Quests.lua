@@ -10,8 +10,8 @@ _.ExpansionFeatures =
 			n(-17, {	-- Quests
 				["groups"] = {
 					{	-- Ancient Crypt Key [Both]
-						["itemID"] = 163470,	-- Ancient Crypt Key
-						--["questID"] = 53160,	-- Ancient Crypt Key
+						["itemID"] = 163470,	-- Ancient Crypt Key (Item)
+						--["questID"] = 53160,	-- Ancient Crypt Key (Quest)
 						["repeatable"] = true,
 					},
 					{	-- Azeroth's Tear [Both]
@@ -28,6 +28,11 @@ _.ExpansionFeatures =
 						["repeatable"] = true,
 						["description"] = "|CFFFF0000Turn this into Cyrus Crestfall in Boralus at 68, 21 for Proudmore Admiralty rep.|r",
 						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- Druidic Fur [Both]
+						["itemID"] = 163485,	-- Druidic Fur (Item)
+						--["questID"] = 53181,	-- Druidic Fur (Quest)
+						["repeatable"] = true,
 					},
 					{	-- Exotic Spices [A]
 						["itemID"] = 163614,	-- Exotic Spices
