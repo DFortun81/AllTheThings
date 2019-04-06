@@ -800,7 +800,7 @@ _.Zones =
 					}), 
 					n(14448, {	-- Molt Thorn
 						["g"] = {
-							dr(01.6, i(5608)),	-- Living Cowl
+							i(5608),	-- Living Cowl
 							un(2, i(11205)),	-- Formula: Enchant Gloves - Advanced Herbalism
 							dr(09.0, i(10108)),	-- Wanderer's Cloak
 							dr(03.0, i(10098)),	-- Councillor's Cloak
@@ -1039,11 +1039,9 @@ _.Zones =
 						}),
 						n(-16, {	-- Rares (Legacy)
 							un(43, n(766, {	-- Tangled Horror
-								un(7, i(5608)),	-- Living Cowl
+								i(5608),	-- Living Cowl
 							})),
 						}),
-						--n(  0, {	-- Zone Drop (Legacy)
-						--}),
 					},
 				}),
 			},
