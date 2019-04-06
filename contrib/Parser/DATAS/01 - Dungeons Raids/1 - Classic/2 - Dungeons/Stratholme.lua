@@ -79,6 +79,10 @@ _.Instances = { tier(1, {	-- Classic
 								10464,	-- Wailing Banshee
 							},
 						}),
+						i(12827, {	-- Plans: Serenity
+							["description"] = "This plan is found in the Scarlet Bastion. Only a Blacksmith can loot the plans. This will despawn once a player interacts with it.",
+							["requireSkill"] = 164,	-- Blacksmithing
+						}),
 						i(18745),	-- Sacred Cloth Leggings
 						i(18658,  { -- Schematic: Ultra-Flash Shadow Reflector
 							["crs"] = {
@@ -329,6 +333,10 @@ _.Instances = { tier(1, {	-- Classic
 								10464,	-- Wailing Banshee
 							},
 						}),
+						i(12830, {	-- Plans: Corruption
+							["description"] = "This plan is found near the second ziggurat. Only a Blacksmith can loot the plans. This will despawn once a player interacts with it.",
+							["requireSkill"] = 164,	-- Blacksmithing
+						}),
 						i(74274, {	-- Plans: Phantom Blade
 							["crs"] = {
 								10463,	-- Shrieking Banshee
@@ -337,25 +345,6 @@ _.Instances = { tier(1, {	-- Classic
 						}),
 						i(18745),	-- Sacred Cloth Leggings
 						i(18742),	-- Stratholme Militia Shoulderguard
-						--[[ No evidence that this drops from any mobs, only that it can be looted from the Blacksmithing Plans object.
-						n(10391, {	-- Skeletal Berserker
-							["groups"] = {
-								i(12827),	-- Plans: Serenity
-							},
-						}),
-						--]]
-						o(173232, {	-- Blacksmithing Plans
-							["groups"] = {
-								i(12827, {	-- Plans: Serenity
-									["description"] = "This plan is found in the Scarlet Bastion. Only a Blacksmith can loot the plans. This will despawn once a player interacts with it.",
-									["requireSkill"] = 164,	-- Blacksmithing
-								}),
-								i(12830, {	-- Plans: Corruption
-									["description"] = "This plan is found near the second ziggurat. Only a Blacksmith can loot the plans. This will despawn once a player interacts with it.",
-									["requireSkill"] = 164,	-- Blacksmithing
-								}),
-							},
-						}),
 					}),
 					n(10809, {			-- Stonespine
 						["description"] = "This is a rare that is not always present.",
