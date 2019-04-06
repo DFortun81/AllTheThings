@@ -5,14 +5,13 @@ _.Zones =
 {
 	{	-- Outland
 		["mapID"] = 101,	-- Outland
-		["g"] = {
+		["groups"] = {
 			{	-- Blade's Edge Mountains
 				["mapID"] = 105,	-- Blade's Edge Mountains
-				["g"] = {
-					{	-- Pet Battles
-						["npcID"] = -25,	-- Pet Battles
+				["groups"] = {
+					n(-25, {	-- Pet Battles
 						["f"] = 101,	-- Battle Pets
-						["g"] = {
+						["groups"] = {
 							{	-- Cogblade Raptor
 								["crs"] = { 68841 },	-- Cogblade Raptor
 								["speciesID"] = 1164,	-- Cogblade Raptor
@@ -42,7 +41,7 @@ _.Zones =
 								["speciesID"] = 379,	-- Squirrel
 							},
 						},
-					},
+					}),
 				},
 			},
 		},

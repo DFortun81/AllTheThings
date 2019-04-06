@@ -5,7 +5,7 @@ _.Zones =
 {
 	{	-- Outland
 		["mapID"] = 101,	-- Outland
-		["g"] = {
+		["groups"] = {
 			{	-- Blade's Edge Mountains
 				["mapID"] = 105,	-- Blade's Edge Mountains
 				["groups"] = {
@@ -33,6 +33,9 @@ _.Zones =
 									["coord"] = { 27.6, 52.9, 105 },
 									["sourceQuest"] = 11010,	-- Bombing Run
 									["isDaily"] = true,
+									["groups"] = {
+										ach(1276),	-- Blade's Edge Bomberman
+									},
 								}),
 								q(11066, {	-- Wrangle More Aether Rays!
 									["qg"] = 23335,	-- Skyguard Khatie
@@ -55,17 +58,20 @@ _.Zones =
 							}),
 							n(-2,   {	-- Vendors
 								n(23428, {	-- Jho'nass <Ogri'la Quartermaster>
-									i(32569, { -- Apexis Shard
-										i(32650),	-- Cerulean Crystal Rod
-										i(32654),	-- Crystalforged Trinket
-										i(32652),	-- Ogri'la Aegis
-										i(32653),	-- Apexis Cloak
-										i(32647),	-- Shard-Bound Bracers
-										i(32648),	-- Vortex Walking Boots
-										i(32651),	-- Crystal Orb of Enlightenment
-										i(32645),	-- Crystalline Crossbow
-										i(32828),	-- Ogri'la Tabard
-									}),
+									["coord"] = { 28.0, 58.6, 105 },
+									["groups"] = {
+										i(32569, { -- Apexis Shard
+											i(32650),	-- Cerulean Crystal Rod
+											i(32654),	-- Crystalforged Trinket
+											i(32652),	-- Ogri'la Aegis
+											i(32653),	-- Apexis Cloak
+											i(32647),	-- Shard-Bound Bracers
+											i(32648),	-- Vortex Walking Boots
+											i(32651),	-- Crystal Orb of Enlightenment
+											i(32645),	-- Crystalline Crossbow
+											i(32828),	-- Ogri'la Tabard
+										}),
+									},
 								}),
 							}),
 						},

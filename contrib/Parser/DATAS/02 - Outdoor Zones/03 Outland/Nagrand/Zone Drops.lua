@@ -9,7 +9,7 @@ _.Zones =
 			{	-- Nagrand (Outland)
 				["mapID"] = 107,	-- Nagrand (Outland)
 				["groups"] = {
-					n(0,    {	-- Zone Drop
+					n(0, {	-- Zone Drop
 						["groups"] = {
 							i(23608, {	-- Plans: Khorium Belt
 								["crs"] = {

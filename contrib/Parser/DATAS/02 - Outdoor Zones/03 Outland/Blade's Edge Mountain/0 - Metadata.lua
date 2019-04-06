@@ -5,7 +5,7 @@ _.Zones =
 {
 	{	-- Outland
 		["mapID"] = 101,	-- Outland
-		["g"] = {
+		["groups"] = {
 			{	-- Blade's Edge Mountains
 				["mapID"] = 105,	-- Blade's Edge Mountains
 				["lvl"] = 65,	
