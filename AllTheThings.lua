@@ -4844,7 +4844,9 @@ app.BaseMount = {
 		elseif key == "collectible" then
 			return app.CollectibleMounts;
 		elseif key == "collected" then
-			if app.RecipeChecker("CollectedSpells", t.spellID) then return 1; end
+			if app.RecipeChecker("CollectedSpells", t.spellID) then
+				return GetTempDataSubMember("CollectedSpells", t.spellID) and 1 or 2;
+			end
 			if IsSpellKnown(t.spellID) or (t.questID and IsQuestFlaggedCompleted(t.questID) or IsQuestFlaggedCompleted(t.altQuestID)) then
 				SetTempDataSubMember("CollectedSpells", t.spellID, 1);
 				SetDataSubMember("CollectedSpells", t.spellID, 1);
@@ -5240,7 +5242,7 @@ app.BaseRecipe = {
 			return app.CollectibleRecipes;
 		elseif key == "collected" then
 			if app.RecipeChecker("CollectedSpells", t.spellID) then
-				return 1;
+				return GetTempDataSubMember("CollectedSpells", t.spellID) and 1 or 2;
 			end
 			if IsSpellKnown(t.spellID) then
 				SetTempDataSubMember("CollectedSpells", t.spellID, 1);
@@ -5355,7 +5357,9 @@ app.BaseSpell = {
 		elseif key == "collectible" then
 			return false;
 		elseif key == "collected" then
-			if app.RecipeChecker("CollectedSpells", t.spellID) then return 1; end
+			if app.RecipeChecker("CollectedSpells", t.spellID) then
+				return GetTempDataSubMember("CollectedSpells", t.spellID) and 1 or 2;
+			end
 			if IsSpellKnown(t.spellID) then
 				SetTempDataSubMember("CollectedSpells", t.spellID, 1);
 				SetDataSubMember("CollectedSpells", t.spellID, 1);
