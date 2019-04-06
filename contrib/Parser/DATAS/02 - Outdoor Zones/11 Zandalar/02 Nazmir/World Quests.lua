@@ -28,11 +28,6 @@ _.Zones =
 										{ 32.98, 26.80 }
 									},
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
-									["g"] = {
-										{	-- Fused-Slag Girdle
-											["itemID"] = 161100,	-- Fused-Slag Girdle
-										},
-									},
 								},
 								q(51415, {	-- Azerite Madness
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120

@@ -9,13 +9,19 @@ _.Zones =
 				n(-93, {	-- Silithus (The Wound)
 					["groups"] = {
 						n(-17, {	-- Quests
-							{	-- A Recent Arrival
+							q(54938, {	-- A Brother's Help
+								["qg"] = 130216,	-- Magni Bronzebeard
+								["coord"] = { 42.1, 44.3, 81 },	-- Silithus
+								["description"] = "Once you complete 'The Chamber of Heart' in Silithus, you can pick this quest up from Magni, or it will be automatically offered when you return to your capital city.",
+								["sourceQuests"] = { 53406 },	-- The Chamber of Heart
+							}),
+							{			-- A Recent Arrival
 								["questID"] = 50373,
 								["qg"] = 131963,	-- Nolan Speed
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuest"] = 50228,	-- The Twilight Survivor
 							},
-							{	-- A Wee Bit O' Cloth
+							{			-- A Wee Bit O' Cloth
 								["questID"] = 50229,
 								["description"] = "You get this quest by visiting the Twilight Outhouse located at 29.6, 69.6",
 								["sourceQuests"] = {
@@ -23,7 +29,7 @@ _.Zones =
 									50372,	-- Desert Research
 								},
 							},
-							{	-- Desert Research
+							{			-- Desert Research
 								["questID"] = 50372,
 								["qg"] = 131963,	-- Nolan Speed
 								["races"] = ALLIANCE_ONLY,
@@ -32,67 +38,73 @@ _.Zones =
 									50046,	-- It's a Sabotage
 								},
 							},
-							{	-- Desert Research
+							{			-- Desert Research
 								["questID"] = 50358,
 								["qg"] = 132147,	-- Grol Warblade
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 50053,	-- Lazy Prospectors
 							},
-							{	-- Free Samples
+							{			-- Free Samples
 								["questID"] = 50047,
 								["qg"] = 131963,	-- Nolan Speed
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuest"] = 49981,	-- Witness to the Wound
 							},
-							{	-- It's a Sabotage
+							{			-- It's a Sabotage
 								["questID"] = 50046,
 								["qg"] = 130030,	-- Kelsey Steelspark
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuest"] = 49981 ,	-- Witness to the Wound
 							},
-							{	-- Khadgar's Request
+							{			-- Khadgar's Request
 								["questID"] = 50360,
 								["qg"] = 132147,	-- Grol Warblade
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 50232,	-- The Twilight Survivor
 							},
-							{	-- Larvae By The Dozen
+							{			-- Larvae By The Dozen
 								["questID"] = 50227,
 								["qg"] = 132606,	-- Tammy Tinkspinner
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuest"] = 50372,	-- Desert Research
 							},
-							{	-- Larvae By The Dozen
+							{			-- Larvae By The Dozen
 								["questID"] = 50231,
 								["qg"] = 132040,	-- Pixni Rustbomb
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 50358,	-- Desert Research
 							},
-							{	-- Lazy Prospectors
+							{			-- Lazy Prospectors
 								["questID"] = 50053,
 								["qg"] = 132147,	-- Grol Warblade
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 49982,	-- Witness to the Wound
 							},
-							{	-- No Spies Allowed
+							{			-- No Spies Allowed
 								["questID"] = 50052,
 								["qg"] = 132045,	-- Gizmax Greasebolt
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 49982,	-- Witness to the Wound
 							},
-							{	-- The Blood of Azeroth
+							{			-- The Blood of Azeroth
 								["questID"] = 50374,
 								["qg"] = 130216,	-- Magni Bronzebeard
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuest"] = 50049,	-- The Speaker's Perspective
 							},
-							{	-- The Blood of Azeroth
+							{			-- The Blood of Azeroth
 								["questID"] = 50364,
 								["qg"] = 130216,	-- Magni Bronzebear
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 50055,	-- The Speaker's Perspective
 							},
-							{	-- The Heart of Azeroth
+							q(53406, {	-- The Chamber of Heart (third HoA upgrade)
+								["qg"] = 130216,	-- Magni Bronzebeard
+								["coord"] = { 42.1, 44.3, 81 },	-- Silithus
+								["description"] = "This quest awards +15 item levels for your Heart of Azeroth.  You can pick it up once one of your characters reaches Honored with Champions of Azeroth.",
+								["sourceQuests"] = { 53405 },	-- Unlocking the Heart's Potential
+							}),
+							{			-- The Heart of Azeroth
 								["questID"] = 51211,
 								["qg"] = 130216,	-- Magni Bronzebeard
 								["coord"] = { 42.2, 44.2, 81 },
@@ -105,7 +117,12 @@ _.Zones =
 									53028,	-- A Dying World
 								},
 							},
-							{	-- The Power in Our Hands
+							q(50973, {	-- The Heart's Power (first HoA upgrade)
+								["qg"] = 130216,	-- Magni Bronzebeard
+								["coord"] = { 42.1, 44.3, 81 },	-- Silithus
+								["description"] = "This quest awards +15 item levels for your Heart of Azeroth.  You can pick it up once one of your characters reaches Friendly with Champions of Azeroth.",
+							}),
+							{			-- The Power in Our Hands
 								["questID"] = 50057,
 								["qg"] = 133388,	-- Magni Bronzebeard
 								["groups"] = {
@@ -116,43 +133,43 @@ _.Zones =
 									50056,	-- The Speaker's Call
 								},
 							},
-							{	-- The Source of Power
+							{			-- The Source of Power
 								["questID"] = 50226,
 								["qg"] = 132606,	-- Tammy Tinkspinner
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuest"] = 50372,	-- Desert Research
 							},
-							{	-- The Source of Power
+							{			-- The Source of Power
 								["questID"] = 50230,
 								["qg"] = 132040,	-- Pixni Rustbomb
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 50358,	-- Desert Research
 							},
-							{	-- The Speaker's Call
+							{			-- The Speaker's Call
 								["questID"] = 50056,
 								["qg"] = 131963,	-- Nolan Speed
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuest"] = 50374,	-- The Blood of Azeroth
 							},
-							{	-- The Speaker's Call
+							{			-- The Speaker's Call
 								["questID"] = 50300,
 								["qg"] = 132147,	-- Grol Warblade
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 50364,	-- The Blood of Azeroth
 							},
-							{	-- The Speaker's Perspective
+							{			-- The Speaker's Perspective
 								["questID"] = 50049,
 								["qg"] = 130032,	-- Archmage Khadgar
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuest"] = 50373,	-- A Recent Arrival
 							},
-							{	-- The Speaker's Perspective
+							{			-- The Speaker's Perspective
 								["questID"] = 50055,
 								["qg"] = 130033,	-- Archmage Khadgar
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 50360,	-- Khadgar's Request
 							},
-							{	-- The Twilight Survivor
+							{			-- The Twilight Survivor
 								["questID"] = 50228,
 								["qg"] = 131963,	-- Nolan Speed
 								["races"] = ALLIANCE_ONLY,
@@ -161,12 +178,18 @@ _.Zones =
 									50046,	-- It's a Sabotage
 								},
 							},
-							{	-- The Twilight Survivor
+							{			-- The Twilight Survivor
 								["questID"] = 50232,
 								["qg"] = 132147,	-- Grol Warblade
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 50053,	-- Lazy Prospectors
 							},
+							q(53405, {	-- Unlocking the Heart's Potential (second HoA upgrade)
+								["qg"] = 130216,	-- Magni Bronzebeard
+								["coord"] = { 42.1, 44.3, 81 },	-- Silithus
+								["description"] = "This quest awards +15 item levels for your Heart of Azeroth.  You can pick it up once one of your characters reaches Honored with Champions of Azeroth.",
+								["sourceQuests"] = { 50973 },	-- The Heart's Power
+							}),
 						}),
 						n(-16, {	-- Rares
 							n(132591, {	-- Ogmot the Mad

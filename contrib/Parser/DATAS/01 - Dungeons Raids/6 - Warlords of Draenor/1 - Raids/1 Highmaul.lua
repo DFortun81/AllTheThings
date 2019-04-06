@@ -9,7 +9,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 		["mapID"] = 612,
 		["maps"] = { 610, 611, 613, 614, 615 },
 		["coord"] = { 32.96, 38.36, 550 },	-- Nagrand, Draenor
-		["groups"] = {
+		["g"] = {
 			d(17, {	-- LFR
 				n(0, {	-- Zone Drop
 					un(40, i(115280, {	-- Abrogator Stone
@@ -18,7 +18,8 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 							77404,	-- The Butcher
 							78491,	-- Brackenspore
 							78948,	-- Tectus
-							78237,	-- Twins
+							78237,	-- Twin Ogron (Phemos)
+							78238,	-- Twin Ogron (Pol)
 							79015,	-- Ko'ragh
 							77428,	-- Imperator Mar'gok 
 						},
@@ -29,17 +30,16 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 							77404,	-- The Butcher
 							78491,	-- Brackenspore
 							78948,	-- Tectus
-							78237,	-- Twins
+							78237,	-- Twin Ogron (Phemos)
+							78238,	-- Twin Ogron (Pol)
 							79015,	-- Ko'ragh
 							77428,	-- Imperator Mar'gok 
 						},
 					})),
 				}),
 				ach(8986, {	-- The Walled City	
-					["crs"] = {
-						94870,	-- Seer Kazal <Shadowmoon Exile>
-					},
-					["groups"] = {
+					["crs"] = { 94870 },	-- Seer Kazal <Shadowmoon Exile>
+					["g"] = {
 						cr(78714, e(1128, {	-- Kargath Bladefist <Warlord of the Shattered Hand>
 							i(138807),	-- Illusion: Mark of the Shattered Hand
 							i(116360),	-- Blade Dancer's Claws
@@ -73,10 +73,8 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					},
 				}),
 				ach(8987, {	-- Arcane Sanctum
-					["crs"] = {
-						94870,	-- Seer Kazal <Shadowmoon Exile>
-					},
-					["groups"] = {
+					["crs"] = { 94870 },	-- Seer Kazal <Shadowmoon Exile>
+					["g"] = {
 						cr(78948, e(1195, {	-- Tectus <The Living Mountain>
 							i(138835),	-- Illusion: Rockbiter
 							i(116362),	-- Shard of Crystalline Fury
@@ -89,16 +87,22 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 							i(116279),	-- Frostcap Band
 							i(116292),	-- Mote of the Mountain
 						})),				
-						cr(78237, e(1148, {	-- Twin Ogron (Phemos; 78238 is Pol)
-							i(116364),	-- Dagger of Enfeeblement
-							i(116365),	-- Captured Arcane Fragment
-							i(116286),	-- Fire-Blind Necklace
-							i(116211),	-- Shoulderguards of the Shepherd
-							i(115997),	-- Twin-Gaze Spaulders
-							i(116234),	-- Bracers of Cursed Cries
-							i(116025),	-- Pulverizing Grips
-							i(116283),	-- Ring of Enfeebling Accusations
-						})),
+						e(1148, {	-- Twin Ogron
+							["crs"] = {
+								78237,	-- Twin Ogron (Phemos)
+								78238,	-- Twin Ogron (Pol)
+							},
+							["g"] = {
+								i(116364),	-- Dagger of Enfeeblement
+								i(116365),	-- Captured Arcane Fragment
+								i(116286),	-- Fire-Blind Necklace
+								i(116211),	-- Shoulderguards of the Shepherd
+								i(115997),	-- Twin-Gaze Spaulders
+								i(116234),	-- Bracers of Cursed Cries
+								i(116025),	-- Pulverizing Grips
+								i(116283),	-- Ring of Enfeebling Accusations
+							},
+						}),
 						cr(79015, e(1153, {	-- Ko'ragh <Breaker of Magic>
 							i(116366),	-- Magic-Breaker Greatsword
 							i(116368),	-- Polearm of Expulsion
@@ -115,10 +119,8 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					},
 				}),
 				ach(8988, {	-- Imperator's Fall
-					["crs"] = {
-						94870,	-- Seer Kazal <Shadowmoon Exile>
-					},
-					["groups"] = {
+					["crs"] = { 94870 },	-- Seer Kazal <Shadowmoon Exile>
+					["g"] = {
 						cr(77428, e(1197, {	-- Imperator Mar'gok <Sorcerer King>
 							i(116372),	-- Imperator's Warstaff
 							i(116373),	-- Mirrorshield of Arcane Fortification
@@ -195,7 +197,8 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 							77404,	-- The Butcher
 							78491,	-- Brackenspore
 							78948,	-- Tectus
-							78237,	-- Twins
+							78237,	-- Twin Ogron (Phemos)
+							78238,	-- Twin Ogron (Pol)
 							79015,	-- Ko'ragh
 							77428,	-- Imperator Mar'gok 
 						},
@@ -206,7 +209,8 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 							77404,	-- The Butcher
 							78491,	-- Brackenspore
 							78948,	-- Tectus
-							78237,	-- Twins
+							78237,	-- Twin Ogron (Phemos)
+							78238,	-- Twin Ogron (Pol)
 							79015,	-- Ko'ragh
 							77428,	-- Imperator Mar'gok 
 						},
@@ -272,20 +276,26 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(113650),	-- Pillar of the Earth
 					i(113645),	-- Tectus' Beating Heart
 				})),
-				cr(78237, e(1148, {	-- Twin Ogron (Phemos; 78238 is Pol)
-					i(113667),	-- Phemos' Double Slasher
-					i(113666),	-- Absalom's Bloody Bulwark
-					i(113833),	-- Odyssian Choker
-					i(113830),	-- Cloak of Ruminant Deception
-					i(113831),	-- Chestplate of Arcane Volatility
-					i(113826),	-- Bracers of the Crying Chorus
-					i(113832),	-- Treacherous Palms
-					i(113827),	-- Belt of Imminent Lies
-					i(113828),	-- Sea-Cursed Leggings
-					i(113829),	-- Golden-Tongued Seal
-					i(113834),	-- Pol's Blinded Eye
-					i(113835),	-- Shards of Nothing
-				})),
+				e(1148, {	-- Twin Ogron
+					["crs"] = {
+						78237,	-- Twin Ogron (Phemos)
+						78238,	-- Twin Ogron (Pol)
+					},
+					["g"] = {
+						i(113667),	-- Phemos' Double Slasher
+						i(113666),	-- Absalom's Bloody Bulwark
+						i(113833),	-- Odyssian Choker
+						i(113830),	-- Cloak of Ruminant Deception
+						i(113831),	-- Chestplate of Arcane Volatility
+						i(113826),	-- Bracers of the Crying Chorus
+						i(113832),	-- Treacherous Palms
+						i(113827),	-- Belt of Imminent Lies
+						i(113828),	-- Sea-Cursed Leggings
+						i(113829),	-- Golden-Tongued Seal
+						i(113834),	-- Pol's Blinded Eye
+						i(113835),	-- Shards of Nothing
+					},
+				}),
 				cr(79015, e(1153, {	-- Ko'ragh <Breaker of Magic>
 					i(113838),	-- Gar'tash, Hammer of the Breakers
 					i(113836),	-- Ko'ragh's Boot Knife
@@ -380,7 +390,8 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 							77404,	-- The Butcher
 							78491,	-- Brackenspore
 							78948,	-- Tectus
-							78237,	-- Twins
+							78237,	-- Twin Ogron (Phemos)
+							78238,	-- Twin Ogron (Pol)
 							79015,	-- Ko'ragh
 							77428,	-- Imperator Mar'gok 
 						},
@@ -391,7 +402,8 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 							77404,	-- The Butcher
 							78491,	-- Brackenspore
 							78948,	-- Tectus
-							78237,	-- Twins
+							78237,	-- Twin Ogron (Phemos)
+							78238,	-- Twin Ogron (Pol)
 							79015,	-- Ko'ragh
 							77428,	-- Imperator Mar'gok 
 						},
@@ -457,20 +469,26 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(113650),	-- Pillar of the Earth
 					i(113645),	-- Tectus' Beating Heart
 				})),
-				cr(78237, e(1148, {	-- Twin Ogron (Phemos; 78238 is Pol)
-					i(113667),	-- Phemos' Double Slasher
-					i(113666),	-- Absalom's Bloody Bulwark
-					i(113833),	-- Odyssian Choker
-					i(113830),	-- Cloak of Ruminant Deception
-					i(113831),	-- Chestplate of Arcane Volatility
-					i(113826),	-- Bracers of the Crying Chorus
-					i(113832),	-- Treacherous Palms
-					i(113827),	-- Belt of Imminent Lies
-					i(113828),	-- Sea-Cursed Leggings
-					i(113829),	-- Golden-Tongued Seal
-					i(113834),	-- Pol's Blinded Eye
-					i(113835),	-- Shards of Nothing
-				})),
+				e(1148, {	-- Twin Ogron (Phemos; 78238 is Pol)
+					["crs"] = {
+						78237,	-- Twin Ogron (Phemos)
+						78238,	-- Twin Ogron (Pol)
+					},
+					["g"] = {
+						i(113667),	-- Phemos' Double Slasher
+						i(113666),	-- Absalom's Bloody Bulwark
+						i(113833),	-- Odyssian Choker
+						i(113830),	-- Cloak of Ruminant Deception
+						i(113831),	-- Chestplate of Arcane Volatility
+						i(113826),	-- Bracers of the Crying Chorus
+						i(113832),	-- Treacherous Palms
+						i(113827),	-- Belt of Imminent Lies
+						i(113828),	-- Sea-Cursed Leggings
+						i(113829),	-- Golden-Tongued Seal
+						i(113834),	-- Pol's Blinded Eye
+						i(113835),	-- Shards of Nothing
+					},
+				}),
 				cr(79015, e(1153, {	-- Ko'ragh <Breaker of Magic>
 					i(113838),	-- Gar'tash, Hammer of the Breakers
 					i(113836),	-- Ko'ragh's Boot Knife
@@ -565,7 +583,8 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 							77404,	-- The Butcher
 							78491,	-- Brackenspore
 							78948,	-- Tectus
-							78237,	-- Twins
+							78237,	-- Twin Ogron (Phemos)
+							78238,	-- Twin Ogron (Pol)
 							79015,	-- Ko'ragh
 							77428,	-- Imperator Mar'gok 
 						},
@@ -576,7 +595,8 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 							77404,	-- The Butcher
 							78491,	-- Brackenspore
 							78948,	-- Tectus
-							78237,	-- Twins
+							78237,	-- Twin Ogron (Phemos)
+							78238,	-- Twin Ogron (Pol)
 							79015,	-- Ko'ragh
 							77428,	-- Imperator Mar'gok 
 						},
@@ -642,20 +662,26 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(113650),	-- Pillar of the Earth
 					i(113645),	-- Tectus' Beating Heart
 				})),
-				cr(78237, e(1148, {	-- Twin Ogron (Phemos; 78238 is Pol)
-					i(113667),	-- Phemos' Double Slasher
-					i(113666),	-- Absalom's Bloody Bulwark
-					i(113833),	-- Odyssian Choker
-					i(113830),	-- Cloak of Ruminant Deception
-					i(113831),	-- Chestplate of Arcane Volatility
-					i(113826),	-- Bracers of the Crying Chorus
-					i(113832),	-- Treacherous Palms
-					i(113827),	-- Belt of Imminent Lies
-					i(113828),	-- Sea-Cursed Leggings
-					i(113829),	-- Golden-Tongued Seal
-					i(113834),	-- Pol's Blinded Eye
-					i(113835),	-- Shards of Nothing
-				})),
+				e(1148, {	-- Twin Ogron
+					["crs"] = {
+						78237,	-- Twin Ogron (Phemos)
+						78238,	-- Twin Ogron (Pol)
+					},
+					["g"] = {
+						i(113667),	-- Phemos' Double Slasher
+						i(113666),	-- Absalom's Bloody Bulwark
+						i(113833),	-- Odyssian Choker
+						i(113830),	-- Cloak of Ruminant Deception
+						i(113831),	-- Chestplate of Arcane Volatility
+						i(113826),	-- Bracers of the Crying Chorus
+						i(113832),	-- Treacherous Palms
+						i(113827),	-- Belt of Imminent Lies
+						i(113828),	-- Sea-Cursed Leggings
+						i(113829),	-- Golden-Tongued Seal
+						i(113834),	-- Pol's Blinded Eye
+						i(113835),	-- Shards of Nothing
+					},
+				}),
 				cr(79015, e(1153, {	-- Ko'ragh <Breaker of Magic>
 					i(113838),	-- Gar'tash, Hammer of the Breakers
 					i(113836),	-- Ko'ragh's Boot Knife
@@ -671,23 +697,29 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(113842),	-- Emblem of Caustic Healing
 					un(40, i(115288)),	-- Felbreaker's Tome
 				})),
-				cr(77428, e(1197, {	-- Imperator Mar'gok <Sorcerer King>
-					i(113848),	-- Gor'gah, High Blade of the Gorians
-					i(113857),	-- Staff of the Grand Imperator
-					i(113858),	-- Choker of Violent Displacement
-					i(113851),	-- Reaver's Nose Ring
-					i(113855),	-- Uncrushable Shoulderplates
-					i(113852),	-- Force Nova Cloak
-					i(113850),	-- Robes of the Arcane Ultimatum
-					i(113856),	-- Nether Blast Leggings
-					i(113849),	-- Face Kickers
-					i(113860),	-- Shockwave Signet
-					i(113853),	-- Captive Micro-Aberration
-					i(113861),	-- Evergaze Arcane Eidolon
-					i(113854),	-- Mark of Rapid Replication
-					i(113859),	-- Quiescent Runestone
-					un(40, i(115289)),	-- Sigil of the Sorcerer King
-				})),
+				e(1197, {	-- Imperator Mar'gok <Sorcerer King>
+					["crs"] = {
+						77428,	-- Imperator Mar'gok
+						78623,	-- Cho'gall
+					},
+					["g"] = {
+						i(113848),	-- Gor'gah, High Blade of the Gorians
+						i(113857),	-- Staff of the Grand Imperator
+						i(113858),	-- Choker of Violent Displacement
+						i(113851),	-- Reaver's Nose Ring
+						i(113855),	-- Uncrushable Shoulderplates
+						i(113852),	-- Force Nova Cloak
+						i(113850),	-- Robes of the Arcane Ultimatum
+						i(113856),	-- Nether Blast Leggings
+						i(113849),	-- Face Kickers
+						i(113860),	-- Shockwave Signet
+						i(113853),	-- Captive Micro-Aberration
+						i(113861),	-- Evergaze Arcane Eidolon
+						i(113854),	-- Mark of Rapid Replication
+						i(113859),	-- Quiescent Runestone
+						un(40, i(115289)),	-- Sigil of the Sorcerer King
+					},
+				}),
 			}),
 		},
 	}),
