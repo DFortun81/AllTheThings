@@ -4279,6 +4279,7 @@ app.BaseHeirloom = {
 							tinsert(g, l);
 						end
 					end
+					BuildGroups(t, g);
 					rawset(t, "g", g);
 					return g;
 				end
