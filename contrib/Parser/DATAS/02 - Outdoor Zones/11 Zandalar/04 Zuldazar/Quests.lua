@@ -475,6 +475,77 @@ _.Zones =
 								},
 								["races"] = HORDE_ONLY,
 							})),
+							{	-- Zandalar Forever!
+								["achievementID"] = 12479,	-- Zandalar Forever!
+								["races"] = HORDE_ONLY,		-- Horde Only Races
+								["g"] = {
+									{	-- A Bargain of Blood
+										["achievementID"] = 12479,	-- Zandalar Forever!
+										["criteriaID"] = 4,			-- A Bargain of Blood
+										["g"] = {
+											{ 	-- Rokhan
+												["questID"] = 47201,	-- Rokhan
+												["qg"] = 121599,		-- King Rastakhan
+												["sourceQuests"] = {
+													47198,	-- They Want Us Alive
+													47200,	-- Ticks
+												},
+												["coords"] = {
+													{ 60.39, 22.03, 862 },
+												},
+											},
+											{	-- The New Frontline
+												["questID"] = 47204,	-- The New Frontline
+												["qg"] = 121601,		-- Rokhan
+												["sourceQuests"] = {
+													47201,	-- Rokhan
+												},
+												["coords"] = {
+													{ 56.91, 19.11, 862 },
+												},
+											},
+											{	-- They Want Us Alive
+												["questID"] = 47198,	-- They Want Us Alive
+												["qg"] = 121599,		-- King Rastakhan
+												["sourceQuests"] = {
+													47199,	-- The Blood Gate
+												},
+												["coords"] = {
+													{ 60.39, 22.03, 862 },
+												},
+											},
+											{	-- Ticks
+												["questID"] = 47200,	-- Ticks
+												["qg"] = 121599,		-- King Rastakhan
+												["sourceQuests"] = {
+													47199,	-- The Blood Gate
+												},
+												["coords"] = {
+													{ 60.39, 22.03, 862 },
+												},
+											},
+											{	-- Warmother
+												["questID"] = 47205,	-- Warmother
+												["qg"] = 121601,		-- Rokhan
+												["sourceQuests"] = {
+													47201,	-- Rokhan
+												},
+												["coords"] = {
+													{ 56.91, 19.11, 862 },
+												},
+												["g"] = {
+													{	-- Bloodsiege Drape
+														["itemID"] = 158653,	-- Bloodsiege Drape
+													},
+													{	-- Shazraka's Curse Ring
+														["itemID"] = 162453,	-- Shazraka's Curse Ring
+													},
+												},
+											},
+										},
+									},
+								},
+							},
 							q(49289, {	-- A Special Stone
 								["g"] = {
 									i(159151),	-- Tidemistress Greatcloak
