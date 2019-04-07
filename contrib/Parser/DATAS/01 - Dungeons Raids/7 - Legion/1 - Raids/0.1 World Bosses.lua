@@ -70,7 +70,8 @@ _.Instances = { tier(7, {	-- Legion
 				},
 			})),
 			cr(109331, e(1774, { -- Calamir 
-				["questID"] = 44502,
+				--["questID"] = 44502, -- !KillID
+				["questID"] = 43193,	-- Calamitous Intent
 				["isRaid"] = true,
 				["maps"] = { 630 }, -- Azsuna
 				["coord"] = { 37.7, 83.6, 630 },
