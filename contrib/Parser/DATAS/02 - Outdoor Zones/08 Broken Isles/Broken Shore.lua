@@ -1417,102 +1417,117 @@ _.Zones =
 					}),
 					n(120898, { -- Warmage Kath'leen <Legionfall Artificer>
 						currency(1226, { -- Nethershard
-							["groups"] = {
-								{ -- Arsenal: Armaments of the Ebon Blade
-									["groups"] = {
-											i(141365), -- Blood 2H Axe
-											i(141377), -- Blood 1H Sword
-											i(141366), -- Blood 2H Polearm
-											i(141379), -- Blood 1H Warsword
-											i(141375), -- Blood 2H Sword
-											i(141381), -- Icy 2H Axe
-											i(141362), -- Icy 1H Sword
-											i(141373), -- Icy 2H Polearm
-											i(141363), -- Icy 1H Warsword
-											i(141376), -- Icy 2H Sword
-											i(141382), -- Unholy 2H Axe
-											i(141378), -- Unholy 1H Sword
-											i(141374), -- Unholy 2H Polearm
-											i(141380), -- Unholy 1H Warsword
-											i(141364), -- Unholy 2H Sword								
-									},
-									["ignoreBonus"] = true,
-									["itemID"] = 141372,
+							{ -- Arsenal: Armaments of the Ebon Blade
+								["ignoreBonus"] = true,
+								["itemID"] = 141372,
+								["groups"] = {
+										i(141365), -- Blood 2H Axe
+										i(141377), -- Blood 1H Sword
+										i(141366), -- Blood 2H Polearm
+										i(141379), -- Blood 1H Warsword
+										i(141375), -- Blood 2H Sword
+										i(141381), -- Icy 2H Axe
+										i(141362), -- Icy 1H Sword
+										i(141373), -- Icy 2H Polearm
+										i(141363), -- Icy 1H Warsword
+										i(141376), -- Icy 2H Sword
+										i(141382), -- Unholy 2H Axe
+										i(141378), -- Unholy 1H Sword
+										i(141374), -- Unholy 2H Polearm
+										i(141380), -- Unholy 1H Warsword
+										i(141364), -- Unholy 2H Sword								
 								},
-								{ -- Arsenal: Armaments of the Silver Hand
-									["groups"] = {
-											i(141370), -- Ardent Defender
-											i(150953), -- Ardent Gavel
-											i(141367), -- Ardent Hammer			
-											i(141368), -- Ardent Warhammer
-											i(141654), -- Gilded Defender
-											i(141653), -- Gilded Warhammer		
-									},
-									["ignoreBonus"] = true,
-									["itemID"] = 141371,
-								},
-								i(147708), -- Legion Invasion Simulator Toy
-								i(130199), -- Legion Pocket Poral Toy
-								i(147205), -- Legionfall Tabard
-								{
-									["itemID"] = 147775,	-- Nether Portal Disruptor
-									["description"] = "Can be used to summon rare elite mobs from Nether Portals while the Nether Disruptor is up. Can be bought or sold on the Auction House.",
-								},
-								i(151541), -- Technique: Glyph of Floating 
-								i(141067), -- Technique: Glyph of Wrathguard
-								i(147216, { -- Dauntless Hood
-									i(147241), -- Cloth
-									i(147242), -- Leather
-									i(147243), -- Mail
-									i(147244), -- Plate
-								}),
-								i(147218, { -- Dauntless Spaulders
-									i(147249), -- Cloth
-									i(147250), -- Leather
-									i(147251), -- Mail
-									i(147252), -- Plate
-								}),
-								i(147222, { -- Dauntless Cloak
-									i(147269) -- Cloak
-								}),
-								i(147213, { -- Dauntless Tunic
-									i(147232), -- Cloth
-									i(147229), -- Leather
-									i(147230), -- Mail
-									i(147231), -- Plate
-								}),
-								i(147212, { -- Dauntless Bracers
-									i(147225), -- Cloth
-									i(147226), -- Leather
-									i(147227), -- Mail
-									i(147228), -- Plate
-								}),
-								i(147215, { -- Dauntless Gauntlets
-									i(147237), -- Cloth
-									i(147238), -- Leather
-									i(147239), -- Mail
-									i(147240), -- Plate
-								}),
-								i(147219, { -- Dauntless Girdle
-									i(147253), -- Cloth
-									i(147254), -- Leather
-									i(147255), -- Mail
-									i(147256), -- Plate
-								}),
-								i(147217, { -- Dauntless Leggings
-									i(147245), -- Cloth
-									i(147246), -- Leather
-									i(147247), -- Mail
-									i(147248), -- Plate
-								}),
-								i(147214, { -- Dauntless Treads
-									i(147233), -- Cloth
-									i(147234), -- Leather
-									i(147235), -- Mail
-									i(147236), -- Plate
-								}),
 							},
-							["description"] = "|cff66ccffEbon Blade and Silver Hand armaments can only be bought with the associated classes.  \nDauntless tokens can roll any item in Legion with an iLvL 850+.  The ones featured on each token are exclusive to the tokens only. \nDauntless tokens are able to be purchased, drop off any mob in Broken Shore along with Legion Invasion bossses.|r"
+							{ -- Arsenal: Armaments of the Silver Hand
+								["ignoreBonus"] = true,
+								["itemID"] = 141371,
+								["groups"] = {
+										i(141370), -- Ardent Defender
+										i(150953), -- Ardent Gavel
+										i(141367), -- Ardent Hammer			
+										i(141368), -- Ardent Warhammer
+										i(141654), -- Gilded Defender
+										i(141653), -- Gilded Warhammer		
+								},
+							},
+							i(147708), -- Legion Invasion Simulator Toy
+							i(130199), -- Legion Pocket Poral Toy
+							i(147205), -- Legionfall Tabard
+							{
+								["itemID"] = 147775,	-- Nether Portal Disruptor
+								["description"] = "Can be used to summon rare elite mobs from Nether Portals while the Nether Disruptor is up. Can be bought or sold on the Auction House.",
+							},
+							i(151541), -- Technique: Glyph of Floating 
+							i(141067), -- Technique: Glyph of Wrathguard
+							i(147216, { -- Dauntless Hood
+								i(147241), -- Cloth
+								i(147242), -- Leather
+								i(147243), -- Mail
+								i(147244), -- Plate
+							}),
+							i(147221, { -- Dauntless Choker	
+								i(147263), -- Animus Pendant
+							}),
+							i(147218, { -- Dauntless Spaulders
+								i(147249), -- Cloth
+								i(147250), -- Leather
+								i(147251), -- Mail
+								i(147252), -- Plate
+							}),
+							i(147222, { -- Dauntless Cloak
+								i(147269) -- Cloak
+							}),
+							i(147213, { -- Dauntless Tunic
+								i(147232), -- Cloth
+								i(147229), -- Leather
+								i(147230), -- Mail
+								i(147231), -- Plate
+							}),
+							i(147212, { -- Dauntless Bracers
+								i(147225), -- Cloth
+								i(147226), -- Leather
+								i(147227), -- Mail
+								i(147228), -- Plate
+							}),
+							i(147215, { -- Dauntless Gauntlets
+								i(147237), -- Cloth
+								i(147238), -- Leather
+								i(147239), -- Mail
+								i(147240), -- Plate
+							}),
+							i(147219, { -- Dauntless Girdle
+								i(147253), -- Cloth
+								i(147254), -- Leather
+								i(147255), -- Mail
+								i(147256), -- Plate
+							}),
+							i(147217, { -- Dauntless Leggings
+								i(147245), -- Cloth
+								i(147246), -- Leather
+								i(147247), -- Mail
+								i(147248), -- Plate
+							}),
+							i(147214, { -- Dauntless Treads
+								i(147233), -- Cloth
+								i(147234), -- Leather
+								i(147235), -- Mail
+								i(147236), -- Plate
+							}),
+							i(147220, { -- Dauntless Ring	
+								i(147257), -- Avenging Band
+							}),
+							i(147223, { -- Dauntless Trinket	
+								i(147275), -- Beguiler's Talisman
+								i(147276), -- Spellbinder's Seal
+								i(147278), -- Stalwart Crest
+							}),
+							i(146659),	-- Nethershard Essence
+							i(153006),	-- Grimoire of Lost Knowledge
+							i(147864),	-- Legionfall Banner
+							i(147698),	-- Cauterizing Void Shard
+							i(147707),	-- Repurposed Fel Focuser
+							i(156630),	-- Relinquished Armor Set
+							i(139879),	-- Crate of Champion Equipment
 						}),
 					}),
 				}),
