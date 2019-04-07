@@ -784,9 +784,6 @@ _.Zones =
 												50550,	-- The Fall of Emperor Korthek
 											},
 										},
-										q(50805, {	-- Skycaller Shutdown (Bonus Objective)
-											["coord"] = { 52.0, 27.7, 864 },	-- Skycallers' Spire (Vol'dun)
-										}),
 										{	-- Atul'Aman**
 											["questID"] = 50617,	-- Atul'Aman
 											["qg"] = 129588,		-- Vorrik
@@ -838,16 +835,6 @@ _.Zones =
 												},
 											},
 										},
-										q(50703, {	-- Informing the Horde
-											["qg"] = 135133,	-- Warguard Rakera
-											["coord"] = { 27, 52.6, 864 },	-- Sanctuary of the Devoted (Vol'dun)
-											["sourceQuests"] = { 50702 },	-- Defeat Jakra'zet
-										}),
-										q(50551, {	-- Temple of Sethraliss: Avatar of the Loa
-											["qg"] = 129588,	-- Vorrik
-											["coord"] = { 27, 52.6, 864 },	-- Sanctuary of the Devoted (Vol'dun)
-											["sourceQuests"] = { 50702 },	-- Defeat Jakra'zet
-										}),
 									},
 								}),
 							},
@@ -922,6 +909,20 @@ _.Zones =
 							["coord"] = { 27.3, 53.2, 864 },	-- Terrace of the Devoted
 							["questID"] = 51165,	-- WANTED: Sandscout Vesarik
 						},
+						q(50805, {	-- Skycaller Shutdown (Bonus Objective)
+							["coord"] = { 52.0, 27.7, 864 },	-- Skycallers' Spire (Vol'dun)
+						}),
+						
+						q(50703, {	-- Informing the Horde
+							["qg"] = 135133,	-- Warguard Rakera
+							["coord"] = { 27, 52.6, 864 },	-- Sanctuary of the Devoted (Vol'dun)
+							["sourceQuests"] = { 50702 },	-- Defeat Jakra'zet
+						}),
+						q(50551, {	-- Temple of Sethraliss: Avatar of the Loa
+							["qg"] = 129588,	-- Vorrik
+							["coord"] = { 27, 52.6, 864 },	-- Sanctuary of the Devoted (Vol'dun)
+							["sourceQuests"] = { 50702 },	-- Defeat Jakra'zet
+						}),
 						q(49040, {	-- Fond Farewells
 							["qg"] = 127691,	-- Jorak
 							["coord"] = { 52.8, 89.2 },
