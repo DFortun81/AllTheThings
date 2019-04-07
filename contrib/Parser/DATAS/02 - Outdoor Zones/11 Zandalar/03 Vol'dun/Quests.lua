@@ -814,7 +814,13 @@ _.Zones =
 												50904,	-- The Abandoned Passage
 											},
 											["g"] = {
-												--Note!! Missing Mail pieces
+												--Note!! Missing Cloth pieces
+												{	-- Scorching Sands Mask
+													["itemID"] = 155399,	-- Scorching Sands Mask
+												},
+												{	-- Scorching Sands Shoulderspads
+													["itemID"] = 161160,	-- Scorching Sands Shoulderspads
+												},
 												{	-- Resilient Outcast's Coif
 													["itemID"] = 155398,	-- Resilient Outcast's Coif
 												},
@@ -822,16 +828,10 @@ _.Zones =
 													["itemID"] = 161159,	-- Resilient Outcast's Spaulders
 												},
 												{	-- Exiled Veteran's Helm
-													["itemID"] = 159955,	-- Exiled Veteran's Helm
+													["itemID"] = 155396,	-- Exiled Veteran's Helm
 												},
 												{	-- Exiled Veteran's Spaulders
 													["itemID"] = 161158,	-- Exiled Veteran's Spaulders
-												},
-												{	-- Scorching Sands Mask
-													["itemID"] = 155399,	-- Scorching Sands Mask
-												},
-												{	-- Scorching Sands Shoulderspads
-													["itemID"] = 161160,	-- Scorching Sands Shoulderspads
 												},
 											},
 										},
