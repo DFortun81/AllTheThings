@@ -331,7 +331,7 @@ pet(122116, 1635);	-- Holy Chime (K'ute)
 pet(86562, 835);	-- Hopling
 pet(72045, 332); 	-- Horde Balloon
 pet(139776, 1919); 	-- Horde Fanatic
-pet(164969, 2484);	-- Horse Ballon
+pet(164969, 2484);	-- Horse Balloon
 pet(140261, 1926); 	-- Hungering Claw
 pet(118207, 1541);	-- Hydraling
 pet(70140, 317);	-- Hyjal Bear Cub
@@ -448,7 +448,7 @@ pet(45180, 217);	-- Murkimus' Little Spear (Murkimus the Gladiator)
 pet(46892, 217);	-- Murkimus' Tiny Spear (Murkimus the Gladiator)
 pet(100870, 217);	-- Murkimus' Tyrannical Spear (Murkimus the Gladiator)
 pet(71726, 329); 	-- Murky's Little Soulstone (Murkablo)
-pet(164971, 2483);	-- Murloc Ballon
+pet(164971, 2483);	-- Murloc Balloon
 pet(163820, 2458);	-- Muskflank Calfling
 pet(116258, 1514);	-- Mystical Spring Bouquet
 pet(151269, 2002);	-- Naxxy
@@ -757,7 +757,7 @@ pet(116804, 1523);	-- Widget the Departed
 pet(49663, 246);	-- Wind Rider Cub
 pet(69239, 306); 	-- Winterspring Cub
 pet(46325, 220); 	-- Withers
-pet(164970, 2483);	-- Wolf Ballon
+pet(164970, 2482);	-- Wolf Balloon
 pet(32233, 153); 	-- Wolpertinger's Tankard (Wolpertinger)
 pet(141348, 1937); 	-- Wondrous Wisdomball
 pet(11027, 64); 	-- Wood Frog Box (Wood Frog)
