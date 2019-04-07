@@ -629,11 +629,6 @@ _.Zones =
 												 129519, -- Vorrik
 											},
 										}),
-										{ -- WANTED: Sandscout Vesarik
-											["objectID"] = 287441, -- Wanted: Sandscout Vesarik
-											["coord"] = { 27.3, 53.2, 864 }, -- Terrace of the Devoted
-											["questID"] = 51165, -- WANTED: Sandscout Vesarik
-										},
 									},
 								}),
 								crit(6, {	-- Storming the Spire
@@ -910,6 +905,11 @@ _.Zones =
 								}),
 							},
 						})),
+						{ -- WANTED: Sandscout Vesarik
+							["objectID"] = 287441, -- Wanted: Sandscout Vesarik
+							["coord"] = { 27.3, 53.2, 864 }, -- Terrace of the Devoted
+							["questID"] = 51165, -- WANTED: Sandscout Vesarik
+						},
 						q(49040, {	-- Fond Farewells
 							["qg"] = 127691,	-- Jorak
 							["coord"] = { 52.8, 89.2 },
