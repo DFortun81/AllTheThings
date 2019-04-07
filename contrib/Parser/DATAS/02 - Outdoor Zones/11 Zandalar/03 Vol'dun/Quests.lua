@@ -80,7 +80,7 @@ _.Zones =
 										}),
 										q(49677, { -- Plans for Attack
 											["qg"] = 130474, -- Reckless Vulpera (Nisha)
-											["sourceQuests"] = { 
+											["sourceQuests"] = {
 												47327,	-- Answering Their Attacks
 												49676,	-- Dressed for Battle
 											},
@@ -277,7 +277,7 @@ _.Zones =
 											},
 											["qg"] = 126814, -- Ranah
 											["coord"] = { 53.8, 69.4, 864 }, -- Withering Gulch (Vol'dun)
-											["sourceQuests"] = { 
+											["sourceQuests"] = {
 												48553, -- Let it Flow
 												48555, -- We Can Salvage the Seeds
 												48551, -- Wither Without Water
@@ -703,49 +703,6 @@ _.Zones =
 											},
 											["crs"] = {
 												135090, -- Nisha
-											}, 
-										}),
-										q(49668, { -- Light Up the Gulch
-											["qg"] = 137981, -- Kiro
-											["coord"] = { 46, 33.2, 864 }, -- Crater of Conquerors (Vol'dun)
-											["crs"] = {
-												137981, -- Kiro
-											},
-										}),
-										{ -- Tattered Note
-											["objectID"] = 278368, -- Tattered Note
-											["coord"] = { 54.5, 34.2, 864 }, -- Slithering Gulch (Vol'dun)
-											["questID"] = 49437, -- Tattered Note
-											["sourceQuests"] = { 49668 }, -- Light Up the Gulch
-										},
-										q(49669, { -- Unleash the Beasts
-											["groups"] = {
-												i(161182), -- Cracked Crawg Shackles
-											},
-											["qg"] = 135099, -- Kiro
-											["coord"] = { 55.4, 35, 864 }, -- Slithering Gulch (Vol'dun)
-											["sourceQuests"] = { 49668 }, -- Light Up the Gulch
-											["crs"] = {
-												135099, -- Kiro
-											},
-										}),
-										q(50757, { -- Untame Slaughter
-											["qg"] = 135099, -- Kiro
-											["coord"] = { 55.4, 35, 864 }, -- Slithering Gulch (Vol'dun)
-											["sourceQuests"] = { 49668 }, -- Light Up the Gulch
-											["crs"] = {
-												135099, -- Kiro
-											},
-										}),
-										q(50749, { -- Free Ride
-											["qg"] = 135099, -- Kiro
-											["coord"] = { 55.4, 35, 864 }, -- Slithering Gulch (Vol'dun)
-											["sourceQuests"] = { 
-												49669, -- Unleash the Beasts
-												50757, -- Untame Slaughter
-											},
-											["crs"] = {
-												135099, -- Kiro
 											},
 										}),
 										q(49141, { -- Diplomacy and Dominance
@@ -764,30 +721,6 @@ _.Zones =
 												135172, -- Vorrik
 											},
 										}),
-										n(130603, { -- Beastbreaker Hakid
-											["groups"] = {
-												i(158909, { -- Beastbreaker Cage Key
-													["groups"] = {
-														q(48329, { -- Beaten But Not Broken
-															["coord"] = { 49.1, 38.3, 864 }, -- Vol'dun
-															["sourceQuests"] = { 50746 }, -- Crater Conquered
-															["crs"] = {
-																130603, -- Beastbreaker Hakid
-															},
-														}),
-													},
-												}),
-											},
-										}),
-										{ -- Forced Grounding
-											["groups"] = {
-												i(161166), -- Faithless Skyrider's Focus
-												i(161167), -- Faithless Skyrider's Shield
-											},
-											["objectID"] = 278447, -- Faithless Trapper's Spear
-											["coord"] = { 47.1, 38.8, 864 }, -- Rakjan's Peak (Vol'dun)
-											["questID"] = 49002, -- Forced Grounding
-										},
 										q(49003, { -- Vengeance From Above
 											["qg"] = 135110, -- Vorrik
 											["coord"] = { 47.1, 39.1, 864 }, -- Rakjan's Peak (Vol'dun)
@@ -905,6 +838,71 @@ _.Zones =
 								}),
 							},
 						})),
+						{ -- Forced Grounding
+							["groups"] = {
+								i(161166), -- Faithless Skyrider's Focus
+								i(161167), -- Faithless Skyrider's Shield
+							},
+							["objectID"] = 278447, -- Faithless Trapper's Spear
+							["coord"] = { 47.1, 38.8, 864 }, -- Rakjan's Peak (Vol'dun)
+							["questID"] = 49002, -- Forced Grounding
+						},
+						q(49668, { -- Light Up the Gulch
+							["qg"] = 137981, -- Kiro
+							["coord"] = { 46, 33.2, 864 }, -- Crater of Conquerors (Vol'dun)
+							["crs"] = {
+								137981, -- Kiro
+							},
+						}),
+						{ -- Tattered Note
+							["objectID"] = 278368, -- Tattered Note
+							["coord"] = { 54.5, 34.2, 864 }, -- Slithering Gulch (Vol'dun)
+							["questID"] = 49437, -- Tattered Note
+							["sourceQuests"] = { 49668 }, -- Light Up the Gulch
+						},
+						q(49669, { -- Unleash the Beasts
+							["groups"] = {
+								i(161182), -- Cracked Crawg Shackles
+							},
+							["qg"] = 135099, -- Kiro
+							["coord"] = { 55.4, 35, 864 }, -- Slithering Gulch (Vol'dun)
+							["sourceQuests"] = { 49668 }, -- Light Up the Gulch
+							["crs"] = {
+								135099, -- Kiro
+							},
+						}),
+						q(50757, { -- Untame Slaughter
+							["qg"] = 135099, -- Kiro
+							["coord"] = { 55.4, 35, 864 }, -- Slithering Gulch (Vol'dun)
+							["sourceQuests"] = { 49668 }, -- Light Up the Gulch
+							["crs"] = {
+								135099, -- Kiro
+							},
+						}),
+						q(50749, { -- Free Ride
+							["qg"] = 135099, -- Kiro
+							["coord"] = { 55.4, 35, 864 }, -- Slithering Gulch (Vol'dun)
+							["sourceQuests"] = {
+								49669, -- Unleash the Beasts
+								50757, -- Untame Slaughter
+							},
+							["crs"] = {
+								135099, -- Kiro
+							},
+						}),
+						{	-- Beaten But Not Broken
+							["itemID"] = 158909,	-- Beastbreaker Cage Key
+							["questID"] = 48329,	-- Beaten But Not Broken
+							["crs"] = {
+								130603,	-- Beastbreaker Hakid
+							},
+							["coords"] = {
+								{ 49.1, 38.3, 864 }, -- Vol'dun
+							},
+							["sourceQuests"] = {
+								50746,	-- Crater Conquered
+							},
+						},
 						{ -- WANTED: Sandscout Vesarik
 							["objectID"] = 287441, -- Wanted: Sandscout Vesarik
 							["coord"] = { 27.3, 53.2, 864 }, -- Terrace of the Devoted
@@ -1268,11 +1266,11 @@ _.Zones =
 						}),
 						q(47502, {	-- The Great Cranium Caper
 							["groups"] = {
-								i(161176),	-- 
-								i(161177),	-- 
-								i(161178),	-- 
-								i(161179),	-- 
-								i(161180),	-- 
+								i(161176),	--
+								i(161177),	--
+								i(161178),	--
+								i(161179),	--
+								i(161180),	--
 							},
 							["qg"] = 138749,	-- Rhan'ka
 							["coord"] = { 37.4, 51.1 },
@@ -1369,7 +1367,7 @@ _.Zones =
 						}),
 						--
 						q(50834, {	-- Keep It Down!
-							["qg"] = 135400,	-- 
+							["qg"] = 135400,	--
 							["coord"] = { 29.5, 59.3 },
 							["isBreadcrumb"] = true,
 							["sourceQuests"] = { 50980 },	-- My Hungry Neighbor
