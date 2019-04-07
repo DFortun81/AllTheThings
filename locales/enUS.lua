@@ -1739,6 +1739,7 @@ AllTheThings.L = {
 		[-10066] = BATTLE_PET_BREED_QUALITY6,			-- "Legendary";
 		[-10067] = ITEM_QUALITY6_DESC, 				-- Artifact
 		[-10068] = OPTION_TOOLTIP_ANIMATION,			-- PLACE_HOLDER
+		[-10069] = "Scenario's",
 		
 		--90000+ are reserved for town names.  If you use one make sure to attach an icon (either here or in the file).
 		

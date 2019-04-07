@@ -479,8 +479,8 @@ _.Zones =
 								["achievementID"] = 12480,	-- A Bargain of Blood
 								["races"] = HORDE_ONLY,		-- Horde Only Races
 								["g"] = {
-									{	-- Bulwark  of Torcali
-										["questID"] = 47229,	-- Bulwark  of Torcali
+									{	-- Bulwark of Torcali
+										["questID"] = 47229,	-- Bulwark of Torcali
 										["qg"] = 121601,		-- Rokhan
 										["sourceQuests"] = {
 											47204,	-- The New Frontline
@@ -547,6 +547,22 @@ _.Zones =
 											{	-- Shazraka's Curse Ring
 												["itemID"] = 162453,	-- Shazraka's Curse Ring
 											},
+										},
+									},
+								},
+							},
+							{	-- The Final Seal
+								["achievementID"] = 12481,	-- The Final Seal
+								["races"] = HORDE_ONLY,
+								["g"] = {
+									{	-- Zandalar Forever!
+										["questID"] = 50954,	-- Zandalar Forever!
+										["qg"] = 135890,		-- King Rastakhan
+										["sourceQuests"] = {
+											47229,	-- Bulwark of Torcali
+										},
+										["coords"] = {
+											{ 60.05, 22.23, 862 },
 										},
 									},
 								},
