@@ -1897,36 +1897,44 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 								i(112427),	-- Seal of Eternal Sorrow
 								i(112426),	-- Purified Bindings of Immerseus
 							})),
-							cr(71475, e(849, {	-- The Fallen Protectors (Rook Stonetoe)
-								{	-- Vale of Eternal Sorrows: Fallen Protectors
-									["achievementID"] = 8458,	-- Vale of Eternal Sorrows
-									["criteriaID"] = 2,	-- Fallen Protectors
+							e(849, {	-- The Fallen Protectors (Rook Stonetoe)
+								["crs"] = {
+									71479,	-- He Softfoot [The Fallen Protectors]
+									71475,	-- Rook Stonetoe [The Fallen Protectors]
+									71480,	-- Sun Tenderheart [The Fallen Protectors]
 								},
-								i(112477),	-- Softfoot's Last Resort
-								i(112478),	-- Death Lotus Crossbow
-								i(112491),	-- Purehearted Cricket Cage
-								i(112496),	-- Gaze of Echoing Despair
-								i(112481),	-- Darkfallen Shoulderplates
-								i(112494),	-- Shoulderguards of Dark Meditations
-								i(112488),	-- Shoulderpads of Dou Dou Chong
-								i(112492),	-- Shoulders of the Roiling Inferno
-								i(112485),	-- Gloomwrap Greatcloak
-								i(112487),	-- Robes of the Tendered Heart
-								i(112489),	-- Lifebane Bracers
-								i(112495),	-- Grips of the Fallen Council
-								i(112480),	-- Grips of Unending Anguish
-								i(112483),	-- Shockstriker Gauntlets
-								i(112482),	-- Poisonbinder Girth
-								i(112493),	-- Sabatons of Defilement
-								i(112486),	-- Sha-Seared Sandals
-								i(112479),	-- Stonetoe's Tormented Treads
-								i(112490),	-- Petrified Pennyroyal Ring
-								i(112484),	-- Sorrowpath Signet
-								i(112476),	-- Rook's Unlucky Talisman
-							})),
-							cr(72276, e(866, {	-- Norushen (Amalgam of Corruption)
+								["groups"] = {
+									{	-- Vale of Eternal Sorrows: Fallen Protectors
+										["achievementID"] = 8458,	-- Vale of Eternal Sorrows
+										["criteriaID"] = 2,	-- Fallen Protectors
+									},
+									i(112477),	-- Softfoot's Last Resort
+									i(112478),	-- Death Lotus Crossbow
+									i(112491),	-- Purehearted Cricket Cage
+									i(112496),	-- Gaze of Echoing Despair
+									i(112481),	-- Darkfallen Shoulderplates
+									i(112494),	-- Shoulderguards of Dark Meditations
+									i(112488),	-- Shoulderpads of Dou Dou Chong
+									i(112492),	-- Shoulders of the Roiling Inferno
+									i(112485),	-- Gloomwrap Greatcloak
+									i(112487),	-- Robes of the Tendered Heart
+									i(112489),	-- Lifebane Bracers
+									i(112495),	-- Grips of the Fallen Council
+									i(112480),	-- Grips of Unending Anguish
+									i(112483),	-- Shockstriker Gauntlets
+									i(112482),	-- Poisonbinder Girth
+									i(112493),	-- Sabatons of Defilement
+									i(112486),	-- Sha-Seared Sandals
+									i(112479),	-- Stonetoe's Tormented Treads
+									i(112490),	-- Petrified Pennyroyal Ring
+									i(112484),	-- Sorrowpath Signet
+									i(112476),	-- Rook's Unlucky Talisman
+								},
+							}),
+							e(866, {	-- Norushen
 								["crs"] = {
 									71965,	-- Norushen
+									72276,	-- Amalgam of Corruption
 								},
 								["groups"] = {
 									{	-- Vale of Eternal Sorrows: Norushen
@@ -1956,7 +1964,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 									i(112553),	-- Reality Ripper Ring
 									i(112503),	-- Fusion-Fire Core
 								},
-							})),
+							}),
 							cr(71734, e(867, {	-- Sha of Pride
 								{	-- Vale of Eternal Sorrows: Sha of Pride
 									["achievementID"] = 8458,	-- Vale of Eternal Sorrows
@@ -3045,36 +3053,43 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(112427),	-- Seal of Eternal Sorrow
 					i(112426),	-- Purified Bindings of Immerseus
 				})),
-				cr(71475, e(849, {	-- The Fallen Protectors (Rook Stonetoe)
-					{	-- Go Long
-						["achievementID"] = 8528,	-- Go Long
+				e(849, {	-- The Fallen Protectors
+					["crs"] = {
+						71479,	-- He Softfoot [The Fallen Protectors]
+						71475,	-- Rook Stonetoe [The Fallen Protectors]
+						71480,	-- Sun Tenderheart [The Fallen Protectors]
 					},
-					{	-- Vale of Eternal Sorrows: Fallen Protectors
-						["achievementID"] = 8458,	-- Vale of Eternal Sorrows
-						["criteriaID"] = 2,	-- Fallen Protectors
+					["groups"] = {
+						{	-- Go Long
+							["achievementID"] = 8528,	-- Go Long
+						},
+						{	-- Vale of Eternal Sorrows: Fallen Protectors
+							["achievementID"] = 8458,	-- Vale of Eternal Sorrows
+							["criteriaID"] = 2,	-- Fallen Protectors
+						},
+						i(112477),	-- Softfoot's Last Resort
+						i(112478),	-- Death Lotus Crossbow
+						i(112491),	-- Purehearted Cricket Cage
+						i(112496),	-- Gaze of Echoing Despair
+						i(112481),	-- Darkfallen Shoulderplates
+						i(112494),	-- Shoulderguards of Dark Meditations
+						i(112488),	-- Shoulderpads of Dou Dou Chong
+						i(112492),	-- Shoulders of the Roiling Inferno
+						i(112485),	-- Gloomwrap Greatcloak
+						i(112487),	-- Robes of the Tendered Heart
+						i(112489),	-- Lifebane Bracers
+						i(112495),	-- Grips of the Fallen Council
+						i(112480),	-- Grips of Unending Anguish
+						i(112483),	-- Shockstriker Gauntlets
+						i(112482),	-- Poisonbinder Girth
+						i(112493),	-- Sabatons of Defilement
+						i(112486),	-- Sha-Seared Sandals
+						i(112479),	-- Stonetoe's Tormented Treads
+						i(112490),	-- Petrified Pennyroyal Ring
+						i(112484),	-- Sorrowpath Signet
+						i(112476),	-- Rook's Unlucky Talisman
 					},
-					i(112477),	-- Softfoot's Last Resort
-					i(112478),	-- Death Lotus Crossbow
-					i(112491),	-- Purehearted Cricket Cage
-					i(112496),	-- Gaze of Echoing Despair
-					i(112481),	-- Darkfallen Shoulderplates
-					i(112494),	-- Shoulderguards of Dark Meditations
-					i(112488),	-- Shoulderpads of Dou Dou Chong
-					i(112492),	-- Shoulders of the Roiling Inferno
-					i(112485),	-- Gloomwrap Greatcloak
-					i(112487),	-- Robes of the Tendered Heart
-					i(112489),	-- Lifebane Bracers
-					i(112495),	-- Grips of the Fallen Council
-					i(112480),	-- Grips of Unending Anguish
-					i(112483),	-- Shockstriker Gauntlets
-					i(112482),	-- Poisonbinder Girth
-					i(112493),	-- Sabatons of Defilement
-					i(112486),	-- Sha-Seared Sandals
-					i(112479),	-- Stonetoe's Tormented Treads
-					i(112490),	-- Petrified Pennyroyal Ring
-					i(112484),	-- Sorrowpath Signet
-					i(112476),	-- Rook's Unlucky Talisman
-				})),
+				}),
 				cr(72276, e(866, {	-- Norushen (Amalgam of Corruption)
 					["crs"] = {
 						71965,	-- Norushen
@@ -4242,36 +4257,43 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(112427),	-- Seal of Eternal Sorrow
 					i(112426),	-- Purified Bindings of Immerseus
 				})),
-				cr(71475, e(849, {	-- The Fallen Protectors (Rook Stonetoe)
-					{	-- Go Long
-						["achievementID"] = 8528,	-- Go Long
+				e(849, {	-- The Fallen Protectors
+					["crs"] = {
+						71479,	-- He Softfoot [The Fallen Protectors]
+						71475,	-- Rook Stonetoe [The Fallen Protectors]
+						71480,	-- Sun Tenderheart [The Fallen Protectors]
 					},
-					{	-- Vale of Eternal Sorrows: Fallen Protectors
-						["achievementID"] = 8458,	-- Vale of Eternal Sorrows
-						["criteriaID"] = 2,	-- Fallen Protectors
+					["groups"] = {
+						{	-- Go Long
+							["achievementID"] = 8528,	-- Go Long
+						},
+						{	-- Vale of Eternal Sorrows: Fallen Protectors
+							["achievementID"] = 8458,	-- Vale of Eternal Sorrows
+							["criteriaID"] = 2,	-- Fallen Protectors
+						},
+						i(112477),	-- Softfoot's Last Resort
+						i(112478),	-- Death Lotus Crossbow
+						i(112491),	-- Purehearted Cricket Cage
+						i(112496),	-- Gaze of Echoing Despair
+						i(112481),	-- Darkfallen Shoulderplates
+						i(112494),	-- Shoulderguards of Dark Meditations
+						i(112488),	-- Shoulderpads of Dou Dou Chong
+						i(112492),	-- Shoulders of the Roiling Inferno
+						i(112485),	-- Gloomwrap Greatcloak
+						i(112487),	-- Robes of the Tendered Heart
+						i(112489),	-- Lifebane Bracers
+						i(112495),	-- Grips of the Fallen Council
+						i(112480),	-- Grips of Unending Anguish
+						i(112483),	-- Shockstriker Gauntlets
+						i(112482),	-- Poisonbinder Girth
+						i(112493),	-- Sabatons of Defilement
+						i(112486),	-- Sha-Seared Sandals
+						i(112479),	-- Stonetoe's Tormented Treads
+						i(112490),	-- Petrified Pennyroyal Ring
+						i(112484),	-- Sorrowpath Signet
+						i(112476),	-- Rook's Unlucky Talisman
 					},
-					i(112477),	-- Softfoot's Last Resort
-					i(112478),	-- Death Lotus Crossbow
-					i(112491),	-- Purehearted Cricket Cage
-					i(112496),	-- Gaze of Echoing Despair
-					i(112481),	-- Darkfallen Shoulderplates
-					i(112494),	-- Shoulderguards of Dark Meditations
-					i(112488),	-- Shoulderpads of Dou Dou Chong
-					i(112492),	-- Shoulders of the Roiling Inferno
-					i(112485),	-- Gloomwrap Greatcloak
-					i(112487),	-- Robes of the Tendered Heart
-					i(112489),	-- Lifebane Bracers
-					i(112495),	-- Grips of the Fallen Council
-					i(112480),	-- Grips of Unending Anguish
-					i(112483),	-- Shockstriker Gauntlets
-					i(112482),	-- Poisonbinder Girth
-					i(112493),	-- Sabatons of Defilement
-					i(112486),	-- Sha-Seared Sandals
-					i(112479),	-- Stonetoe's Tormented Treads
-					i(112490),	-- Petrified Pennyroyal Ring
-					i(112484),	-- Sorrowpath Signet
-					i(112476),	-- Rook's Unlucky Talisman
-				})),
+				}),
 				cr(72276, e(866, {	-- Norushen (Amalgam of Corruption)
 					["crs"] = {
 						71965,	-- Norushen
@@ -5465,43 +5487,46 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(112427),	-- Seal of Eternal Sorrow
 					i(112426),	-- Purified Bindings of Immerseus
 				})),
-				cr(71475, e(849, {	-- The Fallen Protectors (Rook Stonetoe)
-					{	-- Go Long
-						["achievementID"] = 8528,	-- Go Long
+				e(849, {	-- The Fallen Protectors
+					["crs"] = {
+						71479,	-- He Softfoot [The Fallen Protectors]
+						71475,	-- Rook Stonetoe [The Fallen Protectors]
+						71480,	-- Sun Tenderheart [The Fallen Protectors]
 					},
-					{	-- Mythic: Fallen Protectors
-						["achievementID"] = 8465,	-- Mythic: Fallen Protectors
+					["groups"] = {
+						{	-- Go Long
+							["achievementID"] = 8528,	-- Go Long
+						},
+						{	-- Mythic: Fallen Protectors
+							["achievementID"] = 8465,	-- Mythic: Fallen Protectors
+						},
+						{	-- Vale of Eternal Sorrows: Fallen Protectors
+							["achievementID"] = 8458,	-- Vale of Eternal Sorrows
+							["criteriaID"] = 2,	-- Fallen Protectors
+						},
+						i(112477),	-- Softfoot's Last Resort
+						i(112478),	-- Death Lotus Crossbow
+						i(112491),	-- Purehearted Cricket Cage
+						i(112496),	-- Gaze of Echoing Despair
+						i(112481),	-- Darkfallen Shoulderplates
+						i(112494),	-- Shoulderguards of Dark Meditations
+						i(112488),	-- Shoulderpads of Dou Dou Chong
+						i(112492),	-- Shoulders of the Roiling Inferno
+						i(112485),	-- Gloomwrap Greatcloak
+						i(112487),	-- Robes of the Tendered Heart
+						i(112489),	-- Lifebane Bracers
+						i(112495),	-- Grips of the Fallen Council
+						i(112480),	-- Grips of Unending Anguish
+						i(112483),	-- Shockstriker Gauntlets
+						i(112482),	-- Poisonbinder Girth
+						i(112493),	-- Sabatons of Defilement
+						i(112486),	-- Sha-Seared Sandals
+						i(112479),	-- Stonetoe's Tormented Treads
+						i(112490),	-- Petrified Pennyroyal Ring
+						i(112484),	-- Sorrowpath Signet
+						i(112476),	-- Rook's Unlucky Talisman
 					},
-					{	-- Vale of Eternal Sorrows: Fallen Protectors
-						["achievementID"] = 8458,	-- Vale of Eternal Sorrows
-						["criteriaID"] = 2,	-- Fallen Protectors
-					},
-					i(112477),	-- Softfoot's Last Resort
-					i(112478),	-- Death Lotus Crossbow
-					i(112491),	-- Purehearted Cricket Cage
-					i(112496),	-- Gaze of Echoing Despair
-					i(112481),	-- Darkfallen Shoulderplates
-					i(112494),	-- Shoulderguards of Dark Meditations
-					i(112488),	-- Shoulderpads of Dou Dou Chong
-					i(112492),	-- Shoulders of the Roiling Inferno
-					i(112485),	-- Gloomwrap Greatcloak
-					i(112487),	-- Robes of the Tendered Heart
-					i(112489),	-- Lifebane Bracers
-					i(112495),	-- Grips of the Fallen Council
-					i(112480),	-- Grips of Unending Anguish
-					i(112483),	-- Shockstriker Gauntlets
-					i(112482),	-- Poisonbinder Girth
-					i(112493),	-- Sabatons of Defilement
-					i(112486),	-- Sha-Seared Sandals
-					i(112479),	-- Stonetoe's Tormented Treads
-					i(112490),	-- Petrified Pennyroyal Ring
-					i(112484),	-- Sorrowpath Signet
-					i(112476),	-- Rook's Unlucky Talisman
-					--un(2, i(104433)),	-- Death Lotus Crossbow
-					--un(2, i(105429)),	-- Death Lotus Crossbow (WF)
-					--un(2, i(104434)),	-- Softfoot's Last Resort
-					--un(2, i(105430)),	-- Softfoot's Last Resort (WF)
-				})),
+				}),
 				cr(72276, e(866, {	-- Norushen (Amalgam of Corruption)
 					["crs"] = {
 						71965,	-- Norushen
@@ -5796,8 +5821,6 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(112817),	-- Seal of Sullen Fury
 					i(112815),	-- Frenzied Crystal of Rage
 					i(112792),	-- Vial of Living Corruption
-				--	un(2, i(104563)),	-- Kor'kron Hand Cannon
-					--un(2, i(105559)),	-- Kor'kron Hand Cannon (WF)
 				})),
 				cr(71889, e(870, {	-- Spoils of Pandaria (Secured Stockpile of Pandaren Spoils)
 					{	-- Criss Cross

@@ -3494,14 +3494,17 @@ app.BaseCharacterClass = {
 		if key == "key" then
 			return "classID";
 		elseif key == "text" then
-			if t.mapID then return "|c" .. t.classColors.colorStr .. app.GetMapName(t.mapID) .. " (" .. t.name .. ")|r"; end
-			return "|c" .. t.classColors.colorStr .. t.name .. "|r";
+			local text = GetClassInfo(t.classID);
+			if t.mapID then
+				text = app.GetMapName(t.mapID) .. " (" .. text .. ")";
+			elseif t.maps then
+				text = app.GetMapName(t.maps[1]) .. " (" .. text .. ")";
+			end
+			text = "|c" .. t.classColors.colorStr .. text .. "|r";
+			rawset(t, "text", text);
+			return text;
 		elseif key == "icon" then
 			return classIcons[t.classID];
-		elseif key == "name" then
-			local name = GetClassInfo(t.classID);
-			rawset(t, "name", name);
-			return name;
 		elseif key == "c" then
 			local c = { t.classID };
 			rawset(t, "c", c);
