@@ -99,6 +99,7 @@ _.WorldEvents =
 						["maps"] = {
 							125,	--  Dalaran: Northrend
 						},
+						["lvl"] = 80,
 					}),
 				},
 			}),

@@ -29,11 +29,11 @@ _.GroupFinder =
 					i(51990),	-- Stalwart Treads*
 					i(51994),	-- Tumultuous Cloak*
 					i(160598),	-- Tumultuous Cloak [Added in BFA.  Confirmed in discord]
-					i(160597),	-- Tumultuous Cloak [Added in BFA.  Confirmed in discord]
+					i(160597),	-- Tumultuous Cloak ** April 7, 2019
 					i(51996),	-- Tumultuous Necklace*
 					i(51992),	-- Tumultuous Ring*
 					i(51964),	-- Vigorous Belt*
-					i(51962),	-- Vigorous Bracers*
+					i(51962),	-- Vigorous Bracers ** April 7, 2019
 					i(51965),	-- Vigorous Handguards
 					un(2, i(51998)),	-- Vigorous Spaulders [Probably unobtainable - maybe old leather set that got changed into mail set]
 					i(51966),	-- Vigorous Spaulders*

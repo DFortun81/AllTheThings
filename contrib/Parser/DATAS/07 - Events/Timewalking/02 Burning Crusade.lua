@@ -109,6 +109,7 @@ _.WorldEvents =
 						}),
 					}),
 				},
+				["lvl"] = 70,
 				["maps"] = {
 					111	-- Shattrath City
 				},

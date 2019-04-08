@@ -62,6 +62,7 @@ _.WorldEvents =
 						["maps"] = {
 							622	-- Stormshield
 						},
+						["lvl"] = 100,
 						["races"] = ALLIANCE_ONLY,
 					}),
 					n(151987, {	-- Kronnus <Timewalking Vendor>
@@ -114,6 +115,7 @@ _.WorldEvents =
 							624	-- Warspear
 						},
 						["races"] = HORDE_ONLY,
+						["lvl"] = 100,
 					}),
 				},
 			}),

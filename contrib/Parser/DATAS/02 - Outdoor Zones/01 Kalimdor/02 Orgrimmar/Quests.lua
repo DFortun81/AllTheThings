@@ -289,21 +289,30 @@ _.Zones =
 											}),
 											q(53824, {	-- The Rite of Kings and Queens
 												["qg"] = 148096,	-- High Prelate Rata
-												["coord"] = { 42.6, 22.5, 1165 },
+												["coord"] = { 42.57, 22.54, 1165 },
 												["races"] = HORDE_ONLY,
 												["sourceQuest"] = 53823,	-- A Queen's Entourage
+												["maps"] = {
+													1165,	-- Zuldazar: The Zocalo
+												},
 											}),
 											q(54419, {	-- Quelling the Masses
 												["qg"] = 145360,	-- Zolani
-												["coord"] = { 40.3,12.5, 1165 },
+												["coord"] = { 40.28, 12.45, 1165 },
 												["races"] = HORDE_ONLY,
 												["sourceQuest"] = 53824,	-- The Rite of Kings and Queens
+												["maps"] = {
+													1165,	-- Zuldazar: Zanchul
+												},
 											}),
 											q(53826, {	-- The Instigator Among Us
 												["qg"] = 145360,	-- Zolani
-												["coord"] = { 40.3,12.5, 1165 },
+												["coord"] = { 40.28, 12.45, 1165 },
 												["races"] = HORDE_ONLY,
 												["sourceQuest"] = 53824,	-- The Rite of Kings and Queens
+												["maps"] = {
+													1165,	-- Zuldazar: Zanchul
+												},
 											}),
 											q(54301, {	-- Talanji's Mercy
 												["qg"] = 145359,	-- Princess Talanji
