@@ -5,10 +5,12 @@ _.Toys =
 {
 	n(-2,  { 	-- Vendor
 		i(163211),		-- Akunda's Firesticks
+		i(168012),		-- Apexis Focusing Shard
 		i(46843),		-- Argent Crusader's Banner
 		i(147537, { 	-- A Tiny Set of Warglaives -- demon hunter class hall
 			["classes"] = {12},
 		}),
+		i(168014),		-- Banner of the Burning Blade
 		i(120857, {		-- Barrel of Bandanas -- only rogue
 			["classes"] = {4},
 		}),
