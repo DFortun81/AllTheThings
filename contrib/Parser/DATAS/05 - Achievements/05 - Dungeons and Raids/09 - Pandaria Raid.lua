@@ -4,9 +4,9 @@
 
 _.Achievements = 
 {
-	n(-9959, { -- Dungeons & Raids
+	n(-9959, {	-- Dungeons & Raids
 		["groups"] = {
-			n(-10009, { -- Pandaria Raid
+			n(-10009, {	-- Pandaria Raid
 				["groups"] = {
 					{	-- A Complete Circuit
 						["achievementID"] = 8090,	-- A Complete Circuit

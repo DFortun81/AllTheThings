@@ -639,7 +639,7 @@ _.Zones =
 					{	-- Salhet's Secret
 						["questID"] = 28276,
 						["qg"] = 48022,	-- Salhet
-						["coord"] = { 52.5, 56.5, 249 }, -- Picked up anywhere on Sunwatcher's Ridge, but adding one coord to point out the general area
+						["coord"] = { 52.5, 56.5, 249 },	-- Picked up anywhere on Sunwatcher's Ridge, but adding one coord to point out the general area
 						["sourceQuest"] = 28210,	-- Shaping Up
 					},
 					{	-- Sand-Covered Hieroglyphs

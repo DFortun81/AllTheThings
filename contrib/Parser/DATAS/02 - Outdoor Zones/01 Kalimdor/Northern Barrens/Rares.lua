@@ -113,7 +113,7 @@ _.Zones =
 							i(6539),	-- Willow Belt
 							i(6550),	-- Soldier's Wristguards
 							i(6537),	-- Willow Boots
-							un(7, i(4768)), -- Adept's Gloves
+							un(7, i(4768)),	-- Adept's Gloves
 							un(7, i(4771)),	-- Harvest Cloak
 						},
 					}), 
@@ -225,7 +225,7 @@ _.Zones =
 							i(9788),	-- Raider's Belt
 							i(9766),	-- Greenweave Sash
 							un(7, i(5183)),	-- Pulsating Hydra Heart
-							un(7, i(5182)), -- Shiver Blade
+							un(7, i(5182)),	-- Shiver Blade
 						},
 					}),
 					n(5828, {	-- Humar the Pridelord
@@ -287,7 +287,7 @@ _.Zones =
 							i(6564),	-- Shimmering Cloak
 							i(9787),	-- Raider's Gauntlets
 							un(7, i(5111)),	-- Rathorian's Cape
-							un(7, i(5112)), -- Ritual Blade
+							un(7, i(5112)),	-- Ritual Blade
 						},
 					}), 
 					n(5841, {	-- Rocklance

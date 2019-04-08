@@ -20,9 +20,9 @@ _.Zones =
 								131530,	-- Hexthralled Guardsman
 								141642,	-- Hexthralled Halberdier
 								133889,	-- Hexthralled Halberdier
-								131519, -- Hexthralled Falconer
-								133736, -- Hexthralled Falconeer
-								137134, -- Hexthralled Soldier
+								131519,	-- Hexthralled Falconer
+								133736,	-- Hexthralled Falconeer
+								137134,	-- Hexthralled Soldier
 							},
 						}),
 					},

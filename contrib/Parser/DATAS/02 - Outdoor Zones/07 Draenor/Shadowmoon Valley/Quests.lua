@@ -171,7 +171,7 @@ _.Zones =
 									i(113147),	-- Rangari Luck Charm
 								},
 							}),
-							qa(33837, { -- Darkness Falls
+							qa(33837, {	-- Darkness Falls
 								i(113176),	-- Karabor Anchorite Cudgel
 								i(113172),	-- Karabor Arcanist Wand
 								i(113173),	-- Karabor Honor Guard Mace
@@ -195,7 +195,7 @@ _.Zones =
 									i(113157),	-- Rangari Initiate Ring
 								},
 							}),
-							qa(33081, { -- Escape From Shaz'gul
+							qa(33081, {	-- Escape From Shaz'gul
 								i(107309),	-- Karabor Honor Guard Warboots
 								i(107315),	-- Karabor Sage Treads
 								i(107304),	-- Karabor Skirmisher Boots
@@ -203,22 +203,22 @@ _.Zones =
 							}),
 							qa(36311, {  -- Father and Son
 								["g"] = {
-									i(115356, { -- Draenor Blacksmithing
+									i(115356, {	-- Draenor Blacksmithing
 										["collectible"] = false,
 									}),
-									i(111813), -- The Forge, Level 1
+									i(111813),	-- The Forge, Level 1
 								},
-								["qg"] = 80827, -- Haephest
-								["sourceQuests"] = { 36309 }, -- The Strength of Iron
+								["qg"] = 80827,	-- Haephest
+								["sourceQuests"] = { 36309 },	-- The Strength of Iron
 								["races"] = ALLIANCE_ONLY,
-								["requireSkill"] = 164, -- Blacksmithing
+								["requireSkill"] = 164,	-- Blacksmithing
 							}),
 							qa(33114, {	-- Forging the Soul Trap
 								["qg"] = 77417,	-- Image of Archmage Khadgar
 								["coord"] = { 19.1, 28.5, 539 },
 								["sourceQuests"] = { 33168 },	-- Heart On Fire
 							}),
-							qa(34583, { -- For the Alliance!
+							qa(34583, {	-- For the Alliance!
 								i(108918),	-- Karabor Arcanist Rod
 								i(108919),	-- Karabor Augury Mace
 								i(108914),	-- Karabor Footman Sword
@@ -228,13 +228,13 @@ _.Zones =
 								i(108908),	-- Rangari Initiate Crossbow
 								i(108910),	-- Rangari Initiate Dagger
 							}),
-							qa(33271, { -- Game of Thorns
+							qa(33271, {	-- Game of Thorns
 								i(113151),	-- Lightly Perforated Chestplate
 								i(113153),	-- Podling-Husk Tunic
 								i(113154),	-- Podling Vineweave Robe
 								i(113152),	-- Thorn-Encrusted Mail
 							}),
-							qa(35015, { -- Gestating Genesaur
+							qa(35015, {	-- Gestating Genesaur
 								i(107310),	-- Karabor Honor Guard Gauntlets
 								i(107303),	-- Rangari Initiate Gauntlets
 								i(107861),	-- Karabor Sage Gloves
@@ -296,7 +296,7 @@ _.Zones =
 								["sourceQuests"] = { 36199 },	-- Moonshell Claws
 								["requireSkill"] = 356,	-- Fishing
 							},
-							qa(34996, { -- Rotting Riverbeasts
+							qa(34996, {	-- Rotting Riverbeasts
 								i(113239),	-- Blademoon Chain Leggings
 								i(113237),	-- Blademoon Leggings
 								i(113240),	-- Blademoon Plate Legguards
@@ -310,7 +310,7 @@ _.Zones =
 									33359,	-- Meet Us at Starfall Post
 								},
 							}),
-							qa(34019, { -- Shadows Awaken (awarded "Shadows Awaken" criteria)
+							qa(34019, {	-- Shadows Awaken (awarded "Shadows Awaken" criteria)
 								["qg"] = 74043,	-- Prophet Velen
 								["coord"] = { 49.1, 38.6, 539 },
 								["sourceQuests"] = {
@@ -340,25 +340,25 @@ _.Zones =
 								["coord"] = { 29.2, 25.6, 539 },
 								["sourceQuests"] = { 33112 },	-- Ominous Portents
 							}),
-							qa(33808, { -- Swamplighter Queen
+							qa(33808, {	-- Swamplighter Queen
 								i(106153),	-- Karabor Honor Guard Chestplate
 								i(107314),	-- Karabor Sage Robe
 								i(106143),	-- Karabor Skirmisher Vest
 								i(106176),	-- Rangari Initiate Vest
 							}),
-							qa(34054, { -- The Dark Side of the Moon
+							qa(34054, {	-- The Dark Side of the Moon
 								i(107312),	-- Karabor Honor Guard Shoulders
 								i(107317),	-- Karabor Sage Mantle
 								i(107307),	-- Karabor Skirmisher Spaulders
 								i(106175),	-- Rangari Initiate Spaulders
 							}),
-							qa(33256, { -- The Defense of Karabor
+							qa(33256, {	-- The Defense of Karabor
 								i(106150),	-- Karabor Honor Guard Helm
 								i(106156),	-- Karabor Sage Cap
 								i(106160),	-- Karabor Skirmisher Hood
 								i(106139),	-- Rangari Initiate Helm
 							}),
-							qa(34782, { -- The Exarch Council
+							qa(34782, {	-- The Exarch Council
 								["qg"] = 82348,	-- Vindicator Maraad
 								["coord"] = { 56.1, 32.4, 539 },
 								["sourceQuests"] = { 34781 },	-- Defenstrations
@@ -389,7 +389,7 @@ _.Zones =
 								["coord"] = { 49.1, 37.1, 539 },
 								["sourceQuests"] = { 34019 },	-- Shadows Awaken
 							}),
-							qa(34792, { -- The Traitor's True Name
+							qa(34792, {	-- The Traitor's True Name
 								i(113234),	-- Karabor Honor Guard Wristwraps
 								i(113233),	-- Karabor Sage Wristwraps
 								i(113235),	-- Karabor Skirmisher Wristwraps
@@ -400,7 +400,7 @@ _.Zones =
 								["coord"] = { 46.5, 37.7, 539 },
 								["sourceQuests"] = { 33075 },	-- A Hero's Welcome
 							}),
-							qa(33116, { -- To Catch a Shadow (awarded "To Catch a Shadow" achievement)
+							qa(33116, {	-- To Catch a Shadow (awarded "To Catch a Shadow" achievement)
 								["qg"] = 77417,	-- Image of Archmage Khadgar
 								["coord"] = { 19.1, 28.5, 539 },
 								["sourceQuests"] = { 33114 },	-- Forging the Soul Trap

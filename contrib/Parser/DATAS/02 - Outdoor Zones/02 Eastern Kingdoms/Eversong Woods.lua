@@ -66,7 +66,7 @@ _.Zones =
 					}),
 				}),
 				n(-38, {	-- Profession
-					prof(356, { -- Fishing
+					prof(356, {	-- Fishing
 						["groups"] = {
 							i(6643),		-- Bloated Smallfish. He contains a Malachite & a Tiyerseye, but the rate to fish him is 1 to 2000-4000.
 						},
@@ -163,7 +163,7 @@ _.Zones =
 					}),
 					qh( 9402, {	-- Fetch!
 						["qg"] = 15970,	-- Instructor Antheol
-						["classes"] = {8}, -- Mage
+						["classes"] = {8},	-- Mage
 					}),
 					qh( 8884, {	-- Fish Heads, Fish Heads...
 						["qg"] = 15920,	-- Hathvelion Sungaze
@@ -171,11 +171,11 @@ _.Zones =
 					q(  9133, {	-- Fly to Silvermoon City
 						["qg"] = 44036,	-- Skymaster Brightdawn
 						["sourceQuests"] = { 9130 },	-- Goods from Silvermoon City
-						["races"] = {10}, -- Blood Elf
+						["races"] = {10},	-- Blood Elf
 					}),
 					q(  9130, {	-- Goods from Silvermoon City
 						["qg"] = 16261,	-- Sathiel
-						["races"] = {10}, -- Blood Elf
+						["races"] = {10},	-- Blood Elf
 					}),
 					qh( 8886, {	-- Grimscale Pirates!
 						["qg"] = 15921,	-- Captain Kelisendra
@@ -188,7 +188,7 @@ _.Zones =
 						["sourceQuests"] = { 9352 },	-- Darnassian Intrusions
 					},
 					q( 32668, {	-- Learn To Ride
-						["races"] = { 10 }, -- Blood Elf
+						["races"] = { 10 },	-- Blood Elf
 						["description"] = "This quest is automatically offered to Blood Elves upon reaching Level 20.",
 					}),
 --					qh(14081),	-- Learn to Ride in the Eversong Woods (REMOVED)
@@ -230,7 +230,7 @@ _.Zones =
 							i(7508),	-- Ley Orb
 						},
 						["qg"] = 15970,	-- Instructor Antheol
-						["classes"] = { 8 }, -- Mage
+						["classes"] = { 8 },	-- Mage
 						["sourceQuests"] = { 9403 },	-- The Purest Water
 					}),
 					qh( 9255, {	-- Research Notes
@@ -240,7 +240,7 @@ _.Zones =
 					q(  9135, {	-- Return to Sathiel
 						["qg"] = 16192,	-- Skymistress Gloaming
 						["sourceQuests"] = { 9134 },	-- Skymistress Gloaming
-						["races"] = {10}, -- Blood Elf
+						["races"] = {10},	-- Blood Elf
 					}),
 					qh( 9035, {	-- Roadside Ambush
 						["qg"] = 15941,	-- Apprentice Ralen
@@ -260,7 +260,7 @@ _.Zones =
 					q(  9134, {	-- Skymistress Gloaming
 						["qg"] = 16191,	-- Sathren Azuredawn
 						["sourceQuests"] = { 9133 },	-- Fly to Silvermoon City
-						["races"] = {10}, -- Blood Elf
+						["races"] = {10},	-- Blood Elf
 					}),
 					qh( 9704, {	-- Slain by the Wretched
 						["qg"] = 15301,	-- Outrunner Alarion
@@ -293,7 +293,7 @@ _.Zones =
 --[[					
 					q( 14171, {	-- The Grateful Dead (HOLIDAY! Day of the Dead)
 						["qg"] = 34483,	-- Cheerful Blood Elf Spirit
-						["races"] = { 10 }, -- Blood Elf
+						["races"] = { 10 },	-- Blood Elf
 					}),
 --]]
 					qh( 8888, {	-- The Magister's Apprentice
@@ -305,7 +305,7 @@ _.Zones =
 					}),
 					qh( 9403, {	-- The Purest Water
 						["qg"]	= 15970,	-- Instructor Antheol
-						["classes"] = {8}, -- Mage
+						["classes"] = {8},	-- Mage
 						["sourceQuests"] = { 9402 },	-- Fetch!
 					}),
 					qh( 8885, {	-- The Ring of Mmmrrrggglll
@@ -362,7 +362,7 @@ _.Zones =
 					}),
 				}),
 				n(-16, {	-- Rares	
-					n(16854, { -- Eldinarcus
+					n(16854, {	-- Eldinarcus
 						dr(3, { i(2965), }),	-- Warrior's Tunic
 						dr(2, { i(2961), }),	-- Burnt Leather Vest
 						dr(1.7, { i(2957), }),	-- Journeyman's Vest
@@ -380,7 +380,7 @@ _.Zones =
 						dr(0.8, { i(6336), }),	-- Infantry Tunic
 						dr(0.8, { i(6269), }),	-- Pioneer Trousers
 					}),
-					n(16855, { -- Tregla
+					n(16855, {	-- Tregla
 						dr(3, { i(2962), }),	-- Burnt Leather Breeches
 						dr(3, { i(2958), }),	-- Journeyman's Pants
 						dr(2, { i(2966), }),	-- Warrior's Pants

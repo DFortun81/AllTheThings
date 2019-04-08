@@ -94,21 +94,21 @@ _.PVP =
 						["description"] = "This has a CHANCE to drop from any rated battleground win.",
 						["requireSkill"] = 197,	-- Tailoring
 					},
-					i(123950, { -- Recipe: Demonsteel Pauldrons (Rank 3)
+					i(123950, {	-- Recipe: Demonsteel Pauldrons (Rank 3)
 						["description"] = "This has a CHANCE to drop from any rated battleground win.",
-						["requireSkill"] = 164, -- Blacksmithing
+						["requireSkill"] = 164,	-- Blacksmithing
 					}),
-					i(137894, { -- Recipe: Dreadleather Shoulderguard (Rank 3)
+					i(137894, {	-- Recipe: Dreadleather Shoulderguard (Rank 3)
 						["description"] = "This has a CHANCE to drop from any rated battleground win.",
-						["requireSkill"] = 165, -- Leatherworking
+						["requireSkill"] = 165,	-- Leatherworking
 					}),
-					i(137926, { -- Recipe: Gravenscale Spaulders (Rank 3)
+					i(137926, {	-- Recipe: Gravenscale Spaulders (Rank 3)
 						["description"] = "This has a CHANCE to drop from any rated battleground win.",
-						["requireSkill"] = 165, -- Leatherworking
+						["requireSkill"] = 165,	-- Leatherworking
 					}),
 				},
 			},
-			n(-227, { -- Victory
+			n(-227, {	-- Victory
 				["g"] = bubbleDown({["modID"] = 8}, {
 					{	-- Dread Gladiator's Barrier
 						["itemID"] = 161677,	-- Dread Gladiator's Barrier

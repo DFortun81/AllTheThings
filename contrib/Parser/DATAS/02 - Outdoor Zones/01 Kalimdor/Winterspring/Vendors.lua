@@ -64,7 +64,7 @@ _.Zones =
 							{				-- Schematic: Fused Wiring
 								["itemID"] = 32381,	-- Schematic: Fused Wiring
 								["spellID"] = 0,
-								["u"] = 7, -- now learned from trainer, schematic was removed from game
+								["u"] = 7,	-- now learned from trainer, schematic was removed from game
 							},
 							i(18652),       -- Schematic: Gyrofreeze Ice Reflector
 							i(16046),       -- Schematic: Masterwork Target Dummy
@@ -72,7 +72,7 @@ _.Zones =
 							{				-- Schematic: Thorium Tube
 								["itemID"] = 16047,	-- Schematic: Thorium Tube
 								["spellID"] = 0,
-								["u"] = 7, -- now learned from trainer, schematic was removed from game
+								["u"] = 7,	-- now learned from trainer, schematic was removed from game
 							},
 						},
 					}),

@@ -3,9 +3,9 @@
 -----------------------------------------------------
 _.GearSets = 
 {
-	gsh(1522, { -- Allied Races
+	gsh(1522, {	-- Allied Races
 		["groups"] = {
-			gs(1741, { -- Heritage of Kul'Tiras
+			gs(1741, {	-- Heritage of Kul'Tiras
 				["groups"] = {
 					{	-- Kul'Tiran Bicorne
 						["itemID"] = 165002,	-- Kul'Tiran Bicorne

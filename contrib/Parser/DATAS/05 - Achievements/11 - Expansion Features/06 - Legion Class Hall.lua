@@ -4,9 +4,9 @@
 
 _.Achievements = 
 {
-	n(-10055, { -- Expansion Features
+	n(-10055, {	-- Expansion Features
 		["groups"] = {
-			n(-9965, { -- Legion Class Hall
+			n(-9965, {	-- Legion Class Hall
 				["groups"] = {
 					ach(11298, {	-- A Classy Outfit
 						crit(1),		-- Class Hall Helm Earned

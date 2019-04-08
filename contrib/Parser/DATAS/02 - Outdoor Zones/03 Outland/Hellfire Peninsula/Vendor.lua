@@ -196,8 +196,8 @@ _.Zones =
 						}),
 						n(16583, {	-- Rohok
 							["groups"] = {
-								un(1, i(25847)), -- Plans: Eternium Rod
-								i(23638), -- Plans: Lesser Ward of Shielding
+								un(1, i(25847)),	-- Plans: Eternium Rod
+								i(23638),	-- Plans: Lesser Ward of Shielding
 							},
 							["coord"] = { 53.2, 38.2 },
 							["races"] = HORDE_ONLY,

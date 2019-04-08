@@ -62,7 +62,7 @@ _.Zones =
 								["coord"] = { 75.05, 67.53, 84 },
 								["g"] = {
 									-- Ensembles not added as unable to verify contents
-									i(146639, { -- Arsenal: Cataclysmic Gladiator's Weapons [ Horde / Alliance / Tested ]
+									i(146639, {	-- Arsenal: Cataclysmic Gladiator's Weapons [ Horde / Alliance / Tested ]
 										["groups"] = {
 											i(73446),	-- Cataclysmic Gladiator's Shield Wall
 											i(73447),	-- Cataclysmic Gladiator's Slicer
@@ -1221,51 +1221,51 @@ _.Zones =
 								["coord"] = { 71.71, 62.74, 84 },
 								["g"] = {
 									i(56516, {	-- Heavy Savage Leather
-										i(67095), -- Pattern: Assassin's Chestplate
-										i(67070), -- Pattern: Belt of Nefarious Whispers
-										i(67084), -- Pattern: Charscale Leg Armor
-										i(67094), -- Pattern: Chestguard of Nature's Fury
-										i(67073), -- Pattern: Corded Viper Belt
-										i(67100), -- Pattern: Dragonkiller Tunic
-										i(68193), -- Pattern: Dragonscale Leg Armor							
-										i(71721), -- Pattern: Drakehide Leg Armor												
-										i(67068), -- Pattern: Lightning Lash
-										i(67082), -- Pattern: Razor-Edged Cloak
-										i(67072), -- Pattern: Stormleather Sash	
-										i(67083), -- Pattern: Twilight Dragonscale Cloak
-										i(67096), -- Pattern: Twilight Scale Chestguard
-										i(67064), -- Pattern: Vicious Charscale Belt
-										i(67063), -- Pattern: Vicious Charscale Boots	
-										i(67049), -- Pattern: Vicious Charscale Bracers
-										i(67090), -- Pattern: Vicious Charscale Chest
-										i(67053), -- Pattern: Vicious Charscale Gloves
-										i(67091), -- Pattern: Vicious Charscale Helm
-										i(67079), -- Pattern: Vicious Charscale Legs
-										i(67078), -- Pattern: Vicious Charscale Shoulders						
-										i(67080), -- Pattern: Vicious Dragonscale Belt
-										i(67065), -- Pattern: Vicious Dragonscale Boots	
-										i(67054), -- Pattern: Vicious Dragonscale Bracers
-										i(67093), -- Pattern: Vicious Dragonscale Chest
-										i(67066), -- Pattern: Vicious Dragonscale Gloves
-										i(67081), -- Pattern: Vicious Dragonscale Helm
-										i(67092), -- Pattern: Vicious Dragonscale Legs
-										i(67055), -- Pattern: Vicious Dragonscale Shoulders
-										i(67076), -- Pattern: Vicious Leather Belt
-										i(67060), -- Pattern: Vicious Leather Boots	
-										i(67046), -- Pattern: Vicious Leather Bracers
-										i(67087), -- Pattern: Vicious Leather Chest
-										i(67048), -- Pattern: Vicious Leather Gloves
-										i(67077), -- Pattern: Vicious Leather Helm
-										i(67089), -- Pattern: Vicious Leather Legs	
-										i(67062), -- Pattern: Vicious Leather Shoulders
-										i(67044), -- Pattern: Vicious Wyrmhide Belt
-										i(67058), -- Pattern: Vicious Wyrmhide Boots
-										i(67042), -- Pattern: Vicious Wyrmhide Bracers
-										i(67075), -- Pattern: Vicious Wyrmhide Chest	
-										i(67056), -- Pattern: Vicious Wyrmhide Gloves
-										i(67086), -- Pattern: Vicious Wyrmhide Helm
-										i(67085), -- Pattern: Vicious Wyrmhide Legs	
-										i(67074), -- Pattern: Vicious Wyrmhide Shoulders
+										i(67095),	-- Pattern: Assassin's Chestplate
+										i(67070),	-- Pattern: Belt of Nefarious Whispers
+										i(67084),	-- Pattern: Charscale Leg Armor
+										i(67094),	-- Pattern: Chestguard of Nature's Fury
+										i(67073),	-- Pattern: Corded Viper Belt
+										i(67100),	-- Pattern: Dragonkiller Tunic
+										i(68193),	-- Pattern: Dragonscale Leg Armor							
+										i(71721),	-- Pattern: Drakehide Leg Armor												
+										i(67068),	-- Pattern: Lightning Lash
+										i(67082),	-- Pattern: Razor-Edged Cloak
+										i(67072),	-- Pattern: Stormleather Sash	
+										i(67083),	-- Pattern: Twilight Dragonscale Cloak
+										i(67096),	-- Pattern: Twilight Scale Chestguard
+										i(67064),	-- Pattern: Vicious Charscale Belt
+										i(67063),	-- Pattern: Vicious Charscale Boots	
+										i(67049),	-- Pattern: Vicious Charscale Bracers
+										i(67090),	-- Pattern: Vicious Charscale Chest
+										i(67053),	-- Pattern: Vicious Charscale Gloves
+										i(67091),	-- Pattern: Vicious Charscale Helm
+										i(67079),	-- Pattern: Vicious Charscale Legs
+										i(67078),	-- Pattern: Vicious Charscale Shoulders						
+										i(67080),	-- Pattern: Vicious Dragonscale Belt
+										i(67065),	-- Pattern: Vicious Dragonscale Boots	
+										i(67054),	-- Pattern: Vicious Dragonscale Bracers
+										i(67093),	-- Pattern: Vicious Dragonscale Chest
+										i(67066),	-- Pattern: Vicious Dragonscale Gloves
+										i(67081),	-- Pattern: Vicious Dragonscale Helm
+										i(67092),	-- Pattern: Vicious Dragonscale Legs
+										i(67055),	-- Pattern: Vicious Dragonscale Shoulders
+										i(67076),	-- Pattern: Vicious Leather Belt
+										i(67060),	-- Pattern: Vicious Leather Boots	
+										i(67046),	-- Pattern: Vicious Leather Bracers
+										i(67087),	-- Pattern: Vicious Leather Chest
+										i(67048),	-- Pattern: Vicious Leather Gloves
+										i(67077),	-- Pattern: Vicious Leather Helm
+										i(67089),	-- Pattern: Vicious Leather Legs	
+										i(67062),	-- Pattern: Vicious Leather Shoulders
+										i(67044),	-- Pattern: Vicious Wyrmhide Belt
+										i(67058),	-- Pattern: Vicious Wyrmhide Boots
+										i(67042),	-- Pattern: Vicious Wyrmhide Bracers
+										i(67075),	-- Pattern: Vicious Wyrmhide Chest	
+										i(67056),	-- Pattern: Vicious Wyrmhide Gloves
+										i(67086),	-- Pattern: Vicious Wyrmhide Helm
+										i(67085),	-- Pattern: Vicious Wyrmhide Legs	
+										i(67074),	-- Pattern: Vicious Wyrmhide Shoulders
 									}),
 								},
 							},
@@ -1728,7 +1728,7 @@ _.Zones =
 									un(2, i(72437)),	-- Ruthless Gladi mail legs. S11 Version
 									un(2, i(72437)),	-- Ruthless Gladi mail spaulders. S11 Version
 								},
-								["u"] = 43, -- Vendor no longer exists
+								["u"] = 43,	-- Vendor no longer exists
 							},
 							{	-- Knight-Lieutenant T'Maire Sydes <Ruthless Gladiator>
 								["itemID"] = 137642,	-- Mark of Honor
@@ -1736,7 +1736,7 @@ _.Zones =
 								["coord"] = { 74.94, 67.25, 84 },
 								["g" ] = {
 									-- Ensembles not added as unable to verify contents
-									i(146640, { -- Arsenal: Ruthless Gladiator's Weapons
+									i(146640, {	-- Arsenal: Ruthless Gladiator's Weapons
 										i(70242),	-- Ruthless Gladiator's Barrier
 										i(70235),	-- Ruthless Gladiator's Baton of Light
 										i(70226),	-- Ruthless Gladiator's Battle Staff
@@ -2265,7 +2265,7 @@ _.Zones =
 								["coord"] = { 75.00, 67.02, 84 },
 								["g"] = {
 									-- Ensembles not added as unable to verify contents, individual armor pieces verified on vendor
-									i(146641), --  Arsenal: Vicious Gladiator's Weapons
+									i(146641),	--  Arsenal: Vicious Gladiator's Weapons
 									-- Weapons
 									i(61360),	-- Vicious Gladiator's Barrier
 									i(61351),	-- Vicious Gladiator's Baton of Light

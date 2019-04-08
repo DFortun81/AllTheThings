@@ -44,12 +44,12 @@ _.Zones =
 									["isDaily"] = true,
 								}),
 								q(11026, {	-- Banish the Demons
-									["qg"] = 23253, -- Kronk
+									["qg"] = 23253,	-- Kronk
 									["coord"] = { 28.8, 57.8, 105 },
 									["description"] = "Only available if you are Honored with Ogri'la.",
 								}),
 								q(11051, {	-- Banish More Demons
-									["qg"] = 23253, -- Kronk
+									["qg"] = 23253,	-- Kronk
 									["coord"] = { 28.8, 57.8, 105 },
 									["sourceQuest"] = 11026,	-- Banish the Demons
 									["description"] = "Only available if you are Honored with Ogri'la.",
@@ -60,7 +60,7 @@ _.Zones =
 								n(23428, {	-- Jho'nass <Ogri'la Quartermaster>
 									["coord"] = { 28.0, 58.6, 105 },
 									["groups"] = {
-										i(32569, { -- Apexis Shard
+										i(32569, {	-- Apexis Shard
 											i(32650),	-- Cerulean Crystal Rod
 											i(32654),	-- Crystalforged Trinket
 											i(32652),	-- Ogri'la Aegis

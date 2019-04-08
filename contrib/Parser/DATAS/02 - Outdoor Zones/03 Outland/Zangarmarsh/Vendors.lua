@@ -70,9 +70,9 @@ _.Zones =
 						na(19694,  {		-- Loolruna <Armorer>
 							["coord"] = { 68.6, 50.2, 102 },
 							["groups"] = {
-								i(23596), -- Plans: Adamantite Breastplate
-								i(23594), -- Plans: Adamantite Plate Bracers
-								i(23595), -- Plans: Adamantite Plate Gloves
+								i(23596),	-- Plans: Adamantite Breastplate
+								i(23594),	-- Plans: Adamantite Plate Bracers
+								i(23595),	-- Plans: Adamantite Plate Gloves
 							},
 						}),
 						na(19722, {		-- Muheru the Weaver <Tailoring Supplies>

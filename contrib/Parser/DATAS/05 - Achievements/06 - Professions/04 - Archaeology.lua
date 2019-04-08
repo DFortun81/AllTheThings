@@ -12,9 +12,9 @@ To do:
 
 _.Achievements = 
 {
-	n(-9960, { -- Professions
+	n(-9960, {	-- Professions
 		["groups"] = {
-			n(-9974, { -- Archaeology
+			n(-9974, {	-- Archaeology
 				["groups"] = {
 					ach(10603, {	-- A Keen Eye
 						crit(1),		-- Corrupted Studies

@@ -3,8 +3,8 @@
 -----------------------------------------------------
 _.GearSets = 
 {
-	n(-124, { -- Garrison Sets
-		gs(1533, { -- Blackrock Sootplate
+	n(-124, {	-- Garrison Sets
+		gs(1533, {	-- Blackrock Sootplate
 			i(113809),	-- Blackrock Greathelm
 			i(113811),	-- Blackrock Pauldrons
 			i(113807),	-- Blackrock Chestplate
@@ -14,7 +14,7 @@ _.GearSets =
 			i(113810),	-- Blackrock Legplates
 			i(113806),	-- Blackrock Greaves
 		}),
-		gs(1534, { -- Garb of the Shadowmoon
+		gs(1534, {	-- Garb of the Shadowmoon
 			i(113801),	-- Shadowmoon Cowl
 			i(113803),	-- Shadowmoon Shoulderguards
 			i(113799),	-- Shadowmoon Robes
@@ -43,7 +43,7 @@ _.GearSets =
 			i(117411),	-- Stormwind Leggings
 			i(117412),	-- Stormwind Boots
 		})),
-		gs(1535, { -- Thunderlord Harness
+		gs(1535, {	-- Thunderlord Harness
 			i(113793),	-- Thunderlord Helm
 			i(113795),	-- Thunderlord Shoulderguards
 			i(113791),	-- Thunderlord Chestguard
@@ -53,7 +53,7 @@ _.GearSets =
 			i(113794),	-- Thunderlord Leggings
 			i(113790),	-- Thunderlord Sabatons
 		}),
-		gs(1536, { -- Warsong Outrider's Garb
+		gs(1536, {	-- Warsong Outrider's Garb
 			i(113817),	-- Warsong Hood
 			i(113819),	-- Warsong Spaulders
 			i(113815),	-- Warsong Wraps

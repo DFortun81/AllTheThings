@@ -152,7 +152,7 @@ _.Zones =
 					n(34090,  {	-- Blazzek the Biter Season >7< Elite Version [Note: Yes, two npc's with same name. One is removed]
 						["u"] = 43,	-- Vendor no longer exists
 						["g"] = {
-							un(2, i(49086)), -- Relentless Gladiator's Tabard [Elite Rating]
+							un(2, i(49086)),	-- Relentless Gladiator's Tabard [Elite Rating]
 							un(2, i(48435)),	-- Relentless Gladiator's Punisher
 							un(2, i(48511)),	-- Relentless Gladiator's Truncheon
 							un(2, i(48519)),	-- Relentless Gladiator's Salvation
@@ -212,7 +212,7 @@ _.Zones =
 						["itemID"] = 137642,	-- Mark of Honor
 						["coord"] = { 51.6, 28.0, 71 },
 						["g"] = {
-							i(146641), --  Arsenal: Vicious Gladiator's Weapons
+							i(146641),	--  Arsenal: Vicious Gladiator's Weapons
 							-- Weapons
 							i(61360),	-- Vicious Gladiator's Barrier
 							i(61351),	-- Vicious Gladiator's Baton of Light
@@ -397,7 +397,7 @@ _.Zones =
 						["itemID"] = 137642,	-- Mark of Honor
 						["coord"] = { 51.6, 28.0, 71 },
 						["g"] = {
-							i(146639), -- Arsenal: Cataclysmic Gladiator's Weapons
+							i(146639),	-- Arsenal: Cataclysmic Gladiator's Weapons
 							i(73552),	-- Cataclysmic Gladiator's Warboots of Alacrity
 							i(73479),	-- Cataclysmic Gladiator's Plate Legguards
 							i(73480),	-- Cataclysmic Gladiator's Plate Helm

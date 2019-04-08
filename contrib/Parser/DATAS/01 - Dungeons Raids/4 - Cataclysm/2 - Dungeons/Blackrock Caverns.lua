@@ -117,7 +117,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 				},
 			}),
 			d(  1, {	-- Normal
-				cr(39665, e(105, { -- Rom'ogg Boncrusher
+				cr(39665, e(105, {	-- Rom'ogg Boncrusher
 					i( 56312),	-- Torturer's Mercy
 					i( 56314),	-- Shield of the Iron Maiden
 					i( 56311),	-- Inquisition Robes
@@ -132,7 +132,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 						un(2, i(55776)),	-- Skullcracker Ring (7.3.5 - Removed from Game!)
 					}),								
 				})),
-				cr(39679, e(106, { -- Corla, Herald of Twilight
+				cr(39679, e(106, {	-- Corla, Herald of Twilight
 					i(56296),	-- Corla's Baton
 					i(56298),	-- Renouncer's Cowl
 					i(56297),	-- Armbands of Change
@@ -146,7 +146,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 						un(2, i(55266)),	-- Grace of the Herald (7.3.5 - Removed from Game!)
 					}),								
 				})),
-				cr(39698, e(107, { -- Karsh Steelbender
+				cr(39698, e(107, {	-- Karsh Steelbender
 					i( 56302), 	-- Steelbender's Masterpiece
 					i( 56300),	-- Quicksilver Amulet
 					i( 56304), 	-- Burned Gatherings
@@ -161,7 +161,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 						un(2, i(55269)), 	-- Heat Wave Leggings (7.3.5 - Removed from Game!)
 					}),								
 				})),
-				cr(39700, e(108, { -- Beauty
+				cr(39700, e(108, {	-- Beauty
 					i( 56306), 	-- Beauty's Favorite Bone
 					i( 56308), 	-- Beauty's Plate
 					i(157607), 	-- Gently Gnawed Hauberk
@@ -176,7 +176,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 						un(2, i(55276)),	-- Kibble (7.3.5 - Removed from Game!)
 					}),								
 				})),
-				cr(39705, e(109, { -- Ascendent Lord Obsidius
+				cr(39705, e(109, {	-- Ascendent Lord Obsidius
 					{	-- Blackrock Caverns
 						["achievementID"] = 4833,	-- Blackrock Caverns
 					},
@@ -206,7 +206,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 				["lvl"] = 85,
 				["ignoreBonus"] = true,
 				["groups"] = {
-					cr(39665, e(105, { -- Rom'ogg Boncrusher
+					cr(39665, e(105, {	-- Rom'ogg Boncrusher
 						{	-- Crushing Bones and Cracking Skulls
 							["achievementID"] = 5281,	-- Crushing Bones and Cracking Skulls
 						},
@@ -217,7 +217,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 						i(157608),	-- Groundrumble Boots
 						i( 56310),	-- Skullcracker Ring
 					})),
-					cr(39679, e(106, { -- Corla, Herald of Twilight
+					cr(39679, e(106, {	-- Corla, Herald of Twilight
 						{	-- Arrested Development
 							["achievementID"] = 5282,	-- Arrested Development
 						},
@@ -227,7 +227,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 						i(56299),	-- Signet of Transformation
 						i(56295),	-- Grace of the Herald
 					})),
-					cr(39698, e(107, { -- Karsh Steelbender
+					cr(39698, e(107, {	-- Karsh Steelbender
 						{	-- Too Hot to Handle
 							["achievementID"] = 5283,	-- Too Hot to Handle
 						},
@@ -238,7 +238,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 						i( 56301), 	-- Bracers of Cooled Anger
 						i( 56303), 	-- Heat Wave Leggings
 					})),
-					cr(39700, e(108, { -- Beauty
+					cr(39700, e(108, {	-- Beauty
 						i( 56306), 	-- Beauty's Favorite Bone
 						i( 56308), 	-- Beauty's Plate
 						i(157607), 	-- Gently Gnawed Hauberk
@@ -246,7 +246,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 						i( 56309), 	-- Beauty's Chew Toy
 						i( 56307),	-- Kibble
 					})),
-					cr(39705, e(109, { -- Ascendent Lord Obsidius
+					cr(39705, e(109, {	-- Ascendent Lord Obsidius
 						{	-- Ascendant Descending
 							["achievementID"] = 5284,	-- Ascendant Descending
 						},

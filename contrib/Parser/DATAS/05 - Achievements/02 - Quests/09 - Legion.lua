@@ -12,9 +12,9 @@ To do:
 
 _.Achievements =
 {
-	n(-9956, { -- Quests
+	n(-9956, {	-- Quests
 		["groups"] = {
-			n(-9982, { -- Legion
+			n(-9982, {	-- Legion
 				["groups"] = {
 					ach(11732, {	-- A Magnificent Contribution (Broken Shore)
 						ach(11731),		-- A Magic Contribution

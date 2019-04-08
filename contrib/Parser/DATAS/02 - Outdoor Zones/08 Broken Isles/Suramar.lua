@@ -18,7 +18,7 @@ _.Zones =
 									["description"] = "If you are near him his winds will keep you aloft while you fight him.\nHe will occassionaly knock you back, make use of your glide ability and make sure you float back to (through) him, you will begin to float once you come near.\n\nWhen he dies his corpse will fall to the ground.",
 									["groups"] = {
 										i(139549, {	-- Guise of the Deathwalker
-											artifact(982), -- Find Hidden Artifact Skin
+											artifact(982),	-- Find Hidden Artifact Skin
 										}),
 									},
 								}),
@@ -27,19 +27,19 @@ _.Zones =
 					},
 				}),
 				n(-169, { 	-- Emissary Quests
-					q(42421, { -- The Nightfallen
+					q(42421, {	-- The Nightfallen
 						["groups"] = {
-							i(157826, { -- Nightfallen Hoard
+							i(157826, {	-- Nightfallen Hoard
 								["groups"] = {
-									i(140495, { -- Torn Invitation [Fox Mount Quest]
-										i(137573), -- Reins of the Llothien Prowler
+									i(140495, {	-- Torn Invitation [Fox Mount Quest]
+										i(137573),	-- Reins of the Llothien Prowler
 									}),
 									i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3)
-									n(-322, { -- Cloak
-										i(121798), -- Moon Guard Drape
-										i(134290), -- Nightborne Noble's Cloak
+									n(-322, {	-- Cloak
+										i(121798),	-- Moon Guard Drape
+										i(134290),	-- Nightborne Noble's Cloak
 									}),
-									n(-3243, { -- Manawracker Set
+									n(-3243, {	-- Manawracker Set
 										["groups"] = {
 											i(134304),	-- Manawracker Crown
 											i(134309),	-- Manawracker Shoulders
@@ -51,7 +51,7 @@ _.Zones =
 											i(134308),	-- Manawracker Sandals
 										},
 									}),
-									n(-3262, { -- Swordsinger Set
+									n(-3262, {	-- Swordsinger Set
 										["groups"] = {
 											i(134284),	-- Swordsinger's Hood
 											i(134286),	-- Swordsinger's Shoulders
@@ -63,7 +63,7 @@ _.Zones =
 											i(134281),	-- Swordsinger's Footpads
 										},
 									}),
-									n(-3274, { -- Ley Dragoon Set
+									n(-3274, {	-- Ley Dragoon Set
 										["groups"] = {
 											i(134299),	-- Ley Dragoon's Headgear
 											i(134301),	-- Ley Dragoon's Spaulders
@@ -75,7 +75,7 @@ _.Zones =
 											i(134298),	-- Ley Dragoon's Stompers
 										},
 									}),
-									n(-3299, { -- Arcane Defender Set
+									n(-3299, {	-- Arcane Defender Set
 										["groups"] = {
 											i(134270),	-- Arcane Defender's Helm
 											i(134272),	-- Arcane Defender's Pauldrons
@@ -87,19 +87,19 @@ _.Zones =
 											i(134273),	-- Arcane Defender's Boots
 										},
 									}),
-									i(140013), -- Night Commander's Pauldrons
+									i(140013),	-- Night Commander's Pauldrons
 								},
 							}),
-							un(2, i(154907, { -- Nightfallen Hoard
+							un(2, i(154907, {	-- Nightfallen Hoard
 								["groups"] = {
-									i(140495, { -- Torn Invitation [Fox Mount Quest]
-										i(137573), -- Reins of the Llothien Prowler
+									i(140495, {	-- Torn Invitation [Fox Mount Quest]
+										i(137573),	-- Reins of the Llothien Prowler
 									}),
-									n(-322, { -- Cloak
-										i(121798), -- Moon Guard Drape
-										i(134290), -- Nightborne Noble's Cloak
+									n(-322, {	-- Cloak
+										i(121798),	-- Moon Guard Drape
+										i(134290),	-- Nightborne Noble's Cloak
 									}),
-									n(-3243, { -- Manawracker Set
+									n(-3243, {	-- Manawracker Set
 										["groups"] = {
 											i(134304),	-- Manawracker Crown
 											i(134309),	-- Manawracker Shoulders
@@ -111,7 +111,7 @@ _.Zones =
 											i(134308),	-- Manawracker Sandals
 										},
 									}),
-									n(-3262, { -- Swordsinger Set
+									n(-3262, {	-- Swordsinger Set
 										["groups"] = {
 											i(134284),	-- Swordsinger's Hood
 											i(134286),	-- Swordsinger's Shoulders
@@ -123,7 +123,7 @@ _.Zones =
 											i(134281),	-- Swordsinger's Footpads
 										},
 									}),
-									n(-3274, { -- Ley Dragoon Set
+									n(-3274, {	-- Ley Dragoon Set
 										["groups"] = {
 											i(134299),	-- Ley Dragoon's Headgear
 											i(134301),	-- Ley Dragoon's Spaulders
@@ -135,7 +135,7 @@ _.Zones =
 											i(134298),	-- Ley Dragoon's Stompers
 										},
 									}),
-									n(-3299, { -- Arcane Defender Set
+									n(-3299, {	-- Arcane Defender Set
 										["groups"] = {
 											i(134270),	-- Arcane Defender's Helm
 											i(134272),	-- Arcane Defender's Pauldrons
@@ -147,19 +147,19 @@ _.Zones =
 											i(134273),	-- Arcane Defender's Boots
 										},
 									}),
-									i(140013), -- Night Commander's Pauldrons
+									i(140013),	-- Night Commander's Pauldrons
 								},
 							})),
-							un(2, i(151468, { -- Nightfallen Hoard
+							un(2, i(151468, {	-- Nightfallen Hoard
 								["groups"] = {
-									i(140495, { -- Torn Invitation [Fox Mount Quest]
-										i(137573), -- Reins of the Llothien Prowler
+									i(140495, {	-- Torn Invitation [Fox Mount Quest]
+										i(137573),	-- Reins of the Llothien Prowler
 									}),
-									n(-322, { -- Cloak
-										i(121798), -- Moon Guard Drape
-										i(134290), -- Nightborne Noble's Cloak
+									n(-322, {	-- Cloak
+										i(121798),	-- Moon Guard Drape
+										i(134290),	-- Nightborne Noble's Cloak
 									}),
-									n(-3243, { -- Manawracker Set
+									n(-3243, {	-- Manawracker Set
 										["groups"] = {
 											i(134304),	-- Manawracker Crown
 											i(134309),	-- Manawracker Shoulders
@@ -171,7 +171,7 @@ _.Zones =
 											i(134308),	-- Manawracker Sandals
 										},
 									}),
-									n(-3262, { -- Swordsinger Set
+									n(-3262, {	-- Swordsinger Set
 										["groups"] = {
 											i(134284),	-- Swordsinger's Hood
 											i(134286),	-- Swordsinger's Shoulders
@@ -183,7 +183,7 @@ _.Zones =
 											i(134281),	-- Swordsinger's Footpads
 										},
 									}),
-									n(-3274, { -- Ley Dragoon Set
+									n(-3274, {	-- Ley Dragoon Set
 										["groups"] = {
 											i(134299),	-- Ley Dragoon's Headgear
 											i(134301),	-- Ley Dragoon's Spaulders
@@ -195,7 +195,7 @@ _.Zones =
 											i(134298),	-- Ley Dragoon's Stompers
 										},
 									}),
-									n(-3299, { -- Arcane Defender Set
+									n(-3299, {	-- Arcane Defender Set
 										["groups"] = {
 											i(134270),	-- Arcane Defender's Helm
 											i(134272),	-- Arcane Defender's Pauldrons
@@ -207,19 +207,19 @@ _.Zones =
 											i(134273),	-- Arcane Defender's Boots
 										},
 									}),
-									i(140013), -- Night Commander's Pauldrons
+									i(140013),	-- Night Commander's Pauldrons
 								},
 							})),
-							un(2, i(146751, { -- Nightfallen Hoard
+							un(2, i(146751, {	-- Nightfallen Hoard
 								["groups"] = {
-									i(140495, { -- Torn Invitation [Fox Mount Quest]
-										i(137573), -- Reins of the Llothien Prowler
+									i(140495, {	-- Torn Invitation [Fox Mount Quest]
+										i(137573),	-- Reins of the Llothien Prowler
 									}),
-									n(-322, { -- Cloak
-										i(121798), -- Moon Guard Drape
-										i(134290), -- Nightborne Noble's Cloak
+									n(-322, {	-- Cloak
+										i(121798),	-- Moon Guard Drape
+										i(134290),	-- Nightborne Noble's Cloak
 									}),
-									n(-3243, { -- Manawracker Set
+									n(-3243, {	-- Manawracker Set
 										["groups"] = {
 											i(134304),	-- Manawracker Crown
 											i(134309),	-- Manawracker Shoulders
@@ -231,7 +231,7 @@ _.Zones =
 											i(134308),	-- Manawracker Sandals
 										},
 									}),
-									n(-3262, { -- Swordsinger Set
+									n(-3262, {	-- Swordsinger Set
 										["groups"] = {
 											i(134284),	-- Swordsinger's Hood
 											i(134286),	-- Swordsinger's Shoulders
@@ -243,7 +243,7 @@ _.Zones =
 											i(134281),	-- Swordsinger's Footpads
 										},
 									}),
-									n(-3274, { -- Ley Dragoon Set
+									n(-3274, {	-- Ley Dragoon Set
 										["groups"] = {
 											i(134299),	-- Ley Dragoon's Headgear
 											i(134301),	-- Ley Dragoon's Spaulders
@@ -255,7 +255,7 @@ _.Zones =
 											i(134298),	-- Ley Dragoon's Stompers
 										},
 									}),
-									n(-3299, { -- Arcane Defender Set
+									n(-3299, {	-- Arcane Defender Set
 										["groups"] = {
 											i(134270),	-- Arcane Defender's Helm
 											i(134272),	-- Arcane Defender's Pauldrons
@@ -267,19 +267,19 @@ _.Zones =
 											i(134273),	-- Arcane Defender's Boots
 										},
 									}),
-									i(140013), -- Night Commander's Pauldrons
+									i(140013),	-- Night Commander's Pauldrons
 								},
 							})),
-							un(2, i(137564, { -- Nightfallen Hoard
+							un(2, i(137564, {	-- Nightfallen Hoard
 								["groups"] = {
-									i(140495, { -- Torn Invitation [Fox Mount Quest]
-										i(137573), -- Reins of the Llothien Prowler
+									i(140495, {	-- Torn Invitation [Fox Mount Quest]
+										i(137573),	-- Reins of the Llothien Prowler
 									}),
-									n(-322, { -- Cloak
-										i(121798), -- Moon Guard Drape
-										i(134290), -- Nightborne Noble's Cloak
+									n(-322, {	-- Cloak
+										i(121798),	-- Moon Guard Drape
+										i(134290),	-- Nightborne Noble's Cloak
 									}),
-									n(-3243, { -- Manawracker Set
+									n(-3243, {	-- Manawracker Set
 										["groups"] = {
 											i(134304),	-- Manawracker Crown
 											i(134309),	-- Manawracker Shoulders
@@ -291,7 +291,7 @@ _.Zones =
 											i(134308),	-- Manawracker Sandals
 										},
 									}),
-									n(-3262, { -- Swordsinger Set
+									n(-3262, {	-- Swordsinger Set
 										["groups"] = {
 											i(134284),	-- Swordsinger's Hood
 											i(134286),	-- Swordsinger's Shoulders
@@ -303,7 +303,7 @@ _.Zones =
 											i(134281),	-- Swordsinger's Footpads
 										},
 									}),
-									n(-3274, { -- Ley Dragoon Set
+									n(-3274, {	-- Ley Dragoon Set
 										["groups"] = {
 											i(134299),	-- Ley Dragoon's Headgear
 											i(134301),	-- Ley Dragoon's Spaulders
@@ -315,7 +315,7 @@ _.Zones =
 											i(134298),	-- Ley Dragoon's Stompers
 										},
 									}),
-									n(-3299, { -- Arcane Defender Set
+									n(-3299, {	-- Arcane Defender Set
 										["groups"] = {
 											i(134270),	-- Arcane Defender's Helm
 											i(134272),	-- Arcane Defender's Pauldrons
@@ -327,25 +327,25 @@ _.Zones =
 											i(134273),	-- Arcane Defender's Boots
 										},
 									}),
-									i(140013), -- Night Commander's Pauldrons
+									i(140013),	-- Night Commander's Pauldrons
 								},
 							})),
 						},
 						["repeatable"] = true,
 					}),
-					n(-206, { -- Paragon
-						q(46748, { -- Supplies From the Nightfallen
+					n(-206, {	-- Paragon
+						q(46748, {	-- Supplies From the Nightfallen
 							["groups"] = {
-								i(152105, { -- Nightfallen Cache
-									i(143764), -- Leywoven Flying Carpet
-									i(140495, { -- Torn Invitation [Fox Mount Quest]
-										i(137573), -- Reins of the Llothien Prowler
+								i(152105, {	-- Nightfallen Cache
+									i(143764),	-- Leywoven Flying Carpet
+									i(140495, {	-- Torn Invitation [Fox Mount Quest]
+										i(137573),	-- Reins of the Llothien Prowler
 									}),
 								}),
-								un(2, i(146900, { -- Nightfallen Cache
-									i(143764), -- Leywoven Flying Carpet
-									i(140495, { -- Torn Invitation [Fox Mount Quest]
-										i(137573), -- Reins of the Llothien Prowler
+								un(2, i(146900, {	-- Nightfallen Cache
+									i(143764),	-- Leywoven Flying Carpet
+									i(140495, {	-- Torn Invitation [Fox Mount Quest]
+										i(137573),	-- Reins of the Llothien Prowler
 									}),
 								})),
 							},
@@ -354,38 +354,38 @@ _.Zones =
 					}),
 				}),
 				n(-228, {	-- Flight Paths
-					fp(1879, { -- Crimson Thicket, Suramar
+					fp(1879, {	-- Crimson Thicket, Suramar
 						["coord"] = { 64.2, 42 },
 					}),
-					fp(1840, { -- Eastern Suramar (Eagle)
+					fp(1840, {	-- Eastern Suramar (Eagle)
 						["coord"] = { 70.2, 71 },
 						["classes"] = { 3 },	-- Hunter
 					}),
-					fp(1880, { -- Irongrove Retreat, Suramar
+					fp(1880, {	-- Irongrove Retreat, Suramar
 						["coord"] = { 25.4, 31.8 },
 					}),
-					fp(1858, { -- Meredil, Suramar
+					fp(1858, {	-- Meredil, Suramar
 						["coord"] = { 34.2, 49.4 },
 					}),
-					fp(1841, { -- Western Suramar (Eagle)
+					fp(1841, {	-- Western Suramar (Eagle)
 						["coord"] = { 41.2, 82.8 },
 						["classes"] = { 3 },	-- Hunter
 					}),
 				}),
 				n(-214, { 	-- Nightborne Home
 					["groups"] = {
-						n(-17, { -- Quests
-							q(49933, { -- For the Horde
+						n(-17, {	-- Quests
+							q(49933, {	-- For the Horde
 								["groups"] = {
-									--i(157028), -- Letter from Lady Sylvanas Windrunner
-									i(157759), -- Shal'dorei Tabard
+									--i(157028),	-- Letter from Lady Sylvanas Windrunner
+									i(157759),	-- Shal'dorei Tabard
 								},
-								["qg"] = 131326, -- First Arcanist Thalyssra
+								["qg"] = 131326,	-- First Arcanist Thalyssra
 								["coord"] = { 59.3, 85.5 },
 							}),
 						}),	
 					},
-					["races"]  = { 27 }, -- Nightborne
+					["races"]  = { 27 },	-- Nightborne
 				}),
 				n(-25, {	-- Pet Battle
 					p(425), 	-- Ash Viper
@@ -430,7 +430,7 @@ _.Zones =
 						["questID"] = 40034,	-- Starlight Rosedust
 						["requireSkill"] = 182,	-- Herbalism
 					},
-					prof(185, { -- Cooking
+					prof(185, {	-- Cooking
 						{
 							["itemID"] = 141011,	-- Recipe: Surf
 							["description"] = "Drops from any marine mob in the zone.",
@@ -446,7 +446,7 @@ _.Zones =
 							},
 						},
 					}),
-					prof(356, { -- Fishing
+					prof(356, {	-- Fishing
 						n(-10067, { 	-- Artifact
 							["description"] = "Prerequisites:\n\n  Be level 110.\n  Have level 800 Fishing.\n  Complete the achievement Bigger Fish to Fry\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for the quest item linked below.",
 							["lvl"] = 110,
@@ -592,70 +592,70 @@ _.Zones =
 					}),
 				}),
 				n(-17, { 	-- Quests
-					ach(11133, { -- Why Can't I Hold All This Mana
-						q(41138), -- Feeding Shal'Aran
-						q(42230), -- The Valewalker's Burden
-						q(42488), -- Thalyssra's Abode
-						q(42833), -- How It's Made: Arcwinee
-						q(42792), -- Make Your Mark
-						i(136269, { -- Kel'danath's Manaflask
+					ach(11133, {	-- Why Can't I Hold All This Mana
+						q(41138),	-- Feeding Shal'Aran
+						q(42230),	-- The Valewalker's Burden
+						q(42488),	-- Thalyssra's Abode
+						q(42833),	-- How It's Made: Arcwinee
+						q(42792),	-- Make Your Mark
+						i(136269, {	-- Kel'danath's Manaflask
 							["questID"] = 42842,
 						}),
-						i(140328, { -- Volatile Leyline Crystal
+						i(140328, {	-- Volatile Leyline Crystal
 							["questID"] = 43988,
 						}),
-						i(140329, { -- Infinite Stone
+						i(140329, {	-- Infinite Stone
 							["questID"] = 43989,
 						}),
-						i(140326, { -- Enchanted Burial Urn
+						i(140326, {	-- Enchanted Burial Urn
 							["questID"] = 43986,
 						}),
-						i(140327, { -- Krytos's Research Notes
+						i(140327, {	-- Krytos's Research Notes
 							["questID"] = 43987,
 						}),
 					}),
-					n(-181, { -- Blacksmithing
-						["groups"] = bubbleDown({["requireSkill"] = 164}, { -- Blacksmithing
+					n(-181, {	-- Blacksmithing
+						["groups"] = bubbleDown({["requireSkill"] = 164}, {	-- Blacksmithing
 							{	-- Part of the Team
 								["questID"] = 38525,	-- Part of the Team
-								["qg"] = 92264, -- Felsmith Nal'ryssa
-								["sourceQuest"] = 38524, -- Felsmith Nal'ryssa
+								["qg"] = 92264,	-- Felsmith Nal'ryssa
+								["sourceQuest"] = 38524,	-- Felsmith Nal'ryssa
 							},
 							{	-- Smith Under Fire
 								["questID"] = 38526,	-- Smith Under Fire
-								["qg"] = 92264, -- Felsmith Nal'ryssa
-								["sourceQuest"] = 38525, -- Part of the Team
+								["qg"] = 92264,	-- Felsmith Nal'ryssa
+								["sourceQuest"] = 38525,	-- Part of the Team
 								["g"] = {
 									{	-- Plans: Leystone Boots (Rank 2)
-										["itemID"] = 123934, -- Plans: Leystone Boots (Rank 2)
+										["itemID"] = 123934,	-- Plans: Leystone Boots (Rank 2)
 									},
 								},
 							},
 							{	-- Nal'ryssa's Technique
 								["questID"] = 38527,	-- Nal'ryssa's Technique
-								["qg"] = 92264, -- Felsmith Nal'ryssa
-								["sourceQuest"] = 38526, -- Smith Under Fire
+								["qg"] = 92264,	-- Felsmith Nal'ryssa
+								["sourceQuest"] = 38526,	-- Smith Under Fire
 							},
 							{	-- Leystone's Potential
 								["questID"] = 38528,	-- Leystone's Potential
-								["qg"] = 92264, -- Felsmith Nal'ryssa
-								["sourceQuest"] = 38527, -- Nal'ryssa's Technique
+								["qg"] = 92264,	-- Felsmith Nal'ryssa
+								["sourceQuest"] = 38527,	-- Nal'ryssa's Technique
 								["groups"] = {
 									{	-- Plans: Leystone Armguards (Rank 2)
-										["itemID"] = 123928, -- Plans: Leystone Armguards (Rank 2)
+										["itemID"] = 123928,	-- Plans: Leystone Armguards (Rank 2)
 									},
 								},
 							},
 							{	-- The Firmament Stone
 								["questID"] = 38530,	-- The Firmament Stone
-								["qg"] = 92264, -- Felsmith Nal'ryssa
-								["sourceQuest"] = 38528, -- Leystone's Potential
+								["qg"] = 92264,	-- Felsmith Nal'ryssa
+								["sourceQuest"] = 38528,	-- Leystone's Potential
 								["isBreadcrumb"] = true,
 							},
-							n(-34, { -- World Quests
+							n(-34, {	-- World Quests
 								{	-- Work Order: Leystone Pauldrons
 									["questID"] = 41637,	-- Work Order: Leystone Pauldrons
-									["qg"] = 97140, -- First Arcanist Thalyssra
+									["qg"] = 97140,	-- First Arcanist Thalyssra
 									["groups"] = {
 										{	-- Recipe: Leystone Pauldrons (Rank 3)
 											["itemID"] = 123938,	-- Recipe: Leystone Pauldrons (Rank 3)
@@ -796,7 +796,7 @@ _.Zones =
 						q(44012),	-- WANTED: Siegemaster Aedrin
 						q(44023),	-- WANTED: Siegemaster Aedrin
 --]]					
-						q(43943, { -- Withered Army Training
+						q(43943, {	-- Withered Army Training
 							["qgs"] = {
 								97140,	-- First Arcanist Thalyssra (Frail)
 								115736,	-- First Arcanist Thalyssra (Kinda Hot)
@@ -806,21 +806,21 @@ _.Zones =
 								693,	-- Falanaar Arcway
 							},
 							["groups"] = {
-								n(109556, { -- Treasure Chest
-									i(136914), -- Leyline Broodling
+								n(109556, {	-- Treasure Chest
+									i(136914),	-- Leyline Broodling
 								}),
-								n(109564, { -- Glimmering Treasure Chest
-									i(140495, { -- Torn Invitation [Fox Mount Quest]
-										i(137573), -- Reins of the Llothien Prowler
+								n(109564, {	-- Glimmering Treasure Chest
+									i(140495, {	-- Torn Invitation [Fox Mount Quest]
+										i(137573),	-- Reins of the Llothien Prowler
 									}),
 									i(139565, {	-- Spark of the Fallen Exarch [Protection Paladin Hidden Artifact Appearance]
-										artifact(720), -- Find Hidden Artifact Skin
+										artifact(720),	-- Find Hidden Artifact Skin
 									}),
 									i(139563, {	-- The Stormfist [Windwalker Monk Hidden Artifact Appearance]
-										artifact(527), -- Find Hidden Artifact Skin
+										artifact(527),	-- Find Hidden Artifact Skin
 									}),
 									i(139546, {	-- Twisting Anima of Souls [Death Knight Hidden Artifact Appearance]
-										artifact(921), -- Find Hidden Artifact Skin
+										artifact(921),	-- Find Hidden Artifact Skin
 									}),
 									i(141296),	-- Ancient Mana Basin
 									i(141297),	-- Arcano-Shower
@@ -1001,7 +1001,7 @@ _.Zones =
 						["qg"] = 115710,	-- Chief Telemancer Oculeth
 						["sourceQuest"] = 45420,	-- The Nighthold: The Eye of Aman'Thul
 						["groups"] = {
-							i(142436), -- Arcanist's Manasaber
+							i(142436),	-- Arcanist's Manasaber
 						},
 					},
 					q(40321),	-- Feathersong's Redemption
@@ -1012,12 +1012,12 @@ _.Zones =
 					q(45265),	-- Feeding the Rebellion
 					q(40919),	-- Fel Bent for Leather
 					q(41167),	-- Fel Fragments
-					q(40214, { -- Fel Tanning
+					q(40214, {	-- Fel Tanning
 						["groups"] = {
-							i(140636), -- Pattern: Dreadleather Bindings (Rank 1)
-							i(140644), -- Recipe: Gravenscale Armbands (Rank 1)
+							i(140636),	-- Pattern: Dreadleather Bindings (Rank 1)
+							i(140644),	-- Recipe: Gravenscale Armbands (Rank 1)
 						},
-						["qg"] = 98969, -- Stalriss Dawnrunner
+						["qg"] = 98969,	-- Stalriss Dawnrunner
 					}),
 					q(45064),	-- Felborne No More
 					q(45555),	-- Felbound Beasts
@@ -1045,18 +1045,18 @@ _.Zones =
 					q(41258),	-- Fruit of the Doom
 					q(44738, {	-- Full Might of the Elves
 						["groups"] = {
-							i(140078), -- Crystalized Leypetal
-							i(140077), -- Goldleaf Arcwine Phial
-							i(140076), -- Felborne Energist's Gem
-							i(140075), -- Petrified Ancient Bark
-							i(140074), -- Sin'dorei Blood Gems
-							i(140073), -- Khadgar's Pocket Warmer
-							i(140072), -- Headpiece of the Elunian Cycle
-							i(140071), -- first Page of the Book of Shadows
-							i(140069), -- Trueflight Arrow
-							i(140040), -- Comet Dust
+							i(140078),	-- Crystalized Leypetal
+							i(140077),	-- Goldleaf Arcwine Phial
+							i(140076),	-- Felborne Energist's Gem
+							i(140075),	-- Petrified Ancient Bark
+							i(140074),	-- Sin'dorei Blood Gems
+							i(140073),	-- Khadgar's Pocket Warmer
+							i(140072),	-- Headpiece of the Elunian Cycle
+							i(140071),	-- first Page of the Book of Shadows
+							i(140069),	-- Trueflight Arrow
+							i(140040),	-- Comet Dust
 						},
-						--["qg"] = 98969, -- Stalriss Dawnrunner
+						--["qg"] = 98969,	-- Stalriss Dawnrunner
 					}),
 					q(40897),	-- Garvrulg
 					q(44736),	-- Gates of the Nighthold
@@ -1281,7 +1281,7 @@ _.Zones =
 						["groups"] = {
 							sp(194819),	-- Skinning Technique: Stonehide Leather (Rank 3)
 						},
-						["qg"] = 98720, -- Ske'rit
+						["qg"] = 98720,	-- Ske'rit
 						["sourceQuests"] = {
 							40138,	-- Trial of the Crusader: Hides of Legend
 							40139,	-- Halls of Valor: The Hide of Fenryr
@@ -1291,7 +1291,7 @@ _.Zones =
 						["groups"] = {
 							sp(194822),	-- Skinning Technique: Stormscale (Rank 3)
 						},
-						["qg"] = 98720, -- Ske'rit
+						["qg"] = 98720,	-- Ske'rit
 						["sourceQuests"] = {
 							40153,	-- Return to Karazhan: Scales of Legend
 							40154,	-- Eye of Azshara: The Scales of Serpentrix
@@ -1434,25 +1434,25 @@ _.Zones =
 						i(121804),
 					}),
 					q(42837,  {  -- Balance to Spare
-						i(139790), -- Untethered Wyrmling
+						i(139790),	-- Untethered Wyrmling
 					}),
 					q(45239,  {  -- Cubic Coalescing 
-						i(142536), -- Memory Cube
+						i(142536),	-- Memory Cube
 					}),
 					q(45372,  {  -- Fate of the Nightborn 
-						i(142436), -- Arcanist's Manasaber
+						i(142436),	-- Arcanist's Manasaber
 					}),
 					q(42722,  {  -- Friends in Cages
-						i(130209), -- Never Ending Toy Chest
+						i(130209),	-- Never Ending Toy Chest
 					}),
 					q(41143,  {  -- Mglrgrs Of Our Grmlgrlr
-						i(141879), -- Berglrgl Perrgl Girggrlf
+						i(141879),	-- Berglrgl Perrgl Girggrlf
 					}),
 					q(44058,  {  -- Voliune the Elusive - Order Hall quest
-						i(137573), -- Reins of the Llothien Prowler
+						i(137573),	-- Reins of the Llothien Prowler
 					}),
 					q(41197,  {  -- You've Got to Be Kitten Me Right Meow
-						i(139791), -- Lurking Owl Kitten
+						i(139791),	-- Lurking Owl Kitten
 					}),	
 				}),
 				n(-16, { 	-- Rares
@@ -1568,7 +1568,7 @@ _.Zones =
 						["questID"] = 40680,	
 					}), 
 					n(113425, { 	-- Rovendros
-						["questID"] = 43795, -- Tracking - Rovendros Found
+						["questID"] = 43795,	-- Tracking - Rovendros Found
 						["description"] = "This is a hdiden NPC that you find in a cave within Crimson Thicket located at 55, 46.  Once you free him he will show up in Shal'aran as a vendor.",
 					}),
 					n(109054, { 	-- Shal'an
@@ -1625,93 +1625,93 @@ _.Zones =
 --]]
 				}),
 				n(-2, { 	-- Vendors
-					n(115710, { -- Chief Telemancer Oculeth
-						i(140324), -- Mobile Telemancy Beacon Toy
+					n(115710, {	-- Chief Telemancer Oculeth
+						i(140324),	-- Mobile Telemancy Beacon Toy
 					}),
-					n(112064, { -- Dolse Shimmersong <Souvenirs>
+					n(112064, {	-- Dolse Shimmersong <Souvenirs>
 						--[[ No use yet, potential pets/toys?
-						i(140670), -- Souvenir Elekk
-						i(141205), -- Souvenir Murloc
-						i(140671), -- Souvenir Raptor
+						i(140670),	-- Souvenir Elekk
+						i(141205),	-- Souvenir Murloc
+						i(140671),	-- Souvenir Raptor
 						--]]
-						i(130151), -- The "Devilsaur" Lunchbox
+						i(130151),	-- The "Devilsaur" Lunchbox
 					}),
 					n(115736, {	-- First Arcanist Thalyssra
-						i(121736), -- Nightfall Slipeprs
-						i(121738), -- Irongrove Refugee Boots
-						i(139979), -- Footpads of the Nightrunners
-						i(140015), -- Scavenged Felsoul Sabaton
-						i(140746, { -- Treasure Map: Suramar
-							["f"] = 55, -- Consumable
+						i(121736),	-- Nightfall Slipeprs
+						i(121738),	-- Irongrove Refugee Boots
+						i(139979),	-- Footpads of the Nightrunners
+						i(140015),	-- Scavenged Felsoul Sabaton
+						i(140746, {	-- Treasure Map: Suramar
+							["f"] = 55,	-- Consumable
 						}),
-						i(140324), -- Mobile Telemancy Beacon
-						i(139600), -- Braided Manastring Cinch
-						i(136899), -- Extinguished Eye
-						i(140325), -- Home Made Party Mask
-						i(139604), -- Mana-Soaked Amethyst Pendant
-						i(140575), -- Nightfallen Tabard
-						i(139760), -- Spaulders of the Hight Priest
-						i(139756), -- Gloves of the High Priest
-						i(139752), -- Mantle of Tirisgarde
-						i(139748), -- Gloves of Tirisgarde
-						i(139768), -- Amice of the Black Harvest
-						i(139764), -- Gloves of the Black Harvest
-						i(139728), -- Amice of the Dreamgrove
-						i(139725), -- Gloves of the Dreamgrove
-						i(139744), -- Shoulderblades of the Uncrowned
-						i(139741), -- Gloves of the Uncrowned
-						i(139736), -- Grandmaster's Shoulderguards
-						i(139733), -- Gradnmaster's Palms
-						i(139720), -- Spaulders of the Shattered Abyss
-						i(139717), -- Gloves of the Shattered Abyss
-						i(139712), -- Spaulders of the Unseeen Path
-						i(139709), -- Grips of the Unseen Path
-						i(139703), -- Farseer's Shoulderguards
-						i(139700), -- Farseer's Gauntlets
-						i(139695), -- Spaulders of teh Silver Hand
-						i(139692), -- Gauntlets of the Silver Hand
-						i(139686), -- Battlelord's Pauldrons
-						i(139683), -- Battlelord's Gauntlets
-						i(139678), -- Deathlord's Mantle
-						i(139675), -- Deathlord's Gauntlets
-						i(142120), -- Recipe: Potion of Prolonged Power Rank 2
-						i(137973), -- Pattern: Imbued Silkweave Bracers Rank 2
-						i(137976), -- Pattern: Imbued Silkweave Pantaloons Rank 2
-						i(137979), -- Pattern: Imbued Silkweave Slippers Rank 2
-						i(137850), -- Design: Subtle Shadowruby Pendant Rank 3
-						i(128603), -- Formula: Enchant Ring - Binding of Versatility Rank 3
-						i(128602), -- Formula: Enchant Ring - Binding of Mastery Rank 3
-						i(128600), -- Formula: Enchant Ring - Binding of Critical Strike Rank 3
-						i(128609), -- Formula: Enchant Cloak - Binding of Intellect Rank 3
+						i(140324),	-- Mobile Telemancy Beacon
+						i(139600),	-- Braided Manastring Cinch
+						i(136899),	-- Extinguished Eye
+						i(140325),	-- Home Made Party Mask
+						i(139604),	-- Mana-Soaked Amethyst Pendant
+						i(140575),	-- Nightfallen Tabard
+						i(139760),	-- Spaulders of the Hight Priest
+						i(139756),	-- Gloves of the High Priest
+						i(139752),	-- Mantle of Tirisgarde
+						i(139748),	-- Gloves of Tirisgarde
+						i(139768),	-- Amice of the Black Harvest
+						i(139764),	-- Gloves of the Black Harvest
+						i(139728),	-- Amice of the Dreamgrove
+						i(139725),	-- Gloves of the Dreamgrove
+						i(139744),	-- Shoulderblades of the Uncrowned
+						i(139741),	-- Gloves of the Uncrowned
+						i(139736),	-- Grandmaster's Shoulderguards
+						i(139733),	-- Gradnmaster's Palms
+						i(139720),	-- Spaulders of the Shattered Abyss
+						i(139717),	-- Gloves of the Shattered Abyss
+						i(139712),	-- Spaulders of the Unseeen Path
+						i(139709),	-- Grips of the Unseen Path
+						i(139703),	-- Farseer's Shoulderguards
+						i(139700),	-- Farseer's Gauntlets
+						i(139695),	-- Spaulders of teh Silver Hand
+						i(139692),	-- Gauntlets of the Silver Hand
+						i(139686),	-- Battlelord's Pauldrons
+						i(139683),	-- Battlelord's Gauntlets
+						i(139678),	-- Deathlord's Mantle
+						i(139675),	-- Deathlord's Gauntlets
+						i(142120),	-- Recipe: Potion of Prolonged Power Rank 2
+						i(137973),	-- Pattern: Imbued Silkweave Bracers Rank 2
+						i(137976),	-- Pattern: Imbued Silkweave Pantaloons Rank 2
+						i(137979),	-- Pattern: Imbued Silkweave Slippers Rank 2
+						i(137850),	-- Design: Subtle Shadowruby Pendant Rank 3
+						i(128603),	-- Formula: Enchant Ring - Binding of Versatility Rank 3
+						i(128602),	-- Formula: Enchant Ring - Binding of Mastery Rank 3
+						i(128600),	-- Formula: Enchant Ring - Binding of Critical Strike Rank 3
+						i(128609),	-- Formula: Enchant Cloak - Binding of Intellect Rank 3
 					}),
 					n(113843, {-- Kieule <Souvenirs>
 						--[[ No use yet, potential pets/toys?
-						i(140670), -- Souvenir Elekk
-						i(140671), -- Souvenir Raptor
+						i(140670),	-- Souvenir Elekk
+						i(140671),	-- Souvenir Raptor
 						--]]
-						i(130151), -- The "Devilsaur" Lunchbox
+						i(130151),	-- The "Devilsaur" Lunchbox
 					}),
-					n(93971, { -- Leyweaver Inondra
-						i(127277), -- Imbued Silkweave Cover Rank 1
-						i(127278), -- Imbued Silkweave Drape Rank 1
-						i(127280), -- Imbued Silkweave Flourish Rank 1
-						i(127279), -- Imbued Silkweave Shade Rank 1
+					n(93971, {	-- Leyweaver Inondra
+						i(127277),	-- Imbued Silkweave Cover Rank 1
+						i(127278),	-- Imbued Silkweave Drape Rank 1
+						i(127280),	-- Imbued Silkweave Flourish Rank 1
+						i(127279),	-- Imbued Silkweave Shade Rank 1
 					}),
-					n(93979, { -- Leyweaver Jorjana
-						i(127025), -- Imbued Silkweave Hood Rank 1
+					n(93979, {	-- Leyweaver Jorjana
+						i(127025),	-- Imbued Silkweave Hood Rank 1
 					}),
 					n(112226, {	-- Markus Hjolbruk
 						i(133819),	-- Recipe: Koi-Scented Stormray [Rank 1]
 					}),
-					n(112059, { -- Sasunne Dameuse <Souvenirs>
+					n(112059, {	-- Sasunne Dameuse <Souvenirs>
 						--[[ No use yet, potential pets/toys?
-						i(140670), -- Souvenir Elekk
-						i(141205), -- Souvenir Murloc
-						i(140671), -- Souvenir Raptor
+						i(140670),	-- Souvenir Elekk
+						i(141205),	-- Souvenir Murloc
+						i(140671),	-- Souvenir Raptor
 						--]]
-						i(130151), -- The "Devilsaur" Lunchbox
+						i(130151),	-- The "Devilsaur" Lunchbox
 					}),
-					n(98969, { -- Stalriss Dawnrunner <Leatherworking Trainer>
+					n(98969, {	-- Stalriss Dawnrunner <Leatherworking Trainer>
 						i(140643),	-- Recipe: Dreadleather Jerkin Rank 1
 						i(140651),	-- Recipe: Gravenscale Hauberk Rank 1
 						i(140649),	-- Recipe: Gravenscale Grips Rank 1
@@ -1727,26 +1727,26 @@ _.Zones =
 						i(140637),	-- Recipe: Dreadleather Belt Rank 1
 						i(140638),	-- Recipe: Dreadleather Shoulderguard Rank 1
 					}),
-					n(92265, { -- Urael <Nal'ryssa's Minion>
+					n(92265, {	-- Urael <Nal'ryssa's Minion>
 						["groups"] = {
-							i(123920), -- Recipe: Demonsteel Armguards (Rank 1)
-							i(123926), -- Recipe: Demonsteel Boots (Rank 1)
-							i(123927), -- Recipe: Demonsteel Breastplate (Rank 1)
-							i(123925), -- Recipe: Demonsteel Gauntlets (Rank 1)
-							i(123923), -- Recipe: Demonsteel Greaves (Rank 1)
-							i(123924), -- Recipe: Demonsteel Helm (Rank 1)
-							i(123922), -- Recipe: Demonsteel Pauldrons (Rank 1)
-							i(123921), -- Recipe: Demonsteel Waistguard (Rank 1)
+							i(123920),	-- Recipe: Demonsteel Armguards (Rank 1)
+							i(123926),	-- Recipe: Demonsteel Boots (Rank 1)
+							i(123927),	-- Recipe: Demonsteel Breastplate (Rank 1)
+							i(123925),	-- Recipe: Demonsteel Gauntlets (Rank 1)
+							i(123923),	-- Recipe: Demonsteel Greaves (Rank 1)
+							i(123924),	-- Recipe: Demonsteel Helm (Rank 1)
+							i(123922),	-- Recipe: Demonsteel Pauldrons (Rank 1)
+							i(123921),	-- Recipe: Demonsteel Waistguard (Rank 1)
 						},
 					}),
 				}),
 				n(-34, { 	-- World Quests
 					["groups"] = {
-						n(-322, { -- Cloak
-							i(121798), -- Moon Guard Drape
-							i(134290), -- Nightborne Noble's Cloak
+						n(-322, {	-- Cloak
+							i(121798),	-- Moon Guard Drape
+							i(134290),	-- Nightborne Noble's Cloak
 						}),
-						n(-3243, { -- Manawracker Set
+						n(-3243, {	-- Manawracker Set
 							["groups"] = {
 								i(134304),	-- Manawracker Crown
 								i(134309),	-- Manawracker Shoulders
@@ -1759,7 +1759,7 @@ _.Zones =
 							},
 							["icon"] = "Interface\\Icons\\inv_helm_cloth_legionendgame_c_01",
 						}),
-						n(-3262, { -- Swordsinger Set
+						n(-3262, {	-- Swordsinger Set
 							["groups"] = {
 								i(134284),	-- Swordsinger's Hood
 								i(134286),	-- Swordsinger's Shoulders
@@ -1772,7 +1772,7 @@ _.Zones =
 							},
 							["icon"] = "Interface\\Icons\\inv_helm_leather_legionendgame_c_01",
 						}),
-						n(-3274, { -- Ley Dragoon Set
+						n(-3274, {	-- Ley Dragoon Set
 							["groups"] = {
 								i(134299),	-- Ley Dragoon's Headgear
 								i(134301),	-- Ley Dragoon's Spaulders
@@ -1785,7 +1785,7 @@ _.Zones =
 							},
 							["icon"] = "Interface\\Icons\\inv_helmet_mail_legionendgame_c_01",
 						}),
-						n(-3299, { -- Arcane Defender Set
+						n(-3299, {	-- Arcane Defender Set
 							["groups"] = {
 								i(134270),	-- Arcane Defender's Helm
 								i(134272),	-- Arcane Defender's Pauldrons
@@ -1858,7 +1858,7 @@ _.Zones =
 						i(141064),	-- Technique: Glyph of the Shivarra
 						i(141051),	-- Technique: Glyph of the Trident
 						i(139559, {	-- The Stars' Design
-							artifact(893), -- Fire Mage Hidden Appearance
+							artifact(893),	-- Fire Mage Hidden Appearance
 						}),
 						i(141292, {	-- Crystallizing Mana
 							["bonusID"] = 1812,
@@ -1866,10 +1866,10 @@ _.Zones =
 						i(121236, {	-- Dawnswood Hunter's Fletchings
 							["bonusID"] = 1812,
 						}),
-						i(121234, { -- Koralune Keepsake
+						i(121234, {	-- Koralune Keepsake
 							["bonusID"] = 1812,
 						}),
-						i(121248, { -- Nightfall Chain
+						i(121248, {	-- Nightfall Chain
 							["bonusID"] = 1812,
 						}),
 						i(121247, {	-- Nightfall Loop
@@ -1878,7 +1878,7 @@ _.Zones =
 						i(121232, {	-- Nightfallen Outcast's Cloak
 							["bonusID"] = 1812,
 						}),
-						i(121235, { -- Sashj'tar Brooch
+						i(121235, {	-- Sashj'tar Brooch
 							["bonusID"] = 1812,
 						}),
 						i(141293, {	-- Spellfire Oil
@@ -1980,7 +1980,7 @@ _.Zones =
 						i(121227, {	-- Jandvik Sabatons
 							["bonusID"] = 1812,
 						}),
-						i(121801), -- Coral-Edge Band
+						i(121801),	-- Coral-Edge Band
 					},
 					["crs"] = {
 						112705,	-- Achronos

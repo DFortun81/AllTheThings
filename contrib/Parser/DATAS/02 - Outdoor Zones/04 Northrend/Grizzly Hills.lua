@@ -10,16 +10,16 @@ _.Zones =
 			},
 			["groups"] = {
 				n(-228, {	-- Flight Points
-					fp(253, { -- Amberpine Lodge, Grizzly Hills
+					fp(253, {	-- Amberpine Lodge, Grizzly Hills
 						["coord"] = { 31.2, 59.2 },
 					}),
-					fp(249, { -- Camp Oneqwah, Grizzly Hills
+					fp(249, {	-- Camp Oneqwah, Grizzly Hills
 						["coord"] = { 64.8, 46.8 },
 					}),
-					fp(250, { -- Conquest Hold, Grizzly Hills
+					fp(250, {	-- Conquest Hold, Grizzly Hills
 						["coord"] = { 22, 64.4 },
 					}),
-					fp(255, { -- Westfall Brigade, Grizzly Hills
+					fp(255, {	-- Westfall Brigade, Grizzly Hills
 						["coord"] = { 59.8, 26.6 },
 					}),
 				}),
@@ -879,7 +879,7 @@ _.Zones =
 					}),
 				}),	
 				n(-16, { 	-- Rares
-					n(38453, { -- Arcturis
+					n(38453, {	-- Arcturis
 						["description"] = "This is a very sought after Hunter Pet. If you see this mob, be a kind soul and announce to General chat instead of killing it.",
 						["coord"] = { 31.2, 55.4 },
 						["groups"] = {
@@ -1003,14 +1003,14 @@ _.Zones =
 				}),
 				n(0, { 		-- Zone Drop
 					["groups"] = {
-						i(41123, { -- Plans: Reinforced Cobalt Helm
+						i(41123, {	-- Plans: Reinforced Cobalt Helm
 							["crs"] = {
-								26270, -- Iron Rune-Shaper
+								26270,	-- Iron Rune-Shaper
 							},
 						}),
-						i(46108, { -- Technique: Rituals of the New Moon
+						i(46108, {	-- Technique: Rituals of the New Moon
 							["crs"] = {
-								27676, -- Silverbrook Defender
+								27676,	-- Silverbrook Defender
 								27546,	-- Silverbrook Hunter
 								26679,	-- Silverbrook Trapper
 								26708,	-- Silverbrook Villager

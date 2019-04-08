@@ -13,9 +13,9 @@ To do:
 
 _.Achievements =
 {
-	n(-9956, { -- Quests
+	n(-9956, {	-- Quests
 		["groups"] = {
-			n(-10052, { -- Battle for Azeroth
+			n(-10052, {	-- Battle for Azeroth
 				["groups"] = {
 					a(ach(13026)),	-- 7th Legion Spycatcher
 					h(ach(12480)),	-- A Bargain of Blood

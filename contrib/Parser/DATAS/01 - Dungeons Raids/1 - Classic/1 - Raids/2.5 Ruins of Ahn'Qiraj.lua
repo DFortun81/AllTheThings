@@ -12,7 +12,7 @@ _.Instances = { tier(1, {	-- Classic
 		},
 		["coord"] = { 58.93, 14.26, 327 },	-- Ruins of Ahn'Qiraj, Ahn Qiraj: The Fallen Kingdom
 		["groups"] = {
-			n(-1, { -- Common Boss Drop
+			n(-1, {	-- Common Boss Drop
 				["groups"] = { -- The class items are grey, adding them for classic in summer
 					-- Enchants
 					i(20729),	-- Formula: Enchant Gloves - Fire Power
@@ -84,12 +84,12 @@ _.Instances = { tier(1, {	-- Classic
 					i(21214),	-- [Tome of Frostbolt XI] 
 				},
 				["crs"] = {
-					15348, -- Kurinnaxx
-					15341, -- General Rajaxx
-					15370, -- Buru the Gorger
-					15369, -- Ayamiss the Hunter
-					15339, -- Ossirian the Unscarred
-					15340, -- Moam
+					15348,	-- Kurinnaxx
+					15341,	-- General Rajaxx
+					15370,	-- Buru the Gorger
+					15369,	-- Ayamiss the Hunter
+					15339,	-- Ossirian the Unscarred
+					15340,	-- Moam
 				},
 			}),
 			e(1537, { 	-- Kurinnaxx

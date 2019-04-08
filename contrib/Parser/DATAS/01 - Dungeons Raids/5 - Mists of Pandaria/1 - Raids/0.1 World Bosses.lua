@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 _.Instances = { tier(5, {	-- Mists of Pandaria
-	n(-7, { -- World Bosses
+	n(-7, {	-- World Bosses
 		["isRaid"] = true,
 		["lvl"] = 80,
 		["g"] = {
@@ -666,7 +666,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					
 					-- Mounts, Caches, and Quest Items!
 					i(87771),	-- Heavenly Onyx Cloud Serpent
-					i(90839, { -- Cache of Sha-Touched Gold
+					i(90839, {	-- Cache of Sha-Touched Gold
 						i(86884),	-- Belt of Embodied Terror
 						i(86900),	-- Binder's Chain of Unending Summer
 						i(86850),	-- Darting Damselfly Cuffs
@@ -890,9 +890,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(84828),	-- Malevolent Gladiator's Signet of Cruelty
 				},
 			})),
-			n(-10060, { -- The Four Celestials
+			n(-10060, {	-- The Four Celestials
 				["questID"] = 33117,
-				["maps"] = { 554 }, -- Timeless Isle
+				["maps"] = { 554 },	-- Timeless Isle
 				["isRaid"] = true,
 				["lvl"] = 80,		-- Confirmed by Lucetia November 5, 2018
 				["coord"] = { 38.87, 55.29, 554 },

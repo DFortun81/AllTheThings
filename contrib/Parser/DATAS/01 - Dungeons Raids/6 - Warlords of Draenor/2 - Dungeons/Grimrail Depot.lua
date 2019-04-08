@@ -8,7 +8,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 		["maps"] = { 606, 607, 608, 609 },
 		["coord"] = { 55.04, 31.32, 543 },	-- Gorgrond, Draenor
 		["groups"] = {
-			n(-1, { -- Common Boss Drop
+			n(-1, {	-- Common Boss Drop
 				["crs"] = {
 					77803,	-- Railmaster Rocketspark
 					79545,	-- Nitrogg Thundertower

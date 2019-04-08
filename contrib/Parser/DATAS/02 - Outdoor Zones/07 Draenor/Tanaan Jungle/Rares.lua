@@ -21,7 +21,7 @@ _.Zones =
 									{ 52.6, 40.6, 534 },
 								},
 								["g"] = {
-									i(127326), -- Fel Destroyer Crossbow 
+									i(127326),	-- Fel Destroyer Crossbow 
 								},
 							},
 							{	-- Axe of the Weeping Wolf
@@ -43,8 +43,8 @@ _.Zones =
 								},
 								["g"] = {
 									i(127650), 	-- Belgork's Bastion 
-									i(126950, { -- Equipment Blueprint: Bilge Pump
-										["questID"] = 38932, -- Equipment Blueprint: Bilge Pump
+									i(126950, {	-- Equipment Blueprint: Bilge Pump
+										["questID"] = 38932,	-- Equipment Blueprint: Bilge Pump
 									}),
 								},
 							},
@@ -69,7 +69,7 @@ _.Zones =
 									{ 50.89, 74.26, 534 },	-- Bleeding Hollow Horror	
 								},
 								["g"] = {
-									i(127654), -- Burning Agony
+									i(127654),	-- Burning Agony
 								},
 							},
 							{	-- Bleeding Hollow Mushroom Stash
@@ -78,7 +78,7 @@ _.Zones =
 								["description"] = "First set of coords are cave entrance, second set are item.",
 								["coords"] = {
 									{ 44.6, 77.5, 534 },	-- Cave Entrance
-									{ 49.96, 76.78, 534 }, -- Treasure Location
+									{ 49.96, 76.78, 534 },	-- Treasure Location
 								},
 								["g"] = {
 									i(128223),	-- Bottomless Stygana Mushroom Brew Toy
@@ -103,7 +103,7 @@ _.Zones =
 									{ 46.87, 36.65, 534 },
 								},
 								["g"] = {
-									i(127347), -- Resonating Tome of Zyzzix
+									i(127347),	-- Resonating Tome of Zyzzix
 								},
 							},
 							{	-- Borrowed Enchanted Spyglass	**Coords uncofirmed, relied on wowhead**
@@ -135,7 +135,7 @@ _.Zones =
 									{ 57.6, 67.2, 534 },
 								},
 								["g"] = {
-									i(127349), -- Silver Chitin Ring
+									i(127349),	-- Silver Chitin Ring
 								},
 							},
 							{	-- Captain Grok'mar	**Coords uncofirmed, relied on wowhead**
@@ -159,7 +159,7 @@ _.Zones =
 								["g"] = {
 									i(127659),	-- Ghostly Iron Buccaneer's Hat Toy
 									i(128257, {	-- Equipment Blueprint: Ghostly Spyglass
-										["questID"] = 39365, -- Equipment Blueprint: Ghostly Spyglass
+										["questID"] = 39365,	-- Equipment Blueprint: Ghostly Spyglass
 									}),
 								},
 							},
@@ -196,8 +196,8 @@ _.Zones =
 								},
 								["g"] = {
 									i(127660),	-- Contained Flame
-									i(128255, { -- Equipment Blueprint: Ice Cutter
-										["questID"] = 39363, -- Equipment Blueprint: Ice Cutter
+									i(128255, {	-- Equipment Blueprint: Ice Cutter
+										["questID"] = 39363,	-- Equipment Blueprint: Ice Cutter
 									}),
 								},
 							},
@@ -231,7 +231,7 @@ _.Zones =
 									{ 47.91, 70.40, 534 },
 								},
 								["g"] = {
-									i(127329), -- Element-Infused Knuckles
+									i(127329),	-- Element-Infused Knuckles
 								},
 							},
 							{	-- Crystallized Fel Spike
@@ -267,11 +267,11 @@ _.Zones =
 										i(116658), 	-- Tundra Icehoof Mount
 										i(116780), 	-- Warsong Direfang Mount
 									}),
-									i(128315), -- Medallion of thee Legion
+									i(128315),	-- Medallion of thee Legion
 								},
 							},
 							{	-- Discarded Helm
-								["objectID"] = 241600, -- Discarded Helm
+								["objectID"] = 241600,	-- Discarded Helm
 								["questID"] = 38702,
 								["coords"] = {
 									{ 49.90, 81.23, 534 },
@@ -293,7 +293,7 @@ _.Zones =
 										i(116658), 	-- Tundra Icehoof Mount
 										i(116780), 	-- Warsong Direfang Mount
 									}),
-									i(128315), -- Medallion of thee Legion
+									i(128315),	-- Medallion of thee Legion
 								},
 							},	
 							{	-- Dorg the Bloody	**Coords uncofirmed, relied on wowhead**
@@ -371,7 +371,7 @@ _.Zones =
 									{ 87.5, 56.1, 534 },
 								},
 								["g"] = {
-									i(129295), -- Spike-Toed Booterang
+									i(129295),	-- Spike-Toed Booterang
 								},
 							},
 							{	-- Felbore	**Coords uncofirmed, relied on wowhead**
@@ -382,7 +382,7 @@ _.Zones =
 									{ 28.8, 51.0, 534 },
 								},
 								["g"] = {
-									i(127350), -- Fel Imbued Band
+									i(127350),	-- Fel Imbued Band
 								},
 							},
 							{	-- Felsmith Damorka	**Coords uncofirmed, relied on wowhead**
@@ -394,8 +394,8 @@ _.Zones =
 								},
 								["g"] = {
 									i(127302),	-- Chemical Resistant Apron
-									i(128258, { -- Equipment Blueprint: Felsmoke Launchers
-										["questID"] = 39366, -- Equipment Blueprint: Felsmoke Launchers
+									i(128258, {	-- Equipment Blueprint: Felsmoke Launchers
+										["questID"] = 39366,	-- Equipment Blueprint: Felsmoke Launchers
 									}),
 								},
 							},
@@ -499,7 +499,7 @@ _.Zones =
 									{ 16.0, 59.2, 534 },
 								},
 								["g"] = {
-									i(127649), -- Trophy-Skull Choker
+									i(127649),	-- Trophy-Skull Choker
 								},
 							},
 							{	-- Harbormaster Korak	**Coords uncofirmed, relied on wowhead**
@@ -574,7 +574,7 @@ _.Zones =
 									{ 52.0, 83.6, 534 },
 								},
 								["g"] = {
-									i(127418), -- Soothing Incense Brazier
+									i(127418),	-- Soothing Incense Brazier
 								},
 							},
 							{	-- Kris'kar the Unredeemed
@@ -720,7 +720,7 @@ _.Zones =
 									{ 57.6, 23.2, 534 },
 								},
 								["g"] = {
-									i(127657), -- Encroaching Void
+									i(127657),	-- Encroaching Void
 								},
 							},
 							{	-- Rasthe
@@ -731,7 +731,7 @@ _.Zones =
 									{ 17.42, 42.75, 534 },
 								},
 								["g"] = {
-									i(127661), -- Fang of Rasthe
+									i(127661),	-- Fang of Rasthe
 								},
 							},
 							{	-- Relgor	**Coords uncofirmed, relied on wowhead**
@@ -798,7 +798,7 @@ _.Zones =
 									{ 46.85, 42.17, 534 },
 								},
 								["g"] = {
-									i(127328), -- Feltwisted Sacrificial Blade
+									i(127328),	-- Feltwisted Sacrificial Blade
 								},
 							},
 							{	-- Savage Whale Shark
@@ -809,8 +809,8 @@ _.Zones =
 									{ 38, 30, 534 },
 								},
 								["g"] = {
-									i(128231, { -- Equipment Blueprint: Trained Shark Tank
-										["questID"] = 39355, -- Equipment Blueprint: Trained Shark Tank
+									i(128231, {	-- Equipment Blueprint: Trained Shark Tank
+										["questID"] = 39355,	-- Equipment Blueprint: Trained Shark Tank
 									}),
 								},
 							},
@@ -964,7 +964,7 @@ _.Zones =
 										i(116658), 	-- Tundra Icehoof Mount
 										i(116780), 	-- Warsong Direfang Mount
 									}),
-									i(128315), -- Medallion of thee Legion
+									i(128315),	-- Medallion of thee Legion
 								},
 							},
 							{	-- The Blackfang	**Coords uncofirmed, relied on wowhead**
@@ -1102,7 +1102,7 @@ _.Zones =
 									{ 27.65, 32.74, 534 },
 								},
 								["g"] = {
-									i(127351), -- Varyx's Dark Oath Band
+									i(127351),	-- Varyx's Dark Oath Band
 								},
 							},
 							{	-- Vengeance	**Coords uncofirmed, relied on wowhead**
@@ -1118,7 +1118,7 @@ _.Zones =
 										i(116658), 	-- Tundra Icehoof Mount
 										i(116780), 	-- Warsong Direfang Mount
 									}),
-									i(128315), -- Medallion of thee Legion
+									i(128315),	-- Medallion of thee Legion
 								},
 							},
 							{	-- Weathered Axe
@@ -1140,8 +1140,8 @@ _.Zones =
 								},
 								["g"] = {
 									i(127658),	-- Eye of the Beholder 
-									i(128232, { -- Equipment Blueprint: High Intensity Fog Lights
-										["questID"] = 39356, -- Equipment Blueprint: High Intensity Fog Lights
+									i(128232, {	-- Equipment Blueprint: High Intensity Fog Lights
+										["questID"] = 39356,	-- Equipment Blueprint: High Intensity Fog Lights
 									}),
 								},
 							},
@@ -1176,8 +1176,8 @@ _.Zones =
 								},
 								["g"] = {
 									i(127308),	-- Zoug's Lifting Belt
-									i(128252, { -- Equipment Blueprint: True Iron Rudder
-										["questID"] = 39360, -- Equipment Blueprint: True Iron Rudder
+									i(128252, {	-- Equipment Blueprint: True Iron Rudder
+										["questID"] = 39360,	-- Equipment Blueprint: True Iron Rudder
 									}),
 								},
 							},

@@ -7,16 +7,16 @@ _.Zones =
 		m(36, {	-- Burning Steppes
 			["groups"] = {
 				n(-228, {	-- Flight Path
-					fp(676, { -- Chiselgrip, Burning Steppes
+					fp(676, {	-- Chiselgrip, Burning Steppes
 						["coord"] = { 46, 41.8 },
 					}),
-					fp(70, { -- Flame Crest, Burning Steppes
+					fp(70, {	-- Flame Crest, Burning Steppes
 						["coord"] = { 54.2, 24.2 },
 					}),
-					fp(675, { -- Flamestar Post, Burning Steppes
+					fp(675, {	-- Flamestar Post, Burning Steppes
 						["coord"] = { 17.6, 52.6 },
 					}),
-					fp(71, { -- Morgan's Vigil, Burning Steppes
+					fp(71, {	-- Morgan's Vigil, Burning Steppes
 						["coord"] = { 72.2, 65.6 },
 					}),
 				}),
@@ -30,8 +30,8 @@ _.Zones =
 					qr(qg(66520, q(31914))),	-- Durin Darkhammer
 				}),
 				n(-17, { 	-- Quests
-					ach(4901, { -- Burning Steppes Quests
-						crit(1, { -- Preparation
+					ach(4901, {	-- Burning Steppes Quests
+						crit(1, {	-- Preparation
 							qa(28172, {	-- Done Nothing Wrong
 								["groups"] = {
 									i(64496),	-- Hatchlings' Protector
@@ -133,7 +133,7 @@ _.Zones =
 								["sourceQuests"] = { 28182, 28181 },	-- Shadow Boxing & Warlocks Have the Neatest Stuff
 							}),
 						}),
-						crit(3, { -- Infiltration (28286)
+						crit(3, {	-- Infiltration (28286)
 							qa(28184, {	-- Chiselgrip, the Heart of the Steppes
 								["groups"] = {
 									i(64510),	-- Oreknuckle Gun
@@ -325,7 +325,7 @@ _.Zones =
 								["sourceQuests"] = { 28440 },	-- Abuse of Power
 							}),
 						}),
-						crit(4, { -- Anticipation (28326)
+						crit(4, {	-- Anticipation (28326)
 							qa(28310, {	-- Morgan's Vigil
 								["qg"] = 48110,	-- Colonel Troteman
 								["sourceQuests"] = { 28286 },	-- Enough Damage for One Day
@@ -401,7 +401,7 @@ _.Zones =
 								["sourceQuests"] = { 28448, 28446, 28447 },	-- A Deal With a Dragon, Blood Tour, & Draconic Vanguard
 							}),
 						}),
-						crit(2, { -- Annihilation (28322)
+						crit(2, {	-- Annihilation (28322)
 							qa(28317, {	-- A Delivery for Thorg'izog
 								["qg"] = 48307,	-- Colonel Troteman
 								["sourceQuests"] = { 28326 },	-- Placing the Pawns
@@ -484,10 +484,10 @@ _.Zones =
 							}),
 						}),
 					}),
-					n(-168, { -- Other Quests
-						-- sz(775, 1, { -- Dreadmaul Rock
+					n(-168, {	-- Other Quests
+						-- sz(775, 1, {	-- Dreadmaul Rock
 						-- }),
-						sz(775, 2, { -- Morgan's Vigil
+						sz(775, 2, {	-- Morgan's Vigil
 							qa(27471, {	-- Blackrock Anomaly
 								["qg"] = 9562,	-- Hellendis Riverhorn
 							}),
@@ -506,11 +506,11 @@ _.Zones =
 								["sourceQuests"] = { 28310 },	-- Morgan's Vigil
 							}),
 						}),
-						-- sz(775, 3, { -- Terror Wing Path
+						-- sz(775, 3, {	-- Terror Wing Path
 						-- }),
-						-- sz(775, 4, { -- Blackrock Pass
+						-- sz(775, 4, {	-- Blackrock Pass
 						-- }),
-						sz(775, 5, { -- Ruins of Thaurissan NOTE: Should be Flame Crest
+						sz(775, 5, {	-- Ruins of Thaurissan NOTE: Should be Flame Crest
 							qh(28570, {	-- The Bogpaddle Bullet (mutually exclusive with "Warchief's Command: Swamp of Sorrows!")
 								["qg"] = 10260,	-- Kibler
 								["lvl"] = 40,
@@ -527,12 +527,12 @@ _.Zones =
 								["sourceQuests"] = { 28442 },	-- Flame Crest
 							}),
 						}),
-						-- sz(775, 6, { -- Black Tooth Hovel
+						-- sz(775, 6, {	-- Black Tooth Hovel
 						-- }),
-						sz(775, 7, { -- Blackrock Stronghold
-							i(142344, { -- Broken Axe Blade
+						sz(775, 7, {	-- Blackrock Stronghold
+							i(142344, {	-- Broken Axe Blade
 								["groups"] = {
-									q(44926, { -- A Familiar Axe to Grind
+									q(44926, {	-- A Familiar Axe to Grind
 										["qgs"] = {
 											48201,	-- Blackrock Sergeant
 											7027,	-- Blackrock Slayer
@@ -542,22 +542,22 @@ _.Zones =
 										},
 									}),
 								},
-								["requireSkill"] = 164, -- Classic Blacksmithing
+								["requireSkill"] = 164,	-- Classic Blacksmithing
 							}),
-							q(44927, { -- Worth Its Weight in Steel
+							q(44927, {	-- Worth Its Weight in Steel
 								["groups"] = {
-									i(142346), -- Plans: Bleakwood Hew
+									i(142346),	-- Plans: Bleakwood Hew
 								},
-								["qg"] = 115805, -- Hoddruc Bladebender
-								["sourceQuests"] = { 44926 }, -- A Familiar Axe to Grind
-								["requireSkill"] = 164, -- Classic Blacksmithing
+								["qg"] = 115805,	-- Hoddruc Bladebender
+								["sourceQuests"] = { 44926 },	-- A Familiar Axe to Grind
+								["requireSkill"] = 164,	-- Classic Blacksmithing
 							}),
 						}),
-						-- sz(775, 8, { -- The Whelping Downs
+						-- sz(775, 8, {	-- The Whelping Downs
 						-- }),
-						-- sz(775, 9, { -- Altar of Storms
+						-- sz(775, 9, {	-- Altar of Storms
 						-- }),
-						sz(775, 10, { -- Blackrock Mountain
+						sz(775, 10, {	-- Blackrock Mountain
 							q(7848, {	-- Attunement to the Core
 								["qg"] = 14387,	-- Lothos Riftwalker
 								["description"] = "This quest is no longer required to enter Molten Core - you can now speak to Lothos and have him transport you inside without doing the attunement.",
@@ -1049,7 +1049,7 @@ _.Zones =
 						dr(01.0, i(10086)),	-- Gothic Plate Armor
 						dr(01.0, i(10239)),	-- Heavy Lamellar Vambraces
 						dr(01.0, i(10072)),	-- Righteous Gloves
-						i(12828), -- Plans: Volcanic Hammer [May no longer drop after Cata or extremely rare, no recent reports as of 2018 and recipe is no longer in the blacksmithing profession window.]
+						i(12828),	-- Plans: Volcanic Hammer [May no longer drop after Cata or extremely rare, no recent reports as of 2018 and recipe is no longer in the blacksmithing profession window.]
 					}), 
 				}),
 				n(-2,  {	-- Vendors

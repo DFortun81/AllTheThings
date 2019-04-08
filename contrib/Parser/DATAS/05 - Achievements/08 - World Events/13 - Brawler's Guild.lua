@@ -12,9 +12,9 @@ To do:
 
 _.Achievements = 
 {
-	n(-9962, { -- World Events
+	n(-9962, {	-- World Events
 		["groups"] = {
-			n(-10026, { -- Brawler's Guild
+			n(-10026, {	-- Brawler's Guild
 				["groups"] = {
 					ach(11570),		-- Educated Guesser
 					ach(13194),		-- I Am Thrall's Complete Lack Of Surprise(BFA)

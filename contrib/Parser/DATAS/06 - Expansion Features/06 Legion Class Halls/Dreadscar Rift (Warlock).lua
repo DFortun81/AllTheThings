@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.ExpansionFeatures =
 {
-	n(-9965, { -- Legion Class Hall
-		cl(9, { -- Dreadscar Rift (Warlock)
+	n(-9965, {	-- Legion Class Hall
+		cl(9, {	-- Dreadscar Rift (Warlock)
 			["lvl"] = 98,
 			["mapID"] = 717,	-- Dreadscar Rift (Warlock)
 			["groups"] = {
@@ -101,7 +101,7 @@ _.ExpansionFeatures =
 						112375,	-- Zaldrok
 					},
 					["groups"] = {
-						i(139577, { -- The Burning Jewel of Sargeras
+						i(139577, {	-- The Burning Jewel of Sargeras
 							artifact(207),	-- Find Hidden Artifact Skin
 						}),
 						i(136900),	-- Hateful Eye Pet
@@ -119,7 +119,7 @@ _.ExpansionFeatures =
 					},
 				}),
 				--[[
-				n(101979, { -- Dreadscar Battle Plans
+				n(101979, {	-- Dreadscar Battle Plans
 					["groups"] = {
 						-- Blank for Class Only Missions in the future
 					},
@@ -245,30 +245,30 @@ _.ExpansionFeatures =
 					q(44258),	-- Violet Hold
 					q(44058),	-- Volpin the Elusive
 					q(45179),	-- Win the Crowd							
-					q(46243, { -- The Wrathsteed of Xoroth
+					q(46243, {	-- The Wrathsteed of Xoroth
 						["lvl"] = 110,
 						["classes"] = {9},
 						["groups"] = {
 							{ ["mountID"] = 232412 },	-- Netherlord's Chaotic Wrathsteed
 						},
 					}),
-					q(44254, { -- Gazing Into Oblivion
+					q(44254, {	-- Gazing Into Oblivion
 						i(139765),	-- Visage of the Black Harvest
 					}),
-					q(41796, { -- Selecting a Sixth
+					q(41796, {	-- Selecting a Sixth
 						i(139767),	-- Robes of the Black Harvest
 					}),
-					q(41784, { -- Borrowed Time
+					q(41784, {	-- Borrowed Time
 						i(139770),	-- Wristbands of the Black Harvest
 					}),
 					--[[ Artifact Appearance  Quests Commented Out For Now
-					q(43414, { -- A Hero's Weapon
+					q(43414, {	-- A Hero's Weapon
 						sp(219663) -- Heroic Weapons [No item associated]
 					}),
 					--]]
 				}),
-				n(-2, { --  Vendors
-					n(101097, { -- Calydus
+				n(-2, {	--  Vendors
+					n(101097, {	-- Calydus
 						["classes"] = {9},
 						["description"] = "|c808080FAThis mount is only available to warlocks who have completed|r |cFFFFD700The Wrathsteed of Xoroth|r |c808080FAquest from the class mount campaign.",
 						["sourceQuest"] = 46243,	-- The Wrathsteed of Xoroth
@@ -276,8 +276,8 @@ _.ExpansionFeatures =
 							i(143637),	-- Hellblazing Reins of the Brimstone Wrathsteed
 						},
 					}),
-					n(112434, { -- Gigi Gigavoid <Black Harvest Quartermaster>
-						gs(448, { -- Vestments of the Black Harvest
+					n(112434, {	-- Gigi Gigavoid <Black Harvest Quartermaster>
+						gs(448, {	-- Vestments of the Black Harvest
 							i(139765),	-- Head
 							i(139768),	-- Shoulders
 							i(139767),	-- Chest

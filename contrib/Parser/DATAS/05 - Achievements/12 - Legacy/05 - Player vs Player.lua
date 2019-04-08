@@ -12,9 +12,9 @@ To do:
 
 _.Achievements = 
 {
-	n(-9968, { -- Legacy		NOTE: MOST WILL NEED THE un(2) TAG
+	n(-9968, {	-- Legacy		NOTE: MOST WILL NEED THE un(2) TAG
 		["groups"] = {
-			n(-9958, { -- Player vs Player
+			n(-9958, {	-- Player vs Player
 				["groups"] = {
 					un(2, ach(11468)),		-- Alive for Five
 					un(2, ach(2191)),		-- Ancient Courtyard Protector

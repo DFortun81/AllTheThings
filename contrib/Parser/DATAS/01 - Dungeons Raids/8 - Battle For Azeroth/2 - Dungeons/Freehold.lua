@@ -2,16 +2,16 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 _.Instances = { tier(8, {	-- Battle For Azeroth
-	inst(1001, { -- Freehold
+	inst(1001, {	-- Freehold
 		["lvl"] = 110,
 		["maps"] = {
-			936, -- Freehold
+			936,	-- Freehold
 		},
 		["groups"] = {
-			d(1, { -- Normal
-				e(2102, { -- Skycap'n Kragg
+			d(1, {	-- Normal
+				e(2102, {	-- Skycap'n Kragg
 					["crs"] = {
-						129732, -- Skycap'n Kragg
+						129732,	-- Skycap'n Kragg
 						--  Shark Bait
 					},
 					["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
@@ -23,11 +23,11 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						i(155862),	-- Kragg's Rigging Scalers
 					}),
 				}),
-				e(2093, { -- Council o' Captains
+				e(2093, {	-- Council o' Captains
 					["crs"] = {
-						126848, -- Capttain Eudora
-						126845, -- Captain Jolly
-						126847, -- Captain Raoul
+						126848,	-- Capttain Eudora
+						126845,	-- Captain Jolly
+						126847,	-- Captain Raoul
 					},
 					["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						i(159132),	-- Jolly's Boot Daggeer
@@ -40,9 +40,9 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						i(158314),	-- Seal of Questionable 
 					}),
 				}),
-				e(2094, { -- Ring of Booty
+				e(2094, {	-- Ring of Booty
 					["crs"] = {
-						126969, -- Trothak <The Shark Puncher>
+						126969,	-- Trothak <The Shark Puncher>
 					},
 					["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						i(159634),	-- Jeweled Sharksplitter
@@ -57,7 +57,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					}),
 				}),
 				e(2095,	{	-- Harlan Sweete
-					["crs"] = { 126983 }, -- Harlan Sweete
+					["crs"] = { 126983 },	-- Harlan Sweete
 					["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						ach(12831),	-- Freehold
 						i(159635),	-- Bloody Tideturner
@@ -73,12 +73,12 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					}),
 				}),
 			}),
-			d(2, { -- Heroic
+			d(2, {	-- Heroic
 				["lvl"] = 120,
 				["groups"] = {
-					e(2102, { -- Skycap'n Kragg
+					e(2102, {	-- Skycap'n Kragg
 						["crs"] = {
-							129732, -- Skycap'n Kragg
+							129732,	-- Skycap'n Kragg
 							--  Shark Bait
 						},
 						["groups"] = {
@@ -90,11 +90,11 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							i(155862),	-- Kragg's Rigging Scalers
 						},
 					}),
-					e(2093, { -- Council o' Captains
+					e(2093, {	-- Council o' Captains
 						["crs"] = {
-							126848, -- Capttain Eudora
-							126845, -- Captain Jolly
-							126847, -- Captain Raoul
+							126848,	-- Capttain Eudora
+							126845,	-- Captain Jolly
+							126847,	-- Captain Raoul
 						},
 						["groups"] = {
 							i(159132),	-- Jolly's Boot Daggeer
@@ -107,9 +107,9 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							i(158314),	-- Seal of Questionable 
 						},
 					}),
-					e(2094, { -- Ring of Booty
+					e(2094, {	-- Ring of Booty
 						["crs"] = {
-							126969, -- Trothak <The Shark Puncher>
+							126969,	-- Trothak <The Shark Puncher>
 						},
 						["groups"] = {
 							i(159634),	-- Jeweled Sharksplitter
@@ -123,8 +123,8 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							i(158356),	-- Shell-Kickers
 						},
 					}),
-					e(2095, { -- Harlan Sweete
-						["crs"] = { 126983 }, -- Harlan Sweete
+					e(2095, {	-- Harlan Sweete
+						["crs"] = { 126983 },	-- Harlan Sweete
 						["groups"] = {
 							ach(12832),	-- Heroic: Freehold
 							i(159635),	-- Bloody Tideturner
@@ -141,12 +141,12 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					}),
 				},
 			}),
-			d(23, { -- Mythic
+			d(23, {	-- Mythic
 				["lvl"] = 120,
 				["groups"] = {
-					e(2102, { -- Skycap'n Kragg
+					e(2102, {	-- Skycap'n Kragg
 						["crs"] = {
-							129732, -- Skycap'n Kragg
+							129732,	-- Skycap'n Kragg
 							--  Shark Bait
 						},
 						["groups"] = {
@@ -160,11 +160,11 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							i(155862),	-- Kragg's Rigging Scalers
 						},
 					}),
-					e(2093, { -- Council o' Captains
+					e(2093, {	-- Council o' Captains
 						["crs"] = {
-							126848, -- Capttain Eudora
-							126845, -- Captain Jolly
-							126847, -- Captain Raoul
+							126848,	-- Capttain Eudora
+							126845,	-- Captain Jolly
+							126847,	-- Captain Raoul
 						},
 						["groups"] = {
 							i(159132),	-- Jolly's Boot Daggeer
@@ -177,9 +177,9 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							i(158314),	-- Seal of Questionable 
 						},
 					}),
-					e(2094, { -- Ring of Booty
+					e(2094, {	-- Ring of Booty
 						["crs"] = {
-							126969, -- Trothak <The Shark Puncher>
+							126969,	-- Trothak <The Shark Puncher>
 						},
 						["groups"] = {
 							i(159634),	-- Jeweled Sharksplitter
@@ -193,8 +193,8 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							i(158356),	-- Shell-Kickers
 						},
 					}),
-					e(2095, { -- Harlan Sweete
-						["crs"] = { 126983 }, -- Harlan Sweete
+					e(2095, {	-- Harlan Sweete
+						["crs"] = { 126983 },	-- Harlan Sweete
 						["groups"] = {
 							ach(12833),	-- Mythic: Freehold
 							ach(12998),	-- That Sweete Booty

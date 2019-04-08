@@ -12,9 +12,9 @@ To do:
 
 _.Achievements = 
 {
-	n(-9963, { -- Pet Battles
+	n(-9963, {	-- Pet Battles
 		["groups"] = {
-			n(-10028, { -- Battle
+			n(-10028, {	-- Battle
 				["groups"] = {
 					ach(9069, {		-- An Awfully Big Adventure
 						i(120121),		-- Trunks

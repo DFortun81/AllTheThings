@@ -24,10 +24,10 @@ _.Instances = { tier(1, {	-- Classic
 				})),
 				qg(46417, qa(27733)),	-- The Good Ol' Switcheroo
 			}),
-			n(0, { -- Zone Drop
+			n(0, {	-- Zone Drop
 				i(7360, {  -- Recipe: Dark Leather Gloves
 					["crs"] = {
-						46382, -- Petty Criminal
+						46382,	-- Petty Criminal
 					},
 				}),
 				un(7, i(1076)),	-- Defias Renegade Ring

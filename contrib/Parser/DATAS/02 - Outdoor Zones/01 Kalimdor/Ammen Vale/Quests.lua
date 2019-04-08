@@ -210,7 +210,7 @@ _.Zones =
 						["qg"] = 17071,	-- Technician Zhanaa
 						["coord"] = { 50.5, 47.9, 468 },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 9312, -- The Emitter
+						["sourceQuest"] = 9312,	-- The Emitter
 					},
 					{	-- Urgent Delivery!
 						["questID"] = 9409,

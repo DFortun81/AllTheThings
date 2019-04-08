@@ -13,7 +13,7 @@ _.Zones =
 						["npcID"] = -228,	-- Flight Paths
 						["g"] = {
 							{	-- Shattered Sun Stage Area
-								["flightPathID"] = 213, -- Shattered Sun Stage Area
+								["flightPathID"] = 213,	-- Shattered Sun Stage Area
 								["coords"] = {
 									{ 48.4, 25.2 },
 								},

@@ -568,7 +568,7 @@ _.Instances = { tier(7, {	-- Legion
 						["u"] = 2,	-- Legacy Achievement
 					},
 					ach(11377),	-- Patient Zero
-					ach(11387, { -- The Chosen
+					ach(11387, {	-- The Chosen
 						["u"] = 2,	-- Legacy Achievement
 						["crs"] = {
 							116229,	-- Mythical Champion of the Chosen Dead

@@ -97,7 +97,7 @@ _.Zones =
 							["itemID"] = 137642,	-- Mark of Honor
 							["coord"] = { 33.2, 64.0, 109 },
 							["g"] = {
-								i(146648), -- Arsenal: Brutal Gladiator's Weapons
+								i(146648),	-- Arsenal: Brutal Gladiator's Weapons
 								-- i(146598),	-- Ensemble: Brutal Gladiator's Chain Armor [TODO]
 								i(35077),	-- Brutal Gladiator's Ringmail Armor
 								i(35085),	-- Brutal Gladiator's Satin Leggings
@@ -304,7 +304,7 @@ _.Zones =
 						}),
 						n(34091, {	-- Grex Brainboiler Season >7< Elite Version [Note: Yes, two npc's with same name. One is removed]
 							["groups"] = {
-								un(2, i(49086)), -- Relentless Gladiator's Tabard [Elite Rating]
+								un(2, i(49086)),	-- Relentless Gladiator's Tabard [Elite Rating]
 								un(2, i(48435)),	-- Relentless Gladiator's Punisher
 								un(2, i(48511)),	-- Relentless Gladiator's Truncheon
 								un(2, i(48519)),	-- Relentless Gladiator's Salvation
@@ -325,7 +325,7 @@ _.Zones =
 								un(2, i(48402)),	-- Relentless Gladiator's Sunderer
 								un(2, i(48406)),	-- Relentless Gladiator's Claymore)
 							},
-							["u"] = 2, -- Vendor no longer exists
+							["u"] = 2,	-- Vendor no longer exists
 						}),
 						n(40209, {	-- Grex Brainboiler <Classic Alliance Cloth & Leather>
 							["groups"] = {
@@ -435,7 +435,7 @@ _.Zones =
 							["itemID"] = 137642,	-- Mark of Honor
 							["coord"] = { 33.0, 64.2, 109 },
 							["g"] = {
-								i(146650), -- Arsenal: Merciless Gladiator's Weapons
+								i(146650),	-- Arsenal: Merciless Gladiator's Weapons
 								i(146625, {	-- Merciless Gladiator's Satin Armor	
 									["groups"] = {	
 										i(32035),
@@ -1086,7 +1086,7 @@ _.Zones =
 							["itemID"] = 137642,	-- Mark of Honor
 							["coord"] = { 33.0, 64.2, 109 },
 							["g"] = {
-								i(146649), -- Arsenal: Vengeful Gladiator's Weapons
+								i(146649),	-- Arsenal: Vengeful Gladiator's Weapons
 								i(146635, {	-- Ensemble: Vengeful Gladiator's Satin Armor		
 									["groups"] = {		
 										i(33718),	-- Vengeful Gladiator's Mooncloth Hood

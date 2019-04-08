@@ -310,7 +310,7 @@ _.Zones =
 						},
 						{	-- Giant Woodworm
 							["speciesID"] = 2383,	-- Giant Woodworm
-							["crs"] = { 143042 }, -- Giant Woodworm	
+							["crs"] = { 143042 },	-- Giant Woodworm	
 						},
 						{	-- Squirrel
 							["speciesID"] = 379,	-- Squirrel

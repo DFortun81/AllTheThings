@@ -11,10 +11,10 @@ _.Zones =
 						i(163576, {	-- Captured Dune Scavenger
 							["crs"] = {
 								134429,	-- Diamondback Warbringer
-								123863, -- Faithless Aggressor
+								123863,	-- Faithless Aggressor
 								134560,	-- Faithless Auditor
 								128682,	-- Faithless Defender
-								129625, -- Faithless Dervish
+								129625,	-- Faithless Dervish
 								122782,	-- Faithless Mender
 								123864,	-- Faithless Ravager
 								129778,	-- Faithless Skycaller

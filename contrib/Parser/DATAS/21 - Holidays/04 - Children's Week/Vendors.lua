@@ -12,9 +12,9 @@ _.Holidays = bubbleDown({["u"] = 20},
 				["npcID"] = -2,	-- Vendors
 				["g"] = {
 					{	-- Craggle Wobbletop <Toys and Novelties>
-						["npcID"] = 52358, -- Craggle Wobbletop <Toys and Novelties>
+						["npcID"] = 52358,	-- Craggle Wobbletop <Toys and Novelties>
 						["races"] = ALLIANCE_ONLY,
-						["maps"] = { 84, }, -- Stormwind City
+						["maps"] = { 84, },	-- Stormwind City
 						["groups"] = {
 							{	-- Green Balloon
 								["itemID"] = 69895,	-- Green Balloon
@@ -29,7 +29,7 @@ _.Holidays = bubbleDown({["u"] = 20},
 					{	-- Blax Bottlerocket <Toys and Novelties>
 						["npcID"] = 52809,	-- Blax Bottlerocket <Toys and Novelties>
 						["races"] = HORDE_ONLY,
-						["maps"] = { 85, }, -- Orgrimmar
+						["maps"] = { 85, },	-- Orgrimmar
 						["groups"] = {
 							{	-- Green Balloon
 								["itemID"] = 69895,	-- Green Balloon

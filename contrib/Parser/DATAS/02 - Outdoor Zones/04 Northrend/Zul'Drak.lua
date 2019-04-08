@@ -7,19 +7,19 @@ _.Zones =
 		m(121, {	-- Zul'Drak
 			["groups"] = {
 				n(-228, {	-- Flight Points
-					fp(305, { -- Ebon Watch, Zul'Drak
+					fp(305, {	-- Ebon Watch, Zul'Drak
 						["coord"] = { 14, 73.6 },
 					}),
-					fp(331, { -- Gundrak, Zul'Drak
+					fp(331, {	-- Gundrak, Zul'Drak
 						["coord"] = { 70.4, 23.2 },
 					}),
-					fp(306, { -- Light's Breach, Zul'Drak
+					fp(306, {	-- Light's Breach, Zul'Drak
 						["coord"] = { 32.2, 74.4 },
 					}),
-					fp(304, { -- The Argent Stand, Zul'Drak
+					fp(304, {	-- The Argent Stand, Zul'Drak
 						["coord"] = { 41.4, 64.4 },
 					}),
-					fp(307, { -- Zim'Torga, Zul'Drak
+					fp(307, {	-- Zim'Torga, Zul'Drak
 						["coord"] = { 60, 56.8 },
 					}),
 				}),
@@ -358,7 +358,7 @@ _.Zones =
 						i(41846),
 					}),
 					q(12859, {	-- This Just In: Fire Still Hot!
-						i(41755, { -- The Fire Extinguisher
+						i(41755, {	-- The Fire Extinguisher
 							["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
 						}),
 					}),
@@ -490,14 +490,14 @@ _.Zones =
 				}),
 				n(0, { 		-- Zone Drops
 					["groups"] = {
-						n(29334, { -- Gundrak Raptor
+						n(29334, {	-- Gundrak Raptor
 							["groups"] = {
-								i(48116), -- Gundrak Hatchling
+								i(48116),	-- Gundrak Hatchling
 							},
 						}),
-						n(29235, { -- Gundrak Savage
+						n(29235, {	-- Gundrak Savage
 							["groups"] = {
-								i(41120), -- Plans: Reinforced Cobalt Legplates
+								i(41120),	-- Plans: Reinforced Cobalt Legplates
 							},
 						}),
 					},

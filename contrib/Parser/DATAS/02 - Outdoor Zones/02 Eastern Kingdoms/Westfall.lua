@@ -7,13 +7,13 @@ _.Zones =
 		m(52, {	-- Westfall
 			["groups"] = {
 				n(-228, {	-- Flight Path
-					fp(584, { -- Furlbrow's Pumpkin Farm, Westfall
+					fp(584, {	-- Furlbrow's Pumpkin Farm, Westfall
 						["coord"] = { 49.8, 18.8 },
 					}),
-					fp(583, { -- Moonbrook, Westfall
+					fp(583, {	-- Moonbrook, Westfall
 						["coord"] = { 42, 63.4 },
 					}),
-					fp(4, { -- Sentinel Hill, Westfall
+					fp(4, {	-- Sentinel Hill, Westfall
 						["coord"] = { 56.6, 49.4 },
 					}),
 				}),
@@ -33,17 +33,17 @@ _.Zones =
 						["description"] = "Spam the macro '/chicken' at a Chicken for it to grant you this quest. The vendor, Farmer Saldean, sells the Special Chicken Feed you need.",
 						["repeatable"] = true,
 					}),
-					qa(31725, { -- Lindsay
+					qa(31725, {	-- Lindsay
 						i(89125),	-- Sack of Pet Supplies
 					}),
 					qr(qa(31780)), 	-- Old MacDonald
-					ach(11856, { -- Pet Battle Challenge: Wailing Caverns
-						i(151632), -- Mining Monkey
-						n(119390, { -- Marcus "Bagman" Brown
+					ach(11856, {	-- Pet Battle Challenge: Wailing Caverns
+						i(151632),	-- Mining Monkey
+						n(119390, {	-- Marcus "Bagman" Brown
 							["groups"] = {
-								i(150742), -- Pet Reaper 0.9
-								i(150741), -- Tricorne
-								i(150739), -- Pocket Cannon
+								i(150742),	-- Pet Reaper 0.9
+								i(150741),	-- Tricorne
+								i(150739),	-- Pocket Cannon
 							},
 							["description"] = "Must have completed the Wailing Caverns Pet Battle Dungeon quest Wailing Critters and the breadcrumb quest Deadmines, Part Three?."
 						}),
@@ -65,7 +65,7 @@ _.Zones =
 					})),
 ]]--
 --					qg(, qa(26320)),	-- A Vision of the Past
-					qg(7024, qa(26291, { -- Big Trouble in Moonbrook
+					qg(7024, qa(26291, {	-- Big Trouble in Moonbrook
 						i(58926),	-- Gryan's Boots
 						i(58924),	-- Legwork Trousers
 						i(58925),	-- Troublesome Gloves
@@ -73,7 +73,7 @@ _.Zones =
 					})),
 --					qa(12340),	-- Candy Bucket
 					o(34, {	-- Old Jug
-						q(26356, { -- Captain Sanders' Hidden Treasure
+						q(26356, {	-- Captain Sanders' Hidden Treasure
 							i(3344),	-- Captain Sanders' Sash
 							i(3342),	-- Captain Sanders' Shirt
 							i(3343),	-- Captain Sanders' Booty Bag
@@ -92,7 +92,7 @@ _.Zones =
 --]]
 					n(42677, {	-- Moonbrook Thug
 						i(58117, {	-- Red Bandana
-							qa(26296, { -- Evidence Collection
+							qa(26296, {	-- Evidence Collection
 								i(58921),	-- Evidence Collection Gloves
 								i(58923),	-- Gregorky's Bracers
 								i(131505),	-- Worn Defias Bindings
@@ -108,7 +108,7 @@ _.Zones =
 					qg(, qh(27848)),	-- Good Intentions...Poor Execution
 					qg(, qa(26252)),	-- Heart of the Watcher
 --]]
-					qg(821, qa(26365, { -- Hero's Call: Redridge Mountains!
+					qg(821, qa(26365, {	-- Hero's Call: Redridge Mountains!
 						i(60689),	-- Belt of Unsolvable Problems
 						i(60690),	-- Doody Boots
 						i(131517),	-- Doody Shoes
@@ -123,7 +123,7 @@ _.Zones =
 					qg(, qa(26214)),	-- Hot On the Trail: Murlocs
 					qg(, qa(26213)),	-- Hot On the Trail: The Riverpaw Clan
 --]]
-					qg(234, qa(26286, { -- In Defense of Westfall
+					qg(234, qa(26286, {	-- In Defense of Westfall
 						i(58914),	-- Sentinel Hill Breastplate
 						i(131502),	-- Sentinel Hill Hauberk
 						i(58912),	-- Sentinel Hill Surcoat
@@ -133,20 +133,20 @@ _.Zones =
 					qg(, q(43245)),	-- Invasion: Westfall
 					qg(, q(42235)),	-- Invasion: Westfall
 --]]
-					qg(42498, qa(26229, { -- "I TAKE Candle!"
+					qg(42498, qa(26229, {	-- "I TAKE Candle!"
 						i(58905),	-- Kobold Basher
 						i(58903),	-- Kobold Candle
 						i(58902),	-- Kobold Sticker
 						i(156935), 	-- Kobold Torch
 						i(58904),	-- Wax Catcher
 					})),
-					qg(233, qa(26257, { -- It's Alive!
+					qg(233, qa(26257, {	-- It's Alive!
 						i(58916),	-- Chewed Belt
 						i(131497),	-- Chewed Chain Cord
 						i(58915),	-- Harvester Boots
 						i(58917),	-- Saldean's Working Gloves
 					})),
-					qg(821, qa(26288, { -- Jango Spothide
+					qg(821, qa(26288, {	-- Jango Spothide
 						i(58920),	-- Dust Plains Greaves
 						i(58918),	-- Mystic Riverpaw Wand
 						i(58919),	-- Spothide Leggings
@@ -159,7 +159,7 @@ _.Zones =
 					qg(, qa(26232)),	-- Lou's Parting Thoughts
 					qg(, qa(26215)),	-- Meet Two-Shoed Lou
 --]]
-					qg(42308, qa(26209, { -- Murder Was The Case That They Gave Me
+					qg(42308, qa(26209, {	-- Murder Was The Case That They Gave Me
 						i(58907),	-- Crime Scene Tape
 						i(58906),	-- Equicide Cloak
 						i(58908),	-- Scene Investigator's Wrap
@@ -174,7 +174,7 @@ _.Zones =
 					qg(, q(43288)),	-- Repel
 					qg(, qa(26370)),	-- Return to Sentinel Hill
 --]]
-					qg(42750, qa(26322, { -- Rise of the Brotherhood (secondary QG ID 234)
+					qg(42750, qa(26322, {	-- Rise of the Brotherhood (secondary QG ID 234)
 						i(58931),	-- House Wrynn Claymore
 						i(58929),	-- House Wrynn Crossbow
 						i(58927),	-- House Wrynn Dagger
@@ -189,7 +189,7 @@ _.Zones =
 					qg(, q(8675)),	-- Skychaser the Elder
 					qg(, qa(26348)),	-- The Coast Isn't Clear
 --]]
-					qg(392, qa(26349, { -- The Coastal Menace
+					qg(392, qa(26349, {	-- The Coastal Menace
 						i(1557),	-- Buckler of the Seas
 						i(1172),	-- Grayson's Torch
 						i(5240),	-- Torchlight Wand
@@ -205,7 +205,7 @@ _.Zones =
 					qg(, qa(26292)),	-- To Moonbrook!
 					qg(, qh(27844)),	-- Traitors!!!
 --]]
-					qg(235, qa(26241, { -- Westfall Stew
+					qg(235, qa(26241, {	-- Westfall Stew
 						i(58910),	-- Boiled Boots
 						i(131496),	-- Boiled Chain Footpads
 						i(58909),	-- Golden Sunshine Cloak

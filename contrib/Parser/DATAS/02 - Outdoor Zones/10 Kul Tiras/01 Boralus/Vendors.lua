@@ -123,7 +123,7 @@ _.Zones =
 						},
 						n(141009, {	-- Col. Tenders <Chicken Vendor>
 							["groups"] = {
-								i(11023), -- Ancona Chicken
+								i(11023),	-- Ancona Chicken
 							},
 							["races"] = ALLIANCE_ONLY,
 						}),
@@ -596,8 +596,8 @@ _.Zones =
 						}),
 						n(145838, {	-- Marshal Frazer
 							["groups"] = {
-								i(139775), -- Alliance Enthusiast
-								i(142379), -- Dutiful Squire
+								i(139775),	-- Alliance Enthusiast
+								i(142379),	-- Dutiful Squire
 							},
 							["races"] = ALLIANCE_ONLY,
 						}),
@@ -705,9 +705,9 @@ _.Zones =
 						},
 						n(142691, {	-- Tricky Nick
 							["groups"] = {
-								i(163568), -- Lost Platysaur [So Cute!]
-								i(163589), -- Reins of the Palehide Direhorn
-								i(163042), -- Reins of the Mighty Caravan Brutosaur
+								i(163568),	-- Lost Platysaur [So Cute!]
+								i(163589),	-- Reins of the Palehide Direhorn
+								i(163042),	-- Reins of the Mighty Caravan Brutosaur
 							},
 							["races"] = ALLIANCE_ONLY,
 							["coords"] = {
@@ -718,7 +718,7 @@ _.Zones =
 							["groups"] = {
 								i(160539),	-- Tabard of the 7th Legion
 								i(163036, {	-- Polished Pet Charm
-									i(163778), -- Lil'Siege
+									i(163778),	-- Lil'Siege
 								}),
 								i(161586),	-- Belt of the Grove Auxiliary
 								i(161588),	-- Bracers of the Allied Earthbinders
@@ -756,31 +756,31 @@ _.Zones =
 									["g"] = {
 										i(165720),	-- Monelite Whetstone
 										i(165880, {	-- Outpost Upgrade: Arom's Stand
-											["f"] = 55, -- Consumable; Might change to Misc later
+											["f"] = 55,	-- Consumable; Might change to Misc later
 										}),
 										i(165836, {	-- Outpost Upgrade: Brennadam
-											["f"] = 55, -- Consumable; Might change to Misc later
+											["f"] = 55,	-- Consumable; Might change to Misc later
 										}),
 										i(165873, {	-- Outpost Upgrade: Castaway Point
-											["f"] = 55, -- Consumable; Might change to Misc later
+											["f"] = 55,	-- Consumable; Might change to Misc later
 										}),
 										i(163043, {	-- Scouting Report: Grimwaatt's Crash
-											["f"] = 55, -- Consumable; Might change to Misc later
+											["f"] = 55,	-- Consumable; Might change to Misc later
 										}),
 										i(163044, {	-- Scouting Report: Mistvine Ledge
-											["f"] = 55, -- Consumable; Might change to Misc later
+											["f"] = 55,	-- Consumable; Might change to Misc later
 										}),
 										i(163047, {	-- Scouting Report: Mugamba Overlook
-											["f"] = 55, -- Consumable; Might change to Misc later
+											["f"] = 55,	-- Consumable; Might change to Misc later
 										}),
 										i(163048, {	-- Scouting Report: Veiled Grotto
-											["f"] = 55, -- Consumable; Might change to Misc later
+											["f"] = 55,	-- Consumable; Might change to Misc later
 										}),
 										i(163046, {	-- Scouting Report: Verdant Hollow
-											["f"] = 55, -- Consumable; Might change to Misc later
+											["f"] = 55,	-- Consumable; Might change to Misc later
 										}),
 										i(163041, {	-- Scouting Report: Vulture's Nest
-											["f"] = 55, -- Consumable; Might change to Misc later
+											["f"] = 55,	-- Consumable; Might change to Misc later
 										}),
 									},
 								},
@@ -795,7 +795,7 @@ _.Zones =
 			},
 			["lvl"] = 110,
 			["isRaid"] = true,
-			["achievementID"] = 12847, -- Siege of Boralus
+			["achievementID"] = 12847,	-- Siege of Boralus
 			["description"] = "|cff66ccffBoralus is the capital of the island city-state of Kul Tiras. It is located on the mouth of a river or strait running through Tiragarde Sound. Boralus is a safe port of call in unsafe waters. The outer wall hosts a marketplace that is second to none. Merchants from all over Azeroth dock here to trade their goods. For most visitors, the market is all they ever see of Boralus. Beyond the Great Gate lies the city proper, and very few outsiders are allowed inside.|r",
 		}),
 	}),

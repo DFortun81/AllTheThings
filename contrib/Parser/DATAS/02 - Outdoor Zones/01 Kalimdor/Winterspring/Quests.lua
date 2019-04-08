@@ -121,7 +121,7 @@ _.Zones =
 						["questID"] = 44952,
 						["qg"] = 11184,	-- Wixxrak
 						["coord"] = { 60.2, 50.2, 83 },
-						["requireSkill"] = 2477, -- Classic Blacksmithing
+						["requireSkill"] = 2477,	-- Classic Blacksmithing
 						["groups"] = {
 							i(142357),	-- Plans: Dawn's Edge
 						},

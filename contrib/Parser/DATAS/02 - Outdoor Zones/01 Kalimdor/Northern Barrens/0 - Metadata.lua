@@ -6,7 +6,7 @@ _.Zones =
 	m(12, {	-- Kalimdor
 		m(10, {	-- Northern Barrens
 			["maps"] = {
-				11, -- Wailing Caverns (Outside Instance)
+				11,	-- Wailing Caverns (Outside Instance)
 			},
 			["achievementID"] = 750,
 			["lvl"] = 10,

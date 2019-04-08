@@ -55,11 +55,11 @@ _.Zones =
 						["races"] = {10},
 					})),
 --]]
-					qh(769, { -- Kodo Hide Bag
-						["qg"] = 3050, -- Veren Tallstrider				
+					qh(769, {	-- Kodo Hide Bag
+						["qg"] = 3050,	-- Veren Tallstrider				
 						["requireSkill"] = 165,    -- Leatherworking
 						["groups"] = {
-							i(5083), -- Pattern: Kodo Hide Bag
+							i(5083),	-- Pattern: Kodo Hide Bag
 						},
 					}),
 --[[

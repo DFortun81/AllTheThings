@@ -690,7 +690,7 @@ _.Zones =
 					n(4368, {	-- Strashaz Myrmidon
 						["u"] = 43,
 						["groups"] = {
-							un(2, i(12718)), -- Plans: Runic Breastplate
+							un(2, i(12718)),	-- Plans: Runic Breastplate
 						},
 					}),
 					n(50901, {	-- Teromak

@@ -64,8 +64,8 @@ _.Zones =
 						}),
 						i(23639, {	-- Plans: Greater Ward of Shielding
 							["crs"] = {
-								18856, -- Arcane Annihilator
-								18853, -- Sunfury Bloodwarder
+								18856,	-- Arcane Annihilator
+								18853,	-- Sunfury Bloodwarder
 							},
 						}),
 						i(23610, {	-- Plans: Khorium Boots

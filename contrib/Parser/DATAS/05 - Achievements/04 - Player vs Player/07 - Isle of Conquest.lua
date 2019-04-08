@@ -12,9 +12,9 @@ To do:
 
 _.Achievements = 
 {
-	n(-9958, { -- Player vs Player
+	n(-9958, {	-- Player vs Player
 		["groups"] = {
-			n(-9988, { -- Isle of Conquest
+			n(-9988, {	-- Isle of Conquest
 				["groups"] = {
 					ach(3848),		-- A-bomb-inable
 					ach(3849),		-- A-bomb-ination

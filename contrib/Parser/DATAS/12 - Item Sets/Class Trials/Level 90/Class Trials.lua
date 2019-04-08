@@ -3,14 +3,14 @@
 -----------------------------------------------------
 _.GearSets = 
 {
-	n(-5350, { -- Class Trial Item Sets
+	n(-5350, {	-- Class Trial Item Sets
 		n(-137, {	-- Level 90
 			["description"] = "These are obtained by creating a Level 90 Class Trial for each class and specialization.",
 			["icon"] = "Interface\\Icons\\achievement_level_90",
 			["lvl"] = 90,
 			["groups"] = bubbleDown({["u"] = 2}, {
-				n(-9980, { -- Mists of Pandaria. This gear was awarded if you used your Lv90 boost before 6.0.1
-					n(-140, { -- Communal
+				n(-9980, {	-- Mists of Pandaria. This gear was awarded if you used your Lv90 boost before 6.0.1
+					n(-140, {	-- Communal
 						["groups"] = {
 							i(101172),	-- Communal Wand
 							n(-9915, {	-- Disc / Holy
@@ -50,7 +50,7 @@ _.GearSets =
 						},
 						["classes"] = { 5 }
 					}),
-					n(-145, { -- Mountainsage
+					n(-145, {	-- Mountainsage
 						["groups"] = {
 							i(101083),	-- Mountainsage Staff
 							i(101081),	-- Mountainsage Wand
@@ -71,7 +71,7 @@ _.GearSets =
 						},
 						["classes"] = { 8 }
 					}),
-					n(-141, { -- Felsoul 
+					n(-141, {	-- Felsoul 
 						["groups"] = {
 							i(101277),	-- Felsoul Staff
 							i(101275),	-- Felsoul Wand
@@ -92,11 +92,11 @@ _.GearSets =
 						},
 						["classes"] = { 9 }
 					}),
-					n(-147, { -- Springrain
+					n(-147, {	-- Springrain
 						["groups"] = {
 							i(101019),	-- Springrain Stave
 							i(101051),	-- Springrain StaFF
-							n(-9926, { -- Balance
+							n(-9926, {	-- Balance
 								i(101016),	-- Springrain Headpiece
 								i(101037),	-- Springrain Necklace
 								i(101042),	-- Springrain Cloak of Destruction
@@ -112,7 +112,7 @@ _.GearSets =
 								i(101023),	-- Springrain Idol of Destruction
 								i(101026),	-- Springrain Stone of Destruction
 							}),
-							n(-9925, { -- Feral
+							n(-9925, {	-- Feral
 								i(101032),	-- Springrain Spear
 								i(101030),	-- Springrain Helm
 								i(101008),	-- Springrain Choker
@@ -129,7 +129,7 @@ _.GearSets =
 								i(101009),	-- Springrain Idol of Rage
 								i(101012),	-- Springrain Stone of Rage
 							}),
-							n(-9927, { -- Restoration
+							n(-9927, {	-- Restoration
 								i(101046),	-- Springrain Hood
 								i(101022),	-- Springrain Medallion
 								i(101036),	-- Springrain Cloak of Wisdom
@@ -148,7 +148,7 @@ _.GearSets =
 						},
 						["classes"] = { 11 }
 					}),
-					n(-143, { -- Lightdrinker 
+					n(-143, {	-- Lightdrinker 
 						["groups"] = {
 							i(101212),	-- Lightdrinker Dagger
 							i(101214),	-- Lightdrinker Sword
@@ -170,7 +170,7 @@ _.GearSets =
 						},
 						["classes"] = { 4 }
 					}),
-					n(-144, { -- Mistdancer 
+					n(-144, {	-- Mistdancer 
 						["groups"] = {
 							i(101109),	-- Mistdancer Staff
 							i(101112),	-- Mistdancer Sword
@@ -217,7 +217,7 @@ _.GearSets =
 						},
 						["classes"] = { 10 }
 					}),
-					n(-150, { -- Trailseeker
+					n(-150, {	-- Trailseeker
 						["groups"] = {
 							i(101066),	-- Trailseeker Rifle
 							i(101061),	-- Trailseeker Helm
@@ -237,7 +237,7 @@ _.GearSets =
 						},
 						["classes"] = { 3 }
 					}),
-					n(-148, { -- Streamtalker
+					n(-148, {	-- Streamtalker
 						["classes"] = { 7 },	-- Shaman Only
 						["groups"] = {
 							{	-- Streamtalker Aegis [Elemental]
@@ -383,7 +383,7 @@ _.GearSets =
 							},
 						},
 					}),	
-					n(-149, { -- Sunsoul 
+					n(-149, {	-- Sunsoul 
 						["groups"] = {
 							i(101143),	-- Sunsoul Shield
 							i(101145),	-- Sunsoul FBulwark
@@ -441,7 +441,7 @@ _.GearSets =
 						},
 						["classes"] = { 2 }
 					}),
-					n(-146, { -- Oathsworn 
+					n(-146, {	-- Oathsworn 
 						["groups"] = {
 							i(101287),	-- Oathsworn Maul
 							i(101289),	-- Oathsworn Bulwark
@@ -482,7 +482,7 @@ _.GearSets =
 						},
 						["classes"] = { 1 }
 					}),	
-					n(-142, { -- Heart-Lesion 
+					n(-142, {	-- Heart-Lesion 
 						["groups"] = {
 							i(100976),	-- Heart-Lesion Maul
 							i(101006),	-- Heart-Lesion Hammer
@@ -523,8 +523,8 @@ _.GearSets =
 						["classes"] = { 6 }
 					}),
 				}),
-				n(-9981, { -- Work in Progress - Warlords of Draenor. This gear is awarded if you use your lv90 boost after 6.0.1
-					n(-140, { -- Communal
+				n(-9981, {	-- Work in Progress - Warlords of Draenor. This gear is awarded if you use your lv90 boost after 6.0.1
+					n(-140, {	-- Communal
 						["groups"] = {
 							n(-9915, {	-- Disc / Holy
 								i(117230),	-- Communal Staff
@@ -564,7 +564,7 @@ _.GearSets =
 						},
 						["classes"] = { 5 }
 					}),
-					n(-145, { -- Mountainsage
+					n(-145, {	-- Mountainsage
 						["groups"] = {
 							i(117126),	-- Mountainsage Staff
 							i(117124),	-- Mountainsage Wand
@@ -585,7 +585,7 @@ _.GearSets =
 						},
 						["classes"] = { 8 }
 					}),
-					n(-141, { -- Felsoul 
+					n(-141, {	-- Felsoul 
 						["groups"] = {
 							i(117320),	-- Felsoul Staff
 							i(117318),	-- Felsoul Wand
@@ -606,11 +606,11 @@ _.GearSets =
 						},
 						["classes"] = { 9 }
 					}),
-					n(-147, { -- Springrain
+					n(-147, {	-- Springrain
 						["groups"] = {
 							i(117062),	-- Springrain Stave
 							i(117094),	-- Springrain Staff
-							n(-9926, { -- Balance
+							n(-9926, {	-- Balance
 								i(117059),	-- Springrain Headpiece
 								i(117080),	-- Springrain Necklace
 								i(117085),	-- Springrain Cloak of Destruction
@@ -626,7 +626,7 @@ _.GearSets =
 								i(117066),	-- Springrain Idol of Destruction
 								i(117069),	-- Springrain Stone of Destruction
 							}),
-							n(-9925, { -- Feral
+							n(-9925, {	-- Feral
 								i(117075),	-- Springrain Spear
 								--	i(101030),	-- Springrain Helm
 								i(117051),	-- Springrain Choker
@@ -643,7 +643,7 @@ _.GearSets =
 								i(117052),	-- Springrain Idol of Rage
 								i(117055),	-- Springrain Stone of Rage
 							}),
-							n(-9927, { -- Restoration
+							n(-9927, {	-- Restoration
 								--	i(101046),	-- Springrain Hood
 								i(117065),	-- Springrain Medallion
 								i(117079),	-- Springrain Cloak of Wisdom
@@ -662,7 +662,7 @@ _.GearSets =
 						},
 						["classes"] = { 11 }
 					}),
-					n(-143, { -- Lightdrinker 
+					n(-143, {	-- Lightdrinker 
 						["groups"] = {
 							i(117255),	-- Lightdrinker Dagger
 							i(117257),	-- Lightdrinker Sword
@@ -684,7 +684,7 @@ _.GearSets =
 						},
 						["classes"] = { 4 }
 					}),
-					n(-144, { -- Mistdancer 
+					n(-144, {	-- Mistdancer 
 						["groups"] = {
 							i(117152),	-- Mistdancer Staff
 							i(117155),	-- Mistdancer Sword
@@ -731,7 +731,7 @@ _.GearSets =
 						},
 						["classes"] = { 10 }
 					}),
-					n(-150, { -- Trailseeker
+					n(-150, {	-- Trailseeker
 						["groups"] = {
 							i(117109),	-- Trailseeker Shotgun
 							i(117104),	-- Trailseeker Helm
@@ -751,7 +751,7 @@ _.GearSets =
 						},
 						["classes"] = { 3 }
 					}),
-					n(-148, { -- Streamtalker
+					n(-148, {	-- Streamtalker
 						["classes"] = { 7 },	-- Shaman Only
 						["groups"] = {
 							{	-- Streamtalker Aegis [Elemental]
@@ -897,7 +897,7 @@ _.GearSets =
 							},
 						},
 					}),
-					n(-149, { -- Sunsoul 
+					n(-149, {	-- Sunsoul 
 						["groups"] = {
 							--	i(101143),	-- Sunsoul Shield
 							--	i(101145),	-- Sunsoul Bulwark
@@ -956,7 +956,7 @@ _.GearSets =
 						},
 						["classes"] = { 2 }
 					}),
-					n(-146, { -- Oathsworn 
+					n(-146, {	-- Oathsworn 
 						["groups"] = {
 							--	i(101287),	-- Oathsworn Maul
 							--	i(101289),	-- Oathsworn Bulwark
@@ -999,7 +999,7 @@ _.GearSets =
 						},
 						["classes"] = { 1 }
 					}),	
-					n(-142, { -- Heart-Lesion 
+					n(-142, {	-- Heart-Lesion 
 						["groups"] = {
 							i(117019),	-- Heart-Lesion Greatsword
 							i(117049),	-- Heart-Lesion Runeblade

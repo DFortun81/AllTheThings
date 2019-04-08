@@ -287,7 +287,7 @@ _.Zones =
 							i(9965),	-- Warmonger's Pauldrons
 						},
 					}), 
-					n(107595, { -- Grimrot
+					n(107595, {	-- Grimrot
 						["coord"] = { 38.2, 45.4, 77 },
 						["description"] = "|cff66ccffThis is the daytime light grey bear model.|r",
 						["groups"] = {
@@ -303,7 +303,7 @@ _.Zones =
 							i(10252),	-- Master's Leggings
 						},
 					}), 
-					n(107596, { -- Grimrot
+					n(107596, {	-- Grimrot
 						["coord"] = { 38.2, 45.4, 77 },
 						["description"] = "|cff66ccffThis is the nightime black diseased bear model.|r",
 						["groups"] = {

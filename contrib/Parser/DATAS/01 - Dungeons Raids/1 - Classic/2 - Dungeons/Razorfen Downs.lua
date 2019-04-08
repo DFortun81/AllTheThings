@@ -158,7 +158,7 @@ _.Instances = { tier(1, {	-- Classic
 			})),
 			n(75813, {			-- Sah'rhee
 				["coords"] = {
-					{ 80.0, 26.0, 300 }, -- The Murder Pens
+					{ 80.0, 26.0, 300 },	-- The Murder Pens
 				},
 				["description"] = "Sah'rhee doesn't spawn in every instance run. Whenever he spawns, he's trackable as a green dot on the mini-map, and you click the body to start this optional boss.",
 				["groups"] = {

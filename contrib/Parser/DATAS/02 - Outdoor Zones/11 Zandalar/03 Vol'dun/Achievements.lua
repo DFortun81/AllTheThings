@@ -70,7 +70,7 @@ _.Zones =
 										129474,	-- Ranishu Ravager
 									},
 									["coords"] = {	-- Turn-In Location
-										{ 46.98, 46.63, 864 }, -- Court of Zak'rajan
+										{ 46.98, 46.63, 864 },	-- Court of Zak'rajan
 									},
 									["g"] = {
 										{	-- Charged Ranishu Antennae
@@ -162,7 +162,7 @@ _.Zones =
 										50891,	-- Item Turn-In
 									},
 									["coords"] = {
-										{ 49.33, 84.39, 864 }, -- The Eternal Spring
+										{ 49.33, 84.39, 864 },	-- The Eternal Spring
 									},
 									["crs"] = {	
 										134744,	-- Redrock Howler

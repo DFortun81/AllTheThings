@@ -38,7 +38,7 @@ _.Zones =
 							},
 						},
 					}),
-					n(-17, { -- Quests
+					n(-17, {	-- Quests
 						["groups"] = {
 							q(52428, {	-- Infusing the Heart		
 								["groups"] = {		
@@ -67,46 +67,46 @@ _.Zones =
 									i(159901),	-- Breastplate of the Champion
 									i(159905),	-- Breastplate of the Champion
 								},		
-								["qg"] = 136907, -- Magni Bronzebeard		
-								["sourceQuests"] = { 53028, 51211 }, -- The Heart of Azeroth (A/H)
+								["qg"] = 136907,	-- Magni Bronzebeard		
+								["sourceQuests"] = { 53028, 51211 },	-- The Heart of Azeroth (A/H)
 								["coord"] = { 50.3, 54.4 },
 							}),	
 							qh(53031, {	-- The Speaker's Imperative	
-								["qg"] = 136907, -- Magni Bronzebeard	
-								["sourceQuests"] = { 52428 }, -- Infusing the Heart	
+								["qg"] = 136907,	-- Magni Bronzebeard	
+								["sourceQuests"] = { 52428 },	-- Infusing the Heart	
 								["coord"] = { 50.1, 53.6 },
 							}),
-							qa(51403, { -- The Speaker's Imperative
-								["qg"] = 136907, -- Magni Bronzebeard	
-								["sourceQuests"] = { 52428 }, -- Infusing the Heart
+							qa(51403, {	-- The Speaker's Imperative
+								["qg"] = 136907,	-- Magni Bronzebeard	
+								["sourceQuests"] = { 52428 },	-- Infusing the Heart
 								["coord"] = { 50.1, 53.6 },
 							}),
 						},
 					}),
 					n(-2, {	-- Vendors
 						["groups"] = {
-							n(130216, { -- Magni Bronzebeard
+							n(130216, {	-- Magni Bronzebeard
 								["coords"] = {
 									{ 42.22, 44.27, 81 },
 								},
 								["groups"] = {
-									i(160544), -- Champions of Azeroth Tabard
+									i(160544),	-- Champions of Azeroth Tabard
 									i(163036, {	-- Polished Pet Charm
-										i(163555), -- Drop of Azerite
-										i(163515), -- Shard of Azerite
+										i(163555),	-- Drop of Azerite
+										i(163515),	-- Shard of Azerite
 									}),
-									i(161555), -- Azerothian Champion's Crown
-									i(161563), -- Helm of the Azerothian Champion
-									i(161560), -- Azerothian Champion's Spaulders
-									i(161557), -- Vest of the Azerothian Champion
-									i(160537), -- Drape of the Azerothian Champion
+									i(161555),	-- Azerothian Champion's Crown
+									i(161563),	-- Helm of the Azerothian Champion
+									i(161560),	-- Azerothian Champion's Spaulders
+									i(161557),	-- Vest of the Azerothian Champion
+									i(160537),	-- Drape of the Azerothian Champion
 								},
 							}),
 						},
 						["lvl"] = 120,
 					}),
 				},
-				["achievementID"] = 12918, -- Have a Heart
+				["achievementID"] = 12918,	-- Have a Heart
 				["lvl"] = 110,
 				["description"] = "|cff66ccffThe Chamber of Heart is a titan chamber at the heart of the world. It is accessed via the Titan Translocator in Silithus. Like the Hall of Communion, it is possible here to communicate with Azeroth, the world-soul of the planet. Magni brings a hero here at Azeroth's request to obtain the [Heart of Azeroth], a necklace that can gather the  [Azerite] - the planet's lifeblood - necessary to heal Azeroth's wounds. The seal on the chamber protects Azeroth's world-soul.|r",
 			}),

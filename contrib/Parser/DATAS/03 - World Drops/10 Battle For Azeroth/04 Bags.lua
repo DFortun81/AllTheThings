@@ -5,7 +5,7 @@ _.WorldDrops =
 {
 	{
 		["groups"] = {
-			filter(113, { -- Bags
+			filter(113, {	-- Bags
 				i(154695),	-- Deep Sea Bag
 			}),
 		},

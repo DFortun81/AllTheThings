@@ -3,7 +3,7 @@
 -------------------------------------------------------------------
 _.ExpansionFeatures =
 {
-	n(-9966, { -- Draenor Garrisons
+	n(-9966, {	-- Draenor Garrisons
 		m(582, {	-- Lunarfall
 			["groups"] = {	
 				n(-113, { 	-- Salvage Yard
@@ -122,10 +122,10 @@ _.ExpansionFeatures =
 								i(119581),
 								i(119583),
 								i(119584),
-								i(119585), -- Mistdancer Handguards
+								i(119585),	-- Mistdancer Handguards
 								i(119586),
 								i(119587),
-								i(119588), -- Mistdancer Pauldrons
+								i(119588),	-- Mistdancer Pauldrons
 								i(119589),
 								i(119590),
 								i(119602),
@@ -356,7 +356,7 @@ _.ExpansionFeatures =
 								i(119557),
 								i(119558),
 								i(119559),
-								i(119556), -- Trailseeker Spaulders
+								i(119556),	-- Trailseeker Spaulders
 							},
 							["classes"] = {3}
 						}),

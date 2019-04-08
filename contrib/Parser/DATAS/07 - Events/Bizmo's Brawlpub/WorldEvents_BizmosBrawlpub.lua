@@ -3,7 +3,7 @@
 -----------------------------------------------------
 _.WorldEvents =
 {
-	n(-496, { -- Bizmo's Brawlpub
+	n(-496, {	-- Bizmo's Brawlpub
 		["groups"] = {	
 			n(-17, { 	-- Quests
 				q(55022, {	-- SOlving the mystery
@@ -33,20 +33,20 @@ _.WorldEvents =
 						i(98091),	-- Last Seasons Shirt
 						i(98092),	-- Digmaster's Bodysleeve
 						i(98093),	-- Sightless Mantle
-						i(144391, { -- Pugilist's Powerful Punching Ring
+						i(144391, {	-- Pugilist's Powerful Punching Ring
 							["races"] = ALLIANCE_ONLY,
 						}),
 						i(167811),  -- Brawlers Guild Tabard
 						{ -- Ensemble: Brawlers Garb
 							["groups"] = {
-								i(167817), -- Brawler's Headgear
-								i(167819), -- Brawler's Shoulderpads
-								i(167813), -- Brawler's Harness
-								i(167821), -- Brawler's Bracer Chains
-								i(167816), -- Brawler's Gloves
-								i(167820), -- Brawler's Heavy Belt
-								i(167818), -- Brawler's Leggings
-								i(167815), -- Brawler's Footpads
+								i(167817),	-- Brawler's Headgear
+								i(167819),	-- Brawler's Shoulderpads
+								i(167813),	-- Brawler's Harness
+								i(167821),	-- Brawler's Bracer Chains
+								i(167816),	-- Brawler's Gloves
+								i(167820),	-- Brawler's Heavy Belt
+								i(167818),	-- Brawler's Leggings
+								i(167815),	-- Brawler's Footpads
 							},
 							["ignoreBonus"] = true,
 							["itemID"] = 167891,

@@ -19,7 +19,7 @@ _.Zones =
 						crit(8),		-- Skeer the Bloodseeker
 						crit(10),		-- Xaril the Poisoned Mind
 					}),
-					ach(7284, { -- Is Another Man's Treasure
+					ach(7284, {	-- Is Another Man's Treasure
 						o(213972, {		-- Blade of the Poisoned Mind
 							["groups"] = {
 								i(86527),	-- Blade of the Poisoned Mind
@@ -112,19 +112,19 @@ _.Zones =
 					ach(7314),	-- Test Drive (Dread Wastes)
 				}),
 				n(-228, {	-- Flight Points
-					fp(1070, { -- Klaxxi'vess, Dread Wastes
+					fp(1070, {	-- Klaxxi'vess, Dread Wastes
 						["coord"] = { 55.8, 34.8 },
 					}),
-					fp(1071, { -- Soggy's Gamble, Dread Wastes
+					fp(1071, {	-- Soggy's Gamble, Dread Wastes
 						["coord"] = { 56, 70.2 },
 					}),
-					fp(1090, { -- The Briny Muck, Dread Wastes
+					fp(1090, {	-- The Briny Muck, Dread Wastes
 						["coord"] = { 42.6, 55.6 },
 					}),
-					fp(1115, { -- The Lion's Redoubt, Dread Wastes
+					fp(1115, {	-- The Lion's Redoubt, Dread Wastes
 						["coord"] = { 12, 32.8 },
 					}),
-					fp(1072, { -- The Sunset Brewgarden, Dread Wastes
+					fp(1072, {	-- The Sunset Brewgarden, Dread Wastes
 						["coord"] = { 50.2, 12.2 },
 					}),
 				}),
@@ -136,12 +136,12 @@ _.Zones =
 					p(743), 	-- Rapana Whelk
 					p(744), 	-- Resilient Roach
 					p(741), 	-- Silent Hedgehog
-					qr(q(31957, { -- Grand Master Shu
+					qr(q(31957, {	-- Grand Master Shu
 						i(89125),	-- Sack of Pet Supplies
 					})),
-					qr(q(32439, { -- Flowing Pandaren Spirit
+					qr(q(32439, {	-- Flowing Pandaren Spirit
 						["groups"] = {
-							i(93147, { -- Pandaren Spirit Pet Supplies
+							i(93147, {	-- Pandaren Spirit Pet Supplies
 								i(89139),	-- Chain Pet Leash
 								i(44820),	-- Red Ribbon Pet Leash
 								i(90173),	-- Pandaren Water Spirit
@@ -150,8 +150,8 @@ _.Zones =
 						["description"] = "Must complete the quest Pandaren Spirit Tamer before this Daily becomes available.|r",
 					})),
 				}),
-				n(-38, { -- Profession
-					prof(356, { -- Fishing
+				n(-38, {	-- Profession
+					prof(356, {	-- Fishing
 						desc(i(94932), "The Tiny Red Carp can be fished up from Spinefish Schools. Additionally, it can be caught by casting into the Fish of the Day in Kun-Lai Summit.|nAnother way to obtain this pet is by fishing from open Sha-Touched water in Dread Wastes, Kun-Lai Summit, The Jade Forest (Widow's Wail only), and Townlong Steppes.|r"),	-- Tiny Red Carp Pet
 						desc(i(94935), "The Tiny White Carp can be fished up from Giant Mantis Shrimp Swarms, Reef Octopus Swarms, and Tiger Gourami Schools. Additionally, it can be caught by casting into the Fish of the Day in the Dread Wastes, Kun-Lai Summit, and The Jade Forest.|nAnother way to obtain this pet is by fishing in open water, mainly on the coast of most zones. For inland open water fishing, head to Kun-Lai Summit or The Veiled Stair.|r"),	-- Tiny White Carp Pet
 					}),
@@ -409,7 +409,7 @@ _.Zones =
 							i(84027),	-- Coldbite Warboots
 						},
 						["qg"] = 62667,	-- Lya of Ten Songs
-						["sourceQuests"] = { 31022 }, -- Kypari Zar
+						["sourceQuests"] = { 31022 },	-- Kypari Zar
 					}),
 					q(32439, {	-- Flowing Pandaren Spirit
 						["qg"] = 68462,	-- FLowing Pandaren Spirit
@@ -432,7 +432,7 @@ _.Zones =
 							i(84009),	-- Coldbite Chestpiece
 						},
 						["qg"] = 63349,	-- Deck Boss Arie
-						["sourceQuests"] = { 31727 }, -- Gambling Problem
+						["sourceQuests"] = { 31727 },	-- Gambling Problem
 					}),
 					q(31727, {	-- Gambling Problem
 						["qg"] = 64599,	-- Ambersmith Zikk
@@ -450,7 +450,7 @@ _.Zones =
 								i(84633),	-- Sunset Heavy Chestpiece
 								i(84634),	-- Sunst Armored Chestpiece
 							},
-							["sourceQuests"] = { 31022 }, -- Kypari Zar
+							["sourceQuests"] = { 31022 },	-- Kypari Zar
 						}),
 					}),
 					q(31082, {	-- Great Vessel of Salvation
@@ -458,7 +458,7 @@ _.Zones =
 					}),
 					q(31078, {	-- Han Stormstout
 						["qg"] = 67138,	-- Chen Stormstout
-						["sourceQuests"] = { 31077 }, -- Evie Stormstout
+						["sourceQuests"] = { 31077 },	-- Evie Stormstout
 					}),
 					--q(32497),	-- Honor the Flame
 					q(31071, {	-- I Bring Us Great Shame
@@ -473,7 +473,7 @@ _.Zones =
 					}),
 					o(213973, {	-- Klaxxi Sonic Relay
 						q(31010, {	-- In Her Clutch
-							["sourceQuests"] = { 31009 }, -- Dead Zone
+							["sourceQuests"] = { 31009 },	-- Dead Zone
 						}),
 					}),
 					q(31133, {	-- Kor'thik Aggression
@@ -508,7 +508,7 @@ _.Zones =
 					}),
 					q(31354, {	-- Mazu's Bounty
 						["qg"] = 63349,	-- Deck Boss Arie
-						["sourceQuests"] = { 31022 }, -- Kypari Zar
+						["sourceQuests"] = { 31022 },	-- Kypari Zar
 					}),
 					q(31265, {	-- Mazu's Breath
 						["qg"] = 63349,	-- Deck Boss Arie
@@ -583,7 +583,7 @@ _.Zones =
 					}),
 					q(31004, {	-- Preserved in Amber
 						["qg"] = 62203,	-- Klaxxi'va Tik
-						["sourceQuests"] = { 31003 }, -- Psycho Mantid
+						["sourceQuests"] = { 31003 },	-- Psycho Mantid
 					}),
 					q(31083, {	-- Promises of Gold
 						["groups"] = {
@@ -675,7 +675,7 @@ _.Zones =
 							i(90858),	-- Seal of the Prime
 						},
 						["qg"] = 62538,	-- Kil'ruk the Wind-Reaver
-						["sourceQuests"] = { 31609 }, -- The Wrath of Shek'zeer
+						["sourceQuests"] = { 31609 },	-- The Wrath of Shek'zeer
 					}),
 					q(31188, {	-- Shark Week
 						["qgs"] = {
@@ -717,7 +717,7 @@ _.Zones =
 							i(84054),	-- Coldbite Bracers
 						},
 						["qg"] = 65253,	-- Rik'kal the Dissector
-						["sourceQuests"] = { 31605 }, -- The Zan'thik Dig
+						["sourceQuests"] = { 31605 },	-- The Zan'thik Dig
 					}),
 					q(31007, {	-- The Dread Clutches
 						["qg"] = 62538,	-- Kil'ruk the Wind-Reaver
@@ -734,7 +734,7 @@ _.Zones =
 					}),
 					q(31067, {	-- The Heavens Hum With War
 						["qg"] = 62666,	-- Sapmaster Vu
-						["sourceQuests"] = { 31730 }, -- A Not So Friendly Request
+						["sourceQuests"] = { 31730 },	-- A Not So Friendly Request
 					}),
 					q(31079, {	-- The Horror Comes A-Rising
 						["groups"] = {
@@ -767,7 +767,7 @@ _.Zones =
 					}),
 					q(31359, {	-- The Kunchong Whisperer
 						["qg"] = 64344,	-- Kaz'tik the Manipulator
-						["sourceQuests"] = { 31091 }, -- Reunited
+						["sourceQuests"] = { 31091 },	-- Reunited
 					}),
 					q(31190, {	-- The Mariner's Revenge
 						["groups"] = {
@@ -808,7 +808,7 @@ _.Zones =
 							i(84079),	-- Badge of Kypari Zar
 						},
 						["qgs"] = { 62232, 63328 },	-- Klaxxi Warrior (2 versions)
-						["sourceQuests"] = { 31022 }, -- Kypari Zar
+						["sourceQuests"] = { 31022 },	-- Kypari Zar
 					}),
 					q(31269, {	-- The Scale-Lord
 						["qg"] = 62180,	-- Korven the Prime
@@ -834,7 +834,7 @@ _.Zones =
 					}),
 					q(31609, {	-- The Wrath of Shek'zeer
 						["qg"] = 64599,	-- Ambersmith Zikk
-						["sourceQuests"] = { 31959 }, -- The Empress' Gambit
+						["sourceQuests"] = { 31959 },	-- The Empress' Gambit
 					}),
 					q(31605, {	-- The Zan'thik Dig
 						["qg"] = 64815,	-- Kor'ik
@@ -869,7 +869,7 @@ _.Zones =
 					}),
 					q(31074, {	-- Wood and Shade
 						["qg"] = 62667,	-- Lya of Ten Songs
-						["sourceQuests"] = { 31072 }, -- Rending Daggers
+						["sourceQuests"] = { 31072 },	-- Rending Daggers
 					}),
 					q(31182, {	-- You Otter Know
 						["qg"] = 63349,	-- Deck Boss Arie
@@ -892,10 +892,10 @@ _.Zones =
 						}),
 						dr(8, i(87633)),	-- Sharksin Armor
 					}),
-					n(66935, { -- Clamstok
-						i(90170, { -- Clamstok's Clamshell
-							i(90172), -- Clamshell Band
-							i(90087), -- Lobstmourne
+					n(66935, {	-- Clamstok
+						i(90170, {	-- Clamstok's Clamshell
+							i(90172),	-- Clamshell Band
+							i(90087),	-- Lobstmourne
 						}),
 					}),
 					n(50334, { 		-- Dak the Breaker

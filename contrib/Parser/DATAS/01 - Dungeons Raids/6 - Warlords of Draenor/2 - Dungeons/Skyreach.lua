@@ -8,7 +8,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 		["maps"] = { 601, 602 },
 		["coord"] = { 35.58, 33.6, 542 },	-- Spires of Arak, Draenor
 		["groups"] = {
-			n(-1, { -- Common Boss Drop
+			n(-1, {	-- Common Boss Drop
 				["crs"] = {
 					75964,	-- Ranjit
 					76141,	-- Araknath

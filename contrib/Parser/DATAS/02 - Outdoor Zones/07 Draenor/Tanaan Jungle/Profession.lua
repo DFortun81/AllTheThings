@@ -19,7 +19,7 @@ _.Zones =
 									{	-- Disturbed Podling
 										["npcID"] = 95132,	-- Disturbed Podling
 										["g"] = {
-											i(118595), -- Nightshade Sproutling
+											i(118595),	-- Nightshade Sproutling
 										},
 									},
 								},

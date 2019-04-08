@@ -5,11 +5,11 @@
 _.Zones =
 {
 	m(905, { 	-- Argus
-		m(885, { -- Antoran Wastes
+		m(885, {	-- Antoran Wastes
 			["groups"] = {
 				n(-4, { 	-- Achievement
-					ach(12074, { -- Shoot First, Loot Later
-						o(277205, { -- Ancient Legion War Cache
+					ach(12074, {	-- Shoot First, Loot Later
+						o(277205, {	-- Ancient Legion War Cache
 							["groups"] = {
 								i(153308), --Unyielding Peacekeeper's Cudgel
 							},
@@ -19,7 +19,7 @@ _.Zones =
 							["model"] = "World\\Expansion06\\Doodads\\Eredar\\7er_Ancient_RaidChest01.mdx",
 							["modelScale"] = 2.5,
 						}),
-						o(277207, { -- Legion Treasure Hoard
+						o(277207, {	-- Legion Treasure Hoard
 							["groups"] = {
 								i(153291), --Spectral Censorite's Staff
 							},
@@ -61,7 +61,7 @@ _.Zones =
 				}),
 				n(-25, {	-- Pet Battle
 					["groups"] = {
-						ach(12088, { -- Anomalous Animals of Argus
+						ach(12088, {	-- Anomalous Animals of Argus
 							["groups"] = {
 								{
 									["achievementID"] = 12088,	-- Anomalous Animals of Argus
@@ -96,12 +96,12 @@ _.Zones =
 							},
 							["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 						}),
-						ach(12100, { -- Family Fighter
+						ach(12100, {	-- Family Fighter
 							["groups"] = {
-								i(153040, { -- Felclaw Marsuul
+								i(153040, {	-- Felclaw Marsuul
 									["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 								}),
-								ach(12089, { -- Aquatic Assault
+								ach(12089, {	-- Aquatic Assault
 									["groups"]	= {
 										{
 											["achievementID"] = 12089,	-- Aquatic Assault
@@ -136,7 +136,7 @@ _.Zones =
 									},
 									["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 								}),
-								ach(12091, { -- Beast Blitz
+								ach(12091, {	-- Beast Blitz
 									["groups"] = {
 										{
 											["achievementID"] = 12091,	-- Aquatic Assault
@@ -171,7 +171,7 @@ _.Zones =
 									},
 									["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 								}),				
-								ach(12092, { -- Critical Critters
+								ach(12092, {	-- Critical Critters
 									["groups"] = {
 										{
 											["achievementID"] = 12092,	-- Aquatic Assault
@@ -206,7 +206,7 @@ _.Zones =
 									},
 									["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 								}),				
-								ach(12093, { -- Draconic Destruction
+								ach(12093, {	-- Draconic Destruction
 									["groups"] = {
 										{
 											["achievementID"] = 12093,	-- Aquatic Assault
@@ -241,7 +241,7 @@ _.Zones =
 									},
 									["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 								}),				
-								ach(12094, { -- Elemental Escalation
+								ach(12094, {	-- Elemental Escalation
 									["groups"] = {
 										{
 											["achievementID"] = 12094,	-- Aquatic Assault
@@ -276,7 +276,7 @@ _.Zones =
 									},
 									["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 								}),				
-								ach(12095, { -- Fierce Fliers
+								ach(12095, {	-- Fierce Fliers
 									["groups"]	= {
 										{
 											["achievementID"] = 12095,	-- Aquatic Assault
@@ -311,7 +311,7 @@ _.Zones =
 									},
 									["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 								}),				
-								ach(12096, { -- Humanoid Havoc
+								ach(12096, {	-- Humanoid Havoc
 									["groups"] = {
 										{
 											["achievementID"] = 12096,	-- Aquatic Assault
@@ -346,7 +346,7 @@ _.Zones =
 									},
 									["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 								}),				
-								ach(12097, { -- Magical Mayhem
+								ach(12097, {	-- Magical Mayhem
 									["groups"] = {
 										{
 											["achievementID"] = 12097,	-- Aquatic Assault
@@ -381,7 +381,7 @@ _.Zones =
 									},
 									["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 								}),				
-								ach(12098, { -- Mechanical Melee
+								ach(12098, {	-- Mechanical Melee
 									["groups"] = {
 										{
 											["achievementID"] = 12098,	-- Aquatic Assault
@@ -416,7 +416,7 @@ _.Zones =
 									},
 									["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 								}),				
-								ach(12099, { -- Unstoppable Undead
+								ach(12099, {	-- Unstoppable Undead
 									["groups"] = {
 										{
 											["achievementID"] = 12099,	-- Aquatic Assault
@@ -509,8 +509,8 @@ _.Zones =
 					{	-- A Colorful Key
 						["questID"] = 48075,	-- A Colorful Key
 						["qg"] = 125343,		-- Vorel
-						["requireSkill"] = 755, -- Jewelcrafting
-						["sourceQuests"] = { 46941 }, -- The Path Forward
+						["requireSkill"] = 755,	-- Jewelcrafting
+						["sourceQuests"] = { 46941 },	-- The Path Forward
 						["g"] = {
 							{	-- Design: Deadly Deep Chemirine
 								["itemID"] = 151736,	-- Design: Deadly Deep Chemirine
@@ -529,7 +529,7 @@ _.Zones =
 					{	-- A Crowning Achievement
 						["questID"] = 48076,	--  A Crowning Achievment
 						["qg"] = 125343,		-- Vorel
-						["requireSkill"] = 755, -- Jewelcrafting
+						["requireSkill"] = 755,	-- Jewelcrafting
 						["sourceQuests"] = {
 							48075,	-- A Colorful Key
 						},
@@ -652,9 +652,9 @@ _.Zones =
 					},
 				}),
 				n(-16, { 	-- Rares
-					n(127090, { -- Admiral Rel'var
+					n(127090, {	-- Admiral Rel'var
 						["groups"] = {
-							i(153324), -- Mac'Aree Vigilant's Bastion
+							i(153324),	-- Mac'Aree Vigilant's Bastion
 							i(152886),	--Zealous Felslinger's Visage
 							i(152888),	--Zealous Felslinger's Epaulets
 							i(152884),	--Zealous Felslinger's Robe
@@ -666,54 +666,54 @@ _.Zones =
 						},
 						["questID"] = 48817,
 					}),
-					n(127096, { -- All-Seer Xanarian
+					n(127096, {	-- All-Seer Xanarian
 						["groups"] = {
-							i(153123), -- Cracked Radinax Control Gem (Green Item)
+							i(153123),	-- Cracked Radinax Control Gem (Green Item)
 						},
 						["questID"] = 48818,
 					}),
-					n(122958, { -- Blistermaw
+					n(122958, {	-- Blistermaw
 						["groups"] = {
-							i(152905), -- Crimson Slavermaw
+							i(152905),	-- Crimson Slavermaw
 						},
 						["questID"] = 49183,
 						["modelScale"] = 0.80,
 					}),
-					n(127376, { -- Chief Alchemist Munculus
+					n(127376, {	-- Chief Alchemist Munculus
 						["groups"] = {
-							i(153113), -- Demon's Soulstone
+							i(153113),	-- Demon's Soulstone
 						},
 						["questID"] = 48865,
 					}),
-					n(127084, { -- Commander Texlaz
+					n(127084, {	-- Commander Texlaz
 						["groups"] = {
-							i(153123), -- Cracked Radinax Control Gem (Green Item)
+							i(153123),	-- Cracked Radinax Control Gem (Green Item)
 						},
 						["questID"] = 48816,
 					}),
-					n(127703, { -- Doomcaster Suprax
+					n(127703, {	-- Doomcaster Suprax
 						["groups"] = {
-							i(153194), -- Legion Communication Orb
+							i(153194),	-- Legion Communication Orb
 						},
 						["questID"] = 48968,
 						["description"] = "Located at |cFFFFFFFF58.0, 12.0|r.  He takes three people to summon by standing on each of the runes.  He will give you a debuff that will instantly kill you (ignore immunities) unless you kill him before it expires or you walk into Doom Starts.",
 					}),
-					n(122999, { -- Gar'zoth
+					n(122999, {	-- Gar'zoth
 						["groups"] = {
-							i(153113), -- Demon's Soulstone
+							i(153113),	-- Demon's Soulstone
 						},
 						["questID"] = 49241,
 					}),
-					n(127288, { -- Houndmaster Kerrax
+					n(127288, {	-- Houndmaster Kerrax
 						["groups"] = {
-							i(152790), -- Vile Fiend
+							i(152790),	-- Vile Fiend
 						},
 						["questID"] = 48821,
 						["modelScale"] = 0.73,
 					}),
-					n(126946, { -- Inquisitor Vethroz
+					n(126946, {	-- Inquisitor Vethroz
 						["groups"] = {
-							i(151543), -- Technique: Glyph of Fel-Touched Shards
+							i(151543),	-- Technique: Glyph of Fel-Touched Shards
 						},
 						["questID"] = 48815,
 					}),
@@ -819,13 +819,13 @@ _.Zones =
 						["questID"] = 48389,
 						["isDaily"] = true,
 					}),
-					n(126254, { -- Lieutenant Xakaar
+					n(126254, {	-- Lieutenant Xakaar
 						["groups"] = {
-							i(153113), -- Demon's Soulstone
+							i(153113),	-- Demon's Soulstone
 						},
 						["questID"] = 48813,
 					}),
-					n(122947, { -- Mistress Il'thendra
+					n(122947, {	-- Mistress Il'thendra
 						["groups"] = {
 							i(153327),	-- Mystic Wakener's Dagger
 							i(152946),	-- World-Defiler's Casque
@@ -839,32 +839,32 @@ _.Zones =
 						},
 						["questID"] = 49240,
 					}),
-					n(127705, { -- Mother Rosula
+					n(127705, {	-- Mother Rosula
 						["groups"] = {
 							desc(i(152999), "Use 100 of these to create a Disgusting Feast."),
 							desc(i(153013, {	-- Disgusting Feast
-								i(153252), -- Rebellious Imp
+								i(153252),	-- Rebellious Imp
 							}), "Use this at the fel lava pit inside of the cave to summon Mother Rosula. Gather imp meat from the imps inside the cave. You need 100 to create this item."),
 						},
 						["description"] = "Cave Location is |cFFFFFFFF65.5, 26.6|r\n\nIn order to summon Mother Rosula you will need to collect 100 |cFFFFD700Imp Meat|r and then you will combine them together to create the |cFFFFD700Disgusting Feast|r.  You will then use this item to summon her.\n\nThe pool you summon her at is directly in front of the second Imp Mother.",
 						["questID"] = 48970,
 						["modelScale"] = 0.63,
 					}),
-					n(126040, { -- Puscilla
+					n(126040, {	-- Puscilla
 						["groups"] = { 
-							i(152903), -- Biletooth Gnasher Mount
+							i(152903),	-- Biletooth Gnasher Mount
 						},
 						["questID"] = 48809,
 					}),
-					n(127700, { -- Squadron Commander Vishax
+					n(127700, {	-- Squadron Commander Vishax
 						["groups"] = {
-							i(153253), -- S.F.E. Interceptor
+							i(153253),	-- S.F.E. Interceptor
 						},
 						["description"] = "In order to summon this boss you need to combine the |cFFFFD700Smashed Portal Generator|r with |cFFFFD700Conductive Sheath|r, |cFFFFD700Arc Circuit|r and |cFFFFD700Power Cell|r to create the |cFFFFD700Vishax's Portal Generator|r.  You will need to do this only once.\n\nOnce you creat the item you will be given the quest |cFFFFD700Commander on Deck|r to go to coordinates |cFFFFFFFF77.55, 74.75|r.\n\nThe parts drop off the elite mobs that are on board the Terminus docks and ship.  There is a portal that will be located at |cFFFFFFFF80.50, 62.70|r that will allow you to go on to the ship.",
 						["questID"] = 48967,
 						["modelScale"] = 0.63,
 					}),
-					n(127581, { -- The Many-Faced Devourer
+					n(127581, {	-- The Many-Faced Devourer
 						["groups"] = {
 							{
 								["itemID"] = 152786,	-- Call of the Devourer
@@ -891,35 +891,35 @@ _.Zones =
 									},
 								},
 							},
-							i(153195), -- Uuna's Doll
+							i(153195),	-- Uuna's Doll
 						},
 						["questID"] = 48966,
 						["description"] = "In order to summon this mob you will need to obtain the following items.\n\nFirst you must collect |cFFFFD700Call of the Devourer|r by killing npc's in the |cFFFFD700Scavenger's Boneyard|r located at |cFFFFFFFF55,39|r.\n\nOnce you have obtained this item you can then find the next three pieces located at the following locations:\n\n|cFFFFD700Fiend Bone|r is located at |cFFFFFFFF52.34,35.33|r behind a fel pool at Scavenger's Boneyard (Get this one first so the pile at the end doesn't bug).\n\n|cFFFFD700Imp Bone|r located at |cFFFFFFFF65.89, 19.42|r in the |cFFFFD700Den of Fens|r in the same cave system as Mother Rosula (cave entrance |cFFFFFFFF65.86,26.96|r). This bone is located on the ground that is in front of the second Imp Mother's fel pool.\n\n|cFFFFD700Ur'zul Bone|r located at |cFFFFFFFF50.39, 56.15|r next to an altar and a large bone spine protruding from the ground.\n\nOnce you have all four of these items you can head to |cFFFFFFFF54,38|r where you will see a marked green spot in the pile of bones.  You will interact with the bones to create the item which will summon this mob. If you do not see the pile then relog for it to unbug.\n\nNote: Once you summon him you will no longer need to collect the items.  The bone pile will be clickable each time after that.",
 						["modelScale"] = 0.63,
 					}),
-					n(126208, { -- Varga
+					n(126208, {	-- Varga
 						["groups"] = {
-							i(153190, { -- Fel-Spotted Egg
-								i(153191, { -- Cracked Fel-Spotted Egg
-									dr(7.25, i(152843)), -- Darkspore Mana Ray Mount
-									dr(7.25, i(152841)), -- Felglow Mana Ray Mount
-									dr(7.25, i(152840)), -- Scintillating Mana Ray Mount
-									dr(7.25, i(152842)), -- Vibrant Mana Ray Mount
-									dr(22, i(153054)), -- Docile Skyfin Pet
-									dr(22, i(153055)), -- Fel-Afflicted Skyfin Pet
+							i(153190, {	-- Fel-Spotted Egg
+								i(153191, {	-- Cracked Fel-Spotted Egg
+									dr(7.25, i(152843)),	-- Darkspore Mana Ray Mount
+									dr(7.25, i(152841)),	-- Felglow Mana Ray Mount
+									dr(7.25, i(152840)),	-- Scintillating Mana Ray Mount
+									dr(7.25, i(152842)),	-- Vibrant Mana Ray Mount
+									dr(22, i(153054)),	-- Docile Skyfin Pet
+									dr(22, i(153055)),	-- Fel-Afflicted Skyfin Pet
 								}),
 							}),
 						},
 						["questID"] = 48812,
 						["modelScale"] = 0.63,
 					}),
-					n(126115, { -- Ven'orn
+					n(126115, {	-- Ven'orn
 						["groups"] = {
-							i(153113), -- Demon's Soulstone
+							i(153113),	-- Demon's Soulstone
 						},
 						["questID"] = 48811,
 					}),
-					n(127300, { -- Void Warden Valsuran
+					n(127300, {	-- Void Warden Valsuran
 						["groups"] = {
 							i(153319),	-- Ardent Vindicator's Greatmace
 							i(152886),	-- Zealous Felslinger's Visage
@@ -933,19 +933,19 @@ _.Zones =
 						},
 						["questID"] = 48824,
 					}),
-					n(126199, { -- Vrax'thul
+					n(126199, {	-- Vrax'thul
 						["groups"] = {
-							i(152903), -- Biletooth Gnasher Mount
+							i(152903),	-- Biletooth Gnasher Mount
 						},
 						["questID"] = 48810,	
 					}),
-					n(127291, { -- Watcher Aival
+					n(127291, {	-- Watcher Aival
 						["groups"] = {
-							i(153113), -- Demon's Soulstone
+							i(153113),	-- Demon's Soulstone
 						},
 						["questID"] = 48822,
 					}),
-					n(127118, { -- Worldsplitter Skuul
+					n(127118, {	-- Worldsplitter Skuul
 						["groups"] = {
 							i(153312),	-- Praetor's Ornamental Greatsword
 							i(152886),	-- Zealous Felslinger's Visage
@@ -959,16 +959,16 @@ _.Zones =
 						},
 						["questID"] = 48820,
 					}),
-					n(126338, { -- Wrath-Lord Yarez
+					n(126338, {	-- Wrath-Lord Yarez
 						["groups"] = {
-							i(153126), -- Micro-Artillery Controller
+							i(153126),	-- Micro-Artillery Controller
 						},
 						["questID"] = 48814,
 						["modelScale"] = 0.65,	
 					}),
 				}),
 				n(-2, { 	-- Vendors
-					n(128134, { -- Orix the All-Seer
+					n(128134, {	-- Orix the All-Seer
 						["coord"] = { 59.54, 44.98 },
 						["groups"] = {
 							i(153021, {	-- Intact Demon Eye
@@ -986,11 +986,11 @@ _.Zones =
 									i(153226, {	-- Observer's Locus Resonator
 										["f"] = 0,	-- Not Miscellaneous
 										["groups"] = {
-											n(127706, { -- Rezira the Seer
+											n(127706, {	-- Rezira the Seer
 												["description"] = "In order to reach this rare you must either use the Observer's Locus Resonator purchaseable from Orix the All-Seer or use someone else's portal.",
 												["questID"] = 48971,
 												["groups"] = {
-													i(153293), -- Sightless Eye
+													i(153293),	-- Sightless Eye
 												},
 											}),
 										},
@@ -1006,10 +1006,10 @@ _.Zones =
 				}),
 				n(-34, { 	-- World Quests
 					["groups"] = {
-						n(-322, { -- Cloak
-							i(150988), -- Twisted-Ritualist's Shawl
+						n(-322, {	-- Cloak
+							i(150988),	-- Twisted-Ritualist's Shawl
 						}),
-						n(-43, { -- Cloth
+						n(-43, {	-- Cloth
 							i(150980),	-- Doomsinger Cap
 							i(150987),	-- Doomsinger Amice
 							i(150985),	-- Doomsinger Robes
@@ -1019,7 +1019,7 @@ _.Zones =
 							i(150986),	-- Doomsinger Leggings
 							i(150984),	-- Doomsinger Slippers
 						}),
-						n(-44, { -- Leather
+						n(-44, {	-- Leather
 							i(150969),	-- Stygian Mask
 							i(150970),	-- Stygian Shoulderguards
 							i(150968),	-- Stygian Vest
@@ -1029,7 +1029,7 @@ _.Zones =
 							i(150971),	-- Stygian Trousers
 							i(150967),	-- Stygian Boots
 						}),
-						n(-45, { -- Mail
+						n(-45, {	-- Mail
 							i(150975),	-- Nath'raxxan Coif
 							i(150979),	-- Nath'raxxan Spaulders
 							i(150978),	-- Nath'raxxan Chestguard
@@ -1039,7 +1039,7 @@ _.Zones =
 							i(150974),	-- Nath'raxxan Leggings
 							i(150976),	-- Nath'raxxan Boots
 						}),
-						n(-46, { -- Plate
+						n(-46, {	-- Plate
 							i(150957),	-- Garothi Helmet
 							i(150960),	-- Garothi Pauldrons
 							i(150958),	-- Garothi Breastplate
@@ -1056,160 +1056,160 @@ _.Zones =
 				}),
 				n(0, { 		-- Zone Drop
 					["groups"] = {
-						n(-318, { -- Armor
-							i(152740, { -- Unsullied Cloak
-								i(152778), -- Conservatory Ward's Drape
+						n(-318, {	-- Armor
+							i(152740, {	-- Unsullied Cloak
+								i(152778),	-- Conservatory Ward's Drape
 							}),
-							i(152738, { -- Unsullied Cloth Cap
-								i(152770), -- Azurelight Sage's Cap
+							i(152738, {	-- Unsullied Cloth Cap
+								i(152770),	-- Azurelight Sage's Cap
 							}),
-							i(152734, { -- Unsullied Cloth Mantle
-								i(152777), -- Azurelight Sage's Mantle
+							i(152734, {	-- Unsullied Cloth Mantle
+								i(152777),	-- Azurelight Sage's Mantle
 							}),
-							i(153135, { -- Unsullied Cloth Robes
-								i(152775), -- Azurelight Sage's Robes
+							i(153135, {	-- Unsullied Cloth Robes
+								i(152775),	-- Azurelight Sage's Robes
 							}),
-							i(152742, { -- Unsullied Cloth Cuffs
-								i(152773), -- Azurelight Sage's Cuffs
+							i(152742, {	-- Unsullied Cloth Cuffs
+								i(152773),	-- Azurelight Sage's Cuffs
 							}),
-							i(153141, { -- Unsullied Cloth Mitts
-								i(152771), -- Azurelight Sage's Mitts
+							i(153141, {	-- Unsullied Cloth Mitts
+								i(152771),	-- Azurelight Sage's Mitts
 							}),
-							i(153156, { -- Unsullied Cloth Sash
-								i(152772), -- Azurelight Sage's Sash
+							i(153156, {	-- Unsullied Cloth Sash
+								i(152772),	-- Azurelight Sage's Sash
 							}),
-							i(153154, { -- Unsullied Cloth Leggings
-								i(152776), -- Azurelight Sage's Leggings
+							i(153154, {	-- Unsullied Cloth Leggings
+								i(152776),	-- Azurelight Sage's Leggings
 							}),
-							i(153144, { -- Unsullied Cloth Slippers
-								i(152774), -- Azurelight Sage's Slippers
+							i(153144, {	-- Unsullied Cloth Slippers
+								i(152774),	-- Azurelight Sage's Slippers
 							}),
 							i(153139,{ --Unsullied Leather Headgear	
-								i(152759), -- Arinor Keeper's Headgear
+								i(152759),	-- Arinor Keeper's Headgear
 							}),	
 							i(153145,{ --Unsullied Leather Spaulders	
-								i(152760), -- Arinor Keeper's Spaulders
+								i(152760),	-- Arinor Keeper's Spaulders
 							}),	
 							i(153151,{ --Unsullied Leather Tunic	
-								i(152758), -- Arinor Keeper's Tunic
+								i(152758),	-- Arinor Keeper's Tunic
 							}),	
 							i(153142,{ --Unsullied Leather Armbands	
-								i(152754), -- Arinor Keeper's Armbands
+								i(152754),	-- Arinor Keeper's Armbands
 							}),	
 							i(152739,{ --Unsullied Leather Grips	
-								i(152755), -- Arinor Keeper's Grips
+								i(152755),	-- Arinor Keeper's Grips
 							}),	
 							i(153148,{ --Unsullied Leather Belt	
-								i(152756), -- Arinor Keeper's Belt
+								i(152756),	-- Arinor Keeper's Belt
 							}),	
 							i(152737,{ --Unsullied Leather Trousers	
-								i(152761), -- Arinor Keeper's Trousers
+								i(152761),	-- Arinor Keeper's Trousers
 							}),	
 							i(153136,{ --Unsullied Leather Treads	
-								i(152757), -- Arinor Keeper's Treads
+								i(152757),	-- Arinor Keeper's Treads
 							}),	
 							i(153147,{ --Unsullied Mail Coif	
-								i(152765), -- Oronaar Disciple's Coif
+								i(152765),	-- Oronaar Disciple's Coif
 							}),	
 							i(153137,{ --Unsullied Mail Spaulders	
-								i(152769), -- Oronaar Disciple's Spaulders
+								i(152769),	-- Oronaar Disciple's Spaulders
 							}),	
 							i(152741,{ --Unsullied Mail Chestguard	
-								i(152768), -- Oronaar Disciple's Chestguard
+								i(152768),	-- Oronaar Disciple's Chestguard
 							}),	
 							i(153158,{ --Unsullied Mail Bracers	
-								i(152762), -- Oronaar Disciple's Bracers
+								i(152762),	-- Oronaar Disciple's Bracers
 							}),	
 							i(153149,{ --Unsullied Mail Gloves	
-								i(152763), -- Oronaar Disciple's Gloves
+								i(152763),	-- Oronaar Disciple's Gloves
 							}),	
 							i(152744,{ --Unsullied Mail Girdle	
-								i(152767), -- Oronaar Disciple's Girdle
+								i(152767),	-- Oronaar Disciple's Girdle
 							}),	
 							i(153138,{ --Unsullied Mail Legguards	
-								i(152764), -- Oronaar Disciple's Legguards
+								i(152764),	-- Oronaar Disciple's Legguards
 							}),	
 							i(153152,{ --Unsullied Mail Boots	
-								i(152766), -- Oronaar Disciple's Boots
+								i(152766),	-- Oronaar Disciple's Boots
 							}),	
 							i(153155,{ --Unsullied Plate Helmet	
-								i(152747), -- Praetorium Guard's Helmet
+								i(152747),	-- Praetorium Guard's Helmet
 							}),	
 							i(153153,{ --Unsullied Plate Pauldrons	
-								i(152750), -- Praetorium Guard's Pauldrons
+								i(152750),	-- Praetorium Guard's Pauldrons
 							}),	
 							i(153143,{ --Unsullied Plate Breasplate	
-								i(152748), -- Praetorium Guard's Breastplate
+								i(152748),	-- Praetorium Guard's Breastplate
 							}),	
 							i(153150,{ --Unsullied Plate Vambraces	
-								i(152752), -- Praetorium Guard's Vambraces
+								i(152752),	-- Praetorium Guard's Vambraces
 							}),	
 							i(153157,{ --Unsullied Plate Gauntlets	
-								i(152751), -- Praetorium Guard's Gauntlets
+								i(152751),	-- Praetorium Guard's Gauntlets
 							}),	
 							i(153140,{ --Unsullied Plate Waistplate	
-								i(152749), -- Praetorium Guard's Waitsplate
+								i(152749),	-- Praetorium Guard's Waitsplate
 							}),	
 							i(153146,{ --Unsullied Plate Greaves	
-								i(152746), -- Praetorium Guard's Greaves
+								i(152746),	-- Praetorium Guard's Greaves
 							}),	
 							i(152743,{ --Unsullied Plate Sabatons	
-								i(152753), -- Praetorium Guard's Sabatons
+								i(152753),	-- Praetorium Guard's Sabatons
 							}),
 						}),
-						prof(356, { -- Fishing
-							i(152912), -- Pond Nettle [Note: Fishing]
+						prof(356, {	-- Fishing
+							i(152912),	-- Pond Nettle [Note: Fishing]
 						}),
 					},
 					["description"] = "|cFFFFD700Pond Nettle|r can be fished up from the fel waters of Argus.\n\n|cFFFFD700Unsullied tokens|r can drop off any mob, rare or treasure chest in the zone.\n\nTreasure items can drop from treasure chests only.",
 				}),
 				n(-74, { 	-- Zone Wide
 					["groups"] = {
-						n(-4, { -- Achievements
-							model(79440, ach(12103, { -- ...And Chew Mana Buns
-								i(153041), -- Bleakhoof Ruinstrider
+						n(-4, {	-- Achievements
+							model(79440, ach(12103, {	-- ...And Chew Mana Buns
+								i(153041),	-- Bleakhoof Ruinstrider
 							})),
 							ach(12104, {	-- And We're All Out of Mana Buns
 								title(367),		-- Demonslayer
 							}),
-							ach(12078, { -- Commander of Argus
-								i(152396, { -- Arsenal: Weapons of the Lightforged
-									i(152332), -- Brilliant Daybreak Aegis
-									i(152337), -- Brilliant Daybreak Blade
-									i(152334), -- Brilliant Eventide Aegis
-									i(152339), -- Brilliant Eventide Blade
-									i(152333), -- Lustrous Daybreak Aegis
-									i(152336), -- Lustrous Daybreak Blade
-									i(152340), -- Lustrous Daybreak Greatsword
-									i(152342), -- Lustrous Daybreak Staff
-									i(152335), -- Lustrous Eventide Aegis
-									i(152338), -- Lustrous Eventide Blade
-									i(152341), -- Lustrous Eventide Greatsword
-									i(152343), -- Lustrous Eventide Staff
+							ach(12078, {	-- Commander of Argus
+								i(152396, {	-- Arsenal: Weapons of the Lightforged
+									i(152332),	-- Brilliant Daybreak Aegis
+									i(152337),	-- Brilliant Daybreak Blade
+									i(152334),	-- Brilliant Eventide Aegis
+									i(152339),	-- Brilliant Eventide Blade
+									i(152333),	-- Lustrous Daybreak Aegis
+									i(152336),	-- Lustrous Daybreak Blade
+									i(152340),	-- Lustrous Daybreak Greatsword
+									i(152342),	-- Lustrous Daybreak Staff
+									i(152335),	-- Lustrous Eventide Aegis
+									i(152338),	-- Lustrous Eventide Blade
+									i(152341),	-- Lustrous Eventide Greatsword
+									i(152343),	-- Lustrous Eventide Staff
 								}),
 							}),
-							ach(12100, { -- Family Fighter
-								i(153040), -- Felclaw Marsuul
+							ach(12100, {	-- Family Fighter
+								i(153040),	-- Felclaw Marsuul
 							}),
-							ach(12083, { -- Paragon of Argus
-								title(366), -- the Lightbringer
+							ach(12083, {	-- Paragon of Argus
+								title(366),	-- the Lightbringer
 							}),
 						}),
-						prof(182, { -- Herb Gathering
+						prof(182, {	-- Herb Gathering
 							["groups"] = {
-								i(153045), -- Fel Lasher (WOWHEAD DATA says only from Astral Glory on Mac'Aree, but comments say otherwise)
+								i(153045),	-- Fel Lasher (WOWHEAD DATA says only from Astral Glory on Mac'Aree, but comments say otherwise)
 							},
 							["description"] = "|cff66ccffThis pet can be found when gathering Argus herbs.|r",
 						}),
-						prof(393, { -- Skinning
-							i(153057), -- Fossorial Bile Larva
+						prof(393, {	-- Skinning
+							i(153057),	-- Fossorial Bile Larva
 						}),
 					},
 					["description"] = "These are activities that are done across all three Argus Zones",
 					["icon"] = "Interface\\Icons\\achievement_dungeon_argusdungeon",
 				}), 
 			},
-			["achievementID"] = 12103, -- ...And Chew Mana Buns
+			["achievementID"] = 12103,	-- ...And Chew Mana Buns
 			["lvl"] = 110,
 			["description"] = "This zone serves as one of three zones on Argus and hosts the raid Antorus, the Burning Throne, dominating the western half of the zone. It is located inside the rift that bisects Argus.",
 		}),

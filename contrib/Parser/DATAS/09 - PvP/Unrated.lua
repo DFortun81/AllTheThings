@@ -3,7 +3,7 @@
 -----------------------------------------------
 _.PVP =
 {
-	n(-242, { -- Unrated
+	n(-242, {	-- Unrated
 		n(-3158, {	-- Player vs. Player (Battle for Azeroth Season 1)
 			["g"] = bubbleDown({["modID"] = 8}, {
 				{	-- Dread Aspirant's Badge
@@ -870,55 +870,55 @@ _.PVP =
 			["description"] = "|cff66ccffRewarded for winning a random battleground in the level 100-109 range, or Ashran quests.|r",
 			["lvl"] = 100,
 			["groups"] = {
-				i(135578), -- Battle Touched Banner
-				i(135568), -- Battle Touched Blood of the Fallen
-				i(135574), -- Battle Touched Blossom
-				i(135573), -- Battle Touched Chain Link
-				i(135565), -- Battle Touched Elemental Spark
-				i(135571), -- Battle Touched Ember
-				i(135576), -- Battle Touched Fetish
-				i(135570), -- Battle Touched Helfrost
-				i(135569), -- Battle Touched Infernal Shard
-				i(135572), -- Battle Touched Martyr Stone
-				i(134696), -- Cascading Amice
-				i(134694), -- Cascading Cord
-				i(134697), -- Cascading Cuffs
-				i(134695), -- Cascading Trousers
-				i(134714), -- Crushing Armplates
-				i(134711), -- Crushing Girdle
-				i(134712), -- Crushing Legguards
-				i(134713), -- Crushing Pauldrons
-				i(134692), -- Enveloping Accolade
-				i(134715), -- Enveloping Badge
-				i(134716), -- Enveloping Cloak
-				i(134698), -- Enveloping Distinction
-				i(134709), -- Enveloping Pendant
-				i(134707), -- Surging Armbands
-				i(134705), -- Surging Chain Leggings
-				i(134706), -- Surging Spaulders
-				i(134704), -- Surging Waistguard
-				i(134700), -- Swarming Belt
-				i(134703), -- Swarming Bindings
-				i(134701), -- Swarming Legguards
-				i(134702), -- Swarming Shoulders
+				i(135578),	-- Battle Touched Banner
+				i(135568),	-- Battle Touched Blood of the Fallen
+				i(135574),	-- Battle Touched Blossom
+				i(135573),	-- Battle Touched Chain Link
+				i(135565),	-- Battle Touched Elemental Spark
+				i(135571),	-- Battle Touched Ember
+				i(135576),	-- Battle Touched Fetish
+				i(135570),	-- Battle Touched Helfrost
+				i(135569),	-- Battle Touched Infernal Shard
+				i(135572),	-- Battle Touched Martyr Stone
+				i(134696),	-- Cascading Amice
+				i(134694),	-- Cascading Cord
+				i(134697),	-- Cascading Cuffs
+				i(134695),	-- Cascading Trousers
+				i(134714),	-- Crushing Armplates
+				i(134711),	-- Crushing Girdle
+				i(134712),	-- Crushing Legguards
+				i(134713),	-- Crushing Pauldrons
+				i(134692),	-- Enveloping Accolade
+				i(134715),	-- Enveloping Badge
+				i(134716),	-- Enveloping Cloak
+				i(134698),	-- Enveloping Distinction
+				i(134709),	-- Enveloping Pendant
+				i(134707),	-- Surging Armbands
+				i(134705),	-- Surging Chain Leggings
+				i(134706),	-- Surging Spaulders
+				i(134704),	-- Surging Waistguard
+				i(134700),	-- Swarming Belt
+				i(134703),	-- Swarming Bindings
+				i(134701),	-- Swarming Legguards
+				i(134702),	-- Swarming Shoulders
 			},
 		}),
-		i(126919, { -- Champion's Strongbox [Alliance]
+		i(126919, {	-- Champion's Strongbox [Alliance]
 			["u"] = 2,
 		}),		
-		i(126920, { -- Champion's Strongbox [Horde]
+		i(126920, {	-- Champion's Strongbox [Horde]
 			["u"] = 2,	
 		}),		
-		i(126923, { -- Champion's Strongbox [Alliance]
+		i(126923, {	-- Champion's Strongbox [Alliance]
 			["u"] = 2,	
 		}),		
-		i(126924, { -- Champion's Strongbox [Horde]
+		i(126924, {	-- Champion's Strongbox [Horde]
 			["u"] = 2,	
 		}),		
-		i(138469, { -- Champion's Strongbox [Alliance]
+		i(138469, {	-- Champion's Strongbox [Alliance]
 			["u"] = 2,	
 		}),		
-		i(138474, { -- Champion's Strongbox	[Horde]
+		i(138474, {	-- Champion's Strongbox	[Horde]
 			["u"] = 2,	
 		}),
 		i(151557),	-- Champion's Strongbox [Alliance]

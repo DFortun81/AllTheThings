@@ -103,7 +103,7 @@ _.GroupFinder =
 			})),
 			un(2, i(128803, {	-- Savage Satchel of Cooperation
 				["groups"] = {
-					i(127799, { -- Baleful Pendant
+					i(127799, {	-- Baleful Pendant
 						i(124612),	-- Discordant Amulet
 						i(124611),	-- Discordant Collar
 						i(124609),	-- Embittered Locket
@@ -119,7 +119,7 @@ _.GroupFinder =
 						i(124618),	-- Unfailing Cloak
 						i(124617),	-- Unfailing Mantle
 					}),
-					i(127798, { -- Baleful Ring
+					i(127798, {	-- Baleful Ring
 						i(124598),	-- Arduous Band
 						i(124604),	-- Arduous Circle
 						i(124596),	-- Arduous Hoop

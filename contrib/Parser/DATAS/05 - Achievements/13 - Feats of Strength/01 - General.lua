@@ -4,9 +4,9 @@
 
 _.Achievements =
 {
-	n(-9969, { -- Feats of Strength
+	n(-9969, {	-- Feats of Strength
 		["groups"] = {
-			n(-9955, { -- General
+			n(-9955, {	-- General
 				["groups"] = {
 					ach(11137, {	-- A Legendary Campaign
 						crit(1),	-- Death Knight
@@ -37,7 +37,7 @@ _.Achievements =
 					ach(12445, {	-- Allied Races: Highmountain Tauren
 						["groups"] = {
 							ach(10059),	-- Ain't No Mountain High Enough
-							faction(1828), -- Highmountain Tribe
+							faction(1828),	-- Highmountain Tribe
 							q(48433, {	-- Together We Are the Horde!
 								i(155662),	-- Highmountain Thunderhoof
 							}),
@@ -49,7 +49,7 @@ _.Achievements =
 					ach(12448, {	-- Allied Races: Lightforged Draenei
 						["groups"] = {
 							ach(12066),	-- You Are Now Prepared!
-							faction(2165), -- Army of the Light
+							faction(2165),	-- Army of the Light
 							q(50071, {	-- For the Light!
 								i(155656),	-- Lightforged Felcrusher
 							}),
@@ -73,7 +73,7 @@ _.Achievements =
 					ach(12446, {	-- Allied Races: Nightborne
 						["groups"] = {
 							ach(11340),	-- Insurrection
-							faction(1859), -- The Nightfallen
+							faction(1859),	-- The Nightfallen
 							q(49614, {	-- The Nightborne
 								i(156487),	-- Nightborne Manasaber
 							}),
@@ -85,7 +85,7 @@ _.Achievements =
 					ach(12447, {	-- Allied Races: Void Elf
 						["groups"] = {
 							ach(12066),	-- You Are Now Prepared!
-							faction(2170), -- Argussian Reach
+							faction(2170),	-- Argussian Reach
 							q(48962, {	-- Telogrus Rift
 								i(156486),	-- Starcursed Voidstrider
 							}),

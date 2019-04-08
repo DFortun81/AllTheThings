@@ -90,7 +90,7 @@ _.WorldEvents =
 									i(45859),	-- The 5 Ring
 								}),
 							}),
-							i(44113, { -- Small Spice Bag
+							i(44113, {	-- Small Spice Bag
 								i(34834),	-- Recipe: Captain Rumsey's Lager
 								i(33925),	-- Recipe: Delicious Chocolate Cake
 								i(33871),	-- Recipe: Stormchops

@@ -3,9 +3,9 @@
 -----------------------------------------------------
 _.GearSets = 
 {
-	gsh(1522, { -- Allied Races
+	gsh(1522, {	-- Allied Races
 		["groups"] = {
-			gs(1742, { -- Heritage of the Zandalari
+			gs(1742, {	-- Heritage of the Zandalari
 				["groups"] = {
 				{	-- Zandalari Mask
 					["itemID"] = 164993,	-- Zandalari Mask

@@ -3,7 +3,7 @@
 -------------------------------------------------------------------
 _.ExpansionFeatures =
 {
-	n(-9966, { -- Draenor Garrisons
+	n(-9966, {	-- Draenor Garrisons
 		m(582, {	-- Lunarfall
 			["groups"] = {	
 				n(-2, { 	-- Vendors
@@ -214,7 +214,7 @@ _.ExpansionFeatures =
 									["buildingID"] = 40,	-- Lumber Mill
 								}),
 								i(111960, {	-- Lunarfall Inn, Level 1 [Building must be attached in order for the blueprint to be collectible]
-									["buildingID"] = 34, -- Lunarfall Inn / Frostwall Tavern
+									["buildingID"] = 34,	-- Lunarfall Inn / Frostwall Tavern
 								}),
 								i(111965, {	-- Mage Tower, Level 1 [Building must be attached in order for the blueprint to be collectible]
 									["buildingID"] = 37,	-- Mage Tower / Spirit Lodge
@@ -382,22 +382,22 @@ _.ExpansionFeatures =
 					}),
 					n(-125, {	-- Dwarven Bunker
 						n(77377, {	-- Kristen Stoneforge <Quartermaster>
-							i(113681, { -- Iron Horde Scraps
+							i(113681, {	-- Iron Horde Scraps
 								["groups"] = {
-									i(113821, { -- Battered Iron Horde Helmet
+									i(113821, {	-- Battered Iron Horde Helmet
 										i(113801),	-- Shadowmoon Cowl
 										i(113817),	-- Warsong Hood
 										i(113793),	-- Thunderlord Helm
 										i(113809),	-- Blackrock Greathelm
 										i(117406),	-- Stormwind Helm
 									}),
-									i(113823, { -- Crusted Iron Horde Pauldrons
+									i(113823, {	-- Crusted Iron Horde Pauldrons
 										i(113803),	-- Shadowmoon Shoulderguards
 										i(113819),	-- Warsong Spaulders
 										i(113811),	-- Blackrock Pauldrons
 										i(117407),	-- Stormwind Shoulderguards
 									}),
-									i(113822, { -- Ravaged Iron Horde Belt
+									i(113822, {	-- Ravaged Iron Horde Belt
 										i(113797),	-- Shadowmoon Sash
 										i(113813),	-- Warsong Cord
 										i(113789),	-- Thunderlord Girdle
@@ -553,14 +553,14 @@ _.ExpansionFeatures =
 					}),
 					n(-112, { 	-- Mengerie
 						n(94512, { 		-- Tiffy Trapspring <Exotic Pets and Accessories>
-							i(116415, { -- Pet Charm
-								i(127704), -- Bloodthorn Hatchling
-								i(127703), -- Dusty Sporewing
-								i(127701), -- Glowing Sporebat
-								i(127707), -- Indestructible Bone
-								i(127705), -- Lost Netherpup
-								i(127696), -- Magic Pet Mirror
-								i(127695), -- Spirit Wand
+							i(116415, {	-- Pet Charm
+								i(127704),	-- Bloodthorn Hatchling
+								i(127703),	-- Dusty Sporewing
+								i(127701),	-- Glowing Sporebat
+								i(127707),	-- Indestructible Bone
+								i(127705),	-- Lost Netherpup
+								i(127696),	-- Magic Pet Mirror
+								i(127695),	-- Spirit Wand
 							}),
 						}),
 					}),					
@@ -602,17 +602,17 @@ _.ExpansionFeatures =
 					--[[	Moved to Holidays > Trial of Style with the other vendors
 					n(-115, {	-- Storehouse
 						n(85291, {	-- Warpweaver Tuviss <Transmogrifier>
-							un(22, i(151134, { -- Trial of Style Token
-								i(151116), -- Fashionable Undershirt
+							un(22, i(151134, {	-- Trial of Style Token
+								i(151116),	-- Fashionable Undershirt
 								{ -- Ensemble: Mana-Etched  Regalia
 									["groups"] = {
-										un(22, i(151885)), -- Mana-Etched Crown
-										un(22, i(151886)), -- Mana-Etched Spaulders
-										un(22, i(151882)), -- Mana-Etched Vestments
-										un(22, i(151884)), -- Mana-Etched Gloves
-										un(22, i(151887)), -- Glpyh-Lined Sash
-										un(22, i(151883)), -- Mana-Etched Pantaloons
-										un(22, i(151888)), -- Sigil-Laced Boots
+										un(22, i(151885)),	-- Mana-Etched Crown
+										un(22, i(151886)),	-- Mana-Etched Spaulders
+										un(22, i(151882)),	-- Mana-Etched Vestments
+										un(22, i(151884)),	-- Mana-Etched Gloves
+										un(22, i(151887)),	-- Glpyh-Lined Sash
+										un(22, i(151883)),	-- Mana-Etched Pantaloons
+										un(22, i(151888)),	-- Sigil-Laced Boots
 									},
 									["ignoreBonus"] = true,
 									["itemID"] = 151117,
@@ -620,13 +620,13 @@ _.ExpansionFeatures =
 								},
 								{ -- Ensemble: Obsidian Prowler's Garb
 									["groups"] = {
-										un(22, i(151891)), -- Savage Mask of the Lynx Lord
-										un(22, i(151889)), -- Sun-Gilded Shouldercaps
-										un(22, i(151895)), -- Chestguard of the Proweler
-										un(22, i(151892)), -- Predatory Gloves
-										un(22, i(151894)), -- Epoch's Whispering Cinch
-										un(22, i(151893)), -- Mennu's Scaled Leggings
-										un(22, i(151890)), -- Silent-Strider Kneeboots
+										un(22, i(151891)),	-- Savage Mask of the Lynx Lord
+										un(22, i(151889)),	-- Sun-Gilded Shouldercaps
+										un(22, i(151895)),	-- Chestguard of the Proweler
+										un(22, i(151892)),	-- Predatory Gloves
+										un(22, i(151894)),	-- Epoch's Whispering Cinch
+										un(22, i(151893)),	-- Mennu's Scaled Leggings
+										un(22, i(151890)),	-- Silent-Strider Kneeboots
 									},
 									["ignoreBonus"] = true,
 									["itemID"] = 151118,
@@ -634,14 +634,14 @@ _.ExpansionFeatures =
 								},
 								{ -- Ensemble: Der'izu Armor
 									["groups"] = {
-										un(22, i(151898)), -- Der'izu Helm
-										un(22, i(151896)), -- Der'izu Spaulders
-										un(22, i(151901)), -- Der'izu Chestpiece
-										un(22, i(151902)), -- Der'izu Bracer
-										un(22, i(151900)), -- Der'izu Fists
-										un(22, i(151903)), -- Der'izu Belt
-										un(22, i(151897)), -- Der'izu Legguards
-										un(22, i(151899)), -- Der'izu Greaves
+										un(22, i(151898)),	-- Der'izu Helm
+										un(22, i(151896)),	-- Der'izu Spaulders
+										un(22, i(151901)),	-- Der'izu Chestpiece
+										un(22, i(151902)),	-- Der'izu Bracer
+										un(22, i(151900)),	-- Der'izu Fists
+										un(22, i(151903)),	-- Der'izu Belt
+										un(22, i(151897)),	-- Der'izu Legguards
+										un(22, i(151899)),	-- Der'izu Greaves
 									},
 									["ignoreBonus"] = true,
 									["itemID"] = 151119,
@@ -649,14 +649,14 @@ _.ExpansionFeatures =
 								},
 								{ -- Ensemble: Righteous Battleplate
 									["groups"] = {
-										un(22, i(151906)), -- Helm of the Righteous
-										un(22, i(151904)), -- Spaulders of the Righteous
-										un(22, i(151908)), -- Breastlate of the Righteous
-										un(22, i(151911)), -- Bracers of Dignity
-										un(22, i(151907)), -- Gauntlets of the Righteous
-										un(22, i(151910)), -- Girdle of Valorous Deeds
-										un(22, i(151905)), -- Legplates of the Righteous
-										un(22, i(151909)), -- Boots of the Righteous Path
+										un(22, i(151906)),	-- Helm of the Righteous
+										un(22, i(151904)),	-- Spaulders of the Righteous
+										un(22, i(151908)),	-- Breastlate of the Righteous
+										un(22, i(151911)),	-- Bracers of Dignity
+										un(22, i(151907)),	-- Gauntlets of the Righteous
+										un(22, i(151910)),	-- Girdle of Valorous Deeds
+										un(22, i(151905)),	-- Legplates of the Righteous
+										un(22, i(151909)),	-- Boots of the Righteous Path
 									},
 									["ignoreBonus"] = true,
 									["itemID"] = 151120,
@@ -750,8 +750,8 @@ _.ExpansionFeatures =
 					}),
 					--]]
 					n(-117, { 		-- The Forge
-						n(77359, { -- Auria Irondreamer
-							i(115356, { -- Draenor Blacksmithing
+						n(77359, {	-- Auria Irondreamer
+							i(115356, {	-- Draenor Blacksmithing
 								{	-- Recipe: Smoldering Breastplate
 									["itemID"] = 116727,	-- Recipe: Smoldering Breastplate
 								},
@@ -766,28 +766,28 @@ _.ExpansionFeatures =
 									["itemID"] = 120129,	-- Recipe: Secrets of Draenor Blacksmithing
 								},
 							}),
-							i(118720, { -- Secret of Draenor Blacksmithing
-								i(119329), -- Recipe: Soul of the Forge
-								i(120262), -- Recipe: Steelforged Aegis
-								i(120260), -- Recipe: Steelforged Axe
-								i(116731), -- Recipe: Steelforged Dagger
-								i(116745), -- Recipe: Steelforged Essence
-								i(116729), -- Recipe: Steelforged Greataxe
-								i(116732), -- Recipe: Steelforged Hammer
-								i(116730), -- Recipe: Steelforged Saber
-								i(116733), -- Recipe: Steelforged Shield
-								i(116740), -- Recipe: Truesteel Armguards
-								i(116741), -- Recipe: Truesteel Boots
-								i(116739), -- Recipe: Truesteel Breastplate
-								i(116743), -- Recipe: Truesteel Essence
-								i(116738), -- Recipe: Truesteel Gauntlets
-								i(116737), -- Recipe: Truesteel Greaves
-								i(116734), -- Recipe: Truesteel Grinder
-								i(116736), -- Recipe: Truesteel Helm
-								i(116735), -- Recipe: Truesteel Pauldrons
-								i(118044), -- Recipe: Truesteel Reshaper
-								i(116742), -- Recipe: Truesteel Waistguard
-								desc(i(116764), "This item contains 1-5 gold. DON'T WASTE YOUR SECRETS!\n\nSide note: This gold counts toward gold-looting achievements. (Got My Mind on My Money, etc.)"), -- Small Pouch of Coins
+							i(118720, {	-- Secret of Draenor Blacksmithing
+								i(119329),	-- Recipe: Soul of the Forge
+								i(120262),	-- Recipe: Steelforged Aegis
+								i(120260),	-- Recipe: Steelforged Axe
+								i(116731),	-- Recipe: Steelforged Dagger
+								i(116745),	-- Recipe: Steelforged Essence
+								i(116729),	-- Recipe: Steelforged Greataxe
+								i(116732),	-- Recipe: Steelforged Hammer
+								i(116730),	-- Recipe: Steelforged Saber
+								i(116733),	-- Recipe: Steelforged Shield
+								i(116740),	-- Recipe: Truesteel Armguards
+								i(116741),	-- Recipe: Truesteel Boots
+								i(116739),	-- Recipe: Truesteel Breastplate
+								i(116743),	-- Recipe: Truesteel Essence
+								i(116738),	-- Recipe: Truesteel Gauntlets
+								i(116737),	-- Recipe: Truesteel Greaves
+								i(116734),	-- Recipe: Truesteel Grinder
+								i(116736),	-- Recipe: Truesteel Helm
+								i(116735),	-- Recipe: Truesteel Pauldrons
+								i(118044),	-- Recipe: Truesteel Reshaper
+								i(116742),	-- Recipe: Truesteel Waistguard
+								desc(i(116764), "This item contains 1-5 gold. DON'T WASTE YOUR SECRETS!\n\nSide note: This gold counts toward gold-looting achievements. (Got My Mind on My Money, etc.)"),	-- Small Pouch of Coins
 							}),
 							{	-- Plans: Blackrock Crucibles and Their Uses
 								["itemID"] = 108421,	-- Plans: Blackrock Crucibles and Their Uses
@@ -805,43 +805,43 @@ _.ExpansionFeatures =
 					}),
 					n(-118, { 		-- The Tannery
 						na(77383, { 	-- Anders Longstitch
-							i(115358, { -- Draenor Leatherworking
+							i(115358, {	-- Draenor Leatherworking
 								recipe(171391),	-- Burnished Leather
-								i(116319), -- Recipe: Journeying Helm
-								i(116320), -- Recipe: Journeying Robes
-								i(116321), -- Recipe: Journeying Slacks
-								i(120130), -- Recipe: Secrets of Draenor Leatherworking
-								i(116322), -- Recipe: Traveling Helm
-								i(116324), -- Recipe: Traveling Leggings
-								i(116323), -- Recipe: Traveling Tunic
+								i(116319),	-- Recipe: Journeying Helm
+								i(116320),	-- Recipe: Journeying Robes
+								i(116321),	-- Recipe: Journeying Slacks
+								i(120130),	-- Recipe: Secrets of Draenor Leatherworking
+								i(116322),	-- Recipe: Traveling Helm
+								i(116324),	-- Recipe: Traveling Leggings
+								i(116323),	-- Recipe: Traveling Tunic
 							}),
-							i(118721, { -- Secret of Draenor Leatherworking
-								i(116328), -- Recipe: Brilliant Burnished Cloak
-								i(116345), -- Recipe: Burnished Essence
-								i(116349), -- Recipe: Burnished Inscription Bag
-								i(116347), -- Recipe: Burnished Leather Bag
-								i(116348), -- Recipe: Burnished Mining Bag
-								i(120258), -- Recipe: Drums of Fury
-								i(116325), -- Recipe: Leather Refurbishing Kit
-								i(116327), -- Recipe: Nimble Burnished Cloak
-								i(116326), -- Recipe: Powerful Burnished Cloak
-								i(116350), -- Recipe: Riding Harness
-								i(116335), -- Recipe: Supple Boots
-								i(116334), -- Recipe: Supple Bracers
-								i(116332), -- Recipe: Supple Gloves
-								i(116330), -- Recipe: Supple Helm
-								i(116331), -- Recipe: Supple Leggings
-								i(116329), -- Recipe: Supple Shoulderguards
-								i(116333), -- Recipe: Supple Vest
-								i(116336), -- Recipe: Supple Waistguard
-								i(116344), -- Recipe: Wayfaring Belt
-								i(116343), -- Recipe: Wayfaring Boots
-								i(116342), -- Recipe: Wayfaring Bracers
-								i(116340), -- Recipe: Wayfaring Gloves
-								i(116338), -- Recipe: Wayfaring Helm
-								i(116339), -- Recipe: Wayfaring Leggings
-								i(116337), -- Recipe: Wayfaring Shoulderguards
-								i(116341), -- Recipe: Wayfaring Tunic
+							i(118721, {	-- Secret of Draenor Leatherworking
+								i(116328),	-- Recipe: Brilliant Burnished Cloak
+								i(116345),	-- Recipe: Burnished Essence
+								i(116349),	-- Recipe: Burnished Inscription Bag
+								i(116347),	-- Recipe: Burnished Leather Bag
+								i(116348),	-- Recipe: Burnished Mining Bag
+								i(120258),	-- Recipe: Drums of Fury
+								i(116325),	-- Recipe: Leather Refurbishing Kit
+								i(116327),	-- Recipe: Nimble Burnished Cloak
+								i(116326),	-- Recipe: Powerful Burnished Cloak
+								i(116350),	-- Recipe: Riding Harness
+								i(116335),	-- Recipe: Supple Boots
+								i(116334),	-- Recipe: Supple Bracers
+								i(116332),	-- Recipe: Supple Gloves
+								i(116330),	-- Recipe: Supple Helm
+								i(116331),	-- Recipe: Supple Leggings
+								i(116329),	-- Recipe: Supple Shoulderguards
+								i(116333),	-- Recipe: Supple Vest
+								i(116336),	-- Recipe: Supple Waistguard
+								i(116344),	-- Recipe: Wayfaring Belt
+								i(116343),	-- Recipe: Wayfaring Boots
+								i(116342),	-- Recipe: Wayfaring Bracers
+								i(116340),	-- Recipe: Wayfaring Gloves
+								i(116338),	-- Recipe: Wayfaring Helm
+								i(116339),	-- Recipe: Wayfaring Leggings
+								i(116337),	-- Recipe: Wayfaring Shoulderguards
+								i(116341),	-- Recipe: Wayfaring Tunic
 								{	-- Small Pouch of Coins
 									["itemID"] = 116376,
 									["description"] = "This item contains 1-5 gold. DON'T WASTE YOUR SECRETS!\n\nSide note: This gold counts toward gold-looting achievements. (Got My Mind on My Money, etc.)",
@@ -852,17 +852,17 @@ _.ExpansionFeatures =
 					n(-119, { 	-- Trading Post
 						n(85427, { 	-- Maaria <Sha'tari Defense Quartermaster>
 							["groups"] = {
-								currency(823, { -- Apexis Crystal
+								currency(823, {	-- Apexis Crystal
 									["groups"] = {
 										i(116665), 	-- Armored Irontusk
 										i(118669),	-- Sha'tari Elixir
 										i(119150), 	-- Sky Fry
 									},
 								}),
-								i(119167, { -- Contract: Vindicator Heluun
-									follower(458), -- Vindicator Heluun
+								i(119167, {	-- Contract: Vindicator Heluun
+									follower(458),	-- Vindicator Heluun
 								}),
-								i(158208, { -- Ensemble: Sha'tari Defender's Plate [Confirmed]
+								i(158208, {	-- Ensemble: Sha'tari Defender's Plate [Confirmed]
 									["groups"] = {
 										i(119425),  -- Belt of the Sha'tari Defense
 										i(119423), 	-- Boots of the Sha'tari Defense

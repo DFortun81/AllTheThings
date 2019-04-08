@@ -45,7 +45,7 @@ _.Zones =
 									},
 								}),
 							}),
-							n(131718, { -- Bramblewing [CLQS]
+							n(131718, {	-- Bramblewing [CLQS]
 								["questID"] = 50034,
 								["coord"] = { 66.63, 32.40, 862 },
 								["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
@@ -226,7 +226,7 @@ _.Zones =
 								}),
 							}),	
 							n(133163, {	-- Tia'Kawan [MCLQ]
-								["questID"] = 9999, -- Apparently people are upset at seeing ---  in the addon 
+								["questID"] = 9999,	-- Apparently people are upset at seeing ---  in the addon 
 								["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 									i(161007),	-- Direhorn Studded Britches
 								}),
@@ -304,7 +304,7 @@ _.Zones =
 								}),
 							}),
 							n(136702, {	-- Zu'shin the Infused [MCMLQ]
-								["questID"] = 9999, -- Apparently people are upset at seeing ---  in the addon 	
+								["questID"] = 9999,	-- Apparently people are upset at seeing ---  in the addon 	
 							}),	
 						},
 					}),

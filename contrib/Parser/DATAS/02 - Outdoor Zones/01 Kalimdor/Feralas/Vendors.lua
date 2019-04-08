@@ -36,10 +36,10 @@ _.Zones =
 						["coord"] = { 52.8, 47.0, 69 },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
-							i(15734), -- Pattern: Living Shoulders
-							i(8409), -- Pattern: Nightscape Shoulders
-							i(8385), -- Pattern: Turtle Scale Gloves
-							i(7451), -- Pattern: Green Whelp Bracers
+							i(15734),	-- Pattern: Living Shoulders
+							i(8409),	-- Pattern: Nightscape Shoulders
+							i(8385),	-- Pattern: Turtle Scale Gloves
+							i(7451),	-- Pattern: Green Whelp Bracers
 						},
 					}),
 					n(8157, {	-- Logannas <Alchemy Supplies>
@@ -62,9 +62,9 @@ _.Zones =
 						["coord"] = { 45.4, 41.2, 69 },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
-							i(15734), -- Pattern: Living Shoulders
-							i(8385), -- Pattern: Turtle Scale Gloves
-							i(7451), -- Pattern: Green Whelp Bracers
+							i(15734),	-- Pattern: Living Shoulders
+							i(8385),	-- Pattern: Turtle Scale Gloves
+							i(7451),	-- Pattern: Green Whelp Bracers
 						},
 					}),
 					n(8145, {	-- Sheendra Tallgrass <Trade Supplies>

@@ -3,24 +3,24 @@
 ---------------------------------------------------
 _.ExpansionFeatures =
 {
-	n(-9965, { -- Legion Class Hall
-		cl(11, { -- The Dreamgrove (Druid)
+	n(-9965, {	-- Legion Class Hall
+		cl(11, {	-- The Dreamgrove (Druid)
 			["lvl"] = 98,
-			["mapID"] = 747, -- The Dreamgrove (Druid)
+			["mapID"] = 747,	-- The Dreamgrove (Druid)
 			["groups"] = {
-				o(253161, { -- Grove Vine
+				o(253161, {	-- Grove Vine
 					["classes"] = {11},
 					["description"] = "|c808080FAThese pets are obtained by picking them from the|r |cFFFFD700Evergreen|r |c808080FAclass hall ability that druids get on Tier 2.\nOnce the ability is learned you will gain access to two plots where you grow plants every three days and it will randomly pick amongst six plots.  When Grove Vine spawns it has a chance for these two pets.|r",
 					["groups"] = {
 						i(139554, {	-- Acorn of the Endless
-							artifact(62), -- Restoration Druid Hidden Artifact Appearance
+							artifact(62),	-- Restoration Druid Hidden Artifact Appearance
 						}),
-						i(129362), -- Broot Pet
-						i(140741), -- Nightmare Lasher Pet
+						i(129362),	-- Broot Pet
+						i(140741),	-- Nightmare Lasher Pet
 					},
 				}),
-				n(-25, { -- Pet Battle
-					p(479), -- Elfin Rabbit
+				n(-25, {	-- Pet Battle
+					p(479),	-- Elfin Rabbit
 				}),
 				n(-4, {	-- Achievements
 					ach(11298),		-- A Classy Outfit
@@ -88,28 +88,28 @@ _.ExpansionFeatures =
 					a(ach(10743)),	-- The Prestige (Alliance) [Still in WoW UI as of 8.0]
 					h(ach(10745)),	-- The Prestige (Horde) [Still in WoW UI as of 8.0]
 				}),
-				n(-17, { -- Quests
-					spell(241857, { -- Archdruid's Lunarwing Form
-						q(46317, { -- Talon's Call
-							["qg"] = 118105, -- Grovewarden Proudhorn
-							["sourceQuests"] = { 46246 }, -- Strike Them Down
+				n(-17, {	-- Quests
+					spell(241857, {	-- Archdruid's Lunarwing Form
+						q(46317, {	-- Talon's Call
+							["qg"] = 118105,	-- Grovewarden Proudhorn
+							["sourceQuests"] = { 46246 },	-- Strike Them Down
 							["classes"] = { 11 },  -- Druid
 						}),
-						q(46318, { -- Defense of Aviana
-							["qg"] = 106299, -- Thisalee Crow
-							["sourceQuests"] = { 46317 }, -- Talon's Call
+						q(46318, {	-- Defense of Aviana
+							["qg"] = 106299,	-- Thisalee Crow
+							["sourceQuests"] = { 46317 },	-- Talon's Call
 							["classes"] = {11},
 						}),
-						q(46319, { -- You Can't Take the Sky from Me
-							["qg"] = 106299, -- Thisalee Crow
-							["sourceQuests"] = { 46318 }, -- Defense of Aviana
+						q(46319, {	-- You Can't Take the Sky from Me
+							["qg"] = 106299,	-- Thisalee Crow
+							["sourceQuests"] = { 46318 },	-- Defense of Aviana
 							["classes"] = {11},
 							["groups"] = {
 								{
 									["itemID"] = 143638, 
 									["mountID"] = 231437, 
 									["questID"] = 46319,
-								}, -- Moon-Kissed Feather
+								},	-- Moon-Kissed Feather
 							},
 						}),
 					}),
@@ -244,49 +244,49 @@ _.ExpansionFeatures =
 					q(41792),	-- The Third Trial of Ursol
 					q(41918),	-- The Dreamer Returns
 				--[[
-					q(46319, { -- You Can't Take the Sky from Me
+					q(46319, {	-- You Can't Take the Sky from Me
 						["groups"] = {
-							{ ["itemID"] = 143638, ["mountID"] = 231437, ["questID"] = 46319 }, -- Moon-Kissed Feather
+							{ ["itemID"] = 143638, ["mountID"] = 231437, ["questID"] = 46319 },	-- Moon-Kissed Feather
 						},
 						["lvl"] = 110,
 						["classes"] = {11}
 					}),
 					--]]
-					q(44232, { -- The Grove Provides
-						i(139726), -- Hood of the Dreamgrove
+					q(44232, {	-- The Grove Provides
+						i(139726),	-- Hood of the Dreamgrove
 					}),
-					q(42055, { -- The Demi-God's Return
-						i(139723), -- Robes of the Dreamgrove
+					q(42055, {	-- The Demi-God's Return
+						i(139723),	-- Robes of the Dreamgrove
 					}),
-					q(42046, { -- A New Beginning
-						i(139730), -- Bracers of the Dreamgrove
+					q(42046, {	-- A New Beginning
+						i(139730),	-- Bracers of the Dreamgrove
 					}),
 					--[[ Artifact Appearance  Quests Commented Out For Now
-					q(43409, { -- A Hero's Weapon
+					q(43409, {	-- A Hero's Weapon
 						sp(219663) -- Heroic Weapons [No item associated]
 					}),
-					o(253118, { -- Dreamgrove Blossoms
-						sp(220679, { i(139554) }), -- Acorn of the Endless
+					o(253118, {	-- Dreamgrove Blossoms
+						sp(220679, { i(139554) }),	-- Acorn of the Endless
 					}),
-					o(253176, { -- G'Hanir Blossoms
-						sp(220679, { i(139554) }), -- Acorn of the Endless
+					o(253176, {	-- G'Hanir Blossoms
+						sp(220679, { i(139554) }),	-- Acorn of the Endless
 					}),
-					o(253161, { -- Grove Vine
-						sp(220679, { i(139554) }), -- Acorn of the Endless
+					o(253161, {	-- Grove Vine
+						sp(220679, { i(139554) }),	-- Acorn of the Endless
 					}),
-					o(253157, { -- Spirit Berries
-						sp(220679, { i(139554) }), -- Acorn of the Endless
+					o(253157, {	-- Spirit Berries
+						sp(220679, { i(139554) }),	-- Acorn of the Endless
 					}),
-					o(253179, { -- Sunblossom
-						sp(220679, { i(139554) }), -- Acorn of the Endless
+					o(253179, {	-- Sunblossom
+						sp(220679, { i(139554) }),	-- Acorn of the Endless
 					}),
-					o(253181, { -- Thornstalk
-						sp(220679, { i(139554) }), -- Acorn of the Endless
+					o(253181, {	-- Thornstalk
+						sp(220679, { i(139554) }),	-- Acorn of the Endless
 					}),
 					--]]
 				}),
 				--[[
-				n(98000, { -- Scouting Map
+				n(98000, {	-- Scouting Map
 					["groups"] = {
 						-- Blank for Class Only Missions in the future
 					},
@@ -294,22 +294,22 @@ _.ExpansionFeatures =
 					["modelScale"] = 2.25,
 				}),
 				]]--
-				n(-2, { --  Vendors
-					n(112323, { -- Amurra Thistledew <Proprietor>
+				n(-2, {	--  Vendors
+					n(112323, {	-- Amurra Thistledew <Proprietor>
 						-- Dreamgrove Raiment
-						gs(549, { -- Dreamgrove Raiment 
-							i(139726), -- Head
-							i(139728), -- Shoulders
-							i(139723), -- Chest
-							i(139730), -- Bracers
-							i(139725), -- Hands
-							i(139729), -- Belt
-							i(139727), -- Legs
-							i(139724), -- Feet		
+						gs(549, {	-- Dreamgrove Raiment 
+							i(139726),	-- Head
+							i(139728),	-- Shoulders
+							i(139723),	-- Chest
+							i(139730),	-- Bracers
+							i(139725),	-- Hands
+							i(139729),	-- Belt
+							i(139727),	-- Legs
+							i(139724),	-- Feet		
 						}),
-						i(140540), -- Dreamgrove Blade
-						i(140542), -- Dreamgrove Spire
-						i(140549), -- Pillar of the Dreamgrove
+						i(140540),	-- Dreamgrove Blade
+						i(140542),	-- Dreamgrove Spire
+						i(140549),	-- Pillar of the Dreamgrove
 						{	-- Tome of the Wilds: Charm Woodland Creature
 							["itemID"] = 136795,	-- Tome of the Wilds: Charm Woodland Creature
 							["spellID"] = 0,		-- Invalidate the Spell ID (this makes it uncollectible)
@@ -336,8 +336,8 @@ _.ExpansionFeatures =
 						}),
 					}),
 				}),
-				m(715, { -- Emerald Dreamway
-					["icon"] = "Interface\\Icons\\spell_arcane_portalshattrath", -- Dream Portal Icon
+				m(715, {	-- Emerald Dreamway
+					["icon"] = "Interface\\Icons\\spell_arcane_portalshattrath",	-- Dream Portal Icon
 					["groups"] = {
 						n(-17, {	-- Quests
 							{	-- Communing With Malorne
@@ -346,62 +346,62 @@ _.ExpansionFeatures =
 								["classes"]= { 11 }, 	-- Druid
 							},
 						}),
-						n(-159, { -- Daily Dreamway Event Roll
+						n(-159, {	-- Daily Dreamway Event Roll
 							["isDaily"] = true,
 							["isBreadcrumb"] = true,
 							["questID"] = 44326,	-- "daily dreamway event roll" on WoWHead
 							["description"] = "If this quest has a checkmark next to it, then check below which stone is active. If none of them are checked, that means that none of the owlcat stones can be interacted with today and that you should come back tomorrow.",
 							["icon"] = "Interface\\Icons\\inv_misc_druidstone04",
 							["groups"] = {
-								n(-130, { -- Duskwood Active
+								n(-130, {	-- Duskwood Active
 									["isDaily"] = true,
 									["isBreadcrumb"] = true,
-									["questID"] = 44329, -- Owlcat Stone Activate [Duskwood]
+									["questID"] = 44329,	-- Owlcat Stone Activate [Duskwood]
 									["description"] = "If this quest has a checkmark next to it, then that means the stone is active.",
 									["icon"] = "Interface\\Icons\\achievement_zone_duskwood",
-									["sourceQuests"] = { 44326 }, -- Daily Dreamway Event Roll
+									["sourceQuests"] = { 44326 },	-- Daily Dreamway Event Roll
 								}),
-								n(-132, { -- Feralas Active
+								n(-132, {	-- Feralas Active
 									["isDaily"] = true,
 									["isBreadcrumb"] = true,
-									["questID"] = 44327, -- Owlcat Stone Activate [Feralas]
+									["questID"] = 44327,	-- Owlcat Stone Activate [Feralas]
 									["description"] = "If this quest has a checkmark next to it, then that means the stone is active.",
 									["icon"] = "Interface\\Icons\\achievement_zone_feralas",
-									["sourceQuests"] = { 44326 }, -- Daily Dreamway Event Roll
+									["sourceQuests"] = { 44326 },	-- Daily Dreamway Event Roll
 								}),
-								n(-131, { -- The Hinterlands Active
+								n(-131, {	-- The Hinterlands Active
 									["isDaily"] = true,
 									["isBreadcrumb"] = true,
-									["questID"] = 44328, -- Owlcat Stone Activate [Hinterlands]
+									["questID"] = 44328,	-- Owlcat Stone Activate [Hinterlands]
 									["description"] = "If this quest has a checkmark next to it, then that means the stone is active.",
 									["icon"] = "Interface\\Icons\\achievement_zone_hinterlands_01",
-									["sourceQuests"] = { 44326 }, -- Daily Dreamway Event Roll
+									["sourceQuests"] = { 44326 },	-- Daily Dreamway Event Roll
 								}),
 							},
 						}),
-						n(-133, { -- Duskwood Activated
-							["questID"] = 44330, -- Owlcat Stone Touched [Duskwood]
+						n(-133, {	-- Duskwood Activated
+							["questID"] = 44330,	-- Owlcat Stone Touched [Duskwood]
 							["description"] = "This quest indicates if you have activated the Duskwood Owlcat Stone.",
 							["icon"] = "Interface\\Icons\\achievement_zone_duskwood",
-							["sourceQuests"] = { 44329 }, -- Owlcat Stone Activate [Duskwood]
+							["sourceQuests"] = { 44329 },	-- Owlcat Stone Activate [Duskwood]
 						}),
-						n(-158, { -- Feralas Activated
-							["questID"] = 44331, -- Owlcat Stone Touched [Feralas]
+						n(-158, {	-- Feralas Activated
+							["questID"] = 44331,	-- Owlcat Stone Touched [Feralas]
 							["description"] = "This quest indicates if you have activated the Feralas Owlcat Stone.",
 							["icon"] = "Interface\\Icons\\achievement_zone_feralas",
-							["sourceQuests"] = { 44327 }, -- Owlcat Stone Activate [Feralas]
+							["sourceQuests"] = { 44327 },	-- Owlcat Stone Activate [Feralas]
 						}),
-						n(-157, { -- The Hinterlands Activated
-							["questID"] = 44332, -- Owlcat Stone Touched [Hinterlands]
+						n(-157, {	-- The Hinterlands Activated
+							["questID"] = 44332,	-- Owlcat Stone Touched [Hinterlands]
 							["description"] = "This quest indicates if you have activated the Hinterlands Owlcat Stone.",
 							["icon"] = "Interface\\Icons\\achievement_zone_hinterlands_01",
-							["sourceQuests"] = { 44328 }, -- Owlcat Stone Activate [Hinterlands]
+							["sourceQuests"] = { 44328 },	-- Owlcat Stone Activate [Hinterlands]
 						}),
 						n(113663, {	-- Ela'lothen <The Moonspirit>
 							["description"] = "Turn on \"Show Incomplete Quests\" to see which stones you are still missing.  Each quest has a descripton added to it on it's location.\n\nOnce all 3 of the Owlcat stones are activated, you will be able to see Ela'lothen. Type /sit at him for the Feather of the Moonspirit to appear in your inventory.",
-							["sourceQuests"] = { 44330, 44331, 44332 }, -- 
+							["sourceQuests"] = { 44330, 44331, 44332 },	-- 
 							["groups"] = {
-								i(139552, { -- Feather of the Moonspirit
+								i(139552, {	-- Feather of the Moonspirit
 									artifact(830),	-- Feral Druid Hidden Artifact Appearance
 								}),
 							},

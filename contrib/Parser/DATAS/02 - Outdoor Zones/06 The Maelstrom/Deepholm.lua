@@ -12,24 +12,24 @@ _.Zones =
 					ach(5447),	-- My Very Own Broodmother (Deepholm)
 					ach(5446),	-- The Glop Family Line (Deepholm)
 				}),
-				n(-25, { -- Pet Battle
-					p(838), -- Amethyst Shale Hatchling
-					p(559), -- Crimson Geode
-					p(554), -- Crimson Shale Hatchling
-					p(556), -- Crystal Beetle
-					p(555), -- Deepholm Cockroach
-					p(837), -- Emerald Shale Hatchling
-					p(756), -- Fungal Moth
-					p(553), -- Stowaway Rat
-					p(480), -- Topaz Shale Hatchling
-					p(469), -- Twilight Beetle
-					p(470), -- Twilight Spider
-					ach(5449, { -- Rock Lover
-						i(60869), -- Pebble
+				n(-25, {	-- Pet Battle
+					p(838),	-- Amethyst Shale Hatchling
+					p(559),	-- Crimson Geode
+					p(554),	-- Crimson Shale Hatchling
+					p(556),	-- Crystal Beetle
+					p(555),	-- Deepholm Cockroach
+					p(837),	-- Emerald Shale Hatchling
+					p(756),	-- Fungal Moth
+					p(553),	-- Stowaway Rat
+					p(480),	-- Topaz Shale Hatchling
+					p(469),	-- Twilight Beetle
+					p(470),	-- Twilight Spider
+					ach(5449, {	-- Rock Lover
+						i(60869),	-- Pebble
 					}),
 					qr(q(31973)),	-- Bordin Steadyfist
 				}),
-				n(-38, { -- Profession
+				n(-38, {	-- Profession
 					n(-188, { 	-- Mining
 						["groups"] = {
 							i(67282), 	-- Pet Elementium Geode
@@ -44,7 +44,7 @@ _.Zones =
 						}),
 					}),
 				}),				
-				n(-17, { -- Quests
+				n(-17, {	-- Quests
 					ach(4871, {	-- Deep into Deepholm
 						-- NOTE: Criteria are out of order because of how the questline flows
 						crit(2, {	-- The Upper World Pillar Fragment
@@ -348,25 +348,25 @@ _.Zones =
 							}),
 							q(26836, {	--  Rescue the Stonefather... and Flint
 								["groups"] = {
-									i(61450), -- Shattered Bond Treads
-									i(61449), -- Liberator's Girdle
-									i(61448), -- Oremantle's Favor
+									i(61450),	-- Shattered Bond Treads
+									i(61449),	-- Liberator's Girdle
+									i(61448),	-- Oremantle's Favor
 								},
 								["qg"] = 43897,	-- Pyrium Lodestone
 								["sourceQuests"] = {26835},
 							}),
 							q(27937, {	--  The Hero Returns
 								["groups"] = {
-									i(61398), -- Axe of Earthly Sundering
+									i(61398),	-- Axe of Earthly Sundering
 								},
 								["qg"] = 43897,	-- Pyrium Lodestone
 								["sourceQuests"] = {26836},
 							}),
 							q(27938, {	--  The Middle Fragment
 								["groups"] = {
-									i(61397), -- Pillarbind Waistguard
-									i(61396), -- Leggings of Fragmented Hope
-									i(61395), -- Shoulderpads of Reconstruction
+									i(61397),	-- Pillarbind Waistguard
+									i(61396),	-- Leggings of Fragmented Hope
+									i(61395),	-- Shoulderpads of Reconstruction
 								},
 								["qg"] = 44204,	-- Stonefather Oremantle
 								["sourceQuests"] = {26837},
@@ -408,9 +408,9 @@ _.Zones =
 							}),
 							q(26376, {	-- Hatred Runs Deep
 								["groups"] = {
-									i(61432), -- Bloodcult Handwraps
-									i(61431), -- Giantbutcher's Discarded Spaulders
-									i(61430), -- Stonebound Legplates
+									i(61432),	-- Bloodcult Handwraps
+									i(61431),	-- Giantbutcher's Discarded Spaulders
+									i(61430),	-- Stonebound Legplates
 								},
 								["qg"] = 42467,	-- Diamant the Patient
 								["sourceQuests"] = {26328}
@@ -431,9 +431,9 @@ _.Zones =
 								["groups"] = {
 									q(26871, {	-- A Rock Amongst Many
 										["groups"] = {
-											i(61429), -- Insignia of the Earthen Lord
-											i(61428), -- Helm of the Wormslayer
-											i(61427), -- Gyreworm Waistguard
+											i(61429),	-- Insignia of the Earthen Lord
+											i(61428),	-- Helm of the Wormslayer
+											i(61427),	-- Gyreworm Waistguard
 										},
 										["sourceQuests"] = {26869},
 									}),
@@ -853,18 +853,18 @@ _.Zones =
 						}),
 					}),
 				}),	
-				n(-16, { -- Rares
-					n(50062, { -- Aeonaxx <Mate of Aeosera>
-						dr(100.0, i(63042)), -- Reins of the Phosphorescent Stone Drake
+				n(-16, {	-- Rares
+					n(50062, {	-- Aeonaxx <Mate of Aeosera>
+						dr(100.0, i(63042)),	-- Reins of the Phosphorescent Stone Drake
 					}), 
-					n(50059, { -- Golgarok <The Crimson Shatterer>
-						dr(100.0, i(67237)), -- Golgarok's Tenderized Treads
+					n(50059, {	-- Golgarok <The Crimson Shatterer>
+						dr(100.0, i(67237)),	-- Golgarok's Tenderized Treads
 					}), 
-					n(49822, { -- Jadefang
-						dr(100.0, i(64494)), -- Tiny Shale Spider
+					n(49822, {	-- Jadefang
+						dr(100.0, i(64494)),	-- Tiny Shale Spider
 					}), 
-					n(50060, { -- Terborus
-						dr(100.0, i(67238)), -- Terborus's Rotating Bands
+					n(50060, {	-- Terborus
+						dr(100.0, i(67238)),	-- Terborus's Rotating Bands
 					}),
 				}),
 				n(-2, {	-- Vendors

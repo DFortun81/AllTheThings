@@ -50,7 +50,7 @@ _.Zones =
 								["coord"] = { 49.4, 37.6, 539 },
 								["description"] = "If this is not showing up for you on Alliance, you will need to complete the quests in the area first, then move to a new map area and back in to see the treasure.",
 								["g"] = {
-									i(109739), -- Star Chart Toy
+									i(109739),	-- Star Chart Toy
 								},
 							},
 							{	-- Beloved's Offering 
@@ -66,7 +66,7 @@ _.Zones =
 								["questID"] = 33613,
 								["coord"] = { 37.17, 23.13, 539 },
 								["g"] = {
-									i(108945), -- Void-Boiled Squirrel
+									i(108945),	-- Void-Boiled Squirrel
 								},
 							},
 							{	-- Cargo of the Raven Queen
@@ -296,7 +296,7 @@ _.Zones =
 								["coord"] = { 31.3, 39.1, 539 },
 								["modelID"] = 34286,
 								["g"] = {
-									i(109081), -- Ronokk's Greatcloak
+									i(109081),	-- Ronokk's Greatcloak
 								},
 							},
 							{	-- Rotting Basket
@@ -328,7 +328,7 @@ _.Zones =
 								["questID"] = 35919,
 								["coord"] = { 30.0, 45.4, 539 },
 								["g"] = {
-									i(113563), -- Shadowmoon Sacrificial Dagger
+									i(113563),	-- Shadowmoon Sacrificial Dagger
 								},
 							},
 							{	-- Shadowmoon Exile Treasure
@@ -408,7 +408,7 @@ _.Zones =
 								["questID"] = 33574,
 								["coord"] = { 51.1, 79.1, 539 },
 								["g"] = {
-									i(113375), -- Vindicator's Armor Polish Kit Toy
+									i(113375),	-- Vindicator's Armor Polish Kit Toy
 								},
 							},
 							{	-- Waterlogged Chest

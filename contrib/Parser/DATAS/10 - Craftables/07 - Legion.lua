@@ -3,7 +3,7 @@
 -----------------------------------------------------
 _.Craftables =
 {
-	tier(7, { -- Legion
+	tier(7, {	-- Legion
 		n(-180, {	-- Alchemy
 			n(-37, {	-- Discovery
 				["groups"] = {
@@ -95,9 +95,9 @@ _.Craftables =
 				},
 				["requireSkill"] = 171,	-- Alchemy
 			}),
-			n(-25, { -- Pet Battles
-				i(137599, { -- Pulsating Sac
-					i(137608, { -- Growling Sac
+			n(-25, {	-- Pet Battles
+				i(137599, {	-- Pulsating Sac
+					i(137608, {	-- Growling Sac
 						i(44822),	-- Albino Snake
 						i(11023),	-- Ancona Chicken
 						i(10360),	-- Black Kingsnake
@@ -116,12 +116,12 @@ _.Craftables =
 					}),
 				}),
 			}),
-			spell(213255, { -- Transmute: Meat to Pants
-				i(137600, { -- Pile of Pants
-					i(139393), -- Fizzy Fleece Leggings
-					i(139394), -- Parachute Pants
-					i(139392), -- Greaves of Ten Thousand Links
-					i(139395), -- Reverbium-Flecked Legplates
+			spell(213255, {	-- Transmute: Meat to Pants
+				i(137600, {	-- Pile of Pants
+					i(139393),	-- Fizzy Fleece Leggings
+					i(139394),	-- Parachute Pants
+					i(139392),	-- Greaves of Ten Thousand Links
+					i(139395),	-- Reverbium-Flecked Legplates
 				}),
 			}),
 			filter(53, {	-- Trinkets
@@ -222,7 +222,7 @@ _.Craftables =
 			}),
 		}),
 		n(-182, { 	-- Enchanting
-			n(-25, { -- Pet Battles
+			n(-25, {	-- Pet Battles
 				i(128533),	-- Enchanted Cauldron
 				i(128535),	-- Enchanted Pen
 				i(128534),	-- Enchanted Torch
@@ -254,27 +254,27 @@ _.Craftables =
 				i(136687),	-- "The Felic"*
 				i(136688),	-- Shockinator*
 			}),
-			n(-494, { -- Miscellaneous
-				n(101527, { -- Blingtron 6000
-					i(132892, { -- Blingtron 6000 Gift Package
+			n(-494, {	-- Miscellaneous
+				n(101527, {	-- Blingtron 6000
+					i(132892, {	-- Blingtron 6000 Gift Package
 						["groups"] = {
-							i(87250), -- Depleted-Kyparium Rocket Mount
-							i(87251), -- Geosynchronous World Spinner Mount
-							i(41508), -- Mechano-Hog Mount
-							i(44413), -- Mekgineer's Chopper Mount
-							i(136911), -- Knockoff Blingtron
-							i(103670), -- Lil'Bling Pet
-							i(15996), -- Lifelike Mechanical Toad Pet
-							i(11826), -- Lil' Smoky Pet
-							i(4401), -- Mechanical Squirrel Box Pet
-							i(11825), -- Pet Bombling
-							i(115483), -- Sky-Bo Pet
-							i(21277), -- Tranquil Mechanical Yeti Pet
-							i(123851), -- Photo B.O.M.B. Toy
-							i(136631), -- Surface-to-Infernal Rocket Launcher
-							i(136630), -- "Twirling Bottom" Repeaater"
-							i(136629), -- Felgibber Shotgun
-							i(136632), -- Chaos Blaster
+							i(87250),	-- Depleted-Kyparium Rocket Mount
+							i(87251),	-- Geosynchronous World Spinner Mount
+							i(41508),	-- Mechano-Hog Mount
+							i(44413),	-- Mekgineer's Chopper Mount
+							i(136911),	-- Knockoff Blingtron
+							i(103670),	-- Lil'Bling Pet
+							i(15996),	-- Lifelike Mechanical Toad Pet
+							i(11826),	-- Lil' Smoky Pet
+							i(4401),	-- Mechanical Squirrel Box Pet
+							i(11825),	-- Pet Bombling
+							i(115483),	-- Sky-Bo Pet
+							i(21277),	-- Tranquil Mechanical Yeti Pet
+							i(123851),	-- Photo B.O.M.B. Toy
+							i(136631),	-- Surface-to-Infernal Rocket Launcher
+							i(136630),	-- "Twirling Bottom" Repeaater"
+							i(136629),	-- Felgibber Shotgun
+							i(136632),	-- Chaos Blaster
 						},
 						["questID"] = 40753,
 					}),
@@ -283,7 +283,7 @@ _.Craftables =
 		}),
 		n(-185, {	-- Inscription
 		-- Reviewed and updated as of 11.21.2018 BfA 8.0
-			n(-491, { -- Tarot Cards
+			n(-491, {	-- Tarot Cards
 				sp(191659, {	-- Darkmoon Card of the Legion
 					sp(191654, {	-- Dominion Deck
 						i(128705),	-- Darkmoon Deck: Dominion
@@ -504,7 +504,7 @@ _.Craftables =
 				i(127032),	-- Silkweave Flourish
 				i(127031),	-- Silkweave Shade
 			}),
-			n(-43, { -- Cloth
+			n(-43, {	-- Cloth
 				i(146666),	-- Celumbra, the Night's Dichotomy
 				i(151771),	-- Festival Dress
 				i(151772),	-- Festival Suit

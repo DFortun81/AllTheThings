@@ -71,7 +71,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 						},
 					}),
 				}),
-				cr(43438, e(110, { -- Corborus
+				cr(43438, e(110, {	-- Corborus
 					i(157592),	-- Crackling Geode Mace
 					i( 56329),	-- Fist of Pained Senses
 					i(157591),	-- Crystal-Chained Lodestone
@@ -84,7 +84,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 					un(2, i(55792)),	-- Cinnabar Shoulders (7.3.5 - Removed from Game!)
 					un(2, i(55793)),	-- Dolomite Adorned Gloves (7.3.5 - Removed from Game!)
 				})),
-				cr(43214, e(111, { -- Slabhide
+				cr(43214, e(111, {	-- Slabhide
 					i( 63043),	-- Reins of the Vitreous Stone Drake (MOUNT!)
 					i( 56335),	-- Quicksilver Blade
 					i(157593),	-- Crystalpowder Amice
@@ -96,7 +96,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 					un(2, i(55798)),	-- Deep Delving Gloves (7.3.5 - Removed from Game!)
 					un(2, i(55797)),	-- Hematite Plate Gloves (7.3.5 - Removed from Game!)
 				})),
-				cr(42188, e(112, { -- Ozruk
+				cr(42188, e(112, {	-- Ozruk
 					i( 56342),	-- Sword of the Bottomless Pit
 					i(157595),	-- Fractured Earthstone Necklace
 					i( 56338),	-- Pendant of the Lightless Grotto
@@ -107,7 +107,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 					un(2, i(55802)),	-- Elementium Scale Bracers (7.3.5 - Removed from Game!)
 					un(2, i(55803)),	-- Belt of the Ringworm (7.3.5 - Removed from Game!)
 				})),
-				cr(42333, e(113, { -- High Priestess Azil
+				cr(42333, e(113, {	-- High Priestess Azil
 					ach(4846),	-- The Stonecore
 					i( 56343),	-- Darkling Staff
 					i( 56346),	-- Elementium Fang
@@ -130,7 +130,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 				["lvl"] = 85,
 				["ignoreBonus"] = true,
 				["groups"] = {
-					cr(43438, e(110, { -- Corborus
+					cr(43438, e(110, {	-- Corborus
 						i(157592),	-- Crackling Geode Mace
 						i( 56329),	-- Fist of Pained Senses
 						i(157591),	-- Crystal-Chained Lodestone
@@ -140,7 +140,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 						i( 56332),	-- Phosphorescent Ring
 						i( 56328),	-- Key to the Endless Chamber
 					})),
-					cr(43214, e(111, { -- Slabhide
+					cr(43214, e(111, {	-- Slabhide
 						i( 63043),	-- Reins of the Vitreous Stone Drake (MOUNT!)
 						i( 56335),	-- Quicksilver Blade
 						i(157593),	-- Crystalpowder Amice
@@ -149,7 +149,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 						i(157594),	-- Earth-Strength Legguards
 						i( 56333),	-- Rose Quartz Band
 					})),
-					cr(42188, e(112, { -- Ozruk
+					cr(42188, e(112, {	-- Ozruk
 						i( 56342),	-- Sword of the Bottomless Pit
 						i(157595),	-- Fractured Earthstone Necklace
 						i( 56338),	-- Pendant of the Lightless Grotto
@@ -157,7 +157,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 						i( 56341),	-- Belt of the Ringworm
 						i( 56339),	-- Tendrils of Burrowing Dark
 					})),
-					cr(42333, e(113, { -- High Priestess Azil
+					cr(42333, e(113, {	-- High Priestess Azil
 						ach(5063),	-- Heroic: The Stonecore
 						ach(5287),	-- Rotten to the Core
 						i( 56343),	-- Darkling Staff
@@ -175,7 +175,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 			d(24, {	-- Timewalking
 				["lvl"] = 86,
 				["groups"] = {
-					cr(43438, e(110, { -- Corborus
+					cr(43438, e(110, {	-- Corborus
 						i(133375),	-- Crackling Geode Mace
 						i(133207),	-- Fist of Pained Senses
 						i(133364),	-- Crystal-Chained Lodestone
@@ -185,7 +185,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 						i(133210),	-- Phosphorescent Ring
 						i(133206),	-- Key to the Endless Chamber
 					})),
-					cr(43214, e(111, { -- Slabhide
+					cr(43214, e(111, {	-- Slabhide
 						i( 63043),	-- Reins of the Vitreous Stone Drake (MOUNT!)
 						i(133213),	-- Quicksilver Blade
 						i(133230),	-- Wand of Dark Worship
@@ -196,7 +196,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 						i(133357),	-- Earth-Strength Legguards
 						i(133211),	-- Rose Quartz Band
 					})),
-					cr(42188, e(112, { -- Ozruk
+					cr(42188, e(112, {	-- Ozruk
 						i(133219),	-- Sword of the Bottomless Pit
 						i(133229),	-- Heavy Geode Mace
 						i(133366),	-- Fractured Earthstone Necklace
@@ -206,7 +206,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 						i(133227),	-- Tear of Blood
 						i(133216),	-- Tendrils of Burrowing Dark
 					})),
-					cr(42333, e(113, { -- High Priestess Azil
+					cr(42333, e(113, {	-- High Priestess Azil
 						i(133220),	-- Darkling Staff
 						i(133223),	-- Elementium Fang
 						i(133226),	-- Prophet's Scepter

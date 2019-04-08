@@ -5,8 +5,8 @@ _.WorldDrops =
 {
 	{
 		["groups"] = {
-			n(-318, { -- Armor
-				n(-320, { -- Head
+			n(-318, {	-- Armor
+				n(-320, {	-- Head
 					i(35639),	-- Brighthelm of Guarding
 					i(37746),	-- Helm of the Burning Soul
 					i(37754),	-- Shimmersteel Hood
@@ -75,7 +75,7 @@ _.WorldDrops =
 					},
 					i(37748),	-- Winterfall's Frozen Necklace
 				}),
-				n(-321, { -- Shoulder
+				n(-321, {	-- Shoulder
 					i(35580),	-- Skein Woven Mantle
 					i(35616),	-- Spored Tendrils Spaulders
 					i(37115),	-- Crusader's Square Pauldrons
@@ -97,7 +97,7 @@ _.WorldDrops =
 					i(50020),	-- Raging Behemoth's Shoulderplates
 					i(50449),	-- Stiffened Corpse Shoulderpads
 				}),
-				n(-322, { -- Back
+				n(-322, {	-- Back
 					i(36403),	-- Riding Cloak
 					i(36404),	-- Suede Cloak
 					i(36405),	-- Double Cape
@@ -127,7 +127,7 @@ _.WorldDrops =
 					i(47257),	-- Cloak of the Untamed Predator
 					i(47291),	-- Shroud of Displacement
 				}),
-				n(-323, { -- Chest
+				n(-323, {	-- Chest
 					i(37587),	-- Ymirjar Physician's Robe
 					i(37672),	-- Patina-Coated Breastplate
 					i(37745),	-- Greenhealer's Garb
@@ -145,10 +145,10 @@ _.WorldDrops =
 					i(50038),	-- Carapace of Forgotten Kings
 					i(51958),	-- Pristine Glowbear Pelt
 				}),
-				n(-325, { -- Tabard
+				n(-325, {	-- Tabard
 					i(52252),	-- Tabard of the Lightbringer
 				}),
-				n(-326, { -- Wrist
+				n(-326, {	-- Wrist
 					i(35579),	-- Vrykul Shackles
 					i(35593),	-- Steel Bear Trap Bracers
 					i(35615),	-- Glowworm Cavern Bindings
@@ -194,7 +194,7 @@ _.WorldDrops =
 					i(49994),	-- The Lady's Brittle Bracers
 					i(50175),	-- Crypt Keeper's Bracers
 				}),
-				n(-327, { -- Hands
+				n(-327, {	-- Hands
 					i(37625),	-- Web Winder Gloves
 					i(37671),	-- Refined Ore Gloves
 					i(37759),	-- Rhie-Ay's Clutching Gauntlets
@@ -213,7 +213,7 @@ _.WorldDrops =
 					i(44686),	-- Ethereal Terror Handwraps
 					i(45927),	-- Handwraps of Resonance
 				}),
-				n(-328, { -- Waist
+				n(-328, {	-- Waist
 					i(35594),	-- Snowmelt Silken Cinch
 					i(35653),	-- Girdle of the Mystical Prison
 					i(36978),	-- Ley-Whelphide Belt
@@ -236,7 +236,7 @@ _.WorldDrops =
 					i(50069),	-- Professor's Bloodied Smock
 					i(50451),	-- Belt of the Lonely Noble
 				}),
-				n(-329, { -- Legs
+				n(-329, {	-- Legs
 					i(36976),	-- Ring-Lord's Leggings
 					i(37743),	-- Legguards of Brutalization
 					i(37755),	-- Leggings of the Icy Heart
@@ -254,7 +254,7 @@ _.WorldDrops =
 					i(45504),	-- Darkcore Leggings
 					i(50450),	-- Leggings of Dubious Charms
 				}),
-				n(-330, { -- Feet
+				n(-330, {	-- Feet
 					i(35641),	-- Scytheclaw Boots
 					i(36999),	-- Boots of the Terrestrial Guardian
 					i(37068),	-- Berserker's Sabatons

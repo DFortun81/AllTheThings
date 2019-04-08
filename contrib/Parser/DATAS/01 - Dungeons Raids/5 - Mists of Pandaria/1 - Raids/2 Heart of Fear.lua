@@ -7,7 +7,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 		["sharedLockout"] = 1,
 		["lvl"] = 90,
 		["mapID"] = 474,
-		["maps"] = { 475 }, -- 2nd wing
+		["maps"] = { 475 },	-- 2nd wing
 		["coord"] = { 39.0, 34.9, 422 },	-- Heart of Fear, Dread Wastes
 		["groups"] = {
 			d(7, {	-- LFR

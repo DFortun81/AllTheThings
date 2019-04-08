@@ -3,7 +3,7 @@
 -----------------------------------------------------
 _.Craftables =
 {
-	tier(6, { -- Warlords of Draneor
+	tier(6, {	-- Warlords of Draneor
 		n(-180, {	-- Alchemy
 			filter(53, {	-- Trinkets
 				i(109262),	-- Draenic Philosopher's Stone
@@ -52,8 +52,8 @@ _.Craftables =
 					["u"] = 1,	-- Never made it out of Beta
 				},
 				i(128016, {	-- Steelforged Essence
-					WOD_CRAFTED_ITEM(120261), -- Steelforged Aegis
-					WOD_CRAFTED_ITEM(116647), -- Steelforged Shield
+					WOD_CRAFTED_ITEM(120261),	-- Steelforged Aegis
+					WOD_CRAFTED_ITEM(116647),	-- Steelforged Shield
 				}),
 			}),
 			filter(20, {	-- Daggers
@@ -82,12 +82,12 @@ _.Craftables =
 					["u"] = 1,	-- Never made it out of Beta
 				},
 				i(128016, {	-- Steelforged Essence
-					WOD_CRAFTED_ITEM(116644), -- Steelforged Dagger
+					WOD_CRAFTED_ITEM(116644),	-- Steelforged Dagger
 				}),
 			}),
 			filter(21, {	-- 1H Axes
 				i(128016, {	-- Steelforged Essence
-					WOD_CRAFTED_ITEM(120259), -- Steelforged Axe
+					WOD_CRAFTED_ITEM(120259),	-- Steelforged Axe
 				}),
 			}),
 			filter(22, {	-- 2H Axes
@@ -116,7 +116,7 @@ _.Craftables =
 					["u"] = 1,	-- Never made it out of Beta
 				},
 				i(128016, {	-- Steelforged Essence
-					WOD_CRAFTED_ITEM(116453), -- Steelforged Greataxe
+					WOD_CRAFTED_ITEM(116453),	-- Steelforged Greataxe
 				}),
 			}),
 			filter(23, {	-- 1H Maces
@@ -145,12 +145,12 @@ _.Craftables =
 					["u"] = 1,	-- Never made it out of Beta
 				},
 				i(128016, {	-- Steelforged Essence
-					WOD_CRAFTED_ITEM(116646), -- Steelforged Hammer
+					WOD_CRAFTED_ITEM(116646),	-- Steelforged Hammer
 				}),
 			}),
 			filter(25, {	-- 1H Swords
 				i(128016, {	-- Steelforged Essence
-					WOD_CRAFTED_ITEM(116454), -- Steelforged Saber
+					WOD_CRAFTED_ITEM(116454),	-- Steelforged Saber
 				}),
 			}),
 			n(-320, {		-- Head
@@ -195,7 +195,7 @@ _.Craftables =
 					["u"] = 1,	-- Never made it out of Beta
 				},
 				{	-- Smoldering Helm
-					["itemID"] = 116426, -- Smoldering Helm
+					["itemID"] = 116426,	-- Smoldering Helm
 				},
 				i(128015, {	-- Truesteel Essence
 					WOD_CRAFTED_ITEM(114230),	-- Truesteel Helm
@@ -288,7 +288,7 @@ _.Craftables =
 					["u"] = 1,	-- Never made it out of Beta
 				},
 				{	-- Smoldering Breastplate
-					["itemID"] = 116427, -- Smoldering Breastplate
+					["itemID"] = 116427,	-- Smoldering Breastplate
 				},
 				i(128015, {	-- Truesteel Essence
 					WOD_CRAFTED_ITEM(114232),	-- Truesteel Breastplate
@@ -471,7 +471,7 @@ _.Craftables =
 					["u"] = 1,	-- Never made it out of Beta
 				},
 				{	-- Smoldering Greaves
-					["itemID"] = 116425, -- Smoldering Greaves
+					["itemID"] = 116425,	-- Smoldering Greaves
 				},
 				i(128015, {	-- Truesteel Essence
 					WOD_CRAFTED_ITEM(114234),	-- Truesteel Greaves
@@ -531,8 +531,8 @@ _.Craftables =
 			}),
 			filter(102, {	-- Toys
 				i(111821, {	-- Blingtron 5000*
-					n(77789, { -- Blingtron 5000
-						i(113258, { -- Blingtron 5000 Gift Package
+					n(77789, {	-- Blingtron 5000
+						i(113258, {	-- Blingtron 5000 Gift Package
 							["questID"] = 34774,
 							["groups"] = {
 								i(87250),	-- Depleted-Kyparium Rocket Mount
@@ -572,7 +572,7 @@ _.Craftables =
 		}),
 		n(-185, { 	-- Inscription
 		-- Reviewed and updated as of 11.21.2018 BfA 8.0
-			n(-491, { -- Tarot Cards
+			n(-491, {	-- Tarot Cards
 				sp(163294, {	-- Darkmoon Card of Draenor
 					i(112303, {	-- Iron Deck
 						WOD_CRAFTED_ITEM(112319),	-- Knight's Badge
@@ -646,7 +646,7 @@ _.Craftables =
 		}),
 		n(-187, { 	-- Leatherworking
 			n(-322, { 	-- Cloak
-				i(128014, { -- Burnished Essence
+				i(128014, {	-- Burnished Essence
 					WOD_CRAFTED_ITEM(116175),	-- Brilliant Burnished Cloak
 					WOD_CRAFTED_ITEM(116174),	-- Nimble Burnished Cloak
 					WOD_CRAFTED_ITEM(116171),	-- Powerful Burnished Cloak
@@ -656,7 +656,7 @@ _.Craftables =
 				i(116164),	-- Journeying Helm
 				i(116165),	-- Journeying Robes
 				i(116166),	-- Journeying Slacks
-				i(128014, { -- Burnished Essence
+				i(128014, {	-- Burnished Essence
 					WOD_CRAFTED_ITEM(116182),	-- Supple Boots
 					WOD_CRAFTED_ITEM(116181),	-- Supple Bracers
 					WOD_CRAFTED_ITEM(116179),	-- Supple Gloves
@@ -671,7 +671,7 @@ _.Craftables =
 				i(116167),	-- Traveling Helm
 				i(116169),	-- Traveling Leggings
 				i(116168),	-- Traveling Tunic
-				i(128014, { -- Burnished Essence
+				i(128014, {	-- Burnished Essence
 					WOD_CRAFTED_ITEM(116194),	-- Wayfaring Belt
 					WOD_CRAFTED_ITEM(116193),	-- Wayfaring Boots
 					WOD_CRAFTED_ITEM(116192),	-- Wayfaring Bracers
@@ -688,17 +688,17 @@ _.Craftables =
 				i(114821),	-- Hexweave Bag
 			}),
 			n(-322, {	-- Cloak
-				i(128012, { -- Hexweave Essence
+				i(128012, {	-- Hexweave Essence
 					WOD_CRAFTED_ITEM(114819),	-- Brilliant Hexweave Cloak
 					WOD_CRAFTED_ITEM(114818),	-- Nimble Hexweave Cloak
 					WOD_CRAFTED_ITEM(114817),	-- Powerful Hexweave Cloak
 				}),
 			}),
-			n(-43, { -- Cloth
+			n(-43, {	-- Cloth
 				i(114828),	-- Sumptuous Cowl
 				i(114829),	-- Sumptuous Robes
 				i(114831),	-- Sumptuous Leggings
-				i(128012, { -- Hexweave Essence
+				i(128012, {	-- Hexweave Essence
 					WOD_CRAFTED_ITEM(114816),	-- Hexweave Belt
 					WOD_CRAFTED_ITEM(114814),	-- Hexweave Bracers
 					WOD_CRAFTED_ITEM(114810),	-- Hexweave Cowl

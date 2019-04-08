@@ -11,9 +11,9 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 		["coord"] = { 45.56, 53.61, 534 },	-- Tanaan Jungle, Draenor
 		["groups"] = {
 			n(-4, {		-- Achievements
-				ach(10149, { -- Glory of the Hellfire Raider
+				ach(10149, {	-- Glory of the Hellfire Raider
 					["g"] = {
-						i(127140), -- Infernal Direwolf
+						i(127140),	-- Infernal Direwolf
 						{	-- Nearly Indestructible
 							["achievementID"] = 10026,
 							["crs"] = {
@@ -49,7 +49,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 								90980,	-- Ariok
 							},
 							["g"] = {
-								follower(474), -- Ariok
+								follower(474),	-- Ariok
 							},
 						},
 						{	-- Get In My Belly!
@@ -144,9 +144,9 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 							i(128050),	-- Engine-Kicking Boots
 							i(128142),	-- Pledge of Iron Loyalty
 						})),
-						cr(90284, e(1425, { -- Iron Reaver
+						cr(90284, e(1425, {	-- Iron Reaver
 							i(128256, {	-- Equipment Blueprint: Gyroscopic Internal Stabilizer
-								["questID"] = 39364, -- Equipment Blueprint: Gyroscopic Internal Stabilizer
+								["questID"] = 39364,	-- Equipment Blueprint: Gyroscopic Internal Stabilizer
 							}),
 							i(128094),	-- Spiked Torque Wrench
 							i(128118),	-- Demonhorn Buckler
@@ -278,7 +278,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 							i(128088),	-- Girdle of Bound Agony
 							i(128145),	-- Howling Soul Gem
 						})),
-						cr(90269, e(1394, { -- Tyrant Velhari
+						cr(90269, e(1394, {	-- Tyrant Velhari
 							i(128099),	-- Spiked Gnarlroot Greatclub
 							i(128045),	-- Mantle of Unrestrained Contempt
 							i(128181),	-- Thorny Choker of Suffering
@@ -425,9 +425,9 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(124190),	-- Sootstained Felsworn Signet
 					i(124231),	-- Flickering Felspark
 				})),
-				cr(90284, e(1425, { -- Iron Reaver
+				cr(90284, e(1425, {	-- Iron Reaver
 					i(128256, {	-- Equipment Blueprint: Gyroscopic Internal Stabilizer
-						["questID"] = 39364, -- Equipment Blueprint: Gyroscopic Internal Stabilizer
+						["questID"] = 39364,	-- Equipment Blueprint: Gyroscopic Internal Stabilizer
 					}),
 					i(124373),	-- Iron Skullcrusher
 					i(124354),	-- Felforged Aegis
@@ -619,7 +619,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(124233),	-- Demonic Phylactery
 					i(124225),	-- Soul Capacitor
 				})),
-				cr(90269, e(1394, { -- Tyrant Velhari
+				cr(90269, e(1394, {	-- Tyrant Velhari
 					i(124375),	-- Maul of Tyranny
 					i(124376),	-- Warhammer of Arrogance
 					i(124355),	-- Fallen Defender of Argus
@@ -818,9 +818,9 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(124190),	-- Sootstained Felsworn Signet
 					i(124231),	-- Flickering Felspark
 				})),
-				cr(90284, e(1425, { -- Iron Reaver
+				cr(90284, e(1425, {	-- Iron Reaver
 					i(128256, {	-- Equipment Blueprint: Gyroscopic Internal Stabilizer
-						["questID"] = 39364, -- Equipment Blueprint: Gyroscopic Internal Stabilizer
+						["questID"] = 39364,	-- Equipment Blueprint: Gyroscopic Internal Stabilizer
 					}),
 					i(124373),	-- Iron Skullcrusher
 					i(124354),	-- Felforged Aegis
@@ -1012,7 +1012,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(124233),	-- Demonic Phylactery
 					i(124225),	-- Soul Capacitor
 				})),
-				cr(90269, e(1394, { -- Tyrant Velhari
+				cr(90269, e(1394, {	-- Tyrant Velhari
 					i(124375),	-- Maul of Tyranny
 					i(124376),	-- Warhammer of Arrogance
 					i(124355),	-- Fallen Defender of Argus
@@ -1216,9 +1216,9 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(124190),	-- Sootstained Felsworn Signet
 					i(124231),	-- Flickering Felspark
 				})),
-				cr(90284, e(1425, { -- Iron Reaver
+				cr(90284, e(1425, {	-- Iron Reaver
 					i(128256, {	-- Equipment Blueprint: Gyroscopic Internal Stabilizer
-						["questID"] = 39364, -- Equipment Blueprint: Gyroscopic Internal Stabilizer
+						["questID"] = 39364,	-- Equipment Blueprint: Gyroscopic Internal Stabilizer
 					}),
 					i(124373),	-- Iron Skullcrusher
 					i(124354),	-- Felforged Aegis
@@ -1410,7 +1410,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(124233),	-- Demonic Phylactery
 					i(124225),	-- Soul Capacitor
 				})),
-				cr(90269, e(1394, { -- Tyrant Velhari
+				cr(90269, e(1394, {	-- Tyrant Velhari
 					i(124375),	-- Maul of Tyranny
 					i(124376),	-- Warhammer of Arrogance
 					i(124355),	-- Fallen Defender of Argus

@@ -324,10 +324,10 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							})),
 							cr(69134, e(816, {	-- Council of Elders
 								["crs"] = {
-									69131, -- Frost King Malakk
-									69132, -- High Priestess Mar'li
-									69134, -- Kazra'jin
-									69078, -- Sul the Sandrawler
+									69131,	-- Frost King Malakk
+									69132,	-- High Priestess Mar'li
+									69134,	-- Kazra'jin
+									69078,	-- Sul the Sandrawler
 								},
 								["groups"] = {
 									i(95856, {		-- Gauntlets of the Crackling Conqueror
@@ -382,7 +382,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							80633,	-- Lorewalker Han <Raid Finder Storyteller>
 						},
 						["groups"] = {
-							desc(i( 98132), "Must obtain 250 stacks of Spray Water from the geysers before Tortos."), -- Shado-Pan Geyser Gun
+							desc(i( 98132), "Must obtain 250 stacks of Spray Water from the geysers before Tortos."),	-- Shado-Pan Geyser Gun
 							cr(67977, e(825, {	-- Tortos
 								i(95343), 	-- Treasures of the Thunder King
 								i(95686),	-- Shellsplitter Greataxe
@@ -408,10 +408,10 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							})),
 							cr(70212, e(821, {	-- Megaera (Flaming Head)
 								["crs"] = {
-									70252, -- Arcane Head <Head of Megaera>
-									70212, -- Flaming Head <Head of Megaera>
-									70235, -- Frozen Head <Head of Megaera>
-									70247, -- Venomous Head <Head of Megaera>
+									70252,	-- Arcane Head <Head of Megaera>
+									70212,	-- Flaming Head <Head of Megaera>
+									70235,	-- Frozen Head <Head of Megaera>
+									70247,	-- Venomous Head <Head of Megaera>
 								},
 								["groups"] = {
 									i(95343), 	-- Treasures of the Thunder King
@@ -544,7 +544,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							})),
 							cr(69427, e(824, {	-- Dark Animus
 								["crs"] = {
-									69756, -- Anima Orb
+									69756,	-- Anima Orb
 								},
 								["groups"] = {
 									i(95823, {	-- Chest of the Crackling Conqueror
@@ -600,10 +600,10 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						["groups"] = {
 							cr(68078, e(817, {	-- Iron Qon
 								["crs"] = {
-									68081, -- Dam'ren <The Frozen Sage>
-									68078, -- Iron Qon <Mastern of Quilen>
-									68080, -- Quet'zal <The Stormcaller>
-									68079, -- Ro'shak <The Molten Flare>
+									68081,	-- Dam'ren <The Frozen Sage>
+									68078,	-- Iron Qon <Mastern of Quilen>
+									68080,	-- Quet'zal <The Stormcaller>
+									68079,	-- Ro'shak <The Molten Flare>
 								},
 								["groups"] = {
 									i(95956, {	-- Shoulders of the Crackling Conqueror
@@ -651,8 +651,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							})),
 							cr(68905, e(829, {	-- Twin Consorts
 								["crs"] = {
-									68904, -- Suen <Mistress of Anger>
-									68905, -- Lu'lin <Mistress of Solitude>
+									68904,	-- Suen <Mistress of Anger>
+									68905,	-- Lu'lin <Mistress of Solitude>
 								},
 								["groups"] = {
 									i(95880, {	-- Helm of the Crackling Conqueror
@@ -897,10 +897,10 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					}),
 					cr(69134, e(816, {	-- Council of Elders (Kazra'jin)
 						["crs"] = {
-							69131, -- Frost King Malakk
-							69132, -- High Priestess Mar'li
-							69134, -- Kazra'jin
-							69078, -- Sul the Sandrawler
+							69131,	-- Frost King Malakk
+							69132,	-- High Priestess Mar'li
+							69134,	-- Kazra'jin
+							69078,	-- Sul the Sandrawler
 						},
 						["groups"] = {
 							ach(8073),	-- Cage Match
@@ -963,7 +963,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							}),
 						},
 					})),
-					i(98132, { -- Shado-Pan Geyser Gun
+					i(98132, {	-- Shado-Pan Geyser Gun
 						["description"] = "Must obtain 250 stacks of Spray Water from the geysers before Tortos.", 
 					}),
 					cr(67977, e(825, {	-- Tortos
@@ -1013,10 +1013,10 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					})),
 					cr(70212, e(821, {	-- Megaera (Flaming Head)
 						["crs"] = {
-							70252, -- Arcane Head <Head of Megaera>
-							70212, -- Flaming Head <Head of Megaera>
-							70235, -- Frozen Head <Head of Megaera>
-							70247, -- Venomous Head <Head of Megaera>
+							70252,	-- Arcane Head <Head of Megaera>
+							70212,	-- Flaming Head <Head of Megaera>
+							70235,	-- Frozen Head <Head of Megaera>
+							70247,	-- Venomous Head <Head of Megaera>
 						},
 						["groups"] = {
 							ach(8082),	-- Head Case
@@ -1221,7 +1221,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					})),
 					cr(69427, e(824, {	-- Dark Animus
 						["crs"] = {
-							69756, -- Anima Orb
+							69756,	-- Anima Orb
 						},
 						["groups"] = {
 							ach(8081),	-- Ritualist Who?
@@ -1283,10 +1283,10 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					})),
 					cr(68078, e(817, {	-- Iron Qon
 						["crs"] = {
-							68081, -- Dam'ren <The Frozen Sage>
-							68078, -- Iron Qon <Mastern of Quilen>
-							68080, -- Quet'zal <The Stormcaller>
-							68079, -- Ro'shak <The Molten Flare>
+							68081,	-- Dam'ren <The Frozen Sage>
+							68078,	-- Iron Qon <Mastern of Quilen>
+							68080,	-- Quet'zal <The Stormcaller>
+							68079,	-- Ro'shak <The Molten Flare>
 						},
 						["groups"] = {
 							ach(8087),	-- Can't Touch This
@@ -1347,8 +1347,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					})),
 					cr(68905, e(829, {	-- Twin Consorts (Lu'lin)
 						["crs"] = {
-							68904, -- Suen <Mistress of Anger>
-							68905, -- Lu'lin <Mistress of Solitude>
+							68904,	-- Suen <Mistress of Anger>
+							68905,	-- Lu'lin <Mistress of Solitude>
 						},
 						["groups"] = {
 							{	-- From Dusk 'til Dawn
@@ -1482,52 +1482,52 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							68397,	-- Lei Shen
 						},
 						["groups"] = {
-							n(-355, { -- Thunderforged
-								i(96979), -- Lost Shoulders of Fire
-								i(96981), -- Lost Shoulders of Fluidity
-								i(96980), -- Lost Shoulders of Healing
-								i(96984), -- Forgotten Mantle of the Moon
-								i(96985), -- Forgotten Mantle of the Sun
-								i(96986), -- Abandoned Spaulders of Arrowflight
-								i(96987), -- Abandoned Spaulders of Renewal
-								i(96990), -- Reconstructed Bloody Shoulderplates
-								i(96989), -- Reconstructed Furious Shoulderplates
-								i(96988), -- Reconstructed Holy Shoulderplates
-								i(96993), -- Bo-Ris, Horror in the Night
-								i(96978), -- Darkwood Spiritstaff
-								i(96992), -- Do-tharak, the Swordbreaker
-								i(96976), -- Fyn's Flickering Dagger
-								i(96991), -- Greatsword of Frozen Hells
-								i(96974), -- Invocation of the Dawn
-								i(96983), -- Jerthud, Graceful Hand of the Savior
-								i(96975), -- Miracoran, the Vehement Chord
-								i(96982), -- Nadagast's Exsanguinator
-								i(97130), -- Tia-Tia, the Scything Star
-								i(96977), -- Zeeg's Ancient Kegsmasher
-								i(96994), -- Visage of the Doomed
+							n(-355, {	-- Thunderforged
+								i(96979),	-- Lost Shoulders of Fire
+								i(96981),	-- Lost Shoulders of Fluidity
+								i(96980),	-- Lost Shoulders of Healing
+								i(96984),	-- Forgotten Mantle of the Moon
+								i(96985),	-- Forgotten Mantle of the Sun
+								i(96986),	-- Abandoned Spaulders of Arrowflight
+								i(96987),	-- Abandoned Spaulders of Renewal
+								i(96990),	-- Reconstructed Bloody Shoulderplates
+								i(96989),	-- Reconstructed Furious Shoulderplates
+								i(96988),	-- Reconstructed Holy Shoulderplates
+								i(96993),	-- Bo-Ris, Horror in the Night
+								i(96978),	-- Darkwood Spiritstaff
+								i(96992),	-- Do-tharak, the Swordbreaker
+								i(96976),	-- Fyn's Flickering Dagger
+								i(96991),	-- Greatsword of Frozen Hells
+								i(96974),	-- Invocation of the Dawn
+								i(96983),	-- Jerthud, Graceful Hand of the Savior
+								i(96975),	-- Miracoran, the Vehement Chord
+								i(96982),	-- Nadagast's Exsanguinator
+								i(97130),	-- Tia-Tia, the Scything Star
+								i(96977),	-- Zeeg's Ancient Kegsmasher
+								i(96994),	-- Visage of the Doomed
 							}),	
-							i(96607), -- Lost Shoulders of Fire	
-							i(96609), -- Lost Shoulders of Fluidity	
-							i(96608), -- Lost Shoulders of Healing	
-							i(96612), -- Forgotten Mantle of the Moon	
-							i(96613), -- Forgotten Mantle of the Sun	
-							i(96614), -- Abandoned Spaulders of Arrowflight	
-							i(96615), -- Abandoned Spaulders of Renewal	
-							i(96618), -- Reconstructed Bloody Shoulderplates	
-							i(96617), -- Reconstructed Furious Shoulderplates	
-							i(96616), -- Reconstructed Holy Shoulderplates	
-							i(96621), -- Bo-Ris, Horror in the Night	
-							i(96606), -- Darkwood Spiritstaff	
-							i(96620), -- Do-tharak, the Swordbreaker	
-							i(96604), -- Fyn's Flickering Dagger	
-							i(96619), -- Greatsword of Frozen Hells	
-							i(96602), -- Invocation of the Dawn	
-							i(96611), -- Jerthud, Graceful Hand of the Savior	
-							i(96603), -- Miracoran, the Vehement Chord	
-							i(96610), -- Nadagast's Exsanguinator	
-							i(97127), -- Tia-Tia, the Scything Star	
-							i(96605), -- Zeeg's Ancient Kegsmasher	
-							i(96622), -- Visage of the Doomed
+							i(96607),	-- Lost Shoulders of Fire	
+							i(96609),	-- Lost Shoulders of Fluidity	
+							i(96608),	-- Lost Shoulders of Healing	
+							i(96612),	-- Forgotten Mantle of the Moon	
+							i(96613),	-- Forgotten Mantle of the Sun	
+							i(96614),	-- Abandoned Spaulders of Arrowflight	
+							i(96615),	-- Abandoned Spaulders of Renewal	
+							i(96618),	-- Reconstructed Bloody Shoulderplates	
+							i(96617),	-- Reconstructed Furious Shoulderplates	
+							i(96616),	-- Reconstructed Holy Shoulderplates	
+							i(96621),	-- Bo-Ris, Horror in the Night	
+							i(96606),	-- Darkwood Spiritstaff	
+							i(96620),	-- Do-tharak, the Swordbreaker	
+							i(96604),	-- Fyn's Flickering Dagger	
+							i(96619),	-- Greatsword of Frozen Hells	
+							i(96602),	-- Invocation of the Dawn	
+							i(96611),	-- Jerthud, Graceful Hand of the Savior	
+							i(96603),	-- Miracoran, the Vehement Chord	
+							i(96610),	-- Nadagast's Exsanguinator	
+							i(97127),	-- Tia-Tia, the Scything Star	
+							i(96605),	-- Zeeg's Ancient Kegsmasher	
+							i(96622),	-- Visage of the Doomed
 						},
 					}),
 					cr(69465, e(827, {	-- Jin'rokh the Breaker
@@ -1631,10 +1631,10 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					}),
 					cr(69134, e(816, {	-- Council of Elders
 						["crs"] = {
-							69131, -- Frost King Malakk
-							69132, -- High Priestess Mar'li
-							69134, -- Kazra'jin
-							69078, -- Sul the Sandrawler
+							69131,	-- Frost King Malakk
+							69132,	-- High Priestess Mar'li
+							69134,	-- Kazra'jin
+							69078,	-- Sul the Sandrawler
 						},
 						["groups"] = {
 							ach(8073),	-- Cage Match
@@ -1698,7 +1698,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							}),	
 						},
 					})),
-					i(98132, { -- Shado-Pan Geyser Gun
+					i(98132, {	-- Shado-Pan Geyser Gun
 						["description"] = "Must obtain 250 stacks of Spray Water from the geysers before Tortos.", 
 					}),
 					cr(67977, e(825, {	-- Tortos
@@ -1749,10 +1749,10 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					})),
 					cr(70212, e(821, {	-- Megaera (Flaming Head)
 						["crs"] = {
-							70252, -- Arcane Head <Head of Megaera>
-							70212, -- Flaming Head <Head of Megaera>
-							70235, -- Frozen Head <Head of Megaera>
-							70247, -- Venomous Head <Head of Megaera>
+							70252,	-- Arcane Head <Head of Megaera>
+							70212,	-- Flaming Head <Head of Megaera>
+							70235,	-- Frozen Head <Head of Megaera>
+							70247,	-- Venomous Head <Head of Megaera>
 						},
 						["groups"] = {
 							ach(8082),	-- Head Case
@@ -1961,7 +1961,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					})),
 					cr(69427, e(824, {	-- Dark Animus
 						["crs"] = {
-							69756, -- Anima Orb
+							69756,	-- Anima Orb
 						},
 						["groups"] = {
 							ach(8064),	-- Heroic: Dark Animus
@@ -2024,10 +2024,10 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					})),
 					cr(68078, e(817, {	-- Iron Qon
 						["crs"] = {
-							68081, -- Dam'ren <The Frozen Sage>
-							68078, -- Iron Qon <Mastern of Quilen>
-							68080, -- Quet'zal <The Stormcaller>
-							68079, -- Ro'shak <The Molten Flare>
+							68081,	-- Dam'ren <The Frozen Sage>
+							68078,	-- Iron Qon <Mastern of Quilen>
+							68080,	-- Quet'zal <The Stormcaller>
+							68079,	-- Ro'shak <The Molten Flare>
 						},
 						["groups"] = {
 							ach(8087),	-- Can't Touch This
@@ -2089,8 +2089,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					})),
 					cr(68905, e(829, {	-- Twin Consorts (Lu'lin)
 						["crs"] = {
-							68904, -- Suen <Mistress of Anger>
-							68905, -- Lu'lin <Mistress of Solitude>
+							68904,	-- Suen <Mistress of Anger>
+							68905,	-- Lu'lin <Mistress of Solitude>
 						},
 						["groups"] = {
 							{	-- From Dusk 'til Dawn

@@ -29,7 +29,7 @@ _.Instances = { tier(7, {	-- Legion
 					i(137537),	-- Tirathon's Betrayal
 					i(137542),	-- Metamorphosis Spark
 				})),
-				cr(96015, e(1695, { -- Inquisitor Tormentorum
+				cr(96015, e(1695, {	-- Inquisitor Tormentorum
 					i(137503),	-- Amice of Cruel Laughter
 					i(137525),	-- Blood-Spattered Gauntlets
 					i(137530),	-- Drape of Vile Misfortune
@@ -103,7 +103,7 @@ _.Instances = { tier(7, {	-- Legion
 						i(137537),	-- Tirathon's Betrayal
 						i(137542),	-- Metamorphosis Spark
 					})),
-					cr(96015, e(1695, { -- Inquisitor Tormentorum
+					cr(96015, e(1695, {	-- Inquisitor Tormentorum
 						i(137503),	-- Amice of Cruel Laughter
 						i(137525),	-- Blood-Spattered Gauntlets
 						i(137530),	-- Drape of Vile Misfortune
@@ -186,7 +186,7 @@ _.Instances = { tier(7, {	-- Legion
 						i(137537),	-- Tirathon's Betrayal
 						i(137542),	-- Metamorphosis Spark
 					})),
-					cr(96015, e(1695, { -- Inquisitor Tormentorum
+					cr(96015, e(1695, {	-- Inquisitor Tormentorum
 						i(137503),	-- Amice of Cruel Laughter
 						i(137525),	-- Blood-Spattered Gauntlets
 						i(137530),	-- Drape of Vile Misfortune

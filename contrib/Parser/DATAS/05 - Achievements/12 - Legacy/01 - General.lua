@@ -12,9 +12,9 @@ To do:
 
 _.Achievements = 
 {
-	n(-9968, { -- Legacy		NOTE: MOST WILL NEED THE un(2) TAG
+	n(-9968, {	-- Legacy		NOTE: MOST WILL NEED THE un(2) TAG
 		["groups"] = {
-			n(-9955, { -- General
+			n(-9955, {	-- General
 				["groups"] = {
 					un(2, ach(2921)),		-- A Quick Shave (25 player)
 					un(2, a(ach(8030))),	-- A Test of Valor (Alliance)

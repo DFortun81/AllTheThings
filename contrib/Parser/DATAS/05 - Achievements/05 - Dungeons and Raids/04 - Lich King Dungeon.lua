@@ -4,9 +4,9 @@
 
 _.Achievements = 
 {
-	n(-9959, { -- Dungeons & Raids
+	n(-9959, {	-- Dungeons & Raids
 		["groups"] = {
-			n(-10004, { -- Lich King Dungeon
+			n(-10004, {	-- Lich King Dungeon
 				["groups"] = {
 					{	-- A Void Dance
 						["achievementID"] = 2153,	-- A Void Dance

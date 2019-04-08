@@ -14,9 +14,9 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 			d(3, {	-- 10-Player
 				cr(34797, e(1618, {	-- Northrend Beasts [Icehowl]
 					["crs"] = {
-						34796, -- Gormok
-						35144, -- Acidmaw
-						34799, -- Dreadscale
+						34796,	-- Gormok
+						35144,	-- Acidmaw
+						34799,	-- Dreadscale
 					},
 					["groups"] = {
 						{	-- Call of the Crusade (10 player): Defeat the Beasts of Northrend
@@ -95,19 +95,19 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				cr(34461, e(1620, {	-- Champions of the Alliance [Tyrius Duskblade]
 					["races"] = HORDE_ONLY,
 					["crs"] = {	
-						34460, -- Kavina Grovesong
-						34469, -- Melador Valestrider
-						34467, -- Alyssia Moonstalker
-						34468, -- Noozle Whizzlestick
-						34465, -- Velanaa
-						34471, -- Baelnor Lightbearer
-						34466, -- Anthar Forgemender
-						34473, -- Brienna Nightfell
-						34472, -- Irieth Shadowstep
-						34463, -- Shaabad
-						34470, -- Saamul
-						34474, -- Serissa Grimdabbler
-						34475, -- Shocuul
+						34460,	-- Kavina Grovesong
+						34469,	-- Melador Valestrider
+						34467,	-- Alyssia Moonstalker
+						34468,	-- Noozle Whizzlestick
+						34465,	-- Velanaa
+						34471,	-- Baelnor Lightbearer
+						34466,	-- Anthar Forgemender
+						34473,	-- Brienna Nightfell
+						34472,	-- Irieth Shadowstep
+						34463,	-- Shaabad
+						34470,	-- Saamul
+						34474,	-- Serissa Grimdabbler
+						34475,	-- Shocuul
 					},	
 					["groups"] = {
 						{	-- Call of the Crusade (10 player): Defeat the Faction Champions
@@ -132,19 +132,19 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				cr(34458, e(1621, {	-- Champions of the Horde [Gorgrim Shadowcleave]
 					["races"] = ALLIANCE_ONLY,
 					["crs"] = {
-						34451, -- Birana Stormhoof
-						34459, -- Erin Misthoof
-						34448, -- Ruj'kah
-						34449, -- Ginselle Blightslinger
-						34445, -- Liandra Suncaller
-						34456, -- Malithas Brightblade
-						34447, -- Caiphus the Stern
-						34441, -- Vivienne Blackwhisper
-						34454, -- Maz'dinah
-						34455, -- Broln Stouthorn
-						34444, -- Thrakgar
-						34450, -- Harkzog
-						34453, -- Narrhok Steelbreaker
+						34451,	-- Birana Stormhoof
+						34459,	-- Erin Misthoof
+						34448,	-- Ruj'kah
+						34449,	-- Ginselle Blightslinger
+						34445,	-- Liandra Suncaller
+						34456,	-- Malithas Brightblade
+						34447,	-- Caiphus the Stern
+						34441,	-- Vivienne Blackwhisper
+						34454,	-- Maz'dinah
+						34455,	-- Broln Stouthorn
+						34444,	-- Thrakgar
+						34450,	-- Harkzog
+						34453,	-- Narrhok Steelbreaker
 					},
 					["groups"] = {
 						{	-- Call of the Crusade (10 player): Defeat the Faction Champions
@@ -168,7 +168,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				})),
 				cr(34497, e(1622, {	-- Twin Val'kyr [Fjola Lightane]
 					["crs"] = {
-						34496, -- Eydis Darkbane	
+						34496,	-- Eydis Darkbane	
 					},
 					["groups"] = {
 						{	-- Call of the Crusade (10 player): Defeat the Twin Val'kyr
@@ -254,90 +254,90 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				})),
 			}),
 			d(5, {	-- 10-Player Heroic
-				n(-1, { -- Common Boss Drops
+				n(-1, {	-- Common Boss Drops
 					["crs"] = {
-						34796, -- Gormok
-						35144, -- Acidmaw
-						34799, -- Dreadscale
-						34797, -- Icehowl
-						34780, -- Lord Jaraxxus
-						34461, -- Tyrius Duskblade
-						34460, -- Kavina Grovesong
-						34469, -- Melador Valestrider
-						34467, -- Alyssia Moonstalker
-						34468, -- Noozle Whizzlestick
-						34465, -- Velanaa
-						34471, -- Baelnor Lightbearer
-						34466, -- Anthar Forgemender
-						34473, -- Brienna Nightfell
-						34472, -- Irieth Shadowstep
-						34463, -- Shaabad
-						34470, -- Saamul
-						34474, -- Serissa Grimdabbler
-						34475, -- Shocuul
-						34458, -- Gorgrim Shadowcleave
-						34451, -- Birana Stormhoof
-						34459, -- Erin Misthoof
-						34448, -- Ruj'kah
-						34449, -- Ginselle Blightslinger
-						34445, -- Liandra Suncaller
-						34456, -- Malithas Brightblade
-						34447, -- Caiphus the Stern
-						34441, -- Vivienne Blackwhisper
-						34454, -- Maz'dinah
-						34455, -- Broln Stouthorn
-						34444, -- Thrakgar
-						34450, -- Harkzog
-						34453, -- Narrhok Steelbreaker
-						34497, -- Fjola Lightbane
-						34496, -- Eydis Darkbane
-						34564, -- Anub'arak
+						34796,	-- Gormok
+						35144,	-- Acidmaw
+						34799,	-- Dreadscale
+						34797,	-- Icehowl
+						34780,	-- Lord Jaraxxus
+						34461,	-- Tyrius Duskblade
+						34460,	-- Kavina Grovesong
+						34469,	-- Melador Valestrider
+						34467,	-- Alyssia Moonstalker
+						34468,	-- Noozle Whizzlestick
+						34465,	-- Velanaa
+						34471,	-- Baelnor Lightbearer
+						34466,	-- Anthar Forgemender
+						34473,	-- Brienna Nightfell
+						34472,	-- Irieth Shadowstep
+						34463,	-- Shaabad
+						34470,	-- Saamul
+						34474,	-- Serissa Grimdabbler
+						34475,	-- Shocuul
+						34458,	-- Gorgrim Shadowcleave
+						34451,	-- Birana Stormhoof
+						34459,	-- Erin Misthoof
+						34448,	-- Ruj'kah
+						34449,	-- Ginselle Blightslinger
+						34445,	-- Liandra Suncaller
+						34456,	-- Malithas Brightblade
+						34447,	-- Caiphus the Stern
+						34441,	-- Vivienne Blackwhisper
+						34454,	-- Maz'dinah
+						34455,	-- Broln Stouthorn
+						34444,	-- Thrakgar
+						34450,	-- Harkzog
+						34453,	-- Narrhok Steelbreaker
+						34497,	-- Fjola Lightbane
+						34496,	-- Eydis Darkbane
+						34564,	-- Anub'arak
 					},
 					["groups"] = {
 						i(47556),	-- Crusader Orb
-						a(i(47654)), -- Pattern: Bejeweled Wizard's Bracers
-						h(i(47639)), -- Pattern: Bejeweled Wizard's Bracers
-						a(i(47629)), -- Pattern: Black Chitin Bracers
-						h(i(47646)), -- Pattern: Black Chitin Bracers
-						a(i(47635)), -- Pattern: Bracers of Swift Death
-						h(i(47647)), -- Pattern: Bracers of Swift Death
-						a(i(47631)), -- Pattern: Crusader's Dragonscale Bracers
-						h(i(47648)), -- Pattern: Crusader's Dragonscale Bracers
-						a(i(47630)), -- Pattern: Crusader's Dragonscale Breastplate
-						h(i(47649)), -- Pattern: Crusader's Dragonscale Breastplate
-						a(i(47628)), -- Pattern: Ensorcelled Nerubian Breastplate
-						h(i(47650)), -- Pattern: Ensorcelled Nerubian Breastplate
-						a(i(47634)), -- Pattern: Knightbane Carapace
-						h(i(47651)), -- Pattern: Knightbane Carapace
-						a(i(47632)), -- Pattern: Lunar Eclipse Robes
-						h(i(47652)), -- Pattern: Lunar Eclipse Robes
-						a(i(47655)), -- Pattern: Merlin's Robe
-						h(i(47638)), -- Pattern: Merlin's Robe
-						a(i(47633)), -- Pattern: Moonshadow Armguards
-						h(i(47653)), -- Pattern: Moonshadow Armguards
-						a(i(47656)), -- Pattern: Royal Moonshroud Bracers
-						h(i(47637)), -- Pattern: Royal Moonshroud Bracers
-						a(i(47657)), -- Pattern: Royal Moonshroud Robe
-						h(i(47636)), -- Pattern: Royal Moonshroud Robe
-						i(47622), -- Plans: Breastplate of the White Knight [A]
-						i(47640), -- Plans: Breastplate of the White Knight [H]
-						i(47623), -- Plans: Saronite Swordbreakers [A]
-						i(47641), -- Plans: Saronite Swordbreakers [H]
-						i(47627), -- Plans: Sunforged Bracers [A]
-						i(47642), -- Plans: Sunforged Bracers [H]
-						i(47626), -- Plans: Sunforged Breastplate [A]
-						i(47643), -- Plans: Sunforged Breastplate [H]
-						i(47624), -- Plans: Titanium Razorplate [A]
-						i(47644), -- Plans: Titanium Razorplate [H]
-						i(47625), -- Plans: Titanium Spikeguards [A]
-						i(47645), -- Plans: Titanium Spikeguards [H]
+						a(i(47654)),	-- Pattern: Bejeweled Wizard's Bracers
+						h(i(47639)),	-- Pattern: Bejeweled Wizard's Bracers
+						a(i(47629)),	-- Pattern: Black Chitin Bracers
+						h(i(47646)),	-- Pattern: Black Chitin Bracers
+						a(i(47635)),	-- Pattern: Bracers of Swift Death
+						h(i(47647)),	-- Pattern: Bracers of Swift Death
+						a(i(47631)),	-- Pattern: Crusader's Dragonscale Bracers
+						h(i(47648)),	-- Pattern: Crusader's Dragonscale Bracers
+						a(i(47630)),	-- Pattern: Crusader's Dragonscale Breastplate
+						h(i(47649)),	-- Pattern: Crusader's Dragonscale Breastplate
+						a(i(47628)),	-- Pattern: Ensorcelled Nerubian Breastplate
+						h(i(47650)),	-- Pattern: Ensorcelled Nerubian Breastplate
+						a(i(47634)),	-- Pattern: Knightbane Carapace
+						h(i(47651)),	-- Pattern: Knightbane Carapace
+						a(i(47632)),	-- Pattern: Lunar Eclipse Robes
+						h(i(47652)),	-- Pattern: Lunar Eclipse Robes
+						a(i(47655)),	-- Pattern: Merlin's Robe
+						h(i(47638)),	-- Pattern: Merlin's Robe
+						a(i(47633)),	-- Pattern: Moonshadow Armguards
+						h(i(47653)),	-- Pattern: Moonshadow Armguards
+						a(i(47656)),	-- Pattern: Royal Moonshroud Bracers
+						h(i(47637)),	-- Pattern: Royal Moonshroud Bracers
+						a(i(47657)),	-- Pattern: Royal Moonshroud Robe
+						h(i(47636)),	-- Pattern: Royal Moonshroud Robe
+						i(47622),	-- Plans: Breastplate of the White Knight [A]
+						i(47640),	-- Plans: Breastplate of the White Knight [H]
+						i(47623),	-- Plans: Saronite Swordbreakers [A]
+						i(47641),	-- Plans: Saronite Swordbreakers [H]
+						i(47627),	-- Plans: Sunforged Bracers [A]
+						i(47642),	-- Plans: Sunforged Bracers [H]
+						i(47626),	-- Plans: Sunforged Breastplate [A]
+						i(47643),	-- Plans: Sunforged Breastplate [H]
+						i(47624),	-- Plans: Titanium Razorplate [A]
+						i(47644),	-- Plans: Titanium Razorplate [H]
+						i(47625),	-- Plans: Titanium Spikeguards [A]
+						i(47645),	-- Plans: Titanium Spikeguards [H]
 					},
 				}),
 				cr(34797, e(1618, {	-- Northrend Beasts [Icehowl]
 					["crs"] = {
-						34796, -- Gormok
-						35144, -- Acidmaw
-						34799, -- Dreadscale
+						34796,	-- Gormok
+						35144,	-- Acidmaw
+						34799,	-- Dreadscale
 					},
 					["groups"] = {
 						{	-- Call of the Grand Crusade (10 player): Defeat the Beasts of Northrend
@@ -416,19 +416,19 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				cr(34461, e(1620, {	-- Champions of the Alliance [Tyrius Duskblade]
 					["races"] = HORDE_ONLY,
 					["crs"] = {	
-						34460, -- Kavina Grovesong
-						34469, -- Melador Valestrider
-						34467, -- Alyssia Moonstalker
-						34468, -- Noozle Whizzlestick
-						34465, -- Velanaa
-						34471, -- Baelnor Lightbearer
-						34466, -- Anthar Forgemender
-						34473, -- Brienna Nightfell
-						34472, -- Irieth Shadowstep
-						34463, -- Shaabad
-						34470, -- Saamul
-						34474, -- Serissa Grimdabbler
-						34475, -- Shocuul
+						34460,	-- Kavina Grovesong
+						34469,	-- Melador Valestrider
+						34467,	-- Alyssia Moonstalker
+						34468,	-- Noozle Whizzlestick
+						34465,	-- Velanaa
+						34471,	-- Baelnor Lightbearer
+						34466,	-- Anthar Forgemender
+						34473,	-- Brienna Nightfell
+						34472,	-- Irieth Shadowstep
+						34463,	-- Shaabad
+						34470,	-- Saamul
+						34474,	-- Serissa Grimdabbler
+						34475,	-- Shocuul
 					},	
 					["groups"] = {
 						{	-- Call of the Grand Crusade (10 player): Defeat the Faction Champions
@@ -453,19 +453,19 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				cr(34458, e(1621, {	-- Champions of the Horde [Gorgrim Shadowcleave]
 					["races"] = ALLIANCE_ONLY,
 					["crs"] = {
-						34451, -- Birana Stormhoof
-						34459, -- Erin Misthoof
-						34448, -- Ruj'kah
-						34449, -- Ginselle Blightslinger
-						34445, -- Liandra Suncaller
-						34456, -- Malithas Brightblade
-						34447, -- Caiphus the Stern
-						34441, -- Vivienne Blackwhisper
-						34454, -- Maz'dinah
-						34455, -- Broln Stouthorn
-						34444, -- Thrakgar
-						34450, -- Harkzog
-						34453, -- Narrhok Steelbreaker
+						34451,	-- Birana Stormhoof
+						34459,	-- Erin Misthoof
+						34448,	-- Ruj'kah
+						34449,	-- Ginselle Blightslinger
+						34445,	-- Liandra Suncaller
+						34456,	-- Malithas Brightblade
+						34447,	-- Caiphus the Stern
+						34441,	-- Vivienne Blackwhisper
+						34454,	-- Maz'dinah
+						34455,	-- Broln Stouthorn
+						34444,	-- Thrakgar
+						34450,	-- Harkzog
+						34453,	-- Narrhok Steelbreaker
 					},
 					["groups"] = {
 						{	-- Call of the Grand Crusade (10 player): Defeat the Faction Champions
@@ -489,7 +489,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				})),
 				cr(34497, e(1622, {	-- Twin Val'kyr [Fjola Lightane]
 					["crs"] = {
-						34497, -- Fjola Lightbane	
+						34497,	-- Fjola Lightbane	
 					},
 					["groups"] = {
 						{	-- Call of the Grand Crusade (10 player): Defeat the Twin Val'kyr
@@ -575,91 +575,91 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				})),
 			}),
 			d(4, {	-- 25-Player
-				n(-1, { -- Common Boss Drops
+				n(-1, {	-- Common Boss Drops
 					["crs"] = {
-						34796, -- Gormok
-						35144, -- Acidmaw
-						34799, -- Dreadscale
-						34797, -- Icehowl
-						34780, -- Lord Jaraxxus
-						34461, -- Tyrius Duskblade
-						34460, -- Kavina Grovesong
-						34469, -- Melador Valestrider
-						34467, -- Alyssia Moonstalker
-						34468, -- Noozle Whizzlestick
-						34465, -- Velanaa
-						34471, -- Baelnor Lightbearer
-						34466, -- Anthar Forgemender
-						34473, -- Brienna Nightfell
-						34472, -- Irieth Shadowstep
-						34463, -- Shaabad
-						34470, -- Saamul
-						34474, -- Serissa Grimdabbler
-						34475, -- Shocuul
-						34458, -- Gorgrim Shadowcleave
-						34451, -- Birana Stormhoof
-						34459, -- Erin Misthoof
-						34448, -- Ruj'kah
-						34449, -- Ginselle Blightslinger
-						34445, -- Liandra Suncaller
-						34456, -- Malithas Brightblade
-						34447, -- Caiphus the Stern
-						34441, -- Vivienne Blackwhisper
-						34454, -- Maz'dinah
-						34455, -- Broln Stouthorn
-						34444, -- Thrakgar
-						34450, -- Harkzog
-						34453, -- Narrhok Steelbreaker
-						34497, -- Fjola Lightbane
-						34496, -- Eydis Darkbane
-						34564, -- Anub'arak
+						34796,	-- Gormok
+						35144,	-- Acidmaw
+						34799,	-- Dreadscale
+						34797,	-- Icehowl
+						34780,	-- Lord Jaraxxus
+						34461,	-- Tyrius Duskblade
+						34460,	-- Kavina Grovesong
+						34469,	-- Melador Valestrider
+						34467,	-- Alyssia Moonstalker
+						34468,	-- Noozle Whizzlestick
+						34465,	-- Velanaa
+						34471,	-- Baelnor Lightbearer
+						34466,	-- Anthar Forgemender
+						34473,	-- Brienna Nightfell
+						34472,	-- Irieth Shadowstep
+						34463,	-- Shaabad
+						34470,	-- Saamul
+						34474,	-- Serissa Grimdabbler
+						34475,	-- Shocuul
+						34458,	-- Gorgrim Shadowcleave
+						34451,	-- Birana Stormhoof
+						34459,	-- Erin Misthoof
+						34448,	-- Ruj'kah
+						34449,	-- Ginselle Blightslinger
+						34445,	-- Liandra Suncaller
+						34456,	-- Malithas Brightblade
+						34447,	-- Caiphus the Stern
+						34441,	-- Vivienne Blackwhisper
+						34454,	-- Maz'dinah
+						34455,	-- Broln Stouthorn
+						34444,	-- Thrakgar
+						34450,	-- Harkzog
+						34453,	-- Narrhok Steelbreaker
+						34497,	-- Fjola Lightbane
+						34496,	-- Eydis Darkbane
+						34564,	-- Anub'arak
 					},
 					["groups"] = {
-						i(47556), -- Crusader Orb
-						i(47242), -- Trophy of the Crusade
-						a(i(47654)), -- Pattern: Bejeweled Wizard's Bracers
-						h(i(47639)), -- Pattern: Bejeweled Wizard's Bracers
-						a(i(47629)), -- Pattern: Black Chitin Bracers
-						h(i(47646)), -- Pattern: Black Chitin Bracers
-						a(i(47635)), -- Pattern: Bracers of Swift Death
-						h(i(47647)), -- Pattern: Bracers of Swift Death
-						a(i(47631)), -- Pattern: Crusader's Dragonscale Bracers
-						h(i(47648)), -- Pattern: Crusader's Dragonscale Bracers
-						a(i(47630)), -- Pattern: Crusader's Dragonscale Breastplate
-						h(i(47649)), -- Pattern: Crusader's Dragonscale Breastplate
-						a(i(47628)), -- Pattern: Ensorcelled Nerubian Breastplate
-						h(i(47650)), -- Pattern: Ensorcelled Nerubian Breastplate
-						a(i(47634)), -- Pattern: Knightbane Carapace
-						h(i(47651)), -- Pattern: Knightbane Carapace
-						a(i(47632)), -- Pattern: Lunar Eclipse Robes
-						h(i(47652)), -- Pattern: Lunar Eclipse Robes
-						a(i(47655)), -- Pattern: Merlin's Robe
-						h(i(47638)), -- Pattern: Merlin's Robe
-						a(i(47633)), -- Pattern: Moonshadow Armguards
-						h(i(47653)), -- Pattern: Moonshadow Armguards
-						a(i(47656)), -- Pattern: Royal Moonshroud Bracers
-						h(i(47637)), -- Pattern: Royal Moonshroud Bracers
-						a(i(47657)), -- Pattern: Royal Moonshroud Robe
-						h(i(47636)), -- Pattern: Royal Moonshroud Robe
-						i(47622), -- Plans: Breastplate of the White Knight [A]
-						i(47640), -- Plans: Breastplate of the White Knight [H]
-						i(47623), -- Plans: Saronite Swordbreakers [A]
-						i(47641), -- Plans: Saronite Swordbreakers [H]
-						i(47627), -- Plans: Sunforged Bracers [A]
-						i(47642), -- Plans: Sunforged Bracers [H]
-						i(47626), -- Plans: Sunforged Breastplate [A]
-						i(47643), -- Plans: Sunforged Breastplate [H]
-						i(47624), -- Plans: Titanium Razorplate [A]
-						i(47644), -- Plans: Titanium Razorplate [H]
-						i(47625), -- Plans: Titanium Spikeguards [A]
-						i(47645), -- Plans: Titanium Spikeguards [H]
+						i(47556),	-- Crusader Orb
+						i(47242),	-- Trophy of the Crusade
+						a(i(47654)),	-- Pattern: Bejeweled Wizard's Bracers
+						h(i(47639)),	-- Pattern: Bejeweled Wizard's Bracers
+						a(i(47629)),	-- Pattern: Black Chitin Bracers
+						h(i(47646)),	-- Pattern: Black Chitin Bracers
+						a(i(47635)),	-- Pattern: Bracers of Swift Death
+						h(i(47647)),	-- Pattern: Bracers of Swift Death
+						a(i(47631)),	-- Pattern: Crusader's Dragonscale Bracers
+						h(i(47648)),	-- Pattern: Crusader's Dragonscale Bracers
+						a(i(47630)),	-- Pattern: Crusader's Dragonscale Breastplate
+						h(i(47649)),	-- Pattern: Crusader's Dragonscale Breastplate
+						a(i(47628)),	-- Pattern: Ensorcelled Nerubian Breastplate
+						h(i(47650)),	-- Pattern: Ensorcelled Nerubian Breastplate
+						a(i(47634)),	-- Pattern: Knightbane Carapace
+						h(i(47651)),	-- Pattern: Knightbane Carapace
+						a(i(47632)),	-- Pattern: Lunar Eclipse Robes
+						h(i(47652)),	-- Pattern: Lunar Eclipse Robes
+						a(i(47655)),	-- Pattern: Merlin's Robe
+						h(i(47638)),	-- Pattern: Merlin's Robe
+						a(i(47633)),	-- Pattern: Moonshadow Armguards
+						h(i(47653)),	-- Pattern: Moonshadow Armguards
+						a(i(47656)),	-- Pattern: Royal Moonshroud Bracers
+						h(i(47637)),	-- Pattern: Royal Moonshroud Bracers
+						a(i(47657)),	-- Pattern: Royal Moonshroud Robe
+						h(i(47636)),	-- Pattern: Royal Moonshroud Robe
+						i(47622),	-- Plans: Breastplate of the White Knight [A]
+						i(47640),	-- Plans: Breastplate of the White Knight [H]
+						i(47623),	-- Plans: Saronite Swordbreakers [A]
+						i(47641),	-- Plans: Saronite Swordbreakers [H]
+						i(47627),	-- Plans: Sunforged Bracers [A]
+						i(47642),	-- Plans: Sunforged Bracers [H]
+						i(47626),	-- Plans: Sunforged Breastplate [A]
+						i(47643),	-- Plans: Sunforged Breastplate [H]
+						i(47624),	-- Plans: Titanium Razorplate [A]
+						i(47644),	-- Plans: Titanium Razorplate [H]
+						i(47625),	-- Plans: Titanium Spikeguards [A]
+						i(47645),	-- Plans: Titanium Spikeguards [H]
 					},
 				}),
 				cr(34797, e(1618, {	-- Northrend Beasts [Icehowl]
 					["crs"] = {
-						34796, -- Gormok
-						35144, -- Acidmaw
-						34799, -- Dreadscale
+						34796,	-- Gormok
+						35144,	-- Acidmaw
+						34799,	-- Dreadscale
 					},
 					["groups"] = {
 						{	-- Call of the Crusade (25 player): Defeat the Beasts of Northrend
@@ -748,19 +748,19 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				cr(34461, e(1620, {	-- Champions of the Alliance [Tyrius Duskblade]
 					["races"] = HORDE_ONLY,
 					["crs"] = {	
-						34460, -- Kavina Grovesong
-						34469, -- Melador Valestrider
-						34467, -- Alyssia Moonstalker
-						34468, -- Noozle Whizzlestick
-						34465, -- Velanaa
-						34471, -- Baelnor Lightbearer
-						34466, -- Anthar Forgemender
-						34473, -- Brienna Nightfell
-						34472, -- Irieth Shadowstep
-						34463, -- Shaabad
-						34470, -- Saamul
-						34474, -- Serissa Grimdabbler
-						34475, -- Shocuul
+						34460,	-- Kavina Grovesong
+						34469,	-- Melador Valestrider
+						34467,	-- Alyssia Moonstalker
+						34468,	-- Noozle Whizzlestick
+						34465,	-- Velanaa
+						34471,	-- Baelnor Lightbearer
+						34466,	-- Anthar Forgemender
+						34473,	-- Brienna Nightfell
+						34472,	-- Irieth Shadowstep
+						34463,	-- Shaabad
+						34470,	-- Saamul
+						34474,	-- Serissa Grimdabbler
+						34475,	-- Shocuul
 					},
 					["groups"] = {
 						{	-- Call of the Crusade (25 player): Defeat the Faction Champions
@@ -787,19 +787,19 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				cr(34458, e(1621, {	-- Champions of the Horde [Gorgrim Shadowcleave]
 					["races"] = ALLIANCE_ONLY,
 					["crs"] = {
-						34451, -- Birana Stormhoof
-						34459, -- Erin Misthoof
-						34448, -- Ruj'kah
-						34449, -- Ginselle Blightslinger
-						34445, -- Liandra Suncaller
-						34456, -- Malithas Brightblade
-						34447, -- Caiphus the Stern
-						34441, -- Vivienne Blackwhisper
-						34454, -- Maz'dinah
-						34455, -- Broln Stouthorn
-						34444, -- Thrakgar
-						34450, -- Harkzog
-						34453, -- Narrhok Steelbreaker
+						34451,	-- Birana Stormhoof
+						34459,	-- Erin Misthoof
+						34448,	-- Ruj'kah
+						34449,	-- Ginselle Blightslinger
+						34445,	-- Liandra Suncaller
+						34456,	-- Malithas Brightblade
+						34447,	-- Caiphus the Stern
+						34441,	-- Vivienne Blackwhisper
+						34454,	-- Maz'dinah
+						34455,	-- Broln Stouthorn
+						34444,	-- Thrakgar
+						34450,	-- Harkzog
+						34453,	-- Narrhok Steelbreaker
 					},
 					["groups"] = {
 						{	-- Call of the Crusade (25 player): Defeat the Faction Champions
@@ -825,7 +825,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				})),
 				cr(34497, e(1622, {	-- Twin Val'kyr [Fjola Lightane]
 					["crs"] = {
-						34496, -- Eydis Darkbane	
+						34496,	-- Eydis Darkbane	
 					},
 					["groups"] = {
 						{	-- Call of the Crusade (25 player): Defeat the Twin Val'kyr
@@ -919,91 +919,91 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				})),
 			}),
 			d(6, {	-- 25-Player Heroic	
-				n(-1, { -- Common Boss Drops
+				n(-1, {	-- Common Boss Drops
 					["crs"] = {
-						34796, -- Gormok
-						35144, -- Acidmaw
-						34799, -- Dreadscale
-						34797, -- Icehowl
-						34780, -- Lord Jaraxxus
-						34461, -- Tyrius Duskblade
-						34460, -- Kavina Grovesong
-						34469, -- Melador Valestrider
-						34467, -- Alyssia Moonstalker
-						34468, -- Noozle Whizzlestick
-						34465, -- Velanaa
-						34471, -- Baelnor Lightbearer
-						34466, -- Anthar Forgemender
-						34473, -- Brienna Nightfell
-						34472, -- Irieth Shadowstep
-						34463, -- Shaabad
-						34470, -- Saamul
-						34474, -- Serissa Grimdabbler
-						34475, -- Shocuul
-						34458, -- Gorgrim Shadowcleave
-						34451, -- Birana Stormhoof
-						34459, -- Erin Misthoof
-						34448, -- Ruj'kah
-						34449, -- Ginselle Blightslinger
-						34445, -- Liandra Suncaller
-						34456, -- Malithas Brightblade
-						34447, -- Caiphus the Stern
-						34441, -- Vivienne Blackwhisper
-						34454, -- Maz'dinah
-						34455, -- Broln Stouthorn
-						34444, -- Thrakgar
-						34450, -- Harkzog
-						34453, -- Narrhok Steelbreaker
-						34497, -- Fjola Lightbane
-						34496, -- Eydis Darkbane
-						34564, -- Anub'arak
+						34796,	-- Gormok
+						35144,	-- Acidmaw
+						34799,	-- Dreadscale
+						34797,	-- Icehowl
+						34780,	-- Lord Jaraxxus
+						34461,	-- Tyrius Duskblade
+						34460,	-- Kavina Grovesong
+						34469,	-- Melador Valestrider
+						34467,	-- Alyssia Moonstalker
+						34468,	-- Noozle Whizzlestick
+						34465,	-- Velanaa
+						34471,	-- Baelnor Lightbearer
+						34466,	-- Anthar Forgemender
+						34473,	-- Brienna Nightfell
+						34472,	-- Irieth Shadowstep
+						34463,	-- Shaabad
+						34470,	-- Saamul
+						34474,	-- Serissa Grimdabbler
+						34475,	-- Shocuul
+						34458,	-- Gorgrim Shadowcleave
+						34451,	-- Birana Stormhoof
+						34459,	-- Erin Misthoof
+						34448,	-- Ruj'kah
+						34449,	-- Ginselle Blightslinger
+						34445,	-- Liandra Suncaller
+						34456,	-- Malithas Brightblade
+						34447,	-- Caiphus the Stern
+						34441,	-- Vivienne Blackwhisper
+						34454,	-- Maz'dinah
+						34455,	-- Broln Stouthorn
+						34444,	-- Thrakgar
+						34450,	-- Harkzog
+						34453,	-- Narrhok Steelbreaker
+						34497,	-- Fjola Lightbane
+						34496,	-- Eydis Darkbane
+						34564,	-- Anub'arak
 					},
 					["groups"] = {
 						i(47556),	-- Crusader Orb
 						i(47242),	-- Trophy of the Crusade
-						a(i(47654)), -- Pattern: Bejeweled Wizard's Bracers
-						h(i(47639)), -- Pattern: Bejeweled Wizard's Bracers
-						a(i(47629)), -- Pattern: Black Chitin Bracers
-						h(i(47646)), -- Pattern: Black Chitin Bracers
-						a(i(47635)), -- Pattern: Bracers of Swift Death
-						h(i(47647)), -- Pattern: Bracers of Swift Death
-						a(i(47631)), -- Pattern: Crusader's Dragonscale Bracers
-						h(i(47648)), -- Pattern: Crusader's Dragonscale Bracers
-						a(i(47630)), -- Pattern: Crusader's Dragonscale Breastplate
-						h(i(47649)), -- Pattern: Crusader's Dragonscale Breastplate
-						a(i(47628)), -- Pattern: Ensorcelled Nerubian Breastplate
-						h(i(47650)), -- Pattern: Ensorcelled Nerubian Breastplate
-						a(i(47634)), -- Pattern: Knightbane Carapace
-						h(i(47651)), -- Pattern: Knightbane Carapace
-						a(i(47632)), -- Pattern: Lunar Eclipse Robes
-						h(i(47652)), -- Pattern: Lunar Eclipse Robes
-						a(i(47655)), -- Pattern: Merlin's Robe
-						h(i(47638)), -- Pattern: Merlin's Robe
-						a(i(47633)), -- Pattern: Moonshadow Armguards
-						h(i(47653)), -- Pattern: Moonshadow Armguards
-						a(i(47656)), -- Pattern: Royal Moonshroud Bracers
-						h(i(47637)), -- Pattern: Royal Moonshroud Bracers
-						a(i(47657)), -- Pattern: Royal Moonshroud Robe
-						h(i(47636)), -- Pattern: Royal Moonshroud Robe
-						i(47622), -- Plans: Breastplate of the White Knight [A]
-						i(47640), -- Plans: Breastplate of the White Knight [H]
-						i(47623), -- Plans: Saronite Swordbreakers [A]
-						i(47641), -- Plans: Saronite Swordbreakers [H]
-						i(47627), -- Plans: Sunforged Bracers [A]
-						i(47642), -- Plans: Sunforged Bracers [H]
-						i(47626), -- Plans: Sunforged Breastplate [A]
-						i(47643), -- Plans: Sunforged Breastplate [H]
-						i(47624), -- Plans: Titanium Razorplate [A]
-						i(47644), -- Plans: Titanium Razorplate [H]
-						i(47625), -- Plans: Titanium Spikeguards [A]
-						i(47645), -- Plans: Titanium Spikeguards [H]
+						a(i(47654)),	-- Pattern: Bejeweled Wizard's Bracers
+						h(i(47639)),	-- Pattern: Bejeweled Wizard's Bracers
+						a(i(47629)),	-- Pattern: Black Chitin Bracers
+						h(i(47646)),	-- Pattern: Black Chitin Bracers
+						a(i(47635)),	-- Pattern: Bracers of Swift Death
+						h(i(47647)),	-- Pattern: Bracers of Swift Death
+						a(i(47631)),	-- Pattern: Crusader's Dragonscale Bracers
+						h(i(47648)),	-- Pattern: Crusader's Dragonscale Bracers
+						a(i(47630)),	-- Pattern: Crusader's Dragonscale Breastplate
+						h(i(47649)),	-- Pattern: Crusader's Dragonscale Breastplate
+						a(i(47628)),	-- Pattern: Ensorcelled Nerubian Breastplate
+						h(i(47650)),	-- Pattern: Ensorcelled Nerubian Breastplate
+						a(i(47634)),	-- Pattern: Knightbane Carapace
+						h(i(47651)),	-- Pattern: Knightbane Carapace
+						a(i(47632)),	-- Pattern: Lunar Eclipse Robes
+						h(i(47652)),	-- Pattern: Lunar Eclipse Robes
+						a(i(47655)),	-- Pattern: Merlin's Robe
+						h(i(47638)),	-- Pattern: Merlin's Robe
+						a(i(47633)),	-- Pattern: Moonshadow Armguards
+						h(i(47653)),	-- Pattern: Moonshadow Armguards
+						a(i(47656)),	-- Pattern: Royal Moonshroud Bracers
+						h(i(47637)),	-- Pattern: Royal Moonshroud Bracers
+						a(i(47657)),	-- Pattern: Royal Moonshroud Robe
+						h(i(47636)),	-- Pattern: Royal Moonshroud Robe
+						i(47622),	-- Plans: Breastplate of the White Knight [A]
+						i(47640),	-- Plans: Breastplate of the White Knight [H]
+						i(47623),	-- Plans: Saronite Swordbreakers [A]
+						i(47641),	-- Plans: Saronite Swordbreakers [H]
+						i(47627),	-- Plans: Sunforged Bracers [A]
+						i(47642),	-- Plans: Sunforged Bracers [H]
+						i(47626),	-- Plans: Sunforged Breastplate [A]
+						i(47643),	-- Plans: Sunforged Breastplate [H]
+						i(47624),	-- Plans: Titanium Razorplate [A]
+						i(47644),	-- Plans: Titanium Razorplate [H]
+						i(47625),	-- Plans: Titanium Spikeguards [A]
+						i(47645),	-- Plans: Titanium Spikeguards [H]
 					},
 				}),
 				cr(34797, e(1618, {	-- Northrend Beasts [Icehowl]
 					["crs"] = {
-						34796, -- Gormok
-						35144, -- Acidmaw
-						34799, -- Dreadscale
+						34796,	-- Gormok
+						35144,	-- Acidmaw
+						34799,	-- Dreadscale
 					},
 					["groups"] = {
 						{	-- Call of the Grand Crusade (25 player): Defeat the Beasts of Northrend
@@ -1092,19 +1092,19 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				cr(34461, e(1620, {	-- Champions of the Alliance [Tyrius Duskblade]
 					["races"] = HORDE_ONLY,
 					["crs"] = {
-						34460, -- Kavina Grovesong
-						34469, -- Melador Valestrider
-						34467, -- Alyssia Moonstalker
-						34468, -- Noozle Whizzlestick
-						34465, -- Velanaa
-						34471, -- Baelnor Lightbearer
-						34466, -- Anthar Forgemender
-						34473, -- Brienna Nightfell
-						34472, -- Irieth Shadowstep
-						34463, -- Shaabad
-						34470, -- Saamul
-						34474, -- Serissa Grimdabbler
-						34475, -- Shocuul
+						34460,	-- Kavina Grovesong
+						34469,	-- Melador Valestrider
+						34467,	-- Alyssia Moonstalker
+						34468,	-- Noozle Whizzlestick
+						34465,	-- Velanaa
+						34471,	-- Baelnor Lightbearer
+						34466,	-- Anthar Forgemender
+						34473,	-- Brienna Nightfell
+						34472,	-- Irieth Shadowstep
+						34463,	-- Shaabad
+						34470,	-- Saamul
+						34474,	-- Serissa Grimdabbler
+						34475,	-- Shocuul
 					},
 					["groups"] = {
 						{	-- Call of the Grand Crusade (25 player): Defeat the Faction Champions
@@ -1131,19 +1131,19 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				cr(34458, e(1621, {	-- Champions of the Horde [Gorgrim Shadowcleave]
 					["races"] = ALLIANCE_ONLY,
 					["crs"] = {
-						34451, -- Birana Stormhoof
-						34459, -- Erin Misthoof
-						34448, -- Ruj'kah
-						34449, -- Ginselle Blightslinger
-						34445, -- Liandra Suncaller
-						34456, -- Malithas Brightblade
-						34447, -- Caiphus the Stern
-						34441, -- Vivienne Blackwhisper
-						34454, -- Maz'dinah
-						34455, -- Broln Stouthorn
-						34444, -- Thrakgar
-						34450, -- Harkzog
-						34453, -- Narrhok Steelbreaker
+						34451,	-- Birana Stormhoof
+						34459,	-- Erin Misthoof
+						34448,	-- Ruj'kah
+						34449,	-- Ginselle Blightslinger
+						34445,	-- Liandra Suncaller
+						34456,	-- Malithas Brightblade
+						34447,	-- Caiphus the Stern
+						34441,	-- Vivienne Blackwhisper
+						34454,	-- Maz'dinah
+						34455,	-- Broln Stouthorn
+						34444,	-- Thrakgar
+						34450,	-- Harkzog
+						34453,	-- Narrhok Steelbreaker
 					},
 					["groups"] = {
 						{	-- Call of the Grand Crusade (25 player): Defeat the Faction Champions
@@ -1169,7 +1169,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				})),
 				cr(34497, e(1622, {	-- Twin Val'kyr [Fjola Lightane]
 					["crs"] = {
-						34496, -- Eydis Darkbane
+						34496,	-- Eydis Darkbane
 					},
 					["groups"] = {
 						{	-- Call of the Grand Crusade (25 player): Defeat the Twin Val'kyr

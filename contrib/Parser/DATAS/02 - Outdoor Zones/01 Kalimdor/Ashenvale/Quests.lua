@@ -564,10 +564,10 @@ _.Zones =
 					},
 					{	-- Je'neu of the Earthen Ring
 						["questID"] = 824,
-						["qg"] = 12737, -- Mastok Wrilehiss
+						["qg"] = 12737,	-- Mastok Wrilehiss
 						["coord"] = { 74.1, 60.7, 63 },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 1918, -- Befouled Water Globe
+						["sourceQuest"] = 1918,	-- Befouled Water Globe
 						["groups"] = {
 							i(16659),	-- Deftkin Belt
 							i(16660),	-- Driftmire Shield
@@ -1252,7 +1252,7 @@ _.Zones =
 						["coord"] = { 12.7, 34.1, 63 },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
-							i(17692), -- Horn Ring
+							i(17692),	-- Horn Ring
 						},
 					},
 					{	-- Vortex

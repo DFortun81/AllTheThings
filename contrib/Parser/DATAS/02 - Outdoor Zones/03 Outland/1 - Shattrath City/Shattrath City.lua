@@ -4,10 +4,10 @@
 _.Zones =
 {
 	m(101, { 	-- Outland
-		m(111, { -- Shattrath City
+		m(111, {	-- Shattrath City
 			["groups"] = {
 				n(-228, {	-- Flight Master
-					fp(128, { -- Shattrath, Terokkar Forest
+					fp(128, {	-- Shattrath, Terokkar Forest
 						["coord"] = { 63.8, 41 },
 					}),
 				}),
@@ -299,14 +299,14 @@ _.Zones =
 						},
 						["collectible"] = false,	-- Turn off Collectible flags.
 					}),
-					faction(935, { -- The Sha'tar
+					faction(935, {	-- The Sha'tar
 						["g"] = {
-							q(13430, { -- Trial of the Naaru: Magtheridon
+							q(13430, {	-- Trial of the Naaru: Magtheridon
 								["g"] = {
 									i(31746) -- Phoenix-Fire Band
 								},
-								["qg"] = 18481, -- A'dal
-								["sourceQuests"] = { 10884, 10885, 10886 }, -- Trial of the Naaru: Mercy, Trial of the Naaru: Strength, Trial of the Naaru: Tenacity
+								["qg"] = 18481,	-- A'dal
+								["sourceQuests"] = { 10884, 10885, 10886 },	-- Trial of the Naaru: Mercy, Trial of the Naaru: Strength, Trial of the Naaru: Tenacity
 							}),
 						},
 					}),
@@ -378,14 +378,14 @@ _.Zones =
 						["coord"] = { 54.7, 44.3 },
 						["sourceQuests"] = { 10210 },	-- A'dal
 					}),
-					q(44863, { -- Clearing the Air
+					q(44863, {	-- Clearing the Air
 						["groups"] = {
-							i(142279), -- Plans: Windforged Rapier
-							i(142283), -- Plans: Skyforged Great Axe
-							i(142282), -- Plans: Stormforged Axe
+							i(142279),	-- Plans: Windforged Rapier
+							i(142283),	-- Plans: Skyforged Great Axe
+							i(142282),	-- Plans: Stormforged Axe
 						},
-						["qg"] = 115546, -- Lunelli
-						["requireSkill"] = 164, -- Blacksmithing
+						["qg"] = 115546,	-- Lunelli
+						["requireSkill"] = 164,	-- Blacksmithing
 					}),
 					q( 10009, {	-- Crackin' Some Skulls
 						["qg"] = 18584,	-- Sal'salabim
@@ -396,14 +396,14 @@ _.Zones =
 						["isWeekly"] = true,
 						["description"] = "This quest is only available during BC Timewalking.",
 					}),
-					q(41160, { -- Earth to Earth
+					q(41160, {	-- Earth to Earth
 						["groups"] = {
-							i(142284), -- Plans: Stoneforged Claymore
-							i(142287), -- Plans: Great Earthforged Hammer
-							i(142286), -- Plans: Lavaforged Warhammer
+							i(142284),	-- Plans: Stoneforged Claymore
+							i(142287),	-- Plans: Great Earthforged Hammer
+							i(142286),	-- Plans: Lavaforged Warhammer
 						},
-						["qg"] = 115546, -- Lunelli
-						["requireSkill"] = 164, -- Blacksmithing
+						["qg"] = 115546,	-- Lunelli
+						["requireSkill"] = 164,	-- Blacksmithing
 					}),
 					q( 10949, {	-- Entry Into the Black Temple (UNTESTED, NEEDS CONFIRMATION)
 						["qg"] = 18481,	-- A'dal
@@ -642,7 +642,7 @@ _.Zones =
 								["itemID"] = 23593,	-- Plans: Adamantite Rapier
 							},
 							{	-- Plans: Adamantite Rod
-								["itemID"]  = 25846, -- Plans: Adamantite Rod
+								["itemID"]  = 25846,	-- Plans: Adamantite Rod
 								["u"] = 1,
 							},
 						},
@@ -1577,12 +1577,12 @@ _.Zones =
 					}),
 					n(115546, {	-- Lunelli <Keeper of Lost Recipes>
 						["groups"] = {
-							i(142287), -- Plans: Great Earthforged Hammer
-							i(142286), -- Plans: Lavaforged Warhammer
-							i(142283), -- Plans: Skyforged Great Axe
-							i(142284), -- Plans: Stoneforged Claymore
-							i(142282), -- Plans: Stormforged Axe
-							i(142279), -- Plans: Windforged Rapier
+							i(142287),	-- Plans: Great Earthforged Hammer
+							i(142286),	-- Plans: Lavaforged Warhammer
+							i(142283),	-- Plans: Skyforged Great Axe
+							i(142284),	-- Plans: Stoneforged Claymore
+							i(142282),	-- Plans: Stormforged Axe
+							i(142279),	-- Plans: Windforged Rapier
 						},
 						["description"] = "She will only sell these recipes to those who have completed the quests that reward them.|r",
 						["coord"] = { 64.2, 71.4 },
@@ -2277,7 +2277,7 @@ _.Zones =
 							{				-- Schematic: Fused Wiring
 								["itemID"] = 32381,	-- Schematic: Fused Wiring
 								["spellID"] = 0,
-								["u"] = 7, -- now learned from trainer, schematic was removed from game
+								["u"] = 7,	-- now learned from trainer, schematic was removed from game
 							},
 						},
 					}),

@@ -8,8 +8,8 @@ _.Instances = { tier(4, {	-- Cataclysm
 		["sharedLockout"] = 1,
 		["lvl"] = 85,
 		["maps"] = {
-			285, -- Blackwing Descent (The Broken Hall)
-			286, -- Blackwing Descent (Vault of the Shadowflame)
+			285,	-- Blackwing Descent (The Broken Hall)
+			286,	-- Blackwing Descent (Vault of the Shadowflame)
 		},
 		["coord"] = { 47.54, 68.93, 13 },	-- Blackwing Descent, Eastern Kingdoms (This is the metamap it uses, don't change!)
 		["groups"] = {
@@ -31,7 +31,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 			d(1, {	-- Normal
 				["difficulties"] = { 3, 4 },
 				["groups"] = {
-					e(170, { -- Magmaw
+					e(170, {	-- Magmaw
 						["creatureID"] = 41570,
 						["groups"] = {
 							ach(5306),	-- Parasite Evening
@@ -49,7 +49,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 							i(59332),	-- Symbiotic Worm
 						},
 					}),
-					e(169, { -- Omnotron Defense System
+					e(169, {	-- Omnotron Defense System
 						["creatureID"] = 42179,
 						["groups"] = {
 							ach(5307),	-- Achieve-a-tron
@@ -68,7 +68,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 							i( 59220),	-- Security Measure Alpha
 						},
 					}),
-					e(173, { -- Maloriak
+					e(173, {	-- Maloriak
 						["creatureID"] = 41378,
 						["groups"] = {
 							ach(5310),	-- Aberrant Behavior
@@ -87,7 +87,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 							i( 59354),	-- Jar of Ancient Remedies
 						},
 					}),
-					e(171, { -- Atramedes
+					e(171, {	-- Atramedes
 						["creatureID"] = 41442,
 						["groups"] = {
 							ach(5308),	-- Silence is Golden
@@ -105,7 +105,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 							i(59326),	-- Bell of Enraging Resonance
 						},
 					}),
-					e(172, { -- Chimaeron
+					e(172, {	-- Chimaeron
 						["creatureID"] = 43296,
 						["groups"] = {
 							ach(5309),	-- Full of Sound and Fury
@@ -123,7 +123,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 							i(59224),	-- Heart of Rage
 						},
 					}),
-					e(174, { -- Nefarian's End
+					e(174, {	-- Nefarian's End
 						["creatureID"] = 41376,
 						["groups"] = {
 							ach(4849),	-- Keeping it in the Family
@@ -175,7 +175,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 			d(2, {	-- Heroic
 				["difficulties"] = { 5, 6 },
 				["groups"] = {
-					e(170, { -- Magmaw
+					e(170, {	-- Magmaw
 						["creatureID"] = 41570,
 						["groups"] = {
 							ach(5094),	-- Heroic: Magmaw
@@ -219,7 +219,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 							i(65048),	-- Symbiotic Worm
 						},
 					}),
-					e(169, { -- Omnotron Defense System
+					e(169, {	-- Omnotron Defense System
 						["creatureID"] = 42179,
 						["groups"] = {
 							ach(5107),	-- Heroic: Omnotron Defense System
@@ -239,7 +239,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 							i( 65076),	-- Security Measure Alpha
 						},
 					}),
-					e(173, { -- Maloriak
+					e(173, {	-- Maloriak
 						["creatureID"] = 41378,
 						["groups"] = {
 							ach(5108),	-- Heroic: Maloriak
@@ -284,7 +284,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 							i( 65029),	-- Jar of Ancient Remedies
 						},
 					}),
-					e(171, { -- Atramedes
+					e(171, {	-- Atramedes
 						["creatureID"] = 41442,
 						["groups"] = {
 							ach(5109),	-- Heroic: Atramedes
@@ -303,7 +303,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 							i(65053),	-- Bell of Enraging Resonance
 						},
 					}),
-					e(172, { -- Chimaeron
+					e(172, {	-- Chimaeron
 						["creatureID"] = 43296,
 						["groups"] = {
 							ach(5115),	-- Heroic: Chimaeron
@@ -322,7 +322,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 							i(65072),	-- Heart of Rage
 						},
 					}),
-					e(174, { -- Nefarian's End
+					e(174, {	-- Nefarian's End
 						["creatureID"] = 41376,
 						["groups"] = {
 							ach(5116, {	-- Heroic: Nefarian

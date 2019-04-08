@@ -9,6 +9,6 @@ _.WorldEvents =
 		["maps"] = {
 			408,	-- Cauldron of Rock
 		},
-		["achievementID"] = 6019, -- Come One, Come All!
+		["achievementID"] = 6019,	-- Come One, Come All!
 	},	
 };	

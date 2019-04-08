@@ -6,11 +6,11 @@ _.Instances = { tier(7, {	-- Legion
 	inst(860, {	-- Return to Karazhan
 		["lvl"] = 110,
 		["maps"] = {
-			815, 816, 817, 818, 819, 820, 821, 822, -- Upper
-			809, 810, 811, 812, 813, 814, -- Lower
+			815, 816, 817, 818, 819, 820, 821, 822,	-- Upper
+			809, 810, 811, 812, 813, 814,	-- Lower
 		},
 		["groups"] = {
-			n(-1, { -- Common Boss Drop
+			n(-1, {	-- Common Boss Drop
 				["groups"] = {
 					i(143615),	-- Technique: Glyph of Crackling Ox Lightning
 					i(143616),	-- Technique: Glyph of the Trusted Steed
@@ -20,12 +20,12 @@ _.Instances = { tier(7, {	-- Legion
 					114261,	-- Opera Hall: Westfall Story
 					114328,	-- Opera Hall: Beautiful Beast
 					113971,	-- Maiden of Virtue
-					114262, -- Attumen the Huntsman
+					114262,	-- Attumen the Huntsman
 					114312,	-- Moroes
 					114247,	-- The Curator
 					114350,	-- Shade of Medivh
-					114252, -- Mana Devourer
-					114790, -- Viz'aduum the Watcher
+					114252,	-- Mana Devourer
+					114790,	-- Viz'aduum the Watcher
 				},
 			}),
 			n(-2, {	-- Vendors

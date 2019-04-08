@@ -4,9 +4,9 @@
 
 _.Achievements =
 {
-	n(-9956, { -- Quests
+	n(-9956, {	-- Quests
 		["groups"] = {
-			n(-9976, { -- Kalimdor
+			n(-9976, {	-- Kalimdor
 				["groups"] = {
 					a(ach(4925, {	-- Ashenvale Quests (Alliance)
 						crit(1),		-- Maestra's Post

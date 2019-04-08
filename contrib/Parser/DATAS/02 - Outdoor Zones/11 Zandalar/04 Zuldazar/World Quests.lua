@@ -269,7 +269,7 @@ _.Zones =
 										i(162290),	-- Recipe: Ravenberry Tarts [Rank 3]
 									},
 									["requireSkill"] = 185,	-- Cooking
-									["qg"] = 134345, -- Collector Kojo <Tortollan Seekers Emissary>
+									["qg"] = 134345,	-- Collector Kojo <Tortollan Seekers Emissary>
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
 								q(52351, {	-- Work Order: Spiced Snapper [Rank 3]
@@ -277,7 +277,7 @@ _.Zones =
 										i(162297),	-- Recipe: Spiced Snapper [Rank 3]
 									},
 									["requireSkill"] = 185,	-- Cooking
-									["qg"] = 134345, -- Collector Kojo <Tortollan Seekers Emissary>
+									["qg"] = 134345,	-- Collector Kojo <Tortollan Seekers Emissary>
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
 								q(52350, {	-- Work Order: Swamp Fish 'n Chips [Rank 3]
@@ -285,7 +285,7 @@ _.Zones =
 										i(162291),	-- Recipe: Swamp Fish 'n Chips [Rank 3]
 									},
 									["requireSkill"] = 185,	-- Cooking
-									["qg"] = 134345, -- Collector Kojo <Tortollan Seekers Emissary>
+									["qg"] = 134345,	-- Collector Kojo <Tortollan Seekers Emissary>
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
 								{	-- Wrath of Rezan

@@ -8,7 +8,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 		["maps"] = { 574, 575, 576 },
 		["coord"] = { 31.91, 42.55, 539 },	-- Shadowmoon Valley, Draenor
 		["groups"] = {
-			n(-1, { -- Common Boss Drop
+			n(-1, {	-- Common Boss Drop
 				["crs"] = {
 					75509,	-- Sadana Bloodfury
 					75829,	-- Nhallish
@@ -228,10 +228,10 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 			d(2, {	-- Heroic
 				n(-17, {	-- Quests 			
 					q(37163, {
-						i(119003), -- Void Totem
+						i(119003),	-- Void Totem
 					}),
 					q(37164, {
-						i(118923), -- Sentinel's Companion is a pet
+						i(118923),	-- Sentinel's Companion is a pet
 					}),
 				}),	
 				cr(75509, e(1139, {	-- Sadana Bloodfury

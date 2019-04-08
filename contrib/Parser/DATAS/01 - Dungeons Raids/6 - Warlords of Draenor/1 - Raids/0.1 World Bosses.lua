@@ -36,7 +36,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				["achievementID"] = 9425,
 				["questID"] = 37464,
 				["isRaid"] = true,
-				["maps"] = { 542 }, -- Spires of Arak
+				["maps"] = { 542 },	-- Spires of Arak
 				["coord"] = { 37.0, 39.3, 542 },
 				["crs"] = {
 					87493,	-- Rukhmar (WoWHead)
@@ -67,7 +67,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(115438),	-- Signet of Burning Truths
 				},
 			}),
-			cr(94015, e(1452, { -- Supreme Lord Kazzak
+			cr(94015, e(1452, {	-- Supreme Lord Kazzak
 				["questID"] = 39380,
 				["isRaid"] = true,
 				["maps"] = {
@@ -75,28 +75,28 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				},
 				["coord"] = { 47.5, 22.1, 534 },
 				["groups"] = {
-					i(127976), -- Choker of Reciprocity
-					i(127977), -- Insightful Void-Link Chain
-					i(127978), -- Necklace of Flowing Light
-					i(127979), -- Studded Choker of the Accursed
-					i(127980), -- Void-Sealed Gorget
-					i(127974), -- Drape of the Doomguard
-					i(127971), -- Gossamer Felscorched Scarf
-					i(127975), -- Marked Cloak of Command
-					i(127973), -- Nether-Touched Cloak
-					i(127972), -- Spellcloak of Suramar
-					i(127981), -- Bracers of Perfect Discomfort
-					i(127983), -- Supreme Felchain Bracers
-					i(127982), -- Terrorweave Wristwraps
-					i(127984), -- Wristclasps of Righteous Reckoning
-					i(124545), -- Chipped Soul Prism
-					i(124546), -- Mark of Supreme Doom
+					i(127976),	-- Choker of Reciprocity
+					i(127977),	-- Insightful Void-Link Chain
+					i(127978),	-- Necklace of Flowing Light
+					i(127979),	-- Studded Choker of the Accursed
+					i(127980),	-- Void-Sealed Gorget
+					i(127974),	-- Drape of the Doomguard
+					i(127971),	-- Gossamer Felscorched Scarf
+					i(127975),	-- Marked Cloak of Command
+					i(127973),	-- Nether-Touched Cloak
+					i(127972),	-- Spellcloak of Suramar
+					i(127981),	-- Bracers of Perfect Discomfort
+					i(127983),	-- Supreme Felchain Bracers
+					i(127982),	-- Terrorweave Wristwraps
+					i(127984),	-- Wristclasps of Righteous Reckoning
+					i(124545),	-- Chipped Soul Prism
+					i(124546),	-- Mark of Supreme Doom
 				},
 			})),
 			cr(81535, e(1211, {	-- Tarlna the Ageless
 				["questID"] = 37462,
 				["isRaid"] = true,
-				["maps"] = { 543 }, -- Gorgrond
+				["maps"] = { 543 },	-- Gorgrond
 				["coord"] = { 47.0, 86.7, 543 },
 				["groups"] = {	
 					i(120089),	-- Chestguard of Rejuvenation

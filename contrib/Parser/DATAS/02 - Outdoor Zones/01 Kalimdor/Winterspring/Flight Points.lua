@@ -7,10 +7,10 @@ _.Zones =
 		m(83, {	-- Winterspring
 			["groups"] = {
 				n(-228, {	-- Flight Paths
-					fp(52, { -- Everlook, Winterspring
+					fp(52, {	-- Everlook, Winterspring
 						["coord"] = { 61, 48.6, 83 },
 					}),
-					fp(53, { -- Everlook, Winterspring
+					fp(53, {	-- Everlook, Winterspring
 						["coord"] = { 58.8, 48.2, 83 },
 					}),
 				}),

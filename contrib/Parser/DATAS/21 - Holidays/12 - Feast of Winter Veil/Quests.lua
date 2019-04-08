@@ -7,15 +7,15 @@ _.Holidays = bubbleDown({["u"] = 29},
 		["holidayID"] = 235485,	-- Feast of Winter Veil
 		["u"] = 29,				-- Feast of Winter Veil Filter
 		["g"] = {
-			n(-17, { -- Quests
+			n(-17, {	-- Quests
 				["g"] = {
 					-- ALLIANCE QUESTS --
-					q(7022, { -- Greatfather Winter is Here!
+					q(7022, {	-- Greatfather Winter is Here!
 						["qg"] = 13433,	-- Wulmort Jinglepocket
 						["maps"] = { 87 },	-- Ironforge
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(7023, { -- Greatfather Winter is Here!
+					q(7023, {	-- Greatfather Winter is Here!
 						["qgs"] = {
 							13435,	-- Khole Jinglepocket
 							23010,	-- Wolgren Jinglepocket
@@ -28,7 +28,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 						},
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(7025, { -- Treats for Greatfather Winter
+					q(7025, {	-- Treats for Greatfather Winter
 						["qg"] = 13444,	-- Greatfather Winter
 						["maps"] = { 87 },	-- Ironforge
 						["sourceQuests"] = { 
@@ -37,7 +37,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 						},	
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(7043, { -- You're a Mean One... (Alliance)
+					q(7043, {	-- You're a Mean One... (Alliance)
 						["qgs"] = {
 							13433,	-- Wulmort Jinglepocket
 							13636,	-- Strange Snowman
@@ -49,11 +49,11 @@ _.Holidays = bubbleDown({["u"] = 29},
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 						["groups"] = {
-							i(149503, { -- Stolen Gift
+							i(149503, {	-- Stolen Gift
 								["description"] = "This gift is granted to any player between levels 60-100. This gift doesn't drop any of the rare seasonal items; it's currently not worth it.",
 								["lvl"] = 60,
 							}),
-							i(116762, { -- Stolen Present
+							i(116762, {	-- Stolen Present
 								["lvl"] = 101,
 								["groups"] = {
 									-- Battle Pets/Companions
@@ -101,13 +101,13 @@ _.Holidays = bubbleDown({["u"] = 29},
 							}),
 						},
 					}),
-					q(7045, { -- A Smokywood Pastures Thank You! (Alliance)
+					q(7045, {	-- A Smokywood Pastures Thank You! (Alliance)
 						["qg"] = 13433,	-- Wulmort Jinglepocket
 						["maps"] = { 87, },	-- Ironforge
 						["sourceQuests"] = { 7043, },	-- You're a Mean One... (Alliance)
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
-							i(17726, { -- Smokywood Pastures Special Gift
+							i(17726, {	-- Smokywood Pastures Special Gift
 								["groups"] = {
 									-- Illusions
 									i(128649),	-- Illusion: Winter's Grasp
@@ -121,44 +121,44 @@ _.Holidays = bubbleDown({["u"] = 29},
 									i(17724),	-- Pattern: Green Holiday Shirt
 								},
 							}),
-							n(-297, { -- Mailbox
+							n(-297, {	-- Mailbox
 								["description"] = "Greatfather Winter will mail this toy to you approximately 1 day after you complete this quest.",
 								["groups"] = {
-									n(13444, { -- Greatfather Winter
+									n(13444, {	-- Greatfather Winter
 										un(29, i(17712)),	-- Winter Veil Disguise Kit
 									}),
 								},
 							}),
 						},
 					}),
-					q(7062, { -- The Reason for the Season (Alliance)					
+					q(7062, {	-- The Reason for the Season (Alliance)					
 						["qg"] = 1365,	-- Goli Krumn
 						["maps"] = { 87 },	-- Ironforge
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(7063, { -- The Feast of Winter Veil (Alliance)
+					q(7063, {	-- The Feast of Winter Veil (Alliance)
 						["qg"] = 2916,	-- Historian Karnik
 						["maps"] = { 87 },	-- Ironforge
 						["sourceQuest"] = 7062,	-- The Reason for the Season (Alliance)
 						["races"] = ALLIANCE_ONLY,
 					}),
 					-- HORDE QUESTS --
-					q(6961, { -- Great-father Winter is Here!
+					q(6961, {	-- Great-father Winter is Here!
 						["qg"] = 13418,	-- Kaymard Copperpinch
 						["maps"] = { 85 },	-- Orgrimmar
 						["races"] = HORDE_ONLY,
 					}),
-					q(7021, { -- Great-father Winter is Here!
+					q(7021, {	-- Great-father Winter is Here!
 						["qg"] = 13431,	-- Whulwert Copperpinch
 						["maps"] = { 88 },	-- Thunder Bluff
 						["races"] = HORDE_ONLY,
 					}),
-					q(7024, { -- Great-father Winter is Here!
+					q(7024, {	-- Great-father Winter is Here!
 						["qg"] = 13429,	-- Nardstrum Copperpinch
 						["maps"] = { 90 },	-- Undercity
 						["races"] = HORDE_ONLY,
 					}),
-					q(6962, { -- Treats for Great-father Winter
+					q(6962, {	-- Treats for Great-father Winter
 						["qg"] = 13445,	-- Great-father Winter
 						["maps"] = { 85 },	-- Orgrimmar
 						["sourceQuests"] = {
@@ -168,7 +168,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 						},
 						["races"] = HORDE_ONLY,
 					}),
-					q(6983, { -- You're a Mean One... (Horde)
+					q(6983, {	-- You're a Mean One... (Horde)
 						["qgs"] = {
 							13418,	-- Kaymard Copperpinch
 							13636,	-- Strange Snowman
@@ -180,11 +180,11 @@ _.Holidays = bubbleDown({["u"] = 29},
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 						["groups"] = {
-							i(149503, { -- Stolen Gift
+							i(149503, {	-- Stolen Gift
 								["description"] = "This gift is granted to any player between levels 60-100. This gift doesn't drop any of the rare seasonal items; it's currently not worth it.",
 								["lvl"] = 60,
 							}),
-							i(116762, { -- Stolen Present
+							i(116762, {	-- Stolen Present
 								["lvl"] = 101,
 								["groups"] = {
 									-- Battle Pets/Companions
@@ -228,13 +228,13 @@ _.Holidays = bubbleDown({["u"] = 29},
 							}),
 						},
 					}),
-					q(6984, { -- A Smokywood Pastures Thank You! (Horde)
+					q(6984, {	-- A Smokywood Pastures Thank You! (Horde)
 						["qg"] = 13418,	-- Kaymard Copperpinch
 						["maps"] = { 85 },	-- Orgrimmar
 						["sourceQuest"] = 6983,	-- You're a Mean One... (Horde)
 						["races"] = HORDE_ONLY,
 						["groups"] = {
-							i(17726, { -- Smokywood Pastures Special Gift
+							i(17726, {	-- Smokywood Pastures Special Gift
 								["groups"] = {
 									-- Illusions
 									i(128649),	-- Illusion: Winter's Grasp
@@ -248,22 +248,22 @@ _.Holidays = bubbleDown({["u"] = 29},
 									i(17724),	-- Pattern: Green Holiday Shirt
 								},
 							}),
-							n(-297, { -- Mailbox
+							n(-297, {	-- Mailbox
 								["description"] = "Great-father Winter will mail this toy to you approximately 1 day after you complete this quest.",
 								["groups"] = {
-									n(13445, { -- Great-father Winter
+									n(13445, {	-- Great-father Winter
 										un(29, i(17712)),	-- Winter Veil Disguise Kit
 									}),
 								},
 							}),
 						},
 					}),
-					q(6964, { -- The Reason for the Season (Horde)
+					q(6964, {	-- The Reason for the Season (Horde)
 						["qg"] = 9550,	-- Furmund
 						["maps"] = { 85 },	-- Orgrimmar
 						["races"] = HORDE_ONLY,
 					}),
-					q(7061, { -- The Feast of Winter Veil (Horde)
+					q(7061, {	-- The Feast of Winter Veil (Horde)
 						["qg"] = 13417,	-- Sagorne Creststrider
 						["maps"] = { 85 },	-- Orgrimmar
 						["sourceQuest"] = 6964,	-- The Reason for the Season (Horde)

@@ -3,7 +3,7 @@
 -------------------------------------------------------------------
 _.ExpansionFeatures =
 {
-	m(245, { -- Tol Barad Peninsula
+	m(245, {	-- Tol Barad Peninsula
 		["groups"] = {
 			n(-4, {	-- Achievements
 				["groups"] = {

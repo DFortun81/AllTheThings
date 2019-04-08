@@ -9,15 +9,15 @@ _.Zones =
 			-- Note: This expansion we do NOT want to mark this city as Horde Only because both factions will have various World Quests here
 			["groups"] = {
 				n(-228, {	-- Flight Paths
-					fp(1957, { -- Port of Zandalar, Zuldazar [H]
+					fp(1957, {	-- Port of Zandalar, Zuldazar [H]
 						["description"] = "Port of Zandalar, Zuldazar",
 						["coord"] = { 52.0, 90.0, 1165 },
 					}),
-					fp(1959, { -- The Great Seal [H]
+					fp(1959, {	-- The Great Seal [H]
 						["description"] = "The Great Seal",
 						["coord"] = { 51.92, 41.21, 1165 },
 					}),
-					fp(2061, { -- The Sliver, Zuldazar [H]
+					fp(2061, {	-- The Sliver, Zuldazar [H]
 						["description"] = "The Sliver, Zuldazar",
 						["coord"] = { 53.0, 19.2, 1165 },
 					}),

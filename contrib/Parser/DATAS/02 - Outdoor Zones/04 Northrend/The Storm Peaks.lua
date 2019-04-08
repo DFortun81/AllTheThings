@@ -132,7 +132,7 @@ _.Zones =
 						},
 						{			-- Remember Everfrost!
 							["questID"] = 13421,	-- Remember Everfrost!
-							["coord"] = { 67.0, 60.8, 120 }, -- needs verification, taken from wowhead.  there's some contention as to whether this quest is offered by an NPC or if the "qg" is just the turn-in NPC
+							["coord"] = { 67.0, 60.8, 120 },	-- needs verification, taken from wowhead.  there's some contention as to whether this quest is offered by an NPC or if the "qg" is just the turn-in NPC
 							["qg"] = 32594,	-- Quest Giver: Calder <Blacksmithing Supplies>
 							["sourceQuests"] = { 13420 },	-- Source Quest: Everfrost
 							["repeatable"]	= true,
@@ -912,7 +912,7 @@ _.Zones =
 						["sourceQuests"] = { 12888 },	-- SCRAP-E
 						["groups"] = {
 							{	-- Schematic: Scrapbot Construction Kit
-								["recipeID"] = 55252, -- Schematic: Scrapbot Construction Kit
+								["recipeID"] = 55252,	-- Schematic: Scrapbot Construction Kit
 							},
 						},
 							

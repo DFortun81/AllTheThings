@@ -15,7 +15,7 @@ _.Instances = { tier(7, {	-- Legion
 						91789,	-- Lady Hatecoil
 					},
 					["groups"] = {
-						artifact(926), -- Resto Shaman Hidden Artifact Skin
+						artifact(926),	-- Resto Shaman Hidden Artifact Skin
 					},
 				}),
 			}),
@@ -33,7 +33,7 @@ _.Instances = { tier(7, {	-- Legion
 				}),
 			}),	
 			d(1, {	-- Normal
-				n(0, { -- Zone Drops
+				n(0, {	-- Zone Drops
 					i(137726),	-- Schematic: Leystone Buoy
 				}),
 				cr(91784, e(1480, {	-- Warlord Parjesh
@@ -76,7 +76,7 @@ _.Instances = { tier(7, {	-- Legion
 					i(137375),	-- Blazing Hydra Flame Sac
 					i(137377),	-- Serpentrix's Guile
 				})),
-				cr(91797, e(1491, { -- King Deepbeard
+				cr(91797, e(1491, {	-- King Deepbeard
 					i(134539),	-- Braided Silver Ring
 					i(137368),	-- Breastplate of Ten Lashes
 					i(137369),	-- Giant Ornamental Pearl
@@ -115,7 +115,7 @@ _.Instances = { tier(7, {	-- Legion
 			d(2, {	-- Heroic
 				["lvl"] = 110,
 				["groups"] = {
-					n(0, { -- Zone Drops
+					n(0, {	-- Zone Drops
 						i(137726),	-- Schematic: Leystone Buoy
 					}),
 					cr(91784, e(1480, {	-- Warlord Parjesh
@@ -158,7 +158,7 @@ _.Instances = { tier(7, {	-- Legion
 						i(137375),	-- Blazing Hydra Flame Sac
 						i(137377),	-- Serpentrix's Guile
 					})),
-					cr(91797, e(1491, { -- King Deepbeard
+					cr(91797, e(1491, {	-- King Deepbeard
 						i(134539),	-- Braided Silver Ring
 						i(137368),	-- Breastplate of Ten Lashes
 						i(137369),	-- Giant Ornamental Pearl
@@ -198,7 +198,7 @@ _.Instances = { tier(7, {	-- Legion
 			d(23, {	-- Mythic
 				["lvl"] = 110,
 				["groups"] = {
-					n(0, { -- Zone Drops
+					n(0, {	-- Zone Drops
 						i(137726),	-- Schematic: Leystone Buoy
 					}),
 					cr(91784, e(1480, {	-- Warlord Parjesh
@@ -243,7 +243,7 @@ _.Instances = { tier(7, {	-- Legion
 						i(137375),	-- Blazing Hydra Flame Sac
 						i(137377),	-- Serpentrix's Guile
 					})),
-					cr(91797, e(1491, { -- King Deepbeard
+					cr(91797, e(1491, {	-- King Deepbeard
 						i(134539),	-- Braided Silver Ring
 						i(137368),	-- Breastplate of Ten Lashes
 						i(137369),	-- Giant Ornamental Pearl

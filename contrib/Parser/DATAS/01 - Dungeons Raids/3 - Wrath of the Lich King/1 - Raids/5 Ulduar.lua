@@ -1213,7 +1213,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(45936),	-- Legplates of Fluorishing Resolve
 					i(45483),	-- Boots of the Servant
 					i(46110, {	-- Alchemist's Cache
-						["requireSkill"] = 171, -- Alchemy
+						["requireSkill"] = 171,	-- Alchemy
 					}),
 				})),
 				cr(33350, e(1647, {	-- Mimiron

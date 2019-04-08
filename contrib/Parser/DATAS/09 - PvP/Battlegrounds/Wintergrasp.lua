@@ -58,10 +58,10 @@ _.PVP =
 					ach(1755),		-- Within Our Grasp
 				}),
 				n(-228, {	-- Flight Points
-					fp(303, { -- Valiance Landing Camp, Wintergrasp
+					fp(303, {	-- Valiance Landing Camp, Wintergrasp
 						["coord"] = { 72, 31 },
 					}),
-					fp(332, { -- Warsong Camp, Wintergrasp
+					fp(332, {	-- Warsong Camp, Wintergrasp
 						["coord"] = { 21.6, 34.8 },
 					}),
 				}),
@@ -279,7 +279,7 @@ _.PVP =
 								i(48982),	-- Titan-Forged Wristguards of Triumph
 							},
 						}),
-						na(30489, { -- Morgan Day <Jewelcrafter>
+						na(30489, {	-- Morgan Day <Jewelcrafter>
 							["itemID"] = 137642,	-- Mark of Honor
 							["coord"] = { 48.8, 17.6, 123 },
 							["g"] = {

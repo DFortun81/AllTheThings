@@ -22,7 +22,7 @@ _.Zones =
 						["sourceQuests"] = { 9623 },	-- Coming of Age
 					}),
 					--[[
-					o(207322, { -- Hero's Call Board (Exodar)
+					o(207322, {	-- Hero's Call Board (Exodar)
 						qa(28492),	-- Hero's Call: Ashenvale!
 						qa(28559),	-- Hero's Call: Bloodmyst Isle!
 						qa(27727),	-- Hero's Call: Deepholm!

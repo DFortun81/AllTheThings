@@ -14,7 +14,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 			d(1, {	-- Normal
 				["difficulties"] = { 3, 4 },
 				["groups"] = {
-					e(154, { -- The Conclave of Wind
+					e(154, {	-- The Conclave of Wind
 						["creatureID"] = 45871,
 						["groups"] = {
 							ach(5304),	-- Stay Chill
@@ -32,7 +32,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 							i(63494),	-- Planetary Band
 						},
 					}),
-					e(155, { -- Al'Akir
+					e(155, {	-- Al'Akir
 						["creatureID"] = 46753,
 						["groups"] = {
 							ach(5305),	-- Four Play
@@ -165,7 +165,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 								i(65186),	-- Magma Plated Faceguard	
 								i(65210)	-- Firelord's Hood	
 							}),
-							i(66998, { -- Essence of the Forlorn			
+							i(66998, {	-- Essence of the Forlorn			
 								i(65001, {	-- Crown of the Forlorn Conqueror	
 									i(65260),	-- Shadowflame Hood
 									i(65216),	-- Reinforced Sapphirium Helmet

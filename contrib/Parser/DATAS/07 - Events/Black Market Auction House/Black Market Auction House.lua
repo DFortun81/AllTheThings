@@ -5,7 +5,7 @@ _.WorldEvents =
 {
 	n(-94, { 	-- Black Market AH
 		["groups"] = {
-			n(-160, { -- Mounts
+			n(-160, {	-- Mounts
 				i(32458),	-- Ashes of Alar
 				i(95059),	-- Clutch of Ji-Kun
 				un(9, i(115484)),	-- Core Hound Chain
@@ -45,7 +45,7 @@ _.WorldEvents =
 				i(49286),	-- X-51 Nether-Rocket X-TREME
 
 			}),
-			n(-162, { -- Pets
+			n(-162, {	-- Pets
 				i(44984),	-- Ammen Vale Lashling Pet
 				i(34535),	-- Azure Whelpling
 				i(32588),	-- Banana Charm
@@ -119,7 +119,7 @@ _.WorldEvents =
 					i(87408),	-- Plans: Unyielding Bloodplate
 				},
 			}),
-			n(-325, { -- Tabard
+			n(-325, {	-- Tabard
 				i(38312),	-- Tabard of Brilliance
 				i(23705),	-- Tabard of Flame
 				i(23709),	-- Tabard of Frost
@@ -129,7 +129,7 @@ _.WorldEvents =
 				i(38314),	-- Tabard of the Defender
 				i(38311),	-- Tabard of the Void
 			}),
-			n(-3179, { -- Tier 3 (Naxxramas - Vanilla)
+			n(-3179, {	-- Tier 3 (Naxxramas - Vanilla)
 				["groups"] = {
 					gs(355, {	-- Vestments of Faith
 						un(9, i(22514)),	-- Circlet of Faith
@@ -224,7 +224,7 @@ _.WorldEvents =
 				},
 				["achievementID"] = 11744,	-- Drop Dead, Gorgeous
 			}),
-			n(-161, { -- Toy
+			n(-161, {	-- Toy
 				i(33223),	-- Fishing Chair
 				i(45063),	-- Foam Sword Rack
 				i(33219),	-- Goblin Gumbo Kettle
@@ -238,7 +238,7 @@ _.WorldEvents =
 			un(9, i(39769)),	-- Arcanite Ripper
 			i(50379),	-- Battered Hilt (Alliance)
 			i(50380),	-- Battered Hilt (Horde)
-			i(110678, { -- Darkmoon Ticket Fanny Pack
+			i(110678, {	-- Darkmoon Ticket Fanny Pack
 				["description"] = "Contains 250-500 Darkmoon Faire Tickets",
 			}),
 			un(7, i(128312)),	-- Elixir of the Rapid Mind
@@ -272,7 +272,7 @@ _.WorldEvents =
 				},
 				["itemID"] = 105751,
 			},
-			un(9, i(142000, { -- Rhinestone Sunglasses
+			un(9, i(142000, {	-- Rhinestone Sunglasses
 				["groups"] = {
 				},
 				["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.  NOTE: You will not be able to transmog this item",

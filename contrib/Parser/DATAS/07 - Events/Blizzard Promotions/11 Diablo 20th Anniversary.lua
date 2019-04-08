@@ -26,7 +26,7 @@ _.WorldEvents =
 						["description"] = "Can be found after killing the last boss in a dungeon or randomly in Legion zones, especially often in the Dalaran Underbelly. Kill him and enter his portal to fight The Cow King.",
 					}),
 				}, 
-				["achievementID"] = 11395, -- Diablo's 20th Anniversary
+				["achievementID"] = 11395,	-- Diablo's 20th Anniversary
 				["u"] = 3,
 			}),
 		},

@@ -284,10 +284,10 @@ _.Zones =
 					ach(938),	-- The Snows of Northrend
 				}),
 				n(-228, {	-- Flight Points
-					fp(309, { -- Nesingwary Base Camp, Sholazar Basin
+					fp(309, {	-- Nesingwary Base Camp, Sholazar Basin
 						["coord"] = { 25.2, 58.4 },
 					}),
-					fp(308, { -- River's Heart, Sholazar Basin
+					fp(308, {	-- River's Heart, Sholazar Basin
 						["coord"] = { 50, 61.4 },
 					}),
 				}),
@@ -411,23 +411,23 @@ _.Zones =
 					q(13024),	-- Wanikaya the Elder
 					q(12660),	-- Weapons of Destruction
 					--]]
-					q(12489, { -- Welcome to Sholazar Basin
-						["qg"] = 27987, -- Monte Muzzleshot
-						["sourceQuests"] = { 12521 }, -- Where in the World is Hemet Nesingwary?
+					q(12489, {	-- Welcome to Sholazar Basin
+						["qg"] = 27987,	-- Monte Muzzleshot
+						["sourceQuests"] = { 12521 },	-- Where in the World is Hemet Nesingwary?
 					}),
-					q(12524, { -- Venture Co. Misadventure
-						["qg"] = 28032, -- Debaar
-						["sourceQuests"] = { 27987 }, -- Welcome to Scholazar Basin
+					q(12524, {	-- Venture Co. Misadventure
+						["qg"] = 28032,	-- Debaar
+						["sourceQuests"] = { 27987 },	-- Welcome to Scholazar Basin
 					}),
-					q(12525, { -- Wipe That Grin Off His Face	
+					q(12525, {	-- Wipe That Grin Off His Face	
 						["groups"] = {
-							i(39332), -- Ogre-Crushing Wristguards
-							i(39376), -- Bracers of the Rejuvenated Forest
-							i(39430), -- Spitelinked Bracers
-							i(39452), -- Roaming Wristguards
+							i(39332),	-- Ogre-Crushing Wristguards
+							i(39376),	-- Bracers of the Rejuvenated Forest
+							i(39430),	-- Spitelinked Bracers
+							i(39452),	-- Roaming Wristguards
 						},
-						["qg"] = 28032, -- Debaar
-						["sourceQuests"] = { 12524 }, -- Venture Co. Misadventure
+						["qg"] = 28032,	-- Debaar
+						["sourceQuests"] = { 12524 },	-- Venture Co. Misadventure
 					}),
 					q(12691,  {  -- A Timeworn Coffer
 						i(39348),
@@ -650,9 +650,9 @@ _.Zones =
 					}),
 				}),
 				n(0, { 		-- Zone Drop
-					i(41122, { -- Plans: Reinforced Cobalt Chestpiece
+					i(41122, {	-- Plans: Reinforced Cobalt Chestpiece
 						["crs"] = {
-							28123, -- Venture Co. Excavator
+							28123,	-- Venture Co. Excavator
 						},
 					}),
 				}),

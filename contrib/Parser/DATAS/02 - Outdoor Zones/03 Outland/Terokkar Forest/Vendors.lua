@@ -41,7 +41,7 @@ _.Zones =
 						}),
 						nh(19772, {	-- Spirit Sage Gartok
 							["groups"] = {
-								currency(1704, { -- Spirit Shard
+								currency(1704, {	-- Spirit Shard
 									["groups"] = {
 										i(28553),	-- Band of the Exorcist
 										i(28576),	-- Exorcist's Chain Helm
@@ -62,7 +62,7 @@ _.Zones =
 						}),
 						na(19773, {	-- Spirit Sage Zran
 							["groups"] = {
-								currency(1704, { -- Spirit Shard
+								currency(1704, {	-- Spirit Shard
 									["groups"] = {
 										i(28553),	-- Band of the Exorcist
 										i(28576),	-- Exorcist's Chain Helm

@@ -214,8 +214,8 @@ _.Zones =
 						},
 						{	-- Azerite for the Alliance
 							["groups"] = {
-								i(166883), -- Treasure Map (Displayed when hovering over the quest on the map.)
-								i(166999), -- Treasure Map
+								i(166883),	-- Treasure Map (Displayed when hovering over the quest on the map.)
+								i(166999),	-- Treasure Map
 							},
 							["questID"] = 53436, 	-- Azerite for the Alliance
 							["qg"] = 131290,	-- Flynn

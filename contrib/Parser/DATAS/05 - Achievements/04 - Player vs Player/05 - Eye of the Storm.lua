@@ -12,9 +12,9 @@ To do:
 
 _.Achievements = 
 {
-	n(-9958, { -- Player vs Player
+	n(-9958, {	-- Player vs Player
 		["groups"] = {
-			n(-9986, { -- Eye of the Storm
+			n(-9986, {	-- Eye of the Storm
 				["groups"] = {
 					ach(233),	-- Bloodthirsty Berserker
 					ach(216),	-- Bound for Glory

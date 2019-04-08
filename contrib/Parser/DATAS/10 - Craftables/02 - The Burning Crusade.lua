@@ -3,7 +3,7 @@
 -----------------------------------------------------
 _.Craftables =
 {
-	tier(2, { -- The Burning Crusade
+	tier(2, {	-- The Burning Crusade
 		n(-180, {	-- Alchemy
 			filter(53, {	-- Trinkets
 				i(13503),	-- Alchemist Stone
@@ -489,7 +489,7 @@ _.Craftables =
 		}),
 		n(-185, { 	-- Inscription
 		-- Reviewed and updated as of 11.21.2018 BfA 8.0
-			n(-491, { -- Tarot Cards
+			n(-491, {	-- Tarot Cards
 				-- Blessings Deck
 				i(31882),	-- Ace of Blessings
 				i(31889),	-- Two of Blessings
@@ -826,7 +826,7 @@ _.Craftables =
 			}),
 		}),
 		n(-190, { 	-- Tailoring
-			filter(113, { -- Bags
+			filter(113, {	-- Bags
 				i(24270),	-- Bag of Jewels
 				i(22249),	-- Big Bag of Enchantment
 				i(21872),	-- Ebon Shadowbag

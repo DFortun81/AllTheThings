@@ -9,16 +9,16 @@ _.Instances = { tier(1, {	-- Classic
 		["coord"] = { 52.52, 57.83, 86 },	-- Ragefire Chasm, Orgrimmar [Cleft of Shadow]
 		["groups"] = {
 			n(-17, {	-- Quests
-				qa(30998, { -- A New Enemy
-					["qg"] = 61823, -- High Sorceress Aryna
+				qa(30998, {	-- A New Enemy
+					["qg"] = 61823,	-- High Sorceress Aryna
 				}),
-				qa(30995, { -- No Man Left Behind
-					["qg"] = 61822, -- SI:7 Field Commander Dirken
+				qa(30995, {	-- No Man Left Behind
+					["qg"] = 61822,	-- SI:7 Field Commander Dirken
 				}),					
 				{	-- The Dark Shaman (Alliance)
-					["questID"] = 30996, -- The Dark Shaman
+					["questID"] = 30996,	-- The Dark Shaman
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 61823, -- High Sorceress Aryna
+					["qg"] = 61823,	-- High Sorceress Aryna
 					["groups"] = {
 						{	-- Hide Vest of the Shaman
 							["itemID"] = 82893,	-- Hide Vest of the Shaman
@@ -43,14 +43,14 @@ _.Instances = { tier(1, {	-- Classic
 						},
 					},
 				},
-				qh(30969, { -- A New Enemy
-					["qg"] = 61716, -- Invoker Xorenth
+				qh(30969, {	-- A New Enemy
+					["qg"] = 61716,	-- Invoker Xorenth
 				}),
-				qh(30984, { -- No Orc Left Behind
-					["qg"] = 61823, -- Commander Bagran
+				qh(30984, {	-- No Orc Left Behind
+					["qg"] = 61823,	-- Commander Bagran
 				}),
-				qh(30983, { -- The Dark Shaman
-					["qg"] = 61716, -- Invoker Xorenth
+				qh(30983, {	-- The Dark Shaman
+					["qg"] = 61716,	-- Invoker Xorenth
 				}),
 			}),
 			cr(61408, e(694, {	-- Adarogg
@@ -80,26 +80,26 @@ _.Instances = { tier(1, {	-- Classic
 				i(151424),	-- Belt of Boundless Fury
 				i( 82886),	-- Gorewalker Treads
 			})),
-			n(-40, { -- Legacy
-				n(-17, { -- Quests (Legacy)
-					un(40, qh(26862, { -- Elemental Tampering
-						["qg"] = 44216, -- Bovaal Whitehorn
+			n(-40, {	-- Legacy
+				n(-17, {	-- Quests (Legacy)
+					un(40, qh(26862, {	-- Elemental Tampering
+						["qg"] = 44216,	-- Bovaal Whitehorn
 					})),
-					un(40, qh(26856, { -- Repel the Invasion
-						["qg"] = 44217, -- Stone Guard Kurjack
+					un(40, qh(26856, {	-- Repel the Invasion
+						["qg"] = 44217,	-- Stone Guard Kurjack
 					})),
 					un(40, qh(5724, {	-- Returning the Lost Satchel
 						un(2, i(15452)),	-- Featherbead Bracers
 						un(2, i(15453)),	-- Savannah Bracers
 					})),
-					un(40, qh(26858, { -- Taragaman the Hungerer
-						["qg"] = 44217, -- Stone Guard Kurjack
+					un(40, qh(26858, {	-- Taragaman the Hungerer
+						["qg"] = 44217,	-- Stone Guard Kurjack
 						["sourceQuests"] = {
-							26865, -- Enemies Below
-							26866, -- Enemies Below
-							26867, -- Enemies Below
-							28003, -- Adventurer's Wanted: Ragefire Chasm
-							31035, -- Enemies Below
+							26865,	-- Enemies Below
+							26866,	-- Enemies Below
+							26867,	-- Enemies Below
+							28003,	-- Adventurer's Wanted: Ragefire Chasm
+							31035,	-- Enemies Below
 						},
 						["groups"] = {
 							un(2, i(131614)), 	-- Chasm Linked Pants

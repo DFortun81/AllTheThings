@@ -165,7 +165,7 @@ _.Zones =
 								{	-- Luminous Monelite
 									["questID"] = 53308,	-- Luminous Monelite
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
-									["requireSkill"] = 186, -- Mining
+									["requireSkill"] = 186,	-- Mining
 								},
 								{	-- Night Horrors — Pet Battle
 									["questID"] = 52218,	-- Night Horrors
@@ -366,7 +366,7 @@ _.Zones =
 									},
 									["crs"] = {
 										148862,	-- Zillie Wunderwrench
-										148860, -- Grizzwald
+										148860,	-- Grizzwald
 									},
 									["isWQ"] = 120,
 									["races"] = HORDE_ONLY,

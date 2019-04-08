@@ -33,7 +33,7 @@ _.Zones =
 							["collectible"] = false,	-- Can't be completed solely in this zone
 						},
 						{	-- Bow To Your Masters [H]
-							["achievementID"] = 13020, -- Bow to Your Masters
+							["achievementID"] = 13020,	-- Bow to Your Masters
 							["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 							["races"] = HORDE_ONLY,
 							["g"] = {

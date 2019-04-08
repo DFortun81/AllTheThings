@@ -4,9 +4,9 @@
 
 _.Achievements = 
 {
-	n(-9963, { -- Pet Battles
+	n(-9963, {	-- Pet Battles
 		["groups"] = {
-			n(-9955, { -- General
+			n(-9955, {	-- General
 				["groups"] = {
 					ach(8080),	-- Fabled Pandaren Tamer*
 					ach(7908, {	-- I Choose You*

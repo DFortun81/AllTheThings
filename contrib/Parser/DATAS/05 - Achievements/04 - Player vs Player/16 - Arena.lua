@@ -12,11 +12,11 @@ To do:
 
 _.Achievements = 
 {
-	n(-9958, { -- Player vs Player
+	n(-9958, {	-- Player vs Player
 		["groups"] = {
-			n(-10000, { -- Arena
+			n(-10000, {	-- Arena
 				["groups"] = {
-					ach(876, { -- Brutally Dedicated
+					ach(876, {	-- Brutally Dedicated
 						i(43349),	-- Tabard of Brute Force
 						ach(875),	-- Vengefully Dedicated
 						ach(398), 	-- Mercilessly Dedicated [100]

@@ -118,8 +118,8 @@ _.WorldDrops =
 						["itemID"] = 100864,	-- Pattern: Hardened Magnificent Hide and Its Uses
 						["description"] = "Requires maxed Pandaria leatherworking skill to drop",
 					},
-					i(95467), -- Pattern: Magnificence of Leather
-					i(95468), -- Pattern: Magnificence of Scales
+					i(95467),	-- Pattern: Magnificence of Leather
+					i(95468),	-- Pattern: Magnificence of Scales
 				}),
 				n(-190, {	-- Tailoring
 					i(100863, {	-- Pattern: Celestial Cloth and Its Uses

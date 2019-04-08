@@ -111,13 +111,13 @@ _.ExpansionFeatures =
 								i(118531, {	-- Cache of Highmaul Treasures [Mythic]
 									["sym"] = {{"select", "instanceID", 477}, {"pop"}, {"where", "difficultyID", 16 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 2, 3, 4, 5, 6, 7, 8, 51, 52, 53 }},
 								}),
-								i(122484, { -- Blackrock Foundry Spoils [Normal]
+								i(122484, {	-- Blackrock Foundry Spoils [Normal]
 									["sym"] = {{"select", "instanceID", 457}, {"pop"}, {"where", "difficultyID", 14 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 2, 3, 4, 5, 6, 7, 51, 52, 53 }, {"not", "b", 2 }},
 								}),
-								i(122485, { -- Blackrock Foundry Spoils [Heroic]
+								i(122485, {	-- Blackrock Foundry Spoils [Heroic]
 									["sym"] = {{"select", "instanceID", 457}, {"pop"}, {"where", "difficultyID", 15 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 2, 3, 4, 5, 6, 7, 51, 52, 53 }, {"not", "b", 2 }},
 								}),
-								i(122486, { -- Blackrock Foundry Spoils [Mythic]
+								i(122486, {	-- Blackrock Foundry Spoils [Mythic]
 									["sym"] = {{"select", "instanceID", 457}, {"pop"}, {"where", "difficultyID", 16 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 2, 3, 4, 5, 6, 7, 51, 52, 53 }, {"not", "b", 2 }},
 								}),
 								i(114108, {	-- Tormented Armament
@@ -390,19 +390,19 @@ _.ExpansionFeatures =
 								ach(10160, {	-- Naval Treasure Expert
 									ach(10159),		-- Naval Treasure Specialist
 								}),
-								garrisonMission(649, { -- For Hate's Sake
+								garrisonMission(649, {	-- For Hate's Sake
 									["groups"] = {
 										i(128172),	-- Captain Sander's Returned Band
 									},
 									["description"] = "This rare mission has a chance to spawn after you build a level 3 Shipyard & completed the Quest Equipment Blueprint: Ghostly Spyglass, dropped from Captain Ironbeard in Tanaan Jungle."
 								}),
-								garrisonMission(650, { -- The House always wins
+								garrisonMission(650, {	-- The House always wins
 									["groups"] = {
 										i(128173),	-- Admiral Taylor's Loyalty Ring
 									},
 									["description"] = "This rare mission has a chance to spawn after you build a level 3 Shipyard & completed the Quest Equipment Blueprint: Ghostly Spyglass, dropped from Captain Ironbeard in Tanaan Jungle."
 								}),
-								garrisonMission(616, { -- The Wave Mistress
+								garrisonMission(616, {	-- The Wave Mistress
 									["groups"] = {
 										i(128169),	-- Signet of the Third Fleet
 									},

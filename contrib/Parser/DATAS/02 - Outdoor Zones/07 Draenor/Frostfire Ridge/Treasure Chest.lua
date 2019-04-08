@@ -17,12 +17,12 @@ _.Zones =
 								["questID"] = 33916,
 								["coord"] = { 23.17, 24.95, 525 },
 								["g"] = {
-									i(108735), -- Arena Master's War Horn Toy
+									i(108735),	-- Arena Master's War Horn Toy
 								},
 							},
 							{	-- Burning Pearl
 								["objectID"] = 230252,
-								["questID"] = 34520, -- also triggers 34521
+								["questID"] = 34520,	-- also triggers 34521
 								["coord"] = { 42.16, 19.30, 525 },
 								["g"] = {
 									i(120341),	-- Burning Pearl
@@ -63,7 +63,7 @@ _.Zones =
 							},
 							{	-- Forgotten Supplies
 								["objectID"] = 230909,
-								["questID"] = 34841, -- also triggered 34968
+								["questID"] = 34841,	-- also triggered 34968
 								["coord"] = { 43.7, 55.6, 525 },
 								["g"] = {
 									currency(824),	-- Garrison Resources
@@ -85,7 +85,7 @@ _.Zones =
 									{ 24.18, 48.60, 525 },	-- Frozen Frostwolf Axe
 								},
 								["g"] = {
-									i(110689), -- Icebound Frost-Singer Axe
+									i(110689),	-- Icebound Frost-Singer Axe
 								},
 							},
 							{	-- Gnawed Bone
@@ -137,7 +137,7 @@ _.Zones =
 								["modelScale"] = 10,
 								["g"] = {	
 									i(108738, {	-- Giant Draenor Clam
-										i(108739), -- Pretty Draenor Pearl Toy
+										i(108739),	-- Pretty Draenor Pearl Toy
 									}),
 								},
 							},
@@ -229,7 +229,7 @@ _.Zones =
 								["coords"] = { 34.20, 23.47, 525 },
 								["modelID"] = 65118,
 								["g"] = {
-									i(107658), -- Thunderlord Longspear
+									i(107658),	-- Thunderlord Longspear
 								},
 							},
 							{	-- Wiggling Egg
@@ -239,7 +239,7 @@ _.Zones =
 								["g"] = {
 									i(112107, {	-- Mysterious Egg
 										["g"] = {
-											i(117564), -- Fruit Hunter Pet
+											i(117564),	-- Fruit Hunter Pet
 										},
 									}),
 								},

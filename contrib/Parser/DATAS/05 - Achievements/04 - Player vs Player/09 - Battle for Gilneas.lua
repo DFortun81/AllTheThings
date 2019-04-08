@@ -12,9 +12,9 @@ To do:
 
 _.Achievements = 
 {
-	n(-9958, { -- Player vs Player
+	n(-9958, {	-- Player vs Player
 		["groups"] = {
-			n(-9990, { -- Battle for Gilneas
+			n(-9990, {	-- Battle for Gilneas
 				["groups"] = {
 					ach(5256, {	-- Battle for Gilneas All-Star
 						crit(1),	-- Assault a base

@@ -8,7 +8,7 @@ _.Zones =
 			["groups"] = {
 				n(-212, {	-- Treasure Chest
 					["groups"] = { -- If we are going to list every treasure chest then let's make it pretty and not show quest ID# on screen.
-						o(9999999, { -- Treasure Chest
+						o(9999999, {	-- Treasure Chest
 							["questID"] = 50922,
 							["isDaily"] = true,
 							["repeatable"] = true,
@@ -18,7 +18,7 @@ _.Zones =
 								{ 31.28, 49.15 },
 							},
 						}),
-						o(9999998, { -- Treasure Chest
+						o(9999998, {	-- Treasure Chest
 							["questID"] = 50920,
 							["isDaily"] = true,
 							["repeatable"] = true,
@@ -26,7 +26,7 @@ _.Zones =
 								43.95, 91.86
 							},
 						}),
-						o(9999997, { -- Treasure Chest
+						o(9999997, {	-- Treasure Chest
 							["questID"] = 51673,
 							["isDaily"] = true,
 							["repeatable"] = true,
@@ -34,7 +34,7 @@ _.Zones =
 								49.36, 80.18
 							},
 						}),
-						o(9999996, { -- Treasure Chest
+						o(9999996, {	-- Treasure Chest
 							["questID"] = 50926,
 							["isDaily"] = true,
 							["repeatable"] = true,
@@ -44,7 +44,7 @@ _.Zones =
 								{ 52.74, 76.49 },
 							},
 						}),
-						o(9999995, { -- Treasure Chest
+						o(9999995, {	-- Treasure Chest
 							["questID"] = 50928,
 							["isDaily"] = true,
 							["repeatable"] = true,
@@ -52,7 +52,7 @@ _.Zones =
 								58.48, 56.84
 							},
 						}),
-						o(9999994, { -- Treasure Chest
+						o(9999994, {	-- Treasure Chest
 							["questID"] = 50916,
 							["isDaily"] = true,
 							["repeatable"] = true,
@@ -60,7 +60,7 @@ _.Zones =
 								61.32, 32.36
 							},
 						}),
-						o(9999993, { -- Treasure Chest
+						o(9999993, {	-- Treasure Chest
 							["questID"] = 50914,
 							["isDaily"] = true,
 							["repeatable"] = true,
@@ -69,7 +69,7 @@ _.Zones =
 								{ 60.90, 12.72 },
 							},
 						}),
-						o(9999992, { -- Treasure Chest
+						o(9999992, {	-- Treasure Chest
 							["questID"] = 50918,
 							["isDaily"] = true,
 							["repeatable"] = true,
@@ -77,7 +77,7 @@ _.Zones =
 								65.83, 23.52
 							},
 						}),
-						o(9999991, { -- Treasure Chest
+						o(9999991, {	-- Treasure Chest
 							["questID"] = 50923,
 							["isDaily"] = true,
 							["repeatable"] = true,
@@ -86,7 +86,7 @@ _.Zones =
 								{ 27.15, 65.09 },
 							},
 						}),
-						o(9999980, { -- Treasure Chest
+						o(9999980, {	-- Treasure Chest
 							["questID"] = 50924,
 							["isDaily"] = true,
 							["repeatable"] = true,
@@ -96,7 +96,7 @@ _.Zones =
 								{ 37.56, 82.71 },
 							},
 						}),
-						o(9999974, { -- Treasure Chest
+						o(9999974, {	-- Treasure Chest
 							["questID"] = 50921,
 							["isDaily"] = true,
 							["repeatable"] = true,
@@ -105,7 +105,7 @@ _.Zones =
 								{ 48.20, 44.26 },
 							},
 						}),
-						o(9999973, { -- Treasure Chest
+						o(9999973, {	-- Treasure Chest
 							["questID"] = 50917,
 							["isDaily"] = true,
 							["repeatable"] = true,
@@ -113,7 +113,7 @@ _.Zones =
 								47.58, 31.63
 							},
 						}),
-						o(9999972, { -- Treasure Chest
+						o(9999972, {	-- Treasure Chest
 							["questID"] = 50919,
 							["isDaily"] = true,
 							["repeatable"] = true,

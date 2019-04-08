@@ -8,7 +8,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 		["mapID"] = 593,
 		["coord"] = { 46.27, 73.92, 535 },	-- Talador, Draenor
 		["groups"] = {
-			n(-1, { -- Common Boss Drop
+			n(-1, {	-- Common Boss Drop
 				["crs"] = {
 					75839,	-- Vigilant Kaathar
 					76177,	-- Soulbinder Nyami
@@ -68,7 +68,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(109769),	-- Slicebinder Loop
 					i(109777),	-- Unsullied Signet
 				})),
-				cr(76177, e(1186, { -- Soulbinder Nyami
+				cr(76177, e(1186, {	-- Soulbinder Nyami
 					i(110046),	-- Hammer of the Soulbinder
 					i(110047),	-- Soulcutter Mageblade
 					i(109957),	-- Alc's Pendant of Fiery Dreams
@@ -231,7 +231,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				["groups"] = {
 					n(-17, {	-- Quests 		
 						q(37156, {
-							i(119039), -- Lilian's Warning Sign Toy
+							i(119039),	-- Lilian's Warning Sign Toy
 						}),
 					}),
 					cr(75839, e(1185, {	-- Vigilant Kaathar
@@ -282,7 +282,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						i(109769),	-- Slicebinder Loop
 						i(109777),	-- Unsullied Signet
 					})),
-					cr(76177, e(1186, { -- Soulbinder Nyami
+					cr(76177, e(1186, {	-- Soulbinder Nyami
 						{	-- ...They All Fall Down
 							["achievementID"] = 9023,	-- ...They All Fall Down
 						},
@@ -502,7 +502,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						i(109769),	-- Slicebinder Loop
 						i(109777),	-- Unsullied Signet
 					})),
-					cr(76177, e(1186, { -- Soulbinder Nyami
+					cr(76177, e(1186, {	-- Soulbinder Nyami
 						i(110046),	-- Hammer of the Soulbinder
 						i(110047),	-- Soulcutter Mageblade
 						i(109957),	-- Alc's Pendant of Fiery Dreams
@@ -713,7 +713,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						i(109769),	-- Slicebinder Loop
 						i(109777),	-- Unsullied Signet
 					})),
-					cr(76177, e(1186, { -- Soulbinder Nyami
+					cr(76177, e(1186, {	-- Soulbinder Nyami
 						i(110046),	-- Hammer of the Soulbinder
 						i(110047),	-- Soulcutter Mageblade
 						i(109957),	-- Alc's Pendant of Fiery Dreams

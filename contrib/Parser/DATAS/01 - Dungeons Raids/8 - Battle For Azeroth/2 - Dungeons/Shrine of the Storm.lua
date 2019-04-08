@@ -2,17 +2,17 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 _.Instances = { tier(8, {	-- Battle For Azeroth
-	inst(1036, { -- Shrine of the Storm
+	inst(1036, {	-- Shrine of the Storm
 		["lvl"] = 110,
 		["maps"] = {
-			1039, -- Shrine of the Storm
-			1040, -- Storm's End
+			1039,	-- Shrine of the Storm
+			1040,	-- Storm's End
 		},
 		["groups"] = {
-			d(1, { -- Normal
-				e(2153, { -- Aqu'sirr
+			d(1, {	-- Normal
+				e(2153, {	-- Aqu'sirr
 					["crs"]  = {
-						134056, -- Aqu'sirr
+						134056,	-- Aqu'sirr
 						134828,	-- Aqualing
 					},
 					["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
@@ -24,10 +24,10 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						i(159619),	-- Briny Barnacle
 					}),
 				}),
-				e(2154, { -- Tidesage Council
+				e(2154, {	-- Tidesage Council
 					["crs"]  = {
-						134063, -- Brother Ironhull
-						134058, -- Galecaller Faye
+						134063,	-- Brother Ironhull
+						134058,	-- Galecaller Faye
 					},
 					["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						i(158371),	-- Seabreeze
@@ -39,9 +39,9 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						i(159614),	-- Galecaller's Boon
 					}),
 				}),
-				e(2155, { -- Lord Stormsong
+				e(2155, {	-- Lord Stormsong
 					["crs"]  = {
-						134060, -- Lord Stormsong
+						134060,	-- Lord Stormsong
 					},
 					["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						i(159646),	-- Aq'mar, the Tidecaller
@@ -52,9 +52,9 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						i(159242),	-- Leggings of the Drowned Lord
 					}),
 				}),
-				e(2156, { -- Vol'zith the Whisperer
+				e(2156, {	-- Vol'zith the Whisperer
 					["crs"]  = {
-						134069, -- Vol'zith the Whisperer
+						134069,	-- Vol'zith the Whisperer
 					},
 					["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						ach(12835),	-- Shrine of the Storm
@@ -71,12 +71,12 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					}),
 				}),
 			}),
-			d(2, { -- Heroic
+			d(2, {	-- Heroic
 				["lvl"] = 120,
 				["groups"] = {
-					e(2153, { -- Aqu'sirr
+					e(2153, {	-- Aqu'sirr
 						["crs"]  = {
-							134056, -- Aqu'sirr
+							134056,	-- Aqu'sirr
 						},
 						["groups"] = {
 							i(159321),	-- Gloves of Corrupted Water
@@ -87,10 +87,10 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							i(159619),	-- Briny Barnacle
 						},
 					}),
-					e(2154, { -- Tidesage Council
+					e(2154, {	-- Tidesage Council
 						["crs"]  = {
-							134063, -- Brother Ironhull
-							134058, -- Galecaller Faye
+							134063,	-- Brother Ironhull
+							134058,	-- Galecaller Faye
 						},
 						["groups"] = {
 							i(158371),	-- Seabreeze
@@ -102,9 +102,9 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							i(159614),	-- Galecaller's Boon
 						},
 					}),
-					e(2155, { -- Lord Stormsong
+					e(2155, {	-- Lord Stormsong
 						["crs"]  = {
-							134060, -- Lord Stormsong
+							134060,	-- Lord Stormsong
 						},
 						["groups"] = {
 							i(159646),	-- Aq'mar, the Tidecaller
@@ -115,9 +115,9 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							i(159242),	-- Leggings of the Drowned Lord
 						},
 					}),
-					e(2156, { -- Vol'zith the Whisperer
+					e(2156, {	-- Vol'zith the Whisperer
 						["crs"]  = {
-							134069, -- Vol'zith the Whisperer
+							134069,	-- Vol'zith the Whisperer
 						},
 						["groups"] = {
 							ach(12837),  -- Heroic: Shrine of the Storm
@@ -135,13 +135,13 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					}),
 				},
 			}),
-			d(23, { -- Mythic
+			d(23, {	-- Mythic
 				["lvl"] = 120,
 				["groups"] = {
 					ach(12600),	-- Breath of the Shrine
-					e(2153, { -- Aqu'sirr
+					e(2153, {	-- Aqu'sirr
 						["crs"]  = {
-							134056, -- Aqu'sirr
+							134056,	-- Aqu'sirr
 						},
 						["groups"] = {
 							i(159321),	-- Gloves of Corrupted Water
@@ -152,10 +152,10 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							i(159619),	-- Briny Barnacle
 						},
 					}),
-					e(2154, { -- Tidesage Council
+					e(2154, {	-- Tidesage Council
 						["crs"] = {
-							134063, -- Brother Ironhull
-							134058, -- Galecaller Faye
+							134063,	-- Brother Ironhull
+							134058,	-- Galecaller Faye
 						},
 						["groups"] = {
 							{ -- Ensemble: Vestments of the Tidesages
@@ -180,9 +180,9 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							i(159614),	-- Galecaller's Boon
 						},
 					}),
-					e(2155, { -- Lord Stormsong
+					e(2155, {	-- Lord Stormsong
 						["crs"]  = {
-							134060, -- Lord Stormsong
+							134060,	-- Lord Stormsong
 						},
 						["groups"] = {
 							ach(12601),	-- The Void Lies Sleeping
@@ -207,9 +207,9 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							i(159242),	-- Leggings of the Drowned Lord
 						},
 					}),
-					e(2156, { -- Vol'zith the Whisperer
+					e(2156, {	-- Vol'zith the Whisperer
 						["crs"]  = {
-							134069, -- Vol'zith the Whisperer
+							134069,	-- Vol'zith the Whisperer
 						},
 						["groups"] = {
 							ach(12838),	-- Mythic: Shrine of the Storm

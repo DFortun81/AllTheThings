@@ -36,23 +36,23 @@ _.Instances = { tier(4, {	-- Cataclysm
 				n(0, {	-- Zone Drop
 					i(56109, {    -- Book of Origination
 						["crs"] = {
-							39803, -- Air Warden
-							40310, -- Blistering Scarab
-							40787, -- Dustbone Horror
-							40311, -- Dustbone Tormentor
-							39801, -- Earth Warden
-							39800, -- Flame Warden
-							40033, -- Flux Animator
-							40715, -- Lifewarden Nymph
-							40170, -- Spatial Anomaly
-							39373, -- Sun-Touched Speaker
-							39370, -- Sun-Touched Spriteling
-							48143, -- Temple Fireshaper
-							48140, -- Temple Runecaster
-							48141, -- Temple Shadowlancer
-							48139, -- Temple Swiftstalker
-							39440, -- Venomous Skitterer
-							39802, -- Water Warden
+							39803,	-- Air Warden
+							40310,	-- Blistering Scarab
+							40787,	-- Dustbone Horror
+							40311,	-- Dustbone Tormentor
+							39801,	-- Earth Warden
+							39800,	-- Flame Warden
+							40033,	-- Flux Animator
+							40715,	-- Lifewarden Nymph
+							40170,	-- Spatial Anomaly
+							39373,	-- Sun-Touched Speaker
+							39370,	-- Sun-Touched Spriteling
+							48143,	-- Temple Fireshaper
+							48140,	-- Temple Runecaster
+							48141,	-- Temple Shadowlancer
+							48139,	-- Temple Swiftstalker
+							39440,	-- Venomous Skitterer
+							39802,	-- Water Warden
 						},
 					}),
 				}),
@@ -167,23 +167,23 @@ _.Instances = { tier(4, {	-- Cataclysm
 					n(0, {	-- Zone Drop
 						i(56109, {    -- Book of Origination
 							["crs"] = {
-								39803, -- Air Warden
-								40310, -- Blistering Scarab
-								40787, -- Dustbone Horror
-								40311, -- Dustbone Tormentor
-								39801, -- Earth Warden
-								39800, -- Flame Warden
-								40033, -- Flux Animator
-								40715, -- Lifewarden Nymph
-								40170, -- Spatial Anomaly
-								39373, -- Sun-Touched Speaker
-								39370, -- Sun-Touched Spriteling
-								48143, -- Temple Fireshaper
-								48140, -- Temple Runecaster
-								48141, -- Temple Shadowlancer
-								48139, -- Temple Swiftstalker
-								39440, -- Venomous Skitterer
-								39802, -- Water Warden
+								39803,	-- Air Warden
+								40310,	-- Blistering Scarab
+								40787,	-- Dustbone Horror
+								40311,	-- Dustbone Tormentor
+								39801,	-- Earth Warden
+								39800,	-- Flame Warden
+								40033,	-- Flux Animator
+								40715,	-- Lifewarden Nymph
+								40170,	-- Spatial Anomaly
+								39373,	-- Sun-Touched Speaker
+								39370,	-- Sun-Touched Spriteling
+								48143,	-- Temple Fireshaper
+								48140,	-- Temple Runecaster
+								48141,	-- Temple Shadowlancer
+								48139,	-- Temple Swiftstalker
+								39440,	-- Venomous Skitterer
+								39802,	-- Water Warden
 							},
 						}),
 						nld({     	-- Legacy

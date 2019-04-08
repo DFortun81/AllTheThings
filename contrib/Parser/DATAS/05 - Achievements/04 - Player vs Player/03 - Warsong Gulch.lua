@@ -12,9 +12,9 @@ To do:
 
 _.Achievements = 
 {
-	n(-9958, { -- Player vs Player
+	n(-9958, {	-- Player vs Player
 		["groups"] = {
-			n(-9984, { -- Warsong Gulch
+			n(-9984, {	-- Warsong Gulch
 				["groups"] = {
 					ach(199),		-- Capture the Flag
 					ach(872),		-- Frenzied Defender

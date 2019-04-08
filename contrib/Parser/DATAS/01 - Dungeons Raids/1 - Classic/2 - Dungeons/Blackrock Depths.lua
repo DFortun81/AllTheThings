@@ -10,63 +10,63 @@ _.Instances = { tier(1, {	-- Classic
 		["coord"] = { 39.06, 18.12, 35 },	-- Blackrock Depths, Blackrock Mountain [Blackrock Depths]
 		["groups"] = {
 			n(-17, {	-- Quests
-				n(-75, { -- Detention Block
-					qa(27569, { -- Dark Iron Tacticians
+				n(-75, {	-- Detention Block
+					qa(27569, {	-- Dark Iron Tacticians
 						["groups"] = {
 						},
-						["qg"] = 45894, -- Prospector Seymour
-						["sourceQuests"] = { 27568 }, -- Infilitrating Shadowforge City [Alliance]
+						["qg"] = 45894,	-- Prospector Seymour
+						["sourceQuests"] = { 27568 },	-- Infilitrating Shadowforge City [Alliance]
 					}),
-					qa(27568, { -- Infiltrating Shadowforge City [Alliance]
+					qa(27568, {	-- Infiltrating Shadowforge City [Alliance]
 						["groups"] = {
 						},
-						["qg"] = 45891, -- Oralius
+						["qg"] = 45891,	-- Oralius
 					}),
-					qh(27582, { -- Infiltrating Shadowforge City [Horde]
+					qh(27582, {	-- Infiltrating Shadowforge City [Horde]
 						["groups"] = {
 						},
-						["qg"] = 45839, -- Galamav the Marksman
+						["qg"] = 45839,	-- Galamav the Marksman
 					}),
-					qa(27565, { -- Into the Prison [Alliance]
+					qa(27565, {	-- Into the Prison [Alliance]
 						["groups"] = {
 						},
-						["qg"] = 45892, -- Jalinda Sprig
+						["qg"] = 45892,	-- Jalinda Sprig
 					}),
-					qh(27579, { -- Into the Prison [Horde]
+					qh(27579, {	-- Into the Prison [Horde]
 						["groups"] = {
 						},
-						["qg"] = 45821, -- Tha'trak Proudtusk
+						["qg"] = 45821,	-- Tha'trak Proudtusk
 					}),
-					qh(27585, { -- The 109th Division
+					qh(27585, {	-- The 109th Division
 						["groups"] = {
 						},
-						["qg"] = 45820, -- Razal'blade
-						["sourceQuests"] = { 27582 }, -- Infiltrating Shadowforge City [Horde]
+						["qg"] = 45820,	-- Razal'blade
+						["sourceQuests"] = { 27582 },	-- Infiltrating Shadowforge City [Horde]
 					}),
-					q(27596, { -- The Heart of the Mountain
+					q(27596, {	-- The Heart of the Mountain
 						["groups"] = {
 						},
-						["qg"] = 45850, -- Maxwort Uberglint
+						["qg"] = 45850,	-- Maxwort Uberglint
 					}),
-					q(27603, { -- The Sealed Gate
+					q(27603, {	-- The Sealed Gate
 						["groups"] = {
 						},
-						["qg"] = 45849, -- Tinkee Steamboil
+						["qg"] = 45849,	-- Tinkee Steamboil
 					}),
-					qa(27567, { -- Twilight?! No! [Alliance]
+					qa(27567, {	-- Twilight?! No! [Alliance]
 						["groups"] = {
 						},
-						["qg"] = 45898, -- Kevin Dawson
-						["sourceQuests"] = { 27565 }, -- Into the Prison [Alliance]
+						["qg"] = 45898,	-- Kevin Dawson
+						["sourceQuests"] = { 27565 },	-- Into the Prison [Alliance]
 					}),
-					qh(27581, { -- Twilight?! No! [Horde]
+					qh(27581, {	-- Twilight?! No! [Horde]
 						["groups"] = {
 						},
-						["qg"] = 45818, -- Lexlort
-						["sourceQuests"] = { 27579 }, -- Into the Prison [Horde]
+						["qg"] = 45818,	-- Lexlort
+						["sourceQuests"] = { 27579 },	-- Into the Prison [Horde]
 					}),
 				}),
-				n(-76, { -- Shadowforge City
+				n(-76, {	-- Shadowforge City
 					qr(qg(12944, q(6646))),	-- Favor Amongst the Brotherhood, Blood of the Mountain
 					qr(qg(12944, q(6645))),	-- Favor Amongst the Brotherhood, Core Leather
 					qr(qg(12944, q(6642))),	-- Favor Amongst the Brotherhood, Dark Iron Ore
@@ -74,46 +74,46 @@ _.Instances = { tier(1, {	-- Classic
 					qr(qg(12944, q(6644))),	-- Favor Amongst the Brotherhood, Lava Core
 					qa(27578, {	-- Morgan's Fruition
 						["groups"] = {
-							i(65956), -- Maxwell's Cloak
-							i(65932), -- Thaurissan's Breastplatee
-							i(65980), -- Dark Iron Band
+							i(65956),	-- Maxwell's Cloak
+							i(65932),	-- Thaurissan's Breastplatee
+							i(65980),	-- Dark Iron Band
 						},
 						["qg"] = 45890,   -- Marshal Maxwell
-						["sourceQuests"] = { 27573 }, -- The Dark Iron Pact [Alliance]
+						["sourceQuests"] = { 27573 },	-- The Dark Iron Pact [Alliance]
 					}),
-					qh(27593, { -- Rebirth of the K.E.F
+					qh(27593, {	-- Rebirth of the K.E.F
 						["groups"] = {
-							i(68052), -- Kargath Cloak
-							i(68053), -- Thaurissan's Breastplatee
-							i(65980), -- Dark Iron Band
+							i(68052),	-- Kargath Cloak
+							i(68053),	-- Thaurissan's Breastplatee
+							i(65980),	-- Dark Iron Band
 						},
-						["qg"] = 45840, -- Warlord Goretooth
+						["qg"] = 45840,	-- Warlord Goretooth
 						["sourceQuests"] = { 27591 },  -- The Dark Iron Pact [Horde]
 					}),
 					qr(qg(9503, q(4295))), 		-- Rocknot's Ale
-					qa(27573, { -- The Dark Iron Pact [Alliance]
+					qa(27573, {	-- The Dark Iron Pact [Alliance]
 						["groups"] = {
 						},
-						["qg"] = 45899, -- Mountaineer Orfus
-						["sourceQuests"] = { 27571 }, -- The Grim Guzzler [Alliance]
+						["qg"] = 45899,	-- Mountaineer Orfus
+						["sourceQuests"] = { 27571 },	-- The Grim Guzzler [Alliance]
 					}),
-					qh(27591, { -- The Dark Iron Pact [Horde]
+					qh(27591, {	-- The Dark Iron Pact [Horde]
 						["groups"] = {
 						},
-						["qg"] = 45824, --  Thunderheart
-						["sourceQuests"] = { 27589 }, -- The Grim Guzzler [Horde]
+						["qg"] = 45824,	--  Thunderheart
+						["sourceQuests"] = { 27589 },	-- The Grim Guzzler [Horde]
 					}),
-					qa(27571, { -- The Grim Guzzler [Alliance]
+					qa(27571, {	-- The Grim Guzzler [Alliance]
 						["groups"] = {
 						},
-						["qg"] = 45888, -- Mayara Brightwing
-						["sourceQuests"] = { 27569 }, -- Dark Iron Tacticians
+						["qg"] = 45888,	-- Mayara Brightwing
+						["sourceQuests"] = { 27569 },	-- Dark Iron Tacticians
 					}),
-					qh(27589, { -- The Grim Guzzler [Horde]
+					qh(27589, {	-- The Grim Guzzler [Horde]
 						["groups"] = {
 						},
-						["qg"] = 45817, -- Hierophant Theodora Mulvadania
-						["sourceQuests"] = { 27585 }, -- The 109th Division
+						["qg"] = 45817,	-- Hierophant Theodora Mulvadania
+						["sourceQuests"] = { 27585 },	-- The 109th Division
 					}),
 				}),
 			}),
@@ -285,7 +285,7 @@ _.Instances = { tier(1, {	-- Classic
 					["crs"] = {
 						8900,	-- Doomforge Arcanasmith
 					},
-					["u"] = 7, -- now learned from trainer, schematic was removed from game
+					["u"] = 7,	-- now learned from trainer, schematic was removed from game
 				},
 				i(18661, {	-- Schematic: World Enlarger
 					["crs"] = {
@@ -356,7 +356,7 @@ _.Instances = { tier(1, {	-- Classic
 					i(22240), 	-- Greaves of Withering Despaire
 				})),
 				cr(9025, e(370, {	-- Lord Roccor
-					un(7, i(11813)), -- Formula: Smoking Heart of the Mountain [old BOE version that was removed]
+					un(7, i(11813)),	-- Formula: Smoking Heart of the Mountain [old BOE version that was removed]
 					i(45050),	-- Formula: Smoking Heart of the Mountain [BOP]
 					i(11631), 	-- Stoneshell Guard
 					i(22234), 	-- Mantle of Lost Hope
@@ -463,7 +463,7 @@ _.Instances = { tier(1, {	-- Classic
 					i(22223), 	-- Foreman's Head Protector
 				})),
 			}),
-			n(-76, { -- Shadowforge City
+			n(-76, {	-- Shadowforge City
 				cr(9024, e(373, {	-- Pyromancer Loregrain
 					i(11207),	-- Formula: Enchant Weapon - Fiery Weapon
 					i(11750), 	-- Kindling Stave
@@ -472,14 +472,14 @@ _.Instances = { tier(1, {	-- Classic
 					i(11749), 	-- Searingscale Leggings
 					i(22270), 	-- Entrenching Boots
 				})),
-				n(-1001, { -- The Black Vault
-					cr(9041, e(375, { -- Warder Stilgiss
-						i(11784), -- Arbiter's Blade
-						i(22241), -- Dark Warder's Pauldrons
-						i(11782), -- Boreal Mantle
-						i(11783), -- Chillsteel Girdle
-						i(151405), -- Cold-Forged Chestplate
-						n(9042, { -- Verek
+				n(-1001, {	-- The Black Vault
+					cr(9041, e(375, {	-- Warder Stilgiss
+						i(11784),	-- Arbiter's Blade
+						i(22241),	-- Dark Warder's Pauldrons
+						i(11782),	-- Boreal Mantle
+						i(11783),	-- Chillsteel Girdle
+						i(151405),	-- Cold-Forged Chestplate
+						n(9042, {	-- Verek
 							i(11755),	-- Verek's Collar
 							i(22242),	-- Verek's Leash
 						}),
@@ -488,8 +488,8 @@ _.Instances = { tier(1, {	-- Classic
 						["groups"] = {
 							o(160836, {	-- Relic Coffer
 								["groups"] = {	
-									i(11946), -- Fire Opal Necklace
-									i(11945), -- Dark Iron Ring
+									i(11946),	-- Fire Opal Necklace
+									i(11945),	-- Dark Iron Ring
 								},
 								["description"] = "Relic Coffer Keys that can drop from any Dark Iron mob in the instance.",
 								["modelID"] = 34286,
@@ -643,7 +643,7 @@ _.Instances = { tier(1, {	-- Classic
 					["groups"] = {
 						i(18628, {	-- Thorium Brotherhood Contract
 							q(7604, {	-- A Binding Contract
-								i(18592), -- Plans: Sulfuron Hammer
+								i(18592),	-- Plans: Sulfuron Hammer
 							}),
 						}),
 						i(19449),	-- Formula: Enchant Weapon - Mighty Intellect

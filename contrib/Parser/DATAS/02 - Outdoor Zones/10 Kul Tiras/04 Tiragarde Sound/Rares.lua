@@ -135,7 +135,7 @@ _.Zones =
 							["g"] = {
 								{	-- Hay Covered Chest
 									["objectID"] =  279750,	-- Hay Covered Chest
-									["questID"] = 49963, -- Loot Chest
+									["questID"] = 49963,	-- Loot Chest
 									["icon"] = "Interface\\Icons\\garrison_bronzechest",
 									["g"] = {
 										i(155571, {	-- Garyl's Riding Blanket

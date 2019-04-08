@@ -437,7 +437,7 @@ _.ExpansionFeatures =
 							i(166495),	-- Tonguelasher
 							i(163824),	-- Voru'kar Leecher
 						},
-						["achievementID"] = 13128, -- I'm Here for the Pets
+						["achievementID"] = 13128,	-- I'm Here for the Pets
 					}),
 					n(-161, {	-- Toys
 						i(164375),	-- Bad Mojo Banana [Un'gol Ruins]
@@ -566,7 +566,7 @@ _.ExpansionFeatures =
 			}),
 		},
 		["description"] = "|cff66ccffIsland expeditions are 3-player scenarios.  Each faction will sail across the waters where they will harvest and steal any Azerite they can find from these islands.  Goblins and gnomes have been able to use their new technology to find islands which contain possible amounts of Azerite and will be providing maps for their respective factions.  Ships and queuing will take place in Dazar'alor for Horde and Boralus for Alliance.  These unlock at level 116 on your first playthrough and should be open at 110 on your alts once you have finished the introduction line. |r",
-		["achievementID"] = 12595, -- Expert Expeditioner
+		["achievementID"] = 12595,	-- Expert Expeditioner
 		["lvl"] = 110,
 		["crs"] = {
 			143968,	--  Expedition Map [Alliance Side]

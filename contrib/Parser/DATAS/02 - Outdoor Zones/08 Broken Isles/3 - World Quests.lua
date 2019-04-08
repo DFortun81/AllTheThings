@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(619, { 	-- The Broken Isles
 		["groups"] = {
-			n(-34, { -- World Quests
+			n(-34, {	-- World Quests
 				["groups"] = {
 					filter(200, {	-- Recipes
 						{
@@ -57,24 +57,24 @@ _.Zones =
 							},
 						},
 					}),
-					n(-322, { -- Cloak
-						i(134334), -- Disgraced Court Cloak
-						i(139074), -- Dreamwalker's Cloak
-						i(146886), -- Felknight Greatcloak
-						i(134246), -- Herringbone Drape
-						i(146857), -- Mo'arg Overseer's Cloak
-						i(121798), -- Moon Guard Drape
-						i(134365), -- Netherwracked Greatcloak
-						i(134290), -- Nightborne Noble's Cloak
-						i(121307), -- Nightmare Shroud
-						i(134202), -- Stormsky Cloak
-						i(134158), -- Trembling Mightstone Drape
-						i(139112), -- Tribal Unification Cloak
-						i(136748), -- Vault Watcher's Cloak
-						i(146884), -- Wyrmtongue Scavenger's Shawl
+					n(-322, {	-- Cloak
+						i(134334),	-- Disgraced Court Cloak
+						i(139074),	-- Dreamwalker's Cloak
+						i(146886),	-- Felknight Greatcloak
+						i(134246),	-- Herringbone Drape
+						i(146857),	-- Mo'arg Overseer's Cloak
+						i(121798),	-- Moon Guard Drape
+						i(134365),	-- Netherwracked Greatcloak
+						i(134290),	-- Nightborne Noble's Cloak
+						i(121307),	-- Nightmare Shroud
+						i(134202),	-- Stormsky Cloak
+						i(134158),	-- Trembling Mightstone Drape
+						i(139112),	-- Tribal Unification Cloak
+						i(136748),	-- Vault Watcher's Cloak
+						i(146884),	-- Wyrmtongue Scavenger's Shawl
 					}),
-					n(-43, { -- Cloth
-						n(-3241, { -- Arcane Singed Set		
+					n(-43, {	-- Cloth
+						n(-3241, {	-- Arcane Singed Set		
 							["groups"] = {		
 								i(134348),	-- Arcane Singed Aurora
 								i(134353),	-- Arcane Singed Mantle
@@ -86,7 +86,7 @@ _.Zones =
 								i(134352),	-- Arcane Singed Slippers
 							},		
 						}),	
-						n(-3242, { -- Bonespeaker Set
+						n(-3242, {	-- Bonespeaker Set
 							["groups"] = {
 								i(134216),	-- Bonespeaker Cowl
 								i(134221),	-- Bonespeaker Mantle
@@ -98,7 +98,7 @@ _.Zones =
 								i(134220),	-- Bonespeaker Sandals
 							},
 						}),
-						n(-3243, { -- Manawracker Set
+						n(-3243, {	-- Manawracker Set
 							["groups"] = {
 								i(134304),	-- Manawracker Crown
 								i(134309),	-- Manawracker Shoulders
@@ -110,7 +110,7 @@ _.Zones =
 								i(134308),	-- Manawracker Sandals
 							},
 						}),
-						n(-3244, { -- Netherwhisper Set
+						n(-3244, {	-- Netherwhisper Set
 							["groups"] = {
 								i(134392),	-- Netherwhisper Hood
 								i(134397),	-- Netherwhisper Mantle
@@ -122,7 +122,7 @@ _.Zones =
 								i(134396),	-- Netherwhisper Slippers
 							},
 						}),
-						n(-3246, { -- Riven Priesthood Set
+						n(-3246, {	-- Riven Priesthood Set
 							["groups"] = {
 								i(146877),	-- Riven Priesthood Cap
 								i(146882),	-- Riven Priesthood Amice
@@ -134,19 +134,19 @@ _.Zones =
 								i(146881),	-- Riven Priesthood Slippers
 							},
 						}),
-						n(-3247, { -- Roggthread Set
+						n(-3247, {	-- Roggthread Set
 							["groups"] = {
-								i(134172), -- Roggthread Headdress
-								i(134177), -- Roggthread Mantle
-								i(134175), -- Roggthread Robe
-								i(134178), -- Roggthread Bracers
-								i(134173), -- Roggthread Gloves
-								i(134171), -- Roggthread Cord
-								i(134174), -- Roggthread Legwarmers
-								i(134176), -- Roggthread Slippers
+								i(134172),	-- Roggthread Headdress
+								i(134177),	-- Roggthread Mantle
+								i(134175),	-- Roggthread Robe
+								i(134178),	-- Roggthread Bracers
+								i(134173),	-- Roggthread Gloves
+								i(134171),	-- Roggthread Cord
+								i(134174),	-- Roggthread Legwarmers
+								i(134176),	-- Roggthread Slippers
 							},
 						}),
-						n(-3248, { -- Seawitch Set		
+						n(-3248, {	-- Seawitch Set		
 							["groups"] = {		
 								i(134260),	-- Seawitch Hood
 								i(134265),	-- Seawitch Mantle
@@ -158,7 +158,7 @@ _.Zones =
 								i(134264),	-- Seawitch Sandals
 							},		
 						}),		
-						n(-3249, { -- Sunfrost Set
+						n(-3249, {	-- Sunfrost Set
 							["groups"] = {
 								i(139124),	-- Sunfrost Aurora
 								i(139129),	-- Sunfrost Mantle
@@ -170,25 +170,25 @@ _.Zones =
 								i(139128),	-- Sunfrost Slippers
 							},
 						}),
-						i(139910), -- Crown of the Rebels
-						i(139917), -- Mantle of the Eventide
-						i(121751), -- Buried Exile's Gown
-						i(139927), -- Wristwraps of the Unified Castaways
-						i(121741), -- Handwraps of the Abandoned
-						i(121757), -- Astralite's Cord
-						i(139913), -- Felborne Trousers
-						i(139923), -- Withered Slippers
-						i(136762), -- Vault-Minder's Crown
-						i(136767), -- Vault-Minder's Mantle
-						i(136765), -- Vault-Minder's Robes
-						i(136768), -- Vault-Minder's Wristwraps
-						i(136763), -- Vault-Minder's Handwraps
-						i(136761), -- Vault-Minder's Cord
-						i(136764), -- Vault-Minder's Leggings
-						i(136766), -- Vault-Minder's Slippers
+						i(139910),	-- Crown of the Rebels
+						i(139917),	-- Mantle of the Eventide
+						i(121751),	-- Buried Exile's Gown
+						i(139927),	-- Wristwraps of the Unified Castaways
+						i(121741),	-- Handwraps of the Abandoned
+						i(121757),	-- Astralite's Cord
+						i(139913),	-- Felborne Trousers
+						i(139923),	-- Withered Slippers
+						i(136762),	-- Vault-Minder's Crown
+						i(136767),	-- Vault-Minder's Mantle
+						i(136765),	-- Vault-Minder's Robes
+						i(136768),	-- Vault-Minder's Wristwraps
+						i(136763),	-- Vault-Minder's Handwraps
+						i(136761),	-- Vault-Minder's Cord
+						i(136764),	-- Vault-Minder's Leggings
+						i(136766),	-- Vault-Minder's Slippers
 					}),
-					n(-44, { -- Leather
-						n(-3266, { -- Biornskin Set
+					n(-44, {	-- Leather
+						n(-3266, {	-- Biornskin Set
 							["groups"] = {
 								i(134196),	-- Biornskin Hood
 								i(134198),	-- Biornskin Shoulderpads
@@ -200,7 +200,7 @@ _.Zones =
 								i(134193),	-- Biornskin Moccasins
 							},
 						}),
-						n(-3271, { -- Brinewashed Set		
+						n(-3271, {	-- Brinewashed Set		
 							["groups"] = {		
 								i(134240),	-- Brinewashed Leather Cowl
 								i(134242),	-- Brinewashed Leather Shoulderpads
@@ -212,7 +212,7 @@ _.Zones =
 								i(134237),	-- Brinewashed Leather Boots
 							},		
 						}),			
-						n(-3265, { -- Felbat Leather Set
+						n(-3265, {	-- Felbat Leather Set
 							["groups"] = {
 								i(134372),	-- Felbat Leather Headguard
 								i(134374),	-- Felbat Leather Pauldrons
@@ -224,7 +224,7 @@ _.Zones =
 								i(134369),	-- Felbat Leather Boots
 							},
 						}),
-						n(-3272, { -- Lunarblight Set
+						n(-3272, {	-- Lunarblight Set
 							["groups"] = {
 								i(146863),	-- Lunarblight Headgear
 								i(146865),	-- Lunarblight Mantle
@@ -236,7 +236,7 @@ _.Zones =
 								i(146860),	-- Lunarblight Treads
 							},
 						}),
-						n(-3264, { -- Mana-Saber Set		
+						n(-3264, {	-- Mana-Saber Set		
 							["groups"] = {		
 								i(134328),	-- Mana-Saber Hide Hood
 								i(134330),	-- Mana-Saber Hide Shoulders
@@ -248,7 +248,7 @@ _.Zones =
 								i(134325),	-- Mana-Saber Hide Boots
 							},		
 						}),	
-						n(-3263, { -- Rivermane Set
+						n(-3263, {	-- Rivermane Set
 							["groups"] = {
 								i(139108),	-- Rivermane Hood
 								i(139110),	-- Rivermane Shoulders
@@ -260,7 +260,7 @@ _.Zones =
 								i(139105),	-- Rivermane Sandals
 							},
 						}),
-						n(-3270, { -- Steelgazer Set
+						n(-3270, {	-- Steelgazer Set
 							["groups"] = {
 								i(134152),	-- Steelgazer Hide Hood
 								i(134154),	-- Steelgazer Hide Mantle
@@ -272,7 +272,7 @@ _.Zones =
 								i(134149),	-- Steelgazer Hide Boots
 							},
 						}),
-						n(-3262, { -- Swordsinger Set
+						n(-3262, {	-- Swordsinger Set
 							["groups"] = {
 								i(134284),	-- Swordsinger's Hood
 								i(134286),	-- Swordsinger's Shoulders
@@ -284,14 +284,14 @@ _.Zones =
 								i(134281),	-- Swordsinger's Footpads
 							},
 						}),
-						i(139947), -- Sentinel Vanguard Visor
-						i(139949), -- Spell Fencer's Shoulderpads
-						i(139953), -- Spell Fencer's Jacket
-						i(139957), -- Bindings of Swelling Night
-						i(139940), -- Reluctant Partisan Gloves
-						i(139929), -- Saberguard Belt
-						i(139938), -- Bladedancer's Pantaloons
-						i(139935), -- Leyman's Boots
+						i(139947),	-- Sentinel Vanguard Visor
+						i(139949),	-- Spell Fencer's Shoulderpads
+						i(139953),	-- Spell Fencer's Jacket
+						i(139957),	-- Bindings of Swelling Night
+						i(139940),	-- Reluctant Partisan Gloves
+						i(139929),	-- Saberguard Belt
+						i(139938),	-- Bladedancer's Pantaloons
+						i(139935),	-- Leyman's Boots
 						i(136742),	-- Shadow Stalker Hood
 						i(136744),	-- Shadow Stalker Shoulders
 						i(136743),	-- Shadow Stalker Vest
@@ -301,8 +301,8 @@ _.Zones =
 						i(136740),	-- Shadow Stalker Pants
 						i(136739),	-- Shadow Stalker Boots
 					}),
-					n(-45, { -- Mail
-						n(-3274, { -- Ley Dragoon Set
+					n(-45, {	-- Mail
+						n(-3274, {	-- Ley Dragoon Set
 							["groups"] = {
 								i(134299),	-- Ley Dragoon's Headgear
 								i(134301),	-- Ley Dragoon's Spaulders
@@ -314,7 +314,7 @@ _.Zones =
 								i(134298),	-- Ley Dragoon's Stompers
 							},
 						}),
-						n(-3282, { -- Manaburst Set		
+						n(-3282, {	-- Manaburst Set		
 							["groups"] = {		
 								i(134343),	-- Manaburst Helm
 								i(134345),	-- Manaburst Spaulders
@@ -326,7 +326,7 @@ _.Zones =
 								i(134342),	-- Manaburst Greaves
 							},		
 						}),	
-						n(-3277, { -- Mardum Chain Set
+						n(-3277, {	-- Mardum Chain Set
 							["groups"] = {
 								i(134387),	-- Mardum Chain Helm
 								i(134389),	-- Mardum Chain Pauldrons
@@ -338,7 +338,7 @@ _.Zones =
 								i(134386),	-- Mardum Chain Boots
 							},
 						}),
-						n(-3276, { -- Sea Stalker's Set		
+						n(-3276, {	-- Sea Stalker's Set		
 							["groups"] = {		
 								i(134255),	-- Sea Stalker's Hood
 								i(134257),	-- Sea Stalker's Mantle
@@ -350,7 +350,7 @@ _.Zones =
 								i(134254),	-- Sea Stalker's Boots
 							},		
 						}),
-						n(-3283, { -- Shrinebreaker Set
+						n(-3283, {	-- Shrinebreaker Set
 							["groups"] = {
 								i(146872),	-- Shrinebreaker Coif
 								i(146874),	-- Shrinebreaker Spaulders
@@ -362,7 +362,7 @@ _.Zones =
 								i(146871),	-- Shrinebreaker Boots
 							},
 						}),
-						n(-3275, { -- Skyhorn Set
+						n(-3275, {	-- Skyhorn Set
 							["groups"] = {
 								i(139119),	-- Skyhorn Headgear
 								i(139121),	-- Skyhorn Mantle
@@ -374,7 +374,7 @@ _.Zones =
 								i(139118),	-- Skyhorn Boots
 							},
 						}),
-						n(-3278, { -- Tideskorn Set
+						n(-3278, {	-- Tideskorn Set
 							["groups"] = {
 								i(134211),	-- Tideskorn Coif
 								i(134213),	-- Tideskorn Mantle
@@ -386,26 +386,26 @@ _.Zones =
 								i(134210),	-- Tideskorn Sabatons
 							},
 						}),
-						i(139967), -- Headgear of the Scorned
-						i(139977), -- Spaulders of Dark Unity
-						i(121733), -- Thicket Hunter's Hauberk
-						i(139985), -- Dusky Bands of Unification
-						i(139966), -- Warcaster's Charged Gauntlets
-						i(121758), -- Sentinel's Wire Chain Belt
-						i(139972), -- Saberguard's Greaves
-						i(139980), -- Spider Stompers
-						i(134167), -- Bitestone Cowl
-						i(134169), -- Bitestone Shoulderguard
-						i(134170), -- Bitestone Vest
-						i(134164), -- Bitestone Wristwrap
-						i(134165), -- Bitestone Gauntlets
-						i(134163), -- Bitestone Girthcord
-						i(134168), -- Bitestone Kilt
-						i(134166), -- Bitestone Boots
-						i(136758), -- Isle Watcher's Leggings
+						i(139967),	-- Headgear of the Scorned
+						i(139977),	-- Spaulders of Dark Unity
+						i(121733),	-- Thicket Hunter's Hauberk
+						i(139985),	-- Dusky Bands of Unification
+						i(139966),	-- Warcaster's Charged Gauntlets
+						i(121758),	-- Sentinel's Wire Chain Belt
+						i(139972),	-- Saberguard's Greaves
+						i(139980),	-- Spider Stompers
+						i(134167),	-- Bitestone Cowl
+						i(134169),	-- Bitestone Shoulderguard
+						i(134170),	-- Bitestone Vest
+						i(134164),	-- Bitestone Wristwrap
+						i(134165),	-- Bitestone Gauntlets
+						i(134163),	-- Bitestone Girthcord
+						i(134168),	-- Bitestone Kilt
+						i(134166),	-- Bitestone Boots
+						i(136758),	-- Isle Watcher's Leggings
 					}),
-					n(-46, { -- Plate
-						n(-3299, { -- Arcane Defender Set
+					n(-46, {	-- Plate
+						n(-3299, {	-- Arcane Defender Set
 							["groups"] = {
 								i(134270),	-- Arcane Defender's Helm
 								i(134272),	-- Arcane Defender's Pauldrons
@@ -417,7 +417,7 @@ _.Zones =
 								i(134273),	-- Arcane Defender's Boots
 							},
 						}),
-						n(-3305, { -- Coralplate Set		
+						n(-3305, {	-- Coralplate Set		
 							["groups"] = {		
 								i(134226),	-- Coralplate Helmet
 								i(134228),	-- Coralplate Pauldrons
@@ -429,7 +429,7 @@ _.Zones =
 								i(134229),	-- Coralplate Sandstompers
 							},		
 						}),
-						n(-3300, { -- Greystone Set
+						n(-3300, {	-- Greystone Set
 							["groups"] = {
 								i(139096),	-- Greystone Helm
 								i(139098),	-- Greystone Pauldrons
@@ -441,7 +441,7 @@ _.Zones =
 								i(139099),	-- Greystone Boots
 							},
 						}),			
-						n(-3304, { -- Ley-Scarred Set		
+						n(-3304, {	-- Ley-Scarred Set		
 							["groups"] = {		
 								i(134314),	-- Ley-Scarred Helm
 								i(134316),	-- Ley-Scarred Pauldrons
@@ -453,7 +453,7 @@ _.Zones =
 								i(134317),	-- Ley-Scarred Sabatons
 							},		
 						}),
-						n(-3306, { -- Moonshatter Set
+						n(-3306, {	-- Moonshatter Set
 							["groups"] = {
 								i(146852),	-- Moonshatter Helmet
 								i(146854),	-- Moonshatter Pauldrons
@@ -465,7 +465,7 @@ _.Zones =
 								i(146855),	-- Moonshatter Sabatons
 							},
 						}),
-						n(-3301, { -- Portalguard Set
+						n(-3301, {	-- Portalguard Set
 							["groups"] = {
 								i(134358),	-- Portalguard Helm
 								i(134360),	-- Portalguard Shoulders
@@ -477,7 +477,7 @@ _.Zones =
 								i(134361),	-- Portalguard Warboots
 							},
 						}),
-						n(-3308, { -- Rockbound Set
+						n(-3308, {	-- Rockbound Set
 							["groups"] = {
 								i(134138),	-- Rockbound Helm
 								i(134140),	-- Rockbound Pauldrons
@@ -489,7 +489,7 @@ _.Zones =
 								i(134141),	-- Rockbound Sabatons
 							},
 						}),
-						n(-3302, { -- Skoldiir Set
+						n(-3302, {	-- Skoldiir Set
 							["groups"] = {
 								i(134182),	-- Skoldiir Helm
 								i(134184),	-- Skoldiir Shoulderguards
@@ -501,7 +501,7 @@ _.Zones =
 								i(134185),	-- Skoldiir Sabatons
 							},
 						}),
-						n(-3309, { -- Wardbreaker Set
+						n(-3309, {	-- Wardbreaker Set
 							["groups"] = {
 								i(136728),	-- Wardbreaker Helm
 								i(136730),	-- Wardbreaker Pauldrons
@@ -513,16 +513,16 @@ _.Zones =
 								i(136731),	-- Wardbreaker Warboots
 							},
 						}),
-						i(140003), -- Helm of the Disillusioned Guard
-						i(140013), -- Night Commander's Pauldrons
-						i(121732), -- Breastplate of Kel'balor
-						i(140020), -- Vambraces of the Ebon Tide
-						i(139998), -- Construct Plate Grips
-						i(121756), -- Shieldguard Girdle
-						i(140009), -- Felsword Legplates
-						i(140017), -- Boots of the Felsword
+						i(140003),	-- Helm of the Disillusioned Guard
+						i(140013),	-- Night Commander's Pauldrons
+						i(121732),	-- Breastplate of Kel'balor
+						i(140020),	-- Vambraces of the Ebon Tide
+						i(139998),	-- Construct Plate Grips
+						i(121756),	-- Shieldguard Girdle
+						i(140009),	-- Felsword Legplates
+						i(140017),	-- Boots of the Felsword
 					}),
-					n(-385, { -- Finger
+					n(-385, {	-- Finger
 						["groups"] = {
 							i(134367),	-- Legionnaire's Band
 							i(134279),	-- Nightborne Signet Ring

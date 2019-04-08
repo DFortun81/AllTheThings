@@ -77,7 +77,7 @@ _.Zones =
 								crit(9),		-- Save Anren Shadowseeker
 							}),
 						}),
-						n(-17, { -- Quests
+						n(-17, {	-- Quests
 							{	-- Additional Armaments
 								["questID"] = 29281,
 								["qg"] = 53214,	-- Damek Bloombeard
@@ -252,7 +252,7 @@ _.Zones =
 							qg(52824, q(29304)),	-- The Dogs of War
 							qg(52477, q(29276)),	-- The Flame Spider Queen
 							qg(52824, q(29205)),	-- The Forlorn Spire
-							o(208535, { -- Dried Acorn
+							o(208535, {	-- Dried Acorn
 								q(29245),	-- The Mysterious Seed
 							}),
 							qg(52824, q(29204)),	-- The Warden's Charge
@@ -261,7 +261,7 @@ _.Zones =
 							]]--
 						}),
 						n(-16, {	-- Rares
-							o(207496, { -- Dark Iron Treasure Chest
+							o(207496, {	-- Dark Iron Treasure Chest
 								["groups"] = {
 									i(67121),	-- Chestguard of the Caring Ursine
 									i(66920),	-- Cyu's Ornate Wand
@@ -305,7 +305,7 @@ _.Zones =
 			--]]		
 						}),
 						n( -2, {	-- Vendors
-							n(53881, { -- Ayla Shadowstorm <Treasures of Elune>
+							n(53881, {	-- Ayla Shadowstorm <Treasures of Elune>
 								["description"] = "This Vendor unlocks once you complete the quest Filling the Moonwell.",
 								["sourceQuest"] = 29279,	-- Filling the Moonwell
 								["groups"] = {
@@ -321,7 +321,7 @@ _.Zones =
 									i(70143),	-- Moonwell Phial
 								},
 							}),
-							n(53214, { -- Damek Bloombeard <Exceptional Equipment>
+							n(53214, {	-- Damek Bloombeard <Exceptional Equipment>
 								["description"] = "This Vendor unlocks once you complete the quest Additional Armaments.",
 								["sourceQuest"] = 29281,	-- Additional Armaments
 								["groups"] = {
@@ -365,7 +365,7 @@ _.Zones =
 								i(70106),	-- Nightweaver's Amulet
 								i(70108),	-- Pyrelord Greaves
 								i(70105),	-- Matoclaw's Band
-								currency(416, { -- Mark of the World Tree
+								currency(416, {	-- Mark of the World Tree
 									i(71088),	-- Bilgewater Writ of Commendation
 									i(70145),	-- Darnassus Writ of Commendation
 									i(70146),	-- Exodar Writ of Commendation

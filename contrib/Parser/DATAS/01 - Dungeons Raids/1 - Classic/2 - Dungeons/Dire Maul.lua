@@ -11,8 +11,8 @@ _.Instances = { tier(1, {	-- Classic
 			n(-12, {	-- Warpwood Quarter [East - Demon]
 				["description"] = "This is the instance on the right side.",
 				["maps"] = {
-					239, -- Warpwood Quarter
-					240, -- The Shrine of Eldretharr
+					239,	-- Warpwood Quarter
+					240,	-- The Shrine of Eldretharr
 				},
 				["coord"] = { 64.83, 30.24, 69 },	-- Dire Maul [East], Feralas
 				["groups"] = {
@@ -141,7 +141,7 @@ _.Instances = { tier(1, {	-- Classic
 			}),
 			n(-13, {	-- Gordok Commons [North - Ogres] [Straight]
 				["maps"] = {
-					235, -- Gordok Commons
+					235,	-- Gordok Commons
 				},
 				["coord"] = { 62.48, 24.48, 69 },	-- Dire Maul [North], Feralas
 				["groups"] = {
@@ -265,7 +265,7 @@ _.Instances = { tier(1, {	-- Classic
 					n(14353, {			-- Mizzle the Crafty
 						["description"] = "Speak with Mizzle after killing King Gordok to spawn the Tribute Chest.",
 						["groups"] = {
-							o(179564, { -- Gordok Tribute Chest (No Localization)
+							o(179564, {	-- Gordok Tribute Chest (No Localization)
 								["description"] =  " A full Tribute Run (5 Items) requires no killing of any of bosses besides King Gordok, activating the Frost Trap & fooling Kromcrush with the Ogre Suit, granted by the Goblin near the Trap.",
 								["model"] = "World\\Generic\\Passivedoodads\\Furniture\\Containers\\Titanchest.mdx",
 								["modelScale"] = 2.1,
@@ -300,9 +300,9 @@ _.Instances = { tier(1, {	-- Classic
 			}),
 			n(-14, {	-- Capital Gardens [West - Elves] [Left Side]
 				["maps"] = {
-					236, -- Capital Gardens
-					237, -- Court of the Highborne
-					238, -- Prison of Immol'Thar
+					236,	-- Capital Gardens
+					237,	-- Court of the Highborne
+					238,	-- Prison of Immol'Thar
 				},
 				["coord"] = { 60.32, 30.17, 69 },	-- Dire Maul [West], Feralas
 				["description"] = "This is the instance on the left side.",
@@ -311,15 +311,15 @@ _.Instances = { tier(1, {	-- Classic
 						q(27112,  { -- 	-- The Cursed Remains
 							["qg"] = 44991,
 						}),
-						q(27110, { -- The Madness Within
-							["qg"] = 14358, -- Shen'dralar Ancient
+						q(27110, {	-- The Madness Within
+							["qg"] = 14358,	-- Shen'dralar Ancient
 						}),
-						q(27113, { -- The Shen'dralar Ancient
+						q(27113, {	-- The Shen'dralar Ancient
 							["qg"] = 44991,
 						}),
 						q(27111, {	-- The Treasure of Shen'dralar
-							["qgs"] = 14358, -- Shen'dralar Ancient
-							["sourceQuests"] = { 27110 }, -- The Madness Wiwthin
+							["qgs"] = 14358,	-- Shen'dralar Ancient
+							["sourceQuests"] = { 27110 },	-- The Madness Wiwthin
 							["groups"] = {
 								i(65949),	-- Dire Maul
 								i(65973),	-- Fras Siabi's Cigar Cutter
@@ -327,7 +327,7 @@ _.Instances = { tier(1, {	-- Classic
 								i(65994),	-- Staff of Athen'a
 							},
 						}),
-						q(27109, { -- The Warped Defender
+						q(27109, {	-- The Warped Defender
 							["qg"] = 44999,
 						}),
 					}),
@@ -461,7 +461,7 @@ _.Instances = { tier(1, {	-- Classic
 							["questID"] = 43682,	-- Book Presented [Retribution Paladin Hidden Artifact Appearance]
 							["description"] = "You need to bring the Complete Copy of Nat Pagle's Fishing Guide and the Head of Nefarian for him to grant you this interaction.\n\nAlliance: Go to Western Plaguelands and talk to Alexia Ironknife.\n\nHorde: Go to Tirisfall Glades and talk to Bardu Sharpeye.",
 							["classes"] = { 2 },	-- Paladin Only
-							["sourceQuests"] = { -91190 }, -- Special Quest ID for Sister Elda <Keeper of the Ancient Tomes>
+							["sourceQuests"] = { -91190 },	-- Special Quest ID for Sister Elda <Keeper of the Ancient Tomes>
 							["lvl"] = 110,
 							["groups"] = {
 								a(i(19003)),	-- Head of Nefarian [Alliance]
@@ -470,8 +470,8 @@ _.Instances = { tier(1, {	-- Classic
 						}),
 					})),
 					n( -2, {	-- Vendors
-						n(14371, { -- Shen'dralar Provisioner
-							i(18487), -- Pattern: Mooncloth Robe
+						n(14371, {	-- Shen'dralar Provisioner
+							i(18487),	-- Pattern: Mooncloth Robe
 						}),
 					}),
 				},
@@ -510,7 +510,7 @@ _.Instances = { tier(1, {	-- Classic
 							})),
 							un(40, q(7483, {	-- Libram of Rapidity
 								un(2, i(18329, {	-- Arcanum of Rapidity
-									["f"] = 55, -- Consumable
+									["f"] = 55,	-- Consumable
 								})),
 							})),
 							un(40, q(7441, {	-- Pusillin and the Elder Azj'Tordin
@@ -522,7 +522,7 @@ _.Instances = { tier(1, {	-- Classic
 					n(-13, {	-- Gordok Commons [North - Ogres]
 						n(-17, {	-- Quests (Legacy)
 							un(40, q(7499, {	-- Codex of Defense
-								["classes"] = { 1 }, -- Warrior
+								["classes"] = { 1 },	-- Warrior
 								["groups"] = {
 									un(2, i(18466)),	--Royal Seal of Eldre'Thalas
 								},
@@ -550,42 +550,42 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							})),
 							un(40, q(7502, {	-- Harnessing Shadows
-								["classes"] = { 9 }, -- Warlock
+								["classes"] = { 9 },	-- Warlock
 								["groups"] = {
 									un(2, i(18467)),	--Royal Seal of Eldre'Thalas
 								},
 							})),
 							un(40, q(7504, {	-- Holy Bologna: What the Light Won't Tell You
-								["classes"] = { 5 }, -- Priest
+								["classes"] = { 5 },	-- Priest
 								["groups"] = {
 									un(2, i(18469)),	--Royal Seal of Eldre'Thalas
 								},
 							})),
 							un(40, q(7485, {	-- Libram of Protection
 								un(2, i(18331, {	-- Arcanum of Protection
-									["f"] = 55, -- Consumable
+									["f"] = 55,	-- Consumable
 								})),
 							})),
 							un(40, q(7500, {	-- The Arcanist's Cookbook
-								["classes"] = { 8 }, -- Mage
+								["classes"] = { 8 },	-- Mage
 								["groups"] = {
 									un(2, i(18468)),	--Royal Seal of Eldre'Thalas
 								},
 							})),
 							un(40, q(7506, {	-- The Emerald Dream...
-								["classes"] = { 11 }, -- Druid
+								["classes"] = { 11 },	-- Druid
 								["groups"] = {
 									un(2, i(18470)),	--Royal Seal of Eldre'Thalas
 								},
 							})),
 							un(40, q(7503, {	-- The Greatest Race of Hunters
-								["classes"] = { 3 }, -- Hunter
+								["classes"] = { 3 },	-- Hunter
 								["groups"] = {
 									un(2, i(18473)),	--Royal Seal of Eldre'Thalas
 								},
 							})),
 							un(40, q(7501, {	-- The Light and How To Swing It
-								["classes"] = { 2 }, -- Paladin
+								["classes"] = { 2 },	-- Paladin
 								["groups"] = {
 									un(2, i(18472)),	--Royal Seal of Eldre'Thalas
 								},
@@ -634,20 +634,20 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							})),
 							un(40, q(7505, {	-- Frost Shock and You
-								["classes"] = { 7 }, -- Shaman
+								["classes"] = { 7 },	-- Shaman
 								["groups"] = {
 									un(2, i(18471)),	--Royal Seal of Eldre'Thalas
 								},
 							})),
 							un(40, q(7498, {	-- Garona: A Study on Stealth and Treachery
-								["classes"] = { 4 }, -- Rogue
+								["classes"] = { 4 },	-- Rogue
 								["groups"] = {
 									un(2, i(18465)),	--Royal Seal of Eldre'Thalas
 								},
 							})),
 							un(40, q(7484, {	-- Libram of Focus
 								un(2, i(18330, {	-- Arcanum of Focus
-									["f"] = 55, -- Consumable
+									["f"] = 55,	-- Consumable
 								})),
 							})),
 							un(40, qa(7462, { 	-- The Treasure of the Shen'dralar

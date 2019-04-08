@@ -12,7 +12,7 @@ _.Zones =
 						["groups"] = {
 							{	-- Pattern: Runecloth Boots
 								["itemID"] = 14488,	-- Pattern: Runecloth Boots
-								["u"] = 7, -- now learned from trainer, recipe was removed from game
+								["u"] = 7,	-- now learned from trainer, recipe was removed from game
 							},
 						},
 					}),

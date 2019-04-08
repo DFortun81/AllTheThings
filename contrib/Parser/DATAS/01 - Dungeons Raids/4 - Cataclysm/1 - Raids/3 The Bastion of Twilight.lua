@@ -40,7 +40,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 			d(1, {	-- Normal
 				["difficulties"] = { 3, 4 },
 				["groups"] = {
-					e(156, { -- Halfus Wyrmbreaker
+					e(156, {	-- Halfus Wyrmbreaker
 						["creatureID"] = 44600,
 						["groups"] = {
 							ach(5300),	-- The Only Escape
@@ -58,8 +58,8 @@ _.Instances = { tier(4, {	-- Cataclysm
 							i(59473),	-- Essence of the Cyclone
 						},
 					}),
-					e(157, { -- Theralion and Valiona
-						["creatureID"] = 45992, -- Valiona [Able to add multiple creatures later]
+					e(157, {	-- Theralion and Valiona
+						["creatureID"] = 45992,	-- Valiona [Able to add multiple creatures later]
 						["groups"] = {
 							ach(4852),	-- Double Dragon
 							i(152969),	-- Odd Twilight Egg (PET!)
@@ -77,7 +77,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 							i( 59515),	-- Vial of Stolen Memories
 						},
 					}),
-					e(158, { -- Ascendant Council
+					e(158, {	-- Ascendant Council
 						["creatureID"] = 43735,
 						["groups"] = {
 							ach(5311),	-- Elementary
@@ -96,7 +96,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 							i( 59514),	-- Heart of Ignacious
 						},
 					}),
-					e(167, { -- Cho'gall
+					e(167, {	-- Cho'gall
 						["creatureID"] = 43324,
 						["groups"] = {
 							ach(5312),	-- The Abyss Will Gaze Back Into You
@@ -146,7 +146,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 			d(2, {	-- Heroic
 				["difficulties"] = { 5, 6 },
 				["groups"] = {
-					e(156, { -- Halfus Wyrmbreaker
+					e(156, {	-- Halfus Wyrmbreaker
 						["creatureID"] = 44600,
 						["groups"] = {
 							ach(5118),	-- Heroic: Halfus Wyrmbreaker
@@ -190,8 +190,8 @@ _.Instances = { tier(4, {	-- Cataclysm
 							i(65140),	-- Essence of the Cyclone
 						},
 					}),
-					e(157, { -- Theralion and Valiona
-						["creatureID"] = 45992, -- Valiona
+					e(157, {	-- Theralion and Valiona
+						["creatureID"] = 45992,	-- Valiona
 						["groups"] = {
 							ach(5117),	-- Heroic: Valiona and Theralion
 							ach(4852),	-- Double Dragon
@@ -210,7 +210,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 							i( 65109),	-- Vial of Stolen Memories
 						},
 					}),
-					e(158, { -- Ascendant Council
+					e(158, {	-- Ascendant Council
 						["creatureID"] = 43735,
 						["groups"] = {
 							ach(5119),	-- Heroic: Ascendant Council
@@ -230,7 +230,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 							i( 65110),	-- Heart of Ignacious
 						},
 					}),
-					e(167, { -- Cho'gall
+					e(167, {	-- Cho'gall
 						["creatureID"] = 43324,
 						["groups"] = {
 							ach(5120),	-- Heroic: Cho'gall
@@ -276,7 +276,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 							i( 65124),	-- Fall of Mortality
 						},
 					}),
-					e(168, { -- Sinestra
+					e(168, {	-- Sinestra
 						["creatureID"] = 45213,
 						["groups"] = {
 							un(2, ach(5313)),	-- I Can't Hear You Over the Sound of How Awesome I Am

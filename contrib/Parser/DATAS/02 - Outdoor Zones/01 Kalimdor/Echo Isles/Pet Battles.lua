@@ -8,8 +8,8 @@ _.Zones =
 			m(463, {	-- Echo Isles
 				["groups"] = {
 					n(-25, {	-- Pet Battle
-						p(467), -- Dung Beetle
-						p(466), -- Spiny Lizard
+						p(467),	-- Dung Beetle
+						p(466),	-- Spiny Lizard
 					}),
 				},
 			}),

@@ -12,7 +12,7 @@ _.Zones =
 						ach(945, {	-- The Argent Champion
 							title(99),	-- %s the Argent Champion
 						}),
-						n(30431, { -- Veteran Crusader Aliocha Segard <Argent Crusade Quartermaster>
+						n(30431, {	-- Veteran Crusader Aliocha Segard <Argent Crusade Quartermaster>
 							i(43154),	-- Tabard of the Argent Crusade
 							i(41726),	-- Design: Guardian's Twilight Opal
 							i(42187),	-- Pattern: Brilliant Spellthread
@@ -34,7 +34,7 @@ _.Zones =
 				faction(1098, {	-- Knights of the Ebon Blade
 					["achievementID"] = 1009,	-- Knights of the Ebon Blade
 					["groups"] = {
-						n(32538, { -- Duchess Mynx <Ebon Blade Quartermaster>
+						n(32538, {	-- Duchess Mynx <Ebon Blade Quartermaster>
 							i(43155),	-- Tabard of the Ebon Blade
 							i(41562),	-- Design: Deadly Huge Citrine
 							i(41721),	-- Design: Deadly Monarch Topaz
@@ -64,16 +64,16 @@ _.Zones =
 					},
 				}),
 				n(-228, {	-- Flight Points
-					fp(335, { -- Crusaders' Pinnacle, Icecrown
+					fp(335, {	-- Crusaders' Pinnacle, Icecrown
 						["coord"] = { 79.4, 72.2 },
 					}),
-					fp(325, { -- Death's Rise, Icecrown
+					fp(325, {	-- Death's Rise, Icecrown
 						["coord"] = { 19.4, 47.8 },
 					}),
-					fp(334, { -- The Argent Vanguard, Icecrown
+					fp(334, {	-- The Argent Vanguard, Icecrown
 						["coord"] = { 87.8, 78 },
 					}),
-					fp(333, { -- The Shadow Vault, Icecrown
+					fp(333, {	-- The Shadow Vault, Icecrown
 						["coord"] = { 43.6, 24.4 },
 					}),
 				}),
@@ -488,13 +488,13 @@ _.Zones =
 					}),
 					{
 						["questID"] = 13072,	-- A Hero Remains
-						["qg"] = 30562, -- Quest Giver: Crusader Bridenbrad
+						["qg"] = 30562,	-- Quest Giver: Crusader Bridenbrad
 						["sourceQuest"] = 13068,	-- Source Quest: A Tale of Valor
 						["lvl"] = 67,
 					},
 					{
 						["questID"] = 13068,	-- A Tale of Valor
-						["qg"] = 31044, -- Quest Giver: Highlord Tirion Fordring
+						["qg"] = 31044,	-- Quest Giver: Highlord Tirion Fordring
 						["lvl"] = 67,
 						["description"] = "For those that didn't know, this quest line was a dedication to a one Brad Bridenbecker, brother to Rob Bridenbecker VP of Online Technologies. Brad had suffered from cancer and was an avid WoW player. His brother requested some memorial be set up for his brother and Chris Metzen, along with others, thought up this quest line to immortalize his battle with cancer within our beloved fantasy realm.\n\nHats off to you, Blizzard, Chris Metzen, and the whole Bridenbecker family. As a childhood cancer survivor myself, you have my utmost respect and loyalty to your honor and vision. You've truly epitomized the struggle of one going through the sickness, the battle, in the most accurate way possible, and bring honor to all of us who have suffered, and have watched those who have suffered, the same battle.\n\nLok'tar, brother Brad. Lok'tar.",
 					},
@@ -833,7 +833,7 @@ _.Zones =
 					}),
 					{
 						["questID"] = 13073,	-- The Keeper's Favor
-						["qg"] = 31044, -- Quest Giver: Highlord Tirion Fordring
+						["qg"] = 31044,	-- Quest Giver: Highlord Tirion Fordring
 						["sourceQuest"] = 13072,	-- Source Quest: A Hero Remains
 						["lvl"] = 67,
 					},

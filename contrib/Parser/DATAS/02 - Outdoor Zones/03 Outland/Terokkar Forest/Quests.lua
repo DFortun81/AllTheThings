@@ -189,25 +189,25 @@ _.Zones =
 							i(25929),	-- Cenarion Thicket Legplates
 						}),
 						q(10227, {	-- I See Dead Draenei
-							["qg"] = 19697, -- Ha'lei
+							["qg"] = 19697,	-- Ha'lei
 							["coord"] = { 35.0, 65.2, 108 },
 						}),
 						q(10228, {	-- Ezekiel
-							["qg"] = 19417, -- Ramdor the Mad
+							["qg"] = 19417,	-- Ramdor the Mad
 							["coord"] = { 35.2, 66.2, 108 },
 							["sourceQuests"] = { 10227 },	-- I See Dead Draenei
 						}),
 						q(10231, {	-- What Book? I Don't See Any Book.
-							["qg"] = 19715, -- Ezekiel
+							["qg"] = 19715,	-- Ezekiel
 							["sourceQuests"] = { 10228 },	-- Ezekiel
 						}),
 						q(10251, {	-- The Master's Grand Design?
-							["qg"] = 19720, -- "Dirty" Larry <Ruffian>
+							["qg"] = 19720,	-- "Dirty" Larry <Ruffian>
 							["coord"] = { 43.6, 29.6, 108 },
 							["sourceQuests"] = { 10231 },	-- What Book? I Don't See Any Book.
 						}),
 						q(10252, {	-- Vision of the Dead
-							["qg"] = 19844, -- Nitrin the Learned
+							["qg"] = 19844,	-- Nitrin the Learned
 							["coord"] = { 51.8, 56.8, 107 },
 							["sourceQuests"] = { 10251 },	-- The Master's Grand Design?
 						}),
@@ -218,7 +218,7 @@ _.Zones =
 								i(29315),	-- Gloves of Penitence
 								i(29314),	-- Leggings of the Third Coin
 							},
-							["qg"] = 19844, -- Nitrin the Learned
+							["qg"] = 19844,	-- Nitrin the Learned
 							["coord"] = { 51.8, 56.8, 107 },
 							["sourceQuests"] = { 10252 }	-- Vision of the Dead
 						}),
@@ -354,7 +354,7 @@ _.Zones =
 						{	-- The Hawk's Essence
 							["questID"] = 10992,	-- The Hawk's Essence
 							["u"] = 40,
-							["classes"] = { 11 }, -- Druid
+							["classes"] = { 11 },	-- Druid
 							["groups"] = {
 								{	-- Charm of Swift Flight
 									["itemID"] = 32481,	-- Charm of Swift Flight
@@ -372,7 +372,7 @@ _.Zones =
 							["qg"] = 21465,	-- David Wayne
 							["sourceQuests"] = { 10664 },	-- Additional Materials
 						}),
-						q(11667, { -- The One That Got Away
+						q(11667, {	-- The One That Got Away
 							i(34863,  {  -- Bag of Fishing Treasures
 								i(33820),  -- Weather-Beaten Fishing Hat
 							}),

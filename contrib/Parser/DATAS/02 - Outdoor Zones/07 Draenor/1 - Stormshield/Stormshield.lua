@@ -6,38 +6,38 @@ _.Zones =
 	m(572, { 	-- Draenor
 		m(622, {	-- Stormshield
 			["g"] = {
-				follower(467, { -- Fen Tao
-					["creatureID"] = 91483, -- Fen Tao
+				follower(467, {	-- Fen Tao
+					["creatureID"] = 91483,	-- Fen Tao
 					["description"] = "In order to obtain this follower you need to talk to him and let him finish his dialogue.",
 				}),
 				n(-228, {	-- Flight Paths
-					fp(1420, { -- Stormshield (Alliance), Ashran
+					fp(1420, {	-- Stormshield (Alliance), Ashran
 						["coord"] = { 30.8, 48.8 },
 					}),
 				}),
 				n(-17,  {	-- Quests
-					q(36626, { -- Host Howell
-						["qg"] = 86095, -- Private Tristan
+					q(36626, {	-- Host Howell
+						["qg"] = 86095,	-- Private Tristan
 						["coord"] = { 32.0, 50.5, 622 },
-						["sourceQuests"] = { 36624 }, -- Ashran Appearance
+						["sourceQuests"] = { 36624 },	-- Ashran Appearance
 					}),
-					q(36629, { -- Inspiring Ashran
-						["qg"] = 86069, -- Lieutenant Howell
+					q(36629, {	-- Inspiring Ashran
+						["qg"] = 86069,	-- Lieutenant Howell
 						["coord"] = { 35.6, 75.1, 622 },
-						["sourceQuests"] = { 36626 }, -- Host Howell
+						["sourceQuests"] = { 36626 },	-- Host Howell
 					}),
-					q(36630 , { -- A Surly Dwarf
-						["qg"] = 86069, -- Lieutenant Howell
+					q(36630 , {	-- A Surly Dwarf
+						["qg"] = 86069,	-- Lieutenant Howell
 						["coord"] = { 35.6, 75.1, 622 },
-						["sourceQuests"] = { 36629 }, -- Inspiring Ashran
+						["sourceQuests"] = { 36629 },	-- Inspiring Ashran
 					}),
-					q(36633, { -- Delvar Ironfist
+					q(36633, {	-- Delvar Ironfist
 						["g"] = {
-							follower(216), -- Delvar Ironfist
+							follower(216),	-- Delvar Ironfist
 						},
-						["qg"] = 86084, -- Delvar Ironfist
+						["qg"] = 86084,	-- Delvar Ironfist
 						["coord"] = { 47.5, 30.8, 622 },
-						["sourceQuests"] = { 36630 }, -- A Surly Dwarf
+						["sourceQuests"] = { 36630 },	-- A Surly Dwarf
 					}),
 				}),
 				na(-2,  {	-- Vendors
@@ -83,7 +83,7 @@ _.Zones =
 						["itemID"] = 137642,	-- Mark of Honor
 						["coord"] = { 54.8, 17.0, 622 },
 						["g"] = {
-							i(138633), -- Arsenal: Wild Gladiator's Weapons
+							i(138633),	-- Arsenal: Wild Gladiator's Weapons
 							-- Ensemble: Wild Gladiator's Chain Armor (Hunter)
 							-- Ensemble: Wild Gladiator's Dragonhide Armor (Druid)
 							-- Ensemble: Wild Gladiator's Dreadplate Armor (DK)
@@ -321,7 +321,7 @@ _.Zones =
 						["itemID"] = 137642,	-- Mark of Honor
 						["coord"] = { 56.2, 20.0, 622 },
 						["g"] = {
-							i(138625), -- Arsenal: Primal Combatant's Weapons
+							i(138625),	-- Arsenal: Primal Combatant's Weapons
 							-- Ensemble: Primal Combatant's Chain Armor (Hunter)
 							-- Ensemble: Primal Combatant's Dragonhide Armor (Druid)
 							-- Ensemble: Primal Combatant's Dreadplate Armor (DK)
@@ -491,7 +491,7 @@ _.Zones =
 							i(118398),	-- Soul Eater
 							i(118399),	-- Suneater
 							i(118410),	-- Tesseract Timepiece
-							un(2, i(119032, { -- Rusted Challenger's Strongbox
+							un(2, i(119032, {	-- Rusted Challenger's Strongbox
 								["g"] = {
 									un(2, i(118997)),	-- Blackfire Cape
 									un(2, i(118998)),	-- Blackfire Crystal
@@ -566,7 +566,7 @@ _.Zones =
 								},
 								["description"] = "This box was from the WoD Challenge Mode Dailies.",
 							})),
-							un(2, i(127831, { -- Challenger's Strongbox
+							un(2, i(127831, {	-- Challenger's Strongbox
 								["g"] = {
 									un(2, i(118997)),	-- Blackfire Cape
 									un(2, i(118998)),	-- Blackfire Crystal
@@ -643,9 +643,9 @@ _.Zones =
 							})),							
 						},
 					}),
-					n(128756, { -- Crafticus Mindbender
+					n(128756, {	-- Crafticus Mindbender
 						["g"] = {
-							currency(823, { -- Apexis Crystal
+							currency(823, {	-- Apexis Crystal
 								["g"] = {
 									un(2, i(116776)),	-- Pale Thorngrazer (Rep removed from Medallion of the Legion in hotfix for 8.0)
 								},
@@ -655,7 +655,7 @@ _.Zones =
 						},
 					}),
 					n(92501, {	-- Dawn-Seeker Kasrek <Apexis Belt Trader>
-						currency(823, { -- Apexis Crystal
+						currency(823, {	-- Apexis Crystal
 							["g"] = {
 								i(119821, {	-- Contact: Dawnseeker Rukaryx
 									follower(462),	-- Dawnseeker Rukaryx
@@ -681,7 +681,7 @@ _.Zones =
 						i(115378),	-- Windcrystal Cord
 					}),
 					n(86391, {	-- Dawn-Seeker Krek <Apexis Leggings Trader>
-						currency(823, { -- Apexis Crystal
+						currency(823, {	-- Apexis Crystal
 							["g"] = {
 								i(119821, {	-- Contact: Dawnseeker Rukaryx
 									follower(462),	-- Dawnseeker Rukaryx
@@ -707,7 +707,7 @@ _.Zones =
 						i(115374),	-- Windcrystal Leggings
 					}),
 					n(86387, {	-- Dawn-Seeker Rilak <Apexis Helm Trader>
-						currency(823, { -- Apexis Crystal
+						currency(823, {	-- Apexis Crystal
 							["g"] = {
 								i(119821, {	-- Contact: Dawnseeker Rukaryx
 									follower(462),	-- Dawnseeker Rukaryx
@@ -733,7 +733,7 @@ _.Zones =
 						i(116953),	-- Windcrystal Hood
 					}),
 					n(91321, {	-- Dawn-Seeker Skelak <Apexis Bracer Trader>
-						currency(823, { -- Apexis Crystal
+						currency(823, {	-- Apexis Crystal
 							["g"] = {
 								i(119821, {	-- Contact: Dawnseeker Rukaryx
 									follower(462),	-- Dawnseeker Rukaryx
@@ -759,7 +759,7 @@ _.Zones =
 						i(116965),	-- Windcrystal Bracers
 					}),
 					n(86390, {	-- Dawn-Seeker Vallar <Apexis Glove Trader>
-						currency(823, { -- Apexis Crystal
+						currency(823, {	-- Apexis Crystal
 							["g"] = {
 								i(119821, {	-- Contact: Dawnseeker Rukaryx
 									follower(462),	-- Dawnseeker Rukaryx
@@ -785,7 +785,7 @@ _.Zones =
 						i(116943),	-- Windcrystal Wraps
 					}),
 					n(86389, {	-- Dawn-Seeker Verroak <Apexis Cloak Trader>
-						currency(823, { -- Apexis Crystal
+						currency(823, {	-- Apexis Crystal
 							["g"] = {
 								i(119821, {	-- Contact: Dawnseeker Rukaryx
 									follower(462),	-- Dawnseeker Rukaryx
@@ -816,7 +816,7 @@ _.Zones =
 					}),
 					n(88482, {	-- Gazrix Gearlock <Steamwheedle "Preservation" Society Quartermaster>
 						["g"] = {
-							currency(823, { -- Apexis Crystal
+							currency(823, {	-- Apexis Crystal
 								["g"] = {
 									i(119149),	-- Captured Forest Sproutling
 									i(116672),	-- Domesticated Razorback
@@ -834,19 +834,19 @@ _.Zones =
 					}),
 					n(87365, {  -- Grakis
 						["g"] = {
-							i(118729, { -- Gorgrond Treasure Map
+							i(118729, {	-- Gorgrond Treasure Map
 								["questID"] = 36465,
 							}),
-							i(118732, { -- Nagrand Treasure Map
+							i(118732, {	-- Nagrand Treasure Map
 								["questID"] = 36468,
 							}),
-							i(118728, { -- Shadowmoon Valley Treasure Map
+							i(118728, {	-- Shadowmoon Valley Treasure Map
 								["questID"] = 36464,
 							}),
-							i(118731, { -- Spires of Arak Treasure Map
+							i(118731, {	-- Spires of Arak Treasure Map
 								["questID"] = 36467,
 							}),
-							i(118730, { -- Talador Treasure Map
+							i(118730, {	-- Talador Treasure Map
 								["questID"] = 36466,
 							}),
 						},
@@ -905,7 +905,7 @@ _.Zones =
 							-- Ensemble: Warmongering Gladiator's Satin Armor (Priest)
 							-- Ensemble: Warmongering Gladiator's Scaled Armor (Paladin)
 							-- Ensemble: Warmongering Gladiator's Silk Armor (Mage)
-							i(138635), -- Arsenal: Warmongering Gladiator's Weapons
+							i(138635),	-- Arsenal: Warmongering Gladiator's Weapons
 							i(125789),	-- Warmongering Gladiator's Cleaver
 							i(125790),	-- Warmongering Gladiator's Shanker
 							i(125791),	-- Warmongering Gladiator's Ripper
@@ -1082,7 +1082,7 @@ _.Zones =
 						["itemID"] = 137642,	-- Mark of Honor
 						["coord"] = { 55.0, 19.4, 622 },
 						["g"] = {
-							i(138631), -- Arsenal: Primal Gladiator's Weapons
+							i(138631),	-- Arsenal: Primal Gladiator's Weapons
 							-- Ensemble: Primal Gladiator's Chain Armor (Hunter)
 							-- Ensemble: Primal Gladiator's Dragonhide Armor (Druid)
 							-- Ensemble: Primal Gladiator's Dreadplate Armor (DK)
@@ -1368,7 +1368,7 @@ _.Zones =
 						["itemID"] = 137642,	-- Mark of Honor
 						["coord"] = { 54.8, 18.8, 622 },
 						["g"] = {
-							i(138628), -- Arsenal: Warmongering Combatant's Weapons
+							i(138628),	-- Arsenal: Warmongering Combatant's Weapons
 							-- Ensemble: Warmongering Combatant's Chain Armor (Hunter)
 							-- Ensemble: Warmongering Combatant's Dragonhide Armor (Druid)
 							-- Ensemble: Warmongering Combatant's Dreadplate Armor (DK)
@@ -1501,35 +1501,35 @@ _.Zones =
 						},
 					}),
 					n(87062, { 	-- Royce Bigbeard <Blacksmithing Plans>
-						i(115356, { -- Draenor Blacksmithing
+						i(115356, {	-- Draenor Blacksmithing
 							i(116727),		-- Recipe: Smoldering Breastplate
 							i(116726),		-- Recipe: Smoldering Helm
 							i(116728),		-- Recipe: Smoldering Greaves
 							recipe(171690),	-- Truesteel Ingot
 							i(120129),		-- Recipe: Secrets of Draenor Blacksmithing
 						}),
-						i(118720, { -- Secret of Draenor Blacksmithing
-							i(119329), -- Recipe: Soul of the Forge
-							i(120262), -- Recipe: Steelforged Aegis
-							i(120260), -- Recipe: Steelforged Axe
-							i(116731), -- Recipe: Steelforged Dagger
-							i(116745), -- Recipe: Steelforged Essence
-							i(116729), -- Recipe: Steelforged Greataxe
-							i(116732), -- Recipe: Steelforged Hammer
-							i(116730), -- Recipe: Steelforged Saber
-							i(116733), -- Recipe: Steelforged Shield
-							i(116740), -- Recipe: Truesteel Armguards
-							i(116741), -- Recipe: Truesteel Boots
-							i(116739), -- Recipe: Truesteel Breastplate
-							i(116743), -- Recipe: Truesteel Essence
-							i(116738), -- Recipe: Truesteel Gauntlets
-							i(116737), -- Recipe: Truesteel Greaves
-							i(116734), -- Recipe: Truesteel Grinder
-							i(116736), -- Recipe: Truesteel Helm
-							i(116735), -- Recipe: Truesteel Pauldrons
-							i(118044), -- Recipe: Truesteel Reshaper
-							i(116742), -- Recipe: Truesteel Waistguard
-							desc(i(116764), "This item contains 1-5 gold. DON'T WASTE YOUR SECRETS!\n\nSide note: This gold counts toward gold-looting achievements. (Got My Mind on My Money, etc.)"), -- Small Pouch of Coins
+						i(118720, {	-- Secret of Draenor Blacksmithing
+							i(119329),	-- Recipe: Soul of the Forge
+							i(120262),	-- Recipe: Steelforged Aegis
+							i(120260),	-- Recipe: Steelforged Axe
+							i(116731),	-- Recipe: Steelforged Dagger
+							i(116745),	-- Recipe: Steelforged Essence
+							i(116729),	-- Recipe: Steelforged Greataxe
+							i(116732),	-- Recipe: Steelforged Hammer
+							i(116730),	-- Recipe: Steelforged Saber
+							i(116733),	-- Recipe: Steelforged Shield
+							i(116740),	-- Recipe: Truesteel Armguards
+							i(116741),	-- Recipe: Truesteel Boots
+							i(116739),	-- Recipe: Truesteel Breastplate
+							i(116743),	-- Recipe: Truesteel Essence
+							i(116738),	-- Recipe: Truesteel Gauntlets
+							i(116737),	-- Recipe: Truesteel Greaves
+							i(116734),	-- Recipe: Truesteel Grinder
+							i(116736),	-- Recipe: Truesteel Helm
+							i(116735),	-- Recipe: Truesteel Pauldrons
+							i(118044),	-- Recipe: Truesteel Reshaper
+							i(116742),	-- Recipe: Truesteel Waistguard
+							desc(i(116764), "This item contains 1-5 gold. DON'T WASTE YOUR SECRETS!\n\nSide note: This gold counts toward gold-looting achievements. (Got My Mind on My Money, etc.)"),	-- Small Pouch of Coins
 						}),
 						i(108421, {	-- Plans: Blackrock Crucibles and Their Uses
 							["u"] = 1,
@@ -1581,7 +1581,7 @@ _.Zones =
 					}),
 					n(85946, {	-- Shadow Sage Brakoss <Arakkoa Outcasts Quartermaster>
 						["g"] = {
-							currency (823, { -- Apexis Crystal
+							currency (823, {	-- Apexis Crystal
 								["g"] = {
 									i(116772),	-- Shadowmane Charger
 									i(119143),	-- Son of Sethe
@@ -1596,7 +1596,7 @@ _.Zones =
 						["itemID"] = 137642,	-- Mark of Honor
 						["coord"] = { 54.6, 17.6, 622 },
 						["g"] = {
-							i(138630), -- Arsenal: Wild Combatant's Weapons
+							i(138630),	-- Arsenal: Wild Combatant's Weapons
 							-- Ensemble: Wild Combatant's Chain Armor (Hunter)
 							-- Ensemble: Wild Combatant's Dragonhide Armor (Druid)
 							-- Ensemble: Wild Combatant's Dreadplate Armor (DK)
@@ -1730,15 +1730,15 @@ _.Zones =
 					}),
 					n(85932, {	-- Vindicator Nuurem <Council of Exarchs Quartermaster>
 						["g"] = {
-							currency(823, { -- Apexis Crystal
+							currency(823, {	-- Apexis Crystal
 								["g"] = {
 									i(119142),	-- Draenei Micro Defender
 									i(116664),	-- Dusty Rockhide
 									i(118665),	-- Exarch Elixir
 								},
 							}),
-							i(119162, { -- Contract: Cleric Maluuf
-								follower(459), -- Cleric Maluuf
+							i(119162, {	-- Contract: Cleric Maluuf
+								follower(459),	-- Cleric Maluuf
 							}),
 							i(119135),	-- Council of Exarchs Tabard
 							i(115472),	-- Permanent Time Bubble
@@ -1749,7 +1749,7 @@ _.Zones =
 				}),
 			},
 			["isRaid"] = true,
-			["achievementID"] = 9214, -- Hero of Stormshield
+			["achievementID"] = 9214,	-- Hero of Stormshield
 			["lvl"] = 100,
 			["races"] = ALLIANCE_ONLY,
 		}),

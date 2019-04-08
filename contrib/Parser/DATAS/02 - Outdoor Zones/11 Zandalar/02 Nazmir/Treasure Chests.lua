@@ -65,7 +65,7 @@ _.Zones =
 							},
 							["icon"] = "Interface\\Icons\\Garrison_SilverChest",
 						}),
-						o(9999979, { -- Treasure Chest
+						o(9999979, {	-- Treasure Chest
 							["questID"] = 49899,
 							["isDaily"] = true,
 							["repeatable"] = true,

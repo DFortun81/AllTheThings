@@ -10,8 +10,8 @@ _.Zones =
 				["mapID"] = 114,
 				["g"] = {
 					n(-2, { 	-- Vendors
-						n(25206, { -- Ahlurglgr <Clam Vendor>
-							i(34597, { --  Winterfin Clam
+						n(25206, {	-- Ahlurglgr <Clam Vendor>
+							i(34597, {	--  Winterfin Clam
 								i(37461),	-- Tidebreaker Trident
 								i(37462),	-- Sea King's Crown
 								i(37463),	-- Winterfin Patch of Honor

@@ -42,19 +42,19 @@ _.Zones =
 					},
 				}),
 				n(-228, {	-- Flight Path
-					fp(649, { -- Andorhal, Western Plaguelands
+					fp(649, {	-- Andorhal, Western Plaguelands
 						["coord"] = { 46.6, 64.6 },
 					}),
-					fp(650, { -- Andorhal, Western Plaguelands
+					fp(650, {	-- Andorhal, Western Plaguelands
 						["coord"] = { 39.4, 69.4 },
 					}),
-					fp(66, { -- Chillwind Camp, Western Plaguelands
+					fp(66, {	-- Chillwind Camp, Western Plaguelands
 						["coord"] = { 42.8, 85 },
 					}),
-					fp(672, { -- Hearthglen, Western Plaguelands
+					fp(672, {	-- Hearthglen, Western Plaguelands
 						["coord"] = { 44.6, 18.4 },
 					}),
-					fp(651, { -- The Menders' Stead, Western Plaguelands
+					fp(651, {	-- The Menders' Stead, Western Plaguelands
 						["coord"] = { 50.4, 52.2 },
 					}),
 				}),
@@ -67,8 +67,8 @@ _.Zones =
 					p(420), 	-- Toad
 				}),
 				n(-17, {	-- Quests
-					ach(4893, { -- Western Plaguelands Quests
-						crit(1, { -- The First Battle for Andorhal
+					ach(4893, {	-- Western Plaguelands Quests
+						crit(1, {	-- The First Battle for Andorhal
 							qa(27158, {	-- The Battle for Andorhal
 								["qg"] = 10838,	-- Commander Ashlam Valorfist
 								["isBreadcrumb"] = true,	-- for "Scourge First... Horde Later"
@@ -159,7 +159,7 @@ _.Zones =
 								["sourceQuests"] = { 26925, 27117, 26924 },	-- Araj the Summoner, Brute Strength, & Scholomancer
 							}),
 						}),
-						crit(2, { -- A Temporary Peace
+						crit(2, {	-- A Temporary Peace
 							qa(27166, {	-- Go Fletch!
 								["qg"] = 10838,	-- Commander Ashlam Valorfist
 							}),
@@ -227,7 +227,7 @@ _.Zones =
 							}),
 
 						}),
-						crit(3, { -- The Second Battle for Andorhal
+						crit(3, {	-- The Second Battle for Andorhal
 							qa(27197, {	-- The Battle Resumes!
 								["qg"] = 45012,	-- Durnt Brightfalcon
 								["sourceQuests"] = { 27175,27233 },	-- The Menders' Stead
@@ -339,7 +339,7 @@ _.Zones =
 								["sourceQuests"] = { 27090 },	-- Andorhal, Once and For All
 							}),
 						}),
-						crit(4, { -- The Menders' Stead
+						crit(4, {	-- The Menders' Stead
 							qa(27168, {	-- Those That Couldn't Let Go
 								["qg"] = 11053,	-- High Priestess MacDonnell
 								["sourceQuests"] = { 27167, 27166 },	-- A Mighty Hunger & Go Fletch!
@@ -454,14 +454,14 @@ _.Zones =
 							}),
 						}),
 					}),
-					n(-168, { -- Other Quests
-						sz(770, 3, { -- Sorrow Hill TODO: This should really be Chillwind Camp
+					n(-168, {	-- Other Quests
+						sz(770, 3, {	-- Sorrow Hill TODO: This should really be Chillwind Camp
 							q( 27683, {	-- Into the Woods
 								["qgs"] = { 10840, 44462, 44456 } ,	-- Argent Office Pureheart, Jearl Donald, Adrine Towhide
 								["isBreadcrumb"] = true,	-- for Eastern Plaguelands (mutually exclusive with other EP bcrumbs)
 							}),
 						}),
-						sz(770, 9, { -- Northridge Lumber Camp
+						sz(770, 9, {	-- Northridge Lumber Camp
 							q( 27013, {	-- Too Close for Comfort
 								["qg"] = 44472,	-- Kelly Dumah
 							}),
@@ -479,7 +479,7 @@ _.Zones =
 								["sourceQuests"] = { 27013 },	-- Too Close for Comfort
 							}),
 						}),
-						sz(770, 10, { -- Hearthglen
+						sz(770, 10, {	-- Hearthglen
 							q( 27156, {	-- It's About Time!
 								["qg"] = 45157,	-- Lieutenant Myner
 							}),

@@ -536,7 +536,7 @@ _.Zones =
 								},
 								["description"] = "Cave entrance is first set of coords, rare is at second set in the cave.",
 								["g"] = {
-									i(118207), -- Hydraling
+									i(118207),	-- Hydraling
 								},
 							},
 							{	-- Voidreaver Urnae

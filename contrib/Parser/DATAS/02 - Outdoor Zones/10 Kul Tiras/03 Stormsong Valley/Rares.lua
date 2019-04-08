@@ -164,7 +164,7 @@ _.Zones =
 							["questID"] = 50075,
 							["coord"] = { 71.48, 54.26 },
 						}),
-						o(281646, { -- Honey Vat
+						o(281646, {	-- Honey Vat
 							["questID"] = 50576,
 							["coord"] = { 66.6, 71.1 },
 							["g"] = {
@@ -208,8 +208,8 @@ _.Zones =
 							["description"] = "The path to this rare starts at 41.2, 44.1.",
 							["questID"] = 51762,
 							["coords"] = {
-								{ 43.4, 44.9 }, -- Nestmother
-								{ 41.2, 44.1 }, -- Path
+								{ 43.4, 44.9 },	-- Nestmother
+								{ 41.2, 44.1 },	-- Path
 							},
 							["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(160458),	-- Ancient Featherlight Slippers
@@ -293,7 +293,7 @@ _.Zones =
 							}),
 						}),
 						n(139515, {	-- Sandscour [MissingL]
-							["questID"] = 9999, -- Apparently people are upset at seeing ---  in the addon 
+							["questID"] = 9999,	-- Apparently people are upset at seeing ---  in the addon 
 						}),
 						n(138938, {	-- Seabreaker Skoloth
 							["questID"] = 51757,

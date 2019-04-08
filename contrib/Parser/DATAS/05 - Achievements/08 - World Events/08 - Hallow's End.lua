@@ -12,9 +12,9 @@ To do:
 
 _.Achievements = 
 {
-	n(-9962, { -- World Events
+	n(-9962, {	-- World Events
 		["groups"] = bubbleDown({["u"] = 26}, {
-			n(-10021, { -- Hallow's Eend
+			n(-10021, {	-- Hallow's Eend
 				["groups"] = {
 					ach(10365),		-- A Frightening Friend (Garrisons)
 					ach(284, {		-- A Mask for All Occasions

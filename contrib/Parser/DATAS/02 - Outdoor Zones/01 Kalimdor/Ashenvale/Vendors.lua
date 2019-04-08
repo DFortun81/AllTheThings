@@ -43,7 +43,7 @@ _.Zones =
 						["coord"] = { 34.8, 49.8, 63 },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
-							i(5973), -- Pattern: Barbaric Leggings
+							i(5973),	-- Pattern: Barbaric Leggings
 						},
 					}),
 					n(12962, {	-- Wik'Tar <Fish Merchant & Supplies>

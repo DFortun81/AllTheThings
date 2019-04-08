@@ -9,21 +9,21 @@ _.Instances = { tier(4, {	-- Cataclysm
 		["maps"] = { 402, 403, 404, 405, 406 },
 		["groups"] = {
 			n(-17, {	-- Quests
-				q(30097, { -- Archival Purposes
+				q(30097, {	-- Archival Purposes
 					["qg"] = 57864,	-- Alurmi
 					["groups"] = {
-						i(72871), -- Crescent Wand
-						i(72852), -- Archivist's Gloves
-						i(72872), -- Time Strand Gauntlets
+						i(72871),	-- Crescent Wand
+						i(72852),	-- Archivist's Gloves
+						i(72872),	-- Time Strand Gauntlets
 					},
 				}),
-				q(30096, { -- Murozond
+				q(30096, {	-- Murozond
 					["qg"] = 54751,	-- Nozdormu
 					["groups"] = {
-						i(72873), -- Bronze Blaster
-						i(76152), -- Cowl of Destiny
-						i(72875), -- Time Twister's Gauntlets
-						i(72874), -- Boots of the Forked Road
+						i(72873),	-- Bronze Blaster
+						i(76152),	-- Cowl of Destiny
+						i(72875),	-- Time Twister's Gauntlets
+						i(72874),	-- Boots of the Forked Road
 					},
 				}),
 				q(30098, {	-- The Well of Eternity
@@ -150,23 +150,23 @@ _.Instances = { tier(4, {	-- Cataclysm
 							i(133386),	-- Dead End Boots
 						},
 					}),
-					cr(54431, e(340, { -- Echo of Baine	
+					cr(54431, e(340, {	-- Echo of Baine	
 						i(133401),	-- Axe of The Tauren Chieftain
 						i(133402),	-- Bloodhoof Legguards
 					})),
-					cr(54445, e(285, { -- Echo of Jaina	
+					cr(54445, e(285, {	-- Echo of Jaina	
 						i(133395),	-- Jaina's Staff
 						i(133396),	-- Ward of Incantations
 					})),
-					cr(54123, e(323, { -- Echo of Sylvanas
+					cr(54123, e(323, {	-- Echo of Sylvanas
 						i(133397),	-- Windrunner's Bow
 						i(133398),	-- Cloak of the Banshee Queen
 					})),
-					cr(54544, e(283, { -- Echo of Tyrande
+					cr(54544, e(283, {	-- Echo of Tyrande
 						i(133399),	-- Crescent Moon
 						i(133400),	-- Whisperwind Robes
 					})),
-					cr(54432, e(289, { -- Murozond
+					cr(54432, e(289, {	-- Murozond
 						i(133409),	-- Jagged Edge of Time
 						i(133417),	-- Bronze Blaster
 						i(133421),	-- Cowl of Destiny

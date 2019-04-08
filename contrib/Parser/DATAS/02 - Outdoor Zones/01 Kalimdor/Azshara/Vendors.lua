@@ -36,8 +36,8 @@ _.Zones =
 						n(12957, {	-- Blimo Gadgetspring <Trade Supplies>
 							["u"] = 43,	-- Removed From Game
 							["groups"] = {
-								un(7, i(15751)), -- Pattern: Blue Dragonscale Breastplate
-								un(7, i(15729)), -- Pattern: Chimeric Gloves
+								un(7, i(15751)),	-- Pattern: Blue Dragonscale Breastplate
+								un(7, i(15729)),	-- Pattern: Chimeric Gloves
 							},
 						}),
 					}),

@@ -66,7 +66,7 @@ profession(794, {	-- Archaeology
 		n(-161, {	-- Toys
 			sp(273852, { i(160751) }),	-- Dance of the Dead
 		}),
-		sp(273851, { -- Soul Coffer (Spell #273851)
+		sp(273851, {	-- Soul Coffer (Spell #273851)
 			i(160741),	-- Soul Coffer
 			i(160742),	-- Pristine Soul Coffer
 		}),
@@ -100,21 +100,21 @@ profession(794, {	-- Archaeology
 	}),
 	currency(1172, {	-- Highborne
 		i(137782),	-- Vantus Rune Technique: Grand Magistrix Elisande [Rank 3]
-		sp(196471, { -- Inert Leystone Charm
-			i(130907), -- Inert Leystone Charm
-			i(130922), -- Pristine Inert Leystone Charm
+		sp(196471, {	-- Inert Leystone Charm
+			i(130907),	-- Inert Leystone Charm
+			i(130922),	-- Pristine Inert Leystone Charm
 		}),
 		sp(196474, {	-- Nobleman's Letter Opener
 			i(130910),	-- Nobleman's Letter Opener
-			i(130925), -- Pristine Nobleman's Letter Opener
+			i(130925),	-- Pristine Nobleman's Letter Opener
 		}),	
-		sp(196472, { -- Quietwine Vial
+		sp(196472, {	-- Quietwine Vial
 			i(130908),	-- Quietwine Vial
 			i(130923),	-- Pristine Quietwine Vial
 		}),	
-		sp(196473, { -- Pre-War Highborne Tapestry
+		sp(196473, {	-- Pre-War Highborne Tapestry
 			i(130909),	-- Pre-War Highborne Tapestry
-			i(130924), -- Pristine Pre-War Highborne Tapestry
+			i(130924),	-- Pristine Pre-War Highborne Tapestry
 		}),
 		sp(196470, { 	-- Violetglass Vessel
 			i(130906),	--  Violetglass Vessel
@@ -205,11 +205,11 @@ profession(794, {	-- Archaeology
 				i(89684),  	-- Umbrella of Chi-Ji
 			}),	
 		}),
-		sp(113971, { -- Pandaren Game Board 
+		sp(113971, {	-- Pandaren Game Board 
 			i(79897),	-- Pandaren Game Board 
 			i(85558),	-- Pristine Pandaren Game Board 
 		}),
-		sp(113968, { -- Pandaren Tea Set
+		sp(113968, {	-- Pandaren Tea Set
 			i(79896),	-- Pandaren Tea Set
 			i(85557),	-- Pristine Pandaren Tea Set
 		}),
@@ -261,7 +261,7 @@ profession(794, {	-- Archaeology
 		n(-386, {	-- Trinket
 			sp(273819, { i(160753) }),	-- Sanguinating Totem (Trinket)
 		}),
-		sp(273812, { -- Blowgun of the Sethra
+		sp(273812, {	-- Blowgun of the Sethra
 			i(160743),	-- Blowgun of the Sethrak
 			i(160744),	-- Pristine Blowgun of the Sethrak
 		}),

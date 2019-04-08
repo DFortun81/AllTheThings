@@ -11,7 +11,7 @@ _.Zones =
 					["groups"] = {
 						n(142197, {	-- Nigel Rifthold <Adventurer's Society>
 							["groups"] = {
-								i(163036, { -- Polished Pet Charm
+								i(163036, {	-- Polished Pet Charm
 								--Note!! Write the item like this on this vendor to prevent the description from being written on the charms.
 									i(163493, {	-- Bloody Rabbit Fang
 										["description"] = "Defeat Cottontail Matron (located at 52.20, 46.80) for this item to appear on the vendor.",

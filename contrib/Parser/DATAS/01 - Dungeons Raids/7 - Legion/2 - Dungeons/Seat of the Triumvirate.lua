@@ -3,12 +3,12 @@
 ---------------------------------------------------
 
 _.Instances = { tier(7, {	-- Legion
-	inst(945, { -- Seat of the Triumvirate
+	inst(945, {	-- Seat of the Triumvirate
 		["lvl"] = 110,
 		["mapID"] = 903,
 		["coord"] = { 22.2, 55.9, 882 },	-- Mac'Aree
 		["groups"] = {
-			d(2, { -- Heroic
+			d(2, {	-- Heroic
 				sz(12069,9, { 	-- Shadowguard Incursion
 					["description"] = "|cFFFFD700Glowing Key Fragment|r can drop from any mob in the |cFFFFFFFFShadowguard Incursion|r area.  Rares and Elites have a higher drop chance than normal mobs.",
 					["icon"] = "Interface\\Icons\\inv_icon_shadowcouncilorb_purple",
@@ -65,57 +65,57 @@ _.Instances = { tier(7, {	-- Legion
 										{ -- Ensemble: Light-Woven Triumvirate Regalia
 											["itemID"] = 152241,
 											["groups"] = {
-												i(151337), -- Head
-												i(151299), -- Shoulder
-												i(151635), -- Cloak
-												i(151303), -- Chest
-												i(151305), -- Wrist
-												i(151300), -- Hands
-												i(151302), -- Waist
-												i(151304), -- Legs
-												i(151301), -- Feet
+												i(151337),	-- Head
+												i(151299),	-- Shoulder
+												i(151635),	-- Cloak
+												i(151303),	-- Chest
+												i(151305),	-- Wrist
+												i(151300),	-- Hands
+												i(151302),	-- Waist
+												i(151304),	-- Legs
+												i(151301),	-- Feet
 											},
 										},
 										{ -- Ensemble: Burnished Triumvirate Armor
 											["itemID"] = 152242,
 											["groups"] = {
-												i(151336), -- Head
-												i(151319), -- Shoulder
-												i(151306), -- Cloak
-												i(151313), -- Chest
-												i(151315), -- Wrist
-												i(151318), -- Hands
-												i(151316), -- Waist
-												i(151314), -- Legs
-												i(151317), -- Feet
+												i(151336),	-- Head
+												i(151319),	-- Shoulder
+												i(151306),	-- Cloak
+												i(151313),	-- Chest
+												i(151315),	-- Wrist
+												i(151318),	-- Hands
+												i(151316),	-- Waist
+												i(151314),	-- Legs
+												i(151317),	-- Feet
 											},
 										},
 										{ -- Ensemble: Sterling Triumvirate Chainmail
 											["itemID"] = 152243,
 											["groups"] = {
-												i(151324), -- Head
-												i(151323), -- Shoulder
-												i(151634), -- Cloak
-												i(151325), -- Chest
-												i(151321), -- Wrist
-												i(151322), -- Hands
-												i(151326), -- Waist
-												i(151338), -- Legs
-												i(151320), -- Feet
+												i(151324),	-- Head
+												i(151323),	-- Shoulder
+												i(151634),	-- Cloak
+												i(151325),	-- Chest
+												i(151321),	-- Wrist
+												i(151322),	-- Hands
+												i(151326),	-- Waist
+												i(151338),	-- Legs
+												i(151320),	-- Feet
 											},
 										},
 										{ -- Ensemble: Venerated Triumvirate Battleplate
 											["itemID"] = 152244,
 											["groups"] = {
-												i(151333), -- Head
-												i(151331), -- Shoulder
-												i(151298), -- Cloak
-												i(151329), -- Chest
-												i(151328), -- Wrist
-												i(151332), -- Hands
-												i(151327), -- Waist
-												i(151339), -- Legs
-												i(151330), -- Feet
+												i(151333),	-- Head
+												i(151331),	-- Shoulder
+												i(151298),	-- Cloak
+												i(151329),	-- Chest
+												i(151328),	-- Wrist
+												i(151332),	-- Hands
+												i(151327),	-- Waist
+												i(151339),	-- Legs
+												i(151330),	-- Feet
 											},
 										},
 									},
@@ -124,11 +124,11 @@ _.Instances = { tier(7, {	-- Legion
 						}),
 					},
 				}),
-				n(127882, { -- Vixx the Collector
-					i(153004), -- Unstable Portal Emitter
-					i(152982), -- Vixx's Chest of Tricks
+				n(127882, {	-- Vixx the Collector
+					i(153004),	-- Unstable Portal Emitter
+					i(152982),	-- Vixx's Chest of Tricks
 				}),
-				cr(122313, e(1979, { -- Zuraal the Ascended
+				cr(122313, e(1979, {	-- Zuraal the Ascended
 					i(151312),	-- Ampoule of Pure Void
 					i(151315),	-- Bracers of Dark Binding
 					i(151329),	-- Breastplate of the Dark Touch
@@ -142,7 +142,7 @@ _.Instances = { tier(7, {	-- Legion
 					i(151291),	-- Frozen Void Shard
 					i(151293),	-- Orb of the Abandoned Magi
 				})),
-				cr(122316, e(1980, { -- Saprish
+				cr(122316, e(1980, {	-- Saprish
 					i(151321),	-- Darkfang Scale Wristguards
 					i(151327),	-- Girdle of the Shadowguard
 					i(151318),	-- Gloves of the Dark Shroud
@@ -155,7 +155,7 @@ _.Instances = { tier(7, {	-- Legion
 					i(151294),	-- Coalesced Void
 					i(151295),	-- Darkstorm Arrowhead
 				})),
-				cr(124309, e(1981, { -- Viceroy Nezhar
+				cr(124309, e(1981, {	-- Viceroy Nezhar
 					i(151316),	-- Cinch of the Umbral Lasher
 					i(151333),	-- Crown of the Dark Envoy
 					i(151305),	-- Entropic Wristwraps
@@ -170,7 +170,7 @@ _.Instances = { tier(7, {	-- Legion
 					i(151290),	-- Darktide Fervor
 					i(151288),	-- Void-Resistant Seedpod
 				})),
-				cr(122314, e(1982, { -- L'ura
+				cr(122314, e(1982, {	-- L'ura
 					ach(12007),	-- Heroic: Seat of the Triumvirate
 					i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
 					i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3)
@@ -190,12 +190,12 @@ _.Instances = { tier(7, {	-- Legion
 					i(151292),	-- Sanctified Eredar Lock
 				})),
 			}),
-			d(23, { -- Mythic
-				n(127882, { -- Vixx the Collector
-					i(153004), -- Unstable Portal Emitter
-					i(152982), -- Vixx's Chest of Tricks
+			d(23, {	-- Mythic
+				n(127882, {	-- Vixx the Collector
+					i(153004),	-- Unstable Portal Emitter
+					i(152982),	-- Vixx's Chest of Tricks
 				}),
-				cr(122313, e(1979, { -- Zuraal the Ascended
+				cr(122313, e(1979, {	-- Zuraal the Ascended
 					ach(12004),	-- Welcome the Void
 					i(151312),	-- Ampoule of Pure Void
 					i(151315),	-- Bracers of Dark Binding
@@ -210,7 +210,7 @@ _.Instances = { tier(7, {	-- Legion
 					i(151291),	-- Frozen Void Shard
 					i(151293),	-- Orb of the Abandoned Magi
 				})),
-				cr(122316, e(1980, { -- Saprish
+				cr(122316, e(1980, {	-- Saprish
 					ach(12005),	-- Let It All Out
 					i(151321),	-- Darkfang Scale Wristguards
 					i(151327),	-- Girdle of the Shadowguard
@@ -224,7 +224,7 @@ _.Instances = { tier(7, {	-- Legion
 					i(151294),	-- Coalesced Void
 					i(151295),	-- Darkstorm Arrowhead
 				})),
-				cr(124309, e(1981, { -- Viceroy Nezhar
+				cr(124309, e(1981, {	-- Viceroy Nezhar
 					i(151316),	-- Cinch of the Umbral Lasher
 					i(151333),	-- Crown of the Dark Envoy
 					i(151305),	-- Entropic Wristwraps
@@ -239,7 +239,7 @@ _.Instances = { tier(7, {	-- Legion
 					i(151290),	-- Darktide Fervor
 					i(151288),	-- Void-Resistant Seedpod
 				})),
-				cr(122314, e(1982, { -- L'ura
+				cr(122314, e(1982, {	-- L'ura
 					ach(12009),	-- Darker Side
 					ach(12008),	-- Mythic: Seat of the Triumvirate
 					i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)

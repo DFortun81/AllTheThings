@@ -9,10 +9,10 @@ Notation of what is missing from Blizzard's localization
 	- DMF Dungeon 2 Sets
 Finish adding unobtainable flags once Unobtainables files is cleaned out
 --]]
-	n(-5352, { -- Tier Sets
-		n(-3186, { -- Tier 0 (Dungeon Set 1) [Unobtainable]
+	n(-5352, {	-- Tier Sets
+		n(-3186, {	-- Tier 0 (Dungeon Set 1) [Unobtainable]
 			["groups"] = {
-				n(-3200, { -- Vestments of the Devout
+				n(-3200, {	-- Vestments of the Devout
 					["groups"] = {
 						un(2, i(16693)),	-- Devout Crown
 						un(2, i(16695)),	-- Devout Mantle
@@ -24,7 +24,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 						un(2, i(16691)),	-- Devout Sandals
 					},
 				}),
-				n(-3201, { -- Magister's Regalia
+				n(-3201, {	-- Magister's Regalia
 					["groups"] = {
 						un(2, i(16686)),	-- Magister's Crown
 						un(2, i(16689)),	-- Magister's Mantle
@@ -36,7 +36,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 						un(2, i(16682)),	-- Magister's Boots
 					},
 				}),
-				n(-3202, { -- Dreadmist Rainment
+				n(-3202, {	-- Dreadmist Rainment
 					["groups"] = {
 						un(2, i(16698)),	-- Dreadmist Mask
 						un(2, i(16701)),	-- Dreadmist Mantle
@@ -48,7 +48,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 						un(2, i(16704)),	-- Dreadmist Sandals
 					},
 				}),
-				n(-3203, { -- Wildheart Rainment
+				n(-3203, {	-- Wildheart Rainment
 					["groups"] = {
 						un(2, i(16720)),	-- Wildheart Cowl
 						un(2, i(16718)),	-- Wildheart Spaulders
@@ -60,7 +60,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 						un(2, i(16715)),	-- Wildheart Boots
 					},
 				}),
-				n(-3204, { -- Shadowcraft Armor
+				n(-3204, {	-- Shadowcraft Armor
 					["groups"] = {
 						un(2, i(16707)),	-- Shadowcraft Cap
 						un(2, i(16708)),	-- Shadowcraft Spaulders
@@ -72,7 +72,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 						un(2, i(16711)),	-- Shadowcraft Boots
 					},
 				}),
-				n(-3205, { -- Beaststalker Armor
+				n(-3205, {	-- Beaststalker Armor
 					["groups"] = {
 						un(2, i(16677)),	-- Beaststalker's Cap
 						un(2, i(16679)),	-- Beaststalker's Mantle
@@ -84,7 +84,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 						un(2, i(16675)),	-- Beaststalker's Boots
 					},
 				}),
-				n(-3206, { -- The Elements
+				n(-3206, {	-- The Elements
 					["groups"] = {
 						un(2, i(16667)),	-- Coif of Elements
 						un(2, i(16669)),	-- Pauldrons of Elements
@@ -96,7 +96,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 						un(2, i(16670)),	-- Boots of Elements
 					},
 				}),
-				n(-3207, { -- Lightforge Armor
+				n(-3207, {	-- Lightforge Armor
 					["groups"] = {
 						un(2, i(16727)),	-- Lightforge Helm
 						un(2, i(16729)),	-- Lightforge Spaulders
@@ -108,7 +108,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 						un(2, i(16725)),	-- Lightforge Boots
 					},
 				}),
-				n(-3208, { -- Battlegear of Valor
+				n(-3208, {	-- Battlegear of Valor
 					["groups"] = {
 						un(2, i(16731)),	-- Helm of Valor
 						un(2, i(16733)),	-- Spaulders of Valor
@@ -122,8 +122,8 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 				}),
 			},
 		}),
-		n(-3185, { -- Tier 0.5 (Dungeon Set 2) [Unobtainable]
-			n(-3209, { -- Vestments of the Virtuous
+		n(-3185, {	-- Tier 0.5 (Dungeon Set 2) [Unobtainable]
+			n(-3209, {	-- Vestments of the Virtuous
 				["groups"] = {
 					un(2, i(22080)),	-- Virtuous Crown
 					un(2, i(22082)),	-- Virtuous Mantle
@@ -135,7 +135,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 					un(2, i(22084)),	-- Virtuous Sandals
 				},
 			}),
-			n(-3210, { -- Sorcerer's Regalia
+			n(-3210, {	-- Sorcerer's Regalia
 				["groups"] = {
 					un(2, i(22065)),	-- Sorcerer's Crown
 					un(2, i(22068)),	-- Sorcerer's Mantle
@@ -147,7 +147,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 					un(2, i(22064)),	-- Sorcerer's Boots
 				},
 			}),
-			n(-3211, { -- Deathmist Rainment
+			n(-3211, {	-- Deathmist Rainment
 				["groups"] = {
 					un(2, i(22074)),	-- Deathmist Mask
 					un(2, i(22073)),	-- Deathmist Mantle
@@ -159,7 +159,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 					un(2, i(22076)),	-- Deathmist Sandals
 				},
 			}),
-			n(-3212, { -- Feralheart Rainment
+			n(-3212, {	-- Feralheart Rainment
 				["groups"] = {
 					un(2, i(22109)),	-- Feralheart Cowl
 					un(2, i(22112)),	-- Feralheart Spaulders
@@ -171,7 +171,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 					un(2, i(22107)),	-- Feralheart Boots
 				},
 			}),
-			n(-3213, { -- Darkmantle Armor
+			n(-3213, {	-- Darkmantle Armor
 				["groups"] = {
 					un(2, i(22005)),	-- Darkmantle Cap
 					un(2, i(22008)),	-- Darkmantle Spaulders
@@ -183,7 +183,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 					un(2, i(22003)),	-- Darkmantle Boots
 				},
 			}),
-			n(-3214, { -- Beastmaster Armor
+			n(-3214, {	-- Beastmaster Armor
 				["groups"] = {
 					un(2, i(22013)),	-- Beastmaster's Cap
 					un(2, i(22016)),	-- Beastmaster's Mantle
@@ -195,7 +195,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 					un(2, i(22061)),	-- Beastmaster's Boots
 				},
 			}),
-			n(-3215, { -- The Five Thunders
+			n(-3215, {	-- The Five Thunders
 				["groups"] = {
 					un(2, i(22097)),	-- Coif of The Five Thunders
 					un(2, i(22101)),	-- Pauldrons of The Five Thunders
@@ -207,7 +207,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 					un(2, i(22096)),	-- Boots of The Five Thunders
 				},
 			}),
-			n(-3216, { -- Soulforge Armor
+			n(-3216, {	-- Soulforge Armor
 				["groups"] = {
 					un(2, i(22091)),	-- Soulforge Helm
 					un(2, i(22093)),	-- Soulforge Spaulders
@@ -219,7 +219,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 					un(2, i(22087)),	-- Soulforge Boots
 				},
 			}),
-			n(-3217, { -- Battlegear of Heroism
+			n(-3217, {	-- Battlegear of Heroism
 				["groups"] = {
 					un(2, i(21999)),	-- Helm of Heroism
 					un(2, i(22001)),	-- Spaulders of Heroism
@@ -232,203 +232,203 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 				},
 			}),
 		}),
-		n(-3184, { -- Tier 1 (Molten Core)
+		n(-3184, {	-- Tier 1 (Molten Core)
 			["groups"] = {
-				gs(357, { -- Vestments of Prophecy
+				gs(357, {	-- Vestments of Prophecy
 					["groups"] = {
-						i(16813), -- Helm
-						i(16816), -- Shoulders
-						i(16815), -- Chest
-						i(16819), -- Bracers
-						i(16812), -- Hands
-						i(16817), -- Belt
-						i(16814), -- Legs
-						i(16811), -- Feet
+						i(16813),	-- Helm
+						i(16816),	-- Shoulders
+						i(16815),	-- Chest
+						i(16819),	-- Bracers
+						i(16812),	-- Hands
+						i(16817),	-- Belt
+						i(16814),	-- Legs
+						i(16811),	-- Feet
 					},
 					["classes"] = { 5 },
 				}),
-				gs(910, { -- Arcanist Regalia
+				gs(910, {	-- Arcanist Regalia
 					["groups"] = {
-						i(16795), -- Helm
-						i(16797), -- Shoulders
-						i(16798), -- Chest
-						i(16799), -- Bracers
-						i(16801), -- Hands
-						i(16802), -- Belt
-						i(16796), -- Legs
-						i(16800), -- Feet
+						i(16795),	-- Helm
+						i(16797),	-- Shoulders
+						i(16798),	-- Chest
+						i(16799),	-- Bracers
+						i(16801),	-- Hands
+						i(16802),	-- Belt
+						i(16796),	-- Legs
+						i(16800),	-- Feet
 					},
 					["classes"] = { 8 },
 				}),
-				gs(868, { -- Felheart Raiment
+				gs(868, {	-- Felheart Raiment
 					["groups"] = {
-						i(16808), -- Helm
-						i(16807), -- Shoulders
-						i(16809), -- Chest
-						i(16804), -- Bracers
-						i(16805), -- Hands
-						i(16806), -- Belt
-						i(16810), -- Legs
-						i(16803), -- Feet
+						i(16808),	-- Helm
+						i(16807),	-- Shoulders
+						i(16809),	-- Chest
+						i(16804),	-- Bracers
+						i(16805),	-- Hands
+						i(16806),	-- Belt
+						i(16810),	-- Legs
+						i(16803),	-- Feet
 					},
 					["classes"] = { 9 },
 				}),
-				gs(928, { -- Cenarion Raiment
+				gs(928, {	-- Cenarion Raiment
 					["groups"] = {
-						i(16834), -- Helm
-						i(16836), -- Shoulders
-						i(16833), -- Chest
-						i(16830), -- Bracers
-						i(16831), -- Hands
-						i(16828), -- Belt
-						i(16835), -- Legs
-						i(16829), -- Feet
+						i(16834),	-- Helm
+						i(16836),	-- Shoulders
+						i(16833),	-- Chest
+						i(16830),	-- Bracers
+						i(16831),	-- Hands
+						i(16828),	-- Belt
+						i(16835),	-- Legs
+						i(16829),	-- Feet
 					},
 					["classes"] = { 11 },
 				}),
-				gs(894, { -- Nightslayer Armor
+				gs(894, {	-- Nightslayer Armor
 					["groups"] = {
-						i(16821), -- Helm
-						i(16823), -- Shoulders
-						i(16820), -- Chest
-						i(16825), -- Bracers
-						i(16826), -- Hands
-						i(16827), -- Belt
-						i(16822), -- Legs
-						i(16824), -- Feet
+						i(16821),	-- Helm
+						i(16823),	-- Shoulders
+						i(16820),	-- Chest
+						i(16825),	-- Bracers
+						i(16826),	-- Hands
+						i(16827),	-- Belt
+						i(16822),	-- Legs
+						i(16824),	-- Feet
 					},
 					["classes"] = { 4 },
 				}),
-				gs(917, { -- Giantstalker Armor
+				gs(917, {	-- Giantstalker Armor
 					["groups"] = {
-						i(16846), -- Helm
-						i(16848), -- Shoulders
-						i(16845), -- Chest
-						i(16850), -- Bracers
-						i(16852), -- Hands
-						i(16851), -- Belt
-						i(16847), -- Legs
-						i(16849), -- Feet
+						i(16846),	-- Helm
+						i(16848),	-- Shoulders
+						i(16845),	-- Chest
+						i(16850),	-- Bracers
+						i(16852),	-- Hands
+						i(16851),	-- Belt
+						i(16847),	-- Legs
+						i(16849),	-- Feet
 					},
 					["classes"] = { 3 },
 				}),
-				gs(876, { -- Earthfury Raiment
+				gs(876, {	-- Earthfury Raiment
 					["groups"] = {
-						i(16842), -- Helm
-						i(16844), -- Shoulders
-						i(16841), -- Chest
-						i(16840), -- Bracers
-						i(16839), -- Hands
-						i(16838), -- Belt
-						i(16843), -- Legs
-						i(16837), -- Feet
+						i(16842),	-- Helm
+						i(16844),	-- Shoulders
+						i(16841),	-- Chest
+						i(16840),	-- Bracers
+						i(16839),	-- Hands
+						i(16838),	-- Belt
+						i(16843),	-- Legs
+						i(16837),	-- Feet
 					},
 					["classes"] = { 7 },
 				}),
-				gs(902, { -- Lawbringer Armor
+				gs(902, {	-- Lawbringer Armor
 					["groups"] = {
-						i(16854), -- Helm
-						i(16856), -- Shoulders
-						i(16853), -- Chest
-						i(16857), -- Bracers
-						i(16860), -- Hands
-						i(16858), -- Belt
-						i(16855), -- Legs
-						i(16859), -- Feet
+						i(16854),	-- Helm
+						i(16856),	-- Shoulders
+						i(16853),	-- Chest
+						i(16857),	-- Bracers
+						i(16860),	-- Hands
+						i(16858),	-- Belt
+						i(16855),	-- Legs
+						i(16859),	-- Feet
 					},
 					["classes"] = { 2 },
 				}),
-				gs(853, { -- Battlegear of Might
+				gs(853, {	-- Battlegear of Might
 					["groups"] = {
-						i(16866), -- Helm
-						i(16868), -- Shoulders
-						i(16865), -- Chest
-						i(16861), -- Bracers
-						i(16863), -- Hands
-						i(16864), -- Belt
-						i(16867), -- Legs
-						i(16862), -- Feet
+						i(16866),	-- Helm
+						i(16868),	-- Shoulders
+						i(16865),	-- Chest
+						i(16861),	-- Bracers
+						i(16863),	-- Hands
+						i(16864),	-- Belt
+						i(16867),	-- Legs
+						i(16862),	-- Feet
 					},
 					["classes"] = { 1 },
 				}),
 			},
-			["achievementID"] = 11741, -- So Hot Right Now
+			["achievementID"] = 11741,	-- So Hot Right Now
 		}),
-		n(-3183, { -- Tier 1.5 (Zul Gurub - Zandalar Tribe Set) [Unobtainable]
-			n(-3250, { -- Confessor's Raiment
+		n(-3183, {	-- Tier 1.5 (Zul Gurub - Zandalar Tribe Set) [Unobtainable]
+			n(-3250, {	-- Confessor's Raiment
 				["groups"] = {
-					i(19841), -- Shoulders
-					i(19843), -- Bracers
-					i(19842), -- Belt
+					i(19841),	-- Shoulders
+					i(19843),	-- Bracers
+					i(19842),	-- Belt
 				},
 				["classes"] = { 5 },
 			}),
-			n(-3251, { -- Illusionist's Attire
+			n(-3251, {	-- Illusionist's Attire
 				["groups"] = {
-					i(19845), -- Shoulders
-					i(20034), -- Chest
-					i(19846), -- Bracers
+					i(19845),	-- Shoulders
+					i(20034),	-- Chest
+					i(19846),	-- Bracers
 				},
 				["classes"] = { 8 },
 			}),
-			n(-3252, { -- Demoniac's Threads
+			n(-3252, {	-- Demoniac's Threads
 				["groups"] = {
-					i(19849), -- Shoulders
-					i(20033), -- Chest
-					i(19848), -- Bracers
+					i(19849),	-- Shoulders
+					i(20033),	-- Chest
+					i(19848),	-- Bracers
 				},
 				["classes"] = { 9 },
 			}),
-			n(-3253, { -- Haruspex's Garb
+			n(-3253, {	-- Haruspex's Garb
 				["groups"] = {
-					i(19838), -- Chest
-					i(19840), -- Bracers
-					i(19839), -- Belt
+					i(19838),	-- Chest
+					i(19840),	-- Bracers
+					i(19839),	-- Belt
 				},
 				["classes"] = { 11 },
 			}),
-			n(-3254, { -- Madcap's Outfit
+			n(-3254, {	-- Madcap's Outfit
 				["groups"] = {
-					i(19835), -- Shoulders
-					i(19834), -- Chest
-					i(19836), -- Bracers
+					i(19835),	-- Shoulders
+					i(19834),	-- Chest
+					i(19836),	-- Bracers
 				},
 				["classes"] = { 4 },
 			}),
-			n(-3255, { -- Predator's Armor
+			n(-3255, {	-- Predator's Armor
 				["groups"] = {
-					i(19831), -- Shoulders
-					i(19833), -- Bracers
-					i(19832), -- Belt
+					i(19831),	-- Shoulders
+					i(19833),	-- Bracers
+					i(19832),	-- Belt
 				},
 				["classes"] = { 3 },
 			}),
-			n(-3256, { -- Augur's Regalia
+			n(-3256, {	-- Augur's Regalia
 				["groups"] = {
-					i(19828), -- Chest
-					i(19830), -- Bracers
-					i(19829), -- Belt
+					i(19828),	-- Chest
+					i(19830),	-- Bracers
+					i(19829),	-- Belt
 				},
 				["classes"] = { 7 },
 			}),
-			n(-3257, { -- Freethinker's Armor
+			n(-3257, {	-- Freethinker's Armor
 				["groups"] = {
-					i(19825), -- Chest
-					i(19827), -- Bracers
-					i(19826), -- Belt
+					i(19825),	-- Chest
+					i(19827),	-- Bracers
+					i(19826),	-- Belt
 				},
 				["classes"] = { 2 },
 			}),
-			n(-3258, { -- Vindicator's Battlegear
+			n(-3258, {	-- Vindicator's Battlegear
 				["groups"] = {
-					i(19822), -- Chest
-					i(19824), -- Bracers
-					i(19823), -- Belt
+					i(19822),	-- Chest
+					i(19824),	-- Bracers
+					i(19823),	-- Belt
 				},
 				["classes"] = { 1 },
 			}),
 		}),
-		n(-3182, { -- Tier 2 (Blackwing Lair & Onyxia's Lair]
+		n(-3182, {	-- Tier 2 (Blackwing Lair & Onyxia's Lair]
 			["groups"] = {
 				gs(356, {	-- Vestments of Transcendence
 					["groups"] = {
@@ -548,116 +548,116 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 					["classes"] = { 1 },
 				}),		
 			},
-			["achievementID"] = 11742, -- Dress in Lairs
+			["achievementID"] = 11742,	-- Dress in Lairs
 		}),
-		n(-3180, { -- Tier 2.5 (Temple of Ahn'qiraj - Brood of Nozdormu Set)
+		n(-3180, {	-- Tier 2.5 (Temple of Ahn'qiraj - Brood of Nozdormu Set)
 			["groups"] = {
-				gs(358, { -- Garments of the Oracle
+				gs(358, {	-- Garments of the Oracle
 					["groups"] = {
-						i(21348), -- Head
-						i(21350), -- Shoulder
-						i(21351), -- Chest
-						i(21604), -- Bracers of Royal Redemption
-						i(21352), -- Leg
-						i(21349), -- Feet
+						i(21348),	-- Head
+						i(21350),	-- Shoulder
+						i(21351),	-- Chest
+						i(21604),	-- Bracers of Royal Redemption
+						i(21352),	-- Leg
+						i(21349),	-- Feet
 					},
 					["classes"] = { 5 },
 				}),
-				gs(908, { -- Enigma Vestments
+				gs(908, {	-- Enigma Vestments
 					["groups"] = {
-						i(21347), -- Head
-						i(21345), -- Shoulder
-						i(21343), -- Chest
-						i(21582), -- Grasp of the Old God
-						i(21346), -- Leg
-						i(21344), -- Feet
+						i(21347),	-- Head
+						i(21345),	-- Shoulder
+						i(21343),	-- Chest
+						i(21582),	-- Grasp of the Old God
+						i(21346),	-- Leg
+						i(21344),	-- Feet
 					},
 					["classes"] = { 8 },
 				}),
-				gs(866, { -- Doomcaller's Attire
+				gs(866, {	-- Doomcaller's Attire
 					["groups"] = {
-						i(21337), -- Head
-						i(21335), -- Shoulder
-						i(21334), -- Chest
-						i(21585), -- Dark Storm Gauntlets
-						i(21336), -- Leg
-						i(21338), -- Feet
+						i(21337),	-- Head
+						i(21335),	-- Shoulder
+						i(21334),	-- Chest
+						i(21585),	-- Dark Storm Gauntlets
+						i(21336),	-- Leg
+						i(21338),	-- Feet
 					},
 					["classes"] = { 9 },
 				}),
-				gs(926, { -- Genesis Raiment
+				gs(926, {	-- Genesis Raiment
 					["groups"] = {
-						i(21353), -- Head
-						i(21354), -- Shoulder
-						i(21357), -- Chest
-						i(21617), -- Wasphide Gauntlets
-						i(21356), -- Leg
-						i(21355), -- Feet
+						i(21353),	-- Head
+						i(21354),	-- Shoulder
+						i(21357),	-- Chest
+						i(21617),	-- Wasphide Gauntlets
+						i(21356),	-- Leg
+						i(21355),	-- Feet
 					},
 					["classes"] = { 11 },
 				}),
-				gs(892, { -- Deathdealer's Embrace
+				gs(892, {	-- Deathdealer's Embrace
 					["groups"] = {
-						i(21360), -- Head
-						i(21361), -- Shoulder
-						i(21364), -- Chest
-						i(21362), -- Leg
-						i(21359), -- Feet
+						i(21360),	-- Head
+						i(21361),	-- Shoulder
+						i(21364),	-- Chest
+						i(21362),	-- Leg
+						i(21359),	-- Feet
 					},
 					["classes"] = { 4 },
 				}),
-				gs(915, { -- Striker's Garb
+				gs(915, {	-- Striker's Garb
 					["groups"] = {
-						i(21366), -- Head
-						i(21367), -- Shoulder
-						i(21370), -- Chest
-						i(21599), -- Vek'lor's Gloves of Devastation
-						i(21368), -- Leg
-						i(21365), -- Feet
+						i(21366),	-- Head
+						i(21367),	-- Shoulder
+						i(21370),	-- Chest
+						i(21599),	-- Vek'lor's Gloves of Devastation
+						i(21368),	-- Leg
+						i(21365),	-- Feet
 					},
 					["classes"] = { 3 },
 				}),
-				gs(874, { -- Stormcaller's Garb
+				gs(874, {	-- Stormcaller's Garb
 					["groups"] = {
-						i(21372), -- Head
-						i(21376), -- Shoulder
-						i(21374), -- Chest
-						i(21624), -- Gauntlets of Kalimdor
-						i(21607), -- Grasp of the Fallen Emperor
-						i(21375), -- Leg
-						i(21373), -- Feet
+						i(21372),	-- Head
+						i(21376),	-- Shoulder
+						i(21374),	-- Chest
+						i(21624),	-- Gauntlets of Kalimdor
+						i(21607),	-- Grasp of the Fallen Emperor
+						i(21375),	-- Leg
+						i(21373),	-- Feet
 					},
 					["classes"] = { 7 },
 				}),
-				gs(900, { -- Avenger's Battlegear
+				gs(900, {	-- Avenger's Battlegear
 					["groups"] = {
-						i(21387), -- Head
-						i(21391), -- Shoulder
-						i(21389), -- Chest
-						i(21623), -- Gauntlets of the Righteous Champion
-						i(21606), -- Belt of the Fallen Emperor
-						i(21390), -- Leg
-						i(21388), -- Feet
+						i(21387),	-- Head
+						i(21391),	-- Shoulder
+						i(21389),	-- Chest
+						i(21623),	-- Gauntlets of the Righteous Champion
+						i(21606),	-- Belt of the Fallen Emperor
+						i(21390),	-- Leg
+						i(21388),	-- Feet
 					},
 					["classes"] = { 2 },
 				}),
-				gs(851, { -- Conqueror's Battlegear
+				gs(851, {	-- Conqueror's Battlegear
 					["groups"] = {
-						i(21329), -- Head
-						i(21330), -- Shoulder
-						i(21331), -- Chest
-						i(21618), -- Hive Defiler Wristguards
-						i(21581), -- Gauntlets of Annihilation
-						i(21598), -- Royal Qiraji Belt
-						i(21332), -- Leg
-						i(21333), -- Feet
+						i(21329),	-- Head
+						i(21330),	-- Shoulder
+						i(21331),	-- Chest
+						i(21618),	-- Hive Defiler Wristguards
+						i(21581),	-- Gauntlets of Annihilation
+						i(21598),	-- Royal Qiraji Belt
+						i(21332),	-- Leg
+						i(21333),	-- Feet
 					},
 					["classes"] = { 1 },
 				}),	
 			},
-			["achievementID"] = 11743, -- Accessor-Eyes
+			["achievementID"] = 11743,	-- Accessor-Eyes
 		}),
-		n(-3179, { -- Tier 3 (Naxxramas - Vanilla)
+		n(-3179, {	-- Tier 3 (Naxxramas - Vanilla)
 			["groups"] = {
 				gs(355, {	-- Vestments of Faith	
 					un(9, i(22514)),	-- Circlet of Faith
@@ -750,9 +750,9 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 					un(9, i(22420)),	-- Dreadnaught Sabatons
 				}),		
 			},
-			["achievementID"] = 11744, -- Drop Dead, Gorgeous
+			["achievementID"] = 11744,	-- Drop Dead, Gorgeous
 		}),
-		n(-3178, { -- Tier 3.5 (Dungeon Set 3)
+		n(-3178, {	-- Tier 3.5 (Dungeon Set 3)
 			n(-3286, {	-- Hallowed Raiment		
 				["groups"] = {		
 					i(28413),	-- Hallowed Crown
@@ -897,11 +897,11 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 				["modID"] = 2,
 			}),			
 		}),
-		n(-3177, { -- Tier 4 (Karazhan, Gruul's Lair, & Magtheridon's Lair)
+		n(-3177, {	-- Tier 4 (Karazhan, Gruul's Lair, & Magtheridon's Lair)
 			["groups"] = {
 				gs(354, {	-- Incarnate Regalia 		
 					["groups"] = {
-						n(-9951, { -- Disc / Holy
+						n(-9951, {	-- Disc / Holy
 							i(29049),	-- Light-Collar of the Incarnate 
 							i(29054),	-- Light-Mantle of the Incarnate 
 							i(29050),	-- Robes of the Incarnate 
@@ -911,7 +911,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 							i(29053),	-- Trousers of the Incarnate 
 							i(28663),	-- Boots of the Incorrupt  
 						}),
-						n(-9917, { -- Shadow
+						n(-9917, {	-- Shadow
 							i(29058),	-- Soul-Collar of the Incarnate 
 							i(29060),	-- Soul-mantle of the Incarnate 
 							i(29056),	-- Shroud of the Incarnate 
@@ -952,7 +952,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 				}),			
 				gs(922, {	-- Malorne Raiment 		
 					["groups"] = {
-						n(-9952, { -- Guardian / Feral
+						n(-9952, {	-- Guardian / Feral
 							i(29098),	-- Stag-Helm of Malorne 
 							i(29100),	-- Mantle of Malorne 
 							i(29096),	-- Breastplate of Malorne 
@@ -962,7 +962,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 							i(29099),	-- Greaves of Malorne 
 							i(28752),	-- Forestlord Striders  
 						}),
-						n(-9926, { -- Balance
+						n(-9926, {	-- Balance
 							i(29093),	-- Antlers of Malorne 
 							i(29095),	-- Pauldrons of Malorne 
 							i(29091),	-- Chestpiece of Malorne 
@@ -972,7 +972,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 							i(29094),	-- Britches of Malorne 
 							i(28752),	-- Forestlord Striders  
 						}),
-						n(-9927, { -- Resto
+						n(-9927, {	-- Resto
 							i(29086),	-- Crown of Malorne 
 							i(29089),	-- Shoulderguards of Malorne 
 							i(29087),	-- Chestguard of Malorne 
@@ -1013,7 +1013,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 				}),			
 				gs(872, {	-- Cyclone Regalia 		
 					["groups"] = {
-						n(-9939, { -- Elemental
+						n(-9939, {	-- Elemental
 							i(29035),	-- Cyclone Faceguard 
 							i(29037),	-- Cyclone Shoulderguards 
 							i(29033),	-- Cyclone Chestguard 
@@ -1023,7 +1023,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 							i(29036),	-- Cyclone Legguards 
 							i(28810),	-- Windshear Boot  
 						}),
-						n(-9940, { -- Enhancement
+						n(-9940, {	-- Enhancement
 							i(29040),	-- Cyclone Helm 
 							i(29043),	-- Cyclone Shoulderplates 
 							i(29038),	-- Cyclone Breastplate 
@@ -1033,7 +1033,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 							i(29042),	-- Cyclone War-Kilt 
 							i(28810),	-- Windshear Boot  
 						}),
-						n(-9941, { -- Restoration
+						n(-9941, {	-- Restoration
 							i(29028),	-- Cyclone Headdress 
 							i(29031),	-- Cyclone Shoulderpads 
 							i(29029),	-- Cyclone Hauberk 
@@ -1048,7 +1048,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 				}),			
 				gs(906, {	-- Justicar Armor 		
 					["groups"] = {	
-						n(-9942, { -- Holy
+						n(-9942, {	-- Holy
 							i(29061),	-- Justicar Diadem 
 							i(29064),	-- Justicar Pauldrons 
 							i(29062),	-- Justicar Chestpiece 
@@ -1058,7 +1058,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 							i(29063),	-- Justicar Leggings 
 							i(28569),	-- Boots of Valiance  
 						}),
-						n(-9943, { -- Prot
+						n(-9943, {	-- Prot
 							i(29068),	-- Justicar Faceguard 
 							i(29070),	-- Justicar Shoulderguards 
 							i(29066),	-- Justicar Chestguard 
@@ -1068,7 +1068,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 							i(29069),	-- Justicar Legguards 
 							i(28569),	-- Boots of Valiance  
 						}),
-						n(-9944, { -- Retribution
+						n(-9944, {	-- Retribution
 							i(29073),	-- Justicar Crown 
 							i(29075),	-- Justicar Shoulderplates 
 							i(29071),	-- Justicar Breastplate 
@@ -1083,7 +1083,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 				}),			
 				gs(849, {	-- Warbringer Armor 		
 					["groups"] = {	
-						n(-9953, { -- Arms/Fury
+						n(-9953, {	-- Arms/Fury
 							i(29021),	-- Warbringer Greathelm 
 							i(29023),	-- Warbringer Shoulderguards 
 							i(29019),	-- Warbringer Chestguard 
@@ -1093,7 +1093,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 							i(29022),	-- Warbringer Legguards 
 							i(28747),	-- Battlescar Boots  
 						}),
-						n(-9947, { -- Prot
+						n(-9947, {	-- Prot
 							i(29011),	-- Warbringer Greathelm 
 							i(29016),	-- Warbringer Shoulderguards 
 							i(29012),	-- Warbringer Chestguard 
@@ -1107,9 +1107,9 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 					["classes"] = { 1 },		
 				}),	
 			},
-			["achievementID"] = 11746, -- Outlandish Style
+			["achievementID"] = 11746,	-- Outlandish Style
 		}),
-		n(-3176, { -- Tier 5 (Serpentshrine Cavern & The Eye)
+		n(-3176, {	-- Tier 5 (Serpentshrine Cavern & The Eye)
 			["groups"] = {
 				gs(353, {	-- Avatar Regalia			
 					["groups"] = {			
@@ -1307,9 +1307,9 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 					["classes"] = { 1 },			
 				}),				
 			},
-			["achievementID"] = 11747, -- Merely a Set
+			["achievementID"] = 11747,	-- Merely a Set
 		}),
-		n(-3175, { -- Tier 6 (Hyjal Summit, Black Temple, and Sunwell Plateau)
+		n(-3175, {	-- Tier 6 (Hyjal Summit, Black Temple, and Sunwell Plateau)
 			["groups"] = {
 				gs(351, {	-- Absolution Regalia			
 					["groups"] = {			
@@ -1508,9 +1508,9 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 					["classes"] = { 1 },			
 				}),				
 			},
-			["achievementID"] = 11748, -- Black is the New Black
+			["achievementID"] = 11748,	-- Black is the New Black
 		}),
-		n(-3159, { -- Tier 6.5 (Sunwell Plateau)
+		n(-3159, {	-- Tier 6.5 (Sunwell Plateau)
 			["groups"] = {
 				gs(352, {	-- Vestments of Absolution			
 					["groups"] = {			
@@ -1721,9 +1721,9 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 					["classes"] = { 1 },			
 				}),				
 			},
-			["achievementID"] = 11749, -- Suns Out, Thori'dals Out			
+			["achievementID"] = 11749,	-- Suns Out, Thori'dals Out			
 		}),
-		n(-3174, { -- Tier 7 (Naxxramas - Wrath
+		n(-3174, {	-- Tier 7 (Naxxramas - Wrath
 			["groups"] = {
 				n(-372, {	-- 10 Player					
 					["groups"] = {					
@@ -1962,11 +1962,11 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 						}),				
 					},					
 				}),		
-				n(-373, { -- 25 Player [Resort at a later date]
+				n(-373, {	-- 25 Player [Resort at a later date]
 					["groups"] = {
-						gs(362, { -- Valorous Regalia of Faith
+						gs(362, {	-- Valorous Regalia of Faith
 							["groups"] = {
-								n(-9951, { -- Discipline / Holy Priest
+								n(-9951, {	-- Discipline / Holy Priest
 									i(40447),	-- Valorous Crown of Faith
 									i(40450),	-- Valorous Shoulderpads of Faith
 									i(40449),	-- Valorous Robe of Faith
@@ -1976,7 +1976,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 									i(40448),	-- Valorous Leggings of Faith
 									i(40236),	-- Serene Echoes
 								}),
-								n(-9917, { -- Shadow Priest
+								n(-9917, {	-- Shadow Priest
 									i(40456),	-- Valorous Circlet of Faith
 									i(40459),	-- Valorous Mantle of Faith
 									i(40458),	-- Valorous Raiments of Faith
@@ -1989,7 +1989,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 							},			
 							["classes"] = { 5 },
 						}),
-						gs(727, { -- Valorous Frostfire Garb
+						gs(727, {	-- Valorous Frostfire Garb
 							["groups"] = {
 								i(40416),	-- Valorous Frostfire Circlet
 								i(40419),	-- Valorous Frostfire Shoulderpads
@@ -2002,7 +2002,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 							},
 							["classes"] = { 8 },			
 						}),
-						gs(679, { -- Valorous Plagueheart Garb
+						gs(679, {	-- Valorous Plagueheart Garb
 							["groups"] = {
 								i(40421),	-- Valorous Plagueheart Circlet
 								i(40424),	-- Valorous Plagueheart Shoulderpads
@@ -2015,7 +2015,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 							},
 							["classes"] = { 9 },	
 						}),
-						gs(830, { -- Valorous Dreamwalkeer Battlegear
+						gs(830, {	-- Valorous Dreamwalkeer Battlegear
 							["groups"] = {
 								n(-9952, {	--Guardian / Feral Druid Spec	
 									i(40473),	-- Valorous Dreamwalker Headguard
@@ -2050,7 +2050,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 							},
 							["classes"] = { 11 },
 						}),
-						gs(695, { -- Valorous Bonescythe Battlegear
+						gs(695, {	-- Valorous Bonescythe Battlegear
 							["groups"] = {
 								i(40499),	-- Valorous Bonescythe Helmet
 								i(40502),	-- Valorous Bonescythe Pauldrons
@@ -2061,7 +2061,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 							},
 							["classes"] = { 4 },
 						}),
-						gs(743, { -- Valorous Cryptstalker Battlegear
+						gs(743, {	-- Valorous Cryptstalker Battlegear
 							["groups"] = {
 								i(40505),	-- Valorous Cryptstalker Headpiece
 								i(40507),	-- Valorous Cryptstalker Spaulders
@@ -2073,7 +2073,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 							},
 							["classes"] = { 3 },	
 						}),
-						gs(645, { -- Valorous Earthshatter Regalia
+						gs(645, {	-- Valorous Earthshatter Regalia
 							["groups"] = {
 								n(-9939, {	-- Elemental	
 									i(40516),	-- Valorous Earthshatter Helm
@@ -2108,7 +2108,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 							},
 							["classes"] = { 7 },
 						}),
-						gs(711, { -- Valorous Redeemption Plate
+						gs(711, {	-- Valorous Redeemption Plate
 							["groups"] = {
 								n(-9942, {	-- Holy	
 									i(40571),	-- Valorous Redemption Headpiece
@@ -2143,7 +2143,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 							},
 							["classes"] = { 2 },		
 						}),
-						gs(662, { -- Valorous Dreadnaught Battlegear
+						gs(662, {	-- Valorous Dreadnaught Battlegear
 							["groups"] = {
 								n(-9953, {	-- Arms / Fury Warrior Spec	
 									i(40528),	-- Valorous Dreadnaught Helmet
@@ -2167,7 +2167,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 							},
 							["classes"] = { 1 },	
 						}),
-						gs(846, { -- Valorous Scourgeborne Plate
+						gs(846, {	-- Valorous Scourgeborne Plate
 							["groups"] = {
 								n(-9948, {	-- Blood	
 									i(40565),	-- Valorous Scourgeborne Faceguard
@@ -2192,643 +2192,643 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 				}),
 
 			},
-			["achievementID"] = 11750, -- Undying Aesthetic
+			["achievementID"] = 11750,	-- Undying Aesthetic
 		}),
-		n(-3172, { -- Tier 9
+		n(-3172, {	-- Tier 9
 			["groups"] = {
-				h(n(-9913, { -- Horde
-					n(-372, { -- 10 Man Normal
-						gs(350, { -- Zabra's Regalia			
+				h(n(-9913, {	-- Horde
+					n(-372, {	-- 10 Man Normal
+						gs(350, {	-- Zabra's Regalia			
 							["groups"] = {		
-								n(-9951, { -- Holy/Disciple Priest	
-									i(48068), -- Zabra's Cowl of Conquest
-									i(48071), -- Zabra's Shoulderpads of Conquest
-									i(48070), -- Zabra's Robe of Conquest
-									i(47324), -- Bindings of the Ashen Saint
-									i(48067), -- Zabra's Gloves of Conquest
-									i(47909), -- Belt of the Eternal
-									i(48069), -- Zabra's Leggings of Conquest
-									i(49232), -- Sandals of the Grieving Soul
+								n(-9951, {	-- Holy/Disciple Priest	
+									i(48068),	-- Zabra's Cowl of Conquest
+									i(48071),	-- Zabra's Shoulderpads of Conquest
+									i(48070),	-- Zabra's Robe of Conquest
+									i(47324),	-- Bindings of the Ashen Saint
+									i(48067),	-- Zabra's Gloves of Conquest
+									i(47909),	-- Belt of the Eternal
+									i(48069),	-- Zabra's Leggings of Conquest
+									i(49232),	-- Sandals of the Grieving Soul
 								}),	
-								n(-9917, { -- Shadow Priest	
+								n(-9917, {	-- Shadow Priest	
 								}),	
 							},		
 							["classes"] = { 5 },		
 						}),			
-						gs(723, { -- Sunstrider's Regalia			
+						gs(723, {	-- Sunstrider's Regalia			
 							["groups"] = {		
 								i(47774),-- Sunstrider's Hood of Conquest	
-								i(47777), -- Sunstrider's Shoulderpads of Conquest	
-								i(47776), -- Sunstrider's Robe of Conquest	
-								i(47586), -- Bejeweled Wizard's Bracers	
-								i(47773), -- Sunstrider's Gauntlets of Conquest	
-								i(47855), -- Icehowl Binding	
-								i(47775), -- Sunstrider's Leggings of Conquest	
-								i(47321), -- Boots of the Icy Floe	
+								i(47777),	-- Sunstrider's Shoulderpads of Conquest	
+								i(47776),	-- Sunstrider's Robe of Conquest	
+								i(47586),	-- Bejeweled Wizard's Bracers	
+								i(47773),	-- Sunstrider's Gauntlets of Conquest	
+								i(47855),	-- Icehowl Binding	
+								i(47775),	-- Sunstrider's Leggings of Conquest	
+								i(47321),	-- Boots of the Icy Floe	
 							},		
 							["classes"] = { 8 },		
 						}),			
-						gs(675, { -- Gul'dan's Regalia			
+						gs(675, {	-- Gul'dan's Regalia			
 							["groups"] = {		
-								i(47801), -- Gul'dan's Hood of Conquest	
-								i(47798), -- Gul'dan's Shoulderpads of Conquest	
-								i(47799), -- Gul'dan's Robe of Conquest	
-								i(47802), -- Gul'dan's Gloves of Conquest	
-								i(47286), -- Belt of Biting Cold	
-								i(47800), -- Gul'dan's Leggings of Conquest	
-								i(47873), -- Sunreaver Magus' Sandals	
+								i(47801),	-- Gul'dan's Hood of Conquest	
+								i(47798),	-- Gul'dan's Shoulderpads of Conquest	
+								i(47799),	-- Gul'dan's Robe of Conquest	
+								i(47802),	-- Gul'dan's Gloves of Conquest	
+								i(47286),	-- Belt of Biting Cold	
+								i(47800),	-- Gul'dan's Leggings of Conquest	
+								i(47873),	-- Sunreaver Magus' Sandals	
 							},		
 							["classes"] = { 9 },		
 						}),			
-						gs(826, { -- Runetotem's Battlegear			
+						gs(826, {	-- Runetotem's Battlegear			
 							["groups"] = {		
-								n(-9952, { -- Guardian / Feral Spec	
+								n(-9952, {	-- Guardian / Feral Spec	
 								}),	
-								n(-9926, { -- Balance Spec	
+								n(-9926, {	-- Balance Spec	
 								}),	
-								n(-9927, { -- Restoration Spec	
-									i(48154), -- Runetotem's Headpiece of Conquest
-									i(48157), -- Runetotem's Spaulders of Conquest
-									i(48156), -- Runetotem's Robe of Conquest
-									i(47277), -- Bindings of the Autumn Willow
-									i(48153), -- Runetotem's Handguards of Conquest
-									i(47863), -- Belt of the Bloodhoof Emissary
-									i(48155), -- Runetotem's Leggings of Conquest
-									i(47262), -- Boots of the Harsh Winter
+								n(-9927, {	-- Restoration Spec	
+									i(48154),	-- Runetotem's Headpiece of Conquest
+									i(48157),	-- Runetotem's Spaulders of Conquest
+									i(48156),	-- Runetotem's Robe of Conquest
+									i(47277),	-- Bindings of the Autumn Willow
+									i(48153),	-- Runetotem's Handguards of Conquest
+									i(47863),	-- Belt of the Bloodhoof Emissary
+									i(48155),	-- Runetotem's Leggings of Conquest
+									i(47262),	-- Boots of the Harsh Winter
 								}),	
 							},		
 							["classes"] = { 11 },		
 						}),			
-						gs(691, { -- Garona's Battlegear			
+						gs(691, {	-- Garona's Battlegear			
 							["groups"] = {		
-								i(48245), -- Garona's Helmet of Conquest	
-								i(48247), -- Garona's Pauldrons of Conquest	
-								i(48243), -- Garona's Breastplate of Conquest	
-								i(47313), -- Armbands of Dark Determination	
-								i(48244), -- Garona's Gauntlets of Conquest	
-								i(47299), -- Belt of the Pitiless Killer	
-								i(48246), -- Garona's Legplates of Conquest	
-								i(47853), -- Acidmaw Treads	
+								i(48245),	-- Garona's Helmet of Conquest	
+								i(48247),	-- Garona's Pauldrons of Conquest	
+								i(48243),	-- Garona's Breastplate of Conquest	
+								i(47313),	-- Armbands of Dark Determination	
+								i(48244),	-- Garona's Gauntlets of Conquest	
+								i(47299),	-- Belt of the Pitiless Killer	
+								i(48246),	-- Garona's Legplates of Conquest	
+								i(47853),	-- Acidmaw Treads	
 							},		
 							["classes"] = { 4 },		
 						}),			
-						gs(738, { -- Windrunner's Pursuit			
+						gs(738, {	-- Windrunner's Pursuit			
 							["groups"] = {		
-								i(48277), -- Windrunner's Headpiece of Conquest	
-								i(48279), -- Windrunner's Spaulders of Conquest	
-								i(48275), -- Windrunner's Tunic of Conquest	
-								i(47850), -- Bracers of the Northern Stalker	
-								i(48276), -- Windrunner's Handguards of Conquest	
-								i(47311), -- Waistguard of Deathly Dominion	
-								i(48278), -- Windrunner's Legguards of Conquest	
-								i(47867), -- Warsong Poacher's Greaves	
+								i(48277),	-- Windrunner's Headpiece of Conquest	
+								i(48279),	-- Windrunner's Spaulders of Conquest	
+								i(48275),	-- Windrunner's Tunic of Conquest	
+								i(47850),	-- Bracers of the Northern Stalker	
+								i(48276),	-- Windrunner's Handguards of Conquest	
+								i(47311),	-- Waistguard of Deathly Dominion	
+								i(48278),	-- Windrunner's Legguards of Conquest	
+								i(47867),	-- Warsong Poacher's Greaves	
 							},		
 							["classes"] = { 3 },		
 						}),			
-						gs(641, { -- Thrall's Garb			
+						gs(641, {	-- Thrall's Garb			
 							["groups"] = {		
-								n(-9939, { -- Elemental Spec	
+								n(-9939, {	-- Elemental Spec	
 								}),	
-								n(-9940, { -- Enhancement Spec	
+								n(-9940, {	-- Enhancement Spec	
 								}),	
-								n(-9941, { -- Restoration Spec	
-									i(48297), -- Thrall's Headpiece of Conquest
-									i(48299), -- Thrall's Spaulders of Conquest
-									i(48295), -- Thrall's Tunic of Conquest
-									i(47580), -- Black Chitin Bracers
-									i(48296), -- Thrall's Handguards of Conquest
-									i(47866), -- Darkspear Ritual Binding
-									i(48298), -- Thrall's Legguards of Conquest
-									i(47295), -- Sabatons of Tremoring Earth
+								n(-9941, {	-- Restoration Spec	
+									i(48297),	-- Thrall's Headpiece of Conquest
+									i(48299),	-- Thrall's Spaulders of Conquest
+									i(48295),	-- Thrall's Tunic of Conquest
+									i(47580),	-- Black Chitin Bracers
+									i(48296),	-- Thrall's Handguards of Conquest
+									i(47866),	-- Darkspear Ritual Binding
+									i(48298),	-- Thrall's Legguards of Conquest
+									i(47295),	-- Sabatons of Tremoring Earth
 								}),	
 							},		
 							["classes"] = { 7 },		
 						}),			
-						gs(707, { -- Liadrin's Plate			
+						gs(707, {	-- Liadrin's Plate			
 							["groups"] = {		
-								n(-9942, { -- Holy Spec	
-									i(48597), -- Liadrin's Headpiece of Conquest
-									i(48595), -- Liadrin's Spaulders of Conquest
-									i(48599), -- Liadrin's Tunic of Conquest
-									i(47298), -- Armguards of the Shieldmaiden
-									i(48598), -- Liadrin's Gloves of Conquest
-									i(47858), -- Girdle of the Frozen Reach
-									i(48596), -- Liadrin's Greaves of Conquest
-									i(47263), -- Sabatons of the Courageous
+								n(-9942, {	-- Holy Spec	
+									i(48597),	-- Liadrin's Headpiece of Conquest
+									i(48595),	-- Liadrin's Spaulders of Conquest
+									i(48599),	-- Liadrin's Tunic of Conquest
+									i(47298),	-- Armguards of the Shieldmaiden
+									i(48598),	-- Liadrin's Gloves of Conquest
+									i(47858),	-- Girdle of the Frozen Reach
+									i(48596),	-- Liadrin's Greaves of Conquest
+									i(47263),	-- Sabatons of the Courageous
 								}),	
-								n(-9943, { -- Protection	
+								n(-9943, {	-- Protection	
 								}),	
-								n(-9944, { -- Retribution	
+								n(-9944, {	-- Retribution	
 								}),	
 							},		
 							["classes"] = { 2 },		
 						}),			
-						gs(657, { -- Hellscream's Battlegear			
+						gs(657, {	-- Hellscream's Battlegear			
 							["groups"] = {		
-								n(-9953, { -- Fury / Arms Spec	
-									i(48388), -- Hellscream's Helmet of Conquest
-									i(48390), -- Hellscream's Shoulderplates of Conquest
-									i(48386), -- Hellscream's Battleplate of Conquest
-									i(47253), -- Boneshatter Vambraces
-									i(48387), -- Hellscream's Gauntlets of Conquest
-									i(47859), -- Belt of the Impaler
-									i(48389), -- Hellscream's Legplates of Conquest
-									i(47312), -- Greaves of the Saronite Citadel
+								n(-9953, {	-- Fury / Arms Spec	
+									i(48388),	-- Hellscream's Helmet of Conquest
+									i(48390),	-- Hellscream's Shoulderplates of Conquest
+									i(48386),	-- Hellscream's Battleplate of Conquest
+									i(47253),	-- Boneshatter Vambraces
+									i(48387),	-- Hellscream's Gauntlets of Conquest
+									i(47859),	-- Belt of the Impaler
+									i(48389),	-- Hellscream's Legplates of Conquest
+									i(47312),	-- Greaves of the Saronite Citadel
 								}),	
-								n(-9947, { -- Protection Spec	
+								n(-9947, {	-- Protection Spec	
 								}),	
 							},		
 							["classes"] = { 1 },		
 						}),			
-						gs(841, { -- Koltira's Battlegear			
+						gs(841, {	-- Koltira's Battlegear			
 							["groups"] = {		
-								n(-9948, { -- Blood Spec	
+								n(-9948, {	-- Blood Spec	
 								}),	
-								n(-9954, { -- Frost / Unholy Spec	
-									i(48503), -- Koltira's Helmet of Conquest
-									i(48505), -- Koltira's Shoulderpads of Conquest
-									i(48501), -- Koltira's Battleplate of Conquest
-									i(47869), -- Armplates of the Nether Lord
-									i(48502), -- Koltira's Gauntlets of Conquest
-									i(47268), -- Bloodbath Girdle
-									i(48504), -- Koltira's Legplates of Conquest
-									i(47269), -- Dawnbreaker Sabatons
+								n(-9954, {	-- Frost / Unholy Spec	
+									i(48503),	-- Koltira's Helmet of Conquest
+									i(48505),	-- Koltira's Shoulderpads of Conquest
+									i(48501),	-- Koltira's Battleplate of Conquest
+									i(47869),	-- Armplates of the Nether Lord
+									i(48502),	-- Koltira's Gauntlets of Conquest
+									i(47268),	-- Bloodbath Girdle
+									i(48504),	-- Koltira's Legplates of Conquest
+									i(47269),	-- Dawnbreaker Sabatons
 								}),	
 							},		
 							["classes"] = { 6 },		
 						}),			
 					}),
-					n(-373, { -- 25 Man Normal
-						gs(350, { -- Zabra's Regalia			
+					n(-373, {	-- 25 Man Normal
+						gs(350, {	-- Zabra's Regalia			
 							["groups"] = {		
-								n(-9951, { -- Holy/Disciple Priest	
-									i(48065), -- Zabra's Cowl of Triumph
-									i(48062), -- Zabra's Shoulderpads of Triumph
-									i(48063), -- Zabra's Robe of Triumph
-									i(47324), -- Bindings of the Ashen Saint
-									i(48066), -- Zabra's Gloves of Triumph
-									i(47909), -- Belt of the Eternal
-									i(48064), -- Zabra's Leggings of Triumph
-									i(49232), -- Sandals of the Grieving Soul
+								n(-9951, {	-- Holy/Disciple Priest	
+									i(48065),	-- Zabra's Cowl of Triumph
+									i(48062),	-- Zabra's Shoulderpads of Triumph
+									i(48063),	-- Zabra's Robe of Triumph
+									i(47324),	-- Bindings of the Ashen Saint
+									i(48066),	-- Zabra's Gloves of Triumph
+									i(47909),	-- Belt of the Eternal
+									i(48064),	-- Zabra's Leggings of Triumph
+									i(49232),	-- Sandals of the Grieving Soul
 								}),	
-								n(-9917, { -- Shadow Priest	
-									i(48095), -- Zabra's Circlet of Triumph
-									i(48092), -- Zabra's Mantle of Triumph
-									i(48093), -- Zabra's Raiments of Triumph
-									i(47324), -- Bindings of the Ashen Saint
-									i(48096), -- Zabra's Handwraps of Triumph
-									i(47909), -- Belt of the Eternal
-									i(48094), -- Zabra's Pants of Triumph
-									i(49232), -- Sandals of the Grieving Soul
+								n(-9917, {	-- Shadow Priest	
+									i(48095),	-- Zabra's Circlet of Triumph
+									i(48092),	-- Zabra's Mantle of Triumph
+									i(48093),	-- Zabra's Raiments of Triumph
+									i(47324),	-- Bindings of the Ashen Saint
+									i(48096),	-- Zabra's Handwraps of Triumph
+									i(47909),	-- Belt of the Eternal
+									i(48094),	-- Zabra's Pants of Triumph
+									i(49232),	-- Sandals of the Grieving Soul
 								}),	
 							},		
 							["classes"] = { 5 },		
 						}),			
-						gs(723, { -- Sunstrider's Regalia			
+						gs(723, {	-- Sunstrider's Regalia			
 							["groups"] = {		
-								i(47771), -- Sunstrider's Hood of Triumph	
-								i(47768), -- Sunstrider's Shoulderpads of Triumph	
-								i(47769), -- Sunstrider's Robe of Triumph	
-								i(47586), -- Bejeweled Wizard's Bracers	
-								i(47772), -- Sunstrider's Gauntlets of Triumph	
-								i(47855), -- Icehowl Binding	
-								i(47770), -- Sunstrider's Leggings of Triumph	
-								i(47321), -- Boots of the Icy Floe	
+								i(47771),	-- Sunstrider's Hood of Triumph	
+								i(47768),	-- Sunstrider's Shoulderpads of Triumph	
+								i(47769),	-- Sunstrider's Robe of Triumph	
+								i(47586),	-- Bejeweled Wizard's Bracers	
+								i(47772),	-- Sunstrider's Gauntlets of Triumph	
+								i(47855),	-- Icehowl Binding	
+								i(47770),	-- Sunstrider's Leggings of Triumph	
+								i(47321),	-- Boots of the Icy Floe	
 							},		
 							["classes"] = { 8 },		
 						}),			
-						gs(675, { -- Gul'dan's Regalia			
+						gs(675, {	-- Gul'dan's Regalia			
 							["groups"] = {		
-								i(47804), -- Gul'dan's Hood of Triumph	
-								i(47807), -- Gul'dan's Shoulderpads of Triumph	
-								i(47806), -- Gul'dan's Robe of Triumph	
-								i(47803), -- Gul'dan's Gloves of Triumph	
-								i(47286), -- Belt of Biting Cold	
-								i(47805), -- Gul'dan's Leggings of Triumph	
-								i(47873), -- Sunreaver Magus' Sandals	
+								i(47804),	-- Gul'dan's Hood of Triumph	
+								i(47807),	-- Gul'dan's Shoulderpads of Triumph	
+								i(47806),	-- Gul'dan's Robe of Triumph	
+								i(47803),	-- Gul'dan's Gloves of Triumph	
+								i(47286),	-- Belt of Biting Cold	
+								i(47805),	-- Gul'dan's Leggings of Triumph	
+								i(47873),	-- Sunreaver Magus' Sandals	
 							},		
 							["classes"] = { 9 },		
 						}),			
-						gs(826, { -- Runetotem's Battlegear			
+						gs(826, {	-- Runetotem's Battlegear			
 							["groups"] = {		
-								n(-9952, { -- Guardian / Feral Spec	
-									i(48194), -- Runetotem's Headguard of Triumph
-									i(48197), -- Runetotem's Shoulderpads of Triumph
-									i(48196), -- Runetotem's Raiments of Triumph
-									i(47277), -- Bindings of the Autumn Willow
-									i(48193), -- Runetotem's Handgrips of Triumph
-									i(47863), -- Belt of the Bloodhoof Emissary
-									i(48195), -- Runetotem's Legguards of Triumph
-									i(47262), -- Boots of the Harsh Winter
+								n(-9952, {	-- Guardian / Feral Spec	
+									i(48194),	-- Runetotem's Headguard of Triumph
+									i(48197),	-- Runetotem's Shoulderpads of Triumph
+									i(48196),	-- Runetotem's Raiments of Triumph
+									i(47277),	-- Bindings of the Autumn Willow
+									i(48193),	-- Runetotem's Handgrips of Triumph
+									i(47863),	-- Belt of the Bloodhoof Emissary
+									i(48195),	-- Runetotem's Legguards of Triumph
+									i(47262),	-- Boots of the Harsh Winter
 								}),	
-								n(-9926, { -- Balance Spec	
-									i(48181), -- Runetotem's Cover of Triumph
-									i(48178), -- Runetotem's Mantle of Triumph
-									i(48179), -- Runetotem's Vestments of Triumph
-									i(47277), -- Bindings of the Autumn Willow
-									i(48182), -- Runetotem's Gloves of Triumph
-									i(47863), -- Belt of the Bloodhoof Emissary
-									i(48180), -- Runetotem's Trousers of Triumph
-									i(47262), -- Boots of the Harsh Winter
+								n(-9926, {	-- Balance Spec	
+									i(48181),	-- Runetotem's Cover of Triumph
+									i(48178),	-- Runetotem's Mantle of Triumph
+									i(48179),	-- Runetotem's Vestments of Triumph
+									i(47277),	-- Bindings of the Autumn Willow
+									i(48182),	-- Runetotem's Gloves of Triumph
+									i(47863),	-- Belt of the Bloodhoof Emissary
+									i(48180),	-- Runetotem's Trousers of Triumph
+									i(47262),	-- Boots of the Harsh Winter
 								}),	
-								n(-9927, { -- Restoration Spec	
-									i(48151), -- Runetotem's Headpiece of Triumph
-									i(48148), -- Runetotem's Spaulders of Triumph
-									i(48149), -- Runetotem's Robe of Triumph
-									i(47277), -- Bindings of the Autumn Willow
-									i(48152), -- Runetotem's Handguards of Triumph
-									i(47863), -- Belt of the Bloodhoof Emissary
-									i(48150), -- Runetotem's Leggings of Triumph
-									i(47262), -- Boots of the Harsh Winter
+								n(-9927, {	-- Restoration Spec	
+									i(48151),	-- Runetotem's Headpiece of Triumph
+									i(48148),	-- Runetotem's Spaulders of Triumph
+									i(48149),	-- Runetotem's Robe of Triumph
+									i(47277),	-- Bindings of the Autumn Willow
+									i(48152),	-- Runetotem's Handguards of Triumph
+									i(47863),	-- Belt of the Bloodhoof Emissary
+									i(48150),	-- Runetotem's Leggings of Triumph
+									i(47262),	-- Boots of the Harsh Winter
 								}),	
 							},		
 							["classes"] = { 11 },		
 						}),			
-						gs(691, { -- Garona's Battlegear			
+						gs(691, {	-- Garona's Battlegear			
 							["groups"] = {		
-								i(48240), -- Garona's Helmet of Triumph	
-								i(48238), -- Garona's Pauldrons of Triumph	
-								i(48242), -- Garona's Breastplate of Triumph	
-								i(47313), -- Armbands of Dark Determination	
-								i(48241), -- Garona's Gauntlets of Triumph	
-								i(47299), -- Belt of the Pitiless Killer	
-								i(48239), -- Garona's Legplates of Triumph	
-								i(47853), -- Acidmaw Treads	
+								i(48240),	-- Garona's Helmet of Triumph	
+								i(48238),	-- Garona's Pauldrons of Triumph	
+								i(48242),	-- Garona's Breastplate of Triumph	
+								i(47313),	-- Armbands of Dark Determination	
+								i(48241),	-- Garona's Gauntlets of Triumph	
+								i(47299),	-- Belt of the Pitiless Killer	
+								i(48239),	-- Garona's Legplates of Triumph	
+								i(47853),	-- Acidmaw Treads	
 							},		
 							["classes"] = { 4 },		
 						}),			
-						gs(738, { -- Windrunner's Pursuit			
+						gs(738, {	-- Windrunner's Pursuit			
 							["groups"] = {		
-								i(48272), -- Windrunner's Headpiece of Triumph	
-								i(48270), -- Windrunner's Spaulders of Triumph	
-								i(48274), -- Windrunner's Tunic of Triumph	
-								i(47850), -- Bracers of the Northern Stalker	
-								i(48273), -- Windrunner's Handguards of Triumph	
-								i(47311), -- Waistguard of Deathly Dominion	
-								i(48271), -- Windrunner's Legguards of Triumph	
-								i(47867), -- Warsong Poacher's Greaves	
+								i(48272),	-- Windrunner's Headpiece of Triumph	
+								i(48270),	-- Windrunner's Spaulders of Triumph	
+								i(48274),	-- Windrunner's Tunic of Triumph	
+								i(47850),	-- Bracers of the Northern Stalker	
+								i(48273),	-- Windrunner's Handguards of Triumph	
+								i(47311),	-- Waistguard of Deathly Dominion	
+								i(48271),	-- Windrunner's Legguards of Triumph	
+								i(47867),	-- Warsong Poacher's Greaves	
 							},		
 							["classes"] = { 3 },		
 						}),			
-						gs(641, { -- Thrall's Garb			
+						gs(641, {	-- Thrall's Garb			
 							["groups"] = {		
-								n(-9939, { -- Elemental Spec	
-									i(48333), -- Thrall's Helm of Triumph
-									i(48331), -- Thrall's Shoulderpads of Triumph
-									i(48335), -- Thrall's Hauberk of Triumph
-									i(47580), -- Black Chitin Bracers
-									i(48334), -- Thrall's Gloves of Triumph
-									i(47866), -- Darkspear Ritual Binding
-									i(48332), -- Thrall's Kilt of Triumph
-									i(47295), -- Sabatons of Tremoring Earth
+								n(-9939, {	-- Elemental Spec	
+									i(48333),	-- Thrall's Helm of Triumph
+									i(48331),	-- Thrall's Shoulderpads of Triumph
+									i(48335),	-- Thrall's Hauberk of Triumph
+									i(47580),	-- Black Chitin Bracers
+									i(48334),	-- Thrall's Gloves of Triumph
+									i(47866),	-- Darkspear Ritual Binding
+									i(48332),	-- Thrall's Kilt of Triumph
+									i(47295),	-- Sabatons of Tremoring Earth
 								}),	
-								n(-9940, { -- Enhancement Spec	
-									i(48363), -- Thrall's Faceguard of Triumph
-									i(48361), -- Thrall's Shoulderguards of Triumph
-									i(48365), -- Thrall's Chestguard of Triumph
-									i(47580), -- Black Chitin Bracers
-									i(48364), -- Thrall's Grips of Triumph
-									i(47866), -- Darkspear Ritual Binding
-									i(48362), -- Thrall's War-Kilt of Triumph
-									i(47295), -- Sabatons of Tremoring Earth
+								n(-9940, {	-- Enhancement Spec	
+									i(48363),	-- Thrall's Faceguard of Triumph
+									i(48361),	-- Thrall's Shoulderguards of Triumph
+									i(48365),	-- Thrall's Chestguard of Triumph
+									i(47580),	-- Black Chitin Bracers
+									i(48364),	-- Thrall's Grips of Triumph
+									i(47866),	-- Darkspear Ritual Binding
+									i(48362),	-- Thrall's War-Kilt of Triumph
+									i(47295),	-- Sabatons of Tremoring Earth
 								}),	
-								n(-9941, { -- Restoration Spec	
-									i(48302), -- Thrall's Headpiece of Triumph
-									i(48304), -- Thrall's Spaulders of Triumph
-									i(48300), -- Thrall's Tunic of Triumph
-									i(47580), -- Black Chitin Bracers
-									i(48301), -- Thrall's Handguards of Triumph
-									i(47866), -- Darkspear Ritual Binding
-									i(48303), -- Thrall's Legguards of Triumph
-									i(47295), -- Sabatons of Tremoring Earth
+								n(-9941, {	-- Restoration Spec	
+									i(48302),	-- Thrall's Headpiece of Triumph
+									i(48304),	-- Thrall's Spaulders of Triumph
+									i(48300),	-- Thrall's Tunic of Triumph
+									i(47580),	-- Black Chitin Bracers
+									i(48301),	-- Thrall's Handguards of Triumph
+									i(47866),	-- Darkspear Ritual Binding
+									i(48303),	-- Thrall's Legguards of Triumph
+									i(47295),	-- Sabatons of Tremoring Earth
 								}),	
 							},		
 							["classes"] = { 7 },		
 						}),			
-						gs(707, { -- Liadrin's Plate			
+						gs(707, {	-- Liadrin's Plate			
 							["groups"] = {		
-								n(-9942, { -- Holy Spec	
-									i(48592), -- Liadrin's Headpiece of Triumph
-									i(48590), -- Liadrin's Spaulders of Triumph
-									i(48594), -- Liadrin's Tunic of Triumph
-									i(47298), -- Armguards of the Shieldmaiden
-									i(48593), -- Liadrin's Gloves of Triumph
-									i(47858), -- Girdle of the Frozen Reach
-									i(48591), -- Liadrin's Greaves of Triumph
-									i(47263), -- Sabatons of the Courageous
+								n(-9942, {	-- Holy Spec	
+									i(48592),	-- Liadrin's Headpiece of Triumph
+									i(48590),	-- Liadrin's Spaulders of Triumph
+									i(48594),	-- Liadrin's Tunic of Triumph
+									i(47298),	-- Armguards of the Shieldmaiden
+									i(48593),	-- Liadrin's Gloves of Triumph
+									i(47858),	-- Girdle of the Frozen Reach
+									i(48591),	-- Liadrin's Greaves of Triumph
+									i(47263),	-- Sabatons of the Courageous
 								}),	
-								n(-9943, { -- Protection	
-									i(48659), -- Liadrin's Faceguard of Triumph
-									i(48661), -- Liadrin's Shoulderguards of Triumph
-									i(48657), -- Liadrin's Breastplate of Triumph
-									i(47298), -- Armguards of the Shieldmaiden
-									i(48658), -- Liadrin's Handguards of Triumph
-									i(47858), -- Girdle of the Frozen Reach
-									i(48660), -- Liadrin's Legguards of Triumph
-									i(47263), -- Sabatons of the Courageous
+								n(-9943, {	-- Protection	
+									i(48659),	-- Liadrin's Faceguard of Triumph
+									i(48661),	-- Liadrin's Shoulderguards of Triumph
+									i(48657),	-- Liadrin's Breastplate of Triumph
+									i(47298),	-- Armguards of the Shieldmaiden
+									i(48658),	-- Liadrin's Handguards of Triumph
+									i(47858),	-- Girdle of the Frozen Reach
+									i(48660),	-- Liadrin's Legguards of Triumph
+									i(47263),	-- Sabatons of the Courageous
 								}),	
-								n(-9944, { -- Retribution	
-									i(48624), -- Liadrin's Helm of Triumph
-									i(48622), -- Liadrin's Shoulderplates of Triumph
-									i(48626), -- Liadrin's Battleplate of Triumph
-									i(47298), -- Armguards of the Shieldmaiden
-									i(48625), -- Liadrin's Gauntlets of Triumph
-									i(47858), -- Girdle of the Frozen Reach
-									i(48623), -- Liadrin's Legplates of Triumph
-									i(47263), -- Sabatons of the Courageous
+								n(-9944, {	-- Retribution	
+									i(48624),	-- Liadrin's Helm of Triumph
+									i(48622),	-- Liadrin's Shoulderplates of Triumph
+									i(48626),	-- Liadrin's Battleplate of Triumph
+									i(47298),	-- Armguards of the Shieldmaiden
+									i(48625),	-- Liadrin's Gauntlets of Triumph
+									i(47858),	-- Girdle of the Frozen Reach
+									i(48623),	-- Liadrin's Legplates of Triumph
+									i(47263),	-- Sabatons of the Courageous
 								}),	
 							},		
 							["classes"] = { 2 },		
 						}),			
-						gs(657, { -- Hellscream's Battlegear			
+						gs(657, {	-- Hellscream's Battlegear			
 							["groups"] = {		
-								n(-9953, { -- Fury / Arms Spec	
-									i(48393), -- Hellscream's Helmet of Triumph
-									i(48395), -- Hellscream's Shoulderplates of Triumph
-									i(48391), -- Hellscream's Battleplate of Triumph
-									i(47253), -- Boneshatter Vambraces
-									i(48392), -- Hellscream's Gauntlets of Triumph
-									i(47859), -- Belt of the Impaler
-									i(48394), -- Hellscream's Legplates of Triumph
-									i(47312), -- Greaves of the Saronite Citadel
+								n(-9953, {	-- Fury / Arms Spec	
+									i(48393),	-- Hellscream's Helmet of Triumph
+									i(48395),	-- Hellscream's Shoulderplates of Triumph
+									i(48391),	-- Hellscream's Battleplate of Triumph
+									i(47253),	-- Boneshatter Vambraces
+									i(48392),	-- Hellscream's Gauntlets of Triumph
+									i(47859),	-- Belt of the Impaler
+									i(48394),	-- Hellscream's Legplates of Triumph
+									i(47312),	-- Greaves of the Saronite Citadel
 								}),	
-								n(-9947, { -- Protection Spec	
-									i(48463), -- Hellscream's Greathelm of Triumph
-									i(48465), -- Hellscream's Pauldrons of Triumph
-									i(48461), -- Hellscream's Breastplate of Triumph
-									i(47253), -- Boneshatter Vambraces
-									i(48462), -- Hellscream's Handguards of Triumph
-									i(47859), -- Belt of the Impaler
-									i(48464), -- Hellscream's Legguards of Triumph
-									i(47312), -- Greaves of the Saronite Citadel
+								n(-9947, {	-- Protection Spec	
+									i(48463),	-- Hellscream's Greathelm of Triumph
+									i(48465),	-- Hellscream's Pauldrons of Triumph
+									i(48461),	-- Hellscream's Breastplate of Triumph
+									i(47253),	-- Boneshatter Vambraces
+									i(48462),	-- Hellscream's Handguards of Triumph
+									i(47859),	-- Belt of the Impaler
+									i(48464),	-- Hellscream's Legguards of Triumph
+									i(47312),	-- Greaves of the Saronite Citadel
 								}),	
 							},		
 							["classes"] = { 1 },		
 						}),			
-						gs(841, { -- Koltira's Battlegear			
+						gs(841, {	-- Koltira's Battlegear			
 							["groups"] = {		
-								n(-9948, { -- Blood Spec	
-									i(48555), -- Koltira's Faceguard of Triumph
-									i(48553), -- Koltira's Pauldrons of Triumph
-									i(48557), -- Koltira's Chestguard of Triumph
-									i(47869), -- Armplates of the Nether Lord
-									i(48556), -- Koltira's Handguards of Triumph
-									i(47268), -- Bloodbath Girdle
-									i(48554), -- Koltira's Legguards of Triumph
-									i(47269), -- Dawnbreaker Sabatons
+								n(-9948, {	-- Blood Spec	
+									i(48555),	-- Koltira's Faceguard of Triumph
+									i(48553),	-- Koltira's Pauldrons of Triumph
+									i(48557),	-- Koltira's Chestguard of Triumph
+									i(47869),	-- Armplates of the Nether Lord
+									i(48556),	-- Koltira's Handguards of Triumph
+									i(47268),	-- Bloodbath Girdle
+									i(48554),	-- Koltira's Legguards of Triumph
+									i(47269),	-- Dawnbreaker Sabatons
 								}),	
-								n(-9954, { -- Frost / Unholy Spec	
-									i(48498), -- Koltira's Helmet of Triumph
-									i(48496), -- Koltira's Shoulderpads of Triumph
-									i(48500), -- Koltira's Battleplate of Triumph
-									i(47869), -- Armplates of the Nether Lord
-									i(48499), -- Koltira's Gauntlets of Triumph
-									i(47268), -- Bloodbath Girdle
-									i(48497), -- Koltira's Legplates of Triumph
-									i(47269), -- Dawnbreaker Sabatons
+								n(-9954, {	-- Frost / Unholy Spec	
+									i(48498),	-- Koltira's Helmet of Triumph
+									i(48496),	-- Koltira's Shoulderpads of Triumph
+									i(48500),	-- Koltira's Battleplate of Triumph
+									i(47869),	-- Armplates of the Nether Lord
+									i(48499),	-- Koltira's Gauntlets of Triumph
+									i(47268),	-- Bloodbath Girdle
+									i(48497),	-- Koltira's Legplates of Triumph
+									i(47269),	-- Dawnbreaker Sabatons
 								}),	
 							},		
 						}),
 					}),
-					n(-375, { -- 25 Man Heroic
-						gs(350, { -- Zabra's Regalia			
+					n(-375, {	-- 25 Man Heroic
+						gs(350, {	-- Zabra's Regalia			
 							["groups"] = {		
-								n(-9951, { -- Holy/Disciple Priest	
-									i(48058), -- Zabra's Cowl of Triumph
-									i(48061), -- Zabra's Shoulderpads of Triumph
-									i(48060), -- Zabra's Robe of Triumph
-									i(47324), -- Bindings of the Ashen Saint
-									i(48057), -- Zabra's Gloves of Triumph
-									i(47909), -- Belt of the Eternal
-									i(48059), -- Zabra's Leggings of Triumph
-									i(49232), -- Sandals of the Grieving Soul
+								n(-9951, {	-- Holy/Disciple Priest	
+									i(48058),	-- Zabra's Cowl of Triumph
+									i(48061),	-- Zabra's Shoulderpads of Triumph
+									i(48060),	-- Zabra's Robe of Triumph
+									i(47324),	-- Bindings of the Ashen Saint
+									i(48057),	-- Zabra's Gloves of Triumph
+									i(47909),	-- Belt of the Eternal
+									i(48059),	-- Zabra's Leggings of Triumph
+									i(49232),	-- Sandals of the Grieving Soul
 								}),	
-								n(-9917, { -- Shadow Priest	
-									i(48088), -- Zabra's Circlet of Triumph
-									i(48091), -- Zabra's Mantle of Triumph
-									i(48090), -- Zabra's Raiments of Triumph
-									i(47324), -- Bindings of the Ashen Saint
-									i(48087), -- Zabra's Handwraps of Triumph
-									i(47909), -- Belt of the Eternal
-									i(48089), -- Zabra's Pants of Triumph
-									i(49232), -- Sandals of the Grieving Soul
+								n(-9917, {	-- Shadow Priest	
+									i(48088),	-- Zabra's Circlet of Triumph
+									i(48091),	-- Zabra's Mantle of Triumph
+									i(48090),	-- Zabra's Raiments of Triumph
+									i(47324),	-- Bindings of the Ashen Saint
+									i(48087),	-- Zabra's Handwraps of Triumph
+									i(47909),	-- Belt of the Eternal
+									i(48089),	-- Zabra's Pants of Triumph
+									i(49232),	-- Sandals of the Grieving Soul
 								}),	
 							},		
 							["classes"] = { 5 },		
 						}),			
-						gs(723, { -- Sunstrider's Regalia			
+						gs(723, {	-- Sunstrider's Regalia			
 							["groups"] = {		
-								i(47764), -- Sunstrider's Hood of Triumph	
-								i(47767), -- Sunstrider's Shoulderpads of Triumph	
-								i(47766), -- Sunstrider's Robe of Triumph	
-								i(47586), -- Bejeweled Wizard's Bracers	
-								i(47763), -- Sunstrider's Gauntlets of Triumph	
-								i(47855), -- Icehowl Binding	
-								i(47765), -- Sunstrider's Leggings of Triumph	
-								i(47321), -- Boots of the Icy Floe	
+								i(47764),	-- Sunstrider's Hood of Triumph	
+								i(47767),	-- Sunstrider's Shoulderpads of Triumph	
+								i(47766),	-- Sunstrider's Robe of Triumph	
+								i(47586),	-- Bejeweled Wizard's Bracers	
+								i(47763),	-- Sunstrider's Gauntlets of Triumph	
+								i(47855),	-- Icehowl Binding	
+								i(47765),	-- Sunstrider's Leggings of Triumph	
+								i(47321),	-- Boots of the Icy Floe	
 							},		
 							["classes"] = { 8 },		
 						}),			
-						gs(675, { -- Gul'dan's Regalia			
+						gs(675, {	-- Gul'dan's Regalia			
 							["groups"] = {		
-								i(47796), -- Gul'dan's Hood of Triumph	
-								i(47793), -- Gul'dan's Shoulderpads of Triumph	
-								i(47794), -- Gul'dan's Robe of Triumph	
-								i(47797), -- Gul'dan's Gloves of Triumph	
-								i(47286), -- Belt of Biting Cold	
-								i(47795), -- Gul'dan's Leggings of Triumph	
-								i(47873), -- Sunreaver Magus' Sandals	
+								i(47796),	-- Gul'dan's Hood of Triumph	
+								i(47793),	-- Gul'dan's Shoulderpads of Triumph	
+								i(47794),	-- Gul'dan's Robe of Triumph	
+								i(47797),	-- Gul'dan's Gloves of Triumph	
+								i(47286),	-- Belt of Biting Cold	
+								i(47795),	-- Gul'dan's Leggings of Triumph	
+								i(47873),	-- Sunreaver Magus' Sandals	
 							},		
 							["classes"] = { 9 },		
 						}),			
-						gs(826, { -- Runetotem's Battlegear			
+						gs(826, {	-- Runetotem's Battlegear			
 							["groups"] = {		
-								n(-9952, { -- Guardian / Feral Spec	
-									i(48201), -- Runetotem's Headguard of Triumph
-									i(48198), -- Runetotem's Shoulderpads of Triumph
-									i(48199), -- Runetotem's Raiments of Triumph
-									i(47277), -- Bindings of the Autumn Willow
-									i(48202), -- Runetotem's Handgrips of Triumph
-									i(47863), -- Belt of the Bloodhoof Emissary
-									i(48200), -- Runetotem's Legguards of Triumph
-									i(47262), -- Boots of the Harsh Winter
+								n(-9952, {	-- Guardian / Feral Spec	
+									i(48201),	-- Runetotem's Headguard of Triumph
+									i(48198),	-- Runetotem's Shoulderpads of Triumph
+									i(48199),	-- Runetotem's Raiments of Triumph
+									i(47277),	-- Bindings of the Autumn Willow
+									i(48202),	-- Runetotem's Handgrips of Triumph
+									i(47863),	-- Belt of the Bloodhoof Emissary
+									i(48200),	-- Runetotem's Legguards of Triumph
+									i(47262),	-- Boots of the Harsh Winter
 								}),	
-								n(-9926, { -- Balance Spec	
-									i(48174), -- Runetotem's Cover of Triumph
-									i(48177), -- Runetotem's Mantle of Triumph
-									i(48176), -- Runetotem's Vestments of Triumph
-									i(47277), -- Bindings of the Autumn Willow
-									i(48173), -- Runetotem's Gloves of Triumph
-									i(47863), -- Belt of the Bloodhoof Emissary
-									i(48175), -- Runetotem's Trousers of Triumph
-									i(47262), -- Boots of the Harsh Winter
+								n(-9926, {	-- Balance Spec	
+									i(48174),	-- Runetotem's Cover of Triumph
+									i(48177),	-- Runetotem's Mantle of Triumph
+									i(48176),	-- Runetotem's Vestments of Triumph
+									i(47277),	-- Bindings of the Autumn Willow
+									i(48173),	-- Runetotem's Gloves of Triumph
+									i(47863),	-- Belt of the Bloodhoof Emissary
+									i(48175),	-- Runetotem's Trousers of Triumph
+									i(47262),	-- Boots of the Harsh Winter
 								}),	
-								n(-9927, { -- Restoration Spec	
-									i(48144), -- Runetotem's Headpiece of Triumph
-									i(48147), -- Runetotem's Spaulders of Triumph
-									i(48146), -- Runetotem's Robe of Triumph
-									i(47277), -- Bindings of the Autumn Willow
-									i(48143), -- Runetotem's Handguards of Triumph
-									i(47863), -- Belt of the Bloodhoof Emissary
-									i(48145), -- Runetotem's Leggings of Triumph
-									i(47262), -- Boots of the Harsh Winter
+								n(-9927, {	-- Restoration Spec	
+									i(48144),	-- Runetotem's Headpiece of Triumph
+									i(48147),	-- Runetotem's Spaulders of Triumph
+									i(48146),	-- Runetotem's Robe of Triumph
+									i(47277),	-- Bindings of the Autumn Willow
+									i(48143),	-- Runetotem's Handguards of Triumph
+									i(47863),	-- Belt of the Bloodhoof Emissary
+									i(48145),	-- Runetotem's Leggings of Triumph
+									i(47262),	-- Boots of the Harsh Winter
 								}),	
 							},		
 							["classes"] = { 11 },		
 						}),			
-						gs(691, { -- Garona's Battlegear			
+						gs(691, {	-- Garona's Battlegear			
 							["groups"] = {		
-								i(48235), -- Garona's Helmet of Triumph	
-								i(48237), -- Garona's Pauldrons of Triumph	
-								i(48233), -- Garona's Breastplate of Triumph	
-								i(47313), -- Armbands of Dark Determination	
-								i(48234), -- Garona's Gauntlets of Triumph	
-								i(47299), -- Belt of the Pitiless Killer	
-								i(48236), -- Garona's Legplates of Triumph	
-								i(47853), -- Acidmaw Treads	
+								i(48235),	-- Garona's Helmet of Triumph	
+								i(48237),	-- Garona's Pauldrons of Triumph	
+								i(48233),	-- Garona's Breastplate of Triumph	
+								i(47313),	-- Armbands of Dark Determination	
+								i(48234),	-- Garona's Gauntlets of Triumph	
+								i(47299),	-- Belt of the Pitiless Killer	
+								i(48236),	-- Garona's Legplates of Triumph	
+								i(47853),	-- Acidmaw Treads	
 							},		
 							["classes"] = { 4 },		
 						}),			
-						gs(738, { -- Windrunner's Pursuit			
+						gs(738, {	-- Windrunner's Pursuit			
 							["groups"] = {		
-								i(48267), -- Windrunner's Headpiece of Triumph	
-								i(48269), -- Windrunner's Spaulders of Triumph	
-								i(48265), -- Windrunner's Tunic of Triumph	
-								i(47850), -- Bracers of the Northern Stalker	
-								i(48266), -- Windrunner's Handguards of Triumph	
-								i(47311), -- Waistguard of Deathly Dominion	
-								i(48268), -- Windrunner's Legguards of Triumph	
-								i(47867), -- Warsong Poacher's Greaves	
+								i(48267),	-- Windrunner's Headpiece of Triumph	
+								i(48269),	-- Windrunner's Spaulders of Triumph	
+								i(48265),	-- Windrunner's Tunic of Triumph	
+								i(47850),	-- Bracers of the Northern Stalker	
+								i(48266),	-- Windrunner's Handguards of Triumph	
+								i(47311),	-- Waistguard of Deathly Dominion	
+								i(48268),	-- Windrunner's Legguards of Triumph	
+								i(47867),	-- Warsong Poacher's Greaves	
 							},		
 							["classes"] = { 3 },		
 						}),			
-						gs(641, { -- Thrall's Garb			
+						gs(641, {	-- Thrall's Garb			
 							["groups"] = {		
-								n(-9939, { -- Elemental Spec	
-									i(48328), -- Thrall's Helm of Triumph
-									i(48330), -- Thrall's Shoulderpads of Triumph
-									i(48326), -- Thrall's Hauberk of Triumph
-									i(47580), -- Black Chitin Bracers
-									i(48327), -- Thrall's Gloves of Triumph
-									i(47866), -- Darkspear Ritual Binding
-									i(48329), -- Thrall's Kilt of Triumph
-									i(47295), -- Sabatons of Tremoring Earth
+								n(-9939, {	-- Elemental Spec	
+									i(48328),	-- Thrall's Helm of Triumph
+									i(48330),	-- Thrall's Shoulderpads of Triumph
+									i(48326),	-- Thrall's Hauberk of Triumph
+									i(47580),	-- Black Chitin Bracers
+									i(48327),	-- Thrall's Gloves of Triumph
+									i(47866),	-- Darkspear Ritual Binding
+									i(48329),	-- Thrall's Kilt of Triumph
+									i(47295),	-- Sabatons of Tremoring Earth
 								}),	
-								n(-9940, { -- Enhancement Spec	
-									i(48358), -- Thrall's Faceguard of Triumph
-									i(48360), -- Thrall's Shoulderguards of Triumph
-									i(48356), -- Thrall's Chestguard of Triumph
-									i(47580), -- Black Chitin Bracers
-									i(48357), -- Thrall's Grips of Triumph
-									i(47866), -- Darkspear Ritual Binding
-									i(48359), -- Thrall's War-Kilt of Triumph
-									i(47295), -- Sabatons of Tremoring Earth
+								n(-9940, {	-- Enhancement Spec	
+									i(48358),	-- Thrall's Faceguard of Triumph
+									i(48360),	-- Thrall's Shoulderguards of Triumph
+									i(48356),	-- Thrall's Chestguard of Triumph
+									i(47580),	-- Black Chitin Bracers
+									i(48357),	-- Thrall's Grips of Triumph
+									i(47866),	-- Darkspear Ritual Binding
+									i(48359),	-- Thrall's War-Kilt of Triumph
+									i(47295),	-- Sabatons of Tremoring Earth
 								}),	
-								n(-9941, { -- Restoration Spec	
-									i(48307), -- Thrall's Headpiece of Triumph
-									i(48309), -- Thrall's Spaulders of Triumph
-									i(48305), -- Thrall's Tunic of Triumph
-									i(47580), -- Black Chitin Bracers
-									i(48306), -- Thrall's Handguards of Triumph
-									i(47866), -- Darkspear Ritual Binding
-									i(48308), -- Thrall's Legguards of Triumph
-									i(47295), -- Sabatons of Tremoring Earth
+								n(-9941, {	-- Restoration Spec	
+									i(48307),	-- Thrall's Headpiece of Triumph
+									i(48309),	-- Thrall's Spaulders of Triumph
+									i(48305),	-- Thrall's Tunic of Triumph
+									i(47580),	-- Black Chitin Bracers
+									i(48306),	-- Thrall's Handguards of Triumph
+									i(47866),	-- Darkspear Ritual Binding
+									i(48308),	-- Thrall's Legguards of Triumph
+									i(47295),	-- Sabatons of Tremoring Earth
 								}),	
 							},		
 							["classes"] = { 7 },		
 						}),			
-						gs(707, { -- Liadrin's Plate			
+						gs(707, {	-- Liadrin's Plate			
 							["groups"] = {		
-								n(-9942, { -- Holy Spec	
-									i(48587), -- Liadrin's Headpiece of Triumph
-									i(48585), -- Liadrin's Spaulders of Triumph
-									i(48589), -- Liadrin's Tunic of Triumph
-									i(47298), -- Armguards of the Shieldmaiden
-									i(48588), -- Liadrin's Gloves of Triumph
-									i(47858), -- Girdle of the Frozen Reach
-									i(48586), -- Liadrin's Greaves of Triumph
-									i(47263), -- Sabatons of the Courageous
+								n(-9942, {	-- Holy Spec	
+									i(48587),	-- Liadrin's Headpiece of Triumph
+									i(48585),	-- Liadrin's Spaulders of Triumph
+									i(48589),	-- Liadrin's Tunic of Triumph
+									i(47298),	-- Armguards of the Shieldmaiden
+									i(48588),	-- Liadrin's Gloves of Triumph
+									i(47858),	-- Girdle of the Frozen Reach
+									i(48586),	-- Liadrin's Greaves of Triumph
+									i(47263),	-- Sabatons of the Courageous
 								}),	
-								n(-9943, { -- Protection	
-									i(48649), -- Liadrin's Faceguard of Triumph
-									i(48647), -- Liadrin's Shoulderguards of Triumph
-									i(48651), -- Liadrin's Breastplate of Triumph
-									i(47298), -- Armguards of the Shieldmaiden
-									i(48650), -- Liadrin's Handguards of Triumph
-									i(47858), -- Girdle of the Frozen Reach
-									i(48648), -- Liadrin's Legguards of Triumph
-									i(47263), -- Sabatons of the Courageous
+								n(-9943, {	-- Protection	
+									i(48649),	-- Liadrin's Faceguard of Triumph
+									i(48647),	-- Liadrin's Shoulderguards of Triumph
+									i(48651),	-- Liadrin's Breastplate of Triumph
+									i(47298),	-- Armguards of the Shieldmaiden
+									i(48650),	-- Liadrin's Handguards of Triumph
+									i(47858),	-- Girdle of the Frozen Reach
+									i(48648),	-- Liadrin's Legguards of Triumph
+									i(47263),	-- Sabatons of the Courageous
 								}),	
-								n(-9944, { -- Retribution	
-									i(48619), -- Liadrin's Helm of Triumph
-									i(48621), -- Liadrin's Shoulderplates of Triumph
-									i(48617), -- Liadrin's Battleplate of Triumph
-									i(47298), -- Armguards of the Shieldmaiden
-									i(48618), -- Liadrin's Gauntlets of Triumph
-									i(47858), -- Girdle of the Frozen Reach
-									i(48620), -- Liadrin's Legplates of Triumph
-									i(47263), -- Sabatons of the Courageous
+								n(-9944, {	-- Retribution	
+									i(48619),	-- Liadrin's Helm of Triumph
+									i(48621),	-- Liadrin's Shoulderplates of Triumph
+									i(48617),	-- Liadrin's Battleplate of Triumph
+									i(47298),	-- Armguards of the Shieldmaiden
+									i(48618),	-- Liadrin's Gauntlets of Triumph
+									i(47858),	-- Girdle of the Frozen Reach
+									i(48620),	-- Liadrin's Legplates of Triumph
+									i(47263),	-- Sabatons of the Courageous
 								}),	
 							},		
 							["classes"] = { 2 },		
 						}),			
-						gs(657, { -- Hellscream's Battlegear			
+						gs(657, {	-- Hellscream's Battlegear			
 							["groups"] = {		
-								n(-9953, { -- Fury / Arms Spec	
-									i(48398), -- Hellscream's Helmet of Triumph
-									i(48400), -- Hellscream's Battleplate of Triumph
-									i(48396), -- Hellscream's Shoulderplates of Triumph
-									i(47253), -- Boneshatter Vambraces
-									i(48397), -- Hellscream's Gauntlets of Triumph
-									i(47859), -- Belt of the Impaler
-									i(48399), -- Hellscream's Legplates of Triumph
-									i(47312), -- Greaves of the Saronite Citadel
+								n(-9953, {	-- Fury / Arms Spec	
+									i(48398),	-- Hellscream's Helmet of Triumph
+									i(48400),	-- Hellscream's Battleplate of Triumph
+									i(48396),	-- Hellscream's Shoulderplates of Triumph
+									i(47253),	-- Boneshatter Vambraces
+									i(48397),	-- Hellscream's Gauntlets of Triumph
+									i(47859),	-- Belt of the Impaler
+									i(48399),	-- Hellscream's Legplates of Triumph
+									i(47312),	-- Greaves of the Saronite Citadel
 								}),	
-								n(-9947, { -- Protection Spec	
-									i(48468), -- Hellscream's Greathelm of Triumph
-									i(48470), -- Hellscream's Pauldrons of Triumph
-									i(48466), -- Hellscream's Breastplate of Triumph
-									i(47253), -- Boneshatter Vambraces
-									i(48467), -- Hellscream's Handguards of Triumph
-									i(47859), -- Belt of the Impaler
-									i(48469), -- Hellscream's Legguards of Triumph
-									i(47312), -- Greaves of the Saronite Citadel
+								n(-9947, {	-- Protection Spec	
+									i(48468),	-- Hellscream's Greathelm of Triumph
+									i(48470),	-- Hellscream's Pauldrons of Triumph
+									i(48466),	-- Hellscream's Breastplate of Triumph
+									i(47253),	-- Boneshatter Vambraces
+									i(48467),	-- Hellscream's Handguards of Triumph
+									i(47859),	-- Belt of the Impaler
+									i(48469),	-- Hellscream's Legguards of Triumph
+									i(47312),	-- Greaves of the Saronite Citadel
 								}),	
 							},		
 							["classes"] = { 1 },		
 						}),			
-						gs(841, { -- Koltira's Battlegear			
+						gs(841, {	-- Koltira's Battlegear			
 							["groups"] = {		
-								n(-9948, { -- Blood Spec	
-									i(48550), -- Koltira's Faceguard of Triumph
-									i(48552), -- Koltira's Pauldrons of Triumph
-									i(48548), -- Koltira's Chestguard of Triumph
-									i(47869), -- Armplates of the Nether Lord
-									i(48549), -- Koltira's Handguards of Triumph
-									i(47268), -- Bloodbath Girdle
-									i(48551), -- Koltira's Legguards of Triumph
-									i(47269), -- Dawnbreaker Sabatons
+								n(-9948, {	-- Blood Spec	
+									i(48550),	-- Koltira's Faceguard of Triumph
+									i(48552),	-- Koltira's Pauldrons of Triumph
+									i(48548),	-- Koltira's Chestguard of Triumph
+									i(47869),	-- Armplates of the Nether Lord
+									i(48549),	-- Koltira's Handguards of Triumph
+									i(47268),	-- Bloodbath Girdle
+									i(48551),	-- Koltira's Legguards of Triumph
+									i(47269),	-- Dawnbreaker Sabatons
 								}),	
-								n(-9954, { -- Frost / Unholy Spec	
-									i(48493), -- Koltira's Helmet of Triumph
-									i(48495), -- Koltira's Shoulderpads of Triumph
-									i(48491), -- Koltira's Battleplate of Triumph
-									i(47869), -- Armplates of the Nether Lord
-									i(48492), -- Koltira's Gauntlets of Triumph
-									i(47268), -- Bloodbath Girdle
-									i(48494), -- Koltira's Legplates of Triumph
-									i(47269), -- Dawnbreaker Sabatons
+								n(-9954, {	-- Frost / Unholy Spec	
+									i(48493),	-- Koltira's Helmet of Triumph
+									i(48495),	-- Koltira's Shoulderpads of Triumph
+									i(48491),	-- Koltira's Battleplate of Triumph
+									i(47869),	-- Armplates of the Nether Lord
+									i(48492),	-- Koltira's Gauntlets of Triumph
+									i(47268),	-- Bloodbath Girdle
+									i(48494),	-- Koltira's Legplates of Triumph
+									i(47269),	-- Dawnbreaker Sabatons
 								}),								
 							},		
 						}),
 					}),
 				})),
 			},
-			["achievementID"] = 11752, -- Style of the Crusader
+			["achievementID"] = 11752,	-- Style of the Crusader
 		}),
-		n(-3169, { -- Tier 12							
+		n(-3169, {	-- Tier 12							
 			["groups"] = {						
-				n(-376, { -- Normal					
+				n(-376, {	-- Normal					
 					["groups"] = {				
 						gs(342, {	-- Regalia of the Cleansing Flame		
 							["groups"] = {		
@@ -2961,7 +2961,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 						}),			
 					},				
 				}),					
-				n(-377, { -- Heroic					
+				n(-377, {	-- Heroic					
 					["groups"] = {				
 						gs(343, {	-- Regalia of the Cleansing Flame		
 							["groups"] = {		
@@ -3085,178 +3085,178 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 					},				
 				}),					
 			},						
-			["achievementID"] = 11755, -- Hot Couture						
+			["achievementID"] = 11755,	-- Hot Couture						
 		}),							
-		n(-3162, { -- Tier 19 (The Nighthold)
+		n(-3162, {	-- Tier 19 (The Nighthold)
 			["groups"] = {
 				d(17, {  -- Raid Finder
 					 -- 
 					["groups"] = {
-						gs(322, { -- Vestments of the Purifier
+						gs(322, {	-- Vestments of the Purifier
 							["groups"] = {
-								i(138313), -- Head
-								i(138322), -- Shoulder
-								i(138370), -- Back
-								i(138319), -- Chest
-								i(139196), -- Wrist
-								i(138310), -- Hands
-								i(140849), -- Waist
-								i(138316), -- Legs
-								i(139194), -- Feet
+								i(138313),	-- Head
+								i(138322),	-- Shoulder
+								i(138370),	-- Back
+								i(138319),	-- Chest
+								i(139196),	-- Wrist
+								i(138310),	-- Hands
+								i(140849),	-- Waist
+								i(138316),	-- Legs
+								i(139194),	-- Feet
 							},
 							["classes"] = { 5 },
 						}),
-						gs(989, { -- Regalia of Everburning Knowledge
+						gs(989, {	-- Regalia of Everburning Knowledge
 							["groups"] = {
-								i(138312), -- Head
-								i(138321), -- Shoulder
-								i(138365), -- Back
-								i(138318), -- Chest
-								i(140850), -- Wrist
-								i(138309), -- Hands
-								i(144404), -- Waist
-								i(138315), -- Legs
-								i(139195), -- Feet
+								i(138312),	-- Head
+								i(138321),	-- Shoulder
+								i(138365),	-- Back
+								i(138318),	-- Chest
+								i(140850),	-- Wrist
+								i(138309),	-- Hands
+								i(144404),	-- Waist
+								i(138315),	-- Legs
+								i(139195),	-- Feet
 							},
 							["classes"] = { 8 },
 						}),
-						gs(941, { -- Legacy of Azj'Aqir
+						gs(941, {	-- Legacy of Azj'Aqir
 							["groups"] = {
-								i(138314), -- Head
-								i(138323), -- Shoulder
-								i(138373), -- Back
-								i(138320), -- Chest
-								i(140886), -- Wrist
-								i(138311), -- Hands
-								i(140887), -- Waist
-								i(138317), -- Legs
-								i(140914), -- Feet
+								i(138314),	-- Head
+								i(138323),	-- Shoulder
+								i(138373),	-- Back
+								i(138320),	-- Chest
+								i(140886),	-- Wrist
+								i(138311),	-- Hands
+								i(140887),	-- Waist
+								i(138317),	-- Legs
+								i(140914),	-- Feet
 							},
 							["classes"] = { 9 },
 						}),
-						gs(997, { -- Garb of the Astral Warden
+						gs(997, {	-- Garb of the Astral Warden
 							["groups"] = {
-								i(138330), -- Head
-								i(138336), -- Shoulder
-								i(138366), -- Back
-								i(138324), -- Chest
-								i(138219), -- Wrist
-								i(138327), -- Hands
-								i(139198), -- Waist
-								i(138333), -- Legs
-								i(140861), -- Feet
+								i(138330),	-- Head
+								i(138336),	-- Shoulder
+								i(138366),	-- Back
+								i(138324),	-- Chest
+								i(138219),	-- Wrist
+								i(138327),	-- Hands
+								i(139198),	-- Waist
+								i(138333),	-- Legs
+								i(140861),	-- Feet
 							},
 							["classes"] = { 11 },
 						}),
-						gs(945, { -- Doomblade Battlegear
+						gs(945, {	-- Doomblade Battlegear
 							["groups"] = {
-								i(138332), -- Head
-								i(138338), -- Shoulder
-								i(138371), -- Back
-								i(138326), -- Chest
-								i(140889), -- Wrist
-								i(138329), -- Hands
-								i(140859), -- Waist
-								i(138335), -- Legs
-								i(139199), -- Feet
+								i(138332),	-- Head
+								i(138338),	-- Shoulder
+								i(138371),	-- Back
+								i(138326),	-- Chest
+								i(140889),	-- Wrist
+								i(138329),	-- Hands
+								i(140859),	-- Waist
+								i(138335),	-- Legs
+								i(139199),	-- Feet
 							},
 							["classes"] = { 4 },
 						}),
-						gs(985, { -- Vestments of Enveloped Dissonance
+						gs(985, {	-- Vestments of Enveloped Dissonance
 							["groups"] = {
-								i(138331), -- Head
-								i(138337), -- Shoulder
-								i(138367), -- Back
-								i(138325), -- Chest
-								i(140857), -- Wrist
-								i(138328), -- Hands
-								i(139197), -- Waist
-								i(138334), -- Legs
-								i(140860), -- Feet
+								i(138331),	-- Head
+								i(138337),	-- Shoulder
+								i(138367),	-- Back
+								i(138325),	-- Chest
+								i(140857),	-- Wrist
+								i(138328),	-- Hands
+								i(139197),	-- Waist
+								i(138334),	-- Legs
+								i(140860),	-- Feet
 							},
 							["classes"] = { 10 },
 						}),
-						gs(1001, { -- Vestment of Second Sight
+						gs(1001, {	-- Vestment of Second Sight
 							["groups"] = {
-								i(138378), -- Head
-								i(138380), -- Shoulder
-								i(138375), -- Back
-								i(138376), -- Chest
-								i(139209), -- Wrist
-								i(138377), -- Hands
-								i(140919), -- Waist
-								i(138379), -- Legs
-								i(139200), -- Feet
+								i(138378),	-- Head
+								i(138380),	-- Shoulder
+								i(138375),	-- Back
+								i(138376),	-- Chest
+								i(139209),	-- Wrist
+								i(138377),	-- Hands
+								i(140919),	-- Waist
+								i(138379),	-- Legs
+								i(139200),	-- Feet
 							},
 							["classes"] = { 12 },
 						}),
-						gs(993, { -- Eagletalon Battlegear
+						gs(993, {	-- Eagletalon Battlegear
 							["groups"] = {
-								i(138342), -- Head
-								i(138347), -- Shoulder
-								i(138368), -- Back
-								i(138339), -- Chest
-								i(140876), -- Wrist
-								i(138340), -- Hands
-								i(140868), -- Waist
-								i(138344), -- Legs
-								i(141432), -- Feet
+								i(138342),	-- Head
+								i(138347),	-- Shoulder
+								i(138368),	-- Back
+								i(138339),	-- Chest
+								i(140876),	-- Wrist
+								i(138340),	-- Hands
+								i(140868),	-- Waist
+								i(138344),	-- Legs
+								i(141432),	-- Feet
 							},
 							["classes"] = { 3 },
 						}),
-						gs(936, { -- Regalia of Bound Elements
+						gs(936, {	-- Regalia of Bound Elements
 							["groups"] = {
-								i(138343), -- Head
-								i(138348), -- Shoulder
-								i(138372), -- Back
-								i(138346), -- Chest
-								i(139222), -- Wrist
-								i(138341), -- Hands
-								i(140890), -- Waist
-								i(138345), -- Legs
-								i(139219), -- Feet
+								i(138343),	-- Head
+								i(138348),	-- Shoulder
+								i(138372),	-- Back
+								i(138346),	-- Chest
+								i(139222),	-- Wrist
+								i(138341),	-- Hands
+								i(140890),	-- Waist
+								i(138345),	-- Legs
+								i(139219),	-- Feet
 							},
 							["classes"] = { 7 },
 						}),
-						gs(981, { -- Battleplate of the Highlord
+						gs(981, {	-- Battleplate of the Highlord
 							["groups"] = {
-								i(138356), -- Head
-								i(138362), -- Shoulder
-								i(138369), -- Back
-								i(138350), -- Chest
-								i(140878), -- Wrists
-								i(138353), -- Hands
-								i(140880), -- Waist
-								i(138359), -- Legs
-								i(140904), -- Feet
+								i(138356),	-- Head
+								i(138362),	-- Shoulder
+								i(138369),	-- Back
+								i(138350),	-- Chest
+								i(140878),	-- Wrists
+								i(138353),	-- Hands
+								i(140880),	-- Waist
+								i(138359),	-- Legs
+								i(140904),	-- Feet
 							},
 							["classes"] = { 2 },
 						}),
-						gs(940, { -- Warplate of the Obsidian Aspect
+						gs(940, {	-- Warplate of the Obsidian Aspect
 							["groups"] = {
-								i(138357), -- Head
-								i(138363), -- Shoulder
-								i(138374), -- Back
-								i(138351), -- Chest
-								i(138218), -- Wrist
-								i(138354), -- Hands
-								i(139228), -- Waist
-								i(138360), -- Legs
-								i(139234), -- Feet
+								i(138357),	-- Head
+								i(138363),	-- Shoulder
+								i(138374),	-- Back
+								i(138351),	-- Chest
+								i(138218),	-- Wrist
+								i(138354),	-- Hands
+								i(139228),	-- Waist
+								i(138360),	-- Legs
+								i(139234),	-- Feet
 							},
 							["classes"] = { 1 },
 						}),
-						gs(1005, { -- Dreadwyrm Battleplate
+						gs(1005, {	-- Dreadwyrm Battleplate
 							["groups"] = {
-								i(138355), -- Head
-								i(138361), -- Shoulder
-								i(138364), -- Back
-								i(138349), -- Chest
-								i(140902), -- Wrist
-								i(138352), -- Hands
-								i(140912), -- Waist
-								i(138358), -- Legs
-								i(140891), -- Feet
+								i(138355),	-- Head
+								i(138361),	-- Shoulder
+								i(138364),	-- Back
+								i(138349),	-- Chest
+								i(140902),	-- Wrist
+								i(138352),	-- Hands
+								i(140912),	-- Waist
+								i(138358),	-- Legs
+								i(140891),	-- Feet
 							},
 							["classes"] = { 6 },
 						}),
@@ -3265,171 +3265,171 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 				d(14, {  -- Normal
 					
 					["groups"] =  {
-						gs(308, { -- Vestments of the Purifier
+						gs(308, {	-- Vestments of the Purifier
 							["groups"] = {
-								i(138313), -- Head
-								i(138322), -- Shoulder
-								i(138370), -- Back
-								i(138319), -- Chest
-								i(139196), -- Wrist
-								i(138310), -- Hands
-								i(140849), -- Waist
-								i(138316), -- Legs
-								i(139194), -- Feet
+								i(138313),	-- Head
+								i(138322),	-- Shoulder
+								i(138370),	-- Back
+								i(138319),	-- Chest
+								i(139196),	-- Wrist
+								i(138310),	-- Hands
+								i(140849),	-- Waist
+								i(138316),	-- Legs
+								i(139194),	-- Feet
 							},
 							["classes"] = { 5 },
 						}),
-						gs(986, { -- Regalia of Everburning Knowledge
+						gs(986, {	-- Regalia of Everburning Knowledge
 							["groups"] = {
-								i(138312), -- Head
-								i(138321), -- Shoulder
-								i(138365), -- Back
-								i(138318), -- Chest
-								i(140850), -- Wrist
-								i(138309), -- Hands
-								i(144404), -- Waist
-								i(138315), -- Legs
-								i(139195), -- Feet
+								i(138312),	-- Head
+								i(138321),	-- Shoulder
+								i(138365),	-- Back
+								i(138318),	-- Chest
+								i(140850),	-- Wrist
+								i(138309),	-- Hands
+								i(144404),	-- Waist
+								i(138315),	-- Legs
+								i(139195),	-- Feet
 							},
 							["classes"] = { 8 },
 						}),
-						gs(315, { -- Legacy of Azj'Aqir
+						gs(315, {	-- Legacy of Azj'Aqir
 							["groups"] = {
-								i(138314), -- Head
-								i(138323), -- Shoulder
-								i(138373), -- Back
-								i(138320), -- Chest
-								i(140886), -- Wrist
-								i(138311), -- Hands
-								i(140887), -- Waist
-								i(138317), -- Legs
-								i(140914), -- Feet
+								i(138314),	-- Head
+								i(138323),	-- Shoulder
+								i(138373),	-- Back
+								i(138320),	-- Chest
+								i(140886),	-- Wrist
+								i(138311),	-- Hands
+								i(140887),	-- Waist
+								i(138317),	-- Legs
+								i(140914),	-- Feet
 							},
 							["classes"] = { 9 },
 						}),
-						gs(994, { -- Garb of the Astral Warden
+						gs(994, {	-- Garb of the Astral Warden
 							["groups"] = {
-								i(138330), -- Head
-								i(138336), -- Shoulder
-								i(138366), -- Back
-								i(138324), -- Chest
-								i(138219), -- Wrist
-								i(138327), -- Hands
-								i(139198), -- Waist
-								i(138333), -- Legs
-								i(140861), -- Feet
+								i(138330),	-- Head
+								i(138336),	-- Shoulder
+								i(138366),	-- Back
+								i(138324),	-- Chest
+								i(138219),	-- Wrist
+								i(138327),	-- Hands
+								i(139198),	-- Waist
+								i(138333),	-- Legs
+								i(140861),	-- Feet
 							},
 							["classes"] = { 11 },
 						}),
-						gs(942, { -- Doomblade Battlegear
+						gs(942, {	-- Doomblade Battlegear
 							["groups"] = {
-								i(138332), -- Head
-								i(138338), -- Shoulder
-								i(138371), -- Back
-								i(138326), -- Chest
-								i(140889), -- Wrist
-								i(138329), -- Hands
-								i(140859), -- Waist
-								i(138335), -- Legs
-								i(139199), -- Feet
+								i(138332),	-- Head
+								i(138338),	-- Shoulder
+								i(138371),	-- Back
+								i(138326),	-- Chest
+								i(140889),	-- Wrist
+								i(138329),	-- Hands
+								i(140859),	-- Waist
+								i(138335),	-- Legs
+								i(139199),	-- Feet
 							},
 							["classes"] = { 4 },
 						}),
-						gs(982, { -- Vestments of Enveloped Dissonance
+						gs(982, {	-- Vestments of Enveloped Dissonance
 							["groups"] = {
-								i(138331), -- Head
-								i(138337), -- Shoulder
-								i(138367), -- Back
-								i(138325), -- Chest
-								i(140857), -- Wrist
-								i(138328), -- Hands
-								i(139197), -- Waist
-								i(138334), -- Legs
-								i(140860), -- Feet
+								i(138331),	-- Head
+								i(138337),	-- Shoulder
+								i(138367),	-- Back
+								i(138325),	-- Chest
+								i(140857),	-- Wrist
+								i(138328),	-- Hands
+								i(139197),	-- Waist
+								i(138334),	-- Legs
+								i(140860),	-- Feet
 							},
 							["classes"] = { 10 },
 						}),
-						gs(998, { -- Vestment of Second Sight
+						gs(998, {	-- Vestment of Second Sight
 							["groups"] = {
-								i(138378), -- Head
-								i(138380), -- Shoulder
-								i(138375), -- Back
-								i(138376), -- Chest
-								i(139209), -- Wrist
-								i(138377), -- Hands
-								i(140919), -- Waist
-								i(138379), -- Legs
-								i(139200), -- Feet
+								i(138378),	-- Head
+								i(138380),	-- Shoulder
+								i(138375),	-- Back
+								i(138376),	-- Chest
+								i(139209),	-- Wrist
+								i(138377),	-- Hands
+								i(140919),	-- Waist
+								i(138379),	-- Legs
+								i(139200),	-- Feet
 							},
 							["classes"] = { 12 },
 						}),
-						gs(990, { -- Eagletalon Battlegear
+						gs(990, {	-- Eagletalon Battlegear
 							["groups"] = {
-								i(138342), -- Head
-								i(138347), -- Shoulder
-								i(138368), -- Back
-								i(138339), -- Chest
-								i(140876), -- Wrist
-								i(138340), -- Hands
-								i(140868), -- Waist
-								i(138344), -- Legs
-								i(141432), -- Feet
+								i(138342),	-- Head
+								i(138347),	-- Shoulder
+								i(138368),	-- Back
+								i(138339),	-- Chest
+								i(140876),	-- Wrist
+								i(138340),	-- Hands
+								i(140868),	-- Waist
+								i(138344),	-- Legs
+								i(141432),	-- Feet
 							},
 							["classes"] = { 3 },
 						}),
-						gs(933, { -- Regalia of Bound Elements
+						gs(933, {	-- Regalia of Bound Elements
 							["groups"] = {
-								i(138343), -- Head
-								i(138348), -- Shoulder
-								i(138372), -- Back
-								i(138346), -- Chest
-								i(139222), -- Wrist
-								i(138341), -- Hands
-								i(140890), -- Waist
-								i(138345), -- Legs
-								i(139219), -- Feet
+								i(138343),	-- Head
+								i(138348),	-- Shoulder
+								i(138372),	-- Back
+								i(138346),	-- Chest
+								i(139222),	-- Wrist
+								i(138341),	-- Hands
+								i(140890),	-- Waist
+								i(138345),	-- Legs
+								i(139219),	-- Feet
 							},
 							["classes"] = { 7 },
 						}),
-						gs(978, { -- Battleplate of the Highlord
+						gs(978, {	-- Battleplate of the Highlord
 							["groups"] = {
-								i(138356), -- Head
-								i(138362), -- Shoulder
-								i(138369), -- Back
-								i(138350), -- Chest
-								i(140878), -- Wrists
-								i(138353), -- Hands
-								i(140880), -- Waist
-								i(138359), -- Legs
-								i(140904), -- Feet
+								i(138356),	-- Head
+								i(138362),	-- Shoulder
+								i(138369),	-- Back
+								i(138350),	-- Chest
+								i(140878),	-- Wrists
+								i(138353),	-- Hands
+								i(140880),	-- Waist
+								i(138359),	-- Legs
+								i(140904),	-- Feet
 							},
 							["classes"] = { 2 },
 						}),
-						gs(937, { -- Warplate of the Obsidian Aspect
+						gs(937, {	-- Warplate of the Obsidian Aspect
 							["groups"] = {
-								i(138357), -- Head
-								i(138363), -- Shoulder
-								i(138374), -- Back
-								i(138351), -- Chest
-								i(138218), -- Wrist
-								i(138354), -- Hands
-								i(139228), -- Waist
-								i(138360), -- Legs
-								i(139234), -- Feet
+								i(138357),	-- Head
+								i(138363),	-- Shoulder
+								i(138374),	-- Back
+								i(138351),	-- Chest
+								i(138218),	-- Wrist
+								i(138354),	-- Hands
+								i(139228),	-- Waist
+								i(138360),	-- Legs
+								i(139234),	-- Feet
 							},
 							["classes"] = { 1 },
 						}),
-						gs(1002, { -- Dreadwyrm Battleplate
+						gs(1002, {	-- Dreadwyrm Battleplate
 							["groups"] = {
-								i(138355), -- Head
-								i(138361), -- Shoulder
-								i(138364), -- Back
-								i(138349), -- Chest
-								i(140902), -- Wrist
-								i(138352), -- Hands
-								i(140912), -- Waist
-								i(138358), -- Legs
-								i(140891), -- Feet
+								i(138355),	-- Head
+								i(138361),	-- Shoulder
+								i(138364),	-- Back
+								i(138349),	-- Chest
+								i(140902),	-- Wrist
+								i(138352),	-- Hands
+								i(140912),	-- Waist
+								i(138358),	-- Legs
+								i(140891),	-- Feet
 							},
 							["classes"] = { 6 },
 						}),
@@ -3438,171 +3438,171 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 				d(15, {  -- Heroic
 					
 					["groups"] =  {
-						gs(309, { -- Vestments of the Purifier
+						gs(309, {	-- Vestments of the Purifier
 							["groups"] = {
-								i(138313), -- Head
-								i(138322), -- Shoulder
-								i(138370), -- Back
-								i(138319), -- Chest
-								i(139196), -- Wrist
-								i(138310), -- Hands
-								i(140849), -- Waist
-								i(138316), -- Legs
-								i(139194), -- Feet
+								i(138313),	-- Head
+								i(138322),	-- Shoulder
+								i(138370),	-- Back
+								i(138319),	-- Chest
+								i(139196),	-- Wrist
+								i(138310),	-- Hands
+								i(140849),	-- Waist
+								i(138316),	-- Legs
+								i(139194),	-- Feet
 							},
 							["classes"] = { 5 },
 						}),
-						gs(987, { -- Regalia of Everburning Knowledge
+						gs(987, {	-- Regalia of Everburning Knowledge
 							["groups"] = {
-								i(138312), -- Head
-								i(138321), -- Shoulder
-								i(138365), -- Back
-								i(138318), -- Chest
-								i(140850), -- Wrist
-								i(138309), -- Hands
-								i(144404), -- Waist
-								i(138315), -- Legs
-								i(139195), -- Feet
+								i(138312),	-- Head
+								i(138321),	-- Shoulder
+								i(138365),	-- Back
+								i(138318),	-- Chest
+								i(140850),	-- Wrist
+								i(138309),	-- Hands
+								i(144404),	-- Waist
+								i(138315),	-- Legs
+								i(139195),	-- Feet
 							},
 							["classes"] = { 8 },
 						}),
-						gs(316, { -- Legacy of Azj'Aqir
+						gs(316, {	-- Legacy of Azj'Aqir
 							["groups"] = {
-								i(138314), -- Head
-								i(138323), -- Shoulder
-								i(138373), -- Back
-								i(138320), -- Chest
-								i(140886), -- Wrist
-								i(138311), -- Hands
-								i(140887), -- Waist
-								i(138317), -- Legs
-								i(140914), -- Feet
+								i(138314),	-- Head
+								i(138323),	-- Shoulder
+								i(138373),	-- Back
+								i(138320),	-- Chest
+								i(140886),	-- Wrist
+								i(138311),	-- Hands
+								i(140887),	-- Waist
+								i(138317),	-- Legs
+								i(140914),	-- Feet
 							},
 							["classes"] = { 9 },
 						}),
-						gs(995, { -- Garb of the Astral Warden
+						gs(995, {	-- Garb of the Astral Warden
 							["groups"] = {
-								i(138330), -- Head
-								i(138336), -- Shoulder
-								i(138366), -- Back
-								i(138324), -- Chest
-								i(138219), -- Wrist
-								i(138327), -- Hands
-								i(139198), -- Waist
-								i(138333), -- Legs
-								i(140861), -- Feet
+								i(138330),	-- Head
+								i(138336),	-- Shoulder
+								i(138366),	-- Back
+								i(138324),	-- Chest
+								i(138219),	-- Wrist
+								i(138327),	-- Hands
+								i(139198),	-- Waist
+								i(138333),	-- Legs
+								i(140861),	-- Feet
 							},
 							["classes"] = { 11 },
 						}),
-						gs(943, { -- Doomblade Battlegear
+						gs(943, {	-- Doomblade Battlegear
 							["groups"] = {
-								i(138332), -- Head
-								i(138338), -- Shoulder
-								i(138371), -- Back
-								i(138326), -- Chest
-								i(140889), -- Wrist
-								i(138329), -- Hands
-								i(140859), -- Waist
-								i(138335), -- Legs
-								i(139199), -- Feet
+								i(138332),	-- Head
+								i(138338),	-- Shoulder
+								i(138371),	-- Back
+								i(138326),	-- Chest
+								i(140889),	-- Wrist
+								i(138329),	-- Hands
+								i(140859),	-- Waist
+								i(138335),	-- Legs
+								i(139199),	-- Feet
 							},
 							["classes"] = { 4 },
 						}),
-						gs(983, { -- Vestments of Enveloped Dissonance
+						gs(983, {	-- Vestments of Enveloped Dissonance
 							["groups"] = {
-								i(138331), -- Head
-								i(138337), -- Shoulder
-								i(138367), -- Back
-								i(138325), -- Chest
-								i(140857), -- Wrist
-								i(138328), -- Hands
-								i(139197), -- Waist
-								i(138334), -- Legs
-								i(140860), -- Feet
+								i(138331),	-- Head
+								i(138337),	-- Shoulder
+								i(138367),	-- Back
+								i(138325),	-- Chest
+								i(140857),	-- Wrist
+								i(138328),	-- Hands
+								i(139197),	-- Waist
+								i(138334),	-- Legs
+								i(140860),	-- Feet
 							},
 							["classes"] = { 10 },
 						}),
-						gs(999, { -- Vestment of Second Sight
+						gs(999, {	-- Vestment of Second Sight
 							["groups"] = {
-								i(138378), -- Head
-								i(138380), -- Shoulder
-								i(138375), -- Back
-								i(138376), -- Chest
-								i(139209), -- Wrist
-								i(138377), -- Hands
-								i(140919), -- Waist
-								i(138379), -- Legs
-								i(139200), -- Feet
+								i(138378),	-- Head
+								i(138380),	-- Shoulder
+								i(138375),	-- Back
+								i(138376),	-- Chest
+								i(139209),	-- Wrist
+								i(138377),	-- Hands
+								i(140919),	-- Waist
+								i(138379),	-- Legs
+								i(139200),	-- Feet
 							},
 							["classes"] = { 12 },
 						}),
-						gs(991, { -- Eagletalon Battlegear
+						gs(991, {	-- Eagletalon Battlegear
 							["groups"] = {
-								i(138342), -- Head
-								i(138347), -- Shoulder
-								i(138368), -- Back
-								i(138339), -- Chest
-								i(140876), -- Wrist
-								i(138340), -- Hands
-								i(140868), -- Waist
-								i(138344), -- Legs
-								i(141432), -- Feet
+								i(138342),	-- Head
+								i(138347),	-- Shoulder
+								i(138368),	-- Back
+								i(138339),	-- Chest
+								i(140876),	-- Wrist
+								i(138340),	-- Hands
+								i(140868),	-- Waist
+								i(138344),	-- Legs
+								i(141432),	-- Feet
 							},
 							["classes"] = { 3 },
 						}),
-						gs(934, { -- Regalia of Bound Elements
+						gs(934, {	-- Regalia of Bound Elements
 							["groups"] = {
-								i(138343), -- Head
-								i(138348), -- Shoulder
-								i(138372), -- Back
-								i(138346), -- Chest
-								i(139222), -- Wrist
-								i(138341), -- Hands
-								i(140890), -- Waist
-								i(138345), -- Legs
-								i(139219), -- Feet
+								i(138343),	-- Head
+								i(138348),	-- Shoulder
+								i(138372),	-- Back
+								i(138346),	-- Chest
+								i(139222),	-- Wrist
+								i(138341),	-- Hands
+								i(140890),	-- Waist
+								i(138345),	-- Legs
+								i(139219),	-- Feet
 							},
 							["classes"] = { 7 },
 						}),
-						gs(979, { -- Battleplate of the Highlord
+						gs(979, {	-- Battleplate of the Highlord
 							["groups"] = {
-								i(138356), -- Head
-								i(138362), -- Shoulder
-								i(138369), -- Back
-								i(138350), -- Chest
-								i(140878), -- Wrists
-								i(138353), -- Hands
-								i(140880), -- Waist
-								i(138359), -- Legs
-								i(140904), -- Feet
+								i(138356),	-- Head
+								i(138362),	-- Shoulder
+								i(138369),	-- Back
+								i(138350),	-- Chest
+								i(140878),	-- Wrists
+								i(138353),	-- Hands
+								i(140880),	-- Waist
+								i(138359),	-- Legs
+								i(140904),	-- Feet
 							},
 							["classes"] = { 2 },
 						}),
-						gs(938, { -- Warplate of the Obsidian Aspect
+						gs(938, {	-- Warplate of the Obsidian Aspect
 							["groups"] = {
-								i(138357), -- Head
-								i(138363), -- Shoulder
-								i(138374), -- Back
-								i(138351), -- Chest
-								i(138218), -- Wrist
-								i(138354), -- Hands
-								i(139228), -- Waist
-								i(138360), -- Legs
-								i(139234), -- Feet
+								i(138357),	-- Head
+								i(138363),	-- Shoulder
+								i(138374),	-- Back
+								i(138351),	-- Chest
+								i(138218),	-- Wrist
+								i(138354),	-- Hands
+								i(139228),	-- Waist
+								i(138360),	-- Legs
+								i(139234),	-- Feet
 							},
 							["classes"] = { 1 },
 						}),
-						gs(1003, { -- Dreadwyrm Battleplate
+						gs(1003, {	-- Dreadwyrm Battleplate
 							["groups"] = {
-								i(138355), -- Head
-								i(138361), -- Shoulder
-								i(138364), -- Back
-								i(138349), -- Chest
-								i(140902), -- Wrist
-								i(138352), -- Hands
-								i(140912), -- Waist
-								i(138358), -- Legs
-								i(140891), -- Feet
+								i(138355),	-- Head
+								i(138361),	-- Shoulder
+								i(138364),	-- Back
+								i(138349),	-- Chest
+								i(140902),	-- Wrist
+								i(138352),	-- Hands
+								i(140912),	-- Waist
+								i(138358),	-- Legs
+								i(140891),	-- Feet
 							},
 							["classes"] = { 6 },
 						}),
@@ -3611,337 +3611,337 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 				d(16, {  -- Mythic
 					
 					["groups"] =  {
-						gs(311, { -- Vestments of the Purifier
+						gs(311, {	-- Vestments of the Purifier
 							["groups"] = {
-								i(138313), -- Head
-								i(138322), -- Shoulder
-								i(138370), -- Back
-								i(138319), -- Chest
-								i(139196), -- Wrist
-								i(138310), -- Hands
-								i(140849), -- Waist
-								i(138316), -- Legs
-								i(139194), -- Feet
+								i(138313),	-- Head
+								i(138322),	-- Shoulder
+								i(138370),	-- Back
+								i(138319),	-- Chest
+								i(139196),	-- Wrist
+								i(138310),	-- Hands
+								i(140849),	-- Waist
+								i(138316),	-- Legs
+								i(139194),	-- Feet
 							},
 							["classes"] = { 5 },
 						}),
-						gs(988, { -- Regalia of Everburning Knowledge
+						gs(988, {	-- Regalia of Everburning Knowledge
 							["groups"] = {
-								i(138312), -- Head
-								i(138321), -- Shoulder
-								i(138365), -- Back
-								i(138318), -- Chest
-								i(140850), -- Wrist
-								i(138309), -- Hands
-								i(144404), -- Waist
-								i(138315), -- Legs
-								i(139195), -- Feet
+								i(138312),	-- Head
+								i(138321),	-- Shoulder
+								i(138365),	-- Back
+								i(138318),	-- Chest
+								i(140850),	-- Wrist
+								i(138309),	-- Hands
+								i(144404),	-- Waist
+								i(138315),	-- Legs
+								i(139195),	-- Feet
 							},
 							["classes"] = { 8 },
 						}),
-						gs(321, { -- Legacy of Azj'Aqir
+						gs(321, {	-- Legacy of Azj'Aqir
 							["groups"] = {
-								i(138314), -- Head
-								i(138323), -- Shoulder
-								i(138373), -- Back
-								i(138320), -- Chest
-								i(140886), -- Wrist
-								i(138311), -- Hands
-								i(140887), -- Waist
-								i(138317), -- Legs
-								i(140914), -- Feet
+								i(138314),	-- Head
+								i(138323),	-- Shoulder
+								i(138373),	-- Back
+								i(138320),	-- Chest
+								i(140886),	-- Wrist
+								i(138311),	-- Hands
+								i(140887),	-- Waist
+								i(138317),	-- Legs
+								i(140914),	-- Feet
 							},
 							["classes"] = { 9 },
 						}),
-						gs(996, { -- Garb of the Astral Warden
+						gs(996, {	-- Garb of the Astral Warden
 							["groups"] = {
-								i(138330), -- Head
-								i(138336), -- Shoulder
-								i(138366), -- Back
-								i(138324), -- Chest
-								i(138219), -- Wrist
-								i(138327), -- Hands
-								i(139198), -- Waist
-								i(138333), -- Legs
-								i(140861), -- Feet
+								i(138330),	-- Head
+								i(138336),	-- Shoulder
+								i(138366),	-- Back
+								i(138324),	-- Chest
+								i(138219),	-- Wrist
+								i(138327),	-- Hands
+								i(139198),	-- Waist
+								i(138333),	-- Legs
+								i(140861),	-- Feet
 							},
 							["classes"] = { 11 },
 						}),
-						gs(944, { -- Doomblade Battlegear
+						gs(944, {	-- Doomblade Battlegear
 							["groups"] = {
-								i(138332), -- Head
-								i(138338), -- Shoulder
-								i(138371), -- Back
-								i(138326), -- Chest
-								i(140889), -- Wrist
-								i(138329), -- Hands
-								i(140859), -- Waist
-								i(138335), -- Legs
-								i(139199), -- Feet
+								i(138332),	-- Head
+								i(138338),	-- Shoulder
+								i(138371),	-- Back
+								i(138326),	-- Chest
+								i(140889),	-- Wrist
+								i(138329),	-- Hands
+								i(140859),	-- Waist
+								i(138335),	-- Legs
+								i(139199),	-- Feet
 							},
 							["classes"] = { 4 },
 						}),
-						gs(984, { -- Vestments of Enveloped Dissonance
+						gs(984, {	-- Vestments of Enveloped Dissonance
 							["groups"] = {
-								i(138331), -- Head
-								i(138337), -- Shoulder
-								i(138367), -- Back
-								i(138325), -- Chest
-								i(140857), -- Wrist
-								i(138328), -- Hands
-								i(139197), -- Waist
-								i(138334), -- Legs
-								i(140860), -- Feet
+								i(138331),	-- Head
+								i(138337),	-- Shoulder
+								i(138367),	-- Back
+								i(138325),	-- Chest
+								i(140857),	-- Wrist
+								i(138328),	-- Hands
+								i(139197),	-- Waist
+								i(138334),	-- Legs
+								i(140860),	-- Feet
 							},
 							["classes"] = { 10 },
 						}),
-						gs(988, { -- Vestment of Second Sight
+						gs(988, {	-- Vestment of Second Sight
 							["groups"] = {
-								i(138378), -- Head
-								i(138380), -- Shoulder
-								i(138375), -- Back
-								i(138376), -- Chest
-								i(139209), -- Wrist
-								i(138377), -- Hands
-								i(140919), -- Waist
-								i(138379), -- Legs
-								i(139200), -- Feet
+								i(138378),	-- Head
+								i(138380),	-- Shoulder
+								i(138375),	-- Back
+								i(138376),	-- Chest
+								i(139209),	-- Wrist
+								i(138377),	-- Hands
+								i(140919),	-- Waist
+								i(138379),	-- Legs
+								i(139200),	-- Feet
 							},
 							["classes"] = { 12 },
 						}),
-						gs(992, { -- Eagletalon Battlegear
+						gs(992, {	-- Eagletalon Battlegear
 							["groups"] = {
-								i(138342), -- Head
-								i(138347), -- Shoulder
-								i(138368), -- Back
-								i(138339), -- Chest
-								i(140876), -- Wrist
-								i(138340), -- Hands
-								i(140868), -- Waist
-								i(138344), -- Legs
-								i(141432), -- Feet
+								i(138342),	-- Head
+								i(138347),	-- Shoulder
+								i(138368),	-- Back
+								i(138339),	-- Chest
+								i(140876),	-- Wrist
+								i(138340),	-- Hands
+								i(140868),	-- Waist
+								i(138344),	-- Legs
+								i(141432),	-- Feet
 							},
 							["classes"] = { 3 },
 						}),
-						gs(935, { -- Regalia of Bound Elements
+						gs(935, {	-- Regalia of Bound Elements
 							["groups"] = {
-								i(138343), -- Head
-								i(138348), -- Shoulder
-								i(138372), -- Back
-								i(138346), -- Chest
-								i(139222), -- Wrist
-								i(138341), -- Hands
-								i(140890), -- Waist
-								i(138345), -- Legs
-								i(139219), -- Feet
+								i(138343),	-- Head
+								i(138348),	-- Shoulder
+								i(138372),	-- Back
+								i(138346),	-- Chest
+								i(139222),	-- Wrist
+								i(138341),	-- Hands
+								i(140890),	-- Waist
+								i(138345),	-- Legs
+								i(139219),	-- Feet
 							},
 							["classes"] = { 7 },
 						}),
-						gs(980, { -- Battleplate of the Highlord
+						gs(980, {	-- Battleplate of the Highlord
 							["groups"] = {
-								i(138356), -- Head
-								i(138362), -- Shoulder
-								i(138369), -- Back
-								i(138350), -- Chest
-								i(140878), -- Wrists
-								i(138353), -- Hands
-								i(140880), -- Waist
-								i(138359), -- Legs
-								i(140904), -- Feet
+								i(138356),	-- Head
+								i(138362),	-- Shoulder
+								i(138369),	-- Back
+								i(138350),	-- Chest
+								i(140878),	-- Wrists
+								i(138353),	-- Hands
+								i(140880),	-- Waist
+								i(138359),	-- Legs
+								i(140904),	-- Feet
 							},
 							["classes"] = { 2 },
 						}),
-						gs(939, { -- Warplate of the Obsidian Aspect
+						gs(939, {	-- Warplate of the Obsidian Aspect
 							["groups"] = {
-								i(138357), -- Head
-								i(138363), -- Shoulder
-								i(138374), -- Back
-								i(138351), -- Chest
-								i(138218), -- Wrist
-								i(138354), -- Hands
-								i(139228), -- Waist
-								i(138360), -- Legs
-								i(139234), -- Feet
+								i(138357),	-- Head
+								i(138363),	-- Shoulder
+								i(138374),	-- Back
+								i(138351),	-- Chest
+								i(138218),	-- Wrist
+								i(138354),	-- Hands
+								i(139228),	-- Waist
+								i(138360),	-- Legs
+								i(139234),	-- Feet
 							},
 							["classes"] = { 1 },
 						}),
-						gs(1004, { -- Dreadwyrm Battleplate
+						gs(1004, {	-- Dreadwyrm Battleplate
 							["groups"] = {
-								i(138355), -- Head
-								i(138361), -- Shoulder
-								i(138364), -- Back
-								i(138349), -- Chest
-								i(140902), -- Wrist
-								i(138352), -- Hands
-								i(140912), -- Waist
-								i(138358), -- Legs
-								i(140891), -- Feet
+								i(138355),	-- Head
+								i(138361),	-- Shoulder
+								i(138364),	-- Back
+								i(138349),	-- Chest
+								i(140902),	-- Wrist
+								i(138352),	-- Hands
+								i(140912),	-- Waist
+								i(138358),	-- Legs
+								i(140891),	-- Feet
 							},
 							["classes"] = { 6 },
 						}),
 				},
 			}),
 			},
-			["achievementID"] = 11628, -- That's So Last Millennium
+			["achievementID"] = 11628,	-- That's So Last Millennium
 		}),
-		n(-3161, { -- Tier 20 (Tomb of Sargeras)
+		n(-3161, {	-- Tier 20 (Tomb of Sargeras)
 			["groups"] = {
 				d(17, {  -- Raid Finder
 					 -- 
 					["groups"] = {
-						gs(1342, { -- Vestments of Blind Absolution
+						gs(1342, {	-- Vestments of Blind Absolution
 							["groups"] = {
-								i(147165), -- Head
-								i(147168), -- Shoulder
-								i(147163), -- Back
-								i(147167), -- Chest
-								i(147164), -- Hands
-								i(147736), -- Waist
-								i(147166), -- Legs
-								i(146987), -- Feet
+								i(147165),	-- Head
+								i(147168),	-- Shoulder
+								i(147163),	-- Back
+								i(147167),	-- Chest
+								i(147164),	-- Hands
+								i(147736),	-- Waist
+								i(147166),	-- Legs
+								i(146987),	-- Feet
 							},
 							["classes"] = { 5 },
 						}),
-						gs(1323, { -- Regalia of the Arcane Tempest
+						gs(1323, {	-- Regalia of the Arcane Tempest
 							["groups"] = {
-								i(147147), -- Head
-								i(147150), -- Shoulder
-								i(147145), -- Back
-								i(147149), -- Chest
-								i(147146), -- Hands
-								i(146998), -- Waist
-								i(147148), -- Legs
-								i(147422), -- Feet
+								i(147147),	-- Head
+								i(147150),	-- Shoulder
+								i(147145),	-- Back
+								i(147149),	-- Chest
+								i(147146),	-- Hands
+								i(146998),	-- Waist
+								i(147148),	-- Legs
+								i(147422),	-- Feet
 							},
 							["classes"] = { 8 },
 						}),
-						gs(1300, { -- Diabolic Raiment
+						gs(1300, {	-- Diabolic Raiment
 							["groups"] = {
-								i(147183), -- Head
-								i(147186), -- Shoulder
-								i(147181), -- Back
-								i(147185), -- Chest
-								i(147182), -- Hands
-								i(146999), -- Waist
-								i(147184), -- Legs
-								i(146986), -- Feet
+								i(147183),	-- Head
+								i(147186),	-- Shoulder
+								i(147181),	-- Back
+								i(147185),	-- Chest
+								i(147182),	-- Hands
+								i(146999),	-- Waist
+								i(147184),	-- Legs
+								i(146986),	-- Feet
 							},
 							["classes"] = { 9 },
 						}),
-						gs(1331, { -- Stormheart Raiment
+						gs(1331, {	-- Stormheart Raiment
 							["groups"] = {
-								i(147136), -- Head
-								i(147138), -- Shoulder
-								i(147134), -- Back
-								i(147133), -- Chest
-								i(147135), -- Hands
-								i(147040), -- Waist
-								i(147137), -- Legs
-								i(147738), -- Feet
+								i(147136),	-- Head
+								i(147138),	-- Shoulder
+								i(147134),	-- Back
+								i(147133),	-- Chest
+								i(147135),	-- Hands
+								i(147040),	-- Waist
+								i(147137),	-- Legs
+								i(147738),	-- Feet
 							},
 							["classes"] = { 11 },
 						}),
-						gs(1306, { -- Fanged Slayer's Armor
+						gs(1306, {	-- Fanged Slayer's Armor
 							["groups"] = {
-								i(147172), -- Head
-								i(147174), -- Shoulder
-								i(147170), -- Back
-								i(147169), -- Chest
-								i(147171), -- Hands
-								i(147039), -- Waist
-								i(147173), -- Legs
-								i(147030), -- Feet
+								i(147172),	-- Head
+								i(147174),	-- Shoulder
+								i(147170),	-- Back
+								i(147169),	-- Chest
+								i(147171),	-- Hands
+								i(147039),	-- Waist
+								i(147173),	-- Legs
+								i(147030),	-- Feet
 							},
 							["classes"] = { 4 },
 						}),
-						gs(1319, { -- Xuen's Battlegear
+						gs(1319, {	-- Xuen's Battlegear
 							["groups"] = {
-								i(147154), -- Head
-								i(147156), -- Shoulder
-								i(147152), -- Back
-								i(147151), -- Chest
-								i(147153), -- Hands
-								i(147425), -- Waist
-								i(147155), -- Legs
-								i(147424), -- Feet
+								i(147154),	-- Head
+								i(147156),	-- Shoulder
+								i(147152),	-- Back
+								i(147151),	-- Chest
+								i(147153),	-- Hands
+								i(147425),	-- Waist
+								i(147155),	-- Legs
+								i(147424),	-- Feet
 							},
 							["classes"] = { 10 },
 						}),
-						gs(1335, { -- Demonbane Armor
+						gs(1335, {	-- Demonbane Armor
 							["groups"] = {
-								i(147130), -- Head
-								i(147132), -- Shoulder
-								i(147128), -- Back
-								i(147127), -- Chest
-								i(147129), -- Hands
-								i(147347), -- Waist
-								i(147131), -- Legs
-								i(147029), -- Feet
+								i(147130),	-- Head
+								i(147132),	-- Shoulder
+								i(147128),	-- Back
+								i(147127),	-- Chest
+								i(147129),	-- Hands
+								i(147347),	-- Waist
+								i(147131),	-- Legs
+								i(147029),	-- Feet
 							},
 							["classes"] = { 12 },
 						}),
-						gs(1327, { -- Wildstalker Armor
+						gs(1327, {	-- Wildstalker Armor
 							["groups"] = {
-								i(147142), -- Head
-								i(147144), -- Shoulder
-								i(147140), -- Back
-								i(147139), -- Chest
-								i(147141), -- Hands
-								i(147055), -- Waist
-								i(147143), -- Legs
-								i(147046), -- Feet
+								i(147142),	-- Head
+								i(147144),	-- Shoulder
+								i(147140),	-- Back
+								i(147139),	-- Chest
+								i(147141),	-- Hands
+								i(147055),	-- Waist
+								i(147143),	-- Legs
+								i(147046),	-- Feet
 							},
 							["classes"] = { 3 },
 						}),
-						gs(1302, { -- Regalia of the Skybreaker
+						gs(1302, {	-- Regalia of the Skybreaker
 							["groups"] = {
-								i(147178), -- Head
-								i(147180), -- Shoulder
-								i(147176), -- Back
-								i(147175), -- Chest
-								i(147177), -- Hands
-								i(147056), -- Waist
-								i(147179), -- Legs
-								i(147045), -- Feet
+								i(147178),	-- Head
+								i(147180),	-- Shoulder
+								i(147176),	-- Back
+								i(147175),	-- Chest
+								i(147177),	-- Hands
+								i(147056),	-- Waist
+								i(147179),	-- Legs
+								i(147045),	-- Feet
 							},
 							["classes"] = { 7 },
 						}),
-						gs(1315, { -- Radiant Lightbringer Armor
+						gs(1315, {	-- Radiant Lightbringer Armor
 							["groups"] = {
-								i(147160), -- Head
-								i(147162), -- Shoulder
-								i(147158), -- Back
-								i(147157), -- Chest
-								i(147159), -- Hands
-								i(147071), -- Waist
-								i(147161), -- Legs
-								i(147060), -- Feet
+								i(147160),	-- Head
+								i(147162),	-- Shoulder
+								i(147158),	-- Back
+								i(147157),	-- Chest
+								i(147159),	-- Hands
+								i(147071),	-- Waist
+								i(147161),	-- Legs
+								i(147060),	-- Feet
 							},
 							["classes"] = { 2 },
 						}),
-						gs(1296, { -- Titantic Onslaught Armor
+						gs(1296, {	-- Titantic Onslaught Armor
 							["groups"] = {
-								i(147190), -- Head
-								i(147192), -- Shoulder
-								i(147188), -- Back
-								i(147187), -- Chest
-								i(147189), -- Hands
-								i(147429), -- Waist
-								i(147191), -- Legs
-								i(147059), -- Feet
+								i(147190),	-- Head
+								i(147192),	-- Shoulder
+								i(147188),	-- Back
+								i(147187),	-- Chest
+								i(147189),	-- Hands
+								i(147429),	-- Waist
+								i(147191),	-- Legs
+								i(147059),	-- Feet
 							},
 							["classes"] = { 1 },
 						}),
-						gs(1339, { -- Gravewarden Armaments
+						gs(1339, {	-- Gravewarden Armaments
 							["groups"] = {
-								i(147124), -- Head
-								i(147126), -- Shoulder
-								i(147122), -- Back
-								i(147121), -- Chest
-								i(147123), -- Hands
-								i(147072), -- Waist
-								i(147125), -- Legs
-								i(147428), -- Feet
+								i(147124),	-- Head
+								i(147126),	-- Shoulder
+								i(147122),	-- Back
+								i(147121),	-- Chest
+								i(147123),	-- Hands
+								i(147072),	-- Waist
+								i(147125),	-- Legs
+								i(147428),	-- Feet
 							},
 							["classes"] = { 6 },
 						}),
@@ -3950,159 +3950,159 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 				d(14, {  -- Normal
 					
 					["groups"] =  {
-						gs(1309, { -- Vestments of Blind Absolution
+						gs(1309, {	-- Vestments of Blind Absolution
 							["groups"] = {
-								i(147165), -- Head
-								i(147168), -- Shoulder
-								i(147163), -- Back
-								i(147167), -- Chest
-								i(147164), -- Hands
-								i(147736), -- Waist
-								i(147166), -- Legs
-								i(146987), -- Feet
+								i(147165),	-- Head
+								i(147168),	-- Shoulder
+								i(147163),	-- Back
+								i(147167),	-- Chest
+								i(147164),	-- Hands
+								i(147736),	-- Waist
+								i(147166),	-- Legs
+								i(146987),	-- Feet
 							},
 							["classes"] = { 5 },
 						}),
-						gs(1321, { -- Regalia of the Arcane Tempest
+						gs(1321, {	-- Regalia of the Arcane Tempest
 							["groups"] = {
-								i(147147), -- Head
-								i(147150), -- Shoulder
-								i(147145), -- Back
-								i(147149), -- Chest
-								i(147146), -- Hands
-								i(146998), -- Waist
-								i(147148), -- Legs
-								i(147422), -- Feet
+								i(147147),	-- Head
+								i(147150),	-- Shoulder
+								i(147145),	-- Back
+								i(147149),	-- Chest
+								i(147146),	-- Hands
+								i(146998),	-- Waist
+								i(147148),	-- Legs
+								i(147422),	-- Feet
 							},
 							["classes"] = { 8 },
 						}),
-						gs(1297, { -- Diabolic Raiment
+						gs(1297, {	-- Diabolic Raiment
 							["groups"] = {
-								i(147183), -- Head
-								i(147186), -- Shoulder
-								i(147181), -- Back
-								i(147185), -- Chest
-								i(147182), -- Hands
-								i(146999), -- Waist
-								i(147184), -- Legs
-								i(146986), -- Feet
+								i(147183),	-- Head
+								i(147186),	-- Shoulder
+								i(147181),	-- Back
+								i(147185),	-- Chest
+								i(147182),	-- Hands
+								i(146999),	-- Waist
+								i(147184),	-- Legs
+								i(146986),	-- Feet
 							},
 							["classes"] = { 9 },
 						}),
-						gs(1329, { -- Stormheart Raiment
+						gs(1329, {	-- Stormheart Raiment
 							["groups"] = {
-								i(147136), -- Head
-								i(147138), -- Shoulder
-								i(147134), -- Back
-								i(147133), -- Chest
-								i(147135), -- Hands
-								i(147040), -- Waist
-								i(147137), -- Legs
-								i(147738), -- Feet
+								i(147136),	-- Head
+								i(147138),	-- Shoulder
+								i(147134),	-- Back
+								i(147133),	-- Chest
+								i(147135),	-- Hands
+								i(147040),	-- Waist
+								i(147137),	-- Legs
+								i(147738),	-- Feet
 							},
 							["classes"] = { 11 },
 						}),
-						gs(1305, { -- Fanged Slayer's Armor
+						gs(1305, {	-- Fanged Slayer's Armor
 							["groups"] = {
-								i(147172), -- Head
-								i(147174), -- Shoulder
-								i(147170), -- Back
-								i(147169), -- Chest
-								i(147171), -- Hands
-								i(147039), -- Waist
-								i(147173), -- Legs
-								i(147030), -- Feet
+								i(147172),	-- Head
+								i(147174),	-- Shoulder
+								i(147170),	-- Back
+								i(147169),	-- Chest
+								i(147171),	-- Hands
+								i(147039),	-- Waist
+								i(147173),	-- Legs
+								i(147030),	-- Feet
 							},
 							["classes"] = { 4 },
 						}),
-						gs(1317, { -- Xuen's Battlegear
+						gs(1317, {	-- Xuen's Battlegear
 							["groups"] = {
-								i(147154), -- Head
-								i(147156), -- Shoulder
-								i(147152), -- Back
-								i(147151), -- Chest
-								i(147153), -- Hands
-								i(147425), -- Waist
-								i(147155), -- Legs
-								i(147424), -- Feet
+								i(147154),	-- Head
+								i(147156),	-- Shoulder
+								i(147152),	-- Back
+								i(147151),	-- Chest
+								i(147153),	-- Hands
+								i(147425),	-- Waist
+								i(147155),	-- Legs
+								i(147424),	-- Feet
 							},
 							["classes"] = { 10 },
 						}),
-						gs(1333, { -- Demonbane Armor
+						gs(1333, {	-- Demonbane Armor
 							["groups"] = {
-								i(147130), -- Head
-								i(147132), -- Shoulder
-								i(147128), -- Back
-								i(147127), -- Chest
-								i(147129), -- Hands
-								i(147347), -- Waist
-								i(147131), -- Legs
-								i(147029), -- Feet
+								i(147130),	-- Head
+								i(147132),	-- Shoulder
+								i(147128),	-- Back
+								i(147127),	-- Chest
+								i(147129),	-- Hands
+								i(147347),	-- Waist
+								i(147131),	-- Legs
+								i(147029),	-- Feet
 							},
 							["classes"] = { 12 },
 						}),
-						gs(1325, { -- Wildstalker Armor
+						gs(1325, {	-- Wildstalker Armor
 							["groups"] = {
-								i(147142), -- Head
-								i(147144), -- Shoulder
-								i(147140), -- Back
-								i(147139), -- Chest
-								i(147141), -- Hands
-								i(147055), -- Waist
-								i(147143), -- Legs
-								i(147046), -- Feet
+								i(147142),	-- Head
+								i(147144),	-- Shoulder
+								i(147140),	-- Back
+								i(147139),	-- Chest
+								i(147141),	-- Hands
+								i(147055),	-- Waist
+								i(147143),	-- Legs
+								i(147046),	-- Feet
 							},
 							["classes"] = { 3 },
 						}),
-						gs(1301, { -- Regalia of the Skybreaker
+						gs(1301, {	-- Regalia of the Skybreaker
 							["groups"] = {
-								i(147178), -- Head
-								i(147180), -- Shoulder
-								i(147176), -- Back
-								i(147175), -- Chest
-								i(147177), -- Hands
-								i(147056), -- Waist
-								i(147179), -- Legs
-								i(147045), -- Feet
+								i(147178),	-- Head
+								i(147180),	-- Shoulder
+								i(147176),	-- Back
+								i(147175),	-- Chest
+								i(147177),	-- Hands
+								i(147056),	-- Waist
+								i(147179),	-- Legs
+								i(147045),	-- Feet
 							},
 							["classes"] = { 7 },
 						}),
-						gs(1313, { -- Radiant Lightbringer Armor
+						gs(1313, {	-- Radiant Lightbringer Armor
 							["groups"] = {
-								i(147160), -- Head
-								i(147162), -- Shoulder
-								i(147158), -- Back
-								i(147157), -- Chest
-								i(147159), -- Hands
-								i(147071), -- Waist
-								i(147161), -- Legs
-								i(147060), -- Feet
+								i(147160),	-- Head
+								i(147162),	-- Shoulder
+								i(147158),	-- Back
+								i(147157),	-- Chest
+								i(147159),	-- Hands
+								i(147071),	-- Waist
+								i(147161),	-- Legs
+								i(147060),	-- Feet
 							},
 							["classes"] = { 2 },
 						}),
-						gs(1293, { -- Titantic Onslaught Armor
+						gs(1293, {	-- Titantic Onslaught Armor
 							["groups"] = {
-								i(147190), -- Head
-								i(147192), -- Shoulder
-								i(147188), -- Back
-								i(147187), -- Chest
-								i(147189), -- Hands
-								i(147753), -- Waist
-								i(147191), -- Legs
-								i(147059), -- Feet
+								i(147190),	-- Head
+								i(147192),	-- Shoulder
+								i(147188),	-- Back
+								i(147187),	-- Chest
+								i(147189),	-- Hands
+								i(147753),	-- Waist
+								i(147191),	-- Legs
+								i(147059),	-- Feet
 							},
 							["classes"] = { 1 },
 						}),
-						gs(1337, { -- Gravewarden Armaments
+						gs(1337, {	-- Gravewarden Armaments
 							["groups"] = {
-								i(147124), -- Head
-								i(147126), -- Shoulder
-								i(147122), -- Back
-								i(147121), -- Chest
-								i(147123), -- Hands
-								i(147072), -- Waist
-								i(147125), -- Legs
-								i(147428), -- Feet
+								i(147124),	-- Head
+								i(147126),	-- Shoulder
+								i(147122),	-- Back
+								i(147121),	-- Chest
+								i(147123),	-- Hands
+								i(147072),	-- Waist
+								i(147125),	-- Legs
+								i(147428),	-- Feet
 							},
 							["classes"] = { 6 },
 						}),
@@ -4111,159 +4111,159 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 				d(15, {  -- Heroic
 					
 					["groups"] =  {
-						gs(1312, { -- Vestments of Blind Absolution
+						gs(1312, {	-- Vestments of Blind Absolution
 							["groups"] = {
-								i(147165), -- Head
-								i(147168), -- Shoulder
-								i(147163), -- Back
-								i(147167), -- Chest
-								i(147164), -- Hands
-								i(147736), -- Waist
-								i(147166), -- Legs
-								i(146987), -- Feet
+								i(147165),	-- Head
+								i(147168),	-- Shoulder
+								i(147163),	-- Back
+								i(147167),	-- Chest
+								i(147164),	-- Hands
+								i(147736),	-- Waist
+								i(147166),	-- Legs
+								i(146987),	-- Feet
 							},
 							["classes"] = { 5 },
 						}),
-						gs(1324, { -- Regalia of the Arcane Tempest
+						gs(1324, {	-- Regalia of the Arcane Tempest
 							["groups"] = {
-								i(147147), -- Head
-								i(147150), -- Shoulder
-								i(147145), -- Back
-								i(147149), -- Chest
-								i(147146), -- Hands
-								i(146998), -- Waist
-								i(147148), -- Legs
-								i(147422), -- Feet
+								i(147147),	-- Head
+								i(147150),	-- Shoulder
+								i(147145),	-- Back
+								i(147149),	-- Chest
+								i(147146),	-- Hands
+								i(146998),	-- Waist
+								i(147148),	-- Legs
+								i(147422),	-- Feet
 							},
 							["classes"] = { 8 },
 						}),
-						gs(1298, { -- Diabolic Raiment
+						gs(1298, {	-- Diabolic Raiment
 							["groups"] = {
-								i(147183), -- Head
-								i(147186), -- Shoulder
-								i(147181), -- Back
-								i(147185), -- Chest
-								i(147182), -- Hands
-								i(146999), -- Waist
-								i(147184), -- Legs
-								i(146986), -- Feet
+								i(147183),	-- Head
+								i(147186),	-- Shoulder
+								i(147181),	-- Back
+								i(147185),	-- Chest
+								i(147182),	-- Hands
+								i(146999),	-- Waist
+								i(147184),	-- Legs
+								i(146986),	-- Feet
 							},
 							["classes"] = { 9 },
 						}),
-						gs(1332, { -- Stormheart Raiment
+						gs(1332, {	-- Stormheart Raiment
 							["groups"] = {
-								i(147136), -- Head
-								i(147138), -- Shoulder
-								i(147134), -- Back
-								i(147133), -- Chest
-								i(147135), -- Hands
-								i(147040), -- Waist
-								i(147137), -- Legs
-								i(147738), -- Feet
+								i(147136),	-- Head
+								i(147138),	-- Shoulder
+								i(147134),	-- Back
+								i(147133),	-- Chest
+								i(147135),	-- Hands
+								i(147040),	-- Waist
+								i(147137),	-- Legs
+								i(147738),	-- Feet
 							},
 							["classes"] = { 11 },
 						}),
-						gs(1307, { -- Fanged Slayer's Armor
+						gs(1307, {	-- Fanged Slayer's Armor
 							["groups"] = {
-								i(147172), -- Head
-								i(147174), -- Shoulder
-								i(147170), -- Back
-								i(147169), -- Chest
-								i(147171), -- Hands
-								i(147039), -- Waist
-								i(147173), -- Legs
-								i(147030), -- Feet
+								i(147172),	-- Head
+								i(147174),	-- Shoulder
+								i(147170),	-- Back
+								i(147169),	-- Chest
+								i(147171),	-- Hands
+								i(147039),	-- Waist
+								i(147173),	-- Legs
+								i(147030),	-- Feet
 							},
 							["classes"] = { 4 },
 						}),
-						gs(1320, { -- Xuen's Battlegear
+						gs(1320, {	-- Xuen's Battlegear
 							["groups"] = {
-								i(147154), -- Head
-								i(147156), -- Shoulder
-								i(147152), -- Back
-								i(147151), -- Chest
-								i(147153), -- Hands
-								i(147425), -- Waist
-								i(147155), -- Legs
-								i(147424), -- Feet
+								i(147154),	-- Head
+								i(147156),	-- Shoulder
+								i(147152),	-- Back
+								i(147151),	-- Chest
+								i(147153),	-- Hands
+								i(147425),	-- Waist
+								i(147155),	-- Legs
+								i(147424),	-- Feet
 							},
 							["classes"] = { 10 },
 						}),
-						gs(1336, { -- Demonbane Armor
+						gs(1336, {	-- Demonbane Armor
 							["groups"] = {
-								i(147130), -- Head
-								i(147132), -- Shoulder
-								i(147128), -- Back
-								i(147127), -- Chest
-								i(147129), -- Hands
-								i(147347), -- Waist
-								i(147131), -- Legs
-								i(147029), -- Feet
+								i(147130),	-- Head
+								i(147132),	-- Shoulder
+								i(147128),	-- Back
+								i(147127),	-- Chest
+								i(147129),	-- Hands
+								i(147347),	-- Waist
+								i(147131),	-- Legs
+								i(147029),	-- Feet
 							},
 							["classes"] = { 12 },
 						}),
-						gs(1328, { -- Wildstalker Armor
+						gs(1328, {	-- Wildstalker Armor
 							["groups"] = {
-								i(147142), -- Head
-								i(147144), -- Shoulder
-								i(147140), -- Back
-								i(147139), -- Chest
-								i(147141), -- Hands
-								i(147055), -- Waist
-								i(147143), -- Legs
-								i(147046), -- Feet
+								i(147142),	-- Head
+								i(147144),	-- Shoulder
+								i(147140),	-- Back
+								i(147139),	-- Chest
+								i(147141),	-- Hands
+								i(147055),	-- Waist
+								i(147143),	-- Legs
+								i(147046),	-- Feet
 							},
 							["classes"] = { 3 },
 						}),
-						gs(1303, { -- Regalia of the Skybreaker
+						gs(1303, {	-- Regalia of the Skybreaker
 							["groups"] = {
-								i(147178), -- Head
-								i(147180), -- Shoulder
-								i(147176), -- Back
-								i(147175), -- Chest
-								i(147177), -- Hands
-								i(147056), -- Waist
-								i(147179), -- Legs
-								i(147045), -- Feet
+								i(147178),	-- Head
+								i(147180),	-- Shoulder
+								i(147176),	-- Back
+								i(147175),	-- Chest
+								i(147177),	-- Hands
+								i(147056),	-- Waist
+								i(147179),	-- Legs
+								i(147045),	-- Feet
 							},
 							["classes"] = { 7 },
 						}),
-						gs(1316, { -- Radiant Lightbringer Armor
+						gs(1316, {	-- Radiant Lightbringer Armor
 							["groups"] = {
-								i(147160), -- Head
-								i(147162), -- Shoulder
-								i(147158), -- Back
-								i(147157), -- Chest
-								i(147159), -- Hands
-								i(147071), -- Waist
-								i(147161), -- Legs
-								i(147060), -- Feet
+								i(147160),	-- Head
+								i(147162),	-- Shoulder
+								i(147158),	-- Back
+								i(147157),	-- Chest
+								i(147159),	-- Hands
+								i(147071),	-- Waist
+								i(147161),	-- Legs
+								i(147060),	-- Feet
 							},
 							["classes"] = { 2 },
 						}),
-						gs(1294, { -- Titantic Onslaught Armor
+						gs(1294, {	-- Titantic Onslaught Armor
 							["groups"] = {
-								i(147190), -- Head
-								i(147192), -- Shoulder
-								i(147188), -- Back
-								i(147187), -- Chest
-								i(147189), -- Hands
-								i(147429), -- Waist
-								i(147191), -- Legs
-								i(147059), -- Feet
+								i(147190),	-- Head
+								i(147192),	-- Shoulder
+								i(147188),	-- Back
+								i(147187),	-- Chest
+								i(147189),	-- Hands
+								i(147429),	-- Waist
+								i(147191),	-- Legs
+								i(147059),	-- Feet
 							},
 							["classes"] = { 1 },
 						}),
-						gs(1340, { -- Gravewarden Armaments
+						gs(1340, {	-- Gravewarden Armaments
 							["groups"] = {
-								i(147124), -- Head
-								i(147126), -- Shoulder
-								i(147122), -- Back
-								i(147121), -- Chest
-								i(147123), -- Hands
-								i(147072), -- Waist
-								i(147125), -- Legs
-								i(147428), -- Feet
+								i(147124),	-- Head
+								i(147126),	-- Shoulder
+								i(147122),	-- Back
+								i(147121),	-- Chest
+								i(147123),	-- Hands
+								i(147072),	-- Waist
+								i(147125),	-- Legs
+								i(147428),	-- Feet
 							},
 							["classes"] = { 6 },
 						}),
@@ -4272,172 +4272,172 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 				d(16, {  -- Mythic
 					
 					["groups"] =  {
-						gs(1310, { -- Vestments of Blind Absolution
+						gs(1310, {	-- Vestments of Blind Absolution
 							["groups"] = {
-								i(147165), -- Head
-								i(147168), -- Shoulder
-								i(147163), -- Back
-								i(147167), -- Chest
-								i(147164), -- Hands
-								i(147736), -- Waist
-								i(147166), -- Legs
-								i(146987), -- Feet
+								i(147165),	-- Head
+								i(147168),	-- Shoulder
+								i(147163),	-- Back
+								i(147167),	-- Chest
+								i(147164),	-- Hands
+								i(147736),	-- Waist
+								i(147166),	-- Legs
+								i(146987),	-- Feet
 							},
 							["classes"] = { 5 },
 						}),
-						gs(1322, { -- Regalia of the Arcane Tempest
+						gs(1322, {	-- Regalia of the Arcane Tempest
 							["groups"] = {
-								i(147147), -- Head
-								i(147150), -- Shoulder
-								i(147145), -- Back
-								i(147149), -- Chest
-								i(147146), -- Hands
-								i(146998), -- Waist
-								i(147148), -- Legs
-								i(147422), -- Feet
+								i(147147),	-- Head
+								i(147150),	-- Shoulder
+								i(147145),	-- Back
+								i(147149),	-- Chest
+								i(147146),	-- Hands
+								i(146998),	-- Waist
+								i(147148),	-- Legs
+								i(147422),	-- Feet
 							},
 							["classes"] = { 8 },
 						}),
-						gs(1299, { -- Diabolic Raiment
+						gs(1299, {	-- Diabolic Raiment
 							["groups"] = {
-								i(147183), -- Head
-								i(147186), -- Shoulder
-								i(147181), -- Back
-								i(147185), -- Chest
-								i(147182), -- Hands
-								i(146999), -- Waist
-								i(147184), -- Legs
-								i(146986), -- Feet
+								i(147183),	-- Head
+								i(147186),	-- Shoulder
+								i(147181),	-- Back
+								i(147185),	-- Chest
+								i(147182),	-- Hands
+								i(146999),	-- Waist
+								i(147184),	-- Legs
+								i(146986),	-- Feet
 							},
 							["classes"] = { 9 },
 						}),
-						gs(1330, { -- Stormheart Raiment
+						gs(1330, {	-- Stormheart Raiment
 							["groups"] = {
-								i(147136), -- Head
-								i(147138), -- Shoulder
-								i(147134), -- Back
-								i(147133), -- Chest
-								i(147135), -- Hands
-								i(147040), -- Waist
-								i(147137), -- Legs
-								i(147738), -- Feet
+								i(147136),	-- Head
+								i(147138),	-- Shoulder
+								i(147134),	-- Back
+								i(147133),	-- Chest
+								i(147135),	-- Hands
+								i(147040),	-- Waist
+								i(147137),	-- Legs
+								i(147738),	-- Feet
 							},
 							["classes"] = { 11 },
 						}),
-						gs(1308, { -- Fanged Slayer's Armor
+						gs(1308, {	-- Fanged Slayer's Armor
 							["groups"] = {
-								i(147172), -- Head
-								i(147174), -- Shoulder
-								i(147170), -- Back
-								i(147169), -- Chest
-								i(147171), -- Hands
-								i(147039), -- Waist
-								i(147173), -- Legs
-								i(147030), -- Feet
+								i(147172),	-- Head
+								i(147174),	-- Shoulder
+								i(147170),	-- Back
+								i(147169),	-- Chest
+								i(147171),	-- Hands
+								i(147039),	-- Waist
+								i(147173),	-- Legs
+								i(147030),	-- Feet
 							},
 							["classes"] = { 4 },
 						}),
-						gs(1318, { -- Xuen's Battlegear
+						gs(1318, {	-- Xuen's Battlegear
 							["groups"] = {
-								i(147154), -- Head
-								i(147156), -- Shoulder
-								i(147152), -- Back
-								i(147151), -- Chest
-								i(147153), -- Hands
-								i(147425), -- Waist
-								i(147155), -- Legs
-								i(147424), -- Feet
+								i(147154),	-- Head
+								i(147156),	-- Shoulder
+								i(147152),	-- Back
+								i(147151),	-- Chest
+								i(147153),	-- Hands
+								i(147425),	-- Waist
+								i(147155),	-- Legs
+								i(147424),	-- Feet
 							},
 							["classes"] = { 10 },
 						}),
-						gs(1334, { -- Demonbane Armor
+						gs(1334, {	-- Demonbane Armor
 							["groups"] = {
-								i(147130), -- Head
-								i(147132), -- Shoulder
-								i(147128), -- Back
-								i(147127), -- Chest
-								i(147129), -- Hands
-								i(147347), -- Waist
-								i(147131), -- Legs
-								i(147029), -- Feet
+								i(147130),	-- Head
+								i(147132),	-- Shoulder
+								i(147128),	-- Back
+								i(147127),	-- Chest
+								i(147129),	-- Hands
+								i(147347),	-- Waist
+								i(147131),	-- Legs
+								i(147029),	-- Feet
 							},
 							["classes"] = { 12 },
 						}),
-						gs(1326, { -- Wildstalker Armor
+						gs(1326, {	-- Wildstalker Armor
 							["groups"] = {
-								i(147142), -- Head
-								i(147144), -- Shoulder
-								i(147140), -- Back
-								i(147139), -- Chest
-								i(147141), -- Hands
-								i(147055), -- Waist
-								i(147143), -- Legs
-								i(147046), -- Feet
+								i(147142),	-- Head
+								i(147144),	-- Shoulder
+								i(147140),	-- Back
+								i(147139),	-- Chest
+								i(147141),	-- Hands
+								i(147055),	-- Waist
+								i(147143),	-- Legs
+								i(147046),	-- Feet
 							},
 							["classes"] = { 3 },
 						}),
-						gs(1304, { -- Regalia of the Skybreaker
+						gs(1304, {	-- Regalia of the Skybreaker
 							["groups"] = {
-								i(147178), -- Head
-								i(147180), -- Shoulder
-								i(147176), -- Back
-								i(147175), -- Chest
-								i(147177), -- Hands
-								i(147056), -- Waist
-								i(147179), -- Legs
-								i(147045), -- Feet
+								i(147178),	-- Head
+								i(147180),	-- Shoulder
+								i(147176),	-- Back
+								i(147175),	-- Chest
+								i(147177),	-- Hands
+								i(147056),	-- Waist
+								i(147179),	-- Legs
+								i(147045),	-- Feet
 							},
 							["classes"] = { 7 },
 						}),
-						gs(1314, { -- Radiant Lightbringer Armor
+						gs(1314, {	-- Radiant Lightbringer Armor
 							["groups"] = {
-								i(147160), -- Head
-								i(147162), -- Shoulder
-								i(147158), -- Back
-								i(147157), -- Chest
-								i(147159), -- Hands
-								i(147071), -- Waist
-								i(147161), -- Legs
-								i(147060), -- Feet
+								i(147160),	-- Head
+								i(147162),	-- Shoulder
+								i(147158),	-- Back
+								i(147157),	-- Chest
+								i(147159),	-- Hands
+								i(147071),	-- Waist
+								i(147161),	-- Legs
+								i(147060),	-- Feet
 							},
 							["classes"] = { 2 },
 						}),
-						gs(1295, { -- Titantic Onslaught Armor
+						gs(1295, {	-- Titantic Onslaught Armor
 							["groups"] = {
-								i(147190), -- Head
-								i(147192), -- Shoulder
-								i(147188), -- Back
-								i(147187), -- Chest
-								i(147189), -- Hands
-								i(147429), -- Waist
-								i(147191), -- Legs
-								i(147059), -- Feet
+								i(147190),	-- Head
+								i(147192),	-- Shoulder
+								i(147188),	-- Back
+								i(147187),	-- Chest
+								i(147189),	-- Hands
+								i(147429),	-- Waist
+								i(147191),	-- Legs
+								i(147059),	-- Feet
 							},
 							["classes"] = { 1 },
 						}),
-						gs(1338, { -- Gravewarden Armaments
+						gs(1338, {	-- Gravewarden Armaments
 							["groups"] = {
-								i(147124), -- Head
-								i(147126), -- Shoulder
-								i(147122), -- Back
-								i(147121), -- Chest
-								i(147123), -- Hands
-								i(147072), -- Waist
-								i(147125), -- Legs
-								i(147428), -- Feet
+								i(147124),	-- Head
+								i(147126),	-- Shoulder
+								i(147122),	-- Back
+								i(147121),	-- Chest
+								i(147123),	-- Hands
+								i(147072),	-- Waist
+								i(147125),	-- Legs
+								i(147428),	-- Feet
 							},
 							["classes"] = { 6 },
 						}),
 					},
 				}),
 			},
-			["achievementID"] = 11760, -- Retro Trend
+			["achievementID"] = 11760,	-- Retro Trend
 		}),
-		n(-3160, { -- Tier 21
+		n(-3160, {	-- Tier 21
 			["groups"]  = {
-				d(17, { -- Raid Finder
+				d(17, {	-- Raid Finder
 					["groups"] = {
-						gs(1503, { -- Gilded Seraph's Raiment		
+						gs(1503, {	-- Gilded Seraph's Raiment		
 							i(152156),	-- Gilded Seraph's Crown
 							i(152159),	-- Gilded Seraph's Amice
 							i(152154),	-- Gilded Seraph's Drape
@@ -4448,7 +4448,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 							i(152157),	-- Gilded Seraph's Leggings
 							i(151940),	-- Sandalss of the the Reborn Colossus
 						}),		
-						gs(1491, { -- Runebound Regalia		
+						gs(1491, {	-- Runebound Regalia		
 							i(152138),	-- Runebound Collar
 							i(152141),	-- Runebound Mantle
 							i(152136),	-- Runebound Cape
@@ -4459,7 +4459,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 							i(152139),	-- Runebound Leggings
 							i(151939),	-- Whisperstep Runners
 						}),		
-						gs(1515, { -- Grim Inquisitor's Regalia		
+						gs(1515, {	-- Grim Inquisitor's Regalia		
 							i(152174),	-- Grim Inquisitor's Death Mask
 							i(152177),	-- Grim Inquisitor's Shoulderguards
 							i(152172),	-- Grim Inquisitor's Cloak
@@ -4470,7 +4470,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 							i(152175),	-- Grim Inquisitor's Leggings
 							i(151945),	-- Lady Dacidion's Silk Slippers
 						}),		
-						gs(1483, { -- Bearmantle Battlegear		
+						gs(1483, {	-- Bearmantle Battlegear		
 							i(152127),	-- Bearmantle Headdress
 							i(152129),	-- Bearmantle Shoulders
 							i(152125),	-- Bearmantle Cloak
@@ -4481,7 +4481,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 							i(152128),	-- Bearmantle Legguards
 							i(151983),	-- Vicious Flamepaws
 						}),		
-						gs(1507, { -- Regalia of the Dashing Scoundrel		
+						gs(1507, {	-- Regalia of the Dashing Scoundrel		
 							i(152163),	-- Cavalier Hat of the Dashing Scoundrel
 							i(152165),	-- Shoulderpads of the Dashing Scoundrel
 							i(152161),	-- Cloak of the Dashing Scoundrel
@@ -4492,7 +4492,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 							i(152164),	-- Pants of the Dashing Scoundrel
 							i(152684),	-- Greatboots of the Searing Tempest
 						}),		
-						gs(1495, { -- Chi'Ji's Battlegear		
+						gs(1495, {	-- Chi'Ji's Battlegear		
 							i(152145),	-- Douli of Chi'Ji
 							i(152147),	-- Meditation Spheres of Chi'Ji
 							i(152143),	-- Cloak of Chi'Ji
@@ -4503,7 +4503,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 							i(152146),	-- Leggings of Chi'Ji
 							i(151981),	-- Life-Bearing Footpads
 						}),		
-						gs(1479, { -- Felreaper Vestments		
+						gs(1479, {	-- Felreaper Vestments		
 							i(152121),	-- Felreaper Hood
 							i(152123),	-- Felreaper Spaulders
 							i(152119),	-- Felreaper Drape
@@ -4514,7 +4514,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 							i(152122),	-- Felreaper Leggings
 							i(152414),	-- Depraved Machinist's Footpads
 						}),		
-						gs(1487, { -- Serpentstalker Guise		
+						gs(1487, {	-- Serpentstalker Guise		
 							i(152133),	-- Serpentstalker Helmet
 							i(152135),	-- Serpentstalker Mantle
 							i(152131),	-- Serpentstalker Drape
@@ -4525,7 +4525,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 							i(152134),	-- Serpentstalker Legguards
 							i(151996),	-- Deft Soulhunter's Sabatons
 						}),		
-						gs(1511, { -- Garb of Venerated Spirits		
+						gs(1511, {	-- Garb of Venerated Spirits		
 							i(152169),	-- Headdress of Venerated Spirits
 							i(152171),	-- Pauldrons of Venerated Spirits
 							i(152167),	-- Drape of Venerated Spirits
@@ -4536,7 +4536,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 							i(152170),	-- Leggings of Venerated Spirits
 							i(152359),	-- Vile Drifter's Footpads
 						}),		
-						gs(1499, { -- Light's Vanguard Battleplate		
+						gs(1499, {	-- Light's Vanguard Battleplate		
 							i(152151),	-- Light's Vanguard Helm
 							i(152153),	-- Light's Vanguard Shoulderplates
 							i(152149),	-- Light's Vanguard Greatcloak
@@ -4547,7 +4547,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 							i(152152),	-- Light's Vanguard Legplates
 							i(152011),	-- Eredar Warcouncil Sabatons
 						}),		
-						gs(1519, { -- Juggernaut Battlegear		
+						gs(1519, {	-- Juggernaut Battlegear		
 							i(152181),	-- Juggernaut Helm
 							i(152183),	-- Juggernaut Pauldrons
 							i(152179),	-- Juggernaut Cloak
@@ -4558,7 +4558,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 							i(152182),	-- Juggernaut Legplates
 							i(152010),	-- Burning Coven Sabatons
 						}),		
-						gs(1475, { -- Dreadwake Armor		
+						gs(1475, {	-- Dreadwake Armor		
 							i(152115),	-- Dreadwake Helm
 							i(152117),	-- Dreadwake Pauldrons
 							i(152113),	-- Dreadwake Greatcloak
@@ -4571,9 +4571,9 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 						}),		
 					},
 				}),
-				d(14, { -- Normal
+				d(14, {	-- Normal
 					["groups"] = {
-						gs(1500, { -- Gilded Seraph's Raiment		
+						gs(1500, {	-- Gilded Seraph's Raiment		
 							i(152156),	-- Gilded Seraph's Crown
 							i(152159),	-- Gilded Seraph's Amice
 							i(152154),	-- Gilded Seraph's Drape
@@ -4584,7 +4584,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 							i(152157),	-- Gilded Seraph's Leggings
 							i(151940),	-- Sandalss of the the Reborn Colossus
 						}),		
-						gs(1488, { -- Runebound Regalia		
+						gs(1488, {	-- Runebound Regalia		
 							i(152138),	-- Runebound Collar
 							i(152141),	-- Runebound Mantle
 							i(152136),	-- Runebound Cape
@@ -4595,7 +4595,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 							i(152139),	-- Runebound Leggings
 							i(151939),	-- Whisperstep Runners
 						}),		
-						gs(1512, { -- Grim Inquisitor's Regalia		
+						gs(1512, {	-- Grim Inquisitor's Regalia		
 							i(152174),	-- Grim Inquisitor's Death Mask
 							i(152177),	-- Grim Inquisitor's Shoulderguards
 							i(152172),	-- Grim Inquisitor's Cloak
@@ -4606,7 +4606,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 							i(152175),	-- Grim Inquisitor's Leggings
 							i(151945),	-- Lady Dacidion's Silk Slippers
 						}),		
-						gs(1480, { -- Bearmantle Battlegear		
+						gs(1480, {	-- Bearmantle Battlegear		
 							i(152127),	-- Bearmantle Headdress
 							i(152129),	-- Bearmantle Shoulders
 							i(152125),	-- Bearmantle Cloak
@@ -4617,7 +4617,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 							i(152128),	-- Bearmantle Legguards
 							i(151983),	-- Vicious Flamepaws
 						}),		
-						gs(1504, { -- Regalia of the Dashing Scoundrel		
+						gs(1504, {	-- Regalia of the Dashing Scoundrel		
 							i(152163),	-- Cavalier Hat of the Dashing Scoundrel
 							i(152165),	-- Shoulderpads of the Dashing Scoundrel
 							i(152161),	-- Cloak of the Dashing Scoundrel
@@ -4628,7 +4628,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 							i(152164),	-- Pants of the Dashing Scoundrel
 							i(152684),	-- Greatboots of the Searing Tempest
 						}),		
-						gs(1492, { -- Chi'Ji's Battlegear		
+						gs(1492, {	-- Chi'Ji's Battlegear		
 							i(152145),	-- Douli of Chi'Ji
 							i(152147),	-- Meditation Spheres of Chi'Ji
 							i(152143),	-- Cloak of Chi'Ji
@@ -4639,7 +4639,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 							i(152146),	-- Leggings of Chi'Ji
 							i(151981),	-- Life-Bearing Footpads
 						}),		
-						gs(1476, { -- Felreaper Vestments		
+						gs(1476, {	-- Felreaper Vestments		
 							i(152121),	-- Felreaper Hood
 							i(152123),	-- Felreaper Spaulders
 							i(152119),	-- Felreaper Drape
@@ -4650,7 +4650,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 							i(152122),	-- Felreaper Leggings
 							i(152414),	-- Depraved Machinist's Footpads
 						}),		
-						gs(1484, { -- Serpentstalker Guise		
+						gs(1484, {	-- Serpentstalker Guise		
 							i(152133),	-- Serpentstalker Helmet
 							i(152135),	-- Serpentstalker Mantle
 							i(152131),	-- Serpentstalker Drape
@@ -4661,7 +4661,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 							i(152134),	-- Serpentstalker Legguards
 							i(151996),	-- Deft Soulhunter's Sabatons
 						}),		
-						gs(1508, { -- Garb of Venerated Spirits		
+						gs(1508, {	-- Garb of Venerated Spirits		
 							i(152169),	-- Headdress of Venerated Spirits
 							i(152171),	-- Pauldrons of Venerated Spirits
 							i(152167),	-- Drape of Venerated Spirits
@@ -4672,7 +4672,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 							i(152170),	-- Leggings of Venerated Spirits
 							i(152359),	-- Vile Drifter's Footpads
 						}),		
-						gs(1496, { -- Light's Vanguard Battleplate		
+						gs(1496, {	-- Light's Vanguard Battleplate		
 							i(152151),	-- Light's Vanguard Helm
 							i(152153),	-- Light's Vanguard Shoulderplates
 							i(152149),	-- Light's Vanguard Greatcloak
@@ -4683,7 +4683,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 							i(152152),	-- Light's Vanguard Legplates
 							i(152011),	-- Eredar Warcouncil Sabatons
 						}),		
-						gs(1516, { -- Juggernaut Battlegear		
+						gs(1516, {	-- Juggernaut Battlegear		
 							i(152181),	-- Juggernaut Helm
 							i(152183),	-- Juggernaut Pauldrons
 							i(152179),	-- Juggernaut Cloak
@@ -4694,7 +4694,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 							i(152182),	-- Juggernaut Legplates
 							i(152010),	-- Burning Coven Sabatons
 						}),		
-						gs(1472, { -- Dreadwake Armor		
+						gs(1472, {	-- Dreadwake Armor		
 							i(152115),	-- Dreadwake Helm
 							i(152117),	-- Dreadwake Pauldrons
 							i(152113),	-- Dreadwake Greatcloak
@@ -4707,9 +4707,9 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 						}),		
 					},
 				}),
-				d(15, { -- Heroic
+				d(15, {	-- Heroic
 					["groups"] = {
-						gs(1501, { -- Gilded Seraph's Raiment		
+						gs(1501, {	-- Gilded Seraph's Raiment		
 							i(152156),	-- Gilded Seraph's Crown
 							i(152159),	-- Gilded Seraph's Amice
 							i(152154),	-- Gilded Seraph's Drape
@@ -4720,7 +4720,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 							i(152157),	-- Gilded Seraph's Leggings
 							i(151940),	-- Sandalss of the the Reborn Colossus
 						}),		
-						gs(1489, { -- Runebound Regalia		
+						gs(1489, {	-- Runebound Regalia		
 							i(152138),	-- Runebound Collar
 							i(152141),	-- Runebound Mantle
 							i(152136),	-- Runebound Cape
@@ -4731,7 +4731,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 							i(152139),	-- Runebound Leggings
 							i(151939),	-- Whisperstep Runners
 						}),		
-						gs(1513, { -- Grim Inquisitor's Regalia		
+						gs(1513, {	-- Grim Inquisitor's Regalia		
 							i(152174),	-- Grim Inquisitor's Death Mask
 							i(152177),	-- Grim Inquisitor's Shoulderguards
 							i(152172),	-- Grim Inquisitor's Cloak
@@ -4742,7 +4742,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 							i(152175),	-- Grim Inquisitor's Leggings
 							i(151945),	-- Lady Dacidion's Silk Slippers
 						}),		
-						gs(1481, { -- Bearmantle Battlegear		
+						gs(1481, {	-- Bearmantle Battlegear		
 							i(152127),	-- Bearmantle Headdress
 							i(152129),	-- Bearmantle Shoulders
 							i(152125),	-- Bearmantle Cloak
@@ -4753,7 +4753,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 							i(152128),	-- Bearmantle Legguards
 							i(151983),	-- Vicious Flamepaws
 						}),		
-						gs(1505, { -- Regalia of the Dashing Scoundrel		
+						gs(1505, {	-- Regalia of the Dashing Scoundrel		
 							i(152163),	-- Cavalier Hat of the Dashing Scoundrel
 							i(152165),	-- Shoulderpads of the Dashing Scoundrel
 							i(152161),	-- Cloak of the Dashing Scoundrel
@@ -4764,7 +4764,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 							i(152164),	-- Pants of the Dashing Scoundrel
 							i(152684),	-- Greatboots of the Searing Tempest
 						}),		
-						gs(1493, { -- Chi'Ji's Battlegear		
+						gs(1493, {	-- Chi'Ji's Battlegear		
 							i(152145),	-- Douli of Chi'Ji
 							i(152147),	-- Meditation Spheres of Chi'Ji
 							i(152143),	-- Cloak of Chi'Ji
@@ -4775,7 +4775,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 							i(152146),	-- Leggings of Chi'Ji
 							i(151981),	-- Life-Bearing Footpads
 						}),		
-						gs(1477, { -- Felreaper Vestments		
+						gs(1477, {	-- Felreaper Vestments		
 							i(152121),	-- Felreaper Hood
 							i(152123),	-- Felreaper Spaulders
 							i(152119),	-- Felreaper Drape
@@ -4786,7 +4786,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 							i(152122),	-- Felreaper Leggings
 							i(152414),	-- Depraved Machinist's Footpads
 						}),		
-						gs(1485, { -- Serpentstalker Guise		
+						gs(1485, {	-- Serpentstalker Guise		
 							i(152133),	-- Serpentstalker Helmet
 							i(152135),	-- Serpentstalker Mantle
 							i(152131),	-- Serpentstalker Drape
@@ -4797,7 +4797,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 							i(152134),	-- Serpentstalker Legguards
 							i(151996),	-- Deft Soulhunter's Sabatons
 						}),		
-						gs(1509, { -- Garb of Venerated Spirits		
+						gs(1509, {	-- Garb of Venerated Spirits		
 							i(152169),	-- Headdress of Venerated Spirits
 							i(152171),	-- Pauldrons of Venerated Spirits
 							i(152167),	-- Drape of Venerated Spirits
@@ -4808,7 +4808,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 							i(152170),	-- Leggings of Venerated Spirits
 							i(152359),	-- Vile Drifter's Footpads
 						}),		
-						gs(1497, { -- Light's Vanguard Battleplate		
+						gs(1497, {	-- Light's Vanguard Battleplate		
 							i(152151),	-- Light's Vanguard Helm
 							i(152153),	-- Light's Vanguard Shoulderplates
 							i(152149),	-- Light's Vanguard Greatcloak
@@ -4819,7 +4819,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 							i(152152),	-- Light's Vanguard Legplates
 							i(152011),	-- Eredar Warcouncil Sabatons
 						}),		
-						gs(1517, { -- Juggernaut Battlegear		
+						gs(1517, {	-- Juggernaut Battlegear		
 							i(152181),	-- Juggernaut Helm
 							i(152183),	-- Juggernaut Pauldrons
 							i(152179),	-- Juggernaut Cloak
@@ -4830,7 +4830,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 							i(152182),	-- Juggernaut Legplates
 							i(152010),	-- Burning Coven Sabatons
 						}),		
-						gs(1473, { -- Dreadwake Armor		
+						gs(1473, {	-- Dreadwake Armor		
 							i(152115),	-- Dreadwake Helm
 							i(152117),	-- Dreadwake Pauldrons
 							i(152113),	-- Dreadwake Greatcloak
@@ -4843,9 +4843,9 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 						}),		
 					},
 				}),
-				d(16, { -- Mythic
+				d(16, {	-- Mythic
 					["groups"] = {
-						gs(1502, { -- Gilded Seraph's Raiment		
+						gs(1502, {	-- Gilded Seraph's Raiment		
 							i(152156),	-- Gilded Seraph's Crown
 							i(152159),	-- Gilded Seraph's Amice
 							i(152154),	-- Gilded Seraph's Drape
@@ -4856,7 +4856,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 							i(152157),	-- Gilded Seraph's Leggings
 							i(151940),	-- Sandalss of the the Reborn Colossus
 						}),		
-						gs(1490, { -- Runebound Regalia		
+						gs(1490, {	-- Runebound Regalia		
 							i(152138),	-- Runebound Collar
 							i(152141),	-- Runebound Mantle
 							i(152136),	-- Runebound Cape
@@ -4867,7 +4867,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 							i(152139),	-- Runebound Leggings
 							i(151939),	-- Whisperstep Runners
 						}),		
-						gs(1514, { -- Grim Inquisitor's Regalia		
+						gs(1514, {	-- Grim Inquisitor's Regalia		
 							i(152174),	-- Grim Inquisitor's Death Mask
 							i(152177),	-- Grim Inquisitor's Shoulderguards
 							i(152172),	-- Grim Inquisitor's Cloak
@@ -4878,7 +4878,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 							i(152175),	-- Grim Inquisitor's Leggings
 							i(151945),	-- Lady Dacidion's Silk Slippers
 						}),		
-						gs(1482, { -- Bearmantle Battlegear		
+						gs(1482, {	-- Bearmantle Battlegear		
 							i(152127),	-- Bearmantle Headdress
 							i(152129),	-- Bearmantle Shoulders
 							i(152125),	-- Bearmantle Cloak
@@ -4889,7 +4889,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 							i(152128),	-- Bearmantle Legguards
 							i(151983),	-- Vicious Flamepaws
 						}),		
-						gs(1506, { -- Regalia of the Dashing Scoundrel		
+						gs(1506, {	-- Regalia of the Dashing Scoundrel		
 							i(152163),	-- Cavalier Hat of the Dashing Scoundrel
 							i(152165),	-- Shoulderpads of the Dashing Scoundrel
 							i(152161),	-- Cloak of the Dashing Scoundrel
@@ -4900,7 +4900,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 							i(152164),	-- Pants of the Dashing Scoundrel
 							i(152684),	-- Greatboots of the Searing Tempest
 						}),		
-						gs(1494, { -- Chi'Ji's Battlegear		
+						gs(1494, {	-- Chi'Ji's Battlegear		
 							i(152145),	-- Douli of Chi'Ji
 							i(152147),	-- Meditation Spheres of Chi'Ji
 							i(152143),	-- Cloak of Chi'Ji
@@ -4911,7 +4911,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 							i(152146),	-- Leggings of Chi'Ji
 							i(151981),	-- Life-Bearing Footpads
 						}),		
-						gs(1478, { -- Felreaper Vestments		
+						gs(1478, {	-- Felreaper Vestments		
 							i(152121),	-- Felreaper Hood
 							i(152123),	-- Felreaper Spaulders
 							i(152119),	-- Felreaper Drape
@@ -4922,7 +4922,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 							i(152122),	-- Felreaper Leggings
 							i(152414),	-- Depraved Machinist's Footpads
 						}),		
-						gs(1486, { -- Serpentstalker Guise		
+						gs(1486, {	-- Serpentstalker Guise		
 							i(152133),	-- Serpentstalker Helmet
 							i(152135),	-- Serpentstalker Mantle
 							i(152131),	-- Serpentstalker Drape
@@ -4933,7 +4933,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 							i(152134),	-- Serpentstalker Legguards
 							i(151996),	-- Deft Soulhunter's Sabatons
 						}),		
-						gs(1510, { -- Garb of Venerated Spirits		
+						gs(1510, {	-- Garb of Venerated Spirits		
 							i(152169),	-- Headdress of Venerated Spirits
 							i(152171),	-- Pauldrons of Venerated Spirits
 							i(152167),	-- Drape of Venerated Spirits
@@ -4944,7 +4944,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 							i(152170),	-- Leggings of Venerated Spirits
 							i(152359),	-- Vile Drifter's Footpads
 						}),		
-						gs(1498, { -- Light's Vanguard Battleplate		
+						gs(1498, {	-- Light's Vanguard Battleplate		
 							i(152151),	-- Light's Vanguard Helm
 							i(152153),	-- Light's Vanguard Shoulderplates
 							i(152149),	-- Light's Vanguard Greatcloak
@@ -4955,7 +4955,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 							i(152152),	-- Light's Vanguard Legplates
 							i(152011),	-- Eredar Warcouncil Sabatons
 						}),		
-						gs(1518, { -- Juggernaut Battlegear		
+						gs(1518, {	-- Juggernaut Battlegear		
 							i(152181),	-- Juggernaut Helm
 							i(152183),	-- Juggernaut Pauldrons
 							i(152179),	-- Juggernaut Cloak
@@ -4966,7 +4966,7 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 							i(152182),	-- Juggernaut Legplates
 							i(152010),	-- Burning Coven Sabatons
 						}),		
-						gs(1474, { -- Dreadwake Armor		
+						gs(1474, {	-- Dreadwake Armor		
 							i(152115),	-- Dreadwake Helm
 							i(152117),	-- Dreadwake Pauldrons
 							i(152113),	-- Dreadwake Greatcloak
@@ -4980,196 +4980,196 @@ Finish adding unobtainable flags once Unobtainables files is cleaned out
 					},
 				}),
 			},
-			["achievementID"] = 12020, -- Argussy Up
+			["achievementID"] = 12020,	-- Argussy Up
 		}),
-		gsh(1638, { -- Uldir
+		gsh(1638, {	-- Uldir
 			["groups"] = {
-				d(17, { -- Raid Finder [9, 9, 9, 9, 36]
-					gs(1641, { -- Eternal Curator's Vestment
-						i(160719), -- Visage of the Ascended Prophet
-						i(160726), -- Amice of Corrupting Horror
-						i(160642), -- Cloak of Rippling Whispers
-						i(160614), -- Robes of the Unraveler
-						i(161071), -- Bloody Experimenter's Wraps
-						i(160612), -- Spellbound Specimen Handlers
-						i(160734), -- Cord of Animated Contagion
-						i(160615), -- Leggings of Lingering Infestation
-						i(160714), -- Volatile Walkers
+				d(17, {	-- Raid Finder [9, 9, 9, 9, 36]
+					gs(1641, {	-- Eternal Curator's Vestment
+						i(160719),	-- Visage of the Ascended Prophet
+						i(160726),	-- Amice of Corrupting Horror
+						i(160642),	-- Cloak of Rippling Whispers
+						i(160614),	-- Robes of the Unraveler
+						i(161071),	-- Bloody Experimenter's Wraps
+						i(160612),	-- Spellbound Specimen Handlers
+						i(160734),	-- Cord of Animated Contagion
+						i(160615),	-- Leggings of Lingering Infestation
+						i(160714),	-- Volatile Walkers
 					}),
-					gs(1645, { -- Eternal Curator's Garb
-						i(160623), -- Hood of Pestilent Ichor
-						i(160620), -- Usurper's Bloodcaked Spaulders
-						i(160643), -- Fetid Horror's Tanglecloak
-						i(160728), -- Tunic of the Sanguine Deity
-						i(161072), -- Splatterguards
-						i(161075), -- Antiseptic Specimen Handlers
-						i(160622), -- Bloodstorm Buckle
-						i(160625), -- Pathogenic Legwraps
-						i(160624), -- Quarantine Protocol Treads
+					gs(1645, {	-- Eternal Curator's Garb
+						i(160623),	-- Hood of Pestilent Ichor
+						i(160620),	-- Usurper's Bloodcaked Spaulders
+						i(160643),	-- Fetid Horror's Tanglecloak
+						i(160728),	-- Tunic of the Sanguine Deity
+						i(161072),	-- Splatterguards
+						i(161075),	-- Antiseptic Specimen Handlers
+						i(160622),	-- Bloodstorm Buckle
+						i(160625),	-- Pathogenic Legwraps
+						i(160624),	-- Quarantine Protocol Treads
 					}),
-					gs(1649, { -- Eternal Curator's Chains
-						i(160630), -- Crest of the Undying Visionary
-						i(160632), -- Flame-Sterilized Spaulders
-						i(160644), -- Plasma-Spattered Greatcloak
-						i(160627), -- Chainvest of Assured Quality
-						i(160629), -- Rubywrought Sparkguards
-						i(160626), -- Gloves of Involuntary Amputation
-						i(160724), -- Cincture of Profane Deeds
-						i(160631), -- Legguards of Coalescing Plasma
-						i(160628), -- Fused Monstrosity Stompers
+					gs(1649, {	-- Eternal Curator's Chains
+						i(160630),	-- Crest of the Undying Visionary
+						i(160632),	-- Flame-Sterilized Spaulders
+						i(160644),	-- Plasma-Spattered Greatcloak
+						i(160627),	-- Chainvest of Assured Quality
+						i(160629),	-- Rubywrought Sparkguards
+						i(160626),	-- Gloves of Involuntary Amputation
+						i(160724),	-- Cincture of Profane Deeds
+						i(160631),	-- Legguards of Coalescing Plasma
+						i(160628),	-- Fused Monstrosity Stompers
 					}),
-					gs(1653, { -- Eternal Curator's Proctorate
-						i(160634), -- Gridrunner Galea
-						i(160641), -- Chitinspine Pauldrons
-						i(164385, { -- Desert Nomad's Wrap
-							["modID"] = 3, -- Apply custom mod here as this drops from World Boss, not LFR mod  d14 = m3
+					gs(1653, {	-- Eternal Curator's Proctorate
+						i(160634),	-- Gridrunner Galea
+						i(160641),	-- Chitinspine Pauldrons
+						i(164385, {	-- Desert Nomad's Wrap
+							["modID"] = 3,	-- Apply custom mod here as this drops from World Boss, not LFR mod  d14 = m3
 						}),
-						i(160636), -- Chestguard of Virulent Mutagens
-						i(160637), -- Crimson Colossus Armguards
-						i(160635), -- Waste Disposal Crushers
-						i(160638), -- Decontaminator's Greatbelt
-						i(160639), -- Greaves of Unending Vigil
-						i(160640), -- Warboots of Absolute Eradication
+						i(160636),	-- Chestguard of Virulent Mutagens
+						i(160637),	-- Crimson Colossus Armguards
+						i(160635),	-- Waste Disposal Crushers
+						i(160638),	-- Decontaminator's Greatbelt
+						i(160639),	-- Greaves of Unending Vigil
+						i(160640),	-- Warboots of Absolute Eradication
 					}),
 				}),
-				d(14, { -- Normal [9, 9, 9, 9, 36]
-					gs(1638, { -- Eternal Curator's Vestment
-						i(160719), -- Visage of the Ascended Prophet
-						i(160726), -- Amice of Corrupting Horror
-						i(160642), -- Cloak of Rippling Whispers
-						i(160614), -- Robes of the Unraveler
-						i(161071), -- Bloody Experimenter's Wraps
-						i(160612), -- Spellbound Specimen Handlers
-						i(160734), -- Cord of Animated Contagion
-						i(160615), -- Leggings of Lingering Infestation
-						i(160714), -- Volatile Walkers
+				d(14, {	-- Normal [9, 9, 9, 9, 36]
+					gs(1638, {	-- Eternal Curator's Vestment
+						i(160719),	-- Visage of the Ascended Prophet
+						i(160726),	-- Amice of Corrupting Horror
+						i(160642),	-- Cloak of Rippling Whispers
+						i(160614),	-- Robes of the Unraveler
+						i(161071),	-- Bloody Experimenter's Wraps
+						i(160612),	-- Spellbound Specimen Handlers
+						i(160734),	-- Cord of Animated Contagion
+						i(160615),	-- Leggings of Lingering Infestation
+						i(160714),	-- Volatile Walkers
 					}),
-					gs(1642, { -- Eternal Curator's Garb
-						i(160623), -- Hood of Pestilent Ichor
-						i(160620), -- Usurper's Bloodcaked Spaulders
-						i(160643), -- Fetid Horror's Tanglecloak
-						i(160728), -- Tunic of the Sanguine Deity
-						i(161072), -- Splatterguards
-						i(161075), -- Antiseptic Specimen Handlers
-						i(160622), -- Bloodstorm Buckle
-						i(160625), -- Pathogenic Legwraps
-						i(160624), -- Quarantine Protocol Treads
+					gs(1642, {	-- Eternal Curator's Garb
+						i(160623),	-- Hood of Pestilent Ichor
+						i(160620),	-- Usurper's Bloodcaked Spaulders
+						i(160643),	-- Fetid Horror's Tanglecloak
+						i(160728),	-- Tunic of the Sanguine Deity
+						i(161072),	-- Splatterguards
+						i(161075),	-- Antiseptic Specimen Handlers
+						i(160622),	-- Bloodstorm Buckle
+						i(160625),	-- Pathogenic Legwraps
+						i(160624),	-- Quarantine Protocol Treads
 					}),
-					gs(1646, { -- Eternal Curator's Chains
-						i(160630), -- Crest of the Undying Visionary
-						i(160632), -- Flame-Sterilized Spaulders
-						i(160644), -- Plasma-Spattered Greatcloak
-						i(160627), -- Chainvest of Assured Quality
-						i(160629), -- Rubywrought Sparkguards
-						i(160626), -- Gloves of Involuntary Amputation
-						i(160724), -- Cincture of Profane Deeds
-						i(160631), -- Legguards of Coalescing Plasma
-						i(160628), -- Fused Monstrosity Stompers
+					gs(1646, {	-- Eternal Curator's Chains
+						i(160630),	-- Crest of the Undying Visionary
+						i(160632),	-- Flame-Sterilized Spaulders
+						i(160644),	-- Plasma-Spattered Greatcloak
+						i(160627),	-- Chainvest of Assured Quality
+						i(160629),	-- Rubywrought Sparkguards
+						i(160626),	-- Gloves of Involuntary Amputation
+						i(160724),	-- Cincture of Profane Deeds
+						i(160631),	-- Legguards of Coalescing Plasma
+						i(160628),	-- Fused Monstrosity Stompers
 					}),
-					gs(1650, { -- Eternal Curator's Proctorate
-						i(160634), -- Gridrunner Galea
-						i(160641), -- Chitinspine Pauldrons
-						i(164384), -- Windswept Dinorider's Cape
-						i(160636), -- Chestguard of Virulent Mutagens
-						i(160637), -- Crimson Colossus Armguards
-						i(160635), -- Waste Disposal Crushers
-						i(160638), -- Decontaminator's Greatbelt
-						i(160639), -- Greaves of Unending Vigil
-						i(160640), -- Warboots of Absolute Eradication
-					}),
-				}),
-				d(15, { -- Heroic [9, 9, 9, 8, 35]
-					gs(1639, { -- Eternal Curator's Vestment
-						i(160719), -- Visage of the Ascended Prophet
-						i(160726), -- Amice of Corrupting Horror
-						i(160642), -- Cloak of Rippling Whispers
-						i(160614), -- Robes of the Unraveler
-						i(161071), -- Bloody Experimenter's Wraps
-						i(160612), -- Spellbound Specimen Handlers
-						i(160734), -- Cord of Animated Contagion
-						i(160615), -- Leggings of Lingering Infestation
-						i(160714), -- Volatile Walkers
-					}),
-					gs(1643, { -- Eternal Curator's Garb
-						i(160623), -- Hood of Pestilent Ichor
-						i(160620), -- Usurper's Bloodcaked Spaulders
-						i(160643), -- Fetid Horror's Tanglecloak
-						i(160728), -- Tunic of the Sanguine Deity
-						i(161072), -- Splatterguards
-						i(161075), -- Antiseptic Specimen Handlers
-						i(160622), -- Bloodstorm Buckle
-						i(160625), -- Pathogenic Legwraps
-						i(160624), -- Quarantine Protocol Treads
-					}),
-					gs(1647, { -- Eternal Curator's Chains
-						i(160630), -- Crest of the Undying Visionary
-						i(160632), -- Flame-Sterilized Spaulders
-						i(160644), -- Plasma-Spattered Greatcloak
-						i(160627), -- Chainvest of Assured Quality
-						i(160629), -- Rubywrought Sparkguards
-						i(160626), -- Gloves of Involuntary Amputation
-						i(160724), -- Cincture of Profane Deeds
-						i(160631), -- Legguards of Coalescing Plasma
-						i(160628), -- Fused Monstrosity Stompers
-					}),
-					gs(1651, { -- Eternal Curator's Proctorate
-						i(160634), -- Gridrunner Galea
-						i(160641), -- Chitinspine Pauldrons
-						i(160636), -- Chestguard of Virulent Mutagens
-						i(160637), -- Crimson Colossus Armguards
-						i(160635), -- Waste Disposal Crushers
-						i(160638), -- Decontaminator's Greatbelt
-						i(160639), -- Greaves of Unending Vigil
-						i(160640), -- Warboots of Absolute Eradication
+					gs(1650, {	-- Eternal Curator's Proctorate
+						i(160634),	-- Gridrunner Galea
+						i(160641),	-- Chitinspine Pauldrons
+						i(164384),	-- Windswept Dinorider's Cape
+						i(160636),	-- Chestguard of Virulent Mutagens
+						i(160637),	-- Crimson Colossus Armguards
+						i(160635),	-- Waste Disposal Crushers
+						i(160638),	-- Decontaminator's Greatbelt
+						i(160639),	-- Greaves of Unending Vigil
+						i(160640),	-- Warboots of Absolute Eradication
 					}),
 				}),
-				d(16, { -- Mythic [9, 9, 9, 8, 35]
-					gs(1640, { -- Eternal Curator's Vestment
-						i(160719), -- Visage of the Ascended Prophet
-						i(160726), -- Amice of Corrupting Horror
-						i(160642), -- Cloak of Rippling Whispers
-						i(160614), -- Robes of the Unraveler
-						i(161071), -- Bloody Experimenter's Wraps
-						i(160612), -- Spellbound Specimen Handlers
-						i(160734), -- Cord of Animated Contagion
-						i(160615), -- Leggings of Lingering Infestation
-						i(160714), -- Volatile Walkers
+				d(15, {	-- Heroic [9, 9, 9, 8, 35]
+					gs(1639, {	-- Eternal Curator's Vestment
+						i(160719),	-- Visage of the Ascended Prophet
+						i(160726),	-- Amice of Corrupting Horror
+						i(160642),	-- Cloak of Rippling Whispers
+						i(160614),	-- Robes of the Unraveler
+						i(161071),	-- Bloody Experimenter's Wraps
+						i(160612),	-- Spellbound Specimen Handlers
+						i(160734),	-- Cord of Animated Contagion
+						i(160615),	-- Leggings of Lingering Infestation
+						i(160714),	-- Volatile Walkers
 					}),
-					gs(1644, { -- Eternal Curator's Garb
-						i(160623), -- Hood of Pestilent Ichor
-						i(160620), -- Usurper's Bloodcaked Spaulders
-						i(160643), -- Fetid Horror's Tanglecloak
-						i(160728), -- Tunic of the Sanguine Deity
-						i(161072), -- Splatterguards
-						i(161075), -- Antiseptic Specimen Handlers
-						i(160622), -- Bloodstorm Buckle
-						i(160625), -- Pathogenic Legwraps
-						i(160624), -- Quarantine Protocol Treads
+					gs(1643, {	-- Eternal Curator's Garb
+						i(160623),	-- Hood of Pestilent Ichor
+						i(160620),	-- Usurper's Bloodcaked Spaulders
+						i(160643),	-- Fetid Horror's Tanglecloak
+						i(160728),	-- Tunic of the Sanguine Deity
+						i(161072),	-- Splatterguards
+						i(161075),	-- Antiseptic Specimen Handlers
+						i(160622),	-- Bloodstorm Buckle
+						i(160625),	-- Pathogenic Legwraps
+						i(160624),	-- Quarantine Protocol Treads
 					}),
-					gs(1648, { -- Eternal Curator's Chains
-						i(160630), -- Crest of the Undying Visionary
-						i(160632), -- Flame-Sterilized Spaulders
-						i(160644), -- Plasma-Spattered Greatcloak
-						i(160627), -- Chainvest of Assured Quality
-						i(160629), -- Rubywrought Sparkguards
-						i(160626), -- Gloves of Involuntary Amputation
-						i(160724), -- Cincture of Profane Deeds
-						i(160631), -- Legguards of Coalescing Plasma
-						i(160628), -- Fused Monstrosity Stompers
+					gs(1647, {	-- Eternal Curator's Chains
+						i(160630),	-- Crest of the Undying Visionary
+						i(160632),	-- Flame-Sterilized Spaulders
+						i(160644),	-- Plasma-Spattered Greatcloak
+						i(160627),	-- Chainvest of Assured Quality
+						i(160629),	-- Rubywrought Sparkguards
+						i(160626),	-- Gloves of Involuntary Amputation
+						i(160724),	-- Cincture of Profane Deeds
+						i(160631),	-- Legguards of Coalescing Plasma
+						i(160628),	-- Fused Monstrosity Stompers
 					}),
-					gs(1652, { -- Eternal Curator's Proctorate
-						i(160634), -- Gridrunner Galea
-						i(160641), -- Chitinspine Pauldrons
-						i(160636), -- Chestguard of Virulent Mutagens
-						i(160637), -- Crimson Colossus Armguards
-						i(160635), -- Waste Disposal Crushers
-						i(160638), -- Decontaminator's Greatbelt
-						i(160639), -- Greaves of Unending Vigil
-						i(160640), -- Warboots of Absolute Eradication
+					gs(1651, {	-- Eternal Curator's Proctorate
+						i(160634),	-- Gridrunner Galea
+						i(160641),	-- Chitinspine Pauldrons
+						i(160636),	-- Chestguard of Virulent Mutagens
+						i(160637),	-- Crimson Colossus Armguards
+						i(160635),	-- Waste Disposal Crushers
+						i(160638),	-- Decontaminator's Greatbelt
+						i(160639),	-- Greaves of Unending Vigil
+						i(160640),	-- Warboots of Absolute Eradication
+					}),
+				}),
+				d(16, {	-- Mythic [9, 9, 9, 8, 35]
+					gs(1640, {	-- Eternal Curator's Vestment
+						i(160719),	-- Visage of the Ascended Prophet
+						i(160726),	-- Amice of Corrupting Horror
+						i(160642),	-- Cloak of Rippling Whispers
+						i(160614),	-- Robes of the Unraveler
+						i(161071),	-- Bloody Experimenter's Wraps
+						i(160612),	-- Spellbound Specimen Handlers
+						i(160734),	-- Cord of Animated Contagion
+						i(160615),	-- Leggings of Lingering Infestation
+						i(160714),	-- Volatile Walkers
+					}),
+					gs(1644, {	-- Eternal Curator's Garb
+						i(160623),	-- Hood of Pestilent Ichor
+						i(160620),	-- Usurper's Bloodcaked Spaulders
+						i(160643),	-- Fetid Horror's Tanglecloak
+						i(160728),	-- Tunic of the Sanguine Deity
+						i(161072),	-- Splatterguards
+						i(161075),	-- Antiseptic Specimen Handlers
+						i(160622),	-- Bloodstorm Buckle
+						i(160625),	-- Pathogenic Legwraps
+						i(160624),	-- Quarantine Protocol Treads
+					}),
+					gs(1648, {	-- Eternal Curator's Chains
+						i(160630),	-- Crest of the Undying Visionary
+						i(160632),	-- Flame-Sterilized Spaulders
+						i(160644),	-- Plasma-Spattered Greatcloak
+						i(160627),	-- Chainvest of Assured Quality
+						i(160629),	-- Rubywrought Sparkguards
+						i(160626),	-- Gloves of Involuntary Amputation
+						i(160724),	-- Cincture of Profane Deeds
+						i(160631),	-- Legguards of Coalescing Plasma
+						i(160628),	-- Fused Monstrosity Stompers
+					}),
+					gs(1652, {	-- Eternal Curator's Proctorate
+						i(160634),	-- Gridrunner Galea
+						i(160641),	-- Chitinspine Pauldrons
+						i(160636),	-- Chestguard of Virulent Mutagens
+						i(160637),	-- Crimson Colossus Armguards
+						i(160635),	-- Waste Disposal Crushers
+						i(160638),	-- Decontaminator's Greatbelt
+						i(160639),	-- Greaves of Unending Vigil
+						i(160640),	-- Warboots of Absolute Eradication
 					}),
 				}),
 			},	
-			["achievementID"] = 12991, -- New Mog, G'huun This?
+			["achievementID"] = 12991,	-- New Mog, G'huun This?
 		}),
 	}),
 };

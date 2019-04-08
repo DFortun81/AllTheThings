@@ -12,7 +12,7 @@ _.Zones =
 					p(450),	-- Maggot
 					p(417),	-- Rat
 					p(424),	-- Roach
-					desc(p(496), "Can be found on the beaches of the western coast in Ashenvale."), -- Rusty Snail
+					desc(p(496), "Can be found on the beaches of the western coast in Ashenvale."),	-- Rusty Snail
 					p(379),	-- Squirrel
 					p(420),	-- Toad
 					{	-- Analynn

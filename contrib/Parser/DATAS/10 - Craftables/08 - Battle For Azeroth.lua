@@ -3,8 +3,8 @@
 -----------------------------------------------------
 _.Craftables =
 {
-	tier(8, { -- Battle For Azeroth
-		n(-180, { -- Alchemy
+	tier(8, {	-- Battle For Azeroth
+		n(-180, {	-- Alchemy
 		-- Reviewed and updated as of 12.16.2018 BfA 8.1
 			filter(101, {	-- Battle Pets
 				{	-- Quivering Sac
@@ -78,7 +78,7 @@ _.Craftables =
 				},
 			}),
 		}),
-		n(-181, { -- Blacksmithing
+		n(-181, {	-- Blacksmithing
 		-- Reviewed and updated as of 12.16.2018 BfA 8.1
 			filter(20, {	-- Daggers
 				{	-- Honorable Combatant's Shanker [A]
@@ -496,7 +496,7 @@ _.Craftables =
 				},
 			}),
 		}),
-		n(-182, { -- Enchanting
+		n(-182, {	-- Enchanting
 			filter(101, {	-- Battle Pets
 				{	-- Enchanted Tiki Mask
 					["itemID"] = 152878,	-- Enchanted Tiki Mask
@@ -529,7 +529,7 @@ _.Craftables =
 				},
 			}),
 		}),
-		n(-183, { -- Engineering
+		n(-183, {	-- Engineering
 			filter(100, {	-- Mounts
 				{	-- Mecha-Mogul Mk2*
 					["itemID"] = 161134,	-- Mecha-Mogul Mk2
@@ -717,9 +717,9 @@ _.Craftables =
 				}),
 			}),
 		}),
-		n(-185, { -- Inscription
+		n(-185, {	-- Inscription
 		-- Reviewed and updated as of 12.16.2018 BfA 8.1
-			n(-491, { -- Tarot Cards
+			n(-491, {	-- Tarot Cards
 				sp(278527, {	-- Darkmoon Card of War
 					sp(267087, {	-- Blockades Deck
 						i(159128),	-- Darkmoon Deck: Blockades
@@ -759,7 +759,7 @@ _.Craftables =
 				i(153647),	-- Tome of the Quiet Mind
 			}),
 		}),
-		n(-186, { -- Jewelcrafting
+		n(-186, {	-- Jewelcrafting
 		-- Reviewed and updated as of 12.15.2018 BfA 8.1
 			filter(28, {	-- Staves
 				{	-- Honorable Combatant's Staff of Intuition
@@ -846,7 +846,7 @@ _.Craftables =
 				},
 			}),
 		}),
-		n(-187, { -- Leatherworking
+		n(-187, {	-- Leatherworking
 			{	-- Coarse Leather Armguards [A]
 				["itemID"] = 161945,	-- Coarse Leather Armguards [A]
 			},
@@ -1410,7 +1410,7 @@ _.Craftables =
 				["itemID"] = 165400,	-- Tempered Tempest Leggings [H]
 			},
 		}),
-		n(-190, { -- Tailoring
+		n(-190, {	-- Tailoring
 			n(-37, {	-- Discovery
 				sp(257122, {	-- Embroidered Deep Sea Breeches
 					i(162509),	-- Pattern: Imbued Deep Sea Breeches

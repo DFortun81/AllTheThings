@@ -195,7 +195,7 @@ _.Zones =
 								},
 							}),
 						}),
-						n(134694, { -- Mor'fani the Exile
+						n(134694, {	-- Mor'fani the Exile
 							["questID"] = 50666,
 							["coord"] = { 37.61, 88.01, 864 },
 							["g"] = {

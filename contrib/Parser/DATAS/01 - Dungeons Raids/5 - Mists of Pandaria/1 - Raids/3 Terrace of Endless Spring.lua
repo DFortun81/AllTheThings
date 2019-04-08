@@ -32,7 +32,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				["groups"] = {
 					n(-1, {	-- Common Boss Drop
 						["groups"] = {
-							i(95617, { -- Dividends of the Everlasting Spring
+							i(95617, {	-- Dividends of the Everlasting Spring
 								["description"] = "Since the introduction of Legacy Loot, this bag is only obtainable if you queue up as a Level 91-100 for the intended raid.  If you are 101+ then you will need to seek out each item based on their original sources.  This change occured in Patch 8.0.1.",
 								["groups"] = {
 									i(86884),	-- Belt of Embodied Terror
@@ -102,12 +102,12 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						},
 						--[[
 						["crs"] = {
-							60583, -- Protector Kaolan
-							60586, -- Elder Asani
-							60585, -- Elder Regail
-							62442, -- Tsulong
-							62983, -- Lei Shi
-							60999, -- Sha of Fear
+							60583,	-- Protector Kaolan
+							60586,	-- Elder Asani
+							60585,	-- Elder Regail
+							62442,	-- Tsulong
+							62983,	-- Lei Shi
+							60999,	-- Sha of Fear
 						},
 						--]]
 					}),
@@ -255,14 +255,14 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				["ignoreBonus"] = true,
 				["difficulties"] = { 3, 4 },
 				["groups"] = {
-					n(-1, { -- Common Boss Drop
+					n(-1, {	-- Common Boss Drop
 						["crs"] = {
-							60583, -- Protector Kaolan
-							60586, -- Elder Asani
-							60585, -- Elder Regail
-							62442, -- Tsulong
-							62983, -- Lei Shi
-							60999, -- Sha of Fear
+							60583,	-- Protector Kaolan
+							60586,	-- Elder Asani
+							60585,	-- Elder Regail
+							62442,	-- Tsulong
+							62983,	-- Lei Shi
+							60999,	-- Sha of Fear
 						},
 						["groups"] = {
 							i(86272),	-- Pattern: Fists of Lightning
@@ -287,13 +287,13 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					}),
 					cr(60583, e(683, {	-- Protectors of the Endless
 						["crs"] = {
-							60583, -- Protector Kaolan
-							60586, -- Elder Asani
-							60585, -- Elder Regail
+							60583,	-- Protector Kaolan
+							60586,	-- Elder Asani
+							60585,	-- Elder Regail
 						},
 						["groups"] = {
 							ach(6717),	-- Power Overwhelming
-							n(-90, { -- Elite
+							n(-90, {	-- Elite
 								["description"] = "You must kill Protector Kaolan last!",
 								["groups"] = {
 									i(90527),	-- Regail's Crackling Dagger (Elite)
@@ -453,14 +453,14 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				["ignoreBonus"] = true,
 				["difficulties"] = { 5, 6 },
 				["groups"] = {
-					n(-1, { -- Common Boss Drop
+					n(-1, {	-- Common Boss Drop
 						["crs"] = {
-							60583, -- Protector Kaolan
-							60586, -- Elder Asani
-							60585, -- Elder Regail
-							62442, -- Tsulong
-							62983, -- Lei Shi
-							60999, -- Sha of Fear
+							60583,	-- Protector Kaolan
+							60586,	-- Elder Asani
+							60585,	-- Elder Regail
+							62442,	-- Tsulong
+							62983,	-- Lei Shi
+							60999,	-- Sha of Fear
 						},
 						["groups"] = {
 							i(86272),	-- Pattern: Fists of Lightning
@@ -485,14 +485,14 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					}),
 					cr(60583, e(683, {	-- Protectors of the Endless
 						["crs"] = {
-							60583, -- Protector Kaolan
-							60586, -- Elder Asani
-							60585, -- Elder Regail
+							60583,	-- Protector Kaolan
+							60586,	-- Elder Asani
+							60585,	-- Elder Regail
 						},
 						["groups"] = {
 							ach(6731),	-- Heroic: Protectors of the Endless
 							ach(6717),	-- Power Overwhelming
-							n(-90, { -- Elite
+							n(-90, {	-- Elite
 								["description"] = "You must kill Protector Kaolan last!",
 								["groups"] = {
 									i(90513),	-- Regail's Crackling Dagger (Elite)

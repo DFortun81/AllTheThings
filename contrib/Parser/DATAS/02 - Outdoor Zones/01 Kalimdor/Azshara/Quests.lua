@@ -647,9 +647,9 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 14476,	-- Rigged to Blow
 						["groups"] = {
-							i(53408), -- Detonation Ring
-							i(53424), -- Kroum's Signet
-							i(53444), -- Sniper's Band
+							i(53408),	-- Detonation Ring
+							i(53424),	-- Kroum's Signet
+							i(53444),	-- Sniper's Band
 						},
 					},
 					{	-- Rapid Deployment

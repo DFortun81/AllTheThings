@@ -4,9 +4,9 @@
 
 _.Achievements = 
 {
-	n(-10055, { -- Expansion Features
+	n(-10055, {	-- Expansion Features
 		["groups"] = {
-			n(-9996, { -- Tol Barad
+			n(-9996, {	-- Tol Barad
 				["groups"] = {
 					ach(6108),		-- Alizabal
 					a(ach(5718, {	-- Just Another Day in Tol Barad (Alliance)

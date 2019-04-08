@@ -4,9 +4,9 @@
 
 _.Achievements =
 {
-	n(-9956, { -- Quests
+	n(-9956, {	-- Quests
 		["groups"] = {
-			n(-9955, { -- General
+			n(-9955, {	-- General
 				["groups"] = {
 					ach(7411, {		-- 10000 Daily Quests Completed
 						ach(973),		-- 5 Daily Quests Completed

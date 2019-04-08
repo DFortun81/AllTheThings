@@ -225,10 +225,10 @@ _.Zones =
 							["itemID"] = 101529,	-- Celestial Coin
 							["description"] = "Must have leveled at least 15 pets to 25 in order to enter the tournament.",
 							["g"] = {
-								i(102145), -- Chi-Chi, Hatchling of Chi-Ji
-								i(101771), -- Xu-Fu, Cub of Xuen
-								i(102147), -- Yu'la, Broodling of Yu'lon
-								i(102146), -- Zao, Calfling of Niuzao
+								i(102145),	-- Chi-Chi, Hatchling of Chi-Ji
+								i(101771),	-- Xu-Fu, Cub of Xuen
+								i(102147),	-- Yu'la, Broodling of Yu'lon
+								i(102146),	-- Zao, Calfling of Niuzao
 							},
 						},
 						{	-- Mistweaver Ai <Timeless Artifacts>
@@ -296,7 +296,7 @@ _.Zones =
 								{ 74.92, 44.92, 554 },
 							},
 							["g"] = {
-								currency(789, { -- Bloody Coin
+								currency(789, {	-- Bloody Coin
 									["description"] = "Earn these by transforming into an Emissary of Ordos and participating in PvP.",
 									["groups"] = {
 										ach(8717),	-- Candlekeeper
@@ -314,7 +314,7 @@ _.Zones =
 										i(102464),	-- Black Ash
 									},
 								}),
-								currency(777, { -- Timeless Coin
+								currency(777, {	-- Timeless Coin
 									{
 										["itemID"] = 102467,	-- Censer of Eternal Agony [Toy]
 										["groups"] = {

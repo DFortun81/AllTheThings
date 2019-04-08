@@ -274,7 +274,7 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["requireSkill"] = 165,	-- Leatherworking
 						["groups"] = {
-							i(6710), -- Pattern: Moonglow Vest
+							i(6710),	-- Pattern: Moonglow Vest
 						},
 					},
 					{	-- Nessa Shadowsong

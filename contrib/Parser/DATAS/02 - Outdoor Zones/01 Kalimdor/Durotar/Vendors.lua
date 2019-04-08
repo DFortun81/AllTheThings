@@ -7,7 +7,7 @@ _.Zones =
 		m(1, {	-- Durotar
 			["groups"] = {
 				n(-2, {	-- Vendors
-					n(3881, { -- Grimtak
+					n(3881, {	-- Grimtak
 						["coord"] = { 50.8, 42.8, 1 },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
@@ -47,7 +47,7 @@ _.Zones =
 							un(3, i(98563)),	-- Rainstick
 						},
 					}),
-					n(5942, { -- Zansoa <Fishing Supplies>
+					n(5942, {	-- Zansoa <Fishing Supplies>
 						["coord"] = { 57.4, 77.0, 1 },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
@@ -55,7 +55,7 @@ _.Zones =
 							i(6326),	-- Recipe: Slitherskin Mackerel
 						},
 					}),
-					n(7952, { -- Zjolnir <Raptor Handler>
+					n(7952, {	-- Zjolnir <Raptor Handler>
 						["coord"] = { 55.2, 75.6, 1 },
 						["races"] = HORDE_ONLY,
 						["groups"] = {

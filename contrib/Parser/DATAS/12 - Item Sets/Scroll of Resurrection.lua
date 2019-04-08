@@ -3,7 +3,7 @@
 -----------------------------------------------------
 _.GearSets = 
 {
-	n(-573, { -- Scroll of Resurrection
+	n(-573, {	-- Scroll of Resurrection
 		["description"] = "These were originally obtained by using the Scroll of Resurrection Character Boost. They were later added to vendors in Mount Hyjal and Vash'jir once the Scroll of Resurrection Service was retired.",
 		["lvl"] = 80,
 		["maps"] = {
@@ -18,9 +18,9 @@ _.GearSets =
 		["groups"] = {
 			-- Crieve Note: For class specific sets, this is a waste of time and memory. Please use a more generic style instead.
 			--[[
-			n(-195, { -- Seraphic Set
+			n(-195, {	-- Seraphic Set
 				["groups"] = {
-					n(-9951, { -- Discipline / Holy Spec
+					n(-9951, {	-- Discipline / Holy Spec
 						i(73008),	-- Seraphic Staff
 						i(73336),	-- Seraphic Wand
 						i(72648),	-- Seraphic Cowl
@@ -33,7 +33,7 @@ _.GearSets =
 						i(72658),	-- Seraphic Leggings
 						i(72655),	-- Seraphic Sandals
 					}),
-					n(-9917, { -- Shadow Priest Spec
+					n(-9917, {	-- Shadow Priest Spec
 						i(73009),	-- Seraphic Stave
 						i(73336),	-- Seraphic Wand
 						i(72657),	-- Seraphic Hood
@@ -49,7 +49,7 @@ _.GearSets =
 				},
 				["classes"] = {5}
 			}),
-			n(-196, { -- Magesoul Set
+			n(-196, {	-- Magesoul Set
 				["groups"] = {
 					i(73006),	-- Magesoul Staff
 					i(73325),	-- Magesoul Wand
@@ -65,7 +65,7 @@ _.GearSets =
 				},
 				["classes"] = {8}
 			}),		
-			n(-197, { -- Dreadsoul Set
+			n(-197, {	-- Dreadsoul Set
 				["groups"] = {
 					i(73007),	-- Dreadsoul Staff
 					i(73326),	-- Dreadsoul Wand
@@ -81,9 +81,9 @@ _.GearSets =
 				},
 				["classes"] = {9}
 			}),
-			n(-198, { -- Wildsoul Set
+			n(-198, {	-- Wildsoul Set
 				["groups"] = {
-					n(-9952, { -- Guardian / Feral
+					n(-9952, {	-- Guardian / Feral
 						i(73012),	-- Wildsoul Spear
 						i(72675),	-- Wildsoul Helm
 						i(72677),	-- Wildsoul Pauldrons
@@ -95,7 +95,7 @@ _.GearSets =
 						i(72676),	-- Wildsoul Legguards
 						i(72673),	-- Wildsoul Footpads
 					}),
-					n(-9926, { -- Balance Spec
+					n(-9926, {	-- Balance Spec
 						i(73010),	-- Wildsoul Stave
 						i(72684),	-- Wildsoul Hood
 						i(72694),	-- Wildsoul Spaulders
@@ -107,7 +107,7 @@ _.GearSets =
 						i(72693),	-- Wildsoul Leggings
 						i(72690),	-- Wildsoul Treads
 					}),
-					n(-9927, { -- Restoration Spec
+					n(-9927, {	-- Restoration Spec
 						i(73011),	-- Wildsoul Staff
 						i(72692),	-- Wildsoul Headpiece
 						i(72686),	-- Wildsoul Shoulders
@@ -122,7 +122,7 @@ _.GearSets =
 				},
 				["classes"] = {11}
 			}),
-			n(-199, { -- Shadowstalking Set
+			n(-199, {	-- Shadowstalking Set
 				["groups"] = {
 					i(72995),	-- Shadowstalking Dagger
 					un(2, i(72996)),	-- Shadowstalking Shiv
@@ -139,7 +139,7 @@ _.GearSets =
 				},
 				["classes"] = {4}
 			}),
-			n(-200, { -- Beastsoul Set
+			n(-200, {	-- Beastsoul Set
 				["groups"] = {
 					i(73000),	-- Beastsoul Rifle
 					un(2, i(73001)),	-- Beastsoul Spear
@@ -155,9 +155,9 @@ _.GearSets =
 				},
 				["classes"] = {3}
 			}),
-			n(-201, { -- Stormbinder Set
+			n(-201, {	-- Stormbinder Set
 				["groups"] = {
-					n(-9939, { -- Elemental Spec
+					n(-9939, {	-- Elemental Spec
 						i(73003),	-- Stormbinder Gavel
 						i(73004),	-- Stormbinder Shield
 						i(72892),	-- Stormbinder Coif
@@ -170,7 +170,7 @@ _.GearSets =
 						i(72906),	-- Stormbinder Leggings
 						i(72903),	-- Stormbinder Sabatons
 					}),
-					n(-9940, { -- Enhancement Spec
+					n(-9940, {	-- Enhancement Spec
 						i(72998),	-- Stormbinder Mace
 						i(72701),	-- Stormbinder Helm
 						i(72703),	-- Stormbinder Shoulderguards
@@ -182,7 +182,7 @@ _.GearSets =
 						i(72702),	-- Stormbinder Legguards
 						i(72699),	-- Stormbinder Greaves
 					}),
-					n(-9941, { -- Restoration Spec
+					n(-9941, {	-- Restoration Spec
 						i(73002),	-- Stormbinder Scepter
 						i(73005),	-- Stormbinder Aegis
 						i(72905),	-- Stormbinder Cowl
@@ -198,9 +198,9 @@ _.GearSets =
 				},
 				["classes"] = {7}
 			}),	
-			n(-202, { -- Zealous Set
+			n(-202, {	-- Zealous Set
 				["groups"] = {
-					n(-9942, { -- Holy Spec
+					n(-9942, {	-- Holy Spec
 						i(72989),	-- Zealous Scepter
 						i(72984),	-- Zealous Shield
 						i(72974),	-- Zealous Headpiece
@@ -213,7 +213,7 @@ _.GearSets =
 						i(72975),	-- Zealous Leggings
 						i(72972),	-- Zealous Boots
 					}),
-					n(-9943, { -- Protection Spec
+					n(-9943, {	-- Protection Spec
 						i(72981),	-- Zealous Sword
 						i(72983),	-- Zealous Bulwark
 						i(72966),	-- Zealous Faceguard
@@ -226,7 +226,7 @@ _.GearSets =
 						i(72967),	-- Zealous Legguards
 						i(72956),	-- Zealous Sabatons
 					}),
-					n(-9944, { -- Retribution Spec
+					n(-9944, {	-- Retribution Spec
 						i(72993),	-- Zealous Greatsword
 						i(72958),	-- Zealous Helm
 						i(72960),	-- Zealous Pauldrons
@@ -241,9 +241,9 @@ _.GearSets =
 				},
 				["classes"] = {2}
 			}),
-			n(-203, { -- Valiant Set
+			n(-203, {	-- Valiant Set
 				["groups"] = {
-					n(-9953, { -- Arms / Fury Spec
+					n(-9953, {	-- Arms / Fury Spec
 						i(72992),	-- Valiant Greatsword
 						i(72999),	-- Valiant Maul
 						i(72948),	-- Valiant Helm
@@ -256,7 +256,7 @@ _.GearSets =
 						i(72949),	-- Valiant Legplates
 						i(72946),	-- Valiant Sabatons
 					}),
-					n(-9946, { -- Protection Spec
+					n(-9946, {	-- Protection Spec
 						i(72980),	-- Valiant Sword
 						i(72982),	-- Valiant Bulwark
 						i(72940),	-- Valiant Faceguard
@@ -272,9 +272,9 @@ _.GearSets =
 				},
 				["classes"] = {1}
 			}),	
-			n(-204, { -- Ebonsoul Set
+			n(-204, {	-- Ebonsoul Set
 				["groups"] = {
-					n(-9948, { -- Blood Spec
+					n(-9948, {	-- Blood Spec
 						i(72991),	-- Ebonsoul Maul
 						i(72932),	-- Ebonsoul Faceguard
 						i(72934),	-- Ebonsoul Shoulderguards
@@ -286,7 +286,7 @@ _.GearSets =
 						i(72933),	-- Ebonsoul Legguards
 						i(72930),	-- Ebonsoul Greaves
 					}),
-					n(-9954, { -- Unholy/Frost Spec
+					n(-9954, {	-- Unholy/Frost Spec
 						i(72994),	-- Ebonsoul Blade
 						i(72990),	-- Ebonsoul Hammer
 						i(72921),	-- Ebonsoul Helm
@@ -302,7 +302,7 @@ _.GearSets =
 				},
 				["classes"] = {6}
 			}),	
-			n(-205, { -- Monastic Set
+			n(-205, {	-- Monastic Set
 				["groups"] = {
 					i(88648),	-- Monastic Spire
 					i(88622),	-- Monastic Staff
@@ -330,7 +330,7 @@ _.GearSets =
 			]]--
 			
 			-- Proper Style
-			cl(1, { -- Warrior [Valiant]
+			cl(1, {	-- Warrior [Valiant]
 				i(72982),	-- Valiant Bulwark
 				i(72992),	-- Valiant Greatsword
 				i(72999),	-- Valiant Maul
@@ -364,7 +364,7 @@ _.GearSets =
 				i(73165),	-- Valiant Idol of Battle
 				i(73164),	-- Valiant Stone of Battle
 			}),
-			cl(2, { -- Paladin [Zealous]
+			cl(2, {	-- Paladin [Zealous]
 				i(72983),	-- Zealous Bulwark
 				i(72993),	-- Zealous Greatsword
 				i(72989),	-- Zealous Scepter
@@ -413,7 +413,7 @@ _.GearSets =
 				i(73061),	-- Zealous Stone of Battle
 				i(73064),	-- Zealous Stone of Wisdom
 			}),
-			cl(3, { -- Hunter [Beastsoul]
+			cl(3, {	-- Hunter [Beastsoul]
 				i(73000),	-- Beastsoul Rifle
 				un(2, i(73001)),	-- Beastsoul Spear
 				i(72913),	-- Beastsoul Helm
@@ -431,7 +431,7 @@ _.GearSets =
 				i(73147),	-- Beastsoul Idol of Rage
 				i(73150),	-- Beastsoul Stone of Rage
 			}),
-			cl(4, { -- Rogue [Shadowstalking]
+			cl(4, {	-- Rogue [Shadowstalking]
 				i(72995),	-- Shadowstalking Dagger
 				un(2, i(72996)),	-- Shadowstalking Shiv
 				i(72997),	-- Shadowstalking Sword
@@ -450,7 +450,7 @@ _.GearSets =
 				i(73124),	-- Shadowstalking Idol of Rage
 				i(73121),	-- Shadowstalking Stone of Rage
 			}),
-			cl(5, { -- Priest [Seraphic]
+			cl(5, {	-- Priest [Seraphic]
 				i(73008),	-- Seraphic Staff
 				i(73009),	-- Seraphic Stave
 				i(73336),	-- Seraphic Wand
@@ -483,7 +483,7 @@ _.GearSets =
 				i(73116),	-- Seraphic Stone of Destruction
 				i(73111),	-- Seraphic Stone of Wisdom
 			}),
-			cl(6, { -- Death Knight [Ebonsoul]
+			cl(6, {	-- Death Knight [Ebonsoul]
 				i(72994),	-- Ebonsoul Blade
 				i(72990),	-- Ebonsoul Hammer
 				i(72991),	-- Ebonsoul Maul
@@ -516,7 +516,7 @@ _.GearSets =
 				i(73155),	-- Ebonsoul Idol of Battle
 				i(73154),	-- Ebonsoul Stone of Battle
 			}),
-			cl(7, { -- Shaman [Stormbinder]
+			cl(7, {	-- Shaman [Stormbinder]
 				i(73005),	-- Stormbinder Aegis
 				i(73003),	-- Stormbinder Gavel
 				i(72998),	-- Stormbinder Mace
@@ -565,7 +565,7 @@ _.GearSets =
 				i(73135),	-- Stormbinder Stone of Rage
 				i(73145),	-- Stormbinder Stone of Wisdom
 			}),
-			cl(8, { -- Mage [Magesoul]
+			cl(8, {	-- Mage [Magesoul]
 				i(73006),	-- Magesoul Staff
 				i(73325),	-- Magesoul Wand
 				i(72624),	-- Magesoul Hood
@@ -583,7 +583,7 @@ _.GearSets =
 				i(73104),	-- Magesoul Idol of Destruction
 				i(73101),	-- Magesoul Stone of Destruction
 			}),
-			cl(9, { -- Warlock [Dreadsoul]
+			cl(9, {	-- Warlock [Dreadsoul]
 				i(73007),	-- Dreadsoul Staff
 				i(73326),	-- Dreadsoul Wand
 				i(72640),	-- Dreadsoul Cowl
@@ -601,7 +601,7 @@ _.GearSets =
 				i(73109),	-- Dreadsoul Idol of Destruction
 				i(73106),	-- Dreadsoul Stone of Destruction
 			}),
-			cl(10, { -- Monk [Monastic]
+			cl(10, {	-- Monk [Monastic]
 				i(88648),	-- Monastic Spire
 				i(88622),	-- Monastic Staff
 				i(88649),	-- Monastic Sword
@@ -639,7 +639,7 @@ _.GearSets =
 				i(88639),	-- Monastic Stone of Rage
 				i(88644),	-- Monastic Stone of Wisdom
 			}),
-			cl(11, { -- Druid [Wildsoul]
+			cl(11, {	-- Druid [Wildsoul]
 				i(73012),	-- Wildsoul Spear
 				i(73011),	-- Wildsoul Staff
 				i(73010),	-- Wildsoul Stave

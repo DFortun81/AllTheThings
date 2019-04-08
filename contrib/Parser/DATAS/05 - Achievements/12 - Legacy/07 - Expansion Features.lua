@@ -12,9 +12,9 @@ To do:
 
 _.Achievements = 
 {
-	n(-9968, { -- Legacy		NOTE: MOST WILL NEED THE un(2) TAG
+	n(-9968, {	-- Legacy		NOTE: MOST WILL NEED THE un(2) TAG
 		["groups"] = {
-			n(-10055, { -- Expansion Features
+			n(-10055, {	-- Expansion Features
 				["groups"] = {
 					un(2, ach(11611)),		-- A Challenging Look
 					un(2, ach(12071)),		-- Crucible's Promise

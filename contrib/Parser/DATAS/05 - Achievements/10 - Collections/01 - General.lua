@@ -12,9 +12,9 @@ To do:
 
 _.Achievements = 
 {
-	n(-9964, { -- Collections
+	n(-9964, {	-- Collections
 		["groups"] = {
-			n(-9955, { -- General
+			n(-9955, {	-- General
 				["groups"] = {
 					ach(8728, {		-- Going To Need A Bigger Bag (Timeless Isle)
 						crit(1), 		-- Cursed Swabby Helmet

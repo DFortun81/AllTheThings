@@ -15,7 +15,7 @@ _.Zones =
 					p(417),	-- Rat
 					p(424),	-- Roach
 					p(412),	-- Spider
-					desc(p(506), "Can be found south of Windshear Hold in Webwinder Hollow with larger spiders."), -- Venomspitter Hatchling
+					desc(p(506), "Can be found south of Windshear Hold in Webwinder Hollow with larger spiders."),	-- Venomspitter Hatchling
 					{	-- Merda Stronghoof
 						["questID"] = 31817,
 						["qg"] = 66137,	-- Zonya the Sadist

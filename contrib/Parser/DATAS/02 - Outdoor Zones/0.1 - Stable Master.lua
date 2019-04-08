@@ -5,7 +5,7 @@ _.Zones =
 {
 	n(-48, { 	-- Stable Master
 		["groups"] = {
-			i(37460, { -- Rope Pet Leash
+			i(37460, {	-- Rope Pet Leash
 				["crs"] = {
 					45498,	-- "Salty" Rocka
 					11105,	-- Aboda

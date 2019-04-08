@@ -12,9 +12,9 @@ To do:
 
 _.Achievements = 
 {
-	n(-9958, { -- Player vs Player
+	n(-9958, {	-- Player vs Player
 		["groups"] = {
-			n(-10001, { -- Seething Shore
+			n(-10001, {	-- Seething Shore
 				["groups"] = {
 					ach(12406),		-- A Good Start
 					ach(12411),		-- Blood and Sand
@@ -53,7 +53,7 @@ _.Achievements =
 		},
 		["achievementID"] = 12412,
 		["maps"] = { 
-			--907, -- Seething Shore (Trial Map) BROKEN MINILIST TECH MAKES ALL PVP ACHIEVEMENTS SHOW EVEN ON TRIAL CHARACTERS!?!J!@
+			--907,	-- Seething Shore (Trial Map) BROKEN MINILIST TECH MAKES ALL PVP ACHIEVEMENTS SHOW EVEN ON TRIAL CHARACTERS!?!J!@
 		},
 	}),
 };

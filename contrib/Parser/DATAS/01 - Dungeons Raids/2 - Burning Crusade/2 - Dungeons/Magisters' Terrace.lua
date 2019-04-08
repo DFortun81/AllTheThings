@@ -34,7 +34,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				},
 			}),
 			d(1, {	-- Normal
-				e(530, { -- Selin Fireheart
+				e(530, {	-- Selin Fireheart
 					["creatureID"] = 24723,
 					["groups"] = {
 						i(35275), 	-- Orb of Sin'dorei
@@ -49,7 +49,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(34701),	-- Leggings of the Betrayed
 					},
 				}),
-				e(531, { -- Vexallus
+				e(531, {	-- Vexallus
 					["creatureID"] = 24744,
 					["groups"] = {
 						i(35275), 	-- Orb of Sin'dorei
@@ -65,7 +65,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(34706),	-- Band of Determination
 					},
 				}),
-				e(532, { -- Priestess Delrissa
+				e(532, {	-- Priestess Delrissa
 					["creatureID"] = 24560,
 					["groups"] = {
 						i(35756),	-- Formula: Enchant Cloak - Greater Dodge
@@ -81,7 +81,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(34471),	-- Vial of the Sunwell
 					},
 				}),
-				e(533, { -- Kael'thas Sunstrider
+				e(533, {	-- Kael'thas Sunstrider
 					["creatureID"] = 24664,
 					["groups"] = {
 						ach(661),	-- Magister's Terrace
@@ -136,7 +136,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				["lvl"] = 70,
 				["ignoreBonus"] = true,
 				["groups"] = {
-					e(530, { -- Selin Fireheart
+					e(530, {	-- Selin Fireheart
 						["creatureID"] = 24723,
 						["groups"] = {
 							i(35275), 	-- Orb of Sin'dorei
@@ -151,7 +151,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 							i(34701),	-- Leggings of the Betrayed
 						},
 					}),
-					e(531, { -- Vexallus
+					e(531, {	-- Vexallus
 						["creatureID"] = 24744,
 						["groups"] = {
 							i(35275), 	-- Orb of Sin'dorei
@@ -167,7 +167,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 							i(34706),	-- Band of Determination
 						},
 					}),
-					e(532, { -- Priestess Delrissa
+					e(532, {	-- Priestess Delrissa
 						["creatureID"] = 24560,
 						["groups"] = {
 							i(35756),	-- Formula: Enchant Cloak - Greater Dodge
@@ -183,7 +183,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 							i(34471),	-- Vial of the Sunwell
 						},
 					}),
-					e(533, { -- Kael'thas Sunstrider
+					e(533, {	-- Kael'thas Sunstrider
 						["creatureID"] = 24664,
 						["groups"] = {
 							ach(682),	-- Heroic: Magister's Terrace
@@ -241,7 +241,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 			d(24, {	-- Timewalking
 				["lvl"] = 71,
 				["groups"] = {
-					e(530, { -- Selin Fireheart
+					e(530, {	-- Selin Fireheart
 						["creatureID"] = 24723,
 						["groups"] = {
 							i( 35275), 	-- Orb of Sin'dorei (TOY!)
@@ -258,7 +258,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 							i(133454),	-- Band of Celerity
 						},
 					}),
-					e(531, { -- Vexallus
+					e(531, {	-- Vexallus
 						["creatureID"] = 24744,
 						["groups"] = {
 							i( 35275), 	-- Orb of Sin'dorei (TOY!)
@@ -276,7 +276,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 							i(133430),	-- Kharmaa's Ring of Fate
 						},
 					}),
-					e(532, { -- Priestess Delrissa
+					e(532, {	-- Priestess Delrissa
 						["creatureID"] = 24560,
 						["groups"] = {
 							i( 35275), 	-- Orb of Sin'dorei (TOY!)
@@ -293,7 +293,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 							i(133462),	-- Vial of the Sunwell
 						},
 					}),
-					e(533, { -- Kael'thas Sunstrider
+					e(533, {	-- Kael'thas Sunstrider
 						["creatureID"] = 24664,
 						["groups"] = {
 							i( 35275), 	-- Orb of Sin'dorei (TOY!)

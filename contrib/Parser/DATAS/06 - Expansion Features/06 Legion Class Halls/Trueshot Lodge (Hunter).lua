@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.ExpansionFeatures =
 {
-	n(-9965, { -- Legion Class Hall
-		cl(3, { -- Trueshot Lodge (Hunter)
+	n(-9965, {	-- Legion Class Hall
+		cl(3, {	-- Trueshot Lodge (Hunter)
 			["lvl"] = 98,
 			["mapID"] = 739,
 			["groups"] = {
@@ -74,17 +74,17 @@ _.ExpansionFeatures =
 					a(ach(10743)),	-- The Prestige (Alliance) [Still in WoW UI as of 8.0]
 					h(ach(10745)),	-- The Prestige (Horde) [Still in WoW UI as of 8.0]
 				}),
-				n(-228, { -- Flight Paths
-					fp(1760, { -- Trueshot Lodge, Highmountain
+				n(-228, {	-- Flight Paths
+					fp(1760, {	-- Trueshot Lodge, Highmountain
 						["coord"] = { 36.0, 27.8 },
 						["classes"] = { 3 },	-- Hunter
 					}),
-					fp(1848, { -- Trueshot Lodge (Eagle)
+					fp(1848, {	-- Trueshot Lodge (Eagle)
 						["coord"] = { 39.8, 29.6 },
 						["classes"] = { 3 },	-- Hunter
 					}),
 				}),
-				n(-17, { -- Quests
+				n(-17, {	-- Quests
 					qart(qg(107317, q(41541, {	-- A Beastly Expedition 
 						["classes"] = {3},
 					}))),
@@ -190,27 +190,27 @@ _.ExpansionFeatures =
 					q(44058),	-- Volpin the Elusive
 					q(44233),	-- Walk This Way
 					qr(q(45179)),	-- Win the Crowd
-					q(46337, { -- Night of the Wilds
+					q(46337, {	-- Night of the Wilds
 						["lvl"] = 110,
 						["classes"] = {3},
 						["groups"] = {
-							{ ["mountID"] = 229386 }, -- Huntmaster's Loyal Wolfhawk
+							{ ["mountID"] = 229386 },	-- Huntmaster's Loyal Wolfhawk
 						},
 					}),
-					q(44233, { -- Walk This Way
-						i(139710), -- Mask of the Unseen Path
+					q(44233, {	-- Walk This Way
+						i(139710),	-- Mask of the Unseen Path
 					}),
-					q(42659, { -- In Defense of Dalaran
-						i(139707), -- Hauberk of the Unseen Path
+					q(42659, {	-- In Defense of Dalaran
+						i(139707),	-- Hauberk of the Unseen Path
 					}),
 					--[[ Artifact Appearance  Quests Commented Out For Now
-					q(43423, { -- A Hero's Weapon
+					q(43423, {	-- A Hero's Weapon
 						sp(219663) -- Heroic Weapons [No item associated]
 					}),
 					--]]
 				}),
 				--[[
-				n(102669, { -- Scouting Map
+				n(102669, {	-- Scouting Map
 					["achievementID"] = 11217,
 					["modelScale"] = 0.5,
 					["groups"] = {
@@ -218,26 +218,26 @@ _.ExpansionFeatures =
 					},
 				}),
 				]]--
-				n(-2, { --  Vendors
-					n(105099, { -- Dark Ranger Velonara
+				n(-2, {	--  Vendors
+					n(105099, {	-- Dark Ranger Velonara
 						["classes"] = {3},
 						["description"] = "|c808080FAHunters will need to have completed the hidden quest|r |cFFFFD700Dark Memento|r |c808080FAin order to see items on this vendor.|r\n\n|cffff0000How to activate the quest:|r\n|c0070DEFFStep 1:|r\n|c808080FASpeak to|r |cABD473FFDeath Hunter Moorgoth|r |c808080FA and complete the dialogue with him.\n|c0070DEFFStep 2:|r\n|c808080FABuy 13x|r |cFFFFFFFFBlack Roses|r|c808080FA from him.\n|c0070DEFFStep 3:|r\n|c808080FASpeak to|r |cABD473FFDark Ranger Velonara|r |c808080FA and complete the dialogue with her.  Afterwards she will take the 13 |r|cFFFFFFFFBlack Roses|r|c808080FA from you.\n|c0070DEFFStep 4:|r\n|c808080FAGo back and speak to|r |cABD473FFDeath Hunter Moorgoth|r |c808080FA who will finish the story between the two.  Once doing this he will no longer sell you anything.\n|c0070DEFFStep 5:|r\n|c808080FFFind|r |cABD473FFDark Ranger Velonara|r |c808080FA who will offer the quest, |r|cFFFFD700Dark Memento|r.\n|c0070DEFFStep 6:|r\n|c808080FAAccept the quest and then deliver the hood to|r |cABD473FFDeath Hunter Moorgoth|r |c808080FA.\n|c0070DEFFStep 7:|r\n|c808080FAUpon finishing that quest he will now offer you the two items.",
 						["groups"] = {
-							i(143663), -- Dark Ranger's Hood
+							i(143663),	-- Dark Ranger's Hood
 						},
 					}),
-					n(100633, { -- Death Hunter Moorgoth <Hunters of Death>
+					n(100633, {	-- Death Hunter Moorgoth <Hunters of Death>
 						["classes"] = {3},
 						["description"] = "|c808080FAHunters will need to have completed the hidden quest|r |cFFFFD700Dark Memento|r |c808080FAin order to see items on this vendor.|r\n\n|cffff0000How to activate the quest:|r\n|c0070DEFFStep 1:|r\n|c808080FASpeak to|r |cABD473FFDeath Hunter Moorgoth|r |c808080FA and complete the dialogue with him.\n|c0070DEFFStep 2:|r\n|c808080FABuy 13x|r |cFFFFFFFFBlack Roses|r|c808080FA from him.\n|c0070DEFFStep 3:|r\n|c808080FASpeak to|r |cABD473FFDark Ranger Velonara|r |c808080FA and complete the dialogue with her.  Afterwards she will take the 13 |r|cFFFFFFFFBlack Roses|r|c808080FA from you.\n|c0070DEFFStep 4:|r\n|c808080FAGo back and speak to|r |cABD473FFDeath Hunter Moorgoth|r |c808080FA who will finish the story between the two.  Once doing this he will no longer sell you anything.\n|c0070DEFFStep 5:|r\n|c808080FFFind|r |cABD473FFDark Ranger Velonara|r |c808080FA who will offer the quest, |r|cFFFFD700Dark Memento|r.\n|c0070DEFFStep 6:|r\n|c808080FAAccept the quest and then deliver the hood to|r |cABD473FFDeath Hunter Moorgoth|r |c808080FA.\n|c0070DEFFStep 7:|r\n|c808080FAUpon finishing that quest he will now offer you the two items.",
 						["groups"] = {
-							i(143663), -- Dark Ranger's Hood
+							i(143663),	-- Dark Ranger's Hood
 						},
 					}),
-					n(103693, { -- Outfitter Reynolds <Unseen Path>
-						i(136855), -- Hunter's Call Toy
-						i(140548), -- Huntmaster's Halberd
-						i(140539), -- Huntmaster's Longbow
-						i(140544), -- Huntmaster's Rifle
+					n(103693, {	-- Outfitter Reynolds <Unseen Path>
+						i(136855),	-- Hunter's Call Toy
+						i(140548),	-- Huntmaster's Halberd
+						i(140539),	-- Huntmaster's Longbow
+						i(140544),	-- Huntmaster's Rifle
 						{
 							["itemID"] = 139710,		-- Helm
 							["groups"] = {
@@ -320,17 +320,17 @@ _.ExpansionFeatures =
 							i(140969),	-- Huntmaster's Greater Armor Kit
 						}),
 					}),
-					n(100661, { --  Pan the Kind Hand <Stable Master>
+					n(100661, {	--  Pan the Kind Hand <Stable Master>
 						["classes"] = {3},
 						["description"] = "|c808080FAThese mounts are only available to hunters who have completed|r |cFFFFD700Night of the Wilds|r |c808080FAquest from the class mount campaign.",
 						["groups"] = {
-							i(142228), -- Trust of a Dire Wolfhawk
-							i(142226), -- Trust of a Fierce Wolfhawk
+							i(142228),	-- Trust of a Dire Wolfhawk
+							i(142226),	-- Trust of a Fierce Wolfhawk
 							i(147580),	-- Tome of the Hybrid Beast
 						},
 					}),
-					n(103325, { -- Uthrok
-						i(11304), -- Fine Bow
+					n(103325, {	-- Uthrok
+						i(11304),	-- Fine Bow
 					}),
 				}),
 			},

@@ -114,18 +114,18 @@ _.Instances = { tier(1, {	-- Classic
 				{
 					["allianceQuestID"] = 26939,	-- The G-Team [A]
 					["hordeQuestID"] = 	  50338,	-- The G-Team [H]
-					["qg"] = 44556, -- Murd Doc
+					["qg"] = 44556,	-- Murd Doc
 				},
 				{
 					["allianceQuestID"] = 26941,	-- The G-Team [A]
 					["hordeQuestID"] = 	  50337,	-- The G-Team [H]
-					["qg"] = 44560, -- Murd Doc
+					["qg"] = 44560,	-- Murd Doc
 					["sourceQuests"] = { 26939, 50338 },	-- The G-Team
 				},
 				{
 					["allianceQuestID"] = 26942,	-- The G-Team [A]
 					["hordeQuestID"] = 	  50336,	-- The G-Team [H]
-					["qg"] = 44561, -- Murd Doc
+					["qg"] = 44561,	-- Murd Doc
 					["sourceQuests"] = { 26941, 50337 },	-- The G-Team
 					["groups"] = {
 						i(65987),	-- G-Team Belt

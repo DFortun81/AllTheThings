@@ -5,8 +5,8 @@ _.WorldDrops =
 {
 	{
 		["groups"] = {
-			n(-319, { -- Weapons		
-				n(-334, { -- 1H Axes
+			n(-319, {	-- Weapons		
+				n(-334, {	-- 1H Axes
 					i(116457),	-- Frostbitten Axe
 					i(82020),	-- Polished Axe
 					i(82045),	-- Bronzed Axe
@@ -19,7 +19,7 @@ _.WorldDrops =
 					i(94028),	-- Zandalari Head-Cleaver
 					i(94099),	-- Corroded Hacker
 				}),
-				n(-335, { -- 2H Axes
+				n(-335, {	-- 2H Axes
 					i(116458),	-- Frostbitten Broadaxe
 					i(82019),	-- Polished Broadaxe
 					i(82047),	-- Bronzed Broadaxe
@@ -30,7 +30,7 @@ _.WorldDrops =
 					i(87421),	-- Fellworth's Repetitive Greataxe
 					i(94100),	-- Weighty Stone Axe
 				}),	
-				n(-346, { -- Bows
+				n(-346, {	-- Bows
 					i(116459),	-- Frostbitten Bow
 					i(82018),	-- Polished Bow
 					i(82046),	-- Bronzed Bow
@@ -41,7 +41,7 @@ _.WorldDrops =
 					i(87474),	-- Ennadee's Twirling Longbow
 					i(94101),	-- Restrung Voodoo Bow
 				}),
-				n(-347, { -- Crossbows
+				n(-347, {	-- Crossbows
 					i(116460),	-- Frostbitten Crossbow
 					i(82016),	-- Polished Crossbow
 					i(82048),	-- Bronzed Crossbow
@@ -51,7 +51,7 @@ _.WorldDrops =
 					i(82268),	-- Engraved Crossbow
 					i(87650),	-- Fishsticker Crossbow
 				}),			
-				n(-333, { -- Daggers	
+				n(-333, {	-- Daggers	
 					i(116461),	-- Frostbitten Dagger
 					i(116462),	-- Coldsinger Spellblade
 					i(82003),	-- Intricate Spellblade
@@ -75,7 +75,7 @@ _.WorldDrops =
 					i(94102),	-- Chiseled Fangs
 					i(94215),	-- Saurjaw Dagger
 				}),
-				n(-348, { -- Fist Weapons	
+				n(-348, {	-- Fist Weapons	
 					i(116463),	-- Frostbitten Knuckles
 					i(82013),	-- Polished Knuckles
 					i(82054),	-- Bronzed Knuckles
@@ -86,7 +86,7 @@ _.WorldDrops =
 					i(87509),	-- Fist of Fate
 					i(94098),	-- Dull Hawktalons
 				}),
-				n(-345, { -- Guns
+				n(-345, {	-- Guns
 					i(116464),	-- Frostbitten Gun
 					i(82012),	-- Polished Gun
 					i(82051),	-- Bronzed Gun
@@ -98,7 +98,7 @@ _.WorldDrops =
 					i(87477),	-- Penate's Penance-Procuring Pistol
 					i(94094),	-- Hexbelcher Rifle
 				}),			
-				n(-331, { -- Held in Off-hand
+				n(-331, {	-- Held in Off-hand
 					i(116694),	-- Coldsinger Crystal
 					i(82010),	-- Intricate Crystal
 					i(82062),	-- Gemmed Crystal
@@ -110,7 +110,7 @@ _.WorldDrops =
 					i(87458),	-- Bone-Inlaid Fan
 					i(90571),	-- Scroll of Whispered Secrets
 				}),
-				n(-336, { -- 1H Maces
+				n(-336, {	-- 1H Maces
 					i(107218),	-- Tremendous Tankard O' Terror
 					i(116465),	-- Frostbitten Mace
 					i(116466),	-- Coldsinger Scepter
@@ -132,7 +132,7 @@ _.WorldDrops =
 					i(87515),	-- Ced's Crusher
 					i(94212),	-- Hex-Caster Gavel
 				}),
-				n(-337, { -- 2H Maces
+				n(-337, {	-- 2H Maces
 					i(116467),	-- Frostbitten Hammer
 					i(82008),	-- Polished Hammer
 					i(82052),	-- Bronzed Hammer
@@ -142,7 +142,7 @@ _.WorldDrops =
 					i(82272),	-- Engraved Hammer
 					i(87418),	-- Lerah's Ribsmasher
 				}),
-				n(-343, { -- Polearms
+				n(-343, {	-- Polearms
 					i(116468),	-- Frostbitten Spear
 					i(82006),	-- Polished Spear
 					i(82056),	-- Bronzed Spear
@@ -153,7 +153,7 @@ _.WorldDrops =
 					i(87420),	-- Ritter's Rat Render
 					i(94103),	-- Ritual Headcleaver Halberd
 				}),			
-				n(-332, { -- Shield
+				n(-332, {	-- Shield
 					i(106397),	-- Frostbitten Shield
 					i(82004),	-- Wall Shield
 					i(82074),	-- Brick Shield
@@ -169,7 +169,7 @@ _.WorldDrops =
 					i(94214),	-- Loa-Binder Disc
 					i(94218),	-- Skyking Bulwark
 				}),
-				n(-342, { -- Staves
+				n(-342, {	-- Staves
 					i(116469),	-- Frostbitten Staff
 					i(116470),	-- Frostbitten Staff
 					i(82002),	-- Polished Staff
@@ -191,7 +191,7 @@ _.WorldDrops =
 					i(94097),	-- Defective Soulgem Staff
 					i(94104),	-- Sky-Shaper Staff
 				}),
-				n(-338, { -- 1H Swords
+				n(-338, {	-- 1H Swords
 					i(116471),	-- Frostbitten Sword
 					i(82001),	-- Polished Sword
 					i(82059),	-- Bronzed Sword
@@ -206,7 +206,7 @@ _.WorldDrops =
 					i(94093),	-- Saur-Singer Spellblade
 					i(94217),	-- Stubby Talonblade
 				}),
-				n(-339, { -- 2H Swords
+				n(-339, {	-- 2H Swords
 					i(116472),	-- Frostbitten Greatsword
 					i(82000),	-- Polished Greatsword
 					i(82050),	-- Bronzed Greatsword
@@ -216,7 +216,7 @@ _.WorldDrops =
 					i(82270),	-- Engraved Greatsword
 					i(87423),	-- Bjam's Door-Breaker
 				}),
-				n(-341, { -- Wands
+				n(-341, {	-- Wands
 					i(116473),	-- Coldsinger Wand
 					i(81998),	-- Intricate Wand
 					i(82066),	-- Gemmed Wand

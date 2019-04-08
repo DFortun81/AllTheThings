@@ -13,7 +13,7 @@ _.Zones =
 					["groups"] = {
 						n(133208, {	-- Da White Shark
 							["questID"] = 50948,
-							--["questID"] = 50947, -- This is the unlock for actual chest [Under Treasures]
+							--["questID"] = 50947,	-- This is the unlock for actual chest [Under Treasures]
 						}),
 						n(120899, {	-- Kul'krazahn
 							["questID"] = 48333,

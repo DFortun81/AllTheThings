@@ -183,8 +183,8 @@ _.WorldDrops =
 				n(-187, {	-- Leatherworking
 					i(29724),	-- Pattern: Cobrascale Gloves (BoE version)
 					i(29723),	-- Pattern: Cobrascale Hood
-					un(8, i(29714)), -- Pattern: Drums of Restoration (BoE version was removed from game)
-					un(8, i(29718)), -- Pattern: Drums of Speed (BoE version was removed from game)
+					un(8, i(29714)),	-- Pattern: Drums of Restoration (BoE version was removed from game)
+					un(8, i(29718)),	-- Pattern: Drums of Speed (BoE version was removed from game)
 					i(29730),	-- Pattern: Earthen Netherscale Boots
 					i(29727),	-- Pattern: Gloves of the Living Touch (BoE version)
 					i(29726),	-- Pattern: Hood of Primal Life

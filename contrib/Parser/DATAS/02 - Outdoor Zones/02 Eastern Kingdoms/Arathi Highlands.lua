@@ -7,13 +7,13 @@ _.Zones =
 		m(14, {	-- Arathi Highlands
 			["groups"] = {
 				n(-228, {	-- Flight Path
-					fp(601, { -- Galen's Fall, Arathi
+					fp(601, {	-- Galen's Fall, Arathi
 						["coord"] = { 13.4, 34.8 },
 					}),
-					fp(17, { -- Hammerfall, Arathi
+					fp(17, {	-- Hammerfall, Arathi
 						["coord"] = { 68.2, 33.4 },
 					}),
-					fp(16, { -- Refuge Pointe, Arathi
+					fp(16, {	-- Refuge Pointe, Arathi
 						["coord"] = { 39.8, 47.4 },
 					}),
 				}),

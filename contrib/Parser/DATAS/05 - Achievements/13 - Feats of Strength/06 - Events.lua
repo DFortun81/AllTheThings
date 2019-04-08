@@ -4,9 +4,9 @@
 
 _.Achievements =
 {
-	n(-9969, { -- Feats of Strength
+	n(-9969, {	-- Feats of Strength
 		["groups"] = {
-			n(-10047, { -- Events
+			n(-10047, {	-- Events
 				["groups"] = {
 					un(29, ach(12850)),		-- At Least You're Being Careful
 					un(3, ach(1293)),		-- Blue Brewfest Stein

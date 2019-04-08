@@ -82,7 +82,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				}),
 			}),
 			d(23, {	-- Mythic
-				ach(12489, { -- Losing My Profession
+				ach(12489, {	-- Losing My Profession
 					{
 						["criteriaID"] = 7,	-- Brutik Blackanvil
 						["creatureID"] = 141800,	-- Brutik Blackanvil

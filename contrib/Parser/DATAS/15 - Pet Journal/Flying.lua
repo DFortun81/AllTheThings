@@ -5,7 +5,7 @@ _.PetJournal =
 {
 	pa(239, { 	-- Flying
 		p(1708),	-- Albatross Chick
-		a(p(2566)), -- Albatross Hatchling
+		a(p(2566)),	-- Albatross Hatchling
 		p(1984),	-- Albino Buzzard
 		p(2555), 	-- Albino Duskwatcher
 		a(p(331)),	-- Alliance Balloon (Alliance)
@@ -39,7 +39,7 @@ _.PetJournal =
 		p(2527),	-- Child of Pa'ku
 		p(646),		-- Chicken
 		p(1914),	-- Coastal Sandpiper
-		a(p(2568)), -- Cobalt Raven
+		a(p(2568)),	-- Cobalt Raven
 		p(47),		-- Cockatiel
 		a(p(2405)),	-- Corlain Falcon
 		p(1997),	-- Crackers

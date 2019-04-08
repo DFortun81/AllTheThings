@@ -10,7 +10,7 @@ _.Zones =
 				["mapID"] = 107,	-- Nagrand (Outland)
 				["groups"] = {
 					n(-16,  {	-- Rares	
-						n(17144, { -- Goretooth
+						n(17144, {	-- Goretooth
 							["coords"] = {
 								{ 58.2, 27.8, 107 },
 								{ 44.8, 40.4, 107 },
@@ -42,7 +42,7 @@ _.Zones =
 								i(31194),	-- Gronn-Blessed Warbeads
 							},			
 						}),
-						n(18683, { -- Voidhunter Yar
+						n(18683, {	-- Voidhunter Yar
 							["coords"] = {
 								{ 36.0, 65.4, 107 },
 								{ 39.0, 68.2, 107 },

@@ -69,28 +69,28 @@ _.Zones =
 					ach(547),	-- Veteran of the Wrathgate
 				}),
 				n(-228, {	-- Flight Points
-					fp(256, { -- Agmar's Hammer, Dragonblight
+					fp(256, {	-- Agmar's Hammer, Dragonblight
 						["coord"] = { 37.4, 45.6 },
 					}),
-					fp(251, { -- Fordragon Hold, Dragonblight
+					fp(251, {	-- Fordragon Hold, Dragonblight
 						["coord"] = { 39.4, 25.8 },
 					}),
-					fp(260, { -- Kor'kron Vanguard, Dragonblight
+					fp(260, {	-- Kor'kron Vanguard, Dragonblight
 						["coord"] = { 43.8, 16.8 },
 					}),
-					fp(294, { -- Moa'ki, Dragonblight
+					fp(294, {	-- Moa'ki, Dragonblight
 						["coord"] = { 48.4, 74.4 },
 					}),
-					fp(247, { -- Stars' Rest, Dragonblight
+					fp(247, {	-- Stars' Rest, Dragonblight
 						["coord"] = { 29.2, 55.4 },
 					}),
-					fp(254, { -- Venomspite, Dragonblight
+					fp(254, {	-- Venomspite, Dragonblight
 						["coord"] = { 76.4, 62.2 },
 					}),
-					fp(244, { -- Wintergarde Keep, Dragonblight
+					fp(244, {	-- Wintergarde Keep, Dragonblight
 						["coord"] = { 77, 49.8 },
 					}),
-					fp(252, { -- Wyrmrest Temple, Dragonblight
+					fp(252, {	-- Wyrmrest Temple, Dragonblight
 						["coord"] = { 60.2, 51.4 },
 					}),
 				}),
@@ -1690,21 +1690,21 @@ _.Zones =
 					}),
 				}),
 				n(0, { 		-- Zone Drop
-					i(50406, { -- Formula: Enchant Gloves - Angler
+					i(50406, {	-- Formula: Enchant Gloves - Angler
 						["crs"] = {
-							26343, -- Indu'le Fisherman
-							26336, -- Indu'le Mystic
-							26344, -- Indu'le Warrior
+							26343,	-- Indu'le Fisherman
+							26336,	-- Indu'le Mystic
+							26344,	-- Indu'le Warrior
 						},
 					}),
-					i(41124, { -- Plans: Reinforced Cobalt Shoulders
+					i(41124, {	-- Plans: Reinforced Cobalt Shoulders
 						["crs"] = {
-							27333, -- Onslaught Mason
+							27333,	-- Onslaught Mason
 						},
 					}),
-					i(120137, { -- Tome of Polymorph: Polar Bear Cub
+					i(120137, {	-- Tome of Polymorph: Polar Bear Cub
 						["crs"] = {
-							26482, -- Arctic Grizzly
+							26482,	-- Arctic Grizzly
 						},
 						["classes"] = { 8 },
 					}),

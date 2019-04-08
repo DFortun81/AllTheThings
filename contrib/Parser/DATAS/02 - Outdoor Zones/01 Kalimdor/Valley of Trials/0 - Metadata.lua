@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(12, { -- Kalimdor
+	m(12, {	-- Kalimdor
 		m(1, {	-- Durotar
 			m(461, {	-- Valley of Trials
 				["icon"] = "Interface\\Icons\\Achievement_Character_Orc_Male",

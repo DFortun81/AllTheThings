@@ -210,7 +210,7 @@ _.Zones =
 								},
 								{	-- Interdimensional Pet Portal
 									["itemID"] = 165840,	-- Interdimensional Pet Portal
-								--	["questID"] = 43016, -- Need to find QuestID
+								--	["questID"] = 43016,	-- Need to find QuestID
 								},
 								{	-- Butterfly in a Jar
 									["itemID"] = 163508,	-- Butterfly in a Jar
@@ -485,10 +485,10 @@ _.Zones =
 											},
 										},
 										i(165804, {	-- Outpost Upgrade: Vulpera Hideaway
-											["f"] = 55, -- Consumable; Might change to Misc later
+											["f"] = 55,	-- Consumable; Might change to Misc later
 										}),
 										i(165750, {	-- Outpost Upgrade: Zul'jan Ruins
-											["f"] = 55, -- Consumable; Might change to Misc later
+											["f"] = 55,	-- Consumable; Might change to Misc later
 										}),
 										i(162533, {	-- Scouting Report: Hillcrest Pasture
 											["f"] = 55,	-- Consumable; Might change to Misc later

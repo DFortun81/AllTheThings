@@ -35,7 +35,7 @@ _.Instances = { tier(7, {	-- Legion
 					i(136719),	-- Curdled Soul Essence
 					i(137270),	-- Howling Echoes
 				})),
-				cr(98696, e(1653, { -- Illysanna Ravencrest
+				cr(98696, e(1653, {	-- Illysanna Ravencrest
 					i(134412),	-- Cloak of Unwavering Loyalty
 					i(136978),	-- Ember of Nullification
 					i(134519),	-- Ravencrest Bonecrush Gauntlets
@@ -100,7 +100,7 @@ _.Instances = { tier(7, {	-- Legion
 						i(136719),	-- Curdled Soul Essence
 						i(137270),	-- Howling Echoes
 					})),
-					cr(98696, e(1653, { -- Illysanna Ravencrest
+					cr(98696, e(1653, {	-- Illysanna Ravencrest
 						i(134412),	-- Cloak of Unwavering Loyalty
 						i(136978),	-- Ember of Nullification
 						i(134519),	-- Ravencrest Bonecrush Gauntlets
@@ -171,7 +171,7 @@ _.Instances = { tier(7, {	-- Legion
 						i(136719),	-- Curdled Soul Essence
 						i(137270),	-- Howling Echoes
 					})),
-					cr(98696, e(1653, { -- Illysanna Ravencrest
+					cr(98696, e(1653, {	-- Illysanna Ravencrest
 						ach(10711),	-- Adds? More Like Bads
 						i(134412),	-- Cloak of Unwavering Loyalty
 						i(136978),	-- Ember of Nullification

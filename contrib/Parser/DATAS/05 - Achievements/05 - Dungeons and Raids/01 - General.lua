@@ -12,9 +12,9 @@ To do:
 
 _.Achievements = 
 {
-	n(-9959, { -- Dungeons & Raids
+	n(-9959, {	-- Dungeons & Raids
 		["groups"] = {
-			n(-9955, { -- General
+			n(-9955, {	-- General
 				["groups"] = {
 					ach(12807, {	-- Battle for Azeroth Dungeon Hero
 						crit(1),		-- Heroic: The Temple of Sethraliss

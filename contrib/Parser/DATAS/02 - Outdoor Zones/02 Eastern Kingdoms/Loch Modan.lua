@@ -7,10 +7,10 @@ _.Zones =
 		m(48, {	-- Loch Modan
 			["groups"] = {
 				n(-228, {	-- Flight Path
-					fp(555, { -- Farstrider Lodge, Loch Modan
+					fp(555, {	-- Farstrider Lodge, Loch Modan
 						["coord"] = { 81.8, 64.2 },
 					}),
-					fp(8, { -- Thelsamar, Loch Modan
+					fp(8, {	-- Thelsamar, Loch Modan
 						["coord"] = { 33.8, 50.8 },
 					}),
 				}),
@@ -32,7 +32,7 @@ _.Zones =
 						crit(4),		-- The Farstrider Lodge
 					})),
 ]]--				
-					qg(1092, qa(26148, { -- A Decisive Strike
+					qg(1092, qa(26148, {	-- A Decisive Strike
 						i(58989),	-- Belt of the Valley of Kings
 						i(58990),	-- Rugelfuss Bracers
 						i(58988),	-- Unbound Leggings
@@ -51,7 +51,7 @@ _.Zones =
 						["classes"] = {2},	-- Paladin
 					})),
 --]]					
-					qg(1090, qa(26147, { -- Bigger and Uglier
+					qg(1090, qa(26147, {	-- Bigger and Uglier
 						i(58995),	-- Bonesnapper Bracers
 						i(131491),	-- Bonesnapper Cuffs
 						i(58996),	-- Mountaineer's Belt
@@ -84,7 +84,7 @@ _.Zones =
 					}),
 					qg(44870, qa(27074)),	-- Fight the Hammer
 --]]					
-					qg(1343, qa(26863, { -- Filthy Paws
+					qg(1343, qa(26863, {	-- Filthy Paws
 						i(58978),	-- Filthy Paw
 						i(58980),	-- Ironheart Chain Cloak
 						i(58979),	-- Silver Stream Shield
@@ -115,7 +115,7 @@ _.Zones =
 --[[					
 					qg(1154, qa(27028)),	-- Hornet Hunting
 --]]
-					qg(1092, qa(26146, { -- In Defense of the King's Lands
+					qg(1092, qa(26146, {	-- In Defense of the King's Lands
 						i(131490),	-- Greaves of Uncanny Courage
 						i(58985),	-- Leggings of Uncanny Courage
 						i(58986),	-- Stone Stompers
@@ -153,7 +153,7 @@ _.Zones =
 --					q(13638),	-- The Captured Mountaineer (REMOVED)
 					qg(1187, q(27016)),	-- The Joy of Boar Hunting
 --]]
-					qg(1960, qa(26854, { -- The Lost Pilot
+					qg(1960, qa(26854, {	-- The Lost Pilot
 						i(58970),	-- Mori's Cloak
 						i(58971),	-- Mori's Compass
 						i(58972),	-- Mori's Gear Stick
@@ -169,7 +169,7 @@ _.Zones =
 --[[
 					qg(44859, qa(27025)),	-- Thistle While You Work
 --]]
-					qg(1187, qa(27037, { -- Vyrin's Revenge
+					qg(1187, qa(27037, {	-- Vyrin's Revenge
 						i(59010),	-- Swiftwind Blade
 						i(59008),	-- Unsanitary Gloves
 						i(59009),	-- Vyrin's Belt
@@ -238,7 +238,7 @@ _.Zones =
 						un(7, i(1938)),	-- Block Mallet
 						un(7, i(1215)),	-- Support Girdle			
 					}), 
-					o(207496, { -- Dark Iron Treasure Chest
+					o(207496, {	-- Dark Iron Treasure Chest
 						["groups"] = {
 							i(3292),	-- Ancestral Tunic
 							i(9775),	-- Bandit Cinch
@@ -659,7 +659,7 @@ _.Zones =
 						i(4788),	-- Agile Boots
 						i(4789),	-- Stable Boots
 					})),
-					a(n(1684, { -- Khara Deepwater <Fishing Supplies>
+					a(n(1684, {	-- Khara Deepwater <Fishing Supplies>
 						i(6325),	-- Recipe: Brilliant Smallfish
 						i(6329),	-- Recipe: Loch Frenzy Delight
 						i(6328),	-- Recipe: Longjaw Mud Snapper
@@ -702,7 +702,7 @@ _.Zones =
 				n(-40, {	-- Legacy
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)
-							un(40, qa(283, { -- A Dark Threat Looms
+							un(40, qa(283, {	-- A Dark Threat Looms
 								un(2, i(2907)),	-- Dwarven Tree Chopper
 								un(2, i(2908)),	-- Thornblade 
 							})),
@@ -711,13 +711,13 @@ _.Zones =
 								un(2, i(59011)),	-- Nicolette's Robes
 								un(2, i(59013)),	-- Stonesmirk Breastplate
 							})),
-							un(40, qa(257, { -- A Hunter's Boast
+							un(40, qa(257, {	-- A Hunter's Boast
 								un(2, i(59004)),	-- Daryl's Bow
 								un(2, i(2903)),	-- Daryl's Hunting Bow 
 								un(2, i(2904)),	-- Daryl's Hunting Rifle
 								un(2, i(59003)),	-- Daryl's Rifle
 							})),
-							un(40, qa(258, { -- A Hunter's Challenge
+							un(40, qa(258, {	-- A Hunter's Challenge
 								un(2, i(59000)),	-- Daryl's Axe
 								un(2, i(3572)),		-- Daryl's Shortsword
 								un(2, i(859)),		-- Fine Cloth Shirt
@@ -727,37 +727,37 @@ _.Zones =
 							un(40, qa(704, {	-- Agmond's Fate
 								un(2, i(4980)),	-- Prospector Gloves
 							})),
-							un(40, qa(2038, { -- Bingles' Missing Supplies
+							un(40, qa(2038, {	-- Bingles' Missing Supplies
 								un(2, i(12522)),	-- Bingles' Flying Gloves 
 								un(2, i(58975)),	-- Gnomish All-Purpose Ray Gun
 								un(2, i(58974)),	-- Mechanical Wand
 								un(2, i(58973)),	-- Monte's Scythe
 							})),
-							un(40, qa(385, { -- Crocolisk Hunting
+							un(40, qa(385, {	-- Crocolisk Hunting
 								un(2, i(59007)),	-- Croc-Scale Gloves
 								un(2, i(59006)),	-- Croc-Skin Boots
 								un(2, i(59005)),	-- Marek's Dagger
 							})),
-							un(40, qa(307, { -- Filthy Paws
+							un(40, qa(307, {	-- Filthy Paws
 								un(2, i(3166)),	-- Ironheart Chain 
 								un(2, i(3160)),	-- Ironplate Buckler 
 								un(2, i(3161)),	-- Robe of the Keeper 
 							})),
-							un(40, qa(297, { -- Gathering Idols	
+							un(40, qa(297, {	-- Gathering Idols	
 								un(2, i(5241)),	-- Dwarven Flamestick 
 								un(2, i(3154)),	-- Thelsamar Axe
 								un(2, i(6186)),	-- Trogg Slicer 
 							})),
-							un(40, qa(217, { -- In Defense of the King's Lands
+							un(40, qa(217, {	-- In Defense of the King's Lands
 								un(2, i(6187)),	-- Dwarven Defender 
 								un(2, i(1436)),	-- Frontier Britches 
 								un(2, i(1832)),	-- Lucky Trousers 
 							})),
-							un(40, qa(309, { -- Protecting the Shipment
+							un(40, qa(309, {	-- Protecting the Shipment
 								un(2, i(3217)),	-- Foreman Belt 
 								un(2, i(6188)),	-- Mud Stompers 
 							})),
-							un(40, qa(416, { -- Rat Catching
+							un(40, qa(416, {	-- Rat Catching
 								un(2, i(58977)), 	-- Algaz Shield
 								un(2, i(3217)),	-- Foreman Belt 
 								un(2, i(6188)),	-- Mud Stompers 
@@ -769,7 +769,7 @@ _.Zones =
 								un(2, i(59014)),	-- Kizmet's Wrap
 								un(2, i(59017)),	-- Strange Smelling Boots
 							})),
-							un(40, qa(256, { -- WANTED: Chok'sul
+							un(40, qa(256, {	-- WANTED: Chok'sul
 								un(2, i(59028)),	-- Bluntnose's Signet
 								un(2, i(59026)), 	-- Bounty Hunter's Bracers
 								un(2, i(6191)),		-- Kimbra Boots 

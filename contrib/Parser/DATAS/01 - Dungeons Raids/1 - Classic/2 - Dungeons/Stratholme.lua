@@ -409,8 +409,8 @@ _.Instances = { tier(1, {	-- Classic
 							["achievementID"] = 646,	-- Stratholme
 							["criteriaID"] = 2,	-- Lord Aurius Rivendare slain
 						},
-						i(13335, { -- Deathcharger's Reins (MOUNT!)
-							ach(729), -- Deathcharger's Reins
+						i(13335, {	-- Deathcharger's Reins (MOUNT!)
+							ach(729),	-- Deathcharger's Reins
 						}),
 						i(13505),	-- Runeblade of Baron Rivendare
 						i(13368),	-- Bonescraper

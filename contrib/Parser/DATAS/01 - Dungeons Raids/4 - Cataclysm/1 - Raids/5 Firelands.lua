@@ -34,7 +34,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 						["description"] = "This quest is auto accepted upon killing a Molten Lord.",
 						["allianceQuestID"] = 29453,	-- Your Time Has Come [A]
 						["hordeQuestID"] = 	  29452,	-- Your Time Has Come [H]
-						["qg"] = 53115, -- Molten Lord
+						["qg"] = 53115,	-- Molten Lord
 						["isBreadcrumb"] = true,    -- for A Legendary Engagement
 					},
 					{
@@ -234,7 +234,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 				},
 			},
 			n( -2, {	-- Vendors
-				n(54401, { -- Naresir Stormfury
+				n(54401, {	-- Naresir Stormfury
 					i(70930),
 					i(71229),
 					i(71228),
@@ -589,7 +589,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 				["difficulties"] = { 5, 6 },
 				["groups"] = {
 					n( -2, {	-- Vendors
-						n(54402, { -- Lurah Wrathvine
+						n(54402, {	-- Lurah Wrathvine
 							["description"] = "Bring this vendor Crystallized Firestones from the bosses and the BoE and she'll upgrade it to the Heroic version.",
 							["groups"] = {
 								i(71617, {	-- Crystallized Firestone

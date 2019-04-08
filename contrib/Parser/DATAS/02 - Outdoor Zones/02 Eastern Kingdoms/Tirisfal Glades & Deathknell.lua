@@ -19,11 +19,11 @@ _.Zones =
 					},
 				}),
 				n(-228, {	-- Flight Path
-					fp(460, { -- Brill, Tirisfal Glades [H]
+					fp(460, {	-- Brill, Tirisfal Glades [H]
 						["description"] = "Brill, Tirisfal Glades - Horde Only",
 						["coord"] = { 58.8, 51.8 },
 					}),
-					fp(384, { -- The Bulwark, Tirisfal
+					fp(384, {	-- The Bulwark, Tirisfal
 						["coord"] = { 83.4, 70 },
 					}),
 				}),
@@ -72,7 +72,7 @@ _.Zones =
 						["qg"] = 11055,	-- Shadow Priestess Vandis
 						["sourceQuests"] = { 26931 },	-- Foxes and Hounds
 					}),
-					qh(26931, { -- Foxes and Hounds -- anytime
+					qh(26931, {	-- Foxes and Hounds -- anytime
 						["groups"] = {
 							i(62161),	-- Bullmastiff Vest
 							i(62163),	-- Fox Hunter's Rifle
@@ -104,7 +104,7 @@ _.Zones =
 						["sourceQuests"] = { 26933 },	-- Foes before Hoes
 						["isBreadcrumb"] = true,	-- for "A New Era for the Plaguelands"
 					}),
-					qh(26978, { -- Who Needs Cauldrons?
+					qh(26978, {	-- Who Needs Cauldrons?
 						["groups"] = {
 							i(62171),	-- Cloak of the Salted Earth
 							i(62169),	-- Dithering Belt
@@ -113,7 +113,7 @@ _.Zones =
 						["qg"] = 11057,	-- Apothecary Dithers
 						["sourceQuests"] = { 26934 },	-- Latent Disease
 					}),
-					qh(25046, { -- A Daughter's Embrace
+					qh(25046, {	-- A Daughter's Embrace
 						["groups"] = {
 							i(57169),	-- Darrington's Dirk
 							i(57170),	-- Lilian's Staff
@@ -131,7 +131,7 @@ _.Zones =
 						["sourceQuests"] = { 40705 },	-- Priestly Matters
 						["classes"] = { 5 },	-- priest
 					})),
-					qh(25013, { -- A Little Oomph
+					qh(25013, {	-- A Little Oomph
 						["groups"] = {
 							i(57167),	-- Night Web Gloves
 							i(57166),	-- Advanced Night Web Crossbow
@@ -166,7 +166,7 @@ _.Zones =
 					qh(24990, {	-- Darkhound Pounding -- anytime
 						["qg"] = 10665,	-- Junior Apothecary Holland
 					}),
-					qh(25029, { -- Deaths in the Family
+					qh(25029, {	-- Deaths in the Family
 						["groups"] = {
 							i(3446),	-- Darkwood Staff
 							i(3440),	-- Bonecracker
@@ -367,12 +367,12 @@ _.Zones =
 					q(11953),	-- Striking Back	-- Midsummer
 					qh(29427),	-- The Collector's Agent	-- Hallow's End
 					qh(14174),	-- The Grateful Dead	-- Day of the Dead
-					qh(11971), -- The Spinner of Summer Tales	-- Midsummer Fire Festival
+					qh(11971),	-- The Spinner of Summer Tales	-- Midsummer Fire Festival
 					qh(11923),	-- Torch Catching	-- Midsummer
 					qh(11922),	-- Torch Tossing	-- Midsummer
 					q(11886),	-- Unusual Activity	-- Midsummer Fire Festival
-					qh(14059), -- We're Out of Cranberry Chutney Again?	-- Pilgrim's Bounty
-					qh(29428), -- What Now?	-- Hallow's End
+					qh(14059),	-- We're Out of Cranberry Chutney Again?	-- Pilgrim's Bounty
+					qh(29428),	-- What Now?	-- Hallow's End
 --]]
 				}),
 				n(-16, {	-- Rares
@@ -497,21 +497,21 @@ _.Zones =
 						dr(0.9, i(68748)),	-- Imbued Disciple's Cloak
 					}),
 --[[
---					n(1531, { -- Lost Soul	}), 
---					n(1910, { -- Muad	}), 
---					n(1936, { -- Farmer Solliden	}), 
---					n(10356, { -- Bayne	}), 
---					n(50763, { -- Shadowstalker	}), 
---					n(50803, { -- Bonechewer	}), 
---					n(50930, { -- Hibernus the Sleeper	}), 
---					n(51044, { -- Plague	}),	
+--					n(1531, {	-- Lost Soul	}), 
+--					n(1910, {	-- Muad	}), 
+--					n(1936, {	-- Farmer Solliden	}), 
+--					n(10356, {	-- Bayne	}), 
+--					n(50763, {	-- Shadowstalker	}), 
+--					n(50803, {	-- Bonechewer	}), 
+--					n(50930, {	-- Hibernus the Sleeper	}), 
+--					n(51044, {	-- Plague	}),	
 --]]								
 				}),
 				n( -2, {	-- Vendors
 					nh(2118, {	-- Abigail Shiel <Trade Supplies>
 						i(12226),	-- Recipe: Crispy Bat Wing
 					}),
-					n(10856, { -- Argent Quartermaster Hasana <The Argent Dawn>
+					n(10856, {	-- Argent Quartermaster Hasana <The Argent Dawn>
 						i(19446),	-- Formula: Enchant Bracer - Argent Versatility
 						i(19447),	-- Formula: Enchant Bracer - Healing Power
 						i(19442),	-- Formula: Powerful Anti-Venom
@@ -528,18 +528,18 @@ _.Zones =
 						i(18172),	-- Nature Mantle of the Dawn
 						i(18173),	-- Shadow Mantle of the Dawn
 					}),
-					nh(3522, { -- Constance Brisboise <Apprentice Clothier>
+					nh(3522, {	-- Constance Brisboise <Apprentice Clothier>
 						i(6270),	-- Pattern: Blue Linen Vest
 					}),
-					nh(3550, { -- Martine Tramblay <Fishing Supplies>
+					nh(3550, {	-- Martine Tramblay <Fishing Supplies>
 						i(6325),	-- Recipe: Brilliant Smallfish
 						i(6326),	-- Recipe: Slitherskin Mackerel
 					}),
-					nh(12943, { -- Werg Thickblade <Leatherworking Supplies>
+					nh(12943, {	-- Werg Thickblade <Leatherworking Supplies>
 						i(15741),	-- Pattern: Stormshroud Pants
 						i(15725),	-- Pattern: Wicked Leather Gauntlets
 					}),
-					nh(4731, { -- Zachariah Post <Undead Horse Merchant>
+					nh(4731, {	-- Zachariah Post <Undead Horse Merchant>
 						i(13334),
 						i(18791),
 						i(47101),
@@ -549,7 +549,7 @@ _.Zones =
 						i(46308),
 					})
 				}),
-				m(19, { -- Scarlet Monastery Entrace
+				m(19, {	-- Scarlet Monastery Entrace
 					["groups"] = {
 						i(7753),	-- Bloodspiller
 						i(7729),	-- Chesterfall Musket
@@ -576,12 +576,12 @@ _.Zones =
 						i(7786),    -- Headsplitter
 					},
 					["crs"] = {
-						4284, -- Scarlet Augur		
-						4285, -- Scarlet Disciple		
-						4282, -- Scarlet Magician		
-						4280, -- Scarlet Preserver		
-						4281, -- Scarlet Scout		
-						4283, -- Scarlet Sentry
+						4284,	-- Scarlet Augur		
+						4285,	-- Scarlet Disciple		
+						4282,	-- Scarlet Magician		
+						4280,	-- Scarlet Preserver		
+						4281,	-- Scarlet Scout		
+						4283,	-- Scarlet Sentry
 					},
 					["icon"] = "Interface\\Icons\\inv_helmet_52",
 				}),
@@ -709,7 +709,7 @@ _.Zones =
 							q(26799, {	-- Those That Couldn't Be Saved
 								["qg"] = 1568,	-- Undertaker Mordo
 								["sourceQuests"] = { 28608 },	-- The Shadow Grave
-								["races"] = { 5 }, -- undead
+								["races"] = { 5 },	-- undead
 							}),
 							qh(24972, {	-- Vital Intelligence
 								["qg"] = 1569,	-- Shadow Priest Sarvis
@@ -717,7 +717,7 @@ _.Zones =
 								["isBreadcrumb"] = true,
 							}),
 						}),
-						n(-16, { -- Rares
+						n(-16, {	-- Rares
 							n(50328),	-- Fangor
 							n(1688),	-- Night Web Matriarch
 						}),

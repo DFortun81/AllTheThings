@@ -11,7 +11,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 				["lvl"] = 85,
 				["ignoreBonus"] = true,
 				["groups"] = {
-					n(0, { -- Zone Drop
+					n(0, {	-- Zone Drop
 						{	-- Blackwater Cutlass
 							["itemID"] = 1951,	-- Blackwater Cutlass
 							["crs"] = {
@@ -52,7 +52,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 							},
 						},
 					}),
-					cr(47162, e(89, { -- Glubtok
+					cr(47162, e(89, {	-- Glubtok
 						{	-- Ready for Raiding
 							["achievementID"] = 5366,	-- Ready for Raiding
 						},
@@ -63,7 +63,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 						i( 63471),	-- Vest of the Curious Visitor
 						i(157628),	-- Gold-Flecked Gloves
 					})),
-					cr(47296, e(90, { -- Helix Gearbreaker
+					cr(47296, e(90, {	-- Helix Gearbreaker
 						{	-- Rat Pack
 							["achievementID"] = 5367,	-- Rat Pack
 						},
@@ -74,7 +74,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 						i( 63474),	-- Gear-Marked Gauntlets
 						i( 63475),	-- Old Friend's Gloves
 					})),
-					cr(43778, e(91, { -- Foe Reaper 5000
+					cr(43778, e(91, {	-- Foe Reaper 5000
 						{	-- Prototype Prodigy
 							["achievementID"] = 5368,	-- Prototype Prodigy
 						},
@@ -85,7 +85,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 						i(157753),	-- Vest of the Curious Visitor
 						i(157754),	-- Old Friend's Gloves
 					})),
-					cr(47626, e(92, { -- Admiral Ripsnarl
+					cr(47626, e(92, {	-- Admiral Ripsnarl
 						{	-- It's Frost Damage
 							["achievementID"] = 5369,	-- It's Frost Damage
 						},
@@ -93,7 +93,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 						i( 65170),	-- Smite's Reaper
 						i( 65169),	-- Lavishly Jeweled Ring
 					})),
-					cr(47739, e(93, { -- "Captain" Cookie
+					cr(47739, e(93, {	-- "Captain" Cookie
 						{	-- I'm on a Diet
 							["achievementID"] = 5370,	-- I'm on a Diet
 						},
@@ -103,7 +103,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 						i(65177),	-- Cape of the Brotherhood
 						i(65174),	-- Corsair's Overshirt
 					})),
-					cr(49541, e(95, { -- Vanessa VanCleef
+					cr(49541, e(95, {	-- Vanessa VanCleef
 						{	-- Heroic: Deadmines
 							["achievementID"] = 5083,	-- Heroic: Deadmines
 						},

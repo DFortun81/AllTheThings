@@ -4,9 +4,9 @@
 
 _.Achievements = 
 {
-	n(-9964, { -- Collections
+	n(-9964, {	-- Collections
 		["groups"] = {
-			n(-10032, { -- Appearances
+			n(-10032, {	-- Appearances
 				["groups"] = {
 					ach(11715),	-- (Ruth)less is More (PvP Season 10)
 					ach(11743),	-- Accessor-Eyes (Temple of Ahn'Qiraj)

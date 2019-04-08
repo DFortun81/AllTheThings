@@ -7,7 +7,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 		["lvl"] = 59,
 		["mapID"] = 129,
 		["maps"] = {
-			370, -- The Nexus (Dragonwrath, Tarecgosa's Rest Quest Chain)
+			370,	-- The Nexus (Dragonwrath, Tarecgosa's Rest Quest Chain)
 		},
 		["groups"] = {
 			n(-17, {	-- Quests

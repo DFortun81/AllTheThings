@@ -4,9 +4,9 @@
 
 _.Achievements = 
 {
-	n(-9959, { -- Dungeons & Raids
+	n(-9959, {	-- Dungeons & Raids
 		["groups"] = {
-			n(-10005, { -- Lich King Raid
+			n(-10005, {	-- Lich King Raid
 				["groups"] = {
 					{	-- A Poke in the Eye (10 player)
 						["achievementID"] = 1869,	-- A Poke in the Eye (10 player)
@@ -1469,10 +1469,10 @@ _.Achievements =
 								["titleID"] = 107,	-- of the Nightfall
 							},
 							{	-- Twilight Duo (10 player)
-								["achievementID"] = 2050, -- Twilight Duo (10 player) 
+								["achievementID"] = 2050,	-- Twilight Duo (10 player) 
 							},
 							{	-- Twilight Assist (10 player)
-								["achievementID"] = 2049, -- Twilight Assist (10 player) 
+								["achievementID"] = 2049,	-- Twilight Assist (10 player) 
 							},
 						},
 					},
@@ -1483,10 +1483,10 @@ _.Achievements =
 								["titleID"] = 89,	-- Twilight Vanquisher
 							},
 							{	-- Twilight Duo (25 player)
-								["achievementID"] = 2053, -- Twilight Duo (25 player) 
+								["achievementID"] = 2053,	-- Twilight Duo (25 player) 
 							},
 							{	-- Twilight Assist (25 player)
-								["achievementID"] = 2052, -- Twilight Assist (25 player) 
+								["achievementID"] = 2052,	-- Twilight Assist (25 player) 
 							},
 						},
 					},

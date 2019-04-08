@@ -16,7 +16,7 @@ _.Zones =
 								["npcID"] = 87394,	-- Kwilax Fuseshiv <Reputation Vendor>
 								["coord"] = { 50.4, 41.4 },
 								["g"] = {
-									currency(823, { -- Apexis Crystal
+									currency(823, {	-- Apexis Crystal
 										["groups"] = {
 											i(119149),	-- Captured Forest Sproutling
 											i(116672),	-- Domesticated Razorback

@@ -1,5 +1,5 @@
 -- Tailoring - Skill ID 197 / Spell ID 3908
-profession(197, { -- Tailoring
+profession(197, {	-- Tailoring
 	gb(128, {	-- Tailoring Emporium (Level 3)
 		["maps"] = {582, 590},	-- Both Garrisons
 		["groups"] = {

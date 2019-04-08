@@ -33,7 +33,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							},
 						}),
 						e(2332, {	-- Uu'nat, Harbinger of the Void
-							["crs"] = {	145371 }, -- Uu'nat, Harbinger of the Void
+							["crs"] = {	145371 },	-- Uu'nat, Harbinger of the Void
 							["g"] = {
 								i(167864),	-- Trident of Deep Ocean
 								i(167839),	-- Grips of Forsaken Sanity
@@ -70,7 +70,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					},
 				}),
 				e(2332, {	-- Uu'nat, Harbinger of the Void
-					["crs"] = {	145371 }, -- Uu'nat, Harbinger of the Void
+					["crs"] = {	145371 },	-- Uu'nat, Harbinger of the Void
 					["g"] = {
 						i(167864),	-- Trident of Deep Ocean
 						i(167839),	-- Grips of Forsaken Sanity
@@ -105,7 +105,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					},
 				}),
 				e(2332, {	-- Uu'nat, Harbinger of the Void
-					["crs"] = {	145371 }, -- Uu'nat, Harbinger of the Void
+					["crs"] = {	145371 },	-- Uu'nat, Harbinger of the Void
 					["g"] = {
 						i(167864),	-- Trident of Deep Ocean
 						i(167839),	-- Grips of Forsaken Sanity
@@ -140,7 +140,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					},
 				}),
 				e(2332, {	-- Uu'nat, Harbinger of the Void
-					["crs"] = {	145371 }, -- Uu'nat, Harbinger of the Void
+					["crs"] = {	145371 },	-- Uu'nat, Harbinger of the Void
 					["g"] = {
 						i(167864),	-- Trident of Deep Ocean
 						i(167839),	-- Grips of Forsaken Sanity

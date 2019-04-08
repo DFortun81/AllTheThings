@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	h(i(155915, { -- Special Duty Assignments
+	h(i(155915, {	-- Special Duty Assignments
 		["groups"] = {
 			--[[
 				Warboard quests should be listed beneath this note. [Pr3vention]
@@ -58,7 +58,7 @@ _.Zones =
 		["collectible"] = false,
 		["races"] = HORDE_ONLY,
 	})),
-	a(i(156474, { -- Special Duty Assignments
+	a(i(156474, {	-- Special Duty Assignments
 		["groups"] = {
 			--[[
 				Warboard quests should be listed beneath this note. [Pr3vention]
@@ -108,9 +108,9 @@ _.Zones =
 					i(60688),	-- Parker's Yardstick
 					i(60691),	-- Unfortunate Treads
 				},
-				["qg"] = 107574, -- Anduin Wrynn <King of Stormwind> 
+				["qg"] = 107574,	-- Anduin Wrynn <King of Stormwind> 
 			}),
-			q(49846, { -- Wars on Two Fronts [Cataclysm]
+			q(49846, {	-- Wars on Two Fronts [Cataclysm]
 				["g"] = {
 					qa(49865, {	-- Cataclysm First Responder (Alliance)
 						["isBreadcrumb"] = true,
@@ -119,21 +119,21 @@ _.Zones =
 						["isBreadcrumb"] = true,
 					}),
 				},
-				["itemID"] = 156477, -- Special Duty Assignments
+				["itemID"] = 156477,	-- Special Duty Assignments
 				["description"] = "The Special Duty Assignments will automatically pop up when you reach level 80.  You can use them to progress either to Cataclysm or Pandaria.",
 				-- The same item is used to start Cataclysm or Pandaria content (your choice).
 				-- Received 49846 on Alliance Warlock when I hit 80, so it isn't the Horde version item as a previous comment speculated. - slumber
 			}),
-			q(49864, { -- Wars on Two Fronts [Pandaria]
+			q(49864, {	-- Wars on Two Fronts [Pandaria]
 				["groups"] = {
-					qa(49866, { -- To Pandaria! (Alliance)
+					qa(49866, {	-- To Pandaria! (Alliance)
 						["isBreadcrumb"] = true,
 					}),
-					qh(49852, { -- To Pandaria! (Horde)
+					qh(49852, {	-- To Pandaria! (Horde)
 						["isBreadcrumb"] = true,
 					}),
 				},
-				["itemID"] = 156477, -- Special Duty Assignments
+				["itemID"] = 156477,	-- Special Duty Assignments
 				["description"] = "The Special Duty Assignments will automatically pop up when you reach level 80.  You can use them to progress either to Cataclysm or Pandaria.",
 			}),
 		},

@@ -7,13 +7,13 @@ _.Zones =
 		m(49, {		-- Redridge Mountains
 			["groups"] = {							
 				n(-228, {	-- Flight Path
-					fp(615, { -- Camp Everstill, Redridge
+					fp(615, {	-- Camp Everstill, Redridge
 						["coord"] = { 52.8, 54.6 },
 					}),
-					fp(5, { -- Lakeshire, Redridge
+					fp(5, {	-- Lakeshire, Redridge
 						["coord"] = { 29.4, 53.6 },
 					}),
-					fp(596, { -- Shalewind Canyon, Redridge
+					fp(596, {	-- Shalewind Canyon, Redridge
 						["coord"] = { 77.8, 65.8 },
 					}),
 				}),
@@ -24,14 +24,14 @@ _.Zones =
 					p(378), 	-- Rabbit
 					p(392), 	-- Redridge Rat
 					p(424), 	-- Roach
-					qg(65651, qa(31726, { -- Eric Davidson
+					qg(65651, qa(31726, {	-- Eric Davidson
 						i(89125),	-- Sack of Pet Supplies
 					})),
 					qr(qg(65651, qa(31781))),	-- Lindsay (DAILY)
 				}),
 				n(-17, {	-- Quests
-					a(ach(4902, { -- Redridge Mountain Quests
-						a(crit(1, { -- The Gnoll Offensive
+					a(ach(4902, {	-- Redridge Mountain Quests
+						a(crit(1, {	-- The Gnoll Offensive
 							qg(464, qa(26503, {	-- Still Assessing the Threat
 								["groups"] = {
 									i(60687),	-- Belt of the Sons
@@ -55,15 +55,15 @@ _.Zones =
 								["sourceQuests"] = {26514},	-- Canyon Romp
 							})),
 							{
-								["itemID"] = 58898, -- Dirt-Stained Scroll
-								["questID"] = 26519, -- He Who Controls the Ettins
+								["itemID"] = 58898,	-- Dirt-Stained Scroll
+								["questID"] = 26519,	-- He Who Controls the Ettins
 								["qgs"] = {
 									445,	-- Redridge Alpha
 									446,	-- Redridge Basher
 									430,	-- Redridge Mystic
 								},
 								["sourceQuests"] = { 26514 },	-- Canyon Romp
-								["races"] = ALLIANCE_ONLY, -- Alliance Only Races
+								["races"] = ALLIANCE_ONLY,	-- Alliance Only Races
 							},	
 							qg(382, qa(26513, {	-- Like a Fart in the Wind
 								["groups"] = {
@@ -86,7 +86,7 @@ _.Zones =
 								["sourceQuests"] = {26544},	-- They've Wised Up...
 							})),
 							o(204351, {	-- Ettin Control Orb
-								qa(26520, { -- Saving Foreman Oslow
+								qa(26520, {	-- Saving Foreman Oslow
 									["groups"] = {
 										i(60701),	-- Leverage Bracers
 										i(131543),	-- Leverage Wriststraps
@@ -97,7 +97,7 @@ _.Zones =
 								}),
 							}),
 						})),
-						a(crit(2, { -- Keeshan's Raiders
+						a(crit(2, {	-- Keeshan's Raiders
 							qg(43221, qa(26567, {	-- John J. Keeshan
 								["sourceQuests"] = {26545},	-- Yowler Must Die!
 							})),
@@ -149,7 +149,7 @@ _.Zones =
 								["sourceQuests"] = {26563},	-- Return of the Bravo Company
 							})),
 						})),
-						a(crit(3, { -- First Blood
+						a(crit(3, {	-- First Blood
 							qg(43184, qa(26616, {	-- It's Never Over
 								["sourceQuests"] = {26607},	-- They Drew First Blood
 							})),
@@ -237,10 +237,10 @@ _.Zones =
 							})),
 						})),
 					})),
-					n(-168, { -- Other Quests
+					n(-168, {	-- Other Quests
 						sz(780,1, {  -- Lakeshire
 							["groups"] = {
-								qg(8965, qa(26508)), -- Nida's Necklace
+								qg(8965, qa(26508)),	-- Nida's Necklace
 								qg(342, qa(26509)),	-- An Unwelcome Guest
 								qg(900, qa(26511, {	-- Lake Everstill Clean Up
 									i(60699),	-- Bailiff's Gloves
@@ -255,18 +255,18 @@ _.Zones =
 								})),
 								qg(620, q(3861, {	-- CLUCK!
 									["groups"] = {
-										i(11110), -- Chicken Egg
+										i(11110),	-- Chicken Egg
 									},
 									["repeatable"] = true,
 								})),
 							},
 							["collectible"] = false,
 						}),
-						sz(780,3, { -- Three Corners
+						sz(780,3, {	-- Three Corners
 							["groups"] = {
 								qg(379, qa(26506)),	-- Franks and Beans
 								o(204344, {	-- Wanted!
-									qa(26504, { -- Wanted: Redridge Gnolls
+									qa(26504, {	-- Wanted: Redridge Gnolls
 										i(60684),	-- Royal Guard Breastplate
 										i(60683),	-- Tower Watch Bracers
 										i(60682),	-- Watch Captain's Cloak

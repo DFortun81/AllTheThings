@@ -24,15 +24,15 @@ _.Zones =
 								130039,	-- Brinebrawn Cannoneer
 								135585,	-- Drowned Acendant
 								131404,	-- Foreman Scripps
-								138170, -- Irontide  Cutthroat
+								138170,	-- Irontide  Cutthroat
 								138167,	-- Irontide Trickshot
 								131646,	-- Panicked Tunneler
 								130531,	-- Shipwright Turncoat
 								141143,	-- Sister Absinthe
 								137893,	-- Storm's Wake Footman
-								136158, -- Tidesage Archivist
+								136158,	-- Tidesage Archivist
 								138332,	-- Tidesage Morris
-								138340, -- Tidesage Ritualist
+								138340,	-- Tidesage Ritualist
 							},
 						}),
 					},

@@ -7,10 +7,10 @@ _.Zones =
 		m(57, {	-- Teldrassil
 			["groups"] = {
 				n(-228, {	-- Flight Paths
-					fp(456, { -- Dolanaar, Teldrassil
+					fp(456, {	-- Dolanaar, Teldrassil
 						["coord"] = { 55.4, 50.4, 57 },
 					}),
-					fp(27, { -- Rut'theran Village, Teldrassil
+					fp(27, {	-- Rut'theran Village, Teldrassil
 						["coord"] = { 55.4, 88.4, 57 },
 					}),
 				}),

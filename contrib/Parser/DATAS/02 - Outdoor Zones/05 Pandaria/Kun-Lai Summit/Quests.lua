@@ -302,53 +302,53 @@ _.Zones =
 							q(30490),	-- Yakity Yak
 							q(30587),	-- Yakity Yak
 		--]]
-							spell(229385, { -- Ban-Lu, Grandmaster's Companion
+							spell(229385, {	-- Ban-Lu, Grandmaster's Companion
 								["groups"] = {
-									q(46343, { -- The Trail of Ban-Lu	
+									q(46343, {	-- The Trail of Ban-Lu	
 										["groups"] = {
 										},
-										["qgs"] = 120722, -- Master Bu
-										["sourceQuests"] = { 46342 }, -- Return ot the Broken Peak
+										["qgs"] = 120722,	-- Master Bu
+										["sourceQuests"] = { 46342 },	-- Return ot the Broken Peak
 									}),	
-									q(46344, { -- Smelly's Luckydo	
+									q(46344, {	-- Smelly's Luckydo	
 										["groups"] = {
 										},
-										["qgs"] = 120744, -- Smelly Mountaintop
-										["sourceQuests"] = { 46343 }, -- The Trail of Ban-Lu
+										["qgs"] = 120744,	-- Smelly Mountaintop
+										["sourceQuests"] = { 46343 },	-- The Trail of Ban-Lu
 									}),	
-									q(46346, { -- The Shadow of Ban-Lu	
+									q(46346, {	-- The Shadow of Ban-Lu	
 										["groups"] = {
 										},
-										["qgs"] = 120722, -- Master Bu
-										["sourceQuests"] = { 46344 }, -- Smelly's Luckydo
+										["qgs"] = 120722,	-- Master Bu
+										["sourceQuests"] = { 46344 },	-- Smelly's Luckydo
 									}),	
-									q(46347, { -- Clean-up on Aisle Sha	
+									q(46347, {	-- Clean-up on Aisle Sha	
 										["groups"] = {
 										},
-										["qgs"] = 120722, -- Master Bu
-										["sourceQuests"] = { 46346 }, -- The Shadow of Ban-Lu
+										["qgs"] = 120722,	-- Master Bu
+										["sourceQuests"] = { 46346 },	-- The Shadow of Ban-Lu
 									}),	
-									q(46348, { -- The River to Ban-Lu	
+									q(46348, {	-- The River to Ban-Lu	
 										["groups"] = {
 										},
-										["qgs"] = 120722, -- Master Bu
-										["sourceQuests"] = { 46347 }, -- Clean-up on Aisle Sha
+										["qgs"] = 120722,	-- Master Bu
+										["sourceQuests"] = { 46347 },	-- Clean-up on Aisle Sha
 									}),	
-									q(46349, { -- Lilies for Ryuli	
+									q(46349, {	-- Lilies for Ryuli	
 										["groups"] = {
 										},
-										["qgs"] = 120726, -- Waterspeaker Ryuli
-										["sourceQuests"] = { 46348 }, -- The River to Ban-Lu
+										["qgs"] = 120726,	-- Waterspeaker Ryuli
+										["sourceQuests"] = { 46348 },	-- The River to Ban-Lu
 									}),	
-									q(46350, { -- The Trial of Ban-Lu	
+									q(46350, {	-- The Trial of Ban-Lu	
 										["groups"] = {
-											i(142225), -- Ban-Lu, Grandmaster's Companion
+											i(142225),	-- Ban-Lu, Grandmaster's Companion
 										},
-										["qgs"] = 120726, -- Waterspeaker Ryuli
-										["sourceQuests"] = { 46349 }, -- Lilies for Ryuli
+										["qgs"] = 120726,	-- Waterspeaker Ryuli
+										["sourceQuests"] = { 46349 },	-- Lilies for Ryuli
 									}),	
 								},
-								["classes"] = { 10 }, -- Monk
+								["classes"] = { 10 },	-- Monk
 								["lvl"] = 110,
 							}),
 							q(30820,  {  	-- A Funeral

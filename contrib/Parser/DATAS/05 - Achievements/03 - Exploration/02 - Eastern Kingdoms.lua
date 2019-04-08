@@ -4,9 +4,9 @@
 
 _.Achievements =
 {
-	n(-9957, { -- Exploration
+	n(-9957, {	-- Exploration
 		["groups"] = {
-			n(-9975, { -- Eastern Kingdoms
+			n(-9975, {	-- Eastern Kingdoms
 				["groups"] = {
 					ach(761, {	-- Explore Arathi Highlands
 						crit(1),	-- Circle of West Binding

@@ -9,7 +9,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 		["coord"] = { 76.76, 84.44, 249 },	-- Vortex Pinnacle, Uldum
 		["groups"] = {
 			n(-17, {	-- Quests 
-				q(28779, { -- A Long Way from Home
+				q(28779, {	-- A Long Way from Home
 					["qg"] = 49943,	-- Itesh
 					["groups"] = {
 						i(66898),	-- Cloak of Itesh
@@ -17,15 +17,15 @@ _.Instances = { tier(4, {	-- Cataclysm
 						i(66900),	-- Band of the Dead End
 					},
 				}),
-				q(28845, { -- The Vortex Pinnacle
+				q(28845, {	-- The Vortex Pinnacle
 					["qg"] = 49943,	-- Itesh
 					["isBreadcrumb"] = true,
 					["sourceQuests"] = { 28779 },	-- A Long Way from Home
 				}),
-				q(28760, { -- Vengeance for Orsis
+				q(28760, {	-- Vengeance for Orsis
 					["qg"] = 49943,	-- Itesh
 					["groups"] = {
-						i(66901), -- Greaves of Orsis
+						i(66901),	-- Greaves of Orsis
 					},
 				}),
 			}),
@@ -181,7 +181,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 			d(24, {	-- Timewalking
 				["lvl"] = 86,
 				["groups"] = {
-					cr(43878, e(114, { -- Grand Vizier Ertan
+					cr(43878, e(114, {	-- Grand Vizier Ertan
 						i(133233),	-- Biting Wind
 						i(133234),	-- Headcover of Fog
 						i(133361),	-- Choker of Stolen Thunder
@@ -191,7 +191,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 						i(133232),	-- Stratosphere Belt
 						i(133252),	-- Rainsong
 					})),
-					cr(43873, e(115, { -- Altairus
+					cr(43873, e(115, {	-- Altairus
 						i(63040),	-- Reins of the Drake of the North Wind (MOUNT!)
 						i(133371),	-- Thundercleaver Axe
 						i(133240),	-- Axe of the Eclipse
@@ -204,7 +204,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 						i(133370),	-- Sandals of the West Wind
 						i(133241),	-- Skyshard Ring
 					})),
-					cr(43875, e(116, { -- Asaad, Caliph of Zephyrs
+					cr(43875, e(116, {	-- Asaad, Caliph of Zephyrs
 						i(133242),	-- Lightningflash	--Note!! Possible removal in 8.0 need confirmed reports
 						i(133249),	-- Lunar Halo
 						i(133245),	-- Billowing Cape

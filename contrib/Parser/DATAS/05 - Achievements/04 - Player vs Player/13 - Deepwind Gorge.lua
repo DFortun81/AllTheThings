@@ -12,9 +12,9 @@ To do:
 
 _.Achievements = 
 {
-	n(-9958, { -- Player vs Player
+	n(-9958, {	-- Player vs Player
 		["groups"] = {
-			n(-9994, { -- Deepwind Gorge
+			n(-9994, {	-- Deepwind Gorge
 				["groups"] = {
 					ach(8359),	-- Capping Spree
 					ach(8358, {	-- Deepwind Gorge All-Star

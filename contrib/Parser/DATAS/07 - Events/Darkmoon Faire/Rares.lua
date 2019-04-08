@@ -11,7 +11,7 @@ _.WorldEvents =
 				["g"] = {
 					{	-- Darkmoon Rabbit
 						["npcID"] = 58336,	-- Darkmoon Rabbit
-						["achievementID"] = 6332, -- That Rabbit's Dynamite!
+						["achievementID"] = 6332,	-- That Rabbit's Dynamite!
 						["coords"] = {
 							{ 75.69, 78.17, 407 },
 						},
@@ -27,7 +27,7 @@ _.WorldEvents =
 					},
 					{	-- Death Metal Knight
 						["npcID"] = 122899,	-- Death Metal Knight
-						["achievementID"] = 11918, -- Hey, You're A Rockstar!
+						["achievementID"] = 11918,	-- Hey, You're A Rockstar!
 						["questID"] = 47767,
 						["isWeekly"] = true,
 						["coords"] = {

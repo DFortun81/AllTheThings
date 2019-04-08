@@ -468,7 +468,7 @@ _.Zones =
 									["coord"] = { 19.1, 49.4, 102 },
 									["sourceQuest"] = 50131,	-- An Outside Perspective
 									["description"] = "Available from Neutral to Honored with Sporeggar.",
-									["isBreadcrumb"] = true, -- Not possible if you reached honored or higher
+									["isBreadcrumb"] = true,	-- Not possible if you reached honored or higher
 								}),
 								q(9726, {	-- Now That We're Friends...
 									["qg"] = 17856,	-- Gzhun'tt

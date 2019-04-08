@@ -1,5 +1,5 @@
 -- Alchemy - Skill ID 171 / Spell ID 2259
-profession(171, { -- Alchemy
+profession(171, {	-- Alchemy
 	gb(120, {	-- Alchemy Lab (Level 3)
 		["maps"] = {582, 590},	-- Both Garrisons
 		["groups"] = {

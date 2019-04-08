@@ -5,8 +5,8 @@ _.WorldDrops =
 {
 	{
 		["groups"] = {
-			n(-318, { -- Armor
-				n(-320, { -- Head
+			n(-318, {	-- Armor
+				n(-320, {	-- Head
 					i(118821),	-- Mystical Cap of Skill
 					i(118829),	-- Treasure Hunter's Bandana
 					i(118836),	-- Rellwyn's Crimson Cowl
@@ -42,7 +42,7 @@ _.WorldDrops =
 						["itemID"] = 116681,	-- Zangarra Amulet
 					},
 				}),
-				n(-321, { -- Shoulder
+				n(-321, {	-- Shoulder
 					i(118823),	-- Mantle of Moera
 					i(118831),	-- Arentios' Amice of Alacrity
 					i(118838),	-- J'kaey's Shining Spaulders
@@ -52,7 +52,7 @@ _.WorldDrops =
 					i(118891),	-- Dunestalker's Mantle
 					i(118892),	-- Botani-Barbed Pauldrons
 				}),
-				n(-322, { -- Back
+				n(-322, {	-- Back
 					i(116696),	-- Moonwhisper Cloak
 					i(116699),	-- Growthshaper Cloak
 					i(116702),	-- Evermorn Cloak
@@ -89,12 +89,12 @@ _.WorldDrops =
 					modID(5, i(119347)),	-- Gill's Glorious Windcloak
 					modID(6, i(119347)),	-- Gill's Glorious Windcloak
 				}),
-				n(-323, { -- Chest
+				n(-323, {	-- Chest
 					i(118819),	-- Ariya's Auspicious Robe
 					i(118827),	-- Thrice-Tanned Tunic
 					i(118855),	-- Chyler's Charming Chestguard
 				}),
-				n(-326, { -- Wrist
+				n(-326, {	-- Wrist
 					i(118824),	-- Noxiia's Shackles
 					i(118832),	-- Wodin's Weary Wristguards
 					i(118839),	-- Bonechain Bracers
@@ -103,7 +103,7 @@ _.WorldDrops =
 					i(119332),	-- Bracers of Darkened Skies
 					i(119333),	-- Bracers of Shattered Limbs
 				}),
-				n(-327, { -- Hands
+				n(-327, {	-- Hands
 					i(113593),	-- Grips of Vicious Mauling
 					i(113602),	-- Throat-Ripper Gauntlets
 					i(113610),	-- Meatmonger's Gory Grips
@@ -113,7 +113,7 @@ _.WorldDrops =
 					i(118835),	-- Kiraser's Gloves of Precision
 					i(118856),	-- Cydil's Coiled Grasp
 				}),
-				n(-328, { -- Waist
+				n(-328, {	-- Waist
 					i(118817),	-- Girthbinder of N'karas
 					i(118825),	-- Windswept Leather Waistguard
 					i(118833),	-- Chain Links of Pea'dexx
@@ -131,13 +131,13 @@ _.WorldDrops =
 					i(124311),	-- Cursed Demonchain Belt
 					i(124350),	-- Girdle of Demonic Wrath
 				}),
-				n(-329, { -- Legs
+				n(-329, {	-- Legs
 					i(118822),	-- Kitsy's Knickers
 					i(118830),	-- Fur-Padded Driftwaders
 					i(118837),	-- Puu'sey's Pantaloons
 					i(118858),	-- Fobbly's Fabulous Legplates
 				}),
-				n(-330, { -- Feet
+				n(-330, {	-- Feet
 					i(118818),	-- Kymi's Stylish Slippers
 					i(118826),	-- Cadi's Grass Stained Slippers
 					i(118834),	-- Spiffy Chainmail Boots

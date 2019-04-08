@@ -3,15 +3,15 @@
 -----------------------------------------------------
 
 _.Instances = { tier(7, {	-- Legion
-	n(-7, { -- World Bosses
+	n(-7, {	-- World Bosses
 		["isRaid"] = true,
 		["lvl"] = 110,
 		["modID"] = 3,
 		["groups"] = {
-			cr(109943, e(1790, { -- Ana-Mouz 
-				["questID"] = 43512, -- Change to tracking quest later.
+			cr(109943, e(1790, {	-- Ana-Mouz 
+				["questID"] = 43512,	-- Change to tracking quest later.
 				["isRaid"] = true,
-				["maps"] = { 680 }, -- Suramar
+				["maps"] = { 680 },	-- Suramar
 				["coord"] = { 31.0, 65.5, 680 },
 				["groups"] = {
 					{
@@ -28,10 +28,10 @@ _.Instances = { tier(7, {	-- Legion
 					i(141520),	-- Imp-Eye Diamond
 				},
 			})),	
-			cr(121124, e(1956, { -- Apocron 
-				["questID"] = 47061, -- Change to tracking quest later
+			cr(121124, e(1956, {	-- Apocron 
+				["questID"] = 47061,	-- Change to tracking quest later
 				["isRaid"] = true,
-				["maps"] = { 646 }, -- The Broken Shore
+				["maps"] = { 646 },	-- The Broken Shore
 				["coord"] = { 59.2, 62.6, 646 },
 				["groups"] = {
 					{
@@ -48,10 +48,10 @@ _.Instances = { tier(7, {	-- Legion
 					i(147759),	-- Charged Felfire Casing
 				},
 			})),
-			cr(117239, e(1883, { -- Brutallus 
-				["questID"] = 46947, -- Change to tracking quest later.
+			cr(117239, e(1883, {	-- Brutallus 
+				["questID"] = 46947,	-- Change to tracking quest later.
 				["isRaid"] = true,
-				["maps"] = { 646 }, -- The Broken Shore
+				["maps"] = { 646 },	-- The Broken Shore
 				["coord"] = { 59.2, 28.4, 646 },
 				["groups"] = {
 					{
@@ -69,11 +69,11 @@ _.Instances = { tier(7, {	-- Legion
 					i(147756),	-- Crashing Ember
 				},
 			})),
-			cr(109331, e(1774, { -- Calamir 
-				--["questID"] = 44502, -- !KillID
+			cr(109331, e(1774, {	-- Calamir 
+				--["questID"] = 44502,	-- !KillID
 				["questID"] = 43193,	-- Calamitous Intent
 				["isRaid"] = true,
-				["maps"] = { 630 }, -- Azsuna
+				["maps"] = { 630 },	-- Azsuna
 				["coord"] = { 37.7, 83.6, 630 },
 				["groups"] = {
 					{
@@ -90,10 +90,10 @@ _.Instances = { tier(7, {	-- Legion
 					i(141522),	-- Calamir's Jaw
 				},
 			})),
-			cr(110378, e(1789, { -- Drugon the Frostblood 
-				["questID"] = 43448, -- Change to tracking quest later.
+			cr(110378, e(1789, {	-- Drugon the Frostblood 
+				["questID"] = 43448,	-- Change to tracking quest later.
 				["isRaid"] = true,
-				["maps"] = { 650 }, -- Highmountain
+				["maps"] = { 650 },	-- Highmountain
 				["coord"] = { 58.4, 72.6, 650 },
 				["groups"] = {
 					{
@@ -111,9 +111,9 @@ _.Instances = { tier(7, {	-- Legion
 				},
 			})),
 			cr(99929, e(1795, {	 -- Flotsam
-				["questID"] = 43985, -- Change to tracking quest later.
+				["questID"] = 43985,	-- Change to tracking quest later.
 				["isRaid"] = true,
-				["maps"] = { 650 }, -- Highmountain
+				["maps"] = { 650 },	-- Highmountain
 				["coord"] = { 49.2, 7.60, 650 },
 				["groups"] = {
 					{
@@ -121,7 +121,7 @@ _.Instances = { tier(7, {	-- Legion
 						["criteriaID"] = 4,	-- Flotsam slain [Criteria]
 					},
 					i(139573, {	-- The Warmace of Shirvallah (Shaman Artifact)
-						artifact(880), -- Find Hidden Artifact Skin
+						artifact(880),	-- Find Hidden Artifact Skin
 					}),
 					i(141539),	-- Ragged Azsharan Sail Fragment
 					i(141466),	-- Blackwater Raider Handguards
@@ -132,10 +132,10 @@ _.Instances = { tier(7, {	-- Legion
 					i(141516),	-- "Liberated" Un'goro Relic
 				},
 			})),
-			cr(108879, e(1770, { -- Humongris <The Wizard>
-				["questID"] = 42819, -- Change to tracking quest later.
+			cr(108879, e(1770, {	-- Humongris <The Wizard>
+				["questID"] = 42819,	-- Change to tracking quest later.
 				["isRaid"] = true,
-				["maps"] = { 641 }, -- Val'sharah
+				["maps"] = { 641 },	-- Val'sharah
 				["coord"] = { 24.6, 69.6, 641 },
 				["groups"] = {
 					{
@@ -159,10 +159,10 @@ _.Instances = { tier(7, {	-- Legion
 					i(141521),	-- Sea Giant Toothpick Fragment
 				},
 			})),
-			cr(108829, e(1769, { -- Levantus 
-				["questID"] = 43192, -- Change to tracking quest later.
+			cr(108829, e(1769, {	-- Levantus 
+				["questID"] = 43192,	-- Change to tracking quest later.
 				["isRaid"] = true,
-				["maps"] = { 630 }, -- Azsuna
+				["maps"] = { 630 },	-- Azsuna
 				["coord"] = { 43.0, 67.6, 630 },
 				["groups"] = {
 					{
@@ -171,7 +171,7 @@ _.Instances = { tier(7, {	-- Legion
 					},
 					i(142109),	-- Vantus Rune Technique: Helya [Rank 3]
 					i(139573, {	-- The Warmace of Shirvallah (Shaman Artifact)
-						artifact(880), -- Find Hidden Artifact Skin
+						artifact(880),	-- Find Hidden Artifact Skin
 					}),
 					i(141473),	-- Krakentooth Necklace
 					i(141441),	-- Chum-Chopper Gauntlets
@@ -182,10 +182,10 @@ _.Instances = { tier(7, {	-- Legion
 					i(141523),	-- Fel-Scented Bait
 				},
 			})),
-			cr(117303, e(1884, { -- Malificus
+			cr(117303, e(1884, {	-- Malificus
 				["questID"] = 47086,
 				["isRaid"] = true,
-				["maps"] = { 646 }, -- The Broken Shore
+				["maps"] = { 646 },	-- The Broken Shore
 				["coord"] = { 59.8, 27.8, 646 },
 				["groups"] = {
 					{
@@ -204,10 +204,10 @@ _.Instances = { tier(7, {	-- Legion
 					i(147754),	-- Gory Dreadlord Horn
 				},
 			})),	
-			cr(110321, e(1783, { -- Na'zak the Fiend 
-				["questID"] = 43513, -- Change to tracking quest later.
+			cr(110321, e(1783, {	-- Na'zak the Fiend 
+				["questID"] = 43513,	-- Change to tracking quest later.
 				["isRaid"] = true,
-				["maps"] = { 680 }, -- Suramar
+				["maps"] = { 680 },	-- Suramar
 				["coord"] = { 36.0, 66.4, 685 },
 				["groups"] = {
 					{
@@ -224,10 +224,10 @@ _.Instances = { tier(7, {	-- Legion
 					i(141515),	-- Leystone Nugget
 				},
 			})),	
-			e(1749, { -- Nithogg 
-				["questID"] = 42270, -- Change to tracking quest later.
+			e(1749, {	-- Nithogg 
+				["questID"] = 42270,	-- Change to tracking quest later.
 				["isRaid"] = true,
-				["maps"] = { 634 }, -- Stormheim
+				["maps"] = { 634 },	-- Stormheim
 				["coord"] = { 46.6, 30.0, 634 },
 				["crs"] = {
 					107544, 
@@ -249,10 +249,10 @@ _.Instances = { tier(7, {	-- Legion
 					i(141519),	-- Pillaged Titan Disc
 				},
 			}),
-			cr(108678, e(1763, { -- Shar'thos
-				["questID"] = 42779, -- Change to tracking quest later.
+			cr(108678, e(1763, {	-- Shar'thos
+				["questID"] = 42779,	-- Change to tracking quest later.
 				["isRaid"] = true,
-				["maps"] = { 641 }, -- Val'sharah 
+				["maps"] = { 641 },	-- Val'sharah 
 				["coord"] = { 55.6, 43.2, 641 },
 				["groups"] = {
 					{
@@ -269,10 +269,10 @@ _.Instances = { tier(7, {	-- Legion
 					i(141518),	-- Decaying Dragonfang
 				},
 			})),
-			cr(117470, e(1885, { -- Si'vash 
-				["questID"] = 46945, -- Change to tracking quest later.
+			cr(117470, e(1885, {	-- Si'vash 
+				["questID"] = 46945,	-- Change to tracking quest later.
 				["isRaid"] = true,
-				["maps"] = { 646 }, -- The Broken Shore
+				["maps"] = { 646 },	-- The Broken Shore
 				["coord"] = { 89.6, 33.0, 646 },
 				["groups"] = {
 					{
@@ -290,10 +290,10 @@ _.Instances = { tier(7, {	-- Legion
 					i(147761),	-- Sandblasted Conch
 				},
 			})),
-			e(1756, { -- The Soultakers
-				["questID"] = 42269, -- Change to tracking quest later.
+			e(1756, {	-- The Soultakers
+				["questID"] = 42269,	-- Change to tracking quest later.
 				["isRaid"] = true,
-				["maps"] = { 634 }, -- Stormheim
+				["maps"] = { 634 },	-- Stormheim
 				["coord"] = { 78.2, 8.60, 634 },
 				["crs"] = {
 					106981,	-- Captain Hring
@@ -306,7 +306,7 @@ _.Instances = { tier(7, {	-- Legion
 						["criteriaID"] = 8,	-- The Soultakers slain [Criteria]
 					},
 					i(139547, {	-- Runes of the Darkening [Death Knight Hidden Appearance]
-						artifact(870), -- Find Hidden Artifact Skin
+						artifact(870),	-- Find Hidden Artifact Skin
 					}),
 					i(141506),	-- Soultrapper's Pendant
 					i(141434),	-- Cord of Kept Souls
@@ -317,10 +317,10 @@ _.Instances = { tier(7, {	-- Legion
 					i(141514),	-- Barnacled Mistcaller Orb
 				},
 			}),
-			cr(112350, e(1796, { -- Withered J'im 
-				["questID"] = 44287, -- Change to tracking quest later.
+			cr(112350, e(1796, {	-- Withered J'im 
+				["questID"] = 44287,	-- Change to tracking quest later.
 				["isRaid"] = true,
-				["maps"] = { 630 }, -- Azsuna
+				["maps"] = { 630 },	-- Azsuna
 				["coord"] = { 52.6, 80.8, 630 },
 				["groups"] = {
 					{

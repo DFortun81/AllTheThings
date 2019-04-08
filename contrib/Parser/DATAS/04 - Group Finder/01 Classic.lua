@@ -34,7 +34,7 @@ _.GroupFinder =
 					i(51992),	-- Tumultuous Ring* [INT]
 					i(160601),	-- Tumultuous Ring [AGI]** April 7, 2019
 					i(160602),	-- Tumultuous Ring [STR]
-					i(51964),	-- Vigorous Belt*
+					i(51964),	-- Vigorous Belt ** April 7, 2019
 					i(51962),	-- Vigorous Bracers ** April 7, 2019
 					i(51965),	-- Vigorous Handguards
 					un(2, i(51998)),	-- Vigorous Spaulders [Probably unobtainable - maybe old leather set that got changed into mail set]

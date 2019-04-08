@@ -3,16 +3,16 @@
 -----------------------------------------------------
 
 _.Instances = { tier(8, {	-- Battle For Azeroth
-	inst(968, { -- Atal'Dazar
+	inst(968, {	-- Atal'Dazar
 		["lvl"] = 110,
 		["maps"] = {
-			934, -- Atal'Dazar
-			935, -- Sacrificial Pits
+			934,	-- Atal'Dazar
+			935,	-- Sacrificial Pits
 		},
 		["groups"] = {
 			n(-17, {	-- Quests
 				qh(51517, {	-- You Owe Me a Spirit
-					["qg"] = 140405, -- Bwonsamdi
+					["qg"] = 140405,	-- Bwonsamdi
 					["sourceQuests"] = { 51516 },	-- Atal'Dazar: Ashes of a Warchief
 					["groups"] = {
 						sz(12719, 1),	-- The Fallen Chieftain
@@ -32,10 +32,10 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					}),
 				}),
 			}),
-			d(1, { -- Normal
-				e(2082, { -- Priestess Alun'za
+			d(1, {	-- Normal
+				e(2082, {	-- Priestess Alun'za
 					["crs"] = {
-						122967, -- Priestess Alun'za
+						122967,	-- Priestess Alun'za
 					},
 					["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						i(158321),	-- Wand of Zealous Purification
@@ -48,9 +48,9 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						i(158319),	-- My'das Talisman
 					}),
 				}),
-				e(2036, { -- Vol'kaal
+				e(2036, {	-- Vol'kaal
 					["crs"] = {
-						122965, -- Vol'kaal
+						122965,	-- Vol'kaal
 					},
 					["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						i(159632),	-- Adulation Enforcer
@@ -62,9 +62,9 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						i(158320),	-- Revitalizing Voodoo Totem
 					}),
 				}),
-				e(2083, { -- Rezan
+				e(2083, {	-- Rezan
 					["crs"] = {
-						122963, -- Rezan
+						122963,	-- Rezan
 					},
 					["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						i(160269),	-- Soulrending Claw
@@ -77,9 +77,9 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						i(158712),	-- Rezan's Gleaning Eye
 					}),
 				}),
-				e(2030, { -- Yazma
+				e(2030, {	-- Yazma
 					["crs"] = {
-						122968, -- Yazma
+						122968,	-- Yazma
 					},
 					["groups"] = bubbleDown({["bonusID"] = 4}, {
 						ach(12824),	-- Atal'Dazar
@@ -96,12 +96,12 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					}),
 				}),
 			}),
-			d(2, { -- Heroic
+			d(2, {	-- Heroic
 				["lvl"] = 120,
 				["groups"] = {
-					e(2082, { -- Priestess Alun'za
+					e(2082, {	-- Priestess Alun'za
 						["crs"] = {
-							122967, -- Priestess Alun'za
+							122967,	-- Priestess Alun'za
 						},
 						["groups"] = {
 							i(158321),	-- Wand of Zealous Purification
@@ -114,9 +114,9 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							i(158319),	-- My'das Talisman
 						},
 					}),
-					e(2036, { -- Vol'kaal
+					e(2036, {	-- Vol'kaal
 						["crs"] = {
-							122965, -- Vol'kaal
+							122965,	-- Vol'kaal
 						},
 						["groups"] = {
 							i(159632),	-- Adulation Enforcer
@@ -128,9 +128,9 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							i(158320),	-- Revitalizing Voodoo Totem
 						},
 					}),
-					e(2083, { -- Rezan
+					e(2083, {	-- Rezan
 						["crs"] = {
-							122963, -- Rezan
+							122963,	-- Rezan
 						},
 						["groups"] = {
 							i(160269),	-- Soulrending Claw
@@ -143,9 +143,9 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							i(158712),	-- Rezan's Gleaning Eye
 						},
 					}),
-					e(2030, { -- Yazma
+					e(2030, {	-- Yazma
 						["crs"] = {
-							122968, -- Yazma
+							122968,	-- Yazma
 						},
 						["groups"] = {
 							ach(12825),	-- Heroic: Atal'Dazar
@@ -163,13 +163,13 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					}),
 				},
 			}),
-			d(23, { -- Mythic
+			d(23, {	-- Mythic
 				["lvl"] = 120,
 				["groups"] = {
 					ach(12270),	-- Bringing Hexy Back
-					e(2082, { -- Priestess Alun'za
+					e(2082, {	-- Priestess Alun'za
 						["crs"] = {
-							122967, -- Priestess Alun'za
+							122967,	-- Priestess Alun'za
 						},
 						["groups"] = {
 							ach(12272),	-- Gold Fever
@@ -187,9 +187,9 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							i(158319),	-- My'das Talisman
 						},
 					}),
-					e(2036, { -- Vol'kaal
+					e(2036, {	-- Vol'kaal
 						["crs"] = {
-							122965, -- Vol'kaal
+							122965,	-- Vol'kaal
 						},
 						["groups"] = {
 							{
@@ -205,9 +205,9 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							i(158320),	-- Revitalizing Voodoo Totem
 						},
 					}),
-					e(2083, { -- Rezan
+					e(2083, {	-- Rezan
 						["crs"] = {
-							122963, -- Rezan
+							122963,	-- Rezan
 						},
 						["groups"] = {
 							{
@@ -225,9 +225,9 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							i(158712),	-- Rezan's Gleaning Eye
 						},
 					}),
-					e(2030, { -- Yazma
+					e(2030, {	-- Yazma
 						["crs"] = {
-							122968, -- Yazma
+							122968,	-- Yazma
 						},
 						["groups"] = {
 							ach(12826),	-- Mythic: Atal'Dazar

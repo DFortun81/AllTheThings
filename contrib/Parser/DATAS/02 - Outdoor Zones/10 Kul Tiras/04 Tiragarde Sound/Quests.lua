@@ -18,7 +18,7 @@ _.Zones =
 							["g"] = {
 								{	-- Lovesick and Lost
 									["questID"] = 48505, 	-- Lovesick and Lost
-									["qg"] = 126158, -- Flynn Fairwind
+									["qg"] = 126158,	-- Flynn Fairwind
 									["sourceQuests"] = {
 										48419, 	-- Lured and Allured
 									},
@@ -35,7 +35,7 @@ _.Zones =
 								},
 								{	-- Lured and Allured
 									["questID"] = 48419, 	-- Lured and Allured
-									["qg"] = 128377, -- Beachcomber Bob
+									["qg"] = 128377,	-- Beachcomber Bob
 									["sourceQuests"] = {
 										47489, 	-- Stow and Go
 									},
@@ -45,7 +45,7 @@ _.Zones =
 								},
 								{	-- Sampling the Goods
 									["questID"] = 53041, 	-- Sampling the Goods
-									["qg"] = 121239, -- Flynn Fairwind
+									["qg"] = 121239,	-- Flynn Fairwind
 									["coords"] = {
 										{ 75.85, 49.08 },
 									},
@@ -55,7 +55,7 @@ _.Zones =
 								},
 								{	-- Stow and Go
 									["questID"] = 47489, 	-- Stow and Go
-									["qg"] = 121239, -- Flynn Fairwind
+									["qg"] = 121239,	-- Flynn Fairwind
 									["sourceQuests"] = {
 										53041, 	-- Sampling the Goods
 									},
@@ -166,7 +166,7 @@ _.Zones =
 							["g"] = {
 								{	-- Blood in the Tides
 									["questID"] = 48421, 	-- Blood in the Tides
-									["qg"] = 125342, -- Captain Keelson
+									["qg"] = 125342,	-- Captain Keelson
 									["sourceQuests"] = {
 										47489, 	-- Stow and Go
 									},
@@ -205,7 +205,7 @@ _.Zones =
 								},
 								{	-- Local Flavor [Opt]
 									["questID"] = 49230, 	-- Local Flavor
-									["qg"] = 128228, -- Hungry Sam
+									["qg"] = 128228,	-- Hungry Sam
 									["coords"] = {
 										{ 85.4, 80.7 },
 									},
@@ -216,7 +216,7 @@ _.Zones =
 								},
 								{	-- My Favorite Things [Opt]
 									["questID"] = 49178, 	-- My Favorite Things
-									["qg"] = 128229, -- Stabby Jane
+									["qg"] = 128229,	-- Stabby Jane
 									["coords"] = {
 										{ 85.4, 80.8 },
 									},
@@ -227,7 +227,7 @@ _.Zones =
 								},
 								{	-- Silencing the Sisters [Opt]
 									["questID"] = 49226, 	-- Silencing the Sisters
-									["qg"] = 128229, -- Stabby Jane
+									["qg"] = 128229,	-- Stabby Jane
 									["coords"] = {
 										{ 85.4, 80.8 },
 									},
@@ -238,7 +238,7 @@ _.Zones =
 								},
 								{	-- The Castaways [BC]
 									["questID"] = 49218,	-- The Castaways
-									["qg"] = 128377, -- Beachcomber Bob
+									["qg"] = 128377,	-- Beachcomber Bob
 									-- ["sourceQuests"] = { 47189 },	-- A Nation Divided		Note!! Not marking a SourceQuest others it routes all the way up to Heart of Azeroth the entire time.
 									["isBreadcrumb"] = true,
 									["coords"] = {
@@ -267,7 +267,7 @@ _.Zones =
 						-- Fizzlesprings Resort
 						--------------------------------------
 						a(q(48516, {	-- Toxic Community [Alliance Only]
-							["qg"] = 126511, -- Skinner MacGuff
+							["qg"] = 126511,	-- Skinner MacGuff
 							["sourceQuests"] = { 48505 },	-- Lovesick and Lost [Alliance Only]
 						})),
 						a(q(50542, {	-- An Explosive Opportunity
@@ -284,7 +284,7 @@ _.Zones =
 						-- Hatherford
 						--------------------------------------
 						a(q(49234, {	-- A Marine Out of Water
-							["qg"] = 130101, -- Recruit Brutis
+							["qg"] = 130101,	-- Recruit Brutis
 							["sourceQuests"] = { 50700 },	-- Drust in Time
 							["groups"] = {
 								i(158255),	-- Sea Raider's Crushers
@@ -298,15 +298,15 @@ _.Zones =
 							},
 						})),
 						a(q(49225, {	-- Chasing the Leader
-							["qg"] = 128381, -- Drogrin Alewhisker
+							["qg"] = 128381,	-- Drogrin Alewhisker
 							["sourceQuests"] = { 50700 },	-- Drust in Time
 						})),
 						a(q(50700, {	-- Drust in Time
-							["qg"] = 139089, -- Hatherford Guard
+							["qg"] = 139089,	-- Hatherford Guard
 							-- ["sourceQuests"] = { 47189 },	-- Tiragarde Sound??
 						})),
 						a(q(48369, {	-- Emergent Strategy
-							["qg"] = 129613, -- Maynard Algerson
+							["qg"] = 129613,	-- Maynard Algerson
 							["sourceQuests"] = { 49452, 49451, 49465  },	-- Inventory Deficit / Maximizing Resources / Time Off Requests
 						})),
 						a(o(281230, {	-- Formal Invitation
@@ -316,43 +316,43 @@ _.Zones =
 							}),
 						})),
 						a(q(49453, {	-- Give a Dam
-							["qg"] = 129670, -- Lyssa Treewarden
+							["qg"] = 129670,	-- Lyssa Treewarden
 							["sourceQuests"] = { 50699 },	-- Worker's Rights
 						})),
 						a(q(49450, {	-- Incident Reports
-							["qg"] = 129669, -- Benjamin Algerson
+							["qg"] = 129669,	-- Benjamin Algerson
 							["sourceQuests"] = { 48369  },	-- Emergent Strategy
 						})),
 						a(q(49452, {	-- Inventory Deficit
-							["qg"] = 129613, -- Maynard Algerson
+							["qg"] = 129613,	-- Maynard Algerson
 							["sourceQuests"] = { 50699 },	-- Worker's Rights
 						})),
 						a(q(49465, {	-- Maximizing Resources
-							["qg"] = 129613, -- Maynard Algerson
+							["qg"] = 129613,	-- Maynard Algerson
 							["sourceQuests"] = { 50699 },	-- Worker's Rights
 						})),
 						a(q(49454, {	-- Pest Prevention
-							["qg"] = 129669, -- Benjamin Algerson
+							["qg"] = 129669,	-- Benjamin Algerson
 							["sourceQuests"] = { 48369  },	-- Emergent Strategy
 						})),
 						a(q(49468, {	-- Required Webinar
-							["qg"] = 129669, -- Benjamin Algerson
+							["qg"] = 129669,	-- Benjamin Algerson
 							["sourceQuests"] = { 48369  },	-- Emergent Strategy
 						})),
 						a(q(48557, {	-- Sowing Saplings
-							["qg"] = 129670, -- Lyssa Treewarden
+							["qg"] = 129670,	-- Lyssa Treewarden
 							["sourceQuests"] = { 50699 },	-- Worker's Rights
 						})),
 						a(q(49229, {	-- The Ruins Fought Back
-							["qg"] = 128381, -- Drogrin Alewhisker
+							["qg"] = 128381,	-- Drogrin Alewhisker
 							["sourceQuests"] = { 50700 },	-- Drust in Time
 						})),
 						a(q(50058, {	-- The Witch's Pet
-							["qg"] = 134325, -- Terrence Foster
+							["qg"] = 134325,	-- Terrence Foster
 							["sourceQuests"] = { 48369  },	-- Emergent Strategy
 						})),
 						a(q(49451, {	-- Time Off Requests
-							["qg"] = 129669, -- Benjamin Algerson
+							["qg"] = 129669,	-- Benjamin Algerson
 							["sourceQuests"] = { 50699 },	-- Worker's Rights
 						})),
 						a(o(288641, {	-- WANTED: Gryphon 'Nappers (sign)
@@ -361,14 +361,14 @@ _.Zones =
 							}),
 						})),
 						a(q(49467, {	-- Witch of the Woods
-							["qg"] = 129669, -- Benjamin Algerson
+							["qg"] = 129669,	-- Benjamin Algerson
 							["sourceQuests"] = { 50058  },	-- The Witch's Pet
 							["groups"] = {
 								i(158219),	-- Petula's Locket
 							},
 						})),
 						a(q(50699, {	-- Worker's Rights
-							["qg"] = 134776, -- Davey Brindle
+							["qg"] = 134776,	-- Davey Brindle
 							-- ["sourceQuests"] = { 47189 },	-- Tiragarde Sound??
 						})),
 						
@@ -388,13 +388,13 @@ _.Zones =
 								},
 								{	-- I'm a Druid, Not a Priest
 									["questID"] = 49233,	-- I'm a Druid, Not a Priest
-									["qg"] = 128349, -- Hilde Firebreaker
+									["qg"] = 128349,	-- Hilde Firebreaker
 									-- ["sourceQuests"] = { 49225 },	-- Chasing the Leader	NOTE: You can get this quest with 0 quests done
 									["races"] = ALLIANCE_ONLY,
 								},
 								{	-- Salvaging a Disaster
 									["questID"] = 49232,	-- Salvaging a Disaster
-									["qg"] = 128353, -- Pendi Cranklefuse
+									["qg"] = 128353,	-- Pendi Cranklefuse
 									-- ["sourceQuests"] = { 50700 },	-- Drust in Time	NOTE: You can get this quest with 0 quests done
 									["races"] = ALLIANCE_ONLY,
 								},
@@ -406,20 +406,20 @@ _.Zones =
 						--------------------------------------
 						o(281551, {		-- Help Wanted Poster [Object]
 							a(q(50544, {	-- The Hunters of Kennings Lodge
-								["sourceQuests"] = { 46728 }, -- The Nation of Kul Tiras
+								["sourceQuests"] = { 46728 },	-- The Nation of Kul Tiras
 								["isBreadcrumb"] = true,
 								-- Not required for "A Sound Plan."
 							})),
 						}),
 						a(q(50349, {	-- On Overrun Mine
-							["qg"] = 133550, -- Junior Miner Joe
-							["sourceQuests"] = { 46728 }, -- The Nation of Kul Tiras
+							["qg"] = 133550,	-- Junior Miner Joe
+							["sourceQuests"] = { 46728 },	-- The Nation of Kul Tiras
 							["isBreadcrumb"] = true,
 							-- Not required for "A Sound Plan."
 						})),
 						a(q(51149, {	-- Left at the Port
-							["qg"] = 136576, -- Dockmaster Leighton
-							["sourceQuests"] = { 46728 }, -- The Nation of Kul Tiras
+							["qg"] = 136576,	-- Dockmaster Leighton
+							["sourceQuests"] = { 46728 },	-- The Nation of Kul Tiras
 							["isBreadcrumb"] = true,
 							-- Not required for "A Sound Plan."
 						})),
@@ -429,11 +429,11 @@ _.Zones =
 						--------------------------------------
 						-- crit(2),		-- Freehold
 						a(q(49522, {	-- A Bad Deal [Alliance Only]
-							["qg"] = 128903, -- Carentan
+							["qg"] = 128903,	-- Carentan
 							["sourceQuests"] = { 49522 },	-- Carentan's Payment [Alliance Only]
 						})),
 						a(q(49290, {	-- Aged to Perfection [Alliance Only]
-							["qg"] = 128702, -- Roko <Wandering Merchant>
+							["qg"] = 128702,	-- Roko <Wandering Merchant>
 							["sourceQuests"] = { 48773, 48558 },	-- Papers, Please / The Irontide Crew [Alliance Only]
 						})),
 						a(o(276488, {	-- Azerite Cannonball [Object]
@@ -443,21 +443,21 @@ _.Zones =
 							}),
 						})),
 						a(q(49522, {	-- Carentan's Payment [Alliance Only]
-							["qg"] = 128903, -- Carentan
+							["qg"] = 128903,	-- Carentan
 							["sourceQuests"] = { 49407 },	-- Trixie Business [Alliance Only]
 						})),
 						a(q(49405, {	-- Defenders of Daelin's Gate [Alliance Only]
-							["qg"] = 128927, -- Taelia
+							["qg"] = 128927,	-- Taelia
 							["sourceQuests"] = { 49404 },	-- Fairwind's "Friends" [Alliance Only]
 							["isBreadcrumb"] = true,
 						})),
 						a(q(49239, {	-- Dress to Impress [Alliance Only]
-							["qg"] = 126158, -- Flynn Fairwind
+							["qg"] = 126158,	-- Flynn Fairwind
 							["sourceQuests"] = { 48773, 48558 },	-- Papers, Please / The Irontide Crew [Alliance Only]
 						})),
 						a(q(49404, {	-- Fairwind's "Friends" [Alliance Only]
 							-- Gave credit for Freehold Criteria
-							["qg"] = 128927, -- Venrik
+							["qg"] = 128927,	-- Venrik
 							["sourceQuests"] = { 49399 },	-- The Big Job [Alliance Only]
 							["groups"] = {
 								i(160861),	-- Sea Raider's Helmet
@@ -465,11 +465,11 @@ _.Zones =
 							},
 						})),
 						a(q(49402, {	-- Flew the Coop [Alliance Only]
-							["qg"] = 129098, -- Rodrigo <Flight Master>
+							["qg"] = 129098,	-- Rodrigo <Flight Master>
 							["sourceQuests"] = { 49401 },	-- Rodrigo's Roost [Alliance Only]
 						})),
 						a(q(48539, {	-- Freehold [Alliance Only]
-							["qg"] = 126158, -- Flynn Fairwind
+							["qg"] = 126158,	-- Flynn Fairwind
 							["sourceQuests"] = { 48505 },	-- Lovesick and Lost [Alliance Only]
 							["isBreadcrumb"] = true,
 						})),
@@ -487,15 +487,15 @@ _.Zones =
 							})),
 						})),
 						a(q(48773, {	-- Papers, Please [Alliance Only]
-							["qg"] = 126158, -- Flynn Fairwind
+							["qg"] = 126158,	-- Flynn Fairwind
 							["sourceQuests"] = { 48539 },	-- Freehold [Alliance Only]
 						})),
 						a(q(49398, {	-- Raise a Glass! [Alliance Only]
-							["qg"] = 128927, -- Venrik
+							["qg"] = 128927,	-- Venrik
 							["sourceQuests"] = { 49239 },	-- Dress to Impress [Alliance Only]
 						})),
 						a(q(49400, {	-- Recruiting Efforts [Alliance Only]
-							["qg"] = 128927, -- Venrik
+							["qg"] = 128927,	-- Venrik
 							["sourceQuests"] = { 49401 },	-- Rodrigo's Roost [Alliance Only]
 							["groups"] = {
 								i(155083),	-- Crow's Nest Spotlight
@@ -507,22 +507,22 @@ _.Zones =
 							},
 						})),
 						a(q(49403, {	-- Rodrigo's Revenge [Alliance Only]
-							["qg"] = 129098, -- Rodrigo <Flight Master>
+							["qg"] = 129098,	-- Rodrigo <Flight Master>
 							["sourceQuests"] = { 49402 },	-- Flew the Coop [Alliance Only]
 							["groups"] = {
 								-- i(163036),	-- Polished Pet Charm [REMOVING THIS FOR NOW BECAUSE BUBBLE DOWN MAKES IT ALLIANCE ONLY.  BAD BUBBLEDOWN!!!!]
 							},
 						})),
 						a(q(49401, {	-- Rodrigo's Roost [Alliance Only]
-							["qg"] = 126158, -- Flynn Fairwind
+							["qg"] = 126158,	-- Flynn Fairwind
 							["sourceQuests"] = { 49239 },	-- Dress to Impress [Alliance Only]
 						})),
 						a(q(49399, {	-- The Big Job [Alliance Only]
-							["qg"] = 126158, -- Flynn Fairwind
+							["qg"] = 126158,	-- Flynn Fairwind
 							["sourceQuests"] = { 49401 },	-- Rodrigo's Roost [Alliance Only]
 						})),
 						a(q(48558, {	-- The Irontide Crew [Alliance Only]
-							["qg"] = 126158, -- Flynn Fairwind
+							["qg"] = 126158,	-- Flynn Fairwind
 							["sourceQuests"] = { 48539 },	-- Freehold [Alliance Only]
 							["groups"] = {
 								i(155077),	-- Ashvane Captain's Cutlass
@@ -536,7 +536,7 @@ _.Zones =
 							},
 						})),
 						a(q(49407, {	-- Trixie Business [Alliance Only]
-							["qg"] = 128903, -- Carentan
+							["qg"] = 128903,	-- Carentan
 							["sourceQuests"] = { 49290 },	-- Aged to Perfection [Alliance Only]
 						})),
 						
@@ -546,38 +546,38 @@ _.Zones =
 						--------------------------------------
 						-- Defenders of Dealin's Gate
 						a(q(49869, {	-- A Desperate Defense [Alliance Only]
-							["qg"] = 141078, -- Vigil Hill Refugee
+							["qg"] = 141078,	-- Vigil Hill Refugee
 							["sourceQuests"] = { 52431 },	-- No-Landing Zone [Alliance Only]
 						})),
 						a(q(49737, {	-- Air Raid [Alliance Only]
-							["qg"] = 131048, -- Lieutenant Tarenfold
+							["qg"] = 131048,	-- Lieutenant Tarenfold
 							["sourceQuests"] = { 49869 },	-- A Desperate Defense [Alliance Only]
 						})),
 						a(q(50110, {	-- Bearers of Bad News [Alliance Only]
-							["qg"] = 142393, -- Taelia
+							["qg"] = 142393,	-- Taelia
 							["sourceQuests"] = { 49741 },	-- Righteous Retribution [Alliance Only]
 							["isBreadcrumb"] = true,
 						})),
 						a(q(49757, {	-- Cat on a Hot Copper Roof [Alliance Only]
-							["qg"] = 131654, -- Meredith
+							["qg"] = 131654,	-- Meredith
 							["sourceQuests"] = { 49738 },	-- Hands Off My Booty! [Alliance Only]
 							["groups"] = {
 								-- i(163036),	-- Polished Pet Charm [REMOVING THIS FOR NOW BECAUSE BUBBLE DOWN MAKES IT ALLIANCE ONLY.  BAD BUBBLEDOWN!!!!]
 							},
 						})),
 						a(q(49740, {	-- Cease Fire! [Alliance Only]
-							["qg"] = 131048, -- Lieutenant Tarenfold
+							["qg"] = 131048,	-- Lieutenant Tarenfold
 							["sourceQuests"] = { 49738 },	-- Hands Off My Booty! [Alliance Only]
 						})),
 						a(q(49739, {	-- Enemies at the Gate [Alliance Only] (Objective)
 							["sourceQuests"] = { 49738 },	-- Hands Off My Booty! [Alliance Only]
 						})),
 						a(q(52750, {	-- Farmers Who Fight [Alliance Only]
-							["qg"] = 131048, -- Lieutenant Tarenfold
+							["qg"] = 131048,	-- Lieutenant Tarenfold
 							["sourceQuests"] = { 49869 },	-- A Desperate Defense [Alliance Only]
 						})),
 						a(q(49736, {	-- For Kul Tiras! [Alliance Only]
-							["qg"] = 131048, -- Lieutenant Tarenfold
+							["qg"] = 131048,	-- Lieutenant Tarenfold
 							["sourceQuests"] = { 49738 },	-- Hands Off My Booty! [Alliance Only]
 							["groups"] = {
 								i(155085),	-- Standard Bearer's Band
@@ -588,11 +588,11 @@ _.Zones =
 							},
 						})),
 						a(q(52148, {	-- Freehold: A Pirate's End [Alliance Only]
-							["qg"] = 121239, -- Flynn Fairwind
+							["qg"] = 121239,	-- Flynn Fairwind
 							["sourceQuests"] = { 49741 },	-- Righteous Retribution [Alliance Only]
 						})),
 						a(q(49738, {	-- Hands Off My Booty! [Alliance Only]
-							["qg"] = 131048, -- Lieutenant Tarenfold
+							["qg"] = 131048,	-- Lieutenant Tarenfold
 							["sourceQuests"] = { 49737, 52750 },	-- Air Raid / Farmers Who Fight [Alliance Only]
 							["groups"] = {
 								i(158268),	-- Navigator's Bracers
@@ -603,15 +603,15 @@ _.Zones =
 							},
 						})),
 						a(q(52431, {	-- No-Landing Zone [Alliance Only]
-							["qg"] = 141078, -- Vigil Hill Refugee
+							["qg"] = 141078,	-- Vigil Hill Refugee
 							["sourceQuests"] = { 49405 },	-- Defenders of Daelin's Gate [Alliance Only]
 						})),
 						a(q(52787, {	-- Numbing the Pain [Alliance Only]
-							["qg"] = 142393, -- Taelia
+							["qg"] = 142393,	-- Taelia
 							["sourceQuests"] = { 49869 },	-- A Desperate Defense [Alliance Only]
 						})),
 						a(q(49741, {	-- Righteous Retribution [Alliance Only]
-							["qg"] = 142393, -- Taelia
+							["qg"] = 142393,	-- Taelia
 							["sourceQuests"] = { 49738 },	-- Hands Off My Booty! [Alliance Only]
 						})),
 						
@@ -786,7 +786,7 @@ _.Zones =
 								},
 								{	-- My Favorite Things [Opt]
 									["questID"] = 53443, 	-- My Favorite Things
-									["qg"] = 128229, -- Stabby Jane
+									["qg"] = 128229,	-- Stabby Jane
 									["coords"] = {
 										{ 85.4, 80.8 },
 									},
@@ -798,7 +798,7 @@ _.Zones =
 								},
 								{	-- Silencing the Sisters [Opt]
 									["questID"] = 53445, 	-- Silencing the Sisters
-									["qg"] = 128229, -- Stabby Jane
+									["qg"] = 128229,	-- Stabby Jane
 									["coords"] = {
 										{ 85.4, 80.8 },
 									},
@@ -810,7 +810,7 @@ _.Zones =
 								},
 								{	-- The Castaways [BC]
 									["questID"] = 53442,	-- The Castaways
-									["qg"] = 128377, -- Beachcomber Bob
+									["qg"] = 128377,	-- Beachcomber Bob
 									["isBreadcrumb"] = true,
 									["coords"] = {
 										{ 85.5, 83.5 },

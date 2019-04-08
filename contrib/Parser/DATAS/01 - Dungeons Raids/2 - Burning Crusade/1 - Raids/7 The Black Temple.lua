@@ -1240,12 +1240,12 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					})),
 					cr(22917, e(1590, {	-- Illidan Stormrage
 						ach(697),	-- The Black Temple
-						n(-2000, { -- Twin Blades of Azzinoth
+						n(-2000, {	-- Twin Blades of Azzinoth
 							["groups"] = {
 								i(32837),	-- Warglaive of Azzinoth (LEGENDARY! MH)
 								i(32838),	-- Warglaive of Azzinoth (LEGENDARY! OH)
 							},
-							["achievementID"] = 426, -- Warglaives of Azzinoth
+							["achievementID"] = 426,	-- Warglaives of Azzinoth
 							["classes"] = { 1, 4, 6, 10, 12 },	-- Warrior, Rogue, DK, Monk, DH
 						}),
 						i( 31089, {	-- Chestguard of the Forgotten Conqueror

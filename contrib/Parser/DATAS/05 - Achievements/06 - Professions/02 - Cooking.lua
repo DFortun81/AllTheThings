@@ -12,9 +12,9 @@ To do:
 
 _.Achievements = 
 {
-	n(-9960, { -- Professions
+	n(-9960, {	-- Professions
 		["groups"] = {
-			n(-9971, { -- Cooking
+			n(-9971, {	-- Cooking
 				["groups"] = {
 					ach(2002, {		-- 100 Cooking Awards
 						ach(2001),		-- 50 Cooking Awards

@@ -4,9 +4,9 @@
 
 _.Achievements = 
 {
-	n(-9959, { -- Dungeons & Raids
+	n(-9959, {	-- Dungeons & Raids
 		["groups"] = {
-			n(-10053, { -- Battle Dungeon
+			n(-10053, {	-- Battle Dungeon
 				["groups"] = {
 					ach(12726),		-- A Fish Out of Water
 					ach(12490),		-- Alchemical Romance

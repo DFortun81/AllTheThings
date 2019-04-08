@@ -7,7 +7,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 		n(-4, {	-- Achievement
 			["groups"] = {
 				un(24, ach(1683, {	-- Brewmaster
-					un(24, title(101)), -- Brewmaster
+					un(24, title(101)),	-- Brewmaster
 					un(24, ach(2796)),	-- Brew of the Month
 					un(24, ach(295)),	-- Direbrewfest
 					un(24, ach(1936)),	-- Does Your Wolpertinger Linger?
@@ -54,11 +54,11 @@ _.Holidays = bubbleDown({["u"] = 24},
 				un(2, ach(1293, {	-- Blue Brewfest Stein [Removed]
 					["groups"] = bubbleDown({["u"] = 2}, {
 						i(33016, {	-- Blue Brewfest Stein
-							i(33017), -- Filled Blue Brewfest Stein [Barleybrew Clear]
-							i(33018), -- Filled Blue Brewfest Stein [Thunder 45]
-							i(33019), -- Filled Blue Brewfest Stein [Gordok Grog]
-							i(33020), -- Filled Blue Brewfest Stein [Small Step]
-							i(33021), -- Filled Blue Brewfest Stein [Jungle River 
+							i(33017),	-- Filled Blue Brewfest Stein [Barleybrew Clear]
+							i(33018),	-- Filled Blue Brewfest Stein [Thunder 45]
+							i(33019),	-- Filled Blue Brewfest Stein [Gordok Grog]
+							i(33020),	-- Filled Blue Brewfest Stein [Small Step]
+							i(33021),	-- Filled Blue Brewfest Stein [Jungle River 
 						}),
 					}),
 					["description"] = "\nEach Brewfest Stein has five different filled appearances. You want to fill up the stein with one brew, log off then refresh your collection by Shift+Clicking on this achievement. Once it has registered then you move on to the next brew and repeat.\n",
@@ -120,11 +120,11 @@ _.Holidays = bubbleDown({["u"] = 24},
 				un(2, ach(4782, {	-- Green Brewfest Stein [Removed]
 					["groups"] = bubbleDown({["u"] = 2}, {
 						i(37892, {	-- Green Brewfest Stein
-							i(37893), -- Filled Green Brewfest Stein [Barleybrew Clear]
-							i(37894), -- Filled Green Brewfest Stein [Thunder 45]
-							i(37895), -- Filled Green Brewfest Stein [Gordok Grog]
-							i(37896), -- Filled Green Brewfest Stein [Small Step]
-							i(37897), -- Filled Green Brewfest Stein [Jungle River Water]
+							i(37893),	-- Filled Green Brewfest Stein [Barleybrew Clear]
+							i(37894),	-- Filled Green Brewfest Stein [Thunder 45]
+							i(37895),	-- Filled Green Brewfest Stein [Gordok Grog]
+							i(37896),	-- Filled Green Brewfest Stein [Small Step]
+							i(37897),	-- Filled Green Brewfest Stein [Jungle River Water]
 						}),
 					}),
 					["description"] = "\nEach Brewfest Stein has five different filled appearances. You want to fill up the stein with one brew, log off then refresh your collection by Shift+Clicking on this achievement. Once it has registered then you move on to the next brew and repeat.\n",
@@ -169,7 +169,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 						},		
 					}),
 					["races"] = ALLIANCE_ONLY,
-					["u"] = 24, -- Brewfest
+					["u"] = 24,	-- Brewfest
 				})),
 				un(24, ach(1203, {	-- Strange Brew [Horde]
 					["groups"] = bubbleDown({["u"] = 24}, {
@@ -211,16 +211,16 @@ _.Holidays = bubbleDown({["u"] = 24},
 						},		
 					}),
 					["races"] = HORDE_ONLY,
-					["u"] = 24, -- Brewfest
+					["u"] = 24,	-- Brewfest
 				})),
 				un(2, ach(1292, {	-- Yellow Brewfest Stein [Removed]
 					["groups"] = bubbleDown({["u"] = 2}, {
 						i(32912, {	-- Yellow Brewfest Stein
-							i(32915), -- Filled Yellow Brewfest Stein [Barleybrew Clear]
-							i(32917), -- Filled Yellow Brewfest Stein [Thunder 45]
-							i(32918), -- Filled Yellow Brewfest Stein [Gordok Grog]
-							i(32919), -- Filled Yellow Brewfest Stein [Small Step]
-							i(32920), -- Filled Yellow Brewfest Stein [Jungle River Water]
+							i(32915),	-- Filled Yellow Brewfest Stein [Barleybrew Clear]
+							i(32917),	-- Filled Yellow Brewfest Stein [Thunder 45]
+							i(32918),	-- Filled Yellow Brewfest Stein [Gordok Grog]
+							i(32919),	-- Filled Yellow Brewfest Stein [Small Step]
+							i(32920),	-- Filled Yellow Brewfest Stein [Jungle River Water]
 						}),
 					}),
 					["description"] = "\nEach Brewfest Stein has five different filled appearances. You want to fill up the stein with one brew, log off then refresh your collection by Shift+Clicking on this achievement. Once it has registered then you move on to the next brew and repeat.\n",

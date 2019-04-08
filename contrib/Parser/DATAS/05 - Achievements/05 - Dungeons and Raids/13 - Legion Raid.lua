@@ -12,9 +12,9 @@ To do:
 
 _.Achievements = 
 {
-	n(-9959, { -- Dungeons & Raids
+	n(-9959, {	-- Dungeons & Raids
 		["groups"] = {
-			n(-10013, { -- Legion Raid
+			n(-10013, {	-- Legion Raid
 				["groups"] = {
 					ach(10817, {	-- A Change In Scenery
 						crit(1),		-- The Shal'dorei Terrace

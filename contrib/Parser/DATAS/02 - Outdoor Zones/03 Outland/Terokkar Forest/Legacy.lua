@@ -12,7 +12,7 @@ _.Zones =
 					n(-40, {	-- Legacy
 						["groups"] = {
 							n(-17, {	-- Quests
-								un(40, qh(9980, { -- Rescue Deirom!
+								un(40, qh(9980, {	-- Rescue Deirom!
 									un(1, i(25967)),	-- Eagle Crested Pauldrons
 									un(1, i(25968)),	-- Shalassi Sentry's Epaulets
 									un(1, i(25969)),	-- Rapscallion's Touch

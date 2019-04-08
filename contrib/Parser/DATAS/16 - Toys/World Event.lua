@@ -47,7 +47,7 @@ _.Toys =
 				i(90427),	-- Pandaren Brewpack
 				i(116757),	-- Steamworks Sausage Grill
 			},
-			["achievementID"] = 1683, -- Brewmaster
+			["achievementID"] = 1683,	-- Brewmaster
 			["u"] = 24,
 		}),
 		n(-52, {    -- Children's Week
@@ -55,7 +55,7 @@ _.Toys =
 				i(69895), 	-- Green Balloon
 				i(69896), 	-- Yellow Balloon
 			},
-			["achievementID"] = 1793, -- For The Children
+			["achievementID"] = 1793,	-- For The Children
 			["u"] = 20,
 		}),
 		n(-59, {    -- Day of the Dead
@@ -66,7 +66,7 @@ _.Toys =
 				i(116890),	-- "Santo's Sun" Contender's Costume
 				i(116891),	-- "Snowy Owl" Contender's Costume
 			},
-			["achievementID"] = 3456, -- Dead Man's Party
+			["achievementID"] = 3456,	-- Dead Man's Party
 			["u"] = 27,
 		}),
 		n(-61, {    -- Feast of Winter Veil
@@ -100,7 +100,7 @@ _.Toys =
 				i(17712), 	-- Winter Veil Disguise Kit
 				i(116691), 	-- Zhevra Lounge Cushion
 			},
-			["achievementID"] = 1691, -- Merrymaker
+			["achievementID"] = 1691,	-- Merrymaker
 			["u"] = 29,
 		}),
 		{	-- Hallow's End
@@ -176,7 +176,7 @@ _.Toys =
 					["itemID"] = 165669,	-- Lunar Elder's Hearthstone
 				},
 			},
-			["achievementID"] = 913, -- To Honor One's Elders
+			["achievementID"] = 913,	-- To Honor One's Elders
 			["u"] = 17,
 		}),
 		a(n(-53, {  -- Midsummer Fire Festival (Alliance)
@@ -186,7 +186,7 @@ _.Toys =
 				i(116435),	-- Cozy Bonfire
 				i(141649),	-- Set of Matches
 			},
-			["achievementID"] = 1038, -- The Flame Warden
+			["achievementID"] = 1038,	-- The Flame Warden
 			["u"] = 21,
 		})),
 		h(n(-54, {	-- Midsummer Fire Festival (Horde)
@@ -196,14 +196,14 @@ _.Toys =
 				i(116435),	-- Cozy Bonfire
 				i(141649),	-- Set of Matches
 			},
-			["achievementID"] = 1039, -- The Flame Keeper
+			["achievementID"] = 1039,	-- The Flame Keeper
 			["u"] = 21,
 		})),
 		n(-60, {    -- Pilgrim's Bounty
 			["groups"]  = {
 				un(28, i(116400)), 	-- Silver-Plated Turkey Shooter
 			},
-			["achievementID"] = 3478, -- Pilgrim
+			["achievementID"] = 3478,	-- Pilgrim
 			["u"] = 28,
 		}),
 		n(-55, {    -- Pirate's Day
@@ -211,7 +211,7 @@ _.Toys =
 				i(150547),	-- Jolly Roger
 				i(138415),	-- Slightly-Chewed Insult Book
 			},
-			["achievementID"] = 3457, -- The Captain's Booty
+			["achievementID"] = 3457,	-- The Captain's Booty
 			["u"] = 23,
 		}),
 	}),

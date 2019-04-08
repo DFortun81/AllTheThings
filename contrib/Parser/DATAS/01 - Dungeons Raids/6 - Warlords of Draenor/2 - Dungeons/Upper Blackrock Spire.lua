@@ -9,7 +9,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 		["maps"] = { 616, 617, 618 },
 		["coord"] = { 78.94, 33.62, 33 },	-- Blackrock Spire, Eastern Kingdoms
 		["groups"] = {
-			n(-1, { -- Common Boss Drop
+			n(-1, {	-- Common Boss Drop
 				["crs"] = {
 					76413,	-- Orebender Gor'ashan
 					76021,	-- Kyrak
@@ -117,7 +117,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(110018),	-- Kyrak's Vileblood Serum
 					un(3, i(118756)),	-- Finkle's Shanker [Only available during pre WoD level 90 version]
 				})),
-				cr(79912, e(1228, { -- Commander Tharbek
+				cr(79912, e(1228, {	-- Commander Tharbek
 					i(118726),	-- Tharbek's Brutal Possessor
 					i(118725),	-- Tharbek's Unholy Charge
 					i(109898),	-- Blackwater Wrap
@@ -286,7 +286,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 			d(2, {	-- Heroic
 				n(-17, {	-- Quests 
 					q(37179, {
-						i(118938), -- Manastorm's Duplicator
+						i(118938),	-- Manastorm's Duplicator
 					}),	
 				}),	
 				cr(76413, e(1226, {	-- Orebender Gor'ashan
@@ -392,10 +392,10 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						follower(178),	-- Leeroy Jenkins
 					},
 				},
-				n(77081, { -- The Lanticore
+				n(77081, {	-- The Lanticore
 					["description"] = "This rare spawns next to the right of Kyrak (2nd boss) Droprate should be about 100% for pet",
 					["groups"] = {
-						i(117528), -- Lanticore Spawnling (PET!)
+						i(117528),	-- Lanticore Spawnling (PET!)
 					},
 				}),
 				cr(79912, e(1228, {	-- Commander Tharbek
@@ -660,10 +660,10 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(109777),	-- Unsullied Signet
 					i(110018),	-- Kyrak's Vileblood Serum
 				})),
-				n(77081, { -- The Lanticore
+				n(77081, {	-- The Lanticore
 					["description"] = "This rare spawns next to the right of Kyrak (2nd boss) Droprate should be about 100% for pet",
 					["groups"] = {
-						i(117528), -- Lanticore Spawnling (PET!)
+						i(117528),	-- Lanticore Spawnling (PET!)
 					},
 				}),
 				cr(79912, e(1228, {	-- Commander Tharbek

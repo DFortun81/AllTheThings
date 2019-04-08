@@ -1,5 +1,5 @@
 -- Cooking - Skill ID 185 / Spell ID 2550
-profession(185, { -- Cooking
+profession(185, {	-- Cooking
 	n(-37, {	-- Discovery
 		["description"] = "These items have a chance to appear in your bag after cooking any recipe from Warlords of Draenor.",
 		["groups"] = {
@@ -94,7 +94,7 @@ profession(185, { -- Cooking
 				i(133845),	-- Recipe: Fishbrul Special [Rank 2]
 				i(133865),	-- Recipe: Fishbrul Special [Rank 3]
 			}),
-			i(124118, { -- Fatty Bearsteak
+			i(124118, {	-- Fatty Bearsteak
 				i(133847),	-- Recipe: Bear Tartare [Rank 2]
 				i(133867),	-- Recipe: Bear Tartare [Rank 3]
 			}),
@@ -167,7 +167,7 @@ profession(185, { -- Cooking
 				i(133846),	-- Recipe: Dried Mackerel Strips [Rank 2]
 				i(133866),	-- Recipe: Dried Mackerel Strips [Rank 3]
 			}),
-			i(133680, { -- Slice of Bacon
+			i(133680, {	-- Slice of Bacon
 				i(133871),	-- Recipe: Crispy Bacon [Rank 1]
 				i(133872),	-- Recipe: Crispy Bacon [Rank 2]
 				i(133873),	-- Recipe: Crispy Bacon [Rank 3]
@@ -285,7 +285,7 @@ profession(185, { -- Cooking
 					["u"] = 7,
 				},
 				un(7, i(5489)),	-- Recipe: Lean Venison
-				un(7, i(12227)), -- Recipe: Lean Wolf Steak
+				un(7, i(12227)),	-- Recipe: Lean Wolf Steak
 				un(7, i(5487)),	-- Recipe: Dig Rat Stew
 				un(7, i(44977)),	-- Recipe: Dig Rat Stew
 				un(7, i(3736)),	-- Recipe: Tasty Lion Steak
@@ -296,7 +296,7 @@ profession(185, { -- Cooking
 				un(7, i(35566)),	-- Recipe: Juicy Bear Burger
 				un(7, i(13945)),	-- Recipe: Nightfin Soup
 				un(7, i(13946)),	-- Recipe: Poached Sunscale Salmon
-				un(7, i(21025)), -- Recipe: Dirge's Kickin' Chimaerok Chops
+				un(7, i(21025)),	-- Recipe: Dirge's Kickin' Chimaerok Chops
 				--[[
 				recipe(37836),	-- Spice Bread
 				recipe(7751),	-- Brilliant Smallfish
@@ -534,7 +534,7 @@ profession(185, { -- Cooking
 				recipe(125122),	-- Rice Pudding
 				recipe(125078),	-- Roasted Barley Tea
 				recipe(124234),	-- Skewered Peanut Chicken
-				recipe(125117), -- Sliced Peaches
+				recipe(125117),	-- Sliced Peaches
 				recipe(125123),	-- Spicy Vegetable Chips
 				recipe(124230),	-- Tangy Yogurt
 				recipe(124225),	-- Toasted Fish Jerky

@@ -12,7 +12,7 @@ _.Zones =
 					{	-- The Scarlet Enclave
 						["mapID"] = 124,
 						["g"] = {
-							n(-17, { -- Quests
+							n(-17, {	-- Quests
 								["classes"] = {
 									6,	-- Death Knight Only
 								},

@@ -7,7 +7,7 @@ _.WorldEvents =
 	{	-- Darkmoon Island
 		["mapID"] = 407,	-- Darkmoon Island
 		["g"] = {
-			n(-17, { -- Quests
+			n(-17, {	-- Quests
 				{	-- 1200 Tickets - Amulet of the Darkmoon
 					["questID"] = 7981,	-- 1200 Tickets - Amulet of the Darkmoon
 					["qg"] = 14828,	-- Gelvas Grimegate <Souvenir & Toy Prizes>

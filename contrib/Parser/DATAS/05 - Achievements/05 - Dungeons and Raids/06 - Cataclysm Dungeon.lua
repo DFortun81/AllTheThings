@@ -4,9 +4,9 @@
 
 _.Achievements = 
 {
-	n(-9959, { -- Dungeons & Raids
+	n(-9959, {	-- Dungeons & Raids
 		["groups"] = {
-			n(-10006, { -- Cataclysm Dungeon
+			n(-10006, {	-- Cataclysm Dungeon
 				["groups"] = {
 					{	-- Acrocalypse Now
 						["achievementID"] = 5291,	-- Acrocalypse Now

@@ -18,8 +18,8 @@ _.Zones =
 							}),
 							i(23611, {	-- Plans: Ragesteel Gloves
 								["crs"] = {
-									17137, -- Boulderfist Mage
-									17136, -- Boulderfist Warrior
+									17137,	-- Boulderfist Mage
+									17136,	-- Boulderfist Warrior
 								},
 							}),
 							i(22923, {	-- Recipe: Major Arcane Protection Potion

@@ -3,13 +3,13 @@
 -----------------------------------------------------
 _.GearSets = 
 {
-	n(-5350, { -- Class Trial Item Sets
+	n(-5350, {	-- Class Trial Item Sets
 		n(-138, {	-- Level 100
 			["description"] = "These are obtained by creating a Level 100 Class Trial for each class and specialization.",
 			["icon"] = "Interface\\Icons\\achievement_level_100",
 			["lvl"] = 100,
 			["groups"] = bubbleDown({["u"] = 2}, {
-				n(-140, { -- Communal
+				n(-140, {	-- Communal
 					["groups"] = {
 						n(-9915, {	-- Disc / Holy
 							i(129394),	-- Communal Staff
@@ -48,7 +48,7 @@ _.GearSets =
 					},
 					["classes"] = { 5 }
 				}),
-				n(-145, { -- Mountainsage
+				n(-145, {	-- Mountainsage
 					["groups"] = {
 						i(129525),	-- Mountainsage Staff
 						un(1, i(129523)),	-- Mountainsage Wand
@@ -69,7 +69,7 @@ _.GearSets =
 					},
 					["classes"] = { 8 }
 				}),
-				n(-141, { -- Felsoul 
+				n(-141, {	-- Felsoul 
 					["groups"] = {
 						i(129425),	-- Felsoul Staff
 						i(129417),	-- Felsoul Cowl
@@ -89,7 +89,7 @@ _.GearSets =
 					},
 					["classes"] = { 9 }
 				}),
-				n(-147, { -- Springrain
+				n(-147, {	-- Springrain
 					["groups"] = {
 						i(142023, {	-- Adventurer's Footlocker
 							i(129583),	-- Springrain Spear
@@ -107,7 +107,7 @@ _.GearSets =
 							i(129577),	-- Springrain Stone of Destruction
 							i(129563),	-- Springrain Stone of Rage
 						}),
-						n(-9926, { -- Balance
+						n(-9926, {	-- Balance
 							i(129567),	-- Springrain Headpiece
 							i(129569),	-- Springrain Spaulders
 							i(129564),	-- Springrain Tunic
@@ -117,7 +117,7 @@ _.GearSets =
 							i(129568),	-- Springrain Leggings
 							i(129565),	-- Springrain Treads
 						}),
-						n(-9925, { -- Feral
+						n(-9925, {	-- Feral
 							i(129581),	-- Springrain Helm
 							i(129584),	-- Springrain Pauldrons
 							i(129578),	-- Springrain Vest
@@ -130,7 +130,7 @@ _.GearSets =
 					},
 					["classes"] = { 11 }
 				}),
-				n(-143, { -- Lightdrinker 
+				n(-143, {	-- Lightdrinker 
 					["groups"] = {
 						i(142023, {	-- Adventurer's Footlocker
 							i(129473),	-- Lightdrinker Sword
@@ -154,7 +154,7 @@ _.GearSets =
 					},
 					["classes"] = { 4 }
 				}),
-				n(-144, { -- Mistdancer 
+				n(-144, {	-- Mistdancer 
 					["groups"] = {
 						i(142023, {	-- Adventurer's Footlocker
 							i(129478),	-- Mistdancer Spire
@@ -206,7 +206,7 @@ _.GearSets =
 					},
 					["classes"] = { 10 }
 				}),
-				n(-150, { -- Trailseeker
+				n(-150, {	-- Trailseeker
 					["groups"] = {
 						i(142023, {	-- Adventurer's Footlocker
 							i(129717),	-- Trailseeker Shotgun
@@ -229,7 +229,7 @@ _.GearSets =
 					},
 					["classes"] = { 3 }
 				}),
-				n(-148, { -- Streamtalker
+				n(-148, {	-- Streamtalker
 					["classes"] = { 7 },	-- Shaman Only
 					["groups"] = {
 						{	-- Streamtalker Aegis [Elemental]
@@ -375,7 +375,7 @@ _.GearSets =
 						},
 					},
 				}),	
-				n(-149, { -- Sunsoul 
+				n(-149, {	-- Sunsoul 
 					["groups"] = {
 						i(129681),	-- Sunsoul Bulwark
 						i(129678),	-- Sunsoul Scepter
@@ -427,7 +427,7 @@ _.GearSets =
 					},
 					["classes"] = { 2 }
 				}),
-				n(-146, { -- Oathsworn 
+				n(-146, {	-- Oathsworn 
 					["groups"] = {
 						i(142023, {	-- Adventurer's Footlocker
 							i(129536),	-- Oathsworn Axe
@@ -470,7 +470,7 @@ _.GearSets =
 					},
 					["classes"] = { 1 }
 				}),	
-				n(-142, { -- Heart-Lesion 
+				n(-142, {	-- Heart-Lesion 
 					["groups"] = {
 						i(142023, {	-- Adventurer's Footlocker
 							i(129435),	-- Heart-Lesion Blade

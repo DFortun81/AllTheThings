@@ -8,7 +8,7 @@ _.Instances = { tier(1, {	-- Classic
 		["mapID"] = 280,
 		["maps"] = { 281, 67, 68 },
 		["groups"] = {
-			n(-70, { -- Foulspore Cavern [Orange]
+			n(-70, {	-- Foulspore Cavern [Orange]
 				["coord"] = { 78.01, 55.68, 67 },	-- Maraudon [Orange], The Wicked Grotto [Desolace]
 				["groups"] = {
 					n(-17, {	-- Quests
@@ -32,7 +32,7 @@ _.Instances = { tier(1, {	-- Classic
 					})),
 				},
 			}),
-			n(-71, { -- The Wicked Grotto [Purple]
+			n(-71, {	-- The Wicked Grotto [Purple]
 				["coord"] = { 51.68, 24.73, 68 },	-- Maraudon [Purple], Foulspore Cavern [Desolace]
 				["groups"] = {
 					n(-17, {	-- Quests
@@ -64,7 +64,7 @@ _.Instances = { tier(1, {	-- Classic
 					}),
 				},
 			}),
-			n(-69, { -- Maraudon Portal
+			n(-69, {	-- Maraudon Portal
 				["coord"] = { 44.49, 77.14, 68 },	-- Maraudon [Falls], Foulspore Cavern [Desolace]
 				["groups"] = {
 					n(-17, {	-- Quests 			

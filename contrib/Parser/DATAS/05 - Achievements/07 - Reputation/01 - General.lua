@@ -4,9 +4,9 @@
 
 _.Achievements =
 {
-	n(-9961, { -- Reputation
+	n(-9961, {	-- Reputation
 		["groups"] = {
-			n(-9955, { -- General
+			n(-9955, {	-- General
 				["groups"] = {
 					ach(12866, { 	-- 100 Exalted Reputations
 						i(163982),		-- Pureheart Courser

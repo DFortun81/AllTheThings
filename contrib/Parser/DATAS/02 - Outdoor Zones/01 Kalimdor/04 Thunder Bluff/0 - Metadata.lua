@@ -28,7 +28,7 @@ _.Zones =
 							}),
 						}),
 					},
-					["achievementID"] = 913, -- To Honor One's Elders
+					["achievementID"] = 913,	-- To Honor One's Elders
 					["u"] = 17,
 				}),
 				n(-50, {     -- Love is in the Air
@@ -40,14 +40,14 @@ _.Zones =
 							qg(37675, q(24636)),	-- Bonbon Blitz
 							qg(38295, qh(24805)),	-- Uncommon Scents
 						}),
-						n(-2, { -- Vendors
-							n(37674, { -- Lovely Merchant <Crown Chemical Co.>
-								i(50161, { -- Dinner Suit Box
+						n(-2, {	-- Vendors
+							n(37674, {	-- Lovely Merchant <Crown Chemical Co.>
+								i(50161, {	-- Dinner Suit Box
 									i(151765),	-- Blue Dinner Suit
 									i(151764),	-- Purple Dinner Suit
 									i(151766),	-- Red Dinner Suit
 								}),
-								i(50160, { -- Lovely Dress Box
+								i(50160, {	-- Lovely Dress Box
 									i(151770),	-- Lovely Black Dress
 									i(151768),	-- Lovely Blue Dress
 									i(151767),	-- Lovely Purple Dress
@@ -71,7 +71,7 @@ _.Zones =
 							qg(19176, qh(13483)),	-- Spring Gatherers
 						}),
 					},
-					["achievementID"] = 2798, -- Noble Gardener
+					["achievementID"] = 2798,	-- Noble Gardener
 					["u"] = 19,
 				}),
 				n(-56, {     -- Brewfest
@@ -80,7 +80,7 @@ _.Zones =
 							qg(19176, qh(11446)),	-- Brewfest!
 						}),
 					},
-					["achievementID"] = 1683, -- Brewmaster
+					["achievementID"] = 1683,	-- Brewmaster
 					["u"] = 24,
 				}),	
 				n(-60, {     -- Pilgrim's Bounty
@@ -119,7 +119,7 @@ _.Zones =
 							}),
 						}),
 					},
-					["achievementID"] = 3478, -- Pilgrim
+					["achievementID"] = 3478,	-- Pilgrim
 					["u"] = 28,
 				}),					
 				n(-61, {     -- Feast of Winter Veil
@@ -129,7 +129,7 @@ _.Zones =
 							qg(15732, qh( 8861)),	-- New Year Celebrations!
 						}),
 						n(-2, { 	-- Vendors
-							n(13432, { -- Seersa Jinglepocket
+							n(13432, {	-- Seersa Jinglepocket
 								i(34261),	-- Pattern: Green Winter Clothes
 								i(34262),	-- Pattern: Winter Boots
 								i(17200),	-- Recipe: Gingerbread Cookie
@@ -139,7 +139,7 @@ _.Zones =
 							}),
 						}),
 					},
-					["achievementID"] = 1691, -- Merrymaker
+					["achievementID"] = 1691,	-- Merrymaker
 					["u"] = 29,
 				}),		
 			}),

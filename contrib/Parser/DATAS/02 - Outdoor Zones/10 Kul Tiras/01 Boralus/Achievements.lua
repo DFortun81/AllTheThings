@@ -11,9 +11,9 @@ _.Zones =
 					["groups"] = {
 						ach(12891, {	-- A Nation United [A]
 							["groups"] = {
-								crit(3), -- A Nation United
-								crit(1), -- Kul Tourist
-								crit(2), -- The Pride of Kul Tiras
+								crit(3),	-- A Nation United
+								crit(1),	-- Kul Tourist
+								crit(2),	-- The Pride of Kul Tiras
 							},
 							["races"] = ALLIANCE_ONLY,
 						}),
@@ -27,9 +27,9 @@ _.Zones =
 						}),
 						ach(12593, {	-- Kul Tourist [A]
 							["groups"] = {
-								crit(1), -- A Sound Plan
-								crit(2), -- Drust Do It.
-								crit(3), -- Stormsong and Dance
+								crit(1),	-- A Sound Plan
+								crit(2),	-- Drust Do It.
+								crit(3),	-- Stormsong and Dance
 							},
 							["races"] = ALLIANCE_ONLY,
 						}),
@@ -84,7 +84,7 @@ _.Zones =
 										}),
 									},
 									["description"] = "Once you have clicked all five damp scrolls return back to the altar.  From there you will click the altar and click each time new line comes up.  Once all five are entered it will ask you are sure hit \"Acccept\".  You will then be teleported (way south of Tiragarde Sound) where a gem will be in front of you.  Click it to open it up and receive the toy.\n\nAltar Location: 55, 91",
-									["questID"] = 52195, -- Secrets of the Depths
+									["questID"] = 52195,	-- Secrets of the Depths
 								}),
 							},
 							["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
@@ -94,7 +94,7 @@ _.Zones =
 			},
 			["lvl"] = 110,
 			["isRaid"] = true,
-			["achievementID"] = 12847, -- Siege of Boralus
+			["achievementID"] = 12847,	-- Siege of Boralus
 			["description"] = "|cff66ccffBoralus is the capital of the island city-state of Kul Tiras. It is located on the mouth of a river or strait running through Tiragarde Sound. Boralus is a safe port of call in unsafe waters. The outer wall hosts a marketplace that is second to none. Merchants from all over Azeroth dock here to trade their goods. For most visitors, the market is all they ever see of Boralus. Beyond the Great Gate lies the city proper, and very few outsiders are allowed inside.|r",
 		}),
 	}),

@@ -4,9 +4,9 @@
 
 _.Achievements = 
 {
-	n(-10055, { -- Expansion Features
+	n(-10055, {	-- Expansion Features
 		["groups"] = {
-			n(-10056, { -- Island Expeditions
+			n(-10056, {	-- Island Expeditions
 				["maps"] = {
 					1036,	-- Dread Chain
 					1336,	-- Havenswood

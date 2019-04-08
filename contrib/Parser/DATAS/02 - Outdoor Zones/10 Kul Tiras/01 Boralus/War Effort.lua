@@ -231,14 +231,14 @@ _.Zones =
 						}),
 					},
 					["lvl"] = 120,
-					["achievementID"] = 12874, -- An Eventful Battle
+					["achievementID"] = 12874,	-- An Eventful Battle
 					["races"] = ALLIANCE_ONLY,
 					["description"] = "|cff66ccffLocated in the Arathi Highlands, Stromgarde is one of the key locations in the struggle for control of the Eastern Kingdoms. For the Alliance, Stromgarde sits in a critical defensive position. Following the battle for Lordaeron, the Horde threat still looms over the continent and holding Stromgarde will be key if you hope to keep the Horde's aggression at bay.\n\nFor the Horde, securing Stromgarde would set the stage for an assault on the heart of the Eastern Kingdoms and serve as a launching point for a campaign against the worgen of the kingdom of Gilneas. This location is also key in the defense of the blood elven capital, Silvermoon City, in the north.|r",
 				}),
 			},
 			["lvl"] = 110,
 			["isRaid"] = true,
-			["achievementID"] = 12847, -- Siege of Boralus
+			["achievementID"] = 12847,	-- Siege of Boralus
 			["description"] = "|cff66ccffBoralus is the capital of the island city-state of Kul Tiras. It is located on the mouth of a river or strait running through Tiragarde Sound. Boralus is a safe port of call in unsafe waters. The outer wall hosts a marketplace that is second to none. Merchants from all over Azeroth dock here to trade their goods. For most visitors, the market is all they ever see of Boralus. Beyond the Great Gate lies the city proper, and very few outsiders are allowed inside.|r",
 		}),
 	}),

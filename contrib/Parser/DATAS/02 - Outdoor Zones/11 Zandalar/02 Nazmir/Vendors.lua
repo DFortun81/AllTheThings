@@ -122,7 +122,7 @@ _.Zones =
 						}),
 						n(132011, {	-- Shoak
 							["groups"] = {
-								i(163036, { -- Polished Pet Charm
+								i(163036, {	-- Polished Pet Charm
 								--Note!! Write the item like this on this vendor to prevent the description from being written on the charms.
 									i(163506, {	-- Accursed Hexxer
 										["description"] = "Complete the questline \"An Ancient Curse\" for this item to appear on the vendor.",

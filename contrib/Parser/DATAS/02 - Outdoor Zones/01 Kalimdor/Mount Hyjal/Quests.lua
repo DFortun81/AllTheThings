@@ -208,7 +208,7 @@ _.Zones =
 						["questID"] = 27874,
 						["qg"] = 40289,	-- Ysera
 						["coord"] = { 62.0, 24.8, 198 },
-						["sourceQuest"] = 25611, -- Return from the Firelands
+						["sourceQuest"] = 25611,	-- Return from the Firelands
 						["isBreadcrumb"] = true,
 					},
 					{	-- Between the Trees

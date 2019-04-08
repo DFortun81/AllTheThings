@@ -206,7 +206,7 @@ _.Zones =
 						["lvl"] = 110,
 					},
 					q(40712, {	-- The Power Possessed
-						["qg"] = 101282, -- Revil Kost
+						["qg"] = 101282,	-- Revil Kost
 						["classes"] = { 9 },
 						["sourceQuests"] = {
 							40623,	-- The Dark Riders
@@ -215,7 +215,7 @@ _.Zones =
 						},
 					}),
 					q(41156, {	-- The Power Possessed
-						["qg"] = 101282, -- Revil Kost
+						["qg"] = 101282,	-- Revil Kost
 						["classes"] = { 9 },
 						["sourceQuests"] = {
 							40623,	-- The Dark Riders

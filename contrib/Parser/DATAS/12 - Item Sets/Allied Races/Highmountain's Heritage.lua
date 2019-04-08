@@ -3,9 +3,9 @@
 -----------------------------------------------------
 _.GearSets = 
 {
-	gsh(1522, { -- Allied Races
+	gsh(1522, {	-- Allied Races
 		["groups"] = {
-			gs(1522, { -- Highmountain's Heritage
+			gs(1522, {	-- Highmountain's Heritage
 				["groups"] = {
 					i(156668),	-- Highmountain Headdress
 					i(156669),	-- Highmountain Shoulderguards

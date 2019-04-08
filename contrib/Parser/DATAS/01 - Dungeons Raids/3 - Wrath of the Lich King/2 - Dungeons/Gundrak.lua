@@ -9,41 +9,41 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 		["maps"] = { 154 },
 		["groups"] = {
 			n(-17, {	-- Quests
-				q(29844, { -- For Posterity
+				q(29844, {	-- For Posterity
 					["qgs"] = {
-						55738, -- Tol'mar
-						55737, -- Chronicler Bah'Kini
+						55738,	-- Tol'mar
+						55737,	-- Chronicler Bah'Kini
 					},
 					["groups"] = {
-						i(43180), -- Lion's Head Ring
-						i(43178), -- Ring of Foul Mojo
-						i(43179), -- Solid Platinum Band
-						i(43177), -- Voodoo Signet
+						i(43180),	-- Lion's Head Ring
+						i(43178),	-- Ring of Foul Mojo
+						i(43179),	-- Solid Platinum Band
+						i(43177),	-- Voodoo Signet
 					},
 				}),
-				q(29835, { -- Gal'darah Must Pay
+				q(29835, {	-- Gal'darah Must Pay
 					["qgs"] = {
-						55738, -- Tol'mar
-						55737, -- Chronicler Bah'Kini
+						55738,	-- Tol'mar
+						55737,	-- Chronicler Bah'Kini
 					},
 					["groups"] = {
-						i(43164), -- Sly Mojo Sash
-						i(43165), -- Strange Voodoo Belt
-						i(43167), -- Ranger's Beelt of the Fallen Empire
-						i(43168), -- Clasp of the Fallen Demi-God
+						i(43164),	-- Sly Mojo Sash
+						i(43165),	-- Strange Voodoo Belt
+						i(43167),	-- Ranger's Beelt of the Fallen Empire
+						i(43168),	-- Clasp of the Fallen Demi-God
 					},
 				}),
-				q(29839, { -- One of a Kind
+				q(29839, {	-- One of a Kind
 					["qgs"] = {
-						55738, -- Tol'mar
-						55737, -- Chronicler Bah'Kini
+						55738,	-- Tol'mar
+						55737,	-- Chronicler Bah'Kini
 					},
 					["groups"] = {
-						i(43171), -- Fur-Lined Moccasins
-						i(43172), -- Rhino Hide Kneeboots
-						i(43173), -- Scaled Boots of Fallen Hope
-						i(43176), -- Slippers of the Mojo Dojo
-						i(43174), -- Trollkickers	
+						i(43171),	-- Fur-Lined Moccasins
+						i(43172),	-- Rhino Hide Kneeboots
+						i(43173),	-- Scaled Boots of Fallen Hope
+						i(43176),	-- Slippers of the Mojo Dojo
+						i(43174),	-- Trollkickers	
 					},
 				}),					
 			}),

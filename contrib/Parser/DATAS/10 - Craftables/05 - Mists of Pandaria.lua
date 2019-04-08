@@ -3,7 +3,7 @@
 -----------------------------------------------------
 _.Craftables =
 {
-	tier(5, { -- Mists of Pandaria
+	tier(5, {	-- Mists of Pandaria
 		n(-180, {	-- Alchemy
 --[[	20.Nov.2018 - automation should handle discovery. Leaving this here in case we change our mind later
 			n(-37, {	-- Discovery
@@ -747,7 +747,7 @@ _.Craftables =
 		}),
 		n(-185, { 	-- Inscription
 		-- Reviewed and updated as of 11.21.2018 BfA 8.0
-			n(-491, { -- Tarot Cards
+			n(-491, {	-- Tarot Cards
 				sp(111830, {	-- Darkmoon Card of Mists
 					i(79299, {["f"] = 55}),    -- Ace of Crane
 					i(79300, {["f"] = 55}),    -- 2 of Crane
@@ -843,7 +843,7 @@ _.Craftables =
 					["itemID"] = 82774,	-- Jade Owl
 				},
 				{	-- Sapphire Cub
-					["itemID"] = 82775, -- Sapphire Cub
+					["itemID"] = 82775,	-- Sapphire Cub
 				},
 			}),
 			filter(51, {	-- Neck

@@ -12,9 +12,9 @@ To do:
 
 _.Achievements = 
 {
-	n(-10055, { -- Expansion Features
+	n(-10055, {	-- Expansion Features
 		["groups"] = {
-			n(-10042, { -- Proving Grounds
+			n(-10042, {	-- Proving Grounds
 				["groups"] = {
 					ach(9577, {	-- Proving Yourself: Endless Damage (Wave 30) (Damage Series)
 						title(215),	-- the Proven Assailant

@@ -4,9 +4,9 @@
 
 _.Achievements =
 {
-	n(-9957, { -- Exploration
+	n(-9957, {	-- Exploration
 		["groups"] = {
-			n(-10052, { -- Battle for Azeroth
+			n(-10052, {	-- Battle for Azeroth
 				["groups"] = {
 					ach(13036, {	-- A Loa of a Tale
 						crit(1),		-- Tales of de Loa: Akunda

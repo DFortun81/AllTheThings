@@ -1536,11 +1536,11 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i( 50804),	-- Icecrown Spire Sandals
 					i( 50803),	-- Saurfang's Cold-Forged Band
 				})),
-				n(37904, { -- Brazie Getz
+				n(37904, {	-- Brazie Getz
 					["description"] = "Shows up after killing Deathbring Saurfang in the camp vendors set up",
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(49926), -- Brazie's Black Book of Secrets
+						i(49926),	-- Brazie's Black Book of Secrets
 					},
 				}),
 				n( 37217, {			-- Precious
@@ -1747,13 +1747,13 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				})),
 			}),
 			d(  5, {	-- 10-Player (Heroic)
-				n(-1, { -- Common Boss Drop
+				n(-1, {	-- Common Boss Drop
 					["crs"] = {
-						37813, -- Deathbringer Saurfang
-						36678, -- Professor Putricide
-						37955, -- Blood-Queen Lana'thel
-						36853, -- Sindragosa
-						36597, -- The Lich King
+						37813,	-- Deathbringer Saurfang
+						36678,	-- Professor Putricide
+						37955,	-- Blood-Queen Lana'thel
+						36853,	-- Sindragosa
+						36597,	-- The Lich King
 					},
 					["groups"] = {
 						i(49908, {	-- Primordial Saronite
@@ -1966,11 +1966,11 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i( 51899),	-- Icecrown Spire Sandals
 					i( 51900),	-- Saurfang's Cold-Forged Band
 				})),
-				n(37904, { -- Brazie Getz
+				n(37904, {	-- Brazie Getz
 					["description"] = "Shows up after killing Deathbring Saurfang in the camp vendors set up",
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(49926), -- Brazie's Black Book of Secrets
+						i(49926),	-- Brazie's Black Book of Secrets
 					},
 				}),
 				n( 37217, {			-- Precious
@@ -2158,13 +2158,13 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				})),
 			}),
 			d(  4, {	-- 25-Player (Normal)
-				n(-1, { -- Common Boss Drop
+				n(-1, {	-- Common Boss Drop
 					["crs"] = {
-						37813, -- Deathbringer Saurfang
-						36678, -- Professor Putricide
-						37955, -- Blood-Queen Lana'thel
-						36853, -- Sindragosa
-						36597, -- The Lich King
+						37813,	-- Deathbringer Saurfang
+						36678,	-- Professor Putricide
+						37955,	-- Blood-Queen Lana'thel
+						36853,	-- Sindragosa
+						36597,	-- The Lich King
 					},
 					["groups"] = {
 						i(49908, {	-- Primordial Saronite
@@ -2385,11 +2385,11 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i( 50015),	-- Belt of the Blood Nova
 					i( 50362),	-- Deathbringer's Will
 				})),
-				n(37904, { -- Brazie Getz
+				n(37904, {	-- Brazie Getz
 					["description"] = "Shows up after killing Deathbring Saurfang in the camp vendors set up",
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(49926), -- Brazie's Black Book of Secrets
+						i(49926),	-- Brazie's Black Book of Secrets
 					},
 				}),
 				n( 37217, {			-- Precious
@@ -2618,13 +2618,13 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				})),
 			}),
 			d(  6, {	-- 25-Player (Heroic)
-				n(-1, { -- Common Boss Drop
+				n(-1, {	-- Common Boss Drop
 					["crs"] = {
-						37813, -- Deathbringer Saurfang
-						36678, -- Professor Putricide
-						37955, -- Blood-Queen Lana'thel
-						36853, -- Sindragosa
-						36597, -- The Lich King
+						37813,	-- Deathbringer Saurfang
+						36678,	-- Professor Putricide
+						37955,	-- Blood-Queen Lana'thel
+						36853,	-- Sindragosa
+						36597,	-- The Lich King
 					},
 					["groups"] = {
 						i(49908, {	-- Primordial Saronite
@@ -2940,11 +2940,11 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i( 50671),	-- Belt of the Blood Nova
 					i( 50363),	-- Deathbringer's Will
 				})),
-				n(37904, { -- Brazie Getz
+				n(37904, {	-- Brazie Getz
 					["description"] = "Shows up after killing Deathbring Saurfang in the camp vendors set up",
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(49926), -- Brazie's Black Book of Secrets
+						i(49926),	-- Brazie's Black Book of Secrets
 					},
 				}),
 				n( 37217, {			-- Precious

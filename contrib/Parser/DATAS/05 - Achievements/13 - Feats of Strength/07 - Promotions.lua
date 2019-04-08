@@ -4,9 +4,9 @@
 
 _.Achievements =
 {
-	n(-9969, { -- Feats of Strength
+	n(-9969, {	-- Feats of Strength
 		["groups"] = {
-			n(-10046, { -- Promotions
+			n(-10046, {	-- Promotions
 				["groups"] = {
 					un(16, ach(415)),		-- Big Blizzard Bear
 					un(6, ach(11064)),		-- Collector's Edition: Baby Winston

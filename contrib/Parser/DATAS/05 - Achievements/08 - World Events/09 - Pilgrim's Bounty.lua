@@ -12,9 +12,9 @@ To do:
 
 _.Achievements = 
 {
-	n(-9962, { -- World Events
+	n(-9962, {	-- World Events
 		["groups"] = bubbleDown({["u"] = 28}, {
-			n(-10022, { -- Pilgrim's Bounty
+			n(-10022, {	-- Pilgrim's Bounty
 				["groups"] = {
 					ach(3579),		-- "FOOD FIGHT!"
 					a(ach(3576, {	-- Now We're Cookin' (Alliance)

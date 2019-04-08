@@ -3,9 +3,9 @@
 ---------------------------------------------------
 _.ExpansionFeatures =
 {
-	n(-9965, { -- Legion Class Hall
-		cl(2, { -- Sanctum of Light (Paladin)
-			["mapID"] = 24, -- Light's Hope Chapel: Sanctum of Light
+	n(-9965, {	-- Legion Class Hall
+		cl(2, {	-- Sanctum of Light (Paladin)
+			["mapID"] = 24,	-- Light's Hope Chapel: Sanctum of Light
 			["lvl"] = 98,
 			["groups"] = {
 				n(-4, {	-- Achievements
@@ -74,15 +74,15 @@ _.ExpansionFeatures =
 					a(ach(10743)),	-- The Prestige (Alliance) [Still in WoW UI as of 8.0]
 					h(ach(10745)),	-- The Prestige (Horde) [Still in WoW UI as of 8.0]
 				}),
-				n(-17, { -- Quests
-					q(44250, { -- Champion of the Light
-						i(139693), -- Crown of the Silver Hand
+				n(-17, {	-- Quests
+					q(44250, {	-- Champion of the Light
+						i(139693),	-- Crown of the Silver Hand
 					}),
-					q(45770, { -- Stirring in the Shadows
+					q(45770, {	-- Stirring in the Shadows
 						["lvl"] = 110,
 						["classes"] = {2},
 						["groups"] = {
-							i(143502), -- Highlord's Golden Charge
+							i(143502),	-- Highlord's Golden Charge
 						},
 					}),
 					q(42005, {	--  The End of the Saga [Moved from Howling Fjord]
@@ -90,28 +90,28 @@ _.ExpansionFeatures =
 						["qg"] = 105724,	-- Orik Trueheart
 					}),
 					q(46071, {	-- The Hammer of Dalaran
-						["qg"] = 90250, -- Lord Grayson Shadowbreaker
-						["sourceQuests"] = { 46070 }, -- Preparations Underway
+						["qg"] = 90250,	-- Lord Grayson Shadowbreaker
+						["sourceQuests"] = { 46070 },	-- Preparations Underway
 					}),
-					q(43687, { -- Walking in the Shadows (Artifact Appearance)
+					q(43687, {	-- Walking in the Shadows (Artifact Appearance)
 						["qg"] = 90259,	-- Lord Maxwell Tyrosus
 						["description"] = "You must have the Shard of Darkness in your inventory in order for him to give you this quest. Once you have it, go to the Legion version of Acherus: The Ebon Hold using the Dalaran flight master.",
-						["sourceQuests"] = { 43685 }, -- Phylactery Used
+						["sourceQuests"] = { 43685 },	-- Phylactery Used
 						["groups"] = {
-							i(139566, { -- Heart of Corruption
-								artifact(865), -- Retribution Hidden Artifact Appearance
+							i(139566, {	-- Heart of Corruption
+								artifact(865),	-- Retribution Hidden Artifact Appearance
 							}),
 						},
 					}),
-					q(43697, { -- Warriors of the Light
-						i(139690), -- Breastplate of the Silver Hand
+					q(43697, {	-- Warriors of the Light
+						i(139690),	-- Breastplate of the Silver Hand
 					}),
-					q(43541, { -- United As One
-						i(139697), -- Bindings of the Silver Hand
+					q(43541, {	-- United As One
+						i(139697),	-- Bindings of the Silver Hand
 					}),
 				}),
 				--[[
-				n(93787, { -- Scouting Map
+				n(93787, {	-- Scouting Map
 					["groups"] = {
 						-- Blank for Class Only Missions in the future
 					},
@@ -119,35 +119,35 @@ _.ExpansionFeatures =
 					["modelScale"] = 2.5,
 				}),
 				]]--
-				n(-2, { --  Vendors
-					n(99976, { --  Crusader Lord Dalfors
+				n(-2, {	--  Vendors
+					n(99976, {	--  Crusader Lord Dalfors
 						["classes"] = {2},
 						["description"] = "|c808080FAThese mounts are only available to paladins who have completed|r |cFFFFD700Stirring in the Shadows|r |c808080FAquest from the class mount campaign.",
 						["groups"] = {
 							i(153177),	-- Golden Charger's Birdle
-							i(143503), -- Harsh Reins of the Vengeful Charger
-							i(143505), -- Heraldic Reins of the Valorous Charger
-							i(143504), -- Stoic Reins of the Vigilant Charger
+							i(143503),	-- Harsh Reins of the Vengeful Charger
+							i(143505),	-- Heraldic Reins of the Valorous Charger
+							i(143504),	-- Stoic Reins of the Vigilant Charger
 							i(153174),	-- Valorous Charger's Bridle
 							i(153175),	-- Vengeful Charger's Bridle
 							i(153176),	-- Vigilant Charger's Bridle
 						},
 					}),
-					n(100196, { -- Eadric the Pure <Quartermaster>
-						gs(496, { -- Battleplate of the Silver Hand
-							i(139693), -- Head
-							i(139695), -- Shoulders
-							i(139690), -- Chest
-							i(139697), -- Bracers
-							i(139692), -- Hands
-							i(139696), -- Belt
-							i(139694), -- Legs
-							i(139691), -- Feet		
+					n(100196, {	-- Eadric the Pure <Quartermaster>
+						gs(496, {	-- Battleplate of the Silver Hand
+							i(139693),	-- Head
+							i(139695),	-- Shoulders
+							i(139690),	-- Chest
+							i(139697),	-- Bracers
+							i(139692),	-- Hands
+							i(139696),	-- Belt
+							i(139694),	-- Legs
+							i(139691),	-- Feet		
 						}),
-						i(140555), -- Blade of the Silver Hand
-						i(140535), -- Bulwark of  the Silver hand
-						i(140558), -- Greatsword of the Silver Hand
-						i(140547), -- Warhammer of the Silver Hand
+						i(140555),	-- Blade of the Silver Hand
+						i(140535),	-- Bulwark of  the Silver hand
+						i(140558),	-- Greatsword of the Silver Hand
+						i(140547),	-- Warhammer of the Silver Hand
 						currency(1220, {	-- Order Resources
 							i(143727),	-- Champion's Salute Toy
 							i(124124),	-- Blood of Sargeras

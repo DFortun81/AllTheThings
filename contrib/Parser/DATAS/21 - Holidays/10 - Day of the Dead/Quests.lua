@@ -3,7 +3,7 @@
 --------------------------------------------
 _.Holidays = bubbleDown({ ["u"] = 27 },	-- Day of the Dead Filter
 {
-	holiday(307365, { -- Day of the Dead
+	holiday(307365, {	-- Day of the Dead
 		n(-17, {	-- Quests
 			{	-- The Grateful Dead [Azuremyst Isle - Draenei]
 				["questID"] = 14169,	-- The Grateful Dead
@@ -172,7 +172,7 @@ _.Holidays = bubbleDown({ ["u"] = 27 },	-- Day of the Dead Filter
 				["qg"] = 34483,			-- Cheerful Blood Elf Spirit
 				["races"] = {
 					10,	-- Blood Elf
-					27, -- Nightborne
+					27,	-- Nightborne
 				},
 				["coords"] = {
 					{ 47.99, 49.47 },

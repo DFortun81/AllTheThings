@@ -5,639 +5,639 @@
 _.Zones =
 {
 	m(905, { 	-- Argus
-		m(886, { -- Vindicaar
+		m(886, {	-- Vindicaar
 			["groups"] = {
-				n(-169, { -- Emissary Quests
-					q(48642, { -- Argussian Reach
+				n(-169, {	-- Emissary Quests
+					q(48642, {	-- Argussian Reach
 						["qg"] = 127151,	-- Toraan the Revered
 						["groups"] = {
-							i(157831, { -- Scuffed Krokul Cache
+							i(157831, {	-- Scuffed Krokul Cache
 								["groups"] = {
-									i(152740, { -- Unsullied Cloak
-										i(152778), -- Conservatory Ward's Drape
+									i(152740, {	-- Unsullied Cloak
+										i(152778),	-- Conservatory Ward's Drape
 									}),
-									i(152738, { -- Unsullied Cloth Cap
-										i(152770), -- Azurelight Sage's Cap
+									i(152738, {	-- Unsullied Cloth Cap
+										i(152770),	-- Azurelight Sage's Cap
 									}),
-									i(152734, { -- Unsullied Cloth Mantle
-										i(152777), -- Azurelight Sage's Mantle
+									i(152734, {	-- Unsullied Cloth Mantle
+										i(152777),	-- Azurelight Sage's Mantle
 									}),
-									i(153135, { -- Unsullied Cloth Robes
-										i(152775), -- Azurelight Sage's Robes
+									i(153135, {	-- Unsullied Cloth Robes
+										i(152775),	-- Azurelight Sage's Robes
 									}),
-									i(152742, { -- Unsullied Cloth Cuffs
-										i(152773), -- Azurelight Sage's Cuffs
+									i(152742, {	-- Unsullied Cloth Cuffs
+										i(152773),	-- Azurelight Sage's Cuffs
 									}),
-									i(153141, { -- Unsullied Cloth Mitts
-										i(152771), -- Azurelight Sage's Mitts
+									i(153141, {	-- Unsullied Cloth Mitts
+										i(152771),	-- Azurelight Sage's Mitts
 									}),
-									i(153156, { -- Unsullied Cloth Sash
-										i(152772), -- Azurelight Sage's Sash
+									i(153156, {	-- Unsullied Cloth Sash
+										i(152772),	-- Azurelight Sage's Sash
 									}),
-									i(153154, { -- Unsullied Cloth Leggings
-										i(152776), -- Azurelight Sage's Leggings
+									i(153154, {	-- Unsullied Cloth Leggings
+										i(152776),	-- Azurelight Sage's Leggings
 									}),
-									i(153144, { -- Unsullied Cloth Slippers
-										i(152774), -- Azurelight Sage's Slippers
+									i(153144, {	-- Unsullied Cloth Slippers
+										i(152774),	-- Azurelight Sage's Slippers
 									}),
 									i(153139,{ --Unsullied Leather Headgear	
-										i(152759), -- Arinor Keeper's Headgear
+										i(152759),	-- Arinor Keeper's Headgear
 									}),	
 									i(153145,{ --Unsullied Leather Spaulders	
-										i(152760), -- Arinor Keeper's Spaulders
+										i(152760),	-- Arinor Keeper's Spaulders
 									}),	
 									i(153151,{ --Unsullied Leather Tunic	
-										i(152758), -- Arinor Keeper's Tunic
+										i(152758),	-- Arinor Keeper's Tunic
 									}),	
 									i(153142,{ --Unsullied Leather Armbands	
-										i(152754), -- Arinor Keeper's Armbands
+										i(152754),	-- Arinor Keeper's Armbands
 									}),	
 									i(152739,{ --Unsullied Leather Grips	
-										i(152755), -- Arinor Keeper's Grips
+										i(152755),	-- Arinor Keeper's Grips
 									}),	
 									i(153148,{ --Unsullied Leather Belt	
-										i(152756), -- Arinor Keeper's Belt
+										i(152756),	-- Arinor Keeper's Belt
 									}),	
 									i(152737,{ --Unsullied Leather Trousers	
-										i(152761), -- Arinor Keeper's Trousers
+										i(152761),	-- Arinor Keeper's Trousers
 									}),	
 									i(153136,{ --Unsullied Leather Treads	
-										i(152757), -- Arinor Keeper's Treads
+										i(152757),	-- Arinor Keeper's Treads
 									}),	
 									i(153147,{ --Unsullied Mail Coif	
-										i(152765), -- Oronaar Disciple's Coif
+										i(152765),	-- Oronaar Disciple's Coif
 									}),	
 									i(153137,{ --Unsullied Mail Spaulders	
-										i(152769), -- Oronaar Disciple's Spaulders
+										i(152769),	-- Oronaar Disciple's Spaulders
 									}),	
 									i(152741,{ --Unsullied Mail Chestguard	
-										i(152768), -- Oronaar Disciple's Chestguard
+										i(152768),	-- Oronaar Disciple's Chestguard
 									}),	
 									i(153158,{ --Unsullied Mail Bracers	
-										i(152762), -- Oronaar Disciple's Bracers
+										i(152762),	-- Oronaar Disciple's Bracers
 									}),	
 									i(153149,{ --Unsullied Mail Gloves	
-										i(152763), -- Oronaar Disciple's Gloves
+										i(152763),	-- Oronaar Disciple's Gloves
 									}),	
 									i(152744,{ --Unsullied Mail Girdle	
-										i(152767), -- Oronaar Disciple's Girdle
+										i(152767),	-- Oronaar Disciple's Girdle
 									}),	
 									i(153138,{ --Unsullied Mail Legguards	
-										i(152764), -- Oronaar Disciple's Legguards
+										i(152764),	-- Oronaar Disciple's Legguards
 									}),	
 									i(153152,{ --Unsullied Mail Boots	
-										i(152766), -- Oronaar Disciple's Boots
+										i(152766),	-- Oronaar Disciple's Boots
 									}),	
 									i(153155,{ --Unsullied Plate Helmet	
-										i(152747), -- Praetorium Guard's Helmet
+										i(152747),	-- Praetorium Guard's Helmet
 									}),	
 									i(153153,{ --Unsullied Plate Pauldrons	
-										i(152750), -- Praetorium Guard's Pauldrons
+										i(152750),	-- Praetorium Guard's Pauldrons
 									}),	
 									i(153143,{ --Unsullied Plate Breasplate	
-										i(152748), -- Praetorium Guard's Breastplate
+										i(152748),	-- Praetorium Guard's Breastplate
 									}),	
 									i(153150,{ --Unsullied Plate Vambraces	
-										i(152752), -- Praetorium Guard's Vambraces
+										i(152752),	-- Praetorium Guard's Vambraces
 									}),	
 									i(153157,{ --Unsullied Plate Gauntlets	
-										i(152751), -- Praetorium Guard's Gauntlets
+										i(152751),	-- Praetorium Guard's Gauntlets
 									}),	
 									i(153140,{ --Unsullied Plate Waistplate	
-										i(152749), -- Praetorium Guard's Waitsplate
+										i(152749),	-- Praetorium Guard's Waitsplate
 									}),	
 									i(153146,{ --Unsullied Plate Greaves	
-										i(152746), -- Praetorium Guard's Greaves
+										i(152746),	-- Praetorium Guard's Greaves
 									}),	
 									i(152743,{ --Unsullied Plate Sabatons	
-										i(152753), -- Praetorium Guard's Sabatons
+										i(152753),	-- Praetorium Guard's Sabatons
 									}),
 								},
 							}),
-							un(2, i(152650, { -- Scuffed Krokul Cache
+							un(2, i(152650, {	-- Scuffed Krokul Cache
 								["groups"] = {
-									i(152740, { -- Unsullied Cloak
-										i(152778), -- Conservatory Ward's Drape
+									i(152740, {	-- Unsullied Cloak
+										i(152778),	-- Conservatory Ward's Drape
 									}),
-									i(152738, { -- Unsullied Cloth Cap
-										i(152770), -- Azurelight Sage's Cap
+									i(152738, {	-- Unsullied Cloth Cap
+										i(152770),	-- Azurelight Sage's Cap
 									}),
-									i(152734, { -- Unsullied Cloth Mantle
-										i(152777), -- Azurelight Sage's Mantle
+									i(152734, {	-- Unsullied Cloth Mantle
+										i(152777),	-- Azurelight Sage's Mantle
 									}),
-									i(153135, { -- Unsullied Cloth Robes
-										i(152775), -- Azurelight Sage's Robes
+									i(153135, {	-- Unsullied Cloth Robes
+										i(152775),	-- Azurelight Sage's Robes
 									}),
-									i(152742, { -- Unsullied Cloth Cuffs
-										i(152773), -- Azurelight Sage's Cuffs
+									i(152742, {	-- Unsullied Cloth Cuffs
+										i(152773),	-- Azurelight Sage's Cuffs
 									}),
-									i(153141, { -- Unsullied Cloth Mitts
-										i(152771), -- Azurelight Sage's Mitts
+									i(153141, {	-- Unsullied Cloth Mitts
+										i(152771),	-- Azurelight Sage's Mitts
 									}),
-									i(153156, { -- Unsullied Cloth Sash
-										i(152772), -- Azurelight Sage's Sash
+									i(153156, {	-- Unsullied Cloth Sash
+										i(152772),	-- Azurelight Sage's Sash
 									}),
-									i(153154, { -- Unsullied Cloth Leggings
-										i(152776), -- Azurelight Sage's Leggings
+									i(153154, {	-- Unsullied Cloth Leggings
+										i(152776),	-- Azurelight Sage's Leggings
 									}),
-									i(153144, { -- Unsullied Cloth Slippers
-										i(152774), -- Azurelight Sage's Slippers
+									i(153144, {	-- Unsullied Cloth Slippers
+										i(152774),	-- Azurelight Sage's Slippers
 									}),
 									i(153139,{ --Unsullied Leather Headgear	
-										i(152759), -- Arinor Keeper's Headgear
+										i(152759),	-- Arinor Keeper's Headgear
 									}),	
 									i(153145,{ --Unsullied Leather Spaulders	
-										i(152760), -- Arinor Keeper's Spaulders
+										i(152760),	-- Arinor Keeper's Spaulders
 									}),	
 									i(153151,{ --Unsullied Leather Tunic	
-										i(152758), -- Arinor Keeper's Tunic
+										i(152758),	-- Arinor Keeper's Tunic
 									}),	
 									i(153142,{ --Unsullied Leather Armbands	
-										i(152754), -- Arinor Keeper's Armbands
+										i(152754),	-- Arinor Keeper's Armbands
 									}),	
 									i(152739,{ --Unsullied Leather Grips	
-										i(152755), -- Arinor Keeper's Grips
+										i(152755),	-- Arinor Keeper's Grips
 									}),	
 									i(153148,{ --Unsullied Leather Belt	
-										i(152756), -- Arinor Keeper's Belt
+										i(152756),	-- Arinor Keeper's Belt
 									}),	
 									i(152737,{ --Unsullied Leather Trousers	
-										i(152761), -- Arinor Keeper's Trousers
+										i(152761),	-- Arinor Keeper's Trousers
 									}),	
 									i(153136,{ --Unsullied Leather Treads	
-										i(152757), -- Arinor Keeper's Treads
+										i(152757),	-- Arinor Keeper's Treads
 									}),	
 									i(153147,{ --Unsullied Mail Coif	
-										i(152765), -- Oronaar Disciple's Coif
+										i(152765),	-- Oronaar Disciple's Coif
 									}),	
 									i(153137,{ --Unsullied Mail Spaulders	
-										i(152769), -- Oronaar Disciple's Spaulders
+										i(152769),	-- Oronaar Disciple's Spaulders
 									}),	
 									i(152741,{ --Unsullied Mail Chestguard	
-										i(152768), -- Oronaar Disciple's Chestguard
+										i(152768),	-- Oronaar Disciple's Chestguard
 									}),	
 									i(153158,{ --Unsullied Mail Bracers	
-										i(152762), -- Oronaar Disciple's Bracers
+										i(152762),	-- Oronaar Disciple's Bracers
 									}),	
 									i(153149,{ --Unsullied Mail Gloves	
-										i(152763), -- Oronaar Disciple's Gloves
+										i(152763),	-- Oronaar Disciple's Gloves
 									}),	
 									i(152744,{ --Unsullied Mail Girdle	
-										i(152767), -- Oronaar Disciple's Girdle
+										i(152767),	-- Oronaar Disciple's Girdle
 									}),	
 									i(153138,{ --Unsullied Mail Legguards	
-										i(152764), -- Oronaar Disciple's Legguards
+										i(152764),	-- Oronaar Disciple's Legguards
 									}),	
 									i(153152,{ --Unsullied Mail Boots	
-										i(152766), -- Oronaar Disciple's Boots
+										i(152766),	-- Oronaar Disciple's Boots
 									}),	
 									i(153155,{ --Unsullied Plate Helmet	
-										i(152747), -- Praetorium Guard's Helmet
+										i(152747),	-- Praetorium Guard's Helmet
 									}),	
 									i(153153,{ --Unsullied Plate Pauldrons	
-										i(152750), -- Praetorium Guard's Pauldrons
+										i(152750),	-- Praetorium Guard's Pauldrons
 									}),	
 									i(153143,{ --Unsullied Plate Breasplate	
-										i(152748), -- Praetorium Guard's Breastplate
+										i(152748),	-- Praetorium Guard's Breastplate
 									}),	
 									i(153150,{ --Unsullied Plate Vambraces	
-										i(152752), -- Praetorium Guard's Vambraces
+										i(152752),	-- Praetorium Guard's Vambraces
 									}),	
 									i(153157,{ --Unsullied Plate Gauntlets	
-										i(152751), -- Praetorium Guard's Gauntlets
+										i(152751),	-- Praetorium Guard's Gauntlets
 									}),	
 									i(153140,{ --Unsullied Plate Waistplate	
-										i(152749), -- Praetorium Guard's Waitsplate
+										i(152749),	-- Praetorium Guard's Waitsplate
 									}),	
 									i(153146,{ --Unsullied Plate Greaves	
-										i(152746), -- Praetorium Guard's Greaves
+										i(152746),	-- Praetorium Guard's Greaves
 									}),	
 									i(152743,{ --Unsullied Plate Sabatons	
-										i(152753), -- Praetorium Guard's Sabatons
+										i(152753),	-- Praetorium Guard's Sabatons
 									}),
 								},
 							})),
-							un(2, i(154911, { -- Scuffed Krokul Cache
+							un(2, i(154911, {	-- Scuffed Krokul Cache
 								["groups"] = {
-									i(152740, { -- Unsullied Cloak
-										i(152778), -- Conservatory Ward's Drape
+									i(152740, {	-- Unsullied Cloak
+										i(152778),	-- Conservatory Ward's Drape
 									}),
-									i(152738, { -- Unsullied Cloth Cap
-										i(152770), -- Azurelight Sage's Cap
+									i(152738, {	-- Unsullied Cloth Cap
+										i(152770),	-- Azurelight Sage's Cap
 									}),
-									i(152734, { -- Unsullied Cloth Mantle
-										i(152777), -- Azurelight Sage's Mantle
+									i(152734, {	-- Unsullied Cloth Mantle
+										i(152777),	-- Azurelight Sage's Mantle
 									}),
-									i(153135, { -- Unsullied Cloth Robes
-										i(152775), -- Azurelight Sage's Robes
+									i(153135, {	-- Unsullied Cloth Robes
+										i(152775),	-- Azurelight Sage's Robes
 									}),
-									i(152742, { -- Unsullied Cloth Cuffs
-										i(152773), -- Azurelight Sage's Cuffs
+									i(152742, {	-- Unsullied Cloth Cuffs
+										i(152773),	-- Azurelight Sage's Cuffs
 									}),
-									i(153141, { -- Unsullied Cloth Mitts
-										i(152771), -- Azurelight Sage's Mitts
+									i(153141, {	-- Unsullied Cloth Mitts
+										i(152771),	-- Azurelight Sage's Mitts
 									}),
-									i(153156, { -- Unsullied Cloth Sash
-										i(152772), -- Azurelight Sage's Sash
+									i(153156, {	-- Unsullied Cloth Sash
+										i(152772),	-- Azurelight Sage's Sash
 									}),
-									i(153154, { -- Unsullied Cloth Leggings
-										i(152776), -- Azurelight Sage's Leggings
+									i(153154, {	-- Unsullied Cloth Leggings
+										i(152776),	-- Azurelight Sage's Leggings
 									}),
-									i(153144, { -- Unsullied Cloth Slippers
-										i(152774), -- Azurelight Sage's Slippers
+									i(153144, {	-- Unsullied Cloth Slippers
+										i(152774),	-- Azurelight Sage's Slippers
 									}),
 									i(153139,{ --Unsullied Leather Headgear	
-										i(152759), -- Arinor Keeper's Headgear
+										i(152759),	-- Arinor Keeper's Headgear
 									}),	
 									i(153145,{ --Unsullied Leather Spaulders	
-										i(152760), -- Arinor Keeper's Spaulders
+										i(152760),	-- Arinor Keeper's Spaulders
 									}),	
 									i(153151,{ --Unsullied Leather Tunic	
-										i(152758), -- Arinor Keeper's Tunic
+										i(152758),	-- Arinor Keeper's Tunic
 									}),	
 									i(153142,{ --Unsullied Leather Armbands	
-										i(152754), -- Arinor Keeper's Armbands
+										i(152754),	-- Arinor Keeper's Armbands
 									}),	
 									i(152739,{ --Unsullied Leather Grips	
-										i(152755), -- Arinor Keeper's Grips
+										i(152755),	-- Arinor Keeper's Grips
 									}),	
 									i(153148,{ --Unsullied Leather Belt	
-										i(152756), -- Arinor Keeper's Belt
+										i(152756),	-- Arinor Keeper's Belt
 									}),	
 									i(152737,{ --Unsullied Leather Trousers	
-										i(152761), -- Arinor Keeper's Trousers
+										i(152761),	-- Arinor Keeper's Trousers
 									}),	
 									i(153136,{ --Unsullied Leather Treads	
-										i(152757), -- Arinor Keeper's Treads
+										i(152757),	-- Arinor Keeper's Treads
 									}),	
 									i(153147,{ --Unsullied Mail Coif	
-										i(152765), -- Oronaar Disciple's Coif
+										i(152765),	-- Oronaar Disciple's Coif
 									}),	
 									i(153137,{ --Unsullied Mail Spaulders	
-										i(152769), -- Oronaar Disciple's Spaulders
+										i(152769),	-- Oronaar Disciple's Spaulders
 									}),	
 									i(152741,{ --Unsullied Mail Chestguard	
-										i(152768), -- Oronaar Disciple's Chestguard
+										i(152768),	-- Oronaar Disciple's Chestguard
 									}),	
 									i(153158,{ --Unsullied Mail Bracers	
-										i(152762), -- Oronaar Disciple's Bracers
+										i(152762),	-- Oronaar Disciple's Bracers
 									}),	
 									i(153149,{ --Unsullied Mail Gloves	
-										i(152763), -- Oronaar Disciple's Gloves
+										i(152763),	-- Oronaar Disciple's Gloves
 									}),	
 									i(152744,{ --Unsullied Mail Girdle	
-										i(152767), -- Oronaar Disciple's Girdle
+										i(152767),	-- Oronaar Disciple's Girdle
 									}),	
 									i(153138,{ --Unsullied Mail Legguards	
-										i(152764), -- Oronaar Disciple's Legguards
+										i(152764),	-- Oronaar Disciple's Legguards
 									}),	
 									i(153152,{ --Unsullied Mail Boots	
-										i(152766), -- Oronaar Disciple's Boots
+										i(152766),	-- Oronaar Disciple's Boots
 									}),	
 									i(153155,{ --Unsullied Plate Helmet	
-										i(152747), -- Praetorium Guard's Helmet
+										i(152747),	-- Praetorium Guard's Helmet
 									}),	
 									i(153153,{ --Unsullied Plate Pauldrons	
-										i(152750), -- Praetorium Guard's Pauldrons
+										i(152750),	-- Praetorium Guard's Pauldrons
 									}),	
 									i(153143,{ --Unsullied Plate Breasplate	
-										i(152748), -- Praetorium Guard's Breastplate
+										i(152748),	-- Praetorium Guard's Breastplate
 									}),	
 									i(153150,{ --Unsullied Plate Vambraces	
-										i(152752), -- Praetorium Guard's Vambraces
+										i(152752),	-- Praetorium Guard's Vambraces
 									}),	
 									i(153157,{ --Unsullied Plate Gauntlets	
-										i(152751), -- Praetorium Guard's Gauntlets
+										i(152751),	-- Praetorium Guard's Gauntlets
 									}),	
 									i(153140,{ --Unsullied Plate Waistplate	
-										i(152749), -- Praetorium Guard's Waitsplate
+										i(152749),	-- Praetorium Guard's Waitsplate
 									}),	
 									i(153146,{ --Unsullied Plate Greaves	
-										i(152746), -- Praetorium Guard's Greaves
+										i(152746),	-- Praetorium Guard's Greaves
 									}),	
 									i(152743,{ --Unsullied Plate Sabatons	
-										i(152753), -- Praetorium Guard's Sabatons
+										i(152753),	-- Praetorium Guard's Sabatons
 									}),
 								},
 							})),
 						},
 					}),
-					q(48639, { -- Army of the Light
+					q(48639, {	-- Army of the Light
 						["qg"] = 127120,	-- Vindicator Jaelaana
 						["groups"] = {
-							i(157829, { -- Gilded Trunk
+							i(157829, {	-- Gilded Trunk
 								["groups"] = {
-									i(152740, { -- Unsullied Cloak
-										i(152778), -- Conservatory Ward's Drape
+									i(152740, {	-- Unsullied Cloak
+										i(152778),	-- Conservatory Ward's Drape
 									}),
-									i(152738, { -- Unsullied Cloth Cap
-										i(152770), -- Azurelight Sage's Cap
+									i(152738, {	-- Unsullied Cloth Cap
+										i(152770),	-- Azurelight Sage's Cap
 									}),
-									i(152734, { -- Unsullied Cloth Mantle
-										i(152777), -- Azurelight Sage's Mantle
+									i(152734, {	-- Unsullied Cloth Mantle
+										i(152777),	-- Azurelight Sage's Mantle
 									}),
-									i(153135, { -- Unsullied Cloth Robes
-										i(152775), -- Azurelight Sage's Robes
+									i(153135, {	-- Unsullied Cloth Robes
+										i(152775),	-- Azurelight Sage's Robes
 									}),
-									i(152742, { -- Unsullied Cloth Cuffs
-										i(152773), -- Azurelight Sage's Cuffs
+									i(152742, {	-- Unsullied Cloth Cuffs
+										i(152773),	-- Azurelight Sage's Cuffs
 									}),
-									i(153141, { -- Unsullied Cloth Mitts
-										i(152771), -- Azurelight Sage's Mitts
+									i(153141, {	-- Unsullied Cloth Mitts
+										i(152771),	-- Azurelight Sage's Mitts
 									}),
-									i(153156, { -- Unsullied Cloth Sash
-										i(152772), -- Azurelight Sage's Sash
+									i(153156, {	-- Unsullied Cloth Sash
+										i(152772),	-- Azurelight Sage's Sash
 									}),
-									i(153154, { -- Unsullied Cloth Leggings
-										i(152776), -- Azurelight Sage's Leggings
+									i(153154, {	-- Unsullied Cloth Leggings
+										i(152776),	-- Azurelight Sage's Leggings
 									}),
-									i(153144, { -- Unsullied Cloth Slippers
-										i(152774), -- Azurelight Sage's Slippers
+									i(153144, {	-- Unsullied Cloth Slippers
+										i(152774),	-- Azurelight Sage's Slippers
 									}),
 									i(153139,{ --Unsullied Leather Headgear	
-										i(152759), -- Arinor Keeper's Headgear
+										i(152759),	-- Arinor Keeper's Headgear
 									}),	
 									i(153145,{ --Unsullied Leather Spaulders	
-										i(152760), -- Arinor Keeper's Spaulders
+										i(152760),	-- Arinor Keeper's Spaulders
 									}),	
 									i(153151,{ --Unsullied Leather Tunic	
-										i(152758), -- Arinor Keeper's Tunic
+										i(152758),	-- Arinor Keeper's Tunic
 									}),	
 									i(153142,{ --Unsullied Leather Armbands	
-										i(152754), -- Arinor Keeper's Armbands
+										i(152754),	-- Arinor Keeper's Armbands
 									}),	
 									i(152739,{ --Unsullied Leather Grips	
-										i(152755), -- Arinor Keeper's Grips
+										i(152755),	-- Arinor Keeper's Grips
 									}),	
 									i(153148,{ --Unsullied Leather Belt	
-										i(152756), -- Arinor Keeper's Belt
+										i(152756),	-- Arinor Keeper's Belt
 									}),	
 									i(152737,{ --Unsullied Leather Trousers	
-										i(152761), -- Arinor Keeper's Trousers
+										i(152761),	-- Arinor Keeper's Trousers
 									}),	
 									i(153136,{ --Unsullied Leather Treads	
-										i(152757), -- Arinor Keeper's Treads
+										i(152757),	-- Arinor Keeper's Treads
 									}),	
 									i(153147,{ --Unsullied Mail Coif	
-										i(152765), -- Oronaar Disciple's Coif
+										i(152765),	-- Oronaar Disciple's Coif
 									}),	
 									i(153137,{ --Unsullied Mail Spaulders	
-										i(152769), -- Oronaar Disciple's Spaulders
+										i(152769),	-- Oronaar Disciple's Spaulders
 									}),	
 									i(152741,{ --Unsullied Mail Chestguard	
-										i(152768), -- Oronaar Disciple's Chestguard
+										i(152768),	-- Oronaar Disciple's Chestguard
 									}),	
 									i(153158,{ --Unsullied Mail Bracers	
-										i(152762), -- Oronaar Disciple's Bracers
+										i(152762),	-- Oronaar Disciple's Bracers
 									}),	
 									i(153149,{ --Unsullied Mail Gloves	
-										i(152763), -- Oronaar Disciple's Gloves
+										i(152763),	-- Oronaar Disciple's Gloves
 									}),	
 									i(152744,{ --Unsullied Mail Girdle	
-										i(152767), -- Oronaar Disciple's Girdle
+										i(152767),	-- Oronaar Disciple's Girdle
 									}),	
 									i(153138,{ --Unsullied Mail Legguards	
-										i(152764), -- Oronaar Disciple's Legguards
+										i(152764),	-- Oronaar Disciple's Legguards
 									}),	
 									i(153152,{ --Unsullied Mail Boots	
-										i(152766), -- Oronaar Disciple's Boots
+										i(152766),	-- Oronaar Disciple's Boots
 									}),	
 									i(153155,{ --Unsullied Plate Helmet	
-										i(152747), -- Praetorium Guard's Helmet
+										i(152747),	-- Praetorium Guard's Helmet
 									}),	
 									i(153153,{ --Unsullied Plate Pauldrons	
-										i(152750), -- Praetorium Guard's Pauldrons
+										i(152750),	-- Praetorium Guard's Pauldrons
 									}),	
 									i(153143,{ --Unsullied Plate Breasplate	
-										i(152748), -- Praetorium Guard's Breastplate
+										i(152748),	-- Praetorium Guard's Breastplate
 									}),	
 									i(153150,{ --Unsullied Plate Vambraces	
-										i(152752), -- Praetorium Guard's Vambraces
+										i(152752),	-- Praetorium Guard's Vambraces
 									}),	
 									i(153157,{ --Unsullied Plate Gauntlets	
-										i(152751), -- Praetorium Guard's Gauntlets
+										i(152751),	-- Praetorium Guard's Gauntlets
 									}),	
 									i(153140,{ --Unsullied Plate Waistplate	
-										i(152749), -- Praetorium Guard's Waitsplate
+										i(152749),	-- Praetorium Guard's Waitsplate
 									}),	
 									i(153146,{ --Unsullied Plate Greaves	
-										i(152746), -- Praetorium Guard's Greaves
+										i(152746),	-- Praetorium Guard's Greaves
 									}),	
 									i(152743,{ --Unsullied Plate Sabatons	
-										i(152753), -- Praetorium Guard's Sabatons
+										i(152753),	-- Praetorium Guard's Sabatons
 									}),
 								},
 							}),
-							un(2, i(154912, { -- Gilded Trunk
+							un(2, i(154912, {	-- Gilded Trunk
 								["groups"] = {
-									i(152740, { -- Unsullied Cloak
-										i(152778), -- Conservatory Ward's Drape
+									i(152740, {	-- Unsullied Cloak
+										i(152778),	-- Conservatory Ward's Drape
 									}),
-									i(152738, { -- Unsullied Cloth Cap
-										i(152770), -- Azurelight Sage's Cap
+									i(152738, {	-- Unsullied Cloth Cap
+										i(152770),	-- Azurelight Sage's Cap
 									}),
-									i(152734, { -- Unsullied Cloth Mantle
-										i(152777), -- Azurelight Sage's Mantle
+									i(152734, {	-- Unsullied Cloth Mantle
+										i(152777),	-- Azurelight Sage's Mantle
 									}),
-									i(153135, { -- Unsullied Cloth Robes
-										i(152775), -- Azurelight Sage's Robes
+									i(153135, {	-- Unsullied Cloth Robes
+										i(152775),	-- Azurelight Sage's Robes
 									}),
-									i(152742, { -- Unsullied Cloth Cuffs
-										i(152773), -- Azurelight Sage's Cuffs
+									i(152742, {	-- Unsullied Cloth Cuffs
+										i(152773),	-- Azurelight Sage's Cuffs
 									}),
-									i(153141, { -- Unsullied Cloth Mitts
-										i(152771), -- Azurelight Sage's Mitts
+									i(153141, {	-- Unsullied Cloth Mitts
+										i(152771),	-- Azurelight Sage's Mitts
 									}),
-									i(153156, { -- Unsullied Cloth Sash
-										i(152772), -- Azurelight Sage's Sash
+									i(153156, {	-- Unsullied Cloth Sash
+										i(152772),	-- Azurelight Sage's Sash
 									}),
-									i(153154, { -- Unsullied Cloth Leggings
-										i(152776), -- Azurelight Sage's Leggings
+									i(153154, {	-- Unsullied Cloth Leggings
+										i(152776),	-- Azurelight Sage's Leggings
 									}),
-									i(153144, { -- Unsullied Cloth Slippers
-										i(152774), -- Azurelight Sage's Slippers
+									i(153144, {	-- Unsullied Cloth Slippers
+										i(152774),	-- Azurelight Sage's Slippers
 									}),
 									i(153139,{ --Unsullied Leather Headgear	
-										i(152759), -- Arinor Keeper's Headgear
+										i(152759),	-- Arinor Keeper's Headgear
 									}),	
 									i(153145,{ --Unsullied Leather Spaulders	
-										i(152760), -- Arinor Keeper's Spaulders
+										i(152760),	-- Arinor Keeper's Spaulders
 									}),	
 									i(153151,{ --Unsullied Leather Tunic	
-										i(152758), -- Arinor Keeper's Tunic
+										i(152758),	-- Arinor Keeper's Tunic
 									}),	
 									i(153142,{ --Unsullied Leather Armbands	
-										i(152754), -- Arinor Keeper's Armbands
+										i(152754),	-- Arinor Keeper's Armbands
 									}),	
 									i(152739,{ --Unsullied Leather Grips	
-										i(152755), -- Arinor Keeper's Grips
+										i(152755),	-- Arinor Keeper's Grips
 									}),	
 									i(153148,{ --Unsullied Leather Belt	
-										i(152756), -- Arinor Keeper's Belt
+										i(152756),	-- Arinor Keeper's Belt
 									}),	
 									i(152737,{ --Unsullied Leather Trousers	
-										i(152761), -- Arinor Keeper's Trousers
+										i(152761),	-- Arinor Keeper's Trousers
 									}),	
 									i(153136,{ --Unsullied Leather Treads	
-										i(152757), -- Arinor Keeper's Treads
+										i(152757),	-- Arinor Keeper's Treads
 									}),	
 									i(153147,{ --Unsullied Mail Coif	
-										i(152765), -- Oronaar Disciple's Coif
+										i(152765),	-- Oronaar Disciple's Coif
 									}),	
 									i(153137,{ --Unsullied Mail Spaulders	
-										i(152769), -- Oronaar Disciple's Spaulders
+										i(152769),	-- Oronaar Disciple's Spaulders
 									}),	
 									i(152741,{ --Unsullied Mail Chestguard	
-										i(152768), -- Oronaar Disciple's Chestguard
+										i(152768),	-- Oronaar Disciple's Chestguard
 									}),	
 									i(153158,{ --Unsullied Mail Bracers	
-										i(152762), -- Oronaar Disciple's Bracers
+										i(152762),	-- Oronaar Disciple's Bracers
 									}),	
 									i(153149,{ --Unsullied Mail Gloves	
-										i(152763), -- Oronaar Disciple's Gloves
+										i(152763),	-- Oronaar Disciple's Gloves
 									}),	
 									i(152744,{ --Unsullied Mail Girdle	
-										i(152767), -- Oronaar Disciple's Girdle
+										i(152767),	-- Oronaar Disciple's Girdle
 									}),	
 									i(153138,{ --Unsullied Mail Legguards	
-										i(152764), -- Oronaar Disciple's Legguards
+										i(152764),	-- Oronaar Disciple's Legguards
 									}),	
 									i(153152,{ --Unsullied Mail Boots	
-										i(152766), -- Oronaar Disciple's Boots
+										i(152766),	-- Oronaar Disciple's Boots
 									}),	
 									i(153155,{ --Unsullied Plate Helmet	
-										i(152747), -- Praetorium Guard's Helmet
+										i(152747),	-- Praetorium Guard's Helmet
 									}),	
 									i(153153,{ --Unsullied Plate Pauldrons	
-										i(152750), -- Praetorium Guard's Pauldrons
+										i(152750),	-- Praetorium Guard's Pauldrons
 									}),	
 									i(153143,{ --Unsullied Plate Breasplate	
-										i(152748), -- Praetorium Guard's Breastplate
+										i(152748),	-- Praetorium Guard's Breastplate
 									}),	
 									i(153150,{ --Unsullied Plate Vambraces	
-										i(152752), -- Praetorium Guard's Vambraces
+										i(152752),	-- Praetorium Guard's Vambraces
 									}),	
 									i(153157,{ --Unsullied Plate Gauntlets	
-										i(152751), -- Praetorium Guard's Gauntlets
+										i(152751),	-- Praetorium Guard's Gauntlets
 									}),	
 									i(153140,{ --Unsullied Plate Waistplate	
-										i(152749), -- Praetorium Guard's Waitsplate
+										i(152749),	-- Praetorium Guard's Waitsplate
 									}),	
 									i(153146,{ --Unsullied Plate Greaves	
-										i(152746), -- Praetorium Guard's Greaves
+										i(152746),	-- Praetorium Guard's Greaves
 									}),	
 									i(152743,{ --Unsullied Plate Sabatons	
-										i(152753), -- Praetorium Guard's Sabatons
+										i(152753),	-- Praetorium Guard's Sabatons
 									}),
 								},
 							})),
-							un(2, i(152652, { -- Gilded Trunk
+							un(2, i(152652, {	-- Gilded Trunk
 								["groups"] = {
-									i(152740, { -- Unsullied Cloak
-										i(152778), -- Conservatory Ward's Drape
+									i(152740, {	-- Unsullied Cloak
+										i(152778),	-- Conservatory Ward's Drape
 									}),
-									i(152738, { -- Unsullied Cloth Cap
-										i(152770), -- Azurelight Sage's Cap
+									i(152738, {	-- Unsullied Cloth Cap
+										i(152770),	-- Azurelight Sage's Cap
 									}),
-									i(152734, { -- Unsullied Cloth Mantle
-										i(152777), -- Azurelight Sage's Mantle
+									i(152734, {	-- Unsullied Cloth Mantle
+										i(152777),	-- Azurelight Sage's Mantle
 									}),
-									i(153135, { -- Unsullied Cloth Robes
-										i(152775), -- Azurelight Sage's Robes
+									i(153135, {	-- Unsullied Cloth Robes
+										i(152775),	-- Azurelight Sage's Robes
 									}),
-									i(152742, { -- Unsullied Cloth Cuffs
-										i(152773), -- Azurelight Sage's Cuffs
+									i(152742, {	-- Unsullied Cloth Cuffs
+										i(152773),	-- Azurelight Sage's Cuffs
 									}),
-									i(153141, { -- Unsullied Cloth Mitts
-										i(152771), -- Azurelight Sage's Mitts
+									i(153141, {	-- Unsullied Cloth Mitts
+										i(152771),	-- Azurelight Sage's Mitts
 									}),
-									i(153156, { -- Unsullied Cloth Sash
-										i(152772), -- Azurelight Sage's Sash
+									i(153156, {	-- Unsullied Cloth Sash
+										i(152772),	-- Azurelight Sage's Sash
 									}),
-									i(153154, { -- Unsullied Cloth Leggings
-										i(152776), -- Azurelight Sage's Leggings
+									i(153154, {	-- Unsullied Cloth Leggings
+										i(152776),	-- Azurelight Sage's Leggings
 									}),
-									i(153144, { -- Unsullied Cloth Slippers
-										i(152774), -- Azurelight Sage's Slippers
+									i(153144, {	-- Unsullied Cloth Slippers
+										i(152774),	-- Azurelight Sage's Slippers
 									}),
 									i(153139,{ --Unsullied Leather Headgear	
-										i(152759), -- Arinor Keeper's Headgear
+										i(152759),	-- Arinor Keeper's Headgear
 									}),	
 									i(153145,{ --Unsullied Leather Spaulders	
-										i(152760), -- Arinor Keeper's Spaulders
+										i(152760),	-- Arinor Keeper's Spaulders
 									}),	
 									i(153151,{ --Unsullied Leather Tunic	
-										i(152758), -- Arinor Keeper's Tunic
+										i(152758),	-- Arinor Keeper's Tunic
 									}),	
 									i(153142,{ --Unsullied Leather Armbands	
-										i(152754), -- Arinor Keeper's Armbands
+										i(152754),	-- Arinor Keeper's Armbands
 									}),	
 									i(152739,{ --Unsullied Leather Grips	
-										i(152755), -- Arinor Keeper's Grips
+										i(152755),	-- Arinor Keeper's Grips
 									}),	
 									i(153148,{ --Unsullied Leather Belt	
-										i(152756), -- Arinor Keeper's Belt
+										i(152756),	-- Arinor Keeper's Belt
 									}),	
 									i(152737,{ --Unsullied Leather Trousers	
-										i(152761), -- Arinor Keeper's Trousers
+										i(152761),	-- Arinor Keeper's Trousers
 									}),	
 									i(153136,{ --Unsullied Leather Treads	
-										i(152757), -- Arinor Keeper's Treads
+										i(152757),	-- Arinor Keeper's Treads
 									}),	
 									i(153147,{ --Unsullied Mail Coif	
-										i(152765), -- Oronaar Disciple's Coif
+										i(152765),	-- Oronaar Disciple's Coif
 									}),	
 									i(153137,{ --Unsullied Mail Spaulders	
-										i(152769), -- Oronaar Disciple's Spaulders
+										i(152769),	-- Oronaar Disciple's Spaulders
 									}),	
 									i(152741,{ --Unsullied Mail Chestguard	
-										i(152768), -- Oronaar Disciple's Chestguard
+										i(152768),	-- Oronaar Disciple's Chestguard
 									}),	
 									i(153158,{ --Unsullied Mail Bracers	
-										i(152762), -- Oronaar Disciple's Bracers
+										i(152762),	-- Oronaar Disciple's Bracers
 									}),	
 									i(153149,{ --Unsullied Mail Gloves	
-										i(152763), -- Oronaar Disciple's Gloves
+										i(152763),	-- Oronaar Disciple's Gloves
 									}),	
 									i(152744,{ --Unsullied Mail Girdle	
-										i(152767), -- Oronaar Disciple's Girdle
+										i(152767),	-- Oronaar Disciple's Girdle
 									}),	
 									i(153138,{ --Unsullied Mail Legguards	
-										i(152764), -- Oronaar Disciple's Legguards
+										i(152764),	-- Oronaar Disciple's Legguards
 									}),	
 									i(153152,{ --Unsullied Mail Boots	
-										i(152766), -- Oronaar Disciple's Boots
+										i(152766),	-- Oronaar Disciple's Boots
 									}),	
 									i(153155,{ --Unsullied Plate Helmet	
-										i(152747), -- Praetorium Guard's Helmet
+										i(152747),	-- Praetorium Guard's Helmet
 									}),	
 									i(153153,{ --Unsullied Plate Pauldrons	
-										i(152750), -- Praetorium Guard's Pauldrons
+										i(152750),	-- Praetorium Guard's Pauldrons
 									}),	
 									i(153143,{ --Unsullied Plate Breasplate	
-										i(152748), -- Praetorium Guard's Breastplate
+										i(152748),	-- Praetorium Guard's Breastplate
 									}),	
 									i(153150,{ --Unsullied Plate Vambraces	
-										i(152752), -- Praetorium Guard's Vambraces
+										i(152752),	-- Praetorium Guard's Vambraces
 									}),	
 									i(153157,{ --Unsullied Plate Gauntlets	
-										i(152751), -- Praetorium Guard's Gauntlets
+										i(152751),	-- Praetorium Guard's Gauntlets
 									}),	
 									i(153140,{ --Unsullied Plate Waistplate	
-										i(152749), -- Praetorium Guard's Waitsplate
+										i(152749),	-- Praetorium Guard's Waitsplate
 									}),	
 									i(153146,{ --Unsullied Plate Greaves	
-										i(152746), -- Praetorium Guard's Greaves
+										i(152746),	-- Praetorium Guard's Greaves
 									}),	
 									i(152743,{ --Unsullied Plate Sabatons	
-										i(152753), -- Praetorium Guard's Sabatons
+										i(152753),	-- Praetorium Guard's Sabatons
 									}),
 								},
 							})),
 						},
 					}),
-					n(-206, { -- Paragon
-						q(48973, { -- Paragon of Argussian Reach
+					n(-206, {	-- Paragon
+						q(48973, {	-- Paragon of Argussian Reach
 							["qg"] = 127151,	-- Toraan the Revered
 							["groups"] = {
 								i(152922, {	-- Brittle Krokul Chest
@@ -645,25 +645,25 @@ _.Zones =
 								}),
 							},
 						}),
-						q(48974, { -- Paragon of the Army of the Light
+						q(48974, {	-- Paragon of the Army of the Light
 							["qg"] = 127120,	-- Vindicator Jaelaana
 							["groups"] = {
-								i(152923, { -- Gleaming Footlocker
-									i(153044), -- Avenging Felcrusher Mount
-									i(153043), -- Blessed Felcrusher Mount
-									i(153042), -- Glorious Felcrusher Mount
-									i(153182), -- Holy Lightsphere Toy
+								i(152923, {	-- Gleaming Footlocker
+									i(153044),	-- Avenging Felcrusher Mount
+									i(153043),	-- Blessed Felcrusher Mount
+									i(153042),	-- Glorious Felcrusher Mount
+									i(153182),	-- Holy Lightsphere Toy
 								}),
 							},
 						}),
 					}),
 				}),
-				n(-17, { -- Quests
+				n(-17, {	-- Quests
 					{	-- A Colorful Key
 						["questID"] = 48075,	-- A Colorful Key
 						["qg"] = 125343,		-- Vorel
-						["requireSkill"] = 755, -- Jewelcrafting
-						["sourceQuests"] = { 46941 }, -- The Path Forward
+						["requireSkill"] = 755,	-- Jewelcrafting
+						["sourceQuests"] = { 46941 },	-- The Path Forward
 						["g"] = {
 							{	-- Design: Deadly Deep Chemirine
 								["itemID"] = 151736,	-- Design: Deadly Deep Chemirine
@@ -682,7 +682,7 @@ _.Zones =
 					{	-- A Crowning Achievement
 						["questID"] = 48076,	--  A Crowning Achievment
 						["qg"] = 125343,		-- Vorel
-						["requireSkill"] = 755, -- Jewelcrafting
+						["requireSkill"] = 755,	-- Jewelcrafting
 						["sourceQuests"] = {
 							48075,	-- A Colorful Key
 						},
@@ -704,101 +704,101 @@ _.Zones =
 							},
 						},
 					},
-					q(48078, { -- Counterbalancing
+					q(48078, {	-- Counterbalancing
 						["groups"] = {
-							i(151740), -- Recipe: Fiendish Shoulderguards (Rank 1)					
-							i(151743), -- Recipe: Fiendish Spaulders (Rank 1)					
+							i(151740),	-- Recipe: Fiendish Shoulderguards (Rank 1)					
+							i(151743),	-- Recipe: Fiendish Spaulders (Rank 1)					
 						},
-						["requireSkill"] = 165, -- Leatherworking
-						["sourceQuests"] = { 47743 }, -- The Child of Light and Shadow
+						["requireSkill"] = 165,	-- Leatherworking
+						["sourceQuests"] = { 47743 },	-- The Child of Light and Shadow
 					}),
-					q(48055, { -- Empyrial Strength
+					q(48055, {	-- Empyrial Strength
 						["groups"] = {
 							{	-- Plans: Empyrial Breastplate [Rank 1]
-								["itemID"] = 151711, -- Plans: Empyrial Breastplate [Rank 1]
+								["itemID"] = 151711,	-- Plans: Empyrial Breastplate [Rank 1]
 							},
 						},
-						["qg"] = 125341, -- Khamir
-						["requireSkill"] = 164, -- Blacksmithing
-						["sourceQuests"] = { 47743 }, -- The Child of Light and Shadow
+						["qg"] = 125341,	-- Khamir
+						["requireSkill"] = 164,	-- Blacksmithing
+						["sourceQuests"] = { 47743 },	-- The Child of Light and Shadow
 					}),
 					q(49445, {	-- The Prime Exchange
-						["qg"] = 129674, -- Maras
+						["qg"] = 129674,	-- Maras
 					}),
-					q(48069, { -- The Wrench Calls
-						["requireSkill"] = 202, -- Engineering
-						["sourceQuests"] = { 46941 }, -- The Path Forward
+					q(48069, {	-- The Wrench Calls
+						["requireSkill"] = 202,	-- Engineering
+						["sourceQuests"] = { 46941 },	-- The Path Forward
 					}),
-					q(48065, { -- Extraterrestrial Exploration
-						["requireSkill"] = 202, -- Engineering
-						["sourceQuests"] = { 48069 }, -- The Wrench Calls
+					q(48065, {	-- Extraterrestrial Exploration
+						["requireSkill"] = 202,	-- Engineering
+						["sourceQuests"] = { 48069 },	-- The Wrench Calls
 						["groups"] = {
 							{	-- Wormhole Generator: Argus
 								["recipeID"] = 247744, 	-- Wormhole Generator: Argus
 							},
 						},
 					}),
-					q(48074, { -- Looming Over Me
+					q(48074, {	-- Looming Over Me
 						["groups"] = {
-							i(151571), -- Lightweave Breeches
+							i(151571),	-- Lightweave Breeches
 						},
-						["requireSkill"] = 197, -- Tailoring
-						["sourceQuests"] = { 46941 }, -- The Path Forward
+						["requireSkill"] = 197,	-- Tailoring
+						["sourceQuests"] = { 46941 },	-- The Path Forward
 					}),
-					q(48912, { -- Supplying the Antoran Campaign
+					q(48912, {	-- Supplying the Antoran Campaign
 						["groups"] = {
-							i(152097), -- Lightforged Bulwark
+							i(152097),	-- Lightforged Bulwark
 						},
 						["isWeekly"] = true,
 					}),
 				}),
-				n(127476, { -- Scouting Map
+				n(127476, {	-- Scouting Map
 					["achievementID"] = 11217,
 					["modelScale"] = 0.65,
 				}),
-				n(-2, { -- Vendors
-					n(127120, { -- Vindicator Jaelaana <Army of the Light Emissary>
-						i(152399), -- Army of the Light Tabard
-						i(151725), -- Design: Empyrial Cosmic Crown (Rank 2)
-						i(151728), -- Design: Empyrial Deep Crown (Rank 2)
-						i(151731), -- Design: Empyrial Elemental Crown (Rank 2)
-						i(151734), -- Design: Empyrial Titan Crown (Rank 2)
-						i(152726), -- Design: Mass Prospect Empyrium
-						i(152400), -- Embroidered Lightforged Drape
-						i(152788), -- Lightforged Warframe Mount
-						i(151712), -- Recipe: Empyrial Breastplate (Rank 2)
-						i(151741), -- Recipe: Fiendish Shoulderguards (Rank 2)
-						i(151744), -- Recipe: Fiendish Spaulders (Rank 2)
-						i(151747), -- Recipe: Lightweave Breeches (Rank 2)
-						i(153032), -- Technique: Glyph of the Lightspawn
+				n(-2, {	-- Vendors
+					n(127120, {	-- Vindicator Jaelaana <Army of the Light Emissary>
+						i(152399),	-- Army of the Light Tabard
+						i(151725),	-- Design: Empyrial Cosmic Crown (Rank 2)
+						i(151728),	-- Design: Empyrial Deep Crown (Rank 2)
+						i(151731),	-- Design: Empyrial Elemental Crown (Rank 2)
+						i(151734),	-- Design: Empyrial Titan Crown (Rank 2)
+						i(152726),	-- Design: Mass Prospect Empyrium
+						i(152400),	-- Embroidered Lightforged Drape
+						i(152788),	-- Lightforged Warframe Mount
+						i(151712),	-- Recipe: Empyrial Breastplate (Rank 2)
+						i(151741),	-- Recipe: Fiendish Shoulderguards (Rank 2)
+						i(151744),	-- Recipe: Fiendish Spaulders (Rank 2)
+						i(151747),	-- Recipe: Lightweave Breeches (Rank 2)
+						i(153032),	-- Technique: Glyph of the Lightspawn
 					}),
-					n(127151, { -- Toraan the Revered <Argussian Reach Emissary>
+					n(127151, {	-- Toraan the Revered <Argussian Reach Emissary>
 						i(152658),	-- Formula: Chaos Shatter
 						i(151707),	-- Recipe: Astral Alchemist Stone [Rank 2]
 						i(151708),	-- Recipe: Astral Alchemist Stone [Rank 3]
 						i(152618),	-- Recipe: Astral Healing Potion [Rank 3]
 						i(152725),	-- Technique: Mass Mill Astral Glory
-						i(152794), -- Reins of the Amethyst Ruinstrider Mount
-						i(152795), -- Reins of the Beryl Ruinstrider Mount
-						i(152797), -- Reins of the Cerulean Ruinstrider Mount
-						i(152793), -- Reins of the Russet Ruinstrider Mount
-						i(152791), -- Reins of the Sable Ruinstrider Mount
-						i(152796), -- Reins of the Umber Ruinstrider Mount
-						i(153027), -- Orphaned Marsuul Pet
-						i(152669), -- Argussian Reach Tabard
-						i(153039), -- Crystalline Campfire Toy				
-						i(153290), -- Krokul Mining Pick
-						i(152964, { -- Krokul Flute
+						i(152794),	-- Reins of the Amethyst Ruinstrider Mount
+						i(152795),	-- Reins of the Beryl Ruinstrider Mount
+						i(152797),	-- Reins of the Cerulean Ruinstrider Mount
+						i(152793),	-- Reins of the Russet Ruinstrider Mount
+						i(152791),	-- Reins of the Sable Ruinstrider Mount
+						i(152796),	-- Reins of the Umber Ruinstrider Mount
+						i(153027),	-- Orphaned Marsuul Pet
+						i(152669),	-- Argussian Reach Tabard
+						i(153039),	-- Crystalline Campfire Toy				
+						i(153290),	-- Krokul Mining Pick
+						i(152964, {	-- Krokul Flute
 							["collectible"] = false,
-							["f"] = 55, -- Consumables
+							["f"] = 55,	-- Consumables
 						}),
 					}),
-					n(121589, { -- Thaumaturge Vashreen <Purveyor of Exquisite Furnishings>
+					n(121589, {	-- Thaumaturge Vashreen <Purveyor of Exquisite Furnishings>
 						{
 							["currencyID"] = 1508,	-- Veil Argunite
-							["modID"]  = 43, -- Relinquished
+							["modID"]  = 43,	-- Relinquished
 							["groups"] = {
-								i(153211, { -- Relinquished Hood
+								i(153211, {	-- Relinquished Hood
 									i(134270),	-- Arcane Defender's Helm
 									i(134348),	-- Arcane Singed Aurora
 									i(140870),	-- Architect's Coif of Despair
@@ -979,7 +979,7 @@ _.Zones =
 									i(121279),	-- Wracksoul Helm
 									i(146761),	-- Xorothian Helmet
 								}),
-								i(153213, { -- Relinquished Necklace
+								i(153213, {	-- Relinquished Necklace
 									i(142207),	-- Amulet of the Last Guardian
 									i(152780),	-- Ancient Augari Pendant
 									i(147263),	-- Animus Pendant
@@ -1049,7 +1049,7 @@ _.Zones =
 									i(146867),	-- Wrathguard Choker
 									i(140894),	-- Zealous Timestone Pendant
 								}),
-								i(153215, { -- Relinquished Spaulders
+								i(153215, {	-- Relinquished Spaulders
 									i(137503),	-- Amice of Cruel Laughter
 									i(133620),	-- Amice of the Enlightened
 									i(134432),	-- Amice of the Unfurling Tempest
@@ -1215,7 +1215,7 @@ _.Zones =
 									i(134213),	-- Tideskorn Mantle
 									i(147192),	-- Titanic Onslaught Pauldrons
 								}),
-								i(153209, { -- Relinquished Cloak
+								i(153209, {	-- Relinquished Cloak
 									i(147193),	-- Cape of Mindless Fury
 									i(134402),	-- Cape of Rigid Order
 									i(137483),	-- Cape of the Duskwatch
@@ -1329,7 +1329,7 @@ _.Zones =
 									i(142215),	-- Wine-Stained Mantle
 									i(146884),	-- Wyrmtongue Scavenger's Shawl
 								}),
-								i(153208, { -- Relinquished Chestguard
+								i(153208, {	-- Relinquished Chestguard
 									i(134267),	-- Arcane Defender's Breastplate
 									i(134351),	-- Arcane Singed Robe
 									i(134415),	-- Arcanist's Resonant Robes
@@ -1507,7 +1507,7 @@ _.Zones =
 									i(121276),	-- Wracksoul Chestplate
 									i(146758),	-- Xorothian Breastplate
 								}),
-								i(153206, { -- Relinquished Bracers
+								i(153206, {	-- Relinquished Bracers
 									i(133621),	-- Adorned Guardian's Bracers
 									i(137325),	-- Afterlife Manacles
 									i(134274),	-- Arcane Defender's Wristguards
@@ -1687,31 +1687,31 @@ _.Zones =
 									i(139209),	-- Wristwraps of Broken Trust
 									i(146765),	-- Xorothian Vambraces
 								}),
-								i(153210, { -- Relinquished Gauntlets
-									i(152771), -- Azurelight Sage's Mitts
-									i(152755), -- Arinor Keeper's Grips
-									i(152763), -- Oronaar Disciple's Gloves
-									i(152751), -- Praetorium Guard's Gauntlets
+								i(153210, {	-- Relinquished Gauntlets
+									i(152771),	-- Azurelight Sage's Mitts
+									i(152755),	-- Arinor Keeper's Grips
+									i(152763),	-- Oronaar Disciple's Gloves
+									i(152751),	-- Praetorium Guard's Gauntlets
 								}),
-								i(153205, { -- Relinquished Girdle
-									i(152772), -- Azurelight Sage's Sash
-									i(152756), -- Arinor Keeper's Belt
-									i(152767), -- Oronaar Disciple's Girdle
-									i(152749), -- Praetorium Guard's Waitsplate
+								i(153205, {	-- Relinquished Girdle
+									i(152772),	-- Azurelight Sage's Sash
+									i(152756),	-- Arinor Keeper's Belt
+									i(152767),	-- Oronaar Disciple's Girdle
+									i(152749),	-- Praetorium Guard's Waitsplate
 								}),
-								i(153212, { -- Relinquished Leggings
-									i(152776), -- Azurelight Sage's Leggings
-									i(152761), -- Arinor Keeper's Trousers
-									i(152764), -- Oronaar Disciple's Legguards
-									i(152746), -- Praetorium Guard's Greaves
+								i(153212, {	-- Relinquished Leggings
+									i(152776),	-- Azurelight Sage's Leggings
+									i(152761),	-- Arinor Keeper's Trousers
+									i(152764),	-- Oronaar Disciple's Legguards
+									i(152746),	-- Praetorium Guard's Greaves
 								}),
-								i(153207, { -- Relinquished Treads
-									i(152774), -- Azurelight Sage's Slippers
-									i(152757), -- Arinor Keeper's Treads
-									i(152766), -- Oronaar Disciple's Boots
-									i(152753), -- Praetorium Guard's Sabatons
+								i(153207, {	-- Relinquished Treads
+									i(152774),	-- Azurelight Sage's Slippers
+									i(152757),	-- Arinor Keeper's Treads
+									i(152766),	-- Oronaar Disciple's Boots
+									i(152753),	-- Praetorium Guard's Sabatons
 								}),
-								i(153214, { -- Relinquished Ring
+								i(153214, {	-- Relinquished Ring
 									i(150989),	-- Foul-Sadist's Seal
 									i(152779),	-- Jed'hin Aspirant's Ring
 									i(134367),	-- Legionnaire's Band
@@ -1720,7 +1720,7 @@ _.Zones =
 									i(147020),	-- Scaled Band of Servitude
 									i(121799),	-- Tel'anor Magister's Ring
 								}),
-								i(153216, { -- Relinquished Trinket
+								i(153216, {	-- Relinquished Trinket
 									i(136714),	-- Amalgam's Seventh Spine
 									i(151312),	-- Ampoule of Pure Void
 									i(139114),	-- An'she's Infusion of Light

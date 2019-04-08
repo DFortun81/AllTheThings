@@ -3,10 +3,10 @@
 -----------------------------------------------------
 _.GearSets = 
 {
-	n(-5350, { -- Class Trial Item Sets
+	n(-5350, {	-- Class Trial Item Sets
 		n(-154, {	-- Level 110
 			["groups"] = {
-				n(-140, { -- Communal [Priest]
+				n(-140, {	-- Communal [Priest]
 					["groups"] = {
 						{	-- Communal Wand	NYI
 							["itemID"] = 153919,	-- Communal Wand

@@ -639,9 +639,9 @@ _.Zones =
 									["sourceQuest"] = 10998,	-- Grim(oire) Business
 								}),
 								q(11022, {	-- Speak with Mog'dorg
-									["qg"] = 23053, -- Bladespire Supplicant
+									["qg"] = 23053,	-- Bladespire Supplicant
 									["coord"] = { 42.8, 20.7, 107 },
-									["sourceQuest"] = 11000, -- Into the Soulgrinder
+									["sourceQuest"] = 11000,	-- Into the Soulgrinder
 									["isBreadcrumb"] = true,
 								}),
 								q(11009, {	-- Ogre Heaven
@@ -905,7 +905,7 @@ _.Zones =
 								},
 							}),
 							qh(11047, {	-- The Apprentice's Request
-								["qg"] = 23280, -- Agadai
+								["qg"] = 23280,	-- Agadai
 								["coord"] = { 52.0, 54.4, 107 },
 							}),
 							qa(11043, {	-- Building a Better Gryphon
@@ -930,37 +930,37 @@ _.Zones =
 							faction(933, {	-- The Consortium
 								["groups"] = {
 									q(10975, {	-- Purging the Chambers of Bash'ir
-										["qg"] = 22919, -- Image of Commander Ameer
+										["qg"] = 22919,	-- Image of Commander Ameer
 										["coord"] = { 52.8, 15.0, 105 },
-										["sourceQuest"] = 10974, -- Stasis Chambers of Bash'ir
+										["sourceQuest"] = 10974,	-- Stasis Chambers of Bash'ir
 										["repeatable"] = true,
 									}),	
 									q(10976, {	-- The Mark of the Nexus-King
-										["qg"] = 22919, -- Image of Commander Ameer
+										["qg"] = 22919,	-- Image of Commander Ameer
 										["coord"] = { 52.8, 15.0, 105 },
-										["sourceQuest"] = 10975, -- Purging the Chambers of Bash'ir
+										["sourceQuest"] = 10975,	-- Purging the Chambers of Bash'ir
 									}),	
 									q(10977, {	-- Stasis Chambers of the Mana-Tombs
-										["qg"] = 22919, -- Image of Commander Ameer
+										["qg"] = 22919,	-- Image of Commander Ameer
 										["coord"] = { 52.8, 15.0, 105 },
-										["sourceQuest"] = 10976, -- The Mark of the Nexus-King
+										["sourceQuest"] = 10976,	-- The Mark of the Nexus-King
 										["groups"] = {
-											i(32064), -- Protectorate Treasure Cache
+											i(32064),	-- Protectorate Treasure Cache
 										},
 									}),	
 									q(10981, {	-- Nexus-Prince Shaffar's Personal Chamber
-										["qg"] = 22919, -- Image of Commander Ameer
+										["qg"] = 22919,	-- Image of Commander Ameer
 										["coord"] = { 52.8, 15.0, 105 },
-										["sourceQuest"] = 10977, -- Stasis Chambers of the Mana-Tombs
+										["sourceQuest"] = 10977,	-- Stasis Chambers of the Mana-Tombs
 										["repeatable"] = true,
 									}),	
 									q(10982, {	-- The Eye of Haramad
-										["qg"] = 22919, -- Image of Commander Ameer
+										["qg"] = 22919,	-- Image of Commander Ameer
 										["coord"] = { 52.8, 15.0, 105 },
-										["sourceQuest"] = 10981, -- Nexus-Prince Shaffar's Personal Chamber
+										["sourceQuest"] = 10981,	-- Nexus-Prince Shaffar's Personal Chamber
 										["description"] = "Requires Exalted with The Consortium.",
 										["groups"] = {
-											i(32092), -- The Eye of Haramad
+											i(32092),	-- The Eye of Haramad
 										},
 									}),
 								},

@@ -50,8 +50,8 @@ _.Zones =
 					q(  9487, {	-- Arcane Reavers (UNTESTED - unsure if there are pre-req requirements)
 						["qg"] = 16197,	-- Arcanist Vandril
 						["lvl"] = 10,
-						["races"] = {10}, -- Blood Elf
-						["classes"] = {8}, -- Mage
+						["races"] = {10},	-- Blood Elf
+						["classes"] = {8},	-- Mage
 					}),
 --					qh( 9877),	-- A Restorative Draught (LEGACY)
 					q(  9488, {	-- A Simple Robe (UNTESTED, don't know if there are add'l prereqs)
@@ -60,8 +60,8 @@ _.Zones =
 						},
 						["qg"] = 16197,	-- Arcanist Vandril
 						["lvl"] = 10,
-						["races"] = {10}, -- Blood Elf
-						["classes"] = {8}, -- Mage
+						["races"] = {10},	-- Blood Elf
+						["classes"] = {8},	-- Mage
 						["sourceQuests"] = { 9487 },	-- Arcane Reavers
 					}),
 					qh( 9277, {	-- Assault on Zeb'Nowa
@@ -82,7 +82,7 @@ _.Zones =
 						["qg"] = 16202,	-- Farstrider Sedina
 					}),
 					o(181153, {	-- Wanted Poster: Kel'gash the Wicked
-						qh(9215, { -- Bring Me Kel'gash's Head!
+						qh(9215, {	-- Bring Me Kel'gash's Head!
 							["groups"] = {
 								i(22979),	-- Slayer's Band
 								i(23409),	-- Well Crafted Long Bow
@@ -101,7 +101,7 @@ _.Zones =
 					}),
 					qh( 9171, {	-- Culinary Crunch
 						["groups"] = {
-							i(22647), -- Recipe: Crunchy Spider Surprise
+							i(22647),	-- Recipe: Crunchy Spider Surprise
 						},
 						["qg"] = 16253,	-- Master Chef Mouldier
 						["sourceQuests"] = { 9138 },	-- Suncrown Village
@@ -166,7 +166,7 @@ _.Zones =
 					}),
 					q(  9811, {	-- Friend of the Sin'dorei
 						["qg"] = 16239,	-- Magister Kaendris
-						["races"] = { 2, 5, 6, 8, 9, 26, 27, 28 }, -- Horde, non-Blood Elf
+						["races"] = { 2, 5, 6, 8, 9, 26, 27, 28 },	-- Horde, non-Blood Elf
 						["sourceQuests"] = { 9167 },
 					}),
 					qh( 9139, {	-- Goldenmist Village
@@ -182,7 +182,7 @@ _.Zones =
 					}),
 					q(  9328, {	-- Hero of the Sin'dorei
 						["qg"] = 16239,	-- Magister Kaendris
-						["races"] = { 10 }, -- Blood Elf
+						["races"] = { 10 },	-- Blood Elf
 						["sourceQuests"] = { 9167 },						
 					}),
 					o(181150, {	-- Dusty Journal
@@ -204,7 +204,7 @@ _.Zones =
 					}),
 					q(  9180, {	-- Journey to Undercity
 						["qg"] = 16252,	-- High Executor Mavren
-						["races"] = { 10 }, -- Blood Elf
+						["races"] = { 10 },	-- Blood Elf
 						["sourceQuests"] = { 9175 },	-- The Lady's Necklace
 					}),
 					{	-- Lament of the Highborne
@@ -300,11 +300,11 @@ _.Zones =
 					},
 					q(  9327, {	-- The Forsaken
 						["qg"] = 16197,	-- Arcanist Vandril
-						["races"] = {10}, -- Blood Elf
+						["races"] = {10},	-- Blood Elf
 					}),
 					q(  9329, {	-- The Forsaken
 						["qg"] = 16197,	-- Arcanist Vandril					
-						["races"] = { 2, 5, 6, 8, 9, 26, 27, 28 }, -- Horde, not Blood Elf
+						["races"] = { 2, 5, 6, 8, 9, 26, 27, 28 },	-- Horde, not Blood Elf
 					}),
 					{
 						["qgs"] = {
@@ -328,7 +328,7 @@ _.Zones =
 --						["sourceQuests"] = {  },	-- UNKNOWN - requires unknown progression in zone.  Could not pick up on 110 who had done no quests.  Needs more testing.
 					}),
 --[[				qh( 9529, {	-- The Stone (LEGACY?  no information on where to pick up and most recent wowhead comment speculates it has been removed)
-						["classes"] = {9}, -- Warlock
+						["classes"] = {9},	-- Warlock
 					}),									--]]
 					qh( 9167, {	-- The Traitor's Destruction
 						["groups"] = {
@@ -412,7 +412,7 @@ _.Zones =
 					},
 				}),
 				n(-16, {	-- Rares	
-					n(22062, { -- Dr. Whitherlimb
+					n(22062, {	-- Dr. Whitherlimb
 						dr(36, i(31270)), 	-- Banshee Rod
 						dr(33, i(31269)), 	-- Ghoul Hammer
 						dr(30, i(31268)) 	-- Abomination Cleaver
@@ -431,8 +431,8 @@ _.Zones =
 						i(21219),	-- Recipe: Sagefish Delight
 						i(21099),	-- Recipe: Smoked Sagefish
 					}),
-					n(16528, { -- Provisioner Vredigar
-						-- un(1, i(23388)), -- Tranquillen Tabard [NEVER IMPLEMENTED]
+					n(16528, {	-- Provisioner Vredigar
+						-- un(1, i(23388)),	-- Tranquillen Tabard [NEVER IMPLEMENTED]
 						i(22990),	-- Tranquillien Champion's Cloak
 						i(28155),	-- Apothecary's Waistband
 						i(28158),	-- Batskin Belt

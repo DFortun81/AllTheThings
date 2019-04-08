@@ -179,7 +179,7 @@ _.Zones =
 										50440,	--  Item Turn-In
 									},
 									["coords"] = {
-										{ 68.50, 32.77, 863 }, -- Nazmir (Nazwatha)
+										{ 68.50, 32.77, 863 },	-- Nazmir (Nazwatha)
 									},
 									["crs"] = {
 										131157,	-- Nazwathan Blood Bender
@@ -264,7 +264,7 @@ _.Zones =
 										50434,	-- Item Turn-In
 									},
 									["coords"] = {
-										{ 80.86, 46.79, 863 }, -- Nazmir (Krag'wa's Shore)
+										{ 80.86, 46.79, 863 },	-- Nazmir (Krag'wa's Shore)
 									},
 									["crs"] = {
 										125328,	-- Priestess Zaldraxia

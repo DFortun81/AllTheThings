@@ -7,15 +7,15 @@ _.Zones =
 		m(630, {	-- Azsuna
 			["groups"] = {
 				n(-169, { 	-- Emissary Quests
-					q(42420, { -- Court of Farondis
+					q(42420, {	-- Court of Farondis
 						["groups"] = {
-							i(157825, { -- Farondis Lockbox
+							i(157825, {	-- Farondis Lockbox
 								["groups"] = {
 									i(144316),	-- Formula: Enchant Neck - Mark of the Quick (Rank 3)
 									i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3)
-									n(-322, { -- Cloak
-										i(134334), -- Disgraced Court Cloak
-										i(134246), -- Herringbone Drape
+									n(-322, {	-- Cloak
+										i(134334),	-- Disgraced Court Cloak
+										i(134246),	-- Herringbone Drape
 									}),
 									n(-3241, {	-- Arcane Singed Set		
 										["groups"] = {		
@@ -115,11 +115,11 @@ _.Zones =
 									}),
 								},
 							}),
-							un(2, i(137563, { -- Farondis Lockbox
+							un(2, i(137563, {	-- Farondis Lockbox
 								["groups"] = {
-									n(-322, { -- Cloak
-										i(134334), -- Disgraced Court Cloak
-										i(134246), -- Herringbone Drape
+									n(-322, {	-- Cloak
+										i(134334),	-- Disgraced Court Cloak
+										i(134246),	-- Herringbone Drape
 									}),
 									n(-3241, {	-- Arcane Singed Set		
 										["groups"] = {		
@@ -219,11 +219,11 @@ _.Zones =
 									}),
 								},
 							})),
-							un(2, i(146750, { -- Farondis Lockbox
+							un(2, i(146750, {	-- Farondis Lockbox
 								["groups"] = {
-									n(-322, { -- Cloak
-										i(134334), -- Disgraced Court Cloak
-										i(134246), -- Herringbone Drape
+									n(-322, {	-- Cloak
+										i(134334),	-- Disgraced Court Cloak
+										i(134246),	-- Herringbone Drape
 									}),
 									n(-3241, {	-- Arcane Singed Set		
 										["groups"] = {		
@@ -323,11 +323,11 @@ _.Zones =
 									}),
 								},
 							})),
-							un(2, i(151467, { -- Farondis Lockbox
+							un(2, i(151467, {	-- Farondis Lockbox
 								["groups"] = {
-									n(-322, { -- Cloak
-										i(134334), -- Disgraced Court Cloak
-										i(134246), -- Herringbone Drape
+									n(-322, {	-- Cloak
+										i(134334),	-- Disgraced Court Cloak
+										i(134246),	-- Herringbone Drape
 									}),
 									n(-3241, {	-- Arcane Singed Set		
 										["groups"] = {		
@@ -427,11 +427,11 @@ _.Zones =
 									}),
 								},
 							})),
-							un(2, i(154906, { -- Farondis Lockbox
+							un(2, i(154906, {	-- Farondis Lockbox
 								["groups"] = {
-									n(-322, { -- Cloak
-										i(134334), -- Disgraced Court Cloak
-										i(134246), -- Herringbone Drape
+									n(-322, {	-- Cloak
+										i(134334),	-- Disgraced Court Cloak
+										i(134246),	-- Herringbone Drape
 									}),
 									n(-3241, {	-- Arcane Singed Set		
 										["groups"] = {		
@@ -534,15 +534,15 @@ _.Zones =
 						},
 						["repeatable"] = true,
 					}),
-					q(42422, { -- The Wardens
+					q(42422, {	-- The Wardens
 						["groups"] = {
-							i(157827, { -- Warden's Field Kit
+							i(157827, {	-- Warden's Field Kit
 								["groups"] = {
 									i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3)
-									n(-322, { -- Cloak
-										i(134334), -- Disgraced Court Cloak
-										i(134246), -- Herringbone Drape
-										i(136748), -- Vault Watcher's Cloak
+									n(-322, {	-- Cloak
+										i(134334),	-- Disgraced Court Cloak
+										i(134246),	-- Herringbone Drape
+										i(136748),	-- Vault Watcher's Cloak
 									}),
 									n(-3241, {	-- Arcane Singed Set		
 										["groups"] = {		
@@ -642,12 +642,12 @@ _.Zones =
 									}),
 								},
 							}),
-							un(2, i(137565, { -- Warden's Field Kit
+							un(2, i(137565, {	-- Warden's Field Kit
 								["groups"] = {
-									n(-322, { -- Cloak
-										i(134334), -- Disgraced Court Cloak
-										i(134246), -- Herringbone Drape
-										i(136748), -- Vault Watcher's Cloak
+									n(-322, {	-- Cloak
+										i(134334),	-- Disgraced Court Cloak
+										i(134246),	-- Herringbone Drape
+										i(136748),	-- Vault Watcher's Cloak
 									}),
 									n(-3241, {	-- Arcane Singed Set		
 										["groups"] = {		
@@ -747,12 +747,12 @@ _.Zones =
 									}),
 								},
 							})),
-							un(2, i(146752, { -- Warden's Field Kit
+							un(2, i(146752, {	-- Warden's Field Kit
 								["groups"] = {
-									n(-322, { -- Cloak
-										i(134334), -- Disgraced Court Cloak
-										i(134246), -- Herringbone Drape
-										i(136748), -- Vault Watcher's Cloak
+									n(-322, {	-- Cloak
+										i(134334),	-- Disgraced Court Cloak
+										i(134246),	-- Herringbone Drape
+										i(136748),	-- Vault Watcher's Cloak
 									}),
 									n(-3241, {	-- Arcane Singed Set		
 										["groups"] = {		
@@ -852,12 +852,12 @@ _.Zones =
 									}),
 								},
 							})),
-							un(2, i(151469, { -- Warden's Field Kit
+							un(2, i(151469, {	-- Warden's Field Kit
 								["groups"] = {
-									n(-322, { -- Cloak
-										i(134334), -- Disgraced Court Cloak
-										i(134246), -- Herringbone Drape
-										i(136748), -- Vault Watcher's Cloak
+									n(-322, {	-- Cloak
+										i(134334),	-- Disgraced Court Cloak
+										i(134246),	-- Herringbone Drape
+										i(136748),	-- Vault Watcher's Cloak
 									}),
 									n(-3241, {	-- Arcane Singed Set		
 										["groups"] = {		
@@ -957,12 +957,12 @@ _.Zones =
 									}),
 								},
 							})),
-							un(2, i(154908, { -- Warden's Field Kit
+							un(2, i(154908, {	-- Warden's Field Kit
 								["groups"] = {
-									n(-322, { -- Cloak
-										i(134334), -- Disgraced Court Cloak
-										i(134246), -- Herringbone Drape
-										i(136748), -- Vault Watcher's Cloak
+									n(-322, {	-- Cloak
+										i(134334),	-- Disgraced Court Cloak
+										i(134246),	-- Herringbone Drape
+										i(136748),	-- Vault Watcher's Cloak
 									}),
 									n(-3241, {	-- Arcane Singed Set		
 										["groups"] = {		
@@ -1065,19 +1065,19 @@ _.Zones =
 						},
 						["repeatable"] = true,
 					}),
-					n(-206, { -- Paragon
-						q(46745, { -- Supplies from the Court
+					n(-206, {	-- Paragon
+						q(46745, {	-- Supplies from the Court
 							["groups"] = {
-								i(152102, { -- Farondis Chest
-									dr(3, i(147806)), -- Cloudwing Hippogryph
+								i(152102, {	-- Farondis Chest
+									dr(3, i(147806)),	-- Cloudwing Hippogryph
 								}),
-								un(2,  i(146897, { -- Farondis Chest
-									dr(3, i(147806)), -- Cloudwing Hippogryph
+								un(2,  i(146897, {	-- Farondis Chest
+									dr(3, i(147806)),	-- Cloudwing Hippogryph
 								})),
 							},
 							["repeatable"] = true,
 						}),
-						q(46749, { -- Supplies From the Wardens
+						q(46749, {	-- Supplies From the Wardens
 							["groups"] = {
 								{	-- Warden's Supply Kit
 									["itemID"] = 152107,	-- Warden's Supply Kit
@@ -1087,8 +1087,8 @@ _.Zones =
 										},
 									},
 								},
-								un(2, i(146902, { -- Warden's Supply Kit
-									dr(3, i(147843)), -- Sira's Extra Cloak
+								un(2, i(146902, {	-- Warden's Supply Kit
+									dr(3, i(147843)),	-- Sira's Extra Cloak
 								})),
 							},
 							["repeatable"] = true,
@@ -1096,36 +1096,36 @@ _.Zones =
 					}),
 				}),
 				n(-228, {	-- Flight Paths
-					fp(1613, { -- Azurewing Repose, Azsuna
+					fp(1613, {	-- Azurewing Repose, Azsuna
 						["coord"] = { 48.4, 28 },
 					}),
-					fp(1615, { -- Challiane's Terrace, Azsuna
+					fp(1615, {	-- Challiane's Terrace, Azsuna
 						["coord"] = { 40.8, 9 },
 					}),
-					fp(1846, { -- Faronaar (Eagle)
+					fp(1846, {	-- Faronaar (Eagle)
 						["coord"] = { 24.4, 43 },
 						["classes"] = { 3 },	-- Hunter
 					}),
-					fp(1859, { -- Felblaze Ingress, Azsuna
+					fp(1859, {	-- Felblaze Ingress, Azsuna
 						["coord"] = { 63.8, 28.4 },
 					}),
-					fp(1861, { -- Illidari Perch, Azsuna
+					fp(1861, {	-- Illidari Perch, Azsuna
 						["coord"] = { 31.8, 46.2 },
 					}),
-					fp(1622, { -- Illidari Stand, Azsuna
+					fp(1622, {	-- Illidari Stand, Azsuna
 						["coord"] = { 44.6, 43.8 },
 					}),
-					fp(1845, { -- Isle of the Watchers (Eagle)
+					fp(1845, {	-- Isle of the Watchers (Eagle)
 						["coord"] = { 51, 79.8 },
 						["classes"] = { 3 },	-- Hunter
 					}),
-					fp(1633, { -- Shackle's Den, Azsuna
+					fp(1633, {	-- Shackle's Den, Azsuna
 						["coord"] = { 56.2, 59 },
 					}),
-					fp(1837, { -- Wardens' Redoubt, Azsuna
+					fp(1837, {	-- Wardens' Redoubt, Azsuna
 						["coord"] = { 48.2, 73 },
 					}),
-					fp(1860, { -- Watchers' Aerie, Azsuna
+					fp(1860, {	-- Watchers' Aerie, Azsuna
 						["coord"] = { 51.8, 82.2 },
 					}),
 				}),
@@ -1153,18 +1153,18 @@ _.Zones =
 					n(115741, {	-- Orphaned Bloodgazer
 						["groups"] = {
 							p(1977),  	-- Bloodgazer Hatchling
-							q(45008, { -- Bloodgazer Bonding
-								i(142494), -- Purple Blossom
+							q(45008, {	-- Bloodgazer Bonding
+								i(142494),	-- Purple Blossom
 							}),
-							q(45020, { -- Bloodgazer Reunion
-								i(137577), -- Predatory Bloodgazer
+							q(45020, {	-- Bloodgazer Reunion
+								i(137577),	-- Predatory Bloodgazer
 							}),
 						},
 						["description"] = "1. Buy Azsunian Grapes from Nalysse Dawnsorrow in Azsuna.\n2. Kill Bloodgazer Matriarch.\n3. /target Orphaned Bloodgazer\n4. Feed Orphaned Bloodgazer Azsunian Grapes.\n5. Enjoy new Bloodgazer Hatchling|r",
 					}),	
 				}),
 				n(-38, { 	-- Profession
-					prof(356, { -- Fishing
+					prof(356, {	-- Fishing
 						n(-10067, { 	-- Artifact
 							["description"] = "Prerequisites:\n\n  Be level 110.\n  Have level 800 Fishing.\n  Complete the achievement Bigger Fish to Fry\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for the quest item linked below.",
 							["lvl"] = 110,
@@ -1273,7 +1273,7 @@ _.Zones =
 							i(133704, {		-- Rusty Queenfish Brooch
 								["description"] = "This item will give you a buff that will allow you to see and fish from Ghostly Queenfish schools.",
 								["groups"] = {
-									spell(201807, { -- Rusty Queenfish Brooch (Buff)
+									spell(201807, {	-- Rusty Queenfish Brooch (Buff)
 										{
 											["achievementID"] = 10596,	-- Bigger Fish to Fry
 											["criteriaID"] = 6,			-- Ghostly Queenfish (Criteria)
@@ -1320,7 +1320,7 @@ _.Zones =
 										i(133704, {		-- Rusty Queenfish Brooch
 											["description"] = "This item will give you a buff that will allow you to see and fish from Ghostly Queenfish schools.",
 											["groups"] = {
-												spell(201807, { -- Rusty Queenfish Brooch (Buff)
+												spell(201807, {	-- Rusty Queenfish Brooch (Buff)
 													{
 														["achievementID"] = 10596,	-- Bigger Fish to Fry
 														["criteriaID"] = 6,			-- Ghostly Queenfish (Criteria)
@@ -1518,140 +1518,140 @@ _.Zones =
 						q(44788),	-- Work Study: Bestiaries of Azsuna
 					}),
 --]]					
-					ach(10763, { -- Azsuna Matata
-						crit(1, { -- Behind Legion Lines [Verified & Fully Finished - 7/26/18; Lucetia]
-							q(38834, { -- Into the Fray (Non-DH version)
+					ach(10763, {	-- Azsuna Matata
+						crit(1, {	-- Behind Legion Lines [Verified & Fully Finished - 7/26/18; Lucetia]
+							q(38834, {	-- Into the Fray (Non-DH version)
 								["qg"] = 93337,	-- Archmage Khadgar
 								["coord"] = { 45.1, 42.9, 630 },
 								["classes"] = exclude(12, ALL_CLASSES),
-								["sourceQuest"] = 41220, -- Down to Azsuna
+								["sourceQuest"] = 41220,	-- Down to Azsuna
 							}),
-							q(44137, { -- Into the Fray (DH version)
+							q(44137, {	-- Into the Fray (DH version)
 								["qg"] = 93337,	-- Archmage Khadgar
 								["coord"] = { 45.1, 42.9, 630 },
-								["classes"] = { 12 }, -- Demon Hunter
-								["sourceQuest"] = 41220, -- Down to Azsuna
+								["classes"] = { 12 },	-- Demon Hunter
+								["sourceQuest"] = 41220,	-- Down to Azsuna
 							}),
-							q(37658, { -- Reignite the Wards
-								["qg"] = 90317, -- Jace Darkweaver
+							q(37658, {	-- Reignite the Wards
+								["qg"] = 90317,	-- Jace Darkweaver
 								["coord"] = { 43.1, 43.6, 630 },
 								["groups"] = {
-									i(141623), -- Demon Warding Halo
-									i(141622), -- Guise of the Demon Warder
-									i(141621), -- Demon Warder Helm
-									i(141620), -- Soul-Stealer's Helm
-									i(141628), -- Soul-Stealer's Leggings
-									i(141627), -- Leggings of the Soul-Trapper
-									i(141626), -- Soul-Stealer's Chain Pants
-									i(141625), -- Soul-Trapper's Greaves
+									i(141623),	-- Demon Warding Halo
+									i(141622),	-- Guise of the Demon Warder
+									i(141621),	-- Demon Warder Helm
+									i(141620),	-- Soul-Stealer's Helm
+									i(141628),	-- Soul-Stealer's Leggings
+									i(141627),	-- Leggings of the Soul-Trapper
+									i(141626),	-- Soul-Stealer's Chain Pants
+									i(141625),	-- Soul-Trapper's Greaves
 								},
 								["sourceQuests"] = {
-									38834, -- Into the Fray (Non-DH version)
-									44137, -- Into the Fray (DH version)
+									38834,	-- Into the Fray (Non-DH version)
+									44137,	-- Into the Fray (DH version)
 								},
 							}),
-							q(37653, { -- Demon Souls
-								["qg"] = 89398, -- Allari the Souleater
+							q(37653, {	-- Demon Souls
+								["qg"] = 89398,	-- Allari the Souleater
 								["coord"] = { 43.2, 43.1, 630 },
 								["sourceQuests"] = {
-									38834, -- Into the Fray (Non-DH version)
-									44137, -- Into the Fray (DH version)
+									38834,	-- Into the Fray (Non-DH version)
+									44137,	-- Into the Fray (DH version)
 								},
 							}),
-							q(37660, { -- The Scythe of Souls
-								["qg"] = 89398, -- Allari the Souleateer
+							q(37660, {	-- The Scythe of Souls
+								["qg"] = 89398,	-- Allari the Souleateer
 								["coord"] = { 43.2, 43.1, 630 },
 								["groups"] = {
-									i(132951), -- Leywalker Shoes
-									i(132949), -- Ruin-Stalker Footpads
-									i(132948), -- Seaspray Chain Boots
-									i(132947), -- Nar'thalas Sabatons
+									i(132951),	-- Leywalker Shoes
+									i(132949),	-- Ruin-Stalker Footpads
+									i(132948),	-- Seaspray Chain Boots
+									i(132947),	-- Nar'thalas Sabatons
 								},
 								["sourceQuests"] = {
-									37653, -- Reignite the Wards
-									37653, -- Demon Souls
+									37653,	-- Reignite the Wards
+									37653,	-- Demon Souls
 								},
 							}),
-							q(36920, { -- From Within (Non-DH version)
-								["qg"] = 89362, -- Kayn Sunfury
+							q(36920, {	-- From Within (Non-DH version)
+								["qg"] = 89362,	-- Kayn Sunfury
 								["classes"] = exclude(12, ALL_CLASSES),
-								["sourceQuest"] = 37660, -- The Scythe of Souls
+								["sourceQuest"] = 37660,	-- The Scythe of Souls
 							}),
-							q(40815, { -- From Within (DH version, must choose Altruis)
-								["qg"] = 101927, -- Altruis the Sufferer
-								["classes"] = { 12 }, -- Demon Hunter
-								["sourceQuest"] = 37660, -- The Scythe of Souls
+							q(40815, {	-- From Within (DH version, must choose Altruis)
+								["qg"] = 101927,	-- Altruis the Sufferer
+								["classes"] = { 12 },	-- Demon Hunter
+								["sourceQuest"] = 37660,	-- The Scythe of Souls
 								["description"] = "This quest is available if you chose to follow Altruis the Sufferer during the Demon Hunter introduction quests."
 							}),
-							q(44140, { -- From Within (DH version, must choose Kayn)
-								["qg"] = 89362, -- Kayn Sunfury
+							q(44140, {	-- From Within (DH version, must choose Kayn)
+								["qg"] = 89362,	-- Kayn Sunfury
 								["coord"] = { 43.5, 43.4, 630 },
-								["classes"] = { 12 }, -- Demon Hunter
-								["sourceQuest"] = 37660, -- The Scythe of Souls
+								["classes"] = { 12 },	-- Demon Hunter
+								["sourceQuest"] = 37660,	-- The Scythe of Souls
 								["description"] = "This quest is available if you chose to follow Kayn Sunfury during the Demon Hunter introduction quests."
 							}),
-							q(37450, { -- Saving Stellagosa
-								["qg"] = 90474, -- Kor'vas Bloodthorn
+							q(37450, {	-- Saving Stellagosa
+								["qg"] = 90474,	-- Kor'vas Bloodthorn
 								["coord"] = { 41.2, 50.5, 630 },
 								["groups"] = {
-									i(132961), -- Cape of Azure Fury
-									i(132964), -- Stellagosa's Breath
+									i(132961),	-- Cape of Azure Fury
+									i(132964),	-- Stellagosa's Breath
 								},
 								["sourceQuests"] = {
-									36920, -- From Within (Non-DH Version)
-									40815, -- From Within (DH - Altruis)
-									44140, -- From Within (DH - Kayn)
+									36920,	-- From Within (Non-DH Version)
+									40815,	-- From Within (DH - Altruis)
+									44140,	-- From Within (DH - Kayn)
 								},
 							}),
-							q(37656, { -- Fel Machinations
-								["qg"] = 90474, -- Kor'vas Bloodthorn
+							q(37656, {	-- Fel Machinations
+								["qg"] = 90474,	-- Kor'vas Bloodthorn
 								["coord"] = { 41.2, 50.5, 630 },
 								["sourceQuests"] = {
-									36920, -- From Within (Non-DH Version)
-									40815, -- From Within (DH - Altruis)
-									44140, -- From Within (DH - Kayn)
+									36920,	-- From Within (Non-DH Version)
+									40815,	-- From Within (DH - Altruis)
+									44140,	-- From Within (DH - Kayn)
 								},
 							}),
-							q(37449, { -- Dark Revelations
-								["qg"] = 90474, -- Kor'vas Bloodthorn
+							q(37449, {	-- Dark Revelations
+								["qg"] = 90474,	-- Kor'vas Bloodthorn
 								["coord"] = { 38.0, 57.6, 630 },
 								["groups"] = {
-									i(132984), -- Abandoned Highborne Mana Crystal
-									i(132985), -- Blood of the Vanquished Highborne
-									i(133002), -- Coalesced Shadows
-									i(132996), -- Cursed Felstalker Flesh
-									i(132987), -- Everburning Ruin Ember
-									i(132995), -- Faronaar Arcane Power-Core
-									i(132990), -- Fel-Resistant Clipping
-									i(132989), -- Legion Iron Nugget
-									i(132991), -- Mortiferous' Corruption
-									i(132993), -- Nethrandamus' Zephyr
-									i(132999), -- Preserved Highborne Warrior's Fist
-									i(133001), -- Soul Fragment of Faronaar Innocent
-									i(133000), -- Stalwart Faronaar Keystone
-									i(133004), -- Swirling Demonic Whispers
-									i(132988), -- The Dreadlord's Chill Eye
-									i(132998), -- The Sufferer's Fury
+									i(132984),	-- Abandoned Highborne Mana Crystal
+									i(132985),	-- Blood of the Vanquished Highborne
+									i(133002),	-- Coalesced Shadows
+									i(132996),	-- Cursed Felstalker Flesh
+									i(132987),	-- Everburning Ruin Ember
+									i(132995),	-- Faronaar Arcane Power-Core
+									i(132990),	-- Fel-Resistant Clipping
+									i(132989),	-- Legion Iron Nugget
+									i(132991),	-- Mortiferous' Corruption
+									i(132993),	-- Nethrandamus' Zephyr
+									i(132999),	-- Preserved Highborne Warrior's Fist
+									i(133001),	-- Soul Fragment of Faronaar Innocent
+									i(133000),	-- Stalwart Faronaar Keystone
+									i(133004),	-- Swirling Demonic Whispers
+									i(132988),	-- The Dreadlord's Chill Eye
+									i(132998),	-- The Sufferer's Fury
 								},
 								["sourceQuests"] = {
-									37450, -- Saving Stellagosa
-									37656, -- Fel Machinations
+									37450,	-- Saving Stellagosa
+									37656,	-- Fel Machinations
 								},
 							}),
 						}),
-						crit(2, { -- Defending Azurewing Repose
-							q(37853), -- The Death of the Eldest
-							q(37991), -- Agapanthus
+						crit(2, {	-- Defending Azurewing Repose
+							q(37853),	-- The Death of the Eldest
+							q(37991),	-- Agapanthus
 							q(42271,  {  	-- Their Dying Breaths
 								i(121425),
 								i(121423),
 								i(121426),
 								i(121424),
 							}),
-							q(37855), -- The Last of the Last
-							q(37856), -- The Withered
-							q(37859), -- The Consumed
-							q(37858, { -- Stellagosa
+							q(37855),	-- The Last of the Last
+							q(37856),	-- The Withered
+							q(37859),	-- The Consumed
+							q(37858, {	-- Stellagosa
 								["qg"] = 89978,	-- Projection of Senegos
 								["isBreadcrumb"] = true,
 							}),
@@ -1665,14 +1665,14 @@ _.Zones =
 									i(132973),	-- Whelp Protector's Mantle
 									i(132972),	-- Azure Champion's Pauldrons
 								},
-								["sourceQuests"] = { 37858 }, -- Stellagosa
+								["sourceQuests"] = { 37858 },	-- Stellagosa
 							}),
-							q(37857), -- Runas Knows the Way
+							q(37857),	-- Runas Knows the Way
 							q(37959,  {  	-- The Hunger Returns
 								i(138876), 		-- Runas' Crystal Grinder
 							}),
-							q(37960), -- Leyline Abuse
-							q(37860), -- You Scratch My Back...
+							q(37960),	-- Leyline Abuse
+							q(37860),	-- You Scratch My Back...
 							q(37861,  {  	-- The Nightborne Prince
 								i(121444),
 								i(121447),
@@ -1683,7 +1683,7 @@ _.Zones =
 								i(132927),
 								i(132926),
 							}),
-							q(37862), -- Still Alive
+							q(37862),	-- Still Alive
 							q(38014,  {  	-- Feasting on the Dragon
 								i(121435),
 								i(121418),
@@ -1697,11 +1697,11 @@ _.Zones =
 							q(38015,  {  	-- On the Brink
 								i(129178),  	-- Emmigosa
 							}),	
-							q(42567), -- Cursed to Wither
-							q(42756), -- Hunger's End
+							q(42567),	-- Cursed to Wither
+							q(42756),	-- Hunger's End
 						}),
-						crit(3, { -- Azsuna versus Azshara
-							q(37690), -- Those Who Remember
+						crit(3, {	-- Azsuna versus Azshara
+							q(37690),	-- Those Who Remember
 							q(37256,  {  	-- They Came From the Sea
 								i(121428),
 								i(121430),
@@ -1712,7 +1712,7 @@ _.Zones =
 								i(132904),
 								i(132903),
 							}),
-							q(37733), -- Prince Farondis
+							q(37733),	-- Prince Farondis
 							q(37257,  {  	-- Our Very Bones
 								i(121432),
 								i(121434),
@@ -1723,13 +1723,13 @@ _.Zones =
 								i(132938),
 								i(132937),
 							}),
-							q(37497), -- Trailing the Tidestone
+							q(37497),	-- Trailing the Tidestone
 							q(37486,  {  	-- Nar'thalas Still Suffers
 								i(121487),
 								i(132911),	-- Seal of House Farondis
 							}),
-							q(37467), -- The Walk of Shame
-							q(37468), -- Into the Academy
+							q(37467),	-- The Walk of Shame
+							q(37468),	-- Into the Academy
 							q(37736,  {  	-- Dressing With Class
 								i(138873),  	-- Mystical Frosh Hat
 							}),
@@ -1743,17 +1743,17 @@ _.Zones =
 								i(138846),
 								i(138845),
 							}),
-							q(37518), -- The Haunted Halls
-							q(42370), -- Wanding 101
-							q(42371), -- Study Hall: Combat Research
-							q(37729), -- Pop Quiz: Advanced Rune Drawing
+							q(37518),	-- The Haunted Halls
+							q(42370),	-- Wanding 101
+							q(42371),	-- Study Hall: Combat Research
+							q(37729),	-- Pop Quiz: Advanced Rune Drawing
 							q(37730,  {  	-- The Headmistress' Keys
 								i(132910),
 								i(132909),
 								i(132908),
 								i(132907),
 							}),
-							q(37469), -- The Tidestone: Shattered
+							q(37469),	-- The Tidestone: Shattered
 							q(37530,  {  	-- Save Yourself
 								i(121420),
 								i(121422),
@@ -1764,18 +1764,18 @@ _.Zones =
 								i(132944),
 								i(132942),
 							}),
-							q(37470), -- The Head of the Snake
+							q(37470),	-- The Head of the Snake
 						}),
-						crit(4, { -- Against the Giants
-							q(38407), -- Bottled Up
-							q(37496), -- Infiltrating Shipwreck Arena
-							q(37507), -- Boss Whalebelly's in Charge
-							q(37542, { -- No Time for Tryouts
-								i(132954), -- Polished Dookin Ring
+						crit(4, {	-- Against the Giants
+							q(38407),	-- Bottled Up
+							q(37496),	-- Infiltrating Shipwreck Arena
+							q(37507),	-- Boss Whalebelly's in Charge
+							q(37542, {	-- No Time for Tryouts
+								i(132954),	-- Polished Dookin Ring
 							}),
-							q(37528), -- Let Sleeping Giants Lie
-							q(37510), -- Sternfathom's Champion
-							q(37536, { -- Morale Booster
+							q(37528),	-- Let Sleeping Giants Lie
+							q(37510),	-- Sternfathom's Champion
+							q(37536, {	-- Morale Booster
 								i(133828),	-- Recipe: Fighter Chow [Rank 1]
 							}),
 							q(37538,  {  	-- Round 1, Fight!
@@ -1788,7 +1788,7 @@ _.Zones =
 								i(132900),
 								i(132902),
 							}),
-							q(37565), -- The Right Weapon for the Job
+							q(37565),	-- The Right Weapon for the Job
 							q(37566,  {  	-- The Prince is Going Down
 								i(121441),
 								i(121443),
@@ -1796,9 +1796,9 @@ _.Zones =
 								i(121440),
 							}),
 						}),
-						crit(5, { -- Mak'rana and the Fate of the Queen's Reprisal
-							q(38857), -- A Favor for Mr. Shackle
-							q(37654), -- Maritime Law
+						crit(5, {	-- Mak'rana and the Fate of the Queen's Reprisal
+							q(38857),	-- A Favor for Mr. Shackle
+							q(37654),	-- Maritime Law
 							q(37657,  {  	-- Making the World Safe for Profit
 								i(138852),
 								i(138851),
@@ -1811,7 +1811,7 @@ _.Zones =
 								  i(133544),
 								}),	
 							}),
-							q(37659), -- The Captain's Foot Locker
+							q(37659),	-- The Captain's Foot Locker
 							qa(40794, {	-- Fate of the Queen's Reprisal [Alliance]
 								["groups"] = {
 									i(121482),	-- Cloak of the Greywatch
@@ -1834,43 +1834,43 @@ _.Zones =
 							}),
 						}),
 					}),
-					ach(10877, { -- Pillars of Creation
-						q(38286), -- Eye of Azshara: Wrath of Azshara
-						q(42213, { -- Eye of Azshara: The Tidestone of Golganneth
-							i(140622), -- Harshell Greatbelt
-							i(140623), -- Brightscale Waistguard
-							i(140624), -- Bitterbrine Binding
-							i(140625), -- Waistban of the Hatecoil Oracles
+					ach(10877, {	-- Pillars of Creation
+						q(38286),	-- Eye of Azshara: Wrath of Azshara
+						q(42213, {	-- Eye of Azshara: The Tidestone of Golganneth
+							i(140622),	-- Harshell Greatbelt
+							i(140623),	-- Brightscale Waistguard
+							i(140624),	-- Bitterbrine Binding
+							i(140625),	-- Waistban of the Hatecoil Oracles
 						}),
 					}),  
 					n(-38, { 	 -- Professions
-						n(-180, { -- Alchemy
+						n(-180, {	-- Alchemy
 							["groups"] = {
 								q(39390, {	-- A Mysterious Text
-									["qg"] = 243392, -- Alchemy Book
-									["sourceQuests"] = { 39566 }, -- The Search for Knowledge
+									["qg"] = 243392,	-- Alchemy Book
+									["sourceQuests"] = { 39566 },	-- The Search for Knowledge
 								}),
 							},
 							["requireSkill"] = 171,
 						}),
-						n(-181, { -- Blacksmithing
-							n(-34, { -- World Quests
+						n(-181, {	-- Blacksmithing
+							n(-34, {	-- World Quests
 								{	-- Work Order: Leystone Greaves
 									["questID"] = 41633,	-- Work Order: Leystone Greaves
 									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 									["lvl"] = 110,			-- WQ is 110+ only
-									["qg"] = 107376, -- Veridis Fallon
+									["qg"] = 107376,	-- Veridis Fallon
 									["g"] = {
 										{	-- Recipe: Leystone Greaves (Rank 3)
-											["itemID"]= 123931, -- Recipe: Leystone Greaves (Rank 3)
+											["itemID"]= 123931,	-- Recipe: Leystone Greaves (Rank 3)
 										},
 									},
 								},
 							}),
 						}),
-						n(-182, { -- Enchanting
+						n(-182, {	-- Enchanting
 							["groups"] = {
-								q(40169), -- Crossroads Rendezvous
+								q(40169),	-- Crossroads Rendezvous
 								{	-- Down to the Core
 									["questID"] = 39923,	-- Down to the Core
 									["qg"] = 99420,	-- Kharmeera
@@ -1890,8 +1890,8 @@ _.Zones =
 									},
 								},
 								q(39907, {	-- Elven Enchantments
-									["qg"] = 107139, -- Enchantress Ilanya
-									["sourceQuests"] = { 39918 }, -- The Absent Priestess
+									["qg"] = 107139,	-- Enchantress Ilanya
+									["sourceQuests"] = { 39918 },	-- The Absent Priestess
 								}),
 								{	-- Ringing True
 									["questID"] = 39905,	-- Ringing True
@@ -1926,7 +1926,7 @@ _.Zones =
 								{	-- The Absent Priestess
 									["questID"] = 39918,	-- The Absent Priestess
 									["qg"] = 98698,	-- Priestess Driana
-									["sourceQuests"] = { 40130 }, -- Washed Clean
+									["sourceQuests"] = { 40130 },	-- Washed Clean
 									["g"] = {
 										{	-- Formula: Enchant Neck - Mark of the Hidden Satyr (Rank 1)
 											["itemID"] = 128578,	-- Formula: Enchant Neck - Mark of the Hidden Satyr (Rank 1)
@@ -1951,12 +1951,12 @@ _.Zones =
 							},
 							["requireSkill"] = 333,
 						}),
-						n(-183, { -- Engineering
+						n(-183, {	-- Engineering
 							["requireSkill"] = 202,
 							["groups"] = {
 								q(40856, {	-- It'll Cost You
 									["sourceQuest"] = 40855,	-- Our Man in Azsuna
-									["qg"] = 102195, -- Fargo Flintlocke
+									["qg"] = 102195,	-- Fargo Flintlocke
 									["requireSkill"] = 202,
 								}),
 								q(40876, {	-- 'Locke, Stock and Barrel
@@ -1983,7 +1983,7 @@ _.Zones =
 								}),
 								q(40859, {	-- The Latest Fashion: Headguns!
 									["sourceQuest"] = 40856,	-- It'll Cost You
-									["qg"] = 102195, -- Fargo Flintlocke
+									["qg"] = 102195,	-- Fargo Flintlocke
 									["requireSkill"] = 202,
 									["groups"] = {
 										recipe(198939),	-- Schematic: Blink-Trigger Headgun
@@ -1994,7 +1994,7 @@ _.Zones =
 								}),
 								q(40858, {	-- The Missing Pieces
 									["sourceQuest"] = 40855,	-- Our Man in Azsuna
-									["qg"] = 102195, -- Fargo Flintlocke
+									["qg"] = 102195,	-- Fargo Flintlocke
 									["requireSkill"] = 202,
 									["groups"] = {
 										recipe(198976),	-- Schematic: Auto-Hammer [Rank 1]
@@ -2002,26 +2002,26 @@ _.Zones =
 								}),
 							},
 						}),
-						n(-184, { -- Herbalism
+						n(-184, {	-- Herbalism
 							["groups"] = {
 								i(129117, {	-- Aethril Sample
-									q(40013), -- Aethril Sample
+									q(40013),	-- Aethril Sample
 								}),
 								i(129135, {	-- Ragged Strips of Silk
-									q(40015), -- Ragged Strips of Silk
+									q(40015),	-- Ragged Strips of Silk
 								}),
-								q(40017, { -- A Slip of the Hand
+								q(40017, {	-- A Slip of the Hand
 									recipe(193417),	-- Herbalism Technique: Aethril (Rank 3)
 								}),
 								i(129122, {	-- Felwort Sample
 									q(40040, { --Felwort Sample
-										recipe(193430), -- Herbalism Technique: Felwort (Rank 1)
+										recipe(193430),	-- Herbalism Technique: Felwort (Rank 1)
 									}),
 								}),
 							},
 							["requireSkill"] = 182,
 						}),
-						n(-185, { -- Inscription
+						n(-185, {	-- Inscription
 							["groups"] = {
 								q(39938, {	-- Containing the Demon Within
 									["g"] = {
@@ -2076,7 +2076,7 @@ _.Zones =
 							["requireSkill"] = 773,
 						}),
 						n(-187, {	-- Leatherworking
-							["groups"] = bubbleDown({["requireSkill"] = 165}, { -- Leatherworking
+							["groups"] = bubbleDown({["requireSkill"] = 165}, {	-- Leatherworking
 								q(40188, {	-- Best Served Cold
 									["groups"] = {
 										-- note there is no pattern item for these, so just listing the spell IDs
@@ -2119,41 +2119,41 @@ _.Zones =
 							}),
 						}),
 					}),
-					ach(10994, { -- Class Campaign
+					ach(10994, {	-- Class Campaign
 						cl(5, {    -- Priest
-							q(43375), -- An Ample Supply
-							q(42137), -- Champion: Yalia Sagewhisper
-							q(42138), -- Champion: Zabra Hex
+							q(43375),	-- An Ample Supply
+							q(42137),	-- Champion: Yalia Sagewhisper
+							q(42138),	-- Champion: Zabra Hex
 						}),
 						cl(2, {    -- Paladin
-							q(43490), -- Aponi's Trail
-							q(42888), -- Communication Orbs
+							q(43490),	-- Aponi's Trail
+							q(42888),	-- Communication Orbs
 						}),
 						cl(8, {    -- Mage
-							q(42222), -- Empyrean Society Report
+							q(42222),	-- Empyrean Society Report
 						}),
 						cl(4, {    -- Rogue
 							qh( 46324),	-- False Orders
 							qa( 45835),	-- False Orders
 						}),
 						cl(9, {    -- Warlock
-							q(39179), -- Bloodstone Bandit
-							q(45024), -- Cult Culling
-							q(40218), -- Debt Repaid
-							q(45026), -- Expending Fel Energy
+							q(39179),	-- Bloodstone Bandit
+							q(45024),	-- Cult Culling
+							q(40218),	-- Debt Repaid
+							q(45026),	-- Expending Fel Energy
 						}),
 					}),
 					n(-170, {    -- Balance of Power
-						q(43521), -- Essence of Power
-						q(43522), -- Essential Corruption
-						q(40668), -- Eye of Azshara: The Heart of Zin-Azshari
-						q(43517), -- Darkheart Thicket: Fallen Power
+						q(43521),	-- Essence of Power
+						q(43522),	-- Essential Corruption
+						q(40668),	-- Eye of Azshara: The Heart of Zin-Azshari
+						q(43517),	-- Darkheart Thicket: Fallen Power
 					}),
 					n(-168, {    -- Other Quests
-						sz(10665,2, { -- Felblaze Ingress
-							q(42372), -- Felblaze Ingress
-							q(42375), -- Eye See You
-							q(42369), -- They're Doing it Wrong
+						sz(10665,2, {	-- Felblaze Ingress
+							q(42372),	-- Felblaze Ingress
+							q(42375),	-- Eye See You
+							q(42369),	-- They're Doing it Wrong
 							{
 								["questID"] = 42367,	-- Arkethrax
 								["sourceQuest"] = 42375,	-- Eye See You
@@ -2169,15 +2169,15 @@ _.Zones =
 								["qg"] = 107245,	-- Marius Felbane
 							},
 						}),
-						sz(10665,5, { -- Llothien Highlands
-							q(42238), -- Missing Demon
-							q(38460), -- Let's Make A Deal
-							q(38232), -- Minion! Kill Them!
+						sz(10665,5, {	-- Llothien Highlands
+							q(42238),	-- Missing Demon
+							q(38460),	-- Let's Make A Deal
+							q(38232),	-- Minion! Kill Them!
 							q(38237,  {  	-- This IS In My Contract
 								i(138878), 		-- Copy of Daglop's Contract
 							}),
 						}),
-						sz(10665,6, { -- The Lost Orchard
+						sz(10665,6, {	-- The Lost Orchard
 							q(38203,  {  	-- Challiane Vineyards
 								i(132968),
 								i(132967),
@@ -2185,9 +2185,9 @@ _.Zones =
 								i(132965),
 							}),
 						}),
-						sz(10665,7, { -- Nar'thalas
-							q(42692), -- Children of Nar'thalas
-							q(42693), -- You Never Know Until You Scry
+						sz(10665,7, {	-- Nar'thalas
+							q(42692),	-- Children of Nar'thalas
+							q(42693),	-- You Never Know Until You Scry
 							q(42694,  {  	-- Back from the Dead
 								i(138820),
 								i(138821),
@@ -2196,9 +2196,9 @@ _.Zones =
 							}),
 						}),
 					}),
-					n(-221, { -- Bonus Objectives
+					n(-221, {	-- Bonus Objectives
 						["groups"] = {
-							q(36811), -- Retake Faronaar
+							q(36811),	-- Retake Faronaar
 						},
 					}),
         --[[ These quests will be organized soon™
@@ -2348,34 +2348,34 @@ _.Zones =
 					q(41185),	-- The Keys to Success
 ]]--
 					q(43378, {	-- Eye of Azshara: Looking Through the Lens
-						["qg"] = 110687, -- Yalia Sagewhisper
+						["qg"] = 110687,	-- Yalia Sagewhisper
 						["classes"] = { 5 },
 					}),
 					qa(45127, {	-- Fel-Crossed Lovers
-						["qg"] = 116189, -- Levia Laurence
+						["qg"] = 116189,	-- Levia Laurence
 					}),
 					qa(45836, {	-- Jorach's Calling
-						["qg"] = 119821, -- Princess Tess Greymane
+						["qg"] = 119821,	-- Princess Tess Greymane
 						["classes"] = { 4 },
 					}),
 					qh(46326, {	-- Jorach's Calling
-						["qg"] = 119822, -- Lilian Voss
+						["qg"] = 119822,	-- Lilian Voss
 						["classes"] = { 4 },
 					}),
 					q(38959, {	-- Left Behind
-						["qg"] = 93967, -- Lyndras
-						["sourceQuests"] = { 38957 }, -- Taking Inspiration
+						["qg"] = 93967,	-- Lyndras
+						["sourceQuests"] = { 38957 },	-- Taking Inspiration
 					}),
 					q(38960, {	-- Lining Them Up
-						["qg"] = 93967, -- Lyndras
-						["sourceQuests"] = { 38957 }, -- Taking Inspiration
+						["qg"] = 93967,	-- Lyndras
+						["sourceQuests"] = { 38957 },	-- Taking Inspiration
 					}),
 					qg(89341, q(37727, {	-- The Magister of Mixology
 						i(133814),	-- Recipe: Faronaar Fizz [Rank 1]
 					})),
 					sq(37727, qg(89341, q(37728))),	-- Presentation is Everything
 					q(40210, {	-- Time Well Spent
-						["qg"] = 98964, -- Celea
+						["qg"] = 98964,	-- Celea
 						["sourceQuests"] = {
 							40203,	-- Strength of the Past
 							40204,	-- Evolution of the Past
@@ -2387,9 +2387,9 @@ _.Zones =
 						["requireSkill"] = 165,
 					}),
 					q(40547, {	-- To Dalaran, With Love
-						["qg"] = 100521, -- Jabrul
+						["qg"] = 100521,	-- Jabrul
 						["requireSkill"] = 755,
-						["sourceQuests"] = { 40556 }, -- Jabrul Needs You
+						["sourceQuests"] = { 40556 },	-- Jabrul Needs You
 					}),
 --[[
 					q(42407),	-- The Nature of the Beast
@@ -2647,7 +2647,7 @@ _.Zones =
 						["questID"] = 38217,	
 							
 					}),
-						n(97116, { -- Treasure Chest
+						n(97116, {	-- Treasure Chest
                         ["groups"] = {
                             i(122681),
                         },
@@ -2712,7 +2712,7 @@ _.Zones =
 					}),
 				}),
 				n(-2, { 	-- Vendors
-					n(107139, { -- Enchantress Ilyana
+					n(107139, {	-- Enchantress Ilyana
 						i(144317),	-- Formula: Enchant Neck - Mark of the Deadly (Rank 1)
 						i(144308),	-- Formula: Enchant Neck - Mark of the Master (Rank 1)
 						i(144314),	-- Formula: Enchant Neck - Mark of the Quick (Rank 1)
@@ -2731,7 +2731,7 @@ _.Zones =
 							i(136630),	-- "Twirling Bottom" Repeater
 						},
 					}),
-					n(107963, { -- Kharmeera
+					n(107963, {	-- Kharmeera
 						i(128574),	-- Formula: Enchant Cloak - Binding of Agility (Rank 1)
 						i(128575),	-- Formula: Enchant Cloak - Binding of Intellect (Rank 1)
 						i(128573),	-- Formula: Enchant Cloak - Binding of Strength (Rank 1)
@@ -2767,7 +2767,7 @@ _.Zones =
 						i(137779),	-- Vantus Rune Technique: High Botanist Tel'arn [Rank 3]
 						i(137776),	-- Vantus Rune Technique: Trilliax [Rank 3]
 						i(139556, {	-- Syriel Crescentfall's Notes: Ravenguard
-							artifact(224), -- Marksmanship Hunter Hidden Appearance
+							artifact(224),	-- Marksmanship Hunter Hidden Appearance
 						}),
 						i(129276, {	-- Beginner's Guide to Dimensional Rifting
 							ach(11175),	-- Higher Dimensional Rifting
@@ -2784,10 +2784,10 @@ _.Zones =
 					}),
 				}),
 				n(-34, { 	-- World Quests
-					n(-322, { -- Cloak
-						i(134334), -- Disgraced Court Cloak
-						i(134246), -- Herringbone Drape
-						i(136748), -- Vault Watcher's Cloak
+					n(-322, {	-- Cloak
+						i(134334),	-- Disgraced Court Cloak
+						i(134246),	-- Herringbone Drape
+						i(136748),	-- Vault Watcher's Cloak
 					}),
 					n(-3241, {	-- Arcane Singed Set		
 						["groups"] = {		
@@ -2961,28 +2961,28 @@ _.Zones =
 						i(141049),	-- Technique: Glyph of the Hook
 						i(141064),	-- Technique: Glyph of the Shivarra
 						i(141051),	-- Technique: Glyph of the Trident
-						i(121015, { -- Academy Faculty Pin
+						i(121015, {	-- Academy Faculty Pin
 							["bonusID"] = 1812,
 						}),
-						i(121012, { -- Azurewing Defender's Drape
+						i(121012, {	-- Azurewing Defender's Drape
 							["bonusID"] = 1812,
 						}),
-						i(121028, { -- Azurewing Pendant
+						i(121028, {	-- Azurewing Pendant
 							["bonusID"] = 1812,
 						}),
-						i(121027, { -- Azurewing Signet
+						i(121027, {	-- Azurewing Signet
 							["bonusID"] = 1812,
 						}),
-						i(121016, { -- Corsair's Spyglass
+						i(121016, {	-- Corsair's Spyglass
 							["bonusID"] = 1812,
 						}),
-						i(141285, { -- Nar'thalas Writ
+						i(141285, {	-- Nar'thalas Writ
 							["bonusID"] = 1812,
 						}),
-						i(141284, { -- Nor'danil Ampoule
+						i(141284, {	-- Nor'danil Ampoule
 							["bonusID"] = 1812,
 						}),
-						i(121014, { -- Preserved Blue Dragon Scale
+						i(121014, {	-- Preserved Blue Dragon Scale
 							["bonusID"] = 1812,
 						}),
 						i(121049, {	-- Temporal Scholar's Cowl
@@ -3271,8 +3271,8 @@ _.Zones =
 							})),
 						}),
 						n(-17, {    -- Quests
-							n(-193, { -- First Aid
-								un(40, q(42255)), -- Bloody Note
+							n(-193, {	-- First Aid
+								un(40, q(42255)),	-- Bloody Note
 							}),
 						}),
 					},

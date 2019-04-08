@@ -2,15 +2,15 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 _.Instances = { tier(8, {	-- Battle For Azeroth
-	inst(1030, { -- Temple of Sethraliss
+	inst(1030, {	-- Temple of Sethraliss
 		["lvl"] = 110,
 		["maps"] = {
 			1038,	-- Temple of Sethraliss
 			1043,	-- Atrium of Sethraliss
 		},
 		["groups"] = {
-			d(1, { -- Normal
-				e(2142, { -- Adderis and Aspix
+			d(1, {	-- Normal
+				e(2142, {	-- Adderis and Aspix
 					["crs"] = {
 						133379,	-- Adderis
 						133944,	-- Aspix
@@ -28,7 +28,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						i(159259),	-- Sandswept Sandals
 					}),
 				}),
-				e(2143, { -- Merektha
+				e(2143, {	-- Merektha
 					["crs"] = {
 						133384,	-- Merektha
 					},
@@ -43,7 +43,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						i(158367),	-- Merektha's Fang
 					}),
 				}),
-				e(2144, { -- Galvazzt
+				e(2144, {	-- Galvazzt
 					["crs"] = {
 						133389,	-- Galvazzt
 					},
@@ -56,7 +56,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						i(158374),	-- Tiny Eelectromental in a Jar
 					}),
 				}),
-				e(2145, { -- Avatar of Sethraliss
+				e(2145, {	-- Avatar of Sethraliss
 					["crs"] = { 133392 },	-- Avatar of Sethraliss
 					["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						ach(12504),	-- The Temple of Sethraliss
@@ -73,10 +73,10 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					}),
 				}),
 			}),
-			d(2, { -- Heroic
+			d(2, {	-- Heroic
 				["lvl"] = 120,
 				["groups"] = {
-					e(2142, { -- Adderis and Aspix
+					e(2142, {	-- Adderis and Aspix
 						["crs"] = {
 							133379,	-- Adderis
 							133944,	-- Aspix
@@ -94,7 +94,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							i(159259),	-- Sandswept Sandals
 						},
 					}),
-					e(2143, { -- Merektha
+					e(2143, {	-- Merektha
 						["crs"] = {
 							133384,	-- Merektha
 						},
@@ -109,7 +109,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							i(158367),	-- Merektha's Fang
 						},
 					}),
-					e(2144, { -- Galvazzt
+					e(2144, {	-- Galvazzt
 						["crs"] = {
 							133389,	-- Galvazzt
 						},
@@ -122,7 +122,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							i(158374),	-- Tiny Eelectromental in a Jar
 						},
 					}),
-					e(2145, { -- Avatar of Sethraliss
+					e(2145, {	-- Avatar of Sethraliss
 						["crs"] = { 133392 },	-- Avatar of Sethraliss
 						["groups"] = {
 							ach(12505),	-- Heroic: The Temple of Sethraliss
@@ -140,11 +140,11 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					}),
 				},
 			}),
-			d(23, { -- Mythic
+			d(23, {	-- Mythic
 				["lvl"] = 120,
 				["groups"] = {
 					ach(12503),	-- Snake Eyes
-					e(2142, { -- Adderis and Aspix
+					e(2142, {	-- Adderis and Aspix
 						["crs"] = {
 							133379,	-- Adderis
 							133944,	-- Aspix
@@ -162,14 +162,14 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							i(159259),	-- Sandswept Sandals
 						},
 					}),
-					e(2143, { -- Merektha
+					e(2143, {	-- Merektha
 						["crs"] = {
 							133384,	-- Merektha
 						},
 						["groups"] = {
 							ach(12507),	-- Snake Eater
-							i(160832, { -- Viable Cobra Egg
-								i(160831, { -- Cracking Cobra Egg
+							i(160832, {	-- Viable Cobra Egg
+								i(160831, {	-- Cracking Cobra Egg
 									i(160702),	-- Spawn of Merektha
 								}),
 							}),
@@ -183,7 +183,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							i(158367),	-- Merektha's Fang
 						},
 					}),
-					e(2144, { -- Galvazzt
+					e(2144, {	-- Galvazzt
 						["crs"] = {
 							133389,	-- Galvazzt
 						},
@@ -196,7 +196,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							i(158374),	-- Tiny Eelectromental in a Jar
 						},
 					}),
-					e(2145, { -- Avatar of Sethraliss
+					e(2145, {	-- Avatar of Sethraliss
 						["crs"] = { 133392 },	-- Avatar of Sethraliss
 						["groups"] = {
 							ach(12508),	-- Good Night, Sweet Prince

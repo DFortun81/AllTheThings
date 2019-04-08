@@ -47,16 +47,16 @@ _.Holidays = bubbleDown({["u"] = 29},
 								["achievementID"] = 1687,	-- Let It Snow
 							},
 							{
-								crit(1), -- Orc Death Knight
-								crit(2), -- Human Warrior
-								crit(3), -- Tauren Shaman
-								crit(4), -- Night Elf Druid
-								crit(5), -- Undead Rogue
-								crit(6), -- Troll Hunter
-								crit(7), -- Gnome Mage
-								crit(8), -- Dwarf Paladin
-								crit(9), -- Blood Elf Warlock
-								crit(10), -- Draenei Priest
+								crit(1),	-- Orc Death Knight
+								crit(2),	-- Human Warrior
+								crit(3),	-- Tauren Shaman
+								crit(4),	-- Night Elf Druid
+								crit(5),	-- Undead Rogue
+								crit(6),	-- Troll Hunter
+								crit(7),	-- Gnome Mage
+								crit(8),	-- Dwarf Paladin
+								crit(9),	-- Blood Elf Warlock
+								crit(10),	-- Draenei Priest
 							}
 						),
 					},
@@ -68,14 +68,14 @@ _.Holidays = bubbleDown({["u"] = 29},
 								["races"] = ALLIANCE_ONLY,
 							},
 							{
-								crit(1), -- Brother Nimetz in Stranglethorn Vale
-								crit(2), -- Brother Wilhelm in Goldshire
-								crit(3), -- Brother Karman in Theramore
+								crit(1),	-- Brother Nimetz in Stranglethorn Vale
+								crit(2),	-- Brother Wilhelm in Goldshire
+								crit(3),	-- Brother Karman in Theramore
 								crit(4), --	Brother Kristoff in Stormwind
-								crit(5), -- Brother Joshua in Stormwind
-								crit(6), -- Brother Crowley in Stormwind
-								crit(7), -- Brother Cassius in Stormwind
-								crit(8), -- Brother Benjamin in Stormwind
+								crit(5),	-- Brother Joshua in Stormwind
+								crit(6),	-- Brother Crowley in Stormwind
+								crit(7),	-- Brother Cassius in Stormwind
+								crit(8),	-- Brother Benjamin in Stormwind
 							}
 						),
 						bubbleDown(
@@ -84,9 +84,9 @@ _.Holidays = bubbleDown({["u"] = 29},
 								["races"] = HORDE_ONLY,
 							},
 							{
-								crit(1), -- Brother Malach in the Undercity
-								crit(2), -- Durkot Wolfbrother in Warsong Hold
-								crit(3), -- Brother Keltan in Icecrown
+								crit(1),	-- Brother Malach in the Undercity
+								crit(2),	-- Durkot Wolfbrother in Warsong Hold
+								crit(3),	-- Brother Keltan in Icecrown
 							}
 						)),
 					},

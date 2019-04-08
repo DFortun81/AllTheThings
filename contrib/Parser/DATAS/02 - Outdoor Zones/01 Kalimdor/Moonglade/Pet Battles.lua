@@ -7,9 +7,9 @@ _.Zones =
 		m(80, {	-- Moonglade
 			["groups"] = {
 				n(-25, { 	-- Pet Battle
-					p(478), -- Forest Moth
-					p(378), -- Rabbit
-					p(379), -- Squirrel
+					p(478),	-- Forest Moth
+					p(378),	-- Rabbit
+					p(379),	-- Squirrel
 					{	-- Elena Flutterfly
 						["questID"] = 31908,
 						["qg"] = 66412,	-- Elena Flutterfly

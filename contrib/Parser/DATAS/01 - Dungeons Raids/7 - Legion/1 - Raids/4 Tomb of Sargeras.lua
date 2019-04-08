@@ -247,7 +247,7 @@ _.Instances = { tier(7, {	-- Legion
 					},
 					["groups"] = {
 						cr(118289, e(1897, {	-- Maiden of Vigilance
-							i(151524), -- Hammer of Vigilance
+							i(151524),	-- Hammer of Vigilance
 							i(147050),
 							i(147032),
 							i(146999),
@@ -503,7 +503,7 @@ _.Instances = { tier(7, {	-- Legion
 					},
 				}),
 				cr(118289, e(1897, {	-- Maiden of Vigilance
-					i(151524), -- Hammer of Vigilance
+					i(151524),	-- Hammer of Vigilance
 					i(147060),
 					i(147032),
 					i(147050),
@@ -751,7 +751,7 @@ _.Instances = { tier(7, {	-- Legion
 					},
 				}),
 				cr(118289, e(1897, {	-- Maiden of Vigilance
-					i(151524), -- Hammer of Vigilance
+					i(151524),	-- Hammer of Vigilance
 					i(147060),
 					i(147032),
 					i(147050),
@@ -999,7 +999,7 @@ _.Instances = { tier(7, {	-- Legion
 					},
 				}),
 				cr(118289, e(1897, {	-- Maiden of Vigilance
-					i(151524), -- Hammer of Vigilance
+					i(151524),	-- Hammer of Vigilance
 					i(147060),
 					i(147032),
 					i(147050),

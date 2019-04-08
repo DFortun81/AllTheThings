@@ -34,7 +34,7 @@ _.Zones =
 								},
 							}),
 						}),
-						n(137529, { -- Arvon the Betrayed
+						n(137529, {	-- Arvon the Betrayed
 							["questID"] = 51383,
 							["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(160449),	-- Spectral Revenger

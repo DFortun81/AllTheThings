@@ -12,7 +12,7 @@ _.Zones =
 					a(faction(1037, {	-- Alliance Vanguard
 						["achievementID"] = 1012,	-- The Winds of the North
 						["groups"] = {
-							a(n(32564, { -- Logistics Officer Silverstone <Alliance Vanguard Quartermaster>
+							a(n(32564, {	-- Logistics Officer Silverstone <Alliance Vanguard Quartermaster>
 								i(44937),	-- Plans: Titanium Plating
 								i(44503),	-- Schematic: Mekgineer's Chopper
 								i(38464),	-- Gnomish Magician's Quill
@@ -33,7 +33,7 @@ _.Zones =
 											recipe(57421),	-- Northern Stew
 										},
 									}),
-									a(n(35131, { -- Durgan Thunderbeak <Gryphon Keeper>
+									a(n(35131, {	-- Durgan Thunderbeak <Gryphon Keeper>
 										i(25473), 	-- Swift Blue Gryphon Mount
 										i(25527),	-- Swift Red Gryphon Mount
 										i(25528),	-- Swift Green Gryphon Mount
@@ -49,7 +49,7 @@ _.Zones =
 					h(faction(1052, {	-- Horde Expedition
 						["achievementID"] = 1011,	-- The Winds of the North
 						["groups"] = {
-							nh(32565, { -- Gara Skullcrush <Horde Expedition Quartermaster>
+							nh(32565, {	-- Gara Skullcrush <Horde Expedition Quartermaster>
 								["groups"] = {
 									i(44938),	-- Plans: Titanium Plating
 									i(44502),	-- Schematic: Mechano-Hog
@@ -73,7 +73,7 @@ _.Zones =
 										["qg"] = 26972,		-- Quest Giver: Orn Tenderhoof <Cooking Trainer>
 										["coord"] = { 42.0, 54.1 }
 									}),
-									h(n(35132, { -- Tohfo Skyhoof <Wind Rider Keeper>
+									h(n(35132, {	-- Tohfo Skyhoof <Wind Rider Keeper>
 										["groups"] = {
 											i(25477),	-- Swift Red Wind Rider
 											i(25531),	-- Swift Green Wind Rider
@@ -93,7 +93,7 @@ _.Zones =
 						["achievementID"] = 949,	-- Tuskarrmageddon
 						["groups"] = {
 							q(11945, {	-- Preparing for the Worst
-								["qg"] = 26213, -- Quest Giver: Utaik
+								["qg"] = 26213,	-- Quest Giver: Utaik
 								["coord"] = { 64.0, 45.7 },
 								["isDaily"] = true,
 							}),

@@ -28,7 +28,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				},	
 			}),
 			d( 1, {	-- Normal
-				cr(17941, e(570, { -- Mennu the Betrayer
+				cr(17941, e(570, {	-- Mennu the Betrayer
 					i(24361),	-- Spellfire Longsword
 					i(27543),	-- Starlight Dagger
 					i(24356),	-- Wastewalker Shiv
@@ -40,7 +40,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					i(27545),	-- Mennu's Scaled Leggings
 					i(24359),	-- Princely Reign Leggings
 				})),
-				cr(17991, e(571, { -- Rokmar the Crackler
+				cr(17991, e(571, {	-- Rokmar the Crackler
 					i(24378),	-- Coilfang Hammer of Renewal
 					i(24380),	-- Calming Spore Reed
 					i(24381),	-- Coilfang Needler
@@ -53,7 +53,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					i(27549),	-- Wavefury Boots
 					i(24376),	-- Runed Fungalcap
 				})),
-				cr(17942, e(572, { -- Quagmirran
+				cr(17942, e(572, {	-- Quagmirran
 					ach(649),	-- The Slave Pens
 					i(27741),	-- Bleeding Hollow Warhammer
 					i(27673),	-- Phosphorescent Blade
@@ -82,7 +82,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				["lvl"] = 70,
 				["ignoreBonus"] = true,
 				["groups"] = {
-					cr(17941, e(570, { -- Mennu the Betrayer
+					cr(17941, e(570, {	-- Mennu the Betrayer
 						i(24361),	-- Spellfire Longsword
 						i(27543),	-- Starlight Dagger
 						i(24356),	-- Wastewalker Shiv
@@ -94,7 +94,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(27545),	-- Mennu's Scaled Leggings
 						i(24359),	-- Princely Reign Leggings
 					})),
-					cr(17991, e(571, { -- Rokmar the Crackler
+					cr(17991, e(571, {	-- Rokmar the Crackler
 						i(24378),	-- Coilfang Hammer of Renewal
 						i(24380),	-- Calming Spore Reed
 						i(24381),	-- Coilfang Needler
@@ -107,7 +107,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(27549),	-- Wavefury Boots
 						i(24376),	-- Runed Fungalcap
 					})),
-					cr(17942, e(572, { -- Quagmirran
+					cr(17942, e(572, {	-- Quagmirran
 						ach(669),	-- Heroic: The Slave Pens
 						i(27741),	-- Bleeding Hollow Warhammer
 						i(27673),	-- Phosphorescent Blade
@@ -136,7 +136,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 			d(24, {	-- Timewalking
 				["lvl"] = 71,
 				["groups"] = {
-					cr(17941, e(570, { -- Mennu the Betrayer
+					cr(17941, e(570, {	-- Mennu the Betrayer
 						i(127183),	-- Spellfire Longsword
 						i(127191),	-- Starlight Dagger
 						i(127179),	-- Wastewalker Shiv
@@ -150,7 +150,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(127192),	-- Mennu's Scaled Leggings
 						i(127181),	-- Princely Reign Leggings
 					})),
-					cr(17991, e(571, { -- Rokmar the Crackler
+					cr(17991, e(571, {	-- Rokmar the Crackler
 						i(127185),	-- Coilfang Hammer of Renewal
 						i(127187),	-- Calming Spore Reed
 						i(127188),	-- Coilfang Needler
@@ -164,7 +164,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(127196),	-- Wavefury Boots
 						i(127184),	-- Runed Fungalcap
 					})),
-					cr(17942, e(572, { -- Quagmirran
+					cr(17942, e(572, {	-- Quagmirran
 						i(127206),	-- Bleeding Hollow Warhammer
 						i(127200),	-- Phosphorescent Blade
 						i(127208),	-- Mana-Etched Spaulders

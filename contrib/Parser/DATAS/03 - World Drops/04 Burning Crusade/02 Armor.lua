@@ -5,8 +5,8 @@ _.WorldDrops =
 {
 	{
 		["groups"] = {
-			n(-318, { -- Armor
-				n(-320, { -- Head
+			n(-318, {	-- Armor
+				n(-320, {	-- Head
 					i(30728),	-- Fathom-Helm of the Deeps
 					i(30731),	-- Faceguard of the Endless Watch
 					i(31145),	-- Headdress of the Sleeper
@@ -60,7 +60,7 @@ _.WorldDrops =
 					i(25065),	-- Turquoise Brooch
 					i(25062),	-- Zircon Amulet
 				}),
-				n(-321, { -- Shoulder
+				n(-321, {	-- Shoulder
 					i(24820),	-- Felstone Spaulders
 					i(30740),	-- Ripfiend Shoulderplates
 					i(31148),	-- Demon Hide Spaulders
@@ -75,7 +75,7 @@ _.WorldDrops =
 					i(31250),	-- Bog Mantle
 					i(31294),	-- Pauldrons of Surging Mana
 				}),
-				n(-322, { -- Back
+				n(-322, {	-- Back
 					i(25030),	-- Silky Velvet Cloak
 					i(25031),	-- Silvermoon Royal Cloak
 					i(25032),	-- Hellfire Cloak
@@ -103,7 +103,7 @@ _.WorldDrops =
 					i(32541),	-- Terokk's Wisdom
 					i(32665),	-- Crystalweave Cape
 				}),
-				n(-323, { -- Chest
+				n(-323, {	-- Chest
 					i(30730),	-- Terrorweave Tunic
 					i(31127),	-- Hauberk of Totemic Rage
 					i(31136),	-- Breastplate of Blade Turning
@@ -128,7 +128,7 @@ _.WorldDrops =
 					i(31570),	-- Mistshroud Tunic
 					i(31578),	-- Slatesteel Breastplate
 				}),
-				n(-326, { -- Wrist
+				n(-326, {	-- Wrist
 					i(24901),	-- Tortured Bracer
 					i(31175),	-- Blade Dancer's Wristguards
 					i(31188),	-- Crocolisk Scale Vambraces
@@ -142,7 +142,7 @@ _.WorldDrops =
 					i(31284),	-- Bracers of Recklessness
 					i(32655),	-- Crystalweave Bracers
 				}),
-				n(-327, { -- Hands
+				n(-327, {	-- Hands
 					i(30725),	-- Anger-Spark Gloves
 					i(30741),	-- Topaz-Studded Battlegrips
 					i(31137),	-- Gauntlets of Purification
@@ -160,7 +160,7 @@ _.WorldDrops =
 					i(31280),	-- Thundercaller's Gauntlets
 					i(32656),	-- Crystalhide Handwraps
 				}),
-				n(-328, { -- Waist
+				n(-328, {	-- Waist
 					i(28495),	-- Windwalker's Sash
 					i(28496),	-- Talonite's Belt
 					i(28497),	-- Dreadhawk's Girdle
@@ -181,7 +181,7 @@ _.WorldDrops =
 					i(31293),	-- Girdle of Gale Force
 					i(24886),	-- Skettis Belt
 				}),
-				n(-329, { -- Legs
+				n(-329, {	-- Legs
 					i(30727),	-- Gilded Trousers of Benediction
 					i(30734),	-- Leggings of the Seventh Circle
 					i(30739),	-- Scaled Greaves of the Marksman
@@ -207,7 +207,7 @@ _.WorldDrops =
 					i(31572),	-- Mistshroud Pants
 					i(31580),	-- Slatesteel Leggings
 				}),
-				n(-330, { -- Feet
+				n(-330, {	-- Feet
 					i(28491),	-- Windwalker's Footwraps
 					i(28492),	-- Talonite's Boots
 					i(28493),	-- Dreadhawk's Schynbald

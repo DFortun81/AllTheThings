@@ -77,7 +77,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(35580),	-- Skein Woven Mantle
 					i(35579),	-- Vrykul Shackles
 				}),
-				cr(23953, e(638, { -- Prince Keleseth <The San'layn>
+				cr(23953, e(638, {	-- Prince Keleseth <The San'layn>
 					{	-- Utgarde Keep: Prince Keleseth
 							["achievementID"] = 477,	-- Utgarde Keep
 							["criteriaID"] = 1,	-- Prince Keleseth
@@ -90,7 +90,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i( 35571),	-- Dragon Stabler's Gauntlets
 					i( 37178),	-- Strategist's Belt
 				})),
-				cr(24200, e(639, { -- Skarvald the Constructor and Dalronn the Controller
+				cr(24200, e(639, {	-- Skarvald the Constructor and Dalronn the Controller
 					{	-- Utgarde Keep: Dalronn the Controller
 						["achievementID"] = 477,	-- Utgarde Keep
 						["criteriaID"] = 3,	-- Dalronn the Controller
@@ -108,7 +108,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i( 35575),	-- Skarvald's Dragonskin Habergeon
 					i( 37183),	-- Bindings of the Tunneler
 				})),
-				cr(23954, e(640, { -- Ingvar the Plunderer
+				cr(23954, e(640, {	-- Ingvar the Plunderer
 					{	-- Utgarde Keep: Ingvar the Plunderer
 						["achievementID"] = 477,	-- Utgarde Keep
 						["criteriaID"] = 4,	-- Ingvar the Plunderer
@@ -182,7 +182,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							},
 						},
 					}),
-					cr(23953, e(638, { -- Prince Keleseth <The San'layn>
+					cr(23953, e(638, {	-- Prince Keleseth <The San'layn>
 						{	-- On The Rocks
 							["achievementID"] = 1919,	-- On The Rocks
 						},
@@ -198,7 +198,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i( 35571),	-- Dragon Stabler's Gauntlets
 						i( 37178),	-- Strategist's Belt
 					})),
-					cr(24200, e(639, { -- Skarvald the Constructor and Dalronn the Controller
+					cr(24200, e(639, {	-- Skarvald the Constructor and Dalronn the Controller
 						{	-- Heroic: Utgarde Keep: Dalronn the Controller
 							["achievementID"] = 489,	-- Heroic: Utgarde Keep
 							["criteriaID"] = 3,	-- Dalronn the Controller
@@ -216,7 +216,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i( 35575),	-- Skarvald's Dragonskin Habergeon
 						i( 37183),	-- Bindings of the Tunneler
 					})),
-					cr(23954, e(640, { -- Ingvar the Plunderer
+					cr(23954, e(640, {	-- Ingvar the Plunderer
 						{	-- Champion of the Frozen Wastes
 							["achievementID"] = 1658,	-- Champion of the Frozen Wastes
 							["criteriaID"] = 10,		-- Ingvar the Plunderer slain

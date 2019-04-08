@@ -3,9 +3,9 @@
 -----------------------------------------------------
 _.GearSets = 
 {
-	gsh(1522, { -- Allied Races
+	gsh(1522, {	-- Allied Races
 		["groups"] = {
-			gs(1524, { -- Heritage of the Ren'dorei
+			gs(1524, {	-- Heritage of the Ren'dorei
 				["races"] = {
 					29,		-- Void Elf
 				},

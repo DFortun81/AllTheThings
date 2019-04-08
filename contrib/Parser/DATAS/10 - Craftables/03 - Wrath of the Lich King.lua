@@ -3,7 +3,7 @@
 -----------------------------------------------------
 _.Craftables =
 {
-	tier(3, { -- Wrath of the Lich King
+	tier(3, {	-- Wrath of the Lich King
 		n(-180, {	-- Alchemy
 			filter(53, {	-- Trinkets
 				i(44323),	-- Indestructible Alchemist Stone
@@ -255,7 +255,7 @@ _.Craftables =
 					["itemID"] = 47571,	-- Saronite Swordbreakers
 				},
 				{	-- Savage Saronite Bracers
-					["itemID"] = 41354, -- Savage Saronite Bracers
+					["itemID"] = 41354,	-- Savage Saronite Bracers
 				},
 				{	-- Spiked Cobalt Bracers
 					["itemID"] = 40954,	-- Spiked Cobalt Bracers
@@ -445,7 +445,7 @@ _.Craftables =
 		}),
 		n(-185, { 	-- Inscription
 		-- Reviewed and updated as of 11.21.2018 BfA 8.0
-			n(-491, { -- Tarot Cards
+			n(-491, {	-- Tarot Cards
 				sp(59504, {	-- Darkmoon Card of the North
 					i(44260, {["f"] = 55}),    -- Ace of Prisms
 					i(44261, {["f"] = 55}),    -- 2 of Prisms

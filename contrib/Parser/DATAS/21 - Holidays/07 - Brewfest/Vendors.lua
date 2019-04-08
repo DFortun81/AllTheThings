@@ -216,7 +216,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 					["maps"] = { 1 },
 				}),
 			},
-			--["u"] = 24, -- Brewfest
+			--["u"] = 24,	-- Brewfest
 		}),
 	}),
 });

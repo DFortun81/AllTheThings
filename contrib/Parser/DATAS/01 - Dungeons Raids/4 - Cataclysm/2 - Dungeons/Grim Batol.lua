@@ -25,7 +25,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 					i(56218),	-- Curse-Tainted Leggings		
 					i(56219),	-- Shroud of Dark Memories
 				}),			
-				cr(39625, e(131, { -- General Umbriss
+				cr(39625, e(131, {	-- General Umbriss
 					i( 56441),	-- Modgug's Blade
 					i(157612), 	-- Dragonkin Ward (Added 7.3.5)
 					i( 56443),	-- Wildhammer Riding Helm
@@ -39,7 +39,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 					un(2, i(56114)),	-- Umbriss Band [Replaced with 56444]
 					un(2, i(56115)),	-- Skardyn's Grace [Replaced with 56440]
 				})),
-				cr(40177, e(132, { -- Forgemaster Throngus
+				cr(40177, e(132, {	-- Forgemaster Throngus
 					i(157613), 	-- Geomancy Slicer (Added 7.3.5)
 					i( 56446),	-- Wand of Untainted Power
 					i(157597), 	-- Troggstitched Drape (Added 7.3.5)
@@ -53,7 +53,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 					un(2, i(56120)),	-- Ring of Dun Algaz [Replaced with 56445]
 					un(2, i(56121)),	-- Throngus's Finger [Replaced with 56449]
 				})),
-				cr(40319, e(133, { -- Drahga Shadowburner
+				cr(40319, e(133, {	-- Drahga Shadowburner
 					i( 56454),	-- Windwalker Blade
 					i(157598), 	-- Courier's Dragonriding Spaulders (Added 7.3.5)
 					i( 56452),	-- Earthshape Pauldrons
@@ -67,7 +67,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 					un(2, i(56125)),	-- Crimsonborne Bracers [Replaced with 56453]
 					un(2, i(56123)),	-- Red Scale Boots [Replaced with 56451]		
 				})),
-				cr(40484, e(134, { -- Erudax
+				cr(40484, e(134, {	-- Erudax
 					{	-- Grim Batol
 						["achievementID"] = 4840,	-- Grim Batol
 					},
@@ -98,7 +98,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 				["lvl"] = 85,
 				["ignoreBonus"] = true,
 				["groups"] = {
-					cr(39625, e(131, { -- General Umbriss
+					cr(39625, e(131, {	-- General Umbriss
 						{	-- Umbrage for Umbriss
 							["achievementID"] = 5297,	-- Umbrage for Umbriss
 						},
@@ -110,7 +110,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 						i( 56444),	-- Umbriss Band
 						i( 56440),	-- Skardyn's Grace
 					})),
-					cr(40177, e(132, { -- Forgemaster Throngus
+					cr(40177, e(132, {	-- Forgemaster Throngus
 						i(157613), 	-- Geomancy Slicer (Added 7.3.5)
 						i( 56446),	-- Wand of Untainted Power
 						i(157597), 	-- Troggstitched Drape (Added 7.3.5)
@@ -119,7 +119,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 						i( 56445),	-- Ring of Dun Algaz
 						i( 56449),	-- Throngus's Finger
 					})),
-					cr(40319, e(133, { -- Drahga Shadowburner
+					cr(40319, e(133, {	-- Drahga Shadowburner
 						i( 56454),	-- Windwalker Blade
 						i(157598), 	-- Courier's Dragonriding Spaulders (Added 7.3.5)
 						i( 56452),	-- Earthshape Pauldrons
@@ -128,7 +128,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 						i(157614), 	-- Flame Invoker's Treads (Added 7.3.5)
 						i( 56451),	-- Red Scale Boots
 					})),
-					cr(40484, e(134, { -- Erudax
+					cr(40484, e(134, {	-- Erudax
 						{	-- Don't Need to Break Eggs to Make an Omelet
 							["achievementID"] = 5298,	-- Don't Need to Break Eggs to Make an Omelet
 						},
@@ -152,7 +152,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 			d(24, {	-- Timewalking
 				["lvl"] = 86,
 				["groups"] = {
-					cr(39625, e(131, { -- General Umbriss
+					cr(39625, e(131, {	-- General Umbriss
 						i(133283),	-- Modgud's Blade
 						i(133285),	-- Wildhammer Riding Helm
 						i(133284),	-- Cursed Skardyn Vest
@@ -161,7 +161,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 						i(133286),	-- Umbriss Band
 						i(133282),	-- Skardyn's Grace
 					})),
-					cr(40177, e(132, { -- Forgemaster Throngus
+					cr(40177, e(132, {	-- Forgemaster Throngus
 						i(133288),	-- Wand of Untainted Power
 						i(133353),	-- Troggbone Cinch
 						i(133289),	-- Belt of the Forgemaster
@@ -171,7 +171,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 						i(133304),	-- Gale of Shadows
 						i(133291),	-- Throngus's Finger
 					})),
-					cr(40319, e(133, { -- Drahga Shadowburner
+					cr(40319, e(133, {	-- Drahga Shadowburner
 						i(133296),	-- Windwalker Blade
 						i(133294),	-- Earthshape Pauldrons
 						i(133292),	-- Azureborne Cloak
@@ -180,7 +180,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 						i(133354),	-- Glimmerthread Pantalons
 						i(133293),	-- Red Scale Boots
 					})),
-					cr(40484, e(134, { -- Erudax
+					cr(40484, e(134, {	-- Erudax
 						i(133303),	-- Staff of Siphoned Essences
 						i(133298),	-- Wild Hammer
 						i(133301),	-- Mace of Transformed Bone

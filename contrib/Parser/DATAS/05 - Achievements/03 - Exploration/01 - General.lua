@@ -4,9 +4,9 @@
 
 _.Achievements =
 {
-	n(-9957, { -- Exploration
+	n(-9957, {	-- Exploration
 		["groups"] = {
-			n(-9955, { -- General
+			n(-9955, {	-- General
 				["groups"] = {
 					ach(12988, {	-- Battle for Azeroth Explorer
 						ach(12556),		-- Explore Tiragarde Sound

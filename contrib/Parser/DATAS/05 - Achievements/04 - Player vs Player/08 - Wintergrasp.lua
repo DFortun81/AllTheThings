@@ -4,9 +4,9 @@
 
 _.Achievements = 
 {
-	n(-9958, { -- Player vs Player
+	n(-9958, {	-- Player vs Player
 		["groups"] = {
-			n(-9995, { -- Wintergrasp
+			n(-9995, {	-- Wintergrasp
 				["groups"] = {
 					ach(1722),		-- Archavon the Stone Watcher (10 player)
 					ach(1721),		-- Archavon the Stone Watcher (25 player)

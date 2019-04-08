@@ -4,9 +4,9 @@
 
 _.Achievements = 
 {
-	n(-9959, { -- Dungeons & Raids
+	n(-9959, {	-- Dungeons & Raids
 		["groups"] = {
-			n(-10054, { -- Battle Raid
+			n(-10054, {	-- Battle Raid
 				["groups"] = {
 					ach(12522, {	-- Crimson Desceny
 						crit(1),		-- Vectis

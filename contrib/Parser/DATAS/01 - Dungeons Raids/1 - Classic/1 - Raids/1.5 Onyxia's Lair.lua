@@ -210,10 +210,10 @@ _.Instances = { tier(1, {	-- Classic
 					e(1651, {	-- Onyxia
 						["creatureID"] = 10184,
 						["groups"] = {
-							ach(4406), -- Many Whelps! Handle It! (25 player)
-							ach(4405), -- More Dots! (25 player)
-							ach(4397), -- Onyxia's Lair (25 player)
-							ach(4407), -- She Deep Breaths More (25 player)
+							ach(4406),	-- Many Whelps! Handle It! (25 player)
+							ach(4405),	-- More Dots! (25 player)
+							ach(4397),	-- Onyxia's Lair (25 player)
+							ach(4407),	-- She Deep Breaths More (25 player)
 							a({
 								["itemID"] = 49644,		-- Head of Onyxia [Alliance]
 								["questID"] = 24428,	-- A Most Puzzling Circumstance

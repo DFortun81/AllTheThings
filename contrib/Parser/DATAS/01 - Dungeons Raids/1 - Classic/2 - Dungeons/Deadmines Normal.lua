@@ -14,13 +14,13 @@ _.Instances = { tier(1, {	-- Classic
 					["groups"] = {
 						{ -- Ensemble: Blackened Defias Armor
 							["groups"] = {	
-								i(10399), -- Blackened Defias Armor
-								i(10401), -- Blackened Defias Gloves
-								i(10403), -- Blackened Defias Belt
-								i(10400), -- Blackened Defias Leggings
-								i(10402), -- Blackened Defias Boots
+								i(10399),	-- Blackened Defias Armor
+								i(10401),	-- Blackened Defias Gloves
+								i(10403),	-- Blackened Defias Belt
+								i(10400),	-- Blackened Defias Leggings
+								i(10402),	-- Blackened Defias Boots
 							},
-							["itemID"] = 142273, -- Ensemble: Blackened Defias Armor
+							["itemID"] = 142273,	-- Ensemble: Blackened Defias Armor
 							["classes"] = { 4 },	-- Rogue
 						},
 					},
@@ -42,9 +42,9 @@ _.Instances = { tier(1, {	-- Classic
 				}),
 				qa(27790, {	-- The Defias Kingpin
 					["groups"] = {
-						i(65935), -- Cookie's Meat Mallet
-						i(65959), -- Cookie's Stirring Stick
-						i(65983), -- Cookie's Table Cloth
+						i(65935),	-- Cookie's Meat Mallet
+						i(65959),	-- Cookie's Stirring Stick
+						i(65983),	-- Cookie's Table Cloth
 					},
 					["sourceQuests"] = { 27785 },	-- The Admiral
 				}),
@@ -62,9 +62,9 @@ _.Instances = { tier(1, {	-- Classic
 				}),
 				qh(27850, {	-- The Defias Kingpin
 					["groups"] = {
-						i(66019), -- Cookie's Meat Mallet
-						i(66028), -- Cookie's Stirring Rod
-						i(66037), -- Cookie's Table Cloth
+						i(66019),	-- Cookie's Meat Mallet
+						i(66028),	-- Cookie's Stirring Rod
+						i(66037),	-- Cookie's Table Cloth
 					},
 					["sourceQuests"] = { 27848 },	-- Good Intentions...Poor Execution
 				}),

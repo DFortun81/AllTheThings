@@ -60,7 +60,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 			}),
 			d(  1, {	-- Normal
 				cr(26668, e(641, {	-- Svala Sorrowgrave
-					["crs"] = { 29281 }, -- Svala Sorrowgrave useless form
+					["crs"] = { 29281 },	-- Svala Sorrowgrave useless form
 					["groups"] = {
 						{	-- Utgarde Pinnacle: Svala Sorrowgrave
 							["achievementID"] = 488,	-- Utgarde Pinnacle

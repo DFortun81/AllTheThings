@@ -47,7 +47,7 @@ _.Zones =
 								["questID"] = 35731,
 								["coord"] = { 52.9, 16.7, 539 },
 								["g"] = {
-									i(113540), -- Ba'ruun's Bountiful Bloom Toy 
+									i(113540),	-- Ba'ruun's Bountiful Bloom Toy 
 								},
 							},
 							{	-- Bahameye	-- drops meat but no gear other than world drops
@@ -81,7 +81,7 @@ _.Zones =
 									{ 42.2, 83.8, 539 },
 								},
 								["g"] = {
-									i(113548), -- Darktide Summoner Staff 
+									i(113548),	-- Darktide Summoner Staff 
 								},
 							},
 							{	-- Darktalon
@@ -158,7 +158,7 @@ _.Zones =
 								["coord"] = { 37.6, 49.0, 539 },
 								["description"] = "In a cave behind the waterfall.",
 								["g"] = {
-									i(113631), -- Hypnosis Goggles Toy
+									i(113631),	-- Hypnosis Goggles Toy
 								},
 							},
 							{	-- Insha'tar
@@ -166,7 +166,7 @@ _.Zones =
 								["questID"] = 35909,
 								["coord"] = { 57.4, 48.6, 539 },
 								["g"] = {
-									i(113571), -- Boots of the Shadowborn
+									i(113571),	-- Boots of the Shadowborn
 								},
 							},
 							{	-- Killmaw
@@ -217,7 +217,7 @@ _.Zones =
 								["isDaily"] = true,
 								["coord"] = { 29.6, 51.0, 539 },
 								["g"] = {
-									i(119369), -- Malgosh's Coif 
+									i(119369),	-- Malgosh's Coif 
 								},
 							},
 							{	-- Master Sergeant Milgra
@@ -285,7 +285,7 @@ _.Zones =
 								["questID"] = 35553,
 								["coord"] = { 48.8, 22.7, 539 },
 								["g"] = {
-									i(113542), -- Whispers of Rai'Vosh Toy
+									i(113542),	-- Whispers of Rai'Vosh Toy
 								},
 							},
 							{	-- Rockhoof
@@ -335,7 +335,7 @@ _.Zones =
 								["questID"] = 35580,
 								["coord"] = { 55.3, 74.8, 539 },
 								["g"] = {
-									i(117550), -- Angry Beehive Toy
+									i(117550),	-- Angry Beehive Toy
 								},
 							},
 							{	-- Veloss
@@ -385,7 +385,7 @@ _.Zones =
 									{ 48.6, 66.6, 539 },
 								},
 								["g"] = {
-									i(113570), -- Ancient's Bloom Toy
+									i(113570),	-- Ancient's Bloom Toy
 								},
 							},
 						},

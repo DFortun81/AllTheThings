@@ -24,7 +24,7 @@ _.WorldDrops =
 						},
 					},
 				}),
-				n(-182, { -- Enchanting
+				n(-182, {	-- Enchanting
 					i(141919),	-- Formula: Enchant Neck - Mark of the Ancient Priestess (Rank 3)
 					i(128610),	-- Formula: Enchant Neck - Mark of the Claw (Rank 3)
 					{	-- Formula: Enchant Neck - Mark of the Heavy Hide (Rank 2)

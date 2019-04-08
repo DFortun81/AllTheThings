@@ -4,9 +4,9 @@
 
 _.Achievements =
 {
-	n(-9957, { -- Exploration
+	n(-9957, {	-- Exploration
 		["groups"] = {
-			n(-9976, { -- Kalimdor
+			n(-9976, {	-- Kalimdor
 				["groups"] = {
 					ach(845, {	-- Explore Ashenvale
 						crit(1),	-- The Zoram Strand

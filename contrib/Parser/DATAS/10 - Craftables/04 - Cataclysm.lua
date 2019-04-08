@@ -3,10 +3,10 @@
 -----------------------------------------------------
 _.Craftables =
 {
-	tier(4, { -- Cataclysm
+	tier(4, {	-- Cataclysm
 		n(-180, {	-- Alchemy
-			n(-160, { -- Mounts
-				i(65891), -- Vial of the Sands
+			n(-160, {	-- Mounts
+				i(65891),	-- Vial of the Sands
 			}),
 			i(58488, {	-- Potion of Treasure Finding
 				["groups"] = {
@@ -314,7 +314,7 @@ _.Craftables =
 			}),
 		}),
 		n(-182, { 	-- Enchanting
-			n(-25, { -- Pet Battles
+			n(-25, {	-- Pet Battles
 				i(67274),	-- Enchanted Lantern
 				i(67275),	-- Magic Lamp
 			}),
@@ -354,7 +354,7 @@ _.Craftables =
 		}),
 		n(-185, { 	-- Inscription
 		-- Reviewed and updated as of 11.21.2018 BfA 8.0
-			n(-491, { -- Tarot Cards
+			n(-491, {	-- Tarot Cards
 				sp(86615, {	-- Darkmoon Card of Destruction
 					i(61988, {["f"] = 55}),    -- Ace of embers
 					i(61989, {["f"] = 55}),    -- 2 of embers

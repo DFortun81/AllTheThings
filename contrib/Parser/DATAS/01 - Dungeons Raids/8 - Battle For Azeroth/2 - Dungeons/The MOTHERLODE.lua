@@ -2,10 +2,10 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 _.Instances = { tier(8, {	-- Battle For Azeroth
-	inst(1012, { -- The MOTHERLODE!!
+	inst(1012, {	-- The MOTHERLODE!!
 		["lvl"] = 110,
 		["maps"] = {
-			1010, -- The Motherlode
+			1010,	-- The Motherlode
 		},
 		["groups"] = {
 			n(-34, {	-- World Quests
@@ -23,10 +23,10 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					}),
 				}),
 			}),
-			d(1, { -- Normal
-				e(2109, { -- Coin-Operated Crowd Pummeler
+			d(1, {	-- Normal
+				e(2109, {	-- Coin-Operated Crowd Pummeler
 					["crs"] = {
-						129214, -- Coin-Operated Crowd Pummeler
+						129214,	-- Coin-Operated Crowd Pummeler
 					},
 					["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						i(159638),	-- Electro-Arm Bludgeoner
@@ -39,9 +39,9 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						i(168153),	-- Coin Return Flipper
 					}),
 				}),
-				e(2114, { -- Azerokk
+				e(2114, {	-- Azerokk
 					["crs"] = {
-						129227, -- Azerokk
+						129227,	-- Azerokk
 					},
 					["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						i(158357),	-- Bindings of Enraged Earth
@@ -57,9 +57,9 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						i(168136),	-- Azerokk's Fist
 					}),
 				}),
-				e(2115, { -- Rixxa Fluxflame
+				e(2115, {	-- Rixxa Fluxflame
 					["crs"] = {
-						129231, -- Rixxa Fluxflame
+						129231,	-- Rixxa Fluxflame
 					},
 					["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						i(159639),	-- P.A.C.I.F.I.S.T.  Mk7
@@ -71,10 +71,10 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						i(159235),	-- Deranged Alchemist's Slippers
 					}),
 				}),
-				e(2116, { -- Mogul Razdunk
+				e(2116, {	-- Mogul Razdunk
 					["crs"] = {
 						129232,	-- Mogul Razdunk
-						132713, -- Mogul Razdunk
+						132713,	-- Mogul Razdunk
 					},
 					["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						ach(12844),  -- The MOTHERLODE!!
@@ -90,12 +90,12 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					}),
 				}),
 			}),
-			d(2, { -- Heroic
+			d(2, {	-- Heroic
 				["lvl"] = 120,
 				["groups"] = {
-					e(2109, { -- Coin-Operated Crowd Pummeler
+					e(2109, {	-- Coin-Operated Crowd Pummeler
 						["crs"] = {
-							129214, -- Coin-Operated Crowd Pummeler
+							129214,	-- Coin-Operated Crowd Pummeler
 						},
 						["groups"] = {
 							i(159638),	-- Electro-Arm Bludgeoner
@@ -108,9 +108,9 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							i(168153),	-- Coin Return Flipper
 						},
 					}),
-					e(2114, { -- Azerokk
+					e(2114, {	-- Azerokk
 						["crs"] = {
-							129227, -- Azerokk
+							129227,	-- Azerokk
 						},
 						["groups"] = {
 							i(158357),	-- Bindings of Enraged Earth
@@ -126,9 +126,9 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							i(168136),	-- Azerokk's Fist
 						},
 					}),
-					e(2115, { -- Rixxa Fluxflame
+					e(2115, {	-- Rixxa Fluxflame
 						["crs"] = {
-							129231, -- Rixxa Fluxflame
+							129231,	-- Rixxa Fluxflame
 						},
 						["groups"] = {
 							i(159639),	-- P.A.C.I.F.I.S.T.  Mk7
@@ -140,10 +140,10 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							i(159235),	-- Deranged Alchemist's Slippers
 						},
 					}),
-					e(2116, { -- Mogul Razdunk
+					e(2116, {	-- Mogul Razdunk
 						["crs"] = {
 							129232,	-- Mogul Razdunk
-							132713, -- Mogul Razdunk
+							132713,	-- Mogul Razdunk
 						},
 						["groups"] = {
 							ach(12845),	-- Heroic: The MOTHERLODE!!
@@ -160,12 +160,12 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					}),
 				},
 			}),
-			d(23, { -- Mythic
+			d(23, {	-- Mythic
 				["lvl"] = 120,
 				["groups"] = {
-					e(2109, { -- Coin-Operated Crowd Pummeler
+					e(2109, {	-- Coin-Operated Crowd Pummeler
 						["crs"] = {
-							129214, -- Coin-Operated Crowd Pummeler
+							129214,	-- Coin-Operated Crowd Pummeler
 						},
 						["groups"] = {
 							ach(12855),	-- Pitch Invasion
@@ -179,9 +179,9 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							i(168153),	-- Coin Return Flipper
 						},
 					}),
-					e(2114, { -- Azerokk
+					e(2114, {	-- Azerokk
 						["crs"] = {
-							129227, -- Azerokk
+							129227,	-- Azerokk
 						},
 						["groups"] = {
 							i(158357),	-- Bindings of Enraged Earth
@@ -197,9 +197,9 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							i(168136),	-- Azerokk's Fist
 						},
 					}),
-					e(2115, { -- Rixxa Fluxflame
+					e(2115, {	-- Rixxa Fluxflame
 						["crs"] = {
-							129231, -- Rixxa Fluxflame
+							129231,	-- Rixxa Fluxflame
 						},
 						["groups"] = {
 							i(159639),	-- P.A.C.I.F.I.S.T.  Mk7
@@ -211,16 +211,16 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							i(159235),	-- Deranged Alchemist's Slippers
 						},
 					}),
-					e(2116, { -- Mogul Razdunk
+					e(2116, {	-- Mogul Razdunk
 						["crs"] = {
 							129232,	-- Mogul Razdunk
-							132713, -- Mogul Razdunk
+							132713,	-- Mogul Razdunk
 						},
 						["groups"] = {
 							ach(12846),	-- Mythic: The MOTHERELODE!!
 							ach(12854),	-- Ready for Raiding VI
 							i(162520),	-- Recipe: Mystical Cauldron (Rank 2)
-							i(161135, { -- Schematic: MechaMogul Mk2
+							i(161135, {	-- Schematic: MechaMogul Mk2
 								["spellID"] = 274621,
 							}),
 							i(159641),	-- G3T-00t

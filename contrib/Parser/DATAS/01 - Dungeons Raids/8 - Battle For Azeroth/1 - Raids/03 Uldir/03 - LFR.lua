@@ -42,7 +42,7 @@ _.Instances =
 								["achievementID"] = 12521,	 -- Halls of Containment
 								["g"] = {
 									{	--  Taloc
-										["encounterID"] = 2168, -- Taloc
+										["encounterID"] = 2168,	-- Taloc
 										["crs"] = {
 											137119,	-- Taloc
 											138959,	-- Coalesced Blood

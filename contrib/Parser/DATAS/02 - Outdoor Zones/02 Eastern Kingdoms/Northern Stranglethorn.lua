@@ -62,7 +62,7 @@ _.Zones =
 								-- TODO: Add this quest chain: https://classicdb.ch/?quest=8182
 							},
 							{
-								["itemID"] = 19802, -- The Heart of Hakkar
+								["itemID"] = 19802,	-- The Heart of Hakkar
 								["questID"] = 8183,	-- The Heart of Hakkar
 								["u"] = 2,			-- Legacy Item
 								["groups"] = {
@@ -73,7 +73,7 @@ _.Zones =
 							},
 							cl(1, {		-- Warrior
 								{
-									["questID"] = 8079, -- Paragon's of Power: The Vindicator's Breastplate
+									["questID"] = 8079,	-- Paragon's of Power: The Vindicator's Breastplate
 									["qg"] = 14902,		-- Quest Giver: Jin'rokh the Breaker
 									["classes"] = {1},	-- Warrior
 									["u"] = 40,			-- Legacy Content
@@ -82,7 +82,7 @@ _.Zones =
 									},
 								},
 								{
-									["questID"] = 8058, -- Paragon's of Power: The Vindicator's Armguards
+									["questID"] = 8058,	-- Paragon's of Power: The Vindicator's Armguards
 									["qg"] = 14902,		-- Quest Giver: Jin'rokh the Breaker
 									["classes"] = {1},	-- Warrior
 									["u"] = 40,			-- Legacy Content
@@ -91,7 +91,7 @@ _.Zones =
 									},
 								},
 								{
-									["questID"] = 8078, -- Paragon's of Power: The Vindicator's Belt
+									["questID"] = 8078,	-- Paragon's of Power: The Vindicator's Belt
 									["qg"] = 14902,		-- Quest Giver: Jin'rokh the Breaker
 									["classes"] = {1},	-- Warrior
 									["u"] = 40,			-- Legacy Content
@@ -100,7 +100,7 @@ _.Zones =
 									},
 								},
 								{
-									["questID"] = 8041, -- Strength of Mount Mugamba [Friendly]
+									["questID"] = 8041,	-- Strength of Mount Mugamba [Friendly]
 									["qg"] = 14902,		-- Quest Giver: Jin'rokh the Breaker
 									["classes"] = {1},	-- Warrior
 									["u"] = 40,			-- Legacy Content
@@ -109,7 +109,7 @@ _.Zones =
 									},
 								},
 								{
-									["questID"] = 8042, -- Strength of Mount Mugamba [Honored]
+									["questID"] = 8042,	-- Strength of Mount Mugamba [Honored]
 									["qg"] = 14902,		-- Quest Giver: Jin'rokh the Breaker
 									["classes"] = {1},	-- Warrior
 									["u"] = 40,			-- Legacy Content
@@ -118,7 +118,7 @@ _.Zones =
 									},
 								},
 								{
-									["questID"] = 8043, -- Strength of Mount Mugamba [Revered]
+									["questID"] = 8043,	-- Strength of Mount Mugamba [Revered]
 									["qg"] = 14902,		-- Quest Giver: Jin'rokh the Breaker
 									["classes"] = {1},	-- Warrior
 									["u"] = 40,			-- Legacy Content
@@ -127,7 +127,7 @@ _.Zones =
 									},
 								},
 								{
-									["questID"] = 8044, -- The Rage of Mount Mugamba
+									["questID"] = 8044,	-- The Rage of Mount Mugamba
 									["qg"] = 14902,		-- Quest Giver: Jin'rokh the Breaker
 									["classes"] = {1},	-- Warrior
 									["u"] = 40,			-- Legacy Content
@@ -138,7 +138,7 @@ _.Zones =
 							}),
 							cl(2, {		-- Paladin
 								{
-									["questID"] = 8055, -- Paragon's of Power: The Freethinker's Breastplate
+									["questID"] = 8055,	-- Paragon's of Power: The Freethinker's Breastplate
 									["qg"] = 14902,		-- Quest Giver: Jin'rokh the Breaker
 									["classes"] = {2},	-- Paladin
 									["u"] = 40,			-- Legacy Content
@@ -147,7 +147,7 @@ _.Zones =
 									},
 								},
 								{
-									["questID"] = 8053, -- Paragon's of Power: The Freethinker's Armguards
+									["questID"] = 8053,	-- Paragon's of Power: The Freethinker's Armguards
 									["qg"] = 14902,		-- Quest Giver: Jin'rokh the Breaker
 									["classes"] = {2},	-- Paladin
 									["u"] = 40,			-- Legacy Content
@@ -156,7 +156,7 @@ _.Zones =
 									},
 								},
 								{
-									["questID"] = 8054, -- Paragon's of Power: The Freethinker's Belt
+									["questID"] = 8054,	-- Paragon's of Power: The Freethinker's Belt
 									["qg"] = 14902,		-- Quest Giver: Jin'rokh the Breaker
 									["classes"] = {2},	-- Paladin
 									["u"] = 40,			-- Legacy Content
@@ -165,7 +165,7 @@ _.Zones =
 									},
 								},
 								{
-									["questID"] = 8045, -- The Heathen's Brand [Friendly]
+									["questID"] = 8045,	-- The Heathen's Brand [Friendly]
 									["qg"] = 14902,		-- Quest Giver: Jin'rokh the Breaker
 									["classes"] = {2},	-- Paladin
 									["u"] = 40,			-- Legacy Content
@@ -174,7 +174,7 @@ _.Zones =
 									},
 								},
 								{
-									["questID"] = 8046, -- The Heathen's Brand [Honored]
+									["questID"] = 8046,	-- The Heathen's Brand [Honored]
 									["qg"] = 14902,		-- Quest Giver: Jin'rokh the Breaker
 									["classes"] = {2},	-- Paladin
 									["u"] = 40,			-- Legacy Content
@@ -183,7 +183,7 @@ _.Zones =
 									},
 								},
 								{
-									["questID"] = 8047, -- The Heathen's Brand [Revered]
+									["questID"] = 8047,	-- The Heathen's Brand [Revered]
 									["qg"] = 14902,		-- Quest Giver: Jin'rokh the Breaker
 									["classes"] = {2},	-- Paladin
 									["u"] = 40,			-- Legacy Content
@@ -192,7 +192,7 @@ _.Zones =
 									},
 								},
 								{
-									["questID"] = 8048, -- The Hero's Brand
+									["questID"] = 8048,	-- The Hero's Brand
 									["qg"] = 14902,		-- Quest Giver: Jin'rokh the Breaker
 									["classes"] = {2},	-- Paladin
 									["u"] = 40,			-- Legacy Content
@@ -203,7 +203,7 @@ _.Zones =
 							}),
 							cl(3, {		-- Hunter
 								{
-									["questID"] = 8067, -- Paragon's of Power: The Predator's Mantle
+									["questID"] = 8067,	-- Paragon's of Power: The Predator's Mantle
 									["qg"] = 14905,		-- Quest Giver: Falthir the Sightless
 									["classes"] = {3},	-- Hunter
 									["u"] = 40,			-- Legacy Content
@@ -212,7 +212,7 @@ _.Zones =
 									},
 								},
 								{
-									["questID"] = 8062, -- Paragon's of Power: The Predator's Bracers
+									["questID"] = 8062,	-- Paragon's of Power: The Predator's Bracers
 									["qg"] = 14905,		-- Quest Giver: Falthir the Sightless
 									["classes"] = {3},	-- Hunter
 									["u"] = 40,			-- Legacy Content
@@ -221,7 +221,7 @@ _.Zones =
 									},
 								},
 								{
-									["questID"] = 8066, -- Paragon's of Power: The Predator's Belt
+									["questID"] = 8066,	-- Paragon's of Power: The Predator's Belt
 									["qg"] = 14905,		-- Quest Giver: Falthir the Sightless
 									["classes"] = {3},	-- Hunter
 									["u"] = 40,			-- Legacy Content
@@ -230,7 +230,7 @@ _.Zones =
 									},
 								},
 								{
-									["questID"] = 8145, -- The Maelstrom's Tendril [Friendly]
+									["questID"] = 8145,	-- The Maelstrom's Tendril [Friendly]
 									["qg"] = 14905,		-- Quest Giver: Falthir the Sightless
 									["classes"] = {3},	-- Hunter
 									["u"] = 40,			-- Legacy Content
@@ -239,7 +239,7 @@ _.Zones =
 									},
 								},
 								{
-									["questID"] = 8146, -- The Maelstrom's Tendril [Honored]
+									["questID"] = 8146,	-- The Maelstrom's Tendril [Honored]
 									["qg"] = 14905,		-- Quest Giver: Falthir the Sightless
 									["classes"] = {3},	-- Hunter
 									["u"] = 40,			-- Legacy Content
@@ -248,7 +248,7 @@ _.Zones =
 									},
 								},
 								{
-									["questID"] = 8147, -- The Maelstrom's Tendril [Revered]
+									["questID"] = 8147,	-- The Maelstrom's Tendril [Revered]
 									["qg"] = 14905,		-- Quest Giver: Falthir the Sightless
 									["classes"] = {3},	-- Hunter
 									["u"] = 40,			-- Legacy Content
@@ -257,7 +257,7 @@ _.Zones =
 									},
 								},
 								{
-									["questID"] = 8148, -- The Maelstrom's Wrath
+									["questID"] = 8148,	-- The Maelstrom's Wrath
 									["qg"] = 14905,		-- Quest Giver: Falthir the Sightless
 									["classes"] = {3},	-- Hunter
 									["u"] = 40,			-- Legacy Content
@@ -268,7 +268,7 @@ _.Zones =
 							}),
 							cl(4, { 	-- Rogue
 								{
-									["questID"] = 8072, -- Paragon's of Power: The Madcap's Mantle
+									["questID"] = 8072,	-- Paragon's of Power: The Madcap's Mantle
 									["qg"] = 14905,		-- Quest Giver: Falthir the Sightless
 									["classes"] = {4},	-- Rogue
 									["u"] = 40,			-- Legacy Content
@@ -277,7 +277,7 @@ _.Zones =
 									},
 								},
 								{
-									["questID"] = 8073, -- Paragon's of Power: The Madcap's Tunic
+									["questID"] = 8073,	-- Paragon's of Power: The Madcap's Tunic
 									["qg"] = 14905,		-- Quest Giver: Falthir the Sightless
 									["classes"] = {4},	-- Rogue
 									["u"] = 40,			-- Legacy Content
@@ -286,7 +286,7 @@ _.Zones =
 									},
 								},
 								{
-									["questID"] = 8063, -- Paragon's of Power: The Madcap's Bracers
+									["questID"] = 8063,	-- Paragon's of Power: The Madcap's Bracers
 									["qg"] = 14905,		-- Quest Giver: Falthir the Sightless
 									["classes"] = {4},	-- Rogue
 									["u"] = 40,			-- Legacy Content
@@ -295,7 +295,7 @@ _.Zones =
 									},
 								},
 								{
-									["questID"] = 8141, -- Zandalrian Shadow Talisman [Friendly]
+									["questID"] = 8141,	-- Zandalrian Shadow Talisman [Friendly]
 									["qg"] = 14905,		-- Quest Giver: Falthir the Sightless
 									["classes"] = {4},	-- Rogue
 									["u"] = 40,			-- Legacy Content
@@ -304,7 +304,7 @@ _.Zones =
 									},
 								},
 								{
-									["questID"] = 8142, -- Zandalrian Shadow Talisman [Honored]
+									["questID"] = 8142,	-- Zandalrian Shadow Talisman [Honored]
 									["qg"] = 14905,		-- Quest Giver: Falthir the Sightless
 									["classes"] = {4},	-- Rogue
 									["u"] = 40,			-- Legacy Content
@@ -313,7 +313,7 @@ _.Zones =
 									},
 								},
 								{
-									["questID"] = 8143, -- Zandalrian Shadow Talisman [Revered]
+									["questID"] = 8143,	-- Zandalrian Shadow Talisman [Revered]
 									["qg"] = 14905,		-- Quest Giver: Falthir the Sightless
 									["classes"] = {4},	-- Rogue
 									["u"] = 40,			-- Legacy Content
@@ -322,7 +322,7 @@ _.Zones =
 									},
 								},
 								{
-									["questID"] = 8144, -- Zandalrian Shadow Mastery Talisman
+									["questID"] = 8144,	-- Zandalrian Shadow Mastery Talisman
 									["qg"] = 14905,		-- Quest Giver: Falthir the Sightless
 									["classes"] = {4},	-- Rogue
 									["u"] = 40,			-- Legacy Content
@@ -333,7 +333,7 @@ _.Zones =
 							}),
 							cl(5, { 	-- Priest
 								{
-									["questID"] = 8071, -- Paragon's of Power: The Confessor's Mantle
+									["questID"] = 8071,	-- Paragon's of Power: The Confessor's Mantle
 									["qg"] = 14903,		-- Quest Giver: Al'tabim the All-Seeing
 									["classes"] = {5},	-- Priest
 									["u"] = 40,			-- Legacy Content
@@ -342,7 +342,7 @@ _.Zones =
 									},
 								},
 								{
-									["questID"] = 8061, -- Paragon's of Power: The Confessor's Wraps
+									["questID"] = 8061,	-- Paragon's of Power: The Confessor's Wraps
 									["qg"] = 14903,		-- Quest Giver: Al'tabim the All-Seeing
 									["classes"] = {5},	-- Priest
 									["u"] = 40,			-- Legacy Content
@@ -351,7 +351,7 @@ _.Zones =
 									},
 								},
 								{
-									["questID"] = 8070, -- Paragon's of Power: The Confessor's Bindings
+									["questID"] = 8070,	-- Paragon's of Power: The Confessor's Bindings
 									["qg"] = 14903,		-- Quest Giver: Al'tabim the All-Seeing
 									["classes"] = {5},	-- Priest
 									["u"] = 40,			-- Legacy Content
@@ -360,7 +360,7 @@ _.Zones =
 									},
 								},
 								{
-									["questID"] = 8049, -- The Eye of Zuldazar [Friendly]
+									["questID"] = 8049,	-- The Eye of Zuldazar [Friendly]
 									["qg"] = 14903,		-- Quest Giver: Al'tabim the All-Seeing
 									["classes"] = {5},	-- Priest
 									["u"] = 40,			-- Legacy Content
@@ -369,7 +369,7 @@ _.Zones =
 									},
 								},
 								{
-									["questID"] = 8050, -- The Eye of Zuldazar [Honored]
+									["questID"] = 8050,	-- The Eye of Zuldazar [Honored]
 									["qg"] = 14903,		-- Quest Giver: Al'tabim the All-Seeing
 									["classes"] = {5},	-- Priest
 									["u"] = 40,			-- Legacy Content
@@ -378,7 +378,7 @@ _.Zones =
 									},
 								},
 								{
-									["questID"] = 8051, -- The Eye of Zuldazar [Revered]
+									["questID"] = 8051,	-- The Eye of Zuldazar [Revered]
 									["qg"] = 14903,		-- Quest Giver: Al'tabim the All-Seeing
 									["classes"] = {5},	-- Priest
 									["u"] = 40,			-- Legacy Content
@@ -387,7 +387,7 @@ _.Zones =
 									},
 								},
 								{
-									["questID"] = 8052, -- The All-Seeing Eye of Zuldazar
+									["questID"] = 8052,	-- The All-Seeing Eye of Zuldazar
 									["qg"] = 14903,		-- Quest Giver: Al'tabim the All-Seeing
 									["classes"] = {5},	-- Priest
 									["u"] = 40,			-- Legacy Content
@@ -398,7 +398,7 @@ _.Zones =
 							}),
 							cl(7, {		-- Shaman
 								{
-									["questID"] = 8075, -- Paragons of Power: The Augur's Hauberk
+									["questID"] = 8075,	-- Paragons of Power: The Augur's Hauberk
 									["qg"] = 14904,		-- Quest Giver: Maywiki of Zuldazar
 									["classes"] = {7},	-- Shaman
 									["u"] = 40,			-- Legacy Content
@@ -407,7 +407,7 @@ _.Zones =
 									},
 								},
 								{
-									["questID"] = 8056, -- Paragons of Power: The Augur's Bracers
+									["questID"] = 8056,	-- Paragons of Power: The Augur's Bracers
 									["qg"] = 14904,		-- Quest Giver: Maywiki of Zuldazar
 									["classes"] = {7},	-- Shaman
 									["u"] = 40,			-- Legacy Content
@@ -416,7 +416,7 @@ _.Zones =
 									},
 								},
 								{
-									["questID"] = 8074, -- Paragons of Power: The Augur's Belt
+									["questID"] = 8074,	-- Paragons of Power: The Augur's Belt
 									["qg"] = 14904,		-- Quest Giver: Maywiki of Zuldazar
 									["classes"] = {7},	-- Shaman
 									["u"] = 40,			-- Legacy Content
@@ -425,7 +425,7 @@ _.Zones =
 									},
 								},
 								{
-									["questID"] = 8116, -- Vision of Voodress [Friendly]
+									["questID"] = 8116,	-- Vision of Voodress [Friendly]
 									["qg"] = 14904,		-- Quest Giver: Maywiki of Zuldazar
 									["classes"] = {7},	-- Shaman
 									["u"] = 40,			-- Legacy Content
@@ -434,7 +434,7 @@ _.Zones =
 									},
 								},
 								{
-									["questID"] = 8117, -- Vision of Voodress [Honored]
+									["questID"] = 8117,	-- Vision of Voodress [Honored]
 									["qg"] = 14904,		-- Quest Giver: Maywiki of Zuldazar
 									["classes"] = {7},	-- Shaman
 									["u"] = 40,			-- Legacy Content
@@ -443,7 +443,7 @@ _.Zones =
 									},
 								},
 								{
-									["questID"] = 8118, -- Vision of Voodress [Revered]
+									["questID"] = 8118,	-- Vision of Voodress [Revered]
 									["qg"] = 14904,		-- Quest Giver: Maywiki of Zuldazar
 									["classes"] = {7},	-- Shaman
 									["u"] = 40,			-- Legacy Content
@@ -452,7 +452,7 @@ _.Zones =
 									},
 								},
 								{
-									["questID"] = 8119, -- The Unmarred Vision of Voodress
+									["questID"] = 8119,	-- The Unmarred Vision of Voodress
 									["qg"] = 14904,		-- Quest Giver: Maywiki of Zuldazar
 									["classes"] = {7},	-- Shaman
 									["u"] = 40,			-- Legacy Content
@@ -463,7 +463,7 @@ _.Zones =
 							}),
 							cl(8, { 	-- Mage
 								{
-									["questID"] = 8068, -- Paragon's of Power: The Illusionist's Mantle
+									["questID"] = 8068,	-- Paragon's of Power: The Illusionist's Mantle
 									["qg"] = 14903,		-- Quest Giver: Al'tabim the All-Seeing
 									["classes"] = {8},	-- Mage
 									["u"] = 40,			-- Legacy Content
@@ -472,7 +472,7 @@ _.Zones =
 									},
 								},
 								{
-									["questID"] = 8069, -- Paragon's of Power: The Illusionist's Robes
+									["questID"] = 8069,	-- Paragon's of Power: The Illusionist's Robes
 									["qg"] = 14903,		-- Quest Giver: Al'tabim the All-Seeing
 									["classes"] = {8},	-- Mage
 									["u"] = 40,			-- Legacy Content
@@ -481,7 +481,7 @@ _.Zones =
 									},
 								},
 								{
-									["questID"] = 8060, -- Paragon's of Power: The Illusionist's Wraps
+									["questID"] = 8060,	-- Paragon's of Power: The Illusionist's Wraps
 									["qg"] = 14903,		-- Quest Giver: Al'tabim the All-Seeing
 									["classes"] = {8},	-- Mage
 									["u"] = 40,			-- Legacy Content
@@ -490,7 +490,7 @@ _.Zones =
 									},
 								},
 								{
-									["questID"] = 8101, -- The Pebble of Kajaro [Friendly]
+									["questID"] = 8101,	-- The Pebble of Kajaro [Friendly]
 									["qg"] = 14903,		-- Quest Giver: Al'tabim the All-Seeing
 									["classes"] = {8},	-- Mage
 									["u"] = 40,			-- Legacy Content
@@ -499,7 +499,7 @@ _.Zones =
 									},
 								},
 								{
-									["questID"] = 8102, -- The Pebble of Kajaro [Honored]
+									["questID"] = 8102,	-- The Pebble of Kajaro [Honored]
 									["qg"] = 14903,		-- Quest Giver: Al'tabim the All-Seeing
 									["classes"] = {8},	-- Mage
 									["u"] = 40,			-- Legacy Content
@@ -508,7 +508,7 @@ _.Zones =
 									},
 								},
 								{
-									["questID"] = 8103, -- The Pebble of Kajaro [Revered]
+									["questID"] = 8103,	-- The Pebble of Kajaro [Revered]
 									["qg"] = 14903,		-- Quest Giver: Al'tabim the All-Seeing
 									["classes"] = {8},	-- Mage
 									["u"] = 40,			-- Legacy Content
@@ -517,7 +517,7 @@ _.Zones =
 									},
 								},
 								{
-									["questID"] = 8104, -- The Jewel of Kajaro
+									["questID"] = 8104,	-- The Jewel of Kajaro
 									["qg"] = 14903,		-- Quest Giver: Al'tabim the All-Seeing
 									["classes"] = {8},	-- Mage
 									["u"] = 40,			-- Legacy Content
@@ -528,7 +528,7 @@ _.Zones =
 							}),
 							cl(9, { 	-- Warlock
 								{
-									["questID"] = 8076, -- Paragons of Power: The Demoniac's Mantle
+									["questID"] = 8076,	-- Paragons of Power: The Demoniac's Mantle
 									["qg"] = 14903,		-- Quest Giver: Al'tabim the All-Seeing
 									["classes"] = {9},	-- Warlock
 									["u"] = 40,			-- Legacy Content
@@ -537,7 +537,7 @@ _.Zones =
 									},
 								},
 								{
-									["questID"] = 8077, -- Paragons of Power: The Demoniac's Robes
+									["questID"] = 8077,	-- Paragons of Power: The Demoniac's Robes
 									["qg"] = 14903,		-- Quest Giver: Al'tabim the All-Seeing
 									["classes"] = {9},	-- Warlock
 									["u"] = 40,			-- Legacy Content
@@ -546,7 +546,7 @@ _.Zones =
 									},
 								},
 								{
-									["questID"] = 8059, -- Paragons of Power: The Demoniac's Wraps
+									["questID"] = 8059,	-- Paragons of Power: The Demoniac's Wraps
 									["qg"] = 14903,		-- Quest Giver: Al'tabim the All-Seeing
 									["classes"] = {9},	-- Warlock
 									["u"] = 40,			-- Legacy Content
@@ -555,7 +555,7 @@ _.Zones =
 									},
 								},
 								{
-									["questID"] = 8106, -- Kezan's Taint [Friendly]
+									["questID"] = 8106,	-- Kezan's Taint [Friendly]
 									["qg"] = 14903,		-- Quest Giver: Al'tabim the All-Seeing
 									["classes"] = {9},	-- Warlock
 									["u"] = 40,			-- Legacy Content
@@ -564,7 +564,7 @@ _.Zones =
 									},
 								},
 								{
-									["questID"] = 8107, -- Kezan's Taint [Honored]
+									["questID"] = 8107,	-- Kezan's Taint [Honored]
 									["qg"] = 14903,		-- Quest Giver: Al'tabim the All-Seeing
 									["classes"] = {9},	-- Warlock
 									["u"] = 40,			-- Legacy Content
@@ -573,7 +573,7 @@ _.Zones =
 									},
 								},
 								{
-									["questID"] = 8108, -- Kezan's Taint [Revered]
+									["questID"] = 8108,	-- Kezan's Taint [Revered]
 									["qg"] = 14903,		-- Quest Giver: Al'tabim the All-Seeing
 									["classes"] = {9},	-- Warlock
 									["u"] = 40,			-- Legacy Content
@@ -582,7 +582,7 @@ _.Zones =
 									},
 								},
 								{
-									["questID"] = 8109, -- Kezan's Unstoppable Taint
+									["questID"] = 8109,	-- Kezan's Unstoppable Taint
 									["qg"] = 14903,		-- Quest Giver: Al'tabim the All-Seeing
 									["classes"] = {9},	-- Warlock
 									["u"] = 40,			-- Legacy Content
@@ -593,7 +593,7 @@ _.Zones =
 							}),
 							cl(11, { 	-- Druid
 								{
-									["questID"] = 8065, -- Paragons of Power: The Haruspex's Tunic
+									["questID"] = 8065,	-- Paragons of Power: The Haruspex's Tunic
 									["qg"] = 14904,		-- Quest Giver: Maywiki of Zuldazar
 									["classes"] = {9},	-- Warlock
 									["u"] = 40,			-- Legacy Content
@@ -602,7 +602,7 @@ _.Zones =
 									},
 								},
 								{
-									["questID"] = 8057, -- Paragons of Power: The Haruspex's Bracers
+									["questID"] = 8057,	-- Paragons of Power: The Haruspex's Bracers
 									["qg"] = 14904,		-- Quest Giver: Maywiki of Zuldazar
 									["classes"] = {9},	-- Warlock
 									["u"] = 40,			-- Legacy Content
@@ -611,7 +611,7 @@ _.Zones =
 									},
 								},
 								{
-									["questID"] = 8064, -- Paragons of Power: The Haruspex's Belt
+									["questID"] = 8064,	-- Paragons of Power: The Haruspex's Belt
 									["qg"] = 14904,		-- Quest Giver: Maywiki of Zuldazar
 									["classes"] = {9},	-- Warlock
 									["u"] = 40,			-- Legacy Content
@@ -620,7 +620,7 @@ _.Zones =
 									},
 								},
 								{
-									["questID"] = 8110, -- Enchanted South Seas Kelp [Friendly]
+									["questID"] = 8110,	-- Enchanted South Seas Kelp [Friendly]
 									["qg"] = 14904,		-- Quest Giver: Maywiki of Zuldazar
 									["classes"] = {9},	-- Warlock
 									["u"] = 40,			-- Legacy Content
@@ -629,7 +629,7 @@ _.Zones =
 									},
 								},
 								{
-									["questID"] = 8111, -- Enchanted South Seas Kelp [Honored]
+									["questID"] = 8111,	-- Enchanted South Seas Kelp [Honored]
 									["qg"] = 14904,		-- Quest Giver: Maywiki of Zuldazar
 									["classes"] = {9},	-- Warlock
 									["u"] = 40,			-- Legacy Content
@@ -638,7 +638,7 @@ _.Zones =
 									},
 								},
 								{
-									["questID"] = 8112, -- Enchanted South Seas Kelp [Revered]
+									["questID"] = 8112,	-- Enchanted South Seas Kelp [Revered]
 									["qg"] = 14904,		-- Quest Giver: Maywiki of Zuldazar
 									["classes"] = {9},	-- Warlock
 									["u"] = 40,			-- Legacy Content
@@ -647,7 +647,7 @@ _.Zones =
 									},
 								},
 								{
-									["questID"] = 8113, -- Pristine Enchanted South Seas Kelp
+									["questID"] = 8113,	-- Pristine Enchanted South Seas Kelp
 									["qg"] = 14904,		-- Quest Giver: Maywiki of Zuldazar
 									["classes"] = {9},	-- Warlock
 									["u"] = 40,			-- Legacy Content
@@ -689,16 +689,16 @@ _.Zones =
 					ach(940),		-- The Green Hills of Stranglethorn
 				}),
 				n(-228, {	-- Flight Path
-					fp(593, { -- Bambala, Stranglethorn
+					fp(593, {	-- Bambala, Stranglethorn
 						["coord"] = { 62.4, 39.2 },
 					}),
-					fp(590, { -- Fort Livingston, Stranglethorn
+					fp(590, {	-- Fort Livingston, Stranglethorn
 						["coord"] = { 52.6, 66.2 },
 					}),
-					fp(20, { -- Grom'gol, Stranglethorn
+					fp(20, {	-- Grom'gol, Stranglethorn
 						["coord"] = { 39, 51.2 },
 					}),
-					fp(195, { -- Rebel Camp, Stranglethorn Vale
+					fp(195, {	-- Rebel Camp, Stranglethorn Vale
 						["coord"] = { 47.8, 11.8 },
 					}),
 				}),
@@ -712,7 +712,7 @@ _.Zones =
 					p(424), 	-- Roach
 					p(401), 	-- Strand Crab
 					p(405), 	-- Tree Python
-					qa(31728, { -- Bill Buckler
+					qa(31728, {	-- Bill Buckler
 						i(89125),	-- Sack of Pet Supplies
 					}),
 --					qg(63194, q(31852)),	-- Steven Lisbane (DAILY VERSION)
@@ -730,7 +730,7 @@ _.Zones =
 --					q(26764),	-- A New Low (REMOVED)
 					qg(43884, qa(26746)),	-- A Nose for This Sort of Thing
 --]]
-					qg(43884, qa(26747, { -- A Physical Specimen
+					qg(43884, qa(26747, {	-- A Physical Specimen
 						i(61064),	-- Electrostatic Legguards
 						i(61063),	-- Discarded Troll Leggings
 						i(61062),	-- Juju Belt
@@ -743,13 +743,13 @@ _.Zones =
 					qg(42814, qh(26404)),	-- Above My Pay Grade
 					qg(7406, q(3721)),	-- An OOX of Your Own
 --]]
-					qg(17094, qh( 9457, { -- An Unusual Patron
+					qg(17094, qh( 9457, {	-- An Unusual Patron
 						i(61093),	-- Junglewalker Boots
 						i(61092),	-- Monnions of Raw Power
 						i(61091),	-- Blade of Exotic Magic
 						i(131255),	-- Shouldersguards of Raw Power
 					})),
-					qg(739, qa(26732, { -- Bad Medicine
+					qg(739, qa(26732, {	-- Bad Medicine
 						i(61054),	-- Nimetz's Pauldrons
 						i(61053),	-- Cord of the Ascetic
 						i(61052),	-- Missionary's Leggings
@@ -759,19 +759,19 @@ _.Zones =
 					qg(52234, qa(29151)),	-- Bad Supplies
 					qg(52234, qh(29238)),	-- Bad Supplies
 --]]
-					qg(44017, qa(26775, { -- Be Raptor
+					qg(44017, qa(26775, {	-- Be Raptor
 						i(61079),	-- Belt of the High Shaman
 						i(61078),	-- Thaalia's Slippers
 						i(61077),	-- Jingle Spirits' Embrace
 						i(131599),	-- Waistguard of the High Shaman
 					})),
-					qg(42812, qh(26362, { -- Be Raptor
+					qg(42812, qh(26362, {	-- Be Raptor
 						i(61122),	-- Belt of the High Shaman
 						i(61121),	-- Hu'rula's Slippers
 						i(61120),	-- Jungle Spirits' Embrace
 						i(131515),	-- Waistguard of the High Shaman
 					})),
-					qg(715, q(208, { -- Big Game Hunter
+					qg(715, q(208, {	-- Big Game Hunter
 						i(61127),	-- Gloves of the Jungle King
 						i(61126),	-- Mantle of the White Tiger
 						i(61125),	-- Nesingwary's Sash
@@ -793,7 +793,7 @@ _.Zones =
 					qg(739, qa(26733)),	-- Control Sample
 					qg(42813, qh(26352)),	-- Cozzle's Plan
 --]]
-					qg(1422, qa(26744, { -- Deep Roots
+					qg(1422, qa(26744, {	-- Deep Roots
 						i(61066),	-- Well Crafted Leather Britches
 						i(61065),	-- Soft Cotton Armbands
 						i(61067),	-- Rebel Breastplate
@@ -803,7 +803,7 @@ _.Zones =
 					qg(52996, qh(29235)),	-- Defend Grom'gol
 					qg(52410, qa(29131)),	-- Defend the Rebel Camp
 --]]
-					qg(2495, q(26345, { -- Excelsior
+					qg(2495, q(26345, {	-- Excelsior
 						i(131892),	-- Excelsior Footwear
 						i(61106),	-- Excelsior Waders
 					})),
@@ -817,7 +817,7 @@ _.Zones =
 					}),
 					qg(44017, qa(26776)),	-- Ghaliri
 --]]
-					qg(2497, qh(26299, { -- Headhunting
+					qg(2497, qh(26299, {	-- Headhunting
 						i(61090),	-- Head Inspector's Gloves
 						i(61089),	-- Palm Frond Shoulderpads
 						i(61088),	-- Junglestrider Sandals
@@ -854,7 +854,7 @@ _.Zones =
 					qg(42813, qh(26304)),	-- Nighttime in the Jungle
 					qg(718, q(190)),	-- Panther Hunting
 --]]
-					qg(718, q(193, { -- Panther Mastery
+					qg(718, q(193, {	-- Panther Mastery
 						i(61109),	-- Bhag'thera's Roar
 						i(61108),	-- Shield of the Panther
 						i(61107),	-- Mantle of the Panther
@@ -869,7 +869,7 @@ _.Zones =
 					qg(43884, qa(26749)),	-- Priestess Thaalia
 					qg(715, q(194)),	-- Raptor Hunting
 --]]
-					qg(715, q(197, { -- Raptor Mastery
+					qg(715, q(197, {	-- Raptor Mastery
 						i(61111),	-- Belt of the Raptor
 						i(61110),	-- Tethis' Skull
 						i(131201),	-- Scale-Cord of the Raptor
@@ -879,16 +879,16 @@ _.Zones =
 					qg(715, q(196)),	-- Raptor Prowess
 					qg(715, q(195)),	-- Raptor Stalking
 --]]
-					qg(773, qa(26765, { -- Return to Corporal Kaleb
+					qg(773, qa(26765, {	-- Return to Corporal Kaleb
 						i(4124),	-- Cap of Harmony
 					})),
-					qg(43886, qa(26743, { -- Sacred to the Bloodscalp
+					qg(43886, qa(26743, {	-- Sacred to the Bloodscalp
 						i(61058),	-- Tsul'kalu's Strikers
 						i(61057),	-- Mahamba's Caress
 						i(61056),	-- Bloodscalp Sandals
 						i(131593),	-- Mahamba's Pauldrons
 					})),
-					qg(2519, qh(26305, { -- Saving Yenniku
+					qg(2519, qh(26305, {	-- Saving Yenniku
 						i(61102),	-- Nimboya's Legguards
 						i(61101),	-- Weavers of the Unending Tale
 						i(61100),	-- Stone Etcher
@@ -901,36 +901,36 @@ _.Zones =
 					qg(52980, qh(29221)),	-- Serpents and Poison
 					qg 2495(, q(26344)),	-- Some Assembly Required
 --]]
-					qa(29267, { -- Some Good Will Come (The Zandalar Representative questline)
-						i(68833), -- Panther Cub
+					qa(29267, {	-- Some Good Will Come (The Zandalar Representative questline)
+						i(68833),	-- Panther Cub
 					}),
-					qh(29268, { -- Some Good Will Come (The Zandalari Menace questline)
-						i(68833), -- Panther Cub
+					qh(29268, {	-- Some Good Will Come (The Zandalari Menace questline)
+						i(68833),	-- Panther Cub
 					}),
 --					qg(469, qa(26736)),	-- Spared from Madness
 					o(2076, {	-- Bubbling Cauldron
 --						qh(26325),	-- A Nose for This Sort of Thing
 --						qh(26302),	-- Chasing Yenniku's Fate
 --						qh(26332),	-- Skullsplitter Mojo
-						qh(26301, { -- Speaking with Nezzliok
+						qh(26301, {	-- Speaking with Nezzliok
 							i(61099),	-- Slaver's Plate
 							i(61098),	-- Balia'mah Leggings
 							i(61097),	-- Ziata'jai Bracers
 							i(131507),	-- Balia'mah Chain Pants
 						}),
-						qh(26330, { -- Who's a Big Troll
+						qh(26330, {	-- Who's a Big Troll
 							i(61096),	-- Electrostatic Legguards
 							i(61095),	-- Discarded Troll Leggings
 							i(61094),	-- Juju Belt
 							i(131513),	-- Discarded Troll Greaves
-							i(156989), -- Gan'zulah's Headchopper
+							i(156989),	-- Gan'zulah's Headchopper
 						}),
 					}),
 --[[
 					qg(52234, qa(29104)),	-- Spirits Are With Us
 					qg(52234, qh(29222)),	-- Spirits Are With Us
 --]]
-					qg(469, qa(26737, { -- Stopping Kurzen's Legacy
+					qg(469, qa(26737, {	-- Stopping Kurzen's Legacy
 						i(61051),	-- Guerilla Breastplate
 						i(61050),	-- Expedition Scouting Gear
 						i(131592),	-- Expedition Scout's Hauberk
@@ -939,20 +939,20 @@ _.Zones =
 					qg(2495, q(26343)),	-- Supply and Demand
 					qg(42812, qh(26386)),	-- Surkhan
 --]]
-					qg(43885, qa(26731, { -- The Altar of Naias
+					qg(43885, qa(26731, {	-- The Altar of Naias
 						i(61061),	-- Junglewalker Boots
 						i(61060),	-- Salt-Cured Monnions
 						i(61059),	-- Emerine's Blade
 						i(131590),	-- Salt-Cured Mantle
 					})),
 --					qg(2464, qh(26280)),	-- The Defense of Grom'gol: Murloc Menace
-					qg(2464, qh(26279, { -- The Defense of Grom'gol: Ogre Oppression
+					qg(2464, qh(26279, {	-- The Defense of Grom'gol: Ogre Oppression
 						i(61083),	-- Smashing Breastplate
 						i(61082),	-- Mizjah Vest
 						i(131499),	-- Mizjah Hauberk
 					})),
 --					qg(2464, qh(26278)),	-- The Defense of Grom'gol: Raptor Risk
-					qg(2464, qh(26281, { -- The Defense of Grom'gol: Trollish Thievery
+					qg(2464, qh(26281, {	-- The Defense of Grom'gol: Trollish Thievery
 						i(61086),	-- Pitiless Pauldrons
 						i(61085),	-- Bal'lal Belt
 						i(61084),	-- Unforgiving Pantaloons
@@ -965,7 +965,7 @@ _.Zones =
 					qg(52346, qa(29115)),	-- The Hunter's Revenge
 					qg(52294, qh(29227)),	-- The Hunter's Revenge
 --]]
-					qg(44019, qa(26781, { -- The Mind's Eye
+					qg(44019, qa(26781, {	-- The Mind's Eye
 						i(61070),	-- Fort Livingston Legguards
 						i(61069),	-- Eye-Plucker Gloves
 						i(61068),	-- Wand of Imagination
@@ -981,7 +981,7 @@ _.Zones =
 					qg(42814, qh(26400)),	-- The Universal Key
 					qg(717, q(185)),	-- Tiger Hunting
 --]]
-					qg(717, q(188, { -- Tiger Mastery
+					qg(717, q(188, {	-- Tiger Mastery
 						i(61116),	-- Tiger Strangler's Bracers
 						i(61115),	-- Paws of Sin'Dall
 						i(61114),	-- Cat Lover's Vest
@@ -999,7 +999,7 @@ _.Zones =
 					qg(52294, qh(29226)),	-- Track the Tracker
 					qg(, q(9259)),	-- Traitor to the Bloodsail
 --]]
-					qg(773, qa(26763, { -- Venture Company Mining
+					qg(773, qa(26763, {	-- Venture Company Mining
 						i(61073),	-- Spare Metal Pauldrons
 						i(61072),	-- Bartered Bracers
 						i(61071),	-- Krazek's Oven Mitts
@@ -1007,7 +1007,7 @@ _.Zones =
 						i(156990),	-- Crystal-Chipping Mallet
 						i(156991),	-- Shredder Arm Extension
 					})),
-					qg(42814, qh(26403, { -- Venture Company Mining
+					qg(42814, qh(26403, {	-- Venture Company Mining
 						i(61105),	-- Scrap Metal Pauldrons
 						i(61104),	-- Skeezy Bracers
 						i(61103),	-- Junglepicker Gloves
@@ -1023,14 +1023,14 @@ _.Zones =
 					qg(716, q(583)),	-- Welcome to the Jungle
 					qg(43885, qa(26730)),	-- You Can Take the Murloc Out of the Ocean...
 --]]
-					qg(44021, qa(26779, { -- Zul'Mamwe Mambo
+					qg(44021, qa(26779, {	-- Zul'Mamwe Mambo
 						i(61076),	-- Pauldrons of the Wayward Tribe
 						i(61075),	-- Breastplate of Zul'Mamwe
 						i(61074),	-- Irradiated Faux Croc' Bracers
 						i(131601),	-- Hauberk of Zul'Mamwe
 						i(131602),	-- Irradiated Faux Croc' Wristguards
 					})),
-					qg(42811, qh(26405, { -- Zul'Mamwe Mambo
+					qg(42811, qh(26405, {	-- Zul'Mamwe Mambo
 						i(61119),	-- Pauldrons of the Wayward Tribe
 						i(61118),	-- Breastplate of Zul'Mamwe
 						i(61117),	-- Irradiated Faux Croc' Bracers
@@ -1414,8 +1414,8 @@ _.Zones =
 							})),
 							{	-- Expert Blacksmith!
 								["questID"] = 2765,	-- Expert Blacksmith!
-								["qg"] = 7802, -- Galvan the Ancient
-								["sourceQuests"] = { 2761, 2762, 2763 }, -- Smelt On, Smelt Off, The Great Silver Deceiver, The Art of the Imbue
+								["qg"] = 7802,	-- Galvan the Ancient
+								["sourceQuests"] = { 2761, 2762, 2763 },	-- Smelt On, Smelt Off, The Great Silver Deceiver, The Art of the Imbue
 								["requireSkill"] = 164,	-- Blacksmithing
 								["u"] = 40,
 								["g"] = {
@@ -1434,8 +1434,8 @@ _.Zones =
 							},
 							{	-- Galvin's Finest Pupil
 								["questID"] = 2764,	-- Galvin's Finest Pupil
-								["qg"] = 7802, -- Galvan the Ancient
-								["sourceQuests"] = { 2761, 2762, 2763 }, -- Smelt On, Smelt Off, The Great Silver Deceiver, The Art of the Imbue
+								["qg"] = 7802,	-- Galvan the Ancient
+								["sourceQuests"] = { 2761, 2762, 2763 },	-- Smelt On, Smelt Off, The Great Silver Deceiver, The Art of the Imbue
 								["requireSkill"] = 164,	-- Blacksmithing
 								["isBreadcrumb"] = true,
 								["u"] = 40,
@@ -1460,13 +1460,13 @@ _.Zones =
 							})),
 							{	-- Smelt On, Smelt Off
 								["questID"] = 2761,	-- Smelt On, Smelt Off
-								["qg"] = 7802, -- Galvan the Ancient
-								["sourceQuests"] = { 2760 }, -- The Mithril Order
+								["qg"] = 7802,	-- Galvan the Ancient
+								["sourceQuests"] = { 2760 },	-- The Mithril Order
 								["requireSkill"] = 164,	-- Blacksmithing
 								["u"] = 40,
 								["g"] = {
 									{	-- Plans: Ornate Mithril Pants
-										["itemID"] = 7983, -- Plans: Ornate Mithril Pants
+										["itemID"] = 7983,	-- Plans: Ornate Mithril Pants
 										["u"] = 2,
 									},
 								},
@@ -1477,13 +1477,13 @@ _.Zones =
 							})),
 							{	-- The Art of the Imbue
 								["questID"] = 2763,	-- The Art of the Imbue
-								["qg"] = 7802, -- Galvan the Ancient
-								["sourceQuests"] = { 2760 }, -- The Mithril Order
+								["qg"] = 7802,	-- Galvan the Ancient
+								["sourceQuests"] = { 2760 },	-- The Mithril Order
 								["requireSkill"] = 164,	-- Blacksmithing
 								["u"] = 40,
 								["g"] = {
 									{	-- Plans: Ornate Mithril Shoulders
-										["itemID"] = 7985, -- Plans: Ornate Mithril Shoulders
+										["itemID"] = 7985,	-- Plans: Ornate Mithril Shoulders
 										["u"] = 2,
 									},
 								},
@@ -1493,13 +1493,13 @@ _.Zones =
 							})),
 							{	-- The Great Silver Deceiver
 								["questID"] = 2762,	-- The Great Silver Deceiver
-								["qg"] = 7802, -- Galvan the Ancient
-								["sourceQuests"] = { 2760 }, -- The Mithril Order
+								["qg"] = 7802,	-- Galvan the Ancient
+								["sourceQuests"] = { 2760 },	-- The Mithril Order
 								["requireSkill"] = 164,	-- Blacksmithing
 								["u"] = 40,
 								["g"] = {
 									{	-- Plans: Ornate Mithril Gloves
-										["itemID"] = 7984, -- Plans: Ornate Mithril Gloves
+										["itemID"] = 7984,	-- Plans: Ornate Mithril Gloves
 										["u"] = 2,
 									},
 								},
@@ -1513,8 +1513,8 @@ _.Zones =
 							})),
 							{	-- The Mithril Order
 								["questID"] = 2760,	-- The Mithril Order
-								["qg"] = 7794, -- McGaven
-								["sourceQuests"] = { 2757, 2759 }, -- Booty Bay or Bust! (Horde), In Search of Galvan (Alliance)
+								["qg"] = 7794,	-- McGaven
+								["sourceQuests"] = { 2757, 2759 },	-- Booty Bay or Bust! (Horde), In Search of Galvan (Alliance)
 								["requireSkill"] = 164,	-- Blacksmithing
 								["u"] = 40,
 							},

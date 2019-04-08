@@ -116,7 +116,7 @@ _.Zones =
 								["groups"] = {
 									q(47514, {	-- Zuldazar
 										["qg"] = 135775,	-- Scouting Map
-										-- ["sourceQuests"] = { 52131 }, -- We Need Each Other [Note: Detaching from "Welcome to Zuldazar" achievement because they can't pick anything up regardless and less spammy in Quest Chain window
+										-- ["sourceQuests"] = { 52131 },	-- We Need Each Other [Note: Detaching from "Welcome to Zuldazar" achievement because they can't pick anything up regardless and less spammy in Quest Chain window
 									}),
 									q(49615, {	-- Trust of a King
 										["qg"] = 133050,	-- Princes Talanji

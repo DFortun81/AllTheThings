@@ -8,15 +8,15 @@ _.Instances = { tier(7, {	-- Legion
 		["maps"] = { 845, 846, 847, 848, 849 },
 		["groups"] = {
 			d(2, {	-- Heroic
-				n(0, { -- Zone Drops
+				n(0, {	-- Zone Drops
 					["crs"] = {
-						118704, -- Dul'zak
-						118723, -- Gazerax
-						118705, -- Nal'asha
-						120713, -- Wa'glur
-						120716, -- Dreadspeaker Serilis
-						120715, -- Raga'yut
-						120717, -- Mistress Dominix
+						118704,	-- Dul'zak
+						118723,	-- Gazerax
+						118705,	-- Nal'asha
+						120713,	-- Wa'glur
+						120716,	-- Dreadspeaker Serilis
+						120715,	-- Raga'yut
+						120717,	-- Mistress Dominix
 					},
 					["groups"] = {
 						i(147517),	-- Inquisitor's Battle Cowl
@@ -85,15 +85,15 @@ _.Instances = { tier(7, {	-- Legion
 				})),
 			}),
 			d(23, {	-- Mythic
-				n(0, { -- Zone Drops
+				n(0, {	-- Zone Drops
 					["crs"] = {
-						118704, -- Dul'zak
-						118723, -- Gazerax
-						118705, -- Nal'asha
-						120713, -- Wa'glur
-						120716, -- Dreadspeaker Serilis
-						120715, -- Raga'yut
-						120717, -- Mistress Dominix
+						118704,	-- Dul'zak
+						118723,	-- Gazerax
+						118705,	-- Nal'asha
+						120713,	-- Wa'glur
+						120716,	-- Dreadspeaker Serilis
+						120715,	-- Raga'yut
+						120717,	-- Mistress Dominix
 					},
 					["groups"] = {
 						i(147517),	-- Inquisitor's Battle Cowl

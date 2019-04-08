@@ -2,17 +2,17 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 _.Instances = { tier(8, {	-- Battle For Azeroth
-	inst(1022, { -- The Underrot
+	inst(1022, {	-- The Underrot
 		["lvl"] = 110,
 		["maps"] = {
-			1041, -- The Underot
-			1042, -- Ruin's Descent
+			1041,	-- The Underot
+			1042,	-- Ruin's Descent
 		},
 		["groups"] = {
-			d(1, { -- Normal
-				e(2157, { -- Elder Leaxa
+			d(1, {	-- Normal
+				e(2157, {	-- Elder Leaxa
 					["crs"] = {
-						131318, -- Elder Leaxa <Voice of G'huun>
+						131318,	-- Elder Leaxa <Voice of G'huun>
 					},
 					["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						i(159652),	-- Leaxa's Thought-Piercer
@@ -25,7 +25,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				}),
 				e(2131,  { -- Cragmaw the Infested
 					["crs"] = {
-						131817, -- Cragmaw the Infested
+						131817,	-- Cragmaw the Infested
 					},
 					["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						i(159653),	-- Bile-Stained Crawg Tusks
@@ -40,9 +40,9 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						i(159396),	-- Waders of the Infested
 					}),
 				}),
-				e(2130, { -- Sporecaller Zancha
+				e(2130, {	-- Sporecaller Zancha
 					["crs"] = {
-						131383, -- Sporecaller Zancha
+						131383,	-- Sporecaller Zancha
 					},
 					["groups"] =  bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						i(159654),	-- Corruption Borne Headlopper
@@ -55,9 +55,9 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						i(159626),	-- Lingering Sporepods
 					}),
 				}),
-				e(2158, { -- Unbound Abomination
+				e(2158, {	-- Unbound Abomination
 					["crs"] = {
-						133007, -- Unbound Abomination
+						133007,	-- Unbound Abomination
 					},
 					["groups"] =  bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						ach(12500),	-- Underrot
@@ -75,12 +75,12 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					}),
 				}),
 			}),
-			d(2, { -- Heroic
+			d(2, {	-- Heroic
 				["lvl"] = 120,
 				["groups"] = {
-					e(2157, { -- Elder Leaxa
+					e(2157, {	-- Elder Leaxa
 						["crs"] = {
-							131318, -- Elder Leaxa <Voice of G'huun>
+							131318,	-- Elder Leaxa <Voice of G'huun>
 						},
 						["groups"] = {
 							i(159652),	-- Leaxa's Thought-Piercer
@@ -91,9 +91,9 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							i(159624),	-- Rotcrusted Voodoo Doll
 						},
 					}),
-					e(2131, { -- Cragmaw the Infested
+					e(2131, {	-- Cragmaw the Infested
 						["crs"] = {
-							131817, -- Cragmaw the Infested
+							131817,	-- Cragmaw the Infested
 						},
 						["groups"] = {
 							i(159653),	-- Bile-Stained Crawg Tusks
@@ -108,9 +108,9 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							i(159396),	-- Waders of the Infested
 						},
 					}),
-					e(2130, { -- Sporecaller Zancha
+					e(2130, {	-- Sporecaller Zancha
 						["crs"] = {
-							131383, -- Sporecaller Zancha
+							131383,	-- Sporecaller Zancha
 						},
 						["groups"] = {
 							i(159654),	-- Corruption Borne Headlopper
@@ -123,9 +123,9 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							i(159626),	-- Lingering Sporepods
 						},
 					}),
-					e(2158, { -- Unbound Abomination
+					e(2158, {	-- Unbound Abomination
 						["crs"] = {
-							133007, -- Unbound Abomination
+							133007,	-- Unbound Abomination
 						},
 						["groups"] = {
 							ach(12501),	-- Heroic: Underrot
@@ -144,12 +144,12 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					}),
 				},
 			}),
-			d(23, { -- Mythic
+			d(23, {	-- Mythic
 				["lvl"] = 120,
 				["groups"] = {
-					e(2157, { -- Elder Leaxa
+					e(2157, {	-- Elder Leaxa
 						["crs"] = {
-							131318, -- Elder Leaxa <Voice of G'huun>
+							131318,	-- Elder Leaxa <Voice of G'huun>
 						},
 						["groups"] = {
 							ach(12498),	-- Taint Nobody Got Time For That
@@ -161,9 +161,9 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							i(159402),	-- Waistguard of Sanguine Fervor									
 						},
 					}),
-					e(2131, { -- Cragmaw the Infested
+					e(2131, {	-- Cragmaw the Infested
 						["crs"] = {
-							131817, -- Cragmaw the Infested
+							131817,	-- Cragmaw the Infested
 						},
 						["groups"] = {
 							i(159653),	-- Bile-Stained Crawg Tusks
@@ -178,9 +178,9 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							i(159396),	-- Waders of the Infested
 						},
 					}),
-					e(2130, { -- Sporecaller Zancha
+					e(2130, {	-- Sporecaller Zancha
 						["crs"] = {
-							131383, -- Sporecaller Zancha
+							131383,	-- Sporecaller Zancha
 						},
 						["groups"] = {
 							ach(12549),	-- Not a Fun Guy
@@ -194,9 +194,9 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							i(159626),	-- Lingering Sporepods
 						},
 					}),
-					e(2158, { -- Unbound Abomination
+					e(2158, {	-- Unbound Abomination
 						["crs"] = {
-							133007, -- Unbound Abomination
+							133007,	-- Unbound Abomination
 						},
 						["groups"] = {
 							ach(12502),	-- Mythic: Underrot

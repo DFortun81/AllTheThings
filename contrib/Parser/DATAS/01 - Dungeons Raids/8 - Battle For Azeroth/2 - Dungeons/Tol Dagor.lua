@@ -2,16 +2,16 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 _.Instances = { tier(8, {	-- Battle For Azeroth
-	inst(1002, { -- Tol Dagor
+	inst(1002, {	-- Tol Dagor
 		["lvl"] = 110,
 		["maps"] = {
-			974, -- Tol Dagor
-			975, -- The Drain
-			976, -- The Brig
-			977, -- Detention Block
-			978, -- Officer Quarters
-			979, -- Overseer's Redoubt
-			980, -- Oveseer's Summit
+			974,	-- Tol Dagor
+			975,	-- The Drain
+			976,	-- The Brig
+			977,	-- Detention Block
+			978,	-- Officer Quarters
+			979,	-- Overseer's Redoubt
+			980,	-- Oveseer's Summit
 		},
 		["g"] = {
 			n(-34, {	-- World Quests
@@ -22,9 +22,9 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					["lvl"] = 120,			-- WQ is 120+ only
 				}),
 			}),
-			d(1, { -- Normal
-				e(2097, { -- The Sand Queen
-					["crs"] = { 127479 }, -- The Sand Queen
+			d(1, {	-- Normal
+				e(2097, {	-- The Sand Queen
+					["crs"] = { 127479 },	-- The Sand Queen
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						i(159656),	-- Halberd of the Unwary Guard
 						i(160110),	-- Warglaive of the Sand Queen
@@ -35,9 +35,9 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						i(159460),	-- Overseer's Lost Seal
 					}),
 				}),
-				e(2098, { -- Jes Howlis
+				e(2098, {	-- Jes Howlis
 					["crs"] = {
-						127484, -- Jes Howlis
+						127484,	-- Jes Howlis
 					},
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						i(159131),	-- Howlis' Crystal Shiv
@@ -49,9 +49,9 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						i(159627),	-- Jes' Howler
 					}),
 				}),
-				e(2099, { -- Knight Captain Valyri
+				e(2099, {	-- Knight Captain Valyri
 					["crs"] = {
-						127490, -- Knight Captain Valyri
+						127490,	-- Knight Captain Valyri
 					},
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						i(159441),	-- Valyri's Fire-Proof Bracers
@@ -65,9 +65,9 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						i(159615),	-- Ignition Mage's Fuse
 					}),
 				}),
-				e(2096, { -- Overseer Korgus
+				e(2096, {	-- Overseer Korgus
 					["crs"] = {
-						127503, -- Overseer Korgus
+						127503,	-- Overseer Korgus
 					},
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						ach(12840),	-- Tol Dagor
@@ -85,11 +85,11 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					}),
 				}),
 			}),
-			d(2, { -- Heroic
+			d(2, {	-- Heroic
 				["lvl"] = 120,
 				["g"] = {
-					e(2097, { -- The Sand Queen
-						["crs"] = { 127479 }, -- The Sand Queen
+					e(2097, {	-- The Sand Queen
+						["crs"] = { 127479 },	-- The Sand Queen
 						["g"] = {
 							i(159656),	-- Halberd of the Unwary Guard
 							i(160110),	-- Warglaive of the Sand Queen
@@ -100,9 +100,9 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							i(159460),	-- Overseer's Lost Seal
 						},
 					}),
-					e(2098, { -- Jes Howlis
+					e(2098, {	-- Jes Howlis
 						["crs"] = {
-							127484, -- Jes Howlis
+							127484,	-- Jes Howlis
 						},
 						["g"] = {
 							i(159131),	-- Howlis' Crystal Shiv
@@ -114,9 +114,9 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							i(159627),	-- Jes' Howler
 						},
 					}),
-					e(2099, { -- Knight Captain Valyri
+					e(2099, {	-- Knight Captain Valyri
 						["crs"] = {
-							127490, -- Knight Captain Valyri
+							127490,	-- Knight Captain Valyri
 						},
 						["g"] = {
 							i(159441),	-- Valyri's Fire-Proof Bracers
@@ -130,9 +130,9 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							i(159615),	-- Ignition Mage's Fuse
 						},
 					}),
-					e(2096, { -- Overseer Korgus
+					e(2096, {	-- Overseer Korgus
 						["crs"] = {
-							127503, -- Overseer Korgus
+							127503,	-- Overseer Korgus
 						},
 						["g"] = {
 							ach(12841),	-- Heroic: Tol Dagor
@@ -151,14 +151,14 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					}),
 				},
 			}),
-			d(23, { -- Mythic
+			d(23, {	-- Mythic
 				["lvl"] = 120,
 				["g"] = {
 					n(135448, {	-- Gol'than the Malodorous
 						i(160704),	--  Filthy Bucket
 					}),
-					e(2097, { -- The Sand Queen
-						["crs"] = { 127479 }, -- The Sand Queen
+					e(2097, {	-- The Sand Queen
+						["crs"] = { 127479 },	-- The Sand Queen
 						["g"] = {
 							i(159656),	-- Halberd of the Unwary Guard
 							i(160110),	-- Warglaive of the Sand Queen
@@ -169,9 +169,9 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							i(159460),	-- Overseer's Lost Seal
 						},
 					}),
-					e(2098, { -- Jes Howlis
+					e(2098, {	-- Jes Howlis
 						["crs"] = {
-							127484, -- Jes Howlis
+							127484,	-- Jes Howlis
 						},
 						["g"] = {
 							i(159131),	-- Howlis' Crystal Shiv
@@ -183,9 +183,9 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							i(159627),	-- Jes' Howler
 						},
 					}),
-					e(2099, { -- Knight Captain Valyri
+					e(2099, {	-- Knight Captain Valyri
 						["crs"] = {
-							127490, -- Knight Captain Valyri
+							127490,	-- Knight Captain Valyri
 						},
 						["g"] = {
 							ach(12457),	-- Remix to Ignition
@@ -200,9 +200,9 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							i(159615),	-- Ignition Mage's Fuse
 						},
 					}),
-					e(2096, { -- Overseer Korgus
+					e(2096, {	-- Overseer Korgus
 						["crs"] = {
-							127503, -- Overseer Korgus
+							127503,	-- Overseer Korgus
 						},
 						["g"] = {
 							ach(12842),	-- Mythic: Tol Dagor

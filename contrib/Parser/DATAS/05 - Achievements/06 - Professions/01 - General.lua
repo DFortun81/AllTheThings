@@ -12,9 +12,9 @@ To do:
 
 _.Achievements = 
 {
-	n(-9960, { -- Professions
+	n(-9960, {	-- Professions
 		["groups"] = {
-			n(-9955, { -- General
+			n(-9955, {	-- General
 				["groups"] = {
 					ach(9454, {		-- Draenic Seed Collector
 						i(111997),		-- Herb Garden, Level 3 [Blueprints]
@@ -36,7 +36,7 @@ _.Achievements =
 					ach(10587), 	-- Hot Swapper
 					ach(9071, {		-- Inspector Gagetzan
 						["groups"] = {
-							i(114002, { -- Encoded Message
+							i(114002, {	-- Encoded Message
 								crit(1),	-- Decoded Message 001-003
 								crit(2),	-- Decoded Message 001-014
 								crit(3),	-- Decoded Message 001-107

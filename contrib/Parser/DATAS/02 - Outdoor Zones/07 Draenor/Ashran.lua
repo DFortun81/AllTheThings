@@ -6,7 +6,7 @@ _.Zones =
 	m(572, { 	-- Draenor
 		m(588, {	-- Ashran
 			["groups"] = {
-				n(-17, { -- Quests
+				n(-17, {	-- Quests
 					qa(35872, {	-- A Bunch of Artifact Fragments
 						["repeatable"] = true,
 					}),
@@ -56,7 +56,7 @@ _.Zones =
 						["repeatable"] = true,
 					}),
 					qa(36630, {	-- A Surly Dwarf
-						["sourceQuest"] = 36629, -- Inspiring Ashran
+						["sourceQuest"] = 36629,	-- Inspiring Ashran
 					}),
 					qh(36025, {	-- A TON of Artifact Fragments
 						["repeatable"] = true,
@@ -82,175 +82,175 @@ _.Zones =
 					qa(35869, {	-- A TON of Artifact Fragments
 						["repeatable"] = true,
 					}),
-					qa(38925, { -- Ashran Dominance
+					qa(38925, {	-- Ashran Dominance
 						["groups"] = {
 							i(135546, {	-- Fel-Touched Crate of Battlefield Goods
 								["groups"] = {
-									i(135578), -- Battle Touched Banner
-									i(135568), -- Battle Touched Blood of the Fallen
-									i(135574), -- Battle Touched Blossom
-									i(135573), -- Battle Touched Chain Link
-									i(135565), -- Battle Touched Elemental Spark
-									i(135571), -- Battle Touched Ember
-									i(135576), -- Battle Touched Fetish
-									i(135570), -- Battle Touched Helfrost
-									i(135569), -- Battle Touched Infernal Shard
-									i(135572), -- Battle Touched Martyr Stone
-									i(134696), -- Cascading Amice
-									i(134694), -- Cascading Cord
-									i(134697), -- Cascading Cuffs
-									i(134695), -- Cascading Trousers
-									i(134714), -- Crushing Armplates
-									i(134711), -- Crushing Girdle
-									i(134712), -- Crushing Legguards
-									i(134713), -- Crushing Pauldrons
-									i(134692), -- Enveloping Accolade
-									i(134715), -- Enveloping Badge
-									i(134716), -- Enveloping Cloak
-									i(134698), -- Enveloping Distinction
-									i(134709), -- Enveloping Pendant
-									i(134707), -- Surging Armbands
-									i(134705), -- Surging Chain Leggings
-									i(134706), -- Surging Spaulders
-									i(134704), -- Surging Waistguard
-									i(134700), -- Swarming Belt
-									i(134703), -- Swarming Bindings
-									i(134701), -- Swarming Legguards
-									i(134702), -- Swarming Shoulders
+									i(135578),	-- Battle Touched Banner
+									i(135568),	-- Battle Touched Blood of the Fallen
+									i(135574),	-- Battle Touched Blossom
+									i(135573),	-- Battle Touched Chain Link
+									i(135565),	-- Battle Touched Elemental Spark
+									i(135571),	-- Battle Touched Ember
+									i(135576),	-- Battle Touched Fetish
+									i(135570),	-- Battle Touched Helfrost
+									i(135569),	-- Battle Touched Infernal Shard
+									i(135572),	-- Battle Touched Martyr Stone
+									i(134696),	-- Cascading Amice
+									i(134694),	-- Cascading Cord
+									i(134697),	-- Cascading Cuffs
+									i(134695),	-- Cascading Trousers
+									i(134714),	-- Crushing Armplates
+									i(134711),	-- Crushing Girdle
+									i(134712),	-- Crushing Legguards
+									i(134713),	-- Crushing Pauldrons
+									i(134692),	-- Enveloping Accolade
+									i(134715),	-- Enveloping Badge
+									i(134716),	-- Enveloping Cloak
+									i(134698),	-- Enveloping Distinction
+									i(134709),	-- Enveloping Pendant
+									i(134707),	-- Surging Armbands
+									i(134705),	-- Surging Chain Leggings
+									i(134706),	-- Surging Spaulders
+									i(134704),	-- Surging Waistguard
+									i(134700),	-- Swarming Belt
+									i(134703),	-- Swarming Bindings
+									i(134701),	-- Swarming Legguards
+									i(134702),	-- Swarming Shoulders
 								},
 							}),
 						},
 						["repeatable"] = true,
 					}),
-					qh(38923, { -- Ashran Dominance
+					qh(38923, {	-- Ashran Dominance
 						["groups"] = {
 							i(135546, {	-- Fel-Touched Crate of Battlefield Goods
 								["groups"] = {
-									i(135578), -- Battle Touched Banner
-									i(135568), -- Battle Touched Blood of the Fallen
-									i(135574), -- Battle Touched Blossom
-									i(135573), -- Battle Touched Chain Link
-									i(135565), -- Battle Touched Elemental Spark
-									i(135571), -- Battle Touched Ember
-									i(135576), -- Battle Touched Fetish
-									i(135570), -- Battle Touched Helfrost
-									i(135569), -- Battle Touched Infernal Shard
-									i(135572), -- Battle Touched Martyr Stone
-									i(134696), -- Cascading Amice
-									i(134694), -- Cascading Cord
-									i(134697), -- Cascading Cuffs
-									i(134695), -- Cascading Trousers
-									i(134714), -- Crushing Armplates
-									i(134711), -- Crushing Girdle
-									i(134712), -- Crushing Legguards
-									i(134713), -- Crushing Pauldrons
-									i(134692), -- Enveloping Accolade
-									i(134715), -- Enveloping Badge
-									i(134716), -- Enveloping Cloak
-									i(134698), -- Enveloping Distinction
-									i(134709), -- Enveloping Pendant
-									i(134707), -- Surging Armbands
-									i(134705), -- Surging Chain Leggings
-									i(134706), -- Surging Spaulders
-									i(134704), -- Surging Waistguard
-									i(134700), -- Swarming Belt
-									i(134703), -- Swarming Bindings
-									i(134701), -- Swarming Legguards
-									i(134702), -- Swarming Shoulders
+									i(135578),	-- Battle Touched Banner
+									i(135568),	-- Battle Touched Blood of the Fallen
+									i(135574),	-- Battle Touched Blossom
+									i(135573),	-- Battle Touched Chain Link
+									i(135565),	-- Battle Touched Elemental Spark
+									i(135571),	-- Battle Touched Ember
+									i(135576),	-- Battle Touched Fetish
+									i(135570),	-- Battle Touched Helfrost
+									i(135569),	-- Battle Touched Infernal Shard
+									i(135572),	-- Battle Touched Martyr Stone
+									i(134696),	-- Cascading Amice
+									i(134694),	-- Cascading Cord
+									i(134697),	-- Cascading Cuffs
+									i(134695),	-- Cascading Trousers
+									i(134714),	-- Crushing Armplates
+									i(134711),	-- Crushing Girdle
+									i(134712),	-- Crushing Legguards
+									i(134713),	-- Crushing Pauldrons
+									i(134692),	-- Enveloping Accolade
+									i(134715),	-- Enveloping Badge
+									i(134716),	-- Enveloping Cloak
+									i(134698),	-- Enveloping Distinction
+									i(134709),	-- Enveloping Pendant
+									i(134707),	-- Surging Armbands
+									i(134705),	-- Surging Chain Leggings
+									i(134706),	-- Surging Spaulders
+									i(134704),	-- Surging Waistguard
+									i(134700),	-- Swarming Belt
+									i(134703),	-- Swarming Bindings
+									i(134701),	-- Swarming Legguards
+									i(134702),	-- Swarming Shoulders
 								},
 							}),
 						},
 						["repeatable"] = true,
 					}),
-					qa(36626, { -- Host Howell
-						["sourceQuest"] = 36624, -- Ashran Appearance
+					qa(36626, {	-- Host Howell
+						["sourceQuest"] = 36624,	-- Ashran Appearance
 					}),
-					qa(36629, { -- Inspiring Ashran
-						["sourceQuest"] = 36626, -- Host Howell
+					qa(36629, {	-- Inspiring Ashran
+						["sourceQuest"] = 36626,	-- Host Howell
 					}),
-					qa(39096, { -- Slay Them All!
+					qa(39096, {	-- Slay Them All!
 						["groups"] = {
 							i(135546, {	-- Fel-Touched Crate of Battlefield Goods
 								["groups"] = {
-									i(135578), -- Battle Touched Banner
-									i(135568), -- Battle Touched Blood of the Fallen
-									i(135574), -- Battle Touched Blossom
-									i(135573), -- Battle Touched Chain Link
-									i(135565), -- Battle Touched Elemental Spark
-									i(135571), -- Battle Touched Ember
-									i(135576), -- Battle Touched Fetish
-									i(135570), -- Battle Touched Helfrost
-									i(135569), -- Battle Touched Infernal Shard
-									i(135572), -- Battle Touched Martyr Stone
-									i(134696), -- Cascading Amice
-									i(134694), -- Cascading Cord
-									i(134697), -- Cascading Cuffs
-									i(134695), -- Cascading Trousers
-									i(134714), -- Crushing Armplates
-									i(134711), -- Crushing Girdle
-									i(134712), -- Crushing Legguards
-									i(134713), -- Crushing Pauldrons
-									i(134692), -- Enveloping Accolade
-									i(134715), -- Enveloping Badge
-									i(134716), -- Enveloping Cloak
-									i(134698), -- Enveloping Distinction
-									i(134709), -- Enveloping Pendant
-									i(134707), -- Surging Armbands
-									i(134705), -- Surging Chain Leggings
-									i(134706), -- Surging Spaulders
-									i(134704), -- Surging Waistguard
-									i(134700), -- Swarming Belt
-									i(134703), -- Swarming Bindings
-									i(134701), -- Swarming Legguards
-									i(134702), -- Swarming Shoulders
+									i(135578),	-- Battle Touched Banner
+									i(135568),	-- Battle Touched Blood of the Fallen
+									i(135574),	-- Battle Touched Blossom
+									i(135573),	-- Battle Touched Chain Link
+									i(135565),	-- Battle Touched Elemental Spark
+									i(135571),	-- Battle Touched Ember
+									i(135576),	-- Battle Touched Fetish
+									i(135570),	-- Battle Touched Helfrost
+									i(135569),	-- Battle Touched Infernal Shard
+									i(135572),	-- Battle Touched Martyr Stone
+									i(134696),	-- Cascading Amice
+									i(134694),	-- Cascading Cord
+									i(134697),	-- Cascading Cuffs
+									i(134695),	-- Cascading Trousers
+									i(134714),	-- Crushing Armplates
+									i(134711),	-- Crushing Girdle
+									i(134712),	-- Crushing Legguards
+									i(134713),	-- Crushing Pauldrons
+									i(134692),	-- Enveloping Accolade
+									i(134715),	-- Enveloping Badge
+									i(134716),	-- Enveloping Cloak
+									i(134698),	-- Enveloping Distinction
+									i(134709),	-- Enveloping Pendant
+									i(134707),	-- Surging Armbands
+									i(134705),	-- Surging Chain Leggings
+									i(134706),	-- Surging Spaulders
+									i(134704),	-- Surging Waistguard
+									i(134700),	-- Swarming Belt
+									i(134703),	-- Swarming Bindings
+									i(134701),	-- Swarming Legguards
+									i(134702),	-- Swarming Shoulders
 								},
 							}),
 						},
 						["repeatable"] = true,
 					}),
-					qh(39090, { -- Slay Them All!
+					qh(39090, {	-- Slay Them All!
 						["groups"] = {
 							i(135546, {	-- Fel-Touched Crate of Battlefield Goods
 								["groups"] = {
-									i(135578), -- Battle Touched Banner
-									i(135568), -- Battle Touched Blood of the Fallen
-									i(135574), -- Battle Touched Blossom
-									i(135573), -- Battle Touched Chain Link
-									i(135565), -- Battle Touched Elemental Spark
-									i(135571), -- Battle Touched Ember
-									i(135576), -- Battle Touched Fetish
-									i(135570), -- Battle Touched Helfrost
-									i(135569), -- Battle Touched Infernal Shard
-									i(135572), -- Battle Touched Martyr Stone
-									i(134696), -- Cascading Amice
-									i(134694), -- Cascading Cord
-									i(134697), -- Cascading Cuffs
-									i(134695), -- Cascading Trousers
-									i(134714), -- Crushing Armplates
-									i(134711), -- Crushing Girdle
-									i(134712), -- Crushing Legguards
-									i(134713), -- Crushing Pauldrons
-									i(134692), -- Enveloping Accolade
-									i(134715), -- Enveloping Badge
-									i(134716), -- Enveloping Cloak
-									i(134698), -- Enveloping Distinction
-									i(134709), -- Enveloping Pendant
-									i(134707), -- Surging Armbands
-									i(134705), -- Surging Chain Leggings
-									i(134706), -- Surging Spaulders
-									i(134704), -- Surging Waistguard
-									i(134700), -- Swarming Belt
-									i(134703), -- Swarming Bindings
-									i(134701), -- Swarming Legguards
-									i(134702), -- Swarming Shoulders
+									i(135578),	-- Battle Touched Banner
+									i(135568),	-- Battle Touched Blood of the Fallen
+									i(135574),	-- Battle Touched Blossom
+									i(135573),	-- Battle Touched Chain Link
+									i(135565),	-- Battle Touched Elemental Spark
+									i(135571),	-- Battle Touched Ember
+									i(135576),	-- Battle Touched Fetish
+									i(135570),	-- Battle Touched Helfrost
+									i(135569),	-- Battle Touched Infernal Shard
+									i(135572),	-- Battle Touched Martyr Stone
+									i(134696),	-- Cascading Amice
+									i(134694),	-- Cascading Cord
+									i(134697),	-- Cascading Cuffs
+									i(134695),	-- Cascading Trousers
+									i(134714),	-- Crushing Armplates
+									i(134711),	-- Crushing Girdle
+									i(134712),	-- Crushing Legguards
+									i(134713),	-- Crushing Pauldrons
+									i(134692),	-- Enveloping Accolade
+									i(134715),	-- Enveloping Badge
+									i(134716),	-- Enveloping Cloak
+									i(134698),	-- Enveloping Distinction
+									i(134709),	-- Enveloping Pendant
+									i(134707),	-- Surging Armbands
+									i(134705),	-- Surging Chain Leggings
+									i(134706),	-- Surging Spaulders
+									i(134704),	-- Surging Waistguard
+									i(134700),	-- Swarming Belt
+									i(134703),	-- Swarming Bindings
+									i(134701),	-- Swarming Legguards
+									i(134702),	-- Swarming Shoulders
 								},
 							}),
 						},
 						["repeatable"] = true,
 					}),
-					i(112128, { -- Blood Elf Ear
+					i(112128, {	-- Blood Elf Ear
 						["groups"] = {
-							i(128216, { -- Dented Ashmaul Strongbox
+							i(128216, {	-- Dented Ashmaul Strongbox
 								i(126253),	-- Warmongering Aspirant's Accolade of Conquest
 								i(126254),	-- Warmongering Aspirant's Accolade of Dominance
 								i(126257),	-- Warmongering Aspirant's Accolade of Endurance
@@ -338,13 +338,13 @@ _.Zones =
 								i(126229),	-- Warmongering Aspirant's Warboots of Cruelty
 							}),
 						},
-						["questID"] = 35937, -- Blood Elf Ear
+						["questID"] = 35937,	-- Blood Elf Ear
 						["repeatable"] = true,
 						["races"] = ALLIANCE_ONLY,
 					}),
-					i(112121, { -- Draenei Tail
+					i(112121, {	-- Draenei Tail
 						["groups"] = {
-							i(128215, { -- Dented Ashmaul Strongbox
+							i(128215, {	-- Dented Ashmaul Strongbox
 								i(134705),	-- Surging Chain Leggings
 								i(126730),	-- Warmongering Aspirant's Accolade of Conquest
 								i(126253),	-- Warmongering Aspirant's Accolade of Conquest
@@ -449,13 +449,13 @@ _.Zones =
 								i(126252),	-- Warmongering Aspirant's Signet of Endurance
 							}),
 						},
-						["questID"] = 36041, -- Draenei Tail
+						["questID"] = 36041,	-- Draenei Tail
 						["repeatable"] = true,
 						["races"] = HORDE_ONLY,
 					}),
-					i(112126, { -- Dwarf Spine
+					i(112126, {	-- Dwarf Spine
 						["groups"] = {
-							i(128215, { -- Dented Ashmaul Strongbox
+							i(128215, {	-- Dented Ashmaul Strongbox
 								i(134705),	-- Surging Chain Leggings
 								i(126730),	-- Warmongering Aspirant's Accolade of Conquest
 								i(126253),	-- Warmongering Aspirant's Accolade of Conquest
@@ -560,13 +560,13 @@ _.Zones =
 								i(126252),	-- Warmongering Aspirant's Signet of Endurance
 							}),
 						},
-						["questID"] = 36034, -- Dwarf Spine
+						["questID"] = 36034,	-- Dwarf Spine
 						["repeatable"] = true,
 						["races"] = HORDE_ONLY,
 					}),
-					i(112015, { -- Forsaken Brains
+					i(112015, {	-- Forsaken Brains
 						["groups"] = {
-							i(128216, { -- Dented Ashmaul Strongbox
+							i(128216, {	-- Dented Ashmaul Strongbox
 								i(126253),	-- Warmongering Aspirant's Accolade of Conquest
 								i(126254),	-- Warmongering Aspirant's Accolade of Dominance
 								i(126257),	-- Warmongering Aspirant's Accolade of Endurance
@@ -654,13 +654,13 @@ _.Zones =
 								i(126229),	-- Warmongering Aspirant's Warboots of Cruelty
 							}),
 						},
-						["questID"] = 35927, -- Forsaken Brains
+						["questID"] = 35927,	-- Forsaken Brains
 						["repeatable"] = true,
 						["races"] = ALLIANCE_ONLY,
 					}),
-					i(112125, { -- Goblin Nose
+					i(112125, {	-- Goblin Nose
 						["groups"] = {
-							i(128216, { -- Dented Ashmaul Strongbox
+							i(128216, {	-- Dented Ashmaul Strongbox
 								i(126253),	-- Warmongering Aspirant's Accolade of Conquest
 								i(126254),	-- Warmongering Aspirant's Accolade of Dominance
 								i(126257),	-- Warmongering Aspirant's Accolade of Endurance
@@ -748,13 +748,13 @@ _.Zones =
 								i(126229),	-- Warmongering Aspirant's Warboots of Cruelty
 							}),
 						},
-						["questID"] = 35938, -- Goblin Nose
+						["questID"] = 35938,	-- Goblin Nose
 						["repeatable"] = true,
 						["races"] = ALLIANCE_ONLY,
 					}),
-					i(112131, { -- Human Bone Chip
+					i(112131, {	-- Human Bone Chip
 						["groups"] = {
-							i(128215, { -- Dented Ashmaul Strongbox
+							i(128215, {	-- Dented Ashmaul Strongbox
 								i(134705),	-- Surging Chain Leggings
 								i(126730),	-- Warmongering Aspirant's Accolade of Conquest
 								i(126253),	-- Warmongering Aspirant's Accolade of Conquest
@@ -859,13 +859,13 @@ _.Zones =
 								i(126252),	-- Warmongering Aspirant's Signet of Endurance
 							}),
 						},
-						["questID"] = 36042, -- Human Bone Chip
+						["questID"] = 36042,	-- Human Bone Chip
 						["repeatable"] = true,
 						["races"] = HORDE_ONLY,
 					}),
-					i(112122, { -- Orc Tooth
+					i(112122, {	-- Orc Tooth
 						["groups"] = {
-							i(128216, { -- Dented Ashmaul Strongbox
+							i(128216, {	-- Dented Ashmaul Strongbox
 								i(126253),	-- Warmongering Aspirant's Accolade of Conquest
 								i(126254),	-- Warmongering Aspirant's Accolade of Dominance
 								i(126257),	-- Warmongering Aspirant's Accolade of Endurance
@@ -953,13 +953,13 @@ _.Zones =
 								i(126229),	-- Warmongering Aspirant's Warboots of Cruelty
 							}),
 						},
-						["questID"] = 35940, -- Orc Tooth
+						["questID"] = 35940,	-- Orc Tooth
 						["repeatable"] = true,
 						["races"] = ALLIANCE_ONLY,
 					}),
-					i(112113, { -- Pandaren Hide
+					i(112113, {	-- Pandaren Hide
 						["groups"] = {
-							i(128216, { -- Dented Ashmaul Strongbox
+							i(128216, {	-- Dented Ashmaul Strongbox
 								["groups"] = {
 									i(126253),	-- Warmongering Aspirant's Accolade of Conquest
 									i(126254),	-- Warmongering Aspirant's Accolade of Dominance
@@ -1049,7 +1049,7 @@ _.Zones =
 								},
 								["races"] = ALLIANCE_ONLY,
 							}),
-							i(128215, { -- Dented Ashmaul Strongbox
+							i(128215, {	-- Dented Ashmaul Strongbox
 								["groups"] = {
 									i(134705),	-- Surging Chain Leggings
 									i(126730),	-- Warmongering Aspirant's Accolade of Conquest
@@ -1157,12 +1157,12 @@ _.Zones =
 								["races"] = HORDE_ONLY,
 							}),
 						},
-						["questID"] = 35942, -- Pandaren Hide
+						["questID"] = 35942,	-- Pandaren Hide
 						["repeatable"] = true,
 					}),
-					i(112124, { -- Severed Night Elf Head
+					i(112124, {	-- Severed Night Elf Head
 						["groups"] = {
-							i(128215, { -- Dented Ashmaul Strongbox
+							i(128215, {	-- Dented Ashmaul Strongbox
 								i(134705),	-- Surging Chain Leggings
 								i(126730),	-- Warmongering Aspirant's Accolade of Conquest
 								i(126253),	-- Warmongering Aspirant's Accolade of Conquest
@@ -1267,13 +1267,13 @@ _.Zones =
 								i(126252),	-- Warmongering Aspirant's Signet of Endurance
 							}),
 						},
-						["questID"] = 36033, -- Severed Night Elf Head
+						["questID"] = 36033,	-- Severed Night Elf Head
 						["repeatable"] = true,
 						["races"] = HORDE_ONLY,
 					}),
-					i(112123, { -- Tauren Hoof
+					i(112123, {	-- Tauren Hoof
 						["groups"] = {
-							i(128216, { -- Dented Ashmaul Strongbox
+							i(128216, {	-- Dented Ashmaul Strongbox
 								i(126253),	-- Warmongering Aspirant's Accolade of Conquest
 								i(126254),	-- Warmongering Aspirant's Accolade of Dominance
 								i(126257),	-- Warmongering Aspirant's Accolade of Endurance
@@ -1361,13 +1361,13 @@ _.Zones =
 								i(126229),	-- Warmongering Aspirant's Warboots of Cruelty
 							}),
 						},
-						["questID"] = 35939, -- Tauren Hoof
+						["questID"] = 35939,	-- Tauren Hoof
 						["repeatable"] = true,
 						["races"] = ALLIANCE_ONLY,
 					}),
-					i(112120, { -- Troll Feet
+					i(112120, {	-- Troll Feet
 						["groups"] = {
-							i(128216, { -- Dented Ashmaul Strongbox
+							i(128216, {	-- Dented Ashmaul Strongbox
 								i(126253),	-- Warmongering Aspirant's Accolade of Conquest
 								i(126254),	-- Warmongering Aspirant's Accolade of Dominance
 								i(126257),	-- Warmongering Aspirant's Accolade of Endurance
@@ -1455,13 +1455,13 @@ _.Zones =
 								i(126229),	-- Warmongering Aspirant's Warboots of Cruelty
 							}),
 						},
-						["questID"] = 35941, -- Troll Feet
+						["questID"] = 35941,	-- Troll Feet
 						["repeatable"] = true,
 						["races"] = ALLIANCE_ONLY,
 					}),
-					i(112127, { -- Tuft of Gnome Hair
+					i(112127, {	-- Tuft of Gnome Hair
 						["groups"] = {
-							i(128215, { -- Dented Ashmaul Strongbox
+							i(128215, {	-- Dented Ashmaul Strongbox
 								i(134705),	-- Surging Chain Leggings
 								i(126730),	-- Warmongering Aspirant's Accolade of Conquest
 								i(126253),	-- Warmongering Aspirant's Accolade of Conquest
@@ -1566,13 +1566,13 @@ _.Zones =
 								i(126252),	-- Warmongering Aspirant's Signet of Endurance
 							}),
 						},
-						["questID"] = 36040, -- Tuft of Gnome Hair
+						["questID"] = 36040,	-- Tuft of Gnome Hair
 						["repeatable"] = true,
 						["races"] = HORDE_ONLY,
 					}),
-					i(112119, { -- Worgen Snout
+					i(112119, {	-- Worgen Snout
 						["groups"] = {
-							i(128215, { -- Dented Ashmaul Strongbox
+							i(128215, {	-- Dented Ashmaul Strongbox
 								i(134705),	-- Surging Chain Leggings
 								i(126730),	-- Warmongering Aspirant's Accolade of Conquest
 								i(126253),	-- Warmongering Aspirant's Accolade of Conquest
@@ -1677,45 +1677,45 @@ _.Zones =
 								i(126252),	-- Warmongering Aspirant's Signet of Endurance
 							}),
 						},
-						["questID"] = 36884, -- Worgen Snout
+						["questID"] = 36884,	-- Worgen Snout
 						["repeatable"] = true,
 						["races"] = HORDE_ONLY,
 					}),
 				}),
 				n(-16, { 	-- Rares
-				--	n(82876, { -- Grand Marshal Tremblade	}), 
-				--	n(82877, { -- High Warlord Volrath	}), 
-				--	n(82878, { -- Marshal Gabriel	}), 
-				--	n(82880, { -- Marshal Karsh Stormforge	}), 
-				--	n(82882, { -- General Aevd	}), 
-				--	n(82883, { -- Warlord Noktyn	}), 
-				--	n(83683, { -- Mandragoraster	}), 
-				--	n(83691, { -- Panthora	}), 
-				--	n(83713, { -- Titarus	}), 
-				--	n(83819, { -- Brickhouse	}), 
-				--	n(84110, { -- Korthall Soulgorger	}), 
-				--	n(84196, { -- Web-wrapped Soldier	}), 
-				--	n(84465, { -- Leaping Gorger	}), 
-				--	n(84746, { -- Captured Gor'vosh Stoneshaper	}), 
-				--	n(84854, { -- Slippery Slime	}), 
-				--	n(84875, { -- Ancient Inferno	}), 
-				--	n(84893, { -- Goregore	}), 
-				--	n(84904, { -- Oraggro	}), 
-				--	n(84926, { -- Burning Power	}), 
-				--	n(85763, { -- Cursed Ravager	}), 
-				--	n(85765, { -- Cursed Kaliri	}), 
-				--	n(85766, { -- Cursed Sharptalon	}), 
-				--	n(85767, { -- Cursed Harbinger	}), 
-				--	n(85771, { -- Elder Darkweaver Kath	}), 
-				--	n(87362, { -- Gibby	}), 
-				--	n(91921, { -- Wyrmple	}), 
-				--	n(94113, { -- Rukmaz	}),
+				--	n(82876, {	-- Grand Marshal Tremblade	}), 
+				--	n(82877, {	-- High Warlord Volrath	}), 
+				--	n(82878, {	-- Marshal Gabriel	}), 
+				--	n(82880, {	-- Marshal Karsh Stormforge	}), 
+				--	n(82882, {	-- General Aevd	}), 
+				--	n(82883, {	-- Warlord Noktyn	}), 
+				--	n(83683, {	-- Mandragoraster	}), 
+				--	n(83691, {	-- Panthora	}), 
+				--	n(83713, {	-- Titarus	}), 
+				--	n(83819, {	-- Brickhouse	}), 
+				--	n(84110, {	-- Korthall Soulgorger	}), 
+				--	n(84196, {	-- Web-wrapped Soldier	}), 
+				--	n(84465, {	-- Leaping Gorger	}), 
+				--	n(84746, {	-- Captured Gor'vosh Stoneshaper	}), 
+				--	n(84854, {	-- Slippery Slime	}), 
+				--	n(84875, {	-- Ancient Inferno	}), 
+				--	n(84893, {	-- Goregore	}), 
+				--	n(84904, {	-- Oraggro	}), 
+				--	n(84926, {	-- Burning Power	}), 
+				--	n(85763, {	-- Cursed Ravager	}), 
+				--	n(85765, {	-- Cursed Kaliri	}), 
+				--	n(85766, {	-- Cursed Sharptalon	}), 
+				--	n(85767, {	-- Cursed Harbinger	}), 
+				--	n(85771, {	-- Elder Darkweaver Kath	}), 
+				--	n(87362, {	-- Gibby	}), 
+				--	n(91921, {	-- Wyrmple	}), 
+				--	n(94113, {	-- Rukmaz	}),
 				}),
 				--]]
 				n(-2, {		-- Vendors
 					na(80882, {	-- Crafticus Mindbender <Stormshield Quartermaster>
 						["groups"] = {
-							currency(823, { -- Apexis Crystal
+							currency(823, {	-- Apexis Crystal
 								["groups"] = {
 									un(2, i(116776)),	-- Pale Thorngrazer (Rep removed from Medallion of the Legion in hotfix for 8.0)
 								},
@@ -1724,12 +1724,12 @@ _.Zones =
 						},
 					}),
 					nh(85115, {	-- Dazzerian <Warspear Quartermaster>
-						currency(823, { -- Apexis Crystal
+						currency(823, {	-- Apexis Crystal
 							un(2, i(116775)),	-- Breezestrider Stallion (Rep removed from Medallion of the Legion in hotfix for 8.0)
 						}),
 						i(115518),	-- Vol'jin's Spear Tabard
 					}),
-					na(82876, { -- Grand Marshal Tremblade Elite S1-S2-S3
+					na(82876, {	-- Grand Marshal Tremblade Elite S1-S2-S3
 						["groups"] = {
 							un(14, i(120286)),	-- Enchanter's Illusion - Glorious Tyranny
 							un(14, i(120287)),	-- Enchanter's Illusion - Primal Victory
@@ -2178,9 +2178,9 @@ _.Zones =
 							un(2, i(126898)),	-- warmongering gladiator's dragonhide footguards
 							un(2, i(126899)),	-- warmongering gladiator's dragonhide belt
 						},
-						["u"] = 2, -- Vendor doesn't sell anything in 7.0+
+						["u"] = 2,	-- Vendor doesn't sell anything in 7.0+
 					}),
-					nh(82877, { -- High Warlord Volrath Elite Season 1/S1 - Season 2/S2 - Season 3/S3 -
+					nh(82877, {	-- High Warlord Volrath Elite Season 1/S1 - Season 2/S2 - Season 3/S3 -
 						["groups"] = {
 							un(14, i(120286)),	-- Enchanter's Illusion - Glorious Tyranny
 							un(14, i(120287)),	-- Enchanter's Illusion - Primal Victory
@@ -2629,7 +2629,7 @@ _.Zones =
 							un(2, i(126898)),	-- warmongering gladiator's dragonhide footguards
 							un(2, i(126899)),	-- warmongering gladiator's dragonhide belt
 						},
-						["u"] = 2, -- Vendor doesn't sell anything in 7.0+
+						["u"] = 2,	-- Vendor doesn't sell anything in 7.0+
 					}),
 				}),
 			},

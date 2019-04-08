@@ -12,9 +12,9 @@ To do:
 
 _.Achievements = 
 {
-	n(-9958, { -- Player vs Player
+	n(-9958, {	-- Player vs Player
 		["groups"] = {
-			n(-9983, { -- Honor
+			n(-9983, {	-- Honor
 				["groups"] = {
 					ach(12893, {	-- Honor Level 5
 						i(142379),	-- Dutiful Squire

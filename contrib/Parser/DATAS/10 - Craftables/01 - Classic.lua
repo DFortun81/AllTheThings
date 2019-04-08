@@ -3,7 +3,7 @@
 -----------------------------------------------------
 _.Craftables =
 {
-	tier(1, { -- Classic
+	tier(1, {	-- Classic
 		n(-180, {	-- Alchemy
 			filter(53, {	-- Trinket
 				{	-- Philosopher's Stone
@@ -493,7 +493,7 @@ _.Craftables =
 					["itemID"] = 20549,	-- Darkrune Gauntlets
 				},
 				{	-- Fiery Plate Gauntlets
-					["itemID"] = 12631, -- Fiery Plate Gauntlets
+					["itemID"] = 12631,	-- Fiery Plate Gauntlets
 					["u"] = 8,
 				},
 				{	-- Gemmed Copper Gauntlets
@@ -721,13 +721,13 @@ _.Craftables =
 			}),
 		}),
 		n(-182, { 	-- Enchanting
-			filter(27, { -- Wands
+			filter(27, {	-- Wands
 				i(11288),	-- Greater Magic Wand
 				i(11290),	-- Greater Mystic Wand
 				i(11287),	-- Lesser Magic Wand
 				i(11289),	-- Lesser Mystic Wand
 			}),
-			filter(53, { -- Trinket
+			filter(53, {	-- Trinket
 				i(11811),	-- Smoking Heart of the Mountain
 			}),
 		}),
@@ -824,7 +824,7 @@ _.Craftables =
 		}),
 		n(-185, { 	-- Inscription
 		-- Reviewed and updated as of 11.21.2018 BfA 8.0
-			n(-491, { -- Tarot Cards
+			n(-491, {	-- Tarot Cards
 				{	-- Arcane Tarot
 					["spellID"] = 59487,	-- Arcane Tarot
 					["g"] = {
@@ -1397,7 +1397,7 @@ _.Craftables =
 			}),
 		}),
 		n(-190, { 	-- Tailoring
-			filter(113, { -- Bags
+			filter(113, {	-- Bags
 				i(5765),	-- Black Silk Pack
 				i(14156),	-- Bottomless Bag
 				i(22251),	-- Cenarion Herb Bag

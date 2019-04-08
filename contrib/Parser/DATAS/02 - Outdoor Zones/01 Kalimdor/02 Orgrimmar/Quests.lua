@@ -430,7 +430,7 @@ _.Zones =
 									},
 									--[[
 									{	-- A Second Ally For the Cause
-										["questID"] = 50248, -- this is an alliance questID. what was the horde equivalent?
+										["questID"] = 50248,	-- this is an alliance questID. what was the horde equivalent?
 										["u"] = 40,
 										["qg"] = 126065,	-- Lady Sylvanas Windrunner
 										["races"] = HORDE_ONLY,

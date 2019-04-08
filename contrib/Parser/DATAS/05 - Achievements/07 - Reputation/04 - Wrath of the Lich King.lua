@@ -12,9 +12,9 @@ To do:
 
 _.Achievements = 
 {
-	n(-9961, { -- Reputation
+	n(-9961, {	-- Reputation
 		["groups"] = {
-			n(-10014, { -- Wrath of the Lich King
+			n(-10014, {	-- Wrath of the Lich King
 				["groups"] = {
 					ach(950, { 		-- Frenzyheart Tribe	
 						faction(1104), 	-- Frenzyheart Tribe

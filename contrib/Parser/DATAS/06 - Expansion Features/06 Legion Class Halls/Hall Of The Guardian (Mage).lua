@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.ExpansionFeatures =
 {
-	n(-9965, { -- Legion Class Hall
-		cl(8, { -- Hall of the Guardian (Mage)
+	n(-9965, {	-- Legion Class Hall
+		cl(8, {	-- Hall of the Guardian (Mage)
 			["lvl"] = 98,
 			["maps"] = {
 				734,	-- Hall of the Guardian (Mage)
@@ -43,7 +43,7 @@ _.ExpansionFeatures =
 							["description"] = "If this quest has a checkmark next to it, then that means that you have polymorphed this npc already and can move on to the next one!\n\nTake the Val'Sharah Teleportation Nexus.",
 							["questID"] = 43790,
 						}),
-						n(-159, { -- Daily Event Roll
+						n(-159, {	-- Daily Event Roll
 							["isDaily"] = true,
 							["qg"] = 111704,	-- Cote "Shepherd" Metcalf
 							["questID"] = 43828,	-- "Sheep Summon Daily Roll" on WoWHead
@@ -83,7 +83,7 @@ _.ExpansionFeatures =
 							["questID"] = 43658,	-- Done!
 							["groups"] = {
 								i(139558, {	-- The Woolomancer's Charge
-									artifact(846), -- Arcane Mage Hidden Appearance
+									artifact(846),	-- Arcane Mage Hidden Appearance
 								}),
 							}
 						}),
@@ -100,7 +100,7 @@ _.ExpansionFeatures =
 						641,	-- Val'Sharah
 					},
 					["groups"] = {
-						n(-159, { -- Daily Event Roll
+						n(-159, {	-- Daily Event Roll
 							["isDaily"] = true,
 							["isBreadcrumb"] = true,
 							["questID"] = 44384,	-- "Daily Portal Event Roll" on WoWHead
@@ -109,10 +109,10 @@ _.ExpansionFeatures =
 						}),
 						n(113513, {	-- Asher <Fury of Frostfire>
 							["description"] = "If this quest has a checkmark next to it, then that means the scenario portal is active. He only appears in a special phase in Frostfire Ridge upon taking the portal.",
-							["sourceQuests"] = { 44384 }, -- Daily Portal Event Roll
+							["sourceQuests"] = { 44384 },	-- Daily Portal Event Roll
 							["groups"] = {
 								i(139560, {	-- Everburning Crystal
-									artifact(180), -- Frost Mage Hidden Appearance
+									artifact(180),	-- Frost Mage Hidden Appearance
 								}),
 							},
 						}),
@@ -184,7 +184,7 @@ _.ExpansionFeatures =
 					a(ach(10743)),	-- The Prestige (Alliance) [Still in WoW UI as of 8.0]
 					h(ach(10745)),	-- The Prestige (Horde) [Still in WoW UI as of 8.0]
 				}),
-				n(-17, { -- Quests
+				n(-17, {	-- Quests
 					qart(qg(103092, q(41141, { 	-- A Conjuror's Duty (mage class hall)
 						["classes"] = {8},
 					}))),					
@@ -207,7 +207,7 @@ _.ExpansionFeatures =
 					qa( 42433),	-- Ancient Magic
 					q(42126),	-- Archmage Omniara
 					q(42956, {	-- Ari's Package
-						i(141880), -- Ari's Wooden Ring
+						i(141880),	-- Ari's Wooden Ring
 					}),
 					q(46000),	-- Arming Dalaran
 					qa( 45844),	-- Avocation of Antonidas
@@ -303,30 +303,30 @@ _.ExpansionFeatures =
 					q(44058),	-- Volpin the Elusive
 					q(42940),	-- When There's a Will, There's a Way
 					q(45179),	-- Win the Crowd										
-					q(45354, { -- Dispersion of the Discs
+					q(45354, {	-- Dispersion of the Discs
 						["lvl"] = 110,
 						["classes"] = {8},
 						["groups"] = {
-							{ ["mountID"] = 229376 }, -- Archmage's Prismatic Discs
+							{ ["mountID"] = 229376 },	-- Archmage's Prismatic Discs
 						},
 					}),
-					q(44240, { -- Orange is the New Purple
-						i(139749), -- Cowl of Tirisgarde
+					q(44240, {	-- Orange is the New Purple
+						i(139749),	-- Cowl of Tirisgarde
 					}),
-					q(42734, { -- Into the Oculus
-						i(139751), -- Robes of Tirisgarde
+					q(42734, {	-- Into the Oculus
+						i(139751),	-- Robes of Tirisgarde
 					}),
-					q(42520, { -- A Terrible Loss
-						i(139754), -- Bracers of Tirisgard
+					q(42520, {	-- A Terrible Loss
+						i(139754),	-- Bracers of Tirisgard
 					}),
 					--[[ Artifact Appearance  Quests Commented Out For Now
-					q(43415, { -- A Hero's Weapon
+					q(43415, {	-- A Hero's Weapon
 						sp(219663) -- Heroic Weapons [No item associated]
 					}),
 					--]]
 				}),
 				--[[
-				n(98695, { -- Scouting Map
+				n(98695, {	-- Scouting Map
 					["groups"] = {
 						-- Blank for Class Only Missions in the future
 					},
@@ -334,29 +334,29 @@ _.ExpansionFeatures =
 					["modelScale"] = 2.5,
 				}),
 				]]--
-				n(-2, { --  Vendors
-					n(112440, { -- Jackson Watkins <Tirisgarde Quartermaster>
-						gs(516, { -- Vesture of Tirisgarde
-							i(139749), -- Head
-							i(139752), -- Shoulders
-							i(139751), -- Chest
-							i(139754), -- Bracers
-							i(139748), -- Hands
-							i(139753), -- Belt
-							i(139750), -- Legs
-							i(139747), -- Feet		
+				n(-2, {	--  Vendors
+					n(112440, {	-- Jackson Watkins <Tirisgarde Quartermaster>
+						gs(516, {	-- Vesture of Tirisgarde
+							i(139749),	-- Head
+							i(139752),	-- Shoulders
+							i(139751),	-- Chest
+							i(139754),	-- Bracers
+							i(139748),	-- Hands
+							i(139753),	-- Belt
+							i(139750),	-- Legs
+							i(139747),	-- Feet		
 						}),
-						i(140550), -- Archmage's Battle Staff
+						i(140550),	-- Archmage's Battle Staff
 						currency(1220, {	-- Order Resources
 							i(143727),	-- Champion's Salute Toy
 							i(124124),	-- Blood of Sargeras
 						}),
 					}),
-					n(103169, { -- Uthel'nay
+					n(103169, {	-- Uthel'nay
 						["classes"] = {8},
 						["description"] = "|c808080FAThis toy is only available to mages who have completed|r |cFFFFD700Dispersion of the Discs|r |c808080FAquest from the class mount campaign.",
 						["groups"] = {
-							i(147832), -- Magical Saucer Toy
+							i(147832),	-- Magical Saucer Toy
 						},
 					}),
 				}),

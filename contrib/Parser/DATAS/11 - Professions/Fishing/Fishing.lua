@@ -39,7 +39,7 @@ profession(356, { 	-- Fishing
 	n(-167, { 	-- Fishing Poles
 		["groups"] = {	
 			desc(i(19970), "Reward from winning Stranglethorn Fishing Extravaganza."),	-- Arcanite Fishing Pole
-			desc(i(45991), "Can be obtained via a drop from the lunarfall or frostdeep cavedweller's in the garrison."), -- Bone Fishing Pole
+			desc(i(45991), "Can be obtained via a drop from the lunarfall or frostdeep cavedweller's in the garrison."),	-- Bone Fishing Pole
 			desc(a(i(116826)), "Bought from Nat Pagle in Garrison once a Friend for 25 Nat's Lucky Coin."),	-- Draenic Fishing Pole
 			desc(i(84661), "Bought from Nat Pagle in Krasarang Wilds after obtaining Revered with The Anglers for 400g."),	-- Dragon Fishing Pole
 			desc(i(45992), "Drop from Lunarfall or Frostdeep Cavedwellers in the garrison."),	-- Jeweled Fishing Pole
@@ -261,7 +261,7 @@ profession(356, { 	-- Fishing
 		i(133704, {		-- Rusty Queenfish Brooch
 			["description"] = "This item will give you a buff that will allow you to see and fish from Ghostly Queenfish schools.",
 			["groups"] = {
-				spell(201807, { -- Rusty Queenfish Brooch (Buff)
+				spell(201807, {	-- Rusty Queenfish Brooch (Buff)
 					{
 						["achievementID"] = 10596,	-- Bigger Fish to Fry
 						["criteriaID"] = 6,			-- Ghostly Queenfish (Criteria)
@@ -398,18 +398,18 @@ profession(356, { 	-- Fishing
 		}),
 		desc(i(152912),	"Can be obtained fishing from green water in Argus."),	-- Pond Nettle
 		desc(i(23720), "Can be obtained via a drop from the lunarfall or frostdeep cavedweller's in the garrison."), 	-- Riding Turtle
-		desc(i(46109), "Can be obtained fishing in any zone added from northrend to date. Also has a chance to drop from the lunarfall or frostdeep cavedweller's in the garrison."), -- Sea Turtle Mount
+		desc(i(46109), "Can be obtained fishing in any zone added from northrend to date. Also has a chance to drop from the lunarfall or frostdeep cavedweller's in the garrison."),	-- Sea Turtle Mount
 		
 	}),
 	n(-162, { 	-- Pets
 		desc(p(174), "The [Bag of Fishing Treasures] that drops this pet can be obtained by completing the daily fishing quest [70]Crocolisks in the City. Level 70+ is required to obtain the quest, but a Fishing skill of 1+ is all that's required to complete it. Note that this daily quest is randomly available among four other daily fishing quests."),	-- Chuck
 		desc(p(193), "Can be obtained from fishing in the underbelly in Dalaran(Northrend)."),	-- Giant Sewer Rat
-		desc(p(115), "Can be bought from Nat Pagle in Garrison after becoming Good Friends for 50 Nat's Lucky Coin"), -- Land Shark
+		desc(p(115), "Can be bought from Nat Pagle in Garrison after becoming Good Friends for 50 Nat's Lucky Coin"),	-- Land Shark
 		desc(p(132), "Can be obtained via Magical Crawdad box that is a possible reward after fishing up Mr. Pinchy."),	-- Magical Crawdad
-		desc(p(164), "The [Bag of Fishing Treasures] that drops this pet can be obtained by completing the daily fishing quest [70]Crocolisks in the City. Level 70+ is required to obtain the quest, but a Fishing skill of 1+ is all that's required to complete it. Note that this daily quest is randomly available among four other daily fishing quests."), -- Muckbreath
+		desc(p(164), "The [Bag of Fishing Treasures] that drops this pet can be obtained by completing the daily fishing quest [70]Crocolisks in the City. Level 70+ is required to obtain the quest, but a Fishing skill of 1+ is all that's required to complete it. Note that this daily quest is randomly available among four other daily fishing quests."),	-- Muckbreath
 		desc(p(1448), "Can be bought from Nat Pagle in Garrison after becoming Good Friends for 50 Nat's Lucky Coin"), 	-- Sea Calf
 		desc(p(340), "Can be fished from Darkmoon Island open water while the Darkmoon Faire is in town."),	-- Sea Pony
-		desc(p(173), "The [Bag of Fishing Treasures] that drops this pet can be obtained by completing the daily fishing quest [70]Crocolisks in the City. Level 70+ is required to obtain the quest, but a Fishing skill of 1+ is all that's required to complete it. Note that this daily quest is randomly available among four other daily fishing quests."), -- Snarly
+		desc(p(173), "The [Bag of Fishing Treasures] that drops this pet can be obtained by completing the daily fishing quest [70]Crocolisks in the City. Level 70+ is required to obtain the quest, but a Fishing skill of 1+ is all that's required to complete it. Note that this daily quest is randomly available among four other daily fishing quests."),	-- Snarly
 		desc(p(211), "Can be looted Bag of Fishing Treasures or Bag of Shiny Things."), 	-- Strand Crawler
 		desc(p(1207), "This pet can be fished up from Jewel Danio Schools and Redbelly Mandarin Schools. Additionally, it can be caught by casting into the Fish of the Day in Townlong Steppes and the Vale of Eternal Blossoms. Another way to obtain this pet is by fishing from inland open water in Townlong Steppes and the Vale of Eternal Blossoms."),	-- Tiny Blue Carp
 		desc(p(652), "This pet can be bought from Nat Pagle in Krasarang Wilds after obtaining The Anglers Honored Reputation for 200g."),	-- Tiny Goldfish
@@ -424,7 +424,7 @@ profession(356, { 	-- Fishing
 		desc(i(6360), "Can be caught in Darkmoon Island, Northern Stranglethorn, and Wetlands in open water."),	-- Steelscale Crushfish
 		desc(i(19808), "Can be caught in The Cape of Stranglethorn or Northern Stranglethorn during the Stranglethorn Fishing Extravaganza from pools."), 	-- Rockhide Strongfish
 		desc(i(44505), "Can be caught in schools or open water in Northrend."),	-- Dustbringer
-		desc(i(44703), "Can be caught from Fangtooth Herring Schools in Howling Fjord."), -- Dark Herring
+		desc(i(44703), "Can be caught from Fangtooth Herring Schools in Howling Fjord."),	-- Dark Herring
 	}),
 	--[[
 	tier(1, {	-- Classic
@@ -447,7 +447,7 @@ profession(356, { 	-- Fishing
 		faction(1975, {	-- Conjurer Margoss
 			["groups"] = {
 				q(42911),	-- Drowned Mana (Quest)
-				i(138777, { -- Drowned Mana
+				i(138777, {	-- Drowned Mana
 					i(138811),	-- Brinedeep Bottom Feeder Mount
 					i(142532),	-- Crate of Bobbers: Murloc Head Toy
 					i(142531),	-- Crate of Bobbers: Squeaky Duck Toy
@@ -459,14 +459,14 @@ profession(356, { 	-- Fishing
 			["requireSkill"] = 356,
 			["creatureID"] = 108825
 		}),
-		spell(201943, { -- Better Luck Next Time
+		spell(201943, {	-- Better Luck Next Time
 			["groups"] = {
-				i(139408), -- Deck Sandals
-				i(139406), -- Sea Dog Boots
-				i(139407), -- Diver's Chain Boots
-				i(139405), -- Kul'Tiras Marine Issue Boots
+				i(139408),	-- Deck Sandals
+				i(139406),	-- Sea Dog Boots
+				i(139407),	-- Diver's Chain Boots
+				i(139405),	-- Kul'Tiras Marine Issue Boots
 			},
-			["maps"] = { 630, 646, 790, 650, 634, 680, 641 }, -- Azsuna / Broken Shore / Eye of Azshara / Highmountain / Stormheim / Suramar / Val'sharah
+			["maps"] = { 630, 646, 790, 650, 634, 680, 641 },	-- Azsuna / Broken Shore / Eye of Azshara / Highmountain / Stormheim / Suramar / Val'sharah
 		}),
 		ach(10596, {	-- Bigger Fish to Fry
 			{
@@ -665,8 +665,8 @@ profession(356, { 	-- Fishing
 			faction(2100, {	-- Corbyn
 				["groups"] = {
 					i(146961, {		-- Shiny Bauble
-						i(147307), -- Carved Wooden Helm
-						i(152574), -- Corbyn's Beacon
+						i(147307),	-- Carved Wooden Helm
+						i(152574),	-- Corbyn's Beacon
 					}),
 				},
 				["description"] = "This Fisherfriend NPC is located at: |cFFFFFFFF90.5, 10.7|r on Shield's Rest.\n\nThe Fisherfriend NPC's will not always be up and only one is up at any given time.  You will have to either travel to the zone, ask a friend or check group finder to see if they are up.\n\nWhen fishing for the item for this particular fisherfriend make sure that you are close enough so that you recive the buff |cFFFFD700Something's Fishy|r, otherwise you won't be able to receive the turn-in items or the boss that is summoned.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",
@@ -687,8 +687,8 @@ profession(356, { 	-- Fishing
 			faction(2102, {	-- Impus
 				["groups"] = {
 					i(146963, {		-- Desecrated Seaweed
-						i(147312), -- Demon Noggin
-						i(152554), -- Desecrated Seaweed Shirt
+						i(147312),	-- Demon Noggin
+						i(152554),	-- Desecrated Seaweed Shirt
 					}),
 				},
 				["description"] = "This Fisherfriend NPC is located at: |cFFFFFFFF34.0, 54.0|r on Deadwood Landing.\n\nThe Fisherfriend NPC's will not always be up and only one is up at any given time.  You will have to either travel to the zone, ask a friend or check group finder to see if they are up.\n\nWhen fishing for the item for this particular fisherfriend make sure that you are close enough so that you receive the buff |cFFFFD700Something's Fishy|r, otherwise you won't be able to receive the turn-in items or the boss that is summoned.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",

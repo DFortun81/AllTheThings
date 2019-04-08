@@ -89,7 +89,7 @@ _.Zones =
 									}),
 									q(48934, {	-- Mark of the Damned
 										["sourceQuests"] = { 47493 },	-- A Lonely Spirit
-										["icon"] = "Interface\\Icons\\Ability_Warrior_OffensiveStance", -- Let's make the bonus objective icon look pretty
+										["icon"] = "Interface\\Icons\\Ability_Warrior_OffensiveStance",	-- Let's make the bonus objective icon look pretty
 									}),
 									q(47491, {	-- Remnants of the Damned
 										["qg"] = 122688,	-- Bwonsamdi
@@ -212,7 +212,7 @@ _.Zones =
 										["sourceQuests"] = { 49081 },	-- To Kill a Loa
 									}),
 									q(49406, {	-- Zalamar Slaughter
-										["icon"] = "Interface\\Icons\\Ability_Warrior_OffensiveStance", -- Let's make the bonus objective icon look pretty
+										["icon"] = "Interface\\Icons\\Ability_Warrior_OffensiveStance",	-- Let's make the bonus objective icon look pretty
 										["sourceQuests"] = {
 											48801,	-- Isolating Zalamar
 											48890,	-- How to Be a Blood Troll
@@ -300,7 +300,7 @@ _.Zones =
 										["sourceQuests"] = { 49136 },	-- Jungo, Herald of G'huun
 									}),
 									q(51689, {	-- Tortollan Rescue
-										["icon"] = "Interface\\Icons\\Ability_Warrior_OffensiveStance", -- Let's make the bonus objective icon look pretty
+										["icon"] = "Interface\\Icons\\Ability_Warrior_OffensiveStance",	-- Let's make the bonus objective icon look pretty
 										["sourceQuests"] = { 49120 },	-- Speaking with the Dead
 									}),
 								},
@@ -370,7 +370,7 @@ _.Zones =
 										["sourceQuests"] = { 47918 },	-- To Serve Krag'wa
 									}),
 									q(48093, {	-- Nagating the Threat [Note: One of 3 final Quest needed to trigger criteria]
-										["icon"] = "Interface\\Icons\\Ability_Warrior_OffensiveStance", -- Let's make the bonus objective icon look pretty
+										["icon"] = "Interface\\Icons\\Ability_Warrior_OffensiveStance",	-- Let's make the bonus objective icon look pretty
 										["sourceQuests"] = { 47918 },	-- To Serve Krag'wa
 									}),
 									q(47525, {	-- Staying Hidden
@@ -467,7 +467,7 @@ _.Zones =
 										["sourceQuests"] = { 47631 },	-- Rendezvous with the Libation
 									}),
 									q(47756, {	-- The Libation's Liberation
-										["icon"] = "Interface\\Icons\\Ability_Warrior_OffensiveStance", -- Let's make the bonus objective icon look pretty
+										["icon"] = "Interface\\Icons\\Ability_Warrior_OffensiveStance",	-- Let's make the bonus objective icon look pretty
 										["sourceQuests"] = { 47631 },	-- Rendezvous with the Libation
 									}),
 									q(47596, {	-- There Is No Plan "B"
@@ -874,7 +874,7 @@ _.Zones =
 					},
 					{	-- Mawfiend Extermination
 						["questID"] = 47996,
-						["icon"] = "Interface\\Icons\\Ability_Warrior_OffensiveStance", -- Let's make the bonus objective icon look pretty
+						["icon"] = "Interface\\Icons\\Ability_Warrior_OffensiveStance",	-- Let's make the bonus objective icon look pretty
 					},
 					{	-- Necessity is the MOTHER
 						["questID"] = 54940,

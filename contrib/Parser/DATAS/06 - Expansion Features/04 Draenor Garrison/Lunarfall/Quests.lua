@@ -3,7 +3,7 @@
 -------------------------------------------------------------------
 _.ExpansionFeatures =
 {
-	n(-9966, { -- Draenor Garrisons
+	n(-9966, {	-- Draenor Garrisons
 		m(582, {	-- Lunarfall
 			["g"] = {	
 				na(-17, { 	-- Quests
@@ -116,10 +116,10 @@ _.ExpansionFeatures =
 						},
 						{	-- Subversive Infestation
 							["questID"] = 36813,
-							["qg"] = 84889, -- Phylarch the Evergreen
+							["qg"] = 84889,	-- Phylarch the Evergreen
 							["description"] = "This Quest requires a Level 3 Lumber Mill as well as the Follower Phylarch the Green either active or attached to the Lumber Mill.",
 							["g"] = {
-								i(117398), -- Everbloom Seed Pouch
+								i(117398),	-- Everbloom Seed Pouch
 							},
 						},
 						{	-- The Rise and Fall of Barov Industries: Weldon Barov
@@ -149,7 +149,7 @@ _.ExpansionFeatures =
 						},
 					}),
 					garrisonBuilding(36, {	-- Frostwall Tavern (rank 1: 34, rank 2: 35, rank 3: 36)
-						desc(i(119036, { -- Box of Storied Treasures [4]
+						desc(i(119036, {	-- Box of Storied Treasures [4]
 							i(109957),	-- Alc's Pendant of Fiery Dreams
 							i(109779),	-- Ancient Draenic Loop
 							i(109768),	-- Band of Growing Leaves
@@ -351,7 +351,7 @@ _.ExpansionFeatures =
 							i(109877),	-- Verdant Plate Wristguards
 							i(109953),	-- Windseal Necklace
 						}), "Commonly rewarded from quests provided from the Inn."),
-						desc(i(119037, { -- Supply of Storied Rarities [16]
+						desc(i(119037, {	-- Supply of Storied Rarities [16]
 							i(109957),	-- Alc's Pendant of Fiery Dreams
 							i(109779),	-- Ancient Draenic Loop
 							i(109768),	-- Band of Growing Leaves
@@ -555,43 +555,43 @@ _.ExpansionFeatures =
 						}), "Commonly rewarded from quests provided from the Inn."),
 						q(37228, {	-- A Fruitful Proposition			
 							["g"] = {
-								i(119037), -- Supply of Storied Rarities
+								i(119037),	-- Supply of Storied Rarities
 							},		
-							["qg"] = 87991, -- Cro Threadstrong	
-							["sourceQuests"] = { 37152 }, -- Cro's Revenge
+							["qg"] = 87991,	-- Cro Threadstrong	
+							["sourceQuests"] = { 37152 },	-- Cro's Revenge
 							["modID"] = 2,
 							["repeatable"] = true,
 						}),	
 						q(37237, {	-- A Hero's Quest is Never Complete			
 							["g"] = {
-								i(119037), -- Supply of Storied Rarities
+								i(119037),	-- Supply of Storied Rarities
 							},
-							["qg"] = 88001, -- Maximillian of Northshire
-							["sourceQuests"] = { 37162 }, -- Damsels and Dragons
+							["qg"] = 88001,	-- Maximillian of Northshire
+							["sourceQuests"] = { 37162 },	-- Damsels and Dragons
 							["modID"] = 2,
 							["repeatable"] = true,
 						}),
 						q(37235, {	-- A Plea to the Sky			
 							["g"] = {
-								i(119037), -- Supply of Storied Rarities
+								i(119037),	-- Supply of Storied Rarities
 							},
-							["qg"] = 87999, --  Skylord Omnuron
-							["sourceQuests"] = { 37159 }, -- Avian's Request
+							["qg"] = 87999,	--  Skylord Omnuron
+							["sourceQuests"] = { 37159 },	-- Avian's Request
 							["modID"] = 2,
 							["repeatable"] = true,
 						}),
 						q(37243, {	-- An Axe to Grind			
 							["g"] = {
-								i(119037), -- Supply of Storied Rarities
+								i(119037),	-- Supply of Storied Rarities
 							},	
-							["qg"] = 88007, -- Gamon
-							["sourceQuests"] = { 37160 }, --  Cleaving Time
+							["qg"] = 88007,	-- Gamon
+							["sourceQuests"] = { 37160 },	--  Cleaving Time
 							["modID"] = 2,
 							["repeatable"] = true,
 						}),
 						q(37167, {	-- And No Maces!
 							["g"] = {							
-								i(118924, { -- Cache of Arms
+								i(118924, {	-- Cache of Arms
 									i(114073, {	-- Turbulent Hood
 										i(114448),	-- Fireflash Hood
 										i(114449),	-- Spireflame Hood
@@ -619,26 +619,26 @@ _.ExpansionFeatures =
 									}),
 								}),
 							},
-							["qg"] = 88006, -- Lonika Stillblade
+							["qg"] = 88006,	-- Lonika Stillblade
 						}),
 						q(37159, {	-- Avian's Request
 							["group"] = {
-								i(119093), -- Avian's Feather
+								i(119093),	-- Avian's Feather
 							},
-							["qg"] = 87999, --  Skylord Omnuron
+							["qg"] = 87999,	--  Skylord Omnuron
 						}),
 						q(37230, {	-- Bloody Expensive			
 							["g"] = {
-								i(119037), -- Supply of Storied Rarities
+								i(119037),	-- Supply of Storied Rarities
 							},	
-							["qg"] = 87994, --  Moroes
-							["sourceQuests"] = { 37157 }, -- Feeling A Bit Morose
+							["qg"] = 87994,	--  Moroes
+							["sourceQuests"] = { 37157 },	-- Feeling A Bit Morose
 							["modID"] = 2,
 							["repeatable"] = true,
 						}),
 						q(37145, { 	-- Budd's Gambit
 							["g"] = {
-								i(119041, { -- Strongbox of Mysterious Treasures
+								i(119041, {	-- Strongbox of Mysterious Treasures
 									i(109829),	-- Belt of Burning Focus
 									i(109799),	-- Blackwater Boots
 									i(109823),	-- Blackwater Leggings
@@ -725,34 +725,34 @@ _.ExpansionFeatures =
 									i(109877),	-- Verdant Plate Wristguards
 								}),
 							},
-							["qg"] = 88017, -- Budd
+							["qg"] = 88017,	-- Budd
 							["modID"] = 2,
 							["repeatable"] = true,
 						}),
 						q(37165, {	-- Cenrion Concerns
 							["g"]  = {
-								i(118935), -- Ever-Blooming Frond 
+								i(118935),	-- Ever-Blooming Frond 
 							},
-							["qg"] = 88004, --  Zen'kiki
+							["qg"] = 88004,	--  Zen'kiki
 						}),
 						q(37160, {	-- Cleaving Time
 							["g"] = {
 								i(118937),  -- Gamon's Braid
 							},	
-							["qg"] = 88007, -- Gamon
+							["qg"] = 88007,	-- Gamon
 						}),	
 						q(37151, {	-- Cold Steel
 							["g"] = {
 								i(118918),  -- Bloody Bandann
 							},
-							["qg"] = 88026, -- John J. Keeshan
+							["qg"] = 88026,	-- John J. Keeshan
 						}),	
 						q(37209, {	-- Cold Steel Part II
 							["g"] = {
 								i(119036),  -- Box of Storied Treasures
 							},
-							["qg"] = 88026, -- John J. Keeshan
-							["sourceQuests"] = { 37151 }, -- Cold Steel
+							["qg"] = 88026,	-- John J. Keeshan
+							["sourceQuests"] = { 37151 },	-- Cold Steel
 							["modID"] = 2,
 							["repeatable"] = true,
 						}),
@@ -760,60 +760,60 @@ _.ExpansionFeatures =
 							["g"] = {
 								i(119083),  -- Fruit Basket
 							},	
-							["qg"] = 87991, -- Cro Threadstrong
+							["qg"] = 87991,	-- Cro Threadstrong
 						}),
 						q(37162, {	-- Damsels and Dragons
 							["g"] = {
-								i(118927), -- Maximillian's Laundry
+								i(118927),	-- Maximillian's Laundry
 							},
-							["qg"] = 88001, -- Maximillian of Northshire
+							["qg"] = 88001,	-- Maximillian of Northshire
 						}),
 						q(37161, {	-- Family Traditions
 							["g"] = {
-								i(118926), -- Huge Pile of Skins
+								i(118926),	-- Huge Pile of Skins
 							},	
-							["qg"] = 88000, --  Finkle Einhorn
+							["qg"] = 88000,	--  Finkle Einhorn
 						}),
 						q(37239, {	-- Fate of the Fallen			
 							["g"] = {
 								i(119037),  -- Supply of Storied Rarities
 							},
-							["qg"] = 88003, --  Cowled Ranger
-							["sourceQuests"] = { 37164 }, -- The Huntress
+							["qg"] = 88003,	--  Cowled Ranger
+							["sourceQuests"] = { 37164 },	-- The Huntress
 							["modID"] = 2,
 							["repeatable"] = true,
 						}),
 						q(37157, {	-- Feeling A Bit Morose
 							["g"] = {
-								i(119092), -- Moroes' Famous Polish 
+								i(119092),	-- Moroes' Famous Polish 
 							},
-							["qg"] = 87994, -- Moroes <Tower Steward>
+							["qg"] = 87994,	-- Moroes <Tower Steward>
 						}),	
 						q(37244, {	-- Flamefly Trap
 							["g"] = {
 								i(119036),  -- Box of Storied Treasures
 							},
-							["qg"] = 88024, -- Oralius
-							["sourceQuests"] = { 37148 }, -- Oralius' Adventure
+							["qg"] = 88024,	-- Oralius
+							["sourceQuests"] = { 37148 },	-- Oralius' Adventure
 							["modID"] = 2,
 							["repeatable"] = true,
 						}),
 						q(37150, {	-- For the Birds
 							["g"] = {
-								i(118921), -- Everbloom Peachick
+								i(118921),	-- Everbloom Peachick
 							},
-							["qg"] = 88025, -- Mylune
+							["qg"] = 88025,	-- Mylune
 						}),
 						q(37179, {	-- For the Children!
 							["g"] = {
-								i(118938), -- Manstorm's Duplicator 
-								follower(455), -- Millhouse Manstorm
+								i(118938),	-- Manstorm's Duplicator 
+								follower(455),	-- Millhouse Manstorm
 							},
-							["qg"] = 88009, -- Millhouse Manstorm
+							["qg"] = 88009,	-- Millhouse Manstorm
 						}),
 						q(37146, {	-- Go Fetch
 							["g"] = {
-								i(119042, { -- Crate of Valuable Treasures
+								i(119042, {	-- Crate of Valuable Treasures
 									i(109957),	-- Alc's Pendant of Fiery Dreams
 									i(109779),	-- Ancient Draenic Loop
 									i(109783),	-- Band of the Stalwart Stanchion
@@ -989,55 +989,55 @@ _.ExpansionFeatures =
 									i(109953),	-- Windseal Necklace
 								}),
 							},
-							["qg"] = 88022, -- Johnny Awesome
+							["qg"] = 88022,	-- Johnny Awesome
 							["modID"] = 2,
 							["repeatable"] = true,
 						}),
 						q(37158, { 	-- Gloriously Incandescent
 							["g"] = {
-								i(118928), -- Faintly-Sparkling Cache
+								i(118928),	-- Faintly-Sparkling Cache
 							},	
-							["qg"] = 87998, --  Sunwalker Dezco
+							["qg"] = 87998,	--  Sunwalker Dezco
 						}),
 						q(37242, {	-- Learning Is Painful			
 							["g"] = {
 								i(119037),  -- Supply of Storied Rarities
 							},	
-							["qg"] = 88006, --  Lonika Stillblade
-							["sourceQuests"] = { 37167 }, -- And No Maces!
+							["qg"] = 88006,	--  Lonika Stillblade
+							["sourceQuests"] = { 37167 },	-- And No Maces!
 							["modID"] = 2,
 							["repeatable"] = true,
 						}),
 						q(37241, {	-- Lessons of the Past			
 							["g"] = {
-								i(119037), -- Supply of Storied Rarities
+								i(119037),	-- Supply of Storied Rarities
 							},
-							["qg"] = 88005, --  Lorewalker Cho
-							["sourceQuests"] = { 37166 }, -- Titanic Evolution
+							["qg"] = 88005,	--  Lorewalker Cho
+							["sourceQuests"] = { 37166 },	-- Titanic Evolution
 							["modID"] = 2,
 							["repeatable"] = true,
 						}),
 						q(37229, {	-- Like A Dwarf In A Mine			
 							["g"] = {
-								i(119037), -- Supply of Storied Rarities
+								i(119037),	-- Supply of Storied Rarities
 							},		
-							["qg"] = 87992, --  Olaf
-							["sourceQuests"] = { 37153 }, -- Time-Lost Vikings
+							["qg"] = 87992,	--  Olaf
+							["sourceQuests"] = { 37153 },	-- Time-Lost Vikings
 							["modID"] = 2,
 							["repeatable"] = true,
 						}),
 						q(37236, {	-- Like Father, Like Son			
 							["g"] = {
-								i(119037), -- Supply of Storied Rarities
+								i(119037),	-- Supply of Storied Rarities
 							},	
-							["qg"] = 88000, --  Finkle Einhorn
-							["sourceQuests"] = { 37161 }, -- Family Traditions
+							["qg"] = 88000,	--  Finkle Einhorn
+							["sourceQuests"] = { 37161 },	-- Family Traditions
 							["modID"] = 2,
 							["repeatable"] = true,
 						}),
 						qd(q(37142, {	-- Ogre Ancestry
 							["g"] = {
-								i(119040, { -- Cache of Mingled Treasures
+								i(119040, {	-- Cache of Mingled Treasures
 									i(109829),	-- Belt of Burning Focus
 									i(109799),	-- Blackwater Boots
 									i(109823),	-- Blackwater Leggings
@@ -1125,41 +1125,41 @@ _.ExpansionFeatures =
 									i(109877),	-- Verdant Plate Wristguards
 								}),
 							},
-							["qg"] = 88013, -- Lunk
+							["qg"] = 88013,	-- Lunk
 						})),
 						q(37148, {	-- Oralius' Adventure
 							["g"] = {
-								i(118922), -- Oralius' Whispering Crystal
+								i(118922),	-- Oralius' Whispering Crystal
 							},
-							["qg"] = 88024, -- Oralius
+							["qg"] = 88024,	-- Oralius
 						}),
 						q(37227, {	-- Put a Bird on It
 							["g"] = {
 								i(119036),  -- Box of Storied Treasures
 							},
-							["qg"] = 88025, -- Mylune
-							["sourceQuests"] = { 37150 }, -- For the Birds
+							["qg"] = 88025,	-- Mylune
+							["sourceQuests"] = { 37150 },	-- For the Birds
 							["modID"] = 2,
 							["repeatable"] = true,
 						}),
 						q(37238, {	-- Secrets of Soulbinding			
 							["g"] = {
-								i(119037), -- Supply of Storied Rarities
+								i(119037),	-- Supply of Storied Rarities
 							},	
-							["qg"] = 88002, --  Highlord Darion Mograine
-							["sourceQuests"] = { 37163 }, -- Shadowy Secrets
+							["qg"] = 88002,	--  Highlord Darion Mograine
+							["sourceQuests"] = { 37163 },	-- Shadowy Secrets
 							["modID"] = 2,
 							["repeatable"] = true,
 						}),
 						q(37163, {	-- Shadowy Secrets
 							["g"] = {
-								i(119003), -- Void Totem 
+								i(119003),	-- Void Totem 
 							},
-							["qg"] = 88002, -- Highlord Darion Mograine
+							["qg"] = 88002,	-- Highlord Darion Mograine
 						}),
 						q(37147, {	-- Sky Dancers
 							["g"] = {
-								i(119043, { -- Trove of Smoldering Treasures
+								i(119043, {	-- Trove of Smoldering Treasures
 									i(109957),	-- Alc's Pendant of Fiery Dreams
 									i(109779),	-- Ancient Draenic Loop
 									i(109783),	-- Band of the Stalwart Stanchion
@@ -1345,7 +1345,7 @@ _.ExpansionFeatures =
 									i(109877),	-- Verdant Plate Wristguards
 								}),
 							},
-							["qg"] = 88023, -- Taoshi
+							["qg"] = 88023,	-- Taoshi
 							["modID"] = 2,
 							["repeatable"] = true,
 						}),
@@ -1353,95 +1353,95 @@ _.ExpansionFeatures =
 							["g"] = {
 								i(119037),  -- Supply of Storied Rarities
 							},	
-							["qg"] = 87996, --  Lillian Voss
-							["sourceQuests"] = { 37156 }, -- The Soulcutter
+							["qg"] = 87996,	--  Lillian Voss
+							["sourceQuests"] = { 37156 },	-- The Soulcutter
 							["modID"] = 2,
 							["repeatable"] = true,
 						}),
 						q(37155, { 	-- The Brass Compass
 							["g"] = {
-								i(118925), -- Plundered Booty
+								i(118925),	-- Plundered Booty
 							},	
-							["qg"] = 87995, --  Fleet Master Seahorn
+							["qg"] = 87995,	--  Fleet Master Seahorn
 						}),
 						q(37154, {	-- The Cure For Death
 							["g"] = {
-								i(118931), -- Leonid's Bag of Supplies
+								i(118931),	-- Leonid's Bag of Supplies
 							},	
-							["qg"] = 87997, --  Leonid Barthalomew the Revered
+							["qg"] = 87997,	--  Leonid Barthalomew the Revered
 						}),
 						q(37234, {	-- The Dark Within			
 							["g"] = {
 								i(119037),  -- Supply of Storied Rarities
 							},	
-							["qg"] = 87998, --  Sunwalker Dezco
-							["sourceQuests"] = { 37158 }, -- Gloriously Incandescent
+							["qg"] = 87998,	--  Sunwalker Dezco
+							["sourceQuests"] = { 37158 },	-- Gloriously Incandescent
 							["modID"] = 2,
 							["repeatable"] = true,
 						}),
 						q(37164, {	-- The Huntresses
 							["g"] = {
-								i(118923), -- Sentinel's Companion
+								i(118923),	-- Sentinel's Companion
 							},
-							["qg"] = 88003, --  Cowled Ranger
+							["qg"] = 88003,	--  Cowled Ranger
 						}),
 						q(37240, {	-- The Leaf-Reader			
 							["g"] = {
 								i(119037),  -- Supply of Storied Rarities
 							},	
-							["qg"] = 88004, --  Zen'kiki
-							["sourceQuests"] = { 37165 }, -- Cenrion Concerns
+							["qg"] = 88004,	--  Zen'kiki
+							["sourceQuests"] = { 37165 },	-- Cenrion Concerns
 							["modID"] = 2,
 							["repeatable"] = true,
 						}),
 						q(37231, {	-- The Search Continues			
 							["g"] = {
-								i(119037), -- Supply of Storied Rarities
+								i(119037),	-- Supply of Storied Rarities
 							},	
-							["qg"] = 87995, --  Fleet Master Seahorn
-							["sourceQuests"] = { 37155 }, -- The Brass Compass
+							["qg"] = 87995,	--  Fleet Master Seahorn
+							["sourceQuests"] = { 37155 },	-- The Brass Compass
 							["modID"] = 2,
 							["repeatable"] = true,
 						}),
 						q(37156, {	-- The Soulcutter
 							["g"] = {
-								i(119039), -- Lilian's Warning Sign
+								i(119039),	-- Lilian's Warning Sign
 							},
-							["qg"] = 87996, --  Lillian Voss
+							["qg"] = 87996,	--  Lillian Voss
 						}),
 						q(37149, {	-- The Void-Gate
 							["g"] = {
-								i(118936), -- Manual of Void-Calling
+								i(118936),	-- Manual of Void-Calling
 							},
-							["qg"] = 88027, -- Impsy
+							["qg"] = 88027,	-- Impsy
 						}),
 						q(37153, {	-- Time-Lost Vikings
 							["g"] = {
-								i(118929), -- Sack of Mined Ore
+								i(118929),	-- Sack of Mined Ore
 							},
-							["qg"] = 87992, --  Olaf
+							["qg"] = 87992,	--  Olaf
 						}),
 						q(37166, {	-- Titanic Evolution
 							["g"] = {
-								i(118930), -- Bag of Everbloom Herbs
+								i(118930),	-- Bag of Everbloom Herbs
 							},
-							["qg"] = 88005, --  Lorewalker Cho
+							["qg"] = 88005,	--  Lorewalker Cho
 						}),
 						q(37233, {	-- Vessel of Virtue			
 							["g"] = {
-								i(119037), -- Supply of Storied Rarities
+								i(119037),	-- Supply of Storied Rarities
 							},	
-							["qg"] = 87997, --  Leonid Barthalomew the Revered
-							["sourceQuests"] = { 37154 }, -- The Cure For Death
+							["qg"] = 87997,	--  Leonid Barthalomew the Revered
+							["sourceQuests"] = { 37154 },	-- The Cure For Death
 							["modID"] = 2,
 							["repeatable"] = true,
 						}),
 						q(37245, {	-- Whispers in the Darkness
 							["g"] = {
-								i(119036), -- Box of Storied Treasures
+								i(119036),	-- Box of Storied Treasures
 							},
-							["qg"] = 88027, -- Impsy
-							["sourceQuests"] = { 37149 }, -- The Void-Gate
+							["qg"] = 88027,	-- Impsy
+							["sourceQuests"] = { 37149 },	-- The Void-Gate
 							["modID"] = 2,
 							["repeatable"] = true,
 						}),
@@ -1855,7 +1855,7 @@ _.ExpansionFeatures =
 					qa(36624, {	-- Ashran Appearance
 						["coord"] = { 40.7, 53.6, 582 },
 						["lvl"] = 91,
-						["qg"] = 79953, -- Lieutenant Thorn
+						["qg"] = 79953,	-- Lieutenant Thorn
 					}),
 					{	-- Bigger is Better
 						["questID"] = 36592,
@@ -1866,15 +1866,15 @@ _.ExpansionFeatures =
 						["questID"] = 38356,
 						["qg"] = 91589,	-- Fix "Smallie" Biggswrench
 						["g"] = {
-							i(122613, { -- Stash of Dusty Music Rolls
-								i(122209), -- Music Roll: Curse of the Worgen
-								i(122208), -- Music Roll: Exodar
-								i(122206), -- Music Roll: Gnomeregan
-								i(122203), -- Music Roll: Ironforge
-								i(122205), -- Music Roll: Night Song
-								i(122201), -- Music Roll: Stormwind
-								i(122219), -- Music Roll: Way of the Monk
-								i(122207), -- Music Roll: Tinkertown
+							i(122613, {	-- Stash of Dusty Music Rolls
+								i(122209),	-- Music Roll: Curse of the Worgen
+								i(122208),	-- Music Roll: Exodar
+								i(122206),	-- Music Roll: Gnomeregan
+								i(122203),	-- Music Roll: Ironforge
+								i(122205),	-- Music Roll: Night Song
+								i(122201),	-- Music Roll: Stormwind
+								i(122219),	-- Music Roll: Way of the Monk
+								i(122207),	-- Music Roll: Tinkertown
 							}),
 						}
 					},
@@ -1935,7 +1935,7 @@ _.ExpansionFeatures =
 						["qg"] = 77209,	-- Baros Alexston
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
-						["requireSkill"] = 755, -- Jewelcrafting
+						["requireSkill"] = 755,	-- Jewelcrafting
 						["g"] = {
 							recipe(187639),	-- Immaculate Versatility Taladite
 						},
@@ -1972,167 +1972,167 @@ _.ExpansionFeatures =
 					},
 					n(89763, { 	-- Muradin Bronzebeard
 						["g"] = {
-							i(123975, { -- Greater Bounty Spoils
+							i(123975, {	-- Greater Bounty Spoils
 								["g"] = {
-									i(114111, { -- Formidable Armament
-										i(115335), -- Formidable Axe
-										i(115338), -- Formidable Dagger
-										i(115336), -- Formidable Greataxe
-										i(115337), -- Formidable Longbow
-										i(115340), -- Formidable Polearm
-										i(115342), -- Formidable Scepter
-										i(115341), -- Formidable Spire
-										i(115339), -- Formidable Warmace
+									i(114111, {	-- Formidable Armament
+										i(115335),	-- Formidable Axe
+										i(115338),	-- Formidable Dagger
+										i(115336),	-- Formidable Greataxe
+										i(115337),	-- Formidable Longbow
+										i(115340),	-- Formidable Polearm
+										i(115342),	-- Formidable Scepter
+										i(115341),	-- Formidable Spire
+										i(115339),	-- Formidable Warmace
 									}),
-									i(114088, { -- Formidable Bracers
-										i(114554), -- Aerial Acolyte's Bracers
-										i(114557), -- Crimson Carapace Bracers
-										i(114556), -- Sickened Scale Bracers
-										i(114555), -- Yeti-Hide Bracers
+									i(114088, {	-- Formidable Bracers
+										i(114554),	-- Aerial Acolyte's Bracers
+										i(114557),	-- Crimson Carapace Bracers
+										i(114556),	-- Sickened Scale Bracers
+										i(114555),	-- Yeti-Hide Bracers
 									}),
-									i(119125, { -- Formidable Cloak
-										i(114607), -- Bloodstained Miser's Cloak
-										i(114604), -- Cloak of Blind Focus
-										i(114605), -- Doomwake Drape
-										i(114606), -- Fathom-Ripped Cape
-										i(114608), -- Ultimate Greatcloak
+									i(119125, {	-- Formidable Cloak
+										i(114607),	-- Bloodstained Miser's Cloak
+										i(114604),	-- Cloak of Blind Focus
+										i(114605),	-- Doomwake Drape
+										i(114606),	-- Fathom-Ripped Cape
+										i(114608),	-- Ultimate Greatcloak
 									}),
-									i(119115, { -- Formidable Gauntlets
-										i(114566), -- Aerial Acolyte's Gloves
-										i(114569), -- Crimson Carapace Gauntlets
-										i(114568), -- Sickened Scale Gauntlets
-										i(114567), -- Yeti-Hide Gauntlets
+									i(119115, {	-- Formidable Gauntlets
+										i(114566),	-- Aerial Acolyte's Gloves
+										i(114569),	-- Crimson Carapace Gauntlets
+										i(114568),	-- Sickened Scale Gauntlets
+										i(114567),	-- Yeti-Hide Gauntlets
 									}),
-									i(119121, { -- Formidable Girdle
-										i(114582), -- Aerial Acolyte's Cord
-										i(114585), -- Crimson Carapace Girdle
-										i(114584), -- Sickened Scale Belt
-										i(114583), -- Yeti-Hide Belt
+									i(119121, {	-- Formidable Girdle
+										i(114582),	-- Aerial Acolyte's Cord
+										i(114585),	-- Crimson Carapace Girdle
+										i(114584),	-- Sickened Scale Belt
+										i(114583),	-- Yeti-Hide Belt
 									}),
-									i(119117, { -- Formidable Hood
-										i(114570), -- Aerial Acolyte's Hood
-										i(114573), -- Crimson Carapace Greathelm
-										i(114572), -- Sickened Scale Helm
-										i(114571), -- Yeti-Hide Hood
+									i(119117, {	-- Formidable Hood
+										i(114570),	-- Aerial Acolyte's Hood
+										i(114573),	-- Crimson Carapace Greathelm
+										i(114572),	-- Sickened Scale Helm
+										i(114571),	-- Yeti-Hide Hood
 									}),
-									i(119119, { -- Formidable Leggings
-										i(114574), -- Aerial Acolyte's Trousers
-										i(114577), -- Crimson Carapace Legplates
-										i(114576), -- Sickened Scale Legguards
-										i(114575), -- Yeti-Hide Legguards
+									i(119119, {	-- Formidable Leggings
+										i(114574),	-- Aerial Acolyte's Trousers
+										i(114577),	-- Crimson Carapace Legplates
+										i(114576),	-- Sickened Scale Legguards
+										i(114575),	-- Yeti-Hide Legguards
 									}),
-									i(114089, { -- Formidable Robes
-										i(114561), -- Aerial Acolyte's Robes
-										i(114560), -- Crimson Carapace Breastplate
-										i(114559), -- Sickened Scale Chestguard
-										i(114558), -- Yeti-Hide Chestguard
+									i(114089, {	-- Formidable Robes
+										i(114561),	-- Aerial Acolyte's Robes
+										i(114560),	-- Crimson Carapace Breastplate
+										i(114559),	-- Sickened Scale Chestguard
+										i(114558),	-- Yeti-Hide Chestguard
 									}),
-									i(114091, { -- Formidable Spaulders
-										i(114578), -- Aerial Acolyte's Mantle
-										i(114581), -- Crimson Carapace Shoulderguard
-										i(114580), -- Sickened Scale Spaulders
-										i(114579), -- Yeti-Hide Spaulders
+									i(114091, {	-- Formidable Spaulders
+										i(114578),	-- Aerial Acolyte's Mantle
+										i(114581),	-- Crimson Carapace Shoulderguard
+										i(114580),	-- Sickened Scale Spaulders
+										i(114579),	-- Yeti-Hide Spaulders
 									}),
-									i(114090, { -- Formidable Treads
-										i(114562), -- Aerial Acolyte's Sandals
-										i(114565), -- Crimson Carapace Greaves
-										i(114564), -- Sickened Scale Boots
-										i(114563), -- Yeti-Hide Boots
+									i(114090, {	-- Formidable Treads
+										i(114562),	-- Aerial Acolyte's Sandals
+										i(114565),	-- Crimson Carapace Greaves
+										i(114564),	-- Sickened Scale Boots
+										i(114563),	-- Yeti-Hide Boots
 									}),											
 									i(114112, { 	-- Grandiose Armament
-										i(115327), -- Grandiose Axe
-										i(115330), -- Grandiose Dagger
-										i(115328), -- Grandiose Greataxe
-										i(115329), -- Grandiose Longbow
-										i(115332), -- Grandiose Polearm
-										i(115334), -- Grandiose Scepter
-										i(115333), -- Grandiose Spire
-										i(115331), -- Grandiose Warmace
+										i(115327),	-- Grandiose Axe
+										i(115330),	-- Grandiose Dagger
+										i(115328),	-- Grandiose Greataxe
+										i(115329),	-- Grandiose Longbow
+										i(115332),	-- Grandiose Polearm
+										i(115334),	-- Grandiose Scepter
+										i(115333),	-- Grandiose Spire
+										i(115331),	-- Grandiose Warmace
 									}),
 									i(114082, { 	-- Grandiose Bracers
-										i(114494), -- Bracers Of Determined Resolve
-										i(114493), -- Bracers of Volatile Ice
-										i(114496), -- Crazed Bomber's Bracers
-										i(114495), -- Undying Bracers
+										i(114494),	-- Bracers Of Determined Resolve
+										i(114493),	-- Bracers of Volatile Ice
+										i(114496),	-- Crazed Bomber's Bracers
+										i(114495),	-- Undying Bracers
 									}),
 									i(119124, { 	-- Grandiose Cloak
-										i(114544), -- Drape of Surging Stars
-										i(114545), -- Hearthhealer Cloak
-										i(114543), -- Keen-Eye Forestcloak
-										i(114547), -- Reinforced Moonsong Cloak
-										i(114546), -- Warmonger's Bloodcloak
+										i(114544),	-- Drape of Surging Stars
+										i(114545),	-- Hearthhealer Cloak
+										i(114543),	-- Keen-Eye Forestcloak
+										i(114547),	-- Reinforced Moonsong Cloak
+										i(114546),	-- Warmonger's Bloodcloak
 									}),
 									i(119114, { 	-- Grandiose Gauntlets
-										i(114508), -- Crazed Bomber's Gauntlets
-										i(114506), -- Gauntlets of Determined Resolve
-										i(114505), -- Gloves of Volatile Ice
-										i(114507), -- Undying Gauntlets
+										i(114508),	-- Crazed Bomber's Gauntlets
+										i(114506),	-- Gauntlets of Determined Resolve
+										i(114505),	-- Gloves of Volatile Ice
+										i(114507),	-- Undying Gauntlets
 									}),
 									i(119120, { 	-- Grandiose Girdle
-										i(114522), -- Belt of Determined Resolve
-										i(114521), -- Cord of Volatile Ice
-										i(114524), -- Crazed Bomber's Girdle
-										i(114523), -- Undying Belt
+										i(114522),	-- Belt of Determined Resolve
+										i(114521),	-- Cord of Volatile Ice
+										i(114524),	-- Crazed Bomber's Girdle
+										i(114523),	-- Undying Belt
 									}),
 									i(119116, { 	-- Grandiose Hood
-										i(114512), -- Crazed Bomber's Greathelm
-										i(114510), -- Hood of Determined Resolve
-										i(114509), -- Hood of Volatile Ice
-										i(114511), -- Undying Helm
+										i(114512),	-- Crazed Bomber's Greathelm
+										i(114510),	-- Hood of Determined Resolve
+										i(114509),	-- Hood of Volatile Ice
+										i(114511),	-- Undying Helm
 									}),
 									i(119118, { 	-- Grandiose Leggings
-										i(114516), -- Crazed Bomber's Legplates
-										i(114514), -- Legguards of Determined Resolve
-										i(114513), -- Trousers of Volatile Ice
-										i(114515), -- Undying Legguards
+										i(114516),	-- Crazed Bomber's Legplates
+										i(114514),	-- Legguards of Determined Resolve
+										i(114513),	-- Trousers of Volatile Ice
+										i(114515),	-- Undying Legguards
 									}),
 									i(114083, { 	-- Grandiose Robes
-										i(114497), -- Chestguard of Determined Resolve
-										i(114499), -- Crazed Bomber's Breastplate
-										i(114500), -- Robes of Volatile Ice
-										i(114498), -- Undying Chestguard
+										i(114497),	-- Chestguard of Determined Resolve
+										i(114499),	-- Crazed Bomber's Breastplate
+										i(114500),	-- Robes of Volatile Ice
+										i(114498),	-- Undying Chestguard
 									}),
 									i(114085, { 	-- Grandiose Spaulders
-										i(114520), -- Crazed Bomber's Shoulderguard
-										i(114517), -- Mantle of Volatile Ice
-										i(114518), -- Spaulders of Determined Resolve
-										i(114519), -- Undying Spaulders
+										i(114520),	-- Crazed Bomber's Shoulderguard
+										i(114517),	-- Mantle of Volatile Ice
+										i(114518),	-- Spaulders of Determined Resolve
+										i(114519),	-- Undying Spaulders
 									}),
 									i(114084, { 	-- Grandiose Treads
-										i(114502), -- Boots of Determined Resolve
-										i(114504), -- Crazed Bomber's Greaves
-										i(114501), -- Sandals of Volatile Ice
-										i(114503), -- Undying Boots
+										i(114502),	-- Boots of Determined Resolve
+										i(114504),	-- Crazed Bomber's Greaves
+										i(114501),	-- Sandals of Volatile Ice
+										i(114503),	-- Undying Boots
 									}),
 								},
 								["description"] = "This satchel is awarded by High Overlord Saurfang and Muradin Bronzebeard on all of the Garrison Raid Quests.",
 							}),
 							qw(q(37767, { 	-- Arcane Sanctum: Ko'ragh
-								i(123975, { -- Greater Bounty Spoils
+								i(123975, {	-- Greater Bounty Spoils
 								}),
 							})),
 							qw(q(37772, { 	-- Blackhand's Crucible: Blackhand
-								i(123975, { -- Greater Bounty Spoils
+								i(123975, {	-- Greater Bounty Spoils
 								}),
 							})),
 							qw(q(37768, { 	-- Imperator's Rise: Imperator Mar'gok
-								i(123975, { -- Greater Bounty Spoils
+								i(123975, {	-- Greater Bounty Spoils
 								}),
 							})),
 							qw(q(37771, { 	-- Iron Assembly: Admiral Gar'an
-								i(123975, { -- Greater Bounty Spoils
+								i(123975, {	-- Greater Bounty Spoils
 								}),
 							})),
 							qw(q(37769, { 	-- Slagworks: Heart of the Mountain
-								i(123975, { -- Greater Bounty Spoils
+								i(123975, {	-- Greater Bounty Spoils
 								}),
 							})),
 							qw(q(37770, { 	-- The Black Forge: Kromog
-								i(123975, { -- Greater Bounty Spoils
+								i(123975, {	-- Greater Bounty Spoils
 								}),
 							})),
 							qw(q(37766, { 	-- Walled City: Brackenspore
-								i(123975, { -- Greater Bounty Spoils
+								i(123975, {	-- Greater Bounty Spoils
 								}),
 							})),
 						},

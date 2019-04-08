@@ -12,9 +12,9 @@ To do:
 
 _.Achievements = 
 {
-	n(-9958, { -- Player vs Player
+	n(-9958, {	-- Player vs Player
 		["groups"] = {
-			n(-9992, { -- Silvershard Mines
+			n(-9992, {	-- Silvershard Mines
 				["groups"] = {
 					ach(7057),	-- End of the Line
 					ach(7102),	-- Escort Service

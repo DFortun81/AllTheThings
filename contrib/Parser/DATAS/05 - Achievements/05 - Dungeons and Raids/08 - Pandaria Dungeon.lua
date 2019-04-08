@@ -4,9 +4,9 @@
 
 _.Achievements = 
 {
-	n(-9959, { -- Dungeons & Raids
+	n(-9959, {	-- Dungeons & Raids
 		["groups"] = {
-			n(-10008, { -- Pandaria Dungeon
+			n(-10008, {	-- Pandaria Dungeon
 				["groups"] = {
 					{	-- And Stay Dead!
 						["achievementID"] = 6929,	-- And Stay Dead!

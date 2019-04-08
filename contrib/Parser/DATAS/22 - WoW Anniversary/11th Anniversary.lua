@@ -9,7 +9,7 @@ _.Anniversary =
 		["maps"] = {
 			85,	-- Orgrimmar
 			86,	-- Orgrimmar: Cleft of Shadows
-			13, -- Stormwind City
+			13,	-- Stormwind City
 		},
 		["g"] = {
 			{	-- 8th Anniversary

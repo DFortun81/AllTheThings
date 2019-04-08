@@ -12,9 +12,9 @@ To do:
 
 _.Achievements = 
 {
-	n(-9958, { -- Player vs Player
+	n(-9958, {	-- Player vs Player
 		["groups"] = {
-			n(-9987, { -- Alterac Valley
+			n(-9987, {	-- Alterac Valley
 				["groups"] = {
 					ach(221),		-- Alterac Grave Robber
 					ach(582, {		-- Alterac Valley All-Star

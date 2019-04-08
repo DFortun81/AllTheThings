@@ -25,7 +25,7 @@ _.Instances = { tier(7, {	-- Legion
 					["qg"] = 115710,	-- Chief Telemancer Oculeth
 					["sourceQuest"] = 45420,	-- The Nighthold: The Eye of Aman'Thul
 					["groups"] = {
-						i(142436), -- Arcanist's Manasaber
+						i(142436),	-- Arcanist's Manasaber
 					},
 				},
 			}),

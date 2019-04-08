@@ -53,7 +53,7 @@ _.Zones =
 					}),
 				}),
 			},
-			["races"] = { 10 }, -- Blood Elves
+			["races"] = { 10 },	-- Blood Elves
 			["lvl"] = 1,	
 			["achievementID"] = 859,
 			["icon"] = "Interface\\Icons\\Achievement_Character_Bloodelf_Female",

@@ -14,9 +14,9 @@ _.Instances = { tier(1, {	-- Classic
 			n(0, {	-- Zone Drop
 				i(19434, {	-- Band of Dark Dominion
 					["crs"] = {
-						12457, -- Blackwing Spellbinder
-						12459, -- Blackwing Warlock
-						12461, -- Death Talon Overseer
+						12457,	-- Blackwing Spellbinder
+						12459,	-- Blackwing Warlock
+						12461,	-- Death Talon Overseer
 					},
 				}),
 				i(17683, {	-- Book: Gift of the Wild Rank 2
@@ -24,25 +24,25 @@ _.Instances = { tier(1, {	-- Classic
 				}),
 				i(19437, {	-- Boots of Pure Thought
 					["crs"] = {
-						12467, -- Death Talon Captain
-						12463, -- Death Talon Flamescale
-						12464, -- Death Talon Seether
-						12465, -- Death Talon Wyrmkin
+						12467,	-- Death Talon Captain
+						12463,	-- Death Talon Flamescale
+						12464,	-- Death Talon Seether
+						12465,	-- Death Talon Wyrmkin
 					},
 				}),
 				i(19436, {	-- Cloak of Draconic Might
 					["crs"] = {
-						12467, -- Death Talon Captain
-						12463, -- Death Talon Flamescale
-						12464, -- Death Talon Seether
-						12465, -- Death Talon Wyrmkin
+						12467,	-- Death Talon Captain
+						12463,	-- Death Talon Flamescale
+						12464,	-- Death Talon Seether
+						12465,	-- Death Talon Wyrmkin
 					},
 				}),
 				i(19362, {	-- Doom's Edge
 					["crs"] = {
-						12457, -- Blackwing Spellbinder
-						12459, -- Blackwing Warlock
-						12461, -- Death Talon Overseer
+						12457,	-- Blackwing Spellbinder
+						12459,	-- Blackwing Warlock
+						12461,	-- Death Talon Overseer
 					},
 				}),
 				{	-- Draconic Avenger
@@ -53,10 +53,10 @@ _.Instances = { tier(1, {	-- Classic
 				},
 				i(19358, {	-- Draconic Maul
 					["crs"] = {
-						12467, -- Death Talon Captain
-						12463, -- Death Talon Flamescale
-						12464, -- Death Talon Seether
-						12465, -- Death Talon Wyrmkin
+						12467,	-- Death Talon Captain
+						12463,	-- Death Talon Flamescale
+						12464,	-- Death Talon Seether
+						12465,	-- Death Talon Wyrmkin
 					},
 				}),
 				{	-- Elementium Ingot
@@ -67,9 +67,9 @@ _.Instances = { tier(1, {	-- Classic
 				},
 				i(19435, {	-- Essence Gatherer
 					["crs"] = {
-						12457, -- Blackwing Spellbinder
-						12459, -- Blackwing Warlock
-						12461, -- Death Talon Overseer
+						12457,	-- Blackwing Spellbinder
+						12459,	-- Blackwing Warlock
+						12461,	-- Death Talon Overseer
 					},
 				}),
 				{	-- Interlaced Shadow Jerkin

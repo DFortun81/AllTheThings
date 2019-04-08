@@ -457,8 +457,8 @@ _.Zones =
 						}),
 						{	-- Spelurk*
 							["npcID"] = 71864,	-- Spelurk
-							["questID"] = 32960, -- Says Cave-In, but should be KillID
-							--["questID"] = 33164, -- Says killID but should be cave in
+							["questID"] = 32960,	-- Says Cave-In, but should be KillID
+							--["questID"] = 33164,	-- Says killID but should be cave in
 							["isDaily"] = true,
 							["coords"] = {
 								{ 59.54, 48.95, 554 },

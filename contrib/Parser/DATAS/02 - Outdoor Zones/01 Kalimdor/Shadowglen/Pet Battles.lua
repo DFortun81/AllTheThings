@@ -8,8 +8,8 @@ _.Zones =
 			m(460, {	-- Shadowglen
 				["groups"] = {
 					n(-25, {	-- Pet Battle
-						p(507), -- Crested Owl
-						p(447), -- Fawn
+						p(507),	-- Crested Owl
+						p(447),	-- Fawn
 					}),
 				},
 			}),

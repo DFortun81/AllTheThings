@@ -69,7 +69,7 @@ _.Zones =
 							},
 							{	-- Echo of Murmur
 								["npcID"] = 77828,
-								["questID"] = 34221, -- also triggers 34220
+								["questID"] = 34221,	-- also triggers 34220
 								["coord"] = { 34.0, 57.2, 535 },
 								["g"] = {	
 									i(113670),	-- Mournful Moan of Murmur Toy
@@ -438,7 +438,7 @@ _.Zones =
 									{ 54.8, 81.4, 535 },
 								},
 								["g"] = {
-									i(116767), -- Sapphire Riverbeast Mount
+									i(116767),	-- Sapphire Riverbeast Mount
 								},
 							}, 
 							{	-- Steeltusk
@@ -446,7 +446,7 @@ _.Zones =
 								["questID"] = 36858,
 								["coord" ] = { 67.7, 35.8, 535 },
 								["g"] = {	
-									i(117562), -- Steeltusk's Steel Tusk
+									i(117562),	-- Steeltusk's Steel Tusk
 								},
 							}, 
 							{	-- Taladorantula
@@ -468,7 +468,7 @@ _.Zones =
 							}, 
 							{	-- Underseer Bloodmane
 								["npcID"] = 80524,
-								["questID"] = 35491, -- also triggers 34945 (duplicate ID for vignette)
+								["questID"] = 35491,	-- also triggers 34945 (duplicate ID for vignette)
 								["coord"] = { 63.6, 20.8, 535 },
 								["g"] = {
 									i(112475),	-- Prize's Horn-Ring

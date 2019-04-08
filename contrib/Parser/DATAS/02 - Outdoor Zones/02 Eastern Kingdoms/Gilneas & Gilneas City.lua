@@ -26,12 +26,12 @@ _.Zones =
 							qg(34913, qa(14093)),	-- All Hell Breaks Loose
 							qg(36170, qa(14313)),	-- Among Humans Again
 							qg(35840, qa(14277, {	-- Arcane Inquiries
-								["classes"] = {8}, -- Mage
+								["classes"] = {8},	-- Mage
 							})),
 							qg(36290, qa(14396)),	-- As the Land Shatters
 							qg(37195, qa(24627)),	-- At Our Doorstep
 --]]							
-							qg(37874, qa(24592, { -- Betrayal at Tempest's Reach
+							qg(37874, qa(24592, {	-- Betrayal at Tempest's Reach
 								i(55002),	-- Blue-Bloodied Boots
 								i(55003),	-- Greymane Cloak
 								i(131378),	-- Blue-Bloodied Treads
@@ -41,20 +41,20 @@ _.Zones =
 							qg(35618, qa(14218)),	-- By Blood and Ash
 							qg(35077, qa(14154)),	-- By the Skin of His Teeth
 							qg(35869, qa(14274, {	-- Corruption
-								["classes"] = {9}, -- Warlock
+								["classes"] = {9},	-- Warlock
 							})),
 							qg(43727, qa(26706)),	-- Endgame
 							qg(36456, qa(14405)),	-- Escape By Sea
 							qg(34913, qa(14098)),	-- Evacuate the Merchant Square
 							qg(36451, qa(14397)),	-- Evacuation
 							qg(35871, qa(14272, {	-- Eviscerate
-								["classes"] = {4}, -- Rogue
+								["classes"] = {4},	-- Rogue
 							})),
 							qg(36743, qa(24438)),	-- Exodus
 							qg(37876, qa(24677)),	-- Flank the Forsaken
 							qg(35378, qa(14204)),	-- From the Shadows
 							qg(35872, qa(14281, {	-- Frost Nova
-								["classes"] = {8}, -- Mage
+								["classes"] = {8},	-- Mage
 							})),
 							qg(36451, qa(14395)),	-- Gasping for Breath
 							qg(36452, qa(14398)),	-- Grandma Wahl
@@ -77,14 +77,14 @@ _.Zones =
 							qg(37783, qa(24575)),	-- Liberation Day
 							qg(34850, qa(14078)),	-- Lockdown!
 --]]							
-							qg(37822, qa(24616, { -- Losing Your Tail
+							qg(37822, qa(24616, {	-- Losing Your Tail
 								i(54999),	-- Seryl's Robes
 								i(55000),	-- Hightailing Leggings
 								i(55001),	-- Hotfoot Boots
 								i(131380),	-- Hightailing Greaves
 							})),
 --							qg(35378, qa(14214)),	-- Message to Greymane
-							qg(37195, qa(24593, { -- Neither Human Nor Beast
+							qg(37195, qa(24593, {	-- Neither Human Nor Beast
 								i(52942),	-- Staff of Earned Tranquility
 								i(66439),	-- Cry of the Wolf
 								i(66660),	-- Hammer of Controlled Fury
@@ -103,7 +103,7 @@ _.Zones =
 							qg(37873, qa(24628)),	-- Preparations
 							qg(37783, qa(24676)),	-- Push Them Out
 --]]							
-							qg(37102, qa(24501, { -- Queen-Sized Troubles
+							qg(37102, qa(24501, {	-- Queen-Sized Troubles
 								i(54996),	-- Rygna-Silk Leggings
 								i(54997),	-- Arachnophobe's Breastplate
 								i(54998),	-- Braided Gossamer Armbands
@@ -115,37 +115,37 @@ _.Zones =
 							qg(34913, qa(14099)),	-- Royal Orders
 							qg(35552, qa(14212)),	-- Sacrifices
 							qg(35874, qa(14290, {	-- Safety in Numbers
-								["classes"] = {3}, -- Hunter
+								["classes"] = {3},	-- Hunter
 							})),
 							qg(35872, qa(14288, {	-- Safety in Numbers
-								["classes"] = {8}, -- Mage
+								["classes"] = {8},	-- Mage
 							})),
 							qg(35871, qa(14285, {	-- Safety in Numbers
-								["classes"] = {4}, -- Rogue
+								["classes"] = {4},	-- Rogue
 							})),
 							qg(35870, qa(14289, {	-- Safety in Numbers
-								["classes"] = {5}, -- Priest
+								["classes"] = {5},	-- Priest
 							})),
 							qg(35873, qa(14291, {	-- Safety in Numbers
-								["classes"] = {11}, -- Druid
+								["classes"] = {11},	-- Druid
 							})),
 							qg(35869, qa(14287, {	-- Safety in Numbers
-								["classes"] = {9}, -- Warlock
+								["classes"] = {9},	-- Warlock
 							})),
 							qg(35839, qa(14286, {	-- Safety in Numbers
-								["classes"] = {1}, -- Warrior
+								["classes"] = {1},	-- Warrior
 							})),
 							qg(34936, qa(14094)),	-- Salvage the Supplies
 							qg(35550, qa(14293)),	-- Save Krennan Aranas
 							qg(36291, qa(14368)),	-- Save the Children!
 							qg(35840, qa(14278, {	-- Seek the Sister
-								["classes"] = {5}, -- Priest
+								["classes"] = {5},	-- Priest
 							})),
 							qg(35840, qa(14273, {	-- Shady Associates
-								["classes"] = {9}, -- Warlock
+								["classes"] = {9},	-- Warlock
 							})),
 --]]							
-							qg(37803, qa(24674, { -- Slaves to No One
+							qg(37803, qa(24674, {	-- Slaves to No One
 								i(54992),	-- Laborer's Belt
 								i(54993),	-- Emberstone Plate
 								i(54991),	-- Marcus' Pickaxe
@@ -153,15 +153,15 @@ _.Zones =
 --[[							
 							qg(38539, qa(24920)),	-- Slowing the Inevitable
 							qg(35840, qa(14275, {	-- Someone's Keeping Track of You
-								["classes"] = {3}, -- Hunter
+								["classes"] = {3},	-- Hunter
 							})),
 							qg(35840, qa(14269, {	-- Someone's Looking for You
-								["classes"] = {4}, -- Rogue
+								["classes"] = {4},	-- Rogue
 							})),
 							qg(34863, qa(14091)),	-- Something's Amiss
 							qg(37065, qa(24483)),	-- Stormglen
 --]]							
-							qg(37065, qa(24468, { -- Stranded at the Marsh
+							qg(37065, qa(24468, {	-- Stranded at the Marsh
 								i(54994),	-- Paramedic Bracers
 								i(54995),	-- Hailwood Chestpiece
 								i(131368),	-- First Responder's Bindings
@@ -171,7 +171,7 @@ _.Zones =
 							qg(37822, qa(24617)),	-- Tal'doren, the Wild Home
 							qg(34571, qa(14367)),	-- The Allens' Storm Cellar
 --]]							
-							qg(37783, qa(24904, { -- The Battle for Gilneas City
+							qg(37783, qa(24904, {	-- The Battle for Gilneas City
 								i(54987),	-- Marshalling Point
 								i(54989),	-- Rallying Charge
 								i(54990),	-- Gilnean Shield
@@ -188,10 +188,10 @@ _.Zones =
 							qg(50371, qa(28850)),	-- The Prison Rooftop
 							qg(35112, qa(14159)),	-- The Rebel Lord's Arsenal
 							qg(35840, qa(14280, {	-- The Winds Know Your Name... Apparently
-								["classes"] = {11}, -- Druid
+								["classes"] = {11},	-- Druid
 							})),
 --]]							
-							qg(38149, qa(24681, { -- They Have Allies, But So Do We
+							qg(38149, qa(24681, {	-- They Have Allies, But So Do We
 								i(55012),	-- Night Elven Bow
 								i(55013),	-- Seryl's Promise
 							})),
@@ -204,7 +204,7 @@ _.Zones =
 							qg(36456, qa(14412)),	-- Washed Up	
 							qg(35115, qa(24930)),	-- While You're At It
 							qg(35840, qa(14265, {	-- Your Instructor
-								["classes"] = {1}, -- Warrior
+								["classes"] = {1},	-- Warrior
 							})),
 --]]							
 						}),

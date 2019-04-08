@@ -7,7 +7,7 @@ _.Zones =
 		m(87, { 	-- Ironforge
 			["g"] = {
 				n(-228, {	-- Flight Path
-					fp(6, { -- Ironforge, Dun Morogh
+					fp(6, {	-- Ironforge, Dun Morogh
 						["coord"] = { 55.8, 47.8 },
 					}),
 				}),
@@ -22,7 +22,7 @@ _.Zones =
 						qr(qg(5159, qa(29356))),	-- I Need to Cask a Favor
 						qr(qg(5159, qa(29353))),	-- Keepin' the Haggis Flowin'
 					}),
-					prof(356, { -- Fishing
+					prof(356, {	-- Fishing
 						["g"] = {
 --							Add quest subsection?  Not sure what would be more ~aesthetically appealing~						
 							qr(qg(5161, qa(29342))),	-- Cold Water Fishing
@@ -37,11 +37,11 @@ _.Zones =
 					}),
 				}),
 				n(-17, {	-- Quests
-					q(1618, { -- Gearing Redridge
+					q(1618, {	-- Gearing Redridge
 						["g"] = {
-							i(6735), -- Plans: Ironforge Breastplate
+							i(6735),	-- Plans: Ironforge Breastplate
 						},
-						["qg"] = 6031, -- Tormus Deepforge
+						["qg"] = 6031,	-- Tormus Deepforge
 						["races"] = ALLIANCE_ONLY,
 					}),
 					qa(4512, {	-- A Little Slime Goes a Long Way
@@ -76,7 +76,7 @@ _.Zones =
 							},
 						},
 					},
-					qa(26118, { -- Seize the Ambassador
+					qa(26118, {	-- Seize the Ambassador
 						["g"] = {
 							i(57583),	-- The Slaghammer
 							i(57584),	-- Battleaxe of the Sober Dwarf
@@ -110,20 +110,20 @@ _.Zones =
 --[[
 					qg(6294, qa(38396)),	-- A Curious Oddity			
 					qg(23127, qa(27270, {	-- An Audience with the Farseer
-						["classes"] = {7}, -- Shaman
+						["classes"] = {7},	-- Shaman
 					})),
 					qg(6294, qa(38394)),	-- Completionism
 					qg(15119, qa( 8229)),	-- Could I get a Fishing Flier?
 					qg(41853, qa(26112)),	-- Demanding Answers
 					qg(5173, qa(27272, {	-- Demisette Sends Word
-						["classes"] = {9}, -- Warlock
+						["classes"] = {9},	-- Warlock
 					})),
 					qg(6569, qa( 2039)),	-- Find Bingles
 					qg(6031, qa( 1618)),	-- Gearing Redridge
 					qg(5174, q 29477, { ["requireSkill"] = 202 })),    -- Gnomish Engineering
                     qg(5174, q 29475, { ["requireSkill"] = 202 })),    -- Goblin Engineering
 					qg(4256, qa( 6388, {	-- Gryth Thurden
-						["races"] = {3,7}, -- Dwarf, Gnome
+						["races"] = {3,7},	-- Dwarf, Gnome
 					})),
 					o(207320, {	-- Hero's Call Board
 						qa(29391),	-- Guardians of Hyjal: Call of the Ancients
@@ -151,37 +151,37 @@ _.Zones =
 					qg(5161, qa( 6609, { ["requireSkill"] = 129 })),    -- I Got Nothin' Left!
 					qg(5159, qa( 6612)),	-- I Know A Guy...
 					qg(5146, qa(27271, {	-- Journey to the Wizard's Sanctum
-						["classes"] = {8}, -- Mage
+						["classes"] = {8},	-- Mage
 					})),
 					qg(5147, qa(27265, {	-- Lord Grayson Shadowbreaker
-						["classes"] = {2}, -- Paladin
+						["classes"] = {2},	-- Paladin
 					})),
 					qg(5165, qa(27267, {	-- Make Contact with SI:7
-						["classes"] = {4}, -- Rogue
+						["classes"] = {4},	-- Rogue
 					})),
 					qg(11406, qa(27268, {	-- Make Haste to the Cathedral
-						["classes"] = {5}, -- Priest
+						["classes"] = {5},	-- Priest
 					})),
 					qg(5173, qa(28259, {	-- Meet with Demisette Cloyce
-						["classes"] = {9}, -- Warlock
+						["classes"] = {9},	-- Warlock
 					})),
 					qg(23127, qa(28287, {	-- Meet with Farseer Umbrua
-						["classes"] = {7}, -- Shaman
+						["classes"] = {7},	-- Shaman
 					})),
 					qg(11406, qa(28285, {	-- Meet with High Priestess Laurena
-						["classes"] = {5}, -- Priest
+						["classes"] = {5},	-- Priest
 					})),
 					qg(5147, qa(28268, {	-- Meet with Lord Grayson Shadowbreaker
-						["classes"] = {2}, -- Paladin
+						["classes"] = {2},	-- Paladin
 					})),
 					qg(5165, qa(28262, {	-- Meet with Lord Tony Romano
-						["classes"] = {4}, -- Rogue
+						["classes"] = {4},	-- Rogue
 					})),
 					qg(5146, qa(28263, {	-- Meet with Maginor Dumas
-						["classes"] = {8}, -- Mage
+						["classes"] = {8},	-- Mage
 					})),
 					qg(5115, qa(28260, {	-- Meet with Wulf Hansreim
-						["classes"] = {3}, -- Hunter
+						["classes"] = {3},	-- Hunter
 					})),
 					qg(6294, qa(38345)),	-- Numismatics
 					qa( 2963),	-- Portents of Uldum (LEGACY)
@@ -189,24 +189,24 @@ _.Zones =
 					qg(5637, qa( 1453)),	-- Reclaimers' Business in Desolace
 					qg(1959, qa(26131)),	-- Reinforcements for Loch Modan
 					qg(1573, qa( 6392, {	-- Return to Gremlock
-						["races"] = {3,7}, -- Dwarf, Gnome
+						["races"] = {3,7},	-- Dwarf, Gnome
 					qg(11406, qa(27274, {	-- The Chief Surgeon
-						["races"] = {7}, -- Gnome
-						["classes"] = {5}, -- Priest
+						["races"] = {7},	-- Gnome
+						["classes"] = {5},	-- Priest
 					})),
 					qh( 8799),	-- The Hero of the Day (LEGACY)
 					qg(13433, qa( 8763)),	-- The Hero of the Day
 					qg(92195, qa(39955)),	-- The Plot Thickens
 					qg(6294, qa(38402)),	-- The Same, But Different
 					qg(6179, qa( 1789, {	-- The Symbol of Life
-						["classes"] = {2}, -- Paladin
+						["classes"] = {2},	-- Paladin
 					})),
 					qg(11406, qa(27269, {	-- The Temple of the Moon
-						["races"] = {4}, -- Night Elf
-						["classes"] = {5}, -- Priest
+						["races"] = {4},	-- Night Elf
+						["classes"] = {5},	-- Priest
 					})),
 					qg(5115, qa(27266, {	-- Wulf Calls
-						["classes"] = {3}, -- Hunter
+						["classes"] = {3},	-- Hunter
 					})),
 --]]
 				}),
@@ -222,52 +222,52 @@ _.Zones =
 					n(5128, {	-- Bombus Finespindle <Leatherworking Supplies>
 						["coord"] = { 40.2, 33.4, 87 },
 						["g"] = {
-							i(67095), -- Pattern: Assassin's Chestplate
-							i(67070), -- Pattern: Belt of Nefarious Whispers
-							i(67084), -- Pattern: Charscale Leg Armor
-							i(67094), -- Pattern: Chestguard of Nature's Fury
-							i(67073), -- Pattern: Corded Viper Belt
-							i(67100), -- Pattern: Dragonkiller Tunic
-							i(68193), -- Pattern: Dragonscale Leg Armor							
-							i(71721), -- Pattern: Drakehide Leg Armor
-							i(18731), -- Pattern: Heavy Leather Ball						
-							i(67068), -- Pattern: Lightning Lash
-							i(67082), -- Pattern: Razor-Edged Cloak
-							i(67072), -- Pattern: Stormleather Sash	
-							i(67083), -- Pattern: Twilight Dragonscale Cloak
-							i(67096), -- Pattern: Twilight Scale Chestguard
-							i(67064), -- Pattern: Vicious Charscale Belt
-							i(67063), -- Pattern: Vicious Charscale Boots	
-							i(67049), -- Pattern: Vicious Charscale Bracers
-							i(67090), -- Pattern: Vicious Charscale Chest
-							i(67053), -- Pattern: Vicious Charscale Gloves
-							i(67091), -- Pattern: Vicious Charscale Helm
-							i(67079), -- Pattern: Vicious Charscale Legs
-							i(67078), -- Pattern: Vicious Charscale Shoulders						
-							i(67080), -- Pattern: Vicious Dragonscale Belt
-							i(67065), -- Pattern: Vicious Dragonscale Boots	
-							i(67054), -- Pattern: Vicious Dragonscale Bracers
-							i(67093), -- Pattern: Vicious Dragonscale Chest
-							i(67066), -- Pattern: Vicious Dragonscale Gloves
-							i(67081), -- Pattern: Vicious Dragonscale Helm
-							i(67092), -- Pattern: Vicious Dragonscale Legs
-							i(67055), -- Pattern: Vicious Dragonscale Shoulders
-							i(67076), -- Pattern: Vicious Leather Belt
-							i(67060), -- Pattern: Vicious Leather Boots	
-							i(67046), -- Pattern: Vicious Leather Bracers
-							i(67087), -- Pattern: Vicious Leather Chest
-							i(67048), -- Pattern: Vicious Leather Gloves
-							i(67077), -- Pattern: Vicious Leather Helm
-							i(67089), -- Pattern: Vicious Leather Legs	
-							i(67062), -- Pattern: Vicious Leather Shoulders
-							i(67044), -- Pattern: Vicious Wyrmhide Belt
-							i(67058), -- Pattern: Vicious Wyrmhide Boots
-							i(67042), -- Pattern: Vicious Wyrmhide Bracers
-							i(67075), -- Pattern: Vicious Wyrmhide Chest	
-							i(67056), -- Pattern: Vicious Wyrmhide Gloves
-							i(67086), -- Pattern: Vicious Wyrmhide Helm
-							i(67085), -- Pattern: Vicious Wyrmhide Legs	
-							i(67074), -- Pattern: Vicious Wyrmhide Shoulders
+							i(67095),	-- Pattern: Assassin's Chestplate
+							i(67070),	-- Pattern: Belt of Nefarious Whispers
+							i(67084),	-- Pattern: Charscale Leg Armor
+							i(67094),	-- Pattern: Chestguard of Nature's Fury
+							i(67073),	-- Pattern: Corded Viper Belt
+							i(67100),	-- Pattern: Dragonkiller Tunic
+							i(68193),	-- Pattern: Dragonscale Leg Armor							
+							i(71721),	-- Pattern: Drakehide Leg Armor
+							i(18731),	-- Pattern: Heavy Leather Ball						
+							i(67068),	-- Pattern: Lightning Lash
+							i(67082),	-- Pattern: Razor-Edged Cloak
+							i(67072),	-- Pattern: Stormleather Sash	
+							i(67083),	-- Pattern: Twilight Dragonscale Cloak
+							i(67096),	-- Pattern: Twilight Scale Chestguard
+							i(67064),	-- Pattern: Vicious Charscale Belt
+							i(67063),	-- Pattern: Vicious Charscale Boots	
+							i(67049),	-- Pattern: Vicious Charscale Bracers
+							i(67090),	-- Pattern: Vicious Charscale Chest
+							i(67053),	-- Pattern: Vicious Charscale Gloves
+							i(67091),	-- Pattern: Vicious Charscale Helm
+							i(67079),	-- Pattern: Vicious Charscale Legs
+							i(67078),	-- Pattern: Vicious Charscale Shoulders						
+							i(67080),	-- Pattern: Vicious Dragonscale Belt
+							i(67065),	-- Pattern: Vicious Dragonscale Boots	
+							i(67054),	-- Pattern: Vicious Dragonscale Bracers
+							i(67093),	-- Pattern: Vicious Dragonscale Chest
+							i(67066),	-- Pattern: Vicious Dragonscale Gloves
+							i(67081),	-- Pattern: Vicious Dragonscale Helm
+							i(67092),	-- Pattern: Vicious Dragonscale Legs
+							i(67055),	-- Pattern: Vicious Dragonscale Shoulders
+							i(67076),	-- Pattern: Vicious Leather Belt
+							i(67060),	-- Pattern: Vicious Leather Boots	
+							i(67046),	-- Pattern: Vicious Leather Bracers
+							i(67087),	-- Pattern: Vicious Leather Chest
+							i(67048),	-- Pattern: Vicious Leather Gloves
+							i(67077),	-- Pattern: Vicious Leather Helm
+							i(67089),	-- Pattern: Vicious Leather Legs	
+							i(67062),	-- Pattern: Vicious Leather Shoulders
+							i(67044),	-- Pattern: Vicious Wyrmhide Belt
+							i(67058),	-- Pattern: Vicious Wyrmhide Boots
+							i(67042),	-- Pattern: Vicious Wyrmhide Bracers
+							i(67075),	-- Pattern: Vicious Wyrmhide Chest	
+							i(67056),	-- Pattern: Vicious Wyrmhide Gloves
+							i(67086),	-- Pattern: Vicious Wyrmhide Helm
+							i(67085),	-- Pattern: Vicious Wyrmhide Legs	
+							i(67074),	-- Pattern: Vicious Wyrmhide Shoulders
 						},
 					}),
 					n(5163, {	-- Burbik Gearspanner <Trade Supplies>

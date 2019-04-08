@@ -3,9 +3,9 @@
 -----------------------------------------------------
 _.GearSets = 
 {
-	gsh(1522, { -- Allied Races
+	gsh(1522, {	-- Allied Races
 		["groups"] = {
-			gs(1804, { -- Heritage of the Sin'dorei
+			gs(1804, {	-- Heritage of the Sin'dorei
 				["groups"] = {
 					i(166348),	-- Sin'dorei Helm
 					i(166349),	-- Sin'dorei Pauldrons

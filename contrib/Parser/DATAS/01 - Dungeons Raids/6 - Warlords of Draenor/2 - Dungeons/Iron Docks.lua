@@ -8,7 +8,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 		["mapID"] = 595,
 		["coord"] = { 45.36, 13.52, 543 },	-- Gorgrond, Draenor
 		["groups"] = {
-			n(-1, { -- Common Boss Drop
+			n(-1, {	-- Common Boss Drop
 				["crs"] = {
 					81305,	-- Fleshrender Nok'gar
 					80816,	-- Grimrail Enforcers (Ahri'ok Dugru)
@@ -113,7 +113,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(109953),	-- Windseal Necklace
 					i(110017),	-- Enforcer's Stun Grenade
 				})),
-				cr(79852, e(1237, { -- Oshir
+				cr(79852, e(1237, {	-- Oshir
 					i(110057),	-- Mindbreaker Scepter
 					i(109882),	-- Blackwater Wristguards
 					i(109869),	-- Bloodfeather Bracers
@@ -231,7 +231,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				["groups"] = {
 					n(-17, {	-- Quests 		
 						q(37157, {
-							i(119092), -- Moroes' Famous Polish
+							i(119092),	-- Moroes' Famous Polish
 						}),	
 					}),	
 					cr(81305, e(1235, {	-- Fleshrender Nok'gar
@@ -333,7 +333,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						i(109953),	-- Windseal Necklace
 						i(110017),	-- Enforcer's Stun Grenade
 					})),
-					cr(79852, e(1237, { -- Oshir
+					cr(79852, e(1237, {	-- Oshir
 						i(110057),	-- Mindbreaker Scepter
 						i(109882),	-- Blackwater Wristguards
 						i(109869),	-- Bloodfeather Bracers
@@ -546,7 +546,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						i(109953),	-- Windseal Necklace
 						i(110017),	-- Enforcer's Stun Grenade
 					})),
-					cr(79852, e(1237, { -- Oshir
+					cr(79852, e(1237, {	-- Oshir
 						i(110057),	-- Mindbreaker Scepter
 						i(109882),	-- Blackwater Wristguards
 						i(109869),	-- Bloodfeather Bracers
@@ -756,7 +756,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						i(109953),	-- Windseal Necklace
 						i(110017),	-- Enforcer's Stun Grenade
 					})),
-					cr(79852, e(1237, { -- Oshir
+					cr(79852, e(1237, {	-- Oshir
 						i(110057),	-- Mindbreaker Scepter
 						i(109882),	-- Blackwater Wristguards
 						i(109869),	-- Bloodfeather Bracers

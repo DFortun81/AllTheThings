@@ -14,7 +14,7 @@ _.Zones =
 						["g"] = {
 							n(-2, {					-- Vendors
 								["g"] = {
-									n(12777, { -- Captain Dirgehammer
+									n(12777, {	-- Captain Dirgehammer
 										["g"] = {
 											un(2, i(16422)),	-- Knight-Captain's Dragonhide Leggings
 											un(2, i(16421)),	-- Knight-Captains's Dragonhide Tunic
@@ -24,7 +24,7 @@ _.Zones =
 											un(2, i(16424)),	-- Lieutenant Commander's Dragonhide Shroud
 										},
 										["races"] = ALLIANCE_ONLY,
-										["u"] = 40, -- Legacy NPC/Creature
+										["u"] = 40,	-- Legacy NPC/Creature
 									}),
 								},
 							}),
@@ -112,12 +112,12 @@ _.Zones =
 										["questID"] = 2758,	-- In Search of Galvan
 										["groups"] = {
 											{	-- Mithril Insignia
-												["itemID"] = 8663, -- Mithril Insignia
+												["itemID"] = 8663,	-- Mithril Insignia
 												["u"] = 2,
 											},
 										},
 										["u"] = 40,
-										["qg"] = 7798, -- Hank the Hammer
+										["qg"] = 7798,	-- Hank the Hammer
 										["races"] = ALLIANCE_ONLY,
 										["requireSkill"] = 164,	-- Blacksmithing
 									},
@@ -214,12 +214,12 @@ _.Zones =
 										["questID"] = 2758,	-- The Origins of Smithing
 										["groups"] = {
 											{	-- Plans: Golden Scale Gauntlets
-												["itemID"] = 9367, -- Plans: Golden Scale Gauntlets
+												["itemID"] = 9367,	-- Plans: Golden Scale Gauntlets
 												["u"] = 7,
 											},
 										},
 										["u"] = 40,
-										["qg"] = 7798, -- Hank the Hammer
+										["qg"] = 7798,	-- Hank the Hammer
 										["races"] = ALLIANCE_ONLY,
 										["isBreadcrumb"] = true,
 										["requireSkill"] = 164,	-- Blacksmithing

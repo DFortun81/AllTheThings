@@ -15,7 +15,7 @@ _.Zones =
 							["sourceQuests"] = {
 								52044,	-- An Exceptional Platinum Shard
 							},
-							["requireSkill"] = 186, -- Mining
+							["requireSkill"] = 186,	-- Mining
 							["coords"] = {
 								{ 19.76, 44.54 },
 							},

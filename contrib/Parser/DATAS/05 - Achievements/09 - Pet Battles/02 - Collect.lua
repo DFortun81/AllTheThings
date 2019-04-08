@@ -12,9 +12,9 @@ To do:
 
 _.Achievements = 
 {
-	n(-9963, { -- Pet Battles
+	n(-9963, {	-- Pet Battles
 		["groups"] = {
-			n(-10027, { -- Collect (need to review locations for future use, some from wowhead are questionable)
+			n(-10027, {	-- Collect (need to review locations for future use, some from wowhead are questionable)
 				["groups"] = {
 					ach(7465),		-- An Uncommon Find*
 					ach(12930, {	-- Battle Safari (Kul Tiras and Zandalar)

@@ -12,9 +12,9 @@ To do:
 
 _.Achievements = 
 {
-	n(-9958, { -- Player vs Player
+	n(-9958, {	-- Player vs Player
 		["groups"] = {
-			n(-9993, { -- Temple of Kotmogu
+			n(-9993, {	-- Temple of Kotmogu
 				["groups"] = {
 					ach(6970),	-- Blackout
 					ach(6973),	-- Can't Stop Won't Stop

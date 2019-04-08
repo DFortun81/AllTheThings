@@ -7,19 +7,19 @@ _.Zones =
 		m(17, {	-- Blasted Lands
 			["groups"] = {					
 				n(-228, {	-- Flight Paths
-					fp(604, { -- Dreadmaul Hold, Blasted Lands [H]
+					fp(604, {	-- Dreadmaul Hold, Blasted Lands [H]
 						["description"] = "Dreadmaul Hold, Blasted Lands - Horde Only \n\nSpeak to Zidormi to visit the past to access this point.",
 						["coord"] = { 43.6, 14.2 },
 					}),
-					fp(45, { -- Nethergarde Keep, Blasted Lands [A]
+					fp(45, {	-- Nethergarde Keep, Blasted Lands [A]
 						["description"] = "Nethergarde Keep, Blasted Lands - Alliance Only \n\nSpeak to Zidormi to visit the past to access this point.",
 						["coord"] = { 61.2, 21.6 },
 					}),
-					fp(603, { -- Sunveil Excursion, Blasted Lands [H]
+					fp(603, {	-- Sunveil Excursion, Blasted Lands [H]
 						["description"] = "Sunveil Excursion, Blasted Lands - Horde Only \n\nSpeak to Zidormi to visit the past to access this point.",
 						["coord"] = { 50.8, 72.8 },
 					}),
-					fp(602, { -- Surwich, Blasted Lands [A]
+					fp(602, {	-- Surwich, Blasted Lands [A]
 						["description"] = "Surwich, Blasted Lands - Alliance Only \n\nSpeak to Zidormi to visit the past to access this point.",
 						["coord"] = { 47, 89.2 },
 					}),
@@ -39,12 +39,12 @@ _.Zones =
 						crit(3),		-- Avenging the Rockpool
 					}),
 --]]
-					qg(42298, qa(26172, { -- A Bloodmage's Gotta Eat Too
+					qg(42298, qa(26172, {	-- A Bloodmage's Gotta Eat Too
 						i(59384),
 						i(59386),
 						i(59385),
 					})),
-					qg(7505, qh(25690, { -- A Bloodmage's Gotta Eat Too
+					qg(7505, qh(25690, {	-- A Bloodmage's Gotta Eat Too
 						i(59422),
 						i(59424),
 						i(59423),
@@ -98,13 +98,13 @@ _.Zones =
 					{	-- Blasted Land 6.0:JP3 - Invasion - Tracking Quest - See Thrall
 						["questID"] = 37676,
 					},
-					qg(5385, qa(25716, { -- Cultists at our Doorstep
+					qg(5385, qa(25716, {	-- Cultists at our Doorstep
 						i(59378),
 						i(59376),
 						i(59379),
 						i(59377),
 					})),
-					qg(9540, qa(25709, { -- Curtail the Darktail
+					qg(9540, qa(25709, {	-- Curtail the Darktail
 						i(59371),
 						i(59369),
 						i(59370),
@@ -136,7 +136,7 @@ _.Zones =
 					qg(42348, qh(25719)),	-- Demoniac Vessel
 					qg(42352, qa(26186)),	-- Demoniac Vessel
 --]]
-					qg(5393, qa(25711, { -- Eliminate the Okril'lon
+					qg(5393, qa(25711, {	-- Eliminate the Okril'lon
 						i(59373),
 						i(59374),
 						i(59372),
@@ -277,13 +277,13 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 36307,	-- Investigating the Invasion
 					},
-					qg(41134, qh(25682, { -- Mission Complete
+					qg(41134, qh(25682, {	-- Mission Complete
 						i(59414),
 						i(59416),
 						i(59415),
 						i(59417),
 					})),
-					qg(41354, q(25706, { -- Neptool's Revenge
+					qg(41354, q(25706, {	-- Neptool's Revenge
 						i(59403),
 						i(59404),
 					})),
@@ -292,7 +292,7 @@ _.Zones =
 					qg(7506, qh(25687)),	-- Not Just Any Body
 					qg(42298, qa(26161)),	-- Not Just Any Body
 --]]						
-					qg(41125, qh(25675, { -- Ogre Combat
+					qg(41125, qh(25675, {	-- Ogre Combat
 						i(59407),
 						i(59408),
 						i(59409),
@@ -327,7 +327,7 @@ _.Zones =
 						["coord"] = { 71.8, 48.9 },
 						["races"] = HORDE_ONLY,
 					},
-					qg(41133, qh(25678, { -- Pick Your Fate
+					qg(41133, qh(25678, {	-- Pick Your Fate
 						i(59411),
 						i(59412),
 						i(59413),
@@ -386,14 +386,14 @@ _.Zones =
 					qg(16841, qa(26175)),	-- Surwich
 					qg(41134, qh(25680)),	-- That's Not Us
 --]]					
-					qg(7506, qh(25688, { -- The Altar of Storms
+					qg(7506, qh(25688, {	-- The Altar of Storms
 						i(59428),
 						i(59425),
 						i(59427),
 						i(59429),
 						i(59426),
 					})),
-					qg(42298, qa(26162, { -- The Altar of Storms	
+					qg(42298, qa(26162, {	-- The Altar of Storms	
 						i(59390),
 						i(59387),
 						i(59389),
@@ -404,13 +404,13 @@ _.Zones =
 					qg(42298, qa(26167)),	-- The Amulet of Allistarj
 					qg(7783, qh(25697)),	-- The Amulet of Allistarj
 --]]					
-					qg(42298, qa(26169, { -- The Amulet of Grol
+					qg(42298, qa(26169, {	-- The Amulet of Grol
 						i(59381),
 						i(59382),
 						i(59380),
 						i(59383),
 					})),
-					qg(7783, qh(25699, { -- The Amulet of Grol
+					qg(7783, qh(25699, {	-- The Amulet of Grol
 						i(59419),
 						i(59420),
 						i(59418),
@@ -432,13 +432,13 @@ _.Zones =
 					{	-- The Dark Portal (tracking quest?)
 						["questID"] = 37187,
 					},
-					qg(42349, qa(26187, { -- The Downfall of Marl Wormthorn
+					qg(42349, qa(26187, {	-- The Downfall of Marl Wormthorn
 						i(59400),
 						i(59402),
 						i(59401),
 						i(59399),
 					})),
-					qg(42344, qh(25720, { -- The Downfall of Marl Wormthorn
+					qg(42344, qh(25720, {	-- The Downfall of Marl Wormthorn
 						i(59439),
 						i(59438),
 						i(59440),
@@ -521,12 +521,12 @@ _.Zones =
 						},
 					},
 --					qg(5393, qa(25714)),	-- Watcher Mahar Ba (add'l QG 9540)
-					qg(16841, qa(26174, { -- Watching Our Back
+					qg(16841, qa(26174, {	-- Watching Our Back
 						i(59394),
 						i(59393),
 						i(59395),
 					})),
-					qg(19254, qh(25695, { -- Watching Our Back
+					qg(19254, qh(25695, {	-- Watching Our Back
 						i(59433),
 						i(59432),
 						i(59431),

@@ -5,7 +5,7 @@ _.WorldDrops =
 {
 	{
 		["groups"] = {
-			n(-318, { -- Armor
+			n(-318, {	-- Armor
 				n(-320, {		-- Head
 					i(60202),	-- Tsanga's Helm
 					i(66931),	-- Mercury-Coated Hood

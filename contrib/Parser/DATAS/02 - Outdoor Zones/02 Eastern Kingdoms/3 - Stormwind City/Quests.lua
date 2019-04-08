@@ -13,7 +13,7 @@ _.Zones =
 						["npcID"] = -17,	-- Quests
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
-							gsh(1522, { -- Allied Races 	-- This belongs to black rock depths where this quest line takes place, but I at least wanted to get this in first.
+							gsh(1522, {	-- Allied Races 	-- This belongs to black rock depths where this quest line takes place, but I at least wanted to get this in first.
 								["groups"] = {
 									qg(126301, qa(50239, {	-- A Choice of Allies
 										na(-244, {	-- Dark Iron Dwarf
@@ -164,49 +164,49 @@ _.Zones =
 								--["lvl"] = 110,
 							}),
 							qa(52946, {	-- A Dying World
-								["qg"] = 142930, -- Halford Wyrmbane
-								["sourceQuests"] = { 51795 }, -- The Battle for Lordaeron
+								["qg"] = 142930,	-- Halford Wyrmbane
+								["sourceQuests"] = { 51795 },	-- The Battle for Lordaeron
 								["coord"] = { 27.7, 21.5 },
 							}),
 							qa(49976, {	-- Gifts of the Fallen
-								["qg"] = 132255, -- Master Mathias Shawa
-								["sourceQuests"] = { 50371 } , -- Summons to Stormwind
+								["qg"] = 132255,	-- Master Mathias Shawa
+								["sourceQuests"] = { 50371 } ,	-- Summons to Stormwind
 							}),
 							qa(53370, {	-- Hour of Reckoning
-								["qg"] = 144095, -- Master Mathias Shaw
+								["qg"] = 144095,	-- Master Mathias Shaw
 								["coord"] = { 22.3, 32.3 },
 								["groups"] = {		
-									i(163542), -- Footman's Warmace
-									i(163541), -- Longbow of the Hunt
-									i(163539), -- Spear of the Hunt
-									i(163537), -- Footman's Warhammer
-									i(163534), -- Warmage's Spellblade
-									i(163526), -- Footman's Handaxe
-									i(163540), -- Footman's Boot Knife
-									i(163538), -- Footman's Gladius
-									i(163536), -- Warmage's Spire
-									i(163533), -- Footman's Cleaver
+									i(163542),	-- Footman's Warmace
+									i(163541),	-- Longbow of the Hunt
+									i(163539),	-- Spear of the Hunt
+									i(163537),	-- Footman's Warhammer
+									i(163534),	-- Warmage's Spellblade
+									i(163526),	-- Footman's Handaxe
+									i(163540),	-- Footman's Boot Knife
+									i(163538),	-- Footman's Gladius
+									i(163536),	-- Warmage's Spire
+									i(163533),	-- Footman's Cleaver
 								},
 							}),
 							qa(50371),	-- Summons to Stormwind
 							qa(51795, {	-- The Battle for Lordaeron
-								["qg"] = 144095, -- Master Mathias Shaw
-								["sourceQuests"] = { 53370 }, -- Hour of Reckoning
+								["qg"] = 144095,	-- Master Mathias Shaw
+								["sourceQuests"] = { 53370 },	-- Hour of Reckoning
 								["coord"] = { 22.3, 32.3 },
 							}),
-							qa(46728, { -- The Nation of Kul Tiras
-								["qg"] = 120756, -- Anduin Wyrnn
-								["sourceQuests"] = { 46727 }, -- Tides of War
+							qa(46728, {	-- The Nation of Kul Tiras
+								["qg"] = 120756,	-- Anduin Wyrnn
+								["sourceQuests"] = { 46727 },	-- Tides of War
 								["coord"] = { 85.2, 32.1 },
 							}),
-							qa(46727, { -- Tides of War
-								["qg"] = 142930, -- Halford Wyrmbane
-								["sourceQuests"] = { 51403 }, -- The Speaker's Imperative
+							qa(46727, {	-- Tides of War
+								["qg"] = 142930,	-- Halford Wyrmbane
+								["sourceQuests"] = { 51403 },	-- The Speaker's Imperative
 								["coord"] = { 27.6, 21.2 },
 							}),
 							qa(49981, {	-- Witness to the Wound
-								["qg"] = 132255, -- Master Mathias Shawa
-								["sourceQuests"] = { 49976 } , -- Gifts of the Fallen
+								["qg"] = 132255,	-- Master Mathias Shawa
+								["sourceQuests"] = { 49976 } ,	-- Gifts of the Fallen
 							}),	
 							qa(27355, {	-- A Boon for the Powerful
 								["groups"] = {
@@ -579,10 +579,10 @@ _.Zones =
 							qg(, qh( 8799)),	-- The Hero of the Day
 							qg(, qa(43471)),	-- The Historians
 		--]]					
-							qa(7497, { -- The Journey Has Just Begun
+							qa(7497, {	-- The Journey Has Just Begun
 								["sourceQuests"] = {24428}, --A Most Puzzling Circumstance
 								["requireSkill"] = 165,	-- Leatherworking
-								["qg"] = 14394, -- Major Mattingly
+								["qg"] = 14394,	-- Major Mattingly
 								["g"] = {
 									recipe(19093),		-- Onyxia Scale Cloak
 									un(1, i(15769)), 	-- Pattern: Onyxia Scale Cloak
@@ -598,7 +598,7 @@ _.Zones =
 								["groups"] = {
 									i(139739),	-- Chestguard of the Uncrowned
 								},
-								["qg"] = 111049, -- Master Mathias Shaw
+								["qg"] = 111049,	-- Master Mathias Shaw
 								["classes"] = { 4 },
 								["lvl"] = 98,
 							}),
@@ -614,7 +614,7 @@ _.Zones =
 							qg(, qa(11970)),	-- The Master of Summer Lore
 							--]]
 							qa(29548, {	-- The Mission
-								["qg"] = 55789, -- Rell Nightwind
+								["qg"] = 55789,	-- Rell Nightwind
 							}),
 							--[[
 							qg(, qa(47253)),	-- The Originals

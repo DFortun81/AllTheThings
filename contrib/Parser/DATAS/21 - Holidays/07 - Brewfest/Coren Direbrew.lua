@@ -86,8 +86,8 @@ _.Holidays = bubbleDown({["u"] = 24},
 			},
 			["description"] = "|cff66ccffYou can only loot the keg once per day per toon by running it through the Dungeon queue on your first run.|r",
 			["maps"] = {
-				242, -- Blackrock Depths
-				243, -- Blackrock Depths
+				242,	-- Blackrock Depths
+				243,	-- Blackrock Depths
 			},
 		}),
 	}),

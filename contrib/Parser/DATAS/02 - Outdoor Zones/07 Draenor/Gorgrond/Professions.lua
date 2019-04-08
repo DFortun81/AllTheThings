@@ -7,7 +7,7 @@
 --		m(543, {	-- Gorgrond
 --			["groups"] = {
 --				n(  -38, {	-- Profession
---					prof(356, { -- Fishing
+--					prof(356, {	-- Fishing
 	--					i(118380),		-- Hightfish Cap
 --					}),
 --				}),

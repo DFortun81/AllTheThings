@@ -9,7 +9,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 		["maps"] = { 621 },
 		["coord"] = { 59.55, 45.45, 543 },	-- Gorgrond, Draenor
 		["groups"] = {
-			n(-1, { -- Common Boss Drop
+			n(-1, {	-- Common Boss Drop
 				["crs"] = {
 					81522,	-- Witherbark
 					83894,	-- Ancient Protectors
@@ -24,7 +24,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 			d(1, {	-- Normal
 				n(-17, {	-- Quests 			
 					q(37150, {
-						i(118921), -- Everbloom Peachick (PET!)
+						i(118921),	-- Everbloom Peachick (PET!)
 					}),
 				}),	
 				cr(81522, e(1214, {	-- Witherbark
@@ -71,7 +71,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(109857),	-- Verdant Plate Grips
 					i(109999),	-- Witherbark's Branch
 				})),
-				cr(83894, e(1207, { -- Ancient Protectors	(Dulhu; Life Warden Gola 83892, Earthshaper Telu 83893)
+				cr(83894, e(1207, {	-- Ancient Protectors	(Dulhu; Life Warden Gola 83892, Earthshaper Telu 83893)
 					i(119176),	-- Interloper's Mossy Skull
 					i(109829),	-- Belt of Burning Focus
 					i(109842),	-- Blackwater Belt
@@ -115,7 +115,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(109819),	-- Verdant Plate Legguards
 					i(110009),	-- Leaf of the Ancient Protectors
 				})),
-				cr(84550, e(1209, { -- Xeri'tac
+				cr(84550, e(1209, {	-- Xeri'tac
 					i(119173),	-- Dessicated Husk Shield
 					i(109898),	-- Blackwater Wrap
 					i(109885),	-- Bloodfeather Chestwrap
@@ -159,7 +159,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(109794),	-- Verdant Plate Treads
 					i(110019),	-- Xeri'tac's Unhatched Egg Sac
 				})),
-				cr(82682, e(1208, { -- Archmage Sol
+				cr(82682, e(1208, {	-- Archmage Sol
 					i(119174),	-- Sol's Magestaff
 					i(109979),	-- Blackwater Helm
 					i(109976),	-- Bloodfeather Cowl
@@ -203,7 +203,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(109877),	-- Verdant Plate Wristguards
 					i(110014),	-- Spores of Alacrity
 				})),
-				cr(83846, e(1210, { -- Yalnu
+				cr(83846, e(1210, {	-- Yalnu
 					{	-- The Everbloom
 						["achievementID"] = 9044,	-- The Everbloom
 					},
@@ -279,7 +279,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 			d(2, {	-- Heroic
 				n(-17, {	-- Quests 		
 					q(37165, {
-						i(118935), -- Ever-Blooming Frond
+						i(118935),	-- Ever-Blooming Frond
 					}),	
 				}),	
 				cr(81522, e(1214, {	-- Witherbark
@@ -329,7 +329,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(109857),	-- Verdant Plate Grips
 					i(109999),	-- Witherbark's Branch
 				})),
-				cr(83894, e(1207, { -- Ancient Protectors	(Dulhu; Life Warden Gola 83892, Earthshaper Telu 83893)
+				cr(83894, e(1207, {	-- Ancient Protectors	(Dulhu; Life Warden Gola 83892, Earthshaper Telu 83893)
 					i(119176),	-- Interloper's Mossy Skull
 					i(109829),	-- Belt of Burning Focus
 					i(109842),	-- Blackwater Belt
@@ -373,7 +373,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(109819),	-- Verdant Plate Legguards
 					i(110009),	-- Leaf of the Ancient Protectors
 				})),
-				cr(84550, e(1209, { -- Xeri'tac
+				cr(84550, e(1209, {	-- Xeri'tac
 					i(119173),	-- Dessicated Husk Shield
 					i(109898),	-- Blackwater Wrap
 					i(109885),	-- Bloodfeather Chestwrap
@@ -417,7 +417,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(109794),	-- Verdant Plate Treads
 					i(110019),	-- Xeri'tac's Unhatched Egg Sac
 				})),
-				cr(82682, e(1208, { -- Archmage Sol
+				cr(82682, e(1208, {	-- Archmage Sol
 					{	-- They Burn, Burn, Burn
 						["achievementID"] = 9493,	-- They Burn, Burn, Burn
 					},
@@ -464,7 +464,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(109877),	-- Verdant Plate Wristguards
 					i(110014),	-- Spores of Alacrity
 				})),
-				cr(83846, e(1210, { -- Yalnu
+				cr(83846, e(1210, {	-- Yalnu
 					{	-- Heroic: The Everbloom
 						["achievementID"] = 9053,	-- Heroic: The Everbloom
 					},
@@ -542,7 +542,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				})),
 			}),
 			d(23, {	-- Mythic
-				cr(81522, e(1214, { -- Witherbark
+				cr(81522, e(1214, {	-- Witherbark
 					i(119175),	-- Leafhide Penetrator
 					i(109912),	-- Bloody-Blade Drape
 					i(109911),	-- Cloak of Annealing Flesh
@@ -586,7 +586,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(109857),	-- Verdant Plate Grips
 					i(109999),	-- Witherbark's Branch
 				})),
-				cr(83894, e(1207, { -- Ancient Protectors	(Dulhu; Life Warden Gola 83892, Earthshaper Telu 83893)
+				cr(83894, e(1207, {	-- Ancient Protectors	(Dulhu; Life Warden Gola 83892, Earthshaper Telu 83893)
 					i(119176),	-- Interloper's Mossy Skull
 					i(109829),	-- Belt of Burning Focus
 					i(109842),	-- Blackwater Belt
@@ -630,7 +630,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(109819),	-- Verdant Plate Legguards
 					i(110009),	-- Leaf of the Ancient Protectors
 				})),
-				cr(84550, e(1209, { -- Xeri'tac
+				cr(84550, e(1209, {	-- Xeri'tac
 					i(119173),	-- Dessicated Husk Shield
 					i(109898),	-- Blackwater Wrap
 					i(109885),	-- Bloodfeather Chestwrap
@@ -674,7 +674,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(109794),	-- Verdant Plate Treads
 					i(110019),	-- Xeri'tac's Unhatched Egg Sac
 				})),
-				cr(82682, e(1208, { -- Archmage Sol
+				cr(82682, e(1208, {	-- Archmage Sol
 					i(119174),	-- Sol's Magestaff
 					i(109979),	-- Blackwater Helm
 					i(109976),	-- Bloodfeather Cowl
@@ -718,7 +718,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(109877),	-- Verdant Plate Wristguards
 					i(110014),	-- Spores of Alacrity
 				})),
-				cr(83846, e(1210, { -- Yalnu
+				cr(83846, e(1210, {	-- Yalnu
 					{	-- Mythic: The Everbloom
 						["achievementID"] = 10083,	-- Mythic: The Everbloom
 					},
@@ -795,7 +795,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 			d(24, {	-- Timewalking
 				["lvl"] = 101,
 				["groups"] = {
-					cr(81522, e(1214, { -- Witherbark
+					cr(81522, e(1214, {	-- Witherbark
 						i(119175),	-- Leafhide Penetrator
 						i(109912),	-- Bloody-Blade Drape
 						i(109911),	-- Cloak of Annealing Flesh
@@ -839,7 +839,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						i(109857),	-- Verdant Plate Grips
 						i(109999),	-- Witherbark's Branch
 					})),
-					cr(83894, e(1207, { -- Ancient Protectors	(Dulhu; Life Warden Gola 83892, Earthshaper Telu 83893)
+					cr(83894, e(1207, {	-- Ancient Protectors	(Dulhu; Life Warden Gola 83892, Earthshaper Telu 83893)
 						i(119176),	-- Interloper's Mossy Skull
 						i(109829),	-- Belt of Burning Focus
 						i(109842),	-- Blackwater Belt
@@ -883,7 +883,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						i(109819),	-- Verdant Plate Legguards
 						i(110009),	-- Leaf of the Ancient Protectors
 					})),
-					cr(84550, e(1209, { -- Xeri'tac
+					cr(84550, e(1209, {	-- Xeri'tac
 						i(119173),	-- Dessicated Husk Shield
 						i(109898),	-- Blackwater Wrap
 						i(109885),	-- Bloodfeather Chestwrap
@@ -927,7 +927,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						i(109794),	-- Verdant Plate Treads
 						i(110019),	-- Xeri'tac's Unhatched Egg Sac
 					})),
-					cr(82682, e(1208, { -- Archmage Sol
+					cr(82682, e(1208, {	-- Archmage Sol
 						i(119174),	-- Sol's Magestaff
 						i(109979),	-- Blackwater Helm
 						i(109976),	-- Bloodfeather Cowl
@@ -971,7 +971,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						i(109877),	-- Verdant Plate Wristguards
 						i(110014),	-- Spores of Alacrity
 					})),
-					cr(83846, e(1210, { -- Yalnu
+					cr(83846, e(1210, {	-- Yalnu
 						i(119181),	-- Hoof of Yalnu
 						i(109957),	-- Alc's Pendant of Fiery Dreams
 						i(109962),	-- Bloodmist Pendant
