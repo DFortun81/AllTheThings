@@ -31,7 +31,9 @@ _.GroupFinder =
 					i(160598),	-- Tumultuous Cloak [Added in BFA.  Confirmed in discord]
 					i(160597),	-- Tumultuous Cloak ** April 7, 2019
 					i(51996),	-- Tumultuous Necklace*
-					i(51992),	-- Tumultuous Ring*
+					i(51992),	-- Tumultuous Ring* [INT]
+					i(160601),	-- Tumultuous Ring [AGI]** April 7, 2019
+					i(160602),	-- Tumultuous Ring [STR]
 					i(51964),	-- Vigorous Belt*
 					i(51962),	-- Vigorous Bracers ** April 7, 2019
 					i(51965),	-- Vigorous Handguards
