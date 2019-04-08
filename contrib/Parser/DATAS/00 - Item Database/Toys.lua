@@ -587,3 +587,10 @@ t(166788);	-- Twiddle Twirler: Shredder Blade
 t(166701);	-- Warbeast Kraal Dinner Bell
 t(165021);	-- Words of Akunda
 t(165791);	-- Worn Cloak
+
+-----------------
+-- PATCH 8.1.5 --
+-----------------
+
+t(168012);	-- Apexis Focusing Shard
+t(168014);	-- Banner of the Burning Blade

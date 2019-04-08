@@ -190,3 +190,10 @@ i(165019, 281887);	-- Vicious Black Warsaber
 i(166775, 290133);	-- Vulpine Familiar
 i(166443, 288589);	-- Yellow Marsh Hopper
 i(142233, 238454);	-- Shadowy Reins of the Accursed Wrathsteed
+
+-----------------
+-- PATCH 8.1.5 --
+-----------------
+
+i(167894, 294568);	-- Beastlord's Irontusk
+i(167895, 294569);	-- Beastlord's Warwolf
