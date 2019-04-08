@@ -277,20 +277,85 @@ _.ExpansionFeatures =
 						},
 					}),
 					n(112434, {	-- Gigi Gigavoid <Black Harvest Quartermaster>
-						gs(448, {	-- Vestments of the Black Harvest
-							i(139765),	-- Head
-							i(139768),	-- Shoulders
-							i(139767),	-- Chest
-							i(139770),	-- Bracers
-							i(139764),	-- Hands
-							i(139769),	-- Belt
-							i(139766),	-- Legs
-							i(139763),	-- Feet		
-						}),
 						i(140553),	-- Netherlord's Staff of Summoning
+						{
+							["itemID"] = 139765,		-- Helm
+							["groups"] = {
+								{
+									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
+									["criteriaID"] = 1,			-- Class Hall Helm Earned (Criteria)
+								},
+							},
+						},
+						{
+							["itemID"] = 139768,		-- Shoulders
+							["groups"] = {
+								{
+									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
+									["criteriaID"] = 8,			-- Class Hall Shoulders Earned (Criteria)
+								},
+							},
+						},
+						{
+							["itemID"] = 139767,		-- Chestpiece
+							["groups"] = {
+								{
+									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
+									["criteriaID"] = 5,			-- Class Hall Chestpiece Earned (Criteria)
+								},
+							},
+						},
+						{
+							["itemID"] = 139770,		-- Bracers
+							["groups"] = {
+								{
+									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
+									["criteriaID"] = 2,			-- Class Hall Bracers Earned (Criteria)
+								}
+							},
+						},
+						{
+							["itemID"] = 139764,		-- Gloves
+							["groups"] = {
+								{
+									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
+									["criteriaID"] = 3,			-- Class Hall Gloves Earned (Criteria)
+								},
+							},
+						},
+						{
+							["itemID"] = 139769,		-- Belt
+							["groups"] = {
+								{
+									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
+									["criteriaID"] = 7,			-- Class Hall Belt Earned (Criteria)
+								},
+							},
+						},
+						{
+							["itemID"] = 139766,		-- Leggings
+							["groups"] = {
+								{
+									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
+									["criteriaID"] = 4,			-- Class Hall Leggings Earned (Criteria)
+								},
+							},
+						},
+						{
+							["itemID"] = 139763,		-- Boots
+							["groups"] = {
+								{
+									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
+									["criteriaID"] = 6,			-- Class Hall Boots Earned (Criteria)
+								},
+							},
+						},
 						currency(1220, {	-- Order Resources
 							i(143727),	-- Champion's Salute Toy
 							i(124124),	-- Blood of Sargeras
+							i(140982),	-- Netherlord's Lesser Armor Kit
+							i(140945),	-- Netherlord's Armor Kit
+							i(140983),	-- Netherlord's Greater Armor Kit
 						}),
 					}),
 				}),

@@ -308,20 +308,85 @@ _.ExpansionFeatures =
 				}),
 				n(-2, {	-- Vendors
 					n(112401, {	-- Meridelle Lightspark <Logistics>
-						gs(330, {	-- Regalia of the High Priest
-							i(139757),	-- Head
-							i(139760),	-- Shoulders
-							i(139759),	-- Chest
-							i(139762),	-- Bracers
-							i(139756),	-- Hands
-							i(139761),	-- Belt
-							i(139758),	-- Legs
-							i(139755),	-- Feet
-						}),
 						i(140552),	-- Netherlight Spire
+						{
+							["itemID"] = 139757,		-- Helm
+							["groups"] = {
+								{
+									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
+									["criteriaID"] = 1,			-- Class Hall Helm Earned (Criteria)
+								},
+							},
+						},
+						{
+							["itemID"] = 139760,		-- Shoulders
+							["groups"] = {
+								{
+									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
+									["criteriaID"] = 8,			-- Class Hall Shoulders Earned (Criteria)
+								},
+							},
+						},
+						{
+							["itemID"] = 139759,		-- Chestpiece
+							["groups"] = {
+								{
+									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
+									["criteriaID"] = 5,			-- Class Hall Chestpiece Earned (Criteria)
+								},
+							},
+						},
+						{
+							["itemID"] = 139762,		-- Bracers
+							["groups"] = {
+								{
+									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
+									["criteriaID"] = 2,			-- Class Hall Bracers Earned (Criteria)
+								}
+							},
+						},
+						{
+							["itemID"] = 139756,		-- Gloves
+							["groups"] = {
+								{
+									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
+									["criteriaID"] = 3,			-- Class Hall Gloves Earned (Criteria)
+								},
+							},
+						},
+						{
+							["itemID"] = 139761,		-- Belt
+							["groups"] = {
+								{
+									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
+									["criteriaID"] = 7,			-- Class Hall Belt Earned (Criteria)
+								},
+							},
+						},
+						{
+							["itemID"] = 139758,		-- Leggings
+							["groups"] = {
+								{
+									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
+									["criteriaID"] = 4,			-- Class Hall Leggings Earned (Criteria)
+								},
+							},
+						},
+						{
+							["itemID"] = 139755,		-- Boots
+							["groups"] = {
+								{
+									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
+									["criteriaID"] = 6,			-- Class Hall Boots Earned (Criteria)
+								},
+							},
+						},
 						currency(1220, {	-- Order Resources
 							i(143727),	-- Champion's Salute Toy
 							i(124124),	-- Blood of Sargeras
+							i(140976),	-- High Priest's Lesser Armor Kit
+							i(140942),	-- High Priest's Armor Kit
+							i(140977),	-- High Priest's Greater Armor Kit
 						}),
 					}),
 				}),

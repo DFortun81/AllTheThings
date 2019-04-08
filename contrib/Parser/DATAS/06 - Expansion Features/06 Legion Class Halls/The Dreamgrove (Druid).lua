@@ -296,20 +296,81 @@ _.ExpansionFeatures =
 				]]--
 				n(-2, {	--  Vendors
 					n(112323, {	-- Amurra Thistledew <Proprietor>
-						-- Dreamgrove Raiment
-						gs(549, {	-- Dreamgrove Raiment 
-							i(139726),	-- Head
-							i(139728),	-- Shoulders
-							i(139723),	-- Chest
-							i(139730),	-- Bracers
-							i(139725),	-- Hands
-							i(139729),	-- Belt
-							i(139727),	-- Legs
-							i(139724),	-- Feet		
-						}),
 						i(140540),	-- Dreamgrove Blade
 						i(140542),	-- Dreamgrove Spire
 						i(140549),	-- Pillar of the Dreamgrove
+						{
+							["itemID"] = 139726,		-- Helm
+							["groups"] = {
+								{
+									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
+									["criteriaID"] = 1,			-- Class Hall Helm Earned (Criteria)
+								},
+							},
+						},
+						{
+							["itemID"] = 139728,		-- Shoulders
+							["groups"] = {
+								{
+									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
+									["criteriaID"] = 8,			-- Class Hall Shoulders Earned (Criteria)
+								},
+							},
+						},
+						{
+							["itemID"] = 139723,		-- Chestpiece
+							["groups"] = {
+								{
+									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
+									["criteriaID"] = 5,			-- Class Hall Chestpiece Earned (Criteria)
+								},
+							},
+						},
+						{
+							["itemID"] = 139730,		-- Bracers
+							["groups"] = {
+								{
+									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
+									["criteriaID"] = 2,			-- Class Hall Bracers Earned (Criteria)
+								}
+							},
+						},
+						{
+							["itemID"] = 139725,		-- Gloves
+							["groups"] = {
+								{
+									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
+									["criteriaID"] = 3,			-- Class Hall Gloves Earned (Criteria)
+								},
+							},
+						},
+						{
+							["itemID"] = 139729,		-- Belt
+							["groups"] = {
+								{
+									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
+									["criteriaID"] = 7,			-- Class Hall Belt Earned (Criteria)
+								},
+							},
+						},
+						{
+							["itemID"] = 139727,		-- Leggings
+							["groups"] = {
+								{
+									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
+									["criteriaID"] = 4,			-- Class Hall Leggings Earned (Criteria)
+								},
+							},
+						},
+						{
+							["itemID"] = 139724,		-- Boots
+							["groups"] = {
+								{
+									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
+									["criteriaID"] = 6,			-- Class Hall Boots Earned (Criteria)
+								},
+							},
+						},
 						{	-- Tome of the Wilds: Charm Woodland Creature
 							["itemID"] = 136795,	-- Tome of the Wilds: Charm Woodland Creature
 							["spellID"] = 0,		-- Invalidate the Spell ID (this makes it uncollectible)
@@ -333,6 +394,9 @@ _.ExpansionFeatures =
 						currency(1220, {	-- Order Resources
 							i(143727),	-- Champion's Salute Toy
 							i(124124),	-- Blood of Sargeras
+							i(140966),	-- Archdruid's Lesser Armor Kit
+							i(140937),	-- Archdruid's Armor Kit
+							i(140967),	-- Archdruid's Greater Armor Kit
 						}),
 					}),
 				}),

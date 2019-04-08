@@ -118,18 +118,84 @@ _.ExpansionFeatures =
 					n(93550, {	-- Quartermaster Ozorg
 						i(40775),	-- Winged Steed of the Ebon Blade Mount
 						i(136796),	-- Necrophile Tome: Corpse Exploder
-						gs(550, {	-- Deathlord's Battleplate
-							i(139676),	-- Head
-							i(139678),	-- Shoulders
-							i(139673),	-- Chest
-							i(139680),	-- Bracers
-							i(139675),	-- Hands
-							i(139679),	-- Belt
-							i(139677),	-- Legs
-							i(139674),	-- Feet		
-						}),
 						i(140538),	-- Broadaxe of the Ebon Blade
 						i(140554),	-- Warsword of the Ebon Blade
+						{
+							["itemID"] = 139676,		-- Helm
+							["groups"] = {
+								{
+									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
+									["criteriaID"] = 1,			-- Class Hall Helm Earned (Criteria)
+								},
+							},
+						},
+						{
+							["itemID"] = 139678,		-- Shoulders
+							["groups"] = {
+								{
+									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
+									["criteriaID"] = 8,			-- Class Hall Shoulders Earned (Criteria)
+								},
+							},
+						},
+						{
+							["itemID"] = 139673,		-- Chestpiece
+							["groups"] = {
+								{
+									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
+									["criteriaID"] = 5,			-- Class Hall Chestpiece Earned (Criteria)
+								},
+							},
+						},
+						{
+							["itemID"] = 139680,		-- Bracers
+							["groups"] = {
+								{
+									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
+									["criteriaID"] = 2,			-- Class Hall Bracers Earned (Criteria)
+								}
+							},
+						},
+						{
+							["itemID"] = 139675,		-- Gloves
+							["groups"] = {
+								{
+									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
+									["criteriaID"] = 3,			-- Class Hall Gloves Earned (Criteria)
+								},
+							},
+						},
+						{
+							["itemID"] = 139679,		-- Belt
+							["groups"] = {
+								{
+									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
+									["criteriaID"] = 7,			-- Class Hall Belt Earned (Criteria)
+								},
+							},
+						},
+						{
+							["itemID"] = 139677,		-- Leggings
+							["groups"] = {
+								{
+									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
+									["criteriaID"] = 4,			-- Class Hall Leggings Earned (Criteria)
+								},
+							},
+						},
+						{
+							["itemID"] = 139674,		-- Boots
+							["groups"] = {
+								{
+									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
+									["criteriaID"] = 6,			-- Class Hall Boots Earned (Criteria)
+								},
+							},
+						},
+						i(38633),	-- Greataxe of the Ebon Blade
+						i(38632),	-- Greatsword of the Ebon Blade
+						i(34661),	-- Massacre Sword
+						i(38707),	-- Runed Spellblade
 						i(34652),	-- Archerus Knight's Hood
 						i(34655),	-- Archerus Knight's Pauldrons
 						i(34659),	-- Archerus Knight's Shroud
@@ -142,10 +208,6 @@ _.ExpansionFeatures =
 						i(34657),	-- Choker of Damnation
 						i(34658),	-- Plague Band
 						i(38147),	-- Corrupted Band
-						i(38633),	-- Greataxe of the Ebon Blade
-						i(38632),	-- Greatsword of the Ebon Blade
-						i(34661),	-- Massacre Sword
-						i(38707),	-- Runed Spellblade
 						i(38661),	-- Greathelm of the Scourge Champion
 						i(38663),	-- Blood-Soaked Saronite Plated Spaulders
 						i(39322),	-- Shroud of the North Wind
@@ -160,12 +222,20 @@ _.ExpansionFeatures =
 						currency(1220, {	-- Order Resources
 							i(143727),	-- Champion's Salute Toy
 							i(124124),	-- Blood of Sargeras
+							i(140962),	-- Deathlord's Lesser Armor Kit
+							i(140935),	-- Deathlord's Armor Kit
+							i(140963),	-- Deathlord's Greater Armor Kit
 						}),
 					}),
 					n(121752, {	-- Slimy
-						i(147539),	-- Bloodbrood Whelpling (PET!)
-						i(147540),	-- Frostbrood Whelpling (PET!)
-						i(147541),	-- Vilebrood Whelpling (PET!)
+						["sourceQuest"] = 46813,	-- The Lost Glacier
+						["groups"] = {
+							currency(1220, {	-- Order Resources
+								i(147539),	-- Bloodbrood Whelpling (PET!)
+								i(147540),	-- Frostbrood Whelpling (PET!)
+								i(147541),	-- Vilebrood Whelpling (PET!)
+							}),
+						},
 					}),
 				}),
 			},

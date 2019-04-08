@@ -336,27 +336,95 @@ _.ExpansionFeatures =
 				]]--
 				n(-2, {	--  Vendors
 					n(112440, {	-- Jackson Watkins <Tirisgarde Quartermaster>
-						gs(516, {	-- Vesture of Tirisgarde
-							i(139749),	-- Head
-							i(139752),	-- Shoulders
-							i(139751),	-- Chest
-							i(139754),	-- Bracers
-							i(139748),	-- Hands
-							i(139753),	-- Belt
-							i(139750),	-- Legs
-							i(139747),	-- Feet		
-						}),
 						i(140550),	-- Archmage's Battle Staff
+						{
+							["itemID"] = 139749,		-- Helm
+							["groups"] = {
+								{
+									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
+									["criteriaID"] = 1,			-- Class Hall Helm Earned (Criteria)
+								},
+							},
+						},
+						{
+							["itemID"] = 139752,		-- Shoulders
+							["groups"] = {
+								{
+									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
+									["criteriaID"] = 8,			-- Class Hall Shoulders Earned (Criteria)
+								},
+							},
+						},
+						{
+							["itemID"] = 139751,		-- Chestpiece
+							["groups"] = {
+								{
+									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
+									["criteriaID"] = 5,			-- Class Hall Chestpiece Earned (Criteria)
+								},
+							},
+						},
+						{
+							["itemID"] = 139754,		-- Bracers
+							["groups"] = {
+								{
+									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
+									["criteriaID"] = 2,			-- Class Hall Bracers Earned (Criteria)
+								}
+							},
+						},
+						{
+							["itemID"] = 139748,		-- Gloves
+							["groups"] = {
+								{
+									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
+									["criteriaID"] = 3,			-- Class Hall Gloves Earned (Criteria)
+								},
+							},
+						},
+						{
+							["itemID"] = 139753,		-- Belt
+							["groups"] = {
+								{
+									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
+									["criteriaID"] = 7,			-- Class Hall Belt Earned (Criteria)
+								},
+							},
+						},
+						{
+							["itemID"] = 139750,		-- Leggings
+							["groups"] = {
+								{
+									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
+									["criteriaID"] = 4,			-- Class Hall Leggings Earned (Criteria)
+								},
+							},
+						},
+						{
+							["itemID"] = 139747,		-- Boots
+							["groups"] = {
+								{
+									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
+									["criteriaID"] = 6,			-- Class Hall Boots Earned (Criteria)
+								},
+							},
+						},
 						currency(1220, {	-- Order Resources
 							i(143727),	-- Champion's Salute Toy
 							i(124124),	-- Blood of Sargeras
+							i(140970),	-- Archmage's Lesser Armor Kit
+							i(140939),	-- Archmage's Armor Kit
+							i(140971),	-- Archmage's Greater Armor Kit
 						}),
 					}),
 					n(103169, {	-- Uthel'nay
 						["classes"] = {8},
 						["description"] = "|c808080FAThis toy is only available to mages who have completed|r |cFFFFD700Dispersion of the Discs|r |c808080FAquest from the class mount campaign.",
+						["sourceQuest"] = 45354,	-- Dispersion of the Discs
 						["groups"] = {
-							i(147832),	-- Magical Saucer Toy
+							currency(1220, {	-- Order Resources
+								i(147832),	-- Magical Saucer Toy
+							}),
 						},
 					}),
 				}),

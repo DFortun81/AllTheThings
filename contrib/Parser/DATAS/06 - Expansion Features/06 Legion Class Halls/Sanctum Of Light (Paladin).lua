@@ -123,34 +123,103 @@ _.ExpansionFeatures =
 					n(99976, {	--  Crusader Lord Dalfors
 						["classes"] = {2},
 						["description"] = "|c808080FAThese mounts are only available to paladins who have completed|r |cFFFFD700Stirring in the Shadows|r |c808080FAquest from the class mount campaign.",
+						["sourceQuest"] = 45770,	-- Stirring in the Shadows
 						["groups"] = {
-							i(153177),	-- Golden Charger's Birdle
-							i(143503),	-- Harsh Reins of the Vengeful Charger
-							i(143505),	-- Heraldic Reins of the Valorous Charger
-							i(143504),	-- Stoic Reins of the Vigilant Charger
-							i(153174),	-- Valorous Charger's Bridle
-							i(153175),	-- Vengeful Charger's Bridle
-							i(153176),	-- Vigilant Charger's Bridle
+							currency(1220, {	-- Order Resources
+								i(143503),	-- Harsh Reins of the Vengeful Charger
+								i(143505),	-- Heraldic Reins of the Valorous Charger
+								i(143504),	-- Stoic Reins of the Vigilant Charger
+								i(153177),	-- Golden Charger's Birdle
+								i(153174),	-- Valorous Charger's Bridle
+								i(153175),	-- Vengeful Charger's Bridle
+								i(153176),	-- Vigilant Charger's Bridle
+							}),
 						},
 					}),
 					n(100196, {	-- Eadric the Pure <Quartermaster>
-						gs(496, {	-- Battleplate of the Silver Hand
-							i(139693),	-- Head
-							i(139695),	-- Shoulders
-							i(139690),	-- Chest
-							i(139697),	-- Bracers
-							i(139692),	-- Hands
-							i(139696),	-- Belt
-							i(139694),	-- Legs
-							i(139691),	-- Feet		
-						}),
+						i(136801),	-- Divine Tome: Contemplation
 						i(140555),	-- Blade of the Silver Hand
 						i(140535),	-- Bulwark of  the Silver hand
 						i(140558),	-- Greatsword of the Silver Hand
 						i(140547),	-- Warhammer of the Silver Hand
+						{
+							["itemID"] = 139693,		-- Helm
+							["groups"] = {
+								{
+									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
+									["criteriaID"] = 1,			-- Class Hall Helm Earned (Criteria)
+								},
+							},
+						},
+						{
+							["itemID"] = 139695,		-- Shoulders
+							["groups"] = {
+								{
+									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
+									["criteriaID"] = 8,			-- Class Hall Shoulders Earned (Criteria)
+								},
+							},
+						},
+						{
+							["itemID"] = 139690,		-- Chestpiece
+							["groups"] = {
+								{
+									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
+									["criteriaID"] = 5,			-- Class Hall Chestpiece Earned (Criteria)
+								},
+							},
+						},
+						{
+							["itemID"] = 139697,		-- Bracers
+							["groups"] = {
+								{
+									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
+									["criteriaID"] = 2,			-- Class Hall Bracers Earned (Criteria)
+								}
+							},
+						},
+						{
+							["itemID"] = 139692,		-- Gloves
+							["groups"] = {
+								{
+									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
+									["criteriaID"] = 3,			-- Class Hall Gloves Earned (Criteria)
+								},
+							},
+						},
+						{
+							["itemID"] = 139696,		-- Belt
+							["groups"] = {
+								{
+									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
+									["criteriaID"] = 7,			-- Class Hall Belt Earned (Criteria)
+								},
+							},
+						},
+						{
+							["itemID"] = 139694,		-- Leggings
+							["groups"] = {
+								{
+									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
+									["criteriaID"] = 4,			-- Class Hall Leggings Earned (Criteria)
+								},
+							},
+						},
+						{
+							["itemID"] = 139691,		-- Boots
+							["groups"] = {
+								{
+									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
+									["criteriaID"] = 6,			-- Class Hall Boots Earned (Criteria)
+								},
+							},
+						},
 						currency(1220, {	-- Order Resources
 							i(143727),	-- Champion's Salute Toy
 							i(124124),	-- Blood of Sargeras
+							i(140974),	-- Highlord's Lesser Armor Kit
+							i(140941),	-- Highlord's Armor Kit
+							i(140975),	-- Highlord's Greater Armor Kit
 						}),
 					}),		
 					n(91190, {	-- Sister Elda <Keeper of the Ancient Tomes>
