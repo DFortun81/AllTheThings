@@ -103,7 +103,7 @@ _.ExpansionFeatures =
 							},
 						},
 						{	-- Blackpaw [H Only]
-							["hordeQuestID"] = 54890,		-- Blackpaw [H]
+							["questID"] = 54890,		-- Blackpaw [H]
 							["races"] = HORDE_ONLY,
 							["npcID"] = 149660,				-- Blackpaw
 							["qg"] = 149660,				-- Blackpaw
@@ -282,7 +282,7 @@ _.ExpansionFeatures =
 							},
 						},
 						{	-- Grimhorn [H Only]
-							["hordeQuestID"] = 54891,		-- Grimhorn [H]
+							["questID"] = 54891,		-- Grimhorn [H]
 							["races"] = HORDE_ONLY,
 							["npcID"] = 149662,				-- Grimhorn
 							["qg"] = 149662,				-- Grimhorn
@@ -358,7 +358,7 @@ _.ExpansionFeatures =
 							},
 						},
 						{	-- Onu [H Only]
-							["hordeQuestID"] = 54291,		-- Onu [H]
+							["questID"] = 54291,		-- Onu [H]
 							["races"] = HORDE_ONLY,
 							["npcID"] = 147758,				-- Onu
 							["qg"] = 147758,				-- Onu
@@ -396,7 +396,7 @@ _.ExpansionFeatures =
 							},
 						},
 						{	-- Sapper Odette [H Only]
-							["hordeQuestID"] = 54452,		-- Sapper Odette [H]
+							["questID"] = 54452,		-- Sapper Odette [H]
 							["races"] = HORDE_ONLY,
 							["npcID"] = 148103,				-- Sapper Odette
 							["qg"] = 148103,				-- Sapper Odette
@@ -422,7 +422,7 @@ _.ExpansionFeatures =
 							},
 						},
 						{	-- Shadowclaw [H Only]
-							["hordeQuestID"] = 54892,		-- Shadowclaw [H]
+							["questID"] = 54892,		-- Shadowclaw [H]
 							["races"] = HORDE_ONLY,
 							["npcID"] = 149663,				-- Shadowclaw
 							["qg"] = 149663,				-- Shadowclaw
@@ -478,7 +478,7 @@ _.ExpansionFeatures =
 							},
 						},
 						{	-- Thelar Moonstrike [H Only]
-							["hordeQuestID"] = 54252,		-- Thelar Moonstrike [H]
+							["questID"] = 54252,		-- Thelar Moonstrike [H]
 							["races"] = HORDE_ONLY,
 							["npcID"] = 147435,				-- Thelar Moonstrike
 							["qg"] = 147435,				-- Thelar Moonstrike
