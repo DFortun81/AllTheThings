@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.ExpansionFeatures =
 {
-	n(-9965, { -- Legion Class Hall
-		cl(10, { -- The Wandering Isle (Monk)
+	n(-9965, {	-- Legion Class Hall
+		cl(10, {	-- The Wandering Isle (Monk)
 			["lvl"] = 98,
 			["mapID"] = 709,
 			["groups"] = {
@@ -14,8 +14,18 @@ _.ExpansionFeatures =
 					["questID"] = 43974,
 					["groups"] = {
 						i(139561, {	-- Legend of the Monkey King
-							artifact(959), -- Brewmater Monk Hidden Appearance
+							artifact(959),	-- Brewmater Monk Hidden Appearance
 						}),
+						i(140295),	-- Badgercharm Brew
+						i(140288),	-- Bubblebelly Brew
+						i(140293),	-- Exploding Cask
+						i(140291),	-- Featherfoot Brew
+						i(140289),	-- Lungfiller Brew
+						i(140290),	-- Seastrider Brew
+						i(140256),	-- Skysinger Brew
+						i(140287),	-- Stoutheart Brew
+						i(140253),	-- Swiftpad Brew
+						i(140292),	-- Tumblerun Brew
 					},
 				}),
 				n(-4, {	-- Achievements
@@ -84,91 +94,91 @@ _.ExpansionFeatures =
 					a(ach(10743)),	-- The Prestige (Alliance) [Still in WoW UI as of 8.0]
 					h(ach(10745)),	-- The Prestige (Horde) [Still in WoW UI as of 8.0]
 				}),
-				n(-17, { -- Quests
-					sz(11546,7, { -- Champions of Legionfall
-						q(45440, { -- A Brewing Situation
-							["qg"] = 116929, -- Brewmaster Blancee
-							["sourceQuests"] = { 47137 }, -- Champions of Legionfall
+				n(-17, {	-- Quests
+					sz(11546,7, {	-- Champions of Legionfall
+						q(45440, {	-- A Brewing Situation
+							["qg"] = 116929,	-- Brewmaster Blancee
+							["sourceQuests"] = { 47137 },	-- Champions of Legionfall
 						}),	
-						q(45404, { -- Panic at the Brewery
-							["qg"] = 119664, -- Brewmaster Almai
-							["sourceQuests"] = { 45440 }, -- A Brewing Situation
+						q(45404, {	-- Panic at the Brewery
+							["qg"] = 119664,	-- Brewmaster Almai
+							["sourceQuests"] = { 45440 },	-- A Brewing Situation
 						}),	
-						q(45459, { -- Storming the Legion
-							["qg"] = 119765, -- Spirit of Brewmaster Blanche
-							["sourceQuests"] = { 45404 }, -- Panic at the Brewery
+						q(45459, {	-- Storming the Legion
+							["qg"] = 119765,	-- Spirit of Brewmaster Blanche
+							["sourceQuests"] = { 45404 },	-- Panic at the Brewery
 						}),	
-						q(45574, { -- Fel Ingredients
-							["qg"] = 117305, -- Brewmaster Almai
-							["sourceQuests"] = { 45459 }, -- Storming the Legion
+						q(45574, {	-- Fel Ingredients
+							["qg"] = 117305,	-- Brewmaster Almai
+							["sourceQuests"] = { 45459 },	-- Storming the Legion
 						}),	
-						q(45449, { -- Alchemist Koryla
-							["qg"] = 117305, -- Brewer Almai
-							["sourceQuests"] = { 45459 }, -- Storming the Legion
+						q(45449, {	-- Alchemist Koryla
+							["qg"] = 117305,	-- Brewer Almai
+							["sourceQuests"] = { 45459 },	-- Storming the Legion
 						}),	
-						q(45545, { -- Barrel Toss
-							["qg"] = 117305, -- Brewer Almai
-							["sourceQuests"] = { 45459 }, -- Storming the Legion
+						q(45545, {	-- Barrel Toss
+							["qg"] = 117305,	-- Brewer Almai
+							["sourceQuests"] = { 45459 },	-- Storming the Legion
 						}),	
-						q(46320, { -- Hope For a Cure
-							["qg"] = 117305, -- Brewer Almai
-							["sourceQuests"] = { 45574, 45449, 45545 }, -- Fel Ingredients / Alchemist Koryla / Barrel Toss
+						q(46320, {	-- Hope For a Cure
+							["qg"] = 117305,	-- Brewer Almai
+							["sourceQuests"] = { 45574, 45449, 45545 },	-- Fel Ingredients / Alchemist Koryla / Barrel Toss
 						}),	
-						q(45442, { -- Not Felling Well
-							["qg"] = 119765, -- Spirit of Brewmaster Blanche
-							["sourceQuests"] = { 46320 }, -- Hope For a Cure
+						q(45442, {	-- Not Felling Well
+							["qg"] = 119765,	-- Spirit of Brewmaster Blanche
+							["sourceQuests"] = { 46320 },	-- Hope For a Cure
 						}),	
-						q(45771, { -- A Time for Everything
-							["qg"] = 119765, -- Spirit of Brewmaster Blanche
-							["sourceQuests"] = { 45442 }, -- Not Felling Well
+						q(45771, {	-- A Time for Everything
+							["qg"] = 119765,	-- Spirit of Brewmaster Blanche
+							["sourceQuests"] = { 45442 },	-- Not Felling Well
 						}),	
-						q(45790, { -- Champion: Almai
-							["qg"] = 117504, -- Brewer Almai
-							["sourceQuests"] = { 45771 }, -- A Time for Everything
+						q(45790, {	-- Champion: Almai
+							["qg"] = 117504,	-- Brewer Almai
+							["sourceQuests"] = { 45771 },	-- A Time for Everything
 						}),
 					}),	
-					spell(229385, { -- Ban-Lu, Grandmaster's Companion
-						q(46353, { -- Master Who?
-							["qg"] = 118214, -- Yiska
-							["sourceQuests"] = { 46246 }, -- Strike Them Down
+					spell(229385, {	-- Ban-Lu, Grandmaster's Companion
+						q(46353, {	-- Master Who?
+							["qg"] = 118214,	-- Yiska
+							["sourceQuests"] = { 46246 },	-- Strike Them Down
 						}),	
-						q(46341, { -- The Tale of Ban-Lu
-							["qg"] = 120758, -- Master Bu
-							["sourceQuests"] = { 46353 }, -- Master Who?
+						q(46341, {	-- The Tale of Ban-Lu
+							["qg"] = 120758,	-- Master Bu
+							["sourceQuests"] = { 46353 },	-- Master Who?
 						}),	
-						q(46342, { -- Return to the Broken Peak
-							["qg"] = 120758, -- Master Bu
-							["sourceQuests"] = { 46341 }, -- The Tale of Ban-Lu
+						q(46342, {	-- Return to the Broken Peak
+							["qg"] = 120758,	-- Master Bu
+							["sourceQuests"] = { 46341 },	-- The Tale of Ban-Lu
 						}),
-						q(46343, { -- The Trail of Ban-Lu
-							["qgs"] = 120722, -- Master Bu
-							["sourceQuests"] = { 46342 }, -- Return ot the Broken Peak
+						q(46343, {	-- The Trail of Ban-Lu
+							["qgs"] = 120722,	-- Master Bu
+							["sourceQuests"] = { 46342 },	-- Return ot the Broken Peak
 						}),	
-						q(46344, { -- Smelly's Luckydo
-							["qgs"] = 120744, -- Smelly Mountaintop
-							["sourceQuests"] = { 46343 }, -- The Trail of Ban-Lu
+						q(46344, {	-- Smelly's Luckydo
+							["qgs"] = 120744,	-- Smelly Mountaintop
+							["sourceQuests"] = { 46343 },	-- The Trail of Ban-Lu
 						}),	
-						q(46346, { -- The Shadow of Ban-Lu
-							["qgs"] = 120722, -- Master Bu
-							["sourceQuests"] = { 46344 }, -- Smelly's Luckydo
+						q(46346, {	-- The Shadow of Ban-Lu
+							["qgs"] = 120722,	-- Master Bu
+							["sourceQuests"] = { 46344 },	-- Smelly's Luckydo
 						}),	
-						q(46347, { -- Clean-up on Aisle Sha
-							["qgs"] = 120722, -- Master Bu
-							["sourceQuests"] = { 46346 }, -- The Shadow of Ban-Lu
+						q(46347, {	-- Clean-up on Aisle Sha
+							["qgs"] = 120722,	-- Master Bu
+							["sourceQuests"] = { 46346 },	-- The Shadow of Ban-Lu
 						}),	
-						q(46348, { -- The River to Ban-Lu
-							["qgs"] = 120722, -- Master Bu
-							["sourceQuests"] = { 46347 }, -- Clean-up on Aisle Sha
+						q(46348, {	-- The River to Ban-Lu
+							["qgs"] = 120722,	-- Master Bu
+							["sourceQuests"] = { 46347 },	-- Clean-up on Aisle Sha
 						}),	
-						q(46349, { -- Lilies for Ryuli
-							["qgs"] = 120726, -- Waterspeaker Ryuli
-							["sourceQuests"] = { 46348 }, -- The River to Ban-Lu
+						q(46349, {	-- Lilies for Ryuli
+							["qgs"] = 120726,	-- Waterspeaker Ryuli
+							["sourceQuests"] = { 46348 },	-- The River to Ban-Lu
 						}),	
-						q(46350, { -- The Trial of Ban-Lu
-							["qgs"] = 120726, -- Waterspeaker Ryuli
-							["sourceQuests"] = { 46349 }, -- Lilies for Ryuli
+						q(46350, {	-- The Trial of Ban-Lu
+							["qgs"] = 120726,	-- Waterspeaker Ryuli
+							["sourceQuests"] = { 46349 },	-- Lilies for Ryuli
 							["groups"] = {
-								i(142225), -- Ban-Lu, Grandmaster's Companion
+								i(142225),	-- Ban-Lu, Grandmaster's Companion
 							},
 						}),	
 					}),
@@ -270,14 +280,14 @@ _.ExpansionFeatures =
 					q(44259),	-- Violet Hold
 					q(45179),	-- Win the Crowd										
 					--]]
-					q(44249, { -- Inner Sanctuary
-						i(139734), -- Grandmaster's Crown
+					q(44249, {	-- Inner Sanctuary
+						i(139734),	-- Grandmaster's Crown
 					}),
-					q(41087, { -- Storm Brew
-						i(139731), -- Grandmaster's Tunic
+					q(41087, {	-- Storm Brew
+						i(139731),	-- Grandmaster's Tunic
 					}),
 					--[[ Artifact Appearance  Quests Commented Out For Now
-					q(43359, { -- A Hero's Weapon
+					q(43359, {	-- A Hero's Weapon
 						sp(219663) -- Heroic Weapons [No item associated]
 					}),
 					--]]
@@ -291,7 +301,7 @@ _.ExpansionFeatures =
 	--]]					
 				}),
 				--[[
-				n(99041, { -- Scouting Map
+				n(99041, {	-- Scouting Map
 					["groups"] = {
 						-- Blank for Class Only Missions in the future
 					},
@@ -299,29 +309,94 @@ _.ExpansionFeatures =
 					["modelScale"] = 2.5,
 				}),
 				]]--
-				n(-2, { --  Vendors
-					n(112338, { -- Caydori Brightstar <Purveyor of Rare Goods>
-						gs(497, { -- Grandmaster's Finery
-							i(139734), -- Head
-							i(139736), -- Shoulders
-							i(139731), -- Chest
-							i(139738), -- Bracers
-							i(139733), -- Hands
-							i(139737), -- Belt
-							i(139735), -- Legs
-							i(139732), -- Feet		
-						}),
-						i(140543), -- Fist of the Broken Temple
-						i(140551), -- Staff of the Broken Temple
-						i(140564), -- Rod of the Broken Temple
+				n(-2, {	--  Vendors
+					n(112338, {	-- Caydori Brightstar <Purveyor of Rare Goods>
 						i(136800),	-- Meditation Manual: Zen Flight
+						i(140543),	-- Fist of the Broken Temple
+						i(140551),	-- Staff of the Broken Temple
+						i(140564),	-- Rod of the Broken Temple
+						{
+							["itemID"] = 139734,		-- Helm
+							["groups"] = {
+								{
+									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
+									["criteriaID"] = 1,			-- Class Hall Helm Earned (Criteria)
+								},
+							},
+						},
+						{
+							["itemID"] = 139736,		-- Shoulders
+							["groups"] = {
+								{
+									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
+									["criteriaID"] = 8,			-- Class Hall Shoulders Earned (Criteria)
+								},
+							},
+						},
+						{
+							["itemID"] = 139731,		-- Chestpiece
+							["groups"] = {
+								{
+									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
+									["criteriaID"] = 5,			-- Class Hall Chestpiece Earned (Criteria)
+								},
+							},
+						},
+						{
+							["itemID"] = 139738,		-- Bracers
+							["groups"] = {
+								{
+									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
+									["criteriaID"] = 2,			-- Class Hall Bracers Earned (Criteria)
+								}
+							},
+						},
+						{
+							["itemID"] = 139733,		-- Gloves
+							["groups"] = {
+								{
+									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
+									["criteriaID"] = 3,			-- Class Hall Gloves Earned (Criteria)
+								},
+							},
+						},
+						{
+							["itemID"] = 139737,		-- Belt
+							["groups"] = {
+								{
+									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
+									["criteriaID"] = 7,			-- Class Hall Belt Earned (Criteria)
+								},
+							},
+						},
+						{
+							["itemID"] = 139735,		-- Leggings
+							["groups"] = {
+								{
+									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
+									["criteriaID"] = 4,			-- Class Hall Leggings Earned (Criteria)
+								},
+							},
+						},
+						{
+							["itemID"] = 139732,		-- Boots
+							["groups"] = {
+								{
+									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
+									["criteriaID"] = 6,			-- Class Hall Boots Earned (Criteria)
+								},
+							},
+						},
 						currency(1220, {	-- Order Resources
 							i(143727),	-- Champion's Salute Toy
 							i(124124),	-- Blood of Sargeras
+							i(140972),	-- Grandmaster's Lesser Armor Kit
+							i(140940),	-- Grandmaster's Armor Kit
+							i(140973),	-- Grandmaster's Greater Armor Kit
 						}),
 					}),
-					n(99154, { -- Mei Chele
-						i(147542), -- Ban-Fu, Cub of Ban-Lu (PET!)
+					n(99154, {	-- Mei Chele
+						i(147542),	-- Ban-Fu, Cub of Ban-Lu (PET!)
 					}),
 				}),
 			},

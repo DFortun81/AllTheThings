@@ -9,7 +9,7 @@ _.ExpansionFeatures =
 			["mapID"] = 739,
 			["groups"] = {
 				n(-4, {	-- Achievements
-					ach(11298),		-- A Classy Outfit),
+					ach(11298),		-- A Classy Outfit
 					ach(11136, {	-- An Epic Campaign
 						ach(11135), 	-- A Heroic Campaign
 						ach(10994), 	-- A Glorious Campaign
