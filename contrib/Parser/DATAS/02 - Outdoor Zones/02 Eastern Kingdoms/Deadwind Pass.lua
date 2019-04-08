@@ -188,6 +188,17 @@ _.Zones =
 						["qg"] = 114631,	-- Archmage Karlain <Kirin Tor>
 						["lvl"] = 110,
 					}),
+					{	-- The New Directive
+						["questID"] = 9860,	-- The New Directive
+						["u"] = 40,
+						["qg"] = 17613,	-- Archmage Alturus
+						["groups"] = {
+							{	-- Violet Badge
+								["itemID"] = 31113,	-- Violet Badge
+								["u"] = 2,
+							},
+						},
+					},
 					{
 						["questID"] = 44733,	-- The Power of Corruption
 						["sourceQuest"] = 44764,	-- Demon in Disguise

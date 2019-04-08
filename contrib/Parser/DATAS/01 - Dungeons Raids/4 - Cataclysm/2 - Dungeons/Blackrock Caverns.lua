@@ -46,6 +46,29 @@ _.Instances = { tier(4, {	-- Cataclysm
 				},
 			}),
 			n(  0, {	-- Zone Drop
+				{	-- Acanthia's Lost Pendant
+					["itemID"] = 55791,	-- Acanthia's Lost Pendant
+					["crs"] = {
+						40084,	-- Bellows Slave
+						40013,	-- Buster
+						39994,	-- Conflagration
+						39982,	-- Crazed Mage
+						40023,	-- Defiled Earth Rager
+						39987,	-- Evolved Twilight Zealot
+						40021,	-- Incendiary Spark
+						40008,	-- Lucky
+						39985,	-- Mad Prisoner
+						40004,	-- Quicksilver
+						40015,	-- Runty
+						40017,	-- Twilight Element Warden
+						39708,	-- Twilight Flame Caller
+						40019,	-- Twilight Obsidian Borer
+						39980,	-- Twilight Sadist
+						39978,	-- Twilight Torturer
+						39990,	-- Twilight Zealot
+						50284,	-- Twilight Zealot
+					},
+				},
 				{	-- Berto's Staff
 					["itemID"] = 55789,	-- Berto's Staff
 					["crs"] = {
@@ -106,6 +129,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 						un(2, i(55778)),	-- Shield of the Iron Maiden (7.3.5 - Removed from Game!)
 						un(2, i(55278)),	-- Inquisition Robes (7.3.5 - Removed from Game!)
 						un(2, i(55279)),	-- Manacles of Pain (7.3.5 - Removed from Game!)
+						un(2, i(55776)),	-- Skullcracker Ring (7.3.5 - Removed from Game!)
 					}),								
 				})),
 				cr(39679, e(106, { -- Corla, Herald of Twilight
@@ -118,6 +142,8 @@ _.Instances = { tier(4, {	-- Cataclysm
 						un(2, i(55267)),	-- Corla's Baton (7.3.5 - Removed from Game!)
 						un(2, i(55263)),	-- Renouncer's Cowl (7.3.5 - Removed from Game!)
 						un(2, i(55264)),	-- Armbands of Change (7.3.5 - Removed from Game!)
+						un(2, i(55265)),	-- Signet of Transformation (7.3.5 - Removed from Game!)
+						un(2, i(55266)),	-- Grace of the Herald (7.3.5 - Removed from Game!)
 					}),								
 				})),
 				cr(39698, e(107, { -- Karsh Steelbender
@@ -129,6 +155,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 					i( 56303), 	-- Heat Wave Leggings
 					nld({	-- Legacy
 						un(2, i(55272)), 	-- Steelbender's Masterpiece (7.3.5 - Removed from Game!)
+						un(2, i(55271)),	-- Quicksilver Amulet (7.3.5 - Removed from Game!)
 						un(2, i(55270)), 	-- Burned Gatherings (7.3.5 - Removed from Game!)
 						un(2, i(55268)), 	-- Bracers of Cooled Anger (7.3.5 - Removed from Game!)
 						un(2, i(55269)), 	-- Heat Wave Leggings (7.3.5 - Removed from Game!)
@@ -146,6 +173,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 						un(2, i(55274)), 	-- Beauty's Plate (7.3.5 - Removed from Game!)
 						un(2, i(55275)), 	-- Beauty's Silken Ribbon (7.3.5 - Removed from Game!)
 						un(2, i(55273)), 	-- Beauty's Chew Toy (7.3.5 - Removed from Game!)
+						un(2, i(55276)),	-- Kibble (7.3.5 - Removed from Game!)
 					}),								
 				})),
 				cr(39705, e(109, { -- Ascendent Lord Obsidius
@@ -165,10 +193,12 @@ _.Instances = { tier(4, {	-- Cataclysm
 						un(2, i(55782)), 	-- Amber Messenger (7.3.5 - Removed from Game!)
 						un(2, i(55788)), 	-- Crepuscular Shield (7.3.5 - Removed from Game!)
 						un(2, i(55785)), 	-- Willowy Crown (7.3.5 - Removed from Game!)
+						un(2, i(55781)),	-- Carrier Wave Pendant (7.3.5 - Removed from Game!)
 						un(2, i(55786)), 	-- Kyrstel Mantle (7.3.5 - Removed from Game!)
 						un(2, i(55779)), 	-- Raz's Pauldrons (7.3.5 - Removed from Game!)
 						un(2, i(55780)), 	-- Twitching Shadows (7.3.5 - Removed from Game!)
 						un(2, i(55784)), 	-- Clutches of Dying Light (7.3.5 - Removed from Game!)
+						un(2, i(55787)),	-- Witching Hourglass (7.3.5 - Removed from Game!)
 					}),								
 				})),
 			}),

@@ -798,6 +798,14 @@ _.Zones =
 						["qg"] = 9298,	-- Donova Snowden
 						["coord"] = { 25.1, 58.5, 83 },
 						["sourceQuest"] = 28471,	-- The Final Piece
+						["groups"] = {
+							{	-- Power of the High Chief
+								["itemID"] = 34424,	-- Power of the High Chief
+							},
+							{	-- Strength of the High Chief
+								["itemID"] = 34423,	-- Strength of the High Chief
+							},
+						},
 					},
 					{	-- Yetiphobia
 						["questID"] = 28722,

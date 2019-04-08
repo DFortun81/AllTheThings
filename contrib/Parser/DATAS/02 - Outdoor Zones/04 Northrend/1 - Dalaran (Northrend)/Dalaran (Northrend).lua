@@ -500,6 +500,10 @@ _.Zones =
 							i(42002),	-- Savage Gladiator's Felweave Trousers
 							i(42008),	-- Savage Gladiator's Felweave Amice
 							i(42014),	-- Savage Gladiator's Felweave Handguards
+							i(40684),	-- Mirror of Truth
+							i(40682),	-- Sundial of the Exiled
+							i(40685),	-- The Egg of Mortal Essence
+							i(40683),	-- Valor Medal of the First War
 						}),
 						na(35494, {	-- Arcanist Miluria <Legacy Justice Quartermaster>
 							i(47702),	-- Pauldrons of the Cavalier
@@ -601,6 +605,10 @@ _.Zones =
 							i(41027),	-- Furious Gladiator's Ringmail Leggings
 							i(41033),	-- Furious Gladiator's Mail Leggings
 							i(41672),	-- Furious Gladiator's Leather Helm
+							i(47735),	-- Glyph of Indomitability
+							i(47734),	-- Mark of Supremacy
+							i(48722),	-- Shard of the Crystal Heart
+							i(48724),	-- Talisman of Resurgence
 						}),
 						na(37942, {	-- Arcanist Uovril <Legacy Justice Quartermaster>
 							i(50974),	-- Meteor Chaser's Raiment
@@ -715,6 +723,10 @@ _.Zones =
 							i(41152),	-- Relentless Gladiator's Linked Helm
 							i(41158),	-- Relentless Gladiator's Chain Helm
 							i(41768),	-- Relentless Gladiator's Leather Gloves
+							i(50356),	-- Corroded Skeleton Key
+							i(50355),	-- Herkuml War Token
+							i(50357),	-- Maghia's Misguided Quill
+							i(50358),	-- Purified Lunar Dust
 						}),
 						na(31032, {	-- Derek Odds <Cooking Supplies>
 							currency(81, {	-- Epicurean's Award
@@ -924,6 +936,10 @@ _.Zones =
 							i(41152),	-- Relentless Gladiator's Linked Helm
 							i(41158),	-- Relentless Gladiator's Chain Helm
 							i(41768),	-- Relentless Gladiator's Leather Gloves
+							i(50356),	-- Corroded Skeleton Key
+							i(50355),	-- Herkuml War Token
+							i(50357),	-- Maghia's Misguided Quill
+							i(50358),	-- Purified Lunar Dust
 						}),
 						nh(31581, {	-- Magister Brasael <Legacy Justice Quartermaster>
 							i(40637, {	-- Mantle of the Lost Conqueror (Paladin, Priest, Warlock)
@@ -1394,6 +1410,10 @@ _.Zones =
 							i(42002),	-- Savage Gladiator's Felweave Trousers
 							i(42008),	-- Savage Gladiator's Felweave Amice
 							i(42014),	-- Savage Gladiator's Felweave Handguards
+							i(40684),	-- Mirror of Truth
+							i(40682),	-- Sundial of the Exiled
+							i(40685),	-- The Egg of Mortal Essence
+							i(40683),	-- Valor Medal of the First War
 						}),
 						nh(35495, {	-- Magistrix Vesara <Legacy Justice Quartermaster>
 							i(47701),	-- Shoulderplates of the Cavalier
@@ -1494,7 +1514,11 @@ _.Zones =
 							i(41019),	-- Furious Gladiator's Mail Helm
 							i(41027),	-- Furious Gladiator's Ringmail Leggings
 							i(41033),	-- Furious Gladiator's Mail Leggings
-							i(41672),	-- Furious Gladiator's Leather Helm			
+							i(41672),	-- Furious Gladiator's Leather Helm
+							i(47735),	-- Glyph of Indomitability
+							i(47734),	-- Mark of Supremacy
+							i(48722),	-- Shard of the Crystal Heart
+							i(48724),	-- Talisman of Resurgence							
 						}),
 						nh(31031, {	-- Misensi <Cooking Supplies>
 							currency(81, {	-- Epicurean's Award
@@ -1914,6 +1938,20 @@ _.Zones =
 								["spellID"] = 0,	-- Invalidate the Spell ID (this makes it uncollectible)
 							}),
 						},
+					}),
+					n(29528, {	-- Debbi Moore <Trinkets & Charms>
+						i(50356),	-- Corroded Skeleton Key
+						i(47735),	-- Glyph of Indomitability
+						i(50355),	-- Herkuml War Token
+						i(50357),	-- Maghia's Misguided Quill
+						i(47734),	-- Mark of Supremacy
+						i(40684),	-- Mirror of Truth
+						i(50358),	-- Purified Lunar Dust
+						i(48722),	-- Shard of the Crystal Heart
+						i(40682),	-- Sundial of the Exiled
+						i(48724),	-- Talisman of Resurgence
+						i(40685),	-- The Egg of Mortal Essence
+						i(40683),	-- Valor Medal of the First War
 					}),
 					n(34252,  {	-- Dubin Clay <Plate Armor Merchant>
 						i(45335),	-- Valorous Darkruned Chestguard

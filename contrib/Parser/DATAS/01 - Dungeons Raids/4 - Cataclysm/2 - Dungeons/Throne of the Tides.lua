@@ -31,6 +31,34 @@ _.Instances = { tier(4, {	-- Cataclysm
 				}),
 				n(  0, {	-- Zone Drop
 					i(55260),	-- Alpheus Legguards
+					i(55262, {	-- Barnacle Pendant
+						["crs"] = {
+							40936, 	-- Faceless Watcher
+							40943,	-- Gilgoblin Aquamage
+							40935,	-- Gilgoblin Hunter
+							39616,	-- Naz'jar Invader
+							40584,	-- Naz'jar Invader
+							40577, 	-- Naz'jar Sentinel
+							41139,	-- Naz'jar Spiritmender
+							41096,	-- Naz'jar Spiritmender
+							40634,	-- Naz'jar Tempest Witch
+							40925,	-- Tainted Sentry
+						},
+					}),
+					i(55261, {	-- Ring of the Great Whale
+						["crs"] = {
+							40936, 	-- Faceless Watcher
+							40943,	-- Gilgoblin Aquamage
+							40935,	-- Gilgoblin Hunter
+							39616,	-- Naz'jar Invader
+							40584,	-- Naz'jar Invader
+							40577, 	-- Naz'jar Sentinel
+							41139,	-- Naz'jar Spiritmender
+							41096,	-- Naz'jar Spiritmender
+							40634,	-- Naz'jar Tempest Witch
+							40925,	-- Tainted Sentry
+						},
+					}),
 				}),	
 				cr(40586, e(101, {	-- Lady Naz'jar
 					i( 56266),	-- Lightning Whelk Axe
@@ -45,6 +73,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 						un(2, i(55198)),	-- Aurelian Mitre (7.3.5 - Removed from Game!)
 						un(2, i(55202)),	-- Periwinkle Cloak (7.3.5 - Removed from Game!)
 						un(2, i(55195)),	-- Wrasse Handwraps (7.3.5 - Removed from Game!)
+						un(2, i(55201)),	-- Entwined Nereis (7.3.5 - Removed from Game!)
 					}),	
 				})),
 				cr(40765, e(102, {	-- Commander Ulthok
@@ -70,6 +99,8 @@ _.Instances = { tier(4, {	-- Cataclysm
 					nld({     	-- Legacy
 						un(2, i(55229)),	-- Anomuran Helm (7.3.5 - Removed from Game!)
 						un(2, i(55235)),	-- Decapod Slippers (7.3.5 - Removed from Game!)
+						un(2, i(55236)),	-- Anthia's Ring (7.3.5 - Removed from Game!)
+						un(2, i(55237)),	-- Porcelain Crab (7.3.5 - Removed from Game!)
 					}),	
 				})),
 				cr(44566, e(104, {	-- Ozumat
@@ -90,10 +121,14 @@ _.Instances = { tier(4, {	-- Cataclysm
 					nld({     	-- Legacy
 						un(2, i(55252)),	-- Whitefin Axe (7.3.5 - Removed from Game!)
 						un(2, i(55259)),	-- Bioluminescent Lamp (7.3.5 - Removed from Game!)
+						un(2, i(55258)),	-- Pipefish Cord (7.3.5 - Removed from Game!)
 						un(2, i(55254)),	-- Abalone Plate Armor (7.3.5 - Removed from Game!)
 						un(2, i(55253)),	-- Wentletrap Vest (7.3.5 - Removed from Game!)
 						un(2, i(55255)),	-- Mnemiopsis Gloves (7.3.5 - Removed from Game!)
 						un(2, i(55249)),	-- Triton Legplates (7.3.5 - Removed from Game!)
+						un(2, i(55250)),	-- Nautilus Ring (7.3.5 - Removed from Game!)
+						un(2, i(55251)),	-- Might of the Ocean (7.3.5 - Removed from Game!)
+						un(2, i(55256)),	-- Sea Star (7.3.5 - Removed from Game!)
 					}),	
 				}))
 			}),

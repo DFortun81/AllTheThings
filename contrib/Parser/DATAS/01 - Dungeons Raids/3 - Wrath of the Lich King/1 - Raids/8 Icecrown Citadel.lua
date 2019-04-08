@@ -570,6 +570,11 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(50991),	-- Verdigris Chain Belt
 					i(50992),	-- Waistband of Despair
 					
+					i(50356),	-- Corroded Skeleton Key
+					i(50355),	-- Herkuml War Token
+					i(50357),	-- Maghia's Misguided Quill
+					i(50358),	-- Purified Lunar Dust
+					
 					-- Relentless PvP START
 					gs(373, {	-- Relentless Gladiator's Satin Armor
 						i(41855),	-- Relentless Gladiator's Mooncloth Hood
@@ -2555,6 +2560,8 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i( 50192),	-- Scourge Reaver's Legplates
 					i( 50416),	-- Boots of the Funeral March
 					i( 50190),	-- Grinning Skull Greatboots
+					i(50185),	-- Devium's Eternally Cold Ring
+					i(50186),	-- Frostbrood Sapphire Ring
 				})),
 				cr(36853, e(1635, {	-- Sindragosa
 					{	-- All You Can Eat (25 player)

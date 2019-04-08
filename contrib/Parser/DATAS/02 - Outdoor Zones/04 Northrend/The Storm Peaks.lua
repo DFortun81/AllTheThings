@@ -1251,6 +1251,11 @@ _.Zones =
 								29724,	-- Library Guardian
 							},
 						}),
+						i(43573, {	-- Tears of Bitter Anguish
+							["crs"] = {
+								29570,	-- Nascent Val'kyr
+							},
+						}),
 					},
 				}),
 			},

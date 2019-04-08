@@ -1051,6 +1051,17 @@ _.Zones =
 										},
 										["races"] = HORDE_ONLY,
 									},
+									{	-- Jouster's Fury
+										["itemID"] = 45219,	-- Jouster's Fury
+										["crs"] = {
+											33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+											33555, 	-- Eliza Killian <Undercity Quartermaster>
+											33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+											33554, 	-- Samamba <Sen'jin Quartermaster>
+											33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+										},
+										["races"] = HORDE_ONLY,
+									},
 								}
 							},
 						},
@@ -1289,6 +1300,10 @@ _.Zones =
 							i(41027),	-- Furious Gladiator's Ringmail Leggings
 							i(41033),	-- Furious Gladiator's Mail Leggings
 							i(41672),	-- Furious Gladiator's Leather Helm
+							i(47735),	-- Glyph of Indomitability
+							i(47734),	-- Mark of Supremacy
+							i(48722),	-- Shard of the Crystal Heart
+							i(48724),	-- Talisman of Resurgence
 						},
 					})),
 					a(n(35579, {	-- Aspirant Forudir <Triumphant Armor Vendor>
@@ -2087,6 +2102,10 @@ _.Zones =
 							i(47701),	-- Shoulderplates of the Cavalier
 							i(47696),	-- Shoulderplates of Trembling Rage
 							i(47706),	-- Shoulders of the Groundbreaker
+							i(47735),	-- Glyph of Indomitability
+							i(47734),	-- Mark of Supremacy
+							i(48722),	-- Shard of the Crystal Heart
+							i(48724),	-- Talisman of Resurgence
 						},
 					})),
 					n(33595, {	-- Mera Mistrunner <Cooking Supplies>

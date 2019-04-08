@@ -871,6 +871,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							i(39424),	-- The Soulblade
 							i(39419),	-- Nerubian Conqueror
 							i(39426),	-- Wand of the Archlich
+							i(39421),	-- Gem of Imprisoned Vassals
 							i(39425),	-- Cloak of the Dying
 							i(122197),	-- Music Roll: Wrath of the Lich King
 						},

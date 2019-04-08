@@ -21,6 +21,20 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					q(29605, {	-- Brother Against Brother
 						["qg"] = 54840,	-- Isfar
 						["sourceQuests"] = 10180,	-- Can't Stay Away
+						["groups"] = {
+							{	-- Mark of the Ravenguard
+								["itemID"] = 29336,	-- Mark of the Ravenguard
+							},
+							{	-- Sethekk Oracle's Focus
+								["itemID"] = 29334,	-- Sethekk Oracle's Focus
+							},
+							{	-- Talon Lord's Collar
+								["itemID"] = 29335,	-- Talon Lord's Collar
+							},
+							{	-- Torc of the Sethekk Prophet
+								["itemID"] = 29333,	-- Torc of the Sethekk Prophet
+							},
+						},
 					}),
 					q(29606, {	-- Terokk's Legacy
 						i(29330),	-- The Saga of Terokk

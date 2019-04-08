@@ -22,6 +22,9 @@ _.WorldDrops =
 					i(45435),	-- Cowl of the Absolute
 				}),
 				filter(51, {	-- Neck
+					{	-- Draconic Choker of Ferocity
+						["itemID"] = 37823,	-- Draconic Choker of Ferocity
+					},
 					{	-- Embroidered Pendant
 						["itemID"] = 36435,	-- Embroidered Pendant
 					},
@@ -48,6 +51,9 @@ _.WorldDrops =
 					},
 					{	-- Platinum Medallion
 						["itemID"] = 36443,	-- Platinum Medallion
+					},
+					{	-- Raine's Choker of Combustion
+						["itemID"] = 37758,	-- Raine's Choker of Combustion
 					},
 					{	-- Serpentine Chain
 						["itemID"] = 36439,	-- Serpentine Chain

@@ -449,6 +449,11 @@ _.Craftables =
 			filter(51, {	-- Neck
 				{	-- Alicite Pendant
 					["itemID"] = 52307,	-- Alicite Pendant
+					["groups"] = {
+						{	-- Alicite Pendant (Rare) small chance to proc when crafting 52307 version
+							["itemID"] = 52312,	-- Alicite Pendant
+						},
+					},
 				},
 				{	-- Brazen Elementium Medallion
 					["itemID"]=  52350,	-- Brazen Elementium Medallion
@@ -490,6 +495,11 @@ _.Craftables =
 				},
 				{	-- Jasper Ring
 					["itemID"] = 52306,	-- Jasper Ring
+					["groups"] = {
+						{	-- Jasper Ring (Rare) small chance to proc when crafting 52306 version
+							["itemID"] = 52310,	-- Jasper Ring
+						},
+					},
 				},
 				{	-- Punisher's Band
 					["itemID"] = 69852,

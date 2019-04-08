@@ -350,6 +350,19 @@ _.Zones =
 						qa( 10002),	-- The Firewing Liaison
 						q(14172),	-- The Grateful Dead
 						q(14173),	-- The Grateful Dead
+	--]]
+						{	-- The Hawk's Essence
+							["questID"] = 10992,	-- The Hawk's Essence
+							["u"] = 40,
+							["classes"] = { 11 }, -- Druid
+							["groups"] = {
+								{	-- Charm of Swift Flight
+									["itemID"] = 32481,	-- Charm of Swift Flight
+									["u"] = 2,
+								},
+							},
+						},
+	--[[
 						qh( 10663),	-- The Hermit Smith
 						qa( 10662),	-- The Hermit Smith
 						qh(  9888),	-- The Impotent Leader

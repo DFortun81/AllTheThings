@@ -240,6 +240,9 @@ _.WorldDrops =
 					{	-- Poison Vial Ring
 						["itemID"] = 66957,	-- Poison Vial Ring
 					},
+					{	-- Ring of Cursed Fate
+						["itemID"] = 67027,	-- Ring of Cursed Fate
+					},
 					{	-- Signet of High Arcanist Savor
 						["itemID"] = 67129,	-- Signet of High Arcanist Savor
 					},

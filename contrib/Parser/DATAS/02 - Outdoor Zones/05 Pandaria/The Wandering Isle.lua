@@ -18,6 +18,17 @@ _.Zones =
 						["qg"] = 55940, -- Jojo Ironbrow
 						["sourceQuests"] = { 29665, 29794, 29797 }, -- From Bad to Worse, None Left Behind, Medical Supplies
 					}),
+					{	-- An Ancient Evil [H]
+						["questID"] = 10593,	-- An Ancient Evil [H]
+						["u"] = 40,
+						["races"] = HORDE_ONLY,
+						["groups"] = {
+							{	-- Scourgebane
+								["itemID"] = 30696,	-- Scourgebane
+								["u"] = 2,
+							},
+						},
+					},
 					q(29410, {	-- Aysa of the Tushui
 						["qg"] = 53566, -- Master Shang Xi
 						["sourceQuests"] = { 29409 }, -- The Disciple's Challenge
