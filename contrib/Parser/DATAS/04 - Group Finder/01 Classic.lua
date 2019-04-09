@@ -39,7 +39,7 @@ _.GroupFinder =
 					i(51965),	-- Vigorous Handguards ** April 8, 2019
 					un(2, i(51998)),	-- Vigorous Spaulders [Probably unobtainable - maybe old leather set that got changed into mail set]
 					i(51966),	-- Vigorous Spaulders*
-					i(51963),	-- Vigorous Stompers*
+					i(51963),	-- Vigorous Stompers ** April 8, 2019
 				},		
 				["description"] = "|cff66ccffRewarded for completing a random dungeon in the level 15-60 range.|r",		
 				["lvl"] = 15,		
