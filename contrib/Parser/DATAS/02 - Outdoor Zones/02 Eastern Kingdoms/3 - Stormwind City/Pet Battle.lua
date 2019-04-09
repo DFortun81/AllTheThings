@@ -41,8 +41,13 @@ _.Zones =
 								},
 								["description"] = "You may only learn this pet once per character from a Battle Pet Trainer.|r"
 							}),
+							--[[
+							--Note!! Commented out for now.  Need to re-evaluate this entire section.
+							--What purpose is it serving?  Are these only available in Stormwind only?  Why are some missing?  Why is Aubrey quests saying not completed and not available?
 							a(ach(6603, {	-- Taming Eastern Kingdoms
-								qa(32008),	-- Audrey Burnhep
+								--qa(32008),	-- Audrey Burnhep
+								--Note!! This and all 4 other quests return back false even if you did it.
+								--Note!! She is NOT part of the achievement
 								qa(31316, {	-- Julia, The Pet Tamer
 									i(89125),	-- Sack of Pet Supplies
 								}),
@@ -105,6 +110,7 @@ _.Zones =
 								},
 								["description"] = "Account-Wide Weekly Quest.|r",
 							})),
+							--]]
 						},
 					},
 				},

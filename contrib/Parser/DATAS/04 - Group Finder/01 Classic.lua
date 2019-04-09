@@ -36,7 +36,7 @@ _.GroupFinder =
 					i(160602),	-- Tumultuous Ring [STR]
 					i(51964),	-- Vigorous Belt ** April 7, 2019
 					i(51962),	-- Vigorous Bracers ** April 7, 2019
-					i(51965),	-- Vigorous Handguards
+					i(51965),	-- Vigorous Handguards ** April 8, 2019
 					un(2, i(51998)),	-- Vigorous Spaulders [Probably unobtainable - maybe old leather set that got changed into mail set]
 					i(51966),	-- Vigorous Spaulders*
 					i(51963),	-- Vigorous Stompers*
