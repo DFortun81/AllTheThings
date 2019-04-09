@@ -17,7 +17,7 @@ _.Zones =
 							},
 							["requireSkill"] = 186,	-- Mining
 							["coords"] = {
-								{ 19.76, 44.54 },
+								{ 19.76, 44.54, 896 },
 							},
 							["races"] = ALLIANCE_ONLY,
 							["description"] = "Requires 150 Kul'Tiran Mining",
@@ -35,7 +35,7 @@ _.Zones =
 								48762,	-- Meet Sweetflower
 							},
 							["coords"] = {
-								{ 20.61, 45.61 },
+								{ 20.61, 45.61, 896 },
 							},
 							--Note!! This quest is for both factions!
 							["description"] = "Previous quest starts in |cFFFFD700Boralus|r with the quest |cFFFFD700Meet Sweetflower|r.",
