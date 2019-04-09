@@ -33,6 +33,27 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					["qg"] = 55007,	-- Exarch Larethor
 				},
 			}),
+			n(0, {	-- Zone Drops
+				["groups"] = {
+					i(35516, {	-- Sun Touched Satchel
+						["crs"] = {
+							24686,	-- Sunblade Warlock
+							24685,	-- Sunblade Magister
+							24683,	-- Sunblade Mage Guard
+							24687,	-- Sunblade Physician
+							24688,	-- Wretched Skulker
+							24684,	-- Sunblade Blood Knight
+							24689,	-- Wretched Bruiser
+							24690,	-- Wretched Husk
+							24697,	-- Sister of Torment
+							24698,	-- Ethereum Smuggler
+							24762,	-- Sunblade Keeper
+							24777,	-- Sunblade Sentinel
+							24696,	-- Coilskar Witch
+						},
+					}),
+				},
+			}),
 			d(1, {	-- Normal
 				e(530, {	-- Selin Fireheart
 					["creatureID"] = 24723,
