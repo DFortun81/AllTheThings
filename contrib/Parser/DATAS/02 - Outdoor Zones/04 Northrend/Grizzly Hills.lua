@@ -473,6 +473,17 @@ _.Zones =
 							q(12037, {	--  Search and Rescue
 								["qg"] = 26604,	-- Mack Fearsen
 								["sourceQuests"] = {12029},
+								["groups"] = {
+									{	-- Kurzel's Angst
+										["itemID"] = 39649,	-- Kurzel's Angst
+									},
+									{	-- Kurzel's Rage
+										["itemID"] = 39648,	-- Kurzel's Rage
+									},
+									{	-- Kurzel's Warband
+										["itemID"] = 39650,	-- Kurzel's Warband
+									},
+								},
 							}),
 							q(12238, {	--  Cleansing Drak'Tharon
 								["qg"] = 26787,	-- Image of Drakuru

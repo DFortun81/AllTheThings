@@ -469,6 +469,11 @@ _.Craftables =
 				},
 				{	-- Nightstone Choker
 					["itemID"] = 52309,	-- Nightstone Choker
+					["groups"] = {
+						{	-- Nightstone Choker (Rare) small chance to proc when crafting 52306 version
+							["itemID"] = 52314,	-- Nightstone Choker
+						},
+					},
 				},
 				{	-- Vicious Amberjewel Pendant
 					["itemID"] = 75075,	-- Vicious Amberjewel Pendant
@@ -492,6 +497,11 @@ _.Craftables =
 				},
 				{	-- Hessonite Band
 					["itemID"] = 52308,	-- Hessonite Band
+					["groups"] = {
+						{	-- Hessonite Band (Rare) small chance to proc when crafting 52306 version
+							["itemID"] = 52316,	-- Hessonite Band
+						},
+					},
 				},
 				{	-- Jasper Ring
 					["itemID"] = 52306,	-- Jasper Ring

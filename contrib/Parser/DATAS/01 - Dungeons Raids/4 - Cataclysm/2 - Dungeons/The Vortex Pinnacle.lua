@@ -74,6 +74,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 					nld({	-- Legacy
 						un(2, i(55834)),	-- Biting Wind (7.3.5 - Removed from Game!)
 						un(2, i(55831)),	-- Headcover of Fog (7.3.5 - Removed from Game!)
+						un(2, i(55833)),	-- Red Sky Pendant (7.3.5 - Removed from Game!)
 						un(2, i(55832)),	-- Fallen Snow Shoulderguards (7.3.5 - Removed from Game!)
 						un(2, i(55830)),	-- Stratosphere Belt (7.3.5 - Removed from Game!)
 					}),
@@ -89,8 +90,10 @@ _.Instances = { tier(4, {	-- Cataclysm
 					i(56365),	-- Skyshard Ring
 					nld({	-- Legacy
 						un(2, i(55841)),	-- Axe of the Eclipse (7.3.5 - Removed from Game!)
+						un(2, i(55840)),	-- Amulet of Tender Breath (7.3.5 - Removed from Game!)
 						un(2, i(55838)),	-- Mantle of Bestilled Winds (7.3.5 - Removed from Game!)
 						un(2, i(55835)),	-- Hail-Strung Belt (7.3.5 - Removed from Game!)
+						un(2, i(55839)),	-- Skyshard Ring (7.3.5 - Removed from Game!)
 					}),
 				})),
 				cr(43875, e(116, {	-- Asaad, Caliph of Zephyrs
@@ -115,6 +118,8 @@ _.Instances = { tier(4, {	-- Cataclysm
 						un(2, i(55844)),	-- Gloves of Haze (7.3.5 - Removed from Game!)
 						un(2, i(55849)),	-- Leggings of Iridescent Clouds (7.3.5 - Removed from Game!)
 						un(2, i(55842)),	-- Legguards of Winnowing Wind (7.3.5 - Removed from Game!)
+						un(2, i(55851)),	-- Ring of Frozen Rain (7.3.5 - Removed from Game!)
+						un(2, i(55845)),	-- Heart of Thunder (7.3.5 - Removed from Game!)
 					}),
 				})),
 			}),

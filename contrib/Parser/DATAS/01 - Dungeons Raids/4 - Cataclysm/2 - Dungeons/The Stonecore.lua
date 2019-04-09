@@ -83,6 +83,8 @@ _.Instances = { tier(4, {	-- Cataclysm
 					un(2, i(55796)),	-- Fist of Pained Senses (7.3.5 - Removed from Game!)
 					un(2, i(55792)),	-- Cinnabar Shoulders (7.3.5 - Removed from Game!)
 					un(2, i(55793)),	-- Dolomite Adorned Gloves (7.3.5 - Removed from Game!)
+					un(2, i(55794)),	-- Phosphorescent Ring (7.3.5 - Removed from Game!)
+					un(2, i(55795)),	-- Key to the Endless Chamber (7.3.5 - Removed from Game!)
 				})),
 				cr(43214, e(111, {	-- Slabhide
 					i( 63043),	-- Reins of the Vitreous Stone Drake (MOUNT!)
@@ -95,6 +97,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 					un(2, i(55801)),	-- Quicksilver Blade (7.3.5 - Removed from Game!)
 					un(2, i(55798)),	-- Deep Delving Gloves (7.3.5 - Removed from Game!)
 					un(2, i(55797)),	-- Hematite Plate Gloves (7.3.5 - Removed from Game!)
+					un(2, i(55799)),	-- Rose Quartz Band (7.3.5 - Removed from Game!)
 				})),
 				cr(42188, e(112, {	-- Ozruk
 					i( 56342),	-- Sword of the Bottomless Pit
@@ -104,8 +107,10 @@ _.Instances = { tier(4, {	-- Cataclysm
 					i( 56341),	-- Belt of the Ringworm
 					i( 56339),	-- Tendrils of Burrowing Dark
 					un(2, i(55811)),	-- Sword of the Bottomless Pit (7.3.5 - Removed from Game!)
+					un(2, i(55804)),	-- Pendant of the Lightless Grotto (7.3.5 - Removed from Game!)
 					un(2, i(55802)),	-- Elementium Scale Bracers (7.3.5 - Removed from Game!)
 					un(2, i(55803)),	-- Belt of the Ringworm (7.3.5 - Removed from Game!)
+					un(2, i(55810)),	-- Tendrils of Burrowing Dark (7.3.5 - Removed from Game!)
 				})),
 				cr(42333, e(113, {	-- High Priestess Azil
 					ach(4846),	-- The Stonecore
@@ -124,6 +129,9 @@ _.Instances = { tier(4, {	-- Cataclysm
 					un(2, i(55818)),	-- Cowl of the Unseen World (7.3.5 - Removed from Game!)
 					un(2, i(55812)),	-- Helm of Numberless Shadow (7.3.5 - Removed from Game!)
 					un(2, i(55817)),	-- Slippers of the Twilight Prophet (7.3.5 - Removed from Game!)
+					un(2, i(55816)),	-- Leaden Despair (7.3.5 - Removed from Game!)
+					un(2, i(55814)),	-- Magnetite Mirror (7.3.5 - Removed from Game!)
+					un(2, i(55819)),	-- Tear of Blood (7.3.5 - Removed from Game!)
 				})),
 			}),
 			d( 2, {	-- Heroic

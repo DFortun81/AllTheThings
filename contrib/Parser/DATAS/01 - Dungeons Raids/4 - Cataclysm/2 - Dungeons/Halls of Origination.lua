@@ -63,9 +63,11 @@ _.Instances = { tier(4, {	-- Cataclysm
 					i(56408),	-- Awakening Footfalls
 					i(56407),	-- Anhuur's Hymnal
 					nld({     	-- Legacy
+						un(2, i(55888)),	-- Darkhowl Amulet (7.3.5 - Removed from Game!)
 						un(2, i(55886)),	-- Poison Fang Bracers (7.3.5 - Removed from Game!)
 						un(2, i(55887)),	-- Belt of Petrified Tears (7.3.5 - Removed from Game!)
 						un(2, i(55890)),	-- Awakening Footfalls (7.3.5 - Removed from Game!)
+						un(2, i(55889)),	-- Anhuur's Hymnal (7.3.5 - Removed from Game!)
 					}),
 				})),
 				cr(39428, e(125, {	-- Earthrager Ptah
@@ -77,6 +79,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 					nld({     	-- Legacy
 						un(2, i(56097)),	-- Soul Releaser (7.3.5 - Removed from Game!)
 						un(2, i(56096)),	-- Bulwark of the Primordial Mound (7.3.5 - Removed from Game!)
+						un(2, i(56095)),	-- Mouth of the Earth (7.3.5 - Removed from Game!)
 						un(2, i(56093)),	-- Breastplate of the Risen Land (7.3.5 - Removed from Game!)
 						un(2, i(56094)),	-- Underworld Cord (7.3.5 - Removed from Game!)
 					}),
@@ -106,6 +109,9 @@ _.Instances = { tier(4, {	-- Cataclysm
 					nld({     	-- Legacy
 						un(2, i(55992)),	-- Armguards of Unearthly Light (7.3.5 - Removed from Game!)
 						un(2, i(55993)),	-- Legwraps of Astral Rain (7.3.5 - Removed from Game!)
+						un(2, i(55996)),	-- Nova Band (7.3.5 - Removed from Game!)
+						un(2, i(55994)),	-- Ring of Blinding Stars (7.3.5 - Removed from Game!)
+						un(2, i(55995)),	-- Blood of Isiset (7.3.5 - Removed from Game!)
 					}),
 				})),
 				cr(39731, e(128, {	-- Ammunae, Construct of Life
@@ -114,8 +120,10 @@ _.Instances = { tier(4, {	-- Cataclysm
 					i(56417), 	-- Robes of Rampant Growth
 					i(56418),	-- Band of Life Energy
 					nld({     	-- Legacy
+						un(2, i(55999)),	-- Seedling Pod (7.3.5 - Removed from Game!)
 						un(2, i(55997)),	-- Bloodpetal Mantle (7.3.5 - Removed from Game!)
 						un(2, i(55998)),	-- Robes of Rampant Growth (7.3.5 - Removed from Game!)
+						un(2, i(56000)),	-- Band of Life Energy (7.3.5 - Removed from Game!)
 					}),
 				})),
 				cr(39732, e(129, {	-- Setesh, Construct of Destruction
@@ -154,6 +162,9 @@ _.Instances = { tier(4, {	-- Cataclysm
 						un(2, i(56098)),	-- Red Beam Cord (7.3.5 - Removed from Game!)
 						un(2, i(56104)),	-- Legguards of Noon (7.3.5 - Removed from Game!)
 						un(2, i(56105)),	-- Hekatic Slippers (7.3.5 - Removed from Game!)
+						un(2, i(56106)),	-- Band of Rays (7.3.5 - Removed from Game!)
+						un(2, i(56102)),	-- Left Eye of Rajh (7.3.5 - Removed from Game!)
+						un(2, i(56100)),	-- Right Eye of Rajh (7.3.5 - Removed from Game!)
 					}),
 				})),
 			}),

@@ -860,23 +860,37 @@ _.NeverImplemented =
 			un(1, i(33197)),	-- Mossy necklace
 			un(1, i(109293)),	-- Unknown
 			un(1, i(109295)),	-- Unknown
-			un(1, i(31930)),	--Unknown
-			un(1, i(31931)),	--Unknown
-			un(1, i(31932)),	--Unknown
-			un(1, i(31933)),	--Unknown
-			un(1, i(31934)),	--Unknown
-			un(1, i(33198)),	--Unknown
-			un(1, i(33199)),	--Unknown
-			un(1, i(33200)),	--Unknown
-			un(1, i(33201)),	--Unknown
-			un(1, i(37544)),	--Unknown
-			un(1, i(109300)),	--Unknown
-			un(1, i(109369)),	--Unknown
-			un(1, i(109427)),	--Unknown
-			un(1, i(109452)),	--Unknown
-			un(1, i(109459)),	--Unknown
-			un(1, i(109522)),	--Unknown
-			un(1, i(109526)),	--Unknown
+			un(1, i(31930)),	-- Unknown
+			un(1, i(31931)),	-- Unknown
+			un(1, i(31932)),	-- Unknown
+			un(1, i(31933)),	-- Unknown
+			un(1, i(31934)),	-- Unknown
+			un(1, i(33198)),	-- Unknown
+			un(1, i(33199)),	-- Unknown
+			un(1, i(33200)),	-- Unknown
+			un(1, i(33201)),	-- Unknown
+			un(1, i(37544)),	-- Unknown
+			un(1, i(109300)),	-- Unknown
+			un(1, i(109369)),	-- Unknown
+			un(1, i(109427)),	-- Unknown
+			un(1, i(109452)),	-- Unknown
+			un(1, i(109459)),	-- Unknown
+			un(1, i(109522)),	-- Unknown
+			un(1, i(109526)),	-- Unknown
+			un(1, i(42856)),	-- Unknown (might be Frosthowl Amulet)
+			un(1, i(44389)),	-- Unknown (might be Curative Necklace)
+			un(1, i(44390)),	-- Unknown (might be Venomous Pendant)
+			un(1, i(44391)),	-- Unknown (might be Cast Steel Choker)
+			un(1, i(44392)),	-- Unknown (might be Necklace of Permeation)
+			un(1, i(49314)),	-- Sparkling Onyxia Tooth Pendant
+			un(1, i(59665)),	-- Unknown
+			un(1, i(60660)),	-- Unknown
+			un(1, i(60663)),	-- Unknown
+			un(1, i(60665)),	-- Unknown
+			un(1, i(60667)),	-- Unknown
+			un(1, i(60671)),	-- Unknown
+			un(1, i(60672)),	-- Unknown
+			un(1, i(60674)),	-- Unknown
 		}),
 		filter(52, {	-- Finger
 			un(1, i(4988)),		-- Burning Obsidian Band
@@ -918,6 +932,24 @@ _.NeverImplemented =
 			un(1, i(34712)),	-- Unknown (might be Prismatic Signet)
 			un(1, i(37531)),	-- Unknown (might be Circle of Frigid Wind)
 			un(1, i(46842)),	-- Unknown
+			un(1, i(41756)),	-- Unknown (might be Heart's Blood Signet)
+			un(1, i(57708)),	-- Unknown
+			un(1, i(57709)),	-- Unknown
+			un(1, i(57710)),	-- Unknown
+			un(1, i(57713)),	-- Unknown
+			un(1, i(57721)),	-- Unknown
+			un(1, i(57723)),	-- Unknown
+			un(1, i(57727)),	-- Unknown
+			un(1, i(57738)),	-- Unknown
+			un(1, i(58816)),	-- Unknown
+			un(1, i(60646)),	-- Unknown
+			un(1, i(60648)),	-- Unknown
+			un(1, i(60652)),	-- Unknown
+			un(1, i(60653)),	-- Unknown
+			un(1, i(60654)),	-- Unknown
+			un(1, i(60655)),	-- Unknown
+			un(1, i(60656)),	-- Unknown
+			un(1, i(60657)),	-- Unknown
 		}),
 		n(-386, {	-- Trinket
 			un(1, i(12805)),	-- Orb of Fire
@@ -950,6 +982,16 @@ _.NeverImplemented =
 			un(1, i(25996)),	-- Emblem of Perseverance
 			un(1, i(44869)),	-- Frenzyheart Insignia of Fury
 			un(1, i(44870)),	-- Oracle Talisman of Ablution
+			un(1, i(39819)),	-- Bloodbinder's Runestone
+			un(1, i(49312)),	-- Purified Onyxia Blood Talisman
+			un(1, i(54547)),	-- Cracked Jewelry Box
+			un(1, i(60802)),	-- Unknown
+			un(1, i(60803)),	-- Unknown
+			un(1, i(60804)),	-- Unknown
+			un(1, i(60805)),	-- Unknown
+			un(1, i(61027)),	-- Unknown
+			un(1, i(61028)),	-- Unknown
+			un(1, i(61029)),	-- Unknown
 		}),
 	}),
 	n(-494, {	-- Misc

@@ -104,6 +104,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 						un(2, i(55858)),	-- Kaleti Cloak (7.3.5 - Removed from Game!)
 						un(2, i(55857)),	-- Ionic Gloves (7.3.5 - Removed from Game!)
 						un(2, i(55856)),	-- Greaves of Wu the Elder (7.3.5 - Removed from Game!)
+						un(2, i(55859)),	-- Spirit Creeper Ring (7.3.5 - Removed from Game!)
 					}),	
 				})),
 				cr(43614, e(118, {	-- Lockmaw
@@ -114,8 +115,10 @@ _.Instances = { tier(4, {	-- Cataclysm
 					i(56388),	-- Ring of the Darkest Day
 					nld({     	-- Legacy
 						un(2, i(55870)),	-- Barim's Main Gauche (7.3.5 - Removed from Game And Moved to High Prophet Barim!)
+						un(2, i(55864)),	-- Tauntka's Necklace (7.3.5 - Removed from Game)
 						un(2, i(55866)),	-- Sand Silk Wristband (7.3.5 - Removed from Game And Moved to High Prophet Barim!)
 						un(2, i(55867)),	-- Sand Dune Belt (7.3.5 - Removed from Game And Moved to High Prophet Barim!)
+						un(2, i(55863)),	-- Ring of the Darkest Day (7.3.5 - Removed from Game)
 					}),
 				})),
 				cr(43612, e(119, {	-- High Prophet Barim
@@ -131,6 +134,8 @@ _.Instances = { tier(4, {	-- Cataclysm
 						un(2, i(55865)),	-- Resonant Kris (7.3.5 - Removed from Game And Moved to Lockmaw!)
 						un(2, i(55861)),	-- Balkar's Waders (7.3.5 - Removed from Game And Moved to Lockmaw!)
 						un(2, i(55862)),	-- Greaves of Wu the Younger (7.3.5 - Removed from Game And Moved to Lockmaw!)
+						un(2, i(55869)),	-- Veneficial Band (7.3.5 - Removed from Game)
+						un(2, i(55868)),	-- Heart of Solace (7.3.5 - Removed from Game)
 					}),	
 				})),
 				cr(44819, e(122, {	-- Siamat
@@ -156,6 +161,9 @@ _.Instances = { tier(4, {	-- Cataclysm
 						un(2, i(55878)),	-- Evelyn's Belt (7.3.5 - Removed from Game!)
 						un(2, i(55877)),	-- Leggings of the Path (7.3.5 - Removed from Game!)
 						un(2, i(55871)),	-- Crafty's Gaiters (7.3.5 - Removed from Game!)
+						un(2, i(55873)),	-- Ring of Three Lights (7.3.5 - Removed from Game!)
+						un(2, i(55879)),	-- Sorrowsong (7.3.5 - Removed from Game!)
+						un(2, i(55874)),	-- Tia's Grace (7.3.5 - Removed from Game!)
 					}),	
 				})),
 			}),

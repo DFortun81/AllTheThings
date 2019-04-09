@@ -27,7 +27,6 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(44367), 	-- Scorned Bands
 					},
 				}),
-				q(12037),	-- Search and Rescue
 				q(29828, {	-- What the Scourge Dred
 					["qg"] = 26664,	-- Kurzel
 				}),

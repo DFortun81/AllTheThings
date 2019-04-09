@@ -214,6 +214,7 @@ _.Zones =
 								["groups"] = {
 									i(53305),	-- Twinbraid Shoulders
 									i(53274),	-- Goblin Miner's Helmet
+									i(53272),	-- Frazzlecraz Necklace
 									i(131406),	-- Goblin Miner's Hardhat
 								},
 							},
@@ -325,6 +326,7 @@ _.Zones =
 							i(53265),	-- Boarpocalypse Boots
 							i(53292),	-- Sabersnout's Cloak
 							i(131398),	-- Bristleback Challenge Treads
+							i(53267),	-- Bristleback Challenge Ring
 						},
 					},
 					{	-- Don't Stop Bereavin'
@@ -389,6 +391,7 @@ _.Zones =
 						["groups"] = {
 							i(53276),	-- Hecklefang Hide Belt
 							i(131395),	-- Hecklefang Links
+							i(53293),	-- Scavenger Ring
 						},
 					},
 					{	-- Firestone Point
@@ -528,6 +531,7 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 25084,	-- A Growing Threat
 						["groups"] = {
+							i(53269),	-- Dorn's Amulet
 							i(53288),	-- Quilboar Fur Bracers
 							i(53290),	-- Redearth Staff
 							i(53279),	-- Mangled Tooth
@@ -539,6 +543,7 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 24603,	-- Don't Stop Bereavin'
 						["groups"] = {
+							i(53245),	-- Mankrik's Amulet
 							i(53240),	-- Kraul Bracers
 							i(53249),	-- Razormane Staff
 							i(53244),	-- Mangled Tooth
@@ -700,9 +705,10 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 24938,	-- The Guns of Northwatch
 						["groups"] = {
-							i(53282),
-							i(53268),
-							i(131385),
+							i(53282),	-- Northwatch Bracers
+							i(53268),	-- Carronader's Belt
+							i(53296),	-- Smythe's Ring
+							i(131385),	-- Carronader's Waistband
 						},
 					},
 					{	-- Sabotage!
@@ -715,6 +721,7 @@ _.Zones =
 							i(53255),	-- Stonespire Shoulders
 							i(53253),	-- Spearhead Helm
 							i(131384),	-- Spearhead Faceguard
+							i(53225),	-- Airburst Amulet
 						},
 					},
 					{	-- Scavenged
@@ -792,6 +799,7 @@ _.Zones =
 						["groups"] = {
 							i(53252),	-- Sabersnout's Cloak
 							i(53228),	-- Boarpocalypse Boots
+							i(53230),	-- Bristleback Challenge Ring
 							i(131374),	-- Bristleback Challenge Treads
 						},
 					},
@@ -885,6 +893,7 @@ _.Zones =
 						["coord"] = { 50.4, 40.6, 199 },
 						["sourceQuest"] = 24574,	-- To Harvest Chaos
 						["groups"] = {
+							i(53161),	-- Wailing Ring
 							i(53160),	-- Vest of the Nightmare Rift
 							i(53159),	-- Naralex's Slippers
 							i(131379),	-- Tunic of the Nightmare Rift
@@ -939,8 +948,9 @@ _.Zones =
 						["coord"] = { 37.6, 16.6, 199 },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
-							i(53239),  -- Holgom's Bracers
-							i(53231),  -- Climbing Straps
+							i(53239),	-- Holgom's Bracers
+							i(53231),	-- Climbing Straps
+							i(53250),	-- Ring of Reclaimed Honor
 							i(131370),  -- Holgom's Waistcord
 						},
 					},
