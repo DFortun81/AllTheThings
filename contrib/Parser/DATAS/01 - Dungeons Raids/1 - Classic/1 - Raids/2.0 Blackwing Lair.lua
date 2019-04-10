@@ -250,7 +250,7 @@ _.Instances = { tier(1, {	-- Classic
 					i(16902),	-- Stormrage Pauldrons
 					i(19389),	-- Taut Dragonhide Shoulderpads
 					i(19386),	-- Elementium Threaded Cloak
-					un(45, i(19390)),	-- Taut Dragonhide Gloves
+					i(19390),	-- Taut Dragonhide Gloves
 					i(19388),	-- Angelista's Grasp
 					un(45, i(19392)),	-- Girdle of the Fallen Crusader
 					i(19393),	-- Primalist's Linked Waistguard
