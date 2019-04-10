@@ -190,15 +190,6 @@ profession(773, {	-- Inscription
 						}
 					}
 				},
-				{  -- Glyphs
-					["categoryID"] = 1130,  -- Glyphs
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						{  -- Glyph of Storm's Wake(missing in automation)
-							["recipeID"] = 289356  -- Glyph of Storm's Wake
-						}
-					}
-				},
 				{	-- Off-Hands
 					["categoryID"] = 774--[[Off-Hands]],
 					["g"] = {
@@ -273,6 +264,10 @@ profession(773, {	-- Inscription
 						},
 						{	-- Glyph of the Tideskipper
 							["recipeID"] = 276088--[[Glyph of the Tideskipper]]
+						},
+						{  -- Glyph of Storm's Wake(missing in automation)
+							["recipeID"] = 289356,  -- Glyph of Storm's Wake
+							["races"] = ALLIANCE_ONLY,
 						}
 					}
 				},
