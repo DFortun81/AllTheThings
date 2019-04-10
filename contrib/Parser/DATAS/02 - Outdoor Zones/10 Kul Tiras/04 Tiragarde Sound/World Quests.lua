@@ -86,6 +86,18 @@ _.Zones =
 								q(51632, {	-- Make Loh Go
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
+								{  -- Naga Attack!
+									["questID"] = 53994,	-- Naga Attack!
+									["isWQ"] = 120,
+									["groups"] = {
+										{
+											["itemID"] = 165605,  -- Azsharan Medallion
+											["groups"] = {
+												i(168123),  -- Twitching Eyeball
+											},
+										},
+									},
+								},
 								{	-- Not So Bad Down Here — Pet Battle
 									["questID"] = 52430,	-- Not So Bad Down Here
 									["isWQ"] = 120,

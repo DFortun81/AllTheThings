@@ -117,6 +117,18 @@ _.Zones =
 									["questID"] = 51153, 	-- Mor'fani the Exile
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								},
+								{  -- Naga Attack!
+									["questID"] = 54287,	-- Naga Attack!
+									["isWQ"] = 120,
+									["groups"] = {
+										{
+											["itemID"] = 165605,  -- Azsharan Medallion
+											["groups"] = {
+												i(168123),  -- Twitching Eyeball
+											},
+										},
+									},
+								},
 								q(51850, {	-- Preserve the Oasis
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = HORDE_ONLY,

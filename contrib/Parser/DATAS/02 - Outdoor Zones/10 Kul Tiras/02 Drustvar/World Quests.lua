@@ -167,6 +167,30 @@ _.Zones =
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["requireSkill"] = 186,	-- Mining
 								},
+								{  -- Naga Attack!
+									["questID"] = 53979,	-- Naga Attack!
+									["isWQ"] = 120,
+									["groups"] = {
+										{
+											["itemID"] = 165605,  -- Azsharan Medallion
+											["groups"] = {
+												i(168123),  -- Twitching Eyeball
+											},
+										},
+									},
+								},
+								{  -- Naga Attack!
+									["questID"] = 53963,	-- Naga Attack!
+									["isWQ"] = 120,
+									["groups"] = {
+										{
+											["itemID"] = 165605,  -- Azsharan Medallion
+											["groups"] = {
+												i(168123),  -- Twitching Eyeball
+											},
+										},
+									},
+								},
 								{	-- Night Horrors — Pet Battle
 									["questID"] = 52218,	-- Night Horrors
 									["isWQ"] = 120,

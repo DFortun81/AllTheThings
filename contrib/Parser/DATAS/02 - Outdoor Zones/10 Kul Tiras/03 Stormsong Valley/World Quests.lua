@@ -128,6 +128,30 @@ _.Zones =
 									["questID"] = 51633,	-- Make Loh Go
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								},
+								{  -- Naga Attack!
+									["questID"] = 53773,	-- Naga Attack!
+									["isWQ"] = 120,
+									["groups"] = {
+										{
+											["itemID"] = 165605,  -- Azsharan Medallion
+											["groups"] = {
+												i(168123),  -- Twitching Eyeball
+											},
+										},
+									},
+								},
+								{  -- Naga Attack!
+									["questID"] = 53945,	-- Naga Attack!
+									["isWQ"] = 120,
+									["groups"] = {
+										{
+											["itemID"] = 165605,  -- Azsharan Medallion
+											["groups"] = {
+												i(168123),  -- Twitching Eyeball
+											},
+										},
+									},
+								},
 								{	-- Ordnance Orders [A]
 									["questID"] = 52939,	-- Ordnance Orders [A]
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120

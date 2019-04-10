@@ -145,6 +145,42 @@ _.Zones =
 										{ 81.81, 37.64 },	-- Game
 									},
 								},
+								{ -- Naga Attack!
+									["questID"] = 54051,	-- Naga Attack!
+									["isWQ"] = 120,
+									["groups"] = {
+										{
+											["itemID"] = 165605,  -- Azsharan Medallion
+											["groups"] = {
+												i(168123),  -- Twitching Eyeball
+											},
+										},
+									},
+								},
+								{ -- Naga Attack!
+									["questID"] = 54060,	-- Naga Attack!
+									["isWQ"] = 120,
+									["groups"] = {
+										{
+											["itemID"] = 165605,  -- Azsharan Medallion
+											["groups"] = {
+												i(168123),  -- Twitching Eyeball
+											},
+										},
+									},
+								},
+								{ -- Naga Attack!
+									["questID"] = 54051,	-- Naga Attack!
+									["isWQ"] = 120,
+									["groups"] = {
+										{
+											["itemID"] = 165605,  -- Azsharan Medallion
+											["groups"] = {
+												i(168123),  -- Twitching Eyeball
+											},
+										},
+									},
+								},
 								{	-- Old R'gal
 									["questID"] = 50855, 	-- Old R'gal
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120

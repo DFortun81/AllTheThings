@@ -163,6 +163,30 @@ _.Zones =
 										},
 									},
 								},
+								{  -- Naga Attack!
+									["questID"] = 54267,	-- Naga Attack!
+									["isWQ"] = 120,
+									["groups"] = {
+										{
+											["itemID"] = 165605,  -- Azsharan Medallion
+											["groups"] = {
+												i(168123),  -- Twitching Eyeball
+											},
+										},
+									},
+								},
+								{  -- Naga Attack!
+									["questID"] = 54236,	-- Naga Attack!
+									["isWQ"] = 120,
+									["groups"] = {
+										{
+											["itemID"] = 165605,  -- Azsharan Medallion
+											["groups"] = {
+												i(168123),  -- Twitching Eyeball
+											},
+										},
+									},
+								},
 								{	-- Pack Leader — Pet Battle
 									["questID"] = 52799,	-- Pack Leader
 									["isWQ"] = 120,
