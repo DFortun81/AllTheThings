@@ -61,7 +61,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					i(28799),	-- Belt of Divine Inspiration
 				},
 			}),
-			e(1565, {	-- Grull the Dragonkiller
+			e(1565, {	-- Gruul the Dragonkiller
 				["creatureID"] = 19044,
 				["groups"] = {
 					ach(692),	-- Gruul's Lair

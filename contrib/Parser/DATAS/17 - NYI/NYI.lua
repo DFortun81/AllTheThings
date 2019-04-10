@@ -1130,7 +1130,6 @@ _.NeverImplemented =
 		un(1, i(13247)),	-- Quartermaster Zigris' Footlocker
 		un(1, i(19804)),	-- Pale Ghoulfish
 		un(1, i(21135)),	-- Broken Assassin's Throwing Axe
-		un(1, i(164763)),	-- Unknown
 		un(1, i(164765)),	-- Unknown
 		un(1, i(120370)),
 		un(1, i(162549)),	-- Personal Anchor
