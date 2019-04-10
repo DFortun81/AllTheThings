@@ -237,7 +237,7 @@ _.Instances = { tier(1, {	-- Classic
 					i(93038),	-- Whistle of Chromatic Bone
 					i(19352),	-- Chromatically Tempered Sword
 					i(19347),	-- Claw of Chromaggus
-					un(45, i(19361)),	-- Ashjre'thul, Crossbow of Smiting
+					i(19361),	-- Ashjre'thul, Crossbow of Smiting
 					i(19349),	-- Elementium Reinforced Bulwark
 					i(16832),	-- Bloodfang Spaulders
 					i(16937),	-- Dragonstalker's Spaulders
