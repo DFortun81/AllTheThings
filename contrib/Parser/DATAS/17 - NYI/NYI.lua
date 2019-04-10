@@ -1135,7 +1135,6 @@ _.NeverImplemented =
 		un(1, i(162549)),	-- Personal Anchor
 		un(1, i(158922)),	-- Zany Zombiefied Raptor (Did not make it)
 		un(1, i(165357)),	-- Wolf's Den (162530) is used
-		un(1, i(165018)),	-- Unknown
 		un(1, i(120371)),
 		un(1, i(23351)),
 		un(1, i(23470)),
