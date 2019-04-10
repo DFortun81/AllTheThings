@@ -252,7 +252,7 @@ _.Instances = { tier(1, {	-- Classic
 					i(19386),	-- Elementium Threaded Cloak
 					i(19390),	-- Taut Dragonhide Gloves
 					i(19388),	-- Angelista's Grasp
-					un(45, i(19392)),	-- Girdle of the Fallen Crusader
+					i(19392),	-- Girdle of the Fallen Crusader
 					i(19393),	-- Primalist's Linked Waistguard
 					i(19385),	-- Empowered Leggings
 					i(19387),	-- Chromatic Boots
