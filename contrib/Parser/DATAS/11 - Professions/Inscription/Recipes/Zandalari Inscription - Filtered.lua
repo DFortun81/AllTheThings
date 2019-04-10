@@ -190,6 +190,15 @@ profession(773, {	-- Inscription
 						}
 					}
 				},
+				{  -- Glyphs
+					["categoryID"] = 1130,  -- Glyphs
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						{  -- Glyph of Storm's Wake(missing in automation)
+							["recipeID"] = 289356  -- Glyph of Storm's Wake
+						}
+					}
+				},
 				{	-- Off-Hands
 					["categoryID"] = 774--[[Off-Hands]],
 					["g"] = {
