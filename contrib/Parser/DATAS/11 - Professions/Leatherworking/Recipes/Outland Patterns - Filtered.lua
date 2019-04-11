@@ -9,6 +9,12 @@ profession(165, {	-- Leatherworking
 			["name"] = "Outland Patterns",
 			["categoryID"] = 882,
 			["g"] = {
+				-- Legacy specilizations for posterity
+				n(-40, { -- Legacy
+					un(34, recipe(10656)),  -- Dragonscale Leatherworking
+					un(34, recipe(10660)),  -- Tribal Leatherworking
+					un(34, recipe(10658)),  -- Elemental Leatherworking
+				}),
 				{
 					["name"] = "Materials",
 					["categoryID"] = 927,
