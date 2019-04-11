@@ -499,7 +499,7 @@ _.Instances =
 				},
 				["isRaid"] = true,
 				["lvl"] = 120,
-				["maps"] = { 
+				["maps"] = {
 					1148,	-- Ruin's Descent
 					1149,	-- Hall of Sanitation
 					1150,	-- Ring of Containment
@@ -508,6 +508,8 @@ _.Instances =
 					1153,	-- Gallery of Failures
 					1154,	-- The Oblivion Door
 					1155,	-- The Festering Core
+					1381, 	-- Neck Upgrade Quest #1 -- The Oblivion Door
+					1382, 	-- Neck Upgrade Quest #2 -- The Oblivion Door
 				},
 			}),
 		},					

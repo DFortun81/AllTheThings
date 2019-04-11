@@ -91,7 +91,7 @@ _.Instances =
 				["isRaid"] = true,
 				["lvl"] = 120,
 				["mapID"] = 1148,	-- Ruin's Descent
-				["maps"] = { 
+				["maps"] = {
 					1149,	-- Hall of Sanitation
 					1150,	-- Ring of Containment
 					1151,	-- Archives of Eternity

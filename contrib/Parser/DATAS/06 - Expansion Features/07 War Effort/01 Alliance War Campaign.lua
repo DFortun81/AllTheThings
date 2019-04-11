@@ -1196,6 +1196,11 @@ _.ExpansionFeatures =
 						["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
 						["sourceQuests"] = { 54485 },	-- Battle of Dazar'alor
 					}),
+					qa(54183, {	-- Dead Reckoning
+						["qg"] = 147885,	-- Anduin Wrynn
+						["coord"] = { 49.2, 85.4, 1161 },	-- Boralus
+						["sourceQuests"] = { 54163 },	-- As the Dust Settles
+					}),
 				}),
 			}),
 		}),
