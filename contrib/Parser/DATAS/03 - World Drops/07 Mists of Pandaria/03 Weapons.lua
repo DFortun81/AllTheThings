@@ -7,7 +7,6 @@ _.WorldDrops =
 		["groups"] = {
 			n(-319, {	-- Weapons		
 				n(-334, {	-- 1H Axes
-					i(116457),	-- Frostbitten Axe
 					i(82020),	-- Polished Axe
 					i(82045),	-- Bronzed Axe
 					i(82100),	-- Barbarian Axe
@@ -20,7 +19,6 @@ _.WorldDrops =
 					i(94099),	-- Corroded Hacker
 				}),
 				n(-335, {	-- 2H Axes
-					i(116458),	-- Frostbitten Broadaxe
 					i(82019),	-- Polished Broadaxe
 					i(82047),	-- Bronzed Broadaxe
 					i(82102),	-- Barbarian Broadaxe
@@ -31,7 +29,6 @@ _.WorldDrops =
 					i(94100),	-- Weighty Stone Axe
 				}),	
 				n(-346, {	-- Bows
-					i(116459),	-- Frostbitten Bow
 					i(82018),	-- Polished Bow
 					i(82046),	-- Bronzed Bow
 					i(82101),	-- Barbarian Bow
@@ -42,7 +39,6 @@ _.WorldDrops =
 					i(94101),	-- Restrung Voodoo Bow
 				}),
 				n(-347, {	-- Crossbows
-					i(116460),	-- Frostbitten Crossbow
 					i(82016),	-- Polished Crossbow
 					i(82048),	-- Bronzed Crossbow
 					i(82103),	-- Barbarian Crossbow
@@ -52,8 +48,6 @@ _.WorldDrops =
 					i(87650),	-- Fishsticker Crossbow
 				}),			
 				n(-333, {	-- Daggers	
-					i(116461),	-- Frostbitten Dagger
-					i(116462),	-- Coldsinger Spellblade
 					i(82003),	-- Intricate Spellblade
 					i(82015),	-- Polished Dagger
 					i(82049),	-- Bronzed Dagger
@@ -76,7 +70,6 @@ _.WorldDrops =
 					i(94215),	-- Saurjaw Dagger
 				}),
 				n(-348, {	-- Fist Weapons	
-					i(116463),	-- Frostbitten Knuckles
 					i(82013),	-- Polished Knuckles
 					i(82054),	-- Bronzed Knuckles
 					i(82109),	-- Barbarian Knuckles
@@ -87,7 +80,6 @@ _.WorldDrops =
 					i(94098),	-- Dull Hawktalons
 				}),
 				n(-345, {	-- Guns
-					i(116464),	-- Frostbitten Gun
 					i(82012),	-- Polished Gun
 					i(82051),	-- Bronzed Gun
 					i(82106),	-- Barbarian Gun
@@ -99,7 +91,6 @@ _.WorldDrops =
 					i(94094),	-- Hexbelcher Rifle
 				}),			
 				n(-331, {	-- Held in Off-hand
-					i(116694),	-- Coldsinger Crystal
 					i(82010),	-- Intricate Crystal
 					i(82062),	-- Gemmed Crystal
 					i(82117),	-- Shamanic Crystal
