@@ -483,6 +483,25 @@ _.Zones =
 								i(103982),	-- Burden of Eternity
 							},
 						}),
+						n(72769, { 	-- Spirit of Jadefire
+							["groups"] = {
+								{
+									["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
+									["criteriaID"] = 45,		-- Glowing Green Ash [Criteria]
+									["itemID"] = 104258,	-- Glowing Green Ash [Item]
+									["dr"] = 1.9,
+								},
+								{
+									["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
+									["criteriaID"] = 21,		-- Jadefire Spirit [Criteria]
+									["itemID"] = 104307,		-- Jadefire Spirit [Item]
+									["dr"] = 1.9,
+								},
+								dr(0.8, i(104227)),	-- Technique: Glyph of Pillar of Light
+							},
+							["questID"] = 33293,
+							["isDaily"] = true,
+						}),
 						n(72808, {	-- Tsavo'ka
 							["questID"] = 33304,
 							["g"] = {
