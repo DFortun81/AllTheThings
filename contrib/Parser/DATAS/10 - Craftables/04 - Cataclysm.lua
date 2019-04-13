@@ -624,68 +624,85 @@ _.Craftables =
 				i(70138),	-- Luxurious Silk Gem Bag
 				i(54445),	-- Otherworldly Bag
 			}),
-			n(-323, {	-- Chest
-				i(54475),	-- Deathsilk Robe
-				i(54486),	-- Spiritmend Robe
-				i(75093),	-- Vicious Embersilk Robe
-				i(75088),	-- Vicious Fireweave Robe
+			n(-323, {		-- Chest
+				un(7, i(70060)),	-- Bloodthirsty Embersilk Robe
+				un(7, i(70058)),	-- Bloodthirsty Fireweave Robe
+				i(54475),	 		-- Deathsilk Robe
+				i(54486),			-- Spiritmend Robe
+				i(75093),			-- Vicious Embersilk Robe
+				i(75088),			-- Vicious Fireweave Robe
 			}),
-			n(-322, {	-- Cloaks
-				i(75065),	-- Vicious Embersilk Cape
+			n(-322, {		-- Cloaks
+				un(7, i(70070)),	-- Bloodthirsty Embersilk Cape
+				i(75065),			-- Vicious Embersilk Cape
 			}),
-			n(-330, {	-- Feet
+			n(-330, {		-- Feet
 				i(69954),	-- Boots of the Black Flame
-				i(54477),	-- Deathsilk Boots
-				i(69953),	-- Endless Dream Walkers
-				i(54482),	-- Spiritmend Boots
-				i(75095),	-- Vicious Embersilk Boots
-				i(75087),	-- Vicious Fireweave Boots
+				un(7, i(70061)),	-- Bloodthirsty Embersilk Boots
+				un(7, i(70053)),	-- Bloodthirsty Fireweave Boots
+				i(54477),			-- Deathsilk Boots
+				i(69953),			-- Endless Dream Walkers
+				i(54482),			-- Spiritmend Boots
+				i(75095),			-- Vicious Embersilk Boots
+				i(75087),			-- Vicious Fireweave Boots
 			}),
-			n(-327, {	-- Hands
-				i(54478),	-- Deathsilk Gloves
-				i(69945),	-- Don Tayo's Inferno Mittens
-				i(69944),	-- Grips of Altered Reality
-				i(54484),	-- Spiritmend Gloves
-				i(75070),	-- Vicious Embersilk Gloves
-				i(75063),	-- Vicious Fireweave Gloves
+			n(-327, {		-- Hands
+				un(7, i(70065)),	-- Bloodthirsty Embersilk Gloves
+				un(7, i(70056)),	-- Bloodthirsty Fireweave Gloves
+				i(54478),			-- Deathsilk Gloves
+				i(69945),			-- Don Tayo's Inferno Mittens
+				i(69944),			-- Grips of Altered Reality
+				i(54484),			-- Spiritmend Gloves
+				i(75070),			-- Vicious Embersilk Gloves
+				i(75063),			-- Vicious Fireweave Gloves
 			}),
-			n(-320, {	-- Head
-				i(54476),	-- Deathsilk Cowl
-				i(54485),	-- Spiritmend Cowl
-				i(75073),	-- Vicious Embersilk Cowl
-				i(75062),	-- Vicious Fireweave Cowl
+			n(-320, {		-- Head
+				un(7, i(70067)),	-- Bloodthirsty Embersilk Cowl
+				un(7, i(70055)),	-- Bloodthirsty Fireweave Cowl
+				i(54476),			-- Deathsilk Cowl
+				i(54485),			-- Spiritmend Cowl
+				i(75073),			-- Vicious Embersilk Cowl
+				i(75062),			-- Vicious Fireweave Cowl
 			}),
-			n(-329, {	-- Legs
-				i(54505),	-- Breeches of Mended Nightmares
-				i(54472),	-- Deathsilk Leggings
-				i(54506),	-- Flame-Ascended Pantaloons
-				i(71980),	-- Lavaquake Legwraps
-				i(54483),	-- Spiritmend Leggings
-				i(75072),	-- Vicious Embersilk Pants
-				i(75082),	-- Vicious Fireweave Pants
-				i(71981),	-- World Mender's Pants
+			n(-329, {		-- Legs
+				un(7, i(70066)),	-- Bloodthirsty Embersilk Pants
+				un(7, i(70057)),	-- Bloodthirsty Fireweave Pants
+				i(54505),			-- Breeches of Mended Nightmares
+				i(54472),			-- Deathsilk Leggings
+				i(54506),			-- Flame-Ascended Pantaloons
+				i(71980),			-- Lavaquake Legwraps
+				i(54483),			-- Spiritmend Leggings
+				i(75072),			-- Vicious Embersilk Pants
+				i(75082),			-- Vicious Fireweave Pants
+				i(71981),			-- World Mender's Pants
 			}),
-			n(-321, {	-- Shoulders
-				i(54474),	-- Deathsilk Shoulders
-				i(54479),	-- Spiritmend Shoulders
-				i(75064),	-- Vicious Embersilk Shoulders
-				i(75091),	-- Vicious Fireweave Shoulders
+			n(-321, {		-- Shoulders
+				un(7, i(70064)),	-- Bloodthirsty Embersilk Shoulders
+				un(7, i(70059)),	-- Bloodthirsty Fireweave Shoulders
+				i(54474),			-- Deathsilk Shoulders
+				i(54479),			-- Spiritmend Shoulders
+				i(75064),			-- Vicious Embersilk Shoulders
+				i(75091),			-- Vicious Fireweave Shoulders
 			}),
-			n(-328, {	-- Waist
-				i(54504),	-- Belt of the Depths
-				i(54471),	-- Deathsilk Belt
-				i(54503),	-- Dreamless Belt
-				i(54481),	-- Spiritmend Belt
-				i(75096),	-- Vicious Embersilk Belt
-				i(75086),	-- Vicious Fireweave Belt
+			n(-328, {		-- Waist
+				i(54504),			-- Belt of the Depths
+				un(7, i(70062)),	-- Bloodthirsty Embersilk Belt
+				un(7, i(70052)),	-- Bloodthirsty Fireweave Belt
+				i(54471),			-- Deathsilk Belt
+				i(54503),			-- Dreamless Belt
+				i(54481),			-- Spiritmend Belt
+				i(75096),			-- Vicious Embersilk Belt
+				i(75086),			-- Vicious Fireweave Belt
 			}),
-			n(-326, {	-- Wrist
-				i(71989),	-- Bracers of Unconquered Power
-				i(54473),	-- Deathsilk Bracers
-				i(71990),	-- Dreamwraps of the Light
-				i(54480),	-- Spiritmend Bracers
-				i(75098),	-- Vicious Embersilk Bracers
-				i(75089),	-- Vicious Fireweave Bracers
+			n(-326, {		-- Wrist
+				un(7, i(70063)),	-- Bloodthirsty Embersilk Bracers
+				un(7, i(70054)),	-- Bloodthirsty Fireweave Bracers
+				i(71989),			-- Bracers of Unconquered Power
+				i(54473),			-- Deathsilk Bracers
+				i(71990),			-- Dreamwraps of the Light
+				i(54480),			-- Spiritmend Bracers
+				i(75098),			-- Vicious Embersilk Bracers
+				i(75089),			-- Vicious Fireweave Bracers
 			}),
 		}),
 	}),
