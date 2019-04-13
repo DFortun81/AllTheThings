@@ -61,6 +61,9 @@ _.Zones =
 										{	-- Island Expedition Cloak
 											["itemID"] = 167858,	-- Island Expedition Cloak
 											["description"] = "Cost: 35 Seafarer's Dubloons",
+											["g"] = {
+												i(160332),	-- Mud-Slicked Capote -- Bought 10 Cloaks, all the same. Opened on Alliance Warrior
+											},
 										},
 										{	-- Saltwater Seahorse
 											["itemID"] = 166471,	-- Saltwater Seahorse
