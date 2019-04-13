@@ -140,8 +140,6 @@ _.GearSets =
 		["maps"] = {
 			652,	-- Thunder Totem (Highmountain Taurens)
 			1186,	-- Blackrock Depths (Dark Iron Dwarves)
-			1159,	-- Blackrock Depths (Dark Iron Dwarves scenario)
-			1160,	-- Blackrock Depths (Dark Iron Dwarves scenario)
 		},
 	}),
 };
