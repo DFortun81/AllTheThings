@@ -27,8 +27,8 @@ _.Instances = { tier(1, {	-- Classic
 				i(7729),	-- Chesterfall Musket
 				i(7730),	-- Cobalt Crusher
 				i(7752),	-- Dreamslayer
-				i(7736),	-- Fight Club
-				i(7755),	-- Flintrock Shoulders
+				un(7, i(7736)),	-- Fight Club
+				un(7, i(7755)),	-- Flintrock Shoulders
 				i(7754, {	-- Harbinger Boots
 					["crs"] = {
 						7754,	-- Scarlet Sentry
@@ -57,7 +57,7 @@ _.Instances = { tier(1, {	-- Classic
 						7754,	-- Scarlet Sentry
 					},
 				}),
-				i(7760),	-- Warchief Kilt
+				un(7, i(7760)),	-- Warchief Kilt
 				i(7727, {	-- Watchman Pauldrons
 					["crs"] = {
 						7754,	-- Scarlet Sentry
