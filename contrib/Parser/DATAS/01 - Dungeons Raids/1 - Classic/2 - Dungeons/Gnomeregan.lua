@@ -1,5 +1,5 @@
 -----------------------------------------------------
---   D U N G E O N S  &  R A I D S  M O D U L E    --
+--   D U N G E O N S  &  R A I D S  M O D U L E  	--
 -----------------------------------------------------
 
 _.Instances = { tier(1, {	-- Classic
@@ -139,15 +139,15 @@ _.Instances = { tier(1, {	-- Classic
 				},
 			}),
 			n( 0, {	-- Zone Drop
-				{    -- Red Punch Card
-					["itemID"] = 9281,        -- Red Punch Card
-					["requireSkill"] = 202,    -- Engineering
+				{  	-- Red Punch Card
+					["itemID"] = 9281,      	-- Red Punch Card
+					["requireSkill"] = 202,  	-- Engineering
 					["g"] = {
-						{    -- Security DELTA Data Access Card
-							["itemID"] = 9327,        -- Security DELTA Data Access Card
+						{  	-- Security DELTA Data Access Card
+							["itemID"] = 9327,      	-- Security DELTA Data Access Card
 							["g"] = {
-								{    -- Schematic: Discombobulator Ray
-									["itemID"] = 4413,    -- Schematic: Discombobulator Ray
+								{  	-- Schematic: Discombobulator Ray
+									["itemID"] = 4413,  	-- Schematic: Discombobulator Ray
 								},
 							},
 						},
@@ -155,99 +155,126 @@ _.Instances = { tier(1, {	-- Classic
 				},
 				{
 					["itemID"] = 9280,	-- Yellow Punch Card
-					["requireSkill"] = 202,    -- Engineering
+					["requireSkill"] = 202,  	-- Engineering
 					["description"] = "Head down to the Matrix Punchograph 3005-B and there you learn the schematic.",
 					["g"] = {
-						{    -- Schematic: Minor Recombobulator
-							["itemID"] = 14639,    -- Schematic: Minor Recombobulator
+						{  	-- Schematic: Minor Recombobulator
+							["itemID"] = 14639,  	-- Schematic: Minor Recombobulator
 						},
 					},
 				},
 				i(9308),	-- Grime-Encrusted Object
 				i(9510, {	-- Caverndeep Trudgers
 					["crs"] = {
-						6235,  -- Electrocutioner 6000
-						7800,  -- Mekgineer Thermaplugg
-						7079,  -- Viscous Fallout
+						6228,	-- Dark Iron Ambassador
+						6235,	-- Electrocutioner 6000
+						7800,	-- Mekgineer Thermaplugg
+						7079,	-- Viscous Fallout
 					},
 				}),
 				i(9490, {	-- Gizmotron Megachopper
 					["crs"] = {
-						6207,  -- Caverndeep Ambusher
-						6206,  -- Caverndeep Burrower
-						6212,  -- Dark Iron Agent
-						6329,  -- Irradiated Pillager
-						6223,  -- Leprous Defender
-						6226,  -- Mechano-Flamewalker
-						6227,  -- Mechano-Frostwalker
-						6225,  -- Mechano-Tank
-						6230,  -- Peacekeeper Security Suit
+						6232,	-- Arcane Nullifier X-21
+						6207,	-- Caverndeep Ambusher
+						6206,	-- Caverndeep Burrower
+						6212,	-- Dark Iron Agent
+						6220,	-- Irradiated Horror
+						6329,	-- Irradiated Pillager
+						7603,	-- Leprous Assistant
+						6223,	-- Leprous Defender
+						6222,	-- Leprous Technician
+						6234,	-- Mechanized Guardian
+						6233,	-- Mechanized Sentry
+						6226,	-- Mechano-Flamewalker
+						6227,	-- Mechano-Frostwalker
+						6225,	-- Mechano-Tank
+						6230,	-- Peacekeeper Security Suit
 					},
 				}),
 				i(9489, {	-- Gyromatic Icemaker
 					["crs"] = {
-						6232,  -- Arcane Nullifier X-21
-						6212,  -- Dark Iron Agent
-						6235,  -- Electrocutioner 6000
-						6220,  -- Irradiated Horror
-						6223,  -- Leprous Defender
-						6234,  -- Mechanized Guardian
-						6233,  -- Mechanized Sentry
-						6227,  -- Mechano-Frostwalker
-						7800,  -- Mekgineer Thermaplugg
-						6230,  -- Peacekeeper Security Suit
-						7079,  -- Viscous Fallout
+						6232,	-- Arcane Nullifier X-21
+						6212,	-- Dark Iron Agent
+						6220,	-- Irradiated Horror
+						7603,	-- Leprous Assistant
+						6234,	-- Mechanized Guardian
+						6233,	-- Mechanized Sentry
+						6227,	-- Mechano-Frostwalker
+						6230,	-- Peacekeeper Security Suit
 					},
 				}),
 				i(9487, {	-- Hi-Tech Supergun
 					["crs"] = {
-						6232,  -- Arcane Nullifier X-21
-						6207,  -- Caverndeep Ambusher
-						6206,  -- Caverndeep Burrower
-						6212,  -- Dark Iron Agent
-						6329,  -- Irradiated Pillager
-						6223,  -- Leprous Defender
-						6233,  -- Mechanized Sentry
-						6230,  -- Peacekeeper Security Suit
+						6232,	-- Arcane Nullifier X-21
+						6207,	-- Caverndeep Ambusher
+						6206,	-- Caverndeep Burrower
+						6211,	-- Caverndeep Reaver
+						6212,	-- Dark Iron Agent
+						6220,	-- Irradiated Horror
+						6329,	-- Irradiated Pillager
+						7603,	-- Leprous Assistant
+						6223,	-- Leprous Defender
+						6234,	-- Mechanized Guardian
+						6233,	-- Mechanized Sentry
+						6230,	-- Peacekeeper Security Suit
 					},
 				}),
 				i(9491),	-- Hotshot Pilot's Gloves
 				i(9508, {	-- Mechbuilder's Overalls
 					["crs"] = {
-						6212,  -- Dark Iron Agent
-						6223,  -- Leprous Defender
-						6233,  -- Mechanized Sentry
-						6230,  -- Peacekeeper Security Suit
-					},
-				}),
-				i(9488, {	-- Oscillating Power Hammer
-					["crs"] = {
-						6232,  -- Arcane Nullifier X-21
-						6206,  -- Caverndeep Burrower
-						6211,  -- Caverndeep Reaver
-						6329,  -- Irradiated Pillager
-						6234,  -- Mechanized Guardian
-						6233,  -- Mechanized Sentry
-						6225,  -- Mechano-Tank
-					},
-				}),
-				i(7360, {	-- Pattern: Dark Leather Gloves
-					["crs"] = {
-						6230,  -- Peacekeeper Security Suit
-					},
-				}),
-				i(9509, {	-- Petrolspill Leggings
-					["crs"] = {
+						6232,	-- Arcane Nullifier X-21
 						6212,	-- Dark Iron Agent
 						6223,	-- Leprous Defender
 						6234,	-- Mechanized Guardian
 						6233,	-- Mechanized Sentry
+						6230,	-- Peacekeeper Security Suit
+					},
+				}),
+				i(9488, {	-- Oscillating Power Hammer
+					["crs"] = {
+						6232,	-- Arcane Nullifier X-21
+						6207,	-- Caverndeep Ambusher
+						6206,	-- Caverndeep Burrower
+						6211,	-- Caverndeep Reaver
+						6212,	-- Dark Iron Agent
+						6329,	-- Irradiated Pillager
+						7603,	-- Leprous Assistant
+						6223,	-- Leprous Defender
+						6234,	-- Mechanized Guardian
+						6233,	-- Mechanized Sentry
+						6226,	-- Mechano-Flamewalker
+						6227,	-- Mechano-Frostwalker
+						6225,	-- Mechano-Tank
+						6230,	-- Peacekeeper Security Suit
+					},
+				}),
+				i(7360, {	-- Pattern: Dark Leather Gloves
+					["crs"] = {
+						7603,	-- Leprous Assistant
+						6230,	-- Peacekeeper Security Suit
+					},
+				}),
+				i(9509, {	-- Petrolspill Leggings
+					["crs"] = {
+						6232,	-- Arcane Nullifier X-21
+						6207,	-- Caverndeep Ambusher
+						6206,	-- Caverndeep Burrower
+						6212,	-- Dark Iron Agent
+						6220,	-- Irradiated Horror
+						6329,	-- Irradiated Pillager
+						6218,	-- Irradiated Slime
+						7603,	-- Leprous Assistant
+						6223,	-- Leprous Defender
+						6234,	-- Mechanized Guardian
+						6233,	-- Mechanized Sentry
+						6227,	-- Mechano-Frostwalker
+						6230,	-- Peacekeeper Security Suit
 					},
 				}),
 				i(11827, {	-- Schematic: Lil' Smoky
 					["crs"] = {
-						6229,	-- Crowd Pummeler 9-60
 						6232,	-- Arcane Nullifier X-21
+						6229,	-- Crowd Pummeler 9-60
 						6230,	-- Peacekeeper Security Suit
 					},
 				}),
@@ -260,18 +287,30 @@ _.Instances = { tier(1, {	-- Classic
 						6212,	-- Dark Iron Agent
 						6220,	-- Irradiated Horror
 						6329,	-- Irradiated Pillager
+						6223,	-- Leprous Defender
+						6224,	-- Leprous Machinesmith
+						6234,	-- Mechanized Guardian
+						6233,	-- Mechanized Sentry
+						6227,	-- Mechano-Frostwalker
+						6225,	-- Mechano-Tank
 						6230,	-- Peacekeeper Security Suit
 					},
 				}),
 				i(9485, {	-- Vibroblade
 					["crs"] = {
+						6232,	-- Arcane Nullifier X-21
+						6207,	-- Caverndeep Ambusher
+						6206,	-- Caverndeep Burrower
 						6212,	-- Dark Iron Agent
 						6220,	-- Irradiated Horror
 						6329,	-- Irradiated Pillager
+						7603,	-- Leprous Assistant
+						6223,	-- Leprous Defender
 						6234,	-- Mechanized Guardian
 						6233,	-- Mechanized Sentry
 						6226,	-- Mechano-Flamewalker
 						6227,	-- Mechano-Frostwalker
+						6230,	-- Peacekeeper Security Suit
 					},
 				}),
 			}),
@@ -319,7 +358,7 @@ _.Instances = { tier(1, {	-- Classic
 				i(4413),	-- Schematic: Discombobulator Ray
 				i(6716),	-- Schematic: EZ-Thro Dynamite
 				i(4411), 	-- Schematic: Flame Deflector
-				i(6672),    -- Schematic: Flash Bomb
+				i(6672),  	-- Schematic: Flash Bomb
 				i(7742),	-- Schematic: Gnomish Cloaking Device
 				i(7560),	-- Schematic: Gnomish Universal Remote
 				i(7561),	-- Schematic: Goblin Jumper Cables
