@@ -145,13 +145,22 @@ _.Zones =
 							["coord"] = { 56.6, 62.6 },
 							["races"] = ALLIANCE_ONLY,
 						}),
-						n(19836, {	-- Mixie Farshot <Gun Merchant>
-							["groups"] = {
-								i(23803),	-- Schematic: Cogspinner Goggles
+						{	-- Mixie Farshot <Gun Merchant>
+							["npcID"] = 19836,	-- Mixie Farshot <Gun Merchant>
+							["coords"] = {
+								{ 61.12, 81.41, 100 },
 							},
-							["coord"] = { 61.0, 81.4 },
 							["races"] = HORDE_ONLY,
-						}),
+							["description"] = "NOTE!! This vendor contains 1 of each pattern.  After they are purchased you must wait for them to spawn again.",
+							["g"] = {
+								{	-- Schematic: Adamantite Scope
+									["itemID"] = 23807,	-- Schematic: Adamantite Scope
+								},
+								{	-- Schematic: Cogspinner Goggles
+									["itemID"] = 23803,	-- Schematic: Cogspinner Goggles
+								},
+							},
+						},
 						n(17585, {	-- Quartermaster Urgronn <Thrallmar Quartermaster>
 							["groups"] = {
 								i(24004),	-- Thrallmar Tabard
