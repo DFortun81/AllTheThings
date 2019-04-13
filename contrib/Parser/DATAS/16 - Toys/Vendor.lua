@@ -133,7 +133,9 @@ _.Toys =
 			["classes"] = {7},
 		}),
 		i(131814),		-- Whitewater Carp
-		i(97919),		-- Whole-Body Shrinka'
+		i(97919, {		-- Whole-Body Shrinka'
+			["description"] = "Use this toy when you encounter a mob you need to dps slowly, such as Exarch Maladaar in Auchenai Crypts.",
+		}),
 		i(119212),		-- Winning Hand
 		i(98552), 		-- Xan'tish's Flute
 		i(156649),		-- Zandalari Effigy Amulet
