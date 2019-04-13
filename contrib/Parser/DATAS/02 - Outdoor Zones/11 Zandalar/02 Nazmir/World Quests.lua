@@ -300,6 +300,7 @@ _.Zones =
 						i(158116),	-- Bonehex Claws
 						i(158125),	-- Bonehex Warmaul
 						i(158126),	-- Dazar'alor Polearm
+						i(158155),	-- Dinobone Charm
 						i(158124),	-- Dinobone Cracker
 						i(162458),	-- Gilded Hex-Maw
 						i(162455),	-- Golden Empire Buckler
