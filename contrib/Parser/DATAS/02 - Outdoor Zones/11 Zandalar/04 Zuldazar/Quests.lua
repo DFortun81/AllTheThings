@@ -615,6 +615,17 @@ _.Zones =
 								["coord"] = { 58.4, 62.7 },
 								["races"] = HORDE_ONLY,
 							},
+							qh(50297, {	-- The Head of Her Enemy
+								["g"] = {
+									i(159147),	-- Jambani Walkers
+									i(159149),	-- Zanchuli Footies
+									i(158666),	-- Jambani Voodoo Focus
+									i(159148),	-- Torcalin Walkers
+									i(159150),	-- Rastari Stompers
+									i(159123),	-- Jambani Barrier
+								},
+								["qg"] = 130929	-- Witch Doctor Jangalar
+							}),
 						},
 					}),
 				},

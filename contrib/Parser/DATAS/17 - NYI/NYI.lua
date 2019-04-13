@@ -1268,8 +1268,8 @@ _.NeverImplemented =
 	}),
 	n(-162, {	-- Pets
 		un(1, model(65527, i(129108, {	-- Son of Goredome		 				(Never added in Game)
-		p(1751),
-	}))),
+			p(1751),
+		}))),
 		un(1, i(130145)),	-- Unknown
 		un(1, i(109602)),	-- Echo of Murmur (temp item)
 		un(1, i(115469)),	-- Pet template
@@ -1292,7 +1292,6 @@ _.NeverImplemented =
 		un(1, i(119147)),	-- Nether Ray Fry (unsed Version)
 		un(1, i(119112)),	-- Son of Sethe (unsed Version)
 		model(38311, n(51634, {["u"] = 1,} )),	-- Bubbles 					(Never added in Game)
-		
 		model(36583, n(51636, {["u"] = 1,})),	-- Lizzy 					(Never added in Game)
 		model(14657, n(14629, {["u"] = 1,})), 	-- Loggerhead Snapjaw 		(Never added in Game)
 		model(36129, n(48376, {["u"] = 1,})),	-- Rumbling Rockling 		(Never added in Game)
@@ -1325,14 +1324,20 @@ _.NeverImplemented =
 		un(1, i(13343)),	-- Pet Stone
 		un(1, i(82800)), 	-- "Pet Cage"
 		un(1, i(62769, { 	-- Hardboiled Egg 						(Never added in Game)
-		["groups"] = {				-- /dump C_PetJournal.FindPetIDByName("Hardboiled Egg")
+			["groups"] = {				-- /dump C_PetJournal.FindPetIDByName("Hardboiled Egg")
+				p(1758),
+			},							
+			["description"] = "|cff66ccffUnable to find species for this pet, so using Black Piglet to make it so you can see the model for this pet.|r",
+		})),
+		un(1, model(65670, i(136907, { 	-- Black Piglet	 						(Never added in Game)
 			p(1758),
-		},							
-		["description"] = "|cff66ccffUnable to find species for this pet, so using Black Piglet to make it so you can see the model for this pet.|r",
-	})),
-	un(1, model(65670, i(136907, { 	-- Black Piglet	 						(Never added in Game)
-		p(1758),
-	}))),
+		}))),
+		un(1, i(136897)),	-- Northern Hawk Owl (wild pet catchable, item was never used)
+		un(1, i(141316)),	-- Odd Murloc Egg (wild pet catchable, item was never used)
+		un(1, i(136913)),	-- Red Broodling (wild pet catchable, item was never used)
+		un(1, i(136902)),	-- Toxic Whelpling (wild pet catchable, item was never used)
+		un(1, i(136921)),	-- Trigger (132519 is crafted from engineering, doesn't appear this version was ever used)
+		
 	}),
 	n(-38, {	-- Professions
 		n(-180, { 	-- Alchemy

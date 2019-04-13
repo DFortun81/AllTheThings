@@ -103,8 +103,6 @@ _.WorldDrops =
 				}),
 				n(-336, {	-- 1H Maces
 					i(107218),	-- Tremendous Tankard O' Terror
-					i(116465),	-- Frostbitten Mace
-					i(116466),	-- Coldsinger Scepter
 					i(71332),	-- Tremendous Tankard O' Terror
 					i(82009),	-- Polished Mace
 					i(82011),	-- Intricate Scepter
@@ -124,7 +122,6 @@ _.WorldDrops =
 					i(94212),	-- Hex-Caster Gavel
 				}),
 				n(-337, {	-- 2H Maces
-					i(116467),	-- Frostbitten Hammer
 					i(82008),	-- Polished Hammer
 					i(82052),	-- Bronzed Hammer
 					i(82107),	-- Barbarian Hammer
@@ -134,7 +131,6 @@ _.WorldDrops =
 					i(87418),	-- Lerah's Ribsmasher
 				}),
 				n(-343, {	-- Polearms
-					i(116468),	-- Frostbitten Spear
 					i(82006),	-- Polished Spear
 					i(82056),	-- Bronzed Spear
 					i(82111),	-- Barbarian Spear
@@ -145,7 +141,6 @@ _.WorldDrops =
 					i(94103),	-- Ritual Headcleaver Halberd
 				}),			
 				n(-332, {	-- Shield
-					i(106397),	-- Frostbitten Shield
 					i(82004),	-- Wall Shield
 					i(82074),	-- Brick Shield
 					i(82129),	-- Miner Shield
@@ -161,8 +156,6 @@ _.WorldDrops =
 					i(94218),	-- Skyking Bulwark
 				}),
 				n(-342, {	-- Staves
-					i(116469),	-- Frostbitten Staff
-					i(116470),	-- Frostbitten Staff
 					i(82002),	-- Polished Staff
 					i(82014),	-- Polished Staff
 					i(82057),	-- Bronzed Staff
@@ -183,7 +176,6 @@ _.WorldDrops =
 					i(94104),	-- Sky-Shaper Staff
 				}),
 				n(-338, {	-- 1H Swords
-					i(116471),	-- Frostbitten Sword
 					i(82001),	-- Polished Sword
 					i(82059),	-- Bronzed Sword
 					i(82114),	-- Barbarian Sword
@@ -198,7 +190,6 @@ _.WorldDrops =
 					i(94217),	-- Stubby Talonblade
 				}),
 				n(-339, {	-- 2H Swords
-					i(116472),	-- Frostbitten Greatsword
 					i(82000),	-- Polished Greatsword
 					i(82050),	-- Bronzed Greatsword
 					i(82105),	-- Barbarian Greatsword
@@ -208,7 +199,6 @@ _.WorldDrops =
 					i(87423),	-- Bjam's Door-Breaker
 				}),
 				n(-341, {	-- Wands
-					i(116473),	-- Coldsinger Wand
 					i(81998),	-- Intricate Wand
 					i(82066),	-- Gemmed Wand
 					i(82121),	-- Shamanic Wand

@@ -225,6 +225,15 @@ _.Zones =
 						},
 					},
 					{	-- Challenge to the Black Dragonflight
+						["questID"] = 11162,
+						["u"] = 40,	-- Legacy
+						["qg"] = 23579,	-- Brogg
+						["races"] = HORDE_ONLY,
+						["groups"] = {
+							un(2, i(33237)),	-- Brogg's Battle Harness
+						},
+					},
+					{	-- Challenge to the Black Dragonflight
 						["questID"] = 27411,
 						["qg"] = 23579,	-- Brogg
 						["coord"] = { 41.8, 73.9, 70 },

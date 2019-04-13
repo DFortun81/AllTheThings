@@ -558,6 +558,7 @@ _.ExpansionFeatures =
 						i(164306),	-- Plundered Waterspeaker's Spellblade
 						i(164347),	-- Plundered Windblaster
 						i(164354),	-- Plundered Wingblade Axe
+						i(163926),	-- Rusty Captain's Hook
 						i(163928),	-- Stinkrot Smasher
 					}),
 				},	

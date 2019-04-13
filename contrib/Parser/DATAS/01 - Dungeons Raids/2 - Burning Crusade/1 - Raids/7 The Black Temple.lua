@@ -1330,6 +1330,8 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(150444),	-- Pearl Inlaid Boots
 						i(150440),	-- Slippers of the Seacaller
 						i(150445),	-- Tide-Stomper's Greaves
+						i(150439),	-- Ring of Calming Waves
+						i(150446),	-- Ring of Captured Storms
 					})),
 					cr(22898, e(1583, {	-- Supremus
 						i(122106),	-- Shard of Supremus (PET!)
@@ -1350,6 +1352,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(150473),	-- The Seeker's Wristguards
 						i(150470),	-- Spiritwalker Gauntlets
 						i(150463),	-- Shadow-Walker's Cord
+						i(150464),	-- Ring of Deceitful Intent
 					})),
 					cr(22871, e(1585, {	-- Teron Gorefiend
 						i(150500),	-- Soul Cleaver
@@ -1376,6 +1379,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(150493),	-- Leggings of Divine Retribution
 						i(150511),	-- Shadowmaster's Boots
 						i(150526),	-- Shadowmoon Insignia
+						i(150487),	-- Unstoppable Aggressor's Ring
 					})),
 					cr(23418, e(1587, {	-- Reliquary of Souls
 						i(122107),	-- Fragment of Anger (PET!)

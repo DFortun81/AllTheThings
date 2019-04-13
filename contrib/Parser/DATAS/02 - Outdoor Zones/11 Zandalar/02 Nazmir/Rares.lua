@@ -408,6 +408,11 @@ _.Zones =
 								},
 							}),
 						}),
+						n(128578, {	-- Zujothgul
+							["g"] = {
+								i(161101),	-- Bone Horror's Armsplints
+							},
+						}),
 					},
 				}),
 			},

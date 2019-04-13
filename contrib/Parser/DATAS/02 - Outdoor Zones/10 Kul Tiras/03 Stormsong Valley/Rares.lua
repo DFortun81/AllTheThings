@@ -104,6 +104,11 @@ _.Zones =
 								},
 							},
 						}),
+						n(140925, {	-- Doc Marrtens	
+							["g"] = {
+								i(154453),	-- Doc's Air-Cushioned Boots
+							},
+						}),
 						n(131404, {	-- Foreman Scripps
 							["questID"] = 49951,
 							["coord"] = { 64.41, 65.91 },

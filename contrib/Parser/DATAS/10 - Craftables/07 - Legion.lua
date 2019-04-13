@@ -227,6 +227,9 @@ _.Craftables =
 				i(128535),	-- Enchanted Pen
 				i(128534),	-- Enchanted Torch
 			}),
+			filter(102, {	-- Toy
+				i(128536),	-- Leylight Brazier
+			}),
 		}),
 		n(-183, {	-- Engineering
 			filter(101, {	-- Pets
