@@ -48,7 +48,7 @@ _.Zones =
 									["itemID"] = 28360,	-- Delicate Blood Garnet
 								},
 								{	-- Jagged Deep Peridot
-									["itemID"] = 28360,	-- Jagged Deep Peridot
+									["itemID"] = 27786,	-- Jagged Deep Peridot
 								},
 								{	-- Thrallmar Favor
 									["itemID"] = 24522,	-- Thrallmar Favor
