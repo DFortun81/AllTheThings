@@ -25,11 +25,6 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					["isDaily"] = true, 	-- Would like to swap it to WQ below
 					--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 					["lvl"] = 120,			-- WQ is 120+ only
-					["groups"] = bubbleDown({["modID"] = 23}, {
-						i(158375),	-- Drape of the Loyal Vassal
-						i(159445),	-- Grips of the Everlasting Guardian
-						i(158319),	-- My'das Talisman
-					}),
 				}),
 			}),
 			d(1, {	-- Normal

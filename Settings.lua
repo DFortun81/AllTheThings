@@ -825,7 +825,7 @@ function(self)
 	end
 	app:RefreshData();
 end);
-TransmogCheckBox:SetATTTooltip("Enable this option to track appearance acquisition.\n\nNOTE: Disabling this option also disables all fanfares and acquisition logic, you can use this toggle as a way to prevent lag spikes while doing important group content, bare in mind, the compution will need to occur once re-enabled.\n\nTracked Account Wide by Default.");
+TransmogCheckBox:SetATTTooltip("Enable this option to track appearance acquisition.\n\nNOTE: Disabling this option also disables all fanfares and acquisition logic.  You can use this toggle as a way to prevent lag spikes while doing important group content, but bear in mind the computation will need to occur once re-enabled.\n\nTracked Account Wide by Default.");
 TransmogCheckBox:SetPoint("TOPLEFT", AchievementsCheckBox, "BOTTOMLEFT", 0, 4);
 
 local TransmogAccountWideCheckBox = settings:CreateCheckBox("Account Wide",

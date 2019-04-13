@@ -14,13 +14,6 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					["isDaily"] = true, 	-- Would like to swap it to WQ below
 					--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
 					["lvl"] = 120,			-- WQ is 120+ only
-					["groups"] = bubbleDown({["modID"] = 23}, {
-						i(159612),	-- Azerokk's Resonating Heart
-						i(159287),	-- Cloak of Questionable Intent
-						i(159235),	-- Deranged Alchemist's Slipperss
-						i(159639),	-- P.A.C.I.F.I.S.T. Mk7
-						i(158359),	-- Stonefury Vambracess
-					}),
 				}),
 			}),
 			d(1, {	-- Normal
