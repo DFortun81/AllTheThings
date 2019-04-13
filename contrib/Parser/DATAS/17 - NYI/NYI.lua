@@ -1978,6 +1978,7 @@ _.NeverImplemented =
 			un(1, i(64810)),	-- Bloodthirsty Gladiator's Pike (Epic BG item never made it out of beta)))
 			un(1, i(108799)),	-- Unknown
 			un(1, i(109456)),	-- Unknown
+			un(1, i(161411)),	-- Fel Barbed Spear (different ID made it)
 		}),
 		n(-387,	{	-- Relics
 			un(1, i(132252)),	-- Owen Test Relic
