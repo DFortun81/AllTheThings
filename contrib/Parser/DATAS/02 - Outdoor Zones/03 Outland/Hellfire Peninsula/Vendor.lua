@@ -24,16 +24,37 @@ _.Zones =
 							["coord"] = { 52.2, 36.4 },
 							["races"] = HORDE_ONLY,
 						}),
-						n(18267, {	-- Battlecryer Blackeye
-							["groups"] = {
-								i(24581, {	-- Mark of Thrallmar
-									i(27832),	-- Band of the Victor
-									i(27830),	-- Circlet of the Victor
-								}),
+						{	-- Battlecryer Blackeye
+							["npcID"] = 18267,	-- Battlecryer Blackeye
+							["itemID"] = 24581,	-- Mark of Thrallmar
+							["coords"] = {
+								{ 55.94, 39.21, 100 },
 							},
-							["coord"] = { 55.8, 39.0 },
 							["races"] = HORDE_ONLY,
-						}),
+							["g"] = {
+								{	-- Band of the Victor
+									["itemID"] = 27832,	-- Band of the Victor
+								},
+								{	-- Circlet of the Victor
+									["itemID"] = 27830,	-- Circlet of the Victor
+								},
+								{	-- Bold Blood Garnet
+									["itemID"] = 63697,	-- Bold Blood Garnet
+								},
+								{	-- Brilliant Blood Garnet
+									["itemID"] = 27777,	-- Brilliant Blood Garnet
+								},
+								{	-- Delicate Blood Garnet
+									["itemID"] = 28360,	-- Delicate Blood Garnet
+								},
+								{	-- Jagged Deep Peridot
+									["itemID"] = 28360,	-- Jagged Deep Peridot
+								},
+								{	-- Thrallmar Favor
+									["itemID"] = 24522,	-- Thrallmar Favor
+								},
+							},
+						},
 						n(35099, {	-- Bana Wildmane <Wind Rider Keeper>
 							["groups"] = {
 								i(25477),	-- Swift Red Wind Rider Mount
@@ -162,6 +183,10 @@ _.Zones =
 							},
 						},
 						n(17585, {	-- Quartermaster Urgronn <Thrallmar Quartermaster>
+							["coords"] = {
+								{ 54.91, 37.81, 100 },
+							},
+							["races"] = HORDE_ONLY,
 							["groups"] = {
 								i(24004),	-- Thrallmar Tabard
 								i(31358),	-- Design: Dawnstone Crab
@@ -200,8 +225,6 @@ _.Zones =
 								i(29168),	-- Ancestral Band
 								i(25824),	-- Farseer's Band
 							},
-							["coord"] = { 54.8, 37.8 },
-							["races"] = HORDE_ONLY,
 						}),
 						n(16583, {	-- Rohok
 							["groups"] = {
