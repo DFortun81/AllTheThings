@@ -19,6 +19,116 @@ _.WorldEvents =
 		["groups"] = {
 			n(-526, {	-- Legion
 				["groups"] = {
+					i(139048, {	-- Small Legion Chest
+						un(3, i(141597)),	-- Corrupted Argus Gavel
+						un(3, i(141609)),	-- Corrupted Argus Gavel
+						un(3, i(141595)),	-- Eredar Battle Blade
+						un(3, i(141602)),	-- Eredar Splitter
+						un(3, i(141599)),	-- Fel Barbed Spear
+						un(3, i(141611)),	-- Fel Barbed Spear (dropped below a certain level)
+						un(3, i(141594)),	-- Fel Hacker
+						un(3, i(141603)),	-- Fel Lord's Warmace
+						un(3, i(141604)),	-- Glaive of the Fallen
+						un(3, i(141601)),	-- Hellfury Longbow
+						un(3, i(141616)),	-- Inquisitor's Wand
+						un(3, i(141617)),	-- Inquisitor's Wand (dropped below a certain level)
+						un(3, i(141600)),	-- Wyrmtongue Spiteblade
+						gsh(160, {	-- Fel-Infused Armor
+							un(3, i(138184)),	-- Fel-Infused Helm
+							un(3, i(138186)),	-- Fel-Infused Spaulders
+							un(3, i(138187)),	-- Fel-Infused Hauberk
+							un(3, i(138181)),	-- Fel-Infused Bracers
+							un(3, i(138182)),	-- Fel-Infused Grips
+							un(3, i(138180)),	-- Fel-Infused Cinch
+							un(3, i(138185)),	-- Fel-Infused Leggings
+							un(3, i(138183)),	-- Fel-Infused Boots
+						}),
+						gsh(159, {	-- Felshroud Armor
+							un(3, i(138167)),	-- Felshroud Hood
+							un(3, i(138168)),	-- Felshroud Shoulders
+							un(3, i(138192)),	-- Felshroud Vest
+							un(3, i(138163)),	-- Felshroud Bindings
+							un(3, i(138166)),	-- Felshroud Gloves
+							un(3, i(138169)),	-- Felshroud Belt
+							un(3, i(138165)),	-- Felshroud Pants
+							un(3, i(138164)),	-- Felshroud Boots
+						}),
+						gsh(158, {	-- Fel-Chain Armor
+							un(3, i(138176)),	-- Fel-Chain Helm
+							un(3, i(138178)),	-- Fel-Chain Spaulders
+							un(3, i(138179)),	-- Fel-Chain Hauberk
+							un(3, i(138173)),	-- Fel-Chain Bracers
+							un(3, i(138174)),	-- Fel-Chain Grips
+							un(3, i(138172)),	-- Fel-Chain Cinch
+							un(3, i(138177)),	-- Fel-Chain Leggings
+							un(3, i(138175)),	-- Fel-Chain Boots
+						}),
+						gsh(157, {	-- Felforged Armor
+							un(3, i(138155)),	-- Felforged Helmet
+							un(3, i(138157)),	-- Felforged Pauldrons
+							un(3, i(138152)),	-- Felforged Chestplate
+							un(3, i(138159)),	-- Felforged Vambracers
+							un(3, i(138153)),	-- Felforged Gauntlets
+							un(3, i(138154)),	-- Felforged Waistplate
+							un(3, i(138156)),	-- Felforged Legplates
+							un(3, i(138158)),	-- Felforged Warboots
+						}),
+					}),	
+					i(139049, {	-- Large Legion Chest
+						un(3, i(141597)),	-- Corrupted Argus Gavel
+						un(3, i(141609)),	-- Corrupted Argus Gavel
+						un(3, i(141595)),	-- Eredar Battle Blade
+						un(3, i(141602)),	-- Eredar Splitter
+						un(3, i(141599)),	-- Fel Barbed Spear
+						un(3, i(141611)),	-- Fel Barbed Spear (dropped below a certain level)
+						un(3, i(141594)),	-- Fel Hacker
+						un(3, i(141603)),	-- Fel Lord's Warmace
+						un(3, i(141604)),	-- Glaive of the Fallen
+						un(3, i(141601)),	-- Hellfury Longbow
+						un(3, i(141616)),	-- Inquisitor's Wand
+						un(3, i(141617)),	-- Inquisitor's Wand (dropped below a certain level)
+						un(3, i(141600)),	-- Wyrmtongue Spiteblade
+						gsh(160, {	-- Fel-Infused Armor
+							un(3, i(138184)),	-- Fel-Infused Helm
+							un(3, i(138186)),	-- Fel-Infused Spaulders
+							un(3, i(138187)),	-- Fel-Infused Hauberk
+							un(3, i(138181)),	-- Fel-Infused Bracers
+							un(3, i(138182)),	-- Fel-Infused Grips
+							un(3, i(138180)),	-- Fel-Infused Cinch
+							un(3, i(138185)),	-- Fel-Infused Leggings
+							un(3, i(138183)),	-- Fel-Infused Boots
+						}),
+						gsh(159, {	-- Felshroud Armor
+							un(3, i(138167)),	-- Felshroud Hood
+							un(3, i(138168)),	-- Felshroud Shoulders
+							un(3, i(138192)),	-- Felshroud Vest
+							un(3, i(138163)),	-- Felshroud Bindings
+							un(3, i(138166)),	-- Felshroud Gloves
+							un(3, i(138169)),	-- Felshroud Belt
+							un(3, i(138165)),	-- Felshroud Pants
+							un(3, i(138164)),	-- Felshroud Boots
+						}),
+						gsh(158, {	-- Fel-Chain Armor
+							un(3, i(138176)),	-- Fel-Chain Helm
+							un(3, i(138178)),	-- Fel-Chain Spaulders
+							un(3, i(138179)),	-- Fel-Chain Hauberk
+							un(3, i(138173)),	-- Fel-Chain Bracers
+							un(3, i(138174)),	-- Fel-Chain Grips
+							un(3, i(138172)),	-- Fel-Chain Cinch
+							un(3, i(138177)),	-- Fel-Chain Leggings
+							un(3, i(138175)),	-- Fel-Chain Boots
+						}),
+						gsh(157, {	-- Felforged Armor
+							un(3, i(138155)),	-- Felforged Helmet
+							un(3, i(138157)),	-- Felforged Pauldrons
+							un(3, i(138152)),	-- Felforged Chestplate
+							un(3, i(138159)),	-- Felforged Vambracers
+							un(3, i(138153)),	-- Felforged Gauntlets
+							un(3, i(138154)),	-- Felforged Waistplate
+							un(3, i(138156)),	-- Felforged Legplates
+							un(3, i(138158)),	-- Felforged Warboots
+						}),
+					}),	
 					n(-220, {	-- Class Changes
 						["groups"] = "A number of class specializations were modified just before Legion launch and Blizzard mailed items to help players adjust to these changes. The item level and quality of the item was determined by your character's progress in HFC.",
 						["groups"] = {
@@ -136,670 +246,21 @@ _.WorldEvents =
 							["sourceQuests"] = { 44500 },	-- Author! Author!
 						}),								
 						q(43301, {	-- Invasion: Azshara
-							["groups"] = {
-								i(139048, {	-- Small Legion Chest
-									un(3, i(141597)),	-- Corrupted Argus Gavel
-									un(3, i(141609)),	-- Corrupted Argus Gavel
-									un(3, i(141595)),	-- Eredar Battle Blade
-									un(3, i(141602)),	-- Eredar Splitter
-									un(3, i(141607)),	-- Eredar Battle Blade
-									un(3, i(141599)),	-- Fel Barbed Spear
-									un(3, i(141594)),	-- Fel Hacker
-									un(3, i(141603)),	-- Fel Lord's Warmace
-									un(3, i(141604)),	-- Glaive of the Fallen
-									un(3, i(141601)),	-- Hellfury Longbow
-									un(3, i(141616)),	-- Inquisitor's Wand
-									un(3, i(141600)),	-- Wyrmtongue Spiteblade
-									gsh(160, {	-- Fel-Infused Armor
-										un(3, i(138184)),	-- Fel-Infused Helm
-										un(3, i(138186)),	-- Fel-Infused Spaulders
-										un(3, i(138187)),	-- Fel-Infused Hauberk
-										un(3, i(138181)),	-- Fel-Infused Bracers
-										un(3, i(138182)),	-- Fel-Infused Grips
-										un(3, i(138180)),	-- Fel-Infused Cinch
-										un(3, i(138185)),	-- Fel-Infused Leggings
-										un(3, i(138183)),	-- Fel-Infused Boots
-									}),
-									gsh(159, {	-- Felshroud Armor
-										un(3, i(138167)),	-- Felshroud Hood
-										un(3, i(138168)),	-- Felshroud Shoulders
-										un(3, i(138192)),	-- Felshroud Vest
-										un(3, i(138163)),	-- Felshroud Bindings
-										un(3, i(138166)),	-- Felshroud Gloves
-										un(3, i(138169)),	-- Felshroud Belt
-										un(3, i(138165)),	-- Felshroud Pants
-										un(3, i(138164)),	-- Felshroud Boots
-									}),
-									gsh(158, {	-- Fel-Chain Armor
-										un(3, i(138176)),	-- Fel-Chain Helm
-										un(3, i(138178)),	-- Fel-Chain Spaulders
-										un(3, i(138179)),	-- Fel-Chain Hauberk
-										un(3, i(138173)),	-- Fel-Chain Bracers
-										un(3, i(138174)),	-- Fel-Chain Grips
-										un(3, i(138172)),	-- Fel-Chain Cinch
-										un(3, i(138177)),	-- Fel-Chain Leggings
-										un(3, i(138175)),	-- Fel-Chain Boots
-									}),
-									gsh(157, {	-- Felforged Armor
-										un(3, i(138155)),	-- Felforged Helmet
-										un(3, i(138157)),	-- Felforged Pauldrons
-										un(3, i(138152)),	-- Felforged Chestplate
-										un(3, i(138159)),	-- Felforged Vambracers
-										un(3, i(138153)),	-- Felforged Gauntlets
-										un(3, i(138154)),	-- Felforged Waistplate
-										un(3, i(138156)),	-- Felforged Legplates
-										un(3, i(138158)),	-- Felforged Warboots
-									}),
-								}),	
-								i(139049, {	-- Large Legion Chest
-									un(3, i(141597)),	-- Corrupted Argus Gavel
-									un(3, i(141609)),	-- Corrupted Argus Gavel
-									un(3, i(141595)),	-- Eredar Battle Blade
-									un(3, i(141602)),	-- Eredar Splitter
-									un(3, i(141599)),	-- Fel Barbed Spear
-									un(3, i(141594)),	-- Fel Hacker
-									un(3, i(141603)),	-- Fel Lord's Warmace
-									un(3, i(141604)),	-- Glaive of the Fallen
-									un(3, i(141601)),	-- Hellfury Longbow
-									un(3, i(141616)),	-- Inquisitor's Wand
-									un(3, i(141600)),	-- Wyrmtongue Spiteblade
-									gsh(160, {	-- Fel-Infused Armor
-										un(3, i(138184)),	-- Fel-Infused Helm
-										un(3, i(138186)),	-- Fel-Infused Spaulders
-										un(3, i(138187)),	-- Fel-Infused Hauberk
-										un(3, i(138181)),	-- Fel-Infused Bracers
-										un(3, i(138182)),	-- Fel-Infused Grips
-										un(3, i(138180)),	-- Fel-Infused Cinch
-										un(3, i(138185)),	-- Fel-Infused Leggings
-										un(3, i(138183)),	-- Fel-Infused Boots
-									}),
-									gsh(159, {	-- Felshroud Armor
-										un(3, i(138167)),	-- Felshroud Hood
-										un(3, i(138168)),	-- Felshroud Shoulders
-										un(3, i(138192)),	-- Felshroud Vest
-										un(3, i(138163)),	-- Felshroud Bindings
-										un(3, i(138166)),	-- Felshroud Gloves
-										un(3, i(138169)),	-- Felshroud Belt
-										un(3, i(138165)),	-- Felshroud Pants
-										un(3, i(138164)),	-- Felshroud Boots
-									}),
-									gsh(158, {	-- Fel-Chain Armor
-										un(3, i(138176)),	-- Fel-Chain Helm
-										un(3, i(138178)),	-- Fel-Chain Spaulders
-										un(3, i(138179)),	-- Fel-Chain Hauberk
-										un(3, i(138173)),	-- Fel-Chain Bracers
-										un(3, i(138174)),	-- Fel-Chain Grips
-										un(3, i(138172)),	-- Fel-Chain Cinch
-										un(3, i(138177)),	-- Fel-Chain Leggings
-										un(3, i(138175)),	-- Fel-Chain Boots
-									}),
-									gsh(157, {	-- Felforged Armor
-										un(3, i(138155)),	-- Felforged Helmet
-										un(3, i(138157)),	-- Felforged Pauldrons
-										un(3, i(138152)),	-- Felforged Chestplate
-										un(3, i(138159)),	-- Felforged Vambracers
-										un(3, i(138153)),	-- Felforged Gauntlets
-										un(3, i(138154)),	-- Felforged Waistplate
-										un(3, i(138156)),	-- Felforged Legplates
-										un(3, i(138158)),	-- Felforged Warboots
-									}),
-								}),	
-							},
 							["u"] = 40,
 						}),
 						q(43284, {	-- Invasion: Dun Morogh
-							["groups"] = {
-								i(139048, {	-- Small Legion Chest
-									un(3, i(141597)),	-- Corrupted Argus Gavel
-									un(3, i(141609)),	-- Corrupted Argus Gavel
-									un(3, i(141595)),	-- Eredar Battle Blade
-									un(3, i(141602)),	-- Eredar Splitter
-									un(3, i(141599)),	-- Fel Barbed Spear
-									un(3, i(141594)),	-- Fel Hacker
-									un(3, i(141603)),	-- Fel Lord's Warmace
-									un(3, i(141604)),	-- Glaive of the Fallen
-									un(3, i(141601)),	-- Hellfury Longbow
-									un(3, i(141616)),	-- Inquisitor's Wand
-									un(3, i(141600)),	-- Wyrmtongue Spiteblade
-									gsh(160, {	-- Fel-Infused Armor
-										un(3, i(138184)),	-- Fel-Infused Helm
-										un(3, i(138186)),	-- Fel-Infused Spaulders
-										un(3, i(138187)),	-- Fel-Infused Hauberk
-										un(3, i(138181)),	-- Fel-Infused Bracers
-										un(3, i(138182)),	-- Fel-Infused Grips
-										un(3, i(138180)),	-- Fel-Infused Cinch
-										un(3, i(138185)),	-- Fel-Infused Leggings
-										un(3, i(138183)),	-- Fel-Infused Boots
-									}),
-									gsh(159, {	-- Felshroud Armor
-										un(3, i(138167)),	-- Felshroud Hood
-										un(3, i(138168)),	-- Felshroud Shoulders
-										un(3, i(138192)),	-- Felshroud Vest
-										un(3, i(138163)),	-- Felshroud Bindings
-										un(3, i(138166)),	-- Felshroud Gloves
-										un(3, i(138169)),	-- Felshroud Belt
-										un(3, i(138165)),	-- Felshroud Pants
-										un(3, i(138164)),	-- Felshroud Boots
-									}),
-									gsh(158, {	-- Fel-Chain Armor
-										un(3, i(138176)),	-- Fel-Chain Helm
-										un(3, i(138178)),	-- Fel-Chain Spaulders
-										un(3, i(138179)),	-- Fel-Chain Hauberk
-										un(3, i(138173)),	-- Fel-Chain Bracers
-										un(3, i(138174)),	-- Fel-Chain Grips
-										un(3, i(138172)),	-- Fel-Chain Cinch
-										un(3, i(138177)),	-- Fel-Chain Leggings
-										un(3, i(138175)),	-- Fel-Chain Boots
-									}),
-									gsh(157, {	-- Felforged Armor
-										un(3, i(138155)),	-- Felforged Helmet
-										un(3, i(138157)),	-- Felforged Pauldrons
-										un(3, i(138152)),	-- Felforged Chestplate
-										un(3, i(138159)),	-- Felforged Vambracers
-										un(3, i(138153)),	-- Felforged Gauntlets
-										un(3, i(138154)),	-- Felforged Waistplate
-										un(3, i(138156)),	-- Felforged Legplates
-										un(3, i(138158)),	-- Felforged Warboots
-									}),
-								}),	
-								i(139049, {	-- Large Legion Chest
-									un(3, i(141597)),	-- Corrupted Argus Gavel
-									un(3, i(141609)),	-- Corrupted Argus Gavel
-									un(3, i(141595)),	-- Eredar Battle Blade
-									un(3, i(141602)),	-- Eredar Splitter
-									un(3, i(141599)),	-- Fel Barbed Spear
-									un(3, i(141594)),	-- Fel Hacker
-									un(3, i(141603)),	-- Fel Lord's Warmace
-									un(3, i(141604)),	-- Glaive of the Fallen
-									un(3, i(141601)),	-- Hellfury Longbow
-									un(3, i(141616)),	-- Inquisitor's Wand
-									un(3, i(141600)),	-- Wyrmtongue Spiteblade
-									gsh(160, {	-- Fel-Infused Armor
-										un(3, i(138184)),	-- Fel-Infused Helm
-										un(3, i(138186)),	-- Fel-Infused Spaulders
-										un(3, i(138187)),	-- Fel-Infused Hauberk
-										un(3, i(138181)),	-- Fel-Infused Bracers
-										un(3, i(138182)),	-- Fel-Infused Grips
-										un(3, i(138180)),	-- Fel-Infused Cinch
-										un(3, i(138185)),	-- Fel-Infused Leggings
-										un(3, i(138183)),	-- Fel-Infused Boots
-									}),
-									gsh(159, {	-- Felshroud Armor
-										un(3, i(138167)),	-- Felshroud Hood
-										un(3, i(138168)),	-- Felshroud Shoulders
-										un(3, i(138192)),	-- Felshroud Vest
-										un(3, i(138163)),	-- Felshroud Bindings
-										un(3, i(138166)),	-- Felshroud Gloves
-										un(3, i(138169)),	-- Felshroud Belt
-										un(3, i(138165)),	-- Felshroud Pants
-										un(3, i(138164)),	-- Felshroud Boots
-									}),
-									gsh(158, {	-- Fel-Chain Armor
-										un(3, i(138176)),	-- Fel-Chain Helm
-										un(3, i(138178)),	-- Fel-Chain Spaulders
-										un(3, i(138179)),	-- Fel-Chain Hauberk
-										un(3, i(138173)),	-- Fel-Chain Bracers
-										un(3, i(138174)),	-- Fel-Chain Grips
-										un(3, i(138172)),	-- Fel-Chain Cinch
-										un(3, i(138177)),	-- Fel-Chain Leggings
-										un(3, i(138175)),	-- Fel-Chain Boots
-									}),
-									gsh(157, {	-- Felforged Armor
-										un(3, i(138155)),	-- Felforged Helmet
-										un(3, i(138157)),	-- Felforged Pauldrons
-										un(3, i(138152)),	-- Felforged Chestplate
-										un(3, i(138159)),	-- Felforged Vambracers
-										un(3, i(138153)),	-- Felforged Gauntlets
-										un(3, i(138154)),	-- Felforged Waistplate
-										un(3, i(138156)),	-- Felforged Legplates
-										un(3, i(138158)),	-- Felforged Warboots
-									}),
-								}),	
-							},
 							["u"] = 40,
 						}),
 						q(43285, {	-- Invasion: Hillsbrad Foothills
-							["groups"] = {
-								i(139048, {	-- Small Legion Chest
-									un(3, i(141597)),	-- Corrupted Argus Gavel
-									un(3, i(141609)),	-- Corrupted Argus Gavel
-									un(3, i(141595)),	-- Eredar Battle Blade
-									un(3, i(141602)),	-- Eredar Splitter
-									un(3, i(141599)),	-- Fel Barbed Spear
-									un(3, i(141594)),	-- Fel Hacker
-									un(3, i(141603)),	-- Fel Lord's Warmace
-									un(3, i(141604)),	-- Glaive of the Fallen
-									un(3, i(141601)),	-- Hellfury Longbow
-									un(3, i(141616)),	-- Inquisitor's Wand
-									un(3, i(141600)),	-- Wyrmtongue Spiteblade
-									gsh(160, {	-- Fel-Infused Armor
-										un(3, i(138184)),	-- Fel-Infused Helm
-										un(3, i(138186)),	-- Fel-Infused Spaulders
-										un(3, i(138187)),	-- Fel-Infused Hauberk
-										un(3, i(138181)),	-- Fel-Infused Bracers
-										un(3, i(138182)),	-- Fel-Infused Grips
-										un(3, i(138180)),	-- Fel-Infused Cinch
-										un(3, i(138185)),	-- Fel-Infused Leggings
-										un(3, i(138183)),	-- Fel-Infused Boots
-									}),
-									gsh(159, {	-- Felshroud Armor
-										un(3, i(138167)),	-- Felshroud Hood
-										un(3, i(138168)),	-- Felshroud Shoulders
-										un(3, i(138192)),	-- Felshroud Vest
-										un(3, i(138163)),	-- Felshroud Bindings
-										un(3, i(138166)),	-- Felshroud Gloves
-										un(3, i(138169)),	-- Felshroud Belt
-										un(3, i(138165)),	-- Felshroud Pants
-										un(3, i(138164)),	-- Felshroud Boots
-									}),
-									gsh(158, {	-- Fel-Chain Armor
-										un(3, i(138176)),	-- Fel-Chain Helm
-										un(3, i(138178)),	-- Fel-Chain Spaulders
-										un(3, i(138179)),	-- Fel-Chain Hauberk
-										un(3, i(138173)),	-- Fel-Chain Bracers
-										un(3, i(138174)),	-- Fel-Chain Grips
-										un(3, i(138172)),	-- Fel-Chain Cinch
-										un(3, i(138177)),	-- Fel-Chain Leggings
-										un(3, i(138175)),	-- Fel-Chain Boots
-									}),
-									gsh(157, {	-- Felforged Armor
-										un(3, i(138155)),	-- Felforged Helmet
-										un(3, i(138157)),	-- Felforged Pauldrons
-										un(3, i(138152)),	-- Felforged Chestplate
-										un(3, i(138159)),	-- Felforged Vambracers
-										un(3, i(138153)),	-- Felforged Gauntlets
-										un(3, i(138154)),	-- Felforged Waistplate
-										un(3, i(138156)),	-- Felforged Legplates
-										un(3, i(138158)),	-- Felforged Warboots
-									}),
-								}),	
-								i(139049, {	-- Large Legion Chest
-									un(3, i(141597)),	-- Corrupted Argus Gavel
-									un(3, i(141609)),	-- Corrupted Argus Gavel
-									un(3, i(141595)),	-- Eredar Battle Blade
-									un(3, i(141602)),	-- Eredar Splitter
-									un(3, i(141599)),	-- Fel Barbed Spear
-									un(3, i(141594)),	-- Fel Hacker
-									un(3, i(141603)),	-- Fel Lord's Warmace
-									un(3, i(141604)),	-- Glaive of the Fallen
-									un(3, i(141601)),	-- Hellfury Longbow
-									un(3, i(141616)),	-- Inquisitor's Wand
-									un(3, i(141600)),	-- Wyrmtongue Spiteblade
-									gsh(160, {	-- Fel-Infused Armor
-										un(3, i(138184)),	-- Fel-Infused Helm
-										un(3, i(138186)),	-- Fel-Infused Spaulders
-										un(3, i(138187)),	-- Fel-Infused Hauberk
-										un(3, i(138181)),	-- Fel-Infused Bracers
-										un(3, i(138182)),	-- Fel-Infused Grips
-										un(3, i(138180)),	-- Fel-Infused Cinch
-										un(3, i(138185)),	-- Fel-Infused Leggings
-										un(3, i(138183)),	-- Fel-Infused Boots
-									}),
-									gsh(159, {	-- Felshroud Armor
-										un(3, i(138167)),	-- Felshroud Hood
-										un(3, i(138168)),	-- Felshroud Shoulders
-										un(3, i(138192)),	-- Felshroud Vest
-										un(3, i(138163)),	-- Felshroud Bindings
-										un(3, i(138166)),	-- Felshroud Gloves
-										un(3, i(138169)),	-- Felshroud Belt
-										un(3, i(138165)),	-- Felshroud Pants
-										un(3, i(138164)),	-- Felshroud Boots
-									}),
-									gsh(158, {	-- Fel-Chain Armor
-										un(3, i(138176)),	-- Fel-Chain Helm
-										un(3, i(138178)),	-- Fel-Chain Spaulders
-										un(3, i(138179)),	-- Fel-Chain Hauberk
-										un(3, i(138173)),	-- Fel-Chain Bracers
-										un(3, i(138174)),	-- Fel-Chain Grips
-										un(3, i(138172)),	-- Fel-Chain Cinch
-										un(3, i(138177)),	-- Fel-Chain Leggings
-										un(3, i(138175)),	-- Fel-Chain Boots
-									}),
-									gsh(157, {	-- Felforged Armor
-										un(3, i(138155)),	-- Felforged Helmet
-										un(3, i(138157)),	-- Felforged Pauldrons
-										un(3, i(138152)),	-- Felforged Chestplate
-										un(3, i(138159)),	-- Felforged Vambracers
-										un(3, i(138153)),	-- Felforged Gauntlets
-										un(3, i(138154)),	-- Felforged Waistplate
-										un(3, i(138156)),	-- Felforged Legplates
-										un(3, i(138158)),	-- Felforged Warboots
-									}),
-								}),	
-							},
 							["u"] = 40,
 						}),
 						q(43282, {	-- Invasion: Northern Barrens
-							["groups"] = {
-								i(139048, {	-- Small Legion Chest
-									un(3, i(141597)),	-- Corrupted Argus Gavel
-									un(3, i(141609)),	-- Corrupted Argus Gavel
-									un(3, i(141595)),	-- Eredar Battle Blade
-									un(3, i(141602)),	-- Eredar Splitter
-									un(3, i(141599)),	-- Fel Barbed Spear
-									un(3, i(141594)),	-- Fel Hacker
-									un(3, i(141603)),	-- Fel Lord's Warmace
-									un(3, i(141604)),	-- Glaive of the Fallen
-									un(3, i(141601)),	-- Hellfury Longbow
-									un(3, i(141616)),	-- Inquisitor's Wand
-									un(3, i(141600)),	-- Wyrmtongue Spiteblade
-									gsh(160, {	-- Fel-Infused Armor
-										un(3, i(138184)),	-- Fel-Infused Helm
-										un(3, i(138186)),	-- Fel-Infused Spaulders
-										un(3, i(138187)),	-- Fel-Infused Hauberk
-										un(3, i(138181)),	-- Fel-Infused Bracers
-										un(3, i(138182)),	-- Fel-Infused Grips
-										un(3, i(138180)),	-- Fel-Infused Cinch
-										un(3, i(138185)),	-- Fel-Infused Leggings
-										un(3, i(138183)),	-- Fel-Infused Boots
-									}),
-									gsh(159, {	-- Felshroud Armor
-										un(3, i(138167)),	-- Felshroud Hood
-										un(3, i(138168)),	-- Felshroud Shoulders
-										un(3, i(138192)),	-- Felshroud Vest
-										un(3, i(138163)),	-- Felshroud Bindings
-										un(3, i(138166)),	-- Felshroud Gloves
-										un(3, i(138169)),	-- Felshroud Belt
-										un(3, i(138165)),	-- Felshroud Pants
-										un(3, i(138164)),	-- Felshroud Boots
-									}),
-									gsh(158, {	-- Fel-Chain Armor
-										un(3, i(138176)),	-- Fel-Chain Helm
-										un(3, i(138178)),	-- Fel-Chain Spaulders
-										un(3, i(138179)),	-- Fel-Chain Hauberk
-										un(3, i(138173)),	-- Fel-Chain Bracers
-										un(3, i(138174)),	-- Fel-Chain Grips
-										un(3, i(138172)),	-- Fel-Chain Cinch
-										un(3, i(138177)),	-- Fel-Chain Leggings
-										un(3, i(138175)),	-- Fel-Chain Boots
-									}),
-									gsh(157, {	-- Felforged Armor
-										un(3, i(138155)),	-- Felforged Helmet
-										un(3, i(138157)),	-- Felforged Pauldrons
-										un(3, i(138152)),	-- Felforged Chestplate
-										un(3, i(138159)),	-- Felforged Vambracers
-										un(3, i(138153)),	-- Felforged Gauntlets
-										un(3, i(138154)),	-- Felforged Waistplate
-										un(3, i(138156)),	-- Felforged Legplates
-										un(3, i(138158)),	-- Felforged Warboots
-									}),
-								}),	
-								i(139049, {	-- Large Legion Chest
-									un(3, i(141597)),	-- Corrupted Argus Gavel
-									un(3, i(141609)),	-- Corrupted Argus Gavel
-									un(3, i(141595)),	-- Eredar Battle Blade
-									un(3, i(141602)),	-- Eredar Splitter
-									un(3, i(141599)),	-- Fel Barbed Spear
-									un(3, i(141594)),	-- Fel Hacker
-									un(3, i(141603)),	-- Fel Lord's Warmace
-									un(3, i(141604)),	-- Glaive of the Fallen
-									un(3, i(141601)),	-- Hellfury Longbow
-									un(3, i(141616)),	-- Inquisitor's Wand
-									un(3, i(141600)),	-- Wyrmtongue Spiteblade
-									gsh(160, {	-- Fel-Infused Armor
-										un(3, i(138184)),	-- Fel-Infused Helm
-										un(3, i(138186)),	-- Fel-Infused Spaulders
-										un(3, i(138187)),	-- Fel-Infused Hauberk
-										un(3, i(138181)),	-- Fel-Infused Bracers
-										un(3, i(138182)),	-- Fel-Infused Grips
-										un(3, i(138180)),	-- Fel-Infused Cinch
-										un(3, i(138185)),	-- Fel-Infused Leggings
-										un(3, i(138183)),	-- Fel-Infused Boots
-									}),
-									gsh(159, {	-- Felshroud Armor
-										un(3, i(138167)),	-- Felshroud Hood
-										un(3, i(138168)),	-- Felshroud Shoulders
-										un(3, i(138192)),	-- Felshroud Vest
-										un(3, i(138163)),	-- Felshroud Bindings
-										un(3, i(138166)),	-- Felshroud Gloves
-										un(3, i(138169)),	-- Felshroud Belt
-										un(3, i(138165)),	-- Felshroud Pants
-										un(3, i(138164)),	-- Felshroud Boots
-									}),
-									gsh(158, {	-- Fel-Chain Armor
-										un(3, i(138176)),	-- Fel-Chain Helm
-										un(3, i(138178)),	-- Fel-Chain Spaulders
-										un(3, i(138179)),	-- Fel-Chain Hauberk
-										un(3, i(138173)),	-- Fel-Chain Bracers
-										un(3, i(138174)),	-- Fel-Chain Grips
-										un(3, i(138172)),	-- Fel-Chain Cinch
-										un(3, i(138177)),	-- Fel-Chain Leggings
-										un(3, i(138175)),	-- Fel-Chain Boots
-									}),
-									gsh(157, {	-- Felforged Armor
-										un(3, i(138155)),	-- Felforged Helmet
-										un(3, i(138157)),	-- Felforged Pauldrons
-										un(3, i(138152)),	-- Felforged Chestplate
-										un(3, i(138159)),	-- Felforged Vambracers
-										un(3, i(138153)),	-- Felforged Gauntlets
-										un(3, i(138154)),	-- Felforged Waistplate
-										un(3, i(138156)),	-- Felforged Legplates
-										un(3, i(138158)),	-- Felforged Warboots
-									}),
-								}),	
-							},
 							["u"] = 40,
 						}),
 						q(43244, {	-- Invasion: Tanaris
-							["groups"] = {
-								i(139048, {	-- Small Legion Chest
-									un(3, i(141597)),	-- Corrupted Argus Gavel
-									un(3, i(141609)),	-- Corrupted Argus Gavel
-									un(3, i(141595)),	-- Eredar Battle Blade
-									un(3, i(141602)),	-- Eredar Splitter
-									un(3, i(141599)),	-- Fel Barbed Spear
-									un(3, i(141594)),	-- Fel Hacker
-									un(3, i(141603)),	-- Fel Lord's Warmace
-									un(3, i(141604)),	-- Glaive of the Fallen
-									un(3, i(141601)),	-- Hellfury Longbow
-									un(3, i(141616)),	-- Inquisitor's Wand
-									un(3, i(141600)),	-- Wyrmtongue Spiteblade
-									gsh(160, {	-- Fel-Infused Armor
-										un(3, i(138184)),	-- Fel-Infused Helm
-										un(3, i(138186)),	-- Fel-Infused Spaulders
-										un(3, i(138187)),	-- Fel-Infused Hauberk
-										un(3, i(138181)),	-- Fel-Infused Bracers
-										un(3, i(138182)),	-- Fel-Infused Grips
-										un(3, i(138180)),	-- Fel-Infused Cinch
-										un(3, i(138185)),	-- Fel-Infused Leggings
-										un(3, i(138183)),	-- Fel-Infused Boots
-									}),
-									gsh(159, {	-- Felshroud Armor
-										un(3, i(138167)),	-- Felshroud Hood
-										un(3, i(138168)),	-- Felshroud Shoulders
-										un(3, i(138192)),	-- Felshroud Vest
-										un(3, i(138163)),	-- Felshroud Bindings
-										un(3, i(138166)),	-- Felshroud Gloves
-										un(3, i(138169)),	-- Felshroud Belt
-										un(3, i(138165)),	-- Felshroud Pants
-										un(3, i(138164)),	-- Felshroud Boots
-									}),
-									gsh(158, {	-- Fel-Chain Armor
-										un(3, i(138176)),	-- Fel-Chain Helm
-										un(3, i(138178)),	-- Fel-Chain Spaulders
-										un(3, i(138179)),	-- Fel-Chain Hauberk
-										un(3, i(138173)),	-- Fel-Chain Bracers
-										un(3, i(138174)),	-- Fel-Chain Grips
-										un(3, i(138172)),	-- Fel-Chain Cinch
-										un(3, i(138177)),	-- Fel-Chain Leggings
-										un(3, i(138175)),	-- Fel-Chain Boots
-									}),
-									gsh(157, {	-- Felforged Armor
-										un(3, i(138155)),	-- Felforged Helmet
-										un(3, i(138157)),	-- Felforged Pauldrons
-										un(3, i(138152)),	-- Felforged Chestplate
-										un(3, i(138159)),	-- Felforged Vambracers
-										un(3, i(138153)),	-- Felforged Gauntlets
-										un(3, i(138154)),	-- Felforged Waistplate
-										un(3, i(138156)),	-- Felforged Legplates
-										un(3, i(138158)),	-- Felforged Warboots
-									}),
-								}),	
-								i(139049, {	-- Large Legion Chest
-									un(3, i(141597)),	-- Corrupted Argus Gavel
-									un(3, i(141609)),	-- Corrupted Argus Gavel
-									un(3, i(141595)),	-- Eredar Battle Blade
-									un(3, i(141602)),	-- Eredar Splitter
-									un(3, i(141599)),	-- Fel Barbed Spear
-									un(3, i(141594)),	-- Fel Hacker
-									un(3, i(141603)),	-- Fel Lord's Warmace
-									un(3, i(141604)),	-- Glaive of the Fallen
-									un(3, i(141601)),	-- Hellfury Longbow
-									un(3, i(141616)),	-- Inquisitor's Wand
-									un(3, i(141600)),	-- Wyrmtongue Spiteblade
-									gsh(160, {	-- Fel-Infused Armor
-										un(3, i(138184)),	-- Fel-Infused Helm
-										un(3, i(138186)),	-- Fel-Infused Spaulders
-										un(3, i(138187)),	-- Fel-Infused Hauberk
-										un(3, i(138181)),	-- Fel-Infused Bracers
-										un(3, i(138182)),	-- Fel-Infused Grips
-										un(3, i(138180)),	-- Fel-Infused Cinch
-										un(3, i(138185)),	-- Fel-Infused Leggings
-										un(3, i(138183)),	-- Fel-Infused Boots
-									}),
-									gsh(159, {	-- Felshroud Armor
-										un(3, i(138167)),	-- Felshroud Hood
-										un(3, i(138168)),	-- Felshroud Shoulders
-										un(3, i(138192)),	-- Felshroud Vest
-										un(3, i(138163)),	-- Felshroud Bindings
-										un(3, i(138166)),	-- Felshroud Gloves
-										un(3, i(138169)),	-- Felshroud Belt
-										un(3, i(138165)),	-- Felshroud Pants
-										un(3, i(138164)),	-- Felshroud Boots
-									}),
-									gsh(158, {	-- Fel-Chain Armor
-										un(3, i(138176)),	-- Fel-Chain Helm
-										un(3, i(138178)),	-- Fel-Chain Spaulders
-										un(3, i(138179)),	-- Fel-Chain Hauberk
-										un(3, i(138173)),	-- Fel-Chain Bracers
-										un(3, i(138174)),	-- Fel-Chain Grips
-										un(3, i(138172)),	-- Fel-Chain Cinch
-										un(3, i(138177)),	-- Fel-Chain Leggings
-										un(3, i(138175)),	-- Fel-Chain Boots
-									}),
-									gsh(157, {	-- Felforged Armor
-										un(3, i(138155)),	-- Felforged Helmet
-										un(3, i(138157)),	-- Felforged Pauldrons
-										un(3, i(138152)),	-- Felforged Chestplate
-										un(3, i(138159)),	-- Felforged Vambracers
-										un(3, i(138153)),	-- Felforged Gauntlets
-										un(3, i(138154)),	-- Felforged Waistplate
-										un(3, i(138156)),	-- Felforged Legplates
-										un(3, i(138158)),	-- Felforged Warboots
-									}),
-								}),	
-							},
 							["u"] = 40,
 						}),
 						q(43245, {	-- Invasion: Westfall
-							["groups"] = {
-								i(139048, {	-- Small Legion Chest
-									un(3, i(141597)),	-- Corrupted Argus Gavel
-									un(3, i(141609)),	-- Corrupted Argus Gavel
-									un(3, i(141595)),	-- Eredar Battle Blade
-									un(3, i(141602)),	-- Eredar Splitter
-									un(3, i(141599)),	-- Fel Barbed Spear
-									un(3, i(141594)),	-- Fel Hacker
-									un(3, i(141603)),	-- Fel Lord's Warmace
-									un(3, i(141604)),	-- Glaive of the Fallen
-									un(3, i(141601)),	-- Hellfury Longbow
-									un(3, i(141616)),	-- Inquisitor's Wand
-									un(3, i(141600)),	-- Wyrmtongue Spiteblade
-									gsh(160, {	-- Fel-Infused Armor
-										un(3, i(138184)),	-- Fel-Infused Helm
-										un(3, i(138186)),	-- Fel-Infused Spaulders
-										un(3, i(138187)),	-- Fel-Infused Hauberk
-										un(3, i(138181)),	-- Fel-Infused Bracers
-										un(3, i(138182)),	-- Fel-Infused Grips
-										un(3, i(138180)),	-- Fel-Infused Cinch
-										un(3, i(138185)),	-- Fel-Infused Leggings
-										un(3, i(138183)),	-- Fel-Infused Boots
-									}),
-									gsh(159, {	-- Felshroud Armor
-										un(3, i(138167)),	-- Felshroud Hood
-										un(3, i(138168)),	-- Felshroud Shoulders
-										un(3, i(138192)),	-- Felshroud Vest
-										un(3, i(138163)),	-- Felshroud Bindings
-										un(3, i(138166)),	-- Felshroud Gloves
-										un(3, i(138169)),	-- Felshroud Belt
-										un(3, i(138165)),	-- Felshroud Pants
-										un(3, i(138164)),	-- Felshroud Boots
-									}),
-									gsh(158, {	-- Fel-Chain Armor
-										un(3, i(138176)),	-- Fel-Chain Helm
-										un(3, i(138178)),	-- Fel-Chain Spaulders
-										un(3, i(138179)),	-- Fel-Chain Hauberk
-										un(3, i(138173)),	-- Fel-Chain Bracers
-										un(3, i(138174)),	-- Fel-Chain Grips
-										un(3, i(138172)),	-- Fel-Chain Cinch
-										un(3, i(138177)),	-- Fel-Chain Leggings
-										un(3, i(138175)),	-- Fel-Chain Boots
-									}),
-									gsh(157, {	-- Felforged Armor
-										un(3, i(138155)),	-- Felforged Helmet
-										un(3, i(138157)),	-- Felforged Pauldrons
-										un(3, i(138152)),	-- Felforged Chestplate
-										un(3, i(138159)),	-- Felforged Vambracers
-										un(3, i(138153)),	-- Felforged Gauntlets
-										un(3, i(138154)),	-- Felforged Waistplate
-										un(3, i(138156)),	-- Felforged Legplates
-										un(3, i(138158)),	-- Felforged Warboots
-									}),
-								}),	
-								i(139049, {	-- Large Legion Chest
-									un(3, i(141597)),	-- Corrupted Argus Gavel
-									un(3, i(141609)),	-- Corrupted Argus Gavel
-									un(3, i(141595)),	-- Eredar Battle Blade
-									un(3, i(141602)),	-- Eredar Splitter
-									un(3, i(141599)),	-- Fel Barbed Spear
-									un(3, i(141594)),	-- Fel Hacker
-									un(3, i(141603)),	-- Fel Lord's Warmace
-									un(3, i(141604)),	-- Glaive of the Fallen
-									un(3, i(141601)),	-- Hellfury Longbow
-									un(3, i(141616)),	-- Inquisitor's Wand
-									un(3, i(141600)),	-- Wyrmtongue Spiteblade
-									gsh(160, {	-- Fel-Infused Armor
-										un(3, i(138184)),	-- Fel-Infused Helm
-										un(3, i(138186)),	-- Fel-Infused Spaulders
-										un(3, i(138187)),	-- Fel-Infused Hauberk
-										un(3, i(138181)),	-- Fel-Infused Bracers
-										un(3, i(138182)),	-- Fel-Infused Grips
-										un(3, i(138180)),	-- Fel-Infused Cinch
-										un(3, i(138185)),	-- Fel-Infused Leggings
-										un(3, i(138183)),	-- Fel-Infused Boots
-									}),
-									gsh(159, {	-- Felshroud Armor
-										un(3, i(138167)),	-- Felshroud Hood
-										un(3, i(138168)),	-- Felshroud Shoulders
-										un(3, i(138192)),	-- Felshroud Vest
-										un(3, i(138163)),	-- Felshroud Bindings
-										un(3, i(138166)),	-- Felshroud Gloves
-										un(3, i(138169)),	-- Felshroud Belt
-										un(3, i(138165)),	-- Felshroud Pants
-										un(3, i(138164)),	-- Felshroud Boots
-									}),
-									gsh(158, {	-- Fel-Chain Armor
-										un(3, i(138176)),	-- Fel-Chain Helm
-										un(3, i(138178)),	-- Fel-Chain Spaulders
-										un(3, i(138179)),	-- Fel-Chain Hauberk
-										un(3, i(138173)),	-- Fel-Chain Bracers
-										un(3, i(138174)),	-- Fel-Chain Grips
-										un(3, i(138172)),	-- Fel-Chain Cinch
-										un(3, i(138177)),	-- Fel-Chain Leggings
-										un(3, i(138175)),	-- Fel-Chain Boots
-									}),
-									gsh(157, {	-- Felforged Armor
-										un(3, i(138155)),	-- Felforged Helmet
-										un(3, i(138157)),	-- Felforged Pauldrons
-										un(3, i(138152)),	-- Felforged Chestplate
-										un(3, i(138159)),	-- Felforged Vambracers
-										un(3, i(138153)),	-- Felforged Gauntlets
-										un(3, i(138154)),	-- Felforged Waistplate
-										un(3, i(138156)),	-- Felforged Legplates
-										un(3, i(138158)),	-- Felforged Warboots
-									}),
-								}),	
-							},
 							["u"] = 40,
 						}),
 						q(42970, {	-- The Diamond King
@@ -889,22 +350,6 @@ _.WorldEvents =
 							},
 							["description"] = "Players with some sort of Sense Demons ability could get this mob to spawn from Doomsayers.",
 						}),
-					}),
-					n(-3189, {	-- Fel Touched Weapons
-						["groups"] = {
-							un(3, i(141597)),	-- Corrupted Argus Gavel
-							un(3, i(141595)),	-- Eredar Battle Blade
-							un(3, i(141602)),	-- Eredar Splitter
-							un(3, i(141599)),	-- Fel Barbed Spear
-							un(3, i(141594)),	-- Fel Hacker
-							un(3, i(141603)),	-- Fel Lord's Warmace
-							un(3, i(141604)),	-- Glaive of the Fallen
-							un(3, i(141601)),	-- Hellfury Longbow
-							un(3, i(141616)),	-- Inquisitor's Wand
-							un(3, i(141600)),	-- Wyrmtongue Spiteblade
-						},
-						["description"] = "These were looted from Large Legion Chest and Small Legion Chest.",
-						["icon"] = "Interface\\Icons\\INV_Axe_1H_FelfireRaid_D_01",
 					}),
 				},
 				["icon"] = "Interface\\Icons\\inv_legionadventure",
