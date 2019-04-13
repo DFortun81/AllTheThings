@@ -23,7 +23,7 @@ _.Zones =
 						},
 						["g"] = {
 							{	-- Tabard of the Dark Iron
-								["itemID"] = 38027,		-- Tabard of the Dark Iron
+								["itemID"] = 161329,		-- Tabard of the Dark Iron
 							},
 							{	-- Letter from King Anduin Wrynn
 								["itemID"] = 157022,	-- Letter from King Anduin Wrynn
