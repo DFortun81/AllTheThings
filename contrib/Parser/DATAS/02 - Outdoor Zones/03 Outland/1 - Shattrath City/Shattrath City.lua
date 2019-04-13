@@ -957,6 +957,7 @@ _.Zones =
 						["groups"] = {
 							i(21892),	-- Pattern: Bolt of Imbued Netherweave
 							i(21893),	-- Pattern: Imbued Netherweave Bag
+							i(21894),	-- Pattern: Bolt of Soulcloth
 							i(21896), 	-- Pattern: Netherweave Robe
 							i(21897), 	-- Pattern: Netherweave Tunic
 						},
