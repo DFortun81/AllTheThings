@@ -52,6 +52,7 @@ _.NeverImplemented =
 		
 		-- Cant find any infos for those items anywhere (ID's indicate scrapped boost gear)
 		un(1, i(122069)),	-- Nurturer Spear
+		un(1, i(122074)),	-- Duskbreaker Warmaul
 	}),
 	n(-220, {	-- Class
 		cl(12, {	-- DH
@@ -147,6 +148,20 @@ _.NeverImplemented =
 			un(1, i(78017)),	-- Replica Magister's Leggings (Cloth)
 			un(1, i(4989)),		-- Mage Dragon Robe (intended to be quest reward, never made it to live?)
 			un(1, i(4990)),		-- Scorched Bands
+			un(1, i(109344)),	-- Unknown
+			un(1, i(109363)),	-- Unknown
+			un(1, i(109379)),	-- Unknown
+			un(1, i(109398)),	-- Unknown
+			un(1, i(109405)),	-- Unknown
+			un(1, i(109411)),	-- Unknown
+			un(1, i(109419)),	-- Unknown
+			un(1, i(109423)),	-- Unknown
+			un(1, i(109437)),	-- Unknown
+			un(1, i(109451)),	-- Unknown
+			un(1, i(109463)),	-- Unknown
+			un(1, i(109473)),	-- Unknown
+			un(1, i(109477)),	-- Unknown
+			un(1, i(109521)),	-- Unknown
 			un(1, i(32098)),	-- Chancellor's Mooncloth Cowl
 			un(1, i(32099)),	-- Chancellor's Mooncloth Legs
 			un(1, i(32100)),	-- Chancellor's Mooncloth Mitts
@@ -992,6 +1007,16 @@ _.NeverImplemented =
 			un(1, i(61027)),	-- Unknown
 			un(1, i(61028)),	-- Unknown
 			un(1, i(61029)),	-- Unknown
+			un(1, i(109403)),	-- Unknown
+			un(1, i(109407)),	-- Unknown
+			un(1, i(109413)),	-- Unknown
+			un(1, i(109442)),	-- Unknown
+			un(1, i(109446)),	-- Unknown
+			un(1, i(109467)),	-- Unknown
+			un(1, i(109480)),	-- Unknown
+			un(1, i(109495)),	-- Unknown
+			un(1, i(109515)),	-- Unknown
+			un(1, i(114960)),	-- spires unused
 		}),
 	}),
 	n(-494, {	-- Misc

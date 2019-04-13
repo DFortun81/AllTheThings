@@ -18,6 +18,13 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 		},
 		["lvl"] = 120,
 		["g"] = {
+			n(-1, {	-- Common Boss Drops
+				["groups"] = {
+					i(165693),	-- Vantus Rune Technique: Battle of Dazar'alor Rank1
+					i(165694),	-- Vantus Rune Technique: Battle of Dazar'alor Rank2
+					i(165695),	-- Vantus Rune Technique: Battle of Dazar'alor Rank3
+				},
+			}),
 			d(17, {	-- LFR
 				["g"] = bubbleDown({["modID"] = 4}, {
 					n(0, {	-- Zone Drops

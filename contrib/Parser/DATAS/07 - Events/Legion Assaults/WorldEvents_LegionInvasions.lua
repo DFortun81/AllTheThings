@@ -23,6 +23,7 @@ _.WorldEvents =
 					
 					i(139158),	-- Battle Mace of the Niskaran Guard
 					i(139163),	-- Star of Niskara
+					i(138762),	-- Niskaran Morning Star
 					i(139155),	-- Legion's Edge
 					i(139157),	-- Dread Vanquisher's Hacker
 					i(139156),	-- Argus Decapitator

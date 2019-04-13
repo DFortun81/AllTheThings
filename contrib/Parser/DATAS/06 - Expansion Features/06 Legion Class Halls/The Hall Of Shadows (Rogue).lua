@@ -106,6 +106,9 @@ _.ExpansionFeatures =
 					q(44252, {	-- A Sheath For Every Blade
 						i(139742),	-- Mask of the Uncrowned
 					}),
+					q(40839, {	-- The Final Shadow
+						i(136786),	-- Uncrowned Insignia
+					}),
 					q(37689, {	-- The Imposter
 						i(139739),	-- Chestguard of the Uncrowned
 					}),
