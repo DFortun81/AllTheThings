@@ -235,7 +235,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 						i(133259),	-- Resonant Kris
 						i(133260),	-- Tauntka's Necklace
 						i(133280),	-- Oasis Bracers
-						i(133278),	-- Evelyn's Belt
+					 -- i(133278),	-- Evelyn's Belt (drops from Siamat, like in other difficulties -- erroneously listed on Lockmaw in DJ)
 						i(133261),	-- Balkar's Waders
 						i(133262),	-- Greaves of Wu the Younger
 						i(133263),	-- Ring of the Darkest Day
@@ -256,6 +256,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 						i(133376),	-- Hammer of Swirling Winds
 						i(133274),	-- Mantle of Master Cho
 						i(133272),	-- Geordan's Cloak
+						i(133278),	-- Evelyn's Belt (erroneously listed on Lockmaw in DJ -- drops from this boss)
 						i(133270),	-- Crafty's Gaiters
 						i(133273),	-- Ring of Three Lights
 						i(133275),	-- Sorrowsong
