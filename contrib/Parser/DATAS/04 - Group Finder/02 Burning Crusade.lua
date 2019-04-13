@@ -5,9 +5,9 @@
 _.GroupFinder = 
 {
 	{
-		["groups"] = {
+		["g"] = {
 			i(156682, {			-- Otherworldy Satchel of Helpful Goods
-				["groups"] = {
+				["g"] = {
 					i(51969),	-- Enumerated Shoulders*
 					i(51972),	-- Enumerated Bracers*
 					i(51970),	-- Enumerated Gloves*
@@ -22,11 +22,11 @@ _.GroupFinder =
 					i(51981),	-- Earthbound Wristguards
 					i(51979),	-- Earthbound Grips [User confirmed; haven't seen]
 					i(51977),	-- Earthbound Girdle*
-					i(51983),	-- Stalwart Shoulderguards*	— 4/11/19
+					i(51983),	-- Stalwart Shoulderguards*	— 4/13/19
 					i(51989),	-- Stalwart Bands*			— 4/12/19
 					i(51987),	-- Stalwart Grips*
 					i(51985),	-- Stalwart Belt*			— 4/12/19
-					i(51990),	-- Stalwart Treads*			— 4/12/19
+					i(51990),	-- Stalwart Treads*			— 4/13/19
 					i(51993),	-- Turbulent Cloak*
 					i(160599),	-- Turbulent Cloak*
 					i(160600),	-- Turbulent Cloak (screenshot from Emsarrev on Discord)
@@ -41,7 +41,7 @@ _.GroupFinder =
 				-- ["description"] = "|cff66ccffRewarded for completing a random dungeon in the level 58 - ??? range.|r", (NOTE: unsure about start/end points -- I *think* but am not positive that they opened at 58 and I'm not sure when they become unavailable.  Still available for a 70 character.  Commenting this out until confirmation.
 			}),
 			un(2, i(52004, {	-- Satchel of Helpful Goods 60-64
-				["groups"] = {
+				["g"] = {
 				   i(51970),	-- Enumerated Gloves
 				   i(51960),	-- Vigorous Gloves
 				   i(51979),	-- Earthbound Grips
@@ -50,7 +50,7 @@ _.GroupFinder =
 				["description"] = "|cff66ccffRewarded for completing a random dungeon in the level 60-64 range.|r",
 			})),
 			un(2, i(52005, {	-- Satchel of Helpful Goods 65-70
-				["groups"] = {
+				["g"] = {
 				   i(51969),	-- Enumerated Shoulders
 				   i(51961),	-- Vigorous Shoulderguards
 				   i(51975),	-- Earthbound Shoulders
