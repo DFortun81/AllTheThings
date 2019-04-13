@@ -1534,7 +1534,8 @@ _.Zones =
 								["requireSkill"] = 202,
 								["groups"] = {
 									{	-- Schematic: Sonic Environment Enhancer
-										["recipeID"] = 201596,	-- Schematic: Sonic Environment Enhancer
+										-- ["recipeID"] = 201596,	-- Schematic: Sonic Environment Enhancer(Spell that is cast on you to learn the following recipe.  Not collectible)
+										["recipeID"] = 200466,	-- Schematic: Sonic Environment Enhancer
 									},
 								},
 							},

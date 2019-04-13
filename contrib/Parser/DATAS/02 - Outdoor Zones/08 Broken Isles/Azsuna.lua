@@ -1962,22 +1962,19 @@ _.Zones =
 								q(40876, {	-- 'Locke, Stock and Barrel
 									["qg"] = 102196,	-- Fargo Flintlocke
 									["groups"] = {
-										{	-- Schematic: Better Headguns
-											["recipeID"] = 201611,	-- Schematic: Better Headguns
-											["groups"] = {
-												{	-- Blink-Trigger Headgun (Rank 2)
-													["recipeID"] = 198991,	-- Blink-Trigger Headgun (Rank 2)
-												},
-												{	-- Bolt-Action Headgun (Rank 2)
-													["recipeID"] = 198993,	-- Bolt-Action Headgun (Rank 2)
-												},
-												{	-- Reinforced Headgun (Rank 2)
-													["recipeID"] = 198994,	-- Reinforced Headgun (Rank 2)
-												},
-												{	-- Tactical Headgun (Rank 2)
-													["recipeID"] = 198992,	-- Tactical Headgun (Rank 2)
-												},
-											},
+										-- Schematic: Better Headguns
+										--["recipeID"] = 201611,	-- Schematic: Better Headguns(Spell that is cast on you to learn the following recipes.  Not collectible)
+										{	-- Blink-Trigger Headgun (Rank 2)
+											["recipeID"] = 198991,	-- Blink-Trigger Headgun (Rank 2)
+										},
+										{	-- Bolt-Action Headgun (Rank 2)
+											["recipeID"] = 198993,	-- Bolt-Action Headgun (Rank 2)
+										},
+										{	-- Reinforced Headgun (Rank 2)
+											["recipeID"] = 198994,	-- Reinforced Headgun (Rank 2)
+										},
+										{	-- Tactical Headgun (Rank 2)
+											["recipeID"] = 198992,	-- Tactical Headgun (Rank 2)
 										},
 									},
 								}),
@@ -2011,11 +2008,13 @@ _.Zones =
 									q(40015),	-- Ragged Strips of Silk
 								}),
 								q(40017, {	-- A Slip of the Hand
-									recipe(193417),	-- Herbalism Technique: Aethril (Rank 3)
+									--recipe(193417),	-- Herbalism Technique: Aethril (Rank 3)(Spell cast on you to learn the following recipe.  Not collectible)
+									recipe(193294), -- Herbalism Technique: Aethril (Rank 3)
 								}),
 								i(129122, {	-- Felwort Sample
 									q(40040, { --Felwort Sample
-										recipe(193430),	-- Herbalism Technique: Felwort (Rank 1)
+										--recipe(193430),	-- Herbalism Technique: Felwort (Rank 1)(Spell cast on you to learn the following recipe.  Not collectible)
+										recipe(193307),	-- Herbalism Technique: Felwort (Rank 1)
 									}),
 								}),
 							},
