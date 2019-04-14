@@ -298,6 +298,7 @@ _.Zones =
 						}),
 						n(129180, {	-- Warbringer Hozzik
 							["questID"] = 49373,
+							["coord"] = { 37.0, 46.1, 864 },
 							["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(161032),	-- Spire-Charged Links
 								{	-- Warbringer Hozzik (Adventurer of Vol'dun)

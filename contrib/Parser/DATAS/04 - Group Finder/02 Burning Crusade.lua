@@ -24,7 +24,7 @@ _.GroupFinder =
 					i(51977),	-- Earthbound Girdle*
 					i(51983),	-- Stalwart Shoulderguards*	— 4/13/19
 					i(51989),	-- Stalwart Bands*			— 4/12/19
-					i(51987),	-- Stalwart Grips*
+					i(51987),	-- Stalwart Grips*			— 4/13/19
 					i(51985),	-- Stalwart Belt*			— 4/12/19
 					i(51990),	-- Stalwart Treads*			— 4/13/19
 					i(51993),	-- Turbulent Cloak*
