@@ -3003,46 +3003,6 @@ _.Zones =
 									i(116789),	-- Champion's Treadblade
 								},
 							},
-							{	-- Rebecca Laughlin <Tabard Designer>
-								["npcID"] = 5193,	-- Rebecca Laughlin <Tabard Designer>
-								["description"] = "Tabards are only obtainable by those who have earned them.|r",
-								["coord"] = { 64.05, 77.42, 84 },
-								["g"] = {
-									i(31779),	-- Aldor Tabard
-									i(20132),	-- Arathor Battle Tabard
-									i(31804),	-- Cenarion Expedition Tabard
-									i(31776),	-- Consortium Tabard
-									i(31404),	-- Green Trophy Tabard of the Illidari
-									i(5976),	-- Guild Tabard
-									i(23999),	-- Honor Hold Tabard
-									i(31777),	-- Keepers of Time Tabard
-									i(15198),	-- Knight's Colors
-									i(31774),	-- Kurenai Tabrd
-									i(43300),	-- Loremaster's Colors
-									i(31778),	-- Lower City Tabard
-									i(32828),	-- Ogri'la Tabard
-									i(15196),	-- Private's Tabard
-									i(31405),	-- Purple Trophy Tabard of the Illidari
-									i(31780),	-- Scryers Tabard
-									i(31781),	-- Sha'tar Tabard
-									i(19506),	-- Silverwing Battle Tabard
-									i(32445),	-- Skyguard Tabard
-									i(31775),	-- Sporeggar Tabard
-									i(19032),	-- Stormpike Battle Tabard
-									i(43349),	-- Tabard of Brute Force
-									i(49052),	-- Tabard of Conquest
-									i(35280),	-- Tabard of Summer Flames
-									i(35279),	-- Tabard of Summer Skies
-									i(40643),	-- Tabard of the Achiever
-									i(43348),	-- Tabard of the Explorer
-									i(24344),	-- Tabard of the Hand
-									i(35221),	-- Tabard of the Shattered Sun
-									{			-- Competitor's Tabard
-										["itemID"] = 36941,	-- Competitor's Tabard
-										["description"]	= "Participated in a battleground during the Beijing 2008 Summer Olympics event.",
-									},
-								},
-							},
 							{	-- Sergeant Major Clate <Legacy Armor Quartermaster>
 								["itemID"] = 137642,	-- Mark of Honor
 								["npcID"] = 12785,	-- Sergeant Major Clate <Legacy Armor Quartermaster>

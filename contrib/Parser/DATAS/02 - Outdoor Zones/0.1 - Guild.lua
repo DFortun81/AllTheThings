@@ -8,9 +8,7 @@ _.Zones =
 		["maps"] = {
 			89,		-- Darnassus
 			125,	-- Dalaran: Northrend
-			126,	-- The Underbelly
 			501,	-- Dalaran (operation shieldwall)
-			502,	-- Dalaran (sewers, operation shieldwall)
 			87,		-- Ironforge
 			1361,	-- Old Ironforge
 			103,	-- The Exodar
@@ -21,16 +19,16 @@ _.Zones =
 			90,		-- Undercity
 		},
 		["coords"] = {
-			{ 48.2, 75.6, 85 },		-- Goram (Orgrimmar)
-			-- TODO: Add Kim Horn (Undercity)
-			{ 78.2, 84.8, 110 },	-- Larissia (Silvermoon)
-			-- TODO: Add Mirla Silverblaze (Dalaran)
-			-- TODO: Add Nuri (The Exodar)
-			{ 37.12, 63.33, 88 },	-- Randah Songhorn (Thunder Bluff)
-			{ 58.6, 46.6, 111 },	-- Riha (Shattrath)
-			{ 64.14, 77.03, 84 },	-- Shay Pressler (Stormwind)
-			{ 36.0, 85.6, 87 },		-- Steeg Haskell (Ironforge)
-			{ 64.6, 37.6, 89 },		-- Velia Moonbow (Darnassus)
+			{ 48.47, 75.58, 85 },	-- Goram [Orgrimmar]
+			{ 69.84, 43.72, 90 },	-- Kim Horn [Undercity]
+			{ 78.33, 85.24, 110 },	-- Larissia [Silvermoon]
+			{ 52.52, 54.97, 125 },	-- Mirla Silverblaze [Dalaran: Northrend]
+			{ 53.64, 69.68, 103 },	-- Nuri [The Exodar]
+			{ 37.12, 63.33, 88 },	-- Randah Songhorn [Thunder Bluff]
+			{ 58.74, 46.41, 111 },	-- Riha [Shattrath]
+			{ 64.15, 77.02, 84 },	-- Shay Pressler [Stormwind]
+			{ 36.30, 85.78, 87 },	-- Steeg Haskell [Ironforge]
+			{ 64.79, 37.65, 89 },	-- Velia Moonbow [Darnassus]
 		},
 		["crs"] = {
 			46572,	-- Goram (Orgrimmar)
@@ -67,7 +65,7 @@ _.Zones =
 			ach(9651, {	-- Challenge Warlord: Gold - Guild Edition
 				["collectible"] = false,
 				["groups"] = {
-					un(4, i(114968)),	-- Deathwatch Hatchling - Revered
+					i(114968),	-- Deathwatch Hatchling - Revered
 				},
 				["description"] = "Achievement no longer obtainable. You will need to find a guild that already has it to buy Deathwatch Hatchling.|r",
 			}),

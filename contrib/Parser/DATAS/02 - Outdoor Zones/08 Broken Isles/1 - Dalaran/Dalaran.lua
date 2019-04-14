@@ -4904,37 +4904,6 @@ _.Zones =
 							i(140274),	-- River Calf Pet
 						}),
 					}),
-					n(96812, { 	-- Elizabeth Ross <Tabard Vendor>
-						["groups"] = {
-							i(31404),	-- Green Trophy Tabard of the Illidari
-							i(31405),	-- Purple Trophy Tabard of the Illidari
-							i(40643),	-- Tabard of the Achiever
-							i(43300),	-- Loremaster's Colors
-							i(43349),	-- Tabard of Brute Force
-							i(35279),	-- Tabard of Summer Skies
-							i(35280),	-- Tabard of Summer Flames
-							i(25549),	-- Blood Knight Tabard
-							i(22999),	-- Tabard of the Argent Dawn
-							i(31778),	-- Lower City Tabard
-							i(31775),	-- Sporeggar Tabard
-							i(31776),	-- Consortium Tabard
-							i(31777),	-- Keepers of Time Tabard
-							i(31779),	-- Aldor Tabard
-							i(31780),	-- Scryers Tabard
-							i(31781),	-- Sha'tar Tabard
-							i(31804),	-- Cenarion Expedition Tabard
-							i(32445),	-- Skyguard Tabard
-							i(32828),	-- Ogri'la Tabard
-							i(35221),	-- Tabard of the Shattered Sun
-							i(43348),	-- Tabard of the Explorer
-							i(5976),	-- Guild Tabard
-							{			-- Competitor's Tabard
-							["itemID"] = 36941,
-							["description"]	= "Participated in a battleground during the Beijing 2008 Summer Olympics event.",
-							},
-						},
-						["description"] = "Tabards are only obtainable by those who have earned them.|r",
-					}),
 					nh(98724, {	-- Giada Goldleash
 						i(116415, {	-- Pet Charm
 							i(127704),	-- Bloodthorn Hatchling Pet

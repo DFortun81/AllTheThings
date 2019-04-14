@@ -384,44 +384,6 @@ _.Zones =
 						},
 						["coord"] = { 90.8, 73.6, 110 },
 					}),
-					n(16610, {		-- Kredis <Tabard Vendor>
-						["g"] = {
-							h(i(20131)),	-- Battle Tabard of the Defilers
-							i(31404),		-- Green Trophy Tabard of the Illidari
-							i(31405),		-- Purple Trophy Tabard of the Illidari
-							i(40643),		-- Tabard of the Achiever
-							i(43300),		-- Loremaster's Colors
-							i(43349),		-- Tabard of Brute Force
-							i(35279),		-- Tabard of Summer Skies
-							i(35280),		-- Tabard of Summer Flames
-							i(43348),		-- Tabard of the Explorer
-							h(i(49054)),	-- Tabard of Conquest
-							h(i(15199)),	-- Stone Guard's Herald
-							h(i(15197)),	-- Scout's Tabard
-							h(i(19031)),	-- Frostwolf Battle Tabard
-							h(i(19505)),	-- Warsong Battle Tabard
-							h(i(24004)),	-- Thrallmar Tabard
-							h(i(31773)),	-- Mag'har Tabard
-							i(31775),		-- Sporeggar Tabard
-							i(31776),		-- Consortium Tabard
-							i(31777),		-- Keepers of Time Tabard
-							i(31778),		-- Lower City Tabard
-							i(31779),		-- Aldor Tabard
-							i(31780),		-- Scryers Tabard
-							i(31781),		-- Sha'tar Tabard
-							i(31804),		-- Cenarion Expedition Tabard
-							i(32445),		-- Skyguard Tabard
-							i(32828),		-- Ogri'la Tabard
-							i(35221),		-- Tabard of the Shattered Sun
-							i(5976),		-- Guild Tabard
-							{				-- Competitor's Tabard
-							["itemID"] = 36941,
-							["description"]	= "Participated in a battleground during the Beijing 2008 Summer Olympics event.",
-							},
-						},
-						["coord"] = { 78.6, 84.6, 110 },
-						["description"] = "Tabards are only obtainable by those who have earned them.|r",
-					}),
 					n(16635, {		-- Lyna <Enchanting Supplies>
 						["g"] = {
 							i(22565),	-- Formula: Large Prismatic Shard

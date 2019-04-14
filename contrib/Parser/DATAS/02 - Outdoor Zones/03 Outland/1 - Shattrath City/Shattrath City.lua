@@ -1548,55 +1548,6 @@ _.Zones =
 						},
 						["coord"] = { 58.6, 75.2 },
 					}),
-					n(52278, {	-- Linsa <Tabard Vendor> 
-						["groups"] = {
-							i(31779),		-- Aldor Tabard
-							a(i(20132)),	-- Arathor Battle Tabard
-							h(i(20131)),	-- Battle Tabard of the Defilers
-							i(25549),		-- Blood Knight Tabard
-							i(31804),		-- Cenarion Expedition Tabard
-							{				-- Competitor's Tabard
-								["itemID"] = 36941,
-								["description"]	= "Participated in a battleground during the Beijing 2008 Summer Olympics event.",
-							},
-							i(31776),		-- Consortium Tabard
-							h(i(19031)),	-- Frostwolf Battle Tabard
-							i(31404),		-- Green Trophy Tabard of the Illidari
-							i(5976),		-- Guild Tabard
-							a(i(23999)),	-- Honor Hold Tabard
-							i(31777),		-- Keepers of Time Tabard
-							a(i(15198)),	-- Knight's Colors
-							a(i(31774)),	-- Kurenai Tabrd
-							i(43300),		-- Loremaster's Colors
-							i(31778),		-- Lower City Tabard
-							h(i(31773)),	-- Mag'har Tabard
-							i(32828),		-- Ogri'la Tabard
-							a(i(15196)),	-- Private's Tabard
-							i(31405),		-- Purple Trophy Tabard of the Illidari
-							h(i(15197)),	-- Scout's Tabard
-							i(31780),		-- Scryers Tabard
-							i(31781),		-- Sha'tar Tabard
-							a(i(19506)),	-- Silverwing Battle Tabard
-							i(32445),		-- Skyguard Tabard
-							i(31775),		-- Sporeggar Tabard
-							h(i(15199)),	-- Stone Guard's Herald
-							a(i(19032)),	-- Stormpike Battle Tabard
-							i(43349),		-- Tabard of Brute Force
-							a(i(49052)),	-- Tabard of Conquest
-							h(i(49054)),	-- Tabard of Conquest
-							i(35280),		-- Tabard of Summer Flames
-							i(35279),		-- Tabard of Summer Skies
-							i(40643),		-- Tabard of the Achiever
-							i(22999),		-- Tabard of the Argent Dawn
-							i(43348),		-- Tabard of the Explorer
-							a(i(24344)),	-- Tabard of the Hand
-							i(35221),		-- Tabard of the Shattered Sun
-							h(i(24004)),	-- Thrallmar Tabard
-							h(i(19505)),	-- Warsong Battle Tabard
-						},
-						["description"] = "Tabards are only obtainable by those who have earned them.|r",
-						["coord"] = { 58.8, 46.4 },
-					}),
 					n(115546, {	-- Lunelli <Keeper of Lost Recipes>
 						["groups"] = {
 							i(142287),	-- Plans: Great Earthforged Hammer

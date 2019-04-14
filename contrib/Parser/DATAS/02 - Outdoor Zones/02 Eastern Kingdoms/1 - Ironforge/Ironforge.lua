@@ -530,47 +530,6 @@ _.Zones =
 							}),
 						},
 					}),
-					n(5049, {	-- Lyesa Steelbrow <Tabard Vendor>
-						["coord"] = { 36.4, 84.4, 87 },
-						["g"] = {
-							i(20132),	-- Arathor Battle Tabard
-							i(24344),	-- Tabard of the Hand
-							i(31404),	-- Green Trophy Tabard of the Illidari
-							i(31405),	-- Purple Trophy Tabard of the Illidari
-							i(40643),	-- Tabard of the Achiever
-							i(43300),	-- Loremaster's Colors
-							i(43349),	-- Tabard of Brute Force
-							i(35279),	-- Tabard of Summer Skies
-							i(35280),	-- Tabard of Summer Flames
-							i(49052),	-- Tabard of Conquest
-							i(43348),	-- Tabard of the Explorer
-							i(22999),	-- Tabard of the Argent Dawn
-							i(25549),	-- Blood Knight Tabard (yes, this is available to the Alliance, possible bug?)
-							i(15198),	-- Knight's Colors
-							i(15196),	-- Private's Tabard
-							i(19032),	-- Stormpike Battle Tabard
-							i(19506),	-- Silverwing Battle Tabard
-							i(23999),	-- Honor Hold Tabard
-							i(31774),	-- Kurenai Tabrd
-							i(31775),	-- Sporeggar Tabard
-							i(31776),	-- Consortium Tabard
-							i(31777),	-- Keepers of Time Tabard
-							i(31778),	-- Lower City Tabard
-							i(31779),	-- Aldor Tabard
-							i(31780),	-- Scryers Tabard
-							i(31781),	-- Sha'tar Tabard
-							i(31804),	-- Cenarion Expedition Tabard
-							i(32445),	-- Skyguard Tabard
-							i(32828),	-- Ogri'la Tabard
-							i(35221),	-- Tabard of the Shattered Sun
-							i(5976),	-- Guild Tabard
-							{			-- Competitor's Tabard
-							["itemID"] = 36941,
-							["description"]	= "Participated in a battleground during the Beijing 2008 Summer Olympics event.",
-							},
-						},
-						["description"] = "Tabards are only obtainable by those who have earned them.|r",
-					}),
 					n(50308, {	-- Master Tinker Trini <Gnomeregan Quartermaster>
 						["coord"] = { 55.8, 47.8, 87 },
 						["g"] = {

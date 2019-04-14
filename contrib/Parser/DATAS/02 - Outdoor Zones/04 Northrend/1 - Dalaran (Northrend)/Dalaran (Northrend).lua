@@ -2063,34 +2063,6 @@ _.Zones =
 						i(48635),	-- Turalyon's Legguards of Conquest
 						i(48636),	-- Turalyon's Shoulderguards of Conquest
 					}),
-					n(28776,  {	-- Elizabeth Ross <Tabard Vendor>
-						["g"] = {
-							i(31404),	-- Green Trophy Tabard of the Illidari
-							i(31405),	-- Purple Trophy Tabard of the Illidari
-							i(40643),	-- Tabard of the Achiever
-							i(43300),	-- Loremaster's Colors
-							i(43349),	-- Tabard of Brute Force
-							i(35279),	-- Tabard of Summer Skies
-							i(35280),	-- Tabard of Summer Flames
-							i(25549),	-- Blood Knight Tabard
-							i(22999),	-- Tabard of the Argent Dawn
-							i(31778),	-- Lower City Tabard
-							i(31775),	-- Sporeggar Tabard
-							i(31776),	-- Consortium Tabard
-							i(31777),	-- Keepers of Time Tabard
-							i(31779),	-- Aldor Tabard
-							i(31780),	-- Scryers Tabard
-							i(31781),	-- Sha'tar Tabard
-							i(31804),	-- Cenarion Expedition Tabard
-							i(32445),	-- Skyguard Tabard
-							i(32828),	-- Ogri'la Tabard
-							i(35221),	-- Tabard of the Shattered Sun
-							i(43348),	-- Tabard of the Explorer
-							i(5976),	-- Guild Tabard
-							i(36941),	-- Competitor's Tabard
-						},
-						["description"] = "Tabards are only obtainable by those who have earned them.|r",
-					}),
 					n(28715,  {	-- Endora Moorehead <Magical Goods>
 						i(82470),	-- Ancient Tome of Portal: Dalaran [Mage only]
 						i(137294),	-- Dalaran Initiates' Pin Toy [Mage only]
