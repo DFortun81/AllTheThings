@@ -8,9 +8,13 @@ _.Zones =
 			["groups"] = {
 				n(-25, {	-- Pet Battle
 					p(635),	-- Adder
-					desc(p(474), "Can be found under large trees alongside Plainsland Cheetahs. There are only two spawn points for this pet in Southern Barrens. They spawn under a large tree near Hunter's Hill in the very northern-most tip of Southern Barrens."),	-- Cheetah Cub
+					p(474, {	-- Cheetah Cub
+						["description"] = "Can be found under large trees alongside Plainsland Cheetahs. There are only two spawn points for this pet in Southern Barrens. They spawn under a large tree near Hunter's Hill in the very northern-most tip of Southern Barrens.",
+					}),
 					p(631),	-- Emerald Boa
-					desc(p(475), "Can be found with groups of roaming Dusthoof Giraffe."),	-- Giraffe Calf
+					p(475, {	-- Giraffe Calf
+						["description"] = "Can be found with groups of roaming Dusthoof Giraffe.",
+					}),
 					p(386),	-- Prairie Dog
 					p(419),	-- Small Frog
 					{  -- A Tamer's Homecoming

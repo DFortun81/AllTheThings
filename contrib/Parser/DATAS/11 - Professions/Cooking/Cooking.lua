@@ -27,10 +27,18 @@ profession(185, {	-- Cooking
 		},
 	}),
 	n(-26, {	-- Drop
-		desc(i(43509), "Can drop from any Northrend mob."),	-- Recipe: Bad Clams
-		desc(i(43510), "Can drop from any Northrend mob."),	-- Recipe: Haunted Herring
-		desc(i(43508), "Can drop from any Northrend mob."),	-- Recipe: Last Week's Mammoth
-		desc(i(43507), "Can drop from any Northrend mob."),	-- Recipe: Tasty Cupcake
+		i(43509, {	-- Recipe: Bad Clams
+			["description"] = "Can drop from any Northrend mob.",
+		}),
+		i(43510, {	-- Recipe: Haunted Herring
+			["description"] = "Can drop from any Northrend mob.",
+		}),
+		i(43508, {	-- Recipe: Last Week's Mammoth
+			["description"] = "Can drop from any Northrend mob.",
+		}),
+		i(43507, {	-- Recipe: Tasty Cupcake
+			["description"] = "Can drop from any Northrend mob.",
+		}),
 		i(111387, {		-- The Joy of Draenor Cooking
 			["collectible"] = false,
 			["description"] = "This can drop from any Warlords of Draenor mob if you don't already have it learned.",
@@ -709,7 +717,9 @@ profession(185, {	-- Cooking
 				recipe(201516),		-- Lavish Suramar Feast [Rank 1]
 				recipe(201543),		-- Lavish Suramar Feast [Rank 2]
 				recipe(201563),		-- Lavish Suramar Feast [Rank 3]
-				desc(recipe(201683), "You learn this by giving Nomi your slices of bacon, and hoping he doesn't burn it.\n\n... He will."),		-- Crispy Bacon [Rank 1]
+				recipe(201683, {	-- Crispy Bacon [Rank 1]
+					["description"] = "You learn this by giving Nomi your slices of bacon, and hoping he doesn't burn it.\n\n... He will.",
+				}),
 				recipe(201684),		-- Crispy Bacon [Rank 2]
 				recipe(201685),		-- Crispy Bacon [Rank 3]
 				recipe(201504),		-- Drogbar-Style Salmon [Rank 1]

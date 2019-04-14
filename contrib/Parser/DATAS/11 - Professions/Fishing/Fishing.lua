@@ -38,17 +38,41 @@ profession(356, { 	-- Fishing
 	}),
 	n(-167, { 	-- Fishing Poles
 		["groups"] = {	
-			desc(i(19970), "Reward from winning Stranglethorn Fishing Extravaganza."),	-- Arcanite Fishing Pole
-			desc(i(45991), "Can be obtained via a drop from the lunarfall or frostdeep cavedweller's in the garrison."),	-- Bone Fishing Pole
-			desc(a(i(116826)), "Bought from Nat Pagle in Garrison once a Friend for 25 Nat's Lucky Coin."),	-- Draenic Fishing Pole
-			desc(i(84661), "Bought from Nat Pagle in Krasarang Wilds after obtaining Revered with The Anglers for 400g."),	-- Dragon Fishing Pole
-			desc(i(45992), "Drop from Lunarfall or Frostdeep Cavedwellers in the garrison."),	-- Jeweled Fishing Pole
-			desc(i(44050), "Bought from Sairuk or Tanaika after obtaining Exalted with Kalu'ak for 102g73s17c."),	-- Mastercraft Kalu'ak Fishing Pole
-			desc(i(19022), "Reward from quest in The Hinterlands."),	-- Nat Pagle's Extreme Angler FC-5000
-			desc(i(45858), "Reward from Nat Pagle, Angler Extreme quest in Duskwallow Marsh."),	-- Nat's Lucky Fishing Pole
-			desc(i(84660), "Bought from Nat Pagle in Krasarang Wilds after obtaining Honored with The Anglers for 20g."),	-- Pandaren Fishing Pole
-			desc(h(i(116825)), "Bought from Nat Pagle in Garrison once a Friend for 25 Nat's Lucky Coin."),	-- Savage Fishing Pole
-			desc(i(25978), "Reward from quest Rather Be Fishin' in Terokkar Forest."),	-- Seth's Graphite Fishing Pole
+			i(19970, {	-- Arcanite Fishing Pole
+				["description"] = "Reward from winning Stranglethorn Fishing Extravaganza.",
+			}),
+			i(45991, {	-- Bone Fishing Pole
+				["description"] = "Can be obtained via a drop from the lunarfall or frostdeep cavedweller's in the garrison.",
+			}),
+			i(116826, {	-- Draenic Fishing Pole
+				["races"] = ALLIANCE_ONLY,
+				["description"] = "Bought from Nat Pagle in Garrison once a Friend for 25 Nat's Lucky Coin.",
+			}),
+			i(84661, {	-- Dragon Fishing Pole
+				["description"] = "Bought from Nat Pagle in Krasarang Wilds after obtaining Revered with The Anglers for 400g.",
+			}),
+			i(45992, {	-- Jeweled Fishing Pole
+				["description"] = "Drop from Lunarfall or Frostdeep Cavedwellers in the garrison.",
+			}),
+			i(44050, {	-- Mastercraft Kalu'ak Fishing Pole
+				["description"] = "Bought from Sairuk or Tanaika after obtaining Exalted with Kalu'ak for 102g73s17c.",
+			}),
+			i(19022, {	-- Nat Pagle's Extreme Angler FC-5000
+				["description"] = "Reward from quest in The Hinterlands.",
+			}),
+			i(45858, {	-- Nat's Lucky Fishing Pole
+				["description"] = "Reward from Nat Pagle, Angler Extreme quest in Duskwallow Marsh.",
+			}),
+			i(84660, {	-- Pandaren Fishing Pole
+				["description"] = "Bought from Nat Pagle in Krasarang Wilds after obtaining Honored with The Anglers for 20g.",
+			}),
+			i(116825, {	-- Savage Fishing Pole
+				["races"] = HORDE_ONLY,
+				["description"] = "Bought from Nat Pagle in Garrison once a Friend for 25 Nat's Lucky Coin.",
+			}),
+			i(25978, {	-- Seth's Graphite Fishing Pole
+				["description"] = "Reward from quest Rather Be Fishin' in Terokkar Forest.",
+			}),
 		},
 		["icon"] = "Interface\\Icons\\inv_fishingpole_02",
 	}),	
@@ -392,39 +416,88 @@ profession(356, { 	-- Fishing
 		}),
 	}),
 	n(-160, { 	-- Mounts
-		desc(i(142398), "Can be bought from Galissa Sundew on Darkmoon Island for 500 Darkmoon Daggermaw."),	-- Darkwater Skate
+		i(142398, {	-- Darkwater Skate
+			["description"] = "Can be bought from Galissa Sundew on Darkmoon Island for 500 Darkmoon Daggermaw.",
+		}),
 		i(163131, {	-- Great Sea Ray
 			["description"] = "Fished in any waters in Battle For Azeroth Zones.",
 		}),
-		desc(i(152912),	"Can be obtained fishing from green water in Argus."),	-- Pond Nettle
-		desc(i(23720), "Can be obtained via a drop from the lunarfall or frostdeep cavedweller's in the garrison."), 	-- Riding Turtle
-		desc(i(46109), "Can be obtained fishing in any zone added from northrend to date. Also has a chance to drop from the lunarfall or frostdeep cavedweller's in the garrison."),	-- Sea Turtle Mount
-		
+		i(152912, {	-- Pond Nettle
+			["description"] = "Can be obtained fishing from green water in Argus.",
+		}),
+		i(23720, {	-- Riding Turtle
+			["description"] = "Can be obtained via a drop from the lunarfall or frostdeep cavedweller's in the garrison.",
+		}),
+		i(46109, {	-- Sea Turtle Mount
+			["description"] = "Can be obtained fishing in any zone added from northrend to date. Also has a chance to drop from the lunarfall or frostdeep cavedweller's in the garrison.",
+		}),
 	}),
 	n(-162, { 	-- Pets
-		desc(p(174), "The [Bag of Fishing Treasures] that drops this pet can be obtained by completing the daily fishing quest [70]Crocolisks in the City. Level 70+ is required to obtain the quest, but a Fishing skill of 1+ is all that's required to complete it. Note that this daily quest is randomly available among four other daily fishing quests."),	-- Chuck
-		desc(p(193), "Can be obtained from fishing in the underbelly in Dalaran(Northrend)."),	-- Giant Sewer Rat
-		desc(p(115), "Can be bought from Nat Pagle in Garrison after becoming Good Friends for 50 Nat's Lucky Coin"),	-- Land Shark
-		desc(p(132), "Can be obtained via Magical Crawdad box that is a possible reward after fishing up Mr. Pinchy."),	-- Magical Crawdad
-		desc(p(164), "The [Bag of Fishing Treasures] that drops this pet can be obtained by completing the daily fishing quest [70]Crocolisks in the City. Level 70+ is required to obtain the quest, but a Fishing skill of 1+ is all that's required to complete it. Note that this daily quest is randomly available among four other daily fishing quests."),	-- Muckbreath
-		desc(p(1448), "Can be bought from Nat Pagle in Garrison after becoming Good Friends for 50 Nat's Lucky Coin"), 	-- Sea Calf
-		desc(p(340), "Can be fished from Darkmoon Island open water while the Darkmoon Faire is in town."),	-- Sea Pony
-		desc(p(173), "The [Bag of Fishing Treasures] that drops this pet can be obtained by completing the daily fishing quest [70]Crocolisks in the City. Level 70+ is required to obtain the quest, but a Fishing skill of 1+ is all that's required to complete it. Note that this daily quest is randomly available among four other daily fishing quests."),	-- Snarly
-		desc(p(211), "Can be looted Bag of Fishing Treasures or Bag of Shiny Things."), 	-- Strand Crawler
-		desc(p(1207), "This pet can be fished up from Jewel Danio Schools and Redbelly Mandarin Schools. Additionally, it can be caught by casting into the Fish of the Day in Townlong Steppes and the Vale of Eternal Blossoms. Another way to obtain this pet is by fishing from inland open water in Townlong Steppes and the Vale of Eternal Blossoms."),	-- Tiny Blue Carp
-		desc(p(652), "This pet can be bought from Nat Pagle in Krasarang Wilds after obtaining The Anglers Honored Reputation for 200g."),	-- Tiny Goldfish
-		desc(p(1208), "This pet can be fished up from Emperor Salmon Schools, Jade Lungfish Schools, and Krasarang Paddlefish Schools. Additionally, it can be caught by casting into the Fish of the Day in the Krasarang Wilds, The Jade Forest, and Valley of the Four Winds. Another way to obtain this pet is by fishing from inland open water in Krasarang Wilds, The Jade Forest, and Valley of the Four Winds. "),	-- Tiny Green Carp
-		desc(p(1206), "This pet can be fished up from Spinefish Schools. Additionally, it can be caught by casting into the Fish of the Day in Kun-Lai Summit. Another way to obtain this pet is by fishing from open Sha-Touched water in Dread Wastes, Kun-Lai Summit, The Jade Forest (Widow's Wail only), and Townlong Steppes."),	-- Tiny Red Carp
-		desc(p(1209), "This pet can be fished up from Giant Mantis Shrimp Swarms, Reef Octopus Swarms, and Tiger Gourami Schools. Additionally, it can be caught by casting into the Fish of the Day in the Dread Wastes, Kun-Lai Summit, and The Jade Forest. Another way to obtain this pet is by fishing in open water, mainly on the coast of most zones. For inland open water fishing, head to Kun-Lai Summit or The Veiled Stair."),	-- Tiny White Carp
-		desc(p(163), "The [Bag of Fishing Treasures] that drops this pet can be obtained by completing the daily fishing quest [70]Crocolisks in the City. Level 70+ is required to obtain the quest, but a Fishing skill of 1+ is all that's required to complete it. Note that this daily quest is randomly available among four other daily fishing quests."),	-- Toothy
+		p(174, {	-- Chuck
+			["description"] = "The [Bag of Fishing Treasures] that drops this pet can be obtained by completing the daily fishing quest [70]Crocolisks in the City. Level 70+ is required to obtain the quest, but a Fishing skill of 1+ is all that's required to complete it. Note that this daily quest is randomly available among four other daily fishing quests.",
+		}),
+		p(193, {	-- Giant Sewer Rat
+			["description"] = "Can be obtained from fishing in the underbelly in Dalaran(Northrend).",
+		}),
+		p(115, {	-- Land Shark
+			["description"] = "Can be bought from Nat Pagle in Garrison after becoming Good Friends for 50 Nat's Lucky Coin",
+		}),
+		p(132, {	-- Magical Crawdad
+			["description"] = "Can be obtained via Magical Crawdad box that is a possible reward after fishing up Mr. Pinchy.",
+		}),
+		p(164, {	-- Muckbreath
+			["description"] = "The [Bag of Fishing Treasures] that drops this pet can be obtained by completing the daily fishing quest [70]Crocolisks in the City. Level 70+ is required to obtain the quest, but a Fishing skill of 1+ is all that's required to complete it. Note that this daily quest is randomly available among four other daily fishing quests.",
+		}),
+		p(1448, {	-- Sea Calf
+			["description"] = "Can be bought from Nat Pagle in Garrison after becoming Good Friends for 50 Nat's Lucky Coin",
+		}),
+		p(340, {	-- Sea Pony
+			["description"] = "Can be fished from Darkmoon Island open water while the Darkmoon Faire is in town.",
+		}),
+		p(173, {	-- Snarly
+			["description"] = "The [Bag of Fishing Treasures] that drops this pet can be obtained by completing the daily fishing quest [70]Crocolisks in the City. Level 70+ is required to obtain the quest, but a Fishing skill of 1+ is all that's required to complete it. Note that this daily quest is randomly available among four other daily fishing quests.",
+		}),
+		p(211, {	-- Strand Crawler
+			["description"] = "Can be looted Bag of Fishing Treasures or Bag of Shiny Things.",
+		}),
+		p(1207, {	-- Tiny Blue Carp
+			["description"] = "This pet can be fished up from Jewel Danio Schools and Redbelly Mandarin Schools. Additionally, it can be caught by casting into the Fish of the Day in Townlong Steppes and the Vale of Eternal Blossoms. Another way to obtain this pet is by fishing from inland open water in Townlong Steppes and the Vale of Eternal Blossoms.",
+		}),
+		p(652, {	-- Tiny Goldfish
+			["description"] = "This pet can be bought from Nat Pagle in Krasarang Wilds after obtaining The Anglers Honored Reputation for 200g.",
+		}),
+		p(1208, {	-- Tiny Green Carp
+			["description"] = "This pet can be fished up from Emperor Salmon Schools, Jade Lungfish Schools, and Krasarang Paddlefish Schools. Additionally, it can be caught by casting into the Fish of the Day in the Krasarang Wilds, The Jade Forest, and Valley of the Four Winds. Another way to obtain this pet is by fishing from inland open water in Krasarang Wilds, The Jade Forest, and Valley of the Four Winds. ",
+		}),
+		p(1206, {	-- Tiny Red Carp
+			["description"] = "This pet can be fished up from Spinefish Schools. Additionally, it can be caught by casting into the Fish of the Day in Kun-Lai Summit. Another way to obtain this pet is by fishing from open Sha-Touched water in Dread Wastes, Kun-Lai Summit, The Jade Forest (Widow's Wail only), and Townlong Steppes.",
+		}),
+		p(1209, {	-- Tiny White Carp
+			["description"] = "This pet can be fished up from Giant Mantis Shrimp Swarms, Reef Octopus Swarms, and Tiger Gourami Schools. Additionally, it can be caught by casting into the Fish of the Day in the Dread Wastes, Kun-Lai Summit, and The Jade Forest. Another way to obtain this pet is by fishing in open water, mainly on the coast of most zones. For inland open water fishing, head to Kun-Lai Summit or The Veiled Stair.",
+		}),
+		p(163, {	-- Toothy
+			["description"] = "The [Bag of Fishing Treasures] that drops this pet can be obtained by completing the daily fishing quest [70]Crocolisks in the City. Level 70+ is required to obtain the quest, but a Fishing skill of 1+ is all that's required to complete it. Note that this daily quest is randomly available among four other daily fishing quests.",
+		}),
 	}),
 	n(-319, { 	-- Weapons
-		desc(i(34486), "Can be caught in Orgrimmar."), 	-- Old Crafty
-		desc(i(34484), "Can be caught in Ironforge."), 	-- Old Ironjaw
-		desc(i(6360), "Can be caught in Darkmoon Island, Northern Stranglethorn, and Wetlands in open water."),	-- Steelscale Crushfish
-		desc(i(19808), "Can be caught in The Cape of Stranglethorn or Northern Stranglethorn during the Stranglethorn Fishing Extravaganza from pools."), 	-- Rockhide Strongfish
-		desc(i(44505), "Can be caught in schools or open water in Northrend."),	-- Dustbringer
-		desc(i(44703), "Can be caught from Fangtooth Herring Schools in Howling Fjord."),	-- Dark Herring
+		i(34486, {	-- Old Crafty
+			["description"] = "Can be caught in Orgrimmar.",
+		}),
+		i(34484, {	-- Old Ironjaw
+			["description"] = "Can be caught in Ironforge.",
+		}),
+		i(6360, {	-- Steelscale Crushfish
+			["description"] = "Can be caught in Darkmoon Island, Northern Stranglethorn, and Wetlands in open water.",
+		}),
+		i(19808, {	-- Rockhide Strongfish
+			["description"] = "Can be caught in The Cape of Stranglethorn or Northern Stranglethorn during the Stranglethorn Fishing Extravaganza from pools.",
+		}),
+		i(44505, {	-- Dustbringer
+			["description"] = "Can be caught in schools or open water in Northrend.",
+		}),
+		i(44703, {	-- Dark Herring
+			["description"] = "Can be caught from Fangtooth Herring Schools in Howling Fjord.",
+		}),
 	}),
 	--[[
 	tier(1, {	-- Classic

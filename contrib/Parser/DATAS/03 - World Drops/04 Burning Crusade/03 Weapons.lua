@@ -292,7 +292,9 @@ _.WorldDrops =
 					i(25142),	-- Telaari Longblade
 					i(25143),	-- Silver Hand Blade
 					i(25144),	-- Skettis Curved Blade
-					desc(un(7, i(25145)), "Added in WOD only to Big Crate of Salvage"),	-- Wisdom Blade
+					un(7, i(25145, {	-- Wisdom Blade
+						["description"] = "Added in WOD only to Big Crate of Salvage",
+					})),
 					i(25146),	-- Light-Etched Longsword
 					i(25147),	-- Skystrider Katana
 					i(25148),	-- Bone Collector Sword

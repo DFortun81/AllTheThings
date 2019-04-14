@@ -11,12 +11,30 @@ _.Instances = { tier(7, {	-- Legion
 				ach(10709, {	-- You Used to Scrawl Me In Your Fel Tome
 					["description"] = "These spawn on any difficulty, but you'll only get one per run, making this achievement a six-run minimum.",
 					["groups"] = {
-						desc(crit(1), "Found in the Chamber of War Room immediately after the Amalgam of Souls fight, on a desk by the southern part of the room."),	-- Torn Page read
-						desc(crit(2), "Found in the Grand Hall, to the left of the broken staircase, by the bookshelves."),	-- Worn-Edged Page read
-						desc(crit(3), "Found in the Grand Hall, it's in the hallway connecting to the stairwell that takes you to Illysanna Ravencrest, tucked in the back on a desk."),	-- Dog-Eared Page read
-						desc(crit(4), "Found in Rookshold, the room filled with Wyrmtongue Tricker, on a table by three bookshelves and two weapon racks."),	-- Singed Page read
-						desc(crit(5), "Found in Rook's Rise, in the small round room connected to the stairs leading to Lord Ravencrest's Chamber after defeating Smashspite the Hateful."),	-- Ink-Splattered Page read
-						desc(crit(6), "Found in Lord Ravencrest's Chamber on the desk, at the end of the instance."),	-- Hastily-Scrawled Page read
+						{	-- Torn Page read
+							["criteriaID"] = 1,
+							["description"] = "Found in the Chamber of War Room immediately after the Amalgam of Souls fight, on a desk by the southern part of the room.",
+						},
+						{	-- Worn-Edged Page read
+							["criteriaID"] = 2,
+							["description"] = "Found in the Grand Hall, to the left of the broken staircase, by the bookshelves.",
+						},
+						{	-- Dog-Eared Page read
+							["criteriaID"] = 3,
+							["description"] = "Found in the Grand Hall, it's in the hallway connecting to the stairwell that takes you to Illysanna Ravencrest, tucked in the back on a desk.",
+						},
+						{	-- Singed Page read
+							["criteriaID"] = 4,
+							["description"] = "Found in Rookshold, the room filled with Wyrmtongue Tricker, on a table by three bookshelves and two weapon racks.",
+						},
+						{	-- Ink-Splattered Page read
+							["criteriaID"] = 5,
+							["description"] = "Found in Rook's Rise, in the small round room connected to the stairs leading to Lord Ravencrest's Chamber after defeating Smashspite the Hateful.",
+						},
+						{	-- Hastily-Scrawled Page read
+							["criteriaID"] = 6,
+							["description"] = "Found in Lord Ravencrest's Chamber on the desk, at the end of the instance.",
+						},
 					},
 				}),
 			}),

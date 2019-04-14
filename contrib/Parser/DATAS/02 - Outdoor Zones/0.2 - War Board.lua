@@ -16,9 +16,15 @@ _.Zones =
 			q(29388),	-- Guardians of Hyjal: Firelands Invasion!
 			un(40, q(36499)),	-- Iron Horde Invasion (LEGACY - pre WoD)
 			un(40, q(4494)),	-- March of the Silithid
-			desc(q(29612), "Players who have completed Vashj'ir will receive this version of The Art of War."),	-- The Art of War
-			desc(q(29611), "Players who have not completed Vashj'ir will receive this version of The Art of War."),	-- The Art of War
-			desc(q(34398), "If you want to do the Blasted Lands questline before going to Draenor, use the portal in Cleft of Shadow and speak to Thrall rather than accepting this quest."),	-- The Dark Portal
+			q(29612, {	-- The Art of War
+				["description"] = "Players who have completed Vashj'ir will receive this version of The Art of War.",
+			}),
+			q(29611, {	-- The Art of War
+				["description"] = "Players who have not completed Vashj'ir will receive this version of The Art of War.",
+			}),
+			q(34398, {	-- The Dark Portal
+				["description"] = "If you want to do the Blasted Lands questline before going to Draenor, use the portal in Cleft of Shadow and speak to Thrall rather than accepting this quest.",
+			}),
 			q(43926),	-- The Legion Returns
 			q(29157),	-- The Zandalari Menace
 			q(28493),	-- Warchief's Command: Ashenvale!

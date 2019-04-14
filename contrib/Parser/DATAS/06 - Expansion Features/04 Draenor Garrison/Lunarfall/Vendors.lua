@@ -787,7 +787,9 @@ _.ExpansionFeatures =
 								i(116735),	-- Recipe: Truesteel Pauldrons
 								i(118044),	-- Recipe: Truesteel Reshaper
 								i(116742),	-- Recipe: Truesteel Waistguard
-								desc(i(116764), "This item contains 1-5 gold. DON'T WASTE YOUR SECRETS!\n\nSide note: This gold counts toward gold-looting achievements. (Got My Mind on My Money, etc.)"),	-- Small Pouch of Coins
+								i(116764, {	-- Small Pouch of Coins
+									["description"] = "This item contains 1-5 gold. DON'T WASTE YOUR SECRETS!\n\nSide note: This gold counts toward gold-looting achievements. (Got My Mind on My Money, etc.)",
+								}),
 							}),
 							{	-- Plans: Blackrock Crucibles and Their Uses
 								["itemID"] = 108421,	-- Plans: Blackrock Crucibles and Their Uses

@@ -841,10 +841,15 @@ _.Zones =
 					}),
 					n(127705, {	-- Mother Rosula
 						["groups"] = {
-							desc(i(152999), "Use 100 of these to create a Disgusting Feast."),
-							desc(i(153013, {	-- Disgusting Feast
-								i(153252),	-- Rebellious Imp
-							}), "Use this at the fel lava pit inside of the cave to summon Mother Rosula. Gather imp meat from the imps inside the cave. You need 100 to create this item."),
+							i(152999, {
+								["description"] = "Use 100 of these to create a Disgusting Feast.",
+							}),
+							i(153013, {	-- Disgusting Feast
+								["description"] = "Use this at the fel lava pit inside of the cave to summon Mother Rosula. Gather imp meat from the imps inside the cave. You need 100 to create this item.",
+								["groups"] = {
+									i(153252),	-- Rebellious Imp
+								},
+							}),
 						},
 						["description"] = "Cave Location is |cFFFFFFFF65.5, 26.6|r\n\nIn order to summon Mother Rosula you will need to collect 100 |cFFFFD700Imp Meat|r and then you will combine them together to create the |cFFFFD700Disgusting Feast|r.  You will then use this item to summon her.\n\nThe pool you summon her at is directly in front of the second Imp Mother.",
 						["questID"] = 48970,

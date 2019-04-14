@@ -7,10 +7,14 @@ _.Zones =
 		m(62, {	-- Darkshore
 			["groups"] = {
 				n(-25, { 	-- Pet Battle
-					desc(p(508), "Can be found in the woods west of the Grove of the Ancients, usually on the treeline just before the beach."),	-- Darkshore Cub
+					p(508, {
+						["description"] = "Can be found in the woods west of the Grove of the Ancients, usually on the treeline just before the beach.",
+					}),	-- Darkshore Cub
 					p(378), 	-- Rabbit
 					p(417), 	-- Rat
-					desc(p(493), "Can commonly be found on the beaches of Darkshore."),	-- Shimmershell Snail
+					p(493, {	-- Shimmershell Snail
+						["description"] = "Can commonly be found on the beaches of Darkshore.",
+					}),
 					p(379), 	-- Squirrel
 					n(63083, {	-- Will Larsons
 						["groups"] = {

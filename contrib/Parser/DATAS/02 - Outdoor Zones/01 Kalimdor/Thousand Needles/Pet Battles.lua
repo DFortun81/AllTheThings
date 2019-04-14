@@ -10,7 +10,9 @@ _.Zones =
 					p(398),	-- Black Rat
 					p(424),	-- Roach
 					p(414),	-- Scorpid
-					desc(p(505), "Can be found in areas where the Twilight Hammer have set up camp, Twilight Bulwark and Twilight Withering."),	-- Twilight Iguana
+					p(505, {	-- Twilight Iguana
+						["description"] = "Can be found in areas where the Twilight Hammer have set up camp, Twilight Bulwark and Twilight Withering.",
+					}),
 					{	-- Kela Grimtotem
 						["questID"] = 31906,
 						["qg"] = 66452,	-- Kela Grimtotem

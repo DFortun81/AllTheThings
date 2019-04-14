@@ -640,10 +640,6 @@ cr = function(id, t)											-- Add a Creature List to an object.
 	return t;
 end
 crs = cr;
-desc = function(t, description)									-- Add a description to an object.
-	t.description = description;
-	return t;
-end
 dr = function(dropRate, t)										-- Add a Drop Rate to an object.
 	if t and t.itemID then
 		t.dr = dropRate;

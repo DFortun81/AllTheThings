@@ -7,7 +7,9 @@ _.Zones =
 		m(77, {	-- Felwood
 			["groups"] = {
 				n(-25, {	-- Pet Battle
-					desc(p(500), "Can be found around Shatter Scar Vale near Infernal Sentries."),	-- Minfernal
+					p(500, {	-- Minfernal
+						["description"] = "Can be found around Shatter Scar Vale near Infernal Sentries.",
+					}),
 					p(497),	-- Tainted Cockroach
 					p(498),	-- Tainted Moth
 					p(499),	-- Tainted Rat

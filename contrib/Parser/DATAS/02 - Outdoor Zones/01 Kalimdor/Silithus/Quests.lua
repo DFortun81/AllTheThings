@@ -535,8 +535,12 @@ _.Zones =
 						["sourceQuest"] = 7785,	-- Examine the Vessel
 					}),
 --[[ MICRO-HOLIDAY - CALL OF THE SCARAB
-					desc(qwe(qh(45785)), "This quest will appear when you enter Silithus during Call of the Scarab."),	-- Call of the Scarab
-					desc(qwe(qa(45787)), "This quest will appear when you enter Silithus during Call of the Scarab."),	-- Call of the Scarab
+					qwe(qh(45785, {	-- Call of the Scarab
+						["description"] = "This quest will appear when you enter Silithus during Call of the Scarab.",
+					})),
+					qwe(qa(45787, {	-- Call of the Scarab
+						["description"] = "This quest will appear when you enter Silithus during Call of the Scarab.",
+					})),
 					qwe(qg(117432, qh(45639))),	-- Chilled Meat (CotS)
 					qwe(qg(117434, qa(45731)))	-- Chilled Meat (CotS)
 					n(117662, {	-- The Duke of Cynders

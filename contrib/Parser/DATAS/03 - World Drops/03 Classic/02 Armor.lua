@@ -264,7 +264,9 @@ _.WorldDrops =
 					un(7, i(20693)),	-- Weighted Cloak
 					un(7, i(20697)),	-- Crystalline Threaded Cape
 					un(7, i(2241)),	-- Desperado Cape
-					desc(un(7, i(22782)), "Added in WOD only to Big Crate of Salvage"),	-- Sin'dorei Cloak of Warding
+					un(7, i(22782, {	-- Sin'dorei Cloak of Warding
+						["description"] = "Added in WOD only to Big Crate of Salvage",
+					})),
 					un(7, i(2284)),	-- Rat Cloth Cloak
 					un(7, i(3018)),	-- Hide of Lupos
 					i(3475),	-- Cloak of Flames
@@ -363,12 +365,16 @@ _.WorldDrops =
 					i(9959),	-- Warmonger's Cloak
 				}),
 				n(-323, {	-- Chest
-					desc(un(7, i(54784)), "Added in WOD only to Big Crate of Salvage"),	-- Burnished Tunic		
+					un(7, i(54784, {	-- Burnished Tunic
+						["description"] = "Added in WOD only to Big Crate of Salvage",
+					})),
 					i(10328),	-- Scarlet Chestpiece
 					i(10581),	-- Death's Head Vestment
 					i(10583),	-- Quillward Harness
 					i(120166),	-- Gorestained Garb
-					desc(un(7, i(120952)), "Added in WOD only to Big Crate of Salvage"),	-- Slarkhide
+					un(7, i(120952, {	-- Slarkhide
+						["description"] = "Added in WOD only to Big Crate of Salvage",
+					})),
 					un(7, i(1211)),	-- Gnoll War Harness
 					i(12542),	-- Funeral Pyre Vestment
 					i(1297),	-- Robes of the Shadowcaster

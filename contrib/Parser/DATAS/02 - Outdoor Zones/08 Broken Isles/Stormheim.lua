@@ -438,7 +438,9 @@ _.Zones =
 							}))),
 							sq(39837, qg(91531, q(38339))),			-- A Little Kelp From My Foes / Colborn the Unworthy
 							sq({38324,38339}, qg(91531, q(38347, {	-- Stealth by Seaweed / Colborn the Unworthy
-								desc(n(91386), "Walk by him. Don't get killed."),	-- Guarm
+								n(91386, {	-- Guarm
+									["description"] = "Walk by him. Don't get killed.",
+								}),
 							}))),
 							sq(38347, qg(97319, q(39848))),			-- A Desperate Bargain / Ashildir <Queen of the Valkyra>
 							sq(39848, qg(91387, q(39857))),			-- The Eternal Nemesis / Helya's Altar
@@ -450,7 +452,9 @@ _.Zones =
 							sq(39849, qg(97319, q(39851))),			-- Allies in Death / Ashildir <Queen of the Valkyra>
 							-- sq(39849, qg(97319, q(39852))),			-- [PH] Collect Weapons / Ashildir <Queen of the Valkyra>
 							sq({39849,39851,39852}, qg(97319, q(39853, {			-- Victory is Eternal / Ashildir <Queen of the Valkyra>
-								desc(n(91948), "Soloable, but might require a group."),	-- Geir <The Eternal Nemesis>
+								n(91948, {	-- Geir <The Eternal Nemesis>
+									["description"] = "Soloable, but might require a group.",
+								}),
 							}))),
 							sq(39853, qg(97319, q(39855, {	-- Paid in Lifeblood / Ashildir <Queen of the Valkyra>
 								i(132832),	-- Bones of Geir	
@@ -466,7 +470,9 @@ _.Zones =
 							}))),
 						}),
 						n(-16, {	-- Rares
-							desc(n(109163), "Objective of the World Quest 'DANGER: Captain Dargun'. Is not up otherwise."),			-- Captain Dargun
+							n(109163, {	-- Captain Dargun
+								["description"] = "Objective of the World Quest 'DANGER: Captain Dargun'. Is not up otherwise.",
+							}),
 							n(92040, {	-- Fenri
 								["groups"] = {
 									i(129044),	-- Frothing Helhound's Fury
@@ -482,12 +488,24 @@ _.Zones =
 										["classes"] = {1},
 										["dr"] = 100,
 										["groups"] = {
-											desc(q(46229), "His Name Is Dragonblood"),	-- Valarjar Lore Unlock 1
-											desc(q(46230), "The Last Words of Asgrim the Dreadkiller"),	-- Valarjar Lore Unlock 2
-											desc(q(46231), "A Shieldmaiden's Creed"),	-- Valarjar Lore Unlock 3
-											desc(q(46232), "The Prophecy of Rythas the Oracle"),	-- Valarjar Lore Unlock 4
-											desc(q(46233), "The Lessons of the Blackfist"),	-- Valarjar Lore Unlock 5
-											desc(q(46234), "Volund's Folly"),	-- Valarjar Lore Unlock 6
+											q(46229, {	-- Valarjar Lore Unlock 1
+												["description"] = "His Name Is Dragonblood",
+											}),
+											q(46230, {	-- Valarjar Lore Unlock 2
+												["description"] = "The Last Words of Asgrim the Dreadkiller",
+											}),
+											q(46231, {	-- Valarjar Lore Unlock 3
+												["description"] = "A Shieldmaiden's Creed",
+											}),
+											q(46232, {	-- Valarjar Lore Unlock 4
+												["description"] = "The Prophecy of Rythas the Oracle",
+											}),
+											q(46233, {	-- Valarjar Lore Unlock 5
+												["description"] = "The Lessons of the Blackfist",
+											}),
+											q(46234, {	-- Valarjar Lore Unlock 6
+												["description"] = "Volund's Folly",
+											}),
 										}
 									}),
 								}

@@ -244,7 +244,9 @@ _.WorldEvents =
 			un(7, i(128312)),	-- Elixir of the Rapid Mind
 			un(9, i(45037)),	-- Epic Purple Shirt
 			un(9, i(90176)),	-- Flintlocke's Blasthammer
-			desc(un(1, i(110591)), "Russ Petersen@nite_moogle\nNov 10\n\n@AskMrRobot it won't be available in 6.0. we made an updated version and decided not to use it.\n\nPlease make this item use the same source ID.\n - Crieve"), 	-- Flintlocke's Blasthammer
+			un(1, i(110591, {	-- Flintlocke's Blasthammer
+				["description"] = "Russ Petersen@nite_moogle\nNov 10\n\n@AskMrRobot it won't be available in 6.0. we made an updated version and decided not to use it.\n\nPlease make this item use the same source ID.\n - Crieve",
+			})),
 			{	-- Grimoire of the Four Winds
 				["itemID"] = 110672,	-- Grimoire of the Four Winds
 				["u"] = 9,				-- Black Market AH Filter

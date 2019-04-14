@@ -8,9 +8,13 @@ _.Zones =
 			["groups"] = {
 				n(-25, {	-- Pet Battle
 					p(635),	-- Adder
-					desc(p(474), "Can be found under large trees alongside Plainsland Cheetahs."),	-- Cheetah Cub
+					p(474, {	-- Cheetah Cub
+						["description"] = "Can be found under large trees alongside Plainsland Cheetahs.",
+					}),
 					p(631),	-- Emerald Boa
-					desc(p(1157), "Can be found at The Dry Hills, alongside Witchwing Harpies."),	-- Harpy Youngling
+					p(1157, {	-- Harpy Youngling
+						["description"] = "Can be found at The Dry Hills, alongside Witchwing Harpies.",
+					}),
 					p(386),	-- Prairie Dog
 					p(419),	-- Small Frog
 					{	-- Analynn

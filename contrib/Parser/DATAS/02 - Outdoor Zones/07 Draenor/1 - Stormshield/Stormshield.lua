@@ -1337,7 +1337,9 @@ _.Zones =
 							i(160662),  -- Recipe: Blackwater Anti-Venom
 							i(160663),  -- Recipe: Healing Tonic
 							i(160661),  -- Recipe: Fire Ammonite Oil
-							desc(i(114028), "Contains between 1 and 5 gold. Don't waste your secrets.\n\nSide note: Counts towards Looted Gold Achievements. (Got My Mind on My Money, etc)"),	-- Small Pouch of Coins
+							i(114028, {	-- Small Pouch of Coins
+								["description"] = "Contains between 1 and 5 gold. Don't waste your secrets.\n\nSide note: Counts towards Looted Gold Achievements. (Got My Mind on My Money, etc)",
+							}),
 						}),
 					}),
 					n(85849, {	-- Kinkade Jakobs <Blueprints Trader>
@@ -1529,7 +1531,9 @@ _.Zones =
 							i(116735),	-- Recipe: Truesteel Pauldrons
 							i(118044),	-- Recipe: Truesteel Reshaper
 							i(116742),	-- Recipe: Truesteel Waistguard
-							desc(i(116764), "This item contains 1-5 gold. DON'T WASTE YOUR SECRETS!\n\nSide note: This gold counts toward gold-looting achievements. (Got My Mind on My Money, etc.)"),	-- Small Pouch of Coins
+							i(116764, {	-- Small Pouch of Coins
+								["description"] = "This item contains 1-5 gold. DON'T WASTE YOUR SECRETS!\n\nSide note: This gold counts toward gold-looting achievements. (Got My Mind on My Money, etc.)",
+							}),
 						}),
 						i(108421, {	-- Plans: Blackrock Crucibles and Their Uses
 							["u"] = 1,

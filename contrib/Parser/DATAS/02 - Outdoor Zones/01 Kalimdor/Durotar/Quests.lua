@@ -498,7 +498,9 @@ _.Zones =
 					qg(100453, qh(40522)),	-- Fate of the Horde
 					qg(96686, qh(39698)),	-- Making the Rounds
 --					qh(44543),	-- The Battle for Broken Shore (looks like this is an auto-popup quest to take a wind rider from the ship to the shore, no QG)
-					desc(qh(47835), "This quest will be automatically offered upon completion of the Assault on Broken Shore scenario and returning to Dalaran.  You may also choose the option to skip the scenario when speaking to Khadgar."),	-- The Hand of Fate (QG in Broken Isles Dalaran)
+					qh(47835, {	-- The Hand of Fate (QG in Broken Isles Dalaran)
+						["description"] = "This quest will be automatically offered upon completion of the Assault on Broken Shore scenario and returning to Dalaran.  You may also choose the option to skip the scenario when speaking to Khadgar.",
+					}),
 					qg(96683, qh(38307)),	-- The Warchief Beckons (QG also in Dalaran)
 					qg(122065, qh(47867)),	-- Two If By Sea
 --]]

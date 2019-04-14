@@ -530,8 +530,12 @@ _.Zones =
 							831,	-- Sea Crawler
 						},
 					}),
-					desc(i(2698), "Can drop from any mob in the zone, would recommend farming the murlocs in the north."),	-- Recipe: Cooked Crab Claw
-					desc(i(728), "Can drop from any mob in the zone, would recommend farming the Riverpaw Gnolls."),		-- Recipe: Westfall Stew
+					i(2698, {	-- Recipe: Cooked Crab Claw
+						["description"] = "Can drop from any mob in the zone, would recommend farming the murlocs in the north.",
+					}),
+					i(728, {	-- Recipe: Westfall Stew
+						["description"] = "Can drop from any mob in the zone, would recommend farming the Riverpaw Gnolls.",
+					}),
 					i(821,  {	-- Riverpaw Leather Vest
 						["crs"] = {
 							123,	-- Riverpaw Mongrel

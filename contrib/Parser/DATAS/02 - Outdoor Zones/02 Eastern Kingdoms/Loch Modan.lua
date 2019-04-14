@@ -687,7 +687,9 @@ _.Zones =
 							1177,	-- Tunnel Rat Surveyor
 						},
 					}),
-					desc(i(2700), "Can drop from any mob in the zone, would recommend farming the crocolisks."),	-- Recipe: Succulent Pork Ribs
+					i(2700, {	-- Recipe: Succulent Pork Ribs
+						["description"] = "Can drop from any mob in the zone, would recommend farming the crocolisks.",
+					}),
 					i(2281, {	-- Rodentia Flint Axe
 						["crs"] = {
 							1176,	-- Tunnel Rat Forager

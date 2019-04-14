@@ -606,7 +606,9 @@ _.Zones =
 						i(137867),	-- Design: Shadowruby Band (Rank 3)
 					}),
 					prof(185, {	-- Cooking
-						desc(i(133820), "Can drop from any Drogbar."), 	-- Recipe: Drogbar-Style Salmon
+						i(133820, {	-- Recipe: Drogbar-Style Salmon
+							["description"] = "Can drop from any Drogbar.",
+						}),
 					}),
 					{	-- Crystal Eyes
 						["questID"] = 41190,		-- Crystal Eyes
@@ -853,7 +855,9 @@ _.Zones =
 						},
 					}),
 					prof(197, {	-- Tailoring
-						desc(i(137681), "Can drop from any Feltotem."),	-- Recipe: Bloodtotem Saddle Blanket
+						i(137681, {	-- Recipe: Bloodtotem Saddle Blanket
+							["description"] = "Can drop from any Feltotem.",
+						}),
 					}),
 				}),
 				n(-17, { 	-- Quests

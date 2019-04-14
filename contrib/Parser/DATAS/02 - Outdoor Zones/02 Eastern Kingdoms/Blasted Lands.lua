@@ -449,7 +449,9 @@ _.Zones =
 					qg(42298, qa(26170)),	-- The Final Ritual
 					qg(42298, qa(26159)),	-- The First Step
 					qg(7506, qh(25685)),	-- The First Step
-					desc(q(25707), "Pick up this quest by interacting with one of the chests full of baby Murlocs off the coast of the Red Reaches."),	-- The Future of the Rockpool
+					q(25707, {	-- The Future of the Rockpool
+						["description"] = "Pick up this quest by interacting with one of the chests full of baby Murlocs off the coast of the Red Reaches.",
+					}),
 					qg(19254, qh(25696)),	-- The Sunveil Excursion
 					qg(41159, qh(25692)),	-- The Vile Blood of Demons
 					qg(42299, qa(26165)),	-- The Vile Blood of Demons

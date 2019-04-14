@@ -10,14 +10,20 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 		["mapID"] = 200,
 		["coord"] = { 61.2, 52.7, 115 },	-- The Ruby Sanctum, Dragonblight
 		["groups"] = {
-			desc(n(39751), "Must be killed before you can fight General Zarithrian or talk to the quest giver."),	-- Baltharus the Warborn
+			n(39751, {	-- Baltharus the Warborn
+				["description"] = "Must be killed before you can fight General Zarithrian or talk to the quest giver.",
+			}),
 			{
 				["questID"] = 26034,		-- The Twilight Destroyer
 				["qg"] = 40429,				-- Krasus <Consort of the Queen>
 				["sourceQuest"] = 26013,	-- Assault on the Sanctum
 			},
-			desc(n(39747), "Must be killed before you can fight General Zarithrian."),	-- Saviana Ragefire
-			desc(n(39746), "Must be killed before you can fight Halion."),	-- General Zarithrian
+			n(39747, {	-- Saviana Ragefire
+				["description"] = "Must be killed before you can fight General Zarithrian."
+			}),
+			n(39746, {	-- General Zarithrian
+				["description"] = "Must be killed before you can fight Halion."
+			}),
 			d(3, {	-- 10-Player
 				cr(39863, e(1652, {	-- Halion
 					ach(4817),	-- The Twilight Destroyer (10 player)

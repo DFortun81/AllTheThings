@@ -46,7 +46,9 @@ _.Zones =
 						},
 						["description"] = "You may only learn this pet once per character from a Battle Pet Trainer.|r"
 					}),
-					desc(qg(63014, qa(31308)), "This quest is part of a chain initiated by learning Battle Pet Training."),	-- Learning the Ropes
+					qg(63014, qa(31308, {	-- Learning the Ropes
+						["description"] = "This quest is part of a chain initiated by learning Battle Pet Training.",
+					})),
 					qg(63014, qa(31309)),	-- On The Mend
 					qg(63014, qa(31785)),	-- Level Up!
 					qg(63014, qa(31550)),	-- Got one!
@@ -122,7 +124,8 @@ _.Zones =
 					qg(247, qa(   87)),	-- Goldtooth					
 					qg(42256, qa(26378)),	-- Hero's Call: Westfall! (add'l QGs 240, 261, 294, 963)
 					qg(253, qa(   60)),	-- Kobold Candles
-					desc(qa(32618), "This quest is available to Humans upon reaching level 20.", {	-- Learn To Ride	-- Learn To Ride
+					qa(32618, {	-- Learn To Ride
+						["description"] = "This quest is available to Humans upon reaching level 20.",
 						["races"] = {1},	-- Human
 					}),
 --					qa(14079),	-- Learn to Ride in Elwynn Forest (LEGACY)

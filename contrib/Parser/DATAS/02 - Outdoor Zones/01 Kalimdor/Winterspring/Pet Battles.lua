@@ -10,11 +10,15 @@ _.Zones =
 					p(487),	-- Alpine Chipmunk
 					p(441),	-- Alpine Hare
 					p(1163),	-- Anodized Robo Cub
-					desc(p(634), "Can most commonly be found in Frostwhisper Gorge in southern Winterspring."),	-- Crystal Spider
+					p(634, {	-- Crystal Spider
+						["description"] = "Can most commonly be found in Frostwhisper Gorge in southern Winterspring.",
+					}),
 					p(633),	-- Mountain Skunk
 					p(472),	-- Rabid Nut Varmint 5000
 					p(471),	-- Robo-Chick
-					desc(p(69), "Starts spawning December 21st. Stops spawning March 20th"),	-- Snowy Owl
+					p(69, {	-- Snowy Owl
+						["description"] = "Starts spawning December 21st. Stops spawning March 20th",
+					}),
 					{	-- Grand Master Trixxy
 						["questID"] = 31897,
 						["qg"] = 66466,	-- Grand Master Trixxy

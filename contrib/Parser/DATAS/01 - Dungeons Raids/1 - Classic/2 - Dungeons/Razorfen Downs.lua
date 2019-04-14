@@ -153,9 +153,14 @@ _.Instances = { tier(1, {	-- Classic
 				i(10775),	-- Carapace of Tuten'kash
 				i(10777),	-- Arachnid Gloves
 			})),
-			un(1, n(8696, {		-- Henry Stern
-				desc(un(1, recipe(13028)), "Henry Stern, who is currently the only source of acquiring Goldthorn Tea, is still unavailable. Goldthorn Tea will still tease us on our Unlearned tab until Blizzard brings Henry back, take the recipe off the list, or give us another way to obtain it."),	-- Goldthorn Tea
-			})),
+			n(8696, {		-- Henry Stern
+				["u"] = 43,
+				["groups"] = {
+					un(2, recipe(13028, {	-- Goldthorn Tea
+						["description"] = "Henry Stern, who is currently the only source of acquiring Goldthorn Tea, is still unavailable. Goldthorn Tea will still tease us on our Unlearned tab until Blizzard brings Henry back, take the recipe off the list, or give us another way to obtain it.",
+					})),
+				},
+			}),
 			n(75813, {			-- Sah'rhee
 				["coords"] = {
 					{ 80.0, 26.0, 300 },	-- The Murder Pens

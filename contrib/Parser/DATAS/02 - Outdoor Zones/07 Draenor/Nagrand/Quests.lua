@@ -177,8 +177,12 @@ _.Zones =
 								},
 							})),
 							n(-168, {	-- Other Quests
-								desc(qa(34953), "This quest is only available if you do not accept The Friend o' My Enemy from Hansel Heavyhands."),	-- Blood of the Burning Blade
-								desc(qa(34952), "This quest is only available if you do not accept Blood of the Burning Blade from Lantresor of the Blade."),	-- The Friend o' My Enemy
+								qa(34953, {	-- Blood of the Burning Blade
+									["description"] = "This quest is only available if you do not accept The Friend o' My Enemy from Hansel Heavyhands.",
+								}),
+								qa(34952, {	-- The Friend o' My Enemy
+									["description"] = "This quest is only available if you do not accept Blood of the Burning Blade from Lantresor of the Blade.",
+								}),
 								q(34512),	-- Declawing the Competition
 								q(34810),	-- Gazmolf Futzwangler and the Highmaul Crusade
 								q(35632),	-- A Lesson in Archaeology
@@ -214,8 +218,12 @@ _.Zones =
 									i(114685),	-- Stormsteppe Sabatons
 									i(114684),	-- Windshaper Treads
 								}),
-								desc(qa(34717), "This version of Operation: Just Arrowhead can only be obtained if you do not leave Rangari Ogir's area after turning in Operation: Surprise Party. If you leave and come back later you will receive a different version of the quest. Neither is required for quest progression through Nagrand."),	-- Operation: Just Arrowhead
-								desc(qa(34720), "This version of Operation: Just Arrowhead can only be obtained if you left Rangari Ogir's area after turning in Operation: Surprise Party. If you did not leave you will receive a different version of the quest. Neither is required for quest progression through Nagrand."),	-- Operation: Just Arrowhead
+								qa(34717, {	-- Operation: Just Arrowhead
+									["description"] = "This version of Operation: Just Arrowhead can only be obtained if you do not leave Rangari Ogir's area after turning in Operation: Surprise Party. If you leave and come back later you will receive a different version of the quest. Neither is required for quest progression through Nagrand.",
+								}),
+								qa(34720, {	-- Operation: Just Arrowhead
+									["description"] = "This version of Operation: Just Arrowhead can only be obtained if you left Rangari Ogir's area after turning in Operation: Surprise Party. If you did not leave you will receive a different version of the quest. Neither is required for quest progression through Nagrand.",
+								}),
 --[[						
 								qa(34597),	-- Removing the Paper Trail
 								qh(35156),	-- Removing the Paper Trail

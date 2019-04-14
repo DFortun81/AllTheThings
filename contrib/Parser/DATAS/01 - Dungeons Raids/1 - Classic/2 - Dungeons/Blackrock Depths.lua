@@ -583,7 +583,6 @@ _.Instances = { tier(1, {	-- Classic
 					i(11932), 	-- Guiding Stave of Wisdom
 					i(11817), 	-- Lord General's Sword
 					un(45, i(12557)),	-- Ebonsteel Spaulders
-					--un(45, desc(i(12557), "|CFFFF0000Please let the ATT Discord know if you get this item to drop. Crieve and a number of users have been unable to get this item to drop. Also submit a bug report to Blizzard!|r")), 	-- Ebonsteel Spaulders
 					i(11820), 	-- Royal Decorated Armor
 					i(11821), 	-- Warstrife Leggings
 					i(11810),	-- Force of Will

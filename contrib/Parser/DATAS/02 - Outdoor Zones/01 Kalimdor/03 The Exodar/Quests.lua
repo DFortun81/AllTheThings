@@ -9,8 +9,6 @@ _.Zones =
 				n(-17, { 	-- Quests
 --[[
 					qg(17120, qa(27225, {	-- A Summons from Ander Germaine
-						["groups"] = {
-						},
 						["classes"] = {1},
 					})),
 					qg(16817, qa( 9365)),	-- A Thief's Reward
@@ -52,44 +50,29 @@ _.Zones =
 					}),
 					--[[
 					qg(16749, qa(27271, {	-- Journey to the Wizard's Sanctum
-						["groups"] = {
-						},
 						["classes"] = {8},
 					})),
-					desc(qa(32661), "This quest is available to Draenei upon reaching level 20.", {	-- Learn To Ride
-						["groups"] = {
-						},
+					qa(32661, {	-- Learn To Ride
+						["description"] = "This quest is available to Draenei upon reaching level 20.",
 						["races"] = {11},
 					}),
 --					qa(14082),	-- Learn to Ride at the Exodar (LEGACY)
 					qg(16761, qa(27265, {	-- Lord Grayson Shadowbreaker
-						["groups"] = {
-						},
 						["classes"] = {2},
 					})),
 					qg(16756, qa(27268, {	-- Make Haste to the Cathedral
-						["groups"] = {
-						},
 						["classes"] = {5},
 					})),
 					qg(17120, qa(28258, {	-- Meet with Ander Germaine
-						["groups"] = {
-						},
 						["classes"] = {1},
 					})),
 					qg(16761, qa(28268, {	-- Meet with Lord Grayson Shadowbreaker
-						["groups"] = {
-						},
 						["classes"] = {2},
 					})),
 					qg(16749, qa(28263, {	-- Meet with Maginor Dumas
-						["groups"] = {
-						},
 						["classes"] = {8},
 					})),
 					qg(17122, qa(28260, {	-- Meet with Wulf Hansreim
-						["groups"] = {
-						},
 						["classes"] = {3},
 					})),
 					]]--
@@ -103,8 +86,6 @@ _.Zones =
 					qg(17468, qa( 9762)),	-- The Unwritten Prophecy
 					qg(17468, qa( 9699)),	-- Truth or Fiction
 					qg(17122, qa(27266, {	-- Wulf Calls
-						["groups"] = {
-						},
 						["classes"] = {3},
 					})),				
 --]]				

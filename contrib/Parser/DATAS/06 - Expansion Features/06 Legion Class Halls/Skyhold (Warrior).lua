@@ -33,23 +33,47 @@ _.ExpansionFeatures =
 					i(144436, {	-- Lost Legend of Odyn
 						["description"] = "This item can drop off of any Vyrkul in the Broken Isles as a Warrior. (any spec)",
 						["groups"] = {
-							desc(q(46223), "Great Odyn and the Firelord"),	-- Odyn Lore Unlock 1
-							desc(q(46224), "The Wanderer and the Serpent"),	-- Odyn Lore Unlock 2
-							desc(q(46225), "Halls of Gold and Glory"),	-- Odyn Lore Unlock 3
-							desc(q(46226), "The Keeper's Eye"),	-- Odyn Lore Unlock 4
-							desc(q(46227), "First of the Val'kyr"),	-- Odyn Lore Unlock 5
-							desc(q(46228), "The Sealing of the Halls of Valor"),	-- Odyn Lore Unlock 6
+							q(46223, {	-- Odyn Lore Unlock 1
+								["description"] = "Great Odyn and the Firelord",
+							}),
+							q(46224, {	-- Odyn Lore Unlock 2
+								["description"] = "The Wanderer and the Serpent",
+							}),
+							q(46225, {	-- Odyn Lore Unlock 3
+								["description"] = "Halls of Gold and Glory",
+							}),
+							q(46226, {	-- Odyn Lore Unlock 4
+								["description"] = "The Keeper's Eye",
+							}),
+							q(46227, {	-- Odyn Lore Unlock 5
+								["description"] = "First of the Val'kyr",
+							}),
+							q(46228, {	-- Odyn Lore Unlock 6
+								["description"] = "The Sealing of the Halls of Valor",
+							}),
 						}
 					}),
 					i(144437, {	-- Lost Legend of the Valarjar
 						["description"] = "This item can drop off of any Vyrkul in the Broken Isles as a Warrior. (any spec)",
 						["groups"] = {
-							desc(q(46229), "His Name Is Dragonblood"),	-- Valarjar Lore Unlock 1
-							desc(q(46230), "The Last Words of Asgrim the Dreadkiller"),	-- Valarjar Lore Unlock 2
-							desc(q(46231), "A Shieldmaiden's Creed"),	-- Valarjar Lore Unlock 3
-							desc(q(46232), "The Prophecy of Rythas the Oracle"),	-- Valarjar Lore Unlock 4
-							desc(q(46233), "The Lessons of the Blackfist"),	-- Valarjar Lore Unlock 5
-							desc(q(46234), "Volund's Folly"),	-- Valarjar Lore Unlock 6
+							q(46229, {	-- Valarjar Lore Unlock 1
+								["description"] = "His Name Is Dragonblood",
+							}),
+							q(46230, {	-- Valarjar Lore Unlock 2
+								["description"] = "The Last Words of Asgrim the Dreadkiller",
+							}),
+							q(46231, {	-- Valarjar Lore Unlock 3
+								["description"] = "A Shieldmaiden's Creed",
+							}),
+							q(46232, {	-- Valarjar Lore Unlock 4
+								["description"] = "The Prophecy of Rythas the Oracle",
+							}),
+							q(46233, {	-- Valarjar Lore Unlock 5
+								["description"] = "The Lessons of the Blackfist",
+							}),
+							q(46234, {	-- Valarjar Lore Unlock 6
+								["description"] = "Volund's Folly",
+							}),
 						}
 					}),
 					q(43643, {	-- Secrets of the Axes

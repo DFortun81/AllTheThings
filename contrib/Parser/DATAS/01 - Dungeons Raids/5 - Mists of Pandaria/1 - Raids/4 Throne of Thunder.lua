@@ -382,7 +382,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							80633,	-- Lorewalker Han <Raid Finder Storyteller>
 						},
 						["groups"] = {
-							desc(i( 98132), "Must obtain 250 stacks of Spray Water from the geysers before Tortos."),	-- Shado-Pan Geyser Gun
+							i(98132, {	-- Shado-Pan Geyser Gun
+								["description"] = "Must obtain 250 stacks of Spray Water from the geysers before Tortos.",
+							}),
 							cr(67977, e(825, {	-- Tortos
 								i(95343), 	-- Treasures of the Thunder King
 								i(95686),	-- Shellsplitter Greataxe

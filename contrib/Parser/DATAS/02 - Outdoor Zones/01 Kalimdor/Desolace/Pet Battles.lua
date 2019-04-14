@@ -17,7 +17,9 @@ _.Zones =
 					p(424),	-- Roach
 					p(482),	-- Rock Viper
 					p(419),	-- Small Frog
-					desc(p(485), "This wild pet can be found in the south eastern area of Desolace. It only spawns at night."),	-- Stone Armadillo
+					p(485, {	-- Stone Armadillo
+						["description"] = "This wild pet can be found in the south eastern area of Desolace. It only spawns at night.",
+					}),
 					p(480),	-- Topaz Shale Hatchling
 					{	-- Cassandra Kaboom
 						["questID"] = 31870,

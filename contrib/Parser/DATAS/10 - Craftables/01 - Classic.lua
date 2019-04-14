@@ -1353,7 +1353,9 @@ _.Craftables =
 				un(8, i(19157)),	-- Chromatic Gauntlets
 				un(8, i(8347)),		-- Dragonscale Gauntlets
 				-- Dreamscale Breastplate
-				desc(un(8, i(20380)), "While this recipe is still available, the mats required to craft it are not"),
+				un(8, i(20380, {
+					["description"] =  "While this recipe is still available, the mats required to craft it are not",
+				})),
 				un(8, i(15078)),	-- Heavy Scorpid Gauntlets
 				un(8, i(15079)),	-- Heavy Scorpid Leggings
 				un(8, i(15081)),	-- Heavy Scorpid Shoulders
@@ -1534,7 +1536,9 @@ _.Craftables =
 				i(10033),	-- Red Mageweave Headband
 				i(13866),	-- Runecloth Headband
 				i(4323),	-- Shadow Hood
-				desc(i(10025), "Required for the |cff3399ffLucid Nightmare|r riddle mount."),	-- Shadoweave Mask
+				i(10025, {	-- Shadoweave Mask
+					["description"] = "Required for the |cff3399ffLucid Nightmare|r riddle mount.",
+				}),
 				i(7050),	-- Silk Headband
 				i(22757),	-- Sylvan Crown
 				i(10008),	-- White Bandit Mask
