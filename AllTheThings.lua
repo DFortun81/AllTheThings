@@ -924,16 +924,6 @@ local function BuildSourceTextForTSM(group, l)
 	end
 	return L["TITLE"];
 end
-local function ProcessGroup(data, object)
-	if app.VisibilityFilter(object) then
-		tinsert(data, object);
-		if object.g and object.expanded then
-			for j, group in ipairs(object.g) do
-				ProcessGroup(data, group);
-			end
-		end
-	end
-end
 local function GetSourceID(itemLink, itemID)
     if IsDressableItem(itemLink) then
 		-- Updated function courtesy of CanIMogIt, Thanks AmiYuy and Team! :D
@@ -8129,6 +8119,16 @@ function app:ToggleWindow(suffix)
 	local window = app.Windows[suffix];
 	if window then ToggleWindow(window); end
 end
+local function ProcessGroup(data, object)
+	if app.VisibilityFilter(object) then
+		tinsert(data, object);
+		if object.g and object.expanded then
+			for j, group in ipairs(object.g) do
+				ProcessGroup(data, group);
+			end
+		end
+	end
+end
 local function UpdateWindow(self, force, got)
 	-- If this window doesn't have data, do nothing.
 	if not self.data then return; end
@@ -8139,13 +8139,7 @@ local function UpdateWindow(self, force, got)
 	end
 	if self.data and (force or self:IsVisible()) then
 		self.data.expanded = true;
-		if self.data.baseIndent and self.data.g then
-			for i, data in ipairs(self.data.g) do
-				ProcessGroup(self.rowData, data);
-			end
-		else
-			ProcessGroup(self.rowData, self.data);
-		end
+		ProcessGroup(self.rowData, self.data);
 		
 		-- Does this user have everything?
 		if self.data.total then
