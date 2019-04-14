@@ -136,10 +136,15 @@ _.Zones =
 					p(819), 	-- Wild Crimson Hatchling
 					p(818), 	-- Wild Golden Hatchling
 					p(817), 	-- Wild Jade Hatchling
-					qr(q(31953, {	-- Grand Master Hyuna
-						i(89125),	-- Sack of Pet Supplies
-					})),
-					qr(q(32440, {	-- Whispering Pandaren Spirit
+					q(31953, {	-- Grand Master Hyuna
+						["repeatable"] = true,
+						["groups"] = {
+							i(89125),	-- Sack of Pet Supplies
+						},
+					}),
+					q(32440, {	-- Whispering Pandaren Spirit
+						["description"] = "Must complete the quest Pandaren Spirit Tamer before this Daily becomes available.|r",
+						["repeatable"] = true,
 						["groups"] = {
 							i(93146, {	-- Pandaren Spirit Pet Supplies
 								i(89139),	-- Chain Pet Leash
@@ -147,8 +152,7 @@ _.Zones =
 								i(92799),	-- Pandaren Air Spirit
 							})
 						},
-						["description"] = "Must complete the quest Pandaren Spirit Tamer before this Daily becomes available.|r",
-					})),
+					}),
 				}),
 				n(-38, {	-- Profession
 					prof(171, {	-- Alchemy

@@ -1129,7 +1129,9 @@ _.ExpansionFeatures =
 							["modID"] = 2,
 							["repeatable"] = true,
 						}),
-						qd(q(37142, {	-- Ogre Ancestry
+						q(37142, {	-- Ogre Ancestry
+							["qg"] = 88013,	-- Lunk
+							["isDaily"] = true,
 							["groups"] = {
 								i(119040, {	-- Cache of Mingled Treasures
 									i(109829),	-- Belt of Burning Focus
@@ -1219,8 +1221,7 @@ _.ExpansionFeatures =
 									i(109877),	-- Verdant Plate Wristguards
 								}),
 							},
-							["qg"] = 88013,	-- Lunk
-						})),
+						}),
 						q(37148, {	-- Oralius' Adventure
 							["groups"] = {
 								i(118922),	-- Oralius' Whispering Crystal

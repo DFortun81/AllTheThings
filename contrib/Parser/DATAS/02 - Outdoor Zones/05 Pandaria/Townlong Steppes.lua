@@ -115,10 +115,15 @@ _.Zones =
 					p(741), 	-- Silent Hedgehog
 					p(729), 	-- Tolai Hare
 					p(740), 	-- Yakrat
-					qr(q(31991, {	-- Grand Master Zusshi
-						i(89125),	-- Sack of Pet Supplies
-					})),
-					qr(q(32434, {	-- Burning Pandaren Spirit
+					q(31991, {	-- Grand Master Zusshi
+						["repeatable"] = true,
+						["groups"] = {
+							i(89125),	-- Sack of Pet Supplies
+						},
+					}),
+					q(32434, {	-- Burning Pandaren Spirit
+						["repeatable"] = true,
+						["description"] = "Must complete the quest Pandaren Spirit Tamer before this Daily becomes available.|r",
 						["groups"] = {
 							i(93146, {	-- Pandaren Spirit Pet Supplies
 								i(89139),	-- Chain Pet Leash
@@ -126,8 +131,7 @@ _.Zones =
 								i(92798),	-- Pandaren Fire Spirit
 							})
 						},
-						["description"] = "Must complete the quest Pandaren Spirit Tamer before this Daily becomes available.|r",
-					})),
+					}),
 				}),
 				n(-38, { 	-- Profession
 					prof(356, {	-- Fishing

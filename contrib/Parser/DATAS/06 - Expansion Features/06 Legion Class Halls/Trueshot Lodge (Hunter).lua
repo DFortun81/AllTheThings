@@ -52,7 +52,9 @@ _.ExpansionFeatures =
 					un(40, q(44272)),	-- Darkheart Thicket
 					q(42654),	-- Darkheart Thicket: Nightmare Oak
 					q(47073),	-- Delivering Lost Knowledge
-					qr(q(45173)),	-- Desperate Times
+					q(45173, {	-- Desperate Times
+						["repeatable"] = true,
+					}),
 					q(45551),	-- Devastating Effects
 					un(40, q(44270)),	-- Eye of Azshara
 					un(40, q(44271)),	-- Eye of Azshara
@@ -123,7 +125,9 @@ _.ExpansionFeatures =
 					un(40, q(44261)),	-- Vault of the Wardens
 					q(44058),	-- Volpin the Elusive
 					q(44233),	-- Walk This Way
-					qr(q(45179)),	-- Win the Crowd
+					q(45179, {	-- Win the Crowd
+						["repeatable"] = true,
+					}),
 					q(46337, {	-- Night of the Wilds
 						["lvl"] = 110,
 						["classes"] = {3},

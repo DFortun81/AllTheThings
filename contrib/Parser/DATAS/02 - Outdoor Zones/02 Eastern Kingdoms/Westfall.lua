@@ -27,16 +27,18 @@ _.Zones =
 					p(379), 	-- Squirrel
 					p(389), 	-- Tiny Harvester
 					q(3861, { 	-- CLUCK!
+						["description"] = "Spam the macro '/chicken' at a Chicken for it to grant you this quest. The vendor, Farmer Saldean, sells the Special Chicken Feed you need.",
+						["repeatable"] = true,
 						["groups"] = {
 							i(11110) -- Chicken Egg
 						},
-						["description"] = "Spam the macro '/chicken' at a Chicken for it to grant you this quest. The vendor, Farmer Saldean, sells the Special Chicken Feed you need.",
-						["repeatable"] = true,
 					}),
 					qa(31725, {	-- Lindsay
 						i(89125),	-- Sack of Pet Supplies
 					}),
-					qr(qa(31780)), 	-- Old MacDonald
+					qa(31780, {	-- Old MacDonald
+						["isDaily"] = true,
+					}),
 					ach(11856, {	-- Pet Battle Challenge: Wailing Caverns
 						i(151632),	-- Mining Monkey
 						n(119390, {	-- Marcus "Bagman" Brown

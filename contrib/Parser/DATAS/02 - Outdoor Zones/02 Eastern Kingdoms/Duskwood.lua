@@ -48,10 +48,12 @@ _.Zones =
 					p(419), 	-- Small Frog
 					p(379), 	-- Squirrel
 					p(400), 	-- Widow Spiderling
-					qr(qg(65655, q(31850)),	-- Eric Davidson
+					qg(65655, q(31850, {	-- Eric Davidson
+						["isDaily"] = true,
+					})),
 					qg(65655, qa(31729, {	-- Steven Lisbane
 						i(89125),	-- Sack of Pet Supplies
-					}))),
+					})),
 				}),
 				n(-17,  {	-- Quests
 --[[	Achievement info for Loremaster related zone quests

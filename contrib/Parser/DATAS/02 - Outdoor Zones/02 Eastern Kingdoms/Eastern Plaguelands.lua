@@ -42,7 +42,9 @@ _.Zones =
 					p(457), 	-- Festering Maggot
 					p(628), 	-- Infected Fawn
 					p(627), 	-- Infected Squirrel
-					qr(qg(66512, q(31911))),	-- Deiza Plaguehorn
+					qg(66512, q(31911, {	-- Deiza Plaguehorn
+						["isDaily"] = true,
+					})),
 				}),
 				n(-17, {	-- Quests
 					ach(4892, {	-- Eastern Plaugelands Quests
@@ -487,14 +489,16 @@ _.Zones =
 								},
 								["qg"] = 16365,	-- Master Craftsman Omarion
 							}),
- 							qr(q(28756, {	-- Aberrations of Bone
-								["qg"] = 49856,	-- 
+ 							q(28756, {	-- Aberrations of Bone
+								["qg"] = 49856,	-- Lord Raymond George
+								["repeatable"] = true,
 								["sourceQuests"] = {27464},
-							})),
-							qr(q(28755, {	-- Annals of the Silver Hand
-								["qg"] = 49856,	-- 
+							}),
+							q(28755, {	-- Annals of the Silver Hand
+								["qg"] = 49856,	-- Lord Raymond George
+								["repeatable"] = true,
 								["sourceQuests"] = {27464},
-							})),
+							}),
 							q( 27762, {	-- Fuselight, Ho!
 								["qg"] = 48704,	-- Gek Nozzlerocket
 								["isBreadcrumb"] = true,	-- for "To Fuselight Proper"
@@ -1475,66 +1479,90 @@ _.Zones =
 							}),
 						}),
 						n(-17, {	-- Quests (Legacy)
-							un(40, qr(q(9222, {	-- Epic Armaments of Battle - Friend of the Dawn
-								un(2, i(22657)),	-- Amulet of the Dawn
-								un(2, i(22667)),	-- Bracers of Hope
-								un(2, i(22668)),	-- Bracers of Subterfuge
-								un(2, i(22659)),	-- Medallion of the Dawn
-								un(2, i(22678)),	-- Talisman of Ascendance
-								un(2, i(22656)),	-- The Purifier
-							}))),
-							un(40, qr(q(9224, {	-- Epic Armaments of Battle - Honored Amongst the Dawn
-								un(2, i(22657)),	-- Amulet of the Dawn
-								un(2, i(22667)),	-- Bracers of Hope
-								un(2, i(22668)),	-- Bracers of Subterfuge
-								un(2, i(22659)),	-- Medallion of the Dawn
-								un(2, i(22678)),	-- Talisman of Ascendance
-								un(2, i(22656)),	-- The Purifier
-							}))),
-							un(40, qr(q(9225, {	-- Epic Armaments of Battle - Revered Amongst the Dawn
-								un(2, i(22657)),	-- Amulet of the Dawn
-								un(2, i(22667)),	-- Bracers of Hope
-								un(2, i(22668)),	-- Bracers of Subterfuge
-								un(2, i(22659)),	-- Medallion of the Dawn
-								un(2, i(22678)),	-- Talisman of Ascendance
-								un(2, i(22656)),	-- The Purifier
-							}))),
-							un(40, qr(q(9228, {	-- Epic Armaments of Battle - Exalted Amongst the Dawn
-								un(2, i(22657)),	-- Amulet of the Dawn
-								un(2, i(22667)),	-- Bracers of Hope
-								un(2, i(22668)),	-- Bracers of Subterfuge
-								un(2, i(22659)),	-- Medallion of the Dawn
-								un(2, i(22678)),	-- Talisman of Ascendance
-								un(2, i(22656)),	-- The Purifier
-							}))),
-							un(40, qr(q(9221, {	-- Superior Armaments of Battle - Friend of the Dawn
-								un(2, i(22681)),	-- Band of Piety
-								un(2, i(22680)),	-- Band of Resolution
-								un(2, i(22688)),	-- Verimonde's Last Resort
-								un(2, i(22690)),	-- Leggings of the Plague Hunter
-								un(2, i(22689)),	-- Sanctified Leather Helm
-							}))),
-							un(40, qr(q(9223, {	-- Superior Armaments of Battle - Honored Amongst the Dawn
-								un(2, i(22681)),	-- Band of Piety
-								un(2, i(22680)),	-- Band of Resolution
-								un(2, i(22688)),	-- Verimonde's Last Resort
-								un(2, i(22690)),	-- Leggings of the Plague Hunter
-								un(2, i(22689)),	-- Sanctified Leather Helm
-							}))),
-							un(40, qr(q(9226, {	-- Superior Armaments of Battle - Revered Amongst the Dawn
-								un(2, i(22681)),	-- Band of Piety
-								un(2, i(22680)),	-- Band of Resolution
-								un(2, i(22688)),	-- Verimonde's Last Resort
-								un(2, i(22690)),	-- Leggings of the Plague Hunter
-								un(2, i(22689)),	-- Sanctified Leather Helm
-							}))),
-							un(40, qr(q(9227, {	-- Superior Armaments of Battle - Exalted Amongst the Dawn
-								un(2, i(22681)),	-- Band of Piety
-								un(2, i(22680)),	-- Band of Resolution
-								un(2, i(22688)),	-- Verimonde's Last Resort
-								un(2, i(22690)),	-- Leggings of the Plague Hunter
-								un(2, i(22689)),	-- Sanctified Leather Helm
-							}))),
+							un(40, q(9222, {	-- Epic Armaments of Battle - Friend of the Dawn
+								["repeatable"] = true,
+								["groups"] = {
+									un(2, i(22657)),	-- Amulet of the Dawn
+									un(2, i(22667)),	-- Bracers of Hope
+									un(2, i(22668)),	-- Bracers of Subterfuge
+									un(2, i(22659)),	-- Medallion of the Dawn
+									un(2, i(22678)),	-- Talisman of Ascendance
+									un(2, i(22656)),	-- The Purifier
+								},
+							})),
+							un(40, q(9224, {	-- Epic Armaments of Battle - Honored Amongst the Dawn
+								["repeatable"] = true,
+								["groups"] = {
+									un(2, i(22657)),	-- Amulet of the Dawn
+									un(2, i(22667)),	-- Bracers of Hope
+									un(2, i(22668)),	-- Bracers of Subterfuge
+									un(2, i(22659)),	-- Medallion of the Dawn
+									un(2, i(22678)),	-- Talisman of Ascendance
+									un(2, i(22656)),	-- The Purifier
+								},
+							})),
+							un(40, q(9225, {	-- Epic Armaments of Battle - Revered Amongst the Dawn
+								["repeatable"] = true,
+								["groups"] = {
+									un(2, i(22657)),	-- Amulet of the Dawn
+									un(2, i(22667)),	-- Bracers of Hope
+									un(2, i(22668)),	-- Bracers of Subterfuge
+									un(2, i(22659)),	-- Medallion of the Dawn
+									un(2, i(22678)),	-- Talisman of Ascendance
+									un(2, i(22656)),	-- The Purifier
+								},
+							})),
+							un(40, q(9228, {	-- Epic Armaments of Battle - Exalted Amongst the Dawn
+								["repeatable"] = true,
+								["groups"] = {
+									un(2, i(22657)),	-- Amulet of the Dawn
+									un(2, i(22667)),	-- Bracers of Hope
+									un(2, i(22668)),	-- Bracers of Subterfuge
+									un(2, i(22659)),	-- Medallion of the Dawn
+									un(2, i(22678)),	-- Talisman of Ascendance
+									un(2, i(22656)),	-- The Purifier
+								},
+							})),
+							un(40, q(9221, {	-- Superior Armaments of Battle - Friend of the Dawn
+								["repeatable"] = true,
+								["groups"] = {
+									un(2, i(22681)),	-- Band of Piety
+									un(2, i(22680)),	-- Band of Resolution
+									un(2, i(22688)),	-- Verimonde's Last Resort
+									un(2, i(22690)),	-- Leggings of the Plague Hunter
+									un(2, i(22689)),	-- Sanctified Leather Helm
+								},
+							})),
+							un(40, q(9223, {	-- Superior Armaments of Battle - Honored Amongst the Dawn
+								["repeatable"] = true,
+								["groups"] = {
+									un(2, i(22681)),	-- Band of Piety
+									un(2, i(22680)),	-- Band of Resolution
+									un(2, i(22688)),	-- Verimonde's Last Resort
+									un(2, i(22690)),	-- Leggings of the Plague Hunter
+									un(2, i(22689)),	-- Sanctified Leather Helm
+								},
+							})),
+							un(40, q(9226, {	-- Superior Armaments of Battle - Revered Amongst the Dawn
+								["repeatable"] = true,
+								["groups"] = {
+									un(2, i(22681)),	-- Band of Piety
+									un(2, i(22680)),	-- Band of Resolution
+									un(2, i(22688)),	-- Verimonde's Last Resort
+									un(2, i(22690)),	-- Leggings of the Plague Hunter
+									un(2, i(22689)),	-- Sanctified Leather Helm
+								},
+							})),
+							un(40, q(9227, {	-- Superior Armaments of Battle - Exalted Amongst the Dawn
+								["repeatable"] = true,
+								["groups"] = {
+									un(2, i(22681)),	-- Band of Piety
+									un(2, i(22680)),	-- Band of Resolution
+									un(2, i(22688)),	-- Verimonde's Last Resort
+									un(2, i(22690)),	-- Leggings of the Plague Hunter
+									un(2, i(22689)),	-- Sanctified Leather Helm
+								},
+							})),
 							un(40, q(4971, {	-- A Matter of Time
 								un(2, i(15813)),	-- Gold Link Belt
 								un(2, i(15812)),	-- Orchid Amice

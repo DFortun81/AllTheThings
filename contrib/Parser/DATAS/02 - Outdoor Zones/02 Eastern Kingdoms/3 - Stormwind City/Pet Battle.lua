@@ -104,12 +104,13 @@ _.Zones =
 								},
 								["description"] = "Account-Wide Quest.|r",
 							}),
-							qr(q(32863, { 	-- What We've Been Training For
+							q(32863, { 	-- What We've Been Training For
+								["repeatable"] = true,
+								["description"] = "Account-Wide Weekly Quest.|r",
 								["groups"] = {
 									i(98095),	-- Brawler's Pet Supplies
 								},
-								["description"] = "Account-Wide Weekly Quest.|r",
-							})),
+							}),
 							--]]
 						},
 					},

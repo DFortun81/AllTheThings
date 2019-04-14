@@ -1041,7 +1041,9 @@ _.ExpansionFeatures =
 							["modID"] = 2,
 							["repeatable"] = true,
 						}),
-						qd(q(37142, {	-- Ogre Ancestry
+						q(37142, {	-- Ogre Ancestry
+							["qg"] = 88013,	-- Lunk
+							["isDaily"] = true,
 							["g"] = {
 								i(119040, {	-- Cache of Mingled Treasures
 									i(109829),	-- Belt of Burning Focus
@@ -1131,8 +1133,7 @@ _.ExpansionFeatures =
 									i(109877),	-- Verdant Plate Wristguards
 								}),
 							},
-							["qg"] = 88013,	-- Lunk
-						})),
+						}),
 						q(37148, {	-- Oralius' Adventure
 							["g"] = {
 								i(118922),	-- Oralius' Whispering Crystal
@@ -2113,34 +2114,48 @@ _.ExpansionFeatures =
 								},
 								["description"] = "This satchel is awarded by High Overlord Saurfang and Muradin Bronzebeard on all of the Garrison Raid Quests.",
 							}),
-							qw(q(37767, { 	-- Arcane Sanctum: Ko'ragh
-								i(123975, {	-- Greater Bounty Spoils
-								}),
-							})),
-							qw(q(37772, { 	-- Blackhand's Crucible: Blackhand
-								i(123975, {	-- Greater Bounty Spoils
-								}),
-							})),
-							qw(q(37768, { 	-- Imperator's Rise: Imperator Mar'gok
-								i(123975, {	-- Greater Bounty Spoils
-								}),
-							})),
-							qw(q(37771, { 	-- Iron Assembly: Admiral Gar'an
-								i(123975, {	-- Greater Bounty Spoils
-								}),
-							})),
-							qw(q(37769, { 	-- Slagworks: Heart of the Mountain
-								i(123975, {	-- Greater Bounty Spoils
-								}),
-							})),
-							qw(q(37770, { 	-- The Black Forge: Kromog
-								i(123975, {	-- Greater Bounty Spoils
-								}),
-							})),
-							qw(q(37766, { 	-- Walled City: Brackenspore
-								i(123975, {	-- Greater Bounty Spoils
-								}),
-							})),
+							q(37767, { 	-- Arcane Sanctum: Ko'ragh
+								["isWeekly"] = true,
+								["groups"] = {
+									i(123975),	-- Greater Bounty Spoils
+								},
+							}),
+							q(37772, { 	-- Blackhand's Crucible: Blackhand
+								["isWeekly"] = true,
+								["groups"] = {
+									i(123975),	-- Greater Bounty Spoils
+								},
+							}),
+							q(37768, { 	-- Imperator's Rise: Imperator Mar'gok
+								["isWeekly"] = true,
+								["groups"] = {
+									i(123975),	-- Greater Bounty Spoils
+								},
+							}),
+							q(37771, { 	-- Iron Assembly: Admiral Gar'an
+								["isWeekly"] = true,
+								["groups"] = {
+									i(123975),	-- Greater Bounty Spoils
+								},
+							}),
+							q(37769, { 	-- Slagworks: Heart of the Mountain
+								["isWeekly"] = true,
+								["groups"] = {
+									i(123975),	-- Greater Bounty Spoils
+								},
+							}),
+							q(37770, { 	-- The Black Forge: Kromog
+								["isWeekly"] = true,
+								["groups"] = {
+									i(123975),	-- Greater Bounty Spoils
+								},
+							}),
+							q(37766, { 	-- Walled City: Brackenspore
+								["isWeekly"] = true,
+								["groups"] = {
+									i(123975),	-- Greater Bounty Spoils
+								},
+							}),
 						},
 						["description"] = "Muradin Bronzebeard has a chance to spawn in your garrison daily, or you can find someone with him spawned and join their garrison. He starts a weekly raid quest which all have the Greater Bounty Spoils as a reward.",
 					}),

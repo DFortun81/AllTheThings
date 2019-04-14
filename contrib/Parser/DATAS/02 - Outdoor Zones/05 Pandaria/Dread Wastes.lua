@@ -136,10 +136,15 @@ _.Zones =
 					p(743), 	-- Rapana Whelk
 					p(744), 	-- Resilient Roach
 					p(741), 	-- Silent Hedgehog
-					qr(q(31957, {	-- Grand Master Shu
-						i(89125),	-- Sack of Pet Supplies
-					})),
-					qr(q(32439, {	-- Flowing Pandaren Spirit
+					q(31957, {	-- Grand Master Shu
+						["repeatable"] = true,
+						["groups"] = {
+							i(89125),	-- Sack of Pet Supplies
+						},
+					}),
+					q(32439, {	-- Flowing Pandaren Spirit
+						["repeatable"] = true,
+						["description"] = "Must complete the quest Pandaren Spirit Tamer before this Daily becomes available.|r",
 						["groups"] = {
 							i(93147, {	-- Pandaren Spirit Pet Supplies
 								i(89139),	-- Chain Pet Leash
@@ -147,8 +152,7 @@ _.Zones =
 								i(90173),	-- Pandaren Water Spirit
 							})
 						},
-						["description"] = "Must complete the quest Pandaren Spirit Tamer before this Daily becomes available.|r",
-					})),
+					}),
 				}),
 				n(-38, {	-- Profession
 					prof(356, {	-- Fishing

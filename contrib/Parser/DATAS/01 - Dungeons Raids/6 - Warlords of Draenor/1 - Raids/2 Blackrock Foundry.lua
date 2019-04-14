@@ -589,198 +589,216 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					ach(8952),	-- Ashes, Ashes...
 					ach(8992),	-- Blackhand's Crucible
 					i(120277, {	-- Essence of the Iron Conqueror
-						qr( qa(37553, {	-- Essence of the Iron Conqueror
-							i(120215, {	-- Helm of the Iron Conqueror
-								i(115568),	-- 
-								i(115586),	-- 
-								i(115563),	-- 
-							}),
-							i(120216, {	-- Shoulders of the Iron Conqueror
-								i(115565),	-- 
-								i(115589),	-- 
-								i(115561),	-- 
-							}),
-							i(120212, {	-- Chest of the Iron Conqueror								
-								i(115566),	-- 
-								i(115588),	-- 
-								i(115560),	-- 
-							}),
-							i(120213, {	-- Gauntlets of the Iron Conqueror
-								i(115567),	-- 
-								i(115585),	-- 
-								i(115562),	-- 
-							}),
-							i(120214, {	-- Leggings of the Iron Conqueror
-								i(115569),	-- 
-								i(115587),	-- 
-								i(115564),	-- 
-							}),
-						})),
+						qa(37553, {	-- Essence of the Iron Conqueror
+							["repeatable"] = true,
+							["groups"] = {
+								i(120215, {	-- Helm of the Iron Conqueror
+									i(115568),	-- 
+									i(115586),	-- 
+									i(115563),	-- 
+								}),
+								i(120216, {	-- Shoulders of the Iron Conqueror
+									i(115565),	-- 
+									i(115589),	-- 
+									i(115561),	-- 
+								}),
+								i(120212, {	-- Chest of the Iron Conqueror								
+									i(115566),	-- 
+									i(115588),	-- 
+									i(115560),	-- 
+								}),
+								i(120213, {	-- Gauntlets of the Iron Conqueror
+									i(115567),	-- 
+									i(115585),	-- 
+									i(115562),	-- 
+								}),
+								i(120214, {	-- Leggings of the Iron Conqueror
+									i(115569),	-- 
+									i(115587),	-- 
+									i(115564),	-- 
+								}),
+							},
+						}),
 					}),
 					i(119310, {	-- Essence of the Iron Conqueror
-						qr( qh(37540, {	-- Essence of the Iron Conqueror
-							i(120215, {	-- Helm of the Iron Conqueror
-								i(115568),	-- 
-								i(115586),	-- 
-								i(115563),	-- 
-							}),
-							i(120216, {	-- Shoulders of the Iron Conqueror
-								i(115565),	-- 
-								i(115589),	-- 
-								i(115561),	-- 
-							}),
-							i(120212, {	-- Chest of the Iron Conqueror								
-								i(115566),	-- 
-								i(115588),	-- 
-								i(115560),	-- 
-							}),
-							i(120213, {	-- Gauntlets of the Iron Conqueror
-								i(115567),	-- 
-								i(115585),	-- 
-								i(115562),	-- 
-							}),
-							i(120214, {	-- Leggings of the Iron Conqueror
-								i(115569),	-- 
-								i(115587),	-- 
-								i(115564),	-- 
-							}),
-						})),							
+						qh(37540, {	-- Essence of the Iron Conqueror
+							["repeatable"] = true,
+							["groups"] = {
+								i(120215, {	-- Helm of the Iron Conqueror
+									i(115568),	-- 
+									i(115586),	-- 
+									i(115563),	-- 
+								}),
+								i(120216, {	-- Shoulders of the Iron Conqueror
+									i(115565),	-- 
+									i(115589),	-- 
+									i(115561),	-- 
+								}),
+								i(120212, {	-- Chest of the Iron Conqueror								
+									i(115566),	-- 
+									i(115588),	-- 
+									i(115560),	-- 
+								}),
+								i(120213, {	-- Gauntlets of the Iron Conqueror
+									i(115567),	-- 
+									i(115585),	-- 
+									i(115562),	-- 
+								}),
+								i(120214, {	-- Leggings of the Iron Conqueror
+									i(115569),	-- 
+									i(115587),	-- 
+									i(115564),	-- 
+								}),
+							},
+						}),							
 					}),
 					i(120279, {	-- Essence of the Iron Protector
-						qr( qa(37555, {	-- Essence of the Iron Protector
-							i(120225, {	-- Helm of the Iron Protector
-								i(115584),	-- 
-								i(115556),	-- 
-								i(115545),	-- 
-								i(115579),	-- 
-							}),
-							i(120226, {	-- Shoulders of the Iron Protector
-								i(115581),	-- 
-								i(115559),	-- 
-								i(115547),	-- 
-								i(115576),	-- 
-							}),
-							i(120222, {	-- Chest of the Iron Protector								
-								i(115582),	-- 
-								i(115548),	-- 
-								i(115558),	-- 
-								i(115577),	-- 
-							}),
-							i(120223, {	-- Gauntlets of the Iron Protector
-								i(115583),	-- 
-								i(115555),	-- 
-								i(115549),	-- 
-								i(115578),	-- 
-							}),
-							i(120224, {	-- Leggings of the Iron Protector
-								i(115580),	-- 
-								i(115557),	-- 
-								i(115546),	-- 
-								i(115575),	-- 
-							}),
-						})),							
+						qa(37555, {	-- Essence of the Iron Protector
+							["repeatable"] = true,
+							["groups"] = {
+								i(120225, {	-- Helm of the Iron Protector
+									i(115584),	-- 
+									i(115556),	-- 
+									i(115545),	-- 
+									i(115579),	-- 
+								}),
+								i(120226, {	-- Shoulders of the Iron Protector
+									i(115581),	-- 
+									i(115559),	-- 
+									i(115547),	-- 
+									i(115576),	-- 
+								}),
+								i(120222, {	-- Chest of the Iron Protector								
+									i(115582),	-- 
+									i(115548),	-- 
+									i(115558),	-- 
+									i(115577),	-- 
+								}),
+								i(120223, {	-- Gauntlets of the Iron Protector
+									i(115583),	-- 
+									i(115555),	-- 
+									i(115549),	-- 
+									i(115578),	-- 
+								}),
+								i(120224, {	-- Leggings of the Iron Protector
+									i(115580),	-- 
+									i(115557),	-- 
+									i(115546),	-- 
+									i(115575),	-- 
+								}),
+							},
+						}),							
 					}),
 					i(119323, {	-- Essence of the Iron Protector
-						qr( qh(37543, {	-- Essence of the Iron Protector
-							i(120225, {	-- Helm of the Iron Protector
-								i(115584),	-- 
-								i(115556),	-- 
-								i(115545),	-- 
-								i(115579),	-- 
-							}),
-							i(120226, {	-- Shoulders of the Iron Protector
-								i(115581),	-- 
-								i(115559),	-- 
-								i(115547),	-- 
-								i(115576),	-- 
-							}),
-							i(120222, {	-- Chest of the Iron Protector								
-								i(115582),	-- 
-								i(115548),	-- 
-								i(115558),	-- 
-								i(115577),	-- 
-							}),
-							i(120223, {	-- Gauntlets of the Iron Protector
-								i(115583),	-- 
-								i(115555),	-- 
-								i(115549),	-- 
-								i(115578),	-- 
-							}),
-							i(120224, {	-- Leggings of the Iron Protector
-								i(115580),	-- 
-								i(115557),	-- 
-								i(115546),	-- 
-								i(115575),	-- 
-							}),
-						})),								
+						qh(37543, {	-- Essence of the Iron Protector
+							["repeatable"] = true,
+							["groups"] = {
+								i(120225, {	-- Helm of the Iron Protector
+									i(115584),	-- 
+									i(115556),	-- 
+									i(115545),	-- 
+									i(115579),	-- 
+								}),
+								i(120226, {	-- Shoulders of the Iron Protector
+									i(115581),	-- 
+									i(115559),	-- 
+									i(115547),	-- 
+									i(115576),	-- 
+								}),
+								i(120222, {	-- Chest of the Iron Protector								
+									i(115582),	-- 
+									i(115548),	-- 
+									i(115558),	-- 
+									i(115577),	-- 
+								}),
+								i(120223, {	-- Gauntlets of the Iron Protector
+									i(115583),	-- 
+									i(115555),	-- 
+									i(115549),	-- 
+									i(115578),	-- 
+								}),
+								i(120224, {	-- Leggings of the Iron Protector
+									i(115580),	-- 
+									i(115557),	-- 
+									i(115546),	-- 
+									i(115575),	-- 
+								}),
+							},
+						}),								
 					}),
 					i(120278, {	-- Essence of the Iron Vanquisher
-						qr( qa(37554, {	-- Essence of the Iron Vanquisher
-							i(120218, {	-- Helm of the Iron Vanquisher
-								i(115553),	-- 
-								i(115542),	-- 
-								i(115539),	-- 
-								i(115572),	-- 
-							}),
-							i(120220, {	-- Shoulders of the Iron Vanquisher
-								i(115551),	-- 
-								i(115544),	-- 
-								i(115536),	-- 
-								i(115574),	-- 
-							}),
-							i(120221, {	-- Chest of the Iron Vanquisher								
-								i(115550),	-- 
-								i(115540),	-- 
-								i(115537),	-- 
-								i(115570),	-- 
-							}),
-							i(120217, {	-- Gauntlets of the Iron Vanquisher
-								i(115552),	-- 
-								i(115541),	-- 
-								i(115538),	-- 
-								i(115571),	-- 
-							}),
-							i(120219, {	-- Leggings of the Iron Vanquisher
-								i(115554),	-- 
-								i(115543),	-- 
-								i(115535),	-- 
-								i(115573),	-- 
-							}),
-						})),								
+						qa(37554, {	-- Essence of the Iron Vanquisher
+							["repeatable"] = true,
+							["groups"] = {
+								i(120218, {	-- Helm of the Iron Vanquisher
+									i(115553),	-- 
+									i(115542),	-- 
+									i(115539),	-- 
+									i(115572),	-- 
+								}),
+								i(120220, {	-- Shoulders of the Iron Vanquisher
+									i(115551),	-- 
+									i(115544),	-- 
+									i(115536),	-- 
+									i(115574),	-- 
+								}),
+								i(120221, {	-- Chest of the Iron Vanquisher								
+									i(115550),	-- 
+									i(115540),	-- 
+									i(115537),	-- 
+									i(115570),	-- 
+								}),
+								i(120217, {	-- Gauntlets of the Iron Vanquisher
+									i(115552),	-- 
+									i(115541),	-- 
+									i(115538),	-- 
+									i(115571),	-- 
+								}),
+								i(120219, {	-- Leggings of the Iron Vanquisher
+									i(115554),	-- 
+									i(115543),	-- 
+									i(115535),	-- 
+									i(115573),	-- 
+								}),
+							},
+						}),								
 					}),
 					i(119316, {	-- Essence of the Iron Vanquisher
-						qr( qh(37541, {	-- Essence of the Iron Vanquisher
-							i(120218, {	-- Helm of the Iron Vanquisher
-								i(115553),	-- 
-								i(115542),	-- 
-								i(115539),	-- 
-								i(115572),	-- 
-							}),
-							i(120220, {	-- Shoulders of the Iron Vanquisher
-								i(115551),	-- 
-								i(115544),	-- 
-								i(115536),	-- 
-								i(115574),	-- 
-							}),
-							i(120221, {	-- Chest of the Iron Vanquisher								
-								i(115550),	-- 
-								i(115540),	-- 
-								i(115537),	-- 
-								i(115570),	-- 
-							}),
-							i(120217, {	-- Gauntlets of the Iron Vanquisher
-								i(115552),	-- 
-								i(115541),	-- 
-								i(115538),	-- 
-								i(115571),	-- 
-							}),
-							i(120219, {	-- Leggings of the Iron Vanquisher
-								i(115554),	-- 
-								i(115543),	-- 
-								i(115535),	-- 
-								i(115573),	-- 
-							}),
-						})),									
+						qh(37541, {	-- Essence of the Iron Vanquisher
+							["repeatable"] = true,
+							["groups"] = {
+								i(120218, {	-- Helm of the Iron Vanquisher
+									i(115553),	-- 
+									i(115542),	-- 
+									i(115539),	-- 
+									i(115572),	-- 
+								}),
+								i(120220, {	-- Shoulders of the Iron Vanquisher
+									i(115551),	-- 
+									i(115544),	-- 
+									i(115536),	-- 
+									i(115574),	-- 
+								}),
+								i(120221, {	-- Chest of the Iron Vanquisher								
+									i(115550),	-- 
+									i(115540),	-- 
+									i(115537),	-- 
+									i(115570),	-- 
+								}),
+								i(120217, {	-- Gauntlets of the Iron Vanquisher
+									i(115552),	-- 
+									i(115541),	-- 
+									i(115538),	-- 
+									i(115571),	-- 
+								}),
+								i(120219, {	-- Leggings of the Iron Vanquisher
+									i(115554),	-- 
+									i(115543),	-- 
+									i(115535),	-- 
+									i(115573),	-- 
+								}),
+							},
+						}),									
 					}),
 					i(138809),	-- Illusion: Mark of Blackrock
 					i(122200),	-- Music Roll: A Siege of Worlds
@@ -1143,198 +1161,216 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					ach(8952),	-- Ashes, Ashes...
 					ach(8992),	-- Blackhand's Crucible
 					i(120280, {	-- Essence of the Iron Conqueror
-						qr( qa(37557, {	-- Essence of the Iron Conqueror
-							i(120230, {	-- Helm of the Iron Conqueror
-								i(115568),
-								i(115586),
-								i(115563),
-							}),
-							i(120231, {	-- Shoulders of the Iron Conqueror
-								i(115565),
-								i(115589),
-								i(115561),			
-							}),
-							i(120227, {	-- Chest of the Iron Conqueror								
-								i(115566),
-								i(115588),
-								i(115560),
-							}),
-							i(120228, {	-- Gauntlets of the Iron Conqueror
-								i(115567),
-								i(115585),
-								i(115562),						
-							}),
-							i(120229, {	-- Leggings of the Iron Conqueror
-								i(115569),
-								i(115587),
-								i(115564),				
-							}),
-						})),
+						qa(37557, {	-- Essence of the Iron Conqueror
+							["repeatable"] = true,
+							["groups"] = {
+								i(120230, {	-- Helm of the Iron Conqueror
+									i(115568),
+									i(115586),
+									i(115563),
+								}),
+								i(120231, {	-- Shoulders of the Iron Conqueror
+									i(115565),
+									i(115589),
+									i(115561),			
+								}),
+								i(120227, {	-- Chest of the Iron Conqueror								
+									i(115566),
+									i(115588),
+									i(115560),
+								}),
+								i(120228, {	-- Gauntlets of the Iron Conqueror
+									i(115567),
+									i(115585),
+									i(115562),						
+								}),
+								i(120229, {	-- Leggings of the Iron Conqueror
+									i(115569),
+									i(115587),
+									i(115564),				
+								}),
+							},
+						}),
 					}),
 					i(120206, {	-- Essence of the Iron Conqueror
-						qr( qh(37551, {	-- Essence of the Iron Conqueror
-							i(120230, {	-- Helm of the Iron Conqueror
-								i(115568),
-								i(115586),
-								i(115563),
-							}),
-							i(120231, {	-- Shoulders of the Iron Conqueror
-								i(115565),
-								i(115589),
-								i(115561),			
-							}),
-							i(120227, {	-- Chest of the Iron Conqueror								
-								i(115566),
-								i(115588),
-								i(115560),
-							}),
-							i(120228, {	-- Gauntlets of the Iron Conqueror
-								i(115567),
-								i(115585),
-								i(115562),						
-							}),
-							i(120229, {	-- Leggings of the Iron Conqueror
-								i(115569),
-								i(115587),
-								i(115564),				
-							}),
-						})),							
+						qh(37551, {	-- Essence of the Iron Conqueror
+							["repeatable"] = true,
+							["groups"] = {
+								i(120230, {	-- Helm of the Iron Conqueror
+									i(115568),
+									i(115586),
+									i(115563),
+								}),
+								i(120231, {	-- Shoulders of the Iron Conqueror
+									i(115565),
+									i(115589),
+									i(115561),			
+								}),
+								i(120227, {	-- Chest of the Iron Conqueror								
+									i(115566),
+									i(115588),
+									i(115560),
+								}),
+								i(120228, {	-- Gauntlets of the Iron Conqueror
+									i(115567),
+									i(115585),
+									i(115562),						
+								}),
+								i(120229, {	-- Leggings of the Iron Conqueror
+									i(115569),
+									i(115587),
+									i(115564),				
+								}),
+							},
+						}),							
 					}),
 					i(120281, {	-- Essence of the Iron Protector
-						qr( qa(37559, {	-- Essence of the Iron Protector
-							i(120240, {	-- Helm of the Iron Protector
-								i(115584),
-								i(115556),
-								i(115545),
-								i(115579),
-							}),
-							i(120241, {	-- Shoulders of the Iron Protector
-								i(115581),
-								i(115559),
-								i(115547),
-								i(115576),			
-							}),
-							i(120237, {	-- Chest of the Iron Protector								
-								i(115582),
-								i(115548),
-								i(115558),
-								i(115577),
-							}),
-							i(120238, {	-- Gauntlets of the Iron Protector
-								i(115583),
-								i(115555),
-								i(115549),
-								i(115578),			
-							}),
-							i(120239, {	-- Leggings of the Iron Protector
-								i(115580),
-								i(115557),
-								i(115546),
-								i(115575),			
-							}),
-						})),							
+						qa(37559, {	-- Essence of the Iron Protector
+							["repeatable"] = true,
+							["groups"] = {
+								i(120240, {	-- Helm of the Iron Protector
+									i(115584),
+									i(115556),
+									i(115545),
+									i(115579),
+								}),
+								i(120241, {	-- Shoulders of the Iron Protector
+									i(115581),
+									i(115559),
+									i(115547),
+									i(115576),			
+								}),
+								i(120237, {	-- Chest of the Iron Protector								
+									i(115582),
+									i(115548),
+									i(115558),
+									i(115577),
+								}),
+								i(120238, {	-- Gauntlets of the Iron Protector
+									i(115583),
+									i(115555),
+									i(115549),
+									i(115578),			
+								}),
+								i(120239, {	-- Leggings of the Iron Protector
+									i(115580),
+									i(115557),
+									i(115546),
+									i(115575),			
+								}),
+							},
+						}),							
 					}),
 					i(120207, {	-- Essence of the Iron Protector
-						qr( qh(37547, {	-- Essence of the Iron Protector
-							i(120240, {	-- Helm of the Iron Protector
-								i(115584),
-								i(115556),
-								i(115545),
-								i(115579),
-							}),
-							i(120241, {	-- Shoulders of the Iron Protector
-								i(115581),
-								i(115559),
-								i(115547),
-								i(115576),			
-							}),
-							i(120237, {	-- Chest of the Iron Protector								
-								i(115582),
-								i(115548),
-								i(115558),
-								i(115577),
-							}),
-							i(120238, {	-- Gauntlets of the Iron Protector
-								i(115583),
-								i(115555),
-								i(115549),
-								i(115578),			
-							}),
-							i(120239, {	-- Leggings of the Iron Protector
-								i(115580),
-								i(115557),
-								i(115546),
-								i(115575),			
-							}),
-						})),								
+						qh(37547, {	-- Essence of the Iron Protector
+							["repeatable"] = true,
+							["groups"] = {
+								i(120240, {	-- Helm of the Iron Protector
+									i(115584),
+									i(115556),
+									i(115545),
+									i(115579),
+								}),
+								i(120241, {	-- Shoulders of the Iron Protector
+									i(115581),
+									i(115559),
+									i(115547),
+									i(115576),			
+								}),
+								i(120237, {	-- Chest of the Iron Protector								
+									i(115582),
+									i(115548),
+									i(115558),
+									i(115577),
+								}),
+								i(120238, {	-- Gauntlets of the Iron Protector
+									i(115583),
+									i(115555),
+									i(115549),
+									i(115578),			
+								}),
+								i(120239, {	-- Leggings of the Iron Protector
+									i(115580),
+									i(115557),
+									i(115546),
+									i(115575),			
+								}),
+							},
+						}),								
 					}),
 					i(120282, {	-- Essence of the Iron Vanquisher
-						qr( qa(37558, {	-- Essence of the Iron Vanquisher
-							i(120233, {	-- Helm of the Iron Vanquisher
-								i(115553),	
-								i(115542),
-								i(115539),
-								i(115572),
-							}),
-							i(120235, {	-- Shoulders of the Iron Vanquisher
-								i(115551),
-								i(115544),
-								i(115536),
-								i(115574),			
-							}),
-							i(120236, {	-- Chest of the Iron Vanquisher								
-								i(115550),
-								i(115540),
-								i(115537),
-								i(115570),
-							}),
-							i(120232, {	-- Gauntlets of the Iron Vanquisher
-								i(115552),
-								i(115541),
-								i(115538),
-								i(115571),			
-							}),
-							i(120234, {	-- Leggings of the Iron Vanquisher
-								i(115554),
-								i(115543),
-								i(115535),
-								i(115573),			
-							}),
-						})),								
+						qa(37558, {	-- Essence of the Iron Vanquisher
+							["repeatable"] = true,
+							["groups"] = {
+								i(120233, {	-- Helm of the Iron Vanquisher
+									i(115553),	
+									i(115542),
+									i(115539),
+									i(115572),
+								}),
+								i(120235, {	-- Shoulders of the Iron Vanquisher
+									i(115551),
+									i(115544),
+									i(115536),
+									i(115574),			
+								}),
+								i(120236, {	-- Chest of the Iron Vanquisher								
+									i(115550),
+									i(115540),
+									i(115537),
+									i(115570),
+								}),
+								i(120232, {	-- Gauntlets of the Iron Vanquisher
+									i(115552),
+									i(115541),
+									i(115538),
+									i(115571),			
+								}),
+								i(120234, {	-- Leggings of the Iron Vanquisher
+									i(115554),
+									i(115543),
+									i(115535),
+									i(115573),			
+								}),
+							},
+						}),								
 					}),
 					i(120208, {	-- Essence of the Iron Vanquisher
-						qr( qh(37549, {	-- Essence of the Iron Vanquisher
-							i(120233, {	-- Helm of the Iron Vanquisher
-								i(115553),	
-								i(115542),
-								i(115539),
-								i(115572),
-							}),
-							i(120235, {	-- Shoulders of the Iron Vanquisher
-								i(115551),
-								i(115544),
-								i(115536),
-								i(115574),			
-							}),
-							i(120236, {	-- Chest of the Iron Vanquisher								
-								i(115550),
-								i(115540),
-								i(115537),
-								i(115570),
-							}),
-							i(120232, {	-- Gauntlets of the Iron Vanquisher
-								i(115552),
-								i(115541),
-								i(115538),
-								i(115571),			
-							}),
-							i(120234, {	-- Leggings of the Iron Vanquisher
-								i(115554),
-								i(115543),
-								i(115535),
-								i(115573),			
-							}),
-						})),									
+						qh(37549, {	-- Essence of the Iron Vanquisher
+							["repeatable"] = true,
+							["groups"] = {
+								i(120233, {	-- Helm of the Iron Vanquisher
+									i(115553),	
+									i(115542),
+									i(115539),
+									i(115572),
+								}),
+								i(120235, {	-- Shoulders of the Iron Vanquisher
+									i(115551),
+									i(115544),
+									i(115536),
+									i(115574),			
+								}),
+								i(120236, {	-- Chest of the Iron Vanquisher								
+									i(115550),
+									i(115540),
+									i(115537),
+									i(115570),
+								}),
+								i(120232, {	-- Gauntlets of the Iron Vanquisher
+									i(115552),
+									i(115541),
+									i(115538),
+									i(115571),			
+								}),
+								i(120234, {	-- Leggings of the Iron Vanquisher
+									i(115554),
+									i(115543),
+									i(115535),
+									i(115573),			
+								}),
+							},
+						}),									
 					}),
 					i(138809),	-- Illusion: Mark of Blackrock
 					i(122200),	-- Music Roll: A Siege of Worlds
@@ -1718,198 +1754,216 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						title(301),	-- Ironbane
 					}),
 					i(120283, {	-- Essence of the Iron Conqueror
-						qr( qa(37560, {	-- Essence of the Iron Conqueror
-							i(120245, {	-- Helm of the Iron Conqueror
-								i(115568),
-								i(115586),
-								i(115563),
-							}),
-							i(120246, {	-- Shoulders of the Iron Conqueror
-								i(115565),
-								i(115589),
-								i(115561),			
-							}),
-							i(120242, {	-- Chest of the Iron Conqueror								
-								i(115566),
-								i(115588),
-								i(115560),
-							}),
-							i(120243, {	-- Gauntlets of the Iron Conqueror
-								i(115567),
-								i(115585),
-								i(115562),						
-							}),
-							i(120244, {	-- Leggings of the Iron Conqueror
-								i(115569),
-								i(115587),
-								i(115564),				
-							}),
-						})),
+						qa(37560, {	-- Essence of the Iron Conqueror
+							["repeatable"] = true,
+							["groups"] = {
+								i(120245, {	-- Helm of the Iron Conqueror
+									i(115568),
+									i(115586),
+									i(115563),
+								}),
+								i(120246, {	-- Shoulders of the Iron Conqueror
+									i(115565),
+									i(115589),
+									i(115561),			
+								}),
+								i(120242, {	-- Chest of the Iron Conqueror								
+									i(115566),
+									i(115588),
+									i(115560),
+								}),
+								i(120243, {	-- Gauntlets of the Iron Conqueror
+									i(115567),
+									i(115585),
+									i(115562),						
+								}),
+								i(120244, {	-- Leggings of the Iron Conqueror
+									i(115569),
+									i(115587),
+									i(115564),				
+								}),
+							},
+						}),
 					}),
 					i(120209, {	-- Essence of the Iron Conqueror
-						qr( qh(37552, {	-- Essence of the Iron Conqueror
-							i(120245, {	-- Helm of the Iron Conqueror
-								i(115568),
-								i(115586),
-								i(115563),
-							}),
-							i(120246, {	-- Shoulders of the Iron Conqueror
-								i(115565),
-								i(115589),
-								i(115561),			
-							}),
-							i(120242, {	-- Chest of the Iron Conqueror								
-								i(115566),
-								i(115588),
-								i(115560),
-							}),
-							i(120243, {	-- Gauntlets of the Iron Conqueror
-								i(115567),
-								i(115585),
-								i(115562),						
-							}),
-							i(120244, {	-- Leggings of the Iron Conqueror
-								i(115569),
-								i(115587),
-								i(115564),				
-							}),
-						})),							
+						qh(37552, {	-- Essence of the Iron Conqueror
+							["repeatable"] = true,
+							["groups"] = {
+								i(120245, {	-- Helm of the Iron Conqueror
+									i(115568),
+									i(115586),
+									i(115563),
+								}),
+								i(120246, {	-- Shoulders of the Iron Conqueror
+									i(115565),
+									i(115589),
+									i(115561),			
+								}),
+								i(120242, {	-- Chest of the Iron Conqueror								
+									i(115566),
+									i(115588),
+									i(115560),
+								}),
+								i(120243, {	-- Gauntlets of the Iron Conqueror
+									i(115567),
+									i(115585),
+									i(115562),						
+								}),
+								i(120244, {	-- Leggings of the Iron Conqueror
+									i(115569),
+									i(115587),
+									i(115564),				
+								}),
+							},
+						}),							
 					}),
                     i(120284, {	-- Essence of the Iron Protector
-						qr( qa(37562, {	-- Essence of the Iron Protector
-							i(120255, {	-- Helm of the Iron Protector
-						    i(115584),	-- Blackhand's Faceguard
-						    i(115556),	-- Helm of the Somber Gaze
-						    i(115545),	-- Rylakstalker's Headguard
-						    i(115579),	-- Windspeaker's Faceguard
-							}),
-							i(120256, {	-- Shoulders of the Iron Protector
-						    i(115581),	-- Blackhand's Shoulderguards
-						    i(115559),	-- Mantle of the Somber Gaze
-						    i(115547),	-- Rylakstalker's Spaulders
-						    i(115576),	-- Windspeaker's Mantle
-							}),
-							i(120252, {	-- Chest of the Iron Protector
-						    i(115582),	-- Blackhand's Chestguard
-						    i(115548),	-- Rylakstalker's Tunic
-						    i(115558),	-- Vest of the Somber Gaze
-						    i(115577),	-- Windspeaker's Tunic
-							}),
-							i(120253, {	-- Gauntlets of the Iron Protector
-						    i(115583),	-- Blackhand's Handguards
-						    i(115555),	-- Handwraps of the Somber Gaze
-						    i(115549),	-- Rylakstalker's Gloves
-						    i(115578),	-- Windspeaker's Handwraps
-							}),
-							i(120254, {	-- Leggings of the Iron Protector
-						    i(115580),	-- Blackhand's Legguards
-						    i(115557),	-- Legwraps of the Somber Gaze
-						    i(115546),	-- Rylakstalker's Legguards
-						    i(115575),	-- Windspeaker's Legwraps
-							}),
-						})),								
+						qa(37562, {	-- Essence of the Iron Protector
+							["repeatable"] = true,
+							["groups"] = {
+								i(120255, {	-- Helm of the Iron Protector
+									i(115584),	-- Blackhand's Faceguard
+									i(115556),	-- Helm of the Somber Gaze
+									i(115545),	-- Rylakstalker's Headguard
+									i(115579),	-- Windspeaker's Faceguard
+								}),
+								i(120256, {	-- Shoulders of the Iron Protector
+									i(115581),	-- Blackhand's Shoulderguards
+									i(115559),	-- Mantle of the Somber Gaze
+									i(115547),	-- Rylakstalker's Spaulders
+									i(115576),	-- Windspeaker's Mantle
+								}),
+								i(120252, {	-- Chest of the Iron Protector
+									i(115582),	-- Blackhand's Chestguard
+									i(115548),	-- Rylakstalker's Tunic
+									i(115558),	-- Vest of the Somber Gaze
+									i(115577),	-- Windspeaker's Tunic
+								}),
+								i(120253, {	-- Gauntlets of the Iron Protector
+									i(115583),	-- Blackhand's Handguards
+									i(115555),	-- Handwraps of the Somber Gaze
+									i(115549),	-- Rylakstalker's Gloves
+									i(115578),	-- Windspeaker's Handwraps
+								}),
+								i(120254, {	-- Leggings of the Iron Protector
+									i(115580),	-- Blackhand's Legguards
+									i(115557),	-- Legwraps of the Somber Gaze
+									i(115546),	-- Rylakstalker's Legguards
+									i(115575),	-- Windspeaker's Legwraps
+								}),
+							},
+						}),								
 					}),
 					i(120210, {	-- Essence of the Iron Protector
-						qr( qa(37548, {	-- Essence of the Iron Protector
-							i(120255, {	-- Helm of the Iron Protector
-						    i(115584),	-- Blackhand's Faceguard
-						    i(115556),	-- Helm of the Somber Gaze
-						    i(115545),	-- Rylakstalker's Headguard
-						    i(115579),	-- Windspeaker's Faceguard			
-							}),								
-							i(120256, {	-- Shoulders of the Iron Protector
-						    i(115581),	-- Blackhand's Shoulderguards
-						    i(115559),	-- Mantle of the Somber Gaze
-						    i(115547),	-- Rylakstalker's Spaulders
-						    i(115576),	-- Windspeaker's Mantle				
-							}),		
-							i(120252, {	-- Chest of the Iron Protector
-						    i(115582),	-- Blackhand's Chestguard
-						    i(115548),	-- Rylakstalker's Tunic
-						    i(115558),	-- Vest of the Somber Gaze
-						    i(115577),	-- Windspeaker's Tunic			
-							}),		
-							i(120253, {	-- Gauntlets of the Iron Protector
-						    i(115583),	-- Blackhand's Handguards
-						    i(115555),	-- Handwraps of the Somber Gaze
-						    i(115549),	-- Rylakstalker's Gloves
-						    i(115578),	-- Windspeaker's Handwraps			
-							}),		
-							i(120254, {	-- Leggings of the Iron Protector
-						    i(115580),	-- Blackhand's Legguards
-						    i(115557),	-- Legwraps of the Somber Gaze
-						    i(115546),	-- Rylakstalker's Legguards
-						    i(115575),	-- Windspeaker's Legwraps			
-							}),
-						})),								
+						qa(37548, {	-- Essence of the Iron Protector
+							["repeatable"] = true,
+							["groups"] = {
+								i(120255, {	-- Helm of the Iron Protector
+									i(115584),	-- Blackhand's Faceguard
+									i(115556),	-- Helm of the Somber Gaze
+									i(115545),	-- Rylakstalker's Headguard
+									i(115579),	-- Windspeaker's Faceguard			
+								}),								
+								i(120256, {	-- Shoulders of the Iron Protector
+									i(115581),	-- Blackhand's Shoulderguards
+									i(115559),	-- Mantle of the Somber Gaze
+									i(115547),	-- Rylakstalker's Spaulders
+									i(115576),	-- Windspeaker's Mantle				
+								}),		
+								i(120252, {	-- Chest of the Iron Protector
+									i(115582),	-- Blackhand's Chestguard
+									i(115548),	-- Rylakstalker's Tunic
+									i(115558),	-- Vest of the Somber Gaze
+									i(115577),	-- Windspeaker's Tunic			
+								}),		
+								i(120253, {	-- Gauntlets of the Iron Protector
+									i(115583),	-- Blackhand's Handguards
+									i(115555),	-- Handwraps of the Somber Gaze
+									i(115549),	-- Rylakstalker's Gloves
+									i(115578),	-- Windspeaker's Handwraps			
+								}),		
+								i(120254, {	-- Leggings of the Iron Protector
+									i(115580),	-- Blackhand's Legguards
+									i(115557),	-- Legwraps of the Somber Gaze
+									i(115546),	-- Rylakstalker's Legguards
+									i(115575),	-- Windspeaker's Legwraps			
+								}),
+							},
+						}),
 					}),
 					i(120285, {	-- Essence of the Iron Vanquisher
-						qr( qa(37561, {	-- Essence of the Iron Vanquisher
-							i(120248, {	-- Helm of the Iron Vanquisher
-								i(115553),	
-								i(115542),
-								i(115539),
-								i(115572),
-							}),
-							i(120250, {	-- Shoulders of the Iron Vanquisher
-								i(115551),
-								i(115544),
-								i(115536),
-								i(115574),			
-							}),
-							i(120251, {	-- Chest of the Iron Vanquisher								
-								i(115550),
-								i(115540),
-								i(115537),
-								i(115570),
-							}),
-							i(120247, {	-- Gauntlets of the Iron Vanquisher
-								i(115552),
-								i(115541),
-								i(115538),
-								i(115571),			
-							}),
-							i(120249, {	-- Leggings of the Iron Vanquisher			
-								i(115554),
-								i(115543),
-								i(115535),
-								i(115573),			
-							}),
-						})),								
+						qa(37561, {	-- Essence of the Iron Vanquisher
+							["repeatable"] = true,
+							["groups"] = {
+								i(120248, {	-- Helm of the Iron Vanquisher
+									i(115553),	
+									i(115542),
+									i(115539),
+									i(115572),
+								}),
+								i(120250, {	-- Shoulders of the Iron Vanquisher
+									i(115551),
+									i(115544),
+									i(115536),
+									i(115574),			
+								}),
+								i(120251, {	-- Chest of the Iron Vanquisher								
+									i(115550),
+									i(115540),
+									i(115537),
+									i(115570),
+								}),
+								i(120247, {	-- Gauntlets of the Iron Vanquisher
+									i(115552),
+									i(115541),
+									i(115538),
+									i(115571),			
+								}),
+								i(120249, {	-- Leggings of the Iron Vanquisher			
+									i(115554),
+									i(115543),
+									i(115535),
+									i(115573),			
+								}),
+							},
+						}),								
 					}),
 					i(120211, {	-- Essence of the Iron Vanquisher
-						qr( qh(37550, {	-- Essence of the Iron Vanquisher
-							i(120248, {	-- Helm of the Iron Vanquisher
-								i(115553),	
-								i(115542),
-								i(115539),
-								i(115572),
-							}),
-							i(120250, {	-- Shoulders of the Iron Vanquisher
-								i(115551),
-								i(115544),
-								i(115536),
-								i(115574),			
-							}),
-							i(120251, {	-- Chest of the Iron Vanquisher								
-								i(115550),
-								i(115540),
-								i(115537),
-								i(115570),
-							}),
-							i(120247, {	-- Gauntlets of the Iron Vanquisher
-								i(115552),
-								i(115541),
-								i(115538),
-								i(115571),			
-							}),
-							i(120249, {	-- Leggings of the Iron Vanquisher		
-								i(115554),
-								i(115543),
-								i(115535),
-								i(115573),			
-							}),
-						})),									
+						qh(37550, {	-- Essence of the Iron Vanquisher
+							["repeatable"] = true,
+							["groups"] = {
+								i(120248, {	-- Helm of the Iron Vanquisher
+									i(115553),	
+									i(115542),
+									i(115539),
+									i(115572),
+								}),
+								i(120250, {	-- Shoulders of the Iron Vanquisher
+									i(115551),
+									i(115544),
+									i(115536),
+									i(115574),			
+								}),
+								i(120251, {	-- Chest of the Iron Vanquisher								
+									i(115550),
+									i(115540),
+									i(115537),
+									i(115570),
+								}),
+								i(120247, {	-- Gauntlets of the Iron Vanquisher
+									i(115552),
+									i(115541),
+									i(115538),
+									i(115571),			
+								}),
+								i(120249, {	-- Leggings of the Iron Vanquisher		
+									i(115554),
+									i(115543),
+									i(115535),
+									i(115573),			
+								}),
+							},
+						}),									
 					}),
 					i(116660),	-- Ironhoof Destroyer
 					i(138809),	-- Illusion: Mark of Blackrock

@@ -38,30 +38,34 @@ _.Zones =
 								["qg"] = 18537,	-- Adyen the Lightwarden
 								["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
 							}),
-							qr(q(10327, {	-- Single Mark of Kil'jaeden
+							q(10327, {	-- Single Mark of Kil'jaeden
 								["qg"] = 18537,	-- Adyen the Lightwarden
+								["repeatable"] = true,
 								["description"] = "Gives reputation through Honored.",
 								["sourceQuests"] = { 10325 },	-- Marks of Kil'jaeden
-							})),
-							qr(q(10326, {	-- More Marks of Kil'jaeden
+							}),
+							q(10326, {	-- More Marks of Kil'jaeden
 								["qg"] = 18537,	-- Adyen the Lightwarden
+								["repeatable"] = true,
 								["description"] = "Gives reputation through Honored.",
 								["sourceQuests"] = { 10325 },	-- Marks of Kil'jaeden
-							})),
+							}),
 							q(10653, {	-- Marks of Sargeras  (may be able to be picked up in Netherstorm)
 								["qg"] = 18537,	-- Adyen the Lightwarden
 								["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
 							}),
-							qr(q(10655, {	-- Single Mark of Sargeras
+							q(10655, {	-- Single Mark of Sargeras
 								["qg"] = 18537,	-- Adyen the Lightwarden
+								["repeatable"] = true,
 								["description"] = "Gives reputation through Exalted.",
 								["sourceQuests"] = { 10653 },	-- Marks of Sargeras
-							})),
-							qr(q(10654, {	-- More Marks of Sargeras
+							}),
+							q(10654, {	-- More Marks of Sargeras
 								["qg"] = 18537,	-- Adyen the Lightwarden
+								["repeatable"] = true,
 								["description"] = "Gives reputation through Exalted.",
 								["sourceQuests"] = { 10653 },	-- Marks of Sargeras
-							})),
+							}),
 							q(10020, {	-- A Cure for Zahlia
 								["qg"] = 18597,	-- Sha'nir
 								["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
@@ -74,11 +78,12 @@ _.Zones =
 								["qg"] = 18538,	-- Ishanah
 								-- ["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor (this quest appeared before I aligned myself with The Aldor)
 							}),
-							qr(q(10421, {	-- Fel Armaments
+							q(10421, {	-- Fel Armaments
 								["qg"] = 18538,	-- Ishanah
+								["repeatable"] = true,
 								["description"] = "Gives reputation through Exalted.",
 								["sourceQuests"] = { 10420 },	-- A Cleansing Light
-							})),
+							}),
 							q(11038, {	-- Assist Exarch Orelis
 								["qgs"] = { 23271, 23270 },	-- Vindicator Kaan & Vindicator Aeus
 								["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
@@ -125,7 +130,11 @@ _.Zones =
 								},
 								["qg"] = 22429,	-- Vekax
 							}),
-							qr(q(10918,  {  -- More Feathers
+							q(10918,  {  -- More Feathers
+								["qg"] = 22429,	-- Vekax
+								["repeatable"] = true,
+								["description"] = "|cff66ccffGives reputation until Honored with Lower City|r",					
+								["sourceQuests"] = { 10917 },	-- The Outcast's Plight
 								["groups"] = {
 									i(31800,  {  -- Outcasts Cache
 										i(28495),	-- Windwalker's Sash
@@ -138,10 +147,7 @@ _.Zones =
 										i(28494),	-- Ravenguard's Greaves
 									}),
 								},	
-								["qg"] = 22429,	-- Vekax
-								["description"] = "|cff66ccffGives reputation until Honored with Lower City|r",					
-								["sourceQuests"] = { 10917 },	-- The Outcast's Plight
-							})),
+							}),
 						},
 						["collectible"] = false,	-- Turn off Collectible flags.
 					}),
@@ -328,16 +334,19 @@ _.Zones =
 					}),
 					faction(1077, {	-- Shattered Sun Offensive
 						["groups"] = {
-							qr(q(11877, {	-- Sunfury Attack Plans
+							q(11877, {	-- Sunfury Attack Plans
 								["qg"] = 25140,	-- Lord Torvos
-							})),
-							qr(q(11880, {	-- The Multiphase Survey
+								["repeatable"] = true,
+							}),
+							q(11880, {	-- The Multiphase Survey
 								["qg"] = 19475,	-- Harbinger Haronem
-							})),
-							qr(q(11875, {	-- Gaining the Advantage
+								["repeatable"] = true,
+							}),
+							q(11875, {	-- Gaining the Advantage
 								["qg"] = 19202,	-- Emissary Mordin
+								["repeatable"] = true,
 								["description"] = "This daily quest is only available to characters with Herbalism, Mining, or Skinning.",
-							})),
+							}),
 							un(40, q(11513, {	-- Intercepting the Mana Cells
 								["qg"] = 24932,	-- Exarch Nasuun
 								["coord"] = { 49.8, 42.6, 111 },
@@ -429,84 +438,96 @@ _.Zones =
 						["qg"] = 18584,	-- Sal'salabim
 						["sourceQuests"] = { 10009 },	-- Crackin' Some Skulls *UNTESTED*
 					}),
-					qd( q( 11380, {	-- Manalicious
-						i(33844, {	-- Barrel of Fish
-							i(33869),	-- Recipe: Broiled Bloodfin
-							i(34834),	-- Recipe: Captain Rumsey's Lager
-							i(33925),	-- Recipe: Delicious Chocolate Cake
-							i(33875),	-- Recipe: Kibler's Bits
-							i(33870),	-- Recipe: Skullfish Soup
-							i(33871),	-- Recipe: Stormchops
-						}),
-						i(33857, {	-- Crate of Meat
-							i(34834),	-- Recipe: Captain Rumsey's Lager
-							i(33925),	-- Recipe: Delicious Chocolate Cake
-							i(33875),	-- Recipe: Kibler's Bits
-							i(33873),	-- Recipe: Spicy Hot Talbuk
-							i(33871),	-- Recipe: Stormchops
-						}),
-					})),
+					q( 11380, {	-- Manalicious
+						["isDaily"] = true,
+						["groups"] = {
+							i(33844, {	-- Barrel of Fish
+								i(33869),	-- Recipe: Broiled Bloodfin
+								i(34834),	-- Recipe: Captain Rumsey's Lager
+								i(33925),	-- Recipe: Delicious Chocolate Cake
+								i(33875),	-- Recipe: Kibler's Bits
+								i(33870),	-- Recipe: Skullfish Soup
+								i(33871),	-- Recipe: Stormchops
+							}),
+							i(33857, {	-- Crate of Meat
+								i(34834),	-- Recipe: Captain Rumsey's Lager
+								i(33925),	-- Recipe: Delicious Chocolate Cake
+								i(33875),	-- Recipe: Kibler's Bits
+								i(33873),	-- Recipe: Spicy Hot Talbuk
+								i(33871),	-- Recipe: Stormchops
+							}),
+						},
+					}),
 					q( 10037, {	-- Rather Be Fishin'
 						["groups"] = {
 							i(25978)	-- Seth's Graphite Fishing Pole
 						},
 						["qg"] = 18653,	-- Seth
 					}),
-					qd( q( 11377, {	-- Revenge is Tasty
-						i(33844, {	-- Barrel of Fish
-							i(33869),	-- Recipe: Broiled Bloodfin
-							i(34834),	-- Recipe: Captain Rumsey's Lager
-							i(33925),	-- Recipe: Delicious Chocolate Cake
-							i(33875),	-- Recipe: Kibler's Bits
-							i(33870),	-- Recipe: Skullfish Soup
-							i(33871),	-- Recipe: Stormchops
-						}),
-						i(33857, {	-- Crate of Meat
-							i(34834),	-- Recipe: Captain Rumsey's Lager
-							i(33925),	-- Recipe: Delicious Chocolate Cake
-							i(33875),	-- Recipe: Kibler's Bits
-							i(33873),	-- Recipe: Spicy Hot Talbuk
-							i(33871),	-- Recipe: Stormchops
-						}),
-					})),
+					q(11377, {	-- Revenge is Tasty
+						["isDaily"] = true,
+						["groups"] = {
+							i(33844, {	-- Barrel of Fish
+								i(33869),	-- Recipe: Broiled Bloodfin
+								i(34834),	-- Recipe: Captain Rumsey's Lager
+								i(33925),	-- Recipe: Delicious Chocolate Cake
+								i(33875),	-- Recipe: Kibler's Bits
+								i(33870),	-- Recipe: Skullfish Soup
+								i(33871),	-- Recipe: Stormchops
+							}),
+							i(33857, {	-- Crate of Meat
+								i(34834),	-- Recipe: Captain Rumsey's Lager
+								i(33925),	-- Recipe: Delicious Chocolate Cake
+								i(33875),	-- Recipe: Kibler's Bits
+								i(33873),	-- Recipe: Spicy Hot Talbuk
+								i(33871),	-- Recipe: Stormchops
+							}),
+						},
+					}),
 					q( 10849, {	-- Seek Out Kirrik
 						["qg"] = 22292,	-- Rilak the Redeemed
 						["sourceQuests"] = { 10847 },	-- The Eyes of Skettis *UNTESTED*
 					}),
-					qd( q( 11381, {	-- Soup for the Soul
-						i(33844, {	-- Barrel of Fish
-							i(33869),	-- Recipe: Broiled Bloodfin
-							i(34834),	-- Recipe: Captain Rumsey's Lager
-							i(33925),	-- Recipe: Delicious Chocolate Cake
-							i(33875),	-- Recipe: Kibler's Bits
-							i(33870),	-- Recipe: Skullfish Soup
-							i(33871),	-- Recipe: Stormchops
-						}),
-						i(33857, {	-- Crate of Meat
-							i(34834),	-- Recipe: Captain Rumsey's Lager
-							i(33925),	-- Recipe: Delicious Chocolate Cake
-							i(33875),	-- Recipe: Kibler's Bits
-							i(33873),	-- Recipe: Spicy Hot Talbuk
-							i(33871),	-- Recipe: Stormchops
-						}),
-					})),
-					qd( q( 11379, {	-- Super Hot Stew
-						i(33844, {	-- Barrel of Fish
-							i(33869),	-- Recipe: Broiled Bloodfin
-							i(34834),	-- Recipe: Captain Rumsey's Lager
-							i(33925),	-- Recipe: Delicious Chocolate Cake
-							i(33875),	-- Recipe: Kibler's Bits
-							i(33870),	-- Recipe: Skullfish Soup
-							i(33871),	-- Recipe: Stormchops
-						}),
-						i(33857, {	-- Crate of Meat
-							i(34834),	-- Recipe: Captain Rumsey's Lager
-							i(33925),	-- Recipe: Delicious Chocolate Cake
-							i(33875),	-- Recipe: Kibler's Bits
-							i(33873),	-- Recipe: Spicy Hot Talbuk
-							i(33871),	-- Recipe: Stormchops
-						}),
-					})),
+					q(11381, {	-- Soup for the Soul
+						["isDaily"] = true,
+						["groups"] = {
+							i(33844, {	-- Barrel of Fish
+								i(33869),	-- Recipe: Broiled Bloodfin
+								i(34834),	-- Recipe: Captain Rumsey's Lager
+								i(33925),	-- Recipe: Delicious Chocolate Cake
+								i(33875),	-- Recipe: Kibler's Bits
+								i(33870),	-- Recipe: Skullfish Soup
+								i(33871),	-- Recipe: Stormchops
+							}),
+							i(33857, {	-- Crate of Meat
+								i(34834),	-- Recipe: Captain Rumsey's Lager
+								i(33925),	-- Recipe: Delicious Chocolate Cake
+								i(33875),	-- Recipe: Kibler's Bits
+								i(33873),	-- Recipe: Spicy Hot Talbuk
+								i(33871),	-- Recipe: Stormchops
+							}),
+						},
+					}),
+					q(11379, {	-- Super Hot Stew
+						["isDaily"] = true,
+						["groups"] = {
+							i(33844, {	-- Barrel of Fish
+								i(33869),	-- Recipe: Broiled Bloodfin
+								i(34834),	-- Recipe: Captain Rumsey's Lager
+								i(33925),	-- Recipe: Delicious Chocolate Cake
+								i(33875),	-- Recipe: Kibler's Bits
+								i(33870),	-- Recipe: Skullfish Soup
+								i(33871),	-- Recipe: Stormchops
+							}),
+							i(33857, {	-- Crate of Meat
+								i(34834),	-- Recipe: Captain Rumsey's Lager
+								i(33925),	-- Recipe: Delicious Chocolate Cake
+								i(33875),	-- Recipe: Kibler's Bits
+								i(33873),	-- Recipe: Spicy Hot Talbuk
+								i(33871),	-- Recipe: Stormchops
+							}),
+						},
+					}),
 					q( 13082, {	-- The Boon of A'dal
 						["qg"] = 18481,	-- A'dal
 						["sourceQuests"] = { 13081 },	-- The Will of the Naaru *UNTESTED*
@@ -535,10 +556,11 @@ _.Zones =
 						["qg"] = 18166,	-- Archmage Khadgar
 						["sourceQuests"] = { 10588 },	-- The Cipher of Damnation
 					}),
-					qr(q(13430, {	-- Trial of the Naaru: Magtheridon
+					q(13430, {	-- Trial of the Naaru: Magtheridon
 						["qg"] = 18481,	-- A'dal
+						["repeatable"] = true,
 						["sourceQuests"] = { 10884, 10885, 10886 },	-- Trial of the Naaru: Mercy, Strength, & Tenacity
-					})),
+					}),
 --					q(10888),	-- Trial of the Naaru: Magtheridon (REMOVED / REPLACED WITH PREVIOUS QUEST)
 					q(10884, {	-- Trial of the Naaru: Mercy
 						["qg"] = 18481,	-- A'dal

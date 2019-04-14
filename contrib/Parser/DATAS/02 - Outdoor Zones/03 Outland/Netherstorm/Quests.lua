@@ -107,11 +107,12 @@ _.Zones =
 									["qg"] = 19880,	-- Nether-Stalker Khay'ji
 									["sourceQuests"] = { 10265 },	-- Consortium Crystal Collection
 								}),
-								qr(q(10308, {	-- Another Heap of Ethereals
+								q(10308, {	-- Another Heap of Ethereals
 									["qg"] = 19880,	-- Nether-Stalker Khay'ji
+									["repeatable"] = true,
 									["description"] = "Gives reputation through Exalted.",
 									["sourceQuests"] = { 10262 },	-- A Heap of Ethereals
-								})),
+								}),
 								q( 10969, {	-- Seek Out Ameer
 									["qg"] = 22899,	-- Protectorate Advisor Rahim
 									["description"] = "Requires Honored with The Consortium.",
@@ -125,11 +126,12 @@ _.Zones =
 									["qg"] = 20448,	-- Commander Ameer
 									["sourceQuests"] = { 10970 },	-- A Mission of Mercy
 								}),
-								qr(q(10972, {	-- Ethereum Prisoner I.D. Catalogue
+								q(10972, {	-- Ethereum Prisoner I.D. Catalogue
 									["qg"] = 20448,	-- Commander Ameer
+									["repeatable"] = true,
 									["description"] = "Gives reputation through Exalted.",
 									["sourceQuests"] = { 10971},	-- Ethereum Secrets
-								})),
+								}),
 								q( 10973, {	-- A Thousand Worlds
 									["qg"] = 20448,	-- Commander Ameer
 									["description"] = "Requires Revered with The Consortium.",

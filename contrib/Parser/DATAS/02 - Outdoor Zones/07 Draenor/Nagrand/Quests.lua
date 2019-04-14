@@ -205,7 +205,9 @@ _.Zones =
 									i(118149),	-- Stormsteppe Bracers
 									i(118147),	-- Windshaper Bracers
 								}),
-								qr(q(35928)),	-- Meatgut Needs Bones
+								q(35928, {	-- Meatgut Needs Bones
+									["repeatable"] = true,
+								}),
 								qa(34572, {	-- Obliterating Ogres
 									i(114686),	-- Beastrider Boots
 									i(114683),	-- Plainsthunder Warboots

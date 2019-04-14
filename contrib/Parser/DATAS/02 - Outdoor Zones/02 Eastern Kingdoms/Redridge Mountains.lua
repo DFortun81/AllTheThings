@@ -24,10 +24,16 @@ _.Zones =
 					p(378), 	-- Rabbit
 					p(392), 	-- Redridge Rat
 					p(424), 	-- Roach
-					qg(65651, qa(31726, {	-- Eric Davidson
-						i(89125),	-- Sack of Pet Supplies
-					})),
-					qr(qg(65651, qa(31781))),	-- Lindsay (DAILY)
+					qa(31726, {	-- Eric Davidson
+						["qg"] = 65651,	-- Lindsay
+						["groups"] = {
+							i(89125),	-- Sack of Pet Supplies
+						},
+					}),
+					qa(31781, {	-- Lindsay
+						["qg"] = 65651,	-- Lindsay
+						["isDaily"] = true,
+					}),
 				}),
 				n(-17, {	-- Quests
 					a(ach(4902, {	-- Redridge Mountain Quests

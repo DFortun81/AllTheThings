@@ -147,7 +147,9 @@ _.Instances = { tier(1, {	-- Classic
 				["groups"] = {
 					n(-17, {	-- Quests
 						o(179485, {	-- A Broken Trap
-							qr(q(27118)),	-- A Broken Trap
+							q(27118, {	-- A Broken Trap
+								["repeatable"] = true,
+							}),
 						}),
 						qg(3936, qa(27133)),	-- Eyes in the Sky
 						qg(45040, qa(27125, {	-- King of the Gordok
@@ -166,10 +168,13 @@ _.Instances = { tier(1, {	-- Classic
 						qg(14338, q(27119, {	-- The Gordok Ogre Suit
 							i(18258),	-- Gordok Ogre Suit
 						})),
-						qr(qg(14338, q(27120, {	-- The Gordok Ogre Suit
-							un(2, recipe(22813)),	-- Gordok Ogre Suit
-							i(18258),	-- Gordok Ogre Suit
-						}))),
+						qg(14338, q(27120, {	-- The Gordok Ogre Suit
+							["repeatable"] = true,
+							["groups"] = {
+								un(2, recipe(22813)),	-- Gordok Ogre Suit
+								i(18258),	-- Gordok Ogre Suit
+							},
+						})),
 						qg(14322, q(27114)),	-- The Gordok Taste Test
 						qg(14325, q(27124, {	-- Unfinished Gordok Business
 							i(18367),	-- Gordok's Gauntlets

@@ -1583,51 +1583,64 @@ _.Zones =
 					}),
 					n(-191, {	-- Archaeology
 						["groups"] = {
-							qw(q(41189, {	-- A New Lead
+							q(41189, {	-- A New Lead
 								["qg"] = 93538,	-- Dariness the Learned
-							})),
-							qw(q(41183, {	-- Academic Exploration
+								["isWeekly"] = true,
+							}),
+							q(41183, {	-- Academic Exploration
 								["qg"] = 93538,	-- Dariness the Learned
-							})),
-							qw(q(40857, {	-- Bits and Pieces
-								["qg"] = 93538,	-- Bariness the Learned
+								["isWeekly"] = true,
+							}),
+							q(40857, {	-- Bits and Pieces
+								["qg"] = 93538,	-- Dariness the Learned
+								["isWeekly"] = true,
 								["sourceQuests"] = {
 									41158,	-- Fragments of the Fjords
 									41161,	-- Out of the Frying Pan
 									41164,	-- One Step Closer
 									41167,	-- Fel Fragments
 								},
-							})),
-							qw(q(41167, {	-- Fel Fragments
+							}),
+							q(41167, {	-- Fel Fragments
 								["qg"] = 93538,	-- Dariness the Learned
-							})),
-							qw(q(41158, {	-- Fragments of the Fjords
+								["isWeekly"] = true,
+							}),
+							q(41158, {	-- Fragments of the Fjords
 								["qg"] = 93538,	-- Dariness the Learned
-							})),
-							qw(q(41177, {	-- Goblin Archaeology
+								["isWeekly"] = true,
+							}),
+							q(41177, {	-- Goblin Archaeology
 								["qg"] = 93538,	-- Dariness the Learned
-							})),
-							qw(q(41186, {	-- History of Highmountain
+								["isWeekly"] = true,
+							}),
+							q(41186, {	-- History of Highmountain
 								["qg"] = 93538,	-- Dariness the Learned
-							})),
-							qw(q(41164, {	-- One Step Closer
+								["isWeekly"] = true,
+							}),
+							q(41164, {	-- One Step Closer
 								["qg"] = 93538,	-- Dariness the Learned
-							})),
-							qw(q(41161, {	-- Out of the Frying Pan
+								["isWeekly"] = true,
+							}),
+							q(41161, {	-- Out of the Frying Pan
 								["qg"] = 93538,	-- Dariness the Learned
-							})),
-							qw(q(41171, {	-- The Reliquary Calls
+								["isWeekly"] = true,
+							}),
+							q(41171, {	-- The Reliquary Calls
 								["qg"] = 93538,	-- Dariness the Learned
-							})),
-							qw(q(41192, {	-- The Right Path
+								["isWeekly"] = true,
+							}),
+							q(41192, {	-- The Right Path
 								["qg"] = 93538,	-- Dariness the Learned
-							})),
-							qw(q(41180, {	-- Unspeakable Power
+								["isWeekly"] = true,
+							}),
+							q(41180, {	-- Unspeakable Power
 								["qg"] = 93538,	-- Dariness the Learned
-							})),
-							qw(q(41174, {	-- Worth Its Weight
+								["isWeekly"] = true,
+							}),
+							q(41174, {	-- Worth Its Weight
 								["qg"] = 93538,	-- Dariness the Learned
-							})),
+								["isWeekly"] = true,
+							}),
 						},
 						["requireSkill"] = 794,
 					}),

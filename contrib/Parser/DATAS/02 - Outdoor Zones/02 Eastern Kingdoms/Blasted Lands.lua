@@ -210,7 +210,9 @@ _.Zones =
 					qg(5385, qa(26157)),	-- Kasim Sharim
 					qg(79675, qh(34741)),	-- Keli'dan the Breaker
 					i(8244, {	-- Flawless Draenethyst Sphere
-						qr(q(25772)),	-- Kum'isha's Endeavors
+						q(25772, {	-- Kum'isha's Endeavors
+							["repeatable"] = true,
+						}),
 					}),
 					qg(7506, qh(25700)),	-- Loramus Thalipedes Awaits
 					qg(5393, qa(25710)),	-- Minor Distractions
@@ -311,7 +313,9 @@ _.Zones =
 					},
 --[[					
 					i(10593, {	-- Imperfect Draenethyst Fragment
-						qr(q(25771)),	-- One Draenei's Junk...
+						q(25771, {	-- One Draenei's Junk...
+							["repeatable"] = true,
+						}),
 					}),
 					qg(9540, qa(25708)),	-- Our Fallen Friends
 --]]					
@@ -1139,120 +1143,126 @@ _.Zones =
 				n(0,    {	-- Zone Drop
 					i(10593, {	-- Imperfect Draenethyst Fragment
 						["groups"] = {
-							qr(q(25771, {	-- One Draenei's Junk...
-								i(12122, { 	-- Kum'isha's Junk
-									dr(03.0, i(9940)),	-- Abjurer's Hood
-									dr(03.0, i(9942)),	-- Abjurer's Pants
-									dr(03.0, i(10194)),	-- Crusader's Cloak
-									dr(03.0, i(10131)),	-- Revenant Boots
-									dr(03.0, i(10129)),	-- Revenant Gauntlets
-									dr(02.0, i(7527)),	-- Cabalist Chestpiece
-									dr(02.0, i(9953)),	-- Chieftain's Headdress
-									dr(02.0, i(9955)),	-- Chieftain's Shoulders
-									dr(02.0, i(10059)),	-- Duskwoven Bracers
-									dr(02.0, i(10058)),	-- Duskwoven Sandals
-									dr(02.0, i(7517)),	-- Gossamer Tunic
-									dr(02.0, i(10080)),	-- Lord's Gauntlets
-									dr(02.0, i(10081)),	-- Lord's Girdle
-									dr(02.0, i(10208)),	-- Overlord's Legplates
-									dr(02.0, i(10209)),	-- Overlord's Spaulders
-									dr(02.0, i(10130)),	-- Revenant Girdle
-									dr(02.0, i(9957)),	-- Warmonger's Chestpiece
-									dr(01.6, i(9948)),	-- Chieftain's Boots
-									dr(01.6, i(10060)),	-- Duskwoven Cape
-									dr(01.6, i(9965)),	-- Warmonger's Pauldrons
-									dr(01.5, i(10127)),	-- Revenant Bracers
-									dr(01.5, i(10067)),	-- Righteous Waistguard
-									dr(01.5, i(10190)),	-- Swashbuckler's Belt
-									dr(01.4, i(9941)),	-- Abjurer's Mantle
-									dr(01.4, i(10086)),	-- Gothic Plate Armor
-									dr(01.3, i(9936)),	-- Abjurer's Boots
-									dr(01.3, i(9939)),	-- Abjurer's Gloves
-									dr(01.3, i(9952)),	-- Chieftain's Gloves
-									dr(01.3, i(10066)),	-- Duskwoven Sash
-									dr(01.3, i(10207)),	-- Overlord's Crown
-									dr(01.3, i(10205)),	-- Overlord's Gauntlets
-									dr(01.3, i(10132)),	-- Revenant Helmet
-									dr(01.3, i(10069)),	-- Righteous Bracers
-									dr(01.3, i(10075)),	-- Righteous Spaulders
-									dr(01.3, i(9964)),	-- Warmonger's Leggings
-									dr(01.2, i(10191)),	-- Crusader's Armguards
-									dr(01.2, i(10243)),	-- Heavy Lamellar Girdle
-									dr(01.2, i(10076)),	-- Lord's Armguards
-									dr(01.2, i(10133)),	-- Revenant Leggings
-									dr(01.2, i(10134)),	-- Revenant Shoulders
-									dr(01.2, i(10071)),	-- Righteous Cloak
-									dr(01.1, i(9954)),	-- Chieftain's Leggings
-									dr(01.1, i(10062)),	-- Duskwoven Gloves
-									dr(01.1, i(10061)),	-- Duskwoven Turban
-									dr(01.1, i(10083)),	-- Lord's Crown
-									dr(01.1, i(10068)),	-- Righteous Boots
-									dr(01.1, i(10185)),	-- Swashbuckler's Cape
-									dr(01.0, i(10063)),	-- Duskwoven Amice
-									dr(01.0, i(10242)),	-- Heavy Lamellar Gauntlets
-									dr(01.0, i(10084)),	-- Lord's Legguards
-									dr(01.1, i(10185)),	-- Swashbuckler's Cape
-									dr(01.0, i(10063)),	-- Duskwoven Amice
-									dr(01.0, i(10242)),	-- Heavy Lamellar Gauntlets
-									dr(01.0, i(10084)),	-- Lord's Legguards	
-									dr(01.0, i(10072)),	-- Righteous Gloves
-								}),
-							})),
+							q(25771, {	-- One Draenei's Junk...
+								["repeatable"] = true,
+								["groups"] = {
+									i(12122, { 	-- Kum'isha's Junk
+										dr(03.0, i(9940)),	-- Abjurer's Hood
+										dr(03.0, i(9942)),	-- Abjurer's Pants
+										dr(03.0, i(10194)),	-- Crusader's Cloak
+										dr(03.0, i(10131)),	-- Revenant Boots
+										dr(03.0, i(10129)),	-- Revenant Gauntlets
+										dr(02.0, i(7527)),	-- Cabalist Chestpiece
+										dr(02.0, i(9953)),	-- Chieftain's Headdress
+										dr(02.0, i(9955)),	-- Chieftain's Shoulders
+										dr(02.0, i(10059)),	-- Duskwoven Bracers
+										dr(02.0, i(10058)),	-- Duskwoven Sandals
+										dr(02.0, i(7517)),	-- Gossamer Tunic
+										dr(02.0, i(10080)),	-- Lord's Gauntlets
+										dr(02.0, i(10081)),	-- Lord's Girdle
+										dr(02.0, i(10208)),	-- Overlord's Legplates
+										dr(02.0, i(10209)),	-- Overlord's Spaulders
+										dr(02.0, i(10130)),	-- Revenant Girdle
+										dr(02.0, i(9957)),	-- Warmonger's Chestpiece
+										dr(01.6, i(9948)),	-- Chieftain's Boots
+										dr(01.6, i(10060)),	-- Duskwoven Cape
+										dr(01.6, i(9965)),	-- Warmonger's Pauldrons
+										dr(01.5, i(10127)),	-- Revenant Bracers
+										dr(01.5, i(10067)),	-- Righteous Waistguard
+										dr(01.5, i(10190)),	-- Swashbuckler's Belt
+										dr(01.4, i(9941)),	-- Abjurer's Mantle
+										dr(01.4, i(10086)),	-- Gothic Plate Armor
+										dr(01.3, i(9936)),	-- Abjurer's Boots
+										dr(01.3, i(9939)),	-- Abjurer's Gloves
+										dr(01.3, i(9952)),	-- Chieftain's Gloves
+										dr(01.3, i(10066)),	-- Duskwoven Sash
+										dr(01.3, i(10207)),	-- Overlord's Crown
+										dr(01.3, i(10205)),	-- Overlord's Gauntlets
+										dr(01.3, i(10132)),	-- Revenant Helmet
+										dr(01.3, i(10069)),	-- Righteous Bracers
+										dr(01.3, i(10075)),	-- Righteous Spaulders
+										dr(01.3, i(9964)),	-- Warmonger's Leggings
+										dr(01.2, i(10191)),	-- Crusader's Armguards
+										dr(01.2, i(10243)),	-- Heavy Lamellar Girdle
+										dr(01.2, i(10076)),	-- Lord's Armguards
+										dr(01.2, i(10133)),	-- Revenant Leggings
+										dr(01.2, i(10134)),	-- Revenant Shoulders
+										dr(01.2, i(10071)),	-- Righteous Cloak
+										dr(01.1, i(9954)),	-- Chieftain's Leggings
+										dr(01.1, i(10062)),	-- Duskwoven Gloves
+										dr(01.1, i(10061)),	-- Duskwoven Turban
+										dr(01.1, i(10083)),	-- Lord's Crown
+										dr(01.1, i(10068)),	-- Righteous Boots
+										dr(01.1, i(10185)),	-- Swashbuckler's Cape
+										dr(01.0, i(10063)),	-- Duskwoven Amice
+										dr(01.0, i(10242)),	-- Heavy Lamellar Gauntlets
+										dr(01.0, i(10084)),	-- Lord's Legguards
+										dr(01.1, i(10185)),	-- Swashbuckler's Cape
+										dr(01.0, i(10063)),	-- Duskwoven Amice
+										dr(01.0, i(10242)),	-- Heavy Lamellar Gauntlets
+										dr(01.0, i(10084)),	-- Lord's Legguards	
+										dr(01.0, i(10072)),	-- Righteous Gloves
+									}),
+								},
+							}),
 						},
 						["description"] = "This has a high chance (about 50%) to drop from rares in the zone, but can technically drop from any mob in the zone.",
 					}),
 					i(8244,  {	-- Flawless Draenethyst Sphere
 						["groups"] = {
-							qr(q(25772, { 	-- Kum'isha's Endeavors
-								i(10752, { 	-- Emerald Encrusted Chest
-									dr(03.0, i(13009)),	-- Cow King's Hide
-									dr(03.0, i(13008)),	-- Dalewind Trousers
-									dr(03.0, i(6660)),	-- Julie's Dagger
-									dr(03.0, i(13144)),	-- Serenity Belt
-									dr(03.0, i(754)),	-- Shortsword of Vengeance
-									dr(03.0, i(13052)),	-- Warmonger
-									dr(02.0, i(13014)),	-- Axe of Rin'ji
-									dr(02.0, i(13027)),	-- Bonesnapper
-									dr(02.0, i(13102)),	-- Cassandra's Grace
-									dr(02.0, i(13122)),	-- Dark Phantom Cape
-									dr(02.0, i(2564)),	-- Elven Spirit Claws
-									dr(02.0, i(13018)),	-- Executioner's Cleaver
-									dr(02.0, i(9433)),	-- Forgotten Wraps
-									dr(02.0, i(13074)),	-- Golem Shard Leggings
-									dr(02.0, i(13039)),	-- Skull Splitting Crossbow
-									dr(02.0, i(1607)),	-- Soulkeeper
-									dr(02.0, i(13066)),	-- Wyrmslayer Spaulders
-									dr(01.9, i(13067)),	-- Hydralick Armor
-									dr(01.9, i(13021)),	-- Needle Threader
-									dr(01.8, i(1203)),	-- Aegis of Stormwind
-									dr(01.8, i(13134)),	-- Belt of the Gladiator
-									dr(01.8, i(13109)),	-- Blackflame Cape
-									dr(01.8, i(13043)),	-- Blade of the Titans
-									dr(01.8, i(13046)),	-- Blanchard's Stout
-									dr(01.8, i(13055)),	-- Bonechewer
-									dr(01.8, i(13076)),	-- Giantslayer Bracers
-									dr(01.8, i(13073)),	-- Mugthol's Helm
-									dr(01.8, i(13035)),	-- Serpent Slicer
-									dr(01.8, i(1721)),	-- Viking Warhammer
-									dr(01.8, i(13065)),	-- Wand of Allistarj
-									dr(01.8, i(4091)),	-- Widowmaker
-									dr(01.7, i(13120)),	-- Deepfury Bracers
-									dr(01.7, i(13125)),	-- Elven Chain Boots
-									dr(01.7, i(13022)),	-- Gryphonwing Long Bow
-									dr(01.7, i(8190)),	-- Hanzo Sword
-									dr(01.7, i(13082)),	-- Mountainside Buckler
-									dr(01.7, i(4090)),	-- Mug O' Hurt
-									dr(01.7, i(13111)),	-- Sandals of the Insurgent
-									dr(01.7, i(13059)),	-- Stoneraven
-									dr(01.7, i(13112)),	-- Winged Helm
-									dr(01.6, i(13126)),	-- Battlecaller Gauntlets
-									dr(01.6, i(13139)),	-- Guttbuster
-									dr(01.6, i(13128)),	-- High Bergg Helm
-									dr(01.6, i(1720)),	-- Tanglewood Staff
-									dr(01.5, i(	13030)),	-- Basilisk Bone
-									i(17050), 				-- Chan's Imperial Robes
-								}),
-							})),
+							q(25772, { 	-- Kum'isha's Endeavors
+								["repeatable"] = true,
+								["groups"] = {
+									i(10752, { 	-- Emerald Encrusted Chest
+										dr(03.0, i(13009)),	-- Cow King's Hide
+										dr(03.0, i(13008)),	-- Dalewind Trousers
+										dr(03.0, i(6660)),	-- Julie's Dagger
+										dr(03.0, i(13144)),	-- Serenity Belt
+										dr(03.0, i(754)),	-- Shortsword of Vengeance
+										dr(03.0, i(13052)),	-- Warmonger
+										dr(02.0, i(13014)),	-- Axe of Rin'ji
+										dr(02.0, i(13027)),	-- Bonesnapper
+										dr(02.0, i(13102)),	-- Cassandra's Grace
+										dr(02.0, i(13122)),	-- Dark Phantom Cape
+										dr(02.0, i(2564)),	-- Elven Spirit Claws
+										dr(02.0, i(13018)),	-- Executioner's Cleaver
+										dr(02.0, i(9433)),	-- Forgotten Wraps
+										dr(02.0, i(13074)),	-- Golem Shard Leggings
+										dr(02.0, i(13039)),	-- Skull Splitting Crossbow
+										dr(02.0, i(1607)),	-- Soulkeeper
+										dr(02.0, i(13066)),	-- Wyrmslayer Spaulders
+										dr(01.9, i(13067)),	-- Hydralick Armor
+										dr(01.9, i(13021)),	-- Needle Threader
+										dr(01.8, i(1203)),	-- Aegis of Stormwind
+										dr(01.8, i(13134)),	-- Belt of the Gladiator
+										dr(01.8, i(13109)),	-- Blackflame Cape
+										dr(01.8, i(13043)),	-- Blade of the Titans
+										dr(01.8, i(13046)),	-- Blanchard's Stout
+										dr(01.8, i(13055)),	-- Bonechewer
+										dr(01.8, i(13076)),	-- Giantslayer Bracers
+										dr(01.8, i(13073)),	-- Mugthol's Helm
+										dr(01.8, i(13035)),	-- Serpent Slicer
+										dr(01.8, i(1721)),	-- Viking Warhammer
+										dr(01.8, i(13065)),	-- Wand of Allistarj
+										dr(01.8, i(4091)),	-- Widowmaker
+										dr(01.7, i(13120)),	-- Deepfury Bracers
+										dr(01.7, i(13125)),	-- Elven Chain Boots
+										dr(01.7, i(13022)),	-- Gryphonwing Long Bow
+										dr(01.7, i(8190)),	-- Hanzo Sword
+										dr(01.7, i(13082)),	-- Mountainside Buckler
+										dr(01.7, i(4090)),	-- Mug O' Hurt
+										dr(01.7, i(13111)),	-- Sandals of the Insurgent
+										dr(01.7, i(13059)),	-- Stoneraven
+										dr(01.7, i(13112)),	-- Winged Helm
+										dr(01.6, i(13126)),	-- Battlecaller Gauntlets
+										dr(01.6, i(13139)),	-- Guttbuster
+										dr(01.6, i(13128)),	-- High Bergg Helm
+										dr(01.6, i(1720)),	-- Tanglewood Staff
+										dr(01.5, i(	13030)),	-- Basilisk Bone
+										i(17050), 				-- Chan's Imperial Robes
+									}),
+								},
+							}),
 						},
 						["description"] = "This has a high chance (about 50%) to drop from rares in the zone, but can technically drop from any mob in the zone.",							
 					}),

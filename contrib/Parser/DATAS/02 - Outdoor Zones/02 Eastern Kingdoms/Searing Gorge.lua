@@ -277,14 +277,16 @@ _.Zones =
 							q(27980, {	--The Spiders Have to Go
 								["qg"] = 14634,	-- Lookout Captain Lolo Longstriker
 							}),
-							qr(q(13662, {	--Gaining Acceptance
+							q(13662, {	--Gaining Acceptance
 								["qg"] = 14624,	-- Master Smith Burninate
+								["repeatable"] = true,
 								["sourceQuests"] = { 28064 },	-- Welcome to the Brotherhood
-							})),
-							qr(q(7737, {	--Gaining Even More Acceptance
+							}),
+							q(7737, {	--Gaining Even More Acceptance
 								["qg"] = 14624,	-- Master Smith Burninate
+								["repeatable"] = true,
 								["sourceQuests"] = { 28064 },	-- Welcome to the Brotherhood
-							})),
+							}),
 							q(28053, {	--Lunk Like Your Style
 								["groups"] = {
 									i(63245),	-- Lunk's Special Gear

@@ -834,24 +834,26 @@ _.Zones =
 										["qg"] = 119388,	-- Chieftain Hatuun
 										["sourceQuests"] = { 48441 },	-- Remnants of Darkfall Ridge
 									}),	
-									qr(q(48910, {	-- Supplying Krokuun	
+									q(48910, {	-- Supplying Krokuun
+										["qg"] = 119388,	-- Chieftain Hatuun
+										["repeatable"] = true,
+										["sourceQuests"] = { 48442 },	-- Nath'raxas Hold: Preparations
 										["groups"] = {
 											i(152095),	-- Krokul Ridgestalker
 										},
-										["qg"] = 119388,	-- Chieftain Hatuun
-										["sourceQuests"] = { 48442 },	-- Nath'raxas Hold: Preparations
-									})),	
+									}),	
 									q(48443, {	-- Nath'raxas Hold: Rescue Mission
 										["qg"] = 119388,	-- Chieftain Hatuun
 										["sourceQuests"] = { 48910 },	-- Supplying Krokuun
 									}),	
-									qr(q(48634, {	-- Further Supplying Krokuun	
+									q(48634, {	-- Further Supplying Krokuun
+										["qg"] = 119388,	-- Chieftain Hatuun
+										["repeatable"] = true,
+										["sourceQuests"] = { 48443 },	-- Nath'raxas Hold: Rescue Mission
 										["groups"] = {
 											i(152095),	-- Krokul Ridgestalker
 										},
-										["qg"] = 119388,	-- Chieftain Hatuun
-										["sourceQuests"] = { 48443 },	-- Nath'raxas Hold: Rescue Mission
-									})),	
+									}),	
 								}),
 								{	-- Ascending Alchemy
 									["questID"] = 48016,

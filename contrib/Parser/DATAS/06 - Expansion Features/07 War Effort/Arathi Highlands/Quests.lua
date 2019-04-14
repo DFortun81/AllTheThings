@@ -63,9 +63,12 @@ _.ExpansionFeatures =
 								},
 							},
 						},
-						qr( qh(53148, {	-- Boulderfist Beatdown [H]
-							currency(1560),
-						})),
+						qh(53148, {	-- Boulderfist Beatdown [H]
+							["repeatable"] = true,
+							["groups"] = {
+								currency(1560),
+							}
+						}),
 						{	-- Death to the Defilers
 							["questID"] = 53153, 	-- Death to the Defilers
 							["repeatable"] = true,
@@ -160,9 +163,12 @@ _.ExpansionFeatures =
 								},
 							},
 						},
-						qr( qh(53179, {	-- Executing Exorcisms [H]
-							currency(1553),
-						})),
+						qh(53179, {	-- Executing Exorcisms [H]
+							["repeatable"] = true,
+							["groups"] = {
+								currency(1553),
+							},
+						}),
 						{	-- Sins of the Syndicate [A]
 							["questID"] = 53162, 	-- Sins of the Syndicate
 							["repeatable"] = true,
@@ -183,9 +189,12 @@ _.ExpansionFeatures =
 								},
 							},
 						},
-						qr( qh(53173, {	-- Sins of the Syndicate [H]
-							currency(1560),
-						})),
+						qh(53173, {	-- Sins of the Syndicate [H]
+							["repeatable"] = true,
+							["groups"] = {
+								currency(1560),
+							},
+						}),
 						qh(53210, {	-- Touring the Front [H]
 							["sourceQuests"] = { 53208 },	-- To The Front
 							["qg"] = 143019,	-- Wistel Sliversnitch
@@ -223,9 +232,12 @@ _.ExpansionFeatures =
 								},
 							},
 						},
-						qr( qh(53192, {	-- Twice-Exiled [H]
-							currency(1560),
-						})),
+						qh(53192, {	-- Twice-Exiled [H]
+							["repeatable"] = true,
+							["groups"] = {
+								currency(1560),
+							},
+						}),
 						{	-- -- The League Will Lose [H]
 							["questID"] = 53154, 	-- The League Will Lose [H]
 							["repeatable"] = true,
@@ -309,9 +321,12 @@ _.ExpansionFeatures =
 								},
 							},
 						},
-						qr( qh(53150, {	-- Wiping Out the Winterbark [H]
-							currency(1560),
-						})),
+						qh(53150, {	-- Wiping Out the Winterbark [H]
+							["repeatable"] = true,
+							["groups"] = {
+								currency(1560),
+							},
+						}),
 					
 					},
 				}),

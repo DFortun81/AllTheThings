@@ -16,20 +16,49 @@ _.Zones =
 				}),
 				n(-38, {	-- Profession
 					prof(185, {	-- Cooking
-						qr(qg(5159, qa(29352))),	-- A Fowl Shortage
-						qr(qg(5159, qa(29351))),	-- A Round for the Guards
-						qr(qg(5159, qa(29355))),	-- Can't Get Enough Spice Bread
-						qr(qg(5159, qa(29356))),	-- I Need to Cask a Favor
-						qr(qg(5159, qa(29353))),	-- Keepin' the Haggis Flowin'
+						qa(29352, {	-- A Fowl Shortage
+							["qg"] = 5159,	-- Daryl Riknussun
+							["isDaily"] = true,
+						}),
+						qa(29351, {	-- A Round for the Guards
+							["qg"] = 5159,	-- Daryl Riknussun
+							["isDaily"] = true,
+						}),
+						qa(29355, {	-- Can't Get Enough Spice Bread
+							["qg"] = 5159,	-- Daryl Riknussun
+							["isDaily"] = true,
+						}),
+						qa(29356, {	-- I Need to Cask a Favor
+							["qg"] = 5159,	-- Daryl Riknussun
+							["isDaily"] = true,
+						}),
+						qa(29353, {	-- Keepin' the Haggis Flowin'
+							["qg"] = 5159,	-- Daryl Riknussun
+							["isDaily"] = true,
+						}),
 					}),
 					prof(356, {	-- Fishing
-						["g"] = {
---							Add quest subsection?  Not sure what would be more ~aesthetically appealing~						
-							qr(qg(5161, qa(29342))),	-- Cold Water Fishing
-							qr(qg(5161, qa(29344))),	-- Fish fer Squrky
-							qr(qg(5161, qa(29347))),	-- Live Bait
-							qr(qg(5161, qa(29343))),	-- One fer the Ages
-							qr(qg(5161, qa(29350))),	-- The Gnomish Bait-o-Matic
+						["g"] = {					
+							qa(29342, {	-- Cold Water Fishing
+								["qg"] = 5161,	-- Grimnur Stonebrand
+								["isDaily"] = true,
+							}),
+							qa(29344, {	-- Fish fer Squrky
+								["qg"] = 5161,	-- Grimnur Stonebrand
+								["isDaily"] = true,
+							}),
+							qa(29347, {	-- Live Bait
+								["qg"] = 5161,	-- Grimnur Stonebrand
+								["isDaily"] = true,
+							}),
+							qa(29343, {	-- One fer the Ages
+								["qg"] = 5161,	-- Grimnur Stonebrand
+								["isDaily"] = true,
+							}),
+							qa(29350, {	-- The Gnomish Bait-o-Matic
+								["qg"] = 5161,	-- Grimnur Stonebrand
+								["isDaily"] = true,
+							}),
 							a(i(122204)),	-- Music Roll: Cold Mountain
 							i(34484),		-- Old Ironjaw
 						},

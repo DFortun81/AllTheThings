@@ -648,7 +648,9 @@ _.Zones =
 								i(29926),	-- Whispering Tunic
 							}),
 							q(10403),	-- Naladu
-							qd( q(31922)),	-- Nicki Tinytech
+							q(31922, {	-- Nicki Tinytech
+								["isDaily"] = true,
+							}),
 							qa( 10400, {	-- Overlord
 								i(28041),	-- Bladefist's Breadth
 								i(28042),	-- Regal Protectorate

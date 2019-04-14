@@ -27,7 +27,9 @@ _.Zones =
 					p(446),	-- Jade Oozeling
 					p(450),	-- Maggot
 					p(417),	-- Rat
-					qr(q(31910)),	-- David Kosse (DAILY)
+					q(31910, {	-- David Kosse (DAILY)
+						["isDaily"] = true,
+					}),
 				}),
 				n(-17, { 	-- Quests
 --[[	Achievement info for Loremaster related zone quests

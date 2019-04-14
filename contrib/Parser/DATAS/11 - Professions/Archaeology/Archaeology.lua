@@ -16,14 +16,20 @@ profession(794, {	-- Archaeology
 	}),
 	currency(1174, {	-- Demonic
 		n(-17, {	-- Quests
-			qw (q(41157, {	-- Corrupted Studies
-				i(136362, {	-- Ancient War Remnants
-				i(131724),	-- Crystalline Eye of Undravius
+			q(41157, {	-- Corrupted Studies
+				["isWeekly"] = true,
+				["groups"] = {
+					i(136362, {	-- Ancient War Remnants
+						i(131724),	-- Crystalline Eye of Undravius
+					}),
+				},
 			}),
-		})),
-			qw( q(41163, {	-- The Apocalypse Bringer
-				i(136922),	-- Wyrmy Tunkins
-			})),
+			q(41163, {	-- The Apocalypse Bringer
+				["isWeekly"] = true,
+				["groups"] = {
+					i(136922),	-- Wyrmy Tunkins
+				},
+			}),
 		}),
 		sp(196481, { 
 			i(130917),	-- Flayed-Skin Chronicle
@@ -123,12 +129,18 @@ profession(794, {	-- Archaeology
 	}),
 	currency(1173, {	-- Highmountain Tauren
 		n(-17, {	-- Quests
-			qw( q(41193, {	-- Laying to Rest
-				i(131734),	-- Spirit of Eche'ro
-			})),
-			qw( q(41188, {	-- Neltharion's Lair: Misdirected
-				i(131733),	-- Spear of Rethu
-			})),
+			q(41193, {	-- Laying to Rest
+				["isWeekly"] = true,
+				["groups"] = {
+					i(131734),	-- Spirit of Eche'ro
+				},
+			}),
+			q(41188, {	-- Neltharion's Lair: Misdirected
+				["isWeekly"] = true,
+				["groups"] = {
+					i(131733),	-- Spear of Rethu
+				},
+			}),
 		}),
 		i(137867),	-- Design: Shadowruby Band [Rank 3]
 		sp(196478, { 

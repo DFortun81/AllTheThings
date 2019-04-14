@@ -12,66 +12,61 @@ _.Instances = { tier(1, {	-- Classic
 			n(-17, {	-- Quests
 				n(-75, {	-- Detention Block
 					qa(27569, {	-- Dark Iron Tacticians
-						["groups"] = {
-						},
 						["qg"] = 45894,	-- Prospector Seymour
 						["sourceQuests"] = { 27568 },	-- Infilitrating Shadowforge City [Alliance]
 					}),
 					qa(27568, {	-- Infiltrating Shadowforge City [Alliance]
-						["groups"] = {
-						},
 						["qg"] = 45891,	-- Oralius
 					}),
 					qh(27582, {	-- Infiltrating Shadowforge City [Horde]
-						["groups"] = {
-						},
 						["qg"] = 45839,	-- Galamav the Marksman
 					}),
 					qa(27565, {	-- Into the Prison [Alliance]
-						["groups"] = {
-						},
 						["qg"] = 45892,	-- Jalinda Sprig
 					}),
 					qh(27579, {	-- Into the Prison [Horde]
-						["groups"] = {
-						},
 						["qg"] = 45821,	-- Tha'trak Proudtusk
 					}),
 					qh(27585, {	-- The 109th Division
-						["groups"] = {
-						},
 						["qg"] = 45820,	-- Razal'blade
 						["sourceQuests"] = { 27582 },	-- Infiltrating Shadowforge City [Horde]
 					}),
 					q(27596, {	-- The Heart of the Mountain
-						["groups"] = {
-						},
 						["qg"] = 45850,	-- Maxwort Uberglint
 					}),
 					q(27603, {	-- The Sealed Gate
-						["groups"] = {
-						},
 						["qg"] = 45849,	-- Tinkee Steamboil
 					}),
 					qa(27567, {	-- Twilight?! No! [Alliance]
-						["groups"] = {
-						},
 						["qg"] = 45898,	-- Kevin Dawson
 						["sourceQuests"] = { 27565 },	-- Into the Prison [Alliance]
 					}),
 					qh(27581, {	-- Twilight?! No! [Horde]
-						["groups"] = {
-						},
 						["qg"] = 45818,	-- Lexlort
 						["sourceQuests"] = { 27579 },	-- Into the Prison [Horde]
 					}),
 				}),
 				n(-76, {	-- Shadowforge City
-					qr(qg(12944, q(6646))),	-- Favor Amongst the Brotherhood, Blood of the Mountain
-					qr(qg(12944, q(6645))),	-- Favor Amongst the Brotherhood, Core Leather
-					qr(qg(12944, q(6642))),	-- Favor Amongst the Brotherhood, Dark Iron Ore
-					qr(qg(12944, q(6643))),	-- Favor Amongst the Brotherhood, Fiery Core
-					qr(qg(12944, q(6644))),	-- Favor Amongst the Brotherhood, Lava Core
+					q(6646, {	-- Favor Amongst the Brotherhood, Blood of the Mountain
+						["qg"] = 12944,	-- Lokhtos Darkbargainer
+						["repeatable"] = true,
+					}),
+					q(6645, {	-- Favor Amongst the Brotherhood, Core Leather
+						["qg"] = 12944,	-- Lokhtos Darkbargainer
+						["repeatable"] = true,
+					}),
+					q(6642, {	-- Favor Amongst the Brotherhood, Dark Iron Ore
+						["qg"] = 12944,	-- Lokhtos Darkbargainer
+						["repeatable"] = true,
+					}),
+					q(6643, {	-- Favor Amongst the Brotherhood, Fiery Core
+						["qg"] = 12944,	-- Lokhtos Darkbargainer
+						["repeatable"] = true,
+					}),
+					q(6644, {	-- Favor Amongst the Brotherhood, Lava Core
+						["qg"] = 12944,	-- Lokhtos Darkbargainer
+						["repeatable"] = true,
+					}),
 					qa(27578, {	-- Morgan's Fruition
 						["groups"] = {
 							i(65956),	-- Maxwell's Cloak
@@ -90,28 +85,22 @@ _.Instances = { tier(1, {	-- Classic
 						["qg"] = 45840,	-- Warlord Goretooth
 						["sourceQuests"] = { 27591 },  -- The Dark Iron Pact [Horde]
 					}),
-					qr(qg(9503, q(4295))), 		-- Rocknot's Ale
+					qg(9503, q(4295, {	-- Rocknot's Ale
+						["repeatable"] = true,
+					})),
 					qa(27573, {	-- The Dark Iron Pact [Alliance]
-						["groups"] = {
-						},
 						["qg"] = 45899,	-- Mountaineer Orfus
 						["sourceQuests"] = { 27571 },	-- The Grim Guzzler [Alliance]
 					}),
 					qh(27591, {	-- The Dark Iron Pact [Horde]
-						["groups"] = {
-						},
 						["qg"] = 45824,	--  Thunderheart
 						["sourceQuests"] = { 27589 },	-- The Grim Guzzler [Horde]
 					}),
 					qa(27571, {	-- The Grim Guzzler [Alliance]
-						["groups"] = {
-						},
 						["qg"] = 45888,	-- Mayara Brightwing
 						["sourceQuests"] = { 27569 },	-- Dark Iron Tacticians
 					}),
 					qh(27589, {	-- The Grim Guzzler [Horde]
-						["groups"] = {
-						},
 						["qg"] = 45817,	-- Hierophant Theodora Mulvadania
 						["sourceQuests"] = { 27585 },	-- The 109th Division
 					}),
