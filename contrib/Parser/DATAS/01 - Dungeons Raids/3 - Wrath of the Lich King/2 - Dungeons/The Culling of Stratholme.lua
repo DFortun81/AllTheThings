@@ -64,13 +64,6 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						27734,	-- Crypt Fiend
 					},
 				}),
-				i(37781, {	-- Grips of  the Warming Heart
-					["crs"] = {
-						27744,	-- Infinite Agent
-						27736,	-- Patchwork Construct	
-						28199,	-- Tomb Stalker	
-					},
-				}),
 				i(37117, {	-- King's Square Bracers
 					["crs"] = {
 						27731,	-- Acolyte	
