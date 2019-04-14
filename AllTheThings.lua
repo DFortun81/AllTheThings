@@ -7257,7 +7257,7 @@ local function SetRowData(self, row, data)
 		end
 		local leftmost = row;
 		local relative = "LEFT";
-		local x = ((CalculateRowIndent(data) * GetDataMember("Indent", 8)) or 0) + 8;
+		local x = ((CalculateRowIndent(data) * 8) or 0) + 8;
 		local back = CalculateRowBack(data);
 		row.ref = data;
 		if back then
@@ -11421,7 +11421,7 @@ app.events.VARIABLES_LOADED = function()
 	
 	-- Clean up settings
 	local oldsettings = {};
-	for i,key in ipairs({"AutomateTomTomWaypoints","Categories","Characters","CollectedArtifacts","CollectedBuildings","CollectedBuildingsPerCharacter","CollectedFactions","CollectedFactionBonusReputation","CollectedFactionsPerCharacter","CollectedFollowers","CollectedFollowersPerCharacter","CollectedIllusions","CollectedMusicRolls","CollectedMusicRollsPerCharacter","CollectedSelfieFilters","CollectedSelfieFiltersPerCharacter","CollectedSources","CollectedSpells","CollectedSpellsPerCharacter","CollectedTitles","CollectedToys","FilterSeasonal","CollectedTitlesPerCharacter","FilterUnobtainableItems","FlightPaths","Indent","lockouts","Notes","Position","RandomSearchFilter","Reagents","RefreshedCollectionsAlready","SeasonalFilters","Sets","SourceSets","UnobtainableItemFilters","WaypointFilters","EnableTomTomWaypointsOnTaxi","TomTomIgnoreCompletedObjects"}) do
+	for i,key in ipairs({"AutomateTomTomWaypoints","Categories","Characters","CollectedArtifacts","CollectedBuildings","CollectedBuildingsPerCharacter","CollectedFactions","CollectedFactionBonusReputation","CollectedFactionsPerCharacter","CollectedFollowers","CollectedFollowersPerCharacter","CollectedIllusions","CollectedMusicRolls","CollectedMusicRollsPerCharacter","CollectedSelfieFilters","CollectedSelfieFiltersPerCharacter","CollectedSources","CollectedSpells","CollectedSpellsPerCharacter","CollectedTitles","CollectedToys","FilterSeasonal","CollectedTitlesPerCharacter","FilterUnobtainableItems","FlightPaths","lockouts","Notes","Position","RandomSearchFilter","Reagents","RefreshedCollectionsAlready","SeasonalFilters","Sets","SourceSets","UnobtainableItemFilters","WaypointFilters","EnableTomTomWaypointsOnTaxi","TomTomIgnoreCompletedObjects"}) do
 		oldsettings[key] = AllTheThingsAD[key];
 	end
 	wipe(AllTheThingsAD);
