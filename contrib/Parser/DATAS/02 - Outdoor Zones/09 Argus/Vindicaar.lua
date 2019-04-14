@@ -1039,9 +1039,9 @@ _.Zones =
 									i(134497),	-- Stormcharged Choker
 									i(137487),	-- Strand of the Stars
 									i(147013),	-- String of Extracted Incisors
-									--i(141325),	-- Talisman of the Shal'dorei(quest reward from NH afaik)
-									--i(141326),	-- Talisman of the Shal'dorei(quest reward from NH afaik)
-									--i(141324),	-- Talisman of the Shal'dorei(quest reward from NH afaik)
+									i(141325),	-- Talisman of the Shal'dorei
+									i(141326),	-- Talisman of the Shal'dorei
+									i(141324),	-- Talisman of the Shal'dorei
 									i(134541),	-- Tightweb Choker
 									i(134491),	-- Understone Gorget
 									i(136733),	-- Warden Pendant
