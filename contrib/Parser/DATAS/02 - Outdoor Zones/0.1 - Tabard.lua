@@ -57,6 +57,9 @@ _.Zones =
 			},
 			{	-- Green Trophy Tabard of the Illidari
 				["itemID"] = 31404,	-- Green Trophy Tabard of the Illidari
+				["sourceQuests"] = {
+					10781,	-- Battle of the Crimson Watch
+				},
 			},
 			{	-- Guild Tabard
 				["itemID"] = 5976,	-- Guild Tabard
@@ -87,6 +90,9 @@ _.Zones =
 			},
 			{	-- Purple Trophy Tabard of the Illidari
 				["itemID"] = 31405,	-- Purple Trophy Tabard of the Illidari
+				["sourceQuests"] = {
+					10781,	-- Battle of the Crimson Watch
+				},
 			},
 			{	-- Scryers Tabard
 				["itemID"] = 31780,	-- Scryers Tabard
@@ -109,14 +115,23 @@ _.Zones =
 			{	-- Tabard of Brute Force
 				["itemID"] = 43349,	-- Tabard of Brute Force
 			},
-			{	-- Tabard of Conquest
+			{	-- Tabard of Conquest [Alliance]
 				["itemID"] = 49052,	-- Tabard of Conquest
+			},
+			{	-- Tabard of Conquest [Horde]
+				["itemID"] = 49054,	-- Tabard of Conquest
 			},
 			{	-- Tabard of Summer Flames
 				["itemID"] = 35280,	-- Tabard of Summer Flames
+				["sourceQuests"] = {
+					11972,	-- Shards of Ahune
+				},
 			},
 			{	-- Tabard of Summer Skies
 				["itemID"] = 35279,	-- Tabard of Summer Skies
+				["sourceQuests"] = {
+					11972,	-- Shards of Ahune
+				},
 			},
 			{	-- Tabard of the Achiever
 				["itemID"] = 40643,	-- Tabard of the Achiever
@@ -126,6 +141,10 @@ _.Zones =
 			},
 			{	-- Tabard of the Hand
 				["itemID"] = 24344,	-- Tabard of the Hand
+				["sourceQuests"] = {
+					9762,	-- The Unwritten Prophecy
+				},
+				["description"] = "This is from a Draenei only quest, but can used by any Alliance race.",
 			},
 			{	-- Tabard of the Shattered Sun
 				["itemID"] = 35221,	-- Tabard of the Shattered Sun
