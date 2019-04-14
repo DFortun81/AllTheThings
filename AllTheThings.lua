@@ -924,16 +924,14 @@ local function BuildSourceTextForTSM(group, l)
 	end
 	return L["TITLE"];
 end
-local function ProcessGroup(data, object, indent, back)
+local function ProcessGroup(data, object, back)
 	if app.VisibilityFilter(object) then
 		object.back = back;
-		object.indent = indent;
 		tinsert(data, object);
 		if object.g and object.expanded then
-			indent = indent + 1;
 			back = back * 0.5;
 			for j, group in ipairs(object.g) do
-				ProcessGroup(data, group, indent, back);
+				ProcessGroup(data, group, back);
 			end
 		end
 	end
@@ -6877,7 +6875,7 @@ local function CreateMiniListForGroup(group)
 	-- Pop Out Functionality! :O
 	local popout = app:GetWindow((group.parent and group.parent.text or "") .. (group.text or ""));
 	if group.s then
-		popout.data = setmetatable({ ["g"] = {}, ["progress"] = 0, ["total"] = 0, ['hideText'] = true, ["visible"] = true, }, { __index = group });
+		popout.data = setmetatable({ ["g"] = {}, ["indent"] = 0, ["progress"] = 0, ["total"] = 0, ['hideText'] = true, ["visible"] = true, }, { __index = group });
 		
 		-- Attempt to get information about the source ID.
 		local sourceInfo = C_TransmogCollection_GetSourceInfo(group.s);
@@ -7174,7 +7172,7 @@ local function CreateMiniListForGroup(group)
 		UpdateGroups(popout.data, popout.data.g);
 	elseif group.g then
 		-- This is already a container with accurate numbers.
-		popout.data = setmetatable({ ['visible'] = true }, { __index = group });
+		popout.data = setmetatable({ ["indent"] = 0, ['visible'] = true }, { __index = group });
 	else
 		-- This is a standalone item
 		popout.data = {
@@ -7182,6 +7180,7 @@ local function CreateMiniListForGroup(group)
 			["icon"] = "Interface\\Icons\\Achievement_Garrison_blueprint_medium.blp",
 			["g"] = { setmetatable({ ['visible'] = true, ['hideText'] = true }, { __index = group }); },
 			["visible"] = true,
+			["indent"] = 0, 
 			["progress"] = 0,
 			["total"] = 0,
 		};
@@ -8135,10 +8134,10 @@ local function UpdateWindow(self, force, got)
 		self.data.expanded = true;
 		if self.data.baseIndent and self.data.g then
 			for i, data in ipairs(self.data.g) do
-				ProcessGroup(self.rowData, data, 0, self.data.back or 0);
+				ProcessGroup(self.rowData, data, self.data.back or 0);
 			end
 		else
-			ProcessGroup(self.rowData, self.data, 0, self.data.back or 0);
+			ProcessGroup(self.rowData, self.data, self.data.back or 0);
 		end
 		
 		-- Does this user have everything?
@@ -8155,7 +8154,6 @@ local function UpdateWindow(self, force, got)
 				tinsert(self.rowData, {
 					["text"] = "No entries matching your filters were found.",
 					["description"] = "If you believe this was in error, try activating 'Debug Mode'. One of your filters may be restricting the visibility of the group.",
-					["indent"] = 1,
 					["collectible"] = 1,
 					["collected"] = 1,
 					["back"] = 0.7
@@ -8755,7 +8753,7 @@ function app:GetDataCache()
 		displayData.description = "If you're seeing this window outside of Git, please yell loudly in Crieve's ear.";
 		displayData.g = {};
 		for model,groups in pairs(fieldCache["model"]) do
-			tinsert(displayData.g, {visible = true, back = 0.5, indent = 1, model = model, text = model});
+			tinsert(displayData.g, {visible = true, back = 0.5, model = model, text = model});
 		end
 		for i=1,78092,1 do
 			tinsert(displayData.g, {["displayID"] = i,["text"] = "Model #" .. i});
@@ -8843,12 +8841,12 @@ function app:GetDataCache()
 				if (not group.s or group.s == 0) then	--  and (not group.f or group.filterID == 109 or group.f < 50)
 					if group.bonusID and not bonusIDs[group.bonusID] then
 						bonusIDs[group.bonusID] = true;
-						tinsert(harvestData.g, setmetatable({visible = true, back = 0.5, indent = 1, s = 0, itemID = tonumber(itemID), bonusID = group.bonusID}, app.BaseItem));
+						tinsert(harvestData.g, setmetatable({visible = true, back = 0.5, s = 0, itemID = tonumber(itemID), bonusID = group.bonusID}, app.BaseItem));
 					else
 						mID = group.modID or 1;
 						if not modIDs[mID] then
 							modIDs[mID] = true;
-							tinsert(harvestData.g, setmetatable({visible = true, back = 0.5, indent = 1, s = 0, itemID = tonumber(itemID), modID = mID}, app.BaseItem));
+							tinsert(harvestData.g, setmetatable({visible = true, back = 0.5, s = 0, itemID = tonumber(itemID), modID = mID}, app.BaseItem));
 						end
 					end
 				end
@@ -9075,6 +9073,7 @@ app:GetWindow("Unsorted");
 				['OnUpdate'] = function(data) 
 					data.visible = true;
 				end,
+				['indent'] = 0,
 				['back'] = 1,
 				['g'] = {
 					{
@@ -9505,6 +9504,7 @@ end):Show();
 				["description"] = "This list contains the relevant information for your current zone.",
 				['visible'] = true, 
 				['expanded'] = true,
+				["indent"] = 0, 
 				['back'] = 1,
 				['g'] = {
 					{
@@ -9528,11 +9528,11 @@ end):Show();
 					-- Simplify the returned groups
 					if #results < 2 then
 						-- Only one object matched.
-						results = setmetatable({ back = 1 }, { __index = results[1] });
+						results = setmetatable({ indent = 0, back = 1 }, { __index = results[1] });
 						app.MiniListHeader = nil;
 					else
 						-- A couple of objects matched, let's make a header.
-						local header = app.CreateMap(self.mapID, { g = {}, back = 1, expanded = true, visible = true, total = 0, progress = 0 });
+						local header = app.CreateMap(self.mapID, { g = {}, indent = 0, back = 1, expanded = true, visible = true, total = 0, progress = 0 });
 						app.MiniListHeader = header;
 						table.wipe(app.HolidayHeader.g);
 						app.HolidayHeader.progress = 0;
@@ -9712,6 +9712,7 @@ end):Show();
 					
 					-- Check to see completion...
 					self.data = results;
+					BuildGroups(self.data, self.data.g);
 				end
 				
 				-- If we don't have any map data on this area, report it to the chat window.
@@ -10256,6 +10257,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 	for i,g in ipairs(self.data.g) do
 		if g.OnUpdate then g.OnUpdate(g); end
 	end
+	BuildGroups(self.data, self.data.g);
 	UpdateWindow(self, true);
 end);
 (function()
@@ -10642,6 +10644,7 @@ end);
 					data.visible = true;
 				end,
 				['back'] = 1,
+				["indent"] = 0,
 				['options'] = {
 					{
 						['text'] = "Change Search Filter",
@@ -10739,6 +10742,7 @@ end)();
 				["description"] = "Open your professions to cache them.",
 				['visible'] = true, 
 				['expanded'] = true,
+				["indent"] = 0,
 				['back'] = 1,
 				['g'] = { },
 			};
@@ -10816,7 +10820,7 @@ end)();
 						self.tradeSkillID = tradeSkillID;
 						for i,group in ipairs(app.Categories.Professions) do
 							if group.requireSkill == tradeSkillID then
-								self.data = setmetatable({ ['visible'] = true, total = 0, progress = 0 }, { __index = group });
+								self.data = setmetatable({ ['visible'] = true, ["indent"] = 0, total = 0, progress = 0 }, { __index = group });
 								BuildGroups(self.data, self.data.g);
 								app.UpdateGroups(self.data, self.data.g);
 								if not self.data.expanded then
@@ -10931,6 +10935,7 @@ end)();
 				["description"] = "These are World Quests that are currently available somewhere. Go get 'em!",
 				['visible'] = true, 
 				['expanded'] = true,
+				["indent"] = 0,
 				['back'] = 1,
 				['g'] = {
 					{
