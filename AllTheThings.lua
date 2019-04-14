@@ -924,14 +924,12 @@ local function BuildSourceTextForTSM(group, l)
 	end
 	return L["TITLE"];
 end
-local function ProcessGroup(data, object, back)
+local function ProcessGroup(data, object)
 	if app.VisibilityFilter(object) then
-		object.back = back;
 		tinsert(data, object);
 		if object.g and object.expanded then
-			back = back * 0.5;
 			for j, group in ipairs(object.g) do
-				ProcessGroup(data, group, back);
+				ProcessGroup(data, group);
 			end
 		end
 	end
@@ -5030,7 +5028,7 @@ app.BaseNPC = {
 app.CreateNPC = function(id, t)
 	return createInstance(constructor(id, t, "npcID"), app.BaseNPC);
 end
-app.HolidayHeader = app.CreateNPC(-3, { g = {}, expanded = true, visible = false, back = 1, total = 0, progress = 0 });
+app.HolidayHeader = app.CreateNPC(-3, { g = {}, expanded = true, visible = false, total = 0, progress = 0 });
 
 -- Object Lib (as in "World Object")
 app.BaseObject = {
@@ -7205,6 +7203,14 @@ local function ClearRowData(self)
 	self.Summary:Hide();
 	self.Label:Hide();
 end
+local function CalculateRowBack(data)
+	if data.back then return data.back; end
+	if data.parent then
+		return CalculateRowBack(data.parent) * 0.5;
+	else
+		return 0;
+	end
+end
 local function CalculateRowIndent(data)
 	if data.indent then return data.indent; end
 	if data.parent then
@@ -7262,9 +7268,10 @@ local function SetRowData(self, row, data)
 		local leftmost = row;
 		local relative = "LEFT";
 		local x = ((CalculateRowIndent(data) * GetDataMember("Indent", 8)) or 0) + 8;
+		local back = CalculateRowBack(data);
 		row.ref = data;
-		if data.back then
-			row.Background:SetAlpha(data.back or 0.2);
+		if back then
+			row.Background:SetAlpha(back or 0.2);
 			row.Background:Show();
 		end
 		if data.u then
@@ -8134,10 +8141,10 @@ local function UpdateWindow(self, force, got)
 		self.data.expanded = true;
 		if self.data.baseIndent and self.data.g then
 			for i, data in ipairs(self.data.g) do
-				ProcessGroup(self.rowData, data, self.data.back or 0);
+				ProcessGroup(self.rowData, data);
 			end
 		else
-			ProcessGroup(self.rowData, self.data, self.data.back or 0);
+			ProcessGroup(self.rowData, self.data);
 		end
 		
 		-- Does this user have everything?
@@ -8753,7 +8760,7 @@ function app:GetDataCache()
 		displayData.description = "If you're seeing this window outside of Git, please yell loudly in Crieve's ear.";
 		displayData.g = {};
 		for model,groups in pairs(fieldCache["model"]) do
-			tinsert(displayData.g, {visible = true, back = 0.5, model = model, text = model});
+			tinsert(displayData.g, {visible = true, model = model, text = model});
 		end
 		for i=1,78092,1 do
 			tinsert(displayData.g, {["displayID"] = i,["text"] = "Model #" .. i});
@@ -8841,12 +8848,12 @@ function app:GetDataCache()
 				if (not group.s or group.s == 0) then	--  and (not group.f or group.filterID == 109 or group.f < 50)
 					if group.bonusID and not bonusIDs[group.bonusID] then
 						bonusIDs[group.bonusID] = true;
-						tinsert(harvestData.g, setmetatable({visible = true, back = 0.5, s = 0, itemID = tonumber(itemID), bonusID = group.bonusID}, app.BaseItem));
+						tinsert(harvestData.g, setmetatable({visible = true, s = 0, itemID = tonumber(itemID), bonusID = group.bonusID}, app.BaseItem));
 					else
 						mID = group.modID or 1;
 						if not modIDs[mID] then
 							modIDs[mID] = true;
-							tinsert(harvestData.g, setmetatable({visible = true, back = 0.5, s = 0, itemID = tonumber(itemID), modID = mID}, app.BaseItem));
+							tinsert(harvestData.g, setmetatable({visible = true, s = 0, itemID = tonumber(itemID), modID = mID}, app.BaseItem));
 						end
 					end
 				end
@@ -9073,14 +9080,11 @@ app:GetWindow("Unsorted");
 				['OnUpdate'] = function(data) 
 					data.visible = true;
 				end,
-				['indent'] = 0,
-				['back'] = 1,
 				['g'] = {
 					{
 						['text'] = "Check for missing maps now!",
 						['icon'] = "Interface\\Icons\\INV_Misc_Map_01",
 						['description'] = "This function will check for missing mapIDs in ATT.",
-						['back'] = 0.5,
 						['OnClick'] = function(data, button)
 							Push(self, "Rebuild", self.Rebuild);
 							return true;
@@ -9133,6 +9137,8 @@ app:GetWindow("Unsorted");
 		-- Update the window and all of its row data
 		self.data.progress = 0;
 		self.data.total = 0;
+		self.data.indent = 0;
+		self.data.back = 1;
 		UpdateGroups(self.data, self.data.g);
 		UpdateWindow(self, true);
 	end);
@@ -9181,7 +9187,6 @@ app:GetWindow("Debugger", UIParent, function(self)
 								self:Update();
 								return true;
 							end,
-							['back'] = 0.5,
 						});
 						wipe(self.rawData);
 						wipe(self.data.g);
@@ -9191,7 +9196,6 @@ app:GetWindow("Debugger", UIParent, function(self)
 						self:Update();
 						return true;
 					end,
-					['back'] = 0.5,
 				},
 			},
 			['g'] = {},
@@ -9465,6 +9469,8 @@ app:GetWindow("Debugger", UIParent, function(self)
 	for i,g in ipairs(self.data.g) do
 		if g.OnUpdate then g.OnUpdate(g); end
 	end
+	self.data.index = 0;
+	self.data.back = 1;
 	UpdateWindow(self, true);
 end):Show();
 --]]--
@@ -9504,8 +9510,6 @@ end):Show();
 				["description"] = "This list contains the relevant information for your current zone.",
 				['visible'] = true, 
 				['expanded'] = true,
-				["indent"] = 0, 
-				['back'] = 1,
 				['g'] = {
 					{
 						['text'] = "Update Location Now",
@@ -9516,7 +9520,6 @@ end):Show();
 							Push(self, "Rebuild", self.Rebuild);
 							return true;
 						end,
-						['back'] = 0.5,
 					},
 				},
 			};
@@ -9528,11 +9531,11 @@ end):Show();
 					-- Simplify the returned groups
 					if #results < 2 then
 						-- Only one object matched.
-						results = setmetatable({ indent = 0, back = 1 }, { __index = results[1] });
+						results = setmetatable({ }, { __index = results[1] });
 						app.MiniListHeader = nil;
 					else
 						-- A couple of objects matched, let's make a header.
-						local header = app.CreateMap(self.mapID, { g = {}, indent = 0, back = 1, expanded = true, visible = true, total = 0, progress = 0 });
+						local header = app.CreateMap(self.mapID, { g = {}, expanded = true, visible = true, total = 0, progress = 0 });
 						app.MiniListHeader = header;
 						table.wipe(app.HolidayHeader.g);
 						app.HolidayHeader.progress = 0;
@@ -9811,6 +9814,7 @@ end):Show();
 		self.data.progress = 0;
 		self.data.total = 0;
 		self.data.back = 1;
+		self.data.indent = 0;
 		UpdateGroups(self.data, self.data.g);
 		self.data.visible = true;
 		UpdateWindow(self, true, got);
@@ -9931,7 +9935,6 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 							end
 						end
 					end,
-					['back'] = 0.5,
 				},
 				{
 					['text'] = "Reset Instances",
@@ -9978,7 +9981,6 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 							UpdateWindow(self, true);
 						end
 					end,
-					['back'] = 0.5,
 				},
 				{
 					['text'] = "Delist Group",
@@ -9994,7 +9996,6 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 						UpdateWindow(self, true);
 						return true;
 					end,
-					['back'] = 0.5,
 				},
 				{
 					['text'] = "Leave Group",
@@ -10010,7 +10011,6 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 						UpdateWindow(self, true);
 						return true;
 					end,
-					['back'] = 0.5,
 				},
 				app.CreateDifficulty(1, {
 					['title'] = "Dungeon Difficulty",
@@ -10031,7 +10031,6 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 							end
 						end
 					end,
-					['back'] = 0.5,
 				}),
 				app.CreateDifficulty(14, {
 					['title'] = "Raid Difficulty",
@@ -10055,7 +10054,6 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 							end
 						end
 					end,
-					['back'] = 0.5,
 				}),
 				app.CreateDifficulty(5, {
 					['title'] = "Legacy Raid Difficulty",
@@ -10073,7 +10071,6 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 							data.difficultyID = app.LegacyRaidDifficulty;
 						end
 					end,
-					['back'] = 0.5,
 				}),
 			}
 		};
@@ -10102,7 +10099,6 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 							SetLootSpecialization(row.ref.id);
 							self:Update(true);
 						end,
-						['back'] = 0.5,
 					});
 					for i=1,numSpecializations,1 do
 						local id, name, description, icon, background, role, primaryStat = GetSpecializationInfo(i);
@@ -10117,7 +10113,6 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 								SetLootSpecialization(row.ref.id);
 								self:Update(true);
 							end,
-							['back'] = 0.5,
 						});
 					end
 				end
@@ -10177,19 +10172,16 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 					['OnClick'] = switchRaidDifficulty,
 					["description"] = "Click to change now. (if available)",
 					['visible'] = true,
-					['back'] = 0.5,
 				}),
 				app.CreateDifficulty(15, {
 					['OnClick'] = switchRaidDifficulty,
 					["description"] = "Click to change now. (if available)",
 					['visible'] = true,
-					['back'] = 0.5,
 				}),
 				app.CreateDifficulty(16, {
 					['OnClick'] = switchRaidDifficulty,
 					["description"] = "Click to change now. (if available)",
 					['visible'] = true,
-					['back'] = 0.5,
 				})
 			},
 		};
@@ -10210,25 +10202,21 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 					['OnClick'] = switchLegacyRaidDifficulty,
 					["description"] = "Click to change now. (if available)",
 					['visible'] = true,
-					['back'] = 0.5,
 				}),
 				app.CreateDifficulty(5, {
 					['OnClick'] = switchLegacyRaidDifficulty,
 					["description"] = "Click to change now. (if available)",
 					['visible'] = true,
-					['back'] = 0.5,
 				}),
 				app.CreateDifficulty(4, {
 					['OnClick'] = switchLegacyRaidDifficulty,
 					["description"] = "Click to change now. (if available)",
 					['visible'] = true,
-					['back'] = 0.5,
 				}),
 				app.CreateDifficulty(6, {
 					['OnClick'] = switchLegacyRaidDifficulty,
 					["description"] = "Click to change now. (if available)",
 					['visible'] = true,
-					['back'] = 0.5,
 				}),
 			},
 		};
@@ -10459,8 +10447,7 @@ end);
 				['text'] = "Reroll",
 				['icon'] = "Interface\\Icons\\ability_monk_roll",
 				['description'] = "Click this button to reroll using the active filter.",
-				['visible'] = true, 
-				['back'] = 0.5,
+				['visible'] = true,
 				['OnClick'] = function(row, button)
 					self:Reroll();
 					return true;
@@ -10650,7 +10637,6 @@ end);
 						['text'] = "Change Search Filter",
 						['icon'] = "Interface\\Icons\\TRADE_ARCHAEOLOGY.blp", 
 						["description"] = "Click this to change your search filter.",
-						['back'] = 0.5,
 						['visible'] = true,
 						['OnClick'] = function(row, button)
 							self.data = filterHeader;
@@ -10942,7 +10928,6 @@ end)();
 						['text'] = "Update World Quests Now",
 						['icon'] = "Interface\\Icons\\INV_Misc_Map_01",
 						['description'] = "Sometimes the World Quest API is slow or fails to return new data. If you wish to forcibly refresh the data without changing zones, click this button now!",
-						['back'] = 0.5,
 						['OnClick'] = function(data, button)
 							Push(self, "Rebuild", self.Rebuild);
 							return true;
