@@ -2099,9 +2099,10 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			if #knownBy > 0 then
 				table.sort(knownBy);
 				local desc = "Known by ";
+				local characters = GetDataMember("Characters");
 				for i,key in ipairs(knownBy) do
 					if i > 1 then desc = desc .. ", "; end
-					desc = desc .. key;
+					desc = desc .. (characters[key] or key);
 				end
 				tinsert(info, { left = desc, wrap = true, color = "ff66ccff" });
 			end
@@ -2542,7 +2543,7 @@ local function RefreshSavesCoroutine()
 	while InCombatLockdown() do coroutine.yield(); end
 	
 	-- While the player is still logging in, wait.
-	while not app.Me do coroutine.yield(); end
+	while not app.GUID do coroutine.yield(); end
 	
 	-- While the player is still waiting for information, wait.
 	-- NOTE: Usually, this is only 1 wait.
@@ -2558,18 +2559,12 @@ local function RefreshSavesCoroutine()
 	
 	-- Cache the lockouts across your account.
 	local serverTime = GetServerTime();
-	local lockouts = GetDataMember("lockouts", {});
-	
-	-- Cache your character's lockouts.
-	local myLockouts = GetTempDataMember("lockouts", lockouts[app.Me]);
-	if not myLockouts then
-		myLockouts = {};
-		lockouts[app.Me] = myLockouts;
-		SetTempDataMember("lockouts", myLockouts);
-	end
+	local lockouts = GetDataMember("lockouts");
+	local myLockouts = GetTempDataMember("lockouts");
 	
 	-- Check to make sure that the old instance data has expired
 	for character,locks in pairs(lockouts) do
+		local lockCount = 0;
 		for name,instance in pairs(locks) do
 			local count = 0;
 			for difficulty,lock in pairs(instance) do
@@ -2583,7 +2578,13 @@ local function RefreshSavesCoroutine()
 			if count == 0 then
 				-- Clean this up.
 				locks[name] = nil;
+			else
+				lockCount = lockCount + 1;
 			end
+		end
+		if lockCount == 0 then
+			-- Clean this up.
+			lockouts[character] = nil;
 		end
 	end
 	
@@ -7205,6 +7206,14 @@ local function ClearRowData(self)
 	self.Summary:Hide();
 	self.Label:Hide();
 end
+local function CalculateRowIndent(data)
+	if data.indent then return data.indent; end
+	if data.parent then
+		return CalculateRowIndent(data.parent) + 1;
+	else
+		return 0;
+	end
+end
 local function SetRowData(self, row, data)
 	ClearRowData(row);
 	if data then
@@ -7253,7 +7262,7 @@ local function SetRowData(self, row, data)
 		end
 		local leftmost = row;
 		local relative = "LEFT";
-		local x = (((data.indent or 0) + 1) * GetDataMember("Indent", 8)) or 0;
+		local x = ((CalculateRowIndent(data) * GetDataMember("Indent", 8)) or 0) + 8;
 		row.ref = data;
 		if data.back then
 			row.Background:SetAlpha(data.back or 0.2);
@@ -11324,8 +11333,10 @@ app.events.VARIABLES_LOADED = function()
 	app.Race = race;
 	app.RaceIndex = raceIndex;
 	local name, realm = UnitName("player");
+	name = name .. "-" .. (realm or GetRealmName());
 	local _, id = GetClassInfo(classIndex);
-	app.Me = "|c" .. RAID_CLASS_COLORS[id].colorStr .. name .. "-" .. (realm or GetRealmName()) .. "|r";
+	app.GUID = UnitGUID("player");
+	app.Me = "|c" .. RAID_CLASS_COLORS[id].colorStr .. name .. "|r";
 	app.Faction = UnitFactionGroup("player");
 	if app.Faction == "Horde" then
 		app.FactionID = 2;
@@ -11348,69 +11359,91 @@ app.events.VARIABLES_LOADED = function()
 	GetDataMember("UnobtainableItemFilters", {});
 	GetDataMember("WaypointFilters", {});
 	
+	-- Cache your character's lockouts.
+	local lockouts = GetDataMember("lockouts", {});
+	local myLockouts = GetTempDataMember("lockouts", lockouts[app.GUID]);
+	if not myLockouts then
+		myLockouts = {};
+		lockouts[app.GUID] = myLockouts;
+		SetTempDataMember("lockouts", myLockouts);
+	end
+	
 	-- Cache your character's profession data.
 	local recipes = GetDataMember("CollectedSpellsPerCharacter", {});
-	local myRecipes = GetTempDataMember("CollectedSpells", recipes[app.Me]);
+	local myRecipes = GetTempDataMember("CollectedSpells", recipes[app.GUID]);
 	if not myRecipes then
 		myRecipes = {};
-		recipes[app.Me] = myRecipes;
+		recipes[app.GUID] = myRecipes;
 		SetTempDataMember("CollectedSpells", myRecipes);
 	end
 	
 	-- Cache your character's faction data.
 	local factions = GetDataMember("CollectedFactionsPerCharacter", {});
-	local myfactions = GetTempDataMember("CollectedFactions", factions[app.Me]);
+	local myfactions = GetTempDataMember("CollectedFactions", factions[app.GUID]);
 	if not myfactions then
 		myfactions = {};
-		factions[app.Me] = myfactions;
+		factions[app.GUID] = myfactions;
 		SetTempDataMember("CollectedFactions", myfactions);
 	end
 	
 	-- Cache your character's building data.
 	local buildings = GetDataMember("CollectedBuildingsPerCharacter", {});
-	local myBuildings = GetTempDataMember("CollectedBuildings", buildings[app.Me]);
+	local myBuildings = GetTempDataMember("CollectedBuildings", buildings[app.GUID]);
 	if not myBuildings then
 		myBuildings = {};
-		buildings[app.Me] = myBuildings;
+		buildings[app.GUID] = myBuildings;
 		SetTempDataMember("CollectedBuildings", myBuildings);
 	end
 	
 	-- Cache your character's follower data.
 	local followers = GetDataMember("CollectedFollowersPerCharacter", {});
-	local myFollowers = GetTempDataMember("CollectedFollowers", followers[app.Me]);
+	local myFollowers = GetTempDataMember("CollectedFollowers", followers[app.GUID]);
 	if not myFollowers then
 		myFollowers = {};
-		followers[app.Me] = myFollowers;
+		followers[app.GUID] = myFollowers;
 		SetTempDataMember("CollectedFollowers", myFollowers);
 	end
 	
 	-- Cache your character's music roll data.
 	local musicRolls = GetDataMember("CollectedMusicRollsPerCharacter", {});
-	local myMusicRolls = GetTempDataMember("CollectedMusicRolls", musicRolls[app.Me]);
+	local myMusicRolls = GetTempDataMember("CollectedMusicRolls", musicRolls[app.GUID]);
 	if not myMusicRolls then
 		myMusicRolls = {};
-		musicRolls[app.Me] = myMusicRolls;
+		musicRolls[app.GUID] = myMusicRolls;
 		SetTempDataMember("CollectedMusicRolls", myMusicRolls);
 	end
 	
 	-- Cache your character's selfie filters data.
 	local selfieFilters = GetDataMember("CollectedSelfieFiltersPerCharacter", {});
-	local mySelfieFilters = GetTempDataMember("CollectedSelfieFilters", selfieFilters[app.Me]);
+	local mySelfieFilters = GetTempDataMember("CollectedSelfieFilters", selfieFilters[app.GUID]);
 	if not mySelfieFilters then
 		mySelfieFilters = {};
-		selfieFilters[app.Me] = mySelfieFilters;
+		selfieFilters[app.GUID] = mySelfieFilters;
 		SetTempDataMember("CollectedSelfieFilters", mySelfieFilters);
 	end
 	
 	-- Cache your character's title data.
 	local titles = GetDataMember("CollectedTitlesPerCharacter", {});
-	local myTitles = GetTempDataMember("CollectedTitles", titles[app.Me]);
+	local myTitles = GetTempDataMember("CollectedTitles", titles[app.GUID]);
 	if not myTitles then
 		myTitles = {};
-		musicRolls[app.Me] = myTitles;
+		musicRolls[app.GUID] = myTitles;
 		SetTempDataMember("CollectedTitles", myTitles);
 	end
 	
+	-- GUID to Character Name cache
+	local characters = GetDataMember("Characters", {});
+	characters[app.GUID] = app.Me;
+	
+	-- Clean up settings
+	local oldsettings = {};
+	for i,key in ipairs({"AutomateTomTomWaypoints","Categories","Characters","CollectedArtifacts","CollectedBuildings","CollectedBuildingsPerCharacter","CollectedFactions","CollectedFactionBonusReputation","CollectedFactionsPerCharacter","CollectedFollowers","CollectedFollowersPerCharacter","CollectedIllusions","CollectedMusicRolls","CollectedMusicRollsPerCharacter","CollectedSelfieFilters","CollectedSelfieFiltersPerCharacter","CollectedSources","CollectedSpells","CollectedSpellsPerCharacter","CollectedTitles","CollectedToys","FilterSeasonal","CollectedTitlesPerCharacter","FilterUnobtainableItems","FlightPaths","Indent","lockouts","Notes","Position","RandomSearchFilter","Reagents","RefreshedCollectionsAlready","SeasonalFilters","Sets","SourceSets","UnobtainableItemFilters","WaypointFilters","EnableTomTomWaypointsOnTaxi","TomTomIgnoreCompletedObjects"}) do
+		oldsettings[key] = AllTheThingsAD[key];
+	end
+	wipe(AllTheThingsAD);
+	for key,value in pairs(oldsettings) do
+		AllTheThingsAD[key] = oldsettings[key];
+	end
 
 	-- Tooltip Settings
 	GetDataMember("AutomateTomTomWaypoints", false);
