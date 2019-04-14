@@ -203,26 +203,15 @@ _.Zones =
 										},
 									},
 								}),
-								q(51976, {	-- Sabertron (unknown criteria)
+								{	-- Sabertron (GREEN)
+									["questID"] = 51976,	-- Sabertron (GREEN)
 									["g"] = {
-										{	-- Red Sabertron
-											["achievementID"] = 13054,	-- Sabertron Assemble
-											["criteriaID"] = 1,	-- Red Sabertron
-										},
-										{	-- Yellow Sabertron
-											["achievementID"] = 13054,	-- Sabertron Assemble
-											["criteriaID"] = 2,	-- Yellow Sabertron
-										},
-										{	-- Orange Sabertron
-											["achievementID"] = 13054,	-- Sabertron Assemble
-											["criteriaID"] = 3,	--  Sabertron
-										},
 										{	-- Green Sabertron
 											["achievementID"] = 13054,	-- Sabertron Assemble
-											["criteriaID"] = 4,	--  Sabertron
+											["criteriaID"] = 4,			-- Green Sabertron
 										},
 									},
-								}),
+								},
 								q(51977, {	-- Sabertron (unknown criteria)
 									["g"] = {
 										{	-- Red Sabertron
@@ -243,14 +232,15 @@ _.Zones =
 										},
 									},
 								}),
-								q(51974, {	-- Sabertron (Copper, criteria 5)
+								{	-- Sabertron (COPPER)
+									["questID"] = 51974, 	-- Sabertron (COPPER)
 									["g"] = {
 										{	-- Copper Sabertron
 											["achievementID"] = 13054,	-- Sabertron Assemble
-											["criteriaID"] = 5,	--  Sabertron
+											["criteriaID"] = 5,			-- Copper Sabertron
 										},
 									},
-								}),
+								},
 								q(52889, {	-- Sandscour
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
