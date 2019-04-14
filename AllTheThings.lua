@@ -924,6 +924,18 @@ local function BuildSourceTextForTSM(group, l)
 	end
 	return L["TITLE"];
 end
+local function CloneData(data)
+	local clone = setmetatable({}, { __index = data });
+	if data.g then
+		clone.g = {};
+		for i,group in ipairs(data.g) do
+			local child = CloneData(group);
+			child.parent = clone;
+			tinsert(clone.g, child);
+		end
+	end
+	return clone;
+end
 local function GetSourceID(itemLink, itemID)
     if IsDressableItem(itemLink) then
 		-- Updated function courtesy of CanIMogIt, Thanks AmiYuy and Team! :D
@@ -6863,7 +6875,16 @@ local function CreateMiniListForGroup(group)
 	-- Pop Out Functionality! :O
 	local popout = app:GetWindow((group.parent and group.parent.text or "") .. (group.text or ""));
 	if group.s then
-		popout.data = setmetatable({ ["g"] = {}, ["indent"] = 0, ["progress"] = 0, ["total"] = 0, ['hideText'] = true, ["visible"] = true, }, { __index = group });
+		popout.data = CloneData(group);
+		popout.data.collectible = true;
+		popout.data.hideText = true;
+		popout.data.visible = true;
+		popout.data.progress = 0;
+		popout.data.total = 0;
+		popout.data.indent = 0;
+		if not popout.data.g then
+			popout.data.g = {};
+		end
 		
 		-- Attempt to get information about the source ID.
 		local sourceInfo = C_TransmogCollection_GetSourceInfo(group.s);
@@ -6877,7 +6898,10 @@ local function CreateMiniListForGroup(group)
 				if otherSourceID ~= group.s then
 					local attSearch = SearchForSourceIDQuickly(otherSourceID);
 					if attSearch then
-						tinsert(g, setmetatable({ ["collectible"] = true, ['hideText'] = true }, { __index = attSearch })); 
+						attSearch = CloneData(attSearch);
+						attSearch.collectible = true;
+						attSearch.hideText = true;
+						tinsert(g, attSearch); 
 					else
 						local otherSourceInfo = C_TransmogCollection_GetSourceInfo(otherSourceID);
 						if otherSourceInfo then
@@ -6948,7 +6972,10 @@ local function CreateMiniListForGroup(group)
 				for i,sourceID in ipairs(allSets[setID]) do
 					local attSearch = SearchForSourceIDQuickly(sourceID);
 					if attSearch then
-						tinsert(g, setmetatable({ ["collectible"] = true, ['hideText'] = true }, { __index = attSearch })); 
+						attSearch = CloneData(attSearch);
+						attSearch.collectible = true;
+						attSearch.hideText = true;
+						tinsert(g, attSearch); 
 					else
 						local otherSourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
 						if otherSourceInfo then
@@ -6964,9 +6991,6 @@ local function CreateMiniListForGroup(group)
 				table.insert(popout.data.g, app.CreateGearSet(setID, { ["visible"] = true, ["g"] = g }));
 			end
 		end
-		
-		BuildGroups(popout.data, popout.data.g);
-		UpdateGroups(popout.data, popout.data.g);
 		local oldUpdate = popout.Update;
 		popout.Update = function(self)
 			-- Turn off all filters momentarily.
@@ -6986,13 +7010,9 @@ local function CreateMiniListForGroup(group)
 		end;
 	elseif group.questID or group.sourceQuests then
 		-- This is a quest object. Let's show prereqs and breadcrumbs.
-		local mainQuest = setmetatable({ ['collectible'] = true, ['hideText'] = true }, { __index = group });
-		if group.g then
-			mainQuest.g = {};
-			for i,subgroup in ipairs(group.g) do
-				table.insert(mainQuest.g, setmetatable({ ['hideText'] = true }, { __index = subgroup }));
-			end
-		end
+		local mainQuest = CloneData(group);
+		mainQuest.collectible = true;
+		mainQuest.hideText = true;
 		local g = { mainQuest };
 		
 		-- Show Quest Prereqs
@@ -7027,17 +7047,14 @@ local function CreateMiniListForGroup(group)
 							end
 						end
 						if found then
-							sourceQuest = setmetatable({ ['collectible'] = true, ['visible'] = true, ['hideText'] = true }, { __index = found });
+							sourceQuest = CloneData(found);
+							sourceQuest.collectible = true;
+							sourceQuest.visible = true;
+							sourceQuest.hideText = true;
 							if found.sourceQuests and #found.sourceQuests > 0 and (not found.saved or app.CollectedItemVisibilityFilter(sourceQuest)) then
 								-- Mark the sub source quest IDs as marked (as the same sub quest might point to 1 source quest ID)
 								for j, subsourceQuests in ipairs(found.sourceQuests) do
 									subSourceQuests[subsourceQuests] = true;
-								end
-							end
-							if found.g then
-								sourceQuest.g = {};
-								for i,subgroup in ipairs(found.g) do
-									table.insert(sourceQuest.g, setmetatable({ ['hideText'] = true }, { __index = subgroup }));
 								end
 							end
 						else
@@ -7150,32 +7167,29 @@ local function CreateMiniListForGroup(group)
 			["text"] = "Quest Chain Requirements",
 			["description"] = "The following quests need to be completed before being able to complete the final quest.",
 			["icon"] = "Interface\\Icons\\Spell_Holy_MagicalSentry.blp",
-			["progress"] = 0,
-			["total"] = 0,
-			["visible"] = true,
 			["g"] = g,
 			["hideText"] = true
 		};
-		BuildGroups(popout.data, popout.data.g);
-		UpdateGroups(popout.data, popout.data.g);
 	elseif group.g then
 		-- This is already a container with accurate numbers.
-		popout.data = setmetatable({ ["indent"] = 0, ['visible'] = true }, { __index = group });
+		popout.data = CloneData(group);
 	else
 		-- This is a standalone item
+		group = CloneData(group);
+		group.visible = true;
+		group.hideText = true;
 		popout.data = {
 			["text"] = "Standalone Item",
 			["icon"] = "Interface\\Icons\\Achievement_Garrison_blueprint_medium.blp",
-			["g"] = { setmetatable({ ['visible'] = true, ['hideText'] = true }, { __index = group }); },
-			["visible"] = true,
-			["indent"] = 0, 
-			["progress"] = 0,
-			["total"] = 0,
+			["g"] = { group },
 		};
-		BuildGroups(popout.data, popout.data.g);
-		UpdateGroups(popout.data, popout.data.g);
-		popout.data.visible = true;
 	end
+	popout.data.visible = true;
+	popout.data.indent = 0;
+	popout.data.total = 0;
+	popout.data.progress = 0;
+	BuildGroups(popout.data, popout.data.g);
+	UpdateGroups(popout.data, popout.data.g);
 	AddTomTomWaypoint(popout.data, false);
 	if not popout.data.expanded then
 		ExpandGroupsRecursively(popout.data, true, true);
@@ -8702,7 +8716,6 @@ function app:GetDataCache()
 		app.refreshDataForce = true;
 		BuildGroups(allData, allData.g);
 		app:GetWindow("Prime").data = allData;
-		app:GetWindow("settings").data = allData;
 		CacheFields(allData);
 		
 		-- Now build the hidden "Unsorted" Window's Data
@@ -9525,7 +9538,7 @@ end):Show();
 					-- Simplify the returned groups
 					if #results < 2 then
 						-- Only one object matched.
-						results = setmetatable({ }, { __index = results[1] });
+						results = CloneData(results[1]);
 						app.MiniListHeader = nil;
 					else
 						-- A couple of objects matched, let's make a header.
@@ -9535,20 +9548,7 @@ end):Show();
 						app.HolidayHeader.progress = 0;
 						app.HolidayHeader.total = 0;
 						for i, group in ipairs(results) do
-							local clone = {};
-							for key,value in pairs(group) do
-								if key == "maps" then
-									local maps = {};
-									for i,mapID in ipairs(value) do
-										tinsert(maps, mapID);
-									end
-									clone[key] = maps;
-								else
-									clone[key] = value;
-								end
-							end
-							setmetatable(clone, getmetatable(group));
-							group = clone;
+							group = CloneData(group);
 							
 							-- If this is relative to a holiday, let's do something special
 							if GetRelativeField(group, "npcID", -3) then
@@ -11134,7 +11134,6 @@ end)();
 				for i,o in ipairs(self.rawData) do
 					MergeObject(self.data.g, CreateObject(o));
 				end
-				BuildGroups(self.data, self.data.g);
 				if not no then self:Update(); end
 			end
 			self.Sort = function(a, b)
@@ -11172,6 +11171,7 @@ end)();
 		-- Update the window and all of its row data
 		self.data.progress = 0;
 		self.data.total = 0;
+		BuildGroups(self.data, self.data.g);
 		UpdateGroups(self.data, self.data.g);
 		UpdateWindow(self, true);
 	end);
