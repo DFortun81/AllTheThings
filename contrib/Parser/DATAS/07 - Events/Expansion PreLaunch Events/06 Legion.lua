@@ -21,18 +21,24 @@ _.WorldEvents =
 				["groups"] = {
 					i(139048, {	-- Small Legion Chest
 						un(3, i(141597)),	-- Corrupted Argus Gavel
-						un(3, i(141609)),	-- Corrupted Argus Gavel
+						un(3, i(141609)),	-- Corrupted Argus Gavel -- Non Upgrade Version -- Was posted here already - Gold 14.04.2019
 						un(3, i(141595)),	-- Eredar Battle Blade
+						un(3, i(141607)),	-- Eredar Battle Blade -- Non Upgrade Version -- Probably similar to other Non Upgrade Items
 						un(3, i(141602)),	-- Eredar Splitter
+						un(3, i(141614)),	-- Eredar Splitter -- Non Upgrade Version -- Probably similar to other Non Upgrade Items
 						un(3, i(141599)),	-- Fel Barbed Spear
-						un(3, i(141611)),	-- Fel Barbed Spear (dropped below a certain level)
+						un(3, i(141611)),	-- Fel Barbed Spear -- Non Upgrade Version -- Dropped below a certain level, somebody on discord posted having it around end of 2018, early 2019)
 						un(3, i(141594)),	-- Fel Hacker
+						un(3, i(141606)),	-- Fel Hacker -- Non Upgrade Version -- Probably similar to other Non Upgrade Items
 						un(3, i(141603)),	-- Fel Lord's Warmace
+						un(3, i(141615)),	-- Fel Lord's Warmace -- Non Upgrade Version -- Probably similar to other Non Upgrade Items
 						un(3, i(141604)),	-- Glaive of the Fallen
 						un(3, i(141601)),	-- Hellfury Longbow
+						un(3, i(141613)),	-- Hellfury Longbow -- Non Upgrade Version -- Probably similar to other Non Upgrade Items
 						un(3, i(141616)),	-- Inquisitor's Wand
-						un(3, i(141617)),	-- Inquisitor's Wand (dropped below a certain level)
+						un(3, i(141617)),	-- Inquisitor's Wand -- Non Upgrade Version -- Dropped below a certain level - My Priest has it - Gold 14.04.2019)
 						un(3, i(141600)),	-- Wyrmtongue Spiteblade
+						un(3, i(141612)),	-- Wyrmtongue Spiteblade -- Non Upgrade Version -- Probably similar to other Non Upgrade Items
 						gsh(160, {	-- Fel-Infused Armor
 							un(3, i(138184)),	-- Fel-Infused Helm
 							un(3, i(138186)),	-- Fel-Infused Spaulders
@@ -76,18 +82,24 @@ _.WorldEvents =
 					}),	
 					i(139049, {	-- Large Legion Chest
 						un(3, i(141597)),	-- Corrupted Argus Gavel
-						un(3, i(141609)),	-- Corrupted Argus Gavel
+						un(3, i(141609)),	-- Corrupted Argus Gavel -- Non Upgrade Version -- Was posted here already - Gold 14.04.2019
 						un(3, i(141595)),	-- Eredar Battle Blade
+						un(3, i(141607)),	-- Eredar Battle Blade -- Non Upgrade Version -- Probably similar to other Non Upgrade Items
 						un(3, i(141602)),	-- Eredar Splitter
+						un(3, i(141614)),	-- Eredar Splitter -- Non Upgrade Version -- Probably similar to other Non Upgrade Items
 						un(3, i(141599)),	-- Fel Barbed Spear
-						un(3, i(141611)),	-- Fel Barbed Spear (dropped below a certain level)
+						un(3, i(141611)),	-- Fel Barbed Spear -- Non Upgrade Version -- Dropped below a certain level, somebody on discord posted having it around end of 2018, early 2019)
 						un(3, i(141594)),	-- Fel Hacker
+						un(3, i(141606)),	-- Fel Hacker -- Non Upgrade Version -- Probably similar to other Non Upgrade Items
 						un(3, i(141603)),	-- Fel Lord's Warmace
+						un(3, i(141615)),	-- Fel Lord's Warmace -- Non Upgrade Version -- Probably similar to other Non Upgrade Items
 						un(3, i(141604)),	-- Glaive of the Fallen
 						un(3, i(141601)),	-- Hellfury Longbow
+						un(3, i(141613)),	-- Hellfury Longbow -- Non Upgrade Version -- Probably similar to other Non Upgrade Items
 						un(3, i(141616)),	-- Inquisitor's Wand
-						un(3, i(141617)),	-- Inquisitor's Wand (dropped below a certain level)
+						un(3, i(141617)),	-- Inquisitor's Wand -- Non Upgrade Version -- Dropped below a certain level - My Priest has it - Gold 14.04.2019)
 						un(3, i(141600)),	-- Wyrmtongue Spiteblade
+						un(3, i(141612)),	-- Wyrmtongue Spiteblade -- Non Upgrade Version -- Probably similar to other Non Upgrade Items
 						gsh(160, {	-- Fel-Infused Armor
 							un(3, i(138184)),	-- Fel-Infused Helm
 							un(3, i(138186)),	-- Fel-Infused Spaulders
@@ -280,7 +292,6 @@ _.WorldEvents =
 						n(109912, {	-- Captive Wyrmtongue <Reluctant 'Quartermaster'>
 							un(7, i(136924)),	-- Felbat Pup Pet
 							un(3, i(141604)),	-- Glaive of the Fallen
-							un(1, i(142526)),	-- Glaive of the Fallen
 							un(3, i(138160)),	-- Infernal Cord
 							un(3, i(139172)),	-- Legionnaire's Fel Pendant
 							un(3, i(138188)),	-- Demon Commander's Drape

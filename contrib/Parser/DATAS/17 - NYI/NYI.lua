@@ -2073,7 +2073,6 @@ _.NeverImplemented =
 			un(1, i(137660)),	-- The Silver Hand
 			un(1, i(140699)),	-- Warhammer of Retribution
 			un(1, i(150594)),	-- Warhammer of Retribution
-			un(1, i(141615)),	-- Fel Lord's Warmace
 			un(1, i(159555)),	-- Unknown
 			un(1, i(165263)),	-- Unknown
 			un(1, i(108794)),	-- Unknown
@@ -2119,6 +2118,7 @@ _.NeverImplemented =
 		n(-340, {	-- War Glaives
 			un(1, i(129735)), 	-- Verus
 			un(1, i(129736)), 	-- Verus
+			un(1, i(142526)),	-- Glaive of the Fallen
 			un(1, i(108807)),	-- Unknown
 			un(1, i(158580)),	-- Loa-Claimer's Wariglaives
 			un(1, i(151138)), 	-- Warglaive of Azzinoth [This version not implemented; was testing for transmog]
@@ -2171,7 +2171,6 @@ _.NeverImplemented =
 	un(1, i(18342)),	-- Quel'dorei Guard [NPC Shield I believe]
 	un(1, i(20502)),	-- Ironbark Shield [NPC Shield]
 	un(1, i(32181)),	-- Chancellor's Bonegrinder
-	un(1, i(141606)),  	-- Fel Hacker, unused Version
 	un(1, i(32174)),   	-- Chancellor's Cleaver
 	un(1, i(32182)),   	-- Chancellor's Decapitator
 	un(1, i(38244)),   	-- Valorous Exterminator (Never added)
