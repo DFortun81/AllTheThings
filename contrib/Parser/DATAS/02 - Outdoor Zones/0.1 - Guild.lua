@@ -306,12 +306,18 @@ _.Zones =
 			h(i(65274)),	-- Cloak of Coordination - Revered
 			a(i(63352)),	-- Shroud of Cooperation - Honored
 			h(i(63353)),	-- Shroud of Cooperation - Honored
-			{	-- Standard of Unity - Honored
+			a({	-- Standard of Unity - Honored
+				["itemID"] = 64398,	-- Standard of Unity
+			}),
+			h({	-- Standard of Unity - Honored
 				["itemID"] = 64401,	-- Standard of Unity
-			},
-			{	-- Wrap of Unity - Honored
+			}),
+			a({	-- Wrap of Unity - Honored
+				["itemID"] = 63206,	-- Wrap of Unity
+			}),
+			h({	-- Wrap of Unity - Honored
 				["itemID"] = 63207,	-- Wrap of Unity
-			},
+			}),
 			
 			-- Helms
 			{	-- Burnished Helm of Might - Friendly
