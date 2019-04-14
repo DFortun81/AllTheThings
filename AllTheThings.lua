@@ -7657,10 +7657,10 @@ local function RowOnClick(self, button)
 			end
 		elseif self.index > 0 then
 			reference.expanded = not reference.expanded;
-			app:UpdateWindows();
+			self:GetParent():GetParent():Update();
 		elseif not reference.expanded then
 			reference.expanded = true;
-			app:UpdateWindows();
+			self:GetParent():GetParent():Update();
 		else
 			-- Allow the First Frame to move the parent.
 			local owner = self:GetParent():GetParent();
