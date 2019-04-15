@@ -16,7 +16,10 @@ _.Zones =
 							p(1447), 	-- Moonshell Crab
 							p(1455), 	-- Mossbite Skitterer
 							p(1587), 	-- Royal Moth
-							p(560), 	-- Sea Gull
+							{	-- Sea Gull
+								["crs"] = { 62953 },	-- Sea Gull
+								["speciesID"] = 560,	-- Sea Gull
+							},
 							p(412), 	-- Spider
 							p(1593), 	-- Waterfly
 							p(1582), 	-- Zangar Crawler

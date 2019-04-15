@@ -3,11 +3,22 @@
 ---------------------------------------------------
 _.Zones =
 {
-	faction(1168, {	-- Your Guild (Faction) <Guild Vendor>
-		["icon"] = "Interface\\Icons\\ACHIEVEMENT_GUILDPERK_EVERYONES A HERO",
+	{	-- Tabards
+		["npcID"] = -325,	-- Tabards
+		["icon"] = "Interface\\Icons\\inv_tabard_legionpvps4_alliance",
 		["description"] = "Tabards are only obtainable by those who have earned them.",
 		["maps"] = {
-			
+			125,	-- Dalaran: Northrend
+			627,	-- Dalaran: Broken Isles
+			85,		-- Orgrimmar
+			103,	-- The Exodar
+			110,	-- Silvermoon City
+			111,	-- Shattrath City
+			87,		-- Ironforge
+			90,		-- Undercity
+			84,		-- Stormwind City
+			89,		-- Darnassus
+			88,		-- Thunder Bluff
 		},
 		["coords"] = {
 			{ 51.07, 54.91, 125 },	-- Elizabeth Ross [Dalaran: Northrend]
@@ -150,5 +161,5 @@ _.Zones =
 				["itemID"] = 35221,	-- Tabard of the Shattered Sun
 			},
 		},
-	}),
+	},
 };
