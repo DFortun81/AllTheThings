@@ -14,7 +14,7 @@ _.WorldDrops =
 					i(3396),	-- Recipe: Elixir of Lesser Agility
 					i(2553),	-- Recipe: Elixir of Minor Agility
 					i(6211),	-- Recipe: Elixir of Ogre's Strength
-					i(13491),	-- Recipe: Elixir of the Mongoose [May no longer drop?]
+					un(7, i(13491)),	-- Recipe: Elixir of the Mongoose [May no longer drop?]
 					un(2, i(13493)),	-- Recipe: Greater Arcane Elixir
 					i(13490),	-- Recipe: Greater Stoneshield Potion
 					i(9295), 	-- Recipe: Invisibility Potion

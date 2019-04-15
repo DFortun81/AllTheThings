@@ -22,11 +22,11 @@ _.Zones =
 							7107,	-- Jadefire Trickster
 						},
 					})),
-					i(13491, {	-- Recipe: Elixir of the Mongoose
+					un(7, i(13491, {	-- Recipe: Elixir of the Mongoose
 						["crs"] = {
 							7106,	-- Jadefire Rogue
 						},
-					}),
+					})),
 				}),
 			},
 		}),

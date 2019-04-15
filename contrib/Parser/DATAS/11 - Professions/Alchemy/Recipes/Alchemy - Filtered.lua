@@ -51,6 +51,10 @@ profession(171, {	-- Alchemy
 							["u"] = 29,
 						},
 						{
+							["recipeID"] = 17571,--[[Elixir of the Mongoose]]
+							["u"] = 7,
+						},
+						{
 							["recipeID"] = 24365,--[[Mageblood Elixir]]
 							["u"] = 2,
 						},
