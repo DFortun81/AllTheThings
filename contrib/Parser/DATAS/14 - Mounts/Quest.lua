@@ -76,12 +76,15 @@ _.Mounts =
 			["itemID"] = 143502,	-- Highlord's Golden Charger
 			["classes"] = {2},
 		},
+		i(143505, {	-- Highlord's Valorous Charger
+			["classes"] = { 2 },	-- Paladin
+		}),
 		{
 			["itemID"] = 143503,	-- Highlord's Vengeful Charger
 			["classes"] = {2},
 		},
 		{
-			["itemID"] = 143505,	-- Highlord's Vigilant Charger
+			["itemID"] = 143504,	-- Highlord's Vigilant Charger
 			["classes"] = {2},
 		},
 		{
