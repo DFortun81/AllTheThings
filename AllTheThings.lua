@@ -2355,6 +2355,12 @@ local function SearchForLink(link)
 		elseif kind == "achievementid" then
 			paramA = "achievementID";
 			paramB = id;
+		elseif kind == "currencyid" then
+			paramA = "currencyID";
+			paramB = id;
+		elseif kind == "spellid" then
+			paramA = "spellID";
+			paramB = id;
 		else
 			paramA = nil;
 		end
