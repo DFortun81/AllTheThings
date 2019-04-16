@@ -7184,10 +7184,9 @@ local function CreateMiniListForGroup(group)
 		};
 	elseif group.g then
 		-- This is already a container with accurate numbers.
-		popout.data = CloneData(group);
+		popout.data = group;
 	else
 		-- This is a standalone item
-		group = CloneData(group);
 		group.visible = true;
 		group.hideText = true;
 		popout.data = {
@@ -7196,6 +7195,7 @@ local function CreateMiniListForGroup(group)
 			["g"] = { group },
 		};
 	end
+	popout.data = CloneData(popout.data);
 	popout.data.visible = true;
 	popout.data.indent = 0;
 	popout.data.total = 0;
