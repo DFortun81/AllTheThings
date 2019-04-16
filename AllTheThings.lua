@@ -11192,21 +11192,6 @@ end)();
 hooksecurefunc(GameTooltip, "SetToyByItemID", function(self, itemID, ...)
 	local link = C_ToyBox_GetToyLink(itemID);
 	if link then
-		local owner = self:GetOwner();
-		if owner then
-			self:AddDoubleLine("GetOwner", tostring(owner:GetName()));
-			local parent = owner:GetParent();
-			if parent then
-				self:AddDoubleLine("GetOwnerParent", tostring(parent:GetName()));
-				parent = parent:GetParent();
-				if parent then
-					self:AddDoubleLine("GetOwnerParentParent", tostring(parent:GetName()));
-					for i,j in pairs(parent) do
-						self:AddDoubleLine(tostring(i), tostring(j));
-					end
-				end
-			end
-		end
 		AttachTooltipSearchResults(self, link, SearchForLink, link);
 		self:Show();
 	end
