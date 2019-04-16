@@ -2874,9 +2874,21 @@ local function AttachTooltip(self)
 				
 				-- Does the tooltip have an owner?
 				local owner = self:GetOwner();
-				if owner and owner.SpellHighlightTexture then
-					-- Actionbars, don't want that.
-					return true;
+				if owner then
+					if owner.SpellHighlightTexture then
+						-- Actionbars, don't want that.
+						return true;
+					end
+					if owner.cooldownWrapper then
+						local parent = owner:GetParent();
+						if parent then
+							parent = parent:GetParent();
+							if parent and parent.fanfareToys then
+								-- Toy Box, don't want that.
+								return true;
+							end
+						end
+					end
 				end
 				
 				-- Does the tooltip have a target?
@@ -11177,11 +11189,42 @@ end)();
 	end);
 end)();
 
--- NOTE: Replacing Blizzard's broken "SetToyByItemID" with a more sensible solution.
-GameTooltip.SetToyByItemID = function(self, itemID, ...)
-	self:SetHyperlink(C_ToyBox_GetToyLink(itemID));
-end
--- GameTooltip:HookScript("OnShow", AttachTooltip);
+hooksecurefunc(GameTooltip, "SetToyByItemID", function(self, itemID, ...)
+	local link = C_ToyBox_GetToyLink(itemID);
+	if link then
+		local owner = self:GetOwner();
+		if owner then
+			self:AddDoubleLine("GetOwner", tostring(owner:GetName()));
+			local parent = owner:GetParent();
+			if parent then
+				self:AddDoubleLine("GetOwnerParent", tostring(parent:GetName()));
+				parent = parent:GetParent();
+				if parent then
+					self:AddDoubleLine("GetOwnerParentParent", tostring(parent:GetName()));
+					for i,j in pairs(parent) do
+						self:AddDoubleLine(tostring(i), tostring(j));
+					end
+				end
+			end
+		end
+		AttachTooltipSearchResults(self, link, SearchForLink, link);
+		self:Show();
+	end
+end)
+--[[--
+hooksecurefunc(GameTooltip, "SetTradeSkillItem", function(self, itemID, reagentID, ...)
+	local link;
+    if reagentID ~= nil then
+        link = GetTradeSkillReagentItemLink(itemID, reagentID);
+    else
+        link = GetTradeSkillItemLink(itemID);
+    end
+	if link then
+		AttachTooltipSearchResults(self, link, SearchForLink, link);
+		self:Show();
+	end
+end)
+--]]--
 GameTooltip:HookScript("OnTooltipSetQuest", AttachTooltip);
 GameTooltip:HookScript("OnTooltipSetItem", AttachTooltip);
 GameTooltip:HookScript("OnTooltipSetUnit", AttachTooltip);
