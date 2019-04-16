@@ -1325,20 +1325,33 @@ local function MergeObject(g, t, index)
 	end
 	return t;
 end
+local function ExpandGroupsRecursively(group, expanded, manual)
+	if group.g and (not group.itemID or manual) then
+		group.expanded = expanded;
+		for i, subgroup in ipairs(group.g) do
+			ExpandGroupsRecursively(subgroup, expanded, manual);
+		end
+	end
+end
 local function ReapplyExpand(g, g2)
-	for i,o in ipairs(g) do
-		local key = o.key;
-		local id = o[key];
-		if o.expanded then
-			for j,p in ipairs(g2) do
-				if p[key] == id then
+	for j,p in ipairs(g2) do
+		local found = false;
+		local key = p.key;
+		local id = p[key];
+		for i,o in ipairs(g) do
+			if o[key] == id then
+				found = true;
+				if o.expanded then
 					if not p.expanded then
 						p.expanded = true;
 						if o.g and p.g then ReapplyExpand(o.g, p.g); end
 					end
-					break;
 				end
+				break;
 			end
+		end
+		if not found then
+			ExpandGroupsRecursively(p, true);
 		end
 	end
 end
@@ -2471,14 +2484,6 @@ local function AddTomTomWaypoint(group, auto)
 			for i,subgroup in ipairs(group.g) do
 				AddTomTomWaypoint(subgroup, auto);
 			end
-		end
-	end
-end
-local function ExpandGroupsRecursively(group, expanded, manual)
-	if group.g and ((not group.itemID and not (group.total and group.progress >= group.total)) or manual) then
-		group.expanded = expanded;
-		for i, subgroup in ipairs(group.g) do
-			ExpandGroupsRecursively(subgroup, expanded, manual);
 		end
 	end
 end
@@ -9557,7 +9562,28 @@ end):Show();
 						app.HolidayHeader.progress = 0;
 						app.HolidayHeader.total = 0;
 						for i, group in ipairs(results) do
-							group = CloneData(group);
+							local clone = {};
+                            for key,value in pairs(group) do
+                                if key == "maps" then
+                                    local maps = {};
+                                    for i,mapID in ipairs(value) do
+                                        tinsert(maps, mapID);
+                                    end
+                                    clone[key] = maps;
+								elseif key == "g" then
+                                    local g = {};
+                                    for i,o in ipairs(value) do
+										o = CloneData(o);
+										ExpandGroupsRecursively(o, false);
+                                        tinsert(g, o);
+                                    end
+                                    clone[key] = g;
+                                else
+                                    clone[key] = value;
+                                end
+                            end
+                            setmetatable(clone, getmetatable(group));
+                            group = clone;
 							
 							-- If this is relative to a holiday, let's do something special
 							if GetRelativeField(group, "npcID", -3) then
