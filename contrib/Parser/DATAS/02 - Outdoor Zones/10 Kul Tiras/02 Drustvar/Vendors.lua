@@ -17,15 +17,16 @@ _.Zones =
 										["description"] = "Defeat Cottontail Matron (located at 52.20, 46.80) for this item to appear on the vendor.",
 									}),
 									i(163510),	-- Crimson Frog
-									i(163492),	-- Drustvar Piglet
+									i(163492, {	-- Drustvar Piglet
+										["races"] = ALLIANCE_ONLY,
+									}),
 									i(160708, {	-- Smoochums' Bloody Heart
 										["description"] = "Complete the questline given by Abby Lewis (located at 54.60, 39.20 and 56.40, 49.00) for this item to appear on the vendor.",
 									}),
 									i(163494),	-- Wad of Spider Web
 								}),
 							},
-							["description"] = "In order to unlock this vendor you will need to buy 10 \"Tirasreli Gourmet Chocolate\", then find the tree house at 52.00, 31.00 and then click on the chest twice.",
-							["races"] = ALLIANCE_ONLY,
+							["description"] = "In order to unlock this vendor you will need to buy 10 \"Tirasreli Gourmet Chocolate\", then find the tree house at 52.00, 31.00 and then click on the chest twice.",	
 						}),
 						n(135815, {	-- Quartermaster Alcorn <Order of Embers Emissary> [A]
 							["groups"] = {
