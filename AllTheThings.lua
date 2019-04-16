@@ -2421,7 +2421,7 @@ local function UpdateSearchResults(searchResults)
 		end
 		
 		-- If the data is fresh, don't force a refresh.
-		app:RefreshData(fresh, true, true);
+		app:RefreshData(fresh, true);
 	end
 end
 app.SearchForLink = SearchForLink;
@@ -2744,7 +2744,7 @@ local function RefreshCollections()
 		end
 		
 		-- Refresh the Collection Windows!
-		app:RefreshData(false, true);
+		app:RefreshData(false);
 		collectgarbage();
 		
 		-- Report success.
@@ -2773,7 +2773,7 @@ local function RefreshMountCollection()
 		coroutine.yield();
 		
 		-- Refresh the Collection Windows!
-		app:RefreshData(false, true, true);
+		app:RefreshData(false, true);
 		
 		-- Wait 2 frames before refreshing states.
 		coroutine.yield();
@@ -5434,7 +5434,7 @@ app.events.PET_JOURNAL_PET_DELETED = function(petID)
 		app:PlayRemoveSound();
 		
 		-- Refresh the Collection Windows!
-		app:RefreshData(false, true, true);
+		app:RefreshData(false, true);
 		wipe(searchCache);
 		collectgarbage();
 	end
@@ -6411,7 +6411,7 @@ function app.CompletionistItemCollectionHelper(sourceID, oldState)
 		end
 		
 		-- If the data is fresh, don't force a refresh.
-		app:RefreshData(fresh, true, true);
+		app:RefreshData(fresh, true);
 	else
 		-- Show the collection message.
 		if app.Settings:GetTooltipSetting("Report:Collected") then
@@ -6523,7 +6523,7 @@ function app.UniqueModeItemCollectionHelperBase(sourceID, oldState, filter)
 		end
 		
 		-- If the data is fresh, don't force a refresh.
-		app:RefreshData(fresh, true, true);
+		app:RefreshData(fresh, true);
 	end
 end
 function app.UniqueModeItemCollectionHelper(sourceID, oldState)
@@ -6568,7 +6568,7 @@ function app.CompletionistItemRemovalHelper(sourceID, oldState)
 		end
 		
 		-- If the data is fresh, don't force a refresh.
-		app:RefreshData(fresh, true, true);
+		app:RefreshData(fresh, true);
 	else
 		-- Show the collection message.
 		if app.Settings:GetTooltipSetting("Report:Collected") then
@@ -6586,7 +6586,7 @@ function app.CompletionistItemRemovalHelper(sourceID, oldState)
 		end
 		
 		-- If the item isn't in the list, then don't bother refreshing the data.
-		-- app:RefreshData(true, true, true);
+		-- app:RefreshData(true, true);
 	end
 end
 function app.UniqueModeItemRemovalHelperBase(sourceID, oldState, filter)
@@ -6683,7 +6683,7 @@ function app.UniqueModeItemRemovalHelperBase(sourceID, oldState, filter)
 		end
 		
 		-- If the data is fresh, don't force a refresh.
-		app:RefreshData(fresh, true, true);
+		app:RefreshData(fresh, true);
 	end
 end
 function app.UniqueModeItemRemovalHelper(sourceID, oldState)
@@ -6748,7 +6748,7 @@ function app.QuestCompletionHelper(questID)
 		end
 		
 		-- Don't force a full refresh.
-		app:RefreshData(true, true, true);
+		app:RefreshData(true, true);
 	end
 end
 
@@ -8919,16 +8919,13 @@ function app:GetDataCache()
 	end
 	return allData;
 end
-function app:RefreshData(lazy, safely, got)
-	--print("RefreshData(" .. tostring(lazy or false) .. ", " .. tostring(safely or false) .. ")");
+function app:RefreshData(lazy, got)
+	--print("RefreshData(" .. tostring(lazy or false) .. ", " .. tostring(got or false) .. ")");
 	app.refreshDataForce = app.refreshDataForce or not lazy;
 	app.countdown = 30;
 	StartCoroutine("RefreshData", function()
-		-- This method can be triggered by an event, if so, we want to safely wait for combat to end.
-		if safely then
-			-- While the player is in combat, wait for combat to end.
-			while InCombatLockdown() do coroutine.yield(); end
-		end
+		-- While the player is in combat, wait for combat to end.
+		while InCombatLockdown() do coroutine.yield(); end
 		
 		-- Wait 1/2 second. For multiple simultaneous requests, each one will reapply the delay. [This should fix a lot of lag with ensembles.]
 		while app.countdown > 0 do
@@ -10828,7 +10825,7 @@ end)();
 				
 					-- If something new was "learned", then refresh the data.
 					if learned > 0 then
-						app:RefreshData(false, true, true);
+						app:RefreshData(false, true);
 						app.print("Cached " .. learned .. " known recipes!");
 						wipe(searchCache);
 					end
@@ -10886,7 +10883,7 @@ end)();
 						SetDataSubMember("CollectedSpells", spellID, 1);
 						if not GetTempDataSubMember("CollectedSpells", spellID) then
 							SetTempDataSubMember("CollectedSpells", spellID, 1);
-							app:RefreshData(true, true, true);
+							app:RefreshData(true, true);
 							if not previousState or not app.Settings:Get("AccountWide:Recipes") then
 								app:PlayFanfare();
 							end
@@ -11511,7 +11508,7 @@ app.events.PLAYER_LOGIN = function()
 				return nil;
 			end
 		end
-		app:RefreshData(false, true);
+		app:RefreshData(false);
 	end);
 	LibStub:GetLibrary("LibDataBroker-1.1"):NewDataObject(L["TITLE"], {
 		type = "launcher",
@@ -11565,7 +11562,7 @@ app.events.COMPANION_UNLEARNED = function(...)
 end
 app.events.HEIRLOOMS_UPDATED = function(itemID, kind, ...)
 	if itemID then
-		app:RefreshData(false, true, true);
+		app:RefreshData(false, true);
 		app:PlayFanfare();
 		wipe(searchCache);
 		collectgarbage();
@@ -11595,7 +11592,7 @@ end
 app.events.TOYS_UPDATED = function(itemID, new)
 	if itemID and not GetDataSubMember("CollectedToys", itemID) then
 		SetDataSubMember("CollectedToys", itemID, true);
-		app:RefreshData(false, true, true);
+		app:RefreshData(false, true);
 		app:PlayFanfare();
 		wipe(searchCache);
 		collectgarbage();
@@ -11659,7 +11656,7 @@ app.events.TRANSMOG_COLLECTION_SOURCE_REMOVED = function(sourceID)
 		end
 		
 		-- Refresh the Data and Cry!
-		app:RefreshData(false, true, true);
+		app:RefreshData(false, true);
 		app:PlayRemoveSound();
 		wipe(searchCache);
 		collectgarbage();
