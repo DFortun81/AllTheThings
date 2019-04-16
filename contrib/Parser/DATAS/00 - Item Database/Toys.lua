@@ -594,3 +594,4 @@ t(165791);	-- Worn Cloak
 
 t(168012);	-- Apexis Focusing Shard
 t(168014);	-- Banner of the Burning Blade
+t(168123);  -- Twitching Eyeball

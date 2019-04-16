@@ -326,6 +326,131 @@ _.Zones =
 							["coord"] = { 67.8, 26.2, 1161 },	-- Boralus
 							["sourceQuests"] = { 55119 },	-- Reporting In!
 						}),
+						a(i(165605, {	-- The Azsharan Medallion
+							["crs"] = {
+								144778,	-- Darktide Champion
+								144769,	-- Darktide Sorceress
+								144770,	-- Darktide Witch
+								144816,	-- Darktide Slaver
+								144777,	-- Darktide Marauder
+								144780,	-- Darktide Brute
+							},
+							["description"]	= "To get the questitem you need to kill Naga while the worldquest 'Naga Attack!' is up.",
+							["groups"] = {
+								qa(54141),	-- The Azsharan Medallion
+							},
+						})),
+						qa(54144, {	-- Orders from Azshara
+							["qg"] = 135793,	-- Collector Kojo
+							["coord"] = { 40.4, 36.4, 942 },
+							["sourceQuest"] = 54141,	-- The Azsharan Medallion
+							["classes"] = {
+								1,	-- Warrior
+								2,	-- Paladin
+								3,	-- Hunter
+								4,	-- Rogue
+								6,	-- Deathknight
+								7,	-- Shaman
+								8,	-- Mage
+								9,	-- Warlock
+								10,	-- Monk
+								11,	-- Druid
+								12,	-- Demonhunter
+							},
+						}),
+						qa(54265, {	-- Orders from Azshara
+							["qg"] = 134345,	-- Collector Kojo
+							["coord"] = { 71.4, 30.2, 862 },
+							["sourceQuest"] = 54172,	-- The Azsharan Medallion
+							["classes"] = { 5 },	-- Priest
+						}),
+						o(311218, {	-- Xal'atath, Blade of the Black Empire
+							qa(54113, {	-- Every Little Death Helps
+								["coord"] = { 34.2, 31.8, 942 },
+								["sourceQuest"] = 54144,	-- Orders from Azshara
+								["classes"] = {
+									1,	-- Warrior
+									2,	-- Paladin
+									3,	-- Hunter
+									4,	-- Rogue
+									6,	-- Deathknight
+									7,	-- Shaman
+									8,	-- Mage
+									9,	-- Warlock
+									10,	-- Monk
+									11,	-- Druid
+									12,	-- Demonhunter
+								},
+							}),
+							q(54118, {	-- Every Little Death Helps
+								["coords"] = {
+									{ 78.0, 36.7, 862 },
+									{ 34.2, 31.8, 942 },
+								},
+								["sourceQuests"] = {
+									54265,	-- Orders from Azshara
+									54433,	-- Orders from Azshara
+								},
+								["classes"] = { 5 },	-- Priest
+							}),
+							q(53760, {	-- Unintended Consequences
+								["coords"] = {
+									{ 78.0, 36.7, 862 },
+									{ 34.2, 31.8, 942 },
+								},
+								["sourceQuest"] = 54117,	-- Every Little Death Helps
+								["classes"] = {
+									1,	-- Warrior
+									2,	-- Paladin
+									3,	-- Hunter
+									4,	-- Rogue
+									6,	-- Deathknight
+									7,	-- Shaman
+									8,	-- Mage
+									9,	-- Warlock
+									10,	-- Monk
+									11,	-- Druid
+									12,	-- Demonhunter
+								},
+							}),
+							q(54058, {	-- Unintended Consequences
+								["coords"] = {
+									{ 78.0, 36.7, 862 },
+									{ 34.2, 31.8, 942 },
+								},
+								["sourceQuest"] = 54118,	-- Every Little Death Helps
+								["classes"] = { 5 },	-- Priest
+							}),
+						}),
+						q(53761, {	-- The Pirate's Treasure
+							["qg"] = 144773,	-- Xal'atath
+							["coord"] = { 20.0, 35.8, 896 },
+							["sourceQuest"] = 53760,	-- Unintended Consequences
+						}),
+						q(53762, {	-- The Tempest Crown
+							["qg"] = 145396,	-- Xal'atath
+							["coord"] = { 75.0, 77.7, 895 },
+							["sourceQuest"] = 53761,	-- The Pirate's Treasure
+						}),
+						q(53763, {	-- Twist the Knife
+							["qg"] = 146384,	-- Xal'atath
+							["coord"] = { 53.0, 13.6, 864 },
+							["sourceQuest"] = 53762,	-- The Tempest Crown
+						}),
+						qa(53766, {	-- His Eye Upon You
+							["qg"] = 146902,	-- Brother Pike
+							["coords"] = { 67.4, 21.0, 1161 },
+							["sourceQuest"] = 53763,	-- Twist the Knife
+							["description"]	= "You just get the Toy if you choose to cleanse the gift.",
+							["groups"] = {
+								i(168123),	-- Twitching Eyeball
+							},
+						}),
+						qa(54438, {	-- Crucible of Storms: Relics of Shadow
+							["qg"] = 146902,	-- Brother Pike
+							["coords"] = { 67.4, 21.0, 1161 },
+							["sourceQuest"] = 53763,	-- Twist the Knife
+						}),
 					},
 				}),
 			},

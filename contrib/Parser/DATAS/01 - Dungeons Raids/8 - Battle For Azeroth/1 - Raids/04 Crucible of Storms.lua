@@ -8,6 +8,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 		["maps"] = {
 			1345,	-- Shrine of Shadows
 			1346,	-- Tendril of Corruption
+			1363,	-- Introquest (Twist the Knife)
 		},
 		["g"] = {
 			d(17, {	-- LFR
