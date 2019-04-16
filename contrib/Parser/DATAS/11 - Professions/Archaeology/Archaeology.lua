@@ -10,7 +10,7 @@ profession(794, {	-- Archaeology
 	}),
 	i(64657, {
 		["groups"] = {
-			i(27538),	-- Recipe: Vial of the Sands
+			i(67538),	-- Recipe: Vial of the Sands
 		},
 		["requireSkill"] = 171,	-- Alchemy,
 	}),
