@@ -173,7 +173,10 @@ _.WorldEvents =
 			}),
 		},
 		["races"] = ALLIANCE_ONLY,
-		["mapID"] = 500,
+		["maps"] = {
+			499,	-- Deeprun Tram [Note!! Adding this here because the map switches don't always register and we don't want the user to reload each time for the list to appear
+			500,	-- Bizmo's Brawlpub
+		},
 		["icon"] = "Interface\\Icons\\ability_warrior_secondwind",
 	}),
 };	
