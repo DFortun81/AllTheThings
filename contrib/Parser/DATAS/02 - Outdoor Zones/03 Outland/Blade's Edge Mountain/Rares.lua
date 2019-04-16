@@ -28,10 +28,11 @@ _.Zones =
 								{ 29.8, 70.8, 105 },	
 							},
 							["groups"] = {
-								dr(25, i(31155)),	-- Drakescale Breastplate
-								dr(25, i(31156)),	-- Drakescale Hauberk
-								dr(25, i(31158)),	-- Drakeweave Raiment
-								dr(24, i(31157)),	-- Drakehide Tunic
+								ach(1312, crit(11)),	-- Bloody Rare
+								i(31155),	-- Drakescale Breastplate
+								i(31156),	-- Drakescale Hauberk
+								i(31158),	-- Drakeweave Raiment
+								i(31157),	-- Drakehide Tunic
 							},
 						}),
 						n(18690, {	-- Morcrush
@@ -44,10 +45,11 @@ _.Zones =
 								{ 68.4, 69.4, 105 },
 							},
 							["groups"] = {
-								dr(29, i(31159)),	-- Felstone Pauldrons
-								dr(24, i(31161)),	-- Felstone Spaulders
-								dr(23, i(31160)),	-- Felstone Epaulets
-								dr(23, i(31162)),	-- Felstone Mantle
+								ach(1312, crit(15)),	-- Bloody Rare
+								i(31159),	-- Felstone Pauldrons
+								i(31161),	-- Felstone Spaulders
+								i(31160),	-- Felstone Epaulets
+								i(31162),	-- Felstone Mantle
 							},
 						}),
 						{	-- Shartuul
@@ -91,10 +93,11 @@ _.Zones =
 								{ 46.4, 78.6, 105 },
 							},
 							["groups"] = {
-								dr(25, i(31163)),	-- Nethersteel Handguards
-								dr(25, i(31166)),	-- Nethersteel-Lined Handwraps
-								dr(25, i(31165)),	-- Nethersteel-Reinforced Gloves
-								dr(24, i(31164)),	-- Nethersteel Gauntlets
+								ach(1312, crit(18)),	-- Bloody Rare
+								i(31163),	-- Nethersteel Handguards
+								i(31166),	-- Nethersteel-Lined Handwraps
+								i(31165),	-- Nethersteel-Reinforced Gloves
+								i(31164),	-- Nethersteel Gauntlets
 							},
 						}),
 					}),
