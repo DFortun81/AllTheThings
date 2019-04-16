@@ -11193,20 +11193,13 @@ hooksecurefunc(GameTooltip, "SetToyByItemID", function(self, itemID, ...)
 		self:Show();
 	end
 end)
---[[--
-hooksecurefunc(GameTooltip, "SetTradeSkillItem", function(self, itemID, reagentID, ...)
-	local link;
-    if reagentID ~= nil then
-        link = GetTradeSkillReagentItemLink(itemID, reagentID);
-    else
-        link = GetTradeSkillItemLink(itemID);
-    end
+hooksecurefunc(GameTooltip, "SetRecipeReagentItem", function(self, itemID, reagentID, ...)
+	local link = C_TradeSkillUI.GetRecipeReagentItemLink(itemID, reagentID);
 	if link then
 		AttachTooltipSearchResults(self, link, SearchForLink, link);
 		self:Show();
 	end
 end)
---]]--
 GameTooltip:HookScript("OnTooltipSetQuest", AttachTooltip);
 GameTooltip:HookScript("OnTooltipSetItem", AttachTooltip);
 GameTooltip:HookScript("OnTooltipSetUnit", AttachTooltip);
