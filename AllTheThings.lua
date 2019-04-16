@@ -2341,33 +2341,31 @@ local function SearchForLink(link)
 	else
 		local kind, id, paramA, paramB = strsplit(":", link);
 		kind = string.lower(kind);
-		if id then id = tonumber(id); end
-		if kind == "itemid" then
-			paramA = "itemID";
-			paramB = id;
-			itemID = id;
-		elseif kind == "questid" then
-			paramA = "questID";
-			paramB = id;
-		elseif kind == "creatureid" or kind == "npcid" then
-			paramA = "creatureID";
-			paramB = id;
-		elseif kind == "achievementid" then
-			paramA = "achievementID";
-			paramB = id;
-		elseif kind == "currencyid" then
-			paramA = "currencyID";
-			paramB = id;
-		elseif kind == "spellid" then
-			paramA = "spellID";
-			paramB = id;
-		else
-			paramA = nil;
+		if string.sub(kind,1,2) == "|c" then
+			kind = string.sub(kind,11);
 		end
-		if paramA then
-			return SearchForField(paramA, paramB);
+		if string.sub(kind,1,2) == "|h" then
+			kind = string.sub(kind,3);
+		end
+		if id then id = tonumber(select(1, strsplit("|[", id)) or id); end
+		--print(kind, id, paramA, paramB);
+		--print(string.gsub(string.gsub(link, "|c", "c"), "|h", "h"));
+		if kind == "itemid" then
+			return SearchForField("itemID", id);
+		elseif kind == "questid" or kind == "quest" then
+			return SearchForField("questID", id);
+		elseif kind == "creatureid" or kind == "npcid" then
+			return SearchForField("creatureID", id);
+		elseif kind == "achievementid" or kind == "achievement" then
+			return SearchForField("achievementID", id);
+		elseif kind == "currencyid" or kind == "currency" then
+			return SearchForField("currencyID", id);
+		elseif kind == "spellid" or kind == "spell" or kind == "enchant" or kind == "talent" then
+			return SearchForField("spellID", id);
+		elseif kind == "speciesid" or kind == "species" or kind == "battlepet" then
+			return SearchForField("speciesID", id);
 		else
-			-- return { "Unsupported link: " .. link };
+			return SearchForField(string.gsub(kind, "id", "ID"), id);
 		end
 	end
 end
