@@ -72,6 +72,303 @@ _.Zones =
 							},
 						},
 					},
+					{	-- Mole Machine Locations
+						["npcID"] = -501,	-- Mole Machine
+						["g"] = {
+							{	-- Kalimdor
+								["npcID"] = -9976,	-- Kalimdor
+								["icon"] = "Interface\\Icons\\ability_racial_molemachine",
+								["g"] = {
+									{	-- Fire Plume Ridge
+										["npcID"] = -504,	-- Fire Plume Ridge
+										["icon"] = "Interface\\Icons\\ability_racial_molemachine",
+										["questID"] = 53591,
+										["collectible"] = true,
+										["coords"] = {
+											{ 52.89, 55.76, 78 },
+										},
+										["maps"] = {
+											78,		-- Un'goro Crater
+										},
+										["races"] = {
+											34,	-- Dark Iron Dwarves
+										},
+									},
+									{	-- Honor's Stand
+										["npcID"] = -503,	-- Honor's Stand
+										["icon"] = "Interface\\Icons\\ability_racial_molemachine",
+										["questID"] = 53600,
+										["collectible"] = true,
+										["coords"] = {
+											{ 39.11, 09.31, 199 },
+										},
+										["maps"] = {
+											199,	-- Southern Barrens
+										},
+										["races"] = {
+											34,	-- Dark Iron Dwarves
+										},
+									},
+									{	-- Sulfuron Spire
+										["npcID"] = -502,	-- Sulfuron Spire
+										["icon"] = "Interface\\Icons\\ability_racial_molemachine",
+										["questID"] = 53601,
+										["collectible"] = true,
+										["coords"] = {
+											{ 57.16, 77.09, 198 },
+										},
+										["maps"] = {
+											198,	-- Mount Hyjal
+										},
+										["races"] = {
+											34,	-- Dark Iron Dwarves
+										},
+									},
+								},
+							},
+							{	-- Eastern Kingdoms
+								["npcID"] = -9975,	-- Eastern Kingdoms
+								["icon"] = "Interface\\Icons\\ability_racial_molemachine",
+								["g"] = {
+									{	-- Aerie Peak
+										["npcID"] = -504,	-- Aerie Peak
+										["icon"] = "Interface\\Icons\\ability_racial_molemachine",
+										["questID"] = 53585,
+										["collectible"] = true,
+										["coords"] = {
+											{ 13.52, 46.81, 26 },
+										},
+										["maps"] = {
+											26,	-- The Hinterlands
+										},
+										["races"] = {
+											34,	-- Dark Iron Dwarves
+										},
+									},
+									{	-- Blackrock Depths
+										["npcID"] = -505,	-- Blackrock Depths
+										["icon"] = "Interface\\Icons\\ability_racial_molemachine",
+										["questID"] = 53587,
+										["collectible"] = true,
+										["coords"] = {
+											{ 50.19, 42.75, 35 },
+										},
+										["maps"] = {
+											35,	-- Blackrock Mountain
+										},
+										["races"] = {
+											34,	-- Dark Iron Dwarves
+										},
+									},
+									{	-- Nethergarde Keep
+										["npcID"] = -506,	-- Nethergarde Keep
+										["icon"] = "Interface\\Icons\\ability_racial_molemachine",
+										["questID"] = 53594,
+										["collectible"] = true,
+										["coords"] = {
+											{ 61.82, 12.74, 17 },
+										},
+										["maps"] = {
+											17,	-- Blasted Lands
+										},
+										["races"] = {
+											34,	-- Dark Iron Dwarves
+										},
+									},
+								},
+							},
+							{	-- Outlands
+								["npcID"] = -9977,	-- Outlands
+								["icon"] = "Interface\\Icons\\ability_racial_molemachine",
+								["g"] = {
+									--[[
+									{	-- 
+										["npcID"] = -
+										["icon"] = "Interface\\Icons\\ability_racial_molemachine",
+										["questID"] = 
+										["collectible"] = true,
+										["coords"] = {
+											{  },
+										},
+										["maps"] = {
+											
+										},
+										["races"] = {
+											34,	-- Dark Iron Dwarves
+										},
+									},
+									{	-- 
+										["npcID"] = -
+										["icon"] = "Interface\\Icons\\ability_racial_molemachine",
+										["questID"] = 
+										["collectible"] = true,
+										["coords"] = {
+											{  },
+										},
+										["maps"] = {
+											
+										},
+										["races"] = {
+											34,	-- Dark Iron Dwarves
+										},
+									},
+									--]]
+								},
+							},
+							{	-- Northrend
+								["npcID"] = -9978,	-- Northrend
+								["icon"] = "Interface\\Icons\\ability_racial_molemachine",
+								["g"] = {
+									--[[
+									{	-- 
+										["npcID"] = -
+										["icon"] = "Interface\\Icons\\ability_racial_molemachine",
+										["questID"] = 
+										["collectible"] = true,
+										["coords"] = {
+											{  },
+										},
+										["maps"] = {
+											
+										},
+										["races"] = {
+											34,	-- Dark Iron Dwarves
+										},
+									},
+									{	-- 
+										["npcID"] = -
+										["icon"] = "Interface\\Icons\\ability_racial_molemachine",
+										["questID"] = 
+										["collectible"] = true,
+										["coords"] = {
+											{  },
+										},
+										["maps"] = {
+											
+										},
+										["races"] = {
+											34,	-- Dark Iron Dwarves
+										},
+									},
+									--]]
+								},
+							},
+							{	-- Pandaria
+								["npcID"] = -9980,	-- Pandaria
+								["icon"] = "Interface\\Icons\\ability_racial_molemachine",
+								["g"] = {
+									--[[
+									{	-- 
+										["npcID"] = -
+										["icon"] = "Interface\\Icons\\ability_racial_molemachine",
+										["questID"] = 
+										["collectible"] = true,
+										["coords"] = {
+											{  },
+										},
+										["maps"] = {
+											
+										},
+										["races"] = {
+											34,	-- Dark Iron Dwarves
+										},
+									},
+									{	-- 
+										["npcID"] = -
+										["icon"] = "Interface\\Icons\\ability_racial_molemachine",
+										["questID"] = 
+										["collectible"] = true,
+										["coords"] = {
+											{  },
+										},
+										["maps"] = {
+											
+										},
+										["races"] = {
+											34,	-- Dark Iron Dwarves
+										},
+									},
+									--]]
+								},
+							},
+							{	-- Draenor
+								["npcID"] = -9981,	-- Draenor
+								["icon"] = "Interface\\Icons\\ability_racial_molemachine",
+								["g"] = {
+									--[[
+									{	-- 
+										["npcID"] = -
+										["icon"] = "Interface\\Icons\\ability_racial_molemachine",
+										["questID"] = 
+										["collectible"] = true,
+										["coords"] = {
+											{  },
+										},
+										["maps"] = {
+											
+										},
+										["races"] = {
+											34,	-- Dark Iron Dwarves
+										},
+									},
+									{	-- 
+										["npcID"] = -
+										["icon"] = "Interface\\Icons\\ability_racial_molemachine",
+										["questID"] = 
+										["collectible"] = true,
+										["coords"] = {
+											{  },
+										},
+										["maps"] = {
+											
+										},
+										["races"] = {
+											34,	-- Dark Iron Dwarves
+										},
+									},
+									--]]
+								},
+							},
+							{	-- Broken Isles
+								["npcID"] = -528,	-- Broken Isles
+								["icon"] = "Interface\\Icons\\ability_racial_molemachine",
+								["g"] = {
+									--[[
+									{	-- 
+										["npcID"] = -
+										["icon"] = "Interface\\Icons\\ability_racial_molemachine",
+										["questID"] = 
+										["collectible"] = true,
+										["coords"] = {
+											{  },
+										},
+										["maps"] = {
+											
+										},
+										["races"] = {
+											34,	-- Dark Iron Dwarves
+										},
+									},
+									{	-- 
+										["npcID"] = -
+										["icon"] = "Interface\\Icons\\ability_racial_molemachine",
+										["questID"] = 
+										["collectible"] = true,
+										["coords"] = {
+											{  },
+										},
+										["maps"] = {
+											
+										},
+										["races"] = {
+											34,	-- Dark Iron Dwarves
+										},
+									},
+									--]]
+								},
+							},
+						},
+					},
 				},
 			},
 		},
