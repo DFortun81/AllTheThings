@@ -465,20 +465,20 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							},
 							i(167050),	-- Mogu Statue (PET!)
 							i(138804),	-- Illusion: Colossus
-							i( 86148),	-- Tihan, Scepter of the Sleeping Emperor
-							i( 86142),	-- Fang Kung, Spark of Titans
-							i( 86146),	-- Crown of Opportunistic Strikes
-							i( 89820),	-- Dreadeye Gaze
-							i( 86151),	-- Hood of Focused Energy
-							i( 86152),	-- Worldwaker Cabochon
-							i( 86149),	-- Spaulders of the Emperor's Rage
-							i( 89823),	-- Chestguard of Eternal Vigilance
-							i( 89825),	-- Enameled Grips of Solemnity
-							i( 87827),	-- Grips of Terra Cotta
-							i( 86145),	-- Jang-xi's Devastating Legplates
-							i( 86150),	-- Magnetized Leggings
-							i( 86144),	-- Lei Shen's Final Orders
-							i( 86147),	-- Qin-xi's Polarizing Seal
+							i(86148),	-- Tihan, Scepter of the Sleeping Emperor
+							i(86142),	-- Fang Kung, Spark of Titans
+							i(86146),	-- Crown of Opportunistic Strikes
+							i(89820),	-- Dreadeye Gaze
+							i(86151),	-- Hood of Focused Energy
+							i(86152),	-- Worldwaker Cabochon
+							i(86149),	-- Spaulders of the Emperor's Rage
+							i(89823),	-- Chestguard of Eternal Vigilance
+							i(89825),	-- Enameled Grips of Solemnity
+							i(87827),	-- Grips of Terra Cotta
+							i(86145),	-- Jang-xi's Devastating Legplates
+							i(86150),	-- Magnetized Leggings
+							i(86144),	-- Lei Shen's Final Orders
+							i(86147),	-- Qin-xi's Polarizing Seal
 						},
 					}),
 				},
@@ -723,20 +723,20 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							},
 							i(167050),	-- Mogu Statue (PET!)
 							i(138804),	-- Illusion: Colossus
-							i( 87074),	-- Tihan, Scepter of the Sleeping Emperor
-							i( 87069),	-- Fang Kung, Spark of Titans
-							i( 87070),	-- Crown of Opportunistic Strikes
-							i( 89940),	-- Dreadeye Gaze
-							i( 87073),	-- Hood of Focused Energy
-							i( 87076),	-- Worldwaker Cabochon
-							i( 87078),	-- Spaulders of the Emperor's Rage
-							i( 89941),	-- Chestguard of Eternal Vigilance
-							i( 89942),	-- Enameled Grips of Solemnity
-							i( 87825),	-- Grips of Terra Cotta
-							i( 87071),	-- Jang-xi's Devastating Legplates
-							i( 87077),	-- Magnetized Leggings
-							i( 87072),	-- Lei Shen's Final Orders
-							i( 87075),	-- Qin-xi's Polarizing Seal
+							i(87074),	-- Tihan, Scepter of the Sleeping Emperor
+							i(87069),	-- Fang Kung, Spark of Titans
+							i(87070),	-- Crown of Opportunistic Strikes
+							i(89940),	-- Dreadeye Gaze
+							i(87073),	-- Hood of Focused Energy
+							i(87076),	-- Worldwaker Cabochon
+							i(87078),	-- Spaulders of the Emperor's Rage
+							i(89941),	-- Chestguard of Eternal Vigilance
+							i(89942),	-- Enameled Grips of Solemnity
+							i(87825),	-- Grips of Terra Cotta
+							i(87071),	-- Jang-xi's Devastating Legplates
+							i(87077),	-- Magnetized Leggings
+							i(87072),	-- Lei Shen's Final Orders
+							i(87075),	-- Qin-xi's Polarizing Seal
 						},
 					}),
 				},

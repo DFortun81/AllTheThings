@@ -1478,10 +1478,10 @@ _.Zones =
 								un(2, i(3750)),	-- Ribbed Breastplate
 							})),
 							un(40, qa(1053, {	-- In the Name of the Light
-								un(2, i( 6831)),	-- Black Menace
-								un(2, i( 6830)),	-- Bonebiter
+								un(2, i(6831)),	-- Black Menace
+								un(2, i(6830)),	-- Bonebiter
 								un(2, i(11262)),	-- Orb of Lorica
-								un(2, i( 6829)),	-- Sword of Serenity
+								un(2, i(6829)),	-- Sword of Serenity
 							})),
 							un(40, qh(546, {	-- [DEPRECATED] Souvenirs of Death
 								un(2, i(3739)),	-- Skull Ring
@@ -1507,8 +1507,8 @@ _.Zones =
 							})),
 							un(40, qh(2938, {	-- Venom to the Undercity
 								un(2, i(10686)),	-- Aegis of Battle
-								un(2, i( 9650)),	-- Honorguard Chestpiece
-								un(2, i( 9649)),	-- Royal Highmark Vestments
+								un(2, i(9650)),	-- Honorguard Chestpiece
+								un(2, i(9649)),	-- Royal Highmark Vestments
 							})),
 							un(40, qh(1051, { 	-- Vorrel's Revenge
 								un(2, i(4643)), 	-- Grimsteel Cape

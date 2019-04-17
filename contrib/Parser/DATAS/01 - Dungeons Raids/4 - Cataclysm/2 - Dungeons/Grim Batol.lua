@@ -26,13 +26,13 @@ _.Instances = { tier(4, {	-- Cataclysm
 					i(56219),	-- Shroud of Dark Memories
 				}),			
 				cr(39625, e(131, {	-- General Umbriss
-					i( 56441),	-- Modgug's Blade
+					i(56441),	-- Modgug's Blade
 					i(157612), 	-- Dragonkin Ward (Added 7.3.5)
-					i( 56443),	-- Wildhammer Riding Helm
-					i( 56442),	-- Cursed Skardyn Vest 
+					i(56443),	-- Wildhammer Riding Helm
+					i(56442),	-- Cursed Skardyn Vest 
 					i(157596), 	-- Glimmerthread Pantaloons (Added 7.3.5)
-					i( 56444),	-- Umbriss Band
-					i( 56440),	-- Skardyn's Grace
+					i(56444),	-- Umbriss Band
+					i(56440),	-- Skardyn's Grace
 					un(2, i(56116)),	-- Modgud's Blade [Replaced with 56441]
 					un(2, i(56112)),	-- Wildhammer Riding Helm [Replaced with 56443]
 					un(2, i(56113)),	-- Cursed Skardyn Vest [Replaced with 56442]
@@ -41,12 +41,12 @@ _.Instances = { tier(4, {	-- Cataclysm
 				})),
 				cr(40177, e(132, {	-- Forgemaster Throngus
 					i(157613), 	-- Geomancy Slicer (Added 7.3.5)
-					i( 56446),	-- Wand of Untainted Power
+					i(56446),	-- Wand of Untainted Power
 					i(157597), 	-- Troggstitched Drape (Added 7.3.5)
 					i (56447),	-- Belt of the Forgemaster
-					i( 56448),	-- Dark Iron Chain Boots
-					i( 56445),	-- Ring of Dun Algaz
-					i( 56449),	-- Throngus's Finger
+					i(56448),	-- Dark Iron Chain Boots
+					i(56445),	-- Ring of Dun Algaz
+					i(56449),	-- Throngus's Finger
 					un(2, i(56122)),	-- Wand of Untainted Power [Replaced with 56446]
 					un(2, i(56118)),	-- Belt of the Forgemaster [Replaced with 56447]
 					un(2, i(56119)),	-- Dark Iron Chain Boots [Replaced with 56448]
@@ -54,13 +54,13 @@ _.Instances = { tier(4, {	-- Cataclysm
 					un(2, i(56121)),	-- Throngus's Finger [Replaced with 56449]
 				})),
 				cr(40319, e(133, {	-- Drahga Shadowburner
-					i( 56454),	-- Windwalker Blade
+					i(56454),	-- Windwalker Blade
 					i(157598), 	-- Courier's Dragonriding Spaulders (Added 7.3.5)
-					i( 56452),	-- Earthshape Pauldrons
-					i( 56450),	-- Azureborne Cloak
-					i( 56453),	-- Crimsonborne Bracers
+					i(56452),	-- Earthshape Pauldrons
+					i(56450),	-- Azureborne Cloak
+					i(56453),	-- Crimsonborne Bracers
 					i(157614), 	-- Flame Invoker's Treads (Added 7.3.5)
-					i( 56451),	-- Red Scale Boots
+					i(56451),	-- Red Scale Boots
 					un(2, i(56127)),	-- Windwalker Blade [Replaced with 56454]
 					un(2, i(56124)),	-- Earthshaper Pauldrons [Replaced with 56452]
 					un(2, i(56126)),	-- Azureborne Cloak [Replaced with 56450]
@@ -71,17 +71,17 @@ _.Instances = { tier(4, {	-- Cataclysm
 					{	-- Grim Batol
 						["achievementID"] = 4840,	-- Grim Batol
 					},
-					i( 56461),	-- Staff of Siphoned Essences
-					i( 56456),	-- Wild Hammer
-					i( 56459),	-- Mace of Transformed Bone
-					i( 56460),	-- Crown of Enfeebled Bodies
-					i( 56455),	-- Vest of Misshapen Hides
-					i( 56464),	-- Bracers of Umbral Mending 
+					i(56461),	-- Staff of Siphoned Essences
+					i(56456),	-- Wild Hammer
+					i(56459),	-- Mace of Transformed Bone
+					i(56460),	-- Crown of Enfeebled Bodies
+					i(56455),	-- Vest of Misshapen Hides
+					i(56464),	-- Bracers of Umbral Mending 
 					i(157615), 	-- Flamescale Chain Leggings (Added 7.3.5)
-					i( 56457),	-- Circle of Bone
-					i( 56463),	-- Corrupted Egg Shell
-					i( 56462),	-- Gale of Shadows
-					i( 56458),	-- Mark of Khardros
+					i(56457),	-- Circle of Bone
+					i(56463),	-- Corrupted Egg Shell
+					i(56462),	-- Gale of Shadows
+					i(56458),	-- Mark of Khardros
 					un(2, i(56137)),	-- Staff of Siphoned Essences [Replaced with 56461]
 					un(2, i(56131)),	-- Wild Hammer [Replaced with 56456]
 					un(2, i(56130)),	-- Mace of Transformed Bone [Replaced with 56459]
@@ -102,31 +102,31 @@ _.Instances = { tier(4, {	-- Cataclysm
 						{	-- Umbrage for Umbriss
 							["achievementID"] = 5297,	-- Umbrage for Umbriss
 						},
-						i( 56441),	-- Modgug's Blade
+						i(56441),	-- Modgug's Blade
 						i(157612), 	-- Dragonkin Ward (Added 7.3.5)
-						i( 56443),	-- Wildhammer Riding Helm
-						i( 56442),	-- Cursed Skardyn Vest 
+						i(56443),	-- Wildhammer Riding Helm
+						i(56442),	-- Cursed Skardyn Vest 
 						i(157596), 	-- Glimmerthread Pantaloons (Added 7.3.5)
-						i( 56444),	-- Umbriss Band
-						i( 56440),	-- Skardyn's Grace
+						i(56444),	-- Umbriss Band
+						i(56440),	-- Skardyn's Grace
 					})),
 					cr(40177, e(132, {	-- Forgemaster Throngus
 						i(157613), 	-- Geomancy Slicer (Added 7.3.5)
-						i( 56446),	-- Wand of Untainted Power
+						i(56446),	-- Wand of Untainted Power
 						i(157597), 	-- Troggstitched Drape (Added 7.3.5)
-						i( 56447),	-- Belt of the Forgemaster
-						i( 56448),	-- Dark Iron Chain Boots
-						i( 56445),	-- Ring of Dun Algaz
-						i( 56449),	-- Throngus's Finger
+						i(56447),	-- Belt of the Forgemaster
+						i(56448),	-- Dark Iron Chain Boots
+						i(56445),	-- Ring of Dun Algaz
+						i(56449),	-- Throngus's Finger
 					})),
 					cr(40319, e(133, {	-- Drahga Shadowburner
-						i( 56454),	-- Windwalker Blade
+						i(56454),	-- Windwalker Blade
 						i(157598), 	-- Courier's Dragonriding Spaulders (Added 7.3.5)
-						i( 56452),	-- Earthshape Pauldrons
-						i( 56450),	-- Azureborne Cloak
-						i( 56453),	-- Crimsonborne Bracers
+						i(56452),	-- Earthshape Pauldrons
+						i(56450),	-- Azureborne Cloak
+						i(56453),	-- Crimsonborne Bracers
 						i(157614), 	-- Flame Invoker's Treads (Added 7.3.5)
-						i( 56451),	-- Red Scale Boots
+						i(56451),	-- Red Scale Boots
 					})),
 					cr(40484, e(134, {	-- Erudax
 						{	-- Don't Need to Break Eggs to Make an Omelet
@@ -135,17 +135,17 @@ _.Instances = { tier(4, {	-- Cataclysm
 						{	-- Heroic: Grim Batol
 							["achievementID"] = 5062,	-- Heroic: Grim Batol
 						},
-						i( 56461),	-- Staff of Siphoned Essences
-						i( 56456),	-- Wild Hammer
-						i( 56459),	-- Mace of Transformed Bone
-						i( 56460),	-- Crown of Enfeebled Bodies
-						i( 56455),	-- Vest of Misshapen Hides
-						i( 56464),	-- Bracers of Umbral Mending 
+						i(56461),	-- Staff of Siphoned Essences
+						i(56456),	-- Wild Hammer
+						i(56459),	-- Mace of Transformed Bone
+						i(56460),	-- Crown of Enfeebled Bodies
+						i(56455),	-- Vest of Misshapen Hides
+						i(56464),	-- Bracers of Umbral Mending 
 						i(157615), 	-- Flamescale Chain Leggings (Added 7.3.5)
-						i( 56457),	-- Circle of Bone
-						i( 56463),	-- Corrupted Egg Shell
-						i( 56462),	-- Gale of Shadows
-						i( 56458),	-- Mark of Khardros
+						i(56457),	-- Circle of Bone
+						i(56463),	-- Corrupted Egg Shell
+						i(56462),	-- Gale of Shadows
+						i(56458),	-- Mark of Khardros
 					})),
 				},
 			}),

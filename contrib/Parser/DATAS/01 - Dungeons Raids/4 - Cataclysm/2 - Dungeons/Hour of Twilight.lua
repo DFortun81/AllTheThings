@@ -50,13 +50,13 @@ _.Instances = { tier(4, {	-- Cataclysm
 				i(72849),	-- Wayfinder Boots
 			})),
 			cr(54968, e(342, { 	-- Asira Dawnslayer
-				i( 72860),	-- Mandible of the Old Ones
-				i( 72855),	-- Corrupted Carapace
-				i( 72859),	-- Dawnslayer Helm
-				i( 72856),	-- Pauldrons of Midnight Whispers
-				i( 76151),	-- Cloak of Subtle Light
+				i(72860),	-- Mandible of the Old Ones
+				i(72855),	-- Corrupted Carapace
+				i(72859),	-- Dawnslayer Helm
+				i(72856),	-- Pauldrons of Midnight Whispers
+				i(76151),	-- Cloak of Subtle Light
 				i(157616),	-- Chestguard of Futility
-				i( 72857),	-- Leggings of Blinding Speed
+				i(72857),	-- Leggings of Blinding Speed
 			})),
 			cr(54938, e(341, {	-- Archbishop Benedictus
 				ach(6132),	-- Eclipse

@@ -925,7 +925,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 			e(1592, {	-- Brutallus
 				["creatureID"] = 24882,
 				["groups"] = {
-					i( 34853, {	-- Belt of the Forgotten Conqueror
+					i(34853, {	-- Belt of the Forgotten Conqueror
 						i(34527),	-- Belt of Absolution
 						i(34541),	-- Belt of the Malefic
 						i(34528),	-- Cord of Absolution
@@ -938,7 +938,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(33903),	-- Vindicator's Ornamented Belt
 						i(33909),	-- Vindicator's Scaled Belt
 					}),
-					i( 34854, {	-- Belt of the Forgotten Protector
+					i(34854, {	-- Belt of the Forgotten Protector
 						i(34549),	-- Gronnstalker's Belt
 						i(34546),	-- Onslaught Belt
 						i(34547),	-- Onslaught Waistguard
@@ -951,7 +951,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(33907),	-- Vindicator's Ringmail Girdle
 						i(33811),	-- Vindicator's Plate Belt
 					}),
-					i( 34855, {	-- Belt of the Forgotten Vanquisher
+					i(34855, {	-- Belt of the Forgotten Vanquisher
 						i(34557),	-- Belt of the Tempest
 						i(34558),	-- Slayer's Belt
 						i(34554),	-- Thunderheart Belt
@@ -964,11 +964,11 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(33915),	-- Vindicator's Wyrmhide Belt
 					}),
 					i(122113),	-- Sunblade Rune of Activation (PET!)
-					i( 34176),	-- Reign of Misery
-					i( 34179),	-- Heart of the Pit
-					i( 34177),	-- Clutch of Demise
-					i( 34178),	-- Collar of the Pit Lord
-					i( 34180, {	-- Felfury Legplates
+					i(34176),	-- Reign of Misery
+					i(34179),	-- Heart of the Pit
+					i(34177),	-- Clutch of Demise
+					i(34178),	-- Collar of the Pit Lord
+					i(34180, {	-- Felfury Legplates
 						n(25977, {	-- Yrma
 							["description"] = "This vendor is located on a boat on the Isle of Quel'Danas.",
 							["groups"] = {	
@@ -976,7 +976,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 							},
 						}),
 					}),
-					i( 34181),	-- Leggings of Calamity
+					i(34181),	-- Leggings of Calamity
 				},
 			}),
 			e(1593, {	-- Felmyst
@@ -1048,7 +1048,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					25166,	-- Alythess
 				},
 				["groups"] = {
-					i( 34853, {	-- Belt of the Forgotten Conqueror
+					i(34853, {	-- Belt of the Forgotten Conqueror
 						i(34527),	-- Belt of Absolution
 						i(34541),	-- Belt of the Malefic
 						i(34528),	-- Cord of Absolution
@@ -1061,7 +1061,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(33903),	-- Vindicator's Ornamented Belt
 						i(33909),	-- Vindicator's Scaled Belt
 					}),
-					i( 34854, {	-- Belt of the Forgotten Protector
+					i(34854, {	-- Belt of the Forgotten Protector
 						i(34549),	-- Gronnstalker's Belt
 						i(34546),	-- Onslaught Belt
 						i(34547),	-- Onslaught Waistguard
@@ -1074,7 +1074,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(33811),	-- Vindicator's Plate Belt
 						i(33907),	-- Vindicator's Ringmail Girdle
 					}),
-					i( 34855, {	-- Belt of the Forgotten Vanquisher
+					i(34855, {	-- Belt of the Forgotten Vanquisher
 						i(34557),	-- Belt of the Tempest
 						i(34558),	-- Slayer's Belt
 						i(34554),	-- Thunderheart Belt
@@ -1086,7 +1086,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(33912),	-- Vindicator's Silk Belt
 						i(33915),	-- Vindicator's Wyrmhide Belt
 					}),
-					i( 34856, {	-- Boots of the Forgotten Conqueror
+					i(34856, {	-- Boots of the Forgotten Conqueror
 						i(34562),	-- Boots of Absolution
 						i(34564),	-- Boots of the Malefic
 						i(34561),	-- Lightbringer Boots
@@ -1099,7 +1099,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(33905),	-- Vindicator's Ornamented Greaves
 						i(33911),	-- Vindicator's Scaled Greaves
 					}),
-					i( 34857, {	-- Boots of the Forgotten Protector
+					i(34857, {	-- Boots of the Forgotten Protector
 						i(34570),	-- Gronnstalker's Boots
 						i(34568),	-- Onslaught Boots
 						i(34569),	-- Onslaught Treads
@@ -1112,7 +1112,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(33812),	-- Vindicator's Plate Greaves
 						i(33908),	-- Vindicator's Ringmail Sabatons
 					}),
-					i( 34858, {	-- Boots of the Forgotten Vanquisher
+					i(34858, {	-- Boots of the Forgotten Vanquisher
 						i(34574),	-- Boots of the Tempest
 						i(34575),	-- Slayer's Boots
 						i(34571),	-- Thunderheart Boots
@@ -1124,7 +1124,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(33914),	-- Vindicator's Silk Footguards
 						i(33916),	-- Vindicator's Wyrmhide Boots
 					}),
-					i( 34848, {	-- Bracers of the Forgotten Conqueror
+					i(34848, {	-- Bracers of the Forgotten Conqueror
 						i(34434),	-- Bracers of Absolution
 						i(34436),	-- Bracers of the Malefic
 						i(34435),	-- Cuffs of Absolution
@@ -1137,7 +1137,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(33904),	-- Vindicator's Ornamented Bracers
 						i(33910),	-- Vindicator's Scaled Bracers
 					}),
-					i( 34851, {	-- Bracers of the Forgotten Protector
+					i(34851, {	-- Bracers of the Forgotten Protector
 						i(34443),	-- Gronnstalker's Bracers
 						i(34441),	-- Onslaught Bracers
 						i(34442),	-- Onslaught Wristguards
@@ -1150,7 +1150,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(33813),	-- Vindicator's Plate Bracers
 						i(33906),	-- Vindicator's Ringmail Bracers
 					}),
-					i( 34852, {	-- Bracers of the Forgotten Vanquisher
+					i(34852, {	-- Bracers of the Forgotten Vanquisher
 						i(34447),	-- Bracers of the Tempest
 						i(34448),	-- Slayer's Bracers
 						i(34446),	-- Thunderheart Bands
@@ -1163,18 +1163,18 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(33917),	-- Vindicator's Wyrmhide Bracers
 					}),
 					i(122115),	-- Servant's Bell (PET!)
-					i( 34198),	-- Stanchion of Primal Intellect
-					i( 34199),	-- Archon's Gavel
-					i( 34203),	-- Grip of Mannoroth
-					i( 34197),	-- Shiv of Exsanguination
-					i( 34196),	-- Golden Bow of Quel'Thalas
-					i( 34206),	-- Book of Highborne Hymns
-					i( 34204),	-- Amulet of Unfettered Magics
-					i( 35290),	-- Sin'dorei Pendant of Conquest
-					i( 35291),	-- Sin'dorei Pendant of Salvation
-					i( 35292),	-- Sin'dorei Pendant of Triumph
-					i( 34210),	-- Amice of the Convoker
-					i( 34208, {	-- Equilibrium Epaulets
+					i(34198),	-- Stanchion of Primal Intellect
+					i(34199),	-- Archon's Gavel
+					i(34203),	-- Grip of Mannoroth
+					i(34197),	-- Shiv of Exsanguination
+					i(34196),	-- Golden Bow of Quel'Thalas
+					i(34206),	-- Book of Highborne Hymns
+					i(34204),	-- Amulet of Unfettered Magics
+					i(35290),	-- Sin'dorei Pendant of Conquest
+					i(35291),	-- Sin'dorei Pendant of Salvation
+					i(35292),	-- Sin'dorei Pendant of Triumph
+					i(34210),	-- Amice of the Convoker
+					i(34208, {	-- Equilibrium Epaulets
 						n(25977, {	-- Yrma
 							["description"] = "This vendor is located on a boat on the Isle of Quel'Danas.",
 							["groups"] = {	
@@ -1182,8 +1182,8 @@ _.Instances = { tier(2, {	-- Burning Crusade
 							},
 						}),
 					}),
-					i( 34194),	-- Mantle of the Golden Forest
-					i( 34192, {	-- Pauldrons of Perseverance
+					i(34194),	-- Mantle of the Golden Forest
+					i(34192, {	-- Pauldrons of Perseverance
 						n(25977, {	-- Yrma
 							["description"] = "This vendor is located on a boat on the Isle of Quel'Danas.",
 							["groups"] = {	
@@ -1191,7 +1191,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 							},
 						}),
 					}),
-					i( 34202, {	-- Shawl of Wonderment
+					i(34202, {	-- Shawl of Wonderment
 						n(25977, {	-- Yrma
 							["description"] = "This vendor is located on a boat on the Isle of Quel'Danas.",
 							["groups"] = {
@@ -1199,7 +1199,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 							},
 						}),
 					}),
-					i( 34195, {	-- Shoulderpads of Vehemence
+					i(34195, {	-- Shoulderpads of Vehemence
 						n(25977, {	-- Yrma
 							["description"] = "This vendor is located on a boat on the Isle of Quel'Danas.",
 							["groups"] = {	
@@ -1207,7 +1207,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 							},
 						}),
 					}),
-					i( 34209, {	-- Spaulders of Reclamation
+					i(34209, {	-- Spaulders of Reclamation
 						n(25977, {	-- Yrma
 							["description"] = "This vendor is located on a boat on the Isle of Quel'Danas.",
 							["groups"] = {	
@@ -1215,7 +1215,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 							},
 						}),
 					}),
-					i( 34193, {	-- Spaulders of the Thalassian Savior
+					i(34193, {	-- Spaulders of the Thalassian Savior
 						n(25977, {	-- Yrma
 							["description"] = "This vendor is located on a boat on the Isle of Quel'Danas.",
 							["groups"] = {	
@@ -1223,9 +1223,9 @@ _.Instances = { tier(2, {	-- Burning Crusade
 							},
 						}),
 					}),
-					i( 34190),	-- Crimson Paragon's Cover
-					i( 34205),	-- Shroud of Redeemed Souls
-					i( 34189),	-- Band of Ruinous Delight
+					i(34190),	-- Crimson Paragon's Cover
+					i(34205),	-- Shroud of Redeemed Souls
+					i(34189),	-- Band of Ruinous Delight
 				},
 			}),
 			e(1595, {	-- M'uru

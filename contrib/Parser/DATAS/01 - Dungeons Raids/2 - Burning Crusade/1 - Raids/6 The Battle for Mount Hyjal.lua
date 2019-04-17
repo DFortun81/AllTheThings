@@ -330,18 +330,18 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				["creatureID"] = 17808,
 				["groups"] = {
 					i(122111),	-- Smelly Gravestone (PET!)
-					i( 30883),	-- Pillar of Ferocity
-					i( 30881),	-- Blade of Infamy
-					i( 30874),	-- The Unbreakable Will
-					i( 30882),	-- Bastion of Light
-					i( 30878),	-- Glimmering Steel Mantle
-					i( 30884),	-- Hatefury Mantle
-					i( 30887),	-- Golden Links of Restoration
-					i( 30888),	-- Anetheron's Noose
-					i( 30879),	-- Don Alejandro's Money Belt
-					i( 30885),	-- Archbishop's Slippers
-					i( 30886),	-- Enchanted Leather Sandals
-					i( 30880),	-- Quickstrider Moccasins
+					i(30883),	-- Pillar of Ferocity
+					i(30881),	-- Blade of Infamy
+					i(30874),	-- The Unbreakable Will
+					i(30882),	-- Bastion of Light
+					i(30878),	-- Glimmering Steel Mantle
+					i(30884),	-- Hatefury Mantle
+					i(30887),	-- Golden Links of Restoration
+					i(30888),	-- Anetheron's Noose
+					i(30879),	-- Don Alejandro's Money Belt
+					i(30885),	-- Archbishop's Slippers
+					i(30886),	-- Enchanted Leather Sandals
+					i(30880),	-- Quickstrider Moccasins
 				},
 			}),
 			e(1579, {	-- Kaz'rogal
@@ -405,19 +405,19 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(31035),	-- Thunderheart Handguards
 					}),
 					i(122105),	-- Grotesque Statue (PET!)
-					i( 30901),	-- Boundless Agony
-					i( 30899),	-- Don Rodrigo's Poncho
-					i( 30896),	-- Glory of the Defender
-					i( 30897),	-- Girdle of Hope
-					i( 30900),	-- Bow-Stitched Leggings
-					i( 30898),	-- Shady Dealer's Pantaloons
+					i(30901),	-- Boundless Agony
+					i(30899),	-- Don Rodrigo's Poncho
+					i(30896),	-- Glory of the Defender
+					i(30897),	-- Girdle of Hope
+					i(30900),	-- Bow-Stitched Leggings
+					i(30898),	-- Shady Dealer's Pantaloons
 				},
 			}),
 			e(1581, {	-- Archimonde
 				["creatureID"] = 17968,
 				["groups"] = {
 					ach(695),	-- The Battle for Mount Hyjal
-					i( 31097, {	-- Helm of the Forgotten Conqueror
+					i(31097, {	-- Helm of the Forgotten Conqueror
 						i(31063),	-- Cowl of Absolution
 						i(31064),	-- Hood of Absolution
 						i(31051),	-- Hood of the Malefic
@@ -432,7 +432,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(32035),	-- Merciless Gladiator's Satin Hood
 						i(32041),	-- Merciless Gladiator's Scaled Helm
 					}),
-					i( 31095, {	-- Helm of the Forgotten Protector
+					i(31095, {	-- Helm of the Forgotten Protector
 						i(31003),	-- Gronnstalker's Helmet
 						i(31962),	-- Merciless Gladiator's Chain Helm
 						i(32006),	-- Merciless Gladiator's Linked Helm
@@ -445,7 +445,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(31014),	-- Skyshatter Headguard
 						i(31012),	-- Skyshatter Helmet
 					}),
-					i( 31096, {	-- Helm of the Forgotten Vanquisher
+					i(31096, {	-- Helm of the Forgotten Vanquisher
 						i(31056),	-- Cowl of the Tempest
 						i(31968),	-- Merciless Gladiator's Dragonhide Helm
 						i(31988),	-- Merciless Gladiator's Kodohide Helm
@@ -458,18 +458,18 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(31037),	-- Thunderheart Helmet
 					}),
 					i(122112),	-- Hyjal Wisp (PET!)
-					i( 30908),	-- Apostle of Argus
-					i( 30902),	-- Cataclysm's Edge
-					i( 30910),	-- Tempest of Chaos
-					i( 30906),	-- Bristleblitz Striker
-					i( 30909),	-- Antonidas' Aegis of Rapt Concentration
-					i( 30911),	-- Scepter of Purification
-					i( 30907),	-- Mail of Fevered Pursuit
-					i( 30905),	-- Midnight Chestguard
-					i( 30913),	-- Robes of Rhonin
-					i( 30904),	-- Savior's Grasp
-					i( 30912),	-- Leggings of Eternity
-					i( 30903),	-- Legguards of Endless Rage
+					i(30908),	-- Apostle of Argus
+					i(30902),	-- Cataclysm's Edge
+					i(30910),	-- Tempest of Chaos
+					i(30906),	-- Bristleblitz Striker
+					i(30909),	-- Antonidas' Aegis of Rapt Concentration
+					i(30911),	-- Scepter of Purification
+					i(30907),	-- Mail of Fevered Pursuit
+					i(30905),	-- Midnight Chestguard
+					i(30913),	-- Robes of Rhonin
+					i(30904),	-- Savior's Grasp
+					i(30912),	-- Leggings of Eternity
+					i(30903),	-- Legguards of Endless Rage
 				},
 			})
 		},

@@ -54,10 +54,10 @@ _.Zones =
 --]]
 					o(2059, {	-- A Dwarven Corpse
 						qa(26855, {	-- A Pilot's Revenge
-							i( 57560),	-- Mangy Claw Mitts
-							i( 57566),	-- Siege Engineer's Belt
-							i( 57562),	-- Hammerfoot's Plate Leggings
-							i( 57563),	-- South Gate Blunderbuss
+							i(57560),	-- Mangy Claw Mitts
+							i(57566),	-- Siege Engineer's Belt
+							i(57562),	-- Hammerfoot's Plate Leggings
+							i(57563),	-- South Gate Blunderbuss
 							i(131612),	-- Siege Engineer's Waistband
 						}),
 					}),

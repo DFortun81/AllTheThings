@@ -260,10 +260,10 @@ _.Zones =
 								}),
 								qa(9833, {	-- Lines of Communication
 									["groups"] = {
-										i( 27753),	-- Ensorcelled Marshfang Blade
+										i(27753),	-- Ensorcelled Marshfang Blade
 										i(157547),	-- Keen Marshfang Shanker
-										i( 27754),	-- Keen Marshfang Slicer
-										i( 27756),	-- Marshfang Blade Axe
+										i(27754),	-- Keen Marshfang Slicer
+										i(27756),	-- Marshfang Blade Axe
 									},
 									["qg"] = 18009,	-- Puluu
 									["coord"] = { 40.8, 28.6, 102 },

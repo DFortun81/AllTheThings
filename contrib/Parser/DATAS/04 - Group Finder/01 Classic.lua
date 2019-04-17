@@ -22,11 +22,11 @@ _.GroupFinder =
 					i(51974),			-- Enumerated Shoulderpads*
 					i(51968),			-- Enumerated Wrap*
 					i(51989),			-- Stalwart Bands*			— 4/11/19
-					i(143582),			-- Stalwart Belt*			— 4/9/19
+					i(143582),			-- Stalwart Belt*			— 4/16/19
 					i(143583),			-- Stalwart Grips*
 					i(51984),			-- Stalwart Shoulderpads*
 					un(2, i(51997)),	-- Stalwart Spaulders
-					i(51990),			-- Stalwart Treads*			— 4/11/19
+					i(51990),			-- Stalwart Treads*			— 4/16/19
 					i(51994),			-- Tumultuous Cloak*
 					i(160598),			-- Tumultuous Cloak*		— 4/11/19
 					i(160597),			-- Tumultuous Cloak*		— 4/7/19

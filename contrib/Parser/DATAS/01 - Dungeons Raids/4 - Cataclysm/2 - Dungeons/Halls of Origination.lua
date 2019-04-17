@@ -86,11 +86,11 @@ _.Instances = { tier(4, {	-- Cataclysm
 				})),
 				cr(39788, e(126, {	-- Anraphet
 					i(157611),  	-- Crown of Patient Vigil
-					i( 57866),  	-- Mantle of Soft Shadows
-					i( 57868),  	-- Anraphet's Regalia
-					i( 57869),  	-- Omega Breastplate
-					i( 57870),  	-- Alpha Bracers
-					i( 57867),  	-- Boots of Crumbling Ruin
+					i(57866),  	-- Mantle of Soft Shadows
+					i(57868),  	-- Anraphet's Regalia
+					i(57869),  	-- Omega Breastplate
+					i(57870),  	-- Alpha Bracers
+					i(57867),  	-- Boots of Crumbling Ruin
 					nld({     	-- Legacy
 						un(2, i(57858)),	-- Mantle of Soft Shadows (7.3.5 - Removed from Game!)
 						un(2, i(57860)),	-- Anraphet's Regalia (7.3.5 - Removed from Game!)
@@ -101,11 +101,11 @@ _.Instances = { tier(4, {	-- Cataclysm
 				})),
 				cr(39587, e(127, {	-- Isiset, Construct of Magic
 					i(157609), 	-- Scepter of Stargazing
-					i( 56416),	-- Armguards of Unearthly Light
-					i( 56413),	-- Legwraps of Astral Rain
-					i( 56415),	-- Nova Band
-					i( 56412),	-- Ring of Blinding Stars
-					i( 56414),	-- Blood of Isiset
+					i(56416),	-- Armguards of Unearthly Light
+					i(56413),	-- Legwraps of Astral Rain
+					i(56415),	-- Nova Band
+					i(56412),	-- Ring of Blinding Stars
+					i(56414),	-- Blood of Isiset
 					nld({     	-- Legacy
 						un(2, i(55992)),	-- Armguards of Unearthly Light (7.3.5 - Removed from Game!)
 						un(2, i(55993)),	-- Legwraps of Astral Rain (7.3.5 - Removed from Game!)
@@ -219,19 +219,19 @@ _.Instances = { tier(4, {	-- Cataclysm
 					})),
 					cr(39788, e(126, {	-- Anraphet
 						i(157611),	-- Crown of Patient Vigil
-						i( 57866),	-- Mantle of Soft Shadows
-						i( 57868),	-- Anraphet's Regalia
-						i( 57869),	-- Omega Breastplate
-						i( 57870),	-- Alpha Bracers
-						i( 57867),	-- Boots of Crumbling Ruin
+						i(57866),	-- Mantle of Soft Shadows
+						i(57868),	-- Anraphet's Regalia
+						i(57869),	-- Omega Breastplate
+						i(57870),	-- Alpha Bracers
+						i(57867),	-- Boots of Crumbling Ruin
 					})),
 					cr(39587, e(127, {	-- Isiset, Construct of Magic
 						i(157609),	-- Scepter of Stargazing
-						i( 56416),	-- Armguards of Unearthly Light
-						i( 56413),	-- Legwraps of Astral Rain
-						i( 56415),	-- Nova Band
-						i( 56412),	-- Ring of Blinding Stars
-						i( 56414),	-- Blood of Isiset
+						i(56416),	-- Armguards of Unearthly Light
+						i(56413),	-- Legwraps of Astral Rain
+						i(56415),	-- Nova Band
+						i(56412),	-- Ring of Blinding Stars
+						i(56414),	-- Blood of Isiset
 					})),
 					cr(39731, e(128, {	-- Ammunae, Construct of Life
 						i(56421),	-- Seedling Pod

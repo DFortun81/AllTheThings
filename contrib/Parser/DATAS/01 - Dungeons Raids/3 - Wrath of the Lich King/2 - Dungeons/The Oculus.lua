@@ -83,14 +83,14 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						["criteriaID"] = 1,	-- Drakos the Interrogator
 					},
 					i(157562),	-- Rod of Aggressive Questioning
-					i( 36944),	-- Lifeblade of Belgaristrasz
-					i( 37255),	-- The Interrogator
-					i( 36943),	-- Timeless Beads of Eternos
-					i( 37258),	-- Drakewing's Raiments
-					i( 36946),	-- Runic Cage Chestpiece
-					i( 37256),	-- Scaled Armor of Drakos
-					i( 36945),	-- Verdisa's Cuffs of Dreaming
-					i( 37257),	-- Band of Torture
+					i(36944),	-- Lifeblade of Belgaristrasz
+					i(37255),	-- The Interrogator
+					i(36943),	-- Timeless Beads of Eternos
+					i(37258),	-- Drakewing's Raiments
+					i(36946),	-- Runic Cage Chestpiece
+					i(37256),	-- Scaled Armor of Drakos
+					i(36945),	-- Verdisa's Cuffs of Dreaming
+					i(37257),	-- Band of Torture
 				})),
 				cr(27447, e(623, {	-- Varos Cloudstrider
 					{	-- The Oculus: Varos Cloudstrider
@@ -111,14 +111,14 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						["achievementID"] = 487,	-- The Oculus
 						["criteriaID"] = 2,	-- Mage-Lord Urom
 					},
-					i( 36953),	-- Spaulders of Skillful Maneuvers
-					i( 37288),	-- Catalytic Bands
-					i( 36951),	-- Sidestepping Handguards
-					i( 36952),	-- Girdle of Obscuring
-					i( 37289),	-- Sash of Phantasmal Images
-					i( 36954),	-- The Conjurer's Slippers
-					i( 37195),	-- Band of Enchanted Growth
-					i( 37264),	-- Pendulum of Telluric Currents
+					i(36953),	-- Spaulders of Skillful Maneuvers
+					i(37288),	-- Catalytic Bands
+					i(36951),	-- Sidestepping Handguards
+					i(36952),	-- Girdle of Obscuring
+					i(37289),	-- Sash of Phantasmal Images
+					i(36954),	-- The Conjurer's Slippers
+					i(37195),	-- Band of Enchanted Growth
+					i(37264),	-- Pendulum of Telluric Currents
 				})),
 				cr(27656, e(625, {	-- Ley-Guardian Eregos
 					{	-- The Oculus: Ley-Guardian Eregos
@@ -190,14 +190,14 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							["criteriaID"] = 1,	-- Drakos the Interrogator
 						},
 						i(157562),	-- Rod of Aggressive Questioning
-						i( 36944),	-- Lifeblade of Belgaristrasz
-						i( 37255),	-- The Interrogator
-						i( 36943),	-- Timeless Beads of Eternos
-						i( 37258),	-- Drakewing's Raiments
-						i( 36946),	-- Runic Cage Chestpiece
-						i( 37256),	-- Scaled Armor of Drakos
-						i( 36945),	-- Verdisa's Cuffs of Dreaming
-						i( 37257),	-- Band of Torture
+						i(36944),	-- Lifeblade of Belgaristrasz
+						i(37255),	-- The Interrogator
+						i(36943),	-- Timeless Beads of Eternos
+						i(37258),	-- Drakewing's Raiments
+						i(36946),	-- Runic Cage Chestpiece
+						i(37256),	-- Scaled Armor of Drakos
+						i(36945),	-- Verdisa's Cuffs of Dreaming
+						i(37257),	-- Band of Torture
 					})),
 					cr(27447, e(623, {	-- Varos Cloudstrider
 						{	-- Heroic: The Oculus: Varos Cloudstrider
@@ -218,14 +218,14 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							["achievementID"] = 498,	-- Heroic: The Oculus
 							["criteriaID"] = 2,	-- Mage-Lord Urom
 						},
-						i( 36953),	-- Spaulders of Skillful Maneuvers
-						i( 37288),	-- Catalytic Bands
-						i( 36951),	-- Sidestepping Handguards
-						i( 36952),	-- Girdle of Obscuring
-						i( 37289),	-- Sash of Phantasmal Images
-						i( 36954),	-- The Conjurer's Slippers
-						i( 37195),	-- Band of Enchanted Growth
-						i( 37264),	-- Pendulum of Telluric Currents
+						i(36953),	-- Spaulders of Skillful Maneuvers
+						i(37288),	-- Catalytic Bands
+						i(36951),	-- Sidestepping Handguards
+						i(36952),	-- Girdle of Obscuring
+						i(37289),	-- Sash of Phantasmal Images
+						i(36954),	-- The Conjurer's Slippers
+						i(37195),	-- Band of Enchanted Growth
+						i(37264),	-- Pendulum of Telluric Currents
 					})),
 					cr(27656, e(625, {	-- Ley-Guardian Eregos
 						{	-- Amber Void

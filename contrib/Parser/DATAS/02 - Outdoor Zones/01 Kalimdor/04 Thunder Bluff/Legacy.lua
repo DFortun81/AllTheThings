@@ -27,9 +27,9 @@ _.Zones =
 								un(2, i(7130)),	-- Brutal Helm
 							})),
 							un(40, qh(1049, {	-- Compendium of the Fallen
-								un(2, i( 7747)),	-- Vile Protector
+								un(2, i(7747)),	-- Vile Protector
 								un(2, i(17508)),	-- Forcestone Buckler
-								un(2, i( 7749)),	-- Omega Orb
+								un(2, i(7749)),	-- Omega Orb
 							})),
 							un(40, qh(1136, {	-- Frostmaw
 								["g"] = {

@@ -79,14 +79,14 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						["achievementID"] = 481,	-- Ahn'kahet: The Old Kingdom
 						["criteriaID"] = 3,	-- Jedoga Shadowseeker
 					},
-					i( 43281),	-- Edge of Oblivion
-					i( 44191),	-- Ice-Rimed Chopper
-					i( 43280),	-- Faceguard of the Hammer Clan
-					i( 43282),	-- Shadowseeker's Pendant
-					i( 43278),	-- Cloak of the Darkcaster
-					i( 43283),	-- Subterranean Waterfall Shroud
-					i( 43279),	-- Battlechest of the Twilight Cult
-					i( 43277),	-- Jedoga's Greatring
+					i(43281),	-- Edge of Oblivion
+					i(44191),	-- Ice-Rimed Chopper
+					i(43280),	-- Faceguard of the Hammer Clan
+					i(43282),	-- Shadowseeker's Pendant
+					i(43278),	-- Cloak of the Darkcaster
+					i(43283),	-- Subterranean Waterfall Shroud
+					i(43279),	-- Battlechest of the Twilight Cult
+					i(43277),	-- Jedoga's Greatring
 				})),
 				cr(29311, e(584, {	-- Herald Volazj
 					{	-- Herald Volazj
@@ -195,14 +195,14 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						{	-- Volunteer Work
 							["achievementID"] = 2056,	-- Volunteer Work
 						},
-						i( 43281),	-- Edge of Oblivion
-						i( 44191),	-- Ice-Rimed Chopper
-						i( 43280),	-- Faceguard of the Hammer Clan
-						i( 43282),	-- Shadowseeker's Pendant
-						i( 43278),	-- Cloak of the Darkcaster
-						i( 43283),	-- Subterranean Waterfall Shroud
-						i( 43279),	-- Battlechest of the Twilight Cult
-						i( 43277),	-- Jedoga's Greatring
+						i(43281),	-- Edge of Oblivion
+						i(44191),	-- Ice-Rimed Chopper
+						i(43280),	-- Faceguard of the Hammer Clan
+						i(43282),	-- Shadowseeker's Pendant
+						i(43278),	-- Cloak of the Darkcaster
+						i(43283),	-- Subterranean Waterfall Shroud
+						i(43279),	-- Battlechest of the Twilight Cult
+						i(43277),	-- Jedoga's Greatring
 					})),
 					cr(29311, e(584, {	-- Herald Volazj
 						{	-- Herald Volazj

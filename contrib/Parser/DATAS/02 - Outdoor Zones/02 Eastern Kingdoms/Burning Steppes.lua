@@ -65,7 +65,7 @@ _.Zones =
 							}),
 							qa(28177, {	-- Stocking Up
 								["groups"] = {
-									i( 64501),	-- Sharp Scorpid Barb
+									i(64501),	-- Sharp Scorpid Barb
 									i(156965),	-- Enchanted Scorpid Tail 
 									i(157011),	-- Envenomed Scorpid Tail
 								},

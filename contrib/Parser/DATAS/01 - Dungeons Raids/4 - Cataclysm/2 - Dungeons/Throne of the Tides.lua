@@ -61,13 +61,13 @@ _.Instances = { tier(4, {	-- Cataclysm
 					}),
 				}),	
 				cr(40586, e(101, {	-- Lady Naz'jar
-					i( 56266),	-- Lightning Whelk Axe
-					i( 56269),	-- Aurelian Mitre
+					i(56266),	-- Lightning Whelk Axe
+					i(56269),	-- Aurelian Mitre
 					i(157587),	-- Old One Eye's Cowl
 					i(157588),	-- Ironshell Pendant
-					i( 56267),	-- Periwinkle Cloak
-					i( 56268),	-- Wrasse Handwraps
-					i( 56270),	-- Entwined Nereis
+					i(56267),	-- Periwinkle Cloak
+					i(56268),	-- Wrasse Handwraps
+					i(56270),	-- Entwined Nereis
 					nld({     	-- Legacy
 						un(2, i(55203)),	-- Lightning Whelk Axe (7.3.5 - Removed from Game!)
 						un(2, i(55198)),	-- Aurelian Mitre (7.3.5 - Removed from Game!)
@@ -91,11 +91,11 @@ _.Instances = { tier(4, {	-- Cataclysm
 					}),	
 				})),
 				cr(40788, e(103, {	-- Mindbender Ghur'sha
-					i( 56278),	-- Anomuran Helm
+					i(56278),	-- Anomuran Helm
 					i(157586),	-- Stonespeaker's Spare Cinch
-					i( 56277),	-- Decapod Slippers
-					i( 56276),	-- Anthia's Ring
-					i( 56280),	-- Porcelain Crab
+					i(56277),	-- Decapod Slippers
+					i(56276),	-- Anthia's Ring
+					i(56280),	-- Porcelain Crab
 					nld({     	-- Legacy
 						un(2, i(55229)),	-- Anomuran Helm (7.3.5 - Removed from Game!)
 						un(2, i(55235)),	-- Decapod Slippers (7.3.5 - Removed from Game!)
@@ -107,17 +107,17 @@ _.Instances = { tier(4, {	-- Cataclysm
 					{	-- Throne of the Tides
 						["achievementID"] = 4839,	-- Throne of the Tides
 					},
-					i( 56284),	-- Whitefin Axe
-					i( 56289),	-- Bioluminescent Lamp
-					i( 56288),	-- Pipefish Cord
-					i( 56291),	-- Abalone Plate Armor
-					i( 56281),	-- Wentletrap Vest
-					i( 56286),	-- Mnemiopsis Gloves
+					i(56284),	-- Whitefin Axe
+					i(56289),	-- Bioluminescent Lamp
+					i(56288),	-- Pipefish Cord
+					i(56291),	-- Abalone Plate Armor
+					i(56281),	-- Wentletrap Vest
+					i(56286),	-- Mnemiopsis Gloves
 					i(157589),	-- Salty Shell-Studded Girdle
-					i( 56283),	-- Triton Legplates
-					i( 56282),	-- Nautilus Ring
-					i( 56285),	-- Might of the Ocean
-					i( 56290),	-- Sea Star
+					i(56283),	-- Triton Legplates
+					i(56282),	-- Nautilus Ring
+					i(56285),	-- Might of the Ocean
+					i(56290),	-- Sea Star
 					nld({     	-- Legacy
 						un(2, i(55252)),	-- Whitefin Axe (7.3.5 - Removed from Game!)
 						un(2, i(55259)),	-- Bioluminescent Lamp (7.3.5 - Removed from Game!)
@@ -140,13 +140,13 @@ _.Instances = { tier(4, {	-- Cataclysm
 						{	-- Old Faithful
 							["achievementID"] = 5285,	-- Old Faithful
 						},
-						i( 56266),	-- Lightning Whelk Axe
-						i( 56269),	-- Aurelian Mitre
+						i(56266),	-- Lightning Whelk Axe
+						i(56269),	-- Aurelian Mitre
 						i(157587),	-- Old One Eye's Cowl
 						i(157588),	-- Ironshell Pendant
-						i( 56267),	-- Periwinkle Cloak
-						i( 56268),	-- Wrasse Handwraps
-						i( 56270),	-- Entwined Nereis
+						i(56267),	-- Periwinkle Cloak
+						i(56268),	-- Wrasse Handwraps
+						i(56270),	-- Entwined Nereis
 					})),
 					cr(40765, e(102, {	-- Commander Ulthok
 						i(56271),	-- Cerith Spire Staff
@@ -156,11 +156,11 @@ _.Instances = { tier(4, {	-- Cataclysm
 						i(56274),	-- Chromis Chestpiece
 					})),
 					cr(40788, e(103, {	-- Mindbender Ghur'sha
-						i( 56278),	-- Anomuran Helm
+						i(56278),	-- Anomuran Helm
 						i(157586),	-- Stonespeaker's Spare Cinch
-						i( 56277),	-- Decapod Slippers
-						i( 56276),	-- Anthia's Ring
-						i( 56280),	-- Porcelain Crab
+						i(56277),	-- Decapod Slippers
+						i(56276),	-- Anthia's Ring
+						i(56280),	-- Porcelain Crab
 					})),
 					cr(44566, e(104, {	-- Ozumat
 						{	-- Heroic: Throne of the Tides
@@ -169,17 +169,17 @@ _.Instances = { tier(4, {	-- Cataclysm
 						{	-- Prince of Tides
 							["achievementID"] = 5286,	-- Prince of Tides
 						},
-						i( 56284),	-- Whitefin Axe
-						i( 56289),	-- Bioluminescent Lamp
-						i( 56288),	-- Pipefish Cord
-						i( 56291),	-- Abalone Plate Armor
-						i( 56281),	-- Wentletrap Vest
-						i( 56286),	-- Mnemiopsis Gloves
+						i(56284),	-- Whitefin Axe
+						i(56289),	-- Bioluminescent Lamp
+						i(56288),	-- Pipefish Cord
+						i(56291),	-- Abalone Plate Armor
+						i(56281),	-- Wentletrap Vest
+						i(56286),	-- Mnemiopsis Gloves
 						i(157589),	-- Salty Shell-Studded Girdle
-						i( 56283),	-- Triton Legplates
-						i( 56282),	-- Nautilus Ring
-						i( 56285),	-- Might of the Ocean
-						i( 56290),	-- Sea Star
+						i(56283),	-- Triton Legplates
+						i(56282),	-- Nautilus Ring
+						i(56285),	-- Might of the Ocean
+						i(56290),	-- Sea Star
 					})),
 				},
 			}),

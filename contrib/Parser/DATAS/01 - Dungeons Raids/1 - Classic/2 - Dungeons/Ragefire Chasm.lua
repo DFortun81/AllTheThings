@@ -54,31 +54,31 @@ _.Instances = { tier(1, {	-- Classic
 				}),
 			}),
 			cr(61408, e(694, {	-- Adarogg
-				i( 82880), 	-- Fang of Adarogg
-				i( 82879), 	-- Collarspike Bracers
+				i(82880), 	-- Fang of Adarogg
+				i(82879), 	-- Collarspike Bracers
 				i(151422),	-- Bonecoal Waistguard
-				i( 82772), 	-- Snarlmouth Leggings
+				i(82772), 	-- Snarlmouth Leggings
 				i(151421),	-- Scorched Blazehound Boots
 			})),
 			cr(61412, e(695, {	-- Dark Shaman Koranthal
-				i( 82882), 	-- Dark Ritual Cape
+				i(82882), 	-- Dark Ritual Cape
 				i(132551), 	-- Dark Shaman's Jerkin
-				i( 82877), 	-- Grasp of the Broken Totem
-				i( 82881), 	-- Cuffs of Black Elements
+				i(82877), 	-- Grasp of the Broken Totem
+				i(82881), 	-- Cuffs of Black Elements
 			})),
 			cr(61463, e(696, {	-- Slagmaw
-				i( 82878),	-- Fireworm Robes
-				i( 82885),	-- Flameseared Carapace
+				i(82878),	-- Fireworm Robes
+				i(82885),	-- Flameseared Carapace
 				i(132552),	-- Chitonous Bindings
-				i( 82884),	-- Chitonous Bracers
+				i(82884),	-- Chitonous Bracers
 			})),
 			cr(61528, e(697, {	-- Lava Guard Gordoth
 				ach(629),	-- Ragefire Chasm
-				i( 82888),	-- Heartboiler Staff
-				i( 82883),	-- Bloodcursed Felblade
+				i(82888),	-- Heartboiler Staff
+				i(82883),	-- Bloodcursed Felblade
 				i(151425),	-- Gordoth's Crushers
 				i(151424),	-- Belt of Boundless Fury
-				i( 82886),	-- Gorewalker Treads
+				i(82886),	-- Gorewalker Treads
 			})),
 			n(-40, {	-- Legacy
 				n(-17, {	-- Quests (Legacy)

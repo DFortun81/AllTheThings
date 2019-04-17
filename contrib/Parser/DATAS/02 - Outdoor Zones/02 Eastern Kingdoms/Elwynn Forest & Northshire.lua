@@ -195,9 +195,9 @@ _.Zones =
 					})),
 					o(156561, {	-- Wanted Poster (add'l object QG 68)
 						qa(  176, {	-- Wanted: "Hogger"
-							i(  6085),	-- Footman Tunic
-							i(  6084),	-- Stormwind Guard Leggings
-							i( 60219),	-- Balanced Spell Staff
+							i( 6085),	-- Footman Tunic
+							i( 6084),	-- Stormwind Guard Leggings
+							i(60219),	-- Balanced Spell Staff
 							i(131199),	-- Lion Guard Chainmail
 							un(2, i(6215)),	-- Balanced Fighting Stick
 						}),

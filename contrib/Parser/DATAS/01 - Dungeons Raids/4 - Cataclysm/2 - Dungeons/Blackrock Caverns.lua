@@ -118,12 +118,12 @@ _.Instances = { tier(4, {	-- Cataclysm
 			}),
 			d(  1, {	-- Normal
 				cr(39665, e(105, {	-- Rom'ogg Boncrusher
-					i( 56312),	-- Torturer's Mercy
-					i( 56314),	-- Shield of the Iron Maiden
-					i( 56311),	-- Inquisition Robes
-					i( 56313),	-- Manacles of Pain
+					i(56312),	-- Torturer's Mercy
+					i(56314),	-- Shield of the Iron Maiden
+					i(56311),	-- Inquisition Robes
+					i(56313),	-- Manacles of Pain
 					i(157608),	-- Groundrumble Boots
-					i( 56310),	-- Skullcracker Ring
+					i(56310),	-- Skullcracker Ring
 					nld({	-- Legacy
 						un(2, i(55777)),	-- Torturer's Mercy (7.3.5 - Removed from Game!)
 						un(2, i(55778)),	-- Shield of the Iron Maiden (7.3.5 - Removed from Game!)
@@ -147,12 +147,12 @@ _.Instances = { tier(4, {	-- Cataclysm
 					}),								
 				})),
 				cr(39698, e(107, {	-- Karsh Steelbender
-					i( 56302), 	-- Steelbender's Masterpiece
-					i( 56300),	-- Quicksilver Amulet
-					i( 56304), 	-- Burned Gatherings
+					i(56302), 	-- Steelbender's Masterpiece
+					i(56300),	-- Quicksilver Amulet
+					i(56304), 	-- Burned Gatherings
 					i(157610), 	-- Heat-Shielded Tunic
-					i( 56301), 	-- Bracers of Cooled Anger
-					i( 56303), 	-- Heat Wave Leggings
+					i(56301), 	-- Bracers of Cooled Anger
+					i(56303), 	-- Heat Wave Leggings
 					nld({	-- Legacy
 						un(2, i(55272)), 	-- Steelbender's Masterpiece (7.3.5 - Removed from Game!)
 						un(2, i(55271)),	-- Quicksilver Amulet (7.3.5 - Removed from Game!)
@@ -162,12 +162,12 @@ _.Instances = { tier(4, {	-- Cataclysm
 					}),								
 				})),
 				cr(39700, e(108, {	-- Beauty
-					i( 56306), 	-- Beauty's Favorite Bone
-					i( 56308), 	-- Beauty's Plate
+					i(56306), 	-- Beauty's Favorite Bone
+					i(56308), 	-- Beauty's Plate
 					i(157607), 	-- Gently Gnawed Hauberk
-					i( 56305), 	-- Beauty's Silken Ribbon
-					i( 56309), 	-- Beauty's Chew Toy
-					i( 56307),	-- Kibble
+					i(56305), 	-- Beauty's Silken Ribbon
+					i(56309), 	-- Beauty's Chew Toy
+					i(56307),	-- Kibble
 					nld({	-- Legacy
 						un(2, i(55277)), 	-- Beauty's Favorite Bone (7.3.5 - Removed from Game!)
 						un(2, i(55274)), 	-- Beauty's Plate (7.3.5 - Removed from Game!)
@@ -210,12 +210,12 @@ _.Instances = { tier(4, {	-- Cataclysm
 						{	-- Crushing Bones and Cracking Skulls
 							["achievementID"] = 5281,	-- Crushing Bones and Cracking Skulls
 						},
-						i( 56312),	-- Torturer's Mercy
-						i( 56314),	-- Shield of the Iron Maiden
-						i( 56311),	-- Inquisition Robes
-						i( 56313),	-- Manacles of Pain
+						i(56312),	-- Torturer's Mercy
+						i(56314),	-- Shield of the Iron Maiden
+						i(56311),	-- Inquisition Robes
+						i(56313),	-- Manacles of Pain
 						i(157608),	-- Groundrumble Boots
-						i( 56310),	-- Skullcracker Ring
+						i(56310),	-- Skullcracker Ring
 					})),
 					cr(39679, e(106, {	-- Corla, Herald of Twilight
 						{	-- Arrested Development
@@ -231,20 +231,20 @@ _.Instances = { tier(4, {	-- Cataclysm
 						{	-- Too Hot to Handle
 							["achievementID"] = 5283,	-- Too Hot to Handle
 						},
-						i( 56302), 	-- Steelbender's Masterpiece
-						i( 56300),	-- Quicksilver Amulet
-						i( 56304), 	-- Burned Gatherings
+						i(56302), 	-- Steelbender's Masterpiece
+						i(56300),	-- Quicksilver Amulet
+						i(56304), 	-- Burned Gatherings
 						i(157610), 	-- Heat-Shielded Tunic
-						i( 56301), 	-- Bracers of Cooled Anger
-						i( 56303), 	-- Heat Wave Leggings
+						i(56301), 	-- Bracers of Cooled Anger
+						i(56303), 	-- Heat Wave Leggings
 					})),
 					cr(39700, e(108, {	-- Beauty
-						i( 56306), 	-- Beauty's Favorite Bone
-						i( 56308), 	-- Beauty's Plate
+						i(56306), 	-- Beauty's Favorite Bone
+						i(56308), 	-- Beauty's Plate
 						i(157607), 	-- Gently Gnawed Hauberk
-						i( 56305), 	-- Beauty's Silken Ribbon
-						i( 56309), 	-- Beauty's Chew Toy
-						i( 56307),	-- Kibble
+						i(56305), 	-- Beauty's Silken Ribbon
+						i(56309), 	-- Beauty's Chew Toy
+						i(56307),	-- Kibble
 					})),
 					cr(39705, e(109, {	-- Ascendent Lord Obsidius
 						{	-- Ascendant Descending

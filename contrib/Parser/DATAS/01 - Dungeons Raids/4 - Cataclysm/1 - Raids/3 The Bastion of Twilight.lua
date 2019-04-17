@@ -63,18 +63,18 @@ _.Instances = { tier(4, {	-- Cataclysm
 						["groups"] = {
 							ach(4852),	-- Double Dragon
 							i(152969),	-- Odd Twilight Egg (PET!)
-							i( 63536),	-- Blade of the Witching Hour
-							i( 63533),	-- Fang of Twilight
-							i( 63532),	-- Dragonheart Piercer
-							i( 63531),	-- Daybreaker Helm
-							i( 63534),	-- Helm of Eldritch Authority
-							i( 59517),	-- Necklace of Strife
-							i( 59512),	-- Valiona's Medallion
-							i( 59516),	-- Drape of the Twins
-							i( 63535),	-- Waistguard of Hatred
-							i( 59518),	-- Ring of Rivalry
-							i( 59519),	-- Theralion's Mirror
-							i( 59515),	-- Vial of Stolen Memories
+							i(63536),	-- Blade of the Witching Hour
+							i(63533),	-- Fang of Twilight
+							i(63532),	-- Dragonheart Piercer
+							i(63531),	-- Daybreaker Helm
+							i(63534),	-- Helm of Eldritch Authority
+							i(59517),	-- Necklace of Strife
+							i(59512),	-- Valiona's Medallion
+							i(59516),	-- Drape of the Twins
+							i(63535),	-- Waistguard of Hatred
+							i(59518),	-- Ring of Rivalry
+							i(59519),	-- Theralion's Mirror
+							i(59515),	-- Vial of Stolen Memories
 						},
 					}),
 					e(158, {	-- Ascendant Council
@@ -82,25 +82,25 @@ _.Instances = { tier(4, {	-- Cataclysm
 						["groups"] = {
 							ach(5311),	-- Elementary
 							i(152970),	-- Lesser Circle of Binding (PET!)
-							i( 59513),	-- Scepter of Ice
-							i( 59504),	-- Arion's Crown
-							i( 59509),	-- Glaciated Helm
-							i( 59510),	-- Feludius' Mantle
-							i( 59507),	-- Glittering Epidermis
-							i( 59505),	-- Gravitational Pull
-							i( 59511),	-- Hydrolance Gloves
-							i( 59502),	-- Dispersing Belt
-							i( 59503),	-- Terrastra's Legguards
-							i( 59508),	-- Treads of Liquid Ice
-							i( 59506),	-- Crushing Weight
-							i( 59514),	-- Heart of Ignacious
+							i(59513),	-- Scepter of Ice
+							i(59504),	-- Arion's Crown
+							i(59509),	-- Glaciated Helm
+							i(59510),	-- Feludius' Mantle
+							i(59507),	-- Glittering Epidermis
+							i(59505),	-- Gravitational Pull
+							i(59511),	-- Hydrolance Gloves
+							i(59502),	-- Dispersing Belt
+							i(59503),	-- Terrastra's Legguards
+							i(59508),	-- Treads of Liquid Ice
+							i(59506),	-- Crushing Weight
+							i(59514),	-- Heart of Ignacious
 						},
 					}),
 					e(167, {	-- Cho'gall
 						["creatureID"] = 43324,
 						["groups"] = {
 							ach(5312),	-- The Abyss Will Gaze Back Into You
-							i( 64315, {	-- Mantle of the Forlorn Conqueror	
+							i(64315, {	-- Mantle of the Forlorn Conqueror	
 								i(60252),	-- Shadowflame Mantle
 								i(60358),	-- Reinforced Sapphirium Shoulderguards
 								i(60348),	-- Reinforced Sapphirium Pauldrons
@@ -108,7 +108,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 								i(60253),	-- Mercurial Shoulderwraps
 								i(60262),	-- Mercurial Mantle
 							}),		
-							i( 64316, {	-- Mantle of the Forlorn Protector	
+							i(64316, {	-- Mantle of the Forlorn Protector	
 								i(60322),	-- Spaulders of the Raging Elements
 								i(60317),	-- Shoulderwraps of the Raging Elements
 								i(60311),	-- Mantle of the Raging Elements
@@ -116,7 +116,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 								i(60331),	-- Earthen Shoulderguards
 								i(60327),	-- Earthen Pauldrons
 							}),		
-							i( 64314, {	-- Mantle of the Forlorn Vanquisher	
+							i(64314, {	-- Mantle of the Forlorn Vanquisher	
 								i(60302),	-- Wind Dancer's Spaulders
 								i(60289),	-- Stormrider's Spaulders
 								i(60284),	-- Stormrider's Shoulderwraps
@@ -126,19 +126,19 @@ _.Instances = { tier(4, {	-- Cataclysm
 								i(60246),	-- Firelord's Mantle
 							}),
 							i(152972),	-- Twilight Summoning Portal (PET!)
-							i( 59330),	-- Shalug'doom, the Axe of Unmaking
-							i( 59494),	-- "Uhn'agh Fash, the Darkest Betrayal"
-							i( 63680),	-- Twilight's Hammer
-							i( 59487),	-- Helm of Maddening Whispers
-							i( 59490),	-- Membrane of C'Thun
-							i( 59486),	-- Battleplate of the Apocalypse
-							i( 59497),	-- Shackles of the End of Days
-							i( 59498),	-- Hands of the Twilight Council
-							i( 59485),	-- Coil of Ten-Thousand Screams
-							i( 59499),	-- Kilt of the Forgotten Battle
-							i( 59495),	-- Treads of Hideous Transformation
-							i( 59501),	-- Signet of the Fifth Circle
-							i( 59500),	-- Fall of Mortality
+							i(59330),	-- Shalug'doom, the Axe of Unmaking
+							i(59494),	-- "Uhn'agh Fash, the Darkest Betrayal"
+							i(63680),	-- Twilight's Hammer
+							i(59487),	-- Helm of Maddening Whispers
+							i(59490),	-- Membrane of C'Thun
+							i(59486),	-- Battleplate of the Apocalypse
+							i(59497),	-- Shackles of the End of Days
+							i(59498),	-- Hands of the Twilight Council
+							i(59485),	-- Coil of Ten-Thousand Screams
+							i(59499),	-- Kilt of the Forgotten Battle
+							i(59495),	-- Treads of Hideous Transformation
+							i(59501),	-- Signet of the Fifth Circle
+							i(59500),	-- Fall of Mortality
 						},
 					}),
 				},
@@ -196,18 +196,18 @@ _.Instances = { tier(4, {	-- Cataclysm
 							ach(5117),	-- Heroic: Valiona and Theralion
 							ach(4852),	-- Double Dragon
 							i(152969),	-- Odd Twilight Egg (PET!)
-							i( 65091),	-- Blade of the Witching Hour
-							i( 65094),	-- Fang of Twilight
-							i( 65095),	-- Dragonheart Piercer
-							i( 65096),	-- Daybreaker Helm
-							i( 65093),	-- Helm of Eldritch Authority
-							i( 65107),	-- Necklace of Strife
-							i( 65112),	-- Valiona's Medallion
-							i( 65108),	-- Drape of the Twins
-							i( 65092),	-- Waistguard of Hatred
-							i( 65106),	-- Ring of Rivalry
-							i( 65105),	-- Theralion's Mirror
-							i( 65109),	-- Vial of Stolen Memories
+							i(65091),	-- Blade of the Witching Hour
+							i(65094),	-- Fang of Twilight
+							i(65095),	-- Dragonheart Piercer
+							i(65096),	-- Daybreaker Helm
+							i(65093),	-- Helm of Eldritch Authority
+							i(65107),	-- Necklace of Strife
+							i(65112),	-- Valiona's Medallion
+							i(65108),	-- Drape of the Twins
+							i(65092),	-- Waistguard of Hatred
+							i(65106),	-- Ring of Rivalry
+							i(65105),	-- Theralion's Mirror
+							i(65109),	-- Vial of Stolen Memories
 						},
 					}),
 					e(158, {	-- Ascendant Council
@@ -216,18 +216,18 @@ _.Instances = { tier(4, {	-- Cataclysm
 							ach(5119),	-- Heroic: Ascendant Council
 							ach(5311),	-- Elementary
 							i(152970),	-- Lesser Circle of Binding (PET!)
-							i( 65111),	-- Scepter of Ice
-							i( 65120),	-- Arion's Crown
-							i( 65115),	-- Glaciated Helm
-							i( 65114),	-- Feludius' Mantle
-							i( 65117),	-- Glittering Epidermis
-							i( 65119),	-- Gravitational Pull
-							i( 65113),	-- Hydrolance Gloves
-							i( 65122),	-- Dispersing Belt
-							i( 65121),	-- Terrastra's Legguards
-							i( 65116),	-- Treads of Liquid Ice
-							i( 65118),	-- Crushing Weight
-							i( 65110),	-- Heart of Ignacious
+							i(65111),	-- Scepter of Ice
+							i(65120),	-- Arion's Crown
+							i(65115),	-- Glaciated Helm
+							i(65114),	-- Feludius' Mantle
+							i(65117),	-- Glittering Epidermis
+							i(65119),	-- Gravitational Pull
+							i(65113),	-- Hydrolance Gloves
+							i(65122),	-- Dispersing Belt
+							i(65121),	-- Terrastra's Legguards
+							i(65116),	-- Treads of Liquid Ice
+							i(65118),	-- Crushing Weight
+							i(65110),	-- Heart of Ignacious
 						},
 					}),
 					e(167, {	-- Cho'gall
@@ -235,7 +235,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 						["groups"] = {
 							ach(5120),	-- Heroic: Cho'gall
 							ach(5312),	-- The Abyss Will Gaze Back Into You
-							i( 65088, {	-- Shoulders of the Forlorn Conqueror
+							i(65088, {	-- Shoulders of the Forlorn Conqueror
 								i(65263),	-- Shadowflame Mantle
 								i(65228),	-- Reinforced Sapphirium Shoulderguards
 								i(65218),	-- Reinforced Sapphirium Pauldrons
@@ -243,7 +243,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 								i(65238),	-- Mercurial Shoulderwraps
 								i(65233)	-- Mercurial Mantle
 							}),
-							i( 65087, {	-- Shoulders of the Forlorn Protector
+							i(65087, {	-- Shoulders of the Forlorn Protector
 								i(65253),	-- Spaulders of the Raging Elements
 								i(65258),	-- Shoulderwraps of the Raging Elements
 								i(65248),	-- Mantle of the Raging Elements
@@ -251,7 +251,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 								i(65273),	-- Earthen Shoulderguards
 								i(65268)	-- Earthen Pauldrons
 							}),
-							i( 65089, {	-- Shoulders of the Forlorn Vanquisher
+							i(65089, {	-- Shoulders of the Forlorn Vanquisher
 								i(65243),	-- Wind Dancer's Spaulders
 								i(65193),	-- Stormrider's Spaulders
 								i(65203),	-- Stormrider's Shoulderwraps
@@ -261,19 +261,19 @@ _.Instances = { tier(4, {	-- Cataclysm
 								i(65213)	-- Firelord's Mantle
 							}),
 							i(152972),	-- Twilight Summoning Portal (PET!)
-							i( 65145),	-- Shalug'doom, the Axe of Unmaking
-							i( 65090),	-- Twilight's Hammer
-							i( 68600),	-- Uhn'agh Fash, the Darkest Betrayal
-							i( 65130),	-- Helm of Maddening Whispers
-							i( 65129),	-- Membrane of C'Thun
-							i( 65131),	-- Battleplate of the Apocalypse
-							i( 65127),	-- Shackles of the End of Days
-							i( 65126),	-- Hands of the Twilight Council
-							i( 65132),	-- Coil of Ten-Thousand Screams
-							i( 65125),	-- Kilt of the Forgotten Battle
-							i( 65128),	-- Treads of Hideous Transformation
-							i( 65123),	-- Signet of the Fifth Circle
-							i( 65124),	-- Fall of Mortality
+							i(65145),	-- Shalug'doom, the Axe of Unmaking
+							i(65090),	-- Twilight's Hammer
+							i(68600),	-- Uhn'agh Fash, the Darkest Betrayal
+							i(65130),	-- Helm of Maddening Whispers
+							i(65129),	-- Membrane of C'Thun
+							i(65131),	-- Battleplate of the Apocalypse
+							i(65127),	-- Shackles of the End of Days
+							i(65126),	-- Hands of the Twilight Council
+							i(65132),	-- Coil of Ten-Thousand Screams
+							i(65125),	-- Kilt of the Forgotten Battle
+							i(65128),	-- Treads of Hideous Transformation
+							i(65123),	-- Signet of the Fifth Circle
+							i(65124),	-- Fall of Mortality
 						},
 					}),
 					e(168, {	-- Sinestra

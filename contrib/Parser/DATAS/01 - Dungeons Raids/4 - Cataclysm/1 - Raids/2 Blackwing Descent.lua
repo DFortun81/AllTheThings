@@ -54,18 +54,18 @@ _.Instances = { tier(4, {	-- Cataclysm
 						["groups"] = {
 							ach(5307),	-- Achieve-a-tron
 							i(152966),	-- Rought-Hewn Remote (PET!)
-							i( 59122),	-- Organic Lifeform Inverter
-							i( 59219),	-- Power Generator Hood
-							i( 59218),	-- Passive Resistor Spaulders
-							i( 59120),	-- Poison Protocol Pauldrons
-							i( 63540),	-- Circuit Design Breastplate
-							i( 59119),	-- Voltage Source Chestguard
-							i( 59118),	-- Electron Inductor Coils
-							i( 59117),	-- Jumbotron Power Belt
-							i( 59217),	-- X-Tron Duct Tape
-							i( 59216),	-- Life Force Chargers
-							i( 59121),	-- Lightning Conductor Band
-							i( 59220),	-- Security Measure Alpha
+							i(59122),	-- Organic Lifeform Inverter
+							i(59219),	-- Power Generator Hood
+							i(59218),	-- Passive Resistor Spaulders
+							i(59120),	-- Poison Protocol Pauldrons
+							i(63540),	-- Circuit Design Breastplate
+							i(59119),	-- Voltage Source Chestguard
+							i(59118),	-- Electron Inductor Coils
+							i(59117),	-- Jumbotron Power Belt
+							i(59217),	-- X-Tron Duct Tape
+							i(59216),	-- Life Force Chargers
+							i(59121),	-- Lightning Conductor Band
+							i(59220),	-- Security Measure Alpha
 						},
 					}),
 					e(173, {	-- Maloriak
@@ -73,18 +73,18 @@ _.Instances = { tier(4, {	-- Cataclysm
 						["groups"] = {
 							ach(5310),	-- Aberrant Behavior
 							i(152967),	-- Experiment-In-A-Jar (PET!)
-							i( 59347),	-- Mace of Acrid Death
-							i( 59344),	-- Dragon Bone Warhelm
-							i( 59348),	-- Cloak of Biting Chill
-							i( 59346),	-- Tunic of Failed Experiments
-							i( 59352),	-- Flash Freeze Gauntlets
-							i( 59342),	-- Belt of Absolute Zero
-							i( 59349),	-- Belt of Arcane Storms
-							i( 59343),	-- Aberration's Leggings
-							i( 59353),	-- Leggings of Consuming Flames
-							i( 59351),	-- Legwraps of the Greatest Son
-							i( 59350),	-- Treads of Flawless Creation
-							i( 59354),	-- Jar of Ancient Remedies
+							i(59347),	-- Mace of Acrid Death
+							i(59344),	-- Dragon Bone Warhelm
+							i(59348),	-- Cloak of Biting Chill
+							i(59346),	-- Tunic of Failed Experiments
+							i(59352),	-- Flash Freeze Gauntlets
+							i(59342),	-- Belt of Absolute Zero
+							i(59349),	-- Belt of Arcane Storms
+							i(59343),	-- Aberration's Leggings
+							i(59353),	-- Leggings of Consuming Flames
+							i(59351),	-- Legwraps of the Greatest Son
+							i(59350),	-- Treads of Flawless Creation
+							i(59354),	-- Jar of Ancient Remedies
 						},
 					}),
 					e(171, {	-- Atramedes
@@ -127,7 +127,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 						["creatureID"] = 41376,
 						["groups"] = {
 							ach(4849),	-- Keeping it in the Family
-							i( 63683, {	-- Helm of the Forlorn Conqueror	
+							i(63683, {	-- Helm of the Forlorn Conqueror	
 								i(60249),	-- Shadowflame Hood
 								i(60346),	-- Reinforced Sapphirium Helmet
 								i(60359),	-- Reinforced Sapphirium Headguard
@@ -135,7 +135,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 								i(60256),	-- Mercurial Hood
 								i(60258),	-- Mercurial Cowl
 							}),		
-							i( 63684, {	-- Helm of the Forlorn Protector	
+							i(63684, {	-- Helm of the Forlorn Protector	
 								i(60303),	-- Lightning-Charged Headguard
 								i(60320),	-- Helmet of the Raging Elements
 								i(60315),	-- Headpiece of the Raging Elements
@@ -143,7 +143,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 								i(60325),	-- Earthen Helemt
 								i(60328),	-- Earthen Faceguard
 							}),	
-							i( 63682, {	-- Helm of the Forlorn Vanquisher	
+							i(63682, {	-- Helm of the Forlorn Vanquisher	
 								i(60299),	-- Wind Dancer's Helmet
 								i(60277),	-- Stormrider's Helm
 								i(60286),	-- Stormrider's Headpiece
@@ -154,19 +154,19 @@ _.Instances = { tier(4, {	-- Cataclysm
 							}),
 							i(138802),	-- Illusion: Power Torrent
 							i(152968),	-- Shadowy Pile of Bones (PET!)
-							i( 63679),	-- Reclaimed Ashkandi, Greatsword of the Brotherhood
-							i( 59459),	-- Andoros, Fist of the Dragon King
-							i( 59443),	-- Crul'korak, the Lightning's Arc
-							i( 59444),	-- Akmin-Kurai, Dominion's Shield
-							i( 59442),	-- Rage of Ages
-							i( 59337),	-- Mantle of Nefarius
-							i( 59356),	-- Pauldrons of the Apocalypse
-							i( 59222),	-- Spaulders of the Scarred Lady
-							i( 59457),	-- Shadow of Dread
-							i( 59454),	-- Shadowblaze Robes
-							i( 59450),	-- Belt of the Blackhand
-							i( 59321),	-- Belt of the Nightmare
-							i( 59441),	-- Prestor's Talisman of Machination
+							i(63679),	-- Reclaimed Ashkandi, Greatsword of the Brotherhood
+							i(59459),	-- Andoros, Fist of the Dragon King
+							i(59443),	-- Crul'korak, the Lightning's Arc
+							i(59444),	-- Akmin-Kurai, Dominion's Shield
+							i(59442),	-- Rage of Ages
+							i(59337),	-- Mantle of Nefarius
+							i(59356),	-- Pauldrons of the Apocalypse
+							i(59222),	-- Spaulders of the Scarred Lady
+							i(59457),	-- Shadow of Dread
+							i(59454),	-- Shadowblaze Robes
+							i(59450),	-- Belt of the Blackhand
+							i(59321),	-- Belt of the Nightmare
+							i(59441),	-- Prestor's Talisman of Machination
 							i(122195),	-- Music Roll: Legends of Azeroth		
 						},
 					}),
@@ -225,18 +225,18 @@ _.Instances = { tier(4, {	-- Cataclysm
 							ach(5107),	-- Heroic: Omnotron Defense System
 							ach(5307),	-- Achieve-a-tron
 							i(152966),	-- Rought-Hewn Remote (PET!)
-							i( 65081),	-- Organic Lifeform Inverter
-							i( 65077),	-- Power Generator Hood
-							i( 65078),	-- Passive Resistor Spaulders
-							i( 65083),	-- Poison Protocol Pauldrons
-							i( 65004),	-- Circuit Design Breastplate
-							i( 65084),	-- Voltage Source Chestguard
-							i( 65085),	-- Electron Inductor Coils
-							i( 65086),	-- Jumbotron Power Belt
-							i( 65079),	-- X-Tron Duct Tape
-							i( 65080),	-- Life Force Chargers
-							i( 65082),	-- Lightning Conductor Band
-							i( 65076),	-- Security Measure Alpha
+							i(65081),	-- Organic Lifeform Inverter
+							i(65077),	-- Power Generator Hood
+							i(65078),	-- Passive Resistor Spaulders
+							i(65083),	-- Poison Protocol Pauldrons
+							i(65004),	-- Circuit Design Breastplate
+							i(65084),	-- Voltage Source Chestguard
+							i(65085),	-- Electron Inductor Coils
+							i(65086),	-- Jumbotron Power Belt
+							i(65079),	-- X-Tron Duct Tape
+							i(65080),	-- Life Force Chargers
+							i(65082),	-- Lightning Conductor Band
+							i(65076),	-- Security Measure Alpha
 						},
 					}),
 					e(173, {	-- Maloriak
@@ -245,7 +245,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 							ach(5108),	-- Heroic: Maloriak
 							ach(5310),	-- Aberrant Behavior
 							i(152967),	-- Experiment-In-A-Jar (PET!)
-							i( 67428, {	-- Leggings of the Forlorn Conqueror
+							i(67428, {	-- Leggings of the Forlorn Conqueror
 								i(65261),	-- Shadowflame Leggings
 								i(65217),	-- Reinforced Sapphirium Legplates
 								i(65227),	-- Reinforced Sapphirium Legguards
@@ -253,7 +253,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 								i(65231),	-- Mercurial Legwraps
 								i(65236)	-- Mercurial Leggings
 							}),
-							i( 67427, {	-- Leggings of the Forlorn Protector
+							i(67427, {	-- Leggings of the Forlorn Protector
 								i(65207),	-- Lightning-Charged Legguards
 								i(65247),	-- Legwraps of the Raging Elements
 								i(65252),	-- Legguards of the Raging Elements
@@ -261,7 +261,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 								i(65267),	-- Earthen Legplates
 								i(65272)	-- Earthen Legguards
 							}),
-							i( 67426, {	-- Leggings of the Forlorn Vanquisher
+							i(67426, {	-- Leggings of the Forlorn Vanquisher
 								i(65242),	-- Wind Dancer's Legguards
 								i(65196),	-- Stormrider's Legwraps
 								i(65191),	-- Stormrider's Legguards
@@ -270,18 +270,18 @@ _.Instances = { tier(4, {	-- Cataclysm
 								i(65187),	-- Magma Plated Legguards
 								i(65211)	-- Firelord's Leggings
 							}),
-							i( 65036),	-- Mace of Acrid Death
-							i( 65038),	-- Dragon Bone Warhelm
-							i( 65035),	-- Cloak of Biting Chill
-							i( 65037),	-- Tunic of Failed Experiments
-							i( 65031),	-- Flash Freeze Gauntlets
-							i( 65040),	-- Belt of Absolute Zero
-							i( 65034),	-- Belt of Arcane Storms
-							i( 65039),	-- Aberration's Leggings
-							i( 65030),	-- Leggings of Consuming Flames
-							i( 65032),	-- Legwraps of the Greatest Son
-							i( 65033),	-- Treads of Flawless Creation
-							i( 65029),	-- Jar of Ancient Remedies
+							i(65036),	-- Mace of Acrid Death
+							i(65038),	-- Dragon Bone Warhelm
+							i(65035),	-- Cloak of Biting Chill
+							i(65037),	-- Tunic of Failed Experiments
+							i(65031),	-- Flash Freeze Gauntlets
+							i(65040),	-- Belt of Absolute Zero
+							i(65034),	-- Belt of Arcane Storms
+							i(65039),	-- Aberration's Leggings
+							i(65030),	-- Leggings of Consuming Flames
+							i(65032),	-- Legwraps of the Greatest Son
+							i(65033),	-- Treads of Flawless Creation
+							i(65029),	-- Jar of Ancient Remedies
 						},
 					}),
 					e(171, {	-- Atramedes
@@ -329,7 +329,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 								title(187),	-- , Blackwing's Bane
 							}),
 							ach(4849),	-- Keeping it in the Family
-							i( 65001, {	-- Crown of the Forlorn Conqueror
+							i(65001, {	-- Crown of the Forlorn Conqueror
 								i(65260),	-- Shadowflame Hood
 								i(65216),	-- Reinforced Sapphirium Helmet
 								i(65221),	-- Reinforced Sapphirium Headguard
@@ -337,7 +337,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 								i(65235),	-- Mercurial Hood
 								i(65230)	-- Mercurial Cowl
 							}),
-							i( 65000, {	-- Crown of the Forlorn Protector
+							i(65000, {	-- Crown of the Forlorn Protector
 								i(65206),	-- Lightning-Charged Headguard
 								i(65251),	-- Helmet of the Raging Elements
 								i(65256),	-- Headpiece of the Raging Elements
@@ -345,7 +345,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 								i(65266),	-- Earthen Helmet
 								i(65271)	-- Earthen Faceguard
 							}),
-							i( 65002, {	-- Crown of the Forlorn Vanquisher
+							i(65002, {	-- Crown of the Forlorn Vanquisher
 								i(65241),	-- Wind Dancer's Helmet
 								i(65195),	-- Stormrider's Helm
 								i(65190),	-- Stormrider's Headpiece
@@ -356,19 +356,19 @@ _.Instances = { tier(4, {	-- Cataclysm
 							}),
 							i(138802),	-- Illusion: Power Torrent
 							i(152968),	-- Shadowy Pile of Bones (PET!)
-							i( 65003),	-- Reclaimed Ashkandi, Greatsword of the Brotherhood
-							i( 65017),	-- Andoros, Fist of the Dragon King
-							i( 65024),	-- Crul'korak, the Lightning's Arc
-							i( 65023),	-- Akmin-Kurai, Dominion's Shield
-							i( 65025),	-- Rage of Ages
-							i( 65043),	-- Mantle of Nefarius
-							i( 65027),	-- Pauldrons of the Apocalypse
-							i( 65074),	-- Spaulders of the Scarred Lady
-							i( 65018),	-- Shadow of Dread
-							i( 65019),	-- Shadowblaze Robes
-							i( 65022),	-- Belt of the Blackhand
-							i( 65057),	-- Belt of the Nightmare
-							i( 65026),	-- Prestor's Talisman of Machination
+							i(65003),	-- Reclaimed Ashkandi, Greatsword of the Brotherhood
+							i(65017),	-- Andoros, Fist of the Dragon King
+							i(65024),	-- Crul'korak, the Lightning's Arc
+							i(65023),	-- Akmin-Kurai, Dominion's Shield
+							i(65025),	-- Rage of Ages
+							i(65043),	-- Mantle of Nefarius
+							i(65027),	-- Pauldrons of the Apocalypse
+							i(65074),	-- Spaulders of the Scarred Lady
+							i(65018),	-- Shadow of Dread
+							i(65019),	-- Shadowblaze Robes
+							i(65022),	-- Belt of the Blackhand
+							i(65057),	-- Belt of the Nightmare
+							i(65026),	-- Prestor's Talisman of Machination
 							i(122195),	-- Music Roll: Legends of Azeroth
 						},
 					}),

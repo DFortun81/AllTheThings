@@ -1970,7 +1970,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 									["achievementID"] = 8458,	-- Vale of Eternal Sorrows
 									["criteriaID"] = 4,	-- Sha of Pride
 								},
-								i( 99678, {	-- Chest of the Cursed Conqueror
+								i(99678, {	-- Chest of the Cursed Conqueror
 									i(99052),	-- Battleplate of Winged Triumph
 									i(99003),	-- Breastplate of Winged Triumph
 									i(99031),	-- Chestguard of Winged Triumph
@@ -1978,7 +1978,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 									i(99017),	-- Robes of the Ternion Glory
 									i(99056),	-- Robes of the Horned Nightmare
 								}),
-								i( 99679, {	-- Chest of the Cursed Protector
+								i(99679, {	-- Chest of the Cursed Protector
 									i(99085),	-- Tunic of the Unblinking Vigil
 									i(99063),	-- Chestguard of Seven Sacred Seals
 									i(99071),	-- Tunic of Seven Sacred Seals
@@ -1989,7 +1989,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 									i(99047),	-- Battleplate of the Prehistoric Marauder
 									i(99037),	-- Chestguard of the Prehistoric Marauder
 								}),
-								i( 99677, {	-- Chest of the Cursed Vanquisher
+								i(99677, {	-- Chest of the Cursed Vanquisher
 									i(99066),	-- Breastplate of Cyclopean Dread
 									i(99060),	-- Chestguard of Cyclopean Dread
 									i(99041),	-- Raiment of the Shattered Vale
@@ -2316,7 +2316,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 									["criteriaID"] = 2,	-- Paragons of the Klaxxi
 								},
 								i(104165),	-- Kovok (PET!)
-								i( 99675, {	-- Leggings of the Cursed Conqueror
+								i(99675, {	-- Leggings of the Cursed Conqueror
 									i(98980),	-- Greaves of Winged Triumph
 									i(99026),	-- Legguards of Winged Triumph
 									i(98986),	-- Legplates of Winged Triumph
@@ -2324,7 +2324,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 									i(99025),	-- Legwraps of the Ternion Glory
 									i(99055),	-- Leggings of the Horned Nightmare
 								}),
-								i( 99676, {	-- Leggings of the Cursed Protector
+								i(99676, {	-- Leggings of the Cursed Protector
 									i(99081),	-- Legguards of the Unblinking Vigil
 									i(99074),	-- Leggings of Seven Sacred Seals
 									i(99050),	-- Legguards of Seven Sacred Seals
@@ -2335,7 +2335,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 									i(99033),	-- Legguards of the Prehistoric Marauder
 									i(99035),	-- Legplates of the Prehistoric Marauder
 								}),
-								i( 99674, {	-- Leggings of the Cursed Vanquisher
+								i(99674, {	-- Leggings of the Cursed Vanquisher
 									i(99058),	-- Greaves of Cyclopean Dread
 									i(99039),	-- Legguards of Cyclopean Dread
 									i(98981),	-- Breeches of the Shattered Vale
@@ -3134,7 +3134,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						["achievementID"] = 8458,	-- Vale of Eternal Sorrows
 						["criteriaID"] = 4,	-- Sha of Pride
 					},
-					i( 99743, {	-- Chest of the Cursed Conqueror
+					i(99743, {	-- Chest of the Cursed Conqueror
 						i(99566),	-- Battleplate of Winged Triumph
 						i(99626),	-- Breastplate of Winged Triumph
 						i(99598),	-- Chestguard of Winged Triumph
@@ -3142,7 +3142,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						i(99584),	-- Robes of the Ternion Glory
 						i(99570),	-- Robes of the Horned Nightmare
 					}),
-					i( 99744, {	-- Chest of the Cursed Protector
+					i(99744, {	-- Chest of the Cursed Protector
 						i(99577),	-- Tunic of the Unblinking Vigil
 						i(99643),	-- Chestguard of Seven Sacred Seals
 						i(99555),	-- Tunic of Seven Sacred Seals
@@ -3153,7 +3153,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						i(99603),	-- Battleplate of the Prehistoric Marauder
 						i(99562),	-- Chestguard of the Prehistoric Marauder
 					}),
-					i( 99742, {	-- Chest of the Cursed Vanquisher
+					i(99742, {	-- Chest of the Cursed Vanquisher
 						i(99608),	-- Breastplate of Cyclopean Dread
 						i(99640),	-- Chestguard of Cyclopean Dread
 						i(99632),	-- Raiment of the Shattered Vale
@@ -3292,7 +3292,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						["achievementID"] = 8459,	-- Gates of Retribution
 						["criteriaID"] = 4,	-- General Nazgrim
 					},
-					i( 99746, {	-- Gauntlets of the Cursed Conqueror
+					i(99746, {	-- Gauntlets of the Cursed Conqueror
 						i(99625),	-- Gauntlets of Winged Triumph
 						i(99648),	-- Gloves of Winged Triumph
 						i(99595),	-- Handguards of Winged Triumph
@@ -3300,7 +3300,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						i(99590),	-- Handwraps of the Ternion Glory
 						i(99567),	-- Gloves of the Horned Nightmare
 					}),
-					i( 99747, {	-- Gauntlets of the Cursed Protector
+					i(99747, {	-- Gauntlets of the Cursed Protector
 						i(99578),	-- Gloves of the Unblinking Vigil
 						i(99644),	-- Gauntlets of Seven Sacred Seals
 						i(99556),	-- Grips of Seven Sacred Seals
@@ -3311,7 +3311,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						i(99559),	-- Gauntlets of the Prehistoric Marauder
 						i(99563),	-- Handguards of the Prehistoric Marauder
 					}),
-					i( 99745, {	-- Gauntlets of the Cursed Vanquisher
+					i(99745, {	-- Gauntlets of the Cursed Vanquisher
 						i(99609),	-- Gauntlets of Cyclopean Dread
 						i(99604),	-- Handguards of Cyclopean Dread
 						i(99633),	-- Grips of the Shattered Vale
@@ -3402,7 +3402,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						["achievementID"] = 8461,	-- The Underhold
 						["criteriaID"] = 3,	-- Thok the Bloodthirsty
 					},
-					i( 99749, {	-- Helm of the Cursed Conqueror
+					i(99749, {	-- Helm of the Cursed Conqueror
 						i(99596),	-- Faceguard of Winged Triumph
 						i(99665),	-- Headguard of Winged Triumph
 						i(99651),	-- Helmet of Winged Triumph
@@ -3410,7 +3410,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						i(99587),	-- Hood of the Ternion Glory
 						i(99568),	-- Hood of the Horned Nightmare
 					}),
-					i( 99750, {	-- Helm of the Cursed Protector
+					i(99750, {	-- Helm of the Cursed Protector
 						i(99660),	-- Headguard of the Unblinking Vigil
 						i(99607),	-- Crown of Seven Sacred Seals
 						i(99653),	-- Headpiece of Seven Sacred Seals
@@ -3421,7 +3421,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						i(99557),	-- Faceguard of the Prehistoric Marauder
 						i(99602),	-- Helmet of the Prehistoric Marauder
 					}),
-					i( 99748, {	-- Helm of the Cursed Vanquisher
+					i(99748, {	-- Helm of the Cursed Vanquisher
 						i(99605),	-- Faceguard of Cyclopean Dread
 						i(99571),	-- Helmet of Cyclopean Dread
 						i(99618),	-- Cover of the Shattered Vale
@@ -3520,7 +3520,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						["achievementID"] = 8531,	-- Now We are the Paragon
 					},
 					i(104165),	-- Kovok (PET!)
-					i( 99752, {	-- Leggings of the Cursed Conqueror
+					i(99752, {	-- Leggings of the Cursed Conqueror
 						i(99666),	-- Greaves of Winged Triumph
 						i(99593),	-- Legguards of Winged Triumph
 						i(99661),	-- Legplates of Winged Triumph
@@ -3528,7 +3528,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						i(99592),	-- Legwraps of the Ternion Glory
 						i(99569),	-- Leggings of the Horned Nightmare
 					}),
-					i( 99753, {	-- Leggings of the Cursed Protector
+					i(99753, {	-- Leggings of the Cursed Protector
 						i(99573),	-- Legguards of the Unblinking Vigil
 						i(99654),	-- Leggings of Seven Sacred Seals
 						i(99606),	-- Legguards of Seven Sacred Seals
@@ -3539,7 +3539,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						i(99558),	-- Legguards of the Prehistoric Marauder
 						i(99560),	-- Legplates of the Prehistoric Marauder
 					}),
-					i( 99751, {	-- Leggings of the Cursed Vanquisher
+					i(99751, {	-- Leggings of the Cursed Vanquisher
 						i(99572),	-- Greaves of Cyclopean Dread
 						i(99564),	-- Legguards of Cyclopean Dread
 						i(99610),	-- Breeches of the Shattered Vale
@@ -4338,7 +4338,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						["achievementID"] = 8458,	-- Vale of Eternal Sorrows
 						["criteriaID"] = 4,	-- Sha of Pride
 					},
-					i( 99686, {	-- Chest of the Cursed Conqueror
+					i(99686, {	-- Chest of the Cursed Conqueror
 						i(99136),	-- Battleplate of Winged Triumph
 						i(99133),	-- Breastplate of Winged Triumph
 						i(99126),	-- Chestguard of Winged Triumph
@@ -4346,7 +4346,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						i(99119),	-- Robes of the Ternion Glory
 						i(99204),	-- Robes of the Horned Nightmare
 					}),
-					i( 99691, {	-- Chest of the Cursed Protector
+					i(99691, {	-- Chest of the Cursed Protector
 						i(99167),	-- Tunic of the Unblinking Vigil
 						i(99140),	-- Chestguard of Seven Sacred Seals
 						i(99154),	-- Tunic of Seven Sacred Seals
@@ -4357,7 +4357,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						i(99197),	-- Battleplate of the Prehistoric Marauder
 						i(99201),	-- Chestguard of the Prehistoric Marauder
 					}),
-					i( 99696, {	-- Chest of the Cursed Vanquisher
+					i(99696, {	-- Chest of the Cursed Vanquisher
 						i(99192),	-- Breastplate of Cyclopean Dread
 						i(99188),	-- Chestguard of Cyclopean Dread
 						i(99180),	-- Raiment of the Shattered Vale
@@ -4496,7 +4496,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						["achievementID"] = 8459,	-- Gates of Retribution
 						["criteriaID"] = 4,	-- General Nazgrim
 					},
-					i( 99687, {	-- Gauntlets of the Cursed Conqueror
+					i(99687, {	-- Gauntlets of the Cursed Conqueror
 						i(99137),	-- Gauntlets of Winged Triumph
 						i(99134),	-- Gloves of Winged Triumph
 						i(99127),	-- Handguards of Winged Triumph
@@ -4504,7 +4504,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						i(99131),	-- Handgwraps of the Ternion Glory
 						i(99096),	-- Gloves of the Horned Nightmare
 					}),
-					i( 99692, {	-- Gauntlets of the Cursed Protector
+					i(99692, {	-- Gauntlets of the Cursed Protector
 						i(99168),	-- Gloves of the Unblinking Vigil
 						i(99141),	-- Gauntlets of Seven Sacred Seals
 						i(99155),	-- Grips of Seven Sacred Seals
@@ -4515,7 +4515,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						i(99198),	-- Gauntlets of the Prehistoric Marauder
 						i(99202),	-- Handguards of the Prehistoric Marauder
 					}),
-					i( 99682, {	-- Gauntlets of the Cursed Vanquisher
+					i(99682, {	-- Gauntlets of the Cursed Vanquisher
 						i(99193),	-- Gauntlets of Cyclopean Dread
 						i(99189),	-- Handguards of Cyclopean Dread
 						i(99174),	-- Gloves of the Shattered Vale
@@ -4606,7 +4606,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						["achievementID"] = 8461,	-- The Underhold
 						["criteriaID"] = 3,	-- Thok the Bloodthirsty
 					},
-					i( 99689, {	-- Helm of the Cursed Conqueror
+					i(99689, {	-- Helm of the Cursed Conqueror
 						i(99128),	-- Faceguard of Winged Triumph
 						i(99135),	-- Headguard of Winged Triumph
 						i(99138),	-- Helmet of Winged Triumph
@@ -4614,7 +4614,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						i(99122),	-- Hood of the Ternion Glory
 						i(99097),	-- Hood of the Horned Nightmare
 					}),
-					i( 99694, {	-- Helm of the Cursed Protector
+					i(99694, {	-- Helm of the Cursed Protector
 						i(99157),	-- Headguard of the Unblinking Vigil
 						i(99142),	-- Crown of Seven Sacred Seals
 						i(99156),	-- Headpiece of Seven Sacred Seals
@@ -4625,7 +4625,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						i(99203),	-- Faceguard of the Prehistoric Marauder
 						i(99206),	-- Helmet of the Prehistoric Marauder
 					}),
-					i( 99683, {	-- Helm of the Cursed Vanquisher
+					i(99683, {	-- Helm of the Cursed Vanquisher
 						i(99190),	-- Faceguard of Cyclopean Dread
 						i(99194),	-- Helmet of Cyclopean Dread
 						i(99175),	-- Cover of the Shattered Vale
@@ -4674,7 +4674,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						},
 					},
 					i(104158),	-- Blackfuse Bombling (PET!)
-					i( 99690, {	-- Shoulders of the Cursed Conqueror
+					i(99690, {	-- Shoulders of the Cursed Conqueror
 						i(99125),	-- Mantle of Winged Triumph
 						i(99132),	-- Pauldrons of Winged Triumph
 						i(99130),	-- Shoulderguards of Winged Triumph
@@ -4682,7 +4682,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						i(99111),	-- Shoulderguards of the Ternion Glory
 						i(99205),	-- Mantle of the Horned Nightmare
 					}),
-					i( 99695, {	-- Shoulders of the Cursed Protector
+					i(99695, {	-- Shoulders of the Cursed Protector
 						i(99159),	-- Spaulders of the Unblinking Vigil
 						i(99151),	-- Mantle of Seven Sacred Seals
 						i(99144),	-- Shoulderguards of Seven Sacred Seals
@@ -4693,7 +4693,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						i(99200),	-- Pauldrons of the Prehistoric Marauder
 						i(99196),	-- Shoulderguards of the Prehistoric Marauder
 					}),
-					i( 99685, {	-- Shoulders of the Cursed Vanquisher
+					i(99685, {	-- Shoulders of the Cursed Vanquisher
 						i(99187),	-- Pauldrons of Cyclopean Dread
 						i(99179),	-- Shoulderguards of Cyclopean Dread
 						i(99173),	-- Mantle of the Shattered Vale
@@ -5577,7 +5577,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						["achievementID"] = 8458,	-- Vale of Eternal Sorrows
 						["criteriaID"] = 4,	-- Sha of Pride
 					},
-					i( 99715, {	-- Chest of the Cursed Conqueror
+					i(99715, {	-- Chest of the Cursed Conqueror
 						i(99387),	-- Battleplate of Winged Triumph
 						i(99374),	-- Breastplate of Winged Triumph
 						i(99368),	-- Chestguard of Winged Triumph
@@ -5585,7 +5585,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						i(99357),	-- Robes of the Ternion Glory
 						i(99416),	-- Robes of the Horned Nightmare
 					}),
-					i( 99716, {	-- Chest of the Cursed Protector
+					i(99716, {	-- Chest of the Cursed Protector
 						i(99405),	-- Tunic of the Unblinking Vigil
 						i(99382),	-- Chestguard of Seven Sacred Seals
 						i(99396),	-- Tunic of Seven Sacred Seals
@@ -5596,7 +5596,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						i(99411),	-- Battleplate of the Prehistoric Marauder
 						i(99415),	-- Chestguard of the Prehistoric Marauder
 					}),
-					i( 99714, {	-- Chest of the Cursed Vanquisher
+					i(99714, {	-- Chest of the Cursed Vanquisher
 						i(99335),	-- Breastplate of Cyclopean Dread
 						i(99330),	-- Chestguard of Cyclopean Dread
 						i(99326),	-- Raiment of the Shattered Vale
@@ -5937,7 +5937,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						["achievementID"] = 8480,	-- Mythic: Siegecrafter Blackfuse
 					},
 					i(104158),	-- Blackfuse Bombling (PET!)
-					i( 99718, {	-- Shoulders of the Cursed Conqueror
+					i(99718, {	-- Shoulders of the Cursed Conqueror
 						i(99378),	-- Mantle of Winged Triumph
 						i(99373),	-- Pauldrons of Winged Triumph
 						i(99364),	-- Shoulderguards of Winged Triumph
@@ -5945,7 +5945,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						i(99363),	-- Shoulderguards of the Ternion Glory
 						i(99417),	-- Mantle of the Horned Nightmare
 					}),
-					i( 99719, {	-- Shoulders of the Cursed Protector
+					i(99719, {	-- Shoulders of the Cursed Protector
 						i(99404),	-- Spaulders of the Unblinking Vigil
 						i(99381),	-- Mantle of Seven Sacred Seals
 						i(99386),	-- Shoulderguards of Seven Sacred Seals
@@ -5956,7 +5956,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						i(99414),	-- Pauldrons of the Prehistoric Marauder
 						i(99407),	-- Shoulderguards of the Prehistoric Marauder
 					}),
-					i( 99717, {	-- Shoulders of the Cursed Vanquisher
+					i(99717, {	-- Shoulders of the Cursed Vanquisher
 						i(99339),	-- Pauldrons of Cyclopean Dread
 						i(99325),	-- Shoulderguards of Cyclopean Dread
 						i(99431),	-- Mantle of the Shattered Vale

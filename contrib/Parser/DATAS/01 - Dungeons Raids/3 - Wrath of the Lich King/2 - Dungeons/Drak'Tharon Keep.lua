@@ -132,28 +132,28 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						["achievementID"] = 482,	-- Drak'Tharon Keep
 						["criteriaID"] = 2,	-- Novos the Summoner
 					},
-					i( 37721),	-- Cursed Lich Blade
-					i( 35630),	-- Summoner's Stone Gavel
-					i( 37718),	-- Temple Crystal Fragment
-					i( 35631),	-- Crystal Pendant of Warding
+					i(37721),	-- Cursed Lich Blade
+					i(35630),	-- Summoner's Stone Gavel
+					i(37718),	-- Temple Crystal Fragment
+					i(35631),	-- Crystal Pendant of Warding
 					i(157558),	-- Shoddily Stitched Shoulderguards
-					i( 37722),	-- Breastplate of Undeath
-					i( 35632),	-- Robes of Novos
-					i( 40490),	-- Necromantic Wristguards
+					i(37722),	-- Breastplate of Undeath
+					i(35632),	-- Robes of Novos
+					i(40490),	-- Necromantic Wristguards
 				})),
 				cr(27483, e(590, { 	-- King Dred
 					{	-- Drak'Tharon Keep: King Dred
 						["achievementID"] = 482,	-- Drak'Tharon Keep
 						["criteriaID"] = 3,	-- King Dred
 					},
-					i( 35633),	-- Staff of the Great Reptile
-					i( 37726),	-- King Dred's Helm
-					i( 35634),	-- Scabarous-Hide Helm
-					i( 37724),	-- Handler's Arm Strap
-					i( 37725),	-- Savage Wound Wrap
+					i(35633),	-- Staff of the Great Reptile
+					i(37726),	-- King Dred's Helm
+					i(35634),	-- Scabarous-Hide Helm
+					i(37724),	-- Handler's Arm Strap
+					i(37725),	-- Savage Wound Wrap
 					i(157561),	-- Dino-Toothed Waistguard
-					i( 35635),	-- Stable Master's Breeches
-					i( 37723),	-- Incisor Fragment
+					i(35635),	-- Stable Master's Breeches
+					i(37723),	-- Incisor Fragment
 				})),
 				cr(26632, e(591, {	-- The Prophet Tharon'ja
 					{	-- Drak'Tharon Keep: The Prophet Tharon'ja
@@ -283,14 +283,14 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						{	-- Oh Novos!
 							["achievementID"] = 2057,	-- Oh Novos!
 						},
-						i( 37721),	-- Cursed Lich Blade
-						i( 35630),	-- Summoner's Stone Gavel
-						i( 37718),	-- Temple Crystal Fragment
-						i( 35631),	-- Crystal Pendant of Warding
+						i(37721),	-- Cursed Lich Blade
+						i(35630),	-- Summoner's Stone Gavel
+						i(37718),	-- Temple Crystal Fragment
+						i(35631),	-- Crystal Pendant of Warding
 						i(157558),	-- Shoddily Stitched Shoulderguards
-						i( 37722),	-- Breastplate of Undeath
-						i( 35632),	-- Robes of Novos
-						i( 40490),	-- Necromantic Wristguards
+						i(37722),	-- Breastplate of Undeath
+						i(35632),	-- Robes of Novos
+						i(40490),	-- Necromantic Wristguards
 					})),
 					cr(27483, e(590, { 	-- King Dred
 						{	-- Better Off Dred
@@ -300,14 +300,14 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							["achievementID"] = 493,	-- Heroic: Drak'Tharon Keep
 							["criteriaID"] = 3,	-- King Dred
 						},
-						i( 35633),	-- Staff of the Great Reptile
-						i( 37726),	-- King Dred's Helm
-						i( 35634),	-- Scabarous-Hide Helm
-						i( 37724),	-- Handler's Arm Strap
-						i( 37725),	-- Savage Wound Wrap
+						i(35633),	-- Staff of the Great Reptile
+						i(37726),	-- King Dred's Helm
+						i(35634),	-- Scabarous-Hide Helm
+						i(37724),	-- Handler's Arm Strap
+						i(37725),	-- Savage Wound Wrap
 						i(157561),	-- Dino-Toothed Waistguard
-						i( 35635),	-- Stable Master's Breeches
-						i( 37723),	-- Incisor Fragment
+						i(35635),	-- Stable Master's Breeches
+						i(37723),	-- Incisor Fragment
 					})),
 					cr(26632, e(591, {	-- The Prophet Tharon'ja
 						{	-- Champion of the Frozen Wastes

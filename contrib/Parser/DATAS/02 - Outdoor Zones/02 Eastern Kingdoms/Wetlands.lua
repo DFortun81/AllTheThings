@@ -170,10 +170,10 @@ _.Zones =
 					})),
 					o(112948, {	-- Intrepid's Locked Strongbox
 						qa(25819, {	-- The Eye of Paleth
-							i(  2944),	-- Cursed Eye of Paleth (NOTE: unsure if you permanently learn this after the quest or not.)
-							i( 59092),
-							i( 59091),
-							i( 59090),
+							i( 2944),	-- Cursed Eye of Paleth (NOTE: unsure if you permanently learn this after the quest or not.)
+							i(59092),
+							i(59091),
+							i(59090),
 							i(131446),
 						}),
 					}),

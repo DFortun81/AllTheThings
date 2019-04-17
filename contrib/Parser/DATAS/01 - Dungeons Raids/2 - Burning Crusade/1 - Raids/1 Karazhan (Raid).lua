@@ -101,19 +101,19 @@ _.Instances = { tier(2, {	-- Burning Crusade
 			e(  1554, {			-- Moroes
 				["creatureID"] = 15687,
 				["groups"] = {
-					i( 22559),	-- Formula: Enchant Weapon - Mongoose
+					i(22559),	-- Formula: Enchant Weapon - Mongoose
 					i(138797),	-- Illusion: Mongoose
-					i( 28524),	-- Emerald Ripper
-					i( 28525),	-- Signet of Unshakable Faith
-					i( 28530),	-- Brooch of Unquenchable Fury
-					i( 28529),	-- Royal Cloak of Arathi Kings
-					i( 28570),	-- Shadow-Cloak of Dalaran
-					i( 28567),	-- Belt of Gale Force
-					i( 28566),	-- Crimson Girdle of the Indomitable
-					i( 28565),	-- Nethershard Girdle
-					i( 28569),	-- Boots of Valiance
-					i( 28545),	-- Edgewalker Longboots
-					i( 28528),	-- Moroes' Lucky Pocket Watch
+					i(28524),	-- Emerald Ripper
+					i(28525),	-- Signet of Unshakable Faith
+					i(28530),	-- Brooch of Unquenchable Fury
+					i(28529),	-- Royal Cloak of Arathi Kings
+					i(28570),	-- Shadow-Cloak of Dalaran
+					i(28567),	-- Belt of Gale Force
+					i(28566),	-- Crimson Girdle of the Indomitable
+					i(28565),	-- Nethershard Girdle
+					i(28569),	-- Boots of Valiance
+					i(28545),	-- Edgewalker Longboots
+					i(28528),	-- Moroes' Lucky Pocket Watch
 				},
 			}),
 			e(  1555, {			-- Maiden of Virtue
@@ -150,11 +150,11 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					["groups"] = {
 						i(138017),	-- Clothes Chest Pattern: Karazhan Opera House
 						i(122231),	-- Music Roll: Karazhan Opera House
-						i( 28593),	-- Eternium Greathelm
-						i( 28589),	-- Beastmaw Pauldrons
-						i( 28591),	-- Earthsoul Leggings
-						i( 28594),	-- Trial-Fire Trousers
-						i( 28590),	-- Ribbon of Sacrifice
+						i(28593),	-- Eternium Greathelm
+						i(28589),	-- Beastmaw Pauldrons
+						i(28591),	-- Earthsoul Leggings
+						i(28594),	-- Trial-Fire Trousers
+						i(28590),	-- Ribbon of Sacrifice
 					},
 				}),
 				n(17521, {		-- The Big Bad Wolf [Red Riding Hood]
@@ -164,11 +164,11 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						17603,	-- Grandmother
 					},
 					["groups"] = {
-						i( 97548),	-- Spiky Collar (PET!)
-						i( 28584),	-- Big Bad Wolf's Paw
-						i( 28581),	-- Wolfslayer Sniper Rifle
-						i( 28583),	-- Big Bad Wolf's Head
-						i( 28582),	-- Red Riding Hood's Cloak
+						i(97548),	-- Spiky Collar (PET!)
+						i(28584),	-- Big Bad Wolf's Paw
+						i(28581),	-- Wolfslayer Sniper Rifle
+						i(28583),	-- Big Bad Wolf's Head
+						i(28582),	-- Red Riding Hood's Cloak
 					},
 				}),
 				n(17534, {		-- Julianne [Romulo and Julianne]
@@ -178,10 +178,10 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						17533,	-- Romulo
 					},
 					["groups"] = {
-						i( 28573),	-- Despair
-						i( 28572),	-- Blade of the Unrequited
-						i( 28578),	-- Masquerade Gown
-						i( 28579),	-- Romulo's Poison Vial
+						i(28573),	-- Despair
+						i(28572),	-- Blade of the Unrequited
+						i(28578),	-- Masquerade Gown
+						i(28579),	-- Romulo's Poison Vial
 					},
 				}),
 				n(18168, {		-- The Crone [Wizard of Oz]
@@ -195,10 +195,10 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						18168,	-- The Crone
 					},
 					["groups"] = {
-						i( 28587),	-- Legacy
-						i( 28588),	-- Blue Diamond Witchwand
-						i( 28586),	-- Wicked Witch's Hat
-						i( 28585),	-- Ruby Slippers
+						i(28587),	-- Legacy
+						i(28588),	-- Blue Diamond Witchwand
+						i(28586),	-- Wicked Witch's Hat
+						i(28585),	-- Ruby Slippers
 					},
 				}),
 			})),
@@ -271,39 +271,39 @@ _.Instances = { tier(2, {	-- Burning Crusade
 			e(  1560, {			-- Terestian Illhoof
 				["creatureID"] = 15688,
 				["groups"] = {
-					i( 22561),	-- Formula: Enchant Weapon - Soulfrost
+					i(22561),	-- Formula: Enchant Weapon - Soulfrost
 					i(138799), 	-- Illusion: Soulfrost
-					i( 97551),	-- Satyr Charm (PET!)
-					i( 28658),	-- Terestian's Stranglestaff
-					i( 28657),	-- Fool's Bane
-					i( 28660),	-- Gilded Thorium Cloak
-					i( 28653),	-- Shadowvine Cloak of Infusion
-					i( 28662),	-- Breastplate of the Lightbinder
-					i( 28652),	-- Cincture of Will
-					i( 28655),	-- Cord of Nature's Sustenance
-					i( 28656),	-- Girdle of the Prowler
-					i( 28654),	-- Malefic Girdle
-					i( 28661),	-- Mender's Heart-Ring
-					i( 28785),	-- The Lightning Capacitor
+					i(97551),	-- Satyr Charm (PET!)
+					i(28658),	-- Terestian's Stranglestaff
+					i(28657),	-- Fool's Bane
+					i(28660),	-- Gilded Thorium Cloak
+					i(28653),	-- Shadowvine Cloak of Infusion
+					i(28662),	-- Breastplate of the Lightbinder
+					i(28652),	-- Cincture of Will
+					i(28655),	-- Cord of Nature's Sustenance
+					i(28656),	-- Girdle of the Prowler
+					i(28654),	-- Malefic Girdle
+					i(28661),	-- Mender's Heart-Ring
+					i(28785),	-- The Lightning Capacitor
 				},
 			}),
 			e(  1559, {			-- Shade of Aran
 				["creatureID"] = 16524,
 				["groups"] = {
-					i( 22560),	-- Formula: Enchant Weapon - Sunfire
+					i(22560),	-- Formula: Enchant Weapon - Sunfire
 					i(138798),	-- Illusion: Sunfire
-					i( 28673),	-- Tirisfal Wand of Ascendancy
-					i( 28728),	-- Aran's Soothing Sapphire
-					i( 28671),	-- Steelspine Faceguard
-					i( 28674),	-- Saberclaw Talisman
-					i( 28726),	-- Mantle of the Mind Flayer
-					i( 28666),	-- Pauldrons of the Justice-Seeker
-					i( 28672),	-- Drape of the Dark Reavers
-					i( 28663),	-- Boots of the Incorrupt
-					i( 28670),	-- Boots of the Infernal Coven
-					i( 28669),	-- Rapscallion Boots
-					i( 28675),	-- Shermanar Great-Ring
-					i( 28727),	-- Pendant of the Violet Eye
+					i(28673),	-- Tirisfal Wand of Ascendancy
+					i(28728),	-- Aran's Soothing Sapphire
+					i(28671),	-- Steelspine Faceguard
+					i(28674),	-- Saberclaw Talisman
+					i(28726),	-- Mantle of the Mind Flayer
+					i(28666),	-- Pauldrons of the Justice-Seeker
+					i(28672),	-- Drape of the Dark Reavers
+					i(28663),	-- Boots of the Incorrupt
+					i(28670),	-- Boots of the Infernal Coven
+					i(28669),	-- Rapscallion Boots
+					i(28675),	-- Shermanar Great-Ring
+					i(28727),	-- Pendant of the Violet Eye
 				},
 			}),
 			e(  1561, {			-- Netherspite

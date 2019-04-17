@@ -48,13 +48,13 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						["achievementID"] = 478,	-- The Nexus
 						["criteriaID"] = 1,	-- Grand Magus Telestra
 					},
-					i( 35617),	-- Wand of Shimmering Scales
-					i( 37134),	-- Telestra's Journal
-					i( 37135),	-- Arcane-Shielded Helm
-					i( 37139),	-- Spaulders of the Careless Thief
-					i( 37138),	-- Bands of Channeled Energy
-					i( 35604),	-- Insulating Bindings
-					i( 35605),	-- Belt of Draconic Runes
+					i(35617),	-- Wand of Shimmering Scales
+					i(37134),	-- Telestra's Journal
+					i(37135),	-- Arcane-Shielded Helm
+					i(37139),	-- Spaulders of the Careless Thief
+					i(37138),	-- Bands of Channeled Energy
+					i(35604),	-- Insulating Bindings
+					i(35605),	-- Belt of Draconic Runes
 				})),
 				cr(26763, e(619, {	-- Anomalus
 					{	-- The Nexus: Anomalus
@@ -74,32 +74,32 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						["achievementID"] = 478,	-- The Nexus
 						["criteriaID"] = 3,	-- Ormorok the Tree-Shaper
 					},
-					i( 35601),	-- Drakonid Arm Blade
-					i( 35602),	-- Chiseled Stalagmite Pauldrons
-					i( 37153),	-- Gloves of the Crystal Gardener
+					i(35601),	-- Drakonid Arm Blade
+					i(35602),	-- Chiseled Stalagmite Pauldrons
+					i(37153),	-- Gloves of the Crystal Gardener
 					i(157559), 	-- Chilly Cinch 
-					i( 37152),	-- Girdle of Ice
-					i( 37155),	-- Frozen Forest Kilt
-					i( 35603),	-- Greaves of the Blue Flight
-					i( 37151),	-- Band of Frosted Thorns
+					i(37152),	-- Girdle of Ice
+					i(37155),	-- Frozen Forest Kilt
+					i(35603),	-- Greaves of the Blue Flight
+					i(37151),	-- Band of Frosted Thorns
 				})),
 				cr(26723, e(621, {	-- Keristrasza
 					{	-- The Nexus: Keristrasza
 						["achievementID"] = 478,	-- The Nexus
 						["criteriaID"] = 4,	-- Keristrasza
 					},
-					i( 35595),	-- Glacier Sharpened Vileblade
-					i( 37169),	-- War Mace of Unrequited Love
-					i( 37162),	-- Bulwark of the Noble Protector
-					i( 37165),	-- Crystal-Infused Tunic
-					i( 37170),	-- Interwoven Scale Bracers
-					i( 37172),	-- Gloves of Glistening Runes
+					i(35595),	-- Glacier Sharpened Vileblade
+					i(37169),	-- War Mace of Unrequited Love
+					i(37162),	-- Bulwark of the Noble Protector
+					i(37165),	-- Crystal-Infused Tunic
+					i(37170),	-- Interwoven Scale Bracers
+					i(37172),	-- Gloves of Glistening Runes
 					i(157565),	-- Tangler-Leather Gloves
-					i( 37171),	-- Flame-Bathed Steel Girdle
-					i( 35596),	-- Attuned Crystalline Boots
-					i( 37167),	-- Dragon Slayer's Sabatons
-					i( 35597),	-- Band of Glittering Permafrost
-					i( 37166),	-- Sphere of Red Dragon's Blood
+					i(37171),	-- Flame-Bathed Steel Girdle
+					i(35596),	-- Attuned Crystalline Boots
+					i(37167),	-- Dragon Slayer's Sabatons
+					i(35597),	-- Band of Glittering Permafrost
+					i(37166),	-- Sphere of Red Dragon's Blood
 				})),
 			}),
 			d(  2, {	-- Heroic
@@ -154,14 +154,14 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							["achievementID"] = 490,	-- Heroic: The Nexus
 							["criteriaID"] = 3,	-- Ormorok the Tree-Shaper
 						},
-						i( 35601),	-- Drakonid Arm Blade
-						i( 35602),	-- Chiseled Stalagmite Pauldrons
-						i( 37153),	-- Gloves of the Crystal Gardener
+						i(35601),	-- Drakonid Arm Blade
+						i(35602),	-- Chiseled Stalagmite Pauldrons
+						i(37153),	-- Gloves of the Crystal Gardener
 						i(157559), 	-- Chilly Cinch 
-						i( 37152),	-- Girdle of Ice
-						i( 37155),	-- Frozen Forest Kilt
-						i( 35603),	-- Greaves of the Blue Flight
-						i( 37151),	-- Band of Frosted Thorns
+						i(37152),	-- Girdle of Ice
+						i(37155),	-- Frozen Forest Kilt
+						i(35603),	-- Greaves of the Blue Flight
+						i(37151),	-- Band of Frosted Thorns
 					})),
 					cr(26723, e(621, {	-- Keristrasza
 						{	-- Champion of the Frozen Wastes
@@ -175,18 +175,18 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						{	-- Intense Cold
 							["achievementID"] = 2036,	-- Intense Cold
 						},
-						i( 35595),	-- Glacier Sharpened Vileblade
-						i( 37169),	-- War Mace of Unrequited Love
-						i( 37162),	-- Bulwark of the Noble Protector
-						i( 37165),	-- Crystal-Infused Tunic
-						i( 37170),	-- Interwoven Scale Bracers
-						i( 37172),	-- Gloves of Glistening Runes
+						i(35595),	-- Glacier Sharpened Vileblade
+						i(37169),	-- War Mace of Unrequited Love
+						i(37162),	-- Bulwark of the Noble Protector
+						i(37165),	-- Crystal-Infused Tunic
+						i(37170),	-- Interwoven Scale Bracers
+						i(37172),	-- Gloves of Glistening Runes
 						i(157565),	-- Tangler-Leather Gloves
-						i( 37171),	-- Flame-Bathed Steel Girdle
-						i( 35596),	-- Attuned Crystalline Boots
-						i( 37167),	-- Dragon Slayer's Sabatons
-						i( 35597),	-- Band of Glittering Permafrost
-						i( 37166),	-- Sphere of Red Dragon's Blood
+						i(37171),	-- Flame-Bathed Steel Girdle
+						i(35596),	-- Attuned Crystalline Boots
+						i(37167),	-- Dragon Slayer's Sabatons
+						i(35597),	-- Band of Glittering Permafrost
+						i(37166),	-- Sphere of Red Dragon's Blood
 					})),
 				},
 			}),

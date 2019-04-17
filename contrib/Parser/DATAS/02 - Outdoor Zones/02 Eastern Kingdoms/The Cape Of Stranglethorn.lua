@@ -181,10 +181,10 @@ _.Zones =
 								}),
 								q(26601, {	-- Mok'rash the Cleaver
 									["groups"] = {
-										i( 61562),  -- Smott's SIgnet
-										i( 61564),  -- Sea Song Epaulettes
-										i( 61566),  -- Landlubber Headband
-										i( 61568),  -- Sea Legs
+										i(61562),  -- Smott's SIgnet
+										i(61564),  -- Sea Song Epaulettes
+										i(61566),  -- Landlubber Headband
+										i(61568),  -- Sea Legs
 										i(131561),  -- Landlubber Helm
 									},
 									["qg"] = 2500,

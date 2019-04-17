@@ -325,9 +325,9 @@ _.Zones =
 						}),
 						q( 10249, {	-- Back to the Chief! (awarded "Protect Area 52" criteria)
 							["groups"] = {
-								i( 30019),	-- Area 52 Defender's Pants
-								i( 30016),	-- X-52 Technician's Helm
-								i( 30014),	-- X-52 Pilot's Leggings
+								i(30019),	-- Area 52 Defender's Pants
+								i(30016),	-- X-52 Technician's Helm
+								i(30014),	-- X-52 Pilot's Leggings
 								i(134021),	-- X-52 Rocket Helmet (TOY!)
 								un(32, i(134012)),	-- X-52 Rocket Helm (Normal Reward till 7.0.1)
 							},

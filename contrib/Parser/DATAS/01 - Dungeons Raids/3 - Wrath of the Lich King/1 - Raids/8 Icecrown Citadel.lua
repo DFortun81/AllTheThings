@@ -1453,18 +1453,18 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						["criteriaID"] = 1,	-- Lord Marrowgar
 					},
 					i(142094),	-- Fragment of Frozen Bone (PET!)
-					i( 50761),	-- Citadel Enforcer's Claymore
-					i( 50759),	-- Bone Warden's Splitter
-					i( 50760),	-- Bonebreaker Scepter
-					i( 50771),	-- Frost Needle
-					i( 50763),	-- Marrowgar's Scratching Choker
-					i( 50764),	-- Shawl of Nerubian Silk
-					i( 50774),	-- Coldwraith Bracers
-					i( 50773),	-- Cord of the Patronizing Practitioner
-					i( 50762),	-- Linked Scourge Vertebrae
-					i( 50775),	-- Corrupted Silverplate Leggings
-					i( 50772),	-- Ancient Skeletal Boots
-					i( 50339),	-- Sliver of Pure Ice
+					i(50761),	-- Citadel Enforcer's Claymore
+					i(50759),	-- Bone Warden's Splitter
+					i(50760),	-- Bonebreaker Scepter
+					i(50771),	-- Frost Needle
+					i(50763),	-- Marrowgar's Scratching Choker
+					i(50764),	-- Shawl of Nerubian Silk
+					i(50774),	-- Coldwraith Bracers
+					i(50773),	-- Cord of the Patronizing Practitioner
+					i(50762),	-- Linked Scourge Vertebrae
+					i(50775),	-- Corrupted Silverplate Leggings
+					i(50772),	-- Ancient Skeletal Boots
+					i(50339),	-- Sliver of Pure Ice
 				})),
 				cr(36855, e(1625, {	-- Lady Deathwhisper
 					{	-- Full House (10 player)
@@ -1523,18 +1523,18 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						["achievementID"] = 4537,	-- I've Gone and Made a Mess (10 player)
 					},
 					i(142095),	-- Remains of a Blood Beast (PET!)
-					i( 50805),	-- Mag'hari Chieftain's Staff
-					i( 50798),	-- Ramaladni's Blade of Culling
-					i( 50807),	-- Thaumaturge's Crackling Cowl
-					i( 50809),	-- Soulcleave Pendant
-					i( 50801),	-- Blade-Scored Carapace
-					i( 50800),	-- Hauberk of a Thousand Cuts
-					i( 50802),	-- Gargoyle Spit Bracers
-					i( 50799),	-- Scourge Stranglers
-					i( 50808),	-- Deathforged Legplates
-					i( 50806),	-- Leggings of Unrelenting Blood
-					i( 50804),	-- Icecrown Spire Sandals
-					i( 50803),	-- Saurfang's Cold-Forged Band
+					i(50805),	-- Mag'hari Chieftain's Staff
+					i(50798),	-- Ramaladni's Blade of Culling
+					i(50807),	-- Thaumaturge's Crackling Cowl
+					i(50809),	-- Soulcleave Pendant
+					i(50801),	-- Blade-Scored Carapace
+					i(50800),	-- Hauberk of a Thousand Cuts
+					i(50802),	-- Gargoyle Spit Bracers
+					i(50799),	-- Scourge Stranglers
+					i(50808),	-- Deathforged Legplates
+					i(50806),	-- Leggings of Unrelenting Blood
+					i(50804),	-- Icecrown Spire Sandals
+					i(50803),	-- Saurfang's Cold-Forged Band
 				})),
 				n(37904, {	-- Brazie Getz
 					["description"] = "Shows up after killing Deathbring Saurfang in the camp vendors set up",
@@ -1597,18 +1597,18 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						["achievementID"] = 4578,	-- Nausea, Heartburn, Indigestion... (10 player)
 					},
 					i(142096),	-- Putricide's Alchemy Supplies (PET!)
-					i( 51011),	-- Flesh-Carving Scalpel
-					i( 51010),	-- The Facelifter
-					i( 51013),	-- Discarded Bag of Entrails
-					i( 51012),	-- Infected Choker
-					i( 51016),	-- Pendant of Split Veins
-					i( 51014),	-- Scalpel-Sharpening Shoulderguards
-					i( 51015),	-- Shoulderpads of the Morbid Ritual
-					i( 51020),	-- Shoulders of Ruinous Senility
-					i( 51018),	-- Chestplate of Septic Stitches
-					i( 51017),	-- Cauterized Cord
-					i( 51019),	-- Rippling Flesh Kilt
-					i( 50341),	-- Unidentifiable Organ
+					i(51011),	-- Flesh-Carving Scalpel
+					i(51010),	-- The Facelifter
+					i(51013),	-- Discarded Bag of Entrails
+					i(51012),	-- Infected Choker
+					i(51016),	-- Pendant of Split Veins
+					i(51014),	-- Scalpel-Sharpening Shoulderguards
+					i(51015),	-- Shoulderpads of the Morbid Ritual
+					i(51020),	-- Shoulders of Ruinous Senility
+					i(51018),	-- Chestplate of Septic Stitches
+					i(51017),	-- Cauterized Cord
+					i(51019),	-- Rippling Flesh Kilt
+					i(50341),	-- Unidentifiable Organ
 				})),
 				{	-- Fall of the Lich King (10 player): The Crimson Hall
 					["achievementID"] = 4532,	-- Fall of the Lich King (10 player)
@@ -1700,18 +1700,18 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						["criteriaID"] = 2,	-- Sindragosa
 					},
 					i(142097),	-- Skull of a Frozen Whelp (PET!)
-					i( 51788),	-- Bleak Coldarra Carver
-					i( 51784),	-- Splintershard
-					i( 51791),	-- Lost Pavise of the Blue Flight
-					i( 51779),	-- Rimetooth Pendant
-					i( 51792),	-- Shoulderguards of Crystalline Bone
-					i( 51790),	-- Robes of Azure Downfall
-					i( 51783),	-- Vambraces of the Frost Wyrm Queen
-					i( 51789),	-- Icicle Shapers
-					i( 51782),	-- Etched Dragonbone Girdle
-					i( 51786),	-- Legplates of Aetheric Strife
-					i( 51787),	-- Scourge Fanged Stompers
-					i( 51785),	-- Wyrmwing Treads
+					i(51788),	-- Bleak Coldarra Carver
+					i(51784),	-- Splintershard
+					i(51791),	-- Lost Pavise of the Blue Flight
+					i(51779),	-- Rimetooth Pendant
+					i(51792),	-- Shoulderguards of Crystalline Bone
+					i(51790),	-- Robes of Azure Downfall
+					i(51783),	-- Vambraces of the Frost Wyrm Queen
+					i(51789),	-- Icicle Shapers
+					i(51782),	-- Etched Dragonbone Girdle
+					i(51786),	-- Legplates of Aetheric Strife
+					i(51787),	-- Scourge Fanged Stompers
+					i(51785),	-- Wyrmwing Treads
 				})),
 				cr(36597, e(1636, {	-- The Lich King
 					{	-- Been Waiting a Long Time for This (10 player)
@@ -1734,15 +1734,15 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					},
 					i(142098),	-- Drudge Remains (PET!)
 					i(138955),	-- Illusion: Rune of Razorice
-					i( 51799),	-- Halion, Staff of Forgotten Love
-					i( 51797),	-- Tainted Twig of Nordrassil
-					i( 51796),	-- Warmace of Menethil
-					i( 51801),	-- Pugius, Fist of Defiance
-					i( 51800),	-- Stormfury, Black Blade of the Betrayer
-					i( 51803),	-- Tel'thas, Dagger of the Blood King
-					i( 51795),	-- Troggbane, Axe of the Frostborne King
-					i( 51798),	-- Valius, Gavel of the Lightbringer
-					i( 51802),	-- Windrunner's Heartseeker
+					i(51799),	-- Halion, Staff of Forgotten Love
+					i(51797),	-- Tainted Twig of Nordrassil
+					i(51796),	-- Warmace of Menethil
+					i(51801),	-- Pugius, Fist of Defiance
+					i(51800),	-- Stormfury, Black Blade of the Betrayer
+					i(51803),	-- Tel'thas, Dagger of the Blood King
+					i(51795),	-- Troggbane, Axe of the Frostborne King
+					i(51798),	-- Valius, Gavel of the Lightbringer
+					i(51802),	-- Windrunner's Heartseeker
 					i(122229),	-- Music Roll: Invincible
 				})),
 			}),
@@ -1773,7 +1773,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 								36597,	-- The Lich King
 							},
 						}),
-						i( 52027, {	-- Conqueror's Mark of Sanctification (Normal)
+						i(52027, {	-- Conqueror's Mark of Sanctification (Normal)
 							i(51184),	-- Sanctified Crimson Acolyte Cowl
 							i(51178),	-- Sanctified Crimson Acolyte Hood
 							i(51182),	-- Sanctified Crimson Acolyte Mantle
@@ -1805,7 +1805,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							i(51171),	-- Sanctified Lightsworn Legguards
 							i(51161),	-- Sanctified Lightsworn Legplates
 						}),
-						i( 52026, {	-- Protector's Mark of Sanctifaction (Normal)
+						i(52026, {	-- Protector's Mark of Sanctifaction (Normal)
 							i(51153),	-- Sanctified Ahn'Kahar Blood Hunter's Headpiece
 							i(51151),	-- Sanctified Ahn'Kahar Blood Hunter's Spaulders
 							i(51150),	-- Sanctified Ahn'Kahar Blood Hunter's Tunic
@@ -1837,7 +1837,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							i(51216),	-- Sanctified Ymirjar Lord's Legguards
 							i(51211),	-- Sanctified Ymirjar Lord's Legplates
 						}),
-						i( 52025, {	-- Vanquisher's Mark of Sanctification (Normal)
+						i(52025, {	-- Vanquisher's Mark of Sanctification (Normal)
 							i(51158),	-- Sanctified Bloodmage Hood
 							i(51155),	-- Sanctified Bloodmage Shoulderpads
 							i(51156),	-- Sanctified Bloodmage Robe
@@ -1886,18 +1886,18 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						["criteriaID"] = 1,	-- Lord Marrowgar
 					},
 					i(142094),	-- Fragment of Frozen Bone (PET!)
-					i( 51936),	-- Citadel Enforcer's Claymore
-					i( 51938),	-- Bone Warden's Splitter
-					i( 51937),	-- Bonebreaker Scepter
-					i( 51932),	-- Frost Needle
-					i( 51934),	-- Marrowgar's Scratching Choker
-					i( 51933),	-- Shawl of Nerubian Silk
-					i( 51929),	-- Coldwraith Bracers
-					i( 51930),	-- Cord of the Patronizing Practitioner
-					i( 51935),	-- Linked Scourge Vertebrae
-					i( 51928),	-- Corrupted Silverplate Leggings
-					i( 51931),	-- Ancient Skeletal Boots
-					i( 50346),	-- Sliver of Pure Ice
+					i(51936),	-- Citadel Enforcer's Claymore
+					i(51938),	-- Bone Warden's Splitter
+					i(51937),	-- Bonebreaker Scepter
+					i(51932),	-- Frost Needle
+					i(51934),	-- Marrowgar's Scratching Choker
+					i(51933),	-- Shawl of Nerubian Silk
+					i(51929),	-- Coldwraith Bracers
+					i(51930),	-- Cord of the Patronizing Practitioner
+					i(51935),	-- Linked Scourge Vertebrae
+					i(51928),	-- Corrupted Silverplate Leggings
+					i(51931),	-- Ancient Skeletal Boots
+					i(50346),	-- Sliver of Pure Ice
 				})),
 				cr(36855, e(1625, {	-- Lady Deathwhisper
 					{	-- Heroic: Storming the Citadel (10 player): Lady Deathwhisper
@@ -1953,18 +1953,18 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
 					i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
 					i(142095),	-- Remains of a Blood Beast (PET!)
-					i( 51898),	-- Mag'hari Chieftain's Staff
-					i( 51905),	-- Ramaladni's Blade of Culling
-					i( 51896),	-- Thaumaturge's Crackling Cowl
-					i( 51894),	-- Soulcleave Pendant
-					i( 51902),	-- Blade-Scored Carapace
-					i( 51903),	-- Hauberk of a Thousand Cuts
-					i( 51901),	-- Gargoyle Spit Bracers
-					i( 51904),	-- Scourge Stranglers
-					i( 51895),	-- Deathforged Legplates
-					i( 51897),	-- Leggings of Unrelenting Blood
-					i( 51899),	-- Icecrown Spire Sandals
-					i( 51900),	-- Saurfang's Cold-Forged Band
+					i(51898),	-- Mag'hari Chieftain's Staff
+					i(51905),	-- Ramaladni's Blade of Culling
+					i(51896),	-- Thaumaturge's Crackling Cowl
+					i(51894),	-- Soulcleave Pendant
+					i(51902),	-- Blade-Scored Carapace
+					i(51903),	-- Hauberk of a Thousand Cuts
+					i(51901),	-- Gargoyle Spit Bracers
+					i(51904),	-- Scourge Stranglers
+					i(51895),	-- Deathforged Legplates
+					i(51897),	-- Leggings of Unrelenting Blood
+					i(51899),	-- Icecrown Spire Sandals
+					i(51900),	-- Saurfang's Cold-Forged Band
 				})),
 				n(37904, {	-- Brazie Getz
 					["description"] = "Shows up after killing Deathbring Saurfang in the camp vendors set up",
@@ -2027,18 +2027,18 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
 					i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
 					i(142096),	-- Putricide's Alchemy Supplies (PET!)
-					i( 51868),	-- Flesh-Carving Scalpel
-					i( 51869),	-- The Facelifter
-					i( 51866),	-- Discarded Bag of Entrails
-					i( 51867),	-- Infected Choker
-					i( 51863),	-- Pendant of Split Veins
-					i( 51865),	-- Scalpel-Sharpening Shoulderguards
-					i( 51864),	-- Shoulderpads of the Morbid Ritual
-					i( 51859),	-- Shoulders of Ruinous Senility
-					i( 51861),	-- Chestplate of Septic Stitches
-					i( 51862),	-- Cauterized Cord
-					i( 51860),	-- Rippling Flesh Kilt
-					i( 50344),	-- Unidentifiable Organ
+					i(51868),	-- Flesh-Carving Scalpel
+					i(51869),	-- The Facelifter
+					i(51866),	-- Discarded Bag of Entrails
+					i(51867),	-- Infected Choker
+					i(51863),	-- Pendant of Split Veins
+					i(51865),	-- Scalpel-Sharpening Shoulderguards
+					i(51864),	-- Shoulderpads of the Morbid Ritual
+					i(51859),	-- Shoulders of Ruinous Senility
+					i(51861),	-- Chestplate of Septic Stitches
+					i(51862),	-- Cauterized Cord
+					i(51860),	-- Rippling Flesh Kilt
+					i(50344),	-- Unidentifiable Organ
 				})),
 				{	-- Heroic: The Crimson Hall (10 player): The Crimson Hall
 					["achievementID"] = 4636,	-- Heroic: Fall of the Lich King (10 player)
@@ -2114,18 +2114,18 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
 					i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
 					i(142097),	-- Skull of a Frozen Whelp (PET!)
-					i( 51815),	-- Bleak Coldarra Carver
-					i( 51819),	-- Splintershard
-					i( 51812),	-- Lost Pavise of the Blue Flight
-					i( 51822),	-- Rimetooth Pendant
-					i( 51811),	-- Shoulderguards of Crystalline Bone
-					i( 51813),	-- Robes of Azure Downfall
-					i( 51820),	-- Vambraces of the Frost Wyrm Queen
-					i( 51814),	-- Icicle Shapers
-					i( 51821),	-- Etched Dragonbone Girdle
-					i( 51817),	-- Legplates of Aetheric Strife
-					i( 51816),	-- Scourge Fanged Stompers
-					i( 51818),	-- Wyrmwing Treads
+					i(51815),	-- Bleak Coldarra Carver
+					i(51819),	-- Splintershard
+					i(51812),	-- Lost Pavise of the Blue Flight
+					i(51822),	-- Rimetooth Pendant
+					i(51811),	-- Shoulderguards of Crystalline Bone
+					i(51813),	-- Robes of Azure Downfall
+					i(51820),	-- Vambraces of the Frost Wyrm Queen
+					i(51814),	-- Icicle Shapers
+					i(51821),	-- Etched Dragonbone Girdle
+					i(51817),	-- Legplates of Aetheric Strife
+					i(51816),	-- Scourge Fanged Stompers
+					i(51818),	-- Wyrmwing Treads
 				})),
 				cr(36597, e(1636, {	-- The Lich King
 					{	-- Bane of the Fallen King
@@ -2145,15 +2145,15 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
 					i(142099),	-- Call of the Frozen Blade (PET!)
 					i(138955),	-- Illusion: Rune of Razorice
-					i( 51943),	-- Halion, Staff of Forgotten Love
-					i( 51945),	-- Tainted Twig of Nordrassil
-					i( 51946),	-- Warmace of Menethil
-					i( 51941),	-- Pugius, Fist of Defiance
-					i( 51942),	-- Stormfury, Black Blade of the Betrayer
-					i( 51939),	-- Tel'thas, Dagger of the Blood King
-					i( 51947),	-- Troggbane, Axe of the Frostborne King
-					i( 51944),	-- Valius, Gavel of the Lightbringer
-					i( 51940),	-- Windrunner's Heartseeker
+					i(51943),	-- Halion, Staff of Forgotten Love
+					i(51945),	-- Tainted Twig of Nordrassil
+					i(51946),	-- Warmace of Menethil
+					i(51941),	-- Pugius, Fist of Defiance
+					i(51942),	-- Stormfury, Black Blade of the Betrayer
+					i(51939),	-- Tel'thas, Dagger of the Blood King
+					i(51947),	-- Troggbane, Axe of the Frostborne King
+					i(51944),	-- Valius, Gavel of the Lightbringer
+					i(51940),	-- Windrunner's Heartseeker
 					i(122229),	-- Music Roll: Invincible
 				})),
 			}),
@@ -2184,7 +2184,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 								36597,	-- The Lich King
 							},
 						}),
-						i( 52027, {	-- Conqueror's Mark of Sanctification (Normal)
+						i(52027, {	-- Conqueror's Mark of Sanctification (Normal)
 							i(51184),	-- Sanctified Crimson Acolyte Cowl
 							i(51178),	-- Sanctified Crimson Acolyte Hood
 							i(51182),	-- Sanctified Crimson Acolyte Mantle
@@ -2216,7 +2216,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							i(51171),	-- Sanctified Lightsworn Legguards
 							i(51161),	-- Sanctified Lightsworn Legplates
 						}),
-						i( 52026, {	-- Protector's Mark of Sanctifaction (Normal)
+						i(52026, {	-- Protector's Mark of Sanctifaction (Normal)
 							i(51153),	-- Sanctified Ahn'Kahar Blood Hunter's Headpiece
 							i(51151),	-- Sanctified Ahn'Kahar Blood Hunter's Spaulders
 							i(51150),	-- Sanctified Ahn'Kahar Blood Hunter's Tunic
@@ -2248,7 +2248,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							i(51216),	-- Sanctified Ymirjar Lord's Legguards
 							i(51211),	-- Sanctified Ymirjar Lord's Legplates
 						}),
-						i( 52025, {	-- Vanquisher's Mark of Sanctification (Normal)
+						i(52025, {	-- Vanquisher's Mark of Sanctification (Normal)
 							i(51158),	-- Sanctified Bloodmage Hood
 							i(51155),	-- Sanctified Bloodmage Shoulderpads
 							i(51156),	-- Sanctified Bloodmage Robe
@@ -2300,21 +2300,21 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						["criteriaID"] = 1,	-- Lord Marrowgar
 					},
 					i(142094),	-- Fragment of Frozen Bone (PET!)
-					i( 50415),	-- Bryntroll, the Bone Arbiter
-					i( 49968),	-- Frozen Bonespike
-					i( 49976),	-- Bulwark of Smouldering Steel
-					i( 49952),	-- Snowserpent Mail Helm
-					i( 49975),	-- Bone Sentinel's Amulet
-					i( 49980),	-- Rusted Bonespike Pauldrons
-					i( 49951),	-- Gendarme's Cuirass
-					i( 49960),	-- Bracers of Dark Reckoning
-					i( 49979),	-- Handguards of Winter's Respite
-					i( 49978),	-- Crushing Coldwraith Belt
-					i( 49964),	-- Legguards of Lost Hope
-					i( 49950),	-- Frostbitten Fur Boots
-					i( 49949),	-- Band of the Bone Colossus
-					i( 49977),	-- Loop of the Endless Labyrinth
-					i( 49967),	-- Marrowgar's Frigid Eye
+					i(50415),	-- Bryntroll, the Bone Arbiter
+					i(49968),	-- Frozen Bonespike
+					i(49976),	-- Bulwark of Smouldering Steel
+					i(49952),	-- Snowserpent Mail Helm
+					i(49975),	-- Bone Sentinel's Amulet
+					i(49980),	-- Rusted Bonespike Pauldrons
+					i(49951),	-- Gendarme's Cuirass
+					i(49960),	-- Bracers of Dark Reckoning
+					i(49979),	-- Handguards of Winter's Respite
+					i(49978),	-- Crushing Coldwraith Belt
+					i(49964),	-- Legguards of Lost Hope
+					i(49950),	-- Frostbitten Fur Boots
+					i(49949),	-- Band of the Bone Colossus
+					i(49977),	-- Loop of the Endless Labyrinth
+					i(49967),	-- Marrowgar's Frigid Eye
 				})),
 				cr(36855, e(1625, {	-- Lady Deathwhisper
 					{	-- Full House (25 player)
@@ -2379,11 +2379,11 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
 					i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
 					i(142095),	-- Remains of a Blood Beast (PET!)
-					i( 50412),	-- Bloodvenom Blade
-					i( 50014),	-- Greatcloak of the Turned Champion
-					i( 50333),	-- Toskk's Maximized Wristguards
-					i( 50015),	-- Belt of the Blood Nova
-					i( 50362),	-- Deathbringer's Will
+					i(50412),	-- Bloodvenom Blade
+					i(50014),	-- Greatcloak of the Turned Champion
+					i(50333),	-- Toskk's Maximized Wristguards
+					i(50015),	-- Belt of the Blood Nova
+					i(50362),	-- Deathbringer's Will
 				})),
 				n(37904, {	-- Brazie Getz
 					["description"] = "Shows up after killing Deathbring Saurfang in the camp vendors set up",
@@ -2472,11 +2472,11 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
 					i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
 					i(142096),	-- Putricide's Alchemy Supplies (PET!)
-					i( 50179),	-- Last Word
-					i( 50068),	-- Rigormortis
-					i( 50067),	-- Astrylian's Sutured Cinch
-					i( 50069),	-- Professor's Bloodied Smock
-					i( 50351),	-- Tiny Abomination in a Jar
+					i(50179),	-- Last Word
+					i(50068),	-- Rigormortis
+					i(50067),	-- Astrylian's Sutured Cinch
+					i(50069),	-- Professor's Bloodied Smock
+					i(50351),	-- Tiny Abomination in a Jar
 				})),
 				{	-- Fall of the Lich King (25 player): The Crimson Hall
 					["achievementID"] = 4608,	-- Fall of the Lich King (25 player)
@@ -2547,19 +2547,19 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						["achievementID"] = 4619,	-- Portal Jockey (25 player)
 					},
 					i(138832),	-- Illusion: Earthliving
-					i( 50183),	-- Lungbreaker
-					i( 50472),	-- Nightmare Ender
-					i( 50202),	-- Snowstorm Helm
-					i( 50195),	-- Noose of Malachite
-					i( 50205),	-- Frostbinder's Shredded Cape
-					i( 50418),	-- Robe of the Waking Nightmare
-					i( 50417),	-- Bracers of Eternal Dreaming
-					i( 50188),	-- Anub'ar Stalker's Gloves
-					i( 50187),	-- Coldwraith Links
-					i( 50199),	-- Leggings of Dying Candles
-					i( 50192),	-- Scourge Reaver's Legplates
-					i( 50416),	-- Boots of the Funeral March
-					i( 50190),	-- Grinning Skull Greatboots
+					i(50183),	-- Lungbreaker
+					i(50472),	-- Nightmare Ender
+					i(50202),	-- Snowstorm Helm
+					i(50195),	-- Noose of Malachite
+					i(50205),	-- Frostbinder's Shredded Cape
+					i(50418),	-- Robe of the Waking Nightmare
+					i(50417),	-- Bracers of Eternal Dreaming
+					i(50188),	-- Anub'ar Stalker's Gloves
+					i(50187),	-- Coldwraith Links
+					i(50199),	-- Leggings of Dying Candles
+					i(50192),	-- Scourge Reaver's Legplates
+					i(50416),	-- Boots of the Funeral March
+					i(50190),	-- Grinning Skull Greatboots
 					i(50185),	-- Devium's Eternally Cold Ring
 					i(50186),	-- Frostbrood Sapphire Ring
 				})),
@@ -2575,11 +2575,11 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
 					i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
 					i(142097),	-- Skull of a Frozen Whelp (PET!)
-					i( 50423),	-- Sundial of Eternal Dusk
-					i( 50421),	-- Sindragosa's Cruel Claw
-					i( 50424),	-- Memory of Malygos
-					i( 50360),	-- Phylactery of the Nameless Lich
-					i( 50361),	-- Sindragosa's Flawless Fang
+					i(50423),	-- Sundial of Eternal Dusk
+					i(50421),	-- Sindragosa's Cruel Claw
+					i(50424),	-- Memory of Malygos
+					i(50360),	-- Phylactery of the Nameless Lich
+					i(50361),	-- Sindragosa's Flawless Fang
 				})),
 				cr(36597, e(1636, {	-- The Lich King
 					{	-- Been Waiting a Long Time for This (25 player)
@@ -2605,15 +2605,15 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
 					i(142098),	-- Drudge Remains (PET!)
 					i(138955),	-- Illusion: Rune of Razorice
-					i( 50429),	-- Archus, Greatstaff of Antonidas
-					i( 50070),	-- Glorenzelg, High-Blade of the Silver Hand
-					i( 50425),	-- Oathbinder, Charge of the Ranger-General
-					i( 50427),	-- Bloodsurge, Kel'Thuzad's Blade of Agony
-					i( 50012),	-- Havoc's Call, Blade of Lordaeron Kings
-					i( 50426),	-- Heaven's Fall, Kryss of a Thousand Lies
-					i( 49997),	-- Mithrios, Bronzebeard's Legacy
-					i( 50428),	-- Royal Scepter of Terenas II
-					i( 49981),	-- Fal'inrush, Defender of Quel'thalas
+					i(50429),	-- Archus, Greatstaff of Antonidas
+					i(50070),	-- Glorenzelg, High-Blade of the Silver Hand
+					i(50425),	-- Oathbinder, Charge of the Ranger-General
+					i(50427),	-- Bloodsurge, Kel'Thuzad's Blade of Agony
+					i(50012),	-- Havoc's Call, Blade of Lordaeron Kings
+					i(50426),	-- Heaven's Fall, Kryss of a Thousand Lies
+					i(49997),	-- Mithrios, Bronzebeard's Legacy
+					i(50428),	-- Royal Scepter of Terenas II
+					i(49981),	-- Fal'inrush, Defender of Quel'thalas
 					i(122229),	-- Music Roll: Invincible
 				})),
 			}),
@@ -2644,7 +2644,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 								36597,	-- The Lich King
 							},
 						}),
-						i( 52027, {	-- Conqueror's Mark of Sanctification (Normal)
+						i(52027, {	-- Conqueror's Mark of Sanctification (Normal)
 							i(51184),	-- Sanctified Crimson Acolyte Cowl
 							i(51178),	-- Sanctified Crimson Acolyte Hood
 							i(51182),	-- Sanctified Crimson Acolyte Mantle
@@ -2676,7 +2676,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							i(51171),	-- Sanctified Lightsworn Legguards
 							i(51161),	-- Sanctified Lightsworn Legplates
 						}),
-						i( 52030, {	-- Conqueror's Mark of Sanctification (Heroic)
+						i(52030, {	-- Conqueror's Mark of Sanctification (Heroic)
 							i(51255),	-- Sanctified Crimson Acolyte Cowl
 							i(51261),	-- Sanctified Crimson Acolyte Hood
 							i(51257),	-- Sanctified Crimson Acolyte Mantle
@@ -2708,7 +2708,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							i(51268),	-- Sanctified Lightsworn Legguards
 							i(51278),	-- Sanctified Lightsworn Legplates
 						}),
-						i( 52026, {	-- Protector's Mark of Sanctifaction (Normal)
+						i(52026, {	-- Protector's Mark of Sanctifaction (Normal)
 							i(51153),	-- Sanctified Ahn'Kahar Blood Hunter's Headpiece
 							i(51151),	-- Sanctified Ahn'Kahar Blood Hunter's Spaulders
 							i(51150),	-- Sanctified Ahn'Kahar Blood Hunter's Tunic
@@ -2740,7 +2740,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							i(51216),	-- Sanctified Ymirjar Lord's Legguards
 							i(51211),	-- Sanctified Ymirjar Lord's Legplates
 						}),
-						i( 52029, {	-- Protector's Mark of Sanctifaction (Heroic)
+						i(52029, {	-- Protector's Mark of Sanctifaction (Heroic)
 							i(51286),	-- Sanctified Ahn'Kahar Blood Hunter's Headpiece
 							i(51288),	-- Sanctified Ahn'Kahar Blood Hunter's Spaulders
 							i(51289),	-- Sanctified Ahn'Kahar Blood Hunter's Tunic
@@ -2772,7 +2772,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							i(51223),	-- Sanctified Ymirjar Lord's Legguards
 							i(51228),	-- Sanctified Ymirjar Lord's Legplates
 						}),
-						i( 52025, {	-- Vanquisher's Mark of Sanctification (Normal)
+						i(52025, {	-- Vanquisher's Mark of Sanctification (Normal)
 							i(51158),	-- Sanctified Bloodmage Hood
 							i(51155),	-- Sanctified Bloodmage Shoulderpads
 							i(51156),	-- Sanctified Bloodmage Robe
@@ -2809,7 +2809,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							i(51131),	-- Sanctified Scourgelord Legguards
 							i(51126),	-- Sanctified Scourgelord Legplates
 						}),
-						i( 52028, {	-- Vanquisher's Mark of Sanctification (Heroic)
+						i(52028, {	-- Vanquisher's Mark of Sanctification (Heroic)
 							i(51281),	-- Sanctified Bloodmage Hood
 							i(51284),	-- Sanctified Bloodmage Shoulderpads
 							i(51283),	-- Sanctified Bloodmage Robe
@@ -2858,21 +2858,21 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						["criteriaID"] = 1,	-- Lord Marrowgar
 					},
 					i(142094),	-- Fragment of Frozen Bone (PET!)
-					i( 50709),	-- Bryntroll, the Bone Arbiter
-					i( 50608),	-- Frozen Bonespike
-					i( 50616),	-- Bulwark of Smouldering Steel
-					i( 50605),	-- Snowserpent Mail Helm
-					i( 50609),	-- Bone Sentinel's Amulet
-					i( 50617),	-- Rusted Bonespike Pauldrons
-					i( 50606),	-- Gendarme's Cuirass
-					i( 50611),	-- Bracers of Dark Reckoning
-					i( 50615),	-- Handguards of Winter's Respite
-					i( 50613),	-- Crushing Coldwraith Belt
-					i( 50612),	-- Legguards of Lost Hope
-					i( 50607),	-- Frostbitten Fur Boots
-					i( 50604),	-- Band of the Bone Colossus
-					i( 50614),	-- Loop of the Endless Labyrinth
-					i( 50610),	-- Marrowgar's Frigid Eye
+					i(50709),	-- Bryntroll, the Bone Arbiter
+					i(50608),	-- Frozen Bonespike
+					i(50616),	-- Bulwark of Smouldering Steel
+					i(50605),	-- Snowserpent Mail Helm
+					i(50609),	-- Bone Sentinel's Amulet
+					i(50617),	-- Rusted Bonespike Pauldrons
+					i(50606),	-- Gendarme's Cuirass
+					i(50611),	-- Bracers of Dark Reckoning
+					i(50615),	-- Handguards of Winter's Respite
+					i(50613),	-- Crushing Coldwraith Belt
+					i(50612),	-- Legguards of Lost Hope
+					i(50607),	-- Frostbitten Fur Boots
+					i(50604),	-- Band of the Bone Colossus
+					i(50614),	-- Loop of the Endless Labyrinth
+					i(50610),	-- Marrowgar's Frigid Eye
 				})),
 				cr(36855, e(1625, {	-- Lady Deathwhisper
 					{	-- Heroic: Storming the Citadel (25 player): Lady Deathwhisper
@@ -2928,17 +2928,17 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						["criteriaID"] = 4,	-- The Deathbringer
 					},
 					i(52027),	-- Conqueror's Mark of Sanctification (Normal)
-					i( 52030),	-- Conqueror's Mark of Sanctification (Heroic)
+					i(52030),	-- Conqueror's Mark of Sanctification (Heroic)
 					i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
-					i( 52029),	-- Protector's Mark of Sanctifaction (Heroic)
+					i(52029),	-- Protector's Mark of Sanctifaction (Heroic)
 					i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
-					i( 52028),	-- Vanquisher's Mark of Sanctification (Heroic) 
+					i(52028),	-- Vanquisher's Mark of Sanctification (Heroic) 
 					i(142095),	-- Remains of a Blood Beast (PET!)
-					i( 50672),	-- Bloodvenom Blade
-					i( 50668),	-- Greatcloak of the Turned Champion
-					i( 50670),	-- Toskk's Maximized Wristguards
-					i( 50671),	-- Belt of the Blood Nova
-					i( 50363),	-- Deathbringer's Will
+					i(50672),	-- Bloodvenom Blade
+					i(50668),	-- Greatcloak of the Turned Champion
+					i(50670),	-- Toskk's Maximized Wristguards
+					i(50671),	-- Belt of the Blood Nova
+					i(50363),	-- Deathbringer's Will
 				})),
 				n(37904, {	-- Brazie Getz
 					["description"] = "Shows up after killing Deathbring Saurfang in the camp vendors set up",
@@ -3015,17 +3015,17 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						["criteriaID"] = 3,	-- Professor Putricide
 					},
 					i(52027),	-- Conqueror's Mark of Sanctification (Normal)
-					i( 52030),	-- Conqueror's Mark of Sanctification (Heroic)
+					i(52030),	-- Conqueror's Mark of Sanctification (Heroic)
 					i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
-					i( 52029),	-- Protector's Mark of Sanctifaction (Heroic)
+					i(52029),	-- Protector's Mark of Sanctifaction (Heroic)
 					i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
-					i( 52028),	-- Vanquisher's Mark of Sanctification (Heroic)
+					i(52028),	-- Vanquisher's Mark of Sanctification (Heroic)
 					i(142096),	-- Putricide's Alchemy Supplies (PET!)
-					i( 50708),	-- Last Word
-					i( 50704),	-- Rigormortis
-					i( 50707),	-- Astrylian's Sutured Cinch
-					i( 50705),	-- Professor's Bloodied Smock
-					i( 50706),	-- Tiny Abomination in a Jar
+					i(50708),	-- Last Word
+					i(50704),	-- Rigormortis
+					i(50707),	-- Astrylian's Sutured Cinch
+					i(50705),	-- Professor's Bloodied Smock
+					i(50706),	-- Tiny Abomination in a Jar
 				})),
 				{	-- Heroic: Fall of the Lich King (25 player): The Crimson Hall
 					["achievementID"] = 4637,	-- Heroic: Fall of the Lich King (25 player)
@@ -3058,11 +3058,11 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						["criteriaID"] = 2,	-- Defeat Blood-Queen Lana'thel
 					},
 					i(52027),	-- Conqueror's Mark of Sanctification (Normal)
-					i( 52030),	-- Conqueror's Mark of Sanctification (Heroic)
+					i(52030),	-- Conqueror's Mark of Sanctification (Heroic)
 					i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
-					i( 52029),	-- Protector's Mark of Sanctifaction (Heroic)
+					i(52029),	-- Protector's Mark of Sanctifaction (Heroic)
 					i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
-					i( 52028),	-- Vanquisher's Mark of Sanctification (Heroic)
+					i(52028),	-- Vanquisher's Mark of Sanctification (Heroic)
 					i(50727),	-- Bloodfall
 					i(50725),	-- Dying Light
 					i(50729),	-- Icecrown Glacial Wall
@@ -3080,21 +3080,21 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						["criteriaID"] = 1,	-- Rescue Valithria Dreamwalker
 					},
 					i(138832),	-- Illusion: Earthliving
-					i( 50621),	-- Lungbreaker
-					i( 50631),	-- Nightmare Ender
-					i( 50626),	-- Snowstorm Helm
-					i( 50627),	-- Noose of Malachite
-					i( 50628),	-- Frostbinder's Shredded Cape
-					i( 50629),	-- Robe of the Waking Nightmare
-					i( 50630),	-- Bracers of Eternal Dreaming
-					i( 50619),	-- Anub'ar Stalker's Gloves
-					i( 50620),	-- Coldwraith Links
-					i( 50623),	-- Leggings of Dying Candles
-					i( 50624),	-- Scourge Reaver's Legplates
-					i( 50632),	-- Boots of the Funeral March
-					i( 50625),	-- Grinning Skull Greatboots
-					i( 50622),	-- Devium's Eternally Cold Ring
-					i( 50618),	-- Frostbrood Sapphire Ring
+					i(50621),	-- Lungbreaker
+					i(50631),	-- Nightmare Ender
+					i(50626),	-- Snowstorm Helm
+					i(50627),	-- Noose of Malachite
+					i(50628),	-- Frostbinder's Shredded Cape
+					i(50629),	-- Robe of the Waking Nightmare
+					i(50630),	-- Bracers of Eternal Dreaming
+					i(50619),	-- Anub'ar Stalker's Gloves
+					i(50620),	-- Coldwraith Links
+					i(50623),	-- Leggings of Dying Candles
+					i(50624),	-- Scourge Reaver's Legplates
+					i(50632),	-- Boots of the Funeral March
+					i(50625),	-- Grinning Skull Greatboots
+					i(50622),	-- Devium's Eternally Cold Ring
+					i(50618),	-- Frostbrood Sapphire Ring
 				})),
 				cr(36853, e(1635, {	-- Sindragosa
 					{	-- Heroic: The Frostwing Halls (25 player): Sindragosa
@@ -3127,24 +3127,24 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							},
 						},
 					},
-					i( 50818),	-- Invincible's Reins (MOUNT!)
+					i(50818),	-- Invincible's Reins (MOUNT!)
 					i(52027),	-- Conqueror's Mark of Sanctification (Normal)
-					i( 52030),	-- Conqueror's Mark of Sanctification (Heroic)
+					i(52030),	-- Conqueror's Mark of Sanctification (Heroic)
 					i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
-					i( 52029),	-- Protector's Mark of Sanctifaction (Heroic)
+					i(52029),	-- Protector's Mark of Sanctifaction (Heroic)
 					i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
-					i( 52028),	-- Vanquisher's Mark of Sanctification (Heroic)
+					i(52028),	-- Vanquisher's Mark of Sanctification (Heroic)
 					i(142099),	-- Call of the Frozen Blade (PET!)
 					i(138955),	-- Illusion: Rune of Razorice
-					i( 50731),	-- Archus, Greatstaff of Antonidas
-					i( 50730),	-- Glorenzelg, High-Blade of the Silver Hand
-					i( 50735),	-- Oathbinder, Charge of the Ranger-General
-					i( 50732),	-- Bloodsurge, Kel'Thusad's Blade of Agony
-					i( 50737),	-- Havoc's Call, Blade of Lordaeron Kings
-					i( 50736),	-- Heaven's Fall, Kryss of a Thousand Lies
-					i( 50738),	-- Mithrios, Bronzebeard's Legacy
-					i( 50734),	-- Royal Scepter of Terenas II
-					i( 50733),	-- Fal'inrush, Defender of Quel'thalas
+					i(50731),	-- Archus, Greatstaff of Antonidas
+					i(50730),	-- Glorenzelg, High-Blade of the Silver Hand
+					i(50735),	-- Oathbinder, Charge of the Ranger-General
+					i(50732),	-- Bloodsurge, Kel'Thusad's Blade of Agony
+					i(50737),	-- Havoc's Call, Blade of Lordaeron Kings
+					i(50736),	-- Heaven's Fall, Kryss of a Thousand Lies
+					i(50738),	-- Mithrios, Bronzebeard's Legacy
+					i(50734),	-- Royal Scepter of Terenas II
+					i(50733),	-- Fal'inrush, Defender of Quel'thalas
 					i(122229),	-- Music Roll: Invincible
 				})),
 			}),

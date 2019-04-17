@@ -82,17 +82,17 @@ _.Instances = { tier(1, {	-- Classic
 				})),
 				cr( 3977, e(674, {	-- High Inquisitor Whitemane
 					ach(637),	-- Scarlet Monastery
-					i( 88301),	-- Greatstaff of Righteousness
-					i( 88297),	-- Lightbreaker Greatsword
-					i( 88299),	-- Whitemane's Embroidered Chapeau
-					i( 88303),	-- Crown of Holy Flame
-					i( 88302),	-- Incarnadine Scarlet Spaulders
-					i( 88296),	-- Waistplate of Imminent Resurrection
-					i( 88298),	-- Leggings of Hallowed Fire
-					i( 88295),	-- Dashing Strike Treads
+					i(88301),	-- Greatstaff of Righteousness
+					i(88297),	-- Lightbreaker Greatsword
+					i(88299),	-- Whitemane's Embroidered Chapeau
+					i(88303),	-- Crown of Holy Flame
+					i(88302),	-- Incarnadine Scarlet Spaulders
+					i(88296),	-- Waistplate of Imminent Resurrection
+					i(88298),	-- Leggings of Hallowed Fire
+					i(88295),	-- Dashing Strike Treads
 					i(132549),	-- Deft Strike Treads
-					i( 88300),	-- Triune Signet
-					i( 88294),	-- Flashing Steel Talisman
+					i(88300),	-- Triune Signet
+					i(88294),	-- Flashing Steel Talisman
 				})),
 				n(-40, {	-- Legacy
 					n(-85, {	-- Graveyard

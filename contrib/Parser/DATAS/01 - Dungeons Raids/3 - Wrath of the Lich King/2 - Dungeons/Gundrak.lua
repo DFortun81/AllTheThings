@@ -79,14 +79,14 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						["achievementID"] = 484,	-- Gundrak
 						["criteriaID"] = 1,	-- Slad'ran
 					},
-					i( 35583),	-- Witch Doctor's Wildstaff
-					i( 37626),	-- Wand of Sseratus
-					i( 37627),	-- Snake Den Spaulders
-					i( 35584),	-- Embroidered Gown of Zul'drak
+					i(35583),	-- Witch Doctor's Wildstaff
+					i(37626),	-- Wand of Sseratus
+					i(37627),	-- Snake Den Spaulders
+					i(35584),	-- Embroidered Gown of Zul'drak
 					i(157578),	-- Belt of Vile Concoctions
-					i( 37628),	-- Slad'ran Coiled Cord
-					i( 35585),	-- Cannibal's Legguards
-					i( 37629),	-- Slithering Slippers
+					i(37628),	-- Slad'ran Coiled Cord
+					i(35585),	-- Cannibal's Legguards
+					i(37629),	-- Slithering Slippers
 				})),
 				cr(29307, e(593, {	-- Drakkari Colossus
 					{	-- Gundrak: Drakkari Colossus
@@ -106,14 +106,14 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						["achievementID"] = 484,	-- Gundrak
 						["criteriaID"] = 2,	-- Moorabi
 					},
-					i( 37631),	-- Fist of the Deity
-					i( 35587),	-- Frozen Scepter of Necromancy
-					i( 37633),	-- Ground Tremor Helm
+					i(37631),	-- Fist of the Deity
+					i(35587),	-- Frozen Scepter of Necromancy
+					i(37633),	-- Ground Tremor Helm
 					i(157584),	-- Drape of Moorabi
-					i( 37630),	-- Shroud of Moorabi
-					i( 35588),	-- Forlorn Breastplate of War
-					i( 37632),	-- Mojo Frenzy Greaves
-					i( 35589),	-- Arcane Focal Signet
+					i(37630),	-- Shroud of Moorabi
+					i(35588),	-- Forlorn Breastplate of War
+					i(37632),	-- Mojo Frenzy Greaves
+					i(35589),	-- Arcane Focal Signet
 				})),
 				cr(29306, e(596, {	-- Gal'darah
 					{	-- Gundrak: Gal'darah
@@ -186,14 +186,14 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						{	-- Snakes. Why'd It Have To Be Snakes?
 							["achievementID"] = 2058,	-- Snakes. Why'd It Have To Be Snakes?
 						},
-						i( 35583),	-- Witch Doctor's Wildstaff
-						i( 37626),	-- Wand of Sseratus
-						i( 37627),	-- Snake Den Spaulders
-						i( 35584),	-- Embroidered Gown of Zul'drak
+						i(35583),	-- Witch Doctor's Wildstaff
+						i(37626),	-- Wand of Sseratus
+						i(37627),	-- Snake Den Spaulders
+						i(35584),	-- Embroidered Gown of Zul'drak
 						i(157578),	-- Belt of Vile Concoctions
-						i( 37628),	-- Slad'ran Coiled Cord
-						i( 35585),	-- Cannibal's Legguards
-						i( 37629),	-- Slithering Slippers
+						i(37628),	-- Slad'ran Coiled Cord
+						i(35585),	-- Cannibal's Legguards
+						i(37629),	-- Slithering Slippers
 					})),
 					cr(29307, e(593, {	-- Drakkari Colossus
 						{	-- Heroic: Gundrak: Drakkari Colossus
@@ -216,14 +216,14 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							["achievementID"] = 495,	-- Heroic: Gundrak
 							["criteriaID"] = 2,	-- Moorabi
 						},
-						i( 37631),	-- Fist of the Deity
-						i( 35587),	-- Frozen Scepter of Necromancy
-						i( 37633),	-- Ground Tremor Helm
+						i(37631),	-- Fist of the Deity
+						i(35587),	-- Frozen Scepter of Necromancy
+						i(37633),	-- Ground Tremor Helm
 						i(157584),	-- Drape of Moorabi
-						i( 37630),	-- Shroud of Moorabi
-						i( 35588),	-- Forlorn Breastplate of War
-						i( 37632),	-- Mojo Frenzy Greaves
-						i( 35589),	-- Arcane Focal Signet
+						i(37630),	-- Shroud of Moorabi
+						i(35588),	-- Forlorn Breastplate of War
+						i(37632),	-- Mojo Frenzy Greaves
+						i(35589),	-- Arcane Focal Signet
 					})),
 					cr(29932, e(595, {	-- Eck the Ferocious
 						{	-- Heroic: Gundrak: Eck the Ferocious

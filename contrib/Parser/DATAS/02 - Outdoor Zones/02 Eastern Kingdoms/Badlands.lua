@@ -178,9 +178,9 @@ _.Zones =
 							o(206374, {	-- Trove of the Watchers
 								qa(27794, {	-- Return to Blam
 									["groups"] = {
-										i( 63176),	-- Well Cushioned Boots
-										i( 63175),	-- Hieronymus' Belt
-										i( 63174),	-- Watcher's Spear
+										i(63176),	-- Well Cushioned Boots
+										i(63175),	-- Hieronymus' Belt
+										i(63174),	-- Watcher's Spear
 										i(157008),	-- Blam-Hatchet
 									},
 									["sourceQuests"] = { 27912 },	-- The Titans' Trove
@@ -310,9 +310,9 @@ _.Zones =
 							}),
 							q( 27715, {	-- The Day that Deathwing Came: What Really Happened (awarded "The Day that Deathwing Came" criteria + overall "Badlands Quests" achievement)
 								["groups"] = {
-									i( 63193),	-- Theldurin's Fist
-									i( 63192),  -- Tosselwrench's Shrinker
-									i( 63191),	-- Martek's Knife
+									i(63193),	-- Theldurin's Fist
+									i(63192),  -- Tosselwrench's Shrinker
+									i(63191),	-- Martek's Knife
 									i(156961),	-- Martek's Stick of Truthiness
 									i(156962),	-- Genuine Deathwing Fang
 								},
@@ -945,7 +945,7 @@ _.Zones =
 						})),
 						un(40, q(2418, {	-- Power Stones
 							un(2, i(10358)),	-- Duracin Bracers
-							un(2, i( 9522)),	-- Energized Stone Circle
+							un(2, i(9522)),	-- Energized Stone Circle
 							un(2, i(10359)),	-- Everlast Boots
 						})),
 						un(40, qa(2361, {	-- Restoring the Necklace

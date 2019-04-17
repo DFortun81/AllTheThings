@@ -15,13 +15,13 @@ _.Instances = { tier(1, {	-- Classic
 				q(26870, {	-- Cleansing the Caverns
 					["qg"] = 5768,	-- Ebru
 					["groups"] = {
-						i( 65911), 	-- Anacondra's Robe
-						i( 65985), 	-- Cleansed Pauldrons
-						i( 65961), 	-- Cobrahn's Boots
+						i(65911), 	-- Anacondra's Robe
+						i(65985), 	-- Cleansed Pauldrons
+						i(65961), 	-- Cobrahn's Boots
 						i(131615), 	-- Cobrahn's Scale Gloves
 						i(131616), 	-- Pytha's Chain Boots
-						i( 66003), 	-- Pytha's Vest
-						i( 65937), 	-- Serpentis' Gloves
+						i(66003), 	-- Pytha's Vest
+						i(65937), 	-- Serpentis' Gloves
 					},
 				}),
 				q(26872, {	-- Deviate Hides
@@ -52,28 +52,28 @@ _.Instances = { tier(1, {	-- Classic
 			cr(3671, e(474, { 	-- Lady Anacondra
 				i(151427), 	-- Snake-Charmer's Casque
 				i(132737), 	-- Cavern Slitherer Pauldrons
-				i(  5404), 	-- Serpent's Shoulders
+				i( 5404), 	-- Serpent's Shoulders
 				i(151426),	-- Lady Anacondra's Satin Cuffs
-				i( 10412), 	-- Belt of the Fang
+				i(10412), 	-- Belt of the Fang
 				i(132740), 	-- Slither-Scale Cord
-				i(  6446),	-- Snakeskin Bag
+				i( 6446),	-- Snakeskin Bag
 			})),
 			cr(3653, e(477, { 	-- Kresh
-				i( 13245), 	-- Kresh's Back
-				i(  6447), 	-- Worn Turtle Shell Shield
+				i(13245), 	-- Kresh's Back
+				i( 6447), 	-- Worn Turtle Shell Shield
 				i(151430),	-- Hematite Tortoise Pendant
 			})),
 			cr(3670, e(476, { 	-- Lord Pythas
-				i(  6472), 	-- Stinging Viper
+				i( 6472), 	-- Stinging Viper
 				i(151429),	-- Lord Pythas' Pauldrons
-				i(  6473), 	-- Armor of the Fang
+				i( 6473), 	-- Armor of the Fang
 				i(132739), 	-- Slither-Scale Hauberk
 				i(151428),	-- Slumbersilk Waistcord
 			})),
 			cr(3669, e(475, { 	-- Lord Cobrahn
-				i(  6465), 	-- Robe of the Moccasin
-				i(  6460), 	-- Cobrahn's Grasp
-				i( 10410), 	-- Leggings of the Fang
+				i( 6465), 	-- Robe of the Moccasin
+				i( 6460), 	-- Cobrahn's Grasp
+				i(10410), 	-- Leggings of the Fang
 				i(132742), 	-- Slither-Scale Britches
 			})),
 			cr(3674, e(478, { 	-- Skum
@@ -88,10 +88,10 @@ _.Instances = { tier(1, {	-- Classic
 				},
 			}),
 			cr(3673, e(479, { 	-- Lord Serpentis
-				i(  6469), 	-- Venomstrike
-				i(  5970), 	-- Serpent Gloves
-				i( 10411), 	-- Footpads of the Fang
-				i(  6459), 	-- Savage Trodders
+				i( 6469), 	-- Venomstrike
+				i( 5970), 	-- Serpent Gloves
+				i(10411), 	-- Footpads of the Fang
+				i( 6459), 	-- Savage Trodders
 				i(132741), 	-- Slither-Scale Boots
 			})),
 			cr(5775, e(480, { 	-- Verdan the Everliving

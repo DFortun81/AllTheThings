@@ -82,13 +82,13 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							["achievementID"] = 477,	-- Utgarde Keep
 							["criteriaID"] = 1,	-- Prince Keleseth
 						},
-					i( 37179),	-- Infantry Assault Blade
-					i( 35570),	-- Keleseth's Blade of Evocation
-					i( 37177),	-- Wand of the San'layn
-					i( 37180),	-- Battlemap Hide Helm
-					i( 35572),	-- Reinforced Velvet Helm
-					i( 35571),	-- Dragon Stabler's Gauntlets
-					i( 37178),	-- Strategist's Belt
+					i(37179),	-- Infantry Assault Blade
+					i(35570),	-- Keleseth's Blade of Evocation
+					i(37177),	-- Wand of the San'layn
+					i(37180),	-- Battlemap Hide Helm
+					i(35572),	-- Reinforced Velvet Helm
+					i(35571),	-- Dragon Stabler's Gauntlets
+					i(37178),	-- Strategist's Belt
 				})),
 				cr(24200, e(639, {	-- Skarvald the Constructor and Dalronn the Controller
 					{	-- Utgarde Keep: Dalronn the Controller
@@ -99,14 +99,14 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						["achievementID"] = 477,	-- Utgarde Keep
 						["criteriaID"] = 2,	-- Skarvald the Constructor
 					},
-					i( 35573),	-- Arm Blade of Augelmir
-					i( 37181),	-- Dagger of Betrayal
+					i(35573),	-- Arm Blade of Augelmir
+					i(37181),	-- Dagger of Betrayal
 					i(157555),	-- Constructor's Worklight
-					i( 37182),	-- Helmet of the Constructor
-					i( 35574),	-- Chestplate of the Northern Lights
-					i( 37184),	-- Dalronn's Jerkin
-					i( 35575),	-- Skarvald's Dragonskin Habergeon
-					i( 37183),	-- Bindings of the Tunneler
+					i(37182),	-- Helmet of the Constructor
+					i(35574),	-- Chestplate of the Northern Lights
+					i(37184),	-- Dalronn's Jerkin
+					i(35575),	-- Skarvald's Dragonskin Habergeon
+					i(37183),	-- Bindings of the Tunneler
 				})),
 				cr(23954, e(640, {	-- Ingvar the Plunderer
 					{	-- Utgarde Keep: Ingvar the Plunderer
@@ -190,13 +190,13 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							["achievementID"] = 489,	-- Heroic: Utgarde Keep
 							["criteriaID"] = 1,	-- Prince Keleseth
 						},
-						i( 37179),	-- Infantry Assault Blade
-						i( 35570),	-- Keleseth's Blade of Evocation
-						i( 37177),	-- Wand of the San'layn
-						i( 37180),	-- Battlemap Hide Helm
-						i( 35572),	-- Reinforced Velvet Helm
-						i( 35571),	-- Dragon Stabler's Gauntlets
-						i( 37178),	-- Strategist's Belt
+						i(37179),	-- Infantry Assault Blade
+						i(35570),	-- Keleseth's Blade of Evocation
+						i(37177),	-- Wand of the San'layn
+						i(37180),	-- Battlemap Hide Helm
+						i(35572),	-- Reinforced Velvet Helm
+						i(35571),	-- Dragon Stabler's Gauntlets
+						i(37178),	-- Strategist's Belt
 					})),
 					cr(24200, e(639, {	-- Skarvald the Constructor and Dalronn the Controller
 						{	-- Heroic: Utgarde Keep: Dalronn the Controller
@@ -207,14 +207,14 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							["achievementID"] = 489,	-- Heroic: Utgarde Keep
 							["criteriaID"] = 2,	-- Skarvald the Constructor
 						},
-						i( 35573),	-- Arm Blade of Augelmir
-						i( 37181),	-- Dagger of Betrayal
+						i(35573),	-- Arm Blade of Augelmir
+						i(37181),	-- Dagger of Betrayal
 						i(157555),	-- Constructor's Worklight
-						i( 37182),	-- Helmet of the Constructor
-						i( 35574),	-- Chestplate of the Northern Lights
-						i( 37184),	-- Dalronn's Jerkin
-						i( 35575),	-- Skarvald's Dragonskin Habergeon
-						i( 37183),	-- Bindings of the Tunneler
+						i(37182),	-- Helmet of the Constructor
+						i(35574),	-- Chestplate of the Northern Lights
+						i(37184),	-- Dalronn's Jerkin
+						i(35575),	-- Skarvald's Dragonskin Habergeon
+						i(37183),	-- Bindings of the Tunneler
 					})),
 					cr(23954, e(640, {	-- Ingvar the Plunderer
 						{	-- Champion of the Frozen Wastes

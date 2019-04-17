@@ -265,7 +265,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					e(530, {	-- Selin Fireheart
 						["creatureID"] = 24723,
 						["groups"] = {
-							i( 35275), 	-- Orb of Sin'dorei (TOY!)
+							i(35275), 	-- Orb of Sin'dorei (TOY!)
 							i(133467), 	-- Jaded Crystal Dagger
 							i(133433), 	-- Sun-Forged Cleaver
 							i(133465), 	-- Shoulderplates of Everlasting Pain
@@ -282,7 +282,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					e(531, {	-- Vexallus
 						["creatureID"] = 24744,
 						["groups"] = {
-							i( 35275), 	-- Orb of Sin'dorei (TOY!)
+							i(35275), 	-- Orb of Sin'dorei (TOY!)
 							i(133471), 	-- Rod of the Blazing Light
 							i(133469), 	-- Edge of Oppression
 							i(133437), 	-- Latro's Dancing Blade
@@ -300,7 +300,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					e(532, {	-- Priestess Delrissa
 						["creatureID"] = 24560,
 						["groups"] = {
-							i( 35275), 	-- Orb of Sin'dorei (TOY!)
+							i(35275), 	-- Orb of Sin'dorei (TOY!)
 							i(133446), 	-- Battle-Mace of the High Priestess
 							i(133444), 	-- Duskhallow Mantle
 							i(133448), 	-- Cloak of the Betrayed
@@ -317,9 +317,9 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					e(533, {	-- Kael'thas Sunstrider
 						["creatureID"] = 24664,
 						["groups"] = {
-							i( 35275), 	-- Orb of Sin'dorei (TOY!)
-							i( 35504),	-- Phoenix Hatchling (PET!)
-							i( 35513), 	-- Swift White Hawkstrider (MOUNT!)
+							i(35275), 	-- Orb of Sin'dorei (TOY!)
+							i(35504),	-- Phoenix Hatchling (PET!)
+							i(35513), 	-- Swift White Hawkstrider (MOUNT!)
 							i(133450), 	-- Axe of Shattered Dreams
 							i(133453), 	-- Sun-Infused Focus Staff
 							i(133479), 	-- Breeching Comet

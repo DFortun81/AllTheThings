@@ -75,28 +75,28 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						["achievementID"] = 480,	-- Azjol-Nerub
 						["criteriaID"] = 1,	-- Krik'thir the Gatewatcher slain
 					},
-					i( 35655),	-- Cobweb Machete
-					i( 37216),	-- Facade Shield of Glyphs
+					i(35655),	-- Cobweb Machete
+					i(37216),	-- Facade Shield of Glyphs
 					i(157582),	-- Nerubian Mantle
-					i( 37219),	-- Custodian's Chestpiece
-					i( 37217),	-- Golden Limb Bands
-					i( 35656),	-- Aura Focused Gauntlets
-					i( 35657),	-- Exquisite Spider-Silk Footwraps
-					i( 37218),	-- Stone-Worn Footwraps
+					i(37219),	-- Custodian's Chestpiece
+					i(37217),	-- Golden Limb Bands
+					i(35656),	-- Aura Focused Gauntlets
+					i(35657),	-- Exquisite Spider-Silk Footwraps
+					i(37218),	-- Stone-Worn Footwraps
 				})),
 				cr(28921, e(586, {	-- Hadronox
 					{
 						["achievementID"] = 480,	-- Azjol-Nerub
 						["criteriaID"] = 2,	-- Hadronox slain
 					},
-					i( 35658),	-- Life-Staff of the Web Lair
-					i( 35660),	-- Spinneret Epaulets
-					i( 37222),	-- Egg Sac Robes
-					i( 37230),	-- Grotto Mist Gloves
+					i(35658),	-- Life-Staff of the Web Lair
+					i(35660),	-- Spinneret Epaulets
+					i(37222),	-- Egg Sac Robes
+					i(37230),	-- Grotto Mist Gloves
 					i(157581),	-- Skittering Gauntlets
-					i( 37221),	-- Hollowed Mandibles Legplates
-					i( 35659),	-- Treads of Aspiring Heights
-					i( 37220),	-- Essence of Gossamer
+					i(37221),	-- Hollowed Mandibles Legplates
+					i(35659),	-- Treads of Aspiring Heights
+					i(37220),	-- Essence of Gossamer
 				})),
 				cr(29120, e(587, {	-- Anub'arak
 					{
@@ -157,14 +157,14 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							["achievementID"] = 491,	-- Heroic: Azjol-Nerub
 							["criteriaID"] = 1,	-- Krik'thir the Gatewatcher slain
 						},
-						i( 35655),	-- Cobweb Machete
-						i( 37216),	-- Facade Shield of Glyphs
+						i(35655),	-- Cobweb Machete
+						i(37216),	-- Facade Shield of Glyphs
 						i(157582),	-- Nerubian Mantle
-						i( 37219),	-- Custodian's Chestpiece
-						i( 37217),	-- Golden Limb Bands
-						i( 35656),	-- Aura Focused Gauntlets
-						i( 35657),	-- Exquisite Spider-Silk Footwraps
-						i( 37218),	-- Stone-Worn Footwraps
+						i(37219),	-- Custodian's Chestpiece
+						i(37217),	-- Golden Limb Bands
+						i(35656),	-- Aura Focused Gauntlets
+						i(35657),	-- Exquisite Spider-Silk Footwraps
+						i(37218),	-- Stone-Worn Footwraps
 					})),
 					cr(28921, e(586, {	-- Hadronox
 						ach(1297),	-- Hadronox Denied
@@ -172,14 +172,14 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							["achievementID"] = 491,	-- Heroic: Azjol-Nerub
 							["criteriaID"] = 2,	-- Hadronox slain
 						},
-						i( 35658),	-- Life-Staff of the Web Lair
-						i( 35660),	-- Spinneret Epaulets
-						i( 37222),	-- Egg Sac Robes
-						i( 37230),	-- Grotto Mist Gloves
+						i(35658),	-- Life-Staff of the Web Lair
+						i(35660),	-- Spinneret Epaulets
+						i(37222),	-- Egg Sac Robes
+						i(37230),	-- Grotto Mist Gloves
 						i(157581),	-- Skittering Gauntlets
-						i( 37221),	-- Hollowed Mandibles Legplates
-						i( 35659),	-- Treads of Aspiring Heights
-						i( 37220),	-- Essence of Gossamer
+						i(37221),	-- Hollowed Mandibles Legplates
+						i(35659),	-- Treads of Aspiring Heights
+						i(37220),	-- Essence of Gossamer
 					})),
 					cr(29120, e(587, {	-- Anub'arak
 						{

@@ -95,15 +95,15 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						["achievementID"] = 488,	-- Utgarde Pinnacle
 						["criteriaID"] = 1,	-- Skadi the Ruthless
 					},
-					i( 37053),	-- Amulet of Deflected Blows
-					i( 37389),	-- Crenelation Leggings
-					i( 37057),	-- Dark Rider's Tunic
-					i( 37056),	-- Harpooner's Striders
-					i( 37377),	-- Netherbreath Spellblade
-					i( 37055),	-- Silken Amice of the Ymijar
-					i( 37379),	-- Skadi's Iron Belt
+					i(37053),	-- Amulet of Deflected Blows
+					i(37389),	-- Crenelation Leggings
+					i(37057),	-- Dark Rider's Tunic
+					i(37056),	-- Harpooner's Striders
+					i(37377),	-- Netherbreath Spellblade
+					i(37055),	-- Silken Amice of the Ymijar
+					i(37379),	-- Skadi's Iron Belt
 					i(157560), 	-- Skadi's Scaled Boots
-					i( 37384),	-- Staff of Wayward Principles							
+					i(37384),	-- Staff of Wayward Principles							
 				})),
 				cr(26861, e(644, {	-- King Ymiron
 					{	-- Utgarde Pinnacle: King Ymiron
@@ -174,15 +174,15 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							["achievementID"] = 499,	-- Heroic: Utgarde Pinnacle
 							["criteriaID"] = 3,	-- Skadi the Ruthless
 						},
-						i( 44151),	-- Reins of the Blue Proto-Drake (MOUNT!)
-						i( 37384),	-- Staff of Wayward Principles
-						i( 37377),	-- Netherbreath Spellblade
-						i( 37053),	-- Amulet of Deflected Blows
-						i( 37055),	-- Silken Amice of the Ymijar
-						i( 37057),	-- Dark Rider's Tunic
-						i( 37379),	-- Skadi's Iron Belt
-						i( 37389),	-- Crenelation Leggings
-						i( 37056),	-- Harpooner's Striders
+						i(44151),	-- Reins of the Blue Proto-Drake (MOUNT!)
+						i(37384),	-- Staff of Wayward Principles
+						i(37377),	-- Netherbreath Spellblade
+						i(37053),	-- Amulet of Deflected Blows
+						i(37055),	-- Silken Amice of the Ymijar
+						i(37057),	-- Dark Rider's Tunic
+						i(37379),	-- Skadi's Iron Belt
+						i(37389),	-- Crenelation Leggings
+						i(37056),	-- Harpooner's Striders
 						i(157560), 	-- Skadi's Scaled Boots
 					})),
 					cr(26861, e(644, {	-- King Ymiron
@@ -244,7 +244,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(127485),	-- Ring of the Frenzied Wolvar
 					})),
 					cr(26693, e(643, {	-- Skadi the Ruthless
-						i( 44151),	-- Reins of the Blue Proto-Drake (MOUNT!)
+						i(44151),	-- Reins of the Blue Proto-Drake (MOUNT!)
 						i(127491),	-- Staff of Wayward Principles
 						i(127489),	-- Netherbreath Spellblade
 						i(127466),	-- Amulet of Deflected Blows

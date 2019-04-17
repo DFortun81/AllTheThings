@@ -100,7 +100,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(25946),	-- Nethershade Boots
 						i(27822),	-- Crystal Band of Valor
 					})),
-					i( 32092, {	-- The Eye of Haramad
+					i(32092, {	-- The Eye of Haramad
 						cr(22927, e(536, {	-- Yor
 							i(31570),	-- Mistshroud Tunic
 							i(31562),	-- Skystalker's Tunic
@@ -173,7 +173,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(127222),	-- Nethershade Boots
 						i(127239),	-- Crystal Band of Valor
 					})),
-					i( 32092, {	-- The Eye of Haramad
+					i(32092, {	-- The Eye of Haramad
 						cr(22930, e(536, {	-- Yor
 							i(127422),	-- Mistshroud Tunic
 							i(127421),	-- Skystalker's Tunic

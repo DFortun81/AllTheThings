@@ -32,12 +32,12 @@ _.Instances = { tier(1, {	-- Classic
 					i(88265),	-- Beastbinder Ring
 				})),
 				cr(58632, e(654, {	-- Armsmaster Harlan
-					i( 23192),	-- Tabard of the Scarlet Crusade
-					i( 88272),	-- The Gleaming Ravager
-					i( 88273),	-- Armsmaster's Sealed Locket
-					i( 88271),	-- Harlan's Shoulders
-					i( 88270),	-- Lightblade Bracer
-					i( 88269),	-- Scarlet Sandals
+					i(23192),	-- Tabard of the Scarlet Crusade
+					i(88272),	-- The Gleaming Ravager
+					i(88273),	-- Armsmaster's Sealed Locket
+					i(88271),	-- Harlan's Shoulders
+					i(88270),	-- Lightblade Bracer
+					i(88269),	-- Scarlet Sandals
 					i(132550),	-- Scarlet Chain Footpads
 				})),
 				cr(59150, e(656, {	-- Flameweaver Koegler

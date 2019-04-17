@@ -85,29 +85,29 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						["achievementID"] = 486,	-- Halls of Lightning
 						["criteriaID"] = 1,			-- General Bjarngrim
 					},
-					i( 36980),	-- Hewn Sparring Quarterstaff
+					i(36980),	-- Hewn Sparring Quarterstaff
 					i(157580), 	-- Spark of the Forge
-					i( 37814),	-- Iron Dwarf Smith Pauldrons
-					i( 36982),	-- Mantle of Electrical Charges
-					i( 37825),	-- Traditionally Dyed Handguards
-					i( 37826),	-- The General's Steel Girdle
-					i( 37818),	-- Patroller's War-Kilt
-					i( 36979),	-- Bjarngrim Family Signet
+					i(37814),	-- Iron Dwarf Smith Pauldrons
+					i(36982),	-- Mantle of Electrical Charges
+					i(37825),	-- Traditionally Dyed Handguards
+					i(37826),	-- The General's Steel Girdle
+					i(37818),	-- Patroller's War-Kilt
+					i(36979),	-- Bjarngrim Family Signet
 				})),
 				cr(28587, e(598, {	-- Volkhan
 					{	-- Halls of Lightning: Volkhan
 						["achievementID"] = 486,	-- Halls of Lightning
 						["criteriaID"] = 3,			-- Volkhan
 					},
-					i( 36984),	-- Eternally Folded Blade
-					i( 36985),	-- Volkhan's Hood
-					i( 36983),	-- Cape of Seething Steam
-					i( 37840),	-- Shroud of Reverberation
-					i( 37843),	-- Giant-Hair Woven Gloves
-					i( 37842),	-- Belt of Vivacity
-					i( 36986),	-- Kilt of Molten Golems
+					i(36984),	-- Eternally Folded Blade
+					i(36985),	-- Volkhan's Hood
+					i(36983),	-- Cape of Seething Steam
+					i(37840),	-- Shroud of Reverberation
+					i(37843),	-- Giant-Hair Woven Gloves
+					i(37842),	-- Belt of Vivacity
+					i(36986),	-- Kilt of Molten Golems
 					i(157579), 	-- Slag-Stained Legplates
-					i( 37841),	-- Slag Footguards
+					i(37841),	-- Slag Footguards
 				})),
 				cr(28546, e(599, {	-- Ionar
 					{	-- Halls of Lightning: Ionar
@@ -129,22 +129,22 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						["criteriaID"] = 4,			-- Loken
 					},
 					i(41799),	-- Design: Eternal Earthsiege Diamond
-					i( 37848),	-- Lightning Giant Staff
-					i( 37852),	-- Colossal Skull-Clad Cleaver
-					i( 36989),	-- Ancient Measuring Rod
-					i( 36994),	-- Projectile Activator
-					i( 37849),	-- Planetary Helm
-					i( 36988),	-- Chaotic Spiral Amulet
-					i( 36996),	-- Hood of the Furtive Assassin
-					i( 36991),	-- Raiments of the Titans
-					i( 37851),	-- Ornate Woolen Stola
-					i( 37853),	-- Advanced Tooled-Leather Bands
-					i( 36995),	-- Fists of Loken
-					i( 37850),	-- Flowing Sash of Order
-					i( 37855),	-- Mail Girdle of the Audient Earth
-					i( 36992),	-- Leather-Braced Chain Leggins
-					i( 37854),	-- Woven Bracae Leggings
-					i( 36993),	-- Seal of the Pantheon
+					i(37848),	-- Lightning Giant Staff
+					i(37852),	-- Colossal Skull-Clad Cleaver
+					i(36989),	-- Ancient Measuring Rod
+					i(36994),	-- Projectile Activator
+					i(37849),	-- Planetary Helm
+					i(36988),	-- Chaotic Spiral Amulet
+					i(36996),	-- Hood of the Furtive Assassin
+					i(36991),	-- Raiments of the Titans
+					i(37851),	-- Ornate Woolen Stola
+					i(37853),	-- Advanced Tooled-Leather Bands
+					i(36995),	-- Fists of Loken
+					i(37850),	-- Flowing Sash of Order
+					i(37855),	-- Mail Girdle of the Audient Earth
+					i(36992),	-- Leather-Braced Chain Leggins
+					i(37854),	-- Woven Bracae Leggings
+					i(36993),	-- Seal of the Pantheon
 					i(122237),	-- Music Roll: Mountains of Thunder
 				})),
 			}),
@@ -204,14 +204,14 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						{	-- Lightning Struck
 							["achievementID"] = 1834,	-- Lightning Struck
 						},
-						i( 36980),	-- Hewn Sparring Quarterstaff
+						i(36980),	-- Hewn Sparring Quarterstaff
 						i(157580), 	-- Spark of the Forge
-						i( 37814),	-- Iron Dwarf Smith Pauldrons
-						i( 36982),	-- Mantle of Electrical Charges
-						i( 37825),	-- Traditionally Dyed Handguards
-						i( 37826),	-- The General's Steel Girdle
-						i( 37818),	-- Patroller's War-Kilt
-						i( 36979),	-- Bjarngrim Family Signet
+						i(37814),	-- Iron Dwarf Smith Pauldrons
+						i(36982),	-- Mantle of Electrical Charges
+						i(37825),	-- Traditionally Dyed Handguards
+						i(37826),	-- The General's Steel Girdle
+						i(37818),	-- Patroller's War-Kilt
+						i(36979),	-- Bjarngrim Family Signet
 					})),
 					cr(28587, e(598, {	-- Volkhan
 						{	-- Heroic: Halls of Lightning: Volkhan
@@ -221,15 +221,15 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						{	-- Shatter Resistant
 							["achievementID"] = 2042,	-- Shatter Resistant
 						},
-						i( 36984),	-- Eternally Folded Blade
-						i( 36985),	-- Volkhan's Hood
-						i( 36983),	-- Cape of Seething Steam
-						i( 37840),	-- Shroud of Reverberation
-						i( 37843),	-- Giant-Hair Woven Gloves
-						i( 37842),	-- Belt of Vivacity
-						i( 36986),	-- Kilt of Molten Golems
+						i(36984),	-- Eternally Folded Blade
+						i(36985),	-- Volkhan's Hood
+						i(36983),	-- Cape of Seething Steam
+						i(37840),	-- Shroud of Reverberation
+						i(37843),	-- Giant-Hair Woven Gloves
+						i(37842),	-- Belt of Vivacity
+						i(36986),	-- Kilt of Molten Golems
 						i(157579), 	-- Slag-Stained Legplates
-						i( 37841),	-- Slag Footguards
+						i(37841),	-- Slag Footguards
 					})),
 					cr(28546, e(599, {	-- Ionar
 						{	-- Heroic: Halls of Lightning: Ionar
@@ -258,22 +258,22 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							["achievementID"] = 1867,	-- Timely Death
 						},
 						i(41799),	-- Design: Eternal Earthsiege Diamond
-						i( 37848),	-- Lightning Giant Staff
-						i( 37852),	-- Colossal Skull-Clad Cleaver
-						i( 36989),	-- Ancient Measuring Rod
-						i( 36994),	-- Projectile Activator
-						i( 37849),	-- Planetary Helm
-						i( 36988),	-- Chaotic Spiral Amulet
-						i( 36996),	-- Hood of the Furtive Assassin
-						i( 36991),	-- Raiments of the Titans
-						i( 37851),	-- Ornate Woolen Stola
-						i( 37853),	-- Advanced Tooled-Leather Bands
-						i( 36995),	-- Fists of Loken
-						i( 37850),	-- Flowing Sash of Order
-						i( 37855),	-- Mail Girdle of the Audient Earth
-						i( 36992),	-- Leather-Braced Chain Leggins
-						i( 37854),	-- Woven Bracae Leggings
-						i( 36993),	-- Seal of the Pantheon
+						i(37848),	-- Lightning Giant Staff
+						i(37852),	-- Colossal Skull-Clad Cleaver
+						i(36989),	-- Ancient Measuring Rod
+						i(36994),	-- Projectile Activator
+						i(37849),	-- Planetary Helm
+						i(36988),	-- Chaotic Spiral Amulet
+						i(36996),	-- Hood of the Furtive Assassin
+						i(36991),	-- Raiments of the Titans
+						i(37851),	-- Ornate Woolen Stola
+						i(37853),	-- Advanced Tooled-Leather Bands
+						i(36995),	-- Fists of Loken
+						i(37850),	-- Flowing Sash of Order
+						i(37855),	-- Mail Girdle of the Audient Earth
+						i(36992),	-- Leather-Braced Chain Leggins
+						i(37854),	-- Woven Bracae Leggings
+						i(36993),	-- Seal of the Pantheon
 						i(122237),	-- Music Roll: Mountains of Thunder
 					})),
 				},

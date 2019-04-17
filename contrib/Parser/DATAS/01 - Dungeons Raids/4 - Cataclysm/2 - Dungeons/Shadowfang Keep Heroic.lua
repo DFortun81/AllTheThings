@@ -62,16 +62,16 @@ _.Instances = { tier(4, {	-- Cataclysm
 						{	-- Heroic: Shadowfang Keep
 							["achievementID"] = 5093,	-- Heroic: Shadowfang Keep
 						},
-						i( 63461),	-- Staff of Isolation
-						i( 63456),	-- Meteor Shard
-						i( 63459),	-- Worgen Hunter's Helm
-						i( 63462),	-- Helm of Untold Stories
-						i( 63465),	-- Mantle of Loss
-						i( 63463),	-- Mantle of the Eastern Lords
-						i( 63458),	-- Lord Walden's Breastplate
+						i(63461),	-- Staff of Isolation
+						i(63456),	-- Meteor Shard
+						i(63459),	-- Worgen Hunter's Helm
+						i(63462),	-- Helm of Untold Stories
+						i(63465),	-- Mantle of Loss
+						i(63463),	-- Mantle of the Eastern Lords
+						i(63458),	-- Lord Walden's Breastplate
 						i(157617),	-- Wolfshide Vest
-						i( 63457),	-- Shackles of Undeath
-						i( 63464),	-- Greaves of the Misguided
+						i(63457),	-- Shackles of Undeath
+						i(63464),	-- Greaves of the Misguided
 					})),
 				},
 			}),

@@ -316,16 +316,16 @@ _.Instances = { tier(1, {	-- Classic
 			}),
 			cr(7361, e(419, {	-- Grubbis
 				i(151080),	-- Grubbis' Protective Pail
-				i( 9445),	-- Grubbis Paws
+				i(9445),	-- Grubbis Paws
 				i(151079),	-- Chomper-Hide Belt
 				i(151078),	-- Shabby Trogg Britches
 			})),
 			cr(7079, e(420, {	-- Viscous Fallout
-				i( 9452),	-- Hydrocane
-				i( 9453),	-- Toxic Revenger
+				i(9452),	-- Hydrocane
+				i(9453),	-- Toxic Revenger
 				i(151081),	-- Gnomish Rebreather
 				i(151082),	-- Lead Apron
-				i( 9454),	-- Acidic Walkers
+				i(9454),	-- Acidic Walkers
 				i(151083),	-- Hazmat Galoshes
 			})),
 			cr(6235, e(421, {	-- Electrocutioner 6000
@@ -334,11 +334,11 @@ _.Instances = { tier(1, {	-- Classic
 				i(9447),	-- Electrocutioner Lagnut
 			})),
 			cr(6229, e(418, {	-- Crowd Pummeler 9-60
-				i( 9449),	-- Manual Crowd Pummeler
+				i(9449),	-- Manual Crowd Pummeler
 				i(151085),	-- Glitchbot Helm
 				i(151084),	-- Grease-Smudged Sash
 				i(132558),	-- Bot Operator's Treads
-				i( 9450),	-- Gnomebot Operating Boots
+				i(9450),	-- Gnomebot Operating Boots
 			})),
 			n( 6228, {			-- Dark Iron Ambassador
 				["description"] = "This is a rare that is not always present.",

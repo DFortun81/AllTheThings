@@ -209,7 +209,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 								i(86890),	-- Terror in the Mists
 							})),
 							cr(60999, e(709, {	-- Sha of Fear
-								i( 89274, {	-- Helm of the Shadowy Conqueror
+								i(89274, {	-- Helm of the Shadowy Conqueror
 									i(86661),	-- White Tiger Faceguard
 									i(86686),	-- White Tiger Headguard
 									i(86681),	-- White Tiger Helmet
@@ -217,7 +217,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 									i(86705),	-- Guardian Serpent Hood
 									i(86710),	-- Sha-Skin Hood
 								}),
-								i( 89275, {	-- Helm of the Shadowy Protector
+								i(89275, {	-- Helm of the Shadowy Protector
 									i(86636),	-- Yaungol Slayer's Headguard
 									i(86726),	-- Red Crane Crown
 									i(86736),	-- Red Crane Headpiece
@@ -228,7 +228,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 									i(86666),	-- Faceguard of Resounding Rings
 									i(86673),	-- Helmet of Resounding Rings
 								}),
-								i( 89273, {	-- Helm of the Shadowy Vanquisher
+								i(89273, {	-- Helm of the Shadowy Vanquisher
 									i(86656),	-- Faceguard of the Lost Catacomb
 									i(86676),	-- Helmet of the Lost Catacomb
 									i(86647),	-- Eternal Blossom Cover
@@ -238,13 +238,13 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 									i(86717),	-- Hood of the Burning Scroll
 									i(86641),	-- Helmet of the Thousandfold Blades
 								}),
-								i( 86905),	-- Shin'ka, Execution of Dominion
-								i( 86906),	-- Kilrak, Jaws of Terror
-								i( 89984),	-- Robes of Pinioned Eyes
-								i( 89985),	-- Wrap of Instant Petrification
-								i( 89986),	-- Shadowgrip Girdle
-								i( 86908),	-- Dreadwoven Leggings of Failure
-								i( 86907),	-- Essence of Terror
+								i(86905),	-- Shin'ka, Execution of Dominion
+								i(86906),	-- Kilrak, Jaws of Terror
+								i(89984),	-- Robes of Pinioned Eyes
+								i(89985),	-- Wrap of Instant Petrification
+								i(89986),	-- Shadowgrip Girdle
+								i(86908),	-- Dreadwoven Leggings of Failure
+								i(86907),	-- Essence of Terror
 								i(122199),	-- Music Roll: Heart of Pandaria
 							})),
 						},
@@ -408,7 +408,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					})),
 					cr(60999, e(709, {	-- Sha of Fear
 						ach(6825),	-- The Mind-Killer
-						i( 89235, {	-- Helm of the Shadowy Conqueror
+						i(89235, {	-- Helm of the Shadowy Conqueror
 							i(85321),	-- White Tiger Faceguard
 							i(85346),	-- White Tiger Headguard
 							i(85341),	-- White Tiger Helmet
@@ -416,7 +416,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							i(85365),	-- Guardian Serpent Hood
 							i(85370),	-- Sha-Skin Hood
 						}),
-						i( 89236, {	-- Helm of the Shadowy Protector
+						i(89236, {	-- Helm of the Shadowy Protector
 							i(85296),	-- Yaungol Slayer's Headguard
 							i(85386),	-- Red Crane Crown
 							i(85396),	-- Red Crane Headpiece
@@ -427,7 +427,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							i(85326),	-- Faceguard of Resounding Rings
 							i(85333),	-- Helmet of Resounding Rings
 						}),
-						i( 89234, {	-- Helm of the Shadowy Vanquisher
+						i(89234, {	-- Helm of the Shadowy Vanquisher
 							i(85316),	-- Faceguard of the Lost Catacomb
 							i(85336),	-- Helmet of the Lost Catacomb
 							i(85307),	-- Eternal Blossom Cover
@@ -438,13 +438,13 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							i(85301),	-- Helmet of the Thousandfold Blades
 						}),
 						i(138805),	-- Illusion: Jade Spirit
-						i( 86386),	-- Shin'ka, Execution of Dominion
-						i( 86387),	-- Kilrak, Jaws of Terror
-						i( 89887),	-- Robes of Pinioned Eyes
-						i( 89886),	-- Wrap of Instant Petrification
-						i( 89839),	-- Shadowgrip Girdle
-						i( 86389),	-- Dreadwoven Leggings of Failure
-						i( 86388),	-- Essence of Terror
+						i(86386),	-- Shin'ka, Execution of Dominion
+						i(86387),	-- Kilrak, Jaws of Terror
+						i(89887),	-- Robes of Pinioned Eyes
+						i(89886),	-- Wrap of Instant Petrification
+						i(89839),	-- Shadowgrip Girdle
+						i(86389),	-- Dreadwoven Leggings of Failure
+						i(86388),	-- Essence of Terror
 						i(122199),	-- Music Roll: Heart of Pandaria
 					})),
 				},
@@ -617,7 +617,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							},
 						},
 						ach(6825),	-- The Mind-Killer
-						i( 89259, {	-- Helm of the Shadowy Conqueror
+						i(89259, {	-- Helm of the Shadowy Conqueror
 							i(87111),	-- White Tiger Faceguard
 							i(87106),	-- White Tiger Headguard
 							i(87101),	-- White Tiger Helmet
@@ -625,7 +625,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							i(87120),	-- Guardian Serpent Hood
 							i(87188),	-- Sha-Skin Hood
 						}),
-						i( 89260, {	-- Helm of the Shadowy Protector
+						i(89260, {	-- Helm of the Shadowy Protector
 							i(87004),	-- Yaungol Slayer's Hood
 							i(87096),	-- Red Crane Crown
 							i(87086),	-- Red Crane Headpiece
@@ -636,7 +636,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							i(87199),	-- Faceguard of Resounding Rings
 							i(87192),	-- Helmet of Resounding Rings
 						}),
-						i( 89258, {	-- Helm of the Shadowy Vanquisher
+						i(89258, {	-- Helm of the Shadowy Vanquisher
 							i(86920),	-- Faceguard of the Lost Catacomb
 							i(86915),	-- Helmet of the Lost Catacomb
 							i(86934),	-- Eternal Blossom Cover
@@ -647,13 +647,13 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							i(87126),	-- Helmet of the Thousandfold Blades
 						}),
 						i(138805),	-- Illusion: Jade Spirit
-						i( 87176),	-- Shin'ka, Execution of Dominion
-						i( 87173),	-- Kilrak, Jaws of Terror
-						i( 89949),	-- Robes of Pinioned Eyes
-						i( 89950),	-- Wrap of Instant Petrification
-						i( 89951),	-- Shadowgrip Girdle
-						i( 87174),	-- Dreadwoven Leggings of Failure
-						i( 87175),	-- Essence of Terror
+						i(87176),	-- Shin'ka, Execution of Dominion
+						i(87173),	-- Kilrak, Jaws of Terror
+						i(89949),	-- Robes of Pinioned Eyes
+						i(89950),	-- Wrap of Instant Petrification
+						i(89951),	-- Shadowgrip Girdle
+						i(87174),	-- Dreadwoven Leggings of Failure
+						i(87175),	-- Essence of Terror
 						i(122199),	-- Music Roll: Heart of Pandaria
 					})),
 				},

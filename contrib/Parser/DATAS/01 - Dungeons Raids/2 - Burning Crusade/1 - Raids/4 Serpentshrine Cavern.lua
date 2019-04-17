@@ -36,20 +36,20 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				["creatureID"] = 21216,
 				["groups"] = {
 					i(138834),	-- Illusion: Frostbrand
-					i( 97553),	-- Tainted Core (PET!)
-					i( 30049),	-- Fathomstone
-					i( 30048),	-- Brighthelm of Justice
-					i( 30053),	-- Pauldrons of the Wardancer
-					i( 30055),	-- Shoulderpads of the Stranger
-					i( 30054),	-- Ranger-General's Chestguard
-					i( 30056),	-- Robe of Hateful Echoes
-					i( 30047),	-- Blackfathom Warbands
-					i( 32516),	-- Wraps of Purification
-					i( 30050),	-- Boots of the Shifting Nightmare
-					i( 33055),	-- Band of Vile Aggression
-					i( 30052),	-- Ring of Lethality
-					i( 30664),	-- Living Root of the Wildheart
-					i( 30629),	-- Scarab of Displacement
+					i(97553),	-- Tainted Core (PET!)
+					i(30049),	-- Fathomstone
+					i(30048),	-- Brighthelm of Justice
+					i(30053),	-- Pauldrons of the Wardancer
+					i(30055),	-- Shoulderpads of the Stranger
+					i(30054),	-- Ranger-General's Chestguard
+					i(30056),	-- Robe of Hateful Echoes
+					i(30047),	-- Blackfathom Warbands
+					i(32516),	-- Wraps of Purification
+					i(30050),	-- Boots of the Shifting Nightmare
+					i(33055),	-- Band of Vile Aggression
+					i(30052),	-- Ring of Lethality
+					i(30664),	-- Living Root of the Wildheart
+					i(30629),	-- Scarab of Displacement
 				},
 			}),
 			e(1568, {	-- The Lurker Below

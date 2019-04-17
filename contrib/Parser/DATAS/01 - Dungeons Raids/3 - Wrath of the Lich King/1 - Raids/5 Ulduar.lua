@@ -448,32 +448,32 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						["achievementID"] = 12325,	-- Stokin' the Furnace
 					},
 					i(142086),	-- Red-Hot Coal (PET!)
-					i( 45171),	-- Intensity
-					i( 45311),	-- Relentless Edge
-					i( 45165),	-- Worldcarver
-					i( 45309),	-- Rifle of the Platinum Guard
-					i( 45170),	-- Scepter of Creation
-					i( 45314),	-- Igniter Rod
-					i( 45164),	-- Helm of the Furnace Master
-					i( 45321),	-- Pauldrons of Tempered Will
-					i( 45186),	-- Soot-Covered Mantle
-					i( 45318),	-- Drape of Fuming Anger
-					i( 45317),	-- Shawl of the Caretaker
-					i( 45167),	-- Lifeforge Breastplate
-					i( 45316),	-- Armbraces of the Vibrant Flame
-					i( 45187),	-- Wristguards of the Firetender
-					i( 45310),	-- Gauntlets of the Iron Furnace
-					i( 45312),	-- Gloves of Smoldering Touch
-					i( 45185),	-- Flamewrought Cinch
-					i( 45161),	-- Girdle of Embers
-					i( 45166),	-- Charred Saronite Greaves
-					i( 45162),	-- Flamestalker Boots
-					i( 45157),	-- Cindershard Ring
-					i( 45168),	-- Pyrelight Circle
-					i( 45313),	-- Furnace Stone
-					i( 45158),	-- Heart of Iron
-					i( 46027),	-- Formula: Enchant Weapon - Blade Ward
-					i( 46348),	-- Formula: Enchant Weapon - Blood Draining
+					i(45171),	-- Intensity
+					i(45311),	-- Relentless Edge
+					i(45165),	-- Worldcarver
+					i(45309),	-- Rifle of the Platinum Guard
+					i(45170),	-- Scepter of Creation
+					i(45314),	-- Igniter Rod
+					i(45164),	-- Helm of the Furnace Master
+					i(45321),	-- Pauldrons of Tempered Will
+					i(45186),	-- Soot-Covered Mantle
+					i(45318),	-- Drape of Fuming Anger
+					i(45317),	-- Shawl of the Caretaker
+					i(45167),	-- Lifeforge Breastplate
+					i(45316),	-- Armbraces of the Vibrant Flame
+					i(45187),	-- Wristguards of the Firetender
+					i(45310),	-- Gauntlets of the Iron Furnace
+					i(45312),	-- Gloves of Smoldering Touch
+					i(45185),	-- Flamewrought Cinch
+					i(45161),	-- Girdle of Embers
+					i(45166),	-- Charred Saronite Greaves
+					i(45162),	-- Flamestalker Boots
+					i(45157),	-- Cindershard Ring
+					i(45168),	-- Pyrelight Circle
+					i(45313),	-- Furnace Stone
+					i(45158),	-- Heart of Iron
+					i(46027),	-- Formula: Enchant Weapon - Blade Ward
+					i(46348),	-- Formula: Enchant Weapon - Blood Draining
 				})),
 				cr(33186, e(1639, {	-- Razorscale
 					{	-- A Quick Shave
@@ -487,29 +487,29 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						["criteriaID"] = 2,		-- Razorscale
 					},
 					i(142087),	-- Ironbound Collar (PET!)
-					i( 45147),	-- Guiding Star
-					i( 45298),	-- Razorscale Talon
-					i( 45142),	-- Remorse
-					i( 45137),	-- Veranus' Bane
-					i( 45150),	-- Collar of the Wyrmhunter
-					i( 45299),	-- Dragonsteel Faceplate
-					i( 45140),	-- Razorscale Shoulderguards
-					i( 45138),	-- Drape of the Drakerider
-					i( 45305),	-- Breastplate of the Afterlife
-					i( 45149),	-- Bracers of the Broodmother
-					i( 45301),	-- Bracers of the Smothering Inferno
-					i( 45146),	-- Shackles of the Odalisque
-					i( 45151),	-- Belt of the Fallen Wyrm
-					i( 45306),	-- Binding of the Dragon Matriarch
-					i( 45139),	-- Dragonslayer's Brace
-					i( 45304),	-- Stormtempered Girdle
-					i( 45307),	-- Ironscale Leggings
-					i( 45141),	-- Proto-Hide Leggings
-					i( 45143),	-- Saronite Mesh Legguards
-					i( 45302),	-- Treads of the Invader
-					i( 45303),	-- Band of Draconic Guile
-					i( 45308),	-- Eye of the Broodmother
-					i( 45148),	-- Living Flame
+					i(45147),	-- Guiding Star
+					i(45298),	-- Razorscale Talon
+					i(45142),	-- Remorse
+					i(45137),	-- Veranus' Bane
+					i(45150),	-- Collar of the Wyrmhunter
+					i(45299),	-- Dragonsteel Faceplate
+					i(45140),	-- Razorscale Shoulderguards
+					i(45138),	-- Drape of the Drakerider
+					i(45305),	-- Breastplate of the Afterlife
+					i(45149),	-- Bracers of the Broodmother
+					i(45301),	-- Bracers of the Smothering Inferno
+					i(45146),	-- Shackles of the Odalisque
+					i(45151),	-- Belt of the Fallen Wyrm
+					i(45306),	-- Binding of the Dragon Matriarch
+					i(45139),	-- Dragonslayer's Brace
+					i(45304),	-- Stormtempered Girdle
+					i(45307),	-- Ironscale Leggings
+					i(45141),	-- Proto-Hide Leggings
+					i(45143),	-- Saronite Mesh Legguards
+					i(45302),	-- Treads of the Invader
+					i(45303),	-- Band of Draconic Guile
+					i(45308),	-- Eye of the Broodmother
+					i(45148),	-- Living Flame
 				})),
 				cr(33293, e(1640, {	-- XT-002 Deconstructor
 					{	-- Heartbreaker
@@ -733,33 +733,33 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						["achievementID"] = 12333,	-- I Choose You, Stormcaller Brundir
 					},
 					i(142088),	-- Stormforged Rune (PET!)
-					i( 45234),	-- Rapture
-					i( 45233),	-- Stormrune Edge
-					i( 45331),	-- Rune-Etched Nightblade
-					i( 45332),	-- Stormtip
-					i( 45226),	-- Ancient Iron Heaume
-					i( 45329),	-- Circlet of True Sight
-					i( 45193),	-- Insurmountable Fervor
-					i( 45236),	-- Unblinking Eye
-					i( 45227),	-- Iron-Studded Mantle
-					i( 45322),	-- Cloak of the Iron Council
-					i( 45224),	-- Drape of the Lithe
-					i( 45237),	-- Phaelia's Vestments of the Sprouting Seed
-					i( 45240),	-- Raiments of the Iron Council
-					i( 45225),	-- Steelbreaker's Embrace
-					i( 45423),	-- Runetouch Wristwraps
-					i( 45228),	-- Handguards of the Enclave
-					i( 45239),	-- Runeshaper's Gloves
-					i( 45333),	-- Belt of the Iron Servant
-					i( 45324),	-- Leggings of Swift Reflexes
-					i( 45238),	-- Overload Legwraps
-					i( 45378),	-- Boots of the Petrified Forest
-					i( 45330),	-- Greaves of Iron Intensity
-					i( 45232),	-- Runed Ironhide Boots
-					i( 45418),	-- Lady Maye's Sapphire Ring
-					i( 45235),	-- Radiant Seal
-					i( 46027),	-- Formula: Enchant Weapon - Blade Ward
-					i( 46348),	-- Formula: Enchant Weapon - Blood Draining
+					i(45234),	-- Rapture
+					i(45233),	-- Stormrune Edge
+					i(45331),	-- Rune-Etched Nightblade
+					i(45332),	-- Stormtip
+					i(45226),	-- Ancient Iron Heaume
+					i(45329),	-- Circlet of True Sight
+					i(45193),	-- Insurmountable Fervor
+					i(45236),	-- Unblinking Eye
+					i(45227),	-- Iron-Studded Mantle
+					i(45322),	-- Cloak of the Iron Council
+					i(45224),	-- Drape of the Lithe
+					i(45237),	-- Phaelia's Vestments of the Sprouting Seed
+					i(45240),	-- Raiments of the Iron Council
+					i(45225),	-- Steelbreaker's Embrace
+					i(45423),	-- Runetouch Wristwraps
+					i(45228),	-- Handguards of the Enclave
+					i(45239),	-- Runeshaper's Gloves
+					i(45333),	-- Belt of the Iron Servant
+					i(45324),	-- Leggings of Swift Reflexes
+					i(45238),	-- Overload Legwraps
+					i(45378),	-- Boots of the Petrified Forest
+					i(45330),	-- Greaves of Iron Intensity
+					i(45232),	-- Runed Ironhide Boots
+					i(45418),	-- Lady Maye's Sapphire Ring
+					i(45235),	-- Radiant Seal
+					i(46027),	-- Formula: Enchant Weapon - Blade Ward
+					i(46348),	-- Formula: Enchant Weapon - Blood Draining
 				})),
 				cr(32930, e(1642, {	-- Kologarn
 					{	-- Disarmed
@@ -815,32 +815,32 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						["achievementID"] = 12342,	-- Nine Lives
 					},
 					i(142089),	-- Glittering Ball of Yarn (PET!)
-					i( 45437),	-- Runescribed Blade
-					i( 45315),	-- Stonerender
-					i( 45713),	-- Nurturing Touch
-					i( 45327),	-- Siren's Cry
-					i( 45707),	-- Shieldwall of the Breaker
-					i( 45864),	-- Cover of the Keepers
-					i( 45435),	-- Cowl of the Absolute
-					i( 45439),	-- Unwavering Stare
-					i( 45440),	-- Amice of the Stoic Watch
-					i( 45711),	-- Ironaya's Discarded Mantle
-					i( 45832),	-- Mantle of the Preserver
-					i( 45320),	-- Shoulderplates of the Eternal
-					i( 45319),	-- Cloak of the Makers
-					i( 45712),	-- Chestplate of Titanic Fury
-					i( 45865),	-- Raiments of the Corrupted
-					i( 45334),	-- Unbreakable Chestguard
-					i( 45325),	-- Gloves of the Stonereaper
-					i( 45709),	-- Nimble Climber's Belt
-					i( 45708),	-- Archaedas' Lost Legplates
-					i( 45434),	-- Greaves of the Rockmender
-					i( 45441),	-- Sandals of the Ancient Keeper
-					i( 45326),	-- Platinum Band of the Aesir
-					i( 45438),	-- Ring of the Faithful Servant
-					i( 45866),	-- Elemental Focus Stone
-					i( 46027),	-- Formula: Enchant Weapon - Blade Ward
-					i( 46348),	-- Formula: Enchant Weapon - Blood Draining
+					i(45437),	-- Runescribed Blade
+					i(45315),	-- Stonerender
+					i(45713),	-- Nurturing Touch
+					i(45327),	-- Siren's Cry
+					i(45707),	-- Shieldwall of the Breaker
+					i(45864),	-- Cover of the Keepers
+					i(45435),	-- Cowl of the Absolute
+					i(45439),	-- Unwavering Stare
+					i(45440),	-- Amice of the Stoic Watch
+					i(45711),	-- Ironaya's Discarded Mantle
+					i(45832),	-- Mantle of the Preserver
+					i(45320),	-- Shoulderplates of the Eternal
+					i(45319),	-- Cloak of the Makers
+					i(45712),	-- Chestplate of Titanic Fury
+					i(45865),	-- Raiments of the Corrupted
+					i(45334),	-- Unbreakable Chestguard
+					i(45325),	-- Gloves of the Stonereaper
+					i(45709),	-- Nimble Climber's Belt
+					i(45708),	-- Archaedas' Lost Legplates
+					i(45434),	-- Greaves of the Rockmender
+					i(45441),	-- Sandals of the Ancient Keeper
+					i(45326),	-- Platinum Band of the Aesir
+					i(45438),	-- Ring of the Faithful Servant
+					i(45866),	-- Elemental Focus Stone
+					i(46027),	-- Formula: Enchant Weapon - Blade Ward
+					i(46348),	-- Formula: Enchant Weapon - Blood Draining
 				})),
 				cr(32845, e(1644, {	-- Hodir
 					{	-- Cheese the Freeze
@@ -897,7 +897,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					{	-- Staying Buffed All Winter
 						["achievementID"] = 12346,	-- Staying Buffed All Winter
 					},
-					i( 45632, {	-- Breastplate of the Wayward Conqueror
+					i(45632, {	-- Breastplate of the Wayward Conqueror
 						i(46154),	-- Conqueror's Aegis Battleplate
 						i(46173),	-- Conqueror's Aegis Breastplate
 						i(46178),	-- Conqueror's Aegis Tunic
@@ -905,7 +905,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(46193),	-- Conqueror's Robe of Sanctification
 						i(46137),	-- Conqueror's Deathbringer Robe
 					}),
-					i( 45633, {	-- Breastplate of the Wayward Protector
+					i(45633, {	-- Breastplate of the Wayward Protector
 						i(46141),	-- Conqueror's Scourgestalker Tunic
 						i(46205),	-- Conqueror's Worldbreaker Chestguard
 						i(46206),	-- Conqueror's Worldbreaker Hauberk
@@ -913,7 +913,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(46146),	-- Conqueror's Siegebreaker Battleplate
 						i(46162),	-- Conqueror's Siegebreaker Breastplate
 					}),
-					i( 45634, {	-- Breastplate of the Wayward Vanquisher
+					i(45634, {	-- Breastplate of the Wayward Vanquisher
 						i(46111),	-- Conqueror's Darkruned Battleplate
 						i(46118),	-- Conqueror's Darkruned Chestguard
 						i(46159),	-- Conqueror's Nightsong Raiments
@@ -923,7 +923,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(46123),	-- Conqueror's Terrorblade Breastplate
 					}),
 					i(138800),	-- Illusion: Blade Ward
-					i( 45650, {	-- Leggings of the Wayward Conqueror
+					i(45650, {	-- Leggings of the Wayward Conqueror
 						i(45371),	-- Valorous Aegis Greaves
 						i(45384),	-- Valorous Aegis Legguards
 						i(45379),	-- Valorous Aegis Legplates
@@ -931,7 +931,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(45394),	-- Valorous Pants of Sanctification
 						i(45420),	-- Valorous Deathbringer Leggings
 					}),
-					i( 45651, {	-- Leggings of the Wayward Protector
+					i(45651, {	-- Leggings of the Wayward Protector
 						i(45362),	-- Valorous Scourgestalker Legguards
 						i(45409),	-- Valorous Worldbreaker Kilt
 						i(45403),	-- Valorous Worldbreaker Legguards
@@ -939,7 +939,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(45427),	-- Valorous Siegebreaker Legguards
 						i(45432),	-- Valorous Siegebreaker Legplates
 					}),
-					i( 45652, {	-- Leggings of the Wayward Vanquisher
+					i(45652, {	-- Leggings of the Wayward Vanquisher
 						i(45338),	-- Valorous Darkruned Legguards
 						i(45343),	-- Valorous Darkruned Legplates
 						i(45347),	-- Valorous Nightsong Leggings
@@ -949,16 +949,16 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(45399),	-- Valorous Terrorblade Legplates
 					}),
 					i(142090),	-- Ominous Pile of Snow (PET!)
-					i( 45458),	-- Stormedge
-					i( 45872),	-- Avalanche
-					i( 45450),	-- Northern Barrier
-					i( 45464),	-- Cowl of Icy Breaths
-					i( 45873),	-- Winter's Frigid Embrace
-					i( 45453),	-- Winter's Icy Embrace
-					i( 45454),	-- Frost-Bound Chain Bracers
-					i( 45452),	-- Frostplate Greaves
-					i( 45451),	-- Frozen Loop
-					i( 45874),	-- Signet of Winter
+					i(45458),	-- Stormedge
+					i(45872),	-- Avalanche
+					i(45450),	-- Northern Barrier
+					i(45464),	-- Cowl of Icy Breaths
+					i(45873),	-- Winter's Frigid Embrace
+					i(45453),	-- Winter's Icy Embrace
+					i(45454),	-- Frost-Bound Chain Bracers
+					i(45452),	-- Frostplate Greaves
+					i(45451),	-- Frozen Loop
+					i(45874),	-- Signet of Winter
 				})),
 				cr(32865, e(1645, {	-- Thorim
 					{	-- Don't Stand in the Lightning
@@ -1026,7 +1026,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					{	-- Who Needs Bloodlust?
 						["achievementID"] = 12350,	-- Who Needs Bloodlust?
 					},
-					i( 45638, {	-- Crown of the Wayward Conqueror
+					i(45638, {	-- Crown of the Wayward Conqueror
 						i(46175),	-- Conqueror's Aegis Faceguard
 						i(46180),	-- Conqueror's Aegis Headpiece
 						i(46156),	-- Conqueror's Aegis Helm
@@ -1034,7 +1034,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(46197),	-- Conqueror's Cowl of Sanctification
 						i(46140),	-- Conqueror's Deathbringer Hood
 					}),
-					i( 45639, {	-- Crown of the Wayward Protector
+					i(45639, {	-- Crown of the Wayward Protector
 						i(46143),	-- Conqueror's Scourgestalker Headpiece
 						i(46212),	-- Conqueror's Worldbreaker Faceguard
 						i(46201),	-- Conqueror's Worldbreaker Headpiece
@@ -1042,7 +1042,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(46166),	-- Conqueror's Siegebreaker Greathelm
 						i(46151),	-- Conqueror's Siegebreaker Helmet
 					}),
-					i( 45640, {	-- Crown of the Wayward Vanquisher
+					i(45640, {	-- Crown of the Wayward Vanquisher
 						i(46120),	-- Conqueror's Darkruned Faceguard
 						i(46115),	-- Conqueror's Darkruned Helmet
 						i(46191),	-- Conqueror's Nightsong Cover
@@ -1052,7 +1052,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(46125),	-- Conqueror's Terrorblade Helmet
 					}),
 					i(138800),	-- Illusion: Blade Ward
-					i( 45659, {	-- Spaulders of the Wayward Conqueror
+					i(45659, {	-- Spaulders of the Wayward Conqueror
 						i(45385),	-- Valorous Aegis Shoulderguards
 						i(45380),	-- Valorous Aegis Shoulderplates
 						i(45373),	-- Valorous Aegis Spaulders
@@ -1060,7 +1060,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(45390),	-- Valorous Shoulderpads of Sanctification
 						i(45422),	-- Valorous Deathbringer Shoulderpads
 					}),
-					i( 45660, {	-- Spaulders of the Wayward Protector
+					i(45660, {	-- Spaulders of the Wayward Protector
 						i(45363),	-- Valorous Scourgestalker Spaulders
 						i(45415),	-- Valorous Worldbreaker Shoulderguards
 						i(45410),	-- Valorous Worldbreaker Shoulderpads
@@ -1068,7 +1068,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(45428),	-- Valorous Siegebreaker Pauldrons
 						i(45433),	-- Valorous Siegebreaker Shoulderplates
 					}),
-					i( 45661, {	-- Spaulders of the Wayward Vanquisher
+					i(45661, {	-- Spaulders of the Wayward Vanquisher
 						i(45339),	-- Valorous Darkruned Pauldrons
 						i(45344),	-- Valorous Darkruned Shoulderplates
 						i(45352),	-- Valorous Nightsong Mantle
@@ -1077,16 +1077,16 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(45369),	-- Valorous Kirin Tor Shoulderpads
 						i(45400),	-- Valorous Terrorblade Pauldrons
 					}),
-					i( 45892),	-- Legacy of Thunder
-					i( 45463),	-- Vulmir, the Northern Tempest
-					i( 45893),	-- Guise of the Midgard Serpent
-					i( 45927),	-- Handwraps of Resonance
-					i( 45467),	-- Belt of the Betrayed
-					i( 45895),	-- Belt of the Blood Pit
-					i( 45468),	-- Leggings of Lost Love
-					i( 45894),	-- Leggings of Unstable Discharge
-					i( 45469),	-- Sif's Promise
-					i( 45466),	-- Scale of Fates
+					i(45892),	-- Legacy of Thunder
+					i(45463),	-- Vulmir, the Northern Tempest
+					i(45893),	-- Guise of the Midgard Serpent
+					i(45927),	-- Handwraps of Resonance
+					i(45467),	-- Belt of the Betrayed
+					i(45895),	-- Belt of the Blood Pit
+					i(45468),	-- Leggings of Lost Love
+					i(45894),	-- Leggings of Unstable Discharge
+					i(45469),	-- Sif's Promise
+					i(45466),	-- Scale of Fates
 				})),
 				{	-- Lumberjacked
 					["achievementID"] = 12360,	-- Lumberjacked
@@ -1151,7 +1151,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						},
 					},
 					i(142091),	-- Blessed Seed (PET!)
-					i( 45644, {	-- Gloves of the Wayward Conqueror
+					i(45644, {	-- Gloves of the Wayward Conqueror
 						i(45376),	-- Valorous Aegis Gauntlets
 						i(45370),	-- Valorous Aegis Gloves
 						i(45383),	-- Valorous Aegis Handguards
@@ -1159,7 +1159,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(45392),	-- Valorous Handwraps of Sanctification
 						i(45419),	-- Valorous Deathbringer Gloves
 					}),
-					i( 45645, {	-- Gloves of the Wayward Protector
+					i(45645, {	-- Gloves of the Wayward Protector
 						i(45360),	-- Valorous Scourgestalker Handguards
 						i(45406),	-- Valorous Worldbreaker Gloves
 						i(45414),	-- Valorous Worldbreaker Grips
@@ -1167,7 +1167,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(45430),	-- Valorous Siegebreaker Gauntlets
 						i(45426),	-- Valorous Siegebreaker Handguards
 					}),
-					i( 45646, {	-- Gloves of the Wayward Vanquisher
+					i(45646, {	-- Gloves of the Wayward Vanquisher
 						i(45341),	-- Valorous Darkruned Gauntlets
 						i(45337),	-- Valorous Darkruned Handguards
 						i(45351),	-- Valorous Nightsong Gloves
@@ -1177,7 +1177,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(45397),	-- Valorous Terrorblade Gauntlets
 					}),
 					i(138800),	-- Illusion: Blade Ward
-					i( 45653, {	-- Legplates of the Wayward Conqueror
+					i(45653, {	-- Legplates of the Wayward Conqueror
 						i(46153),	-- Conqueror's Aegis Legplates
 						i(46176),	-- Conqueror's Aegis Legguards
 						i(46181),	-- Conqueror's Aegis Greaves
@@ -1185,7 +1185,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(46170),	-- Conqueror's Pants of Sanctification
 						i(46139),	-- Conqueror's Deathbringer Leggings
 					}),
-					i( 45654, {	-- Legplates of the Wayward Protector
+					i(45654, {	-- Legplates of the Wayward Protector
 						i(46144),	-- Conqueror's Scourgestalker Legguards
 						i(46210),	-- Conqueror's Worldbreaker Kilt
 						i(46202),	-- Conqueror's Worldbreaker Legguards
@@ -1193,7 +1193,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(46169),	-- Conqueror's Siegebreaker Legguards
 						i(46150),	-- Conqueror's Siegebreaker Legplates
 					}),
-					i( 45655, {	-- Legplates of the Wayward Vanquisher
+					i(45655, {	-- Legplates of the Wayward Vanquisher
 						i(46121),	-- Conqueror's Darkruned Legguards
 						i(46116),	-- Conqueror's Darkruned Legplates
 						i(46185),	-- Conqueror's Nightsong Leggings
@@ -1285,7 +1285,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 								},
 							},
 						},
-						i( 45641, {	-- Gauntlets of the Wayward Conqueror
+						i(45641, {	-- Gauntlets of the Wayward Conqueror
 							i(46163),	-- 
 							i(46188),	-- 
 							i(46135),	-- 
@@ -1293,7 +1293,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							i(46179),	-- 
 							i(46155),	-- 
 						}),
-						i( 45642, {	-- Gauntlets of the Wayward Protector
+						i(45642, {	-- Gauntlets of the Wayward Protector
 							i(46199),	-- 
 							i(46200),	-- 
 							i(46207),	-- 
@@ -1301,7 +1301,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							i(46148),	-- 
 							i(46142),	-- 
 						}),
-						i( 45643, {	-- Gauntlets of the Wayward Vanquisher
+						i(45643, {	-- Gauntlets of the Wayward Vanquisher
 							i(46124),	-- 
 							i(46183),	-- 
 							i(46158),	-- 
@@ -1310,7 +1310,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							i(46119),	-- 
 							i(46113),	-- 
 						}),
-						i( 45647, {	-- Helm of the Wayward Conqueror
+						i(45647, {	-- Helm of the Wayward Conqueror
 							i(45417),	-- 
 							i(45386),	-- 
 							i(45391),	-- 
@@ -1318,7 +1318,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							i(45372),	-- 
 							i(45382),	-- 
 						}),
-						i( 45648, {	-- Helm of the Wayward Protector
+						i(45648, {	-- Helm of the Wayward Protector
 							i(45408),	-- 
 							i(45402),	-- 
 							i(45412),	-- 
@@ -1326,7 +1326,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							i(45425),	-- 
 							i(45361),	-- 
 						}),
-						i( 45649, {	-- Helm of the Wayward Vanquisher
+						i(45649, {	-- Helm of the Wayward Vanquisher
 							i(45398),	-- 
 							i(45346),	-- 
 							i(45356),	-- 
@@ -1337,16 +1337,16 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						}),
 						i(138800),	-- Illusion: Blade Ward
 						i(142092),	-- Overcomplicated Controller (PET!)
-						i( 45489),	-- Insanity's Grip
-						i( 45972),	-- Pulse Baton
-						i( 45492),	-- Malleable Steelweave Mantle
-						i( 45974),	-- Shoulderguards of Assimilation
-						i( 45493),	-- Asimov's Drape
-						i( 45973),	-- Stylish Power Cape
-						i( 45976),	-- Static Charge Handwraps
-						i( 45975),	-- Cable of the Metrognome
-						i( 45491),	-- Waistguard of the Creator
-						i( 45490),	-- Pandora's Plea
+						i(45489),	-- Insanity's Grip
+						i(45972),	-- Pulse Baton
+						i(45492),	-- Malleable Steelweave Mantle
+						i(45974),	-- Shoulderguards of Assimilation
+						i(45493),	-- Asimov's Drape
+						i(45973),	-- Stylish Power Cape
+						i(45976),	-- Static Charge Handwraps
+						i(45975),	-- Cable of the Metrognome
+						i(45491),	-- Waistguard of the Creator
+						i(45490),	-- Pandora's Plea
 					},
 				})),
 				cr(33271, e(1648, {	-- General Vezax
@@ -1508,7 +1508,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					{	-- They're Coming Out of the Walls
 						["achievementID"] = 12397,	-- They're Coming Out of the Walls
 					},
-					i( 45635, {	-- Chestguard of the Wayward Conqueror
+					i(45635, {	-- Chestguard of the Wayward Conqueror
 						i(45375),	-- Valorous Aegis Battleplate
 						i(45381),	-- Valorous Aegis Breastplate
 						i(45374),	-- Valorous Aegis Tunic
@@ -1516,7 +1516,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(45389),	-- Valorous Robe of Sanctification
 						i(45421),	-- Valorous Deathbringer Robe
 					}),
-					i( 45636, {	-- Chestguard of the Wayward Protector
+					i(45636, {	-- Chestguard of the Wayward Protector
 						i(45364),	-- Valorous Scourgestalker Tunic
 						i(45413),	-- Valorous Worldbreaker Chestguard
 						i(45411),	-- Valorous Worldbreaker Hauberk
@@ -1524,7 +1524,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(45429),	-- Valorous Siegebreaker Battleplate
 						i(45424),	-- Valorous Siegebreaker Breastplate
 					}),
-					i( 45637, {	-- Chestguard of the Wayward Vanquisher
+					i(45637, {	-- Chestguard of the Wayward Vanquisher
 						i(45340),	-- Valorous Darkruned Battleplate
 						i(45335),	-- Valorous Darkruned Chestguard
 						i(45358),	-- Valorous Nightsong Raiments
@@ -1533,7 +1533,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(45368),	-- Valorous Kirin Tor Tunic
 						i(45396),	-- Valorous Terrorblade Robe
 					}),
-					i( 45656, {	-- Mantle of the Wayward Conqueror
+					i(45656, {	-- Mantle of the Wayward Conqueror
 						i(46177),	-- Conqueror's Aegis Shoulderguards
 						i(46152),	-- Conqueror's Aegis Shoulderplates
 						i(46182),	-- Conqueror's Aegis Spaulders
@@ -1541,7 +1541,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(46190),	-- Conqueror's Shoulderpads of Sanctification
 						i(46136),	-- Conqueror's Deathbringer Shoulderpads
 					}),
-					i( 45657, {	-- Mantle of the Wayward Protector
+					i(45657, {	-- Mantle of the Wayward Protector
 						i(46145),	-- Conqueror's Scourgestalker Spaulders
 						i(46203),	-- Conqueror's Worldbreaker Shoulderguards
 						i(46211),	-- Conqueror's Worldbreaker Shoulderpads
@@ -1549,7 +1549,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(46167),	-- Conqueror's Siegebreaker Pauldrons
 						i(46149),	-- Conqueror's Siegebreaker Shoulderplates
 					}),
-					i( 45658, {	-- Mantle of the Wayward Vanquisher
+					i(45658, {	-- Mantle of the Wayward Vanquisher
 						i(46122),	-- Conqueror's Darkruned Pauldrons
 						i(46117),	-- Conqueror's Darkruned Shoulderplates
 						i(46196),	-- Conqueror's Nightsong Mantle
@@ -1558,29 +1558,29 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(46134),	-- Conqueror's Kirin Tor Shoulderpads
 						i(46127),	-- Conqueror's Terrorblade Pauldrons
 					}),
-					i( 46348),	-- Formula: Enchant Weapon - Blood Draining
+					i(46348),	-- Formula: Enchant Weapon - Blood Draining
 					i(138801),	-- Illusion: Blood Draining
 					i(142093),	-- Wriggling Darkness (PET!)
-					i( 46016),	-- Abaddon
-					i( 46025),	-- Devotion
-					i( 45521),	-- Earthshaper
-					i( 46024),	-- Kingsbane
-					i( 45527),	-- Soulscribe
-					i( 46031),	-- Touch of Madness
-					i( 46018),	-- Deliverance
-					i( 45532),	-- Cowl of Dark Whispers
-					i( 46028),	-- Faceguard of the Eyeless Horror
-					i( 45523),	-- Garona's Guise
-					i( 46022),	-- Pendant of a Thousand Maws
-					i( 45529),	-- Shawl of Haunted Memories
-					i( 45524),	-- Chestguard of Insidious Intent
-					i( 45531),	-- Chestguard of the Fallen God
-					i( 46019),	-- Leggings of the Insatiable
-					i( 46030),	-- Treads of the Dragon Council
-					i( 45525),	-- Godbane Signet
-					i( 46021),	-- Royal Seal of King Llane
-					i( 45530),	-- Sanity's Bond
-					i( 45522),	-- Blood of the Old God
+					i(46016),	-- Abaddon
+					i(46025),	-- Devotion
+					i(45521),	-- Earthshaper
+					i(46024),	-- Kingsbane
+					i(45527),	-- Soulscribe
+					i(46031),	-- Touch of Madness
+					i(46018),	-- Deliverance
+					i(45532),	-- Cowl of Dark Whispers
+					i(46028),	-- Faceguard of the Eyeless Horror
+					i(45523),	-- Garona's Guise
+					i(46022),	-- Pendant of a Thousand Maws
+					i(45529),	-- Shawl of Haunted Memories
+					i(45524),	-- Chestguard of Insidious Intent
+					i(45531),	-- Chestguard of the Fallen God
+					i(46019),	-- Leggings of the Insatiable
+					i(46030),	-- Treads of the Dragon Council
+					i(45525),	-- Godbane Signet
+					i(46021),	-- Royal Seal of King Llane
+					i(45530),	-- Sanity's Bond
+					i(45522),	-- Blood of the Old God
 				})),
 			}),
 			d(24, {	-- Timewalking

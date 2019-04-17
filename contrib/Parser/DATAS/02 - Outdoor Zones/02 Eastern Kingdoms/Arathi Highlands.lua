@@ -34,10 +34,10 @@ _.Zones =
 ]]--
 					qh(26081, {	-- Alina's Reward (awarded "Galen's Fall" criteria)
 						["groups"] = {
-							i( 59194),	-- Sandals of Satisfaction
-							i( 59195),	-- Bracers of Sensations
-							i( 59196),	-- Alina's Gloves
-							i( 59197),	-- Lordaeron-Made Breastplate
+							i(59194),	-- Sandals of Satisfaction
+							i(59195),	-- Bracers of Sensations
+							i(59196),	-- Alina's Gloves
+							i(59197),	-- Lordaeron-Made Breastplate
 							i(131479),	-- Cuffs of Feeling
 							i(131480),	-- Grips of the Forsaken
 						},
@@ -46,11 +46,11 @@ _.Zones =
 					}),
 					qa(26038, {	-- Attack on the Tower (awarded "Refuge Pointe" criteria)
 						["groups"] = {
-							i( 59159),	-- Highland Mace
-							i( 59160),	-- Trelane's Leggings
-							i( 59161),	-- Belt of Refuge
-							i( 59162),	-- Lightstep Boots
-							i( 59163),	-- Craig's Steel
+							i(59159),	-- Highland Mace
+							i(59160),	-- Trelane's Leggings
+							i(59161),	-- Belt of Refuge
+							i(59162),	-- Lightstep Boots
+							i(59163),	-- Craig's Steel
 							i(131470),	-- Refuge Cinch
 						},
 						["qg"] = 41983,	-- Apprentice Kryten
@@ -69,10 +69,10 @@ _.Zones =
 					}),
 					qh(26027, {	-- Call to Arms
 						["groups"] = {
-							i( 59178),	-- Ramshackle Bracers
-							i( 59179),	-- Extra Credit Boots
-							i( 59180),	-- Lurking Belt
-							i( 59181),	-- Belt of Gutted Rain
+							i(59178),	-- Ramshackle Bracers
+							i(59179),	-- Extra Credit Boots
+							i(59180),	-- Lurking Belt
+							i(59181),	-- Belt of Gutted Rain
 							i(131467),	-- Gold Star Boots
 							i(131468),	-- Chain of Ogre Ruin
 						},
@@ -87,10 +87,10 @@ _.Zones =
 					}),
 					q( 26628, {	-- Death From Below (awarded "Faldir's Cover" criteria)
 						["groups"] = {
-							i( 59212),	-- O'Breen's Dress Robes
-							i( 59213),	-- Faldir's Leggings
-							i( 59214),	-- Armguards of the Good Captain
-							i( 59215),	-- Legguards of the Promising Hero
+							i(59212),	-- O'Breen's Dress Robes
+							i(59213),	-- Faldir's Leggings
+							i(59214),	-- Armguards of the Good Captain
+							i(59215),	-- Legguards of the Promising Hero
 							i(131565),	-- Seafarer's Chain Leggings
 							i(131566),	-- The Good Captain's Bindings
 						},
@@ -99,9 +99,9 @@ _.Zones =
 					}),
 					q( 26055, {	-- Drowned Sorrows
 						["groups"] = {
-							i( 59205),	-- Folly's Spar
-							i( 59206),	-- Steelgut Vest
-							i( 59207),	-- Maiden's Tattered Sail
+							i(59205),	-- Folly's Spar
+							i(59206),	-- Steelgut Vest
+							i(59207),	-- Maiden's Tattered Sail
 							i(131475),	-- Steelgut's Undermail
 						},
 						["qg"] = 2769,	-- Captain Steelgut
@@ -113,9 +113,9 @@ _.Zones =
 					}),
 					qa(26117, {	-- For Southshore
 						["groups"] = {
-							i( 59168),	-- Stromgarde Surcoat
-							i( 59169),	-- Stromgarde Leggings
-							i( 59170),	-- Stromgarde Bracers
+							i(59168),	-- Stromgarde Surcoat
+							i(59169),	-- Stromgarde Leggings
+							i(59170),	-- Stromgarde Bracers
 							i(131487),	-- Stromgarde Greaves
 						},
 						["qg"] = 2712,	-- Quae
@@ -127,8 +127,8 @@ _.Zones =
 					}),
 					qh(26108, {	-- Guile of the Raptor
 						["groups"] = {
-							i( 59203),	-- Hammerfall Gloves
-							i( 59204),	-- Hammerfall Mace
+							i(59203),	-- Hammerfall Gloves
+							i(59204),	-- Hammerfall Mace
 							i(131485),	-- Hammerfaul Gauntlets
 							i(156947),	-- Hammerfall Cudgel
 							i(156960),	-- Hammerfall Gavel
@@ -196,10 +196,10 @@ _.Zones =
 					}),
 					qa(26095, {	-- Stromgarde Badges
 						["groups"] = {
-							i( 59190),	-- Slippers of Sorrowful Tidings
-							i( 59191),	-- Yellow Ribbon Armbands
-							i( 59192),	-- Griefstricken Gloves
-							i( 59193),	-- Heartsick Breastplate
+							i(59190),	-- Slippers of Sorrowful Tidings
+							i(59191),	-- Yellow Ribbon Armbands
+							i(59192),	-- Griefstricken Gloves
+							i(59193),	-- Heartsick Breastplate
 							i(131481),	-- Bindings of Longing
 							i(131482),	-- Grips of the Weary
 						},
@@ -218,8 +218,8 @@ _.Zones =
 					},
 					q( 26051, {	-- Sunken Treasure
 						["groups"] = {
-							i( 59199),	-- Bottom Waders
-							i( 59200),	-- Decalcified Elven Spear
+							i(59199),	-- Bottom Waders
+							i(59200),	-- Decalcified Elven Spear
 							i(131474),	-- Chain Weighted Shoes
 							i(156948),	-- Waterlogged Elven Spear 
 						},
@@ -237,10 +237,10 @@ _.Zones =
 					}),
 					qa(26049, {	-- The Princess Unleashed
 						["groups"] = {
-							i( 59208),	-- Wrap of Open Menace
-							i( 59209),	-- Eldritch Gloves
-							i( 59210),	-- Earthbound Mantle
-							i( 59211),	-- Shackling Gloves
+							i(59208),	-- Wrap of Open Menace
+							i(59209),	-- Eldritch Gloves
+							i(59210),	-- Earthbound Mantle
+							i(59211),	-- Shackling Gloves
 							i(131473),	-- Mantle of the Bound
 						},
 						["qg"] = 2789,	-- Skuerto
@@ -248,10 +248,10 @@ _.Zones =
 					}),
 					qh(26912, {	-- The Princess Unleashed (awarded "Hammerfall" criteria and overall "Arathi Highlands Quests" achievement)
 						["groups"] = {
-							i( 59208),	-- Wrap of Open Menace
-							i( 59209),	-- Eldritch Gloves
-							i( 59210),	-- Earthbound Mantle
-							i( 59211),	-- Shackling Gloves
+							i(59208),	-- Wrap of Open Menace
+							i(59209),	-- Eldritch Gloves
+							i(59210),	-- Earthbound Mantle
+							i(59211),	-- Shackling Gloves
 							i(131473),	-- Mantle of the Bound
 						},
 						["qg"] = 2787,	-- Zaruk
@@ -259,10 +259,10 @@ _.Zones =
 					}),
 					qh(26029, {	-- The Real Threat
 						["groups"] = {
-							i( 59186),	-- Skullslasher
-							i( 59187),	-- Silent Huntress
-							i( 59188),	-- Belt of Affront
-							i( 59189),	-- Mistspray Vest
+							i(59186),	-- Skullslasher
+							i(59187),	-- Silent Huntress
+							i(59188),	-- Belt of Affront
+							i(59189),	-- Mistspray Vest
 							i(131469),	-- Seabreeze Hauberk
 						},
 						["qg"] = 41966,	-- Deathstalker Maudria
@@ -277,9 +277,9 @@ _.Zones =
 					}),
 					qh(26025, {	-- The Traitor Orc
 						["groups"] = {
-							i( 59171),	-- Bloodstone-Studded Cloak
-							i( 59172),	-- Drakeskin Leggings
-							i( 59173),	-- Radiant Silver Armguards
+							i(59171),	-- Bloodstone-Studded Cloak
+							i(59172),	-- Drakeskin Leggings
+							i(59173),	-- Radiant Silver Armguards
 							i(131466),	-- Highland Chain Greaves
 						},
 						["qg"] = 41949,	-- Dark Ranger Alina
@@ -287,11 +287,11 @@ _.Zones =
 					}),
 					qh(26428, {	-- To Steal From Thieves
 						["groups"] = {
-							i( 59158),	-- Craig's Steel
-							i( 59164),	-- Grim Mace
-							i( 59165),	-- Genavie's Leggings
-							i( 59166),	-- Adulterous Belt
-							i( 59167),	-- Treads of Unforgotten Pain
+							i(59158),	-- Craig's Steel
+							i(59164),	-- Grim Mace
+							i(59165),	-- Genavie's Leggings
+							i(59166),	-- Adulterous Belt
+							i(59167),	-- Treads of Unforgotten Pain
 							i(131528),	-- Cheater's Cinch
 						},
 						["qg"] = 4486,	-- Genavie Callow
@@ -317,17 +317,17 @@ _.Zones =
 					}),
 					o(  2713, {	-- Wanted Board
 						qa(26024, {	-- Wanted! Marez Cowl
-							i( 59182),	-- Syndicate Dagger
-							i( 59183),	-- Silenced Rifle
-							i( 59184),	-- Demon-Trafficker's Belt
-							i( 59185),	-- Vest of Dark Rumors
+							i(59182),	-- Syndicate Dagger
+							i(59183),	-- Silenced Rifle
+							i(59184),	-- Demon-Trafficker's Belt
+							i(59185),	-- Vest of Dark Rumors
 							i(131465),	-- Hauberk of Dire Tidings
 						}),
 						qa(26079, {	-- Wanted! Otto and Falconcrest
-							i( 59174),	-- Dustfall Bracers
-							i( 59175),	-- Sandals of Sorrow
-							i( 59176),	-- War Rider Belt
-							i( 59177),	-- Captain Nials' Belt
+							i(59174),	-- Dustfall Bracers
+							i(59175),	-- Sandals of Sorrow
+							i(59176),	-- War Rider Belt
+							i(59177),	-- Captain Nials' Belt
 							i(131477),	-- Boots of the Refuge Captain
 							i(131478),	-- Battle Rider Belt
 						}),
@@ -1135,7 +1135,7 @@ _.Zones =
 								un(2, i(15456)),	-- Lightstep Leggings
 							})),
 							un(40, qa( 697, {	-- Malin's Request
-								un(2, i( 4975)),	-- Vigilant Buckler
+								un(2, i(4975)),	-- Vigilant Buckler
 								un(2, i(15104)),	-- Wingborne Boots
 							})),
 							un(40, qa(682, {	-- Stromgarde Badges

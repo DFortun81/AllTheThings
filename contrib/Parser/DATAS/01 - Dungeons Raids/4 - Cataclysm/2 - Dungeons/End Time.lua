@@ -73,36 +73,36 @@ _.Instances = { tier(4, {	-- Cataclysm
 						54544,	-- Echo of Tyrande
 					},
 					["groups"] = {
-						i( 72804),	-- Dragonshrine Scepter
-						i( 72806),	-- Echoing Headguard
-						i( 72801),	-- Breastplate of Sorrow
-						i( 72800),	-- Gauntlets of Temporal Interference
-						i( 72805),	-- Gloves of The Hollow
-						i( 72798),	-- Cord of Lost Hope
-						i( 72803),	-- Girdle of Lost Heroes
+						i(72804),	-- Dragonshrine Scepter
+						i(72806),	-- Echoing Headguard
+						i(72801),	-- Breastplate of Sorrow
+						i(72800),	-- Gauntlets of Temporal Interference
+						i(72805),	-- Gloves of The Hollow
+						i(72798),	-- Cord of Lost Hope
+						i(72803),	-- Girdle of Lost Heroes
 						i(157606), 	-- Time-Dessicated Girdle (Added in 7.3.5)
-						i( 72807),	-- Waistguard of Lost Time
-						i( 72802),	-- Time Traveler's Leggings
-						i( 72799),	-- Dead End Boots
+						i(72807),	-- Waistguard of Lost Time
+						i(72802),	-- Time Traveler's Leggings
+						i(72799),	-- Dead End Boots
 					},
 				}),
 				cr(54431, e(340, { 	-- Echo of Baine
-					i( 72814),	-- Axe of The Tauren Chieftain
-					i( 72815),	-- Bloodhoof Legguards
+					i(72814),	-- Axe of The Tauren Chieftain
+					i(72815),	-- Bloodhoof Legguards
 				})),
 				cr(54445, e(285, { 	-- Echo of Jaina
-					i( 72808),	-- Jaina's Staff
-					i( 72809),	-- Ward of Incantations
+					i(72808),	-- Jaina's Staff
+					i(72809),	-- Ward of Incantations
 				})),
 				cr(54123, e(323, { 	-- Echo of Sylvannas
 					ach(6130),	-- Severed Ties
-					i( 72810),	-- Windrunner's Bow
-					i( 72811),	-- Cloak of the Banshee Queen
+					i(72810),	-- Windrunner's Bow
+					i(72811),	-- Cloak of the Banshee Queen
 				})),
 				cr(54544, e(283, { 	-- Echo of Tyrande
 					ach(5995),	-- Moon Guard
-					i( 72812),	-- Crescent Moon
-					i( 72813),	-- Whisperwind Robes
+					i(72812),	-- Crescent Moon
+					i(72813),	-- Whisperwind Robes
 				})),			
 				cr(54432, e(289, { 	-- Murozond
 					ach(6117),	-- Heroic: End Time

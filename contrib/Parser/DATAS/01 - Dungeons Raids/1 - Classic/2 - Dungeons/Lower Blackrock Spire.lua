@@ -114,11 +114,11 @@ _.Instances = { tier(1, {	-- Classic
 				}),
 			})),
 			cr(9236, e(389, {	-- Shadow Hunter Vosh'gajin
-				i( 12651),	-- Blackcrow
-				i( 12653),	-- Riphook
-				i( 13257),	-- Demonic Runed Spaulders
-				i( 12626),	-- Funeral Cuffs
-				i( 13255),	-- Trueaim Gauntlets
+				i(12651),	-- Blackcrow
+				i(12653),	-- Riphook
+				i(13257),	-- Demonic Runed Spaulders
+				i(12626),	-- Funeral Cuffs
+				i(13255),	-- Trueaim Gauntlets
 				i(151413),	-- Smolderthorn Greatbelt
 				un(7, i(16712)), 	-- Shadowcraft Gloves																				
 			})),
@@ -170,11 +170,11 @@ _.Instances = { tier(1, {	-- Classic
 				},
 			}),
 			cr(10596, e(391, {	-- Mother Smolderweb
-				i( 68673),	-- Smolderthorn Egg (PET!)
-				i( 13183),	-- Venomspitter
+				i(68673),	-- Smolderthorn Egg (PET!)
+				i(13183),	-- Venomspitter
 				i(151414),	-- Arcanophile's Greatcloak
-				i( 13244),	-- Gilded Gauntlets
-				i( 13213),	-- Smolderweb's Eye
+				i(13244),	-- Gilded Gauntlets
+				i(13213),	-- Smolderweb's Eye
 				un(2, i(16715)),	-- Wildheart Boots
 			})),
 			cr(10584, e(392, {	-- Urok Doomhowl
@@ -188,9 +188,9 @@ _.Instances = { tier(1, {	-- Classic
 			})),
 			cr( 9736, e(393, {	-- Quartermaster Zigris
 				i(12835),	-- Plans: Annihilator
-				i( 12264),	-- Worg Carrier (PET!)
-				i( 13253),	-- Hands of Power
-				i( 13252),	-- Cloudrunner Girdle
+				i(12264),	-- Worg Carrier (PET!)
+				i(13253),	-- Hands of Power
+				i(13252),	-- Cloudrunner Girdle
 				i(151416),	-- Dark Horde Grunt's Legplates
 				i(151415),	-- Veteran Spearman's Chain Boots
 				i(21955),  	-- Design: Black Diamond Crab
@@ -210,11 +210,11 @@ _.Instances = { tier(1, {	-- Classic
 				i(13210),	-- Pads of the Dread Wolf
 			})),
 			cr(10268, e(395, {	-- Gizrul the Slavener
-				i( 13205),	-- Rhombeard Protector
+				i(13205),	-- Rhombeard Protector
 				i(151418),	-- Raider Aspirant's Helm
 				i(151417),	-- Worg-Keeper's Spaulders
-				i( 13208),	-- Bleak Howler Armguards
-				i( 13206),	-- Wolfshear Leggings
+				i(13208),	-- Bleak Howler Armguards
+				i(13206),	-- Wolfshear Leggings
 				un(2, i(16718)),	-- Wildheart Spaulders
 			})),
 			n(9718, {	-- Ghok Bashguud (Rare)
@@ -231,11 +231,11 @@ _.Instances = { tier(1, {	-- Classic
 			}),
 			cr( 9568, e(396, {	-- Overlord Wyrmthalak
 				ach(643),	-- Lower Blackrock Spire
-				i( 13163),	-- Relentless Scythe
-				i( 13161),	-- Trindlehaven Staff
-				i( 13162),	-- Reiver Claws
-				i( 13143),	-- Mark of the Dragon Lord
-				i( 22321),	-- Heart of Wyrmthalak
+				i(13163),	-- Relentless Scythe
+				i(13161),	-- Trindlehaven Staff
+				i(13162),	-- Reiver Claws
+				i(13143),	-- Mark of the Dragon Lord
+				i(22321),	-- Heart of Wyrmthalak
 				i(142370),	-- Plans: Arcanite Champion
 				un(2, i(16679)),	-- Beaststalker's Mantle
 				un(2, i(13148)), 	-- Chillpike [Disappeared sometime around 3.0]
