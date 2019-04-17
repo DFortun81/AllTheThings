@@ -983,11 +983,6 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					},
 				}),
 			}),
-			{	-- Common Boss Drops 
-				["npcID"] = -1,
-				["g"] = {
-				},
-			},
 			d(14, {	-- Normal
 				["lvl"] = 68,
 				["ignoreBonus"] = 1,
@@ -1008,16 +1003,6 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(32245),	-- Tide-Stomper's Greaves
 						i(32238),	-- Ring of Calming Waves
 						i(32247),	-- Ring of Captured Storms
-						-- Recipes
-						i(32754),	-- Pattern: Bracers of Nimble Thought
-						i(32744),	-- Pattern: Bracers of Renewed Life
-						i(32750),	-- Pattern: Living Earth Bindings
-						i(32749),	-- Pattern: Shoulders of Lightning Reflexes
-						i(32747),	-- Pattern: Swiftstrike Shoulders
-						i(32753),	-- Pattern: Swiftheal Mantle
-						i(32738),	-- Plans: Dawnsteel Bracers
-						i(32737),	-- Plans: Swiftsteel Shoulders
-
 					})),
 					cr(22898, e(1583, {	-- Supremus
 						i(122106),	-- Shard of Supremus (PET!)
@@ -1033,15 +1018,6 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(32258),	-- Naturalist's Preserving Cinch
 						i(32256),	-- Waistwrap of Infinity
 						i(32261),	-- Band of the Abyssal Lord
-						-- Recipes
-						i(32754),	-- Pattern: Bracers of Nimble Thought
-						i(32744),	-- Pattern: Bracers of Renewed Life
-						i(32750),	-- Pattern: Living Earth Bindings
-						i(32749),	-- Pattern: Shoulders of Lightning Reflexes
-						i(32747),	-- Pattern: Swiftstrike Shoulders
-						i(32753),	-- Pattern: Swiftheal Mantle
-						i(32738),	-- Plans: Dawnsteel Bracers
-						i(32737),	-- Plans: Swiftsteel Shoulders
 					})),
 					cr(22841, e(1584, {	-- Shade of Akama
 						i(32361),	-- Blind-Seers Icon
@@ -1058,15 +1034,6 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(32263),	-- Praetorian's Legguards
 						i(32268),	-- Myrmidon's Treads
 						i(32266),	-- Ring of Deceitful Intent
-						-- Recipes
-						i(32754),	-- Pattern: Bracers of Nimble Thought
-						i(32744),	-- Pattern: Bracers of Renewed Life
-						i(32750),	-- Pattern: Living Earth Bindings
-						i(32749),	-- Pattern: Shoulders of Lightning Reflexes
-						i(32747),	-- Pattern: Swiftstrike Shoulders
-						i(32753),	-- Pattern: Swiftheal Mantle
-						i(32738),	-- Plans: Dawnsteel Bracers
-						i(32737),	-- Plans: Swiftsteel Shoulders
 					})),
 					cr(22871, e(1585, {	-- Teron Gorefiend
 						i(32348),	-- Soul Cleaver
@@ -1079,15 +1046,6 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(32280),	-- Gauntlets of Enforcement
 						i(32512),	-- Girdle of Lordaeron's Fallen
 						i(32510),	-- Softstep Boots of Tracking
-						-- Recipes
-						i(32754),	-- Pattern: Bracers of Nimble Thought
-						i(32744),	-- Pattern: Bracers of Renewed Life
-						i(32750),	-- Pattern: Living Earth Bindings
-						i(32749),	-- Pattern: Shoulders of Lightning Reflexes
-						i(32747),	-- Pattern: Swiftstrike Shoulders
-						i(32753),	-- Pattern: Swiftheal Mantle
-						i(32738),	-- Plans: Dawnsteel Bracers
-						i(32737),	-- Plans: Swiftsteel Shoulders
 					})),
 					cr(22948, e(1586, {	-- Gurtogg Bloodboil
 						i(32344),	-- Staff of Immaculate Recovery
@@ -1103,15 +1061,6 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(32341),	-- Leggings of Divine Retribution
 						i(32335),	-- Unstoppable Aggressor's Ring
 						i(32501),	-- Shadowmoon Insignia
-						-- Recipes
-						i(32754),	-- Pattern: Bracers of Nimble Thought
-						i(32744),	-- Pattern: Bracers of Renewed Life
-						i(32750),	-- Pattern: Living Earth Bindings
-						i(32749),	-- Pattern: Shoulders of Lightning Reflexes
-						i(32747),	-- Pattern: Swiftstrike Shoulders
-						i(32753),	-- Pattern: Swiftheal Mantle
-						i(32738),	-- Plans: Dawnsteel Bracers
-						i(32737),	-- Plans: Swiftsteel Shoulders
 					})),
 					cr(23418, e(1587, {	-- Reliquary of Souls
 						i(122107),	-- Fragment of Anger (PET!)
@@ -1130,15 +1079,6 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(32346),	-- Boneweave Girdle
 						i(32345),	-- Dreadboots of the Legion
 						i(32352),	-- Naturewarden's Treads
-						-- Recipes
-						i(32754),	-- Pattern: Bracers of Nimble Thought
-						i(32744),	-- Pattern: Bracers of Renewed Life
-						i(32750),	-- Pattern: Living Earth Bindings
-						i(32749),	-- Pattern: Shoulders of Lightning Reflexes
-						i(32747),	-- Pattern: Swiftstrike Shoulders
-						i(32753),	-- Pattern: Swiftheal Mantle
-						i(32738),	-- Plans: Dawnsteel Bracers
-						i(32737),	-- Plans: Swiftsteel Shoulders
 					})),
 					cr(22947, e(1588, {	-- Mother Shahraz
 						i(31101, {	-- Pauldrons of the Forgotten Conqueror
@@ -1187,15 +1127,6 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(32365),	-- Heartshatter Breastplate
 						i(32367),	-- Leggings of Devastation
 						i(32366),	-- Shadowmaster's Boots
-						-- Recipes
-						i(32754),	-- Pattern: Bracers of Nimble Thought
-						i(32744),	-- Pattern: Bracers of Renewed Life
-						i(32750),	-- Pattern: Living Earth Bindings
-						i(32749),	-- Pattern: Shoulders of Lightning Reflexes
-						i(32747),	-- Pattern: Swiftstrike Shoulders
-						i(32753),	-- Pattern: Swiftheal Mantle
-						i(32738),	-- Plans: Dawnsteel Bracers
-						i(32737),	-- Plans: Swiftsteel Shoulders
 					})),
 					cr(23426, e(1589, {	-- The Illidari Council
 						["crs"] = {
@@ -1261,7 +1192,13 @@ _.Instances = { tier(2, {	-- Burning Crusade
 								i(32838),	-- Warglaive of Azzinoth (LEGENDARY! OH)
 							},
 							["achievementID"] = 426,	-- Warglaives of Azzinoth
-							["classes"] = { 1, 4, 6, 10, 12 },	-- Warrior, Rogue, DK, Monk, DH
+							["classes"] = {
+								1,	-- Warrior
+								4,	-- Rogue
+								6,	-- Death Knight
+								10,	-- Monk
+								12,	-- Demon Hunter
+							},
 						}),
 						i(31089, {	-- Chestguard of the Forgotten Conqueror
 							i(30990),	-- Lightbringer Breastplate
@@ -1316,15 +1253,6 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(32496),	-- Memento of Tyrande
 						i(32483),	-- The Skull of Gul'dan
 						i(122196),	-- Music Roll: The Burning Legion
-						-- Recipes
-						i(32754),	-- Pattern: Bracers of Nimble Thought
-						i(32744),	-- Pattern: Bracers of Renewed Life
-						i(32750),	-- Pattern: Living Earth Bindings
-						i(32749),	-- Pattern: Shoulders of Lightning Reflexes
-						i(32747),	-- Pattern: Swiftstrike Shoulders
-						i(32753),	-- Pattern: Swiftheal Mantle
-						i(32738),	-- Plans: Dawnsteel Bracers
-						i(32737),	-- Plans: Swiftsteel Shoulders
 					})),
 				},
 			}),
