@@ -197,28 +197,35 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 							i(116239),	-- Gunnery Sergeant's Legplates
 							i(116301),	-- Lava Shock Seal
 						})),
-						cr(76557, e(1203, {	-- The Iron Maidens (77231,77477)
-							{
-								["achievementID"] = 8991,	-- Iron Assembly
-								["criteriaID"] = 3,			-- The Iron Maidens
+						e(1203, {	-- The Iron Maidens
+							["crs"] = {
+								77557,	-- Admiral Gar'an
+								77231,	-- Enforcer Sorka
+								77477,	-- Marak the Blooded
 							},
-							i(116390),	-- Battle Medic's Wand
-							i(116220),	-- Grapeshot Hood
-							i(116263),	-- Vortex Plate Helm
-							i(116050),	-- Bombardeer's Targeting Helm
-							i(116312),	-- Sorka's Ear Collection
-							i(120386),	-- Ashlink Gloves
-							i(120392),	-- Blacksteel Gauntlets
-							i(120374),	-- Ebonflame Grips
-							i(120384),	-- Sootfur Gauntlets
-							i(116225),	-- Gauntlets of Flickering Blades
-							i(116017),	-- Deckhand's Cord
-							i(116051),	-- Rogg's Earthen Legguards
-							i(116010),	-- Incendiary Leggings
-							i(116250),	-- Impaler's Greatboots
-							i(116314),	-- Blackheart Enforcer's Medallion
-							un(40, i(115494)),	-- Draenic Thaumaturgical Orb
-						})),
+							["g"] = {
+								{
+									["achievementID"] = 8991,	-- Iron Assembly
+									["criteriaID"] = 3,			-- The Iron Maidens
+								},
+								i(116390),	-- Battle Medic's Wand
+								i(116220),	-- Grapeshot Hood
+								i(116263),	-- Vortex Plate Helm
+								i(116050),	-- Bombardeer's Targeting Helm
+								i(116312),	-- Sorka's Ear Collection
+								i(120386),	-- Ashlink Gloves
+								i(120392),	-- Blacksteel Gauntlets
+								i(120374),	-- Ebonflame Grips
+								i(120384),	-- Sootfur Gauntlets
+								i(116225),	-- Gauntlets of Flickering Blades
+								i(116017),	-- Deckhand's Cord
+								i(116051),	-- Rogg's Earthen Legguards
+								i(116010),	-- Incendiary Leggings
+								i(116250),	-- Impaler's Greatboots
+								i(116314),	-- Blackheart Enforcer's Medallion
+								un(40, i(115494)),	-- Draenic Thaumaturgical Orb
+							},
+						}),
 					},
 				}),
 				ach(8992, { 	-- Blackhand's Crucible
@@ -542,49 +549,56 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(113957),	-- Firemender's Smoldering Signet
 					i(113963),	-- Siege Bomber's Band
 				})),
-				cr(76557, e(1203, {	-- The Iron Maidens (77231,77477)
-					ach(8984),	-- Be Quick or Be Dead
-					{
-						["achievementID"] = 8991,	-- Iron Assembly
-						["criteriaID"] = 3,			-- The Iron Maidens
+				e(1203, {	-- The Iron Maidens
+					["crs"] = {
+						77557,	-- Admiral Gar'an
+						77231,	-- Enforcer Sorka
+						77477,	-- Marak the Blooded
 					},
-					i(119306, {	-- Gauntlets of the Iron Conqueror
-						i(115567),	-- Gauntlets of Guiding Light
-						i(115585),	-- Shadow Council's Gloves
-						i(115562),	-- Soul Priest's Gloves
-					}),
-					i(119319, {	-- Gauntlets of the Iron Protector
-						i(115583),	-- Blackhand's Handguards
-						i(115555),	-- Handwraps of the Somber Gaze
-						i(115549),	-- Rylakstalker's Gloves
-						i(115578),	-- Windspeaker's Handwraps
-					}),
-					i(119311, {	-- Gauntlets of the Iron Vanquisher
-						i(115552),	-- Arcanoshatter Gloves
-						i(115541),	-- Living Wood Grips
-						i(115538),	-- Ogreskull Boneplate Gauntlets
-						i(115571),	-- Poisoner's Gloves
-					}),
-					{
-						["itemID"] = 118384,	-- Sliver of Iron
-						["questID"] = 37029,	-- Sigil of the Black Hand
+					["g"] = {
+						ach(8984),	-- Be Quick or Be Dead
+						{
+							["achievementID"] = 8991,	-- Iron Assembly
+							["criteriaID"] = 3,			-- The Iron Maidens
+						},
+						i(119306, {	-- Gauntlets of the Iron Conqueror
+							i(115567),	-- Gauntlets of Guiding Light
+							i(115585),	-- Shadow Council's Gloves
+							i(115562),	-- Soul Priest's Gloves
+						}),
+						i(119319, {	-- Gauntlets of the Iron Protector
+							i(115583),	-- Blackhand's Handguards
+							i(115555),	-- Handwraps of the Somber Gaze
+							i(115549),	-- Rylakstalker's Gloves
+							i(115578),	-- Windspeaker's Handwraps
+						}),
+						i(119311, {	-- Gauntlets of the Iron Vanquisher
+							i(115552),	-- Arcanoshatter Gloves
+							i(115541),	-- Living Wood Grips
+							i(115538),	-- Ogreskull Boneplate Gauntlets
+							i(115571),	-- Poisoner's Gloves
+						}),
+						{
+							["itemID"] = 118384,	-- Sliver of Iron
+							["questID"] = 37029,	-- Sigil of the Black Hand
+						},
+						i(113966),	-- Gar'an's Brutal Spearlauncher
+						i(113973),	-- Koloch Na, the Blood Feast
+						i(113965),	-- Sorka's Chainfist
+						i(113978),	-- Sorka's Nightshade Cowl
+						i(113972),	-- Cloak of Sanguine Terror
+						i(113971),	-- Drape of the Dark Hunt
+						i(113977),	-- Bloodsoaked Heart Protector
+						i(113968),	-- Bloodwhirl Bracers
+						i(113967),	-- Deckhand's Rope Belt
+						i(113976),	-- Uktar's Belt of Chiming Rings
+						i(113970),	-- Turret Mechanic's Legwraps
+						i(113974),	-- Treads of the Dark Hunt
+						i(113975),	-- Uk'urogg's Corrupted Seal
+						i(113969),	-- Vial of Convulsive Shadows
+						un(40, i(115494)),	-- Draenic Thaumaturgical Orb
 					},
-					i(113966),	-- Gar'an's Brutal Spearlauncher
-					i(113973),	-- Koloch Na, the Blood Feast
-					i(113965),	-- Sorka's Chainfist
-					i(113978),	-- Sorka's Nightshade Cowl
-					i(113972),	-- Cloak of Sanguine Terror
-					i(113971),	-- Drape of the Dark Hunt
-					i(113977),	-- Bloodsoaked Heart Protector
-					i(113968),	-- Bloodwhirl Bracers
-					i(113967),	-- Deckhand's Rope Belt
-					i(113976),	-- Uktar's Belt of Chiming Rings
-					i(113970),	-- Turret Mechanic's Legwraps
-					i(113974),	-- Treads of the Dark Hunt
-					i(113975),	-- Uk'urogg's Corrupted Seal
-					i(113969),	-- Vial of Convulsive Shadows
-					un(40, i(115494)),	-- Draenic Thaumaturgical Orb
-				})),
+				}),
 				cr(77325, e(959, {	-- Blackhand
 					ach(8952),	-- Ashes, Ashes...
 					ach(8992),	-- Blackhand's Crucible
@@ -1110,49 +1124,56 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(113957),	-- Firemender's Smoldering Signet
 					i(113963),	-- Siege Bomber's Band
 				})),
-				cr(76557, e(1203, {	-- The Iron Maidens (77231,77477)
-					ach(8984),	-- Be Quick or Be Dead
-					{
-						["achievementID"] = 8991,	-- Iron Assembly
-						["criteriaID"] = 3,			-- The Iron Maidens
+				e(1203, {	-- The Iron Maidens
+					["crs"] = {
+						77557,	-- Admiral Gar'an
+						77231,	-- Enforcer Sorka
+						77477,	-- Marak the Blooded
 					},
-					i(119306, {	-- Gauntlets of the Iron Conqueror
-						i(115567),	-- Gauntlets of Guiding Light
-						i(115585),	-- Shadow Council's Gloves
-						i(115562),	-- Soul Priest's Gloves
-					}),
-					i(119319, {	-- Gauntlets of the Iron Protector
-						i(115583),	-- Blackhand's Handguards
-						i(115555),	-- Handwraps of the Somber Gaze
-						i(115549),	-- Rylakstalker's Gloves
-						i(115578),	-- Windspeaker's Handwraps
-					}),
-					i(119311, {	-- Gauntlets of the Iron Vanquisher
-						i(115552),	-- Arcanoshatter Gloves
-						i(115541),	-- Living Wood Grips
-						i(115538),	-- Ogreskull Boneplate Gauntlets
-						i(115571),	-- Poisoner's Gloves
-					}),
-					{
-						["itemID"] = 118385,	-- Sliver of Iron (Heroic)
-						["questID"] = 37030,	-- Sigil of the Black Hand (Heroic)
+					["g"] = {
+						ach(8984),	-- Be Quick or Be Dead
+						{
+							["achievementID"] = 8991,	-- Iron Assembly
+							["criteriaID"] = 3,			-- The Iron Maidens
+						},
+						i(119306, {	-- Gauntlets of the Iron Conqueror
+							i(115567),	-- Gauntlets of Guiding Light
+							i(115585),	-- Shadow Council's Gloves
+							i(115562),	-- Soul Priest's Gloves
+						}),
+						i(119319, {	-- Gauntlets of the Iron Protector
+							i(115583),	-- Blackhand's Handguards
+							i(115555),	-- Handwraps of the Somber Gaze
+							i(115549),	-- Rylakstalker's Gloves
+							i(115578),	-- Windspeaker's Handwraps
+						}),
+						i(119311, {	-- Gauntlets of the Iron Vanquisher
+							i(115552),	-- Arcanoshatter Gloves
+							i(115541),	-- Living Wood Grips
+							i(115538),	-- Ogreskull Boneplate Gauntlets
+							i(115571),	-- Poisoner's Gloves
+						}),
+						{
+							["itemID"] = 118385,	-- Sliver of Iron (Heroic)
+							["questID"] = 37030,	-- Sigil of the Black Hand (Heroic)
+						},
+						i(113966),	-- Gar'an's Brutal Spearlauncher
+						i(113973),	-- Koloch Na, the Blood Feast
+						i(113965),	-- Sorka's Chainfist
+						i(113978),	-- Sorka's Nightshade Cowl
+						i(113972),	-- Cloak of Sanguine Terror
+						i(113971),	-- Drape of the Dark Hunt
+						i(113977),	-- Bloodsoaked Heart Protector
+						i(113968),	-- Bloodwhirl Bracers
+						i(113967),	-- Deckhand's Rope Belt
+						i(113976),	-- Uktar's Belt of Chiming Rings
+						i(113970),	-- Turret Mechanic's Legwraps
+						i(113974),	-- Treads of the Dark Hunt
+						i(113975),	-- Uk'urogg's Corrupted Seal
+						i(113969),	-- Vial of Convulsive Shadows
+						un(40, i(115494)),	-- Draenic Thaumaturgical Orb
 					},
-					i(113966),	-- Gar'an's Brutal Spearlauncher
-					i(113973),	-- Koloch Na, the Blood Feast
-					i(113965),	-- Sorka's Chainfist
-					i(113978),	-- Sorka's Nightshade Cowl
-					i(113972),	-- Cloak of Sanguine Terror
-					i(113971),	-- Drape of the Dark Hunt
-					i(113977),	-- Bloodsoaked Heart Protector
-					i(113968),	-- Bloodwhirl Bracers
-					i(113967),	-- Deckhand's Rope Belt
-					i(113976),	-- Uktar's Belt of Chiming Rings
-					i(113970),	-- Turret Mechanic's Legwraps
-					i(113974),	-- Treads of the Dark Hunt
-					i(113975),	-- Uk'urogg's Corrupted Seal
-					i(113969),	-- Vial of Convulsive Shadows
-					un(40, i(115494)),	-- Draenic Thaumaturgical Orb
-				})),
+				}),
 				cr(77325, e(959, {	-- Blackhand
 					{
 						["achievementID"] = 9444,	-- Ahead of the Curve: Blackhand's Crucible
@@ -1691,50 +1712,57 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(113957),	-- Firemender's Smoldering Signet
 					i(113963),	-- Siege Bomber's Band
 				})),
-				cr(76557, e(1203, {	-- The Iron Maidens (77231,77477)
-					ach(8984),	-- Be Quick or Be Dead
-					ach(8972),	-- Mythic: Iron Maidens
-					{
-						["achievementID"] = 8991,	-- Iron Assembly
-						["criteriaID"] = 3,			-- The Iron Maidens
+				e(1203, {	-- The Iron Maidens
+					["crs"] = {
+						77557,	-- Admiral Gar'an
+						77231,	-- Enforcer Sorka
+						77477,	-- Marak the Blooded
 					},
-					i(119306, {	-- Gauntlets of the Iron Conqueror
-						i(115567),	-- Gauntlets of Guiding Light
-						i(115585),	-- Shadow Council's Gloves
-						i(115562),	-- Soul Priest's Gloves
-					}),
-					i(119319, {	-- Gauntlets of the Iron Protector
-						i(115583),	-- Blackhand's Handguards
-						i(115555),	-- Handwraps of the Somber Gaze
-						i(115549),	-- Rylakstalker's Gloves
-						i(115578),	-- Windspeaker's Handwraps
-					}),
-					i(119311, {	-- Gauntlets of the Iron Vanquisher
-						i(115552),	-- Arcanoshatter Gloves
-						i(115541),	-- Living Wood Grips
-						i(115538),	-- Ogreskull Boneplate Gauntlets
-						i(115571),	-- Poisoner's Gloves
-					}),
-					{
-						["itemID"] = 118388,	-- Sliver of Iron (Mythic)
-						["questID"] = 37031,	-- Sigil of the Black Hand (Mythic)
+					["g"] = {
+						ach(8984),	-- Be Quick or Be Dead
+						ach(8972),	-- Mythic: Iron Maidens
+						{
+							["achievementID"] = 8991,	-- Iron Assembly
+							["criteriaID"] = 3,			-- The Iron Maidens
+						},
+						i(119306, {	-- Gauntlets of the Iron Conqueror
+							i(115567),	-- Gauntlets of Guiding Light
+							i(115585),	-- Shadow Council's Gloves
+							i(115562),	-- Soul Priest's Gloves
+						}),
+						i(119319, {	-- Gauntlets of the Iron Protector
+							i(115583),	-- Blackhand's Handguards
+							i(115555),	-- Handwraps of the Somber Gaze
+							i(115549),	-- Rylakstalker's Gloves
+							i(115578),	-- Windspeaker's Handwraps
+						}),
+						i(119311, {	-- Gauntlets of the Iron Vanquisher
+							i(115552),	-- Arcanoshatter Gloves
+							i(115541),	-- Living Wood Grips
+							i(115538),	-- Ogreskull Boneplate Gauntlets
+							i(115571),	-- Poisoner's Gloves
+						}),
+						{
+							["itemID"] = 118388,	-- Sliver of Iron (Mythic)
+							["questID"] = 37031,	-- Sigil of the Black Hand (Mythic)
+						},
+						i(113966),	-- Gar'an's Brutal Spearlauncher
+						i(113973),	-- Koloch Na, the Blood Feast
+						i(113965),	-- Sorka's Chainfist
+						i(113978),	-- Sorka's Nightshade Cowl
+						i(113972),	-- Cloak of Sanguine Terror
+						i(113971),	-- Drape of the Dark Hunt
+						i(113977),	-- Bloodsoaked Heart Protector
+						i(113968),	-- Bloodwhirl Bracers
+						i(113967),	-- Deckhand's Rope Belt
+						i(113976),	-- Uktar's Belt of Chiming Rings
+						i(113970),	-- Turret Mechanic's Legwraps
+						i(113974),	-- Treads of the Dark Hunt
+						i(113975),	-- Uk'urogg's Corrupted Seal
+						i(113969),	-- Vial of Convulsive Shadows
+						un(40, i(115494)),	-- Draenic Thaumaturgical Orb
 					},
-					i(113966),	-- Gar'an's Brutal Spearlauncher
-					i(113973),	-- Koloch Na, the Blood Feast
-					i(113965),	-- Sorka's Chainfist
-					i(113978),	-- Sorka's Nightshade Cowl
-					i(113972),	-- Cloak of Sanguine Terror
-					i(113971),	-- Drape of the Dark Hunt
-					i(113977),	-- Bloodsoaked Heart Protector
-					i(113968),	-- Bloodwhirl Bracers
-					i(113967),	-- Deckhand's Rope Belt
-					i(113976),	-- Uktar's Belt of Chiming Rings
-					i(113970),	-- Turret Mechanic's Legwraps
-					i(113974),	-- Treads of the Dark Hunt
-					i(113975),	-- Uk'urogg's Corrupted Seal
-					i(113969),	-- Vial of Convulsive Shadows
-					un(40, i(115494)),	-- Draenic Thaumaturgical Orb
-				})),
+				}),
 				cr(77325, e(959, {	-- Blackhand
 					{
 						["achievementID"] = 9444,	-- Ahead of the Curve: Blackhand's Crucible
