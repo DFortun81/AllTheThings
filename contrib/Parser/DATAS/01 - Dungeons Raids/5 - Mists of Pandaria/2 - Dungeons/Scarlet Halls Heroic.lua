@@ -74,7 +74,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						un(2, i(82818)),	-- Vellum-Ripper Gloves (7.1 - Removed from Game!)
 						un(2, i(82815)),	-- Bindburner Belt (7.1 - Removed from Game!)
 						un(2, i(82819)),	-- Bradbury's Entropic Legguards (7.1 - Removed from Game!)
-						un(2, i(82812)),	-- Pyretic Legguards (7.1 - Removed from Game!)}),
+						un(2, i(82812)),	-- Pyretic Legguards (7.1 - Removed from Game!)
+						un(2, i(87550)),	-- Vithrak, Gaze of the Deadman (7.1 - Removed from Game!)
 					})),
 				},
 			}),

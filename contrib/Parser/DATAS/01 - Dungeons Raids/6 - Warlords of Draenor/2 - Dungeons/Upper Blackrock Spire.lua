@@ -65,7 +65,12 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(109790),	-- Streamslither Boots
 					i(109794),	-- Verdant Plate Treads
 					i(109998),	-- Gor'ashan's Lodestone Spike
+					un(3, i(118743)),	-- Band of Desolation [Only available during pre WoD level 90 version]
+					un(3, i(118742)),	-- Burning Band [Only available during pre WoD level 90 version]
 					un(3, i(118755)),	-- Dripping Willow [Only available during pre WoD level 90 version]
+					un(3, i(118745)),	-- Painweaver Seal [Only available during pre WoD level 90 version]
+					un(3, i(118746)),	-- Rosewine Loop [Only available during pre WoD level 90 version]
+					un(3, i(118744)),	-- Rune Band of Healing [Only available during pre WoD level 90 version]
 				})),
 				cr(76021, e(1227, {	-- Kyrak
 					i(118724),	-- Finkle's Flenser
@@ -115,7 +120,11 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(109769),	-- Slicebinder Loop
 					i(109777),	-- Unsullied Signet
 					i(110018),	-- Kyrak's Vileblood Serum
+					un(3, i(118748)),	-- Fallbrush Gauntlets [Only available during pre WoD level 90 version]
 					un(3, i(118756)),	-- Finkle's Shanker [Only available during pre WoD level 90 version]
+					un(3, i(118747)),	-- Grips of Power [Only available during pre WoD level 90 version]
+					un(3, i(118750)),	-- Reiver Gauntlets [Only available during pre WoD level 90 version]
+					un(3, i(118749)),	-- Trueaim Grips [Only available during pre WoD level 90 version]
 				})),
 				cr(79912, e(1228, {	-- Commander Tharbek
 					i(118726),	-- Tharbek's Brutal Possessor
@@ -161,10 +170,12 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(109852),	-- Streamslither Gauntlets
 					i(109857),	-- Verdant Plate Grips
 					i(110008),	-- Tharbek's Lucky Pebble
+					un(3, i(118752)),	-- Bloodmoon Tunic [Only available during pre WoD level 90 version]
 					un(3, i(118751)),	-- Nightbrace Chestguard [Only available during pre WoD level 90 version]
+					un(3, i(118753)),	-- Plate of Shamanic Fury [Only available during pre WoD level 90 version]
 					un(3, i(118754)),	-- Polychromatic Dreamwrap [Only available during pre WoD level 90 version]
-					un(3, i(118757)),	-- Tharbek's Terrible Charge [Only available during pre WoD level 90 version]
 					un(3, i(118758)),	-- Tharbek's Horrific Posessor [Only available during pre WoD level 90 version]
+					un(3, i(118757)),	-- Tharbek's Terrible Charge [Only available during pre WoD level 90 version]
 				})),
 				n(77927, {			-- Son of the Beast
 					i(120340),	-- Son of the Beast's Bloody Paw

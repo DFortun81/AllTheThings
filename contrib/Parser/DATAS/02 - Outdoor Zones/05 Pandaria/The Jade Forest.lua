@@ -1172,6 +1172,13 @@ _.Zones =
 					q(29717, {	-- Down Kitty!
 						["qg"] = 55274,	-- An Windfur
 						["sourceQuests"] = { 31230 },	-- Welcome to Dawn's Blossom
+						["groups"] = {
+							i(88708),	-- An's Ring
+							i(88705),	-- Jade Smasher Band
+							i(88704),	-- Meow Meow Band
+							i(88706),	-- Windfur Band
+							i(88707),	-- Windfur Ring
+						},
 					}),
 					q(30137, {	-- Egg Collection
 						["qg"] = 58225,	-- Instructor Tong

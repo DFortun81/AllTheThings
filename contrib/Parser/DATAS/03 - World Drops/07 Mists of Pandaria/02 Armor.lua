@@ -181,6 +181,9 @@ _.WorldDrops =
 					{	-- Perculia's Peculiar Signet
 						["itemID"] = 90584,	-- Perculia's Peculiar Signet
 					},
+					{	-- Ring of the Shipwrecked Prince
+						["itemID"] = 90591,	-- Ring of the Shipwrecked Prince
+					},
 					{	-- Shamanic Ring
 						["itemID"] = 82118,	-- Shamanic Ring
 					},
