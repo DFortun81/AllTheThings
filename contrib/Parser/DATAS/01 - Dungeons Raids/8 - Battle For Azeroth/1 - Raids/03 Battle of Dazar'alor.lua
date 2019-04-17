@@ -210,7 +210,8 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 									i(165833),	-- Vestments of Indomitable Will
 									i(165560),	-- Arcing Thunderlizard Legplates
 									i(165502),	-- Lightfeather Footpads
-									i(166418),	-- Crest of Pa'ku
+									a(i(166418)),	-- Crest of Pa'ku (Alliance)
+									h(i(165581)),	-- Crest of Pa'ku (Horde)
 									i(165579),	-- Kimbul's Razor Claw
 								},
 							},
@@ -424,7 +425,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							i(165540),	-- Mistfire Raiment
 							i(165764),	-- Firecaller's Handwraps
 							i(165531),	-- Grips of Harmonious Spirits
-							i(165503),    -- Manceroy's Flamefists
+							i(165503),	-- Manceroy's Flamefists
 							i(165552),	-- Embersear Waistguard
 							i(165521),	-- Cranedancer Leggings
 							i(165565),	-- Band of Multi-Sided Strikes
@@ -532,7 +533,8 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							i(165833),	-- Vestments of Indomitable Will
 							i(165560),	-- Arcing Thunderlizard Legplates
 							i(165502),	-- Lightfeather Footpads
-							i(166418),	-- Crest of Pa'ku
+							a(i(166418)),	-- Crest of Pa'ku (Alliance)
+							h(i(165581)),	-- Crest of Pa'ku (Horde)
 							i(165579),	-- Kimbul's Razor Claw
 						},
 					},
@@ -850,7 +852,8 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							i(165833),	-- Vestments of Indomitable Will
 							i(165560),	-- Arcing Thunderlizard Legplates
 							i(165502),	-- Lightfeather Footpads
-							i(166418),	-- Crest of Pa'ku
+							a(i(166418)),	-- Crest of Pa'ku (Alliance)
+							h(i(165581)),	-- Crest of Pa'ku (Horde)
 							i(165579),	-- Kimbul's Razor Claw
 						},
 					},
@@ -1182,7 +1185,8 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							i(165833),	-- Vestments of Indomitable Will
 							i(165560),	-- Arcing Thunderlizard Legplates
 							i(165502),	-- Lightfeather Footpads
-							i(166418),	-- Crest of Pa'ku
+							a(i(166418)),	-- Crest of Pa'ku (Alliance)
+							h(i(165581)),	-- Crest of Pa'ku (Horde)
 							i(165579),	-- Kimbul's Razor Claw
 						},
 					},
