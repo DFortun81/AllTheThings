@@ -42,6 +42,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 						["allianceAchievementID"] = 13286,	-- Siege of Dazar'alor
 						["hordeAchievementID"] = 13289,	-- Defense of Dazar'alor
 						["g"] = {
+							i(165703),		-- Breath of Bwonsamdi
 							{	-- Champion of the Light
 								["encounterID"] = 2344,	-- 2333 Horde
 								["crs"] = {
@@ -106,11 +107,6 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 									i(165521),	-- Cranedancer Leggings
 									i(165565),	-- Band of Multi-Sided Strikes
 									i(165568),	-- Invocation of Yu'lon
-									i(165703, {		-- Breath of Bwonsamdi
-										["g"] = {
-											["races"] = ALLIANCE_ONLY,
-										},
-									}),
 								},
 							},
 							{	-- Grong, the Revenant
@@ -144,11 +140,6 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 									i(165525),	-- Stretched Sinew Waistcord
 									i(165499),	-- Leggings of Dire Research
 									i(165574),	-- Grong's Primal Rage
-									i(165703, {		-- Breath of Bwonsamdi
-										["g"] = {
-											["races"] = HORDE_ONLY,
-										},
-									}),
 								},
 							},
 						},
