@@ -106,6 +106,11 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 									i(165521),	-- Cranedancer Leggings
 									i(165565),	-- Band of Multi-Sided Strikes
 									i(165568),	-- Invocation of Yu'lon
+									i(165703, {		-- Breath of Bwonsamdi
+										["g"] = {
+											["races"] = ALLIANCE_ONLY,
+										},
+									}),
 								},
 							},
 							{	-- Grong, the Revenant
@@ -139,6 +144,11 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 									i(165525),	-- Stretched Sinew Waistcord
 									i(165499),	-- Leggings of Dire Research
 									i(165574),	-- Grong's Primal Rage
+									i(165703, {		-- Breath of Bwonsamdi
+										["g"] = {
+											["races"] = HORDE_ONLY,
+										},
+									}),
 								},
 							},
 						},
@@ -246,6 +256,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 									i(165577),	-- Bwonsamdi's Bargain
 									i(165578),	-- Mirror of Entwined Fate
 									i(165696),	-- Formula: Enchanted Tiki Mask
+									i(165703),	-- Breath of Bwonsamdi
 								},
 							},
 						},
@@ -342,6 +353,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 									i(165566),	-- Lord Admiral's Signet
 									i(165570),	-- Everchill Anchor
 									i(165576),	-- Tidestorm Codex
+									i(165703),	-- Breath of Bwonsamdi
 								},
 							},
 						},
@@ -360,6 +372,11 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 						i(165547),	-- City Crusher Sabatons
 						i(165563),	-- Boots of the Dark Iron Raider
 						i(165925),	-- Drape of Valiant Defense
+					}),
+					n(-351, {	-- Boss Drop
+						["groups"] = {
+							i(165703),	-- Breath of Bwonsamdi
+						},
 					}),
 					ach(13315, {	-- Glory of the Dazar'alor Raider
 						i(166539),	-- Dazar'alor Windreaver
@@ -679,6 +696,11 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 						i(165547),	-- City Crusher Sabatons
 						i(165563),	-- Boots of the Dark Iron Raider
 						i(165925),	-- Drape of Valiant Defense
+					}),
+					n(-351, {	-- Boss Drop
+						["groups"] = {
+							i(165703),	-- Breath of Bwonsamdi
+						},
 					}),
 					ach(13315, {	-- Glory of the Dazar'alor Raider
 						i(166539),	-- Dazar'alor Windreaver
@@ -1001,6 +1023,11 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 						i(165547),	-- City Crusher Sabatons
 						i(165563),	-- Boots of the Dark Iron Raider
 						i(165925),	-- Drape of Valiant Defense
+					}),
+					n(-351, {	-- Boss Drop
+						["groups"] = {
+							i(165703),	-- Breath of Bwonsamdi
+						},
 					}),
 					ach(13315, {	-- Glory of the Dazar'alor Raider
 						i(166539),	-- Dazar'alor Windreaver
