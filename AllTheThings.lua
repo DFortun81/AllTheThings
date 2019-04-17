@@ -11365,10 +11365,9 @@ app.events.VARIABLES_LOADED = function()
 	app.Race = race;
 	app.RaceIndex = raceIndex;
 	local name, realm = UnitName("player");
-	name = name .. "-" .. (realm or GetRealmName());
 	local _, id = GetClassInfo(classIndex);
 	app.GUID = UnitGUID("player");
-	app.Me = "|c" .. RAID_CLASS_COLORS[id].colorStr .. name .. "|r";
+	app.Me = "|c" .. RAID_CLASS_COLORS[id].colorStr .. name .. "-" .. (realm or GetRealmName()) .. "|r";
 	app.Faction = UnitFactionGroup("player");
 	if app.Faction == "Horde" then
 		app.FactionID = 2;
@@ -11465,7 +11464,75 @@ app.events.VARIABLES_LOADED = function()
 	
 	-- GUID to Character Name cache
 	local characters = GetDataMember("Characters", {});
-	characters[app.GUID] = app.Me;
+	if not characters[app.GUID] or true then -- Temporary
+		-- Convert old-style "ME" data entries to "GUID" entries.
+		local nameF = name .. "%-" .. (realm or GetRealmName());
+		for key,data in pairs(lockouts) do
+			if string.match(key, nameF) then
+				for id,state in pairs(data) do
+					myLockouts[id] = state;
+				end
+				lockouts[key] = nil;
+			end
+		end
+		for key,data in pairs(recipes) do
+			if string.match(key, nameF) then
+				for id,state in pairs(data) do
+					myRecipes[id] = state;
+				end
+				recipes[key] = nil;
+			end
+		end
+		for key,data in pairs(factions) do
+			if string.match(key, nameF) then
+				for id,state in pairs(data) do
+					myfactions[id] = state;
+				end
+				factions[key] = nil;
+			end
+		end
+		for key,data in pairs(buildings) do
+			if string.match(key, nameF) then
+				for id,state in pairs(data) do
+					myBuildings[id] = state;
+				end
+				buildings[key] = nil;
+			end
+		end
+		for key,data in pairs(followers) do
+			if string.match(key, nameF) then
+				for id,state in pairs(data) do
+					myFollowers[id] = state;
+				end
+				followers[key] = nil;
+			end
+		end
+		for key,data in pairs(musicRolls) do
+			if string.match(key, nameF) then
+				for id,state in pairs(data) do
+					myMusicRolls[id] = state;
+				end
+				musicRolls[key] = nil;
+			end
+		end
+		for key,data in pairs(selfieFilters) do
+			if string.match(key, nameF) then
+				for id,state in pairs(data) do
+					mySelfieFilters[id] = state;
+				end
+				selfieFilters[key] = nil;
+			end
+		end
+		for key,data in pairs(titles) do
+			if string.match(key, nameF) then
+				for id,state in pairs(data) do
+					myTitles[id] = state;
+				end
+				titles[key] = nil;
+			end
+		end
+		characters[app.GUID] = app.Me;
+	end
 	
 	-- Clean up settings
 	local oldsettings = {};
