@@ -238,6 +238,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 									i(86717),	-- Hood of the Burning Scroll
 									i(86641),	-- Helmet of the Thousandfold Blades
 								}),
+								i(138805),	-- Illusion: Jade Spirit
 								i(86905),	-- Shin'ka, Execution of Dominion
 								i(86906),	-- Kilrak, Jaws of Terror
 								i(89984),	-- Robes of Pinioned Eyes
