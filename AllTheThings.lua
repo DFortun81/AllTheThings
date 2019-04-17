@@ -11442,6 +11442,12 @@ app.events.VARIABLES_LOADED = function()
 		myMusicRolls = {};
 		musicRolls[app.GUID] = myMusicRolls;
 		SetTempDataMember("CollectedMusicRolls", myMusicRolls);
+		SetDataMember("WipedCollectedMusicRollsPerCharacter", 1);
+	elseif not GetDataMember("WipedCollectedMusicRollsPerCharacter") then
+		SetDataMember("WipedCollectedMusicRollsPerCharacter", 1);
+		wipe(myMusicRolls);
+		wipe(musicRolls);
+		musicRolls[app.GUID] = myMusicRolls;
 	end
 	
 	-- Cache your character's selfie filters data.
@@ -11458,7 +11464,7 @@ app.events.VARIABLES_LOADED = function()
 	local myTitles = GetTempDataMember("CollectedTitles", titles[app.GUID]);
 	if not myTitles then
 		myTitles = {};
-		musicRolls[app.GUID] = myTitles;
+		titles[app.GUID] = myTitles;
 		SetTempDataMember("CollectedTitles", myTitles);
 	end
 	
@@ -11467,70 +11473,33 @@ app.events.VARIABLES_LOADED = function()
 	if not characters[app.GUID] or true then -- Temporary
 		-- Convert old-style "ME" data entries to "GUID" entries.
 		local nameF = name .. "%-" .. (realm or GetRealmName());
-		for key,data in pairs(lockouts) do
-			if string.match(key, nameF) then
-				for id,state in pairs(data) do
-					myLockouts[id] = state;
+		local CleanData = function(t, t2)
+			for key,data in pairs(t) do
+				if string.match(key, nameF) then
+					for id,state in pairs(data) do
+						t2[id] = state;
+					end
+					t[key] = nil;
+				elseif key ~= app.GUID then
+					local isEmpty = true;
+					for id,state in pairs(data) do
+						isEmpty = false;
+						break;
+					end
+					if isEmpty then
+						t[key] = nil;
+					end
 				end
-				lockouts[key] = nil;
 			end
 		end
-		for key,data in pairs(recipes) do
-			if string.match(key, nameF) then
-				for id,state in pairs(data) do
-					myRecipes[id] = state;
-				end
-				recipes[key] = nil;
-			end
-		end
-		for key,data in pairs(factions) do
-			if string.match(key, nameF) then
-				for id,state in pairs(data) do
-					myfactions[id] = state;
-				end
-				factions[key] = nil;
-			end
-		end
-		for key,data in pairs(buildings) do
-			if string.match(key, nameF) then
-				for id,state in pairs(data) do
-					myBuildings[id] = state;
-				end
-				buildings[key] = nil;
-			end
-		end
-		for key,data in pairs(followers) do
-			if string.match(key, nameF) then
-				for id,state in pairs(data) do
-					myFollowers[id] = state;
-				end
-				followers[key] = nil;
-			end
-		end
-		for key,data in pairs(musicRolls) do
-			if string.match(key, nameF) then
-				for id,state in pairs(data) do
-					myMusicRolls[id] = state;
-				end
-				musicRolls[key] = nil;
-			end
-		end
-		for key,data in pairs(selfieFilters) do
-			if string.match(key, nameF) then
-				for id,state in pairs(data) do
-					mySelfieFilters[id] = state;
-				end
-				selfieFilters[key] = nil;
-			end
-		end
-		for key,data in pairs(titles) do
-			if string.match(key, nameF) then
-				for id,state in pairs(data) do
-					myTitles[id] = state;
-				end
-				titles[key] = nil;
-			end
-		end
+		CleanData(buildings, myBuildings);
+		CleanData(factions, myfactions);
+		CleanData(followers, myFollowers);
+		CleanData(lockouts, myLockouts);
+		CleanData(musicRolls, myMusicRolls);
+		CleanData(recipes, myRecipes);
+		CleanData(selfieFilters, mySelfieFilters);
+		CleanData(titles, myTitles);
 		characters[app.GUID] = app.Me;
 	end
 	
