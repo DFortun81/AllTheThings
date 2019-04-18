@@ -307,6 +307,7 @@ _.Zones =
 							dr(0.4, i(104231)),	-- Technique: Glyph of Inspired Hymns
 						}),
 						i(103642),	-- Book of the Ages
+						i(104217),	-- Charred Recipe
 						i(103643),	-- Dew of Eternal Morning
 						i(103641),	-- Singing Crystal
 						i(103982),	-- Burden of Eternity

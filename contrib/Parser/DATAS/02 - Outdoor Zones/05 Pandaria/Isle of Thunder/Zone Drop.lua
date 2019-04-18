@@ -223,9 +223,6 @@ _.Zones =
 							{	-- Immaculate Amulet
 								["itemID"] = 82280,	-- Immaculate Amulet
 							},
-							{	-- Immaculate Ring
-								["itemID"] = 82283,	-- Immaculate Ring
-							},
 							{	-- Immaculate Spellblade
 								["itemID"] = 82285,	-- Immaculate Spellblade
 							},
