@@ -577,6 +577,21 @@ _.Zones =
 									i(157539),	-- Scroll of Storm Control
 								},
 							}),
+							qh(51516, {	-- Atal'Dazr: Ashes of a Warchief
+								["qg"] = 138138,	-- Princess Telanji
+								["coord"] = { 43.7, 39.5 },
+								["sourceQuests"] = { 52113 },	-- Vole'jin, Son of Sen'jin
+							}),
+							qh(48400, {	-- Grand Theft Telemancy
+								["qg"] = 131580,	-- Apprentice Telemancer Astrandis
+								["g"] = {
+									i(155310),	-- Reliquary Explorer's Drape
+									i(158419),	-- Rastari Treads
+									i(158420),	-- Zanchuli Footwraps
+									i(158421),	-- Torcalin Treads
+									i(158422),	-- Jambani Treads
+								},
+							}),
 							qh(47587, {	-- Headhunter Jo
 								["g"] = {
 									i(159114),	-- Rootway Safari Greatbow
@@ -591,15 +606,29 @@ _.Zones =
 								},
 								["qg"] = 138669	-- Hemet Nesingwary
 							}),
-							qh(52113, {	-- Vol'jin, Son of Sen'jin
-								["qg"] = 137878,	-- Master Gadrin
-								["coord"] = { 45.5, 35.8 },
-								["sourceQuests"] = { 52114 },	-- Honoring a True Leader
+							qh(49680, {	-- Skycaller Soltok
+								["qg"] = 130450,	-- Bladeguard Sonji
+								["g"] = {
+									i(155311),	-- Soltok's Drape
+									i(155309),	-- Lightning Caller's Band
+								},
 							}),
-							qh(51516, {	-- Atal'Dazr: Ashes of a Warchief
-								["qg"] = 138138,	-- Princess Telanji
-								["coord"] = { 43.7, 39.5 },
-								["sourceQuests"] = { 52113 },	-- Vole'jin, Son of Sen'jin
+							{	-- The Dark Lady Calls
+								["questID"] = 54097,
+								["qg"] = 146013,	-- Dark Ranger Alina
+								["coord"] = { 58.4, 62.7 },
+								["races"] = HORDE_ONLY,
+							},
+							qh(50297, {	-- The Head of Her Enemy
+								["qg"] = 130929,	-- Witch Doctor Jangalar
+								["g"] = {
+									i(159147),	-- Jambani Walkers
+									i(159149),	-- Zanchuli Footies
+									i(158666),	-- Jambani Voodoo Focus
+									i(159148),	-- Torcalin Walkers
+									i(159150),	-- Rastari Stompers
+									i(159123),	-- Jambani Barrier
+								},
 							}),
 							q(49285, {	-- Tiny Treasures
 								["g"] = {
@@ -609,22 +638,10 @@ _.Zones =
 								["coord"] = { 70.2, 65.0 },
 								["sourceQuests"] = { 49283 },	-- Who Seeks the Seekers? (Horde) - NEEDS VERIFICATION, per wowhead comment.  Also need to make sure Alliance side has no prereqs.
 							}),
-							{	-- The Dark Lady Calls
-								["questID"] = 54097,
-								["qg"] = 146013,	-- Dark Ranger Alina
-								["coord"] = { 58.4, 62.7 },
-								["races"] = HORDE_ONLY,
-							},
-							qh(50297, {	-- The Head of Her Enemy
-								["g"] = {
-									i(159147),	-- Jambani Walkers
-									i(159149),	-- Zanchuli Footies
-									i(158666),	-- Jambani Voodoo Focus
-									i(159148),	-- Torcalin Walkers
-									i(159150),	-- Rastari Stompers
-									i(159123),	-- Jambani Barrier
-								},
-								["qg"] = 130929	-- Witch Doctor Jangalar
+							qh(52113, {	-- Vol'jin, Son of Sen'jin
+								["qg"] = 137878,	-- Master Gadrin
+								["coord"] = { 45.5, 35.8 },
+								["sourceQuests"] = { 52114 },	-- Honoring a True Leader
 							}),
 						},
 					}),

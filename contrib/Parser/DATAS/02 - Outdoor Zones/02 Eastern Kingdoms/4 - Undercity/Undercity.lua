@@ -669,6 +669,24 @@ _.Zones =
 								},
 								["classes"] = { 8 },	-- Mage
 							})),
+							un(40, qa(13377, {	-- The Battle for the Undercity (A)
+								un(2, i(44579)),	-- Medallion of Heroism
+								un(2, i(44591)),	-- Wrynn's Leggings of Foresight
+								un(2, i(44592)),	-- Wrynn's Leggings of Valor
+								un(2, i(44593)),	-- Wrynn's Leggings of Wisdom
+								un(2, i(44594)),	-- Wrynn's Legguards of Brutality
+								un(2, i(44595)),	-- Wrynn's Legguards of Heroism
+								un(2, i(44596)),	-- Wrynn's Legplates of Carnage
+							})),
+							un(40, qh(13267, {	-- The Battle for the Undercity (H)
+								un(2, i(44579)),	-- Medallion of Heroism
+								un(2, i(44590)),	-- Warchief's Leggings of Foresight
+								un(2, i(44348)),	-- Warchief's Leggings of Valor
+								un(2, i(44346)),	-- Warchief's Leggings of Wisdom
+								un(2, i(44583)),	-- Warchief's Legguards of Brutality
+								un(2, i(44347)),	-- Warchief's Legguards of Heroism
+								un(2, i(44349)),	-- Warchief's Legplates of Carnage
+							})),
 							un(40, qh(5725, {	-- The Power to Destroy
 								un(2, i(15449)),	-- Ghastly Trousers
 								un(2, i(15450)),	-- Dredgemire Leggings

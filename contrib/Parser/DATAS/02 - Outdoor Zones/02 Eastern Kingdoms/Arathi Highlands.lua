@@ -1108,6 +1108,11 @@ _.Zones =
 							2570,	-- Boulderfist Shaman
 						},
 					}),
+					o(294703, {	-- Grimmy's Rusty Lockbox
+						["groups"] = {
+							i(162690),	-- Waist of Time
+						},
+					}),
 				}),
 				n(-40, {	-- Legacy
 					["groups"] = {

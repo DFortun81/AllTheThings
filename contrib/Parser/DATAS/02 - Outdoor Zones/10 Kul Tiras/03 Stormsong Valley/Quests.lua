@@ -987,7 +987,16 @@ _.Zones =
 						q(50907),	-- Poor Souls
 						q(51724),	-- Powered Up
 						q(50698),	-- Problem Solving with Gunpowder
-						q(50653),	-- Reclaiming our Defenses
+						q(50653, {	-- Reclaiming our Defenses
+							["qg"] = 131003,	-- Specialist Wembley
+							["g"] = {
+								i(160337),	-- Darkwater Footpads
+								i(160343),	-- Dread Corsair Boots
+								i(155232),	-- Proudmoore Battalion Cloak
+								i(160340),	-- Stormchaser Treads
+								i(160334),	-- Tidespeaker Footwraps
+							},
+						}),
 						q(50161),	-- Recovering Raimond
 						q(51554),	-- Reloading
 						q(49742),	-- Respect Your Elders
