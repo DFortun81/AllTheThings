@@ -175,9 +175,12 @@ _.GearSets =
 					i(137027),	-- Firestone Walkers
 					i(137029),	-- Katsuo's Eclipse
 					i(137044),	-- Jewel of the Lost Abbey
-					i(137045),	-- Eyee of the Collidus the Warp-Watcher
+					i(137045),	-- Eye of Collidus the Warp-Watcher
 					i(137220),	-- March of the Legion
 					i(151643),	-- Soul of the Grandmaster
+					i(137016),	-- Sal'salabim's Lost Tunic
+					i(144340),	-- Shelter of Rin
+					i(144239),	-- The Emperor's Capacitor
 				}),
 				cl(2, { 	-- Paladin		
 					i(137065),	-- Justice Gaze

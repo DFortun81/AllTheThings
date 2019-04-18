@@ -4213,10 +4213,13 @@ _.Zones =
 								i(144259),	-- Kil'jaeden's Burning Wish
 								i(132444),	-- Prydaz, Xavric's Magnum Opus
 								i(137044),	-- Jewel of the Lost Abbey
-								i(137045),	-- Eyee of the Collidus the Warp-Watcher
+								i(137045),	-- Eye of Collidus the Warp-Watcher
 								i(137220),	-- March of the Legion
 								i(151643),	-- Soul of the Grandmaster
 								i(144258),	-- Velen's Future Sight
+								i(137016),	-- Sal'salabim's Lost Tunic
+								i(144340),	-- Shelter of Rin
+								i(144239),	-- The Emperor's Capacitor
 							}),
 							i(147302, {	-- Hollow Skeleton Key [Rogue]
 								i(151815),	-- The Empty Crown
