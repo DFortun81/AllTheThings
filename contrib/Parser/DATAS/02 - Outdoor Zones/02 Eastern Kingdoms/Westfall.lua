@@ -300,6 +300,11 @@ _.Zones =
 						dr(01.0, i(6537)),	-- Willow Boots
 						un(7, i(4434)),		-- Scarecrow Trousers				
 					}), 
+					n(626, {	-- Foreman Thistlenettle
+						i(2168),	-- Corpse Rompers
+						i(2167),	-- Foreman's Gloves
+						i(2166),	-- Foreman's Leggings
+					}),
 					n(115, {	-- Harvest Reaper
 						dr(1.1, i(820)),		-- Slicer Blade
 					}),
@@ -531,6 +536,12 @@ _.Zones =
 						["crs"] = {
 							831,	-- Sea Crawler
 						},
+					}),
+					i(1958, {	-- Petrified Shinbone
+						["crs"] = {
+							625,	-- Undead Dynamiter
+						},
+						["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
 					}),
 					i(2698, {	-- Recipe: Cooked Crab Claw
 						["description"] = "Can drop from any mob in the zone, would recommend farming the murlocs in the north.",

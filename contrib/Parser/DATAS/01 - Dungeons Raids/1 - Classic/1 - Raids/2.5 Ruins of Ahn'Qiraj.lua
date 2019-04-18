@@ -12,6 +12,9 @@ _.Instances = { tier(1, {	-- Classic
 		},
 		["coord"] = { 58.93, 14.26, 327 },	-- Ruins of Ahn'Qiraj, Ahn Qiraj: The Fallen Kingdom
 		["groups"] = {
+			n(0,   {	-- Zone Drops
+				i(21802),	-- The Lost Kris of Zedd
+			}),
 			n(-1, {	-- Common Boss Drop
 				["groups"] = { -- The class items are grey, adding them for classic in summer
 					-- Enchants
