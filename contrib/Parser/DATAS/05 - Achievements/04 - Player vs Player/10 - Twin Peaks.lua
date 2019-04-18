@@ -13,43 +13,32 @@ To do:
 _.Achievements = 
 {
 	n(-9958, {	-- Player vs Player
-		["groups"] = {
+		["g"] = {
 			n(-9991, {	-- Twin Peaks
-				["groups"] = {
-					a(ach(5226)),	-- Cloud Nine (Alliance)
-					h(ach(5227)),	-- Cloud Nine (Horde)
-					a(ach(5231)),	-- Double Jeopardy (Alliance)
-					h(ach(5552)),	-- Double Jeopardy (Horde)
-					a(ach(5229)),	-- Drag a Maw
-					a(ach(5221)),	-- Fire, Walk With Me (Alliance)
-					h(ach(5222)),	-- Fire, Walk With Me (Horde)
-					h(ach(5220)),	-- I'm in the Black Lodge
-					a(ach(5219)),	-- I'm in the White Lodge
-					ach(5223, {		-- Master of Twin Peaks
-						crit(1),		-- Twin Peaks Veteran
-						crit(2),		-- Two-Timer
-						crit(3),		-- Top Defender
-						crit(4),		-- Soaring Spirits
-						crit(5),		-- Twin Peaks Perfection
-						crit(6),		-- Peak Speed
-						crit(7),		-- Cloud Nine
-						crit(8),		-- Drag a Maw/Wild Hammering
-						crit(9),		-- White Lodge/Black Lodge
-						crit(10),		-- Fire, Walk With Me
-						crit(11),		-- Twin Peaks Mountaineer
-						crit(12),		-- Double Jeopardy
+				["maps"] = { 206 },	-- Twin Peaks
+				["g"] = {
+					ach(5223, {	-- Master of Twin Peaks
+						ach(5209, {		-- Twin Peaks Veteran
+							ach(5208),	-- Twin Peaking
+						}),
+						ach(5210),		-- Two-Timer
+						ach(5211),		-- Top Defender
+						a(ach(5213)),	-- Soaring Spirits (Alliance)
+						h(ach(5214)),	-- Soaring Spirits (Horde)
+						ach(5215),		-- Twin Peaks Perfection
+						ach(5216),		-- Peak Speed
+						a(ach(5226)),	-- Cloud Nine (Alliance)
+						h(ach(5227)),	-- Cloud Nine (Horde)
+						a(ach(5229)),	-- Drag a Maw (Alliance)
+						h(ach(5228)),	-- Wild Hammering (Horde)
+						h(ach(5220)),	-- I'm in the Black Lodge (Horde)
+						a(ach(5219)),	-- I'm in the White Lodge (Alliance)
+						a(ach(5221)),	-- Fire, Walk With Me (Alliance)
+						h(ach(5222)),	-- Fire, Walk With Me (Horde)
+						ach(5230),		-- Twin Peaks Mountaineer
+						a(ach(5231)),	-- Double Jeopardy (Alliance)
+						h(ach(5552)),	-- Double Jeopardy (Horde)
 					}),
-					ach(5216),		-- Peak Speed
-					a(ach(5213)),	-- Soaring Spirits (Alliance)
-					h(ach(5214)),	-- Soaring Spirits (Horde)
-					ach(5211),		-- Top Defender
-					ach(5230),		-- Twin Peaks Mountaineer
-					ach(5215),		-- Twin Peaks Perfection
-					ach(5209, {		-- Twin Peaks Veteran
-						ach(5208),		-- Twin Peaking
-					}),
-					ach(5210),		-- Two-Timer
-					h(ach(5228)),	-- Wild Hammering
 				},
 			}),
 		},
