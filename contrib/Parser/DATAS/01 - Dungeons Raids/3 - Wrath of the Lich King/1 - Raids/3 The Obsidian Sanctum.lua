@@ -42,7 +42,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					ach(2049, {	-- Twilight Assist [10 player]
 						["description"] = "With only 1 drake up loot from this table isn't always guaranteed.",
 						["g"] = {
-							i(43992),	-- Volitant Amulet		** Confirmed Drop 4/19/19 [3 Drakes up]
+							i(43992),	-- Volitant Amulet		** Confirmed Drop 4/19/19 [1/3 Drake(s) up]
 							i(43988),	-- Gale-Proof Cloak
 							i(43990),	-- Blade-Scarred Tunic
 							i(43989),	-- Remembrance Girdle	** Confirmed Drop 4/19/19 [1 Drake up]
@@ -69,7 +69,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						["achievementID"] = 1658,	-- Champion of the Frozen Wastes
 						["criteriaID"] = 1,			-- Sartharion (10 or 25 player) slain
 					},
-					i(40613, {	-- Gloves of the Lost Conqueror
+					i(40613, {	-- Gloves of the Lost Conqueror		** Confirmed Drop 4/19/19 [1 Drake up]
 						i(39634),	-- Heroes' Redemption Gauntlets
 						i(39632),	-- Heroes' Redemption Gloves
 						i(39639),	-- Heroes' Redemption Handguards
@@ -95,7 +95,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(39560),	-- Heroes' Bonescythe Gauntlets
 					}),
 					i(40429),	-- Crimson Steel
-					i(40428),	-- Titan's Outlook			** Confirmed Drop 4/19/19 [3 Drake(s) up]
+					i(40428),	-- Titan's Outlook			** Confirmed Drop 4/19/19 [1/3 Drake(s) up]
 					i(40427),	-- Circle of Arcane Streams	** Confirmed Drop 4/19/19 [1 Drake up]
 					i(40426),	-- Signet of the Accord		** Confirmed Drop 4/19/19 [3 Drakes(s) up]
 					i(40430),	-- Majestic Dragon Figurine
@@ -139,17 +139,17 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						-- Note!! Even with 1 drake up you can still get 0 loot from the table 4/19/19
 						["description"] = "With only 1 drake up loot from this table isn't always guaranteed.",
 						["g"] = {
-							i(44003),	-- Upstanding Spaulders
-							i(44000),	-- Dragonstorm Breastplate
-							i(44002),	-- The Sanctum's Flowing Vestments
+							i(44003),	-- Upstanding Spaulders				** Confirmed Drop 4/19/19 [2 Drakes up]
+							i(44000),	-- Dragonstorm Breastplate			** Confirmed Drop 4/19/19 [3 Drakes up]
+							i(44002),	-- The Sanctum's Flowing Vestments	** Confirmed Drop 4/19/19 [2 Drakes up]
 							i(44004),	-- Bountiful Gauntlets
 						},
 					}),
 					ach(2053, {	-- Twilight Duo [25 player]
 						["description"] = "With only 2 drakes up loot from this table isn't always guaranteed.",
 						["g"] = {
-							i(44007),	-- Headpiece of Reconciliation
-							i(44006),	-- Obsidian Greathelm
+							i(44007),	-- Headpiece of Reconciliation	** Confirmed Drop 4/19/19 [2/3 Drakes up]
+							i(44006),	-- Obsidian Greathelm			** Confirmed Drop 4/19/19 [2 Drakes up]
 							i(44005),	-- Pennant Cloak
 							i(44008),	-- Unsullied Cuffs
 							i(44011),	-- Leggings of the Honored
@@ -181,7 +181,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(40527),	-- Valorous Dreadnaught Gauntlets
 						i(40545),	-- Valorous Dreadnaught Handguards
 					}),
-					i(40630, {	-- Gauntlets of the Lost Vanquisher
+					i(40630, {	-- Gauntlets of the Lost Vanquisher		** Confirmed Drop 4/19/19 [3 Drakes up]
 						i(40552),	-- Valorous Scourgeborne Gauntlets
 						i(40563),	-- Valorous Scourgeborne Handguards
 						i(40466),	-- Valorous Dreamwalker Gloves
@@ -190,13 +190,13 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(40415),	-- Valorous Frostfire Gloves
 						i(40496),	-- Valorous Bonescythe Gauntlets
 					}),
-					i(40455),	-- Staff of Restraint
+					i(40455),	-- Staff of Restraint					** Confirmed Drop 4/19/19 [2 Drakes up]
 					i(40451),	-- Hyaline Helm of the Sniper
 					i(40437),	-- Concealment Shoulderpads				** Confirmed Drop 4/19/19 [3 Drakes up]
 					i(40438),	-- Council Chamber Epaulets				** Confirmed Drop 4/19/19 [1 Drake up]
 					i(40439),	-- Mantle of the Eternal Sentinel		** Confirmed Drop 4/19/19 [3 Drakes up]
 					i(40453),	-- Chestplate of the Great Aspects		** Confirmed Drop 4/19/19 [3 Drakes up]
-					i(40446),	-- Dragon Brood Legguards
+					i(40446),	-- Dragon Brood Legguards				** Confirmed Drop 4/19/19 [2 Drakes up]
 					i(40433),	-- Wyrmrest Band						** Confirmed Drop 4/19/19 [1 Drake up]
 					i(43999),	-- Ring of the Empty Horizon			** Confirmed Drop 4/19/19 [3 Drakes up]
 					i(40431),	-- Fury of the Five Flights				** Confirmed Drop 4/19/19 [1/3 Drakes up]

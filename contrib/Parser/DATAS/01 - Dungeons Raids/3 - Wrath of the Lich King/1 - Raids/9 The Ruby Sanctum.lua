@@ -33,7 +33,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(53114),	-- Gloaming Sark
 					i(53112),	-- Bracers of the Heir
 					i(53117),	-- Changeling Gloves
-					i(53118),	-- Misbegotten Belt
+					i(53118),	-- Misbegotten Belt					** Confirmed Drop 4/19/19
 					i(53121),	-- Surrogate Belt
 					i(53119),	-- Boots of Divided Being
 					i(53111),	-- Scion's Treads
@@ -44,14 +44,14 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 			d(5, {	-- 10-Player (Heroic)
 				cr(39863, e(1652, {	-- Halion
 					ach(4818),	-- Heroic: The Twilight Destroyer (10 player)
-					i(54557),	-- Baltharus' Gift
+					i(54557),	-- Baltharus' Gift					** Confirmed Drop 4/19/19
 					i(54566),	-- Twilight Scale Shoulders
 					i(54556),	-- Abduction's Cover
 					i(54561),	-- Gloaming Sark
 					i(54559),	-- Bracers of the Heir
-					i(54560),	-- Changeling Gloves
+					i(54560),	-- Changeling Gloves				** Confirmed Drop 4/19/19
 					i(54562),	-- Misbegotten Belt
-					i(54565),	-- Surrogate Belt
+					i(54565),	-- Surrogate Belt					** Confirmed Drop 4/19/19
 					i(54558),	-- Boots of Divided Being
 					i(54564),	-- Scion's Treads
 					i(54563),	-- Saviana's Tribute
@@ -84,16 +84,16 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					ach(4816),	-- Heroic: The Twilight Destroyer (25 player)
 					i(54581),	-- Penumbra Pendant
 					i(54583),	-- Cloak of Burning Dusk			** Confirmed Drop 4/19/19
-					i(54582),	-- Bracers of Fiery Night
+					i(54582),	-- Bracers of Fiery Night			** Confirmed Drop 4/19/19
 					i(54584),	-- Phaseshifter's Bracers			** Confirmed Drop 4/19/19
 					i(54580),	-- Umbrage Armbands
 					i(54587),	-- Split Shape Belt					** Confirmed Drop 4/19/19
 					i(54578),	-- Apocalypse's Advance				** Confirmed Drop 4/19/19
 					i(54586),	-- Foreshadow Steps
-					i(54577),	-- Returning Footfalls
+					i(54577),	-- Returning Footfalls				** Confirmed Drop 4/19/19
 					i(54579),	-- Treads of Impending Resurrection
 					i(54585),	-- Ring of Phased Regeneration
-					i(54576),	-- Signet of Twilight
+					i(54576),	-- Signet of Twilight				** Confirmed Drop 4/19/19
 					i(54588),	-- Charred Twilight Scale
 					i(54589),	-- Glowing Twilight Scale			** Confirmed Drop 4/19/19
 					i(54591),	-- Petrified Twilight Scale
