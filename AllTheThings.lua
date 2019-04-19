@@ -7220,6 +7220,7 @@ local function CreateMiniListForGroup(group)
 		end
 		--ExportData(popout.data);
 		popout:Toggle(true);
+	end
 end
 local function ClearRowData(self)
 	self.ref = nil;
